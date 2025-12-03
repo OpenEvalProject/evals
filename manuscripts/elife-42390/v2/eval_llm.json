@@ -1,0 +1,718 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Prior literature establishes that ART suppresses HIV viral load and restores lymphocyte responses, with CD4+ T-cell counts following a characteristic recovery pattern: rapid increase for 4-6 months, slower increase for 2-4 years, then plateau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are all supported by appropriate citations to prior research (Cooney 2002, Autran et al. 1997, Lawn et al. 2006, Pinzone et al. 2012). These claims establish the background knowledge context for the study and are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Despite ART efficacy, substantial proportions of patients experience incomplete immune restoration: 10-16% of children and variable proportions of adults fail to suppress viral load within 12 months, 35-40% are suboptimal immunological responders not reaching >500 cells/\u00b5L within 5 years, and some show no improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are supported by appropriate citations to prior studies (Mutwa et al. 2014, Barth et al. 2011, Fatti et al. 2014, Mee et al. 2008, Nakanjako 2016, Swiss HIV Cohort Study et al. 2005, Lawn et al. 2006). These establish the clinical problem motivating the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Commonly used statistical methods (generalized linear mixed models and generalized estimating equations) are not mechanistic and do not allow inferences regarding CD4+ recovery dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by citation to Sempa et al. 2017 and logical reasoning about the limitations of non-mechanistic statistical approaches. This establishes a methodological gap that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Recent studies have employed asymptotic semi-mechanistic mixed models for CD4+ recovery in children and adults, but these models fail to capture trajectories in patients with suboptimal or no immune recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by multiple citations (Lewis et al. 2012, ARROW Trial Team et al. 2013, Lewis et al. 2017, De Beaudrap et al. 2008, ANRS 1215/90 Study Group et al. 2009, Means et al. 2016). This establishes limitations of existing mechanistic approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "There is large natural variability of CD4+ T-cell counts across different population groups, complicating cross-population comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by citations to Schaberg et al. 1997, Abuye et al. 2005, and Maini et al. 1996. This establishes another limitation of existing approaches that the current study addresses through scaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study analyzed de-identified longitudinal data from 13 South African cohorts provided by IeDEA-SA, starting with 2,858,743 CD4+ count observations for 223,688 patients, reduced to 189,647 adults and 19,060 children after data cleaning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe the data source and cleaning process with appropriate citations and are supported by Figure 1. The data source is credible and the cleaning process is transparent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The ratio model is based on the logistic growth model, which assumes exponential growth until approaching a constant carrying capacity k, a concept previously used to describe CD4+ T-cell proliferation in therapy and consistent with healthy South African CD4+ count dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 establish the theoretical foundation of the model with appropriate citations (Kaufmann et al. 2001, Di Mascio et al. 2006, Malaza et al. 2013) and reference to Figure 2. The biological basis is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The model parameters have clear biological interpretations: K near unity indicates approaching homeostatic optimum with unlikely further increase; Q tends to unity in healthy adults due to immune set-point but is less than one in children due to growth; baseline scaled CD4+ of 1 indicates normal count for age while values <1 indicate lower counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 provide logical interpretations of model parameters based on biological understanding, supported by citation to Bains et al. 2009 for child development. The interpretations are internally consistent with the model structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "For children, reference values were calculated from cross-sectional healthy children data by fitting a single exponential model and simulating continuous estimates, which were validated against published South African and international normal ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 describe the methodology for establishing reference values with validation against multiple published sources (Lawrie et al. 2009, 2015, Idigbe et al. 2010, Pediatric AIDS Clinical Trials Group et al. 2003). The approach is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "For adults, a single reference value of 800 CD4+ cells/\u00b5L was used for scaling because age-related variability in adults (100 cells between ages 25-60) is much smaller than in children (1500 cells between 3 months-15 years), and sex differences are only 80-150 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 justify the methodological choice with quantitative comparisons supported by multiple citations (Malaza et al. 2013, Lawrie et al. 2009, Ngowi et al. 2009, Lugada et al. 2004, Oladepo et al. 2009). The rationale is reasonable given the data constraints, though C158 acknowledges potential bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Two analysis scenarios were defined: Scenario 1 with baseline CD4+ estimated (1312 children, 12,238 adults, \u22655 measurements) and Scenario 2 with baseline CD4+ as predictor (1616 children, 14,542 adults, \u22654 measurements).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 clearly describe the two analytical scenarios with specific sample sizes and inclusion criteria. This is transparent methodological reporting supported by Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cohort characteristics for Scenario 1 show median 8 visits per patient, 3-4 years follow-up, median ages 4.5 years (children) and 36 years (adults), WHO stage III most common, more females among adults (56.7%) than children (51.3%), with 95% initiating ART in 2003-2012.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 provide descriptive statistics from Table 1. These are straightforward data summaries that characterize the study population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CD4+ recovery outcomes differed substantially between children and adults: 53.4% of children vs only 4.4% of adults reached 500 cells/\u00b5L within 12 months (increasing to 10.1% at 2 years for adults), with median baseline counts of 404 cells/\u00b5L (children) vs 128 cells/\u00b5L (adults).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 report descriptive statistics from Table 1 showing substantial differences in baseline status and recovery between children and adults. These data summaries are straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Higher baseline CD4+ counts were more common in younger children (0-5 years) vs older children (>5 years), with no age differences in adults, and higher baseline counts were associated with lower viral loads in both groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 report patterns in the descriptive data. These are straightforward observations from the cohort characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Model comparison showed the Ratio model had lower AIC/BIC than the Asymptotic model in Scenario 1 (baseline estimated), but this reversed in Scenario 2 (baseline as predictor), though the models estimated different numbers of parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 report model comparison results from Table 2. The comparison is appropriate though the authors note the models have different numbers of parameters (33% vs 20% change), which complicates direct comparison. The finding is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Both models estimated similar baseline scaled CD4+ counts, but the Asymptotic model predicts rapid increase to asymptote while the Ratio model predicts sharp increase followed by slower gradual increase continuing beyond 10 years post-ART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 compare model predictions supported by Table 3, Supplementary file 4, and Figures 3-4. The qualitative differences in long-term predictions are clearly demonstrated visually and are a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Baseline scaled CD4+ T-cell counts were 0.20 (95% CI: 0.18, 0.22) for adults and 0.74 (95% CI: 0.49, 1.00) for children in Scenario 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 report parameter estimates from Table 3 with confidence intervals. These are direct results from the model fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "CD4+ growth rates were more than tenfold higher in HIV-infected vs healthy individuals: 0.49 vs 0.02 cells/\u00b5L/day in adults and 0.27 vs 0.01 cells/\u00b5L/day in children.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 report growth rate parameter estimates from Table 3. The tenfold difference is clearly demonstrated and is a major finding about immune reconstitution dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Based on model parameters, an infected child starting with 100 cells would reach 500 cells in 1470 days vs 816 days for an adult with the same baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 present calculations based on the fitted model parameters. While the calculations appear reasonable given the growth rates, the manuscript does not show the calculation details, making independent verification difficult. However, the direction (faster in adults) is consistent with the higher adult growth rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Scaled carrying capacity for HIV-infected individuals was 1.75 in adults (vs 0.49 in healthy adults) and 1.03 in children.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 report carrying capacity parameter estimates from Table 3. These are direct model results showing HIV-infected individuals have higher carrying capacities than healthy individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The scaled carrying capacity of 1.75 in adults implies a 75% increase needed to reach ultimate CD4+ levels, while children need only a 3% increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 interpret the carrying capacity parameters. The calculations follow logically from the parameter values (1.75 implies 75% increase, 1.03 implies 3% increase), though the manuscript doesn't show detailed calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Random effects correlations showed the correlation between scaled carrying capacity and growth rate for healthy individuals was positive and strong (0.61) in adults but weak and negative (-0.13) in children, with the strongest correlation being between carrying capacity and baseline CD4+ (-0.67 adults, -0.85 children).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 report correlation results from Table 4. These are direct statistical results from the mixed effects model showing important relationships between parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In children, each month older was associated with decreased baseline scaled CD4+ (-0.007), increased healthy growth rate (0.008), decreased post-ART growth rate (-0.001), and decreased healthy carrying capacity (-0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 report covariate effects from Table 3 with confidence intervals. These are direct model results showing age effects in children.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In children, one unit increase in baseline log viral load was associated with decreased baseline scaled CD4+ (-0.07), increased post-ART carrying capacity (+0.06), and increased post-ART growth rate (+0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 report viral load covariate effects from Table 3. These are direct model results showing viral load associations in children.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In children, one unit increase in baseline BMI z-score was associated with increased baseline scaled CD4+ (+0.15), decreased post-ART growth rate (-0.08), and decreased post-ART carrying capacity (-0.12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 report BMI covariate effects from Table 3. These are direct model results showing BMI associations in children.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "In adults, each month older was associated with increased baseline scaled CD4+ (+0.0006), no effect on post-ART growth rate, decreased healthy growth rate (-0.0012), decreased post-ART carrying capacity (-0.0007), and no effect on healthy carrying capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 report age covariate effects in adults from Table 3. These are direct model results showing age effects differ between adults and children.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Adult females started ART at higher scaled CD4+ values (+0.08) than males, and one unit increase in baseline log viral load was associated with decreased baseline scaled CD4+ (-0.08), increased post-ART carrying capacity (+0.07), and increased post-ART growth rate (+0.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 report sex and viral load covariate effects in adults from Table 3. These are direct model results showing important demographic and clinical associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Only the ratio model reproduces the three phases of CD4+ recovery described by Corbeau and Reynes (2011): sharp increase in 1-6 months, high increase up to 2 years, and slow gradual increase beyond 4 years, making it likely better for long-term predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 compare model behavior to established biological phases with citation to Corbeau and Reynes 2011. The comparison is supported by Figures 3-4 showing the ratio model's continued gradual increase vs the asymptotic model's plateau. This is a key validation of the ratio model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The ratio model is derived directly from the logistic growth model which describes a known biological process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 describes the theoretical foundation of the model. The derivation from logistic growth is shown in the methods section (Equations 1-4), providing mechanistic grounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Larger baseline scaled CD4+ counts are associated with larger subsequent values, consistent with prior studies showing higher baseline counts predict higher plateauing values, and patients with very low baseline counts (<350 cells/\u00b5L) often fail to reach normal values even after long therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 interpret model results in context of prior literature with appropriate citations (Moore and Keruly 2007, Nakanjako 2016, Swiss HIV Cohort Study et al. 2005, Kelley et al. 2009). The interpretation is consistent with the model structure (Equation 4) and prior findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The scaled carrying capacity was negatively correlated with baseline scaled CD4+ counts in adults (-0.64) and children (-0.81), which is reasonable because individuals closer to normal at ART initiation require less cell population expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 report and interpret correlation results from Table 4. The negative correlation is a direct result, and the biological interpretation is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Scaled carrying capacity was higher in individuals on ART than healthy individuals, with post-ART values >1 in both adults and children, meaning baseline counts were below long-term homeostatic optimum and had to grow to reach normal levels, consistent with immune system repair following treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 interpret carrying capacity results from Table 3. The interpretation that K>1 indicates need for growth is logical and consistent with established understanding of immune reconstitution (C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The scaled carrying capacity of 0.68 in healthy children is consistent with CD4+ dynamics in early life: increase until ~1 year then decrease due to increasing blood volume and thymic shrinkage reducing na\u00efve T-cell production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 interpret the healthy children carrying capacity with appropriate citations (Bains et al. 2009, Hapuarachchi et al. 2013, Hazenberg et al. 2004). The biological explanation is well-established and the parameter value is consistent with this understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The scaled carrying capacity of 0.49 in healthy adults suggests decreasing CD4+ trend with age, consistent with some studies showing decrease from young to middle age, though one South African study found slight increase until age 64.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 interpret the healthy adult carrying capacity with citations to supporting (Lugada et al. 2004, Zeh et al. 2011) and contradicting (Malaza et al. 2013) evidence. The authors appropriately acknowledge conflicting findings in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Post-ART CD4+ growth rate is inversely correlated with baseline counts, meaning higher baseline counts (closer to normal) result in lower recovery rates, which is reasonable and consistent with prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 report and interpret the negative correlation from Table 4 with supporting citations (Lawn et al. 2006, Sachsenberg et al. 1998). The biological interpretation is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "CD4+ growth rates were higher in individuals on ART than healthy individuals, consistent with prior studies showing 6-10 fold increases, explained by initial redistribution of memory T-cells from lymph nodes followed by homeostatic proliferation and thymic na\u00efve cell production to restore depleted CD4+ counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 compare growth rates with prior literature (Sachsenberg et al. 1998, Hazenberg et al. 2000) and provide biological explanation with citations (Tsukamoto et al. 2009, Autran 1999). The findings are consistent with established mechanisms of immune reconstitution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Because WHO guidelines for ART initiation changed from CD4+ 200 to 350 to 500 to initiation at diagnosis, post-ART growth rates might be smaller now than in the past due to higher baseline counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C131 speculate about temporal trends based on guideline changes and the inverse relationship between baseline counts and growth rate. While the logic is sound, this is speculation not directly tested in the data (which spans 1997-2013 with 95% in 2003-2012). The claim is appropriately hedged with 'might be'.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Baseline scaled CD4+ was lower in adults (0.2) vs children (0.8), meaning adults started treatment more immunocompromised, likely because children are vertically infected and diagnosed early through PMTCT programs while adults may be infected longer before diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 report parameter estimates from Table 3, and C134-C135 provide reasonable explanations based on transmission routes and healthcare system structure. The interpretation is logical though not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Older age was associated with lower baseline scaled CD4+ in children but higher in adults, possibly because older children have longer untreated infection while older adults may be more health conscious, with younger adults having higher growth rates due to lower baseline counts and potentially higher rebound over similar time periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 report covariate effects from Table 3. Claims C138-C141 provide speculative explanations with some citation support (Prohaska et al. 1985, Cornell et al. 2012, Means et al. 2016, IeDEA West Africa Collaboration et al. 2012). The speculation is appropriately hedged and the negative correlation mechanism is established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Adult females had lower post-ART carrying capacities and higher baseline scaled CD4+ than males, suggesting earlier treatment initiation, with lower recovery rates consistent with the inverse baseline-growth rate relationship, and similar time to rebound set-point as males in prior studies, with diverging literature opinions possibly due to varying outcome definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142, C144, C146 report model results from Table 3. Claims C143, C145, C147 cite supporting literature (Cornell and Myer 2013, Means et al. 2016, EuroSIDA group et al. 2003, Patterson et al. 2007). Claims C148-C150 provide interpretation and speculation about literature inconsistencies. The findings are internally consistent with the model's inverse relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "Using subsets of the full dataset might have introduced selection bias, but comparison of summary statistics and model results with/without viral load suppression adjustment showed the subset was representative except for viral load suppression percentage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 acknowledge a limitation and provide evidence for representativeness from Table 1 and Supplementary file 4. The authors appropriately address this potential bias with sensitivity analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The model does not distinguish between na\u00efve and memory CD4+ T-cell subtypes, which have different dynamics according to prior studies, but these subtypes are not measured in routine HIV monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 acknowledge a model limitation with citation support (Di Mascio et al. 2006, Bajaria et al. 2002) and justify it based on data availability. This is an appropriate acknowledgment of model simplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "Separating analyses for children and adults does not account for children growing into adulthood during lifelong ART treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 acknowledges a limitation of the analytical approach. This is a valid concern for longitudinal studies of pediatric patients on lifelong therapy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "Scaling adult CD4+ counts by a single average value might have introduced bias in healthy adult carrying capacity estimates due to age and demographic variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C158 acknowledges a potential limitation of the methodological choice. However, the authors showed in Supplementary file 2 that age/sex-dependent scaling produced similar results, partially addressing this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Analysis of 1616 children (median age 4.3 years) and 14,542 adults (median age 36 years) showed scaled carrying capacity and baseline scaled CD4+ were closer to healthy values in children than adults, with post-ART CD4+ growth rate inversely correlated with baseline counts and consequently higher in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 summarize key findings from the abstract that are supported by the detailed results in Table 3 and throughout the manuscript. These represent the main conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R46",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The study provides insight into aging effects on immune dynamics in ART vs healthy individuals, with the ratio model providing more accurate CD4+ reconstitution estimation than the asymptotic model and enabling comparison across healthy and HIV-treated individuals through scaled CD4+ counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C162 summarize the study's contributions. The superiority of the ratio model is supported by its ability to reproduce three-phase recovery (C102-C103) and model comparison results (C59-C63). The scaling approach enables cross-population comparison as demonstrated throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R47",
+    "claim_ids": [
+      "C163",
+      "C164"
+    ],
+    "result": "Large variations in CD4+ growth rates and carrying capacities between individuals highlight the need for individual-level evaluation of ART outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C164 report findings about individual variability from the random effects analysis and draw a clinical implication. The large random effects variances in the model support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R48",
+    "claim_ids": [
+      "C165"
+    ],
+    "result": "The strong inverse correlation between baseline scaled CD4+ and carrying capacity emphasizes the importance of early ART initiation regardless of age or disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C165 draws a clinical implication from the correlation result (C80, C108). The negative correlation (-0.67 adults, -0.85 children) supports the conclusion that starting with higher counts (earlier initiation) requires less expansion to reach normal levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R49",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "Post-ART CD4+ growth rate is not associated with patient age but is associated with higher baseline viral load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 summarize covariate findings from Table 3. In adults, age had no effect on post-ART growth rate (C92), while viral load had positive effects (C87, C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R50",
+    "claim_ids": [
+      "C168"
+    ],
+    "result": "Understanding long-term treatment effects on the immune system is critical for delivering best care to HIV-infected patients in the expanding aging ART population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C168 states the clinical importance of the research. This is a reasonable statement of significance given the growing population on lifelong ART.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "A brain age prediction model was developed using gradient boosting (XGBoost) trained on 38,682 UK Biobank participants with 365 structural MRI features. The model achieved r=0.82 correlation, MAE=3.31 years, and RMSE=4.14 years on an independent test set of 1372 participants with longitudinal data (mean follow-up 2.3 years). Brain age delta at baseline and follow-up were strongly correlated (r=0.81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 and C77-C92 provide comprehensive methodological details and performance metrics for the brain age model. The model development, training procedures, hyperparameter optimization, and validation metrics are clearly documented with appropriate sample sizes and statistical measures. The high correlation between baseline and follow-up brain age delta (C18) supports the reliability of the measure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The findings were replicated using an independent Lifebrain dataset (3292 participants, age 18.0-94.4 years, up to 11.2 years follow-up) and a different machine learning algorithm (LASSO). The LASSO model achieved comparable performance (r\u00b2=0.69, MAE=3.36 years) in UK Biobank, and the Lifebrain model achieved r\u00b2=0.90 with MAE=4.68 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C82-C106 document comprehensive replication across independent datasets and algorithms. The consistency of findings across different cohorts (Lifebrain consortium with 5 European cohorts), longer follow-up periods, and alternative analytical approaches (LASSO vs. gradient boosting) strengthens the validity of the results. Performance metrics are comparable across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Cross-sectional brain age delta showed no meaningful association with longitudinal brain age change (brain age deltalong) across three independent analyses: UK Biobank with gradient boosting (\u03b2=-0.016, p=0.04, r\u00b2=0.002), UK Biobank with LASSO (\u03b2=-0.003, p=0.65, r\u00b2=0.001), and Lifebrain (\u03b2=-0.007, p=0.53, r\u00b2=0.001). Post-hoc equivalence tests confirmed that positive relationships with \u03b2>0.010 delta/year could be rejected in all analyses. Cross-sectional brain age delta was also unrelated to a principal component of brain change (\u03b2=-0.009, p=0.46, r\u00b2=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C21-C25 present the core negative finding with appropriate statistical rigor. The lack of association is demonstrated across multiple datasets and methods, with very small effect sizes (r\u00b2\u22640.002) and equivalence testing to rule out meaningful positive relationships. The weak negative association in one analysis (C21, p=0.04) is not replicated and has negligible effect size, appropriately interpreted as no meaningful relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Longitudinal brain age delta (brain age deltalong) was significantly associated with a principal component of brain change (p<0.001) across all three analyses. Cross-sectional brain age delta showed limited associations with specific features (lateral ventricle expansion and white matter hypointensities, p<0.05 Bonferroni-corrected), while brain age deltalong related to change in 45 features across four modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 demonstrate that longitudinal brain age change (deltalong) captures actual brain changes, while cross-sectional delta shows minimal associations. The contrast between cross-sectional (2 features) and longitudinal (45 features) associations is striking and supports the main conclusion. Statistical corrections (Bonferroni) and replication across datasets strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The scaling of brain age delta throughout the age range was \u03b4=0.14 (UK Biobank) and \u03b4=0.09 (Lifebrain), corresponding to an increase in spread of 0.38 and 0.37 years when moving from youngest to oldest participants. This suggests brain age delta only modestly reflects rate of aging effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide quantitative evidence using an established method (Smith et al., 2019) to assess age-related spreading of brain age delta. The small scaling parameters and minimal spread across the age range (0.37-0.38 years) support the interpretation that cross-sectional brain age delta captures limited ongoing aging effects. The consistency across two independent datasets strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Birth weight (limited to normal variations 2.5-4.5 kg, n=770) was significantly associated with cross-sectional brain age delta (\u03b2=-0.70 year/kg, p=0.02, r\u00b2=0.009) but not with longitudinal brain age change (\u03b2=0.02, p=0.79). This finding was replicated using LASSO (\u03b2=-0.79 year/kg, p=0.006, r\u00b2=0.009).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C34-C37 demonstrate that birth weight, an early-life factor, associates with cross-sectional brain age but not with rate of change. The effect is modest (r\u00b2=0.009) but statistically significant and replicated across methods. The restriction to normal birth weight range (C36) is appropriate to avoid confounding from pathological conditions. The dissociation between cross-sectional and longitudinal associations supports the early-life influence hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Polygenic scores for brain age (PGS-BA), computed from GWAS of 38,163 training participants, were positively associated with cross-sectional brain age delta (\u03b2=0.54 year, p<0.001, r\u00b2=0.02) in 1339 test participants. PGS-BA showed a weak negative association with brain age delta change using gradient boosting (\u03b2=-0.06, p=0.02) but no association using LASSO (\u03b2=-0.001, p=1.0). The association with cross-sectional delta was replicated with LASSO (\u03b2=0.53 year, p<0.001, r\u00b2=0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C38-C41, C98-C100 demonstrate genetic influences on cross-sectional brain age using appropriate GWAS methodology and independent training/test sets. The strong association with cross-sectional delta (r\u00b2=0.02, highly significant) contrasts with inconsistent associations with longitudinal change (significant with one method but not replicated). This pattern supports early-life genetic influences on brain structure rather than ongoing aging rates. The larger effect size compared to birth weight suggests substantial genetic contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C51",
+      "C54",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors conclude that individual variation in cross-sectional brain age does not capture ongoing rate of brain aging but instead reflects early-life influences on brain structure. Brain age only modestly reflects actual rate of brain change in middle and old adulthood. The largest part of interindividual variation in brain age delta originates before the sample lower bound (\u226518 and 45 years). The results call for caution in interpreting cross-sectional brain age as accelerated aging without longitudinal data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C51, C54, C74-C76 represent the main conclusions synthesized from the empirical findings. These conclusions are well-supported by the convergent evidence: (1) lack of association between cross-sectional and longitudinal brain age (C3, C21-C25), (2) associations with early-life factors (birth weight C34, PGS-BA C38), (3) minimal age-related spreading (C29-C33), and (4) limited associations with actual brain changes (C27). The recommendations for caution and need for longitudinal data are appropriate given the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript establishes the context that brain age is widely used to quantify brain health, with higher brain age commonly interpreted as reflecting accelerated aging. However, an alternative hypothesis suggests brain age could reflect stable early-life differences rather than ongoing aging processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C11 accurately describe the field's current understanding and competing hypotheses about brain age. These are appropriately cited background claims (C7-C11) that frame the research question. The characterization of the field is fair and sets up the empirical test conducted in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The discussion contextualizes findings within existing literature, noting that prior work has shown early-life factors (childhood IQ, genetics, neonatal characteristics) have lifelong stable influences on brain structure. Previous studies have yielded mixed support for cross-sectional brain age as a marker of aging. The results align with theoretical claims that between-person covariance structures don't necessarily generalize within-person, and suggest cross-sectional brain age has low validity despite high reliability as an index of brain aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C70 appropriately cite and interpret prior literature to contextualize the findings. The citations support the interpretation that early-life factors have lasting effects (C45-C48, C57-C60, C66) and that cross-sectional brain age has shown mixed validity (C52-C53). The theoretical framework about between- vs. within-person variation (C55) and measurement validity vs. reliability (C56) provides appropriate conceptual grounding. The recommendations about normative models (C67-C70) are reasonable extensions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C63",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors acknowledge limitations and boundary conditions: brain age related to change in specific features (ventricular expansion, white matter hypointensities) though not composite scores; brain age delta partially reflects noise as a prediction error; findings may differ in developmental samples or disease populations where changes occur faster or more dramatically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C63, C71-C73 appropriately acknowledge limitations and boundary conditions. The recognition that some specific features show associations (C50) is consistent with the data (C27). The acknowledgment that brain age delta includes prediction error/noise (C63) is methodologically sound. The speculation about developmental samples (C71) and disease populations (C72) appropriately qualifies the generalizability of findings to the studied age ranges and healthy populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The correlation between LASSO-based and gradient boosting-based brain age deltas was 0.80, demonstrating consistency across machine learning approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 documents the correlation between two different brain age estimation methods. The high correlation (r=0.80) supports that the findings are not specific to one algorithmic approach, strengthening the technical replication. This is a straightforward methodological validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The first principal component of brain change explained approximately 20% of variance in both UK Biobank and Lifebrain datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 reports the variance explained by the composite measure of brain change used in secondary analyses. This is a straightforward descriptive statistic supporting the validity of using PC1 as a summary measure of brain change across multiple features.",
+    "result_type": "MINOR"
+  }
+]

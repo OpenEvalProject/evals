@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors developed an improved effective chi-squared statistic (ECS) by optimizing the exponent c in the correlation matrix of chi-squared statistics. Through simulation studies, they determined that the favorable c value should be within the range 1 to 2, with an averaged optimal value of 1.432, which properly controls type I error rates across different sample sizes, variant numbers, and phenotype distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 and C97-C98 collectively demonstrate the methodological improvement of ECS. The simulation results (C19-C20, C23) show consistent patterns across multiple scenarios, theoretical derivation (C22, C98) provides mathematical justification for the range of c, and the empirical optimization (C24) yields a specific value. The evidence from both simulation data and mathematical derivation converges to support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C82"
+    ],
+    "result": "The conditional gene-based association analysis based on the improved ECS demonstrates proper type I error control and higher statistical power compared to both unconditional association tests and likelihood ratio tests. The conditional p-values follow a uniform distribution for non-causal genes, while the method produces smaller p-values than likelihood ratio tests for causal genes, without requiring individual genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 and C82 are supported by simulation results shown in Figures 4 and 5. The type I error control is demonstrated across six scenarios (C25-C27), the comparison with likelihood ratio test shows both validity (C26) and superior power (C29), and the practical advantage of not requiring individual genotypes (C30) is a clear methodological benefit. The convergence of evidence from multiple simulation scenarios strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C96"
+    ],
+    "result": "Simulation studies demonstrate that isoform-level eQTLs are more powerful than gene-level eQTLs in association analysis when gene expression affects the phenotype. The power of isoform-level eQTLs increases with phenotype variance and gene expression variance explained by variants, and this advantage is attributed to gene-level expression profiles potentially omitting expression heterogeneity among isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C46, and C96 are supported by simulation results in Table 1. Type I error is properly controlled (C41), and power comparisons across scenarios 7-12 consistently show isoform-level eQTLs (IsoeQTL, GeneQTL) outperforming gene-level eQTLs (Gen3eQTL, Gen6eQTL) when gene expression affects phenotype (C43-C45). The theoretical rationale (C96) provides a plausible mechanism. However, the simulations are based on specific assumptions about isoform expression patterns that may not fully represent biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C83",
+      "C84"
+    ],
+    "result": "Application of eDESE:dist to schizophrenia GWAS data identified 205 significant genes after conditional analysis, compared to 619 genes identified by MAGMA. More than half of eDESE:dist genes overlapped with MAGMA, and these overlapping genes were enriched with neuronal and synaptic signaling-related GO terms. Unique genes from eDESE:dist showed dendrite-related enrichment, while unique MAGMA genes lacked neuronal/synaptic enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40, C83-C84 are supported by real data analysis results shown in Figure 6 and accompanying text. The comparison between methods is quantitative (C33-C35), GO enrichment analysis provides biological validation (C36-C39), and text-mining results (C40) offer independent support. The conditional analysis advantage of removing redundant associations (C34) is a reasonable interpretation. The convergence of multiple lines of evidence (overlap analysis, GO enrichment, literature support) strengthens this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C85"
+    ],
+    "result": "Integration of eDESE:dist, eDESE:gene, and eDESE:isoform identified five brain regions as potentially schizophrenia-associated tissues. While all thirteen brain regions were significant using eDESE:dist, only five remained significant when using isoform-level eQTLs. Four of these five regions were independently reported by the Psychiatric Genomics Consortium, and control tissues (muscle, skin) showed no significant associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 and C85 describe a tissue optimization strategy supported by data in Table 2. The progressive refinement from 13 to 5 brain regions (C47-C49) demonstrates the discriminatory power of isoform-level eQTLs. The negative control results (C51) strengthen the specificity of the findings. Independent validation from the Psychiatric Genomics Consortium (C85) provides external support. However, the 'wisdom of the crowds' principle for integration is not rigorously defined, and the statistical framework for combining the three models is not fully detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C86"
+    ],
+    "result": "eDESE:isoform identified more potential susceptibility genes than eDESE:gene and S-PrediXcan, with 524 unique genes compared to the other methods. These genes showed greater support from published literature (247 genes with PubMed hits vs. 170 for eDESE:gene and 135 for S-PrediXcan) and more biologically relevant GO enrichment terms related to neuronal and synaptic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 and C86 are supported by comparative analysis shown in Figure 7 and accompanying tables. The quantitative comparisons are clear (C52-C57), literature validation provides independent support (C54-C57), and GO enrichment analysis (C61-C62) demonstrates biological relevance. Notable examples like TCF4, RGS4, and RANGAP1 (C57-C60) with extensive literature support strengthen the findings. However, the larger gene count could also reflect lower specificity, and the lenient eQTL threshold (p<0.01) acknowledged by authors (C91) may contribute to this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Potential susceptibility genes identified by eDESE:gene and eDESE:isoform were significantly enriched in a brain consensus module ('turquoise') from weighted gene co-expression network analysis, which itself was enriched with neuronal and synaptic signaling-related GO terms. In contrast, S-PrediXcan genes showed no significant module enrichment, and commonly identified genes across all three methods showed no GO enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by WGCNA results shown in Figure 8. The enrichment of eDESE genes in the 'turquoise' module (C67-C68) with significant p-values provides statistical support, while the lack of enrichment for S-PrediXcan (C69) and commonly identified genes (C63) suggests eDESE identifies a more coherent biological signal. The module's own GO enrichment (C70) validates its biological relevance. However, WGCNA parameters and module definition criteria could influence these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C87",
+      "C88"
+    ],
+    "result": "Seven potential susceptibility genes identified by eDESE are target genes of FDA-approved antipsychotics, with six found by eDESE:isoform. Drug-gene interaction analysis showed significant enrichment of antipsychotic interactions for eDESE and MAGMA but not S-PrediXcan. eDESE:isoform identified the most genes (207) in the 'DRUGGABLE GENOME' category among all methods tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C75-C81, C87-C88 are supported by database searches in DrugBank and DGIdb shown in Tables 5-6. The identification of known drug targets (C75-C77, Table 5) provides strong validation, and the significant enrichment of drug-gene interactions (C78-C79, Table 6) demonstrates statistical support. The higher proportion of druggable genes for eDESE:isoform (C81, C88) suggests practical utility. However, the percentages are small (0.7-1.0%), and the causal relationship between genetic association and drug target validity requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "eDESE:isoform revealed tissue-specific and isoform-specific associations with schizophrenia. Different isoforms of the same gene (e.g., SNX19) were significantly associated with schizophrenia in different brain regions, and some isoforms (e.g., CHRNA2) showed region-specific associations while others (e.g., NAGA) were consistent across all five optimized brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by isoform-level analysis results from eDESE:isoform. The examples provided (NAGA, CHRNA2, SNX19) with literature support (C72) demonstrate the tissue- and isoform-specificity of associations. This represents a unique capability of eDESE:isoform not available in other methods. However, the biological interpretation of why different isoforms show different tissue associations requires further investigation, and the statistical power for detecting isoform-specific effects may vary across tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C94",
+      "C95"
+    ],
+    "result": "eDESE is a new conditional gene-based framework that integrates three variant-to-gene mapping strategies (physical distance, gene-level eQTLs, isoform-level eQTLs) with an improved effective chi-squared statistic. Application to schizophrenia revealed novel susceptible and druggable candidate genes, demonstrating that isoform-level eQTLs can be an important supplement to conventional gene-based approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, C94-C95 represent the overarching framework and conclusions. The methodological development (C2, C18) is supported by the technical results, and the application results (C94) are supported by the schizophrenia analysis. The conclusion about isoform-level eQTLs as a supplement (C95) is supported by comparative analyses showing unique genes identified by eDESE:isoform. However, the framework's performance may depend on the quality and power of available eQTL data, and the authors acknowledge several limitations (C89-C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors acknowledge several limitations: moderate GTEx sample sizes may lead to underpowered eQTLs, the number of identified genes is larger than conventional studies due to lenient eQTL thresholds (p<0.01), conditional analysis performance depends on gene ordering, and the optimal c value remains empirical despite theoretical derivation of its range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 represent acknowledged limitations by the authors. These are reasonable concerns: GTEx sample sizes are indeed moderate for some tissues (C89), the lenient eQTL threshold (C91) is a deliberate choice to compensate for power issues but may increase false positives, gene ordering effects (C92) are a known issue in conditional analysis, and the empirical nature of c (C93) is acknowledged. These limitations are appropriately disclosed and do not invalidate the main findings but suggest areas for future improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors provide background on challenges in GWAS analysis and existing methodological approaches, including the difficulty of distinguishing truly associated genes due to LD and non-coding variants, the advantages of gene-based and conditional approaches, the role of eQTLs in identifying susceptibility genes, and the relative lack of attention to isoform-level eQTLs compared to gene-level eQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C16 represent background knowledge and literature review supported by appropriate citations. These claims establish the scientific context and rationale for the study. The characterization of existing methods (C10, C14) and field gaps (C15) is accurate based on the citations provided. This background appropriately motivates the development of eDESE and its focus on isoform-level eQTLs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors provide mathematical derivation showing that correlation between non-central chi-square variables converges to |r| as the noncentrality parameter approaches infinity, and describe the schizophrenia GWAS dataset (53,386 cases, 77,258 controls) with exclusion of the MHC region due to high polymorphism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101-C102 represent technical details and data description. The mathematical derivation (C99) supports the theoretical basis for the c value range, and the dataset description (C101-C102) provides necessary methodological information. The exclusion of the MHC region (C102) is a standard practice in GWAS analysis due to its complex LD structure. These are appropriately documented technical details.",
+    "result_type": "MINOR"
+  }
+]

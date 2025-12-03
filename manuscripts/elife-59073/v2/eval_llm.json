@@ -1,0 +1,453 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "SCCOHT is characterized as a rare, aggressive ovarian cancer affecting young women (mean age 24), with poorly differentiated tumors of unknown cell origin. Over 94% of SCCOHT tumors have mutations and loss of SMARCA4/BRG1, with epigenetic silencing of SMARCA2/BRM, creating a simple genetic background that makes SCCOHT a unique model for studying BRG1 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are well-supported by multiple citations to published literature establishing the clinical and molecular characteristics of SCCOHT. The demographic data, mutation frequencies, and genetic simplicity are documented in peer-reviewed studies, providing strong evidence for these background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The SWI/SNF complex and AP-1 transcription factor have established roles in cellular processes and have been shown to interact. The SWI/SNF complex is involved in differentiation and cell cycle control and interacts with transcription factors including AP-1. AP-1 is a dimeric transcription factor composed of FOS, JUN, ATF, and MAF family members sharing a bZIP domain, and has been shown to interact with various SWI/SNF subunits including BRG1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 are supported by extensive citations to published literature documenting the functions of SWI/SNF and AP-1, their structural characteristics, and their interactions. These are well-established facts in the field supported by multiple independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "BRG1 reexpression in BIN67 cells induced morphological changes (elongated, spindle-like morphology) and growth suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by direct microscopy observations shown in Figure 1b and Figure 1-supplement 1A, with reduced cell numbers indicating growth suppression. These findings are consistent with previously published reports cited in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "RNA-seq analysis of BIN67 cells following BRG1 reexpression identified 18,507 protein-coding genes, with 4,087 genes significantly increasing and 3,444 genes significantly decreasing. Upregulated genes showed greater log2 fold changes and significance than downregulated genes. Known BRG1 target genes (CD44, EHF, IFI16, MMP7) increased as expected, though BRG1 itself was not the most highly expressed gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are directly supported by RNA-seq experimental data shown in Figure 1c and Supplementary file 1. The differential expression analysis using DESeq2 with appropriate statistical cutoffs (padj <0.05) provides robust quantitative support. Validation of known BRG1 targets strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Proteomics analysis identified 5,726 proteins in BIN67 cells, with 306 significantly upregulated and 233 significantly downregulated following BRG1 reexpression. Upregulated proteins showed higher log2 fold changes and significance than downregulated proteins. CD44 protein increased significantly (log2FC=2.20), consistent with RNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by proteomics data shown in Figure 1d and Supplementary file 1B. The concordance between CD44 protein and RNA changes provides internal validation. The statistical analysis using appropriate FDR cutoffs supports the significance claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Gene and protein expression changes showed positive correlation (R\u00b2=0.407 for all genes/proteins, n=5,528; R\u00b2=0.774 for statistically significant changes, n=395), indicating that key expression changes are highly correlative in BIN67 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by correlation analysis shown in Figure 1-supplement 3. The stronger correlation when filtered for statistical significance (R\u00b2=0.774) is expected and validates that the most robust changes are concordant between transcriptome and proteome. The sample sizes are adequate for correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "ATAC-seq analysis showed global increase in chromatin accessibility following BRG1 reexpression in BIN67 cells, with 4,023 peaks gained and 306 peaks lost out of 62,308 total peaks identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by ATAC-seq data shown in Figure 1e. The differential peak analysis using DESeq2 with padj <0.10 cutoff is appropriate for ATAC-seq data. The dramatic asymmetry (13-fold more gained than lost peaks) strongly supports the claim of global accessibility increase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Cell type enrichment analysis (xCell) showed that control BIN67 cells resembled immune cells (Th2 cells) and mesenchymal stem cells, while BRG1-reexpressing cells resembled epithelial cells and keratinocytes. GSEA analysis independently confirmed significant enrichment of epithelial pathways in both RNA-seq and proteomics data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by xCell analysis (Figure 2a) and GSEA results (Figures 2b-c). The convergence of multiple independent analytical approaches (xCell, GSEA on RNA-seq, GSEA on proteomics) strengthens confidence in the epithelial signature finding. However, xCell is a computational inference tool and should be validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The epithelial signature was conserved across multiple SCCOHT cell lines (BIN67, SCCOHT-1, COV434), with 60% of xCell epithelial genes upregulated in all three lines and keratin genes showing consistent upregulation. Epithelial signature scores significantly increased after BRG1 reexpression in all three cell lines (p-values: BIN67=2.988e-06, COV434=0.0075, SCCOHT-1=0.0014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by RNA-seq data across multiple cell lines (Figures 2d-g) with appropriate statistical testing (Welch t-tests). The consistency across three independent SCCOHT cell lines strengthens the generalizability of findings. The statistical significance is robust across all cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Of 171 epithelial signature genes, 49 showed measurable changes in both gene and protein expression in BIN67 cells, with strong correlation (R\u00b2=0.764) and keratins among the most highly upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by integrated RNA-seq and proteomics analysis shown in Figure 2h. The strong correlation (R\u00b2=0.764) for genes with both measurements validates the epithelial signature at both transcriptional and translational levels. The sample size (n=49) is adequate for correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "BRG1 ATPase mutants (partial loss T910M and complete loss K785R) did not induce the epithelial signature in BIN67 cells, indicating that the epithelial gene signature induction depends on BRG1 catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by analysis of published RNA-seq data (Pan et al., 2019) shown in Figure 2-supplement 2C. The use of both partial and complete ATPase mutants provides strong evidence for catalytic activity dependence. However, this relies on previously published data rather than new experiments in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The BRG1-dependent epithelial signature is broadly applicable to NSCLC cell lines. A427 cells (BRG1-deficient) significantly increased epithelial signature upon BRG1 expression (p=0.00067). In H358 cells, BRG1 knockout significantly decreased the epithelial signature (p=0.04437), while BRM knockout did not decrease it (p=0.02038).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by singscore analysis of RNA-seq data from NSCLC cell lines (Figures 3a-b) with appropriate statistical testing. The differential effects of BRG1 vs. BRM knockout in H358 cells provide specificity. However, the p-value for BRG1 knockout (0.04437) is marginal and close to the significance threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Gained ATAC-seq peaks in BIN67 cells showed positive correlation (R\u00b2=0.41, p=0.00095) with xCell epithelial scores across TCGA tumor types, indicating that the altered chromatin landscape resembles epithelial-originating tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by integration of ATAC-seq data with TCGA data (Figure 3c). The statistically significant correlation validates the epithelial-like chromatin changes. However, R\u00b2=0.41 indicates moderate correlation with substantial unexplained variance, and the analysis does not account for tumor heterogeneity or other confounding factors in TCGA data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Primary SCCOHT tumors lack expression of epithelial markers Claudin-4 (average H-score=0) and CD44 (average 9.43% CD44/DAPI), scoring lowest among gynecological tumors tested, consistent with findings in SCCOHT cell lines lacking BRG1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by immunohistochemistry and immunofluorescence data on tissue microarrays (Figures 3e-h). The quantitative scoring provides objective measurements. However, the sample sizes for SCCOHT (n=16 cores for CLDN4, n=39 for CD44) are relatively small, and the range of CD44 expression (0.22-31.9%) shows heterogeneity that may warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Gained chromatin accessibility after BRG1 reexpression occurred mostly at introns and intergenic regions, with strong enrichment for AP-1 family member motifs at sites with increased accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by genomic annotation (Figure 4A) and transcription factor motif analysis (Figure 4B) of ATAC-seq data. The enrichment of AP-1 motifs at gained peaks is a key finding linking BRG1 to AP-1. The analysis uses appropriate tools (HOMER) with static peaks as background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Gained accessible regions acquired H3K27ac and H3K4me1 enhancer marks, defining them as enhancers. BRG1 and c-Jun were both recruited to sites of increased chromatin accessibility as measured by CUT&RUN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by integration of ATAC-seq with published ChIP-seq data (Pan et al., 2019) and new CUT&RUN data (Figure 4C-D). The convergence of chromatin accessibility, enhancer marks, and protein recruitment provides strong mechanistic evidence. However, C51 relies on previously published ChIP-seq data rather than new experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "c-Jun binding patterns differed between BIN67 and SCCOHT-1 cells. BIN67 showed minimal c-Jun binding prior to BRG1 reexpression, while SCCOHT-1 showed significant c-Jun relocalization after BRG1 reexpression. In SCCOHT-1, genes newly recruiting both c-Jun and BRG1 increased expression, while those losing c-Jun decreased expression. c-Jun expression was constitutively high in SCCOHT-1 but strongly induced by BRG1 in BIN67.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by CUT&RUN and RNA-seq data (Figure 4C-D, Figure 4-supplement 1). The cell line-specific differences provide important mechanistic insights. However, the interpretation that c-Jun relocalization drives expression changes (C56) is correlative rather than causal, and would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "AP-1 motifs were highly enriched in BRG1-bound regions in both BIN67 and SCCOHT-1 cells. At promoter regions with FRA1 motifs, chromatin remained mostly open with minimal changes, while distal FRA1 sites gained accessibility and enhancer marks. BRG1 and c-Jun were recruited to both promoter and distal FRA1/AP-1 motif locations, implicating AP-1 as an important mediator of SCCOHT development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by motif analysis of CUT&RUN peaks (Figure 4F) and integrated analysis of ATAC-seq, ChIP-seq, and CUT&RUN at AP-1 motif sites (Figure 4G). The distinction between promoter and distal regions is important mechanistically. However, C63's claim about AP-1 as a mediator of SCCOHT development is an inference that extends beyond the data shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Epithelial signature genes showed bimodal expression distribution in BIN67 and SCCOHT-1 cells with strong concordance (r=0.66, p=3.95e-22). The epithelial-low group was enriched for ZEB1/2 motifs at promoters, while the epithelial-high group showed strong enrichment for AP-1 family member motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by expression distribution analysis (Figure 5A-B) and motif analysis at promoters (Figure 5C). The bimodal distribution and differential motif enrichment suggest distinct regulatory mechanisms. The correlation between cell lines is statistically significant. The ZEB1/2 enrichment in the low group is consistent with known EMT regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Chromatin accessibility increased more at BRG1 peaks annotated to epithelial-high genes compared to epithelial-low and non-epithelial genes. Strong recruitment of both BRG1 and c-Jun was observed near promoters and upstream regions of epithelial-high genes (e.g., S100A2, SFN), supporting that epithelial-high gene expression depends on BRG1 recruitment, chromatin remodeling, and AP-1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by integrated ATAC-seq and CUT&RUN analysis (Figure 5D-E). The differential chromatin accessibility changes between gene groups and co-recruitment of BRG1 and c-Jun provide mechanistic support. However, C70's conclusion about dependence is an inference from correlative data rather than functional perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Multiple AP-1 family members from all four main families (FOS, JUN, ATF, MAF) were upregulated after BRG1 reexpression in BIN67 and SCCOHT-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by RNA-seq data shown in Figure 6-supplement 1A-B. The broad upregulation across AP-1 families provides rationale for using a pan-AP-1 dominant negative approach. The data are clearly presented in heatmap format.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The BIN67 pIND20-FLAG-A-FOS inducible cell line recapitulated parental BIN67 responses to BRG1 (R\u00b2=0.724, p<2.2e-16). PCA showed control conditions clustered regardless of A-FOS induction, while BRG1 conditions segregated by A-FOS presence. A-FOS induction had minimal effect on control cells (8 genes up, 24 down) but substantial effect on BRG1-reexpressed cells (405 genes down, 52 up), with downregulated genes being those upregulated by BRG1 alone, indicating BRG1 is necessary for AP-1-dependent gene changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by RNA-seq analysis of the A-FOS inducible system (Figure 6, Figure 6-supplement 2). The strong correlation with parental cells validates the system. The PCA and differential expression analyses are appropriate. The minimal effect of A-FOS alone is surprising but clearly documented. The conclusion that BRG1 is necessary for AP-1 effects is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "A-FOS induction with BRG1 expression mitigated but did not eliminate BRG1-dependent gene expression increases, including epithelial signature genes, indicating that most but not all BRG1-dependent expression changes require AP-1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by RNA-seq analysis comparing BRG1 expression with and without A-FOS (Figure 6C-D). The partial rather than complete suppression is an important finding indicating AP-1-dependent and AP-1-independent mechanisms. The data clearly show reduced but not absent epithelial gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Western blot validation showed that CD44 and Claudin-4 protein expression induced by BRG1 in parental and A-FOS(-DOX) cells was completely lost in the presence of A-FOS and BRG1, demonstrating that both active AP-1 and BRG1 are necessary for epithelial target protein expression, with neither alone being sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are supported by western blot data (Figure 6E). The complete loss of CD44 and Claudin-4 protein expression with A-FOS provides strong functional validation of the RNA-seq findings. The use of two independent epithelial markers strengthens the conclusion. The inference that both factors are necessary is well-supported, though sufficiency would require additional gain-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose a model where BRG1 reexpression leads to gained chromatin accessibility at distal enhancer regions enriched with AP-1 motifs, accompanied by BRG1 recruitment. BRG1 is also recruited to promoters of epithelial genes containing AP-1 motifs. Together, BRG1 and AP-1 have an important biological impact on inducing an epithelial-like signature in SCCOHT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 represent the integrated model (Figure 7) synthesizing the multi-omic data. The model is well-supported by the convergence of ATAC-seq, CUT&RUN, RNA-seq, proteomics, and functional A-FOS experiments. However, the model is largely correlative and does not establish the temporal order of events or definitively prove causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors claim their study provides the first insight into the biological significance of BRG1-AP-1 interactions, showing that BRG1 reexpression drives an epithelial-like signature in SCCOHT cells, extending previous reports of AP-1 and SWI/SNF associations in other contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by appropriate citations to prior work and the novel findings in this manuscript. While AP-1-SWI/SNF interactions were previously described, the connection to epithelial differentiation in SCCOHT appears novel. However, the claim of being 'first' should be interpreted cautiously as it depends on how 'biological significance' is defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors discuss that AP-1 has been suggested as a pioneer transcription factor in other contexts. In SCCOHT-1 cells, pre-existing c-Jun sites that recruited BRG1 did not enhance gene expression, while only sites newly recruiting both c-Jun and BRG1 upregulated expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by citation to prior work (C94) and CUT&RUN/RNA-seq integration (C95-C96, Figure 4-supplement 1). The finding that pre-existing c-Jun sites don't respond to BRG1 recruitment is important mechanistically, though the sample size and statistical analysis for this comparison are not clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "BRG1 localized to both promoters and enhancer regions following reexpression, consistent with previous reports in other cell types. AP-1 co-localization with other transcription factors in enhancers depends on cell lineage, as shown in various cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by the CUT&RUN data in this study and appropriate citations to prior literature. These claims provide context for interpreting the current findings within the broader field. The citations are appropriate and support the statements made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Control BIN67 cells showed strong similarity to mesenchymal stem cells (MSCs) by xCell analysis, suggesting that BRG1 loss may result in EMT or prevent epithelial differentiation during development. In NSCLC, EMT is associated with poor prognosis, suggesting a universal role for BRG1 loss in driving EMT and tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102 mix supported observations (C99: xCell data, C101: NSCLC literature) with speculative interpretations (C100, C102). The MSC-like signature in control cells is data-driven, but the mechanistic interpretations about EMT and developmental arrest are speculative. The extension to a 'universal role' (C102) is not adequately supported by the limited cell line data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors propose that SCCOHT tumors may arise from an epithelial-like cell, noting that while primary SCCOHT tumors lack CLDN4 expression (consistent with prior studies), this does not rule out epithelial origin since undifferentiated tumors of known epithelial origin can also lack CLDN4. BIN67 cells express CLDN4 upon BRG1 reexpression, suggesting epithelial origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C108 present a hypothesis about cell of origin that is partially supported but remains speculative. The CLDN4 data (C104-C107) are well-documented, and the logic about undifferentiated tumors is sound (C105-C106). However, the inference about epithelial origin (C103, C108) requires additional evidence such as lineage tracing or analysis of early-stage tumors. The epithelial signature upon BRG1 reexpression could reflect reprogramming rather than revealing the original cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Some pathological analyses suggest SCCOHT arises from immature teratoma. Combined with the epithelial signature data, the authors speculate that an epithelial cell within immature teratoma gives rise to SCCOHT, though the specific tissue type cannot be defined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C110 are highly speculative. While C109 is supported by citations to pathology studies, C110 is conjecture combining those observations with the current epithelial signature findings. This hypothesis requires substantial additional evidence including analysis of teratomas, early-stage SCCOHT, and potentially lineage tracing studies. The speculation is reasonable but not adequately supported by the data presented.",
+    "result_type": "MINOR"
+  }
+]

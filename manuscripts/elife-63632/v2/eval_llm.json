@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C65",
+      "C66"
+    ],
+    "result": "Permeabilized cells under isotonic conditions perform extremely well for scATAC-seq, exceeding nuclei-based methods by some measures. Libraries from permeabilized cells consisted almost entirely of short fragments with minimal nucleosomal content, suggesting that chromatin structure remains unperturbed. Signal at TSS and CTCF motifs was retained in permeabilized cells, and permeabilized cells obtained by FACS had the highest FRIP and FRITSS scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C14-C16, C18-C21, C65-C66 collectively demonstrate that permeabilized cells produce high-quality scATAC-seq data with preserved chromatin structure. The evidence is supported by multiple quantitative metrics (FRIP, FRITSS, fragment length distributions) shown in Figure 1 and Table 1, with consistent results across different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Removal of neutrophils greatly improved scATAC-seq data quality and downstream analysis. Neutrophil removal improved UMAP projections, label transfer scores, and identification of cell-type-specific differentially accessible sites and TFBS motifs. Permeabilized cells yielded more cells with high label transfer scores than nuclei-based approaches and provided cell-type proportions most similar to flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 are well-supported by data in Figures 2 and 2\u2014figure supplements showing improved cell type separation, label transfer scores, differential accessibility analysis, and motif enrichment. The comparison to flow cytometry (C25, Figure 2d) provides orthogonal validation of the cell type identification improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ICICLE-seq enables simultaneous measurement of chromatin accessibility and cell surface protein abundance from permeabilized cells. The method obtained 10,227 single cells with both scATAC-seq and ADT data, with median 3,871 ADT UMIs per cell. ICICLE-seq allowed identification of cell-type-specific clusters based on cell surface markers, providing proof of principle for directly linked capture of functional cell types and chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C31-C37 demonstrate successful development of ICICLE-seq with supporting data in Figure 3 and supplements. The method successfully captures both modalities simultaneously, though C34 acknowledges technical limitations (poly-A capture, single-end readout). The proof-of-principle nature is appropriately characterized (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C63"
+    ],
+    "result": "TEA-seq enables simultaneous trimodal measurement of mRNA, protein, and chromatin accessibility from thousands of single cells. The method obtained 29,264 cells passing QC with median values of 8,762 ATAC fragments, 2,399 RNA UMIs, 1,249 genes detected, and 1,171 ADT UMIs. The strength of TEA-seq is its ability to measure all three modalities simultaneously on each cell, enabling deeper insights into connections between regulation, expression, and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C38-C45, C63 are strongly supported by comprehensive data in Figure 4 and supplements. The trimodal measurements are well-characterized with appropriate QC metrics. The observation that marker consistency varies across modalities (C43-C44) and that modality weights vary by cell type (C45) demonstrates thoughtful analysis of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "TEA-seq's protein abundance measurements enabled detection of many additional cis-regulatory modules (CRMs) compared to peak-to-gene correlations alone. For targets like CCR2/CD192 and CD38, peak-to-protein correlations identified many CRMs that were missed with peak-to-gene correlation alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by data in Figure 4g-j showing enhanced CRM detection using protein measurements. The examples of CCR2 and CD38 provide concrete demonstrations of this advantage. However, the claim would be strengthened by systematic quantification across all targets rather than just two examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Direct comparisons of TEA-seq to existing methods showed that TEA-seq data quality is high but with modality-specific tradeoffs. Gene detection sensitivity was lower than CITE-seq, with particularly low ribosomal gene transcripts, suggesting the primary RNA source is intron-containing nuclear transcripts. ATAC-seq quality remained comparable to standalone assays with higher FRIP than nuclei. Antibody performance varied by target with some reduced separations compared to CITE-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62, C83-C85 provide an honest assessment of TEA-seq performance relative to single-modality methods, supported by comprehensive comparisons in Figure 4\u2014figure supplement 4. The acknowledgment of tradeoffs (C62) and identification of specific limitations (lower gene detection, altered ADT distributions) demonstrates appropriate scientific rigor. The conclusion that TEA-seq's strength lies in simultaneous measurement rather than optimal performance in any single modality is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Hypotonic lysis leads to alteration of chromatin structure, raising the possibility of artifactual measurements of accessibility in nuclei-based ATAC-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by citation to Allahverdi et al., 2015 on low salt effects on nucleosomal arrays, and by inference from the fragment length data showing increased nucleosomal fragments in nuclei preparations (Figure 1b). However, the claim that this represents 'artifactual' measurements is somewhat speculative and could be stated more cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "All methods yielded fewer CD16+ monocytes than observed by flow cytometry, suggesting potential loss during scATAC-seq or limitations of label transfer methods for this cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by data in Figure 2d comparing scATAC-seq results to flow cytometry. The authors appropriately acknowledge uncertainty about whether this reflects technical loss or analytical limitations. This represents an honest reporting of a limitation that warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The use of permeabilized cells enables simultaneous interrogation of chromatin accessibility and cell surface proteins at unprecedented scale using droplet-based methods. TEA-seq extends beyond SNARE-seq and SHARE-seq by utilizing 10x Genomics Single Cell Multiome sequencing reagents and allows multimodal measurements from thousands of single cells at a time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 accurately position TEA-seq relative to prior methods (SNARE-seq, SHARE-seq, Pi-ATAC) with appropriate citations. The scale advantage of droplet-based methods is well-established. The claim of 'unprecedented scale' for trimodal measurements is justified by the data showing thousands of cells with all three modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C79",
+      "C82",
+      "C86"
+    ],
+    "result": "The authors speculate about future applications and utility of their methods, including potential use in other tissues and cell types, development of analytical tools, and broader impact on understanding immune cell state in health and disease. They note that optimization may be required for other cell types and that some findings (e.g., neutrophil depletion requirement) may be specific to immune-related samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64, C70-C74, C76, C79, C82, C86 are speculative statements about future applications and utility. While these are reasonable projections based on the demonstrated capabilities, they represent hypotheses rather than demonstrated results. The authors appropriately acknowledge the need for optimization in other contexts (C72, C79), which is scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "High abundance of mononucleosomal fragments may indicate neutrophil-driven background in PBMCs, but this indicator of poor data quality may not be observed in other cell types or tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by the fragment length distribution data showing high mononucleosomal content correlating with neutrophil presence. The caveat that this may be PBMC-specific is appropriately cautious. This represents a useful quality control insight for PBMC studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "Low concentrations of digitonin selectively permeabilize cholesterol-containing membranes while leaving the inner mitochondrial membrane intact. Different cell types have differing sensitivity to digitonin concentrations, and optimization can be tested using bulk ATAC-seq with standard quality metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C80 are supported by appropriate citations (Adam et al., 1990; Colbeau et al., 1971; Holden and Horton, 2009) and established knowledge about digitonin's mechanism and ATAC-seq quality assessment. The guidance for optimization (C80) is practical and based on standard methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "An online protocol for TEA-seq is maintained on the Protocols.io platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is a factual statement about protocol availability with a specific URL provided. This represents good scientific practice for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establishing the importance of PBMCs for studying immune health and disease, the complexity of immune cell types, the importance of understanding genomic regulatory landscapes, and the current state of single-cell methods. The authors note that a unifying approach for measuring ATAC, RNA, and epitopes in functional immune cell types has not yet emerged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide appropriate background context supported by relevant citations. These establish the scientific rationale for developing TEA-seq. The assessment that a unifying trimodal approach was lacking (C10) is accurate for the time of manuscript preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background information about specific protein targets: CCR2 is a chemokine receptor expressed on monocytes, CD38 is a glycoprotein expressed on multiple immune cell types and a target of therapies for multiple myeloma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide accurate background information about the biological functions of CCR2 and CD38, supported by appropriate citations. This contextualizes the examples used to demonstrate peak-to-protein correlation advantages.",
+    "result_type": "MINOR"
+  }
+]

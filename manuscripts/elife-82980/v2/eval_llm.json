@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors developed a computational pipeline to download, quality-control, and analyze SARS-CoV-2 genomic sequences from GenBank. As of November 21, 2022, they analyzed 3,126,129 sequences out of 6,468,196 records, using the Wuhan reference sequence for Ka/Ks calculations with clustal-omega, Pal2Nal, and kaks_calculator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 describe the data sources, computational methods, quality control procedures, and analytical choices. These methodological claims are well-documented with appropriate citations (C11, C12, C16, C17, C18, C19) and specific details about data volumes (C13) and processing steps (C14). The choice of reference sequence is justified (C20).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C27",
+      "C39",
+      "C43",
+      "C81"
+    ],
+    "result": "Non-synonymous mutations (Ka) in key SARS-CoV-2 proteins showed significant increases 10-14 days before rapid rises in COVID-19 cases, particularly for Gamma, Delta, Omicron, and BA.5 variant surges. This metric provided the most reliable signal for surge prediction compared to Ka/Ks ratio or mutation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C21, C27, C39, C43, and C81 represent the core finding. While Figure 1 shows temporal correlations between Ka increases and case surges, several critical issues undermine confidence: (1) no statistical testing of the claimed 10-14 day lead time is provided; (2) the normalization method (C28) using 2020 averages is arbitrary and may introduce bias; (3) the weighting scheme (C31) is not fully described; (4) the authors acknowledge difficulty assigning surges to specific variants (C33, C70, C71), creating ambiguity in the claimed associations; (5) confounding factors like testing rates, reporting delays, and variant-specific biology are not addressed; (6) the predictive claim requires prospective validation, not just retrospective correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Ka/Ks ratio and mutation rate (derivative) were investigated as surge prediction signals but found unreliable. Ka/Ks showed predictive signal only for membrane protein in some variants, while mutation rate was too noisy and showed false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by data in Figure 1\u2014supplements 2 and 3. The authors appropriately tested alternative metrics and documented their limitations, including data noisiness (C37) and lack of clear signals for most cases (C36). This negative result strengthens their conclusion that Ka is the most reliable metric (C39).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C64",
+      "C65"
+    ],
+    "result": "Spike protein showed significant non-synonymous mutations (188,166 unique sequences) with increases 10-14 days before infection surges, most notably for Gamma/Delta and Omicron variants. Spike protein showed the most direct correlation between mutation rate and infection rate among all proteins analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C46 and C64-C65 focus on spike protein findings. While C40-C41 are established knowledge and C42 documents substantial sequence data, the temporal correlation claims (C43, C65) lack statistical validation. The observation about synonymous mutations decreasing post-surge (C44) and reversal mutations (C45) are interesting but not rigorously quantified. The claim of \"most direct correlation\" (C64) is not supported by correlation coefficients or comparative statistical analysis across proteins. The elevated mutation levels post-Omicron (C46) are descriptive observations without statistical thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C66"
+    ],
+    "result": "Membrane and envelope proteins showed significant mutations starting before the Omicron variant (November 2021 onward), with membrane protein also showing increases before the BA.5 surge. These surface proteins potentially interact with immune system components, making their mutations particularly important in the post-vaccination period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 and C66 are supported by data in Figures 1B and 1C with appropriate citations (Lu et al., 2021; Zheng et al., 2021). The observation about membrane protein preceding the BA.5 surge (C49, C66) is documented in the figures. The biological interpretation about surface protein location (C50) is established knowledge, and the inference about post-vaccination importance (C51) is reasonable given the temporal patterns, though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "RNA-dependent RNA polymerase (RDRP) showed comparatively lower magnitude of non-synonymous mutations compared to surface proteins. Significant mutation increases were also observed in NSPs 1, 4, 6, 13, 15, and ORFs 6, 7a, 7b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by Figure 1D for RDRP and reference to website data for other proteins. The comparison showing lower RDRP mutations (C53) is visually apparent in Figure 1D. The claim about other proteins (C54) relies on website data not shown in the manuscript, which is a limitation but acceptable given the scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Widespread vaccination (December 2020 onward) coincided with significant increases in mutation rates, particularly in spike, membrane, and envelope proteins. This is possibly due to viral adaptation under vaccine-induced selective pressure, with mutations remaining elevated post-Omicron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C55-C57 and C60-C62 make causal inferences about vaccination driving mutations based on temporal correlation. This is a classic correlation-causation fallacy. Alternative explanations include: (1) increased sequencing efforts post-vaccination; (2) natural viral evolution independent of vaccination; (3) relaxation of non-pharmaceutical interventions allowing more transmission; (4) sampling biases. The claim is \"possibly due to\" (C57) which acknowledges speculation, but the framing throughout suggests causation. Claims C61-C62 about future variant emergence are purely speculative. This interpretation requires experimental evidence (e.g., in vitro evolution studies under vaccine pressure) that is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors issued a surge watch on June 29, 2022, elevated it to a warning on July 14, and removed it on August 30, 2022. This prediction was confirmed by sustained increases in infection cases worldwide throughout July, with cases peaking roughly a month after the watch was issued.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C86-C89 document a prospective prediction with subsequent confirmation shown in Figure 1\u2014supplement 5. This represents genuine prospective validation of their approach, which is stronger evidence than retrospective correlation. The temporal sequence (watch \u2192 warning \u2192 case increase \u2192 peak \u2192 warning removal) is clearly documented and supports the predictive utility of their method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C90",
+      "C91"
+    ],
+    "result": "A second watch was issued on September 7, 2022, confirmed by surges in several European countries (France, UK, Germany, Italy), and removed on November 14, 2022.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C91 document a second prospective prediction with confirmation shown in Figure 1\u2014supplement 6. This provides additional validation of the predictive approach across different geographic regions, strengthening the evidence for the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "While the role of specific variants in major surges remains unclear due to geographic and temporal variation in variant prevalence, the analysis can predict collective surges before they occur, as demonstrated by the BA.5 case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 appropriately acknowledge limitations (C70, C71) while asserting predictive capability for aggregate surges (C72). This is a reasonable and honest assessment supported by the prospective predictions documented in C67-C69 and C86-C91.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C84",
+      "C85"
+    ],
+    "result": "The approach depends on timely sequence deposition, which has decreased in late 2022 as the pandemic situation improved. However, the weighting by mutations and percentage of sequences showing non-synonymous mutations provides some robustness to smaller sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C77 and C84-C85 discuss data dependency and robustness. While the dependency on sequence availability (C75, C84) is obvious, the claims about robustness to smaller sample sizes (C76, C77) are not validated. No analysis is shown demonstrating that the method maintains predictive power with reduced sequencing. The weighting scheme is mentioned but not fully described or tested under varying data availability scenarios. This is a critical limitation that needs empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C79",
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "The real-time genomic surveillance methodology provides daily updates of mutational changes for 26 SARS-CoV-2 proteins via a public website with warnings and email alerts. The approach is generic and could be applicable to other pathogens and future outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C4, C79, C80, C82, C83 describe the system and its potential generalizability. The website functionality (C3, C80, C82, C83) is verifiable and represents a valuable resource. However, the claims about generalizability to other pathogens (C4) and future outbreaks (C79) are speculative and untested. Different pathogens have different evolutionary dynamics, mutation rates, and relationships between genotype and phenotype. The approach would need validation for each new pathogen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C63"
+    ],
+    "result": "The long-term effectiveness of mRNA vaccines remains unknown, and booster uptake has decreased. This situation needs to be addressed with longer-lasting vaccines and post-infection treatments including antivirals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C63 reflect established knowledge about vaccine effectiveness uncertainty (C58) and observed trends in booster uptake (C59, with citation). The recommendation for improved interventions (C63) is a reasonable policy implication, though speculative about solutions.",
+    "result_type": "MINOR"
+  }
+]

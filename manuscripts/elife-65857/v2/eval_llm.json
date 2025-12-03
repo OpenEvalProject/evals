@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors developed a novel single-cell eQTL mapping approach in C. elegans that combines scRNA-seq with a large-scale genetic cross (200,000 F4 segregants) processed in a single 'one-pot' experiment. The approach uses a hidden Markov model to infer genotypes from expressed SNVs and successfully profiled 55,508 cells across 19 cell types, with cell-type abundances strongly correlated with known L2 larval composition (\u03c1=0.87, p=2.2\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C19-C26, C28-C29, C72-C75 collectively describe a well-validated methodological approach. The experimental design is clearly described, the HMM genotyping method is mathematically specified (C29), and the resulting dataset shows expected biological properties (C24). The 'one-pot' processing minimizes environmental confounders (C73-C75), and the unique genotype design maximizes statistical power (C25-C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors mapped 1718 cis eQTLs in 1294 genes and 451 trans eQTLs in 390 genes at 10% FDR across cell types. The number of eQTLs detected per cell type strongly correlated with cell number (\u03c1=0.91, p<2.2\u00d710\u207b\u00b9\u2076), and 83% of cis eQTLs were detected in only one cell type, with 93% showing consistent effect directions across cell types when detected in multiple types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 present the primary eQTL mapping results with appropriate statistical thresholds (10% FDR) and clear quantification. The strong correlation between cell number and eQTL detection (C31) validates statistical power expectations. The high proportion of cell-type-specific eQTLs (C33) and consistent effect directions (C34) are well-supported by the data presented in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Single-cell cis eQTLs showed highly significant overlap with bulk eQTL mapping from a previous RIL study (335 shared, OR=7.2, p<2.2\u00d710\u207b\u00b9\u2076), with strongly correlated effect sizes (\u03c1=0.64, p<2.2\u00d710\u207b\u00b9\u2076). Multi-cell-type eQTLs were more likely to be detected in bulk studies (50% vs 28%, OR=2.58, p=2.1\u00d710\u207b\u2078), suggesting many cis eQTLs have robust effects conserved across cell types and developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C85-C88 demonstrate strong concordance between single-cell and bulk approaches despite major experimental differences (L2 vs L4 stage, scRNA-seq vs microarray). The statistical evidence is robust with highly significant p-values and appropriate effect size measures. The observation that multi-cell-type eQTLs are more detectable in bulk (C37) logically supports the inference about cell-type conservation (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Differential expression analysis between parental strains identified 870 genes, of which 201 (23%) had cis eQTLs in the same tissue (OR=18.8, p<2.2\u00d710\u207b\u00b9\u2076). Among these, 95% showed concordant effect directions, and effect sizes were strongly correlated with parental differences (\u03c1=0.66, p<2.2\u00d710\u207b\u00b9\u2076), indicating cis eQTLs are major drivers of strain-specific expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 provide independent validation of cis eQTL mapping through parental strain comparison. The high enrichment (OR=18.8), strong directional concordance (95%), and correlated effect sizes (\u03c1=0.66) all support the conclusion that mapped cis eQTLs explain substantial parental expression differences. The statistical evidence is robust across multiple complementary analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C77"
+    ],
+    "result": "The authors identified five trans eQTL hotspots containing 90 of 451 trans eQTLs, with three showing cell-type specificity. The body wall muscle hotspot targets were enriched for myofilament genes (p=6.4\u00d710\u207b\u2078) including troponin complex components (mup-2, tni-1, tnt-2), while the intestinal hotspot showed weak enrichment for innate immune response genes (p=0.042).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47, C77 describe trans eQTL hotspots with appropriate statistical evidence. The body wall muscle enrichment is highly significant (p=6.4\u00d710\u207b\u2078) and biologically coherent, targeting core muscle contraction machinery. The intestinal enrichment is weaker (p=0.042) but consistent with known tissue function (C42). The identification of cell-type-specific hotspots affecting relevant pathways is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C81",
+      "C82"
+    ],
+    "result": "A neuronal hotspot on Chr. III showed enrichment for TGF-\u03b2 pathway genes including dbl-1 and tig-2 (BMP receptor binding, p=2.8\u00d710\u207b\u00b3). This hotspot colocalizes (<300 kb) with a previously mapped body size QTL, suggesting differential TGF-\u03b2 pathway regulation contributes to body size variation between N2 and CB4856.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53, C81-C82 connect the neuronal hotspot to a known body size QTL through multiple lines of evidence: significant GO enrichment (p=2.8\u00d710\u207b\u00b3), involvement of dbl-1 (known body size regulator, C51), and physical colocalization with previous QTL mapping (C52, C82). The inference about TGF-\u03b2 pathway involvement (C53) is reasonable but remains correlative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C92"
+    ],
+    "result": "Neuronal subclustering identified 81 clusters mapping to 100 of 120 CeNGEN clusters (83%). Single-neuron eQTL mapping identified 163 sn-eQTLs in 132 genes at 10% FDR, with 88% detected in only one neuronal subtype. These sn-eQTLs were enriched for signaling genes including neuropeptide signaling (8 genes, p=9.9\u00d710\u207b\u00b3) and GPCR signaling (12 genes, p=0.047).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61, C92 demonstrate successful neuronal subtype resolution and eQTL mapping at single-cell resolution. The high concordance with CeNGEN (83%, C55) validates cell-type assignments. The enrichment for signaling genes (C59-C61) is biologically appropriate for neurons and statistically significant. The high proportion of subtype-specific eQTLs (88%, C58) supports cellular-level genetic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C93"
+    ],
+    "result": "Among sn-eQTLs, 69 showed no pan-neuronal signal even at 50% FDR, with effect directions not different from chance (33 concordant, 36 discordant, p>0.5), indicating true subtype specificity. Notably, nlp-21 showed opposing effects in RIM (\u03b2=-5.4, p=9.8\u00d710\u207b\u2077 for N2) and RIC neurons (\u03b2=4.4, p=0.03 for CB4856), with no pan-neuronal signal and concordant parental expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70, C93 provide strong evidence for single-cell-specific eQTLs through multiple analyses. The binomial test showing random effect directions for non-significant pan-neuronal eQTLs (C64) vs. highly concordant directions for significant ones (C65, p<0.000001) validates subtype specificity. The nlp-21 antagonistic effect (C66-C68) is statistically robust and independently supported by parental data (C70), though sample sizes are small for the latter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C38"
+    ],
+    "result": "The study demonstrates that eQTL effects can be specific down to the level of single cells, with the single-cell approach improving power to detect cell-type-specific effects compared to bulk tissue analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C38 represent the main conclusions of the study, directly supported by the nlp-21 antagonistic effect data (C66-C70) and the observation that multi-cell-type eQTLs are more detectable in bulk studies (C37). The inference about improved power (C38) is well-supported by the comparison showing cell-type-specific eQTLs are missed in bulk analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction establishes that eQTLs are often cell-type specific, studying them in relevant cell types is important but challenging in mammals, and C. elegans with its invariant cell lineage and characterized cell markers is well-suited for single-cell eQTL mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C18 provide appropriate background context, all supported by citations to prior work. The rationale for using C. elegans (C16-C18) is well-justified based on established biological features. These claims accurately represent the state of the field and provide logical motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C71",
+      "C76",
+      "C78",
+      "C80",
+      "C84",
+      "C95"
+    ],
+    "result": "The discussion contextualizes results within prior work, noting that previous scRNA-seq eQTL studies were limited to ~100 individuals, cell-type-specific hotspots were previously suggested in C. elegans, and similar findings have been reported in human blood cells and other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C71, C76, C78, C80, C84, C95 accurately cite and contextualize prior work. These claims appropriately position the current study's advances relative to the field and are well-supported by the provided citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C83",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors infer that cell-type-resolved expression studies facilitate hotspot discovery, suggest future directions including fine-mapping causal variants and methodological improvements (cross-cell-type modeling, ASE testing), and conclude that large-scale study of context-specific effects is crucial for understanding regulatory variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C83, C89-C91, C94, C96-C97 represent reasonable inferences and future directions based on the study's findings. The inference about facilitated hotspot discovery (C79) is supported by the identification of cell-type-specific hotspots. The suggested future work (C83, C89-C91) is appropriate, and the general conclusions (C96-C97) are well-justified by the demonstrated cell-type specificity of eQTLs.",
+    "result_type": "MINOR"
+  }
+]

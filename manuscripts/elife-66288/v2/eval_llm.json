@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Trim71 binds to specific mRNA targets in mESCs, primarily in introns and 3'UTRs, recognizing RNA secondary structures rather than primary sequences. CLIP-seq identified transcriptome-wide targets including the validated target Cdkn1a and Ago2 mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C27-C29 are well-supported by CLIP-seq data (Figure 1F-H) showing binding site distribution and structural motif enrichment. The identification of known target Cdkn1a validates the approach, and the stem-loop structure preference is consistent with cited prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Trim71 represses Ago2 mRNA translation in mESCs through direct binding to the 3'UTR, independent of E3 ligase activity. This repression is lost when the Trim71-binding site is deleted (CLIP\u0394), resulting in ~2-fold increased Ago2 protein without mRNA changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C41 are strongly supported by multiple complementary experiments: western blots showing protein but not mRNA changes (Figure 2B-C), polysome analysis demonstrating translational regulation (Figure 2D-E), overexpression studies (Figure 2F-H), and mutant analysis showing RNA-binding but not E3 ligase activity is required. The genetic dependency on Trim71 (C32-C34) is demonstrated in knockout backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Disrupting Trim71-mediated repression of Ago2 translation (CLIP\u0394) causes elevated Ago2 levels, leading to decreased stemness, increased exit from pluripotency, and accelerated differentiation. These defects are dependent on Ago2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C43-C48 are well-supported by multiple functional assays: colony formation showing stemness defects (Figure 3A), exit pluripotency assays (Figure 3B), and differentiation kinetics during EB formation and monolayer differentiation (Figure 3C-D). The Ago2 dependency is demonstrated by rescue in Ago2 KO background, establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "CLIP\u0394 cells show a specific post-transcriptional increase in let-7 miRNAs (>4-fold) without global miRNA changes or differentiation. Let-7 targets are repressed, and this increase is Ago2-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54-C64 are supported by small RNA-seq showing selective let-7 increase among 515 miRNAs (Figure 4A), qRT-PCR validation (Figure 4B), pri-miRNA analysis demonstrating post-transcriptional regulation (Figure 4C), and western blots showing let-7 target repression (Figure 4D). Multiple controls exclude differentiation as the cause (C60). Ago2 dependency is shown by rescue in Ago2 KO background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Increasing Ago2 levels in wild-type mESCs recapitulates CLIP\u0394 phenotypes: specific elevation of let-7 miRNAs at the post-transcriptional level, decreased stemness, and accelerated differentiation. Similar effects occur with Ago1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C74 are supported by dose-dependent experiments using dox-inducible Ago2 (Figure 5A-F). The specificity for let-7 miRNAs is demonstrated by qRT-PCR (Figure 5B), post-transcriptional regulation by pri-miRNA analysis (Figure 5C), and functional consequences by colony formation and differentiation assays (Figure 5D-F). The Ago1 experiment (C68) extends generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Increased Ago2 directly binds and stabilizes let-7 miRNAs in mESCs. Ago2 elevation specifically increases Ago2-bound let-7 miRNAs and stabilizes mature let-7 miRNAs without affecting pri-miRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by RNA immunoprecipitation showing specific enrichment of let-7 miRNAs in Ago2 complexes (Figure 5\u2014figure supplement 2B-C) and actinomycin D chase experiments demonstrating selective stabilization of mature let-7 miRNAs but not pri-miRNAs (Figure 5\u2014figure supplement 2E-F). This establishes the molecular mechanism of Ago2-mediated let-7 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C24",
+      "C25",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The stemness defects in CLIP\u0394 cells are dependent on increased let-7 miRNAs. Inhibiting let-7 through Lin28a/b overexpression or anti-let-7 LNA rescues the stemness and differentiation phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C24-C25, C86-C93 are strongly supported by rescue experiments using two independent approaches: Lin28a/b overexpression (Figure 6A-E) and anti-let-7 LNA treatment (Figure 6F). Both methods reduce let-7 levels, restore let-7 target expression, and rescue stemness defects in colony formation, exit pluripotency, and differentiation assays. This establishes let-7 as the critical mediator of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The stemness defects in CLIP\u0394 mESCs are dependent on the miRNA pathway. Blocking miRNA biogenesis through Dicer or Dgcr8 knockout abolishes the CLIP\u0394 phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by experiments in Dicer KO and Dgcr8 KO backgrounds showing reduced miRNA levels and activity (Figure 3\u2014figure supplement 1B-C), and loss of CLIP\u0394 phenotypes in these backgrounds (Figure 3\u2014figure supplement 1D-F). This establishes that the phenotype requires functional miRNA processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Trim71 represses mRNA translation at a post-initiation step in mESCs. Tethering assays show Trim71 reduces protein but not mRNA levels, represses both cap-dependent and IRES-mediated translation, and functions independently of poly(A) tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 are supported by systematic tethering experiments (Figure 7). The \u03bbN-BoxB tethering system shows translation repression without mRNA degradation (Figure 7A-B), IRES reporters demonstrate post-initiation regulation (Figure 7C-E), and poly(A)-minus reporters confirm independence from poly(A) tail (Figure 7F-H). The logic connecting these observations to post-initiation regulation is sound given the known roles of tested factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "A positive feedback loop amplifies let-7 miRNAs in CLIP\u0394 cells: elevated Ago2 increases let-7, which represses Lin28a, reducing pre-miRNA degradation and further increasing mature let-7. This creates two interconnected layers of let-7 regulation (pre-miRNA and mature miRNA levels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 are supported by data showing decreased Lin28a in CLIP\u0394 and Ago2-overexpressing cells (Figure 4D, 5A), increased pre-let-7 miRNAs in CLIP\u0394 cells (Figure 4C), and the mechanistic explanation logically connects these observations. The amplification explains why modest Ago2 increases cause large let-7 increases. This represents a novel regulatory insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study reveals that repressing let-7 miRNAs at the mature miRNA level through Ago2 availability is critical for maintaining pluripotency, providing direct support for the Trim71-let-7 bi-stable switch model in stem cell fate decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C100-C103 represent the main conclusions synthesizing all experimental findings. The complete pathway (Trim71\u2192Ago2 translation\u2192Ago2 protein\u2192let-7 stability\u2192stemness) is established through multiple independent lines of evidence with appropriate genetic controls and rescue experiments. This constitutes a novel regulatory layer for let-7 control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C42"
+    ],
+    "result": "FLAG-Trim71 mESCs are phenotypically identical to wild-type cells, and CLIP\u0394 cells show no proliferation defects despite stemness defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C42 are supported by morphology, growth rate, colony formation, and pluripotency factor expression data (Figure 1\u2014figure supplement 1B-F, Figure 2\u2014figure supplement 1G). These controls validate the experimental system and distinguish stemness from proliferation defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study reconciles the paradox that Trim71 KO mice are lethal but Trim71 KO mESCs show no phenotype. The CLIP\u0394 approach specifically disrupts one interaction, revealing Trim71's role, while global KO may have compensatory effects from disrupting multiple interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C128-C139 address an important methodological point. The observation that Trim71 KO shows no Ago2 or stemness phenotype (C30, C128-C129) is confirmed by citations and new data (Figure 2\u2014figure supplement 1A). The explanation (C131-C137) that KO disrupts hundreds of interactions while CLIP\u0394 disrupts one is logical, and the CLIP-seq showing Trim71 binds Nanog mRNA (C135) supports potential compensation. The methodological recommendation (C138-C139) is a reasonable inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior work established a hypothetical bi-stable switch model where Trim71 and let-7 miRNA reciprocally regulate each other to control stem cell fate, with let-7 promoting differentiation by repressing Trim71.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C13 summarize established knowledge from prior studies, appropriately cited. These provide the conceptual framework for the current study. The characterization of this as a hypothesis (C1) is accurate, as the Trim71\u2192let-7 arm was unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C121",
+      "C122"
+    ],
+    "result": "The study clarifies that Trim71 regulates Ago2 through translational repression, not E3 ligase-mediated degradation as previously proposed. E3 ligase activity is not required for Trim71 function in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C121-C122 correctly cite prior conflicting reports and resolve them with new data showing E3 ligase mutants retain Ago2 repression activity (Figure 2F-H). This is consistent with cited in vivo studies (C122) and represents an important mechanistic clarification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C127"
+    ],
+    "result": "Prior studies showed Trim71 is essential for animal development but Trim71 KO mESCs have no proliferation or stemness defects, creating an enigmatic role for Trim71 in stem cell biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C127 accurately summarize prior literature with appropriate citations. This paradox motivates the current study's approach and is resolved by the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C84",
+      "C85",
+      "C109",
+      "C110"
+    ],
+    "result": "Prior work established that let-7 miRNAs are pro-differentiation factors that are transcribed but maintained at low levels in mESCs through Lin28a/b-mediated inhibition of pre-miRNA processing, and that Ago2 binding stabilizes mature miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78, C84-C85, C109-C110 accurately cite established knowledge about let-7 regulation and miRNA stability. These provide the mechanistic foundation for interpreting the study's findings on Ago2-mediated let-7 stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Pluripotency factors (Nanog, Oct4, Sox2) are not targeted by let-7 miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by citation to Melton et al., 2010. This is an important control distinguishing let-7-specific effects from general pluripotency regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study contrasts with prior reports showing global miRNA elevation upon Ago2 overexpression, instead finding specific let-7 increase in mESCs at biologically relevant Ago2 levels (~2-5 fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 appropriately cite prior work and contrast it with current findings. The distinction based on expression levels (transfection vs. modest induction) is reasonable and important for biological relevance. The conclusion (C106) is a logical inference from the comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The study speculates that Ago2-mediated regulation of let-7 may be relevant to cancer, where Ago2 and let-7 levels are frequently dysregulated and Lin28a/b are highly expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107, C118-C119 cite relevant cancer literature, but claims C108 and C120 are explicitly speculative without supporting data. While the speculation is reasonable given the findings, it remains untested and should be considered a hypothesis for future work rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The Trim71-Ago2 regulatory mechanism may be conserved between mouse and human, as TRIM71 and AGO2 levels negatively correlate in human cells, and Trim71 recognizes structural features that could be conserved despite sequence divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 cites a correlation in human cells, but claim C124 is explicitly speculative. Claim C125 is supported by data and citations showing structural recognition, which could enable conservation. However, direct evidence for conservation of the mechanism in human cells is lacking. This represents a reasonable hypothesis requiring validation.",
+    "result_type": "MINOR"
+  }
+]

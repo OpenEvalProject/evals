@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The pupil\u2013fMRI relationship is not stationary across trials. Concatenating all trials showed a global negative correlation, but individual-trial correlation maps demonstrated high variability, indicating that the pupil\u2013fMRI relationship changes across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21\u2013C23 collectively demonstrate non-stationarity through direct observation of variability in individual-trial correlation maps (Figures 1A\u2013C). The histogram distribution of spatial correlations provides quantitative evidence supporting the inference that the relationship changes across trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Four distinct clusters of trials with unique pupil\u2013fMRI correlation patterns were identified using UMAP dimensionality reduction and Gaussian mixture modeling. The clusters showed distinct power spectral density profiles and different spatial correlation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24\u2013C27 describe the clustering methodology and selection of four clusters based on silhouette analysis (Figure 2B). Claims C28\u2013C30, C32\u2013C34 characterize the distinct features of each cluster through PSD analysis and spatial correlation patterns (Figures 2C\u2013D), providing converging evidence for meaningful cluster separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C62"
+    ],
+    "result": "PCA-based decoding methods (linear regression and GRU) successfully predicted pupil dynamics from rs-fMRI signals and outperformed correlation-template approaches. Both methods showed comparable performance, suggesting linear relationships were sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35\u2013C37 establish the methodology and demonstrate statistically significant improvements over baseline (p<0.01 on test sets). Claims C40\u2013C41, C62 show that linear regression and GRU performed similarly, supporting the sufficiency of linear modeling. Statistical tests (C118) validate the comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C60",
+      "C61",
+      "C65"
+    ],
+    "result": "PCA decomposition decoupled spatiotemporal features where components explaining the most pupillary variance explained little fMRI variance and vice versa. Pupil dynamics were predominantly driven by a few rs-fMRI PCA components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38\u2013C39 provide specific variance explained values (7.03% pupil variance explained only 0.8% fMRI variance; 22.01% fMRI variance explained only 0.51% pupil variance) from Figure 3\u2014figure supplement 2. Claims C60\u2013C61, C65 interpret these findings, demonstrating the advantage of PCA-based weighting optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C66"
+    ],
+    "result": "The PCA-based prediction map revealed pupil-related activation patterns at key neuromodulatory nuclei of the ARAS and subcortical regions involved in autonomous regulation, including positive weights in hypothalamus, basal forebrain, hippocampal formation, and negative weights in cerebellum and somatosensory cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42\u2013C47, C66 describe specific anatomical regions identified in Figure 4 with statistical validation (C119\u2013C121: randomization tests, p<0.01, FDR corrected). The spatial maps show consistent patterns across multiple brain regions involved in neuromodulation and autonomous regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C71",
+      "C72"
+    ],
+    "result": "Cluster-specific PCA prediction maps revealed distinct subcortical activation patterns: Cluster 1 showed strong dopaminergic system coupling, Cluster 2 showed hypothalamic dominance, Cluster 3 showed preoptic/hypothalamic activation, and Cluster 4 showed caudal raphe and hippocampal formation coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48\u2013C57 provide detailed characterization of each cluster's spatial patterns from Figure 5, with statistical validation. Claims C71\u2013C72 synthesize these findings to conclude that subcortical interactions and neural correlates of pupil dynamics change across trials in a brain state-dependent manner, directly supported by the cluster-specific differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Conventional correlation analysis cannot decouple superimposed effects of multiple signal sources, while PCA decomposition solves this by decoupling multiple components with unique spatiotemporal patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59\u2013C60 present a methodological advantage of the PCA approach over conventional methods. This is supported by the demonstration that PCA successfully identified distinct components (C38\u2013C39) and by citations to prior work on limitations of conventional approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "GRU-based neural networks may require larger training datasets to outperform linear regression, possibly because pupil dynamics were predominantly linearly driven by few rs-fMRI PCA components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is speculative about GRU requirements, supported only by citation and comparison to prior work. Claim C65 offers a plausible explanation based on Figure 3\u2014figure supplement 2, but this remains an inference rather than a directly tested hypothesis. The comparable performance of GRU and linear regression (C40) is consistent with but does not prove this explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C73",
+      "C75"
+    ],
+    "result": "In the anesthetized state, pupil diameter fluctuation reflects complex interactions of subcortical homeostatic and brain state-modulating centers, with hypothalamus potentially driving cluster 2 and raphe-subiculum coupling possibly reflecting autonomous stress modulation circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C73, C75 are interpretive inferences about functional significance. While the spatial patterns are well-documented (C48\u2013C52), the mechanistic interpretations remain speculative. The claims are supported by citations to prior work but lack direct experimental validation of the proposed functional roles in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Alpha-chloralose anesthesia was used for quality BOLD fMRI responses, but may inhibit sympathetic system responses. Other anesthetics also influence pupil dynamics, and observed brain state changes could reflect either natural arousal fluctuations or anesthetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76\u2013C82 acknowledge limitations of the anesthetized model with appropriate citations. C77 validates prior work under the same anesthetic. C78\u2013C82 cite literature on anesthetic effects, appropriately qualifying the interpretation of results. This represents a balanced discussion of methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The PCA-based framework could be applied to human datasets and awake subjects to investigate cognitive components of brain activity. Future work should examine finer temporal scales and novel regions like the subiculum that showed strong coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83\u2013C89 appropriately discuss future directions and potential applications. C87 is supported by the demonstration of four distinct patterns versus one (C3, C23). C89 identifies a novel finding (subiculum coupling) from the data (C52, C54). These represent reasonable extensions and implications of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Detailed experimental and analytical methods are described, including animal preparation (n=10 rats), fMRI acquisition (14.1T, 3D EPI), pupillometry (DeepLabCut), PCA (300 components), UMAP dimensionality reduction (72 dimensions), GMM clustering, and statistical validation (randomization tests, FDR correction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C90\u2013C121 provide comprehensive methodological details with specific parameters, software citations, and validation procedures. The methods are sufficiently detailed for reproducibility, with appropriate statistical corrections (C121) and validation approaches (C108\u2013C109, C119\u2013C120).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors characterize cav1.3a and otofb zebrafish mutants to establish models with impaired neurotransmission. Both mutants show largely normal mechanotransduction (C31, C35, C47) but differ in their effects on presynaptic calcium influx: cav1.3a mutants completely lack presynaptic calcium responses (C38, C40), while otofb mutants retain normal presynaptic calcium influx (C37, C40). Both mutants lack evoked and spontaneous exocytosis (C41, C44, C45, C46, C48), establishing them as useful models to study neurotransmission-related metabolic stress (C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional characterization is comprehensive and well-supported by multiple complementary techniques (calcium imaging with GCaMP6s, exocytosis measurements with SypHy, and electrophysiology). The data clearly distinguish between mechanotransduction, presynaptic calcium influx, and exocytosis, establishing that cav1.3a affects both calcium influx and exocytosis while otofb specifically affects exocytosis. Minor concerns include the speculative interpretation about subtle mechanotransduction defects in cav1.3a mutants (C34) based on faster recovery kinetics, which requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Chronic (\u226524 hours) but not acute block of neurotransmission protects hair cells from neomycin toxicity. Both genetic models (cav1.3a and otofb mutants) and pharmacological interventions (isradipine for 24-48 hours, Dynole 34-2 for 24-48 hours) show significantly enhanced hair cell survival at multiple neomycin concentrations (C52, C117, C123). Acute treatments (10 min preincubation + 30 min co-incubation) provide no protection (C116, C122). Importantly, blocking the synaptic vesicle cycle alone (otofb mutants or Dynole 34-2) provides protection comparable to blocking both calcium influx and exocytosis (cav1.3a mutants), suggesting the vesicle cycle is the primary contributor to susceptibility (C125, C126).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal requirement for protection (\u226524 hours) is well-established through systematic comparison of acute vs. chronic treatments. The conclusion that the synaptic vesicle cycle is the primary contributor is supported by the observation that otofb mutants (with intact calcium influx but impaired exocytosis) show protection comparable to cav1.3a mutants. The Dynole 34-2 controls appropriately demonstrate specificity for exocytosis without affecting mechanotransduction or presynaptic calcium (C119, C120, C121). Sample sizes appear adequate and statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C69",
+      "C70"
+    ],
+    "result": "Chronic loss of neurotransmission protects hair cells from both neomycin and gentamicin, two aminoglycosides with different kinetics and mechanisms of toxicity. Both cav1.3a and otofb mutants show significantly increased survival after gentamicin treatment (C127, C69), suggesting that blocking neurotransmission provides broad otoprotection (C70, C128).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The demonstration of protection against both neomycin and gentamicin strengthens the conclusion that neurotransmission-related metabolic stress broadly affects ototoxin susceptibility. The different time courses and mechanisms of these aminoglycosides (discussed in C65-C68) make this a meaningful test of generalizability. However, the gentamicin experiments use a different protocol (2-hour exposure followed by 24-hour recovery) compared to neomycin (30-minute exposure with immediate assessment), which could introduce confounding variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The protection conferred by loss of neurotransmission is not due to altered neomycin uptake, clearance, or lysosomal trafficking. Neo-TR uptake kinetics (C129, C130), clearance rates (C132, C133), and lysosomal sequestration patterns (C137, C138) are all normal in cav1.3a and otofb mutants compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Neo-TR experiments comprehensively rule out pharmacokinetic explanations for the observed protection. The time-lapse imaging provides detailed kinetic data for both uptake and clearance. The observation of normal lysosomal puncta formation (C137) addresses a potential protective mechanism. These negative results are important controls that focus attention on downstream metabolic mechanisms. The methods appear sound with appropriate temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Within wildtype neuromasts, synaptically active hair cells are younger and more resistant to neomycin than synaptically inactive cells. Active cells show 90% survival vs. 65% for inactive cells after neomycin treatment (C141). DAPI labeling reveals that 87.5% of inactive cells are older (DAPI-positive) compared to only 22.5% of active cells (C153, C154). Independent validation using kinocilial height confirms that younger cells (<20 \u03bcm) have 63% survival vs. 11% for mature cells (\u226520 \u03bcm) (C151). This apparent contradiction with the mutant data is explained by the age difference between active and inactive cells (C155).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of two independent methods (DAPI labeling and kinocilial height) to assess cell age strengthens this result. The DAPI pulse-chase experiment is well-designed to track cell age over time. The reconciliation of the seemingly contradictory findings (active cells more resistant within wildtype, but chronic loss of activity protective in mutants) through the age variable is logical and well-supported. However, the interpretation relies on the assumption that synaptic silencing occurs as cells age, which is somewhat speculative (C107, C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Hair cells lacking neurotransmission (cav1.3a and otofb mutants) show significantly reduced baseline ROS levels. Both CellROX Orange (cytosolic ROS indicator) and MitoSOX Red (mitochondrial superoxide indicator) fluorescence are significantly lower in mutant hair cells compared to controls (C158, C159, C160). This reduction in ROS could explain the enhanced resistance to neomycin-induced cell death (C162).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of two different ROS indicators (cytosolic and mitochondrial) provides convergent evidence for reduced oxidative stress. The measurements are straightforward and the statistical significance is clear. However, the reliance on single-wavelength vital dyes raises concerns about potential differences in dye uptake between mutants and controls, which the authors acknowledge. The conclusion that lower ROS explains neomycin resistance is logical but correlative rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The reduced ROS in cav1.3a and otofb mutants is due to loss of neurotransmission rather than developmental immaturity or increased cell turnover. Hair cell counts are normal at both 3 and 5 dpf (C166, C167), DAPI-positive cells are retained from 3 to 5 dpf indicating no increased cell death (C168, C169), and kinocilial heights are normal in both young and mature populations (C170, C171, C172). This comprehensive developmental assessment rules out alternative explanations for the reduced ROS phenotype (C173, C174).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a critical control experiment that addresses an important alternative hypothesis. The multi-faceted approach (cell counts, DAPI retention, kinocilial height measurements) provides strong evidence that the mutant hair cells develop normally. The comparison to mouse models where CaV1.3 deficiency causes developmental defects (C163) motivates this analysis. The conclusion that reduced ROS is specifically due to loss of neurotransmission rather than immaturity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Reduced mitochondrial calcium uptake is not the common mechanism underlying protection in cav1.3a and otofb mutants. While cav1.3a mutants show absent evoked mitochondrial calcium uptake (C178), otofb mutants exhibit robust and normal mitochondrial calcium uptake (C180, C181). This indicates that reduced mitochondrial calcium influx cannot explain the protection observed in both mutants (C182).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitoGCaMP3 measurements clearly distinguish between the two mutants and rule out mitochondrial calcium uptake as the common protective mechanism. This is an important negative result that helps narrow down the mechanism. The observation that otofb mutants have normal mitochondrial calcium uptake despite being protected from neomycin is particularly informative. The methods are appropriate and the conclusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Mitochondrial membrane potential is reduced in hair cells with impaired neurotransmission. TMRE fluorescence is significantly reduced in both cav1.3a and otofb mutants (C185), and JC-1 ratio shows a similar trend though not statistically significant (C186). This lower mitochondrial potential could explain the reduced oxidative stress in these mutants (C187, C188).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TMRE data provide clear evidence for reduced mitochondrial membrane potential in both mutants. The JC-1 data support this trend though they don't reach significance, which is acknowledged. The interpretation that lower membrane potential explains reduced oxidative stress is mechanistically reasonable, as membrane potential drives oxidative phosphorylation and ROS production. However, like the ROS measurements, these rely on vital dyes with potential uptake differences between genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Hair cells accumulate oxidized mitochondria over time, and this accumulation is dramatically reduced by blocking neurotransmission. Using the genetically-encoded MitoTimer indicator, the authors show that the red/green ratio (indicating mitochondrial oxidation) increases significantly in control hair cells from 3 to 5 to 6 dpf (C192, C195). Both cav1.3a and otofb mutants show significantly reduced MitoTimer ratios at 5 and 6 dpf compared to controls (C193, C196), indicating less accumulated mitochondrial oxidation. This reduction in ROS production explains the enhanced resistance to neomycin (C198).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of MitoTimer, a genetically-encoded indicator, addresses the dye uptake concerns from the vital dye experiments. The temporal progression from 3 to 6 dpf clearly demonstrates accumulation of oxidative damage over time in controls and reduced accumulation in mutants. The consistency between cav1.3a and otofb mutants strengthens the conclusion. This is one of the strongest pieces of evidence linking neurotransmission to ROS accumulation over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "The synaptic vesicle cycle, rather than presynaptic calcium influx, is the primary contributor to oxidative stress and neomycin susceptibility. Blocking CaV1.3 channels with isradipine in otofb mutants (which already lack exocytosis but have intact calcium influx) provides no additional protection from neomycin compared to otofb mutants alone (C199, C200). This indicates that the vesicle cycle is the dominant metabolic stressor (C201).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-designed epistasis experiment that directly tests the relative contributions of calcium influx vs. the vesicle cycle. The lack of additive protection when blocking calcium channels in otofb mutants strongly suggests that the vesicle cycle is the primary contributor. This conclusion is consistent with the earlier observation that otofb mutants show protection comparable to cav1.3a mutants (C125). The experimental design is sound and the interpretation is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The study's main conclusion is that chronic neurotransmission causes ROS buildup that increases hair cell susceptibility to ototoxins. This is supported by findings that: (1) chronic block of neurotransmission enhances survival (C6), (2) this is accompanied by reduced mitochondrial activity (C7), (3) mitochondrial oxidation and ROS are reduced when neurotransmission is blocked (C8), and (4) mechanistically, the synaptic vesicle cycle is the primary contributor (C9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the comprehensive set of experiments throughout the manuscript. The study establishes causality through genetic and pharmacological manipulations, demonstrates the temporal requirement (chronic vs. acute), identifies the mechanism (vesicle cycle), and shows generalizability (neomycin and gentamicin). The integration of functional, metabolic, and survival data provides strong support for the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims about hair cell biology, mechanotransduction, and neurotransmission establish the context for the study. These include established knowledge about hair cell synapses (C11), energy demands (C12, C13), ROS production (C14, C15), and the mechanotransduction-neurotransmission pathway (C17-C24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are primarily literature-based claims that establish the scientific context. They are appropriately cited and represent established knowledge in the field. The claim about mechanosensation being implicated in ototoxin susceptibility (C25) is particularly relevant as it motivates the focus on neurotransmission as a separate contributor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study establishes that neurotransmission-deficient hair cells are protected despite normal MET channel function and normal neomycin entry, indicating that the pathology extends beyond uptake kinetics. This contrasts with prior work showing that blocking MET channels protects hair cells (C55), and demonstrates a novel mechanism of protection (C56, C57, C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result effectively distinguishes the current findings from prior work focused on blocking aminoglycoside entry. The demonstration that protection occurs despite normal uptake and clearance (supported by Neo-TR data) is important for establishing that the mechanism is downstream of drug entry. This positions the metabolic mechanism as a novel therapeutic target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Background on aminoglycoside trafficking and the differences between neomycin and gentamicin. After entry, aminoglycosides accumulate in various organelles including lysosomes (C59, C60), and lysosomal sequestration may be protective (C61, C62). Gentamicin is more rapidly packaged into lysosomes than neomycin (C66), which may explain their different time courses of toxicity (C65, C67, C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These literature-based claims provide important context for interpreting the neomycin and gentamicin experiments. The discussion of lysosomal trafficking is particularly relevant given the Neo-TR data showing normal lysosomal sequestration in mutants. The comparison between neomycin and gentamicin kinetics motivates the use of both drugs to test generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study demonstrates that neurotransmission promotes cellular metabolism leading to ROS buildup and oxidized mitochondria (C74), and that blocking neurotransmission lessens these metabolic side effects and protects against ototoxins (C75). This is placed in the context that maintaining metabolic homeostasis is critical for surviving ototoxin exposure (C71) and that excess ROS can trigger cell death pathways (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result synthesizes the metabolic findings (ROS, mitochondrial oxidation, membrane potential) with the survival data. The conclusion that blocking neurotransmission lessens metabolic side effects is well-supported by the CellROX, MitoSOX, TMRE, and MitoTimer data. The link to ototoxin protection is established through the correlation between reduced ROS and enhanced survival.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study draws parallels between hair cells and dopaminergic neurons in the substantia nigra, both of which show metabolic stress related to L-type calcium channel activity. Like dopaminergic neurons that accumulate ROS due to constant CaV1.3 channel engagement (C78-C81), hair cells show increased ROS with CaV1.3 function (C82), and chronic block of CaV1.3 channels reduces mitochondrial activity, ROS, and oxidation in both cell types (C83, C84). This suggests a common theme of metabolic demands from presynaptic calcium flux being deleterious to cellular health (C85, C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to dopaminergic neurons is well-supported by the literature and provides important context for interpreting the hair cell findings. The parallel between the two systems (both using CaV1.3 channels, both showing ROS accumulation, both protected by channel block) strengthens the generalizability of the findings. However, the comparison is primarily correlative and the mechanistic details may differ between the two cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The synaptic vesicle cycle is identified as the major ATP consumer in neurotransmission. Hair cells with impaired exocytosis (otofb mutants and Dynole 34-2 treated) show protection from aminoglycosides (C88) and reduced mitochondrial activity, oxidation, and ROS (C89). Blocking calcium channels in these cells provides no additional protection (C90), indicating the vesicle cycle is the primary ATP consumer (C91). This is consistent with work in neurons showing that compensatory endocytosis and vesicle replenishment require significant ATP (C92), potentially through V-ATPases (C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic conclusion is well-supported by the epistasis experiment (C90) and the observation that otofb mutants show metabolic changes comparable to cav1.3a mutants despite having intact calcium influx. The comparison to neuronal work on vesicle cycle energetics (C87, C92) provides a mechanistic framework. The speculation about V-ATPases (C93) is appropriately tentative and represents a testable hypothesis for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study proposes that mitochondrial pathology from neurotransmission synergizes with aminoglycoside targeting of mitochondria to initiate hair cell death. Mitochondria are known targets of aminoglycosides (C95), and the study shows that neurotransmission promotes ROS buildup and mitochondrial oxidation (C96). When challenged with aminoglycosides, these two factors synergize to cause cell death (C97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic model integrates the metabolic findings with known aminoglycoside toxicity mechanisms. The proposal that neurotransmission-induced mitochondrial stress sensitizes cells to aminoglycosides is logical and supported by the data showing that reducing this stress (by blocking neurotransmission) provides protection. However, the synergy is inferred rather than directly demonstrated, and the specific molecular mechanisms remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study links neurotransmission to age-related hearing loss (presbycusis). Hair cells accumulate oxidized mitochondria as they age (C98), and blocking neurotransmission dramatically reduces this accumulation (C99). Since presbycusis is associated with ROS accumulation and mitochondrial damage in animal models (C100, C101), neurotransmission may be a critical link between aging and hair cell vulnerability (C102). However, residual ROS accumulation occurs even without neurotransmission (C103), indicating other contributing factors (C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MitoTimer data clearly demonstrate age-dependent accumulation of mitochondrial oxidation and its reduction by blocking neurotransmission. The connection to presbycusis is logical given the known association with ROS and mitochondrial damage. The acknowledgment of residual ROS in mutants (C103) is important and suggests that neurotransmission is a major but not exclusive contributor to age-related oxidative stress. The link to presbycusis is correlative and speculative but well-motivated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study proposes that synaptic silencing in older hair cells may be a protective mechanism. While neurotransmission is essential for function (C105), the majority of lateral-line hair cells are synaptically silent (C106). Given the relationship between neurotransmission and metabolic stress, synaptic silencing may protect older cells with elevated ROS (C107). Consistent with this, synaptically silent cells are older (C108) and more susceptible to neomycin (C109), suggesting that silencing may limit further ROS accumulation (C110). A shift from older to younger cells could prevent widespread cell death (C111), which would be advantageous for non-regenerating mammalian hair cells (C112).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative model that attempts to reconcile the observation that active cells are more resistant to neomycin within wildtype neuromasts (because they're younger) with the finding that chronic loss of activity is protective. The proposal that synaptic silencing is an adaptive response to accumulated metabolic stress is logical but not directly tested. The model makes testable predictions (e.g., that silencing occurs in response to ROS accumulation) but these are not experimentally validated in the current study. The speculation is clearly identified as such (C107, C110, C111) and represents an interesting hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study's overall conclusions emphasize that proper management of metabolic stress (ROS and mitochondrial oxidation) is critical for hair cell health and ototoxin resistance (C113), that neurotransmission increases ROS and vulnerability over time (C114), and that this may shed light on presbycusis and age-related hearing loss (C115).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary conclusions are well-supported by the comprehensive data throughout the manuscript. The emphasis on metabolic stress management is justified by the ROS, mitochondrial oxidation, and survival data. The temporal aspect (over time) is supported by the MitoTimer experiments showing age-dependent accumulation. The connection to presbycusis (C115) is appropriately presented as speculative.",
+    "result_type": "MAJOR"
+  }
+]

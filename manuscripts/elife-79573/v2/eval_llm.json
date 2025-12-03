@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes the context that many published biomedical results fail to replicate, with inappropriate statistical methods and p-value misuse accounting for a large portion of misleading results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by multiple citations to established literature on reproducibility crises across fields (psychology, cancer research) and statistical misapplication. These are background claims establishing the motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior studies using the fragility index (FI) have consistently found low median FI values (1.5-8) across multiple medical domains, suggesting many published results are not robust and teeter on the edge of statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C15 provide a comprehensive review of FI methodology and prior applications with appropriate citations. The inference in C15 follows logically from the cited low FI values. These establish the state of the field and motivation for the new method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The traditional fragility index has substantial limitations including debate over applicability to time-to-event data, lack of objective cut-off metrics, computational expense, inability to handle large datasets, consideration of only one arm at a time, and no direct relationship to test sensitivity/specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 identify well-documented limitations of FI with appropriate citations (C16, C17) and logical reasoning about methodological constraints (C18-C21). These limitations motivate the development of the EOI method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The proposed ellipse of insignificance (EOI) method is exact, computationally inexpensive, can handle large datasets while considering both arms simultaneously, links fragility to test sensitivity/specificity, and can potentially detect fraud.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C24 describe properties of the EOI method but lack empirical validation or comparative benchmarking against traditional FI. C25 is speculative about fraud detection. The computational efficiency claim (C22) needs demonstration with timing comparisons. These are assertions about the method requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C32",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Application of EOI analysis to a published study on magnetic field exposure and miscarriage revealed extreme fragility (displacement of <2 subjects would eliminate significance, absolute tolerance threshold of 0.22%), and inspection showed at least 9 subjects were miscoded, suggesting spurious findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C31-C32, and C77-C81 provide a concrete application with specific numerical results from EOI analysis. The detection of 9 miscoded subjects (C31) provides empirical validation. However, the conclusion of spurious findings (C32) relies partially on additional factors beyond EOI analysis (biophysical implausibility, dose-response issues).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C36"
+    ],
+    "result": "EOI analysis of two hypothetical experiments with similar chi-squared statistics (\u03c7\u00b2\u2248100) revealed that Experiment 1 is consistently more robust than Experiment 2, requiring miscoding of 178 participants (8.9%) versus 99 (5%) to lose significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C36 demonstrate EOI's ability to discriminate robustness between studies with similar test statistics. The numerical results are presented in Table 3 with specific values. This illustrates a key advantage of EOI over simple p-values, though these are hypothetical rather than real examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "EOI analysis incorporating test sensitivity and specificity revealed that two cities with apparently different CIN2+ detection rates (highly significant p<0.00001) actually have identical underlying prevalence of 20 cases per 1000.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 demonstrates EOI's ability to account for differential test characteristics (LBC vs HPV-reflex) to reveal true underlying prevalence. This is supported by Figure 4 showing that xm exceeds xi, placing the point within the EOI. This illustrates a unique capability of the method with citation to real-world relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C76"
+    ],
+    "result": "The EOI method is deterministic, computationally inexpensive, geometrical in origin, can relate fragility to test sensitivity/specificity, and software implementations are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C76 describe methodological properties and provide computational tools. The deterministic and geometrical nature is demonstrated through the mathematical derivation. Software availability (C76) supports reproducibility, though actual computational benchmarks are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "EOI analysis cannot infer information about patients lost to follow-up, as it is not knowable why patients dropped out or if redaction bias occurred; explicit connections between EOI/FI/FQ and loss to follow-up cannot be directly made.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 appropriately acknowledge fundamental limitations shared by all fragility methods. These are logical constraints based on the nature of the data and analysis, with appropriate citation to redaction bias (C46). This represents honest limitation disclosure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "EOI is currently only applicable to dichotomous outcome studies and should be applied cautiously to time-to-event data; in edge cases with small numbers, discordant results between EOI and Fisher's exact test are possible due to different statistical foundations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 identify scope limitations and potential discordances with Fisher's exact test. These are logical consequences of EOI being built on chi-squared statistics rather than exact tests. The acknowledgment of these limitations is appropriate and well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The chief advantage of EOI is handling extremely large datasets with ease, where Fisher's exact test breaks down due to factorial dependence; however, for rare events in small trials, traditional FI may be more appropriate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 identify the key computational advantage of EOI while acknowledging situations where traditional FI is preferable. C55 is well-established knowledge about Fisher's exact test limitations. C56 appropriately cites when the alternative approach is better, showing balanced assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "While some argue RCTs might be fragile 'by design' due to ethical sample size considerations, others counter that FI is not always low in well-designed studies; EOI has broader application beyond RCTs to ecological studies, cohort trials, and preclinical work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 present both sides of the 'fragility by design' debate with appropriate citations and position EOI as applicable beyond RCTs. The balanced presentation of competing views (C57, C59 vs C60-C61) and claim of broader applicability (C62) are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Up to three-quarters of biomedical science is affected by poor practice, with dubious COVID-19 results highlighting the problem; EOI analysis has potential for detecting manipulations and fraud by relating test sensitivity/specificity to error tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65 establish the problem of poor practice with citations, but C66-C67 regarding fraud detection are speculative. While the logical basis is sound (relating known test parameters to observed results), no actual fraud detection validation is provided. This application requires empirical demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Despite caveats, FI has seen growing application; EOI should allow more thorough multidimensional fragility analysis to estimate soundness of biomedical results, with wide potential application in meta-research and reproducible research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68 and C70 are well-supported statements about the importance of assessing research robustness. However, C69 and C71 make speculative claims about EOI's future impact using 'should' and 'potential' language. These require empirical validation through actual application and adoption by the research community.",
+    "result_type": "MINOR"
+  }
+]

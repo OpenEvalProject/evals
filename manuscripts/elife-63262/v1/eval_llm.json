@@ -1,0 +1,520 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C45",
+      "C46",
+      "C47",
+      "C68",
+      "C69"
+    ],
+    "result": "A comprehensive 3D digital atlas of Arabidopsis ovule development was generated using machine-learning-based image analysis (PlantSeg) combined with ClearSee tissue clearing and confocal microscopy. The atlas comprises 158 hand-curated 3D digital ovules with cellular resolution covering all developmental stages from early primordium to mature pre-fertilization ovule, enabling quantitative spatio-temporal analysis of cellular and gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C45-C47, C68-C69 collectively demonstrate the successful generation of the atlas. The methodology is clearly described (PlantSeg segmentation, ClearSee clearing, confocal imaging), the dataset size is specified (158 ovules, \u226510 per stage), and the capabilities (cellular resolution, quantitative analysis, gene expression mapping) are documented with supporting figures and data tables. The technical workflow from raw images through segmentation to annotated 3D meshes is shown in Figure 1E-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C9"
+    ],
+    "result": "Quantitative analysis revealed that ovule cell number increases incrementally through development, reaching approximately 1900 cells (1897 \u00b1 179.9) at stage 3-VI, with a mean total volume of about 5 \u00d7 10^5 \u03bcm\u00b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 report quantitative measurements with clear statistical values (mean \u00b1 SD) supported by Figure 2 and Table 1. The incremental increase in cell number across stages is documented, and the final cell count of ~1900 cells is consistent across multiple claims (C9, C70). Sample sizes are adequate (\u226510 ovules per stage).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Tissue-specific growth analysis revealed differential growth patterns: the nucellus showed little growth except at late stage 3, the funiculus halted growth at stage 3-II, while the chalaza and integuments continuously increased in cell number and volume during stages 2 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 describe tissue-specific growth patterns supported by quantitative data in Table 2 and Appendix figures. The observations are based on systematic measurements of cell numbers and tissue volumes across developmental stages for each tissue type. The differential growth patterns are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Temporal analysis established that ovule development from early stage 1 to end of stage 3 requires 146.2 hours (6.1 days), with stage 1 requiring 31.7 hr, stage 2 requiring 58.9 hr, and stage 3 requiring 55.6 hr. Ovules emerge from placental tissue in pistils of ~0.33 mm length and reach ~2.3 mm by anthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 present a comprehensive temporal analysis supported by pistil growth curve data (Figure 3) and correlation with ovule stages. The methodology for estimating stage durations is described (pistil length measurements, stage determination from 64 pistils). The quantitative timing data are internally consistent and supported by the fitted growth curve model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Growth rate analysis revealed dynamic changes during development: 0.3 \u00d7 10\u00b3 \u03bcm\u00b3/hr for stage 1-II, 1.5 \u00d7 10\u00b3 \u03bcm\u00b3/hr for stages 2-I to 2-V, peaking at 7.2 \u00d7 10\u00b3 \u03bcm\u00b3/hr for stages 3-I to 3-IV, then dropping to 2.9 \u00d7 10\u00b3 \u03bcm\u00b3/hr for stage 3-V.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 report estimated growth rates calculated from mean ovule volumes and stage durations. The calculations are straightforward and the results show a logical progression with peak growth during mid-stage 3. The methodology is clearly described and the values are derived from the quantitative data in Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Relative growth analysis revealed that ovule growth is dynamic with changing contributions from different tissues. From stages 2-I to 2-II, cell proliferation exceeded growth rate, while from 2-IV to 3-IV, growth rate exceeded proliferation, indicating cell expansion. Layer-specific analysis showed L3 had the most relative growth at stage 1-I, while all layers contributed similarly during stages 1-II to 2-II. The outer integument showed more relative growth than inner integument until stage 3-I, when the pattern reversed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 describe relative growth patterns supported by Figure 4 showing heatmaps and quantitative comparisons. The interpretations about cell proliferation vs. expansion are logical inferences from the relative rate data. The tissue-specific and layer-specific patterns are documented with visual evidence and are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "WUS (WUSCHEL) is known to control stem cell development in the shoot apical meristem and is active during ovule development, promoting early pattern formation in the chalaza and integument initiation. WUS is required for MMC formation but must be excluded from the MMC for proper meiosis. Previous studies indicated WUS is expressed in the nucellar epidermis and functions non-cell-autonomously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 summarize established knowledge about WUS function, all supported by appropriate citations to prior literature (Gaillochet et al., 2015; Mayer et al., 1998; Gross-Hardt et al., 2002; Sieber et al., 2004; Lieber et al., 2011; Zhao et al., 2017). These claims provide necessary background context for the new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Analysis of pWUS reporter expression revealed that WUS expression becomes robustly detectable when ovule primordia reach 50 or more cells. Of 38 stage 1 digital ovules, only 2 with fewer than 50 cells showed pWUS signal, while all ovules with \u226550 cells showed expression. This 50-cell threshold was used to define the boundary between stages 1-I and 1-II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 report quantitative observations from 67 3D digital pWUS reporter ovules (Figure 5). The data clearly show a threshold effect at 50 cells (38 ovules analyzed, 2 exceptions documented). The use of this marker to refine stage definitions is a reasonable methodological decision supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Detailed 3D analysis of pWUS expression revealed that reporter signal initially appears in individual cells or small irregular patches in the epidermis of the distal primordium tip, with patchiness continuing through stage 2-II. By stage 2-III, most nucellar epidermal cells showed pWUS signal. Starting at stage 2-I, about half of ovules also showed reporter signal in 1-7 L2 cells neighboring the MMC bottom, but never in the MMC itself or in the central region/integuments. This suggests strong temporal control of WUS initiation at stage 1-II and mostly (but not entirely) epidermal restriction, with WUS functioning non-cell-autonomously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C117 describe detailed spatial and temporal patterns of pWUS expression supported by Figure 5 and quantitative data from 67 3D digital ovules. The observations are systematic and well-documented. The interpretations about temporal control, spatial restriction, and non-cell-autonomous function are reasonable inferences from the data showing WUS expression patterns distinct from its sites of action (MMC, chalaza, integuments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Analysis of 138 digital primordia (stage 2-I or younger) revealed steady and continuous increases in primordium volume and cell number without distinct subclasses, indicating even growth without major fluctuations. Ovule primordia reach a size threshold of approximately 1.8 \u00d7 10\u2074 \u03bcm\u00b3 volume, 125-135 total cells, and 41-43 \u03bcm height before transitioning from stage 1-II to stage 2-I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 report analysis of a large dataset (138 primordia) shown in Figure 6. The continuous growth pattern is evident from the ordered plots, and the size threshold at stage transition is quantitatively defined. The small overlap region (3.6-5.1% of ovules) supports the threshold concept while acknowledging biological variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "At stage 2-I, the average MMC volume was 543 \u03bcm\u00b3 (543.3 \u00b1 120.6), with the smallest MMC at 339.2 \u03bcm\u00b3. Stage 1-II L2 cells had a mean volume of 153.5 \u03bcm\u00b3 \u00b1 48.3 (n=335). Based on these measurements, a stage 2-I MMC is defined as having a minimal cell volume of 335 \u03bcm\u00b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 report quantitative measurements of cell volumes with appropriate statistics. The proposed definition of MMC minimal volume (335 \u03bcm\u00b3) is a reasonable inference based on the data showing clear separation between typical L2 cells and MMCs. The smallest MMC volume is consistent with previous literature (Lora et al., 2017).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "A novel morphological manifestation of ovule polarity was discovered: ovule primordia develop a slant relative to the placenta surface, oriented at a right angle to the gynoecium's apical-basal axis with the small angle facing the septum. The slant is barely noticeable at stage 1-I, becomes tangible during 1-II, and is prominent by stage 2-I. The outer integument always initiates at the posterior region, followed by a funicular turn that reorients the ovule along the gynoecium's apical-basal axis. This represents a multi-step process establishing the final gynapical-gynbasal orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C134 describe a novel finding about ovule polarity establishment supported by Figure 7 showing 3D meshes and quantitative measurements. The progression of slanting is documented across stages, the orientation relative to gynoecium axis is clearly shown, and the subsequent turning process is demonstrated with 40 stage 2-III/2-IV ovules. The interpretation as a multi-step process is well-supported by the sequential observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Detailed 3D analysis revealed that the interior chalaza exhibits recognizable anterior-posterior polarity with distinct cellular characteristics. Beginning at stages 2-IV/2-V, subepidermal cells restricted to the anterior proximal chalaza contribute to the outer integument, with oi2 cells extending more proximally than oi1 cells. The anterior chalaza is characterized by fewer but larger cells compared to the posterior chalaza (more but smaller cells). Initially different in volume, the two regions become similar by stage 3-I, with growth driven by cell size increase (anterior) versus cell proliferation (posterior). The anterior chalaza develops prominent bulging and wing-like lateral extensions contributing to the ovule's hood-like structure, while the posterior chalaza acquires a radially symmetric, rod-like shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C150 describe detailed morphological analysis of the chalaza supported by Figure 8 with 3D visualizations, quantitative data in Table 3, and statistical comparisons. The anterior-posterior differences in cell number, size, and shape are well-documented. The interpretations about growth mechanisms (cell size vs. proliferation) are reasonable inferences from the quantitative data. The morphological descriptions are supported by clear visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The inner integument produces a new cell layer (ii1') shortly before fertilization through cambium-like activity of the ii1 (endothelial) layer. The ii1 layer undergoes periclinally oriented asymmetric cell divisions to generate ii1' cells, which are distinguishable by altered shape and staining, do not express the epidermal marker ATML1, and will contribute to parenchymatic ground tissue (while ii1 cells produce tannins during seed development).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C156 summarize established knowledge about ii1' layer formation, supported by appropriate citations (Debeaujon et al., 2003; Schneitz et al., 1995). These claims provide necessary background for the new findings about the mechanism of ii1' layer formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "3D analysis revealed that ii1' layer formation begins earlier than previously described, with first signs at stage 3-II (2/10 ovules). By stages 3-V and 3-VI, all ovules exhibited the ii1' layer, reaching 60.8 \u00b1 19.5 cells at stage 3-VI (13.4% of inner integument cells, 14.4% of volume). Spatially, the ii1' layer initiates as single cells or patches on both lateral sides of the posterior inner integument at stages 3-II/3-III, then extends proximally-distally and laterally to form a ring-like structure covering the proximal half of the inner integument by stage 3-VI, with an irregular boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C168 report detailed observations from 36 digital ovules exhibiting ii1' layer, supported by Figure 9 with 3D visualizations and quantitative data. The earlier timing (stage 3-II vs. previously reported) is clearly documented. The spatial progression from scattered cells to ring-like structure is well-illustrated. The quantitative data on cell numbers and proportions are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Analysis of 978 ii1' layer cells across 36 ovules identified 14 mitotic cells. Critically, only 1 of 14 showed periclinal division generating ii1' cells, while 13 showed anticlinal divisions. This indicates that ii1' layer formation does not involve simultaneous asymmetric divisions in many ii1 cells, but rather occurs through asymmetric periclinal divisions in a few scattered founder cells, followed by anticlinal divisions in their ii1' daughters to form a continuous layer with irregular edges\u2014a new mode of cell layer formation termed \"layer invasion.\"",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C175 report a key mechanistic finding supported by quantitative analysis of cell divisions (Figure 9G). The ratio of periclinal to anticlinal divisions (1:13) strongly supports the proposed mechanism. This represents a novel mode of cell layer formation distinct from the classical model where all cells in a region undergo periclinal divisions. The interpretation is well-supported by the data and represents a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "INNER NO OUTER (INO) is an essential YABBY transcription factor regulating early ovule pattern formation. Loss-of-function ino mutants lack outer integuments and show blocked embryo sac development at the mono-nuclear stage. A new putative null allele (ino-5) was generated using CRISPR/Cas9 in Col-0 background, and 120 3D digital ino-5 ovules (stages 1-II to 3-VI, 3-20 per stage) were analyzed for quantitative phenotypic characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C180 establish the background on INO function (supported by extensive citations) and describe the generation of a new allele and dataset for analysis. The CRISPR/Cas9 approach is described in methods, the frameshift mutation is verified by sequencing, and the dataset size is clearly specified. This provides the foundation for subsequent INO functional analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Quantitative analysis of ino-5 revealed no robust differences from wild type in total cell number or volume for stages 1-II to 2-II (as expected since INO expression begins around stage 2-II/III). However, starting from late stage 2-V/3-I, ino-5 showed elevated nucellar cell numbers and increased nucellar volume compared to wild type. Embryo sac development did not extend beyond mono-nuclear stage (though up to four-nuclear embryo sacs were detected). These results indicate INO restricts cell number and nucellus volume during nucellus development, representing a previously unrecognized function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C186 report quantitative phenotypic analysis supported by Figure 10 and Tables 2 and 4. The statistical comparisons show clear differences in nucellar parameters starting at stage 2-V/3-I. The timing is consistent with INO expression patterns. The interpretation of a new INO function in restricting nucellar proliferation is well-supported by the quantitative data showing increased cell numbers and volume in ino-5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Analysis of inner integument in ino-5 showed that cell number and tissue volume did not deviate noticeably from wild type except for a small, transient increase at stages 3-IV and 3-V (returning to normal by 3-VI). This indicates INO does not exert major influence on inner integument morphogenesis, despite its critical role in nucellus development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C190 report quantitative analysis of inner integument parameters supported by Figure 10G-H and Tables 2 and 4. The transient nature of the small differences and return to normal by stage 3-VI support the interpretation that INO does not have a major role in inner integument development. This contrasts with its clear effects on nucellus and outer integument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "During wild-type stages 2-III to 2-V, the central region forms a prominent kink with the nucellus pointing anteriorly, followed by differential growth causing integument and nucellus bending into the curved ovule shape. In ino-5, this kink is absent at stage 2-V, and later stages show aberrant anterior chalaza growth with the nucellus pointing posteriorly, indicating that INO-dependent differential growth patterns in the central region underlie kink formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C195 describe a morphological phenotype supported by Figure 11A showing clear differences between wild type and ino-5 in kink formation. The observations are straightforward and the interpretation that INO controls differential growth patterns is a reasonable inference from the phenotypic differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "Detailed cellular analysis of the subepidermal proximal chalaza revealed that wild type shows 6.7 \u00b1 2.3 periclinal divisions at stage 2-III (increasing to 12.6 \u00b1 3.3 by 2-IV), 3.2 \u00b1 2.2 longitudinal-anticlinal divisions at 2-III (1.8 \u00b1 2.1 at 2-IV), and 1.3 \u00b1 1.5 oblique divisions at 2-III (1.4 \u00b1 0.9 at 2-IV). The oblique divisions are preferentially located in the posterior chalaza underlying the initiating outer integument and produce asymmetrically enlarged progeny with the larger cell adjacent to outer integument epidermal cells. In ino-5, periclinal divisions are reduced, oblique divisions are absent, and longitudinal-anticlinal divisions are enhanced. This indicates that differential cellular growth patterns involving oblique divisions with asymmetric enlargement contribute to kink formation, with periclinal and longitudinal-anticlinal divisions causing chalaza widening, all requiring INO activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C212 report detailed quantitative analysis of cell division patterns supported by Figure 11B-E with clear statistical data and visual evidence. The differences between wild type and ino-5 are well-documented (fewer periclinal, no oblique, more longitudinal-anticlinal in ino-5). The proposed model linking oblique divisions with asymmetric enlargement to kink formation is a reasonable inference well-supported by the data. The sample sizes are adequate (6 stage 2-III, 5 stage 2-IV wild type; 6 stage 2-III, 3 stage 2-IV ino-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C213",
+      "C214"
+    ],
+    "result": "Available evidence indicates INO transcripts and protein are restricted to the epidermis and oi2 layer of the outer integument, suggesting INO regulates kink formation in a non-cell-autonomous fashion (since the oblique divisions occur in subepidermal cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C213-C214 cite appropriate literature about INO expression patterns and make a reasonable inference about non-cell-autonomous function. The logic is sound: if INO is expressed in epidermis/oi2 but affects cell divisions in subepidermal chalaza, the function must be non-cell-autonomous. However, the authors appropriately note this requires further validation with 3D digital ovules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study discovered novel morphological manifestations of ovule polarity (slanting), a new mode of cell layer formation (layer invasion for ii1'), previously unrecognized subepidermal cell populations initiating ovule curvature (posterior chalaza oblique divisions), irregular cellular build-up of WUSCHEL expression, and new functions for INNER NO OUTER in restricting nucellar cell proliferation and organizing the interior chalaza.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 summarize the major discoveries of the study, all of which are supported by detailed evidence in the results sections. The novel polarity manifestation (slanting) is documented in C127-C134, the new mode of layer formation in C169-C175, the subepidermal populations in C196-C212, the WUS expression pattern in C101-C117, and the INO functions in C184-C186 and C139-C150. Each discovery is backed by quantitative data and appropriate analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222"
+    ],
+    "result": "The work provides proof-of-concept for combining PlantSeg segmentation pipeline with ClearSee-based tissue clearing to generate 3D digital organs with unprecedented speed and accuracy. PlantSeg has been successfully applied to diverse plant organs and animal tissue (Drosophila wing disc), and ClearSee is compatible with multiple fluorescent proteins and stains. The approach is straightforward to apply to other plant tissues and may provide a promising strategy for generating 3D digital animal tissues when combined with methods like CLARITY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C217-C222 describe the methodological contribution supported by the successful generation of 158 high-quality 3D digital ovules. The versatility of PlantSeg and ClearSee is supported by appropriate citations. The processing time (~45 min per ovule including imaging, segmentation, and correction) demonstrates the speed advantage. The suggestion about animal tissues is appropriately framed as speculation based on PlantSeg's success with Drosophila wing disc.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "The work demonstrates the unparalleled analytical power of examining 3D digital organs with full cellular resolution. Investigating 3D digital ovules yielded new insights that could only be obtained when studying morphogenesis of such a complex organ in 3D with cellular resolution throughout all tissues, including global assessment of diverse 3D cellular features, dynamic growth patterns, and temporal/spatial control of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C223-C227 summarize the value of the 3D digital organ approach, supported by the multiple novel discoveries made possible by this methodology. The discoveries about polarity establishment, layer formation mode, and cellular mechanisms of curvature could not have been made with traditional 2D approaches, validating the claim about analytical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235"
+    ],
+    "result": "The results provide new understanding of ovule polarity establishment. While ovules are ultimately oriented along the gynoecium's long axis (gynapical-gynbasal), the final orientation does not correspond to how polarity is established. The earliest morphological manifestation is a slant in the primordium with an anterior-posterior axis initiated at a right angle to the gynoecium's long axis. This polarity is maintained throughout development in all major tissues along the PD axis. The final gynbasal-gynapical orientation is achieved by a subsequent funicular turn, not by direct establishment of polarity along the gynoecium axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C228-C235 synthesize the findings about polarity into a coherent model supported by the data on slanting (C127-C134), marker gene expression (pPD1::GFP in funiculus, embryo sac nuclear arrangement), and chalaza organization (C135-C150). The multi-step model (slanting \u2192 outer integument initiation \u2192 funicular turn) is well-supported by sequential observations and represents a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246",
+      "C247"
+    ],
+    "result": "The data broadened the repertoire of cell layer formation modes in plants. The classical model (supported by embryo epidermis and root cortex/endodermis formation) holds that all cells in a region undergo periclinal asymmetric divisions to form new layers. However, 3D analysis revealed a distinct mode for ii1' layer formation: only a few scattered ii1 founder cells undergo asymmetric periclinal divisions, with subsequent layer formation relying on symmetric anticlinal divisions in the ii1' daughters, resulting in lateral extension from pioneer cells\u2014a process termed \"layer invasion.\"",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C239-C247 present a significant conceptual advance supported by the quantitative analysis of cell divisions (1 periclinal vs. 13 anticlinal among 14 mitotic cells in 978 ii1' cells analyzed). The contrast with classical examples (embryo, root) is well-established by citations. The new mechanism is clearly distinct and well-supported by the data showing scattered initiation and lateral extension with irregular boundaries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C249",
+      "C250",
+      "C251",
+      "C252"
+    ],
+    "result": "3D digital organs drastically improve comparative phenotypic analysis power, enabling new insights into gene function. Despite careful study of ino phenotype by traditional means (tissue sections, optical sections, SEM), this study uncovered that INO plays a more important role than previously appreciated, with ino mutants showing not only missing outer integument and defective embryo sac development but also previously unrecognized cellular aberrations in nucellus and chalaza.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C249-C252 demonstrate the value of 3D digital organs for phenotypic analysis. The discovery of new aspects of the ino phenotype (nucellar cell proliferation, chalaza organization defects) despite extensive prior characterization validates the claim about improved analytical power. The new findings are well-documented in the quantitative analysis (C184-C186, C196-C212).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C258",
+      "C259",
+      "C260",
+      "C261",
+      "C262",
+      "C263",
+      "C264",
+      "C265"
+    ],
+    "result": "The work provides new insight into genetic and cellular processes regulating ovule curvature. Detailed comparison between wild-type and ino-5 3D digital ovules provided evidence for two distinct INO-dependent processes: kink formation in the primordium (involving asymmetric oblique cell divisions in stage 2-III posterior chalaza) and later bending of developing integuments (with the outer integument imposing bending on inner integument and nucellus, as evidenced by normal inner integument cellular parameters in ino-5 and bending in mutants lacking embryo sacs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C258-C265 synthesize findings about ovule curvature into a coherent two-step model supported by quantitative analysis of cell divisions (C196-C212), morphological observations (C191-C195), and inner integument analysis (C187-C190). The evidence for outer integument imposing bending is supported by both the ino-5 data and citation of prior work on embryo sac mutants. The model represents a significant advance in understanding this complex morphogenetic process.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,523 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The Patch-seq technique enables combined electrophysiological, morphological, and transcriptomic characterization of individual neurons by modifying traditional patch-clamp methods to include cytoplasmic collection and RNA-seq processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, C13, and C14 collectively describe the Patch-seq technique as a modification of patch-clamp that captures triple modality data. These are well-established descriptions of the method supported by citations and general knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C117",
+      "C122",
+      "C123",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C144"
+    ],
+    "result": "Extracting the nucleus during Patch-seq is critical for achieving high transcriptomic quality, as demonstrated by significantly higher NMS scores, increased intronic reads, Malat1 expression, cDNA quantity and quality in nucleus+ samples compared to nucleus- samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C117, C122-123, C135-139, and C144 provide converging statistical evidence (t-tests with p<0.0001, AUC\u22650.80) and mechanistic rationale (intronic reads, nucleus-specific genes) demonstrating nucleus extraction is essential for transcriptomic success. The data are internally consistent and well-quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Maintaining membrane integrity during slow nucleus extraction, as measured by end pipette resistance (endR), is highly predictive of morphological recovery success, with endR >100 M\u03a9 reducing morphology failures by ~30% while sacrificing <5% of successful fills.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C52-57, and C157-161 provide quantitative ROC analysis (AUC 0.56-0.62) and specific threshold recommendations (100 M\u03a9) with clear cost-benefit analysis. The mechanistic explanation (seal formation) and procedural details are well-documented with visual evidence in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C86"
+    ],
+    "result": "Custom analysis functions in MIES software enable automated quality control and adaptive stimulus protocols that reduce experiment duration to <3 minutes while maximizing data quality through real-time baseline evaluation and recovery period optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C63-69, C72-78, and C86 describe a comprehensive automated system with specific quantitative outcomes (64-70% of stimulus sets run without sweep repeats, <20% sweep failure rate, <3 min total time). The logic is well-documented in Figures 3 and supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The optimized Patch-seq protocol achieves pass rates of 97% for electrophysiology, 93% for transcriptomics, and 46% for morphology, resulting in 39% triple modality (MET) success and 91% dual modality (ET) success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-40 provide clear quantitative success metrics from the large-scale dataset (>8000 neurons). The rates are internally consistent and shown in Figure 1. The identification of morphology as the primary bottleneck is logical given the relative pass rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Electrophysiological features extracted using the Patch-seq protocol are remarkably consistent with those from traditional patch-clamp approaches, with only small differences attributable to internal solution modifications, as demonstrated by overlapping UMAP distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-91 describe a systematic comparison between protocols with visual evidence (Figure 3\u2014figure supplement 4B) showing high overlap in UMAP space. The small differences are mechanistically explained by RNase inhibitor addition, supported by citation to Lee et al., 2020.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The normalized marker sum (NMS) with a threshold of 0.4 is a robust predictor of transcriptomic quality and mapping success, with neurons above this threshold mapping consistently to reference transcriptomic types while those below show promiscuous assignments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-116 comprehensively describe the NMS metric, its calculation, interpretation, and validation. The bimodal distribution (C103), ROC analysis (C116, AUC=0.87), and consistency with FACS data (C109) provide strong quantitative support. The threshold choice is empirically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C128"
+    ],
+    "result": "Nucleus+ samples show higher detection of intronic reads, Malat1 expression, and subclass-specific 'on' marker genes compared to nucleus- samples, with detection patterns similar to FACS-isolated samples, confirming successful nuclear capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-122, C124-126, and C128 provide mechanistic rationale (RNA localization) supported by citations and empirical data (Figure 5B-C). The comparison to FACS provides external validation. The higher glia gene detection is appropriately explained as expected contamination (C127).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Recording duration, nucleus retrieval time, nucleus extraction time, initial access resistance, and neuron depth have no significant effect on transcriptomic quality (NMS), indicating RNA integrity is preserved throughout the Patch-seq procedure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-134 report null results across multiple variables with data shown in Figures 5A, D-E and supplements. The conclusion is supported by prior work (C132, Cadwell et al., 2017). The wide range of successful extraction times (C133, <1 to 8 min) supports the robustness claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Recording duration (3-12 min) has no effect on morphology reconstruction success, and multiple neurons can be recorded per slice without deleterious effects, though the last neuron may show reduced quality due to insufficient biocytin diffusion time before fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-155 present surprising null results (C152) with supporting data (Figure 6F-H) and a mechanistic explanation for the last-cell effect (C155) consistent with prior work (C156, Cadwell et al., 2017). The findings challenge conventional wisdom about recording duration requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Cell health (qualitative ranking 1-5) significantly affects morphological recovery, with cells ranked 1-2 showing lower success than cells ranked 3-5, though little improvement is seen between rankings 3-5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-166 describe the relationship between subjective cell health assessment and morphology outcomes with data in Figure 6\u2014figure supplement 3B. The plateau effect between ranks 3-5 is an interesting observation, though the subjective nature of the ranking is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The Patch-seq protocol is generalizable across species (mouse, human, macaque) and brain regions, with comparable success rates and consistent key predictors (nucleus extraction, endR) across species, as demonstrated by high-quality multimodal data collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C167-181 demonstrate cross-species validation with quantitative success rates for human (76%/77%/47% for E/T/M) and macaque (36 neurons) comparable to mouse. The 100% success example in one human slice (C173-174) demonstrates feasibility. Key predictors remain consistent across species (C172, C181).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study targeted >8000 neurons from four established Cre lines (Rbp4, Pvalb, Sst, Vip) in mouse visual cortex, intentionally including cells that failed stringent QC to evaluate metric utility and protocol optimization, with 4309 neurons previously published.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-34 describe the experimental design and dataset composition. The scale (>8000 neurons) is substantial. The intentional inclusion of failed QC cells (C26-27) is methodologically sound for evaluating quality metrics. The Cre line choices are well-justified by citations (C30-32).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The Patch-seq protocol consists of three phases with defined durations: recording (1-15 min), nucleus retrieval (<3 min), and nucleus extraction (<8 min), with specific procedural requirements at each stage including negative pressure application and monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-51 provide detailed procedural description with timing parameters shown in Figure 2D-F. The mechanistic rationale for short recording times (C46-47, reducing swelling from RNase inhibitor) is sound. The procedural details are specific and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Adaptive analysis functions in MIES can modify data acquisition during stimulation, such as terminating ramp stimuli after detecting 5 action potentials, which standardizes responses, prevents excessive depolarization, and allows recording of afterhyperpolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-84 describe a specific adaptive feature with clear benefits (standardization, cell protection, data completeness). The mechanistic rationale (C84, preventing cell state changes) is sound. Visual evidence is provided in Figure 3B and supplements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C162",
+      "C163"
+    ],
+    "result": "End pipette resistance (endR) does not impact insufficient axon filling, and initial access resistance during recording does not relate to morphology outcome, suggesting these metrics reflect different aspects of cell integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-163 report specific null results with data in Figures 6K and 5\u2014figure supplement 1. The distinction between endR (predicts failure) and access resistance (no effect) is interesting and suggests different mechanisms, though the interpretation could be explored further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C182",
+      "C206"
+    ],
+    "result": "The optimized protocol has enabled large-scale public data collection (>7000 neurons) available through the Allen Cell Types Database and BICCN, with tools provided for community adoption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182 and C206 describe the data sharing and resource availability. The scale is substantial and the public accessibility is commendable. The GitHub repository and database links provide practical resources for adoption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Despite improvements, morphological recovery (~46% success) remains the primary area for optimization, potentially through tissue slicing protocol refinement tailored to specific experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C183-185 acknowledge current limitations and suggest future improvements. While the limitation is clearly documented (C183), the proposed solution (C185, tissue slicing optimization) is speculative and lacks supporting data. The relationship to cell health (C184) is established but the proposed intervention is untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Smaller electrodes might improve morphological recovery by disturbing less membrane, but initial experiments found they hindered nucleus collection, illustrating trade-offs between data modalities that depend on experimental goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-189 discuss electrode size effects. The hypothesis (C187) is logical based on seal resistance findings, but the empirical test (C188) showed a negative result that prevented further exploration. This represents incomplete investigation of a potentially important variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Further automation of the patch-clamp process could improve throughput and data quality, particularly through automated nucleus extraction with endR feedback, building on demonstrated benefits of automated electrophysiology analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C190-194 propose future automation. While C191 demonstrates benefits of current automation, the proposed extensions (C192-194) are speculative. The specific suggestion about automated retraction with endR feedback (C194) is logical but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Incorporating synaptic property measurements into Patch-seq would extend the protocol's utility, as synaptic connectivity and dynamics differentiate neuron classes and linking these to transcriptomic types would enhance understanding of functional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-197 propose a logical extension supported by citations (C196). This is a reasonable future direction given the established importance of synaptic properties, though it represents speculation about future work rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Single-cell RNA-sequencing has revolutionized transcriptomics with large-scale studies (tens of thousands to millions of cells) characterizing brain cell types, but relationships to morpho-electric properties can only be inferred, and triple modality studies remain rare and limited in scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-11 provide context about the field supported by multiple citations. These establish the motivation for Patch-seq by identifying the gap between large-scale transcriptomics and limited morpho-electric characterization. The claims accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Early Patch-seq suffered from inconsistent quality, poor morphology recovery, and low throughput, which the authors addressed through systematic protocol refinement using experimental metadata feedback to identify key determinants of success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-20 describe prior limitations (supported by citations C16-17) and the current study's approach to addressing them. This provides important context for evaluating the improvements, though the specific quantitative improvements over early methods could be more explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C85",
+      "C87"
+    ],
+    "result": "MIES software, originally designed for multichannel synaptic physiology, was adapted for Patch-seq to acquire intrinsic properties using ramp and square step stimuli, with data exportable in NWB:N 2.0 format.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-62, C85, and C87 describe the software platform with appropriate citations. The adaptation of existing software (C61-62) and use of standard data formats (C87) are good practices. The stimulus design rationale (C58) is supported by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Patch-seq mRNA quality is variable, necessitating robust quality metrics, addressed by adopting published methodology comparing Patch-seq cells to FACS-based ground truth profiles to identify technical issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-95 identify a problem (variable quality) and describe the solution (published methodology from Tripathy et al., 2018). The rationale for using FACS as ground truth (C95) is sound. This provides important context for the NMS metric development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Morphological features are important for neuron classification, but obtaining morphologies from Patch-seq has been challenging, with early studies unable to recover morphology and recent work showing trade-offs between morphology and RNA quality, motivating the current systematic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-143, C145-147 provide context about morphology challenges supported by citations. The historical perspective (C142-143, C145-146) motivates the current work's focus on optimizing morphology while maintaining RNA quality. The gap in prior nucleated-patch studies (C146) is appropriately identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C148",
+      "C149"
+    ],
+    "result": "Variable morphological outcomes within single slices suggest factors prior to slice processing are critical determinants of morphological recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-149 make an inference from observed variability (Figure 6\u2014figure supplement 1) to conclude pre-processing factors are critical. While the observation is valid, the inference is not strongly supported\u2014within-slice variability could also reflect technical factors during recording (cell selection, pipette quality, etc.) rather than pre-processing factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C156"
+    ],
+    "result": "Prior studies required 15-60 min recording for optimal biocytin filling, but the current protocol targets <10 min, with longer durations needed only when slices are fixed immediately after single-cell recording.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-151 and C156 contrast prior requirements with current practice, supported by citations. The explanation for when longer times are needed (C156, immediate fixation) is consistent with the multi-cell recording data (C154-155) showing the last cell needs more time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Large-scale transcriptomic studies have advanced understanding of cell type differences across regions and species, and the Patch-seq protocol has been successfully applied across diverse systems, with generalizability achieved by focusing on nucleus extraction and membrane integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-205 provide broader context about transcriptomic progress (C198-199, supported by citations) and summarize the protocol's successful applications (C200-202, supported by citations). The key to adaptation (C203-204) is well-supported by the cross-species data. The concluding statement (C205) appropriately summarizes the technique's potential.",
+    "result_type": "MINOR"
+  }
+]

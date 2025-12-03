@@ -1,0 +1,1404 @@
+{
+  "submission": {
+    "id": "c3cbece2-6cde-4802-8452-6fdb364f319b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:22:13.276074Z",
+    "updated_at": "2025-12-03T03:22:13.276074Z"
+  },
+  "content": [
+    {
+      "id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "submission_id": "c3cbece2-6cde-4802-8452-6fdb364f319b",
+      "content_type": "manuscript",
+      "content_text": "# Self-organized patterning of cell morphology via mechanosensitive feedback\n\n## Authors\n\n- Natalie A Dye<sup>1</sup> ([ORCID: 0000-0002-4859-6670](https://orcid.org/0000-0002-4859-6670)) \u2020\n- Marko Popovi\u0107<sup>4</sup> ([ORCID: 0000-0003-2360-3982](https://orcid.org/0000-0003-2360-3982))\n- K Venkatesan Iyer<sup>1</sup>\n- Jana F Fuhrmann<sup>1</sup>\n- Romina Piscitello-G\u00f3mez<sup>1</sup>\n- Suzanne Eaton<sup>1</sup>\n- Frank J\u00fclicher<sup>2</sup> ([ORCID: 0000-0003-4731-9185](https://orcid.org/0000-0003-4731-9185)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Molecular Cell Biology and Genetics Dresden Germany\n2. Cluster of Excellence Physics of Life, Technische Universit\u00e4t Dresden Dresden Germany\n3. Mildred Scheel Nachwuchszentrum (MSNZ) P2, Medical Faculty, Technische Universit\u00e4t Dresden Dresden Germany\n4. Institute of Physics, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n5. Max Planck Institute for the Physics of Complex Systems Dresden Germany\n6. Center for Systems Biology Dresden Dresden Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nTissue organization is often characterized by specific patterns of cell morphology. How such patterns emerge in developing tissues is a fundamental open question. Here, we investigate the emergence of tissue-scale patterns of cell shape and mechanical tissue stress in the Drosophila wing imaginal disc during larval development. Using quantitative analysis of the cellular dynamics, we reveal a pattern of radially oriented cell rearrangements that is coupled to the buildup of tangential cell elongation. Developing a laser ablation method, we map tissue stresses and extract key parameters of tissue mechanics. We present a continuum theory showing that this pattern of cell morphology and tissue stress can arise via self-organization of a mechanical feedback that couples cell polarity to active cell rearrangements. The predictions of this model are supported by knockdown of MyoVI, a component of mechanosensitive feedback. Our work reveals a mechanism for the emergence of cellular patterns in morphogenesis.\n\n## Introduction\n\nDuring morphogenesis, tissues with complex morphologies are formed from the collective interplay of many cells. This process involves spatial patterns of signaling activity, and previous work has discovered mechanisms for generating tissue-scale patterns of activity in signaling pathways such as Hedgehog, TGF\u03b2, and Wnt (Green and Sharpe, 2015). In addition, patterns of cellular morphology arise during morphogenesis. Such patterns can be important for ensuring the function of the resulting tissue. For example, the compound eye of Drosophila consists of hundreds of ommatidia organized in a precise hexagonal array that is required to fully sample the visual field (Kumar, 2012). Patterns of cellular morphology that arise during morphogenesis can also guide the morphogenetic processes itself. For example, spatial patterns of cell morphology emerge during growth of the Drosophila larval imaginal discs, which are precursors of adult tissues (Aegerter-Wilmsen et al., 2010; Condic et al., 1991; Legoff et al., 2013; Mao et al., 2013). These patterns have been proposed to be involved in the eversion process, during which these flattened epithelial sacs turn themselves inside out when the animal transitions from larva to pupa (Condic et al., 1991). While extensive work has studied the emergence of biochemical signaling patterns, how patterns of cellular morphology arise during tissue development is poorly understood.\n\nHere, we investigate tissue-scale patterning of cell morphology in the Drosophila larval wing imaginal disc, which has a geometry that is ideal for studying spatial patterns of epithelial cell morphology. We focus specifically on the cell shape patterns in the central \u2018pouch\u2019 region, which is the precursor of the adult wing blade. To a good approximation, this region is planar and ellipsoidal. Cells near the center have smaller cell areas and are more isotropic in shape, whereas cells near the periphery have larger cell areas and are elongated tangentially (Aegerter-Wilmsen et al., 2010; Legoff et al., 2013; Mao et al., 2013). Cell shape has been correlated with mechanical stress: tangentially oriented bonds of elongated cells in the periphery are under higher tension than radially oriented bonds (Legoff et al., 2013).\n\nIt has been previously proposed that this pattern of cell morphology in the wing pouch could stem from differential proliferation: if the center grows faster than the rest, the resulting area pressure could stretch peripheral cells tangentially (Mao et al., 2013). Indeed, there is evidence to suggest that cells divide slightly faster closer to the center during very early stages (before $80hr$ after egg laying, AEL). It was suggested that this early growth differential is sufficient to account for the persistence of the cell morphology pattern through the remaining\u00a0$\u223c40hr$ of development. However, it has since been shown that cell rearrangements occur (Dye et al., 2017; Heller et al., 2016), which could relax stress patterns once growth has become uniform. Furthermore, stress patterns may even relax during homogeneous growth in the absence of cell rearrangements (Ranft et al., 2010). Thus, it remains unclear how cell morphology patterns generated early by differential growth could be maintained through later stages, and alternative mechanisms for the establishment of these patterns must be considered.\n\nHere, we measure the spatial patterns of cell morphology, cell divisions, and cell rearrangements during the middle of the third larval instar (starting at $96hr$ AEL). We quantify the pattern of tangential cell elongation and show that it becomes stronger over time, even though growth is spatially uniform and cell rearrangements are frequent. Strikingly, this change in tangential cell elongation is coupled to a radially biased pattern of cell neighbor exchanges. Using a physical model of tissue dynamics, we show that active patterning of radial cell neighbor exchanges can account for the observed morphology patterns in the absence of differential growth. Lastly, using a combination of experiment and theory, we provide evidence that this active patterning could be self-organized by mechanosensitive feedback.\n\n## Results\n\n### Cell morphology patterns can persist and strengthen in the absence of differential growth\n\nCell morphology patterns in the wing disc have been previously analyzed using static images (Aegerter-Wilmsen et al., 2010; Legoff et al., 2013; Mao et al., 2013). However, relating cell morphology patterns to patterns of growth, cell divisions, and cell rearrangements requires dynamic data. We therefore performed long-term timelapse imaging of growing explanted wing discs using our previously described methods (Dye et al., 2017), starting at $96hr$ AEL and continuing for $\u223c13hr$ of imaging. We used Ecadherin-GFP as an apical junction marker (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig1-v3.jpg)\n\n**Figure 1.:** (A) Ecadherin-GFP-expressing wing disc growing in ex vivo culture (explanted at $96hr$ AEL). We analyze apical cell morphology in the proliferating disc proper layer in a 2D projection, after correcting for local tissue curvature (see Materials and methods and Figure 1\u2014figure supplement 1A). Red outline indicates the presumptive 'blade' region; yellow outline indicates cells of the compartment boundaries, which are used to align different movies. Dorsal is up, and anterior is left. (B\u2013C) Spatial maps of cell area (B) or cell elongation (C) were generated by averaging across the middle timepoints of five movies. Axis labels indicate the distance in $\\mum$ from the AP boundary (along X) or DV boundary (along Y). Dotted lines indicate the compartment boundaries. The calculated center of symmetry is represented by a green dot. In (B), the white dashed circle is added to highlight the near-circular symmetry. In (C), the bars represent the cell elongation tensor $Q$, where the length of the bar is proportional to the magnitude and the angle indicates its orientation. In addition, the radial component of cell elongation is presented in color. More information about this cell elongation pattern and how we define the center point is included in Figure 1\u2014figure supplement 1. (D) The blade cells that are tangentially elongated and lying well outside the DV boundary region are shaded in gray on a single image of the timelapse. Red circles indicate the radial binning used in (E\u2013F), where the numbers indicate the radius (in $\\mum$). The region around the DV boundary was separately analyzed in Figure 1\u2014figure supplement 2. For the region depicted in (D), the radial gradient in average cell area (E) and radial cell elongation $Q_{rr}$ (F) were calculated. Solid lines indicate the average over all five movies in the middle time window. The shaded region indicates the standard deviation. Data showing how these radial gradients change over time during imaging are shown in Figure 1\u2014figure supplement 3. Source data for (B\u2013F) are available on Dryad. (G) Decomposition of isotropic tissue deformation into cellular contributions. (H\u2013I, K\u2013L) Maps of the total tissue area growth (H) and its contributions from cell area change (I), cell divisions (K), and cell extrusions (L) do not show pronounced spatial patterns. (J, M) The radial profile of tissue growth and its cellular contributions, analyzed in radial bins. sumContrib in blue is the sum of all contributions, corresponding to total tissue deformation. Source data files for isotropic tissue deformation are provided as Figure 1\u2014source data 1, 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cell area and elongation were adjusted to account for the distortion associated with projecting a curved surface in 2D. Left shows a 2D projected image from the timelapse movie of an Ecadherin-GFP-expressing wing explant overlaid with contours representing the depth of the apical surface in the acquired Z-stack. Numbers indicate distance (in $\\mum$) from the most apical plane in the Z-stack. The right diagrams depict how we adjust the size and shape of the triange due to local tissue tilt. We determine the local tangential plane of the tissue surface at the triangle center. We then calculate the transformation matrix $N_{tilt}$ relating the shape tensor $s_{0}$\u00a0(in the tangential plane) and the observed shape tensor s (in the projected plane). (B) Cell elongation pattern presented in Figure 1, shown here without the color code. Cell elongation was averaged across all five movies in the middle time window within a grid centered on the AP and DV axes. The cell elongation nematic tensor $Q$ is represented by bars, whose length is proportional to the magnitude and whose angle indicates the orientation. The green circle is added to show the almost circular symmetry of the pattern, and the green dot is the calculated center of symmetry of the cell elongation pattern. (C\u2013D) The cell elongation pattern shown in A, colored by the XX (B) or XY (C) component. (E\u2013F) Calculating the center of symmetry of the cell elongation pattern. At each point along the x axis (DV boundary), we calculate the area-weighted sum of $Q_{xy}$ in the four quadrants. The center point lies at the function minimum, which lies just anterior to the AP boundary (APB). (G) Illustrations of the orientation of cell elongation for positive and negative values of $Q_{rr}$ and\u00a0$Q_{r\\phi}$. (H\u2013I) The cell elongation pattern shown in A, colored by the $Q_{rr}$ (H) or $Q_{r\\phi}$ (I) component.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The cell area and elongation are reported for the cells near the DV boundary, the region that was excluded from the analysis in Figure 1. (A) The radially elongated blade cells within the DV boundary region are shaded in gray on a single image of the timelapse of Ecadherin-GFP expressing wing discs ($96hr$ AEL). Red lines indicate bins along the x axis (aligned with the DV boundary) emanating from the center of elongation symmetry; the numbers indicate the distance to the center (in $\\mum$). Average cell area (B) and the XX component of cell elongation (C) were calculated by averaging over all five movies in the middle time window within the bins along the DV boundary (highlighted in A). The solid line indicates the mean, and the shaded region indicates the standard deviation. (D) The profile of tissue growth or that contributed by changes in cell area, analyzed in the bins along the DV boundary that are highlighted in A. The blue line labeled 'sumContrib' is the sum of all cellular contributions, corresponding to the total tissue growth. (E) The profile along the DV boundary in the contribution of cell divisions or cell extrusions to overall tissue deformation, analyzed in the bins shown in A.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Analysis of cell area and elongation for the region of cells inside (A-B) or outside (C-D) the band around the DV boundary, analyzed over all times. This analysis complements the analysis of the middle time window shown in Figure 1. (A+C) Single timepoints from the timelapse of an Ecadherin-GFP-expressing wing disc growing in ex vivo culture (explanted at $96hr$ AEL), highlighting the cells that correspond to these two regions of interest. Red lines indicate the binning from the distance to the center, either along X (A) or radially (C). (B+D) Profiles in cell area (left) or cell elongation (right). For the band around the DV boundary, we present $Q_{xx}$, whereas outside this band, we present $Q_{rr}$. Data were averaged across five time windows for all five discs, at different distances away from the center of symmetry to show how the profile changes in time during the timelapse.\n\nTo quantify cell morphology, we averaged apical cell area and cell elongation locally in space, using data from five wing discs, and in time using $\u223c2hr$ intervals. Over the course of the $13hr$ time-lapse, the qualitative features of the morphological patterns do not change. Therefore, in Figure 1B\u2013C, we present the spatial patterns calculated for the middle timepoint. Cell area is represented as a color code. Cell elongation is characterized by a tensor $Q$, which defines an axis and a strength of elongation and is represented by bars in Figure 1C (see Materials and methods, Figure 1\u2014figure supplement 1B; Etournay et al., 2015; Merkel et al., 2017). To quantify the radial symmetry of this pattern, we first determined the center of symmetry (Figure 1\u2014figure supplement 1 and Materials and methods). We then introduce a polar coordinate system at the center with the radial coordinate $r$ and present the radial projection $Q_{rr}$ of the cell elongation tensor as a color code in Figure 1C (see also Figure 1\u2014figure supplement 1). This figure highlights the pattern of tangential cell elongation, with cells elongating on average perpendicular to the radial axis (blue in Figure 1C). It also reveals that this pattern is interrupted around the Dorsal-Ventral (DV) boundary, where cells are elongated parallel to this boundary (red in Figure 1C). We quantify this region separately (Figure 1\u2014figure supplement 2) and exclude it from our analysis of the circular patterns (Figure 1D\u2013F). The Anterior-Posterior (AP) boundary also affects cell morphology (Landsberg et al., 2009), but the effect is weaker and more variable at this stage; thus, we do not quantify it separately.\n\nThe spatial maps of cell morphology reveal that both cell area and cell elongation magnitude are largest at the periphery and decrease toward the center (Figure 1B\u2013C). We quantified this radial gradient in cell area and observe that cell area ranges from $\u223c3\u22127\\mum^{2}$ when moving toward the periphery (Figure 1E). We also observe a radial gradient in cell elongation starting from $Q_{rr}\u22480$ at $r=10\\mum$ and extending to about $Q_{rr}\u2248-0.1$ at $r=40\\mum$ (Figure 1F). The negative value corresponds to tangential elongation (Figure 1C). When evaluated over the timelapse, we find that these radial gradients grow slightly more pronounced over time (Figure 1\u2014figure supplement 3C\u2013D).\n\nAs previously proposed, differential growth can generate such patterns of cell elongation (Mao et al., 2013). However, indirect metrics of tissue growth in vivo do not indicate that differential growth still occurs at this later stage (Mao et al., 2013). We directly measured the spatial pattern of growth during timelapse. Cell division rate has been previously used as an indicator of growth; however, tissue growth actually results from a combination of cell division, cell area changes, and cell extrusions (Figure 1G). Thus, we evaluated the spatial pattern (Figure 1H,I,K,L) and radial profiles (Figure 1J,M) of total tissue growth and its cellular contributions. These data show that tissue area growth, as well as cell division rate, are to a good approximation independent of the distance to the center.\n\nIn summary, we quantified cell morphology patterns in mid-third instar wing explants during live imaging. We confirm previous static observations of the pattern and further identify a region around the DV boundary with a morphological pattern that differs from the rest of the wing pouch. We quantify the radial gradients in cell area and cell elongation existing outside of the DV boundary region and show that they strengthen in time in the absence of differential growth, raising the question of what mechanism underlies the persistence of these cell morphology patterns during mid to late stages of wing growth.\n\n### Radially\u00a0oriented cell rearrangements balance tangential cell elongation\n\nTo directly relate the observed cell morphology patterns with cell rearrangements, we next analyzed the spatial patterns in cellular contributions to tissue shear (Figure 2A). Tissue shear can be decomposed into contributions from cell divisions, cell elongation changes, T1 transitions, and so-called correlation effects (Etournay et al., 2015; Merkel et al., 2017). Here, correlation effects result mainly from correlated fluctuations in cell elongation and cell rotation (see Appendix 3 and Merkel et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig2-v3.jpg)\n\n**Figure 2.:** (A) Cumulative tissue deformation and its cellular contributions, measured in a grid centered on the compartment boundaries (dotted gray lines) and averaged over all five movies. Bars represent nematic tensors, where the length is proportional to the magnitude of deformation and the angle indicates its orientation. The contribution from cell extrusion is small and thus not shown. Data used to present these plots are included in Figure 2\u2014source data 1. (B) The radial projection of cumulative tissue deformation and its cellular contributions are plotted as a function of time after the first $2hr$ of adaption to culture (Dye et al., 2017). Solid lines indicate the average over all five movies; shading indicates the standard deviation. Data used to present these plots are included in Figure 2\u2014source data 2. (C) Schematics indicating how a uniformly oriented pattern would combine with a tangential pattern to produce a pattern resembling that of the cell elongation change (left) or with a radial pattern to produce a pattern resembling that of the T1 transitions (right). (E\u2013F) Illustrations demonstrating radially-oriented T1 transitions coupled to tangential cell elongation. For simplicity, we diagram only the posterior-dorsal quadrant, but the pattern is radially symmetric. In (E), we define the radial coordinate system, where velocity in the radial direction is positive and that in the tangential direction is negative. Patterns in A indicate that T1 transitions are biased to grow new bonds in the radial direction, and cell elongation is biased to increase tangentially. (F) In a radially oriented T1 transition, cells preferentially shrink tangentially oriented bonds and grow new bonds in the radial direction. When oriented in this direction, T1 transitions do not dissipate tangential elongation but increase it (green bars in each cell represent cell elongation).\n\nWe find that the spatial patterns of tissue growth and its cellular contributions exhibit overall anisotropies perpendicular to the DV boundary, as reported previously (Dye et al., 2017). In addition, the patterns of cell elongation changes and T1 transitions can be described as a superposition of a uniformly oriented pattern and an approximately radial or tangential pattern (Figure 2C\u2013D). To determine the magnitude of the radial or tangential patterns in all quantities, we quantified their average radial projections as cumulative plots over time (Figure 2B). The radial component of tissue shear is small, and cell divisions do not contribute to radial tissue shear. In contrast, we observe a pronounced buildup of a tangential pattern of cell elongation accompanied by a radial pattern of T1 transitions and of correlation effects.\n\nAs shown above (Figure 1J), tissue area growth does not have a radial gradient and thus does not contribute to the increase in tangential cell elongation that we observe at this time (Figure 2A\u2013B, Figure 1\u2014figure supplement 3C\u2013D). Furthermore, we observe numerous T1 transitions (on average $1.0cell^{-1}hr^{-1}$), and their radially\u00a0biased orientation increases rather than relaxes tangential cell elongation (Figure 2E\u2013F). Thus, we are not observing the relaxation of a pattern of cell elongation caused by early differential growth. Rather, our data support a model whereby a radially patterned morphogenetic cue actively biases the direction of T1 transitions and consequently the complementary pattern of cell shape changes.\n\n### Polarity-driven cell rearrangements can create the observed cell morphology patterns in the wing disc\n\nWe next apply a biophysical model to determine whether radially patterned T1 transitions could account for the observed cell morphology patterns in the wing disc. This model takes into account the interplay of T1 transitions, cell shape changes, and tissue shear in a continuum description (Etournay et al., 2015; Popovi\u0107 et al., 2017). Active anisotropic force-generating processes that bias cell rearrangements in the tissue, such as polarization of the actomyosin cytoskeleton, are captured by a nematic cell polarity $q$, defined by a magnitude and an orientation axis. We propose that such a patterning cue leads to the radially oriented pattern of T1 transitions we observe in the wing disc.\n\nIn our model, we consider the spatial patterns of tissue shear rate $v~$, the patterns of cell shape $Q$, and the patterns of cell rearrangements $R$, which have nematic symmetry and are represented by traceless symmetric tensors that describe the magnitude and orientation. Tissue shear is defined as a velocity gradient tensor that results from a combination of cell shape changes and cell rearrangements (Etournay et al., 2015; Merkel et al., 2017):\n\n$$\nv~=\\frac{DQ}{Dt}+R\n$$\n\nHere, $DQ/Dt$ is a co-rotational time derivative of $Q$, and the shear due to cell rearrangements $R$ includes contributions from T1 transitions, cell divisions and extrusions, and also correlation effects.\n\nTissue material properties are described by constitutive equations for the tissue shear stress $\\sigma~$ and the shear due to cell rearrangements $R$ (Figure 3A\u2013B):\n\n$$\n\\sigma~=2KQ+\u03b6q\n$$\n\n\n\n$$\nR=\u2005\\frac{1}{\\tau}Q\u2005+\u2005\\lambda\u2005q\n$$\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig3-v3.jpg)\n\n**Figure 3.:** (A) Stress is a combination of elastic and polarity-driven stresses. Similarly, in (B), cell rearrangements occur to relax a stretched cell shape or to respond to an internal nematic cell polarity cue. In the cartoons in (A)-(B), we chose to depict scenarios where $\u03b6$ and $\\lambda$ are $>0$. (C\u2013G) We apply this model to a radially symmetric tissue at steady state to approximate the wing disc. If we impose a radial polarity field (C), cell elongation is oriented in the opposite direction, according to the equation in (D) when $R_{rr}=0$ (steady state). (E) Considering force balance in the tissue, our model also predicts a pressure profile with higher pressure in the center. (F) To fit experimental data in the wing disc, we estimate the radial profile of $q_{rr}$ from Equation 4 by measuring cell elongation as a function of $r$ in the last ($\u223c5hr$) of the timelapse. We solve for $q_{rr}$ by making an empirical fit to this cell elongation data (see Appendix 1 part 2). (G) The cell area distribution we observe in the wing disc is consistent with the pressure profile predicted by our model (E and Appendix 1 part 2).\n\nHere, the shear stress tensor $\\sigma~$ is the sum of the elastic and active stress. The elastic stress is associated with cell elongation $Q$ and characterized by the shear elastic modulus $K$. The active stress associated with the cell polarity cue $q$ (Figure 3A) is described by the coefficient $\u03b6$. The shear rate due to cell rearrangements $R$ given by Equation 3 is driven in part by shear stress, and therefore depends on the cell elongation $Q$, and in part by active processes that are oriented by the nematic cell polarity $q$ (Figure 3B). $\\tau$ is a relaxation time for cell rearrangements over which elastic stresses are relaxed, and $\\lambda$ is the rate of cell rearrangements driven by cell polarity. In this coarse-grained picture, subcellular processes are captured by effective coefficients. For simplicity, we do not include dissipative processes on cellular scales, such as cytoskeletal viscosity or cell-cell friction. Such dissipative processes are relevant on short timescales and are small in comparison with elastic stresses on tissue relevant timescales.\n\nTo discuss the wing disc, we consider a radially symmetric geometry and average the oriented quantities after projection onto the radial axis. Radial tissue shear is small compared to that associated with cell shape changes and T1 transitions during our observed time window (Figure 2B). We therefore consider a steady state with $v~_{rr}=0$, $DQ_{rr}/Dt\u2005=0$, and $R_{rr}=0$. In this case, cell elongation becomes:\n\n$$\nQ_{rr}=-\\tau\\lambda\u2005q_{rr}\n$$\n\nThus, we find that the steady state cell elongation pattern is a result of cell rearrangements that are oriented by the cell polarity cue $q$ (Figure 3C\u2013D). Note that our data show that the wing disc is not exactly at steady state: cells slowly change their shape and rearrange radially (Figure 2A\u2013B). However, as we show in Appendix 1 part 1-2, Equation 4 holds to a good approximation.\n\nCan the radial pattern of T1 transitions defined by $q$ also explain the observed radial profile of cell area (Figure 1B,E)? To answer this question, we then considered force balances in the tissue. We consider tissue area pressure:\n\n$$\nP=\u2212K\u00af\u2005ln(\\frac{a}{a_{0}})\n$$\n\nwhere $P$ is the difference in pressure from a reference value, $K\u00af$ is tissue area compressibility, $a$ is the average cell area, and $a_{0}$ is a reference cell area. As pressure increases, cell area decreases. To calculate the cell area profile, we again approximate the wing pouch as a radially symmetric disc. In the radially symmetric geometry, force balance can be expressed as:\n\n$$\n\\partial_{r}P=\\partial_{r}\\sigma~_{rr}+\\frac{2}{r}\\sigma~_{rr}\n$$\n\nA radial profile of pressure determined from this equation implies a radial pattern of cell area via Equation 5 (see Figure 3C\u2013E and Appendix 1 part 1-2). To test this implication, we first quantify the radial profile of cell elongation $Q_{rr}$ to estimate the profile of $q_{rr}$ using Equation 4 (Figure 3F). We represent the cell elongation data in a functional form using an empirical power law that is fit to the data. Then, using this functional form in Equations 2, 5, and 6, we solve for the cell area profile (Figure 3G and Appendix 1 part 1-2). Finally, we show that this function can account for the observed pattern of cell area (see Figure 3G).\n\nFrom this analysis, we conclude that the cell morphology patterns observed in the wing disc could be generated by radially\u00a0biased cell rearrangements. Next, we test whether the stress profile predicted by the model (Equation 2) exists in the tissue, and we measure key mechanical parameters of the model. Later, we address the potential molecular origin of the cell polarity cue orienting the cell rearrangements.\n\n### Circular laser ablation reveals patterns of tissue stress\n\nOur model predicts a stress pattern in the wing disc that results from active processes that are radially oriented by a cell polarity cue. To compare this prediction to experiment, we infer tissue stress using laser ablation. Tissue stress has been estimated previously by laser ablation techniques that are based on determining the initial retraction velocity (Bonnet et al., 2012; Etournay et al., 2015; Farhadifar et al., 2007; Legoff et al., 2013; Mao et al., 2013; Shivakumar and Lenne, 2016). However, to compare theory and experiment, ideally one should measure quantities that are well-captured by the model. Therefore, instead of using initial retraction velocity, we perform circular cuts and analyze the final, relaxed position of the inner and outer elliptical contours of tissue formed by the cut (Figure 4A, Appendix 2). From the size and the anisotropy of the cut, we can infer anisotropic and isotropic tissues stress, normalized by the respective elastic constants, as well as the ratio of elastic constants (see Appendix 2). Furthermore, we can also infer the existence of polarity-driven stress. We name this method ESCA (Elliptical Shape after Circular Ablation).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig4-v3.jpg)\n\n**Figure 4.:** (A) Description of the circular laser ablation method ESCA. The tissue is cut in a circle (radius $7\\mum$), and cell elongation is averaged in this region before the cut. After the tissue relaxes ($2min$), we fit ellipses to the cut region. We then infer mechanical properties using our model, which inputs deformation and outputs stress as a function of elastic constant and the ratio of the isotropic and anisotropic elastic constants (see also Figure 4\u2014figure supplement 1). (B) Map of stress and cell elongation in the wing disc ($96hr$ AEL). Each line represents a nematic, where length indicates the magnitude, and angle indicates its orientation. Each data point comes from a different wing disc. The gray region indicates a border region, in which a cut would straddle the two regions. Cuts centered in this region were not included in the analysis. The dotted lines on either side of the DV boundary indicate our cut-offs for delineating the border and DV boundary regions (see Materials and methods). (C) Magnitude of anisotropic stress ($\\sigma~/2K$) is plotted against cell elongation (projected onto the stress axis) for all ablations outside the DV boundary. Dotted line indicates a line with slope $=1$, corresponding to a tissue lacking a nematic cell polarity cue. Fit line is solid black (See Appendix 2). Data for the DV boundary region is presented in Figure 4\u2014figure supplement 1D-F. (D) Relative area pressure is plotted against $r$ for all ablations outside the DV boundary. The correlation coefficient $=\u22120.52$. Data used in this figure are included in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Analysis of circular laser ablations ($96hr$ AEL).(A) and (D): Histogram of fit residuals for the region outside the DV boundary (A) or within the band around the DV boundary (D). The red line in (A) denotes the cutoff we chose to discard cuts with non-elliptical outlines. (B) and (E) Plot of the anisotropic stress (relative to $2K$) versus the cell elongation along the stress axis. Points marked with \u2018x\u2019 were discarded because their fit residuals were greater than our cutoff (red line in A). Dotted line indicates a slope\u00a0$=1$, which would correspond to a tissue without polarity-driven stress. (C) and (F) show the sum of fit residuals for a range of values for the ratio of elastic constants. The optimal value was considered to be the one that minimizes this sum of residuals.\n\nWe perform local measurements of tissue mechanics by cutting the tissue in the smallest possible circle that would still allow us to measure the shape of the inner piece left by the cut (radius = $7\\mum$, encircling $\u223c5\u221215$ cells, Figure 4A). To relate measurements of tissue stress to cell elongation, we calculate the average cell elongation in the ablated region before it is cut (Figure 4A). In Figure 4B, we present the measured cell elongation and shear stress tensors at the position of ablation. We find that local average cell elongation correlates well with the principal direction of shear stress. Also, we observe that the cells in the band around the DV boundary, which are exposed to high Wg and Notch signaling, have different mechanical properties than elsewhere in the tissue. Near the DV boundary, cells elongate less than outside this region for comparable amounts of stress (Figure 4B and Figure 4\u2014figure supplement 1B,E). The ratio of elastic constants in this region is also smaller: near the DV boundary $2K/K\u00af=2.3\\pm0.3$, whereas outside this region, $2K/K\u00af=3.4\\pm0.4$ (see also Figure 4\u2014figure supplement 1C,F). We focus hereafter on the radial patterns of elongation and stress outside of the DV boundary region.\n\nThe relationship between cell elongation and stress normalized by the elastic modulus has a slope 1 in the absence of polarity-driven stress (see Equation 2). We observe a much smaller slope for this relationship in our data (Figure 4C), indicating that polarity-driven stress is significant. We now use these data to estimate the parameters of our mechanical model. We write the shear stress defined in Equation 2 in terms of cell elongation and cell rearrangements, eliminating the orientational cue $q_{rr}$ using Equation 3. For the radial components, we have:\n\n$$\n\\sigma~_{rr}=2K^{*}Q_{rr}+2K-K^{*}\\tauR_{rr}\n$$\n\nwhere $K$* = $1-\u03b6/(2K\\tau\\lambda)K$ is an effective shear elastic coefficient. The difference between $K^{*}$ and $K$ depends on the parameters $\u03b6$ and $\\lambda$ associated with the nematic cell polarity. We fit Equation 7 to the data and find $K^{*}/K=0.05\\pm0.02$ and $(1-K^{*}/K)\\tauR_{rr}=0.011\\pm0.002$ (Figure 4C, see Appendix 1 part 3). Combined with data from Figure 1, we find an estimate for the tissue relaxation time $\\tau=2\\pm2\u00a0hr$, which is roughly consistent with that found during pupal morphogenesis (Etournay et al., 2015). From our data, we can also infer the radial profile of tissue area pressure, revealing that pressure increases toward the center (Figure 4D and Appendix 1 part 3). This finding is consistent with the observed cell area profile, with smaller cell areas toward the center (Figure 1B,E).\n\nIn sum, we find a stress profile in the wing disc that is consistent with the observed measurements of both cell elongation and area. Further, we use these data to measure certain parameters of our biophysical model, including the tissue relaxation timescale and the effective shear elastic coefficient.\n\n### Reduction of planar cell polarity pathways does not reduce tangential cell elongation\n\nIn our model, the radial orientation cue is required to generate the observed patterns of cell morphology, cell rearrangement, and tissue stress. Candidates for such an orientational cue are the planar cell polarity pathways (PCP), which are groups of interacting proteins that polarize within the plane of the epithelium. There are two well-characterized PCP pathways: Fat and Core (Butler and Wallingford, 2017; Eaton, 2003). In the wing, these systems form tissue-scale polarity patterns during growth (Brittle et al., 2012; Merkel et al., 2014; Sagner et al., 2012) and are required to position the hairs and cuticle ridges on the adult wing (Adler et al., 1998; Doyle et al., 2008; Eaton, 2003; Gubb and Garc\u00eda-Bellido, 1982; Hogan et al., 2011). To determine whether either of these pathways could function as the orientational cue described in our model, we analyzed cell elongation patterns after their removal.\n\nWe perturbed the Fat pathway using nub-Gal4 to drive the expression of RNAi constructs targeting both fat\u00a0(ft) and dachs (d) in the pouch region throughout the third larval instar. This perturbation results in almost complete loss of Dachsous from the apical membrane, and any residual signal is no longer polarized, confirming the loss of PCP (Figure 5\u2014figure supplement 1A\u2013B). Furthermore, we observe a suppression of tissue growth upon ft+d double RNAi knockdown (visible at the end of larval development in Figure 5A and in the resulting adult wings in Figure 5\u2014figure supplement 1C), consistent with previous work on the loss of both Dachs and Fat (Cho and Irvine, 2004). Nonetheless, the pattern of tangential cell elongation persists to the end of larval development (Figure 5A\u2013C). Using scaled coordinates, we find that the radial profiles of cell elongation in ft+d RNAi and control wings are similar (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013D) RNAi was induced against both fat\u00a0and\u00a0dachs in the pouch (nub-Gal4 > UAS-Dcr, UAS-fatRNAi, UAS-dachsRNAi), and cell elongation patterns at the end of larval development ($110hr$ AEL) are presented along with control (nub-Gal4 > UAS-Dcr). Data are included in Figure 5\u2014source data 1. (E\u2013I) Cell elongation patterns at the end of larval development are presented for a null mutant in prickle (pk30) and the wild-type control. Data are included in Figure 5\u2014source data 2. (A,E) Representative images of each genotype, with apical cell boundaries marked with Ecadherin-GFP. Yellow box indicates the inset that is presented in higher resolution in (B,F). (C,G) Cell elongation averaged across several discs for each genotype in a grid centered on the AP and DV boundaries. Bars represent the average cell elongation tensor $Q$, where the length of the bar is proportional to the magnitude of cell elongation, and the angle indicates its orientation. Color indicates the radial component of cell elongation $Q_{rr}$. Axis labels indicate distance from the AP (X) or DV (Y) compartment boundaries (in $\\mum$). (D,I) The radial profile of cell elongation for each genotype was quantified by averaging $Q_{rr}$ in radial bins and plotting as a function of $r$. Since the ft+d RNAi wings are smaller, we present this profile as a relative distance to the center. The band of cells around the DV boundary was removed, and because the ft+d RNAi discs are smaller, this region of exclusion is a larger relative distance. Plots in (C\u2013D) represent averages of $N=7-8$ wing discs per genotype; for plots in (G\u2013I), $N=11-14$ per genotype.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Double\u00a0RNAi of\u00a0ft\u00a0and\u00a0d\u00a0was validated by looking at Dachsous localization in wing discs (A-B) and adult wing size (C). (A-B). Representative images of late 3rd instar wing discs ($\u223c120hr$\u00a0AEL) immunostained for Dachsous and expressing Ecadherin-GFP in both control (left) and RNAi (right) wing discs. Ecadherin was used to project the apical plane in both channels. Part (B) shows a higher resolution of the region outlined by the yellow box in (A). In control wings, Dachsous is membrane-localized and planar polarized. Upon RNAi\u00a0of ft and d, Dachsous levels\u00a0are reduced, and residual signal is no longer membrane-localized or planar polarized. (C) Representative images of adult wings from control (left) and RNAi (middle) flies. Both scale bars are $500\\mum$. On the right is a quantification of the reduction of wing size upon ft+d RNAi, normalized to the control (males only). The lower and upper hinges correspond to the first and third quartiles (the 25th and 75th percentiles). The middle line corresponds to the median; whiskers extend to the maximum and minimum value of the data within $1.5$ times the interquartile range; outliers are represented by individual dots. $N=36$ for control; $N=25$ for RNAi.\n\nWe perturbed the Core PCP pathway using a previously characterized null mutation in prickle (pk30), which causes defects in adult wing hair orientation (Gubb et al., 1999). We found that the cell elongation pattern in the pk mutant is similar to the wild-type control (Figure 5E\u2013I). In the pk mutant, the region of tangential cell elongation extends even further into the center than in control wings.\n\nWe conclude that the tangential cell elongation pattern persists in the absence of either PCP pathway. This result excludes these pathways as orienting cues for the cell elongation patterns.\n\n### Mechanosensitive feedback generates self-organized patterns of cell morphology\n\nWe have shown that perturbing PCP pathways does not affect the radial patterns of morphology, raising the question of how orientational cues might arise. In previous sections, we have considered the orientational cue to be provided by a cell polarity system that is independently patterned. However, cell polarity in general would be affected by stresses in the tissue. Indeed, there are many examples of cells polarizing in response to mechanical stress (Duda et al., 2019; Hirashima and Adachi, 2019; Ladoux et al., 2016; Ohashi et al., 2017). Here, we show that introducing mechanosensitive feedback to the model of tissue mechanics can give rise to spontaneous emergence of the cell polarity cue (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig6-v3.jpg)\n\n**Figure 6.:** (A) We introduce mechanosensitive feedback into our model with a dynamic equation relating the orientational cue $q$ to tissue stress. With a change in $q$, there can be a change in polarity-driven cell rearrangements and stress. (B) Above a critical value of $\\mu$, the isotropic state is unstable and the system spontaneously polarizes. (C) Application of the model to the radially symmetric wing disc. Generation of large-scale tissue polarity requires the orientation coupling term $D$. We find a set of parameters that can account for the experimental data on cell elongation in the wing disc (see Appendix 1 part 4 and Table 1).\n\nMechanosensitivity is incorporated into our model of tissue mechanics through a dynamic equation for the orientational cue $q$ that becomes stress-dependent:\n\n$$\n\\frac{dq}{dt}=\u2212\\frac{1}{\\tau_{q}}q\u2212\\mu\\sigma~\u2212\\alpha|q|^{2}q+D\u2207^{2}q\n$$\n\nHere, $\\tau_{q}$ is a relaxation timescale for $q$,\u00a0$\\mu$ is a mechanosensitive feedback strength, the coefficient $\\alpha>0$ ensures stability, and $D$ is a coupling strength locally aligning orientational cues.\n\nNow, Equation 8 provides a mechanosensitive feedback to Equations 1, 2 and 3. These combined equations show a novel behavior. Specifically, the orientational cue can emerge spontaneously by self-organization (Figure 6A\u2013B). Beyond a critical value $\\mu_{c}$ of the mechanosensitive feedback strength $\\mu$, an isotropic tissue with $q=0$ is no longer stable, and a state with an orientational cue $q\\neq0$ emerges instead (Figure 6B and Appendix 1 part 4). The magnitude of this spontaneous polarization is $|q|=q_{0}$, where $q_{0}^{2}=(\\tau_{q}\\mu(2K\\tau\\lambda-\u03b6)-1)/(\\alpha\\tau_{q})$, where a positive coefficient $\\alpha$ is needed to stabilize the polarized state. By this mechanism, the anisotropic cue introduced earlier in our model can be locally generated by mechanosensitive self-organization and does not require the existence of pre-patterned polarity cues. To generate a large-scale pattern from locally generated anisotropic cues, they need to be aligned in neighboring regions. This local alignment is captured in Equation 8 by the orientation coupling term with strength $D$, which is similar to alignment terms found in anisotropic physical systems, such as liquid crystals (Gennes and Prost, 1993; J\u00fclicher et al., 2018; Marchetti et al., 2013).\n\nTo discuss cell morphology profiles in the wing disc, we consider a simplified tissue model with radial symmetry, where the rate of radial cell rearrangement $R_{rr}$ is given (as estimated in Appendix 1 part 2) and the cell shape pattern and tissue stress pattern are calculated. Using a fit of cell elongation to the experimental data, we find a set of parameter values that accounts for the observed cell elongation patterns in the wing disc (Table 1, Appendix 1, Figure 6C). From this cell elongation pattern also follows the cell area pattern (as described above, Figure 3).\n\n**Table 1.**\n Parameter values obtained by fitting the tangential cell elongation profile shown in Figure 6C to the self-organized model.Values in the last two rows are boundary conditions that are required to calculate the tangential cell elongation profile. The reported parameter uncertainty intervals were obtained by fitting 101 uniformly sampled tangential cell elongation profiles from the range defined by the standard deviation in the experimental tangential cell elongation profile (error bars in Figure 6C). The interval limits are the 10th and 90th percentiles of the obtained values.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Fit parameter</th>\n      <th>Parameter value</th>\n      <th>Uncertainty interval</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>q02</td>\n      <td>0.01</td>\n      <td>[\u22120.06,0.11]</td>\n    </tr>\n    <tr>\n      <td>\u03bb\u03c4</td>\n      <td>1.0</td>\n      <td>[0.2,1.3]</td>\n    </tr>\n    <tr>\n      <td>D\u03b1</td>\n      <td>0.5\u03bcm2</td>\n      <td>0.2, 27 \u03bcm2</td>\n    </tr>\n    <tr>\n      <td>1D1\u03c4\u03bb+2K\u03bc\u03c4Rrr</td>\n      <td>9\u22c510\u22124\u03bcm\u22122</td>\n      <td>[0.0,3.2]\u22c510\u22123\u03bcm\u22122</td>\n    </tr>\n    <tr>\n      <td>qrr(rin)</td>\n      <td>0.024</td>\n      <td>[0.014,0.105]</td>\n    </tr>\n    <tr>\n      <td>\u2202rqrr(rin)</td>\n      <td>\u22121.2\u22c510\u22123\u03bcm\u22121</td>\n      <td>[\u22129.3,0.0]\u22c510\u22123\u03bcm\u22121</td>\n    </tr>\n  </tbody>\n</table>\n\nWe conclude that our mechanosensitive model can account for the radial pattern of cell morphology in the wing disc. Due to the relatively large number of parameters used to fit a single experimental curve, there are large uncertainties when estimating parameter values. Nonetheless, these uncertainties do not affect the qualitative prediction that a reduction in mechanosensitivity $\\mu$ would lead to less polarization and thereby reduced cell elongation (see Appendix 1 part 4). We next test this prediction of our model experimentally.\n\n### Suppression of mechanosensitivity weakens the gradients in cell elongation and cell size\n\nIn order to test our prediction that the reduction of mechanosensitivity will reduce the magnitude of cell elongation, we used RNAi to reduce the levels of Myosin VI\u00a0(MyoVI), a molecular motor implicated in mechanosignaling. MyoVI, encoded by jaguar (jar)\u00a0in Drosophila, is an upstream component of a Rho-dependent signaling pathway that reorganizes the actin-myosin cytoskeleton in response to mechanical stress (Acharya et al., 2018). Experiments in wing discs also indicate that mechanosensation involves Rho polarization and signaling (Duda et al., 2019). We performed RNAi targeting\u00a0MyoVI in the wing pouch using nub-Gal4 and evaluated cell morphology at the end of larval development ($\u223c120hr$ AEL). We observe a clear reduction in the magnitude of tangential cell elongation as compared to wild type at this stage (Figure 7A\u2013D, Figure 7\u2014figure supplement 1). In addition, our model predicts that such reduction of cell elongation would result in an increase of cell area in the wing (Equations 1-6). The observed pattern of increased cell area upon reducing MyoVI levels with RNAi is consistent with this prediction (Figure 7E\u2013F). Therefore, the qualitative predictions of our model upon reducing the mechanosensitive feedback strength $\\mu$ are confirmed by the experimental downregulation of the mechanosensitive motor MyoVI.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig7-v3.jpg)\n\n**Figure 7.:** MyoVI levels were reduced with RNAi in the pouch (nub-Gal4 > UAS-MyoVIRNAi), and cell elongation and cell area were assessed at the end of larval development ($119hr$ AEL). Data are included in Figure 7\u2014source data 1 and 2. Shown in (A) are representative images, with apical cell boundaries marked by Ecadherin-GFP. Yellow box indicates the inset that is presented in higher resolution in (B). The spatial pattern of radial cell elongation is presented in Figure 7\u2014figure supplement 1. The difference in magnitude of cell elongation (C) or cell area (E) between MyoVIRNAiand the corresponding control is presented. Axis labels indicate the distance to the AP boundary (X) or DV boundary (Y) in $\\mum$. Gray circles indicate radial bins, with numbers corresponding to distance (in $\\mum$) from the center. (D,F) The radial profile in the radial component of cell elongation $Q_{rr}$ (D) or cell area (F) was quantified for each genotype. Plots in (C-F) represent averages of $N=6-7$ wing discs per genotype.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57964/elife-57964-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** MyoVI levels were reduced with RNAi in the pouch (nub-Gal4 > UAS-MyoVIRNAi), and cell elongation was assessed at the end of larval development ($119hr$ after egg laying), along with the corresponding control (nub-Gal44/+). The cell elongation pattern was quantified in a grid centered on the AP and DV boundaries and averaged across several discs for each genotype. The bars represent the cell elongation tensor $Q$, where the length of the bar is proportional to the magnitude and the angle indicates its orientation. In addition, the radial component of cell elongation is presented as a color code, with blue indicating tangential and red indicating radial. The dotted gra lines indicate the positions of the compartment boundaries, and the axes correspond to the distance (in \u00b5m) from these boundaries.\n\n## Discussion\n\nHere, we have shown that patterns of cell shape and stress in the mid-third instar Drosophila wing disc do not rely on PCP pathways or differential growth. Instead, radially-oriented T1 transitions and tangential cell elongation emerge via mechanosensitive feedback in a self-organized process. We have presented a continuum model of tissue dynamics for this self-organization based on a mechanosensitive nematic cell polarity that accounts for the observed patterns of cell area, T1 transitions, and cell shape. Our work highlights a mechanism for the self-organized emergence of cellular patterns in morphogenesis, expanding our understanding of pattern formation emerging from mechanical feedbacks in active systems (Bois et al., 2011; Howard et al., 2011; Recho et al., 2019).\n\n### A pattern of T1 transitions is critical for cell morphology patterning in the Drosophila wing\n\nOur work shows that the spatial pattern of T1 transitions is an integral part of the emergence of tissue organization during wing development. In contrast to situations such as germband extension, where T1 transitions exhibit clearly discernible patterns, the patterns of T1 transitions in the wing disc have been elusive. Many T1 transitions occur in the tissue in seemingly random orientations. However, on average, they exhibit a spatial pattern. We revealed these patterns by quantifying the nematics of T1 transitions and cell shape changes using the previously-described triangle method (Merkel et al., 2017) and then quantified them with radial averaging (Figure 2A\u2013B). In this way, we revealed that a radial pattern of T1 transitions is linked to a tangential pattern of cell elongation.\n\nGiven this radial pattern of T1 cell rearrangements, the observed cell morphology pattern follows from a continuum tissue model based on a radially\u00a0oriented nematic cell polarity field (Figure 3). The polarity-oriented radial T1s create a cell shape pattern with corresponding patterns of tissue stress and tissue area pressure. The 2D area pressure is higher in the center and is lower toward the periphery. Note that this pressure profile does not rely on differential proliferation, as was previously proposed (Mao et al., 2013) but instead relies on a radial pattern of T1 transitions. We test our model using a novel circular laser ablation method. This method allows us to determine specific combinations of tissue parameters. In particular, we estimate the ratio of elastic constants $2K/K\u00af=3.4\\pm0.4$ and $K^{*}/K=0.05\\pm0.02$, as well as the cell shape relaxation timescale $\\tau=2\\pm2hr$.\n\nThis analysis raised the question of which nematic cell polarity cues guide the cell rearrangement and cell elongation patterns. PCP pathways are required for the proper orientation of T1 transitions in other contexts (Bosveld et al., 2012). However, we found that neither of the two known PCP pathways in the wing are required for the observed tangential cell elongation patterns (Figure 5). We instead show that an orientation cue can arise through self-organization via mechanosensitivity and identify MyoVI as a key molecular player.\n\n### Mechanosensitive feedback can create self-organized patterns of cell morphology\n\nCell polarity cues can emerge via mechanosensitive feedback by transforming mechanical cues into chemical anisotropies. Nematic cell polarity can then orient active stresses and thereby amplify the mechanical stimulus (Figure 6). We introduce this mechanosensitive feedback in our continuum theory, which quantitatively describes the emergence of patterns of cell shape and cell rearrangements. The strength of this mechanosensitive feedback is described by a parameter $\\mu$. If $\\mu$ exceeds a critical value $\\mu_{c}$, an orientation cue and elongated cell shapes spontaneously emerge (Figure 6B). This model can account for the observed patterns of cell area and cell elongation in the wing disc and predicts that the reduction of mechanosensitivity will result in reduced cell elongation. To test this prediction, we perturbed a RhoA-dependent mechanotransduction pathway by lowering\u00a0levels\u00a0of an upstream component, MyoVI, using RNAi (Figure 7). We find a clear phenotype of reduced cell elongation and increased cell areas in the center region, as predicted by our model. In the spatially resolved model, which includes the term coupling polarity orientation of neighboring cells (Figure 6C), a polarity pattern can be induced even below $\\mu_{c}$ by imposing polarity at the tissue boundaries. Thus, the residual pattern of cell elongation that we observe after removal of MyoVI in the wing pouch could be due to polarity existing outside of this perturbed region. In addition, the residual pattern could also indicate an incomplete knockdown from RNAi or the presence of other mechanosensitive elements in the tissue. Nevertheless, given the clear phenotype that is fully consistent with our model, we propose that the mechanosensitive feedback mechanism is a significant determinant of the cell shape patterns in the wing pouch.\n\nOur data, together with the fact that MyoVI is involved in Rho-dependent activation of actin-myosin cytoskeleton (Acharya et al., 2018), suggest that MyoVI is a molecular component of the mechanosensitive feedback we describe in our self-organized model. However, the molecular nature of the cue that defines the nematic cell polarity is unknown. This cue may organize the structure or dynamics of the actin-myosin cytoskeleton or the actin-myosin system itself could define nematic cell polarity. Indeed, it has been shown that Myosin II (MyoII)\u00a0localizes to long cell boundaries in the wing (Legoff et al., 2013), corresponding to a nematic polarity aligned with the nematic cell polarity $q$. Also, wing disc stretching experiments have shown that MyoII can polarize in response to exogenous stress in a Rho-dependent manner (Duda et al., 2019). Furthermore, it has been suggested that MyoII polarity arises as a consequence of cell stretching and functions as a negative mechanical feedback (Legoff et al., 2013), consistent with the role of $q$ in our model. Precisely how the actin-myosin cytoskeleton is affected by MyoVI in this system and how these cytoskeletal elements together guide cell rearrangements in response to anisotropic tissue stresses and cell shape changes remain open questions for future research.\n\nLastly, our laser ablation analysis shows that the region around the DV boundary has a different ratio of elastic constants than the rest of the tissue, which could affect the self-organized pattern formation we describe. Therefore, it will be interesting to study how Wingless/Notch signaling, which defines the DV boundary, may influence the mechanical properties that lead to mechanosensitive self-organization of polarity and morphology. In addition, we observe a richer pattern emerging very late in development (see Figure 7\u2014figure supplement 1, Figure 5), including a region anterior to the AP boundary that is radially elongated. Future research will expand upon the model presented here to explore the dynamics of these patterns.\n\nIn summary, we used the Drosophila wing disc to identify a mechanism by which tissue morphology can arise from the self-organization of a mechanical feedback coupling cell polarity to active cell rearrangements. This mechanism is general and could be employed in other tissues and organisms to generate patterns of cell shape and cell area. Thus, we hope our work inspires new avenues of research that integrate theory and experiment to understand biological self-organization.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Drosophila SRF (Mouse monoclonal)</td>\n      <td>Active Motif</td>\n      <td>Cat#:39093; RRID:AB_2793614</td>\n      <td>lot# 03504001; IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (Rabbit polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#:A11122; RRID:AB_221569</td>\n      <td>IF(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Drosophila Patched; Apa 1, conc; (Mouse monoclonal)</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>Cat#:Apa1; RRID:AB_528441</td>\n      <td>IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti Drosophila Wingless; 4D4, conc; (Mouse monoclonal)</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>Cat#:4d4; RRID:AB_528512</td>\n      <td>IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Dachsous, 2828; (Mouse monoclonal)</td>\n      <td>Merkel et al., 2014</td>\n      <td></td>\n      <td>IF(1:50)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Grace\u2019s insect medium</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat#:G9771\u221210 \u00d7 1L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fetal Bovine Serum</td>\n      <td>Thermo-Fisher</td>\n      <td>Cat#:10270098</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>20-Hydroxyecdysone</td>\n      <td>Sigma Aldrich</td>\n      <td>H5142</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Penicillin-Streptomycin</td>\n      <td>Sigma Aldrich</td>\n      <td>P4333</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Ecadherin-GFP; Ecad-GFP</td>\n      <td>Huang et al., 2009</td>\n      <td></td>\n      <td>yw-; EcadGFP;;</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>nub-Gal4</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>Cat#:86108; RRID:BDSC_86108</td>\n      <td>Combined with EcadGFP in this work</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>fat+dachsRNAi</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>Cat#:9396; Cat#:12555</td>\n      <td>Combined with Dcr2 on 1st chromosome and EcadGFP on 2nd in this work</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>pk30</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>Cat#44229; RRID:BDSC_44229</td>\n      <td>Combined with EcadGFP in this work</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>MyoVIRNAi</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>Cat#37534</td>\n      <td>Combined with EcadGFP in this work</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TissueMiner</td>\n      <td>Etournay et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Lead contact and materials availability\n\nThis study did not generate any new unique reagents. All requests for further information and reagents may be directed to the lead author, natalie_anne.dye@tu-dresden.de.\n\n### Experimental model and subject details\n\nAll experiments were performed with Drosophila melanogaster, using lines that are publicly available and previously published. Our Drosophila lines were fed with a standard media containing cornmeal, molasses agar and yeast extract and grown under a $12hr$ light/dark cycle. All experiments were performed at $25^{\u2218}C$. Both males and females were analyzed, and the sex of the animals was not recorded, as we have no reason to believe there is any sexual dimorphism in the studied phenomenon. To synchronize development, we collected eggs deposited within a defined time window on apple juice agar plates. To do so, we transferred the flies from standard food vials to cages covered by apple juice agar plates containing a dollop of yeast paste for food. After at least $2hr$, the plates were replaced, and the timing of collection started. Eggs laid within a $\u223c2hr$ time window were collected by cutting out a piece of the agar and transferring it to a standard food vial. We limited the number of eggs per vial to $<15$ to avoid crowding. The middle of the time window for egg collection was considered to be $0hr$\u00a0AEL. Experiments from timelapse imaging and laser ablation (Figures 1, 2, and 4) were captured after explanting at $96hr$ AEL, whereas those involving RNAi (Figures 5 and 7) were explanted at $110\u2212120hr$ AEL to allow the maximal amount of time for the RNAi phenotype to emerge. The specific genotypes used for each experiment are indicated in the Key Resources Table and in the figures.\n\n### Method details\n\n#### Timelapse image acquisition and processing\n\n##### Sample preparation\n\nWing explants were grown ex vivo as described previously (Dye et al., 2017). Briefly, wing discs were dissected from larvae in growth media (Grace\u2019s cell culture media + 5% fetal bovine serum $+20nM$ 20-hydroxyecdysone + Penicillin-Streptomycin) at room temperature. Then, they were transferred to a Mattek #1 glass bottom petri-dish to the center of a hole cut in a double-sided tape spacer (Tesa 5338) and covered with a porous filter. The dish was then filled with fresh growth media.\n\n##### Acquisition\n\nData from movies 1 to\u00a03 were used previously (Dye et al., 2017). Movie 4 was acquired after publication of the first manuscript, in the same exact way as movies 1 to\u00a03. Briefly, Ecadherin-GFP-expressing wing discs were imaged in growth media using a Zeiss spinning-disc microscope to acquire $0.5\\mum$ spaced Z-stacks at 5\u00a0min intervals with a Zeiss C-Apochromat 63X/1.2NA water immersion objective and $2\\times2$ tiling (10% overlap). This microscope consisted of an AxioObserver inverted stand, motorized xyz stage, stage-top incubator with temperature control set to $25^{\u2218}C$, a Yokogawa CSU-X1 scanhead, a Zeiss AxioCam MRm Monochrome CCD camera (set with $2\\times2$ binning), and 488 laser illumination. We circulated growth media during imaging using a PHD Ultra pump (Harvard Apparatus) at a rate of $0.03ml/min$. Time $0hr$ of the movie was considered to be the start of imaging acquisition, typically $45\u221260min$ from the start of dissection (time required for sample and microscope preparation).\n\nMovie 5 was acquired on a newer microscope with a larger field of view that eliminated the need to tile across the wing pouch. This microscope has an Andor IX 83 inverted stand, motorized xyz stage with a Prior ProScan III NanoScanZ z-focus device, a Yokogawa CSU-W1 with Borealis upgrade, and a Pecon cage incubator for temperature control at $25^{\u2218}C$. We used an Olympus 60x/1.3NA UPlanSApo Silicone-immersion objective with 488 laser illumination and an Andor iXon Ultra 888 Monochrome EMCCD camera. We acquired $0.5\\mum$ spaced Z-stacks of a single tile at $5min$ intervals, as for the other movies. Movie 5 was also acquired without the constant flow of new media.\n\nFor all movies, care was taken to limit light exposure, using laser power values of\u00a0$<0.08mW$ and exposure times less than $350ms$ per image.\n\n##### Processing\n\nRaw Z-stacks were denoised using a frequency bandpass filter and background subtraction tools available in FIJI (Schindelin et al., 2012). Then, we used a custom algorithm as described previously (Dye et al., 2017) to make 2D projections of the apical surface, marked by Ecadherin-GFP. This algorithm also outputs a height-map image, in which the value for each pixel corresponds to the level in the Z-stack of the identified apical surface. For those movies that were tiled, we used the Grid/Collection Stitching FIJI plugin (Preibisch et al., 2009) to stitch the 2D projections, and then used that calculated transformation to stitch the height map images, so that we could correct the cell area and elongation values for local curvature (see below). We focus in this work exclusively on the disc proper layer, which is the proliferating layer of the disc that goes on to produce the adult wing. We did not consider cell shape patterns in the peripodial layer, the non-proliferating layer of the wing disc that is largely destroyed at the onset of pupariation.\n\n#### Single timepoint image acquisition and processing for analysis of RNAi/mutant phenotypes\n\n##### Sample preparation\n\nSamples for single timepoint imaging were acquired exactly as described for live imaging: dissected in growth media and imaged in Mattek dishes under a porous filter.\n\n##### Acquisition\n\nAll imaging of single timepoint data was performed with the same microscope described above for Movie 5. We did not acquire timelapse data for these genetic perturbations, and thus we chose to image the entire disc using $2\\times2$\u00a0tiling, $0.5\\mum$ spaced Z-stacks. Approximately $6\u221210$\u00a0discs were imaged per dish, within approximately\u00a0$30\u221260min$\u00a0.\n\n##### Processing\n\nTiled images were stitched together as Z-stacks; then we obtained the apical surface projection and its corresponding height map as described above and in Dye et al., 2017.\n\n#### Circular laser ablation\n\n##### Acquisition\n\nWing discs from mid-third-instar larvae ($96hr$ AEL) were dissected and mounted exactly as was done for the live imaging timelapses. Due to constraints on the speed of ablation, we only cut regions of the wing disc pouch that were completely flat, so that we could cut in a single plane at the apical surface (rather than having to cut in each plane of a Z stack). Where this flat region lies depends on how the disc happens to fall on the coverslip during mounting. Because the anterior compartment is larger and higher, most of our ablations are in this compartment. To access other regions, we also mounted some wing discs on an agarose shelf: stripes of 1%\u00a0agarose (in water) were dried onto the surface of the coverslip and wing discs were arranged their anterior half propped up on the agarose shelf prior to adding the porous filter cover.\n\nAblations were performed using ultraviolet laser microdissection as described in Grill et al., 2001 using a Zeiss 63X water objective. First, we took a full Z-stack of the sample prior to the cut. Then, we selected a $7\\mum$ radius circle that would ablate in the flattest region of the tissue. No imaging is possible during ablation, but we acquired a $2min$ timelapse immediately after the cut in a single Z-plane. This timelapse data was not used except to estimate whether or not the sample was fully cut. After, once the sample has finished expanding but not started to heal ($\u223c2min$), we took another full Z-stack to image the endpoint. We excluded a small number of data points if any of the following were true: (1) the inner piece remaining after the ablation was no longer visible (sometimes it floats or is destroyed); (2) the cut appeared to expand highly asymmetrically (rare); (3) the wing discs were clearly too young to be considered $96hr$ AEL (poor staging).\n\n##### Immunofluorescence after ablation\n\nDue to a limited field of view on the microscope used for ablation, we performed immunofluorescence after the ablation in order to better estimate the position of the cut in the wing pouch. After all the discs in the dish were ablated ($<10$ discs/dish), the entire dish was fixed through the filter by adding 4% PFA and incubating $20min$ at room temperature. After, the dish was rinsed and kept in PBST (PBS + 0.5% Triton X-100) until all discs from that image acquisition day were completed ($2\u22124hr$). All samples were then blocked using 1% BSA in PBST\u00a0+\u00a0$250mM$ NaCl for $45min\u22121hr$, and then incubated in primary antibody overnight (diluted in BBX: 1% BSA in PBST). Initially, we labeled samples with SRF (Active Motif, 1:100 dilution), but later we switched to Patched and Wingless (DSHB, 1:100) to identify the compartment boundaries. Primary antibody toward GFP (recognizing the Ecadherin-GFP) was also included at 1:1000. After overnight incubation at $4^{\u2218}C$, we washed with BBX, followed by BBX+ 4% normal goat serum (NGS), for at least $1hr$. Secondary antibodies were added for\u00a0$2hr$ at RT in BBX+NGS. Finally, samples were washed $4x10min$ in PBST and imaged in this media. Imaging was performed on one of the two spinning disc microscopes described above for live imaging. We matched the stained samples with the ablation images by (1) keeping track of the position of each disc on the dish and where it was ablated during acquisition and (2) morphology of the disc before/after ablation. All antibody information are listed in the Key Resources Table.\n\n#### Validation of Fat/D PCP RNAi\n\n##### Sample preparation\n\nTo immunostain larval wing discs, late third instar larvae were partially dissected in $1\\times$ PBS, inverting the heads to expose the wing discs, and then fixed in 4% PFA for $20min$. Samples were then washed twice for $15min$ each with PBX2 ($1\\times$ PBS + 0.05% Triton X-100), and blocked in BBX250 (PBX2 + $1mg/ml$ BSA + $5mM$ NaCl) for $45min$. Incubation in primary antibody diluted 1:50 in BBX (PBX2 + $1mg/ml$\u00a0BSA) was performed overnight at $4^{\u2218}C$. We used a mouse monoclonal antibody against Dachsous (Merkel et al., 2014). After, the sample was washed twice with BBX, $20min$ for each wash, followed by one $45min$ wash with BBX\u00a0+\u00a0$4^{\u2218}C$ normal goat serum (NGS). Incubation with secondary antibody was performed either for $2\u22123hr$ at room temperature or overnight at $4^{\u2218}C$. We used a goat anti-mouse Alexa-Fluor 647 as the secondary antibody (ThermoFisher,Cat No. A28181) at 1:500 dilution in (BBX+4% NGS). The secondary antibody was removed by washing twice with PBX2, followed by washing twice with $1\\times$ PBS. The tissues were stored in PBS and dissected from the body wall just before mounting. Wing discs were mounted on a slide within a thin channel created by two strips of double-sided tape (Tesa\u00a05338). Wings were transferred to the middle of the channel with a p200 pipette, the excess PBS was removed, and the tissues were arranged with apical sides up. Next, the sample was covered with a $22\\times22mm$ #1 coverslip, adhering the coverslip to the double-sided tape. Vectashield mounting medium (Vector laboratories) was added to one side of the coverslip and allowed to seep in by capillary action. Excess Vectashield was removed, and the sides of the coverslip were sealed using transparent nail polish. The slides were then stored at $4^{\u2218}C$ until imaging.\n\nTo image the adult wing morphology, male flies of the desired genotype were collected and stored in isopropanol. Wings were dissected and collected in isopropanol. To mount, wings were transferred to a glass slide using a p200 pipet. In a centrifuge tube, $500\\mul$ of isopropanol was mixed with $500\\mul$ of Euperal, and about $50\\mul$ of this mix was added to the slide containing the wings. The wings were then aligned on the slide, adding more isopropanol/Euperal mix when necessary to avoid drying. Once the wings were all aligned, more isopropanol-Euperal mix was added and allowed to partially dry. Once the mix was almost dry, a clean $22\\times22$ coverslip containing about $20\u221250\\mul$ of Euperal was inverted on top of the wings. The slides was allowed to cure for $24hr$ before imaging.\n\n##### Acquisition\n\nImmunostained samples were imaged on an Olympus IX81 microscope equipped with a spinning disk module (Yokogawa) and back illuminated EMCCD (Andor Technology, iXon Ultra 888) with an exposure time of $100ms$ and EM gain of 250. A confocal z-stack of immunostained samples was acquired using a $60\\times$ silicon immersion objective with\u00a0$0.47\\mum$ z-spacing.\n\nAdult wings were imaged on an inverted wide field microscope (Zeiss) using a $5\\times$ objective. The images were analyzed using a custom code written in MATLAB (Mathworks, USA) to measure wing area.\n\n### Quantification and statistical analysis\n\n#### Cell segmentation, tracking, and alignment\n\n##### Segmentation and tracking\n\nUsing the 2D projections, we performed cell segmentation and tracking using the FIJI plugin, TissueAnalyzer (Aigouy et al., 2016). We manually corrected errors in the automated segmentation and tracking as much as possible and then generated a relational database using TissueMiner (Etournay et al., 2016). Images were rotated to a common orientation (Anterior left, dorsal up). We then manually identified three regions of interest at the last point in the timelapse, using the FIJI macros included with TissueMiner: the \u2018blade\u2019 was defined roughly as an elliptical region surrounded by the most distal folds; and the Anterior-Posterior and Dorsal-Ventral boundaries were estimated using the brightness of Ecadherin-GFP and apical cell size (Jaiswal et al., 2006).\n\nFor the timelapse data, we used only the cells within these manually defined regions that were trackable during the entire course of the movies. An example of this region is presented for Movie 1 in Figure 1A. Furthermore, we also excluded from all of our analysis the first $2hr$ of imaging, the so-called adaption phase, where cells uniformly shrink in response to culture (Dye et al., 2017).\n\nFor the RNAi data (Figures 5 and 7), we did not acquire timelapses, rather a single timepoint at late stages of development. We nevertheless chose to analyze these data using the same TissueMiner workflow for simplification. Because TissueMiner was developed for timelapse data, however, it requires at least two timepoints. Thus, we duplicated the data and labeled the two images as if they were timepoints 0 and 1 of a timelapse. We then only analyzed timepoint 0. The regions of interest in these data, therefore, are manually defined and not simply the region that is trackable (since it is static data).\n\n##### Alignment on compartment boundaries\n\nTo average across all movies of timelapse data, or all discs of the same genotype of the static RNAi data, we generated a disc-coordinate system by normalizing the position of each cell to the AP and DV boundaries for that disc. To do so, we averaged the absolute xy positions of all the cells in the AP or DV boundaries over all time after the adaption phase. We then calculated the distance of each cell to the new X axis (average position of the AP boundary) and Y axis (average position of the DV boundary).\n\n#### Analysis of cell size and shape\n\n##### Definition of the cell elongation tensor\n\nThe cell elongation tensor $Q$ is a traceless symmetric tensor that quantifies the anisotropy of cell shapes in a region of the tissue. We define cell elongation using a triangulation of the tissue obtained by connecting centroids of connected cells (Etournay et al., 2015; Merkel et al., 2017). The state of each triangle is described by a tensor $s$, defined by a mapping an equilateral reference triangle to the triangles in the tissue. The state tensor contains information about the triangle elongation tensor $q~^{t}$, orientation angle $\\theta$, and area $a$:\n\n$$\ns=\\frac{a^{t}}{a^{t}_{0}}^{1/2}expq~^{t}R\\theta.\n$$\n\nHere, $a_{0}^{t}$ is the area of the reference triangle, and $R$ is a\u00a02-dimensional rotation matrix. Cell elongation in the tissue region is defined as an area weighted average of triangle elongation. For details about the method see Merkel et al., 2017.\n\n##### Adjustment of cell area and elongation to account for tissue curvature\n\nThe wing disc pouch has a slightly domed shape (Figure 1\u2014figure supplement 1A). After projection onto a 2D surface, the cell shapes and areas will be distorted. To ensure that the radial profiles we measure in a 2D projection (Figure 1B,C,E and F and Figure 3F,G) are not a result of tissue curvature, we account for the distortion caused by projection. We use the height maps generated by our projection algorithm, which identifies the apical surface of the pouch within the 3D Z-stacks. We smooth this height map with a gaussian filter of width $\\sigma=2\\mum$ to find the height field $h(x,y)$, and then we calculate the height gradient field. We then smooth the result again with the same gaussian filter to find $\\nabla\u2192h=(\\partial_{x}h,\\partial_{y}h)$. The deprojected cell or triangle area $a_{0}$ is obtained from the measured area $a$ as $a_{0}=a\\sqrt{1+|\\nabla\u2192h|}$, where $\\nabla\u2192h$ is evaluated at the cell center. To find the deprojected cell elongation of a triangle we evaluate $\\nabla\u2192h$ at the triangle center. Then, we find the angle of steepest ascent $\\alpha=arctan(\\partial_{y}h/\\partial_{x}h)$ in the projected plane and define the tilt transformation:\n\n$$\nN=\\frac{\\sqrt{1+\\nabla\u2192h}+1}{2}+\\frac{\\sqrt{1+\\nabla\u2192h}-1}{2}cos2\\alpha\\frac{\\sqrt{1+\\nabla\u2192h}-1}{2}sin2\\alpha\\frac{\\sqrt{1+\\nabla\u2192h}-1}{2}sin2\\alpha\\frac{\\sqrt{1+\\nabla\u2192h}+1}{2}-\\frac{\\sqrt{1+\\nabla\u2192h}-1}{2}cos2\\alpha\n$$\n\nWe apply this transformation to the triangle shape tensor $s$, as defined in Merkel et al., 2017, to determine the deprojected triangle shape tensor $s_{0}$:\n\n$$\ns_{0}=Ns\n$$\n\nThe cell elongation tensor $Q$ is obtained from the triangle shape tensor $s_{0}$ as the corresponding area weighted average using the deprojected cell area, as described in Merkel et al., 2017.\n\n##### Spatial maps of cell size and shape\n\nTo generate the color-coded smoothed plots of area and elongation (Figure 1B\u2013C), we divided the aligned wings into a grid with boxsize\u00a0$=10$\u00a0pixels ($\u223c2\\mum$). For each position, we averaged cell area or performed an area-weighted averaged of triangle elongation in a neighborhood box = 20 pixels ($\u223c4\\mum$). To create the nematic elongation pattern, we similarly averaged elongation of triangles whose centers lie within each grid box, with grid box size\u00a0$=30$ pixels ($\u223c6\\mum$). Tables containing the corrected cell area and triangle elongation values for each movie at each timepoint have be uploaded to Dryad: doi:10.5061/dryad.jsxksn06b.\n\n##### Calculation of radial elongation center point\n\nWe define the center of the wing pouch to be on the DV boundary. To determine the location of the center along the DV boundary $x_{c}$ we divide the pouch into four regions defined by the DV boundary and a line perpendicular to it located at some position $x$, as shown in Figure 1\u2014figure supplement 1E. Then, we define a function:\n\n$$\nF(x)=A_{I}\u27e8Q_{xy}\u27e9_{a}^{I}-A_{II}\u27e8Q_{xy}\u27e9_{a}^{II}+A_{III}\u27e8Q_{xy}\u27e9_{a}^{III}-A_{IV}\u27e8Q_{xy}\u27e9_{a}^{IV}\n$$\n\nfor all values of $x$ along the DV boundary. Here, $A^{I-IV}$ are the areas of the four regions and $\u27e8Q_{xy}\u27e9_{a}^{I-IV}$ are the area weighted averages of the cell elongation component $Q_{xy}$ calculated in the four regions. Finally, $x_{c}$ is the value that minimizes $F(x)$ (Figure 1\u2014figure supplement 1F). We find that the center point lies just anterior to the intersection with the anterior-posterior (AP) boundary (Figure 1, Figure 1\u2014figure supplement 1, consistent with Legoff et al., 2013).\n\nIn time-lapse experiments, cell centers were determined using the last 20 timepoints. In single timepoint image experiments (Figures 5 and 7), all images of a single genotype were used together after alignment on the DV and AP boundaries.\n\n##### Exclusion of the band of cells near the DV boundary\n\nIn contrast to the other regions (blade, AP and DV boundaries), the definition of the band around the DV boundary (Figure 1\u2014figure supplement 2) and the region of the blade that excludes this region (Figure 1D) were not defined manually using the FIJI scripts of TissueMiner. Rather, we defined them after the TissueMiner databases were generated, using the position of cells relative to the DV boundary in the last frame. Using the plots of the radial elongation on each disc, we estimated the width of the stripe region and then filtered for cells included in and excluded from this region. Once these cells in the last frame were identified, we used the UserRoiTracking.R of TissueMiner to backtrack these two regions, producing a list of all cells belonging to this lineage that are traceable forward and backward in the movie.\n\nFor the static RNAi data, we used the average width of the band around the DV boundary from timelapse data as an estimate and excluded this region from the static images to analyze the radial gradients in cell area and elongation (Figures 5 and 7).\n\n##### Plotting area and elongation versus distance to the center of elongation\n\nFor the timelapse data, we defined the radial elongation center (described above) for each movie and then calculated the distance away from this center for each cell. After excluding the band of cells around the DV boundary, we binned cells by radius by rounding to the nearest $10\\mum$. We also binned the movie across five equal time windows ($\u223c2hr$), excluding the adaption phase. Average cell area and area-weighted average of cell elongation were calculated for each of these bins in each time group for each movie. Including data from all five movies, we report the global average and its standard deviation (Figure 1E\u2013F). For Figure 3, we averaged over the last $\u223c5hr$. For the band of cells around the DV boundary (Figure 1\u2014figure supplement 2), we binned cells in $x$, rather than in radius, and report the gradient along the $x$ axis, defined as the DV boundary.\n\nThe static RNAi data were analyzed similarly. We report the global average of all discs in the genotype and the standard deviation (Figures 5D,I and 7D). The number of discs analyzed in each genotype is listed in the figure legend.\n\n#### Regional analysis of isotropic tissue deformation\n\n##### Spatial maps of cellular contributions to isotropic tissue deformation\n\nTo analyze the pattern of isotropic deformation, we locally averaged cell behavior by dividing the tissue into a grid centered upon the crossing of the AP and DV boundaries. First, we determined the average position of cells in the AP and DV boundaries to generate a common frame of reference across all movies. Second, we divided the tissue visible in the last frame into a grid centered on these compartment boundary positions, with grid size = $8\\mum$. Grid boxes that were incompletely filled (less than 33% of the area of the box filled by cells) were discarded to eliminate noise along the tissue border. Third, each grid box was considered an 'ROI' and then tracked through the entire movie using TissueMiner\u2019s ROI tracking code. Fourth, the rate of deformation by each type of cellular contribution was calculated as a moving average (kernel $=11$) for each grid position for each timestep. Last, we averaged these rates over all time points post-adaption period and plotted in space (Figure 1H,I,K,L).\n\n##### Plotting the radial profile\n\nTo show tissue deformation as a function of distance to the center, we first calculated the distance to the center of symmetry for each cell. Second, we divided the tissue visible in the last frame into radial bins, rather than a grid, by rounding the radial position of each cell to its nearest $10\\mum$. Third, as we did for the grid, we defined each radial bin to be an 'ROI' and then tracked the region forward and backward using TissueMiner\u2019s ROI tracking code. Fourth, the rate of deformation by each type of cellular contribution was calculated as a moving average (kernel $=11$) for each radial bin ROI at each timestep. Last, we averaged these rates over all time points post-adaption period and plotted this rate as a function of distance to the center. Note that we also show the spatial profiles of tissue growth in the band around the DV boundary in Figure 1\u2014figure supplement 1, but here we binned along $x$, not $r$.\n\n#### Regional analysis of anisotropic tissue deformation\n\n##### Spatial maps of cellular contributions to anisotropic tissue deformation\n\nWe previously published patterns of cellular contributions to anisotropic tissue shear from movies 1\u00a0to\u00a03 (Dye et al., 2017); however here, we calculated these patterns in a more accurate way and report averages over multiple movies (Figure 2A). Previously, we assigned a grid at each timepoint as in Etournay et al., 2015; Etournay et al., 2016. While this method provides a simple first approximation of the pattern, it is not completely accurate because we are not tracking the box in time but reassigning it at each timepoint; thus, cell movement in/out of the box is not counted. Here, we perform grid box tracking, as described above for the calculation of cellular contributions to isotropic tissue deformation but with grid box size $=15\\mum$. Further, we present a global average of not just movies 1 to 3, but also the two new movies. We calculated for each movie the rate of tissue deformation by each cellular contribution as a moving average (kernel $=11$) in time. Then, we averaged across all five movies at each timepoint and presented the pattern as a cumulative sum, starting from the end of the adaption phase (first $2hr$) and continuing through the end of the timelapse. All correlation terms were added together (see Merkel et al., 2017). The contribution to tissue shear from cell extrusion is very small and thus not shown.\n\n##### Accumulating cellular contributions to radial tissue shear\n\nWe calculated a moving average (kernel size $=11$) total value for each cellular contribution to radial tissue shear, averaged across the blade (excluding the band around the DV boundary). Then, we accumulated the contributions after the adaption phase (first $2hr$) and plotted over time (Figure 2B). In addition to the previously described types of correlations (Merkel et al., 2017), the radial decomposition also involves a correlation between cell area and shear (see Appendix 3). We added all correlation terms together in Figure 2B.\n\n#### Quantification of circular laser ablation\n\n##### Measurement of stress, cell elongation, and cell area\n\nFor the ablation data, we first projected the Z-stack images of the wing discs before and after ablation using our custom surface projection (Dye et al., 2017).\n\nTo quantify cell elongation and area, we used the images taken before the cut. Cells were segmented using the FIJI plugin TissueAnalyzer and then processed with TissueMiner to rotate the disc to a common orientation (anterior to the left; dorsal up) and to create a triangle network and a database structure. The area-weighted average of triangle elongation and the average cell area was calculated for those cells included in the center of a circle of a radius $r=1.3\\timesr_{cut}$ ($4.55\\mum$) centered at the center of the cut. Varying the size of this region only slightly affects the result: $<1.0\\timesr_{cut}$, the distribution becomes more noisy because we are averaging a smaller region with less cells, but regions that are too big ($\u223c1.8\\timesr_{cut}$) may begin to include cells that span different regions of the wing (i.e. the band around the DV boundary). In Figure 4C and Figure 4\u2014figure supplement 1B,E, we plot cell elongation projected onto the stress axis.\n\nTo measure the shape of the tissue after ablation, we fit ellipses to the inner and outer piece left by the cut using the projected after-cut images. These images were first rotated using the transformation performed on the before-cut images to orient the tissue. We used Ilastik (v. 1.2.2) (Berg et al., 2019) to segment the cut region: we trained the classifier using all the data from a single day\u2019s acquisition, delineating three regions: cells, membranes, and dark regions. Using the trained classifier, we then generated a thresholded binary image of the cut tissue\u2019s shape and cropped the image around the cut. We then fit inner and outer ellipses to these images.\n\n##### Grouping ablations into regions of the wing pouch\n\nTo quantify the position of the cut in the wing pouch, the immunofluorescence post-cut images were projected using maximum intensity. In FIJI, we manually measured (in $\\mum$) the distance from the center of the cut to the DV boundary and AP boundary. We noted that fixation causes the tissue to shrink. We estimated the extent of shrinkage using a subset of the samples in which the compartment boundaries were visible in the Z-stack taken of the live sample before the cut. We used FIJI to measure distances from the center of the cut to the compartment boundaries in both the pre-fix live images and in the post-fix immunofluorescence images for this subset. We measure a discrepancy indicating that the tissue shrinks by \u223c15%. Thus, we compensate for this shrinkage when measuring distances to the compartment boundaries in our analysis. We also noted the compartment (dorsal/ventral/anterior/posterior) in post-fix images and added a sign to the distances to the boundaries (ventral and posterior getting negative 'distances') to create the spatial map shown in Figure 4B.\n\nTo classify the cuts by position, we first estimated the width of the band around the DV boundary from the timelapse data to be $\u223c22\\mum$ (centered on the DV boundary). We then classified a cut as in the DV boundary if its cut boundary extended no more than $1.4\\mum$ (20% of the $7\\mum$\u00a0radius) outside this $22\\mum$ horizontal stripe region. Likewise, cuts were classified as outside this region if it did not extend more than $1.4\\mum$ into the $22\\mum$ horizontal stripe. We excluded all cuts that appear to straddle the border between these regions (gray in Figure 4B). We also excluded those cuts with centers lying within $7\\mum$\u00a0of the AP boundary, in case material properties at this boundary region are also different.\n\n##### ESCA: determination of stress from response to circular ablation\n\nTo obtain the normalized shear stress $\\sigma~/(2K)$, normalized isotropic stress $\\sigma/K\u00af$ and the ratio of elastic constant $2K/K\u00af$, we fit ellipses to the inner and outer tissue outlines simultaneously. These three parameters determine the large and small semi-axes of the two ellipses. Other fitting parameters are the center positions of the two ellipses and the angles of major axes. Stress is calculated by considering how the ellipses were generated by a circular laser ablation, as described in detail in the Appendix 2. When calculating the deformation from initial to final positions, we considered that the cells that were directly hit by the laser would die and thus not contribute to the evolution of the tissue after the cut. To account for this loss of cells, we first calculated average cell area for those cells that would be hit by the laser. Then, we adjusted the radius of the initial position by this amount.\n\nFits were performed on all of the laser ablations in the same region (either within or outside of the band around the DV boundary) for a range of fixed values of the ratio $2K/K\u00af$. The optimal value was considered to be the one that minimizes the sum of fit residuals (Figure 4\u2014figure supplement 1C,F). We defined a threshold of fit residual, as shown in Figure 4\u2014figure supplement 1A, to eliminate cuts with non-elliptical outlines. The uncertainty of $2K/K\u00af$ was estimated by bootstraping a subset of 7 cuts in each region 100 times; we report the standard deviation of the results.\n",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "6ea35cde-de16-4cdd-829c-41258029bfc4",
+      "submission_id": "c3cbece2-6cde-4802-8452-6fdb364f319b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jaume Casademunt, University of Barcelona Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57964.sa1](https://doi.org/10.7554/eLife.57964.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper investigates the mechanisms governing the emergence of cell shape and size patterns in the Drosophila wing imaginal disc during larval development. They take advantage of their recently developed ex-vivo wing disc culture protocol and powerful image analysis tools, to obtain dynamic insight into a system that has traditionally been inaccessible to live imaging. Combining high-quality data, elaborate physical modeling and appropriate genetic perturbations, they challenge the current view that the patterns arise due to early differences in growth rate. In their alternative scenario, they propose that the mechanism driving cell morphology patterning is self-organized and originates in a mechano-sensitive feedback.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Self-organized patterning of cell morphology via mechanosensitive feedback\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Pierre Recho (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nIn this study, Dye et al. investigate the mechanisms leading to the proximal-distal cell shape and size pattern in the wing disc pouch, in which the cells at the periphery of are bigger and more elongated than the cells at the center. They take advantage of their recently developed ex-vivo wing disc culture protocol (Dye et al., 2017) and powerful image analysis tools (Etournay et al., 2015, Merkel et al., 2017), to obtain dynamic insight into a system that has traditionally been inaccessible to live imaging. Using a combination of descriptive data, mathematical modeling and genetic perturbations, they challenge the current view that the pattern arises due to early differences in growth rate (Mao et al., 2013, LeGoff et al., 2013). In their alternative scenario, they propose that the mechanism driving the cell morphology patterning is self-organized and originates in a mechano-sensitive feedback. They base the theoretical framework on an elaborate phenomenological continuum model, which guides the different tests performed.\n\nEssential revisions:\n\nThe quality of the descriptive data reported is remarkable and the phenomenological model is well grounded, appealing and to some extent predictive. The genetic tests performed provide significant evidence in support of the model but have some limitations. The emerging biophysical picture is novel, compelling and worthy of attention, as it implies a significant conceptual shift. Whenever fully validated, the mechanism here proposed will certainly bring fundamental biological insights into our understanding of cell morphology patterning. It has been a matter of debate among the reviewers, however, to what extent the direct experimental validation of some of the essential points of the study has been achieved, in order for the manuscript to be suitable for publication. The inherent limitations of phenomenological nature of the theoretical framework has also been raised as possibly reducing the breath of appeal, in the absence of a more direct and complete validation. From the reviewers' discussion, the following points have been raised which should be addressed in the revision to strengthen the manuscript.\n\n1. On the polarity cue. The emergence of a polarity cue is pivotal in the proposed scenario, where it results from an instability induced by a mechano-sensitive feedback. This is a phenomenological hypothesis, which allows to explain the observations, and is to some extent predictive. However, the actual biochemical nature is not really identified, and it is not clear whether other scenarios could exhibit similar behavior. When the authors introduce cell polarity q, it would help to specify what physical quantity they have in mind, presumably associated to cytoskeletal orientation. In any case, it would be interesting that the authors suggest possible direct experimental measurements of such quantity, not relying on the model, for future validation.\n\n2. On the role of mechano-sensitive coupling. A strong prediction of the model is that, for a finite value of mechano-sensitivity, the patterning should be abruptly suppressed, not just decreased. It would thus be very convincing to see that the patterning completely disappears by tuning the mechano-sensitive feedback beyond a critical (finite) value. Could the authors comment on why they think they cannot reach the complete disappearance of the patterning? Is it just an experimental limitation? Can other coexisting sources of polarization be taking over when the self-organized polarization is suppressed?\n\n3. On the tissue constitutive equation. The authors mention in the introduction the fluidization mechanism described in Ranft et al., 2010, as a way to relax stresses in growing tissues. Could the authors explain why this mechanism is not present or is not relevant in the problem at hand? In connection with this point, the constitutive equation for the tissue is taken as purely elastic, while in general a growing tissue would generically be viscoelastic. Could the authors explain better the rationale for their choice?\n\n4. On the Myosin VI regulation of the RhoA-ROCK-Myosin II pathway.\n\nLeGoff et al. (2013) use the ROCK inhibitor Y27632 in the wing disc to deplete Myosin II from cell-cell junctions. Surprisingly, they show it does not affect the cell size or shape patterns in the wing pouch. We suggest the authors to comment on that, given they are proposing a mechanosensation mechanism based on ROCK-Myosin II regulation through Myosin VI.\n\n5. PCP and polarization. Part of the authors' argument for the existence of a self-organised polarization process is that classical PCP is not involved. Their evidence is based on a negative result with perturbation of PCP by RNAi. RNAi is known to achieve incomplete gene activation and with a delay. Their approach should therefore be validated (e.g. by staining preparation with anti-Fmi). Alternatively, they could analyze previously validated mutant ds05142 or ft4/ftG-rv.\n\n6. Myosin VI and mechanosensation. An important conclusion of this paper is that mechanosensation by Myosin VI is essential for polarization. Here the authors assume that Myosin IV is a mechano-sensor by extrapolating data from CaCo cells. There is no evidence that this is also true in their system. Of course, direct evidence (e.g. with a stretching device) that Myosin IV is part of the inferred mechanosensing machinery would be great, although we understand that this may take some effort. However, the authors could relatively easily verify that Myosin IV knockdown does affect Myosin II polarization, as predicted.\n",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fa9c2769-5da0-4f16-a686-d6dc803aeb3d",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C1",
+      "claim": "The Drosophila wing imaginal disc pouch region is planar and ellipsoidal to a good approximation.",
+      "claim_type": "EXPLICIT",
+      "source": "To a good approximation, this region is planar and ellipsoidal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about the geometry of the wing disc pouch region based on the authors' observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "b996adbf-e5df-49ec-ad98-39caaba6eef2",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C2",
+      "claim": "Cells near the center of the wing disc pouch have smaller cell areas and are more isotropic in shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells near the center have smaller cell areas and are more isotropic in shape, whereas cells near the periphery have larger cell areas and are elongated tangentially (Aegerter-Wilmsen et al., 2010; Legoff et al., 2013; Mao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both the current study's data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "bfe7d03d-7d1b-4756-a0b6-0600a9ae905d",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C3",
+      "claim": "Cells near the periphery of the wing disc pouch have larger cell areas and are elongated tangentially.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells near the center have smaller cell areas and are more isotropic in shape, whereas cells near the periphery have larger cell areas and are elongated tangentially (Aegerter-Wilmsen et al., 2010; Legoff et al., 2013; Mao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both the current study's data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "e4494ac5-b9a1-447b-abae-d0562d88bc5c",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C4",
+      "claim": "Tangentially oriented bonds of elongated cells in the periphery are under higher tension than radially oriented bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell shape has been correlated with mechanical stress: tangentially oriented bonds of elongated cells in the periphery are under higher tension than radially oriented bonds (Legoff et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "fb8d0756-5125-4601-98db-0609117510a7",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C5",
+      "claim": "Differential proliferation could generate patterns of cell morphology in the wing pouch if the center grows faster than the rest.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously proposed that this pattern of cell morphology in the wing pouch could stem from differential proliferation: if the center grows faster than the rest, the resulting area pressure could stretch peripheral cells tangentially (Mao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously proposed hypothesis cited from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "78fb5e6e-2c22-4469-b6b0-0dba83104ca4",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C7",
+      "claim": "Cell rearrangements occur in the wing disc during development.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has since been shown that cell rearrangements occur (Dye et al., 2017; Heller et al., 2016), which could relax stress patterns once growth has become uniform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "d1f0faaf-c5e6-43ad-b49c-29a581d6b4dd",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C8",
+      "claim": "Cell rearrangements could relax stress patterns once growth has become uniform.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has since been shown that cell rearrangements occur (Dye et al., 2017; Heller et al., 2016), which could relax stress patterns once growth has become uniform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the known behavior of cell rearrangements.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "afac69d5-8800-481b-9c81-3a2dcf60271c",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C9",
+      "claim": "Stress patterns may relax during homogeneous growth in the absence of cell rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, stress patterns may even relax during homogeneous growth in the absence of cell rearrangements (Ranft et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "e7d3502a-b70e-49a6-ae3d-12ac758a5a0f",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C10",
+      "claim": "The pattern of tangential cell elongation becomes stronger over time during mid-third larval instar.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantify the pattern of tangential cell elongation and show that it becomes stronger over time, even though growth is spatially uniform and cell rearrangements are frequent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "b10c7fab-b0f9-483a-af1d-61905043a375",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C11",
+      "claim": "Growth is spatially uniform during mid-third larval instar.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantify the pattern of tangential cell elongation and show that it becomes stronger over time, even though growth is spatially uniform and cell rearrangements are frequent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "e0c8cf89-5e8d-446e-b801-001ca2bc69c8",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C12",
+      "claim": "Cell rearrangements are frequent during mid-third larval instar.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantify the pattern of tangential cell elongation and show that it becomes stronger over time, even though growth is spatially uniform and cell rearrangements are frequent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "359ba5ed-d57a-4bc1-826d-67e170c64923",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C13",
+      "claim": "The change in tangential cell elongation is coupled to a radially biased pattern of cell neighbor exchanges.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, this change in tangential cell elongation is coupled to a radially biased pattern of cell neighbor exchanges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "7dc55560-6d57-40af-b537-7f14b11f084e",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C14",
+      "claim": "Active patterning of radial cell neighbor exchanges can account for the observed morphology patterns in the absence of differential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a physical model of tissue dynamics, we show that active patterning of radial cell neighbor exchanges can account for the observed morphology patterns in the absence of differential growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "bda39785-cb25-4c16-8f43-8e4c2403857b",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C17",
+      "claim": "Negative values of Qrr correspond to tangential elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative value corresponds to tangential elongation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definition of the measurement convention used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "9505b3c6-bcdf-40b5-a442-d87f30f578fa",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C18",
+      "claim": "The radial gradients in cell area and elongation grow slightly more pronounced over time during the timelapse.",
+      "claim_type": "EXPLICIT",
+      "source": "When evaluated over the timelapse, we find that these radial gradients grow slightly more pronounced over time (Figure 1\u2014figure supplement 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 3C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "2390a8e7-fd3b-4b40-b666-c99d4f30095e",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C19",
+      "claim": "Tissue area growth is to a good approximation independent of the distance to the center.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that tissue area growth, as well as cell division rate, are to a good approximation independent of the distance to the center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "4ed677c1-2be0-4f80-8e17-6e77cc6a555d",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C20",
+      "claim": "Cell division rate is to a good approximation independent of the distance to the center.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that tissue area growth, as well as cell division rate, are to a good approximation independent of the distance to the center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "fccb0b74-06e0-49ff-9fb4-f78c91acd52b",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C21",
+      "claim": "The radial component of tissue shear is small.",
+      "claim_type": "EXPLICIT",
+      "source": "The radial component of tissue shear is small, and cell divisions do not contribute to radial tissue shear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "4a4592e8-f68e-4c74-b080-8fad64852991",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C22",
+      "claim": "Cell divisions do not contribute to radial tissue shear.",
+      "claim_type": "EXPLICIT",
+      "source": "The radial component of tissue shear is small, and cell divisions do not contribute to radial tissue shear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "45ed7d4d-a93f-43e9-b2d1-e312e43eadb7",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C23",
+      "claim": "There is a pronounced buildup of a tangential pattern of cell elongation accompanied by a radial pattern of T1 transitions and of correlation effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observe a pronounced buildup of a tangential pattern of cell elongation accompanied by a radial pattern of T1 transitions and of correlation effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "c2e21417-0961-4bcf-92ee-4401e1519d4d",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C33",
+      "claim": "Pressure increases toward the center of the wing disc.",
+      "claim_type": "EXPLICIT",
+      "source": "From our data, we can also infer the radial profile of tissue area pressure, revealing that pressure increases toward the center (Figure 4D and Appendix 1 part 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from laser ablation data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "b2bd6b26-fb66-4e39-aaf1-39ecf699c284",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C34",
+      "claim": "The pattern of tangential cell elongation persists after RNAi knockdown of both fat and dachs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the pattern of tangential cell elongation persists to the end of larval development (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "35cfea3d-ff63-4aa7-aa6a-f46597944933",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C35",
+      "claim": "The radial profiles of cell elongation in ft+d RNAi and control wings are similar when using scaled coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "Using scaled coordinates, we find that the radial profiles of cell elongation in ft+d RNAi and control wings are similar (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "c744f1f8-82bb-4bf2-833f-c4d2311cc752",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C36",
+      "claim": "The cell elongation pattern in the pk mutant is similar to the wild-type control.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cell elongation pattern in the pk mutant is similar to the wild-type control (Figure 5E\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "03dda89f-2d1f-4a9f-b9bc-b1508a0d6b8a",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C37",
+      "claim": "In the pk mutant, the region of tangential cell elongation extends even further into the center than in control wings.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pk mutant, the region of tangential cell elongation extends even further into the center than in control wings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "965fe174-a37e-4c1d-a874-dd738b48cb31",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C38",
+      "claim": "The tangential cell elongation pattern persists in the absence of either PCP pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the tangential cell elongation pattern persists in the absence of either PCP pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on PCP pathway perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "91ce9363-175b-4d95-a2ef-cb8a04a55170",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C41",
+      "claim": "The anisotropic cue can be locally generated by mechanosensitive self-organization and does not require the existence of pre-patterned polarity cues.",
+      "claim_type": "EXPLICIT",
+      "source": "By this mechanism, the anisotropic cue introduced earlier in our model can be locally generated by mechanosensitive self-organization and does not require the existence of pre-patterned polarity cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "a2356fa4-12cb-4321-a14d-98c1ef671e1f",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C42",
+      "claim": "A clear reduction in the magnitude of tangential cell elongation is observed after MyoVI RNAi compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a clear reduction in the magnitude of tangential cell elongation as compared to wild type at this stage (Figure 7A\u2013D, Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "f3735cd8-2bd6-448b-8c31-dfe3cfd03a25",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C43",
+      "claim": "Reduction of MyoVI levels results in increased cell area in the wing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our model predicts that such reduction of cell elongation would result in an increase of cell area in the wing (Equations 1-6). The observed pattern of increased cell area upon reducing MyoVI levels with RNAi is consistent with this prediction (Figure 7E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7E\u2013F and is consistent with model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "c80f0717-f063-446e-969e-bcf91ce3b79a",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C44",
+      "claim": "MyoVI is involved in Rho-dependent activation of actin-myosin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, together with the fact that MyoVI is involved in Rho-dependent activation of actin-myosin cytoskeleton (Acharya et al., 2018), suggest that MyoVI is a molecular component of the mechanosensitive feedback we describe in our self-organized model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "99787489-1b0f-459b-b67c-96c82e7a1c4d",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C45",
+      "claim": "MyoVI is a molecular component of the mechanosensitive feedback described in the self-organized model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, together with the fact that MyoVI is involved in Rho-dependent activation of actin-myosin cytoskeleton (Acharya et al., 2018), suggest that MyoVI is a molecular component of the mechanosensitive feedback we describe in our self-organized model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from combining experimental data with known molecular functions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "3d56eaac-4672-4345-8967-a483cae66309",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C47",
+      "claim": "MyoII can polarize in response to exogenous stress in a Rho-dependent manner in wing disc stretching experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, wing disc stretching experiments have shown that MyoII can polarize in response to exogenous stress in a Rho-dependent manner (Duda et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "3980b738-b169-4cf3-832a-e05e19652931",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C49",
+      "claim": "The region around the DV boundary has a different ratio of elastic constants than the rest of the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, our laser ablation analysis shows that the region around the DV boundary has a different ratio of elastic constants than the rest of the tissue, which could affect the self-organized pattern formation we describe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by laser ablation data presented earlier in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "d095311d-a8f9-4b15-ad81-b2d5eb6cab5d",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C50",
+      "claim": "The compound eye of Drosophila consists of hundreds of ommatidia organized in a precise hexagonal array that is required to fully sample the visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the compound eye of Drosophila consists of hundreds of ommatidia organized in a precise hexagonal array that is required to fully sample the visual field (Kumar, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "33ab320c-0e87-447e-a334-12212ccd1f8f",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C51",
+      "claim": "Spatial patterns of cell morphology emerge during growth of the Drosophila larval imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, spatial patterns of cell morphology emerge during growth of the Drosophila larval imaginal discs, which are precursors of adult tissues (Aegerter-Wilmsen et al., 2010; Condic et al., 1991; Legoff et al., 2013; Mao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "5171ce29-bb29-4625-ae2c-b5fbd2285c28",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C52",
+      "claim": "Cell morphology patterns have been proposed to be involved in the eversion process during the larva to pupa transition.",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns have been proposed to be involved in the eversion process, during which these flattened epithelial sacs turn themselves inside out when the animal transitions from larva to pupa (Condic et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "87b0597b-4563-436e-b592-0184188fe7ac",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C53",
+      "claim": "The wing disc pouch region is the precursor of the adult wing blade.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus specifically on the cell shape patterns in the central 'pouch' region, which is the precursor of the adult wing blade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "c5b3eb85-b6fd-4028-bcdc-ef9a8ebab5d1",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C55",
+      "claim": "Ecadherin-GFP was used as an apical junction marker.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Ecadherin-GFP as an apical junction marker (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "b0fb4ea2-02aa-4c73-b97a-3d92c5df0789",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C57",
+      "claim": "The pattern of tangential cell elongation is interrupted around the Dorsal-Ventral (DV) boundary, where cells are elongated parallel to this boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "It also reveals that this pattern is interrupted around the Dorsal-Ventral (DV) boundary, where cells are elongated parallel to this boundary (red in Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "9275265b-de8f-4ea5-ae9b-beb798d71616",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C58",
+      "claim": "The Anterior-Posterior (AP) boundary affects cell morphology, but the effect is weaker and more variable at this stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The Anterior-Posterior (AP) boundary also affects cell morphology (Landsberg et al., 2009), but the effect is weaker and more variable at this stage; thus, we do not quantify it separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data combined with a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "0d3252b7-3af6-4262-a79c-2d60c805c141",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C59",
+      "claim": "Tissue growth results from a combination of cell division, cell area changes, and cell extrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell division rate has been previously used as an indicator of growth; however, tissue growth actually results from a combination of cell division, cell area changes, and cell extrusions (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about tissue growth mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "ffe4a7fe-dd2b-48ce-94e0-77ba7769ea45",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C60",
+      "claim": "Tissue shear can be decomposed into contributions from cell divisions, cell elongation changes, T1 transitions, and correlation effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue shear can be decomposed into contributions from cell divisions, cell elongation changes, T1 transitions, and so-called correlation effects (Etournay et al., 2015; Merkel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach established in previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "af6e7a8c-4f8c-476a-a0dd-94b6cba10203",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C61",
+      "claim": "Correlation effects result mainly from correlated fluctuations in cell elongation and cell rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, correlation effects result mainly from correlated fluctuations in cell elongation and cell rotation (see Appendix 3 and Merkel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained in the manuscript and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "e2cdca7f-d739-4c5b-9c7a-d1cb2e96a61a",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C62",
+      "claim": "The spatial patterns of tissue growth and its cellular contributions exhibit overall anisotropies perpendicular to the DV boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the spatial patterns of tissue growth and its cellular contributions exhibit overall anisotropies perpendicular to the DV boundary, as reported previously (Dye et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data that is consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "0fc00ded-8283-4d2d-b03a-cdfaca5155b3",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C63",
+      "claim": "The patterns of cell elongation changes and T1 transitions can be described as a superposition of a uniformly oriented pattern and an approximately radial or tangential pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the patterns of cell elongation changes and T1 transitions can be described as a superposition of a uniformly oriented pattern and an approximately radial or tangential pattern (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation and interpretation of the experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "406de17f-44fe-40b3-9537-63d238c5ab8c",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C69",
+      "claim": "The model can account for the observed pattern of cell area.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that this function can account for the observed pattern of cell area (see Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from comparing the model predictions to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "1919c958-6535-437e-beb5-8aeb07b04c99",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C70",
+      "claim": "Local average cell elongation correlates well with the principal direction of shear stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that local average cell elongation correlates well with the principal direction of shear stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the laser ablation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "9068f2f6-d395-4640-b463-0a1c00f5a793",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C71",
+      "claim": "Cells in the band around the DV boundary have different mechanical properties than elsewhere in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we observe that the cells in the band around the DV boundary, which are exposed to high Wg and Notch signaling, have different mechanical properties than elsewhere in the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the laser ablation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "e882b14f-662b-4a95-930e-81027563dd55",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C72",
+      "claim": "Near the DV boundary, cells elongate less than outside this region for comparable amounts of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Near the DV boundary, cells elongate less than outside this region for comparable amounts of stress (Figure 4B and Figure 4\u2014figure supplement 1B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the laser ablation experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "b8850aed-d8d2-45e7-aef2-4c550c9fe847",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C73",
+      "claim": "The relationship between cell elongation and stress normalized by the elastic modulus has a slope 1 in the absence of polarity-driven stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between cell elongation and stress normalized by the elastic modulus has a slope 1 in the absence of polarity-driven stress (see Equation 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "d972f492-da78-4363-82dc-159adfdb7ea0",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C74",
+      "claim": "A much smaller slope is observed for the relationship between cell elongation and normalized stress in the experimental data, indicating that polarity-driven stress is significant.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a much smaller slope for this relationship in our data (Figure 4C), indicating that polarity-driven stress is significant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the laser ablation experiments that is interpreted using the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "f0b5666a-2645-43ea-89ce-c97aba1024ae",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C75",
+      "claim": "The stress profile in the wing disc is consistent with the observed measurements of both cell elongation and area.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, we find a stress profile in the wing disc that is consistent with the observed measurements of both cell elongation and area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing laser ablation data with cell morphology measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "f51781c0-cb17-4f48-88d0-e18c23ced68c",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C76",
+      "claim": "Fat and Core are two well-characterized PCP pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two well-characterized PCP pathways: Fat and Core (Butler and Wallingford, 2017; Eaton, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "0986709d-b094-4b93-91b1-d17bfd8e47a4",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C77",
+      "claim": "In the wing, the Fat and Core PCP systems form tissue-scale polarity patterns during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wing, these systems form tissue-scale polarity patterns during growth (Brittle et al., 2012; Merkel et al., 2014; Sagner et al., 2012) and are required to position the hairs and cuticle ridges on the adult wing (Adler et al., 1998; Doyle et al., 2008; Eaton, 2003; Gubb and Garc\u00eda-Bellido, 1982; Hogan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "0f6882ad-224b-4305-86a5-ec2475f0f31c",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C78",
+      "claim": "The Fat and Core PCP pathways are required to position the hairs and cuticle ridges on the adult wing.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wing, these systems form tissue-scale polarity patterns during growth (Brittle et al., 2012; Merkel et al., 2014; Sagner et al., 2012) and are required to position the hairs and cuticle ridges on the adult wing (Adler et al., 1998; Doyle et al., 2008; Eaton, 2003; Gubb and Garc\u00eda-Bellido, 1982; Hogan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "fdfa29f1-a8c2-4b7b-b5c1-6301b6ba22cd",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C79",
+      "claim": "RNAi targeting both fat and dachs results in almost complete loss of Dachsous from the apical membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This perturbation results in almost complete loss of Dachsous from the apical membrane, and any residual signal is no longer polarized, confirming the loss of PCP (Figure 5\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental validation shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "a15d0d31-ab5e-40b9-b430-c64c01c09ed6",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C80",
+      "claim": "Any residual Dachsous signal after ft+d RNAi is no longer polarized.",
+      "claim_type": "EXPLICIT",
+      "source": "This perturbation results in almost complete loss of Dachsous from the apical membrane, and any residual signal is no longer polarized, confirming the loss of PCP (Figure 5\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental validation shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "b8daa175-80e1-4673-8fff-14e367444aa5",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C81",
+      "claim": "Suppression of tissue growth is observed upon ft+d double RNAi knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observe a suppression of tissue growth upon ft+d double RNAi knockdown (visible at the end of larval development in Figure 5A and in the resulting adult wings in Figure 5\u2014figure supplement 1C), consistent with previous work on the loss of both Dachs and Fat (Cho and Irvine, 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiments that is consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "2ac52854-509c-4f82-b265-c6ced88eeb59",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C82",
+      "claim": "MyoVI is encoded by jaguar (jar) in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "MyoVI, encoded by jaguar (jar) in Drosophila, is an upstream component of a Rho-dependent signaling pathway that reorganizes the actin-myosin cytoskeleton in response to mechanical stress (Acharya et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "b63a3518-7dfe-44a8-98b6-26b9499c0f06",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C83",
+      "claim": "MyoVI is an upstream component of a Rho-dependent signaling pathway that reorganizes the actin-myosin cytoskeleton in response to mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "MyoVI, encoded by jaguar (jar) in Drosophila, is an upstream component of a Rho-dependent signaling pathway that reorganizes the actin-myosin cytoskeleton in response to mechanical stress (Acharya et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "702c2edc-3cb5-41f9-8c83-2de67e339d9e",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C84",
+      "claim": "Mechanosensation in wing discs involves Rho polarization and signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in wing discs also indicate that mechanosensation involves Rho polarization and signaling (Duda et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "9e1b6726-20ee-41d5-aa31-e2b1fd51dc0f",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C86",
+      "claim": "The residual pattern of cell elongation after MyoVI removal could be due to polarity existing outside of the perturbed region.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the residual pattern of cell elongation that we observe after removal of MyoVI in the wing pouch could be due to polarity existing outside of this perturbed region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "760c8b72-cc5c-4e39-ac2c-a199697afcf6",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C87",
+      "claim": "The residual pattern of cell elongation after MyoVI removal could indicate an incomplete knockdown from RNAi or the presence of other mechanosensitive elements in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the residual pattern could also indicate an incomplete knockdown from RNAi or the presence of other mechanosensitive elements in the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "4d892517-1040-4567-b511-1ee5d6d05260",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "claim_id": "C88",
+      "claim": "The mechanosensitive feedback mechanism is a significant determinant of the cell shape patterns in the wing pouch.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, given the clear phenotype that is fully consistent with our model, we propose that the mechanosensitive feedback mechanism is a significant determinant of the cell shape patterns in the wing pouch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results and model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0a19ecd7-4660-4009-a595-b118de9dba39",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Drosophila wing disc pouch exhibits a radially symmetric pattern of cell morphology, with smaller, isotropic cells near the center and larger, tangentially elongated cells at the periphery. This pattern is interrupted at the DV boundary where cells elongate parallel to the boundary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C57 are well-supported by experimental data (Figure 1) and consistent with prior literature. The geometric description and spatial patterns of cell area and elongation are directly measured and visualized, providing strong evidence for this morphological organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "ce31a5fb-55ee-4e12-8822-ebd004faf480",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During mid-third larval instar (96hr AEL), the pattern of tangential cell elongation strengthens over time despite spatially uniform growth and frequent cell rearrangements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 and C18 are supported by timelapse imaging data (Figures 1, 2). The authors quantify growth uniformity, cell rearrangement frequency, and temporal changes in elongation patterns. The data directly demonstrate that the morphology pattern intensifies without differential proliferation, challenging previous models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "514b5fb2-c6be-474a-8664-09cd6960e9ef",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The strengthening tangential cell elongation pattern is coupled to a radially biased pattern of T1 cell neighbor exchanges, with minimal contribution from cell divisions to radial tissue shear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C21-C23 are supported by decomposition analysis of tissue dynamics (Figure 2). The authors use established methods to quantify cellular contributions to tissue deformation, revealing that radial T1 transitions accompany tangential elongation buildup while cell divisions contribute negligibly to radial shear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "05c839c7-6a1a-48d7-bfec-45e76a082852",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Tissue area growth and cell division rate are spatially uniform and independent of distance from the center during mid-third larval instar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 are supported by quantitative analysis of growth patterns (Figure 1H-M). The authors directly measure tissue growth and its cellular contributions across spatial regions, demonstrating the absence of differential proliferation at this developmental stage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "3092d4c8-4cbc-46e3-8b49-370394389f0d",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A continuum biophysical model based on radially oriented nematic cell polarity can account for the observed patterns of cell morphology, including both cell elongation and cell area distributions, in the absence of differential growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C69 are supported by theoretical modeling (Figure 3, Equations 1-6). The model successfully predicts both cell elongation and area patterns from a radial polarity field. The quantitative agreement between model predictions and experimental data (Figure 3F-G) provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "76679f41-1975-4a3a-ad99-5761f23ee3a9",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Circular laser ablation reveals that cell elongation correlates with the principal direction of shear stress, polarity-driven stress is significant, and cells near the DV boundary have different mechanical properties than elsewhere in the tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72, C74-C75 are supported by the novel ESCA laser ablation method (Figure 4). The authors measure tissue stress and mechanical parameters, finding that the slope of stress vs. elongation is much smaller than predicted without polarity-driven stress, and DV boundary cells show distinct mechanical behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "6fa5fba7-22c9-4ceb-9672-751352a9f609",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tissue area pressure increases toward the center of the wing disc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by inference from laser ablation data (Figure 4D) combined with the theoretical model. The pressure profile is calculated from measured stress patterns using force balance equations, and is consistent with the observed cell area gradient.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "dc2dd09b-75d6-4e1e-bf7b-a9eac2c3bfd3",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The tangential cell elongation pattern persists after genetic perturbation of both Fat and Core PCP pathways, indicating these pathways are not required for the morphology pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by RNAi and mutant analysis (Figure 5). The authors demonstrate loss of PCP pathway function through molecular markers and observe that cell elongation patterns remain largely intact, effectively ruling out these pathways as the orientational cue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "2f124862-5c3e-42ff-83bd-3f0fd61f9b45",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The anisotropic orientational cue can be locally generated by mechanosensitive self-organization without requiring pre-patterned polarity cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by the mechanosensitive feedback model (Figure 6, Equation 8). The model demonstrates spontaneous symmetry breaking above a critical mechanosensitivity threshold, providing a theoretical mechanism for self-organized pattern formation. The model successfully fits experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "75bc1fdb-3a00-4506-a32c-d40c3467cc1a",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RNAi knockdown of MyoVI, a component of mechanosensitive signaling, reduces tangential cell elongation and increases cell area, consistent with model predictions and supporting MyoVI as a molecular component of mechanosensitive feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43, C45, and C88 are supported by MyoVI RNAi experiments (Figure 7). The observed phenotypes match the model's predictions for reduced mechanosensitivity. While residual patterns exist (possibly due to incomplete knockdown or boundary effects), the clear reduction in elongation and increase in cell area provide strong support for the mechanosensitive mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "5fc27a0c-f5a6-4f30-8bc0-1dda5b3ce873",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In the absence of polarity-driven stress, the relationship between cell elongation and stress normalized by elastic modulus has a slope of 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is a theoretical prediction from Equation 2 of the model. This is mathematically correct given the model assumptions and serves as a baseline for interpreting experimental deviations that indicate polarity-driven stress.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "b743622d-694c-4682-ae4c-27a434490b2d",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The region around the DV boundary has a different ratio of elastic constants (2K/K\u0304 = 2.3\u00b10.3) compared to the rest of the tissue (2K/K\u0304 = 3.4\u00b10.4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by laser ablation analysis (Figure 4, Figure 4\u2014figure supplement 1). The authors quantify elastic constant ratios in different tissue regions, revealing distinct mechanical properties near the DV boundary where Wg and Notch signaling are high.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "47d59fd8-e6f1-43e1-a04b-2184a9c129c7",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has shown correlations between cell shape and mechanical stress, proposed differential proliferation as a mechanism for morphology patterns, and demonstrated that cell rearrangements occur and could relax stress patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C7-C9 accurately summarize prior literature with appropriate citations. These claims establish the scientific context and identify gaps in understanding that motivate the current study. The authors correctly represent previous findings and hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "9dd84c8c-e651-4ae6-9174-7d5a598cea54",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MyoVI is involved in Rho-dependent activation of actin-myosin cytoskeleton in response to mechanical stress, and mechanosensation in wing discs involves Rho polarization and signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C47, C82-C84 are supported by citations to prior work (Acharya et al., 2018; Duda et al., 2019). These claims accurately represent established knowledge about MyoVI function and mechanotransduction pathways, providing molecular context for the experimental perturbations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "7159f14f-1334-420b-a451-f477ff36d918",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about Drosophila development, tissue patterning, and PCP pathways establish the biological context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53, C76-C78 are supported by appropriate citations and represent established knowledge in the field. These claims provide necessary biological context and are accurately stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "d5fdeaf9-79ef-4b7b-af51-9366e5264707",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methodological claims describe the experimental approaches and analytical frameworks used in the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C17, C59-C61 describe methods and definitions used in the study. These are well-established approaches (some from prior work by the authors) and are appropriately applied. The definitions are clear and consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "1c4f6a82-14b3-42cd-a53d-a6baa7b326d4",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The AP boundary affects cell morphology but weakly at this stage, and tissue growth patterns show anisotropies perpendicular to the DV boundary that can be decomposed into uniformly oriented and radial/tangential components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C62-C63 are supported by experimental observations (Figures 1-2). The authors appropriately note the AP boundary effect but focus on the stronger radial patterns. The decomposition of patterns is a valid analytical approach supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "96980a34-64cf-40a0-a30c-471e38dd82bd",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "RNAi targeting fat and dachs results in loss of Dachsous from the apical membrane, loss of polarization, and suppression of tissue growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 are supported by validation experiments (Figure 5\u2014figure supplement 1). The authors confirm the effectiveness of their genetic perturbation through molecular markers and observe expected phenotypes consistent with prior literature, validating the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    },
+    {
+      "id": "a150e2b6-73b0-448e-baef-6384de7a5b9c",
+      "content_id": "bbfe2296-ff62-416f-af38-ba74c694fb3c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The residual cell elongation pattern after MyoVI knockdown could be due to polarity outside the perturbed region, incomplete RNAi knockdown, or other mechanosensitive elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C87 are speculative explanations for incomplete phenotype penetrance. While these are reasonable possibilities, they are not directly tested. The authors appropriately present these as potential explanations rather than established facts, but additional experiments would be needed to distinguish among these alternatives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:13.276074Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fa9c2769-5da0-4f16-a686-d6dc803aeb3d",
+      "result_id": "0a19ecd7-4660-4009-a595-b118de9dba39"
+    },
+    {
+      "claim_id": "b996adbf-e5df-49ec-ad98-39caaba6eef2",
+      "result_id": "0a19ecd7-4660-4009-a595-b118de9dba39"
+    },
+    {
+      "claim_id": "bfe7d03d-7d1b-4756-a0b6-0600a9ae905d",
+      "result_id": "0a19ecd7-4660-4009-a595-b118de9dba39"
+    },
+    {
+      "claim_id": "b0fb4ea2-02aa-4c73-b97a-3d92c5df0789",
+      "result_id": "0a19ecd7-4660-4009-a595-b118de9dba39"
+    },
+    {
+      "claim_id": "e7d3502a-b70e-49a6-ae3d-12ac758a5a0f",
+      "result_id": "ce31a5fb-55ee-4e12-8822-ebd004faf480"
+    },
+    {
+      "claim_id": "b10c7fab-b0f9-483a-af1d-61905043a375",
+      "result_id": "ce31a5fb-55ee-4e12-8822-ebd004faf480"
+    },
+    {
+      "claim_id": "e0c8cf89-5e8d-446e-b801-001ca2bc69c8",
+      "result_id": "ce31a5fb-55ee-4e12-8822-ebd004faf480"
+    },
+    {
+      "claim_id": "9505b3c6-bcdf-40b5-a442-d87f30f578fa",
+      "result_id": "ce31a5fb-55ee-4e12-8822-ebd004faf480"
+    },
+    {
+      "claim_id": "359ba5ed-d57a-4bc1-826d-67e170c64923",
+      "result_id": "514b5fb2-c6be-474a-8664-09cd6960e9ef"
+    },
+    {
+      "claim_id": "fccb0b74-06e0-49ff-9fb4-f78c91acd52b",
+      "result_id": "514b5fb2-c6be-474a-8664-09cd6960e9ef"
+    },
+    {
+      "claim_id": "4a4592e8-f68e-4c74-b080-8fad64852991",
+      "result_id": "514b5fb2-c6be-474a-8664-09cd6960e9ef"
+    },
+    {
+      "claim_id": "45ed7d4d-a93f-43e9-b2d1-e312e43eadb7",
+      "result_id": "514b5fb2-c6be-474a-8664-09cd6960e9ef"
+    },
+    {
+      "claim_id": "2390a8e7-fd3b-4b40-b666-c99d4f30095e",
+      "result_id": "05c839c7-6a1a-48d7-bfec-45e76a082852"
+    },
+    {
+      "claim_id": "4ed677c1-2be0-4f80-8e17-6e77cc6a555d",
+      "result_id": "05c839c7-6a1a-48d7-bfec-45e76a082852"
+    },
+    {
+      "claim_id": "7dc55560-6d57-40af-b537-7f14b11f084e",
+      "result_id": "3092d4c8-4cbc-46e3-8b49-370394389f0d"
+    },
+    {
+      "claim_id": "406de17f-44fe-40b3-9537-63d238c5ab8c",
+      "result_id": "3092d4c8-4cbc-46e3-8b49-370394389f0d"
+    },
+    {
+      "claim_id": "1919c958-6535-437e-beb5-8aeb07b04c99",
+      "result_id": "76679f41-1975-4a3a-ad99-5761f23ee3a9"
+    },
+    {
+      "claim_id": "9068f2f6-d395-4640-b463-0a1c00f5a793",
+      "result_id": "76679f41-1975-4a3a-ad99-5761f23ee3a9"
+    },
+    {
+      "claim_id": "e882b14f-662b-4a95-930e-81027563dd55",
+      "result_id": "76679f41-1975-4a3a-ad99-5761f23ee3a9"
+    },
+    {
+      "claim_id": "d972f492-da78-4363-82dc-159adfdb7ea0",
+      "result_id": "76679f41-1975-4a3a-ad99-5761f23ee3a9"
+    },
+    {
+      "claim_id": "f0b5666a-2645-43ea-89ce-c97aba1024ae",
+      "result_id": "76679f41-1975-4a3a-ad99-5761f23ee3a9"
+    },
+    {
+      "claim_id": "c2e21417-0961-4bcf-92ee-4401e1519d4d",
+      "result_id": "6fa5fba7-22c9-4ceb-9672-751352a9f609"
+    },
+    {
+      "claim_id": "b2bd6b26-fb66-4e39-aaf1-39ecf699c284",
+      "result_id": "dc2dd09b-75d6-4e1e-bf7b-a9eac2c3bfd3"
+    },
+    {
+      "claim_id": "35cfea3d-ff63-4aa7-aa6a-f46597944933",
+      "result_id": "dc2dd09b-75d6-4e1e-bf7b-a9eac2c3bfd3"
+    },
+    {
+      "claim_id": "c744f1f8-82bb-4bf2-833f-c4d2311cc752",
+      "result_id": "dc2dd09b-75d6-4e1e-bf7b-a9eac2c3bfd3"
+    },
+    {
+      "claim_id": "03dda89f-2d1f-4a9f-b9bc-b1508a0d6b8a",
+      "result_id": "dc2dd09b-75d6-4e1e-bf7b-a9eac2c3bfd3"
+    },
+    {
+      "claim_id": "965fe174-a37e-4c1d-a874-dd738b48cb31",
+      "result_id": "dc2dd09b-75d6-4e1e-bf7b-a9eac2c3bfd3"
+    },
+    {
+      "claim_id": "91ce9363-175b-4d95-a2ef-cb8a04a55170",
+      "result_id": "2f124862-5c3e-42ff-83bd-3f0fd61f9b45"
+    },
+    {
+      "claim_id": "a2356fa4-12cb-4321-a14d-98c1ef671e1f",
+      "result_id": "75bc1fdb-3a00-4506-a32c-d40c3467cc1a"
+    },
+    {
+      "claim_id": "f3735cd8-2bd6-448b-8c31-dfe3cfd03a25",
+      "result_id": "75bc1fdb-3a00-4506-a32c-d40c3467cc1a"
+    },
+    {
+      "claim_id": "99787489-1b0f-459b-b67c-96c82e7a1c4d",
+      "result_id": "75bc1fdb-3a00-4506-a32c-d40c3467cc1a"
+    },
+    {
+      "claim_id": "4d892517-1040-4567-b511-1ee5d6d05260",
+      "result_id": "75bc1fdb-3a00-4506-a32c-d40c3467cc1a"
+    },
+    {
+      "claim_id": "b8850aed-d8d2-45e7-aef2-4c550c9fe847",
+      "result_id": "5fc27a0c-f5a6-4f30-8bc0-1dda5b3ce873"
+    },
+    {
+      "claim_id": "3980b738-b169-4cf3-832a-e05e19652931",
+      "result_id": "b743622d-694c-4682-ae4c-27a434490b2d"
+    },
+    {
+      "claim_id": "e4494ac5-b9a1-447b-abae-d0562d88bc5c",
+      "result_id": "47d59fd8-e6f1-43e1-a04b-2184a9c129c7"
+    },
+    {
+      "claim_id": "fb8d0756-5125-4601-98db-0609117510a7",
+      "result_id": "47d59fd8-e6f1-43e1-a04b-2184a9c129c7"
+    },
+    {
+      "claim_id": "78fb5e6e-2c22-4469-b6b0-0dba83104ca4",
+      "result_id": "47d59fd8-e6f1-43e1-a04b-2184a9c129c7"
+    },
+    {
+      "claim_id": "d1f0faaf-c5e6-43ad-b49c-29a581d6b4dd",
+      "result_id": "47d59fd8-e6f1-43e1-a04b-2184a9c129c7"
+    },
+    {
+      "claim_id": "afac69d5-8800-481b-9c81-3a2dcf60271c",
+      "result_id": "47d59fd8-e6f1-43e1-a04b-2184a9c129c7"
+    },
+    {
+      "claim_id": "c80f0717-f063-446e-969e-bcf91ce3b79a",
+      "result_id": "9dd84c8c-e651-4ae6-9174-7d5a598cea54"
+    },
+    {
+      "claim_id": "3d56eaac-4672-4345-8967-a483cae66309",
+      "result_id": "9dd84c8c-e651-4ae6-9174-7d5a598cea54"
+    },
+    {
+      "claim_id": "2ac52854-509c-4f82-b265-c6ced88eeb59",
+      "result_id": "9dd84c8c-e651-4ae6-9174-7d5a598cea54"
+    },
+    {
+      "claim_id": "b63a3518-7dfe-44a8-98b6-26b9499c0f06",
+      "result_id": "9dd84c8c-e651-4ae6-9174-7d5a598cea54"
+    },
+    {
+      "claim_id": "702c2edc-3cb5-41f9-8c83-2de67e339d9e",
+      "result_id": "9dd84c8c-e651-4ae6-9174-7d5a598cea54"
+    },
+    {
+      "claim_id": "d095311d-a8f9-4b15-ad81-b2d5eb6cab5d",
+      "result_id": "7159f14f-1334-420b-a451-f477ff36d918"
+    },
+    {
+      "claim_id": "33ab320c-0e87-447e-a334-12212ccd1f8f",
+      "result_id": "7159f14f-1334-420b-a451-f477ff36d918"
+    },
+    {
+      "claim_id": "5171ce29-bb29-4625-ae2c-b5fbd2285c28",
+      "result_id": "7159f14f-1334-420b-a451-f477ff36d918"
+    },
+    {
+      "claim_id": "87b0597b-4563-436e-b592-0184188fe7ac",
+      "result_id": "7159f14f-1334-420b-a451-f477ff36d918"
+    },
+    {
+      "claim_id": "f51781c0-cb17-4f48-88d0-e18c23ced68c",
+      "result_id": "7159f14f-1334-420b-a451-f477ff36d918"
+    },
+    {
+      "claim_id": "0986709d-b094-4b93-91b1-d17bfd8e47a4",
+      "result_id": "7159f14f-1334-420b-a451-f477ff36d918"
+    },
+    {
+      "claim_id": "0f6882ad-224b-4305-86a5-ec2475f0f31c",
+      "result_id": "7159f14f-1334-420b-a451-f477ff36d918"
+    },
+    {
+      "claim_id": "c5b3eb85-b6fd-4028-bcdc-ef9a8ebab5d1",
+      "result_id": "d5fdeaf9-79ef-4b7b-af51-9366e5264707"
+    },
+    {
+      "claim_id": "bda39785-cb25-4c16-8f43-8e4c2403857b",
+      "result_id": "d5fdeaf9-79ef-4b7b-af51-9366e5264707"
+    },
+    {
+      "claim_id": "0d3252b7-3af6-4262-a79c-2d60c805c141",
+      "result_id": "d5fdeaf9-79ef-4b7b-af51-9366e5264707"
+    },
+    {
+      "claim_id": "ffe4a7fe-dd2b-48ce-94e0-77ba7769ea45",
+      "result_id": "d5fdeaf9-79ef-4b7b-af51-9366e5264707"
+    },
+    {
+      "claim_id": "af6e7a8c-4f8c-476a-a0dd-94b6cba10203",
+      "result_id": "d5fdeaf9-79ef-4b7b-af51-9366e5264707"
+    },
+    {
+      "claim_id": "9275265b-de8f-4ea5-ae9b-beb798d71616",
+      "result_id": "1c4f6a82-14b3-42cd-a53d-a6baa7b326d4"
+    },
+    {
+      "claim_id": "e2cdca7f-d739-4c5b-9c7a-d1cb2e96a61a",
+      "result_id": "1c4f6a82-14b3-42cd-a53d-a6baa7b326d4"
+    },
+    {
+      "claim_id": "0fc00ded-8283-4d2d-b03a-cdfaca5155b3",
+      "result_id": "1c4f6a82-14b3-42cd-a53d-a6baa7b326d4"
+    },
+    {
+      "claim_id": "fdfa29f1-a8c2-4b7b-b5c1-6301b6ba22cd",
+      "result_id": "96980a34-64cf-40a0-a30c-471e38dd82bd"
+    },
+    {
+      "claim_id": "a15d0d31-ab5e-40b9-b430-c64c01c09ed6",
+      "result_id": "96980a34-64cf-40a0-a30c-471e38dd82bd"
+    },
+    {
+      "claim_id": "b8daa175-80e1-4673-8fff-14e367444aa5",
+      "result_id": "96980a34-64cf-40a0-a30c-471e38dd82bd"
+    },
+    {
+      "claim_id": "9e1b6726-20ee-41d5-aa31-e2b1fd51dc0f",
+      "result_id": "a150e2b6-73b0-448e-baef-6384de7a5b9c"
+    },
+    {
+      "claim_id": "760c8b72-cc5c-4e39-ac2c-a199697afcf6",
+      "result_id": "a150e2b6-73b0-448e-baef-6384de7a5b9c"
+    }
+  ],
+  "comparisons": []
+}

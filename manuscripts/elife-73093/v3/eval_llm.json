@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors successfully expressed, purified, and reconstituted functional hHv1 channels in liposomes. The purified hHv1 WT protein exhibited a single symmetric peak in size-exclusion chromatography and retained native proton channel function. For smFRET studies, intrinsic cysteines were mutated and the channels were reconstituted at extremely low protein:lipid ratios to ensure monomeric state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C86-C88 provide converging evidence from protein purification, functional assays, and concentration calculations that support the successful preparation of functional monomeric hHv1 channels. The liposome flux assay (C22) validates channel function, and the concentration-based argument for monomeric state (C24) is sound given the known dissociation constant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The N214R mutation was introduced to prevent proton flux during smFRET measurements while preserving voltage dependence. This mutation abolished detectable proton uptake within 30 minutes while allowing detection of substantial voltage-dependent FRET changes at K169C-Q194C and K125C-S224C labeling sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate that the N214R mutation successfully addressed a technical challenge (proton flux changing pH during measurements) without compromising voltage-dependent conformational changes. The functional validation (C26) and detection of voltage-dependent FRET (C28) support this experimental design choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Using smFRET, the authors revealed that the S4 segment of hHv1 channels undergoes spontaneous transitions among three major FRET states at all voltages. At the K169C-Q194C sites, activating voltages enriched the low FRET state (0.24), while at K125C-S224C sites, activating voltages promoted the high FRET state (0.9). These opposite FRET changes at different labeling sites consistently indicate that activating voltage stabilizes the S4 segment at the extracellular side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 provide robust evidence from multiple labeling sites showing voltage-dependent conformational changes. The anticorrelation of donor/acceptor intensities (C30), statistical analysis showing three FRET states (C31), and consistent opposite FRET changes at two independent labeling sites (C32, C35) provide strong converging evidence. The interpretation that voltage stabilizes S4 at the extracellular side is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Systematic examination of multiple labeling sites revealed that voltage primarily acts on the S4 segment to promote outward conformations, while S1, S2, and S3 segments do not undergo significant relative movements during gating. Only S98C-Q194C sites (S1 vs S4) showed similar but non-significant voltage-dependent changes as K169C-Q194C sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 demonstrate systematic testing across multiple labeling sites. The lack of significant voltage-dependent FRET changes at S4-S4, S1-S2, and S1-S3 sites (C40) combined with changes at S1-S4 and S3-S4 sites supports the conclusion that voltage primarily affects S4 movement. However, the non-significance at S98C-Q194C (C39) slightly weakens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The smFRET studies were performed at equilibrium state, as confirmed by FRET contour maps showing stable distributions over time. The authors note that even at strong activating voltage (120 mV), hHv1 channels may not reach full opening, consistent with previous reports of maximum open probability of ~0.6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is directly supported by experimental data (FRET contour maps), and C44 provides appropriate context from prior literature to explain the relatively modest FRET occupancy changes observed. This demonstrates proper consideration of experimental limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Lowering intracellular pH to 6.5 at 0 mV enriched the outward conformations of the S4 segment, as evidenced by increased high FRET state at K125C-S224C sites and increased low FRET state at K169C-Q194C sites. In contrast, changing both intra- and extracellular pH symmetrically produced only slight shifts in FRET occupancies, consistent with the known effect of pH gradient on voltage dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 demonstrate pH-dependent conformational changes with appropriate controls. The asymmetric pH effect (C45-C47) versus symmetric pH effect (C48) provides strong evidence that pH gradient, not absolute pH, modulates S4 conformation. The consistency with prior electrophysiological data strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The H168Q mutation abolished the response of FRET distributions to intracellular pH changes at both labeling sites, demonstrating that pH gating of hHv1 channels originates from its effect on S4 segment conformational dynamics. This validates H168 as a critical intracellular pH sensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide strong genetic evidence linking H168 to pH sensing through loss-of-function analysis. The H168Q mutation eliminating pH sensitivity (C50) while the proposed mechanism (C51) is consistent with the data represents solid experimental validation of the pH sensing mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "At intracellular pH 8.5, voltage-dependent FRET changes were significantly attenuated at both labeling sites. The H168Q mutation enriched outward S4 conformations at all pHs tested and required more negative voltage (-200 mV vs -85 mV) to enrich resting conformations. These data suggest H168 stabilizes inward resting conformations of S4 through pH-dependent interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 demonstrate the pH-voltage interplay through systematic testing. The attenuation of voltage effects at pH 8.5 (C52-C53) and the voltage shift required for H168Q mutant (C56) provide converging evidence for the proposed mechanism. The interpretation (C57) is well-supported by the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Kinetic analysis revealed that only transitions between low and high FRET states (L-H) exhibited voltage and pH dependence at both labeling sites. Based on these data, the authors propose a kinetic model where the S4 segment transits among three positions (intracellular I, middle M, and extracellular E), with activating voltage primarily shifting the I-E transition. The I conformation has two populations dependent on protonation states of pH sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 present a coherent kinetic model based on systematic analysis of transition rates. The specificity of L-H transitions showing voltage/pH dependence (C58-C61) supports the proposed three-state model (C62-C64). The model is consistent with recent gating current recordings (C65), providing external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose that pH sensors at intra- (H168) and extracellular sides physically interact with S4 to stabilize inward resting conformations in a protonation-dependent manner. pH gradient tunes the stability of the inward conformation, which shifts the equilibrium of voltage-driven L-H transitions to control channel gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C69 present mechanistic speculation that extends beyond the direct experimental evidence. While the model is consistent with the data, the physical interaction between pH sensors and S4 (C67) and the molecular coupling mechanism (C68) are not directly demonstrated. The proposed mechanism is plausible but requires additional structural or biochemical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The spontaneous large conformational transitions observed by smFRET may represent the structural basis of gating current noise. Comparison with computational predictions from molecular dynamics simulations showed good agreement for two of three FRET states, suggesting the simulations may not have reached fully activated conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73 and C79 are speculative interpretations. While the comparison with simulation predictions (C76-C78) is interesting and shows partial agreement, the conclusion that simulations didn't reach full activation (C79) is inferential. The link to gating current noise (C73) is plausible but not directly tested. These represent reasonable hypotheses requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors note that hHv1 channels can function as both monomers and dimers, with dimers exhibiting cooperative gating. At the low protein concentrations used in this study, channels exist primarily as monomers, but the authors acknowledge that examining dimeric channels would be valuable for understanding intersubunit cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 appropriately cite prior work and acknowledge a limitation of the current study. The discussion of oligomeric states is accurate and the authors properly note that their study focuses on monomers while recognizing the biological relevance of dimers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors acknowledge that the N214R mutation does not abolish inward proton currents, which could affect measurements at certain pH/voltage conditions. They claim their proposed gating model explains recent patch-clamp fluorometry and gating current data showing S4 transitions depend on both intra- and extracellular pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 identifies a potential experimental limitation that could affect data interpretation at specific conditions. Claim C84 asserts explanatory power of the model but this is not directly tested in the manuscript. While the model is consistent with cited recent studies (C85), the claim of explanation (C84) is somewhat overstated without direct quantitative comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The study provides the first real-time conformational trajectories of the hHv1 voltage sensor, showing that both voltage and pH gradient shift S4 segment conformational dynamics to control gating. The S4 segment transits among three major conformational states, with only inward-outward transitions being highly dependent on voltage and pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 represent the main conclusions of the study and are well-supported by the comprehensive smFRET data from multiple labeling sites, pH conditions, and voltages. The identification of three states (C9) is supported by statistical analysis (C31), and the specificity of voltage/pH effects on certain transitions (C10) is demonstrated by kinetic analysis (C58-C61).",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "RNA-seq time course analysis identified three distinct patterns of gene upregulation during cold exposure: acute (within 6 hours, returning to baseline), chronic (1-2 days, sustained), and delayed/variable (including proliferation and immune markers). Proliferation and immune cell recruitment markers were highly correlated (p<0.001) independent of time in cold, peaking around day 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 provide converging evidence from RNA-seq analysis showing temporal gene expression patterns and strong correlation between proliferation and immune markers. The k-means clustering approach is appropriate, and the correlation analysis (Figure 1B) demonstrates statistical significance with r\u00b2=0.731 and r\u00b2=0.788 for different marker pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "scRNA-seq identified three ASC subpopulations (ASC1, ASC2, ASC3) distinguished by differential expression of ECM and signaling genes. Cold exposure induced two additional clusters expressing ASC1 markers plus proliferation/differentiation markers, indicating ASC1 activation and adipogenic commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C55 describe comprehensive scRNA-seq characterization with appropriate clustering methods and marker gene identification. The identification of ASC subtypes is well-supported by differential gene expression analysis and validated by multiple marker genes per subtype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Cold-activated ASC1 showed reduced expression of cholesterol biosynthesis and ECM genes while inducing immune/chemokine genes. ASC1 cells expressed high Pparg levels and showed an adipogenic trajectory with transient Nnat expression during differentiation, with only ASC1 markers (not ASC2/ASC3) present in proliferating/differentiating clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 are supported by Gene Ontology analysis with significant p-values (p<10E-6) and clear trajectory analysis showing sequential marker expression. The conclusion that ASC1 are progenitors (C62, C65) is well-supported by the marker co-expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "smFISH spatial analysis revealed distinct tissue localization: ASC1 in parenchymal interstitium, ASC2 in fascia/large vessels, and ASC3 around vessels but not capillaries. This spatial distribution is consistent with historical electron microscopy findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide spatial validation of scRNA-seq findings using orthogonal smFISH methodology. The consistency with Bukowiecki et al. 1986 (C69) strengthens the interpretation, though this relies on accurate citation of prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "High-resolution imaging revealed an adipogenic trajectory in tissue niches, with Nnat marking transient early differentiation. Cold exposure induced clusters of proliferating (Top2a+Dcn+) and differentiating (Nnat+) cells, with Nnat+ cells co-expressing ASC1 marker Bmper but not ASC2 marker Pi16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 demonstrate spatial adipogenic trajectory using complementary imaging approaches. The quantification in Figure 4\u2014figure supplement 1B provides statistical support, though sample size (n=3 animals) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Tamoxifen-induced Adrb1 knockout in ASC1 (>90% reduction) did not prevent cold-induced ASC1 proliferation/differentiation (~10-fold increase in both WT and KO). This was confirmed by scRNA-seq, qPCR, and smFISH showing Nnat+ preadipocytes appearing despite Adrb1 absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 present a surprising negative result with multiple lines of evidence (scRNA-seq, qPCR, smFISH). The >90% knockdown efficiency (C75) is well-documented, and the lack of effect on proliferation/differentiation is demonstrated across multiple assays. Statistical analysis (chi-square p<0.00001) supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Despite Adrb1 not being required in ASCs, 68-72% of variation in proliferation markers correlated with immune cell recruitment markers. ADRB3 agonist (CL316,243) treatment, which activates brown adipocytes expressing ADRB3, was sufficient to induce ASC1 proliferation and differentiation, suggesting indirect signaling from activated adipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide strong correlative evidence (r\u00b2=0.68-0.72) and functional validation via pharmacological ADRB3 activation. The conclusion of indirect signaling (C83) is well-supported by the combination of negative (Adrb1 KO) and positive (CL treatment) results, though the specific mechanisms remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "scRNA-seq of Lin+ cells identified 16 immune clusters including 7 macrophage/dendritic cell subpopulations (52% of cells). Cold exposure dramatically altered immune landscape, expanding dendritic cells (DEND1-4) and recruiting lipid-handling MAC1 and interferon-activated MAC3 macrophages while reducing resident MAC2. Proliferation occurred mainly in cDC1 and moDC, not macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C101 provide comprehensive immune cell characterization with appropriate marker-based identification supported by literature citations. The phenotypic assignments are consistent with known dendritic cell and macrophage markers, though some assignments rely on limited marker sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "ASC1 proliferation/differentiation strongly correlated with recruitment of cDC1 (r\u00b2=0.74), moDC (r\u00b2=0.91), and MAC1 (r\u00b2=0.87) across diverse experimental conditions (cold, CL treatment, Adrb1 KO). This relationship remained significant even excluding basal values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 demonstrate robust correlations across multiple experimental manipulations, strengthening causal inference. The high r\u00b2 values and persistence after excluding controls suggest a genuine biological relationship, though correlation does not prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Histological analysis revealed cold-induced recruitment of GPNMB+ MAC1 and MHCII+ dendritic cells to specific locations: within 50\u03bcm of tissue borders and near acellular vacancies (sites of adipocyte efferocytosis). Nearly all proliferating ASC1 (MKI67+PDGFRA+) were in close proximity to F4/80+ immune cells, with ASC1 processes extending toward and contacting immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C112 provide detailed spatial characterization using high-resolution confocal microscopy. The identification of efferocytosis sites (C111) is an inference based on morphological features (vacancies lacking PLIN1, ~20\u03bcm diameter, lipid remnants), which is reasonable but not definitively proven without additional markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "smFISH and EdU pulse-chase experiments demonstrated dynamic spatial relationships: proliferating progenitors closely associated with H2-Ab1+ dendritic cells, with this association declining 4-5 fold upon differentiation. MHCII+ DCs were 3\u00d7 more likely to be within 10\u03bcm of dividing versus differentiated adipocytes (27.3% vs 9.35%, p=0.00013). Non-differentiating progenitors maintained close contact with MHCII+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 demonstrate temporal dynamics using EdU labeling and spatial analysis. The statistical analysis (p=0.00013, n=267 cells) supports the proximity differences, though the sample size across only 2-3 mice is modest. The conclusion of dynamic niche formation/resolution (C118) is well-supported by the spatial-temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Ligand-receptor analysis identified potential cell-cell communication mechanisms including Spp1 (from MAC1) binding to Cd44/Sdc1 (on ASC1), and cold-induced upregulation of Adam12 in ASC1. These molecules have established roles in progenitor recruitment and adipogenesis based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C126 identify potential signaling mechanisms through computational ligand-receptor analysis and expression patterns. However, these remain hypothetical interactions without functional validation. The claims appropriately rely on prior literature for functional roles (C119, C121, C122, C124-C126), but direct testing of these interactions in the BAT neogenesis context is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Independent lineage tracing using Pdgfra-CreERT2 x LSL-tdTomato confirmed 100% (258/258, n=5 mice) of new brown adipocytes derived from Pdgfra+ cells. Myf5 was not expressed in any adult stromal cell subtype, indicating Pdgfra+ ASC1 are the immediate progenitors of cold-induced brown adipocytes in adult iBAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 provide definitive lineage tracing evidence with complete penetrance (100%, n=258 cells). The absence of Myf5 in adult stromal cells (C128) clarifies developmental versus adult progenitor populations. The conclusion (C129) is well-supported by converging scRNA-seq and genetic tracing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors conclude that cold-induced neogenesis is an indirect adaptive response to chronic brown adipocyte activation and elevated metabolic demand, rather than a reflexive response to \u03b2-adrenergic signaling in progenitors. This serves to match thermogenic capacity to thermogenic demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130, C12, C13 represent the central mechanistic conclusion integrating multiple experimental findings: Adrb1 KO in ASCs had no effect, ADRB3 activation was sufficient, immune cell recruitment correlated with neogenesis, and the process was delayed (2-3 days). While the indirect mechanism is well-supported, the specific signals from stressed adipocytes remain to be identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background claims establish that cold exposure triggers BAT neogenesis involving \u03b2-adrenergic signaling, PDGFRA+ ASC proliferation, and immune cell recruitment. BAT is metabolically active in adults and associated with healthier metabolic profiles. Prior work suggested ADRB1 on preadipocytes mediates neogenesis, though the delayed onset (>2 days) and regional specificity were unexplained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C34 provide literature context supported by appropriate citations. These establish the knowledge gaps that motivated the current study. The citations appear relevant, though detailed verification of each cited claim is beyond this evaluation's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C65"
+    ],
+    "result": "The study identifies interstitial ASC1 as direct precursors of new brown adipocytes, comprising most if not all BA progenitors during cold-induced neogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is already captured in the comprehensive ASC characterization result above. Claims C5, C62, C65 represent the same conclusion stated at different points in the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

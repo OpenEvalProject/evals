@@ -1,0 +1,1866 @@
+{
+  "submission": {
+    "id": "0dbc2507-7e70-49a5-ac8f-654f2ff7b80d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:51:28.165990Z",
+    "updated_at": "2025-12-03T07:51:28.165990Z"
+  },
+  "content": [
+    {
+      "id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "submission_id": "0dbc2507-7e70-49a5-ac8f-654f2ff7b80d",
+      "content_type": "manuscript",
+      "content_text": "# 3\u2032HS1 CTCF binding site in human \u03b2-globin locus regulates fetal hemoglobin expression\n\n## Authors\n\n- Pamela Himadewi<sup>1</sup>\n- Xue Qing David Wang<sup>1</sup>\n- Fan Feng<sup>2</sup>\n- Haley Gore<sup>1</sup>\n- Yushuai Liu<sup>1</sup>\n- Lei Yu<sup>3</sup>\n- Ryo Kurita<sup>4</sup>\n- Yukio Nakamura<sup>5</sup>\n- Gerd P Pfeifer<sup>1</sup> ([ORCID: 0000-0002-5080-9604](https://orcid.org/0000-0002-5080-9604))\n- Jie Liu<sup>2</sup> ([ORCID: 0000-0002-9504-0587](https://orcid.org/0000-0002-9504-0587)) \u2020\n- Xiaotian Zhang<sup>1</sup> ([ORCID: 0000-0002-9533-4761](https://orcid.org/0000-0002-9533-4761)) \u2020\n\n### Affiliations\n\n1. Center for Epigenetics, Van Andel Research Institute Grand Rapids United States\n2. Department of Computational Medicine and Bioinformatics, University of Michigan Ann Arbor United States\n3. Cell and Development Biology, University of Michigan Ann Arbor United States\n4. Department of Research and Development, Central Blood Institute, Japanese Red Cross Society Tokyo Japan\n5. Cell Engineering Division, RIKEN BioResource Research Center Tsukuba Japan\n6. Faculty of Medicine, University of Tsukuba Tsukuba Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nMutations in the adult \u03b2-globin gene can lead to a variety of hemoglobinopathies, including sickle cell disease and \u03b2-thalassemia. An increase in fetal hemoglobin expression throughout adulthood, a condition named hereditary persistence of fetal hemoglobin (HPFH), has been found to ameliorate hemoglobinopathies. Deletional HPFH occurs through the excision of a significant portion of the 3\u2032 end of the \u03b2-globin locus, including a CTCF binding site termed 3\u2032HS1. Here, we show that the deletion of this CTCF site alone induces fetal hemoglobin expression in both adult CD34+ hematopoietic stem and progenitor cells and HUDEP-2 erythroid progenitor cells. This induction is driven by the ectopic access of a previously postulated distal enhancer located in the OR52A1 gene downstream of the locus, which can also be insulated by the inversion of the 3\u2032HS1 CTCF site. This suggests that genetic editing of this binding site can have therapeutic implications to treat hemoglobinopathies.\n\n## Introduction\n\nThe human \u03b2-globin locus consists of five globin genes embedded in the olfactory receptor cluster. During early development, these globin genes undergo gene switching from embryonic \u03b5-globin (HBE) to fetal \u03b3-globin (HBG1/2) and finally to adult \u03b2-globin (HBB). Inherited mutations in the HBB gene lead to dysfunction of the adult \u03b2-globin protein, causing hemoglobinopathies (Bauer et al., 2012). The symptoms of these disorders, including sickle cell disease and \u03b2-thalassemia, can be alleviated by persistent expression of fetal hemoglobin (hereditary persistence of fetal hemoglobin [HPFH]) throughout adulthood, which compensates for the mutant adult \u03b2-globin (Bank, 2006; Hassell, 2010). As such, multiple genome-editing strategies have been proposed to mimic HPFH as a treatment for hemoglobinopathies (Bauer et al., 2012; Breda et al., 2016; Sankaran et al., 2008; Sankaran et al., 2011; Sankaran et al., 2009; Traxler et al., 2016; Xu et al., 2011; Ye et al., 2016; Zeng et al., 2020). Two types of HPFH have been identified based on patient genetics. First is the non-deletional HPFH caused by point mutations in the BCL11A binding site at the HBG1/2 promoters, and disruption of this transcriptional repressor binding leads to the activation of these genes (Forget, 1998; Liu et al., 2018; Martyn et al., 2018; Traxler et al., 2016). Second is the deletional HPFH that consists of the excision of a large genomic region within the \u03b2-globin locus, frequently including HBB and HBD (Forget, 1998; Ye et al., 2016). These deletions can vary in length, and it remains unclear as to how they lead to the expression of fetal globin in adulthood (Ye et al., 2016).\n\n## Results\n\nThe human \u03b2-globin gene locus is flanked by five CTCF binding sites (CBSs), which form the anchors for six chromosomal loops (Huang et al., 2017). Two convergent CBSs, designated as 3\u2032HS1 and HS5, are located at the borders of the globin gene cluster. These two CBSs are nested between a downstream CBS (referred to as 3'-OR52A5-CBS) and two closely spaced upstream CBSs (referred together as 5'-OR51B5-CBSs). The HPFH deletions frequently cover the 3\u2032HS1 CBS (Figure 1A). Therefore, we hypothesized that 3\u2032HS1 may play a role in regulating \u03b2-globin cluster gene expression. To explore this, we first deleted the 3\u2032HS1 using CRISPR/Cas9 genome-editing technology in K562 myelogenous leukemia cells, which express high levels of hemoglobin (Figure 1\u2014figure supplement 1A). At the same time, we also deleted HS5 as a control in K562 cells. We observed that deletion of the HS5 CTCF site resulted in the upregulation of the 3\u2032 genes including HBB and HBG1/2. Interestingly, the disruption of 3\u2032HS1 CBS led solely to the upregulation of HBG1/2 (Figure 1\u2014figure supplement 1B and C, Figure 1\u2014figure supplement 1\u2014source data 1). These results show that altering the CTCF binding profile across the locus can significantly change the expression of the \u03b2-globin genes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig1-v2.jpg)\n\n**Figure 1.:** (A) Genome-wide Hi-C interaction map and regulatory landscape around \u03b2-globin gene cluster in human HUDEP2 cells. ATAC-seq and CTCF track of HUDEP2 cells (Liu et al., 2018) is shown in the lower panel. Black cycle indicates the position of loops previously identified (Huang et al., 2017). Yellow dotted line indicates the three sub-TAD domains identified previously (Huang et al., 2017). HPFH1-7 deletion is illustrated and 3\u2032HS1 is marked in blue shade. (B). The scheme of CTCF binding motif orientation engineering in HUDEP-2 cells. (C\u2013E) In situ Hi-C contact map around \u03b2-globin gene cluster in HUDEP-2 cells of wild type (C), 3\u2032HS1 deletion (D), and 3\u2032HS1 inversion (E). CTCF CUT&RUN tracks of WT (Liu et al., 2018), 3\u2032HS1 deletion and 3\u2032HS1 inversion HUDEP-2 cells are shown on the top of corresponding Hi-C plots. All loops that called in the HUDEP2 cells of three genotypes are marked with circles of different colors. (F) The HiCCUPS quantification of loops interaction strength by q value in \u03b2-globin locus. Dotted line annotates q = 0.1. n.d.: not detected by HiCCUPS (q value > 0.1). (G) The composition of \u03b2-like globin HUDEP-2 cells with 3\u2032HS1 deletion. qPCR measurement of \u03b2-like globin HUDEP-2 in two clones (B6 and D3) of \u03943\u2032HS1 HUDEP-2 cells is shown. Mean \u00b1 SD is displayed, n = 3. (H) Left panel: relative expression of HBE, HBG (probe measures both HBG1 and HBG2), and HBB in the 3\u2032HS1 deleted HUDEP-2 clone B6. Mean \u00b1 SD is displayed, n = 3. Right panel: relative expression of HBE, HBG (probe measures both HBG1 and HBG2), and HBB in the 3\u2032HS1 inverted HUDEP-2 clone A2. Mean \u00b1 SD is displayed, n = 3. (I) The right panel shows the High-performance liquid chromatography (HPLC) for globin composition in Cas9-treated HUDEP-2 control and 3\u2032HS1 deletion clone B6. (J) Flow cytometry plot of HbF in HUDEP-2 cell clones with 3\u2032HS1 deletion (B6 and D3), 3\u2032HS1 inversion (A2 and G3), and \u0394HS5 clone.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The experimental scheme of CTCF binding site deletion by CRISPR/Cas9. (B) CTCF binding site and chromatin landscape (H3K27ac and Dnase hypersensitivity footprint is shown) around \u03b2-globin genes. (C) The \u03b2-globin genes expression in the K562 clones with CBS deletion. (D) The \u03b2-globin genes expression in the bulk HUDEP-2 cells with HS5 and 3\u2032HS1 deletions. N = 3. mean \u00b1 SD is displayed. n.s., not significant. *p<0.05, **p<0.01. Two-tailed t-test is performed. (E) Deletion fraction of 3\u2032HS1 and HS5 in the bulk HUDEP-2 population tested in (D). (F, G) The Sanger sequencing validation result of \u03943\u2032HS-1 clones and 3\u2032HS-1 inversion clones as well as HS5 deletion clone (G). Homo indicates the deletion locus is homozygous. Insertion site is marked in italics with underlined text.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The loop number called by mustache with parameter of q < 0.1 (Roayaei Ardakany et al., 2020). (B) The 3D genomics interaction landscape in \u03b2-globin gene cluster. Blue-shaded region indicates the sub-TAD domain between HS5 and 3\u2032HS-1 CBS. Green-shaded region covers the interactions between LCR (HS1-4) and HBB interactions. (C) The copy number variance (CNV) profile of three cell clones inferred from Hi-C data by HINT (Wang et al.). (D, E) The Juicebox view of WT- \u03943\u2032HS-1 clone B6 (D) and WT- 3\u2032HS-1 inversion clone A2 (E) contact map. The CBS-associated chromosomal loops are circled out. LCR-HBB interaction is highlighted by rectangular box.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig1-figsupp3-v2.jpg)\n\nAs HPFH deletions frequently cover the 3\u2032HS1 CBS, we hypothesized that this site may contribute to the regulation of HBG1/2. To investigate further, we utilized the HUDEP-2 erythroid progenitor cell model, which predominantly express adult \u03b2-globin. We performed CRISPR/Cas9 editing to delete and invert the orientation of the 3\u2032HS1 CBS to observe their respective impact on the expression of HBG1/2 (Figure 1B). In bulk edited cells, we found that HS5 deletion did not alter globin gene expression significantly, yet 3\u2032HS1 disruption did increase \u03b3-globin gene expression as observed in K562 cells with low deletion percentage and low editing efficiency (Figure 1\u2014figure supplement 1D and E). Subsequently, we generated two 3\u2032HS1 CBS deletion clones (referred to as B6 and D3) and two 3\u2032HS1 inversion clones (A2 and G3), whose genomic sequences were verified by Sanger sequencing and CTCF binding evaluated by CUT&RUN (Figure 1D and E, Figure 1\u2014figure supplement 1F). To elucidate whether the genetic editing at 3\u2032HS1 caused changes to gene expression, we differentiated the HUDEP-2 clones to activate \u03b2-globin expression.\n\nWe performed Hi-C and capture Hi-C to examine the changes to 3D chromatin organization at the \u03b2-globin locus following alterations to the CBSs (Figure 1\u2014figure supplement 2A, Figure 1C\u2013E). In situ Hi-C data was generated with high resolution at 5 kb. A total of 15,207\u201316,529 loops could be detected in the HUDEP-2 clones used for in situ Hi-C using Mustache (Figure 1\u2014figure supplement 2A; Roayaei Ardakany et al., 2020). The CTCF bound around the \u03b2-globin locus form four chromosomal loops and separate the cluster into three distinct domains (Figure 1A and C, Figure 1\u2014figure supplement 2B). Of notice, we could detect the enhancer to target gene interaction between the LCR and the HBB gene (Figure 1\u2014figure supplement 2B). We also tested the copy number variance (CNV) in the three particular HUDEP-2 clones, we could verify all clones have chromosome number 49\u201350,XY, which is of normal range in unmodified HUDEP-2 cells (Figure 1\u2014figure supplement 2C; Moir-Meyer et al., 2018; Vinjamur and Bauer, 2018). Next, we tested if the chromosomal loops were altered by the 3\u2032HS1 editing. We applied the HiCCUPS method to call the significant chromosomal loops in the \u03b2-globin locus, four loops were identified with q value less than 0.1 (Figure 1C and F). We then use the q value of the called loops by HiCCUPS to quantify the strength of loop interactions between CBSs. Of the convergent CTCF interactions, 3\u2032HS1 to 5\u2032-OR51B5-CBSs was not called as loop with q value over 0.25. One loop was called between the two forward CTCF CBSs \u2013 3\u2032HS1 and 3\u2032-OR52A5 CBS (Figure 1D and F). In the 3\u2032HS1 deletion clone, the loss of CTCF at 3\u2032HS1 resulted in the total loss of loops between 3\u2032HS1 and HS5 as well as loops between 3\u2032HS1 and 5\u2032-OR51B5-CBSs (not called as loop). Concomitantly, a strong increase in the interaction between HS5 and 3\u2032-OR51A5-CBS was observed (Figure 1D and F, Figure 1\u2014figure supplement 2A). This reveals how the loss of a CTCF anchor drastically alters the 3D chromatin organization in the \u03b2-globin locus. The inversion of the 3\u2032HS1 CTCF caused a significant increase in the interaction between 3\u2032HS1 and 3\u2032-OR52A5 CBS. Meanwhile, 3\u2032HS1 upstream interactions with HS5 and 5\u2032-OR51B5-CBSs were decreased (Figure 1E and F, Figure 1\u2014figure supplement 2A). This revealed that the inversion of 3\u2032HS1 CTCF drove the formation of chromosomal loops between the convergent CBSs, which may lead to stronger insulation of regulatory elements.\n\nNext, we evaluated the expression of the \u03b2-globin genes and found that the HBG1/2 and HBE genes upregulated 2.5- to 8-fold in the \u03943\u2032HS1 clones (Figure 1G and H). In contrast, the inversion of 3\u2032HS1 resulted in a >50% reduction of HBE and near-complete depletion of HBG1/2 (Figure 1H). Most notably, the increase in HBG1/2 upon deletion of the 3\u2032HS1 CTCF site leads to a significant increase in fetal hemoglobin HbF (Figure 1I). Consequently, we evaluated the clones for HbF+ cells by flow cytometry. Consistent with transcription level, we observed an increase in HbF+ cells from 4.3% in the Cas9 control clone to 37.8% and 53.1% in \u03943\u2032HS1 B6 and D3 clones, respectively (Figure 1J). Meanwhile, inversion of 3\u2032HS1 resulted in a decrease of HbF+ cells to below 1%. In contrast, deletion of the upstream HS5 CBS did not induce nor abrogate the quantity of HbF+ cells (Figure 1J). All these clones are well differentiated at the same stage when HbF is measured by flow cytometry (Figure 1\u2014figure supplement 3).\n\nWe then performed ATAC-seq and H3K27ac ChIP-seq in the \u03943\u2032HS1 and 3\u2032HS1 inversion clones to examine the regulatory landscape of the \u03b2-globin gene cluster. Following 3\u2032HS1 CBS deletion, we observed significant open chromatin at the HBG1/2, BGLT3, and HBBP1 genes (Figure 2\u2014figure supplement 1A). There was also a significant increase in activating H3K27ac in the HBG2 gene body. Interestingly, these epigenetic changes upon deletion of 3\u2032HS1 CBS do not occur at the promoter of HBG2, which suggests that this 3\u2032HS1-dependent regulation is independent from BCL11A transcriptional regulation (Figure 2\u2014figure supplement 1A).\n\nTo determine if other regulatory pathways, such as the transcriptional repressor BCL11A, are involved in the upregulation of \u03b3-globin expression in \u03943\u2032HS1 and 3\u2032HS1 inversion clones, we performed RNA-seq to identify differentially expressed genes in these clones. We found 161 upregulated and 153 downregulated genes in the \u03943\u2032HS1 clones with HBG1/2 genes being the most significantly upregulated as well as \u03b2-globin cluster genes HBE1, HBBP, and BGLT3 (Figure 2A and C). In the 3\u2032HS1 inversion clones, we identified only 3 upregulated genes and 51 downregulated genes (Figure 2B). In these clones, we observed downregulation of HBG2 and upregulation of the nearby OR52A5 gene; however, we did not observe any change in the expression of known \u03b3-globin regulators (BCL11A, ZBTB7A (LRF), ELF2AK1 (HRI), ATF4, ZNF410, and NFIX) (Figure 2B and D, Supplementary file 1; Grevet et al., 2018; Masuda et al., 2016). We further verified BCL11A protein level by immunoblotting and observed no significant reduction in \u03943\u2032HS1 clones (Figure 2, Figure 2\u2014source data 1). Taken together, we concluded that BCL11A does not contribute to the induction of HbF in the edited HUDEP-2 cells. To further elucidate the role of BCL11A in the regulation of HBG1/2, we performed targeted disruption of a known BCL11A gene enhancer in both WT and \u03943\u2032HS1 HUDEP-2 clones (Figure 2\u2014figure supplement 1B, Figure 2\u2014figure supplement 1\u2014source data 1; Bauer et al., 2013). This mutation resulted in a significantly lower BCL11A expression, and we observed further increase of HBG1/2 expression level and HbF+ cells (Figure 2F, Figure 2\u2014figure supplement 1C and F). Pomalidomide was found to boost the level of HbF in adult erythroblasts by destabilizing the BCL11A protein in cells (Grevet et al., 2018). Therefore, we treated HUDEP-2 3\u2032HS1 deletion clones with pomalidomide and observed a significant reduction in BCL11A protein. This led to further increase in expression of fetal globin (Figure 2\u2014figure supplement 2A and D, Figure 2\u2014figure supplement 2\u2014source data 1). These results show that genetic editing of the regulatory cis-element (3\u2032HS1 CBS) accentuates with depletion of the transcriptional repressor BCL11A. This further indicates that the \u03b3-globin activation in 3\u2032HS1 deletion HUDEP-2 cells was not driven by the BCL11A-associated pathways. The double disruption of BCL11A and 3\u2032HS1 also led to similar level of \u03b3-globin activation as the disruption of BCL11A alone (Figure 2F). This data suggests that 3\u2032HS1-regulated \u03b3-globin repression might be hypostatic to the BCL11A-mediated \u03b3-globin repression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig2-v2.jpg)\n\n**Figure 2.:** (A) Volcano plot of differentially expressed genes in two \u03943\u2032HS1 clones (B6 and D3) vs. two wild-type HUDEP-2 biological duplicates. Differentially expressed globin and olfactory receptor genes are labeled. (B) The volcano plot of differentially expressed genes in two 3\u2032HS1 inversion clones (A2 and G3) vs. two wild-type HUDEP-2 biological duplicates. Differentially expressed globin and olfactory receptor genes are labeled. (C) Expression level of \u03b2-globin genes in \u03943\u2032HS1 clones, 3\u2032HS1 inversion clones, and wild-type HUDEP-2 cells. (D) Expression level of known fetal hemoglobin repressor genes in \u03943\u2032HS1 clones, 3\u2032HS1 inversion clones, and wild-type HUDEP-2 cells. (E) Western blot shows the level of BCL11A and ZBTB7A (LRF) in \u03943\u2032HS1 clones, 3\u2032HS1 inversion clones, \u03943\u2032HS-5 clones, and wild-type HUDEP-2 cells. Refer to Figure 2\u2014source data 1 for original blot picture. (F) The composition of \u03b2-like hemoglobin genes in the WT HDUEP-2 cells with BCL11A + 58 enhancer deleted with CRISPR/Cas9 and \u03943\u2032HS1 HDUEP-2 cells with BCL11A + 58 enhancer deleted with CRISPR/Cas9.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Integrated Genome Viewer (IGV) track view of ATAC-seq and H3K27ac ChIP-seq at \u03b2-globin gene locus of \u03943\u2032HS1 HDUEP-2 cell clones, 3\u2032HS1 inversion HDUEP-2 cells, and wild-type HUDEP-2 cells. GATA1, CTCF, and BCL11A CUT&RUN data is shown below the track. Regions highlighted in orange are paralogous HBG1/2 promoter. (B) Sanger sequencing of BCL11A +58 enhancer-disrupted clones. (C) qPCR quantification of BCL11A gene expression in +58 enhancer-deleted clones. (D) Flow cytometry measurement of HbF in WT and B6 clone after the deletion of BCL11A + 58 enhancer by CRISPR/Cas9. (E) Western blot quantification of BCL11A protein in BCL11A + 58 enhancer-deleted clones in WT and \u03943\u2032HS-1 background. (F) The differentiation stage of BCL11A + 58 enhancer-disrupted HUDEP-2 cell clones profiled by flow cytometry of CD71 and CD235a.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) qRT-PCR quantification of BCL11A in the pomalidomide-treated WT and 3\u2032-HS-1-deleted HUDEP2 cell clones. (B) Composition of \u03b2-like globin by qRT-PCR in clones treated with DMSO and 1 \u03bcM pomalidomide described in panel (A). (C) The flow cytometry plot of HbF in clones treated with DMSO and 1 \u03bcM pomalidomide described in panel (A). (D) Western blot of BCL11A, ZBTB7A, \u03b2-globin, and \u03b3-globin clones treated with DMSO and 1 \u03bcM pomalidomide described in panel (A). (E) The differentiation stage of HUDEP-2 cell clones used in panel (A) profiled by flow cytometry of CD71 and CD235a.\n\nDeletional HPFH has been proposed to be the result of distal enhancer juxtaposition in the region downstream of 3\u2032HS1, and several HPFH enhancers have been identified (Forget, 1998). The reduction of HbF in the 3\u2032HS1 inversion HUDEP-2 clones suggests that potential enhancers may be located between 3\u2032HS1 and 3\u2032-OR52A5-CBS. These enhancers may be insulated by the loop formed between 3\u2032HS1 to 3\u2032-OR52A5-CBS in the inversion clones. With no significant change in chromatin interaction observed between the LCR and HBG1/2 genes (Figure 1\u2014figure supplement 2C and D), it suggests that the HBG1/2 expression increase is controlled by a cis-element other than the LCR. We then analyzed the ATAC-seq, GATA1 ChIP-seq data together to search for potential cis-regulatory elements. We found the OR52A1 region bound by the GATA1 transcriptional activator in the erythroid lineages (Corces et al., 2016; Feingold and Forget; Liu et al., 2018; Figure 3A). Importantly, the mapping of a previously described HPFH enhancer encompassed both OR52A1 gene and GATA1 binding site (Elder et al., 1990; Feingold and Forget, 1989). We proceeded to delete the GATA1 binding site within the HPFH enhancer site and the entire HPFH enhancer marked by ATAC-seq in \u03943\u2032HS1 clones (Figure 3B). We found that both deletions reduced the HBG1/2 expression and HbF+ cell percentage in these cells, suggesting that the HPFH enhancer contributes to the activation of HBG1/2 (Figure 3C\u2013E). We further evaluated whether there were direct interactions between HBG1/2 and HPFH enhancer after the deletion of 3\u2032HS1 by virtual 4C (v4C) in our Hi-C dataset. We observed mildly increased v4C signal in HBG2 promoter region of \u03943\u2032HS1 cells compared with WT and 3\u2032HS1 inversion clones when HPFH enhancer region acts as viewpoint (Figure 3\u2014figure supplement 1A). Vice versa, we also observed mildly increased v4C signal in HPFH enhancer region of \u03943\u2032HS1 cells compared with WT and 3\u2032HS1 inversion clones when HBG2 promoter region acts as viewpoint (Figure 3\u2014figure supplement 1A). These data suggest that the deletion of 3\u2032HS1 might have induced more frequent interaction between HPFH enhancer and HBG2 promoter regions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig3-v2.jpg)\n\n**Figure 3.:** (A) Upper panel: IGV view of ATAC-seq in primary human blood cells followed by GATA1 and CTCF ChIP-seq in HUDEP-2 cells around the \u03b2-globin locus. Lower panel: ATAC-seq of CD34+ hematopoietic stem and progenitor cell (HSPC), megakaryocyte\u2013erythroid progenitor (MEP), and erythroblast is shown in the zoomed view for the OR52A1 region. Red-shaded area indicates the locus of OR52A1. HPFH 3' beak and \u03b4\u03b2-thalassemia 3' break is annotated (Feingold and Forget, 1989). (B) The experimental scheme of hereditary persistence of fetal hemoglobin (HPFH) deletion in the 3'HS1 deletion background. (C) The composition of \u03b2-like globin \u03943\u2032HS1 (clone B6) HUDEP-2 cells with GATA1 binding site and HPFH region deletion. Mean \u00b1 SD is displayed, n = 3. (D) Relative expression of HBE, HBG (probe measures both HBG1 and HBG2), and HBB in the \u03943\u2019HS1 (clone B6) HUDEP-2 cells with GATA1 binding site and HPFH enhancer region deletion. Mean \u00b1 SD is displayed, n = 3. (E) The representative HbF flow plot of \u03943\u2019HS1 (clone B6) HUDEP-2 cells with GATA1 binding site and HPFH enhancer region deletion. (F) Evolution conservation of OR52A1 GATA1 binding site in vertebrates. GATA1 binding motif is shown in the middle. The site in mouse and rat associated with human GATA1 binding is boxed out. (G) Chromatin landscape of mouse \u03b2-globin gene cluster in mouse erythroid cells MEL and G1-ER4. CTCF, GATA1, and TAL1 ChIP-seq is shown. Orange stripe highlights the mouse homolog of human OR52A1\u2013Olfr68.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The v4C tracks generated by Juicebox from WT, \u03943\u2032HS1 HUDEP2 clone B6, and 3\u2032HS1 inversion clone A2. The HPFH enhancer region is highlighted in orange and viewpoint of 4C is highlighted in orange and eye symbol on HPFH enhancer and HBG2 promoter region, respectively. (B) The experimental scheme of deleting 48 kb region between HPFH enhancer and 3\u2032HS1. The Sanger sequencing validation result of a \u0394(HPFH-3\u2019HS1) clone B5 is displayed in the lower panel. (C) HBG, HBE, and HBB expression in WT and \u0394(HPFH-3\u2019HS1) clone B5. Mean \u00b1 SD is shown. ***p<0.001, *p<0.05. t-test was performed to determine the p value. (D) The flow cytometry plot of HbF in WT and \u0394(HPFH-3\u2019HS1) clone B5.\n\nPreviously, mouse and human \u03b2-globin locus and its surrounding regions have been shown to be evolutionally conserved (Bulger et al., 2003). More interestingly, previous report showed that the disruption of 3\u2032HS1 site in mouse did not result in any change in the \u03b2-like globin gene expression (Bender et al., 2006). We hypothesized that the alteration of HPFH enhancer sequence might contribute to the different outcome of 3\u2032HS1 deletion in mouse and human. Therefore, we evaluated the evolutionary conservation of OR52A1 in mammals and found mouse and rat homolog of human OR52A1\u2013Olfr68 bears two single-nucleotide substitutions right at the core binding site of GATA1 (Figure 3F). When we further checked the GATA1 ChIP-seq in mouse erythroid cells, we also found the absence of binding in the OR52A1\u2019s homolog Olfr68 and its surrounding region (Figure 3G). This data suggests that the mouse olfactory receptor region 3\u2032 to \u03b2-globin genes no longer bears GATA1 binding sites and enhancer activity. Overall, the loss of GATA1 binding in mouse clearly explains the difference between mouse and human on the effect of 3\u2032HS1 deletion on globin gene expression.\n\nPreviously, it has been proposed that the juxtaposition of HPFH enhancer results in the activation of \u03b3-globin. We wonder if the chromosomal distance between HPFH enhancer and globin genes also contributes to the regulation of globin gene expression. We used paired guide RNA to delete a 48 kb region between HPFH enhancer and 3\u2032HS1, to access the effect of distance between enhancer and target genes in the presence of chromosomal insulators (Figure 3\u2014figure supplement 1B). We obtained a heterozygous clone bearing this 48 kb deletion (Figure 3\u2014figure supplement 1B). We found that moving the HPFH enhancer to the proximity of globin locus mildly increases the HBG1/2 gene expression by threefold with increase of HBE1 gene and reduction of HBB gene (Figure 3\u2014figure supplement 1C and D). Overall, the data suggests that both chromosomal distance and insulator contribute to the low expression of HBG1/2, but chromosomal insulators are dominant to insulate HPFH enhancer to access the globin genes.\n\nTo assess the therapeutic potential of 3\u2032HS1 deletion in primary HSPCs, we performed the 3\u2032HS1 and HS5 CBS deletions in adult mobilized peripheral blood CD34+ HSPC from three different donors (Figure 4A). We achieved high deletion percentage of both CBSs in these primary cells (Figure 4B, Figure 4\u2014source data 1). Upon differentiation, we observed a robust increase in HbF+ cells across all three donors with 3\u2032HS1 deletion but not with HS5 deletion (Figure 4C and D). The normal erythroid differentiation was not affected by either CBS deletion (Figure 4\u2014figure supplement 1A and B). While the disruption of the 3'HS1 CBS in primary patient cells did not yield as great of an effect on HbF+ cells as in HUDEP-2 cells, the results do support the involvement of a downstream cis-acting regulatory element on the HBG1/2 genes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig4-v2.jpg)\n\n**Figure 4.:** (A) The experimental scheme for primary HSPC editing. (B) The deletion of 3\u2032HS1 and HS5 in three CD34+ peripheral blood mononuclear cell (PBMC) HSPCs from three individual adult donors. Refer to Figure 4\u2014source data 1 for original gel picture. (C) The HbF+ cell percentage at day 21 in three HSPCs from three individual adult donors after 3\u2032HS1 and HS5 deletion. p-Value is calculated by one-tailed paired t-test. n.s., not significant, p=0.3659 in HS5 deletion vs. Cas9 by one-tailed paired t-test. (D) The reprehensive flow plot for HbF+ cells at day 21 in 3\u2032HS1-deleted and HS5-deleted PBMC HSPC. The data is from donor #1. (E) The model of fetal hemoglobin regulation through 3\u2032HS1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70557/elife-70557-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Giemsa\u2013Wright staining of differentiated erythroid cells from HSPC electroporated with Cas9, 3\u2032HS-1 guide RNA pair, and HS5 deletion guide RNA pair at differentiation culture day 21. Orange arrow indicates the enucleated red blood cells, and blue arrows indicate the reticulocytes. (B) Differentiation stage of three HSPCs by flow cytometry of band 3 from different donors electroporated with Cas9, 3\u2032HS-1 guide RNA pair, and HS5 deletion guide RNA pair at differentiation culture day 21.\n\nFinally, based on our data, we propose a model where the 3\u2032HS1 CBS modulates the HPFH enhancer\u2019s access to the HBG1/2 genes (Figure 4E).\n\n## Discussion\n\nHere, we show that the deletion of a CBS \u2013 3\u2032HS1\u2013 in the human \u03b2-globin locus can phenocopy HPFH. This condition is driven by alteration of the 3D genomic organization around the \u03b2-globin locus, which allows the long-range interaction of a distal enhancer in the OR52A1 gene to drive the expression of HBG1/2. We further show that inversion of 3\u2032HS1 insulates the enhancer element and further suppresses HBG1/2. Previously, induced LCR to HBG1/2 interaction showed the importance of high-order chromatin structure in the regulation of globin gene expression (Breda et al., 2016; Deng et al., 2014). However, the role of CTCF protein bound around the gene cluster was not clear. Our study reveals how CTCF binding at this locus modulates the accessibility of the fetal HBG1/2 genes to a downstream enhancer. In the HPFH enhancer scenario, 3\u2032HS1 limits the HPFH enhancer access to HBG1/2 by forming the sub-TAD with 5\u2032HS (Figure 4E; Oudelaar et al., 2021). When the 3\u2032HS1 CBS is deleted, the HPFH enhancer gains access to HBG1/2 without the hinder of 3\u2032HS1\u2013HS5 loop. When the 3\u2032HS1 CBS motif is inverted, the HPFH enhancer is further restricted by the pairing of 3\u2032-OR52A5-CBS to the inverted 3\u2032HS1 CBS, which results in the strong chromosomal loop formation between the two CBSs. This insulation leads to the reduced HBG1/2 expression and upregulation of OR52A5 (Figures 2B and 4E).\n\nFurthermore, we have elucidated the function of long speculated HPFH enhancer in the induction of HbF with our \u03943\u2032HS1 cells. However, we suspect that other regulatory elements also exist between 3\u2032HS1 and 3\u2032-OR52A5-CBS since we only get a partial decrease of HBG1/2 expression with HPFH enhancer deletion in \u03943\u2032HS1 cells. This may suggest that other previously identified HPFH enhancers also contribute to HbF induction in the \u03943\u2032HS1 cells (Feingold and Forget, 1989; Forget, 1998). Indeed, other GATA1 binding sites can be observed between OR52A1 and OR52A5 genes of erythroid progenitor cells. Overall, these observations suggest that GATA1 binding across the locus works collectively to activate HBG1/2 expression with or without direct promoter-enhancer interactions. Interestingly, despite the evolution conservation of OR52A1 gene in mammals, TF binding disrupting nucleotide substitutions occur at the GATA1 binding site in HPFH enhancer in some mammal species that do not express distinct form of fetal hemoglobin (mouse and rat) (Figure 3F and G). This evolutionary alteration in the TF binding site suggests that HPFH enhancer may also play a role in regulating globin expression in other developmental stages. The consistent binding of GATA1 in high HBE/HBG-expressing K562 cells and high HBB-expressing HUDEP-2 cells suggests that the potential function of HPFH enhancer may still need the modulation of 3D genomic reorganization.\n\nDespite our data suggesting that deletion of 3\u2032HS1 is sufficient to induce the \u03b3-globin activation, yet, the upregulation does not completely phenocopy the HPFH condition, in which the HbF is expressed at pancellular level. The deletion of 3\u2032HS1 only induces a portion of cells to be F+ cells, with an interesting differentiation block phenotype in a large portion of clones we have selected (Figure 1J). Although HUDEP-2 is known to be heterogenous in clonal level, the F+ cell phenotype of 3\u2032HS1-deleted cells suggests that the full HPFH phenotype may require the deletion of HBB and HBD genes to erase the strong enhancer-promoter interaction between LCR and HBB. Furthermore, our results indicate that the distance between HPFH enhancer and the globin locus could also play a role in regulating \u03b3-globin gene expression. This data hints that the deletion of both 3\u2032HS1 and the flanking region between 3\u2032HS1 and HPFH enhancer may activate the fetal hemoglobin to an even higher level. Larger deletions will result in the reorganization of chromosomal loop interactions as well as the decrease of physical distance from HPFH enhancer to globin locus. The enhancers have to locate at certain range of distance from the target gene promoters to exert the maximal activation effect (Jessica Zuin et al., 2021). Therefore, a method that can create large deletion that disrupts 3\u2032HS1 and reduces enhancer-promoter distance simultaneously could be a potential gene therapy to effectively activate the \u03b3-globin expression in hemoglobinopathies.\n\nThe differentiation stage of HUDEP-2 cell clones used in Figure 1 was profiled by flow cytometry of CD71 and CD235a (Figure 2\u2014figure supplement 1\u2014source data 1). The immunoblot data of BCL11A, ZBTB7A, \u03b2-actin, \u03b2-globin, and \u03b3-globin of clones is displayed in Figure 2\u2014figure supplement 2.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Reagent type (species) or resource</td>\n      <td>Designation</td>\n      <td>Source or reference</td>\n      <td>Identifier</td>\n      <td>Additional Information</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CTCF(rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>AB70303</td>\n      <td>WB(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>BCL11A(rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>AB191401</td>\n      <td>WB(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b2-Actin(rabbit polyclonal)</td>\n      <td>Proteintech</td>\n      <td>20536-1-AP</td>\n      <td>WB(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b2-Globin(mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>SC-21757</td>\n      <td>WB(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b3-Globin(mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>SC-21756</td>\n      <td>WB(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ZBTB7A(mouse monoclonal)</td>\n      <td>R&amp;D systems</td>\n      <td>MAB3496</td>\n      <td>WB(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Human HbF-FITC(recombinant)</td>\n      <td>Miltenyl Biotec</td>\n      <td>130-108-241</td>\n      <td>FC(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Human CD71-PE(mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>334105</td>\n      <td>FC(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Human CD235a-APC(mouse monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>561775</td>\n      <td>FC(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Starbright B700-conjugated goat \u03b1-rabbit IgG(goat polyclonal)</td>\n      <td>Bio-Rad</td>\n      <td>12004161</td>\n      <td>WB(1:2000-1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>DyLight 800 goat \u03b1-mouse IgG(goat polyclonal)</td>\n      <td>Bio-Rad</td>\n      <td>STAR117D800GA</td>\n      <td>WB(1:2000-1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Acetyl-histone H3 (Lys27)(rabbit polyclonal)</td>\n      <td>Cell Signaling</td>\n      <td>8173S</td>\n      <td>2 \u00b5g per ChIP</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SCF</td>\n      <td>Peprotech</td>\n      <td>300-07</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>FLT3L</td>\n      <td>Peprotech</td>\n      <td>300-19</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>TPO</td>\n      <td>Peprotech</td>\n      <td>300-18</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>EPO</td>\n      <td>Amgen</td>\n      <td>EPOGEN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>IL-3</td>\n      <td>Peprotech</td>\n      <td>200-03</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>SFEM II</td>\n      <td>STEMCELL Technologies</td>\n      <td>09655</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dexamethasone</td>\n      <td>Sigma</td>\n      <td>D2915</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Doxycycline</td>\n      <td>Sigma</td>\n      <td>D9891</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant human insulin</td>\n      <td>Sigma</td>\n      <td>I2643</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Holo-transferrin</td>\n      <td>Sigma</td>\n      <td>T4132</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Heparin</td>\n      <td>Sigma</td>\n      <td>H3393</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Human AB serum</td>\n      <td>Sigma</td>\n      <td>H6914</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Cas9 Protein</td>\n      <td>IDT</td>\n      <td>1081058</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Concanavalin A Beads</td>\n      <td>Bangs Laboratories, Inc</td>\n      <td>BP531</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>pA-MNase</td>\n      <td>Gift from Steven Henikoff</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dynabeads protein A</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>1002D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dynabeads MyOne Streptavidin T1</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>65601</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Protease Inhibitor Cocktail</td>\n      <td>GenDEPOT</td>\n      <td>50-101-5486</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HUDEP-2 cells</td>\n      <td>Riken Cell Bank</td>\n      <td>RCB4557</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>K562 cells</td>\n      <td>ATCC</td>\n      <td>CCL-243</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (primary cells Homo sapiens)</td>\n      <td>Human peripheral blood CD34+ HSPCs</td>\n      <td>STEMCELL Technologies</td>\n      <td>70060.1</td>\n      <td>CD34+ HSPC isolated from individual donor. Sex is mixed.</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Rapid RNA library kit</td>\n      <td>Swift Biosciences</td>\n      <td>R2096</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nextera XT library preparation kit</td>\n      <td>Illumina</td>\n      <td>FC-131-1024</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MinElute PCR purification kit</td>\n      <td>Qiagen</td>\n      <td>28004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Accel-NGS 2S Plus DNA library kit</td>\n      <td>Swift Biosciences</td>\n      <td>21096</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>2S Combinatorial Dual Indexing Kit</td>\n      <td>Swift Biosciences</td>\n      <td>28096</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>HiC Next Generation Sequencing Kit</td>\n      <td>Arima Genomics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KAPA library quantification kit</td>\n      <td>KAPA Biosystems</td>\n      <td>KK4844</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNA clean &amp; concentrator</td>\n      <td>Zymo Research</td>\n      <td>R1013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Raw and processed NGS sequencing data</td>\n      <td>This paper</td>\n      <td>GSE160425</td>\n      <td>Raw and processed data could be obtained from the link : https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE160425</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HUDEP-2 GATA1 CUT&amp;RUN</td>\n      <td>GEO: GSE104676</td>\n      <td>GSM2805376</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HUDEP-2 CTCF ChIP-seq</td>\n      <td>GEO: GSE104676</td>\n      <td>GSM3671075</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HUDEP-2 BCL11A ChIP-seq</td>\n      <td>GEO: GSE103445</td>\n      <td>GSM2771529</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Hematopoietic cells differentiation ATAC-seq</td>\n      <td>Corces et al., 2016</td>\n      <td>GSE74912</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sg3\u2019HS1-3\u2032</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>GAGUCUUGGGAUGGCUGAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sg3\u2019HS1-5\u2032</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>GUCCAAGGCAGGACAUGUGU</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgHS5-5\u2032</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>GGCACCCACCUUCAAUCAAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgHS5-3'</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>AGUCCUGCCAGAUAUAGGUC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgOR52A1-GATA1-5\u2032</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>AUGUCUUAGUGGAUAACAGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgOR52A1-GATA1-3\u2032</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>CAUAUGCUCACAGUAGGAGU</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgHPFH-enhancer-5\u2032</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>GGGCAUGUAGACUGUGAUGU</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgHPFH-enhancer-3\u2032:</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>CAUAUGCUCACAGUAGGAGU</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgBCL11A- + 58-5\u2032:</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>GGACUGGCAGACCUCUCCAU</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgBCL11A- + 58-3\u2019:</td>\n      <td>Synthego</td>\n      <td>Synthesized guide RNA</td>\n      <td>CUCUUACUUAUGCACACCUG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>3'HS1-deletion-genotyping forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>TCCCTGTGTGATTACTTGCTTAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>3'HS1-deletion-genotyping reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>AGGTCATAACCATTCAGGTAAACT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>3'HS1-inversion-genotyping forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>TCCCTGTGTGATTACTTGCTTAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>3'HS1-inversion-genotyping reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>GATGAACTACTTACCACTAGGGGTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>3'HS1-WT-genotyping forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>TCCCTGTGTGATTACTTGCTTAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>3'HS1-WT-genotyping reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>CTTCTGACCCCTAGTGGTGTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HPFH enhancer-deletion-genotyping forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>ACAATGGCCATATGCTCACA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HPFH enhancer-deletion-genotyping reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>GTCCAGGTGATTTTGCTGGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>BCL11A_58 enhancer-deletion forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>GAACAGAGACCACTACTGGCAAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>BCL11A_58 enhancer-deletion forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>CTCAGAAAAATGACAGCACCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HBB-qPCR forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>CTGAGGAGAAGTCTGCCGTTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HBB-qPCR reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>AGCATCAGGAGTGGACAGAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HBD-qPCR forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>GAGGAGAAGACTGCTGTCAATG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HBD-qPCR reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>AGGGTAGACCACCAGTAATCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HBE-qPCR forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>GCAAGAAGGTGCTGACTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HBE-qPCR reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>ACCATCACGTTACCCAGGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HBG1/2-qPCR forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>TGGATGATCTCAAGGGCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HBG1/2-qPCR reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>TCAGTGGTATCTGGAGGACA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ActB-qPCR forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>CCTGGCACCCAGCACAATGAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ActB-qPCR reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>AAGTCATAGTCCGCCTAGAAGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>BCL11A-qPCR forward</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>AACCCCAGCACTTAAGCAAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>BCL11A-qPCR reverse</td>\n      <td>Eurofins Genomics</td>\n      <td>PCR primer</td>\n      <td>GGAGGTCATGATCCCCTTCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>3'HS1 HDR template</td>\n      <td>Gene Universal</td>\n      <td>CRISPR/Cas9 knock-in HDR template</td>\n      <td>AGACATAGAGAAAGTATATTGTGTTTAAAAGACAGCTTCTTTATAATTCTATAGAACTAAAACATTCCTATTTGCCAAGGCAGTGGAGTTTTTGCTGTTCTTAGAACATAATTACTGAAAGACACGCACACATGTCCTGCCTTGGACAAAAAATTGTATGTCCATCCTTTAAAGGTCATTCCTTTAATGGTCTTTTCTGGACCTGACCCCTAGTGGTAAGTAGTTCATCAAACTTTCTTCCCTCCCTACTTCAGTGATGCATAAGGCAGATCTGCTTTAGTGTAAGCGAGGTCAGGCCCTCAAGAGTCTTGGGATGGCTGAAGATGTAAGAACATTCTATAAGACTTGTCCAAAGAACTGACTGTTTAATGATTCTGAATATGCTAGTTCAGAGAGAATCTATTTACCACAAACCTGAAG</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HiC-Pro</td>\n      <td>Servant et al., 2015</td>\n      <td>https://github.com/nservant/HiC-Pro</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Juicer</td>\n      <td>Durand et al., 2016b</td>\n      <td>https://github.com/theaidenlab/juicer/wiki</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Juicebox</td>\n      <td>Durand et al., 2016a; Durand et al., 2016b</td>\n      <td>http://aidenlab.org/juicebox/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HiNT</td>\n      <td>Wang et al., 2020</td>\n      <td>https://github.com/parklab/HiNT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR</td>\n      <td>Dobin et al., 2013</td>\n      <td>https://github.com/alexdobin/STAR</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>edgeR</td>\n      <td>Robinson et al., 2010</td>\n      <td>https://bioconductor.org/packages/edgeR/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bowtie2</td>\n      <td>Langmead and Salzberg, 2012</td>\n      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BWA-MEM</td>\n      <td>Bauer et al., 2013</td>\n      <td>http://bio-bwa.sourceforge.net/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SAMtools</td>\n      <td>Sankaran et al., 2009</td>\n      <td>http://samtools.sourceforge.net/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Picard Tools</td>\n      <td></td>\n      <td>http://broadinstitute.github.io/picard/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>deepTools</td>\n      <td>Ram\u00edrez et al., 2014</td>\n      <td>https://deeptools.readthedocs.io/en/develop/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trim Galore</td>\n      <td></td>\n      <td>http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trimmomatic</td>\n      <td>Bolger et al., 2014</td>\n      <td>http://www.usadellab.org/cms/?page=trimmomatic</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Tissue culture of cell lines\n\nOur HUDEP-2 cell lines were directly obtained from the cell bank of Riken Institute, Japan, The provider validates the cell line before shipment. Additionally, the cell line has been validated by HiC sequencing on the chromosome copy number (Figure 1\u2014figure supplement 2C). We also validate that all cell lines used in the study are free from mycoplasma contamination. We routinely test the mycoplasma contamination status by PCR. K562 cells were maintained in RPMI medium with 10% FBS. HUDEP clone 2 (HUDEP-2) cells were cultured as previously described (Kurita et al., 2013). Cells were expanded in StemSpan serum-free expansion medium supplemented with 1 \u03bcM dexamethasone (D2915, Sigma), 1 \u03bcg/mL doxycycline (D9891, Sigma), 50 ng/mL human SCF, 3 units/mL EPO, and 1% penicillin/streptomycin. HUDEP-2 cells were differentiated in a two-phase differentiation protocol consisting of IMDM supplemented with 5% human AB serum, 10 \u03bcg/mL recombinant human insulin, 330 \u03bcg/mL holo-transferrin, 3 units/mL EPO, 1 \u03bcg/mL doxycycline, 2 units/mL heparin, and 1% penicillin/streptomycin. 50 ng/mL human SCF was included in phase 1 of the culture (days 1\u20133) and withdrawn in phase 2 of the culture (days 4 and beyond). Samples were collected on day 5 for flow cytometry, RNA extraction, immunoblot, HiC, ATAC-seq, and HPLC analyses.\n\n### CRISPR/Cas9-mediated deletion and homologous recombination\n\nCas9 nuclease (1081058, IDT) were mixed with synthetically modified sgRNAs (synthesized by Synthego) at a 1:3 molar ratio in resuspension buffer T and incubated at 37\u00b0C for 10 min to form ribonucleoprotein complexes (RNPs). For the CTCF inversion clones, homology-directed repair (HDR) approach was used by adding 2 \u03bcg of dsDNA homology repair template (synthesized by Gene Universal) to the RNP complexes. dsDNA repair templates were designed to have 90\u2013130 bp of homology arms distal and proximal to the PAM sequence.\n\nFor CD34+ cells, about 2.5 \u00d7 105 cells were harvested 24 hr after thawing, washed in HBSS (Gibco, 14170112), resuspended in RNP complexes, and electroporated at 1600 V and 3 pulses of 10 ms using the Neon Transfection system (Thermo Fisher Scientific). For HUDEP-2 cells, 2 \u00d7 105 were harvested, resuspended in RNP complexes, and electroporated at 1300 V and 1 pulse of 20 ms using the Neon Transfection system. 24 hr after electroporation, cells were harvested to assay for deletion or inversion. Genomic DNA was extracted using DirectPCR lysis reagent (102T, Viagen) followed by proteinase K treatment at 55\u00b0C. PCR was performed using the EconoTaq PLUS 2X master mix (30033-2, Lucigen) with the following cycling conditions: 95\u00b0C for 2 min; 45 cycles of 95\u00b0C for 30 s, 55\u00b0C for 30 s, 72\u00b0C for 40 s; 72\u00b0C for 5 min. Amplicons were purified using the Zymoclean Gel DNA recovery kit and Sanger sequenced.\n\nThe sequence of guide RNA and other oligo sequence used to generate guideRNA, genotyping deletion, and HDR template is listed in Key resources table.\n\n### CD34+ cell ex vivo culture and differentiation\n\nG-CSF mobilized human peripheral blood CD34+ HSPCs were purchased from STEMCELL Technologies. Cells were thawed on day 0 into StemSpan serum-free expansion medium (09655, STEMCELL Technologies) supplemented with 100 ng/mL Flt3L (Peprotech), 50 ng/mL human stem cell factor (SCF; 300-07, Peprotech), 100 ng/mL TPO (Peprotech), and 1% penicillin/streptomycin (Gibco). Electroporation of RNP complexes was done on days 1 and 2 of the culture. Differentiation of CD34+ CD38 into erythroid progenitors was done in four phases of erythroid differentiation medium (EDM) consist of Iscove\u2019s modified Dulbecco\u2019s medium (IMDM; Gibco) supplemented with 5% human AB serum (H6914, Sigma), 10 \u03bcg/mL recombinant human insulin (I2643, Sigma), 2 units/mL heparin (H3393, Sigma), 3 units/mL Epogen (EPO, Amgen), 330 \u03bcg/mL holo-transferrin (T4132, Sigma), and 1% penicillin/streptomycin. EDM was further supplemented with 25 ng/mL human SCF and 1 ng/mL human IL-3 (Peprotech) in phase 1 of the culture (days 4\u20137). IL-3 was withdrawn and human SCF is decreased to 10 ng/mL in phase 2 of the culture (days 7\u201311). Human SCF is further decreased to 2 ng/mL in phase 3 of the culture (days 12\u201316). Human SCF was withdrawn and holo-transferrin is increased to 1 mg/mL (day 17 and beyond). Cells were collected on day 21 for flow cytometry, RNA extraction, and Giemsa stain.\n\n### Flow cytometry analysis of fetal hemoglobin protein expression\n\nUpon differentiation, the expression of fetal hemoglobin was analyzed by intracellular flow cytometry staining. Briefly, 50,000 cells were fixed and permeabilized in CytoFast Fix/Perm buffer set (426803, BioLegend), and incubated with FITC-conjugated anti-Human Fetal hemoglobin antibody (Miltenyl Biotec, clone # REA533) in the dark at room temperature for 15 min. In addition, phenotypic characterization of cells upon differentiation was done by cell-surface antigens staining with PE anti-human CD71 (334105, BioLegend) and APC anti-human CD235a (561775, BD Biosciences) monoclonal antibodies for 30 min at 4\u00b0C. For CD34+ cells, FITC anti-human CD233 (130-119-780, Miltenyi Biotec) was also used to assess differentiation. Cells were analyzed using CytoFLEX S flow cytometer, and FlowJo cytometry software was used for data visualization.\n\n### RNA isolation and quantitative PCR with reverse transcription (RT-qPCR)\n\nRNA was extracted from 1 to 2 million cells using TRIzol (Invitrogen) followed by phenol-chloroform extraction. Reverse transcription reactions were performed with random hexamers using iScript (Bio-Rad). BCL11A, HBB, HBD, HBG1/2, and HBE mRNAs were quantified by SsoAdvanced Universal SYBR Green Supermix (1725272, Bio-Rad) and run on a CFX96 Touch Real-Time PCR Detection System (Bio-Rad). The sequence of oligos is listed in key resources table.\n\n### Immunoblot\n\nProtein samples were denatured in 2X Laemmli buffer (161-0737, Bio-Rad) and boiled for 10 min. They were resolved on Novex Tris-Glycine gel (Invitrogen) and transferred onto 0.45 \u03bcM PVDF membrane (Immobilon-FL PVDF) using Invitrogen Mini Blot Module. Immunoblotting was performed with the following antibodies: BCL11A (ab191401, Abcam), beta-actin (20536-1-AP, Proteintech), \u03b2-globin (sc-21757, Santa Cruz Biotechnology), \u03b3-globin (sc-21756, Santa Cruz Biotechnology), and ZTB7A (mab3496, R&D Systems). Starbright B700-conjugated goat \u03b1-rabbit IgG (12004161, Bio-Rad) and DyLight 800 goat \u03b1-mouse IgG (STAR117D800GA, Bio-Rad) secondary antibodies were purchased from Bio-Rad. Signals were visualized on ChemiDoc MP imaging system (Bio-Rad).\n\n### Hemoglobin HPLC\n\n1 million HUDEP-2 cells were harvested and washed with PBS two times. After the harvest of the cells, cells were snap frozen at \u201380\u00b0. Frozen cell pellets were collected for HPLC at the University of Michigan Hospital.\n\n### RNA-sequencing\n\nTotal RNA from HUDEP-2 cells upon 5 days of differentiation were isolated using TRIzol followed by phenol-chloroform extraction. Sequencing libraries were prepared from 500 ng of total RNA using Swift Biosciences rapid RNA library kit following the manufacturer\u2019s protocol. Libraries were sequenced in the Illumina HiSeq 4000 platform to generate paired-end reads of 2 \u00d7 150 bp.\n\nPaired-end reads were trimmed with trim galore and aligned to hg19 genome with STAR (v2.7.0f) using the default parameters with the following modifications:(1) sjdbOverhang was set to sequence length \u2013 1 as recommended in the STAR manual, (2) twopassMode was set to Basic, (3) outReadsUnmapped was set to None, (4) outSAMtype was set to BAM SortedByCoordinate, and (5) quantMode was set to GeneCounts. Gene expression was quantified using STAR\u2019s built-in and counts were imported into R (v4.0) using readDGE function to produce DGE list object (Dobin et al., 2013; Robinson et al., 2010).\n\nDifferential expression (DE) analysis was performed in R with the edgeR package (v3.30.3). A paired DE analysis was performed to assess changes between groups (3\u2032HS1 deletion or inversion versus WT). Normalization factors and effective library size were applied. Dispersion was estimated using the \"estimateDisp\" function, with the design matrix as: ~ replicate + group, where \"replicate\" refers to biological replicates of each sample and \"group\" refers to the individual clones of deletion or inversion of 3\u2032HS1 and WT. Likelihood ratio test was performed for differential expression with the \"glmFit\" and \"glmLRT\" functions. The list of DE genes was further filtered by setting p-value < 0.01 and absolute value of log2 fold-change >1.\n\n### ATAC-sequencing\n\nATAC-seq was performed with Illumina Nextera XT library preparation kit (FC-131-1024, Illumina) as previously described (Buenrostro et al., 2015). Upon 5 days of HUDEP-2 differentiation, 50,000 cells were harvested and permeabilized in 50 \u03bcL of cold lysis buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% IGEPAL CA-630). The transposition reaction was carried out at 37\u00b0C for 30 min with agitation in 50 \u03bcL volume containing 25 \u03bcL of 2\u00d7 TD buffer and 2.5 \u03bcL of Nextera Tn5 transposase. DNA was purified with Qiagen MinElute PCR purification kit. Library amplification was done with KAPA HiFi HotStart ReadyMix PCR kit, and the resulting libraries were purified with Qiagen MinElute PCR Purification Kit. Libraries were sequenced in the Illumina HiSeq 4000 platform to generate paired-end reads of 2 \u00d7 150 bp.\n\nPaired-end reads were trimmed using Trim Galore (version 0.6.1) and aligned to hg19 using Burrows-Wheeler Aligner (bwa-mem, version 0.7.17). The resulting alignments were sorted, indexed using SAMtools (version 1.9), and marked for duplicates with samblaster (version 0.1.24). Reads were then normalized using deeptools bamCoverage with RPGC parameter and visualized with IGV.\n\n### CUT&RUN\n\nCTCF CUT&RUN was performed according to published protocol (Meers et al., 2019). Briefly, upon 5 days of differentiation, 500,000 HUDEP2 cells were immobilized with BioMag Plus Concanavalin A (BangsLabs, Inc). Cells were permeabilized and incubated with CTCF antibody (ab70303, Abcam) overnight. After washing away unbound antibody, pA-MNase (a gift from Dr. Steven Henikoff) was then added to the cells and incubated for 5 min in a metal block on ice. The MNase reaction was stopped, chromatin was released by diffusion at 37\u00b0C for 30 min, and DNA was extracted. Swift Biosciences Accel-NGS 2S Plus DNA library kit was used to construct NGS libraries. Libraries were sequenced on the Illumina HiSeq 4000 platform to generate paired-end reads of 2 \u00d7 150 bp.\n\nPaired-end sequencing reads were trimmed using Trimmomatic (version 0.36) and aligned to hg19 genome assembly using Bowtie2 (version 2.3.5) with the parameter \"--dovetail --phred33\". The resulting alignments were indexed, sorted, and marked for duplicates with Picard \"MarkDuplicates\" function. Reads were then normalized using deeptools bamCoverage with RPGC parameter and visualized with IGV.\n\n### Chromatin immunoprecipitation\n\nAbout 2 million HUDEP-2 cells upon 5 days of differentiation were harvested and fixed with 1% formaldehyde for 10 min at room temperature. Fixation was quenched with 0.125 M glycine. Cells were washed twice with ice-cold PBS, lysed in 0.13 mL of lysis buffer (10 mM Tris pH 8.0, 0.25% SDS, 2 mM EDTA, 1X protease inhibitors), and sonicated in a Covaris microtube with Covaris ultrasonicator (E220, Covaris). Sonicated chromatin was diluted with 0.2 mL of equilibration buffer (10 mM Tris pH 8.0, 233 mM NaCl, 1.66% Triton X-100, 0.166% sodium deoxycholate, 1 mM EDTA, 1X protease inhibitors) and spun down to pellet insoluble materials. Supernatant was mixed with 2 \u00b5g of antibody (H3K27ac, D5E4, Cell Signaling) and incubated at 4\u00b0C overnight. 10 \u00b5L of Dynabeads protein A (Thermo Fisher Scientific) were washed twice with 0.1% BSA/PBS and incubated overnight alongside the chromatin. After overnight rotating, beads were transferred to the tube containing chromatin and incubated for 2 hr. Beads were washed twice with RIPA-LS (10 mM Tris pH 8.0, 140 mM NaCl, 1 mM EDTA, 0.1% SDS, 0.1% sodium deoxycholate, 1% Triton X-100), twice with RIPA-HS (10 mM Tris pH 8.0, 500 mM NaCl, 1 mM EDTA, 0.1% SDS, 0.1 % sodium deoxycholate, 1% Triton X-100), twice with RIPA-LiCl (10 mM Tris pH 8.0, 250 mM LiCl, 1 mM EDTA, 0.5% NP-40, 0.5% sodium deoxycholate), and once with 10 mM Tris pH 8.0. After washing, 48 \u03bcL of elution buffer (10 mM Tris pH 8.0, 5 mM EDTA, 300 mM NaCl, 0.4% SDS) with 2 \u03bcL of 20 mg/mL of proteinase K (Viagen) were added to the beads and incubated for 1 hr at 55\u00b0C followed by overnight incubation at 65\u00b0C to decrosslink. Beads were magnetized and supernatant was purified with phenol-chloroform. DNA was precipitated with ice-cold absolute ethanol, washed with 75% ethanol, and eluted with 20 \u03bcL of 10 mM of Tris pH 8.0. Accel-NGS 2S Plus DNA library kit (21096, Swift Bioscience) was used to construct the libraries with the 2S combinatorial dual indexing kit (28096, Swift Bioscience). Libraries were sequenced on the HiSeq 4000 platform to generate paired-end reads sequencing 2 \u00d7 150 bp.\n\nReads were aligned to the human genome (hg19) using Bowtie2 (version 2.3.5). The resulting alignments bam files were indexed, sorted with SAMtools, and marked for duplicates with Picard \"MarkDuplicates\" function. Reads were then normalized using deeptools bamCoverage with RPGC parameter and visualized with IGV.\n\n### Chromatin conformation capture (HiC and capture HiC)\n\n#### Hi-C library preparation\n\nApproximately 2 million cells of each HUDEP-2 clone were differentiated for 5 days and fixed in 1% formaldehyde. Hi-C libraries were generated using the Arima-HiC kit, according to the manufacturer\u2019s protocols. Libraries were prepared using the Accel-NGS 2S Plus kit (Swift Biosciences, 21096), with single indexing kit 2S Set A (Swift Biosciences, 26148). The final amplification cycle numbers for each library were determined by qPCR in the QC2 step of the Arima protocol. Quantification of the libraries was performed with KAPA Library Quantification Kit (Roche, KK4824). The libraries were then pooled for sequencing on NovaSeq S4 to get between 300 and 400 million reads each.\n\n#### Probe design\n\nThe capture probes were designed as previously described (Sanborn et al., 2015). 3822 oligos of probe sequence covering Chr11:4665299\u20135954156 with adaptor sequence on both end as follows: ATCGCACCAGCGTGT N120 CACTGCGGCTCCTCA was synthesized by GeneScripts. The biotinylated RNA probes specific to the \u03b2-globin locus were made as described. Briefly, the desired sequences were amplified out of the pool with primer sequences complementary to both ends using KAPA HiFi HotStart MasterMix for 12 cycles. The oligonucleotides were then prepared for in vitro transcription by adding a T7 promoter to the forward primer and amplifying for a further 15 cycles. In vitro transcription with Biotin-16-UTP was performed with NEB HiScribe T7 for 2 hr at 37\u00b0C. The template DNA was degraded by adding 1 \u03bcL DNase and incubating at 37\u00b0C for a further 15 min, and then stopping the reaction by adding 1 \u03bcL 0.5 M EDTA. The RNA was then purified using Zymo RNA Clean & Concentrator columns, eluting in 15 \u03bcL elution buffer. We then added 1 U/\u03bcL RNase Inhibitor (NEB, M0314), aliquoted, and stored at \u201380\u00b0C until needed for the capture.\n\n#### Capture\n\n150\u2013500 ng of the previously created Hi-C libraries were diluted to 25 \u03bcL and mixed with 2.5 \u03bcg Cot-1 DNA and 10 \u03bcg salmon sperm DNA and heated to 95\u00b0C for 5 min, then held at 65\u00b0C for at least 5 min. 33 \u03bcL of prewarmed (to 65\u00b0C) hybridization buffer (10\u00d7 SSPE, 10\u00d7 Denhardt\u2019s buffer, 10 mM EDTA, and 0.2% SDS), along with 6 \u03bcL of RNA probe mixture (500 ng biotinylated-RNA probes and 20 U RNase inhibitor) were added to the DNA mixture and hybridized for 24 hr at 65\u00b0C. After the hybridization incubation was complete, 50 \u03bcL of Streptavidin T1 beads (Dynabeads, Life Technologies) were washed in Bind-and-Wash buffer (1 M NaCl, 10 mM Tris-HCl, pH 7.5, and 1 mM EDTA), resuspended in 134 \u03bcL of the same buffer, and then added to the hybridization mixture. The beads were allowed to bind to the biotinylated, hybridized DNA and RNA mixture for 30 min at room temperature before separating and discarding the supernatant. The bead-bound DNA was then washed once with low-stringency wash buffer (1\u00d7 SSC, 0.1% SDS), for 15 min at room temperature, and three times with high-stringency wash (0.1\u00d7 SSC, 0.1% SDS) for 10 min at 65\u00b0C, separating the beads on a magnet each time before discarding the supernatant. After the last wash, the beads were resuspended in 21 \u03bcL nuclease-free water. 1 \u03bcL was diluted 1:1000 and had qPCR performed as for QC2 of the Arima protocol to determine the number of cycles to amplify the enriched libraries.\n\n#### Virtual 4C\n\nVirtual 4C track was generated by using Juicebox. Horizontal and vertical 1D track of the 5 kb (chr11:5,165,001\u20135,170,000) \u00d7 5 kb (chr11:5,275,001\u20135,280,000) pixel was generated with Juicebox \u2018generate 1D track\u2019 function.\n",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "39756835-eac8-4a88-86be-050be25dcdfe",
+      "submission_id": "0dbc2507-7e70-49a5-ac8f-654f2ff7b80d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael D Bulger, University of Rochester United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70557.sa1](https://doi.org/10.7554/eLife.70557.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis study provides insight into specifics of the organization and regulation of the human \u03b2-globin gene locus, and in particular of the contribution of a CTCF binding site located immediately downstream of the cluster. In addition to clarifying and expanding upon prior studies related to deletional hereditary persistence of fetal hemoglobin (HPFH), this work provides an interesting example of changes to gene expression and locus-specific chromatin organization upon manipulation of a CTCF binding site.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"3'HS1 CTCF binding site in human \u03b2-globin locus regulates fetal hemoglobin expression\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Present expression data for the genes within the \u03b2-globin cluster in different backgrounds as requested by the reviewers, including HBB expression in the 48 kb deletion and in the 3'HS1 deletion performed in the primary cell background.\n\n2) Address the concerns of both reviewers concerning the clarity of the presentation of the Hi-C data and the interpretation of the ATAC- and H3K27ac ChIP-seqs, as well as the relative effects of the enhancer deletion on different genes.\n\n3) Address or rebut the concern of reviewer #1 regarding the number of DEGs observed upon deletion of 3'HS1.\n\nReviewer #1 (Recommendations for the authors):\n\n1. (Lines 86-87, Figure 1) It is somewhat confusing for the authors to jump into Hi-C results immediately after introducing the derivation of single cell-derived HUDEP-2 subclones. Having shown expression of \u03b2-globin genes in CRISPR/Cas9-manipulated HUDEP-2 bulk populations (which is of limited utility here and might productively be omitted), one expects similar analysis of the subclones first. Instead, this is practically an afterthought in Figures G-H. The presentation in these panels is also odd, in that 2 3'HS1-deleted subclones are presented as relative HBB/HBG expression in G, and then a different one is presented as normalized expression of HBE/G/B in H. Why not show all 3 subclones in a clearer fashion? Also, while normalized expression certainly gives an idea of the magnitude of changes upon 3'HS1 deletion, given the authors' speculations regarding potential therapeutic ramifications of increased HBG expression here, it would be worth at least a supplemental panel showing the absolute levels of expression of each of these genes.\n\n2. (Lines 124-129) Although it seems likely that the authors' statement is accurate thatincreased accessibility, as indicated by ATAC-seq, and increased H3K27Ac, occur over the bodies of the HBG genes upon 3'HS1 deletion (Figure S4A), the figure appears to show increases in accessibility at the HBB/D genes as well, and increases in H3K27Ac peaks both at the genes and across the LCR.\n\n3. (Lines 128-129) \"\u2026and the region with significant peak increase is not associated with BCL11A 129 binding at the HBG1/2 promoter region.\" This is confusingly worded. What the authors mean here is that the regions over the HBG genes associated with increased reads in the ATAC-seq and H3K27Ac ChIP-seqs do not map to the regions associated with BCL11A binding. In addition, however, this is an odd observation, which the authors do not attempt to clarify \u2013 that is, how is HBG expression increasing without any noticeable changes in accessibility at the promoter region? Is it just that the absolute levels of HBG expression are so low, and/or occurring in such a small proportion of cells, that such changes aren't being detected?\n\n4. (Lines 133-135) Is it surprising to find so many DEGs upon deletion of 3'HS1? It seems odd to observe more than 300 DEGs after deletion of a single CTCF binding site within the \u03b2-globin locus. None of the nearby genes are known transcriptional regulators that might be expected to exert significant downstream effects on multiple additional genes, and based on the current literature one does not expect loss of a single CTCF binding site to exert such widespread effects beyond its specific location in the genome. What are these DEGs \u2013 is there any significance that emerges upon pathway analysis? Where are they located in the genome?\n\n5. (Line 146) There is no Figure 2G; the authors are likely referring to Figure 2F here.\n\n6. (Line 151) I'm not sure that \"synergizes\" is an accurate term here. The results suggest that 3'HS1 deletion results in upregulation of HBG expression via a mechanism unrelated to BCL11A-mediated transcriptional repression, though.\n\n7. (Lines 173-180, Figures 3C-D) The GATA-1/enhancer deletions appear to affect HBE and HBB to the same or nearly the same degree as HBG.\n\n8. (Lines 199-201) What is the effect of the 48 kb deletion on HBB?\n\n9. (Line 227) This is likely not a proper TAD \u2013 TADs are generally much larger than the regions the authors describe here. \"Sub-TAD\" (as per terminology commonly used by the Higgs group with relation to locus organization at the \u03b1-globin locus) might be more appropriate.\n\n10. (Lines 236-239) Where might the additional enhancers the authors refer to here actually be? There is nothing in Figure 3A that might suggest the presence of such enhancers. Can the authors clarify this further?\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors analyzed the functional role of a CTCF binding site in the \u03b2-globin gene locus in Hudep-2 and differentiating CD34+ cells. Previous studies have shown that CTCF sites flanking the globin gene locus interact and form chromosomal loops. The authors found that deleting 3'HS1 specifically increased expression of the \u03b3-globin gene and reduced expression of the \u03b2-globin gene. This seems independent from the levels of the known \u03b3-globin repressor BCL11a. Through analysis of ATAC seq. and GATA1-ChIP-seq. data, they identified an enhancer that upon deletion reduced activation of globin in the 3'HS1 deficient cells. Deletion of a GATA1 site within this enhancer also reduced globin expression.\n\nThis is an interesting manuscript that provides functional insight into regulatory DNA elements located downstream of the \u03b2-globin gene cluster. This study is also significant with respect to potentially improving therapeutic fetal globin production. Overall, the experiments include appropriate controls and statistics.\n\nThe following issues should be address:\n\n1. It is somewhat difficult to follow the authors interpretation of the Hi-C data in Figure 1 C-E. It appears that upon deletion of 3'HS1 a domain is formed between the most 3' CTCF site (OR52A5-CBS) and a sequence upstream of 3'HS1. This domain appears to contain the adult \u03b2-globin gene and there are more frequent interactions within this domain in 3'HS1 deleted cells, compared to WT cells. Could this in part explain why this deletion increases \u03b3-globin and not \u03b2-globin. Likewise, the green-dotted circle seems to highlight interactions of OR52A5-CBS with a region upstream of HS5, but not with HS5.\n\n2. The authors show that deletion or inversion of 3'HS1 does not affect expression of BCL11A. However, the western blot data in Figure 2E suggest that there is more BCL11A in the 3'HS1 inverted clones. This may explain why there is less \u03b3-globin expressed in these cells.\n\n3. Does deletion of 3'HS1 affect expression of \u03b2-globin in differentiating CD34+ cells.\n",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ab51244e-c7dc-41f9-94ed-2c5e32c4c4c3",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C1",
+      "claim": "Mutations in the adult \u03b2-globin gene can lead to a variety of hemoglobinopathies, including sickle cell disease and \u03b2-thalassemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the adult \u03b2-globin gene can lead to a variety of hemoglobinopathies, including sickle cell disease and \u03b2-thalassemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about hemoglobinopathies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "eec73da3-318c-4416-a847-8ea3d10612c3",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C2",
+      "claim": "An increase in fetal hemoglobin expression throughout adulthood (hereditary persistence of fetal hemoglobin, HPFH) has been found to ameliorate hemoglobinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in fetal hemoglobin expression throughout adulthood, a condition named hereditary persistence of fetal hemoglobin (HPFH), has been found to ameliorate hemoglobinopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "44ba6dd8-76ee-40af-8df2-ed7c42d96406",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C3",
+      "claim": "Deletional HPFH occurs through the excision of a significant portion of the 3\u2032 end of the \u03b2-globin locus, including a CTCF binding site termed 3\u2032HS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletional HPFH occurs through the excision of a significant portion of the 3\u2032 end of the \u03b2-globin locus, including a CTCF binding site termed 3\u2032HS1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about deletional HPFH.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "adea9cce-b856-413d-bb7a-0adb9a937bc8",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C4",
+      "claim": "Deletion of the 3\u2032HS1 CTCF site alone induces fetal hemoglobin expression in both adult CD34+ hematopoietic stem and progenitor cells and HUDEP-2 erythroid progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the deletion of this CTCF site alone induces fetal hemoglobin expression in both adult CD34+ hematopoietic stem and progenitor cells and HUDEP-2 erythroid progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figures 1 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "ea8d1b8a-5e96-4b9e-8bee-42235c4025e2",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C5",
+      "claim": "The induction of fetal hemoglobin by 3\u2032HS1 deletion is driven by the ectopic access of a distal enhancer located in the OR52A1 gene downstream of the locus.",
+      "claim_type": "EXPLICIT",
+      "source": "This induction is driven by the ectopic access of a previously postulated distal enhancer located in the OR52A1 gene downstream of the locus, which can also be insulated by the inversion of the 3\u2032HS1 CTCF site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing deletion of the HPFH enhancer in OR52A1 reduces HBG expression in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "715b3905-a78c-40ef-a70e-bc8eaab1b83b",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C6",
+      "claim": "The distal enhancer in OR52A1 can be insulated by the inversion of the 3\u2032HS1 CTCF site.",
+      "claim_type": "EXPLICIT",
+      "source": "This induction is driven by the ectopic access of a previously postulated distal enhancer located in the OR52A1 gene downstream of the locus, which can also be insulated by the inversion of the 3\u2032HS1 CTCF site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing 3\u2032HS1 inversion reduces HBG expression in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "5a43222a-c3a3-4b41-bbb8-0ffd38e4233a",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C7",
+      "claim": "Genetic editing of the 3\u2032HS1 binding site can have therapeutic implications to treat hemoglobinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that genetic editing of this binding site can have therapeutic implications to treat hemoglobinopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "33608430-fd09-4794-9f44-eedea8e2f15a",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C8",
+      "claim": "The human \u03b2-globin locus consists of five globin genes embedded in the olfactory receptor cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The human \u03b2-globin locus consists of five globin genes embedded in the olfactory receptor cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the \u03b2-globin locus structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "0692156d-3e4c-44e6-84ae-ad9279aa2549",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C9",
+      "claim": "During early development, globin genes undergo gene switching from embryonic \u03b5-globin (HBE) to fetal \u03b3-globin (HBG1/2) and finally to adult \u03b2-globin (HBB).",
+      "claim_type": "EXPLICIT",
+      "source": "During early development, these globin genes undergo gene switching from embryonic \u03b5-globin (HBE) to fetal \u03b3-globin (HBG1/2) and finally to adult \u03b2-globin (HBB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about globin gene switching during development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "4c8b1d7f-d921-4ace-95ef-e262fba0b8c7",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C10",
+      "claim": "Inherited mutations in the HBB gene lead to dysfunction of the adult \u03b2-globin protein, causing hemoglobinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Inherited mutations in the HBB gene lead to dysfunction of the adult \u03b2-globin protein, causing hemoglobinopathies (Bauer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "28bc3d2d-9d7d-42ec-9d6a-46e43b40dcc9",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C11",
+      "claim": "The symptoms of hemoglobinopathies can be alleviated by persistent expression of fetal hemoglobin throughout adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "The symptoms of these disorders, including sickle cell disease and \u03b2-thalassemia, can be alleviated by persistent expression of fetal hemoglobin (hereditary persistence of fetal hemoglobin [HPFH]) throughout adulthood, which compensates for the mutant adult \u03b2-globin (Bank, 2006; Hassell, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "c0501d01-c065-492a-b60a-531d53cf87da",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C12",
+      "claim": "Multiple genome-editing strategies have been proposed to mimic HPFH as a treatment for hemoglobinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, multiple genome-editing strategies have been proposed to mimic HPFH as a treatment for hemoglobinopathies (Bauer et al., 2012; Breda et al., 2016; Sankaran et al., 2008; Sankaran et al., 2011; Sankaran et al., 2009; Traxler et al., 2016; Xu et al., 2011; Ye et al., 2016; Zeng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "03ce8f2d-e3bd-471e-97fe-20c4278b9f42",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C13",
+      "claim": "Non-deletional HPFH is caused by point mutations in the BCL11A binding site at the HBG1/2 promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "First is the non-deletional HPFH caused by point mutations in the BCL11A binding site at the HBG1/2 promoters, and disruption of this transcriptional repressor binding leads to the activation of these genes (Forget, 1998; Liu et al., 2018; Martyn et al., 2018; Traxler et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "ddfcba89-d09c-4a9b-9687-09bbf7d41b46",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C14",
+      "claim": "Deletional HPFH consists of the excision of a large genomic region within the \u03b2-globin locus, frequently including HBB and HBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Second is the deletional HPFH that consists of the excision of a large genomic region within the \u03b2-globin locus, frequently including HBB and HBD (Forget, 1998; Ye et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "f1e2d2da-d2d7-414d-a277-ace4a6085212",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C15",
+      "claim": "It remains unclear how deletional HPFH deletions lead to the expression of fetal globin in adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "These deletions can vary in length, and it remains unclear as to how they lead to the expression of fetal globin in adulthood (Ye et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "e9694b32-0ab2-4b49-9b13-9ee5a2dd2f35",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C16",
+      "claim": "The human \u03b2-globin gene locus is flanked by five CTCF binding sites (CBSs), which form the anchors for six chromosomal loops.",
+      "claim_type": "EXPLICIT",
+      "source": "The human \u03b2-globin gene locus is flanked by five CTCF binding sites (CBSs), which form the anchors for six chromosomal loops (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "661e7d06-3319-4972-a68d-8eefd786d9ef",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C17",
+      "claim": "Two convergent CBSs, designated as 3\u2032HS1 and HS5, are located at the borders of the globin gene cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Two convergent CBSs, designated as 3\u2032HS1 and HS5, are located at the borders of the globin gene cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the genomic architecture shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "f5b89e0b-ed8b-45db-901d-b8dbabda63fe",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C18",
+      "claim": "HPFH deletions frequently cover the 3\u2032HS1 CBS.",
+      "claim_type": "EXPLICIT",
+      "source": "The HPFH deletions frequently cover the 3\u2032HS1 CBS (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the figure showing HPFH deletion regions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "acf34d63-fff1-4fbc-9e05-035574e89752",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C19",
+      "claim": "Deletion of the HS5 CTCF site in K562 cells resulted in the upregulation of the 3\u2032 genes including HBB and HBG1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that deletion of the HS5 CTCF site resulted in the upregulation of the 3\u2032 genes including HBB and HBG1/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "1596c6ba-6735-497d-b95d-02fec9a70c68",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C20",
+      "claim": "The disruption of 3\u2032HS1 CBS in K562 cells led solely to the upregulation of HBG1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the disruption of 3\u2032HS1 CBS led solely to the upregulation of HBG1/2 (Figure 1\u2014figure supplement 1B and C, Figure 1\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "0d1ee221-6610-483f-8e5d-347a2a4f8d40",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C21",
+      "claim": "Altering the CTCF binding profile across the \u03b2-globin locus can significantly change the expression of the \u03b2-globin genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that altering the CTCF binding profile across the locus can significantly change the expression of the \u03b2-globin genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results in K562 cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "4d034770-5f5b-47d4-a0da-59a44e14d739",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C22",
+      "claim": "In situ Hi-C data was generated with high resolution at 5 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ Hi-C data was generated with high resolution at 5 kb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "3047da9f-ef26-4263-b23e-5fde47a3ad2a",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C23",
+      "claim": "A total of 15,207\u201316,529 loops could be detected in the HUDEP-2 clones used for in situ Hi-C using Mustache.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 15,207\u201316,529 loops could be detected in the HUDEP-2 clones used for in situ Hi-C using Mustache (Figure 1\u2014figure supplement 2A; Roayaei Ardakany et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from Hi-C analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "f59251f9-65c8-4772-a0b4-7a62ab6bdcd6",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C24",
+      "claim": "The CTCF bound around the \u03b2-globin locus form four chromosomal loops and separate the cluster into three distinct domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTCF bound around the \u03b2-globin locus form four chromosomal loops and separate the cluster into three distinct domains (Figure 1A and C, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Hi-C data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "5d0e0e10-82f3-4860-a289-4ab5665267c9",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C25",
+      "claim": "Enhancer to target gene interaction between the LCR and the HBB gene could be detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Of notice, we could detect the enhancer to target gene interaction between the LCR and the HBB gene (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Hi-C data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "cc919e57-4d19-42c7-a39e-e340dffba738",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C26",
+      "claim": "All HUDEP-2 clones have chromosome number 49\u201350,XY, which is of normal range in unmodified HUDEP-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the copy number variance (CNV) in the three particular HUDEP-2 clones, we could verify all clones have chromosome number 49\u201350,XY, which is of normal range in unmodified HUDEP-2 cells (Figure 1\u2014figure supplement 2C; Moir-Meyer et al., 2018; Vinjamur and Bauer, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CNV analysis and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "b59aaf3a-0716-4a20-93de-45f8be7a8b7a",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C27",
+      "claim": "In the 3\u2032HS1 deletion clone, the loss of CTCF at 3\u2032HS1 resulted in the total loss of loops between 3\u2032HS1 and HS5.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 3\u2032HS1 deletion clone, the loss of CTCF at 3\u2032HS1 resulted in the total loss of loops between 3\u2032HS1 and HS5 as well as loops between 3\u2032HS1 and 5\u2032-OR51B5-CBSs (not called as loop).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Hi-C data shown in Figure 1D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "62c1c8ac-d705-422f-8746-7041a01dc95a",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C28",
+      "claim": "In the 3\u2032HS1 deletion clone, a strong increase in the interaction between HS5 and 3\u2032-OR51A5-CBS was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, a strong increase in the interaction between HS5 and 3\u2032-OR51A5-CBS was observed (Figure 1D and F, Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Hi-C data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "338e3330-4c26-404e-a81b-586dd0d28165",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C29",
+      "claim": "The loss of a CTCF anchor drastically alters the 3D chromatin organization in the \u03b2-globin locus.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals how the loss of a CTCF anchor drastically alters the 3D chromatin organization in the \u03b2-globin locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Hi-C data showing changes in chromatin loops.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "f54fed01-dbca-4442-a595-4ab70c4ad420",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C30",
+      "claim": "The inversion of the 3\u2032HS1 CTCF caused a significant increase in the interaction between 3\u2032HS1 and 3\u2032-OR52A5 CBS.",
+      "claim_type": "EXPLICIT",
+      "source": "The inversion of the 3\u2032HS1 CTCF caused a significant increase in the interaction between 3\u2032HS1 and 3\u2032-OR52A5 CBS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Hi-C data shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "a69b131a-8757-4c71-9a23-b11be48a3fbc",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C31",
+      "claim": "In 3\u2032HS1 inversion clones, 3\u2032HS1 upstream interactions with HS5 and 5\u2032-OR51B5-CBSs were decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, 3\u2032HS1 upstream interactions with HS5 and 5\u2032-OR51B5-CBSs were decreased (Figure 1E and F, Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Hi-C data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "f01c4311-87ce-4e48-9505-dfdd48421ecc",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C32",
+      "claim": "The inversion of 3\u2032HS1 CTCF drives the formation of chromosomal loops between the convergent CBSs, which may lead to stronger insulation of regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that the inversion of 3\u2032HS1 CTCF drove the formation of chromosomal loops between the convergent CBSs, which may lead to stronger insulation of regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Hi-C data and understanding of CTCF function.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "7775bf1c-ee89-4c42-ab32-bf4749a24d9a",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C33",
+      "claim": "The HBG1/2 and HBE genes upregulated 2.5- to 8-fold in the \u03943\u2032HS1 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we evaluated the expression of the \u03b2-globin genes and found that the HBG1/2 and HBE genes upregulated 2.5- to 8-fold in the \u03943\u2032HS1 clones (Figure 1G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "b53ab8db-60a2-4c9a-bdf3-bb5e39f48ed6",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C34",
+      "claim": "The inversion of 3\u2032HS1 resulted in a >50% reduction of HBE and near-complete depletion of HBG1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the inversion of 3\u2032HS1 resulted in a >50% reduction of HBE and near-complete depletion of HBG1/2 (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "e73d0247-7857-4303-8f01-b5a8360451c9",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C35",
+      "claim": "The increase in HBG1/2 upon deletion of the 3\u2032HS1 CTCF site leads to a significant increase in fetal hemoglobin HbF.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, the increase in HBG1/2 upon deletion of the 3\u2032HS1 CTCF site leads to a significant increase in fetal hemoglobin HbF (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "ee8bcbd2-a190-479f-927d-5b46615d8100",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C36",
+      "claim": "An increase in HbF+ cells from 4.3% in the Cas9 control clone to 37.8% and 53.1% in \u03943\u2032HS1 B6 and D3 clones, respectively, was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, we evaluated the clones for HbF+ cells by flow cytometry. Consistent with transcription level, we observed an increase in HbF+ cells from 4.3% in the Cas9 control clone to 37.8% and 53.1% in \u03943\u2032HS1 B6 and D3 clones, respectively (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "8740737e-8655-428d-9885-9a45f7aa3018",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C37",
+      "claim": "Inversion of 3\u2032HS1 resulted in a decrease of HbF+ cells to below 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, inversion of 3\u2032HS1 resulted in a decrease of HbF+ cells to below 1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "2a1e20d7-0b84-4dd5-9032-59190a4519d9",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C38",
+      "claim": "Deletion of the upstream HS5 CBS did not induce nor abrogate the quantity of HbF+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, deletion of the upstream HS5 CBS did not induce nor abrogate the quantity of HbF+ cells (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "8810b96a-d37c-40e5-8ac4-a6e1aa67e18b",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C39",
+      "claim": "Following 3\u2032HS1 CBS deletion, significant open chromatin was observed at the HBG1/2, BGLT3, and HBBP1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Following 3\u2032HS1 CBS deletion, we observed significant open chromatin at the HBG1/2, BGLT3, and HBBP1 genes (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ATAC-seq data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "17ed7da3-6bb5-4991-9d0d-d5e434f512b8",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C40",
+      "claim": "There was a significant increase in activating H3K27ac in the HBG2 gene body following 3\u2032HS1 CBS deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a significant increase in activating H3K27ac in the HBG2 gene body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by H3K27ac ChIP-seq data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "c6861ea5-f109-402b-a158-bf4933fd3d35",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C41",
+      "claim": "Epigenetic changes upon deletion of 3\u2032HS1 CBS do not occur at the promoter of HBG2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these epigenetic changes upon deletion of 3\u2032HS1 CBS do not occur at the promoter of HBG2, which suggests that this 3\u2032HS1-dependent regulation is independent from BCL11A transcriptional regulation (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ATAC-seq and ChIP-seq data and is an inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "9fd99787-d93f-4bd0-b3bd-a1e80be557c9",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C42",
+      "claim": "161 upregulated and 153 downregulated genes were found in the \u03943\u2032HS1 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 161 upregulated and 153 downregulated genes in the \u03943\u2032HS1 clones with HBG1/2 genes being the most significantly upregulated as well as \u03b2-globin cluster genes HBE1, HBBP, and BGLT3 (Figure 2A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "485e5e6b-d404-45a0-9e03-356f4a35b4ab",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C43",
+      "claim": "HBG1/2 genes were the most significantly upregulated in the \u03943\u2032HS1 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 161 upregulated and 153 downregulated genes in the \u03943\u2032HS1 clones with HBG1/2 genes being the most significantly upregulated as well as \u03b2-globin cluster genes HBE1, HBBP, and BGLT3 (Figure 2A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "5f3be6f1-2622-4f32-b367-1f57b3cc5147",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C44",
+      "claim": "In the 3\u2032HS1 inversion clones, only 3 upregulated genes and 51 downregulated genes were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 3\u2032HS1 inversion clones, we identified only 3 upregulated genes and 51 downregulated genes (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "faebb472-c658-4884-afef-c1ca1a67d869",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C45",
+      "claim": "In 3\u2032HS1 inversion clones, downregulation of HBG2 and upregulation of the nearby OR52A5 gene was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In these clones, we observed downregulation of HBG2 and upregulation of the nearby OR52A5 gene; however, we did not observe any change in the expression of known \u03b3-globin regulators (BCL11A, ZBTB7A (LRF), ELF2AK1 (HRI), ATF4, ZNF410, and NFIX) (Figure 2B and D, Supplementary file 1; Grevet et al., 2018; Masuda et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "56d75314-fb45-44a6-9ac2-ccda969696f4",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C46",
+      "claim": "No change in the expression of known \u03b3-globin regulators (BCL11A, ZBTB7A (LRF), ELF2AK1 (HRI), ATF4, ZNF410, and NFIX) was observed in 3\u2032HS1 inversion clones.",
+      "claim_type": "EXPLICIT",
+      "source": "In these clones, we observed downregulation of HBG2 and upregulation of the nearby OR52A5 gene; however, we did not observe any change in the expression of known \u03b3-globin regulators (BCL11A, ZBTB7A (LRF), ELF2AK1 (HRI), ATF4, ZNF410, and NFIX) (Figure 2B and D, Supplementary file 1; Grevet et al., 2018; Masuda et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "7021109f-412a-4348-9162-d60c6605e36c",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C47",
+      "claim": "No significant reduction in BCL11A protein level was observed in \u03943\u2032HS1 clones by immunoblotting.",
+      "claim_type": "EXPLICIT",
+      "source": "We further verified BCL11A protein level by immunoblotting and observed no significant reduction in \u03943\u2032HS1 clones (Figure 2, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "ef795584-45d1-4694-849d-e5d59edc1c2d",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C48",
+      "claim": "BCL11A does not contribute to the induction of HbF in the edited HUDEP-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we concluded that BCL11A does not contribute to the induction of HbF in the edited HUDEP-2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the RNA-seq and Western blot data showing no change in BCL11A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "10ac99a0-95cf-4c76-b884-ba233716cfb3",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C49",
+      "claim": "Targeted disruption of a BCL11A gene enhancer in both WT and \u03943\u2032HS1 HUDEP-2 clones resulted in significantly lower BCL11A expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To further elucidate the role of BCL11A in the regulation of HBG1/2, we performed targeted disruption of a known BCL11A gene enhancer in both WT and \u03943\u2032HS1 HUDEP-2 clones (Figure 2\u2014figure supplement 1B, Figure 2\u2014figure supplement 1\u2014source data 1; Bauer et al., 2013). This mutation resulted in a significantly lower BCL11A expression, and we observed further increase of HBG1/2 expression level and HbF+ cells (Figure 2F, Figure 2\u2014figure supplement 1C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "05b14b99-f9b0-4ef7-a8bf-e3cfddefb51b",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C50",
+      "claim": "BCL11A enhancer disruption resulted in further increase of HBG1/2 expression level and HbF+ cells in \u03943\u2032HS1 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation resulted in a significantly lower BCL11A expression, and we observed further increase of HBG1/2 expression level and HbF+ cells (Figure 2F, Figure 2\u2014figure supplement 1C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "9cc1d396-2419-415f-becb-8c4158a26d8c",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C51",
+      "claim": "Pomalidomide treatment of HUDEP-2 3\u2032HS1 deletion clones resulted in a significant reduction in BCL11A protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Pomalidomide was found to boost the level of HbF in adult erythroblasts by destabilizing the BCL11A protein in cells (Grevet et al., 2018). Therefore, we treated HUDEP-2 3\u2032HS1 deletion clones with pomalidomide and observed a significant reduction in BCL11A protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "1bff0598-2e86-4620-92d9-bd44ccc40a7d",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C52",
+      "claim": "Pomalidomide treatment led to further increase in expression of fetal globin in 3\u2032HS1 deletion clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we treated HUDEP-2 3\u2032HS1 deletion clones with pomalidomide and observed a significant reduction in BCL11A protein. This led to further increase in expression of fetal globin (Figure 2\u2014figure supplement 2A and D, Figure 2\u2014figure supplement 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "a5d8a55b-b4d8-418d-8973-8b7dfe064201",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C53",
+      "claim": "Genetic editing of the regulatory cis-element (3\u2032HS1 CBS) accentuates with depletion of the transcriptional repressor BCL11A.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that genetic editing of the regulatory cis-element (3\u2032HS1 CBS) accentuates with depletion of the transcriptional repressor BCL11A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the additive effects of 3\u2032HS1 deletion and BCL11A depletion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "7c3e19d9-bb98-48b2-8038-53ac3c7a9375",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C54",
+      "claim": "The \u03b3-globin activation in 3\u2032HS1 deletion HUDEP-2 cells was not driven by the BCL11A-associated pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This further indicates that the \u03b3-globin activation in 3\u2032HS1 deletion HUDEP-2 cells was not driven by the BCL11A-associated pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that BCL11A levels do not change with 3\u2032HS1 deletion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "96f467f2-ce1b-472d-9b4f-71c0c3fda44e",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C55",
+      "claim": "The double disruption of BCL11A and 3\u2032HS1 led to similar level of \u03b3-globin activation as the disruption of BCL11A alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The double disruption of BCL11A and 3\u2032HS1 also led to similar level of \u03b3-globin activation as the disruption of BCL11A alone (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "ecabeb9f-44cb-4e5d-907c-afd62b0f8502",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C56",
+      "claim": "3\u2032HS1-regulated \u03b3-globin repression might be hypostatic to the BCL11A-mediated \u03b3-globin repression.",
+      "claim_type": "EXPLICIT",
+      "source": "This data suggests that 3\u2032HS1-regulated \u03b3-globin repression might be hypostatic to the BCL11A-mediated \u03b3-globin repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the epistasis experiment results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "fc7d43d9-b1d1-4ce1-bac6-2fe47708643d",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C57",
+      "claim": "The OR52A1 region is bound by the GATA1 transcriptional activator in the erythroid lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We then analyzed the ATAC-seq, GATA1 ChIP-seq data together to search for potential cis-regulatory elements. We found the OR52A1 region bound by the GATA1 transcriptional activator in the erythroid lineages (Corces et al., 2016; Feingold and Forget; Liu et al., 2018; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GATA1 ChIP-seq data shown in the figure and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "8063afcf-80a6-4913-a8c4-2f12c5a40a13",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C58",
+      "claim": "A previously described HPFH enhancer encompasses both OR52A1 gene and GATA1 binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the mapping of a previously described HPFH enhancer encompassed both OR52A1 gene and GATA1 binding site (Elder et al., 1990; Feingold and Forget, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "d95df8ea-f3d7-4712-bc67-cd38123b535d",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C59",
+      "claim": "Deletion of the GATA1 binding site within the HPFH enhancer in \u03943\u2032HS1 clones reduced the HBG1/2 expression and HbF+ cell percentage.",
+      "claim_type": "EXPLICIT",
+      "source": "We proceeded to delete the GATA1 binding site within the HPFH enhancer site and the entire HPFH enhancer marked by ATAC-seq in \u03943\u2032HS1 clones (Figure 3B). We found that both deletions reduced the HBG1/2 expression and HbF+ cell percentage in these cells, suggesting that the HPFH enhancer contributes to the activation of HBG1/2 (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "c63893a5-8e98-4771-9381-11d3a34a14a7",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C60",
+      "claim": "Deletion of the entire HPFH enhancer in \u03943\u2032HS1 clones reduced the HBG1/2 expression and HbF+ cell percentage.",
+      "claim_type": "EXPLICIT",
+      "source": "We proceeded to delete the GATA1 binding site within the HPFH enhancer site and the entire HPFH enhancer marked by ATAC-seq in \u03943\u2032HS1 clones (Figure 3B). We found that both deletions reduced the HBG1/2 expression and HbF+ cell percentage in these cells, suggesting that the HPFH enhancer contributes to the activation of HBG1/2 (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "004a3af7-4fcc-4534-8fd2-9004d58fc9ca",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C61",
+      "claim": "The HPFH enhancer contributes to the activation of HBG1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both deletions reduced the HBG1/2 expression and HbF+ cell percentage in these cells, suggesting that the HPFH enhancer contributes to the activation of HBG1/2 (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental results showing reduced HBG expression upon HPFH enhancer deletion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "6534bef8-9d1b-4b3f-95d5-9536a2a8bf46",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C62",
+      "claim": "Mildly increased v4C signal in HBG2 promoter region of \u03943\u2032HS1 cells compared with WT and 3\u2032HS1 inversion clones was observed when HPFH enhancer region acts as viewpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "We further evaluated whether there were direct interactions between HBG1/2 and HPFH enhancer after the deletion of 3\u2032HS1 by virtual 4C (v4C) in our Hi-C dataset. We observed mildly increased v4C signal in HBG2 promoter region of \u03943\u2032HS1 cells compared with WT and 3\u2032HS1 inversion clones when HPFH enhancer region acts as viewpoint (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by virtual 4C analysis of Hi-C data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "d51339ea-5bdf-479b-8e84-c6827cb2a02d",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C63",
+      "claim": "Mildly increased v4C signal in HPFH enhancer region of \u03943\u2032HS1 cells compared with WT and 3\u2032HS1 inversion clones was observed when HBG2 promoter region acts as viewpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Vice versa, we also observed mildly increased v4C signal in HPFH enhancer region of \u03943\u2032HS1 cells compared with WT and 3\u2032HS1 inversion clones when HBG2 promoter region acts as viewpoint (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by virtual 4C analysis of Hi-C data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "76b66069-abcf-4349-b027-e88c6e993376",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C64",
+      "claim": "The deletion of 3\u2032HS1 might have induced more frequent interaction between HPFH enhancer and HBG2 promoter regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the deletion of 3\u2032HS1 might have induced more frequent interaction between HPFH enhancer and HBG2 promoter regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the virtual 4C data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "5d91fa0c-b675-4c0e-833d-ad5f2b40ab56",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C65",
+      "claim": "Mouse and human \u03b2-globin locus and its surrounding regions have been shown to be evolutionally conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, mouse and human \u03b2-globin locus and its surrounding regions have been shown to be evolutionally conserved (Bulger et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "2bd7041a-5f86-46aa-ac4c-abfedb1dcb80",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C66",
+      "claim": "Disruption of 3\u2032HS1 site in mouse did not result in any change in the \u03b2-like globin gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, previous report showed that the disruption of 3\u2032HS1 site in mouse did not result in any change in the \u03b2-like globin gene expression (Bender et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "1ecb2b6d-0856-4e51-803d-440c77a0dea3",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C67",
+      "claim": "Mouse and rat homolog of human OR52A1\u2013Olfr68 bears two single-nucleotide substitutions right at the core binding site of GATA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we evaluated the evolutionary conservation of OR52A1 in mammals and found mouse and rat homolog of human OR52A1\u2013Olfr68 bears two single-nucleotide substitutions right at the core binding site of GATA1 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "82d78b39-bd18-43dc-abd3-851d32657999",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C68",
+      "claim": "GATA1 binding is absent in the OR52A1's homolog Olfr68 and its surrounding region in mouse erythroid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When we further checked the GATA1 ChIP-seq in mouse erythroid cells, we also found the absence of binding in the OR52A1's homolog Olfr68 and its surrounding region (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GATA1 ChIP-seq data in mouse cells shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "d256469d-3fd7-4f81-a18e-df2014325c3a",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C69",
+      "claim": "The loss of GATA1 binding in mouse explains the difference between mouse and human on the effect of 3\u2032HS1 deletion on globin gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This data suggests that the mouse olfactory receptor region 3\u2032 to \u03b2-globin genes no longer bears GATA1 binding sites and enhancer activity. Overall, the loss of GATA1 binding in mouse clearly explains the difference between mouse and human on the effect of 3\u2032HS1 deletion on globin gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative genomics and ChIP-seq data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "12032ef3-ad95-4d89-ba1c-9f5971151f26",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C70",
+      "claim": "Moving the HPFH enhancer to the proximity of globin locus mildly increases the HBG1/2 gene expression by threefold with increase of HBE1 gene and reduction of HBB gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We used paired guide RNA to delete a 48 kb region between HPFH enhancer and 3\u2032HS1, to access the effect of distance between enhancer and target genes in the presence of chromosomal insulators (Figure 3\u2014figure supplement 1B). We obtained a heterozygous clone bearing this 48 kb deletion (Figure 3\u2014figure supplement 1B). We found that moving the HPFH enhancer to the proximity of globin locus mildly increases the HBG1/2 gene expression by threefold with increase of HBE1 gene and reduction of HBB gene (Figure 3\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "75e26740-19cc-4390-9444-52184ebe4e9e",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C71",
+      "claim": "Both chromosomal distance and insulator contribute to the low expression of HBG1/2, but chromosomal insulators are dominant to insulate HPFH enhancer to access the globin genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the data suggests that both chromosomal distance and insulator contribute to the low expression of HBG1/2, but chromosomal insulators are dominant to insulate HPFH enhancer to access the globin genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results of the 48 kb deletion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "f33f1908-7238-455f-a176-d51c19aff186",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C72",
+      "claim": "High deletion percentage of both 3\u2032HS1 and HS5 CBSs was achieved in primary CD34+ HSPC cells from three different donors.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the therapeutic potential of 3\u2032HS1 deletion in primary HSPCs, we performed the 3\u2032HS1 and HS5 CBS deletions in adult mobilized peripheral blood CD34+ HSPC from three different donors (Figure 4A). We achieved high deletion percentage of both CBSs in these primary cells (Figure 4B, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "b0cca6c8-d1bb-450c-b26b-2d0f46db623c",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C73",
+      "claim": "A robust increase in HbF+ cells across all three donors with 3\u2032HS1 deletion but not with HS5 deletion was observed upon differentiation of primary CD34+ HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon differentiation, we observed a robust increase in HbF+ cells across all three donors with 3\u2032HS1 deletion but not with HS5 deletion (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "21a701fd-be4f-40a3-b8bf-b887fec2407b",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C74",
+      "claim": "Normal erythroid differentiation was not affected by either CBS deletion in primary CD34+ HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The normal erythroid differentiation was not affected by either CBS deletion (Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by differentiation analysis shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "b178c02d-8418-446e-b5c2-19e50b55b7a8",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C75",
+      "claim": "The disruption of the 3'HS1 CBS in primary patient cells supports the involvement of a downstream cis-acting regulatory element on the HBG1/2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the disruption of the 3'HS1 CBS in primary patient cells did not yield as great of an effect on HbF+ cells as in HUDEP-2 cells, the results do support the involvement of a downstream cis-acting regulatory element on the HBG1/2 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the primary cell data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "ae4b7b65-e3b1-44e1-b8fc-1d500a7ad014",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C76",
+      "claim": "The 3\u2032HS1 CBS modulates the HPFH enhancer's access to the HBG1/2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, based on our data, we propose a model where the 3\u2032HS1 CBS modulates the HPFH enhancer's access to the HBG1/2 genes (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on all the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "2e4a5208-fb1f-4d14-bed6-efa076028b2a",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C77",
+      "claim": "The deletion of a CBS \u2013 3\u2032HS1\u2013 in the human \u03b2-globin locus can phenocopy HPFH.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the deletion of a CBS \u2013 3\u2032HS1\u2013 in the human \u03b2-globin locus can phenocopy HPFH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "a89a7169-54db-437b-8e63-235524de576c",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C78",
+      "claim": "HPFH phenocopy by 3\u2032HS1 deletion is driven by alteration of the 3D genomic organization around the \u03b2-globin locus, which allows the long-range interaction of a distal enhancer in the OR52A1 gene to drive the expression of HBG1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "This condition is driven by alteration of the 3D genomic organization around the \u03b2-globin locus, which allows the long-range interaction of a distal enhancer in the OR52A1 gene to drive the expression of HBG1/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion based on Hi-C and enhancer deletion experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "17404e71-2fef-4dd1-85bb-4abd4be9efdd",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C79",
+      "claim": "Inversion of 3\u2032HS1 insulates the enhancer element and further suppresses HBG1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that inversion of 3\u2032HS1 insulates the enhancer element and further suppresses HBG1/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing reduced HBG expression in inversion clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "468aedab-d500-4f20-8300-b0a0aeaca9af",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C80",
+      "claim": "CTCF binding at the \u03b2-globin locus modulates the accessibility of the fetal HBG1/2 genes to a downstream enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals how CTCF binding at this locus modulates the accessibility of the fetal HBG1/2 genes to a downstream enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion based on all the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "9c236097-f3d7-4e22-9107-c7cf870f1ed7",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C81",
+      "claim": "In the HPFH enhancer scenario, 3\u2032HS1 limits the HPFH enhancer access to HBG1/2 by forming the sub-TAD with 5\u2032HS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the HPFH enhancer scenario, 3\u2032HS1 limits the HPFH enhancer access to HBG1/2 by forming the sub-TAD with 5\u2032HS (Figure 4E; Oudelaar et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic model based on Hi-C data and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "0220e4f4-ce41-485c-847f-9f96028660bd",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C82",
+      "claim": "When the 3\u2032HS1 CBS is deleted, the HPFH enhancer gains access to HBG1/2 without the hinder of 3\u2032HS1\u2013HS5 loop.",
+      "claim_type": "EXPLICIT",
+      "source": "When the 3\u2032HS1 CBS is deleted, the HPFH enhancer gains access to HBG1/2 without the hinder of 3\u2032HS1\u2013HS5 loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on Hi-C and gene expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "99c2466c-aff3-47ee-b7a9-c05c99e5a04b",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C83",
+      "claim": "When the 3\u2032HS1 CBS motif is inverted, the HPFH enhancer is further restricted by the pairing of 3\u2032-OR52A5-CBS to the inverted 3\u2032HS1 CBS, which results in strong chromosomal loop formation between the two CBSs.",
+      "claim_type": "EXPLICIT",
+      "source": "When the 3\u2032HS1 CBS motif is inverted, the HPFH enhancer is further restricted by the pairing of 3\u2032-OR52A5-CBS to the inverted 3\u2032HS1 CBS, which results in the strong chromosomal loop formation between the two CBSs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on Hi-C data showing increased loop formation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "3143d51a-c921-405e-a3f1-80d821a1e6a6",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C84",
+      "claim": "The insulation by 3\u2032HS1 inversion leads to reduced HBG1/2 expression and upregulation of OR52A5.",
+      "claim_type": "EXPLICIT",
+      "source": "This insulation leads to the reduced HBG1/2 expression and upregulation of OR52A5 (Figures 2B and 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "c1e267ee-0a81-4f1a-af32-e6005251ec68",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C85",
+      "claim": "Other regulatory elements exist between 3\u2032HS1 and 3\u2032-OR52A5-CBS since only a partial decrease of HBG1/2 expression occurs with HPFH enhancer deletion in \u03943\u2032HS1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we have elucidated the function of long speculated HPFH enhancer in the induction of HbF with our \u03943\u2032HS1 cells. However, we suspect that other regulatory elements also exist between 3\u2032HS1 and 3\u2032-OR52A5-CBS since we only get a partial decrease of HBG1/2 expression with HPFH enhancer deletion in \u03943\u2032HS1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the incomplete reduction of HBG expression upon HPFH enhancer deletion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "86477003-a54a-404b-88d6-e25917179ccc",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C86",
+      "claim": "Other previously identified HPFH enhancers may also contribute to HbF induction in the \u03943\u2032HS1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This may suggest that other previously identified HPFH enhancers also contribute to HbF induction in the \u03943\u2032HS1 cells (Feingold and Forget, 1989; Forget, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the incomplete effect of single enhancer deletion and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "75727bc6-fab4-4605-9467-09a301a3f76e",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C87",
+      "claim": "Other GATA1 binding sites can be observed between OR52A1 and OR52A5 genes of erythroid progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, other GATA1 binding sites can be observed between OR52A1 and OR52A5 genes of erythroid progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "a709d051-fcb9-4260-8285-5a8a1c6e3dcf",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C88",
+      "claim": "GATA1 binding across the locus works collectively to activate HBG1/2 expression with or without direct promoter-enhancer interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these observations suggest that GATA1 binding across the locus works collectively to activate HBG1/2 expression with or without direct promoter-enhancer interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic inference based on the presence of multiple GATA1 binding sites.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "c3e5da33-7615-4576-b60f-a0e1cf2076b8",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C89",
+      "claim": "TF binding disrupting nucleotide substitutions occur at the GATA1 binding site in HPFH enhancer in some mammal species that do not express distinct form of fetal hemoglobin (mouse and rat).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite the evolution conservation of OR52A1 gene in mammals, TF binding disrupting nucleotide substitutions occur at the GATA1 binding site in HPFH enhancer in some mammal species that do not express distinct form of fetal hemoglobin (mouse and rat) (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment and ChIP-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "427da58a-f4f3-4d79-97ee-81a4d4cb9abf",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C90",
+      "claim": "HPFH enhancer may play a role in regulating globin expression in other developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "This evolutionary alteration in the TF binding site suggests that HPFH enhancer may also play a role in regulating globin expression in other developmental stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on evolutionary conservation patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "18d82aef-799c-4edb-b62e-8f3b12dd7f38",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C91",
+      "claim": "The potential function of HPFH enhancer may still need the modulation of 3D genomic reorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "The consistent binding of GATA1 in high HBE/HBG-expressing K562 cells and high HBB-expressing HUDEP-2 cells suggests that the potential function of HPFH enhancer may still need the modulation of 3D genomic reorganization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that GATA1 binding alone is not sufficient for activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "aa711e29-a29f-411e-82d9-0e2daafc0cd9",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C92",
+      "claim": "The deletion of 3\u2032HS1 only induces a portion of cells to be F+ cells, with an interesting differentiation block phenotype in a large portion of clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite our data suggesting that deletion of 3\u2032HS1 is sufficient to induce the \u03b3-globin activation, yet, the upregulation does not completely phenocopy the HPFH condition, in which the HbF is expressed at pancellular level. The deletion of 3\u2032HS1 only induces a portion of cells to be F+ cells, with an interesting differentiation block phenotype in a large portion of clones we have selected (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "f5b91a26-2537-48f1-b7aa-8eea4a3fba35",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C93",
+      "claim": "The full HPFH phenotype may require the deletion of HBB and HBD genes to erase the strong enhancer-promoter interaction between LCR and HBB.",
+      "claim_type": "EXPLICIT",
+      "source": "Although HUDEP-2 is known to be heterogenous in clonal level, the F+ cell phenotype of 3\u2032HS1-deleted cells suggests that the full HPFH phenotype may require the deletion of HBB and HBD genes to erase the strong enhancer-promoter interaction between LCR and HBB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about what is needed for full HPFH phenotype.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "e499824d-71b7-478a-9db2-30c40c8ba9b6",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C94",
+      "claim": "The distance between HPFH enhancer and the globin locus could play a role in regulating \u03b3-globin gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results indicate that the distance between HPFH enhancer and the globin locus could also play a role in regulating \u03b3-globin gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the 48 kb deletion experiment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "3735ec4d-55e4-426c-883b-bb426bac99c5",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C95",
+      "claim": "The deletion of both 3\u2032HS1 and the flanking region between 3\u2032HS1 and HPFH enhancer may activate the fetal hemoglobin to an even higher level.",
+      "claim_type": "EXPLICIT",
+      "source": "This data hints that the deletion of both 3\u2032HS1 and the flanking region between 3\u2032HS1 and HPFH enhancer may activate the fetal hemoglobin to an even higher level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the combined effects of insulator removal and distance reduction.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "3e0843af-eaf4-4db5-95ea-8c775c5a3eee",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C96",
+      "claim": "Larger deletions will result in the reorganization of chromosomal loop interactions as well as the decrease of physical distance from HPFH enhancer to globin locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger deletions will result in the reorganization of chromosomal loop interactions as well as the decrease of physical distance from HPFH enhancer to globin locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of 3D genome organization.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "d825de5b-7d62-4357-ae08-54d689472e25",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C97",
+      "claim": "Enhancers have to locate at certain range of distance from the target gene promoters to exert the maximal activation effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancers have to locate at certain range of distance from the target gene promoters to exert the maximal activation effect (Jessica Zuin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "0dc45adf-ab2b-4f2a-a2fe-0bc7fd6f1e26",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "claim_id": "C98",
+      "claim": "A method that can create large deletion that disrupts 3\u2032HS1 and reduces enhancer-promoter distance simultaneously could be a potential gene therapy to effectively activate the \u03b3-globin expression in hemoglobinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a method that can create large deletion that disrupts 3\u2032HS1 and reduces enhancer-promoter distance simultaneously could be a potential gene therapy to effectively activate the \u03b3-globin expression in hemoglobinopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic proposal based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "44eb1465-9e4c-43fa-a4f6-2d4edb4cae98",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Deletion of the 3\u2032HS1 CTCF binding site induces fetal hemoglobin expression in HUDEP-2 cells. In \u03943\u2032HS1 clones, HBG1/2 and HBE genes were upregulated 2.5- to 8-fold, leading to significant increases in HbF protein (37.8-53.1% HbF+ cells). Conversely, inversion of 3\u2032HS1 resulted in >50% reduction of HBE and near-complete depletion of HBG1/2, with HbF+ cells dropping below 1%. Deletion of the upstream HS5 CBS had no effect on HbF+ cell percentage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C33-C38 provide converging evidence from multiple assays (qPCR, HPLC, flow cytometry) demonstrating that 3\u2032HS1 deletion specifically induces fetal hemoglobin expression in HUDEP-2 cells, while inversion suppresses it and HS5 deletion has no effect. The data are internally consistent and support the directional effects of 3\u2032HS1 manipulation on HbF expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "0b0bd7e6-1cd9-49a8-b4a9-70cd84f55520",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "3\u2032HS1 deletion and inversion dramatically alter 3D chromatin organization at the \u03b2-globin locus. Deletion of 3\u2032HS1 resulted in complete loss of loops between 3\u2032HS1-HS5 and 3\u2032HS1-5\u2032-OR51B5-CBSs, with a strong increase in HS5 to 3\u2032-OR51A5-CBS interaction. Inversion of 3\u2032HS1 caused significant increase in 3\u2032HS1 to 3\u2032-OR52A5 CBS interaction while decreasing upstream interactions with HS5 and 5\u2032-OR51B5-CBSs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 are supported by high-resolution Hi-C data (5 kb resolution) showing specific changes in chromosomal loop interactions following 3\u2032HS1 manipulation. The data demonstrate that CTCF binding site orientation and presence control chromatin architecture at this locus, with quantitative loop strength measurements provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "b117336f-f6af-4d00-a295-f2e691af2892",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The HPFH enhancer in the OR52A1 gene, bound by GATA1, contributes to HBG1/2 activation upon 3\u2032HS1 deletion. Deletion of either the GATA1 binding site within the HPFH enhancer or the entire HPFH enhancer in \u03943\u2032HS1 clones reduced HBG1/2 expression and HbF+ cell percentage, demonstrating that this enhancer drives fetal hemoglobin induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C57-C61 are supported by multiple lines of evidence: GATA1 ChIP-seq showing binding at OR52A1, alignment with previously described HPFH enhancer location, and functional validation through enhancer deletion experiments showing reduced HBG expression. The data establish a causal role for this enhancer in the phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "03f3791f-edbf-4577-80ae-5f83706cb2ca",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Inversion of the 3\u2032HS1 CTCF site insulates the HPFH enhancer and suppresses HBG1/2 expression. When 3\u2032HS1 is inverted, the HPFH enhancer is restricted by strong chromosomal loop formation between the inverted 3\u2032HS1 CBS and 3\u2032-OR52A5-CBS, leading to reduced HBG1/2 expression and upregulation of OR52A5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C79, C83-C84 are supported by Hi-C data showing increased loop formation upon inversion and RNA-seq data showing the predicted gene expression changes. The mechanistic model is consistent with CTCF orientation-dependent loop formation and enhancer insulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "e5284a31-25f0-4864-b3fc-11a14ca22fad",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Virtual 4C analysis suggests increased interaction between the HPFH enhancer and HBG2 promoter upon 3\u2032HS1 deletion. Mildly increased v4C signals were observed in both directions (HPFH enhancer to HBG2 promoter and vice versa) in \u03943\u2032HS1 cells compared to WT and inversion clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C64 describe 'mildly increased' v4C signals, which suggests weak or modest effects. The authors appropriately use cautious language ('might have induced'), indicating uncertainty about the strength and significance of these interactions. Without quantification of signal strength or statistical testing, the biological significance of these mild increases remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "83728fe9-2c6e-4b7b-84eb-250be9920458",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The \u03b3-globin activation in 3\u2032HS1 deletion HUDEP-2 cells is independent of BCL11A-mediated pathways. RNA-seq showed HBG1/2 as the most significantly upregulated genes in \u03943\u2032HS1 clones (161 upregulated, 153 downregulated genes total), with no changes in known \u03b3-globin regulators including BCL11A. Western blot confirmed no significant reduction in BCL11A protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48, C54 are supported by RNA-seq and Western blot data showing that BCL11A expression and protein levels remain unchanged in \u03943\u2032HS1 clones despite robust HBG induction. This establishes that 3\u2032HS1-mediated regulation operates through a distinct mechanism from BCL11A-dependent repression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "2d55e057-9dc2-4b4e-83e4-0ada62fdae28",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BCL11A depletion and 3\u2032HS1 deletion have additive effects on fetal hemoglobin induction, suggesting distinct regulatory pathways. Disruption of the BCL11A enhancer or pomalidomide treatment in \u03943\u2032HS1 clones resulted in further increases in HBG1/2 expression and HbF+ cells. However, double disruption of BCL11A and 3\u2032HS1 led to similar \u03b3-globin activation as BCL11A disruption alone, suggesting 3\u2032HS1-regulated repression may be hypostatic to BCL11A-mediated repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C53 show additive effects supporting independent pathways, but C55-C56 suggest epistasis with BCL11A being dominant. These observations appear contradictory: if the pathways are truly independent and additive, double disruption should show greater effects than either alone. The epistasis data (C55-C56) suggests BCL11A disruption may mask 3\u2032HS1 effects, but this conflicts with the additive effects shown in C49-C52. Additional experiments would be needed to resolve this apparent inconsistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "e00d5594-6806-4222-92ec-13f03d4c588c",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Evolutionary loss of GATA1 binding at the HPFH enhancer in mouse explains species-specific differences in 3\u2032HS1 deletion effects. The mouse homolog of OR52A1 (Olfr68) contains two nucleotide substitutions at the GATA1 core binding site, and GATA1 ChIP-seq in mouse erythroid cells shows absence of binding at this region, explaining why 3\u2032HS1 deletion does not affect globin expression in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 are supported by sequence alignment showing specific mutations in the GATA1 binding motif and ChIP-seq data confirming loss of GATA1 binding in mouse. This provides a mechanistic explanation for the previously reported species difference (C66) and strengthens the conclusion that GATA1 binding at the HPFH enhancer is critical for the phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "8976be46-27b9-4a04-8e3a-cf7bc569beee",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both chromosomal distance and CTCF-mediated insulation contribute to HBG1/2 regulation, with insulators being dominant. Deletion of 48 kb between the HPFH enhancer and 3\u2032HS1 (bringing the enhancer closer to the globin locus) mildly increased HBG1/2 expression threefold, with concomitant increase in HBE1 and reduction in HBB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71, C94 are supported by experimental data from a heterozygous 48 kb deletion clone. The modest (threefold) increase compared to the larger effects of 3\u2032HS1 deletion alone supports the conclusion that CTCF-mediated insulation is the dominant regulatory mechanism, though distance also plays a role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "26923652-6a00-48ad-8fdd-f9cd32966a4d",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "3\u2032HS1 deletion in primary CD34+ HSPCs from three adult donors induces HbF expression without affecting erythroid differentiation. High deletion efficiency was achieved, and upon differentiation, a robust increase in HbF+ cells was observed across all three donors with 3\u2032HS1 deletion but not with HS5 deletion, though the effect was less pronounced than in HUDEP-2 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 demonstrate that the 3\u2032HS1 deletion effect translates to primary human cells from multiple donors, supporting therapeutic potential. The observation that effects are less pronounced than in HUDEP-2 cells is appropriately noted, and normal differentiation is maintained, which is important for therapeutic applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "10a1a92d-6272-48e3-a6bf-3641327d8ec5",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a mechanistic model where 3\u2032HS1 CBS modulates HPFH enhancer access to HBG1/2 genes through 3D chromatin organization. In wild-type cells, 3\u2032HS1 limits enhancer access by forming a sub-TAD with HS5. Upon 3\u2032HS1 deletion, the HPFH enhancer gains access to HBG1/2, phenocopying HPFH through altered 3D genomic organization and long-range enhancer-gene interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 synthesize the experimental findings into a coherent mechanistic model supported by Hi-C data (chromatin architecture changes), enhancer deletion experiments (functional requirement), and gene expression data (phenotypic outcome). The model is consistent with all major experimental observations and provides a mechanistic explanation for deletional HPFH.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "656b2a68-d7bf-4e4c-a672-cb6acce0a596",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "3\u2032HS1 deletion induces epigenetic changes at HBG1/2 gene bodies but not at promoters. ATAC-seq showed significant open chromatin at HBG1/2, BGLT3, and HBBP1 genes, with increased H3K27ac in the HBG2 gene body. Notably, these changes do not occur at the HBG2 promoter, suggesting BCL11A-independent regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by ATAC-seq and ChIP-seq data showing specific epigenetic changes. The observation that promoter regions are unchanged while gene bodies show increased activation marks is consistent with the conclusion of BCL11A-independent regulation, as BCL11A typically acts at promoters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "1b38aed9-f42d-4e4e-a69c-e8a89f7cf4af",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "High-resolution Hi-C analysis reveals the chromatin architecture of the \u03b2-globin locus in HUDEP-2 cells. In situ Hi-C at 5 kb resolution detected 15,207-16,529 loops genome-wide. At the \u03b2-globin locus, CTCF binding sites form four chromosomal loops separating the cluster into three distinct domains, with detectable LCR-HBB enhancer-promoter interactions. CNV analysis confirmed normal chromosome numbers (49-50,XY) in all clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 describe the technical quality and baseline characteristics of the Hi-C data. The high resolution (5 kb), large number of detected loops, and CNV validation support the reliability of the chromatin architecture analysis. These are important quality control measures for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "7286fe0f-fa7d-4e66-a864-eef5020eba64",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Multiple regulatory elements likely contribute to HBG1/2 activation beyond the characterized HPFH enhancer. Only partial reduction of HBG1/2 expression occurred with HPFH enhancer deletion in \u03943\u2032HS1 cells, suggesting other regulatory elements exist between 3\u2032HS1 and 3\u2032-OR52A5-CBS. Additional GATA1 binding sites are observed between OR52A1 and OR52A5 genes, suggesting GATA1 binding works collectively to activate HBG1/2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88 appropriately interpret the incomplete effect of HPFH enhancer deletion as evidence for additional regulatory elements. The observation of multiple GATA1 binding sites in the region supports this interpretation. This represents honest acknowledgment of the complexity of the regulatory landscape.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "5b132822-a97f-4d10-87a1-6f0e1ac346c1",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "3\u2032HS1 deletion does not fully phenocopy pancellular HPFH, inducing HbF in only a portion of cells. The authors speculate that full HPFH phenotype may require deletion of HBB and HBD genes to eliminate the strong LCR-HBB enhancer-promoter interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C93 acknowledge an important limitation: 3\u2032HS1 deletion produces only partial HbF+ cells rather than pancellular expression. The speculation about requiring HBB/HBD deletion (C93) is reasonable but untested. This limitation is important for therapeutic applications and requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "9e8d8827-40a5-4469-b234-cf84584fd40c",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that genetic editing of 3\u2032HS1 has therapeutic implications for treating hemoglobinopathies, and suggest that large deletions disrupting 3\u2032HS1 while reducing enhancer-promoter distance could be an effective gene therapy approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7 and C98 are speculative therapeutic proposals based on the experimental findings. While the primary cell data (C72-C75) support feasibility, the incomplete penetrance (C92), potential need for additional deletions (C93), and lack of in vivo validation mean these therapeutic claims remain uncertain and require substantial additional work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    },
+    {
+      "id": "1bb22d60-bffd-40df-a472-571823bf70b6",
+      "content_id": "f4c12cb5-6a25-4ebe-bc70-3b94e4693098",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CTCF binding site deletions in K562 cells demonstrate that altering CTCF binding profiles can significantly change \u03b2-globin gene expression. HS5 deletion upregulated 3\u2032 genes including HBB and HBG1/2, while 3\u2032HS1 deletion specifically upregulated only HBG1/2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by experimental data in K562 cells showing differential effects of HS5 versus 3\u2032HS1 deletion. These preliminary experiments in a cell line model provided the rationale for more detailed studies in HUDEP-2 cells and primary cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:51:28.165990Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "adea9cce-b856-413d-bb7a-0adb9a937bc8",
+      "result_id": "44eb1465-9e4c-43fa-a4f6-2d4edb4cae98"
+    },
+    {
+      "claim_id": "7775bf1c-ee89-4c42-ab32-bf4749a24d9a",
+      "result_id": "44eb1465-9e4c-43fa-a4f6-2d4edb4cae98"
+    },
+    {
+      "claim_id": "b53ab8db-60a2-4c9a-bdf3-bb5e39f48ed6",
+      "result_id": "44eb1465-9e4c-43fa-a4f6-2d4edb4cae98"
+    },
+    {
+      "claim_id": "e73d0247-7857-4303-8f01-b5a8360451c9",
+      "result_id": "44eb1465-9e4c-43fa-a4f6-2d4edb4cae98"
+    },
+    {
+      "claim_id": "ee8bcbd2-a190-479f-927d-5b46615d8100",
+      "result_id": "44eb1465-9e4c-43fa-a4f6-2d4edb4cae98"
+    },
+    {
+      "claim_id": "8740737e-8655-428d-9885-9a45f7aa3018",
+      "result_id": "44eb1465-9e4c-43fa-a4f6-2d4edb4cae98"
+    },
+    {
+      "claim_id": "2a1e20d7-0b84-4dd5-9032-59190a4519d9",
+      "result_id": "44eb1465-9e4c-43fa-a4f6-2d4edb4cae98"
+    },
+    {
+      "claim_id": "b59aaf3a-0716-4a20-93de-45f8be7a8b7a",
+      "result_id": "0b0bd7e6-1cd9-49a8-b4a9-70cd84f55520"
+    },
+    {
+      "claim_id": "62c1c8ac-d705-422f-8746-7041a01dc95a",
+      "result_id": "0b0bd7e6-1cd9-49a8-b4a9-70cd84f55520"
+    },
+    {
+      "claim_id": "338e3330-4c26-404e-a81b-586dd0d28165",
+      "result_id": "0b0bd7e6-1cd9-49a8-b4a9-70cd84f55520"
+    },
+    {
+      "claim_id": "f54fed01-dbca-4442-a595-4ab70c4ad420",
+      "result_id": "0b0bd7e6-1cd9-49a8-b4a9-70cd84f55520"
+    },
+    {
+      "claim_id": "a69b131a-8757-4c71-9a23-b11be48a3fbc",
+      "result_id": "0b0bd7e6-1cd9-49a8-b4a9-70cd84f55520"
+    },
+    {
+      "claim_id": "f01c4311-87ce-4e48-9505-dfdd48421ecc",
+      "result_id": "0b0bd7e6-1cd9-49a8-b4a9-70cd84f55520"
+    },
+    {
+      "claim_id": "ea8d1b8a-5e96-4b9e-8bee-42235c4025e2",
+      "result_id": "b117336f-f6af-4d00-a295-f2e691af2892"
+    },
+    {
+      "claim_id": "fc7d43d9-b1d1-4ce1-bac6-2fe47708643d",
+      "result_id": "b117336f-f6af-4d00-a295-f2e691af2892"
+    },
+    {
+      "claim_id": "8063afcf-80a6-4913-a8c4-2f12c5a40a13",
+      "result_id": "b117336f-f6af-4d00-a295-f2e691af2892"
+    },
+    {
+      "claim_id": "d95df8ea-f3d7-4712-bc67-cd38123b535d",
+      "result_id": "b117336f-f6af-4d00-a295-f2e691af2892"
+    },
+    {
+      "claim_id": "c63893a5-8e98-4771-9381-11d3a34a14a7",
+      "result_id": "b117336f-f6af-4d00-a295-f2e691af2892"
+    },
+    {
+      "claim_id": "004a3af7-4fcc-4534-8fd2-9004d58fc9ca",
+      "result_id": "b117336f-f6af-4d00-a295-f2e691af2892"
+    },
+    {
+      "claim_id": "715b3905-a78c-40ef-a70e-bc8eaab1b83b",
+      "result_id": "03f3791f-edbf-4577-80ae-5f83706cb2ca"
+    },
+    {
+      "claim_id": "17404e71-2fef-4dd1-85bb-4abd4be9efdd",
+      "result_id": "03f3791f-edbf-4577-80ae-5f83706cb2ca"
+    },
+    {
+      "claim_id": "99c2466c-aff3-47ee-b7a9-c05c99e5a04b",
+      "result_id": "03f3791f-edbf-4577-80ae-5f83706cb2ca"
+    },
+    {
+      "claim_id": "3143d51a-c921-405e-a3f1-80d821a1e6a6",
+      "result_id": "03f3791f-edbf-4577-80ae-5f83706cb2ca"
+    },
+    {
+      "claim_id": "6534bef8-9d1b-4b3f-95d5-9536a2a8bf46",
+      "result_id": "e5284a31-25f0-4864-b3fc-11a14ca22fad"
+    },
+    {
+      "claim_id": "d51339ea-5bdf-479b-8e84-c6827cb2a02d",
+      "result_id": "e5284a31-25f0-4864-b3fc-11a14ca22fad"
+    },
+    {
+      "claim_id": "76b66069-abcf-4349-b027-e88c6e993376",
+      "result_id": "e5284a31-25f0-4864-b3fc-11a14ca22fad"
+    },
+    {
+      "claim_id": "9fd99787-d93f-4bd0-b3bd-a1e80be557c9",
+      "result_id": "83728fe9-2c6e-4b7b-84eb-250be9920458"
+    },
+    {
+      "claim_id": "485e5e6b-d404-45a0-9e03-356f4a35b4ab",
+      "result_id": "83728fe9-2c6e-4b7b-84eb-250be9920458"
+    },
+    {
+      "claim_id": "5f3be6f1-2622-4f32-b367-1f57b3cc5147",
+      "result_id": "83728fe9-2c6e-4b7b-84eb-250be9920458"
+    },
+    {
+      "claim_id": "faebb472-c658-4884-afef-c1ca1a67d869",
+      "result_id": "83728fe9-2c6e-4b7b-84eb-250be9920458"
+    },
+    {
+      "claim_id": "56d75314-fb45-44a6-9ac2-ccda969696f4",
+      "result_id": "83728fe9-2c6e-4b7b-84eb-250be9920458"
+    },
+    {
+      "claim_id": "7021109f-412a-4348-9162-d60c6605e36c",
+      "result_id": "83728fe9-2c6e-4b7b-84eb-250be9920458"
+    },
+    {
+      "claim_id": "ef795584-45d1-4694-849d-e5d59edc1c2d",
+      "result_id": "83728fe9-2c6e-4b7b-84eb-250be9920458"
+    },
+    {
+      "claim_id": "7c3e19d9-bb98-48b2-8038-53ac3c7a9375",
+      "result_id": "83728fe9-2c6e-4b7b-84eb-250be9920458"
+    },
+    {
+      "claim_id": "10ac99a0-95cf-4c76-b884-ba233716cfb3",
+      "result_id": "2d55e057-9dc2-4b4e-83e4-0ada62fdae28"
+    },
+    {
+      "claim_id": "05b14b99-f9b0-4ef7-a8bf-e3cfddefb51b",
+      "result_id": "2d55e057-9dc2-4b4e-83e4-0ada62fdae28"
+    },
+    {
+      "claim_id": "9cc1d396-2419-415f-becb-8c4158a26d8c",
+      "result_id": "2d55e057-9dc2-4b4e-83e4-0ada62fdae28"
+    },
+    {
+      "claim_id": "1bff0598-2e86-4620-92d9-bd44ccc40a7d",
+      "result_id": "2d55e057-9dc2-4b4e-83e4-0ada62fdae28"
+    },
+    {
+      "claim_id": "a5d8a55b-b4d8-418d-8973-8b7dfe064201",
+      "result_id": "2d55e057-9dc2-4b4e-83e4-0ada62fdae28"
+    },
+    {
+      "claim_id": "96f467f2-ce1b-472d-9b4f-71c0c3fda44e",
+      "result_id": "2d55e057-9dc2-4b4e-83e4-0ada62fdae28"
+    },
+    {
+      "claim_id": "ecabeb9f-44cb-4e5d-907c-afd62b0f8502",
+      "result_id": "2d55e057-9dc2-4b4e-83e4-0ada62fdae28"
+    },
+    {
+      "claim_id": "1ecb2b6d-0856-4e51-803d-440c77a0dea3",
+      "result_id": "e00d5594-6806-4222-92ec-13f03d4c588c"
+    },
+    {
+      "claim_id": "82d78b39-bd18-43dc-abd3-851d32657999",
+      "result_id": "e00d5594-6806-4222-92ec-13f03d4c588c"
+    },
+    {
+      "claim_id": "d256469d-3fd7-4f81-a18e-df2014325c3a",
+      "result_id": "e00d5594-6806-4222-92ec-13f03d4c588c"
+    },
+    {
+      "claim_id": "12032ef3-ad95-4d89-ba1c-9f5971151f26",
+      "result_id": "8976be46-27b9-4a04-8e3a-cf7bc569beee"
+    },
+    {
+      "claim_id": "75e26740-19cc-4390-9444-52184ebe4e9e",
+      "result_id": "8976be46-27b9-4a04-8e3a-cf7bc569beee"
+    },
+    {
+      "claim_id": "e499824d-71b7-478a-9db2-30c40c8ba9b6",
+      "result_id": "8976be46-27b9-4a04-8e3a-cf7bc569beee"
+    },
+    {
+      "claim_id": "f33f1908-7238-455f-a176-d51c19aff186",
+      "result_id": "26923652-6a00-48ad-8fdd-f9cd32966a4d"
+    },
+    {
+      "claim_id": "b0cca6c8-d1bb-450c-b26b-2d0f46db623c",
+      "result_id": "26923652-6a00-48ad-8fdd-f9cd32966a4d"
+    },
+    {
+      "claim_id": "21a701fd-be4f-40a3-b8bf-b887fec2407b",
+      "result_id": "26923652-6a00-48ad-8fdd-f9cd32966a4d"
+    },
+    {
+      "claim_id": "b178c02d-8418-446e-b5c2-19e50b55b7a8",
+      "result_id": "26923652-6a00-48ad-8fdd-f9cd32966a4d"
+    },
+    {
+      "claim_id": "ae4b7b65-e3b1-44e1-b8fc-1d500a7ad014",
+      "result_id": "10a1a92d-6272-48e3-a6bf-3641327d8ec5"
+    },
+    {
+      "claim_id": "2e4a5208-fb1f-4d14-bed6-efa076028b2a",
+      "result_id": "10a1a92d-6272-48e3-a6bf-3641327d8ec5"
+    },
+    {
+      "claim_id": "a89a7169-54db-437b-8e63-235524de576c",
+      "result_id": "10a1a92d-6272-48e3-a6bf-3641327d8ec5"
+    },
+    {
+      "claim_id": "468aedab-d500-4f20-8300-b0a0aeaca9af",
+      "result_id": "10a1a92d-6272-48e3-a6bf-3641327d8ec5"
+    },
+    {
+      "claim_id": "9c236097-f3d7-4e22-9107-c7cf870f1ed7",
+      "result_id": "10a1a92d-6272-48e3-a6bf-3641327d8ec5"
+    },
+    {
+      "claim_id": "0220e4f4-ce41-485c-847f-9f96028660bd",
+      "result_id": "10a1a92d-6272-48e3-a6bf-3641327d8ec5"
+    },
+    {
+      "claim_id": "8810b96a-d37c-40e5-8ac4-a6e1aa67e18b",
+      "result_id": "656b2a68-d7bf-4e4c-a672-cb6acce0a596"
+    },
+    {
+      "claim_id": "17ed7da3-6bb5-4991-9d0d-d5e434f512b8",
+      "result_id": "656b2a68-d7bf-4e4c-a672-cb6acce0a596"
+    },
+    {
+      "claim_id": "c6861ea5-f109-402b-a158-bf4933fd3d35",
+      "result_id": "656b2a68-d7bf-4e4c-a672-cb6acce0a596"
+    },
+    {
+      "claim_id": "4d034770-5f5b-47d4-a0da-59a44e14d739",
+      "result_id": "1b38aed9-f42d-4e4e-a69c-e8a89f7cf4af"
+    },
+    {
+      "claim_id": "3047da9f-ef26-4263-b23e-5fde47a3ad2a",
+      "result_id": "1b38aed9-f42d-4e4e-a69c-e8a89f7cf4af"
+    },
+    {
+      "claim_id": "f59251f9-65c8-4772-a0b4-7a62ab6bdcd6",
+      "result_id": "1b38aed9-f42d-4e4e-a69c-e8a89f7cf4af"
+    },
+    {
+      "claim_id": "5d0e0e10-82f3-4860-a289-4ab5665267c9",
+      "result_id": "1b38aed9-f42d-4e4e-a69c-e8a89f7cf4af"
+    },
+    {
+      "claim_id": "cc919e57-4d19-42c7-a39e-e340dffba738",
+      "result_id": "1b38aed9-f42d-4e4e-a69c-e8a89f7cf4af"
+    },
+    {
+      "claim_id": "c1e267ee-0a81-4f1a-af32-e6005251ec68",
+      "result_id": "7286fe0f-fa7d-4e66-a864-eef5020eba64"
+    },
+    {
+      "claim_id": "86477003-a54a-404b-88d6-e25917179ccc",
+      "result_id": "7286fe0f-fa7d-4e66-a864-eef5020eba64"
+    },
+    {
+      "claim_id": "75727bc6-fab4-4605-9467-09a301a3f76e",
+      "result_id": "7286fe0f-fa7d-4e66-a864-eef5020eba64"
+    },
+    {
+      "claim_id": "a709d051-fcb9-4260-8285-5a8a1c6e3dcf",
+      "result_id": "7286fe0f-fa7d-4e66-a864-eef5020eba64"
+    },
+    {
+      "claim_id": "aa711e29-a29f-411e-82d9-0e2daafc0cd9",
+      "result_id": "5b132822-a97f-4d10-87a1-6f0e1ac346c1"
+    },
+    {
+      "claim_id": "f5b91a26-2537-48f1-b7aa-8eea4a3fba35",
+      "result_id": "5b132822-a97f-4d10-87a1-6f0e1ac346c1"
+    },
+    {
+      "claim_id": "5a43222a-c3a3-4b41-bbb8-0ffd38e4233a",
+      "result_id": "9e8d8827-40a5-4469-b234-cf84584fd40c"
+    },
+    {
+      "claim_id": "0dc45adf-ab2b-4f2a-a2fe-0bc7fd6f1e26",
+      "result_id": "9e8d8827-40a5-4469-b234-cf84584fd40c"
+    },
+    {
+      "claim_id": "acf34d63-fff1-4fbc-9e05-035574e89752",
+      "result_id": "1bb22d60-bffd-40df-a472-571823bf70b6"
+    },
+    {
+      "claim_id": "1596c6ba-6735-497d-b95d-02fec9a70c68",
+      "result_id": "1bb22d60-bffd-40df-a472-571823bf70b6"
+    },
+    {
+      "claim_id": "0d1ee221-6610-483f-8e5d-347a2a4f8d40",
+      "result_id": "1bb22d60-bffd-40df-a472-571823bf70b6"
+    }
+  ],
+  "comparisons": []
+}

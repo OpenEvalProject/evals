@@ -1,0 +1,1803 @@
+{
+  "submission": {
+    "id": "9904552c-bac3-4667-b042-1c29b0924075",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:36:20.159755Z",
+    "updated_at": "2025-12-03T06:36:20.159755Z"
+  },
+  "content": [
+    {
+      "id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "submission_id": "9904552c-bac3-4667-b042-1c29b0924075",
+      "content_type": "manuscript",
+      "content_text": "# Precise optical control of gene expression in C elegans using improved genetic code expansion and Cre recombinase\n\n## Authors\n\n- Lloyd Davis<sup>1</sup>\n- Inja Radman<sup>2</sup>\n- Angeliki Goutou<sup>1</sup>\n- Ailish Tynan<sup>1</sup>\n- Kieran Baxter<sup>1</sup>\n- Zhiyan Xi<sup>1</sup>\n- Jack M O'Shea<sup>1</sup> ([ORCID: 0000-0002-9694-7340](https://orcid.org/0000-0002-9694-7340))\n- Jason W Chin<sup>2</sup> \u2020\n- Sebastian Greiss<sup>1</sup> ([ORCID: 0000-0001-9130-0831](https://orcid.org/0000-0001-9130-0831)) \u2020\n\n### Affiliations\n\n1. Centre for Discovery Brain Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n2. Medical Research Council Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:03x94j517](https://ror.org/03x94j517))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSynthetic strategies for optically controlling gene expression may enable the precise spatiotemporal control of genes in any combination of cells that cannot be targeted with specific promoters. We develop an improved genetic code expansion system in Caenorhabditis elegans and use it to create a photoactivatable Cre recombinase. We laser-activate Cre in single neurons within a bilaterally symmetric pair to selectively switch on expression of a loxP-controlled optogenetic channel in the targeted neuron. We use the system to dissect, in freely moving animals, the individual contributions of the mechanosensory neurons PLML/PLMR to the C. elegans touch response circuit, revealing distinct and synergistic roles for these neurons. We thus demonstrate how genetic code expansion and optical targeting can be combined to break the symmetry of neuron pairs and dissect behavioural outputs of individual neurons that cannot be genetically targeted.\n\n## Introduction\n\nGenetic code expansion offers the ability to introduce, during translation, functionalities into proteins beyond those offered by the set of canonical, naturally occurring amino acids. This is achieved by providing orthogonal translation components: an orthogonal aminoacyl-tRNA synthetase (aaRS) paired with a cognate orthogonal tRNA, and assignment of a codon to determine the site of incorporation of a non-canonical amino acid (ncAA) (Chin, 2017). The genetic code of several single and multicellular systems has been expanded to date (Brown et al., 2018a). Caenorhabditis elegans was the first multicellular organism in which genetic code expansion was established, and the incorporation of ncAA has been demonstrated in multiple C. elegans tissues (Greiss and Chin, 2011; Parrish et al., 2012). Currently available orthogonal systems, however, often lack the efficiency required to fully harness the possibilities offered by genetic code expansion, especially in multicellular systems. A large variety of non-canonical amino acids are available for in vivo use, among them photocaged amino acids, which can be used to confer light-activated control over the function of proteins in a host organism (Courtney and Deiters, 2018).\n\nSequence-specific DNA recombinases, such as Cre and FLP, have become transformative for controlling gene expression in many systems, including worms, flies, and vertebrates, by irreversibly activating or deactivating target gene expression. Indeed, the photo-induced reconstitution of split recombinases (Schindler et al., 2015; Kawano et al., 2016) might be used to optically target recombinase activity to a single cell. However, the sensitivity of this technique can be hampered by high background levels of light-independent recombinase activity. Moreover, these systems are induced using blue light, rendering their use incompatible with most optogenetic and imaging applications, and requiring cells to be kept in the dark, complicating their use in transparent model systems. Recently, genetic code expansion methods were used to create photocaged versions of Cre in cultured mammalian cells and zebrafish embryos (Luo et al., 2016; Brown et al., 2018b). In photocaged Cre, an orthogonal aaRS/tRNACUA pair is used to replace a catalytically critical tyrosine or lysine residue in the active site of Cre with a photocaged tyrosine or lysine residue, resulting in a catalytically inactive enzyme (Luo et al., 2016; Brown et al., 2018b). The photocaging group can then be removed through a short exposure to 365 nm UV light, activating Cre recombinase, which in turn activates expression of its target genes. We set out to create an optimised photocaged Cre system that enables the optical activation of gene expression in single cells in an animal. The precise spatiotemporal control of gene expression offered by photocaged Cre would have a wide range of applications by allowing the expression of genes of interest in single cells or combinations of cells. Applied to control, for example, optogenetic channels or other neuromodulatory proteins, it could be a transformative tool in neurobiology.\n\nDefining the molecular and cellular basis of behaviour is a fundamental challenge in neuroscience. C. elegans contains 302 neurons, for which the physical connectivity has been determined (White et al., 1986). This physical map provides a conceptual framework within which to design experiments to understand the signal processing properties of neural circuits that define behaviour. Central to this endeavour are methods for the spatiotemporal control of gene expression that enable precise perturbations to be effected in individual cells or combinations of cells and thereby advance our understanding of cellular contributions to circuit function. Two thirds of the neurons in C. elegans exist in bilaterally symmetric (left and right) pairs, and similar gross morphological symmetries are seen in the nervous systems of many other animals. A central question is whether and how this morphological symmetry is broken to produce functional asymmetry (Troemel et al., 1999; Wes and Bargmann, 2001; Suzuki et al., 2008; Hobert et al., 2002).\n\nTissue-specific promoters (alone or in combination) can be used to target groups of cells. However, this approach offers only limited precision, and in many cases appropriate promoters are unavailable; especially in scenarios when investigators aim to limit expression to a single cell or a defined subset of cells. This is particularly limiting in neuroscience studies where the goal is to couple neuronal activity of single neurons or a defined subset of neurons with functional output. Where specific promoters for targeting individual neurons are unavailable, laser ablation can be used to remove specific neurons, but this technology is not compatible with studying intact circuits. Optogenetic approaches using targeted illumination have been applied to stimulate groups or pairs of cells, and track resulting behavioural outputs in freely moving C. elegans (Leifer et al., 2011; Stirman et al., 2011; Kocabas et al., 2012). However, without a means of precisely defining expression of optogenetic tools, this approach is technically very challenging as it requires specialised software and hardware tools for real-time tracking and targeting and does not lend itself to isolating single cells in neuronal pairs. Similar obstacles are encountered in other systems, where the solution often also requires technically challenging approaches utilising targeted illumination (Chen et al., 2018).\n\nHere we describe the optimisation of genetic code expansion for ncAA incorporation and the optimisation of a photocaged Cre recombinase variant (optPC-Cre) in C. elegans. The combination of these advances allows us to optically control gene expression with unprecedented precision and over 95% efficiency in a population of animals (compared to less than 1% efficiency before optimisation). By using a microscope-mounted 365 nm laser, we photo-activate Cre and thereby control gene expression in single cells (Figure 1). We name this approach Laser Targeted Activation of Cre-Lox recombination (LaserTAC). LaserTAC is fast and within the technical capabilities of any lab currently able to perform laser ablation, allowing easy generation, in a single session, of dozens of animals with defined expression patterns for use in downstream experiments. We demonstrate the utility of LaserTAC by using it to target the expression of optogenetic channels to individual C. elegans touch sensory neurons within a left/right pair (PLML and PLMR). These individual neurons cannot be targeted by other methods, and our approach allows us to study their contribution to behaviour for the first time. Our results reveal that the PLM neurons act in synergy to produce a robust touch response requiring input from both neurons. Furthermore, the individual neurons within this pair make asymmetric contributions to the touch response, suggesting distinct roles for PLMR and PLML in the habituation to repeated stimulation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig1-v3.jpg)\n\n**Figure 1.:** (A) A non-canonical amino acid, e.g. photocaged lysine (PCK), is charged onto the orthogonal tRNACUA by the orthogonal aminoacyl-tRNAsynthetase (top left). The orthogonal components do not interact with the native cellular amino acids, tRNAs, or aminoacyl-tRNA-synthetases (bottom left). After charging, PCK is incorporated into the expanding polypeptide chain in response to an amber stop codon (UAG) during ribosomal translation. The resultant polypeptide is released following translation resulting in full-length photocaged Cre containing the PCK residue. (B) Photocaged Cre recombinase is activated cell-specifically in single C. elegans neurons by uncaging the PCK in its active site using a 365 nm laser. Activated Cre switches on expression of an optogenetic channel. Global illumination of freely moving animals can then be used to control cells expressing the optogenetic channel.\n\n## Results\n\n### Improved ncAA incorporation\n\nEfficient genetic code expansion depends on the ability of the orthogonal aminoacyl-tRNA synthetase to aminoacylate its cognate tRNACUA, which in turn delivers the ncAA to the ribosome for incorporation in response to the UAG amber stop codon (Figure 1A). The charging of the ncAA onto the tRNACUA occurs mainly in the cytoplasm, and efficient charging is therefore dependent on cytoplasmic aminoacyl-tRNA synthetase availability.\n\nThe orthogonal pyrrolysyl-tRNA synthetase (PylRS)/tRNA(Pyl) pair from archeal Methanosarcina species is the most versatile and widely used pair for genetic code expansion (Wan et al., 2014; Brown et al., 2018a). The PylRS/tRNA(Pyl) pair is functional in C. elegans, and variants exist that recognise photocaged amino acids (Greiss and Chin, 2011; Gautier et al., 2010).\n\nWhen expressed in eukaryotic cells, PylRS is localised predominantly to the nucleus due to a stretch of positively charged amino acids in the N-terminal domain, which is interpreted as a nuclear localisation sequence by the eukaryotic nuclear import machinery. Accordingly, addition of a rationally designed strong nuclear export sequence (S-NES) to the PylRS N-terminus was reported to significantly increase the efficiency of ncAA incorporation in mammalian cells by increasing the amount of cytoplasmic PylRS (Niki\u0107 et al., 2016).\n\nTo test this approach in C. elegans, we added the reported S-NES to the N-terminus of PCKRS, a PylRS variant optimised for incorporating photocaged lysine (PCK) (Gautier et al., 2010; Figure 2A). We used the ubiquitous C. elegans promoter sur-5p (Yochem et al., 1998) to drive S-NES::PCKRS expression and rpr-1p (Parrish et al., 2012) to drive tRNA(Pyl)CUA expression. To assay PCK incorporation efficiency, we used a dual-colour incorporation sensor; a ubiquitously expressed GFP::mCherry fusion, with the two fluorophore coding sequences separated by an amber stop codon (Greiss and Chin, 2011; Figure 2B). For this reporter, translation in the absence of PCK leads to termination at the amber stop codon, resulting in production of only GFP. Conversely, in the presence of PCK, tRNA(Pyl)CUA is charged with the ncAA and acts as a nonsense suppressor, resulting in production of the full-length GFP::mCherry fusion protein, which includes a nuclear localisation sequence and an HA tag at its C-terminus. However, we did not detect any significant difference in incorporation between worms expressing unmodified PCKRS and S-NES::PCKRS. In fact, incorporation levels when using the S-NES::PCKRS construct appeared to be lower than with unmodified PCKRS (constructs \u2018no NES\u2019 and \u2018S-NES\u2019; Figure 2C, Figure 2\u2014figure supplement 1A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig2-v3.jpg)\n\n**Figure 2.:** (A) Wildtype PylRS/PCKRS (top) contains an internal nuclear localisation sequence (NLS) which targets it to the nucleus. A strong nuclear export sequence (NES) can be added to PylRS/PCKRS to shift it to the cytoplasm (bottom). (B) The GFP::mCherry reporter has an intersubunit linker containing an amber stop codon (TAG) to direct incorporation of ncAA. The C-terminal NLS moves full-length product to the nucleus, providing a second visual readout, whilst the C-terminal HA tag provides a target for western blotting of full-length protein. (C) Western blot (anti-HA) for full-length reporter produced using PCKRS with different NES attached to the N-terminus. For comparison, the wildtype PCKRS without NES and the two best NES variants together with optimised tRNA(C15) are also shown. + or \u2013 indicates the respective presence or absence of 1 mM ncAA. Samples were normalised using anti-GFP. Quantitative western blots of the lines used are shown in Figure 2\u2014figure supplement 1A. (D) Nuclear localisation of NES variants fused to PCKRS. Localisation visualised by imaging of a GFP protein directly fused to each NES::PCKRS variant. Scale bars 30 \u00b5m. Nuclear to cytoplasmic ratios for the wild-type PCKRS::GFP fusion and two independent lines for each NES variant are shown in Figure 2\u2014figure supplement 1B. (E) Fluorescent images of randomly selected worms grown in the presence or absence of 1 mM non-canonical amino acid (ncAA). GFP indicates expression of reporter construct, mCherry indicates the presence of full-length reporter protein. Scale bars 80 \u00b5m. Enlarged versions of the images for PKIa-NES and Smad4-NES are shown in Figure 2\u2014figure supplement 1C. (F) Quantification of western blots of wild-type PCKRS (\u2018no NES\u2019)/tRNA(Pyl) vs. both PKI\u03b1-NES::PCKRS/tRNA(C15) and Smad4-NES::PCKRS/tRNA(C15) at different ncAA concentrations; anti-GFP was used to detect both the full-length GFP;;mCherry protein as well as the GFP truncated at the amber stop. The graphs show the relative intensities of the full-length GFP signal vs. the signal of the GFP truncated at the amber stop codon. Graphs represent the average of two lines and three independent experiments per condition, each experiment was blotted twice. (G) Conditions shown in (F) probed with anti-HA and anti-GFP. In (G), only one line was blotted for each condition.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Quantitative western blot of the lines blotted in Figure 2C. Each line was measured twice, the graph shows the mean and SEM. (B) Nuclear to cytoplasmic ratio of PCKRS::GFP fusion proteins with different nuclear export sequences for the genotypes shown in Figure 2B. Two independent lines were measured for each nuclear export sequence. N/C ratios were determined for n > 12 cells taken from at least three animals for each line. The animals shown in Figure 2B are from the first line for each NES (labelled \u2018(1)\u2019). Statistical significance was determined by Mann\u2013Whitney, p<0.0001 for all NES lines compared to the wildtype no NES PCKRS::GFP. (C) Fluorescent images of worms shown in Figure 2E. Only the panels of animals grown in the presence of 1 mM non-canonical amino acid (ncAA) are shown. GFP indicates expression of reporter construct, mCherry indicates the presence of full-length reporter protein. Scale bars 30 \u00b5m.\n\nTo test whether S-NES::PCKRS and unmodified PCKRS localise as predicted, we expressed S-NES::PCKRS::GFP and PCKRS::GFP fusion proteins. As expected, the S-NES::PCKRS::GFP fusion localised to the cytoplasm, while unmodified PCKRS::GFP was almost entirely nuclear, reflecting that the S-NES was able to efficiently shift PCKRS localisation from the nucleus to the cytoplasm (constructs \u2018no NES\u2019 and \u2018S-NES\u2019 Figure 2D, Figure 2\u2014figure supplement 1B). Therefore, we hypothesised that the S-NES tag itself might impinge on PCK incorporation efficiency. We next performed a mini-screen of three nuclear export sequences from human proteins: p120cts-NES, PKI\u03b1-NES, and Smad4-NES, which are demonstrated to act as NESs in C. elegans (Yumerefendi et al., 2015). All tested NESs achieved nuclear export of the synthetase PCKRS (Figure 2D, Figure 2\u2014figure supplement 1B).\n\nHowever, the NES variants differentially affected incorporation efficiencies: when we co-expressed NES::PCKRS variants with tRNA(Pyl) and the GFP::mCherry incorporation reporter, we found that the p120cts-NES variant reduced incorporation efficiency below the level of unmodified PCKRS, whereas the PKI\u03b1-NES and the Smad4-NES robustly increased PCK incorporation efficiency (Figure 2C, Figure 2\u2014figure supplement 1A). We selected the two most efficient PCKRS variants for subsequent optimisation experiments.\n\nWe then turned to the optimisation of tRNA(Pyl). tRNA(Pyl) contains secondary structure elements not present in canonical mammalian tRNAs. These features reduce compatibility with the endogenous translational machinery, which limits ncAA incorporation in mammalian cells. However, ncAA incorporation efficiency in cultured mammalian cells can be improved by introducing mammalian tRNA elements into the archaeal tRNA(Pyl) or by using engineered mitochondrial tRNAs (Serfling et al., 2018). To investigate whether the same approach might improve ncAA incorporation efficiency in other eukaryotes, we tested an improved tRNA variant in the C. elegans system. Specifically, we co-expressed the mitochondrial tRNA based variant C15, previously validated in mammalian cells (Serfling et al., 2018) together with the GFP::mCherry incorporation reporter, and the two most efficient synthetase variants described above (namely Smad4-NES::PCKRS or PKI\u03b1-NES::PCKRS). We found that the presence of the C15 variant significantly increased incorporation efficiency (Figure 2C, E, F and G, Figure 2\u2014figure supplement 1A,C). Compared to the unmodified PCKRS/tRNA(Pyl) pair, the Smad4-NES::PCKRS/tRNA(C15) and PKI\u03b1-NES::PCKRS/tRNA(C15) pairs improved incorporation efficiency by more than 50-fold; from <0.1% to 4.6% and 4.4%, respectively (Figure 2F). We performed all further experiments using the Smad4-NES::PCKRS/tRNA(C15) pair.\n\n### Expression of photocaged Cre recombinase\n\nWe next applied our improved incorporation system to express photocaged Cre recombinase (PC-Cre) in the N2 wildtype C. elegans laboratory strain. Cre recombinase can be photocaged by replacing K201, a lysine residue in the Cre active site, critical for enzyme activity, with PCK (Gibb et al., 2010; Luo et al., 2016; Figure 3A and B). PC-Cre has previously been expressed in both mammalian cell culture and zebrafish embryos using transient transfection and direct mRNA/tRNA injections (Luo et al., 2016; Brown et al., 2018b). To direct incorporation of PCK, we generated a PC-Cre construct where we replaced the lysine codon at position 201 in the Cre sequence with an amber stop codon (TAG). The PC-Cre construct was expressed in an artificial operon with GFP, allowing us to visualise its expression. We used as a Cre recombinase target gene a fluorescently tagged channelrhodopsin ChR2::mKate2, separated from its promoter by a transcriptional terminator flanked by loxP sites (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig3-v3.jpg)\n\n**Figure 3.:** (A) Cre recombinase can be photocaged by incorporating a photocaged non-canonical amino acid (ncAA) into the active site (black wedge). Transcription of a target gene is blocked by placing a transcription terminator sequence (\u2018STOP\u2019) between the gene and its promoter. The terminator sequence is flanked by loxP sites (orange triangles). Upon illumination at 365 nm, the photocaging group is removed and the uncaged, active Cre removes the transcriptional terminator. (B) 6-nitropiperonyl-L-Lysine, \u2018photocaged lysine\u2019 (PCK), is a lysine residue with a photocaging group on the side chain. The photocaging group is removed at 365 nm. (C) Genetic constructs for PC-Cre controlled expression of channelrhodopsin. See also Figure 3\u2014figure supplement 1, . (D) Cre activation efficiency in animals with optimised vs. original constructs. Comparison of original PCKRS and tRNA(Pyl)CUA (\u2018PCKRS\u2019), Smad4-NES::PCKRS and tRNA(C15) (\u2018NES-PCKRS\u2019), original photocaged Cre recombinase (\u2018PC-Cre\u2019), and optimised photocaged Cre (\u2018optPC-Cre\u2019). Three experiments were performed using two independent lines for each condition. In each experiment, 30 animals were visually scored for ChR2::mKate2 expression for each condition. Significance determined by Welch\u2019s t test. The error is the SEM (n = 6). (E) Schematic showing PC-Cre and optPC-Cre. Substitution mutations shown as blue bars. The TAG mutation denotes the site of PCK incorporation. PC-Cre contains both an N-terminal and internal nuclear localisation sequence (NLS). OptPC-Cre contains only a C-terminal NLS, the R119A mutation disables the internal NLS. (F) Imaging of worms expressing Smad4-NES::PCKRS, tRNA(C15), and optPC-Cre. Expression of ChR2::mKate2 is dependent on supplementation of PCK and uncaging by exposure to UV light. Scale bars 30 \u00b5m. (G) Percentage of animals reversing in response to a blue light pulse. \u2018PCKRS\u2019: original PCKRS and tRNA(Pyl)CUA; \u2018NES-PCKRS\u2019: Smad4-NES::PCKRS and tRNA(C15); \u2018PC-Cre\u2019: original photocaged Cre recombinase; \u2018optPC-Cre\u2019: optimised photocaged Cre. Assays were carried out using two independent lines and >10 animals for each genotype; the mean of three stimulations was determined. The graph shows the mean of two experiments. Significance obtained by Mann\u2013Whitney U test. The error is the SEM (n = 4). *p<0.05, ***p<0.001, ****p<0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Constructs used to generate glr-1p-driven photoactivatable Cre recombinase lines. (B) Photoactivation of Pglr-1-driven PC-Cre recombinase before optimisation, with an N-terminal nuclear localisation sequence (NLS) and intact internal NLS. Scale bars 30 \u00b5m. (C) Percentage of animals reversing in response to a blue light pulse for original PCKRS and Methanosarcina mazei tRNA(Pyl)CUA (\u2018PCKRS\u2019), modified NES-PCKRS and tRNA(C15) (\u2018NES-PCKRS\u2019), original photocaged Cre recombinase (\u2018PC-Cre\u2019), and optimised photocaged Cre (\u2018optPC-Cre\u2019). Either in the presence (\u2018+ ATR\u2019) or absence (\u2018-ATR\u2019) of all-trans-retinal. Significance obtained by unpaired t-test. The error is the SEM (n = 4).\n\nWe generated transgenic animals containing all genetic components: the optimised orthogonal synthetase/tRNA pair Smad4-NES::PCKRS/tRNA(C15), the PC-Cre construct, and the floxed Cre target ChR2::mKate2. All protein coding components were driven by a glr-1p promoter, an orthologue of human GRIA1 (glutamate ionotropic receptor AMPA type subunit 1). This promoter is active in glutamatergic neurons, including command interneurons (Maricq et al., 1995; Figure 3\u2014figure supplement 1A). We grew animals on PCK from the L1 larval stage and activated PC-Cre by UV illumination when they had reached the L4 larval stage (after 2 days). 24 hr after activation, we saw strong expression of ChR2::mKate2 in neurons expressing PC-Cre. In contrast, we saw no expression of ChR2::mKate2 in animals which had undergone UV illumination without prior feeding on PCK, and in animals fed on PCK but which had not undergone UV illumination (Figure 3\u2014figure supplement 1B). Furthermore, as expected for a membrane channel, the red fluorescence of ChR2::mKate2 was localised at the cellular membrane. We observed red fluorescence only in cells expressing the glr-1p promoter, as evidenced by overlap with glr-1p-driven expression of GFP.\n\nUsing the optimised Smad4-NES::PCKRS/tRNA(C15) expression system, we observed expression of the target locus, indicative of PC-Cre photoactivation, in 63% of animals 24 hr after uncaging. We saw no red fluorescence without UV treatment. The 63% activation rate was a vast improvement relative to the 1% we observed with unmodified PCKRS and tRNA(Pyl) (Figure 3D).\n\n### Improving photocaged Cre recombinase\n\nTo further improve the photoactivation method, we next turned to PC-Cre optimisation. When using amber stop codons for ncAA incorporation, the tRNACUA competes with endogenous release factors. This competition results in a mixture of full-length polypeptides, with ncAA incorporated, as well as truncated polypeptides due to translational termination at the amber stop codon. As assessed with the GFP::mCherry incorporation reporter, we show that the percentage of full-length protein is between 4% and 5% when using the improved Smad4-NES::PCKRS/tRNA(C15) incorporation system (Figure 2F). It is likely that, similar to the fluorescent reporter, the majority of translation events of the PC-Cre mRNA will also terminate at the internal amber stop codon, even in the presence of PCK. A Cre protein truncated at the amber stop codon in position 201 is missing the majority of its active site, but the parts of Cre responsible for the protein-protein interaction required for active Cre tetramer formation are still present, as are large parts of the DNA binding interface (Guo et al., 1997). We initially based PC-Cre on previously reported Cre constructs, which contain an N-terminal SV40 NLS in addition to the internal NLS native to Cre (Luo et al., 2016; Brown et al., 2018b; Le et al., 1999; Macosko et al., 2009), thus ensuring localisation of the enzyme to the nucleus. We cannot exclude the possibility that truncated Cre, which locates to the nucleus due to the NLSs upstream of position 201, may interfere with tetramer formation or DNA binding.\n\nWe aimed to utilise the C. elegans nuclear import machinery to enrich for full-length product in the nucleus. Since Cre acts on nuclear DNA, we reasoned that we could boost PC-Cre activity by lowering the fraction of truncated PC-Cre while increasing the fraction of full-length PC-Cre present in the nucleus. To this end, we removed both NLSs upstream of position 201 by introducing a R119A mutation disabling the internal NLS sequence (Le et al., 1999) and by removing the N-terminal SV40 NLS. To restore nuclear import for full-length PC-Cre only, we attached the strong C. elegans EGL-13 NLS (Lyssenko et al., 2007) to the Cre C-terminus to create optimised PC-Cre (optPC-Cre) (Figure 3E). When we compared optPC-Cre to PC-Cre, we indeed found that target gene activation was significantly improved: from 63% for PC-Cre to 97% for optPC-Cre (Figure 3D). We saw no expression of the ChR2::mKate2 target gene without PCK or UV activation (Figure 3D and F).\n\nWe next performed behavioural assays to assess whether our system allowed optical control of neurons. After activation of optPC-Cre, we waited 24 hr to achieve sufficient expression of ChR2::mKate2, which we confirmed by visual inspection under a dissecting fluorescence microscope. When we exposed worms to 470 nm blue light to activate ChR2, we observed clear reversals in worms expressing ChR2::mKate2 in the presence of the ChR2 cofactor all-trans-retinal (ATR). In animals expressing ChR2::mKate2 in the absence of ATR, we did not observe such reactions (Figure 3G, Figure 3\u2014figure supplement 1C, Video 1 and Video 2). The induced behaviour concurs with previous studies showing that optogenetic activation of neurons expressing ChR2 from the glr-1p promoter induces backward movement (Schultheis et al., 2011). When we compared strains expressing PC-Cre and optPC-Cre, respectively, we saw the strongest and most robust responses in the strains where optPC-Cre was used to control expression of ChR2::mKate2, followed by strains using non-optimised PC-Cre, but using the efficient Smad4-NES::PCKRS/tRNA(C15) incorporation system. Animals expressing unmodified PCKRS and non-optimised Cre showed almost no response to optogenetic activation (Figure 3G, Figure 3\u2014figure supplement 1C). Taken together, we conclude that optPC-Cre is an effective tool with which to control optogenetic channel expression for the purpose of optical control of neuronal activity.\n\n![Video 1.](https://cdn.elifesciences.org/articles/67075/elife-67075-video1.mp4.jpg)\n\n**Video 1.:** Quantifications of the response of this line and a further, independent, line are shown in Figure 3G and Figure 3\u2014figure supplement 1C.\n\n![Video 2.](https://cdn.elifesciences.org/articles/67075/elife-67075-video2.mp4.jpg)\n\n**Video 2.:** Quantifications of the response of this line and a further, independent, line are shown in Figure 3G and Figure 3\u2014figure supplement 1C.\n\n### Cell-specific gene activation using LaserTAC\n\nThe use of light to control activity of Cre recombinase should allow precise spatial control of Cre-dependent DNA recombination. We tested the precision of uncaging by using a microscope mounted 365 nm laser to target individual cells in the touch response circuitry. C. elegans has six mechanosensory neurons for the perception of soft touch: AVM, ALML, and ALMR, which are located in the anterior of the worm, and PVM, PLML, and PLMR, which are located in the posterior (Figure 4A). Activation of the touch receptor neurons results in avoidance behaviour. Worms respond with backward movement to an anterior touch, and with forward movement to a posterior touch (Chalfie et al., 1985). Previous studies using targeted ChR2 illumination in individual animals likewise showed that optogenetic activation of the anterior neurons AVM and ALM results in reversals, while activation of the posterior neurons PVM and PLM results in forward movement. Concurrent activation of all six neurons results in reversals in the majority of cases. Repeated activation leads to a reduced response due to habituation (Leifer et al., 2011; Stirman et al., 2011; Schild and Glauser, 2015).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig4-v3.jpg)\n\n**Figure 4.:** (A) Map of the six C. elegans touch receptor neurons showing the posterior location of the PLM neuron pair. (B) Diagram of experimental procedure for activating expression of target genes in single cells using LaserTAC, followed by optogenetic behavioural assay. (C\u2013E) Fluorescent images showing targeted expression of Chrimson::mKate2 24 hr after laser induced activation of optPC-Cre (middle panels) in both PLM neurons (C), only in PLML (D), only in PLMR (E). Scale bars 20 \u00b5m. GFP signal in the left panels indicates cells expressing optPC-Cre.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Constructs used to generate the mec-7p-driven optPC-Cre recombinase lines for targeted expression of Chrimson::mKate2. (B) Aggregate expression estimates for mec-7 and maco-1 as displayed on wormbase.org. Estimates of expression calculated by averaging the FPKMs from published datasets (see wormbase.org). (C, D) Soft touch assays. Animals were subjected to alternating head/tail touches for a total of 10 touches. The mean of three experiments is depicted, and each experiment was performed with 10 animals. (C) \u2018+ PCK\u2019 indicates worms grown on photocaged lysine (PCK) for 48 hr. (D) \u2018+ PCK\u2019 indicates worms grown for 48 hr on PCK, \u2018+ UV\u2019 animals were illuminated with 365 nm light at 48 hr. All animals were assayed 24 hr after the illumination timepoint. Significance was determined by Mann\u2013Whitney U test (n = 3). ***p<0.001.\n\nWe aimed to investigate the posterior PLM neurons by using LaserTAC to selectively express the optogenetic channel Chrimson (Schild and Glauser, 2015) in both PLM neurons, or in PLML and PLMR individually. To this end, we generated strains with Smad-4-NES::PCKRS and optPC-Cre expression driven by the mec-7p promoter, which is active in all six mechanosensory neurons (Mitani et al., 1993). To express Chrimson, we used a Chrimson::mKate2 fusion gene separated from the pan-neuronal maco-1p promoter by a transcriptional terminator flanked by loxP sites (Figure 4\u2014figure supplement 1A). We chose the panneuronal maco-1p promoter, an orthologue of human MACO1 (macoilin 1) (Arellano-Carbajal et al., 2011), because in contrast to mec-7p, it shows increasing expression from the L4 larval to the adult stage, the age when we aimed to induce Chrimson::mKate2 expression (Figure 4\u2014figure supplement 1B).\n\nTo activate expression of the Chrimson channel in the PLM neurons, we mounted age-synchronised L4 stage animals, grown on PCK from L1, on a microscope slide and used a Micropoint Galvo system to deliver a short 2\u20134 s 365 nm pulse to individual cells, targeting the nucleus. After uncaging, we transferred the worms to an NGM agar plate without PCK for recovery and to allow for induced Chrimson::mKate2 expression (Figure 4B). After 12\u201324 hr, we observed Chrimson::mKate2 expression that was only present in laser-targeted cells. We were able to selectively activate optPC-Cre in both PLM neurons, as well as in PLML or PLMR alone (Figure 4C\u2013E).\n\nWe confirmed that the presence of the PCK incorporation machinery and optPC-Cre did not affect the function of the touch sensory neurons by assaying the animals response to soft touch (Chalfie et al., 2014; Figure 4\u2014figure supplement 1C,D).\n\n### Optogenetic manipulation of PLM touch sensory neurons reveals distinct and synergistic roles for PLML and PLMR in the soft touch response\n\nTo determine the behavioural response to PLM stimulation, we prepared animals expressing Chrimson::mKate2 in either both PLM neurons, or in PLML or PLMR alone. After optPC-Cre activation, we grew the worms on plates supplemented with ATR for 24 hr to allow expression of the optogenetic channel and confirmed the desired expression pattern under a fluorescence dissecting microscope.\n\nWe then activated Chrimson::mKate2 expressing neurons by illumination for 1 s every 30 s with 617 nm at the maximum power setting of 74 mW/cm2. During the assay, the animals were moving freely on the plate and we illuminated the entire plate. We found that illumination of animals expressing Chrimson::mKate2 in both PLM neurons (\u20182PLM\u2019) triggered a robust response with the worms initiating forward movement (Figure 5A,B, Figure 5\u2014figure supplement 1, Video 3). Conversely, mock-treated animals (\u20180PLM\u2019) grown on PCK and ATR but without activation of optPC-Cre showed no response (Figure 5\u2014figure supplement 1, Video 4). Animals expressing Chrimson::mKate2 only in the PLML or the PLMR neurons respectively also showed a clear reaction to stimulation (Figure 5A,B, Figure 5\u2014figure supplement 1, Video 5 and Video 6). For all three expression patterns (2PLM, PLML, PLMR), we observed a gradual reduction in the response with increasing number of stimulations, both in the fraction of animals responding and in the speed upon stimulation, consistent with habituation to the stimulus (Stirman et al., 2011). We found that the 2PLM animals responded stronger to stimulation than animals expressing Chrimson::mKate2 in either PLML or PLMR alone, both in regard to the fraction of animals responding, and by velocity (Figure 5A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig5-v3.jpg)\n\n**Figure 5.:** (A) Percentage of animals responding to repeated stimulations with light pulses of 1 s, 74 mW/cm2, 617 nm, delivered every 30 s. Worms expressed Chrimson in either both PLM neurons (\u20182PLM\u2019, black), only in PLML (blue-green), or only in PLMR (red). Responding worms are defined as those having mean forward speeds > 100 \u03bcm s\u20131 over the 2 s following stimulation. Assays were performed with cohorts of 4\u20136 worms stimulated simultaneously, one cohort constitutes a replicate. Replicates were assayed on different days. Significances derived from two-way ANOVA (2PLM n = 2; PLML and PLMR n = 4). (B) Mean velocity for the experiments analysed in (A). Mean velocity was determined for each cohort. Significances derived from two-way ANOVA (2PLM n = 2; PLML and PLMR n = 4). (C) Simplified schematic of the asymmetric neuronal connectivity of PLML and PLMR within the touch circuit. Symmetric PLM connections are shown in light blue, whereas asymmetric connections shown in magenta. (D) Percentages of animals which respond to stimulation (0.1 s, 617 nm) at the power levels indicated. Chrimson expressed in either both PLM neurons (\u20182PLM\u2019, black), only in PLML (blue-green) or only in PLMR (red). For each individual worm, the velocity was measured in the 1 s window from 0.4 s to 1.2 s after stimulation, which corresponds to the peak response. Velocities were then normalised by subtracting the average speed of the individual over the 0.5 s immediately prior to stimulation. Responding worms are defined as those having mean normalised forward speeds >100 \u03bcm/s in the window from 0.4 s to 1.2 s after stimulation. Cohorts of 4\u20138 animals were stimulated together, and the mean velocity of one cohort constitutes a replicate. Replicates were assayed on different days. Significances derived from two-way ANOVA, n = 3 for all conditions. (E) Mean normalised velocity for the experiments analysed in (D). The mean normalised velocity across all animals within a cohort was determined for the 1 s window 0.2\u20131.2 s after stimulation. Significances derived from two-way ANOVA. n = 3 for all conditions. (F) Normalised mean velocity traces of the experiments analysed for (D,E) across all three replicates for each condition at the power levels indicated. 2PLM (black), PLML (blue-green), and PLMR (red). Pink vertical lines indicate the light pulse. Statistical significances are provided in the table in (F). Significance was determined by two-way ANOVA using the mean of the three replicates for each of the seven speed measurements between 0.4 s and 1.2 s after stimulation, which corresponds to the peak response. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Traces before normalisation are shown in Figure 5\u2014figure supplement 2.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Animals expressing Chrimson::mKate2 were stimulated with 1 s pulses of 617 nm light at 74 mW/cm2. The pulses were delivered at 30 s intervals (pink vertical lines). The assayed animals expressed Chrimson::mKate2 either in both PLM neurons (top panel), only in PLML (second panel), or only in PLMR (third panel). The bottom panel depicts mock-treated animals not expressing Chrimson::mKate2. The mock-treated animals were raised on PCK for 48 hr, then shifted to plates containing all-trans-retinal (ATR) for 24 hr before the assay was performed. The panels depict the mean velocity of two experiments (2PLM), four experiments (PLML, PLMR), and three experiments (0PLM). Each experiment was performed with between 4 and 8 animals.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Animals expressing Chrimson::mKate2 were stimulated with 0.1 s pulses of 617 nm light at the indicated intensities. Pink vertical lines indicate the timepoint when the pulses were delivered. The panels depict the mean velocity of three experiments performed for each condition. Each experiment was performed with between 4 and 8 animals.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67075/elife-67075-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Expression levels were determined by measuring red mKate2 fluorescence in animals expressing Chrimson::mKate2 in either PLML (n = 7) or PLMR (n = 9). Significance was determined by Mann\u2013Whitney U test.\n\n![Video 3.](https://cdn.elifesciences.org/articles/67075/elife-67075-video3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/67075/elife-67075-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/67075/elife-67075-video5.mp4.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/67075/elife-67075-video6.mp4.jpg)\n\nWe then proceeded to more closely investigate the responses to activation of PLML and PLMR individually. The members of the PLM neuron pair, PLML and PLMR, show a striking asymmetry in their connections within the worm connectome (Figure 5C; Chalfie et al., 1985). PLMR forms chemical synapses connecting it to 10 downstream neurons including the AVA and AVD interneuron pairs, which are involved in driving backward locomotion. In addition to chemical synapses, PLMR also forms gap junctions to PVCR, PHCR, and LUAR. PLML, on the other hand, is connected to the touch response circuit exclusively through gap junctions, formed with the interneurons PVCL, PHCL, and LUAL. In fact, PLML does not form any chemical synapses, with the exception of a single connection to HSNL, a neuron involved in the control of egg laying. Asymmetric wiring of PLML and PLMR has been proposed to influence the C. elegans tap response, a withdrawal reflex that integrates information from the anterior and posterior mechanosensory neurons. In worms with ablation of both PLM neurons and the single PLMR neuron, a tap stimulus increased backward movement. In contrast, ablating PLML had no effect (Wicks and Rankin, 1995).\n\nAs we saw no difference between PLML and PLMR in the response to strong stimulation (Figure 5A,B), we decided to test the animals' responses to weaker stimulation of the PLM neurons. For this, we reduced the duration of the 617 nm light pulse from 1 s to 0.1 s and delivered varying low intensities, starting at 3 mW/cm2, the lowest setting that was possible with our setup. While the 0.1 s, 3 mW/cm2 stimulus was sufficient to elicit a response in animals expressing Chrimson in both PLMs, neither PLML nor PLMR animals reacted, indicating a synergistic effect of PLML and PLMR and the requirement for activation of both neurons to elicit a reaction in response to weak stimuli (Figure 5D\u2013F, Figure 5\u2014figure supplement 2).\n\nWhen we increased illumination intensity, we saw a striking difference appear between the responses to PLML and PLMR stimulation, respectively. Animals expressing Chrimson in PLMR showed a robust reaction to stimulation at 14 mW/cm2 and higher. In contrast, the response of PLML animals was consistently below that of PLMR or 2PLM animals (Figure 5D\u2013F, Figure 5\u2014figure supplement 2). Only at the highest intensity setting of 74 mW/cm2 did we observe animals of all three expression patterns responding robustly to the stimulus. The observed differences in response for PLML and PLMR are not due to differential expression of Chrimson::mKate2 (Figure 5\u2014figure supplement 3), therefore they are likely due to the asymmetric connectivity of the two neurons within the C. elegans nervous system.\n\n## Discussion\n\nWe demonstrate a robust, improved method for highly efficient ncAA incorporation in C. elegans. Our optimised ncAA incorporation system will provide the means to introduce a wide range of new chemical functionalities into proteins, such as crosslinkers, bioorthogonal groups, and post-translational modifications, and serve as a catalyst for new approaches to manipulate and understand cellular biology in C. elegans (Chin, 2017; Davis and Chin, 2012; Nguyen et al., 2018; Lang and Chin, 2014; Young and Schultz, 2018; Zhang et al., 2015; Baker and Deiters, 2014). Furthermore, since our optimisation approach is based on components that are not specific to C. elegans, we expect that it will be easily exportable to other organisms.\n\nThe genetic code expansion approach relies on the use of an amber stop codon to direct incorporation of ncAA, which means that endogenous TAG codons may be inadvertently suppressed by the orthogonal system, albeit likely at low levels. Interestingly, C. elegans and other organisms have evolved natural surveillance mechanisms to mitigate against the read-through of stop codons (Arribere et al., 2016), which will also mitigate against any potential effects caused by our system. Indeed, we find that the function of the mechanosensory neurons we assay is unaffected by the presence of the orthogonal ncAA incorporation machinery.\n\nWe demonstrate the utility of our system by creating LaserTAC, which is based on an optimised photoactivatable Cre recombinase and offers several unique advantages for optical control of gene expression. First, the recombinase activity is tightly controlled; the presence of the photocaging group completely blocks activity and upon photoactivation, highly efficient wildtype Cre is generated. Second, following photoactivation, the photocaged amino acid required for amber stop codon suppression can be removed. Thus translation of full-length Cre ceases, leaving worms devoid of photocaged Cre for subsequent biological studies (Maywood et al., 2018). Third, due to the stability of the photocaging group at longer wavelengths, our photoactivatable Cre is fully compatible with imaging and optogenetic methods that use visible light.\n\nWe used LaserTAC to switch on optogenetic channel expression in individual neurons within a bilaterally symmetric pair that cannot be targeted by genetic means. Switching on gene expression using LaserTAC is fast and easily enables the preparation of dozens of animals for downstream experiments. Light activation requires only a microscope-mounted laser, generally used for ablation in most C. elegans laboratories, modified to emit light at 365 nm. Generating the required transgenic strains is straightforward and at present involves the introduction of the genetic constructs, followed by genomic integration. The power of the method we present here lies in the versatility it offers, not only in respect to the ability to investigate single neurons. Once a transgenic strain is made, any combination of neurons targeted by the promoter that was used can in principle be investigated. This removes the requirement for the creation of a potentially large numbers of lines by allowing multiple conditions to be investigated using a single strain. A further advantage offered by our approach is the ability of precise temporal control, which is generally not available using promoter-based systems.\n\nWe demonstrate the capabilities of LaserTAC by targeting expression of the optogenetic channel Chrimson to the mechanosensory PLM neurons. This enables us to analyse the individual contributions of the neurons PLML and PLMR to the C. elegans tail touch circuit response. Since we target expression of the optogenetic channel, we can perform behavioural assays by globally illuminating a plate of freely moving animals.\n\nWe found that PLML and PLMR show some redundancy in triggering the tail touch response after strong stimulation. However, using weaker stimuli, we found that only stimulation of both neurons elicits a response, indicative of a synergistic rather than a simply redundant role for PLML and PLMR. Interestingly, our results demonstrate asymmetric contributions of PLML and PLMR to the touch response. Considering the electrical and chemical connectome of this circuit (Figure 5C), our results are consistent with a model where the touch response is controlled by two parallel pathways that rely on gap junctions or chemical synapses, respectively. The first pathway involves direct connections of both PLM neurons to the PVC interneurons via gap junctions. Activation of the PVCs through these gap junctions triggers forward motion. The PVCs form connections with forward command interneuron AVB as well as inhibitory connections with backward command interneurons AVA/AVD. The second pathway involves chemical synaptic transmission from PLMR onto AVA and AVD, inhibiting backward locomotion. Thus, when only PLMR is stimulated, both pathways are activated, resulting in a stronger response, whereas when PLML alone is stimulated only the gap junction pathway is activated, resulting in a weaker response. Unlike the PLMs, the PVCs are connected to each other by gap junctions and may thus act as electrical sinks for signals from the PLMs. This could help to explain the requirement for stronger stimulation of the single neurons, especially for PLML, to trigger a response as compared to the stimulation of both PLMs simultaneously. Stimulation of both PLM neurons together results in full activation of the gap junction pathway by activating both PVC neurons, which, together with the direct inhibition of AVA/AVD by PLMR, results in full activation of the tail touch motor response. The strong synergistic effect we observe with the simultaneous stimulation of PLML and PLMR indicates a requirement for the stimulation of both PVC neurons.\n\nWhile we focused here on expression of optogenetic channels in C. elegans neurons, simple extensions of our method will enable the cell-specific expression of other desired transgenes of interest. By inserting loxP sites into genomic loci using CRISPR/Cas9, it should be possible to control, at single-cell resolution, the expression of any endogenous protein, such as neuropeptides, receptors, innexins, proteins involved in synaptic transmission, etc. Since the components we employ are functional in other C. elegans tissues (Greiss and Chin, 2011) and indeed in other model systems such as zebrafish, fruit fly, mouse, cultured cells, and ex vivo tissues, we anticipate that our method will have broad applicability beyond the nervous system and beyond C. elegans.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Caenorhabditis elegans)</td>\n      <td>SGR30</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx17[sur-5p::FLAG::PCKRS::GFP]Figure 2D, Figure 2\u2014figure supplement 1B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR31</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx18[sur-5p::p120cts::PCKRS::GFP]Figure 2D, Figure 2\u2014figure supplement 1B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR32</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx19[sur-5p::PKI\u03b1::PCKRS::GFP]Figure 2D, Figure 2\u2014figure supplement 1B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR33</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx20[sur-5p::smad-4::PCKRS::GFP]Figure 2D, Figure 2\u2014figure supplement 1B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR34</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx21[sur-5p::S-NES::PCKRS::GFP]Figure 2D, Figure 2\u2014figure supplement 1B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR35</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx22[sur-5p::PCKRS; rpr-1p::tRNA(Pyl); rps-0p::GFP(am)::mCherry::HA]; smg-2(e2008)Figure 2C, E, F and G, Figure 2\u2014figure supplement 1A</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR36</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx23[sur-5p::p120cts::PCKRS; rpr-1p::tRNA(Pyl); rps-0p::GFP(am)::mCherry::HA];smg-2(e2008)Figure 2C, Figure 2\u2014figure supplement 1A</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR37</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx24[sur-5p::PKI\u03b1::PCKRS; rpr-1p::tRNA(Pyl); rps-0p::GFP(am)::mCherry::HA]; smg-2(e2008)Figure 2C, Figure 2\u2014figure supplement 1A</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR38</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx25[sur-5p::smad-4::PCKRS; rpr-1p::tRNA(Pyl); rps-0p::GFP(am)::mCherry::HA]; smg-2(e2008)Figure 2C, Figure 2\u2014figure supplement 1A</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR39</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx26[sur-5p::SNES::PCKRS; rpr-1p::tRNA(Pyl); rps-0p::GFP(am)::mCherry::HA]; smg-2(e2008)Figure 2C, Figure 2\u2014figure supplement 1A</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR40</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx27[sur-5p::PCKRS; rpr-1p::tRNA(Pyl); rps-0p::GFP(am)::mCherry::HA]; smg-2(e2008)Figure 2F,G</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR45</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx32[sur-5p::PKI\u03b1::PCKRS; rpr-1p::tRNA(C15); rps-0p::GFP(am)::mCherry::HA]; smg-2(e2008)Figure 2C, E, F and G, Figure 2\u2014figure supplement 1A,CA</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR46</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx33[sur-5p::smad-4::PCKRS; rpr-1p::tRNA(C15); rps-0p::GFP(am)::mCherry::HA]; smg-2(e2008)Figure 2C, E, F and G, Figure 2\u2014figure supplement 1A,CA</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR47</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx34[sur-5p:: PKI\u03b1::PCKRS; rpr-1p::tRNA(C15); rps-0p::GFP(am)::mCherry::HA];smg-2(e2008)Figure 2F,G</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR48</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx35[sur-5p::smad-4::PCKRS; rpr-1p::tRNA(C15); rps-0p::GFP(am)::mCherry::HA];smg-2(e2008)Figure 2F,G</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR49</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx36[glr-1p::PCKRS rpr-1p::tRNA(Pyl); glr-1p::PC-Cre; glr-1p::B-gal terminator+ loxP::ChR2::mKate2]Figure 3D,G, Figure 3\u2014figure supplement 1C</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR50</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx37[glr-1p::PCKRS; rpr-1p::tRNA(Pyl); glr-1p::PC-Cre; glr-1p::B-gal terminator+ loxP::ChR2::mKate2]Figure 3D,G, Figure 3\u2014figure supplement 1C</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR51</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx38[glr-1p::smad-4::PCKRS; rpr-1p::tRNA(C15); glr-1p::PC-Cre; glr-1p::B-gal terminator+ loxP::ChR2::mKate2]Figure 3D,G, Figure 3\u2014figure supplement 1B,C</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR52</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx39[glr-1p::smad-4::PCKRS; rpr-1p::tRNA(C15); glr-1p::PC-Cre; glr-1p::B-gal terminator+ loxP::ChR2::mKate2]Figure 3D,G, Figure 3\u2014figure supplement 1C</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR53</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx40[glr-1p::smad-4::PCKRS; rpr-1p::tRNA(C15); glr-1p::optPC-Cre; glr-1p::B-gal terminator+ loxP::ChR2::mKate2]Figure 3D, F and G, Figure 3\u2014figure supplement 1C, Video 1, Video 2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR54</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx41[glr-1p::smad-4::PCKRS; rpr-1p::tRNA(C15); glr-1p::optPC-Cre; glr-1p::B-gal terminator+ loxP::ChR2::mKate2]Figure 3D,G, Figure 3\u2014figure supplement 1C</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR55</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx42[mec-7p::smad-4::PCKRS; rpr-1p::tRNA(C15); mec-7p::optPC-Cre; Pmaco-1::B-gal terminator+ loxP::ChR2::mKate2]</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR56</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greIs1[mec-7p::smad-4::PCKRS; rpr-1p::tRNA(C15); mec-7p::optPC-Cre; Pmaco-1::terminator+ loxP::ChR2::mKate2]Figure 4C\u2013E generated by gamma integration from SGR55, backcrossed 2\u00d7</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR96</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greIs1[mec-7p::smad-4::PCKRS; rpr-1p::tRNA(C15); mec-7p::optPC-Cre; Pmaco-1::terminator+ loxP::ChR2::mKate2]Figure 4\u2014figure supplement 1C,D, Figure 5, Figure 5\u2014figure supplements 1\u20133 SGR56 backcrossed 2x</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR98</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx18[sur-5p::p120cts::PCKRS::GFP]Figure 2\u2014figure supplement 1B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR99</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx19[sur-5p::PKI\u03b1::PCKRS::GFP]Figure 2\u2014figure supplement 1B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR100</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx20[sur-5p::smad-4::PCKRS::GFP]Figure 2\u2014figure supplement 1B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>SGR101</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>greEx21[sur-5p::S-NES::PCKRS::GFP]Figure 2\u2014figure supplement 1B</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>N2</td>\n      <td>CGC</td>\n      <td>WBStrain00000001</td>\n      <td>Wild type Figure 4\u2014figure supplement 1C</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>CZ10175</td>\n      <td>CGC</td>\n      <td>WBStrain00005421</td>\n      <td>zdIs5[mec-4p::GFP+ lin-15(+)]Figure 4\u2014figure supplement 1C (\"mec-4p::gfp\")</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td></td>\n      <td>Chalfie and Au 1989(10.1126/science.2646709)</td>\n      <td>WBVar00266589</td>\n      <td>mec-4(u231)Figure 4\u2014figure supplement 1C (\"mec-4(d)\")</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-GFP, monoclonal (clones 7.1 and 13.1)</td>\n      <td>Roche</td>\n      <td>Cat# 11814460001RRID:AB_390913</td>\n      <td>Figure 2C, F and G, Figure 2\u2014figure supplement 1A(1:4000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat anti-HA, monoclonal (clone 3F10)</td>\n      <td>Roche</td>\n      <td>Cat# 11867423001RRID:AB_390918</td>\n      <td>Figure 2C,G (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Horse anti-mouse IgG HRP</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 7076SRRID:AB_330924</td>\n      <td>Figure 2C, F and G, Figure 2\u2014figure supplement 1A(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Rat IgG (H + L) HRP</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 31470RRID:AB_228356</td>\n      <td>Figure 2C,G (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Photocaged lysine (6-nitropiperonyl-L-Lysine)</td>\n      <td>ChiroBlock GmbH;Gautier et al., 2010</td>\n      <td>CAS number:1221189-11-2</td>\n      <td>Custom synthesised by ChiroBlock GmbH, Germany.Synthesis described in Gautier et al. (10.1021/ja910688s)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids\n\nAll expression plasmids were generated from pENTR plasmids using the Gateway system (Thermo Fisher Scientific). All plasmids are described in Supplementary file 1.\n\n### C. elegans strains\n\nStrains were maintained under standard conditions unless otherwise indicated (Brenner, 1974; Stiernagle, 2006).\n\nTransgenic worms were generated by biolistic bombardment using hygromycin B as a selection marker (Greiss and Chin, 2011; Radman et al., 2013; Davis and Greiss, 2018) in either N2 or smg-2(e2008) genetic background. The smg-2(e2008) background lacks a functional nonsense-mediated decay machinery and was used to increase levels of reporter mRNA (Greiss and Chin, 2011). Gamma-irradiation to generate the integrated line SGR56 from SGR55 was carried out by Michael Fasseas (Invermis/Magnitude Biosciences). After integration, the line was backcrossed into N2 and subsequently maintained on standard NGM without added hygromycinB. SGR56 was backcrossed twice, SGR96 was backcrossed four times. All non-integrated lines were maintained on NGM supplemented with hygromycin B (0.3 mg/ml; Formedium). Strains used in this paper are listed in the key resources table.\n\n### Imaging and image analysis\n\nAll imaging was carried out on a Zeiss M2 imager. Worms were mounted on glass slides for imaging and immobilised in a drop of M9 supplemented with 25 mM NaN3.\n\nFluorescent images were analysed using ImageJ software. To determine nuclear to cytoplasmic ratios of NES::PCKRS::GFP variants, mean fluorescence intensity was measured for a region of interest within the nucleus and divided by the mean intensity of a region in the cytoplasm proximal to the nucleus. To compare Chrimson::mKate2 levels in the PLML and PLMR neurons, the threshold function was used to create regions of interest encompassing the neurons and the mean intensity of those regions was taken.\n\n### ncAA feeding\n\nPCK (Gautier et al., 2010) was custom synthesised by ChiroBlock GmbH, Germany. PCK-NGM plates were prepared by dissolving PCK powder in a small volume of 0.02 M HCl and adding the solution to molten NGM. The HCl in the NGM was neutralised by addition of equimolar amounts of NaOH as previously described (Davis and Greiss, 2018).\n\nAnimals were age synchronised by bleaching (Stiernagle, 2006) and added to PCK-NGM plates as L1 larvae. Food was then added to the PCK-NGM plates in the form of solubilised freeze-dried OP50 (LabTIE) reconstituted according to the manufacturer\u2019s instructions.\n\n### Worm lysis and western blotting\n\nSynchronised populations were grown on PCK-NGM plates until the young adult stage and washed off plates using M9 buffer supplemented with 0.001% Triton-X100. Worms were settled, supernatant was removed, and worms were resuspended in undiluted 4\u00d7 LDS loading buffer (Thermo Fisher Scientific) supplemented with NuPAGE Sample Reducing Agent (Thermo Fisher Scientific). Lysis was performed by a freeze/thaw cycle followed by 10 min incubation at 95\u00b0C.\n\nSamples were run on precast Bolt 4\u201312% gels (Thermo Fisher Scientific) for 19 min at 200 V. Proteins were transferred from the gel onto a nitrocellulose membrane using an iBlot2 device (Thermo Fisher Scientific).\n\nAfter transfer, the membrane was blocked using 5% milk powder in PBST (PBS + 0.1% Tween-20) for 1 hr at room temperature. Incubation with primary antibodies was carried out in PBST + 5% milk powder at 4\u00b0C overnight. Blots were washed 6 \u00d7 5 min with PBST + 5% milk powder before incubating with secondary antibody for 1 hr at room temperature.\n\nAntibodies used are listed in the key resources table. Pierce ECL Western Blotting Substrate (Thermo Fisher Scientific) or SuperSignal West Femto chemiluminescent Substrate (Thermo Fisher Scientific) were used as detection agent. For quantitative blots, a C-DiGit Blot Scanner (LI-COR) was used, and intensities were analysed using ImageStudio software.\n\n### Global uncaging of PCK for Cre activation\n\nWorms were age synchronised and grown on PCK-NGM plates for 48 hr, washed onto unseeded 6 cm NGM plates, and illuminated for 5 min, 5 mW/cm2 in a 365 nm CL-1000L crosslinker (UVP) as previously described (Davis and Greiss, 2018). After uncaging, worms were transferred to seeded NGM plates and scored for expression of the target gene 24 hr later by counting the animals showing expression of the red fluorescent marker. 400 \u03bcM FUDR was added to plates after uncaging to prevent hatching of F1 progeny and thus aid scoring of animals expressing the target gene. All plates were scored twice, independently by two people. Scoring was performed blind. Experiments were performed three times, each with two independent transgenic lines. Significance tests were carried out using Welch\u2019s t test as a pairwise comparison between each condition at each concentration using GraphPad Prism 8 software.\n\n### Uncaging for Cre activation in single neurons\n\nWorms were grown on 4 mM PCK from the L1 stage. For uncaging, worms were mounted on a 3% agar and immobilised with 25 mM NaN3 in M9 buffer. Targeting was performed on a Zeiss M2 Imager using a Micropoint Galvo module (Andor Technology/Oxford Instruments), fitted with a 365 nm dye cell. Neurons were identified using GFP as a guide, which was co-expressed with photocaged Cre, and the nucleus targeted with the laser. Each region was swept thrice using 10 repeat firing. The manual attenuator was set to full power and the Andor software attenuator to a power of 34 (we chose the power setting so that partial bleaching of GFP could be observed during Micropoint firing). After uncaging, the coverslip was removed and worms were washed off the pad onto seeded 6 cm plates using M9 + 0.001% Triton-X. Mock laser treatment control worms were mounted and recovered similar to experimental worms but without exposure to the Micropoint laser.\n\n### Behavioural assays\n\nImmediately after uncaging, worms were transferred to NGM plates supplemented with ATR (30 \u03bcl 5 mM ATR dissolved in ethanol were added to the lawn of a seeded 6 cm NGM plate) or control NGM-only plates. Worms were left to recover on plates for 24 hr after uncaging.\n\nPlates for behavioural assays were made approximately 1 hr before use. Fresh 6 cm NGM plates were seeded with a 20 \u03bcl drop of dilute OP50, prepared from freeze-dried OP50 (LabTIE). For this, the freeze-dried bacteria were reconstituted according to the manufacturer\u2019s instructions and a 40\u00d7 dilution of the reconstituted bacteria was used to spot the plates. The lawn was then surrounded by a copper ring (inner diameter 17 mm) to prevent worms from leaving the camera field of view. For experiments on PLM, expression of the target gene after optPC-Cre laser activation was visually confirmed using a Leica M165FC fluorescence microscope fitted with a 2.0\u00d7 objective and animals showing the correct pattern (either both neurons or individual neurons, depending on the uncaging experiment) were picked onto the behaviour plates. For experiments using the glr-1p promoter, animals were randomly picked. After transfer, worms were left to acclimatise on behaviour plates for at least 10 min. Behavioural assays were carried out using a WormLab system (MBF Bioscience). Chrimson or Channelrhodopsin2 were activated using either the integrated 617 nm LED or 470 nm LED of the WormLab platform at full power (74 mW/cm2 or 150 mW/cm2, respectively), unless otherwise stated.\n\nTracking of worm behaviour was carried out using WormLab software (MBF Bioscience). For each worm, tracks detected by the WormLab software were consolidated into a single track. Data points where individual animals were not clearly identified by the software were discarded.\n\nFor all behavioural experiments, worms were grouped into cohorts. A cohort consisted of 4\u201310 animals undergoing the same treatment simultaneously on the same plate.\n\nBehavioural experiments on worms expressing ChR2 from the glr-1p promoter were carried out by exposing worms to 1 s of 470 nm illumination at 150 mW/cm2. Reversals were counted manually. The reversal percentages were determined for each replicate. Significance between conditions was tested using a Mann\u2013Whitney U test.\n\nExperiments using repeated stimulation of animals expressing Chrimson::mKate2 in the PLM neurons were carried out by exposing worms to repeated 1 s long stimulations with 617 nm light (74 mW/cm2) at 30 s intervals. Raw speed data was binned and averaged at 1 s intervals for each animal. Worms were grouped by cohort. To determine the fraction of animals responding to a stimulus, worms with an average speed \u2265100 \u03bcm s\u20131 in the 2 s following stimulation were scored as responders. The 100 \u03bcm s\u20131 threshold was selected as it constitutes the standard deviation of the mean speed of unstimulated worms. For each timepoint, the percentage of worms responding was determined for each cohort, constituting one replicate. Comparison between conditions was carried out by two-way ANOVA across all stimuli.\n\nExperiments comparing conditions across different power levels for animals expressing Chrimson::mKate2 in the PLM neurons were carried out by subjecting each cohort of worms to 0.1 s stimulation with 617 nm at the indicated power levels. The percentage of worms responding for each cohort was calculated after first normalising the data by subtracting the mean speed for each individual worm in the 0.5 s immediately prior to stimulation. Then the mean velocity for each individual worm was determined for the response peak between 0.2 s and 1.2 s after stimulation. Worms were scored as responders if the mean normalised velocity was \u2265 100 \u03bcm s\u20131.\n\nWhen calculating the mean normalised velocity across experiments, the mean velocity among all animals within a cohort was determined first, followed by calculating the average of the mean velocities across cohorts. Significance for both analyses (fraction responding/intensity and mean velocity/intensity) was determined by two-way ANOVA.\n\n### Analysis and statistics\n\nAll statistical analysis of data was carried out in GraphPad Prism 8. Statistical tests are stated in the figure legends.\n\nAll values of n in this article, unless otherwise stated, refer to biological replicates. For behavioural experiments, we define as biological replicates cohorts of worms that were assayed on different days. A cohort of worms consisted of animals undergoing treatment and assayed together on the same plate.\n",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "d6414a69-35a5-403a-8bc8-b61225d4f313",
+      "submission_id": "9904552c-bac3-4667-b042-1c29b0924075",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, https://ror.org/006w34k90 Howard Hughes Medical Institute, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67075.sa1](https://doi.org/10.7554/eLife.67075.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper describes a new method for precise spatiotemporal control of gene expression in C. elegans. The authors express a photocaged Cre recombinase via incorporation of a photoactivatable amino acid through genetic code expansion, followed by uncaging in defined cells via optical targeting. They use this method to demonstrate distinct contributions of the left/right members of a bilateral neuron pair to mechanosensory behavior. With suitable validation in multiple tissue types, and confirmation that the endogenous physiology of the expressing cells remains unaffected as a consequence of the genetic code manipulation, this method could be broadly applicable.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Precise optical control of gene expression in C. elegans using genetic code expansion and Cre recombinase\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Piali Sengupta as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Henrik Bringmann (Reviewer #2).\n\nAs you can see in the detailed reviews below, both reviewers are very appreciative of your findings, but also identified a number of shortcomings that will need to be addressed. Apart from some easily addressable editorial issues, there is a lack of quantification of the some of the results that we ask you to address. These suggestions are doable within the scope of a revision at eLife but the reviewers agree to give you some degree of freedom as to how you would like to incorporate these quantifications into your manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\nEven though some cells are genetically indistinguishable, many of them are visually distinguishable; thus, optical labeling and/or modulation of these cells are effective methods to distinguish individual cells. The authors have used two light-dependent techniques for the precise spatio-temporal regulation of single-cell activity: the light-dependent activation of the Cre transcription factor in a single neuron (spatial regulation) to express the light-dependent cation channel Chrimson and the light-dependent activation of Chrimson in the neurons of behaving worms at specific times (temporal regulation). Moreover, to achieve the clear activation of Cre, which had been difficult to achieve in the past, they have used the genetic code expansion technique in transgenic strains of an animal species for the first time (if I have understood correctly).\n\nIn my opinion, this method would be ideal for the precise spatio-temporal regulation of protein activity (and as a result, cell activity) if it works as designed. The biggest potential barrier would be the equal and effective incorporation of non-conventional amino acids (ncAAs) into all the cells in the animal as well as into the targeted protein. The authors have made a number of efforts and have reasonably evaluated the incorporation of ncAAs into the protein, although the evaluation of the incorporation of ncAAs into different types of cells is, unfortunately, far from satisfactory.\n\nIn addition, the data presentation is, in many cases, not quantitative; for example, sample numbers are not properly described, and only one picture per condition is provided for gene expression analysis. These need to be addresses to ensure reproducibility and general application of the results.\n\n1) For the system to work, PCKRS, mt tRNA (C15), and Cre (TAG amber) need to be properly expressed in the cells. In addition, ncAAs should also be incorporated into the cells. I would like to see if this was actually observed in most, if not all, of the cells. Examples have been shown in Figure 2d and 2e, but these photos depict only a single worm per condition. Please analyze many more worms (I would recommend {greater than or equal to}10 worms per condition in total, including those from multiple transgenic lines grown on different days) and show the results in the form of a bar graph or a table. Additionally, it will be greatly appreciated if the authors are able to show whether the system works equally in different tissues, such as neurons, intestines, muscles, and hypodermis.\n\n2) Related to above: Does the expression of these genes, in addition to ncAA incorporation, affect worm behavior? I think that addressing this question is important because truncated Cre is likely to be expressed in an amount {greater than or equal to}20 times higher than that of full-length PC-Cre (lines 250-256, Figure 2f). I would appreciate it if the authors could compare some basic aspects of worm locomotion, such as velocity and turning frequency, between the wild-type and the transgenic strains.\n\n3) In this study, the clear-cut regulation of the activity of the gene product is critical. Nevertheless, the results have not been provided in a quantitative form. For example, the western blot shown in Figure 2c is, again, just one representative result. It should be repeated several times and the band intensities should be quantified and expressed as mean {plus minus} SEM, as shown in Figure 2f and 2g. (For Figure 2f, please describe the number of replicates).\n\n4) Similarly, some data are shown only in the video. As mentioned previously, they should be reported using graphs showing the results for a certain number of samples (e.g., lines 277-279, Sup. video 1, 2).\n\n5) lines 383-385 \"We saw strong, easily visible expression\": It was not clear which data support this statement. Further, describe how many worms were analyzed and how many worms were fluorescence-positive.\n\n6) \"more than 50 fold\" and \"close to 100%\" (line 442): Again, these statements were not supported by evidence. At least, the link with specific data was not clear at all. These non-quantitative statements should be reworded to be more quantitative.\n\n7) As mentioned above, in the figure legends, please describe how many worms were studied and how many were fluorescence-positive, instead of the number of replicates. The description provided in lines 637-640 is insufficient.\n\n8) Sup. Table 2 (strains): Please specify the figure panels in which each strain was used.\n\nReviewer #2 (Recommendations for the authors):\n\nThe Greiss and Chin labs developed a system for optically activating Cre recombinase specifically in neurons that are exposed to UV-laser light, providing a tool to control gene expression in individual neurons for which there is currently no specific genetic targeting possible. They use a clever combination of incorporation of a photoactivatable artificial amino acid through genetic code expansion with photoactivation of Cre recombinase through precise optical targeting. They demonstrate the feasibility of their approach by targeting command interneurons and individually each neuron of a left-right pair of mechanosensory neurons for optogenetic activation. They demonstrate that the two mechanosensory PLM neurons have synergistic roles in the response to mechanical sensation but that each neuron plays a distinct role in the processing of the mechanical stimulus.\n\nThe method apparently is more complicated to carry out than just using a transgenic strain directly off the plate, with the expression of several components, feeding an unnatural amino acid, and the need to optically target each individual cell manually to achieve expression. Despite this extra effort that is required to perform a genetic targeting experiment, however, this method will be useful when each of a pair of two individual neurons needs to be investigated. Future developments of the method might help simplify the procedure. The effects of the complex manipulations on the neurons and their physiology should be investigated by control experiments.\n\nOverall, the method of targeting individual neurons in a model organism is of substantial use for the C. elegans community. Likely there will be much to be learned from targeting individual neurons. Also, the method should be transferable to other genetically accessible and transparent systems such as zebrafish, and could thus become of broader use.\n\nIn summary, this is a very elaborate and smart approach to address an important technical problem in neuroscience and I support publication. I have the following comments:\n\n1. To help other labs getting started with this method there should be a supplementary detailed step-by-step protocol for how to carry out the procedure.\n\n2. It is not quite clear why the PLM neurons show different responses to stimulation. Is this caused by gene expression or connectivity? This could be discussed more deeply. It might help to draw a circuit diagram for the PLM and motor circuit that shows the differences of the two neurons.\n\n3. The authors should discuss the effects that potential read-through of endogenous termination signals might have. How would this affect the physiology of the cell, especially during development? Would it theoretically be necessary and if yes feasible that some or all of the amber codons are replaced by TAA codons in future studies? This could be discussed.\n\n4. The expression of the orthogonal translation system and the potential read-through of amber stop codons in endogenous genes poses a concern as to the effects on the physiology of the neurons. To mitigate such concerns regarding a new method it would be important to test whether after the complex manipulations the neurons have retained most of their physiological characteristics. Both the glr-1 command interneurons and mechanosensitive neurons are well characterized in terms of behavior and calcium activity. Thus, control experiments should be performed that test for the functionality of these cells. For example, do the worms still respond normally to anterior and posterior touch based on behavioral and calcium activity readout?\n\n5. At present, the text is quite complicated to read, in particular for readers that want to only use the method and might not be interested in how the many technical challenges were overcome. Thus, some of the description of the optimization in the results part could go into the methods section and in the main text only a short summary of what was optimized could be described. This would help make this piece more accessible to a broad readership.\n\n6. The authors establish the photoactivatable Cre system for glr-1-expressing neurons. They do not test, however, whether this strain allows cell-type specific activation. The glr-1 promoter expresses in both forward (such as PVC) and reverse command interneurons (Such as AVA) (Brockie et al. 2001). But a specific promoter for PVC that expresses only in this neuron is still not reported in the literature. It should be easy for the authors to activate only PVC and demonstrate a forward escape response when illuminating the entire animal. This would provide a proof of principle that their method can allow expression in a type of neurons that has been previously refractory to specific genetic control and would underscore the importance of the method.\n",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fd4debcf-d218-4198-ac2a-414bc132eba3",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C1",
+      "claim": "Caenorhabditis elegans was the first multicellular organism in which genetic code expansion was established",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans was the first multicellular organism in which genetic code expansion was established, and the incorporation of ncAA has been demonstrated in multiple C. elegans tissues (Greiss and Chin, 2011; Parrish et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Greiss and Chin, 2011; Parrish et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "aae1f444-ded8-46ba-b74d-4d29716b316b",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C2",
+      "claim": "The incorporation of ncAA has been demonstrated in multiple C. elegans tissues",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans was the first multicellular organism in which genetic code expansion was established, and the incorporation of ncAA has been demonstrated in multiple C. elegans tissues (Greiss and Chin, 2011; Parrish et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Greiss and Chin, 2011; Parrish et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "e3a4c7fa-20a9-4cc8-9ef9-abc8ffb99b2d",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C3",
+      "claim": "PylRS is localised predominantly to the nucleus when expressed in eukaryotic cells due to a stretch of positively charged amino acids in the N-terminal domain",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in eukaryotic cells, PylRS is localised predominantly to the nucleus due to a stretch of positively charged amino acids in the N-terminal domain, which is interpreted as a nuclear localisation sequence by the eukaryotic nuclear import machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about PylRS localization in eukaryotic cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "9b2639d7-2d53-4c6a-a5a4-6da6ffc7ec8d",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C4",
+      "claim": "Addition of a strong nuclear export sequence (S-NES) to the PylRS N-terminus significantly increases the efficiency of ncAA incorporation in mammalian cells",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, addition of a rationally designed strong nuclear export sequence (S-NES) to the PylRS N-terminus was reported to significantly increase the efficiency of ncAA incorporation in mammalian cells by increasing the amount of cytoplasmic PylRS (Niki\u0107 et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Niki\u0107 et al., 2016)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "76e54f2a-91cd-45a0-92cf-adc9a6ad2c25",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C5",
+      "claim": "The S-NES::PCKRS::GFP fusion localised to the cytoplasm",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the S-NES::PCKRS::GFP fusion localised to the cytoplasm, while unmodified PCKRS::GFP was almost entirely nuclear, reflecting that the S-NES was able to efficiently shift PCKRS localisation from the nucleus to the cytoplasm (constructs 'no NES' and 'S-NES' Figure 2D, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "27aabc32-c301-478b-aad4-028f9da49d33",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C6",
+      "claim": "Unmodified PCKRS::GFP was almost entirely nuclear",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the S-NES::PCKRS::GFP fusion localised to the cytoplasm, while unmodified PCKRS::GFP was almost entirely nuclear, reflecting that the S-NES was able to efficiently shift PCKRS localisation from the nucleus to the cytoplasm (constructs 'no NES' and 'S-NES' Figure 2D, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "34bf6b3c-17b7-4ec1-a79b-b6da756d5587",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C7",
+      "claim": "All tested NESs achieved nuclear export of the synthetase PCKRS",
+      "claim_type": "EXPLICIT",
+      "source": "All tested NESs achieved nuclear export of the synthetase PCKRS (Figure 2D, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "169753cb-c7ff-459f-b2ac-0bd7d79bfc29",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C8",
+      "claim": "The p120cts-NES variant reduced incorporation efficiency below the level of unmodified PCKRS",
+      "claim_type": "EXPLICIT",
+      "source": "However, the NES variants differentially affected incorporation efficiencies: when we co-expressed NES::PCKRS variants with tRNA(Pyl) and the GFP::mCherry incorporation reporter, we found that the p120cts-NES variant reduced incorporation efficiency below the level of unmodified PCKRS, whereas the PKI\u03b1-NES and the Smad4-NES robustly increased PCK incorporation efficiency (Figure 2C, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "2b5ca9d1-d1a5-4676-a2bf-89fabe49df5f",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C9",
+      "claim": "The PKI\u03b1-NES and the Smad4-NES robustly increased PCK incorporation efficiency",
+      "claim_type": "EXPLICIT",
+      "source": "However, the NES variants differentially affected incorporation efficiencies: when we co-expressed NES::PCKRS variants with tRNA(Pyl) and the GFP::mCherry incorporation reporter, we found that the p120cts-NES variant reduced incorporation efficiency below the level of unmodified PCKRS, whereas the PKI\u03b1-NES and the Smad4-NES robustly increased PCK incorporation efficiency (Figure 2C, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "89d762a5-efdf-46fd-8a79-50c4e811f634",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C10",
+      "claim": "The presence of the C15 variant significantly increased incorporation efficiency",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the presence of the C15 variant significantly increased incorporation efficiency (Figure 2C, E, F and G, Figure 2\u2014figure supplement 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C, E, F, G and Figure 2\u2014figure supplement 1A,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "d3654307-a153-40b0-a5cc-2174fb7c633b",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C11",
+      "claim": "The Smad4-NES::PCKRS/tRNA(C15) and PKI\u03b1-NES::PCKRS/tRNA(C15) pairs improved incorporation efficiency by more than 50-fold compared to the unmodified PCKRS/tRNA(Pyl) pair",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the unmodified PCKRS/tRNA(Pyl) pair, the Smad4-NES::PCKRS/tRNA(C15) and PKI\u03b1-NES::PCKRS/tRNA(C15) pairs improved incorporation efficiency by more than 50-fold; from <0.1% to 4.6% and 4.4%, respectively (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "8a3dedad-4da0-48b6-a517-69883917b5c8",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C12",
+      "claim": "Cre recombinase can be photocaged by replacing K201 with PCK",
+      "claim_type": "EXPLICIT",
+      "source": "Cre recombinase can be photocaged by replacing K201, a lysine residue in the Cre active site, critical for enzyme activity, with PCK (Gibb et al., 2010; Luo et al., 2016; Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior work (Gibb et al., 2010; Luo et al., 2016) and illustrated in Figure 3A and B",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "6e35c3ba-6092-4e89-95c5-5e0d679500b7",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C13",
+      "claim": "PC-Cre has previously been expressed in both mammalian cell culture and zebrafish embryos using transient transfection and direct mRNA/tRNA injections",
+      "claim_type": "EXPLICIT",
+      "source": "PC-Cre has previously been expressed in both mammalian cell culture and zebrafish embryos using transient transfection and direct mRNA/tRNA injections (Luo et al., 2016; Brown et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Luo et al., 2016; Brown et al., 2018b)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "d7d3157f-eea7-4dee-86d8-d8e6ef67cccb",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C14",
+      "claim": "Using the optimised Smad4-NES::PCKRS/tRNA(C15) expression system, expression of the target locus was observed in 63% of animals 24 hr after uncaging",
+      "claim_type": "EXPLICIT",
+      "source": "Using the optimised Smad4-NES::PCKRS/tRNA(C15) expression system, we observed expression of the target locus, indicative of PC-Cre photoactivation, in 63% of animals 24 hr after uncaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "5eb3ee87-2ec3-4112-88bd-025003cb5f47",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C15",
+      "claim": "No red fluorescence was seen without UV treatment",
+      "claim_type": "EXPLICIT",
+      "source": "We saw no red fluorescence without UV treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "2eb26afc-7a89-4c8c-9187-8f3223ad38c1",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C16",
+      "claim": "The 63% activation rate was a vast improvement relative to the 1% observed with unmodified PCKRS and tRNA(Pyl)",
+      "claim_type": "EXPLICIT",
+      "source": "The 63% activation rate was a vast improvement relative to the 1% we observed with unmodified PCKRS and tRNA(Pyl) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "225971c1-0f7c-4e24-baab-981c2f0b0e36",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C17",
+      "claim": "The percentage of full-length protein is between 4% and 5% when using the improved Smad4-NES::PCKRS/tRNA(C15) incorporation system",
+      "claim_type": "EXPLICIT",
+      "source": "As assessed with the GFP::mCherry incorporation reporter, we show that the percentage of full-length protein is between 4% and 5% when using the improved Smad4-NES::PCKRS/tRNA(C15) incorporation system (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "4caba5ba-6af5-486a-8a3a-d29750ab0b56",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C18",
+      "claim": "Target gene activation was significantly improved from 63% for PC-Cre to 97% for optPC-Cre",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared optPC-Cre to PC-Cre, we indeed found that target gene activation was significantly improved: from 63% for PC-Cre to 97% for optPC-Cre (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "f130bbb1-4ce3-4cd5-ba49-6736e2bf8126",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C19",
+      "claim": "No expression of the ChR2::mKate2 target gene was seen without PCK or UV activation",
+      "claim_type": "EXPLICIT",
+      "source": "We saw no expression of the ChR2::mKate2 target gene without PCK or UV activation (Figure 3D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "cfa37530-ee69-44a1-bcf1-7f64328b93d2",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C20",
+      "claim": "Clear reversals were observed in worms expressing ChR2::mKate2 in the presence of the ChR2 cofactor all-trans-retinal (ATR) when exposed to 470 nm blue light",
+      "claim_type": "EXPLICIT",
+      "source": "When we exposed worms to 470 nm blue light to activate ChR2, we observed clear reversals in worms expressing ChR2::mKate2 in the presence of the ChR2 cofactor all-trans-retinal (ATR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "cdcbe178-513c-4042-b498-451393d8df94",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C21",
+      "claim": "In animals expressing ChR2::mKate2 in the absence of ATR, no reactions were observed",
+      "claim_type": "EXPLICIT",
+      "source": "In animals expressing ChR2::mKate2 in the absence of ATR, we did not observe such reactions (Figure 3G, Figure 3\u2014figure supplement 1C, Video 1 and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3G, Figure 3\u2014figure supplement 1C, Video 1 and Video 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "34df94b0-7c02-4fc8-8d89-d4c2b53db0fb",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C22",
+      "claim": "Optogenetic activation of neurons expressing ChR2 from the glr-1p promoter induces backward movement",
+      "claim_type": "EXPLICIT",
+      "source": "The induced behaviour concurs with previous studies showing that optogenetic activation of neurons expressing ChR2 from the glr-1p promoter induces backward movement (Schultheis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Schultheis et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "90214c01-7d26-4228-a941-6d18947ec320",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C23",
+      "claim": "The strongest and most robust responses were seen in strains where optPC-Cre was used to control expression of ChR2::mKate2",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared strains expressing PC-Cre and optPC-Cre, respectively, we saw the strongest and most robust responses in the strains where optPC-Cre was used to control expression of ChR2::mKate2, followed by strains using non-optimised PC-Cre, but using the efficient Smad4-NES::PCKRS/tRNA(C15) incorporation system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "8e7fae93-8334-4512-8a59-796c3f947ffc",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C24",
+      "claim": "Animals expressing unmodified PCKRS and non-optimised Cre showed almost no response to optogenetic activation",
+      "claim_type": "EXPLICIT",
+      "source": "Animals expressing unmodified PCKRS and non-optimised Cre showed almost no response to optogenetic activation (Figure 3G, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3G and Figure 3\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "d31672f6-805b-4b16-acc4-7075723c15f1",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C25",
+      "claim": "C. elegans has six mechanosensory neurons for the perception of soft touch: AVM, ALML, ALMR, PVM, PLML, and PLMR",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans has six mechanosensory neurons for the perception of soft touch: AVM, ALML, and ALMR, which are located in the anterior of the worm, and PVM, PLML, and PLMR, which are located in the posterior (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge about C. elegans mechanosensory neurons and illustrated in Figure 4A",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "d4d23054-4081-4d77-9460-405da8d50dc8",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C26",
+      "claim": "Worms respond with backward movement to an anterior touch, and with forward movement to a posterior touch",
+      "claim_type": "EXPLICIT",
+      "source": "Worms respond with backward movement to an anterior touch, and with forward movement to a posterior touch (Chalfie et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Chalfie et al., 1985)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "cbaec667-16cf-4272-976e-74278aa77021",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C27",
+      "claim": "Optogenetic activation of the anterior neurons AVM and ALM results in reversals",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using targeted ChR2 illumination in individual animals likewise showed that optogenetic activation of the anterior neurons AVM and ALM results in reversals, while activation of the posterior neurons PVM and PLM results in forward movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from previous studies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "b727a41f-9b83-4b9a-9de6-ee260a11d981",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C28",
+      "claim": "Activation of the posterior neurons PVM and PLM results in forward movement",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using targeted ChR2 illumination in individual animals likewise showed that optogenetic activation of the anterior neurons AVM and ALM results in reversals, while activation of the posterior neurons PVM and PLM results in forward movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from previous studies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "c83d3d4c-eaf0-4a9c-bfae-fa6ab53444b1",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C29",
+      "claim": "Concurrent activation of all six touch neurons results in reversals in the majority of cases",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrent activation of all six neurons results in reversals in the majority of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from previous studies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "e113388d-3861-4988-8cd0-6f68a82c8d41",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C30",
+      "claim": "Repeated activation of touch neurons leads to a reduced response due to habituation",
+      "claim_type": "EXPLICIT",
+      "source": "Repeated activation leads to a reduced response due to habituation (Leifer et al., 2011; Stirman et al., 2011; Schild and Glauser, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Leifer et al., 2011; Stirman et al., 2011; Schild and Glauser, 2015)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "a19c4847-327c-49f0-857d-41f7d1a97534",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C31",
+      "claim": "Chrimson::mKate2 expression was only present in laser-targeted cells after 12\u201324 hr",
+      "claim_type": "EXPLICIT",
+      "source": "After 12\u201324 hr, we observed Chrimson::mKate2 expression that was only present in laser-targeted cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "3bd864c8-64cd-42cf-baf5-63a7926103d2",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C32",
+      "claim": "Selective activation of optPC-Cre in both PLM neurons, as well as in PLML or PLMR alone, was achieved",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to selectively activate optPC-Cre in both PLM neurons, as well as in PLML or PLMR alone (Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C\u2013E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "04bb5363-3fc7-4c04-ba84-18ab7015bf18",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C33",
+      "claim": "The presence of the PCK incorporation machinery and optPC-Cre did not affect the function of the touch sensory neurons",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the presence of the PCK incorporation machinery and optPC-Cre did not affect the function of the touch sensory neurons by assaying the animals response to soft touch (Chalfie et al., 2014; Figure 4\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "69161a68-6d85-497a-9788-08902533223f",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C34",
+      "claim": "Illumination of animals expressing Chrimson::mKate2 in both PLM neurons triggered a robust response with the worms initiating forward movement",
+      "claim_type": "EXPLICIT",
+      "source": "We found that illumination of animals expressing Chrimson::mKate2 in both PLM neurons ('2PLM') triggered a robust response with the worms initiating forward movement (Figure 5A,B, Figure 5\u2014figure supplement 1, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A,B, Figure 5\u2014figure supplement 1, and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "994513de-89e3-4b56-b091-4bfa00542ba8",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C35",
+      "claim": "Mock-treated animals grown on PCK and ATR but without activation of optPC-Cre showed no response",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mock-treated animals ('0PLM') grown on PCK and ATR but without activation of optPC-Cre showed no response (Figure 5\u2014figure supplement 1, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1 and Video 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "12430fe2-a138-49f2-82b4-33c155145dff",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C36",
+      "claim": "Animals expressing Chrimson::mKate2 only in the PLML or the PLMR neurons respectively showed a clear reaction to stimulation",
+      "claim_type": "EXPLICIT",
+      "source": "Animals expressing Chrimson::mKate2 only in the PLML or the PLMR neurons respectively also showed a clear reaction to stimulation (Figure 5A,B, Figure 5\u2014figure supplement 1, Video 5 and Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A,B, Figure 5\u2014figure supplement 1, Video 5 and Video 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "8dcf12ea-f8f0-45af-a2ce-83f01d7dc1ea",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C37",
+      "claim": "A gradual reduction in the response with increasing number of stimulations was observed for all three expression patterns (2PLM, PLML, PLMR), consistent with habituation to the stimulus",
+      "claim_type": "EXPLICIT",
+      "source": "For all three expression patterns (2PLM, PLML, PLMR), we observed a gradual reduction in the response with increasing number of stimulations, both in the fraction of animals responding and in the speed upon stimulation, consistent with habituation to the stimulus (Stirman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation and citation to prior work (Stirman et al., 2011)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "ee7aa7cc-b1d9-4fa3-a5cc-0fd9cc2b1143",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C38",
+      "claim": "The 2PLM animals responded stronger to stimulation than animals expressing Chrimson::mKate2 in either PLML or PLMR alone",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the 2PLM animals responded stronger to stimulation than animals expressing Chrimson::mKate2 in either PLML or PLMR alone, both in regard to the fraction of animals responding, and by velocity (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "5c47f4d0-43a7-4d80-a0fa-35c072ac64fd",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C39",
+      "claim": "PLMR forms chemical synapses connecting it to 10 downstream neurons including the AVA and AVD interneuron pairs",
+      "claim_type": "EXPLICIT",
+      "source": "PLMR forms chemical synapses connecting it to 10 downstream neurons including the AVA and AVD interneuron pairs, which are involved in driving backward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about C. elegans connectome",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "5a0cdc57-ac97-415e-82f7-bbd434161ed2",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C40",
+      "claim": "PLMR forms gap junctions to PVCR, PHCR, and LUAR",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to chemical synapses, PLMR also forms gap junctions to PVCR, PHCR, and LUAR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about C. elegans connectome",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "b479eed9-1035-49ca-a012-fcecfa46d6f2",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C41",
+      "claim": "PLML is connected to the touch response circuit exclusively through gap junctions, formed with the interneurons PVCL, PHCL, and LUAL",
+      "claim_type": "EXPLICIT",
+      "source": "PLML, on the other hand, is connected to the touch response circuit exclusively through gap junctions, formed with the interneurons PVCL, PHCL, and LUAL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about C. elegans connectome",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "70c401f8-5a92-4371-ae9f-0c545221c507",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C42",
+      "claim": "PLML does not form any chemical synapses, with the exception of a single connection to HSNL",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, PLML does not form any chemical synapses, with the exception of a single connection to HSNL, a neuron involved in the control of egg laying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about C. elegans connectome",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "0f2daced-c946-4384-bcbd-8d56d8abbc43",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C43",
+      "claim": "In worms with ablation of both PLM neurons and the single PLMR neuron, a tap stimulus increased backward movement",
+      "claim_type": "EXPLICIT",
+      "source": "In worms with ablation of both PLM neurons and the single PLMR neuron, a tap stimulus increased backward movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from prior studies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "e7a50ae1-b281-40f5-a1a1-081f11addece",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C44",
+      "claim": "Ablating PLML had no effect on the tap response",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ablating PLML had no effect (Wicks and Rankin, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Wicks and Rankin, 1995)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "acfb24cc-d82a-45fa-b065-a8b4f9712c86",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C45",
+      "claim": "The 0.1 s, 3 mW/cm2 stimulus was sufficient to elicit a response in animals expressing Chrimson in both PLMs",
+      "claim_type": "EXPLICIT",
+      "source": "While the 0.1 s, 3 mW/cm2 stimulus was sufficient to elicit a response in animals expressing Chrimson in both PLMs, neither PLML nor PLMR animals reacted, indicating a synergistic effect of PLML and PLMR and the requirement for activation of both neurons to elicit a reaction in response to weak stimuli (Figure 5D\u2013F, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D\u2013F and Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "908b8468-314d-48f2-836e-ad503564844c",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C46",
+      "claim": "Neither PLML nor PLMR animals reacted to the 0.1 s, 3 mW/cm2 stimulus",
+      "claim_type": "EXPLICIT",
+      "source": "While the 0.1 s, 3 mW/cm2 stimulus was sufficient to elicit a response in animals expressing Chrimson in both PLMs, neither PLML nor PLMR animals reacted, indicating a synergistic effect of PLML and PLMR and the requirement for activation of both neurons to elicit a reaction in response to weak stimuli (Figure 5D\u2013F, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D\u2013F and Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "361859d1-076c-4ded-93b7-6d09d272cb4c",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C47",
+      "claim": "There is a synergistic effect of PLML and PLMR and the requirement for activation of both neurons to elicit a reaction in response to weak stimuli",
+      "claim_type": "EXPLICIT",
+      "source": "While the 0.1 s, 3 mW/cm2 stimulus was sufficient to elicit a response in animals expressing Chrimson in both PLMs, neither PLML nor PLMR animals reacted, indicating a synergistic effect of PLML and PLMR and the requirement for activation of both neurons to elicit a reaction in response to weak stimuli (Figure 5D\u2013F, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from experimental data shown in Figure 5D\u2013F and Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "9fea3f10-a215-4135-b403-825c7b7c5b3e",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C48",
+      "claim": "Animals expressing Chrimson in PLMR showed a robust reaction to stimulation at 14 mW/cm2 and higher",
+      "claim_type": "EXPLICIT",
+      "source": "When we increased illumination intensity, we saw a striking difference appear between the responses to PLML and PLMR stimulation, respectively. Animals expressing Chrimson in PLMR showed a robust reaction to stimulation at 14 mW/cm2 and higher.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "b97fa9ca-c9f6-4cf5-b815-7ebcd6d6b1a1",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C49",
+      "claim": "The response of PLML animals was consistently below that of PLMR or 2PLM animals",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the response of PLML animals was consistently below that of PLMR or 2PLM animals (Figure 5D\u2013F, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D\u2013F and Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "fe855c5a-176f-4d8a-9940-cb6fd7e249b4",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C50",
+      "claim": "Only at the highest intensity setting of 74 mW/cm2 did animals of all three expression patterns respond robustly to the stimulus",
+      "claim_type": "EXPLICIT",
+      "source": "Only at the highest intensity setting of 74 mW/cm2 did we observe animals of all three expression patterns responding robustly to the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "e096e175-ad18-42b0-ac00-b2a55b09794b",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C51",
+      "claim": "The observed differences in response for PLML and PLMR are not due to differential expression of Chrimson::mKate2",
+      "claim_type": "EXPLICIT",
+      "source": "The observed differences in response for PLML and PLMR are not due to differential expression of Chrimson::mKate2 (Figure 5\u2014figure supplement 3), therefore they are likely due to the asymmetric connectivity of the two neurons within the C. elegans nervous system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "302f6355-1ee4-4669-8631-7a3018b9cc45",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C52",
+      "claim": "The observed differences in response for PLML and PLMR are likely due to the asymmetric connectivity of the two neurons within the C. elegans nervous system",
+      "claim_type": "EXPLICIT",
+      "source": "The observed differences in response for PLML and PLMR are not due to differential expression of Chrimson::mKate2 (Figure 5\u2014figure supplement 3), therefore they are likely due to the asymmetric connectivity of the two neurons within the C. elegans nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental data and knowledge of the connectome",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "f0fd320a-0140-4322-b06f-3c46a452965d",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C53",
+      "claim": "PLML and PLMR show some redundancy in triggering the tail touch response after strong stimulation",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PLML and PLMR show some redundancy in triggering the tail touch response after strong stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "3625d3e8-826d-44e4-a15b-9b625ad4cde8",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C54",
+      "claim": "Using weaker stimuli, only stimulation of both neurons elicits a response, indicative of a synergistic rather than a simply redundant role for PLML and PLMR",
+      "claim_type": "EXPLICIT",
+      "source": "However, using weaker stimuli, we found that only stimulation of both neurons elicits a response, indicative of a synergistic rather than a simply redundant role for PLML and PLMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation and inference",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "c6484fd3-55a7-4437-aa90-ac7247238eaa",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C55",
+      "claim": "PLML and PLMR make asymmetric contributions to the touch response",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our results demonstrate asymmetric contributions of PLML and PLMR to the touch response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "f4ba6c49-1040-4f0a-93d1-ab1227ba5f8c",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C56",
+      "claim": "The touch response is controlled by two parallel pathways that rely on gap junctions or chemical synapses, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the electrical and chemical connectome of this circuit (Figure 5C), our results are consistent with a model where the touch response is controlled by two parallel pathways that rely on gap junctions or chemical synapses, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a model inferred from experimental results and knowledge of the connectome",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "1beaf3d7-de6c-4c8a-ac5f-f90f06ed3cea",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C57",
+      "claim": "The first pathway involves direct connections of both PLM neurons to the PVC interneurons via gap junctions",
+      "claim_type": "EXPLICIT",
+      "source": "The first pathway involves direct connections of both PLM neurons to the PVC interneurons via gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a model inferred from experimental results and knowledge of the connectome",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "13e13e5c-a3f0-4d11-aa2c-64a1eeebbe53",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C58",
+      "claim": "Activation of the PVCs through gap junctions triggers forward motion",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the PVCs through these gap junctions triggers forward motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a model inferred from experimental results and knowledge",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "4836df9d-3d8c-4323-9725-9a70b74e32d5",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C59",
+      "claim": "The PVCs form connections with forward command interneuron AVB as well as inhibitory connections with backward command interneurons AVA/AVD",
+      "claim_type": "EXPLICIT",
+      "source": "The PVCs form connections with forward command interneuron AVB as well as inhibitory connections with backward command interneurons AVA/AVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about C. elegans connectome",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "e2eaedbb-7c23-46ae-a595-aa54f65e7d00",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C60",
+      "claim": "The second pathway involves chemical synaptic transmission from PLMR onto AVA and AVD, inhibiting backward locomotion",
+      "claim_type": "EXPLICIT",
+      "source": "The second pathway involves chemical synaptic transmission from PLMR onto AVA and AVD, inhibiting backward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a model inferred from experimental results and knowledge of the connectome",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "a50f68fc-9401-48d2-ba0b-ed9e19a88050",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C61",
+      "claim": "When only PLMR is stimulated, both pathways are activated, resulting in a stronger response",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when only PLMR is stimulated, both pathways are activated, resulting in a stronger response, whereas when PLML alone is stimulated only the gap junction pathway is activated, resulting in a weaker response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a model inferred from experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "b2caec65-c17d-4b3d-a56d-b5a9e8e6255b",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C62",
+      "claim": "When PLML alone is stimulated only the gap junction pathway is activated, resulting in a weaker response",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when only PLMR is stimulated, both pathways are activated, resulting in a stronger response, whereas when PLML alone is stimulated only the gap junction pathway is activated, resulting in a weaker response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a model inferred from experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "114a9ae5-9fd5-4aa4-8d71-7a112bf553da",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C63",
+      "claim": "The PVCs are connected to each other by gap junctions and may thus act as electrical sinks for signals from the PLMs",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the PLMs, the PVCs are connected to each other by gap junctions and may thus act as electrical sinks for signals from the PLMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on knowledge of the connectome",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "8c4f1985-3b99-44c1-ab99-e565ef7d264d",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C64",
+      "claim": "Stimulation of both PLM neurons together results in full activation of the gap junction pathway by activating both PVC neurons",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of both PLM neurons together results in full activation of the gap junction pathway by activating both PVC neurons, which, together with the direct inhibition of AVA/AVD by PLMR, results in full activation of the tail touch motor response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a model inferred from experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "89715a41-c0ea-49e8-87ce-0b5ebd877d07",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C65",
+      "claim": "The strong synergistic effect observed with the simultaneous stimulation of PLML and PLMR indicates a requirement for the stimulation of both PVC neurons",
+      "claim_type": "EXPLICIT",
+      "source": "The strong synergistic effect we observe with the simultaneous stimulation of PLML and PLMR indicates a requirement for the stimulation of both PVC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "6d840096-c004-4648-a478-686f44c8570e",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C66",
+      "claim": "C. elegans contains 302 neurons",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans contains 302 neurons, for which the physical connectivity has been determined (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge and citation to prior work (White et al., 1986)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "4477f884-5cd0-4a39-8204-6f2580151b0e",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C67",
+      "claim": "The physical connectivity of C. elegans neurons has been determined",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans contains 302 neurons, for which the physical connectivity has been determined (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (White et al., 1986)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "2a0e9bfd-6ff4-4157-8126-2d1f75049679",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C68",
+      "claim": "Two thirds of the neurons in C. elegans exist in bilaterally symmetric (left and right) pairs",
+      "claim_type": "EXPLICIT",
+      "source": "Two thirds of the neurons in C. elegans exist in bilaterally symmetric (left and right) pairs, and similar gross morphological symmetries are seen in the nervous systems of many other animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "f5f38a09-fd66-4760-b385-f033ba88e5e1",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C69",
+      "claim": "The optimised ncAA incorporation system will provide the means to introduce a wide range of new chemical functionalities into proteins in C. elegans",
+      "claim_type": "EXPLICIT",
+      "source": "Our optimised ncAA incorporation system will provide the means to introduce a wide range of new chemical functionalities into proteins, such as crosslinkers, bioorthogonal groups, and post-translational modifications, and serve as a catalyst for new approaches to manipulate and understand cellular biology in C. elegans (Chin, 2017; Davis and Chin, 2012; Nguyen et al., 2018; Lang and Chin, 2014; Young and Schultz, 2018; Zhang et al., 2015; Baker and Deiters, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about future applications, supported by citations to prior work",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "3b8ea0a2-10da-4432-a48f-f0203555ef90",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C70",
+      "claim": "The optimisation approach is expected to be easily exportable to other organisms",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since our optimisation approach is based on components that are not specific to C. elegans, we expect that it will be easily exportable to other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "465d0ff5-d189-4bfa-a2c6-86397578bd37",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C71",
+      "claim": "C. elegans and other organisms have evolved natural surveillance mechanisms to mitigate against the read-through of stop codons",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, C. elegans and other organisms have evolved natural surveillance mechanisms to mitigate against the read-through of stop codons (Arribere et al., 2016), which will also mitigate against any potential effects caused by our system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Arribere et al., 2016)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "4dd4bdb6-3d33-4a85-9da3-c4de4bed480b",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C72",
+      "claim": "The function of the mechanosensory neurons is unaffected by the presence of the orthogonal ncAA incorporation machinery",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that the function of the mechanosensory neurons we assay is unaffected by the presence of the orthogonal ncAA incorporation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "5207ee11-82cf-4aee-8146-c096562d4b19",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C73",
+      "claim": "The recombinase activity of photocaged Cre is tightly controlled; the presence of the photocaging group completely blocks activity",
+      "claim_type": "EXPLICIT",
+      "source": "First, the recombinase activity is tightly controlled; the presence of the photocaging group completely blocks activity and upon photoactivation, highly efficient wildtype Cre is generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "87f0526f-958d-43fe-9bac-6b09b856224e",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C74",
+      "claim": "Upon photoactivation, highly efficient wildtype Cre is generated",
+      "claim_type": "EXPLICIT",
+      "source": "First, the recombinase activity is tightly controlled; the presence of the photocaging group completely blocks activity and upon photoactivation, highly efficient wildtype Cre is generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "fd6b5c82-b05c-42d0-8dde-42dcc25f4855",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C75",
+      "claim": "Following photoactivation, the photocaged amino acid required for amber stop codon suppression can be removed, leaving worms devoid of photocaged Cre for subsequent biological studies",
+      "claim_type": "EXPLICIT",
+      "source": "Second, following photoactivation, the photocaged amino acid required for amber stop codon suppression can be removed. Thus translation of full-length Cre ceases, leaving worms devoid of photocaged Cre for subsequent biological studies (Maywood et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Maywood et al., 2018)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "a7fb0cdb-df64-4f5c-9018-783a9fa39c63",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C76",
+      "claim": "Photoactivatable Cre is fully compatible with imaging and optogenetic methods that use visible light due to the stability of the photocaging group at longer wavelengths",
+      "claim_type": "EXPLICIT",
+      "source": "Third, due to the stability of the photocaging group at longer wavelengths, our photoactivatable Cre is fully compatible with imaging and optogenetic methods that use visible light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the chemical properties of the photocaging group",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "58dc23bd-6ea2-4912-bcff-1b009ea576aa",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C77",
+      "claim": "LaserTAC is fast and easily enables the preparation of dozens of animals for downstream experiments",
+      "claim_type": "EXPLICIT",
+      "source": "Switching on gene expression using LaserTAC is fast and easily enables the preparation of dozens of animals for downstream experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' experience with the method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "d11fa4e7-4c42-455d-bcff-66d9894a9517",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C78",
+      "claim": "Light activation requires only a microscope-mounted laser, generally used for ablation in most C. elegans laboratories, modified to emit light at 365 nm",
+      "claim_type": "EXPLICIT",
+      "source": "Light activation requires only a microscope-mounted laser, generally used for ablation in most C. elegans laboratories, modified to emit light at 365 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the technical requirements of the method",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "be2fa826-6619-4269-b589-f71136b8055a",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C79",
+      "claim": "Generating the required transgenic strains is straightforward and at present involves the introduction of the genetic constructs, followed by genomic integration",
+      "claim_type": "EXPLICIT",
+      "source": "Generating the required transgenic strains is straightforward and at present involves the introduction of the genetic constructs, followed by genomic integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the technical procedure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "1654c811-8c69-4e78-886e-13306e466299",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C80",
+      "claim": "Once a transgenic strain is made, any combination of neurons targeted by the promoter that was used can in principle be investigated",
+      "claim_type": "EXPLICIT",
+      "source": "Once a transgenic strain is made, any combination of neurons targeted by the promoter that was used can in principle be investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the versatility of the method",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "08985618-7128-4783-bb48-f133253dbabb",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C81",
+      "claim": "LaserTAC removes the requirement for the creation of a potentially large numbers of lines by allowing multiple conditions to be investigated using a single strain",
+      "claim_type": "EXPLICIT",
+      "source": "This removes the requirement for the creation of a potentially large numbers of lines by allowing multiple conditions to be investigated using a single strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the versatility of the method",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "233307a8-d62e-4611-aac9-ef5daa13c870",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C82",
+      "claim": "LaserTAC offers the ability of precise temporal control, which is generally not available using promoter-based systems",
+      "claim_type": "EXPLICIT",
+      "source": "A further advantage offered by our approach is the ability of precise temporal control, which is generally not available using promoter-based systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the properties of the method",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "e2414eab-b5ed-4966-90f2-4cf5fd6c37bd",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C83",
+      "claim": "By inserting loxP sites into genomic loci using CRISPR/Cas9, it should be possible to control, at single-cell resolution, the expression of any endogenous protein",
+      "claim_type": "EXPLICIT",
+      "source": "By inserting loxP sites into genomic loci using CRISPR/Cas9, it should be possible to control, at single-cell resolution, the expression of any endogenous protein, such as neuropeptides, receptors, innexins, proteins involved in synaptic transmission, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "3934f9fc-7f6a-4cbe-a0f3-83f932690ee3",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C84",
+      "claim": "The components employed are functional in other C. elegans tissues",
+      "claim_type": "EXPLICIT",
+      "source": "Since the components we employ are functional in other C. elegans tissues (Greiss and Chin, 2011) and indeed in other model systems such as zebrafish, fruit fly, mouse, cultured cells, and ex vivo tissues, we anticipate that our method will have broad applicability beyond the nervous system and beyond C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Greiss and Chin, 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "94c1d4be-01db-442c-9d71-f1237b4cb0de",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "claim_id": "C85",
+      "claim": "The method is anticipated to have broad applicability beyond the nervous system and beyond C. elegans",
+      "claim_type": "EXPLICIT",
+      "source": "Since the components we employ are functional in other C. elegans tissues (Greiss and Chin, 2011) and indeed in other model systems such as zebrafish, fruit fly, mouse, cultured cells, and ex vivo tissues, we anticipate that our method will have broad applicability beyond the nervous system and beyond C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cc1b9bf0-291b-4598-ae60-0db345bae221",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. elegans was the first multicellular organism in which genetic code expansion was established, with ncAA incorporation demonstrated in multiple tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are supported by citations to prior work (Greiss and Chin, 2011; Parrish et al., 2012), establishing the historical context for genetic code expansion in C. elegans.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "855aaf17-0fb6-4ea0-bf37-9a5479ee4e20",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nuclear export sequences (NES) can relocalize PylRS from the nucleus to the cytoplasm in eukaryotic cells. The S-NES successfully shifted PCKRS localization from nuclear to cytoplasmic, and all tested NES variants achieved nuclear export.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 are supported by established knowledge (C3), prior work citation (C4), and experimental data shown in Figure 2D and Figure 2\u2014figure supplement 1B (C5-C7). The localization data directly demonstrates the predicted effect of NES addition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "077cf63b-cc79-4ae7-94d9-82b158c5441a",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Different NES variants differentially affect ncAA incorporation efficiency. The PKI\u03b1-NES and Smad4-NES robustly increased PCK incorporation efficiency, while p120cts-NES reduced it. The optimized tRNA variant C15 significantly increased incorporation efficiency, with the Smad4-NES::PCKRS/tRNA(C15) and PKI\u03b1-NES::PCKRS/tRNA(C15) pairs improving incorporation efficiency by more than 50-fold (from <0.1% to 4.6% and 4.4%, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 are supported by experimental data shown in Figures 2C, E, F, G and supplementary figures. The quantitative improvement (>50-fold) is directly measured and reported with appropriate controls. The data clearly demonstrate differential effects of NES variants and the synergistic improvement with tRNA(C15).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "b7c2e779-8c0d-47ec-ac4e-b0690e12c4b2",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cre recombinase can be photocaged by replacing K201 with PCK, and PC-Cre has previously been expressed in mammalian cell culture and zebrafish embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C13 are supported by citations to prior work (Gibb et al., 2010; Luo et al., 2016; Brown et al., 2018b) and illustrated in Figure 3A and B. This establishes the foundation for the photocaged Cre approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "fd39fbfb-9aab-41dc-889b-2d20289adb64",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using the optimized Smad4-NES::PCKRS/tRNA(C15) system, PC-Cre photoactivation resulted in target gene expression in 63% of animals 24 hr after uncaging, with no expression without UV treatment. This represents a vast improvement over the 1% observed with unmodified PCKRS and tRNA(Pyl).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 are supported by experimental data shown in Figure 3D. The 63-fold improvement in activation efficiency is clearly demonstrated with appropriate controls (no UV treatment showing no expression). Statistical significance is indicated in the figure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "c34a0c70-697a-4a35-b00d-5e0145e5dae7",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The improved Smad4-NES::PCKRS/tRNA(C15) incorporation system produces 4-5% full-length protein. The optimized PC-Cre (optPC-Cre) significantly improved target gene activation from 63% to 97% compared to non-optimized PC-Cre.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C18 are supported by experimental data shown in Figures 2F and 3D. The improvement from 63% to 97% activation is substantial and statistically significant. However, the 4-5% full-length protein production suggests that the majority of translation still terminates at the amber codon, which is acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "4303d8f9-df37-4a4a-bdb6-8f9155bb652f",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "OptPC-Cre enables optical control of neuronal activity through ChR2 expression. No ChR2::mKate2 expression was observed without PCK or UV activation. Blue light activation of ChR2-expressing neurons induced reversals in the presence of ATR but not in its absence. The strongest responses were seen with optPC-Cre, while animals with unmodified PCKRS showed almost no response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 are supported by experimental data shown in Figures 3D, F, G and supplementary figures, plus Videos 1 and 2. The behavioral assays demonstrate functional optogenetic control with appropriate controls (no PCK, no UV, no ATR). The comparison between different Cre variants shows clear improvement with optimization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "776bdd32-77d6-4159-a6e5-1cb470b3ffe0",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "C. elegans has six mechanosensory neurons for soft touch perception (AVM, ALML, ALMR, PVM, PLML, PLMR). Worms respond with backward movement to anterior touch and forward movement to posterior touch. Optogenetic activation of anterior neurons (AVM/ALM) results in reversals, while activation of posterior neurons (PVM/PLM) results in forward movement. Concurrent activation of all six neurons results in reversals in most cases, and repeated activation leads to habituation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 are supported by established knowledge about C. elegans mechanosensory neurons (C25), citations to prior work (C26, C30), and inference from previous studies (C27-C29). This provides the biological context for the subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "728a419c-b788-4485-a459-200db7730e7e",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LaserTAC enables cell-specific gene activation. After 12-24 hr, Chrimson::mKate2 expression was only present in laser-targeted cells. Selective activation of optPC-Cre in both PLM neurons or in PLML/PLMR individually was achieved. The presence of the PCK incorporation machinery and optPC-Cre did not affect touch sensory neuron function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by experimental data shown in Figures 4C-E and Figure 4\u2014figure supplement 1C,D. The spatial specificity of activation is clearly demonstrated, and the control experiments (touch assays) confirm that the system does not interfere with normal neuronal function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "0b0fdba6-31bf-4123-b356-6cf9d4e3c6d3",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of PLM neurons expressing Chrimson::mKate2 triggers forward movement. Animals expressing Chrimson in both PLM neurons (2PLM) showed robust responses, while mock-treated animals showed no response. Animals expressing Chrimson in only PLML or PLMR also showed clear reactions. All three expression patterns showed gradual reduction in response with repeated stimulation, consistent with habituation. The 2PLM animals responded more strongly than animals expressing Chrimson in either PLML or PLMR alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by experimental data shown in Figures 5A,B, Figure 5\u2014figure supplement 1, and Videos 3-6. The behavioral responses are quantified with appropriate statistical analysis (two-way ANOVA). The habituation observation is consistent with prior work (Stirman et al., 2011).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "8b7e76ac-a5e4-4c4f-8bdf-de4761046aee",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PLML and PLMR show asymmetric connectivity within the C. elegans nervous system. PLMR forms chemical synapses to 10 downstream neurons including AVA and AVD, and gap junctions to PVCR, PHCR, and LUAR. PLML is connected exclusively through gap junctions to PVCL, PHCL, and LUAL, and forms no chemical synapses except a single connection to HSNL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are based on established knowledge about the C. elegans connectome. This anatomical information is well-documented in the literature and provides the structural basis for interpreting the functional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "140a728d-397e-474a-86f6-c82068c24506",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior ablation studies showed that ablating both PLM neurons or PLMR alone increased backward movement in response to tap stimulus, while ablating PLML had no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C44 are supported by citation to prior work (Wicks and Rankin, 1995). This provides historical context for the asymmetric function of PLML and PLMR.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "7b6ebf8f-a690-4806-92a8-a221bf29e245",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Weak stimulation (0.1 s, 3 mW/cm\u00b2) was sufficient to elicit a response in animals expressing Chrimson in both PLMs, but neither PLML nor PLMR animals reacted individually. This indicates a synergistic effect of PLML and PLMR and the requirement for activation of both neurons to elicit a reaction in response to weak stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by experimental data shown in Figures 5D-F and Figure 5\u2014figure supplement 2. The synergistic effect (C47) is a reasonable inference from the observation that neither neuron alone responds to weak stimulation but both together do. However, alternative explanations (e.g., threshold effects) are not explicitly ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "38561f17-9a7c-41a1-bb5b-c190fccfc19f",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "At higher illumination intensities, PLMR animals showed robust reactions at 14 mW/cm\u00b2 and higher, while PLML animals consistently showed weaker responses than PLMR or 2PLM animals. Only at the highest intensity (74 mW/cm\u00b2) did all three expression patterns respond robustly. The observed differences are not due to differential Chrimson::mKate2 expression but are likely due to asymmetric connectivity of the two neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are supported by experimental data shown in Figures 5D-F and Figure 5\u2014figure supplements 2-3. The control for expression levels (C51, Figure 5\u2014figure supplement 3) strengthens the conclusion that connectivity differences explain the functional asymmetry (C52). The inference about connectivity (C52) is reasonable given the anatomical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "c455cbcc-6736-4649-b982-7f8e6ea778e4",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PLML and PLMR show some redundancy in triggering the tail touch response after strong stimulation. However, using weaker stimuli, only stimulation of both neurons elicits a response, indicative of a synergistic rather than simply redundant role. The results demonstrate asymmetric contributions of PLML and PLMR to the touch response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by experimental observations from the intensity-response experiments. The distinction between redundancy (at high intensity) and synergy (at low intensity) is well-supported by the data. The asymmetric contributions are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "963c4324-cc03-47c6-9df8-5b8badf99dbc",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A model is proposed where the touch response is controlled by two parallel pathways: (1) a gap junction pathway involving direct connections of both PLM neurons to PVC interneurons, which activate AVB and inhibit AVA/AVD to trigger forward motion; and (2) a chemical synapse pathway involving PLMR transmission to AVA/AVD to inhibit backward locomotion. When only PLMR is stimulated, both pathways are activated (stronger response), whereas PLML stimulation activates only the gap junction pathway (weaker response). The PVCs may act as electrical sinks for PLM signals. Stimulation of both PLM neurons results in full activation of both pathways. The strong synergistic effect indicates a requirement for stimulation of both PVC neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C65 present a mechanistic model inferred from experimental results and knowledge of the connectome. The model is consistent with the observed data (differential responses of PLML vs. PLMR, synergistic effect of both neurons) and the known anatomical connectivity. However, this is a proposed model that has not been directly tested through additional manipulations (e.g., PVC-specific perturbations). The model is reasonable and well-supported by the available evidence, but alternative explanations cannot be completely ruled out. The speculation about PVCs as electrical sinks (C63) is acknowledged as such.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "dd1efa9f-a10b-4a7f-8784-e2d1e68e768a",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "C. elegans contains 302 neurons with determined physical connectivity. Two-thirds of neurons exist in bilaterally symmetric pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are based on established knowledge and supported by citation to prior work (White et al., 1986). This provides general context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "79f3cd16-d159-4adf-83fb-9350ab308645",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The optimized ncAA incorporation system will enable introduction of diverse chemical functionalities into proteins in C. elegans and is expected to be easily exportable to other organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69 and C70 are speculative about future applications. While C69 is supported by citations to prior work demonstrating various applications of ncAA incorporation, the actual implementation in C. elegans remains to be demonstrated. C70 is speculative about exportability, though the reasoning (based on non-organism-specific components) is sound. These are reasonable expectations but not demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "e1de5fde-1edb-4c68-b624-902e6cf5f617",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "C. elegans has evolved natural surveillance mechanisms to mitigate stop codon read-through, which should mitigate potential effects of the amber suppression system. The function of mechanosensory neurons is unaffected by the presence of the orthogonal ncAA incorporation machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by citation to prior work (Arribere et al., 2016). Claim C72 is supported by experimental observation (touch assays shown in Figure 4\u2014figure supplement 1C,D). Together, these address potential concerns about off-target effects of the system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "16358a60-da29-4c7f-827f-69434667085b",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Photoactivatable Cre offers several advantages: tight control of recombinase activity (photocaging group completely blocks activity, photoactivation generates highly efficient wildtype Cre), ability to remove photocaged amino acid after activation (leaving worms devoid of photocaged Cre), and compatibility with visible light imaging/optogenetics due to photocaging group stability at longer wavelengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 are supported by experimental observations (C73, C74) and citations to prior work (C75) or knowledge of photocaging group chemistry (C76). The tight control is demonstrated by the lack of background activity and high activation efficiency. The compatibility with visible light is a chemical property of the photocaging group.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "6e4f09b9-294a-432b-87dd-6ddb8a055240",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "LaserTAC is fast, easily enables preparation of dozens of animals, requires only standard equipment (microscope-mounted laser modified to emit 365 nm), involves straightforward transgenic strain generation, allows investigation of any combination of neurons targeted by a promoter, removes the requirement for creating large numbers of lines, and offers precise temporal control not available with promoter-based systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C82 describe the practical advantages and versatility of the LaserTAC method. C77 is supported by the authors' experience (DATA). C78-C79 describe technical requirements (KNOWLEDGE). C80-C82 are reasonable inferences about the method's versatility based on its design. The claims about ease of use and versatility are supported by the successful demonstration of the method in the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    },
+    {
+      "id": "05d3a336-92cd-46c2-aa4d-2c40263b0583",
+      "content_id": "f7307cd4-2982-4f28-860d-103a91bb57c0",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Future applications of the method include controlling expression of endogenous proteins at single-cell resolution using CRISPR/Cas9 to insert loxP sites. The components are functional in other C. elegans tissues and other model systems, suggesting broad applicability beyond the nervous system and beyond C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C83 is speculative about future applications using CRISPR/Cas9. Claim C84 is supported by citation to prior work (Greiss and Chin, 2011) showing functionality in other tissues. Claim C85 is speculative about broad applicability, though the reasoning is sound given the demonstrated functionality in multiple systems. These represent reasonable expectations for future work but are not demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:20.159755Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fd4debcf-d218-4198-ac2a-414bc132eba3",
+      "result_id": "cc1b9bf0-291b-4598-ae60-0db345bae221"
+    },
+    {
+      "claim_id": "aae1f444-ded8-46ba-b74d-4d29716b316b",
+      "result_id": "cc1b9bf0-291b-4598-ae60-0db345bae221"
+    },
+    {
+      "claim_id": "e3a4c7fa-20a9-4cc8-9ef9-abc8ffb99b2d",
+      "result_id": "855aaf17-0fb6-4ea0-bf37-9a5479ee4e20"
+    },
+    {
+      "claim_id": "9b2639d7-2d53-4c6a-a5a4-6da6ffc7ec8d",
+      "result_id": "855aaf17-0fb6-4ea0-bf37-9a5479ee4e20"
+    },
+    {
+      "claim_id": "76e54f2a-91cd-45a0-92cf-adc9a6ad2c25",
+      "result_id": "855aaf17-0fb6-4ea0-bf37-9a5479ee4e20"
+    },
+    {
+      "claim_id": "27aabc32-c301-478b-aad4-028f9da49d33",
+      "result_id": "855aaf17-0fb6-4ea0-bf37-9a5479ee4e20"
+    },
+    {
+      "claim_id": "34bf6b3c-17b7-4ec1-a79b-b6da756d5587",
+      "result_id": "855aaf17-0fb6-4ea0-bf37-9a5479ee4e20"
+    },
+    {
+      "claim_id": "169753cb-c7ff-459f-b2ac-0bd7d79bfc29",
+      "result_id": "077cf63b-cc79-4ae7-94d9-82b158c5441a"
+    },
+    {
+      "claim_id": "2b5ca9d1-d1a5-4676-a2bf-89fabe49df5f",
+      "result_id": "077cf63b-cc79-4ae7-94d9-82b158c5441a"
+    },
+    {
+      "claim_id": "89d762a5-efdf-46fd-8a79-50c4e811f634",
+      "result_id": "077cf63b-cc79-4ae7-94d9-82b158c5441a"
+    },
+    {
+      "claim_id": "d3654307-a153-40b0-a5cc-2174fb7c633b",
+      "result_id": "077cf63b-cc79-4ae7-94d9-82b158c5441a"
+    },
+    {
+      "claim_id": "8a3dedad-4da0-48b6-a517-69883917b5c8",
+      "result_id": "b7c2e779-8c0d-47ec-ac4e-b0690e12c4b2"
+    },
+    {
+      "claim_id": "6e35c3ba-6092-4e89-95c5-5e0d679500b7",
+      "result_id": "b7c2e779-8c0d-47ec-ac4e-b0690e12c4b2"
+    },
+    {
+      "claim_id": "d7d3157f-eea7-4dee-86d8-d8e6ef67cccb",
+      "result_id": "fd39fbfb-9aab-41dc-889b-2d20289adb64"
+    },
+    {
+      "claim_id": "5eb3ee87-2ec3-4112-88bd-025003cb5f47",
+      "result_id": "fd39fbfb-9aab-41dc-889b-2d20289adb64"
+    },
+    {
+      "claim_id": "2eb26afc-7a89-4c8c-9187-8f3223ad38c1",
+      "result_id": "fd39fbfb-9aab-41dc-889b-2d20289adb64"
+    },
+    {
+      "claim_id": "225971c1-0f7c-4e24-baab-981c2f0b0e36",
+      "result_id": "c34a0c70-697a-4a35-b00d-5e0145e5dae7"
+    },
+    {
+      "claim_id": "4caba5ba-6af5-486a-8a3a-d29750ab0b56",
+      "result_id": "c34a0c70-697a-4a35-b00d-5e0145e5dae7"
+    },
+    {
+      "claim_id": "f130bbb1-4ce3-4cd5-ba49-6736e2bf8126",
+      "result_id": "4303d8f9-df37-4a4a-bdb6-8f9155bb652f"
+    },
+    {
+      "claim_id": "cfa37530-ee69-44a1-bcf1-7f64328b93d2",
+      "result_id": "4303d8f9-df37-4a4a-bdb6-8f9155bb652f"
+    },
+    {
+      "claim_id": "cdcbe178-513c-4042-b498-451393d8df94",
+      "result_id": "4303d8f9-df37-4a4a-bdb6-8f9155bb652f"
+    },
+    {
+      "claim_id": "34df94b0-7c02-4fc8-8d89-d4c2b53db0fb",
+      "result_id": "4303d8f9-df37-4a4a-bdb6-8f9155bb652f"
+    },
+    {
+      "claim_id": "90214c01-7d26-4228-a941-6d18947ec320",
+      "result_id": "4303d8f9-df37-4a4a-bdb6-8f9155bb652f"
+    },
+    {
+      "claim_id": "8e7fae93-8334-4512-8a59-796c3f947ffc",
+      "result_id": "4303d8f9-df37-4a4a-bdb6-8f9155bb652f"
+    },
+    {
+      "claim_id": "d31672f6-805b-4b16-acc4-7075723c15f1",
+      "result_id": "776bdd32-77d6-4159-a6e5-1cb470b3ffe0"
+    },
+    {
+      "claim_id": "d4d23054-4081-4d77-9460-405da8d50dc8",
+      "result_id": "776bdd32-77d6-4159-a6e5-1cb470b3ffe0"
+    },
+    {
+      "claim_id": "cbaec667-16cf-4272-976e-74278aa77021",
+      "result_id": "776bdd32-77d6-4159-a6e5-1cb470b3ffe0"
+    },
+    {
+      "claim_id": "b727a41f-9b83-4b9a-9de6-ee260a11d981",
+      "result_id": "776bdd32-77d6-4159-a6e5-1cb470b3ffe0"
+    },
+    {
+      "claim_id": "c83d3d4c-eaf0-4a9c-bfae-fa6ab53444b1",
+      "result_id": "776bdd32-77d6-4159-a6e5-1cb470b3ffe0"
+    },
+    {
+      "claim_id": "e113388d-3861-4988-8cd0-6f68a82c8d41",
+      "result_id": "776bdd32-77d6-4159-a6e5-1cb470b3ffe0"
+    },
+    {
+      "claim_id": "a19c4847-327c-49f0-857d-41f7d1a97534",
+      "result_id": "728a419c-b788-4485-a459-200db7730e7e"
+    },
+    {
+      "claim_id": "3bd864c8-64cd-42cf-baf5-63a7926103d2",
+      "result_id": "728a419c-b788-4485-a459-200db7730e7e"
+    },
+    {
+      "claim_id": "04bb5363-3fc7-4c04-ba84-18ab7015bf18",
+      "result_id": "728a419c-b788-4485-a459-200db7730e7e"
+    },
+    {
+      "claim_id": "69161a68-6d85-497a-9788-08902533223f",
+      "result_id": "0b0fdba6-31bf-4123-b356-6cf9d4e3c6d3"
+    },
+    {
+      "claim_id": "994513de-89e3-4b56-b091-4bfa00542ba8",
+      "result_id": "0b0fdba6-31bf-4123-b356-6cf9d4e3c6d3"
+    },
+    {
+      "claim_id": "12430fe2-a138-49f2-82b4-33c155145dff",
+      "result_id": "0b0fdba6-31bf-4123-b356-6cf9d4e3c6d3"
+    },
+    {
+      "claim_id": "8dcf12ea-f8f0-45af-a2ce-83f01d7dc1ea",
+      "result_id": "0b0fdba6-31bf-4123-b356-6cf9d4e3c6d3"
+    },
+    {
+      "claim_id": "ee7aa7cc-b1d9-4fa3-a5cc-0fd9cc2b1143",
+      "result_id": "0b0fdba6-31bf-4123-b356-6cf9d4e3c6d3"
+    },
+    {
+      "claim_id": "5c47f4d0-43a7-4d80-a0fa-35c072ac64fd",
+      "result_id": "8b7e76ac-a5e4-4c4f-8bdf-de4761046aee"
+    },
+    {
+      "claim_id": "5a0cdc57-ac97-415e-82f7-bbd434161ed2",
+      "result_id": "8b7e76ac-a5e4-4c4f-8bdf-de4761046aee"
+    },
+    {
+      "claim_id": "b479eed9-1035-49ca-a012-fcecfa46d6f2",
+      "result_id": "8b7e76ac-a5e4-4c4f-8bdf-de4761046aee"
+    },
+    {
+      "claim_id": "70c401f8-5a92-4371-ae9f-0c545221c507",
+      "result_id": "8b7e76ac-a5e4-4c4f-8bdf-de4761046aee"
+    },
+    {
+      "claim_id": "0f2daced-c946-4384-bcbd-8d56d8abbc43",
+      "result_id": "140a728d-397e-474a-86f6-c82068c24506"
+    },
+    {
+      "claim_id": "e7a50ae1-b281-40f5-a1a1-081f11addece",
+      "result_id": "140a728d-397e-474a-86f6-c82068c24506"
+    },
+    {
+      "claim_id": "acfb24cc-d82a-45fa-b065-a8b4f9712c86",
+      "result_id": "7b6ebf8f-a690-4806-92a8-a221bf29e245"
+    },
+    {
+      "claim_id": "908b8468-314d-48f2-836e-ad503564844c",
+      "result_id": "7b6ebf8f-a690-4806-92a8-a221bf29e245"
+    },
+    {
+      "claim_id": "361859d1-076c-4ded-93b7-6d09d272cb4c",
+      "result_id": "7b6ebf8f-a690-4806-92a8-a221bf29e245"
+    },
+    {
+      "claim_id": "9fea3f10-a215-4135-b403-825c7b7c5b3e",
+      "result_id": "38561f17-9a7c-41a1-bb5b-c190fccfc19f"
+    },
+    {
+      "claim_id": "b97fa9ca-c9f6-4cf5-b815-7ebcd6d6b1a1",
+      "result_id": "38561f17-9a7c-41a1-bb5b-c190fccfc19f"
+    },
+    {
+      "claim_id": "fe855c5a-176f-4d8a-9940-cb6fd7e249b4",
+      "result_id": "38561f17-9a7c-41a1-bb5b-c190fccfc19f"
+    },
+    {
+      "claim_id": "e096e175-ad18-42b0-ac00-b2a55b09794b",
+      "result_id": "38561f17-9a7c-41a1-bb5b-c190fccfc19f"
+    },
+    {
+      "claim_id": "302f6355-1ee4-4669-8631-7a3018b9cc45",
+      "result_id": "38561f17-9a7c-41a1-bb5b-c190fccfc19f"
+    },
+    {
+      "claim_id": "f0fd320a-0140-4322-b06f-3c46a452965d",
+      "result_id": "c455cbcc-6736-4649-b982-7f8e6ea778e4"
+    },
+    {
+      "claim_id": "3625d3e8-826d-44e4-a15b-9b625ad4cde8",
+      "result_id": "c455cbcc-6736-4649-b982-7f8e6ea778e4"
+    },
+    {
+      "claim_id": "c6484fd3-55a7-4437-aa90-ac7247238eaa",
+      "result_id": "c455cbcc-6736-4649-b982-7f8e6ea778e4"
+    },
+    {
+      "claim_id": "f4ba6c49-1040-4f0a-93d1-ab1227ba5f8c",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "1beaf3d7-de6c-4c8a-ac5f-f90f06ed3cea",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "13e13e5c-a3f0-4d11-aa2c-64a1eeebbe53",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "4836df9d-3d8c-4323-9725-9a70b74e32d5",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "e2eaedbb-7c23-46ae-a595-aa54f65e7d00",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "a50f68fc-9401-48d2-ba0b-ed9e19a88050",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "b2caec65-c17d-4b3d-a56d-b5a9e8e6255b",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "114a9ae5-9fd5-4aa4-8d71-7a112bf553da",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "8c4f1985-3b99-44c1-ab99-e565ef7d264d",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "89715a41-c0ea-49e8-87ce-0b5ebd877d07",
+      "result_id": "963c4324-cc03-47c6-9df8-5b8badf99dbc"
+    },
+    {
+      "claim_id": "6d840096-c004-4648-a478-686f44c8570e",
+      "result_id": "dd1efa9f-a10b-4a7f-8784-e2d1e68e768a"
+    },
+    {
+      "claim_id": "4477f884-5cd0-4a39-8204-6f2580151b0e",
+      "result_id": "dd1efa9f-a10b-4a7f-8784-e2d1e68e768a"
+    },
+    {
+      "claim_id": "2a0e9bfd-6ff4-4157-8126-2d1f75049679",
+      "result_id": "dd1efa9f-a10b-4a7f-8784-e2d1e68e768a"
+    },
+    {
+      "claim_id": "f5f38a09-fd66-4760-b385-f033ba88e5e1",
+      "result_id": "79f3cd16-d159-4adf-83fb-9350ab308645"
+    },
+    {
+      "claim_id": "3b8ea0a2-10da-4432-a48f-f0203555ef90",
+      "result_id": "79f3cd16-d159-4adf-83fb-9350ab308645"
+    },
+    {
+      "claim_id": "465d0ff5-d189-4bfa-a2c6-86397578bd37",
+      "result_id": "e1de5fde-1edb-4c68-b624-902e6cf5f617"
+    },
+    {
+      "claim_id": "4dd4bdb6-3d33-4a85-9da3-c4de4bed480b",
+      "result_id": "e1de5fde-1edb-4c68-b624-902e6cf5f617"
+    },
+    {
+      "claim_id": "5207ee11-82cf-4aee-8146-c096562d4b19",
+      "result_id": "16358a60-da29-4c7f-827f-69434667085b"
+    },
+    {
+      "claim_id": "87f0526f-958d-43fe-9bac-6b09b856224e",
+      "result_id": "16358a60-da29-4c7f-827f-69434667085b"
+    },
+    {
+      "claim_id": "fd6b5c82-b05c-42d0-8dde-42dcc25f4855",
+      "result_id": "16358a60-da29-4c7f-827f-69434667085b"
+    },
+    {
+      "claim_id": "a7fb0cdb-df64-4f5c-9018-783a9fa39c63",
+      "result_id": "16358a60-da29-4c7f-827f-69434667085b"
+    },
+    {
+      "claim_id": "58dc23bd-6ea2-4912-bcff-1b009ea576aa",
+      "result_id": "6e4f09b9-294a-432b-87dd-6ddb8a055240"
+    },
+    {
+      "claim_id": "d11fa4e7-4c42-455d-bcff-66d9894a9517",
+      "result_id": "6e4f09b9-294a-432b-87dd-6ddb8a055240"
+    },
+    {
+      "claim_id": "be2fa826-6619-4269-b589-f71136b8055a",
+      "result_id": "6e4f09b9-294a-432b-87dd-6ddb8a055240"
+    },
+    {
+      "claim_id": "1654c811-8c69-4e78-886e-13306e466299",
+      "result_id": "6e4f09b9-294a-432b-87dd-6ddb8a055240"
+    },
+    {
+      "claim_id": "08985618-7128-4783-bb48-f133253dbabb",
+      "result_id": "6e4f09b9-294a-432b-87dd-6ddb8a055240"
+    },
+    {
+      "claim_id": "233307a8-d62e-4611-aac9-ef5daa13c870",
+      "result_id": "6e4f09b9-294a-432b-87dd-6ddb8a055240"
+    },
+    {
+      "claim_id": "e2414eab-b5ed-4966-90f2-4cf5fd6c37bd",
+      "result_id": "05d3a336-92cd-46c2-aa4d-2c40263b0583"
+    },
+    {
+      "claim_id": "3934f9fc-7f6a-4cbe-a0f3-83f932690ee3",
+      "result_id": "05d3a336-92cd-46c2-aa4d-2c40263b0583"
+    },
+    {
+      "claim_id": "94c1d4be-01db-442c-9d71-f1237b4cb0de",
+      "result_id": "05d3a336-92cd-46c2-aa4d-2c40263b0583"
+    }
+  ],
+  "comparisons": []
+}

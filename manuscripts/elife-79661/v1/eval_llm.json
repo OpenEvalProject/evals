@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study employed a randomized, double-blind, between-subject design with 112 participants who completed a deterministic two-step task at baseline and after receiving either amisulpride (400 mg, n=38), naltrexone (50 mg, n=39), or placebo (n=35). The task involved choosing spaceships that deterministically led to planets with rewards that changed according to Gaussian random walks, and participants were tested approximately 4.5 hours after drug administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C107 collectively describe a well-documented experimental design with appropriate controls, randomization, blinding, and ethical approval. The sample size (n=112), drug doses, timing, and task parameters are clearly specified with justification from prior work (C92). Data loss is transparently reported (C95-C96), and blood serum levels confirmed drug delivery (C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C109",
+      "C110"
+    ],
+    "result": "Amisulpride administration increased goal-directed (model-based) relative to habitual (model-free) behavior as measured by the two-step task. Behavioral analysis showed that participants often failed to consider the spaceship-to-planet mapping in trials with different first-stage states, and computational modeling (Model M1) demonstrated superior predictive accuracy (65% mean posterior prediction accuracy) compared to alternative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38, C109, and C110 are supported by converging evidence from both behavioral analysis (Figure 3) and computational modeling (Figure 4). The model validation included parameter recovery and posterior predictive checks (C110), and Model M1 outperformed alternative reinforcement learning models in out-of-sample prediction (C109). The finding is internally consistent across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C77",
+      "C87"
+    ],
+    "result": "Naltrexone (50 mg) had no appreciable effect on the model-based/model-free trade-off, despite achieving approximately 90% \u03bc-opioid receptor occupancy at the time of testing. This lack of effect suggests that opioid receptor blockade does not influence the arbitration between habitual and goal-directed behavior in this task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C77, and C87 are supported by statistical analyses showing no significant differences between naltrexone and placebo groups on the model-based/model-free weight parameter (Figure 4). The dosage and timing were appropriate based on pharmacokinetic data (C77), ruling out insufficient receptor occupancy as an explanation. The null finding is well-documented with credible intervals reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C72"
+    ],
+    "result": "The effect of amisulpride on increasing model-based behavior did not scale with drug serum levels in the blood, as both low and high serum groups showed comparable increases in the model-based/model-free weight parameter. This suggests that even small doses of amisulpride promote flexible cognitive control, potentially through presynaptic D2 receptor blockade rather than postsynaptic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, and C72 are supported by serum level analyses (Figure 5) showing that both low and high serum groups exhibited increased \u03c9 parameters with no significant difference between groups. The interpretation regarding presynaptic mechanisms (C72) is appropriately qualified as speculative and is supported by pharmacological literature on dose-dependent receptor binding (C70-C71). However, the mechanistic interpretation remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Participants with higher amisulpride serum levels showed increased explorative behavior, as indicated by reduced inverse temperature parameter (\u03b7) in the computational model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by computational modeling results showing that the high serum group had significantly reduced \u03b7 (increased exploration) compared to the low serum group (Figure 5). The effect was dose-dependent and statistically robust (p=0.018), though the authors note some uncertainty about whether this reflects true exploration versus decision noise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Amisulpride did not affect mood changes in either serum group, while naltrexone flattened both positive and negative affect as measured by mood questionnaires administered at drug intake and 3 hours later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 are supported by statistical analyses of mood questionnaire data with reported effect sizes and credible intervals. The naltrexone effect on affect flattening (C53) achieved statistical significance (p=0.035 for positive affect, p=0.013 for negative affect), while amisulpride showed no significant mood effects (C52). These findings help rule out mood changes as confounds for the primary behavioral results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The findings provide evidence for divergent involvement of dopamine and opioid systems in the shift between habitual and goal-directed behavior. The lack of naltrexone effects suggests that disrupting habitual behavior systems alone is insufficient to increase goal-directed behavior, while amisulpride's effects highlight the specific functional contribution of D2 receptors in flexibly applying cognitive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 represent interpretations of the primary findings (C3, C4) that are well-supported by the data. The divergent effects of the two drugs (C55) are clearly demonstrated, and the interpretation regarding D2 receptor specificity (C58) is appropriate given amisulpride's selectivity. The mechanistic interpretation (C56-C57) is appropriately qualified and consistent with the observed pattern of results, though causality cannot be definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "A hierarchical Bayesian approach was used in all analyses to regularize inference, with parameters estimated using Stan with 4 chains and 3000 iterations (1000 warmup).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is supported by detailed methodological descriptions in the Methods section. The hierarchical Bayesian approach is appropriate for this type of data and helps address multiple comparisons and overfitting concerns. Convergence diagnostics (R-hat < 1.01) and prior specifications are reported, demonstrating methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript establishes theoretical background on dual-system decision-making, describing habitual (model-free) and goal-directed (model-based) systems, their computational analogues, and their relevance to addiction and compulsive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 represent well-established theoretical background supported by appropriate citations to prior work. These claims provide context for the study but do not constitute novel findings. The characterizations of model-free and model-based systems (C10-C13) are standard in the field, and the links to addiction (C17-C19) are well-documented in cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior research demonstrates that both dopamine and opioid systems are involved in reward processing and motivation, with dopaminergic circuits playing central roles in cognitive control and working memory, particularly through D1 and D2 receptor subtypes with distinct functional contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C33 accurately summarize prior literature on dopamine and opioid neurobiology, supported by appropriate citations. The characterization of differential D1 versus D2 receptor functions (C29-C33) is well-established. However, these are background claims from prior work rather than novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The Discussion contextualizes findings within existing literature on dopamine's role in model-based/model-free behavior, dual-state theory of prefrontal dopamine function, and the pharmacology of D2 receptor antagonists, noting inconsistencies in prior research and potential mechanisms including presynaptic versus postsynaptic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C85 represent accurate summaries of prior literature used to interpret the current findings. The authors appropriately note inconsistencies in prior work (C59-C60) and provide mechanistic context (C61-C62, C70-C71). The discussion of alternative neurotransmitter systems like serotonin (C82-C85) acknowledges limitations. These claims are well-supported by citations but represent interpretive context rather than novel empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C86"
+    ],
+    "result": "The authors propose that naltrexone may have reduced intrinsic reward value and motivation to exert cognitive effort, and conclude that D2 dopamine antagonists might promote goal-directed behavior when habitual alternatives are available, even at low doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is explicitly speculative ('One explanation of our results is...') and lacks direct empirical support beyond the mood flattening observation (C53). Claim C86, while consistent with the data, extrapolates beyond what was directly tested. The study did not systematically vary dose or directly measure 'availability of habitual alternatives.' These interpretations are plausible but require additional validation.",
+    "result_type": "MINOR"
+  }
+]

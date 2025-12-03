@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Two rhesus macaques were trained on a compositional rule-based category-response task with three rules requiring categorization of color or shape features and responses along two different axes. The task involved morphed stimuli drawn from continuous feature spaces, blocks of trials with unpredictable rule switches cued only by timing (not identity), and extensive training (36-60 months) until stable performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 and C95-C116 provide comprehensive methodological details about the task design, training protocol, and experimental procedures. The task structure is clearly defined with specific parameters (stimulus properties, timing, response criteria, block switching thresholds) and is supported by figures showing the task timeline and rule structure. The extensive training period and detailed methods support the validity of the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Both monkeys performed the task well above chance across all three rules, with performance varying by rule: Rule 2 showed rapid learning (81-78% correct on first trial, reaching 85-91% by trial 20), while Rules 1 and 3 showed initial below-chance performance reflecting perseveration, followed by gradual improvement to 63-77% by trial 50.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C33 present behavioral performance data with confidence intervals and are supported by Figure 1e,f showing performance curves. The statistical measures (confidence intervals, specific percentages) and the pattern of differential learning speeds across rules are clearly documented and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Monkeys demonstrated two distinct behavioral phenomena: (1) slower switching to Rules 1 and 3 compared to Rule 2 (\u0394=22-35% difference in first 20 trials, p<10\u207b\u2074), and (2) nearly instantaneous learning of response axis (97% correct axis within 5 trials) with very few off-axis errors throughout blocks, suggesting rapid axis inference but slower feature-response mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 describe key behavioral findings with statistical support (Fisher's tests, confidence intervals) and are illustrated in Figure 1g,h. The dissociation between fast axis learning and slower feature mapping is well-documented with quantitative evidence. The interpretation in C43 is reasonable given the data pattern, though it represents an inference from the behavioral observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "An incremental Q-learning model (QL) with error-driven learning and built-in advantages (binary feature indicators, weight resets) failed to capture the animals' rapid axis switching behavior, responding on correct axis only 50% of the time initially and switching to correct axis within 5 trials on only 57-58% of blocks (vs. 94-97% for animals), with significantly more off-axis errors (21-24% vs. 0-4.3% for animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 describe the QL model implementation and its failure to match behavioral data, supported by Figure 2 and statistical comparisons (Fisher's tests, p<10\u207b\u2074). The model's poor fit demonstrates that pure incremental learning cannot explain the observed behavior. The comparison is rigorous with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A Bayesian ideal observer model (IO) using statistical inference over three known rules successfully reproduced rapid axis switching but failed to capture differential learning speeds between rules, predicting that initial learning speed should be coupled to asymptotic performance through shared perceptual noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 describe the IO model's architecture and its partial success in matching behavior, supported by Figure 3\u2014figure supplement 1. The model correctly captures axis switching (C53) but fails on rule-specific learning differences (C54), demonstrating that pure inference with perfect rule knowledge is insufficient. The theoretical prediction in C52 is a logical consequence of the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Monkey performance depended on stimulus difficulty (morph level), with a critical discrepancy between Rules 2 and 3: despite both requiring color categorization with shared perceptual noise, Rule 2 showed high early performance (96% prototype, 91% morphed stimuli) while Rule 3 showed lower performance (80% prototype, 62% morphed), a \u0394=28% difference (p<10\u207b\u2074) that the IO model could not capture without trading off between rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 present psychometric data showing the key behavioral dissociation that falsifies the IO model, supported by Figure 3a-c with statistical tests. The logic is sound: if both rules use color with the same perceptual noise, the IO model predicts similar performance, but the data show a large, significant difference. This is a critical empirical result that motivates the hybrid model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A hybrid model (HQL) combining Bayesian inference over two latent states (axes) with incremental learning of feature-response weights within each axis successfully captured all key behavioral features: rapid axis switching (91% correct initially), differential rule learning (\u0394=29-31% between Rule 2 vs. Rules 1/3), and the trade-off between initial learning rate and asymptotic performance in Rules 2 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 describe the HQL model and demonstrate its superior fit to behavioral data, supported by Figure 4 with statistical comparisons (Fisher's tests, p>0.05 for model vs. data). The model successfully reproduces all three key behavioral phenomena that the QL and IO models failed to capture. The model architecture is clearly specified and the fits are quantitatively validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Animals showed a strong congruency effect in Rules 1 and 3 (94% vs. 57% performance for congruent vs. incongruent stimuli, \u0394=37%, p<10\u207b\u2074, with 25ms slower reaction times for incongruent stimuli) but no congruency effect in Rule 2 (92% vs. 93%, \u0394=-0.73%, p=0.40), consistent with prior literature on interference effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 present the congruency effect data with statistical support and citations to prior work, illustrated in Figure 5a-c and Figure 5\u2014figure supplement 3. The differential effect across rules (present in Rules 1/3, absent in Rule 2) is well-documented and statistically significant. This behavioral pattern provides additional constraint for model evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The congruency effect falsifies both the QL model (which predicted an anti-congruency effect due to 4:1 ratio of incongruent:congruent trials) and the IO model (which predicted minimal difference, \u0394=3.8%), while the HQL model successfully reproduced the effect (\u0394=31%) because congruent stimuli share weights across Rules 1 and 3 on the same axis while incongruent stimuli require weight changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 use the congruency effect as a critical test to discriminate between models, supported by Figure 5d-l. The logic is compelling: the QL model's failure (C72-C74) reflects its encoding of trial statistics, the IO model's failure (C75-C76) reflects its rapid convergence, and the HQL model's success (C77-C80) reflects its hybrid architecture. The mechanistic explanation (C78-C79) is clearly stated and C81 provides a strong conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The study demonstrates that rule switching and rule learning rely on distinct but intertwined computations\u2014fast inference for axis switching and slower incremental learning for stimulus-response associations within an axis\u2014as revealed through computational modeling of monkey behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 state the main conclusion of the paper, which is well-supported by the convergent evidence from behavioral data (C23-C43), model comparisons (C44-C67), and the congruency effect (C68-C81). The conclusion that two distinct computational mechanisms are required is justified by the systematic failure of single-mechanism models and success of the hybrid model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "All computational models shared common noisy perceptual input (Von Mises distributions) and action selection stages (epsilon-greedy softmax), were fitted using MCMC with Stan, with each recording day fitted separately, and convergence validated by R-hat <1.05 and effective sample size >100.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 describe the computational modeling methodology with appropriate technical details and validation criteria. The use of MCMC fitting with convergence diagnostics is appropriate for models with non-analytic likelihood functions. The shared perceptual and action selection stages ensure fair model comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The results generate testable neural predictions: (1) two latent states should be represented in the brain with Rules 1 and 3 more similar to each other than to Rule 2, (2) a potential functional dissociation between cortical regions (prefrontal cortex for axis inference) and subcortical regions (basal ganglia for feature-response learning), though both processes might alternatively be represented in the same regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C127 present speculative predictions and hypotheses for future work, appropriately qualified with 'may' and 'might'. While these predictions logically follow from the computational model (C121-C122 are direct predictions from the two-latent-state HQL model), they remain untested hypotheses. The neural localization proposals (C123-C127) are reasonable given prior literature but are explicitly presented as alternative possibilities requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Prior literature establishes that error-driven learning is associated with dopamine and basal ganglia, rapid rule switching can emerge with repeated alternation, latent state inference is associated with prefrontal cortex, and theoretical work has proposed interactions between inference and incremental learning, though these mechanisms have mostly been studied in isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C94 summarize relevant prior literature with extensive citations. These claims accurately represent the state of the field and provide appropriate context for the current study. The characterization that these mechanisms have been studied in isolation (C94) motivates the current work's focus on their interaction. The citations appear appropriate and comprehensive.",
+    "result_type": "MINOR"
+  }
+]

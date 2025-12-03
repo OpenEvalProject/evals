@@ -1,0 +1,666 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "KDEL, RDEL, and HDEL are the major retrieval signal variants in mammals with approximately equal frequency, but KDEL-bearing proteins are over five-fold more abundant than HDEL or RDEL proteins due to a small number of highly abundant ER chaperones (BIP, PDI, calreticulin at 5-10 \u00b5M). The concentration of retrieval signals exceeds the KDELR2 receptor (0.2-0.3 \u00b5M) by at least two orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-supported by proteome dataset analysis (Itzhak et al., 2017; 2016) shown in Figure 1a-b and Figure 1\u2014figure supplement 1. The sequence logos, concentration measurements, and quantitative data provide converging evidence for the distribution and abundance of retrieval signal variants and their relationship to receptor concentration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "HDEL has the highest affinity for the receptor (KD 0.24 \u00b5M), followed by KDEL (KD 1.94 \u00b5M) and RDEL (KD 2.71 \u00b5M), representing approximately one order of magnitude difference between HDEL and KDEL. DDEL binds with 60-fold lower affinity than HDEL (KD 14.9 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by competition binding assays shown in Figure 1c, with measurements consistent with prior studies (Scheel and Pelham, 1998; Wilson et al., 1993). The KD values are experimentally determined and the affinity differences are correctly calculated from the measured values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Despite affinity differences, KDEL, RDEL, and HDEL signals all trigger similar ER retrieval of the receptor from the Golgi, while ADEL and DDEL have little effect and show predominantly Golgi/secretory localization. This explains why ADEL and DDEL are not used as retrieval signals in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are supported by microscopy experiments in Figure 1d-e showing receptor redistribution and ligand localization. The functional data demonstrate that despite in vitro affinity differences, KDEL/RDEL/HDEL function similarly in cells while ADEL/DDEL do not, providing a mechanistic explanation for signal usage patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Increasing HDEL protein concentration causes secretion of normally retained ER chaperones (BIP, PDI, ERP72, ERP44), and HDEL is less efficiently retained than KDEL or RDEL despite higher affinity. This indicates the retrieval system is not optimized for binding affinity but evolved to ensure optimal retrieval of proteins with widely differing abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by Western blot analysis in Figure 1\u2014figure supplement 1d-f showing ER chaperone secretion and ligand retention. The paradoxical observation that high-affinity HDEL is less efficiently retained provides strong evidence that the system is optimized for dynamic range rather than maximal affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "In human cells, ADEL and DDEL do not bind with high affinity and do not function as retrieval signals, suggesting specific recognition of the -4 position is a key determinant for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by binding assays (Figure 1c) and functional retrieval assays (Figure 1d-e) showing ADEL and DDEL fail to activate the wild-type human receptor. The inference that the -4 position is crucial is reasonable given the systematic differences in signal recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Crystal structures of chicken KDELR2 bound to TAEHDEL (2.24 \u00c5) and TAERDEL (2.31 \u00c5) show similar pH-dependent binding and overall structure (RMSD 0.223 and 0.153 \u00c5 vs TAEKDEL). All three peptides bind in vertical orientation with similar salt bridge interactions and the positive charge at -4 position is identically positioned relative to E117 and W120.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34 are supported by thermal stability assays (Figure 2\u2014figure supplement 1), crystal structure determination (Figure 2, Supplementary file 1), and electron density maps (Figure 2\u2014figure supplement 2). The structural data provide high-resolution evidence for the binding mode and are consistent with prior KDEL-bound structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "D50 is >5 \u00c5 away from the retrieval signal and unlikely to directly contribute to binding. The -5 and -6 positions are not conserved in retained ER proteins, with the -5 glutamate sitting close to S54 but not obviously increasing affinity, and no contacts made to the -6 position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by distance measurements from crystal structures and sequence conservation analysis (Figure 1a). The structural data directly contradict prior proposals about D50's role in signal recognition, and the lack of conservation at -5/-6 positions argues against their importance despite some prior suggestions (Alanen et al., 2011).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The retrieval signal forms multiple salt bridge interactions: C-terminus and L-1 to R47/Y48/R159/Y162, E-2 to R5/W166, D-3 to R169. The histidine at -4 of HDEL forms \u03c0-\u03c0 stacking with W120, while RDEL's arginine can interact via cation-\u03c0 with W120 and salt bridge with E117. Both E117 and W120 play roles in binding, with W120 being critical for explaining affinity differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 are supported by crystal structures (Figure 2b-e) showing detailed interaction networks. The structural observations provide molecular explanations for the binding mode, though some interactions (C43, C44) are described as 'predicted' or 'could interact', indicating they are inferences from structure rather than direct measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "For wild-type chicken KDELR2 at pH 5.4, KD values are 1.9\u00b10.46 \u00b5M (KDEL) and 0.26\u00b10.04 \u00b5M (HDEL). E117D substitution slightly reduces binding (KD 2.1\u00b10.33 \u00b5M KDEL, 0.52\u00b10.02 \u00b5M HDEL), while E117A has greater effect on KDEL (KD ~9.3\u00b11.0 \u00b5M) than HDEL (KD 0.52\u00b10.02 \u00b5M). W120A mutation abolishes KDEL binding and reduces HDEL binding to 20%, confirming W120's crucial role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by in vitro binding assays shown in Figure 3a-b with replicate measurements and error estimates. The differential effects of E117 vs W120 mutations provide strong evidence for their relative importance, with W120 being more critical than E117 for signal binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "W120F substitution supports 50% HDEL binding (KD 5.5\u00b10.57 \u00b5M) but no KDEL interaction, indicating W120 plays a crucial role in binding both signals and may explain HDEL's higher affinity. In contrast, E117 is less important than initially appeared.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by binding assays (Figure 3a-b) showing differential effects of W120F mutation on HDEL vs KDEL. The conservative W120F substitution preserving some HDEL binding but abolishing KDEL binding provides strong evidence for the importance of \u03c0-\u03c0 interactions specific to histidine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In cellular ER retrieval assays, E117 mutant receptors (E117Q, E117D, E117A) are efficiently retrieved with KDEL/RDEL/HDEL signals, while W120A and W120F mutants do not respond to KDEL/RDEL and show greatly reduced HDEL response. The E117A/W120A double mutant abrogates residual HDEL response, confirming W120 is more important than E117 for ligand binding and ER retrieval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by cellular ER retrieval assays (Figure 3c, Figure 3\u2014figure supplement 1) showing receptor redistribution in response to different signals. The in vivo behavior agrees well with in vitro binding data, providing converging evidence for the relative importance of W120 vs E117.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Molecular mechanics-based alchemical transformation calculations show HDEL binding free energy is -1.8\u00b11.4 kcal/mol stronger than KDEL (expected -1.3 kcal/mol from KD values). The preference for HDEL (-1.9\u00b10.2 kcal/mol) is attributed to protonated histidine (pKa 8.9\u00b10.5) making cation-\u03c0 interactions with W120. W120F mutation shifts pKa to 7.6\u00b10.3 and reduces preference to -0.7\u00b11.6 kcal/mol, while W120A (pKa 6.5\u00b10.1) reduces it to -0.3\u00b10.9 kcal/mol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by computational free energy calculations (Supplementary file 2) that agree well with experimental KD values. The calculations provide mechanistic insight into the role of histidine protonation and W120 interactions, though the large error bars on some calculations (e.g., C70) indicate uncertainty in the precise values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Quantum mechanical calculations show W120F exhibits ~1.5 kcal/mol weaker \u03c0-\u03c0 interactions and ~0.5 kcal/mol weaker cation-\u03c0 interactions with histidine compared to W120. Molecular dynamics simulations show higher root mean squared fluctuations for W120F and even higher for W120A, supporting the hypothesis that \u03c0-\u03c0 interactions between protonated histidine and W120 explain HDEL's higher affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by quantum mechanical calculations using SAPT2+ (Supplementary file 3, Figure 3d) and molecular dynamics simulations (Figure 3e). The computational approaches provide detailed mechanistic insight into the molecular interactions, with results consistent with experimental binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "At pH 6.4, HDEL shows ~60% maximal binding to the receptor compared to <20% for KDEL. The level of HDEL binding at pH 7 would saturate the KDELR receptor in the ER if abundant proteins like BIP carried this signal variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by pH-dependent binding assays (Figure 3f) and comparison with prior KDEL data (Br\u00e4uer et al., 2019). The inference about receptor saturation (C78) is reasonable given the concentration data for BIP and KDELR, though it represents a prediction rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "W120 is necessary for recognition of KDEL, indicating that cation-\u03c0 interactions to W120, rather than a salt bridge to E117, is the crucial determinant for recognition of the -4 position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by binding and functional assays with W120 mutants (Figure 3a-c) combined with structural data. The conclusion represents a significant revision of prior models that emphasized E117's role, with strong experimental evidence supporting the new interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "D50 is outside the immediate binding region for all retrieval signal variants and unlikely to directly contribute to binding. ADEL does not activate the wild-type human KDEL receptor, suggesting the -4 position is crucial for high-affinity binding. E117 may be more important to select against unwanted signal variants rather than for binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by crystal structures showing D50 distance (Figure 2, 5b) and functional assays showing ADEL does not activate wild-type receptor (Figure 1d-e). The reinterpretation of E117's role from binding to selectivity is a reasonable inference from the modest effects of E117 mutations on affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "E117A mutant receptor relocates to the ER in response to KDEL and ADEL but not DDEL signals. E117Q and E117N receptors similarly respond to KDEL/ADEL but not DDEL. This indicates E117 is important for determining which signals are rejected based on the -4 position but does not play a major role in binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by cellular ER retrieval assays (Figure 4a-b, Figure 4\u2014figure supplement 1) showing differential responses of E117 mutants to different signals. The data provide strong evidence for E117's role in selectivity rather than affinity, representing a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "ADEL must bind to E117A mutant receptors via the 'DEL' tri-carboxylate portion of the retrieval signal, suggesting this region may be the major contributor to binding affinity for all signal variants. For HDEL, the protonated histidine side chain makes additional \u03c0-\u03c0 interactions with W120 to bind with higher affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are inferences from the observation that ADEL (lacking a charged -4 residue) can bind E117A mutants. The logic is sound: if ADEL binds without a charged -4 residue, the DEL portion must provide the primary binding energy. This is consistent with structural data showing extensive interactions with the -1 to -3 positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The lack of response to DDEL shows signal selection must involve additional features. In receptors recognizing ADEL and DDEL (S. pombe, K. lactis), D50 is changed to asparagine, E117 to glutamine/asparagine, and position 54 to arginine/lysine. In the HDEL-bound structure, E117 and S54 sit close to the -4 histidine and -5 glutamate respectively, while D50 is >5 \u00c5 from the signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 are supported by sequence alignment (Figure 5a) and structural analysis (Figure 5b). The comparative analysis of receptors from different organisms with different signal specificities provides strong evidence for the roles of these residues in determining selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Electrostatic surface analysis shows a negatively charged feature above the positively charged binding cavity, with the -4 residue at the boundary. Progressive introduction of K. lactis-like mutations (D50N S/N54K E117Q) erodes the negatively charged luminal feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by calculated electrostatic surfaces (Figure 5c-d). The electrostatic analysis provides a mechanistic explanation for how receptor variants can discriminate between signals with different net charges at the -4 position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Upstream sequences of abundant ER proteins (including human and yeast BIP) are acidic, not basic. For human signals, the -4 position is crucial and mutation to A or D abolishes ER retrieval. S. pombe and K. lactis BIP ADEL/DDEL signals become functional with human receptor if -4 is changed to lysine, confirming this is the critical residue independent of upstream sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by sequence analysis (Figure 5a, Figure 5\u2014figure supplement 1a) and functional assays (Figure 5\u2014figure supplement 1b-d). The mutagenesis experiments provide strong evidence that the -4 position is the key determinant of signal function, independent of context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The budding yeast FEHDEL signal with a bulky aromatic residue at -6 is functional in mammalian cells, contradicting prior work. Analysis of human FKBP family proteins shows no obvious conservation pattern other than the canonical C-terminal HDEL or HEEL retrieval signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by functional assays (Figure 5\u2014figure supplement 1c,e) and sequence analysis. The contradiction with prior work (Wilson et al., 1993) is directly addressed with new experimental data, and the lack of upstream conservation supports the view that the core tetrapeptide is sufficient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "D50N mutation abolishes response to all signal variants, indicating D50 is not the sole determinant of selectivity. N54K or N54R reduce KDEL response but do not enable ADEL/DDEL recognition. D50N N54K and D50N N54R double mutants show loss of specificity and respond to KDEL, ADEL, and DDEL, showing it is possible to uncouple binding from selectivity at the -4 position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are supported by cellular ER retrieval assays (Figure 6a-b, Figure 6\u2014figure supplement 1). The systematic mutagenesis provides strong evidence for the roles of D50 and N54 in signal selectivity, with the double mutants demonstrating that selectivity can be uncoupled from binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "K. lactis-like double mutants (D50N or N54K with E117Q) show switched specificity toward ADEL/DDEL with residual KDEL response. D50N N54K E117Q triple mutant improves ADEL/DDEL response and further reduces KDEL response. S. pombe-like D50N N54R E117N triple mutant shows comparable results. Both altered specificity receptors respond to cognate ADEL/DDEL variants of BIP, with response abolished by mutation of signal -4 position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by cellular ER retrieval assays (Figure 6a-b, Figure 6\u2014figure supplement 2). The ability to engineer receptors with switched specificity provides strong validation of the proposed mechanism for signal selectivity and demonstrates the sufficiency of these residues for determining specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "D50N N54K E117Q W120A K. lactis-like mutant does not relocate with KDEL/ADEL and shows only small DDEL response. S. pombe-like D50N N54R E117N W120A mutant shows some remaining DDEL response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by cellular ER retrieval assays (Figure 6a-b, Figure 6\u2014figure supplement 1b). The quadruple mutants demonstrate that W120 is required even in the context of switched specificity, confirming its fundamental importance for signal binding across all variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "There is a common mode of binding for all retrieval signal variants through conserved residues. Specificity for the -4 position is achieved through a proofreading mechanism involving gatekeeper residues D50 and E117, with S/N54 contributing to exclusion of unwanted variants. E117A partially uncouples this mechanism allowing ADEL binding, while both D50 and E117 must be changed to allow DDEL binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 synthesize findings from structural and functional studies to propose a unified mechanism. The model is well-supported by the systematic mutagenesis data showing differential requirements for recognizing different signal variants, though it represents an interpretive framework rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "The luminal surface of the receptor plays a crucial role in signal selectivity prior to adoption of the final activated state, perhaps by determining the rate of signal association from solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 is a reasonable inference from the combined data, but C128 is explicitly speculative ('perhaps by determining'). While the data support a role for the luminal surface in selectivity, the specific mechanism (kinetic vs thermodynamic control) is not directly demonstrated and would require additional experiments such as stopped-flow kinetics measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Molecular dynamics simulations show the signal initially encounters the receptor through C-terminal carboxyl interaction with R169, then moves to engage R5, followed by R47, with the -4 lysine moving toward E117 concomitant with final R47 engagement. D50 does not come close to the KDEL signal and S54 shows only transient interaction with the -5 position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 are supported by molecular dynamics simulations (Figure 7a,c,d, Video 1) showing the stepwise binding process. The simulations provide mechanistic insight into the binding pathway, though they represent computational predictions that would ideally be validated by experimental kinetics measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A carboxyl-handover model is proposed for signal capture mediated by the ladder of arginine residues. Only the final stage where the receptor closes around the signal is pH dependent; all other stages are predicted to be freely and rapidly reversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 represent a mechanistic model based on molecular dynamics simulations and prior structural work on pH-dependent closure (Br\u00e4uer et al., 2019). The model is consistent with available data, though the reversibility of intermediate stages (C138) is a prediction from simulations rather than direct experimental observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "C-terminal amidation completely abolishes KDEL binding and reduces HDEL affinity by two orders of magnitude (from 19\u00b11.3 \u00b5M to 1.7\u00b10.1 mM). For HDEL, residual affinity suggests the peptide still enters and exits the binding pocket but fails to trigger final pH-dependent capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 are supported by binding assays with C-amidated peptides (Figure 7e). The interpretation of residual HDEL binding (C141) is a reasonable inference from the data, consistent with the proposed multi-step binding mechanism where the C-terminus is required for the final locking step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "R169A shows no KDEL binding and greatly reduced HDEL binding in vitro, and no KDEL response with only ~10% HDEL response in cells. Conservative R169K substitution greatly reduces binding of both signals in vitro and shows attenuated cellular response. This confirms R169 interaction with the C-terminal carboxylate plays an important role in initial signal capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 are supported by in vitro binding assays (Figure 7f) and cellular ER retrieval assays (Figure 7g, Figure 7\u2014figure supplement 1). The convergence of in vitro and in vivo data, along with agreement with MD simulation predictions, provides strong evidence for R169's role in initial signal capture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Canonical ER retrieval signals can be broken down into two components: the -4 position (enabling receptor to distinguish between different ER protein populations) and a tri-carboxylate moiety (-3 aspartate, -2 glutamate, -1 C-terminal carboxylate). A relay handover mechanism is proposed where a ladder of three arginine residues pairs with the three carboxyl groups in a stepwise process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 synthesize structural, computational, and functional data into a unified mechanistic model. The model is well-supported by converging evidence from multiple approaches, though it represents an interpretive framework integrating diverse observations rather than a single direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "At neutral pH, C-terminal sequences rapidly sample the binding site in both ER and Golgi, accompanied by proofreading depending on net charge and gatekeeper residues D50, S54, E117. D50 and S54 make transient interactions providing an entry point. The mechanism could be equivalent to key insertion, where the signal initially binds D50/S54 and the relay of charged groups drives the signal into the binding pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C155 represent a mechanistic model with varying levels of support. C151 is speculative ('we imagine'), C152-C153 are reasonable inferences from MD and functional data, but C154-C155 are explicitly presented as speculative ('could be equivalent to'). The model is plausible but would benefit from additional experimental validation such as kinetics measurements or mutagenesis of the proposed entry point residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "The final step of locking the C-terminus in place depends on protonation of the receptor in the Golgi (as explained in prior work). The -4 position would rotate toward E117 to adopt the most stable low energy binding pose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 is supported by citation to prior work (Br\u00e4uer et al., 2019) that established pH-dependent closure. Claim C157 is a reasonable inference from structural analysis showing the final bound state, though the dynamics of this rotation are not directly observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The proposed mechanism explains why the retrieval signal must be C-terminal and requires glutamate/aspartate at -2/-3 positions (due to carboxyl-containing side chains). Variation at -4 would not directly alter the initial capture and relay mechanism, possibly explaining why it is the key determinant for signal selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 represent logical consequences of the proposed binding mechanism. The explanations are consistent with all available data including the absolute requirement for C-terminal carboxylate (C139-C140) and the conservation of acidic residues at -2/-3. The inference about -4 position's role in selectivity (C160-C161) is well-supported by functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Crystal structures reveal -4 side chains form salt bridge with E117 but not D50. The E117 salt bridge makes limited contribution to binding affinity and doesn't explain HDEL's higher affinity, which is due to stronger \u03c0-\u03c0 interaction between histidine and W120. The -4 position is unlikely to play a major role in affinity for signals other than HDEL and is referred to as the 'passkey residue' important for selection and entry, potentially playing a greater role in initial binding kinetics by determining net charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C167 synthesize structural (Figure 2), binding (Figure 3), and computational (Supplementary files 2-3) data. The reinterpretation of the -4 position's role from affinity to selectivity/kinetics is well-supported, though C167 about kinetics is speculative. The 'passkey residue' terminology (C166) is a useful conceptual framework consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The model explains both the importance of the free C-terminal carboxyl group and how -4 position changes modulate receptor binding. KDEL receptors are not optimized for individual signals but must differentiate variant high and low affinity signals. Cells exploit these properties to maximize retrieval efficiency across proteins with 2-3 orders of magnitude abundance differences. The most abundant proteins use KDEL while lower abundance proteins use HDEL. Artificially increasing HDEL protein concentration leads to secretion of normally retained ER chaperones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C172 integrate findings into a functional model. C168 is well-supported by the combined data. C169-C171 are supported by proteome analysis (Figure 1a-b) and represent a key insight about system-level optimization. C172 is directly demonstrated by secretion assays (Figure 1\u2014figure supplement 1f), providing experimental validation of the model's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C173",
+      "C174"
+    ],
+    "result": "In some cellular regulatory systems, substrate/signal binding properties are optimized for rate and turnover rather than highest affinity. This may explain why histidine was selected for the highest affinity signal variant to counteract this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C173 represents general knowledge about cellular regulatory systems and is reasonable. However, C174 is explicitly speculative ('may explain') and represents an evolutionary interpretation without direct evidence. While plausible, this would require comparative evolutionary analysis or experimental demonstration of the proposed tradeoff to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "For HDEL, protonation of both histidine 12 in the receptor and histidine at -4 of the signal favor binding in the Golgi. Deprotonation of both at pH 7.0 enables rapid release in the ER and receptor recycling. Thus, HDEL binds more tightly than KDEL in the Golgi but still releases rapidly in the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C177 are supported by pH-dependent binding data (Figure 3f), computational pKa calculations (Supplementary file 2), and prior work on pH-dependent closure (Br\u00e4uer et al., 2019). The model explains how HDEL can have higher affinity while maintaining rapid recycling, resolving an apparent paradox.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "A signal with HDEL's affinity that was not proton-dependent would strongly inhibit retrieval at low concentration due to slow release at neutral pH. An alternative mechanism would be to increase receptor concentration, but this would require near-stoichiometric levels with cargo, problematic given millimolar ER chaperone concentrations. These potential traps are avoided by pH-regulation of both receptor and high-affinity HDEL signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C181 represent logical analysis of alternative scenarios. C178 and C179 are reasonable counterfactual predictions based on the data. C180 is supported by the concentration measurements (C3-C7). C181 synthesizes these considerations to explain the evolutionary logic of the system, representing a well-reasoned inference rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C182",
+      "C183"
+    ],
+    "result": "The versatile binding site architecture of the KDEL receptor enables differentiation of both high and low affinity signals, thereby enabling efficient ER retrieval of both low and high abundance proteins in eukaryotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C183 represent the main conclusion synthesizing all findings. The conclusion is well-supported by the combined structural, computational, and functional data showing how the receptor architecture accommodates different signal variants with different affinities to handle proteins across a wide abundance range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Gatekeeper residues D50 and E117 exclude ADEL and DDEL sequences. D50N/E117Q mutation changes selectivity to ADEL and DDEL. Affinity differences between HDEL, KDEL, and RDEL are explained by interactions between the variable -4 H/K/R position and W120, rather than D50 or E117. Signal variants increase dynamic range to support efficient ER retrieval of low and high abundance proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C187 summarize key findings from the study. C184-C185 are supported by functional assays (Figures 1, 4, 6). C186 is supported by structural and binding data (Figures 2-3). C187 synthesizes these findings into the main conclusion about functional significance, well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The carboxyl-terminus of the retrieval signal moves along a ladder of arginine residues as it enters the binding pocket. The KDEL receptor has a transporter-like architecture and undergoes pH-dependent closure around cognate retrieval signals (from prior work). The retrieval signal recognition process can be broken down into steps: initial capture of free carboxyl terminus and signal proofreading, followed by full engagement with binding cavity, and finally pH-dependent closure to expose the COPI retrieval motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C191 integrate current findings with prior work. C188 is supported by MD simulations (Figure 7). C189-C190 cite prior structural work (Br\u00e4uer et al., 2019; Newstead and Barr, 2020). C191 synthesizes the complete mechanism based on all available data, representing a well-supported mechanistic framework.",
+    "result_type": "MAJOR"
+  }
+]

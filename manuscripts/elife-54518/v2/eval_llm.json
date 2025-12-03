@@ -1,0 +1,540 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript provides background on MTLE, establishing it as the most common form of focal, pharmacoresistant epilepsy in adults, often associated with hippocampal sclerosis characterized by neuronal cell loss, gliosis, granule cell dispersion, and mossy fiber sprouting. Surgical resection is effective for many patients but not suitable for those with multiple foci or at risk of resection-related impairments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C13 are well-supported by citations to established literature (Engel 2001, Bl\u00fcmcke et al. 2013, Thom 2014, Englot and Chang 2014) and represent accepted knowledge in the field. These background claims appropriately contextualize the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors establish that deep brain stimulation (DBS) at high frequencies (130-200 Hz) is currently used for intractable seizures, but its efficacy is variable in MTLE patients with hippocampal sclerosis. Low-frequency stimulation (LFS) at 5 Hz has shown effectiveness in small cohort studies and would be favorable for clinical implementation due to lower power requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 are supported by appropriate citations to clinical literature (Li and Cook 2018, Bo\u00ebx et al. 2011, Velasco et al. 2007, Koubeissi et al. 2013, Lim et al. 2016). The rationale for investigating LFS as an alternative to HFS is well-established based on prior clinical observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors justify their experimental model choice by noting that optogenetic approaches have been successful in rodent MTLE models but typically target pyramidal cells or GABAergic interneurons, which are diminished in hippocampal sclerosis. The intrahippocampal kainate (KA) model replicates major hallmarks of human MTLE pathology while preserving dentate granule cells (DGCs) and their entorhinal inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are well-supported by citations to relevant literature (Krook-Magnuson and Soltesz 2015, Zhao et al. 2015, Bouilleret et al. 1999, Froriep et al. 2012, Janz et al. 2017a, H\u00e4ussler et al. 2016). The rationale for targeting preserved DGCs rather than lost cell populations is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors modified the intrahippocampal KA mouse model by using three different KA concentrations (10, 15, and 20 mM) to achieve variable degrees of hippocampal sclerosis. Higher KA concentrations (15 and 20 mM) resulted in greater hilar cell loss and granule cell dispersion compared to 10 mM, while CA1 pyramidal cell loss and Gad67+ interneuron loss were similar across groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C30-C31, C74-C75 are supported by quantitative histological data presented in Figure 2 with appropriate statistical analysis (one-way ANOVA with Tukey's post-hoc test, p<0.001 for significant differences). Sample sizes are stated (n=4, 6, 5 animals for 10, 15, 20 mM groups). The correlation between KA dose and pathological severity is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Epileptiform activity occurred in both hippocampi of all KA mice, with the ipsilateral dorsal hippocampus (idHC) of 10 mM KA mice showing a smaller percentage of high-load bursts compared to 15 or 20 mM groups. The extent of granule cell dispersion and hilar cell loss was positively correlated with the high-load burst ratio in the idHC (Pearson's r = 0.84, p<0.0001 for GCD; r = 0.64, p<0.01 for hilar cell loss).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by LFP recording data presented in Figure 3 with appropriate statistical analysis and correlation tests. The automated burst classification algorithm (described in C144-C150) provides objective quantification. The strong correlation between pathological severity and epileptiform activity validates the model modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C85",
+      "C91",
+      "C92"
+    ],
+    "result": "Optogenetic low-frequency stimulation (oLFS) at 1 Hz for 1 hour effectively suppressed spontaneous epileptiform activity in both the ipsilateral and contralateral hippocampi, independent of KA concentration. Lower frequencies (0.5 and 0.2 Hz) were less effective, with 1 Hz significantly more effective than 0.2 Hz but not significantly different from 0.5 Hz. No effect was observed in no-virus controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C85, C91-C92 are supported by comprehensive LFP data in Figure 4 and Figure 4\u2014figure supplement 1 with appropriate statistical analysis (one-way ANOVA with Dunn's multiple comparison test). The frequency-dependent effect is clearly demonstrated, and proper controls (no-virus) are included. Sample sizes are adequate across all KA concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Local optogenetic stimulation of entorhinal afferents in the ipsilateral dorsal hippocampus (idHC) evoked population spikes in the contralateral dorsal hippocampus (cdHC) with a latency of 8-12 ms (mean \u00b1 SEM: 9 \u00b1 0.6 ms), suggesting polysynaptic propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by detailed analysis of LFP recordings presented in Figure 4\u2014figure supplement 4, including latency measurements that remained stable over 1 hour of stimulation. The polysynaptic delay is consistent with interhippocampal propagation and helps explain bilateral seizure suppression from unilateral stimulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Local 10 Hz photostimulation of entorhinal afferents reliably induced generalized seizures in all KA groups, with longer induction times for higher KA concentrations (20 mM: 13.67 \u00b1 1.86 s vs. 10 mM: 5.75 \u00b1 0.63 s, p<0.01). Mice exhibited behavioral symptoms equivalent to Racine stages 1-5 independent of KA concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by data in Figure 5A-C with appropriate statistical analysis (one-way ANOVA with Tukey's post-hoc test). The inverse relationship between sclerosis severity and seizure induction time is interesting and well-documented. Behavioral scoring using the established Racine scale adds rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C53",
+      "C54"
+    ],
+    "result": "Preconditioning with 1 Hz oLFS for 30 minutes before a pro-convulsive 10 Hz stimulus was highly effective in preventing seizure generalization (seizure probability reduced from 91.42 \u00b1 5.18% to 14.87 \u00b1 8.33%, p<0.001, n=13 animals). Preconditioning with 0.5 Hz oLFS was also effective (seizure probability reduced from 97.73 \u00b1 2.27% to 12.12 \u00b1 8.13%, p<0.05, n=11 animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C53-C54 are supported by data in Figure 5D-E and Figure 5\u2014figure supplement 2B-C with appropriate statistical tests (Wilcoxon rank test). The dramatic reduction in seizure probability with preconditioning is a key finding. Sample sizes are adequate and effect sizes are large.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C55"
+    ],
+    "result": "Electrical low-frequency stimulation (eLFS) at 1 Hz for 30 minutes was as effective as oLFS in reducing the probability of generalized seizures (from 93.75 \u00b1 6.25% to 16.67 \u00b1 9.62%) and associated behavioral symptoms (Racine stage from 2.38 \u00b1 0.40 to 0.33 \u00b1 0.33, n=4 animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49 and C55 are supported by data in Figure 5H-J, but the sample size is small (n=4 animals) and no statistical test results are reported for the eLFS preconditioning experiments. While the effect appears similar to oLFS, the lack of statistical analysis and small sample size limit confidence in this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "In trials where seizure generalization was not completely prevented by preconditioning LFS, the ensuing seizures were associated with milder behavioral phenotypes (lower Racine stages).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by behavioral data in Figure 5F and 5J showing significant reductions in Racine stage scores (Wilcoxon rank test, p<0.001 for oLFS, n=13 animals). This demonstrates a dose-response relationship where partial suppression still provides clinical benefit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The cellular response to 10 Hz stimulation (measured as area under the curve, AUC) was reduced by approximately 40% after 1 Hz oLFS preconditioning in sessions where seizures were successfully suppressed (AUC: 266.9 \u00b1 53.89 without oLFS vs. 139.2 \u00b1 19.08 with oLFS, p<0.01, n=11 animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by AUC analysis presented in Figure 5G with appropriate statistical testing (paired t-test, p<0.01). The reduction in evoked response amplitude provides a mechanistic link between LFS preconditioning and seizure prevention, though the exact mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "When 1 Hz oLFS was started directly after the pro-convulsive 10 Hz stimulus (on-demand approach), ongoing seizures were not interrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by LFP data in Figure 5\u2014figure supplement 2A showing that oLFS applied after seizure onset does not terminate the seizure. This negative result is important for understanding the timing requirements of LFS intervention and distinguishes preconditioning from on-demand approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "During 1 Hz photostimulation, evoked response waveforms in non-epileptic mice decreased slightly over time, while in chronically epileptic mice, cellular responses declined strongly and rapidly within the first 10 minutes. Lower frequencies (0.5 and 0.2 Hz) altered cellular responses much less than 1 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by in vivo LFP data presented in Figure 6 showing frequency-dependent changes in evoked response amplitudes over time. The AUC analysis provides quantitative support. However, the mechanisms underlying these differential responses are not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C63"
+    ],
+    "result": "In acute slice experiments, photostimulation of entorhinal fibers induced robust depolarization of DGCs (5.1 \u00b1 1.0 mV, n=14 cells). During 10 minutes of 1 Hz oLFS, evoked synaptic responses were strongly depressed (EPSP amplitude reduced to 28.5 \u00b1 9.9% of original, n=14 cells), and discharge probability was significantly reduced in both control (1.8 \u00b1 0.5 to 0.24 \u00b1 0.15 APs/trial, p<0.05, n=11 cells) and KA mice (3.5 \u00b1 0.6 to 2.1 \u00b1 0.5 APs/trial, p<0.05, n=19 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C63 are supported by whole-cell and cell-attached patch-clamp recordings from acute slices presented in Figure 7 with appropriate statistical analysis. The slice experiments provide crucial mechanistic insights into how LFS reduces network excitability. Sample sizes are adequate for electrophysiology experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "DGCs were overall more excitable in KA mice compared to control mice, as reported previously in this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by a citation to Janz et al. 2017a and is consistent with the higher baseline discharge probability shown in Figure 7D (3.5 \u00b1 0.6 APs/trial in KA vs. 1.8 \u00b1 0.5 in control). This validates the epileptic phenotype of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Intrinsic properties of DGCs in KA mice (resting membrane potential, capacitance, membrane resistance, rheobase) were not altered by the 10-minute oLFS stimulation protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by whole-cell recording data showing no significant changes in intrinsic properties before and after oLFS (n=27 control cells, n=14 after oLFS). This suggests that LFS effects are mediated by synaptic rather than intrinsic mechanisms, though statistical tests are not explicitly reported for these comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "KA-treated mice have strongly reduced inhibition in the sclerotic hippocampus (sIPSC frequency: 3.9 \u00b1 0.5 Hz in saline vs. 0.4 \u00b1 0.2 Hz in KA, p<0.05; sIPSC amplitude: 24.0 \u00b1 2.1 pA in saline vs. 80.4 \u00b1 15.2 pA in KA, p<0.05), which is most likely due to the loss of inhibitory interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by sIPSC recording data in Figure 7E with appropriate statistical analysis (Mann-Whitney test, p<0.05). The reduced frequency and increased amplitude of sIPSCs are consistent with interneuron loss shown histologically (C30). The inference about causation is reasonable but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "During 2 weeks of daily 1 Hz eLFS (1 hour per day), spontaneous epileptiform activity was successfully suppressed in each session but returned to reference levels within 2 hours post-stimulation. Epileptiform activity remained unchanged in intermittent reference recordings compared to the first reference recording.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by repeated LFP recording data over 2 weeks presented in Figure 8B-H with appropriate statistical analysis. The stability of both the suppressive effect during stimulation and the baseline activity between sessions demonstrates the reproducibility and lack of desensitization over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Three hours of continuous eLFS effectively reduced the high-load burst ratio over the entire stimulation period, with activity reoccurring at a lower level within 1 hour after stimulation (two-way ANOVA with Tukey's multiple comparison test, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by data in Figure 8I with appropriate statistical analysis. The extended stimulation period demonstrates that the suppressive effect can be maintained for longer durations, which is important for clinical translation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "An intermittent stimulation protocol (initial 30 min eLFS followed by four cycles of 10 min off/10 min on) abolished epileptic spikes during the stimulation cycle, with the epileptic spike rate starting to rise again approximately 40 minutes after the last 10-minute eLFS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by data in Figure 8K-L showing that discontinuous stimulation can maintain seizure suppression. This is clinically relevant as it could reduce power consumption and potential side effects. However, the sample size and number of replicates are not clearly stated for this experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Mice with misplaced stimulation electrodes (not in the dentate gyrus, n=3) showed no reduction in high-load burst ratio and only a slight reduction in epileptic spike rate during eLFS (pre: 0.59 \u00b1 0.05 Hz vs. eLFS: 0.43 \u00b1 0.05 Hz, p<0.01), suggesting that the dentate gyrus is an important target for successful seizure interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by control data in Figure 8\u2014figure supplement 1 showing minimal effects with off-target stimulation. This anatomical specificity control strengthens the conclusion that DGC activation is critical for the observed effects. However, the sample size is small (n=3) and the inference about mechanism (C73) is reasonable but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors contextualize their findings by noting that in human MTLE patients, granule cell dispersion is related to hilar cell loss, DGCs survive in sclerotic tissue, the sclerotic hippocampus is critically involved in seizure generation, and epileptiform activity often spreads to the contralateral hippocampus. They observed that epileptiform activity propagated less frequently to the contralateral hippocampus in mice with strong sclerosis than in those with mild sclerosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by appropriate citations to human and animal studies (Houser 1990, Thom 2014, Krook-Magnuson et al. 2015, Pallud et al. 2011, Walker 2015, Gloor et al. 1993, Mintzer et al. 2004, Janz et al. 2018, Meier et al. 2007) and by data in Figure 3 showing the relationship between sclerosis severity and contralateral spread.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Following KA injection, CA1 and CA3 pyramidal cells are extensively lost while DGCs and their entorhinal afferents are preserved. By positioning the optic fiber above the molecular layer of the dentate gyrus, the study stimulated mainly the perforant path, with CA2 neurons, surviving CA3 pyramidal cells, or temporoammonic fibers most likely not activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by citations to previous studies (Bouilleret et al. 1999, Marx et al. 2013, Janz et al. 2017a, 2018) and by the experimental design shown in Figure 4\u2014figure supplement 2. The estimation of light penetration (C113) supports the inference about spatial specificity, though some off-target activation cannot be completely ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors place their work in context by noting that 1 Hz LFS has been used previously to alleviate epileptiform activity in vitro and in vivo in various models, and that most optogenetic studies decreased network activity by inhibiting principal cells or activating GABAergic interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by appropriate citations to prior literature (Shiri et al. 2017, Toprani and Durand 2013, Albensi et al. 2004, Rashid et al. 2012, Xu et al. 2016, Kokaia et al. 2013, Krook-Magnuson et al. 2013, Ladas et al. 2015, Ledri et al. 2014, Bui et al. 2018). This contextualizes the novelty of their approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "LFS is not effective in inducing synaptic depression in sclerotic human hippocampal slices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by a citation to Beck et al. 2000. This is used to argue against synaptic depression as the sole mechanism of LFS effects in their model, though the authors acknowledge that some synaptic depression does occur in their experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose that LFS drives the hippocampal network into a stable state, reducing seizure probability while ongoing. This hypothesis is supported by work showing that evoked interictal-like discharges elicit anti-epileptic effects contingent on network state, stimulus amplitude, and frequency. They suggest oLFS may introduce glutamatergic synaptic perturbation followed by transient suppression of neuronal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C96 represent mechanistic hypotheses supported by citation to Chang et al. 2018 and other studies (de Curtis et al. 2001, de Curtis and Avanzini 2001, Muldoon et al. 2015). While the proposed mechanisms are plausible and consistent with the data, they remain speculative and would require additional experiments to definitively test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "LFS improved cognitive function in pilocarpine-injected rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by citation to Wang et al. 2020. This is mentioned to address potential concerns about LFS impairing hippocampal function, though the authors acknowledge that future research will need to address this question in their specific model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors conclude that 1 Hz LFS in the dentate gyrus is a highly efficient approach to interfere with seizure generation in the MTLE mouse model with hippocampal sclerosis. They demonstrate that 1 Hz LFS for 1 hour resulted in almost complete suppression of spontaneous seizures in both hippocampi, this effect remained stable over several weeks of daily stimulation, 30 minutes of LFS before a pro-convulsive stimulus prevented seizure generalization, and acute slice experiments revealed reduced efficacy of perforant path transmission onto granule cells. The effect was largely driven by repetitive activation of DGCs in the sclerotic seizure focus, and the findings may pave the way for effective seizure control in drug-resistant epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C98-C100 represent the main conclusions of the study and are well-supported by the comprehensive experimental data presented throughout the manuscript (Figures 4-8). The multi-level approach (in vivo LFP recordings, behavioral assessments, acute slice electrophysiology) provides converging evidence. The conclusion about clinical translation potential (C100) is appropriately cautious (\"may pave the way\") given that this is a preclinical study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The methods section describes the experimental procedures including animal subjects (adult male transgenic mice, n=96 total), KA and virus injections, electrode and optic fiber implantations, optogenetic and electrical stimulation protocols, and recording session designs. Appropriate ethical approvals were obtained, and exclusion criteria are clearly stated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C128 describe the experimental methods in detail with appropriate citations to previous studies for established procedures. The methods appear rigorous with clear descriptions of stereotaxic coordinates, stimulation parameters, and session designs. Exclusion criteria are transparent (C105, C110, C143). However, some details about randomization and blinding are limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The methods section describes tissue preparation, histological procedures (FISH, immunohistochemistry), image acquisition, and quantitative analysis of hippocampal sclerosis. Masking was performed for histological quantification, with the evaluator unaware of KA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C142 describe histological methods with appropriate detail and citations to established protocols (Kulik et al. 2003, Schindelin et al. 2012). The inclusion of blinding (C137) for histological analysis is a strength. The quantification methods for GCD, cell loss, and interneuron counts are clearly described and appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The methods section describes the automated analysis of epileptiform activity using a custom algorithm (Heining et al. 2019) that detects spikes, groups them into bursts, extracts feature vectors, and classifies bursts using a self-organizing map (SOM) into low-, medium-, and high-load categories. The high-load burst ratio was calculated as the fraction of time spent in high-load bursts. Automatic detection was confirmed by visual inspection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C154 describe the computational analysis methods with appropriate citation to the algorithm development (Heining et al. 2019). The use of an automated, objective classification system is a strength. Visual confirmation of automated detection (C151) adds validation. Exclusion criteria for low-activity sessions (C152) are clearly stated. However, details about algorithm validation and inter-rater reliability are limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The methods section describes acute slice electrophysiology procedures including slice preparation with NMDG-based protective solution, whole-cell patch-clamp recordings in the presence of GABAA and GABAB receptor blockers, extracellular stimulation protocols, and photostimulation parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 describe electrophysiology methods with appropriate detail and citation to previous work (Elgueta et al. 2015). The use of NMDG-based protective solution for slice preparation is a modern best practice. Recording conditions and stimulation parameters are clearly specified. The methods appear rigorous and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Statistical analyses were performed using Prism 8 software with appropriate tests for different comparisons: paired or unpaired Student's t-test for two groups, one-way or two-way ANOVA with Tukey's post-hoc test for multiple groups, REML for missing values, and Pearson's correlation for correlations. Significance thresholds were set at p<0.05, p<0.01, and p<0.001.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C166 describe statistical methods that appear appropriate for the types of data and comparisons made. The use of REML for missing data (C164) is appropriate. However, there is no mention of corrections for multiple comparisons across the many tests performed, which could inflate Type I error rates. Sample sizes vary across experiments and are not always clearly justified.",
+    "result_type": "MINOR"
+  }
+]

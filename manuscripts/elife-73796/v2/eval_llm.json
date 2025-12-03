@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Pancreatic cancer is characterized by a deadly prognosis, early metastasis, and a tumor microenvironment where tumor-associated macrophages (TAMs) mediate therapeutic resistance through multiple mechanisms including chemoresistance, immunosuppression, and promotion of tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are all supported by appropriate citations to prior literature. These claims establish the clinical context and prior knowledge about pancreatic cancer and TAMs, providing the rationale for the current study. All statements are appropriately attributed to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "TAMs have traditionally been classified as M2-like macrophages, but the diverse stimuli in the tumor microenvironment polarize them into cells with properties distinct from classical M1/M2 subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by citations and represent established understanding in the field. This provides the conceptual framework for why the authors developed their TEM model to better characterize TAM properties beyond classical polarization paradigms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors developed an in vitro tumor-educated macrophage (TEM) model by polarizing bone marrow-derived macrophages with conditioned media from a doxycycline-inducible mutant Kras pancreatic cancer cell line, and validated that TEMs do not fit classical M1 or M2 marker profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C27 describe the experimental model system and initial validation. The use of the iKras*3 cell line is well-documented (C24-C25), the experimental protocol is clearly described (C21-C23), and validation by qPCR shows TEMs are distinct from M1/M2 phenotypes (C26-C27). The model is appropriately designed to address the research question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Multiomic profiling (transcriptomics, proteomics, metabolomics) with principal component analysis demonstrated that M1 macrophages have the most distinct molecular profile, while TEMs are more similar to M2 than M1 macrophages, with appropriate validation of classical markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by the PCA analysis shown in Figure 1B and validation of known markers in Figures 1C-D. The clustering of biological replicates (C28) indicates high-quality data. The observations about M1 distinctness (C29) and TEM similarity to M2 (C30) are consistent with prior literature (Halbrook et al., 2019; Arlauckas et al., 2018) and visible in the PCA plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Pathway analysis revealed that TEMs are enriched in metabolic pathways (glycolysis, arginine metabolism, fatty acid metabolism) and mTOR signaling, while showing upregulation of cytokine receptors Ccr1 and Ccr5 but lacking expression of important IL4 targets, distinguishing them from M2 macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are supported by GSEA analysis (Figure 1\u2014figure supplement 1D), RNA-seq and proteomics data (Figures 2A, 1D-E). The metabolic pathway enrichment is consistent with prior work (C34, Halbrook et al., 2019). The upregulation of Ccr1/Ccr5 (C37-C38) and lack of IL4 targets (C40) are supported by multiple data types and provide clear molecular distinctions from M2 macrophages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TEMs contain the greatest proportion of upregulated metabolic enzymes among macrophage subtypes, with TXNIP (a glucose import inhibitor), ACLY (linking metabolism to gene expression via histone acetylation), and ARG1 identified as top markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by differential expression analysis (Figure 2B-C) and are appropriately contextualized with citations about protein function (C43-C44: Lee et al., 2017; Wu et al., 2013; Zaidi et al., 2012). The identification of these three markers as key metabolic regulators is well-supported by the multiomic data and represents a novel characterization of TEMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Correlation analysis revealed that ACLY correlates with SLC25A1 (mitochondrial citrate transporter) and citrate abundance, ARG1 correlates with PIK3CD (PI3K catalytic subunit), and TXNIP-correlated proteins are enriched in metabolic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by correlation analysis (Figure 2E) and metabolomics data (Figure 2\u2014figure supplement 2A). The citrate-SLC25A1-ACLY pathway (C46-C48) is validated by comparison to atherosclerotic plaque macrophages (Baardman et al., 2020). The ARG1-PIK3CD correlation (C49) and TXNIP functional associations (C50, STRING analysis p~0.0001) provide mechanistic insights into TEM regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Single-cell RNA sequencing of human pancreatic tumors verified expression of TEM markers (ACLY, TXNIP, PIK3CD) and PI3K-related signatures in human TAMs, demonstrating clinical relevance of the TEM model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by scRNA-seq analysis of human tumors (Figures 3B-C, Figure 3\u2014figure supplement 1). The expression of TEM markers in human TAMs validates the relevance of the murine TEM model. The enrichment of PI3K-related genes in PI3K-Akt signaling pathway (C54, Supplementary file 3) strengthens the mechanistic hypothesis about PI3K involvement in TAM polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Turning off mutant Kras expression in pancreatic cancer cells (confirmed by decreased ERK phosphorylation) resulted in broad changes in macrophage gene and protein expression, with decreased expression of key TEM markers (Arg1, Acly, Txnip, Ccr1, Ccr5) and enrichment in metabolic and cytokine signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by Western blot validation of Kras activity (Figure 4B), differential expression analysis (Figure 4C-D), and GSEA (Supplementary file 4). The Kras-dependent changes in TEM markers are statistically significant and consistent with the hypothesis that cancer cell Kras activity drives TEM polarization. The pathway enrichments align with prior characterization (C58, Halbrook et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Mutant Kras activity in pancreatic cancer cells drives production of GM-CSF (>10-fold increase in expression, >1000-fold in secretion) and lactate, which are known regulators of macrophage ARG1 and TXNIP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by qPCR, ELISA (Figure 5A), and metabolomics data (Figure 5B, Figure 5\u2014figure supplement 1). The dramatic Kras-dependent changes in GM-CSF and lactate are well-documented with appropriate citations (C61-C63). The findings are validated in multiple pancreatic cancer cell lines (C65, Figure 4\u2014figure supplement 1C), strengthening the generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNA-seq analysis confirmed that Kras-On conditioned media upregulates GM-CSF-responsive genes (Cish, Pim1, Ccl17), lactate-responsive genes (Il1b, Il6), and pH-dependent genes in macrophages, supporting the hypothesis that Kras-dependent GM-CSF and lactate production modifies macrophage phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by RNA-seq data (Figures 5C-F) and appropriate citations for gene responsiveness (Lehtonen et al., 2002; Samuvel et al., 2009; El-Kenawi et al., 2019; Dichtl et al., 2021). The patterns of gene expression changes are consistent with known effects of GM-CSF, lactate, and pH on macrophages, providing strong mechanistic support for the role of these factors in TEM polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Treatment of naive macrophages with GM-CSF and lactate in combination showed synergistic effects on Arg1 and Txnip expression, while GM-CSF alone increased Acly, Ccr1, and Ccr5 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by qPCR data (Figure 5G). The synergistic effect of GM-CSF and lactate on Arg1 and Txnip (C75) is a key finding that demonstrates these factors work together to drive TEM polarization. The GM-CSF-specific effects on other markers (C76) further define the molecular mechanisms of TEM polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Western blotting demonstrated that the PI3K/AKT pathway strongly activates ARG1 expression in TEMs, with AKT phosphorylating ACLY to modify histone acetylation and impact Arg1 expression, as confirmed by decreased ACLY phosphorylation upon PI3K/AKT inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by Western blot data (Figure 6A, Figure 6\u2014figure supplement 1A) and appropriate citations (Zhan et al., 2019; Hamilton, 2019; Covarrubias et al., 2016). The demonstration that PI3K/AKT inhibition decreases both ARG1 expression and ACLY phosphorylation (C79, C81) provides strong mechanistic evidence for this signaling pathway in TEM polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "GM-CSF neutralization dramatically decreased ARG1 expression and phosphorylation of AKT and ACLY, with modest decreases in ACLY and TXNIP expression, confirming that GM-CSF activates macrophage Arg1 expression through PI3K signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by Western blot data (Figure 6B, Figure 6\u2014figure supplement 1A-B). The dramatic decrease in ARG1 upon GM-CSF neutralization (C82) and corresponding decreases in AKT and ACLY phosphorylation (C83) provide strong evidence that GM-CSF is a key upstream regulator of the PI3K-AKT-ACLY-ARG1 axis in TEMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Metabolomics analysis of GM-CSF-neutralized TEMs showed increased citrate (potentially reflecting decreased ACLY activity) but decreased TCA cycle metabolites (malate, itaconate, glutamate, aspartate), demonstrating that GM-CSF stimulation of PI3K signaling maintains TEM metabolic homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by metabolomics data (Figure 6D). The increase in citrate upon GM-CSF neutralization (C85) is consistent with decreased ACLY activity, while the decreases in other TCA cycle metabolites (C86) suggest broader metabolic disruption. This provides strong evidence that GM-CSF-PI3K signaling is essential for maintaining TEM metabolic function (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The multiomic characterization revealed that TEMs are distinct from classical macrophage subtypes, with Txnip, Acly, and Arg1 as unique metabolic contributors, and these markers along with PI3K-related genes are expressed in human pancreatic TAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 summarize the major findings from the multiomic analysis and human validation. These summary claims are well-supported by the data presented throughout the manuscript and appropriately synthesize the key discoveries about TEM molecular characteristics and their clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The most distinct TEM markers are dependent on Kras expression in pancreatic cancer cells, which drives release of GM-CSF and lactate, leading to TEM polarization through both metabolic crosstalk and growth factor signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 summarize the mechanistic findings linking cancer cell Kras activity to TEM polarization. These claims are well-supported by the Kras-On/Off experiments and appropriately cite prior work (Colegio et al., 2014) to contextualize the findings within the broader literature on TAM polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Both PI3K-AKT inhibition and GM-CSF neutralization reduced Arg1 expression and altered TEM metabolism (increased citrate), demonstrating that mutant Kras drives TEM polarization primarily through increased GM-CSF and lactate release from pancreatic cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 summarize the key mechanistic findings from the inhibitor and neutralization experiments. These claims are well-supported by the Western blot and metabolomics data and represent the central mechanistic conclusion of the study linking cancer cell Kras activity to TEM polarization via GM-CSF and the PI3K pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors acknowledge limitations including that the epithelial-myeloid axis is only one component of the complex pancreatic tumor microenvironment, which also includes fibroblasts and is characterized by poor vasculature, hypoxia, and low-nutrient availability not well-recapitulated in the cell culture model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 appropriately acknowledge the limitations of the study. The authors correctly note that their in vitro model does not capture the full complexity of the tumor microenvironment, including contributions from fibroblasts (C107, supported by Helms et al., 2020; Garcia et al., 2020) and the effects of hypoxia and nutrient limitation (C109-C110, supported by Kamphorst et al., 2015). These are reasonable and important caveats.",
+    "result_type": "MINOR"
+  }
+]

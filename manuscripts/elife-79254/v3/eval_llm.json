@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study collected peripheral blood from six healthy donors at three time points (baseline, 1 month, 12 months), isolated memory B cells (CD19+ CD20+ CD27+), plasmablasts (CD19low/+ CD20- CD27high CD138-), and plasma cells (CD19low/+ CD20- CD27high CD138+) by FACS, and performed full-length IGH repertoire sequencing using 5'-RACE-based protocol with UMI-based error correction. From 83 cell samples, 1.06\u00d710^7 unique IGH cDNA molecules representing 8.4\u00d710^5 unique IGH clonotypes were obtained, with median clonotype numbers of 20,072 per 5\u00d710^4 memory B cells, 628 per 1\u00d710^3 plasmablasts, and 800 per 1\u00d710^3 plasma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 and C80-C90 collectively describe a well-designed longitudinal study with appropriate methodology. The FACS markers used are standard for these B cell subsets, the sequencing approach is validated (5'-RACE with UMI-based error correction), and rarefaction analysis confirms adequate sequencing depth for PBL and PL (C12), though not for Bmem (C11). The bioinformatics pipeline using established tools (MIGEC, MiXCR, TIgGER, Change-O, RAxML) is appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C91"
+    ],
+    "result": "Memory B cells are predominantly IgM (>50% of repertoire), while plasmablasts and plasma cells are dominated by IgA, with IgG as the second most prevalent isotype in ASCs. IgD represents a substantial fraction of memory B cells but <1% of ASC clonotypes. These distributions based on unique clonotypes roughly correspond to flow cytometry data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 describe isotype distributions across cell subsets with quantitative data shown in Figure 1B. The comparison to flow cytometry data (C91) provides external validation. The finding that isotype distributions based on clonotypes mirror those based on cDNA molecules suggests minimal clonal expansion bias, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C92"
+    ],
+    "result": "Somatic hypermutation levels are significantly higher in ASC subsets compared to memory B cells. Within memory B cells, switched isotypes (IgG, IgA) have higher SHM levels than IgM and IgD. Notably, IgD clonotypes in ASCs have significantly higher SHM levels than in memory B cells, and plasmablasts show higher SHM rates than plasma cells for IgM, IgA, and IgG isotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe SHM patterns with statistical support (Figure 1C, Figure 1\u2014figure supplement 3). The hypothesis in C92 about PBLs continuing to acquire mutations after optimal affinity is speculative but reasonable given the data. The observation that PBLs have higher SHM than PLs is interesting and well-supported, though the mechanistic interpretation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Plasmablasts have significantly longer CDR3 regions compared to memory B cells on average in every isotype except IgE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by Figure 1D with statistical testing. The finding is specific and quantitative, though the biological significance of this difference is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "IGHV gene segment usage is highly similar between memory B cells, plasmablasts, and plasma cells (Pearson correlation >0.95, p<0.01), but differs significantly from naive B cells. IGHV segments cluster by sequence similarity and show concordant over- or under-representation within clusters. This pattern suggests that germline-encoded BCR regions (CDR1 and CDR2) determine initial B cell recruitment to immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe IGHV usage patterns with strong statistical support (Figure 1E, Figure 1\u2014figure supplement 4). The high correlations (>0.95) between antigen-experienced subsets and the clustering analysis are well-documented. The interpretation in C94 is reasonable but inferential. Claims C93 and C95 provide literature support for the findings, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C96"
+    ],
+    "result": "Memory B cell repertoires show high stability over time (low dissimilarity between samples collected at 1 month or 1 year intervals), while plasmablast and plasma cell repertoires are transient in peripheral blood, with lower clonal overlap at more distant time points (11-12 months) compared to closer time points (1 month).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 describe temporal dynamics with quantitative support from Figure 2A-B and Figure 2\u2014figure supplement 1A. The finding of memory B cell stability is consistent with prior work (C96), expanding observations to younger donors. The transient nature of ASCs in peripheral blood is expected but well-documented here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Among the most abundant memory B cell clonotypes, inter-individual sharing is significantly higher than for randomly sampled clonotypes, naive B cell repertoires, or in silico-generated repertoires, indicating functional convergence. Public clonotypes are hypermutated (though slightly less than private clonotypes), show no full-length nucleotide sequence sharing, and are more likely to persist across time points. The study measured 0.06% repertoire overlap in memory B cells using the same method as Briney et al.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 describe clonotype sharing with appropriate controls (random sampling, naive repertoires, in silico generation) shown in Figure 2C-E. The comparison to published studies (C97-C99) provides context. The absence of full-length nucleotide sharing (C34) while observing amino acid sharing is expected and supports convergent selection. The finding that public clonotypes persist longer (C37) is biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C118"
+    ],
+    "result": "Analysis of 190 clonal lineages (\u226520 unique clonotypes) identified two distinct clusters using k-means clustering: HBmem (138 lineages, predominantly memory B cells with IgM) showing stable temporal dynamics and high persistence, and LBmem (52 lineages, predominantly ASCs with IgG/IgA) showing burst-like dynamics with low persistence. HBmem lineages are enriched in persistent clonotypes and public lineages (29.7% vs 3.8% in LBmem), while persistence is not associated with lineage size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C51 describe clonal lineage clustering with quantitative support from Figure 3 and supplements. The k-means clustering is based on biologically relevant features (cell subset and isotype composition). The temporal dynamics are well-documented (C43), and the persistence metric is clearly defined. The lack of association between persistence and lineage size (C48) rules out sampling bias. The high correlation in replicate samples (C47) validates the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "LBmem lineages have fivefold higher G-MRCA distance than HBmem (median 0.044 vs 0.008) and lower pairwise divergence (median 0.11 vs 0.13), suggesting recent expansion from pre-existing hypermutated memory. In most LBmem lineages (38/52), memory B cell clonotypes were observed at the preceding time point. One clear example of HBmem-to-LBmem transition was identified, similar to reactivated persistent memory observed in vaccination studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe phylogenetic features with quantitative support from Figure 4. The G-MRCA distance difference is substantial and statistically significant. The observation of memory B cells preceding LBmem expansion (C53) supports the reactivation hypothesis. The single clear example of transition (C55, Figure 4F) is well-documented. Claims C100-C102 provide literature support for similar observations. However, the conclusion that LBmem arises from HBmem (C103) is inferential and based on limited direct evidence (one clear example).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C104",
+      "C105"
+    ],
+    "result": "Both HBmem and LBmem lineages show positive selection on G-MRCA branches, but the fraction of adaptive substitutions (\u03b1) is higher in LBmem (\u03b1=0.65 vs 0.58, p<10^-15 vs p<10^-6). Individual LBmem lineages have higher median \u03b1 (0.57 vs 0.18), suggesting that LBmem cells underwent additional rounds of affinity maturation after reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 describe selection analysis using McDonald-Kreitman framework with strong statistical support (Figure 5B). The higher \u03b1 in LBmem is consistent across different analytical approaches (Figure 5\u2014source data 2). The hypothesis in C104 is reasonable given the data, though it remains inferential. Claim C105 provides supporting evidence from literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C106",
+      "C111",
+      "C119",
+      "C120"
+    ],
+    "result": "Post-MRCA evolution shows \u03c0N/\u03c0S <1 in both clusters, indicating negative selection, but stronger in LBmem. Site frequency spectrum analysis reveals that LBmem has higher proportions at high frequencies and significantly higher normalized \u03c0N/\u03c0S in high-frequency bins (>60%), indicating both stronger positive and negative selection. This pattern suggests that LBmem reactivation is coupled with new rounds of affinity maturation, while HBmem evolved more neutrally under weaker negative selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe selection patterns with quantitative support from Figure 5C-E. The SFS analysis is appropriate for detecting selection, and the normalized \u03c0N/\u03c0S approach effectively distinguishes positive from negative selection. The interpretation in C63 and C111 that reactivation involves affinity maturation is well-supported by the combined evidence. Claims C106 and C120 provide reasonable interpretations of the negative selection patterns. However, the conclusion remains inferential as direct evidence of germinal center involvement is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study focused on three major antigen-experienced cell subsets defined by surface markers from peripheral blood, excluding tissue-resident cells. Analysis focused on the most expanded clonotypes and clonal lineages. Allergy status did not affect data structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 acknowledge study limitations. The focus on peripheral blood (C108) is a significant limitation as it excludes bone marrow plasma cells. The focus on expanded clonotypes (C109) is appropriate for the questions asked but limits generalizability. The finding that allergy status doesn't affect results (C110, Appendix 1) is important given that 4/6 donors had allergies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C121",
+      "C122"
+    ],
+    "result": "The study demonstrates interconnection of B cell subsets at a clonal level, B cell memory convergence in unrelated donors, long-term persistence of memory-enriched clonal lineages in peripheral blood, and signs of positive selection in both memory- and ASC-dominated lineages. ASC clonotypes show clonal relatedness to memory B cells but are transient in peripheral blood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C122 summarize the main findings of the study. These conclusions are well-supported by the collective evidence from repertoire characterization, temporal dynamics, clonal lineage analysis, and selection analysis. The interconnection of subsets (C112, C116) is demonstrated through clonal lineage composition. Memory convergence (C113, C122) is shown through public clonotype analysis. Persistence (C114, C121) is documented through temporal tracking. The transient nature of ASCs (C117) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The introduction provides background on B cell biology, BCR diversity, affinity maturation, isotype switching, and prior repertoire sequencing studies. It notes that BCR repertoires of antigen-experienced B cell subsets are usually studied in pathologic conditions or vaccination, with little data in the absence of acute or chronic immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C79 provide background knowledge and literature context. These are appropriately cited and establish the rationale for the study. The identification of a gap in knowledge (C79) justifies the study design focusing on healthy donors without acute immune challenges.",
+    "result_type": "MINOR"
+  }
+]

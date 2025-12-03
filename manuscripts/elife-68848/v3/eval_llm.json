@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "C. elegans cultivated at 25\u00b0C exhibit positive thermotaxis on a 19-23\u00b0C gradient, characterized by biased random walk with lengthened runs in favorable directions and gradual reorientation of heading angles toward warmer temperatures. Without a temperature gradient, no modulation of run length or heading angle was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are well-supported by behavioral data in Figure 1A-B showing trajectories, run duration as a function of direction, and velocity as a function of heading angle. The control condition (constant temperature) appropriately demonstrates the specificity of the response to thermal gradients. The results are consistent with cited prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "During thermotaxis, most forward runs involve periods of both warming and cooling stimuli due to frequent changes in movement direction, yet C. elegans sustains forward movement up temperature gradients despite transient cooling fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by behavioral analysis in Figure 1C-D and Figure 1\u2014figure supplement 1, showing the distribution of temperature changes (dT/dt) during forward runs. The data demonstrate that animals experience both warming and cooling during runs that ultimately move them up the gradient, establishing the behavioral context for the neural mechanism studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "AFD thermosensory neuron activity phase-locks to temperature oscillations (rising upon warming, falling upon cooling) but does not covary with motor state transitions, indicating that motor commands arise downstream of AFD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by calcium imaging data in Figure 2C-D showing AFD activity correlates with temperature but not motor state. The inference that motor commands arise downstream (C21) is logical given the lack of motor state encoding in AFD. This establishes AFD as a pure sensory neuron in the circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23"
+    ],
+    "result": "AIY interneuron encodes both temperature and motor state information: during forward movements, AIY calcium activity increases upon warming and decreases upon cooling with substantial variability, while during reversals, thermosensory responses are largely absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C23 are well-supported by calcium imaging data in Figure 2E-G and Figure 3A-B. The motor state-dependent gating of thermosensory responses in AIY is clearly demonstrated through event-triggered averages and cross-correlation analysis. This is a key finding showing mixed sensory-motor encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Motor circuit neurons (AVA, RIM, RME, SMDD, SMDV) exhibit little to no phase-locked response to thermosensory stimulation but reliably encode forward versus reversal movement states, with AVA showing high activity during reversals and low activity during forward runs, RIM being selectively active during reversals and positively correlated with AVA, and head motor neurons being selectively active during forward runs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are supported by calcium imaging data in Figure 2E-F showing activity patterns and cross-correlations. The characterization of motor circuit activity is consistent with prior literature (C27, C31). This establishes the motor state encoding in downstream neurons and sets up the contrast with AIY's mixed encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "For positive thermotaxis, the sensorimotor transformation progresses through three layers: thermosensory neuron (AFD) encodes only thermal stimuli, first-layer interneuron (AIY) encodes both thermal stimuli and motor states, and premotor/motor neurons primarily encode motor state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is a synthesis of the calcium imaging results from Figure 2, appropriately summarizing the hierarchical organization of sensory and motor information processing. This inference is well-supported by the combined data from C19-C31.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Under constant temperature, all six neurons examined continue to be modulated by locomotory state in the same way as under oscillating temperature, with pairwise cross-correlations remaining unchanged, indicating that motor state encoding does not require thermosensory input and may reflect an intrinsic circuit property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by calcium imaging data in Figure 2H-I comparing oscillating versus constant temperature conditions. The control experiment appropriately demonstrates that motor state encoding persists without thermal stimulation, supporting the inference of an intrinsic circuit property (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "AIY activity consistently rises at the beginning of forward runs and decays at the onset of reversals under both constant and oscillating temperatures, exhibiting persistent activation with duration that reliably coincides with the forward run state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by event-triggered averages in Figure 3A-B and correlation analysis in Figure 3\u2014figure supplement 1. The data clearly show the temporal relationship between AIY activity and motor state transitions, establishing AIY as a key node linking sensory and motor information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "AIY activity remains strongly coupled to motor state despite blocking vesicle release from AIY through cell-specific expression of tetanus toxin, implying that AIY must receive the motor state signal rather than generating it through feedforward output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by calcium imaging in AIY::TeTx animals (Figure 3C). The logic is sound: if blocking AIY output does not eliminate motor state encoding in AIY, then AIY must be receiving this information. This is a critical experiment ruling out feedforward mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "C. elegans movement is not required for AIY activity to reflect motor state, arguing against proprioception as the mechanism underlying the calcium response in AIY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by calcium imaging in immobilized animals (Figure 3D, Figure 3\u2014figure supplement 2). The experiment appropriately rules out proprioception by showing motor state encoding persists without actual movement. This is an important control for interpreting the motor state signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C4",
+      "C5"
+    ],
+    "result": "Ablation of RIM, but not AIB, AVA, or AVB alone, eliminates motor state representation in AIY, demonstrating that RIM is required for the corollary discharge signal to AIY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C4-C5 are supported by systematic ablation experiments in Figure 4A-B and Figure 4\u2014figure supplement 1. The specificity of the RIM requirement is demonstrated through multiple controls (ablating other neurons does not have the same effect). This identifies RIM as a critical node in the corollary discharge pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C3"
+    ],
+    "result": "Optogenetic activation of AVB triggers an increase in AIY calcium levels while activation of AVA triggers a decrease, but when RIM is ablated, AIY calcium signals no longer respond to optogenetic activation of either AVA or AVB, demonstrating that the motor state representation in AIY is a corollary discharge signal and that RIM is part of the CD pathway from the motor circuit to AIY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C3 are supported by optogenetic experiments in Figure 4C-F. The bidirectional control (AVB increases, AVA decreases AIY activity) and the loss of response in RIM-ablated animals provide strong causal evidence for RIM's role in relaying motor information to AIY. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Without RIM, AIY activity no longer reflects motor state, but premotor interneurons AVA continue to encode motor states (albeit with reduced bimodal activity), demonstrating that RIM is not essential for generating motor commands but is necessary to relay motor information to AIY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by calcium imaging in RIM-ablated animals (Figure 5A, C). The persistence of motor states in AVA after RIM ablation appropriately demonstrates that RIM is not required for motor command generation, only for feedback to AIY. This clarifies RIM's specific role in the circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "RIM expresses VGLUT3/EAT-4 and synthesizes tyramine. While AIY activity co-varies with motor state in all synaptic transmission mutants tested, the difference between forward run and reversal states is less distinct in mutants defective for vesicular monoamine transport (VMAT/cat-1) or tyramine synthesis (TDC/tdc-1), and blocking vesicle fusion in RIM attenuates motor state representation in AIY. Since perturbation of chemical synaptic transmission does not fully abolish motor-related activity in AIY, neuronal communication independent of classic chemical synaptic transmission is likely involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by mutant analysis in Figure 4\u2014figure supplement 2. The partial effects of disrupting chemical transmission suggest multiple mechanisms may be involved. The inference that non-classical transmission is involved (C61) is reasonable given the incomplete effects, though the specific mechanisms remain unclear. This is appropriately presented as exploratory rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The joint representation of sensory and motor signals in AIY arises from separate sources: feedforward input from AFD and feedback from the motor circuit that is dependent on RIM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is a synthesis of multiple experimental results (AFD imaging, RIM ablation, optogenetics) and represents a well-supported model of how AIY integrates information. The inference is logical and consistent with all the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In RIM-ablated animals subjected to oscillating temperatures, AIY activity is no longer coupled to motor state but instead reliably tracks temperature fluctuations during both forward and backward movements, with shortened activation duration. Thermosensory oscillations are also detected in AVA and motor neurons (RME, SMDV), suggesting that loss of RIM-dependent motor signal results in a sensorimotor circuit more susceptible to fluctuations in thermosensory input, with thermosensory inputs readily propagated to the motor circuit. The RIM-dependent CD may play an important role in sustaining neural activity states through fluctuating sensory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by calcium imaging in RIM-ablated animals under oscillating temperature (Figure 5A-B, Figure 5\u2014figure supplement 1). The appearance of thermosensory responses in motor neurons after RIM ablation is a key observation supporting the filtering/gating function of the CD pathway. The inferences about circuit susceptibility (C66-C68) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "RIM-ablated animals exhibit reduced thermotaxis bias compared to wild-type, with specific defects in sustaining forward locomotion when moving up the thermal gradient, while their ability to gradually modify heading angle during forward runs remains intact. At constant temperature, run durations are similar between wild-type and RIM-ablated animals, indicating that loss of RIM specifically disrupts the ability to sustain forward runs up temperature gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by behavioral assays in Figure 6A-C and Figure 6\u2014figure supplement 1. The specificity of the defect (reduced run persistence on gradients but not at constant temperature, intact klinotaxis) is well-demonstrated and links the neural mechanism to behavioral function. This is a critical result connecting circuit function to behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cooling induces reversals at higher probability in RIM-ablated animals compared to wild-type, particularly for persistent cooling periods lasting 7-30 seconds. Forward runs in RIM-ablated animals are more likely to end after a period of cooling regardless of run length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by detailed behavioral analysis in Figure 6D-F and Figure 6\u2014figure supplement 1E. The quantification of cooling effects on run termination provides strong evidence that RIM-dependent feedback filters out transient cooling stimuli, supporting the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A computational model with positive feedback (g=1) exhibits stable high and low states with autocorrelative timescales outlasting the oscillatory input period, more effectively drives migration up thermal gradients than no feedback (g=0) or negative feedback (g=-1) models, produces longer forward runs with stronger dependence on run direction, and shows lower probability of run termination after cooling periods. The positive feedback model best explains the neural activity and behavioral data, indicating that CD in the form of positive feedback promotes persistent circuit activity states and effective navigation during time-varying thermosensory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 are supported by modeling results in Figure 7. The model appropriately captures key features of the experimental data and makes testable predictions. The comparison of positive, negative, and no feedback conditions provides insight into the computational function of the CD pathway. However, the model is relatively simple and makes several assumptions that are not fully validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "During positive thermotaxis up gradients, CD prevents periods of forward locomotion from being curtailed by transient negative temperature fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is a synthesis of the behavioral and neural data, particularly the analysis of cooling effects on run termination (C74-C76) and the neural responses in RIM-ablated animals (C63-C68). This represents the main functional conclusion of the paper and is well-supported by the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C8"
+    ],
+    "result": "C. elegans uses feedback from the motor circuit to a sensory processing interneuron to sustain its motor state during thermotactic navigation, with this feedback underlying a positive feedback mechanism to generate persistent neural activity and sustained behavioral patterns in sensorimotor transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C8 represent the main conclusions of the paper, synthesizing all the experimental and modeling results. These claims are well-supported by the comprehensive set of experiments including calcium imaging, ablations, optogenetics, behavioral assays, and computational modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C45",
+      "C46",
+      "C47",
+      "C87",
+      "C88",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "The manuscript contextualizes the current findings within prior knowledge about C. elegans thermotaxis circuitry, corollary discharge mechanisms across species, and the general phenomenon of motor-related signals in sensory processing regions. Previous studies have established roles for AFD, AIY, RIM, and other neurons in thermotaxis and other behaviors, and have shown that motor behavior can significantly impact sensory processing across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18, C45-C47, C87-C88, C90, C92-C107 are based on cited literature and represent appropriate contextualization of the current work. The citations appear accurate and relevant. These claims establish the foundation for the current study and place the findings in broader context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C105"
+    ],
+    "result": "The current work demonstrates that CD can reinforce behavioral responses to sensory input (contrasting with suppressive roles in other systems), and suggests that CD-based feedback to AIY might play a general role in many different sensorimotor pathways. Through RIM and other neurons, the motor state signal may be broadcast to many neuron types, leading to correlated activity patterns throughout the C. elegans brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is supported by the experimental data showing positive feedback. Claims C91 and C105 are speculative extensions based on AIY's connectivity to multiple sensory modalities and RIM's neuromodulatory properties. While these are reasonable hypotheses, they require additional experimental validation beyond the thermotaxis system studied here. The authors appropriately present these as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  }
+]

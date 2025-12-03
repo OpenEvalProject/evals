@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C4",
+      "C97"
+    ],
+    "result": "Aged cardiomyocytes exhibit increased mitochondrial proton leak as the primary energetic change, with higher basal respiration but unchanged maximal respiratory capacity compared to young cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide converging Seahorse assay evidence showing increased basal respiration (C35) attributable to elevated proton leak (C37, 164\u00b116 vs 82\u00b112 pmol/min/800 cells, p<0.01) while maximal respiration remains unchanged (C36). This is corroborated by direct mt-cpYFP measurements (C4) and represents the primary energetic alteration in aging (C97). The data are internally consistent and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C6",
+      "C99"
+    ],
+    "result": "SS-31 acutely reduces mitochondrial proton leak in aged cardiomyocytes in a dose-dependent manner (100 nM-10 \u03bcM), with minimal effects on young cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C6 demonstrate that SS-31 treatment (2 hr in vitro) reduces proton leak in old cardiomyocytes across multiple concentrations, supported by Seahorse data (Figure 1). C39 confirms specificity to aged cells. C40 and C99 appropriately interpret these findings. The dose-response and time-course data (C48-C49) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Direct measurement using mt-cpYFP demonstrates that aging increases mitochondrial inner membrane proton permeability, and SS-31 restores resistance to pH gradient stress in aged cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 provide direct evidence using mt-cpYFP pH indicator showing reduced resistance to pH stress in aged cells and restoration by SS-31 at physiologically relevant pH values (6.9, 5.3). The kinetic (C48) and dose-response (C49) data support a specific, concentration-dependent effect. Claims C50-C51 appropriately claim novelty for direct measurement. The methodology is sound and data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ATPase and UCP2 are not the source of excess proton leak in aged hearts, as their inhibitors (Oligomycin A and Genipin) do not affect proton leak and UCP2 levels are unchanged with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 present negative control data showing that Oligomycin A and Genipin do not suppress proton leak in aged cells, supported by Western blot showing unchanged UCP2 levels (C53, Figure 3\u2014figure supplement 1). C55 appropriately infers these are not the source. The logic is sound and controls are appropriate for ruling out these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C5",
+      "C98",
+      "C107",
+      "C109",
+      "C141"
+    ],
+    "result": "ANT1 is the major site of proton leak in aging hearts, as both ANT1 inhibitors (BKA and CAT) completely suppress excess proton leak in aged cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C62-C63 demonstrate that both BKA and CAT suppress proton leak in aged cells using Seahorse and mt-cpYFP assays. C60 notes the side effect on maximal respiration, distinguishing these inhibitors from SS-31. Claims C64, C5, C98, C107, C109, and C141 appropriately conclude ANT1 is the major site. The convergent evidence from two different ANT1 inhibitors with distinct mechanisms strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "ANT1 protein levels are mildly but significantly decreased in aged hearts, indicating that increased proton leak occurs through altered transport activity or conformational change rather than increased protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 present Western blot data (Figure 3\u2014figure supplement 1) showing decreased ANT1 levels with age. C114 logically infers that increased proton leak must result from altered function rather than increased expression. This is an important mechanistic insight supported by quantitative protein data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Mitoflash activity is increased in aged cardiomyocytes (2.8\u00b10.3 vs 1.4\u00b10.2 in young), normalized by SS-31 treatment, and super-suppressed by ANT1 inhibitors, indicating that ANT1-mediated proton leak triggers mitoflash events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 demonstrate increased mitoflash activity in aged cells using isolated cardiomyocytes and intact perfused hearts. C69 shows SS-31 normalization, while C70 shows BKA/CAT reduce activity below young levels. C71 appropriately infers the mechanistic link between ANT1 proton leak and mitoflash. The data are consistent across multiple experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C133"
+    ],
+    "result": "Mitochondrial membrane potential is lower in aged cardiomyocytes and is restored to youthful levels by SS-31 treatment, attributable to suppression of proton leak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 present JC-1 data (Figure 4E) showing restoration of membrane potential by SS-31. C133 appropriately attributes this to proton leak suppression. The p-value is marginal (p=0.06 vs young) but the effect of SS-31 is significant (p<0.01 vs old), supporting the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C134"
+    ],
+    "result": "SS-31 reduces ROS production in aged cardiomyocytes, though the mechanism (whether through ANT1 modification or parallel pathways) remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 presents MitoSOX data (Figure 4F) showing reduced ROS with SS-31 treatment. C134 appropriately acknowledges uncertainty about the mechanism. The data support the observation but the authors correctly note that causality and mechanism require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C85"
+    ],
+    "result": "Time to mPTP opening is decreased in aged cardiomyocytes and is protected by SS-31 and BKA (which stabilizes ANT1 in m-state) but not by CAT (which stabilizes c-state).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 and C82 present photon-triggered mPTP data (Figure 5B) showing differential effects of ANT1 inhibitors based on conformational state. C85 appropriately concludes SS-31 decreases mPTP opening. The data are consistent with prior literature (C81, C84) and provide mechanistic insight into ANT1 conformational states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C118"
+    ],
+    "result": "SS-31 directly interacts with ANT1, as demonstrated by biotin-SS-31 pulldown experiments where free SS-31 competes for binding and ANT1 inhibitors (BKA/CAT) block the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 present pulldown data (Figure 6A-B) showing direct SS-31-ANT1 interaction with appropriate competition controls. C91 shows specificity (no inhibition by Genipin/Oligomycin A). Claims C92 and C118 appropriately conclude direct interaction. The experimental design includes proper controls and the data are convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96",
+      "C119"
+    ],
+    "result": "SS-31 stabilizes the ATP synthasome in aged cardiomyocytes without increasing overall mitochondrial complex protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 presents native gel blotting data (Figure 6D-E) showing increased synthasome stability with SS-31. C95 shows no change in total protein by Coomassie staining (Figure 6C), indicating specific stabilization rather than increased expression. Claims C96 and C119 appropriately integrate these findings. The data distinguish between protein stabilization and increased expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Both BKA and CAT block SS-31 interaction with ANT1, suggesting SS-31 interacts with ANT1 independent of its conformational state (m-state or c-state).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 presents pulldown data showing both inhibitors block SS-31 binding. C123 appropriately infers conformational independence. This is a logical inference from the observation that inhibitors locking ANT1 in different states both prevent SS-31 binding, though alternative interpretations (e.g., overlapping binding sites) are possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C32",
+      "C33",
+      "C104",
+      "C105",
+      "C143"
+    ],
+    "result": "SS-31 administration reverses age-related decline in diastolic function in mice, though this requires 8 weeks and involves post-translational modifications of contractile proteins as downstream changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C32-C33 cite prior work (Chiao et al., 2020) showing functional improvement. Claims C104-C105 and C143 appropriately note the time course and requirement for downstream changes. The functional data are from a separate study but are appropriately cited and integrated into the mechanistic framework. The distinction between acute mitochondrial effects and delayed functional benefits is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Both BKA and CAT suppress proton leak in aged cardiomyocytes despite locking ANT1 in different conformational states, suggesting that constraining conformational state or blocking the proton pore reduces ANT1 proton translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 presents data showing both inhibitors suppress proton leak. C116 appropriately infers that conformational constraint reduces proton translocation. This is supported by the data and consistent with cited literature (Ruprecht et al., 2019; Pebay-Peyroula et al., 2003), though the exact mechanism remains to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Cross-linking mass spectrometry data from prior work shows SS-31 is in intimate proximity to lysine residues in the water-filled cavity of ANT1, potentially stabilizing the m-state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 cite external data (Chavez et al., 2020) supporting the proposed mechanism. While not generated in this study, the citation is appropriate and provides structural context for the functional observations. The authors appropriately distinguish between their data and supporting evidence from other groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "SS-31 can reduce ROS production despite increasing membrane potential through improved electron transfer efficiency via interaction with cardiolipin and cytochrome c, enhancing multiple facets of respiratory mechanics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C140 propose a mechanism reconciling increased membrane potential with decreased ROS, citing prior work (Szeto, 2014; Szeto and Birk, 2014). However, this is largely interpretive and speculative. While plausible and supported by citations, the current study does not directly test this mechanism. The claims represent reasonable interpretation but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C131",
+      "C132"
+    ],
+    "result": "SS-31 effects on synthasome stabilization could result from altered membrane electrostatic properties or direct cardiolipin interaction, potentially contributing to improved respiratory efficiency in aged animals and humans with mitochondrial myopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C128 and C131-C132 are largely speculative about mechanisms and broader implications. While supported by citations (Mitchell et al., 2019; Siegel et al., 2013; Karaa et al., 2018), these represent hypotheses rather than demonstrated findings. The speculation is reasonable but clearly identified as such by the authors.",
+    "result_type": "MINOR"
+  }
+]

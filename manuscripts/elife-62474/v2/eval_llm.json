@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Mobile integrons are widespread genetic platforms in pathogenic bacteria that consist of an integrase gene, recombination sites, and cassette arrays. Expression is driven by a common promoter with position-dependent expression levels, and the SOS response induces integrase expression leading to semi-conservative recombination that can result in 'cut and paste' or 'copy and paste' outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 provide well-established background on integron structure and function, supported by multiple citations and established knowledge. The positional effect on expression (C17) is further validated by the manuscript's own experimental data (Figure 1c), strengthening these foundational claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Cassette position strongly affects gentamicin resistance levels, with a 6- to 24-fold difference in MIC between first and second positions but less than twofold difference between second and third positions. This steep gradient is primarily due to decreased translation rather than transcription, mediated by attI ORFs and the reduced Shine-Dalgarno box in the aadB cassette.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 are well-supported by experimental data including MIC measurements (Figure 1c), qPCR transcription analysis (Figure 1\u2014figure supplement 1a), and sequence analysis (Figure 1\u2014figure supplement 1b). The mechanistic explanation linking the reduced SD box to translational effects is a reasonable inference supported by cited literature (C25-C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Integrase activity significantly increased the survival rate of bacterial populations under ramping gentamicin selection (p=3e-05), with no difference in initial resistance between WTA3 and \u0394intI1A3 strains. While integrase activity increased the likelihood of resistance evolution, it did not affect final resistance levels in surviving populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are strongly supported by survival analysis (Figure 2b) with appropriate statistical testing (log-rank test) and MIC measurements at multiple time points. The control populations (C31) provide crucial negative controls. The conclusion that integrase affects evolvability but not final resistance levels (C34) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Widespread cassette rearrangements occurred in WTA3 populations under gentamicin selection, with four novel integron structures identified. Junction sites were consistent with integrase activity, and approximately 90% of populations contained rearrangements by the end of the experiment. No rearrangements were found in \u0394intI1A3 populations or low-dose controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are well-supported by whole-genome sequencing data (Figure 3a,b) and PCR validation (Figure 3\u2014figure supplement 2). The absence of rearrangements in control populations (C37-C38) provides strong evidence that rearrangements are integrase-dependent and selection-driven. The temporal dynamics (C40-C43) are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The most common novel integron structure was aadB-blaVEB-1-dfrA5-aadB, formed by 'copy and paste' insertion of aadB in first position, conferring a 64-fold increase in gentamicin resistance. No 'cut and paste' products (aadB-blaVEB-1-dfrA5) were identified, highlighting the prevalence of 'copy and paste' insertions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are strongly supported by genomic sequencing data and MIC measurements (Figure 3e). The absence of 'cut and paste' products (C46) is a striking observation that is well-documented. The 64-fold resistance increase (C45) is quantitatively measured and provides functional validation of the structural changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Degenerate integrons lacking blaVEB-1 and dfrA5 cassettes (aadB or aadB-aadB arrays) were present at high frequency and always co-occurred with aadB-blaVEB-1-dfrA5-aadB arrays in mixed populations. These evolved via aadB insertion followed by en bloc deletion of redundant cassettes, with the second aadB in aadB-aadB arrays being functionally redundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are well-supported by genomic sequencing showing co-occurrence patterns (C49) and junction site analysis (C51). The evolutionary pathway inference (C50) is reasonable based on the observed associations. The redundancy of the second aadB (C52-C53) is supported by both temporal stability data and marginal MIC differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Arrays with duplicate aadB at the end (blaVEB-1-dfrA5-aadB-aadB) were only found at the \u00d74 MIC time point, suggesting they conferred small resistance increases but were evolutionary dead ends under strong selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by temporal genomic data showing these arrays only at early time points. The inference that they represent evolutionary dead ends (C55) is reasonable based on their disappearance under continued selection, though direct fitness measurements would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mutations in blaVEB-1 were found in >80% of populations at \u00d74 MIC and almost all populations maintaining blaVEB-1 at \u00d71024 MIC. The signal peptide was a mutational hotspot (12/25 mutations), suggesting strong selection to eliminate secretion of this redundant protein. Similar mutations in low-dose controls indicate these mutations are beneficial even under weak selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are well-supported by genomic sequencing data showing high mutation frequencies and parallel evolution. The concentration of mutations in the signal peptide (C59) provides strong evidence for the functional interpretation (C60). The presence of similar mutations in controls (C61-C62) strengthens the argument for fitness costs of blaVEB-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Mutations near the aadB translation initiation site were rare at \u00d74 MIC but present at high frequency in \u0394intI1A3 populations at the final time point (4/6 populations), linked with high gentamicin resistance. These mutations likely increased translation of the weakly expressed third-position aadB cassette, providing an alternative to cassette rearrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65 are supported by genomic data and MIC measurements. However, C66 is explicitly labeled as speculation by the authors. While the hypothesis is reasonable, direct measurement of translation rates or protein levels would be needed to confirm the proposed mechanism. The genotype-specific pattern is suggestive but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Chromosomal evolution occurred more rapidly in \u0394intI1A3 populations at \u00d74 MIC (p=0.01) but this acceleration was short-lived, with similar mutation frequencies by the end of the experiment. Only one chromosomal recombination event was detected, indicating minimal off-target effects of integrase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are well-supported by genomic sequencing data with appropriate statistical analysis (Welch t-test). The temporal dynamics (C68) are clearly documented. The minimal off-target effects (C69-C70) are supported by extensive sequencing of multiple populations, though the detection threshold (>30% frequency) should be noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "41 SNPs and 58 indels were identified across 8 intergenic regions and 41 genes, with extensive parallel evolution (26% of genes, 38% of intergenic regions). Only 1/41 coding mutations was synonymous, indicating positive selection rather than elevated mutation rate. Minimal overlap with control populations indicates selection was dominated by gentamicin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are well-supported by comprehensive genomic sequencing data (Figure 4). The low proportion of synonymous mutations (C74) provides strong statistical evidence for positive selection (C75). The parallel evolution (C73) and lack of overlap with controls (C76-C77) further support the interpretation of adaptive evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In control populations, cdrA and PA1874 were the most frequently mutated genes. No wide-scale chromosomal rearrangements were observed, and no major differences in mutation distribution were found between WTA3 and \u0394intI1A3 populations in control regimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by genomic sequencing data from control populations (Figure 4\u2014figure supplement 1). These observations provide important context for interpreting the ramping experiment results and confirm that the observed differences are selection-specific.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Early adaptation involved mutations in diverse genes biased toward translation (rluD, 23S rRNA), with divergent trajectories between WTA3 and \u0394intI1A3 backgrounds. Under continued selection, evolution became dominated by mutations in key genes (mexZ, amgS, rluD) involved in antibiotic efflux rather than translation, with weak correlation between early and late time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are well-supported by genomic data showing temporal and functional shifts in mutational targets (Figure 4). The weak correlations between genotypes (C82) and time points (C85) are quantified with appropriate statistics. The functional shift from translation to efflux (C87) is supported by gene annotation and literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "mexZ is a transcription factor repressing the mexXY efflux pump, with inactivating mutations causing 2- to 16-fold increases in aminoglycoside resistance. AmgS is part of the AmgRS two-component system, and amgS mutations upregulate mexXY in the presence of aminoglycosides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are well-supported by citations to established literature. These provide important functional context for interpreting the observed mutations in these genes. The claims represent established knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "In a clinical plasmid (pAMBL1) carrying blaVIM-1, PCR screening identified cassette rearrangements in all 14 surviving populations at \u00d72 MIC meropenem. Sequencing confirmed blaVIM-1 duplications (2.0-2.67 copies/plasmid), supporting the idea that 'copy and paste' rearrangements can drive rapid carbapenem resistance evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C96 are supported by PCR and sequencing data (Figure 5). However, C97-C98 acknowledge the limitation that without \u0394intI control populations, the role of integrase cannot be definitively proven. While the results are strongly suggestive and consistent with the main findings, the lack of proper controls limits the strength of this conclusion. This represents an important extension but requires follow-up work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "All observed aadB rearrangements were 'copy and paste' outcomes resulting in duplication. The absence of any 'cut and paste' products (expected at ~30% based on plasmid copy number) suggests the integrase enzyme may be inherently biased toward 'copy and paste' rearrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are strongly supported by genomic data (Figure 6). The bias toward 'copy and paste' is striking and well-documented. However, C102 is explicitly speculative about the mechanism. While the plasmid copy number calculation (C101) provides a quantitative expectation, alternative explanations (e.g., strong selection for duplications) are not fully excluded. The conclusion is reasonable but the mechanism remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Duplicate cassettes are found in only 5% of integrons with two or more cassettes in the INTEGRALL database, though sequencing difficulties may contribute to this apparent rarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by database analysis (Supplementary file 4). Claim C104 is a reasonable speculation supported by a citation about sequencing limitations. These claims provide important context for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Duplicate copies of selected cassettes facilitate loss of redundant cassettes through two mechanisms: integrase-mediated excision (for highly recombinogenic cassettes like aadB) and homologous recombination between duplicates. Highly mobile cassettes can compensate for less recombinogenic cassettes like blaVEB-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by the observed patterns of cassette loss following duplication in the genomic data. The two proposed mechanisms (C106-C107) are reasonable and supported by citations. The compensation mechanism (C108) is a logical inference from the data, though direct experimental validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Constitutive expression from the Pc promoter ensures redundant cassettes impose fitness costs, making selection for cassette loss common. The semi-conservative nature of cassette excision is key to integrase evolutionary benefits, allowing rapid gain of selected cassettes and elimination of costly redundant cassettes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by citation. Claims C110-C111 are reasonable inferences from the experimental data showing cassette loss and the observed patterns of duplication. The conclusion about the importance of semi-conservative recombination (C111) is well-justified by the overall results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Chromosomal and integron mutations made important contributions to resistance evolution. While integrase activity was associated with blaVEB-1 cassette loss, the cassette was also rapidly inactivated by mutations in \u0394intI1 populations. Mutations in the aadB promoter provided an alternative mechanism for increased expression. The impact of integrase may be stronger in organisms with more limited mutational adaptation potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are well-supported by genomic data showing parallel evolutionary pathways in both genotypes. The observation that mutations can achieve similar outcomes to cassette rearrangement (C114-C115) is important for understanding the relative contribution of integrase activity. Claim C117 is speculative but reasonable based on the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "At early time points (\u00d74 MIC), \u0394intI1A3 populations showed accelerated chromosomal evolution through mutations across diverse genes, while WTA3 populations showed reduced mutation prevalence, likely due to competition from cassette rearrangements. This acceleration was short-lived, and all populations surviving high gentamicin levels evolved through mutations in common genes (efflux, ribosomal modification), indicating integrase activity impacts early but not late evolutionary trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 are well-supported by temporal genomic data showing genotype-specific differences at early time points that converge later. The interpretation that cassette rearrangements out-compete chromosomal mutations early (C120) is a reasonable inference. The conclusion about integrase affecting early but not ultimate evolutionary routes (C123) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Stress-induced mutagenesis systems are widespread in bacteria and can accelerate adaptation, but most mutations are deleterious, potentially reducing fitness especially if stress exacerbates deleterious effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are supported by citations to established literature. These provide important conceptual context for comparing integrons to other stress-induced evolutionary mechanisms. These represent background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C70"
+    ],
+    "result": "While integron integrase is known to have off-target activity that could contribute to fitness costs, no evidence of chromosomal rearrangements or increased mutation rates linked to integrase activity was found (except one plasmid deletion), suggesting a low rate of off-target recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by citations. Claim C130 is supported by extensive genomic sequencing data. The authors acknowledge limitations in detecting rare variants (<30%) but compensate with large sample sizes. The conclusion of minimal off-target effects is reasonable given the data, though the detection threshold should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Integrase activity allows bacteria to modulate cassette expression, gain copies of selected cassettes, and eliminate redundant cassettes while maintaining genomic integrity. Integrase activity will most accelerate resistance evolution for highly mobile cassettes with strong positional effects (like aadB) and in cases where bacteria have limited mutational adaptation potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 is a well-supported summary conclusion based on the comprehensive experimental data. Claims C132-C133 are reasonable inferences from the results, though C133 is somewhat speculative as it extends beyond the experimental system. These represent the main conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "Treatment strategies should target integrons, for example by combining antibiotics with adjuvants that inhibit the SOS response or using antibiotic combinations that impose conflicting selective pressures on the integron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 is a reasonable therapeutic recommendation based on the study's findings, supported by a citation. While not directly tested experimentally, it represents a logical application of the results. This is a forward-looking conclusion rather than a direct experimental finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Integrase activity accelerated evolution by increasing expression of the gentamicin resistance cassette through duplications and eliminating redundant cassettes, with no evidence of deleterious off-target effects. Integrons accelerate resistance evolution by rapidly generating combinatorial variation while maintaining genomic integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the main conclusions of the study and are well-supported by the comprehensive experimental data including survival analysis, genomic sequencing, MIC measurements, and the absence of widespread chromosomal rearrangements. These are the primary findings that validate the 'adaptation on demand' hypothesis.",
+    "result_type": "MAJOR"
+  }
+]

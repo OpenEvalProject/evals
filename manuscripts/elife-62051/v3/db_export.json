@@ -1,0 +1,1294 @@
+{
+  "submission": {
+    "id": "e843b5cf-9d66-457a-8e23-3eb741a2732a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:13:11.109088Z",
+    "updated_at": "2025-12-03T05:13:11.109088Z"
+  },
+  "content": [
+    {
+      "id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "submission_id": "e843b5cf-9d66-457a-8e23-3eb741a2732a",
+      "content_type": "manuscript",
+      "content_text": "# The temporal representation of experience in subjective mood\n\n## Authors\n\n- Hanna Keren<sup>1</sup> ([ORCID: 0000-0003-4122-656X](https://orcid.org/0000-0003-4122-656X)) \u2020\n- Charles Zheng<sup>2</sup>\n- David C Jangraw<sup>3</sup>\n- Katharine Chang<sup>1</sup>\n- Aria Vitale<sup>1</sup>\n- Robb B Rutledge<sup>4</sup> ([ORCID: 0000-0001-7337-5039](https://orcid.org/0000-0001-7337-5039))\n- Francisco Pereira<sup>2</sup>\n- Dylan M Nielson<sup>1</sup>\n- Argyris Stringaris<sup>1</sup>\n\n### Affiliations\n\n1. Section of Clinical and Computational Psychiatry, National Institute of Mental Health, National Institutes of Health Bethesda United States\n2. Machine Learning Team, National Institute of Mental Health, National Institutes of Health Bethesda United States\n3. Emotion and Development Branch, National Institute of Mental Health, National Institutes of Health Bethesda United States\n4. Department of Psychology, Yale University New Haven United States\n5. Max Planck UCL Centre for Computational Psychiatry and Ageing Research, University College London London United Kingdom\n6. Wellcome Centre for Human Neuroimaging, University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHumans refer to their mood state regularly in day-to-day as well as clinical interactions. Theoretical accounts suggest that when reporting on our mood we integrate over the history of our experiences; yet, the temporal structure of this integration remains unexamined. Here, we use a computational approach to quantitatively answer this question and show that early events exert a stronger influence on reported mood (a primacy weighting) compared to recent events. We show that a Primacy model accounts better for mood reports compared to a range of alternative temporal representations across random, consistent, or dynamic reward environments, different age groups, and in both healthy and depressed participants. Moreover, we find evidence for neural encoding of the Primacy, but not the Recency, model in frontal brain regions related to mood regulation. These findings hold implications for the timing of events in experimental or clinical settings and suggest new directions for individualized mood interventions.\n\n## Introduction\n\nSelf-reports of momentary mood carry broad implications, yet their underpinnings are poorly understood. We report on our momentary mood to convey to others an impression of our well-being in everyday life (Clark and Watson, 1988; Forgas et al., 1984); clinically, self-reports of momentary mood form a cornerstone of psychiatric interviewing (Daviss et al., 2006; Wood et al., 1995); in research, momentary mood is widely used to quantify human emotional responses, such as in ecological momentary assessment (EMA) (Kahneman et al., 2004; Larson et al., 1980; Taquet et al., 2020). Moreover, theoretical accounts suggest that when we report on our mood we integrate over the history of our experiences with the environment (Eldar et al., 2016; Katsimerou et al., 2014; Nettle and Bateson, 2012; Rutledge et al., 2014; Vinckier et al., 2018). In this paper, we address the fundamental question of the time pattern of this integration\u2014what is the timing of events, for example, early versus recent\u2014that matter the most for how we report our mood.\n\nThe standard account is that momentary mood reporting is predominantly affected by recent reward prediction errors (Rutledge et al., 2014) (RPEs, or how much better or worse outcomes were relative to what was expected). Accordingly, the more surprising an event is (operationalized as a positive or negative RPE) and the more recent it is, the more it will affect momentary mood. In modeling terms, the standard account posits that humans apply a recency weighting such that their most recent experiences override those in the more distant past (e.g., experiences that happened early in the course of a conversation or a game would matter far less). This computational account has several real-life implications. In terms of measurement of momentary mood, a momentary happiness rating would be a good proxy for one\u2019s most recent experiences. In terms of clinical interactions (such as during an interview or a treatment session), a person\u2019s momentary mood could be lifted by the addition of a positive event.\n\nThis standard temporal account is widely applied in models of mood (Eldar et al., 2016; Katsimerou et al., 2014; Rutledge et al., 2014; Vinckier et al., 2018), yet is largely unexamined and has not been compared to plausible alternatives. Indeed, at the opposite end of the standard recency model stands a primacy account of momentary mood. According to a primacy model, experiences that occur early in a conversation, a game, or interaction prevail over more recent ones. The intuition for such a model comes from idiomatic expressions such as starting off on the right foot or empirical evidence, which shows that the first instances of an interaction can be highly informative (Ambady and Rosenthal, 1992; Houser and Furler, 2007). Computationally speaking, early events would be weighted more heavily than recent events, which has several real-world implications. From a measurement perspective, the time scales of momentary mood reporting and of experience would overlap less than in the recency model\u2014the current mood rating would be less of a reflection of the current environment. Moreover, the emphasis on the start of interactions such as interviews or treatment sessions would be much greater.\n\nA computational approach can help us answer this important question as it allows us to make explicit in model terms how humans integrate over their experiences in order to arrive at a self-report of their moods (Huys et al., 2016). For this purpose, we developed a novel Primacy model that we pitted against the standard Recency model. We then also examine a host of other plausible models as suggested in disparate literatures about valuation timing (Kahneman and Tversky, 2000; Olsson et al., 2017).\n\nWe examine these different temporal integration models across a range of conditions in order to establish their generalizability.\n\nFirst, we examine the Primacy and the Recency models in their generalizability across reward environments. To do this, we exploited the flexibility of a standard probabilistic task (Rutledge et al., 2014) and adapted it to create different task conditions. (1) A random environment, where there was no consistent trend over time in the direction or value of surprises (RPEs); (2) a structured environment, where events in the form of RPEs were organized in positive and negative blocks; and (3) a structured-adaptive environment, where the intensity of RPEs was enhanced in real time to maximize the influence of task events on mood over time and across individuals. We could not be certain that the fixed stimuli of the structured task would be sufficient to drive large changes in mood in each participant, which might influence the temporal integration of events. Therefore, we developed the adaptive task to compensate for individual and temporal differences in mood response, this by delivering personalized stimuli that increase the likelihood of observing a large variation in mood from each participant (implemented by adding a closed-loop controller into the standard probabilistic task).\n\nSecond, we examine the generalizability of the different temporal integration models across age groups given that previous studies have shown important differences in reward processing particularly between adolescent and adult groups (Braams et al., 2015; Casey et al., 2010; Heller and Casey, 2016; Kayser et al., 2015; Somerville et al., 2010; Walker et al., 2017).\n\nThird, we also examine the generalizability of these models across healthy volunteers and depressed participants, given the wealth of evidence that depression is associated with aberrations in reward processing (Keren et al., 2018; Ng et al., 2019; Stringaris et al., 2015; Whitmer et al., 2012), which might be also affecting the temporal integration of experiences.\n\nWe then examine the generalizability of the performance of the two models across simulated data in a model recovery analysis that protects from model selection biases (Hastie et al., 2009; Wilson and Collins, 2019).\n\nAdditionally, we examine the generalizability of the Primacy model performance in comparison to other variants of the Recency model.\n\nFinally, we compare the neural correlates of key terms of these competing models using whole-brain fMRI. Previous work has shown that the reporting of mood and evoking emotional responses leads to activations in a network of brain areas encompassing the fronto-limbic circuit (Etkin et al., 2015; Etkin et al., 2011; Rutledge et al., 2014). Concordance between computational model parameters and neural activity levels provides evidence that the mechanisms described by the model correspond to the neural processes underlying that behavior. For this reason, we test the correlation of Primacy and Recency model parameters with neural activity measured as blood oxygen-level-dependent (BOLD) signal during fMRI and then directly contrast between the relations of the two models.\n\n## Results\n\n### The Primacy and Recency models of mood\n\nAs a first step, we compared the Primacy model versus the Recency model of mood. These were designed to correspond to the general experimental setup that is presented in Figure 1A and has been used extensively before to answer questions about mood (Rutledge et al., 2017; Rutledge et al., 2014). In brief, participants first chose whether to receive a certain amount or to gamble between two values. These values allowed each trial to present to the participant an expectation and an RPE value, where the latter is considered as the difference between the outcome and the expectation values. Subjects were also asked to rate their momentary mood every 2\u20133 trials by moving a cursor along a scale between unhappy and happy mood. Such mood ratings have been shown before to correspond to the general state of well-being of participants (Rutledge et al., 2017); we validated this in our dataset with a significant correlation between baseline mood ratings and participant\u2019s depressive symptom scores (with Mood and Feelings Questionnaire [MFQ] measure in adolescent sample: CC = \u22120.62, p\u00a0=\u00a02.62e-8, CI = [\u22120.75,\u20130.44]; with Center for Epidemiologic Studies Depression [CESD] measure in adult sample: CC = \u22120.69, p\u00a0=\u00a07.12e-13, CI = [\u22120.79,\u20130.56]) and in strong concordance with the gold standard psychiatric interview (KSADS) in distinguishing between patients with depression and healthy volunteers (where the mean initial mood of healthy was also significantly higher than of depressed, t = \u22123.36, df = 69, p\u00a0=\u00a00.0012, Cohen\u2019s d effect size = 0.97).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig1-v3.jpg)\n\n**Figure 1.:** (A) Participants played a probabilistic task where they experienced different reward prediction error values, while reporting subjective mood every 2-3 gambling trials. In each trial, participants chose whether to gamble between two monetary values or to receive a certain amount (Gamble decision). During Expectation, the chosen option remained on the screen, followed by the presentation of the Outcome value. (B)\n\n$$\nMood\u00a0\u221d\u00a0\\beta_{E}\\sumj=1t\\gamma^{t\u2212j}E_{j}\n$$\n\npresents the expectation term of the mood models, where \u03b2E is the influence of expectation values on subjective mood reports. The expectation term of the Recency mood model as developed by Rutledge et al., 2014 is presented below\n\n$$\nE_{t}=\\frac{High_{t}+Low_{t}}{2}\n$$\n\nwhere it consists of the trial\u2019s high and low gamble values. In the alternative Primacy model, as presented in\n\n$$\nE_{t}=\\frac{1}{t-1}\\sum_{i=1}^{t-1}A_{i}\n$$\n\nthe expectation term is replaced by the average of all previous outcomes (Ai). Moreover, as can be seen in Equations 6\u20138 in Materials and methods, the Primacy model has overall fewer parameters compared to the Recency model. The theoretical scaling curves for the influence of previous events on mood due to expected outcomes are presented for each model respectively below (see Figure 1\u2014figure supplement 1 for additional illustrations).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In the Primacy model, the expectation term $E_{j}$ is the unweighted average of previous outcomes. At each trial, all previous expectation terms are combined in an exponentially weighted sum: $\\sum_{j=1}^{t}\\gamma^{t-j}E_{j}$ . Here, we illustrate how this gives rise to a primacy weighting of previous outcomes that depends on the value of $\\gamma$ (each subplot represents a different magnitude of exponential weighting $\\gamma$). The total height of each bar represents the influence of the outcome of the corresponding trial on the result of the exponential sum at the end of trial 9. Each color indicates the contributions of the outcomes that form an expectation term $E_{j}$ at the end of trial j. The dark yellow block represents the contribution of the expectation term $E_{1}$ from the end of trial 1 (comprised only of the first outcome). The gray blocks represent the contributions of the expectation term $E_{2}$ that is being added from the end of trial 2 (which is the average of the outcomes from trials 1 and 2, and therefore it appears in both the first and the second bars). This continues for the rest of the expectation terms until the last expectation term $E_{9}$ is added, which is formed by averaging the outcomes from trials 1 to 9 as shown by the blue bars.\n\nThe two principal models, Recency and Primacy, are described in Figure 1B. Both models consider a cumulative and discounted impact of the expectation term on mood, as shown in Figure 1B, Equation 1 (Equations 6\u20138 in Materials and methods provide the complete formulation of these models). The Recency model represents the standard models applied in computational accounts of mood in such setups. In this recency model, expectation is defined as the average between the two gambling values in the current trial (Figure 1B, Equation 2). By contrast, the Primacy model is our hypothesized account of mood in such setups. In this model, expectation is defined as a weighted average of all previous outcomes (Figure 1B, Equation 3). The critical difference between the two models is illustrated below by presenting the different theoretical scaling curves for the influence that events have on mood across the task. As can be appreciated, the Recency model places an emphasis on the most recent trials. By contrast, the Primacy model emphasizes the early ones. The stronger weight of earlier outcomes in the Primacy model emerges from two separate aspects of the model: first, that one\u2019s expectation for the next outcome is based on the average of all previously received outcomes and, moreover, that mood is determined by the sum of all such past expectations (see Figure 1\u2014figure supplement 1 for a graphical illustration of these two aspects). The Primacy model, therefore, is unique from the prior Recency model because it defines expectation on the basis of the full history of events. We should note though, since the RPEs are recency weighted and are calculated based on the difference of the (primacy weighted) expectation and actual outcome, that recency-weighted outcomes do still influence mood in the Primacy model.\n\n### Primacy versus variants of the Recency model\n\nNext, we tested the Primacy model performance against several alternative variants of the Recency model.\n\nFirst, we addressed the learning component implemented in the Primacy model by creating a Recency model with learning from previous trials (termed the \u2018Recency with dynamic win probability model\u2019). This model considered the actual individual winning probability instead of a fixed win probability of 50% in the expectation term (using a trial-level individual winning probability derived from the percentage of previous win-trials).\n\nSpecifically, the win probability was formulated as follows:\n\n$$\np(t)=\\frac{\\sumt=1tI(A(t\u22121)=H(t))+5}{\\sumt=1tG(t\u22121)+10}\n$$\n\nwhere the sum in the numerator counts the previous trials on which the outcome was the higher value H (I is a binary vector of this condition with 1 for outcome H and 0 for the lower outcome L) and the sum in the denominator counts the previous trials on which the participant chose to gamble (G is a binary vector of this condition with 1 for the choice to gamble and 0 for the choice of the certain value). The additional bias of 5 in the numerator and 10 in the denominator implement Bayesian shrinkage corresponding to 10 prior observations with an average success of 0.5. The expectation term was modified accordingly:\n\n$$\nE_{t}=(p(t)H(t)+(1\u2212p(t))L(t))\n$$\n\nWe then addressed the elimination of the Certain term in the Primacy model by testing it against a \u2018Recency without the Certain outcome\u2019 model.\n\nAdditionally, we addressed the unique feature of the Primacy model where individuals use experienced outcomes to generate their expectations. We therefore compared the Primacy model to a Recency model where the expectation term is based on the previous outcome rather than current trial\u2019s gamble values (the \u2018Recency with outcome as expectation model\u2019).\n\nNext, we compared the Primacy model to a Recency model that merges the dynamic win probability and the elimination of the Certain term modifications, which is the most similar Recency model to the Primacy model (termed the \u2018Recency with both dynamic win and no Certain model\u2019).\n\nSee Supplementary file 2 for the formulation of these alternative Recency models.\n\n### Primacy versus Recency models comparison criteria\n\nWe started from using two main criteria to compare between the models. First, a training error, the mean squared error (MSE) of fitting the model to participant\u2019s mood ratings. Second, a streaming prediction error, a within-subject prediction of each mood rating using the preceding mood ratings (with first 10 mood ratings being discarded as we found that the streaming prediction error criteria were unstable in the first trials due to fewer available data points). A model performed better if it had significantly smaller error between predicted and rated mood values in these criteria, as tested across participants with a one-sided Wilcoxon signed-rank test, with p<0.05 (tests the null hypothesis that two related paired samples come from the same distribution). We chose a one-sided null because the conservative null would be that the new approach is equal to or worse than the existing approach. Moreover, we used a leave-out sample validation and independent confirmatory datasets in all model comparisons.\n\nWe then performed a model recovery assessment to validate the model selection criteria by which we compare the performance of the Primacy and Recency models. We first generated simulated datasets using each of the models and then fit the models and tested whether we could correctly identify the model that generated the data. According to both the training error and the streaming prediction criteria, it was possible to recover the true model from the simulated data (the Recency model performed better on data simulated with the Recency model, and vice versa; see Supplementary file 1). We then preferred to use the streaming prediction error across all comparisons as it is a more valid criterion due to the training error favoring overfitting (Hastie et al., 2009).\n\n### Primacy versus Recency models across different reward environments\n\nHere, we compare the models and assess their validity across differently structured reward environments.\n\n#### Random environment\n\nIn order to generate a random reward environment, we used the standard probabilistic task (Rutledge et al., 2014) as described above, where the RPE values were drawn randomly from a predefined range of values (Figure 2A). As shown in Figure 2B (left panel), this causes mood fluctuations in keeping with previous results (presents the mean across n = 60 participants, with a significant effect of linear time, but not squared time, on mood in a linear mixed-effects model: $\\beta_{time}$ = -0.31, SE = 0.11, p = 0.006; $\\beta_{time^{2}}=$ 0.0009, SE = 0.002, p>0.05, and mood change effect size [mean \u00b1 SD] = -0.93 \u00b1 1.70).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig2-v3.jpg)\n\n**Figure 2.:** (A) Reward prediction error (RPE) values received during each task version, averaged across all participants (shaded areas represent SEM). (B) The influence of RPE values on mood reports along the task, averaged across all participants (shaded areas are SEM). See Materials and methods for a link to the online repository from where the source data of this figure can be downloaded.\n\nComparing the Primacy versus the different Recency models, we found that the Primacy model outperformed each of the Recency models on the streaming-prediction criterion (see Figure 3 and Table 1 for model performance comparison and Figure 3\u2014figure supplement 1 for the distributions of the fitting coefficients of each of the tested models in this environment).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig3-v3.jpg)\n\n**Figure 3.:** (A) Model comparison between the Primacy and the Recency models, using the streaming prediction criterion, where the model is predicting each mood rating using the preceding ratings. On the left, the trial-level errors in predicting mood with the Recency and the Primacy models are shown for all participants, during the structure-adaptive task (bold line depicts average across all participants). This error is calculated by predicting the t-th mood rating using all preceding (1 to t-1) mood ratings, and therefore fitting iterations start only as of the fourth mood rating (~15 gambling trials), which ensures that models have sufficient data to fit all parameters. The right panel presents the median of mean squared errors (MSEs) of the Primacy model relative to the Recency model in this criterion across all datasets (edges indicate 25th and 75th percentiles, and error bars show the most extreme data point not considered an outlier). (B) Model comparison between the Primacy and three variants of the Recency model, which also shows lower MSEs for the Primacy model. Values are median MSEs of the Primacy model relative to each of the alternative models (i.e., Recency with dynamic probability model marked with circles, Recency without the Certain term model marked with squares, and the Recency with outcomes as expectation model marked by crosses), and error bars are standard deviation across participants. The values used to derive these plots are available in Table 1, fit coefficients are presented in Figure 3\u2014figure supplement 2, and a link for downloading all the modeling scripts can be found in Materials and methods.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig3-figsupp1-v3.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Equations S1 and S2 show the two additional parameters that were included in the Primacy model to test other scaling curves for most influential events on mood. (B) Examples of theoretical scaling curves that were tested with the extended model that were also outperformed by the Primacy model.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The left two columns show the task mood ratings and outcomes (A) above the expectation and reward prediction error (RPE) parameters of the Primacy (B) and the Recency (C) models (of a single participant during the Structured task). The rightmost column shows the average across all participants of mood ratings, above the combination between the expectation and RPE parameters of each model (shaded areas represent standard deviation).\n\n**Table 1.**\n Performance of the Primacy model versus alternative Recency models in three different reward environments (in adults) and in a lab-based sample comprising adolescent participants, of which 40% were diagnosed as clinically depressed (using the structured-adaptive task).Statistical comparison is of the streaming prediction errors. (MSE: mean squared error; IQR: interquartile range).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Model</th>\n      <th>MSE median</th>\n      <th>IQR</th>\n      <th>z-Value</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"18\">Reward environment</td>\n      <td rowspan=\"6\">Random task</td>\n      <td>Primacy</td>\n      <td>0.0165</td>\n      <td>0.0099</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Recency</td>\n      <td>0.0171</td>\n      <td>0.0091</td>\n      <td>1.8480</td>\n      <td>0.0323</td>\n    </tr>\n    <tr>\n      <td>Recency with dynamic win probability</td>\n      <td>0.0170</td>\n      <td>0.0078</td>\n      <td>2.7440</td>\n      <td>0.0030</td>\n    </tr>\n    <tr>\n      <td>Recency without a Certain term</td>\n      <td>0.0176</td>\n      <td>0.0099</td>\n      <td>1.9973</td>\n      <td>0.0229</td>\n    </tr>\n    <tr>\n      <td>Recency with outcome as expectation</td>\n      <td>0.0187</td>\n      <td>0.0114</td>\n      <td>3.0053</td>\n      <td>0.0013</td>\n    </tr>\n    <tr>\n      <td>Recency with both dynamic win and no Certain</td>\n      <td>0.0171</td>\n      <td>0.0079</td>\n      <td>2.7440</td>\n      <td>0.0030</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Structured task</td>\n      <td>Primacy</td>\n      <td>0.0088</td>\n      <td>0.0036</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Recency</td>\n      <td>0.0097</td>\n      <td>0.0069</td>\n      <td>1.6613</td>\n      <td>0.0483</td>\n    </tr>\n    <tr>\n      <td>Recency with dynamic win probability</td>\n      <td>0.0090</td>\n      <td>0.0043</td>\n      <td>1.8853</td>\n      <td>0.0297</td>\n    </tr>\n    <tr>\n      <td>Recency without a Certain term</td>\n      <td>0.0109</td>\n      <td>0.0091</td>\n      <td>3.0053</td>\n      <td>0.0013</td>\n    </tr>\n    <tr>\n      <td>Recency with outcome as expectation</td>\n      <td>0.0141</td>\n      <td>0.0044</td>\n      <td>3.8266</td>\n      <td>0.0001</td>\n    </tr>\n    <tr>\n      <td>Recency with both dynamic win and no Certain</td>\n      <td>0.0090</td>\n      <td>0.0044</td>\n      <td>1.8853</td>\n      <td>0.0290</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Structured adaptive</td>\n      <td>Primacy</td>\n      <td>0.0137</td>\n      <td>0.0041</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Recency</td>\n      <td>0.0160</td>\n      <td>0.0040</td>\n      <td>3.4533</td>\n      <td>0.0003</td>\n    </tr>\n    <tr>\n      <td>Recency with dynamic win probability</td>\n      <td>0.0171</td>\n      <td>0.0040</td>\n      <td>3.7146</td>\n      <td>0.0001</td>\n    </tr>\n    <tr>\n      <td>Recency without a Certain term</td>\n      <td>0.0189</td>\n      <td>0.0060</td>\n      <td>3.5279</td>\n      <td>0.0002</td>\n    </tr>\n    <tr>\n      <td>Recency with outcome as expectation</td>\n      <td>0.0179</td>\n      <td>0.0063</td>\n      <td>3.6773</td>\n      <td>0.0001</td>\n    </tr>\n    <tr>\n      <td>Recency with both dynamic win and no Certain</td>\n      <td>0.0172</td>\n      <td>0.0040</td>\n      <td>3.6770</td>\n      <td>0.0001</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Age</td>\n      <td rowspan=\"6\">Adolescents lab-based</td>\n      <td>Primacy</td>\n      <td>0.0066</td>\n      <td>0.0021</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Recency</td>\n      <td>0.0077</td>\n      <td>0.0028</td>\n      <td>3.4533</td>\n      <td>0.0003</td>\n    </tr>\n    <tr>\n      <td>Recency with dynamic win probability</td>\n      <td>0.0079</td>\n      <td>0.0026</td>\n      <td>2.8559</td>\n      <td>0.0021</td>\n    </tr>\n    <tr>\n      <td>Recency without a Certain term</td>\n      <td>0.0094</td>\n      <td>0.0029</td>\n      <td>3.9013</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <td>Recency with outcome as expectation</td>\n      <td>0.0093</td>\n      <td>0.0038</td>\n      <td>3.6773</td>\n      <td>0.0001</td>\n    </tr>\n    <tr>\n      <td>Recency with both dynamic win and no Certain</td>\n      <td>0.0079</td>\n      <td>0.0027</td>\n      <td>2.9306</td>\n      <td>0.0017</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Diagnosis</td>\n      <td rowspan=\"6\">Depressed adolescents</td>\n      <td>Primacy</td>\n      <td>0.0043</td>\n      <td>0.0069</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Recency</td>\n      <td>0.0072</td>\n      <td>0.0053</td>\n      <td>3.2666</td>\n      <td>0.0005</td>\n    </tr>\n    <tr>\n      <td>Recency with dynamic win probability</td>\n      <td>0.0075</td>\n      <td>0.0042</td>\n      <td>3.3039</td>\n      <td>0.0004</td>\n    </tr>\n    <tr>\n      <td>Recency without a Certain term</td>\n      <td>0.0074</td>\n      <td>0.0042</td>\n      <td>3.3786</td>\n      <td>0.0003</td>\n    </tr>\n    <tr>\n      <td>Recency with outcome as expectation</td>\n      <td>0.0089</td>\n      <td>0.0043</td>\n      <td>3.9013</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <td>Recency with both dynamic win and no Certain</td>\n      <td>0.0086</td>\n      <td>0.0069</td>\n      <td>3.4159</td>\n      <td>0.0003</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Structured environment\n\nIn order to generate an environment that has some structure (consistently positive or negative events), we modified the probabilistic task as shown in Figure 2A (middle panel): RPE values were divided into three blocks, one of positive RPEs (+5), the second of negative RPEs (\u20135), and a third block of positive RPEs again (+5). We found that the experimental setup leads to substantial fluctuations in mood as can be seen in the middle panel of Figure 2B (presents the mean across n = 89 participants, with a significant effect of time, both linear and squared, on mood in a linear mixed-effects model: $\\beta_{time}$ = -0.02, SE = 0.006, p<0.0001; $\\beta_{time^{2}}$ = 0.0004, SE = 0.0001, p\u00a0=\u00a00.009, and an effect size per block of [mean \u00b1 SD]: 0.56 \u00b1 1.90, \u20131.42 \u00b1 \u20131.42, \u20130.55 \u00b1 \u20130.55, for the first, second, and third blocks, respectively).\n\nComparing the Primacy versus the different Recency models, we found that the Primacy model outperformed each of the Recency models on the streaming prediction criterion (see Figure 3 and Table 1 for model performance comparison and Figure 3\u2014figure supplement 1 for the distributions of the fitting coefficients of each of the tested models in this environment).\n\n#### Structured-adaptive environment\n\nSince there can be substantial individual differences in response to events in the environment, we developed a third, adaptive task that tracks individual performance and modifies the environment accordingly. In this paradigm, RPE values were not predefined but modified in real time and in an individualized manner by a proportional-integral (PI) controller (Levine, 2011) to enhance their potential positive or negative influence on mood over time (see rightmost panel of Figure 2A for the average RPE values across all n = 80 participants). This task also consisted of three blocks of RPE values, pushing mood towards the highest mood value in the first block, the lowest mood in the second, and the highest mood again in the third block. We found that this experimental setup leads to the largest changes in mood as can be seen in the rightmost panel of Figure 2B (a significant effect of time, both linear and squared, on mood in a linear mixed-effects model: $\\beta_{time}$ = -0.04, SE = 0.004, p<0.0001; $\\beta_{time^{2}}$ = 0.001, SE = 0.0001, p<0.0001, and an effect size per block of [mean \u00b1 SD]: 0.92 \u00b1 1.60, \u20131.75 \u00b1 1.10, 1.45 \u00b1 1.70, for the first, second, and third blocks, respectively).\n\nComparing the Primacy versus the different Recency models, we found that the Primacy model outperformed each of the Recency models on the streaming prediction criterion (see Figure 3 and Table 1 for model performance comparison and Figure 3\u2014figure supplement 1 for the distributions of the fitting coefficients of each of the tested models in this environment).\n\nIn what follows, we tested the performance of the Primacy model versus the Recency models, also across different age groups (including different experimental conditions), and across depressed participants.\n\n### Primacy versus Recency models across different age groups\n\nWe found no differences in the strength of the mood changes by age group (no significant group effect on mood in a linear mixed-effects model: F(152,1) = 2.35, p\u00a0=\u00a00.12, between an adult sample [n = 80] with mean age \u00b1 SD = 37.76 \u00b1 11.23, versus an adolescent sample [n = 72] with mean age of 15.49 \u00b1 1.48). The collection of these two datasets differed in age but also in experimental conditions as the adult sample was collected online (see Materials and methods for details and the preregistered analysis link), while the adolescent sample was a lab-based collection in an fMRI scanner.\n\nWe found that the Primacy model outperformed the different Recency models in both the online adult and the lab-based adolescent samples (see Figure 3 and Table 1 for model performance comparison and Figure 3\u2014figure supplement 1 for the distributions of the fitting coefficients in each age group).\n\n### Primacy versus Recency models across different diagnostic groups\n\nWe found no differences in the strength of the mood changes between the healthy and depressed adolescent participants (when controlling for the difference in baseline mood, there was no significant group effect on mood in a linear mixed-effects model: F(70,1) = 0.77, p\u00a0=\u00a00.38; between healthy participants [n = 29] with mean \u00b1 SD depression score [MFQ] = 1.84 \u00b1 2.49, versus participants diagnosed with major depression disorder [n = 43 with mean depression score of 8.31 \u00b1 6.27; 12 or higher being the cutoff for indicating depression]).\n\nComparing the Primacy model versus the different Recency models in the depressed adolescent sample, we found that the Primacy model outperformed each of the Recency models (see Figure 3 and Table 1 for model performance comparison). Moreover, we confirmed the superior performance of the Primacy model result also in adult participants with high risk for depression (n = 28 participants with CESD scores above 16, being the cutoff for high risk for depression, showed significantly lower MSEs for the Primacy against the Recency model in a Wilcoxon test with p<0.001).\n\nFor completeness, we also tested the Primacy model against models with other weighting of past events. Figure 3\u2014figure supplement 2 presents a model in which we added to the expectation term a decay parameter and a parameter for how many previous outcomes are included, resulting in various possible scaling curves for the influence of previous events (Equations S1 and S2). Comparing five such alternative models showed that the Primacy model outperformed these models too (significantly lower streaming prediction errors for the Primacy model in a Wilcoxon test with p<0.001).\n\nSee also Figure 3\u2014figure supplement 3 for a demonstration of the change over time in task values and the Primacy versus the Recency model parameters, shown both for a single participant and on average across the group.\n\n### Primacy versus Recency models in relation to brain responses\n\nFinally, we compared the Primacy and the Recency models on the basis of their relationship to brain activity measured using fMRI. To this end, participants were scanned whilst completing the structured-adaptive version of the task. We correlated BOLD signal with the participant-level weights of the parameters of the Primacy and two of the Recency models (the original Recency model and the Recency model that is most similar to the Primacy model, i.e., the one with both dynamic win probability and no Certain term). We found that neural activity preceding the mood rating phase (Figure 4A) was significantly correlated to the Primacy model expectation term ($\\beta_{E}$), which reflects the relationship between mood and previous events (Figure 4B, cluster at the anterior cingulate cortex [ACC] and ventromedial prefrontal cortex [vmPFC] regions, n\u00a0=\u00a056, peak beta = 44.80, t = 3.37 and p\u00a0=\u00a00.0017, which corrects to p<0.05, first by using the 3dClustSim in AFNI software [Analysis of Functional NeuroImages] with an autocorrelation function [ACF] resulting in p = 0.005 and a minimal cluster size of 100 voxels followed with a Bonferroni correction since we compared three different models, reaching p\u00a0=\u00a00.005/3\u00a0=\u00a00.0017). By contrast, both Recency models\u2019 individual parameters showed no significant relation to neural activity. To formally compare between the two models in their relationship to brain activity, we contrasted the two voxel-wise correlation images, that is, the BOLD signal correlation across participants with the Primacy model individual weights $\\beta_{E}$ (coefficients of the expectation term) versus BOLD signal correlation with the Recency models $\\beta_{E}$ . This showed a significantly stronger relation of the Primacy model to neural activity, specifically in the ACC and vmPFC regions (Figure 4C, t = 5.00, using the corrected threshold of p\u00a0=\u00a00.0017). This result provides a possible neural underpinning specific to the Primacy model\u2019s mathematical realization of expectations and mood. Additionally, mood ratings were correlated to the preceding neural activity level in the striatum during the structured-adaptive task (Figure 4\u2014figure supplement 1), in congruence with previous accounts of mood relations to striatal activity in the random task design.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig4-v3.jpg)\n\n**Figure 4.:** (A) Extracting individual whole-brain BOLD signal activation maps ($\\beta_{brain}$) during the time interval preceding each mood rating, and individual model parameters by fitting mood ratings with the Primacy model\u00a0($\\beta_{E}$).\u00a0(B) Correlation across participants between the individual weights of the model expectation term, $\\beta_{E}$ , and the individual voxel-wise neural activations. A significant cluster was received with a peak at [\u20133,52,6], size of 132 voxels, threshold at p\u00a0=\u00a00.0017 (after a multiple comparisons correction as well as a Bonferroni correction for the three 3dMVM models we tested). Below, the resulting cluster of significant correlation is presented aligned on the Automated Anatomical Labeling (AAL) brain atlas for spatial orientation (focus point of the image is at [\u20137.17,50,4.19], which is located in the ACC region). (C) A statistical comparison between the relation of brain activation to the Primacy versus the Recency models. We compared the regression coefficients of the correlation between participants\u2019 brain activation and the Primacy expectation term weights versus the regression coefficients of the relation to the Recency model expectation term (see Figure 4\u2014figure supplement 1 for the two images before thresholding and before contrasting against each other). This contrast showed a significantly stronger relation of the Primacy model expectation weight to brain signals at [\u201311,49,9], extending to a cluster of 529 voxels (p\u00a0=\u00a00.0017). See Materials and methods for a link to the online repository from where the neural analyses scripts and the presented images can be downloaded.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** None of the Recency models\u2019 clusters survived correction. Images show correlation across participants between the individual weights of the model expectation term, \u03b2E, and the individual whole-brain BOLD signal activation during the time interval preceding each mood rating (an uncorrected threshold of p\u00a0=\u00a00.05 and a minimal cluster size of 50 voxels).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62051/elife-62051-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Cluster peaks in the nucleus accumbens (NACC) and covers the ACC and Caudate (337 voxels, t = 4.96).\n\n## Discussion\n\nA fundamental assumption about how humans report on their mood is that they integrate over the history of their experiences. In this paper, we sought to test this assumption and establish the temporal structure of this integration.\n\nWe show that when humans report on their momentary mood, they do indeed integrate over past events in the environment. However, we find no support for the commonly assumed recency model of integration, that is, for the assumption that most recent events matter the most in this integration. Instead, we find several lines of evidence to support a primacy model of the integration of past experiences in mood reports.\n\nThe first line of evidence comes from comparing the primacy, the recency, and several other models in a probabilistic task that has been widely used in the past to influence subjective mood reports. This version of the probabilistic task presents participants with random RPE values (Rutledge et al., 2014). The model comparison, conducted using errors of within-subject prospective prediction of consecutive mood ratings, indicated that a primacy model, that is, a model that places greater and long-lasting emphasis on early events, described mood ratings the best. The Primacy model also outperformed several other plausible models, including an extended model that allowed other timing of previous events to be most influential, as well as models resulting from modifications of the Recency model (where terms were excluded or replaced by alternative task values).\n\nWe then sought to test whether our findings generalized beyond a random reward environment. We did so in order to emulate real-life situations where negative or positive events tend to cluster over periods of time, such as a conversation between two people that can include consistently pleasant (or unpleasant) events throughout the interaction time frame. We did this by adapting the probabilistic task in two different ways. First, by introducing blocks of predetermined consecutively negative or positive RPEs. In this structured environment, the Primacy model outperformed the alternative Recency models. We also modified the probabilistic task in another way, namely by introducing a PI control algorithm. This created a structured-adaptive task, with a block of consecutively negative or positive RPEs that were, however, tailored in real time to each individual\u2019s initial mood level and mood response, to maximize the influence of these events (such as when we modify our tone of speech in real time during a conversation, e.g., according to who we are interacting with and the response we aim for). The Primacy model clearly outperformed the alternative recency models also in this task.\n\nIt is conceivable that what appears to be a primacy effect is actually due to longer-lasting effects of, say, positive RPEs on mood\u2014this could be particularly exacerbated in the structured-adaptive task. However, since our result was also robust in a random task design, as well as when testing a model with a varying time window parameter that considered different number of previous trials (tmax, see Figure 3\u2014figure supplement 2), we do not find evidence for the block valence order to account for the better performance of the Primacy model. In addition, the interaction between individual behavior and the controller in the structured-adaptive environment could raise interpretative difficulties. Therefore, it is important that the Primacy model also fit better in the structured and random tasks, where the tasks did not respond to individual differences in responsiveness to RPEs. Yet, it is possible that this is a contribution to the fact that the advantage of the Primacy model over the Recency models is greater in the structured-adaptive task. There may also be additional mechanisms at play in the structured-adaptive task such as hedonic extinction towards RPEs that explain some of the increased performances of the Primacy model compared to the Recency model in this task.\n\nWe then also sought to test whether our findings generalized across two important variables. One such variable is age. Substantial evidence shows that adolescence is a time when levels of self-reported mood can change dramatically, for example, through overall increases in the levels of depression (Heller and Casey, 2016; Maciejewski et al., 2015; Ronen et al., 2016; Stringaris and Goodman, 2009). Also, adolescence marks a time when reward processing appears to be different to that of adulthood with reported increases in the sensitivity of mood (Braams et al., 2015; Casey et al., 2010; Heller and Casey, 2016; Kayser et al., 2015; Somerville et al., 2010; Walker et al., 2017). Our primacy model fitted better than the recency alternative in both adolescent and adult samples.\n\nThe other variable is subjects\u2019 depression. Its importance is twofold. First, the self-evident fact that persons with depression report a lower mood than non-depressed persons, this is the case in clinical but also in the experimental task setting we and others have used (Rutledge et al., 2017). This difference in mean scores could be reflecting a different way in which persons with depression report on their mood. In keeping with this, the integration of experiences could be happening in a different temporal structure. The second reason is that persons with depression are thought to display reward processing aberrations (Keren et al., 2018; Ng et al., 2019; Stringaris et al., 2015; Whitmer et al., 2012)\u2014for example, in the form of being less sensitive to rewards or learning less from them\u2014that could impact the way in which they integrate across environmental experiences. We address this question specifically in adolescents, the time of a sharp increase in depression incidence (Beesdo et al., 2009), and find no evidence that depressed adolescents applied a different model to the one that their non-depressed counterparts did. Moreover, also adult participants with high scores of depression showed that the Primacy model is a better account of their mood reports. These findings strongly suggest that the temporal representation of experiences offered by the model is robust to important personal characteristics.\n\nA formal comparison between the relation of brain activation to the Primacy versus the Recency mood models was conducted. We link the Primacy model to neural activity by a correlation between the model parameters and neural activation at the time preceding mood ratings. Specifically, we show that individual activation at the ACC and vmPFC is correlated to the weight of the expectation parameter of the Primacy model, but not the Recency model. These regions are implicated in mood regulation (Bush et al., 2000; Etkin et al., 2015; Etkin et al., 2011; Hiser and Koenigs, 2018; Rudebeck et al., 2014; Stevens et al., 2011; Zald et al., 2002) and in underlying decision making relative to previous outcomes (Behrens et al., 2007; Scholl et al., 2017; Scholl et al., 2015; Wittmann et al., 2016). Activity in these regions increased as the weight of the expectation parameter ( $\\beta_{E}$) of an individual was higher. Since the weight of this parameter determines the influence of previous outcomes on mood, this result suggests that these regions\u2019 activity plays a role in mediating the integration of previous outcomes to a subjective mood report. Therefore, the strength of this model-based fMRI analysis (Cohen et al., 2017; O'Doherty et al., 2007) is in allowing us to link neural signals to the computational relation between previous experiences and subjective mood reports.\n\nImportantly, Vinckier et al., 2018 also reported the mvPFC region as positively correlated in its activity level to changes in mood ratings, supporting the role that our model suggests for the mvPFC region in mediating mood ratings according to a primacy weighting of previous events. We did not find, however, the negative neural correlations to mood ratings that were also reported by that study.\n\nOur experiments examine only a short space of time, no longer than 40 min. Human experiences are undoubtedly integrated over longer time periods, including temporally distant events in childhood. Whilst these are inherently difficult to model experimentally, it is noteworthy that early-life experiences, such as early adversity, are thought to exert long-term influences on mood (Douglas et al., 2010; Lewis-Morrarty et al., 2015; Raby et al., 2015). We also note that the time scales of our experiments are congruous to a number of real-life situations, both in research and clinical terms.\n\nIn research terms, self-reported mood in EMA is typically within the span of hours (Kahneman et al., 2004; Larson et al., 1980; Taquet et al., 2020). Given that the goal of EMA is often to uncover mood dynamics in relation to experiences in the environment, our results strongly indicate that explicit modeling of the relative timing of these two variables to each other may be crucial. Similarly, during fMRI and other scanning, researchers often ask participants to report on their mood during these sessions and use these to relate to neuroimaging results. Our results suggest that not just the value of events as such (whether, e.g., an aversive film was shown to participants), but also when it was shown may differentially impact such reports.\n\nIn terms of clinical events\u2014such as patients\u2019 interactions with healthcare professionals for the purposes of psychotherapy or medication treatment\u2014these typically last for about an hour. Importantly, the assessment of treatment progress relies on self-report (or clinician assessment of patients\u2019 reports). Our results suggest that timing of such reports in relation to experiences during treatment could be an important source of variance.\n\nMoreover, although our experiments test for different temporal structures of reward, they use a single type of task, a simple gambling decision task. It might be that the temporal structure of mood dependence is sensitive to the type of task or the context (i.e., social situations such as a conversation may include a different integration), which is an important matter for future studies. Another potential caveat relates to the online data collection using the Amazon Mechanical Turk (MTurk) platform, which can possibly include a different subset of participant characteristics (Ophir et al., 2020), but importantly, our results were robust to this difference and were well-replicated in our lab-based participants. In respect to the Primacy model characteristics, we aimed to minimize the divergence from the existing Recency model (we therefore changed the expectation term to consider the average of all previous outcomes but maintained the sum and the overall exponential discounting of that term). This computational modification between the models reflected our hypothesis that expectations in non-random temporal structures of rewards would be also influenced by the history of previous outcomes. This modification then resulted in a Primacy weighting. Nevertheless, the better performance of a Primacy weighting was consistent also when considering other formulations for weighing of previous events (and without taking into account the fewer parameters of the Primacy model).\n\nOur results demonstrate that the Primacy model is superior to the Recency model, indicating that the full history of prior events influences mood. However, inclusion of a recency-weighted outcomes in the RPE term of the Primacy model prevents us from concluding simply that early events are more important than recent events in the ultimate outcome of self-reported mood. We therefore also note that when fitting the Primacy model the coefficients of the expectation term were significantly larger than the coefficients of the RPE term (which include recency-weighted outcomes), supporting the dominance of the expectation term primacy weighting (paired t-test with t = 2.6, p\u00a0=\u00a00.009, CI = [0.008,0.059]).\n\nAdditionally, there may be alternative, mathematically equivalent formulations of these models that would support different interpretations. Future work should compare the overall impacts of primacy and recency effects on mood with approaches robust to reparameterization, such as analysis of the causal effect of previous outcomes on mood using the potential-outcomes framework (Imbens and Rubin, 2015).\n\nOverall, our conclusion that the effect of outcomes on mood through expectations has a primacy weighting in our tasks holds robustly when we consider a variety of different but similar models that either have primacy weighting (Figure 3\u2014figure supplement 2) or recency weighting (Table 1). All the models with primacy weighting share that the expectation is based on an average over previous outcomes or potential outcome values. We stress that the expectation itself does not have to have primacy weighting for our conclusions to hold. The primacy model that we have chosen as our representative primacy model (due to having superior or statistically indistinguishable performance over the alternative primacy models) applies equal weights to all past outcomes to form the expectation, but we have also tried models where the weighting within the expectation had higher weights for more recent outcomes. In all these cases, the combination of current and past expectation still results in a primacy-weighted aggregate effect of previous outcomes on mood. The dependence of mood on an accumulation of previous expectations is therefore what causes the primacy weighting as the initial outcomes have a larger influence on mood versus a smaller influence of past expectation terms. In an intuitive sense, the primacy effect represents the greater weight first experiences have in a new environment or context, simply by virtue of coming first. The first event has nothing against which it can be compared, the second event has only itself and the first; the third event can be compared only against the first two, and so on, till eventually each additional event has a minimal impact in the face of all the events that have come before. The more trials we experience, the more information we gain, and the less meaning each event has on its own. This process has clear parallels to learning, but our models are agnostic to the exact mechanism by which expectations are accumulated. It is likely that there are equivalent formulations to our models in which expectation is a learned parameter controlled by a learning rate. The details of this mechanism are certainly of interest, but these will need to be elucidated by future studies.\n\nMore generally, our findings point to the importance of studying the temporal architecture of the interplay between experiences and mood. So far, computational and theoretic accounts of mood have focused on event value (either in terms of expectations or outcomes or both) (Eldar et al., 2016; Katsimerou et al., 2014; Russell et al., 1989; Rutledge et al., 2014; Vinckier et al., 2018; Watson and Tellegen, 1985) as influences on subjective reports of well-being, while neglecting the importance of time. Our results suggest that in addition to these influential properties of the environment the dimension of time, that is, the temporal structure of previous events, also plays an important role, and that rather than being a matter of what happened most recently, the temporal representation of experience in mood seems to be dominated by a long-lasting effect of early events.\n\n## Materials and methods\n\n### 1. The Primacy versus Recency mood models\n\nThe formulation of both models consisted of two dynamic terms: the expectation term (E) and the RPE term (R), which is the difference of the outcome relative to the expected value.\n\nSpecifically, the Recency model of mood at trial t (Mt) was defined as\n\n$$\nM_{t}=\u03f5_{t}+M_{0}+\\beta_{C}\\sumj=1t\\gamma^{t\u2212j}C_{j}+\\beta_{E}\\sumj=1t\\gamma^{t\u2212j}E_{j}+\\beta_{R}\\sumj=1t\\gamma^{t\u2212j}R_{j}\n$$\n\nwhere $\u03f5_{t}$ is a random noise variate with some unknown distribution (we may assume it to be normal with mean 0 and standard deviation $\\sigma$), $M_{0}$ is the participant\u2019s baseline mood, $\\gamma\\in0,1$ is an exponential discounting factor, Cj is the non-gamble certain amount at trial j (if not chosen then Cj = 0 and when chosen instead of a gamble then Ej = Rj = 0), $\\beta_{C}$ is the participant\u2019s sensitivity to certain rewards during non-gambling trials, $\\beta_{E}$ is the participant\u2019s sensitivity to expectation, and $\\beta_{R}$ is the sensitivity to surprise during gambles.\n\nIn this model, the expectation term at trial t (Et) was defined as the average between the two gamble values (see Figure 1, Equation 2) and the RPE term, R, was defined as\n\n$$\nR_{t}=A_{t}\u2212E_{t}\n$$\n\nAt being the trial outcome.\n\nIn the Primacy model, the expectation term was replaced by the average of all previous outcomes (Figure 1, Equation 3) and R was defined similarly as shown in Equation 7. The overall Primacy model for mood at trial t was\n\n$$\nM_{t}=\u03f5_{t}+M_{0}+\\beta_{E}\\sumj=1t\\gamma^{t\u2212j}E_{j}+\\beta_{R}\\sumj=1t\\gamma^{t\u2212j}R_{j}\n$$\n\nwhere\u00a0$\\beta_{E}$\u00a0and\u00a0$\\beta_{R}$\u00a0are the participant\u2019s sensitivity to previous outcomes and to how surprising these outcomes are relative to expectation, respectively. Note that this model performed better when we did not distinguish between gambling and non-gambling trials, which was another divergence from the standard Recency model.\n\n### 2. Model fitting\n\nAll models were fit using a TensorFlow package (code can be downloaded using the link provided in Section 6). We chose group regularization constants by creating simulated datasets with realistic parameters and selecting the regularization parameters from a grid that had the best performance. The grid consisted of powers of 10 from 0.001 to 10,000.\n\nFor optimization, we used the following generic parametric model across subjects:\n\n$$\nM_{s}^(t)=\\mu_{s}+\\sumv=1p\\beta_{v,s}\\sumj=1t\\gamma_{s}^{t\u2212j}X_{v,s}(j)\n$$\n\nwhere s indexes the subject, Ms(t) is subject's mood rating at trial t, \u00b5s is the subject-specific baseline mood, v is one of p time-varying task variables X (e.g., expectation or RPE values at each trial j), and \u03b2v,s are subject-specific coefficients for each time-varying variable Xv,s (note that we constrain \u03b21,\u2026,\u03b23 \u2265 0).\n\nTo facilitate optimization, we further re-parameterized the discount factor \u03b3s by defining\n\n$$\n\\gamma_{s}=\\frac{1}{1+exp\u2061(\u2212\u03be_{s})}\n$$\n\nso that\u00a0$\u03be_{s}$ is an unbounded real number.\n\nWe found that the use of group-level regularization was necessary in order to stabilize the estimated coefficients. This took the form of imposing a variance penalty on\u00a0$\u03be$ and on each coefficient \u03b2v. The empirical variance is defined as\n\n$$\nVar(\u03be)=\\frac{1}{n_{s}}\\sums=1n_{s}(\u03be_{s}\u2212\u03be\u2212)^{2}\n$$\n\nwhere ns is the number of subjects, and\u00a0$\u03be\u00af$ is the group mean:\n\n$$\n\u03be\u00af=\\frac{1}{n_{s}}\\sums=1n_{s}\u03be_{s}\n$$\n\nWe define Var(Xv) for v = 1,\u2026,p likewise.\n\nThe objective function is therefore\n\n$$\nminimize\\sums=1n_{s}\\sumt\\inT(M_{s}^(t)\u2212M_{s}(t))^{2}+\\lambda_{\u03be}Var(\u03be)+\\lambda_{\\beta}\\sumv=1pVar(\\beta_{v})\n$$\n\nwhere T is the set of trials where Ms(t) was defined (optionally, one can also discard the first few trials in T to minimize window effects, we required t \u2265 11), with \u03bb\u03be = 10 and \u03bb\u03b2 = 100 as the regularization parameters with the best performance in recovering the simulation ground truth for both models.\n\nA leave-out sample validation approach was used in all model fitting, where a subsample of 40% randomly selected participants were modeled and then results were confirmed on the entire sample.\n\n### 3. Testing the Primacy model across reward environments\n\n#### The random task\n\nParticipants played a gambling task where they experienced a series of different RPE values while rating their mood after every 2\u20133 trials. In this task, each trial consisted of a choice of whether to gamble between two monetary values or receive a certain amount. RPE values were randomly modified (ranging between \u22122.5 to +2.5) by assigning random values to the two gambles and a 50% probability for receiving one of these values as an outcome. The certain value was the average of the two gamble values. Specifically, each trial consisted of three phases: (1) gamble choice: 3 s during which the participants pressed left to get the certain value or right to gamble between two values (using a four-button response device); (2) expectation: only the chosen certain value or the two gamble options remained on the screen for 4 s; and (3) outcome: a feedback of the outcome value was presented for 1 s, followed by an inter-trial interval of 2\u20138 s. Participants completed 81 trials.\n\nThe mood rating consisted of two separate phases: (1) pre-rating mood phase, where the mood question \u2018How happy are you at this moment?\u2019 was presented for a random duration between 2.5 and 4 s, while the option to rate mood was still disabled; and (2) mood rating by moving a cursor along a scale labeled \u2018unhappy\u2019 on the left end and \u2018happy\u2019 on the right end. Each rating started from the center of the scale, and participants had a time window of 4 s to rate their mood. The cursor could move smoothly by holding down a single button press towards the left or the right directions. Each rating was followed by a 2\u20138 s jittered interval. Participants completed 34 mood ratings, and the overall task lasted 15 min.\n\n#### The structured task\n\nIn this version, participants experienced blocks of high or low RPE values, that is, patterns of positive or negative events, where RPE values were predefined and identical for all participants. RPE values were set by a pre-made choice of the two gamble values and the outcome value, such that these values were random but RPE value, the difference between the average of the two values and the outcome, resulted in a predefined value (positive blocks of RPE = +5 during the first and the third blocks and a negative block in the middle of RPE = \u22125 during the second block). To maintain the unpredictability of outcomes within a block in the latter fixed version, 30% of the trials were incongruent to the block valence (i.e., small negative values of \u22121.5 during the first and third positive blocks, and a positive value of +1.5 during the second negative block).\n\nThe certain value was the average between the two gamble values. To avoid a predictable pattern of wins and losses, 30% of the trials were incongruent trials, where gamble and outcome values resulted in the opposite valence of RPE to the block (negative during the first and third positive blocks and positive during the middle negative block), but of a smaller value (RPE incongruent = 1.5). More specifically, the task consisted of three blocks, where each block had 27 trials and 11\u201312 mood ratings. Trials were identical to the random version in appearance. Participants again completed overall 34 mood ratings, and the overall task lasted 15 min.\n\n#### The structured-adaptive task\n\nThe structured-adaptive version was designed to maximally influence mood upwards or downwards by increasing or decreasing RPE values in real time. This task was identical to the structured task in the block design and number of trials but differed in RPE values being calculated in real time using a closed-loop control (PI algorithm used in control of nonlinear systems in engineering; Levine, 2011). Specifically, following each mood rating, RPE values were increased or decreased according to the difference of mood from the target mood, which was set to the highest mood value in the first and third positive blocks and to the lowest mood during the second block. This setup therefore generated personalized \u2018reward environments' as the task values were calculated online according to individual mood response and were not predetermined as in conventional paradigms.\n\nMore specifically, in each iteration of mood rating, the current mood, M(t), was compared to the block mood target value (MT), which was set prior to the task in the aim to generate maximal mood transitions. Mood target value was defined as the maximal mood value on the mood scale in first and third blocks and the minimal mood value during the second block. To bring the mood value as close as possible to the target value MT, the algorithm aimed at minimizing the error between the rated mood and the target mood value (ME).\n\n$$\nM_{E}(t+1)={\\frac{M_{T}\u2212M(t)}{m_{max}\u2212M_{min}},M_{T}=100%\u00a0of\u00a0mood\u00a0scale\\frac{M(t)\u2212M_{T}}{m_{max}\u2212M_{min}},M_{T}=0%\u00a0of\u00a0mood\u00a0scale\n$$\n\nThe resulting $M_{E}$ value was between 0 and 1, then mapped to a change in the task RPE value, using a PI controller algorithm. This control algorithm uses a proportional and an integral error term derived from $M_{E}$ . Importantly, the integral error term enables an RPE modification when mood remains in the same distance from the target mood value, and it was reset for each block.\n\nNext, the RPE value was calculated such that the larger the mood error the stronger the modification of the RPE value, as follows:\n\n$$\nRPE(t+1)={RPE_{baseline}\u2217M_{E}(t)+\\sum1tM_{E},Congruent\u00a0trialRPE_{baseline}\u2217M_{E}(t)+\\frac{\\sum1tM_{E}}{3},Incongruent\u00a0trial\n$$\n\nwhere RPEbaseline is a fixed value that was pre-calibrated to the value of 14 points (to have a moderate yet efficient influence of RPE change on mood). Congruent trials were 70% of trials, aligned with the control algorithm direction; the remaining 30% were incongruent, providing an RPE value with the opposite sign to the block context (set to be smaller in amplitude: on average, incongruent RPE values were \u22121.5 \u00b1 0.8 SD). Then the two gamble values were calculated for the next 2\u20133 trials as follows:\n\n$$\nL(t+1)=H(t+1)\u2212RPE(t+1)\n$$\n\nwhere H was the higher value, randomly assigned from a list ranging between [\u22121.5,14] with a step size of 0.2, and L is the lower gamble outcome. The allocation of these values between the upper or lower squares on the screen was randomly assigned.\n\nThe certain value (CR) that appeared on the left side was set to the average between the two values (unless this resulted in a certain value higher than two points, in which case it was half of the lower value L(t + 1)).\n\nLast, the outcome value (A) was assigned according to the block H(t + 1) in 70% of the first and third positive blocks trials, and L(t + 1) during 70% of the second block trials (and vice versa in the 30% of trials that were incongruent).\n\nThis closed-loop circuit continued throughout the task, with each new mood rating used to update the reward values for the next series of 2\u20133 trials.\n\nIn all above task designs, participants were not informed of the probability of winning the gamble. We probed whether participants noticed that the win probability was rigged between blocks in the structured and structured-adaptive tasks with a follow-up questionnaire, which showed that most participants (90%, 65/72) were unaware of the manipulation (in a scale between 0 and 3, the average rating for whether the task was unfair was 0.36 \u00b1 0.69 SD with 7/72 subjects indicating \u2018agree\u2019 or \u2018strongly agree\u2019).\n\n#### Participants\n\nParticipants completed either the random task (n = 60, mean age \u00b1 SD = 39.81 \u00b1 13, 44% females), the structured task (n = 89, mean age \u00b1 SD = 37.55 \u00b1 10.46, 44% females), or the structured-adaptive task (n = 80, mean age \u00b1 SD = 37.76 \u00b1 11.23, 42% females).\u00a0See Table 2 for participants characteristics.\n\n**Table 2.**\n Participants\u2019 demographics for all datasets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Random online MTurk sample</th>\n      <th></th>\n      <th>Age</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>(n = 67)</td>\n      <td></td>\n      <td>Average</td>\n      <td>39.81</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>SD</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Sex</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Male</td>\n      <td>37</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Female</td>\n      <td>32</td>\n    </tr>\n    <tr>\n      <td>Structured online MTurk sample</td>\n      <td></td>\n      <td>Age</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>(n = 89)</td>\n      <td></td>\n      <td>Average</td>\n      <td>37.55</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>SD</td>\n      <td>10.46</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Sex</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Male</td>\n      <td>48</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Female</td>\n      <td>41</td>\n    </tr>\n    <tr>\n      <td>Structured-adaptive online MTurk sample</td>\n      <td></td>\n      <td>Age</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>(n = 80)</td>\n      <td></td>\n      <td>Average</td>\n      <td>37.76</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>SD</td>\n      <td>11.23</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Sex</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Male</td>\n      <td>46</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Female</td>\n      <td>34</td>\n    </tr>\n    <tr>\n      <td>Structured-adaptive lab-based sample</td>\n      <td></td>\n      <td>Age</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>(n = 72)</td>\n      <td></td>\n      <td>Average</td>\n      <td>15.49</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>SD</td>\n      <td>1.48</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Sex</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Male</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Female</td>\n      <td>55</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>MFQ score</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Average</td>\n      <td>5.81</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>SD</td>\n      <td>5.98</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Diagnosis</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Healthy volunteer</td>\n      <td>29</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>MDD</td>\n      <td>43</td>\n    </tr>\n  </tbody>\n</table>\n\nThese participants were recruited from Amazon Mechanical Turk (MTurk) system and completed the tasks online. Analyses of this structured-adaptive dataset were publicly preregistered on an open science online repository to confirm our modeling results (https://osf.io/g3u6n/). The MTurk Worker ID was used to distribute a compensation of $8 for completing the task and a separate task bonus between $1 and $6 according to the points gained during the task. Participants were instructed before the task that they would receive a payment that is proportional to the points that they gain during the task. These study populations were ordinary, non-selected adults of 18 years of age or older. Participants were not screened for eligibility, all individuals living in the US and who wanted to participate were able to do so. Participants were restricted to doing the task just once. Three participants were excluded from analyses due to an error in the task script where mood ratings were inconsistently spread along the three blocks. All participants received similar scripted instructions and provided informed consent to a protocol approved by the NIH Institutional Review Board.\n\n#### Statistical testing of the influence of reward environments on mood\n\nWe applied a linear mixed effects model to estimate the task influence on mood using the nlme package in RStudio (2020). This model enabled the estimation of the across-participants significance of mood change while controlling for the within-participant variability in mood change slopes and intercepts, defined as random effects. Specifically, the independent variable was the response variable of interest mood (M), and the dependent variables were time (t, which is the trial index) and time squared (t2), with the two different time variables considered as random effects, as follows:\n\n$$\nM\u223ct+t2+(t+t2|subject)\n$$\n\nThe effect was considered significant with p<0.05. All t-tests conducted were two-sided.\n\n### 4. Testing the Primacy model across participant characteristics and neural signals\n\nAn additional dataset of the structured-adaptive task was collected in an fMRI scanner, providing us with different experimental conditions, a different age group of adolescent participants, data of participants diagnosed with depression, and a recording of neural signals during the task (n = 72, mean age \u00b1 SD = 15.49 \u00b1 1.48, 76% females, mean depression score MFQ \u00b1 SD = 5.81 \u00b1 5.98, n = 43 participants met diagnostic criteria for depression according to DSM-5, of whom at the time of the experiment n = 18 had an ongoing depressive episode and n = 35 were medicated).\u00a0See Table 2 for participants characteristics. These participants completed the task in an fMRI scanner and were compensated for doing the task and for scanning, as well as receiving a separate bonus proportional to the points earned during the task (a value between $5 and $35). This task version lasted 24 min instead of the duration of 15 min of the online versions to allow for an optimal analysis of brain data. Participants were screened for eligibility, and inclusion criteria were the capability to be scanned in the MRI scanner and not satisfying diagnosis criteria for disorders other than depression according to DSM-5. Overall, five participants were excluded from analyses due to incomplete data files, and three additional participants were excluded due to repeatedly rating a single fixed mood value for an entire block of the task. These participants received the same scripted instructions and provided informed consent to a protocol approved by the NIH Institutional Review Board.\n\n### 5. Analyzing the neural correlates of the Primacy model\n\n#### fMRI data acquisition\n\nParticipants in the adolescent sample performed the structured-adaptive task while scanning in a General Electric (Waukesha, WI) Signa 3-Tesla MR-750s magnet, being randomly assigned to one of two similar scanners. Task stimuli were displayed via back-projection from a head-coil-mounted mirror. Foam padding was used to constrain head movement. Behavioral choice responses were recorded using a hand-held Fiber Optic Response Pad (FORP). 47 oblique axial slices (3.0 mm thickness) per volume were obtained using a T2-weighted echo-planar sequence (echo time, 30 ms; flip angle, 75\u00b0; 64 \u00d7 64 matrix; field of view, 240 mm; in-plane resolution, 2.5 mm \u00d7 2.5 mm; repetition time was 2000 ms). To improve the localization of activations, a high-resolution structural image was also collected from each participant during the same scanning session using a T1-weighted standardized magnetization prepared spoiled gradient recalled echo sequence with the following parameters: 176 1 mm axial slices; repetition time, 8100 ms; echo time, 32 ms; flip angle, 7\u00b0; 256 \u00d7 256 matrix; field of view, 256 mm; in-plane resolution, 0.86 mm \u00d7 0.86 mm; NEX, 1; bandwidth, 25 kHz. During this structural scanning session, all participants watched a short neutral-mood documentary movie about bird migration.\n\n#### Data preprocessing\n\nAnalysis of fMRI data was performed using Analysis of Functional and Neural Images (AFNI; Cox, 1996) software (version 19.3.14). Standard preprocessing of EPI data included slice-time correction, motion correction, spatial smoothing with a 6 mm full-width half-maximum Gaussian smoothing kernel, normalization into Talairach space and a 3D nonlinear registration. Each participant's data were transformed to a percent signal change using the voxel-wise time-series mean blood oxygen-level-dependent (BOLD) activity. Time series were analyzed using multiple regression (Neter et al., 1990), where the entire trial was modeled using a gamma-variate basis function. The model included the following task phases: gamble choice: an interval that lasted up to 3 s, from the presentation of the three monetary values to the choice button press, left for the certain amount or right to gamble. Expectation: a 4 s interval from making the choice of whether to gamble to receiving the gamble outcome. Outcome: a 1 s interval during which the received outcome is shown. The pre-rating interval: a variable interval between 2.5 and 4 s when the mood question is presented but the option to rate mood is still disabled. Mood rating phase: a 4 s interval during which participants rate their mood. The model also included six nuisance variables modeling the effects of residual translational (motion in the x, y, and z planes), rotational motion (roll, pitch, and yaw), and a regressor for baseline plus slow drift effect, modeled with polynomials (baseline being defined as the non-modeled phases of the task). Echo-planar images (EPIs) were visually inspected to confirm image quality and minimal movement. The code for generating the full processing stream for each participant was created using the afni_proc.py command. This script creates also a quantitative and qualitative quality control (QC) outputs, which were used to verify the processing in the present study. We then ran a whole-brain, group-level ANOVA (3dMVM [Chen et al., 2014] in AFNI) with the weights of the Primacy or the Recency model as between-participant covariates of each of these neural activations (each participant\u2019s neural activity was represented by a single whole-brain image of activation across all trials).\n\n#### Statistical significance\n\nThis was determined at the group level using 3dClustSim (the latest acceptable version in AFNI with an ACF model), which generated a corrected to p<0.05 voxel-wise significance threshold of p<0.005 and a minimal cluster size of 100 voxels. We analyzed relation to model parameters with neural activity during three different phases of the task: activation during the pre-mood rating period, mood rating encoding (with mood values as a parametric regressor of the mood pre-rating period), and task-based RPE encoding (RPE values as a parametric regressor of the outcome period). Since these are three separate tests, we added a Bonferroni correction to the multiple comparison correction, which resulted in a final p-value threshold of 0.005/3\u00a0=\u00a00.0017.\n\n### 6. Code and data availability\n\nTo enable the reproducibility of this study we made all scripts and datasets available online at: https://osf.io/vw7sz. This online repository includes the scripts for modeling the mood data, the source-data of Figure 2 (tasks and mood rating data of all participants), the afni_proc and 3dMVM neural analysis scripts and the whole-brain neural images presented in Figure 4. All the unprocessed neuroimaging data can be found online at: https://openneuro.org/datasets/ds003709.\n",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "1ceea8f6-2f63-4033-9d0d-88c6f582bc8d",
+      "submission_id": "e843b5cf-9d66-457a-8e23-3eb741a2732a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan Roiser, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62051.sa1](https://doi.org/10.7554/eLife.62051.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is a very interesting study whose goal is to determine what drives subjective mood over time during a reward-based decision making task. The authors report data from a series of online behavioural studies and one performed during neuroimaging. Participants played a well-established gambling task during which they had to select between a sure outcome and a 50:50 gamble, reporting momentary mood assessments throughout the game. The authors compared the performance of a number of computational models of how the mood ratings were generated.\n\nThe authors identify as their \"baseline\" model that proposed by Rutledge and colleagues, in which an important determinant of mood seems to be the reward prediction error - this is called the Recency model. They contrast it with a Primacy model, in which earlier events (in this case, aggregated and weighted experienced outcomes) play a more important role. They validate the model across different behavioural conditions, involving healthy participants and depressed patients. The conclusion is that the data are more consistent with their Primacy model, in other words a stronger weight of earlier events on reported mood. In the fMRI experiment they found that the weights of the Primacy model correlated with prefrontal activation across participants, while this was not the case for the Recency model.\n\nThe paper is clearly written and easy to understand. The question of how humans combine experienced events into reported mood is topical and the conclusions are striking, given the dominance of recency-based models in the literature (e.g. Kahneman's peak-end heuristic). The paper takes an interesting approach and presents an impressive amount of data, and the reviewers and editor felt that it makes a substantial contribution to the literature.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The temporal representation of experience in subjective mood\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that substantial additional analyses are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis is a very interesting study whose goal is to determine what drives subjective mood over time during a reward-based decision making task. The authors report data from a series of online studies and one performed with fMRI. Participants played a well-established gambling task during which they had to select between a sure outcome and a 50:50 gamble, reporting momentary mood assessments throughout the game. The authors compared the performance of a number of models of how the mood ratings were generated.\n\nThe authors identify as their \"baseline\" model that proposed by Rutledge and colleagues, in which an important determinant of mood seems to be the reward prediction error - the authors call this Recency model. They contrast it with a Primacy model, where earlier events (in this case, average experienced outcomes) play a more important role. They validate the model across different behavioural conditions, involving healthy subjects, teenagers and depressive patients. The conclusion is that the data are more consistent with their Primacy model, in other words a higher weight of earlier events on reported mood. In the fMRI experiment they found that the weights of the Primacy model correlated with prefrontal activation across subjects, while this was not the case for the Recency model.\n\nThe paper is clearly written and easy to understand. The question of how humans combine experienced events into reported mood is topical and the conclusions are striking, given the dominance of recency-based models in the literature (e.g. Kahneman's peak-end heuristic). The paper takes an interesting approach and presents an impressive amount of data.\n\nHowever, at some points the arguments seemed a considerable stretch, in part because important experimental and methodological detail is missing, and in part because the analyses do not currently consider a number of potential confounds in both the models and the task design. It is not clear whether these concerns can be addressed or not, but we would like to give you the opportunity to do so. Ultimately, these concerns come down to whether we can be certain that the results reflect a true primacy effect, as opposed to some other process that simply appears at face value to be a primacy effect.\n\nTo this end, some important checks need to be made concerning both the computational and the fMRI analyses, as detailed below. These do require substantial extra modelling work, and it is quite possible that the conclusions will not survive these control analyses.\n\nEssential revisions:\n\n1. In relation to model comparison, the authors need to show us whether or not their model selection criteria allow them to correctly recover the true generative model in simulated datasets. Are we sure that the model selection criteria are unbiased toward the two models?\n\n2. Related to point (1), can the authors provide a qualitative signature of mood data that falsifies the Recency model at the group level (see Palminteri, Wyart and Koechlin. 2017). They do so in Figure S2 for one participant, but it would be important to show the same (or similar) result at the group level (this should be easier in the structured or in the structured-adaptive conditions).\n\n3. It is not clear where the weights on the primacy graph (Figure 1B) come from. The recency weights make sense - there is a discount factor in the model that is less than 1, so there is a an exponential discount of more distant past events. However, for the primacy model the expectation is apparently calculated as the arithmetic mean of previous outcomes (which suggests a flat weight across previous trials) and the discount factor remains. So how can this generate the decreasing pattern of weights? It would be really useful if the authors could spell this out as it is currently quite confusing.\n\n4. The models differ in terms of whether they learn about the expected value of the gamble outcomes, or whether they assume a 50:50 gamble (the Recency model assumes this, the Primacy model generates an average of all experienced outcomes). This leaves open the possibility that the benefit of the Primacy model is simply that people do in fact largely use experienced outcomes to generate their expectations, rather than believing the outcome probabilities displayed in the experiment. Can the authors exclude this possibility?\n\n5. Related to the above point, the structured and adaptive environments seem to have something to learn about (blocks with positive vs. negative RPEs), so it is perhaps not surprising that humans show evidence of learning here, and a model with some learning outperforms one with none.\n\nThe description of these environments is insufficient at present - can the authors explain how RPEs were manipulated? Was it by changing the probability of win/loss outcomes, and if so how? Or was it by changing the magnitudes of the options? For the adaptive design was the change deterministic? And was the outcome (and thus the RPE) therefore always positive if mood was low; or was this probabilistic, and if so with what probability? Finally, did the Recency model still estimate its expectations here as 50:50, even when this was not the case? If so, this requires justification.\n\n6a. In addition to changing the expectation term of the Recency model, the Primacy model also drops the term for the certain outcomes (because this improves model performance). Can this account for the relative advantage of the Primacy over the Recency model? In other words, if the certain outcome term is dropped from the Recency model as well, does the Primacy model still win? If the authors want to establish conclusively that Primacy is a better model than Recency, then surely more models ought to be compared, at the very least using a 2x2 design with primacy/recency of expectations/outcomes.\n\n6b. On a related point, the standard Recency model was originally designed such that the certain option C was NOT the average of the two gambles, so C was required in the model (at least in the 2014 PNAS paper). Here, C is the average of the gambles, so presumably it would be identical to E in the Recency model, and therefore be extraneous in the Recency model as well as the Primacy model. Did the authors perform model comparison to see if C could be eliminated from the Recency model? If so, this is not another difference between the models after all.\n\n7. The structured and structured-adaptive tasks seem to have some potential problems when it comes to assessing their impact on mood ratings:\n\ni. the valence of the blocks was not randomised, meaning that the results could be confounded. E.g. what if negative RPE effects are longer-lasting than positive RPE effects? This seems plausible given the downward trend in mood in the random environment despite average RPE of zero. Could this also explain the pattern of mood in the other two tasks, rather than primacy?\n\nii. scaling: if there is a marginally decreasing relationship between cumulative RPE and mood (such that greater and greater RPEs are required to lift/decrease mood by the same amount), then this will resemble a primacy effect? This is unlikely to be an issue in the random task but could be a problem in the structured and certainly in the structured-adaptive tasks.\n\niii. individual differences in responsiveness to RPE: in the structured-adaptive task, some subjects' mood ratings may be very sensitive to RPE, and others very insensitive. One might expect that given the control algorithm has a target mood, the former group would reach this target fairly soon and then have trials without any RPEs, while the latter group would not reach the target despite ever increasing RPEs. In both cases the Primacy model would presumably win, due to sensitivity to outcomes in the first half or insensitivity to bigger outcomes in the second half respectively? Can the authors exclude these possibilities?\n\n8. In relation to the fMRI analyses, the results in the main text seem to result from a second-level ANCOVA, where the individual weights of the Primacy model are shown to correlate with activation in the prefrontal cortex. Similar analyses using the weights of Recency model do not produce significant results at the chosen threshold. This analysis is problematic for two reasons. First, absence of evidence does not imply evidence of absence - was a formal comparison of the regression coefficients conducted? Second, to really validate the model the authors should show that the trial-by-trial correlates of expectations and prediction errors are more consistent with the Primacy than the Recency model, using a parametric analysis at the participant level.\n\n9. Similar to point 6, it is hard to conclude much about the models from the fact that the Primacy model E beta (but not the Recency model E beta) correlates with BOLD responses in a prefrontal cluster, when the Recency model E term is based on previous expectations, not previous outcomes. Likewise with the direct comparison of the models' voxel-wise correlation images.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"The temporal representation of experience in subjective mood\" for consideration by eLife. Your article has been reviewed by the same 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted the below summary to help you prepare a revised submission. The reviewers felt that you had been very receptive to their comments, making extensive changes and performing the requested additional analyses. Consequently, the manuscript is nearly ready for publication, subject to a few final clarifications that are listed below.\n\nEssential Revisions:\n\n1. The new Figure S1 is helpful, but caused some confusion as the description in the legend could be clearer. The reviewers assume that the blue bars are the weights attached to all outcomes (not expectations) from trial 1-8, all contributing to the expectation on trial 8; the orange bars are the weights attached to all outcomes from trial 1-7, all contributing to the expectation on trial 7; and so on. Assuming this understanding is correct, please amend the text in the legend to clarify this better, and also provide a colour key for the figure to make it clear that the bars refer to outcomes from specific trials.\n\n2. The Primacy vs Recency model comparison is of critical importance, so it would help the paper to be as clear as possible about it. The key comparison here is between the variant of the Recency model that is identical to the Primacy model in terms of having both a learned outcome as the expectation and without the certainty term. Your model comparison seems to test these changes separately rather than together (apologies if we have misunderstood this).\n\nCan you explain what it is, specifically, about the Primacy model that causes it to perform better than the best Recency one (e.g. is it the nature of the way the expectation is learned, or something else)? As we understand it, the central claim of your paper is that people learn the expectation term in a way that effectively puts more weight on the initial outcomes encountered, so it would be really useful to understand what it is about the learning process that causes this effect, and whether it is this that improves the fit of the model.\n\n3. Relating to the above point, the key comparisons between Primacy and Recency models in the main manuscript (e.g. the comparative fMRI analyses) should be between these similar models, not the Primacy and original Recency model.\n",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "62c2894a-93f9-45bb-84b2-0fd254682bb2",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C1",
+      "claim": "Humans refer to their mood state regularly in day-to-day as well as clinical interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans refer to their mood state regularly in day-to-day as well as clinical interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about human behavior that is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "d47a1442-2233-4b20-9196-897d70e55283",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C2",
+      "claim": "Theoretical accounts suggest that when reporting on our mood we integrate over the history of our experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical accounts suggest that when reporting on our mood we integrate over the history of our experiences; yet, the temporal structure of this integration remains unexamined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to existing theoretical accounts in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "689e4f64-c016-41dd-9027-0dcb16e3ed45",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C3",
+      "claim": "The temporal structure of mood integration over experiences remains unexamined.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical accounts suggest that when reporting on our mood we integrate over the history of our experiences; yet, the temporal structure of this integration remains unexamined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a gap in the literature that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "b2c972cc-82d4-49f1-929c-808ad628d30c",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C4",
+      "claim": "Early events exert a stronger influence on reported mood (a primacy weighting) compared to recent events.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use a computational approach to quantitatively answer this question and show that early events exert a stronger influence on reported mood (a primacy weighting) compared to recent events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by computational modeling across multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "1aa6d6ba-d1db-4750-9c80-b9709c6de684",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C5",
+      "claim": "A Primacy model accounts better for mood reports compared to a range of alternative temporal representations across random, consistent, or dynamic reward environments.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a Primacy model accounts better for mood reports compared to a range of alternative temporal representations across random, consistent, or dynamic reward environments, different age groups, and in both healthy and depressed participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model comparison analyses across multiple experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "47fd79ab-e3a1-42b3-8f4e-416d0566779a",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C6",
+      "claim": "The Primacy model accounts better for mood reports across different age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a Primacy model accounts better for mood reports compared to a range of alternative temporal representations across random, consistent, or dynamic reward environments, different age groups, and in both healthy and depressed participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model comparison analyses in both adult and adolescent samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "022ccf30-0109-426f-b7aa-cf70ced02fd9",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C7",
+      "claim": "The Primacy model accounts better for mood reports in both healthy and depressed participants.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a Primacy model accounts better for mood reports compared to a range of alternative temporal representations across random, consistent, or dynamic reward environments, different age groups, and in both healthy and depressed participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model comparison analyses across diagnostic groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "efffad63-db11-49bd-8e1d-6e3291fa43fb",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C8",
+      "claim": "There is evidence for neural encoding of the Primacy model in frontal brain regions related to mood regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find evidence for neural encoding of the Primacy, but not the Recency, model in frontal brain regions related to mood regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fMRI data showing correlation between Primacy model parameters and brain activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "9db2d218-7ed0-4e45-88d8-a3b30ee2fff7",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C9",
+      "claim": "There is no evidence for neural encoding of the Recency model in frontal brain regions related to mood regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find evidence for neural encoding of the Primacy, but not the Recency, model in frontal brain regions related to mood regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fMRI data showing no significant correlation between Recency model parameters and brain activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "8f07e6ab-cf99-4035-9add-29ef57995e00",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C10",
+      "claim": "Self-reports of momentary mood carry broad implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-reports of momentary mood carry broad implications, yet their underpinnings are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of mood self-reports.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "42a2e128-af2c-4e6f-b686-cf85ede0bf01",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C11",
+      "claim": "The underpinnings of self-reports of momentary mood are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-reports of momentary mood carry broad implications, yet their underpinnings are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in understanding that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "4b188c26-4ca5-45f6-aa62-1dfece1064de",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C12",
+      "claim": "We report on our momentary mood to convey to others an impression of our well-being in everyday life.",
+      "claim_type": "EXPLICIT",
+      "source": "We report on our momentary mood to convey to others an impression of our well-being in everyday life (Clark and Watson, 1988; Forgas et al., 1984)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "f5bf3106-4d50-48e8-92e7-6fb931e08a45",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C13",
+      "claim": "Self-reports of momentary mood form a cornerstone of psychiatric interviewing.",
+      "claim_type": "EXPLICIT",
+      "source": "clinically, self-reports of momentary mood form a cornerstone of psychiatric interviewing (Daviss et al., 2006; Wood et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "0c9c8169-4b98-47bd-add0-253dde46a5b6",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C14",
+      "claim": "Momentary mood is widely used to quantify human emotional responses in research.",
+      "claim_type": "EXPLICIT",
+      "source": "in research, momentary mood is widely used to quantify human emotional responses, such as in ecological momentary assessment (EMA) (Kahneman et al., 2004; Larson et al., 1980; Taquet et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to research methodology literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "857d8a1b-22d1-4f1a-9755-3bd5071bfe12",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C15",
+      "claim": "The standard account is that momentary mood reporting is predominantly affected by recent reward prediction errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard account is that momentary mood reporting is predominantly affected by recent reward prediction errors (Rutledge et al., 2014) (RPEs, or how much better or worse outcomes were relative to what was expected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the existing standard model in the literature, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "9ba08574-f8ce-4089-bfb3-bb167ab5cad3",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C16",
+      "claim": "The more surprising an event is and the more recent it is, the more it will affect momentary mood according to the standard account.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the more surprising an event is (operationalized as a positive or negative RPE) and the more recent it is, the more it will affect momentary mood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the standard recency model described in the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "8e5c22c7-a2f3-472d-9b0d-c3547cf0a4ed",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C17",
+      "claim": "The standard account posits that humans apply a recency weighting such that their most recent experiences override those in the more distant past.",
+      "claim_type": "EXPLICIT",
+      "source": "In modeling terms, the standard account posits that humans apply a recency weighting such that their most recent experiences override those in the more distant past (e.g., experiences that happened early in the course of a conversation or a game would matter far less).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational formulation of the standard model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "369ef8be-4dea-4108-8282-31880c2f9d74",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C18",
+      "claim": "This standard temporal account is widely applied in models of mood.",
+      "claim_type": "EXPLICIT",
+      "source": "This standard temporal account is widely applied in models of mood (Eldar et al., 2016; Katsimerou et al., 2014; Rutledge et al., 2014; Vinckier et al., 2018), yet is largely unexamined and has not been compared to plausible alternatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to modeling literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "e4450db6-1d69-4e89-b29e-858fa8f0346e",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C19",
+      "claim": "The standard temporal account is largely unexamined and has not been compared to plausible alternatives.",
+      "claim_type": "EXPLICIT",
+      "source": "This standard temporal account is widely applied in models of mood (Eldar et al., 2016; Katsimerou et al., 2014; Rutledge et al., 2014; Vinckier et al., 2018), yet is largely unexamined and has not been compared to plausible alternatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the literature that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "cb274c90-68c7-4b67-80fc-d45704535c44",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C20",
+      "claim": "According to a primacy model, experiences that occur early in a conversation, a game, or interaction prevail over more recent ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, at the opposite end of the standard recency model stands a primacy account of momentary mood. According to a primacy model, experiences that occur early in a conversation, a game, or interaction prevail over more recent ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the alternative primacy model proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "0cc7a449-85d8-4536-919e-0bf6b9249e5b",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C21",
+      "claim": "The first instances of an interaction can be highly informative.",
+      "claim_type": "EXPLICIT",
+      "source": "The intuition for such a model comes from idiomatic expressions such as starting off on the right foot or empirical evidence, which shows that the first instances of an interaction can be highly informative (Ambady and Rosenthal, 1992; Houser and Furler, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to empirical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "e2505a31-2015-4cf9-b2de-fc359c844375",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C22",
+      "claim": "A computational approach can help answer how humans integrate over their experiences to arrive at a self-report of their moods.",
+      "claim_type": "EXPLICIT",
+      "source": "A computational approach can help us answer this important question as it allows us to make explicit in model terms how humans integrate over their experiences in order to arrive at a self-report of their moods (Huys et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to computational psychiatry literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "1042bcd8-c138-46ed-92de-acc7d9c43133",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C23",
+      "claim": "Previous studies have shown important differences in reward processing between adolescent and adult groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we examine the generalizability of the different temporal integration models across age groups given that previous studies have shown important differences in reward processing particularly between adolescent and adult groups (Braams et al., 2015; Casey et al., 2010; Heller and Casey, 2016; Kayser et al., 2015; Somerville et al., 2010; Walker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to developmental neuroscience literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "e92804a0-68a8-41c3-8893-3a4c568adaf3",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C24",
+      "claim": "Depression is associated with aberrations in reward processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we also examine the generalizability of these models across healthy volunteers and depressed participants, given the wealth of evidence that depression is associated with aberrations in reward processing (Keren et al., 2018; Ng et al., 2019; Stringaris et al., 2015; Whitmer et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "73e91519-2a0a-47e5-9ca0-81ed151f08d3",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C25",
+      "claim": "The reporting of mood and evoking emotional responses leads to activations in a network of brain areas encompassing the fronto-limbic circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that the reporting of mood and evoking emotional responses leads to activations in a network of brain areas encompassing the fronto-limbic circuit (Etkin et al., 2015; Etkin et al., 2011; Rutledge et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to neuroimaging literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "c141e6bc-362c-41a0-b0ce-0b6de8765083",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C26",
+      "claim": "Concordance between computational model parameters and neural activity levels provides evidence that the mechanisms described by the model correspond to the neural processes underlying that behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Concordance between computational model parameters and neural activity levels provides evidence that the mechanisms described by the model correspond to the neural processes underlying that behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological principle in computational neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "d3171375-1669-44ae-9a69-98f08a21f442",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C27",
+      "claim": "Mood ratings correspond to the general state of well-being of participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Such mood ratings have been shown before to correspond to the general state of well-being of participants (Rutledge et al., 2017); we validated this in our dataset with a significant correlation between baseline mood ratings and participant's depressive symptom scores (with Mood and Feelings Questionnaire [MFQ] measure in adolescent sample: CC = \u22120.62, p = 2.62e-8, CI = [\u22120.75,\u20130.44]; with Center for Epidemiologic Studies Depression [CESD] measure in adult sample: CC = \u22120.69, p = 7.12e-13, CI = [\u22120.79,\u20130.56])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both citation to previous work and data from the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "d7f9e410-138d-49cb-9d0a-103156052336",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C28",
+      "claim": "Baseline mood ratings show strong concordance with the gold standard psychiatric interview (KSADS) in distinguishing between patients with depression and healthy volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "and in strong concordance with the gold standard psychiatric interview (KSADS) in distinguishing between patients with depression and healthy volunteers (where the mean initial mood of healthy was also significantly higher than of depressed, t = \u22123.36, df = 69, p = 0.0012, Cohen's d effect size = 0.97).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the current study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "1500fb3d-c74b-4c68-a4eb-8269bc35a2db",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C29",
+      "claim": "The mean initial mood of healthy participants was significantly higher than that of depressed participants.",
+      "claim_type": "EXPLICIT",
+      "source": "where the mean initial mood of healthy was also significantly higher than of depressed, t = \u22123.36, df = 69, p = 0.0012, Cohen's d effect size = 0.97",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the current study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "09ad330c-10c5-45f8-97cb-2ae2d37f0510",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C30",
+      "claim": "The Primacy model has overall fewer parameters compared to the Recency model.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as can be seen in Equations 6\u20138 in Materials and methods, the Primacy model has overall fewer parameters compared to the Recency model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison of the mathematical formulations of the two models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "2614f333-16d7-45ee-b49d-adf1655dcbed",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C31",
+      "claim": "The Primacy model outperformed the Recency model in the random task environment based on streaming prediction error.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the Primacy versus the different Recency models, we found that the Primacy model outperformed each of the Recency models on the streaming-prediction criterion (see Figure 3 and Table 1 for model performance comparison and Figure 3\u2014figure supplement 1 for the distributions of the fitting coefficients of each of the tested models in this environment).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model comparison statistics and figures showing performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "8d5250b3-6fc0-48c8-9844-1228575bf946",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C32",
+      "claim": "The Primacy model outperformed the Recency model in the structured task environment based on streaming prediction error.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the Primacy versus the different Recency models, we found that the Primacy model outperformed each of the Recency models on the streaming prediction criterion (see Figure 3 and Table 1 for model performance comparison and Figure 3\u2014figure supplement 1 for the distributions of the fitting coefficients of each of the tested models in this environment).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model comparison statistics and figures showing performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "57fd5b3d-686d-434c-9488-777aeed7f251",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C33",
+      "claim": "The Primacy model outperformed the Recency model in the structured-adaptive task environment based on streaming prediction error.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the Primacy versus the different Recency models, we found that the Primacy model outperformed each of the Recency models on the streaming prediction criterion (see Figure 3 and Table 1 for model performance comparison and Figure 3\u2014figure supplement 1 for the distributions of the fitting coefficients of each of the tested models in this environment).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model comparison statistics and figures showing performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "e3b55b64-1ab6-453a-9eab-2a7de2db631f",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C34",
+      "claim": "There were no differences in the strength of mood changes by age group.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no differences in the strength of the mood changes by age group (no significant group effect on mood in a linear mixed-effects model: F(152,1) = 2.35, p = 0.12, between an adult sample [n = 80] with mean age \u00b1 SD = 37.76 \u00b1 11.23, versus an adolescent sample [n = 72] with mean age of 15.49 \u00b1 1.48).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis comparing mood changes across age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "8842be90-e778-46d6-948c-0b20d01efb8a",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C35",
+      "claim": "The Primacy model outperformed the different Recency models in both the online adult and the lab-based adolescent samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Primacy model outperformed the different Recency models in both the online adult and the lab-based adolescent samples (see Figure 3 and Table 1 for model performance comparison and Figure 3\u2014figure supplement 1 for the distributions of the fitting coefficients in each age group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model comparison statistics across age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "81b9bde5-0555-45e2-859b-41243dcc8b03",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C36",
+      "claim": "There were no differences in the strength of mood changes between healthy and depressed adolescent participants when controlling for baseline mood.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no differences in the strength of the mood changes between the healthy and depressed adolescent participants (when controlling for the difference in baseline mood, there was no significant group effect on mood in a linear mixed-effects model: F(70,1) = 0.77, p = 0.38; between healthy participants [n = 29] with mean \u00b1 SD depression score [MFQ] = 1.84 \u00b1 2.49, versus participants diagnosed with major depression disorder [n = 43 with mean depression score of 8.31 \u00b1 6.27; 12 or higher being the cutoff for indicating depression]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis comparing mood changes across diagnostic groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "06f4ab8a-138d-4d39-83f1-bbf4bb45a953",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C37",
+      "claim": "The Primacy model outperformed each of the Recency models in the depressed adolescent sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the Primacy model versus the different Recency models in the depressed adolescent sample, we found that the Primacy model outperformed each of the Recency models (see Figure 3 and Table 1 for model performance comparison).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model comparison statistics in the depressed sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "1d7d6a5e-02a9-4192-9c64-babc4d5aee0a",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C38",
+      "claim": "The Primacy model showed superior performance in adult participants with high risk for depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we confirmed the superior performance of the Primacy model result also in adult participants with high risk for depression (n = 28 participants with CESD scores above 16, being the cutoff for high risk for depression, showed significantly lower MSEs for the Primacy against the Recency model in a Wilcoxon test with p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis in a high-risk adult sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "7873589b-cb19-492d-89d2-7b143f5db949",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C40",
+      "claim": "Both Recency models' individual parameters showed no significant relation to neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, both Recency models' individual parameters showed no significant relation to neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fMRI analysis showing no significant correlations for Recency models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "3d057b3e-4050-4839-98a4-003624a0b8f0",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C41",
+      "claim": "The Primacy model showed a significantly stronger relation to neural activity than the Recency models, specifically in the ACC and vmPFC regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed a significantly stronger relation of the Primacy model to neural activity, specifically in the ACC and vmPFC regions (Figure 4C, t = 5.00, using the corrected threshold of p = 0.0017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by direct statistical comparison of brain-behavior correlations between models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "73bbb521-fbf2-4e44-b02c-6c590edecf67",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C42",
+      "claim": "Mood ratings were correlated to the preceding neural activity level in the striatum during the structured-adaptive task.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, mood ratings were correlated to the preceding neural activity level in the striatum during the structured-adaptive task (Figure 4\u2014figure supplement 1), in congruence with previous accounts of mood relations to striatal activity in the random task design.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fMRI analysis and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "7f12779d-0d3f-4691-b3f6-b6eddd60198d",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C43",
+      "claim": "When humans report on their momentary mood, they integrate over past events in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that when humans report on their momentary mood, they do indeed integrate over past events in the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study supported by the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "2f61d143-49d8-4230-a167-9b222f160827",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C44",
+      "claim": "There is no support for the commonly assumed recency model of integration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find no support for the commonly assumed recency model of integration, that is, for the assumption that most recent events matter the most in this integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "3a004e5a-4f35-4de9-b1b0-44570fae5e75",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C45",
+      "claim": "Early-life experiences such as early adversity are thought to exert long-term influences on mood.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst these are inherently difficult to model experimentally, it is noteworthy that early-life experiences, such as early adversity, are thought to exert long-term influences on mood (Douglas et al., 2010; Lewis-Morrarty et al., 2015; Raby et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to developmental psychology literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "605a4fbe-7382-41b4-af33-18c09073350c",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C46",
+      "claim": "The time scales of the experiments are congruous to a number of real-life situations, both in research and clinical terms.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the time scales of our experiments are congruous to a number of real-life situations, both in research and clinical terms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the ecological validity of the experimental paradigm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "6ba5e7e5-a783-42b1-a8e9-79bd1d04d6f9",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C47",
+      "claim": "Self-reported mood in EMA is typically within the span of hours.",
+      "claim_type": "EXPLICIT",
+      "source": "In research terms, self-reported mood in EMA is typically within the span of hours (Kahneman et al., 2004; Larson et al., 1980; Taquet et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to EMA methodology literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "a89f3cc7-25cb-48e8-9f1e-0ed6e994f1c3",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C48",
+      "claim": "The assessment of treatment progress relies on self-report or clinician assessment of patients' reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the assessment of treatment progress relies on self-report (or clinician assessment of patients' reports).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about clinical practice based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "203042fd-f3ce-4b33-ba53-7c3aab5433c9",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C49",
+      "claim": "The coefficients of the expectation term in the Primacy model were significantly larger than the coefficients of the RPE term.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore also note that when fitting the Primacy model the coefficients of the expectation term were significantly larger than the coefficients of the RPE term (which include recency-weighted outcomes), supporting the dominance of the expectation term primacy weighting (paired t-test with t = 2.6, p = 0.009, CI = [0.008,0.059]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical comparison of model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "f8317db9-641d-4625-87ee-7c4e5de094e9",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C50",
+      "claim": "The primacy effect represents the greater weight first experiences have in a new environment or context, simply by virtue of coming first.",
+      "claim_type": "EXPLICIT",
+      "source": "In an intuitive sense, the primacy effect represents the greater weight first experiences have in a new environment or context, simply by virtue of coming first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the computational mechanism underlying the primacy model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "25f797a7-9e14-409c-8ccf-228b99942e4f",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C51",
+      "claim": "The more trials we experience, the more information we gain, and the less meaning each event has on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "The more trials we experience, the more information we gain, and the less meaning each event has on its own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the computational properties of the primacy model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "65a9f355-2b14-4cde-87d9-a48d62b577ba",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C52",
+      "claim": "Computational and theoretic accounts of mood have focused on event value while neglecting the importance of time.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, computational and theoretic accounts of mood have focused on event value (either in terms of expectations or outcomes or both) (Eldar et al., 2016; Katsimerou et al., 2014; Russell et al., 1989; Rutledge et al., 2014; Vinckier et al., 2018; Watson and Tellegen, 1985) as influences on subjective reports of well-being, while neglecting the importance of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the mood modeling literature and identifies a gap.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "92a671b0-657b-4a6a-bc83-a075814b287c",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C53",
+      "claim": "The temporal structure of previous events plays an important role in mood reporting.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that in addition to these influential properties of the environment the dimension of time, that is, the temporal structure of previous events, also plays an important role",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "1d3544ec-9dfa-4116-bd9a-d0e44edf8060",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C54",
+      "claim": "The temporal representation of experience in mood is dominated by a long-lasting effect of early events rather than recent events.",
+      "claim_type": "EXPLICIT",
+      "source": "and that rather than being a matter of what happened most recently, the temporal representation of experience in mood seems to be dominated by a long-lasting effect of early events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "d6a8f744-63f3-47c3-864b-650b7d9abbb4",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C55",
+      "claim": "The Primacy model performed better when not distinguishing between gambling and non-gambling trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this model performed better when we did not distinguish between gambling and non-gambling trials, which was another divergence from the standard Recency model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from model comparison that informed the final model specification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "dd3b0c01-5e0c-4ac9-afdc-9b3703b88d58",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C56",
+      "claim": "Model recovery analysis showed it was possible to correctly identify the true model from simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "According to both the training error and the streaming prediction criteria, it was possible to recover the true model from the simulated data (the Recency model performed better on data simulated with the Recency model, and vice versa; see Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model recovery simulations validating the model comparison approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "408cea6e-4045-4cb5-a0a9-9bfba5c6cb6a",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C57",
+      "claim": "Most participants (90%) were unaware of the manipulation in win probability between blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "We probed whether participants noticed that the win probability was rigged between blocks in the structured and structured-adaptive tasks with a follow-up questionnaire, which showed that most participants (90%, 65/72) were unaware of the manipulation (in a scale between 0 and 3, the average rating for whether the task was unfair was 0.36 \u00b1 0.69 SD with 7/72 subjects indicating 'agree' or 'strongly agree').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by questionnaire data collected from participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "113ffb52-503b-44bb-8a25-0ea7e54829b7",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C61",
+      "claim": "Vinckier et al., 2018 reported the mvPFC region as positively correlated in its activity level to changes in mood ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Vinckier et al., 2018 also reported the mvPFC region as positively correlated in its activity level to changes in mood ratings, supporting the role that our model suggests for the mvPFC region in mediating mood ratings according to a primacy weighting of previous events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites previous neuroimaging findings that support the current study's results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "1861f50a-1b20-43a1-84f2-82d44cf6043a",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C62",
+      "claim": "The Primacy model outperformed alternative models with other weighting of past events.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing five such alternative models showed that the Primacy model outperformed these models too (significantly lower streaming prediction errors for the Primacy model in a Wilcoxon test with p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical comparison of model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "e6e82197-289d-46f3-a411-8bc49ed0685b",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C63",
+      "claim": "The ACC and vmPFC regions are implicated in mood regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions are implicated in mood regulation (Bush et al., 2000; Etkin et al., 2015; Etkin et al., 2011; Hiser and Koenigs, 2018; Rudebeck et al., 2014; Stevens et al., 2011; Zald et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to neuroimaging literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "83ded616-29b7-4fa5-ad81-19e64fce4cc5",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "claim_id": "C64",
+      "claim": "The ACC and vmPFC regions are implicated in underlying decision making relative to previous outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "and in underlying decision making relative to previous outcomes (Behrens et al., 2007; Scholl et al., 2017; Scholl et al., 2015; Wittmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to decision-making literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "736decf3-394f-4987-bc00-236807a62fe4",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study establishes the importance and ubiquity of momentary mood self-reports across everyday, clinical, and research contexts, while identifying a critical gap in understanding the temporal structure of how experiences are integrated into mood reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C10-C14 collectively establish the motivation for the study through citations to prior literature and identification of a knowledge gap. The claims about the importance of mood reports in various contexts (C12-C14) are well-supported by appropriate citations, and the identification of the unexamined temporal structure (C3, C19) provides clear justification for the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "da1b9f0d-e38e-48d8-81ef-597ba65c4f3d",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The standard recency model of mood, which posits that recent reward prediction errors have the strongest influence on momentary mood reports, is widely applied in computational models but has not been rigorously tested against alternative temporal representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 accurately characterize the existing literature on mood modeling, supported by multiple citations (Rutledge et al., 2014; Eldar et al., 2016; Katsimerou et al., 2014; Vinckier et al., 2018). The identification that this standard account is 'largely unexamined' (C19) is a reasonable assessment that motivates the comparative model testing approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "5e8bae49-d6fc-4fcb-922f-2225636806f1",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A primacy model of mood, where early experiences in an interaction have greater influence than recent ones, represents a plausible alternative to the standard recency model, and computational approaches can formalize and test such temporal integration mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 establish the theoretical basis for the primacy model through citations to empirical evidence (Ambady and Rosenthal, 1992; Houser and Furler, 2007) and computational psychiatry methodology (Huys et al., 2016). The primacy model is presented as a testable alternative hypothesis rather than an established fact, which is appropriate for the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "9c209ade-b372-4533-a1cb-327e792409b3",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mood ratings in the experimental task are validated as meaningful measures of well-being, showing significant correlations with depression symptom scores and distinguishing between healthy and depressed participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 provide validation evidence with specific statistical results (correlation coefficients, p-values, effect sizes) from both the current study and citations to prior work. The correlations with MFQ (CC = -0.62, p = 2.62e-8) and CESD (CC = -0.69, p = 7.12e-13) scores, along with group differences (t = -3.36, p = 0.0012, Cohen's d = 0.97), provide strong empirical support for the validity of the mood measure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "0f89764a-6541-4fd3-b9ce-f9c1c90f1d80",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Primacy model, which weights early events more heavily than recent events, significantly outperforms the standard Recency model in predicting mood reports across three different reward environments (random, structured, and structured-adaptive), demonstrating that the temporal representation of experience in mood is dominated by early rather than recent events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C31-C33 present the core finding with statistical support from streaming prediction error comparisons across all three task environments (Table 1, Figure 3). The model comparison uses appropriate validation methods (leave-out sample, streaming prediction), and model recovery analysis (C56) confirms the validity of the comparison approach. The Primacy model also has fewer parameters than the Recency model (C30), making the superior performance more compelling. The conclusions (C43-C44, C54) are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "0f452345-5686-4d20-95a0-96c5495ad13b",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The superior performance of the Primacy model over the Recency model generalizes across age groups, with consistent results in both adult (mean age 37.76 years) and adolescent (mean age 15.49 years) samples, despite known differences in reward processing between these developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C34-C35 demonstrate generalizability across age with statistical support. The lack of age differences in mood change strength (F(152,1) = 2.35, p = 0.12) controls for potential confounds, and the Primacy model outperforms Recency models in both age groups (Table 1, Figure 3). This addresses an important potential moderator given prior literature on developmental differences in reward processing (C23).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "f718a5e5-d51e-47de-b263-9d282fd04919",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Primacy model's superior performance generalizes across diagnostic groups, showing consistent advantages over Recency models in both healthy participants and those with major depressive disorder, as well as in adults at high risk for depression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C36-C38 demonstrate generalizability across clinical status with appropriate statistical controls. The lack of group differences in mood change strength when controlling for baseline (F(70,1) = 0.77, p = 0.38) addresses potential confounds, and the Primacy model consistently outperforms Recency models in depressed adolescents and high-risk adults (p < 0.001). This is important given known reward processing aberrations in depression (C24).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "24cf8650-f966-4b26-8e74-c1df534f137e",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Primacy model has fewer parameters than the Recency model and outperforms not only the standard Recency model but also multiple alternative variants and other temporal weighting schemes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C55, and C62 address potential concerns about model complexity and alternative specifications. The Primacy model's superior performance despite having fewer parameters (C30) strengthens the case for its validity. Testing against multiple Recency variants (with dynamic win probability, without Certain term, with outcome as expectation) and alternative temporal weighting schemes (Figure 3-figure supplement 2) demonstrates robustness of the finding (all p < 0.001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "4cd28c13-9d1f-461d-a1e2-806902a62e62",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neural activity in the anterior cingulate cortex (ACC) and ventromedial prefrontal cortex (vmPFC) during the pre-mood rating period correlates significantly with Primacy model parameters but not with Recency model parameters, with the Primacy model showing significantly stronger brain-behavior correlations in these mood regulation regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 and C40-C41 present neuroimaging evidence with appropriate statistical thresholding (p = 0.0017 after multiple comparison and Bonferroni correction, cluster size 132 voxels for correlation, 529 voxels for contrast, t = 5.00). The ACC and vmPFC regions are well-established in mood regulation and decision-making literature (C63-C64), providing biological plausibility. The direct statistical contrast between models (C41) is methodologically sound and strengthens the inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "ceae7ca4-eef6-4642-ba3c-6f2743027b36",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mood ratings correlate with striatal activity during the structured-adaptive task, consistent with prior findings, and previous work by Vinckier et al. (2018) reported similar vmPFC correlations with mood changes, supporting the current findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C61 provide convergent evidence from striatal activity and prior literature. The striatal finding (Figure 4-figure supplement 1) replicates established results, and the citation to Vinckier et al. (2018) regarding mvPFC activity provides independent support for the neural correlates of the Primacy model. This convergence across studies strengthens confidence in the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "08d59661-ec87-460c-9dd3-e8920199b8f3",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Within the Primacy model, the expectation term coefficients are significantly larger than the RPE term coefficients, supporting the dominance of primacy weighting, which reflects that early experiences have greater weight simply by virtue of coming first and that each additional event has diminishing impact as more information is accumulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 provide mechanistic interpretation of the Primacy model with statistical support (paired t-test: t = 2.6, p = 0.009, CI = [0.008, 0.059]). The interpretation that early events matter more because they have less prior context (C50-C51) is a reasonable inference from the mathematical structure of the model, though the authors appropriately note this is 'intuitive' rather than definitively proven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "7ff4413d-0afe-4ff1-8318-568a39d55714",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Model recovery analysis demonstrates that the model comparison criteria can correctly identify the true data-generating model from simulated data, validating the model selection approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 addresses a critical methodological concern about model identifiability. The model recovery analysis showing that both training error and streaming prediction criteria correctly recover the true model from simulated data (Supplementary file 1) provides important validation of the model comparison approach and protects against model selection biases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "e9704633-2918-4722-84cc-51471a818930",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Most participants (90%) were unaware of the block structure manipulation in win probability, indicating that the structured task design did not create obvious demand characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by questionnaire data (65/72 participants unaware, average fairness rating 0.36 \u00b1 0.69 SD on 0-3 scale). This addresses a potential confound where explicit awareness of task structure could influence mood reports independently of the computational mechanisms being tested. The high rate of unawareness supports the validity of the experimental manipulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "b8f71ccb-e655-4b16-905b-309a56662b62",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior literature establishes that adolescents and adults differ in reward processing, depression is associated with reward processing aberrations, mood reporting activates fronto-limbic circuits, and concordance between model parameters and neural activity validates computational mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 accurately summarize relevant prior literature with appropriate citations. These claims establish the theoretical and empirical context for testing model generalizability across age and diagnostic groups, and for the neuroimaging validation approach. The characterizations of prior work appear accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "fffb0539-4b21-4da2-bc7e-7056de86ef63",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The experimental timescales (15-40 minutes) are relevant to real-world contexts including ecological momentary assessment (typically hours), clinical interactions (typically ~1 hour), and treatment progress assessment, though early-life experiences over longer timescales are difficult to model experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 appropriately contextualize the temporal scope of the findings with citations to relevant literature (EMA: Kahneman et al., 2004; Larson et al., 1980; Taquet et al., 2020; early adversity: Douglas et al., 2010; Lewis-Morrarty et al., 2015; Raby et al., 2015). The authors appropriately acknowledge the limitation that longer timescales are 'inherently difficult to model experimentally' while arguing for the relevance of their timescale to important real-world applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    },
+    {
+      "id": "acea38c2-073a-4b1d-8fdc-deb424f6bcac",
+      "content_id": "f4ee5734-5bea-499d-8a52-a13da1b97dea",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior computational models of mood have focused on event value while neglecting temporal structure, and the current results demonstrate that the temporal dimension\u2014specifically the timing of events\u2014plays an important role in mood reporting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 accurately characterize a gap in prior modeling work (supported by citations to Eldar et al., 2016; Katsimerou et al., 2014; Russell et al., 1989; Rutledge et al., 2014; Vinckier et al., 2018; Watson and Tellegen, 1985) and present the study's contribution to addressing this gap. The conclusion that temporal structure matters is well-supported by the model comparison results across multiple datasets and conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:11.109088Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "62c2894a-93f9-45bb-84b2-0fd254682bb2",
+      "result_id": "736decf3-394f-4987-bc00-236807a62fe4"
+    },
+    {
+      "claim_id": "d47a1442-2233-4b20-9196-897d70e55283",
+      "result_id": "736decf3-394f-4987-bc00-236807a62fe4"
+    },
+    {
+      "claim_id": "689e4f64-c016-41dd-9027-0dcb16e3ed45",
+      "result_id": "736decf3-394f-4987-bc00-236807a62fe4"
+    },
+    {
+      "claim_id": "8f07e6ab-cf99-4035-9add-29ef57995e00",
+      "result_id": "736decf3-394f-4987-bc00-236807a62fe4"
+    },
+    {
+      "claim_id": "42a2e128-af2c-4e6f-b686-cf85ede0bf01",
+      "result_id": "736decf3-394f-4987-bc00-236807a62fe4"
+    },
+    {
+      "claim_id": "4b188c26-4ca5-45f6-aa62-1dfece1064de",
+      "result_id": "736decf3-394f-4987-bc00-236807a62fe4"
+    },
+    {
+      "claim_id": "f5bf3106-4d50-48e8-92e7-6fb931e08a45",
+      "result_id": "736decf3-394f-4987-bc00-236807a62fe4"
+    },
+    {
+      "claim_id": "0c9c8169-4b98-47bd-add0-253dde46a5b6",
+      "result_id": "736decf3-394f-4987-bc00-236807a62fe4"
+    },
+    {
+      "claim_id": "857d8a1b-22d1-4f1a-9755-3bd5071bfe12",
+      "result_id": "da1b9f0d-e38e-48d8-81ef-597ba65c4f3d"
+    },
+    {
+      "claim_id": "9ba08574-f8ce-4089-bfb3-bb167ab5cad3",
+      "result_id": "da1b9f0d-e38e-48d8-81ef-597ba65c4f3d"
+    },
+    {
+      "claim_id": "8e5c22c7-a2f3-472d-9b0d-c3547cf0a4ed",
+      "result_id": "da1b9f0d-e38e-48d8-81ef-597ba65c4f3d"
+    },
+    {
+      "claim_id": "369ef8be-4dea-4108-8282-31880c2f9d74",
+      "result_id": "da1b9f0d-e38e-48d8-81ef-597ba65c4f3d"
+    },
+    {
+      "claim_id": "e4450db6-1d69-4e89-b29e-858fa8f0346e",
+      "result_id": "da1b9f0d-e38e-48d8-81ef-597ba65c4f3d"
+    },
+    {
+      "claim_id": "cb274c90-68c7-4b67-80fc-d45704535c44",
+      "result_id": "5e8bae49-d6fc-4fcb-922f-2225636806f1"
+    },
+    {
+      "claim_id": "0cc7a449-85d8-4536-919e-0bf6b9249e5b",
+      "result_id": "5e8bae49-d6fc-4fcb-922f-2225636806f1"
+    },
+    {
+      "claim_id": "e2505a31-2015-4cf9-b2de-fc359c844375",
+      "result_id": "5e8bae49-d6fc-4fcb-922f-2225636806f1"
+    },
+    {
+      "claim_id": "d3171375-1669-44ae-9a69-98f08a21f442",
+      "result_id": "9c209ade-b372-4533-a1cb-327e792409b3"
+    },
+    {
+      "claim_id": "d7f9e410-138d-49cb-9d0a-103156052336",
+      "result_id": "9c209ade-b372-4533-a1cb-327e792409b3"
+    },
+    {
+      "claim_id": "1500fb3d-c74b-4c68-a4eb-8269bc35a2db",
+      "result_id": "9c209ade-b372-4533-a1cb-327e792409b3"
+    },
+    {
+      "claim_id": "b2c972cc-82d4-49f1-929c-808ad628d30c",
+      "result_id": "0f89764a-6541-4fd3-b9ce-f9c1c90f1d80"
+    },
+    {
+      "claim_id": "1aa6d6ba-d1db-4750-9c80-b9709c6de684",
+      "result_id": "0f89764a-6541-4fd3-b9ce-f9c1c90f1d80"
+    },
+    {
+      "claim_id": "2614f333-16d7-45ee-b49d-adf1655dcbed",
+      "result_id": "0f89764a-6541-4fd3-b9ce-f9c1c90f1d80"
+    },
+    {
+      "claim_id": "8d5250b3-6fc0-48c8-9844-1228575bf946",
+      "result_id": "0f89764a-6541-4fd3-b9ce-f9c1c90f1d80"
+    },
+    {
+      "claim_id": "57fd5b3d-686d-434c-9488-777aeed7f251",
+      "result_id": "0f89764a-6541-4fd3-b9ce-f9c1c90f1d80"
+    },
+    {
+      "claim_id": "7f12779d-0d3f-4691-b3f6-b6eddd60198d",
+      "result_id": "0f89764a-6541-4fd3-b9ce-f9c1c90f1d80"
+    },
+    {
+      "claim_id": "2f61d143-49d8-4230-a167-9b222f160827",
+      "result_id": "0f89764a-6541-4fd3-b9ce-f9c1c90f1d80"
+    },
+    {
+      "claim_id": "1d3544ec-9dfa-4116-bd9a-d0e44edf8060",
+      "result_id": "0f89764a-6541-4fd3-b9ce-f9c1c90f1d80"
+    },
+    {
+      "claim_id": "47fd79ab-e3a1-42b3-8f4e-416d0566779a",
+      "result_id": "0f452345-5686-4d20-95a0-96c5495ad13b"
+    },
+    {
+      "claim_id": "e3b55b64-1ab6-453a-9eab-2a7de2db631f",
+      "result_id": "0f452345-5686-4d20-95a0-96c5495ad13b"
+    },
+    {
+      "claim_id": "8842be90-e778-46d6-948c-0b20d01efb8a",
+      "result_id": "0f452345-5686-4d20-95a0-96c5495ad13b"
+    },
+    {
+      "claim_id": "022ccf30-0109-426f-b7aa-cf70ced02fd9",
+      "result_id": "f718a5e5-d51e-47de-b263-9d282fd04919"
+    },
+    {
+      "claim_id": "81b9bde5-0555-45e2-859b-41243dcc8b03",
+      "result_id": "f718a5e5-d51e-47de-b263-9d282fd04919"
+    },
+    {
+      "claim_id": "06f4ab8a-138d-4d39-83f1-bbf4bb45a953",
+      "result_id": "f718a5e5-d51e-47de-b263-9d282fd04919"
+    },
+    {
+      "claim_id": "1d7d6a5e-02a9-4192-9c64-babc4d5aee0a",
+      "result_id": "f718a5e5-d51e-47de-b263-9d282fd04919"
+    },
+    {
+      "claim_id": "09ad330c-10c5-45f8-97cb-2ae2d37f0510",
+      "result_id": "24cf8650-f966-4b26-8e74-c1df534f137e"
+    },
+    {
+      "claim_id": "d6a8f744-63f3-47c3-864b-650b7d9abbb4",
+      "result_id": "24cf8650-f966-4b26-8e74-c1df534f137e"
+    },
+    {
+      "claim_id": "1861f50a-1b20-43a1-84f2-82d44cf6043a",
+      "result_id": "24cf8650-f966-4b26-8e74-c1df534f137e"
+    },
+    {
+      "claim_id": "efffad63-db11-49bd-8e1d-6e3291fa43fb",
+      "result_id": "4cd28c13-9d1f-461d-a1e2-806902a62e62"
+    },
+    {
+      "claim_id": "9db2d218-7ed0-4e45-88d8-a3b30ee2fff7",
+      "result_id": "4cd28c13-9d1f-461d-a1e2-806902a62e62"
+    },
+    {
+      "claim_id": "7873589b-cb19-492d-89d2-7b143f5db949",
+      "result_id": "4cd28c13-9d1f-461d-a1e2-806902a62e62"
+    },
+    {
+      "claim_id": "3d057b3e-4050-4839-98a4-003624a0b8f0",
+      "result_id": "4cd28c13-9d1f-461d-a1e2-806902a62e62"
+    },
+    {
+      "claim_id": "e6e82197-289d-46f3-a411-8bc49ed0685b",
+      "result_id": "4cd28c13-9d1f-461d-a1e2-806902a62e62"
+    },
+    {
+      "claim_id": "83ded616-29b7-4fa5-ad81-19e64fce4cc5",
+      "result_id": "4cd28c13-9d1f-461d-a1e2-806902a62e62"
+    },
+    {
+      "claim_id": "73bbb521-fbf2-4e44-b02c-6c590edecf67",
+      "result_id": "ceae7ca4-eef6-4642-ba3c-6f2743027b36"
+    },
+    {
+      "claim_id": "113ffb52-503b-44bb-8a25-0ea7e54829b7",
+      "result_id": "ceae7ca4-eef6-4642-ba3c-6f2743027b36"
+    },
+    {
+      "claim_id": "203042fd-f3ce-4b33-ba53-7c3aab5433c9",
+      "result_id": "08d59661-ec87-460c-9dd3-e8920199b8f3"
+    },
+    {
+      "claim_id": "f8317db9-641d-4625-87ee-7c4e5de094e9",
+      "result_id": "08d59661-ec87-460c-9dd3-e8920199b8f3"
+    },
+    {
+      "claim_id": "25f797a7-9e14-409c-8ccf-228b99942e4f",
+      "result_id": "08d59661-ec87-460c-9dd3-e8920199b8f3"
+    },
+    {
+      "claim_id": "dd3b0c01-5e0c-4ac9-afdc-9b3703b88d58",
+      "result_id": "7ff4413d-0afe-4ff1-8318-568a39d55714"
+    },
+    {
+      "claim_id": "408cea6e-4045-4cb5-a0a9-9bfba5c6cb6a",
+      "result_id": "e9704633-2918-4722-84cc-51471a818930"
+    },
+    {
+      "claim_id": "1042bcd8-c138-46ed-92de-acc7d9c43133",
+      "result_id": "b8f71ccb-e655-4b16-905b-309a56662b62"
+    },
+    {
+      "claim_id": "e92804a0-68a8-41c3-8893-3a4c568adaf3",
+      "result_id": "b8f71ccb-e655-4b16-905b-309a56662b62"
+    },
+    {
+      "claim_id": "73e91519-2a0a-47e5-9ca0-81ed151f08d3",
+      "result_id": "b8f71ccb-e655-4b16-905b-309a56662b62"
+    },
+    {
+      "claim_id": "c141e6bc-362c-41a0-b0ce-0b6de8765083",
+      "result_id": "b8f71ccb-e655-4b16-905b-309a56662b62"
+    },
+    {
+      "claim_id": "3a004e5a-4f35-4de9-b1b0-44570fae5e75",
+      "result_id": "fffb0539-4b21-4da2-bc7e-7056de86ef63"
+    },
+    {
+      "claim_id": "605a4fbe-7382-41b4-af33-18c09073350c",
+      "result_id": "fffb0539-4b21-4da2-bc7e-7056de86ef63"
+    },
+    {
+      "claim_id": "6ba5e7e5-a783-42b1-a8e9-79bd1d04d6f9",
+      "result_id": "fffb0539-4b21-4da2-bc7e-7056de86ef63"
+    },
+    {
+      "claim_id": "a89f3cc7-25cb-48e8-9f1e-0ed6e994f1c3",
+      "result_id": "fffb0539-4b21-4da2-bc7e-7056de86ef63"
+    },
+    {
+      "claim_id": "65a9f355-2b14-4cde-87d9-a48d62b577ba",
+      "result_id": "acea38c2-073a-4b1d-8fdc-deb424f6bcac"
+    },
+    {
+      "claim_id": "92a671b0-657b-4a6a-bc83-a075814b287c",
+      "result_id": "acea38c2-073a-4b1d-8fdc-deb424f6bcac"
+    }
+  ],
+  "comparisons": []
+}

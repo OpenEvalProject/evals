@@ -1,0 +1,1303 @@
+{
+  "submission": {
+    "id": "ba5e24d5-91f2-46a4-b271-256dbd235242",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:22:48.291374Z",
+    "updated_at": "2025-12-03T11:22:48.291374Z"
+  },
+  "content": [
+    {
+      "id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "submission_id": "ba5e24d5-91f2-46a4-b271-256dbd235242",
+      "content_type": "manuscript",
+      "content_text": "# Deep-sequence phylogenetics to quantify patterns of HIV transmission in the context of a universal testing and treatment trial \u2013 BCPP/Ya Tsie trial\n\n## Authors\n\n- Lerato E Magosi<sup>1</sup> ([ORCID: 0000-0002-3388-9892](https://orcid.org/0000-0002-3388-9892)) \u2020\n- Yinfeng Zhang<sup>2</sup>\n- Tanya Golubchik<sup>3</sup> ([ORCID: 0000-0003-2765-9828](https://orcid.org/0000-0003-2765-9828))\n- Victor DeGruttola<sup>4</sup>\n- Eric Tchetgen Tchetgen<sup>5</sup>\n- Vladimir Novitsky<sup>6</sup>\n- Janet Moore<sup>8</sup>\n- Pam Bachanas<sup>8</sup>\n- Tebogo Segolodi<sup>9</sup>\n- Refeletswe Lebelonyane<sup>10</sup>\n- Molly Pretorius Holme<sup>6</sup>\n- Sikhulile Moyo<sup>7</sup>\n- Joseph Makhema<sup>7</sup>\n- Shahin Lockman<sup>6</sup>\n- Christophe Fraser<sup>3</sup>\n- Myron Max Essex<sup>6</sup>\n- Marc Lipsitch<sup>1</sup> ([ORCID: 0000-0003-1504-9213](https://orcid.org/0000-0003-1504-9213)) \u2020\n\n### Affiliations\n\n1. Center for Communicable Disease Dynamics, Department of Epidemiology, Harvard T.H. Chan School of Public Health, Harvard University Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n2. Division of Molecular & Genomic Pathology, University of Pittsburgh Medical Center Presbyterian Shadyside Philadelphia United States ([ROR:01an3r305](https://ror.org/01an3r305))\n3. Oxford Big Data Institute, Li Ka Shing Center for Health Information and Discovery, Nuffield Department of Medicine, Old Road Campus, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n4. Department of Biostatistics, Harvard T.H. Chan School of Public Health, Harvard University Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n5. Department of Statistics, The Wharton School, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n6. Harvard T.H. Chan School of Public Health AIDS Initiative, Department of Immunology and Infectious Disease, Harvard T.H. Chan School of Public Health, Harvard University Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n7. Botswana Harvard AIDS Institute Partnership Gaborone Botswana ([ROR:04rkbns44](https://ror.org/04rkbns44))\n8. Division of Global HIV/AIDS and TB, Centers for Disease Control and Prevention Atlanta United States ([ROR:042twtr12](https://ror.org/042twtr12))\n9. HIV Prevention Research Unit, Centers for Disease Control and Prevention Gaborone Botswana\n10. Ministry of Health, Republic of Botswana Gaborone Botswana\n11. Brigham and Women's Hospital, Division of Infectious Diseases Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Mathematical models predict that community-wide access to HIV testing-and-treatment can rapidly and substantially reduce new HIV infections. Yet several large universal test-and-treat HIV prevention trials in high-prevalence epidemics demonstrated variable reduction in population-level incidence.Methods:To elucidate patterns of HIV spread in universal test-and-treat trials, we quantified the contribution of geographic-location, gender, age, and randomized-HIV-intervention to HIV transmissions in the 30-community Ya Tsie trial in Botswana. We sequenced HIV viral whole genomes from 5114 trial participants among the 30 trial communities.Results:Deep-sequence phylogenetic analysis revealed that most inferred HIV transmissions within the trial occurred within the same or between neighboring communities, and between similarly aged partners. Transmissions into intervention communities from control communities were more common than the reverse post-baseline (30% [12.2 \u2013 56.7] vs. 3% [0.1 \u2013 27.3]) than at baseline (7% [1.5 \u2013 25.3] vs. 5% [0.9 \u2013 22.9]) compatible with a benefit from treatment-as-prevention.Conclusions:Our findings suggest that population mobility patterns are fundamental to HIV transmission dynamics and to the impact of HIV control strategies.Funding:This study was supported by the National Institute of General Medical Sciences (U54GM088558), the Fogarty International Center (FIC) of the U.S. National Institutes of Health (D43 TW009610), and the President\u2019s Emergency Plan for AIDS Relief through the Centers for Disease Control and Prevention (CDC) (Cooperative agreements U01 GH000447 and U2G GH001911).\n\n## Introduction\n\nThe global number of new infections with HIV-1, the virus that causes AIDS, has gradually declined since the peak in 1997, yet population-level HIV incidence remains high in East and Southern Africa, especially among young women (UNAIDS, 2019; UNAIDS, 2021). Despite efforts spanning four decades, there is still no successful HIV vaccine or widely administrable cure. This emphasizes the importance of curbing new infections in order to bring the HIV epidemic under control.\n\nFour large cluster-randomized trials were recently conducted in East (Kenya and Uganda) and Southern Africa (Botswana, South Africa, and Zambia) to evaluate the effect of universal HIV testing and treatment in reducing population-level HIV incidence (Hayes et al., 2019; Makhema et al., 2019; Havlir et al., 2019; Iwuji et al., 2018). The trials showed variable outcomes, ranging from modest to no reduction in the occurrence of new HIV infections (Abdool Karim, 2019). The trials were motivated by evidence that early initiation of antiretroviral therapy substantially reduced onward transmission in people with HIV owing to suppressed virus levels (Cohen et al., 2016) and by mathematical models predicting that widely expanded access to HIV testing and treatment would rapidly and substantially reduce the occurrence of new infections (Granich et al., 2009).\n\nThe joint United Nations Programme on HIV/AIDS (UNAIDS) had set a global target of fewer than 500,000 new HIV infections by 2020 that was unmet. To stem the spread of new HIV infections we need to better understand patterns of HIV transmission in high-prevalence, generalized epidemics in sub-Saharan Africa. To obtain such understanding requires a better grasp of where and from whom those most at risk acquire infection and to whom they are likely to spread infection. Previous work in a high HIV burden setting in Kwa-Zulu Natal, South Africa identified age-disparate sexual partnerships between younger women under 25 years and older men as a primary contributor to HIV transmission and incidence in younger women (de Oliveira et al., 2017).\n\nWe hypothesized that geographic proximity, gender, age, and ready access to HIV care (randomized-HIV-intervention) contribute to shaping patterns of HIV transmission. To test these hypotheses, we performed a deep-sequence phylogenetic study of adults with HIV aged 16\u201364 years who consented to participate in the Botswana Ya Tsie HIV prevention trial to quantify the contribution of the above factors to HIV transmission patterns in Botswana adjusting for sampling heterogeneity.\n\nBotswana is a sparsely populated, landlocked country in southern Africa, roughly the size of France, 581,730 km2 (224,610 square miles), with a population of about 2.3 million people. The Kalahari Desert occupies approximately 70% of the country, and the population is largely distributed along an eastern corridor bordered by South Africa, Zambia, and Zimbabwe (GISGeography, 2022). It is a high middle-income country with a Gini index of 53.3 (The World Bank, 2015). One in five adults in Botswana aged 15\u201349 years were reported to be living with HIV in 2019, representing the third-highest HIV prevalence in the world after Lesotho and Eswatini (UNAIDS, 2020).\n\nOur results produced three key findings: first, most HIV transmissions inferred in the trial population occurred between partners residing in the same community or neighboring communities, and between partners of similar ages. Second, transmission events identified among trial participants sampled one or more years post-baseline were consistent with a greater flow of HIV transmissions into intervention communities from control communities than vice versa during the trial, although dates of transmission were not identified. Third, men and women sampled in the Botswana/Ya Tsie trial whose sexual partners could be inferred phylogenetically contributed similarly to the spread of HIV infection. Overall, our findings suggest that population mobility patterns are central to understanding HIV transmission dynamics and should be considered when designing and evaluating HIV control strategies.\n\n## Materials and methods\n\n### Overview of trial population\n\nThe Ya Tsie trial or Botswana Combination Prevention Project (BCPP) was a pair-matched community randomized trial to evaluate whether an optimized combination of effective HIV treatment and prevention interventions would substantially reduce population-level HIV incidence over 29 months. The trial was conducted from 2013 to 2018 in 30 rural and peri-urban communities (average population size: 5855) in the Central, South-East, and North/North-East regions of Botswana that represented an estimated total population of 175,664 (7.6% of the national population) (Figure 1). Among eligible community residents, 13,131 adults aged 16\u201364 years gave informed consent to participate in the trial. See Makhema et al., 2019; Gaolathe et al., 2016 for detailed eligibility criteria. The estimated HIV prevalence among participating communities at the start of the trial was 25.7% (27,446 / 106,712) (Supplementary file 1-Table 1A) (see Materials and methods section on computing age-gender estimates of the number of people with HIV in each trial community). Communities were matched into 15 pairs according to population size and age structure, access to health services, and geographic location relative to major urban centers; communities in each pair were then randomized into intervention and control arms. Intervention communities received expanded HIV testing, early initiation of antiretroviral treatment, and strengthened linkage-to-care, for example, clinic referrals with appointment dates, text alert reminders of appointments, and following-up with those who missed appointments. Intervention communities also received wider access to prevention of mother-to-child transmission services and male circumcision services, compared with control communities that received the standard of care.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig1-v2.jpg)\n\n**Figure 1.:** (A) A map of Botswana showing the spatial distribution of intervention and control communities in the Botswana/Ya Tsie trial. Intervention communities are denoted by filled blue circles and control communities are represented by filled red triangles. Trial communities are shown in the context of level-2 administrative subdivisions (solid black lines) and 2011 census enumeration areas (solid gray lines). Major urban areas are symbolized as filled orange squares. (B) Spatial distribution of the estimated population density of persons per square kilometer in Botswana in 2011. Filled blue circles represent the location of intervention communities and filled green triangles denote control communities in the Botswana/Ya Tsie trial.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Trial participants that consented to viral genotyping (n=5114) were sequenced at two locations, the Harvard biopolymers sequencing core facility in the United States (n=4246) and the Wellcome Trust Sanger Institute in the United Kingdom (n=868). Most trial participants were virally suppressed at the time of sampling; thus deep-sequencing of HIV-1 viral genomes was generally done on pro-viral DNA (Novitsky et al., 2015). Deep sequencing of viral genomes was performed with Illumina Miseq and Hiseq instruments. The resulting deep-sequencing reads were then assembled and mapped with the shiver sequence assembly software (Wymant et al., 2018a) against de-novo reference sequences tailored to each participant\u2019s viral population. (A) Shows the length of the HIV-1 viral genome covered on average by deep-sequencing reads of varying minimum read lengths and sequencing depths; genome coverage dropped progressively beyond 200 nucleotides. (B) The proportion of participants with deep-sequenced mapped reads covering at least 750 nucleotides of the HIV-1 viral genome decreased with increasing minimum read length and depth of sequencing. (C) Read-length distribution of deep-sequenced mapped reads within an individual. (D) Distribution of participants with deep-sequencing mapped-reads at each position of the HIV-1 viral genome. Most participants sequenced to a depth of at least 30\u00d7 with mapped reads that were at least 200-bp long and covered at least 750 nucleotides of the HIV-1 genome had reads distributed relatively uniformly along the HIV-1 genome.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Trial participants were sequenced as described in Figure 2. (A) Breadth of coverage of the HIV-1 viral genome for varying minimum read lengths and depths of sequencing. There was a marked decrease in average coverage of the HIV-1 genome at or above a sequencing depth of 10\u00d7. Furthermore, there was a progressive decline in average viral genome coverage beyond 200 nucleotides. (B) Proportion of participants with deep-sequencing mapped reads covering over 750 nucleotides of the HIV-1 genome decreased markedly with increasing minimum read lengths and sequencing depths. (C) Proportion of deep-sequenced mapped reads in an individual by read length. (D) Distribution of participants with deep-sequencing mapped-reads at each genome position. Most participants sequenced to a minimum depth of 30\u00d7 and minimum read length of 200 bp with a genome coverage of at least 750 nucleotides had mapped reads covering the HIV-1 group-specific antigen (GAG) gene.\n\n### Data set of people with HIV in the Botswana/Ya Tsie trial\n\nTo better understand HIV transmission patterns among participating communities, residents with HIV-1 were invited to provide a sample for viral phylogenetic analyses. This included (1) all people with HIV-1 identified during a baseline survey of 20% of households randomly sampled from each trial community to establish an incidence follow-up cohort, (2) all people with HIV-1 identified through annual household surveys conducted in this 20% household sample in all 30 communities during the trial, (3) all people with HIV-1 who were enrolled in a community-wide survey in 100% of 6 communities, 3 in the intervention and 3 in the control arms (the \u2018end of study survey\u2019), (4) all newly identified people with HIV-1 discovered during an initial community-wide HIV testing and counseling campaign followed by more targeted HIV testing in the 15 intervention communities, (5) all people with HIV-1 in intervention communities who later presented at healthcare facilities after being identified during community-wide testing campaigns, and (6) all people with HIV-1 who were already receiving HIV care at health facilities in the 15 intervention communities. Altogether, 5114 participants consented to a blood draw for HIV-1 viral genotyping and their viral genomes were successfully deep-sequenced, representing the largest phylogenetics study conducted in Botswana (Supplementary file 1-Table 1A).\n\n### Computing age-gender estimates of the number of people with HIV in each trial community\n\n#### Age-gender HIV prevalence estimates in each trial community\n\nTo obtain HIV prevalence estimates we first fit a random-intercept Poisson regression model of HIV status, with age and gender as fixed-effects, using nonparametric maximum likelihood estimation in the gllamm program (Sophia, 1999; Rabe-Hesketh and Skrondal, 2012) in Stata 13.1. The model was fit to data indicating the HIV status of 12,570 participants that had consented to an HIV test and were part of a baseline survey of 20% of households randomly sampled from each of the 30 trial communities to establish an incidence follow-up cohort; the fraction of positive tests for HIV-1 infection was, 28.6% (3596 / 12,570). Ages of participants were grouped in two ways, as 5-year age-categories and four age-categories: 16\u201324, 25\u201334, 35\u201349, and 50\u201364 years. Furthermore, the counts of people with HIV for a specific age-gender grouping, i in community, j were assumed to have a Poisson distribution with mean, $u_{ij}$ so that\n\n$$\nln\u2061(u_{ij})=ln\u2061(e_{ij})+\u00a0\\beta_{1}+\\beta_{2}x_{2ij}+\u00a0\\beta_{3}x_{3ij}+\u03b6_{j}\u00a0\u00a0.\n$$\n\nAccordingly, $\\beta_{1}$ denotes the intercept, $\u03b6_{j}$ the predicted random-intercept representing unobserved heterogeneity across trial communities, $\\beta_{2}x_{2ij}$ and $\\beta_{3}x_{3ij}$ fixed-effect covariates for age group and gender, respectively, and $ln\u2061e_{ij}$ an offset where $e_{ij}$ represents the number of people tested for HIV in a specific age-gender grouping, i in community, j (i.e., exposed) so that,\n\n$$\nln\u2061(u_{ij})\u2212ln\u2061(e_{ij})=\u00a0\\beta_{1}+\\beta_{2}x_{2ij}+\u00a0\\beta_{3}x_{3ij}+\u00a0\u03b6_{j}\n$$\n\n#### Computing empirical Bayes estimates of HIV prevalence\n\nNext, to account for heterogeneity in HIV prevalence across trial communities we computed empirical Bayes estimates (or posterior means) for the age-gender specific HIV prevalence in each community. The empirical Bayes estimate of HIV prevalence for the $jth$ community-age-gender combination is\n\n$$\n\u03b6_{j}^EB=R_{j}^\u03b6_{j}^ML\n$$\n\nwhere\u2009$R_{j}^=\\frac{\u03c8_{j}^}{\u03c8_{j}^+\\frac{\\theta^}{n_{j}^}}\u00a0.$\n\nHere, $R^_{j}$ denotes a shrinkage factor that describes the proportion of the total variation, $\u03c8_{j}^+\\frac{\\theta^}{n_{J}^}$ attributed to differences in the age-gender specific HIV prevalence among trial communities, $\u03c8^_{j}$ . Furthermore, $\u03b6_{j}^ML$ specifies the maximum likelihood estimate of $\u03b6_{j}$ . Empirical Bayes estimates were obtained with the gllapred program (Sophia, 1999; Rabe-Hesketh and Skrondal, 2012) in Stata 13.1.\n\n#### Estimates of size of population with HIV in trial communities\n\nWe thereafter estimated the size of the population with HIV for each age-gender category in each trial community. Empirical Bayes estimates of the age-gender specific HIV prevalence for each trial community were standardized to the proportion of participants in the 2011 Botswana population and housing census that were in the same age and gender categories of these communities. Then for a specific community-age-gender combination, for example, females aged 16\u201324 years in community j, the estimated number of people with HIV, $N^_{HIV+[Female,\u00a016\u221224]}$ is computed as\n\n$$\nN^_{HIV+[Female,\u00a016\u221224]}=N^_{total}\u2217E\u2217{Pr_{census}[Female,16\u221224\u00a0years]\u2217Pr[HIV+\u2223Female,\u00a016\u221224\u00a0years]}\n$$\n\nwhere.\n\n$j^{th}$: Estimated population size for the jth trial community based on plot and household enumeration data (Makhema et al., 2019).\n\n$E:$\u2009Proportion of enumerated household members that were eligible to participate in the trial.\n\n$Pr_{census}[Female,\u00a016\u00a0\u2212\u00a024\u00a0years]$: Joint probability denoting the proportion of census participants who are female and aged 16\u201324 years within community j.\n\n$Pr[HIV+\u2223Female,\u00a016\u221224\u00a0years]$: Empirical Bayes estimate of HIV prevalence for females aged 16\u201324 years that participated in a baseline survey of 20% of households randomly sampled from community j.\n\nThe age-gender estimates of the number of people with HIV in each trial community were used to adjust for sampling heterogeneity when estimating the proportions of HIV transmissions in the trial population (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). Population-size estimates of people with HIV were computed in R version 3.5.2 (R Deveploment Core Team, 2020).\n\n#### Deep-sequencing of HIV viral genomes for phylogenetic analyses\n\nBecause most participants were virally suppressed at the time of sampling, deep sequencing of HIV-1 viral genomes was generally done on proviral DNA (81%, n = 4142) (Novitsky et al., 2015) (see Materials and methods section on paired-end deep-sequencing of HIV viral genomes for phylogenetic analyses). We deep-sequenced near-full length viral genomes to optimize resolution and power to detect viral genetic clusters of similar HIV-1 infections (Dennis et al., 2014; Figure 1\u2014figure supplements 1 and 2). For each participant, we thus obtained mapped short reads generated with deep-sequencing that capture the HIV-1 viral diversity in an individual and a corresponding consensus sequence that represents a summary of the HIV-1 viral population in that individual. Consensus sequences were generated from alignments of the mapped short reads by identifying the majority nucleotide call at each base position along the HIV-1 genome (Wymant et al., 2018a).\n\n#### Paired-end deep-sequencing of HIV viral genomes for phylogenetic analyses\n\nPaired-end deep-sequencing was performed with Illumina MiSeq and HiSeq instruments at two locations, the BioPolymers sequencing core facility at Harvard Medical School, Boston, United States (n = 4246 participants) (Figure 1\u2014figure supplement 1), and at the Wellcome Trust Sanger Institute, Hinxton, United Kingdom (n = 868 participants) (Figure 1\u2014figure supplement 2) through the PANGEA consortium (Pillay et al., 2015). The sequencing success rate was relatively high, 75%\u201380% for first round amplicons and 95%\u201398% for second round amplicons. Moreover, the quality of sequencing was assessed with standard metrics for deep (or next-generation) sequencing data; however, we cannot exclude the potential for sequencing errors arising from hypermutations. The shiver sequence assembly software (Wymant et al., 2018a) was used to assemble and map each participant\u2019s deep-sequencing short reads to a de-novo reference sequence tailored to the participant\u2019s viral population. A listing of command-line parameters used to assemble HIV viral whole genomes with Shiver is provided in Supplementary file 1-Table 1B.\n\n#### Criteria for inclusion in phylogenetic analyses\n\nOur analysis was restricted to samples from 3832 participants (approximately 14% of the estimated 27,446 individuals living with HIV in trial communities) who had available demographic information and met minimum criteria on genome missingness (\u22656300 nucleotides available) for inclusion in phylogenetic analyses. More precisely, individuals whose viral consensus genomes had fewer than 30% of the bases missing beyond the first 1000 nucleotides were retained for analysis. Sampling (or genotyping) density is defined as the estimated proportion of individuals living with HIV in a trial community that were included in our sample. Intervention communities were sampled more densely, 16% (2281 / 14,263) than control communities, 12% (1551 / 13,183); and sampling densities among all 30 trial communities ranged from 2.7% to 36.2% (Figure 2, Supplementary file 1, Table 1C) (see Materials and methods section on computing age-gender estimates of the number of people with HIV in each trial community). Based on the level of sexual mixing predicted for the trial (Novitsky et al., 2013)\u2014that 21% (standard error: 2.6%) of the relationships would be out-of-community partnerships (assumed for this calculation to be with communities that were not in the trial)\u2014and a genotyping density of 14% we expected our data set to contain the viral transmitter to a genotyped individual in about one out of every nine cases of HIV-1 transmission, that is, 0.14 * (1 \u2212 0.21) = 0.11. This estimate reflects simplifying assumptions that: (i) for a pair of individuals whose viral sequences are genetically linked, the probability of sampling one member of the pair is independent from that of sampling the other member of the pair such that the probability of observing a pair that is genetically linked is the product of the individual sampling probabilities and (ii) the sampling probabilities were equal for men and women with HIV. The genotyping densities for women and men were 15% (2730 / 17,815) and 11% (1102 / 9631), respectively. Therefore, we expected the proportion of female viral transmitters in our data set to be 0.153 * (1 \u2212 0.21) = 0.12 and male viral transmitters to be 0.114 * (1 \u2212 0.21) = 0.09.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig2-v2.jpg)\n\n**Figure 2.:** Intervention communities (blue curve) were sampled more densely than control communities (green curve). Raw data points for the density plots are displayed as a rug-plot (red) on the x-axis. The overall genotyping density across all 30 trial communities was 14% (3832 / 27,446).\n\n### Definition of seroconverters\n\nThe HIV-incidence prospective cohort of the Botswana/Ya Tsie trial comprised a random sample of 20% of households in each community to evaluate the incidence of HIV infection and adoption of the intervention during the trial. The 3832 participants included in phylogenetic analyses included 85% (124 / 146) of the seroconverters in the HIV-incidence cohort; seroconverters in the HIV-incidence cohort were defined as individuals that acquired HIV infection during the trial (Supplementary file 1-Table 1C). Seven of the 2465 baseline samples included in phylogenetic analyses were seroconverters in the HIV-incidence cohort (i.e., individuals with a negative-HIV test and a subsequent positive-HIV test sample over the course of less than a year, and thus defined as baseline) compared with 117 of the 1367 post-baseline samples.\n\n### Comparing genetic distances between HIV-1 viral consensus sequences of trial participants included in phylogenetic analyses\n\nWe compared the distances between all possible pairs (n=7,340,196) of the 3832 HIV-1 viral whole-genome consensus sequences available for phylogenetic analyses (Figure 3A). Sequences were codon-aligned to HXB2, a standard HIV reference, with MAFFT v7.407 (Katoh et al., 2002; Katoh and Standley, 2013) and HIVAlign (https://www.hiv.lanl.gov/content/sequence/VIRALIGN/viralign.html); genetic distances were then computed under the Tamura-Nei-1993 nucleotide substitution model (Tamura and Nei, 1993) with TN93 v1.0.6 (https://github.com/veg/tn93 iGEM/UCSD evolutionary biology and bioinformatics group, 2021). A listing of parameters used to align sequences with MAFFT and HIVAlign, and compute genetic distances with TN93 is provided in Supplementary file 1-Table 1B.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig3-v2.jpg)\n\n**Figure 3.:** (A) A histogram showing the distribution of genetic distances between HIV-1 viral whole-genome consensus sequences of trial participants included in phylogenetic analyses. Out of the 5114 trial participants that consented to viral genotyping 3832 met criteria for inclusion in phylogenetic analyses; these were individuals whose viral genomes had fewer than 30% of the bases missing beyond the first 1000 nucleotides and a minimum genome length of 6300 nucleotides. Tamura-Nei 93 genetic distances were computed between HIV-1 viral whole-genome consensus sequences of all possible pairs (n = 7,340,196) of the 3832 trial participants available for phylogenetic analyses. To improve visibility pairwise genetic distances below 0.05 (5%) nucleotide substitutions per site are also shown in a zoomed-in plot. The mean (\u00b1 standard deviation) pairwise distance separating sequences was 12.5 \u00b1 3.0%, and the maximum pairwise distance was 40.0% substitutions per site. (B) A histogram showing the distribution of genetic distances between viral whole-genome consensus sequences of epidemiologically linked HIV-1 subtype-C couples in the HIV Prevention Trials Network 052 study. Tamura-Nei 93 genetic distances were computed between viral whole-genome consensus sequences of all possible pairs (n = 6670) of the 116 epidemiologically linked couples with HIV-1 subtype-C infections in the HIV Prevention Trials Network 052 study. Pairwise comparisons between epidemiologically linked sequences (yellow) and ones between epidemiologically unlinked sequences (blue) are highlighted in color. The mean (\u00b1 standard deviation) pairwise distance separating the sequences was 12.0 \u00b1 4.1%, and the maximum pairwise distance was 19.6% substitutions per site. Genetic distances separating viral sequences of most epidemiology-linked couples were below 5.0% substitutions per site.\n\n### Consensus sequence phylogenetics to identify clusters of participants with genetically similar HIV-1 infections\n\nTo save time and computational resources from evaluating sequences that were too distantly related, we first identified clusters of participants with genetically similar HIV-1 infections as a filtering step, before performing ancestral host state reconstruction with Phyloscanner to detect probable directed transmission pairs. Two clustering algorithms, HIV Transmission Cluster Engine (HIV-TRACE) v0.4.4 (Wertheim et al., 2014; Kosakovsky Pond et al., 2018) and Cluster Picker v1.2.3 (Ragonnet-Cronin et al., 2013), were used to identify clusters of individuals whose HIV-1 viral whole-genome consensus sequences were genetically similar\u2014suggesting they were probably members of a transmission chain (Poon, 2016; Rose et al., 2017). HIV-TRACE defines clusters based on pairwise genetic distances only; comparatively, Cluster Picker identifies clusters using pairwise genetic distances with the guidance of a phylogenetic tree. A multiple sequence alignment (as described in the Materials and methods section on comparing genetic distances between HIV-1 viral consensus sequences of trial participants included in phylogenetic analyses) was provided as input to HIV-TRACE and Cluster Picker. Additionally, for cluster picker, a corresponding phylogenetic tree inferred with FastTree2 v2.1.10 and boot-strap support values approximated with the Shimodaira-Hasegawa test (Shimodaira and Hasegawa, 1999) were provided as inputs. We defined genetic similarity clusters as groups of two or more participants whose viral whole-genome consensus sequences were separated by a genetic distance at or smaller than 4.5% nucleotide substitutions per site\u2014and, for Cluster Picker, a bootstrap support value of at least 80%. The genetic distance threshold of 4.5% nucleotide substitutions per site was motivated by the distribution of genetic distances separating HIV-1 subtype C viral whole genomes of epidemiologically linked couples in the HIV Prevention Trials Network (HPTN) 052 trial (Figure 3B; Cohen et al., 2016; Eshleman et al., 2011). A listing of parameters used for consensus-sequence phylogenetics with HIV-TRACE and Cluster Picker is provided in Supplementary file 1-Table 1B.\n\n### Deep-sequence phylogenetics to infer the probable order of transmission events within identified clusters of genetically similar HIV-1 infections\n\nWe performed parsimony-based ancestral host state reconstruction of the mapped deep-sequencing short reads of participants in clusters of genetically similar HIV-1 infections (n = 525) with the Phyloscanner software v1.8.0 (Grabowski et al., 2018; Ratmann et al., 2019; Wymant et al., 2018b) to identify probable transmission pairs within clusters and the probable direction of transmission between them. Phyloscanner identifies potential transmission pairs by inferring whether the viral population in an individual is ancestral to or descendent from that of another individual, and crucially addresses contamination by excluding duplicates and phylogenetic outliers. To infer phylogenetic linkage and direction of transmission for a set of individuals Phyloscanner aligns submitted mapped reads in sliding windows along the genome that are matched across individuals; and at each window, infers a phylogeny for ancestral state reconstruction to identify probable ancestral relationships between all possible pairs of individuals in the set. Pairs of individuals are then classified as phylogenetically linked or unlinked based on the distance, adjacency, and topology of their subgraphs. A subgraph in Phyloscanner refers to all tips and internal nodes of a phylogeny assigned to an individual through parsimony-based ancestral state reconstruction. A pair of individuals, i and j are considered to be phylogenetically linked, more specifically, phylogenetic linkage is not excluded when the minimum patristic distance between their subgraphs, $\u0394_{ij}$ is below a set threshold, and i and j are adjacent meaning that the shortest path connecting their subgraphs in a phylogeny does not pass through a third individual. Tree topology is used to infer the probable direction of transmission between a pair of individuals and refers to the number of subgraphs belonging to each individual in the pair that are ancestral-to or descendant-from those of the other individual. We classified pairs of individuals separated by a subgraph distance below 0.035 substitutions per site as phylogenetically linked based on previous work by Ratmann et al., 2019. The subgraph distance distribution of all pairs identified with Phyloscanner within genetic similarity clusters is shown in Figure 4. A listing of command-line parameters used for deep-sequence phylogenetics with Phyloscanner is provided in Supplementary file 1-Table 1B. Identified genetic similarity clusters were analyzed with Phyloscanner in parallel for computational efficiency using shell scripts that are available upon request.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig4-v2.jpg)\n\n**Figure 4.:** Within each genetic cluster parsimony-based ancestral host state reconstruction was done with Phyloscanner (Grabowski et al., 2018; Ratmann et al., 2019; Wymant et al., 2018b) to identify probable transmission pairs and resolve the probable order of transmission events. Thereafter, within each identified genetic cluster, the median subgraph distance and most frequent subgraph topology between each pair of individuals were determined across all deep-sequence phylogenies along the genome where the pair had sufficient mapped reads for phylogenetic inference. A subgraph refers to all tips and internal nodes of a phylogeny assigned to an individual through parsimony-based ancestral state reconstruction. Subgraph distances were standardized to the mean rate of evolution for HIV-1 group-specific antigen (GAG) and polymerase (POL) genes to account for variation in mutation rates along the genome. The three panels show median subgraph distance distributions of pairs in the union (A) of genetic clusters detected with HIV-TRACE (B) and Cluster Picker (C) algorithms. Within each panel, phylogenetically linked pairs with an inferred direction of transmission are summarized into same-sex (male-male and female-female) and opposite-sex pairs (male-female). The subgraphs of deep-sequenced HIV-1 viral genomes of most phylogenetically linked directed pairs were separated by a patristic distance below 0.035 (3.5%). Same-sex pairs were presumed to be members of transmission chains with missing intermediates.\n\n### Identifying probable source-recipient pairs with strong phylogenetic evidence for linkage and direction of transmission\n\nProbable transmission pairs identified with Phyloscanner were further classified on the strength of evidence for phylogenetic linkage, $\\lambda^_{ij}$ to separate pairs with strong support for linkage and direction of transmission from other potentially linked pairs; accounting for the extent of overlap in the read alignments from which the deep-sequence phylogenies were inferred. The strength of phylogenetic evidence or linkage score is described as, $\\lambda^_{ij}=\u00a0\\frac{k_{L}}{n}$ where $n$ is the number of deep-sequence phylogenies inferred in windows along the genome for which individuals i and j had sufficient deep-sequence reads for phylogenetic inference; and $k_{L}$ is the number of deep-sequence phylogenies along the genome that support a specific phylogenetic relationship type between individuals i and j, for example, that the subgraphs of individual i are ancestral-to, descendent-from, sibling-to, or intermingled-with those of individual j; sibling and intermingled topologies are ones where there is insufficient evidence to make inferences about the probable direction of transmission (Ratmann et al., 2019). We used a linkage and direction of transmission score threshold of 57% $(\\lambda^_{ij}>c;\u00a0c=0.57)$ or on average at least 24 out of 42 windows supporting linkage and direction of transmission for a highly supported transmission pair. Our Phyloscanner analyses were based on windows or mapped read alignments that were 200-bp long, affording n = 42 (8400 / 200) non-overlapping alignments and deep-sequence trees along the genome; we excluded the first 1000 nucleotides of the HIV-1 genome from analysis as they are typically poorly sequenced corresponding to a genome length of 8400 bp. The linkage and direction of transmission score threshold, $c\\in(0,1)$ was selected such that the posterior probability for $\\lambda^_{ij}>50%$, at least half of the windows along the genome supporting an ancestral relationship type between a pair of individuals, i and j exceed 80%, $p(\\lambda^_{ij}>0.5\u00a0|\u00a0k_{L},\u00a0n)>\u00a0\\alpha,$\u2009where $\\alpha=80%$ and $k_{L}\u00a0\u223c\u00a0Binomial(n,\u00a0\\lambda^_{ij})$. The linkage and direction of transmission score threshold were computed with the Bayesian binomial test function in the BayesianFirstAid R package v0.1.\n\n### Estimating error rates in phylogenetic inference of direct transmission between sampled males and females\n\nHIV-1 infections in southern Africa are more commonly transmitted through heterosexual contact between males and females, compared with sexual contact between same-sex couples. Thus, we can use the probability of inferring a phylogenetically linked male-male pair to calibrate an upper bound on the false discovery rate (FDR) of inferring a phylogenetically linked male-female pair, if we assume the probability of erroneously inferring direct transmission between a male-female pair is the same as the probability of inferring a phylogenetically linked male-male pair (Ratmann et al., 2019).\n\n#### Calibrating a false discovery rate for inferring direct transmission\n\nConsider a deep-sequence phylogenetic analysis where $L_{mm}$ male-male pairs and $L_{mf}$ male-female pairs were phylogenetically inferred in the sequenced sample. For $S_{m}$ successfully sequenced males and $S_{f}$ successfully sequenced females, let the probability of inferring a phylogenetically linked male-male pair in the sample be\n\n$$\n\\frac{L_{mm}}{S_{m}\u2217\u00a0(S_{m}\u22121)/\u00a02}\u00a0,\n$$\n\nwhere $L_{mm}$ denotes the number of phylogenetically linked male-male pairs that were identified and $S_{m}\u00a0\u2217\u00a0(S_{m}\u22121)/\u00a02$ represents the number of distinct possible male-male pairs that could have been identified in the sample. The estimated number of phylogenetically linked male-female pairs between whom direct transmission did not occur would then be\n\n$$\nF^_{mf}^{c}=\\frac{L_{mm}}{S_{m}\u2217\u00a0(S_{m}\u22121)/\u00a02}\u2217S_{m}\u2217S_{f}\u00a0.\n$$\n\nThereby affording a FDR estimate of,\n\n$$\n\u03c1^_{mf}^{c}=\\frac{F^_{mf}^{c}}{L_{mf}}\n$$\n\nThis represents an upper bound on the FDR of inferring direct transmission between males and females in phylogenetically linked male-female pairs.\n\n### Adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions\n\nTo estimate HIV transmission flows in the trial population within and between different age-gender groups and locations (trial communities, trial arms, and geographic regions), accounting for variable rates of sampling, we used the method described by Carnegie et al., 2014. The method by Carnegie et al. uses a frequentist approach, alternatively a Bayesian approach could be employed as described by Ratmann et al., 2020.\n\n#### Data set and sampling probability\n\nConsider a population of individuals with HIV, $\u03a9$ of finite size, $N$ partitioned into $u=1,\u22ef, G$ disjoint groups so that, $N_{u}$ represents the number of individuals with HIV in group, $u$. Groups might represent communities (or geographic locations), age-categories, genders, or trial arms. Let us suppose that we would like to estimate the proportions of HIV transmissions that occurred within and between intervention and control communities in the Botswana/Ya Tsie trial so that group, $u$ are individuals residing in intervention communities and group, $v$ are individuals residing in control communities. We denote $n_{u}$ and $n_{v}$ as the number of individuals randomly sampled from groups, $u and v$, respectively, whose HIV-1 viral genomes were successfully sequenced; yielding a sampling probability, $s_{u}=\u00a0n_{u}\u00a0/\u00a0N_{u}$ for group, $u$ and similarly, $s_{v}=\u00a0n_{v}\u00a0/\u00a0N_{v}$ , for group $v$. The vector\n\n$$\nz=(z_{uu},\u00a0z_{uv},\u00a0z_{vu},\u00a0z_{vv})\n$$\n\ndescribes the counts of directed (source-recipient) transmission pairs identified in the sequenced sample within and between intervention and control communities, where $z_{uu}$ denotes transmission pairs within intervention communities; $z_{vv}$ denotes transmission pairs within control communities; $z_{uv}$ denotes transmission pairs for whom a member of an intervention community was the inferred source of transmission to a control community member and vice-versa, $z_{vu}$ . We assume that HIV transmission pairs that are absent from the sequenced sample are missing at random conditional on group membership; meaning that the identified probable source-recipient transmission pairs are a random sample of the source-recipient transmission pairs present in the trial population. Let\n\n$$\nn_{uv}={\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0n_{u}\u00a0\u2217\u00a0n_{v},\u00a0\u00a0u\\neqvn_{u}(n_{u}\u22121)\u00a0/\u00a02,\u00a0\u00a0u=v\n$$\n\nbe the number of distinct possible transmission pairs among individuals sampled from $u and v$; similarly, let $N_{uv}=N_{u} * N_{v}$$(or\u00a0N_{u}(N_{u}\u22121)\u00a0/\u00a02\u00a0if\u00a0u=v)$ be the number of distinct transmission pairs available between trial population groups, $u$ and $v$.\n\n#### Probability of viral linkage between a pair of sampled individuals\n\nEstimates of probabilities of linkage between two individuals randomly sampled from within demographic groups are observed using the method of Carnegie et al., 2014. The method assumes that samples are missing at random from within demographic groups and that relative increase in weight of individuals from a given group between the observed and true sample is the same as relative increase in weight between sub-samples of the observed data\u2014obtained from the observed sampling rate\u2014and the observed data.\n\nIn accordance with Carnegie et al., 2014 and accounting for the probable direction of transmission, we estimate the probability of viral linkage between two individuals randomly sampled from their respective groups for each group-pairing as\n\n$$\np^=(p^_{uu},p^_{uv},p^_{vu},p^_{vv})\n$$\n\nwhere, $p_{ij}^=\\frac{z_{ij}}{n_{ij}}$, $i=u,v$ and $j=u,v$.\n\n#### Proportion of HIV transmissions in the trial population adjusted for sampling heterogeneity\n\nWe next estimate the relative probability that an HIV transmission event in the trial population occurred from sexual contact between partners residing within intervention communities or within control communities; compared with partners where one resides in an intervention community and the other a control community or vice versa. Accordingly, we estimate the conditional probability, $\\theta^_{ij}$ that a pair of individuals are from a specific group-pairing given that their HIV-1 viral genomes are linked as,\n\n$$\n\\theta^_{ij}=P(pair is from groups,\u00a0i\u00a0and\u00a0j\u00a0|\u00a0pair is linked)=\\frac{N_{ij}p_{ij}^}{\\sum_{m}\\sum_{n\\geqm}N_{mn}p^_{mn}},i=u,v\u00a0and\u00a0j=u,v.\n$$\n\nHere, $N_{ij}p^_{ij}$ denotes the estimated number of HIV transmissions in the trial population attributed to groups, i and j . Similarly, $\\summ\\sumn\u00a0\\geqmN_{mn}p^_{mn}$ represents the number of HIV transmissions in the trial population for all groups-pairings. Thus, the vector\n\n$$\n\\theta^=(\\theta^_{uu},\u00a0\\theta^_{uv},\u00a0\\theta^_{vu},\u00a0\\theta^_{vv})\n$$\n\ndescribes estimated proportions of HIV transmissions in the trial population within and between intervention and control communities adjusted for differential sampling by trial arm.\n\n#### Computation of confidence intervals for estimated HIV transmission flows in the trial population\n\nWe use the Goodman method (Goodman, 1965) to compute simultaneous confidence intervals (CIs) at the 5% significance level for the estimated proportions of HIV transmissions within and between population groups (or strata). A continuity correction factor is implemented for the Goodman method\u2019s CIs to account for small sample sizes (Cherry, 1996). The Goodman method estimates simultaneous CIs for the parameters of a multinomial distribution and thus assumes independence of observations.\n\nTo estimate Goodman\u2019s CIs the estimated number of HIV transmission pairs in the trial population within and between intervention and control communities are scaled such that the sum of the weights is equal to the total number of probable male-female transmission pairs identified in the deep-sequenced sample (n = 82), and the weights are treated as known; broadly similar to calibration of weights in survey sampling. For example, the weighted counts of probable male-female transmission pairs within and between intervention and control communities are given by the vector,\n\n$$\n\\delta=z^{+}\u00a0\u2217\u00a0(\\theta^_{uu},\u00a0\\theta^_{uv},\u00a0\\theta^_{vu},\u00a0\\theta^_{vv})\u00a0,=(z^{+}\\theta^_{uu},\u00a0z^{+}\\theta^_{uv},\u00a0z^{+}\\theta^_{vu},\u00a0z^{+}\\theta^_{vv})\n$$\n\nwhere $z^{+}=\\sumijz_{ij}\u00a0,\u00a0i=\u00a0u,v\u00a0and\u00a0j=\u00a0u,v$ .\n\nThis ensures that the estimated Goodman\u2019s CIs of HIV transmission flows within and between groups/strata in the trial population reflect that amount of information in the sample.\n\nLet the weighted counts of the probable male-female transmission pairs identified within and between intervention and control communities, $(z^{+}\\theta^_{uu},\u00a0z^{+}\\theta^_{uv},\u00a0z^{+}\\theta^_{vu},\u00a0z^{+}\\theta^_{vv})$ denote the observed cell frequencies, $\\delta_{1}, \\delta_{2}, \u22ef, \\delta_{k}$ of a sample of size, $z^{+}$ from a multinomial distribution with population parameters, $\\pi_{1}, \\pi_{2}, \u22ef, \\pi_{k}$, and $l=1, 2, \u22ef, k$ population strata, respectively.\n\nFor example, $\\delta_{l}$ represents the weighted counts of probable male-female transmission pairs identified in the $l^{th}$ stratum, and $\\pi_{l}$ the corresponding probability that a probable male-female transmission pair falls within the $l^{th}$ stratum, respectively. In this case, we have $k = 4$ population strata that represent HIV transmission pairs within intervention communities; within control communities; transmission pairs for whom a member of an intervention community was the inferred source of transmission to a control community member and vice-versa. The point estimate for, $\\pi_{l}$ or estimated proportion of HIV transmissions in the trial population in the $l^{th}$ stratum is $\\pi^_{l}=\u00a0\\frac{\\delta_{l}}{z^{+}}$ . The set of $k$ simultaneous CIs at the 5% significance level for the $k$ population-level HIV transmission flows, $\\pi_{1}, \\pi_{2}, \u22ef, \\pi_{k}$ are given by Cherry, 1996,\n\n$$\n\\pi^_{l}^{\u2212}\\leq\u00a0\\pi_{l}\\leq\\pi^_{l}^{+}\u00a0\u00a0for\u00a0(l=1,\u00a02,\u00a0\u22ef,\u00a0k)\u00a0,\n$$\n\nwhere the lower confidence bounds are described by,\n\n$$\n\\pi^_{l}^{\u2212}=[B+2(\\delta_{l}\u22120.5)\u2212\u00a0\\sqrt{B(B+4(\\delta_{l}\u22120.5)(z^{+}\u2212\u00a0\\delta_{l}+0.5)/z^{+})}]\u00a0/\u00a02(z^{+}+B)\n$$\n\nand the upper confidence bounds are described by,\n\n$$\n\\pi^_{l}^{+}=[B+2(\\delta_{l}+0.5)+\u00a0\\sqrt{B(B+4(\\delta_{l}+0.5)(z^{+}\u2212\u00a0\\delta_{l}\u22120.5)/z^{+})}]\u00a0/\u00a02(z^{+}+B).\n$$\n\nHere, $B$ denotes the 95th percentile of a chi-squared distribution with $k - 1$ degrees of freedom. Note that $\\pi^_{l}^{\u2212}=0\u00a0if\u00a0\\delta_{l}=0$, and $\\pi^_{l}^{+}=1\u00a0if\u00a0\\delta_{l}=z^{+}$ .\n\nWe have implemented the algorithms to estimate HIV transmission flows within and between population groups accounting for sampling heterogeneity; and the corresponding CIs as an R package, bumblebee that will be made available at the following URL: https://magosil86.github.io/bumblebee/ . A step-by-step tutorial on how to estimate HIV transmission flows with bumblebee and accompanying example data sets can be accessed at the following URL: https://github.com/magosil86/bumblebee/blob/master/vignettes/bumblebee-estimate-transmission-flows-and-ci-tutotial.md (Magosil, 2021).\n\n### Calculation of the weighted mean age gap between males and females in inferred probable transmission pairs accounting for variability in sampling of the trial population by gender and 5-year age group\n\n#### Overview\n\nTo compare the ages of males and females in inferred male-female probable transmission pairs we computed weighted (arithmetic) mean age-gaps between males and females in (1) all inferred probable transmission pairs (n = 82), (2) male-to-female transmission events (n = 45), and (3) female-to-male transmission events (n = 37).\n\n#### Data set and sampling probabilities\n\nConsider a deep-sequence phylogenetic analysis where $L_{mf}$ male-female probable transmission pairs/events were phylogenetically inferred in the sequenced sample. Here, the sequenced sample refers to individuals whose HIV-1 viral genomes were successfully sequenced and met minimum criteria for inclusion in phylogenetic analysis. Let individuals in the sequenced sample be grouped by gender into 5-year age-categories according to their age at enrollment in the study so that the number of successfully sequenced males in a specific 5-year age category is denoted by, $n_{m(5-year age group)}$ and the number of successfully sequenced females, $n_{f(5-year age group)}$ . Similarly, let $N_{m(5-year age group)}$ and $N_{f(5-year age group)}$ denote the estimated number of males and females respectively with HIV in the trial population in a specific 5-year age category. So that the sampling probabilities of male and female partners in a probable transmission pair are given by, $s_{m(5-year age group)}=\u00a0n_{m(5-year age group)}\u00a0/\u00a0N_{m(5-year age group)}$ for the male partner and, $s_{f(5-year age group)}=\u00a0n_{f(5-year age group)}\u00a0/\u00a0N_{f(5-year age group)}$ for the female partner.\n\n#### Computation of mean weighted age gap\n\nLet $g_{i}$ denotes the age gap in years between male and female partners in the $i^{th}$ transmission pair (i.e., male age \u2013 female age) and $w_{i}$ represents the weight assigned to the $i^{th}$ transmission pair. The weight of a male-female probable transmission pair is computed as the inverse of the product of the sampling probabilities of the male and female partners in the pair,\n\n$$\nw_{i}=\\frac{1}{s_{m(5\u2212year age group)}\u00a0\u2217\u00a0s_{f(5\u2212year age group)}}.\n$$\n\nThen the weighted mean age gap is given by\n\n$$\ng\u2212=\u00a0\\frac{\\sumi=1nw_{i}\u2217\u00a0g_{i}}{\\sumi=1nw_{i}},\n$$\n\nwhich can be expanded as:\n\n$$\ng\u2212=\u00a0\\frac{w_{1}g_{1}+\u00a0w_{2}g_{2}+\u00a0\u22ef+\u00a0w_{n}g_{n}\u00a0}{w_{1}+\u00a0w_{2}+\u00a0\u22ef+\u00a0w_{n}}\u00a0.\n$$\n\nEstimation of the weighted age gap variance: we compute the variance of the age-gaps between males and females in probable transmission pairs as:\n\n$$\n\u00a0Var(weighted age gap)=\u00a0\\frac{\\sumi=1nw_{i}(g_{i}\u2212\u00a0g\u2212)^{2}}{V_{1}\u2212\u00a0(\\frac{V_{2}}{V_{1}})}\u00a0,\n$$\n\nwhere $V_{1}= \\sumi=1nw_{i}$ represents the sum of the weights, and $V_{2}= \\sumi=1nw_{i}^{2}$ the sum of the squared weights, respectively.\n\n### Permutation test to evaluate whether there was preferential sexual mixing among trial communities by geographic proximity\n\nTo evaluate whether people were more likely to form out-of-community sexual partnerships with partners from nearby communities than communities further away, we performed a permutation test under the null hypothesis that the mean travel distance (kilometers) and drive time (hours) between communities where HIV transmission events were identified was no different from that between any pair of randomly selected trial communities. We obtained null distributions for the mean travel distance and drive time, respectively by permuting the order of community pairs over 10,000 iterations. The underlying correlation structure of viral genetic linkage was preserved, for example, transmission events that occurred between members of two communities or between members of a community and two or more other communities. A one-sided p value was obtained as the fraction of iterations where the mean travel distance between permuted community pairs was smaller than that for community pairs where HIV transmission events were identified; similarly, a one-sided p value was derived for travel time. Travel distances and drive times were sourced from the google distance matrix API (application programming interface) with the mapsapi R package v0.4.2. and will be made available as an R data set. The permutation-test was performed using the R statistical software version 3.5.2.\n\n## Results\n\n### Consensus sequence phylogenetics to identify clusters of participants with genetically similar HIV-1 infections\n\n#### Most participants with HIV at time of enrollment in the trial were on antiretroviral treatment and virally suppressed\n\nOut of the 5114 participants who provided a sample for HIV viral genotyping, 3178 were sampled at baseline and 1936 were sampled post-baseline, that is, about a year or more after the end of baseline survey activities in their communities. At the time of identification, most (86%, n = 4410) individuals with HIV-1 infection were on antiretroviral therapy and virally suppressed (\u2264400 copies per ml of blood plasma). Compared to the 2011 Botswana census population of trial communities, our data set underrepresents men (n = 1475 vs. 3639) and individuals aged 16\u201324 years (Supplementary file 1-Table 1A).\n\n### Most of the HIV viral genomes sampled were from prevalent infections, and typical genetic distances were large\n\nOut of the 5114 participants whose HIV-1 viral genomes were deep-sequenced, 3832 participants met minimum criteria for inclusion in phylogenetic analyses (see Materials and methods); and of those 3832 participants, 2465 were sampled at baseline and 1367 sampled post-baseline. The mean \u00b1 standard deviation pairwise genetic distance between HIV-1 viral whole-genome consensus sequences of participants included in phylogenetic analyses was 12.5 \u00b1 3.0%, and the maximum pairwise distance was 40% substitutions per site (Figure 3A) (see Materials and methods on comparing genetic distances between HIV-1 viral consensus sequences of trial participants included in phylogenetic analyses). The large distances between sequences possibly reflect sparse sampling and/or the sampling of a large percentage of trial participants relatively late in infection. HIV-1 viral populations typically diverge over time owing in part to within-host evolution.\n\n### About one in seven genotyped participants included in consensus sequence phylogenetic analyses were assigned to genetic similarity clusters of people with closely related HIV-1 infections\n\nWe identified 236 genetic similarity clusters comprising HIV-1 viral consensus sequences from 14% (525 / 3832) of the participants (Figure 5) (see Materials and methods section on consensus sequence phylogenetics to identify clusters of participants with genetically similar HIV-1 infections). This represents the union of clusters detected with HIV-TRACE (122 clusters, comprising 283 consensus sequences) and Cluster Picker (231 clusters, comprising 484 consensus sequences) algorithms (Figure 6). To maximize the number of transmission pairs that could be identified between participants in the Botswana/Ya Tsie trial with Phyloscanner we used the union of clusters detected with HIV-TRACE and Cluster Picker. There was substantial overlap between the two clustering algorithms, 96% (117 / 122) of the genetic clusters found with HIV-TRACE were also detected with Cluster Picker (Figure 6). Only 4% (21 / 525) of the participants assigned to genetic similarity clusters were seroconverters from the HIV-incidence cohort (see Materials and methods section on definition of seroconverters).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig5-v2.jpg)\n\n**Figure 5.:** Genetic clusters are summarized by randomized-HIV-intervention condition, geographical region, and occurrence within and between trial communities. Clusters were identified from 3832 HIV-1 viral whole-genome consensus sequences as two or more sequences separated by a genetic distance not exceeding 0.045 (4.5%) substitutions per site and a bootstrap support threshold of at least 80%. More genetic clusters occurred within trial communities and geographical regions than between them.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig6-v2.jpg)\n\n**Figure 6.:** The bottom two plots show the size distribution of genetic clusters identified with HIV-TRACE (n = 122) and Cluster Picker algorithms (n = 231), respectively; and the top two plots show the size distribution of the union (n = 236) and overlap (n = 117) of genetic clusters detected with HIV-TRACE and Cluster Picker. Most clusters were small-sized comprising two or three members.\n\n#### Most genetic clusters had few members and limited geographic spread\n\nThe sizes of genetic clusters ranged from 2 to 12 members, with 97% (230 / 236) of clusters comprising two or three members (Figure 6). The two largest clusters had 9 and 12 members, respectively, none of whom were seroconverters from the HIV-incidence cohort; their members resided in communities in all three geographic regions. Overall, however, genetic clusters were generally concentrated within geographic regions (Central-East, North/North-East, and South-East) than spread out across them (Figure 5), with 42% (100 / 236) of clusters localized to two communities (Figure 7) and 52% (124 / 236) of the clusters entirely within a single community (Figure 7). Moreover, genetic clusters were relatively evenly spread across trial arms; 38% (90 / 236) were unique to intervention communities; 33% (78 / 236) to control communities; and 29% (68 / 236) had genetic cluster members from both intervention and control communities (Figure 5). The number of genetic clusters identified within trial communities generally increased with sampling density; for example, communities such as: Shakawe, Ramokgonami, Mmathethe, Gumare, Maunatlala, and Tati Siding which had larger numbers of unique and shared clusters compared to other trial communities were also among the most densely sampled (Figure 8, Supplementary file 1-Table 1C). The abundance of small-sized genetic similarity clusters may reflect a moderate (14%) sampling fraction (Murray and Alland, 2002).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig7-v2.jpg)\n\n**Figure 7.:** The bottom two plots show the number of genetic clusters identified with HIV-TRACE (n = 122) and Cluster Picker algorithms (n = 231), respectively; and the top two plots show the union (n = 236) and overlap (n = 117) of genetic clusters found with HIV-TRACE and Cluster Picker. Most lineages localized to one or two trial communities; with few clusters having members spread out across five or more trial communities.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig8-v2.jpg)\n\n**Figure 8.:** Bars represent the total number of genetic clusters identified in each trial community partitioned into clusters that are specific to a community (lighter shade) and those that are shared with at least one other trial community (darker shade). Genetic clusters in intervention communities are shown in blue and those in control communities are represented in green. The number of genetic clusters identified among intervention and control communities varied.\n\n#### Characteristics of participants in clusters\n\nAbout 70% (366 / 525) of the HIV-1 viral consensus sequences in clusters were from women (Figure 9). This result was consistent with the overrepresentation of women among sequenced infections (Supplementary file 1, Table 1A). The ages of clustered men and women were similar with women having a median [lower\u2013upper quartile] age of 37.8 [29.6 \u2013 45.1] years and men 43.0 [34.9 \u2013 51.0] years at time of sampling. 33% (78 / 236) of clusters included at least one participant with unsuppressed virus. Additionally, there were few clusters (4% (10 / 236)) where all members had HIV-1 infections with unsuppressed virus (Supplementary file 1-Table 1D). 54% (286 / 525) of the participants in clusters of genetically similar HIV-1 infections were also part of a baseline survey of 20% of households randomly sampled from each trial community to establish an incidence follow-up cohort and gather information on different socio-demographic variables including sexual risk behavior; see Makhema et al., 2019; Gaolathe et al., 2016 for details. Among them, 10% (30 / 286) of participants self-reported having multiple partners in the past twelve months; 73% (208 / 286) of participants self-reported a single partner in that period, 15% (44 / 286) of participants self-reported zero partners in that period and the rest did not disclose their number of partners. Of the 30 participants involved in multiple relationships, 90% (27 / 30) disclosed having one other sexual partner, and 10% (3 / 30) reported having two other sexual partners in addition to their primary sexual partner.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig9-v2.jpg)\n\n**Figure 9.:** The top two panels show the age-gender distribution of trial participants whose HIV-1 viral whole-genome consensus sequences were in the union (n = 525) and overlap (n = 281) of genetic clusters identified with HIV-TRACE and Cluster Picker. The bottom two plots show the age-gender distribution of trial participants whose HIV-1 viral whole-genome consensus sequences were in genetic clusters identified with HIV-TRACE (n = 283) and Cluster Picker (n = 484) clustering algorithms. The raw data is shown as a rug plot (red tick marks) on the x-axis. Men and women in genetic clusters had similar ages.\n\n### Deep-sequence phylogenetics to infer the probable order of transmission events within identified clusters of genetically similar HIV-1 infections\n\nWe identified 153 highly supported probable source-recipient pairs within 236 clusters of genetically similar HIV-1 infections. Seventy-one were same-sex linkages between women (n = 65) or men (n = 6), and the remaining were male-female pairs (n = 82). Considering that the predominant mode of HIV-1 transmission in Botswana and most of southern Africa is through heterosexual contact, that direct transmission between women is rare (Chan et al., 2014), same-sex pairs were presumed to be members of transmission chains with unsampled intermediates. We used the probability of inferring a phylogenetically linked directed male-male pair in the sample to calibrate an upper bound on the FDR of inferring direct transmission between males and females in phylogenetically linked male-female pairs; the estimated number of linked male-female pairs in the sample with unsampled intermediates was approximately 30, corresponding to a FDR of 36% (30 / 82) (see Materials and methods section on estimating error rates in phylogenetic inference of direct transmission between sampled males and females). This estimated false positive rate is likely inflated given that two individuals would need to be missing from the sequenced sample to incorrectly infer transmission in a male-female pair, whereas only a single female would need to be missing to erroneously infer transmission in a male-male pair. As indicated earlier (see Materials and methods section on criteria for inclusion in phylogenetic analyses), we expected our data set to contain the HIV-1 viral sequence of the transmitter for 11% (0.14 \u00d7 (1 \u2013 0.21)) of sequenced participants included in phylogenetic analyses (n = 3832), compared with the 82 male-female probable transmission pairs that we identified thus suggesting that consensus sequence phylogenetic analysis missed some viral genetic linkages between participants with chronic infections; and deep-sequence phylogenetic analysis identified only a subset of HIV-1 transmission events between participants assigned to genetic clusters. We restricted further analyses on inference of HIV transmission patterns to the highly supported 82 male-female probable transmission pairs. Analyses are presented first without an adjustment for sampling variability to illuminate patterns of viral transmission within the deep-sequenced sample. Thereafter an adjustment for variable sampling rates by demographic group (age, gender, trial community, and geographical region) or randomized-HIV-intervention (trial arm) is made to estimate the flow of HIV transmissions within the trial population (see Materials and methods sections on computing age-gender estimates of the number of people with HIV in each trial community and adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions).\n\n#### Age and sex distribution of sources and recipients in inferred transmission pairs\n\nThe age distribution of transmitters and recipients, by gender, for the 82 male-female probable transmission pairs is shown in Figure 10. Inferred male-female and female-male HIV transmissions had similar age distributions for the inferred source of infection. Males were a mean \u00b1 standard deviation of 3.5 \u00b1 9.6 years older than females in probable transmission pairs overall, with a difference of 4.9 \u00b1 7.5 in male-to-female transmission events, and 1.8 \u00b1 11.6 years in female-to-male transmission events. Adjusted for variability in sampling of the trial population by gender and 5-year age group, these differences were somewhat reduced: males in probable transmission pairs were a mean \u00b1 standard deviation of 1.3 \u00b1 10.4 years older than females overall; with a difference of 3.8 \u00b1 6.9 years in male-to-female transmission events, and \u22121.3 \u00b1 12.7 years in female-to-male transmission events (see Materials and methods section on calculation of the weighted mean age gap between males and females in inferred probable transmission pairs accounting for variability in sampling of the trial population by gender and 5-year age group). The difference between the unadjusted and the weighted mean age gap between males and females in probable transmission pairs is consistent with the undersampling of younger males. Quantiles of age differences between males and females in inferred transmission pairs before and after adjustment for variability in sampling are presented in Supplementary file 1-Table 1E.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig10-v2.jpg)\n\n**Figure 10.:** Forty-five male-to-female and 37 female-to-male transmission events were identified from the deep-sequenced viral whole genomes of 525 trial participants in clusters of genetically similar HIV-1 infections. Men were typically older than women in both male-to-female and female-to-male transmission events.\n\n#### Most HIV transmissions occurred between similarly aged partners\n\nSupplementary file 1-Table 1F shows the proportions (unadjusted) of viral transmission events within and between 5-year age groups among the 82 probable male-female pairs inferred from the deep-sequenced sample. After adjusting for differential sampling by 5-year age group, the predicted proportions of HIV-1 transmissions in the trial population suggested preferential sexual mixing between similarly aged partners (Figure 11 and Supplementary file 1-Table 1F) (see Materials and methods sections on computing age-gender estimates of the number of people with HIV in each trial community and adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). An adjustment by both 5-year age group and gender revealed broadly similar transmission patterns in the trial population (Figure 12 and Supplementary file 1-Table 1G).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig11-v2.jpg)\n\n**Figure 11.:** Transmission flows of HIV-1 infection in the trial population were estimated from 82 male-female probable transmission pairs identified from the deep-sequenced HIV-1 viral whole genomes of trial participants (n = 525) in clusters (n = 236) of genetically similar HIV-1 infections. Furthermore, transmission flows were adjusted for differential sampling among age groups (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). Most viral transmission events occurred between similarly aged partners.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig12-v2.jpg)\n\n**Figure 12.:** Transmission flows were estimated as described in Figure 11. Additionally, transmission flows were adjusted for differential sampling by gender and age group.\n\n#### Similar proportions of men and women as inferred sources of transmission\n\n55% [95% CI: 39.8 \u2013 69.1] of the 82 inferred male-female transmission events originated from men with the remainder occurring from women, 45% [30.9 \u2013 60.2] (Figure 13). An adjustment for variable sampling by gender revealed similar transmission patterns in the trial population (Supplementary file 1-Table 1H).\n\n![Figure 13.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig13-v2.jpg)\n\n**Figure 13.:** The 82 probable male-female infector-infectee pairs that were identified from clusters of genetically similar HIV-1 infections (n = 236) in the Botswana/Ya Tsie trial are first summarized into those with a male versus a female source of viral transmission. Male-to-female and female-to-male transmission events are then further partitioned according to whether partners in a transmission pair resided in the same or different trial communities and if those trial communities belonged to the same or different trial arms and geographical regions. C to I denote transmission into an intervention community from a control community and I to C represent transmission into a control community from an intervention community. Male-to-female transmission events are shown in green and female-to-male transmission events are represented in yellow. About 69% (n = 57) of the sampled transmission events in the Botswana/Ya Tsie trial occurred within the same trial community.\n\n#### Most inferred HIV transmissions occurred within communities or between neighboring communities\n\nTrial communities could be broadly grouped into three geographical areas: in the North/North-East, South-East, and Central-East region of Botswana, which borders South Africa and Zimbabwe (Figure 1). The proportion of inferred transmission events of HIV-1 infection in the deep-sequenced sample between members of the same trial community was 69% (57 / 82) compared with 21% (17 / 82) for members of different trial communities in the same region, and 10% (8 / 82) for members of trial communities in different regions (Figures 13 and 14). Of the 74 (74 / 82) transmission events within a single region (including those within a single community), 22 were in the Central-East, 28 in the North/North-East, and 24 in the South-East (Figure 13). For pairs where transmission events linked people in different trial communities the median [lower\u2013upper quartile] driving distance between the trial communities was 161 km [108 \u2013 420 km] or 100 mi [67 \u2013 261 mi] and the median drive time was 1.86 hr [1.41 \u2013 4.68 hr]. Furthermore, a comparison of mean drive times between pairs of trial communities for which transmission events were identified (n = 22) with those of all other possible pairs of participating trial communities excluding same community pairs (n = 900 \u2013 22 \u2013 30 = 848) revealed a shorter drive time on average between genetically linked trial communities compared with what would be expected under random sexual mixing $(permutation-test, p\u00a7amp;lt; 0.01)$ (see Materials and methods section on permutation test to evaluate whether there was preferential sexual mixing among trial communities by geographic proximity). These results suggest that out-of-community sexual partnerships were more likely to form between partners residing in nearby communities compared with more distant communities.\n\n![Figure 14.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig14-v2.jpg)\n\n**Figure 14.:** Numbered tiles represent counts of transmission events identified between a pair of trial communities. There were 32 transmission events identified within control communities (magenta), 33 within intervention communities (cyan), 13 from control-to-intervention communities (green), and 4 from intervention-to-control communities (red). Most transmission events were identified within trial communities. The number of sampled transmission events into intervention communities from control communities was higher than the reverse (n=13 vs. 4).\n\nAfter adjusting for differential sampling by community, an estimated 24% of transmissions to a resident of a trial community originated from another trial community (Supplementary file 1-Table 1I) (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). This is consistent with the high levels of mobility in Botswana, where people typically have family ties in ancestral villages and work in peri-urban or urban areas (Essex et al., 2019). Furthermore, trial communities were distributed along two principal highways that might have contributed to increased mobility: the A1 highway that connects the Northern and Southern parts of the country and the A3 highway that branches from the A1 highway connecting the North-Eastern and North-Western regions.\n\nThe estimated proportion of HIV transmissions in the trial population, after adjusting for differential sampling by geographic region, that occurred within the South-East region, 50% [95% CI: 29.6 \u2013 70.5] was higher compared to that in the Central-East, 23% [9.7 \u2013 45.4] and North-East regions, 18% [6.5 \u2013 39.8], respectively (Figure 15A and Supplementary file 1-Table 1J) (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). For comparison, the proportion of trial participants with viral genomes that met criteria for inclusion in phylogenetic analyses were 26% (1000 / 3832) in the South-East region, 42% (1630 / 3832) in the North/North-East region, and 31% (1202 / 3832) in the Central-East region (Supplementary file 1-Table 1C). The South-East region includes Gaborone city, the economic and administrative capital of Botswana; conversely, economic activity in the North-East and Central-East regions is centered around mining and agriculture.\n\n![Figure 15.](https://cdn.elifesciences.org/articles/72657/elife-72657-fig15-v2.jpg)\n\n**Figure 15.:** Transmission flows were estimated as described in Figure 11. Additionally, transmission flows were adjusted for differential sampling among geographical regions and trial arms respectively. (A) Estimated transmission flows of HIV-1 infection in the Botswana/Ya Tsie trial population within and between geographical regions. Communities in the Botswana/Ya Tsie trial were broadly grouped into three geographical regions in the Central-East, North/North-East, and South-Eastern parts of the country. The flow of HIV-1 transmissions in the trial population was highest in the South-East region (50.1%) compared with the Central-East (23.1%) and North/North-East (17.9%) regions, respectively. (B) Estimated transmission flows of HIV-1 infection within and between intervention communities and control communities in the Botswana/Ya Tsie trial population. Most transmissions of HIV-1 infection occurred within the same trial arm and the flow of viral transmissions into intervention communities from control communities (15.3%) was about three times higher than the reverse (4.7%).\n\n### More HIV transmission events to residents of intervention communities originated from residents of control communities than vice versa\n\n#### Overall analysis\n\nThe proportion of inferred transmission events of HIV-1 infection in the deep-sequenced sample occurring within intervention (n = 33) or within control communities (n = 32) was 79% (65 / 82) compared with 21% (17 / 82) across intervention and control communities (Figures 13 and 14). Of the 33 transmission events inferred within intervention communities, 7 occurred between partners residing in different communities; and for those inferred within control communities, 1 of the 32 transmission events occurred between partners from different communities. There were more transmission events identified in intervention communities that originated from control communities than the reverse (n = 13 vs. 4).\n\nAfter adjusting for differential sampling by trial arm, the estimated proportions of HIV transmissions in the trial population within control communities, 51% [35.9 \u2013 66.5] was about twice that predicted in intervention communities, 29% [16.6 \u2013 44.6] (Figure 15B and Supplementary file 1-Table 1K); and the estimated proportion of HIV transmissions in the trial population flowing into intervention communities from control communities, 15% [6.9 \u2013 30.1] was about three times higher than the reverse, 5% [1.0 \u2013 16.9] (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). Comparatively, the proportions of trial participants that met criteria for inclusion in phylogenetic analyses from control communities were 40% (1551 / 3832) and from intervention communities, 60% (2281 / 3832).\n\n#### Baseline analysis\n\nOf the 82 male-female probable transmission pairs identified in the deep-sequenced sample, 51 involved a recipient that was first sampled during the period of baseline household survey activities in their community, that is, a transmission that could not have been affected by the intervention because it occurred before the start of the intervention. Among these (n = 51), the proportion of inferred transmission events that occurred within intervention (n = 19) or within control communities (n = 25) was 86% (44 / 51) compared with 14% (7 / 51) across intervention and control communities (Supplementary file 1-Table 1L). Of the 19 transmission events identified within intervention communities, 4 were between partners living in different communities; compared with 1 out of 25 transmission events identified within control communities. The number of transmission events identified in intervention communities that originated from control communities was similar to the reverse (n = 4 vs. 3).\n\nAdjusted for sampling variability among trial arms the flow of HIV transmissions in the trial population within control communities, 62% [41.6 \u2013 78.8] was more than two times that in intervention communities, 25% [11.8 \u2013 45.9] (Supplementary file 1-Table 1L); and the flow of HIV transmissions into intervention communities from control communities, 7% [1.5 \u2013 25.3] was similar to the reverse, 5% [0.9 \u2013 22.9] (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions).\n\n#### Post-baseline analysis\n\nBy contrast, 31 of the 82 male-female probable transmission pairs inferred in the deep-sequenced sample involved a recipient that was first sampled about a year or more after the end of baseline household survey activities in their community; this subset reflects transmissions that could have in principle been affected by the intervention, as they may have occurred after the intervention began. Among these (n = 31), the proportion of inferred transmission events that occurred within intervention (n = 14) or within control communities (n = 7) was 68% (21 / 31) compared with 32% (10 / 31) across intervention and control communities (Supplementary file 1-Table 1M). Moreover, 3 of the 14 transmission events identified within intervention communities were between partners residing in different communities, and all 7 transmission events identified within control communities were between partners living in the same community. We identified more transmission events in intervention communities that originated from control communities than vice versa (n = 9 vs. 1).\n\nAdjusted for variability in sampling among trial arms the flow of HIV transmissions within control communities, 32% [13.3 \u2013 58.3] was similar to that within intervention communities, 34% [15.0 \u2013 60.9]; and HIV transmissions into intervention communities from control communities, 30% [12.2 \u2013 56.7] were more common than the reverse, 3% [0.1 \u2013 27.3] (Supplementary file 1-Table 1M) (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). This result is consistent with a predicted benefit of the treatment-as-prevention intervention in reducing HIV transmission in the Botswana/Ya Tsie trial, albeit precise dates of transmission were not identified.\n\n### A sensitivity analysis to evaluate the impact of probable transmission pairs with unsampled intermediates on the patterns of HIV transmission within and between intervention communities and control communities in the Botswana/Ya Tsie trial\n\nThe first set of sensitivity analyses was performed with highly supported directed same- and opposite-sex transmission pairs identified in: (1) HIV-TRACE clusters, (2) Cluster Picker clusters, (3) the overlap of HIV-TRACE and Cluster Picker clusters, and (4) the union of HIV-TRACE and Cluster Picker clusters (Supplementary file 1-Table 1N). The second set of sensitivity analyses was performed for the same four categories but restricted to highly supported directed opposite-sex pairs only where the recipient in a transmission pair was first sampled about a year or more after the end of baseline household survey activities in their community (i.e., post-baseline) (Supplementary file 1-Table 1O). In both sets of sensitivity analyses, the results were consistent with the primary analysis: transmissions into intervention communities from control communities were more common than the reverse post-baseline (Supplementary file 1-Table 1N and O) (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). The signal was stronger as well as being more interpretable in the analysis restricted to opposite-sex pairs compared to the analysis that included same-sex pairs, which likely included one or more unsampled intermediates.\n\n## Discussion\n\nHIV incidence remains high in East and Southern Africa especially among young women. Promising HIV prevention intervention packages that combine population-level HIV testing coupled with strengthened linkage-to-care and early initiation of antiretroviral therapy, jointly termed universal test-and-treat, have yielded lower than expected reductions in the occurrence of new HIV-1 infections (Hayes et al., 2019; Makhema et al., 2019; Havlir et al., 2019; Iwuji et al., 2018; Abdool Karim, 2019). This makes it more challenging to attain the UNAIDS goal of ending the HIV/AIDS epidemic as a public health emergency by 2030. An emerging hypothesis among four of the largest universal test-and-treat HIV prevention trials ever conducted in East and Southern Africa in Kenya, Uganda, Botswana, South Africa, and Zambia (Abdool Karim, 2019), comprising tens of thousands of participants, is that the intervention impact to reduce population-level HIV incidence was dampened by population mobility; in particular, sexual partnerships formed (1) between individuals in communities randomized to different HIV-intervention conditions and (2) with individuals in communities outside the trial population.\n\nIn this study, we focused on one of the four cluster/community-randomized trials, the Ya Tsie trial conducted in Botswana (Makhema et al., 2019), to quantify the extent of sexual mixing within and between: trial communities, trial arms, and geographic regions. Furthermore, we quantified the contribution of age-difference and gender to the spread of HIV infections in Eastern Botswana. We first used HIV-1 whole-genome viral consensus sequences to identify clusters of trial participants with genetically similar HIV-1 infections. This was done as a filtering step to save time and computational resources by excluding distantly related sequences. Thereafter, we employed deep-sequence phylogenetics to resolve the probable order of HIV transmission events within each identified cluster. Identified transmission events in the deep-sequenced sample were then used to estimate the flow of HIV transmissions in the trial population adjusting for sampling variability.\n\nWe found that HIV transmissions in the trial were more likely to occur within communities or between neighboring communities than between distant trial communities, as well as between similarly aged partners. One of the most striking findings of our analysis was that an estimated 24% of transmissions involving residents of trial communities occurred between different communities in the trial. Given that the trial covered only 7.6% of the national population, this suggests that a large fraction of all transmissions involved a partner outside the trial.\n\nFurthermore, there was substantial sexual mixing between intervention and control communities. Overall, about one in every five HIV transmissions in the trial population involved sexual partnerships between residents of intervention communities and control communities. After baseline, that is, about a year or more after the introduction of the intervention one in three HIV transmissions occurred between intervention and control communities. HIV transmissions into intervention communities from control communities were similar to the reverse at baseline, and ten times more common post-baseline, concordant with a predicted benefit of a universal test-and-treat HIV prevention intervention, though dates of transmission were not identified.\n\nThe extent of sexual mixing between residents of intervention and control communities highlights high mobility between the two arms of the Botswana/Ya Tsie trial. For the primary trial endpoint comparing HIV incidence in intervention versus control communities, this kind of mixing will tend to dilute the effect since some of the prevention value of the intervention would appear in control communities, while intervention communities would have incidence that comes from control communities and from communities outside the trial thus is not reachable by the effect of the intervention. Both sources of incidence, from control communities and from outside the trial, could dilute the intervention effect observed in the trial. Although we could not evaluate it in this study, it is possible that out-of-trial index cases would dilute the effect even more strongly than control-arm ones because the control arms comprise only about 5% of Botswana\u2019s population, while about 90% of the population lives outside the trial.\n\nThese findings might be relevant for the interpretation of the results of the other three universal test-and-treat HIV prevention trials conducted in Kenya, Uganda, South Africa, and Zambia. An important next step would be to quantify the extent to which the size of the observed effect in the Botswana/Ya Tsie trial was reduced by imported infections between partners in communities randomized to different HIV-intervention conditions and partners in communities outside the trial population.\n\nThere was a deliberate effort to enroll men and young individuals in the Botswana/Ya Tsie study as these groups are less likely to be diagnosed with HIV and engaged in care. Following an adjustment for variable sampling by age and gender (Figure 12), we found that men and women for whom sexual partners could be inferred phylogenetically contributed similarly to viral transmission of HIV-1 infection in the Botswana/Ya Tsie trial (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). There would also be a contribution to HIV incidence from individuals whose source partner resided in a community outside the trial, though not evaluated in this analysis as HIV viral sequences from communities outside the trial population were not available.\n\nPrior to this study, a recent consensus sequence phylogenetic study assessing age-disparate sexual partnerships in Kwa-Zulu Natal, South Africa identified men older than 25 years as an important source of viral transmission to younger women aged 15\u201325 years. Age disparate partnerships were defined as ones with an age-gap of more than 5 years. The Kwa-Zulu Natal study was based on a community sampling fraction of 4% that was not specifically targeted to people with HIV and assumed that the direction of viral transmission within clusters would be from older partners to younger ones (de Oliveira et al., 2017). Phylogenetic analyses in the Botswana/Ya Tsie trial were based on an overall sampling fraction of 14% of people aged 16\u201364 years living with HIV in trial communities; the sampling fraction ranged from 2.7% to 36.2% among the 30 trial communities. In the phylogenetic analyses of the Botswana/Ya Tsie study, there was little genetic evidence from analyses of deep-sequence data to suggest that older men were a substantial source of HIV-1 infection to younger women in Botswana. This finding is relevant to programs aimed at reducing HIV incidence in young women in sub-Saharan Africa such as the Determined, Resilient, Empowered, AIDS-free, Mentored, and Safe women (DREAMS) partnership. Consistent with our results, the Vaginal and Oral Interventions to Control the Epidemic (VOICE) trial, a placebo-controlled randomized study of pre-exposure prophylaxis to test the efficacy of providing oral and vaginal gel tenofovir to women in Southern Africa to prevent HIV infection (Saag, 2015; Balkus et al., 2015), found no association between age-disparate relationships and risk of HIV-1 infection in young women under 25 years residing in South Africa in the cities of Durban, Johannesburg, and Klerksdorp who had male partners that were >5 years older at enrollment.\n\nTaken together, these findings might be relevant for understanding heterogeneity of HIV transmission in similarly designed phylogenetic studies in sub-Saharan Africa based on the sample size, demographic population, and adjustments for variable sampling.\n\nParticipants with genetically similar HIV-1 infections in the Botswana/Ya Tsie trial tended to aggregate in small-sized (two- or three-person) clusters. This is consistent with phylogenetic clustering studies in generalized epidemics in Southern Africa but contrasts with larger clusters typically found in concentrated HIV epidemics in Europe and North America (Grabowski et al., 2018). The small-sized genetic similarity clusters identified in trial communities might reflect undersampling of key populations, for example, men and younger individuals, in the HIV transmission network. Alternatively, the predominance of smaller clusters in generalized epidemics compared with larger clusters in concentrated epidemics might reflect differences in the manner in which sexual networks under the two settings evolve over time.\n\nMost participants in the household survey of the Botswana/Ya Tsie trial indicated that they had not engaged in transactional sex in the last 12 months. This suggested that there was a limited contribution of sex workers to the transmission patterns identified in the trial.\n\nOur findings provide insight on HIV transmission patterns in Botswana over a 5-year period between 2013 and 2018 during which the Botswana/Ya Tsie trial was conducted. An important next step would be the integration of the large database of HIV viral genomes assembled by the Botswana/Ya Tsie trial into a real-time HIV genomic surveillance program to highlight emerging hubs of HIV spread and inform targeted studies of HIV prevention. Such an effort would be facilitated by samples routinely collected for HIV viral load monitoring and the continuously decreasing cost of high-throughput sequencing.\n\nOur study had several limitations. First, viral genomes from an estimated 14% of all people with HIV aged 16\u201364 years were sampled among participating trial communities. Comparatively, the sampling fraction of phylogenetic studies based on African genomes is commonly under 10% (Grabowski et al., 2018). Although our sampling fraction was a modest improvement over previous studies it is a relatively small sample of HIV viral genomes in the trial population. To estimate HIV transmission flows in the trial population based on probable viral transmission events identified in the deep-sequenced sample we used the method of Carnegie et al., 2014 in which undetected HIV transmissions were assumed to be missing at random conditional on group membership (Carnegie et al., 2014) (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions). Here group membership refers to demographic groups (age group, gender, trial community, and geographical region) or randomized-HIV-interventions.\n\nOf the 82 probable male-female transmission pairs identified in the deep-sequenced sample there was a single individual involved in multiple transmission events; a male who transmitted to two females each residing in different communities from his own. This suggested that only a small degree of bias in estimation of CIs would arise from a simplifying assumption of independence between inferred transmission events; and allowed us to estimate CIs using methods for multinomial proportions (see Materials and methods section on computation of CIs for estimated HIV transmission flows in the trial population).\n\nSecond, although our estimates of HIV transmission flows in the trial population were adjusted for differential sampling we cannot exclude the possibility that unmeasured factors with influence on HIV transmission flows may have impacted our results. Most participants with HIV in this trial were virally suppressed, this might have biased our results in the sense that there might be some differences between the HIV transmission patterns we found and those that exist among viral genetic clusters largely populated by people with unsuppressed virus. Such heterogeneity in HIV transmission patterns might occur due to differences in risk behavior. Nevertheless, this study was based on a relatively representative sample of adults with HIV living in rural and peri-urban villages across Eastern Botswana.\n\nIn sum, we identified several key factors in the Botswana/Ya Tsie trial that impacted HIV transmission dynamics with potential relevance to similar studies done in sub-Saharan Africa. We found that most HIV transmissions in the Botswana/Ya Tsie trial occurred between similarly aged partners within the same trial community or between trial communities in close proximity. Moreover, there was a greater flow of HIV transmissions into intervention communities from control communities than vice versa potentially reducing the observed effect-size of the trial, as would transmissions averted by the intervention that were not picked up because the recipient was not in a trial community.\n\nWe recommend widely distributed and easily accessible HIV testing (e.g., universal HIV testing campaigns), treatment, and linkage-to-care to support people as they intermix within and across communities; augmented by targeted programs that might offer pre-exposure prophylaxis to younger women and the option of self-testing for men. Population-level genomic surveillance programs to identify communities with high flows of viral transmission within and between them would be helpful in spotting emerging hubs of transmission that can be prioritized for intervention. Taken together, these measures may reduce new HIV infections and shorten the time to epidemic control.\n\n### Code availability\n\nAlgorithms to estimate HIV transmission flows within and between population groups accounting for sampling variability and corresponding CIs have been implemented as an R package, bumblebee that will be made available at the following URL: https://magosil86.github.io/bumblebee. A step-by-step tutorial on how to estimate HIV transmission flows with bumblebee and accompanying example data sets can be accessed at: https://github.com/magosil86/bumblebee/blob/master/vignettes/bumblebee-estimate-transmission-flows-and-ci-tutotial.md (Magosil, 2021).\n",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a9babf17-8310-4376-b2a5-2fe556dba2f5",
+      "submission_id": "ba5e24d5-91f2-46a4-b271-256dbd235242",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Francesca Di Giallonardo, https://ror.org/03r8z3t63 University of New South Wales Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72657.sa0](https://doi.org/10.7554/eLife.72657.sa0)\n\nThe study by Magosi et al., evaluates the impact of targeted public health interventions on the HIV-1 transmission rate in Botswana. Using data from a large trial in Botswana, the authors found that HIV-1 transmission was more common to occur from control population groups into targeted population groups than vice-versa. The study is of public health interest, showing how some public health interventions are powerful in reducing HIV-1 transmission but only among the population targeted. This is a very comprehensive research study showing the advantages of using deep sequencing data in combination with phylogenetic tools to assess the positive impact of public health interventions in reducing HIV-1 transmission.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Francesca Di Giallonardo, https://ror.org/03r8z3t63 University of New South Wales Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72657.sa1](https://doi.org/10.7554/eLife.72657.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Deep-sequence phylogenetics to quantify patterns of HIV transmission in the context of a universal testing and treatment trial \u2013 BCPP/ Ya Tsie trial\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Miles Davenport as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Nadine Tschumi (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nOverall, we think the study was well designed and using a large sample size is highly valuable. The study provides detailed information on the methods including the release of a new R package for calculating transmission flow among populations. This is highly valuable for the interpretation of public health interventions, particularly test-and-treat. However, we all agree that it is important to add some clarifications of the methods used.\n\n1) The authors use a combination of HIV-TRACE and Cluster Picker as tools for cluster identification. As such, the authors implement a genetic threshold of 4.5% genetic diversity. This is the core outcome of the study; all the subsequent analyses are depended on the clusters identified. HIV-TRACE is often used instead of a phylogenetic tree, as the latter can be computational time-consuming with large data sets. However, the study also estimates a phylogenetic tree, thus we wish for more clarification on why both methods were used and how different the cluster outcomes are with each method.\n\n2) The cluster analysis resulted in many infection pairs between same-sex couples, indicating missing data in the transmission chains. The study excluded these pairs from subsequent analysis, resulting in a small number of overall pairs for the final transmission flow count. We think that such 'missing link' pairs could still be included in the analysis of estimating transmission flow between geographic regions. We were wondering if the study has investigated this and believe a constructive discussion in that regard could be favorable. See comments of reviewer 2.\n\n3) We agree that the study is overall well-presented and well-written, however, we think it would be useful to clarify some of the methods in the main text. We also agreed that the figures were overall informative and useful, however, we believe that some of the illustrations could be improved to aid with the understanding of the results. See comments of reviewer 3.\n\nReviewer #1 (Recommendations for the authors):\n\n1. I think my concerns 8-11 above could be relatively easily addressed by sensitivity analyses showing that a change in respective definitions did not affect the main outcomes qualitatively.\n\n2. The estimated proportion of HIV transmissions in the trial population flowing into intervention communities from control communities and vice-versa was a key finding of the manuscript. Since the number of probable transmission pairs is low, the confidence intervals are wide and overlapping. I appreciated / think that it is important and correct that you only considered probable transmission pairs for the age gap analysis. However, for this analysis I wouldn't see a problem for including pairs with probable unsampled intermediates. Was this attempted / why not?\n\nReviewer #2 (Recommendations for the authors):\n\nThe methods describing the initial sequence quality control and alignment need to be expanded. Currently, it is unclear how the shiver assembly software was run. While the sequencing and bioinformatics pipelines used here have been used in previous studies the possible impact of sequencing errors should be discussed. Ideally, replicates would be used to determine the expected rate of sequencing errors. However, other approaches such as the proportion of minority variants at different coding locations for different variant frequency cutoffs could also be used (Dyrdak et al., 2019). This is particularly important given that most trial participants were virally suppressed which could impact the overall quality of the sequencing data.\n\nMuch of the downstream analysis and results relies on the initial separation of sequenced samples into putative transmission clusters. As a result, the choice of the 4.5% genetic distance threshold and the decision to combine the results of HIV-trace and cluster-picker needs much stronger motivation. This is particularly so as Supplementary Figures 7 and 8 suggests that the two methods give quite different results. Whilst I realise cluster picker is commonly used, HIV trace does not rely on the accuracy of a provided phylogeny and as the following transmission analysis only considers pairwise relationships, HIV trace seems more appropriate.\n\nI may have misunderstood but the method for calibrating the false discovery rate (FDR) for the inference of direct transmission described in Supplementary note 3 appears to consider all pairwise relationships (equation 6). This would only be possible if a person was able to be infected by multiple different transmitters. Assuming that the authors have only considered a single transmitter per infection then this would lead to an overestimate of the FDR. This should be clarified in the text.\n\nFinally, it would be useful if the authors could discuss what impact high risk communities such as sex workers could have on these results and the estimates of intercommunity transmission.\n\n\u2013 Many of the methods are described in the supplementary materials which makes the interpretation of the results challenging. The manuscript would be improved by moving some of the supplementary methods into the main text.\n\n\u2013 The command line parameters used to run MAFFT and HIValign should be provided.\n\n\u2013 While I was able to successfully download and install the 'bumblebee' R package I could not get a small trial example to run. Example data and a short 'how to guide' should be included as part of the package.\n\n\u2013 Figure 7 is quite confusing and I think relatively little is gained by the use of an alluvial plot. I think it would be clearer to separate this plot into multiple bar plots of the total number of transmissions rather than the proportion within each category.\n\n\u2013 It would be better to combine Figures 9 and 10 into a multi panel figure\n\n\u2013 Lines 177, 184, 216, 219, 279, 342, 345 etc: The multiplication symbols look like a variable and should be removed.\n\n\u2013 Line 262: I think this should say that the Goodman method estimates CIs for the parameters of the multinomial distribution.\n",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fe8accf4-e01e-4b85-b98d-d7bec939dcb0",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C1",
+      "claim": "The Ya Tsie trial was conducted from 2013 to 2018 in 30 rural and peri-urban communities in Botswana.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ya Tsie trial or Botswana Combination Prevention Project (BCPP) was a pair-matched community randomized trial to evaluate whether an optimized combination of effective HIV treatment and prevention interventions would substantially reduce population-level HIV incidence over 29 months. The trial was conducted from 2013 to 2018 in 30 rural and peri-urban communities (average population size: 5855) in the Central, South-East, and North/North-East regions of Botswana that represented an estimated total population of 175,664 (7.6% of the national population) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the trial period and number of communities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "c0283cc8-e65f-4498-a34a-110524726786",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C2",
+      "claim": "The average population size of trial communities was 5,855.",
+      "claim_type": "EXPLICIT",
+      "source": "The trial was conducted from 2013 to 2018 in 30 rural and peri-urban communities (average population size: 5855) in the Central, South-East, and North/North-East regions of Botswana that represented an estimated total population of 175,664 (7.6% of the national population) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the average population size of trial communities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "e4904854-c836-4143-a19e-e74273b4380c",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C3",
+      "claim": "The trial represented an estimated total population of 175,664, which is 7.6% of Botswana's national population.",
+      "claim_type": "EXPLICIT",
+      "source": "The trial was conducted from 2013 to 2018 in 30 rural and peri-urban communities (average population size: 5855) in the Central, South-East, and North/North-East regions of Botswana that represented an estimated total population of 175,664 (7.6% of the national population) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the total population represented by the trial and its percentage of the national population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "c92f9df8-feca-4d5e-9bf3-d158a40e5c9f",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C4",
+      "claim": "13,131 adults aged 16\u201364 years gave informed consent to participate in the trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Among eligible community residents, 13,131 adults aged 16\u201364 years gave informed consent to participate in the trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of participants who consented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a42fdec8-8049-42ab-8f46-3a94de6a99bd",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C5",
+      "claim": "The estimated HIV prevalence among participating communities at the start of the trial was 25.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated HIV prevalence among participating communities at the start of the trial was 25.7% (27,446 / 106,712) (Supplementary file 1-Table 1A) (see Materials and methods section on computing age-gender estimates of the number of people with HIV in each trial community).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the estimated HIV prevalence at baseline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "4dce2294-893e-4860-a1e7-3a555f0ad4e6",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C6",
+      "claim": "Communities were matched into 15 pairs according to population size and age structure, access to health services, and geographic location relative to major urban centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Communities were matched into 15 pairs according to population size and age structure, access to health services, and geographic location relative to major urban centers; communities in each pair were then randomized into intervention and control arms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the matching criteria for community pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "7bff2cb2-1138-41a8-8eac-cfe451066f76",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C7",
+      "claim": "Intervention communities received expanded HIV testing, early initiation of antiretroviral treatment, and strengthened linkage-to-care.",
+      "claim_type": "EXPLICIT",
+      "source": "Intervention communities received expanded HIV testing, early initiation of antiretroviral treatment, and strengthened linkage-to-care, for example, clinic referrals with appointment dates, text alert reminders of appointments, and following-up with those who missed appointments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the intervention package provided to intervention communities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "1da56bde-7889-4283-8a53-414b19abcabe",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C8",
+      "claim": "Botswana is roughly the size of France at 581,730 km\u00b2 (224,610 square miles).",
+      "claim_type": "EXPLICIT",
+      "source": "Botswana is a sparsely populated, landlocked country in southern Africa, roughly the size of France, 581,730 km2 (224,610 square miles), with a population of about 2.3 million people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the geographic size of Botswana.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "22b715ca-b200-4321-a922-103f7645d549",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C9",
+      "claim": "Botswana has a population of about 2.3 million people.",
+      "claim_type": "EXPLICIT",
+      "source": "Botswana is a sparsely populated, landlocked country in southern Africa, roughly the size of France, 581,730 km2 (224,610 square miles), with a population of about 2.3 million people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the population size of Botswana.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a00a06e6-8de1-4ec7-972d-1b0b1b7fd17f",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C10",
+      "claim": "The Kalahari Desert occupies approximately 70% of Botswana.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kalahari Desert occupies approximately 70% of the country, and the population is largely distributed along an eastern corridor bordered by South Africa, Zambia, and Zimbabwe (GISGeography, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a source for the geographic distribution of Botswana.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "f40c3810-3957-4ecf-8dc9-4b1b8a39db50",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C11",
+      "claim": "Botswana is a high middle-income country with a Gini index of 53.3.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a high middle-income country with a Gini index of 53.3 (The World Bank, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites World Bank data for Botswana's economic status and inequality measure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "516cad06-3b9a-4b0b-b589-d23671335c07",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C12",
+      "claim": "One in five adults in Botswana aged 15\u201349 years were reported to be living with HIV in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "One in five adults in Botswana aged 15\u201349 years were reported to be living with HIV in 2019, representing the third-highest HIV prevalence in the world after Lesotho and Eswatini (UNAIDS, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites UNAIDS data for HIV prevalence in Botswana.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a171cef2-e9ae-4f92-b1cd-5bbeb12a32eb",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C13",
+      "claim": "Botswana had the third-highest HIV prevalence in the world in 2019 after Lesotho and Eswatini.",
+      "claim_type": "EXPLICIT",
+      "source": "One in five adults in Botswana aged 15\u201349 years were reported to be living with HIV in 2019, representing the third-highest HIV prevalence in the world after Lesotho and Eswatini (UNAIDS, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites UNAIDS data for global HIV prevalence rankings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "bb578289-0045-44fc-b41f-86e6c08e1c96",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C14",
+      "claim": "5,114 trial participants consented to viral genotyping and their viral genomes were successfully deep-sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, 5114 participants consented to a blood draw for HIV-1 viral genotyping and their viral genomes were successfully deep-sequenced, representing the largest phylogenetics study conducted in Botswana (Supplementary file 1-Table 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the number of participants with successful viral sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "53dabffb-f55a-4e7b-b046-c12addfafe8a",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C15",
+      "claim": "This represents the largest phylogenetics study conducted in Botswana.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, 5114 participants consented to a blood draw for HIV-1 viral genotyping and their viral genomes were successfully deep-sequenced, representing the largest phylogenetics study conducted in Botswana (Supplementary file 1-Table 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript claims this is the largest phylogenetics study in Botswana.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "20ee1c82-74f0-4ad3-8e8b-4be3840a4a2b",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C16",
+      "claim": "Most inferred HIV transmissions within the trial occurred within the same or between neighboring communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep-sequence phylogenetic analysis revealed that most inferred HIV transmissions within the trial occurred within the same or between neighboring communities, and between similarly aged partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract summarizes a key finding from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "e7ee07a9-2a9d-4d21-bd1f-596477329338",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C17",
+      "claim": "Most inferred HIV transmissions occurred between similarly aged partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep-sequence phylogenetic analysis revealed that most inferred HIV transmissions within the trial occurred within the same or between neighboring communities, and between similarly aged partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract summarizes a key finding about age patterns in transmission.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a0479ce9-c8f4-4bf3-8f7a-b6c8707e8b2b",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C18",
+      "claim": "Transmissions into intervention communities from control communities were more common than the reverse post-baseline (30% vs. 3%).",
+      "claim_type": "EXPLICIT",
+      "source": "Transmissions into intervention communities from control communities were more common than the reverse post-baseline (30% [12.2 \u2013 56.7] vs. 3% [0.1 \u2013 27.3]) than at baseline (7% [1.5 \u2013 25.3] vs. 5% [0.9 \u2013 22.9]) compatible with a benefit from treatment-as-prevention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides estimates with confidence intervals for transmission flows between trial arms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "3621f34a-4d53-4557-9875-4f673ad91d7a",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C19",
+      "claim": "At baseline, transmissions into intervention communities from control communities were 7% compared to 5% in the reverse direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmissions into intervention communities from control communities were more common than the reverse post-baseline (30% [12.2 \u2013 56.7] vs. 3% [0.1 \u2013 27.3]) than at baseline (7% [1.5 \u2013 25.3] vs. 5% [0.9 \u2013 22.9]) compatible with a benefit from treatment-as-prevention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides baseline estimates with confidence intervals for transmission flows.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a37d2bf1-5206-45b5-b12d-b04eba6de360",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C20",
+      "claim": "The pattern of transmissions between trial arms is compatible with a benefit from treatment-as-prevention.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmissions into intervention communities from control communities were more common than the reverse post-baseline (30% [12.2 \u2013 56.7] vs. 3% [0.1 \u2013 27.3]) than at baseline (7% [1.5 \u2013 25.3] vs. 5% [0.9 \u2013 22.9]) compatible with a benefit from treatment-as-prevention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract interprets the transmission patterns as consistent with intervention benefit.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "5d2ba5af-af78-46a8-9c51-613d63267d82",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C21",
+      "claim": "Population mobility patterns are fundamental to HIV transmission dynamics and to the impact of HIV control strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that population mobility patterns are fundamental to HIV transmission dynamics and to the impact of HIV control strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract concludes with an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "6370fca1-ee24-4b02-a616-66c2cb5985a6",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C22",
+      "claim": "The global number of new HIV-1 infections has gradually declined since the peak in 1997.",
+      "claim_type": "EXPLICIT",
+      "source": "The global number of new infections with HIV-1, the virus that causes AIDS, has gradually declined since the peak in 1997, yet population-level HIV incidence remains high in East and Southern Africa, especially among young women (UNAIDS, 2019; UNAIDS, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites UNAIDS reports for global HIV trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "44bddae5-d88d-49e1-905e-b52bcba9d881",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C23",
+      "claim": "Population-level HIV incidence remains high in East and Southern Africa, especially among young women.",
+      "claim_type": "EXPLICIT",
+      "source": "The global number of new infections with HIV-1, the virus that causes AIDS, has gradually declined since the peak in 1997, yet population-level HIV incidence remains high in East and Southern Africa, especially among young women (UNAIDS, 2019; UNAIDS, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites UNAIDS reports for regional HIV trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "3f9055f9-a061-4771-a232-246602b55df1",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C24",
+      "claim": "There is still no successful HIV vaccine or widely administrable cure after four decades of efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite efforts spanning four decades, there is still no successful HIV vaccine or widely administrable cure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states the current status of HIV vaccine and cure development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "d87e8836-9d02-4d8d-bdf2-ea0cbfc0e9ff",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C25",
+      "claim": "Four large cluster-randomized trials were recently conducted in East and Southern Africa to evaluate universal HIV testing and treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Four large cluster-randomized trials were recently conducted in East (Kenya and Uganda) and Southern Africa (Botswana, South Africa, and Zambia) to evaluate the effect of universal HIV testing and treatment in reducing population-level HIV incidence (Hayes et al., 2019; Makhema et al., 2019; Havlir et al., 2019; Iwuji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple trial publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "9c8a30c3-1412-42af-8fb0-a54fc3ec03d7",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C26",
+      "claim": "The universal test-and-treat trials showed variable outcomes, ranging from modest to no reduction in new HIV infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The trials showed variable outcomes, ranging from modest to no reduction in the occurrence of new HIV infections (Abdool Karim, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a review of trial outcomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "e2457427-6881-4d01-8bfe-9a83806b1e58",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C27",
+      "claim": "Early initiation of antiretroviral therapy substantially reduced onward transmission in people with HIV owing to suppressed virus levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The trials were motivated by evidence that early initiation of antiretroviral therapy substantially reduced onward transmission in people with HIV owing to suppressed virus levels (Cohen et al., 2016) and by mathematical models predicting that widely expanded access to HIV testing and treatment would rapidly and substantially reduce the occurrence of new infections (Granich et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites evidence for treatment-as-prevention.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "43fe1537-8cf2-4b4a-99e6-376cfb70a249",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C28",
+      "claim": "Mathematical models predicted that widely expanded access to HIV testing and treatment would rapidly and substantially reduce new infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The trials were motivated by evidence that early initiation of antiretroviral therapy substantially reduced onward transmission in people with HIV owing to suppressed virus levels (Cohen et al., 2016) and by mathematical models predicting that widely expanded access to HIV testing and treatment would rapidly and substantially reduce the occurrence of new infections (Granich et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites mathematical modeling predictions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a7f87c6f-ab83-493c-9d24-41bafd9a91bd",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C29",
+      "claim": "UNAIDS had set a global target of fewer than 500,000 new HIV infections by 2020 that was unmet.",
+      "claim_type": "EXPLICIT",
+      "source": "The joint United Nations Programme on HIV/AIDS (UNAIDS) had set a global target of fewer than 500,000 new HIV infections by 2020 that was unmet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states a UNAIDS target and its outcome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "b54a48ed-54c1-483c-9be7-21c97dc6b1cf",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C30",
+      "claim": "Previous work in Kwa-Zulu Natal, South Africa identified age-disparate sexual partnerships between younger women under 25 years and older men as a primary contributor to HIV transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work in a high HIV burden setting in Kwa-Zulu Natal, South Africa identified age-disparate sexual partnerships between younger women under 25 years and older men as a primary contributor to HIV transmission and incidence in younger women (de Oliveira et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites previous phylogenetic work on age-disparate partnerships.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "61ce1866-6a42-4cc6-882d-b36d765e830f",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C31",
+      "claim": "Most participants with HIV at time of enrollment were on antiretroviral treatment and virally suppressed (86%).",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of identification, most (86%, n = 4410) individuals with HIV-1 infection were on antiretroviral therapy and virally suppressed (\u2264400 copies per ml of blood plasma).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on treatment and viral suppression status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "53dcb61c-6fd8-460d-9f96-d224b9933ab6",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C32",
+      "claim": "Deep-sequencing of HIV viral genomes was generally done on proviral DNA (81%).",
+      "claim_type": "EXPLICIT",
+      "source": "Because most participants were virally suppressed at the time of sampling, deep sequencing of HIV-1 viral genomes was generally done on proviral DNA (81%, n = 4142) (Novitsky et al., 2015) (see Materials and methods section on paired-end deep-sequencing of HIV viral genomes for phylogenetic analyses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on the source material for sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "3bc6d160-27b7-4340-a0f5-9321da5058d3",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C33",
+      "claim": "3,832 participants met minimum criteria for inclusion in phylogenetic analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis was restricted to samples from 3832 participants (approximately 14% of the estimated 27,446 individuals living with HIV in trial communities) who had available demographic information and met minimum criteria on genome missingness (\u22656300 nucleotides available) for inclusion in phylogenetic analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section specifies the number of participants meeting inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "9b82b0c3-32bd-4a08-88bb-dd26c9cd4bbf",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C34",
+      "claim": "The overall genotyping density across all 30 trial communities was 14%.",
+      "claim_type": "EXPLICIT",
+      "source": "Sampling (or genotyping) density is defined as the estimated proportion of individuals living with HIV in a trial community that were included in our sample. Intervention communities were sampled more densely, 16% (2281 / 14,263) than control communities, 12% (1551 / 13,183); and sampling densities among all 30 trial communities ranged from 2.7% to 36.2% (Figure 2, Supplementary file 1, Table 1C) (see Materials and methods section on computing age-gender estimates of the number of people with HIV in each trial community).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides sampling density data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "b8cc14eb-9021-4dc6-985a-c9f61b7c8080",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C35",
+      "claim": "Intervention communities were sampled more densely (16%) than control communities (12%).",
+      "claim_type": "EXPLICIT",
+      "source": "Intervention communities were sampled more densely, 16% (2281 / 14,263) than control communities, 12% (1551 / 13,183); and sampling densities among all 30 trial communities ranged from 2.7% to 36.2% (Figure 2, Supplementary file 1, Table 1C) (see Materials and methods section on computing age-gender estimates of the number of people with HIV in each trial community).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides differential sampling density by trial arm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "6b9fbb21-44d1-4719-81e2-596a9515df55",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C36",
+      "claim": "The mean pairwise genetic distance between HIV-1 viral whole-genome consensus sequences was 12.5 \u00b1 3.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean \u00b1 standard deviation pairwise genetic distance between HIV-1 viral whole-genome consensus sequences of participants included in phylogenetic analyses was 12.5 \u00b1 3.0%, and the maximum pairwise distance was 40% substitutions per site (Figure 3A) (see Materials and methods on comparing genetic distances between HIV-1 viral consensus sequences of trial participants included in phylogenetic analyses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides genetic distance statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "9f2969c2-795a-432d-85a0-c80ccf655627",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C37",
+      "claim": "236 genetic similarity clusters were identified comprising HIV-1 viral consensus sequences from 14% (525 / 3832) of the participants.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 236 genetic similarity clusters comprising HIV-1 viral consensus sequences from 14% (525 / 3832) of the participants (Figure 5) (see Materials and methods section on consensus sequence phylogenetics to identify clusters of participants with genetically similar HIV-1 infections).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on genetic clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "de4e713e-c634-430f-bc09-94f698f16578",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C38",
+      "claim": "97% (230 / 236) of genetic clusters comprised two or three members.",
+      "claim_type": "EXPLICIT",
+      "source": "The sizes of genetic clusters ranged from 2 to 12 members, with 97% (230 / 236) of clusters comprising two or three members (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on cluster size distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "0cd26ab5-ab7d-4594-8a25-870e2e8c9ed9",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C39",
+      "claim": "52% (124 / 236) of the clusters were entirely within a single community.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, however, genetic clusters were generally concentrated within geographic regions (Central-East, North/North-East, and South-East) than spread out across them (Figure 5), with 42% (100 / 236) of clusters localized to two communities (Figure 7) and 52% (124 / 236) of the clusters entirely within a single community (Figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on geographic distribution of clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "7c9630d5-b405-413e-b782-a7e27ddbc47b",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C40",
+      "claim": "153 highly supported probable source-recipient pairs were identified within 236 clusters of genetically similar HIV-1 infections.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 153 highly supported probable source-recipient pairs within 236 clusters of genetically similar HIV-1 infections. Seventy-one were same-sex linkages between women (n = 65) or men (n = 6), and the remaining were male-female pairs (n = 82).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on identified transmission pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "844eba07-b703-4218-9ab4-faf23c569bc8",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C41",
+      "claim": "82 male-female probable transmission pairs were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 153 highly supported probable source-recipient pairs within 236 clusters of genetically similar HIV-1 infections. Seventy-one were same-sex linkages between women (n = 65) or men (n = 6), and the remaining were male-female pairs (n = 82).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on male-female transmission pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a4303590-33c8-434d-b529-d5dbd0161bbf",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C42",
+      "claim": "The estimated false discovery rate for inferring direct transmission between males and females in phylogenetically linked male-female pairs was 36%.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the probability of inferring a phylogenetically linked directed male-male pair in the sample to calibrate an upper bound on the FDR of inferring direct transmission between males and females in phylogenetically linked male-female pairs; the estimated number of linked male-female pairs in the sample with unsampled intermediates was approximately 30, corresponding to a FDR of 36% (30 / 82) (see Materials and methods section on estimating error rates in phylogenetic inference of direct transmission between sampled males and females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides an estimated false discovery rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "e7ab2e2b-8bf4-468f-b93f-ad981bc8c120",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C43",
+      "claim": "Males were a mean \u00b1 standard deviation of 3.5 \u00b1 9.6 years older than females in probable transmission pairs overall.",
+      "claim_type": "EXPLICIT",
+      "source": "Males were a mean \u00b1 standard deviation of 3.5 \u00b1 9.6 years older than females in probable transmission pairs overall, with a difference of 4.9 \u00b1 7.5 in male-to-female transmission events, and 1.8 \u00b1 11.6 years in female-to-male transmission events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides age difference statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "8b4f55b9-e67b-47c5-96c8-160f5687d90b",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C44",
+      "claim": "55% of the 82 inferred male-female transmission events originated from men.",
+      "claim_type": "EXPLICIT",
+      "source": "55% [95% CI: 39.8 \u2013 69.1] of the 82 inferred male-female transmission events originated from men with the remainder occurring from women, 45% [30.9 \u2013 60.2] (Figure 13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on the direction of transmission by gender.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "b196ddb2-6172-4fc2-a228-c23716a106a6",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C45",
+      "claim": "69% (57 / 82) of the sampled transmission events occurred within the same trial community.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of inferred transmission events of HIV-1 infection in the deep-sequenced sample between members of the same trial community was 69% (57 / 82) compared with 21% (17 / 82) for members of different trial communities in the same region, and 10% (8 / 82) for members of trial communities in different regions (Figures 13 and 14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on geographic distribution of transmission events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "8645034c-5bca-4a51-80cf-7acab5d8b796",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C46",
+      "claim": "The median driving distance between trial communities for transmission pairs was 161 km [108 \u2013 420 km].",
+      "claim_type": "EXPLICIT",
+      "source": "For pairs where transmission events linked people in different trial communities the median [lower\u2013upper quartile] driving distance between the trial communities was 161 km [108 \u2013 420 km] or 100 mi [67 \u2013 261 mi] and the median drive time was 1.86 hr [1.41 \u2013 4.68 hr].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on geographic distances between communities with transmission links.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "b63f235c-9cf4-49ed-a571-e201b2a1e593",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C48",
+      "claim": "After adjusting for differential sampling by community, an estimated 24% of transmissions to a resident of a trial community originated from another trial community.",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for differential sampling by community, an estimated 24% of transmissions to a resident of a trial community originated from another trial community (Supplementary file 1-Table 1I) (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides adjusted estimates of between-community transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "24c06bb0-dc00-4856-961b-982c7793b637",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C49",
+      "claim": "The estimated proportion of HIV transmissions in the trial population within the South-East region (50%) was higher compared to the Central-East (23%) and North-East regions (18%).",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated proportion of HIV transmissions in the trial population, after adjusting for differential sampling by geographic region, that occurred within the South-East region, 50% [95% CI: 29.6 \u2013 70.5] was higher compared to that in the Central-East, 23% [9.7 \u2013 45.4] and North-East regions, 18% [6.5 \u2013 39.8], respectively (Figure 15A and Supplementary file 1-Table 1J) (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides adjusted estimates of transmission by geographic region.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "5b654ee2-6380-40b8-9702-a93697f84860",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C50",
+      "claim": "79% (65 / 82) of inferred transmission events occurred within intervention or within control communities.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of inferred transmission events of HIV-1 infection in the deep-sequenced sample occurring within intervention (n = 33) or within control communities (n = 32) was 79% (65 / 82) compared with 21% (17 / 82) across intervention and control communities (Figures 13 and 14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on transmission patterns by trial arm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "6de42ba6-84aa-4281-98e6-e5b320634442",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C51",
+      "claim": "There were more transmission events identified in intervention communities that originated from control communities than the reverse (n = 13 vs. 4).",
+      "claim_type": "EXPLICIT",
+      "source": "There were more transmission events identified in intervention communities that originated from control communities than the reverse (n = 13 vs. 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides data on directional transmission between trial arms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "7713b176-06f2-4811-8d68-b64bfb4e1a18",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C52",
+      "claim": "After adjusting for differential sampling by trial arm, the estimated proportion of HIV transmissions within control communities (51%) was about twice that in intervention communities (29%).",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for differential sampling by trial arm, the estimated proportions of HIV transmissions in the trial population within control communities, 51% [35.9 \u2013 66.5] was about twice that predicted in intervention communities, 29% [16.6 \u2013 44.6] (Figure 15B and Supplementary file 1-Table 1K); and the estimated proportion of HIV transmissions in the trial population flowing into intervention communities from control communities, 15% [6.9 \u2013 30.1] was about three times higher than the reverse, 5% [1.0 \u2013 16.9] (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides adjusted estimates of transmission within trial arms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "17a8e098-f356-42f3-a7e9-37de10fa5106",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C53",
+      "claim": "The estimated proportion of HIV transmissions flowing into intervention communities from control communities (15%) was about three times higher than the reverse (5%).",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for differential sampling by trial arm, the estimated proportions of HIV transmissions in the trial population within control communities, 51% [35.9 \u2013 66.5] was about twice that predicted in intervention communities, 29% [16.6 \u2013 44.6] (Figure 15B and Supplementary file 1-Table 1K); and the estimated proportion of HIV transmissions in the trial population flowing into intervention communities from control communities, 15% [6.9 \u2013 30.1] was about three times higher than the reverse, 5% [1.0 \u2013 16.9] (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides adjusted estimates of transmission between trial arms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "2689aee4-bd26-4ad4-b846-9c89fe7b2b8e",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C54",
+      "claim": "Men and women for whom sexual partners could be inferred phylogenetically contributed similarly to viral transmission of HIV-1 infection in the trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Following an adjustment for variable sampling by age and gender (Figure 12), we found that men and women for whom sexual partners could be inferred phylogenetically contributed similarly to viral transmission of HIV-1 infection in the Botswana/Ya Tsie trial (see Materials and methods section on adjustment for variable sampling rates across different demographic groups or randomized-HIV-interventions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section interprets adjusted results on gender contribution to transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "14a13fcd-08cf-41a8-b205-b896a184a3d1",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C55",
+      "claim": "There was little genetic evidence to suggest that older men were a substantial source of HIV-1 infection to younger women in Botswana.",
+      "claim_type": "EXPLICIT",
+      "source": "In the phylogenetic analyses of the Botswana/Ya Tsie study, there was little genetic evidence from analyses of deep-sequence data to suggest that older men were a substantial source of HIV-1 infection to younger women in Botswana.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section interprets the findings on age-disparate transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "e2d87e4e-f048-4541-89f5-16d63c71cf6a",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C56",
+      "claim": "The VOICE trial found no association between age-disparate relationships and risk of HIV-1 infection in young women under 25 years in South Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our results, the Vaginal and Oral Interventions to Control the Epidemic (VOICE) trial, a placebo-controlled randomized study of pre-exposure prophylaxis to test the efficacy of providing oral and vaginal gel tenofovir to women in Southern Africa to prevent HIV infection (Saag, 2015; Balkus et al., 2015), found no association between age-disparate relationships and risk of HIV-1 infection in young women under 25 years residing in South Africa in the cities of Durban, Johannesburg, and Klerksdorp who had male partners that were >5 years older at enrollment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites another study with consistent findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "5b5b2e01-fc84-4dae-9a7e-aaaabce3a149",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C57",
+      "claim": "Participants with genetically similar HIV-1 infections tended to aggregate in small-sized (two- or three-person) clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants with genetically similar HIV-1 infections in the Botswana/Ya Tsie trial tended to aggregate in small-sized (two- or three-person) clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section summarizes a key finding about cluster sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "10fb7564-e8d0-45fb-9a21-e2af2ce633de",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C58",
+      "claim": "The small-sized genetic similarity clusters are consistent with phylogenetic clustering studies in generalized epidemics in Southern Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with phylogenetic clustering studies in generalized epidemics in Southern Africa but contrasts with larger clusters typically found in concentrated HIV epidemics in Europe and North America (Grabowski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites a comparison with other phylogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "306ce0da-2c78-409c-8d4a-56ecb524dd58",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C59",
+      "claim": "Most participants in the household survey indicated they had not engaged in transactional sex in the last 12 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Most participants in the household survey of the Botswana/Ya Tsie trial indicated that they had not engaged in transactional sex in the last 12 months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section reports survey data on sexual behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a8a98630-606c-4e54-a294-8a8056916b0f",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C60",
+      "claim": "This suggested that there was a limited contribution of sex workers to the transmission patterns identified in the trial.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that there was a limited contribution of sex workers to the transmission patterns identified in the trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section interprets survey data on sexual behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "d87e5585-4285-4d21-a641-d2bc3dc7b4a1",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C61",
+      "claim": "The sampling fraction was a relatively small sample (14%) of HIV viral genomes in the trial population.",
+      "claim_type": "EXPLICIT",
+      "source": "First, viral genomes from an estimated 14% of all people with HIV aged 16\u201364 years were sampled among participating trial communities. Comparatively, the sampling fraction of phylogenetic studies based on African genomes is commonly under 10% (Grabowski et al., 2018). Although our sampling fraction was a modest improvement over previous studies it is a relatively small sample of HIV viral genomes in the trial population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section acknowledges a limitation regarding sampling fraction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "41927162-6f86-4327-9cb2-328878c1beb6",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C62",
+      "claim": "Most participants with HIV in this trial were virally suppressed, which might have biased the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Most participants with HIV in this trial were virally suppressed, this might have biased our results in the sense that there might be some differences between the HIV transmission patterns we found and those that exist among viral genetic clusters largely populated by people with unsuppressed virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section acknowledges a potential source of bias.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "3c1857d5-a6b6-40a8-a37e-4fe3bdf73f6b",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C63",
+      "claim": "The study was based on a relatively representative sample of adults with HIV living in rural and peri-urban villages across Eastern Botswana.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this study was based on a relatively representative sample of adults with HIV living in rural and peri-urban villages across Eastern Botswana.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section characterizes the representativeness of the sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "c5466938-a7d7-4139-94a3-6fbbb5237d9a",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "claim_id": "C64",
+      "claim": "There was a greater flow of HIV transmissions into intervention communities from control communities than vice versa potentially reducing the observed effect-size of the trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there was a greater flow of HIV transmissions into intervention communities from control communities than vice versa potentially reducing the observed effect-size of the trial, as would transmissions averted by the intervention that were not picked up because the recipient was not in a trial community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section interprets the implications of transmission patterns for trial outcomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a770dff8-46f6-4dd8-9f7f-4cb2741ac449",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Ya Tsie trial was a pair-matched community randomized trial conducted from 2013 to 2018 in 30 rural and peri-urban communities in Botswana, representing 7.6% of the national population with an estimated baseline HIV prevalence of 25.7%. Communities were matched into 15 pairs and randomized to intervention (expanded HIV testing, early ART, strengthened linkage-to-care) or control arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide consistent descriptive information about the trial design, population, and intervention. The trial design is clearly specified with appropriate matching criteria (C6) and well-defined intervention components (C7). The population estimates (C2, C3, C5) are internally consistent and the trial period is explicitly stated (C1).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a8cfba48-7882-4480-9dbd-a360242dd209",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Botswana is a sparsely populated landlocked country roughly the size of France (581,730 km\u00b2) with about 2.3 million people, where the Kalahari Desert occupies approximately 70% of the country. It is a high middle-income country with a Gini index of 53.3 and had the third-highest HIV prevalence in the world in 2019 (one in five adults aged 15-49 years living with HIV).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 provide contextual geographic and epidemiological information about Botswana, all citing appropriate external sources (World Bank, UNAIDS, GISGeography). These are background facts that establish the study setting and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "c4325f4e-4c01-4420-91f1-a81cd958b4a1",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "5,114 trial participants consented to viral genotyping and were successfully deep-sequenced, representing the largest phylogenetics study in Botswana. Most participants (86%) were on antiretroviral treatment and virally suppressed, requiring deep-sequencing primarily on proviral DNA (81%). 3,832 participants met criteria for phylogenetic analysis, representing an overall genotyping density of 14%, with intervention communities sampled more densely (16%) than control communities (12%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15, C31-C35 provide consistent data on sample sizes, sequencing methods, and sampling density. The numbers are internally consistent (5,114 sequenced, 3,832 meeting inclusion criteria, 86% virally suppressed requiring proviral DNA sequencing). The differential sampling by trial arm (C35) is clearly documented and will be important for adjusted analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "260be7ed-2bf0-4bf4-b2b3-37d4e4898b9a",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The mean pairwise genetic distance between HIV-1 viral whole-genome consensus sequences was 12.5 \u00b1 3.0%. 236 genetic similarity clusters were identified comprising 14% (525/3,832) of participants, with 97% of clusters comprising two or three members, and 52% of clusters entirely within a single community.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 present consistent genetic clustering results. The large mean genetic distance (12.5%) is consistent with sparse sampling and/or sampling late in infection as the authors note. The predominance of small clusters (C38) and geographic concentration (C39) are consistent with the 14% sampling fraction and provide important context for transmission inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "82c3cf71-832e-450e-81c3-8da7baf55aa2",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "153 highly supported probable source-recipient pairs were identified, including 82 male-female pairs. The estimated false discovery rate for inferring direct transmission between males and females was 36%, calibrated using the probability of inferring male-male pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C42 describe transmission pair identification and FDR estimation. While the FDR calibration method (C42) is reasonable, the 36% FDR is quite high and represents an upper bound. The authors acknowledge this limitation but the high FDR introduces substantial uncertainty into downstream analyses of the 82 male-female pairs. The method assumes equal probability of missing intermediates in male-male vs male-female pairs, which may not hold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "633f79c6-4154-4b4b-aa56-67d716507720",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Males were on average 3.5 \u00b1 9.6 years older than females in probable transmission pairs (reduced to 1.3 \u00b1 10.4 years after adjusting for sampling variability). 55% of male-female transmission events originated from men. After adjustment for variable sampling by age and gender, men and women contributed similarly to viral transmission, with little genetic evidence that older men were a substantial source of infection to younger women in Botswana.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C54-C55 present consistent findings on age and gender patterns in transmission. The adjustment for sampling variability (C43) appropriately accounts for undersampling of younger males. The finding of similar contributions by gender (C54) and lack of strong age-disparate transmission (C55) contrasts with prior work in South Africa (C30) and is supported by the data, though the high FDR (C42) introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "9005589a-9e05-4ae0-beaf-5bc83e079536",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Most inferred HIV transmissions occurred within the same trial community (69%, 57/82) or between neighboring communities. The median driving distance between communities for transmission pairs was 161 km. After adjusting for differential sampling, an estimated 24% of transmissions to trial community residents originated from another trial community.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C45-C46, C48 present consistent evidence for geographic clustering of transmission. The permutation test (mentioned in methods) supports preferential mixing by proximity. The adjusted estimate (C48) appropriately accounts for differential sampling. These findings are internally consistent and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "0f81b06f-570b-467d-a338-5a3695ea54aa",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The estimated proportion of HIV transmissions within the South-East region (50%) was higher compared to the Central-East (23%) and North-East regions (18%) after adjusting for differential sampling by geographic region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 presents adjusted regional transmission estimates with confidence intervals. The higher transmission in the South-East region is noted to include Gaborone, the capital city, providing a plausible explanation. The adjustment method is appropriate and the finding is clearly stated with uncertainty quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "c202c0cc-8716-4bd0-a63f-d12dc15e0257",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Post-baseline, transmissions into intervention communities from control communities (30%) were more common than the reverse (3%), compared to baseline (7% vs 5%). After adjusting for differential sampling, the estimated proportion of HIV transmissions within control communities (51%) was about twice that in intervention communities (29%), and transmissions flowing into intervention communities from control communities (15%) was about three times higher than the reverse (5%). This pattern is compatible with a benefit from treatment-as-prevention and potentially reduced the observed trial effect-size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C18-C20, C50-C53, C64 present the key finding regarding intervention effects. However, several limitations create uncertainty: (1) transmission dates were not identified, only sampling dates (acknowledged in C18, C20), making temporal inference problematic; (2) the high FDR (36%, C42) affects these estimates; (3) the baseline vs post-baseline comparison relies on recipient sampling time, not transmission time; (4) the wide confidence intervals (C18, C52-C53) reflect substantial uncertainty; (5) differential sampling by trial arm (C35) was adjusted for but may not fully account for selection bias. While the pattern is suggestive, the evidence is not definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "91b57587-0644-41c2-8220-8f13e3235685",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Global HIV-1 infections have declined since 1997, yet incidence remains high in East and Southern Africa, especially among young women. Despite four decades of effort, there is no successful HIV vaccine or cure. Four large universal test-and-treat trials in East and Southern Africa showed variable outcomes (modest to no reduction in new infections), despite evidence that early ART reduces transmission and mathematical models predicting substantial impact. UNAIDS' target of fewer than 500,000 new infections by 2020 was unmet. Previous work in South Africa identified age-disparate partnerships as a primary contributor to transmission to younger women.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C30 provide appropriate background context, all citing relevant sources (UNAIDS reports, trial publications, modeling studies). These establish the scientific rationale for the study and are appropriately referenced. The citation of prior work on age-disparate transmission (C30) provides important context for the contrasting findings in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "b8b6e7f6-6342-4ccf-8e83-377785156791",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The finding of limited age-disparate transmission is consistent with the VOICE trial in South Africa, which found no association between age-disparate relationships and HIV risk in young women. Participants aggregated in small-sized clusters (two or three persons), consistent with phylogenetic studies in generalized epidemics in Southern Africa. Most participants reported not engaging in transactional sex in the last 12 months, suggesting limited contribution of sex workers to identified transmission patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 appropriately contextualize the findings with other studies and provide supporting behavioral data. The consistency with the VOICE trial (C56) strengthens the age-disparate transmission findings. The small cluster sizes (C57-C58) are consistent with the sampling fraction and generalized epidemic context. The behavioral data (C59-C60) provide supporting evidence, though self-reported sexual behavior may be subject to social desirability bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "a9d4b151-4bab-4e48-a3db-816e7c5fc6b9",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study had a 14% sampling fraction of HIV viral genomes in the trial population, which is modest compared to typical African phylogenetic studies (<10%). Most participants were virally suppressed, which might have biased results toward transmission patterns among people with suppressed virus. Nevertheless, the study was based on a relatively representative sample of adults with HIV in rural and peri-urban villages across Eastern Botswana.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 appropriately acknowledge study limitations. The 14% sampling fraction (C61) is honestly characterized as modest despite being better than typical studies. The potential bias from viral suppression (C62) is appropriately noted as speculative. The characterization of representativeness (C63) is reasonable given the sampling design, though underrepresentation of men and younger individuals is noted elsewhere.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    },
+    {
+      "id": "47e7e2d7-f3e0-4e39-841f-8ebe521d438b",
+      "content_id": "ab807c77-eecf-4194-9814-01c9cceadb97",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Population mobility patterns are fundamental to HIV transmission dynamics and to the impact of HIV control strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 represents the main conclusion of the study. This is well-supported by the findings of substantial between-community transmission (C48), geographic clustering (C45-C46), and differential transmission flows between trial arms (C52-C53). The evidence collectively supports that mobility and geographic mixing are important factors in HIV transmission and intervention effectiveness, though the magnitude of effects has uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:48.291374Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fe8accf4-e01e-4b85-b98d-d7bec939dcb0",
+      "result_id": "a770dff8-46f6-4dd8-9f7f-4cb2741ac449"
+    },
+    {
+      "claim_id": "c0283cc8-e65f-4498-a34a-110524726786",
+      "result_id": "a770dff8-46f6-4dd8-9f7f-4cb2741ac449"
+    },
+    {
+      "claim_id": "e4904854-c836-4143-a19e-e74273b4380c",
+      "result_id": "a770dff8-46f6-4dd8-9f7f-4cb2741ac449"
+    },
+    {
+      "claim_id": "c92f9df8-feca-4d5e-9bf3-d158a40e5c9f",
+      "result_id": "a770dff8-46f6-4dd8-9f7f-4cb2741ac449"
+    },
+    {
+      "claim_id": "a42fdec8-8049-42ab-8f46-3a94de6a99bd",
+      "result_id": "a770dff8-46f6-4dd8-9f7f-4cb2741ac449"
+    },
+    {
+      "claim_id": "4dce2294-893e-4860-a1e7-3a555f0ad4e6",
+      "result_id": "a770dff8-46f6-4dd8-9f7f-4cb2741ac449"
+    },
+    {
+      "claim_id": "7bff2cb2-1138-41a8-8eac-cfe451066f76",
+      "result_id": "a770dff8-46f6-4dd8-9f7f-4cb2741ac449"
+    },
+    {
+      "claim_id": "1da56bde-7889-4283-8a53-414b19abcabe",
+      "result_id": "a8cfba48-7882-4480-9dbd-a360242dd209"
+    },
+    {
+      "claim_id": "22b715ca-b200-4321-a922-103f7645d549",
+      "result_id": "a8cfba48-7882-4480-9dbd-a360242dd209"
+    },
+    {
+      "claim_id": "a00a06e6-8de1-4ec7-972d-1b0b1b7fd17f",
+      "result_id": "a8cfba48-7882-4480-9dbd-a360242dd209"
+    },
+    {
+      "claim_id": "f40c3810-3957-4ecf-8dc9-4b1b8a39db50",
+      "result_id": "a8cfba48-7882-4480-9dbd-a360242dd209"
+    },
+    {
+      "claim_id": "516cad06-3b9a-4b0b-b589-d23671335c07",
+      "result_id": "a8cfba48-7882-4480-9dbd-a360242dd209"
+    },
+    {
+      "claim_id": "a171cef2-e9ae-4f92-b1cd-5bbeb12a32eb",
+      "result_id": "a8cfba48-7882-4480-9dbd-a360242dd209"
+    },
+    {
+      "claim_id": "bb578289-0045-44fc-b41f-86e6c08e1c96",
+      "result_id": "c4325f4e-4c01-4420-91f1-a81cd958b4a1"
+    },
+    {
+      "claim_id": "53dabffb-f55a-4e7b-b046-c12addfafe8a",
+      "result_id": "c4325f4e-4c01-4420-91f1-a81cd958b4a1"
+    },
+    {
+      "claim_id": "61ce1866-6a42-4cc6-882d-b36d765e830f",
+      "result_id": "c4325f4e-4c01-4420-91f1-a81cd958b4a1"
+    },
+    {
+      "claim_id": "53dcb61c-6fd8-460d-9f96-d224b9933ab6",
+      "result_id": "c4325f4e-4c01-4420-91f1-a81cd958b4a1"
+    },
+    {
+      "claim_id": "3bc6d160-27b7-4340-a0f5-9321da5058d3",
+      "result_id": "c4325f4e-4c01-4420-91f1-a81cd958b4a1"
+    },
+    {
+      "claim_id": "9b82b0c3-32bd-4a08-88bb-dd26c9cd4bbf",
+      "result_id": "c4325f4e-4c01-4420-91f1-a81cd958b4a1"
+    },
+    {
+      "claim_id": "b8cc14eb-9021-4dc6-985a-c9f61b7c8080",
+      "result_id": "c4325f4e-4c01-4420-91f1-a81cd958b4a1"
+    },
+    {
+      "claim_id": "6b9fbb21-44d1-4719-81e2-596a9515df55",
+      "result_id": "260be7ed-2bf0-4bf4-b2b3-37d4e4898b9a"
+    },
+    {
+      "claim_id": "9f2969c2-795a-432d-85a0-c80ccf655627",
+      "result_id": "260be7ed-2bf0-4bf4-b2b3-37d4e4898b9a"
+    },
+    {
+      "claim_id": "de4e713e-c634-430f-bc09-94f698f16578",
+      "result_id": "260be7ed-2bf0-4bf4-b2b3-37d4e4898b9a"
+    },
+    {
+      "claim_id": "0cd26ab5-ab7d-4594-8a25-870e2e8c9ed9",
+      "result_id": "260be7ed-2bf0-4bf4-b2b3-37d4e4898b9a"
+    },
+    {
+      "claim_id": "7c9630d5-b405-413e-b782-a7e27ddbc47b",
+      "result_id": "82c3cf71-832e-450e-81c3-8da7baf55aa2"
+    },
+    {
+      "claim_id": "844eba07-b703-4218-9ab4-faf23c569bc8",
+      "result_id": "82c3cf71-832e-450e-81c3-8da7baf55aa2"
+    },
+    {
+      "claim_id": "a4303590-33c8-434d-b529-d5dbd0161bbf",
+      "result_id": "82c3cf71-832e-450e-81c3-8da7baf55aa2"
+    },
+    {
+      "claim_id": "e7ab2e2b-8bf4-468f-b93f-ad981bc8c120",
+      "result_id": "633f79c6-4154-4b4b-aa56-67d716507720"
+    },
+    {
+      "claim_id": "8b4f55b9-e67b-47c5-96c8-160f5687d90b",
+      "result_id": "633f79c6-4154-4b4b-aa56-67d716507720"
+    },
+    {
+      "claim_id": "2689aee4-bd26-4ad4-b846-9c89fe7b2b8e",
+      "result_id": "633f79c6-4154-4b4b-aa56-67d716507720"
+    },
+    {
+      "claim_id": "14a13fcd-08cf-41a8-b205-b896a184a3d1",
+      "result_id": "633f79c6-4154-4b4b-aa56-67d716507720"
+    },
+    {
+      "claim_id": "20ee1c82-74f0-4ad3-8e8b-4be3840a4a2b",
+      "result_id": "9005589a-9e05-4ae0-beaf-5bc83e079536"
+    },
+    {
+      "claim_id": "e7ee07a9-2a9d-4d21-bd1f-596477329338",
+      "result_id": "9005589a-9e05-4ae0-beaf-5bc83e079536"
+    },
+    {
+      "claim_id": "b196ddb2-6172-4fc2-a228-c23716a106a6",
+      "result_id": "9005589a-9e05-4ae0-beaf-5bc83e079536"
+    },
+    {
+      "claim_id": "8645034c-5bca-4a51-80cf-7acab5d8b796",
+      "result_id": "9005589a-9e05-4ae0-beaf-5bc83e079536"
+    },
+    {
+      "claim_id": "b63f235c-9cf4-49ed-a571-e201b2a1e593",
+      "result_id": "9005589a-9e05-4ae0-beaf-5bc83e079536"
+    },
+    {
+      "claim_id": "24c06bb0-dc00-4856-961b-982c7793b637",
+      "result_id": "0f81b06f-570b-467d-a338-5a3695ea54aa"
+    },
+    {
+      "claim_id": "a0479ce9-c8f4-4bf3-8f7a-b6c8707e8b2b",
+      "result_id": "c202c0cc-8716-4bd0-a63f-d12dc15e0257"
+    },
+    {
+      "claim_id": "3621f34a-4d53-4557-9875-4f673ad91d7a",
+      "result_id": "c202c0cc-8716-4bd0-a63f-d12dc15e0257"
+    },
+    {
+      "claim_id": "a37d2bf1-5206-45b5-b12d-b04eba6de360",
+      "result_id": "c202c0cc-8716-4bd0-a63f-d12dc15e0257"
+    },
+    {
+      "claim_id": "5b654ee2-6380-40b8-9702-a93697f84860",
+      "result_id": "c202c0cc-8716-4bd0-a63f-d12dc15e0257"
+    },
+    {
+      "claim_id": "6de42ba6-84aa-4281-98e6-e5b320634442",
+      "result_id": "c202c0cc-8716-4bd0-a63f-d12dc15e0257"
+    },
+    {
+      "claim_id": "7713b176-06f2-4811-8d68-b64bfb4e1a18",
+      "result_id": "c202c0cc-8716-4bd0-a63f-d12dc15e0257"
+    },
+    {
+      "claim_id": "17a8e098-f356-42f3-a7e9-37de10fa5106",
+      "result_id": "c202c0cc-8716-4bd0-a63f-d12dc15e0257"
+    },
+    {
+      "claim_id": "c5466938-a7d7-4139-94a3-6fbbb5237d9a",
+      "result_id": "c202c0cc-8716-4bd0-a63f-d12dc15e0257"
+    },
+    {
+      "claim_id": "6370fca1-ee24-4b02-a616-66c2cb5985a6",
+      "result_id": "91b57587-0644-41c2-8220-8f13e3235685"
+    },
+    {
+      "claim_id": "44bddae5-d88d-49e1-905e-b52bcba9d881",
+      "result_id": "91b57587-0644-41c2-8220-8f13e3235685"
+    },
+    {
+      "claim_id": "3f9055f9-a061-4771-a232-246602b55df1",
+      "result_id": "91b57587-0644-41c2-8220-8f13e3235685"
+    },
+    {
+      "claim_id": "d87e8836-9d02-4d8d-bdf2-ea0cbfc0e9ff",
+      "result_id": "91b57587-0644-41c2-8220-8f13e3235685"
+    },
+    {
+      "claim_id": "9c8a30c3-1412-42af-8fb0-a54fc3ec03d7",
+      "result_id": "91b57587-0644-41c2-8220-8f13e3235685"
+    },
+    {
+      "claim_id": "e2457427-6881-4d01-8bfe-9a83806b1e58",
+      "result_id": "91b57587-0644-41c2-8220-8f13e3235685"
+    },
+    {
+      "claim_id": "43fe1537-8cf2-4b4a-99e6-376cfb70a249",
+      "result_id": "91b57587-0644-41c2-8220-8f13e3235685"
+    },
+    {
+      "claim_id": "a7f87c6f-ab83-493c-9d24-41bafd9a91bd",
+      "result_id": "91b57587-0644-41c2-8220-8f13e3235685"
+    },
+    {
+      "claim_id": "b54a48ed-54c1-483c-9be7-21c97dc6b1cf",
+      "result_id": "91b57587-0644-41c2-8220-8f13e3235685"
+    },
+    {
+      "claim_id": "e2d87e4e-f048-4541-89f5-16d63c71cf6a",
+      "result_id": "b8b6e7f6-6342-4ccf-8e83-377785156791"
+    },
+    {
+      "claim_id": "5b5b2e01-fc84-4dae-9a7e-aaaabce3a149",
+      "result_id": "b8b6e7f6-6342-4ccf-8e83-377785156791"
+    },
+    {
+      "claim_id": "10fb7564-e8d0-45fb-9a21-e2af2ce633de",
+      "result_id": "b8b6e7f6-6342-4ccf-8e83-377785156791"
+    },
+    {
+      "claim_id": "306ce0da-2c78-409c-8d4a-56ecb524dd58",
+      "result_id": "b8b6e7f6-6342-4ccf-8e83-377785156791"
+    },
+    {
+      "claim_id": "a8a98630-606c-4e54-a294-8a8056916b0f",
+      "result_id": "b8b6e7f6-6342-4ccf-8e83-377785156791"
+    },
+    {
+      "claim_id": "d87e5585-4285-4d21-a641-d2bc3dc7b4a1",
+      "result_id": "a9d4b151-4bab-4e48-a3db-816e7c5fc6b9"
+    },
+    {
+      "claim_id": "41927162-6f86-4327-9cb2-328878c1beb6",
+      "result_id": "a9d4b151-4bab-4e48-a3db-816e7c5fc6b9"
+    },
+    {
+      "claim_id": "3c1857d5-a6b6-40a8-a37e-4fe3bdf73f6b",
+      "result_id": "a9d4b151-4bab-4e48-a3db-816e7c5fc6b9"
+    },
+    {
+      "claim_id": "5d2ba5af-af78-46a8-9c51-613d63267d82",
+      "result_id": "47e7e2d7-f3e0-4e39-841f-8ebe521d438b"
+    }
+  ],
+  "comparisons": []
+}

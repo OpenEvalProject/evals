@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript establishes the biological context for bone defect repair, describing the coordinated activities of osteogenic and angiogenic cells, the role of hypoxia in angiogenesis, and the structure of functional blood vessel networks. These claims identify a knowledge gap regarding cellular and molecular events at the osteogenic-angiogenic interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by citations to established literature and represent accepted biological knowledge. The identification of the knowledge gap (C3) provides appropriate motivation for the study. These are background claims that frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior research has shown that skeletal vasculature is uniquely patterned at different anatomic sites, with type H and type E vessels coupling to osteoblasts and bone progenitors. These vessels are derived from AplnCreER+ vessels and regulated by specific molecular pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by multiple citations to prior research and represent established knowledge in the field. These claims provide important context for understanding vessel specification in bone, though they describe prior work rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript describes advanced imaging techniques including MPLSM for bone tissue visualization, 2P-PLIM for oxygen measurements, and 2P-FLIM for metabolic analysis. These techniques enable high-resolution, non-invasive interrogation of bone tissue vascularization and cellular metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 are well-supported by citations to prior literature and the authors' previous work. These methodological claims establish the technical foundation for the study. The capabilities of these techniques are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "CD31 and EMCN define two distinct vessel types (CD31+EMCN+ and CD31+EMCN\u2212) at cranial defect sites. From the superior side, few vessels were present days 1-5, followed by sprouting of CD31+EMCN+ vessels at day 5 that originated from dura periosteum. Col1a1-GFP+ osteoblasts appeared at day 10 along with vessels in bone channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 are supported by imaging data in Figures 1 and 2. The observations are clearly documented with appropriate imaging evidence showing temporal dynamics of vessel types and osteoblast appearance. The inference about vessel origin from dura periosteum (C23) is reasonable based on the observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "At the dura periosteum, CD31+EMCN+ vessels initiated rapid sprouting by day 3, coinciding with Col1a1-GFP+ cell expansion that peaked at days 5-10. This expansion was transient and subsided as osteoblasts matured. CD31+EMCN\u2212 vessels showed delayed response, with enhanced branching at day 10 coinciding with bone tissue deposition and remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37 are well-supported by imaging data in Figure 2 and quantitative analyses (Figure 2G-L). The temporal dynamics of the two vessel types are clearly documented with n=3 mice. The correlation between vessel expansion and osteoblast/bone formation is demonstrated through multiple imaging modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Genetic lineage tracing demonstrates that AplnCreER labels CD31+EMCN+ vessels exclusively, while BmxCreER labels arterial CD31+EMCN\u2212 vessels. These two vessel populations are mutually exclusive, establishing that CD31+EMCN+ vessels derive from AplnCreER+ sprouting ECs and CD31+EMCN\u2212 vessels from BmxCreER+ arterial ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are strongly supported by lineage tracing data in Figure 3. The complete overlap of AplnCreER with CD31+EMCN+ vessels and mutual exclusivity of BmxCreER with EMCN+ vessels provides clear evidence for vessel identity. This is a key finding establishing the cellular origins of the two vessel types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C102"
+    ],
+    "result": "pO2 measurements in AplnCreER+ vessels and surrounding tissue show significantly lower oxygen levels within 150 \u03bcm of osteoblast clusters at days 10, 17, and 31. The lowest pO2 (23.69 \u00b1 10.39 mmHg) was recorded at day 17, indicating a hypoxic environment. pO2 gradually increased over 31 days as the vessel network matured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by 2P-PLIM data in Figure 4 with statistical significance (p<0.05). The use of 150 \u03bcm threshold is justified by C102 citing oxygen diffusion distance. However, the inference that hypoxia is due to increased metabolic need (C43) is reasonable but not directly tested. Sample size (4 mice, \u226510 measurements per region) appears adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C80"
+    ],
+    "result": "In BmxCreER+ vessels, intravascular pO2 was significantly higher than interstitial pO2 at day 10 (49.66 \u00b1 17.97 vs 35.81 \u00b1 10.8 mmHg). BmxCreER+ vessels showed higher pO2 than AplnCreER+ vessels at comparable locations, particularly at later stages. A correlation between pO2 and distance from defect edge emerged at days 24 and 31.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 and C80 are supported by data in Figure 5 and Figure 5\u2014supplement 1 with appropriate statistical analyses (n=4 mice, p<0.05). The Pearson correlation analyses (C48) are properly reported with R and p values. The finding that arterial vessels have higher pO2 than venous vessels is biologically consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C57",
+      "C58",
+      "C103",
+      "C104"
+    ],
+    "result": "2P-FLIM measurements show AplnCreER+ ECs have significantly lower NAD(P)H \u03c4M than osteoblasts (p<0.001), indicating preferential use of glycolysis over OxPhos. ECs were less sensitive to environmental pO2 changes compared to osteoblasts, which shifted \u03c4M to lower values at day 17 when pO2 was lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C57-C58 are supported by in vivo 2P-FLIM data in Figure 6 with appropriate statistical analysis. The interpretation of \u03c4M values is supported by established literature (C103-C104). At least 26 cells from 3 mice were analyzed. The metabolic inference is reasonable based on the NAD(P)H lifetime measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In vitro bone marrow cultures show osteoblasts in osteogenic media had increasing NAD(P)H \u03c4M from 1.55\u00b10.13 ns (day 17) to 1.75\u00b10.18 ns (day 24), while cells in regular media maintained \u03c4M ~1.3 ns. AplnCreER+ ECs had lower \u03c4M than osteoblasts and showed similar \u03c4M in both media types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by in vitro 2P-FLIM data in Figure 6E with at least 8 cells per condition across 3 experiments. The findings corroborate the in vivo observations and strengthen the conclusion about differential metabolism between ECs and osteoblasts. Statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C60",
+      "C61"
+    ],
+    "result": "The study demonstrates that CD31+EMCN+ vessels (derived from AplnCreER+ ECs) and CD31+EMCN\u2212 vessels (from BmxCreER+ arterial ECs) exhibit distinct dynamics during repair. CD31+EMCN+ vessels expand rapidly coinciding with osteoblast expansion, while CD31+EMCN\u2212 vessels show delayed response associated with late-stage bone remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C60-C61 represent summary statements of the major findings. These are well-supported by the collective data from Figures 1-3 showing vessel dynamics, lineage tracing, and temporal correlation with osteoblast activity. This is a core conclusion of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The differential dynamics of angiogenic response reflects intrinsic differences between venous and arterial ECs and could be attributed to angiogenic factors produced by osteoblasts that induce specialized bone vasculature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C63 are interpretive statements supported by citations but represent speculation about mechanisms. While the differential dynamics are demonstrated (C60-C61), the mechanistic explanations are not directly tested in this study. These are reasonable hypotheses but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The transient expansion of CD31+EMCN+ vessels subsides as osteoblasts mature and bone matrix deposition occurs. This regression is necessary for organizing specialized bone vasculature, specifically type H vessel formation, involving concerted activities of osteoblasts, osteoclasts, and EC subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is supported by the observed temporal dynamics in Figure 2. However, C65 (necessity of regression) and C66 (concerted cellular activities) are inferences not directly tested. While consistent with cited literature on osteoclast roles, these claims require additional experimental evidence to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Revascularization at the superior side of cranial bone depends on rapid vascular expansion from dura periosteum. Progenitor cells at dura periosteum and marrow space are major sources of bone-forming cells, being first to respond to injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by imaging data in Figures 1 and 2 showing vessel sprouting patterns and osteoblast appearance. The temporal sequence and spatial distribution support these conclusions, though direct lineage tracing of progenitor cells was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Differences in periosteal response to injury could be attributed to differential surgical damage to vessels/progenitors or to different density and distribution of vessel types at superior versus dura periosteum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 are speculative explanations for observed differences. While the differential responses are documented, these mechanistic explanations are not directly tested. The authors appropriately present these as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Apelin (Apln) is expressed in endothelial tip cells and sprouting ECs, increases in hypoxia, and AplnCreER labels nearly all CD31+EMCN+ capillary vessels including those associated with osteoblasts, but excludes arterial vessels. This is consistent with prior studies showing AplnCreER labels type H/E vessels coupled to osteoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by citations to prior literature. Claims C74-C76 are supported by lineage tracing data in Figure 3 and are consistent with cited prior work. The validation of AplnCreER as a tool for studying vessel-osteoblast coupling is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "Bmx is expressed in arterial vessel ECs, and BmxCreER labels arterial CD31+EMCN\u2212 vessels extending from arterioles at the healing site. These vessels exhibit slow response to injury during healing, consistent with CD31+EMCN\u2212 vessel dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by citations to prior literature. Claims C79 and C81 are supported by lineage tracing data in Figure 3 and temporal observations. The characterization of BmxCreER+ vessels as arterial is consistent with prior work and the current imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "AplnCreER+ vessels closer to osteoblast clusters have significantly lower pO2 at days 10 and 17, coinciding with osteoblast expansion. In contrast, BmxCreER+ vessels show no pO2 changes as a function of distance, suggesting the pO2 dip is vessel-type dependent and related to AplnCreER+ vessel coupling with osteoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by pO2 measurements in Figures 4 and 5. The differential spatial relationships of pO2 with distance for the two vessel types provide evidence for vessel-type specific oxygen dynamics. The inference about coupling (C83) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "AplnCreER+ ECs preferentially use glycolysis and are less sensitive to pO2 changes, consistent with literature showing glycolysis is the primary energy mechanism in ECs and is favored during sprouting. Osteoblasts use more OxPhos and shift to glycolysis when pO2 drops, consistent with aerobic glycolytic metabolism favoring low oxygen at repair sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C89 are supported by citations to prior literature. Claims C86-C88 are supported by the 2P-FLIM data in Figure 6. The metabolic interpretations are consistent with established NAD(P)H lifetime principles. The functional inference (C86) about oxygen diffusion is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "High heterogeneity in pO2 distribution exists within the same vessel type, which cannot be attributed to vessel diameter variation. This heterogeneity may have functional consequences for different cell types and stem cell niche constitution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is supported by the observed data variability. Claim C91 is based on unreported correlation analysis (data not shown), which weakens support. Claim C92 is speculative about functional consequences, supported by citations but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The pO2 range in CD31+EMCN+ vessels falls within reported venous blood pO2, while mean pO2 in CD31+EMCN\u2212 capillary vessels is lower than reported arterial blood pO2, likely due to active oxygen exchange and consumption at the repair site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by comparison of measured pO2 values with literature values (cited). The interpretation about oxygen exchange/consumption (C94) is reasonable given the active repair environment, though this is somewhat speculative. The measurements are consistent with vessel type identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Blood vessel types and function in bone repair remain poorly understood, hindering efforts to engineer functional vessel networks. The current study establishes imaging tools and lays foundation for understanding osteogenic-EC coupling at regeneration interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 identify knowledge gaps that motivate the study. Claims C97-C98 are assertions about the study's significance and contribution. These are appropriately framed as context and impact statements rather than experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study utilized Col1a1-GFP transgenic mice (labeling mature osteoblasts), AplnCreER mice (generated at Shanghai Institutes), and BmxCreER mice (obtained via Material Transfer Agreement) for lineage tracing experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 describe the mouse models used, supported by appropriate citations. These are methodological details that are well-documented and properly attributed to prior work or sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Prior work by the authors showed CD31+EMCN\u2212 vessels exhibit higher mean pO2 than CD31+EMCN+ vessels during nanofiber-mediated cranial defect repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 references the authors' prior published work and is appropriately cited. This provides context for the current study's findings and is consistent with the current results showing BmxCreER+ (CD31+EMCN\u2212) vessels have higher pO2 than AplnCreER+ (CD31+EMCN+) vessels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Prior work by the authors demonstrated that osteoblasts at the defect leading edge had significantly lower \u03c4M than those in native bone, suggesting a switch to more glycolytic state during healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 references the authors' prior published work and is appropriately cited. This provides context for the current metabolic measurements and is consistent with the current findings about osteoblast metabolism.",
+    "result_type": "MINOR"
+  }
+]

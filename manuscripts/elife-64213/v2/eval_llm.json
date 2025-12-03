@@ -1,0 +1,404 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study reconstructed patient-specific computational models from LGE-MRI scans of 45 ESUS and 45 AFib patients, implementing detailed electrophysiological properties and conducting extensive simulations to assess arrhythmogenic substrate properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C2, C17, C109-C145) are well-documented with appropriate citations to prior work, detailed parameter specifications, and clear descriptions of the computational pipeline. The study design is transparent about patient recruitment, imaging protocols, model construction, simulation parameters, and statistical methods. The computational approach builds on validated prior methods with appropriate mesh resolution and electrophysiological parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Patient characteristics showed no significant difference in LA volume index (p=0.607) or fibrosis burden (p=0.91) between ESUS and AFib groups, though LA surface area differed significantly (p=0.0007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by data in Table 1 with appropriate statistical testing. The authors appropriately note that the LA surface area difference is likely explained by BMI differences rather than representing a meaningful biological distinction, as evidenced by the lack of difference in the more commonly used LA volume index metric.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Reentrant drivers were induced in 53% of ESUS models (24/45) and 49% of AFib models (22/45), with no significant difference between groups (p=0.83). Inducibility increased with fibrosis quartile, from 21.7% in the lowest quartile to 91.0% in the highest quartile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C21-C25 present the primary inducibility findings with clear statistical support. The data show similar RD inducibility rates between ESUS and AFib groups, and a strong relationship between fibrosis burden and inducibility. The quartile analysis provides additional granularity showing a dose-response relationship between fibrosis and arrhythmogenic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C64"
+    ],
+    "result": "Inducible models had significantly more fibrosis (16.7\u00b15.45%) than non-inducible models (11.07\u00b13.61%; p<0.0001), but fibrosis burden did not differ between inducible ESUS and AFib models (p=0.90) or between non-inducible ESUS and AFib models (p=1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26-C28, C64 are well-supported by statistical comparisons shown in Figure 3A with appropriate confidence intervals. The finding that inducibility correlates with fibrosis burden but not with disease state (ESUS vs AFib) is a key result. The statistical tests are appropriate (Wilcoxon rank-sum) and the confidence intervals are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C55",
+      "C63",
+      "C65",
+      "C101"
+    ],
+    "result": "The intrinsic pro-arrhythmic substrate properties of fibrosis in ESUS and AFib are indistinguishable, as demonstrated by similar fibrosis levels in inducible models from both groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C55, C63, C65, C101 represent the central conclusion of the study. This inference is well-supported by the statistical finding that inducible ESUS and AFib models have similar fibrosis burdens (C26, p=0.90). The conclusion logically follows from the data showing that when models are matched for inducibility status, fibrosis burden is equivalent regardless of clinical diagnosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The number of unique RDs and the number of pacing sites inducing RDs did not differ between ESUS and AFib groups, but both were strongly correlated with fibrosis burden (R=0.63 and R=0.62, respectively; both p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34, C69-C72 are supported by data in Figure 3B-E with appropriate statistical tests. The correlation analyses show strong positive relationships between fibrosis and both RD complexity and susceptibility to pacing. The lack of difference between ESUS and AFib further supports the main conclusion that substrate properties are similar between groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C60"
+    ],
+    "result": "The extent of abnormally depolarized tissue (a surrogate for trigger-prone substrate) did not differ significantly between ESUS and AFib models (p=0.32), with a non-significant trend toward more trigger-prone tissue in ESUS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C60 are supported by simulation data in Figure 3F. The analysis appropriately acknowledges the limitations of the cellular model (simplified calcium handling) while using depolarized resting potential as a surrogate measure. The finding argues against the hypothesis that ESUS patients have less trigger-prone substrate, though the authors appropriately note this is preliminary evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C74",
+      "C75"
+    ],
+    "result": "Qualitative analysis of arrhythmia dynamics showed no differences between ESUS and AFib models, with both exhibiting RD patterns consistent with prior studies. However, outlier cases demonstrated that fibrosis burden alone is insufficient to predict arrhythmogenic substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C74-C75 are supported by the qualitative analysis presented in Figure 4 and comparisons to prior literature. The observation of low-fibrosis inducible cases and high-fibrosis non-inducible cases (Figure 2B insets) provides direct evidence that fibrosis burden alone is insufficient for prediction, supporting the value of computational modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C77",
+      "C78"
+    ],
+    "result": "Regional inducibility patterns were statistically similar between ESUS and AFib (p=0.45), but stimulation from the posterior wall was approximately 2\u00d7 more likely to induce RDs in AFib (IdS=6) than ESUS (IdS=3) models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C77-C78 are supported by the regional analysis in Figure 5A. The overall similarity in patterns (p=0.45) supports the main conclusion, while the posterior wall difference represents an interesting regional variation. The inference that posterior wall triggers may be 50% less likely to initiate reentry in ESUS (C78) follows logically from the IdS difference, though this is a model-based prediction requiring clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C81",
+      "C82"
+    ],
+    "result": "RD localization showed regional preferences (LPV region most common in AFib with N=17; anterior wall most common in ESUS with N=16), but the association between model type and RD localization was not statistically significant (p=0.13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C81-C82 are supported by the localization analysis in Figure 5C-D. The lack of statistical significance (p=0.13) is appropriately reported, indicating that while there are trends in regional preferences, these do not constitute a definitive difference between groups. The data are clearly presented and the statistical test is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C83",
+      "C84"
+    ],
+    "result": "The extent of pro-RD tissue (characterized by high fibrosis density and entropy) in the LPV region was significantly higher in AFib compared to ESUS models (p=0.01), while ESUS trended toward higher pro-RD tissue in other regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C83-C84 are supported by the spatial pattern analysis in Figure 6B using a machine learning-derived classification from prior work (C46, C138-C139). The significant difference in the LPV region (p=0.01) represents the most notable regional distinction between groups. The analysis appropriately uses established methods from prior studies for identifying pro-RD tissue patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C66",
+      "C68",
+      "C102",
+      "C103"
+    ],
+    "result": "More than half of ESUS patients (24/45, 53%) have latent pre-clinical fibrotic substrate with the theoretical capacity to sustain reentry when subjected to common AFib triggers, suggesting that fibrotic substrate conducive to perpetuating reentry may exist in up to half of ESUS patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C66, C68, C102-C103 represent key conclusions drawn from the inducibility findings. The inference that 53% of ESUS patients have latent pro-arrhythmic substrate is directly supported by the simulation results (C3). The characterization as 'theoretical capacity' and 'may exist' appropriately acknowledges the computational nature of the findings and the need for clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C104"
+    ],
+    "result": "The findings support the hypothesis that ESUS patients with fibrotic atria are spared from AFib due to an absence of arrhythmia triggers, though the authors acknowledge that further research is needed to fully justify this claim.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C104 represent a hypothesis prompted by the findings rather than a directly demonstrated result. While the similar substrate properties between ESUS and AFib (C6-C7) combined with the absence of clinical arrhythmia in ESUS patients logically suggests a trigger deficit, this remains speculative. The study does not directly measure or manipulate triggers, and alternative explanations exist (C97-C98). The authors appropriately acknowledge this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C85"
+    ],
+    "result": "Despite some regional differences in fibrosis distribution, spatial properties of the fibrotic substrate between AFib and ESUS models are not intrinsically different, and ESUS substrate could sustain the same types of RDs as those contributing to AFib perpetuation if subjected to suitable triggered activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C85 synthesize the regional analysis findings. While specific regional differences exist (C42, C47), the overall conclusion that spatial properties are not intrinsically different is supported by the lack of significant differences in most comparisons (C41, C45) and the similar overall inducibility patterns. This represents an appropriate integration of the regional analysis results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "While pre-clinical substrate existence correlates with higher fibrosis burden, many ESUS cases defied expectations, demonstrating that fibrosis burden alone is insufficient for predicting pre-clinical AFib substrate and justifying the use of computational simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by the observation of outlier cases in Figure 2B (insets I and II) showing low-fibrosis inducible models and high-fibrosis non-inducible models. This finding directly demonstrates the limitation of using fibrosis burden alone as a predictor and provides justification for the computational modeling approach that can assess spatial patterns and electrophysiological properties beyond simple burden measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "This is the first study to use computational modeling to assess pro-arrhythmic capacity of LA fibrosis in ESUS patients, and represents the largest cohort (N=90) ever studied via computational analysis of atrial electrophysiology from LGE-MRI, exceeding the prior largest study (N=50) by a factor of ~1.8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 regarding novelty and cohort size are supported by appropriate citation to prior work (Roney et al., 2020) and represent verifiable statements about the study's contribution. The novelty claim (C48) is reasonable given the specific focus on ESUS patients, and the cohort size claim (C49) is directly verifiable from the study design (C2, C17).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study acknowledges several modeling limitations including the bilayer simplification, clinical-grade MRI resolution constraints, lack of patient-specific electrophysiology, and use of generic AFib-like properties for ESUS models, while noting that prior work supports the appropriateness of these approaches and that they enable assessment of fibrosis spatial patterns without confounding variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 represent an appropriate and transparent discussion of limitations. The authors acknowledge simplifications (C86, C88, C90, C92-C93) while providing justification through citations to prior validation work (C87, C91). The acknowledgment that using AFib-like electrophysiology for ESUS models is a limitation (C93) is balanced by noting this enables controlled comparison of substrate properties (C94). This represents good scientific practice in discussing model assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Patients with stroke were excluded from the AFib cohort because stroke etiology was not explicitly adjudicated in the source database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 transparently describe a study design limitation. This exclusion is appropriately acknowledged as it prevents direct comparison of AFib patients with and without stroke, which could have provided additional insights. The explanation for the exclusion (lack of stroke etiology adjudication) is reasonable and represents appropriate caution in data interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C73",
+      "C79",
+      "C80",
+      "C87",
+      "C91",
+      "C120"
+    ],
+    "result": "The study appropriately contextualizes findings within prior literature on AFib epidemiology, ESUS clinical characteristics, fibrosis-reentry relationships, and computational modeling approaches, with extensive citations to support background claims and methodological choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C16, C50-C54, C57-C58, C61-C62, C73, C79-C80, C87, C91, C120 represent background knowledge and prior work citations. These are appropriately referenced with specific citations and provide necessary context for interpreting the current findings. The citations appear appropriate and the characterizations of prior work are consistent with the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C35",
+      "C46",
+      "C67",
+      "C130"
+    ],
+    "result": "The study design incorporated clinically relevant features including pacing from 15 sites based on common AFib trigger locations and consideration of fibrosis-related calcium dysregulation effects on trigger generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C46, C67, C130 describe methodological choices grounded in clinical observations. The use of clinically identified AFib trigger sites (C67, C130) with citation to Santangeli and Marchlinski, 2017 strengthens the clinical relevance of the simulations. The consideration of fibrosis effects on triggers (C35) with appropriate citations demonstrates comprehensive modeling of arrhythmia mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C56",
+      "C59"
+    ],
+    "result": "High fibrosis models were more likely to exhibit RDs regardless of ESUS or AFib diagnosis, confirming that assessment of raw fibrosis burden from LGE-MRI alone is insufficient to fully characterize arrhythmogenic capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C59 synthesize findings about the relationship between fibrosis and inducibility. The observation that high fibrosis predicts RDs regardless of diagnosis (C56) is supported by the quartile analysis (C22-C25) and correlation data (C31, C34). The conclusion about insufficiency of burden alone (C59) is supported by outlier cases (C40, C105) and appropriately cites prior work showing similar findings in AFib.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors acknowledge alternative explanations including that stroke mechanism in ESUS may be independent of AFib through atrial dysfunction and thrombus formation, and suggest that computational modeling may have clinical value for predicting AFib risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 appropriately discuss alternative mechanisms and future directions. The acknowledgment of alternative explanations (C97-C98) demonstrates scientific rigor in not over-interpreting findings. The suggestion of potential clinical value (C99-C100) is appropriately framed as speculative and requiring further validation. This represents balanced discussion of implications and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The results provide novel insights into the role of atrial fibrotic remodeling as a critical nexus between the otherwise distinct manifestations of AFib and ESUS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 represents an appropriate summary of the study's contribution. The characterization of fibrosis as a 'critical nexus' is supported by the findings that ESUS and AFib have similar fibrosis burdens (C20) and similar pro-arrhythmic substrate properties (C6-C7, C55, C65), despite different clinical presentations. This synthesis appropriately captures the main conceptual advance of the work.",
+    "result_type": "MAJOR"
+  }
+]

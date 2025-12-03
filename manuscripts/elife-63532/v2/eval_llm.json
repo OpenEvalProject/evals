@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "AMsh glia engulf AFD neuron-receptive ending (NRE) microvilli, but not cilia, in adult C. elegans. Multiple microvilli-specific markers (SRTX-1, GCY-8, GCY-18, GCY-23) appear as puncta in glia, while the ciliary marker DYF-11 does not. Mutants lacking microvilli (ttx-1) have no glial puncta, whereas cilia-defective mutants (dyf-11, osm-6) retain or accumulate more puncta than wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 provide converging evidence from multiple independent approaches: (1) four different microvilli markers consistently show glial puncta while ciliary markers do not; (2) genetic ablation of microvilli eliminates puncta while ciliary defects increase them; (3) laser and genetic ablation of AFD neurons eliminate puncta. The multi-pronged experimental strategy strongly supports the conclusion that microvilli, not cilia, are the source of engulfed material.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "AFD-derived glial puncta have an average size of 541 \u00b1 145 nm, which is intermediate between exophers (~3.8 \u03bcm) and ciliary extracellular vesicles (~150 nm), and similar in size to individual AFD-NRE microvilli or cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by quantitative super-resolution microscopy (C10) and electron microscopy measurements (C13), with appropriate comparisons to previously characterized structures (C11-C12). The size measurements are consistent across techniques and support the interpretation that puncta represent individual or small groups of microvilli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21"
+    ],
+    "result": "Glial engulfment of AFD-NRE occurs primarily in adults, not during development. Puncta are rarely found in embryos or early larvae, become detectable at L4, and increase in number during adulthood. Temperature affects puncta accumulation, with higher temperatures correlating with more puncta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C21 are supported by developmental time course data (Figure 2C-D) showing age-dependent accumulation and temperature-dependent differences (Figure 2E). Sample sizes are adequate (n=78 for day 1 adults, n=171 for population distribution). The data clearly demonstrate post-developmental engulfment with environmental modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Individual puncta separate from the NRE at a frequency of 0.8 \u00b1 0.3 events/min and travel at 1.05 \u00b1 0.1 \u03bcm/s down the glial process toward the cell body, consistent with motor-protein-dependent retrograde trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by time-lapse microscopy data (Videos 1-2, Figure 2\u2014figure supplement 1B) with quantification from n=5 animals. The measured speeds are consistent with known motor protein velocities cited in the manuscript. However, the sample size is relatively small for dynamic measurements, and individual animal variability is not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The phosphatidylserine (PS) flippase TAT-1/ATP8A regulates engulfment cell-autonomously in AFD neurons. Loss of tat-1 increases engulfment, and AFD-specific rescue fully restores wild-type levels. In contrast, mutations in apoptotic PS-exposure factors (ced-8, ced-3, scrm-1) have minimal or no effect on engulfment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 demonstrate that TAT-1 regulates engulfment through a mechanism distinct from apoptotic cell death. The cell-autonomous rescue experiment (C32) is critical evidence that TAT-1 functions in the neuron, not the glia. The epistasis and rescue data are convincing, though the 'presumptive null' designation for tat-1 could be better justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The phosphatidylserine receptor PSR-1 acts in glia downstream of TAT-1 to promote NRE engulfment. PSR-1 deletion dramatically reduces engulfment, glial-specific expression rescues the defect, and PSR-1 localizes to glial membranes around AFD-NRE. The PS-bridging molecule TTR-52 functions in the same pathway as PSR-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide strong evidence for PSR-1 as the glial PS receptor through multiple approaches: loss-of-function, cell-specific rescue, localization, epistasis with tat-1, and genetic interaction with ttr-52. The epistasis experiments (C40, C42) are particularly convincing. The localization data (C39) directly supports the proposed function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C48",
+      "C105"
+    ],
+    "result": "CED-1/Draper/MEGF10, a major receptor for apoptotic cell engulfment and glial debris clearance in other contexts, is dispensable for AFD-NRE engulfment by AMsh glia. Surprisingly, ced-1 mutants show enhanced puncta numbers compared to wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C48 demonstrate that CED-1 is not required for engulfment initiation, distinguishing this process from apoptotic phagocytosis. The unexpected increase in puncta in ced-1 mutants (C48) is well-documented but mechanistically unclear. The authors suggest CED-1 may act downstream in phagolysosome maturation, which is plausible but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The \u03b1-integrin PAT-2, but not INA-1, regulates glial engulfment of AFD-NRE. PAT-2 RNAi significantly blocks engulfment and strongly enhances the defects of psr-1 mutants, suggesting PAT-2 and PSR-1 act together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 identify PAT-2 as a second receptor working with PSR-1. The genetic interaction data (C46) showing enhancement in psr-1 mutants is strong evidence for cooperative function. However, the reliance on RNAi rather than genetic mutants for PAT-2 is a limitation, as RNAi knockdown may be incomplete or variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The ternary GEF complex CED-2/CrkII, CED-5/DOCK180, and CED-12/ELMO1 regulates engulfment of AFD-NREs. Mutations in ced-2, ced-5, or ced-12 reduce glial puncta, and glial-specific expression of CED-12 rescues the defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 demonstrate that the canonical GEF complex acts in this pathway. The cell-specific rescue (C50) confirms glial function. The data are consistent with the known role of this complex in apoptotic phagocytosis, supporting conservation of the molecular machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "The Rac1 GTPase CED-10 functions in glia downstream of CED-2/5/12 and PSR-1 to control engulfment. CED-10 loss-of-function or dominant-negative expression blocks engulfment, while overexpression increases it. CED-10 is both necessary and sufficient to regulate engulfment rates, and its activation is specific (not through UNC-73/TRIO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 provide comprehensive evidence for CED-10 as the central regulator of engulfment rate. The epistasis experiments (C55), rescue (glial-specific expression), and overexpression studies (C56, C61) are all consistent. The finding that CED-10 levels are rate-limiting (C62) is particularly important for the conclusion that glia actively drive engulfment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Expression of constitutively active CED-10G12V results in reduced engulfed puncta, but the AFD-NRE is significantly shorter in these mutants, suggesting hyperefficient engulfment that depletes the NRE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 address an apparent paradox: constitutively active CED-10 has fewer puncta but shorter NRE. The interpretation that this reflects hyperefficient engulfment is reasonable and supported by the NRE length data (C60, Figure 7\u2014figure supplement 1). However, alternative explanations (e.g., effects on NRE development) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The actin polymerization factor WSP-1/nWASp acts downstream of CED-10 to execute engulfment. Loss of wsp-1 blocks engulfment, while glial-specific overexpression increases it, suggesting CED-10-dependent actin remodeling is the rate-limiting step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 identify WSP-1 as the effector of CED-10 in engulfment. The loss-of-function and overexpression data parallel those for CED-10, supporting the proposed pathway. The conclusion that actin remodeling is rate-limiting (C65) is reasonable but somewhat speculative, as other factors could also be limiting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "AFD neuron activity reciprocally regulates engulfment levels. Mutants with reduced activity (tax-2, tax-4; cng-3) accumulate more puncta, while mutants with increased cGMP/activity (pde-1; pde-5) have fewer puncta. Acute chemogenetic silencing of AFD increases puncta within 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 demonstrate activity-dependent regulation of engulfment through multiple approaches: genetic mutants affecting CNG channels (C69-C71), cGMP levels (C72), and acute chemogenetic silencing (C73). The reciprocal effects and acute response strongly support the conclusion that activity dynamically regulates engulfment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Neuron activity controls NRE engulfment through the CED-10 pathway. The increased puncta in tax-2 mutants is suppressed by loss of ced-10, psr-1, or pat-2, and ced-10 loss suppresses the effect of acute AFD silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 use epistasis analysis to place activity regulation upstream of the engulfment machinery. The suppression experiments are well-designed and clearly demonstrate that activity signals through the identified molecular pathway. This is critical evidence that activity regulates engulfment rate rather than puncta degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Glial engulfment regulates AFD-NRE microvilli length. Loss of ced-10 or dominant-negative CED-10 expression results in elongated microvilli, while CED-10 overexpression produces shorter microvilli. The defect worsens with age in overexpression strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 establish a functional consequence of engulfment on NRE morphology. The bidirectional effects (longer with less engulfment, shorter with more) are consistent and support a direct role for engulfment in shaping the NRE. The age-dependent worsening (C82) suggests ongoing remodeling. However, the analysis is qualitative (defective vs. normal) rather than quantitative measurements of length.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "AFD-NRE engulfment by AMsh glia is required for appropriate thermotaxis behavior. ced-10 mutants exhibit altered thermosensory behavior (preferring cooler temperatures), and animals overexpressing CED-10 in glia show athermotactic defects regardless of cultivation temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 demonstrate that engulfment defects cause behavioral phenotypes. The thermotaxis assays (Figure 7C-F) show clear differences between wild type and engulfment mutants. The glial-specific overexpression causing behavioral defects (C90) is particularly strong evidence. However, the behavioral assays measure population distributions, and individual animal tracking would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The behavioral defects are consistent with activity-dependent engulfment regulating NRE shape and function. CED-10 overexpression mimics tax-2 mutant behavior (both have increased puncta and reduced activity), while ced-10 mutants show cryophilic behavior similar to mutants with increased cGMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 integrate the activity, engulfment, morphology, and behavior data into a coherent model. The parallels between engulfment mutants and activity mutants (C92-C93) support the proposed mechanism. However, this is correlative evidence, and the causal chain (activity \u2192 engulfment \u2192 morphology \u2192 behavior) has not been fully established with all intermediate steps measured in the same animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Glia actively drive neuronal remodeling rather than passively clearing debris. Evidence includes: (1) glial CED-10 levels modulate engulfment rates, NRE shape, and behavior; (2) short NRE can result from independent mechanisms (CED-10 overexpression vs. ttx-1 mutants have different puncta levels); (3) engulfment tracks neuron activity and modulating it impacts behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C122 synthesize the evidence for active glial control. The three lines of reasoning are logical: (1) rate control by glial factors, (2) dissociation of NRE length from puncta number, (3) activity-dependent regulation with behavioral consequences. However, the distinction between 'active' and 'passive' is somewhat semantic, and the evidence primarily shows that glia can modulate engulfment rate, not necessarily that they initiate it independently of neuronal signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Glia-dependent phagocytosis in AMsh glia is dynamically tuned throughout animal life to modulate NRE morphology and behavior, distinguishing it from all-or-none apoptotic phagocytosis. This controlled phagocytosis may similarly regulate glial engulfment in other settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is well-supported by the developmental time course, activity-dependent regulation, and behavioral consequences. The distinction from apoptotic phagocytosis is valid. However, claim C103 is speculative, extrapolating from C. elegans to other systems based on molecular conservation. This is a reasonable hypothesis but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Glial pruning uses distinct receptors compared to apoptotic phagocytosis. In C. elegans, apoptotic phagocytosis relies predominantly on CED-1 with PSR-1 playing a minor role, but AMsh glial pruning requires PSR-1 and not CED-1. This difference may reflect the size of engulfed particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 highlight an important mechanistic distinction. The differential requirement for receptors is well-documented. The hypothesis that particle size determines receptor usage (C107) is supported by a citation to tail-spike cell debris engulfment, but this remains correlative and requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The molecular machinery identified in C. elegans has mammalian orthologs with neurological functions. Murine ATP8A1/2 knockout mice show neurological deficits and shortened photoreceptor NRE. TTR-52 orthologs and PS-bridging opsonins function in mammalian glial engulfment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are based entirely on citations to previous work. The cited studies support the conservation of molecular components, but the authors do not present new data on mammalian systems. The parallels are suggestive but do not directly demonstrate that the same mechanisms operate in mammals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Glial pruning is conserved in both CNS and PNS and is executed for normal neural functions by analogous molecular mechanisms. AMsh glia and AFD neuron likely cooperate through multiple mechanisms to regulate NRE shape and thermosensory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is supported by the demonstration that PNS glia (AMsh) use similar molecular machinery to CNS glia for pruning. Claim C116 acknowledges that engulfment is likely one of multiple regulatory mechanisms, which is appropriately cautious given the complexity of glia-neuron interactions. The citations to previous work from the same group support this broader context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C85",
+      "C86",
+      "C87",
+      "C95",
+      "C108",
+      "C113",
+      "C114",
+      "C117"
+    ],
+    "result": "Background and contextual claims about C. elegans nervous system anatomy, AFD-NRE structure, thermotaxis behavior, and conservation of glial functions across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C8-C9, C66-C68, C85-C87, C95, C108, C113-C114, C117) are primarily based on citations to established literature and provide necessary context for the study. They are well-supported by the cited references and represent accepted knowledge in the field. Claim C117 about the importance of thermosensory behavior is a reasonable inference but somewhat speculative.",
+    "result_type": "MINOR"
+  }
+]

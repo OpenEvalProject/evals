@@ -1,0 +1,1518 @@
+{
+  "submission": {
+    "id": "b448c4c8-1dc1-4740-98c9-94e07044043d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:50:56.056397Z",
+    "updated_at": "2025-12-03T18:50:56.056397Z"
+  },
+  "content": [
+    {
+      "id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "submission_id": "b448c4c8-1dc1-4740-98c9-94e07044043d",
+      "content_type": "manuscript",
+      "content_text": "# Evolved bacterial resistance to the chemotherapy gemcitabine modulates its efficacy in co-cultured cancer cells\n\n## Authors\n\n- Serkan Sayin<sup>1</sup> ([ORCID: 0000-0001-8776-2240](https://orcid.org/0000-0001-8776-2240))\n- Brittany Rosener<sup>1</sup> ([ORCID: 0000-0002-1836-8503](https://orcid.org/0000-0002-1836-8503))\n- Carmen G Li<sup>1</sup>\n- Bao Ho<sup>1</sup>\n- Olga Ponomarova<sup>1</sup> ([ORCID: 0000-0001-6331-9949](https://orcid.org/0000-0001-6331-9949))\n- Doyle V Ward<sup>2</sup>\n- Albertha JM Walhout<sup>1</sup> ([ORCID: 0000-0001-5587-3608](https://orcid.org/0000-0001-5587-3608))\n- Amir Mitchell<sup>1</sup> ([ORCID: 0000-0001-9376-3987](https://orcid.org/0000-0001-9376-3987)) \u2020\n\n### Affiliations\n\n1. Department of Systems Biology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n2. Department of Microbiology and Physiological Systems, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n3. Program in Microbiome Dynamics, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n4. Program in Molecular Medicine, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n5. Department of Molecular, Cell and Cancer Biology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDrug metabolism by the microbiome can influence anticancer treatment success. We previously suggested that chemotherapies with antimicrobial activity can select for adaptations in bacterial drug metabolism that can inadvertently influence the host\u2019s chemoresistance. We demonstrated that evolved resistance against fluoropyrimidine chemotherapy lowered its efficacy in worms feeding on drug-evolved bacteria (Rosener et al., 2020). Here, we examine a model system that captures local interactions that can occur in the tumor microenvironment. Gammaproteobacteria-colonizing pancreatic tumors can degrade the nucleoside-analog chemotherapy gemcitabine and, in doing so, can increase the tumor\u2019s chemoresistance. Using a genetic screen in Escherichia coli, we mapped all loss-of-function mutations conferring gemcitabine resistance. Surprisingly, we infer that one third of top resistance mutations increase or decrease bacterial drug breakdown and therefore can either lower or raise the gemcitabine load in the local environment. Experiments in three E. coli strains revealed that evolved adaptation converged to inactivation of the nucleoside permease NupC, an adaptation that increased the drug burden on co-cultured cancer cells. The two studies provide complementary insights on the potential impact of microbiome adaptation to chemotherapy by showing that bacteria\u2013drug interactions can have local and systemic influence on drug activity.\n\n## Introduction\n\nClinical research on the influence of intratumor bacterial infection can be dated back to more than 150 years ago (Sepich-Poore et al., 2021). However, in the past decade, research of the tumor-microbiome gained significant momentum with the maturation of DNA sequencing technologies and advancement of microbiome research. Multiple recent studies of bacterial colonization in human tumors outlined the magnitude of this phenomenon (reviewed in Sepich-Poore et al., 2021; Goodman and Gardner, 2018; Cullin et al., 2021) Collectively, these works establish that the proportion of infected tumors greatly varies across tumor types and that many tumors harbor microbiomes with a distinctive and characteristic composition of bacterial species. In some cases, as in breast and pancreatic cancer, more than 60% of tumors harbored a tumor-microbiome (Nejman et al., 2020). The microbiome, in turn, is known to influence cancer disease through multiple independent mechanisms, including promotion of neoplastic processes in healthy host cells, modulation of the host antitumor immune response, and by bacterial biotransformation of anticancer drugs (Cullin et al., 2021; Roy and Trinchieri, 2017; Alexander et al., 2017; Riquelme et al., 2019).\n\nBacterial metabolism of xenobiotics, including breakdown of host-targeted drugs, is prevalent (Spanogiannopoulos et al., 2016). Estimates from recent drug screens show that two thirds of human-targeted drugs can be metabolized by at least one bacterial species that is present in the human gut microbiome (Zimmermann et al., 2019). Yet, these interactions are reciprocal, bacteria both metabolize the host-targeting drugs and are also frequently impacted by them (Zimmermann et al., 2021). Roughly 25% of host-targeted drugs are potent inhibitors of bacterial growth at physiological concentrations (Maier et al., 2018). This proportion is doubled for antineoplastic drugs and almost all anticancer drugs that belong to the antimetabolite drug class have potent antimicrobial activity (Maier et al., 2018). A key underexplored question that arises from these reciprocal drug\u2013microbiome interactions is how they impact one another given the ability of microorganisms to evolve and change over short time scales within the host (Zhao et al., 2019; Lieberman, 2022; Garud et al., 2019; Snitkin et al., 2013; Gatt and Margalit, 2021). Specifically, given that bacteria rapidly evolve resistance to antimicrobial drugs, it is plausible that adaptation to host-targeting drugs that are also antimicrobial will alter bacterial drug metabolism or its transport (Rosener et al., 2020; Kyono et al., 2022). Such adaptions have been repeatedly observed with standard antibiotics (Alekshun and Levy, 2007). In such cases, evolved resistance in tumor-colonizing bacteria may increase or decrease drug availability to the tumor cells, which, in turn, may interfere with the efficacy of the chemotherapy.\n\nThe tumor-microbiome in pancreatic cancer has attracted much attention recently due to the prevalence of infections in pancreatic ductal adenocarcinoma (PDAC) (Nejman et al., 2020; Riquelme et al., 2019; McAllister et al., 2019; Geller et al., 2017; Aykut et al., 2019; Pushalkar et al., 2018). Studies have uncovered multiple independent mechanisms through which microbes influence oncogenesis (Aykut et al., 2019; Pushalkar et al., 2018), disease progression (Riquelme et al., 2019), and treatment success (Geller et al., 2017) in the pancreas. Bacterial infection is attributed to retrograde bacterial migration from the gastrointestinal tract into the pancreas (McAllister et al., 2019; Pushalkar et al., 2018). Characterization of the PDAC tumor-microbiome by 16S rRNA gene sequencing showed that proteobacteria are highly enriched relative to the gut microbiome and that they are highly prevalent in pancreatic tumors (Nejman et al., 2020; Geller et al., 2017; Pushalkar et al., 2018). Recent work suggested that pancreatic colonization can impede therapy with gemcitabine (2',2'-difluoro 2' deoxycytidine [dFdC]), a frontline chemotherapy drug that is used for PDAC treatment (Geller et al., 2017). Further clinical data provided circumstantial evidence indicating that this interaction may indeed take place in treated patients (Meriggi and Zaniboni, 2021; Mohindroo et al., 2021; Gao et al., 2020).\n\nGemcitabine drug metabolism is well-understood in the model gamma-proteobacteria Escherichia coli (Geller and Straussman, 2018; Figure 1A). The antimetabolite gemcitabine, a nucleoside analog, is imported into the bacterial cell through the nucleoside transporter NupC and is then phosphorylated. Gemcitabine triphosphate may be incorporated into a newly synthesized DNA strand and then may interfere with chain elongation by masked chain termination (similar to mammalian cells; de Sousa Cavalcante and Monteiro, 2014). Therefore, despite its clinical use as an anticancer drug, gemcitabine\u2019s mechanism of action potentially makes it a broadly toxic, antimicrobial compound. Previous works showed that some bacterial species can rapidly convert gemcitabine into the less toxic metabolite 2\u2032,2\u2032-difluoro-2\u2032-deoxyuridine (dFdU) (Geller et al., 2017; Vande Voorde et al., 2014; Lehouritis et al., 2015). In gamma-proteobacteria, gemcitabine degradation proceeds through a specific isoform of the cytidine deaminase enzyme (CddL) (Geller et al., 2017). The well-characterized interactions between tumor cells, gemcitabine, and gamma-proteobacteria puts forth a good model system for testing how bacterial adaptation can impact drug metabolism and potentially influence the tumor\u2019s chemoresistance.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig1-v2.jpg)\n\n**Figure 1.:** (A) Gemcitabine transport and metabolism in E. coli. Similar to deoxycytidine (dC), gemcitabine (dFdC) is imported into the cell through the nucleoside permease NupC. Intracellular gemcitabine is either converted into the less toxic metabolite dFdU by the cytidine deaminase Cdd or is phosphorylated and incorporated into the DNA. (B) Gemcitabine dose\u2013response curves for three E. coli strains (three technical replicates, error bars represent standard deviation, experiment performed once). The inferred IC50 are shown in parenthesis. Gemcitabine IC50 range of 29 pancreatic adenocarcinomas are shown as a box plot above the graph. (C) Overview of the pooled screening approach. Pooled cultures of the knockout strain collection were inoculated (i) and grown for multiple hours with or without gemcitabine (ii), DNA extracted from cells was used to amplify, sequence and calculate the frequency of barcodes that correspond to individual strains (iii), and the ratio of barcode frequencies of each strain in gemcitabine and control conditions were used to identify sensitive and resistant knockouts (iv). Experiment includes three biological replicates (independent inoculums). (D) Volcano plot of the genetic screen results. Green and purple dots represent sensitive and resistant knockout strains, respectively. (E) Highly sensitive and resistant strains. Asterisk marks the gene knockouts likely involved in gemcitabine transport and phosphorylation. Knockouts marked in bold were characterized as slow-growing strains. (F) Statistically significant enriched and depleted KEGG categories identified by the genetic screen (FDR adjusted p-value cutoff: 0.1). The marker size shows the number of genes in the category and the gray scale marks the statistical significance.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Bar plots showing the number of reads with or without barcodes across samples (three biological replicates with gemcitabine and without drug). (B) Violin plots showing the frequency of individual barcode counts. (C) Scatter plots of barcode counts across biological replicates (D) Comparison between independent biological replicates of the genetic screen for gemcitabine resistance. Left panel: comparison between the log-fold change in strain enrichment between the original screen and a screen performed with the same strain collection (odd collection) on the different day. Right panel: comparison between the log-fold change in strain enrichment between the original screen and a screen performed with the knockout strain collection that was independently cloned (even collection). Strain marked in purple are resistant knockout strains that were identified in the original screen (Figure 1E). Eleven knockout strains that were gemcitabine resistant in the original screen were not detected at all newly used strain collection (even collection).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The ybcn deletion strain was used as a wild-type control since this gene deletion does not impact E. coli growth and genetic background of this strain is comparable to the other mutants used in the experiment. Background subtracted mean absorbance (600nm) of three technical replicates are plotted. Shaded areas show the standard deviation.\n\nThrough a pooled genetic screen, we systematically mapped all loss-of-function mutations that increase E. coli\u2019s resistance to gemcitabine and found that inactivation of over 40 genes increased bacterial resistance by more than 16-fold. This observation led us to conclude that resistance can rapidly emerge under natural selection through gene inactivation within a single evolutionary step. Using a functional assay, we found that one third of top resistance mutations impacted extracellular drug concentrations (gemcitabine activity). Co-culturing bacteria harboring these loss-of-function mutations with cancer cells confirmed that these adaptive mutations in bacteria have the potential to alter chemoresistance of neighboring tumor cells. Finally, through in vitro evolution we studied which adaptations emerge under drug selection in three E. coli strains. We found that inactivation of the drug transporter NupC arises in all evolved strains. This inactivation leads to decreased bacterial drug import and therefore reduces the rate of gemcitabine breakdown. Reduced bacterial breakdown, in turn, increases gemcitabine availability for neighboring tumor cells. Our work reveals that bacterial adaptation to the frontline chemotherapy drug gemcitabine can take place rapidly in vitro. If similar adaptation takes place in gemcitabine-treated patients, it may ultimately increase the chemosensitivity of the hosting tumor. Our in vitro work suggests that monitoring bacterial adaptation to chemotherapy may be required to decide whether chemotherapy should be augmented with antibiotic treatments. Such decisions are nontrivial given that administration of antibiotics can be detrimental to cancer patients (Meriggi and Zaniboni, 2021; Gao et al., 2020; Corty et al., 2020; Elkrief et al., 2019).\n\n## Results\n\n### The E. coli resistome against gemcitabine\n\nWe first set out to determine the inhibitory concentration of gemcitabine in three E. coli strains: BW25113 (a K-12 lab strain), F-18 (a human fecal isolate), and Nissle 1917 (a human fecal isolate that is used as probiotic). We characterized the inhibitory concentrations by monitoring bacterial growth inhibition after 12 hr. Figure 1B shows the sensitivity curves and the inhibitory concentration that reduced culture density by 50% (IC50). We observed that gemcitabine can completely inhibit the growth of all three strains, with F-18 being most sensitive (IC50 = 0.7 \u00b5M) and BW25113 being most resistant (IC50 = 103 \u00b5M). These concentrations are comparable to the IC50 reported for 29 pancreatic adenocarcinomas in the GDSC2 dataset that tested hundreds of toxic compounds on a thousand cell lines (Yang et al., 2012; boxplot above Figure 1B).\n\nWe next conducted a genetic screen with a collection of 3680 single-gene knockout strains to systematically map all nonessential genes that influence gemcitabine resistance when depleted (typically referred to as the drug resistome). We used a pooled screening approach that we recently developed, which relies on sequencing DNA barcodes that are unique for each gene-knockout in the strain collection (Rosener et al., 2020; Noto Guillen et al., 2021). Figure 1C outlines the main steps of the screening method: the pooled knockout strains were inoculated and grown in media containing a high gemcitabine concentration (140 \u00b5M) while a control culture was inoculated in media without drug. Once the cultures reached a late logarithmic growth phase, cells were lysed, and DNA was extracted for amplification and sequencing of the barcode region. Lastly, we compared the frequency of each barcode, corresponding to an individual gene-knockout, in the drug and control conditions. This comparison revealed strains whose frequency was significantly increased or decreased in gemcitabine. Such enrichment or depletion correspond to increased or decreased drug resistance, respectively. We used three biological replicates, biological experiments conducted side-by-side, in three separate tubes, to infer statistical significance. We identified over a million and a half barcode containing reads in each replicate that corresponded to roughly 3500 unique barcodes (knockout strains). Figure 1\u2014figure supplement 1 shows detailed information on the screen coverage and replication quality. To validate the screen results we repeated the entire screen two additional times, once with the same collection of knockout strains and once with a collection knockout strains that were cloned independently (again, each with three internal replicates). The results (resistance/sensitivity) from the two additional screens were highly correlated with the original screen (Figure 1\u2014figure supplement 1D). Results of all screens and replicates appear in Supplementary file 1.\n\nFigure 1D shows a volcano plot representation of the screen results. Using very strict cutoff values for fold-change (>16) and false discovery rate (FDR)-adjusted p-value (<0.05), we identified 42 gemcitabine-resistant knockout strains and 6 gemcitabine-sensitive strains (shown as purple and green circles in Figure 1D). The screen results, including all statistically significant hits without a strict cutoff on enrichment, appear in Supplementary file 1. Reassuringly, we found that knockout of the known drug transporter (nupC) is among the top resistors. When we inspected the gene annotation of the top resistors, we identified multiple hits from the known target pathway of the drug (Figure 1E). These included the permease (nupC), the transcriptional regulator cytR (a repressor of both nupC and cdd), and the cytidylate kinase (cmk) that likely phosphorylate intracellular gemcitabine. We also found multiple hits that encode membrane proteins or transporters, including ompR and envZ that together regulate permeability channels for nutrients, toxins, and antibiotics (Mizuno and Mizushima, 1987). Lastly, we observed a high prevalence of genes coding for metabolic enzymes that can considerably slow down growth when mutated (Noto Guillen et al., 2021). Indeed, a statistical test revealed that gene knockouts that were previously identified as reducing growth (Baba et al., 2006) were highly enriched in the set of gemcitabine resistant strains (p-value = 8.6186e-18, Fisher\u2019s exact test). The overlap between resistant strains and slow growing strains is sensible given that slow growth reduces the rate of DNA synthesis. Since gemcitabine is quickly degraded by the bacterial Cdd enzyme, it was only transiently present in the extracellular media during the screen experiment. Under such a transitory stress, slower consumption of the antimetabolite is likely beneficial (normal growers incorporated much more gemcitabine into their DNA and remain arrested while slow growers incorporated less and therefore avoid arrest).\n\nNext, we used the gene set enrichment analysis tool GAGE (Luo et al., 2009) to test for functional enrichment using the Kyoto Encyclopedia of Genes and Genomes (KEGG) (Kanehisa and Goto, 2000) and Gene Ontology (GO) (Ashburner et al., 2000) databases. This analysis is complementary to the previous analysis since it considers the enrichment values from all strains rather than only the limited set of hit strains obtained by imposing strict cutoffs. Figure 1F shows the functional enrichment by KEGG pathways (enrichment indicates that pathway inactivation increased resistance). Reassuringly, we observed a high agreement between the functional enrichment by GAGE and the annotation of the top hits. Specifically, we observed enrichment in purine synthesis and membrane transporters as well as multiple metabolic pathways impacting bacterial growth rate (Noto Guillen et al., 2021). Supplementary file 2 provides the full list of enriched and depleted categories.\n\nTaken together, the results from our genetic screen outline three adaptation strategies that increase bacteria\u2019s gemcitabine resistance: reduced drug import by inactivating membrane proteins and transporter systems, changes in the drug metabolism through mutations in the target pathway, and inactivation of metabolic genes that slowdown bacterial growth. Importantly, since these resistance adaptations arise from knockout of single genes, they are all accessible within a single evolutionary step (e.g., a single gene inactivating mutation).\n\n### The impact of bacterial resistance on bacterial drug degradation\n\nOur genetic screen revealed alternative adaptation strategies that increase bacterial resistance against gemcitabine. However, for most loss-of-function mutations, it remains to be determined how they will influence the rate of bacterial drug degradation (and ultimately drug availability for neighboring cancer cells). We therefore designed a functional assay to detect changes in drug activity, after bacterial incubation with the drug, relative to its activity after incubation with the wild-type strain (outlined in Figure 2A). We incubated a knockout strain of interest in saline with a high gemcitabine concentration and collected the conditioned supernatant after a short incubation period (15 or 45 min). We diluted the conditioned supernatant into regular media and monitored the growth of a drug-sensitive reporter strain (a cdd knockout that cannot degrade gemcitabine) in this media. Finally, we used growth curves of the reporter strain as a proxy for the gemcitabine concentration in the conditioned supernatant. We reasoned that a conditioned supernatant containing high drug concentration is indicative of slow degradation by the strain of interest. This difference in drug concentration will in turn manifest as slow growth of the reporter strain (blue curve in Figure 2A). We note that this detection method is insufficient to resolve the mechanism underlying the slowed degradation since it only measures drug availability in the extracellular environment after incubation (e.g., both slow import and slow deamination will be interpreted as slow degradation).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig2-v2.jpg)\n\n**Figure 2.:** (A) The functional drug breakdown assay. Each knockout strain was inoculated in saline containing gemcitabine and incubated for 15 or 45 min. Conditioned supernatant was then filtered and mixed with fresh media before inoculating a reporter strain. Reporter strain growth was used as a proxy for changes in gemcitabine availability in the conditioned supernatant. (B) Results of the drug breakdown assay for the top 88 resistant knockouts. A third of all tested knockouts (33/88) influenced the drug degradation rate. (C) Chemical validation of the functional assay for the slowest and fastest degraders. GC-MS was used to measure gemcitabine concentration (shaded area, top panels) and its degradation product dFdU (hatched area, lower panels) in conditioned supernatant (colors as in A). The dashed black curve marks the measurements after incubation with the wild-type strain. The error bars show the standard deviation of three biological replicates. (D) Co-culture experiments shows bacterial mutations can influence gemcitabine efficacy in neighboring spheroids of cancer cells. Representative microscopy images of spheroids that were co-cultured with wild-type bacteria across multiple concentrations of drug and bacteria (large images show the same spheroid before the wash, after the wash that removed dead cell debris, and after image segmentation). (E) Bacterial mutations that modulate drug degradation can impact drug efficacy in neighboring cancer cells. Results of spheroid experiments with the slowest and fastest degraders and the inferred fitness landscapes. Each panel shows the fitness landscape calculated from spheroid size across a range of gemcitabine and bacteria concentrations (as in D). The color code shows the normalized spheroid size (ranging from the smallest spheroid to the largest one). The dashed black line marks the parameter combination (bacteria and gemcitabine concentrations) that reduce spheroid growth by 50% (EC50 front), and solid lines show the EC50 front for the knockout strains. Shifts in the EC50 front, relative to the wild-type front, indicate that co-incubation with the knockout strain during drug exposure altered the spheroid\u2019s chemoresistance.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The title of each graph shows the knockout strain that was incubated with gemcitabine before the reporter strain was inoculated into the filtered conditioned supernatant. (A) Mean growth curves of the reporter strain in the conditioned supernatant filtered after 15 min of co-incubation (three biological replicates) with the 88 tested knockout strains. Statistically significant fast degraders are shown with red color (one-tailed Student\u2019s t-test with FDR-corrected p-adj<0.1). (B) Mean growth curves of the reporter strain in the conditioned supernatant filtered after 45 min of co-incubation (three biological replicates) with 88 tested knockout strains. Statistically significant slow degraders are shown with blue color (one-tailed Student\u2019s t-test with FDR-corrected p-adj<0.1).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The fitness landscape inferred for the slowest and fastest bacterial degraders relative to the wild-type strains. Each panel shows the fitness landscape calculated from spheroid size across a range of gemcitabine (0 \u03bcM to 57.6 \u03bcM as 1.5-fold dilutions) and bacterial concentrations(0\u201332 million as two-fold dilutions). The color code shows the normalized spheroid size (ranging from the smallest spheroid to the largest one). The dashed black line marks the parameter combination (bacteria and gemcitabine concentrations) that reduce spheroid growth by 50% (EC50 front) and solid lines show the EC50 front for the knockout strains. Shifts in the EC50 front, relative to the wild-type front, indicate that co-incubation with the knockout strain during drug exposure altered the spheroid\u2019s chemoresistance.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig2-figsupp3-v2.jpg)\n\nWe evaluated drug activity after incubation of the 88 most resistant strains, the top 42 resistors found by the strict enrichment cutoff (Figure 1E) and the next 46 resistant strains (supernatant collection was repeated three times on different days). Figure 2B shows a summary of the results of this assay (Figure 2\u2014figure supplement 1 shows observed growth curves). We found one third of the tested knockout strains modulated extracellular drug availability (33 of 88). Specifically, 11% of all strains were fast degraders and 26% of strains were slow degraders (one-tailed t-test, FDR-adjusted p-value<0.1). We next decided to validate the conclusions of our functional assay using an independent chemical approach for the wild-type and three knockout strains. We focused on the fastest and the slowest degraders and cdd knockout as a control. We incubated each strain with gemcitabine and sampled aliquots of the supernatant at predetermined timepoints (20, 45, and 75 min). We then used gas chromatography\u2013mass spectrometry (GC-MS) to measure the concentration of gemcitabine and its degradation product in the conditioned supernatant (Figure 2C). In agreement with our functional assay, the GC-MS measurements confirmed that the gene knockouts indeed altered the availability of gemcitabine and in the extracellular environment. The increased availability of the drug breakdown product (dFdU) support the conclusion that rate of drug metabolism is underlying this change (as opposed to intracellular drug accumulation; Kl\u00fcnemann et al., 2021).\n\nLastly, we tested whether bacterial resistance mutations influence the drug sensitivity of co-cultured cancer cells. While previous works relied on sequential exposure to the drug (Geller et al., 2017; Lehouritis et al., 2015), using conditioned bacterial supernatant on cancer cells, we reasoned that a co-culture system will reveal whether bacterial degradation is sufficient to impact drug efficacy in neighboring cancer cells that are simultaneously exposed to the drug. We co-cultured bacteria with spheroids of the CT26 murine cancer cell line and simultaneously treated them with gemcitabine for 4 hr (gemcitabine cytotoxicity can be recapitulated in this cell line; Geller et al., 2017). Spheroids were then washed to remove bacteria and left to grow for a week in media supplemented with antibiotics. Lastly, spheroids were washed again to remove dead cells and the area of the spheroids was measured to evaluate gemcitabine\u2019s efficacy on the cancer cells. Figure 2D shows microscopy images of a representative microwell plate. As the figure shows, we observed sensible trends in these experiments: first, we observed that spheroid size was inversely correlated with gemcitabine concentration (lower spheroid row in Figure 2D) and that bacterial concentration, without any drug, did not significantly impact spheroid growth (left spheroid column in Figure 2D). Reassuringly, we observed that co-cultured bacteria can mitigate gemcitabine damage and that the magnitude of rescue depended on the bacterial concentration (spheroid area is overall increased in upper spheroid rows in Figure 2D).\n\nWe used our systematic measurements of spheroid area to fit a fitness landscape. This procedure allowed us to infer the effective drug concentration that leads to a 50% change in area (EC50) for any bacterial concentration. Figure 2E shows the landscapes for the wild-type strain, a control non-degrader (cdd knockout) and the fastest and slowest degraders (cytR and nupC knockouts, respectively). As evidenced by the changes in the EC50 fronts, we observed that the spheroid fitness landscapes were considerably different depending on the co-cultured bacteria during drug exposure. In agreement with our functional and chemical assays, increased chemoresistance relative to the wild-type strain was observed when spheroids were co-incubated with the fast degrader (cytR knockout). In contrast, decreased chemoresistance relative to the wild-type strain was for co-incubation was with the slow degrader (nupC knockout). A replicated spheroid experiment with cytR and nupC knockouts and the wild-type strain revealed similar shifts in the EC50 fronts (Figure 2\u2014figure supplement 2). Additional experiments with nine more bacterial resistors showed they also impacted spheroid chemoresistance (Figure 2\u2014figure supplement 3).\n\nTaken together, the results of the spheroid experiments demonstrate that mutations impacting gemcitabine degradation rates in bacteria can indeed impact neighboring cancer cells simultaneously with the drug. Importantly, we observed that bacterial resistors can have opposite influences on gemcitabine sensitivity of co-cultured cancer cells. For examples, the nupC knockout decreased chemoresistance while the cytR knockout increased it. A key question remaining is which adaptations will naturally transpire during bacterial evolution under drug selection.\n\n### Evolved bacterial resistance against gemcitabine\n\nThe genetic screen uncovered multiple loss-of-function mutations that confer bacterial gemcitabine resistance. Yet, such screens are insufficient for determining which gene inactivation, if any, will emerge under natural selection. Moreover, since evolution can leverage additional processes beyond gene inactivation, such as gain-of-function, adaptation may follow an entirely different evolutionary trajectory. We applied the widely used serial transfer approach to select for evolved drug resistance in bacteria (Dragosits and Mattanovich, 2013). Such in vitro experiments can shed light on the mechanisms underlying resistance and the time scale needed to acquire resistance. To test whether reoccurring adaptations emerge, we used the three E. coli strains that were characterized by different drug sensitivity levels (Figure 1B). Once the serial transfer experiment ended, we evaluated whether drug resistance increased in the population and isolated single-resistant clones for whole-genome sequencing (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig3-v2.jpg)\n\n**Figure 3.:** (A) Overall approach for the lab evolution experiment. Three E. coli strains were evolved over 50 generations in serial transfer evolution experiment. We measured gemcitabine resistance of last day populations and eight single clones were isolated from each population. A single resistant clone was used for the whole-genome sequencing and for identifying of the underlying mechanism for drug resistance. (B) Heatmaps showing the temporal changes in gemcitabine IC50 of evolving populations in each day of the serial transfer experiment. (C) Gemcitabine dose\u2013response curves of last day populations from lab evolution experiment. All of the gemcitabine evolved lines, but not the control evolved lines, developed a high resistance against gemcitabine. Error bars show the standard deviation of three technical replicates. (D) Pie charts showing the gemcitabine IC50 levels of screened clones. Slices represent the clone selected for whole-genome sequencing. Color scale is the same as panel (B).\n\nWe evolved three independent populations of each E. coli strain in sub-inhibitory concentrations of gemcitabine (\u2018Materials and methods\u2019) and three control populations without any drug. We monitored drug resistance in all populations daily throughout the experiment (Figure 3B). We observed that resistance emerged within a day or two for the Nissle 1917 and F-18 strains, while it emerged more slowly for the BW25113 strain. Last day populations from all strains that evolved in gemcitabine were resistant to the drug across all tested drug concentrations (Figure 3C). In order to isolate individual resistant clones, we streaked each of the evolved population on agar plates and measured IC50 dose for eight independent colonies. (Figure 3D). Almost all clones from Nissle 1917 and F-18 drug evolved strains were resistant. However, clones from the BW25113 populations showed heterologous levels of resistance. All clones isolated from the populations that evolved without the drug were gemcitabine sensitive. We chose a single clone from each population for further analysis (marked as extruding slices in the pie charts in Figure 3D). These individual clones represent lineages that evolved completely independently from one another.\n\n### Inactivation of nupC underlies evolved drug resistance\n\nPhenotypic measurements revealed that all drug-evolved populations became highly resistant. We next sequenced the genomes of evolved clones to identify the underlying adaptive mutations and identified mutations with the BreSeq software (Barrick et al., 2014). Figure 4A shows the mutations we identified in the single clones as circa plots (concentric circles representing the bacterial chromosomes). Annotation of mutations in F-18 required careful manual inspection since its reference genome consists of 113 contigs. As the figure shows, we observed that the genomes of all the drug-evolved clones harbored nupC mutations while none of the control-evolved clones had such mutations. Supplementary file 3 provides the BreSeq information of mutations we identified. Importantly, while we found additional mutations beyond those in the nupC gene, we did not observe another gene that was repeatedly mutated across all independent replicates in all of the E. coli strains. The only other repeated mutation we identified involved the yahF gene in two lines of F-18 that also shared an identical nupC mutation (transposon). Inspecting the BreSeq report and the contig files led us to believe both lines shared single new junction that impacted both the nupC and yahF loci.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig4-v2.jpg)\n\n**Figure 4.:** (A) Circa plots showing the mutations identified by whole-genome sequencing in pure clones isolated from independently evolved populations. Mutations in the coding region of the nupC gene were observed across all gemcitabine-evolved clones but not in the no-drug control evolved clones. Since the F-18 genome is not fully assembled, relative positions on the F-18 circa plot are not real genomic positions. (B) Pie chart showing the frequency of various mutation types identified by sequencing the nupC gene across 96 spontaneous gemcitabine resistant mutants in the BW25113 strain. (C) A comparison of the evolutionary conservation of missense mutation positions relative to the conservation of all positions in the nupC gene. The positions of the missense mutations are statistically biased towards the conserved positions (p-value = 1.95 * 10\u20134 in Wilcoxon rank-sum test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The color code shows the conservation level inferred for the NupC protein with the ConSurf server. Mutations shown in black are found in spontaneous mutants isolated from agar plates containing high concentrations of gemcitabine. Mutations shown in red are missense mutations found in the gemcitabine-evolved strains. del: deletion; ins: insertion; fs: frameshift-causing mutation; IS: insertion element (transposon insertion).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Errorbars show the 95% confidence intervals (data from ten technical replicates for each biological replicate). Each experiment was performed with four biological replicates/single colonies.\n\nThe mechanism of mutation in the nupC gene varied across the gemcitabine-evolved strains and included point mutations, large deletions, and new junction formation within nupC coding region that can stem from transposon insertions and genomic rearrangements. Two of the point mutations we identified were missense mutations (S175P and V249A). To evaluate whether these point mutations likely interfere with the permease function, we used the ConSurf Server that identifies evolutionarily conserved positions (Ashkenazy et al., 2016). The analysis revealed that both positions are highly conserved and are therefore likely important for the permease function (positions marked in red in Figure 4\u2014figure supplement 1). Lastly, we examined the function of all other genes that were mutated in evolved strains to pinpoint additional putative adaptive mutations. We identified a new genomic junction, likely originating from a transposon insertion, upstream to the uvrA gene. The uvrA gene codes for A subunit in the UvrABC nuclease that is involved in the nucleotide excision repair pathway (Keseler et al., 2017). The mutation impacted the annotated promoter of the gene according to regulonDB (Gama-Castro et al., 2016). Taken together, we concluded that resistance emerged across all 12 sequenced and independently gemcitabine-evolved strains primarily through inactivation of the nucleoside permease NupC.\n\n### Mechanisms underlying convergence towards nupC inactivation\n\nGemcitabine adaptation in our evolution experiments likely emerged through inactivation of nupC across all evolved strains. This convergence can be driven by multiple mechanisms that are not necessarily exclusive to one another. Evolutionary trajectories are influenced by multiple parameters, including the adaptation benefit (e.g., the level of resistance the mutation confers), the adaptation cost (e.g., if it reduces growth), and the likelihood that the mutation will appear spontaneously. We reasoned that quantifying these parameters for the nupC gene would provide insight into the forces underlying the evolutionary convergence we observed.\n\nOur genetic screen already revealed that nupC is among the top loss-of-function mutations conferring resistance (Figure 1E), yet it remains unclear whether nupC inactivation is associated with any cost to the cells. We therefore monitored the growth rate of the top five resistant knockouts identified in the genetic screens (Figure 1\u2014figure supplement 2). The experiment revealed that a nupC knockout grows as fast as the wild-type strain (ybcN knockout) for most of the growth phases and slows down only during the stationary phase. In contrast, all other top resistant knockouts were significantly slower than the wild-type strain (and nupC) during all growth phases. We concluded that nupC inactivation is unique among the resistant mutations since its associated with only a small fitness cost for bacteria when the drug is not present.\n\nWe next tested whether the nupC locus contains a mutation hotspot. We reasoned that a mutation hotspot will be evident if we observed that multiple independent resistant clones will share a specific site or region within the nupC locus or will leverage on a specific mutation mechanism. We obtained independent clones by picking 100 individual colonies of the wild-type strain. We grew them overnight and plated them on agar plates with an inhibitory gemcitabine concentration (0.5 mM). We reasoned that at this high concentration, only the most resistant and fast-growing mutants, namely nupC mutants, will be able to form large colonies within an overnight growth. We then picked a single resistant colony from each of the 100 agar plates and Sanger sequenced the nupC coding sequence locus. We found that 85% of colonies were mutated in this region, with mutations spanning multiple types. Missense mutations and short indels were the most frequent mutations observed (Figure 4B). In order to annotate the missense mutations, we tested whether they likely disrupt positions important for permease function. We used the ConSurf sequence analysis tool and identified evolutionarily conserved positions (Figure 4\u2014figure supplement 1). The analysis revealed that missense mutations we identified were significantly biased towards the highly conserved regions of the permease (Figure 4C, p-value = 1.95 * 10\u20134 in Wilcoxon rank-sum test).\n\nLastly, we decided to test whether the nupC is naturally poised for frequent mutations in the absence of gemcitabine. We reasoned that since our agar plating experiment showed that most resistant colonies have been nupC mutants, we could estimate the mutation rate (\u03bc) of in this gene with a Luria\u2013Delbr\u00fcck fluctuation test (Luria and Delbr\u00fcck, 1943). We compared this mutation rate to a reference gene (nfsA) that confers resistance to furazolidone (Louren\u00e7o et al., 2016). We performed this experiment as four replicates using four different genetic backgrounds (the strains used for the evolution experiments and the MG1655 lab strain). Figure 4\u2014figure supplement 2 and Supplementary file 4 shows the calculated mutation rates for nupC and nfsA loci in all strains (normalized to a gene with 1000 basepairs). In all cases, we found rates comparable to the average gene mutation rate previously inferred for E. coli (2.1 \u00d7 10\u22127 per gene per generation) (Chen and Zhang, 2013). For BW25113, the mutation rate of nupC was 5.7-fold higher than that of nfsA. For Nissle, this difference was 6.8-fold and for MG1655 it was 1.8-fold. For F-18 strain, in contrast, the mutation rate of nfsA was 7.9-fold higher than nupC. While the mutation rate was not identical in the two genes, the mutation of nupC was not always higher than that of nfsA, and their rate difference was never larger by an order of magnitude.\n\nTaken together, the results from multiple experiments suggested that nupC was likely repeatedly inactivated across multiple genetic backgrounds since it confers high drug resistance without compromising growth. Experiments focusing on the nupC mutation revealed that gene inactivation could take place through multiple alternative mutation mechanisms and that the nupC locus is not characterized by an exceptionally high mutation rate (excluding the possibility of a mutational hotspot).\n\n## Discussion\n\nThe recent discovery that bacterial infections are frequent across multiple cancer types suggests that the tumor-microbiome is an important, yet understudied, component of the tumor microenvironment (Cullin et al., 2021; Nejman et al., 2020). Here, we suggest that a key aspect of microbial biology is underexplored in current investigations of the tumor-microbiome \u2013 the ability of bacteria to rapidly evolve and adapt to extracellular changes. Within the tumor niche, successful colonization may require bacterial adaptation to the unique conditions of the tumor microenvironment, including adaptation to tumor-targeting therapeutics. A strong selective pressure from chemotherapies likely exists given that multiple antineoplastic drugs are putative antimicrobials at physiological concentrations (Maier et al., 2018). We previously raised the hypothesis that bacterial evolved resistance to tumor-targeting chemotherapies can manifest in changes to bacterial drug metabolism and this type of adaptation can inadvertently influence chemoresistance. Our previous work used the Caenorhabditis elegans model system, its bacterial diet, and two fluoropyrimidine chemotherapy drugs to study this hypothesis (Rosener et al., 2020). In that model system, we estimated that almost 60% of loss-of-function mutations that conferred bacterial resistance would also reduce drug toxicity in a worm host feeding on these bacteria. Here, we further study this hypothesis and focus on a different chemotherapy drug and a model system that captures bacterial\u2013drug interactions that may be at play in the tumor microenvironment, rather than in the host gut as in the previous publication.\n\nResearch of the bacterial role in pancreatic cancer revealed multiple and independent mechanisms of microbial influence on cancers in this organ (Nejman et al., 2020; Riquelme et al., 2019; McAllister et al., 2019; Geller et al., 2017; Aykut et al., 2019; Pushalkar et al., 2018). Specifically, recent work suggested that pancreatic colonization by proteobacteria can decrease efficacy of gemcitabine through rapid bacterial drug inactiavation (Geller et al., 2017). We used this drug\u2013bacteria\u2013tumor interaction to test our hypothesis by reconstituting similar interactions from individual parts that are well-understood on their own. We first mapped the gemcitabine resistome in E. coli and found that changes in multiple cellular processes increase resistance. Importantly, these potential adaptations are easily accessible within short time scales since they only require inactivation of a single gene. A functional assay revealed that one third of these adaptations impact bacterial drug breakdown (Figure 2B). Indeed, gemcitabine administration to co-cultures of cancer spheroids and bacteria demonstrated that two of the top loss-of-function mutations that the screen identified can considerably, and oppositely, impact drug efficacy in neighboring cancer cells (Figure 2E). While the impact of bacterial resistance on neighboring cells could have been predicted for the nupC knockout, it was not trivial for the cytR knockout. CytR is a transcription factor that represses at least 14 different operons, including nucleotide transporters and membrane proteins (nupC, nupG, tsx, ycdZ), sigma factors (rpoH), and metabolic enzymes in the target pathways (ccd, udp, deoABCD) (Keseler et al., 2017). A chemical assay revealed that cytR knockdown culminates in increased drug degradation and a co-culture experiment confirmed it increases chemoresistance of neighboring cancer spheroids. It is therefore likely that relief of CytR repression of both nupC and cdd leads to increased import that is counteracted by even faster gemcitabine deamination. This observation is key since it suggests that mutations conferring gemcitabine resistance in bacteria can both increase and decrease gemcitabine breakdown rate. In the context of the tumor-microbiome, bacterial adaptation to gemcitabine can therefore raise or reduce the tumor\u2019s chemoresistance.\n\nA key question that arises from the observation that bacterial resistance can modulate drug availability for neighboring cancer cells, is which adaptations will emerge under drug selection and whether evolution will repeatedly converge to the same resistance mechanism. Results from the serial transfer evolution experiment in three E. coli strains showed that drug selection repeatedly yielded adapted clones that disabled the drug permease (Figure 4A). Additional experiments suggested that selection for nupC inactivation, at the expense of alternative resistance mechanisms, is attributed to the high resistance this inactivation confers and to the minimal impact it has on growth. Importantly, as the fluctuation experiments reveal, resistant clones can preexist drug exposure and therefore also likely preexist any treatment if the bacterial number in the tumor-microbiome is sufficiently large. In such cases, tumor-microbiome adaptation can potentially take place through ecological-like changes and takeover by a resistant bacterial clone. Such clonal expansion in bacteria is reminiscent to the process of clonal expansion and takeover of preexisting resistant cancer cells that is thought to be prevalent in cancer treatment.\n\nPrevious research established that the microbiomes, in natural body sites or within tumors, can metabolize tumor-targeting drugs and by doing so influence drug efficacy in the host. Our previous and current studies complement this premise by demonstrating that bacterial evolutionary adaptation to chemotherapies can further influence bacterial drug metabolism and therefore host drug efficacy. Intriguingly, in this work we found that bacterial influence can have opposite effects on drug breakdown and therefore can increase, or decrease, chemoresistance. Moreover, the genetic screens from both works suggest that such occurrences might not be rare, given that such a high fraction of adaptive loss-of-function mutations also alter drug breakdown rates.\n\nWhile we believe this work illuminates an underexplored and potentially impactful field of research \u2013 evolutionary adaption in the tumor microbiome \u2013 we are also excited by the follow-up questions that naturally ensue our in vitro findings. Foremost, it will be fascinating to test whether tumor-colonizing bacteria evolve and adapt to anticancer host treatment in animal models. Specifically, following our observations in the model gammaproteobacteria E. coli, and the known prevalence of gammaproteobacteria colonization in pancreatic cancer (Geller et al., 2017), it will be intriguing to check whether similar adaptations are observed in bacteria isolated from tumors that were resected from pancreatic cancer patients. Identifying convergent adaptation in tumor-microbiome of patients may prove impactful for personalizing anticancer treatment and informing the decision to complement chemotherapy treatment with antibiotics, a decision that is highly consequential for cancer patients and that should therefore be well-justified (Meriggi and Zaniboni, 2021; Gao et al., 2020; Corty et al., 2020; Elkrief et al., 2019).\n\n## Materials and methods\n\n### Bacterial strains and growth conditions\n\nBacterial strains used in this study are shown in Table 1. We used the E. coli barcoded knockout strain collection for the pooled genetic screen (similarly to Rosener et al., 2020; Noto Guillen et al., 2021). All experiments measuring gemcitabine breakdown were performed with strains from the KEIO strain collection (Baba et al., 2006). For spheroid experiments, double knockout strains were generated with P1 transduction method (Thomason et al., 2007) using pyrD knockout strain from the barcoded library and the desired gene knockout from the KEIO collection. The pyrD knockout background was used since it is a pyrimidine auxotroph that cannot grow in the media used to culture the spheroids.\n\n**Table 1.**\n Bacteria used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Source</th>\n      <th>Remarks</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E. coli BW25113</td>\n      <td>Walhout Lab, University of Massachusetts Chan Medical School, MA, USA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>E. coli F-18</td>\n      <td>McCormick Lab, University of Massachusetts Chan Medical School, MA, USA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>E. coli MG1655</td>\n      <td>Brewster Lab, University of Massachusetts Chan Medical School, MA, USA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>E. coli Nissle 1917</td>\n      <td>ArdeyPharm GmbH, (Pharma Zentrale GmbH), Germany</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>E. coli KEIO knockout collection</td>\n      <td>Dharmacon (GE Life Sciences)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>E. coli Barcoded knockout collection (barcoded library)</td>\n      <td>Hirotada Mori, Nara Institute of Science and Technology, Japan</td>\n      <td>Parent Strain: BW38028</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206cdd::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206cytR::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206envZ::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206glnG::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206ihfB::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206nupC::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206ompR::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206phoR::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206rfaG::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206ubiF::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206yfjG::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n    <tr>\n      <td>BW25113 \u2206pyrD::tGFP-chlr-barcode \u2206yohK::kanr</td>\n      <td>Barcoded library, KEIO Collection</td>\n      <td>Double knockout was generated by P1 transduction</td>\n    </tr>\n  </tbody>\n</table>\n\nFor all experiments, bacteria were inoculated into Lysogeny Broth (LB) and grown overnight at 37\u00b0C, 200 rpm orbital shaking. Knockout strains were grown in LB media supplemented with 50 \u03bcg/mL kanamycin (KEIO strain collection) or 25 \u03bcg/mL chloramphenicol (barcoded strain collection). All growth and serial evolution experiments were performed in M9 minimal media supplemented with 0.2% amicase and 0.4% glucose. Experiments designed to monitor gemcitabine breakdown were performed in PBS (functional assay) or in 0.9% saline (GC-MS).\n\n### Barcoded strain library\n\nThe E. coli barcoded deletion library was used as in our previous studies (Rosener et al., 2020; Noto Guillen et al., 2021). The parent strain of this library is BW38028 with the genotype \u0394(araD-araB)567 lacZp-4105(UV5)-lacY hsdR514, rph+ (Conway et al., 2014). The library includes two sets of 3680 knockout strains (each set with different barcodes: odd and even libraries). After overnight growth in nutrient-poor synthetic media (M9), we identified 3512 barcodes in one set and 3226 barcodes in the other set (3145 knockout strains were detected in both collections). In each strain, the open-reading frame of a single gene was replaced in-frame with a fragment containing turbo GFP, chloramphenicol resistance cassette, and a unique 20 bp sequence that serves as an identification barcode. Since the barcode is the only variable region across strains, it can be amplified from a mixed culture of strains with a single pair of primers. We used primers that amplify a 325 bp region.\n\n### Measurement of bacterial gemcitabine dose\u2013responses and IC50\n\nOn the day of the experiment, a 384-well plate containing serially diluted gemcitabine in M9 was prepared at 2\u00d7 concentration in a volume of 35 \u00b5L. For the day-to-day IC50 measurements (Figure 3B), a sample from daily evolving populations was directly diluted 1:200 into the microtiter plate with gemcitabine. For measurement of gemcitabine resistance of evolved populations (Figure 3C), a sample from frozen last day glycerol stocks of evolution experiment was inoculated into 3 mL LB for overnight culture. Overnight cultures were diluted to OD (600 nm) of 1 in M9 and were added to the 384-well plate (1:200 final dilution). For single-colony gemcitabine IC50 experiments (Figure 1B and Figure 3D), single colonies were grown overnight in 3 mL LB and the same dilution protocol was followed as evolved populations. The prepared microplates (with bacteria and gemcitabine dilutions) were incubated at 37\u00b0C and 360 rpm double orbital shaking in an automated plate reader (BioTek Eon) and absorbance (600 nm) was monitored every 10 min for 18 hr. All measurements were performed in technical triplicates. Each evolved population is considered as a separate biological replicate (three biological replicates per evolution condition; one biological replicate is shown in the figure for control evolved population). A MATLAB script was used to fit the dose\u2013response curves and infer the IC50 values. Individual growth curves were assessed for quality control and to determine the exclusion criteria for analysis.\n\n### Pooled genetic screen\n\nWe thawed a frozen glycerol stock of the pooled barcoded strain collection and inoculated 15 \u00b5L of the stock into 25 mL of M9 supplemented with chloramphenicol for overnight growth at 37\u00b0C and 200 rpm shaking. In the morning, the culture was diluted to OD (600 nm) of 1, and then diluted 1:400 into 7 ml of M9 with or without 140 \u00b5M gemcitabine. We prepared triplicates for each of the two conditions (quadruplicates in validation screens). The tubes were incubated at 37\u00b0C shaker and OD was monitored periodically. Once culture crossed OD (600 nm) 0.6, we collected the cells and extracted genomic DNA with a commercial kit (Zymo Quick DNA miniprep Plus Kit, Cat# D4068). Library preparation was identical to the protocol we previously developed (Rosener et al., 2020). Briefly, genomic DNA isolated from endpoint of the genetic screen was quantified using Qubit dsDNA high sensitivity kit (Thermo Fisher, Cat# Q32854). We used 6.25 ng DNA to prepare the DNA library. First, barcoded region was amplified using the following primers and 2\u00d7 KAPA HiFi Hotstart ReadyMix (Kapa Biosystems, Cat# KK2602), which yielded ~350 bp product. PCR products were purified using AMPure XP beads (Beckman Coulter, Cat# A63881). Nextera XT Index Kit protocol (Illumina, Cat# FC-131-1024) was used to add indices and Illumina sequencing adapters to each PCR sample. Next, products were purified using AMPure XP bead (Beckman Coulter, Cat# A63881) purification protocol. The libraries were then run on a 3% agarose gel, and the product was extracted using NEB Monarch DNA Gel Extraction Kit (NEB, Cat# T1020L). Next, we used Agilent High Sensitivity DNA Kit (Agilent Technologies, Cat# 5067-4626) to evaluate the quality and average size of the libraries. Using Qubit dsDNA high-sensitivity kit, we measured the concentration and calculated the molarity of each library. Libraries were normalized to 4 nM, denatured, and diluted according to Illumina MiniSeq/NextSeq System Denature and Dilute Libraries Guide. After pooling, sequencing was performed using MiniSeq High Output Reagent Kit, 75-cycles (Illumina, Cat# FC-420-1001) or NextSeq 500/550 High output Reagent Kit v 2.5, 75-cycles (Illumina, Cat# 20024906). Raw reads were converted to barcode counts using a MATLAB script, which compared a database of all barcodes to the reads (Rosener et al., 2020).\n\nWe identified the enriched or depleted hits by comparing the relative frequency of individual barcodes when the pooled library grew in the presence or absence of gemcitabine. For this analysis, we used the barcode counts and identified barcodes with significant changes in their relative frequency with DEBRA (Akimov et al., 2020). We discarded barcodes with less than 10 counts. We used \u2018Wald statistical test\u2019 and a cutoff value of 16-fold for enrichment and FDR-adjusted p-value of 0.05. Next, we performed gene set enrichment analysis with GAGE (Luo et al., 2009) using KEGG (Kanehisa et al., 2016) and GO (Ashburner et al., 2000) databases at a FDR-adjusted p-value of 0.1. We used published data on the KEIO strain collection (Supplementary file 3 in Baba et al., 2006) to classify slow-growing knockouts. Specifically, we used the optical density measurements made after 24 hr of growth of the strain collection on minimal defined media (MOPS) and defined a cutoff value of 0.11 to discriminate normal and slow growth. We chose this cutoff value by the bimodal distribution of the density measurements in the dataset (this value separated the data into two unimodal histograms with 124 slow-growing strains and 4178 strains with normal growth).\n\n### Rapid gemcitabine breakdown assay\n\nWe picked from the KEIO strain collection the top 88 gemcitabine-resistant knockouts that were identified in the genetic screen. Knockout strains that were not found in the KEIO collection were picked from the barcoded knockout collection. The strains were grown in LB media with appropriate antibiotic at 37\u00b0C and 200 rpm shaking. We included six overnight cultures of the wild-type strain (BW25113) as controls. The next day, all strains were diluted to OD (600 nm) of 0.5 into 1 mL PBS with gemcitabine (200 \u03bcM) in a 96-deep well plate. The plate was incubated in a shaker at 37\u00b0C, 900 rpm orbital shaking. 250 \u03bcL of the supernatant was sampled after 15 and 45 min and filtered by spinning down at 5000 \u00d7 g using a 96-well plate 0.22 \u03bcm filters (PALL Corporation, Cat# 8119). We repeated this procedure for obtaining conditioned buffer three times on different days as independent biological replicates.\n\nAfter we obtained the conditioned buffers, we evaluated the amount of residual gemcitabine in left by monitoring the growth of a gemcitabine-sensitive reporter strain (cdd knockout). The cdd knockout was grown overnight in 3 mL M9 media at 37\u00b0C, 200 rpm shaking. The next day, the culture was first diluted to OD (600 nm) 1 and then further diluted 1:500 into M9 media. We aliquoted 150 \u03bcL of this culture into a 96-well plate and added 50 \u03bcL of conditioned buffer to each well. The plate was incubated at 37\u00b0C and 360 rpm double orbital shaking in an automated plate reader (BioTek Eon/TECAN). Absorbance (600 nm) was monitored every 10 min for 7 hr. We used the growth measurements from media supplemented with buffer after 15 min of incubation to identify fast degraders and growth measurements from media supplemented with buffer after 45 min of incubation to identify slow degraders. We used a statistical test to identify fast and slow degraders. For this test, we calculated the area under the growth curve (AUC) after blank subtraction for each replicate and used a one-tailed t-test to test whether the conditioned buffer from a knockout strain (three biological replicates) reduced or increased the AUC of the reporter strain compared to the buffer prepared with the wild-type strain (18 replicates). We used an FDR-adjusted p-value of 0.1 as a cutoff for statistical significance.\n\n### GC-MS measurement of gemcitabine and dFdU\n\nWe picked the knockout strains directly from frozen glycerol stock of the barcoded knockout collection and grew them overnight in 3 mL M9 media at 37\u00b0C, 200 rpm shaking. The next day, cultures were washed in saline (distilled water with 0.9% NaCl) and cultures were diluted to an OD (600 nm) of 0.125 in 1350 \u03bcL of saline in a 96-deep well plate. Gemcitabine was added to each well to reach a final concentration of 80 \u03bcM, and cultures were incubated in microplate shaker at 900 rpm and 37\u00b0C. We sampled 450 \u03bcL from the cultures at predetermined time points and filtered the samples using 0.22 \u03bcm filters by centrifugation at 5000 \u00d7 g for 5 min. We froze the conditioned supernatants at \u201320\u00b0C until the GC-MS measurements were performed. This experiment was performed as three biological replicates (independent three overnight cultures and independent co-incubations).\n\nFor GC-MS measurements, first 200 \u03bcL of bacterial culture supernatants (or standard solution) were dried under vacuum. Dried samples were derivatized by adding 20 \u03bcL of pyridine and 50 \u03bcL of N-methyl-N-(trimethylsilyl) trifluoroacetamide (Sigma-Aldrich, Cat# M-132) followed by incubation for 3 hr at 37\u00b0C. The derivatization reaction was allowed to complete for 5 hr at room temperature. Measurements were performed on an Agilent 7890B single quadrupole mass spectrometer coupled to an Agilent 5977B gas chromatograph with an HP-5MS Ultra Inert capillary column (30 m \u00d7 0.25 mm \u00d7 0.25 \u03bcm). Helium was used as carrier gas at flow rate of 1 mL/min (constant flow). The temperatures were set as follows: inlet at 230\u00b0C, the transfer line at 280\u00b0C, the MS source at 230\u00b0C, and quadrupole at 150\u00b0C. 1 \u03bcL of sample was injected in a splitless mode. Initial oven temperature was set to 80\u00b0C, held for 1 min and then increased to 270\u00b0C at a rate of 20\u00b0C/min, then further increased to 285 at a rate of 5\u00b0C/min. MS parameters were three scans/s with 30\u2013500 m/z range, electron impact ionization energy 70 eV. Analytes were identified based on retention time, one quantifier and two qualifier ions that were manually selected using a reference compound. Gemcitabine was quantified as m/z 241 ion eluted at 13.14 min, 2',2'-difluorodeoxyuridine was quantified as m/z 242 ion eluted at 11.42 min and peak integration and quantification of peak areas were done using MassHunter software (RRID:SCR_015040).\n\n### Spheroid experiments\n\nWe plated CT26 mouse colon carcinoma cell-line (RRID:CVCL_7256) on 96-well low attachment plates (Costar, Cat# 7007) as 4000 cells/well to form spheroids. Cells were incubated in RPMI 1640 media (Gibco, Cat# 11875-093) with 2 mM L-glutamine, 5% fetal bovine serum (Gibco, Cat# 26140-079) and 25 mM HEPES Buffer (Corning, Cat# 25-060CI). The plates were centrifuged at 3000 \u00d7 g for 5 min and kept in a tissue culture incubator with 37\u00b0C with 5% CO2. After 4 days of spheroid growth, we serially diluted bacterial cultures into the spheroid microplate and incubated the co-culture for 4 hr with gemcitabine (1.6-fold serially diluted across the columns). Note that all the tested bacterial mutants in this experiment were on pyrD knockout background (a pyrimidine auxotroph) to avoid bacterial proliferation in cell culture media that does not contain any nucleotides. Next, the plate was washed with cell culture media with 50 \u03bcg/ml gentamicin three times. To achieve this, we used 96-channel handheld electronic pipette (Integra, Viaflo 96) and made use of gravity force. 100 \u03bcL media was aspirated capturing the spheroid from the bottom of the wells. After the spheroids sank to the bottom of the tips, the tips were touched to the surface of a fresh plate containing culture media with 50 \u03bcg/mL gentamicin, leaving the spheroids in the new plate. We chose a 4 hr time interval to address two opposing requirements of the co-culture system \u2013 mitigate overgrowth of the bacterial cultures (which hinders spheroid growth irrespective of the drug) while still allowing enough incubation time to allow for drug degradation. While removal of bacteria after 4 hr may limit the bacterial impact, such a limitation will only result in underestimation of the bacterial impact (but will have no impact on how we evaluate how strains compare to one another).\n\nAfter three washes, the 96-well plate was transferred to an S3 imaging platform (Incucyte, Sartorius) which is housed inside a tissue culture incubator. The plate was imaged every 6 hr to track spheroid growth and validate that there was no residual contamination of resistant bacteria (evident by bacterial overgrowth). After 7 days of growth, spheroids were washed once using cell culture media with 50 \u03bcg/mL gentamicin to get rid of any dead cell and cellular debris and a final microscopy image was captured. We calculated the area of individual spheroids using the Incucyte software (segmentation sensitivity: 40; minimum area filter: 2000 \u03bcm2). A MATLAB script was used to make the fitness landscapes by fitting polynomial equations. The following are the steps followed: (1) normalization by timepoint zero: we divided the last day spheroid area to day zero spheroid area (4 days post cell seeding). (2) Normalization by plate: we subtracted the minimum spheroid area from all spheroid areas and divided that value by second largest spheroid area in the plate minus minimum spheroid area. (3) Fitting 3D surface and calculating EC50 lines: we fitted a mesh surface using normalized spheroid areas (2D) using a four-degree polynomial function (\u2018poly44\u2019). Lastly, we marked the EC50 line by calculating the coordinates of the 3D mesh surface where the values corresponded to a mid-response (value of 0.5). This experiment was performed with high resolution of conditions (12 \u00d7 8 conditions), which did not require technical replication.\n\n### Lab evolution experiment\n\nWe evolved bacteria in sub-inhibitory doses of gemcitabine using a standard serial transfer protocol (200 \u00b5M for BW25113, 750 \u00b5M for Nissle 1917, 100 \u00b5M for F-18) in a deep 96-well plate. For each strain, a single colony was picked for each individual evolution line and grown overnight in M9 media (three biological replicates per condition). The cultures were normalized to OD (600 nm) 1 and diluted 1:200 to a total volume of 1200 \u00b5l M9 (with or without gemcitabine). The 96-well plate was incubated at 37\u00b0C, 200 rpm shaking and was diluted 1:200 daily into fresh media for a period of 7 days (~53 generations). Resistance of evolving populations was measured daily by diluting the cultures 1:200 into a 384-well plate (35 \u00b5l per well) containing serially diluted gemcitabine (prepared in M9 at 2\u00d7 concentration at a volume of 35 \u00b5L). The microplate was incubated at 37\u00b0C and 360 rpm double orbital shaking in automated plate reader (BioTek Eon) and absorbance (600 nm) was monitored every 10 min for 18 hr. All absorbance measurements were performed in technical triplicates. All downstream experiments were performed using the frozen last day populations.\n\n### Whole-genome sequencing and analysis of lab evolution experiment\n\nWe isolated single individual colonies from last day of the independently evolved populations by streaking them on LB agar plates. Eight colonies were selected and gemcitabine IC50 levels were determined using microtiter plate-based assay. The gDNA was extracted from selected clones using Zymo Quick-DNA Fungal/Bacterial Miniprep Kit (Cat# 11-321). Ancestor gDNAs from the replicates of each strain were pooled at equal ratio and processed as a single sample. DNA sequencing was performed by Seqcenter (Pittsburg, PA). Seqcenter prepared libraries using Illumina DNA Prep Kit and IDT 10 basepair UDI indices. Sequencing was performed on Illumina NextSeq 2000 device (2 \u00d7 151 bp reads). For all samples, demultiplexing, quality control, and adapter trimming were performed with bcl2fastq (Illumina) and trimgalore (Trim Galore, RRID:SCR_011847). DNA sequencing yielded a median coverage of ~120\u00d7 per reference genome. We used BreSeq tool to identify and annotate mutations (Barrick et al., 2014). Mixed ancestor populations were run in breseq population mode to evaluate all existing mutation variants and all other samples were run as pure clones. The following are the NCBI accession numbers for the reference genomes we used in the analysis: CP009273 for E. coli BW25113; CP058217.1 for E. coli Nissle 1917; and MLZI01000100.1 for F-18. The BreSeq gdtools SUBTRACT/COMPARE was used to substract mutations that existed in the ancestor population (mutations existing 30% or more were considered) from the independently evolved clones. Then, we inspected BreSeq reports to resolve unassigned junction evidence (we did not evaluate the unassigned missing coverage). Supplementary file 3 includes the mutations identified in all clones after manual inspection of the BreSeq reports. Only the mutations that exist in the evolved clones but not in the ancestor were visualized on concentric circles shown in Figure 4A using circa software (OMGenomics). Since F-18 genome consists of 113 contigs, the genomic locations shown on F-18 circa plot are undetermined. Mutations identified on contigs with low/unusual coverage were ignored (these are usually observed on small contigs that are shorter than 1 kb and frequently arise due to challenges in read mapping).\n\n### Obtaining spontaneous nupC mutants\n\nWe cultured 96 cultures of the BW25113 strain from individual colonies overnight in LB media (96 biological replicates). In the morning, 100 \u00b5L of each culture were plated with glass beads on M9 agar plates containing 0.5 mM gemcitabine. A day after, a single colony, corresponding to single spontaneous resistant mutant, was isolated from each agar plate. A 1.3 kb region spanning the entire nupC coding region was amplified by colony PCR and Sanger sequenced with forward (5\u2032 TCACAGGACGTCATTATAGTG 3\u2032) and reverse (5\u2032 TGAGAGTAATTCATCGGCAC 3\u2032) primers. We annotated mutations by pairwise alignment of the Sanger sequencing results with the nupC coding sequence of the reference genome (Supplementary file 5). Short insertions and deletions identified in the alignment were annotated as indels. Point mutations identified in the alignment were annotated as missense or nonsense mutations according to their impact on the coding sequence. Insertion of transposon was inferred by a truncated (local) alignment to a region in the nupC coding sequence followed by alignment of the remaining sequence to a known transposon. We note that mutations in the promoter region were not sequenced or annotated by this method due to the position of the primers. However, some mutations in this region may account for some of the spontaneous resistant mutants that were not annotated as having nupC mutation (Figure 4B).\n\n### Luria\u2013Delbruck fluctuation experiment\n\nFor each strain, we inoculated four single colonies into 1 mL M9 medium and grew them at 37\u00b0C, 200 rpm shaking for 12 hr. Cultures were diluted to OD (600 nm) of 1 in M9. A 10\u20136 dilution of OD1 was used to determine accurate CFU/OD (600 nm) by plating on LB agar plates. A 10\u20134 dilution of OD 1 was further diluted 27-fold and transferred into 10 wells of a 96-well plate as 200 \u03bcL/well (initial population size [N0]: approximately 730 cells/well). The 96-well plate was incubated at 37\u00b0C, 1000 rpm shaking overnight. Next day, OD (600 nm) of two wells from the 96-well plate was measured to estimate the final population size (Nt). Next, all cultures were diluted 1:40 into 1 mL of 0.9% saline. We plated 200 \u03bcL of each cell suspension on M9 agar plates (plating efficiency [\u025b], 1:40) containing selective amounts of gemcitabine (0.5 mM for BW25113, Nissle 1917, MG1655; 62.5 \u03bcM for F-18) or furazolidone (1 mg/mL for BW25113, Nissle 1917, MG1655; 2 mg/mL for F-18). Plates were incubated at 37\u00b0C for 18 hr, and the number of colonies was determined. Then, mutation rates were calculated using the RSalvador package in R (Zheng, 2017). First, mutation frequency (m) was calculated using the function newton.LD.plating (and 95% confidence intervals were calculated using conf.LD.plating). Then mutation frequency (m) was divided to Nt to find mutation rate per generation (p). These numbers later normalized to a gene that is 1000 bp long.\n\n### Justification for cell lines\n\nMurine colorectal carcinoma cell line (CT26) used in this article was identified as Mycoplasma free, and the cell identity was confirmed by STR profiling (ATCC). According to testing results STR profile was 98% similar to CT26.CL25(ATCC, #CRL-2639). The manuscript refers to this cell line as CT26. This cell line is not in the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee.\n\n### Materials and data availability statement\n\nE. coli barcoded library used in this study was kindly provided by Dr. Hirotada Mori. Gemcitabine/no drug evolved BW25113 and F-18 populations are available upon request. Gemcitabine/no drug evolved E. coli Nissle 1917 strain and its ancestors cannot be shared with third parties due to material transfer agreement conditions between University of Massachusetts Chan Medical School, USA, and Ardeypharm, GmBH, Germany, unless there is written permission from Ardeypharm, GmBH, Germany.\n\nRaw sequencing reads from barcoded knockout library screen and whole genomes of evolved bacteria are available on NCBI Sequence Read Archive under the bioprojects PRJNA797841, PRJNA911755, and PRJNA855939. R and MATLAB codes used in this article are deposited to GitHub: https://github.com/ss-91/Manuscript-Matlab-Scripts.git (copy archived at swh:1:rev:c18025b9d6fc557f22a93794c480483c4e48a62e; Sayin, 2022a) and https://github.com/ss-91/E.coli-Barcoded-Library-Analysis.git (copy archived at swh:1:rev:e127c5d97069c8f1e5ace7686b303eea93ac4ca9; Sayin, 2022b).\n",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "d3b8eea3-954f-4c91-82c9-b4d33baeb2f0",
+      "submission_id": "b448c4c8-1dc1-4740-98c9-94e07044043d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian R Landry, https://ror.org/04sjchr03 Universit\u00e9 Laval Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83140.sa0](https://doi.org/10.7554/eLife.83140.sa0)\n\nThis fundamental work advances our understanding of how bacteria evolve to resist drugs used for cancer treatment and how this could potentially affect drug efficacy and treatment outcome. The data were collected and analyzed using a solid methodology and can be used as a starting point for functional studies of the interaction between the microbiome and cancer drug treatment. The findings will be of broad interest to microbiologists and organismal biologists interested in the role of microbiomes in drug responses.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Christian R Landry, https://ror.org/04sjchr03 Universit\u00e9 Laval Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83140.sa1](https://doi.org/10.7554/eLife.83140.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Evolved bacterial resistance to the chemotherapy gemcitabine modulates its efficacy\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Christian Landry as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Peter J Turnbaugh (Reviewer #1); Alexander Muir (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) For the findings to be fully supported, you would need a secondary screen/validation of the primary screen's results.\n\n2) There are some questions regarding the spheroid system that would be best supported with new data but that minimally need to be answered by text edits and more discussions.\n\n3) Some claims regarding how the models used apply to cancer need to be tampered and the limits of the systems used need to be better detailed.\n\nReviewer #1 (Recommendations for the authors):\n\nKey details are missing from the results and methods, a more detailed discussion of the knockout library is essential to interpret the results.\n\nRecommend adjusting the language for the reporter strain assay for gemcitabine activity, since you're not technically measuring \"drug degradation\". The term \"drug activity\" is more accurate, which is more agnostic to the mechanism through which the reporter strain growth is altered.\n\nTitle \u2013 should indicate that this is all in cell culture, no animal models of efficacy are shown.\n\nLine 30 \u2013 the line \"one third of resistance mutations increase or decrease bacterial drug breakdown\" should be removed given that there is a lot of uncertainty about how many total resistance mutations exist and that the assay didn't look directly at drug breakdown.\n\nLine 110 \u2013 This is a key point that could be highlighted more in the abstract and discussion. It's fascinating that mutations in a transporter can mask the impact of genes for drug metabolism, which really complicates how you think about the microbiome's role in pharmacology.\n\nLine 125 \u2013 the nature of this collection is really vague. Need to describe briefly how this library was made and what it is (transposons? Clean deletions?). Methods should stand on their own without requiring citations.\n\nLine 143 \u2013 16-fold is way too conservative. 2-3 fold is more standard and arguably unnecessary given the p-value cutoff. While a secondary screen would be ideal, at a minimum these data should be re-analyzed at a less conservative cutoff.\n\nLine 190 \u2013 specify how many hours.\n\nLine 226 \u2013 need to specify how many strains were validated \u2013 just 3?\n\nFigure 2c \u2013 change to micro symbol no uM.\n\nFigure 3a \u2013 the numbers get really small here, with just 8 pure clones tested and 1 sequenced. Need to make sure to adjust the interpretations accordingly. Given this data it's possible to make statements about what was found, but general trends are impossible to infer. Typo: \"comensal\".\n\nFigure 4 \u2013 it's pretty vague in the methods how the mutations were manually curated. Need to provide more details and include the unfiltered output in a supplemental table. As is, it's unclear if nupC is the full signal or if a lot more is going on in these isolates.\n\nLine 494 \u2013 need to add citations to support this claim.\n\nLine 666 \u2013 typo: \"prymidine\".\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 My major issue with this manuscript is that the authors make pretty striking claims extending their largely in vitro work on bacterial resistance to gemcitabine to both: (1) in vivo bacterial resistance and (2) tumor gemcitabine response. For example, the abstract says \"The two studies [\u2026] showing that bacteria-drug interactions transpire locally and systemically and can influence chemoresistance in the host\". The introduction further claims \"Our work reveals that bacterial adaptation to the frontline chemotherapy drug gemcitabine can take place rapidly and can ultimately increase the chemosensitivity of the hosting tumor\", which the authors follow up by stating \"Given that administration of antibiotics can be detrimental to cancer patients, our work is potentially impactful since highlights that tumor colonization by chemotherapy metabolizing bacteria may not hamper anticancer treatment in the long run\". However, there are no in vivo experiments presented to show that (1) the nupC mutations identified in vitro are actually selected in gemcitabine treated tumors or (2) nupC mutant bacteria affect tumor levels of gemcitabine, gemcitabine action in PDAC cells in a tumor or PDAC response to gemcitabine. I believe to make these extensive claims, the authors would need to provide such in vivo data, at least using animals models of pancreas cancer. In the absence of such data, I would suggest that the authors revise the abstract, introduction and discussion to moderate these extensions from their work to in vivo tumor biology.\n\n\u2013 Regarding point (1), the high ex vivo dose of gemcitabine used in these experiments coupled with the rapid doubling rate in culture may lead to selection of resistance mechanisms that are different than those employed in an environment where perhaps the bacteria grow much more slowly and have access to nucleosides that can compete with gemcitabine (PMID: 30827862).\n\n\u2013 Regarding point (2), the bacterial conditioning of gemcitabine -> treatment of CT26 cells is not readily extrapolatable to the in vivo PDAC tumor situation. How does the dose of gemcitabine compare to intratumoral/intravenous concentration? How does the # of bacteria compared to cancer cell # in this experiment relate to the population of these cells in tumors? For these reasons, think it is very important to measure how tumors colonized with gemcitabine sensitive versus resistant bacteria impact intratumoral gemcitabine levels, gemcitabine action in PDAC cells and resulting tumor response.\n\n\u2013 It is unclear to me why the authors chose to use CT26 organoids for these studies. Would not PDAC cells or organoids be more relevant?\n\n\u2013 How do the doses of gemcitabine selected for screening and evolution compare not just to PDAC cell line IC50s but to intratumoral concentrations of gemcitabine?\n\n\u2013 In line 219, the authors state they tested an additional 46 resistant strains. What basis was used for the selection of these additional strains.\n\n\u2013 The authors have bacterial isolates with pretty different EC50 responses to gemcitabine. Do these isolates have different expression of the genes identified in the screening that could explain the baseline sensitivities of these isolates?\n",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e6e38079-f626-4427-8818-426a1d02719e",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C1",
+      "claim": "Drug metabolism by the microbiome can influence anticancer treatment success.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug metabolism by the microbiome can influence anticancer treatment success.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the broader literature context and the study's premise.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "12014970-2e77-4b9e-a9fe-e22add71c7c8",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C2",
+      "claim": "Chemotherapies with antimicrobial activity can select for adaptations in bacterial drug metabolism that can inadvertently influence the host's chemoresistance.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously suggested that chemotherapies with antimicrobial activity can select for adaptations in bacterial drug metabolism that can inadvertently influence the host's chemoresistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' previous work and is cited as a hypothesis they previously proposed.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "0498c820-4c45-49fb-b57e-4c50c09773b9",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C3",
+      "claim": "Evolved resistance against fluoropyrimidine chemotherapy lowered its efficacy in worms feeding on drug-evolved bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that evolved resistance against fluoropyrimidine chemotherapy lowered its efficacy in worms feeding on drug-evolved bacteria (Rosener et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "52b5a3e3-d840-441c-b999-daaff468e8c4",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C4",
+      "claim": "Gammaproteobacteria-colonizing pancreatic tumors can degrade the nucleoside-analog chemotherapy gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "Gammaproteobacteria-colonizing pancreatic tumors can degrade the nucleoside-analog chemotherapy gemcitabine and, in doing so, can increase the tumor's chemoresistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the broader literature context cited in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "e5b3f120-b5f6-4d9f-8c7b-0a5dab589c79",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C5",
+      "claim": "Gammaproteobacteria degradation of gemcitabine can increase the tumor's chemoresistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Gammaproteobacteria-colonizing pancreatic tumors can degrade the nucleoside-analog chemotherapy gemcitabine and, in doing so, can increase the tumor's chemoresistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the broader literature context cited in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "e59d113a-8c04-4c0e-9ef8-f25e77964fef",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C6",
+      "claim": "One third of top resistance mutations increase or decrease bacterial drug breakdown and therefore can either lower or raise the gemcitabine load in the local environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we infer that one third of top resistance mutations increase or decrease bacterial drug breakdown and therefore can either lower or raise the gemcitabine load in the local environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional assay results presented in Figure 2B showing that 33 of 88 tested knockout strains modulated extracellular drug availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "635897fd-73ac-4790-b815-8d2b65707d25",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C7",
+      "claim": "Evolved adaptation in three E. coli strains converged to inactivation of the nucleoside permease NupC.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in three E. coli strains revealed that evolved adaptation converged to inactivation of the nucleoside permease NupC, an adaptation that increased the drug burden on co-cultured cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by whole-genome sequencing data showing nupC mutations in all drug-evolved clones (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "e20444ad-8511-45ea-8af2-ca92fe4a90da",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C8",
+      "claim": "NupC inactivation increased the drug burden on co-cultured cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in three E. coli strains revealed that evolved adaptation converged to inactivation of the nucleoside permease NupC, an adaptation that increased the drug burden on co-cultured cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by spheroid co-culture experiments showing that nupC knockout decreased chemoresistance of cancer cells (Figure 2E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "0aa3b0d8-9138-4a34-9ed2-790d3cbcf476",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C9",
+      "claim": "More than 60% of breast and pancreatic cancer tumors harbored a tumor-microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, as in breast and pancreatic cancer, more than 60% of tumors harbored a tumor-microbiome (Nejman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nejman et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "83e9760f-c3e9-4e3e-a91a-31ea45f0f2ab",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C10",
+      "claim": "Two thirds of human-targeted drugs can be metabolized by at least one bacterial species that is present in the human gut microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates from recent drug screens show that two thirds of human-targeted drugs can be metabolized by at least one bacterial species that is present in the human gut microbiome (Zimmermann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zimmermann et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "2837013f-dc76-430f-a934-f7a9ec734465",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C11",
+      "claim": "Roughly 25% of host-targeted drugs are potent inhibitors of bacterial growth at physiological concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Roughly 25% of host-targeted drugs are potent inhibitors of bacterial growth at physiological concentrations (Maier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Maier et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "15110787-9b3a-48d7-b0ae-16af59c5873f",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C12",
+      "claim": "This proportion is doubled for antineoplastic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "This proportion is doubled for antineoplastic drugs and almost all anticancer drugs that belong to the antimetabolite drug class have potent antimicrobial activity (Maier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Maier et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "451a0055-c50b-499a-9fed-32b3cd0a785b",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C13",
+      "claim": "Almost all anticancer drugs that belong to the antimetabolite drug class have potent antimicrobial activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This proportion is doubled for antineoplastic drugs and almost all anticancer drugs that belong to the antimetabolite drug class have potent antimicrobial activity (Maier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Maier et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "e36fd5d4-a59f-4dcc-8657-d01ab9639bba",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C14",
+      "claim": "Proteobacteria are highly enriched in PDAC tumor-microbiome relative to the gut microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of the PDAC tumor-microbiome by 16S rRNA gene sequencing showed that proteobacteria are highly enriched relative to the gut microbiome and that they are highly prevalent in pancreatic tumors (Nejman et al., 2020; Geller et al., 2017; Pushalkar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "761e709f-8507-4bd4-a5f2-814cc8c0458d",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C15",
+      "claim": "Proteobacteria are highly prevalent in pancreatic tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of the PDAC tumor-microbiome by 16S rRNA gene sequencing showed that proteobacteria are highly enriched relative to the gut microbiome and that they are highly prevalent in pancreatic tumors (Nejman et al., 2020; Geller et al., 2017; Pushalkar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "1deea03e-fb01-45b4-903e-6c4724423670",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C16",
+      "claim": "Pancreatic colonization can impede therapy with gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work suggested that pancreatic colonization can impede therapy with gemcitabine (2',2'-difluoro 2' deoxycytidine [dFdC]), a frontline chemotherapy drug that is used for PDAC treatment (Geller et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Geller et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "bf4ac884-91a2-4c2a-80d6-462f572b05d7",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C17",
+      "claim": "Gemcitabine is imported into the bacterial cell through the nucleoside transporter NupC.",
+      "claim_type": "EXPLICIT",
+      "source": "The antimetabolite gemcitabine, a nucleoside analog, is imported into the bacterial cell through the nucleoside transporter NupC and is then phosphorylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge of gemcitabine metabolism in E. coli and is illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "c20a2468-1304-47d5-bb81-0457d2e1910f",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C18",
+      "claim": "Gemcitabine triphosphate may be incorporated into a newly synthesized DNA strand and then may interfere with chain elongation by masked chain termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Gemcitabine triphosphate may be incorporated into a newly synthesized DNA strand and then may interfere with chain elongation by masked chain termination (similar to mammalian cells; de Sousa Cavalcante and Monteiro, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to de Sousa Cavalcante and Monteiro, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "8639fd81-0a1b-4019-95da-aa3fa156f8a6",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C19",
+      "claim": "Some bacterial species can rapidly convert gemcitabine into the less toxic metabolite 2\u2032,2\u2032-difluoro-2\u2032-deoxyuridine (dFdU).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works showed that some bacterial species can rapidly convert gemcitabine into the less toxic metabolite 2\u2032,2\u2032-difluoro-2\u2032-deoxyuridine (dFdU) (Geller et al., 2017; Vande Voorde et al., 2014; Lehouritis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "1793a29a-d92a-454e-a6d2-ab4425f71fb1",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C20",
+      "claim": "In gamma-proteobacteria, gemcitabine degradation proceeds through a specific isoform of the cytidine deaminase enzyme (CddL).",
+      "claim_type": "EXPLICIT",
+      "source": "In gamma-proteobacteria, gemcitabine degradation proceeds through a specific isoform of the cytidine deaminase enzyme (CddL) (Geller et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Geller et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "6aa42c6d-bb36-465b-8691-6a7daceafddc",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C21",
+      "claim": "Gemcitabine can completely inhibit the growth of all three E. coli strains tested (BW25113, F-18, and Nissle 1917).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that gemcitabine can completely inhibit the growth of all three strains, with F-18 being most sensitive (IC50 = 0.7 \u00b5M) and BW25113 being most resistant (IC50 = 103 \u00b5M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "645db13c-bec3-4e25-bdc5-b46eef00c01a",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C22",
+      "claim": "F-18 is the most sensitive E. coli strain to gemcitabine with IC50 = 0.7 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that gemcitabine can completely inhibit the growth of all three strains, with F-18 being most sensitive (IC50 = 0.7 \u00b5M) and BW25113 being most resistant (IC50 = 103 \u00b5M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "238d0d42-c676-4c5c-a38b-15777626580b",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C23",
+      "claim": "BW25113 is the most resistant E. coli strain to gemcitabine with IC50 = 103 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that gemcitabine can completely inhibit the growth of all three strains, with F-18 being most sensitive (IC50 = 0.7 \u00b5M) and BW25113 being most resistant (IC50 = 103 \u00b5M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "67993c32-f364-4e54-be90-3760022120db",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C24",
+      "claim": "E. coli gemcitabine IC50 concentrations are comparable to the IC50 reported for 29 pancreatic adenocarcinomas in the GDSC2 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "These concentrations are comparable to the IC50 reported for 29 pancreatic adenocarcinomas in the GDSC2 dataset that tested hundreds of toxic compounds on a thousand cell lines (Yang et al., 2012; boxplot above Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison to published data (Yang et al., 2012) and is illustrated in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "258fec02-b09c-4492-9cc4-6e65a13352ea",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C25",
+      "claim": "Inactivation of over 40 genes increased E. coli's resistance to gemcitabine by more than 16-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Through a pooled genetic screen, we systematically mapped all loss-of-function mutations that increase E. coli's resistance to gemcitabine and found that inactivation of over 40 genes increased bacterial resistance by more than 16-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the genetic screen results shown in Figure 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "82d03091-9948-41cd-84fe-6369e2ad2d25",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C26",
+      "claim": "Resistance can rapidly emerge under natural selection through gene inactivation within a single evolutionary step.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation led us to conclude that resistance can rapidly emerge under natural selection through gene inactivation within a single evolutionary step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genetic screen results showing multiple single-gene knockouts confer resistance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "9e30eb44-dc45-4d40-961b-365c55e896cd",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C27",
+      "claim": "42 gemcitabine-resistant knockout strains were identified using strict cutoff values (fold-change >16 and FDR-adjusted p-value <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Using very strict cutoff values for fold-change (>16) and false discovery rate (FDR)-adjusted p-value (<0.05), we identified 42 gemcitabine-resistant knockout strains and 6 gemcitabine-sensitive strains (shown as purple and green circles in Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the genetic screen data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "2ad0121d-0d05-42b7-92f7-4ffbd4c4ba4c",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C28",
+      "claim": "6 gemcitabine-sensitive knockout strains were identified using strict cutoff values (fold-change >16 and FDR-adjusted p-value <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Using very strict cutoff values for fold-change (>16) and false discovery rate (FDR)-adjusted p-value (<0.05), we identified 42 gemcitabine-resistant knockout strains and 6 gemcitabine-sensitive strains (shown as purple and green circles in Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the genetic screen data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "78552872-d7ef-489d-bf39-2a33fb265464",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C29",
+      "claim": "Knockout of the known drug transporter (nupC) is among the top resistors.",
+      "claim_type": "EXPLICIT",
+      "source": "Reassuringly, we found that knockout of the known drug transporter (nupC) is among the top resistors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the genetic screen results shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "e9607893-bbbf-4fda-9535-6da93dab9cfe",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C30",
+      "claim": "Gene knockouts that were previously identified as reducing growth were highly enriched in the set of gemcitabine resistant strains (p-value = 8.6186e-18, Fisher's exact test).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a statistical test revealed that gene knockouts that were previously identified as reducing growth (Baba et al., 2006) were highly enriched in the set of gemcitabine resistant strains (p-value = 8.6186e-18, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the genetic screen data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "0751e686-40a1-4733-9a0e-8b94871047b7",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C31",
+      "claim": "One third of the tested knockout strains modulated extracellular drug availability (33 of 88).",
+      "claim_type": "EXPLICIT",
+      "source": "We found one third of the tested knockout strains modulated extracellular drug availability (33 of 88).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional assay results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "ec0299c3-d745-4089-a229-d1613d7988a6",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C32",
+      "claim": "11% of all tested strains were fast degraders.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 11% of all strains were fast degraders and 26% of strains were slow degraders (one-tailed t-test, FDR-adjusted p-value<0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional assay results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "fddf7877-7512-4852-8776-2383f39025f3",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C33",
+      "claim": "26% of tested strains were slow degraders.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 11% of all strains were fast degraders and 26% of strains were slow degraders (one-tailed t-test, FDR-adjusted p-value<0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional assay results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "178e77cc-864b-4038-9633-4aa85643f076",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C34",
+      "claim": "GC-MS measurements confirmed that the gene knockouts altered the availability of gemcitabine in the extracellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our functional assay, the GC-MS measurements confirmed that the gene knockouts indeed altered the availability of gemcitabine and in the extracellular environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GC-MS data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "dd2e854f-ffd1-4660-96b9-c97dd5c85b4d",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C35",
+      "claim": "Increased availability of the drug breakdown product (dFdU) supports the conclusion that rate of drug metabolism is underlying the change in gemcitabine availability.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased availability of the drug breakdown product (dFdU) support the conclusion that rate of drug metabolism is underlying this change (as opposed to intracellular drug accumulation; Kl\u00fcnemann et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the GC-MS data showing both gemcitabine and dFdU concentrations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "28515f92-2e5a-45ac-a2cb-d6a0871e32bc",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C36",
+      "claim": "Co-cultured bacteria can mitigate gemcitabine damage and the magnitude of rescue depended on the bacterial concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Reassuringly, we observed that co-cultured bacteria can mitigate gemcitabine damage and that the magnitude of rescue depended on the bacterial concentration (spheroid area is overall increased in upper spheroid rows in Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spheroid co-culture experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "128b7b28-9838-456a-86d4-1e8eace54d9c",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C37",
+      "claim": "Increased chemoresistance relative to the wild-type strain was observed when spheroids were co-incubated with the fast degrader (cytR knockout).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our functional and chemical assays, increased chemoresistance relative to the wild-type strain was observed when spheroids were co-incubated with the fast degrader (cytR knockout).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spheroid co-culture experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "72d93756-30d0-4666-be99-3dbc730a5416",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C38",
+      "claim": "Decreased chemoresistance relative to the wild-type strain was observed for co-incubation with the slow degrader (nupC knockout).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, decreased chemoresistance relative to the wild-type strain was for co-incubation was with the slow degrader (nupC knockout).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spheroid co-culture experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "1c479c3b-8c8d-40ee-8528-2a1032384761",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C39",
+      "claim": "Mutations impacting gemcitabine degradation rates in bacteria can impact neighboring cancer cells simultaneously exposed to the drug.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results of the spheroid experiments demonstrate that mutations impacting gemcitabine degradation rates in bacteria can indeed impact neighboring cancer cells simultaneously with the drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the spheroid co-culture experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "848c5730-4465-4ca1-bfd7-a37cb1f0641d",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C40",
+      "claim": "Bacterial resistors can have opposite influences on gemcitabine sensitivity of co-cultured cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed that bacterial resistors can have opposite influences on gemcitabine sensitivity of co-cultured cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the spheroid co-culture experimental data showing opposite effects of cytR and nupC knockouts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "0f4d2898-47fc-4be2-adda-ab7357c94f19",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C41",
+      "claim": "Resistance emerged within a day or two for the Nissle 1917 and F-18 strains during serial transfer evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that resistance emerged within a day or two for the Nissle 1917 and F-18 strains, while it emerged more slowly for the BW25113 strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the evolution experiment data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "0440a33a-eadf-4481-8f8d-bd1ca4667e1e",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C42",
+      "claim": "Resistance emerged more slowly for the BW25113 strain during serial transfer evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that resistance emerged within a day or two for the Nissle 1917 and F-18 strains, while it emerged more slowly for the BW25113 strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the evolution experiment data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "b9c3996c-2c2e-4e9e-8e1d-1a0d96374c6d",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C43",
+      "claim": "Last day populations from all strains that evolved in gemcitabine were resistant to the drug across all tested drug concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Last day populations from all strains that evolved in gemcitabine were resistant to the drug across all tested drug concentrations (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the evolution experiment data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "8531ee9a-bdaa-47d6-97f4-949609b5ec9e",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C44",
+      "claim": "Almost all clones from Nissle 1917 and F-18 drug evolved strains were resistant.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all clones from Nissle 1917 and F-18 drug evolved strains were resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the clone screening data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "77c0e094-9150-4109-aca1-007c60ee0ed6",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C45",
+      "claim": "Clones from the BW25113 populations showed heterologous levels of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clones from the BW25113 populations showed heterologous levels of resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the clone screening data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "b3648e18-6165-48f7-9c09-ffb4015bb43c",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C46",
+      "claim": "All clones isolated from the populations that evolved without the drug were gemcitabine sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "All clones isolated from the populations that evolved without the drug were gemcitabine sensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the clone screening data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "d6e1987f-46e9-4733-aa09-0ae3c16b634e",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C47",
+      "claim": "The genomes of all the drug-evolved clones harbored nupC mutations while none of the control-evolved clones had such mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "As the figure shows, we observed that the genomes of all the drug-evolved clones harbored nupC mutations while none of the control-evolved clones had such mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole-genome sequencing data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "bb66da7d-8fcc-410a-bc6c-30d29f94c8d7",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C48",
+      "claim": "No other gene besides nupC was repeatedly mutated across all independent replicates in all of the E. coli strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while we found additional mutations beyond those in the nupC gene, we did not observe another gene that was repeatedly mutated across all independent replicates in all of the E. coli strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by whole-genome sequencing data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "3cbc3f3a-b085-4194-a32b-c79c5a521171",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C49",
+      "claim": "The mechanism of mutation in the nupC gene varied across the gemcitabine-evolved strains and included point mutations, large deletions, and new junction formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism of mutation in the nupC gene varied across the gemcitabine-evolved strains and included point mutations, large deletions, and new junction formation within nupC coding region that can stem from transposon insertions and genomic rearrangements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by whole-genome sequencing data analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "dd4f45f9-77d9-4303-8b78-330afc96bc1d",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C50",
+      "claim": "Two of the point mutations identified in nupC were missense mutations (S175P and V249A).",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the point mutations we identified were missense mutations (S175P and V249A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by whole-genome sequencing data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "36adcdfa-39ed-4305-8569-d32880089d01",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C51",
+      "claim": "Both missense mutation positions (S175P and V249A) are highly conserved and are therefore likely important for the permease function.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis revealed that both positions are highly conserved and are therefore likely important for the permease function (positions marked in red in Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on ConSurf analysis of evolutionary conservation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "6a64ab58-e212-408d-8523-d2287550f1f2",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C52",
+      "claim": "A nupC knockout grows as fast as the wild-type strain for most of the growth phases and slows down only during the stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment revealed that a nupC knockout grows as fast as the wild-type strain (ybcN knockout) for most of the growth phases and slows down only during the stationary phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth curve data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "c6991efd-fa5a-418c-b987-2da3f6c5cfc3",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C53",
+      "claim": "All other top resistant knockouts were significantly slower than the wild-type strain (and nupC) during all growth phases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, all other top resistant knockouts were significantly slower than the wild-type strain (and nupC) during all growth phases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth curve data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "958653d1-0cbe-46f3-b5dd-7f8326f71656",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C54",
+      "claim": "nupC inactivation is unique among the resistant mutations since it is associated with only a small fitness cost for bacteria when the drug is not present.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that nupC inactivation is unique among the resistant mutations since its associated with only a small fitness cost for bacteria when the drug is not present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the growth curve comparison data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "4469c853-2dd3-45e7-b1bc-03d8af48ec72",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C55",
+      "claim": "85% of resistant colonies picked from high gemcitabine concentration agar plates were mutated in the nupC coding sequence locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 85% of colonies were mutated in this region, with mutations spanning multiple types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Sanger sequencing data of spontaneous resistant mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "ce57f5bd-eb5e-426a-86fe-d28dd7b88388",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C56",
+      "claim": "Missense mutations and short indels were the most frequent mutations observed in spontaneous nupC mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Missense mutations and short indels were the most frequent mutations observed (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Sanger sequencing data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "e509b64e-6498-480c-bdec-9c585104c282",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C57",
+      "claim": "Missense mutations identified in spontaneous nupC mutants were significantly biased towards the highly conserved regions of the permease (p-value = 1.95 * 10\u20134 in Wilcoxon rank-sum test).",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis revealed that missense mutations we identified were significantly biased towards the highly conserved regions of the permease (Figure 4C, p-value = 1.95 * 10\u20134 in Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of ConSurf conservation scores shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "18e7d749-acba-41c4-a298-9d254b71c86d",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C58",
+      "claim": "The mutation rate of nupC was comparable to the average gene mutation rate previously inferred for E. coli (2.1 \u00d7 10\u22127 per gene per generation) in all tested strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, we found rates comparable to the average gene mutation rate previously inferred for E. coli (2.1 \u00d7 10\u22127 per gene per generation) (Chen and Zhang, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Luria-Delbr\u00fcck fluctuation test data and comparison to published mutation rates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "e83567e1-d0ff-4b29-8612-7362466b7438",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C59",
+      "claim": "For BW25113, the mutation rate of nupC was 5.7-fold higher than that of nfsA.",
+      "claim_type": "EXPLICIT",
+      "source": "For BW25113, the mutation rate of nupC was 5.7-fold higher than that of nfsA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Luria-Delbr\u00fcck fluctuation test data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "5aa057f8-a898-4a78-8019-b5cea24b5ac1",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C60",
+      "claim": "For Nissle, the mutation rate difference between nupC and nfsA was 6.8-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "For Nissle, this difference was 6.8-fold and for MG1655 it was 1.8-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Luria-Delbr\u00fcck fluctuation test data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "cdf26401-e2d6-4535-b296-418dc9fcd598",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C61",
+      "claim": "For MG1655, the mutation rate difference between nupC and nfsA was 1.8-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "For Nissle, this difference was 6.8-fold and for MG1655 it was 1.8-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Luria-Delbr\u00fcck fluctuation test data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "883b7050-a0a5-444f-9364-e0b952b1fff1",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C62",
+      "claim": "For F-18 strain, the mutation rate of nfsA was 7.9-fold higher than nupC.",
+      "claim_type": "EXPLICIT",
+      "source": "For F-18 strain, in contrast, the mutation rate of nfsA was 7.9-fold higher than nupC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Luria-Delbr\u00fcck fluctuation test data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "7c93519d-41fa-4e83-b92c-ab1299c9097b",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C63",
+      "claim": "The mutation rate of nupC was not always higher than that of nfsA, and their rate difference was never larger by an order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "While the mutation rate was not identical in the two genes, the mutation of nupC was not always higher than that of nfsA, and their rate difference was never larger by an order of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the Luria-Delbr\u00fcck fluctuation test data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "143cc85e-9351-4807-8a7a-817c45d646b8",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C64",
+      "claim": "nupC was likely repeatedly inactivated across multiple genetic backgrounds since it confers high drug resistance without compromising growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results from multiple experiments suggested that nupC was likely repeatedly inactivated across multiple genetic backgrounds since it confers high drug resistance without compromising growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of experimental evidence including genetic screen, growth curves, and evolution experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "bbf85441-be59-461f-b1da-1f2723cf1753",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C65",
+      "claim": "Gene inactivation of nupC could take place through multiple alternative mutation mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments focusing on the nupC mutation revealed that gene inactivation could take place through multiple alternative mutation mechanisms and that the nupC locus is not characterized by an exceptionally high mutation rate (excluding the possibility of a mutational hotspot).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Sanger sequencing data showing diverse mutation types in spontaneous mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "83ce565b-1a5f-4223-8e27-3ca52fb861bc",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C66",
+      "claim": "The nupC locus is not characterized by an exceptionally high mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments focusing on the nupC mutation revealed that gene inactivation could take place through multiple alternative mutation mechanisms and that the nupC locus is not characterized by an exceptionally high mutation rate (excluding the possibility of a mutational hotspot).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Luria-Delbr\u00fcck fluctuation test data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "eeead9c2-5f79-4771-a7e4-aa789f17ed9a",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C67",
+      "claim": "Bacterial infection is attributed to retrograde bacterial migration from the gastrointestinal tract into the pancreas.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial infection is attributed to retrograde bacterial migration from the gastrointestinal tract into the pancreas (McAllister et al., 2019; Pushalkar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "7ef75a21-5b29-4cf0-83f6-aa7c6879c365",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C68",
+      "claim": "The microbiome influences cancer disease through multiple independent mechanisms, including promotion of neoplastic processes in healthy host cells, modulation of the host antitumor immune response, and by bacterial biotransformation of anticancer drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "The microbiome, in turn, is known to influence cancer disease through multiple independent mechanisms, including promotion of neoplastic processes in healthy host cells, modulation of the host antitumor immune response, and by bacterial biotransformation of anticancer drugs (Cullin et al., 2021; Roy and Trinchieri, 2017; Alexander et al., 2017; Riquelme et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "63a74c27-c939-4d62-87ff-45b4558b0bbb",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C70",
+      "claim": "In the context of the tumor-microbiome, bacterial adaptation to gemcitabine can raise or reduce the tumor's chemoresistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of the tumor-microbiome, bacterial adaptation to gemcitabine can therefore raise or reduce the tumor's chemoresistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the spheroid co-culture experiments showing opposite effects of different bacterial mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "b190b5a0-c8dc-496b-8066-d1ee3e2c46ff",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C71",
+      "claim": "Selection for nupC inactivation, at the expense of alternative resistance mechanisms, is attributed to the high resistance this inactivation confers and to the minimal impact it has on growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional experiments suggested that selection for nupC inactivation, at the expense of alternative resistance mechanisms, is attributed to the high resistance this inactivation confers and to the minimal impact it has on growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple experimental results including genetic screen, growth curves, and evolution experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "d91f7994-7351-4092-aa05-51d9be59ab54",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C72",
+      "claim": "Resistant clones can preexist drug exposure if the bacterial number in the tumor-microbiome is sufficiently large.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, as the fluctuation experiments reveal, resistant clones can preexist drug exposure and therefore also likely preexist any treatment if the bacterial number in the tumor-microbiome is sufficiently large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Luria-Delbr\u00fcck fluctuation test results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "5807cd54-5db4-491b-b859-4f66eff0a70a",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C73",
+      "claim": "Tumor-microbiome adaptation can potentially take place through ecological-like changes and takeover by a resistant bacterial clone.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, tumor-microbiome adaptation can potentially take place through ecological-like changes and takeover by a resistant bacterial clone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that resistant clones can preexist.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "01aa4afb-7be4-4c22-aee5-c9b6fc0fe214",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C74",
+      "claim": "Almost 60% of loss-of-function mutations that conferred bacterial resistance to fluoropyrimidine chemotherapy would also reduce drug toxicity in a worm host feeding on these bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In that model system, we estimated that almost 60% of loss-of-function mutations that conferred bacterial resistance would also reduce drug toxicity in a worm host feeding on these bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to the authors' previous work and is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "3760bcd6-1640-453f-a2fa-738ba26bc8ee",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "claim_id": "C75",
+      "claim": "The genetic screens suggest that such occurrences might not be rare, given that such a high fraction of adaptive loss-of-function mutations also alter drug breakdown rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the genetic screens from both works suggest that such occurrences might not be rare, given that such a high fraction of adaptive loss-of-function mutations also alter drug breakdown rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genetic screen results from both the current and previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cdab6954-8850-4f3a-8e18-dc774956066a",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Gemcitabine inhibits growth of three E. coli strains (BW25113, F-18, Nissle 1917) with IC50 values ranging from 0.7 \u00b5M to 103 \u00b5M, comparable to IC50 values for pancreatic adenocarcinomas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by dose-response data in Figure 1B showing complete growth inhibition across all three strains with quantified IC50 values. The comparison to GDSC2 pancreatic cancer cell line data provides appropriate context for the physiological relevance of these concentrations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "f38304a4-c66c-49ec-b5fe-2efffb917ac4",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A pooled genetic screen identified 42 gemcitabine-resistant and 6 sensitive knockout strains, including the known drug transporter nupC, with enrichment of slow-growing knockouts among resistors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 are well-supported by the genetic screen data (Figure 1D-E) with appropriate statistical thresholds (fold-change >16, FDR p<0.05). The screen was validated with independent replicates (Figure 1\u2014figure supplement 1D) and the enrichment of slow-growing strains was statistically confirmed (p=8.6186e-18, Fisher's exact test).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "cae35430-a63b-481d-b32e-c8727e912a74",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "One third (33/88) of resistant knockout strains modulated extracellular gemcitabine availability, with 11% being fast degraders and 26% slow degraders, validated by GC-MS measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 are supported by functional assay data (Figure 2B) with appropriate statistical testing (one-tailed t-test, FDR p<0.1) and independent validation by GC-MS (Figure 2C). The detection of both gemcitabine and its breakdown product dFdU strengthens the mechanistic interpretation that altered metabolism underlies the observed changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "ef81ea37-371d-4817-bda7-3b6e80b9297c",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bacterial mutations affecting gemcitabine degradation rates bidirectionally impact chemoresistance of co-cultured cancer spheroids, with fast degraders (cytR knockout) increasing resistance and slow degraders (nupC knockout) decreasing resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by spheroid co-culture experiments (Figure 2D-E) showing dose-dependent bacterial effects and opposite impacts of different mutations on EC50 fronts. The experimental design appropriately addresses simultaneous drug exposure, though the 4-hour co-culture period may underestimate bacterial impact. Replication data (Figure 2\u2014figure supplement 2-3) strengthens conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "b5bafce1-8f16-4621-a0de-f6a3db2dea00",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Serial transfer evolution experiments showed rapid emergence of gemcitabine resistance in three E. coli strains, with Nissle 1917 and F-18 developing resistance within 1-2 days and BW25113 more slowly, resulting in uniformly resistant populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 are supported by evolution experiment data (Figure 3B-D) showing temporal dynamics of resistance emergence and clone-level characterization. The heterogeneous resistance in BW25113 clones (C45) is appropriately documented, and control populations remained sensitive (C46), providing necessary negative controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "3cb7c361-55fd-4270-b438-c2bfa1fcb2aa",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Whole-genome sequencing revealed that all drug-evolved clones harbored nupC mutations (but no control clones), with no other gene repeatedly mutated across all strains. Mutations included diverse mechanisms (point mutations, deletions, transposon insertions), with missense mutations at highly conserved positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 are strongly supported by whole-genome sequencing data (Figure 4A, Supplementary file 3) showing convergent evolution to nupC inactivation across 12 independent lineages. ConSurf analysis appropriately validates functional importance of missense mutation positions. The claim of no other repeatedly mutated gene (C48) is well-supported by the comprehensive genomic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "17811c38-4982-431a-bfdb-59454b31b742",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "nupC knockout exhibits minimal fitness cost, growing comparably to wild-type during most growth phases with only stationary phase slowdown, unlike other top resistant knockouts that show significant growth defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by growth curve data (Figure 1\u2014figure supplement 2) comparing nupC knockout to wild-type and other resistant knockouts. The conclusion that nupC inactivation is unique in conferring high resistance with minimal fitness cost (C54) is appropriately drawn from the comparative growth data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "85004f4e-65c0-47cb-a70c-e011ca71d727",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of spontaneous resistant mutants showed 85% had nupC mutations, predominantly missense mutations and short indels, with missense mutations significantly biased toward highly conserved regions (p=1.95\u00d710\u207b\u2074).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by Sanger sequencing of 96 spontaneous mutants (Figure 4B) and statistical analysis of conservation scores (Figure 4C). The Wilcoxon rank-sum test appropriately tests for bias toward conserved positions, and the significant p-value supports the functional importance of observed mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "f133c8bb-0698-4075-99bd-410eaddbad96",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Luria-Delbr\u00fcck fluctuation tests showed nupC mutation rates comparable to average E. coli gene mutation rates (2.1\u00d710\u207b\u2077 per gene per generation), with variable fold-differences compared to nfsA across strains (1.8-6.8 fold), ruling out a mutational hotspot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 are supported by Luria-Delbr\u00fcck fluctuation test data (Figure 4\u2014figure supplement 2, Supplementary file 4) across four genetic backgrounds. The conclusion that nupC is not a mutational hotspot (C63, C66) is appropriately drawn from the modest and variable fold-differences in mutation rates. The experimental design with four biological replicates per strain strengthens the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "45f60c8c-1364-484d-9b28-6b848f3aea37",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Convergent evolution to nupC inactivation across multiple genetic backgrounds is attributed to high resistance conferred without compromising growth, achievable through multiple mutation mechanisms, rather than elevated mutation rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 and C71 synthesize multiple experimental results (genetic screen, growth curves, evolution experiments, mutation rate analysis) to explain the observed evolutionary convergence. The multi-faceted evidence appropriately supports the mechanistic explanation, though the relative contributions of fitness benefit versus mutation accessibility remain somewhat uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "2b7d64c6-e438-4308-9e55-0d88ab73f1e0",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Bacterial adaptation to gemcitabine can bidirectionally modulate tumor chemoresistance, with one third of resistance mutations either increasing or decreasing drug breakdown rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C70 are supported by the functional assay showing 33/88 strains modulating drug availability (Figure 2B) and spheroid experiments demonstrating opposite effects on cancer cell chemoresistance (Figure 2E). This represents a key finding that bacterial resistance mutations can have opposing effects on tumor drug exposure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "57896a73-a9b0-477a-94e2-dd13a4b7a457",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Evolved adaptation in three E. coli strains converged to nupC inactivation, which increased drug burden on co-cultured cancer cells by reducing bacterial drug import and degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 are supported by whole-genome sequencing showing universal nupC mutations in evolved clones (Figure 4A) and spheroid experiments showing nupC knockout decreases cancer cell chemoresistance (Figure 2E). The mechanistic link between reduced import, slower degradation, and increased cancer cell drug exposure is well-established through multiple complementary experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "2d8772b4-5655-40b7-a3cc-45bca0d704b7",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Resistant clones can preexist drug exposure if bacterial populations are sufficiently large, potentially enabling tumor-microbiome adaptation through ecological takeover by resistant clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 is a reasonable inference from the Luria-Delbr\u00fcck fluctuation test results showing mutation rates of ~10\u207b\u2077 per gene per generation. However, C73 is speculative regarding ecological dynamics in tumor microbiomes. While the inference is logical, no direct evidence is provided for clonal expansion dynamics in the tumor context, and the required population sizes for preexisting mutants are not quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "a3bdd1c3-9154-4627-82fa-b295a65309ce",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishing that microbiome drug metabolism influences cancer treatment, with specific focus on gemcitabine degradation by gammaproteobacteria in pancreatic tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C9-C20, C67-C68 provide literature context supported by appropriate citations. These claims establish the scientific premise for the study but do not represent novel findings from the current work. The citations appear appropriate and the contextual claims are consistent with the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    },
+    {
+      "id": "fcc7503a-b8fc-4f5a-8634-3cbc263d2265",
+      "content_id": "dddbae11-3049-4c44-8025-7a2e31b67e99",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous work in C. elegans showed ~60% of bacterial resistance mutations reduced drug toxicity in the host, suggesting such occurrences may be common given the high fraction of resistance mutations altering drug breakdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 appropriately reference the authors' previous work (Rosener et al., 2020) and draw a reasonable inference connecting the current findings to prior results. The comparison between the two model systems (C. elegans gut vs. tumor spheroid co-culture) is appropriate, though the generalization in C75 should be interpreted cautiously given differences in the experimental systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:50:56.056397Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6aa42c6d-bb36-465b-8691-6a7daceafddc",
+      "result_id": "cdab6954-8850-4f3a-8e18-dc774956066a"
+    },
+    {
+      "claim_id": "645db13c-bec3-4e25-bdc5-b46eef00c01a",
+      "result_id": "cdab6954-8850-4f3a-8e18-dc774956066a"
+    },
+    {
+      "claim_id": "238d0d42-c676-4c5c-a38b-15777626580b",
+      "result_id": "cdab6954-8850-4f3a-8e18-dc774956066a"
+    },
+    {
+      "claim_id": "67993c32-f364-4e54-be90-3760022120db",
+      "result_id": "cdab6954-8850-4f3a-8e18-dc774956066a"
+    },
+    {
+      "claim_id": "258fec02-b09c-4492-9cc4-6e65a13352ea",
+      "result_id": "f38304a4-c66c-49ec-b5fe-2efffb917ac4"
+    },
+    {
+      "claim_id": "82d03091-9948-41cd-84fe-6369e2ad2d25",
+      "result_id": "f38304a4-c66c-49ec-b5fe-2efffb917ac4"
+    },
+    {
+      "claim_id": "9e30eb44-dc45-4d40-961b-365c55e896cd",
+      "result_id": "f38304a4-c66c-49ec-b5fe-2efffb917ac4"
+    },
+    {
+      "claim_id": "2ad0121d-0d05-42b7-92f7-4ffbd4c4ba4c",
+      "result_id": "f38304a4-c66c-49ec-b5fe-2efffb917ac4"
+    },
+    {
+      "claim_id": "78552872-d7ef-489d-bf39-2a33fb265464",
+      "result_id": "f38304a4-c66c-49ec-b5fe-2efffb917ac4"
+    },
+    {
+      "claim_id": "e9607893-bbbf-4fda-9535-6da93dab9cfe",
+      "result_id": "f38304a4-c66c-49ec-b5fe-2efffb917ac4"
+    },
+    {
+      "claim_id": "0751e686-40a1-4733-9a0e-8b94871047b7",
+      "result_id": "cae35430-a63b-481d-b32e-c8727e912a74"
+    },
+    {
+      "claim_id": "ec0299c3-d745-4089-a229-d1613d7988a6",
+      "result_id": "cae35430-a63b-481d-b32e-c8727e912a74"
+    },
+    {
+      "claim_id": "fddf7877-7512-4852-8776-2383f39025f3",
+      "result_id": "cae35430-a63b-481d-b32e-c8727e912a74"
+    },
+    {
+      "claim_id": "178e77cc-864b-4038-9633-4aa85643f076",
+      "result_id": "cae35430-a63b-481d-b32e-c8727e912a74"
+    },
+    {
+      "claim_id": "dd2e854f-ffd1-4660-96b9-c97dd5c85b4d",
+      "result_id": "cae35430-a63b-481d-b32e-c8727e912a74"
+    },
+    {
+      "claim_id": "28515f92-2e5a-45ac-a2cb-d6a0871e32bc",
+      "result_id": "ef81ea37-371d-4817-bda7-3b6e80b9297c"
+    },
+    {
+      "claim_id": "128b7b28-9838-456a-86d4-1e8eace54d9c",
+      "result_id": "ef81ea37-371d-4817-bda7-3b6e80b9297c"
+    },
+    {
+      "claim_id": "72d93756-30d0-4666-be99-3dbc730a5416",
+      "result_id": "ef81ea37-371d-4817-bda7-3b6e80b9297c"
+    },
+    {
+      "claim_id": "1c479c3b-8c8d-40ee-8528-2a1032384761",
+      "result_id": "ef81ea37-371d-4817-bda7-3b6e80b9297c"
+    },
+    {
+      "claim_id": "848c5730-4465-4ca1-bfd7-a37cb1f0641d",
+      "result_id": "ef81ea37-371d-4817-bda7-3b6e80b9297c"
+    },
+    {
+      "claim_id": "0f4d2898-47fc-4be2-adda-ab7357c94f19",
+      "result_id": "b5bafce1-8f16-4621-a0de-f6a3db2dea00"
+    },
+    {
+      "claim_id": "0440a33a-eadf-4481-8f8d-bd1ca4667e1e",
+      "result_id": "b5bafce1-8f16-4621-a0de-f6a3db2dea00"
+    },
+    {
+      "claim_id": "b9c3996c-2c2e-4e9e-8e1d-1a0d96374c6d",
+      "result_id": "b5bafce1-8f16-4621-a0de-f6a3db2dea00"
+    },
+    {
+      "claim_id": "8531ee9a-bdaa-47d6-97f4-949609b5ec9e",
+      "result_id": "b5bafce1-8f16-4621-a0de-f6a3db2dea00"
+    },
+    {
+      "claim_id": "77c0e094-9150-4109-aca1-007c60ee0ed6",
+      "result_id": "b5bafce1-8f16-4621-a0de-f6a3db2dea00"
+    },
+    {
+      "claim_id": "b3648e18-6165-48f7-9c09-ffb4015bb43c",
+      "result_id": "b5bafce1-8f16-4621-a0de-f6a3db2dea00"
+    },
+    {
+      "claim_id": "d6e1987f-46e9-4733-aa09-0ae3c16b634e",
+      "result_id": "3cb7c361-55fd-4270-b438-c2bfa1fcb2aa"
+    },
+    {
+      "claim_id": "bb66da7d-8fcc-410a-bc6c-30d29f94c8d7",
+      "result_id": "3cb7c361-55fd-4270-b438-c2bfa1fcb2aa"
+    },
+    {
+      "claim_id": "3cbc3f3a-b085-4194-a32b-c79c5a521171",
+      "result_id": "3cb7c361-55fd-4270-b438-c2bfa1fcb2aa"
+    },
+    {
+      "claim_id": "dd4f45f9-77d9-4303-8b78-330afc96bc1d",
+      "result_id": "3cb7c361-55fd-4270-b438-c2bfa1fcb2aa"
+    },
+    {
+      "claim_id": "36adcdfa-39ed-4305-8569-d32880089d01",
+      "result_id": "3cb7c361-55fd-4270-b438-c2bfa1fcb2aa"
+    },
+    {
+      "claim_id": "6a64ab58-e212-408d-8523-d2287550f1f2",
+      "result_id": "17811c38-4982-431a-bfdb-59454b31b742"
+    },
+    {
+      "claim_id": "c6991efd-fa5a-418c-b987-2da3f6c5cfc3",
+      "result_id": "17811c38-4982-431a-bfdb-59454b31b742"
+    },
+    {
+      "claim_id": "958653d1-0cbe-46f3-b5dd-7f8326f71656",
+      "result_id": "17811c38-4982-431a-bfdb-59454b31b742"
+    },
+    {
+      "claim_id": "4469c853-2dd3-45e7-b1bc-03d8af48ec72",
+      "result_id": "85004f4e-65c0-47cb-a70c-e011ca71d727"
+    },
+    {
+      "claim_id": "ce57f5bd-eb5e-426a-86fe-d28dd7b88388",
+      "result_id": "85004f4e-65c0-47cb-a70c-e011ca71d727"
+    },
+    {
+      "claim_id": "e509b64e-6498-480c-bdec-9c585104c282",
+      "result_id": "85004f4e-65c0-47cb-a70c-e011ca71d727"
+    },
+    {
+      "claim_id": "18e7d749-acba-41c4-a298-9d254b71c86d",
+      "result_id": "f133c8bb-0698-4075-99bd-410eaddbad96"
+    },
+    {
+      "claim_id": "e83567e1-d0ff-4b29-8612-7362466b7438",
+      "result_id": "f133c8bb-0698-4075-99bd-410eaddbad96"
+    },
+    {
+      "claim_id": "5aa057f8-a898-4a78-8019-b5cea24b5ac1",
+      "result_id": "f133c8bb-0698-4075-99bd-410eaddbad96"
+    },
+    {
+      "claim_id": "cdf26401-e2d6-4535-b296-418dc9fcd598",
+      "result_id": "f133c8bb-0698-4075-99bd-410eaddbad96"
+    },
+    {
+      "claim_id": "883b7050-a0a5-444f-9364-e0b952b1fff1",
+      "result_id": "f133c8bb-0698-4075-99bd-410eaddbad96"
+    },
+    {
+      "claim_id": "7c93519d-41fa-4e83-b92c-ab1299c9097b",
+      "result_id": "f133c8bb-0698-4075-99bd-410eaddbad96"
+    },
+    {
+      "claim_id": "143cc85e-9351-4807-8a7a-817c45d646b8",
+      "result_id": "45f60c8c-1364-484d-9b28-6b848f3aea37"
+    },
+    {
+      "claim_id": "bbf85441-be59-461f-b1da-1f2723cf1753",
+      "result_id": "45f60c8c-1364-484d-9b28-6b848f3aea37"
+    },
+    {
+      "claim_id": "83ce565b-1a5f-4223-8e27-3ca52fb861bc",
+      "result_id": "45f60c8c-1364-484d-9b28-6b848f3aea37"
+    },
+    {
+      "claim_id": "b190b5a0-c8dc-496b-8066-d1ee3e2c46ff",
+      "result_id": "45f60c8c-1364-484d-9b28-6b848f3aea37"
+    },
+    {
+      "claim_id": "e59d113a-8c04-4c0e-9ef8-f25e77964fef",
+      "result_id": "2b7d64c6-e438-4308-9e55-0d88ab73f1e0"
+    },
+    {
+      "claim_id": "63a74c27-c939-4d62-87ff-45b4558b0bbb",
+      "result_id": "2b7d64c6-e438-4308-9e55-0d88ab73f1e0"
+    },
+    {
+      "claim_id": "635897fd-73ac-4790-b815-8d2b65707d25",
+      "result_id": "57896a73-a9b0-477a-94e2-dd13a4b7a457"
+    },
+    {
+      "claim_id": "e20444ad-8511-45ea-8af2-ca92fe4a90da",
+      "result_id": "57896a73-a9b0-477a-94e2-dd13a4b7a457"
+    },
+    {
+      "claim_id": "d91f7994-7351-4092-aa05-51d9be59ab54",
+      "result_id": "2d8772b4-5655-40b7-a3cc-45bca0d704b7"
+    },
+    {
+      "claim_id": "5807cd54-5db4-491b-b859-4f66eff0a70a",
+      "result_id": "2d8772b4-5655-40b7-a3cc-45bca0d704b7"
+    },
+    {
+      "claim_id": "e6e38079-f626-4427-8818-426a1d02719e",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "12014970-2e77-4b9e-a9fe-e22add71c7c8",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "0498c820-4c45-49fb-b57e-4c50c09773b9",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "52b5a3e3-d840-441c-b999-daaff468e8c4",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "e5b3f120-b5f6-4d9f-8c7b-0a5dab589c79",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "0aa3b0d8-9138-4a34-9ed2-790d3cbcf476",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "83e9760f-c3e9-4e3e-a91a-31ea45f0f2ab",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "2837013f-dc76-430f-a934-f7a9ec734465",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "15110787-9b3a-48d7-b0ae-16af59c5873f",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "451a0055-c50b-499a-9fed-32b3cd0a785b",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "e36fd5d4-a59f-4dcc-8657-d01ab9639bba",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "761e709f-8507-4bd4-a5f2-814cc8c0458d",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "1deea03e-fb01-45b4-903e-6c4724423670",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "bf4ac884-91a2-4c2a-80d6-462f572b05d7",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "c20a2468-1304-47d5-bb81-0457d2e1910f",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "8639fd81-0a1b-4019-95da-aa3fa156f8a6",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "1793a29a-d92a-454e-a6d2-ab4425f71fb1",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "eeead9c2-5f79-4771-a7e4-aa789f17ed9a",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "7ef75a21-5b29-4cf0-83f6-aa7c6879c365",
+      "result_id": "a3bdd1c3-9154-4627-82fa-b295a65309ce"
+    },
+    {
+      "claim_id": "01aa4afb-7be4-4c22-aee5-c9b6fc0fe214",
+      "result_id": "fcc7503a-b8fc-4f5a-8634-3cbc263d2265"
+    },
+    {
+      "claim_id": "3760bcd6-1640-453f-a2fa-738ba26bc8ee",
+      "result_id": "fcc7503a-b8fc-4f5a-8634-3cbc263d2265"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,437 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "Lysosomal immunoprecipitation (Lyso-IP) coupled with TMT-based proteomics identified proteins dynamically recruited to damaged lysosomes following GPN treatment, including ATG8 proteins (MAP1LC3B, GABARAPL1, GABARAPL2), galectins (LGALS1, LGALS3, LGALS8), Ub-binding cargo receptors (CALCOCO2, SQSTM1), and ESCRT-III components, while MTORC1 components were depleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 describe a comprehensive Lyso-IP proteomics experiment with appropriate controls, biological replicates, and statistical thresholds (Log2 FC >0.5, p<0.05). The findings are validated by immunoblotting (C82-C83) and are consistent with prior literature on lysosomal damage responses. The experimental design and data presentation support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "APEX2 proximity biotinylation of ATG8 proteins (MAP1LC3B and GABARAPL2) following LLOMe treatment revealed enrichment of lysosomal proteins, autophagy receptors (OPTN, CALCOCO2), galectins, and luminal proteins, with partial dependence on intact LIR-docking sites for some interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 present APEX2 proximity biotinylation data with appropriate biological replicates (triplicates for treatment, duplicates for controls), statistical thresholds (Log2 FC >1.0, p<0.05), and functional validation through LDS mutants. The compartment enrichment analysis (C87) and overlap between MAP1LC3B and GABARAPL2 experiments (C89) strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "APEX2 proximity biotinylation of galectins (LGALS1, LGALS3, LGALS8) revealed enrichment of lysosomal proteins, with LGALS8 showing specific enrichment for autophagy and MTOR signaling components. All three galectins associated with luminal enzymes and membrane proteins, suggesting access to the lysosomal lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 present galectin proximity biotinylation data with biological replicates and GO analysis. The finding that LGALS8 specifically interacts with MTOR components (C94-C95) is supported by prior literature. The inference that galectins access the lysosomal lumen (C97) is reasonable based on their association with luminal proteins, though direct evidence of lumenal access is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Immunofluorescence microscopy demonstrated that cargo receptors OPTN, TAX1BP1, and CALCOCO2 are recruited to LAMP1-positive lysosomes following LLOMe treatment, with TAX1BP1 showing the most dramatic increase in colocalization (MOC 0.25-0.45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 present quantitative immunofluorescence data with appropriate statistical analysis (MOC) across multiple biological replicates (n=17-23 cells per condition). The finding that TAX1BP1 shows the strongest recruitment (C108) is quantitatively supported and consistent with subsequent functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "APEX2 proximity biotinylation of cargo receptors (CALCOCO2, TAX1BP1, SQSTM1, OPTN) confirmed their association with damaged lysosomes and enrichment of lysosomal proteins, ESCRT components, and galectins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 provide orthogonal validation of cargo receptor recruitment using APEX2 proximity biotinylation. The approach complements the immunofluorescence data and strengthens the conclusion that these receptors are recruited to damaged lysosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The Lyso-Keima reporter (Keima-LGALS3) monitors lysophagic flux through pH-dependent fluorescence changes and Keima processing. Following LLOMe treatment and washout, Keima-LGALS3 relocates to acidic compartments, which is blocked by Bafilomycin A1, TAK243 (E1 inhibitor), and p97 inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C125 describe the development and validation of the Lyso-Keima reporter using multiple complementary assays (imaging, flow cytometry, immunoblotting) with biological triplicates. The reporter shows expected responses to positive (LLOMe) and negative (BafA, inhibitors) controls, validating its utility for measuring lysophagic flux.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "TBK1 is activated (phosphorylated at S172) following lysosomal damage, recruited to LGALS3-positive puncta, and is required for lysophagic flux. TBK1 inhibition or deletion blocks Keima-LGALS3 flux to the same extent as ATG5 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C134 demonstrate TBK1 requirement through multiple approaches: pharmacological inhibition (C130-C132), genetic deletion (C133), and temporal analysis (C126-C129). The data are from biological triplicates with appropriate controls. The observation that pTBK1 levels remain elevated when autophagy is blocked (C135-C136) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "TAX1BP1 is both necessary and sufficient for lysophagic flux in HeLa cells. TAX1BP1 knockout cells show complete loss of flux similar to ATG7 knockout, while OPTN and SQSTM1 knockouts maintain wild-type flux. OPTN can rescue flux when overexpressed in triple knockout cells but is not required endogenously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C152 present systematic genetic analysis of cargo receptor requirements using knockout cells, reconstitution experiments, and the Lyso-Keima reporter with biological triplicates. The data clearly establish TAX1BP1 as the primary receptor for lysophagy in HeLa cells, with OPTN playing a redundant or context-dependent role. The findings are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "TAX1BP1 deletion in induced neurons (iNeurons) substantially reduces clearance of damaged lysosomes, and additional OPTN deletion does not further impair clearance, indicating TAX1BP1 and TBK1 collaborate to promote lysophagy in iNeurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 extend the HeLa cell findings to a neuronal context using the RFP-EGFP-LGALS3 reporter. The data from biological triplicates show TAX1BP1 is required in iNeurons, with OPTN playing no additional role. This strengthens the conclusion about TAX1BP1's central role across cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Structure-function analysis of TAX1BP1 reveals that the SKICH domain and A114 residue are essential for lysophagic flux, while LGALS8-binding mutations, coiled-coil deletions, and the V192S LIR mutation have minimal or partial effects. The ZnF domain mutation reduces activity by ~50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C165 present systematic domain deletion and point mutation analysis with biological triplicates. The findings clearly establish the SKICH domain as critical for TAX1BP1 function. However, the interpretation of the ZnF domain result (C164-C166) is complicated by residual Ub-binding activity, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Recruitment of both TAX1BP1 and OPTN to damaged lysosomes requires upstream ubiquitylation. E1 inhibition blocks TAX1BP1 recruitment, and OPTN's Ub-binding mutant (D474N) fails to rescue flux or localize to damaged lysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C172 demonstrate ubiquitin-dependence through pharmacological inhibition (E1 inhibitor) and Ub-binding mutants. The data are consistent across multiple approaches and establish that ubiquitylation is upstream of receptor recruitment. The findings align with the known role of ubiquitylation in selective autophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "TBK1 activation in response to lysosomal damage depends on its association with TAX1BP1 through the SKICH domain. Deletion or mutation of the SKICH domain abolishes TBK1 phosphorylation, and OPTN-mediated TBK1 activation requires OPTN's Ub-binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C174 and C190-C192 demonstrate that TBK1 activation is downstream of receptor recruitment and depends on specific protein-protein interactions. The data from reconstitution experiments with various mutants are internally consistent and establish a clear mechanistic hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Model: Lysosomal rupture leads to parallel recruitment of galectins and ubiquitination, which promotes recruitment of OPTN-TBK1 and TAX1BP1-TBK1-RB1CC1 complexes to drive phagophore formation and TBK1 activation for efficient lysophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C177 present an integrative model based on the collective experimental findings. The model is well-supported by the data presented in the manuscript, though some mechanistic details (e.g., how ubiquitination and galectin recruitment are coordinated) remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background: Selective autophagy removes damaged organelles through recognition by surveillance machinery and autophagosome assembly. Lysosomes are degraded via lysophagy, which involves galectin recruitment and ubiquitylation, but cargo receptor identity and mechanisms remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide established background knowledge supported by appropriate citations. These claims accurately represent the state of the field and identify the knowledge gap that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background: Lysosomes have multiple essential functions including protein degradation from endocytic/phagocytic pathways, serving as the terminal receptacle for autophagy, and sensing amino acid availability via MTORC1. Lysosomal damage can lead to loss of pH gradient and defective proteostasis, necessitating repair or degradation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 provide well-established background on lysosomal function supported by appropriate citations. These claims accurately describe lysosomal biology and provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background: Organellophagy is classified as ubiquitin-dependent or -independent. Ub-dependent mitophagy involves Parkin-mediated ubiquitylation and recruitment of multiple receptors (OPTN, CALCOCO2, SQSTM1, TAX1BP1, NBR1), though only OPTN and CALCOCO2 are necessary for mitochondrial delivery to lysosomes. TBK1 phosphorylation is a common feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 accurately summarize established knowledge about organellophagy mechanisms, particularly mitophagy, with appropriate citations. This background provides important context for comparing lysophagy to other selective autophagy pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background: Lysophagy involves galectin recruitment (LGALS3, LGALS8, LGALS1, LGALS9) and ubiquitylation of lysosomal proteins with K63- and K48-linked chains, involving UBE2QL1, p97/VCP, and E3 ligases (SCFFBXO27, TRIM16). Multiple cargo receptors are recruited, but their mechanisms, critical identity, and functional roles remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C51 accurately summarize prior knowledge about lysophagy mechanisms with appropriate citations while clearly identifying knowledge gaps. This establishes the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Endogenous LGALS9 was not detected in the proteomics experiments, despite prior reports that overexpressed LGALS9 is recruited to damaged lysosomes and required for lysosomal ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 note a discrepancy between the current findings and prior literature. The absence of LGALS9 detection is clearly stated, and the prior literature is appropriately cited. This highlights potential differences between endogenous and overexpression conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C153"
+    ],
+    "result": "The study was unable to validate the previous RNAi-based report that SQSTM1 is required for lysophagic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C153 notes a discrepancy with prior literature, which is supported by the knockout data showing SQSTM1-/- cells maintain wild-type flux (C142). This highlights potential differences between RNAi and genetic knockout approaches or cell-type specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The RFP-EGFP-LGALS3 tandem reporter can monitor lysophagic flux in iNeurons through clearance of EGFP-positive puncta, which is blocked by BafA and TBK1 inhibitor, indicating TBK1 requirement in iNeurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C156 describe validation of the tandem reporter in iNeurons with appropriate controls (BafA, TBK1i). The approach is consistent with prior work in HeLa cells (appropriately cited) and extends the findings to a neuronal context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Discussion: The ubiquitin and galectin pathways operate in parallel during lysophagy. Ubiquitylation is critical for TAX1BP1 and OPTN recruitment, while p97 and TBK1 act downstream of receptor recruitment. OPTN's Ub-binding is essential for its recruitment and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C184 synthesize the study's findings with prior literature to propose pathway organization. The conclusions are well-supported by the experimental data, particularly the E1 inhibitor and Ub-binding mutant experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C185",
+      "C186"
+    ],
+    "result": "Discussion: TAX1BP1 can interact with overexpressed LGALS8 independent of lysosomal damage, suggesting recruitment could potentially occur via both Ub-dependent and -independent pathways under some conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C185-C186 present speculation about potential Ub-independent recruitment based on prior literature showing TAX1BP1-LGALS8 interaction. However, the current study's data (C167) show E1 inhibition completely blocks TAX1BP1 recruitment, arguing against Ub-independent recruitment under the conditions tested. This speculation requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Discussion: TBK1 is required for lysophagy based on inhibitor and knockout studies, and its activation depends on TAX1BP1's SKICH domain. TBK1 targets in lysophagy remain unidentified, though cargo adaptors and RAB7 are TBK1 substrates in other selective autophagy pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C189 and C193-C195 summarize the TBK1 findings and appropriately note that downstream targets remain to be identified. The discussion appropriately references prior work on TBK1 substrates in other contexts while acknowledging this as a knowledge gap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "Discussion: TAX1BP1 likely plays a dual role by interacting with both TBK1 and the RB1CC1-ULK1-ATG13 complex through its SKICH domain, potentially orchestrating signaling via both kinase complexes and promoting autophagosome formation. TAX1BP1 has diverse cargo including organelles and protein aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C199 present reasonable interpretations of TAX1BP1's function based on the study's findings and prior literature. The dual role model (C196-C198) is speculative but well-supported by the SKICH domain data and prior knowledge of protein interactions. The statement about diverse cargo (C199) is supported by the current findings and prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C200",
+      "C201"
+    ],
+    "result": "Discussion: TBK1, OPTN, p97, and other selective autophagy factors are mutated in neurological disorders (ALS, FTD). Further mechanistic understanding will assist therapeutic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C201 appropriately place the findings in a disease context with proper citations and make a reasonable forward-looking statement about therapeutic implications. This provides important motivation for the research.",
+    "result_type": "MINOR"
+  }
+]

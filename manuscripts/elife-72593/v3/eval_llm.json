@@ -1,0 +1,640 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "TCA cycle inhibition across five different conditions (acute FHi, SDHi with three inhibitors, and chronic genetic ablation) resulted in a convergent metabolic signature: GSH and GSSG were the only two metabolites significantly increased across all conditions, while eight metabolites (malate, cis-aconitate, proline, aspartate, propionylcarnitine, butyrylcarnitine, UTP, and UDP-glucose) were significantly decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-supported by comparative metabolomic analysis across five experimental conditions (Figure 1B-C). The authors used appropriate statistical methods (FDR = 5%, 25% change cutoff) and multiple biological replicates (n=5-15). The convergent signature across both acute pharmacological inhibition and chronic genetic ablation strengthens the conclusion that these metabolic changes are core features of TCA cycle dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Time-course analysis revealed that impairment in amino acid synthesis (aspartate and proline) occurs rapidly (within 1 hour) upon acute TCA cycle inhibition and precedes changes in GSH metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 are supported by time-course metabolomic data (Figure 1\u2014figure supplement 1J,K) showing decreased aspartate and proline at 1 hour. However, the claim that amino acid changes 'precede' GSH changes (C4) is an inference based on temporal observation at a single early timepoint. While plausible, this temporal ordering would be more definitively established with additional intermediate timepoints between 1 and 24 hours.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C101",
+      "C102"
+    ],
+    "result": "Acute FHi and SDHi show divergent effects on asparagine metabolism: SDHi significantly decreased intracellular asparagine levels, while FHi maintained asparagine levels through reductive carboxylation and cytosolic aspartate synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C101, and C102 are well-supported by multiple complementary datasets: steady-state metabolomics (Figure 1G-H), isotope tracing showing maintained reductive carboxylation with FHi but not SDHi (Figure 2C, Figure 2\u2014figure supplement 1B-C), and subcellular fractionation data (Figure 2E, Figure 2\u2014figure supplement 1D). The mechanistic explanation integrating these observations is coherent and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Chronic genetic ablation of Fh1 or Sdhb resulted in increased intracellular levels of cystine, serine, glycine, and asparagine, suggesting adaptive compensatory metabolic changes distinct from acute inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 are supported by metabolomic data from chronic knockout cell lines (Figure 1D-E). The observation that chronic perturbations show opposite changes (increases) compared to acute inhibition (decreases) for some metabolites supports the inference of adaptive compensation. However, the manuscript does not provide mechanistic validation of these adaptive changes, which would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "U-13C-glutamine tracing revealed that TCA cycle inhibition impairs glutamine-derived proline synthesis (decreased m+5 proline) and oxidative TCA cycling (loss of m+3 proline and decreased labeling of multiple TCA cycle intermediates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, and C10 are well-supported by isotope tracing data (Figure 2B, Figure 2\u2014figure supplement 1A-B). The loss of m+3 proline specifically indicates impaired oxidative TCA cycling, as this isotopologue requires one complete turn of the cycle. The comprehensive analysis of multiple TCA cycle intermediates strengthens the conclusion. The data are internally consistent and appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Isotope tracing revealed differential effects of FHi versus SDHi on aspartate metabolism: both decreased m+4-labeled aspartate (mitochondrial synthesis), but FHi promoted reductive carboxylation (increased m+5 and m+3 labeling) while SDHi decreased reductive carboxylation and fully impaired cytosolic aspartate synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are well-supported by U-13C-glutamine tracing data (Figure 2C, Figure 2\u2014figure supplement 1B-C). The differential effects on reductive carboxylation between FHi and SDHi are mechanistically consistent with their different impacts on the NADH/NAD+ ratio (C35) and Complex I function (C61). The isotope labeling patterns are correctly interpreted and support the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "TCA cycle inhibition increased glutathione synthesis from glutamine, as evidenced by increased m+5 labeling in \u03b3-glutamylcysteine, GSH, and GSSG, and m+10-labeled GSSG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is well-supported by isotope tracing data (Figure 2D) showing increased labeling intensity in the glutathione synthesis pathway. This is consistent with the steady-state increases in GSH and GSSG (C1) and provides mechanistic insight into the source of increased glutathione. The m+10 GSSG labeling confirms that both glutathione molecules in the dimer are derived from glutamine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Subcellular fractionation revealed that while mitochondrial aspartate was equally reduced by FHi and SDHi, SDHi caused more pronounced cytosolic aspartate depletion, and asparagine levels were maintained in the cytosol with FHi but decreased with SDHi, explained by differential effects on reductive carboxylation and GOT1-derived aspartate synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by fractionation data (Figure 2E, Figure 2\u2014figure supplement 1D) combined with isotope tracing results. The mechanistic explanation (C21) integrating multiple lines of evidence is coherent. However, the fractionation approach has inherent limitations (potential cross-contamination between compartments), and the manuscript reports n=3 biological replicates for this experiment, which is adequate but lower than other experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C108"
+    ],
+    "result": "Selective disruption of mitochondrial thiol redox homeostasis using mitoCDNB recapitulated the key metabolic features of TCA cycle inhibition, including decreased proline and aspartate, increased GSH synthesis, and similar isotope labeling patterns, suggesting that impaired mitochondrial redox homeostasis causally contributes to the metabolic changes observed with TCA cycle inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 and C108 are well-supported by metabolomic and isotope tracing data from mitoCDNB treatment (Figure 3A-C, Figure 3\u2014figure supplement 1B-C). The similarity between mitoCDNB and TCA cycle inhibition effects supports the causal inference. However, mitoCDNB has multiple targets (GSH depletion and modification of redox enzymes), making it difficult to definitively attribute effects to a single mechanism. The authors appropriately use cautious language ('may causally contribute').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34"
+    ],
+    "result": "Inhibition of glutathione synthesis with BSO increased glutamate, aspartate, and asparagine levels, but when combined with TCA cycle inhibition, failed to rescue proline synthesis and actually worsened proline depletion, demonstrating that intracellular glutamate apportioning does not explain the defect in proline synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 and C34 are well-supported by metabolomic data from BSO treatment alone and in combination with TCA cycle inhibition (Figure 4B-D). The experimental design directly tests the glutamate apportioning hypothesis and provides clear negative results. The conclusion that glutamate availability is not limiting for proline synthesis under these conditions is well-justified. The observation that proline decreased further with combined treatment (C30-C31) suggests a more complex relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Supplementation with ethylGSH increased intracellular glutamate levels when combined with TCA cycle inhibition but failed to rescue proline synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by metabolomic data from ethylGSH supplementation experiments (Figure 4\u2014figure supplement 1A-B). This provides independent confirmation of the conclusion from BSO experiments that glutamate availability is not limiting for proline synthesis. The use of both loss-of-function (BSO) and gain-of-function (eGSH) approaches strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "TCA cycle inhibition significantly increased the NADH/NAD+ ratio (approximately 12-fold with FHi and 4.65-fold with SDHi), and this ratio was decreased by BSO co-treatment, suggesting interplay between GSH synthesis and cellular redox state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are supported by metabolomic measurements (Figure 4E). The differential effects between FHi and SDHi on NADH/NAD+ ratio are consistent with their different impacts on Complex I function (C61). The decrease with BSO co-treatment supports a connection between GSH synthesis and NAD+/NADH balance, though the mechanistic basis for this connection is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40"
+    ],
+    "result": "TCA cycle inhibition decreased the NADPH/NADP+ ratio, which was rescued by BSO co-treatment or eGSH supplementation, suggesting that NADPH depletion is due to increased cellular demand for converting cystine to cysteine to support GSH synthesis under oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C39, and C40 are supported by metabolomic data (Figure 4E). The mechanistic interpretation linking NADPH depletion to cystine reduction for GSH synthesis is plausible and supported by the rescue experiments. However, NADPH has multiple cellular functions, and the manuscript does not definitively rule out other contributors to NADPH depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "TCA cycle inhibition decreased the ATP/ADP ratio and mitochondrial respiration, and neither BSO nor eGSH could rescue the ATP/ADP ratio, suggesting that impaired respiration and ATP availability is a factor governing reduced proline biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by metabolomic measurements and Seahorse respirometry data (Figure 4E-F). The inference that ATP availability contributes to impaired proline synthesis (C46) is reasonable given that Aldh18a1 requires ATP. However, this remains correlative, and the manuscript does not provide direct evidence that ATP limitation is the primary mechanism (e.g., by measuring ATP levels specifically in mitochondria or by rescuing proline synthesis through ATP supplementation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Oligomycin treatment (ATP synthase inhibitor) decreased the ATP/ADP ratio and proline levels while increasing \u03b3-glutamylcysteine, supporting the hypothesis that a combined reduction of mitochondrial ATP and NAD(P)H contributes to impaired proline synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by metabolomic data from oligomycin treatment (Figure 4G-H). The oligomycin experiment provides independent validation that ATP depletion impairs proline synthesis. The synthesis of multiple lines of evidence (ATP, NADPH, oligomycin, antimycin A) to propose a combined mechanism (C49) is reasonable, though the relative contributions of ATP versus NADPH limitation are not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Inhibition of Complex III with antimycin A decreased aspartate, asparagine, and proline while promoting GSH synthesis, providing additional support for the role of mitochondrial respiration in regulating proline synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by metabolomic data from antimycin A treatment (Figure 4I). This provides independent confirmation using a different respiratory chain inhibitor, strengthening the conclusion that impaired respiration broadly affects amino acid metabolism. The consistency across multiple respiratory inhibitors (FHi, SDHi, antimycin A, oligomycin) is compelling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "mitoCDNB had no significant effect on the ATP/ADP ratio but increased the lactate/pyruvate and NADH/NAD+ ratios, indicating a minor defect in Complex I and respiration without alterations in ATP/ADP ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by metabolomic data (Figure 3\u2014figure supplement 1D). This observation helps explain why mitoCDNB causes less severe proline depletion than TCA cycle inhibition\u2014it affects redox balance but not ATP levels. This strengthens the argument that both ATP and redox factors contribute to proline synthesis impairment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "TCA cycle inhibition resulted in highly significant transcriptional changes, with gene set enrichment analysis revealing robust activation of amino acid deprivation response and HRI stress response signatures, and overrepresentation analysis showing enrichment of cytosolic tRNA aminoacylation and amino acid metabolism pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are well-supported by RNA-seq data and appropriate bioinformatic analyses (Figure 5A-C, Figure 5\u2014figure supplement 1A). The use of multiple inhibitors (FHIN-1, AA5) and multiple analytical approaches (GSEA, ORA) strengthens the conclusions. The transcriptional response is consistent with the metabolomic findings of amino acid depletion. Sample sizes (n=3-5) are adequate for RNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "TCA cycle inhibition led to suppression of cholesterol biosynthesis and decreased abundance of mitoribosome subunits and respiration-associated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 are supported by ORA of RNA-seq and proteomics data (Figure 5\u2014figure supplement 1A-B). The cholesterol biosynthesis finding is consistent with previous reports (cited). These represent secondary metabolic consequences of TCA cycle inhibition and provide additional context for understanding the cellular response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Despite decreased mitoribosome subunit abundance, TCA cycle inhibition did not decrease 35S-methionine labeling of mitochondrial proteins, suggesting that mitochondrial protein synthesis is resistant to impaired respiration and decreased mitoribosome components over 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by 35S-methionine labeling data (Figure 5\u2014figure supplement 1D). This is an interesting observation showing discordance between protein abundance and functional activity. However, the inference of 'resistance' (C60) should be interpreted cautiously\u2014it may reflect compensatory mechanisms, post-translational regulation, or the specific timeframe examined (24h). Longer timepoints might show different results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "FHi led to a more pronounced decrease in Complex I biogenesis and subunits compared to SDHi, consistent with previous reports on FH-deficiency regulating iron-sulfur cluster biogenesis and Complex I activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by proteomics data (Figure 5\u2014figure supplement 1C) and citations to previous literature. This observation helps explain the differential effects between FHi and SDHi on NADH/NAD+ ratio (C35) and provides mechanistic insight into the divergent metabolic responses. The integration with prior knowledge strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "TCA cycle inhibition increased transcript and protein levels of ASNS and GOT1, and cytosolic asparagine synthesis was maintained with FHi through reductive carboxylation, GOT1-directed aspartate synthesis, and increased ASNS expression, while SDHi robustly increased ASNS but failed to maintain asparagine synthesis due to impaired cytosolic aspartate availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are well-supported by integrated analysis of RNA-seq, proteomics, and metabolomics data (Figure 5D). The mechanistic explanation synthesizing transcriptional, proteomic, and metabolic data is coherent and well-reasoned. This demonstrates that transcriptional compensation (increased ASNS) is necessary but not sufficient\u2014substrate availability (cytosolic aspartate) is also required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C66",
+      "C118"
+    ],
+    "result": "TCA cycle inhibition led to robust upregulation of serine/glycine pathway enzymes (PSPH, PSAT1, PHGDH, SHMT1/2), which may support glutathione synthesis via provision of glycine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C118 are supported by integrated RNA-seq and proteomics data (Figure 5D). The inference that this upregulation supports GSH synthesis is plausible given the requirement for glycine in GSH synthesis, but this remains speculative without direct functional validation (e.g., by inhibiting these enzymes and measuring effects on GSH synthesis).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "TCA cycle inhibition increased cytosolic proline synthetic enzyme Pycr3 at the protein level, and Aldh18a1 and Pycr1 were upregulated to a greater extent with SDHi compared to FHi, consistent with more pronounced proline depletion with SDHi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 are supported by proteomics data (Figure 5D). The differential upregulation with SDHi versus FHi is consistent with the metabolic data showing greater proline depletion with SDHi. This demonstrates compensatory transcriptional/translational responses that are insufficient to overcome the metabolic defect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The most highly increased tRNA synthetases with TCA cycle inhibition were NARS1 (asparaginyl-tRNA synthetase) at the protein level and EPRS1 (glutamate-proline tRNA synthetase) at the transcript level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 are supported by proteomics and RNA-seq data. The upregulation of tRNA synthetases for amino acids that are depleted (asparagine, proline) is consistent with a compensatory response to amino acid stress. This supports the broader conclusion of amino acid deprivation response activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Transcription factor enrichment analysis revealed activation of ISR-associated transcription factors (Ddit3/Chop, Atf5, Atf4, Atf3, Cebpb, Cebpg), with significant enrichment of Atf4 targets confirmed by GSEA using a curated mitochondrial ISR/Atf4 gene signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C72 are well-supported by TF enrichment analysis and GSEA (Figure 6A-B, Figure 6\u2014figure supplement 1A-B). The use of a curated gene signature from multiple literature sources strengthens the conclusion. This provides the foundation for subsequent mechanistic studies of ISR/Atf4 involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TCA cycle inhibition led to time-dependent ISR activation, as evidenced by decreased translation (puromycin incorporation), increased p-eIF2\u03b1, and robust Atf4 stabilization as early as 1 hour post-treatment, with mitoCDNB activating Atf4 to a similar extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are well-supported by western blot data (Figure 6C, Figure 6\u2014figure supplement 1C). The time-course analysis demonstrates rapid ISR activation. The similarity between TCA cycle inhibition and mitoCDNB effects on Atf4 (C75) supports the connection between mitochondrial redox stress and ISR activation. The use of established ISR markers (p-eIF2\u03b1, puromycin incorporation) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "ISRIB (ISR inhibitor) attenuated FHi-induced Atf4 stability and Atf4-target gene expression, confirming ISR involvement in Atf4 stabilization and gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 are supported by western blot and qPCR data from ISRIB co-treatment experiments (Figure 6D). The use of ISRIB provides pharmacological validation of ISR involvement. The authors appropriately used a lower dose of FHIN-1 to work within ISRIB's window of activity. This provides strong evidence for ISR-dependent regulation of Atf4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Co-treatment with FHIN-1 and ISRIB led to substantial decreases in intracellular proline (~75%), aspartate, and asparagine compared to FHIN-1 alone, supporting the conclusion that ISR activation compensates for defects in de novo synthesis of these amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are well-supported by metabolomic data from combined FHIN-1 and ISRIB treatment (Figure 6E). The worsening of amino acid depletion when ISR is inhibited provides strong functional evidence for a compensatory role of the ISR. This is a key result demonstrating the physiological importance of ISR activation in response to TCA cycle inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "ISRIB co-treatment increased oxidative stress (GSSG/GSH ratio) with FHi, demonstrating that TCA cycle inhibition triggers the ISR to counter both amino acid and redox stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C82 are supported by metabolomic data (Figure 6\u2014figure supplement 1E). The increased oxidative stress when ISR is inhibited demonstrates that the ISR also plays a protective role against redox stress, not just amino acid stress. This synthesis of multiple lines of evidence (C78-C82) provides a comprehensive picture of ISR function in this context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Atf4 knockdown revealed that Atf4 is a key regulator of GSH synthesis and the amino acids proline, alanine, and asparagine under basal conditions, with aspartate levels increasing (consistent with Atf4's role in upregulating ASNS) and glutamine levels increasing (consistent with impaired GSH synthesis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are well-supported by metabolomic data from Atf4 knockdown experiments (Figure 7A-B). The use of two independent siRNAs strengthens the conclusion. The metabolic changes are consistent with known Atf4 functions (cited literature for cysteine metabolism). The observation that aspartate increases while asparagine decreases with Atf4 knockdown provides clear evidence for Atf4's role in regulating ASNS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Comparison of TCA cycle inhibition with and without Atf4 silencing revealed that maintenance of asparagine synthesis was dependent on Atf4-induced ASNS expression, and Atf4 knockdown led to general dysregulation of amino acid levels and altered GSH metabolism upon TCA cycle inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C88 are supported by metabolomic data comparing TCA cycle inhibition with and without Atf4 knockdown (Figure 7C, Figure 7\u2014figure supplement 1A-B). This provides direct functional evidence for Atf4's role in the metabolic response to TCA cycle inhibition. The experimental design (comparing effects with and without Atf4) is appropriate for establishing Atf4-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C89",
+      "C109",
+      "C121"
+    ],
+    "result": "The ISR and Atf4 play a key role in regulating the response to TCA cycle inhibition, with acute TCA cycle inhibition eliciting a convergent rewiring of redox and amino acid metabolism dependent on ATF4 and ISR activation to communicate an amino-acid-deprived and redox-stressed state to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C109, and C121 represent the synthesis of multiple lines of evidence from ISR/Atf4 experiments (C71-C88). The conclusion is well-supported by: (1) transcriptional evidence of ISR activation, (2) biochemical evidence of p-eIF2\u03b1 and Atf4 stabilization, (3) pharmacological evidence from ISRIB experiments, (4) genetic evidence from Atf4 knockdown, and (5) metabolomic evidence showing Atf4-dependent metabolic responses. This represents a major finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C103",
+      "C116"
+    ],
+    "result": "This work highlights a previously underappreciated role for oxidative TCA cycle activity and respiration in proline synthesis, with both FHi and SDHi impairing de novo proline and aspartate synthesis by interrupting oxidative TCA cycle activity and OXPHOS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C116 represent a major conclusion synthesizing multiple lines of evidence: metabolomics showing proline depletion, isotope tracing showing impaired proline synthesis from glutamine, experiments with oligomycin and antimycin A linking respiration to proline synthesis, and measurements of ATP/ADP and NADPH/NADP+ ratios. The conclusion is well-supported, though the relative contributions of ATP versus NADPH limitation are not fully quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C52",
+      "C110"
+    ],
+    "result": "TCA cycle inhibition uncovered an underappreciated interconnection between GSH and proline metabolism, underpinned by both metabolic and bioenergetic cues, highlighting an important interplay between the TCA cycle, redox biology, and amino acid homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C110 represent overarching conclusions synthesizing the entire body of work. These are well-supported by the comprehensive multi-omics analysis and mechanistic experiments. The manuscript demonstrates clear connections between TCA cycle function, redox homeostasis (GSH metabolism), and amino acid metabolism (particularly proline and aspartate), with bioenergetic factors (ATP, NADPH) playing key roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C38",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The manuscript provides background on established biochemical knowledge regarding TCA cycle enzymes (FH, SDH), aspartate/asparagine synthesis pathways, NADPH function, and the ISR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C38, C90-C93, C96-C99, and C104-C106 represent background knowledge appropriately cited from the literature. These provide necessary context for interpreting the experimental results. The citations appear appropriate and the statements are consistent with established biochemical knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "TCA cycle inhibition led to increased oxidative stress as determined by a significant increase in GSSG levels compared to GSH levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by metabolomic data (Figure 3\u2014figure supplement 1A). The GSSG/GSH ratio is an established marker of oxidative stress. This observation provides important context for understanding the metabolic responses, particularly the increased GSH synthesis and the role of NADPH in cystine reduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Mutations of both FH and SDH predispose kidney tubular epithelium to transformation, indicating that the kidney can be particularly affected by TCA cycle dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 are supported by citation to previous literature. The inference that kidneys are 'particularly affected' (C95) is reasonable given the tissue-specific tumor predisposition, though this is somewhat speculative. This provides important biological context for why the authors chose to study kidney epithelial cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Any dysfunction of the TCA cycle is expected to elicit profound metabolic reprogramming beyond defective ATP generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is an inference based on the TCA cycle's central role in metabolism. This is well-supported by the comprehensive metabolomic analysis presented in the manuscript, which demonstrates extensive metabolic reprogramming affecting amino acids, redox homeostasis, and nucleotide metabolism beyond just bioenergetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Chronic FH loss impairs reductive carboxylation in murine kidney epithelial cells, likely via higher and sustained levels of fumarate-mediated protein succination affecting aconitase function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 cites previous work (Frezza et al., 2011) for the observation that chronic FH loss impairs reductive carboxylation, which contrasts with the current finding that acute FHi promotes reductive carboxylation. The mechanistic explanation involving succination and aconitase is plausible but remains speculative without direct experimental validation in the current manuscript. This represents an important distinction between acute and chronic effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Acute FHi led to increased consumption of branched-chain amino acids (valine and leucine) and increased BCAT1 expression, and BCAAs can act as an important nitrogen source for cytosolic aspartate synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C113 are supported by consumption/release data and proteomics (Figure 1I, Figure 5D) and citation to previous literature on BCAA nitrogen donation. The authors appropriately present this as 'another possibility' for increased cytosolic aspartate synthesis capacity with FHi. However, this remains correlative without direct functional validation of BCAA contribution to aspartate synthesis in this context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The relative pool size of aspartate exceeds that of asparagine, and there is a reprioritization toward maintaining asparagine levels under certain stress conditions despite impaired aspartate synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114 and C115 are inferences from the observation that asparagine can be maintained despite aspartate depletion through transcriptional upregulation of ASNS and metabolic adaptations. This is a reasonable interpretation of the data, though the manuscript does not directly measure absolute pool sizes. The concept of 'reprioritization' is supported by the coordinated metabolic and transcriptional responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "TCA cycle inhibition decreases the NADPH/NADP+ ratio to support cystine reduction and promote cytosolic GSH synthesis to counteract amino acid and redox stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 synthesizes multiple observations about NADPH depletion, cystine reduction, and GSH synthesis. The mechanistic connection is supported by the BSO and eGSH experiments showing that manipulating GSH synthesis affects NADPH levels. However, the causal direction (NADPH depletion drives GSH synthesis vs. GSH synthesis depletes NADPH) is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Acute FHi maintains asparagine synthesis via reductive carboxylation, cytosolic aspartate synthesis, and Atf4-induced increase in ASNS, while SDHi fails to engage reductive carboxylation and promote sufficient cytosolic aspartate synthesis, leading to impaired asparagine synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119 and C120 represent a synthesis of metabolomic, isotope tracing, and transcriptomic/proteomic data. This mechanistic explanation for the differential effects of FHi versus SDHi on asparagine metabolism is well-supported by multiple complementary datasets and represents a key finding distinguishing these two modes of TCA cycle inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "The work reveals the magnificent plasticity and unique adaptations that may arise in response to metabolic perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is a general concluding statement supported by the comprehensive demonstration of metabolic, transcriptional, and translational adaptations to TCA cycle inhibition. The use of 'magnificent plasticity' is somewhat subjective but is justified by the extensive compensatory responses documented throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R46",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "NADPH has been implicated as the major cofactor supporting mitochondrial proline biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by citations to recent literature (Tran et al., 2021; Zhu et al., 2021). This represents important recent advances in understanding proline metabolism that provide context for interpreting the current results. The authors appropriately cite this work and discuss its relevance to their findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R47",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "A combined reduction of mitochondrial ATP and NAD(P)H likely contributes to the defect in proline synthesis upon TCA cycle inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 represents a synthesis of multiple lines of evidence regarding ATP, NADPH, and their interdependence through NADK2. The conclusion is well-reasoned and supported by the data, though the relative contributions of ATP versus NADPH limitation are not quantitatively determined. The use of 'likely' appropriately reflects the inferential nature of this conclusion.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C48"
+    ],
+    "result": "E2 pretreatment significantly increases PR binding sites in Ishikawa cells. Without E2 pretreatment, 1,446 PRbs were detected at 30 min of R5020 treatment, but with E2 pretreatment, this number increased to 2,745 at 30 min and 5,701 at 60 min. These E2-promoted PR binding sites (prePRbs) show stronger enrichment of PAX motifs compared to PRbs without pretreatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41, C42, and C48 are well-supported by ChIP-seq data (Figure 2A) and motif enrichment analysis (Figure 4A). The quantitative measurements of binding sites at different time points with and without E2 pretreatment provide strong evidence. The motif analysis further validates the association with PAX binding elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C49",
+      "C52",
+      "C53"
+    ],
+    "result": "PAX2 binding is non-randomly distributed near ER and PR binding sites in Ishikawa cells. Multiple PAX family members (PAX2, 5, 6, 9) show enrichment in Ishikawa-specific PRbs and ERbs. PAX2 ChIP-seq revealed that PAX2 binding is statistically significantly associated with both ERbs and PRbs (Fisher's exact test p<0.001), with PAX2 and AP1 being the only transcription factors predicted to bind both E2 and R5020-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C47, C49, C52, and C53 are supported by multiple lines of evidence including ChIP-seq data (Figure 5C-F), motif enrichment analysis (Figure 4\u2014figure supplement 1A-B), DAVID analysis (Figure 4C), and statistical testing. The convergence of computational motif analysis, experimental ChIP-seq, and statistical validation provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55"
+    ],
+    "result": "PAX2 knockdown alters hormone-regulated gene expression and PR binding. PAX2 knockdown under estrogenic conditions led to increased PR binding to regulatory regions of TGFA and TIPARP. Gene expression analysis showed that R5020-dependent expression of ALPP was abolished by PAX2 knockdown without E2 pretreatment, while TIPARP regulation was largely unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C54, and C55 are based on PAX2 knockdown experiments (Figure 5G-I), but the authors acknowledge high variability in gene expression and note that differences under estrogenic conditions were not statistically significant. The mechanistic interpretation of PAX2's role in 'fine-tuning' ER-PR interplay is speculative given the variable results and incomplete knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C73",
+      "C74"
+    ],
+    "result": "Progestin control regions (PgCRs) exhibit open chromatin state before hormone exposure. ATAC-seq data showed that PgCRs remained accessible regardless of hormone treatment. These regions are located in TADs that are predominantly part of the open (A) chromosome compartment even in untreated cells, suggesting hormone-independent mechanisms maintain these hormone-responsive regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61, C73, and C74 are supported by ATAC-seq data (Figure 6B) and Hi-C compartment analysis (Figure 6\u2014figure supplement 1B, E). The data consistently show that chromatin accessibility at PgCRs and A/B compartment distribution are independent of hormone treatment, supporting the conclusion of pre-existing open chromatin states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "PgCRs are non-randomly associated with hormone-regulated genes through chromatin looping. 121 PgCRs were identified based on specific criteria (at least two PRbs within 25kb plus a PAXbs). Genes with highest fold-change values were concentrated within 1 Mb of PgCRs. Hi-C analysis revealed that PgCRs preferentially interact with promoters of hormone-regulated genes through non-random, mostly intra-TAD interactions, though contact enrichment did not differ between treated and untreated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C60, C62, C63, C64, and C65 are supported by integrated analysis of ChIP-seq, Hi-C, and gene expression data (Figure 6A-E). The computational definition of PgCRs is clearly described, and the Hi-C interaction analysis provides evidence for preferential PgCR-promoter contacts. The finding that interactions are pre-formed (no hormone-dependent change) is consistent with the ATAC-seq results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Approximately 20% of genes in TADs with PgCRs are altered during endometrial cancer progression. Analysis of TCGA data identified 102 genes located in TADs with PgCRs that were differentially expressed in Stage IV endometrial cancer, representing 20% of the 522 protein-coding genes in these TADs. Bootstrapping analysis confirmed this enrichment was statistically significant (95% CI: 57-87, observed: 102).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C66, C67, and C68 are supported by analysis of TCGA endometrial cancer data (Figure 7D-E) with appropriate statistical validation through bootstrapping. The intersection of PgCR-associated genes with cancer progression genes is significantly higher than expected by chance, providing evidence for biological relevance of PgCRs in disease progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Genes downregulated in tumor progression show enrichment among genes upregulated by hormones in Ishikawa cells, though the GSEA results were not statistically robust (E2: NES=1.25, FDR=0.1669; R5020: NES=0.99, FDR=0.9547).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is explicitly acknowledged by the authors as not statistically robust based on GSEA analysis (Figure 7F). While there is a trend suggesting genes downregulated in cancer are upregulated by hormones in Ishikawa cells, the high FDR values (>0.15) indicate this finding requires further validation and should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "ER but not PR mediates the proliferative response to E2 in Ishikawa cells. The ER antagonist ICI182780 blocked E2-induced proliferation, while the PR antagonist RU486 did not. However, RU486 blocked the anti-proliferative effect of R5020 on E2-induced proliferation, confirming PR mediates the R5020 response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 are supported by pharmacological antagonist experiments (Figure 1A, Figure 1\u2014figure supplement 1A-B) showing differential effects of receptor-specific antagonists on proliferation. The experimental design appropriately uses selective antagonists to dissect receptor-specific contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "E2 pretreatment increases PR protein levels and nuclear localization in Ishikawa cells. The percentage of cells with nuclear PR increased after E2 pretreatment before R5020 exposure. After 60 min R5020, the percentage was similar but fluorescence intensity was higher in E2-pretreated cells. Ishikawa cells express higher ER\u03b1 than ER\u03b2, and R5020 increased nuclear ER\u03b1, suggesting PR-ER crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C30, and C31 are supported by immunofluorescence (Figure 1B, Figure 1\u2014figure supplement 1H) and qPCR data (Figure 1\u2014figure supplement 1G). The quantitative measurements of nuclear localization and receptor expression levels provide clear evidence for E2 effects on PR and ER-PR interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "PR is transcriptionally active in Ishikawa cells, as demonstrated by a 2.8-fold increase in luciferase activity from an MMTV-PRE reporter construct after R5020 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by luciferase reporter assay data (Figure 1E) showing functional PR-mediated transcriptional activation. This validates that despite lower PR levels compared to T47D cells, PR in Ishikawa cells is functional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Time-course ChIP-seq analysis reveals dynamics of PR and ER binding. PR binding showed 1,446 sites at 30 min R5020 (22% present at T0), with 78% maintained at 60 min. ER binding increased from 178 sites at 5 min E2 to 1,591 at 60 min and 1,973 at 360 min, with 85% of 60 min sites maintained at 360 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, C37, and C38 are supported by ChIP-seq data (Figure 2A, Figure 2\u2014figure supplement 1A, D) with validation by qPCR (Figure 2\u2014figure supplement 1B, E). The time-course analysis provides insight into binding dynamics and stability of receptor-chromatin interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "De novo motif discovery confirmed that PR binding occurs through complete palindromic PREs, while ER binding sites are enriched in half-palindromic ERE motifs in Ishikawa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 are supported by motif analysis of ChIP-seq data (Figure 2\u2014figure supplement 1G-H). The identification of expected consensus sequences validates the specificity of the ChIP-seq experiments and is consistent with known receptor binding preferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Over 90% of PRbs identified in parental Ishikawa cells were also detected in FPR cells (Ishikawa cells overexpressing FLAG-tagged PR), indicating that PR overexpression primarily increases the number of binding sites rather than changing binding site identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by ChIP-seq comparison between parental and FPR cells (Figure 2\u2014figure supplement 2G). This control experiment demonstrates that the binding sites identified at endogenous PR levels are biologically relevant and not artifacts of low receptor abundance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PR and ER binding sites are predominantly located at distal regulatory regions. Nearly 50% of binding sites are >50 kb from genes and ~30% in non-first introns. Using GREAT analysis, only 12% of R5020-regulated genes (224/1886) were associated with PRbs, and 21% of E2-regulated genes (199/950) with ERbs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, and C46 are supported by genomic distribution analysis (Figure 3A) and GREAT analysis (Figure 3B). The finding that most binding sites are distal and that only a minority of regulated genes have nearby receptor binding sites is consistent with enhancer-mediated regulation and suggests additional indirect mechanisms of gene regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "PAX2 expression is reduced in endometrial tumors compared to normal tissue, and PAX2 shows nuclear localization predominantly after 60 min R5020 treatment in both E2-pretreated and non-pretreated Ishikawa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 are supported by analysis of public RNAseq data (Figure 5A) and immunofluorescence (Figure 5B). The reduced PAX2 in tumors is consistent with prior literature, and the hormone-dependent nuclear localization provides evidence for PAX2 involvement in hormone response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Hi-C analysis reveals conserved TAD borders between Ishikawa and T47D cells, but cell-type-specific A/B compartment patterns. A/B compartment distribution in Ishikawa cells is independent of hormone treatment. There are differences in compartment assignment between cell types (7% of Ishikawa A domains are B in T47D; 12% of Ishikawa B domains are A in T47D). Both PR and ER\u03b1 preferentially bind A (open) compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, C58, and C59 are supported by Hi-C data analysis (Figure 6\u2014figure supplement 1A-G). The findings of conserved TAD borders but divergent compartments between cell types, and hormone-independent compartment patterns within a cell type, are consistent with current understanding of 3D genome organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "In Ishikawa cells, ER and PR bind mainly at ERE and PRE sequences in regions enriched for PAX response elements. Unlike breast cancer cells, PR binding has little influence on ER\u03b1 binding in endometrial cells, as evidenced by limited overlap between PR and ER binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are supported by motif analysis (Figure 2\u2014figure supplement 1G-H, Figure 3C-D) and comparison with T47D breast cancer cells. The cell-type-specific differences in receptor crosstalk are well-documented by the ChIP-seq overlap analysis (Figure 2A) and provide important biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "PRbs and ERbs are enriched in TADs containing hormone-regulated genes, which are predominantly in open (A) compartments even without hormone exposure. Receptor binding sites are already accessible before hormone treatment, suggesting hormone-independent mechanisms establish hormone-responsive chromatin architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C73, and C74 are supported by integration of ChIP-seq, Hi-C, and ATAC-seq data (Figure 6). The finding that hormone-responsive regions are pre-configured in open chromatin states is a key mechanistic insight, though the claim about 'hormone-independent mechanisms' is somewhat speculative regarding what establishes these states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C78"
+    ],
+    "result": "PAX2 may generate open chromatin conformation enabling PR binding and facilitating chromatin loops. The authors propose that E2-induced ER\u03b1 acts together with PAX2 to define key PR regulatory regions that modulate gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75 and C78 are mechanistic proposals based on the enrichment of PAX2 binding near PR sites in open chromatin regions. However, these are speculative inferences. The PAX2 knockdown experiments (C54-C55) show effects on PR binding and gene expression but with high variability. Direct evidence that PAX2 'generates' or 'maintains' open chromatin (e.g., through chromatin accessibility assays after PAX2 depletion) is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The authors hypothesize that PgCRs (PR-PAX-PR binding site-containing regulatory domains) could represent PR shadow enhancers in endometrial cells, analogous to shadow enhancers described in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is explicitly presented as a hypothesis. While PgCRs share some characteristics with shadow enhancers (multiple binding sites, regulatory function), direct functional evidence for redundancy or robustness\u2014key features of shadow enhancers\u2014is not provided. This remains an interesting but untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Combinations of the same hormone receptors with different transcription factors (PAX2 in Ishikawa vs FOXA1 in T47D) account for cell-type-specific gene regulatory networks partly through generating and maintaining different genome topologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by the comparative analysis of Ishikawa and T47D cells showing different partner TFs (PAX2 vs FOXA1), different chromatin compartment patterns (Figure 6\u2014figure supplement 1F), and different gene expression profiles. This represents a key conceptual conclusion integrating multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Loss of PAX2 may force aberrant PR and ER\u03b1 signaling in endometrial cells, leading to altered expression of both receptors and PgCR-associated genes, potentially facilitating disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is a speculative conclusion. While PAX2 is reduced in tumors (C50), PAX2 knockdown shows variable effects on gene expression (C55), and the connection to disease progression is correlative rather than causal. The authors appropriately frame this as their 'belief' rather than a demonstrated mechanism. Additional functional studies would be needed to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C76",
+      "C77"
+    ],
+    "result": "Background claims establishing the roles of estrogen, progesterone, and their receptors in endometrial biology and cancer, as well as the involvement of PAX2 in endometrial pathology. These represent established knowledge from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C19, C76-C77 are background knowledge supported by appropriate citations to prior literature. These provide necessary context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C27",
+      "C28",
+      "C29",
+      "C53"
+    ],
+    "result": "Presynaptic stochasticity combined with plasticity improves energy efficiency in neural networks. The model with plastic, stochastic release achieves better information-energy trade-offs than both deterministic synapses and stochastic synapses with fixed release probability, as demonstrated in MNIST digit classification tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17, C27-C29, and C53 are strongly supported by Figure 1, which shows clear differences in energy efficiency across model variants. The experimental design includes appropriate controls (deterministic and fixed stochastic models), and the results consistently demonstrate that the combination of stochasticity and plasticity is necessary for improved efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The network allocates energy sparsely to important synapses. After learning, most synapses maintain low release probabilities while a few have high release probabilities. Lesion experiments demonstrate that high-probability synapses are functionally more important and consume more energy than low-probability synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C34 are well-supported by Figure 2a-c showing the distribution of release probabilities, lesion experiment results, and energy consumption patterns. The lesion experiment provides strong functional validation, and the sparsity pattern is robust to initial conditions (Appendix figure referenced in C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Sparsity emerges at both synaptic and neuronal levels. The distribution of important synapses per neuron is significantly inhomogeneous (Kolmogorov-Smirnoff test, D=0.505, p<0.01), with some neurons having disproportionately many important inputs. Neurons with many important inputs also tend to have many important outputs (r=0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by Figure 3 with appropriate statistical testing. The Kolmogorov-Smirnoff test provides quantitative evidence for non-uniformity, and the high correlation (r=0.93) between input and output importance is compelling. However, the definition of 'important' (p\u22650.9) is somewhat arbitrary, though the authors note robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C40",
+      "C41",
+      "C54"
+    ],
+    "result": "Release probabilities encode synaptic importance according to the Fisher information. Theoretical analysis shows that synapses with large Fisher information are more likely to have increased release probabilities, and this prediction is validated empirically showing high-probability synapses have high Fisher information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C40-C41, and C54 are supported by both theoretical derivation (Materials and Methods) and empirical validation (Figure 2d). The theoretical link relies on 'mild assumptions' about the monotonic relationship between probability and expectation, which is reasonable but not rigorously proven for all distributions. The empirical validation strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C55"
+    ],
+    "result": "Stabilizing important synapses through presynaptic consolidation alleviates the stability-plasticity dilemma in lifelong learning. The presynaptic consolidation model outperforms standard models without consolidation and state-of-the-art algorithms (EWC and BGD) on sequential learning tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C20, C44-C47, and C55 are supported by Figures 4 and 5 showing improved performance on Split MNIST and other tasks. Statistical significance is reported (p<0.05 or p<0.01). However, C44 is initially a hypothesis, and the evidence from one task type (digit classification) may not generalize broadly. The comparison to EWC and BGD is fair but limited to specific parameter settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Ablation studies demonstrate that both consolidation mechanisms and presynaptic plasticity contribute to lifelong learning performance. Removing consolidation mechanisms decreases performance, and presynaptic plasticity beyond consolidation helps stabilize the network, possibly by inducing sparsity that decreases task overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by Figure 5a ablation data with significant differences. However, C50 is speculative ('we believe') about the mechanism. The ablation design with 'ghost release probabilities' is clever but the mechanistic explanation for why sparsity reduces task overlap lacks direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C51",
+      "C52"
+    ],
+    "result": "Presynaptic consolidation improves memory retention in perceptron learning beyond gradient-based methods. The presynaptically consolidated perceptron maintains more stable memory of the first task and shows improved stability-plasticity trade-offs in sequential pattern memorization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C51-C52 are supported by Figure 5b-c showing perceptron results. This extends the findings beyond gradient-based learning, strengthening generalizability. However, the perceptron experiments are more limited in scope than the multilayer network experiments, and statistical details (n=10 repetitions mentioned) could be more thoroughly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C22",
+      "C25"
+    ],
+    "result": "Synaptic transmission is stochastic with substantial failure probability. When action potentials arrive at synapses, there is a high probability of no neurotransmitter release, a phenomenon observed across species and brain regions and classically described as a binomial process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C7, C22, and C25 are well-established facts in neuroscience supported by appropriate citations (del Castillo and Katz 1954; Branco and Staras 2009; Hardingham et al. 2010; Sakamoto et al. 2018). These provide the biological motivation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Long-term plasticity can be expressed both presynaptically and postsynaptically through distinct, synapse-specific mechanisms. Induction is thought to be triggered postsynaptically for both types, with presynaptic plasticity requiring retrograde signaling and showing bidirectional switching between potentiation and depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 accurately summarize established neuroscience literature with appropriate citations. These claims provide biological plausibility for the model's assumptions about presynaptic plasticity mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Presynaptic boutons with stationary mitochondria are more stable on short and long timescales. Re-analysis of published data shows synapses with higher initial release probability are more stable for both LTP and LTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by citations and re-analysis of Sj\u00f6str\u00f6m et al. 2001 data (Appendix figure 4). The re-analysis provides novel quantitative support for the model's assumption linking release probability to stability. However, the re-analysis details and statistical methods are not fully described in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Previous information-theoretic approaches suggest synapses maximize information per unit energy, explaining synaptic failures, low firing rates, and excitation-inhibition balance. However, these approaches have been limited to single synapses, ignoring network context and computational goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10-C16 accurately characterize prior work with appropriate citations (Levy and Baxter 1996, 2002; Harris et al. 2012, 2015, 2019; Sengupta et al. 2013; Savtchenko et al. 2013). C16's critical assessment that prior work ignored network context is reasonable and sets up the current study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Energy constraints are a major evolutionary driver, with various neural components showing optimization for metabolic cost. The nervous system operates in varying regimes making different energy-information trade-offs, with some inefficiencies occurring to ensure fast transmission of relevant information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C80-C87 provide context from established literature with appropriate citations. These claims establish the biological and theoretical framework for why energy efficiency matters in neural systems. The characterization of prior work appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "Artificial neural networks match biological networks in goal-driven situations and are the only known models to solve complex vision and reinforcement learning tasks comparably to humans. Most previous modeling studies assume deterministic synaptic strengths despite biological stochasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C26 are supported by citations and general knowledge. C24's claim about ANNs being 'the only known model' is strong but defensible given the context of complex vision/RL tasks. C26 accurately characterizes a limitation of prior modeling work that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The Fisher information is a theoretical measure of network sensitivity to parameter changes that has been used to identify which synapses should be maintained for memory preservation. Under certain assumptions, it equals the Hessian of the loss function and has been applied in lifelong learning algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C94-C98 accurately describe the Fisher information and its applications with appropriate citations (Kirkpatrick et al. 2017; Pascanu and Bengio 2013; Martens 2014; Benzing 2020). These provide the theoretical foundation for linking release probabilities to synaptic importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Biologically plausible alternatives to backpropagation exist and are compatible with the model. Improved energy efficiency may be attributed to sparsification, and sparse representations are found in sensory networks and hippocampus. The consolidation mechanism could benefit complementary learning systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by appropriate citations. C65 appropriately qualifies the inference ('at least partly'). C67 is speculative ('could benefit') but reasonably connects to established theoretical frameworks. These claims address biological plausibility and potential applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Larger spines in mouse barrel cortex are more stable, and novel experiences lead to formation of new stable spines, consistent with the model's predictions about the relationship between synaptic size/importance and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 reference experimental observations but lack specific citations in the quoted text. While C69 references consistency with Appendix figure 3b, the connection between spine size and release probability is indirect. The claims provide qualitative support but would benefit from more explicit citations and quantitative comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Bayesian interpretations of neural variability exist in the literature, modeling synapses as distributions and prescribing decreased plasticity for low-variance synapses. The proposed model represents discrete synaptic transmission more faithfully than Gaussian-based Bayesian models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 accurately characterize alternative approaches with appropriate citations. C75's comparative claim about representing discrete transmission 'more faithfully' is reasonable given the Bernoulli vs. Gaussian distinction, though 'faithfulness' is somewhat subjective. This positions the work relative to alternative modeling frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The model's consolidation mechanism is similar to Elastic Weight Consolidation but does not require task switch signals or separate consolidation phases. It can be interpreted as using distinct plasticity states like cascade models, which have been shown effective in lifelong learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 appropriately position the work relative to EWC and cascade models with proper citations. C77's comparative claims about advantages over EWC are supported by the model design. C78's interpretation is reasonable though somewhat abstract. These claims clarify the relationship to existing theoretical frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The proposed energy-information trade-off at the network level, where energy is preferentially allocated to task-relevant synapses, cannot be accounted for by previous single-synapse frameworks. Release probabilities provide a concrete measure of synaptic importance that helps maintain memories during lifelong learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by the experimental results, though C88 is framed as a proposal. C89's claim about novelty relative to prior frameworks (Levy and Baxter 2002; Harris et al. 2012) is reasonable given the network-level vs. single-synapse distinction. C90-C91 are supported by the combined energy efficiency and lifelong learning results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Synaptic signal transmission is the main constituent of neural energy demand, dominated by the energy needed to reverse postsynaptic ion fluxes, justifying the use of expected synaptic strength as a proxy for energy consumption in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by citation to Harris et al. 2012 and provide justification for the model's energy metric. This is a reasonable simplification for the modeling work, though it ignores other energy costs (presynaptic, axonal) that the authors acknowledge in the Appendix.",
+    "result_type": "MINOR"
+  }
+]

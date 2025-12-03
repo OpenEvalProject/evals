@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Whole-genome sequencing of 310 quinoa accessions yielded 2.9 million high-confidence SNPs after filtering from an initial 45.3 million unfiltered SNPs. Sequencing achieved ~7\u00d7 coverage with adequate mapping quality (mean depth 7.78), and SNPs were distributed across genomic regions including coding and non-coding sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C37-C53, and C130-C132 collectively describe the sequencing methodology, coverage metrics, SNP identification pipeline, and genomic distribution of variants. The reported sequencing depth (~7\u00d7), quality metrics (GQ values), and lack of correlation between depth and heterozygosity (C45) support adequate SNP calling quality. The filtering pipeline from 45M to 2.9M SNPs is clearly described with appropriate quality control steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Population structure analysis revealed two main groups (Highland and Lowland quinoa) with strong differentiation (FST=0.36). Highland quinoa showed faster LD decay (6.5 kb) compared to Lowland quinoa (49.8 kb), with PCA explaining 32.8% of variation in the first two components. Chromosome Cq6B exhibited anomalous slower LD decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C54-C62 present consistent population genetic analyses. The FST value (0.36), LD decay estimates, and PCA results are internally consistent and supported by appropriate statistical methods. The observation of anomalous LD on Cq6B (C56, C61) is noted with a speculative explanation (C62) about possible introgression, which is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Highland quinoa exhibited 1.62-fold higher nucleotide diversity (5.78\u00d710\u207b\u2074) compared to Lowland quinoa (3.56\u00d710\u207b\u2074). Lowland populations showed negative Tajima's D (-0.3883) indicating recent population growth. Multiple analytical approaches (nucleotide diversity ratio, FST, local PCA) identified hundreds of candidate genes in differentiated genomic regions, with limited overlap between methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 report diversity statistics and candidate gene identification using complementary approaches. The nucleotide diversity difference, Tajima's D interpretation, and FST values are consistent with standard population genetic theory. The limited overlap between analytical methods (C70-C72) is honestly reported and reflects the different aspects of population structure captured by each approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Multi-year phenotyping of 350 accessions across 17 traits revealed high heritabilities for most quantitative traits (except NoB and STL), strong trait correlations, and distinct phenotypic profiles between Highland and Lowland populations. Lowland accessions showed early flowering, early maturity, short stature, high yield, and high thousand seed weight, indicating better adaptation to long-day conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 and C126-C129 describe a well-designed field experiment with appropriate replication (3 blocks, 2 years, randomized complete block design). High heritabilities and strong year-to-year correlations (C76-C78) support genetic rather than environmental control of most traits. The phenotypic characterization of Lowland accessions (C80-C82) is consistent with adaptation to temperate long-day environments, though the inference about adaptation (C82) is appropriately presented as interpretation rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "GWAS analysis of 294 accessions identified 1,480 significant marker-trait associations (MTAs) for 17 traits, with 600 consistent MTAs across both years for 11 traits. TSW and DTM showed the highest number of consistent associations, while several traits (bolting duration, branching, seed yield, STL, growth type) showed no consistent associations between years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C83-C89 report GWAS results with appropriate statistical thresholds and multi-year validation. The identification of 600 consistent MTAs from 1,480 total associations demonstrates appropriate stringency. The honest reporting of traits without consistent associations (C89) and correlation with low heritability estimates strengthens credibility. The use of kinship matrices and population structure correction is appropriate for controlling false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C120"
+    ],
+    "result": "Two candidate genes (CqPP2C and CqRING) on chromosome Cq8B were associated with thousand seed weight. These genes show homology to PP2C and RING-type E3 ubiquitin ligase families known to control seed size in other crops. Haplotype analysis identified favorable alleles (PP2C_hap3 and RING_hap7) associated with larger seeds in both years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C101-C106 present a well-supported candidate gene identification. The genes are located within strong GWAS peaks, have functional homology to known seed size regulators in other species (C103, C120), and show consistent phenotypic effects across years (C106). The haplotype analysis strengthens the association by demonstrating allelic series effects. However, functional validation in quinoa is still needed to confirm causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C121",
+      "C122"
+    ],
+    "result": "A candidate gene encoding an NBS-LRR domain protein on chromosome Cq2A (38.99-39.03 Mb) was associated with downy mildew resistance. The most significant SNPs were located in subgenome A, suggesting the A-genome progenitor as the donor of resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C107-C110 identify a biologically plausible candidate gene for downy mildew resistance. The NBS-LRR domain is well-established in plant disease resistance (C110), and the subgenome localization (C107-C108) provides insight into evolutionary origins. The study improves upon previous failed attempts (C122) by using a larger sample size (294 vs 61-88 accessions). However, functional validation is needed to confirm the gene's role in resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C123",
+      "C124"
+    ],
+    "result": "Pleiotropic loci on chromosome Cq2A (8.05-8.15 Mb) were associated with four correlated traits (days to flowering, DTM, plant height, panicle length). The most significant SNP resides in CqGLX2-2 gene, with the cytosine allele associated with early flowering, early maturity, and reduced stature. PC-GWAS identified 468 MTAs across the genome for cross-phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C93-C100 demonstrate appropriate use of multivariate GWAS to identify pleiotropic loci. The high variance explained by PCs (89.94%, C94) justifies the approach. The CqGLX2-2 gene is a plausible candidate given GLX gene functions in cell division/proliferation (C124), though the connection to flowering time is less direct than claimed. The allelic effects are consistent across traits (C100), supporting pleiotropy rather than linkage of independent loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Candidate genes for qualitative traits were identified: CqCYP76AD1 and CqDODA1 for stem color (chromosome Cq1B, 69.72-69.76 Mb) showing homology to betalain synthesis genes, and BHLH25 genes for saponin content (chromosome Cq5B, 8.85-9.2 Mb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 identify candidate genes for qualitative traits with strong biological support. The betalain synthesis genes (C90) have clear functional homology to characterized genes in sugar beet, and BHLH25 genes (C91-C92) were previously reported to control saponin content in quinoa. These examples validate the resolution and power of the GWAS approach for identifying causal genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119"
+    ],
+    "result": "The genetic architecture of quinoa reflects its short breeding history, with rapid LD decay (32.4 kb) faster than most major crops, high genetic diversity, and low phenotypic variation within accessions. Population structure and diversity patterns are consistent with either single domestication with subsequent population growth or two independent domestication events with bottlenecks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C119 present interpretations of population genetic patterns. The LD decay comparison (C114) is well-supported by citations, and the homogeneity within accessions (C112) is consistent with self-pollination. However, the domestication scenarios (C119) are speculative and the phylogenetic evidence (C118) is insufficient to distinguish between hypotheses. The study acknowledges this limitation and appropriately presents multiple scenarios rather than definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "48 accessions were identified as attractive crossing partners for breeding programs due to photoperiod insensitivity or long-day responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 represents a practical breeding application of the phenotypic data. The identification is based on observed flowering and maturity behavior under long-day conditions, which is directly measured in the study. This is a straightforward interpretation of the phenotypic results for breeding purposes.",
+    "result_type": "MINOR"
+  }
+]

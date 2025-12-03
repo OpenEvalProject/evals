@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A phenomenological computational model based on four elementary computations (filtering, nonlinear transfer functions, adaptation, and linear transmission with delay) was developed and fitted to electrophysiological data from the G. bimaculatus song recognition network. The model closely reproduced the neuronal responses and tuning curves of all five neurons (AN1M, LN2M, LN5M, LN3M, LN4M), with some discrepancies in LN5M rebound amplitude that did not affect downstream tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C43 collectively demonstrate that the model successfully reproduces the key response properties of the biological network. The fitting procedure is clearly described (C34), performance metrics are provided (C35-C36), and the model's robustness to LN5M rebound amplitude variability is demonstrated (C37-C43). The evidence from electrophysiological recordings and model outputs in Figure 2 supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Parameter space exploration using 5 million model variants (9% responsive and selective) revealed that the network can generate all known cricket song preference types (period, duration, duty cycle tuning) and even pause tuning known only from katydids. However, the network shows a bias toward short pulse durations, short periods, and low duty cycles, with pause tuning being rarer than expected from uniform distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C61 demonstrate the network's computational flexibility through systematic parameter exploration. The large number of model variants (C48-C49), characterization of response field properties (C55-C57), and quantification of preference type distributions (C58-C60) provide strong evidence. The bias toward low duty cycles (C52, C60-C61) is consistently documented and mechanistically explained in later results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Sensitivity analysis identified LN5M (the neuron generating post-inhibitory rebound) as having the highest control over network tuning, with the delay between AN1M and LN5M inputs to the coincidence detector LN3M being a key parameter. Increasing this delay increases preferred pulse period in LN3M while maintaining duty cycle preference, but in LN4M it reduces preferred duty cycle from 0.50 to 0.25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are well-supported by the systematic sensitivity analysis described in the methods and shown in Figures 4F-H and 5. The differential effects of rebound delay on LN3M versus LN4M (C68-C69) are clearly demonstrated in Figure 5C-D, providing mechanistic insight into how network parameters shape tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Four sources of response suppression in the network (inhibitory lobe in AN1M filter, adaptation in AN1M and LN3M, and inhibition from LN2M to LN4M) collectively create a bias toward low duty cycle preferences. Removing inhibition from LN2M to LN4M restores preference for intermediate duty cycles, and removing all four sources abolishes period tuning, producing preference for constant tones (duty cycle 1.0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 provide a comprehensive mechanistic explanation for the network's low duty cycle bias. The systematic removal of suppression sources (Figure 5G-I) and the resulting changes in preferred duty cycle provide strong experimental support. The claim that suppression mechanisms are a cause for low duty cycle preference (C77) is well-justified by the convergent evidence from multiple manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Increasing the gain of the inhibitory lobe of the rebound filter in LN5M switches the network's preference from period tuning to duration tuning. This switch requires prolongation (not just amplification) of the rebound, which drives stronger adaptation in LN3M for patterns with short pauses, abolishing the preference for intermediate pause durations. This demonstrates suppression's dual role in both constraining and contributing to phenotypic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 demonstrate a mechanism for switching between preference types, supported by systematic parameter manipulations shown in Figure 6. The dissection of rebound prolongation versus amplification effects (C79-C80) and the mechanistic link through LN3M adaptation (C81-C82) provide strong evidence. The conclusion about suppression's dual role (C83-C84) is well-supported by the combined evidence from this and previous results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C10",
+      "C11"
+    ],
+    "result": "The model's phenotypic diversity is consistent with known preference types in crickets and other insects, arising from computations that likely evolved to increase energy efficiency and robustness. Computationally flexible networks underlie diverse pattern recognition phenotypes, with network properties both constraining and supporting behavioral diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C6 and C10-C11 make broad evolutionary and functional interpretations that go beyond the direct evidence from the modeling study. While the model demonstrates computational flexibility and identifies constraining mechanisms, the claims about evolutionary origins (C6) and the generalization to all pattern recognition phenotypes (C10) are speculative. The consistency with known preference types (C5) is supported, but the evolutionary and functional claims require additional comparative or experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The model exhibits degenerate parameter-to-phenotype mapping, where different network parameters can create similar changes in phenotype, which likely supports evolutionary plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8 about degeneracy are supported by the sensitivity analysis showing multiple parameters can affect similar aspects of tuning (Figure 4F-H, Figure 4\u2014figure supplement 1). However, the claim that this degeneracy 'likely supports evolutionary plasticity' (C9) is speculative and not directly tested. While degeneracy is a recognized feature that may facilitate evolution, this specific claim requires additional evidence from evolutionary simulations or comparative studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Model neuron responses change smoothly with song parameters across a wide range of pulse and pause durations, with discontinuities arising from discrete changes in pulse number per train. The response fields show gradual transformation of tuning from LN2M to LN4M and are robust to small changes in chirp duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are well-supported by the response field analysis in Figure 3 and supplementary figures. The smooth changes in responses (C44), explanation of discontinuities (C45), description of tuning transformation (C46), and robustness to chirp duration changes (C47) are all clearly demonstrated in the figures and consistent with the model's design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Cricket song structure and recognition preferences are well-characterized across species. Songs consist of species-specific pulse patterns on short timescales and more variable chirp patterns on long timescales. Three principal preference types (duration, period, duty cycle) are known from crickets, with pause tuning absent in crickets but present in katydids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C19 provide established background knowledge about cricket acoustic communication, supported by multiple citations and illustrated in Figure 1. These claims accurately represent the current understanding of cricket song structure and behavioral preferences, forming the foundation for the study's hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The song recognition network in G. bimaculatus consists of five neurons connected in a feed-forward manner, implementing a delay line and coincidence detector mechanism. The network's output neuron LN4 shows selectivity that closely matches female phonotactic behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 describe the established architecture and function of the G. bimaculatus song recognition network based on prior electrophysiological work (cited as Kostarakos and Hedwig, 2012; Sch\u00f6neich et al., 2015). These claims are well-supported by previous research and illustrated in Figure 1D-E, providing the biological foundation for the computational model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Response fields in crickets typically have an elongated major axis (tolerance) and shorter minor axis (selectivity). Multi-peaked response fields associated with resonant recognition are known from katydids but not crickets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe established features of behavioral response fields in insects, supported by citations and used as criteria for evaluating model outputs. These are well-established facts from the literature that inform the analysis of model-generated response fields.",
+    "result_type": "MINOR"
+  }
+]

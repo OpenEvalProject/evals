@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Phylogenetic analysis reveals that RIT1 and LZTR1 show similar evolutionary patterns, both being less conserved in simpler organisms compared to KRAS, suggesting functional co-evolution between RIT1 and LZTR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 provide phylogenetic data showing KRAS is highly conserved while RIT1 and LZTR1 both show limited conservation in simpler organisms (both ~60% identity in Drosophila, absent in C. elegans). Claim C25 draws a reasonable inference from this parallel evolutionary pattern. The data support the co-evolution hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C90",
+      "C100"
+    ],
+    "result": "LZTR1 orthologs from multiple species (mouse, zebrafish, fruit fly) preferentially interact with RIT1 orthologs over KRAS orthologs in pull-down assays, demonstrating conservation of this interaction across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C90 are supported by pull-down assay data shown in Figure 1b and Figure 1\u2014figure supplement 1. The experiments demonstrate preferential LZTR1-RIT1 interaction across multiple species. C100 provides a negative control showing SOScat does not interact with RIT1 orthologs. The biochemical data strongly support the conservation of LZTR1-RIT1 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Lztr1 null mutant flies (Lztr11 and Lztr12 alleles) are viable, fertile, and show no obvious phenotype, including no consistent wing vein defects previously reported with RNAi knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe the genetic modifications, which are clearly documented. Claims C30 and C32 report phenotypic observations supported by data in Figure 2a-b. The discrepancy with prior RNAi studies (C31) is appropriately noted. The null mutant phenotype data are convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C91",
+      "C92"
+    ],
+    "result": "In Drosophila Lztr1 knockout flies, Ric (RIT1 ortholog) protein levels are dramatically elevated (~11-fold by proteomics), while Ras (KRAS ortholog) levels show minimal changes (~1.5-fold), demonstrating preferential regulation of Ric by Lztr1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by both label-free proteomics (Figure 2c) and immunoblot validation (Figure 2d-e) showing dramatic Ric upregulation with minimal Ras changes in Lztr1 mutants. Claims C38, C91-C92 appropriately summarize these findings. The convergent evidence from two independent methods strongly supports the preferential substrate relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C5"
+    ],
+    "result": "Heterozygous Lztr1 deletion mice show no significant changes in body weight, skull morphology, heart weight, spleen weight, or RAS GTPase protein levels, indicating Lztr1 is haplosufficient in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 present comprehensive phenotypic data (Figure 3a-d, Figure 3\u2014figure supplement 1) showing no NS-like features in heterozygous mice. The measurements include appropriate sample sizes (n\u22655-20) and statistical tests. Claims C47 and C5 draw appropriate conclusions. The data convincingly demonstrate haplosufficiency, contradicting a prior report (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C40",
+      "C41"
+    ],
+    "result": "Human genetic data support that LZTR1 haploinsufficiency is unlikely to cause Noonan syndrome, as NS-associated LZTR1 variants are predominantly bi-allelic recessive and heterozygous loss-of-function variants are tolerated in healthy individuals (gnomAD pLI=0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 cite human genetic studies and gnomAD database showing bi-allelic inheritance pattern and tolerance of heterozygous variants. Claim C51 draws an appropriate inference. Claims C40-C41 provide context about inheritance patterns. The human genetic data align well with the mouse haplosufficiency findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C56"
+    ],
+    "result": "Backcrossing Lztr1 knockout mice to 129Sv strain partially rescues embryonic lethality in a generation-dependent manner (1.8% at F1, 6.7% at F2, 8.8% at F3), but pure 129Sv background yields no viable homozygotes, suggesting strain-specific genetic modifiers influence viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 present direct breeding observations shown in Figure 3e. The generation-dependent increase in viable homozygotes is clearly documented. Claim C61 offers reasonable speculation about genetic modifiers based on the data. Claim C56 provides relevant context from prior studies. However, the mechanistic basis remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Viable homozygous Lztr1 knockout mice display NS-like features including smaller size, dysmorphic facial features, cardiomegaly, and elevated Rit1 protein levels across tissues while RAS levels remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 describes phenotypic observations shown in Figure 3f. Claims C65-C66 are supported by immunoblot data in Figure 3g showing tissue-specific Rit1 elevation without RAS changes. The limited sample size prevents quantitative analysis but the qualitative observations are consistent with NS phenotypes in other mouse models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Lztr1 knockout embryos at E18.5 display extensive hemorrhages and cardiac defects including ventricular noncompaction cardiomyopathy with altered myocardial wall thickness and ~20% incidence of interventricular septal defects, likely contributing to embryonic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 present detailed histological observations supported by Figure 4a-b with quantitative measurements (n=5). Claim C68 provides supporting context from prior conditional knockout studies. Claim C73 offers reasonable speculation about combined vascular and cardiac contributions to lethality. The cardiac phenotype is well-characterized though the relative contribution of each defect remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C6"
+    ],
+    "result": "Genetic epistasis experiments demonstrate that Rit1 deletion rescues embryonic lethality of Lztr1 knockout mice, with ~15.3% viable double knockout mice obtained compared to 0% Lztr1 single knockouts, establishing Rit1 as the critical substrate of CRL3LZTR1 during embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 present clear breeding data shown in Figure 4d demonstrating genetic rescue. Claims C77-C78 and C6 draw strong conclusions supported by this epistatic relationship. The rescue experiment provides compelling genetic evidence for Rit1 as the critical substrate. This is a key finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Lztr1/Rit1 double knockout mice are viable, fertile, phenotypically normal, and show complete rescue of the cardiac phenotype at E18.5, indistinguishable from Rit1 single knockout embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by phenotypic data in Figure 4\u2014figure supplement 1 and histological analysis in Figure 4e. The complete phenotypic rescue in double knockouts strongly supports the genetic epistasis conclusion. The data are convincing though sample sizes for some measurements are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Lztr1/Rit1 double knockout MEFs show decreased MAPK signaling compared to Lztr1 single knockout cells upon FBS stimulation, as measured by phospho-ERK/MEK immunoblots and MAPK target gene expression (Spry2, Dusp6), indicating MAPK hyperactivation in Lztr1 KO is mediated by RIT1 stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by immunoblot data (Figure 4g) and qPCR analysis (Figure 4h) showing reduced MAPK signaling in double knockout cells. The convergent evidence from protein phosphorylation and transcriptional readouts supports the mechanistic conclusion. Sample size appears adequate (n=3 biological replicates for qPCR).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C7",
+      "C4",
+      "C25"
+    ],
+    "result": "The combined evolutionary, biochemical, and genetic data indicate functional co-evolution between LZTR1 and RIT1, with RIT1 orthologs being the preferred substrates of LZTR1 in model organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C93, C7, C4, C25) integrates multiple lines of evidence: phylogenetic analysis showing parallel evolution, biochemical data showing preferential interaction and regulation, and genetic rescue experiments establishing functional dependency. The convergent evidence from multiple experimental approaches strongly supports the co-evolution hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "A previous study reported that Lztr1 heterozygous knockout mice display typical NS features suggestive of haploinsufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 accurately cites a prior study (Steklov et al., 2018). However, the current manuscript's data (C42-C47) contradict this prior finding, showing no NS phenotype in heterozygous mice. This represents an important correction to the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Prior studies established that Lztr1 knockout mice are embryonically lethal, this lethality can be rescued by MEK inhibitor treatment indicating MAPK dependence, and embryonic lethality phenotypes show strain-specific penetrance in NS mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 appropriately cite and summarize prior literature establishing context for the current study. These background claims are well-supported by the cited references and provide important framework for interpreting the new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The authors hypothesize that a negative genetic modifier may be located on the Y chromosome of the 129Sv strain based on the absence of viable homozygotes after Y-chromosome fixing, though a positive modifier was previously mapped to chromosome 8 in a different NS model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 cites prior work on chromosome 8 modifier. Claim C63 is speculative hypothesis based on breeding observations. While the hypothesis is reasonable given the data, no direct evidence for Y-chromosome modifier is provided. This remains an untested hypothesis requiring future mapping studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Prior work showed pharmacological MAPK/AKT inhibition cannot fully rescue Lztr1 vascular defects, suggesting excessive Rit1 accumulation may dysregulate additional non-MAPK effector pathways contributing to lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 accurately cites prior work. Claim C97 offers speculation about additional Rit1 effector pathways based on the complete rescue in double knockouts versus incomplete pharmacological rescue. While the logic is reasonable, this remains speculative without direct evidence for which additional pathways are involved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors propose that LZTR1 may have co-evolved with RIT1 as an alternative regulatory mechanism given the high GTP-loading of RIT1, potential absence of GAP regulation, and the importance of protein turnover for RIT1 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 make reasonable inferences about RIT1 regulation based on prior observations of high GTP-loading. Claim C98 states current knowledge gaps. Claim C99 presents the co-evolution hypothesis supported by the manuscript's data. While speculative about mechanism, the hypothesis is well-supported by the evolutionary and functional data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background claims establishing general knowledge about RAS GTPases, their regulation, Noonan syndrome, and prior work on LZTR1-RIT1 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C19, C83-C87) provide established background knowledge and appropriately cite prior literature. They accurately represent current understanding of RAS biology, NS genetics, and prior work on LZTR1-RIT1 regulation. These contextual claims are well-supported.",
+    "result_type": "MINOR"
+  }
+]

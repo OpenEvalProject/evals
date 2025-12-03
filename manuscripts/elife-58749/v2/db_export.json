@@ -1,0 +1,1551 @@
+{
+  "submission": {
+    "id": "d03e0323-b25c-46b3-8e81-f5c76320a76d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:35:43.285757Z",
+    "updated_at": "2025-12-03T02:35:43.285757Z"
+  },
+  "content": [
+    {
+      "id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "submission_id": "d03e0323-b25c-46b3-8e81-f5c76320a76d",
+      "content_type": "manuscript",
+      "content_text": "# Specialized contributions of mid-tier stages of dorsal and ventral pathways to stereoscopic processing in macaque\n\n## Authors\n\n- Toshihide W Yoshioka<sup>1</sup> ([ORCID: 0000-0001-6475-4627](https://orcid.org/0000-0001-6475-4627))\n- Takahiro Doi<sup>3</sup> ([ORCID: 0000-0002-9650-972X](https://orcid.org/0000-0002-9650-972X)) \u2020\n- Mohammad Abdolrahmani<sup>4</sup> ([ORCID: 0000-0003-3658-2623](https://orcid.org/0000-0003-3658-2623))\n- Ichiro Fujita<sup>1</sup> ([ORCID: 0000-0003-3293-8610](https://orcid.org/0000-0003-3293-8610)) \u2020\n\n### Affiliations\n\n1. Laboratory for Cognitive Neuroscience, Graduate School of Frontier Biosciences, Osaka University SuitaOsaka Japan\n2. Center for Information and Neural Networks, Osaka University and National Institute of Information and Communications Technology SuitaOsaka Japan\n3. Department of Psychology, University of Pennsylvania Philadelphia United States\n4. Laboratory for Neural Circuits and Behavior, RIKEN Center for Brain Science (CBS) Wako Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe division of labor between the dorsal and ventral visual pathways has been well studied, but not often with direct comparison at the single-neuron resolution with matched stimuli. Here we directly compared how single neurons in MT and V4, mid-tier areas of the two pathways, process binocular disparity, a powerful cue for 3D perception and actions. We found that MT neurons transmitted disparity signals more quickly and robustly, whereas V4 or its upstream neurons transformed the signals into sophisticated representations more prominently. Therefore, signaling speed and robustness were traded for transformation between the dorsal and ventral pathways. The key factor in this tradeoff was disparity-tuning shape: V4 neurons had more even-symmetric tuning than MT neurons. Moreover, the tuning symmetry predicted the degree of signal transformation across neurons similarly within each area, implying a general role of tuning symmetry in the stereoscopic processing by the two pathways.\n\n## Introduction\n\nThe dorsal and ventral pathways of the primate visual system have served as a widely influential model of parallel sensory processing in the mammalian cerebral cortex (Ungerleider and Mishkin, 1982). Similar organizational structures have been found in the visual cortical networks of cats and mice (Hilgetag et al., 2000; Wang et al., 2012). Moreover, related ideas have been put forth regarding non-visual domains such as auditory (Rauschecker and Scott, 2009), somatosensory (Dijkerman and de Haan, 2007), and language-related processes (Hickok and Poeppel, 2007; Saur et al., 2008). Despite their widespread influence, direct comparison of the dorsal and ventral pathways at the single-neuron resolution with matched stimuli is surprisingly scarce (Cheng et al., 1994; Lehky and Sereno, 2007), leaving open the exact nature of the differences and similarities between the two pathways.\n\nIn the visual systems of human and non-human primates, the dorsal pathway is implicated in spatial vision and vision for action, whereas the ventral pathway is implicated in object recognition and vision for perception (Goodale and Milner, 1992; Ungerleider and Mishkin, 1982). Contrary to initial speculation, both pathways process the same visual cues. Neurons with shape and color selectivity are found not only in ventral areas but also in dorsal areas (Seidemann et al., 1999; Sereno and Maunsell, 1998). Likewise, neurons with motion direction selectivity are found not only in dorsal areas but also in ventral areas (Desimone and Schein, 1987; Li et al., 2013; Mountcastle et al., 1987). Investigating how the dorsal and ventral pathways process the same cue at the single-neuron resolution is critical to better understand the parallel processing strategies in the visual system.\n\nOne of the most notable visual cues in this regard is binocular disparity, the positional difference between images projected to the left and right eyes. As a precise cue for stereoscopic depth, binocular disparity is used for many functions, including the recognition of 3D objects, visually guided 3D action (e.g., reaching, grasping, and vergence eye movement), and navigation through the 3D environment (e.g., moving through obstacles). As binocular disparity is used for both \u2018what\u2019 (object vision) and \u2018where\u2019 (spatial vision) functions, the visual system processes binocular disparity along both the dorsal and ventral pathways (Neri, 2005; Orban et al., 2006; Parker, 2007; Roe et al., 2012; Welchman, 2016). A few studies directly compared the disparity processing of the two pathways with matched visual stimuli. These studies examined the choice-related activity of multiple neurons (Verhoef et al., 2010) or the behavioral effects of electrical microstimulation (Verhoef et al., 2012; Verhoef et al., 2015). In the current study, we focused on disparity processing at the single-neuron resolution.\n\nTo encode binocular disparity faithfully in accordance with the geometry of the 3D world, the visual system should identify the corresponding visual features in left and right retinal images that originate from the same surface point in the 3D space (Julesz, 1971; Marr and Poggio, 1976; Marr and Poggio, 1979). A conventional method to probe the neuronal process for stereo correspondence is to measure the disparity selectivity for anticorrelated random-dot stereograms (aRDSs) (Chen et al., 2017; Cumming and Parker, 1997; Goncalves and Welchman, 2017; Janssen et al., 2003; Krug et al., 2004; Kumano et al., 2008; Nieder and Wagner, 2001; Ohzawa, 1998; Samonds et al., 2013; Takemura et al., 2001; Tanabe et al., 2004; Theys et al., 2012). In aRDSs, one eye image is contrast-reversed to eliminate the natural solution to the correspondence problem; the natural solution requires the depth of the corresponding points to vary smoothly over space, but such a solution does not exist for aRDSs. Accordingly, the neural correlate of the correspondence solution should have no or minimal disparity selectivity for aRDSs. Although the activity of many V1 neurons encodes binocular disparity, these neurons also falsely encode the disparity embedded in aRDSs (Cumming and Parker, 1997). Simple computations akin to interocular cross-correlation explain this primitive disparity representation (Ohzawa et al., 1990). To solve the correspondence problem, a more complex computation should ensue and transform the primitive correlation-based disparity representation into the sophisticated representation that is based on binocularly matching features (\u2018match-based representation\u2019).\n\nIn this study, we directly compared the disparity representations in areas MT and V4 of the monkey. MT and V4 are counterpart mid-tier stages of the dorsal and ventral pathways, both of which causally contribute to stereoscopic depth judgment (DeAngelis et al., 1998; Shiozaki et al., 2012; Uka and DeAngelis, 2006). We used a recently developed extension of aRDSs, called graded anticorrelation (Doi and Fujita, 2014; Doi et al., 2011; Doi et al., 2013). Moreover, we used virtually identical experimental and analysis methods (and one identical animal) in MT and V4 experiments to achieve a more controlled comparison of the two areas than has previously been attempted. We found that the disparity selectivity was indistinguishable between MT and V4 in their responses to the conventional stimuli, aRDSs. However, graded anticorrelation revealed that the disparity representation in V4 was more strongly specialized for the correspondence solution than that in MT. The relative advantage of MT\u2019s disparity signaling was its speed and strength. These results shed light on the division of labor between the dorsal and ventral pathways. The dorsal pathway carries out rapid signaling to produce timely behavioral outputs, whereas the ventral pathway emphasizes complex computations to derive sophisticated sensory representations. We also found that the disparity-tuning shape was highly consistent with the degree of neuronal specialization: neurons with more even-symmetric tuning had responses closer to the correspondence solution both within and across MT and V4. We will discuss this relationship in light of the adaptation of the stereoscopic system to natural binocular inputs (Haefner and Cumming, 2008).\n\n## Results\n\n### Dissociating correlation-based and match-based representations by graded anticorrelation\n\nWe analyzed the neuronal responses to graded anticorrelation to characterize how well these responses conformed to the solution of the correspondence problem; that is, how much the disparity tuning of a visual neuron deviated from the simple correlation-based representation toward a more sophisticated match-based representation (Doi and Fujita, 2014; Doi et al., 2011; Doi et al., 2013). For this assessment, we manipulated the binocular correlation of RDSs by reversing the luminance contrast of a varying proportion of dots in one eye (Figure 1A). This stimulus manipulation systematically changed the binocular correlation (correlation between the left-eye and right-eye images; the top arrow in Figure 1A) and the binocular match (the percentage of binocularly matched features; the bottom arrow in Figure 1A) in a dissociable manner. At one end, correlated RDSs (cRDSs) had 100% correlation and 100% match (Figure 1A right). However, at the other end, aRDSs had \u2212100% correlation and 0% match, indicating complete dissociation (Figure 1A left). In the middle, half-matched RDSs (hmRDSs) showed that half of the dots were contrast-reversed in one eye. Thus, the overall binocular correlation of hmRDSs was 0% since correlated and anticorrelated dots canceled out, while the strength (proportion) of the binocular match was 50%, indicating dissociation in the opposite direction.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig1-v2.jpg)\n\n**Figure 1.:** (A) Three RDSs with graded anticorrelation. From right to left, the fraction of binocularly contrast-matched dots decreases from 100% (correlated RDS or cRDS) through 50% (half-matched RDS or hmRDS) to 0% (anticorrelated RDS or aRDS). This same stimulus manipulation decreases binocular correlation gradually from 100% (cRDS) through 0% (hmRDS) to \u2212100% (aRDS). (B) Hypothetical disparity-tuning curves to graded-anticorrelation stimuli as predicted by correlation-based or match-based disparity representations. In the correlation-based responses (left), the absolute value and the sign of the percent binocular correlation determine the amplitude and shape of the tuning function, respectively. In the match-based responses (right), the amplitude reflects the fraction of matched dots, and the shape is invariant.\n\nWe used these dissociated values of binocular correlation and binocular match to derive the predictions of disparity-tuning curves. A disparity detector with the pure correlation-based representation should lose its disparity selectivity and show flat tuning for hmRDS, because hmRDSs offer no binocular correlation that is necessary for these kinds of detectors to encode disparity (Figure 1B left, green line). For aRDSs, the same detectors should have an inverted tuning curve of the same magnitude as the curve for cRDSs, because of the sign inversion of the stimulus correlation (Figure 1B left, pink curve). By contrast, ideal match-based detectors should retain disparity tuning with a decreased amplitude for hmRDSs but should lose disparity selectivity for aRDSs (Figure 1B right). This is because hmRDSs contain binocularly matched features whereas aRDSs offer no correctly matching features between the two eyes (i.e., no natural solution to the correspondence problem). The disparity energy model is a classic implementation of the correlation-based detector (Cumming and Parker, 1997; Ohzawa et al., 1990). Additional nonlinearity can transform the correlation-based detector to the match-based detector under some conditions (Doi and Fujita, 2014; Henriksen et al., 2016a).\n\n### Disparity selectivity in MT and V4 is biased toward correlation-based and match-based representations, respectively\n\nWe recorded single-neuron activity from monkeys while they performed a fixation task. We compared how neurons in MT and V4 responded to graded anticorrelation by examining the responses of 83 disparity-selective neurons in MT (monkey O, N\u00a0=\u00a032; monkey A, N\u00a0=\u00a051) and 78 disparity selective neurons in V4 (monkey O, N\u00a0=\u00a029; monkey I, N\u00a0=\u00a049). Disparity selectivity was determined from the responses to cRDSs (Kruskal\u2013Wallis test; p<0.05). Monkey O provided data sets for both MT and V4. The sample size of disparity-selective neurons was determined based on a similar study conducted in V4 (Tanabe et al., 2004).\n\nThe graded anticorrelation of RDSs differentially modulated the disparity tuning of neurons in MT and V4. Figure 2 shows an\u00a0example\u00a0of single neurons demonstrating characteristic differences between the MT and V4 populations. Both of the example neurons responded maximally at \u2018near\u2019 disparities with 100% binocular correlation, but the decrease in the correlation level changed the tuning curves differentially between them. The change observed for the example MT neuron is reminiscent of the correlation-based representation of disparity: when the correlation level decreased from 100% to 0% (hmRDS), the tuning amplitude gradually decreased to almost zero (flat curve). A further decrease in the correlation level from 0% to \u2212100% (aRDSs) recovered the tuning but with an inverted shape (Figure 2A). Compared to this MT example, the response pattern of the example V4 neuron was closer to the match-based representation: the tuning amplitude was noticeably retained at 0% correlation with a relatively unchanged tuning phase (shape). The tuning was more attenuated than the MT example at \u2212100% correlation, without the exact shape inversion (Figure 2B). We plotted these responses in the 2D plane defined by binocular disparity and correlation level. The same pattern was also apparent when we compared the observed 2D response profiles (Figure 2C,D) to the predicted profiles from the correlation-based and match-based representations (Figure 2\u2014figure supplement 1). Below we quantify and validate this impression with both model-free and model-based analyses.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig2-v2.jpg)\n\n**Figure 2.:** The average firing rates of example neurons at different binocular-disparity values and binocular-correlation levels in MT (A) and V4 (B). Different colors indicate different correlation levels. Error bars indicate the \u00b1\u00a0SEMs. Letters S, U, R, and L indicate the level of spontaneous (pre-stimulus) activity, the response to uncorrelated RDSs, and the responses to right and left monocular images, respectively. (C\u00a0and D) Color plots of responses of the neurons shown in A and B in a 2D plane defined by binocular disparity and correlation level. Brighter colors indicate stronger responses, as shown in the scale bars. The raw responses are linearly interpolated in both dimensions. The V4 example was previously shown in Abdolrahmani et al., 2016.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Compare the observed response maps for the same neurons (shown in Figure 2C,D) and the predicted maps shown here. The observed map for the example MT neuron is closer to the correlation-based prediction (top left), whereas the observed map for the V4 neuron is closer to the match-based prediction (bottom right). We constructed the predictions for each example neuron as follows: we started with the Gabor functions fitted to the disparity-tuning data for correlated RDSs (i.e., at 100% binocular correlation). Next, we computed the predicted responses at lower correlation levels using the linear functions shown in Figure 4A; these functions dictate how the tuning amplitude and\u00a0shape\u00a0should change with decreasing binocular correlation for pure correlation-based and match-based models. Specifically, we multiplied the signed amplitude ratio of the correlation-based representation or of the match-based representation by the Gabor amplitude at 100% correlation. The predictions were plotted using the same color ranges as the corresponding observed data.\n\nThe disparity representation was drastically different between neurons in MT and V4 at the population level. MT neurons retained the characteristics of the correlation-based disparity representation presumably constructed in V1. These features were largely eliminated in V4, where the disparity selectivity was strongly biased toward the match-based representation. Figure 3 shows the results of model-free population analyses without curve fitting. First, we analyzed the fraction of MT neurons with significant disparity tuning at each correlation level (Kruskal\u2013Wallis test, p<0.05 tested independently at each correlation level below 100%). The fraction had a characteristic U shape consistent with the correlation-based representation: disparity encoding relies on the nonzero binocular correlation of the stereo images (Figure 3A). The fraction was minimal at \u221230% correlation, where only one out of 83 MT neurons (1.2%) was disparity selective. With further decrease from \u221230% to \u2212100%, the fraction increased to 21/83 (25.3%). The pure correlation-based model posits that the fraction should be one at \u2212100% correlation and the minimum at 0% correlation. The mismatch slightly hints at the match-based representation, although overall the disparity selectivity in MT is correlation-based.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig3-v2.jpg)\n\n**Figure 3.:** (A\u00a0and B) The fraction of neurons with significant disparity tuning as a function of binocular correlation (Kruskal\u2013Wallis test; p<0.05). The population comprises all recoded neurons with significant tuning at 100% correlation (83 and 78 neurons for MT and V4, respectively). The dashed line indicates the chance level and the gray area indicates its 95% interval based on the binomial distribution. The fraction at 100% correlation is one by definition. (C\u00a0and D) The fraction of neurons with inverted disparity tuning (relative to the tuning to cRDSs) as a function of binocular correlation. Negative tuning correlation was considered to indicate tuning inversion. The same populations as in (A\u00a0and B) were analyzed. (See Figure 3\u2014figure supplement 1 for the same analysis applied to the subpopulations of tuning curves without significant selectivity; we suggest that the supplementary results warrant the inclusion of non-selective tuning in this main analysis.) The chance level is 0.5. The fraction at 100% correlation is zero by definition.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u00a0and B) The fraction of neurons with inverted disparity tuning as a function of binocular correlation. The population comprises all neurons with nonsignificant disparity tuning judged at each correlation level (Kruskal\u2013Wallis test; p>0.05). The results were similar to those reported in Figure 3C,D, which are shown by red dotted lines. We suggest that the similarity between the main and supplementary results warrants the inclusion of nonsignificant tuning in the main analysis.\n\nThe tuning shape of MT neurons also exhibited the characteristic of the correlation-based representation: negative binocular correlation inverts the tuning shape. We detected tuning inversion based on a negative correlation coefficient between the responses to cRDSs and those at a lower binocular correlation level. In MT, the fraction of the neurons with inverted tuning gradually increased as binocular correlation decreased (Figure 3C). Notably, significant fractions of neurons inverted their tuning curves at the two most negative correlation levels we tested (75% [62/83] and 78% [65/83] of neurons at the \u2212100% and \u221270% correlation levels, respectively; p=3.8\u00a0\u00d7\u00a010\u22126 and 1.1\u00a0\u00d7\u00a010\u22127; H0: the fraction is 0.5; binomial test). We also observed some deviation from the pure correlation representation: the fraction of the tuning inversion was not one at the \u2212100% correlation level. The fraction was closest to 0.5 at the \u221230% correlation level, echoing the finding that the fraction of disparity-selective neurons was minimal at \u221230% (Figure 3A).\n\nThe V4 population data were markedly different from the MT data, entirely lacking the aforementioned characteristics of the correlation-based representation. Instead, the disparity selectivity of V4 neurons was mostly consistent with the match-based representation. The fraction of neurons with significant disparity tuning did not demonstrate the characteristic U shape of the correlation-based representation, but gradually decreased with gradual anticorrelation (Figure 3B), mirroring the decrease in the binocular-match level (Figure 1A). The fraction of neurons with inverted tuning gradually increased with gradual anticorrelation but did not surpass the chance level (Figure 3D). Just as the MT data were not completely consistent with the pure correlation-based representation, the V4 data were not completely consistent with the pure match-based representation. Aggregating the population responses in V4 would help create the pure match-based representation in downstream areas (see Discussion).\n\nNext, we characterized how each individual neuron in MT and V4 represented binocular disparity. To this end, we extended a frequently used metric, the amplitude ratio, which quantifies the disparity-tuning amplitude at \u2212100% correlation (aRDS) relative to that at 100% correlation (cRDS; Cumming and Parker, 1997; Krug et al., 2004; Kumano et al., 2008; Samonds et al., 2013; Tanabe et al., 2004). First, we added a sign to the amplitude ratio, where a negative sign indicates tuning inversion. Second, we calculated the signed amplitude ratio for all intermediate correlation levels, not just for \u2212100%. This signed amplitude-ratio function should have different shapes for the correlation-based and match-based neurons (Figure 4A). For the correlation-based neurons, it should decrease from 1 through 0 to \u22121 as binocular correlation decreases from 100% through 0% to \u2212100%. For the match-based neurons, it should decrease as the correlation level decreases but should always stay above 0 except at \u2212100% correlation. We do not argue that the match-based prediction must be exactly linear as shown in Figure 4A; the linear decrease is just the simplest example of monotonic functions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig4-v2.jpg)\n\n**Figure 4.:** (A) Correlation-based and match-based disparity representations predict different profiles for the signed amplitude ratio as a function of binocular correlation. The signed amplitude ratio at each correlation level reflects both how much the tuning amplitude is reduced and if the tuning shape is inverted by partial anticorrelation. (B) Area ratio as a novel metric to quantify how well the observed responses conform to correlation-based or match-based prediction. The area ratio was defined as the ratio of two areas: the numerator was the area with the negatively signed amplitude ratios (blue); the denominator was the area with the positively signed amplitude ratios (gray). An area ratio of 1 indicates perfectly correlation-based responses (leftmost), and an area ratio of 0 indicates perfectly match-based responses (rightmost). An intermediate area ratio indicates an intermediate representation type (middle). (C\u00a0and D) Area ratios calculated for the example MT and V4 neurons shown in Figure 2. The signed amplitude ratios were calculated based on the best fitted Gabor tuning functions (see Materials\u00a0and\u00a0methods). Then, quadratic functions were fitted to interpolate the data points.\n\nWe devised a new metric called the area ratio that takes the value of 1 for the correlation-based neurons and 0 for the match-based neurons (Figure 4B). The numerator of the area ratio is the area (integral) of the signed amplitude-ratio function across the range where the function is negative (inverted tuning); the denominator is the area of the range where the function is positive. Therefore, the area ratio quantifies how strongly each neuron encodes the disparity with the inverted tuning shape as opposed to the non-inverted tuning shape. The example MT and V4 neurons shown in Figure 2 had the area ratios of 0.79 and 0.15, respectively (Figure 4C,D).\n\nThe distributions of the area ratio markedly differed between V4 and MT (density distributions, Figure 5A,B; cumulative distributions, Figure 5C). The distribution for V4 was strongly skewed toward zero, whereas the distribution for MT was less skewed. The V4 distribution was unimodal, whereas the MT distribution might have been bimodal, with an approximately normal distribution centered at around 0.6 and another potentially distinct peak at around 0. Although the MT distribution might actually have been unimodal (Hartigan\u2019s dip test for bimodality: dip index\u00a0=\u00a00.053, p=0.24, N\u00a0=\u00a010,000), the bootstrap distribution for the peak location consisted of two distinct clusters for MT (Figure 5\u2014figure supplement 1A). Quantile\u2013quantile plots revealed that the V4 and MT data were close to exponential and normal distributions, respectively, within the interquartile range (Figure 5\u2014figure supplement 2). The shape difference was statistically significant (Figure 5C; Kolmogorov\u2013Smirnov test, p=7.9\u00a0\u00d7\u00a010\u22125). In MT, the median area ratio was 0.50 and significantly larger than 0 (two-sided Wilcoxson signed-rank test, p=1.6\u00a0\u00d7\u00a010\u221210). In V4, it was 0.17 and significantly lower than that in MT (two-sided Mann\u2013Whitney U-test, p=3.6\u00a0\u00d7\u00a010\u22124).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig5-v2.jpg)\n\n**Figure 5.:** Distributions of the area ratio, our new metric (A\u2013C), and the amplitude ratio, the conventional metric (D\u2013F), are shown. A\u2013C consist of the neurons with good Gabor-function fitting to disparity-tuning curves and good quadratic-function fitting to signed amplitude ratios (R2\u00a0>0.6; MT, N\u00a0=\u00a059; V4, N\u00a0=\u00a043). D\u2013F consist of the neurons with good Gabor-function fitting (R2\u00a0>0.6; MT, N\u00a0=\u00a076; V4, N\u00a0=\u00a071). Triangles indicate the medians. C and F show cumulative distributions of the area ratio and amplitude ratio, respectively. The amplitude ratio histogram for V4 (E) is a replot of the result reported in Abdolrahmani et al., 2016.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u00a0and B) The fraction of bootstrap replicates is plotted against the binned area ratio. For each bootstrap replicate, we resampled the observed area-ratio values with replacement, constructed a histogram with the same bins used in Figure 5A,B, and registered the location of the peak bin. We repeated the process 50,000 times. The peak distribution for MT consisted of two clusters with an approximately equal size, whereas the peak distribution for V4 was almost entirely concentrated at around zero.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** We examined the shapes of area-ratio distributions using quantile\u2013quantile plots. (A) The quantiles of area ratios for MT are plotted against the theoretical quantiles expected from the standard normal distribution. (B) Likewise, the quantiles of V4 data are plotted against the theoretical quantiles expected from an exponential distribution (mean\u00a0=\u00a01). Red lines are drawn through the 0.25 and 0.75 quantiles. The data between these two points are well aligned on the red lines, meaning that the area-ratio distributions from MT and V4 follow the normal and exponential distributions, respectively, within the middle 50% of the data range.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) We quantified the area ratio without model fitting (see Materials and methods) and confirmed that the area ratio significantly differed between MT and V4 (two-sided Mann\u2013Whitney U-test, p=2.3\u00a0\u00d7\u00a010\u22125 for the median difference). This analysis included our whole data set (MT, n\u00a0=\u00a083; V4, n\u00a0=\u00a078). (B) We analyzed only the data obtained from MT and V4 of the same individual monkey and confirmed the same result (Monkey O; MT, n\u00a0=\u00a028; V4, n\u00a0=\u00a030; two-sided Mann\u2013Whitney U-test, p=9.9\u00a0\u00d7\u00a010\u22123).\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Example single neurons with V-shape signed amplitude-ratio functions. The signed amplitude ratios were calculated based on the Gabor functions fitted to disparity-tuning data (we did not use the peak-to-trough difference of raw disparity-tuning data because it was more susceptible to neuronal noise). (B) The average signed amplitude-ratio functions for the subpopulation of neurons similar to the examples in (A) (i.e., neurons with positive values at \u2212100% correlation and negative minima at correlation levels above \u2212100%). The average curve for the V4 subpopulation did not have a large negative minimum, because the location of the minimum varied between \u221270% and \u221230% correlations. Error bars indicate \u00b1\u00a0SEMs. (C) Model-free area-ratio distribution similar to Figure 5\u2014figure supplement 3A but without the subpopulation of neurons summarized in (B). The area ratio significantly differed between MT and V4 (two-sided Mann\u2013Whitney U-test, p=3.3\u00a0\u00d7\u00a010\u22125 for the median difference; N\u00a0=\u00a067 for MT, 55 for V4).\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** (A\u00a0and B) The area ratio is plotted against the disparity discrimination index (DDI) calculated from the responses to correlated random dot stereograms (cRDSs). The DDI quantifies the strength of disparity selectivity. (C\u00a0and D) The area ratio is plotted against the average firing rate for uncorrelated RDSs, which is often taken as the baseline response level (Uka and DeAngelis, 2003). rs, Spearman\u2019s correlation coefficient. The analyses were performed in the same population of neurons as in Figure 6.\n\nWe confirmed the significant difference in the median area ratio between MT and V4 in three control analyses. First, we calculated a model-free version of area ratio without using any fitting (Figure 5\u2014figure supplement 3A). Second, we used the data obtained only from the same individual monkey (Figure 5\u2014figure supplement 3B). Third, we removed the neurons with particular types of non-monotonic, signed-amplitude ratio functions that could complicate the interpretation of area ratio (Figure 5\u2014figure supplement 4, Appendix 1\u2014Figure 5\u2014text supplement 1). These results suggest that MT and V4 are qualitatively different in terms of the composition of disparity-selective neurons. In area V4, many single neurons are strongly specialized for the match-based representation. In area MT, the distribution is wider: some have the match-based representation but many have representations that are intermediate between fully match-based and fully correlation-based.\n\nCritically, the difference between MT and V4 was revealed only by the area ratio and not by the amplitude ratio, the latter of which is the conventional metric based only on the responses to cRDSs and aRDSs. The distribution of the amplitude ratio was indistinguishable between the two areas (Figure 5D\u2013F). The median values were 0.32 and 0.30 for MT and V4, respectively (two-sided Mann\u2013Whitney U-test, p=0.47). The results of this control analysis are instructive, because although there were previous speculations regarding the difference between MT and V4 in disparity representation (Parker, 2007), these were based only on the neuronal responses to cRDSs and aRDSs (Krug et al., 2004; Tanabe et al., 2004). These previous data sets hint at more strongly reduced disparity selectivity for aRDSs in V4 than in MT (compare Figure 3C in Krug et al., 2004 and Figure 6A in Tanabe et al., 2004), but this apparent difference between MT and V4 might arise from differences in the cell-selection procedures used: the MT study excluded the cells without the significant disparity selectivity for aRDSs from the figure, whereas the V4 study did not. Applying the same statistical methods to MT and V4, we found that full anticorrelation reduced disparity selectivity similarly for MT and V4.\n\nThe use of non-moving RDSs was unlikely to bias our estimation of the area ratios in MT, even though these RDSs might not drive MT neurons to their maximum responsiveness. One might argue that the use of non-coherent-motion RDSs in our experiments resulted in poorer disparity selectivity and led to a biased estimation toward the correlation-based representation in MT. This explanation is possible because stimuli with non-preferred motion parameters decrease the strength of disparity selectivity for cRDSs in MT (Palanca and DeAngelis, 2003). At least in V1, neurons with weaker disparity selectivity for cRDSs exhibit responses closer to the correlation-based prediction (Henriksen et al., 2016b). However, we found no correlation between area ratio and the disparity selectivity for cRDSs (MT: Spearman\u2019s correlation coefficient, rs = \u22120.25, p>0.05; V4: rs = \u22120.25, p>0.1; Figure 5\u2014figure supplement 4A,B), or between area ratio and the baseline response (MT: rs = \u22120.12, p>0.3; V4: rs = \u22120.08, p>0.6; Figure 5\u2014figure supplement 4C,D). These results suggest that neither the strength of the disparity selectivity nor the responsiveness is strongly related to which type of disparity representation a neuron exhibits in MT and V4.\n\n### Disparity-tuning symmetry predicts disparity representation in MT and V4\n\nCan we predict if a disparity-selective neuron has a match-based representation or correlation-based representation based on its responses to cRDSs? If so, what response feature carries the information about the representation type? We reported above that the strength of disparity selectivity or responsiveness was not correlated with the area ratio. Here, we examined the shape of the disparity-tuning curve obtained with cRDSs. The tuning-curve symmetry has been of particular interest because it reflects the underlying mechanism of disparity detection and implies the utility of the detected signals (Cumming and DeAngelis, 2001; DeAngelis et al., 1991; Marr and Poggio, 1979; Poggio and Fischer, 1977; Read and Cumming, 2007; Goncalves and Welchman, 2017).\n\nWe found a strikingly general relationship between the symmetry of the disparity-tuning curve and the type of disparity representation: neurons with even-symmetric tuning tended to have the match-based representation within both MT and V4. To quantify the symmetry of a tuning curve, we devised a metric that monotonically encodes the tuning-curve symmetry (see reflected symmetry phase in the Materials and methods section; see Read and Cumming, 2004) for symmetry phase. A larger value of the reflected symmetry phase indicates a stronger odd symmetry, with 0 for the pure even-symmetric shape (\u2018tuned excitatory\u2019 or \u2018tuned inhibitory\u2019 types by a conventional classification) and \u03c0/2 for the pure odd-symmetric shape (\u2018near\u2019 or \u2018far\u2019 types). The area ratio was positively correlated with the reflected symmetry phase both in MT and V4 (Figure 6A,B; MT: rs\u00a0=\u00a00.41, p=1.4\u00a0\u00d7\u00a010\u22123; V4: rs\u00a0=\u00a00.34, p=0.025). The analyses based on the fitted Gabor phase instead of the reflected symmetry phase confirmed the same conclusion (Figure 6\u2014figure supplement 1). Note that the observed correlation was only moderate for both MT and V4. The best-fitted linear model accounted for 24% of the total variance in the area ratio for MT and 20% for V4 (Figure 6\u2014figure supplement 2A, top row). These percentages increased only to 25% and 31% with the quadratic model in MT and V4, respectively (Figure 6\u2014figure supplement 2A, bottom row). These results imply that the tuning symmetry is only part of the explanation for the cell-by-cell variation in disparity representations. Consistent with this view, the width of the spatial-frequency tuning is correlated with the amplitude ratio in V4 (Kumano et al., 2008).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig6-v2.jpg)\n\n**Figure 6.:** Area ratios of neurons in MT (A) and V4 (B) were plotted against the reflected symmetry phase, which takes the value of 0 and \u03c0/2 for even-symmetric and odd-symmetric tuning curves, respectively. The symmetry was computed for the responses to correlated RDSs. The plots consist of the neurons with good fitting quality (R2\u00a0>0.6 both for Gabor functions for disparity-tuning curves and quadratic functions for the signed amplitude ratio; N\u00a0=\u00a059 and 43 for MT and V4, respectively). rs indicates Spearman\u2019s rank correlation coefficient.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The area ratio is plotted against the best-fitted values of the phase parameter of the Gabor function for 59 MT neurons (A) and 43 V4 neurons (B). The analyses were performed in the same population of neurons as in Figure 6.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Red curves indicate the best fitted linear functions (top row) and quadratic functions (bottom row). Data points are the same as in Figure 6.\n\nThe same relationship also dictated the overall difference between neurons in MT and V4. We showed that neurons in MT had larger area ratios than those in V4 (Figure 5C). We found that neurons in MT had more strongly odd-symmetric tuning curves than those in V4 by comparing their distributions of the reflected symmetry phase (Figure 7). In both MT and V4, the phase was biased toward even-symmetric shapes: the histograms had peaks near 0 (Figure 7A,B). However, the distribution for MT was less strongly biased toward the even shape (a reflected symmetry phase of 0) than that for V4. The difference was clearer in the cumulative distribution (Figure 7C). Although the median values happened to be almost identical (0.074\u03c0 and 0.073\u03c0 for MT and V4, respectively), the cumulative distribution for V4 was consistently biased toward smaller values than that for MT. Furthermore, the quantiles of these two distributions had a linear relationship with a slope value of 1.39 (Figure 7D; SE\u00a0=\u00a00.015; R2\u00a0=\u00a00.98; MT quantiles plotted against V4 quantiles), meaning that multiplying the reflected symmetry phases for the V4 data set by 1.39 brings the V4 and MT distributions into alignment. Therefore, the disparity tunings in V4 had more even-symmetric shapes than those in MT. At the same time, the disparity representations in V4 were more match-based than those in MT. These results yield a strikingly general principle of the stereoscopic system both within and across the dorsal area MT and ventral area V4: neurons with even-symmetric disparity-tuning curves preferentially constitute the neural solution to the correspondence problem compared to those with odd-tuning curves.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig7-v2.jpg)\n\n**Figure 7.:** (A\u00a0and B) The distributions of the reflected symmetry phase. We included the neurons for which Gabor functions were well fitted to the disparity tuning (R2\u00a0>0.6; N\u00a0=\u00a076 and 71 for MT and V4, respectively). The parts of the histograms with solid color correspond to the neurons for which quadratic functions were well fitted to the signed amplitude ratio (i.e., the same subpopulations as plotted in Figure 6 and Figure 5A\u2013C). Triangles indicate the medians. (C) Cumulative distributions of the reflected symmetry phase for the full populations shown in A and B. (D) Quantile\u2013quantile plot comparing the shape of the distribution between V4 and MT. N\u00a0=\u00a071 (the number of V4 neurons, which was smaller than that of MT neurons). The horizontal axis plots the sorted values of the reflected symmetry phase for V4. The vertical axis plots the interpolated values of the reflected symmetry phase for MT at the corresponding quantiles. The black line indicates the linear regression. The flanking gray lines indicate the 95% confidence interval of the linear regression.\n\n### MT exhibits stronger and faster disparity selectivity than V4 for correlated RDSs\n\nWhat is the advantage of the disparity signals transmitted by MT? We showed that MT had a more primitive, correlation-based disparity representation than V4, which manifested in how the disparity selectivity changed with graded anticorrelation. Here we show that the disparity selectivity for cRDSs is faster and stronger in MT than in V4 (Figure 8). We devised a metric called signed disparity discrimination index (sDDI) and computed it using a sliding time window both before and during the stimulus presentation (10 ms width and step; see Prince et al., 2002 for DDI). The absolute value of sDDI indicates the strength of the selectivity relative to the response noise: 0 for no selectivity and 1 for extremely large selectivity compared to the noise level. The positive and negative signs indicate whether the instantaneous selectivity quantified over a short time window is consistent with or opposite from the overall selectivity quantified over the whole stimulus duration, respectively.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig8-v2.jpg)\n\n**Figure 8.:** (A) The average time course of the signed disparity discrimination index (sDDI). The sDDI was calculated within 10 ms (non-overlapping) time windows for each cell and then averaged across cells separately for MT and V4 (N\u00a0=\u00a083 and 78, respectively). The smooth curves are fitted cumulative Gaussian functions. The vertical dashed line indicates the stimulus onset. (B) Parameters of the fitted cumulative Gaussian function. The amplitude parameter quantifies the saturation level of the sDDI. The mean parameter, our estimate of the selectivity latency, corresponds to the time required for the sDDI to rise to half the final amplitude. (C) Best-fitted values and 68% bootstrap confidence intervals. The latency and amplitude were significantly different between MT and V4.\n\nWe found that the average sDDI of MT neurons rose faster and reached a higher level than that of V4 neurons (Figure 8A). We fitted the cumulative Gaussian function to estimate the latency and amplitude of the disparity selectivity (mean and amplitude parameters, respectively; Figure 8B). The latency was 78 ms in MT and 101 ms in V4 (Figure 8C). The peak sDDI was 0.18 in MT and 0.13 in V4. Thus, compared with MT, in V4 the latency was 29% greater and the strength was 28% lower. The differences were statistically significant (p=0.0083 and p<1.0\u00a0\u00d7\u00a010\u22124 for the latency and amplitude differences between MT and V4, respectively; 10,000 bootstrap resamples). These results were surprising given that we used the RDSs suitable for driving V4 neurons (Abdolrahmani et al., 2016; Kumano et al., 2008; Shiozaki et al., 2012; Tanabe et al., 2004; Tanabe et al., 2005; Umeda et al., 2007). For example, unlike previous MT studies (DeAngelis and Uka, 2003; Krug et al., 2004), our RDSs did not contain visual motion, and their dot patterns were updated only slowly (10.6 Hz). The fast and robust disparity signals in MT should be useful for rapid three-dimensional eye movements (Masson et al., 1997) and urgent depth judgments in response to correlated stimuli.\n\n### Disparity representation of V4 neurons near the fovea\n\nThe ventral pathway plays important roles in foveal vision (Sheth and Young, 2016). However, the mean eccentricity was 9.0\u00b0 for V4 in our data sets. How would V4 disparity-selective neurons with more foveal receptive fields (RFs) respond to our stimuli in terms of a match-based versus correlation-based representation of binocular disparity? To gain insights into this question, we ran simulations of a threshold energy model (Doi and Fujita, 2014; Lippert and Wagner, 2001). Although it is not a perfect explanation, adding a threshold (or expansive nonlinearity) to the stereo energy model is a well-supported mechanism that transforms the correlation-based representation into the match-based version (Doi et al., 2013; Henriksen et al., 2016a; Henriksen et al., 2016b; Nieder and Wagner, 2001; Haefner and Cumming, 2008). Furthermore, a combination of various subunits with additional nonlinearity could account for the characteristics of the disparity-tuning curves observed in V4 (Abdolrahmani et al., 2016). A fundamental feature of a foveal RF is its small size. Therefore, we examined the effects of RF size on the disparity representations of the threshold energy model as a proxy for the eccentricity effects. In simulations, we fixed the RF size (Figure 9A) and varied the stimulus scale (i.e., dot size) for convenience (Figure 9B), thus manipulating the relative size of RFs.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig9-v2.jpg)\n\n**Figure 9.:** (A) Gaussian envelope of a model RF (s.d., 2.86 pixels). We fixed the RF size in the simulations. (B) Random-dot stimuli with different spatial scales to simulate different relative RF sizes. The dot size ranged from 16 pixels to 1 pixel. (C) Disparity tuning curves from the standard energy model (top row) and those from the threshold energy model (bottom row). For the standard energy model, the response was defined as the binocular term of an energy-model complex unit. For the threshold energy model, these responses were half-wave rectified at each temporal frame. The tuning curves in each panel were normalized by the peak response (to 100% binocular correlation at zero disparity). Compare the simulated tuning curves to the pure correlation-based and match-based tuning shown in Figure 1B. (D) Signed-amplitude-ratio curves as a function of binocular correlation for different relative RFs. Compare the simulated results to the predictions shown in Figure 4A. The tuning amplitude was calculated as the tuning peak (or trough) minus tuning baseline. The negative sign indicates inverted tuning. (E) Area ratios computed for the curves in the threshold energy model in (D). The area ratio monotonically increased with the relative RF size.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58749/elife-58749-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** The response distribution is shown for two relative RF sizes (small and large for the left and right columns, respectively) and for two disparity values (tuning baseline and peak for the top and bottom rows, respectively). Vertical dashed lines indicate the mean computed for the half-wave rectified responses (i.e., responses of the threshold energy model). Their horizontal positions in the top-row panels correspond to the vertical levels of the arrows in the bottom-row panels of Figure 9C. The response distribution was sensitive to disparity when the relative RF size was small (left column), but not when the relative RF size was large (right column). At the baseline disparity (top row), the response was closer to zero when the RF was smaller.\n\nThe response of the threshold energy model was more consistent with the match-based representation when the relative RF was smaller (i.e., when the eccentricity was smaller). Figure 9C shows the normalized disparity-tuning curves of the standard and threshold energy models at two extreme relative RF sizes. The responses of the standard energy model conformed to the pure correlation-based disparity representation, independent of the relative RF size of the model (Figure 9C, top row). (The tuning was wider for the smaller RF because the spatial auto-correlation of the monocular image was wider [i.e., the image had larger dots].)\n\nThe responses of the threshold energy model deviated from the pure correlation-based representation toward the match-based representation. Critically, the deviation was more prominent for smaller relative RFs. As in our analysis of the neuronal data, we drew the signed amplitude-ratio curves as a function of binocular correlation (Figure 9D) and computed the area ratios. The area ratio monotonically increased with the relative RF size, indicating that the models with smaller RFs represent binocular disparity in a more match-based manner compared to the models with larger RFs (Figure 9E). We discuss how the RF size affected the disparity representation in the supplementary materials (Appendix 2\u2014Figure 9\u2014text supplement 1, Figure 9\u2014figure supplement 1).\n\nBased on the simulation results presented above, we speculate that the disparity representation in V4 is more match-based for the neurons with foveal RFs than for those with peripheral RFs. Previous physiological studies (conducted in V1) provide data that are consistent with this view. As directly compared in Goncalves and Welchman, 2017, the reduction of the disparity selectivity for aRDSs was more pronounced in Cumming and Parker, 1997 than in Samonds et al., 2013. The former study sampled neurons over a range of eccentricity from 1\u00b0 to 4\u00b0, whereas the latter concentrated on an eccentricity of 4\u00b0. (Their stimulus parameters were similar. The dot density was 25% for both studies. The dot size was 0.08\u00b0 for the former and 0.094\u00b0 for the latter.) We suggest that this eccentricity dependency on the disparity representation in V1, which was consistent with our simulation results, might be inherited in V4.\n\n## Discussion\n\nWe used graded anticorrelation to identify whether MT and V4 neurons represented disparity based on binocular correlation (as prescribed by the disparity energy model; Ohzawa et al., 1990) or on binocular match (as consistent with the solution to the binocular correspondence problem) (Figure 1). An area-wise characterization of disparity tuning detected the signatures of the correlation-based representation in MT and those of the match-based representation in V4 (Figure 3). A finer, cell-by-cell characterization revealed a qualitative difference in the distribution of the representation type between the two areas (Figure 5A\u2013C). MT might consist of two groups of neurons: one with the match-based representation and the other with the intermediate representation (Figure 5A). V4 lacked the intermediate group (Figure 5B). Importantly, in both areas, the shape of the disparity tuning (in responses to cRDSs) predicted the type of representation: more even-symmetric neurons showed stronger biases toward the match-based representation (Figure 6). This relationship was also observed for the inter-area comparison between MT and V4 (Figures 5 and 7). Lastly, although the type of disparity representation was more primitive overall in MT than in V4, the disparity signaling for cRDSs was stronger and faster in MT (Figure 8).\n\nDifferential disparity representations between MT and V4 have been suspected for more than a decade (Parker, 2007), but direct, convincing evidence has been lacking to date. Notably, the available MT and V4 studies with aRDSs used different statistical criteria (Krug et al., 2004; Tanabe et al., 2004). Abdolrahmani et al., 2016 re-analyzed the MT data set in Krug et al., 2004 and compared it against their V4 data set using the same statistical criterion, but failed to find a convincing difference between how the two areas responded to aRDSs (Abdolrahmani et al., Figure 11B). Consistent with this earlier result, we demonstrated that the disparity selectivity for aRDSs was indeed indistinguishable between MT and V4 when examined with the same methods (Figure 5D\u2013F). Only the use of graded anticorrelation and a novel area-ratio metric revealed the MT-V4 difference in the disparity representation.\n\n### Explanations for the links between even-symmetric disparity tuning and match-based disparity representation\n\nThe symmetry (phase) of disparity-tuning curves has been studied for decades to understand the neural coding of disparity (DeAngelis et al., 1991; DeAngelis and Uka, 2003; Hinkle and Connor, 2005; Ohzawa et al., 1997; Poggio and Fischer, 1977; Poggio et al., 1988; Prince et al., 2002; Read and Cumming, 2004; Tanabe and Cumming, 2008; Tanabe et al., 2005). Although many theories have been proposed (e.g., Fleet et al., 1996; Goncalves and Welchman, 2017; Read and Cumming, 2007), no empirical data have been reported regarding how the disparity-tuning symmetry relates to the process of solving a fundamental computational problem of stereopsis\u2014the correspondence problem. In this study, we found that neurons with even-symmetric tuning, rather than those with odd-symmetric tuning, preferentially constituted the neural solution to the correspondence problem in the extrastriate areas MT and V4. More specifically, the disparity representations of even-symmetric neurons were more match-based, and thus more sophisticated, than the representations of their odd-symmetric counterparts in the middle stages of both dorsal and ventral pathways (Figure 6). No such relationships have been reported in any visual areas to our knowledge.\n\nThe observed link between disparity representation and tuning symmetry may reflect how the stereoscopic system has adapted to typical input images experienced in natural viewing conditions. Stereoscopic images are strongly constrained during natural viewing, because the two eyes see the same world from only slightly shifted vantage points. Naturally, the left- and right-eye images are strongly correlated, but are rarely anticorrelated. Primitive correlation-based mechanisms do not consider this natural constraint in the sense that they signal binocular disparity for anticorrelated images as strongly as for correlated images. By contrast, the match-based representation can be considered the product of adaptation to naturally occurring binocular image pairs: the disparity selectivity for unnatural, anticorrelated images is selectively reduced (Haefner and Cumming, 2008). Why did this adaptation occur preferentially in neurons with even-symmetric disparity tuning? This is a sensible question given that simple feedforward mechanisms can reduce the disparity selectivity for anticorrelated stereograms in neurons with both even- and odd-symmetric tuning (Read et al., 2002; Haefner and Cumming, 2008).\n\nThe answer to this question may be related to the fact that due to their RF structures, even-symmetric neurons are more suited to represent natural binocular images than odd-symmetric neurons. The left- and right-eye RFs of even-symmetric neurons have the same shape except for a positional offset (Ohzawa et al., 1997; Tanabe and Cumming, 2008), mirroring the natural geometry of how an object in depth is projected to the two retinae with a positional offset. Conversely, odd-symmetric tuning implies that the underlying RFs have different shapes (phases) between the two eyes (for experimental verification in macaque V1 and V2, see Tanabe and Cumming, 2008; for energy model-based analyses, see DeAngelis et al., 1991; Ohzawa et al., 1997; Prince et al., 2002). Since an object\u2019s natural projections to the left and right eyes do not substantially differ in shape, these neurons do not maximally respond to natural binocular images. Indeed, an important role of odd-symmetric (and hybrids of odd- and even-symmetric) neurons in stereoscopic processing could be to detect the unnaturalness in binocular images (Read and Cumming, 2007; Goncalves and Welchman, 2017). Overall, the match-based representation may reflect the stereoscopic system\u2019s adaptation to naturally occurring pairs of binocular images (Haefner and Cumming, 2008). It seems reasonable that this adaptation occurs preferentially in neurons with even-symmetric disparity tuning, provided that one of their roles in stereopsis is to represent natural binocular images. Therefore, the even-symmetric neurons with the match-based representation can be viewed as dedicating their disparity encoding to naturally occurring stereoscopic images and thus efficiently coding binocular disparity (Attneave, 1954; Barlow, 1961).\n\n### Contributions of the MT and V4 disparity signals to perception, eye movements, and downstream activity\n\nMT and V4 had qualitatively different distributions of disparity representations (Figure 5A\u2013C). Also, the disparity selectivity in V4 was, on average, about 30% slower and 30% weaker than that in MT, even though we used the random-dot stimuli tailored to drive V4 neurons. What could be the roles of each area in perception and action? We propose that MT pathway quickly and robustly relays the correlation-based disparity signals to the behavioral stage. The use of MT\u2019s disparity signals should not be limited to visually guided actions, because the link between the disparity-selective neurons in MT and perceptual judgment has been demonstrated extensively using a coarse depth task (Chowdhury and DeAngelis, 2008; DeAngelis et al., 1998; Uka and DeAngelis, 2004) and a structure-from-motion task (Bradley et al., 1998; Dodd et al., 2001; Krug et al., 2004). This implies that the correlation-based disparity signals in MT might contribute to some aspects of depth perception, even though the correspondence problem is not solved in these signals.\n\nThis idea is supported by our earlier psychophysical studies with the same graded anticorrelation paradigm (see Fujita and Doi, 2016 for a review). Human depth judgment does indeed exhibit a trace of the correlation-based disparity representation (e.g., reversed depth perception for aRDSs; Aoki et al., 2017; Tanabe et al., 2008). Moreover, the inferred contribution of the correlation-based representation to perceived depth increases with the magnitude of stimulus disparity (Doi et al., 2011) as well as with the stimulus pattern refresh rate (Doi et al., 2013). The magnitude effect is consistent with the finding that MT contributes to coarse, but not fine, depth judgment (Uka and DeAngelis, 2006). The refresh-rate effect is consistent with the notion that MT is likely to contribute to perception more with dynamic stimuli than with static ones.\n\nWe also suggest that the disparity signals in MT drive the reflexive vergence eye movement via the medial superior temporal area (Takemura et al., 2001). For anticorrelation, the vergence eye movement responds in the opposite direction from stimulus disparity with a reduced amplitude (Masson et al., 1997), suggesting that the driving signal is intermediate between the match-based and correlation-based representations. Many MT neurons we observed fell into this category (see the second peak in the histogram in Figure 5A). The vergence response can be very fast, starting to rise only 60\u201370 ms after the stimulus onset (Masson et al., 1997). The fast and robust disparity signals that we observed in MT must be useful (Figure 8). Our suggestion is also consistent with the finding that MT neurons represent the \u2018absolute\u2019 disparity of a stimulus, without being sensitive to the disparity of a reference plane (Uka and DeAngelis, 2006). This response property is a prerequisite for the vergence drive (Westheimer and Mitchell, 1956).\n\nV4 is likely to be in the middle of the neural process of solving the binocular correspondence problem along the ventral pathway. Consistent with this idea is the finding that the correspondence problem is not yet fully solved in the single-neuron activity we observed in V4. The fraction of neurons with significantly disparity-selective tuning did not noticeably decrease from correlation levels 0% to \u2212100% (Figure 3B), although the strength of the binocular match decreased from 50% to 0% over the same range (Figure 1). This discrepancy can be mitigated by aggregating the population responses just the way decision-making circuits would do (Abdolrahmani et al., 2016). This is because at \u2212100% correlation, roughly half of the V4 neurons had inverted tuning curves (Figure 3D). If the responses of V4 neurons are aggregated according to their preferred disparity for cRDSs (i.e., the most naturalistic stimuli in our stimulus space), their tuning curves at \u2212100% correlation are averaged out and flattened (Doi et al., 2018). This averaging out would not occur at 0% correlation, because the tuning shape at 0% correlation tended to be consistent with that at 100% correlation (as predicted by models of the match-based representation; Doi and Fujita, 2014; Doi et al., 2013). Thus, the aggregated V4 responses should resemble the pure match-based representation of disparity. This property of V4 neurons should presumably help downstream areas such as the inferior temporal (IT) cortex represent a complete solution to the correspondence problem at the individual-neuron level (Janssen et al., 2003).\n\nWe also suggest that V4 is critical for the perception of fine depth, because fine disparity perception entirely relies on the match-based representation (Doi et al., 2011). Several physiological results strongly support this view. First, V4 neurons have choice-predictive responses during a fine depth task (Shiozaki et al., 2012). Second, microstimulation of a cluster of V4 neurons biases the judgment of fine depth in the way predicted from the response property of the stimulated cluster (Shiozaki et al., 2012). Lastly, V4 neurons encode the \u2018relative\u2019 disparity between the center and surround of their RFs, a property necessary for supporting stereoacuity and a precursor for fixation-depth-invariant representation of 3D objects (Umeda et al., 2007).\n\nV4 should also be important for 3D shape perception, because the perceptual discrimination of disparity-defined 3D shapes is difficult without match-based disparity signals (Asher and Hibbard, 2018; Tanabe et al., 2008). This is broadly consistent with the finding that V4 is involved in the encoding of 3D shape cues such as 3D slant (Hegd\u00e9 and Van Essen, 2005; Hinkle and Connor, 2002). Overall, the signals in V4, including the selectivity for match-based disparity, fine disparity, and 3D shape cues, should help the ventral pathway derive the full-fledged representations of 3D objects and 3D scenes in its highest stage, the IT cortex (Yamane et al., 2008; Verhoef et al., 2016).\n\n### Concluding remarks\n\nWe directly compared single-unit selectivity between dorsal and ventral visual areas using matched stimuli, following the footsteps of a few pioneering studies (Cheng et al., 1994; Lehky and Sereno, 2007). Specifically, we reported the division of labor between extrastriate areas MT and V4 in stereopsis, as revealed by a novel manipulation of RDSs. We suggest that area MT, a mid-tier stage in the dorsal pathway, relays the primitive correlation-based disparity signals without considerably refining the nature of the signals. Instead, this pathway has the advantage in terms of signaling speed and strength, which are useful for rapid vergence eye movements and coarse depth perception. By contrast, area V4, a counterpart stage in the ventral pathway, predominantly processes more sophisticated disparity signals based on binocular match. These signals help the end stage of the ventral pathway, the IT cortex, to fully solve the binocular correspondence problem and derive the fine representations of 3D objects. Therefore, the division of labor between the dorsal and ventral visual pathways may embody the tradeoff between the rapid and robust transmission of sensory signals and the complex computation needed to derive elaborate sensory representations.\n\nThis proposal provides a unified account for two earlier theories on the dorsal versus ventral division of labor (Goodale and Milner, 1992; Ungerleider and Mishkin, 1982). For example, vision related to action may depend more on the dorsal pathway because it benefits from rapid, robust sensory transmission, and so does visual motion perception. The analyses of colors and objects may depend more on the ventral pathway because they require complex computations.\n\nWe also note that the response characteristics of individual neurons are diversely distributed across MT and V4. Moreover, MT and V4 share a common link between the disparity-tuning shape and the type of disparity representation. It is possible that the interactions between the dorsal and ventral pathways play several roles in 3D visual perception and actions, as broadly suggested by neuroanatomy, single-neuron recording, electro-encephalography, psychophysics, and brain imaging (Borra et al., 2008; Borra et al., 2010; Cottereau et al., 2014; Farivar, 2009; Fujita and Doi, 2016; Freud et al., 2016; Janssen et al., 2018; van Polanen and Davare, 2015).\n\n## Materials and methods\n\nWe recorded single neuron responses from areas MT and V4 of monkeys. Recordings in MT and V4 were conducted in separate sessions. All procedures were approved by the Animal Experiment Committee of Osaka University (permit numbers: FBS-12\u2013016\u00a0and FBS-13-003-1) and conformed to the Guide for the Care and Use of Laboratory Animals issued by the National Institutes of Health, USA. The data sets are available online. Analysis codes for reproducing the results reported in this study are available upon reasonable request to the lead contact Ichiro Fujita (fujita@fbs.osaka-u.ac.jp). We previously analyzed the same data set from V4 (Abdolrahmani et al., 2016), but most of the analyses in the current paper are novel, with two exceptions (i.e., Figure 2B,D for an example neuron and Figure 5E for direct comparison of a conventional metric against our novel metric).\n\n### Animal preparation\n\nWe used two Japanese monkeys (Macaca fuscata) for MT recording (Monkey O, male, weighing 8.5 kg; Monkey A, female, weighing 5.7 kg), and one Japanese monkey (Monkey O) and one rhesus monkey (Monkey I, Macaca mulatta, male, weighing 6.5 kg) for V4 recording. In these monkeys, a head-holding device was attached to the skull and Teflon-insulated stainless-steel search coils were implanted between the conjunctiva and sclera in both eyes under anesthetic and aseptic conditions. For details of the surgical procedures, see Kumano et al., 2008. Briefly, the monkeys were administered atropine sulfate (0.02 mg/kg, i.m.) to reduce salivation and were sedated with ketamine (5 mg/kg, i.m.). Anesthesia was maintained by inhalation of a mixture of isoflurane (0.3\u20132.0%, Forane, Abbott), nitrous oxide (66%), and oxygen (33%). Lidocaine was used for local anesthesia as needed. Throughout surgery, we continuously monitored electrocardiogram data, arterial oxygen saturation levels (SPO2), end-tidal CO2 levels, and heart rate. Postoperatively, we administered a general antibiotic (piperacillin sodium), ocular antibiotic (ofloxacin), glucocorticoid (betamethasone), and analgesic (ketoprofen). We trained the monkeys to perform a fixation task (see below). When the training was complete, we performed another surgery under the same anesthetic procedure to implant a chamber for recording (inner diameter, 19 mm; Crist Instruments, Hagerstown, MD). For MT recording, the chamber was placed on the occipital cortex 17 mm lateral and 14 mm dorsal to the occipital ridge tilted posteriorly at an angle of 25\u00b0 above the horizontal. For V4 recording, it was placed 25 mm dorsal and 5 mm posterior to the external ear canals. The skull inside the chamber was removed with a trephine (Fine Science Tools, North Vancouver, Canada).\n\n### Behavioral task\n\nThe monkeys viewed a CRT monitor (refresh rate 85 Hz; Multiscan G520, Sony) at a distance of 57 cm. The monitor covered a visual angle of 40\u00b0\u00a0\u00d7\u00a030\u00b0. We alternately presented images to the left and right eyes with custom-made OpenGL software, a quad-buffered graphics card, and shutter glasses based on ferroelectric liquid crystal devices (LV2500P-OEM, Citizen FineDevice, Yamanashi, Japan). The left and right shutter glasses alternately closed at each refresh of the display. Although the use of the shutter glasses decreases the effective binocular correlation compared with a haploscope, we have previously shown that the effective correlation is an unbiased, linear function of the notional correlation value (Abdolrahmani et al., 2016). Therefore, the use of shutter glasses did not complicate our interpretations as a result of artifactual distortion of the effective binocular correlation. Upon presentation of a white point at the center of the monitor, the monkeys were required to fixate it within 500 ms. After fixation, a visual stimulus was presented for 500 ms to both monkeys in the MT experiment and to monkey O in the V4 experiment; the stimulus duration was 700 ms for monkey I in the V4 experiment. The monkeys had to maintain fixation within a 1.5\u00b0\u00a0\u00d7\u00a01.5\u00b0 window and a vergence angle within\u00a0\u00b10.25\u00b0 for another 200 ms. The eye positions were monitored with a scleral eye-coil system (DSC-2000, Sankei Kizai, Tokyo, Japan). For successful trials, the monkeys received drops of juice or water as a reward. When the monkeys failed to maintain fixation, they did not receive a reward, and the data were discarded.\n\n### Visual stimuli\n\nWe used circular patches of dynamic random-dot stereograms (RDSs) as visual stimuli. The RDSs consisted of a central disk and a surrounding ring with no gap between them. The central disk was positioned to cover the classical RF of a recorded neuron. The surrounding ring was 1.6\u00b0 wide. RDSs contained an equal number of bright (2.28 cd/m2) and dark (0.01 cd/m2) dots with a gray background (1.14 cd/m2). Luminance was measured through the shutter glasses placed between the monitor and a photometer (CS1000, Konica Minolta, Tokyo, Japan), and linearized (gamma corrected). We used only red phosphors to minimize inter-ocular crosstalk (<3% of the background) because the decay time is shorter for red phosphors than for green and blue phosphors. The dot size was 0.17\u00b0\u00a0\u00d7\u00a00.17\u00b0 with anti-aliasing. The dot density was 25%.\n\nWe manipulated the binocular disparity and binocular correlation of the central disk, whereas these aspects of the surrounding ring were fixed at zero disparity and 100% correlation. We manipulated the binocular correlation of the central disk by reversing the luminance contrast of a varying proportion of dots in one eye (graded anticorrelation, Figure 1A; Doi et al., 2011; Doi et al., 2013). Note that this manipulation of the stimulus correlation is detectable only through binocular viewing; it does not change the overall luminance of the stimulus, because the RDSs are composed of the same numbers of bright and dark dots.\n\n### Recording techniques\n\nA tungsten electrode (0.3\u20132.0 M\u03a9 at 1 kHz; FHC Bowdoinham, ME) was inserted into the cortex through a transdural guide tube using a micromanipulator (MO-971, Narishige, Tokyo, Japan). Extracellular neural signals were amplified (\u00d75000; MDA4-I, Bak Electronics, Mount Airy, MD) and filtered (0.5\u20135 kHz; Multifunction Filter 3624, NF Corporation, Yokohama, Japan). Action potentials from single neurons were isolated by either a dual-window discriminator (DDIS-1, Bak Electronics, Mount Airy, MD) or a template-matching sorting system (Multi Spike Detector, Alpha-Omega Engineering, Nazareth, Israel). Times of spike occurrences and positions of both eyes were stored at 1 ms resolution for offline analysis.\n\nWe identified area MT based on the motion direction tuning of single- and multi-neuron activity, the relation between eccentricity and RF size, and changes in RF location along the electrode penetrations (Gattass and Gross, 1981; Van Essen et al., 1981), as well as general anatomical position. We confirmed the location of MT based on the pattern of gray matter and white matter encountered during electrode penetration before reaching MT as well as during the subsequent entry, after a short silent region (sulcus), into area MST, which had large, contralateral RFs covering a quadrant or half of the display (Gu et al., 2006; Uka and DeAngelis, 2003). After all recording experiments were finished, we made electrolytic lesions (10 nA for 10 s, electrode negative) at three to five sites in or around the recording regions. The monkeys were then euthanized with an overdose infusion of pentobarbital sodium (100 mg/kg, i.v.) and perfused from the heart with 0.1% phosphate-buffered saline (PBS) and 4% paraformaldehyde. The brains were removed, postfixed, frozen, and cut into 60-micron-thick serial, parasagittal sections. Alternate sections were stained for cell bodies with the Nissl method or for myelinated axons with the Gallyas method (Gallyas, 1979). We successfully recovered all the lesions. We verified that we recorded from MT deep in the posterior bank of a caudal part of the superior temporal sulcus where layers IV\u2013VI contained a dense and uniform band of myelin fibers (Ungerleider and Mishkin, 1979; Van Essen et al., 1981). For the identification and RF information of V4 neurons, see Abdolrahmani et al., 2016.\n\nMost of our MT neurons (65 out of 83) had their RFs in the lower visual field; RFs of all of our V4 neurons (N\u00a0=\u00a078) were located in lower visual field. The mean eccentricity was 6.9\u00b0 (s.d.\u00a0=\u00a03.3\u00b0) for MT and 9.0\u00b0 (s.d.\u00a0=\u00a03.0\u00b0) for V4 in our data sets. Based on the simulation and previous literature (Cumming and Parker, 1997; Samonds et al., 2013; Goncalves and Welchman, 2017), we speculate that disparity-selective neurons with smaller eccentricities might be associated with more strongly match-based disparity representations. If this speculation is correct, we might be slightly underestimating the representational difference between MT and V4. Alternatively, the slight mean eccentricity difference between the two areas might not have affected our conclusion given that the standard deviation of the eccentricity in each area was quite large compared to the mean difference. Our data appear more consistent with the latter view. We found no correlation between the area ratio (our metric for disparity representation) and eccentricity either in MT (Spearman\u2019s correlation rs = \u22120.035, p=0.79) or in V4 (rs = \u22120.065, p=0.68). The results did not change even when the reflected symmetry phase was controlled (partial Spearman\u2019s correlation rs = \u22120.055, p=0.68 for MT; rs = \u22120.043, p=0.79 for V4). We do not think that the lack of significant correlation convincingly falsified the speculated relationship between eccentricity and disparity representation, because there could be many reasons why the relationship was not detected (e.g., the eccentricity variation was not large enough to detect the relationship; note that in the simulation the size of the largest RF examined was 16 times that of the smallest RF).\n\n### Experimental procedures\n\nHere we describe the procedures used for area MT. We used similar procedures for area V4, but see Abdolrahmani et al., 2016 for details. After isolating single-neuron activity, we determined its classical RF by a patch of RDSs (size: 3\u00b0 or smaller, disparity: 0\u00b0, dot-pattern refresh rate: 10.6 Hz in most cases). We measured direction tuning with a patch of dots coherently moving in one of eight directions (45\u00b0 apart). We then probed the range of disparity tuning with dynamic, non-motion-coherent RDSs in several (at least three) stimulus presentation trials. For this initial test, we used cRDSs with nine disparities (\u22121.6\u00b0 to 1.6\u00b0 in 0.4\u00b0 intervals) and uncorrelated RDSs (uRDSs; RDSs with independently created left-eye and right-eye images). After all these tests, we measured the responses to RDSs with several binocular disparities (tailored for each recorded neuron based on the initial test) and correlation levels (100%, 70%, 30%, 0%, \u221230%, \u221270%, and \u2212100%). The dot-pattern refresh rate was set to 10.6 Hz, the value used for the V4 experiment.\n\n### Data analysis\n\nAll analyses were carried out with MATLAB (The MathWorks). The spontaneous firing rate was calculated for a 250 ms period preceding the stimulus onset and averaged across trials. To construct disparity-tuning curves, the mean firing rate at each correlation level and disparity was calculated for a certain time window. The time window overlapped with the stimulus presentation period but was delayed to take into account response onset and offset latency (60 ms for MT and 80 ms for V4). The average firing rate was based on at least five trials. One of the monkeys (Monkey O) was used in both MT and V4 experiments. The V4 data were used in our previous publication (Abdolrahmani et al., 2016), but the main analyses of the current paper are all new. Particularly, we quantified the disparity representation of each V4 neuron and directly compared it against MT results in this study.\n\n#### Gabor function for disparity tuning\n\nWe characterized neuronal disparity tuning by fitting a Gabor function, a product of a Gaussian envelope and a cosine carrier, to the mean firing rate data. At each level of binocular correlation, the mean firing rate (R) at disparity (x) was defined as follows:\n\n$$\nR(x)\u00a0=\u00a0y_{0}\u00a0+\u00a0A\u22c5e^{(\\frac{\u2212(x\u00a0\u2212\u00a0x_{0}\u00a0)^{2}}{2\\sigma^{2}})}\u22c5cos\u2061[2\\pif(x\u00a0\u2212\u00a0x_{0})\u00a0+\u00a0\\phi],\n$$\n\nwhere A, \ud835\udc660, \ud835\udc650, \u03c3, f,\u00a0and \u03c6 represent the amplitude, baseline response, horizontal position, envelope width, carrier frequency, and carrier phase, respectively. We performed a half-wave rectification for R because the firing rate cannot be negative. Only the amplitude and phase parameters were independently fitted across different binocular correlation levels, because the differences in these two parameters characterize the correlation-based and match-based representations (Figure 1B). The other parameters were shared across different correlation levels. The fmincon function in the MATLAB Optimization Toolbox was used for finding the parameter combination that minimizes the summed squared error between the single-trial firing rates and Gabor functions. The goodness of fit was estimated by taking the R2 between the mean firing rates and the best-fitted Gabor function separately for each correlation level. After fitting, we selected 76 MT and 71 V4 disparity-selective neurons that had good fitting quality for the responses to cRDSs (R2\u00a0>0.6).\n\n#### Signed amplitude ratio\n\nTo characterize how a decrease in binocular correlation from 100% changes disparity tuning, we devised the signed amplitude ratio by modifying a conventional metric, the amplitude ratio (Cumming and Parker, 1997). We computed the signed amplitude ratio at each level of binocular correlation for each cell. The conventional amplitude ratio quantifies how much the fitted Gabor amplitude changes because of the anticorrelation of stereograms. The conventional metric was given a sign that was determined based on how anticorrelation changed the shape of disparity tuning. When anticorrelation inverted the shape, we gave a negative sign. We detected the shape inversion based on the change in the symmetry phase (see below). The symmetry phase difference between two tuning curves had to be smaller than \u22120.5\u03c0 or larger than 0.5\u03c0 for the shape inversion to be detected.\n\n#### Reflected symmetry phase\n\nWhen the cycle of the carrier sinusoid is much larger than the Gaussian envelope width, the Gabor phase may not be a good indicator for the true shape of disparity-tuning curves (Read and Cumming, 2004). In this case, the sinusoidal carrier does not constrain the shape of the fitted Gabor function. Accordingly, the neurons with even-symmetric tuning curves can be classified as odd symmetric if we use the fitted value of the carrier phase (confirmed in our data set). We therefore characterized the shape of the disparity-tuning curve by calculating the symmetry phase (Read and Cumming, 2004). This metric directly estimates the relative weights of even-symmetric and odd-symmetric components in the overall shape of the fitted tuning curve. The symmetry phase of zero or \u03c0 corresponds to the pure even symmetry, whereas the symmetry phase of \u00b1 \u03c0/2 corresponds to pure odd symmetry. To construct a metric that monotonically quantifies the tuning symmetry, we devised reflected symmetry phase. We changed the symmetry phase to the absolute value. Then, we wrapped the absolute value into the range from zero (purely even symmetric) to \u03c0/2 (purely odd symmetric) by reflecting it at \u03c0/2.\n\n#### Area ratio\n\nWe characterized how well each of the recorded disparity-selective neurons followed the correlation-based or match-based prediction using their responses over the entire range of binocular correlation. This analysis consisted of two steps. First, we characterized how the signed amplitude ratio changed as a function of binocular correlation. Although the simplest examples shown in Figure 4A are linear functions, we fitted a quadratic function to the observed data and this often showed nonlinear trends (Figure 4C,D). The quadratic coefficient was almost always positive, meaning that the nonlinearity was expansive (84% for MT, 90% for V4). We quantified the degree of nonlinearity using the ratio of the quadratic coefficient to the linear coefficient from the best-fitted quadratic function (Britten et al., 1993). The ratio was significantly higher than zero for both MT and V4 (MT: median, 0.02; lower-quartile, 0.0057; upper-quartile, 0.0597; two-sided Wilcoxson signed-rank test, p=3.6\u00a0\u00d7\u00a010\u221214; V4: median, 0.02; lower-quartile, 0.0116; upper-quartile, 0.028; p=2.4\u00a0\u00d7\u00a010\u221213), validating our use of quadratic functions. The function was constrained to take the value of one at 100% correlation. The sum-squared error was minimized. Second, we calculated the area ratio to quantify how well the fitted quadratic function followed the correlation-based prediction versus the match-based prediction (Figure 4A,B). The denominator of the area ratio was the area (integral) of the fitted quadratic function across the range where the fitted function was positive (gray triangle in Figure 4B). The numerator was the area of the function over the range where the function was negative (blue triangle). Because the correlation-based representation should have perfectly inverted disparity-tuning curves for two binocular correlation values with the same magnitude but opposite signs, it should lead to an area ratio of one. By contrast, the match-based representation should have a flat tuning curve at \u2212100% correlation, leading to an area ratio of zero.\n\n#### Signed disparity discrimination index\n\nThe conventional DDI measures the disparity discriminability of a neuron as follows (Prince et al., 2002):\n\n$$\nDDI\u00a0=\u00a0\\frac{R_{pref}\u2212R_{null}}{R_{pref}\u2212R_{null}+2\\sqrt{SSE/(N\u2212M)}}\u00a0,\n$$\n\nwhere Rpref and Rnull indicate the mean firing rates of a neuron at its preferred and null disparities, respectively (in response to cRDSs). The SSE is the sum of the squared error of single-trial responses (around the mean; that\u00a0is, the tuning curve); N and M indicate the total number of trials and the number of tested disparities, respectively. A DDI of 0 indicates no selectivity (i.e., a completely flat tuning curve); a DDI of 1 indicates that the tuning curve amplitude is so large that the noise level is negligible.\n\nWe wanted to compute DDIs using small, sliding time windows to examine how the disparity selectivity developed in MT and V4. Therefore, we modified the conventional DDI as follows:\n\n$$\nsDDI(t)\u00a0=\u00a0\\frac{R_{pref}(t)\u2212R_{null}(t)}{|R_{pref}(t)\u2212R_{null}(t)|+2\\sqrt{SSE(t)/(N\u2212M)}}\u00a0,\n$$\n\nwhere t indicates the time from the stimulus onset. The firing rates were computed over the window\u00a0\u00b15 ms around the time t. Note that we defined the preferred and null disparities based on the responses over the entire stimulus duration (as for the standard DDI), because our aim was to quantify the instantaneous selectivity that was congruent to the overall selectivity. If we defined the preferred and null disparities at each time t, the sDDI value would always be above zero (due to the circular logic), complicating the interpretation. With our definition, the sDDI could have a negative value when the selectivity at time t differed from the selectivity over the entire stimulus duration. This tended to happen more often when t was small, and well before the cell\u2019s response latency. During this period, responses are noisy and the sign of the sDDI is stochastic.\n\n#### Cumulative Gaussian function for the sDDI time course\n\nWe fitted the cumulative Gaussian function with an amplitude parameter (Figure 8B) to the sDDI time course for MT and V4. During the fitting, we minimized the sum of the squared errors between the fitted function and the mean sDDI (averaged across cells in each area). We used bootstrapping to estimate the 68% confidence intervals of fitted parameter values. When constructing an artificial data set, we resampled the neurons with replacement for each area (N\u00a0=\u00a083 and 78 for MT and V4, respectively) and computed the new sDDI mean value at each time point. The confidence interval was computed based on 10,000 resampled data sets.\n\n#### Computation of the area ratio without model fitting\n\nWe computed the area ratio entirely without model fitting and confirmed the same conclusion. For this model-free analysis, we substituted the amplitude parameter of the fitted Gabor function with the peak-to-trough difference of raw disparity-tuning data. The sign of the amplitude ratio was determined using the sign of the correlation coefficient between the raw tuning data at 100% binocular correlation and those at lower binocular correlations. This was because the tuning-curve inversion should lead to a negative correlation coefficient. We also substituted the quadratic-function fitting to signed amplitude-ratio data with the piecewise linear interpolations between two adjacent raw data points. Then, we calculated the area ratio based on the areas surrounded by these piecewise linear interpolations and the horizontal baseline (zero signed amplitude ratio). The numerator and denominator of the area ratio were the net areas below and above baseline, respectively. For the model-free analysis, we used our entire data set (83 MT and 78 V4 disparity-selective neurons).\n\n### Simulation\n\nWe simulated the responses of the standard disparity energy model (Ohzawa et al., 1990) and the threshold energy model (Doi and Fujita, 2014; Lippert and Wagner, 2001). For the standard energy model, we subtracted out the monocular response terms to isolate the binocular response term of a complex cell. For the threshold energy model, single-frame responses from the standard model were half-wave rectified and then temporally averaged. Subtraction of the monocular terms before subjecting model responses to output nonlinearity was performed in previous studies (Thomas et al., 2002; Doi and Fujita, 2014). For the details of the energy model, see Doi et al., 2013 (Experiment 3). Briefly, the model parameter values we used were: Gaussian envelope sigma (for both vertical and horizontal orientations), 0.05\u00b0; sinusoidal carrier frequency, three cycles/\u00b0. Both the position and phase RF disparities were zero.\n\nOur goal was to examine the effects of RF size on the model responses. The most convenient way to simulate the change in RF size was to fix the size and vary the spatial scale of the random dot stereograms (RDSs), because RDSs consisted of discrete dots. We varied the dot size from 1 pixel\u00a0\u00d7\u00a01 pixel to 16 pixels\u00a0\u00d7\u00a016 pixels (0.0175\u00b0/pixel). This corresponded to relative RF sizes ranging from 0.7 to 11.4 (the relative RF size was defined as 4 \u00d7 the RF envelope\u2019s standard deviation relative to the dot size). Dot density was also varied to maintain\u00a0~25% of non-background pixels (if the dots had not overlapped). Both RFs and stimuli were defined as 37 pixels\u00a0\u00d7\u00a037 pixels. A single trial consisted of 64 frames (i.e., independent dot patterns). We simulated the average response over 100 trials in each condition.\n\nFor disparity-tuning curves, we simulated 11 disparity values from \u221220 to 20 pixels and seven binocular correlation levels from \u2212100% to 100% (Figure 9C). For the signed amplitude ratio, we tested three disparity values (\u221220, 0, and\u00a020) and 11 correlation levels from \u2212100% to 100% (Figure 9D). The tuning peak or trough was computed based on the responses to zero disparity, while the tuning baseline was computed based on the responses to disparity values of \u221220 and 20 pixels. We linearly interpolated discrete data points in Figure 9D to compute the area ratio. Figure 9\u2014figure supplement 1A shows the distributions of instantaneous responses (i.e., responses to individual dot patterns before temporal averaging). Each distribution was based on 64 frames\u00a0\u00d7\u00a0100 trials.\n",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "23ee4049-d323-40eb-b7af-3b7e9f317f37",
+      "submission_id": "d03e0323-b25c-46b3-8e81-f5c76320a76d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Wang Roe, Zhejiang University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58749.sa1](https://doi.org/10.7554/eLife.58749.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThere are very few studies that use a well-controlled stimulus paradigm to quantitatively compare responses in the dorsal and ventral visual pathways. By using a single anti-correlated random dot stimulus, this elegant paradigm nicely illustrates the match-based behavior of V4 neurons vs the correlation-based behavior of MT neurons. In addition, despite the stimulus being a non-moving RDS stimulus, V4 and MT are clearly distinguished by response strength and latency. This study makes a significant contribution to the field by solidifying dorsal/ventral pathway distinctions in disparity processing and identifies a key perceptually relevant test that unequivocally and quantitatively distinguishes stereoscopic function in these two pathways.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Specialized contributions of mid-tier stages of dorsal and ventral pathways to stereoscopic processing in macaque\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Anna Wang Roe as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Chris Baker as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Andrew J Parker (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis is an interesting paper that contains a very valuable comparison of neuronal performance in binocular vision between two visual areas, one (V5/MT) in the dorsal stream and the other (V4) in the ventral stream. The paper builds upon a number of previous findings from this research group and others using the technique of testing binocular visual neurons with inputs that vary from being strongly correlated between left and right eyes' images (random dot stereograms, RDS) to complete anti-correlation (anti-random dot stereograms, aRDS). The prediction is that neurons in V4 behave in a match-based way and MT in a correlation-based way (aRDS produces inversion in curve correlation). The data support this prediction well. That is, V4 neurons show greatly reduced \u201cnegative part\u201d of the tuning curve, consistent with a non-linear exclusion operation. MT neurons, in contrast, exhibit robust negative parts of the tuning curves, similar to responses of V1 neurons. The results suggest significant differences in the visual processing of binocular information in the two areas.\n\nThe results compare the response to two different ways of manipulating the binocular correlation structure of images. The first varies from correlated (+1) to anticorrelated (-1) by replacing some dot pairs in matched locations in the left and right eyes with dots placed at randomly chosen locations in the left and right eyes. With this manipulation, as dots in matched locations are replaced by dots in randomly chosen locations, the correlation level of two images falls away from +1 and -1, eventually approaching 0 when all dots are in randomly chosen locations. In the second manipulation, dots remain in their matched locations but the proportion of them that are correlated or anticorrelated is varied. This manipulation arrives at an interesting combination of dots which is half correlated and half anticorrelated: the average correlation of such a figure is zero, but the structural distribution of correlations is different from the previous manipulation in which randomly chosen dot locations are applied. The authors exploit this and call this second stimulus half-matched, because half of the dots have positive correlation and the signal from these dots leads to a perceptual sense of depth, whereas there is no specific depth apparent when the images are binocularly uncorrelated by placing dots in random locations.\n\nFor both these types of stimulus with an average of zero correlation, the response of an idealized detector of binocular correlation (such as the Ohzawa, DeAngelis and Freeman model) would naturally be zero in both cases. However, as the authors recognize, the slightest non-linearity in neural processing would lead to different responses to these two stimuli. Therefore, the authors have devised a way of assessing the responses to these two stimuli across the whole range of correlation values. This is helpful and presents some interesting findings.\n\nEssential revisions:\n\n1) Area-ratio measure: A major concern is that not every aspect of the data will have been captured by the new area-ratio measure. The issue is the relationship between signed-amplitude ratio and binocular correlation (as sketched in Figure 4A of the submitted paper). The assumption of the paper is that this is always monotonic as a function of correlation, but there are already clear published examples where this is not true (Figure 1A of Krug et al., 2004 is one example). In this case, the relationship between signed-amplitude ratio and binocular correlation would be V-shaped and nonlinear, not monotonic and linear as shown in Figure 4A). So, the empirical question would be whether the data-sets for this paper contain any signs of this non-linear relationship.\n\n2) Symmetry: (a) The main finding here is that the disparity tuning symmetry is correlated with the disparity representation in both MT and V4. More specifically, neurons with even-symmetric tuning tended to have match-based representations and neurons with odd-symmetric tuning tended to have correlation-based representations. Although the correlation was rather robust in MT (r = 0.55), in V4 this correlation was weak (r = 0.34). The authors should acknowledge the fact that tuning symmetry could only explain 11% of the variance in the disparity representation metric (the area ratio). Maybe the correlation coefficient did not capture the nonlinear relationship between the two metrics in V4, and therefore other ways to quantify this relationship should be considered. (b) The authors spend a section in the Discussion on response symmetry. However, it is not clear what the functional significance of this finding is (beyond the obvious). What new offered by the symmetry finding? \"neurons with even-symmetric tuning preferentially constituted the neural solution to the correspondence problem in extrastriate areas.\" Is this surprising? Somehow the message did not come through.\n\n3) Novelty and significance: Precisely what new has been learned here? This must be spelled out clearly. One gets the impression that the main observations in this study are not new. The authors themselves published work on V4 (some of these data were used in this study), and Krug et al., 2003 described the responses of MT neurons to anticorrelated disparity. (Possibly the only difference being the MT neurons with an area ratio of 1, which were described in Krug et al. but were almost absent in this study.) Perhaps the most novel aspect of this study is the use of traditional ventral pathway stimulus (static RDS and aRDS stimuli) for dorsal pathway study. These results (fast robust response) serve to further support the view of MT/dorsal pathway in action vision. The V4 findings, while well conducted, do not significantly change or extend our view of V4 function in binocular disparity.\n\n4) Overstated conclusions: (a) The conclusion that the data demonstrate \u201ca general principle of the stereoscopic system both within and across the dorsal and ventral pathways\u201d seems too strong based on this study in only two areas. For this conclusion, we need data in many other areas. Nevertheless, I also acknowledge that this will not be easy because most visual areas contain either a strongly match-based representation (such as inferotemporal cortex and parietal areas AIP), or a correlation-based representation such as V1 and V2. (b) Similarly, the conclusion that \u201cneurons with even-symmetric tuning preferentially constituted the neural solution to the correspondence problem in extrastriate areas\u201d seems too general. (c) The authors statement that \u201cthe correlation-based disparity signals in MT directly contribute to some aspects of depth perception\u201d is too strong since the behavioral effects of microstimulation in MT could have been caused by the match-based neurons alone (since microstimulation does not discriminate between the two types of neurons).\n\n5) Visual eccentricities of recordings in V4 and MT: The mean eccentricities of the V4 neurons are ~9 deg while that of MT neurons are ~7 deg. This seems rather eccentric for V4. Do these findings hold for RFs in more central (0-3 deg) eccentricity? This is important as V4's primary function is in central vision.\n",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "31f23b9b-782d-41c4-9c35-aa4fcfb509ae",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C1",
+      "claim": "MT and V4 are mid-tier stages of the dorsal and ventral pathways, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "MT and V4 are counterpart mid-tier stages of the dorsal and ventral pathways, both of which causally contribute to stereoscopic depth judgment (DeAngelis et al., 1998; Shiozaki et al., 2012; Uka and DeAngelis, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing that MT and V4 causally contribute to stereoscopic depth judgment, supporting their characterization as mid-tier stages.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "84b629ef-8fb1-4f45-8ec1-4b79b5063e68",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C2",
+      "claim": "MT and V4 both causally contribute to stereoscopic depth judgment.",
+      "claim_type": "EXPLICIT",
+      "source": "MT and V4 are counterpart mid-tier stages of the dorsal and ventral pathways, both of which causally contribute to stereoscopic depth judgment (DeAngelis et al., 1998; Shiozaki et al., 2012; Uka and DeAngelis, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three previous studies demonstrating causal contributions of MT and V4 to stereoscopic depth judgment.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "81adca8f-65bd-4266-98dc-fd704b138709",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C3",
+      "claim": "MT neurons transmitted disparity signals more quickly than V4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MT neurons transmitted disparity signals more quickly and robustly, whereas V4 or its upstream neurons transformed the signals into sophisticated representations more prominently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically in Figure 8 showing latency differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "160f0aea-0e8e-4d90-bc34-06861a2a424e",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C4",
+      "claim": "MT neurons transmitted disparity signals more robustly than V4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MT neurons transmitted disparity signals more quickly and robustly, whereas V4 or its upstream neurons transformed the signals into sophisticated representations more prominently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically in Figure 8 showing amplitude differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "f35eee2f-3c18-421f-98d7-90d7b68def58",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C5",
+      "claim": "V4 neurons transformed disparity signals into sophisticated representations more prominently than MT neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MT neurons transmitted disparity signals more quickly and robustly, whereas V4 or its upstream neurons transformed the signals into sophisticated representations more prominently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing differences in area ratios between MT and V4, indicating different types of disparity representations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "df79534c-142a-4ddf-82e0-793ae931f94a",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C6",
+      "claim": "Signaling speed and robustness were traded for transformation between the dorsal and ventral pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, signaling speed and robustness were traded for transformation between the dorsal and ventral pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined findings that MT has faster/stronger signals while V4 has more sophisticated representations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "66c3a77a-17d9-475d-90f0-30d803d3876f",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C7",
+      "claim": "V4 neurons had more even-symmetric tuning than MT neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The key factor in this tradeoff was disparity-tuning shape: V4 neurons had more even-symmetric tuning than MT neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7 comparing the distributions of reflected symmetry phase between MT and V4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "4ed12814-77fb-4d1d-8d85-ee8a8219f116",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C8",
+      "claim": "Tuning symmetry predicted the degree of signal transformation across neurons within each area.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the tuning symmetry predicted the degree of signal transformation across neurons similarly within each area, implying a general role of tuning symmetry in the stereoscopic processing by the two pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6 demonstrating correlations between tuning symmetry and area ratio within MT and V4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "d14b8e43-b7b8-411c-8d4d-dbfb0c828d64",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C9",
+      "claim": "The dorsal pathway is implicated in spatial vision and vision for action.",
+      "claim_type": "EXPLICIT",
+      "source": "In the visual systems of human and non-human primates, the dorsal pathway is implicated in spatial vision and vision for action, whereas the ventral pathway is implicated in object recognition and vision for perception (Goodale and Milner, 1992; Ungerleider and Mishkin, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational studies on the dorsal and ventral pathways.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "90d6537e-a341-4af9-baff-a73b5f9c4b18",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C10",
+      "claim": "The ventral pathway is implicated in object recognition and vision for perception.",
+      "claim_type": "EXPLICIT",
+      "source": "In the visual systems of human and non-human primates, the dorsal pathway is implicated in spatial vision and vision for action, whereas the ventral pathway is implicated in object recognition and vision for perception (Goodale and Milner, 1992; Ungerleider and Mishkin, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational studies on the dorsal and ventral pathways.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "8797a14d-c35c-4650-84c1-ea9085a9ceae",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C11",
+      "claim": "Both dorsal and ventral pathways process the same visual cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to initial speculation, both pathways process the same visual cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies showing shape, color, and motion selectivity in both pathways.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "7c7f9f40-b558-4f53-856b-45d19aec9cb3",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C12",
+      "claim": "Neurons with shape and color selectivity are found in both ventral and dorsal areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons with shape and color selectivity are found not only in ventral areas but also in dorsal areas (Seidemann et al., 1999; Sereno and Maunsell, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies demonstrating shape and color selectivity in dorsal areas.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "fc72b8c7-726d-41da-b986-8ee25a532944",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C13",
+      "claim": "Neurons with motion direction selectivity are found in both dorsal and ventral areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, neurons with motion direction selectivity are found not only in dorsal areas but also in ventral areas (Desimone and Schein, 1987; Li et al., 2013; Mountcastle et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies demonstrating motion direction selectivity in ventral areas.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "81564a28-e798-4cd0-8f17-17180ec838ff",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C14",
+      "claim": "Binocular disparity is the positional difference between images projected to the left and right eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most notable visual cues in this regard is binocular disparity, the positional difference between images projected to the left and right eyes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition of binocular disparity in vision science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "ec8bab7e-38bf-42b2-a234-e17b0f475c8a",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C15",
+      "claim": "Binocular disparity is used for recognition of 3D objects, visually guided 3D action, and navigation through the 3D environment.",
+      "claim_type": "EXPLICIT",
+      "source": "As a precise cue for stereoscopic depth, binocular disparity is used for many functions, including the recognition of 3D objects, visually guided 3D action (e.g., reaching, grasping, and vergence eye movement), and navigation through the 3D environment (e.g., moving through obstacles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about the functional roles of binocular disparity in vision.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "93e49660-78eb-4a0b-9c5d-a2aba0114c27",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C16",
+      "claim": "The visual system processes binocular disparity along both the dorsal and ventral pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "As binocular disparity is used for both 'what' (object vision) and 'where' (spatial vision) functions, the visual system processes binocular disparity along both the dorsal and ventral pathways (Neri, 2005; Orban et al., 2006; Parker, 2007; Roe et al., 2012; Welchman, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies on disparity processing in both pathways.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "81f83057-e9cf-4aaa-af96-358640bb9a44",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C17",
+      "claim": "To encode binocular disparity faithfully, the visual system should identify corresponding visual features in left and right retinal images.",
+      "claim_type": "EXPLICIT",
+      "source": "To encode binocular disparity faithfully in accordance with the geometry of the 3D world, the visual system should identify the corresponding visual features in left and right retinal images that originate from the same surface point in the 3D space (Julesz, 1971; Marr and Poggio, 1976; Marr and Poggio, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational work on the stereo correspondence problem.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "d12d01c5-aa5b-4ec4-92c2-ffdabb424290",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C18",
+      "claim": "Anticorrelated random-dot stereograms (aRDSs) are used to probe the neuronal process for stereo correspondence.",
+      "claim_type": "EXPLICIT",
+      "source": "A conventional method to probe the neuronal process for stereo correspondence is to measure the disparity selectivity for anticorrelated random-dot stereograms (aRDSs) (Chen et al., 2017; Cumming and Parker, 1997; Goncalves and Welchman, 2017; Janssen et al., 2003; Krug et al., 2004; Kumano et al., 2008; Nieder and Wagner, 2001; Ohzawa, 1998; Samonds et al., 2013; Takemura et al., 2001; Tanabe et al., 2004; Theys et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by numerous citations to previous studies using aRDSs to study stereo correspondence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "f9a13d4d-7187-460b-9aa0-5039a7a4fc33",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C19",
+      "claim": "In aRDSs, one eye image is contrast-reversed to eliminate the natural solution to the correspondence problem.",
+      "claim_type": "EXPLICIT",
+      "source": "In aRDSs, one eye image is contrast-reversed to eliminate the natural solution to the correspondence problem; the natural solution requires the depth of the corresponding points to vary smoothly over space, but such a solution does not exist for aRDSs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard explanation of how aRDSs work, based on established knowledge in vision science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "43091f35-047c-40e5-8ec7-c20fa96ad170",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C20",
+      "claim": "Many V1 neurons falsely encode the disparity embedded in aRDSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the activity of many V1 neurons encodes binocular disparity, these neurons also falsely encode the disparity embedded in aRDSs (Cumming and Parker, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study demonstrating this property of V1 neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "43aae5e3-d125-435f-b0d9-d9da40ac9237",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C21",
+      "claim": "Simple computations akin to interocular cross-correlation explain the primitive disparity representation in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Simple computations akin to interocular cross-correlation explain this primitive disparity representation (Ohzawa et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a foundational study on the disparity energy model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "a6f84048-5f25-4c80-8b22-139fd8c687c6",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C22",
+      "claim": "83 disparity-selective neurons were recorded in MT.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared how neurons in MT and V4 responded to graded anticorrelation by examining the responses of 83 disparity-selective neurons in MT (monkey O, N = 32; monkey A, N = 51) and 78 disparity selective neurons in V4 (monkey O, N = 29; monkey I, N = 49).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sample size from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "ccbad382-cfc9-4db8-bcab-866c0b9295fb",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C23",
+      "claim": "78 disparity-selective neurons were recorded in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared how neurons in MT and V4 responded to graded anticorrelation by examining the responses of 83 disparity-selective neurons in MT (monkey O, N = 32; monkey A, N = 51) and 78 disparity selective neurons in V4 (monkey O, N = 29; monkey I, N = 49).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sample size from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "42499a36-d5bb-4793-8a54-d8e64bb3ec62",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C24",
+      "claim": "Disparity selectivity was determined from responses to cRDSs using a Kruskal-Wallis test with p<0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Disparity selectivity was determined from the responses to cRDSs (Kruskal\u2013Wallis test; p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the statistical method used to determine disparity selectivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "fd577792-38c5-4911-9b65-d08c1ae1c9df",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C25",
+      "claim": "The example MT neuron's response pattern was reminiscent of the correlation-based representation of disparity.",
+      "claim_type": "EXPLICIT",
+      "source": "The change observed for the example MT neuron is reminiscent of the correlation-based representation of disparity: when the correlation level decreased from 100% to 0% (hmRDS), the tuning amplitude gradually decreased to almost zero (flat curve).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the observed data from a single example neuron shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "cabbfa0d-fe4b-46c4-b120-84ed76f74c8c",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C26",
+      "claim": "The example V4 neuron's response pattern was closer to the match-based representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to this MT example, the response pattern of the example V4 neuron was closer to the match-based representation: the tuning amplitude was noticeably retained at 0% correlation with a relatively unchanged tuning phase (shape).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the observed data from a single example neuron shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "8e9ac068-eae1-438c-b61f-4058fd71f31d",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C27",
+      "claim": "In MT, only 1.2% of neurons were disparity selective at -30% correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction was minimal at \u221230% correlation, where only one out of 83 MT neurons (1.2%) was disparity selective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of the MT population data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "1d1adf25-f2b4-408d-904c-98e0ed35f6a9",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C28",
+      "claim": "In MT, 25.3% of neurons were disparity selective at -100% correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "With further decrease from \u221230% to \u2212100%, the fraction increased to 21/83 (25.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of the MT population data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "8e309e3a-65ec-4ef8-aa24-8b027cb5e792",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C29",
+      "claim": "In MT, 75% of neurons inverted their tuning curves at -100% correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, significant fractions of neurons inverted their tuning curves at the two most negative correlation levels we tested (75% [62/83] and 78% [65/83] of neurons at the \u2212100% and \u221270% correlation levels, respectively; p=3.8 \u00d7 10\u22126 and 1.1 \u00d7 10\u22127; H0: the fraction is 0.5; binomial test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of the MT population data with binomial test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "303ec951-2e27-4c80-b503-b4df1f3046c6",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C30",
+      "claim": "In MT, 78% of neurons inverted their tuning curves at -70% correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, significant fractions of neurons inverted their tuning curves at the two most negative correlation levels we tested (75% [62/83] and 78% [65/83] of neurons at the \u2212100% and \u221270% correlation levels, respectively; p=3.8 \u00d7 10\u22126 and 1.1 \u00d7 10\u22127; H0: the fraction is 0.5; binomial test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of the MT population data with binomial test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "e4f728c1-5c1e-4128-8b50-bbc62c41771e",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C31",
+      "claim": "The V4 population data lacked the characteristic U-shaped pattern of correlation-based representation.",
+      "claim_type": "EXPLICIT",
+      "source": "The V4 population data were markedly different from the MT data, entirely lacking the aforementioned characteristics of the correlation-based representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of population data shown in Figure 3B versus Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "7475c795-af00-4584-add7-12eb4421a44c",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C32",
+      "claim": "In V4, the fraction of neurons with inverted tuning gradually increased with gradual anticorrelation but did not surpass the chance level.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of neurons with inverted tuning gradually increased with gradual anticorrelation but did not surpass the chance level (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of the V4 population data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "62e61b6b-d2ec-47bb-bee2-fe4746faddc5",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C33",
+      "claim": "The median area ratio was 0.50 in MT and significantly larger than 0.",
+      "claim_type": "EXPLICIT",
+      "source": "In MT, the median area ratio was 0.50 and significantly larger than 0 (two-sided Wilcoxson signed-rank test, p=1.6 \u00d7 10\u221210).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of the area ratio distribution in MT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "10e9edaf-f176-424e-9a5b-b60ccaa98a8b",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C34",
+      "claim": "The median area ratio was 0.17 in V4 and significantly lower than that in MT.",
+      "claim_type": "EXPLICIT",
+      "source": "In V4, it was 0.17 and significantly lower than that in MT (two-sided Mann\u2013Whitney U-test, p=3.6 \u00d7 10\u22124).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis comparing area ratio distributions between MT and V4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "53a8efa4-7d2f-4732-98de-510ade30ceed",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C35",
+      "claim": "The distribution of the amplitude ratio was indistinguishable between MT and V4.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the amplitude ratio was indistinguishable between the two areas (Figure 5D\u2013F). The median values were 0.32 and 0.30 for MT and V4, respectively (two-sided Mann\u2013Whitney U-test, p=0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical comparison of amplitude ratio distributions between MT and V4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "a25d24c6-acbb-4681-8a46-4015dd1b450c",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C36",
+      "claim": "The area ratio was positively correlated with the reflected symmetry phase in MT.",
+      "claim_type": "EXPLICIT",
+      "source": "The area ratio was positively correlated with the reflected symmetry phase both in MT and V4 (Figure 6A,B; MT: rs = 0.41, p=1.4 \u00d7 10\u22123; V4: rs = 0.34, p=0.025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on correlation analysis shown in Figure 6A with Spearman's correlation coefficient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "1114b6e8-c758-463a-840d-1c06a437426a",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C37",
+      "claim": "The area ratio was positively correlated with the reflected symmetry phase in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "The area ratio was positively correlated with the reflected symmetry phase both in MT and V4 (Figure 6A,B; MT: rs = 0.41, p=1.4 \u00d7 10\u22123; V4: rs = 0.34, p=0.025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on correlation analysis shown in Figure 6B with Spearman's correlation coefficient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "83a08263-9e98-4eba-9d7c-973ddc7d889e",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C38",
+      "claim": "The latency of disparity selectivity was 78 ms in MT and 101 ms in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "The latency was 78 ms in MT and 101 ms in V4 (Figure 8C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on fitting cumulative Gaussian functions to the time course of disparity selectivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "865478ca-8099-4dbb-801a-f6314ec1a958",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C39",
+      "claim": "The peak sDDI was 0.18 in MT and 0.13 in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak sDDI was 0.18 in MT and 0.13 in V4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on fitting cumulative Gaussian functions to the time course of disparity selectivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "92f1178f-d7bb-4a86-9f25-a4e554d83e41",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C40",
+      "claim": "In V4, the latency was 29% greater than in MT.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, compared with MT, in V4 the latency was 29% greater and the strength was 28% lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of fitted parameters from the time course analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "d15072e1-bbd1-4697-a70d-e132ed8d01cd",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C41",
+      "claim": "In V4, the strength of disparity selectivity was 28% lower than in MT.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, compared with MT, in V4 the latency was 29% greater and the strength was 28% lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of fitted parameters from the time course analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "57d46e5e-4055-4f0c-b615-e4e2df375f6a",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C42",
+      "claim": "The differences in latency and amplitude between MT and V4 were statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences were statistically significant (p=0.0083 and p<1.0 \u00d7 10\u22124 for the latency and amplitude differences between MT and V4, respectively; 10,000 bootstrap resamples).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on bootstrap statistical analysis of the fitted parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "810014ce-31f0-41d5-9714-900e4ff401aa",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C43",
+      "claim": "The mean eccentricity was 6.9\u00b0 for MT and 9.0\u00b0 for V4.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean eccentricity was 6.9\u00b0 (s.d. = 3.3\u00b0) for MT and 9.0\u00b0 (s.d. = 3.0\u00b0) for V4 in our data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the measured eccentricity values from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "02dcceb0-979d-43d5-ac96-592e16eb800c",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C44",
+      "claim": "The response of the threshold energy model was more consistent with the match-based representation when the relative RF was smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "The response of the threshold energy model was more consistent with the match-based representation when the relative RF was smaller (i.e., when the eccentricity was smaller).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on simulation results shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "ef94ef88-1532-432b-bf49-43e98722129d",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C45",
+      "claim": "The area ratio monotonically increased with the relative RF size in the threshold energy model.",
+      "claim_type": "EXPLICIT",
+      "source": "The area ratio monotonically increased with the relative RF size, indicating that the models with smaller RFs represent binocular disparity in a more match-based manner compared to the models with larger RFs (Figure 9E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on simulation results shown in Figure 9E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "7c4c508f-6207-4e17-a77b-339307ff3cdb",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C46",
+      "claim": "MT might consist of two groups of neurons: one with the match-based representation and the other with the intermediate representation.",
+      "claim_type": "EXPLICIT",
+      "source": "MT might consist of two groups of neurons: one with the match-based representation and the other with the intermediate representation (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the potentially bimodal distribution of area ratios in MT shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "3d00f86d-cb86-461e-95c0-3eeec21e5280",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C47",
+      "claim": "V4 lacked the intermediate group of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "V4 lacked the intermediate group (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the unimodal distribution of area ratios in V4 shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "8a36b0b2-7a7e-49c7-80aa-1fa53cd5a2f3",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C48",
+      "claim": "The fast and robust disparity signals in MT should be useful for rapid three-dimensional eye movements and urgent depth judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "The fast and robust disparity signals in MT should be useful for rapid three-dimensional eye movements (Masson et al., 1997) and urgent depth judgments in response to correlated stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observed properties of MT neurons and a citation to a previous study on vergence eye movements.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "e7f98bef-2e77-4b9c-b398-671604bd5b11",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C49",
+      "claim": "MT pathway quickly and robustly relays the correlation-based disparity signals to the behavioral stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that MT pathway quickly and robustly relays the correlation-based disparity signals to the behavioral stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation based on the experimental findings about MT's disparity representation and signaling properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "f5b70314-5738-4de3-9a3c-dabdb79cc8c9",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C50",
+      "claim": "The link between disparity-selective neurons in MT and perceptual judgment has been demonstrated extensively using a coarse depth task.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of MT's disparity signals should not be limited to visually guided actions, because the link between the disparity-selective neurons in MT and perceptual judgment has been demonstrated extensively using a coarse depth task (Chowdhury and DeAngelis, 2008; DeAngelis et al., 1998; Uka and DeAngelis, 2004) and a structure-from-motion task (Bradley et al., 1998; Dodd et al., 2001; Krug et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies demonstrating the link between MT activity and perceptual judgment.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "0d336f51-f0db-496d-a17e-2f341f42bdc9",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C51",
+      "claim": "Human depth judgment exhibits a trace of the correlation-based disparity representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Human depth judgment does indeed exhibit a trace of the correlation-based disparity representation (e.g., reversed depth perception for aRDSs; Aoki et al., 2017; Tanabe et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous psychophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "fdac4b25-39e6-45a7-a800-6ebba6e1c04e",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C52",
+      "claim": "The inferred contribution of the correlation-based representation to perceived depth increases with the magnitude of stimulus disparity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the inferred contribution of the correlation-based representation to perceived depth increases with the magnitude of stimulus disparity (Doi et al., 2011) as well as with the stimulus pattern refresh rate (Doi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous psychophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "715e1188-7ee8-4a13-9ba3-19e263b8e257",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C53",
+      "claim": "MT contributes to coarse, but not fine, depth judgment.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude effect is consistent with the finding that MT contributes to coarse, but not fine, depth judgment (Uka and DeAngelis, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study on MT's contribution to depth judgment.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "d54a483d-0891-4301-a780-a17b175a0c65",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C54",
+      "claim": "The disparity signals in MT drive the reflexive vergence eye movement via the medial superior temporal area.",
+      "claim_type": "EXPLICIT",
+      "source": "We also suggest that the disparity signals in MT drive the reflexive vergence eye movement via the medial superior temporal area (Takemura et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggested interpretation based on the experimental findings and a citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "11463470-b7b1-41ab-a774-e7c9704ffbb1",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C55",
+      "claim": "For anticorrelation, the vergence eye movement responds in the opposite direction from stimulus disparity with a reduced amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "For anticorrelation, the vergence eye movement responds in the opposite direction from stimulus disparity with a reduced amplitude (Masson et al., 1997), suggesting that the driving signal is intermediate between the match-based and correlation-based representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study on vergence eye movements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "f9ad83bc-a356-4785-980a-53b32c599e59",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C56",
+      "claim": "The vergence response can start to rise only 60-70 ms after the stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The vergence response can be very fast, starting to rise only 60\u201370 ms after the stimulus onset (Masson et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study on vergence eye movements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "a7e1c26a-75a1-4796-a013-7be8e6ef7885",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C57",
+      "claim": "MT neurons represent the 'absolute' disparity of a stimulus, without being sensitive to the disparity of a reference plane.",
+      "claim_type": "EXPLICIT",
+      "source": "Our suggestion is also consistent with the finding that MT neurons represent the 'absolute' disparity of a stimulus, without being sensitive to the disparity of a reference plane (Uka and DeAngelis, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study on MT's disparity representation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "de6d8d93-59b2-4b04-8590-7fc6ffab34de",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C58",
+      "claim": "V4 is likely to be in the middle of the neural process of solving the binocular correspondence problem along the ventral pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "V4 is likely to be in the middle of the neural process of solving the binocular correspondence problem along the ventral pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings that V4 neurons show intermediate properties between V1 and IT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "56b6eb0f-2ec9-4d0f-8e67-fc24a469d208",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C59",
+      "claim": "The correspondence problem is not yet fully solved in the single-neuron activity in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea is the finding that the correspondence problem is not yet fully solved in the single-neuron activity we observed in V4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental finding that V4 neurons still show some disparity selectivity at negative correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "5ef69c13-804d-4ddf-9ccb-689afb19d6ef",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C60",
+      "claim": "V4 neurons have choice-predictive responses during a fine depth task.",
+      "claim_type": "EXPLICIT",
+      "source": "First, V4 neurons have choice-predictive responses during a fine depth task (Shiozaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "a163c055-05fc-46ac-aa51-ade8ed8c7b37",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C61",
+      "claim": "Microstimulation of a cluster of V4 neurons biases the judgment of fine depth in the way predicted from the response property of the stimulated cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, microstimulation of a cluster of V4 neurons biases the judgment of fine depth in the way predicted from the response property of the stimulated cluster (Shiozaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "d9e28848-c571-4868-86a5-39992a7d069a",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C62",
+      "claim": "V4 neurons encode the 'relative' disparity between the center and surround of their RFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, V4 neurons encode the 'relative' disparity between the center and surround of their RFs, a property necessary for supporting stereoacuity and a precursor for fixation-depth-invariant representation of 3D objects (Umeda et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "c7b093d4-aee7-4c94-bb59-f81d03d11506",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C63",
+      "claim": "V4 is involved in the encoding of 3D shape cues such as 3D slant.",
+      "claim_type": "EXPLICIT",
+      "source": "This is broadly consistent with the finding that V4 is involved in the encoding of 3D shape cues such as 3D slant (Hegd\u00e9 and Van Essen, 2005; Hinkle and Connor, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "cd8e1b24-0e5f-4f1f-a3b4-a1f5d54aecee",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C64",
+      "claim": "All procedures were approved by the Animal Experiment Committee of Osaka University.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Animal Experiment Committee of Osaka University (permit numbers: FBS-12\u2013016 and FBS-13-003-1) and conformed to the Guide for the Care and Use of Laboratory Animals issued by the National Institutes of Health, USA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "6eeb9bae-36db-479e-8560-cfcba46fae5f",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C65",
+      "claim": "Two Japanese monkeys were used for MT recording.",
+      "claim_type": "EXPLICIT",
+      "source": "We used two Japanese monkeys (Macaca fuscata) for MT recording (Monkey O, male, weighing 8.5 kg; Monkey A, female, weighing 5.7 kg), and one Japanese monkey (Monkey O) and one rhesus monkey (Monkey I, Macaca mulatta, male, weighing 6.5 kg) for V4 recording.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the animals used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "fafbd6d5-8473-43bc-8d7f-78eaa15d7717",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C66",
+      "claim": "One Japanese monkey and one rhesus monkey were used for V4 recording.",
+      "claim_type": "EXPLICIT",
+      "source": "We used two Japanese monkeys (Macaca fuscata) for MT recording (Monkey O, male, weighing 8.5 kg; Monkey A, female, weighing 5.7 kg), and one Japanese monkey (Monkey O) and one rhesus monkey (Monkey I, Macaca mulatta, male, weighing 6.5 kg) for V4 recording.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the animals used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "66b8ed31-6d16-4427-a311-e91d19e69e63",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C67",
+      "claim": "Monkey O provided data sets for both MT and V4.",
+      "claim_type": "EXPLICIT",
+      "source": "Monkey O provided data sets for both MT and V4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "b50a8348-ad09-4061-a5c3-add9b692baf1",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C68",
+      "claim": "The RDSs consisted of a central disk and a surrounding ring with no gap between them.",
+      "claim_type": "EXPLICIT",
+      "source": "The RDSs consisted of a central disk and a surrounding ring with no gap between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the stimulus structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "c23b7b7e-c061-4bc6-b7f7-cc5ef526d6c7",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C69",
+      "claim": "The central disk was positioned to cover the classical RF of a recorded neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "The central disk was positioned to cover the classical RF of a recorded neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the stimulus positioning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "3506abb9-1810-43da-99c1-db35ae0e89b6",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C70",
+      "claim": "The dot density was 25%.",
+      "claim_type": "EXPLICIT",
+      "source": "The dot density was 25%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the stimulus parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "57ecfb9f-8d4c-4f4f-af46-a9b0b2b924b7",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C71",
+      "claim": "Most MT neurons (65 out of 83) had their RFs in the lower visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of our MT neurons (65 out of 83) had their RFs in the lower visual field; RFs of all of our V4 neurons (N = 78) were located in lower visual field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the RF locations in the recorded sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "9a0ec3ae-c99b-458e-a34c-a1671a16e91e",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C72",
+      "claim": "RFs of all V4 neurons were located in lower visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of our MT neurons (65 out of 83) had their RFs in the lower visual field; RFs of all of our V4 neurons (N = 78) were located in lower visual field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the RF locations in the recorded sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "18d018d0-ae3d-429c-88cb-b45e507a89e7",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C73",
+      "claim": "There was no correlation between the area ratio and eccentricity in MT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no correlation between the area ratio (our metric for disparity representation) and eccentricity either in MT (Spearman's correlation rs = \u22120.035, p=0.79) or in V4 (rs = \u22120.065, p=0.68).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on correlation analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "354cfe60-9ee1-4ff6-b0df-0114be128833",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C74",
+      "claim": "There was no correlation between the area ratio and eccentricity in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no correlation between the area ratio (our metric for disparity representation) and eccentricity either in MT (Spearman's correlation rs = \u22120.035, p=0.79) or in V4 (rs = \u22120.065, p=0.68).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on correlation analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "0c1b7426-469f-43a1-9166-cd7d30076287",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C75",
+      "claim": "The division of labor between the dorsal and ventral visual pathways may embody the tradeoff between rapid and robust transmission of sensory signals and complex computation needed to derive elaborate sensory representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the division of labor between the dorsal and ventral visual pathways may embody the tradeoff between the rapid and robust transmission of sensory signals and the complex computation needed to derive elaborate sensory representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation that synthesizes the experimental findings into a broader theoretical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "810ef2f2-e646-4618-8d0f-7a29efd188ce",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C76",
+      "claim": "Vision related to action may depend more on the dorsal pathway because it benefits from rapid, robust sensory transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, vision related to action may depend more on the dorsal pathway because it benefits from rapid, robust sensory transmission, and so does visual motion perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation that connects the experimental findings to broader theories of dorsal/ventral pathway function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "d4c33456-ce95-43cb-b5db-52fb735f1eec",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "claim_id": "C77",
+      "claim": "The analyses of colors and objects may depend more on the ventral pathway because they require complex computations.",
+      "claim_type": "EXPLICIT",
+      "source": "The analyses of colors and objects may depend more on the ventral pathway because they require complex computations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation that connects the experimental findings to broader theories of dorsal/ventral pathway function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a5637fd5-543d-47e6-ba8c-eceab89648e8",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MT and V4 are mid-tier stages of the dorsal and ventral pathways that both causally contribute to stereoscopic depth judgment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 establish the anatomical and functional context for the study based on well-established prior literature. The citations to multiple previous studies (DeAngelis et al., 1998; Shiozaki et al., 2012; Uka and DeAngelis, 2006) provide strong support for these foundational claims about MT and V4's roles in stereoscopic processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study recorded from 83 disparity-selective neurons in MT and 78 in V4 using random-dot stereograms with graded anticorrelation, with appropriate ethical approval and experimental design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 and C64-C72 describe the experimental methodology, sample sizes, and ethical approvals. These are directly stated methodological facts that are internally consistent and appropriately documented. The use of one monkey (Monkey O) for both MT and V4 recordings (C67) provides valuable within-subject control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "ea69b693-c664-4a3c-90f1-473a248d71cc",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MT neurons showed characteristic correlation-based disparity representation with U-shaped selectivity patterns and tuning inversion at negative correlations, while V4 neurons lacked these features and showed match-based representation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 describe population-level differences between MT and V4 in their responses to graded anticorrelation stimuli. The statistical analyses (binomial tests, Kruskal-Wallis tests) are appropriate and the results show clear qualitative differences: MT shows 75-78% tuning inversion at -100% and -70% correlation (C29-C30) with significant p-values, while V4 shows gradual decrease without surpassing chance levels (C32). The data in Figure 3 support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "dab746d9-9c18-4fc3-bffc-74357c9e6400",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The area ratio (a novel metric quantifying disparity representation type) was significantly higher in MT (median 0.50) than V4 (median 0.17), while the conventional amplitude ratio showed no difference between areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 present the key quantitative finding using both a novel metric (area ratio) and conventional metric (amplitude ratio). The statistical tests are appropriate (Wilcoxon signed-rank, Mann-Whitney U-test) with highly significant p-values for area ratio differences (p=3.6\u00d710\u207b\u2074) but non-significant for amplitude ratio (p=0.47). This demonstrates that the novel graded anticorrelation approach reveals differences not detectable with conventional methods. Figure 5 and supplementary analyses (Figure 5\u2014figure supplements 3-4) provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "88b6d79b-c732-4962-b3e6-73fb5d8f3380",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Disparity-tuning symmetry predicted the type of disparity representation both within and across MT and V4, with even-symmetric neurons showing more match-based representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 and C7-C8 establish a fundamental relationship between tuning shape and representation type. The correlations are statistically significant in both areas (MT: rs=0.41, p=1.4\u00d710\u207b\u00b3; V4: rs=0.34, p=0.025) and V4 neurons have more even-symmetric tuning than MT (C7, Figure 7). However, the moderate correlation coefficients and modest R\u00b2 values (24% for MT, 20% for V4, Figure 6\u2014figure supplement 2) indicate that tuning symmetry explains only part of the variance, which the authors appropriately acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "fb1ed3ca-3fe8-407d-a239-9a9e4df65054",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MT transmitted disparity signals faster (78 ms vs 101 ms latency) and more robustly (peak sDDI 0.18 vs 0.13) than V4, representing a 29% latency advantage and 28% strength advantage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 and C3-C4 demonstrate MT's advantage in signaling speed and strength using time-resolved analysis of disparity selectivity. The cumulative Gaussian fitting approach is appropriate, bootstrap statistics confirm significance (p=0.0083 for latency, p<1.0\u00d710\u207b\u2074 for amplitude), and the results are shown in Figure 8. This finding is particularly notable given that the stimuli were designed for V4 (non-moving RDSs), potentially underestimating MT's advantage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "1360bd38-3ada-4ac4-b3bd-e063970186b8",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mean eccentricity differed between MT (6.9\u00b0) and V4 (9.0\u00b0), but area ratio showed no correlation with eccentricity in either area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C73-C74 address a potential confound. The eccentricity difference between areas is documented (C43), but correlation analyses show no relationship between eccentricity and area ratio in either MT (rs=-0.035, p=0.79) or V4 (rs=-0.065, p=0.68). This suggests the MT-V4 differences are not simply due to eccentricity differences, though the authors appropriately note limitations in detecting such relationships given the eccentricity range sampled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "91d91881-a0ed-42b5-b74d-c5b408379707",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Computational modeling showed that the threshold energy model produces more match-based representations when relative receptive field size is smaller, with area ratio monotonically increasing with RF size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 describe simulation results shown in Figure 9. The threshold energy model simulations systematically varied relative RF size and demonstrated the predicted relationship between RF size and representation type. This provides mechanistic insight into how the match-based representation could arise from correlation-based mechanisms through nonlinearity, though the authors appropriately note this is not a complete explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "b54edf7c-28f1-4ab4-82bf-fddcd87e86d2",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MT may consist of two groups of neurons (match-based and intermediate), while V4 lacks the intermediate group, based on potentially bimodal vs unimodal area ratio distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46-C47 propose a bimodal distribution in MT versus unimodal in V4. However, the bimodality test was not significant (Hartigan's dip test: p=0.24, C46), and the authors acknowledge uncertainty with 'might.' The bootstrap analysis (Figure 5\u2014figure supplement 1) shows two clusters for MT but this is not definitive. The quantile-quantile plots (Figure 5\u2014figure supplement 2) suggest MT follows normal distribution and V4 follows exponential distribution within the interquartile range, which is more consistent with different unimodal distributions than bimodality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "ec49ffa0-bc0f-42e0-881d-19127995d779",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The division of labor between dorsal and ventral pathways embodies a tradeoff between rapid/robust signal transmission (dorsal/MT) and complex computation for elaborate representations (ventral/V4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C75 synthesize the experimental findings into a broader theoretical framework. This interpretation is well-supported by the convergent evidence: MT shows faster/stronger but more primitive signals (C3-C4, C38-C42), while V4 shows slower/weaker but more sophisticated signals (C5, C33-C34). The tradeoff interpretation logically follows from the data, though it remains an interpretation rather than a directly tested hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "bd0c822a-def7-4a64-88b9-2e73894182e4",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MT's fast, robust correlation-based disparity signals likely contribute to rapid vergence eye movements, coarse depth perception, and urgent depth judgments, consistent with prior psychophysical and physiological findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C57 connect the current findings to functional roles based on extensive prior literature. The speculation about MT's role (C48-C49, C54) is appropriately qualified and supported by citations to relevant studies on vergence (C55-C56), perceptual judgment (C50-C51), and disparity magnitude effects (C52-C53). The consistency with absolute disparity coding (C57) strengthens the interpretation. While speculative, these claims are well-grounded in converging evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "58105656-2c83-42d4-ab48-6a99a40958c7",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "V4 is in the middle of solving the correspondence problem along the ventral pathway, contributing to fine depth perception, 3D shape encoding, and relative disparity representation, as supported by prior causal and physiological studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 interpret V4's role based on current findings and prior literature. The interpretation that V4 is 'in the middle' of solving correspondence (C58-C59) is supported by the observation that V4 neurons show intermediate properties. The functional roles are well-supported by citations to prior studies showing choice-predictive responses (C60), microstimulation effects (C61), relative disparity coding (C62), and 3D shape selectivity (C63). This provides a coherent framework for understanding V4's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish that both dorsal and ventral pathways process binocular disparity, that disparity requires solving the correspondence problem, and that V1 neurons show primitive correlation-based representations that falsely encode anticorrelated stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C21 provide essential background from established literature. These are well-supported by appropriate citations to foundational studies and represent accepted knowledge in the field. They establish the theoretical framework and motivation for the current study. No issues with these background claims are apparent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    },
+    {
+      "id": "fb39653c-47d2-469f-8296-fd04eac75dde",
+      "content_id": "1d80a225-f3ae-4aac-befb-8f88cb6be7b2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Vision for action may depend more on the dorsal pathway due to benefits from rapid transmission, while color and object analysis may depend more on the ventral pathway due to requirements for complex computation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 extend the tradeoff interpretation to broader theories of dorsal/ventral function. While speculative (appropriately qualified with 'may'), these claims provide a unifying framework connecting the current findings to established theories (Goodale and Milner, 1992; Ungerleider and Mishkin, 1982). The speculation is reasonable given the data, though it goes beyond what was directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:43.285757Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "31f23b9b-782d-41c4-9c35-aa4fcfb509ae",
+      "result_id": "a5637fd5-543d-47e6-ba8c-eceab89648e8"
+    },
+    {
+      "claim_id": "84b629ef-8fb1-4f45-8ec1-4b79b5063e68",
+      "result_id": "a5637fd5-543d-47e6-ba8c-eceab89648e8"
+    },
+    {
+      "claim_id": "a6f84048-5f25-4c80-8b22-139fd8c687c6",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "ccbad382-cfc9-4db8-bcab-866c0b9295fb",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "42499a36-d5bb-4793-8a54-d8e64bb3ec62",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "cd8e1b24-0e5f-4f1f-a3b4-a1f5d54aecee",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "6eeb9bae-36db-479e-8560-cfcba46fae5f",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "fafbd6d5-8473-43bc-8d7f-78eaa15d7717",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "66b8ed31-6d16-4427-a311-e91d19e69e63",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "b50a8348-ad09-4061-a5c3-add9b692baf1",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "c23b7b7e-c061-4bc6-b7f7-cc5ef526d6c7",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "3506abb9-1810-43da-99c1-db35ae0e89b6",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "57ecfb9f-8d4c-4f4f-af46-a9b0b2b924b7",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "9a0ec3ae-c99b-458e-a34c-a1671a16e91e",
+      "result_id": "5ae70dd0-052e-4cbd-849e-0ee83f82bb10"
+    },
+    {
+      "claim_id": "fd577792-38c5-4911-9b65-d08c1ae1c9df",
+      "result_id": "ea69b693-c664-4a3c-90f1-473a248d71cc"
+    },
+    {
+      "claim_id": "cabbfa0d-fe4b-46c4-b120-84ed76f74c8c",
+      "result_id": "ea69b693-c664-4a3c-90f1-473a248d71cc"
+    },
+    {
+      "claim_id": "8e9ac068-eae1-438c-b61f-4058fd71f31d",
+      "result_id": "ea69b693-c664-4a3c-90f1-473a248d71cc"
+    },
+    {
+      "claim_id": "1d1adf25-f2b4-408d-904c-98e0ed35f6a9",
+      "result_id": "ea69b693-c664-4a3c-90f1-473a248d71cc"
+    },
+    {
+      "claim_id": "8e309e3a-65ec-4ef8-aa24-8b027cb5e792",
+      "result_id": "ea69b693-c664-4a3c-90f1-473a248d71cc"
+    },
+    {
+      "claim_id": "303ec951-2e27-4c80-b503-b4df1f3046c6",
+      "result_id": "ea69b693-c664-4a3c-90f1-473a248d71cc"
+    },
+    {
+      "claim_id": "e4f728c1-5c1e-4128-8b50-bbc62c41771e",
+      "result_id": "ea69b693-c664-4a3c-90f1-473a248d71cc"
+    },
+    {
+      "claim_id": "7475c795-af00-4584-add7-12eb4421a44c",
+      "result_id": "ea69b693-c664-4a3c-90f1-473a248d71cc"
+    },
+    {
+      "claim_id": "62e61b6b-d2ec-47bb-bee2-fe4746faddc5",
+      "result_id": "dab746d9-9c18-4fc3-bffc-74357c9e6400"
+    },
+    {
+      "claim_id": "10e9edaf-f176-424e-9a5b-b60ccaa98a8b",
+      "result_id": "dab746d9-9c18-4fc3-bffc-74357c9e6400"
+    },
+    {
+      "claim_id": "53a8efa4-7d2f-4732-98de-510ade30ceed",
+      "result_id": "dab746d9-9c18-4fc3-bffc-74357c9e6400"
+    },
+    {
+      "claim_id": "a25d24c6-acbb-4681-8a46-4015dd1b450c",
+      "result_id": "88b6d79b-c732-4962-b3e6-73fb5d8f3380"
+    },
+    {
+      "claim_id": "1114b6e8-c758-463a-840d-1c06a437426a",
+      "result_id": "88b6d79b-c732-4962-b3e6-73fb5d8f3380"
+    },
+    {
+      "claim_id": "66c3a77a-17d9-475d-90f0-30d803d3876f",
+      "result_id": "88b6d79b-c732-4962-b3e6-73fb5d8f3380"
+    },
+    {
+      "claim_id": "4ed12814-77fb-4d1d-8d85-ee8a8219f116",
+      "result_id": "88b6d79b-c732-4962-b3e6-73fb5d8f3380"
+    },
+    {
+      "claim_id": "83a08263-9e98-4eba-9d7c-973ddc7d889e",
+      "result_id": "fb1ed3ca-3fe8-407d-a239-9a9e4df65054"
+    },
+    {
+      "claim_id": "865478ca-8099-4dbb-801a-f6314ec1a958",
+      "result_id": "fb1ed3ca-3fe8-407d-a239-9a9e4df65054"
+    },
+    {
+      "claim_id": "92f1178f-d7bb-4a86-9f25-a4e554d83e41",
+      "result_id": "fb1ed3ca-3fe8-407d-a239-9a9e4df65054"
+    },
+    {
+      "claim_id": "d15072e1-bbd1-4697-a70d-e132ed8d01cd",
+      "result_id": "fb1ed3ca-3fe8-407d-a239-9a9e4df65054"
+    },
+    {
+      "claim_id": "57d46e5e-4055-4f0c-b615-e4e2df375f6a",
+      "result_id": "fb1ed3ca-3fe8-407d-a239-9a9e4df65054"
+    },
+    {
+      "claim_id": "81adca8f-65bd-4266-98dc-fd704b138709",
+      "result_id": "fb1ed3ca-3fe8-407d-a239-9a9e4df65054"
+    },
+    {
+      "claim_id": "160f0aea-0e8e-4d90-bc34-06861a2a424e",
+      "result_id": "fb1ed3ca-3fe8-407d-a239-9a9e4df65054"
+    },
+    {
+      "claim_id": "810014ce-31f0-41d5-9714-900e4ff401aa",
+      "result_id": "1360bd38-3ada-4ac4-b3bd-e063970186b8"
+    },
+    {
+      "claim_id": "18d018d0-ae3d-429c-88cb-b45e507a89e7",
+      "result_id": "1360bd38-3ada-4ac4-b3bd-e063970186b8"
+    },
+    {
+      "claim_id": "354cfe60-9ee1-4ff6-b0df-0114be128833",
+      "result_id": "1360bd38-3ada-4ac4-b3bd-e063970186b8"
+    },
+    {
+      "claim_id": "02dcceb0-979d-43d5-ac96-592e16eb800c",
+      "result_id": "91d91881-a0ed-42b5-b74d-c5b408379707"
+    },
+    {
+      "claim_id": "ef94ef88-1532-432b-bf49-43e98722129d",
+      "result_id": "91d91881-a0ed-42b5-b74d-c5b408379707"
+    },
+    {
+      "claim_id": "7c4c508f-6207-4e17-a77b-339307ff3cdb",
+      "result_id": "b54edf7c-28f1-4ab4-82bf-fddcd87e86d2"
+    },
+    {
+      "claim_id": "3d00f86d-cb86-461e-95c0-3eeec21e5280",
+      "result_id": "b54edf7c-28f1-4ab4-82bf-fddcd87e86d2"
+    },
+    {
+      "claim_id": "df79534c-142a-4ddf-82e0-793ae931f94a",
+      "result_id": "ec49ffa0-bc0f-42e0-881d-19127995d779"
+    },
+    {
+      "claim_id": "0c1b7426-469f-43a1-9166-cd7d30076287",
+      "result_id": "ec49ffa0-bc0f-42e0-881d-19127995d779"
+    },
+    {
+      "claim_id": "8a36b0b2-7a7e-49c7-80aa-1fa53cd5a2f3",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "e7f98bef-2e77-4b9c-b398-671604bd5b11",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "f5b70314-5738-4de3-9a3c-dabdb79cc8c9",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "0d336f51-f0db-496d-a17e-2f341f42bdc9",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "fdac4b25-39e6-45a7-a800-6ebba6e1c04e",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "715e1188-7ee8-4a13-9ba3-19e263b8e257",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "d54a483d-0891-4301-a780-a17b175a0c65",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "11463470-b7b1-41ab-a774-e7c9704ffbb1",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "f9ad83bc-a356-4785-980a-53b32c599e59",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "a7e1c26a-75a1-4796-a013-7be8e6ef7885",
+      "result_id": "bd0c822a-def7-4a64-88b9-2e73894182e4"
+    },
+    {
+      "claim_id": "de6d8d93-59b2-4b04-8590-7fc6ffab34de",
+      "result_id": "58105656-2c83-42d4-ab48-6a99a40958c7"
+    },
+    {
+      "claim_id": "56b6eb0f-2ec9-4d0f-8e67-fc24a469d208",
+      "result_id": "58105656-2c83-42d4-ab48-6a99a40958c7"
+    },
+    {
+      "claim_id": "5ef69c13-804d-4ddf-9ccb-689afb19d6ef",
+      "result_id": "58105656-2c83-42d4-ab48-6a99a40958c7"
+    },
+    {
+      "claim_id": "a163c055-05fc-46ac-aa51-ade8ed8c7b37",
+      "result_id": "58105656-2c83-42d4-ab48-6a99a40958c7"
+    },
+    {
+      "claim_id": "d9e28848-c571-4868-86a5-39992a7d069a",
+      "result_id": "58105656-2c83-42d4-ab48-6a99a40958c7"
+    },
+    {
+      "claim_id": "c7b093d4-aee7-4c94-bb59-f81d03d11506",
+      "result_id": "58105656-2c83-42d4-ab48-6a99a40958c7"
+    },
+    {
+      "claim_id": "d14b8e43-b7b8-411c-8d4d-dbfb0c828d64",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "90d6537e-a341-4af9-baff-a73b5f9c4b18",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "8797a14d-c35c-4650-84c1-ea9085a9ceae",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "7c7f9f40-b558-4f53-856b-45d19aec9cb3",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "fc72b8c7-726d-41da-b986-8ee25a532944",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "81564a28-e798-4cd0-8f17-17180ec838ff",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "ec8bab7e-38bf-42b2-a234-e17b0f475c8a",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "93e49660-78eb-4a0b-9c5d-a2aba0114c27",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "81f83057-e9cf-4aaa-af96-358640bb9a44",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "d12d01c5-aa5b-4ec4-92c2-ffdabb424290",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "f9a13d4d-7187-460b-9aa0-5039a7a4fc33",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "43091f35-047c-40e5-8ec7-c20fa96ad170",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "43aae5e3-d125-435f-b0d9-d9da40ac9237",
+      "result_id": "c6c79fe5-d5c3-4aa3-8024-1e9080a47c36"
+    },
+    {
+      "claim_id": "810ef2f2-e646-4618-8d0f-7a29efd188ce",
+      "result_id": "fb39653c-47d2-469f-8296-fd04eac75dde"
+    },
+    {
+      "claim_id": "d4c33456-ce95-43cb-b5db-52fb735f1eec",
+      "result_id": "fb39653c-47d2-469f-8296-fd04eac75dde"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,467 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C96",
+      "C108",
+      "C114",
+      "C118"
+    ],
+    "result": "A gene regulatory network consisting of Prospero (Pros), D-Pax2, and Delilah (Dei) dictates cap versus scolopale cell differentiation in Drosophila chordotonal organs. D-Pax2 activates dei in cap cells while Pros represses dei in scolopale cells via the deiChO-262 enhancer, which contains two D-Pax2 and three Pros binding sites. This GRN is essential for proper ChO differentiation and larval locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C36-C41, C96, C108, C114, and C118 collectively demonstrate the core regulatory network through multiple lines of evidence: loss-of-function and gain-of-function genetic experiments (Figures 2-3), EMSA binding assays (Figure 5), enhancer deletion and mutagenesis (Figures 4-5), and locomotion assays (Figure 6). The molecular mechanism is well-characterized with direct binding demonstrated and functional validation in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "D-Pax2/Sv was identified as a regulator of dei through two independent screens: an RNAi-based phenotypic screen showing loss of deiChO-1353 reporter expression upon sv knockdown, and a yeast one-hybrid screen identifying D-Pax2/Sv as a high-confidence binder to the deiChO-389 enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 describe complementary screening approaches that converge on D-Pax2/Sv. The RNAi screen (C47, C49) showed functional requirement, while the Y1H screen (C50-C53) demonstrated direct DNA binding. The convergence of two independent methods (one functional, one biochemical) provides strong support for D-Pax2/Sv as a direct regulator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C130"
+    ],
+    "result": "Loss of D-Pax2/Sv abolishes dei expression in cap cells and reduces cap cell differentiation markers (\u03b1Tub85E) without affecting primary cell fate decisions. Ectopic D-Pax2/Sv expression induces ectopic dei and cap cell markers in epidermal cells, demonstrating its sufficiency to activate dei beyond the ChO lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 and C130 are supported by immunostaining data in sv mutants (Figure 2A-H) and ectopic expression experiments (Figure 2I-L). The maintenance of cell-type-specific markers (Crumbs, Pros, neuronal markers) in sv mutants supports the conclusion that D-Pax2/Sv affects differentiation rather than primary fate specification. The ectopic expression data demonstrates sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C131"
+    ],
+    "result": "Pros represses dei expression specifically in scolopale cells. Loss of pros leads to ectopic dei expression and acquisition of cap cell features (\u03b1Tub85E) in scolopale cells, though scolopale-specific markers (Eyes Shut, \u03b1-Catenin) are maintained. Cell numbers remain normal, indicating Pros does not affect primary cell fate decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C80 and C131 are supported by RNAi screen results and pros mutant analysis (Figure 3A-H, Figure 3\u2014figure supplement 2). The partial transformation phenotype (gain of cap markers while retaining scolopale markers) is well-documented. Cell counting data (C79) supports the conclusion that Pros affects differentiation rather than fate specification. The evidence is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Ectopic Pros expression in cap and ligament cells abolishes dei expression and induces scolopale-specific features, including scolopale rods and scolopale-characteristic expression of Crumbs and \u03b1-Catenin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by ectopic expression experiments using deiChO-1353-Gal4 driver (Figure 3I-N). The immunostaining clearly shows loss of dei and gain of scolopale markers including structural features (scolopale rods). This demonstrates Pros is sufficient to repress dei and promote scolopale characteristics in cap cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CRISPR/Cas9-mediated deletion of the deiChO-262 enhancer (dei\u0394ChO allele) specifically eliminates dei expression in cap and ligament cells while preserving expression in attachment cells. This deletion is epistatic to both D-Pax2/Sv gain-of-function and pros loss-of-function, demonstrating the enhancer is necessary for both activation and repression of dei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 describe the generation and characterization of the dei\u0394ChO allele. The specificity of the deletion (C89, Figure 4A-B), verification of normal splicing (C88, Figure 4\u2014figure supplement 1C), and epistasis experiments (C91-C94, Figure 4C-E) provide strong evidence that this enhancer is the sole regulatory module for dei in cap/ligament cells. The epistasis data is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Systematic EMSA analysis identified two D-Pax2/Sv binding sites (one high-affinity, one low-affinity) and three Pros binding sites in the deiChO-262 enhancer. The Pros binding sites do not match previously published consensus sequences and one partially overlaps the low-affinity D-Pax2/Sv site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 describe comprehensive EMSA experiments (Figure 5C-D, Figure 5\u2014figure supplements 1-2). The systematic screening of overlapping probes, competition assays, and mutagenesis provide strong biochemical evidence for the binding sites. The observation that Pros sites differ from known consensus (C104) is well-documented by comparison with published motifs (Figure 5\u2014figure supplement 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Mutational analysis of D-Pax2/Sv binding sites in transgenic reporter assays shows that site 2 (canonical) is important for expression, while site 1 is dispensable alone but required in combination with site 2 mutation for complete loss of function. D-Pax2/Sv regulates dei through these two binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by reporter gene expression analysis with mutated enhancers (Figure 5F-H, M). The additive effect of the two sites is clearly demonstrated by quantification (Figure 5M). The experimental design appropriately tests individual and combined mutations. Statistical analysis supports the significance of the effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Mutational analysis of Pros binding sites shows that site 2 is most important for repression in LCh5 scolopale cells, while sites 1 and 3 have smaller effects in LCh5 but affect other ChO types (LCh1, VChA/B). Simultaneous mutation of all three sites causes intensified ectopic expression in all ChO types, demonstrating the sites function additively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 are supported by reporter gene expression analysis with mutated Pros sites (Figure 5I-L, N). The differential effects in different ChO types (C110-C111) suggest context-dependent regulation. The additive effect of all three sites (C113) is clearly demonstrated by quantification (Figure 5N). The data support the conclusion that Pros uses multiple low-affinity sites functioning additively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C175",
+      "C176"
+    ],
+    "result": "Deletion of the deiChO-262 enhancer results in loss of ChO functionality and defective larval locomotion. dei\u0394ChO larvae show locomotion defects similar to dei null mutants, with reduced crawling time (51.9% vs 94.5% in wild-type), increased pausing, and excessive head swiping, demonstrating that dei expression in cap and ligament cells is crucial for normal locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C120-C126, and C175-C176 are supported by quantitative locomotion assays (Figure 6). The phenotypic similarity between dei\u0394ChO and deiKO-mCherry mutants (C123) supports the conclusion that the enhancer-driven expression is critical. Sample sizes are adequate (n=24-27), and statistical analysis shows significant differences. The behavioral phenotypes are well-documented with trajectory plots and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The deiChO-262 fragment is evolutionarily conserved and drives ChO-specific expression indistinguishable from larger fragments (deiChO-1353 and deiChO-389).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by reporter gene expression analysis (Figure 1D, F, H) and sequence alignment (Figure 5B). The expression patterns are visually indistinguishable across the three enhancer sizes, supporting the conclusion that deiChO-262 contains the essential regulatory information. Conservation across six Drosophila species (Figure 5B) supports functional importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C153"
+    ],
+    "result": "The Dei/Pros/D-Pax2 GRN plays a similar role in larval and adult ChOs, with the deiChO-262 enhancer encoding pleiotropic transcription factor binding sites that integrate activating and repressing inputs in both contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 and C153 are supported by analysis of wild-type and mutated enhancers in pupal femoral ChOs (Figure 5\u2014figure supplement 5). The similar effects of D-Pax2 and Pros site mutations in adult ChOs support conservation of the regulatory mechanism. However, the analysis is less comprehensive than for larval ChOs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C147"
+    ],
+    "result": "D-Pax2/Sv and Pros do not affect primary cell fate decisions but rather control terminal differentiation programs. The mutant phenotypes reflect failure to execute cell-type-specific differentiation rather than cell fate transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 and C147 are supported by maintenance of cell-type-specific markers and normal cell numbers in mutants (Figures 2-3, Figure 3\u2014figure supplement 2). The partial transformation phenotypes (gain of some markers while retaining others) support the differentiation rather than fate specification model. This interpretation is consistent across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "Pros functions through a cluster of low-affinity binding sites in deiChO-262, representing a tradeoff between transcription factor binding affinity and specificity. The inhibitory effect is not mediated through direct competition with D-Pax2/Sv at the high-affinity site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 are supported by EMSA data showing low-affinity binding (Figure 5D, Figure 5\u2014figure supplement 2) and sequence analysis showing no overlap with the D-Pax2/Sv high-affinity site (Figure 5B). The interpretation is consistent with cited literature on low-affinity binding sites. However, the mechanism of repression remains speculative (C162).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Mutations in Pros site 1 also disrupt the low-affinity D-Pax2/Sv site 1, affecting D-Pax2/Sv binding in vitro. While D-Pax2/Sv site 1 is dispensable in the presence of the high-affinity site, this overlap may affect interpretation of Pros site 1 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by EMSA data (Figure 5\u2014figure supplement 1D) and sequence analysis (Figure 5B). The authors appropriately note this caveat in interpreting the Pros site 1 mutant phenotype. This is a minor technical point that does not undermine the main conclusions about Pros-mediated repression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C65"
+    ],
+    "result": "Following primary cell fate decisions, Pros expression becomes restricted to scolopale cells while D-Pax2/Sv expression becomes restricted to scolopale and cap cells, similar to external sensory lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 and C65 are supported by expression pattern analysis (Figure 1A) and citations to previous work. The comparison to external sensory lineages is well-established in the literature. This provides important context for understanding the regulatory logic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Dei is expressed in four accessory cell types (cap, ligament, cap-attachment, ligament-attachment) but excluded from neurons and scolopale cells. This expression is differentially regulated by two enhancers: deiattachment (attachment cells) and deiChO-1353 (cap and ligament cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe the expression pattern and regulatory architecture of dei, supported by previous work (Nachman et al., 2015) and illustrated in Figure 1. This provides essential background for understanding the current study's focus on the deiChO enhancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C177",
+      "C178"
+    ],
+    "result": "The gross morphology of LCh5 in dei\u0394ChO larvae appears normal, but Dei-deficient cap and ligament cells fail to correctly transmit mechanical signals to sensory neurons, likely due to changes in mechanical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C177 states unpublished observations about normal morphology, while C178 speculates about the mechanism. Without data showing the morphology or mechanical properties, these claims cannot be evaluated. The locomotion defects are well-documented (Figure 6), but the cellular/mechanical basis remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "It is possible that Sv/Pax2-deficient cap cells fail to survive, and some findings may reflect upstream roles of Sv/D-Pax2 in cap cell identity specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C137 are explicitly speculative caveats about interpretation. The authors appropriately acknowledge they cannot exclude these possibilities. Without cell survival assays or earlier developmental analysis, these remain open questions that do not undermine the main conclusions about differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C162"
+    ],
+    "result": "Binding of Pros to the deiChO-262 enhancer may target this sequence to a repressed heterochromatin domain, as shown for other Pros target genes in differentiating neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C162 is explicitly speculative about the mechanism of Pros-mediated repression. While supported by analogy to other Pros targets (Liu et al., 2020), no direct evidence for heterochromatin targeting is provided. This is an interesting hypothesis for future work but remains unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The regulators of dei in ligament cells and neurons remain unknown, though GCM and Lola are potential candidates based on literature and Y1H screen results. GCM may regulate dei in ligament cells, while Lola may repress dei in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C171 identify gaps in knowledge and propose candidates based on circumstantial evidence (Y1H screen, literature on gcm effects). These are reasonable hypotheses but lack direct experimental validation. The authors appropriately present these as open questions rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background and context claims about Drosophila sensory organ development, ChO structure, and the state of knowledge in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide background information supported by established literature and citations. These contextual claims are generally accurate and appropriately cited. They establish the rationale for the study but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The deiattachment enhancer is activated by Stripe, a key regulator of tendon cell development and determinant of attachment cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by citations to previous work (Becker et al., 1997; Klein et al., 2010). This provides context for the differential regulation of dei but is not a primary finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Discussion of parallels between ChO and external sensory organ lineages, including comparisons of Pros and D-Pax2/Sv function across different developmental contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C152 draw comparisons to external sensory organs and eye development based on literature (Rebeiz et al., 2011; Charlton-Perkins et al., 2011; Moore et al., 2004; Manning and Doe, 1999). These comparisons are well-supported by citations and help contextualize the findings, but represent interpretation rather than primary data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "This is the first example of an enhancer responding to opposing Pros and D-Pax2/Sv signals to dictate cell-specific differentiation in a sensory lineage. Other dei enhancers regulate expression in different tissues where Pros and Pax2 play opposing roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C156 make a novelty claim (C154) and reference previous work on other dei enhancers (C155-C156, Nachman et al., 2015). The novelty claim appears justified based on the literature review, though comprehensive verification is difficult. The references to other enhancers provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Many transcription factors function through low-affinity or suboptimal binding sites that provide specificity. Low-affinity sites are often organized in homotypic clusters to increase cumulative binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 summarize established concepts from the literature (Crocker et al., 2015, 2016; Farley et al., 2015; Kribelbauer et al., 2019). These provide theoretical context for interpreting the Pros binding sites but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Loss of dei in ligament cells is not sufficient for transformation to scolopale cells, but dei expression in ligament cells is critical for proper development. Ligament-specific dei knockdown causes failure to acquire proper mechanical properties and dramatic over-elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C174 reference previous work (Hassan et al., 2018) showing the importance of dei in ligament cells. This provides context for understanding why the dei\u0394ChO mutation affects locomotion, but the primary data is from a previous publication.",
+    "result_type": "MINOR"
+  }
+]

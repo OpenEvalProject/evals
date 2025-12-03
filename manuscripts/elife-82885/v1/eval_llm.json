@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "AF2Complex uses the iScore metric to evaluate protein-protein interactions, with benchmarked false positive rates and recall rates at different thresholds. At iScore thresholds of 0.40, 0.50, and 0.70, false positive rates are 1.2%, 0.4%, and <0.01%, respectively, while recall rates on 440 heterodimeric complexes are 81%, 74%, and 34%, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 describe the computational method and its benchmarked performance. The false positive and recall rates are based on prior benchmarking studies (Gao et al., 2022b), providing quantitative validation of the method's reliability. These metrics establish the foundation for interpreting subsequent predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The predicted SecYEG/PpiD/YfgM supercomplex structure (iScore=0.73, pLDDT=79) reveals that PpiD guards the SecY lateral gate with its \u03b1-helix, which occupies the same position as a signal peptide. The structure explains experimental cross-linking data, showing direct contacts between PpiD and SecY residues (Ile91, Leu94, Leu127, Phe130, Phe286) and between PpiD and SecG (Phe122).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C30 present a high-confidence structural prediction that is strongly corroborated by multiple lines of experimental evidence. The predicted structure explains numerous cross-linking experiments and shows good agreement with crystal structures (2.4 \u00c5 RMSD). The extensive interface (~100 contacts) and consistency with prior experimental observations provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "DsbA is predicted to interact with PpiD (iScore=0.55) in the SecYEG/PpiD/YfgM/DsbA supercomplex (iScore=0.71, pLDDT=78). The parvulin-like domain of PpiD, which lacks PPIase activity, grips DsbA through hydrophobic interactions centered on Phe148 of DsbA, while DsbA's catalytic cysteines remain accessible for substrate engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 describe a novel predicted interaction with high confidence scores. The structural model is physically reasonable, showing specific molecular interactions while maintaining DsbA's catalytic site accessibility. The prediction provides a mechanistic hypothesis for DsbA recruitment to the translocon, though experimental validation would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The predicted LepB/PpiD/YfgM/proOmpA complex (iScore=0.64, pLDDT=80) shows the OmpA cleavage site (Ala21) positioned ~4 \u00c5 from LepB's catalytic triad (Ser89, Ser91, Lys146), with proOmpA forming a \u03b2-sheet with LepB. This model suggests how LepB accesses substrates after PpiD dissociation from SecY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 present a mechanistically plausible model with good confidence scores. The precise positioning of the cleavage site near the catalytic residues (~4 \u00c5) and the \u03b2-sheet formation are consistent with enzymatic mechanism expectations. The model provides structural insight into signal peptide cleavage, though the ~4 \u00c5 distance is at the edge of catalytic range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "AF2Complex predicted two major conformations for full-length SurA: a closed conformation resembling the crystal structure (2.4 \u00c5 RMSD) and an open 'three-prong hook' conformation where P1 and P2 domains swing away from their resting positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe predicted conformational states that are consistent with existing crystal structures and prior speculation. The closed conformation shows excellent agreement with experimental structures (2.4 \u00c5 RMSD), and the open conformation incorporates the P2 domain absent in some crystal structures. The predictions capture known structural features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In the presence of SurA, the \u03b2-barrel domain of OmpA completely unravels and wraps around SurA while the periplasmic domain maintains its native fold. The OmpA polypeptide passes through a crevice at the SurA core domain where Tyr126 consistently attracts aromatic residues via \u03c0-\u03c0 interactions, though the complex has very low iScores (~0.05) reflecting conformational uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C59 describe a structurally intriguing model consistent with SANS data (C54), but the very low iScore (~0.05) indicates high uncertainty. The authors acknowledge different wrapping configurations in separate models and that the structures may contain artifacts. While the model provides hypotheses about chaperone function, the low confidence and acknowledged uncertainty limit strong conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SurA forms a homodimer (iScore=0.53) with twofold rotational symmetry and swapped P1 domains, creating a 'four-prong hook' conformation that may handle large clients. This is consistent with experimental evidence that SurA functions mainly as a monomer but can act as a dimer for large substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 present a high-confidence prediction (iScore=0.53) that is consistent with experimental observations about SurA oligomerization states. The predicted dimeric structure provides a structural basis for handling large substrates, supported by citations to experimental work showing context-dependent oligomerization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The predicted BAM/SurA supercomplex (iScore=0.75, pLDDT=84) shows SurA interacting with BamA primarily through N-terminal domains. Residues Gln23-Val28 of SurA form a \u03b2-sheet with POTRA1 of BamA, and Asp26 of SurA is centrally located at the interface, explaining cross-linking data. The P2 domain of SurA rotates ~45\u00b0 from its crystal position to engage BamA and BamE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 describe a very high confidence prediction (iScore=0.75, pLDDT=84) that closely matches known BAM structure (TM-score=0.94) and explains multiple cross-linking experiments. The specific molecular interactions are well-defined and consistent with experimental data, providing strong support for the predicted SurA/BamA interaction mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "BepA is predicted to interact with BAM (iScore=0.68, pLDDT=85), with extensive contacts between BamA's POTRA domains and BepA's protease and TPR domains. The predicted structure explains cross-linking data for residues Phe404 and Gln428 of BepA to BamA, consistent with BepA's known role in cleaning up stalled OMP folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 present a high-confidence prediction supported by experimental cross-linking data and known functional roles. The predicted interactions are extensive and specific, with good agreement between predicted contacts and experimental observations. The structure provides molecular detail for a previously documented but structurally uncharacterized interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The predicted BepA/BAM structures reveal conformational flexibility in BepA's active-site lid (residues 154-192), which is absent in crystal structures. The lid adopts a closed conformation in BamA/BepA dimers but both open and closed states in supercomplexes. In the open state, the lid extends toward the BamA lateral gate, suggesting a mechanism for sensing substrate folding status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 describe predicted conformational states for a flexible region absent in crystal structures. The predictions capture previously speculated conformations and provide a structural hypothesis for BepA's quality control mechanism. The observation of different conformational states in different complex contexts is consistent with the lid's proposed regulatory role, though the mechanistic hypotheses (C91-C93) remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The deep learning strategy combining virtual PPI screening and supercomplex modeling successfully identified functional partners within the top 1% of ~1450 screened proteins. The high-confidence predicted structures explain experimental phenomena including cross-linking data and capture previously speculated conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 summarize the overall success of the computational approach. The results demonstrate that the method enriches for biologically relevant interactions at the top of rankings and produces structures consistent with diverse experimental data. This represents a validated computational strategy for pathway investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The DsbA/PpiD interaction provides mechanistic insights: DsbA's transient residence on PpiD improves efficiency over random search, assigns function to PpiD's catalytically inactive PPIase domain, and keeps DsbA close to its recycling partner DsbB. AF2Complex also predicts DsbA interacts with FkpA (iScore=0.47) but not SurA (iScore=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 present mechanistic interpretations of the DsbA/PpiD prediction. The functional hypotheses are logical and well-reasoned based on the structural model and known biology. The differential predictions for DsbA interactions with different chaperones (FkpA vs. SurA) provide testable hypotheses, though experimental validation would strengthen these inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "AF2 neural networks can model partially unfolded polypeptides with chaperones despite being trained on folded proteins. The PpiD/YfgM/LepB/proOmpA model positions the cleavage site ~4 \u00c5 from the catalytic triad, and SurA/OmpA models echo NMR structures of unfolded polypeptides bound to SecB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 describe emergent capabilities of the deep learning method. The ability to model unfolded states and catalytically relevant conformations suggests the method has learned physical principles beyond its training data. The comparison to experimental structures (SecB/substrate) provides validation, though the authors appropriately caution about potential artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The E. coli envelopome consists of ~1450 proteins (~35% of the 4400-protein proteome), including all proteins in the inner membrane, periplasm, outer membrane, extracellular surface, and some peripheral cytosolic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 define the protein dataset used in the study. The definition is clear and appropriate for the biological questions addressed. The dataset composition is well-documented with proper citations to data sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "AF2Complex was built on AlphaFold version 2.2.0, supports three sets of neural network models, uses the iScore metric for ranking, and employs a screening protocol with 10 models invoked twice with different random seeds, typically generating 20 final models per target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 describe the computational methodology in detail. The methods are clearly documented with appropriate version numbers, parameter settings, and procedural details that would support reproducibility. The description is consistent with standard computational structural biology practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on OMP biogenesis pathway: OMPs are synthesized in the cytosol, translocated across the inner membrane via SecYEG translocon using the SecA-dependent pathway, signal peptides are cleaved by SPase I, and OMPs are escorted by chaperones SurA or Skp to BAM for final assembly. SecYEG recruits additional proteins to form various supercomplexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide established background information about the OMP biogenesis pathway, all supported by appropriate citations to prior literature. These claims establish the biological context for the computational predictions but do not represent novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C32",
+      "C40",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C63",
+      "C75",
+      "C76",
+      "C81",
+      "C84",
+      "C85",
+      "C115"
+    ],
+    "result": "Additional background claims about protein structures and functions: SecY has a lateral gate, PpiD probes the lateral gate, DsbA donates disulfide bonds, PpiD dissociates upon translocation, LepB removes signal peptides, SurA has three domains with differential PPIase activity, SurA can function as monomer or dimer, BepA cleans up stalled folding, BepA has a flexible active-site lid, and OmpA has two domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide additional background information from prior literature, all supported by appropriate citations. They establish the functional and structural context for interpreting the computational predictions but represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

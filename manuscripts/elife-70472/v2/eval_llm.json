@@ -1,0 +1,414 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establish that NAFLD is a major health problem associated with obesity, involves hepatic metabolic reprogramming and lipid accumulation, and is regulated by nuclear receptors (particularly PPAR\u03b1). MicroRNAs, including MIR20B, have been implicated in NAFLD pathogenesis and identified as potential biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are all supported by citations to published literature and represent established background knowledge in the field. These claims provide appropriate context for the study and are well-documented in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "MIR20B was identified as a key regulator in NAFLD through network analysis and RNA-seq data, and its expression is significantly increased in both simple steatosis and NASH patients compared to normal individuals, correlating with clinical parameters including BMI, AST, ALT, and fasting glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by the study's own computational analysis (Figure 1A) and patient expression data (Figure 1B, Figure 1\u2014figure supplement 2). The network analysis methodology is described, and the correlation with clinical parameters is demonstrated with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "MIR20B expression is significantly increased in oleic acid-treated hepatocyte cell lines (HepG2 and Huh-7) and in the livers of multiple mouse models of NAFLD (HFD-fed, Lepob/ob, and MCD-fed mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by experimental data shown in multiple figures (Figures 1C-G and supplementary figures). The consistency across different cell lines and multiple independent mouse models strengthens the finding that MIR20B is upregulated in NAFLD conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Overexpression of MIR20B increases intracellular lipid content, triglyceride levels, and cholesterol in HepG2 cells, particularly under oleic acid treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by Oil Red O staining and biochemical measurements (Figures 2A-C). The data show dose-dependent effects and are consistent with MIR20B promoting lipid accumulation in hepatocytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "RNA-seq analysis of MIR20B-overexpressing cells reveals that the nuclear receptor metapathway is the most significantly affected, with PPARA being the most significantly downregulated nuclear receptor. PPARA pathways and PPAR signaling pathways are significantly decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by comprehensive RNA-seq analysis with appropriate statistical methods (GSEA, adjusted p-values). The data in Figures 2D-H and supplementary figures demonstrate clear separation between conditions and significant pathway enrichment. The identification of PPARA as the primary target is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "PPARA is identified as the primary target of MIR20B through multiple lines of evidence: it is the only overlapping predicted target across four miRNA prediction programs among RNA-seq candidates, its expression decreases during NAFLD progression with negative correlation to MIR20B, and the 3'UTR of PPARA contains conserved MIR20B binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by bioinformatics analysis (Figure 2J), patient expression data (Figure 2\u2014figure supplement 3), and sequence conservation analysis (Figure 2K). The convergence of computational prediction, expression correlation, and sequence conservation provides strong evidence for PPARA as a direct target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MIR20B directly inhibits PPARA expression by binding to its 3'UTR, as demonstrated by luciferase reporter assays showing dose-dependent suppression with wild-type but not mutant 3'UTR constructs, and functional validation showing effects on PPARA expression, target genes, and lipid accumulation only with wild-type 3'UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by comprehensive luciferase assays (Figures 2L-M) and functional validation experiments (Figure 2\u2014figure supplement 5). The use of both wild-type and mutant constructs provides strong evidence for direct binding. The functional consequences (gene expression and lipid accumulation) are consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "MIR20B affects lipid metabolism through direct inhibition of PPARA, as demonstrated by rescue experiments with PPARA overexpression, knockdown experiments with siPPARA, and limited rescue by the PPAR\u03b1 agonist fenofibrate. MIR20B specifically reduces expression of genes involved in FA \u03b2-oxidation and uptake but not lipogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 are supported by multiple complementary experimental approaches (Figures 3A-I). The rescue and knockdown experiments provide strong evidence for specificity. The fenofibrate experiments (C36-C37) demonstrate that MIR20B's effects cannot be fully overcome by PPAR\u03b1 activation alone, suggesting regulation at the expression level. The selective effect on oxidation/uptake vs. lipogenesis genes is consistent across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "MIR20B requires oleic acid treatment to induce lipid accumulation in primary hepatocytes (unlike HepG2 cells) and decreases expression of genes involved in FA \u03b2-oxidation and uptake but not lipogenesis or ketogenesis. DGAT1, a rate-limiting enzyme for TG synthesis, is increased upon OA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by experiments in primary hepatocytes and HepG2 cells (Figure 4 and supplements). The differential response between primary hepatocytes and HepG2 cells is an important observation. The selective effect on specific metabolic pathways is consistent with the proposed mechanism through PPAR\u03b1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "MIR20B overexpression reduces mitochondrial function and biogenesis, as evidenced by decreased levels of \u03b2-oxidation substrates and products (palmitoyl-carnitine, acetyl-CoA), TCA cycle intermediates, mitochondrial biogenesis genes (PPARGC1A, SIRT1), mtDNA copy number, oxygen consumption rate (OCR), ATP production, FA uptake, and FA oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by comprehensive metabolic and functional assays (Figures 4D-K). The data show consistent effects across multiple measures of mitochondrial function. The Seahorse OCR measurements provide direct evidence of impaired mitochondrial respiration. The metabolite measurements support the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Inhibition of MIR20B (anti-MIR20B) has opposite effects to MIR20B overexpression: it decreases lipid accumulation, TG, and cholesterol; increases expression of lipid consumption genes and PPAR\u03b1 targets; decreases some TG synthesis enzymes; increases \u03b2-oxidation substrates, products, and TCA cycle intermediates; increases mitochondrial biogenesis and function; and increases FA uptake and oxidation. These effects demonstrate that MIR20B contributes to hepatic lipid accumulation by controlling lipid oxidation, mitochondrial function, and TG synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 are supported by extensive experimental data (Figure 4 and supplements). The anti-MIR20B experiments provide strong complementary evidence by showing opposite effects to overexpression. The consistency across multiple measures (lipid content, gene expression, metabolites, mitochondrial function) strengthens the conclusions. The claim that ketogenesis is not affected (C54) is also well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In vivo overexpression of Mir20b via AAV in mice leads to liver-specific expression (not in adipose tissue), reduces Ppara and target gene expression, increases body weight (in HFD but not NCD), increases fat mass ratio, decreases lean mass ratio, increases liver weight and steatosis, increases hepatic TG and liver injury markers (AST, ALT), impairs glucose tolerance and insulin sensitivity, increases fasting glucose/insulin/HOMA-IR, and downregulates FA \u03b2-oxidation and uptake genes. These results demonstrate that Mir20b aggravates NAFLD by dysregulating lipid metabolism in HFD-induced obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 are supported by comprehensive in vivo experiments in mice (Figure 5 and supplements). The tissue-specific expression (C59) is important for interpretation. The metabolic phenotyping is thorough, including body composition, liver histology, biochemical markers, and glucose/insulin tolerance tests. The consistency between in vitro and in vivo findings strengthens the conclusions. Sample sizes (n=10) are adequate for mouse studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In vivo inhibition of Mir20b via AAV-anti-Mir20b in HFD-fed mice shows opposite effects to overexpression: decreased Mir20b expression, increased Ppara and target genes, reduced body weight and fat mass, increased lean mass ratio, reduced liver weight and steatosis, decreased lipid droplet size/number and NAS, reduced metabolic parameters (TG, AST, ALT), improved glucose tolerance and insulin sensitivity, decreased fasting glucose/insulin/HOMA-IR, and increased expression of FA \u03b2-oxidation and uptake genes. These results demonstrate that Mir20b suppression ameliorates NAFLD by recovering lipid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C81 are supported by comprehensive in vivo experiments (Figure 6 and supplements). The anti-Mir20b experiments provide strong complementary evidence by showing therapeutic effects. The consistency of opposite effects compared to overexpression strengthens the causal interpretation. The improvements in multiple metabolic parameters suggest therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The therapeutic effect of fenofibrate (a PPAR\u03b1 agonist) is limited in AAV-Mir20b-treated HFD-fed mice. While fenofibrate increases Ppara levels in control mice, it cannot restore Ppara expression suppressed by Mir20b. Fenofibrate's beneficial effects on body/liver weight, lipid accumulation, liver injury markers (AST, ALT), glucose tolerance, and insulin sensitivity are suppressed or offset by Mir20b overexpression. This demonstrates that Mir20b limits fenofibrate efficacy by targeting PPAR\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 are supported by combination experiments with fenofibrate and AAV-Mir20b (Figure 7). The experimental design directly tests the hypothesis that MIR20B limits PPAR\u03b1 agonist efficacy. The data show that fenofibrate cannot overcome MIR20B-mediated suppression of PPARA expression, providing mechanistic insight into potential therapeutic resistance. Sample sizes are smaller (n=3-5) but adequate for this type of experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The RNA-seq data from MIR20B-overexpressing cells show significant correlation with published RNA-seq data from NASH and liver fibrosis patients within nuclear receptor transcription pathways, suggesting that MIR20B can establish an NR transcription program similar to NASH and liver fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by correlation analysis with published data (Figures 8A-B). The comparison with independent datasets strengthens the clinical relevance of the findings. However, correlation does not prove causation, and the claim that MIR20B \"sets up\" a program (C90) is somewhat speculative, though reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "AAV-anti-Mir20b treatment in MCD-fed mice (a NASH model) decreases Mir20b expression, increases Ppara expression (mRNA and protein), reduces hepatic steatosis and fibrosis (by histology), decreases hepatic TG and liver injury markers (AST, ALT), and reduces expression of genes related to inflammation (Tnf, Il6) and fibrosis (Acta2, Col1a1, Col3a1, Timp1). These results demonstrate that Mir20b plays an important role in fibrosis, inflammation, and hepatic steatosis in NAFLD progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 are supported by experiments in the MCD diet model (Figure 8C-O). The MCD model is appropriate for studying NASH and fibrosis. The data show effects on multiple aspects of NAFLD pathology (steatosis, inflammation, fibrosis), suggesting broad therapeutic potential. The histological evidence for reduced fibrosis is particularly important for clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Combination therapy with AAV-anti-Mir20b and fenofibrate in MCD-fed mice shows synergistic effects: greater increase in Ppara levels than either treatment alone, further reduction in liver weight and hepatic TG, improved histology (lipid accumulation and fibrosis), lower AST and ALT levels, and further decreased expression of inflammation and fibrosis genes compared to single treatments. This suggests that AAV-anti-Mir20b may increase fenofibrate efficacy, especially for fibrosis, providing a more effective option for NAFLD/NASH treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 are supported by combination therapy experiments (Figure 9). The experimental design directly tests synergy between anti-Mir20b and fenofibrate. The data show additive or synergistic effects on multiple parameters, particularly fibrosis. This is clinically relevant as combination therapies are increasingly recognized as necessary for NAFLD/NASH. Sample sizes (n=5-6) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study demonstrates that MIR20B promotes NAFLD progression by modulating lipid metabolism (FA \u03b2-oxidation, FA uptake, TG synthesis) and ATP production through mitochondrial biogenesis, establishing the regulatory mechanism of PPAR\u03b1 by MIR20B. MIR20B may serve as a novel biological marker in NAFLD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 summarize the study's main findings. C106 is supported by citation. C107 is well-supported by the comprehensive experimental data throughout the manuscript. C108 is somewhat speculative (\"may serve\") but reasonable given the data showing increased MIR20B in patients and correlation with clinical parameters. The claim is appropriately hedged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study demonstrates that MIR20B has a different mode of action compared to other miRNAs targeting PPARA (miR-34a and MIR21). Unlike these miRNAs, MIR20B shows deteriorating effects on FA oxidation, steatosis, inflammation, and fibrosis in both HFD- and MCD-fed mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 compare MIR20B to other miRNAs. C109-C110 are supported by citations to prior work. C111 is supported by the study's own data in mouse models. The comparison is useful for positioning the work in the context of the field and highlighting the unique aspects of MIR20B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study establishes PPARA as the primary target of MIR20B in regulating hepatic lipid metabolism, distinguishing it from other proposed targets like CD36. While CD36 has been suggested as a MIR20B target and is a PPAR\u03b1 target gene, CD36 expression is relatively low in normal hepatocytes and its knockout has modest effects on FA uptake even during HFD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 discuss alternative targets and mechanisms. C112-C115 are supported by citations. C116 is the study's conclusion based on experimental data. C117-C118 are supported by citations and provide context for why PPARA is considered the primary target rather than CD36. The discussion appropriately addresses alternative hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "MIR20B expression is induced by OA treatment, increasing up to 24 hours then slightly decreasing but remaining elevated. The study discusses how hepatic steatosis can be affected by adipose tissue through FFA release and how excess hepatic TGs are secreted as VLDLs, which deliver TGs to adipose tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 provide mechanistic context. C119 is supported by time-course data (Figure 4\u2014figure supplement 6). C120-C122 are supported by citations and provide context for interpreting the adipose tissue findings. The discussion appropriately addresses the complexity of liver-adipose tissue interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "E2F1 expression is significantly increased in fatty liver of both mice and humans, positively correlates with MIR20B expression, and may be an upstream regulator of MIR20B in the liver. E2F1 has been shown to regulate Mir20b in muscle and to be involved in NAFLD development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are supported by citations (C123, C125-C126), general knowledge (C124), and the study's own data (C127, Figure 10). C128 is appropriately hedged as speculation (\"may be\") based on correlation data. The E2F1-MIR20B connection is plausible but would require additional experiments (e.g., E2F1 knockdown/overexpression) to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study discusses the role of PPAR\u03b1 and MIR20B in NAFLD progression to NASH, fibrosis, and potentially HCC. PPAR\u03b1 expression is lower in HCC tissue, and its activation inhibits HCC cell proliferation. MIR20B is upregulated in HCC and promotes HCC cell proliferation. The study's data show MIR20B is robustly increased in NASH and regulates inflammation and fibrosis genes, suggesting MIR20B may be relevant in severe liver disease stages and HCC development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 are supported by citations. C133 is speculation based on cited work. C134-C135 are supported by the study's own data. C136 is appropriately hedged speculation (\"might also be relevant\") based on the data and literature. The connection to HCC is plausible but would require additional studies to establish.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study discusses the limited efficacy of PPAR\u03b1 agonists (fibrates) in treating NAFLD/NASH based on clinical trials, proposes that MIR20B-mediated suppression of PPARA expression may explain this limited efficacy, demonstrates that fenofibrate effects are limited in Mir20b-overexpressing mice and enhanced when combined with anti-Mir20b, and concludes that MIR20B inhibition presents an opportunity for novel NAFLD therapeutics, particularly in combination strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 are supported by citations to clinical trials and provide important context. C144-C146 are supported by the study's experimental data (Figures 7, 9). C147 is stated as current consensus. C148 is appropriately hedged speculation based on the study's findings. The therapeutic implications are well-supported by the data, though clinical translation would require additional studies.",
+    "result_type": "MAJOR"
+  }
+]

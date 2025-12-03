@@ -1,0 +1,1998 @@
+{
+  "submission": {
+    "id": "5569a048-60c7-4bcb-ac0d-caa0a8d330a8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:35:43.124210Z",
+    "updated_at": "2025-12-03T03:35:43.124210Z"
+  },
+  "content": [
+    {
+      "id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "submission_id": "5569a048-60c7-4bcb-ac0d-caa0a8d330a8",
+      "content_type": "manuscript",
+      "content_text": "# Ligand sensing enhances bacterial flagellar motor output via stator recruitment\n\n## Authors\n\n- Farha Naaz<sup>1</sup>\n- Megha Agrawal<sup>1</sup>\n- Soumyadeep Chakraborty<sup>1</sup>\n- Mahesh S Tirumkudulu<sup>1</sup> ([ORCID: 0000-0002-7046-8069](https://orcid.org/0000-0002-7046-8069)) \u2020\n- KV Venkatesh<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Chemical Engineering, Indian Institute of Technology Bombay Mumbai India\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is well known that flagellated bacteria, such as Escherichia coli, sense chemicals in their environment by a chemoreceptor and relay the signals via a well-characterized signaling pathway to the flagellar motor. It is widely accepted that the signals change the rotation bias of the motor without influencing the motor speed. Here, we present results to the contrary and show that the bacteria is also capable of modulating motor speed on merely sensing a ligand. Step changes in concentration of non-metabolizable ligand cause temporary recruitment of stator units leading to a momentary increase in motor speeds. For metabolizable ligand, the combined effect of sensing and metabolism leads to higher motor speeds for longer durations. Experiments performed with mutant strains delineate the role of metabolism and sensing in the modulation of motor speed and show how speed changes along with changes in bias can significantly enhance response to changes in its environment.\n\n## Introduction\n\nIt is well known that bacteria can execute a net directed migration in response to external chemical cues, a phenomenon termed chemotaxis (Adler, 1966; Berg, 1975). One of the most commonly studied bacteria for understanding chemotaxis is Escherichia coli (Wadhams and Armitage, 2004). On sensing a ligand, these bacteria transmit the signal from the environment via a well-characterized signaling pathway to reversible flagellar motors that drive extended helical appendages called flagella thereby achieving locomotion (Adler, 1969; Berg, 2004). The motor is powered by a proton flux, termed proton motive force (PMF), through an electrochemical gradient of protons across the inner cytoplasmic membrane (Fung and Berg, 1995; Gabel and Berg, 2003). When all flagella rotate in the counterclockwise (CCW) direction (as seen from the flagellar end), the flagella collect into a single bundle leading to a forward motion called a run, whereas when one or more of the flagella rotate in the clockwise (CW) direction, they separate from the bundle leading to an abrupt change in direction, also known as a tumble (Berg and Brown, 1972). By modulating the duration of runs and tumbles, the bacteria achieve a net motion toward chemoattractants or away from chemorepellents (Brown and Berg, 1974).\n\nThe direction of rotation of the flagellar motor is controlled by the switch complex comprising of proteins FliG, FliM, and FliN, which are present at the cytoplasmic end of the motor (Figure 1;\u00a0Yamaguchi et al., 1986). When CheY-P, the phosphorylated state of the chemotaxis protein CheY, binds to the motor protein FliM, the motor is biased in the CW direction (Welch et al., 1993). The null state of the motor, however, is the CCW direction. When a ligand binds to a chemoreceptor protein present in the periplasm, the activity of the chemotaxis pathway protein CheA is reduced, which in turn reduces the production of phosphorylated CheY-P. Since fewer CheY-P molecules are available to bind to the motor protein FliM, the flagella rotate in the CCW direction (Blair, 1995). For ligand concentrations in the nanomolar to the micromolar range, a feedback control mechanism intrinsic to the signaling network brings back the phosphorylation state of CheA and CheY to the pre-stimulus levels and resets the duration of CW and CCW rotations to the initial state, a characteristic feature of the network termed perfect adaptation (Masson et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig1-v2.jpg)\n\n**Figure 1.:** The chemotaxis pathway controls the direction of motor rotation via CheY protein which, on phosphorylation, binds to the FliM protein of motor-switch complex (FliG, FliM, and FliN) and causes clockwise\u00a0(CW) rotation of one or more flagella. The concentration of phosphorylated CheY (CheY-P) is dictated by the binding of ligands to their specific transmembrane receptors. Attractants such as glucose/2Dg bind to the periplasmic glucose-binding protein (BP) and are sensed by the Trg chemoreceptor protein. The binding results in a decrease in the autophosphorylation activity of CheA, which is part of CheA-CheW-receptor complex, leading to a lower concentration of CheY-P. The CheY-P binds to the FliM protein causing the motor to rotate in the CW direction. The proteins CheR and CheB control the degree of methylation of the receptors and allow the cell to adapt to the present concentration of attractant and sense subsequent changes. Additionally, glucose is a metabolizable ligand and is also sensed by an alternate pathway, namely, the phosphotransferase system (PTS), whose signals integrate into the chemotaxis pathway. The PTS generates a constant flow of phosphate groups via the PTS transporters (EI, HPr, and EII) from phosphoenolpyruvate (PEP) and activates the sensory complexes CheA-CheW thereby communicating with the motor via reduced levels of CheY-P. The CheZ protein accelerates the dephosphorylation of CheY-P. The motor rotation is generated via ion flow through the membrane-bound stator units comprising of proteins, MotA and MotB, while the speed is controlled via the intracellular concentration of the second messenger molecule, cyclic diguanosine monophosphate (c-di-GMP). The latter is produced by diguanylate cyclase (DGC) enzymes from GTP and degraded by specific phosphodiesterases. Nutrient depletion conditions trigger production of c-di-GMP, which forms complex with YcgR protein and hinders the motor rotation. The present study suggests a signaling pathway that links the chemotaxis receptor to the motor speed via stator unit recruitment.\n\nThe torque of the flagellar motor is generated via ion flow through at least 11 membrane-bound stator units comprising of proteins, MotA and MotB (Yuan and Berg, 2008; Reid et al., 2006; Khan et al., 1988). Previous studies have demonstrated the discrete nature of torque generation by restoring the motility of paralyzed cells (mot mutants) by induced expression of wild-type\u00a0(WT) genes from plasmids. The latter caused a step-wise increase in motor speed, a process termed \u2018resurrection\u2019 (Block and Berg, 1984; Blair and Berg, 1988). Recent experiments have shown that the number of bound stator units vary with PMF with almost all stator units leaving the motor following removal of PMF (Tipping et al., 2013b). Consequently, the bacteria is able to vary the number of motor-bound stator units depending on the external mechanical load (Tipping et al., 2013a; Lele et al., 2013; Nord et al., 2017; Wadhwa et al., 2019) although not all binding sites are necessarily occupied even at high load conditions due to the transient nature of stator unit binding. In addition to the torque variation with load, the speed of the motor is also controlled via the intracellular concentration of the second messenger cyclic diguanosine monophosphate (c-di-GMP), whose concentration increases during nutrient depletion conditions (Boehm et al., 2010; Paul et al., 2010). The c-di-GMP binds to the YcgR protein, a PilZ domain protein, which in turn interacts with the MotA to reduce the rotation speed of the motor. While the aforementioned studies have demonstrated the modulation of motor bias in response to sensing of ligand and change in motor speed with PMF or when exposed to starvation conditions, there is as yet no clear evidence of the chemosensory transduction system influencing the motor speed in E. coli.\n\nIn this study, we investigate the role of sensing and metabolism of glucose on the motor performance by\u00a0both measuring the motor speed and the concentration of stator units bound to the motor via tethering experiments and confirming the same through run speed measurements in a population. For E. coli, glucose is the preferred carbon source for cell\u2019s growth and there exist detailed studies on the molecular mechanism of sensing and adaptation to the ligand (Hazelbauer and Engstr\u00f6m, 1980; Lux et al., 1999; Feng et al., 1999; Li and Hazelbauer, 2004; Neumann et al., 2012). The signaling is achieved through two independent pathways: through the phosphotransferase system (PTS) pathway and via the Trg-sensing pathway. The combined signals from the two pathways determines the phosphorylation state of CheA, which in turn determines the concentration of CheY-P, and therefore the motor bias. In order to differentiate the roles of sensing and metabolism on motor performance, we performed identical experiments with glucose and the non-metabolizable analog of glucose, 2Dg. Adler et al., 1973 have shown that 2Dg is sensed by the Trg sensor, but unlike glucose, are not metabolized since cells do not grow in its presence. Further, cells lacking Trg show chemotactic response to 2Dg only when grown in the presence of glycerol through the activation of mannose PTS pathway (Adler and Epstein, 1974).\n\nThe experiments were performed on the wild-type strain along with mutants lacking trg ($\u0394\u2062t\u2062r\u2062g$) and ptsI ($\u0394\u2062p\u2062t\u2062s\u2062I$) genes. The influence of ligands on metabolism was assessed by measuring the membrane potential which corresponds to PMF in a population of cells. The data from the tethered cell experiments show a step increase in the motor speed when exposed to 2Dg. We also simultaneously measure the intensity of fluorescently\u00a0tagged stator units bound to the motor (mutant strain JPA804) where increase in intensity indicates increase in number of stator units. Our results indicate that mere sensing of a ligand can directly enhance the motor speed wherein the enhancement occurs due to an increase in the number of stator units bound to the motor. These results clearly demonstrate the existence of a sophisticated signaling pathway that connects the chemotaxis signaling system to the torque-generating stator units.\n\n## Results\n\n### Sensing leads to increase in motor speed\n\nIn order to correlate the measured run speed with motor response, tethered cell experiments were performed. Figure 2A and B presents the time evolution of the rotation speed of a single motor after the introduction of glucose and 2Dg, respectively. In case of glucose, there is a sharp increase in rotation rate from an average speed of about 6 to 7.5 Hz at about 100 s and again a further increase to about 9 Hz at around 650 s. In comparison, for 2Dg the rotation speed remains unchanged for about 300 s after which there is a sudden increase in average speed from about 4 Hz to about 5.7 Hz. The increased speed is sustained for about 200 s after which it returns to the pre-stimulus levels. The step\u00a0increases, which range between 1.0 and 2.0 Hz, are of magnitude similar to those observed in the resurrection experiments (Block and Berg, 1984; Blair and Berg, 1988).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig2-v2.jpg)\n\n**Figure 2.:** The motor rotation speed was measured after a single wild-type (WT, RP437) cell was exposed (at $t=0$) to 1000 \u03bcM of (A) glucose and (B) 2Dg.\u00a0The arrows indicate the time of introduction of the ligands. The reported values of rotational rate are averaged over 0.16 s (10 frames). Imaging is performed about 50 s after the introduction of the ligand to let the accompanying flow to stop. (C) The fluorescence intensity of the stator units (GFP-MotB in mutant strain JPA804) was measured at different time points after introduction of ligands, and (D) presents the corresponding motor rotation speeds (arrow indicates the time of introduction of ligand).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Illustration for motor speed calculation for a tethered cell (top and side view).\u00a0Cells can be either tethered at the center or at the pole of the cell to an antibody-treated glass surface. In the acquired images, two circles are fitted along the length of the cell and their centers, C1 and C2, are tracked in each frame. The line joining the centers is tracked in time and is used to determine the rotation speed and the direction of rotation (between lines L1 and L2). (B) Top view of the cell fitted with two circles using Particle Tracker plugin for ImageJ software.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The left panel corresponds to the brightfield image while the middle panel is the confocal image of the same location. The red cross indicates the location of the motor while the arrow indicates the direction of rotation. The fluorescence intensity of GFP-tagged MotB motor is obtained by noting the maximum intensity value in the motor region and then subtracting the average pixel intensity value from it. The latter was obtained from three, evenly spaced, neighboring circular patches around the cell, as shown in the enlarged image of the cell of interest (right panel). The average intensity value was independent of the exact location of the patches as long as they were evenly spaced.\n\n### Sensing leads to stator unit recruitment\n\nThe increase in the motor speed may be attributed to the recruitment of stator (MotAB) component of bacterial flagellar motor thereby increasing the torque on the motor. Therefore, GFP-tagged MotB component of stator for tethered mutant cell (JPA804) was directly visualized under a confocal microscope and the intensity variation at the motor site was recorded after the introduction of ligand in the medium (Figure 2C). While there is no change in the intensity for a cell in MB, the intensity increases with time when glucose is introduced. This observation is in agreement with previously reported experiments where the stator unit concentration increases with PMF (Tipping et al., 2013b). Interestingly, on introduction of 2Dg, which is a non-metabolizable ligand, the intensity increases for a short duration (about 4\u20135 min) after which it falls to the pre-stimulus value. This result matches with the change in motor speed (Figure 2D) confirming that the modulation in motor speed is indeed caused by recruitment of stator units upon mere sensing of ligand. Similar experiments were performed on over 20 motors and the relative average intensity values at fixed time points are plotted in Figure 3A. An increase of 17% at 5 min and 20% increase at 10 min was observed in the fluorescence intensity for glucose relative to its pre-stimulus value. A slightly lower increase (14%) was observed at 5 min for 2Dg after which the intensity decreased to its pre-stimulus value. As expected there was no discernible trend in the intensity value measured for cell exposed to MB. Figure 3B presents the corresponding motor speeds for the cells, which show the same trend as that for the stator intensity. The normalized fluorescent intensity values in different motors for the three conditions and the corresponding normalized motor speeds are presented in Figure 3C. The intensity is proportional to motor speeds suggesting that stator elements are added following the introduction of the two ligands.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig3-v2.jpg)\n\n**Figure 3.:** (A) Fluorescence (GFP-MotB) intensity variation in mutant strain JPA804 in 1000 \u03bcM glucose, 1000 \u03bcM 2Dg and motility buffer\u00a0(MB).\u00a0Measured intensity of individual cells was first obtained in MB and then measured again for the same cells exposed to 1000 \u03bcM of glucose and 1000 \u03bcM 2Dg (arrow indicates the point of introduction of ligand). Increase in GFP intensity in glucose at all time points and in 2Dg at 5 min is statistically significant at p<0.01 computed by paired t-test. The error bars represent standard error of means from six independent experiments. The intensity of about 21\u201322 motors per ligand were measured. (B) The normalized average motor speed in counterclockwise\u00a0(CCW) bias obtained from the tethered cell experiments presented in (A). (C) Motor intensity versus motor speed from data plotted in (A) and (B). The straight line is a linear fit with an $R^{2}$ value of 0.91 (D) Time-dependent fluorescence intensity for membrane potential of wild\u00a0type\u00a0(WT) in the\u00a0presence of 1000 \u03bcM of glucose, 2Dg, and sodium MB for a population (3.75\u00d7108 cells/ml). The error bars represent standard error of means from three independent experiments. Values are significant at p<0.001 (one-way ANOVA). (E) Measured run speed between consecutive tumbles for a population of WT cells in the presence of MB and when exposed to ligands. Each data point is obtained by averaging over 2500 cells. Speed increase in glucose for all three strains and the observed increase in 2Dg for the WT strain (at 5 min) as compared to MB are statistically significant at p<0.001\u00a0(one-way\u00a0ANOVA). The Y-error bars represent standard error of means from four independent experiments. (F) Comparison of motor speed in CCW bias for the WT cell in the presence of ligands with those measured for mutant strains, $\u0394\u2062t\u2062r\u2062g$ and $\u0394\u2062p\u2062t\u2062s\u2062I$ at fixed time points. Data represents value from at least 20 paired cells for each strain. Here, *** represents significance value p<0.001 and ** represents p<0.01 as measured by paired t-test. Error bars represent standard deviation. The highest speed for 2Dg was observed at 5 min.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Rotation frequency of 24 cells in (A) motility buffer\u00a0(MB) and (B) when exposed to 1000 \u03bcM glucose. The corresponding counterclockwise (CCW) directional bias is given in (C) and (D). The mean and standard deviation are obtained from four independent experiments. All values are significantly different from MB at p<0.001 computed by paired t-test.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Rotation speed in counterclockwise\u00a0(CCW) direction for wild-type\u00a0(WT), $\u0394\u2062t\u2062r\u2062g$, and $\u0394\u2062p\u2062t\u2062s\u2062I$ cells.Tethered cell experiment with the (A\u2013C) WT, (D\u2013F) $\u0394\u2062t\u2062r\u2062g$, and (G\u2013I) $\u0394\u2062p\u2062t\u2062s\u2062I$.\u00a0Measured rotation speed of individual cells were first obtained in motility buffer\u00a0(MB) and then measured again for the same cells exposed to 1000 \u03bcM of glucose and 2Dg. At least 20 such paired cells from four independent experiments were analyzed to determine the population behavior. The data for MB is obtained by combining the measurements from the pre-stimulus state of both glucose and 2Dg experiments. Values for glucose and 2Dg are obtained after 15 and 5 min of exposure, respectively. The mean and standard deviation are included in the figure. All values are significantly different from MB at p<0.05 computed by paired t-test except the bias and motor speed change from MB to 2Dg for $\u0394\u2062p\u2062t\u2062s\u2062I$ strain, which was statistically insignificant.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Counterclockwise\u00a0(CCW) bias for the wild-type\u00a0(WT), $\u0394\u2062t\u2062r\u2062g$, and $\u0394\u2062p\u2062t\u2062s\u2062I$ cells measured in motility buffer\u00a0(MB), and 1000 \u03bcM of glucose and 2Dg.At least 20 such paired cells from four independent experiments were analyzed to determine the population behavior. The data for MB is obtained by combining the measurements from the pre-stimulus state of both glucose and 2Dg experiments. Values for glucose and 2Dg are obtained after 15 and 5 min of exposure, respectively. The mean and standard deviation are included in the figure. All values are significantly different from MB at p<0.05 computed by paired t-test except the change in bias from MB to 2Dg, which was statically insignificant.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** As compared to (C) motility buffer\u00a0(MB) (seven cells), the variance decreased on introduction of (D) glucose (after 15 min) (six cells) and (E) 2Dg (5 min) (six cells).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Response of RP437 cells to motility buffers with different pH values when exposed to sodium benzoate. Cells exhibit homeostasis when suspended in different pH buffers in the\u00a0absence of sodium benzoate. Each data point corresponds to cells at OD 0.3. The error bars represent standard error of means from three independent experiments.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Agarose gel (0.8%) showing the result of PCR with verification primers.\u00a0(A) Mutation of trg gene in Escherichia coli, Lane 1, Marker; Lane\u00a02, RP437 wild-type (WT) with trg gene (2.1 kb); Lane\u00a03, $\u0394\u2062t\u2062r\u2062g$::kan (1.9 kb); Lane\u00a04, $\u0394\u2062t\u2062r\u2062g$ (600 bp). (B) Mutation of ptsI gene in E. coli, Lane 1, Marker; Lane\u00a02, WT with ptsI gene (2.2 kb); Lane\u00a03, $\u0394\u2062p\u2062t\u2062s\u2062I$::kan (1.9 kb); Lane\u00a04, $\u0394\u2062p\u2062t\u2062s\u2062I$ (600 bp).\n\nFollowing Samuel and Berg, 1995; Samuel and Berg, 1996, measurements of the variance in rotation speed of the tethered cells were also made as a function of mean number of revolutions to correlate response with number of active torque-generating units. A large variance corresponds to fewer stator units powering the motor while a lower variance and therefore a smoother rotation implies larger number of stator units. The measured variance followed the same trend as observed for the rotation speed and fluorescent stator intensity values in that the lowest variance was found in cells exposed to glucose followed by 2Dg and the highest in MB (Figure 3\u2014figure supplement 5C\u2013E). The time evolution of the variance also matched with motor speed and stator intensity data.\n\n### Sensing does not affect membrane potential\n\nAs discussed in the Introduction, the stator unit recruitment has been directly correlated with PMF. To confirm that the observed increase in the presence of 2Dg was not due to changes in PMF, we measured the change in transmembrane electrical potential\u00a0(\u0394\u03c8) and pH gradient (\u0394pH) in the presence of glucose and 2Dg. Since E. coli is a neutraphile, the change in the PMF is primarily due to changes in $\u0394\u2062\u03c8$ and not \u0394pH (Figure 3\u2014figure supplement 6; Krulwich et al., 2011). Figure 3D presents fluorescence intensity values for WT, which are proportional to membrane potential. The buffer solution in these experiments contains sodium salts (NaMB) instead of potassium since the latter has been shown to interfere with membrane potential measurements (Kashket and Barker, 1977; BacLight, 2004). The measured potential is the lowest for the control, namely, CCCP (carbonyl cyanide m-chlorophenyl hydrazone), which is an ionophore and eliminates the membrane potential. While there is no change in the potential for NaMB and 2Dg and their values are very close, the intensity value in the\u00a0presence of glucose is significantly higher. This clearly demonstrates that the stator unit recruitment in the\u00a0presence of 2Dg is independent of PMF and is caused solely by sensing of 2Dg. For glucose, the increase in motor speed would be a combination of increased PMF and that due to sensing.\n\n### Average swimming speed in a population\n\nGiven the above observations, does the single motor behavior influence the swimming speed of cells? In order to address this question, run speeds were measured at constant ligand concentration at four different time points, namely, 1.5, 6.5, 11.5, and 16.5 min after the cells were exposed to ligands (average of over 2500 cells). In the\u00a0presence of glucose, the run speed increased monotonically (Figure 3E) with almost a 50% increase (29.6\u00b11.0\u00b5m/s, mean\u00a0\u00b1\u00a0s.e.) at 16.5 min compared to that measured at the start of the experiment (20.1\u00b10.9\u00b5 m/s). In case of 2Dg, the run speed increased upto 6.5 min reaching a value identical to that observed for glucose at the same time, resulting in a 26% increase (25\u00b11.4\u00b5m/s) compared to the speeds measured at the start of the experiment. However, at longer times, unlike in glucose, the run speed decreased and reached values observed at the start of the experiment. In the absence of ligands, the run speed showed negligible change with speed values ranging approximately between 18 and 21 \u03bcm/s for the entire duration of the experiment. These results indicate that sensing alone can enhance the run speed, albeit for a short duration, as observed in case of 2Dg. A further increase in run speed is observed in case of glucose suggesting that metabolism plays a role in sustaining a high run speed. Clearly, the observations made on a single motor via tethered cell experiments indeed reflect in the population behavior wherein stator unit recruitment due to sensing alone can enhance the swimming speed of a population. We note in passing that the concentrations of the ligands are sufficiently low that osmotic effects do not influence the motion (Rosko et al., 2017).\n\n### Role of Trg receptor and PTS in speed modulation\n\nIn order to characterize the role of Trg receptor, a mutant strain lacking in trg was exposed to both glucose and 2Dg and motor speed was recorded at various times (Figure 3F). There was no difference in response between MB and 2Dg for the $\u0394\u2062t\u2062r\u2062g$ mutant strain. However, in glucose, there was significant increase in the motor speed (about 30%) compared to the pre-stimulus value. This is in contrast to that observed in WT where the motor speed increased in both glucose (about 40%) and 2Dg (about 30%). These results clearly show that in the absence of the Trg sensor, the motor speed remains unaffected in the presence of 2Dg thereby reconfirming the earlier observation that sensing alone can contribute to motor speed modulation. Experiments measuring the membrane potential show a behavior similar to that observed for WT cells (Figure 4A). This is expected since 2Dg is not metabolized and hence does not contribute to PMF and consequently, presence or absence of Trg sensor has no effect\u00a0on\u00a0PMF in the\u00a0presence of 2Dg. The mutant strain exhibits increased PMF in glucose through metabolism although the ligand is not sensed. This behavior is observed at the population level (Figure 4B), wherein there is no change in run speed in response to 2Dg, which is identical to that observed in MB, while there is a significant increase in the presence of glucose (about 50% increase).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig4-v2.jpg)\n\n**Figure 4.:** Time-dependent fluorescence intensity for membrane potential and time-dependent run speed variation for mutant strains, (A,B) $\u0394\u2062t\u2062r\u2062g$ RP437, (C,D) $\u0394\u2062p\u2062t\u2062s\u2062I$ RP437, and (E,F) $\u0394\u2062c\u2062h\u2062e\u2062Y$ RP437 in the\u00a0presence of MB, and 1000 \u03bcM of glucose and 2Dg.Final concentration of cells for membrane potential measurement was $3.75\\times10^{8}$ cells/ml and the values for glucose compared to that for MB are significant at p<0.001 (one-way ANOVA). Each data point in the run speed plot is obtained by averaging over 2500 cells. Speed increase in glucose for all three strains and the observed increase in 2Dg for the wild-type\u00a0(WT) strain and CheY mutant (at 5 min) as compared to motility buffer\u00a0(MB) are statistically significant at p<0.001 (one-way ANOVA). The Y-error bars represent standard error of means from four independent experiments, while the X-error bars represent the duration of 3 min over which the measurements were made for each data point.\n\nIn order to estimate the role of metabolism in motor speed modulation, we performed the same set of experiments in mutants lacking the ptsI gene. There was a marginal increase in motor speed (Figure 3F) and run speed (Figure 4D) in the\u00a0presence of glucose while no significant change was observed in the presence of 2Dg. It can be noted that the membrane potential dropped drastically due to the absence of ptsI gene (Figure 4C) compared to that observed in either WT or $\u0394\u2062t\u2062r\u2062g$ strain. The small increase in membrane potential measured for the mutant strain in the presence of glucose explains the marginal increase in the motor and run speed.\n\n### Role of CheY\n\nTo determine whether CheY is necessary for the observed increase in run speed (Figure 3E), experiments were also performed with a strain lacking CheY ($\u0394\u2062c\u2062h\u2062e\u2062Y$ mutant). These mutant cells do not tumble but always run since the flagellar motors rotate in the CCW direction in the\u00a0absence of CheY-P. The results of such experiments are shown in Figure 4F. The trends are very similar to those observed with WT (Figure 3E) in that the run speed increases monotonically with time in the\u00a0presence of glucose while the speed first increases and then decreases in case of 2Dg. The similarity of the observed trend with WT indicates that CheY-P has no role in the observed modulation in motor speed and the observed speed increases are independent of switching events. The trend in membrane potential for $\u0394\u2062c\u2062h\u2062e\u2062Y$ in the\u00a0presence of both ligands was similar to that observed in the WT strain (Figure 4E).\n\n## Discussion\n\nIt is well known that E. coli modulates its motor bias in response to ligands (Adler, 1966). For example, in case of glucose, which is sensed via the Trg chemoreceptor, sensing leads to the dephosphorylation of CheY-P which in turn reduces the motor reversals leading to smooth runs. Glucose is also sensed and consumed via the PTS pathway, which is known to regulate CheY-P, thereby altering the bias. Neumann et al., 2012 have shown that the signals from the Trg receptor and the PTS pathway combine (additive) to determine the reversal frequency.\n\nAlthough it is well known that the chemotactic pathway modulates the motor bias, the existence of a pathway that also modulates the motor speed is not known. Previous studies have shown that in tethered cell experiments, where the torque is in the high load regime, the motor speed is proportional to the ion motive force in both proton and sodium-driven motors (Gabel and Berg, 2003; Sowa et al., 2003). These changes in motor output have been attributed to the change in the number of stator units, which are assembled from a mobile pool of MotB molecules over a timescale of minutes when the PMF is increased (Reid et al., 2006; Leake et al., 2006). In contrast, for cases where the mechanical load is low, such as in bead\u00a0assay with sub-micron sized beads, the motor output can also vary with the magnitude of the load due to load-dependent stator unit recruitment (Tipping et al., 2013a; Lele et al., 2013). Thus this dynamic engagement of stator units has been shown to modulate motor speed in response to both nutritional status and mechanical load although the exact mechanism responsible for them is not known. While these studies clearly indicate the role of metabolism and mechanical load in motor speed modulation via stator unit recruitment, there is no evidence hitherto that mere sensing of a ligand can directly influence the motor speed at a fixed mechanical load. The tethered cell experiments reported here clearly demonstrate the recruitment of stator units in response to sensing of a ligand and therefore suggest the existence of a pathway that links the sensor to the motor.\n\nOur experiments show an increase in stator unit density at the motor in response to 2Dg, a non-metabolizable analog of glucose. This increase in stator unit density led to a concomitant enhancement in motor speed and thereby the run speed in a population. Since 2Dg is sensed by the Trg sensor, this indicates that a signal for speed modulation is communicated to the motor from the sensor. Further, there was no change in membrane potential confirming the absence of role of metabolism and thereby suggesting that any change in the motor speed is only due to the sensing mechanism. This was further confirmed by deleting the trg gene, which eliminated changes in motor speed in the\u00a0presence of 2Dg. In case of glucose, the enhancement in motor speed is much greater compared to that in 2Dg due to the combined effect of sensing and metabolism, caused by an even greater recruitment of stator units (as indicated by increased intensity of fluorescently tagged stator unit). Here, the increase in motor speed is due to glucose metabolism leading to increased PMF (Schwarz-Linek et al., 2016) while that due to sensing is through the Trg receptor. When the metabolism was disrupted ($\u0394\u2062p\u2062t\u2062s\u2062I$ strain), the basal values of the motor speed reduced significantly. A small increase in motor speed was observed when the cell was exposed to glucose but changes were statistically insignificant in the presence of 2Dg. The weak response observed for the $\u0394\u2062p\u2062t\u2062s\u2062I$ strain may be due to the impaired chemotaxis pathway since PTS genes are known to control the expression of proteins involved in chemotaxis (Neumann et al., 2012).\n\nAn alternate method to characterize stator unit recruitment is to determine the variance in mean rotation rate of the motor as a function of the number of revolutions (Samuel and Berg, 1995; Samuel and Berg, 1996). Thus, a smaller variance would indicate an increased number of stator units, thereby making the motor rotation smoother. The tethered cell experiment with the WT cells shows clearly a decrease in variance when exposed to 2Dg (Figure 3\u2014figure supplement 5B and E) compared to that in MB. The variance decreased even further when exposed to glucose indicating a higher recruitment of stator units due to the combined effect of metabolism and sensing (Figure 3\u2014figure supplement 5A and D). These observations are consistent with the stator unit density measured via fluorescence.\n\nCould the observed modulation of motor speed be controlled by the well-known chemotaxis pathway where the phosphorylated CheY binds to the motor to modulate not only motor bias but also motor speed? To answer this question, motor speed of a mutant lacking in cheY was measured in the presence of both 2Dg and glucose. The observed motor speed modulation was identical to that for the WT indicating that CheY does not play role in stator unit recruitment. These observations clearly suggest that there exists a signaling pathway, independent of the chemotaxis pathway, that links the sensor to the motor. Note that in the cheY mutant, the bias is locked in the CCW direction and therefore is also always in the run mode. Experiments with\u00a0WT cells on the other hand show a momentary increase in CCW bias after which the bias recovers to the pre-stimulus value thereby demonstrating the well-known chemotactic response. This was observed for both glucose and 2Dg albeit a larger increase in CCW bias in the former (Figure 3\u2014figure supplement 4).\n\nThe above results may be understood by considering the state of the motor on the torque-speed curve (Figure 5A). The dashed line originating from the origin is the load path of the motor under high load conditions. When the cell is exposed to 2Dg, one or more stator units are recruited temporarily (states 1\u20132 in Figure 5A, blue line) thereby increasing the rotation speed (see schematic in Figure 5B). The stator units disengage within a short time (about 5\u201310 min) after which the rotation rate returns to the pre-stimulus values (back to state 1). This effect is due to sensing alone. However, when the cell is exposed to glucose, a metabolite, the combined contribution from sensing and PMF leads to a much larger increase in the number of bound stator units (states 1\u20133, red line) and the speeds remain high for a much longer time periods (over 15 min), due to the metabolism.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62848/elife-62848-fig5-v2.jpg)\n\n**Figure 5.:** (A) A representative plot of steady-state torque-speed curves for counterclockwise\u00a0(CCW) rotation of the bacterial flagellar motor at varying loads along with the expected state of the motor along the load line at high load when the cell is exposed to 2Dg and glucose.\u00a0(B) A schematic of the bacterial motor along with a cell tethered to a glass coverslip is included to the right. Motor speed increases as a result of stator unit recruitment upon ligand sensing.\n\nAt the population level, these results imply a more efficient chemotaxis response since the drift velocity of a population of cells in response to a ligand gradient is dependent on both the tumble frequency and the swimming speed. Specifically, the well-known RTBL model of Rivero et al., 1989, which is based on the Keller-Segel model, links the population-level chemotactic response to the individual microscopic variables of cell\u2019s swimming speed, persistence time, and temporal receptor occupation. The drift velocity (also known as the chemotactic velocity) of the population is directly proportional to the product of the swimming speed and a function that depends on the tumbling frequency, spatial gradient of chemoattractant, and occupancy of chemoreceptor (Equation 22 of Rivero et al., 1989). For small gradients, the expression simplifies such that the drift velocity varies as the square of the swimming speed (Equation 25 of Rivero et al., 1989). These results imply that even a 10% increase in the swimming speed could cause the drift velocity to increase anywhere between 10%\u00a0and\u00a020% leading to a significant improvement in the chemotactic efficiency.\n\nFinally, the pathway is independent of the known sensory transduction pathway since the observed speed modulation also occurs in the absence of CheY (Figure 4F). Recent studies have shown that c-di-GMP effector YcgR can inhibit flagellar motility by directly\u00a0interacting with the motor to modulate both its bias and speed (Boehm et al., 2010; Paul et al., 2010; Nieto et al., 2019). While the aforementioned mechanism has been shown to inhibit motor speeds, there is no evidence that the same can enhance motor speeds beyond pre-stimulus levels. Irrespective of the details of the mechanism, the results presented here point to a sophisticated signaling network with multiple strategies to regulate motor behavior enabling an efficient response to changes in bacteria\u2019s environment.\n\n## Materials and methods\n\n### Bacterial strains and growth condition\n\nE. coli RP437 and its four mutants (see Table 1) were inoculated from glycerol stock into tryptone agar plates. A single colony isolate was grown overnight and then sub-cultured in 50 ml tryptone media (0.015 g/l; Sigma) till mid-log phase (OD600 at 200 rpm, 30\u00b0C).\n\n**Table 1.**\n Escherichia coli strains used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Relevant genotype</th>\n      <th>Parent strain</th>\n      <th>Comments, references</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RP437</td>\n      <td></td>\n      <td></td>\n      <td>Wild type, Parkinson, 1978</td>\n    </tr>\n    <tr>\n      <td>RP5232</td>\n      <td>\u0394\u2062c\u2062h\u2062e\u2062Y</td>\n      <td>RP437</td>\n      <td>Parkinson, 1978</td>\n    </tr>\n    <tr>\n      <td>JPA804</td>\n      <td>GFP MotB FliC-sticky</td>\n      <td>RP437</td>\n      <td>Leake et al., 2006</td>\n    </tr>\n    <tr>\n      <td>MTKV01</td>\n      <td>\u0394\u2062t\u2062r\u2062g::Frt</td>\n      <td>RP437</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MTKV04</td>\n      <td>\u0394\u2062p\u2062t\u2062s\u2062I::Frt</td>\n      <td>RP437</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Construction of gene knockout strains\n\nThe $\u0394\u2062c\u2062h\u2062e\u2062Y$ mutant was gifted by Professor JS Parkinson and JPA804 strain by Professor Judith Armitage. Other knockout mutant strains were developed by using standard site-specific recombination method for inactivation of genes (Datsenko and Wanner, 2000; Baba et al., 2006). The desired gene was deleted by replacing it with kanamycin marker. The kanamycin marker was further removed by site-specific recombination around FRT region leaving behind scar of 80 base pairs, using a plasmid expressing an FLP recombinase. The desired deletion was confirmed by colony PCR with oligonucleotides as\u00a0mentioned in Table 2. The details of the PCR with verification primers are given in Figure 3\u2014figure supplement 7.\n\n**Table 2.**\n Oligonucleotides used as primers for gene knockout.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Designation</th>\n      <th>5\u2019\u2013 3\u2019 Sequence</th>\n      <th>Function</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PtsI- F1</td>\n      <td>TAATTTCCCGGGTTCTTTTAAAAATCAGTCACAAGTAAGGTAGGGTTATG ATTCCGGGGATCCGTCGACC</td>\n      <td>ptsI deletion</td>\n    </tr>\n    <tr>\n      <td>PtsI-R2</td>\n      <td>AAGCAGTAAATTGGGCCGCATCTCGTGGATTAGCAGATTGTTTTTTCTTC TGTAGGCTGGAGCTGCTTCG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Trg-F1</td>\n      <td>GCCGATGACTTTCTATCAGGAGTAAACCTGGACGAGAGACAACGGTAATGATTCCGGGGATCCGTCGACC</td>\n      <td>trg deletion</td>\n    </tr>\n    <tr>\n      <td>Trg-R2</td>\n      <td>GGGATCTGTCGATCCCTCCTTGAACATTTTCACACCGTAGCGAAACTAACTGTAGGCTGGAGCTGCTTCG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PtsI- VF1</td>\n      <td>CTGCTGCCCAGTTTGTAAAA</td>\n      <td>Confirming ptsI deletion</td>\n    </tr>\n    <tr>\n      <td>PtsI- VR2</td>\n      <td>TTTACCAATGGTGCCGTCTA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Trg-VF1</td>\n      <td>AGGCATCCTATGAGGTTTCCT</td>\n      <td>Confirming trg deletion</td>\n    </tr>\n    <tr>\n      <td>Trg-VR2</td>\n      <td>CTATCTCGTCAACTTACGGTTGAAT</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Tethered cell experiment\n\nCells were centrifuged at 4000 rpm and washed twice with motility buffer (MB). MB is composed of K2HPO4, 11.2 g; KH2PO4, 4.8 g; (NH4)2SO4, 2 g; MgSO4\u22c5H2O, 0.25 g; polyvinylpyrrolidone, 1 g; and EDTA, 0.029 g/l of distilled water. Cells were then resuspended in 1 ml MB and passed 75 times through a syringe fitted with 21-gauge needle to enable shearing of flagella. Cells were centrifuged at 4000 rpm for 10 min to obtain cells having short flagellar stub. The cell pellet so obtained was again diluted in MB.\n\nRectangular chambers were created with a microscope coverslip as base and flexible thin sheet of polydimethylsiloxane (PDMS)\u00a0(Sylgard 184; Dow Corning) as the top wall separated by two parallel silicon rubber spacers of approximate thickness 400 \u03bcm. The thin sheets of PDMS were prepared by spreading the uncured polymer on polystyrene petri plates and then curing them for 8 hr at 50\u00b0C. The microscopic coverslip was cleaned with ethanol and smudged with thin layer of silicone oil (Manson et al., 1980). Use of silicone oil prior to antibody treatment in our case resulted in a more stable interaction between anti-flagellin antibody and the glass slide. This ensured that tethered cells were not washed away when the ligands were introduced.\n\nThe aforementioned arrangement results in a chamber that is permeable to oxygen. The working volume of the chamber was approximately 80\u2013100 \u03bcl. The chamber was first incubated for 30 min with a solution containing anti-flagellin antibody (Abcam) specific for bacterial flagellin. The solution was prepared by diluting the antibody 1000 folds in 50 mM Tris-HCl (pH 7.6). The chamber was washed gently with MB after which sheared cells were introduced into the chamber. An incubation time of 15\u201320 min was sufficient for the flagellum to tether to the antibody-coated coverslip surface. Unattached cells were washed and the channel was filled again with MB. Once the chamber was filled with MB, concentrated ligand solution (5000 \u03bcM glucose or 2Dg) of a known volume was then introduced gently through four holes punched in the PDMS sheet so that the average concentration of the final solution in the chamber is 1000 \u03bcM. The four holes surrounded the visualization region and were about 3\u20134 mm from the region. Experiments with color dyes showed that a combination of convective flow induced by the incoming dye solution and accompanying diffusion led to the dye reaching the visualization region within 30\u201345 s of introducing the dye. In order to measure the response of single flagellar motor to ligands, we first measured the response in MB and again after adding glucose/2Dg. Such pair-wise assessment removed any variability arising due to cell size and tethering geometry.\n\nExperiments with ligands were performed at an ambient temperature of 25\u00a0\u00b1\u00a01\u00b0C. The imaging was done with an inverted microscope (Olympus IX71) fitted with 100\u00d7 (1.4 NA), oil\u00a0immersion objective. Area was scanned for rotating cells and videos were captured at an acquisition rate of 60 fps for 30\u201344 s using a CMOS camera (Hamamatsu Inc).\n\nFigure 2\u2014figure supplement 1A shows a schematic of the top and side view of a cell tethered to a glass coverslip (Silverman and Simon, 1974). Figure 2\u2014figure supplement 1B presents an image of the cell along with two circles drawn by the Particle Tracker plugin of ImageJ software(NIH) for identifying the cell ends (Sbalzarini and Koumoutsakos, 2005). Particle detection and linking parameters were adjusted in such a way that only two circles fit the two ends of the rod-shaped bacteria. The coordinates of the centers of the two circles gave the orientation angle of the cell (Figure 2\u2014figure supplement 1A). The change in orientation angle was determined for each subsequent frame (d\u03b8) and was used to determine the direction of rotation and the instantaneous rotation rate (Hz). Rotation rate values between \u22120.05 and 0.05 Hz were considered as a pause (Eisenbach et al., 1990) and were not used to determine the average rotational speed. Moving average of 10 instantaneous speeds were calculated so as to obtain the mean rotational speed and CCW bias. Since a cell undergoes several revolutions during the course of the experiment, the mean time required to complete a specified number of revolutions and the corresponding variance was determined from image analysis. The rotation of the cell was recorded and the angular position, obtained as a function of time, was used to determine the rotation speed and the rotation bias.\n\n### GFP-MotB intensity measurement\n\nFor GFP-MotB intensity measurement, cells were prepared in the same manner as that for the tethered cell experiment except that the anti-flagellin antibody was not used in the flow chamber. This is because the mutant strain JPA804 (RP437 MotB-GFP-tagged cell) has sticky flagella (Leake et al., 2006) enabling them to easily bind to the substrate. Cells were imaged via spinning disk confocal microscopy (Perkin Elmer UltraVIEW system with Olympus IX71) under 100\u00d7 (NA 1.4) oil immersion objective. First, bright-field videos were captured using a CMOS camera (Hamamatsu Inc) at an acquisition speed of 34 fps for 5 s for measuring rotation speed of cells. Immediately after this, the cells were excited with a 488 nm laser with exposure time of 200 ms (4\u20135 mW). Images of 16-bit resolution were captured at an acquisition rate of 6 fps for 1 s at different time points for rotating cells using an EMCCD camera (Hamamatsu Inc). Videos were analyzed using ImageJ software, and the fluorescence intensity of the stator proteins and motor speed were determined for the rotating cells. All the experiments were performed at 25\u00b0C. To eliminate the effect of varying background intensity from one experiment to another, the average pixel value obtained from three distinct locations (highlighted by the circles in Figure 2\u2014figure supplement 2) around the cell was subtracted from the image. This ensured that the fluorescence intensity of the stator units was not influenced by the intensity variation in the background. This process was applied to all cells. The same cell was also visualized in brightfield to simultaneously capture the motor rotation speed (Figure 2\u2014figure supplement 2). We observed that in some cases the cells did not rotate for the entire duration of the experiment. Such cases were not included. For analysis, we chose cells that were tethered at their polar ends and ignored cells that were tethered at the center of the body so that the motor torques at a fixed rotation rate are similar.\n\n### Determination of swimming speed\n\nCells were centrifuged at 4000 rpm and washed twice with MB. Cells were added to each vial of ligand (1000 \u03bcM of glucose and 2Dg) and MB such that the cell density was low, about 106\u2013107 cells/ml. The cells were introduced into glass, rectangular microchannels (5 cm [L]\u00a0\u00d7\u00a01000 \u03bcm [W]\u00a0\u00d7\u00a0100 \u03bcm [H]) via capillary action (Deepika et al., 2015) at different time points (t=0\u201315 min) for visualization and measurements. Both ends of microchannel were sealed with wax after introduction of cells. Trajectories of swimming bacteria were recorded with 40\u00d7 (0.75 NA) objectives using dark-field microscopy. At each time point, six videos of about 15 s duration were recorded over a span of 3 min at a frame rate of 21 fps. Images were taken in the central region of the microchannel away from the channel walls. The trajectories of the cells were obtained using a commercial software, ImageProPlus. The data was analyzed using an in-house code written in MATLAB to obtain the swimming speed and cell orientation from more than 2500 cells for each condition. We considered only those cells that were within 1\u00a0\u03bcm of the focal plane with tracks longer than 0.5 s, which ensured that all out-of-plane motions were ignored by the analysis. A tumble event was identified when the swimming speed of the cell was below half the mean swimming speed and the change in the turn angle was greater than 4\u00b0 between successive frames (at 21 fps)\u00a0(Alon et al., 1998). The measured average swimming speed of 18.2\u00a0\u00b1\u00a07.9 \u03bcm/s (average\u00a0\u00b1\u00a0standard deviation) and an average turn angle of 71\u00b0 for RP437 cells dispersed uniformly in a microchannel containing plain MB are close to those observed for the same strain reported earlier, 18.8\u00a0\u00b1\u00a08.2 \u03bcm/s and 69\u00b0, by Saragosti et al., 2011. The details of the analysis have been described in earlier published reports (Deepika et al., 2015; Karmakar et al., 2016).\n\n### Measurement of membrane potential\n\nCells preparation method was similar to that described before except that sodium phosphate buffer (NaMB) was used instead of the standard MB. NaMB contained Na2HPO4, 1.64 g; NaH2PO4, 0.47 g; NaCl, 8.77 g; and EDTA, 0.029 g/l of distilled water. The chemicals Na2HPO4, NaH2PO4,\u00a0and NaCl were obtained from Merck while EDTA and CCCP were purchased from Sigma Aldrich. The cell pellet was dissolved in 500 \u03bcl of NaMB and 3.75 \u03bcl of the resulting solution was further diluted in NaMB containing ligand at a 1000 \u03bcM concentration such that a final cell density of 3.75\u00d7108 cells/ml was achieved.\n\n3,3-Diethyloxacarbocyanine iodide ((DiOC2(3)) from ThermoFisher Scientific) is a lipophilic cationic dye and was used as a membrane potential probe. DiOC2(3) was added at a final concentration of 30 \u03bcM to each sample vial after which samples were taken for fluorescence readings in microplate reader (Varioskan LUX plate reader) with excitation at 488 nm. Further, addition of EDTA facilitates dye uptake in gram-negative cells. Hence, 100 \u03bcM EDTA was introduced in NaMB.\n\nDiOC2(3) enters the cell as a monomer and binds to the membrane. Upon excitation by 488 nm wavelength light, the dye emits both green (520 nm) and red (620 nm) fluorescence. The green fluorescence intensity is dependent on the size of the cell while the red fluorescence intensity is dependent on both the membrane potential and the size of the cell. The ratio of red and green fluorescence (R/G) eliminates the dependence on cell size and directly correlates with the membrane potential of the cells. Membrane potential is negative on the inside of the membrane and so the magnitude of the negative charge correlates with the magnitude of R/G (Novo et al., 2000; Kennedy et al., 2011; Alakomi et al., 2006). CCCP is an ionophore which increases membrane permeability to protons and thereby eliminates membrane potential. In such a case, the R/G is the lowest and is used as a control in our experiments.\n\n### pH homeostatsis E. coli\n\nWT RP437 cells transformed with plasmid pMS201 having a gene with kanamycin resistance and green fluorescence protein (GFPmut2) were gifted by Professor Supreet Saini. The strain was used for determining pH homeostasis. Experiments were performed in the\u00a0presence and absence of 20 mM sodium benzoate (weak permeant acid), which is known to collapse the pH difference across the cell membrane and equilibrate it to the pH value of the external medium. The cells were suspended in MBs with different pH ranging from 5.5 to 8.5. Samples were excited at 485 nm and emission was collected from 495 nm onward using a fluorescence spectrophotometer (Varioskan LUX plate reader). Peak emission was observed at 508 nm and the same was used for analysis.\n",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "ee2c1c01-64bc-4fcb-ab65-47d0b0f4a41b",
+      "submission_id": "5569a048-60c7-4bcb-ac0d-caa0a8d330a8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62848.sa1](https://doi.org/10.7554/eLife.62848.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper will be of interest to scientists interested in chemotaxis and bacterial motility. Using E. coli, it demonstrates, through a range of experimental methods, that the widely held view that the signals associated with ligand binding in chemotaxis serve to bias the direction of rotation of the motor without changing its speed is not correct, and that there is a demonstrable transient change in speed.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Ligand Sensing Enhances Bacterial Flagellar Motor Output via Stator Recruitment\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Richard M Berry (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our policy on revisions we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThis is an interesting study reporting an increase in the rotation speed of the E. coli flagellar motor upon the sensing of a non-metabolizable glucose analog (2Dg) by the cell. The authors conclude that this increase is due to an increase in the number of torque-generating stator complexes that drive the motor. Knockout of the trg gene abolished this effect, suggesting that sensing of 2Dg by the Trg chemosensor is responsible. Involvement of membrane potential, the PTS pathway, and the chemotaxis response regulator CheY is ruled out. The manuscript is well-written, and the data are convincing. But the mechanism remains unclear.\n\nEssential revisions:\n\n1. While reported as significant at P = 0.01 level, the GFP-MotB data would be much improved by more repetitions, which should not be difficult to achieve. Normally at least 20-30 motors should be included, at least in the main experiments.\n\n2. Apparent motor and swimming speed increases during chemotactic responses have been attributed in the past to un-resolved switching and partial switching events. Typically, care should be taken to rule out these possibilities and to demonstrate that this has been done. At minimum, speed recordings should be shown that demonstrate the time resolution for detecting short switching events, and characterizing the distributions of event lengths. Then analysis to test whether reported average speed changes could be attributed to missed events. However, the control experiment with CheY deletion makes these steps unnecessary, as it demonstrates that the observed speed changes are independent of switching. This should be made clear and the importance of the CheY experiment emphasized in the text.\n\n3. The authors hint towards the involvement of c-di-GMP signaling via the YcgR protein. This hypothesis can be tested by knocking down the ycgr gene and repeating the assay, but this has not been done or reported. Addition of these data to the manuscript would make the paper significantly stronger.\n\n4. Do other chemoreceptors (Tar, Tsr, Tap) also act in the same way with their respective ligands? It would be useful to know if this effect is specific to Trg or if it is also found in the other chemoreceptors.\n\n5. In figure 3C, what is the reason that the GFP intensity and the speed do not have the same range? In other words, why is the slope not equal to 1? Since there is 1:1 correspondence between the number of MotB and the number of GFP, shouldn't the slope be 1?\n\n6. The authors do not cite or discuss the recent literature on load-dependent stator remodeling (e.g. PMIDs: 29183968, 31142644). It would be helpful to have a more in-depth discussion on how the observed stator unit recruitment relates to stator remodeling in response to load.\n\n7. The authors should make quantitative the changes in chemotactic behaviour that would be expected as a consequence of the motor speed changes revealed in this research. That is, can the authors put some numbers into a standard analysis of run-and-tumble dynamics to quantify any improvement in chemotactic efficiency or speed under such changes?\n",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "52199767-3096-4353-aeb9-441da6b7883a",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C1",
+      "claim": "Flagellated bacteria, such as Escherichia coli, sense chemicals in their environment by a chemoreceptor and relay the signals via a well-characterized signaling pathway to the flagellar motor.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that flagellated bacteria, such as Escherichia coli, sense chemicals in their environment by a chemoreceptor and relay the signals via a well-characterized signaling pathway to the flagellar motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge and is presented as well-known information in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "7a0d1d46-f0b1-459a-a245-ed5fb2ab0354",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C2",
+      "claim": "Signals from chemoreceptors change the rotation bias of the motor without influencing the motor speed.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely accepted that the signals change the rotation bias of the motor without influencing the motor speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the established view in the field that the authors are challenging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "82b92a3b-c266-4549-9bf0-4845d42489fd",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C3",
+      "claim": "Bacteria are capable of modulating motor speed on merely sensing a ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present results to the contrary and show that the bacteria is also capable of modulating motor speed on merely sensing a ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "65f0312e-2227-431c-9f5d-9cf4473949d2",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C4",
+      "claim": "Step changes in concentration of non-metabolizable ligand cause temporary recruitment of stator units leading to a momentary increase in motor speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Step changes in concentration of non-metabolizable ligand cause temporary recruitment of stator units leading to a momentary increase in motor speeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from tethered cell experiments and fluorescence measurements shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "e53fd440-3a65-447b-babb-9988c3fd03ec",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C5",
+      "claim": "For metabolizable ligand, the combined effect of sensing and metabolism leads to higher motor speeds for longer durations.",
+      "claim_type": "EXPLICIT",
+      "source": "For metabolizable ligand, the combined effect of sensing and metabolism leads to higher motor speeds for longer durations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing glucose (metabolizable) and 2Dg (non-metabolizable) responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "466a757a-2d06-4f37-8b00-ff3acd49b682",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C6",
+      "claim": "Bacteria can execute a net directed migration in response to external chemical cues, a phenomenon termed chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that bacteria can execute a net directed migration in response to external chemical cues, a phenomenon termed chemotaxis (Adler, 1966; Berg, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "febc8111-5ff0-442c-bf0d-7aa28a81aa0e",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C7",
+      "claim": "Escherichia coli is one of the most commonly studied bacteria for understanding chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most commonly studied bacteria for understanding chemotaxis is Escherichia coli (Wadhams and Armitage, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "b4b76b59-52ae-4270-8174-469135074bba",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C8",
+      "claim": "E. coli transmit signals from the environment via a well-characterized signaling pathway to reversible flagellar motors that drive extended helical appendages called flagella thereby achieving locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "On sensing a ligand, these bacteria transmit the signal from the environment via a well-characterized signaling pathway to reversible flagellar motors that drive extended helical appendages called flagella thereby achieving locomotion (Adler, 1969; Berg, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "368a97d3-a51e-49da-99bf-d2f4da50a9d9",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C9",
+      "claim": "The motor is powered by a proton flux, termed proton motive force (PMF), through an electrochemical gradient of protons across the inner cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor is powered by a proton flux, termed proton motive force (PMF), through an electrochemical gradient of protons across the inner cytoplasmic membrane (Fung and Berg, 1995; Gabel and Berg, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "fafbc8e4-9ca4-49a0-b58a-c6a2cbc83b19",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C10",
+      "claim": "When all flagella rotate in the counterclockwise (CCW) direction, the flagella collect into a single bundle leading to a forward motion called a run.",
+      "claim_type": "EXPLICIT",
+      "source": "When all flagella rotate in the counterclockwise (CCW) direction (as seen from the flagellar end), the flagella collect into a single bundle leading to a forward motion called a run, whereas when one or more of the flagella rotate in the clockwise (CW) direction, they separate from the bundle leading to an abrupt change in direction, also known as a tumble (Berg and Brown, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to foundational work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "ba37644d-fee6-4615-9a06-e2ca1e21ef63",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C11",
+      "claim": "When one or more of the flagella rotate in the clockwise (CW) direction, they separate from the bundle leading to an abrupt change in direction, also known as a tumble.",
+      "claim_type": "EXPLICIT",
+      "source": "When all flagella rotate in the counterclockwise (CCW) direction (as seen from the flagellar end), the flagella collect into a single bundle leading to a forward motion called a run, whereas when one or more of the flagella rotate in the clockwise (CW) direction, they separate from the bundle leading to an abrupt change in direction, also known as a tumble (Berg and Brown, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to foundational work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "0f1561e5-dc9f-458c-bf6e-77cfd8923d94",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C12",
+      "claim": "By modulating the duration of runs and tumbles, bacteria achieve a net motion toward chemoattractants or away from chemorepellents.",
+      "claim_type": "EXPLICIT",
+      "source": "By modulating the duration of runs and tumbles, the bacteria achieve a net motion toward chemoattractants or away from chemorepellents (Brown and Berg, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to foundational work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "f4d55e52-a690-48f6-92c1-e809ab2a7b30",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C13",
+      "claim": "The direction of rotation of the flagellar motor is controlled by the switch complex comprising of proteins FliG, FliM, and FliN, which are present at the cytoplasmic end of the motor.",
+      "claim_type": "EXPLICIT",
+      "source": "The direction of rotation of the flagellar motor is controlled by the switch complex comprising of proteins FliG, FliM, and FliN, which are present at the cytoplasmic end of the motor (Figure 1; Yamaguchi et al., 1986).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "d5a7f31d-c7fc-486a-a245-a34686698fc1",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C14",
+      "claim": "When CheY-P binds to the motor protein FliM, the motor is biased in the CW direction.",
+      "claim_type": "EXPLICIT",
+      "source": "When CheY-P, the phosphorylated state of the chemotaxis protein CheY, binds to the motor protein FliM, the motor is biased in the CW direction (Welch et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "d203fd18-9968-4004-8343-905c649973fd",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C15",
+      "claim": "The null state of the motor is the CCW direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The null state of the motor, however, is the CCW direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "f4467302-55d3-4eb5-9dac-e209715009ba",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C16",
+      "claim": "When a ligand binds to a chemoreceptor protein, the activity of the chemotaxis pathway protein CheA is reduced, which in turn reduces the production of phosphorylated CheY-P.",
+      "claim_type": "EXPLICIT",
+      "source": "When a ligand binds to a chemoreceptor protein present in the periplasm, the activity of the chemotaxis pathway protein CheA is reduced, which in turn reduces the production of phosphorylated CheY-P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge in the chemotaxis pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "4a5ca5c5-c5a0-4045-813c-dd7a9b6f5a69",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C17",
+      "claim": "A feedback control mechanism intrinsic to the signaling network brings back the phosphorylation state of CheA and CheY to the pre-stimulus levels and resets the duration of CW and CCW rotations to the initial state, a characteristic feature termed perfect adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "For ligand concentrations in the nanomolar to the micromolar range, a feedback control mechanism intrinsic to the signaling network brings back the phosphorylation state of CheA and CheY to the pre-stimulus levels and resets the duration of CW and CCW rotations to the initial state, a characteristic feature of the network termed perfect adaptation (Masson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "0774e8f1-b82f-40ea-ab8a-b93f8285c254",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C18",
+      "claim": "The torque of the flagellar motor is generated via ion flow through at least 11 membrane-bound stator units comprising of proteins, MotA and MotB.",
+      "claim_type": "EXPLICIT",
+      "source": "The torque of the flagellar motor is generated via ion flow through at least 11 membrane-bound stator units comprising of proteins, MotA and MotB (Yuan and Berg, 2008; Reid et al., 2006; Khan et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "a9b1ac1b-3b56-4b73-a0e8-53f9c3549a2d",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C19",
+      "claim": "Previous studies have demonstrated the discrete nature of torque generation by restoring the motility of paralyzed cells by induced expression of wild-type genes from plasmids, causing a step-wise increase in motor speed, a process termed 'resurrection'.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated the discrete nature of torque generation by restoring the motility of paralyzed cells (mot mutants) by induced expression of wild-type (WT) genes from plasmids. The latter caused a step-wise increase in motor speed, a process termed 'resurrection' (Block and Berg, 1984; Blair and Berg, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "56a32f86-b1ac-495e-9dd2-5cb509939015",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C20",
+      "claim": "The number of bound stator units vary with PMF with almost all stator units leaving the motor following removal of PMF.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments have shown that the number of bound stator units vary with PMF with almost all stator units leaving the motor following removal of PMF (Tipping et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "f9e358fc-4961-4331-860c-93d23043d7c2",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C21",
+      "claim": "Bacteria are able to vary the number of motor-bound stator units depending on the external mechanical load.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the bacteria is able to vary the number of motor-bound stator units depending on the external mechanical load (Tipping et al., 2013a; Lele et al., 2013; Nord et al., 2017; Wadhwa et al., 2019) although not all binding sites are necessarily occupied even at high load conditions due to the transient nature of stator unit binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "87ba6b5a-b587-4297-80c5-1017f03abced",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C22",
+      "claim": "The speed of the motor is controlled via the intracellular concentration of the second messenger cyclic diguanosine monophosphate (c-di-GMP), whose concentration increases during nutrient depletion conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the torque variation with load, the speed of the motor is also controlled via the intracellular concentration of the second messenger cyclic diguanosine monophosphate (c-di-GMP), whose concentration increases during nutrient depletion conditions (Boehm et al., 2010; Paul et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "b54c6adb-312b-4170-9545-acc95995fd18",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C23",
+      "claim": "c-di-GMP binds to the YcgR protein, which in turn interacts with the MotA to reduce the rotation speed of the motor.",
+      "claim_type": "EXPLICIT",
+      "source": "The c-di-GMP binds to the YcgR protein, a PilZ domain protein, which in turn interacts with the MotA to reduce the rotation speed of the motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "cc0102d0-76a3-47a5-9048-51e195cda9a7",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C24",
+      "claim": "There is no clear evidence of the chemosensory transduction system influencing the motor speed in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "While the aforementioned studies have demonstrated the modulation of motor bias in response to sensing of ligand and change in motor speed with PMF or when exposed to starvation conditions, there is as yet no clear evidence of the chemosensory transduction system influencing the motor speed in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "8a978b26-4aa0-4f9c-a22d-586cc5617e0d",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C25",
+      "claim": "Glucose is the preferred carbon source for E. coli's growth.",
+      "claim_type": "EXPLICIT",
+      "source": "For E. coli, glucose is the preferred carbon source for cell's growth and there exist detailed studies on the molecular mechanism of sensing and adaptation to the ligand (Hazelbauer and Engstr\u00f6m, 1980; Lux et al., 1999; Feng et al., 1999; Li and Hazelbauer, 2004; Neumann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "80c83b69-6449-40c5-80d6-2b155a8cc533",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C26",
+      "claim": "Glucose signaling is achieved through two independent pathways: through the phosphotransferase system (PTS) pathway and via the Trg-sensing pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The signaling is achieved through two independent pathways: through the phosphotransferase system (PTS) pathway and via the Trg-sensing pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "209930e0-4d48-4af8-a966-2ea953357696",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C27",
+      "claim": "The combined signals from the PTS and Trg pathways determines the phosphorylation state of CheA, which in turn determines the concentration of CheY-P, and therefore the motor bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined signals from the two pathways determines the phosphorylation state of CheA, which in turn determines the concentration of CheY-P, and therefore the motor bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "051182bd-71aa-431e-91de-d6d1e9f1e231",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C28",
+      "claim": "2Dg is sensed by the Trg sensor but is not metabolized since cells do not grow in its presence.",
+      "claim_type": "EXPLICIT",
+      "source": "Adler et al., 1973 have shown that 2Dg is sensed by the Trg sensor, but unlike glucose, are not metabolized since cells do not grow in its presence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "0132cf92-8b77-4e8d-8927-bcb5c7338dee",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C29",
+      "claim": "Cells lacking Trg show chemotactic response to 2Dg only when grown in the presence of glycerol through the activation of mannose PTS pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, cells lacking Trg show chemotactic response to 2Dg only when grown in the presence of glycerol through the activation of mannose PTS pathway (Adler and Epstein, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "5acbc7d9-a66b-4e38-a7f8-f8bc3e32d3fe",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C30",
+      "claim": "In the presence of glucose, there is a sharp increase in rotation rate from an average speed of about 6 to 7.5 Hz at about 100 s and again a further increase to about 9 Hz at around 650 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2A and B presents the time evolution of the rotation speed of a single motor after the introduction of glucose and 2Dg, respectively. In case of glucose, there is a sharp increase in rotation rate from an average speed of about 6 to 7.5 Hz at about 100 s and again a further increase to about 9 Hz at around 650 s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "bb9670f2-74e3-4f33-b021-d9ff99e66903",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C31",
+      "claim": "For 2Dg, the rotation speed remains unchanged for about 300 s after which there is a sudden increase in average speed from about 4 Hz to about 5.7 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, for 2Dg the rotation speed remains unchanged for about 300 s after which there is a sudden increase in average speed from about 4 Hz to about 5.7 Hz.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "1721abc9-ae98-4445-84d7-e90be9e69baa",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C32",
+      "claim": "The increased speed in 2Dg is sustained for about 200 s after which it returns to the pre-stimulus levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased speed is sustained for about 200 s after which it returns to the pre-stimulus levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "c03ad318-5d72-487f-a6e5-7c7d05b1eb0f",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C33",
+      "claim": "The step increases in motor speed range between 1.0 and 2.0 Hz, which are of magnitude similar to those observed in the resurrection experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The step increases, which range between 1.0 and 2.0 Hz, are of magnitude similar to those observed in the resurrection experiments (Block and Berg, 1984; Blair and Berg, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the current study and comparison to cited prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "7a28b6c5-c15c-46e8-9307-82610e0b72fa",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C34",
+      "claim": "The fluorescence intensity of stator units increases with time when glucose is introduced.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is no change in the intensity for a cell in MB, the intensity increases with time when glucose is introduced.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "845cfed6-691b-4e8f-bd42-a0c3d9eb85d9",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C35",
+      "claim": "On introduction of 2Dg, the intensity increases for a short duration (about 4\u20135 min) after which it falls to the pre-stimulus value.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, on introduction of 2Dg, which is a non-metabolizable ligand, the intensity increases for a short duration (about 4\u20135 min) after which it falls to the pre-stimulus value.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "92597763-ff17-4167-8392-c58ee2f2a51e",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C36",
+      "claim": "The modulation in motor speed is caused by recruitment of stator units upon mere sensing of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "This result matches with the change in motor speed (Figure 2D) confirming that the modulation in motor speed is indeed caused by recruitment of stator units upon mere sensing of ligand.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "1a15e61b-706b-4530-aca4-5da0883a8a68",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C37",
+      "claim": "An increase of 17% at 5 min and 20% increase at 10 min was observed in the fluorescence intensity for glucose relative to its pre-stimulus value.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase of 17% at 5 min and 20% increase at 10 min was observed in the fluorescence intensity for glucose relative to its pre-stimulus value.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "0f46ee86-f348-4afb-8da3-59fe33eb0e0b",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C38",
+      "claim": "A 14% increase was observed at 5 min for 2Dg after which the intensity decreased to its pre-stimulus value.",
+      "claim_type": "EXPLICIT",
+      "source": "A slightly lower increase (14%) was observed at 5 min for 2Dg after which the intensity decreased to its pre-stimulus value.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "f68b818f-6afe-419b-b4b7-9d3230be2b2d",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C39",
+      "claim": "There was no discernible trend in the intensity value measured for cell exposed to MB.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected there was no discernible trend in the intensity value measured for cell exposed to MB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "81696a3c-536b-4b46-b119-5aee6174140d",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C40",
+      "claim": "The normalized fluorescent intensity values are proportional to motor speeds suggesting that stator elements are added following the introduction of the two ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized fluorescent intensity values in different motors for the three conditions and the corresponding normalized motor speeds are presented in Figure 3C. The intensity is proportional to motor speeds suggesting that stator elements are added following the introduction of the two ligands.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "ef65ac0f-2a24-4584-a73b-488507c932a5",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C41",
+      "claim": "There is no change in the membrane potential for NaMB and 2Dg and their values are very close.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is no change in the potential for NaMB and 2Dg and their values are very close, the intensity value in the presence of glucose is significantly higher.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "a96a9b07-2428-4bd5-b500-a5bbc976fabe",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C42",
+      "claim": "The intensity value in the presence of glucose is significantly higher than NaMB and 2Dg.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is no change in the potential for NaMB and 2Dg and their values are very close, the intensity value in the presence of glucose is significantly higher.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "655c105e-4caa-4feb-bb5c-600c1e6442b3",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C43",
+      "claim": "The stator unit recruitment in the presence of 2Dg is independent of PMF and is caused solely by sensing of 2Dg.",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly demonstrates that the stator unit recruitment in the presence of 2Dg is independent of PMF and is caused solely by sensing of 2Dg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the membrane potential measurements showing no change for 2Dg.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "cadd54c8-0700-4e0e-8869-f16a73fb48f8",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C44",
+      "claim": "For glucose, the increase in motor speed would be a combination of increased PMF and that due to sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "For glucose, the increase in motor speed would be a combination of increased PMF and that due to sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the membrane potential measurements showing increased potential for glucose.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "ef60799d-2f54-4d2c-9904-2678ad8894ac",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C45",
+      "claim": "In the presence of glucose, the run speed increased monotonically with almost a 50% increase (29.6\u00b11.0\u00b5m/s) at 16.5 min compared to that measured at the start of the experiment (20.1\u00b10.9\u00b5m/s).",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of glucose, the run speed increased monotonically (Figure 3E) with almost a 50% increase (29.6\u00b11.0\u00b5m/s, mean \u00b1 s.e.) at 16.5 min compared to that measured at the start of the experiment (20.1\u00b10.9\u00b5 m/s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "f542a5a7-8c8f-4aea-9468-f59a18053625",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C46",
+      "claim": "In case of 2Dg, the run speed increased up to 6.5 min reaching a value identical to that observed for glucose at the same time, resulting in a 26% increase (25\u00b11.4\u00b5m/s) compared to the speeds measured at the start of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of 2Dg, the run speed increased upto 6.5 min reaching a value identical to that observed for glucose at the same time, resulting in a 26% increase (25\u00b11.4\u00b5m/s) compared to the speeds measured at the start of the experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "3250fb98-7602-4f4e-837e-163b016da25d",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C47",
+      "claim": "At longer times, unlike in glucose, the run speed in 2Dg decreased and reached values observed at the start of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at longer times, unlike in glucose, the run speed decreased and reached values observed at the start of the experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "177edcc5-06a5-4fc0-afae-20a709c7f57d",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C48",
+      "claim": "In the absence of ligands, the run speed showed negligible change with speed values ranging approximately between 18 and 21 \u03bcm/s for the entire duration of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ligands, the run speed showed negligible change with speed values ranging approximately between 18 and 21 \u03bcm/s for the entire duration of the experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "c8d9d596-854f-4da3-9776-3df0d823dd2b",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C49",
+      "claim": "Sensing alone can enhance the run speed, albeit for a short duration, as observed in case of 2Dg.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that sensing alone can enhance the run speed, albeit for a short duration, as observed in case of 2Dg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the run speed data for 2Dg.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "9ec3dcd9-83ac-4252-9dbc-80ba96ca230c",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C50",
+      "claim": "Metabolism plays a role in sustaining a high run speed.",
+      "claim_type": "EXPLICIT",
+      "source": "A further increase in run speed is observed in case of glucose suggesting that metabolism plays a role in sustaining a high run speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from comparing glucose and 2Dg run speed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "30f76656-e174-43c7-8705-5fc877614fac",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C51",
+      "claim": "Stator unit recruitment due to sensing alone can enhance the swimming speed of a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, the observations made on a single motor via tethered cell experiments indeed reflect in the population behavior wherein stator unit recruitment due to sensing alone can enhance the swimming speed of a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from both tethered cell and population-level experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "e30a3c34-5863-4866-b09b-5d7adfc130c5",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C53",
+      "claim": "In glucose, there was significant increase in the motor speed (about 30%) compared to the pre-stimulus value for the \u0394trg mutant strain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in glucose, there was significant increase in the motor speed (about 30%) compared to the pre-stimulus value.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3F for the \u0394trg strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "92fd178a-c82e-4921-beb7-c7aa4ad6059b",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C54",
+      "claim": "In the absence of the Trg sensor, the motor speed remains unaffected in the presence of 2Dg.",
+      "claim_type": "EXPLICIT",
+      "source": "These results clearly show that in the absence of the Trg sensor, the motor speed remains unaffected in the presence of 2Dg thereby reconfirming the earlier observation that sensing alone can contribute to motor speed modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data from the \u0394trg mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "d7ed0bf6-9286-4f01-a73d-0afdc58e56c1",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C55",
+      "claim": "The \u0394trg mutant strain exhibits increased PMF in glucose through metabolism although the ligand is not sensed.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant strain exhibits increased PMF in glucose through metabolism although the ligand is not sensed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by membrane potential data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "83389d2d-1f9f-4229-b0f4-d4a7b571efa5",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C56",
+      "claim": "For the \u0394trg strain, there is no change in run speed in response to 2Dg, which is identical to that observed in MB, while there is a significant increase in the presence of glucose (about 50% increase).",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior is observed at the population level (Figure 4B), wherein there is no change in run speed in response to 2Dg, which is identical to that observed in MB, while there is a significant increase in the presence of glucose (about 50% increase).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "5f9d1431-ffdb-48cc-b05c-61c989ee7f1d",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C57",
+      "claim": "For the \u0394ptsI mutant, there was a marginal increase in motor speed in the presence of glucose while no significant change was observed in the presence of 2Dg.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to estimate the role of metabolism in motor speed modulation, we performed the same set of experiments in mutants lacking the ptsI gene. There was a marginal increase in motor speed (Figure 3F) and run speed (Figure 4D) in the presence of glucose while no significant change was observed in the presence of 2Dg.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 3F and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "1201dada-bb40-419d-a627-24b66809095c",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C59",
+      "claim": "The small increase in membrane potential measured for the \u0394ptsI mutant strain in the presence of glucose explains the marginal increase in the motor and run speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The small increase in membrane potential measured for the mutant strain in the presence of glucose explains the marginal increase in the motor and run speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the membrane potential and motor speed data for the \u0394ptsI strain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "17ce282b-ed73-4b3f-a40e-e0655fd372aa",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C60",
+      "claim": "The trends in run speed for the \u0394cheY mutant are very similar to those observed with WT in that the run speed increases monotonically with time in the presence of glucose while the speed first increases and then decreases in case of 2Dg.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of such experiments are shown in Figure 4F. The trends are very similar to those observed with WT (Figure 3E) in that the run speed increases monotonically with time in the presence of glucose while the speed first increases and then decreases in case of 2Dg.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "960bb64c-d980-48dc-ab8c-0c8dfec469e4",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C61",
+      "claim": "CheY-P has no role in the observed modulation in motor speed and the observed speed increases are independent of switching events.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity of the observed trend with WT indicates that CheY-P has no role in the observed modulation in motor speed and the observed speed increases are independent of switching events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the \u0394cheY mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "b06ab1e0-223b-4322-b446-d264d7495136",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C62",
+      "claim": "E. coli modulates its motor bias in response to ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that E. coli modulates its motor bias in response to ligands (Adler, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to foundational work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "802eac9c-bacc-4be0-8a5e-1ae146dedbd8",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C63",
+      "claim": "For glucose, sensing leads to the dephosphorylation of CheY-P which in turn reduces the motor reversals leading to smooth runs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in case of glucose, which is sensed via the Trg chemoreceptor, sensing leads to the dephosphorylation of CheY-P which in turn reduces the motor reversals leading to smooth runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "98fbf38a-c3e9-4112-9914-70496a9d1db8",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C64",
+      "claim": "Glucose is also sensed and consumed via the PTS pathway, which is known to regulate CheY-P, thereby altering the bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose is also sensed and consumed via the PTS pathway, which is known to regulate CheY-P, thereby altering the bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "692c043b-6a6a-4c3c-92ef-d7623ddb96ec",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C65",
+      "claim": "The signals from the Trg receptor and the PTS pathway combine (additive) to determine the reversal frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Neumann et al., 2012 have shown that the signals from the Trg receptor and the PTS pathway combine (additive) to determine the reversal frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "29b4c65b-17c0-4995-adba-1621bec8872a",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C66",
+      "claim": "In tethered cell experiments, where the torque is in the high load regime, the motor speed is proportional to the ion motive force in both proton and sodium-driven motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that in tethered cell experiments, where the torque is in the high load regime, the motor speed is proportional to the ion motive force in both proton and sodium-driven motors (Gabel and Berg, 2003; Sowa et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "ad14e3e9-3bc8-4645-8936-8b079672b7e1",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C67",
+      "claim": "Changes in motor output have been attributed to the change in the number of stator units, which are assembled from a mobile pool of MotB molecules over a timescale of minutes when the PMF is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes in motor output have been attributed to the change in the number of stator units, which are assembled from a mobile pool of MotB molecules over a timescale of minutes when the PMF is increased (Reid et al., 2006; Leake et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "86a5d7c8-9e86-4f5b-a09e-5e62ae5d69d5",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C68",
+      "claim": "For cases where the mechanical load is low, such as in bead assay with sub-micron sized beads, the motor output can also vary with the magnitude of the load due to load-dependent stator unit recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for cases where the mechanical load is low, such as in bead assay with sub-micron sized beads, the motor output can also vary with the magnitude of the load due to load-dependent stator unit recruitment (Tipping et al., 2013a; Lele et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "e089160b-e612-4c7c-aff9-4405a2fb55ee",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C69",
+      "claim": "There is no evidence hitherto that mere sensing of a ligand can directly influence the motor speed at a fixed mechanical load.",
+      "claim_type": "EXPLICIT",
+      "source": "While these studies clearly indicate the role of metabolism and mechanical load in motor speed modulation via stator unit recruitment, there is no evidence hitherto that mere sensing of a ligand can directly influence the motor speed at a fixed mechanical load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "e19f4d94-08f4-4e7a-a855-d714fd296436",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C70",
+      "claim": "The tethered cell experiments demonstrate the recruitment of stator units in response to sensing of a ligand and therefore suggest the existence of a pathway that links the sensor to the motor.",
+      "claim_type": "EXPLICIT",
+      "source": "The tethered cell experiments reported here clearly demonstrate the recruitment of stator units in response to sensing of a ligand and therefore suggest the existence of a pathway that links the sensor to the motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "5e637fad-e2b1-4dcc-b073-9d749051d158",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C71",
+      "claim": "The increase in stator unit density at the motor in response to 2Dg led to a concomitant enhancement in motor speed and thereby the run speed in a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments show an increase in stator unit density at the motor in response to 2Dg, a non-metabolizable analog of glucose. This increase in stator unit density led to a concomitant enhancement in motor speed and thereby the run speed in a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data from the experiments with 2Dg.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "6b4f7877-adb9-4523-a583-440fea9c2bb1",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C72",
+      "claim": "Since 2Dg is sensed by the Trg sensor, a signal for speed modulation is communicated to the motor from the sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "Since 2Dg is sensed by the Trg sensor, this indicates that a signal for speed modulation is communicated to the motor from the sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the 2Dg experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "f5f63a83-75a5-4973-b085-7be177206177",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C73",
+      "claim": "There was no change in membrane potential confirming the absence of role of metabolism in 2Dg response.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, there was no change in membrane potential confirming the absence of role of metabolism and thereby suggesting that any change in the motor speed is only due to the sensing mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on membrane potential measurements for 2Dg.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "fdf23b7a-db43-4546-b344-943aa1f063f2",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C74",
+      "claim": "Deleting the trg gene eliminated changes in motor speed in the presence of 2Dg.",
+      "claim_type": "EXPLICIT",
+      "source": "This was further confirmed by deleting the trg gene, which eliminated changes in motor speed in the presence of 2Dg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data from the \u0394trg mutant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "a972e211-701b-4982-9cb9-4759261aeaac",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C75",
+      "claim": "In case of glucose, the enhancement in motor speed is much greater compared to that in 2Dg due to the combined effect of sensing and metabolism, caused by an even greater recruitment of stator units.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of glucose, the enhancement in motor speed is much greater compared to that in 2Dg due to the combined effect of sensing and metabolism, caused by an even greater recruitment of stator units (as indicated by increased intensity of fluorescently tagged stator unit).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of glucose and 2Dg data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "0cf0e193-4fab-4e38-92dc-7db730fe573c",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C76",
+      "claim": "The increase in motor speed for glucose is due to glucose metabolism leading to increased PMF while that due to sensing is through the Trg receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the increase in motor speed is due to glucose metabolism leading to increased PMF (Schwarz-Linek et al., 2016) while that due to sensing is through the Trg receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the glucose experiments and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "d359b537-b048-42d4-862d-0cfe3f6ef3ba",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C78",
+      "claim": "A small increase in motor speed was observed when the \u0394ptsI cell was exposed to glucose but changes were statistically insignificant in the presence of 2Dg.",
+      "claim_type": "EXPLICIT",
+      "source": "A small increase in motor speed was observed when the cell was exposed to glucose but changes were statistically insignificant in the presence of 2Dg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data from the \u0394ptsI mutant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "64d37952-803f-40f8-ab41-a51ef4f924a3",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C80",
+      "claim": "A smaller variance in rotation speed indicates an increased number of stator units, thereby making the motor rotation smoother.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternate method to characterize stator unit recruitment is to determine the variance in mean rotation rate of the motor as a function of the number of revolutions (Samuel and Berg, 1995; Samuel and Berg, 1996). Thus, a smaller variance would indicate an increased number of stator units, thereby making the motor rotation smoother.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "6b8dbf8c-2c7c-4e39-993f-5a4cbf0fe5df",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C81",
+      "claim": "The tethered cell experiment with the WT cells shows a decrease in variance when exposed to 2Dg compared to that in MB.",
+      "claim_type": "EXPLICIT",
+      "source": "The tethered cell experiment with the WT cells shows clearly a decrease in variance when exposed to 2Dg (Figure 3\u2014figure supplement 5B and E) compared to that in MB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "bf98249d-0d7a-458f-a2c6-b5f57079147c",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C82",
+      "claim": "The variance decreased even further when exposed to glucose indicating a higher recruitment of stator units due to the combined effect of metabolism and sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "The variance decreased even further when exposed to glucose indicating a higher recruitment of stator units due to the combined effect of metabolism and sensing (Figure 3\u2014figure supplement 5A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "a9d02bf1-6f00-42dd-85fd-766f81b11d98",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C83",
+      "claim": "Motor speed of a mutant lacking in cheY was measured in the presence of both 2Dg and glucose, and the observed motor speed modulation was identical to that for the WT indicating that CheY does not play role in stator unit recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "To answer this question, motor speed of a mutant lacking in cheY was measured in the presence of both 2Dg and glucose. The observed motor speed modulation was identical to that for the WT indicating that CheY does not play role in stator unit recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data from the \u0394cheY mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "b880e201-f59e-40b5-bd12-d511fb8ffe45",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C84",
+      "claim": "There exists a signaling pathway, independent of the chemotaxis pathway, that links the sensor to the motor.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations clearly suggest that there exists a signaling pathway, independent of the chemotaxis pathway, that links the sensor to the motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the \u0394cheY mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "93e32f93-94c4-4d43-baad-4d333512e91c",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C85",
+      "claim": "In the cheY mutant, the bias is locked in the CCW direction and therefore is also always in the run mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that in the cheY mutant, the bias is locked in the CCW direction and therefore is also always in the run mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge about cheY mutants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "34c650b3-a20b-49be-9c77-018cb54bb234",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C86",
+      "claim": "Experiments with WT cells show a momentary increase in CCW bias after which the bias recovers to the pre-stimulus value thereby demonstrating the well-known chemotactic response.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments with WT cells on the other hand show a momentary increase in CCW bias after which the bias recovers to the pre-stimulus value thereby demonstrating the well-known chemotactic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data from WT experiments.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "19e4a1be-aee0-4242-b593-a35b6286bb83",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C87",
+      "claim": "When the cell is exposed to 2Dg, one or more stator units are recruited temporarily thereby increasing the rotation speed, and the stator units disengage within a short time (about 5\u201310 min) after which the rotation rate returns to the pre-stimulus values.",
+      "claim_type": "EXPLICIT",
+      "source": "When the cell is exposed to 2Dg, one or more stator units are recruited temporarily (states 1\u20132 in Figure 5A, blue line) thereby increasing the rotation speed (see schematic in Figure 5B). The stator units disengage within a short time (about 5\u201310 min) after which the rotation rate returns to the pre-stimulus values (back to state 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the experimental data and illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "831dcd07-0c00-4562-b699-b1dcb33b5b77",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C88",
+      "claim": "When the cell is exposed to glucose, the combined contribution from sensing and PMF leads to a much larger increase in the number of bound stator units and the speeds remain high for much longer time periods (over 15 min), due to the metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the cell is exposed to glucose, a metabolite, the combined contribution from sensing and PMF leads to a much larger increase in the number of bound stator units (states 1\u20133, red line) and the speeds remain high for a much longer time periods (over 15 min), due to the metabolism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the experimental data and illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "b8d47850-5ed9-4f13-b4a4-70d016d19c54",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C89",
+      "claim": "The drift velocity of a population of cells in response to a ligand gradient is dependent on both the tumble frequency and the swimming speed.",
+      "claim_type": "EXPLICIT",
+      "source": "At the population level, these results imply a more efficient chemotaxis response since the drift velocity of a population of cells in response to a ligand gradient is dependent on both the tumble frequency and the swimming speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established models of chemotaxis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "5200c41f-aba1-4c3a-bbe3-aedd27c4b62e",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C90",
+      "claim": "The well-known RTBL model links the population-level chemotactic response to the individual microscopic variables of cell's swimming speed, persistence time, and temporal receptor occupation.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the well-known RTBL model of Rivero et al., 1989, which is based on the Keller-Segel model, links the population-level chemotactic response to the individual microscopic variables of cell's swimming speed, persistence time, and temporal receptor occupation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "5eb7ff86-f82e-4d22-9ad2-a4ed36635ac3",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C91",
+      "claim": "The drift velocity is directly proportional to the product of the swimming speed and a function that depends on the tumbling frequency, spatial gradient of chemoattractant, and occupancy of chemoreceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The drift velocity (also known as the chemotactic velocity) of the population is directly proportional to the product of the swimming speed and a function that depends on the tumbling frequency, spatial gradient of chemoattractant, and occupancy of chemoreceptor (Equation 22 of Rivero et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "a2c63c2f-50a9-4838-94cb-ad53af64529b",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C92",
+      "claim": "For small gradients, the drift velocity varies as the square of the swimming speed.",
+      "claim_type": "EXPLICIT",
+      "source": "For small gradients, the expression simplifies such that the drift velocity varies as the square of the swimming speed (Equation 25 of Rivero et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "bea42bc5-db9b-4064-ad81-6e4403c08eed",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C93",
+      "claim": "Even a 10% increase in the swimming speed could cause the drift velocity to increase anywhere between 10% and 20% leading to a significant improvement in the chemotactic efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply that even a 10% increase in the swimming speed could cause the drift velocity to increase anywhere between 10% and 20% leading to a significant improvement in the chemotactic efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the RTBL model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "f274859e-1239-4477-b865-ae19b5614e57",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C94",
+      "claim": "The pathway linking sensor to motor is independent of the known sensory transduction pathway since the observed speed modulation also occurs in the absence of CheY.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the pathway is independent of the known sensory transduction pathway since the observed speed modulation also occurs in the absence of CheY (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on data from the \u0394cheY mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "524f4d8d-11da-40d2-9559-db86151527e7",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C95",
+      "claim": "c-di-GMP effector YcgR can inhibit flagellar motility by directly interacting with the motor to modulate both its bias and speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that c-di-GMP effector YcgR can inhibit flagellar motility by directly interacting with the motor to modulate both its bias and speed (Boehm et al., 2010; Paul et al., 2010; Nieto et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "c942fc58-d0fb-4413-bde9-670ba300ece6",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C96",
+      "claim": "There is no evidence that the YcgR mechanism can enhance motor speeds beyond pre-stimulus levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While the aforementioned mechanism has been shown to inhibit motor speeds, there is no evidence that the same can enhance motor speeds beyond pre-stimulus levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents a gap in knowledge regarding the YcgR mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "00a8a5a7-09d7-4c46-87a7-29f8cc44291e",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C97",
+      "claim": "The results point to a sophisticated signaling network with multiple strategies to regulate motor behavior enabling an efficient response to changes in bacteria's environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of the details of the mechanism, the results presented here point to a sophisticated signaling network with multiple strategies to regulate motor behavior enabling an efficient response to changes in bacteria's environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "e920a787-83eb-4e07-aa01-1cf1df6012c4",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C98",
+      "claim": "E. coli RP437 and its four mutants were grown in tryptone media till mid-log phase at OD600 at 200 rpm, 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli RP437 and its four mutants (see Table 1) were inoculated from glycerol stock into tryptone agar plates. A single colony isolate was grown overnight and then sub-cultured in 50 ml tryptone media (0.015 g/l; Sigma) till mid-log phase (OD600 at 200 rpm, 30\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "39e5be81-d296-425c-a2e9-56dbae411883",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C99",
+      "claim": "Knockout mutant strains were developed by using standard site-specific recombination method for inactivation of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Other knockout mutant strains were developed by using standard site-specific recombination method for inactivation of genes (Datsenko and Wanner, 2000; Baba et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "7ae87d6e-c4c8-42c5-9dad-1d66d5dd8f80",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C100",
+      "claim": "The desired gene was deleted by replacing it with kanamycin marker.",
+      "claim_type": "EXPLICIT",
+      "source": "The desired gene was deleted by replacing it with kanamycin marker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "52b07c8e-d6cb-4437-bd5e-38dbd8175bb9",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C101",
+      "claim": "Use of silicone oil prior to antibody treatment resulted in a more stable interaction between anti-flagellin antibody and the glass slide.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of silicone oil prior to antibody treatment in our case resulted in a more stable interaction between anti-flagellin antibody and the glass slide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes an observation from the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "474a456b-8897-4d5f-98f7-c0de1f062808",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C102",
+      "claim": "Experiments with color dyes showed that a combination of convective flow induced by the incoming dye solution and accompanying diffusion led to the dye reaching the visualization region within 30\u201345 s of introducing the dye.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments with color dyes showed that a combination of convective flow induced by the incoming dye solution and accompanying diffusion led to the dye reaching the visualization region within 30\u201345 s of introducing the dye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes an observation from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "18e24c36-c797-491b-bf91-4e2685640e79",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C103",
+      "claim": "The measured average swimming speed of 18.2 \u00b1 7.9 \u03bcm/s and an average turn angle of 71\u00b0 for RP437 cells dispersed uniformly in a microchannel containing plain MB are close to those observed for the same strain reported earlier, 18.8 \u00b1 8.2 \u03bcm/s and 69\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured average swimming speed of 18.2 \u00b1 7.9 \u03bcm/s (average \u00b1 standard deviation) and an average turn angle of 71\u00b0 for RP437 cells dispersed uniformly in a microchannel containing plain MB are close to those observed for the same strain reported earlier, 18.8 \u00b1 8.2 \u03bcm/s and 69\u00b0, by Saragosti et al., 2011.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim validates the experimental methods by comparison to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "eff447a9-be8d-4e33-8b9d-7bbf47c156cf",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C104",
+      "claim": "DiOC2(3) is a lipophilic cationic dye and was used as a membrane potential probe.",
+      "claim_type": "EXPLICIT",
+      "source": "3,3-Diethyloxacarbocyanine iodide ((DiOC2(3)) from ThermoFisher Scientific) is a lipophilic cationic dye and was used as a membrane potential probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "0e77745d-9d4a-472c-9ff0-a8b9f7ef80ec",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C105",
+      "claim": "The ratio of red and green fluorescence (R/G) eliminates the dependence on cell size and directly correlates with the membrane potential of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of red and green fluorescence (R/G) eliminates the dependence on cell size and directly correlates with the membrane potential of the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the rationale for the measurement method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "512f2cb0-6aac-454a-9e76-bb6feb6928e2",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "claim_id": "C106",
+      "claim": "CCCP is an ionophore which increases membrane permeability to protons and thereby eliminates membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "CCCP is an ionophore which increases membrane permeability to protons and thereby eliminates membrane potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the function of a control reagent used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ligand sensing alone can modulate bacterial flagellar motor speed through stator unit recruitment. Exposure to non-metabolizable 2Dg causes temporary increases in motor speed (4 Hz to 5.7 Hz) and stator unit fluorescence intensity (14% increase at 5 min), which return to baseline after ~5-10 minutes. This effect is independent of metabolism (no membrane potential change) and requires the Trg sensor (eliminated in \u0394trg mutants).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C38, C71-C74, and C87 provide converging evidence from tethered cell experiments, fluorescence measurements, membrane potential assays, and genetic knockouts. The temporal correlation between motor speed increases and stator intensity changes (C36, C40), absence of PMF changes (C41, C73), and loss of response in \u0394trg mutants (C74) strongly support the conclusion that sensing alone drives transient stator recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "For metabolizable glucose, the combined effects of sensing and metabolism lead to greater and more sustained motor speed increases compared to 2Dg alone. Glucose exposure causes motor speed to increase from ~6 Hz to ~9 Hz with 20% increase in stator intensity at 10 min and 50% increase in run speed at 16.5 min, sustained over 15+ minutes due to increased PMF from metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C37, C42, C45, and C75 demonstrate that glucose produces larger magnitude and longer duration speed increases than 2Dg. The membrane potential measurements (C42, C44) confirm increased PMF with glucose but not 2Dg, supporting the interpretation that glucose effects combine sensing-mediated and metabolism-mediated stator recruitment. The temporal dynamics and quantitative differences are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "e28fad4c-8c7c-4526-bfaa-b5af2de2bfb0",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Trg chemoreceptor is required for sensing-mediated motor speed modulation. \u0394trg mutants show no motor speed changes in response to 2Dg but retain ~30% speed increase with glucose (metabolism only), confirming that the Trg sensor specifically mediates the sensing pathway to motor speed control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 and C74 provide clear genetic evidence that Trg is necessary for 2Dg-induced speed changes but not for glucose metabolism effects. The \u0394trg mutant experiments effectively separate sensing from metabolic contributions, with membrane potential data (C55) confirming that glucose still increases PMF in the absence of Trg. This genetic dissection strongly supports the role of Trg in sensing-mediated speed modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "e41ede29-20d4-4d06-9dc1-df47aa62d15d",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The PTS pathway contributes to metabolism-mediated motor speed increases. \u0394 ptsI mutants show only marginal motor speed increases with glucose and no significant changes with 2Dg, with correspondingly reduced membrane potential compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C59, and C78 demonstrate that disrupting the PTS pathway (\u0394ptsI) eliminates most of the glucose-induced speed increase and reduces basal membrane potential. The correlation between reduced membrane potential and reduced motor speed (C59) supports the interpretation that PTS-mediated metabolism contributes to motor speed through PMF. However, the weak response could also reflect impaired chemotaxis pathway function as noted by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "0dd76218-3fda-41bc-aa3e-840ed644a3a1",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Motor speed modulation by ligand sensing is independent of the CheY-mediated chemotaxis pathway. \u0394cheY mutants show motor speed responses to both glucose and 2Dg identical to wild-type, indicating that a separate signaling pathway links chemoreceptors to motor speed control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C61, C83, C84, and C94 provide strong genetic evidence that CheY is not required for sensing-mediated motor speed changes. The \u0394cheY mutant experiments (C60, C83) show preserved speed modulation despite locked CCW bias, demonstrating independence from the canonical chemotaxis pathway. This is a critical finding establishing a novel signaling pathway, though the molecular mechanism remains unidentified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "d0875763-e36c-40ab-8eda-27eee4a6041f",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sensing-mediated stator recruitment enhances population-level swimming speed. Run speeds increase 26% with 2Dg (transient, peaking at 6.5 min) and 50% with glucose (sustained through 16.5 min), with no change in motility buffer controls. These population-level effects mirror single-motor observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 demonstrate that single-motor speed changes translate to population swimming behavior. The temporal dynamics match tethered cell data (transient for 2Dg, sustained for glucose), and controls show no change (C48). The \u0394trg mutant data (C56) confirms the sensing requirement at the population level. The consistency between single-motor and population measurements strengthens the biological significance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "e6ab1920-a683-4d3e-989b-372d2f171146",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Variance analysis of motor rotation provides independent confirmation of stator unit recruitment. Rotation speed variance decreases with 2Dg and decreases further with glucose, consistent with increased numbers of stator units producing smoother motor rotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 apply an established method (Samuel and Berg 1995, 1996) to independently assess stator numbers. The variance measurements show the expected pattern (lowest for glucose, intermediate for 2Dg, highest for MB) and temporal dynamics matching fluorescence and speed data. This orthogonal approach strengthens confidence in the stator recruitment interpretation, though the method is indirect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "1e62af8d-d41b-4b6f-8b91-030208b239aa",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Membrane potential measurements demonstrate that 2Dg-induced motor speed increases occur without changes in PMF. Membrane potential remains unchanged for 2Dg (similar to buffer control) while glucose significantly increases membrane potential, confirming that sensing effects are PMF-independent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 and C73 provide critical evidence distinguishing sensing from metabolic effects using DiOC2(3) fluorescence ratiometric measurements. The lack of membrane potential change with 2Dg (C41) combined with motor speed increases establishes PMF-independence. CCCP controls validate the measurement approach. This is essential evidence for the main conclusion, though the method measures population averages rather than single cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "d1dd29e2-562f-40e9-9d96-f2b8a7baf3b1",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The observed motor speed increases could enhance chemotactic efficiency by 10-20% based on the RTBL model. According to this model, drift velocity depends on swimming speed, and even 10% speed increases could improve chemotactic velocity by 10-20% in small gradients where drift velocity scales with speed squared.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C93 apply the RTBL model (Rivero et al. 1989) to estimate functional consequences. While the model is established and the calculations appear correct (C91-C93), this remains theoretical extrapolation. The authors do not directly measure chemotactic drift velocity or efficiency in gradients. The prediction is plausible but requires experimental validation to confirm that speed modulation actually enhances chemotaxis under physiologically relevant conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript provides comprehensive background on E. coli chemotaxis, flagellar motor structure and function, stator unit dynamics, and glucose sensing pathways. This establishes the context for the novel finding that chemosensory systems can modulate motor speed, which contradicts the prevailing view (C2) that sensing only affects motor bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C29 and C62-C69 accurately summarize established knowledge in the field, supported by appropriate citations to foundational and recent literature. Claim C2 correctly identifies the prevailing paradigm being challenged, and C24/C69 accurately state the knowledge gap. The background claims are well-supported by citations and represent consensus understanding, providing appropriate context for evaluating the novelty of the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "f9dfe66e-cca8-4bf2-aacc-43fa8347c070",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The YcgR/c-di-GMP system is known to inhibit motor speed but has not been shown to enhance speeds beyond baseline. The current results suggest a sophisticated signaling network with multiple strategies for motor regulation, though the molecular mechanism linking sensors to stator recruitment remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 appropriately discuss the YcgR system as a known speed modulation mechanism while noting it only inhibits (not enhances) speed (C96). Claim C97 offers a reasonable interpretation that multiple regulatory mechanisms exist, though this is somewhat speculative. The discussion appropriately acknowledges that the molecular pathway remains unidentified, which is an important limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "0f7a41f7-411d-41f6-bad8-156cf32be486",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript describes detailed experimental methods including bacterial strain construction, tethered cell assays, fluorescence measurements, swimming speed analysis, and membrane potential measurements. Methods are validated by comparison to prior work (C103) and include appropriate controls (C102, C106).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C106 describe methodological details that appear sound and well-controlled. Validation against published values (C103) supports measurement accuracy. The use of silicone oil (C101) and dye flow experiments (C102) demonstrate attention to technical details. Membrane potential methods (C104-C106) follow established protocols. However, some technical details are incomplete (e.g., sample sizes vary, statistical methods not fully specified for all comparisons).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    },
+    {
+      "id": "6d6d9756-ffb8-491a-b558-c001ba65b142",
+      "content_id": "fbf6cbf7-1613-438b-b1e5-5aa0a6e95526",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "\u0394cheY mutants are locked in CCW rotation (run mode) while wild-type cells show transient CCW bias increases followed by adaptation, demonstrating normal chemotactic responses in wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85 and C86 describe expected behaviors of \u0394cheY mutants and wild-type chemotactic responses. These are well-established phenotypes supported by decades of research. The observations confirm that the experimental system exhibits normal chemotaxis behavior, validating the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:43.124210Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "82b92a3b-c266-4549-9bf0-4845d42489fd",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "65f0312e-2227-431c-9f5d-9cf4473949d2",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "e53fd440-3a65-447b-babb-9988c3fd03ec",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "5acbc7d9-a66b-4e38-a7f8-f8bc3e32d3fe",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "bb9670f2-74e3-4f33-b021-d9ff99e66903",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "1721abc9-ae98-4445-84d7-e90be9e69baa",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "c03ad318-5d72-487f-a6e5-7c7d05b1eb0f",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "7a28b6c5-c15c-46e8-9307-82610e0b72fa",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "845cfed6-691b-4e8f-bd42-a0c3d9eb85d9",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "92597763-ff17-4167-8392-c58ee2f2a51e",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "1a15e61b-706b-4530-aca4-5da0883a8a68",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "0f46ee86-f348-4afb-8da3-59fe33eb0e0b",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "81696a3c-536b-4b46-b119-5aee6174140d",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "e19f4d94-08f4-4e7a-a855-d714fd296436",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "5e637fad-e2b1-4dcc-b073-9d749051d158",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "6b4f7877-adb9-4523-a583-440fea9c2bb1",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "f5f63a83-75a5-4973-b085-7be177206177",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "fdf23b7a-db43-4546-b344-943aa1f063f2",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "19e4a1be-aee0-4242-b593-a35b6286bb83",
+      "result_id": "5922baca-7eb8-4173-88b1-62d2a0ae52cf"
+    },
+    {
+      "claim_id": "e53fd440-3a65-447b-babb-9988c3fd03ec",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "5acbc7d9-a66b-4e38-a7f8-f8bc3e32d3fe",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "7a28b6c5-c15c-46e8-9307-82610e0b72fa",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "1a15e61b-706b-4530-aca4-5da0883a8a68",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "a96a9b07-2428-4bd5-b500-a5bbc976fabe",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "cadd54c8-0700-4e0e-8869-f16a73fb48f8",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "ef60799d-2f54-4d2c-9904-2678ad8894ac",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "a972e211-701b-4982-9cb9-4759261aeaac",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "0cf0e193-4fab-4e38-92dc-7db730fe573c",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "831dcd07-0c00-4562-b699-b1dcb33b5b77",
+      "result_id": "ba399aa5-b6b5-4cf2-a3f1-072133c47498"
+    },
+    {
+      "claim_id": "e30a3c34-5863-4866-b09b-5d7adfc130c5",
+      "result_id": "e28fad4c-8c7c-4526-bfaa-b5af2de2bfb0"
+    },
+    {
+      "claim_id": "92fd178a-c82e-4921-beb7-c7aa4ad6059b",
+      "result_id": "e28fad4c-8c7c-4526-bfaa-b5af2de2bfb0"
+    },
+    {
+      "claim_id": "d7ed0bf6-9286-4f01-a73d-0afdc58e56c1",
+      "result_id": "e28fad4c-8c7c-4526-bfaa-b5af2de2bfb0"
+    },
+    {
+      "claim_id": "83389d2d-1f9f-4229-b0f4-d4a7b571efa5",
+      "result_id": "e28fad4c-8c7c-4526-bfaa-b5af2de2bfb0"
+    },
+    {
+      "claim_id": "fdf23b7a-db43-4546-b344-943aa1f063f2",
+      "result_id": "e28fad4c-8c7c-4526-bfaa-b5af2de2bfb0"
+    },
+    {
+      "claim_id": "5f9d1431-ffdb-48cc-b05c-61c989ee7f1d",
+      "result_id": "e41ede29-20d4-4d06-9dc1-df47aa62d15d"
+    },
+    {
+      "claim_id": "1201dada-bb40-419d-a627-24b66809095c",
+      "result_id": "e41ede29-20d4-4d06-9dc1-df47aa62d15d"
+    },
+    {
+      "claim_id": "d359b537-b048-42d4-862d-0cfe3f6ef3ba",
+      "result_id": "e41ede29-20d4-4d06-9dc1-df47aa62d15d"
+    },
+    {
+      "claim_id": "17ce282b-ed73-4b3f-a40e-e0655fd372aa",
+      "result_id": "0dd76218-3fda-41bc-aa3e-840ed644a3a1"
+    },
+    {
+      "claim_id": "960bb64c-d980-48dc-ab8c-0c8dfec469e4",
+      "result_id": "0dd76218-3fda-41bc-aa3e-840ed644a3a1"
+    },
+    {
+      "claim_id": "a9d02bf1-6f00-42dd-85fd-766f81b11d98",
+      "result_id": "0dd76218-3fda-41bc-aa3e-840ed644a3a1"
+    },
+    {
+      "claim_id": "b880e201-f59e-40b5-bd12-d511fb8ffe45",
+      "result_id": "0dd76218-3fda-41bc-aa3e-840ed644a3a1"
+    },
+    {
+      "claim_id": "f274859e-1239-4477-b865-ae19b5614e57",
+      "result_id": "0dd76218-3fda-41bc-aa3e-840ed644a3a1"
+    },
+    {
+      "claim_id": "ef60799d-2f54-4d2c-9904-2678ad8894ac",
+      "result_id": "d0875763-e36c-40ab-8eda-27eee4a6041f"
+    },
+    {
+      "claim_id": "f542a5a7-8c8f-4aea-9468-f59a18053625",
+      "result_id": "d0875763-e36c-40ab-8eda-27eee4a6041f"
+    },
+    {
+      "claim_id": "3250fb98-7602-4f4e-837e-163b016da25d",
+      "result_id": "d0875763-e36c-40ab-8eda-27eee4a6041f"
+    },
+    {
+      "claim_id": "177edcc5-06a5-4fc0-afae-20a709c7f57d",
+      "result_id": "d0875763-e36c-40ab-8eda-27eee4a6041f"
+    },
+    {
+      "claim_id": "c8d9d596-854f-4da3-9776-3df0d823dd2b",
+      "result_id": "d0875763-e36c-40ab-8eda-27eee4a6041f"
+    },
+    {
+      "claim_id": "9ec3dcd9-83ac-4252-9dbc-80ba96ca230c",
+      "result_id": "d0875763-e36c-40ab-8eda-27eee4a6041f"
+    },
+    {
+      "claim_id": "30f76656-e174-43c7-8705-5fc877614fac",
+      "result_id": "d0875763-e36c-40ab-8eda-27eee4a6041f"
+    },
+    {
+      "claim_id": "83389d2d-1f9f-4229-b0f4-d4a7b571efa5",
+      "result_id": "d0875763-e36c-40ab-8eda-27eee4a6041f"
+    },
+    {
+      "claim_id": "6b8dbf8c-2c7c-4e39-993f-5a4cbf0fe5df",
+      "result_id": "e6ab1920-a683-4d3e-989b-372d2f171146"
+    },
+    {
+      "claim_id": "bf98249d-0d7a-458f-a2c6-b5f57079147c",
+      "result_id": "e6ab1920-a683-4d3e-989b-372d2f171146"
+    },
+    {
+      "claim_id": "64d37952-803f-40f8-ab41-a51ef4f924a3",
+      "result_id": "e6ab1920-a683-4d3e-989b-372d2f171146"
+    },
+    {
+      "claim_id": "ef65ac0f-2a24-4584-a73b-488507c932a5",
+      "result_id": "1e62af8d-d41b-4b6f-8b91-030208b239aa"
+    },
+    {
+      "claim_id": "a96a9b07-2428-4bd5-b500-a5bbc976fabe",
+      "result_id": "1e62af8d-d41b-4b6f-8b91-030208b239aa"
+    },
+    {
+      "claim_id": "655c105e-4caa-4feb-bb5c-600c1e6442b3",
+      "result_id": "1e62af8d-d41b-4b6f-8b91-030208b239aa"
+    },
+    {
+      "claim_id": "f5f63a83-75a5-4973-b085-7be177206177",
+      "result_id": "1e62af8d-d41b-4b6f-8b91-030208b239aa"
+    },
+    {
+      "claim_id": "b8d47850-5ed9-4f13-b4a4-70d016d19c54",
+      "result_id": "d1dd29e2-562f-40e9-9d96-f2b8a7baf3b1"
+    },
+    {
+      "claim_id": "5200c41f-aba1-4c3a-bbe3-aedd27c4b62e",
+      "result_id": "d1dd29e2-562f-40e9-9d96-f2b8a7baf3b1"
+    },
+    {
+      "claim_id": "5eb7ff86-f82e-4d22-9ad2-a4ed36635ac3",
+      "result_id": "d1dd29e2-562f-40e9-9d96-f2b8a7baf3b1"
+    },
+    {
+      "claim_id": "a2c63c2f-50a9-4838-94cb-ad53af64529b",
+      "result_id": "d1dd29e2-562f-40e9-9d96-f2b8a7baf3b1"
+    },
+    {
+      "claim_id": "bea42bc5-db9b-4064-ad81-6e4403c08eed",
+      "result_id": "d1dd29e2-562f-40e9-9d96-f2b8a7baf3b1"
+    },
+    {
+      "claim_id": "52199767-3096-4353-aeb9-441da6b7883a",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "7a0d1d46-f0b1-459a-a245-ed5fb2ab0354",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "466a757a-2d06-4f37-8b00-ff3acd49b682",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "febc8111-5ff0-442c-bf0d-7aa28a81aa0e",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "b4b76b59-52ae-4270-8174-469135074bba",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "368a97d3-a51e-49da-99bf-d2f4da50a9d9",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "fafbc8e4-9ca4-49a0-b58a-c6a2cbc83b19",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "ba37644d-fee6-4615-9a06-e2ca1e21ef63",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "0f1561e5-dc9f-458c-bf6e-77cfd8923d94",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "f4d55e52-a690-48f6-92c1-e809ab2a7b30",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "d5a7f31d-c7fc-486a-a245-a34686698fc1",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "d203fd18-9968-4004-8343-905c649973fd",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "f4467302-55d3-4eb5-9dac-e209715009ba",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "4a5ca5c5-c5a0-4045-813c-dd7a9b6f5a69",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "0774e8f1-b82f-40ea-ab8a-b93f8285c254",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "a9b1ac1b-3b56-4b73-a0e8-53f9c3549a2d",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "56a32f86-b1ac-495e-9dd2-5cb509939015",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "f9e358fc-4961-4331-860c-93d23043d7c2",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "87ba6b5a-b587-4297-80c5-1017f03abced",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "b54c6adb-312b-4170-9545-acc95995fd18",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "cc0102d0-76a3-47a5-9048-51e195cda9a7",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "8a978b26-4aa0-4f9c-a22d-586cc5617e0d",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "80c83b69-6449-40c5-80d6-2b155a8cc533",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "209930e0-4d48-4af8-a966-2ea953357696",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "051182bd-71aa-431e-91de-d6d1e9f1e231",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "0132cf92-8b77-4e8d-8927-bcb5c7338dee",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "b06ab1e0-223b-4322-b446-d264d7495136",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "802eac9c-bacc-4be0-8a5e-1ae146dedbd8",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "98fbf38a-c3e9-4112-9914-70496a9d1db8",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "692c043b-6a6a-4c3c-92ef-d7623ddb96ec",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "29b4c65b-17c0-4995-adba-1621bec8872a",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "ad14e3e9-3bc8-4645-8936-8b079672b7e1",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "86a5d7c8-9e86-4f5b-a09e-5e62ae5d69d5",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "e089160b-e612-4c7c-aff9-4405a2fb55ee",
+      "result_id": "50ef62dd-c2ce-4986-a68d-b0e584c70cb8"
+    },
+    {
+      "claim_id": "524f4d8d-11da-40d2-9559-db86151527e7",
+      "result_id": "f9dfe66e-cca8-4bf2-aacc-43fa8347c070"
+    },
+    {
+      "claim_id": "c942fc58-d0fb-4413-bde9-670ba300ece6",
+      "result_id": "f9dfe66e-cca8-4bf2-aacc-43fa8347c070"
+    },
+    {
+      "claim_id": "00a8a5a7-09d7-4c46-87a7-29f8cc44291e",
+      "result_id": "f9dfe66e-cca8-4bf2-aacc-43fa8347c070"
+    },
+    {
+      "claim_id": "e920a787-83eb-4e07-aa01-1cf1df6012c4",
+      "result_id": "0f7a41f7-411d-41f6-bad8-156cf32be486"
+    },
+    {
+      "claim_id": "39e5be81-d296-425c-a2e9-56dbae411883",
+      "result_id": "0f7a41f7-411d-41f6-bad8-156cf32be486"
+    },
+    {
+      "claim_id": "7ae87d6e-c4c8-42c5-9dad-1d66d5dd8f80",
+      "result_id": "0f7a41f7-411d-41f6-bad8-156cf32be486"
+    },
+    {
+      "claim_id": "52b07c8e-d6cb-4437-bd5e-38dbd8175bb9",
+      "result_id": "0f7a41f7-411d-41f6-bad8-156cf32be486"
+    },
+    {
+      "claim_id": "474a456b-8897-4d5f-98f7-c0de1f062808",
+      "result_id": "0f7a41f7-411d-41f6-bad8-156cf32be486"
+    },
+    {
+      "claim_id": "18e24c36-c797-491b-bf91-4e2685640e79",
+      "result_id": "0f7a41f7-411d-41f6-bad8-156cf32be486"
+    },
+    {
+      "claim_id": "eff447a9-be8d-4e33-8b9d-7bbf47c156cf",
+      "result_id": "0f7a41f7-411d-41f6-bad8-156cf32be486"
+    },
+    {
+      "claim_id": "0e77745d-9d4a-472c-9ff0-a8b9f7ef80ec",
+      "result_id": "0f7a41f7-411d-41f6-bad8-156cf32be486"
+    },
+    {
+      "claim_id": "512f2cb0-6aac-454a-9e76-bb6feb6928e2",
+      "result_id": "0f7a41f7-411d-41f6-bad8-156cf32be486"
+    },
+    {
+      "claim_id": "93e32f93-94c4-4d43-baad-4d333512e91c",
+      "result_id": "6d6d9756-ffb8-491a-b558-c001ba65b142"
+    },
+    {
+      "claim_id": "34c650b3-a20b-49be-9c77-018cb54bb234",
+      "result_id": "6d6d9756-ffb8-491a-b558-c001ba65b142"
+    }
+  ],
+  "comparisons": []
+}

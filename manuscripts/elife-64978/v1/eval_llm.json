@@ -1,0 +1,148 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Rats were trained on a free-response two-alternative forced-choice visual object recognition task where they initiated trials by licking a center port, viewed visual stimuli, and received water rewards for correct responses or timeout periods for errors. Ignored trials constituted a small fraction of total trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe the basic experimental paradigm with appropriate detail. The task structure is clearly documented in figures and methods, and the observation about ignored trials is empirically supported by data shown in Figure 1\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript situates the current work within the established literature on the speed-accuracy trade-off (SAT) in decision making, noting that optimal behavior is defined as reward maximization over time, that the drift-diffusion model (DDM) is widely used to study SAT, and that while steady-state performance has been extensively studied, less attention has been paid to learning dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C22 provide appropriate literature context supported by extensive citations. These claims accurately represent the state of the field and identify the gap that motivates the current study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "During learning, rats did not follow the optimal performance curve (OPC) in speed-accuracy space. DDM fits showed that thresholds decreased and drift rates increased throughout learning, consistent with findings from numerous prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C58-C60 are supported by behavioral data analysis (Figure 2b) and DDM fitting results (Figure 4\u2014figure supplements 1-4). The finding that drift rate increases with learning is well-documented in prior literature (C60), providing additional support. Statistical analyses of DDM parameters are provided in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C28"
+    ],
+    "result": "The study demonstrates that long-term learning is an important dynamical dimension of the speed-accuracy trade-off. While maximizing instantaneous reward rate is sensible for mastered tasks, it may not be appropriate during learning because fast responses limit stimulus exposure and slow learning, creating a trade-off between immediate and long-term reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C23-C24, and C28 articulate the core conceptual framework of the study. These claims are supported by both theoretical modeling (LDDM, Figure 3-4) and experimental evidence (Figures 5-7). The logical chain from theory to prediction to empirical validation is coherent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C57",
+      "C70"
+    ],
+    "result": "A recurrent neural network (RNN) model that integrates evidence over time and learns via gradient descent was developed and reduced to a learning drift-diffusion model (LDDM). The model reveals that prioritizing learning speed over instantaneous reward rate can achieve higher cumulative reward, and qualitatively replicates behavioral findings from the RT restriction experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C57, and C70 describe the theoretical modeling framework. The RNN-to-LDDM reduction is mathematically derived in the Methods, and model simulations (Figures 3-4) demonstrate the predicted trade-offs. The model's qualitative match to experimental data (Figure 5h-k) supports its validity, though quantitative fitting was not the primary goal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C101"
+    ],
+    "result": "An RT restriction experiment causally demonstrated that response time and learning speed are related. Rats forced to respond slowly showed significantly higher accuracy slopes and trended toward higher cumulative reward compared to rats forced to respond quickly, empirically verifying the theoretical prediction that slow responses lead to faster learning and greater total reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C64-C66, C69, and C101 describe the RT restriction experiment (Figure 5). The experimental design appropriately tests causality by manipulating RT. Statistical tests show significant differences in accuracy slopes (p<0.05, Figure 5d inset), and both groups learned (positive slopes, above-chance final accuracy). The trend toward higher cumulative reward in the slow group (C69) is appropriately described as a trend rather than a significant effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C74",
+      "C75",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C93",
+      "C94",
+      "C98",
+      "C99"
+    ],
+    "result": "Rats modulated their response times based on learning prospects. When presented with new learnable visible stimuli, rats slowed their responses and replicated the learning trajectory observed initially. When presented with unlearnable transparent stimuli, rats initially slowed but then rapidly decreased RTs to maximize instantaneous reward rate. Post-error slowing was modest and constant throughout learning, ruling out this as the primary explanation for RT modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C74-C75, C82-C86, C88, C93-C94, C98-C99 describe the learnability experiment (Figure 6). The experimental design appropriately contrasts learnable vs. unlearnable conditions. Statistical analyses show significant RT differences (permutation tests, p<0.05), and the correlation between initial \u0394RT and \u0394SNR (R\u00b2=0.38, p=0.01, Figure 6e) supports the learning speed interpretation. Post-error slowing analysis (Figure 6\u2014figure supplement 5) appropriately rules out alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C32",
+      "C33",
+      "C95",
+      "C97",
+      "C100",
+      "C102"
+    ],
+    "result": "Rats' strategies approximately maximize total reward over the full learning epoch, suggesting cognitive control over the learning process. Rats with the largest voluntary RT changes started with lower but ended with higher instantaneous reward rates and collected more cumulative reward. This behavior requires foregoing immediate reward for multiple days, indicating goal-directed control that prioritizes learning when advantageous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C32-C33, C95, C97, C100, and C102 represent the study's main conclusions. These are supported by converging evidence from multiple experiments: (1) rats deviate from instantaneous reward optimization during learning (Figure 2), (2) enforced slow RTs improve learning and total reward (Figure 5), (3) rats modulate RTs based on learnability (Figure 6), and (4) voluntary RT changes correlate with reward outcomes (Figure 7). The interpretation of cognitive control (C8, C102) is reasonable given the evidence but remains inferential.",
+    "result_type": "MAJOR"
+  }
+]

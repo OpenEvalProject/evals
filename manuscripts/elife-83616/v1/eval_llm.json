@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C24",
+      "C25",
+      "C33"
+    ],
+    "result": "Self-reported nutrition intake data are prone to reporting bias but are widely used in nutrition epidemiology due to their high feasibility and low cost compared to biomarker approaches, despite known accuracy concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11-C15, C24-C25, and C33 collectively establish the context and rationale for the study. These claims are supported by established knowledge in the field and multiple citations to prior research, providing a well-documented foundation for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C78",
+      "C79",
+      "C103"
+    ],
+    "result": "In the IDATA study, applying Goldberg cutoffs eliminated significant bias in mean nutrition intake by excluding 40% of participants (120 of 303), with the bias reduction primarily attributable to differences in reporting rather than actual intake differences between accepted and rejected cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C57, C78-C79, and C103 are well-supported by empirical data analysis from the IDATA dataset. The statistical analyses demonstrate significant underreporting in rejected cases and non-significant bias in accepted cases across all four nutrition types (energy, sodium, potassium, protein), with supporting evidence from Figure 1 and Tables 2-3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C80",
+      "C81"
+    ],
+    "result": "In the IDATA empirical analysis, significant bias in associations between nutrition intake and health outcomes was detected only for energy intake with body weight and waist circumference, with Goldberg cutoffs reducing but not eliminating this bias. For other nutrition-outcome pairs, the sample size was insufficient to draw conclusions about bias or bias reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C58-C62, C80-C81 are supported by the empirical data analysis, though the authors appropriately acknowledge the limitations due to insufficient sample size and wide confidence intervals. The finding of incomplete bias reduction for the two significant cases (EI-BW and EI-WC) is well-documented in Figure 2 and Supplementary file 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Simulation studies demonstrated that self-reported nutrition intake data exhibit attenuation bias in associations with health outcomes. Goldberg cutoffs reduced but did not eliminate this bias in 14 of 24 nutrition-outcome pairs, with the largest reductions observed for energy intake. MSE and coverage probabilities improved with Goldberg cutoffs but remained inferior to biomarker-based estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C63-C71, and C82-C85 are well-supported by simulation results shown in Figure 3. The simulation approach was appropriately designed based on the IDATA dataset characteristics, and the findings are consistent across multiple performance metrics (bias, MSE, coverage probability). The differential effectiveness of Goldberg cutoffs for energy intake versus other nutrients is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Sensitivity analyses revealed that bias in nutrition-health outcome associations was not affected by varying the error term for health outcomes (\u03b7), but was influenced by the standard deviation of reporting error (\u03c3), with the direction of bias determined by the balance between mean error function and random error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by sensitivity analysis results shown in Figure 3\u2014figure supplement 2. The analyses appropriately explore the robustness of findings to key parameters in the simulation model, providing insight into the mechanisms underlying bias patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C86",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Goldberg cutoffs are more effective for eliminating bias in mean nutrition intake estimates than for reducing bias in nutrition-health outcome associations. The decision to use Goldberg cutoffs should be based on specific research purposes rather than general rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C86, and C104-C106 represent the main conclusions of the study, synthesizing findings from both empirical and simulation analyses. These conclusions are well-supported by the data presented (C3, C46-C57 for mean intake; C5-C7, C60-C62, C65-C71 for associations) and represent appropriate inferences from the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study extended previous work by investigating sodium, potassium, and protein intakes in addition to energy intake, and used a simulation approach based on the IDATA dataset to generate realistic data that overcomes sample size limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe methodological strengths of the study. The expansion to multiple nutrients beyond energy intake is well-documented, and the simulation approach is appropriately justified and implemented based on the IDATA characteristics (as shown in Figures 4 and 4\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study has several limitations including use of only bivariate associations, assumptions about normal distribution and constant variance of reporting bias in simulations, use of a single self-report method (ASA24), limited sample size, and a predominantly white, older population that may limit generalizability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C102 appropriately acknowledge study limitations. These are reasonable concerns about the scope and generalizability of the findings. The authors appropriately note that some limitations involve speculation about potential impacts (C92, C94, C96, C98, C100) while others are factual constraints of the study design (C91, C93, C95, C99, C101).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Energy intake can be measured using biomarkers (respiratory gas analysis or doubly labeled water) or self-report methods. DLW is considered the gold standard for free-living individuals but is expensive and impractical for large-scale studies. Self-reported energy intake is subject to systematic bias due to database limitations, social desirability, and weight/social status factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23, C26-C32 provide established background knowledge about energy intake measurement methods, supported by appropriate citations to the literature. These claims accurately represent the current understanding in the field regarding the advantages, limitations, and sources of bias in different measurement approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Various approaches have been proposed to mitigate bias in self-reported nutrition intake, including fixed cutoff ranges and energy expenditure prediction equations like the Goldberg cutoffs. However, fixed cutoffs do not account for individual variability, and previous work by the authors demonstrated that Goldberg cutoffs do not necessarily eliminate bias in nutrition-health outcome associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 provide appropriate background on existing bias mitigation approaches, supported by citations to relevant literature. The reference to the authors' previous work (C41) appropriately sets up the motivation for the current study's extension to multiple nutrients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The IDATA study included 303 participants (>90% non-Hispanic white, mean age 63, mean BMI 27.7 kg/m\u00b2) recruited from AARP members in Pittsburgh. The study measured nutrition intake using both self-report (ASA24) and biomarkers (DLW for energy, 24-hour urine for sodium, potassium, and protein), with specific methodological details for calculating biomarker-based intakes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C107-C117 provide methodological details about the IDATA dataset and measurement approaches. These are factual descriptions of the study population and methods, appropriately documented with citations to established methodologies and the IDATA study design.",
+    "result_type": "MINOR"
+  }
+]

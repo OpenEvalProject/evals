@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors successfully incorporated the fluorescent unnatural amino acid 7H4MC-ethylglycine at multiple positions in GHSR using codon suppression technology, assembled the labeled receptor into functional lipid nanodiscs, and demonstrated efficient incorporation through characteristic emission spectra. Five positions (I1343.43, Y2325.58, V2686.40, F2726.44, S3157.45) retained near-normal ligand binding and G protein activation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C25 provide converging evidence from multiple experimental approaches (codon suppression, nanodisc assembly, ligand affinity purification, functional assays, and fluorescence spectroscopy) demonstrating successful incorporation and functional characterization of the labeled receptor. The data in Figures 1B-D and supplementary figures support that five positions maintained receptor function while others were deleterious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors demonstrate that different positions within the transmembrane domains of apo GHSR exhibit distinct hydration levels as measured by the H parameter, with some positions showing high hydration (3.43, 6.40) and others low hydration (5.58, 6.44, 7.45), indicating that 7H4MC fluorescence can discriminate between different local hydration states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by experimental fluorescence data shown in Figure 2 and supplementary figures. The observed differences in H parameter across positions provide direct evidence that the probe reports on local hydration heterogeneity within the receptor structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Ghrelin binding induces specific changes in local hydration at positions 5.58 (increased) and 6.44 (decreased) but not at other positions, while the neutral antagonist JMV3011 causes no hydration changes. This indicates that agonist-induced GHSR activation involves concerted, spatially restricted changes in local hydration in TM5 and TM6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 are well-supported by fluorescence data in Figure 2 and supplementary figures showing position-specific hydration changes upon ligand binding. The spatial specificity (changes only at 5.58 and 6.44, not at nearby positions like V2686.40) supports the conclusion that hydration changes are localized and functionally relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Different ligand classes induce distinct hydration patterns: the inverse agonist SPA produces opposite hydration changes compared to ghrelin (decreased at 5.58, increased at 6.44), while the Gq-biased partial agonist JMV3002 shows an intermediate pattern (decreased at 6.44 but no change at 5.58), correlating with their different pharmacological profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are supported by experimental data in Figure 2 and supplementary figures, with appropriate citations for the pharmacological characterization of the ligands. The distinct hydration signatures for different ligand classes provide strong evidence linking hydration patterns to receptor functional states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors performed 50 \u03bcs of MD simulations (5 replicate 5 \u03bcs simulations each for inactive and active-like states) starting from the crystal structure of inactive GHSR and a modeled active-like state. The simulations explored conformational space compatible with experimental structures, describing mainly inactive and intermediate states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe the MD simulation methodology with appropriate detail and validation. The use of the crystal structure (C47, cited) and modeling of the active state (C50) due to unavailable coordinates (C49) is well-justified. Figure 3 supplement 1 supports the conformational sampling claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "MD simulations reveal state-dependent hydration patterns in GHSR, with four of five inactive-state simulations converging to a similar pattern showing water around F2726.44 but not Y2325.58, partially agreeing with experimental data. However, discrepancies exist for positions V2686.40 and S3157.45, where simulation and experiment disagree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 are supported by MD simulation data shown in Figure 3 and comparison with experimental results. The authors appropriately acknowledge both agreements (C58, C59) and disagreements (C60) between simulation and experiment, demonstrating scientific rigor. The agreement with prior studies (C57) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "To address discrepancies between simulation and experiment at positions V2686.40 and S3157.45, the authors computed adiabatic maps showing that the larger 7H4MC-ethylglycine residue at position 2686.40 allows solvent interaction (unlike the native valine), potentially explaining the experimental observation of hydration at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 provide a reasonable explanation for the simulation-experiment discrepancy through additional computational analysis (adiabatic maps shown in Figure 4 supplement 1). The structural reasoning about residue size and positioning (C61-C63) is logical and supported by the computational results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In the active-like state, MD simulations show TM6 spreading leads to increased water influx into the intracellular region, with I1343.43, Y2325.58, and V2686.40 in contact with water while F2726.44 flips toward TM5 reducing water contact. This F272 flipping is conserved across all GPCRs and represents a key structural feature of activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 are well-supported by MD simulation data in Figures 3 and 4 and supplementary figures. The identification of TM6 spreading as the key structural change (C71-C72) and the conserved F272 flip (C75) are supported by structural analysis across multiple GPCRs (Figure 4), providing strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "One simulation starting from the active state showed TM7 inward motion leading to closure and loss of hydration in the intracellular region. This motion is compatible with experimental structures and PCA analysis showing TM7 inward movement concomitant with TM6 spreading, resulting in a hydration pattern similar to the inactive state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by simulation data (Figure 3J) and PCA analysis (Figure 4 supplement 4). The observation of a reverse transition (active to inactive-like) provides additional validation of the conformational landscape and demonstrates the dynamic nature of GPCR states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Addition of PIP2 (2.5%) to nanodiscs amplifies ghrelin-induced hydration changes (increased H at 5.58, decreased at 6.44), suggesting PIP2 shifts the conformational equilibrium toward the active-like state through allosteric coupling with the full agonist, potentially explaining PIP2's effect on G protein activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are supported by experimental data in Figure 5 and appropriate citations for PIP2 effects on membrane proteins and GPCRs (C81). The observed amplification of hydration changes provides direct evidence for allosteric coupling between PIP2 and ghrelin, though the mechanistic link to G protein activation (C87) is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The 7H4MC fluorophore's emission properties depend on local water content and do not affect global hydration levels, only influencing water residence time in some cases. The successful incorporation at positions I1343.43, Y2325.58, V2686.40, F2726.44, and S3157.45 without affecting function suggests the probe does not dramatically perturb receptor structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by appropriate citations (Georgieva et al., 2005) for the probe properties and by the functional data (Figure 1B-C) showing minimal effects on ligand binding and G protein activation. The inference about structural preservation (C92) is reasonable given the functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors explain the surprising lack of functional impact when replacing F2726.44 with 7H4MC-ethylglycine by noting that while F272A mutation abolishes activity, F272Y has minimal impact, suggesting a rigid aromatic group is required at this position\u2014a requirement satisfied by the aromatic 7H4MC moiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 provide a logical explanation for an unexpected observation, supported by appropriate citations to prior mutagenesis studies (Valentin-Hansen et al., 2012). The reasoning that 7H4MC satisfies the aromatic requirement is sound and consistent with the functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Only positions 5.58 and 6.44 show activation-dependent changes in 7H4MC fluorescence, while other highly hydrated positions remain invariant. These invariant positions may correspond to regions directly accessible to solvent regardless of activation state or may contain structural rather than functional water molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by experimental data showing position-specific responses to activation. However, C99-C100 are speculative interpretations (marked as SPECULATION in evidence_type) about the nature of invariant positions, which is appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The observed hydration changes at positions Y2325.58 and F2726.44 (located outside the ligand-binding pocket) likely result from conformational state differences rather than direct water rearrangement in the binding pocket. The 7H4MC emission reflects the average equilibrium distribution of states, so changes indicate both altered state distribution and different hydration features of those states, demonstrating that hydration remodeling is integral to GHSR conformational changes during activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 provide a logical interpretation of the experimental results, supported by the location of the probe positions (C102, cited), the nature of fluorescence measurements (C105, based on spectroscopy principles), and MD simulation data (C104, C108). The reasoning connecting state distribution to hydration changes (C106-C107) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "MD simulations provide a structural framework for experimental observations, allowing analysis of fully solvated receptor with state-dependent hydration patterns. While simulations of wild-type GHSR agree with experiments for positions 1343.43, 2325.58, 2686.40, and 2726.44, position 3157.45 shows disagreement, possibly due to the large 7H4MC residue excluding water or orienting toward the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 appropriately describe the complementary role of MD simulations and acknowledge both agreements and limitations. The speculation about the 3157.45 discrepancy (C118) is reasonable and appropriately marked as speculation. The comparison between simulation and experiment demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Different GHSR conformational states exhibit distinct hydration patterns, and ligands with different pharmacological profiles (full vs. Gq-biased agonist) differentially impact state distribution. This is consistent with prior observations in NK1R and GLP1R showing that water networks differentially affect G protein-dependent vs. -independent signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C125 synthesize experimental findings with prior literature, supported by appropriate citations (C121-C122, C125). The inference that different ligands impact state distribution differently (C124) is well-supported by the distinct hydration patterns observed for ghrelin vs. JMV3002.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The combination of 7H4MC-ethylglycine incorporation, fluorescence spectroscopy, and MD simulations reveals that GHSR exhibits a specific hydration pattern in TM5 and TM6 that is activation-state dependent and selectively remodeled by pharmacologically distinct ligands and lipid environment. This remodeling is directly related to concerted TM domain movements, demonstrating tight coupling between conformational dynamics and internal water movements, with water potentially serving as allosteric modulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C137 represent the main conclusions of the study, well-supported by the convergence of experimental (fluorescence) and computational (MD) approaches. The claims appropriately synthesize findings about state-dependent hydration (C131, C136), ligand effects (C136), lipid effects (C136), and the coupling to conformational dynamics (C135, C137). The suggestion of water as allosteric modulators (C132) is appropriately cautious.",
+    "result_type": "MAJOR"
+  }
+]

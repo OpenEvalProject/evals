@@ -1,0 +1,1915 @@
+{
+  "submission": {
+    "id": "3d56238d-41d6-4d6a-bb0c-3868f0a8b835",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:37:10.465968Z",
+    "updated_at": "2025-12-03T15:37:10.465968Z"
+  },
+  "content": [
+    {
+      "id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "submission_id": "3d56238d-41d6-4d6a-bb0c-3868f0a8b835",
+      "content_type": "manuscript",
+      "content_text": "# Structure of the HOPS tethering complex, a lysosomal membrane fusion machinery\n\n## Authors\n\n- Dmitry Shvarev<sup>1</sup> ([ORCID: 0000-0002-9776-268X](https://orcid.org/0000-0002-9776-268X))\n- Jannis Schoppe<sup>2</sup>\n- Caroline K\u00f6nig<sup>2</sup>\n- Angela Perz<sup>2</sup>\n- Nadia F\u00fcllbrunn<sup>2</sup>\n- Stephan Kiontke<sup>3</sup> ([ORCID: 0000-0001-5822-913X](https://orcid.org/0000-0001-5822-913X))\n- Lars Langemeyer<sup>2</sup> ([ORCID: 0000-0002-4309-0910](https://orcid.org/0000-0002-4309-0910))\n- Dovile Januliene<sup>1</sup> ([ORCID: 0000-0002-3279-7590](https://orcid.org/0000-0002-3279-7590))\n- Kilian Schnelle<sup>1</sup> ([ORCID: 0000-0001-8808-594X](https://orcid.org/0000-0001-8808-594X))\n- Daniel K\u00fcmmel<sup>4</sup> ([ORCID: 0000-0003-3950-5914](https://orcid.org/0000-0003-3950-5914))\n- Florian Fr\u00f6hlich<sup>5</sup> ([ORCID: 0000-0001-8307-2189](https://orcid.org/0000-0001-8307-2189))\n- Arne Moeller<sup>1</sup> ([ORCID: 0000-0003-1101-5366](https://orcid.org/0000-0003-1101-5366)) \u2020\n- Christian Ungermann<sup>2</sup> ([ORCID: 0000-0003-4331-8695](https://orcid.org/0000-0003-4331-8695)) \u2020\n\n### Affiliations\n\n1. Department of Biology/Chemistry, Structural Biology section, Osnabr\u00fcck University Osnabr\u00fcck Germany ([ROR:04qmmjx98](https://ror.org/04qmmjx98))\n2. Department of Biology/Chemistry, Biochemistry section, Osnabr\u00fcck University Osnabr\u00fcck Germany ([ROR:04qmmjx98](https://ror.org/04qmmjx98))\n3. Department of Plant Physiology and Photo Biology, University of Marburg Marburg Germany ([ROR:01rdrb571](https://ror.org/01rdrb571))\n4. Department of Chemistry and Pharmacy, Institute of Biochemistry, University of M\u00fcnster M\u00fcnster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))\n5. Department of Biology/Chemistry, Molecular Membrane Biology group, Osnabr\u00fcck University Osnabr\u00fcck Germany ([ROR:04qmmjx98](https://ror.org/04qmmjx98))\n6. Center of Cellular Nanoanalytic Osnabr\u00fcck (CellNanOs), Osnabr\u00fcck University Osnabr\u00fcck Germany ([ROR:04qmmjx98](https://ror.org/04qmmjx98))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLysosomes are essential for cellular recycling, nutrient signaling, autophagy, and pathogenic bacteria and viruses invasion. Lysosomal fusion is fundamental to cell survival and requires HOPS, a conserved heterohexameric tethering complex. On the membranes to be fused, HOPS binds small membrane-associated GTPases and assembles SNAREs for fusion, but how the complex fulfills its function remained speculative. Here, we used cryo-electron microscopy to reveal the structure of HOPS. Unlike previously reported, significant flexibility of HOPS is confined to its extremities, where GTPase binding occurs. The SNARE-binding module is firmly attached to the core, therefore, ideally positioned between the membranes to catalyze fusion. Our data suggest a model for how HOPS fulfills its dual functionality of tethering and fusion and indicate why it is an essential part of the membrane fusion machinery.\n\n## Introduction\n\nLysosomal fusion underlies a plethora of cellular processes. It is essential in the maintenance and upkeep of eukaryotic membranes and fundamental to secretion, endocytosis, and autophagy (Saftig and Puertollano, 2021). Macromolecules from different trafficking pathways end up in lysosomes where they are degraded (Klionsky et al., 2021; Saftig and Puertollano, 2021). This process relies on multiple fusion events within the endomembrane system. In general, fusion depends on SNAREs, which are present on opposite membranes and zipper into four-helix bundles with the help of Sec1/Munc1 (SM) proteins (Jahn and Fasshauer, 2012; S\u00fcdhof and Rothman, 2009; Wickner and Rizo, 2017). Each assembled SNARE complex contains three Q-SNAREs (Qa, Qb, and Qc) and one R-SNARE, which are categorized according to the interaction of the glutamine and arginine residues in the central hydrophilic layer of the otherwise hydrophobic interfaces within the SNARE complex (Jahn and Fasshauer, 2012; S\u00fcdhof and Rothman, 2009; Wickner and Rizo, 2017). Prior to fusion, specialized tethering complexes establish tight links between organelles and interact with SM proteins to promote fusion (Baker and Hughson, 2016; Kuhlee et al., 2015; Ungermann and K\u00fcmmel, 2019). Despite their central position in trafficking, the underlying mechanics of tethering complexes and how they catalyze membrane fusion remain unresolved.\n\nThe heterohexameric HOPS complex mediates fusion of late endosomes, autophagosomes, and AP-3 vesicles with mammalian lysosomes or vacuoles in yeast (van der Beek et al., 2019; Spang, 2016; Wickner and Rizo, 2017), and is probably the best-studied tethering complex. Fusion assays using yeast vacuoles or reconstituted SNARE-bearing proteoliposomes showed that HOPS is essential for membrane fusion at physiological SNARE concentrations (D\u2019Agostino et al., 2017; Mima et al., 2008; Zick and Wickner, 2016). HOPS is the target of viruses such as SARS-CoV2 (Miao et al., 2021), and its inactivation blocks Ebola infections (Carette et al., 2011). Furthermore, multiple HOPS mutations can cause severe diseases ranging from Parkinson\u2019s to lysosomal disorders (van der Beek et al., 2019; Sanderson et al., 2021; van der Welle et al., 2021).\n\nFive out of six HOPS subunits (Vps11, Vps16, Vps18, Vps39, and Vps41) are predicted to share a similar architecture, comprising an N-terminal \u03b2-propeller and a C-terminal \u03b1-solenoid domain (Figure 1A). Vps11 and Vps18 form the core and carry conserved C-terminal RING finger domains (Rieder and Emr, 1997), which are essential for HOPS formation (Hunter et al., 2017), but also show E3 ligase activity on their own (Segala et al., 2019). At the opposite sites, Vps41 and Vps39 bind to membrane-anchored small GTPases (the Rab7-like Ypt7 in yeast) (Br\u00f6cker et al., 2012; L\u00fcrick et al., 2017; Ostrowicz et al., 2010), while Vps16 and the SM protein Vps33 establish the SNARE-binding module (Baker et al., 2015; Graham et al., 2013). Low-resolution negative-stain electron microscopy (EM) analyses revealed the overall arrangement of HOPS (Br\u00f6cker et al., 2012; Chou et al., 2016), yet were insufficient to localize the exact position of its subunits and suggested significant flexibility within the particle.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain architecture and size of HOPS subunits. Predicted domains and structural features are indicated. (B) Size exclusion chromatography (SEC) of the affinity-purified HOPS. Purification was done as described in Materials and methods. (C) Mass photometry analysis. Peak fractions from SEC were analyzed for size. (D) Purified HOPS. Proteins from affinity purification (eluate) and SEC (red dashes in (B)) were analyzed by SDS-PAGE. (E) Overall architecture of the HOPS complex. Composite map from local refinement maps (Figure S1-3) was colored by assigned subunits. One of the consensus maps used for local refinements was low-pass-filtered and is shown as a transparent envelope. (F) Atomic model of the HOPS complex. For the N-terminal fragments of Vps41 and Vps39, which were not resolved to high resolution by local refinements, AlphaFold models are used and manually fitted into the densities of consensus maps (Figure 1\u2014figure supplements 1 and 2). The triangular shape of the complex is highlighted with the approximate distance between the \u03b2-propellers of Vps41 and Vps39. (G) Schematic representation of the HOPS complex indicates central features.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Processing of the core part of the complex. 2186 and 6580 movies from two different data sets were preprocessed in parallel and used for initial particle sorting by 2D and 3D classifications using the box size of 128 pixels with 4.85 \u00c5 per pixel. After initial classifications, approximately 625,000 particles were selected and combined for further processing. A round of ab-initio reconstruction followed by hetero-refinement with five classes was performed to separate the best particles for further refinements. About 407,000 particles from three classes, which reached 9.9 \u00c5 resolution (Nyquist for the binned data), were extracted using the box size of 320 pixels with 1.94 \u00c5 per pixel, and another round of 2D classification was performed. Afterward, a new round of ab-initio reconstruction and hetero-refinement with six classes was conducted. Particles from two classes that reached the best resolutions (7 and 7.1 \u00c5) were further processed separately. The first of the selected two classes was refined by NU-refinement to 4.3 \u00c5 resolution, while the second class was refined to 4.9 \u00c5. Subsequently, particles were extracted in full box size (672 pixels with 0.924 \u00c5 per pixel) and used for further homogeneous and NU-refinement, which resulted in two consensus maps, better resolving either upper or lower part of HOPS (reached 4.2 and 4.4 \u00c5 resolution, respectively). FSC curves generated in cryoSPARC are shown for both consensus maps. Afterward, local refinements were applied to improve each of the consensus maps. Local refinements of the first map resulted in two maps covering the SNARE-binding module (3.6 \u00c5 resolution) and the upper part for the core of HOPS (4 \u00c5 resolution). Local refinements of the second consensus map provided maps of the bottom of HOPS core better covering either Vps18 (4.4 \u00c5 resolution) or Vps39 (5 \u00c5 resolution). The subset of particles used for generation of both consensus maps was in parallel probed for flexibility using 3D classification (Figure 2\u2014figure supplement 3A,B) and 3D variability analyses (Figure 2\u2014figure supplement 3D) (dashed arrows; see Materials and methods for details). (B) Processing of the distal parts of HOPS. Movies used for core reconstruction (see (A)) were combined with movies from two additional data sets (2841 and 8338 movies, respectively) and preprocessed. After template picking, about 3.9 million particles were selected and subjected to several rounds of heterogeneous, homogeneous, and NU-refinements to select classes best resolving upper (Vps41) and lower (Vps39) distal parts of HOPS. Afterward, selected particles were used for a round of NU-refinement with a box size of 448 px with 1.82 \u00c5 per pixel. The particles from this NU-refinement were then subjected to 3D variability analysis with masks covering either the Vps41 or Vps39 volume. This was followed by 3D variability display in the cluster mode to further select particles. Finally, particles from best clusters were subjected to local refinements at a full box size of 882 pixels with 0.924 \u00c5 per pixel resulting in the maps resolving N-terminal regions of Vps39 (7.5 \u00c5 resolution) or Vps41 (6.9 \u00c5 resolution).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Consensus cryo-EM map of the upper part of HOPS, shown as a transparent envelope, with two corresponding local refinement maps fitted (colored). (B) The same consensus map, as in (A), shown from different sides. (C) The low-pass-filtered consensus map from (A), used in Figure 1E and viewed at a threshold, which allows to demonstrate the densities of N-terminal regions of Vps39 and Vps41. (D) The consensus map of the lower part of HOPS, shown as a transparent envelope, with two corresponding local refinement maps fitted (colored). (E) The consensus map from (D), shown from different sides. (F) The map from (D), shown as in (C).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Representative 2D class averages. Scale bar, 100 \u00c5. (B\u2013G) Local-resolution estimation, FSC curves, and angular distribution plots generated in cryoSPARC for each of six local refinement maps (see Figure 1\u2014figure supplements 1 and 2 and Materials and methods). Note, that in (F) and (G), local resolution was not calculated for the peripheral areas of the maps due to mask limitations and is displayed in dark blue.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) SDS-PAGE of purified wild-type and mutant complexes. (B) Ypt7-interaction. HOPS wild-type and mutant complexes were added to immobilized GST-Ypt7 or Ypt1 loaded with GTP or GDP. Eluted proteins were analyzed by SDS-PAGE and Western blotting. Coomassie gels of corresponding Rab GTPases are shown below.\n\nThe way HOPS fulfills its function remains speculative, and multiple mechanisms have been proposed, including a role as a bulky membrane stressor (D\u2019Agostino et al., 2017) or, conversely, as a highly flexible membrane tether (Br\u00f6cker et al., 2012; Chou et al., 2016). In the absence of detailed structural data, it remains obscure how HOPS facilitates lysosomal fusion.\n\n## Results\n\n### Structure of the HOPS complex\n\nPreviously, structural studies were hampered by the low stability and flexibility of the complex, which required fixation through mild crosslinking for sample preparation and confined structural studies to negative stain analyses (Br\u00f6cker et al., 2012; Chou et al., 2016). To enable high-resolution cryo-EM of non-crosslinked HOPS, we vastly improved and accelerated our purification protocols and removed any delays during the sample preparation procedure (Figure 1B\u2013D). Single-particle analysis including extensive classifications followed by local refinements led to a composite structure with resolutions between 3.6 and 5 \u00c5 (Figure 1E and Figure 1\u2014figure supplements 1\u20133).\n\nHOPS forms a largely extended, slender structure extending approximately 430 \u00c5 in height and 130 \u00c5 in width, resembling a triangular shape (Figure 1E\u2013G, Video 1). In the center of the modular complex, Vps11 and Vps18 align antiparallel through their elongated \u03b1-solenoids, establishing a large interface area of 1972 \u00c52 (Figure 1E-G, Figure 2, Figure 2\u2014figure supplement 4), which resulted in the highest resolution obtained within HOPS (Figure 1\u2014figure supplement 3) and is comparable with protein interfaces in other complexes with similar structural elements as in HOPS (e.g. Kschonsak et al., 2022). Interestingly, AlphaFold predicts a long unstructured region within Vps11 (Q760 to D784), resulting in an upper and lower part of the subunit. However, this region is clearly resolved and organized in our density. In our model, the two core subunits create a central assembly hub for the four other subunits (Vps39, Vps41, Vps16, and Vps33) that fulfill specific functions and localize to the periphery of the complex. The N-termini of Vps11 and Vps18 are located distally from the core and each carries a \u03b2-propeller, which can be deleted without affecting the complex formation (Figure 3A and D, Figure 1\u2014figure supplement 4). At the C-termini, both Vps11 and Vps18 have long \u03b1-helices which are followed by RING finger domains (Figures 1E\u2013G\u20132A and B, Figure 2\u2014figure supplement 1). Both features are key elements for the stability of the modular architecture and serve as anchor points for the additional subunits. In agreement, HOPS, carrying mutations in the RING finger domains of Vps11 (vps11-1) (Peterson and Emr, 2001), selectively lost Vps39, whereas only Vps41 was obtained from a similar Vps18 mutant.\n\n![Video 1.](https://cdn.elifesciences.org/articles/80901/elife-80901-video1.mp4.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig2-v2.jpg)\n\n**Figure 2.:** Atomic model of HOPS with highlighted interaction sites between subunits. (A, B) Coiled-coil motifs followed by the RING finger domains (violet) are the key structural features of HOPS. (A) The Vps18 C-terminal hub. Vps18 and Vps41 interact via the coiled coil and the Vps18 RING finger domain (displayed as non-transparent cartoons). (B) The Vps11 C-terminal hub. Vps11 interacts via its RING finger domain and the coiled coil with Vps39 (displayed as non-transparent cartoons). (C) Connection of the SNARE binding module (Vps33 and Vps16) to the backbone of HOPS via interactions with the structured loop at the RING finger domain and the C-terminus of Vps18 (displayed as non-transparent cartoons). (D) Vps39 connects by its C-terminal helix the \u03b2-propeller of Vps18, which provides additional stability in this part of HOPS.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Fragments of Vps11 and Vps18 depicting RING finger domains (yellow) following the long helices. Amino acids (orange) participating in folding of the RING finger domains are labeled. (B) Multiple sequence alignment of Vps11 and Vps18 RING finger domains from different model organisms (Drosophila melanogaster, Homo sapiens, Mus musculus, Saccharomyces cerevisiae, and Danio rerio), made using MUSCLE (Edgar, 2004) and visualized in Jalview (Waterhouse et al., 2009), is shown; coloring by conservation. Conserved amino acids from (A) are labeled by red asterisks.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Cartoon of cell growth, lysis, ALFA pulldown, and mass spectrometry analysis. See Materials and methods for details. (B\u2013E) Mass spectrometry analysis of Vps41 purified via the ALFA tag from the indicated strains and enriched proteins (green dots). Results of purification from wt (B), vps11-1 (C), vps11-3 (D), and vps18 (E) cells. (F) Schematic representation of the results based on the structural model (as in Figure 1G).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Upper row, maps generated by a hetero-refinement with multiple classes from particles used for local refinements (see Figure 1\u2014figure supplement 1A). All classes demonstrate different positions of densities at the distal ends relative to the rigid core (highlighted by red lines) of the volumes. Lower row, rotation angles calculated between the points indicated on the maps from above. (B) Angular difference calculated from angles in (A) demonstrating limited movements of Vps41 and Vps39, as depicted in the cartoon to the right. (C) Representative 2D class averages show fuzzy densities of Vps41 and Vps39 owing to their flexibility. (D) 3D variability analysis of particles used for local refinements (see Figure 1\u2014figure supplement 1A). 3D density maps at negative (red) and positive (blue) positions along each variability component are shown.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Open-book view at the interface between Vps11 and Vps18 observed from the SNARE-binding module side of the complex. Surfaces colored by electrostatic potential and hydrophobicity are shown demonstrating a high degree of hydrophobic and electrostatic complementarity at the interface between the subunits.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representations of HOPS wild-type (as in Figure 1G) and mutants lacking N-terminal \u03b2-propeller domains (indicated by pink asterisks). (B) Tethering assay. Fluorescently labeled liposomes loaded with prenylated Ypt7-GTP or none were incubated with HOPS and mutant complexes. Tethering was determined as described in Materials and methods. Data shown from three biological replicates, bars indicate standard deviation. (C) Fusion assay. Fusion of proteoliposomes carrying vacuolar SNAREs were preincubated with Ypt7-GDI, GTP, and Mon1-Ccz1. For fusion, HOPS wild-type or mutant and the soluble Vam7 SNARE were added (Langemeyer et al., 2020; Langemeyer et al., 2018). Analysis was done as described (Zick and Wickner, 2016). See Materials and methods. Data shown from three biological replicates, bars indicate standard deviation. (D) Representative 2D class averages obtained from negative-stain analyses of wild-type HOPS and mutants. Pink asterisks indicate missing densities in the mutants.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Structure of the \u03b2-propeller of Chaetomium thermophilum Vps39 confirms the structure prediction. Cristal structure of C. thermophilum Vps39 (1\u2013500) construct (cyan) is shown and superimposed on the model of Saccharomyces cerevisiae Vps39 (dark green) generated by AlphaFold. Below, sequence alignment of Vps39 N-terminal fragments from C. thermophilum and S. cerevisiae is displayed. Alignment is made using MUSCLE (Edgar, 2004) and visualized in Jalview (Waterhouse et al., 2009); coloring by conservation. (B) Model of Vps41 (light green, residues 1\u2013919) with Ypt7 (pink, residues 1\u2013185) generated by AlphaFold (multimer mode). According to the model, Ypt7 binds to the \u03b2-propeller of Vps41 at the opposite side than the identified membrane-interacting ALPS motif (Cabrera et al., 2010). (C) Model of Vps39 (dark green, residues 1\u2013926) with Ypt7 (pink, residues 1\u2013185) was obtained as in (A). Ypt7 binds to the inside of the \u03b1-solenoid of Vps39 according to the model. (D) The model from (B), fitted to the atomic model of HOPS generated in this study (gray, see Figure 2). According to the AlphaFold model, Ypt7 has a contact site not only with Vps39 but also with Vps18 \u03b2-propeller.\n\nVps41 and Vps39 provide the Ypt7-interaction sites at their peripheral N-terminal regions. Their extended C-terminal helices, similar to those of Vps11 and Vps18, are tightly interlocked through coiled-coil motifs with the long C-terminal \u03b1-helices and RING finger domains from the respective core subunits (Vps41 with Vps18, and Vps39 with Vps11) (Figure 2A and B). Additional stability of Vps39 within the complex is provided by the interaction of the long \u03b1-helix at the C-terminus of Vps39 with the \u03b2-propeller of Vps18 (Figure 2D). In our density, peripheral portions of both Vps41 and Vps39 are least well resolved indicating their considerable flexibility. Multi-modular classification analyses revealed angular re-orientations of about 9\u00b0 for Vps41 and 20\u00b0 for Vps39 (Figure 2\u2014figure supplement 3A-D) relative to the core, resulting in variable positions of the N-terminal \u03b2-propellers. At the top, Vps41 reaches out by approximately 100 \u00c5 in length and, similarly, Vps39 forms an elongated arch at the bottom (Figure 1E\u2013G), positioning both Ypt7-interacting units at the farthest ends of the complex.\n\nThe SNARE-binding element, composed of Vps16 and the SM protein Vps33, branches out to the lateral side of the complex approximately at the center of the structure (Figures 1E\u2013G\u20132). Vps16 shares a large interface with the coiled-coil motif formed by Vps18 and Vps41 and the N-terminus of Vps18, which is stabilized through interactions between hydrophobic and charged residues (Figure 2C). Vps33 is in immediate contact with the structured loop of Vps18 (residues 824\u2013831) that connects the elongated helix with the RING finger domain (Figure 2C). This, as well as the role of RING finger domains in the interlocking of other subunits, explains, why mutations at RING domains result in devastating human diseases and HOPS dysfunction (van der Beek et al., 2019; Edvardson et al., 2015; Robinson et al., 1991; van der Welle et al., 2021; Zhang et al., 2016) and cause failure of correct HOPS assembly (Figure 2\u2014figure supplement 2). Overall, the SNARE binding module appears to be stably connected to the central core, while only the short C-terminal section of Vps16 \u03b1-solenoid (residues 739\u2013798) displays high variability and is not resolved in our structure.\n\n### HOPS couples tethering to fusion activity\n\nTethering complexes bridge membranes by binding small GTPases, but also harbor or bind SM proteins (Ungermann and K\u00fcmmel, 2019). Reconstituted vacuole fusion is strictly HOPS and Ypt7-dependent at physiological SNARE concentrations (Langemeyer et al., 2018; Zick and Wickner, 2016), suggesting that HOPS is not just a tether, but part of the fusion machinery (Baker et al., 2015; Wickner and Rizo, 2017). However, so far, it was unknown how tethering and fusion activities of HOPS may be linked mechanistically. To address this, we first analyzed the N-terminal \u03b2-propellers of Vps41 and Vps39, the likely binding sites with Ypt7 (L\u00fcrick et al., 2017; Ostrowicz et al., 2010; Plemel et al., 2011). The intrinsic low affinity between HOPS and Ypt7 (L\u00fcrick et al., 2017) prevented reconstitution of the complex for structural studies, therefore, we instead relied on AlphaFold predictions. Additionally, we solved the structure of the \u03b2-propeller of Chaetomium thermophilum Vps39 by X-ray crystallography, which largely confirmed the predicted model (Figure 3\u2014figure supplement 1A). Surprisingly, in the AlphaFold model, Ypt7 binding occurs at the \u03b1-solenoid of Vps39 where it does not directly interact with the \u03b2-propeller (Figure 3\u2014figure supplement 1C), as originally expected. Furthermore, the binding site on Vps39 is placed approximately 5\u20136 nm above the membrane if Ypt7-anchored HOPS is in an upright position on supported lipid bilayers (F\u00fcllbrunn et al., 2021). Membrane-bound Ypt7 can still reach this site due to its 10 nm long hypervariable domain (not shown in the prediction).\n\nIn the predicted complex of Vps41 (residues 1\u2013919) with Ypt7 (residues 1\u2013185), the GTPase binds directly to the Vps41 \u03b2-propeller, as anticipated. However, it interacts on the opposite side from the membrane-interacting amphipathic lipid-packing sensor (ALPS) motif (Cabrera et al., 2010; Figure 3\u2014figure supplement 1B), suggesting that the hypervariable region of Ypt7 is required for binding, in analogy to Vps39. Curiously, in the predicted model, the ALPS motif faces away from the membrane which would hamper membrane binding. We noted, however, that this distal region of Vps41 (Figure 3\u2014figure supplement 1B) displays substantial flexibility. The \u03b2-propeller of Vps41 might, therefore, be oriented differently in the structure than predicted by AlphaFold, which may bring the ALPS motif in contact with the bilayer if Vps41 is bound to Ypt7. Nevertheless, future experimental data will need to confirm the predicted AlphaFold model of Vps41 and Vps39 interaction with Ypt7.\n\nVps39 binds Ypt7 far stronger than Vps41 (Auffarth et al., 2014; L\u00fcrick et al., 2017), and may be assisted by Vps18 to sandwich Ypt7, whereas Vps41 binds to Ypt7 apparently alone (Figure 3\u2014figure supplement 1D). Such a dual interaction could explain both tighter binding and a preferred orientation of HOPS on membranes (F\u00fcllbrunn et al., 2021). To test the functional importance, we generated HOPS complexes lacking the \u03b2-propeller of Vps11, Vps18, or Vps41 (Figure 3A). All complexes were purified in equimolar stoichiometry (Figure 1\u2014figure supplement 4A), and interacted with Ypt7, but not the Golgi Rab Ypt1 in GST pull-down assay, suggesting that at least one Rab-binding site is maintained in all truncated complexes (Br\u00f6cker et al., 2012; L\u00fcrick et al., 2017; Ostrowicz et al., 2010; Zick and Wickner, 2016; Zick and Wickner, 2012; Figure 1\u2014figure supplement 4B).\n\nTo determine the activity of HOPS mutants, we compared tethering and fusion. For tethering, we incubated liposomes bearing Ypt7-GTP with each complex and quantified clustering after centrifugation (F\u00fcllbrunn et al., 2021; L\u00fcrick et al., 2017). HOPS lacking the Vps41 \u03b2-propeller was inactive as shown (L\u00fcrick et al., 2017), whereas HOPS with truncated Vps11 or Vps18 was fully functional and as efficient as wild-type HOPS (Figure 3B). In contrast, when added to SNARE and Ypt7-GTP bearing liposomes, only wild-type HOPS, but none of the mutant complexes promoted fusion (Figure 3C). This was particularly puzzling for HOPS lacking either the Vps18 or Vps11 \u03b2-propeller as they had full tethering activity (Figure 3B). Therefore, we compared the structural features of HOPS mutants with the wild type using negative stain EM. Deletions of the \u03b2-propellers of Vps41, Vps11, or Vps18 indeed resulted in a loss of protein density at the expected positions, while preserving the densities of all other subunits (Figure 3D). Interestingly, HOPS complexes lacking \u03b2-propellers in Vps11 or Vps18 showed an alteration in the relative orientation of Vps39 within the complex in some 2D class averages. This observed structural variation might be a result of the increased flexibility of mutant HOPS due to the lack of structural support by \u03b2-propellers of Vps18 and Vps11. We conclude that the \u03b2-propellers of Vps18 and Vps11 contribute to the overall structure of the HOPS complex or may play a stabilizing role during the fusion process, which would explain, why they are essential for the full activity of HOPS.\n\n## Discussion\n\nOur data suggest a working model of how HOPS catalyzes fusion at lysosomes and vacuoles (Figure 4). According to our structure, the three major ligand binding sites of HOPS are arranged in a triangular fashion. While the two Ypt7-binding sites show significant conformational variability, the SNARE-interacting unit is firmly connected to the stable backbone formed by Vps11 and Vps18. For tethering, HOPS Vps39 and Vps41 bind Ypt7 on target membranes. During this process, HOPS remains upright on membranes (F\u00fcllbrunn et al., 2021). Then, the SM protein Vps33 and possibly other sites on HOPS (Kr\u00e4mer and Ungermann, 2011; Baker et al., 2015; L\u00fcrick et al., 2017; L\u00fcrick et al., 2015; Song et al., 2020) bind SNAREs from the opposing membranes, and zipper them up toward their membrane anchor (Figure 4). Note, that this process can be blocked by Orf3a in the COVID-19 SARS-CoV-2 virus (Miao et al., 2021). In our model, the backbone of HOPS dampens the movement of the vesicles and acts as a lever arm holding on to SNAREs during zippering (D\u2019Agostino et al., 2017). This three-point arrangement would cause membrane stress and could explain how HOPS catalyzes membrane fusion (Figure 4). The physiological function of HOPS can be bypassed if large complexes are redirected to SNAREs at the fusion site (D\u2019Agostino et al., 2017; Song et al., 2017), which can even promote fusion of deficient SNARE complexes (Orr et al., 2022; Song et al., 2021). Zippered SNAREs may then dissociate from HOPS and allow access for \u03b1-SNAP and NSF to recycle SNAREs (Zhang and Hughson, 2021).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig4-v2.jpg)\n\n**Figure 4.:** The HOPS complex binds to Ypt7 on the vacuole and vesicles via Vps39 (dark green) and Vps41 (light green). SNARE proteins are recruited to HOPS by their N-terminal domains and the SNARE-binding module (dark and light brown). The stable central core of HOPS keeps the membranes in place, while Vps41 and Vps39 may function as dampers due to their limited flexibility. Consequentially, zippering of SNAREs, which is initiated by binding to Vps33 (dark brown), begins. As the N-terminal domains of SNAREs bind to HOPS, further SNARE zippering may occur with the HOPS backbone acting as a lever (not shown here). This may cause membrane stress and thus catalyzes fusion. HOPS may let go of Ypt7 and SNAREs thereafter. For details see text.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80901/elife-80901-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Multiple sequence alignment of HOPS subunit fragments from different model organisms (Drosophila melanogaster, Homo sapiens, Mus musculus, Saccharomyces cerevisiae, and Danio rerio) displaying known point mutations (red frames) (van der Beek et al., 2019; Peterson and Emr, 2001). (B) Mutations from (A) are labeled on the structure of HOPS (see Figure 2) as red spheres. In cases where mutations were described for a different organism, respective homologous residues in yeast were mapped according to the alignment in (A).\n\nHow tethering complexes contribute to fusion poses a long-standing question in the field. The process necessitates the binding of two opposing membranes and exact coordination of the zippering procedure of membrane-bound SNAREs. Previous analyses suggested strong flexibility along the entire HOPS structure, which was interpreted as a hallmark of tethering complexes and an essential prerequisite to their function (Br\u00f6cker et al., 2012; Chou et al., 2016; F\u00fcllbrunn et al., 2021; Ha et al., 2016). Structural models of a largely open HOPS, based on negative stain EM. Chou et al., 2016, supported the importance of HOPS structural flexibility. Flexibility was also observed in our previous negative stain EM structure (Br\u00f6cker et al., 2012). Instead, our cryo-EM data, collected on a highly pure and homogeneous sample that was not modified by any crosslinker or other fixative agents like negative stain, show that HOPS flexibility is limited. Taking the obtained resolution as a measure of sample flexibility (Rawson et al., 2016), we conclude that the backbone and the SNARE-binding module are the least flexible parts of HOPS and appear to be stably associated with each other. In contrast, the membrane interacting units of Vps41 and Vps39 show some flexibility with 10\u201320\u00b0 movements between particles, which substantially reduced their resolution (Figure 2\u2014figure supplement 3). We relate this flexibility to their function within HOPS, where it may dampen the motion of HOPS between membranes and stabilizes the SNARE interaction, which are necessary for fusion (Laage and Ungermann, 2001; Kr\u00e4mer and Ungermann, 2011; L\u00fcrick et al., 2015; Baker et al., 2015; Song et al., 2020). Mammalian HOPS contains the same six subunits as yeast HOPS, which are generally highly conserved and will therefore function similarly (van der Beek et al., 2019; van der Kant et al., 2015). Our structure can hence be used to map disease prone mutations (Figure 4\u2014figure supplement 1) and may thus explain the consequences on HOPS function.\n\nDue to low binding affinities, no structures of tethering complexes bound to Rabs have been solved. Here, we used AlphaFold to predict the interfaces of HOPS with its bound Rab7-like Ypt7 protein to understand the positioning of HOPS during tethering (Figure 3\u2014figure supplement 1). We suspect that this low binding affinity helps tethering complexes to also let go of the Rab when fusion progresses (Figure 4). Even though long coiled-coil tethers such as EEA1 can promote SNARE-mediated membrane fusion (Murray et al., 2016), their cooperation with Rab GTPases in fusion is likely quite different from the mechanism proposed here (Ungermann and K\u00fcmmel, 2019).\n\nSome tethering complexes such as CORVET, CHEVI, or FERARI have attached SM proteins (van der Beek et al., 2019; Solinger et al., 2020), others such as COG, GARP, Exocyst, and Dsl cooperate with SM proteins (Ungermann and K\u00fcmmel, 2019), which may catalyze fusion similar to HOPS. For each of these complexes, in vivo models for their function exist, yet proteoliposome fusion assays in the presence of the required small GTPases are either not available or not yet completely developed (Balderhaar et al., 2013; Ha et al., 2016; Lee et al., 2022; Maib and Murray, 2022; Ren et al., 2009; Rossi et al., 2020; Solinger et al., 2020). We expect that similar approaches as established for HOPS will further support the key role of tethering complexes and reveal their cooperation with SM proteins in SNARE-mediated membrane fusion.\n\nThe overarching principle suggested here for HOPS is not limited to lysosomal fusion but may extend to synaptic transmission, where the tether Munc13 and the SM protein Munc18 cooperatively catalyze the N- to C-terminal zippering of SNAREs during fusion (Lai et al., 2017; Rizo, 2022; Stepien et al., 2022; Stepien and Rizo, 2021). Both Munc18 and Vps33 interact similarly with the N-terminal part of the SNARE domains of the R- and Qa-SNARE and may promote assembly until the central zero-layer of the SNARE domain (Baker et al., 2015; Stepien et al., 2022).\n\nDuring HOPS-mediated fusion, SNARE zippering beyond the zero-layer could then proceed, while the Vps33 lets go of the forming four-helix bundles (Stepien et al., 2022). However, HOPS binds both the N-terminal extensions of the Qa-SNARE Vam3 and other SNAREs, possibly via different binding sites along the HOPS complex (Laage and Ungermann, 2001; L\u00fcrick et al., 2015; Song et al., 2020). This association may thus maintain the force on membranes to catalyze full fusion, even if the SM protein lets go of the assembling SNARE complex (Figure 4). In agreement, HOPS complexes with deficient Vps33 can catalyze fusion of proteoliposomes only if the SNARE density is high (Baker et al., 2015). In turn, vacuoles expressing a Qa-SNARE Vam3 variant lacking the N-terminal extension, which is needed to bind HOPS, show diminished fusion (Laage and Ungermann, 2001). This suggests that HOPS supports SNAREs by templating the association of R- and Qa-SNAREs and by binding the N-terminal regions of SNAREs.\n\nWe believe that the deletion of the \u03b2-propeller in Vps11 or Vps18 result in a similarly deficient HOPS due to a less stable backbone (Figure 3). In either case, coupling between a stable backbone of HOPS and SNARE binding may be impaired and could result in less specific activity as fusion catalysts. Future experiments are required to determine the precise reason for their fusion deficiency.\n\nOverall, our insights provide a novel blueprint to understand HOPS function, dynamics, and regulation both in fusion and in other functions of its subunits (van der Beek et al., 2019; Elbaz-Alon et al., 2014; H\u00f6nscher et al., 2014; Gonz\u00e1lez Montoro et al., 2021; Gonz\u00e1lez Montoro et al., 2018; Wong et al., 2020), and imply a general role of tethering complexes as a catalytic part of the fusion machinery.\n\n## Materials and methods\n\n### Yeast strains\n\nYeast strains used in this study are listed in Supplementary file 1. In general, HOPS subunits were expressed under the control of the GAL1 promoter according to the standard protocol (Janke et al., 2004). For HOPS subunit truncation (Vps41, Vps11, and Vps18) of the N-terminal part, the GAL1 promotor was inserted into the genome at the respective position. The 3x-FLAG Tag was attached to the HOPS subunit Vps41, except for the 18 \u0394N mutant.\n\n### Protein expression and purification from Escherichia coli\n\nRab GTPases for pulldown or tethering and fusion assays were expressed in Escherichia coli BL21 (DE3) Rosetta cells. Cells were grown in Luria broth (LB) medium complemented with 35 \u00b5g/ml kanamycin and 30 \u00b5g/ml chloramphenicol. Cultures were induced at OD600=0.6 with 0.5 mM isopropyl-\u03b2-d-thiogalactoside (IPTG) overnight at 16\u00b0C before harvesting by centrifugation (4800\u00d7g, 10 min, 4\u00b0C). Cells resuspended in buffer (150 mM NaCl, 50 mM HEPES/NaOH, pH 7.4, 10 % glycerol, 1 mM PMSF, and 0.5-fold protease inhibitor mixture [PIC]) were lysed by a Microfluidizer (Microfluidics Inc) and centrifugated at 25,000\u00d7g, 30 min, 4\u00b0C. Supernatants were incubated with glutathione Sepharose (GSH) fast flow beads (GE Healthcare) for GST-tagged proteins or nickel\u2013nitriloacetic acid (Ni-NTA) agarose (Qiagen) for His-tagged proteins for 2 hr at 4\u00b0C. The proteins were eluted with buffer (150 mM NaCl, 50 mM HEPES/NaOH, pH 7.4, 10 % glycerol) containing 25 mM glutathione or 300 mM imidazole. Buffer was exchanged via a PD10 column (GE Healthcare). For tag cleavage, TEV protease was added after washing and incubated overnight. All proteins were stored at \u221280\u00b0C.\n\n### Purification of the 3xFLAG-tagged HOPS complex variants from yeast\n\nTwo liters of yeast peptone (YP) medium containing 2 % galactose (v/v) were inoculated with 6 ml of an overnight culture. Cells were grown for 24 hr and harvested by centrifugation (4800\u00d7g, 10 min, 4\u00b0C). Pellets were washed with cold HOPS purification buffer (HPB, 1 M NaCl, 20 mM HEPES/NaOH, pH 7.4, 1.5 mM MgCl2, and 5% (v/v) glycerol). The pellet was resuspended in a 1:1 ratio (w/v) in HPB supplemented with 1 mM phenylmethylsulfonylfluoride (PMSF), 1\u00d7 FY protease inhibitor mix (Serva) and 1 mM dithiothreitol (AppliChem GmbH) and afterward dropwise frozen in liquid nitrogen before being lysed in a freezer mill cooled with liquid nitrogen (SPEX SamplePrep LLC). The powder was thawed on ice and resuspended in HPB supplemented with 1 mM PMSF, 1\u00d7 FY, and 1 mM DTT using a glass pipette, followed by two centrifugation steps at 5000 and 15,000\u00d7g at 4\u00b0C for 10 and 20 min, respectively. After centrifugation, the supernatant was added to 2 ml of anti-FLAG M2 affinity gel (Sigma-Aldrich) and gently agitated for 45 min at 4\u00b0C on a nutator. Beads were briefly centrifuged (500\u00d7g, 1 min, 4\u00b0C) and the supernatant was removed. Beads were transferred to a 2.5 ml MoBiCol column (MoBiTec) and washed with 25 ml of HOPS washing buffer (HWB, 1 M NaCl, 20 mM HEPES/NaOH, pH 7.4, 1.5 mM MgCl2, and 20% (v/v) glycerol). FLAG-peptide was added and incubated on a turning wheel for 40 min at 4\u00b0C. The eluate was collected by centrifugation (150\u00d7g, 30 s, 4\u00b0C) and concentrated in a Vivaspin 100 kDa MWCO concentrator (Sartorius), which was previously incubated for 45 min with HWB containing 1% TX-100. The concentrated eluate was applied to a Superose 6 Increase 15/150 column (Cytiva) for size exclusion chromatography (SEC) and eluted in 50 \u03bcl fractions using \u00c4KTA go purification system (Cytiva). Peak fractions were used for further analysis.\n\n### Mass photometry\n\nMass photometry experiments were done using a Refeyn TwoMP (Refeyn Ltd). Data were obtained using AcquireMP software and analyzed using DiscoverMP (both Refeyn Ltd). Glass coverslips were used for sample analysis. Perforated silicone gaskets were placed on the coverslips to form wells for every sample to be measured. Samples were evaluated at a final concentration of 10 nM in a total volume of 20 \u03bcl in the buffer used for SEC.\n\n### Cryo-EM sample preparation and data acquisition\n\nPrior to cryo-EM analysis, HOPS samples were tested by negative-stain EM, using 2% (w/v) uranyl formate solution as previously described (Januliene and Moeller, 2021). Negative-stain micrographs were recorded manually on a JEM-2100Plus transmission electron microscope (JEOL), operating at 200 kV and equipped with a XAROSA CMOS 20 Megapixel Camera (EMSIS) at a nominal magnification of 30,000 (3.12 \u00c5 per pixel). For cryo-EM, 3 \u03bcl of 0.6\u20130.9 mg/ml of freshly purified wt HOPS complex were applied onto glow-discharged CF grids (R1.2/1.3) (EMS) and immediately plunge-frozen in liquid ethane using a Vitrobot Mark IV (Thermo Fisher Scientific) with the environmental chamber set to 100% humidity and 4\u00b0C. Micrographs were recorded automatically with EPU (Thermo Fisher Scientific), using a Glacios microscope (Thermo Fisher Scientific) operated at 200 kV and equipped with a Selectris energy filter and a Falcon 4 detector (both Thermo Fisher Scientific). Images were recorded in Electron Event Representation (EER) mode at a nominal magnification of 130,000 (0.924 \u00c5 per pixel) in the defocus range from \u22120.8 to \u22122.8 \u00b5m with an exposure time of 8.30 s resulting in a total electron dose of approximately 50 e\u2212 \u00c5\u22122.\n\n### Cryo-EM image processing\n\nAll cryo-EM data processing (Figure 1\u2014figure supplement 1 ) was performed in cryoSPARC v3.3.1 (Punjani et al., 2017). For all collected movies, patch motion correction (EER upsampling factor 1, EER number of fractions 40) and patch contrast transfer function estimation were performed using cryoSPARC implementations. To solve the structure of the core part of HOPS (Figure 1\u2014figure supplement 1E,F and Figure 1\u2014figure supplement 2) reference-free blob particle picking on 2186 pre-processed movies of the first data set and particle extraction using a box size of 672 pixels (px, 0.924 \u00c5 per pixel) binned to 128 px was performed. Extracted particles were subjected to 2D classification to eliminate bad picks. Selected good 2D classes (representative good 2D classes are shown in Figure 1\u2014figure supplement 3A) were used for template particle picking on 2186 movies from the first data set combined with additional 6580 movies from the second data set, preprocessed alike. After removal of duplicates, picked particles were extracted with the same box size and subjected to rounds of 2D classification, ab-initio reconstruction with multiple classes and 3D heterogeneous refinement to remove false positive particle picks. From the best class, particles were extracted using a box size of 672 px (0.924 \u00c5 per pixel) binned to 320 px and subjected to 2D classification. Particles from this 2D classification were also used for flexibility analysis (see below). 407,996 selected particles from good 2D classes were used for ab-initio reconstruction with six classes and followed by 3D heterogeneous refinement. This heterogeneous refinement resulted in two best classes containing 130,009 and 116,151 particles, respectively, which were further refined individually. For each of both classes, a Non-Uniform (NU)-refinement was performed, followed by particle extraction with a box size of 672 px (0.924 \u00c5 per pixel, without binning) with homogeneous and NU-refinement afterward. Resulting consensus maps were used for local refinements of different parts of the structure (Figure 1\u2014figure supplement 1A, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 3B-E). First consensus NU-refinement that reached global resolution of 4.2 \u00c5 (Fourier shell correlation [FSC]=0.143) was used for local refinements of the upper \u2018core\u2019 part of the complex (4 \u00c5) and the SNARE-binding module (3.6 \u00c5), the second consensus NU-refinement, resolved to 4.4 \u00c5 (FSC=0.143), was used for local refinements resolving bottom parts of the complex (4.4 and 5 \u00c5).\n\nTo better resolve distal parts of the complex, flexible Vps39 and Vps41 N-terminal fragments, the following approach was used (Figure 1\u2014figure supplement 1B). Here, micrographs from the first two data sets were combined with micrographs from two additional data sets of 2841 and 8338 movies. After template picking, about 3896 million particles were extracted using a box size of 882 pixels (0.924 \u00c5 per pixel) and used for rounds of heterogeneous, homogeneous, and NU-refinements to obtain 3D reconstructions, which best resolve Vps39 and Vps41. At these steps, binning was applied for particle extractions. Then, particles belonging to one of such best classes were subjected to a round of NU-refinement followed by 3D variability analyses using masks covering either Vps39 or Vps41. The further 3D variability display procedures were used to better sort particles. Finally, the best particles were extracted with the same box size (882 pixels, 0.924 \u00c5 per pixel) without binning and used for local refinements of Vps39 or Vps41 (Figure 1\u2014figure supplement 1B, Figure 1\u2014figure supplement 3F,G).\n\nFor all local refinements, masks were generated in UCSF Chimera (Pettersen et al., 2004). During processing, no symmetry was applied. The quality of final maps is demonstrated in Extended Data Figure 3. All FSC curves were generated in cryoSPARC. Local resolutions of locally-refined maps (Figure S3B-G) were estimated in cryoSPARC and analyzed in UCSF ChimeraX (Pettersen et al., 2021). Data set statistics can be found in Supplementary file 2.\n\nTo analyze the flexibility of the complex, a different processing scheme was applied (Figure 1\u2014figure supplement 1A, dashed arrows). For this, a set of 383,881 good particles was selected after 2D classification of 320 px-binned particles (initial box size of 672 px with 0.924 \u00c5 per pixel). These particles were subjected to either ab-initio reconstruction and heterogeneous refinement with ten classes (Figure 2\u2014figure supplement 3A,B) or several refinement rounds followed by 3D variability analysis (Figure 2\u2014figure supplement 3D). Prior to 3D variability analysis, ab-initio reconstruction with one class, homogeneous and NU-refinement were performed.\n\n### Model building and refinement\n\nModels of HOPS subunits were initially generated using AlphaFold (Jumper et al., 2021; Varadi et al., 2022) and docked into locally refined maps using \u2018Fit in Map\u2019 tool in UCSF ChimeraX (Pettersen et al., 2021). The N-terminal parts of Vps41 (residues 1\u2013863) and Vps39 (residues 1\u2013700) and the C-terminal part of Vps16 (from residue 739) with no well-resolved densities assigned, were removed. The AlphaFold model of Vps11 was initially split into two parts (\u2018Vps11top\u2019, residues 1\u2013760, and \u2018Vps11bottom\u2019, residues 784\u20131025), which were first refined separately; the region predicted by AlphaFold as unfolded (residues 761\u2013783) was deleted. Fitting of the C-terminal parts of Vps11 (residues 784\u20131025) and Vps39 (residues 701\u20131045) was improved using Namdinator (Kidmose et al., 2019). Afterward, models of single proteins were manually adjusted and refined in COOT (Emsley et al., 2010), followed by iterative rounds of refinements against corresponding locally refined and their composite maps in Phenix (Liebschner et al., 2019) and COOT. In Phenix Graphical User Interface, real space refine tool (Afonine et al., 2018) with or without option \u2018rigid body\u2019 was used. After several refinement rounds, two separate models were created by joining models of the upper (Vps33, Vps16, Vps41, Vps18, and Vps11 top) and lower (Vps11 bottom, Vps39) parts of the complex. These partly combined models were subjected to further several iterations of refinements in Phenix and COOT. Afterward, the two refined models were fused into a single model, which was again refined in Phenix and COOT. Sequences of the model in the bottom part of the complex were changed to polyalanines (residues 784\u20131025 in Vps11, residues 1\u2013493 in Vps18, and residues 701\u20131045 in Vps39), since no assignment of side chains was possible at the resolution obtained there. In other parts of the complex, where blurred densities did not allow unambiguous model building, respective short fragments of the model were also replaced by polyalanine chains or deleted. Afterward, the initially deleted part of Vps11 (residues 761\u2013783) was built de novo according to the cryo-EM density (residues 769\u2013783 were replaced by alanines). Finally, the complete model was subjected to another round of refinement in Phenix followed by manual refining in COOT. Model validation was performed using MolProbity (Williams et al., 2018). Figures were prepared using UCSF ChimeraX. Model refinement and validation statistics can be found in Supplementary file 2.\n\n### ALFA pulldowns for mass spectrometry\n\nOne liter of YP medium containing 2% glucose (v/v) was inoculated with an overnight preculture. Cells were grown to OD600 1 at 26\u00b0C, followed by 1 hr incubation at 38\u00b0C. Cultures were harvested by centrifugation at 4800\u00d7g for 10 min at 4\u00b0C. Pellets were washed with cold Pulldown buffer (PB), 150 mM KAc, 20 mM HEPES/NaOH, pH 7.4, 5% (v/v) glycerol, and 25 mM CHAPS. The pellet was resuspended in a 1:1 ratio (w/v) in PB. supplemented with Complete Protease Inhibitor Cocktail (Roche) and afterward dropwise frozen in liquid nitrogen before lysed in 6875D LARGE FREEZER/MILL (SPEX SamplePrep LLC). Powder was thawed on ice and resuspended in PB by using a glass pipette, followed by two centrifugation steps at 5000 and 15,000\u00d7g at 4\u00b0C for 10 and 20 min. The supernatant was added to 12.5 \u00b5l prewashed ALFA Selector ST beads (2500\u00d7g, 2 min, 4\u00b0C) (NanoTag Biotechnologies) and incubated for 15 min at 4\u00b0C while rotating on a turning wheel. After incubation, beads were washed two times in PB and four times in PB without CHAPS. Samples were digested using PreOmics sample kit (iST Kit, preomics) and analyzed in Q ExativePlus mass spectrometer (Thermo Fisher Scientific).\n\n### GST pulldowns\n\nNucleotide-specific interaction of the Rab-GTPase Ypt7 with purified HOPS variants was analyzed in GST pulldowns using GST-Ypt7 or GST-Ypt1 as a negative control. About 125 \u00b5g purified Rab-GTPases was preloaded with 1 mM GDP or GTP in the presence of 20 mM EDTA and wash buffer (150 mM NaCl, 50 mM HEPES-NaOH, pH 7.4, 2 mM MgCl2, 0.1 % Triton X-100) in a water bath for 30 min at 30\u00b0C. For nucleotide stabilization, 25 mM MgCl2 was added. Prewashed GSH Sepharose 4B (GE Healthcare) was added to loaded Rab-GTPases and incubated for 1 hr at 4\u00b0C on a turning wheel. Beads were centrifuged for 1 min at 300\u00d7g before adding 25 \u00b5g of respective HOPS variants, followed by 1.5 hr incubation at 4\u00b0C on a turning wheel. Beads were washed three times with wash buffer, followed by two elution steps with 600 \u00b5l wash buffer containing 20 mM EDTA. After an incubation at room temperature for 20 min while rotating, the supernatant was TCA precipitated. About 10% of the final sample was loaded on a 7.5% SDS gel next to 5% of protein input. Samples were analyzed via western blot using antibodies against the FLAG-Tag. Beads were boiled in 50 \u00b5l Laemmli buffer. About 2% of the sample was loaded on an 11% SDS gel for Coomassie staining as Rab-GTPase loading control. Bands were quantified relative to the Rab-GTPase content.\n\n### Tethering assay\n\nHOPS-mediated tethering assays were performed as described (F\u00fcllbrunn et al., 2021). For this, ATTO488 labeled liposomes were prepared and loaded with prenylated Ypt7 (Langemeyer et al., 2018). About 50 nmole liposomes was incubated with 50 pmole pYpt7:GDI complex together with GTP for 30 min at 27\u00b0C. For reactions, 0.17 mM Ypt7-loaded liposomes were incubated with different concentrations of HOPS complex or buffer (300 mM NaCl, 20 mM HEPES-NaOH, pH 7.4, 1.5 mM MgCl2, 10 % (v/v) glycerol) for 10 min at 27\u00b0C, followed by sedimentation for 5 min at 1000\u00d7g. The overall tethered liposomes in the pellet fraction were determined in a SpectraMax M3 fluorescence plate reader (Molecular Devices) comparing the ATTO488 fluorescent signal of the supernatant before and after sedimentation.\n\n### Fusion assays\n\nFusion assays and the purification of all proteins were performed as described (Langemeyer et al., 2018) with a protein to lipid ratio of 1:8000. Reconstituted proteoliposomes (RPLs) were composed of the vacuole mimicking lipid (VML) mix (Zick and Wickner, 2014). One population of RPLs carried the SNARE Nyv1 and the other set contained Vti1 and Vam3. RPLs were preloaded with prenylated Ypt7 with the help of 100 mM Mon1-Ccz1 and 0.5 mM GTP (Langemeyer et al., 2018). Then, 25 nM HOPS complex, 50 nM Sec18, 600 nM Sec17, and finally 100 nM Vam7 were added. Fusion of liposomes was followed by content mixing of the RPLs and subsequent increase in fluorescence which was monitored in a SpectraMax M3 fluorescence plate reader (Molecular Devices).\n\n### Cloning and protein purification of CtVPS391-500\n\nCodon-optimized synthetic DNA (GenScript) encoding amino acids 1\u2013500 of Vps39 from C. thermophilum (CtVp391-500; NCBI XP_006691033) was subcloned into a modified pET28a expression vector yielding an N-terminally His6-SUMO-tagged fusion protein (His6-SUMO-CtVps391-500). In short, His6-SUMO-CtVps39 was purified by Ni-NTA affinity chromatography followed by proteolytic cleavage with SUMO protease at 4\u00b0C overnight. SEC was performed to separate CtVps391-500 from the expression tag and SUMO protease and yielded >95% pure protein. To obtain phase information for structure determination, selenomethionine-substituted CtVps391-500 was prepared according to well-established methods (Doubli\u00e9, 1997).\n\n### Limited proteolysis and protein crystallization\n\nSince initial crystallization approaches did not yield protein crystals suitable for X-ray structure determination, flexible parts of CtVps391-500 were removed by limited proteolysis with \u03b1-Chymotrypsin (Merck) at 37\u00b0C for 10 min. Limited proteolysis was stopped by addition of protease inhibitors (Pierce Protease Inhibitor Tablets, EDTA-free, Thermo Fisher Scientific), and an additional SEC in buffer containing 20 mM BIS-TRIS pH 6.5, 200 mM NaCl, and protease inhibitors (1:1000) was performed as a final polishing step. Best crystals were obtained by seeding at 12\u00b0C and a protein concentration of 7.5 mg/ml in a crystallization condition containing 0.1 M MES pH 7.25 and 20% PEG 2000 MME. Selenium-derivative crystals were flash-cooled in liquid nitrogen in latter condition with 25% glycerol as cryoprotectant.\n\n### Crystal structure determination\n\nAnomalous X-ray data were collected from a single crystal at 100K at beamline P13, EMBL Hamburg, Germany and diffraction data were processed using XDSAPP3 (Krug et al., 2012). Phase determination using single-wavelength anomalous dispersion at the selenium peak was not successful. A manually trimmed AlphaFold (Jumper et al., 2021) model of CtVps39 1-500 was used as a search template in molecular replacement and yielded a single solution with a TFZ score of 24.8 in phenix.phaser (Adams et al., 2010; Liebschner et al., 2019; McCoy et al., 2007), which was then used for MR-SAD phasing in phenix.autosol (Adams et al., 2010; Liebschner et al., 2019; Terwilliger et al., 2009) and subsequent density modification and automated model building using phenix.autobuild (Adams et al., 2010; Liebschner et al., 2019; Terwilliger et al., 2009). Iterative cycles of model building in COOT (Emsley et al., 2010) and refinement using phenix.refine (Afonine et al., 2012; Liebschner et al., 2019; Terwilliger et al., 2009) led to a final model of CtVps391-500 with Rfactors of Rwork 26.9% and Rfree 29.8%. The model contained no Ramachandran outliers with 96.74% residues within favored regions. Crystallographic statistics are summarized in Supplementary file 3. PYMOL and UCSF ChimeraX were used for visualization and graphical analysis.\n",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "5a339fe3-17ca-4261-a3a4-441bd6ae4137",
+      "submission_id": "3d56238d-41d6-4d6a-bb0c-3868f0a8b835",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Benjamin S Glick, https://ror.org/024mw5h28 The University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80901.sa0](https://doi.org/10.7554/eLife.80901.sa0)\n\nThis landmark study reports the cryo-EM structure of HOPS, a heterohexameric tether that participates in the fusion of late endosomes, autophagosomes, and AP-3 vesicles with lysosomes. The structure provides a convincing update of earlier, lower-resolution models. Interestingly, the SNARE-binding module is attached to the core of the complex. These results suggest possible mechanisms by which HOPS could catalyze SNARE-dependent fusion.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Benjamin S Glick, https://ror.org/024mw5h28 The University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80901.sa1](https://doi.org/10.7554/eLife.80901.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structure of the lysosomal membrane fusion machinery\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Benjamin S Glick as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Vivek Malhotra as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAll of the reviewers are excited about the novel (and beautiful) structure of HOPS. This advance is a major step forward for the field, and it is especially important because HOPS has been studied so intensively. However, the reviewers are also unanimous in expressing concern about the functional interpretations. The conclusion that HOPS has a rigid core is not adequately justified. This uncertainty, combined with the wobbly membrane connections at the ends of the complex, cast doubt on the idea that HOPS acts as a stiff scaffold to promote fusion. In addition, Reviewer #2 points out that Vps33 is unlikely to remain engaged with the SNAREs as they zipper. Unless the authors can bolster their arguments far more effectively, the manuscript needs to be thoroughly rewritten to remove the unsupported claims.\n\nInstead, the authors are encouraged to mine the structural data for further insights based on novel aspects of the structure, comparisons with other multi-subunit tethers, and fresh interpretations of the extensive literature on HOPS. This manuscript has the potential to be an elegant contribution if the structure is placed in a more appropriate context.\n\nThese suggestions are fleshed out in the detailed comments provided by the reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nThe data are well presented, and I have no detailed recommendations.\n\nReviewer #2 (Recommendations for the authors):\n\nI suspect that the structure itself, with extensively intertwined subunits, is also novel. Overall, the paper is a must-accept for eLife, yet the following points also must be addressed, necessitating substantial re-writing but not requiring additional experiments.\n\nSome questions about the paper and its presentation:\n\n1. Repeated claims are made about which parts of the structure are flexible and which are rigid, yet there are no measurements of structural bending vs force applied ie, rigidity. If parts of the structure showed little variability among the many images analyzed, I presume that this was taken as a measure of rigidity; is there literature to support this, and if so it should be cited and discussed. How do the imputed bending energies compare to the binding energies for the things which bind to HOPS, such as Ypt7 and the SNAREs?\n\n2. The model appears to claim that Vps33 would bind Nyv1 and Vam3 and then Vps33 will continue to be engaged with the SNAREs as the SNAREs zipper. What is the basis for this claim? Conventional thought is that each of these SNAREs is bound to a site on Vps33 with their R or Q residue and the apolar heptad repeat residues facing \"in\" to the binding site, in parallel and in the register as presented in 2015 by Baker et al., but that for zippering to proceed these side chains will have to leave these sites and face each other in the center of the 4-helical 4-SNARE coiled coils.\n\nThe structure of HOPS certainly is in accord with its well-established function as a tether and shows that Vps33 is off to the side between the two Ypt7 binding sites, Vps39 and Vps41, well-positioned to engage SNAREs to perform their alignment. It's unclear how the structure goes beyond that functionally. This is not to diminish the beauty and novelty of the structure, but to question their repeated claims that the structure now reveals substantial new insights about function.\n\n3. Figures 1 and 2 are models of clarity and elegance.\n\n4. With all respect for the effort that went into the Figure 3 experiment, it adds little to the paper or to mechanistic understanding. Unsurprisingly, the deletion in Vps41 blocks both tethering and fusion, while the deletions in Vps11 and 18 block fusion but not tethering. Figure 3 simply suggests that there's more to HOPS than a rigid structure and 3 active sites, one with Sec1/Munc18 function and two for tethering by means of binding Ypt7.\n\n5. Readers will want to know whether Vps39 and 41 structures are similar to structures of other proteins that bind stoichiometrically to Rabs. Are there other proteins with a similar overall structure as the HOPS structure presented here, or is this extended structure with extensively interdigitated chains unique? Substantial additional discussion to place this structure in the context of others would build on the core of the paper, the determination of HOPS structure.\n\n6. An earlier structure of crosslinked HOPS from this group proposed that each of the 6 subunits had an overall globular fold and that these subunits had binding surfaces adjacent to each other. In contrast, the current structure shows that there is extensive interdigitation of the subunits. Is this seen for many other proteins?\n\n7. The claim that \"HOPS complexes lacking \u03b2-propellers in Vps11 or Vps18 showed an alteration in the relative orientation of Vps39 within the complex, which indicates a more flexible backbone, indicating that backbone integrity is essential for full HOPS activity\" (lines 207 to 209) is particularly puzzling. There are no data about whether these deletions are more or less flexible, and it's unclear how this can be inferred from an altered Vps39 orientation. There are no data showing that the loss of HOPS activity is caused by loss of rigidity.\n\nThe paper should be re-written to remove claims that it reveals new aspects of function or of rigidity but should emphasize that this is a novel structure.\n\nReviewer #3 (Recommendations for the authors):\n\nWith regard to the structural analyses, it would be useful to speculate on the possible cause(s) for the difference between this structure and previous lower resolution structures, perhaps illuminating some additional (perhaps biologically relevant?) differences? Is the rigid structure shown in this manuscript the only one possible for HOPS? Or are there additional conformations accessible in vivo that are not represented with this purified cryoEM sample? Does the fact that HOPS was massively overexpressed for purification indicate that certain post-translational modifications may not be present?\n\nAre the resolution and map really suitable to accurately model the RING finger domain residues (Figure 2 and Figure 2-S1), or to map disease-associated mutations (Figure 4-S1)?\n\nIn Figure 3-S1 and the text, how good is the evidence that these Ypt7 binding sites predicted by Alphafold are accurate, especially as the location does not make a lot of biological sense with the location of the ALPS motif and membrane binding of Ypt7?\n\nThe authors' focus on the \"rigid core\" of HOPS, with respect to how this could help facilitate SNARE-mediated fusion, is a bit unclear, especially with the noted flexibility of both the Vps39 and Vps41 ends. Also, it is unclear how to interpret the angle differences of these flexible regions, in terms of overall length changes and possible changes during the tethering and fusion reactions.\n\nWith regard to this rigid core, the claim is that a number of helices \"are tightly interlocked through coiled-coil motifs\" (Line 127, Page 8), but the images in Figure 2 do not appear to be particularly interlocked or tight. Perhaps a calculation of buried surface might support this description?\n\nInterpretation of the negative stain images in Figure 3D (especially with vps18-deltaN) is not entirely convincing, especially as the gel in Figure 1-S4 seems to indicate that Vps41 is missing from the vps18-deltaN pulldown? Were these mutants analyzed by mass spectrometry (similar to that for the RING finger mutants in Figure 2-S2?)? It would also be helpful to speculate more mechanistically about why these complexes can tether, but not drive fusion.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Structure of the HOPS tethering complex, a lysosomal membrane fusion machinery\" for further consideration by eLife. Your revised article has been evaluated by Vivek Malhotra (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but the reviewers are not yet fully satisfied with the changes. They ask that claims of rigidity either be backed up with solid evidence or else presented as untested speculation, and that claims that this study tells us about how HOPS works be removed from earlier parts of the manuscript and moved to the Discussion as a model.\n\nBelow are the comments of the three reviewers. These issues need to be addressed for publication in eLife.Reviewer #1 (Recommendations for the authors):\n\n\u2013 While the authors are free to propose their favored interpretations, you need to separate speculation from evidence-based interpretation.\n\n\u2013 Rigidity has a well-defined meaning as resistance to deformation induced by stress. Nothing in this study measures rigidity. The central core of HOPS may be conformationally stable to thermal fluctuations as an isolated complex, but there is no way to predict how resistant it would be to deformation when stressed by a process such as SNARE zippering.\n\n\u2013 The authors propose that Vps33 lets go of the SNAREs during zippering but that due to other interactions, HOPS remains tightly enough associated with the SNAREs to promote fusion. That idea might be correct but no experimental support is provided, so it is a weak link in the model.\n\n\u2013 Another weak link is that the flexibility of the Ypt7-binding ends of HOPS are still challenging to reconcile with the idea that HOPS is a rigid scaffold.\n\n\u2013 The bottom line is that as before, this study represents a major advance by describing a high-quality structure of HOPS. But the authors need to take seriously our request to separate speculation from interpretation, and to tone down the conclusion that this structure has revealed a new mechanism.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors clearly thought that his manuscript only needed a few minor tweaks, and didn't do a thorough re-write or come to grips with our central points.\n\nUngermann and his colleagues are still confusing protein stability with rigidity. Well-resolved parts of structures must be stable, but may or may not be rigid, the former term referring to the energy needed to unfold, either locally or globally, the latter to the energy needed to deform conformation. The data give no indication on rigidity, while the authors strongly leans on rigidity in speculations about HOPS function. Ungermann hasn't addressed this at all, and the two references he cites in his reviewers responses are neither cited nor discussed in the revised manuscript.\n\nThe Abstract remains sadly misleading, stating that \"HOPS is surprisingly rigid\" and \"The SNARE binding module is rigidly attached to the core..\" (see above). The last sentence, \"Our results explain HOPS dual functionality and unravel why tethering complexes are \u2026essential\u2026fusion\" is therefore very inaccurate.\n\nThere are no data on rigidity, as opposed to which regions of HOPS fold stably, but the manuscript persists in this vein. At the bottom of p6, they state \"..it was unknown how tethering and fusion activities of HOPS are linked mechanistically. To clarify this\u2026\" but what follows addresses what a tethering structure of HOPS binding its Rab might look like through predictions and modeling. This doesn't address how \"tethering and fusion activities of HOPS are linked mechanistically\".\n\nThey show that removing the \u03b2-propeller of Vps41 alters HOPS structure, but confuse this with an altered rigidity.\n\nThe last paragraph before the Discussion is speculation and should be explicitly labeled as such and put in the Discussion. They present no evidence of HOPS continued association with the SNAREs as zippering proceeds. Their speculative model wasn't altered at all, and still shows Vps33 associating with the SNAREs as zippering progresses, though he acknowledges that this is very unlikely.\n\nIn short, the authors didn't take our reviews seriously. Re-reading the decision letter now, it was very clear that we wanted a thorough re-write, but we didn't get it.\n\nI suggest that we return the paper to the authors, and that they take our reviews to heart and thoroughly re-write this paper.\n\nReviewer #3 (Recommendations for the authors):\n\nOverall, I am still excited about this structure, and what it suggests for how tethering complexes can function. However, although some good changes have been made to the revised version, some of the conclusions are more speculative than the text would suggest.\n\nSome of the changes in the revision still do not adequately address all the reviewers' concerns. Most importantly, the idea of the central core being \"rigid\" is clearly supported by lack of other conformations in the cryoEM data, but that conclusion is still speculative with regard to the conformation during the fusion reaction in vivo, and needs to be softened a bit in the text. The fact that other conformations are not observed in the structure indicates that the purified complex under these conditions does not seem flexible. However, the structure may just represent the lowest energy, stable state. The data does not indicate that this region is \"rigid\" in a way that suggests that it cannot bend under other conditions, e.g. in vivo. Certainly future experiments will help understand this, but the readers should not come away with this idea as definitive.\n\nAlthough a little more information regarding other tethering complexes/membrane fusion machinery was added, it still is likely to be more relevant for a specialized readership, not a broad eLife audience.\n\nThis previous concern was not addressed: \"With regard to the structural analyses, it would be useful to speculate on the possible cause(s) for the difference between this structure and previous lower resolution structures, perhaps illuminating some additional (perhaps biologically relevant?) differences?\" It is unclear how improvements and acceleration in the sample preparation helped yield a \"rigid\" molecule vs. previous studies.\n\n\"In Figure 3-S1 and the text, how good is the evidence that these Ypt7 binding sites predicted by Alphafold are accurate, especially as the location does not make a lot of biological sense with the location of the ALPS motif and membrane binding of Ypt7?\" For this concern, I respectfully disagree that all Alphafold predictions are that accurate, especially if the biological conclusion is unclear, and this speculation should be better explained or the conclusion softened.\n",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ca6d6713-d9af-4891-947b-80746249692e",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C1",
+      "claim": "Lysosomes are essential for cellular recycling, nutrient signaling, autophagy, and pathogenic bacteria and viruses invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysosomes are essential for cellular recycling, nutrient signaling, autophagy, and pathogenic bacteria and viruses invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about lysosome functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "4f16cabe-8145-434b-844e-6ea99a673bac",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C2",
+      "claim": "Lysosomal fusion is fundamental to cell survival and requires HOPS, a conserved heterohexameric tethering complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysosomal fusion is fundamental to cell survival and requires HOPS, a conserved heterohexameric tethering complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field and citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "7f16008b-9bd1-4652-85e2-1dbdfdfba364",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C3",
+      "claim": "On the membranes to be fused, HOPS binds small membrane-associated GTPases and assembles SNAREs for fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "On the membranes to be fused, HOPS binds small membrane-associated GTPases and assembles SNAREs for fusion, but how the complex fulfills its function remained speculative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research cited in the manuscript and the experimental data presented.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "dd3dd8f1-51b7-4e32-b5db-c7a350ae0144",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C4",
+      "claim": "Cryo-electron microscopy was used to reveal the structure of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used cryo-electron microscopy to reveal the structure of HOPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the cryo-EM methodology and presents structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "2033583a-8b89-4669-989f-efa205effe33",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C5",
+      "claim": "Significant flexibility of HOPS is confined to its extremities, where GTPase binding occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike previously reported, significant flexibility of HOPS is confined to its extremities, where GTPase binding occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryo-EM structural analysis and 3D variability analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "8398726f-9696-47ff-98ce-4b4cae9454fa",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C6",
+      "claim": "The SNARE-binding module is firmly attached to the core of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNARE-binding module is firmly attached to the core, therefore, ideally positioned between the membranes to catalyze fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the high-resolution cryo-EM structure showing stable connections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "f237bf9c-7e17-420d-baaa-30e3ede57499",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C7",
+      "claim": "Lysosomal fusion is essential in the maintenance and upkeep of eukaryotic membranes and fundamental to secretion, endocytosis, and autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysosomal fusion underlies a plethora of cellular processes. It is essential in the maintenance and upkeep of eukaryotic membranes and fundamental to secretion, endocytosis, and autophagy (Saftig and Puertollano, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "b7e4a9d1-cd2f-41c6-96f0-43d34e1eaeab",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C8",
+      "claim": "Macromolecules from different trafficking pathways end up in lysosomes where they are degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "Macromolecules from different trafficking pathways end up in lysosomes where they are degraded (Klionsky et al., 2021; Saftig and Puertollano, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "80328065-49ef-4751-90b6-720d292b08e3",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C9",
+      "claim": "Fusion depends on SNAREs, which are present on opposite membranes and zipper into four-helix bundles with the help of Sec1/Munc1 (SM) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, fusion depends on SNAREs, which are present on opposite membranes and zipper into four-helix bundles with the help of Sec1/Munc1 (SM) proteins (Jahn and Fasshauer, 2012; S\u00fcdhof and Rothman, 2009; Wickner and Rizo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "81a4bf3d-3220-443b-a4f5-e94b05549634",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C10",
+      "claim": "Each assembled SNARE complex contains three Q-SNAREs (Qa, Qb, and Qc) and one R-SNARE.",
+      "claim_type": "EXPLICIT",
+      "source": "Each assembled SNARE complex contains three Q-SNAREs (Qa, Qb, and Qc) and one R-SNARE, which are categorized according to the interaction of the glutamine and arginine residues in the central hydrophilic layer of the otherwise hydrophobic interfaces within the SNARE complex (Jahn and Fasshauer, 2012; S\u00fcdhof and Rothman, 2009; Wickner and Rizo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on SNARE complexes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "7682b30f-ce3d-4d4f-8366-9c92a5fd07a0",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C11",
+      "claim": "Prior to fusion, specialized tethering complexes establish tight links between organelles and interact with SM proteins to promote fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to fusion, specialized tethering complexes establish tight links between organelles and interact with SM proteins to promote fusion (Baker and Hughson, 2016; Kuhlee et al., 2015; Ungermann and K\u00fcmmel, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "0d07f7ff-94b2-407b-ae35-5a10f0c5d3e2",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C12",
+      "claim": "The heterohexameric HOPS complex mediates fusion of late endosomes, autophagosomes, and AP-3 vesicles with mammalian lysosomes or vacuoles in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterohexameric HOPS complex mediates fusion of late endosomes, autophagosomes, and AP-3 vesicles with mammalian lysosomes or vacuoles in yeast (van der Beek et al., 2019; Spang, 2016; Wickner and Rizo, 2017), and is probably the best-studied tethering complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "0fbf7ed1-ace8-417f-9af5-626c9d4e2625",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C13",
+      "claim": "Fusion assays using yeast vacuoles or reconstituted SNARE-bearing proteoliposomes showed that HOPS is essential for membrane fusion at physiological SNARE concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion assays using yeast vacuoles or reconstituted SNARE-bearing proteoliposomes showed that HOPS is essential for membrane fusion at physiological SNARE concentrations (D'Agostino et al., 2017; Mima et al., 2008; Zick and Wickner, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "433beac8-1b80-4c5e-9eed-85acbc5d2563",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C14",
+      "claim": "HOPS is the target of viruses such as SARS-CoV2.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS is the target of viruses such as SARS-CoV2 (Miao et al., 2021), and its inactivation blocks Ebola infections (Carette et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "fbd4faf4-e0a6-4897-9e4d-3ba68e40e666",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C15",
+      "claim": "Inactivation of HOPS blocks Ebola infections.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS is the target of viruses such as SARS-CoV2 (Miao et al., 2021), and its inactivation blocks Ebola infections (Carette et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "88d067f4-4a2e-471e-9826-cfe3e46878ad",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C16",
+      "claim": "Multiple HOPS mutations can cause severe diseases ranging from Parkinson's to lysosomal disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, multiple HOPS mutations can cause severe diseases ranging from Parkinson's to lysosomal disorders (van der Beek et al., 2019; Sanderson et al., 2021; van der Welle et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "6a3a90c1-b36c-4305-ad95-ddcef0d5cf7d",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C17",
+      "claim": "Five out of six HOPS subunits (Vps11, Vps16, Vps18, Vps39, and Vps41) are predicted to share a similar architecture, comprising an N-terminal \u03b2-propeller and a C-terminal \u03b1-solenoid domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Five out of six HOPS subunits (Vps11, Vps16, Vps18, Vps39, and Vps41) are predicted to share a similar architecture, comprising an N-terminal \u03b2-propeller and a C-terminal \u03b1-solenoid domain (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural predictions and is illustrated in Figure 1A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "91bda4e3-b4f3-4116-80dd-387e9c89b6fd",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C18",
+      "claim": "Vps11 and Vps18 form the core and carry conserved C-terminal RING finger domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps11 and Vps18 form the core and carry conserved C-terminal RING finger domains (Rieder and Emr, 1997), which are essential for HOPS formation (Hunter et al., 2017), but also show E3 ligase activity on their own (Segala et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "8e157164-d2f8-4a99-805e-68cf0a7afa84",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C19",
+      "claim": "The RING finger domains of Vps11 and Vps18 are essential for HOPS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps11 and Vps18 form the core and carry conserved C-terminal RING finger domains (Rieder and Emr, 1997), which are essential for HOPS formation (Hunter et al., 2017), but also show E3 ligase activity on their own (Segala et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "a6e41661-8e93-4a4c-8e96-73d73d1e5f04",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C20",
+      "claim": "The RING finger domains of Vps11 and Vps18 show E3 ligase activity on their own.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps11 and Vps18 form the core and carry conserved C-terminal RING finger domains (Rieder and Emr, 1997), which are essential for HOPS formation (Hunter et al., 2017), but also show E3 ligase activity on their own (Segala et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "88eadbb3-6001-4dbc-9ce9-e0638a7d6112",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C21",
+      "claim": "Vps41 and Vps39 bind to membrane-anchored small GTPases (the Rab7-like Ypt7 in yeast).",
+      "claim_type": "EXPLICIT",
+      "source": "At the opposite sites, Vps41 and Vps39 bind to membrane-anchored small GTPases (the Rab7-like Ypt7 in yeast) (Br\u00f6cker et al., 2012; L\u00fcrick et al., 2017; Ostrowicz et al., 2010), while Vps16 and the SM protein Vps33 establish the SNARE-binding module (Baker et al., 2015; Graham et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "bd439d86-5b41-43f4-be42-382967ad6532",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C22",
+      "claim": "Vps16 and the SM protein Vps33 establish the SNARE-binding module.",
+      "claim_type": "EXPLICIT",
+      "source": "At the opposite sites, Vps41 and Vps39 bind to membrane-anchored small GTPases (the Rab7-like Ypt7 in yeast) (Br\u00f6cker et al., 2012; L\u00fcrick et al., 2017; Ostrowicz et al., 2010), while Vps16 and the SM protein Vps33 establish the SNARE-binding module (Baker et al., 2015; Graham et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "9fcbc9d3-a762-4cf3-8a62-6ee9a984704b",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C23",
+      "claim": "Low-resolution negative-stain electron microscopy (EM) analyses revealed the overall arrangement of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-resolution negative-stain electron microscopy (EM) analyses revealed the overall arrangement of HOPS (Br\u00f6cker et al., 2012; Chou et al., 2016), yet were insufficient to localize the exact position of its subunits and suggested significant flexibility within the particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "e3d75d56-a78f-4292-ac72-a0072bb25159",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C24",
+      "claim": "Previous negative-stain EM analyses were insufficient to localize the exact position of HOPS subunits and suggested significant flexibility within the particle.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-resolution negative-stain electron microscopy (EM) analyses revealed the overall arrangement of HOPS (Br\u00f6cker et al., 2012; Chou et al., 2016), yet were insufficient to localize the exact position of its subunits and suggested significant flexibility within the particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research and contrasts with the current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "f39c73fd-6078-4d4b-9b45-afb4ce207d3d",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C25",
+      "claim": "HOPS forms a largely extended, slender structure extending approximately 430 \u00c5 in height and 130 \u00c5 in width, resembling a triangular shape.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS forms a largely extended, slender structure extending approximately 430 \u00c5 in height and 130 \u00c5 in width, resembling a triangular shape (Figure 1E\u2013G, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "0698e0ad-f270-43fc-bbf7-151528dc7288",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C26",
+      "claim": "In the center of the modular complex, Vps11 and Vps18 align antiparallel through their elongated \u03b1-solenoids, establishing a large interface area of 1972 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "In the center of the modular complex, Vps11 and Vps18 align antiparallel through their elongated \u03b1-solenoids, establishing a large interface area of 1972 \u00c52 (Figure 1E-G, Figure 2, Figure 2\u2014figure supplement 4), which resulted in the highest resolution obtained within HOPS (Figure 1\u2014figure supplement 3) and is comparable with protein interfaces in other complexes with similar structural elements as in HOPS (e.g. Kschonsak et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure and quantified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "cdc7f640-8b0c-40db-b598-617bdf4db0f4",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C27",
+      "claim": "AlphaFold predicts a long unstructured region within Vps11 (Q760 to D784), resulting in an upper and lower part of the subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AlphaFold predicts a long unstructured region within Vps11 (Q760 to D784), resulting in an upper and lower part of the subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on AlphaFold predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "578facb4-aa79-4e45-bc28-99a019382f19",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C28",
+      "claim": "The region predicted by AlphaFold as unstructured in Vps11 (Q760 to D784) is clearly resolved and organized in the cryo-EM density.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this region is clearly resolved and organized in our density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the cryo-EM structure, contradicting the AlphaFold prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "ba1efb8e-11b7-4954-89bb-a00ed763771b",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C29",
+      "claim": "The two core subunits (Vps11 and Vps18) create a central assembly hub for the four other subunits (Vps39, Vps41, Vps16, and Vps33) that fulfill specific functions and localize to the periphery of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the two core subunits create a central assembly hub for the four other subunits (Vps39, Vps41, Vps16, and Vps33) that fulfill specific functions and localize to the periphery of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural model derived from cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "5230e802-7943-4475-a96e-c74e948b92e8",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C30",
+      "claim": "The N-termini of Vps11 and Vps18 are located distally from the core and each carries a \u03b2-propeller, which can be deleted without affecting the complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-termini of Vps11 and Vps18 are located distally from the core and each carries a \u03b2-propeller, which can be deleted without affecting the complex formation (Figure 3A and D, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing that deletion mutants still form complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "6f10f33d-5d9d-4a48-a16c-a0692f4239c9",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C31",
+      "claim": "At the C-termini, both Vps11 and Vps18 have long \u03b1-helices which are followed by RING finger domains.",
+      "claim_type": "EXPLICIT",
+      "source": "At the C-termini, both Vps11 and Vps18 have long \u03b1-helices which are followed by RING finger domains (Figures 1E\u2013G\u20132A and B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "99b71104-bec2-40af-8840-d33041bc4b61",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C32",
+      "claim": "The long \u03b1-helices and RING finger domains at the C-termini of Vps11 and Vps18 are key elements for the stability of the modular architecture and serve as anchor points for the additional subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Both features are key elements for the stability of the modular architecture and serve as anchor points for the additional subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and supported by mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "904c7b97-40c2-4f66-88c2-fc91aa9da658",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C33",
+      "claim": "HOPS carrying mutations in the RING finger domains of Vps11 (vps11-1) selectively lost Vps39.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, HOPS, carrying mutations in the RING finger domains of Vps11 (vps11-1) (Peterson and Emr, 2001), selectively lost Vps39, whereas only Vps41 was obtained from a similar Vps18 mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from mutant analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "fc6bcd63-1fb9-465b-9b67-8ef5ff2dd503",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C34",
+      "claim": "HOPS carrying mutations in the RING finger domains of Vps18 selectively lost Vps41.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, HOPS, carrying mutations in the RING finger domains of Vps11 (vps11-1) (Peterson and Emr, 2001), selectively lost Vps39, whereas only Vps41 was obtained from a similar Vps18 mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "cb3bf22f-4161-4037-beb7-78c263f0ed71",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C35",
+      "claim": "Vps41 and Vps39 provide the Ypt7-interaction sites at their peripheral N-terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps41 and Vps39 provide the Ypt7-interaction sites at their peripheral N-terminal regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research and AlphaFold predictions discussed in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "b5704856-87c7-453d-85d7-043508243907",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C36",
+      "claim": "The extended C-terminal helices of Vps41 and Vps39 are tightly interlocked through coiled-coil motifs with the long C-terminal \u03b1-helices and RING finger domains from the respective core subunits (Vps41 with Vps18, and Vps39 with Vps11).",
+      "claim_type": "EXPLICIT",
+      "source": "Their extended C-terminal helices, similar to those of Vps11 and Vps18, are tightly interlocked through coiled-coil motifs with the long C-terminal \u03b1-helices and RING finger domains from the respective core subunits (Vps41 with Vps18, and Vps39 with Vps11) (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "9579596a-51df-4bd8-8afc-4ed86d1567b7",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C37",
+      "claim": "Additional stability of Vps39 within the complex is provided by the interaction of the long \u03b1-helix at the C-terminus of Vps39 with the \u03b2-propeller of Vps18.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional stability of Vps39 within the complex is provided by the interaction of the long \u03b1-helix at the C-terminus of Vps39 with the \u03b2-propeller of Vps18 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "a2096599-de3b-455c-a5f8-d814a5624f31",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C38",
+      "claim": "Peripheral portions of both Vps41 and Vps39 are least well resolved indicating their considerable flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "In our density, peripheral portions of both Vps41 and Vps39 are least well resolved indicating their considerable flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the resolution of the cryo-EM density maps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "e770d3f1-a5f1-4188-b9d6-bc9997c7c769",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C39",
+      "claim": "Multi-modular classification analyses revealed angular re-orientations of about 9\u00b0 for Vps41 and 20\u00b0 for Vps39 relative to the core.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-modular classification analyses revealed angular re-orientations of about 9\u00b0 for Vps41 and 20\u00b0 for Vps39 (Figure 2\u2014figure supplement 3A-D) relative to the core, resulting in variable positions of the N-terminal \u03b2-propellers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on 3D classification and variability analysis of the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "7e1b3e3e-ad61-4837-bb25-2f03419f2ae9",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C40",
+      "claim": "Vps41 reaches out by approximately 100 \u00c5 in length at the top of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "At the top, Vps41 reaches out by approximately 100 \u00c5 in length and, similarly, Vps39 forms an elongated arch at the bottom (Figure 1E\u2013G), positioning both Ypt7-interacting units at the farthest ends of the complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "ab548b84-14cb-4079-af15-d82d95fab830",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C41",
+      "claim": "Vps39 forms an elongated arch at the bottom of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "At the top, Vps41 reaches out by approximately 100 \u00c5 in length and, similarly, Vps39 forms an elongated arch at the bottom (Figure 1E\u2013G), positioning both Ypt7-interacting units at the farthest ends of the complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "f85cca3a-ebf8-4840-a34d-e123a6f19645",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C42",
+      "claim": "The SNARE-binding element, composed of Vps16 and the SM protein Vps33, branches out to the lateral side of the complex approximately at the center of the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNARE-binding element, composed of Vps16 and the SM protein Vps33, branches out to the lateral side of the complex approximately at the center of the structure (Figures 1E\u2013G\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "ac638a07-f978-489b-b686-41c2afbc3e28",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C43",
+      "claim": "Vps16 shares a large interface with the coiled-coil motif formed by Vps18 and Vps41 and the N-terminus of Vps18, which is stabilized through interactions between hydrophobic and charged residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps16 shares a large interface with the coiled-coil motif formed by Vps18 and Vps41 and the N-terminus of Vps18, which is stabilized through interactions between hydrophobic and charged residues (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "9e259f7d-c818-410a-bceb-b89a7426402f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C44",
+      "claim": "Vps33 is in immediate contact with the structured loop of Vps18 (residues 824\u2013831) that connects the elongated helix with the RING finger domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps33 is in immediate contact with the structured loop of Vps18 (residues 824\u2013831) that connects the elongated helix with the RING finger domain (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "830e47b9-295e-497b-8470-b52027cbd60e",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C45",
+      "claim": "Mutations at RING domains result in devastating human diseases and HOPS dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "This, as well as the role of RING finger domains in the interlocking of other subunits, explains, why mutations at RING domains result in devastating human diseases and HOPS dysfunction (van der Beek et al., 2019; Edvardson et al., 2015; Robinson et al., 1991; van der Welle et al., 2021; Zhang et al., 2016) and cause failure of correct HOPS assembly (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on disease-causing mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "17a4a5dd-b58d-4c9e-9202-2e0adf162073",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C46",
+      "claim": "Mutations at RING domains cause failure of correct HOPS assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "This, as well as the role of RING finger domains in the interlocking of other subunits, explains, why mutations at RING domains result in devastating human diseases and HOPS dysfunction (van der Beek et al., 2019; Edvardson et al., 2015; Robinson et al., 1991; van der Welle et al., 2021; Zhang et al., 2016) and cause failure of correct HOPS assembly (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "16cbf27e-a34a-49c0-a5c7-c4f74b9226e2",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C47",
+      "claim": "The SNARE binding module appears to be stably connected to the central core.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the SNARE binding module appears to be stably connected to the central core, while only the short C-terminal section of Vps16 \u03b1-solenoid (residues 739\u2013798) displays high variability and is not resolved in our structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high resolution of this region in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "b6e33b3f-b17b-4b48-a32b-ba0496be9d5f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C48",
+      "claim": "Only the short C-terminal section of Vps16 \u03b1-solenoid (residues 739\u2013798) displays high variability and is not resolved in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the SNARE binding module appears to be stably connected to the central core, while only the short C-terminal section of Vps16 \u03b1-solenoid (residues 739\u2013798) displays high variability and is not resolved in our structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the cryo-EM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "2224edd2-271a-4dd6-a8d3-03c96b7e9bf4",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C49",
+      "claim": "Reconstituted vacuole fusion is strictly HOPS and Ypt7-dependent at physiological SNARE concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstituted vacuole fusion is strictly HOPS and Ypt7-dependent at physiological SNARE concentrations (Langemeyer et al., 2018; Zick and Wickner, 2016), suggesting that HOPS is not just a tether, but part of the fusion machinery (Baker et al., 2015; Wickner and Rizo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "122910db-99d9-44e5-a26b-4c55657f5dc2",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C50",
+      "claim": "HOPS is not just a tether, but part of the fusion machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstituted vacuole fusion is strictly HOPS and Ypt7-dependent at physiological SNARE concentrations (Langemeyer et al., 2018; Zick and Wickner, 2016), suggesting that HOPS is not just a tether, but part of the fusion machinery (Baker et al., 2015; Wickner and Rizo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experimental data and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "294a7564-bd3a-4328-b47f-b1d8a6cd3a02",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C51",
+      "claim": "The intrinsic low affinity between HOPS and Ypt7 prevented reconstitution of the complex for structural studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsic low affinity between HOPS and Ypt7 (L\u00fcrick et al., 2017) prevented reconstitution of the complex for structural studies, therefore, we instead relied on AlphaFold predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation that led to the use of AlphaFold predictions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "503aa74b-628f-45ce-9e1c-0306d998b96d",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C52",
+      "claim": "The structure of the \u03b2-propeller of Chaetomium thermophilum Vps39 was solved by X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we solved the structure of the \u03b2-propeller of Chaetomium thermophilum Vps39 by X-ray crystallography, which largely confirmed the predicted model (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from X-ray crystallography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "dd9d886b-d6c2-4b76-bd17-a68b94bdf5a9",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C53",
+      "claim": "The crystal structure of C. thermophilum Vps39 \u03b2-propeller largely confirmed the AlphaFold predicted model.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we solved the structure of the \u03b2-propeller of Chaetomium thermophilum Vps39 by X-ray crystallography, which largely confirmed the predicted model (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of experimental and predicted structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "4db95e9a-c368-4fdf-92e3-2a57c7ed79ac",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C54",
+      "claim": "In the AlphaFold model, Ypt7 binding occurs at the \u03b1-solenoid of Vps39 where it does not directly interact with the \u03b2-propeller.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in the AlphaFold model, Ypt7 binding occurs at the \u03b1-solenoid of Vps39 where it does not directly interact with the \u03b2-propeller (Figure 3\u2014figure supplement 1C), as originally expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on AlphaFold predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "382012cb-d4b3-4472-9873-cb799f87b68d",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C55",
+      "claim": "The binding site on Vps39 is placed approximately 5\u20136 nm above the membrane if Ypt7-anchored HOPS is in an upright position on supported lipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the binding site on Vps39 is placed approximately 5\u20136 nm above the membrane if Ypt7-anchored HOPS is in an upright position on supported lipid bilayers (F\u00fcllbrunn et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model and prior experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "f2f8dd7d-aaf2-496b-ae8f-23d422f4d492",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C56",
+      "claim": "Membrane-bound Ypt7 can reach the binding site on Vps39 due to its 10 nm long hypervariable domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane-bound Ypt7 can still reach this site due to its 10 nm long hypervariable domain (not shown in the prediction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from knowledge of Ypt7 structure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "8cb6b6af-4714-4796-87ef-0291db122b3f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C57",
+      "claim": "In the predicted complex of Vps41 with Ypt7, the GTPase binds directly to the Vps41 \u03b2-propeller on the opposite side from the membrane-interacting ALPS motif.",
+      "claim_type": "EXPLICIT",
+      "source": "In the predicted complex of Vps41 (residues 1\u2013919) with Ypt7 (residues 1\u2013185), the GTPase binds directly to the Vps41 \u03b2-propeller, as anticipated. However, it interacts on the opposite side from the membrane-interacting amphipathic lipid-packing sensor (ALPS) motif (Cabrera et al., 2010; Figure 3\u2014figure supplement 1B), suggesting that the hypervariable region of Ypt7 is required for binding, in analogy to Vps39.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on AlphaFold predictions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "f98d08f6-9dae-4e3d-a927-3e084cefac63",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C58",
+      "claim": "The hypervariable region of Ypt7 is required for binding to Vps41.",
+      "claim_type": "EXPLICIT",
+      "source": "In the predicted complex of Vps41 (residues 1\u2013919) with Ypt7 (residues 1\u2013185), the GTPase binds directly to the Vps41 \u03b2-propeller, as anticipated. However, it interacts on the opposite side from the membrane-interacting amphipathic lipid-packing sensor (ALPS) motif (Cabrera et al., 2010; Figure 3\u2014figure supplement 1B), suggesting that the hypervariable region of Ypt7 is required for binding, in analogy to Vps39.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the AlphaFold model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "8ebdc44f-7a2b-46d9-ac92-6735e7b0c9da",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C59",
+      "claim": "The distal region of Vps41 displays substantial flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted, however, that this distal region of Vps41 (Figure 3\u2014figure supplement 1B) displays substantial flexibility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "d15d87fe-53a4-42eb-af18-85c787e02e52",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C60",
+      "claim": "Vps39 binds Ypt7 far stronger than Vps41.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps39 binds Ypt7 far stronger than Vps41 (Auffarth et al., 2014; L\u00fcrick et al., 2017), and may be assisted by Vps18 to sandwich Ypt7, whereas Vps41 binds to Ypt7 apparently alone (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "0c506742-6734-4196-8be9-a9af41d401f3",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C61",
+      "claim": "Vps39 may be assisted by Vps18 to sandwich Ypt7.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps39 binds Ypt7 far stronger than Vps41 (Auffarth et al., 2014; L\u00fcrick et al., 2017), and may be assisted by Vps18 to sandwich Ypt7, whereas Vps41 binds to Ypt7 apparently alone (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the AlphaFold model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "01be02fb-bcfc-4954-8052-569e834a147d",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C62",
+      "claim": "Vps41 binds to Ypt7 apparently alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps39 binds Ypt7 far stronger than Vps41 (Auffarth et al., 2014; L\u00fcrick et al., 2017), and may be assisted by Vps18 to sandwich Ypt7, whereas Vps41 binds to Ypt7 apparently alone (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the AlphaFold model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "425b3edc-4c2d-4523-bbae-2790d958d81d",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C63",
+      "claim": "HOPS complexes lacking the \u03b2-propeller of Vps11, Vps18, or Vps41 were purified in equimolar stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "All complexes were purified in equimolar stoichiometry (Figure 1\u2014figure supplement 4A), and interacted with Ypt7, but not the Golgi Rab Ypt1 in GST pull-down assay, suggesting that at least one Rab-binding site is maintained in all truncated complexes (Br\u00f6cker et al., 2012; L\u00fcrick et al., 2017; Ostrowicz et al., 2010; Zick and Wickner, 2016; Zick and Wickner, 2012; Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from protein purification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "472e442a-ac9f-4a7d-b78c-b4f2e3319b5f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C64",
+      "claim": "All truncated HOPS complexes (lacking \u03b2-propellers of Vps11, Vps18, or Vps41) interacted with Ypt7, but not the Golgi Rab Ypt1 in GST pull-down assay.",
+      "claim_type": "EXPLICIT",
+      "source": "All complexes were purified in equimolar stoichiometry (Figure 1\u2014figure supplement 4A), and interacted with Ypt7, but not the Golgi Rab Ypt1 in GST pull-down assay, suggesting that at least one Rab-binding site is maintained in all truncated complexes (Br\u00f6cker et al., 2012; L\u00fcrick et al., 2017; Ostrowicz et al., 2010; Zick and Wickner, 2016; Zick and Wickner, 2012; Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from GST pull-down assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "865c1768-02d6-414e-b6f7-643a78e6bacc",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C65",
+      "claim": "At least one Rab-binding site is maintained in all truncated HOPS complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "All complexes were purified in equimolar stoichiometry (Figure 1\u2014figure supplement 4A), and interacted with Ypt7, but not the Golgi Rab Ypt1 in GST pull-down assay, suggesting that at least one Rab-binding site is maintained in all truncated complexes (Br\u00f6cker et al., 2012; L\u00fcrick et al., 2017; Ostrowicz et al., 2010; Zick and Wickner, 2016; Zick and Wickner, 2012; Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the GST pull-down assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "62794124-e217-4681-b9a1-1912bf4da78a",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C66",
+      "claim": "HOPS lacking the Vps41 \u03b2-propeller was inactive in tethering assays.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS lacking the Vps41 \u03b2-propeller was inactive as shown (L\u00fcrick et al., 2017), whereas HOPS with truncated Vps11 or Vps18 was fully functional and as efficient as wild-type HOPS (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from tethering assays.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "0297e1ef-650d-4043-afa8-3025b257fba5",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C67",
+      "claim": "HOPS with truncated Vps11 or Vps18 was fully functional in tethering and as efficient as wild-type HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS lacking the Vps41 \u03b2-propeller was inactive as shown (L\u00fcrick et al., 2017), whereas HOPS with truncated Vps11 or Vps18 was fully functional and as efficient as wild-type HOPS (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from tethering assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "008ee3b9-a358-4780-b167-debce7c7d806",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C68",
+      "claim": "When added to SNARE and Ypt7-GTP bearing liposomes, only wild-type HOPS, but none of the mutant complexes promoted fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when added to SNARE and Ypt7-GTP bearing liposomes, only wild-type HOPS, but none of the mutant complexes promoted fusion (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from fusion assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "1b35286d-4824-4c59-a83a-0cdbd7f4bf2a",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C69",
+      "claim": "Deletions of the \u03b2-propellers of Vps41, Vps11, or Vps18 resulted in a loss of protein density at the expected positions in negative stain EM, while preserving the densities of all other subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletions of the \u03b2-propellers of Vps41, Vps11, or Vps18 indeed resulted in a loss of protein density at the expected positions, while preserving the densities of all other subunits (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from negative stain EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "5e1d25de-2ff5-465a-aef8-c8c5c7cb45f8",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C70",
+      "claim": "HOPS complexes lacking \u03b2-propellers in Vps11 or Vps18 showed an alteration in the relative orientation of Vps39 within the complex in some 2D class averages.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HOPS complexes lacking \u03b2-propellers in Vps11 or Vps18 showed an alteration in the relative orientation of Vps39 within the complex in some 2D class averages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in negative stain EM 2D class averages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "7e91aa9e-2bbb-461b-a048-e67305d5638f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C71",
+      "claim": "The observed structural variation in mutant HOPS might be a result of the increased flexibility due to the lack of structural support by \u03b2-propellers of Vps18 and Vps11.",
+      "claim_type": "EXPLICIT",
+      "source": "This observed structural variation might be a result of the increased flexibility of mutant HOPS due to the lack of structural support by \u03b2-propellers of Vps18 and Vps11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "201159f0-5775-4722-9008-23d421d4f97a",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C72",
+      "claim": "The \u03b2-propellers of Vps18 and Vps11 contribute to the overall structure of the HOPS complex or may play a stabilizing role during the fusion process.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the \u03b2-propellers of Vps18 and Vps11 contribute to the overall structure of the HOPS complex or may play a stabilizing role during the fusion process, which would explain, why they are essential for the full activity of HOPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional assays and structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "b5848326-8e8e-4e3d-8cc3-be39c572f114",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C73",
+      "claim": "The \u03b2-propellers of Vps18 and Vps11 are essential for the full activity of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the \u03b2-propellers of Vps18 and Vps11 contribute to the overall structure of the HOPS complex or may play a stabilizing role during the fusion process, which would explain, why they are essential for the full activity of HOPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional assays showing loss of fusion activity in mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "c34197db-2c3b-46ea-a6cb-c86050c7025d",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C74",
+      "claim": "According to the structure, the three major ligand binding sites of HOPS are arranged in a triangular fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest a working model of how HOPS catalyzes fusion at lysosomes and vacuoles (Figure 4). According to our structure, the three major ligand binding sites of HOPS are arranged in a triangular fashion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "77636ef8-43c9-4ad1-ad97-aae08740eb97",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C75",
+      "claim": "While the two Ypt7-binding sites show significant conformational variability, the SNARE-interacting unit is firmly connected to the stable backbone formed by Vps11 and Vps18.",
+      "claim_type": "EXPLICIT",
+      "source": "While the two Ypt7-binding sites show significant conformational variability, the SNARE-interacting unit is firmly connected to the stable backbone formed by Vps11 and Vps18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM structure and flexibility analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "ba1b88f0-a0a0-462b-b265-22f8a0d81bff",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C76",
+      "claim": "For tethering, HOPS Vps39 and Vps41 bind Ypt7 on target membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "For tethering, HOPS Vps39 and Vps41 bind Ypt7 on target membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model based on structural and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "c4211832-4d99-4480-8ab5-b3b1f6345a6f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C77",
+      "claim": "During tethering, HOPS remains upright on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "During this process, HOPS remains upright on membranes (F\u00fcllbrunn et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "c6686747-1e7e-4b61-abdf-d34a38b4c3af",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C78",
+      "claim": "The SM protein Vps33 and possibly other sites on HOPS bind SNAREs from the opposing membranes, and zipper them up toward their membrane anchor.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, the SM protein Vps33 and possibly other sites on HOPS (Kr\u00e4mer and Ungermann, 2011; Baker et al., 2015; L\u00fcrick et al., 2017; L\u00fcrick et al., 2015; Song et al., 2020) bind SNAREs from the opposing membranes, and zipper them up toward their membrane anchor (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the proposed model based on structural data and prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "7668ecec-7fa8-410d-afff-16d80d21bb81",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C79",
+      "claim": "The SNARE zippering process can be blocked by Orf3a in the COVID-19 SARS-CoV-2 virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, that this process can be blocked by Orf3a in the COVID-19 SARS-CoV-2 virus (Miao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "7899b42a-2c09-4bd9-9137-a2f2b651f225",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C80",
+      "claim": "The backbone of HOPS dampens the movement of the vesicles and acts as a lever arm holding on to SNAREs during zippering.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the backbone of HOPS dampens the movement of the vesicles and acts as a lever arm holding on to SNAREs during zippering (D'Agostino et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model based on structural data and prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "54cb69dc-f965-461a-843d-1870ca77cd15",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C81",
+      "claim": "The three-point arrangement of HOPS would cause membrane stress and could explain how HOPS catalyzes membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "This three-point arrangement would cause membrane stress and could explain how HOPS catalyzes membrane fusion (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative mechanism proposed based on the structural model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "dc689ba5-7a4f-41e2-bb54-8049084a7edd",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C82",
+      "claim": "The physiological function of HOPS can be bypassed if large complexes are redirected to SNAREs at the fusion site.",
+      "claim_type": "EXPLICIT",
+      "source": "The physiological function of HOPS can be bypassed if large complexes are redirected to SNAREs at the fusion site (D'Agostino et al., 2017; Song et al., 2017), which can even promote fusion of deficient SNARE complexes (Orr et al., 2022; Song et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "c38c4829-d45b-4f90-a627-2cd02a8a6cd9",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C83",
+      "claim": "Zippered SNAREs may dissociate from HOPS and allow access for \u03b1-SNAP and NSF to recycle SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "Zippered SNAREs may then dissociate from HOPS and allow access for \u03b1-SNAP and NSF to recycle SNAREs (Zhang and Hughson, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "be9484ba-306d-4e5c-bb6d-57990b6e2c78",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C84",
+      "claim": "Previous analyses suggested strong flexibility along the entire HOPS structure, which was interpreted as a hallmark of tethering complexes and an essential prerequisite to their function.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous analyses suggested strong flexibility along the entire HOPS structure, which was interpreted as a hallmark of tethering complexes and an essential prerequisite to their function (Br\u00f6cker et al., 2012; Chou et al., 2016; F\u00fcllbrunn et al., 2021; Ha et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "3bb7cac9-3fe1-4b72-ba82-b0bc1428f496",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C85",
+      "claim": "The cryo-EM data show that HOPS flexibility is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our cryo-EM data, collected on a highly pure and homogeneous sample that was not modified by any crosslinker or other fixative agents like negative stain, show that HOPS flexibility is limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "93aefac7-66a9-4585-bdae-8d34c6e51db0",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C86",
+      "claim": "The backbone and the SNARE-binding module are the least flexible parts of HOPS and appear to be stably associated with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking the obtained resolution as a measure of sample flexibility (Rawson et al., 2016), we conclude that the backbone and the SNARE-binding module are the least flexible parts of HOPS and appear to be stably associated with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the resolution of the cryo-EM structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "a5305c51-876c-49f4-a94e-d80bcdd4765c",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C87",
+      "claim": "The membrane interacting units of Vps41 and Vps39 show some flexibility with 10\u201320\u00b0 movements between particles, which substantially reduced their resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the membrane interacting units of Vps41 and Vps39 show some flexibility with 10\u201320\u00b0 movements between particles, which substantially reduced their resolution (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on 3D classification and variability analysis of the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "1cd06271-1a50-4c24-bcac-37cf8a7dbe7d",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C88",
+      "claim": "The flexibility of Vps41 and Vps39 may dampen the motion of HOPS between membranes and stabilizes the SNARE interaction, which are necessary for fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "We relate this flexibility to their function within HOPS, where it may dampen the motion of HOPS between membranes and stabilizes the SNARE interaction, which are necessary for fusion (Laage and Ungermann, 2001; Kr\u00e4mer and Ungermann, 2011; L\u00fcrick et al., 2015; Baker et al., 2015; Song et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "46417e24-59ed-4ef4-8437-06c9758f3271",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C89",
+      "claim": "Mammalian HOPS contains the same six subunits as yeast HOPS, which are generally highly conserved and will therefore function similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian HOPS contains the same six subunits as yeast HOPS, which are generally highly conserved and will therefore function similarly (van der Beek et al., 2019; van der Kant et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "19fe6b0c-fa29-41ab-a4b0-0485d48a8ccb",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C90",
+      "claim": "The structure can be used to map disease prone mutations and may explain the consequences on HOPS function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure can hence be used to map disease prone mutations (Figure 4\u2014figure supplement 1) and may thus explain the consequences on HOPS function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed application of the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "edcf11c4-f3bb-41ff-9434-16708ae7615b",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C91",
+      "claim": "Low binding affinity between HOPS and Rabs helps tethering complexes to let go of the Rab when fusion progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that this low binding affinity helps tethering complexes to also let go of the Rab when fusion progresses (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative mechanism proposed based on the structural and functional data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "c77cc674-d1ac-4a70-8c6f-89b77b437d17",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C92",
+      "claim": "Some tethering complexes such as CORVET, CHEVI, or FERARI have attached SM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Some tethering complexes such as CORVET, CHEVI, or FERARI have attached SM proteins (van der Beek et al., 2019; Solinger et al., 2020), others such as COG, GARP, Exocyst, and Dsl cooperate with SM proteins (Ungermann and K\u00fcmmel, 2019), which may catalyze fusion similar to HOPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "663313b7-e28f-42a5-80eb-3728e8646e1f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C93",
+      "claim": "Other tethering complexes such as COG, GARP, Exocyst, and Dsl cooperate with SM proteins, which may catalyze fusion similar to HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Some tethering complexes such as CORVET, CHEVI, or FERARI have attached SM proteins (van der Beek et al., 2019; Solinger et al., 2020), others such as COG, GARP, Exocyst, and Dsl cooperate with SM proteins (Ungermann and K\u00fcmmel, 2019), which may catalyze fusion similar to HOPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and involves speculation about similar mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "314671d4-d903-4e9d-865d-60aa67719855",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C94",
+      "claim": "The overarching principle suggested for HOPS may extend to synaptic transmission, where the tether Munc13 and the SM protein Munc18 cooperatively catalyze the N- to C-terminal zippering of SNAREs during fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The overarching principle suggested here for HOPS is not limited to lysosomal fusion but may extend to synaptic transmission, where the tether Munc13 and the SM protein Munc18 cooperatively catalyze the N- to C-terminal zippering of SNAREs during fusion (Lai et al., 2017; Rizo, 2022; Stepien et al., 2022; Stepien and Rizo, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extension of the model supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "5b1f2998-4d18-44ef-9b9e-5d5fedfbd74e",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C95",
+      "claim": "Both Munc18 and Vps33 interact similarly with the N-terminal part of the SNARE domains of the R- and Qa-SNARE and may promote assembly until the central zero-layer of the SNARE domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Munc18 and Vps33 interact similarly with the N-terminal part of the SNARE domains of the R- and Qa-SNARE and may promote assembly until the central zero-layer of the SNARE domain (Baker et al., 2015; Stepien et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "3d4e336e-7e99-4198-97eb-902376409f81",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C96",
+      "claim": "During HOPS-mediated fusion, SNARE zippering beyond the zero-layer could proceed while Vps33 lets go of the forming four-helix bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "During HOPS-mediated fusion, SNARE zippering beyond the zero-layer could then proceed, while the Vps33 lets go of the forming four-helix bundles (Stepien et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "271b3da4-dac6-46d7-ab98-37c2a07e7d57",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C97",
+      "claim": "HOPS binds both the N-terminal extensions of the Qa-SNARE Vam3 and other SNAREs, possibly via different binding sites along the HOPS complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, HOPS binds both the N-terminal extensions of the Qa-SNARE Vam3 and other SNAREs, possibly via different binding sites along the HOPS complex (Laage and Ungermann, 2001; L\u00fcrick et al., 2015; Song et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "dc2fbad3-af0a-4803-8de5-eaa852b014b8",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C98",
+      "claim": "HOPS association with SNARE N-terminal extensions may maintain the force on membranes to catalyze full fusion, even if the SM protein lets go of the assembling SNARE complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This association may thus maintain the force on membranes to catalyze full fusion, even if the SM protein lets go of the assembling SNARE complex (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative mechanism proposed based on structural and functional data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "9966402d-bbde-43af-b691-1f5397a0e92f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C99",
+      "claim": "HOPS complexes with deficient Vps33 can catalyze fusion of proteoliposomes only if the SNARE density is high.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, HOPS complexes with deficient Vps33 can catalyze fusion of proteoliposomes only if the SNARE density is high (Baker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "acbebda9-1bef-411a-a101-11620276fbd1",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C100",
+      "claim": "Vacuoles expressing a Qa-SNARE Vam3 variant lacking the N-terminal extension, which is needed to bind HOPS, show diminished fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, vacuoles expressing a Qa-SNARE Vam3 variant lacking the N-terminal extension, which is needed to bind HOPS, show diminished fusion (Laage and Ungermann, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "e12f866a-35c6-4a6e-a1c4-8f09f0ab5d0b",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C101",
+      "claim": "HOPS supports SNAREs by templating the association of R- and Qa-SNAREs and by binding the N-terminal regions of SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that HOPS supports SNAREs by templating the association of R- and Qa-SNAREs and by binding the N-terminal regions of SNAREs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional data and prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "211dfff4-23d1-449f-bd3b-74e651561140",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C102",
+      "claim": "The deletion of the \u03b2-propeller in Vps11 or Vps18 results in a deficient HOPS due to a less stable backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the deletion of the \u03b2-propeller in Vps11 or Vps18 result in a similarly deficient HOPS due to a less stable backbone (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the functional assays and structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "7f936a3c-1917-4ca2-9969-bb6a1788f988",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "claim_id": "C103",
+      "claim": "Coupling between a stable backbone of HOPS and SNARE binding may be impaired in mutants lacking \u03b2-propellers of Vps11 or Vps18, resulting in less specific activity as fusion catalysts.",
+      "claim_type": "EXPLICIT",
+      "source": "In either case, coupling between a stable backbone of HOPS and SNARE binding may be impaired and could result in less specific activity as fusion catalysts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed functional defects.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02b4f292-169e-4dac-be48-17cd5afbd6cf",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined the high-resolution cryo-EM structure of the HOPS complex, revealing a largely extended, slender structure (~430 \u00c5 \u00d7 130 \u00c5) with a triangular shape. The structure shows that Vps11 and Vps18 form a stable antiparallel core through their \u03b1-solenoids with a large interface area (1972 \u00c5\u00b2), and that the SNARE-binding module (Vps16 and Vps33) is firmly attached to this core at the lateral side of the complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25, C26, C28-C32, C36-C37, C40-C44 collectively describe the cryo-EM structure determination and key structural features of HOPS. The data are directly observed in the cryo-EM density maps with resolutions between 3.6-5 \u00c5, providing strong structural evidence. The measurements (dimensions, interface areas, positions) are quantified and visualized in multiple figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "2da3312d-ebb0-4fda-b7de-05cd988a457a",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors demonstrate that HOPS flexibility is limited and confined to its extremities (Vps41 and Vps39), which show angular re-orientations of ~9\u00b0 and ~20\u00b0 respectively, while the backbone (Vps11/Vps18 core) and SNARE-binding module are stably associated. This contradicts previous reports suggesting flexibility throughout the entire complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C38-C39, C47-C48, C85-C87 are supported by 3D classification, variability analysis, and resolution measurements from cryo-EM data. The limited flexibility is inferred from the high resolution achieved in the core regions (3.6-4 \u00c5) versus lower resolution in peripheral regions (6.9-7.5 \u00c5), and is directly visualized through multi-modular classification showing specific angular movements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "c1efcfea-5d5b-4154-97b9-3eff2a785c1a",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors show that mutations in the RING finger domains of Vps11 and Vps18 cause selective loss of Vps39 and Vps41 respectively, and that such mutations result in HOPS dysfunction and are associated with human diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by experimental mass spectrometry data (Figure 2\u2014figure supplement 2) showing selective loss of specific subunits in RING domain mutants. Claims C45-C46 are supported by citations to prior research on disease-causing mutations and experimental data showing assembly failure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors demonstrate that HOPS complexes lacking \u03b2-propellers of Vps11 or Vps18 maintain tethering activity but completely lose fusion activity, while deletion of the Vps41 \u03b2-propeller abolishes both activities. The \u03b2-propellers of Vps11 and Vps18 are essential for full HOPS activity and may provide structural stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C73 are supported by multiple experimental assays: protein purification showing equimolar stoichiometry (C63), GST pull-down assays showing Ypt7 binding (C64-C65), tethering assays (C66-C67), fusion assays (C68), and negative stain EM (C69-C70). The functional data clearly demonstrate the differential requirements for tethering versus fusion, though the mechanistic explanation (C71-C73) is partially inferred.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "398269b9-ae7b-4ad2-921b-9eff134f9914",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors used X-ray crystallography and AlphaFold predictions to model Ypt7 binding to Vps39 and Vps41. The crystal structure of C. thermophilum Vps39 \u03b2-propeller confirmed AlphaFold predictions. AlphaFold modeling suggests Ypt7 binds to the \u03b1-solenoid of Vps39 (not the \u03b2-propeller as expected) and to the \u03b2-propeller of Vps41 on the opposite side from the ALPS motif, with Vps39 binding Ypt7 more strongly than Vps41.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C53 are supported by experimental X-ray crystallography data. However, claims C54-C62 rely heavily on AlphaFold predictions without direct experimental validation of the HOPS-Ypt7 complex. The authors acknowledge that low binding affinity prevented reconstitution for structural studies (C51). While the predictions are reasonable and consistent with prior biochemical data (C60), they remain computational models requiring experimental confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "89564281-55ca-4aab-9310-39722c62886f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose a working model where HOPS catalyzes fusion through a triangular three-point arrangement: two Ypt7-binding sites (Vps39 and Vps41) at the extremities provide flexible tethering to membranes, while the centrally-positioned SNARE-binding module (firmly attached to the stable backbone) binds and zippers SNAREs. The stable backbone acts as a lever arm, and this arrangement causes membrane stress to catalyze fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are directly supported by the structural data showing the triangular arrangement and differential flexibility. Claims C76-C78 and C80 are supported by the structural model combined with prior functional studies (citations provided). Claim C81 (membrane stress mechanism) is a reasonable mechanistic inference from the structural arrangement, though it remains speculative and would benefit from additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors provide background on lysosomal fusion, HOPS function, and prior structural studies. Lysosomes are essential for cellular processes including recycling, autophagy, and viral invasion. HOPS is a conserved heterohexameric tethering complex required for lysosomal fusion, binds Rab GTPases and SNAREs, and is targeted by viruses and implicated in human diseases. Previous negative-stain EM studies revealed overall HOPS arrangement but were insufficient for detailed structural analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C24 are primarily background knowledge supported by extensive citations to established literature. These claims provide context for the current work and are well-documented in the field. The structural predictions (C17) and prior EM limitations (C23-C24) set up the rationale for the current high-resolution cryo-EM study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "32f30cdc-6fdb-4068-a2f2-c9df993f5b7e",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors found that a region in Vps11 (Q760-D784) predicted by AlphaFold to be unstructured is actually clearly resolved and organized in the cryo-EM density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by direct observation in the cryo-EM structure. This represents a case where experimental structure determination corrects computational predictions, demonstrating the value of the structural data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    },
+    {
+      "id": "3c50c44c-0036-471d-b6d4-2f4582fba83f",
+      "content_id": "d22b404f-a5a7-49f0-9bbe-42d23f2b3a8b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors discuss the broader implications of their findings, including HOPS as part of the fusion machinery (not just a tether), comparisons to other tethering complexes and synaptic fusion machinery, potential mechanisms for SNARE binding and zippering, explanations for mutant phenotypes, and applications for understanding disease mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C49-C50, C82-C103) represent a mix of established knowledge from prior work (C49, C82, C92-C93, C95, C97, C99-C100), reasonable inferences from the current structural data (C88, C90, C101-C102), and speculative mechanistic proposals (C91, C94, C96, C98, C103). While the discussion is well-reasoned and supported by citations, many of the mechanistic details remain to be experimentally validated. The speculative nature of several claims (particularly regarding detailed fusion mechanisms) prevents a fully SUPPORTED evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:37:10.465968Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd3dd8f1-51b7-4e32-b5db-c7a350ae0144",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "f39c73fd-6078-4d4b-9b45-afb4ce207d3d",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "0698e0ad-f270-43fc-bbf7-151528dc7288",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "578facb4-aa79-4e45-bc28-99a019382f19",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "ba1efb8e-11b7-4954-89bb-a00ed763771b",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "5230e802-7943-4475-a96e-c74e948b92e8",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "6f10f33d-5d9d-4a48-a16c-a0692f4239c9",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "99b71104-bec2-40af-8840-d33041bc4b61",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "b5704856-87c7-453d-85d7-043508243907",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "9579596a-51df-4bd8-8afc-4ed86d1567b7",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "7e1b3e3e-ad61-4837-bb25-2f03419f2ae9",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "ab548b84-14cb-4079-af15-d82d95fab830",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "f85cca3a-ebf8-4840-a34d-e123a6f19645",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "ac638a07-f978-489b-b686-41c2afbc3e28",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "9e259f7d-c818-410a-bceb-b89a7426402f",
+      "result_id": "02b4f292-169e-4dac-be48-17cd5afbd6cf"
+    },
+    {
+      "claim_id": "2033583a-8b89-4669-989f-efa205effe33",
+      "result_id": "2da3312d-ebb0-4fda-b7de-05cd988a457a"
+    },
+    {
+      "claim_id": "a2096599-de3b-455c-a5f8-d814a5624f31",
+      "result_id": "2da3312d-ebb0-4fda-b7de-05cd988a457a"
+    },
+    {
+      "claim_id": "e770d3f1-a5f1-4188-b9d6-bc9997c7c769",
+      "result_id": "2da3312d-ebb0-4fda-b7de-05cd988a457a"
+    },
+    {
+      "claim_id": "16cbf27e-a34a-49c0-a5c7-c4f74b9226e2",
+      "result_id": "2da3312d-ebb0-4fda-b7de-05cd988a457a"
+    },
+    {
+      "claim_id": "b6e33b3f-b17b-4b48-a32b-ba0496be9d5f",
+      "result_id": "2da3312d-ebb0-4fda-b7de-05cd988a457a"
+    },
+    {
+      "claim_id": "3bb7cac9-3fe1-4b72-ba82-b0bc1428f496",
+      "result_id": "2da3312d-ebb0-4fda-b7de-05cd988a457a"
+    },
+    {
+      "claim_id": "93aefac7-66a9-4585-bdae-8d34c6e51db0",
+      "result_id": "2da3312d-ebb0-4fda-b7de-05cd988a457a"
+    },
+    {
+      "claim_id": "a5305c51-876c-49f4-a94e-d80bcdd4765c",
+      "result_id": "2da3312d-ebb0-4fda-b7de-05cd988a457a"
+    },
+    {
+      "claim_id": "904c7b97-40c2-4f66-88c2-fc91aa9da658",
+      "result_id": "c1efcfea-5d5b-4154-97b9-3eff2a785c1a"
+    },
+    {
+      "claim_id": "fc6bcd63-1fb9-465b-9b67-8ef5ff2dd503",
+      "result_id": "c1efcfea-5d5b-4154-97b9-3eff2a785c1a"
+    },
+    {
+      "claim_id": "830e47b9-295e-497b-8470-b52027cbd60e",
+      "result_id": "c1efcfea-5d5b-4154-97b9-3eff2a785c1a"
+    },
+    {
+      "claim_id": "17a4a5dd-b58d-4c9e-9202-2e0adf162073",
+      "result_id": "c1efcfea-5d5b-4154-97b9-3eff2a785c1a"
+    },
+    {
+      "claim_id": "425b3edc-4c2d-4523-bbae-2790d958d81d",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "472e442a-ac9f-4a7d-b78c-b4f2e3319b5f",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "865c1768-02d6-414e-b6f7-643a78e6bacc",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "62794124-e217-4681-b9a1-1912bf4da78a",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "0297e1ef-650d-4043-afa8-3025b257fba5",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "008ee3b9-a358-4780-b167-debce7c7d806",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "1b35286d-4824-4c59-a83a-0cdbd7f4bf2a",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "5e1d25de-2ff5-465a-aef8-c8c5c7cb45f8",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "7e91aa9e-2bbb-461b-a048-e67305d5638f",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "201159f0-5775-4722-9008-23d421d4f97a",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "b5848326-8e8e-4e3d-8cc3-be39c572f114",
+      "result_id": "c1bc57cb-7dc2-4cb3-9755-80f3bced4483"
+    },
+    {
+      "claim_id": "503aa74b-628f-45ce-9e1c-0306d998b96d",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "dd9d886b-d6c2-4b76-bd17-a68b94bdf5a9",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "4db95e9a-c368-4fdf-92e3-2a57c7ed79ac",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "382012cb-d4b3-4472-9873-cb799f87b68d",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "f2f8dd7d-aaf2-496b-ae8f-23d422f4d492",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "8cb6b6af-4714-4796-87ef-0291db122b3f",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "f98d08f6-9dae-4e3d-a927-3e084cefac63",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "8ebdc44f-7a2b-46d9-ac92-6735e7b0c9da",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "d15d87fe-53a4-42eb-af18-85c787e02e52",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "0c506742-6734-4196-8be9-a9af41d401f3",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "01be02fb-bcfc-4954-8052-569e834a147d",
+      "result_id": "398269b9-ae7b-4ad2-921b-9eff134f9914"
+    },
+    {
+      "claim_id": "c34197db-2c3b-46ea-a6cb-c86050c7025d",
+      "result_id": "89564281-55ca-4aab-9310-39722c62886f"
+    },
+    {
+      "claim_id": "77636ef8-43c9-4ad1-ad97-aae08740eb97",
+      "result_id": "89564281-55ca-4aab-9310-39722c62886f"
+    },
+    {
+      "claim_id": "ba1b88f0-a0a0-462b-b265-22f8a0d81bff",
+      "result_id": "89564281-55ca-4aab-9310-39722c62886f"
+    },
+    {
+      "claim_id": "c4211832-4d99-4480-8ab5-b3b1f6345a6f",
+      "result_id": "89564281-55ca-4aab-9310-39722c62886f"
+    },
+    {
+      "claim_id": "c6686747-1e7e-4b61-abdf-d34a38b4c3af",
+      "result_id": "89564281-55ca-4aab-9310-39722c62886f"
+    },
+    {
+      "claim_id": "7899b42a-2c09-4bd9-9137-a2f2b651f225",
+      "result_id": "89564281-55ca-4aab-9310-39722c62886f"
+    },
+    {
+      "claim_id": "54cb69dc-f965-461a-843d-1870ca77cd15",
+      "result_id": "89564281-55ca-4aab-9310-39722c62886f"
+    },
+    {
+      "claim_id": "ca6d6713-d9af-4891-947b-80746249692e",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "4f16cabe-8145-434b-844e-6ea99a673bac",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "7f16008b-9bd1-4652-85e2-1dbdfdfba364",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "f237bf9c-7e17-420d-baaa-30e3ede57499",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "b7e4a9d1-cd2f-41c6-96f0-43d34e1eaeab",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "80328065-49ef-4751-90b6-720d292b08e3",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "81a4bf3d-3220-443b-a4f5-e94b05549634",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "7682b30f-ce3d-4d4f-8366-9c92a5fd07a0",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "0d07f7ff-94b2-407b-ae35-5a10f0c5d3e2",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "0fbf7ed1-ace8-417f-9af5-626c9d4e2625",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "433beac8-1b80-4c5e-9eed-85acbc5d2563",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "fbd4faf4-e0a6-4897-9e4d-3ba68e40e666",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "88d067f4-4a2e-471e-9826-cfe3e46878ad",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "6a3a90c1-b36c-4305-ad95-ddcef0d5cf7d",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "91bda4e3-b4f3-4116-80dd-387e9c89b6fd",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "8e157164-d2f8-4a99-805e-68cf0a7afa84",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "a6e41661-8e93-4a4c-8e96-73d73d1e5f04",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "88eadbb3-6001-4dbc-9ce9-e0638a7d6112",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "bd439d86-5b41-43f4-be42-382967ad6532",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "9fcbc9d3-a762-4cf3-8a62-6ee9a984704b",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "e3d75d56-a78f-4292-ac72-a0072bb25159",
+      "result_id": "b14a87f3-9ebb-47c6-a6bc-21ec3148a818"
+    },
+    {
+      "claim_id": "cdc7f640-8b0c-40db-b598-617bdf4db0f4",
+      "result_id": "32f30cdc-6fdb-4068-a2f2-c9df993f5b7e"
+    },
+    {
+      "claim_id": "578facb4-aa79-4e45-bc28-99a019382f19",
+      "result_id": "32f30cdc-6fdb-4068-a2f2-c9df993f5b7e"
+    },
+    {
+      "claim_id": "2224edd2-271a-4dd6-a8d3-03c96b7e9bf4",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "122910db-99d9-44e5-a26b-4c55657f5dc2",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "dc689ba5-7a4f-41e2-bb54-8049084a7edd",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "c38c4829-d45b-4f90-a627-2cd02a8a6cd9",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "be9484ba-306d-4e5c-bb6d-57990b6e2c78",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "1cd06271-1a50-4c24-bcac-37cf8a7dbe7d",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "46417e24-59ed-4ef4-8437-06c9758f3271",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "19fe6b0c-fa29-41ab-a4b0-0485d48a8ccb",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "edcf11c4-f3bb-41ff-9434-16708ae7615b",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "c77cc674-d1ac-4a70-8c6f-89b77b437d17",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "663313b7-e28f-42a5-80eb-3728e8646e1f",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "314671d4-d903-4e9d-865d-60aa67719855",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "5b1f2998-4d18-44ef-9b9e-5d5fedfbd74e",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "3d4e336e-7e99-4198-97eb-902376409f81",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "271b3da4-dac6-46d7-ab98-37c2a07e7d57",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "dc2fbad3-af0a-4803-8de5-eaa852b014b8",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "9966402d-bbde-43af-b691-1f5397a0e92f",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "acbebda9-1bef-411a-a101-11620276fbd1",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "e12f866a-35c6-4a6e-a1c4-8f09f0ab5d0b",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "211dfff4-23d1-449f-bd3b-74e651561140",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    },
+    {
+      "claim_id": "7f936a3c-1917-4ca2-9969-bb6a1788f988",
+      "result_id": "3c50c44c-0036-471d-b6d4-2f4582fba83f"
+    }
+  ],
+  "comparisons": []
+}

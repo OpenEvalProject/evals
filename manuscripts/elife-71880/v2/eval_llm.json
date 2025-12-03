@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Drug repositioning is presented as a cost-effective alternative to de novo drug development, with the potential to reduce both the financial burden ($3-30 billion) and time (>10 years) required to bring new drugs to market.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by citations to established literature (Scannell et al., 2012; Ashburn and Thor, 2004; Liu et al., 2013). These are standard background claims in the drug repositioning field and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "LINCS represents a 1000-fold scale-up of the original CMap, containing 77 cell lines and 19,811 compounds compared to CMap Build 2's 3 cell lines and 1309 compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 accurately describe the LINCS database with appropriate citations (Musa et al., 2018). These are factual descriptions of publicly available data resources that are verifiable and well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The LINCS dataset is characterized by specific experimental conditions, with most measurements at 6hr (43%) or 24hr (56.6%) treatment durations and 5\u03bcM (21%) or 10\u03bcM (63%) concentrations. Nine cell lines contain >5000 profiles accounting for 77.8% of all compound profiles, with 2912 compounds shared among these nine cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 provide descriptive statistics of the LINCS dataset supported by Figure 1\u2014figure supplement 2. These are straightforward data summaries that appear accurate based on the presented visualizations and are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Compound-induced gene expression changes are highly cell-type specific, with a median L2 similarity score of 0.078 across compounds. However, inhibitors targeting core cellular processes (cell cycle, RNA transcription, protein synthesis) induce similar changes across cell lines. A weak but significant correlation (\u03c1=0.344; p=0.040) exists between basal expression similarities and perturbed expression similarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by multiple analyses including t-SNE visualization (Figure 2A), quantitative similarity metrics (Figure 2C), and statistical correlation analysis (Figure 2G). The findings are consistent with prior literature (Niepel et al., 2017; Subramanian et al., 2017; Wang et al., 2018) and the statistical significance is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "HepG2 exhibits significantly higher expression correlation with liver-related samples (liver cancer cell lines: 0.729; normal liver tissues: 0.616; liver cancer tissues: 0.631) compared to other tissue types, supporting its use as a cell line model specifically for liver disease studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by comprehensive correlation analyses across multiple datasets (CCLE, GTEx, TCGA) shown in Figure 2\u2014figure supplement 1. The conclusion (C22) logically follows from the data, though it represents an inference rather than a definitive requirement. The analysis appropriately validates the choice of HepG2 for liver cancer studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Two novel benchmarking standards were developed and validated: an AUC-based standard using 117 compounds with IC50 data showing correlation between reversal potency and drug efficacy, and a KS statistic-based standard using 27 HCC clinical trial agents showing significant negative enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 describe the development of benchmarking standards supported by Figure 3B-C. The correlation analysis (C23) and enrichment analysis (C26) provide independent validation. However, the sample sizes are relatively small (117 and 27 compounds), which may limit generalizability. The approach is methodologically sound but would benefit from larger validation sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "XSum outperformed five other signature matching methods (XCos, XCor, XSpe, KS, RGES) across multiple query signatures and both benchmarking standards. RGES was superior to the original KS method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by systematic benchmarking across four different query signatures using two independent standards (Figure 4B, Figure 4\u2014figure supplement 1). The consistency across conditions strengthens the conclusion. However, the superiority is described as 'almost all' and 'generally,' indicating some variability that is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The optimal topN parameter for XSum method is approximately 200, based on analysis showing optimal windows of 'top150-200' or 'top200-250' and biphasic patterns with inflection points around 200.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by data in Supplementary file 6C and Figure 4C. However, the authors appropriately acknowledge this as a 'rough guide' rather than a precise optimum. The biphasic pattern observation adds support, though the exact optimal value shows some variability across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A query signature size of 100 genes is recommended as a good compromise, based on two independent approaches showing biphasic patterns with inflection points around 100 and convergence of performance metrics above this threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by two complementary approaches (iterative fold change-based and random sampling-based) shown in Figure 4E-F and Figure 4\u2014figure supplement 2. The convergence of evidence from independent methods strengthens the conclusion. However, the authors appropriately characterize this as a 'compromise' rather than a strict optimum, acknowledging variability (optimal sizes ranged from 55-167 in different conditions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A good query signature should comprehensively recapitulate clinical features of the disease, including the ability to distinguish tumors from non-tumors (AUC >0.90 in 87.5% of cohorts), prognostic significance (75% of cohorts), and correlation with multiple clinical features (BCLC stage, tumor thrombus, AFP level, TNM stage, histologic grade).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by systematic analysis of an optimal random signature across multiple clinical cohorts (Figure 5C-E). The backward strategy employed is methodologically sound. However, C38 represents an inference/conclusion that, while logical, may be overstated\u2014the analysis shows correlation but does not definitively prove that comprehensive clinical feature recapitulation is necessary for good retrieval performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A novel evolution-associated signature (Sigevo) was generated comprising 82 ascending genes (associated with proliferation) and 18 descending genes, derived from 6017 stage-associated genes (23.9% of total, 309 landmarks) organized into seven WGCNA modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 describe the systematic generation of Sigevo using random forests and WGCNA, supported by Figure 6B-D and Figure 6\u2014figure supplement 1. The methodology is appropriate and well-documented. The biological interpretation (ascending module associated with proliferation) is supported by enrichment analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Sigevo demonstrates strong clinical validity with remarkable tumor/non-tumor discrimination (median AUC=0.972 across eight cohorts), prognostic power in HCC, ability to differentiate fibrosis severity, and significant enrichment in CCl4- and DEN-treated liver tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by comprehensive validation across multiple independent cohorts (Figure 6E-I). The high AUC values and consistent performance across RNA-seq and microarray platforms strengthen confidence. The validation in animal models (C46) provides additional orthogonal support. This represents thorough validation of the signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Application of the optimal approach identified 793 repositioning candidates, with known chemopreventive agents (erlotinib, caffeine, fasudil) ranking highly and anti-HCC agents showing significant enrichment among compounds with reversal potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by Figure 7A-B. The enrichment of known chemopreventive agents and anti-HCC agents provides validation of the computational approach. However, the rankings are based on computational predictions that require experimental validation. The statistical significance of enrichment (C49) is appropriately demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Homoharringtonine (HHT), a protein synthesis inhibitor targeting RPL3, had the highest reversal potency among 793 candidates. The reversal ability was validated experimentally and shown to be independent of cell type and treatment concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by computational ranking and experimental validation via RNA-seq across multiple cell lines and concentrations (Figure 7\u2014figure supplement 1B-C, GSE193897). The independence from cell type and concentration (C53) is well-demonstrated by GSEA showing consistent enrichment patterns. The mechanistic information about RPL3 targeting (C51) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "RPL3, the target of HHT, shows higher expression in tumor vs. non-tumor tissues (57.1% of cohorts), correlates with worse prognosis, and is essential for survival and growth of all liver cancer cell lines based on CRISPR screening data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by analysis across multiple clinical cohorts (Figure 7\u2014figure supplement 2A-C) and CRISPR screening data from Project Achilles (Figure 7\u2014figure supplement 2D-E). The target validation is thorough and provides strong rationale for HHT as a therapeutic candidate. The use of orthogonal data sources (expression, survival, CRISPR) strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "HHT exhibits potent anti-tumor activity in liver cancer cell lines with a median IC50 of 0.408 \u03bcM, which is numerically lower than FDA-approved HCC agents lenvatinib (0.617 \u03bcM), regorafenib (2.009 \u03bcM), and sorafenib (3.348 \u03bcM) based on PRISM data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by PRISM database analysis (Figure 7D-E). However, the comparison is described as 'numerically lower' without statistical testing, which is appropriate given the descriptive nature of the comparison. The claim is limited to in vitro potency and does not account for pharmacokinetics, toxicity, or clinical efficacy, which the authors appropriately do not overstate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "HHT significantly inhibited xenograft tumor growth in vivo with limited drug-related toxicity in a subcutaneous MHCC97H xenograft model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by in vivo experiments (Figure 7G-I) with appropriate statistical analysis (p-values reported). The sample size (N=6 per group) is adequate for xenograft studies. Body weight monitoring (C61) provides evidence for limited toxicity. However, the subcutaneous xenograft model has limitations compared to orthotopic models, and the 'limited toxicity' conclusion is based primarily on body weight rather than comprehensive toxicity assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "HHT showed synergistic effects with sorafenib in some conditions, though the synergy was not very remarkable in general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by combination studies using three different synergy models (Figure 7\u2014figure supplements 4-5). The authors appropriately characterize the synergy as 'not very remarkable in general,' acknowledging the limited magnitude of the effect. The use of multiple synergy models strengthens the analysis, though the clinical relevance of modest synergy is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "HHT significantly reduced liver fibrosis in a CCL4-induced mouse model, as evidenced by reduced Ishak scores, Sirius Red staining, and serum ALT/AST levels, demonstrating that HHT can impede fibrosis development and partially rescue hepatic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by comprehensive in vivo fibrosis model experiments (Figure 8B-D) with appropriate statistical analysis and sample sizes (N=6 per group). Multiple complementary readouts (histology, serum markers) strengthen the conclusion. The characterization as 'partially rescued' (C66) is appropriately cautious. However, the preventive dosing regimen (weeks 6-10 of a 10-week protocol) represents intervention during active fibrosis rather than true prevention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "HHT inhibits hepatic stellate cell (HSC) activation by downregulating fibrotic gene expression (RNA-seq) and protein expression of collagen I and \u03b1-SMA (western blot, immunofluorescence), thereby inhibiting liver fibrosis progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by in vitro experiments in LX-2 cells using multiple complementary techniques (RNA-seq, qRT-PCR, western blot, immunofluorescence) shown in Figure 8E and Figure 8\u2014figure supplement 1-2. The mechanistic conclusion (C69) is well-supported by the data. The RNA-seq data has been deposited (GSE180243), supporting reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "HHT may have preventive effects on liver cancer through its anti-fibrotic activity, based on the rationale that inhibiting fibrogenesis can prevent cirrhosis progression and suppress HCC tumorigenesis, and that prevention in high-risk patients is theoretically preferable to treating advanced disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 represent speculative conclusions and literature-based rationale rather than direct experimental evidence. C70 is explicitly stated as 'may have' and is based on inference from anti-fibrotic effects rather than direct demonstration of cancer prevention. C71 and C72 are supported by citations but represent general principles rather than specific findings of this study. Direct evidence of cancer prevention would require long-term studies in appropriate models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "HHT has been FDA-approved for chronic myelogenous leukemia treatment and can therefore be tested directly in clinic for liver cancer without safety concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is supported by citation (Kantarjian et al., 2013) and is factually correct. However, C74 represents an oversimplification\u2014while FDA approval for one indication reduces some regulatory barriers, it does not eliminate safety concerns for a different indication (liver cancer vs. leukemia), different patient population (solid tumor vs. hematologic malignancy), or potentially different dosing regimens. The safety profile in leukemia patients may not fully predict safety in liver cancer patients, particularly those with underlying liver disease.",
+    "result_type": "MINOR"
+  }
+]

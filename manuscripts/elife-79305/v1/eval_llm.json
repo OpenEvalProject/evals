@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Traditional manual video analysis methods are time-consuming, require expert knowledge, are prone to user bias, lack standardization across researchers and labs, and have limited research reproducibility. These limitations have led to the dominance of simpler measures in neuroscience, restricting understanding of brain-behavior relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively describe well-documented limitations of traditional video analysis methods. These claims are supported by citations (Anderson and Perona 2014; Krakauer et al. 2017) and represent established knowledge in the field about manual scoring challenges and their impact on research practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Discrete measurement approaches like beam breaks for reward seeking behavior cannot capture how animals move during choices or reward collection. Animals may move differently based on reward expectations, and this limitation could lead to misinterpretation of neural data (e.g., labeling cells as 'reward encoding' when they actually reflect movement differences).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 present a logical argument about limitations of discrete measurements, supported by citations (multiple studies for C6, Davidson et al. 1980 for C8). While C9 is speculative about potential misinterpretation, it follows logically from the established limitations in C6-C8.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Commercial and open-source tools for semi-automated tracking exist but have limitations. Traditional tracking methods based on color/luminance differences can be challenging in naturalistic settings or with non-uniform animal colors. Center of mass tracking can measure position and velocity but cannot account for movements of discrete body parts like head scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 describe existing tracking methods and their limitations, supported by multiple citations. These are well-established technical limitations of color-based and center-of-mass tracking approaches, with appropriate references to the literature (Redish 2016 for C14).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Advanced multivariate methods (Stringer et al. 2019, Musall et al. 2019) can analyze motion data from multiple pixels simultaneously and relate video recordings to neural data. However, these methods cannot categorize movements, measure transitions between movement types, or quantify dynamics of movement sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 accurately describe published work (with proper citations) and make a reasonable inference (C17) about the limitations of these multivariate approaches. The limitation stated in C17 logically follows from the described capabilities of these methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Pose estimation methods have emerged in recent years that can capture animal pose (location and configuration of body), provide descriptions of movement and posture, track multiple body parts including for groups of animals, and can now run in real experimental time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the emergence and capabilities of pose estimation methods, well-supported by multiple citations to key papers in the field (DeepLabCut, SLEAP, and others). These represent established capabilities of modern pose estimation tools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Pose estimation methods originated in computer vision research in the late 1970s and became widely available for human behavior analysis following improvements in computer vision, deep learning, and GPU computing. Early methods were not robust or required extensive training data not available for animal studies, leading to the development of open-source tools specifically for animal pose estimation by researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 provide a well-cited historical account of pose estimation development, from early computer vision work (Marr et al. 1978, Nevatia and Binford 1973) through technological advances to modern animal-specific tools (DeepLabCut, LEAP, DeepPoseKit). The progression is logical and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "DeepLabCut has been shown to outperform commercial software (EthoVision XT14) and hardware-based systems. When tested on common behavioral assays with neural network classification, it performed as well as human experts, required fewer animals to detect treatment differences, and detected drug effects on head dips that EthoVision missed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 describe specific performance comparisons from Sturman et al. 2020. These are empirical findings from a published study comparing DeepLabCut to established methods across multiple behavioral assays, providing concrete evidence of superior performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Pose estimation methods have been crucial for diverse recent research applications including tracking fluid consumption for reward prediction error coding, accounting for wind effects on Drosophila behavior, understanding tactile perception in freely moving mice, studying whisker system interactions with locomotion, and measuring eye movement relationships with neural activity in rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 cite specific published studies (Ottenheimer et al. 2020, Okubo et al. 2020, Schorscher-Petcu et al. 2021, Warren et al. 2021, Keshavarzi et al. 2022) demonstrating diverse applications of pose estimation methods. Each claim is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Despite emerging studies using pose estimation, there is insufficient widespread adoption across the research community, possibly due to the technical complexity of collecting high-quality video recordings and setting up pose estimation methods, which require GPU access and ability to use Python or MATLAB code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 make reasonable observations about adoption barriers based on technical requirements. These are logical inferences about why adoption may be limited, grounded in the practical realities of implementing these methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The manuscript provides detailed practical guidance for video recording setup including camera placement (above, side, or below arena), camera selection (USB webcams at 30+ fps for basic needs, machine vision cameras for precise timing), technical considerations (dedicated USB channels, synchronization capabilities, bandwidth limitations), data storage requirements (2-20 GB per hour of video), and strategies to minimize occlusions through appropriate camera positioning and viewing angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 provide practical technical guidance based on established knowledge and experience in the field. These represent best practices for experimental setup, with specific technical details (C44 provides concrete file size data) and citations where appropriate (C47 cites Hsu and Yttri 2021a, Luxem et al. 2022a).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "DeepLabCut uses ResNet architecture for deep learning, with models pre-trained on ImageNet. Through transfer learning, it can learn keypoint positions using as few as 200 labeled frames, providing very accurate pose estimations but requiring extensive training time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 accurately describe DeepLabCut's technical approach, supported by citations to the original papers (Mathis et al. 2018a, 2018b) and the ResNet architecture (He et al. 2016) and ImageNet dataset (Russakovsky et al. 2015). These are established technical details of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SLEAP is based on the earlier LEAP method and uses simpler CNN architectures with repeated convolutional and pooling layers. This makes the model more lightweight compared to DeepLabCut's ResNet architecture, resulting in faster training with comparable accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe SLEAP's technical architecture and compare it to DeepLabCut, supported by citations to the SLEAP papers (Pereira et al. 2022). The comparison of architectural complexity and training speed is a reasonable technical assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "DeepPoseKit uses stacked DenseNet architecture (an efficient variant of stacked hourglass) with multiple down- and upsampling steps. The model uses only about 5% of the parameters used by DeepLabCut, providing speed improvements over both DeepLabCut and LEAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 describe DeepPoseKit's architecture with appropriate citations (Graving et al. 2019a, 2019b; Newell et al. 2016). The quantitative comparison (5% of parameters) provides specific data on model efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "B-KinD discovers keypoints without human supervision and has potential to transform pose estimation by eliminating the time-consuming keypoint annotation process. However, it faces challenges when occlusions occur in video recordings, such as with animals tethered to brain recording systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe B-KinD's capabilities and limitations, supported by citations (Sun et al. 2021a, 2021b). While C60 is somewhat speculative about transformative potential, it is qualified appropriately and balanced by the acknowledged limitation in C61.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "For multi-animal tracking, bottom-up models detect all parts then group them (more memory-intensive but robust to occlusions, good for rodents), while top-down models detect animals first then locate keypoints (faster processing, better for smaller animals like flies). Single-animal models can be adapted for multi-animal settings with preprocessing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe technical approaches to multi-animal tracking with appropriate citations (Cao et al. 2017 for part affinity fields, Graving et al. 2019a and Pereira et al. 2019 for preprocessing approaches). The trade-offs described represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "MOT-based approaches can track animals with indistinguishable appearances but are prone to error propagation (identity switches persist across frames). ReID methods circumvent this by detecting distinguishing visual features but may not be compatible with all datasets or paradigms. Visual markers (different fur colors, non-toxic dyes, barcode labels) can aid identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 describe tracking approaches and their trade-offs, with citations for visual marker techniques (Ohayon et al. 2013, Crall et al. 2015). These represent established challenges and solutions in multi-animal tracking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Most pose tracking tools are fully supervised with graphical interfaces for labeling. Previous work shows hundreds to thousands of labeled examples may be required (taking up to 2 minutes per example to label). Human-in-the-loop labeling workflows can drastically reduce the time needed to generate training data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 describe the labeling requirements and workflows for pose estimation, supported by citations to multiple studies (Mathis et al. 2018a, Pereira et al. 2022, Pereira et al. 2019). The time estimates and workflow recommendations are based on published experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "3D motion capture significantly increases technical complexity compared to 2D tracking, requiring camera synchronization and calibration. Methods include triangulation-based approaches (Anipose, OpenMonkeyStudio, DeepFly3D), lifting from 2D poses (LiftPose3D), and direct 3D estimation (DANNCE using volumetric convolutions). DANNCE avoids 2D pose errors but requires more computational power. Currently, no 3D methods natively support multi-animal tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 provide a comprehensive overview of 3D pose estimation approaches with appropriate citations for each method (Karashchuk et al. 2021, Bala et al. 2020, G\u00fcnel et al. 2019, Gosztolai et al. 2021, Dunn et al. 2021). The technical trade-offs and current limitations are accurately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "B-SOiD analyzes pose data with unsupervised machine learning using UMAP embedding for dynamic features and HDBSCAN clustering. Clustered spatiotemporal features train a Random Forest classifier to detect behavioral classes with millisecond precision. MotionMapper is another method that does not use pose estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 describe B-SOiD's technical approach with appropriate citations (Hsu and Yttri 2021a, 2021b for B-SOiD; Berman et al. 2014 for MotionMapper; McInnes et al. 2020 for UMAP; McInnes et al. 2017 for HDBSCAN; Breiman 2001 for Random Forest). The technical details are accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "VAME uses self-supervised deep learning with a variational autoencoder framework to infer behavioral dynamics from pose data. The encoder learns representations in latent space while the decoder reconstructs the original data, both parameterized with recurrent neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 describe VAME's technical approach, supported by citations to VAME papers (Luxem et al. 2022a, 2022b) and the variational autoencoder framework (Kingma and Welling 2019). The technical description is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "TREBA relates pose estimation measures to other quantitative or qualitative data associated with video frames. It can incorporate behavioral attributes (movement speed, distance, heuristic labels) into learned representations using task programming, combining unsupervised and supervised learning aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 describe TREBA's approach, supported by citations to TREBA papers (Sun et al. 2021c, 2021d). The description of task programming and the combination of supervised and unsupervised elements is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SimBA is a supervised learning pipeline using Random Forest for social behavior and aggression studies, discriminating between attack, pursuit, and threat behaviors in rodents. MARS is another supervised pipeline for social interactions using XGBoost. A-SOiD is an active-learning algorithm that iteratively combines supervised and unsupervised approaches to reduce training data requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 describe three behavioral segmentation tools with appropriate citations (Nilsson et al. 2020a, 2020b for SimBA; Segalin et al. 2021a, 2021b for MARS; Chen and Guestrin 2016 for XGBoost; Schweihoff et al. 2022 for A-SOiD). The descriptions accurately represent these tools' capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The field lacks a common data format for pose estimation tools and direct method comparisons on standard videos. Deep learning method and hyperparameter choices affect performance (e.g., receptive field size impacts cross-species performance). Algorithm requirements vary by application (temporal smoothness for motor control vs. preventing identity swaps for social behavior). Most methods lack well-calibrated confidence measures, and machine learning tools tend to be overconfident in predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 identify important methodological gaps and challenges in the field, supported by citations (Sculley et al. 2015, Pereira et al. 2022, Wu et al. 2020, Segalin et al. 2021a, Abdar et al. 2021). These represent legitimate concerns about current practices and method limitations.",
+    "result_type": "MAJOR"
+  }
+]

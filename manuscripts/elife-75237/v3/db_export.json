@@ -1,0 +1,2124 @@
+{
+  "submission": {
+    "id": "6fcf7848-dc38-4b74-9926-b979955695aa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:52:39.013797Z",
+    "updated_at": "2025-12-03T12:52:39.013797Z"
+  },
+  "content": [
+    {
+      "id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "submission_id": "6fcf7848-dc38-4b74-9926-b979955695aa",
+      "content_type": "manuscript",
+      "content_text": "# Microevolution of Trypanosoma cruzi reveals hybridization and clonal mechanisms driving rapid genome diversification\n\n## Authors\n\n- Gabriel Machado Matos<sup>1</sup> ([ORCID: 0000-0003-3744-2673](https://orcid.org/0000-0003-3744-2673))\n- Michael D Lewis<sup>3</sup>\n- Carlos Talavera-L\u00f3pez<sup>2</sup>\n- Matthew Yeo<sup>3</sup>\n- Edmundo C Grisard<sup>5</sup>\n- Louisa A Messenger<sup>3</sup>\n- Michael A Miles<sup>3</sup>\n- Bj\u00f6rn Andersson<sup>2</sup> ([ORCID: 0000-0002-4624-0259](https://orcid.org/0000-0002-4624-0259)) \u2020\n\n### Affiliations\n\n1. Departamento de Biologia Celular, Embriologia e Gen\u00e9tica, Universidade Federal de Santa Catarina Florianopolis Brazil ([ROR:041akq887](https://ror.org/041akq887))\n2. Department of Cell and Molecular Biology, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n3. Faculty of Infectious and Tropical Diseases, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))\n4. Institute of Computational Biology, Computational Health Centre, Helmholtz Munich Munich Germany\n5. Departamento de Microbiologia, Imunologia e Parasitologia, Universidade Federal de Santa Catarina Florianopolis Brazil ([ROR:041akq887](https://ror.org/041akq887))\n\n\u2020 Corresponding author\n\n## Abstract\n\nProtozoa and fungi are known to have extraordinarily diverse mechanisms of genetic exchange. However, the presence and epidemiological relevance of genetic exchange in Trypanosoma cruzi, the agent of Chagas disease, has been controversial and debated for many years. Field studies have identified both predominantly clonal and sexually recombining natural populations. Two of six natural T. cruzi lineages (TcV and TcVI) show hybrid mosaicism, using analysis of single-gene locus markers. The formation of hybrid strains in vitro has been achieved and this provides a framework to study the mechanisms and adaptive significance of genetic exchange. Using whole genome sequencing of a set of experimental hybrids strains, we have confirmed that hybrid formation initially results in tetraploid parasites. The hybrid progeny showed novel mutations that were not attributable to either (diploid) parent showing an increase in amino acid changes. In long-term culture, up to 800 generations, there was a variable but gradual erosion of progeny genomes towards triploidy, yet retention of elevated copy number was observed at several core housekeeping loci. Our findings indicate hybrid formation by fusion of diploid T. cruzi, followed by sporadic genome erosion, but with substantial potential for adaptive evolution, as has been described as a genetic feature of other organisms, such as some fungi.\n\n## Introduction\n\nTrypanosoma cruzi is a kinetoplastid protozoan and the etiologic agent of Chagas disease, one of the neglected and highest impact parasitic infections in the Americas (P\u00e9rez-Molina and Molina, 2018). Chagas disease is estimated to cause great loss in both health-care costs and disability-adjusted life years (Lee et al., 2013). Human migration and specific modes of transmission than the canonical vector-based have led to a spreading beyond its natural geographical boundaries, becoming a global issue (P\u00e9rez-Molina and Molina, 2018; Bern, 2015). T. cruzi transmission is a zoonosis maintained by numerous species of triatomine insects and different species of mammals (Jansen et al., 2018). This parasite has a complex life cycle, where transmission to humans occurs most frequently by contamination with infected feces from triatomine vectors. Other routes of human infection include congenital, oral (mainly consumption of raw contaminated foods), and contaminated transplant tissues and blood products. To evade the immune responses, the parasite displays a vast, complex repertoire of surface proteins involved in cell invasion and pathogenicity (De Pablos and Osuna, 2012; Pech-Canul et al., 2017; Talavera-L\u00f3pez et al., 2021). The regions of the genome coding for these molecules are composed of highly repetitive sequences, with hundreds to thousands of members of each family, as well as substantial numbers of transposable elements, microsatellite, and tandem repeats (Talavera-L\u00f3pez et al., 2021; El-Sayed et al., 2005; Wang et al., 2021).\n\nThe reproductive mode of these parasitic protozoans has been widely debated, and both preponderate clonal evolution (Tibayrenc and Ayala, 2012; Tibayrenc and Ayala, 2013) and sexual reproduction (Ram\u00edrez and Llewellyn, 2014; Schwabl et al., 2019; Inbar et al., 2019) have been proposed. Many eukaryotic pathogens have essentially clonal population structures while also having non-obligate sexual cycles, which may enable them to adapt to environmental changes (Heitman, 2006; Lewis et al., 2011; Steensels et al., 2021). In trypanosomatids, the most well-studied mating system is that of Trypanosoma brucei, for which a meiotic process is well supported based on the identification of a haploid parasite stage in the vector (Peacock et al., 2014) and on the patterns of allele inheritance and recombination observed in experimental hybrids (MacLeod et al., 2005). In T. cruzi, great genetic and phenotypic diversity is observed, and six distinct genetic clades have been recognized, named TcI to TcVI (discrete typing units or DTU-I to -VI) (Zingales et al., 2012). Genotyping analysis indicates that TcV and TcVI are recent, natural inter-lineage hybrids of TcII and TcIII, showing that recombination events have shaped the evolution of T. cruzi lineages (Schwabl et al., 2019; Lewis et al., 2011; Messenger and Miles, 2015). In addition to natural evidence of hybridization, the formation of T. cruzi hybrids in vitro was also described (Gaunt et al., 2003). Genetic marker analyses of hybrid strains showed multi-allelic (non-Mendelian) inheritance of microsatellite alleles and an elevated DNA content (Gaunt et al., 2003; Lewis et al., 2009). The hybridization events in T. cruzi were proposed to occur via a parasexual mechanism, similar to those observed in certain fungi (Lewis et al., 2011; Steensels et al., 2021; Gaunt et al., 2003; Bennett, 2015). While certain aspects of the molecular mechanisms involved in this process have been studied (Alves et al., 2018), the contribution of each parental strain in hybrid genomes, as well as the mechanisms and adaptive significance of the hybridization phenomenon, are not well understood.\n\nExperimental evolution approaches in defined environments have been widely used to study the evolution of model organisms (such as bacteria, yeast, and Drosophila sp.) (Zeyl, 2006; Burke and Rose, 2009; Kawecki et al., 2012; Lenski, 2017) although this is not the case for parasitic protozoa. To investigate the effects of clonal reproduction and genetic exchange on the T. cruzi genome at the microevolutionary scale, we selected two closely related TcI strains (P1, P2) and three hybrid clones that were generated from a P1 \u00d7 P2 cross (1C2, 1D12, 2C1) (Gaunt et al., 2003). In addition, to dissect the underlying mechanisms of hybridization in T. cruzi, we applied a comparative genomics approach based on genome sequence data generated for parental strains and hybrid clones at the beginning and at the end of the in vitro microevolution experiment.\n\n## Results\n\n### Stability of DNA content during experimental in vitro microevolution\n\nTo investigate the effects of clonal reproduction and genetic exchange on the T. cruzi genome at the microevolutionary scale, we selected two TcI strains (P1, P2) and three hybrid clones that were generated from a P1 \u00d7 P2 cross (1C2, 1D12, 2C1) (Gaunt et al., 2003). The two parents and three hybrids were included in an in vitro evolution experiment in which they were continuously cultured as epimastigote forms for 5 years, equivalent to approximately 800 generations of replication by binary fission (Figure 1A). At the end of the experiment, we re-cloned the parasite lines and selected three clones per line for analysis. During this microevolution experiment, we monitored the DNA content of each parasite line at approximately 200-generation intervals to check for evidence of large-scale structural genomic changes. We observed that the DNA content of the two parental lines remained approximately constant (Figure 1B\u2013D). At the start of the experiment, the total DNA content of the hybrid clones was approximately 70% greater than the parentals (Figure 1C, D, Lewis et al., 2009), which equated to slightly below expectations for a tetraploid parasite with one kinetoplast (containing mitochondrial DNA), that is, a 4n1k (4C) genome size. Over the course of the microevolution experiment, in contrast to P1 and P2, we found that the DNA content of the hybrids became progressively lower over time, up to a maximum decrease of 22.5% by generation 800. By extrapolation from the estimated genome sizes of P1 (94.5 Mb) and P2 (92.5 Mb) (Lewis et al., 2009), these data indicate genome erosion in the hybrids occurred at an average rate of 23 kb per generation. There were, however, notable differences in genome erosion patterns between the three hybrid lines. Hybrid 2C1 showed gradual genome erosion at each time point, with all three 800 generation evolved clones approximating a 3C genome size. Hybrid 1C2 showed a more intermittent pattern \u2013 most of the erosion occurred between 0\u2013200 and 400\u2013600 generations, reaching a 3C genome size, but interestingly, 2 of the 800 generation clones gained ~10% more DNA than at t=600. Lastly, hybrid 1D12 had an initial 9% loss between t=0 and t=200, but was then quite stable over time between 3C and 4C.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig1-v3.jpg)\n\n**Figure 1.:** (A) Overview of experimental design. (B) DNA content profiles shown as propidium iodide (PI) staining intensity histograms measured by flow cytometry. PI fluorescence = relative fluorescence units; y-axis shows number of events from the population of parasites at the indicated generation of the in vitro culture experiment from start (t=0) to finish (t=800). Plots of one parent and one hybrid are shown, representative of three biological replicates for each time point. The vertical dashed line marks the position of the G1 fluorescence intensity peak at t=0. (C) Quantitative analysis of DNA content for both parents and three hybrid strains at each time point and for three clones per strain generated after the final time point of 800 generations. Data are the mean + SEM of three biological replicates after normalization against an internal standard and conversion to a ratio of the mean of the two parents at t=0. The predicted total DNA content ranges equating to tetraploid (4n1k) and triploid (3n1k) parasites are indicated, under the assumption that kDNA constitutes between 20% and 30% of total DNA. (D) The same data as shown in C, represented as the % change in DNA content over time compared to t=0. (E) Distinct genomic signatures exclusive to each parental strain were inherited by the hybrid strains. In black are represented SNPs present in both parental strains, in green SNPs exclusive to the P1 strain, in purple SNPs exclusive to the P2 strain, in dark blue SNPs common to all hybrids, and in light blue SNPs exclusive to each hybrid clone.\n\nNext, we looked for evidence of instability at specific loci in the hybrid genomes using PCR-based multilocus microsatellite genotyping, which had previously provided some evidence for non-Mendelian inheritance in the hybrids from the original P1 \u00d7 P2 cross (Gaunt et al., 2003). Specifically, at many loci the hybrids inherited more than one allele per parent. We found that three of the nine evolved hybrid clones had lost at least one microsatellite allele (Supplementary file 1). These data indicated that the enlarged genomes of T. cruzi hybrids were subject to erosion over an extended period of clonal replication. To dissect the underlying mechanisms, we applied a comparative genomics approach based on sequence data for parental and hybrid samples from the beginning and end of the microevolution experiment.\n\n### Parental strains display distinct genomic signatures\n\nThe genomes of the two parental strains were characterized using de novo genome assemblies from short Illumina reads. Despite high sequence coverage and the linking information provided by additional long insert size libraries, the final assemblies only reconstructed 77.1% and 74.8% of the P1 and P2 genomes, respectively (Supplementary file 2), due to the high repeat content of the genomes as also observed to other previously sequenced T. cruzi genomes. The haploid estimated genome size of P1 differed from P2 by approximately 2 Mbp, and both parental strains genomes were found to be slightly larger than the 44 Mbp reference TcI-Sylvio X10/1 strain (Talavera-L\u00f3pez et al., 2021), in line with flow cytometry-based DNA content measurements (Lewis et al., 2009).\n\nWhile the parental strains both belong to the TcI clade, with highly conserved synteny in the core regions, they still show significant genetic diversity. Reads from the parental strains were mapped to the reference TcI-Sylvio X10/1 genome, followed by SNP calling and a comparative analysis. The resultant genome-wide average SNP density was 9.28 and 3.71 SNP/kb for P1 and P2, respectively (Table 1). Most SNPs were located within repetitive regions, particularly in areas containing surface molecule gene family members, which can be related to gene expansion in these regions. Indeed, copy number variation (CNV) analysis showed that P1 displays these tandem-repeated and surface molecule-coding regions expanded in comparison to P2. To avoid the influence of low mapping quality in repeated regions, we applied a strict mapping quality filter, removing any SNP in regions with mapping quality below 50. SNP density in the retained high-quality regions was 2.84 and 2.11 SNPs/kb for P1 and P2, respectively (Table 1), and a total of 68,616 and 34,843 SNPs exclusive for each parental strain were catalogued for use in the analysis of the hybrid strains (Figure 1E). This level of differentiation between P1 and P2 provided ample scope to explore the genetic composition and inheritance patterns in the hybrid clones.\n\n**Table 1.**\n Average SNP density per kilobase in starting generation parental strains and hybrid clones.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>SNP/kb genome-wide</th>\n      <th>SNP/kb high-quality mapping regions</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P1-0</td>\n      <td>9.28</td>\n      <td>2.84</td>\n    </tr>\n    <tr>\n      <td>P2-0</td>\n      <td>3.71</td>\n      <td>2.11</td>\n    </tr>\n    <tr>\n      <td>1C2-0</td>\n      <td>7.63</td>\n      <td>3.48</td>\n    </tr>\n    <tr>\n      <td>1D12-0</td>\n      <td>7.46</td>\n      <td>3.29</td>\n    </tr>\n    <tr>\n      <td>2C1-0</td>\n      <td>8.22</td>\n      <td>3.49</td>\n    </tr>\n  </tbody>\n</table>\n\nMitochondrial DNA (kDNA) comprises up to 20\u201330% of the total T. cruzi DNA, consisting of relatively conserved dozens of maxi- and thousands of minicircles (Souza et al., 2011). This range was used to infer 3C and 4C genome sizes (Figure 1E) and the frequency of kDNA-mapping reads was 10.1% for parents and 11.5% for hybrids in average. However, there was substantial variation between samples as expected, and no correlation with the flow cytometric measurement of total DNA content. Despite the large amounts of kDNA maxi- and minicircles/cell, our interpretation is that extraction efficiency of kDNA is lower than for nuclear DNA and more variable between samples, probably due to the highly intercalated molecular network structure of kDNA. All kDNA-mapping reads were removed prior genetic diversity analysis.\n\n### An increase in genetic diversity is observed after hybridization\n\nTo evaluate the impact of hybridization on genetic diversity, we compared variant densities in the high-quality mapping regions of the genomes of all hybrid and parental strains. The average SNP density in these regions was higher in all hybrids than in parental strains: 3.48 SNP/kb for 1C2-0, 3.29 SNP/kb for 1D12-0, and 3.49 SNP/kb for 2C1-0 (Table 1), partially due to the presence of alleles from both parental strains. In addition to the SNPs clearly inherited from each parental strain, additional SNPs common to all hybrids and SNPs exclusive to each hybrid clone were identified in both coding and non-coding regions, revealing sample-specific patterns (Figure 1E). Some SNPs that were common to all hybrid strains were not detected in the parental genomes, mainly consisting in mutations that occurred in culture during the approximately 70 generations of parent parasite growth before the cross was set up (Figure 1A). They are unlikely to be attributable to growth of a common progenitor hybrid prior to the cloning step because of differential inheritance of kDNA in 1D12 vs. 2C1 and 1C2 (Gaunt et al., 2003), which suggests they are derived from at least two independent hybridization events. Interestingly, de novo mutations common to all hybrids and exclusive to each hybrid clone were predicted to generate a higher percentage of non-synonymous changes in comparison to the mutations inherited from the parental strains (Supplementary file 3). Indeed, the ratio of non-synonymous changes per synonymous changes was higher in the de novo mutations common to all hybrids (2.36 for 1C2-0, 2.25 for 1D12-0, and 2.19 for 2C1-0), and exclusive to each hybrid clone (2.40 for 1C2-0, 2.23 for 1D12-0, and 2.37 for 2C1-0) than in those inherited from the parental strains (1.41 for 1C2-0, 1.40 for 1D12-0, and 1.42 for 2C1-0) (Supplementary file 3).\n\nTo investigate the impact of these mutations on the variable regions of the genome, we compared the ratio of surface protein-coding genes per non-surface protein-coding genes. This ratio is approximately 4-fold higher in SNPs common to all hybrids and in SNPs exclusive to each hybrid clone than in those inherited from the parental strains (Supplementary file 4). In addition, we compared the ratio of non-synonymous mutations in surface protein-coding genes per non-synonymous mutations in other genes. Interestingly, this ratio was approximately 3.3-fold higher in the hybrid clone-specific SNPs in comparison to those inherited from the parental strains (Supplementary file 5).\n\n### CCNV analysis reveals tetraploid hybrids\n\nChromosome copy number variation (CCNV) was determined using the combination of read depth coverage (RDC) and allele balance (AB) methods (Reis-Cunha and Bartholomeu, 2019). An increase or decrease in the mean RDC of a chromosome when compared to the overall genome coverage is an indicator of a gain or loss of chromosomal sequences, respectively (Reis-Cunha and Bartholomeu, 2019). If the ratio between the median chromosome coverage and the median genome coverage is approximately one, the chromosome has the same copy number as the genome, while fluctuations in this ratio indicate aneuploidies. Here, the RDC analysis was based on the ratio between the mean coverage of predicted single-copy genes in each chromosome and the mean coverage of all single-copy genes in the genome as described by Reis-Cunha et al., 2015 (Figure 2A). In this CCNV estimation, values of \u20180.5\u2019, \u20181\u2019, and \u20182\u2019 denote that the chromosome has, respectively, \u20180.5\u2019, \u20181\u2019, or \u20182\u2019 copies per haploid genome. This means that, if the studied genome is mainly diploid, a value of \u20181\u2019 in this estimation represents two chromosomal copies (one per haploid genome), whereas a value of \u20181.5\u2019 represents three copies and a value of \u20182\u2019 represents four copies. This methodology was shown to eliminate bias caused by chromosomal repetitive content in T. cruzi (Reis-Cunha et al., 2015), which would otherwise obscure the correct copy numbers. We were unable to estimate CCNV in chromosomes 17, 22, 30, and 47 by this methodology due to the lack of single-copy genes in these chromosomes, and therefore the chromosomal somy prediction presented for them was estimated based on the ratio between the mean RDC of each chromosome position and the mean coverage of all genome positions (Figure 2A). Aneuploidy was observed in the P2 strain, involving trisomy of chromosomes 2 and 21 (Figure 2A, B). The RDC analysis indicated aneuploidy in chromosome 44 in the P1 strain, but due to the lack of regions with high-quality SNPs, it was not possible to confirm this in the AB analysis (Figure 2A, B). The RDC analysis also indicated aneuploidies in chromosome 6 in both parental strains and in chromosome 31 of P1 strain (Figure 2A). However, the AB analysis was not consistent across the entire chromosome (Figure 2B), which may be related to CNV in specific regions of these chromosomes rather than aneuploidy, as observed in other T. cruzi strains (Schwabl et al., 2019; Reis-Cunha et al., 2015).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig2-v3.jpg)\n\n**Figure 2.:** (A) Aneuploidy analysis based on RDC among all 47 chromosomes in the starting generation of parental strains (P1-0 and P2-0) and hybrids (1C2-0, 1D12-0, and 2C1-0). An increase or decrease in the mean RDC of a chromosome when compared to the genome coverage is an indicator of a gain or loss of chromosomal sequences. When the ratio between the median chromosome coverage and the median genome coverage was approximately one, the chromosome was considered having the same somy as the genome, while fluctuations in this ratio (lower than 0.75 or higher than 1.25) were considered as putative aneuploidies. (B) Proportion of the alleles in heterozygous SNP positions in chromosomes with RDC ratio higher than 1.25 to confirm somy estimations. Blue points represent the proportion of the alleles in heterozygous SNP positions along the chromosome. Darker blue represents the frequency of the first allele while lighter blue represents the frequency of the second allele, black lines represent the median value in windows. (C) Ploidy estimation based on the proportion of the alleles in heterozygous SNP positions of single-copy genes. It is expected that diploid genomes display a proportion of each allele around 50%, triploid genomes around 33.3% and 66.6%, while tetraploid genomes around 25% and 75% or 50% (Lenski, 2017). Darker blue represents the frequency of the first allele while lighter blue represents the frequency of the second allele.\n\nRDC analysis does not allow differentiation between different levels of euploidy (or near-euploidy), therefore whole genome ploidy was estimated by analysing the proportion of the alleles in heterozygous SNP positions of all single-copy genes (Figure 2C). In both parental strains, a peak at 50% was observed, while in the hybrids, peaks at 25% and 75% or 50% were observed (Figure 2C), which is expected for diploid and tetraploid genomes, respectively (Reis-Cunha and Bartholomeu, 2019). This ploidy estimation is in accordance with the previous DNA content estimation based on flow cytometry data, in which the hybrids displayed ~70% greater DNA content than the parental strains (Figure 1C, Lewis et al., 2009), given that this method could not determine the relative amounts of mitochondrial kDNA and nuclear DNA. Inheritance of SNPs exclusive to both parental strains were observed in the hybrid genomes (Figure 1E), which shows that the tetrasomic profile observed resulted from a contribution from both parental chromosomes.\n\nIn order to address chromosome specificities and confirm the somy estimates, the AB analysis was performed independently for each chromosome. The proportion of each allele with heterozygous SNPs per chromosome position was plotted for 46 TcI chromosomes (Figure 3\u2014figure supplements 1\u20135), thus excluding chromosome 17 due to the absence of coding regions. Clear patterns of somy were observed in 37 chromosomes (chromosomes 1\u201316, 18\u201319, 21, 23, 25\u201329, 31\u201333, 35\u201339, 41, 43, 45\u201346; Figure 3\u2014figure supplements 1\u20135). Due to a lack of regions containing high-quality heterozygous SNPs generating inconsistent AB, somy estimation was not reliable for chromosomes 17, 20, 22, 24, 30, 34, 40, 42, 44 (Figure 3\u2014figure supplements 1\u20135). Based on our filtering criteria, all SNPs called in chromosome 47 were removed from further analysis, therefore no AB plot is presented for this chromosome. AB analysis shown to be reliable for estimating aneuploidy in chromosomes with longer core regions that contain housekeeping genes and other genes that are conserved between kinetoplastids, while the presence of large tandemly repeated regions and surface protein-coding gene families made read mapping, and thus copy number estimation difficult for some chromosomes. High resolution representations of the CCNV analysis are shown for six chromosomes (Figure 3). Chromosomes 2, 7, and 13 have longer tandem repeated regions and coding sequences for surface proteins (percentage of surface protein-coding genes: chr2 7.26%, chr7 9.55%, chr13 8.38%), while chromosomes 18, 21, and 37 have longer core regions (percentage of surface protein-coding genes: chr18 1.25%, chr21 1.98%, chr37 3.74%) (Figure 3A). The mapping quality in surface protein-coding sequences was often observed to drop significantly, which affected the inferred proportions of alleles in those regions, and this was found to lead to erroneous somy estimates (Figure 3B). To avoid this, a strict mapping quality filter was applied, and all the allele proportions were plotted by chromosome position. Using this strategy, it was possible to identify specific regions in chromosomes that could be used to infer CCNV with high confidence. Chromosomes 2, 7, and 13 showed longer regions with diverse allele proportions, nonetheless it was still possible to identify the trisomy of chromosome 2 of P2 and tetrasomies in hybrids based on using the smaller core regions (Figure 3C). Chromosomes 18, 21, and 37 showed somy patterns that were clearly consistent with the whole genome CCNV, confirming the trisomy in chromosome 21 of P2 and tetrasomy in the hybrid clones (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-v3.jpg)\n\n**Figure 3.:** (A) Gene distribution and its implication in mapping quality (MQ) and somy estimation of six representative TcI chromosomes with longer surface molecule-encoding regions (chromosomes 2, 7, and 13) and shorter encoding surface molecule-encoding regions (chromosomes 18, 21, and 37). Surface protein-coding genes are represented as cyan blue boxes while other genes are represented as black boxes. (B) Implication of chromosome gene distribution in MQ and somy estimation based on AB in chromosome 2 (longer surface molecule-encoding regions) of parental strain 1 (P1-0). Dark green represents the fluctuation in MQ along chromosome positions. Blue points represent the proportion of the alleles in heterozygous SNP positions along the chromosome. Darker blue represents the frequency of the first allele while lighter blue represents the frequency of the second allele, black lines represent the median value in windows. (C) Proportion of the alleles in heterozygous SNP positions in chromosomes with longer surface molecule-encoding regions. (D) Proportion of the alleles in heterozygous SNP positions in chromosomes with shorter surface molecule-encoding regions. Blue points represent the proportion of the alleles in heterozygous SNP positions along the chromosome. Darker blue represents the frequency of the first allele while lighter blue represents the frequency of the second allele, black lines represent the median value in windows.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp1-v3.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp2-v3.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp3-v3.jpg)\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp4-v3.jpg)\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp5-v3.jpg)\n\n### CCNV reveals sequential loss of chromosomal copy in hybrid clones after culture growth\n\nCCNV and whole genome ploidy were evaluated in three replicate clones for each parental and hybrid strains after 800 generations in continuous in vitro culture. The trisomies in chromosomes 2 and 21 of P2 (Figure 2A) were no longer observed in any replicate clone after growth in culture (Figure 4A). New aneuploidies were identified in the parental strains, involving trisomy of chromosomes 37 and 45 in all P1 clones and trisomy of chromosomes 32 and 37 in all P2 clones (Figure 4A, B). As observed in the first generation, the RDC and AB analyses in chromosomes 6 and 31 were not consistent throughout the chromosomes (Figure 5\u2014figure supplements 1\u201315). Whole genome ploidy estimation revealed a shrinking pattern in the hybrids, which was consistent with the prior flow cytometry analysis (Figure 1C). While parental strains remained essentially diploid (apart from the few aforementioned trisomies), a mixture between trisomic and tetrasomic profiles was observed in the hybrids after growth in culture (Figure 4C). Indeed, hybrid 2C1 displayed a clear transition from a tetraploid to a triploid pattern after growth in culture (Figure 4C), suggesting that genome erosion eventually leads to a return towards diploidy after the hybridization event, as observed in the naturally occurring TcV and TcVI hybrids (Lewis et al., 2009). In contrast with the first generation, the RDC analysis indicates putative aneuploidies in hybrid clones after extended culture growth (Figure 4A). Despite the patterns of genome erosion, tetrasomic profiles in chromosomes 19 and 37 were present in all hybrid clones after culture growth (Figure 4A, B). Taken together with previous DNA content analysis of intermediate time points (Figure 1), our results from the different in vitro evolved clones indicate that the genome erosion seems to be gradual phenomena, with sequential losses of chromosome copies and regions rather than coordinated jumps between ploidy levels. The proportion of each allele in heterozygous SNPs per chromosome position was also plotted for the 47 chromosomes in each replicate after culture growth (Figure 5\u2014figure supplements 1\u201315). As observed in the representative chromosomes, the evolved parental clones still have a clear disomic pattern, while a mixture of trisomic and tetrasomic patterns is observed in evolved hybrid clones (Figure 5; Figure 5\u2014figure supplements 1\u201315).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig4-v3.jpg)\n\n**Figure 4.:** (A) Aneuploidy analysis based on RDC among the 47 chromosomes in all clones after culture growth. (B) Proportion of the alleles in heterozygous SNP positions in chromosomes showing aneuploidies in all parental or hybrid clones. (C) Comparison of somy estimation based on the proportion of the alleles in heterozygous SNP positions of single-copy genes. First generation is presented in shaded blue, while the 800 generation is presented in orange.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-v3.jpg)\n\n**Figure 5.:** (A) Proportion of the alleles in heterozygous SNP positions in chromosomes with longer surface molecule-encoding regions. (B) Proportion of the alleles in heterozygous SNP positions in chromosomes with shorter surface molecule-encoding regions. Points represent the proportion of the alleles in heterozygous SNP positions along the chromosome.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp1-v3.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp2-v3.jpg)\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp3-v3.jpg)\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp4-v3.jpg)\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp5-v3.jpg)\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp6-v3.jpg)\n\n![Figure 5\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp7-v3.jpg)\n\n![Figure 5\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp8-v3.jpg)\n\n![Figure 5\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp9-v3.jpg)\n\n![Figure 5\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp10-v3.jpg)\n\n![Figure 5\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp11-v3.jpg)\n\n![Figure 5\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp12-v3.jpg)\n\n![Figure 5\u2014figure supplement 13.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp13-v3.jpg)\n\n![Figure 5\u2014figure supplement 14.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp14-v3.jpg)\n\n![Figure 5\u2014figure supplement 15.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp15-v3.jpg)\n\n### Patterns of genome erosion after in vitro microevolution\n\nTo investigate the patterns of genome erosion and CCNV in the hybrids, we performed a CNV analysis throughout the whole genome of parental and hybrid clones after extended culture growth. Despite the stability of DNA content in parental clones during our experiment (Figure 1C, D), similar gene categories showed CNV in both parental and hybrid clones after culture growth (Supplementary files 6\u201312). Gene losses occurred mainly in host-parasite interaction genes such as surface protein-coding genes and genes related to exocytosis and cell secretion, while genes related to macromolecule metabolism, ion transport, and cell division showed an increase in copy numbers (Figure 6; Figure 6\u2014figure supplement 1). Despite the events of genome erosion, chromosomes 19 and 37 remained tetrasomic in all hybrid clones and an extra copy of chromosome 37 is observed in all parental clones after culture growth (Figure 4B and Figure 5B). Chromosomes 19 and 37 contain long core regions with abundant housekeeping genes involved in cellular metabolism, DNA replication and transcription (Supplementary files 10 and 11) which may contribute to fitness in culture. Altogether, these results suggest that the presence or absence of selective pressure from the environment may shape CCNV and genome erosion in T. cruzi, resulting in distinct genome patterns after hybridization events occur.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig6-v3.jpg)\n\n**Figure 6.:** (A) CNV comparison in parental strain. (B) CNV comparison in hybrid strain. Each dot in the CNV profile chart represents the normalized depth per kb, while lines represent the median ratio (Cingolani et al., 2012). Blue points and lines represent CNV profiles in the first generation, while red points and lines represent CNV profiles after 800 generations of in vitro culture growth. surface protein-coding genes are represented as cyan blue boxes, while other genes are represented as black boxes.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig6-figsupp1-v3.jpg)\n\n### Genetic diversity in evolved genomes\n\nThe effect of extended culture growth on genetic diversity was evaluated in all parental and hybrid evolved clones. Regarding the parental strains, all P1 replicates showed a similar SNP density in the retained high-quality regions after culture growth (P1-0: 2.84; P1-1: 2.80; P1-2: 2.77; P1-3: 2.82), while all P2 replicates showed an increase in SNP density after culture growth (P2-0: 2.11; P2-1 2.78; P2-2 2.81; P2-3 2.66, Mann-Whitney, p=0.042) (Figure 7A). The P2 replicates have a reduction in copies of HUS1-like encoding genes, which are involved in DNA repair, after culture growth (Supplementary file 12). Our gene enrichment analysis showed that a number of these genes were located on chromosome 2 (Supplementary file 12), suggesting that the loss of trisomy in this chromosome could possibly have contributed to the higher number of mutations that was found in the P2 clones. New genomic variants were found in both evolved parental clones (Figure 7A). All evolved hybrid replicate clones, with exception of 1D12-3, showed a slight decrease in SNP density (1C2-0: 3.48; 1C2-1: 2.96; 1C2-2: 3.26; 1C2-3: 3.10; 1D12-0: 3.29; 1D12-1: 3.24; 1D12-2: 3.22; 1D12-3: 3.36; 2C1-0: 3.49; 2C1-1: 3.34; 2C1-2: 2.64; 2C1-3: 3.25, Figure 7A), likely caused by the loss of genetic material. Multiple new genomic variants were found in the in vitro evolved hybrid progeny, displaying patterns specific to each clonal isolate (Figure 7A). However, these variants were distinct from the novel mutations that emerged in the period between hybrid formation and the start of the microevolution experiment (t=0) as described above.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig7-v3.jpg)\n\n**Figure 7.:** (A) Number of SNPs in all clones after long-term in vitro culture. In black are represented SNPs common to all hybrid strains, in green SNPs specific to P1 strain, in purple SNPs specific to the P2 strain, in dark blue SNPs common to all hybrids in the first generation, in light blue SNPs exclusive to each hybrid clone in the first generation, and in orange SNPs exclusive to each clone after culture growth. (B) Chromosome average SNP density per kilobase in all samples before (1 g) and after culture growth (800 g). (C) 1C2 chromosomes with higher SNP density plotted displaying gene composition and SNP density. Surface protein-coding genes are represented as cyan blue boxes, while other genes are represented as black boxes.\n\nTo better understand how these genomes evolved during culture growth, the SNP density was also evaluated in each chromosome separately. The SNP density pattern per chromosome remained similar for all samples in first generation (t=0) and after culture growth (t=800). Some chromosomes (e.g. chromosomes 5, 11, 24, and 37) display higher SNP density than the others across all samples (Figure 7B). P2 evolved clone replicates had an increase in SNP density in nearly all chromosomes (Figure 7B). The emergence of novel SNPs after culture growth resulted in most of the non-synonymous mutations. The ratio of non-synonymous per synonymous changes in novel SNPs was similar between both parental strains (P1-1: 2.26; P1-2: 2.22; P1-3: 2.38; P2-1: 2.25; P2-2: 2.22; P2-3: 2.26) and hybrid clones (1C2-1: 2.20; 1C2-2: 2.48; 1C2-3: 2.26; 1D12-1: 2.41; 1D12-2: 2.5; 1D12-3: 2.40; 2C1-1: 2.21; 2C1-2: 2.18; 2C1-3: 2.30). Interestingly, the regions of the genome with higher genetic variation in all clone isolates contain surface protein-coding sequences (Figure 7C). To investigate the impact of new mutations in these regions, we compared the ratio of non-synonymous mutations in surface protein-coding genes to non-synonymous mutations in other genes. This ratio was higher for the mutations that appeared in each evolved parental clone in comparison to those present in the first generation (approx. 2.5-fold higher for P1 clones and 3.5-fold higher for P2 clones; Supplementary file 13). Regarding the hybrid strains, a similar ratio was observed in the SNPs that appeared in each evolved hybrid clone and those exclusive to each hybrid clone present in the first generation (Supplementary file 13). These results indicate that surface molecule-coding regions may mutate faster than the rest of the genome either by clonal or parasexual mechanisms, representing an important region of genomic diversification.\n\n## Discussion\n\nThe results from whole genome sequencing analysis of this T. cruzi genetic cross have clearly demonstrated that, while the parental strains were diploid, all initial hybrid clones were essentially tetraploid. We showed that genomic variants exclusive to both parental strains were present in all hybrid clones, indicating that the tetraploid profile observed is obtained by the fusion of the two disomic parental genomes, although more complex pathways cannot be ruled out in the absence of direct observational evidence. In addition, we showed that genome erosion seems to be gradual, with sequential losses of chromosome copies rather than coordinated jumps between ploidy levels, though with some variation in erosion rates between different evolved hybrid lines. As previously proposed (Lewis et al., 2011; Gaunt et al., 2003), our results confirmed that hybridization in T. cruzi happened via a parasexual mechanism rather than a canonical meiotic process. This phenomenon resembles the parasexual cycle of the pathogenic fungus Candida albicans, which also involves diploid fusion followed by non-meiotic genome reduction back to aneuploids and diploids (reviewed by Bennett, 2015). In contrast, hybridization in T. brucei and possibly in Leishmania spp. has been associated with parental strains having undergone a meiosis-like process followed by a fusion of haploid cells (Inbar et al., 2019; Peacock et al., 2014; Gibson et al., 2008; Rogers et al., 2014; Louradour et al., 2020; Van den Broeck et al., 2020). In this process, mainly diploid hybrids are formed, but polyploid hybrids may also be produced by the fusion between parental cells that failed to undergo meiosis (Inbar et al., 2019; Peacock et al., 2014; Gibson et al., 2008; Rogers et al., 2014; Louradour et al., 2020; Van den Broeck et al., 2020). Despite the clear evidence of parasexual hybridization in in vitro T. cruzi hybrids, it is still not clear if a meiosis-like mechanism could also contribute to the generation of natural T. cruzi hybrids, as observed in other trypanosomatids. Further work will be required to establish whether there is a single common mechanism or several alternative modes of hybridization.\n\nOur microevolution experiment has shown that T. cruzi genomes are highly responsive to the environmental conditions. The CNV analysis showed that while surface gene numbers were being eroded after culture growth, genes involved in cell metabolism, cell division, and ion transport were being expanded. This genome plasticity was not only observed at the level of gene CNV, but also at the chromosome level. The parental strains displayed distinct aneuploidies before and after culture, and despite the overall pattern of genome erosion, some chromosomes remained tetrasomic in the hybrid strains. Indeed, aneuploidies have been widely reported in natural T. cruzi populations, and although CCNV varies among and within DTUs, it seems constant within a given population (Schwabl et al., 2019; Reis-Cunha et al., 2015; Reis-Cunha et al., 2018). While in many multicellular organisms, aneuploidy is known to have severe consequences, in trypanosomatids it represents an important mechanism for rapidly overcoming environmental diversity (Reis-Cunha et al., 2018; Prieto Barja et al., 2017; Bussotti et al., 2018; Gr\u00fcnebast and Clos, 2020). Aneuploidy is reversed quickly once the benefits of an extra chromosome expire, as observed in P2 aneuploidies in chromosomes 2 and 21. In addition, trypanosomatids may control overexpression caused by additional gene copies, at the protein level (Dumetz, 2017). We found aneuploidy in chromosome 37 in all parental and hybrid clones after culture growth, suggesting a benefit to parasite fitness in culture. As observed in Leishmania spp., the fixation of genetic alterations is the result of positive selection processes that adapt parasite fitness to a given ecology or transmission cycle (Bussotti et al., 2018). We can speculate that in natural T. cruzi hybrids, distinct CCNV and genome erosion patterns would be observed due to specific environmental selective pressure with the expansion of genes involved in host-parasite interactions.\n\nGenome variant analyses showed that an increase in genetic sequence diversity was present after hybridization. Hybridization events are associated with a burst of novel mutations and a myriad of genomic rearrangements (e.g. transpositions, genome size changes, chromosomal rearrangements) in distinct eukaryotes (Steensels et al., 2021; Samarasinghe et al., 2020). Our results indicate that the process of T. cruzi hybrid formation included both new mutations and most likely recombination between parental chromosomes. Here, we were able to show an increase in the number of SNPs in the hybrid strains with the accumulation of amino acid substitutions. Interestingly, the numbers of new SNPs in culture showed a clear difference between the two parental strains after 800 generations, in which P2 showed a higher mutation rate. A previous study has reported that TcI strains have a mismatch repair machinery, which repairs base misincorporation and erroneous insertions and deletions during DNA recombination and replication, that is more efficient than in other DTUs (Reis-Cunha et al., 2015; Augusto-Pinto et al., 2003; Machado et al., 2006). As described in Leishmania major, HUS1 was shown to be required for genome stability under non-stressed conditions and its suppression had a genome-wide mutagenic effect (Damasceno et al., 2018). Since many of the genes coding for the HUS1-like proteins are encoded on chromosome 2, the loss of trisomy in this chromosome after culture growth could possibly be related to the increase in mutations observed in the P2 clones. In general, culture growth led to a reduction in genetic variants in nearly all evolved clones in comparison to the first generation. This reduction may be related to the loss of heterozygosity, but also to the loss of gene copies and genome erosion of surface molecules regions after culture growth. In addition, we could not identify any bias in the loss of a specific parental chromosome even in triploid hybrid clones, suggesting recombination between the parental chromosomes. As material from both parental strains has been lost during over 800 generations, it is likely that the hybrid clones would stabilize at diploidy and contain chromosomes from both parental strains, with a higher polymorphism than the parental strains. This is similar to strains from the known natural hybrid clades, TcV and TcVI. Strains from these clades have diploid genomes with high repeat content, and high levels of polymorphism in many regions, resulting from alleles from two divergent parental strains (from clades TcII and TcIII) (Lewis et al., 2011; Messenger and Miles, 2015; Lewis et al., 2009). From our analyses, it thus appears that the in vitro hybrid formation presented here is highly similar to the process that generated the natural hybrids.\n\nOur microevolution experiment has shown that surface protein-coding genes represent the regions of the genome with higher genetic diversity and more rapid evolution. Accumulations of distinct genomic signatures and amino acid substitutions were observed in both parental and hybrid clones after relatively few generations. We have previously observed that there is a higher frequency of recombination in repeat-rich regions of the T. cruzi genome (Talavera-L\u00f3pez et al., 2021), and it is likely that this is also the case for the hybrids.\n\nWe can speculate that this is a likely explanation for variability in repeat and gene copy numbers between hybrid and non-hybrid clades in response to the distinct environmental conditions. Since these parasites were cultivated solely in culture, it is still not clear if this mechanism is related to the lack of pressure caused by the progression within triatomine bugs or by the interaction with the host immune system, or if these genomes display an intrinsic mechanism of high diversification of these regions. Recent comparative genomics of natural T. cruzi strains have shown a similar pattern, suggesting that these regions indeed evolve more rapidly than other regions of the genome (Wang et al., 2021).\n\nFor T. cruzi, there is clear evidence for relatively recent inter-DTU hybridization between TcII and TcIII as the origin of TcV and TcVI, which are now widespread in domestic transmission cycles in southern South America (Lewis et al., 2011; Messenger and Miles, 2015; Carrasco et al., 1996). Other evidence for inter-DTU genetic exchange between TcI and TcIV comes from phylogenetic incongruence between nuclear and mitochondrial (kDNA maxicircle) sequences. However, the frequency of natural genetic exchange events between lineages/clades/DTUs appears to be too low to disrupt the overall stability of the main six clades, or seven clades if the TcBat lineage is included (Lewis et al., 2011; Messenger and Miles, 2015). The exception is the validity and position of the poorly sampled TcIV clade, which includes strains with TcI-like and/or TcIII-like features. The robustness of the other clades is likely promoted by ecological and/or geographical isolation, for example, association with distinct vector and host species. There may also be a high fitness cost for tetraploidy in the wild that is not replicated in laboratory conditions.\n\nIn summary, we confirmed that in vitro hybrid formation in T. cruzi happened in a parasexual mechanism, representing an important mechanism of genetic diversification. Tetraploid hybrids showed patterns of progressive genome erosion shaped by the environment\u2019s selective pressure, which may explain distinct phenotypes in isolated natural hybrid populations. In addition, an increase in coding sequence diversity is observed in hybrids in comparison to the parental strains, related to both new mutations and most likely recombination events. Finally, our microevolution experiment has shown that repetitive gene families related to immune evasion evolved more rapidly than other regions of the genome, indicating an intrinsic mechanism of genetic variation of these regions.\n\n## Materials and methods\n\n### Parasites and microevolution experiment\n\nFor routine culture, T. cruzi epimastigotes were grown axenically in supplemented RPMI as previously described (Carrasco et al., 1996). Parasites were cloned by limiting dilution. The microevolution experiment comprised continuous in vitro cultures of each parasite line for 5 years. Three experimentally generated hybrid clones (1C2, 1D12, and 2C1) and their two parents (P1 and P2) were seeded in the primary culture at 2 \u00d7 105/ml and then allowed to grow for seven generations to stationary phase. The parent and hybrid lines used to initiate the microevolutions experiment (t=0) were estimated to be respectively 70 and 95 generations removed from the hybridization events. Parasites were passaged into fresh media every 2 weeks at a seeding density of 2 \u00d7 105/ml, equating typically to 1% of the stationary phase cultures.\n\n### Flow cytometry\n\nDNA content was determined as previously described (Lewis et al., 2009). In brief, mid-log phase epimastigotes were washed in PBS, then fixed overnight in ice-cold 70% methanol/30% PBS. Fixed cells were washed in PBS, adjusted to 1 \u00d7 106cells/ml, and incubated for 45 min with 10 \u03bcg/ml propidium iodide and 10 \u03bcg/ml RNAse A at 37\u00b0C. Fluorescence was detected using a FACSCalibur flow cytometer for a minimum of 10,000 events. FlowJo software (Tree Star Inc, Ashland, OR) was used to plot histograms and identify G1-0 and G2-M peaks. Mean G1-0 values were taken to infer relative DNA content. An internal control T. cruzi strain, Esm cl3, was included in each run. Relative DNA content values were calculated as ratios compared to the internal standard. For experimental hybrids, the ratios relative to each parent (P1 or P2) were also determined using the mean standard:parent ratios derived from 12 independent experiments.\n\n### Microsatellite analysis\n\nGenotyping was done for four microsatellite loci: MCLF10, 10,101(TA), 7,093(TC), and 10,101(TC) as previously described (Lewis et al., 2009). Briefly, microsatellites were PCR amplified from genome DNA samples using fluorescent-labelled primers targeting conserved flanking regions. Amplicon lengths were determined using a 48-capillary 3730 DNA analyzer (Applied Biosystems, UK) and analysed using Genemapper v3.5 software (Applied Biosystems, UK). The size of different PCR products (alleles), visualized as fluorescence peaks, were determined automatically by the software using a size standard to calibrate the calculations. All allele size calls made by the software were checked manually against a library of known TcI alleles (Llewellyn et al., 2009).\n\n### Whole genome sequencing\n\nTotal genomic DNA was isolated directly from long-term parasite cultures using the Gentra Puregene Tissue Kit (Qiagen) according to the manufacturers\u2019 instructions. A total of 40 ng of genomic DNA was used as a template to prepare the sequencing libraries with the Rubicon Kit and the Illumina TruPlex kit. For the two parent strains, a 180 and 350 bp insert sizes paired end libraries were produced, plus an additional 8 kb insert size mate paired library. For the hybrid offspring, a single paired end library was produced with an insert size of 350 bp. All libraries were sequenced using the Illumina HiSeq 2500 platform. The library complexity of each parent was analysed using the 17mer distribution of the Illumina libraries using Jellyfish (Llewellyn et al., 2009).\n\n### De novo genome assembly\n\nThe genomes of the parent strains were assembled using the 180 bp Illumina paired end library and the 8 kb Illumina mate pair library using the ALLPATHS-LG v52488 (https://software.broadinstitute.org/allpaths-lg/blog/) assembler with K=96, using the TcI Sylvio X10/1 reference strain (Talavera-L\u00f3pez et al., 2021) for evaluations. The resulting contigs were scaffolded using both Illumina libraries and the BESST scaffolder (Sahlin et al., 2014). Later, gaps in the scaffolded assemblies were filled using the 180 bp with GapFiller (Nadalin et al., 2012) and chromosomes were numbered according to their sizes as for the human genome. Each genome was submitted for annotation, prior removal of repetitive elements using RepeatMasker (https://www.repeatmasker.org/), to the Companion annotation pipeline (Steinbiss et al., 2016).\n\n### Data processing and read mapping\n\nPaired end libraries were quality filtered using Nesoni Clip program (https://github.com/Victorian-Bioinformatics-Consortium/nesoni; Harrison, 2020) removing bases with a Phred quality score below 30 and reads shorter than 64 nucleotides; later, sequencing adaptors were removed. Mate paired libraries were processed as above, plus an additional step to reverse complement the filtered reads. Filtered reads, from all the sequencing libraries produced, were mapped against the TcI Sylvio X10/1 reference genome using Burrows-Wheeler Aligner (Li and Durbin, 2009). The mapping files were sorted, PCR and optical duplicates were removed, and read groups were added using Picard Tools v1.134 (https://broadinstitute.github.io/picard/; Schreiber, 2022). These mapping files were used for downstream analyses.\n\n### Identification of genomic variation\n\nSNPs were called using a mapping-based approach. Mapping files were sorted with Samtools v1.11, PCR-duplicates were marked with Picard v2.22.4 and SNPs were identified with Genome Analysis Toolkit (GATK \u2013 https://gatk.broadinstitute.org/hc/en-us) using the HaplotypeCaller algorithm with a minimum quality value of 30 and a minimum depth of coverage of 10. To avoid the influence of low mapping quality in repeated regions, a strict mapping quality filter was applied and any SNP in regions with mapping quality below 50 was removed using BCFtools (Li et al., 2009).\n\nVCFtools package (Li et al., 2009) was used to infer SNP density per 1 kb (option --SNPdensity) and SNPs exclusive to each strain were identified using both VCFtools and BEDtools (Li et al., 2009; Danecek et al., 2011; Quinlan and Hall, 2010). The functional effect of these variants and the ratio of synonymous per non-synonymous mutations was predicted using SNPEff v4.4 (Cingolani et al., 2012).\n\n### CCNV and ploidy estimation\n\nCCNV and ploidy estimation were performed using a combination of RDC and AB methods as previously described (Reis-Cunha and Bartholomeu, 2019; Reis-Cunha et al., 2015). Briefly, the estimation of CCNV was based on the ratio between the mean coverage of predicted single-copy genes in a given chromosome and the mean coverage of all single-copy genes in the genome. This approach was based on the RDC of 2602 1:1 orthologs between the haplotypes of the reference SylvioX10/1 genome and the parental strains assemblies, identified using OrthoVenn2 (https://orthovenn2.bioinfotoolkits.net/home). For chromosomes lacking single-copy genes, CCNV was estimated based on the ratio between the mean RDC of each chromosome position and the mean coverage of all genome positions. If the ratio between the median chromosome coverage and the median genome coverage was approximately one, the chromosome had the same copy as the genome overall, while fluctuations in this ratio (lower than 0.75 or higher than 1.25) were putative aneuploidies.\n\nHeterozygous SNPs with a mapping quality higher than 50 were selected for AB analyses to confirm aneuploidies and to estimate chromosome somy and whole genome ploidy. Whole genome ploidy was estimated by analysing the proportion of the alleles in heterozygous SNP positions of all single-copy genes. To confirm the RDC somy estimations, the proportion of each allele with heterozygous SNPs per chromosome position was plotted for 46 TcI chromosomes. All RDC and AB graphs were generated in R with ggplot2 (https://ggplot2.tidyverse.org), pheatmap (https://CRAN.R-project.org/package=pheatmap), and vcfR (Knaus and Gr\u00fcnwald, 2017) packages.\n\nGenome erosion patterns were identified by CNV estimations using Control-FREEC package (Boeva et al., 2012). Gene Ontology Enrichment analyses in CNV regions were performed using TriTryp tools (https://tritrypdb.org/tritrypdb/app/) and surface molecules genes were assigned from the available TcI Sylvio X10/1 annotation (Talavera-L\u00f3pez et al., 2021) (available here).\n",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "dbebb1d8-34b5-45da-9f8a-0ad68268f4fb",
+      "submission_id": "6fcf7848-dc38-4b74-9926-b979955695aa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antoine Claessens, https://ror.org/051escj72 University of Montpellier France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75237.sa0](https://doi.org/10.7554/eLife.75237.sa0)\n\nThe authors dissected the across-the-genome consequences of sexual recombination in Trypanosoma cruzi, a serious human pathogen. They had discovered hybrid formation in this species 20 years ago, here they went at length by culturing parental and hybrid clones for 5 years, demonstrating that tetraploid T cruzi hybrids undergo genome erosion.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Antoine Claessens, https://ror.org/051escj72 University of Montpellier France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75237.sa1](https://doi.org/10.7554/eLife.75237.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Experimental microevolution of Trypanosoma cruzi reveals hybridization and clonal mechanisms driving rapid diversification of genome sequence and structure\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos Van der Meer as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Julius Lukes (Reviewer #1); Fern\u00e1n Ag\u00fcero (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The authors should revise their methods for SNP calling. What GATK variant caller was used? UnifiedGenotyper or HaplotypeCaller? The latter is recommended. It is also unclear which filtering criteria were used to reduce the likelihood of false-positive SNPs. Simply setting the mapping quality to a minimum of 50 is not sufficient. We recommend to have a look at the methods of Schwabl et al. 2019 (https://doi.org/10.1038/s41467-019-11771-z) where rigorous analyses were done to remove false-positive SNPs. In particular, it would be helpful to mask the reference genome based on the mappability of its own reads. This is also important for later sections in the manuscript where the authors claim increased diversity in repetitive surface molecule genes.\n\nEditor: Also, it is not clear whether Indels were analysed at all, they appear once in the Methods and not in the rest of the manuscript.\n\n2. Figure 1e, Table 1 and corresponding main text \u2013 We are puzzled regarding the number of SNPs that are unique to each hybrid clone and that are common to all hybrids.\n\nFirst, it seems to us that the authors have done SNP calling in all strains independently, which may result in genotypes being missed because of low local coverages. Joint genotyping would mitigate such biases. We would recommend to do a joint genotyping across all parental and hybrid strains, and then only retain those SNP positions for which there is no missing data.\n\nSecond, in the main text on page 7, it is argued that these SNPs would have occurred in culture during the approximately 50 generations of growth BEFORE hybrid formation. But in the last sentence of that paragraph it is stated that these SNPs appeared after the hybridisation event. How can the authors tell whether these SNPs occurred during culture before hybridization, or whether they happened just after hybridization? The setup of the experiment should be more clearly explained: how many generations happened before hybridization, how many after, when exactly was sequencing done during this process? This is also important for later sections that claim that hybridization resulted in a burst of novel mutations.\n\nIt seems like the authors are discovering the impact of tandem repeat regions (copy number variations) on SNP discovery. Most of page 10 and Figure 3 merely describes the fact that you will have more false-positive SNPs within the repeat regions. I'm not sure why this is of interest here. Such SNP's should not have been included in the first place.\n\n3. Why was the mapping quality in surface molecules inferior to the rest? That begs for explanation. \"Surface molecule genes\", frequently used here, sounds somewhat weird to this reviewer. Couldn't it be rather \"Surface protein-coding genes\" or the like?\n\n4. I understand the implications of trying to map short reads to repetitive regions. For example, PAINTS (see https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7912377/) removes noisy genomic regions (large gene families) before attempting to do ploidy estimations. This seems intuitive, and this is also explained in this Ms, in light of this maybe authors can save some space by omitting text and figures that are used to discuss and show these difficulties? Maybe there is not much to gain by showing that estimating ploidies in chromosomes with low numbers of housekeeping genes is difficult. Just state that and put the data into Supplementary file?\n\n5. Based on the results presented, I don't agree that there is gradual erosion overall across all clones.\n\n1D12 hybrid seems to have gone through an initial loss of DNA content but then its DNA content seems to have remained stable (Figure 1D). In addition, it's genome-wide somy profile remained stable at tetrasomy (Figure 4C). Also, there also seems to be an increase in DNA content after 600 generations. Finally, microsatellite alleles are only consistently lost in hybrid 2C1, at three different loci. No loss was observed in hybrid 1D12 and only one allele was lost in hybrid 1C2. This also raises the question what has caused the loss of DNA content in hybrid 1D12. Based on microsats and somy, there is no clear evidence for genomic erosion. So, what part of the genome is lost in the beginning of the experiment? The authors could do a comparative genomic analyses of the parental genomes and the hybrid genomes, to figure out what portions of the genomes are commonly/uniquely lost in the hybrids.\n\n6. One of the conclusions from the study of accumulation of mutations, is that surface molecules may mutate faster. The reasoning for this if I read and understood correctly, is that there were many \"mutations that appeared in each parental clone after culture growth\". Do authors mean to say that these mutations appeared after the genetic cross experiment in Gaunt et al. 2003? Can the authors clarify how these parental clones were kept and passaged since then? How many passages did they undergo before being sequenced? The same clarification is warranted for hybrids. When the authors state that \"while the parental strains were diploid, all initial hybrid clones were essentially tetraploid\" (Discussion, page 15), the readership would like to know if these essential tetraploid states were observed just after the hybridization (genetic exchange) event (e.g. clones were kept in liquid nitrogen since then and only thawed for brief culture before sequencing) or if these states had some passages in culture after the genetic exchange event (how many?).\n\n7. Data and code availability: The mentioned accession number was not found in the BioProject database. Please make code available via GitHub or other repository.\n",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ecabc41e-81c0-42f6-ba23-d3084d9ede4c",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C1",
+      "claim": "Trypanosoma cruzi is the agent of Chagas disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Trypanosoma cruzi is a kinetoplastid protozoan and the etiologic agent of Chagas disease, one of the neglected and highest impact parasitic infections in the Americas (P\u00e9rez-Molina and Molina, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to P\u00e9rez-Molina and Molina, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "ea44559a-5ac7-4cf7-9bc0-21640c07864e",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C2",
+      "claim": "Chagas disease is one of the neglected and highest impact parasitic infections in the Americas.",
+      "claim_type": "EXPLICIT",
+      "source": "Trypanosoma cruzi is a kinetoplastid protozoan and the etiologic agent of Chagas disease, one of the neglected and highest impact parasitic infections in the Americas (P\u00e9rez-Molina and Molina, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to P\u00e9rez-Molina and Molina, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "8d375751-db58-46c7-82aa-b19bcc405ff6",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C3",
+      "claim": "Chagas disease causes great loss in both health-care costs and disability-adjusted life years.",
+      "claim_type": "EXPLICIT",
+      "source": "Chagas disease is estimated to cause great loss in both health-care costs and disability-adjusted life years (Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "fcb224b6-5b7d-409d-8eda-6f879920eb2f",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C4",
+      "claim": "Human migration and specific modes of transmission have led to Chagas disease spreading beyond its natural geographical boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Human migration and specific modes of transmission than the canonical vector-based have led to a spreading beyond its natural geographical boundaries, becoming a global issue (P\u00e9rez-Molina and Molina, 2018; Bern, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to P\u00e9rez-Molina and Molina, 2018; Bern, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "0df6743d-f273-41f8-9f7d-e785e3c7fc42",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C5",
+      "claim": "T. cruzi transmission is a zoonosis maintained by numerous species of triatomine insects and different species of mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "T. cruzi transmission is a zoonosis maintained by numerous species of triatomine insects and different species of mammals (Jansen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jansen et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "70b98f41-b83a-4ad9-896b-d51f87119a72",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C6",
+      "claim": "Transmission to humans occurs most frequently by contamination with infected feces from triatomine vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "This parasite has a complex life cycle, where transmission to humans occurs most frequently by contamination with infected feces from triatomine vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about T. cruzi transmission",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "106433b9-bc76-475d-9577-c566bc8a66e4",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C7",
+      "claim": "Other routes of human infection include congenital, oral, and contaminated transplant tissues and blood products.",
+      "claim_type": "EXPLICIT",
+      "source": "Other routes of human infection include congenital, oral (mainly consumption of raw contaminated foods), and contaminated transplant tissues and blood products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about T. cruzi transmission routes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "6831058b-6fdc-426b-a7ad-0535c3b7f023",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C8",
+      "claim": "T. cruzi displays a vast, complex repertoire of surface proteins involved in cell invasion and pathogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "To evade the immune responses, the parasite displays a vast, complex repertoire of surface proteins involved in cell invasion and pathogenicity (De Pablos and Osuna, 2012; Pech-Canul et al., 2017; Talavera-L\u00f3pez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Pablos and Osuna, 2012; Pech-Canul et al., 2017; Talavera-L\u00f3pez et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "1d7093c4-54b6-44ba-9ae2-c4c1c6f2f73b",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C9",
+      "claim": "The regions of the T. cruzi genome coding for surface molecules are composed of highly repetitive sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The regions of the genome coding for these molecules are composed of highly repetitive sequences, with hundreds to thousands of members of each family, as well as substantial numbers of transposable elements, microsatellite, and tandem repeats (Talavera-L\u00f3pez et al., 2021; El-Sayed et al., 2005; Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Talavera-L\u00f3pez et al., 2021; El-Sayed et al., 2005; Wang et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "2e6d4471-8d10-4427-8e65-4931621b9b15",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C10",
+      "claim": "Both preponderate clonal evolution and sexual reproduction have been proposed for T. cruzi.",
+      "claim_type": "EXPLICIT",
+      "source": "The reproductive mode of these parasitic protozoans has been widely debated, and both preponderate clonal evolution (Tibayrenc and Ayala, 2012; Tibayrenc and Ayala, 2013) and sexual reproduction (Ram\u00edrez and Llewellyn, 2014; Schwabl et al., 2019; Inbar et al., 2019) have been proposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tibayrenc and Ayala, 2012; Tibayrenc and Ayala, 2013 for clonal evolution and Ram\u00edrez and Llewellyn, 2014; Schwabl et al., 2019; Inbar et al., 2019 for sexual reproduction",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "a97508ac-49f7-400c-b8a0-563954db6161",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C11",
+      "claim": "Many eukaryotic pathogens have essentially clonal population structures while also having non-obligate sexual cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Many eukaryotic pathogens have essentially clonal population structures while also having non-obligate sexual cycles, which may enable them to adapt to environmental changes (Heitman, 2006; Lewis et al., 2011; Steensels et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Heitman, 2006; Lewis et al., 2011; Steensels et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "2639bc04-0a6e-4117-83a6-33f32181c21e",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C12",
+      "claim": "The most well-studied mating system in trypanosomatids is that of Trypanosoma brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "In trypanosomatids, the most well-studied mating system is that of Trypanosoma brucei, for which a meiotic process is well supported based on the identification of a haploid parasite stage in the vector (Peacock et al., 2014) and on the patterns of allele inheritance and recombination observed in experimental hybrids (MacLeod et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Peacock et al., 2014 and MacLeod et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "915b86d6-2225-4065-96f1-a88c2f14d89f",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C13",
+      "claim": "Six distinct genetic clades of T. cruzi have been recognized, named TcI to TcVI.",
+      "claim_type": "EXPLICIT",
+      "source": "In T. cruzi, great genetic and phenotypic diversity is observed, and six distinct genetic clades have been recognized, named TcI to TcVI (discrete typing units or DTU-I to -VI) (Zingales et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zingales et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "f95258b4-2447-4afa-8021-8da1ee1e8854",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C14",
+      "claim": "TcV and TcVI are recent, natural inter-lineage hybrids of TcII and TcIII.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotyping analysis indicates that TcV and TcVI are recent, natural inter-lineage hybrids of TcII and TcIII, showing that recombination events have shaped the evolution of T. cruzi lineages (Schwabl et al., 2019; Lewis et al., 2011; Messenger and Miles, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwabl et al., 2019; Lewis et al., 2011; Messenger and Miles, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "59017b8f-119e-40b4-b453-26d852bc1159",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C15",
+      "claim": "The formation of T. cruzi hybrids in vitro has been described.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to natural evidence of hybridization, the formation of T. cruzi hybrids in vitro was also described (Gaunt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gaunt et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "e33a6924-624e-4392-af7a-acf35f22f37a",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C16",
+      "claim": "Genetic marker analyses of hybrid strains showed multi-allelic (non-Mendelian) inheritance of microsatellite alleles and an elevated DNA content.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic marker analyses of hybrid strains showed multi-allelic (non-Mendelian) inheritance of microsatellite alleles and an elevated DNA content (Gaunt et al., 2003; Lewis et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gaunt et al., 2003; Lewis et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "88d2bb86-ed6e-419a-a20f-d4a676de75c5",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C17",
+      "claim": "The hybridization events in T. cruzi were proposed to occur via a parasexual mechanism, similar to those observed in certain fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "The hybridization events in T. cruzi were proposed to occur via a parasexual mechanism, similar to those observed in certain fungi (Lewis et al., 2011; Steensels et al., 2021; Gaunt et al., 2003; Bennett, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lewis et al., 2011; Steensels et al., 2021; Gaunt et al., 2003; Bennett, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "b716b53f-e7a4-4741-85f4-25e9b0cbc3b2",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C18",
+      "claim": "Two closely related TcI strains (P1, P2) and three hybrid clones (1C2, 1D12, 2C1) were selected for the study.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the effects of clonal reproduction and genetic exchange on the T. cruzi genome at the microevolutionary scale, we selected two closely related TcI strains (P1, P2) and three hybrid clones that were generated from a P1 \u00d7 P2 cross (1C2, 1D12, 2C1) (Gaunt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental design and materials used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "27477adf-45f5-4a0f-9691-e97658eadff7",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C19",
+      "claim": "The two parents and three hybrids were continuously cultured as epimastigote forms for 5 years, equivalent to approximately 800 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The two parents and three hybrids were included in an in vitro evolution experiment in which they were continuously cultured as epimastigote forms for 5 years, equivalent to approximately 800 generations of replication by binary fission (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes the experimental design shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "4b1cb236-0774-4e8c-a491-1991973db37b",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C20",
+      "claim": "The DNA content of the two parental lines remained approximately constant during the microevolution experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the DNA content of the two parental lines remained approximately constant (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1B-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "1ce04c61-3203-4c51-97b0-d60a66917c77",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C21",
+      "claim": "At the start of the experiment, the total DNA content of the hybrid clones was approximately 70% greater than the parentals.",
+      "claim_type": "EXPLICIT",
+      "source": "At the start of the experiment, the total DNA content of the hybrid clones was approximately 70% greater than the parentals (Figure 1C, D, Lewis et al., 2009), which equated to slightly below expectations for a tetraploid parasite with one kinetoplast (containing mitochondrial DNA), that is, a 4n1k (4C) genome size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1C, D and citation to Lewis et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "85af1ea2-a375-457e-af26-d6ffc6642b6b",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C22",
+      "claim": "The DNA content of the hybrids became progressively lower over time, up to a maximum decrease of 22.5% by generation 800.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of the microevolution experiment, in contrast to P1 and P2, we found that the DNA content of the hybrids became progressively lower over time, up to a maximum decrease of 22.5% by generation 800.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry measurements over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "bbc3f284-dc06-4d39-89dd-7df9f6d10617",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C23",
+      "claim": "Genome erosion in the hybrids occurred at an average rate of 23 kb per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "By extrapolation from the estimated genome sizes of P1 (94.5 Mb) and P2 (92.5 Mb) (Lewis et al., 2009), these data indicate genome erosion in the hybrids occurred at an average rate of 23 kb per generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from flow cytometry data and genome size estimates from Lewis et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "fe14dbae-851e-47ed-b79e-26c63c17e8f9",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C24",
+      "claim": "Hybrid 2C1 showed gradual genome erosion at each time point, with all three 800 generation evolved clones approximating a 3C genome size.",
+      "claim_type": "EXPLICIT",
+      "source": "Hybrid 2C1 showed gradual genome erosion at each time point, with all three 800 generation evolved clones approximating a 3C genome size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "85a399f5-02b4-4f92-a5cc-9f984d33704b",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C25",
+      "claim": "Hybrid 1C2 showed a more intermittent pattern of genome erosion, with most erosion occurring between 0\u2013200 and 400\u2013600 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Hybrid 1C2 showed a more intermittent pattern \u2013 most of the erosion occurred between 0\u2013200 and 400\u2013600 generations, reaching a 3C genome size, but interestingly, 2 of the 800 generation clones gained ~10% more DNA than at t=600.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "66b08668-bd2d-467d-85b8-b841cbce12cd",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C26",
+      "claim": "Hybrid 1D12 had an initial 9% loss between t=0 and t=200, but was then quite stable over time between 3C and 4C.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, hybrid 1D12 had an initial 9% loss between t=0 and t=200, but was then quite stable over time between 3C and 4C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "af23cec8-b66c-4693-a8df-8371f0184384",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C27",
+      "claim": "Three of the nine evolved hybrid clones had lost at least one microsatellite allele.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that three of the nine evolved hybrid clones had lost at least one microsatellite allele (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microsatellite genotyping data in Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "733f27e7-1ba5-4af2-b7cd-8d07ebc2edc2",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C28",
+      "claim": "The haploid estimated genome size of P1 differed from P2 by approximately 2 Mbp.",
+      "claim_type": "EXPLICIT",
+      "source": "The haploid estimated genome size of P1 differed from P2 by approximately 2 Mbp, and both parental strains genomes were found to be slightly larger than the 44 Mbp reference TcI-Sylvio X10/1 strain (Talavera-L\u00f3pez et al., 2021), in line with flow cytometry-based DNA content measurements (Lewis et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome assembly data and citations to Talavera-L\u00f3pez et al., 2021 and Lewis et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "dda1fad8-ccc9-4e69-bc58-6ef9b49b85f2",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C29",
+      "claim": "The genome-wide average SNP density was 9.28 and 3.71 SNP/kb for P1 and P2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The resultant genome-wide average SNP density was 9.28 and 3.71 SNP/kb for P1 and P2, respectively (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP calling data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "05a3f8e9-70ae-4b0e-a9c0-8be0b2da9f26",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C30",
+      "claim": "Most SNPs were located within repetitive regions, particularly in areas containing surface molecule gene family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Most SNPs were located within repetitive regions, particularly in areas containing surface molecule gene family members, which can be related to gene expansion in these regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from SNP distribution analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "c6c8bb73-58da-404c-8b8b-18c852ff6251",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C31",
+      "claim": "P1 displays tandem-repeated and surface molecule-coding regions expanded in comparison to P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, copy number variation (CNV) analysis showed that P1 displays these tandem-repeated and surface molecule-coding regions expanded in comparison to P2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CNV analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "ecab5f8e-029d-476f-9b05-9e684d7b2c97",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C32",
+      "claim": "SNP density in high-quality mapping regions was 2.84 and 2.11 SNPs/kb for P1 and P2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "SNP density in the retained high-quality regions was 2.84 and 2.11 SNPs/kb for P1 and P2, respectively (Table 1), and a total of 68,616 and 34,843 SNPs exclusive for each parental strain were catalogued for use in the analysis of the hybrid strains (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP calling data shown in Table 1 and Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "5dc3d63c-fb07-4cac-9160-765493922408",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C33",
+      "claim": "The average SNP density in high-quality mapping regions was higher in all hybrids than in parental strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The average SNP density in these regions was higher in all hybrids than in parental strains: 3.48 SNP/kb for 1C2-0, 3.29 SNP/kb for 1D12-0, and 3.49 SNP/kb for 2C1-0 (Table 1), partially due to the presence of alleles from both parental strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP calling data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "b6ac0ba6-19eb-4cb2-a470-2ff29d050b4a",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C34",
+      "claim": "Additional SNPs common to all hybrids and SNPs exclusive to each hybrid clone were identified in both coding and non-coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the SNPs clearly inherited from each parental strain, additional SNPs common to all hybrids and SNPs exclusive to each hybrid clone were identified in both coding and non-coding regions, revealing sample-specific patterns (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP analysis data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "01fc5dbc-a908-4bd6-970d-59d0168c31f8",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C35",
+      "claim": "De novo mutations common to all hybrids and exclusive to each hybrid clone were predicted to generate a higher percentage of non-synonymous changes compared to mutations inherited from the parental strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, de novo mutations common to all hybrids and exclusive to each hybrid clone were predicted to generate a higher percentage of non-synonymous changes in comparison to the mutations inherited from the parental strains (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP effect prediction data in Supplementary file 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "2fe7344e-328a-42d3-a869-b8ee74cec91a",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C36",
+      "claim": "The ratio of non-synonymous changes per synonymous changes was higher in de novo mutations than in those inherited from the parental strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the ratio of non-synonymous changes per synonymous changes was higher in the de novo mutations common to all hybrids (2.36 for 1C2-0, 2.25 for 1D12-0, and 2.19 for 2C1-0), and exclusive to each hybrid clone (2.40 for 1C2-0, 2.23 for 1D12-0, and 2.37 for 2C1-0) than in those inherited from the parental strains (1.41 for 1C2-0, 1.40 for 1D12-0, and 1.42 for 2C1-0) (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP effect prediction data in Supplementary file 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "0af01d8a-c522-45d3-bdb2-8cef90ab88e0",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C37",
+      "claim": "The ratio of surface protein-coding genes per non-surface protein-coding genes is approximately 4-fold higher in SNPs common to all hybrids and in SNPs exclusive to each hybrid clone than in those inherited from the parental strains.",
+      "claim_type": "EXPLICIT",
+      "source": "This ratio is approximately 4-fold higher in SNPs common to all hybrids and in SNPs exclusive to each hybrid clone than in those inherited from the parental strains (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP distribution analysis in Supplementary file 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "62e331b7-bd22-4289-993e-d2f8a0505557",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C38",
+      "claim": "The ratio of non-synonymous mutations in surface protein-coding genes per non-synonymous mutations in other genes was approximately 3.3-fold higher in the hybrid clone-specific SNPs compared to those inherited from the parental strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this ratio was approximately 3.3-fold higher in the hybrid clone-specific SNPs in comparison to those inherited from the parental strains (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP distribution analysis in Supplementary file 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "a619939a-aaa6-4282-aa31-70c146ab43da",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C39",
+      "claim": "Aneuploidy was observed in the P2 strain, involving trisomy of chromosomes 2 and 21.",
+      "claim_type": "EXPLICIT",
+      "source": "Aneuploidy was observed in the P2 strain, involving trisomy of chromosomes 2 and 21 (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RDC and AB analysis shown in Figure 2A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "f2e92f29-5b98-412c-9baf-1c993b829878",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C40",
+      "claim": "The RDC analysis indicated aneuploidy in chromosome 44 in the P1 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The RDC analysis indicated aneuploidy in chromosome 44 in the P1 strain, but due to the lack of regions with high-quality SNPs, it was not possible to confirm this in the AB analysis (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RDC analysis shown in Figure 2A, B, but not confirmed by AB analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "e6897a6d-d717-4d33-b637-e2453fc48c16",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C41",
+      "claim": "In both parental strains, a peak at 50% was observed in allele balance analysis, while in the hybrids, peaks at 25% and 75% or 50% were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In both parental strains, a peak at 50% was observed, while in the hybrids, peaks at 25% and 75% or 50% were observed (Figure 2C), which is expected for diploid and tetraploid genomes, respectively (Reis-Cunha and Bartholomeu, 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by allele balance analysis shown in Figure 2C and citation to Reis-Cunha and Bartholomeu, 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "4b1cf7c1-803e-4f5d-a191-aceaa95ccf0f",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C42",
+      "claim": "The hybrids displayed ~70% greater DNA content than the parental strains based on flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "This ploidy estimation is in accordance with the previous DNA content estimation based on flow cytometry data, in which the hybrids displayed ~70% greater DNA content than the parental strains (Figure 1C, Lewis et al., 2009), given that this method could not determine the relative amounts of mitochondrial kDNA and nuclear DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1C and citation to Lewis et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "ae4acde8-14fb-4664-9486-3b3d3f4c26fd",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C43",
+      "claim": "Inheritance of SNPs exclusive to both parental strains were observed in the hybrid genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Inheritance of SNPs exclusive to both parental strains were observed in the hybrid genomes (Figure 1E), which shows that the tetrasomic profile observed resulted from a contribution from both parental chromosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP inheritance analysis shown in Figure 1E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "d04eba9d-8062-4008-9921-a1ec7ee05cf9",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C44",
+      "claim": "The trisomies in chromosomes 2 and 21 of P2 were no longer observed in any replicate clone after growth in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "The trisomies in chromosomes 2 and 21 of P2 (Figure 2A) were no longer observed in any replicate clone after growth in culture (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CCNV analysis shown in Figure 2A and Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "5bea618a-eaa7-4355-b1df-d04b45788cab",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C45",
+      "claim": "New aneuploidies were identified in the parental strains after culture growth, involving trisomy of chromosomes 37 and 45 in all P1 clones and trisomy of chromosomes 32 and 37 in all P2 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "New aneuploidies were identified in the parental strains, involving trisomy of chromosomes 37 and 45 in all P1 clones and trisomy of chromosomes 32 and 37 in all P2 clones (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CCNV analysis shown in Figure 4A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "95251c8e-a1e3-4c56-93d7-053efd378b1e",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C46",
+      "claim": "Hybrid 2C1 displayed a clear transition from a tetraploid to a triploid pattern after growth in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, hybrid 2C1 displayed a clear transition from a tetraploid to a triploid pattern after growth in culture (Figure 4C), suggesting that genome erosion eventually leads to a return towards diploidy after the hybridization event, as observed in the naturally occurring TcV and TcVI hybrids (Lewis et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ploidy estimation shown in Figure 4C and citation to Lewis et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "1c4362af-3b20-4cd1-a981-89be8b06b09a",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C47",
+      "claim": "Tetrasomic profiles in chromosomes 19 and 37 were present in all hybrid clones after culture growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the patterns of genome erosion, tetrasomic profiles in chromosomes 19 and 37 were present in all hybrid clones after culture growth (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CCNV analysis shown in Figure 4A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "cc226f8d-af3a-4ada-948a-eefc387cdd15",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C48",
+      "claim": "The genome erosion seems to be gradual phenomena, with sequential losses of chromosome copies and regions rather than coordinated jumps between ploidy levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with previous DNA content analysis of intermediate time points (Figure 1), our results from the different in vitro evolved clones indicate that the genome erosion seems to be gradual phenomena, with sequential losses of chromosome copies and regions rather than coordinated jumps between ploidy levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from flow cytometry and CCNV data over time shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "31527ba5-8ff7-4212-8d79-479e2e00171b",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C49",
+      "claim": "Similar gene categories showed CNV in both parental and hybrid clones after culture growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the stability of DNA content in parental clones during our experiment (Figure 1C, D), similar gene categories showed CNV in both parental and hybrid clones after culture growth (Supplementary files 6\u201312).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CNV analysis data in Supplementary files 6-12",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "b6fe9839-80d4-4d9d-a476-48a4252ebc42",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C50",
+      "claim": "Gene losses occurred mainly in host-parasite interaction genes such as surface protein-coding genes and genes related to exocytosis and cell secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene losses occurred mainly in host-parasite interaction genes such as surface protein-coding genes and genes related to exocytosis and cell secretion, while genes related to macromolecule metabolism, ion transport, and cell division showed an increase in copy numbers (Figure 6; Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CNV analysis shown in Figure 6 and Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "b753c32d-8299-4207-9bc0-8adadf7d411a",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C51",
+      "claim": "Genes related to macromolecule metabolism, ion transport, and cell division showed an increase in copy numbers after culture growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene losses occurred mainly in host-parasite interaction genes such as surface protein-coding genes and genes related to exocytosis and cell secretion, while genes related to macromolecule metabolism, ion transport, and cell division showed an increase in copy numbers (Figure 6; Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CNV analysis shown in Figure 6 and Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "5e9bf484-b8af-4253-8ca3-60fe1fbbd6b3",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C52",
+      "claim": "Chromosomes 19 and 37 remained tetrasomic in all hybrid clones after culture growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the events of genome erosion, chromosomes 19 and 37 remained tetrasomic in all hybrid clones and an extra copy of chromosome 37 is observed in all parental clones after culture growth (Figure 4B and Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CCNV analysis shown in Figure 4B and Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "839fe8ce-3849-43b3-b5a7-1aa9901db40c",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C53",
+      "claim": "Chromosomes 19 and 37 contain long core regions with abundant housekeeping genes involved in cellular metabolism, DNA replication and transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosomes 19 and 37 contain long core regions with abundant housekeeping genes involved in cellular metabolism, DNA replication and transcription (Supplementary files 10 and 11) which may contribute to fitness in culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene content analysis in Supplementary files 10 and 11",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "1e4c8e8b-3fb9-4e48-8258-4977268e3b24",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C54",
+      "claim": "All P1 replicates showed a similar SNP density in the retained high-quality regions after culture growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the parental strains, all P1 replicates showed a similar SNP density in the retained high-quality regions after culture growth (P1-0: 2.84; P1-1: 2.80; P1-2: 2.77; P1-3: 2.82), while all P2 replicates showed an increase in SNP density after culture growth (P2-0: 2.11; P2-1 2.78; P2-2 2.81; P2-3 2.66, Mann-Whitney, p=0.042) (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP density analysis shown in Figure 7A with statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "39cf250f-0778-41b8-80d1-695d651b66cd",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C55",
+      "claim": "All P2 replicates showed an increase in SNP density after culture growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the parental strains, all P1 replicates showed a similar SNP density in the retained high-quality regions after culture growth (P1-0: 2.84; P1-1: 2.80; P1-2: 2.77; P1-3: 2.82), while all P2 replicates showed an increase in SNP density after culture growth (P2-0: 2.11; P2-1 2.78; P2-2 2.81; P2-3 2.66, Mann-Whitney, p=0.042) (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP density analysis shown in Figure 7A with statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "41d1eb6b-a5b2-44dc-92b5-55b75fce19ac",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C56",
+      "claim": "The P2 replicates have a reduction in copies of HUS1-like encoding genes after culture growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The P2 replicates have a reduction in copies of HUS1-like encoding genes, which are involved in DNA repair, after culture growth (Supplementary file 12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CNV analysis in Supplementary file 12",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "394cef1b-d4a4-4ac0-a0ab-3da51d0d8166",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C57",
+      "claim": "Many HUS1-like genes were located on chromosome 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our gene enrichment analysis showed that a number of these genes were located on chromosome 2 (Supplementary file 12), suggesting that the loss of trisomy in this chromosome could possibly have contributed to the higher number of mutations that was found in the P2 clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene enrichment analysis in Supplementary file 12",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "3a22e29c-fa52-411f-a9d3-3b80881469ed",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C58",
+      "claim": "All evolved hybrid replicate clones, with exception of 1D12-3, showed a slight decrease in SNP density.",
+      "claim_type": "EXPLICIT",
+      "source": "All evolved hybrid replicate clones, with exception of 1D12-3, showed a slight decrease in SNP density (1C2-0: 3.48; 1C2-1: 2.96; 1C2-2: 3.26; 1C2-3: 3.10; 1D12-0: 3.29; 1D12-1: 3.24; 1D12-2: 3.22; 1D12-3: 3.36; 2C1-0: 3.49; 2C1-1: 3.34; 2C1-2: 2.64; 2C1-3: 3.25, Figure 7A), likely caused by the loss of genetic material.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP density analysis shown in Figure 7A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "ce68622a-df9e-4b12-a55b-38a196fbc5c3",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C59",
+      "claim": "Multiple new genomic variants were found in the in vitro evolved hybrid progeny, displaying patterns specific to each clonal isolate.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple new genomic variants were found in the in vitro evolved hybrid progeny, displaying patterns specific to each clonal isolate (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP analysis shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "efc3093e-be52-4dec-bf61-b537a121f68e",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C60",
+      "claim": "The SNP density pattern per chromosome remained similar for all samples in first generation (t=0) and after culture growth (t=800).",
+      "claim_type": "EXPLICIT",
+      "source": "The SNP density pattern per chromosome remained similar for all samples in first generation (t=0) and after culture growth (t=800).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from chromosome-level SNP density analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "29f1f7db-808b-45eb-8f7a-4076d41154fc",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C61",
+      "claim": "Some chromosomes (e.g. chromosomes 5, 11, 24, and 37) display higher SNP density than the others across all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Some chromosomes (e.g. chromosomes 5, 11, 24, and 37) display higher SNP density than the others across all samples (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by chromosome-level SNP density analysis shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "1404b5b5-7454-4121-92e4-63b2bf348795",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C62",
+      "claim": "P2 evolved clone replicates had an increase in SNP density in nearly all chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "P2 evolved clone replicates had an increase in SNP density in nearly all chromosomes (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by chromosome-level SNP density analysis shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "94f8d471-3908-4676-bfb9-c04acbafb2e3",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C63",
+      "claim": "The emergence of novel SNPs after culture growth resulted in most of the non-synonymous mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of novel SNPs after culture growth resulted in most of the non-synonymous mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from SNP effect prediction analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "d2c6af04-fb5e-4633-a3a3-c794f790f267",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C64",
+      "claim": "The regions of the genome with higher genetic variation in all clone isolates contain surface protein-coding sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the regions of the genome with higher genetic variation in all clone isolates contain surface protein-coding sequences (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SNP distribution analysis shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "9b6d9a43-ee27-4a06-ae50-c4da433a21f2",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C65",
+      "claim": "The ratio of non-synonymous mutations in surface protein-coding genes to non-synonymous mutations in other genes was higher for the mutations that appeared in each evolved parental clone compared to those present in the first generation.",
+      "claim_type": "EXPLICIT",
+      "source": "This ratio was higher for the mutations that appeared in each evolved parental clone in comparison to those present in the first generation (approx. 2.5-fold higher for P1 clones and 3.5-fold higher for P2 clones; Supplementary file 13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP distribution analysis in Supplementary file 13",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "ae1a721e-1e5b-4dc9-952f-b43c11e13dfa",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C66",
+      "claim": "A similar ratio of non-synonymous mutations in surface protein-coding genes to other genes was observed in the SNPs that appeared in each evolved hybrid clone and those exclusive to each hybrid clone present in the first generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the hybrid strains, a similar ratio was observed in the SNPs that appeared in each evolved hybrid clone and those exclusive to each hybrid clone present in the first generation (Supplementary file 13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP distribution analysis in Supplementary file 13",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "8627004a-ef60-48c6-8c72-648469f74a04",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C67",
+      "claim": "Surface molecule-coding regions may mutate faster than the rest of the genome either by clonal or parasexual mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that surface molecule-coding regions may mutate faster than the rest of the genome either by clonal or parasexual mechanisms, representing an important region of genomic diversification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from SNP distribution and mutation rate analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "0698b0b4-1743-4e39-a40d-3bbbf17c5e2b",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C68",
+      "claim": "All initial hybrid clones were essentially tetraploid.",
+      "claim_type": "EXPLICIT",
+      "source": "The results from whole genome sequencing analysis of this T. cruzi genetic cross have clearly demonstrated that, while the parental strains were diploid, all initial hybrid clones were essentially tetraploid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ploidy estimation from allele balance and flow cytometry data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "c98d3ab2-4dc7-4332-826d-10000eb4e3b4",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C69",
+      "claim": "Genomic variants exclusive to both parental strains were present in all hybrid clones, indicating that the tetraploid profile resulted from the fusion of the two disomic parental genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that genomic variants exclusive to both parental strains were present in all hybrid clones, indicating that the tetraploid profile observed is obtained by the fusion of the two disomic parental genomes, although more complex pathways cannot be ruled out in the absence of direct observational evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from SNP inheritance patterns",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "e12f1171-129b-4455-a54e-08a9acabb4b4",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C70",
+      "claim": "Genome erosion seems to be gradual, with sequential losses of chromosome copies rather than coordinated jumps between ploidy levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we showed that genome erosion seems to be gradual, with sequential losses of chromosome copies rather than coordinated jumps between ploidy levels, though with some variation in erosion rates between different evolved hybrid lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from flow cytometry and CCNV data over time",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "fa45884c-943d-4301-82ec-c65787942458",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C71",
+      "claim": "Hybridization in T. cruzi happened via a parasexual mechanism rather than a canonical meiotic process.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously proposed (Lewis et al., 2011; Gaunt et al., 2003), our results confirmed that hybridization in T. cruzi happened via a parasexual mechanism rather than a canonical meiotic process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ploidy and inheritance data, with citations to Lewis et al., 2011; Gaunt et al., 2003",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "18c7136c-baba-427b-8af5-ac706eb0a4d3",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C72",
+      "claim": "The hybridization phenomenon in T. cruzi resembles the parasexual cycle of the pathogenic fungus Candida albicans.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon resembles the parasexual cycle of the pathogenic fungus Candida albicans, which also involves diploid fusion followed by non-meiotic genome reduction back to aneuploids and diploids (reviewed by Bennett, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to known mechanism in C. albicans, supported by citation to Bennett, 2015",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "934f945b-cdee-437f-b61f-eb9e385a975a",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C73",
+      "claim": "Hybridization in T. brucei and possibly in Leishmania spp. has been associated with parental strains having undergone a meiosis-like process followed by a fusion of haploid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, hybridization in T. brucei and possibly in Leishmania spp. has been associated with parental strains having undergone a meiosis-like process followed by a fusion of haploid cells (Inbar et al., 2019; Peacock et al., 2014; Gibson et al., 2008; Rogers et al., 2014; Louradour et al., 2020; Van den Broeck et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Inbar et al., 2019; Peacock et al., 2014; Gibson et al., 2008; Rogers et al., 2014; Louradour et al., 2020; Van den Broeck et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "44cbe5a4-5c65-434a-87b9-c815ef7c1a19",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C74",
+      "claim": "T. cruzi genomes are highly responsive to the environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our microevolution experiment has shown that T. cruzi genomes are highly responsive to the environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from CNV and CCNV changes observed during culture growth",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "9978a86e-bca9-4998-a9d8-3b1f3fd63e8c",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C75",
+      "claim": "While surface gene numbers were being eroded after culture growth, genes involved in cell metabolism, cell division, and ion transport were being expanded.",
+      "claim_type": "EXPLICIT",
+      "source": "The CNV analysis showed that while surface gene numbers were being eroded after culture growth, genes involved in cell metabolism, cell division, and ion transport were being expanded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CNV analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "244dac01-054e-463b-a44b-b250bcd1890f",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C76",
+      "claim": "Aneuploidies have been widely reported in natural T. cruzi populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, aneuploidies have been widely reported in natural T. cruzi populations, and although CCNV varies among and within DTUs, it seems constant within a given population (Schwabl et al., 2019; Reis-Cunha et al., 2015; Reis-Cunha et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwabl et al., 2019; Reis-Cunha et al., 2015; Reis-Cunha et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "afa0bd34-b4a9-49b2-97ab-1df5067ed015",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C77",
+      "claim": "In trypanosomatids, aneuploidy represents an important mechanism for rapidly overcoming environmental diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "While in many multicellular organisms, aneuploidy is known to have severe consequences, in trypanosomatids it represents an important mechanism for rapidly overcoming environmental diversity (Reis-Cunha et al., 2018; Prieto Barja et al., 2017; Bussotti et al., 2018; Gr\u00fcnebast and Clos, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Reis-Cunha et al., 2018; Prieto Barja et al., 2017; Bussotti et al., 2018; Gr\u00fcnebast and Clos, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "42b90b33-2b9c-4c6b-ae00-7e99fa93f7a3",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C78",
+      "claim": "Aneuploidy is reversed quickly once the benefits of an extra chromosome expire.",
+      "claim_type": "EXPLICIT",
+      "source": "Aneuploidy is reversed quickly once the benefits of an extra chromosome expire, as observed in P2 aneuploidies in chromosomes 2 and 21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observation of aneuploidy loss in P2 after culture growth",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "e6e9785e-513c-4f57-a198-7c318bfa5fb7",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C79",
+      "claim": "Trypanosomatids may control overexpression caused by additional gene copies at the protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, trypanosomatids may control overexpression caused by additional gene copies, at the protein level (Dumetz, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dumetz, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "2af58ee5-a0d6-4958-bfe8-3f634cb46439",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C80",
+      "claim": "Aneuploidy in chromosome 37 was found in all parental and hybrid clones after culture growth, suggesting a benefit to parasite fitness in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "We found aneuploidy in chromosome 37 in all parental and hybrid clones after culture growth, suggesting a benefit to parasite fitness in culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from consistent observation of chromosome 37 aneuploidy across all clones",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "f39610db-9b72-49e1-8b4d-eb837a022fa4",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C81",
+      "claim": "In Leishmania spp., the fixation of genetic alterations is the result of positive selection processes that adapt parasite fitness to a given ecology or transmission cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in Leishmania spp., the fixation of genetic alterations is the result of positive selection processes that adapt parasite fitness to a given ecology or transmission cycle (Bussotti et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bussotti et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "4caf2922-a92a-4895-9da4-809214d79761",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C82",
+      "claim": "An increase in genetic sequence diversity was present after hybridization.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome variant analyses showed that an increase in genetic sequence diversity was present after hybridization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP density analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "d6de03d3-6ce3-48ed-bc8c-12e3a67c2dad",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C83",
+      "claim": "Hybridization events are associated with a burst of novel mutations and a myriad of genomic rearrangements in distinct eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hybridization events are associated with a burst of novel mutations and a myriad of genomic rearrangements (e.g. transpositions, genome size changes, chromosomal rearrangements) in distinct eukaryotes (Steensels et al., 2021; Samarasinghe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Steensels et al., 2021; Samarasinghe et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "62795b23-9956-4be4-af57-f3ff6cfdf678",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C84",
+      "claim": "The process of T. cruzi hybrid formation included both new mutations and most likely recombination between parental chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the process of T. cruzi hybrid formation included both new mutations and most likely recombination between parental chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from SNP patterns and inheritance data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "51ea009b-703e-4296-b246-664f4155962f",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C85",
+      "claim": "There was an increase in the number of SNPs in the hybrid strains with the accumulation of amino acid substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we were able to show an increase in the number of SNPs in the hybrid strains with the accumulation of amino acid substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP and effect prediction analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "7d805252-b953-48f9-ada6-0edfe71639f8",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C86",
+      "claim": "The numbers of new SNPs in culture showed a clear difference between the two parental strains after 800 generations, in which P2 showed a higher mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the numbers of new SNPs in culture showed a clear difference between the two parental strains after 800 generations, in which P2 showed a higher mutation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP density analysis over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "73557403-9924-4aa5-8d38-6f1baa2446bb",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C87",
+      "claim": "TcI strains have a mismatch repair machinery that is more efficient than in other DTUs.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study has reported that TcI strains have a mismatch repair machinery, which repairs base misincorporation and erroneous insertions and deletions during DNA recombination and replication, that is more efficient than in other DTUs (Reis-Cunha et al., 2015; Augusto-Pinto et al., 2003; Machado et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Reis-Cunha et al., 2015; Augusto-Pinto et al., 2003; Machado et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "5d6642b2-84fc-42ab-b518-5a9c58d3be70",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C88",
+      "claim": "In Leishmania major, HUS1 was shown to be required for genome stability under non-stressed conditions and its suppression had a genome-wide mutagenic effect.",
+      "claim_type": "EXPLICIT",
+      "source": "As described in Leishmania major, HUS1 was shown to be required for genome stability under non-stressed conditions and its suppression had a genome-wide mutagenic effect (Damasceno et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Damasceno et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "3ffb267d-aaa3-42c6-8742-b60ce0f17ed6",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C89",
+      "claim": "The loss of trisomy in chromosome 2 after culture growth could possibly be related to the increase in mutations observed in the P2 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many of the genes coding for the HUS1-like proteins are encoded on chromosome 2, the loss of trisomy in this chromosome after culture growth could possibly be related to the increase in mutations observed in the P2 clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation between HUS1 gene loss and increased mutation rate",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "9cc05d5d-1332-4ff3-bb87-ec44568a64db",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C90",
+      "claim": "Culture growth led to a reduction in genetic variants in nearly all evolved clones in comparison to the first generation.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, culture growth led to a reduction in genetic variants in nearly all evolved clones in comparison to the first generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP density analysis over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "b1367339-0ace-42e1-a01b-7be191e6ae65",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C91",
+      "claim": "The reduction in genetic variants may be related to the loss of heterozygosity and the loss of gene copies and genome erosion of surface molecules regions after culture growth.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction may be related to the loss of heterozygosity, but also to the loss of gene copies and genome erosion of surface molecules regions after culture growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from SNP and CNV analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "92a5b8a8-480a-4b1d-a68a-33a472b43148",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C92",
+      "claim": "There was no bias in the loss of a specific parental chromosome even in triploid hybrid clones, suggesting recombination between the parental chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we could not identify any bias in the loss of a specific parental chromosome even in triploid hybrid clones, suggesting recombination between the parental chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from analysis of parental allele retention patterns",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "d3cd5e9d-e727-4c95-94d2-cc7edb55ad01",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C93",
+      "claim": "The hybrid clones would likely stabilize at diploidy and contain chromosomes from both parental strains, with a higher polymorphism than the parental strains.",
+      "claim_type": "EXPLICIT",
+      "source": "As material from both parental strains has been lost during over 800 generations, it is likely that the hybrid clones would stabilize at diploidy and contain chromosomes from both parental strains, with a higher polymorphism than the parental strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genome erosion patterns and comparison to natural hybrids",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "c3d25aad-3f82-4e7e-ba4f-3ae625f5ee39",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C94",
+      "claim": "Strains from TcV and TcVI clades have diploid genomes with high repeat content, and high levels of polymorphism in many regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This is similar to strains from the known natural hybrid clades, TcV and TcVI. Strains from these clades have diploid genomes with high repeat content, and high levels of polymorphism in many regions, resulting from alleles from two divergent parental strains (from clades TcII and TcIII) (Lewis et al., 2011; Messenger and Miles, 2015; Lewis et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lewis et al., 2011; Messenger and Miles, 2015; Lewis et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "60535706-9586-4af8-98f0-4eb6aba8de2a",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C95",
+      "claim": "The in vitro hybrid formation is highly similar to the process that generated the natural hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "From our analyses, it thus appears that the in vitro hybrid formation presented here is highly similar to the process that generated the natural hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of experimental hybrids to natural hybrids",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "e4fbe0e9-13b4-4625-b46d-cb59bb06b799",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C96",
+      "claim": "Surface protein-coding genes represent the regions of the genome with higher genetic diversity and more rapid evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our microevolution experiment has shown that surface protein-coding genes represent the regions of the genome with higher genetic diversity and more rapid evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP distribution and mutation rate analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "e30097d6-3d39-44a5-ad4c-127b40026f0f",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C97",
+      "claim": "Accumulations of distinct genomic signatures and amino acid substitutions were observed in both parental and hybrid clones after relatively few generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulations of distinct genomic signatures and amino acid substitutions were observed in both parental and hybrid clones after relatively few generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP analysis over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "5db392ac-12ca-4ee5-b4d3-ae29a8ae1cd6",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C98",
+      "claim": "There is a higher frequency of recombination in repeat-rich regions of the T. cruzi genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously observed that there is a higher frequency of recombination in repeat-rich regions of the T. cruzi genome (Talavera-L\u00f3pez et al., 2021), and it is likely that this is also the case for the hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Talavera-L\u00f3pez et al., 2021 and inference to hybrids",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "f62ef890-97c9-4a4e-bdb6-3e0216629fe1",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C99",
+      "claim": "Recent comparative genomics of natural T. cruzi strains have shown a similar pattern of rapid evolution in surface protein-coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent comparative genomics of natural T. cruzi strains have shown a similar pattern, suggesting that these regions indeed evolve more rapidly than other regions of the genome (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "5c383bc1-ae0a-42d3-a931-f3b936a4e13e",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C100",
+      "claim": "There is clear evidence for relatively recent inter-DTU hybridization between TcII and TcIII as the origin of TcV and TcVI.",
+      "claim_type": "EXPLICIT",
+      "source": "For T. cruzi, there is clear evidence for relatively recent inter-DTU hybridization between TcII and TcIII as the origin of TcV and TcVI, which are now widespread in domestic transmission cycles in southern South America (Lewis et al., 2011; Messenger and Miles, 2015; Carrasco et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lewis et al., 2011; Messenger and Miles, 2015; Carrasco et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "3a290f6d-d9ea-4a94-aad3-504f4d390140",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C101",
+      "claim": "Evidence for inter-DTU genetic exchange between TcI and TcIV comes from phylogenetic incongruence between nuclear and mitochondrial sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Other evidence for inter-DTU genetic exchange between TcI and TcIV comes from phylogenetic incongruence between nuclear and mitochondrial (kDNA maxicircle) sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "9fae252a-495c-43e8-b734-bf2e878cf761",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C102",
+      "claim": "The frequency of natural genetic exchange events between lineages/clades/DTUs appears to be too low to disrupt the overall stability of the main six clades.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the frequency of natural genetic exchange events between lineages/clades/DTUs appears to be too low to disrupt the overall stability of the main six clades, or seven clades if the TcBat lineage is included (Lewis et al., 2011; Messenger and Miles, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lewis et al., 2011; Messenger and Miles, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "53546cb5-adb9-4330-b419-8c95f657b294",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C103",
+      "claim": "The robustness of the clades is likely promoted by ecological and/or geographical isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "The robustness of the other clades is likely promoted by ecological and/or geographical isolation, for example, association with distinct vector and host species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference about factors maintaining clade stability",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "a7a282f3-4ec8-41a3-8035-03feab852abe",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C104",
+      "claim": "There may be a high fitness cost for tetraploidy in the wild that is not replicated in laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "There may also be a high fitness cost for tetraploidy in the wild that is not replicated in laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference about fitness costs",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "75e1eae8-405f-466c-b673-5c68d7d85f98",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C105",
+      "claim": "In vitro hybrid formation in T. cruzi happened in a parasexual mechanism, representing an important mechanism of genetic diversification.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we confirmed that in vitro hybrid formation in T. cruzi happened in a parasexual mechanism, representing an important mechanism of genetic diversification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion supported by ploidy and inheritance data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "b40eb006-9c24-4473-9960-bcfb7d48f1d2",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C106",
+      "claim": "Tetraploid hybrids showed patterns of progressive genome erosion shaped by the environment's selective pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Tetraploid hybrids showed patterns of progressive genome erosion shaped by the environment's selective pressure, which may explain distinct phenotypes in isolated natural hybrid populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion supported by flow cytometry and CNV data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "03180609-5e8a-4825-91ce-459d7c82d2b0",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C107",
+      "claim": "An increase in coding sequence diversity is observed in hybrids in comparison to the parental strains, related to both new mutations and most likely recombination events.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, an increase in coding sequence diversity is observed in hybrids in comparison to the parental strains, related to both new mutations and most likely recombination events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion supported by SNP analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "60336feb-2e65-4d5d-9cf3-5b3afd1db51a",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "claim_id": "C108",
+      "claim": "Repetitive gene families related to immune evasion evolved more rapidly than other regions of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our microevolution experiment has shown that repetitive gene families related to immune evasion evolved more rapidly than other regions of the genome, indicating an intrinsic mechanism of genetic variation of these regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion supported by SNP distribution and mutation rate analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A microevolution experiment was conducted with two TcI parental strains (P1, P2) and three hybrid clones (1C2, 1D12, 2C1) cultured for ~800 generations. Parental DNA content remained stable while hybrid DNA content decreased progressively by up to 22.5%, corresponding to genome erosion at ~23 kb/generation, with variable patterns among hybrid lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C26 provide converging evidence from flow cytometry measurements over time showing stable parental DNA content and progressive hybrid genome erosion. The experimental design is clearly described (C18-C19), measurements are quantitative (C20-C23), and line-specific patterns are documented (C24-C26). The erosion rate calculation (C23) is appropriately derived from flow cytometry data and published genome size estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "20593a1e-f562-4e06-81b0-f732ec33a8ce",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Three of nine evolved hybrid clones lost at least one microsatellite allele during culture growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is supported by microsatellite genotyping data presented in Supplementary file 1. This provides independent molecular evidence for genome instability in hybrids, complementing the flow cytometry data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "586cd2d5-334e-442c-9040-f43ab577c19e",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Parental strains P1 and P2 differ in genome size (~2 Mbp) and SNP density (9.28 vs 3.71 SNP/kb genome-wide; 2.84 vs 2.11 SNP/kb in high-quality regions). P1 shows expansion of tandem-repeated and surface molecule-coding regions compared to P2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 are supported by genome assembly data and SNP calling analysis with appropriate quality filtering. The characterization of parental genome differences provides essential baseline data for interpreting hybrid genomes. CNV analysis (C31) supports the observed SNP distribution patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "f51687b4-38d7-4ab7-a990-c17686996823",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hybrid strains show increased SNP density (3.29-3.49 SNP/kb) compared to parents, with additional de novo mutations enriched for non-synonymous changes (NS/S ratio ~2.2-2.4 vs ~1.4 in inherited SNPs) and disproportionately affecting surface protein-coding genes (~4-fold enrichment).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 demonstrate increased genetic diversity in hybrids with quantitative support from SNP density analysis (C33), identification of de novo mutations (C34-C35), and effect prediction showing elevated NS/S ratios (C36) and surface gene enrichment (C37-C38). The data consistently support a burst of mutations associated with hybridization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "96723646-bd74-42a2-b11f-6b004ddcfd52",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Parental strains are diploid (allele balance peaks at 50%) while initial hybrid clones are tetraploid (peaks at 25%/75% or 50%), with ~70% greater DNA content. P2 shows trisomy of chromosomes 2 and 21. Hybrids inherit SNPs from both parents, indicating tetraploidy results from fusion of diploid parental genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 provide converging evidence for ploidy from multiple methods: read depth coverage (RDC), allele balance (AB) analysis, and flow cytometry. The combination of methods strengthens the conclusion. However, C40 notes that chromosome 44 aneuploidy in P1 could not be confirmed by AB analysis due to lack of high-quality SNPs, appropriately acknowledging a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "0a34b61d-4223-4021-ae8c-d3f6b5043344",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "After 800 generations, parental aneuploidies changed (P2 lost trisomies in chr 2/21; both parents gained trisomy in chr 37). Hybrid 2C1 transitioned from tetraploid to triploid. Chromosomes 19 and 37 remained tetrasomic in all hybrids. Genome erosion appears gradual with sequential losses rather than coordinated ploidy jumps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 are supported by CCNV analysis at generation 800 combined with intermediate time point flow cytometry data. The observation of dynamic aneuploidy and gradual erosion is well-documented. The retention of tetrasomy in specific chromosomes (C47) is consistently observed across all hybrid clones.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "52bd0d7d-74f3-410f-9ee3-67a263474587",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Despite stable parental DNA content, both parental and hybrid clones showed CNV after culture growth. Gene losses occurred mainly in surface protein-coding and host-parasite interaction genes, while genes for metabolism, ion transport, and cell division increased. Chromosomes 19 and 37 (enriched in housekeeping genes) remained tetrasomic in hybrids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by CNV analysis data in Supplementary files 6-12 and gene content analysis. The functional categorization of genes showing gains vs losses is biologically coherent and consistent with adaptation to culture conditions. The retention of housekeeping gene-rich chromosomes (C52-C53) provides a plausible fitness explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "0ed3f5b1-9442-4862-b72c-21935f813e8a",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "P1 clones maintained stable SNP density after culture growth while P2 clones showed significant increase (2.11 to 2.66-2.81 SNP/kb, p=0.042). P2 clones lost copies of HUS1-like DNA repair genes, many located on chromosome 2, potentially explaining the increased mutation rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by SNP density analysis with appropriate statistical testing (Mann-Whitney test) and CNV analysis. The proposed mechanistic link between HUS1 gene loss and increased mutation rate (C57, C89) is speculative but reasonable given the known role of HUS1 in genome stability (supported by C88). However, C89 appropriately uses cautious language ('could possibly be related').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "200a5e73-9c9b-44cc-b535-554ab896f7be",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Most evolved hybrid clones showed slight SNP density decrease (except 1D12-3), with clone-specific patterns of new variants. Chromosome-level SNP patterns remained similar over time, with some chromosomes (5, 11, 24, 37) showing consistently higher density. Novel SNPs were enriched for non-synonymous mutations in surface protein-coding genes, suggesting these regions mutate faster than the rest of the genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C67 are supported by comprehensive SNP analysis across all evolved clones with chromosome-level resolution. The enrichment of mutations in surface protein genes is consistently observed in both parental (C65) and hybrid (C66) evolved clones. The inference that surface molecule-coding regions mutate faster (C67) is well-supported by the data, though the mechanism remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "ee17508d-0c80-46cd-a88a-3ce5d51a80b1",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Initial hybrid clones were tetraploid, formed by fusion of diploid parental genomes (evidenced by inheritance of SNPs from both parents), with gradual genome erosion over time. This confirms parasexual hybridization in T. cruzi, resembling Candida albicans parasexual cycle, distinct from the meiosis-like process in T. brucei and Leishmania.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 synthesize multiple lines of evidence (ploidy, SNP inheritance, erosion patterns) to support parasexual hybridization. The comparison to C. albicans (C72) and contrast with T. brucei/Leishmania (C73) are appropriately supported by citations. However, C69 acknowledges that 'more complex pathways cannot be ruled out in the absence of direct observational evidence,' appropriately noting the limitation of inferring mechanism from genomic data alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "63254bb6-0e1c-450f-b172-baa7f8ef1c15",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "T. cruzi genomes are highly responsive to environmental conditions, showing dynamic aneuploidy and CNV. Surface genes were eroded while metabolism/cell division genes expanded during culture adaptation. Aneuploidy (particularly chr 37 in all clones) appears to provide fitness benefits in culture and is rapidly reversed when no longer beneficial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C81 are supported by the observed CNV and CCNV changes during culture growth. The interpretation of environmental responsiveness is well-supported by the data. Claims about aneuploidy in natural populations (C76) and its role in adaptation (C77, C81) are appropriately supported by citations. The inference about fitness benefits (C80) is reasonable given the consistent observation across all clones.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "e13f43bc-f98d-4e62-bab8-095cb8695720",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Hybridization increased genetic sequence diversity through both new mutations and likely recombination. P2 showed higher mutation rate than P1 after 800 generations. TcI strains have more efficient mismatch repair than other DTUs, and HUS1 is required for genome stability in Leishmania.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C86 are supported by SNP analysis data. The inference of recombination (C84) is reasonable but not directly demonstrated. Claims about TcI mismatch repair efficiency (C87) and HUS1 function (C88) are appropriately supported by citations to prior work, providing context for interpreting the observed mutation rate differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "6dc8190c-11e8-4b9f-8a22-78948878dd67",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Culture growth led to reduction in genetic variants in most evolved clones, likely due to loss of heterozygosity and genome erosion. No bias in loss of specific parental chromosomes was observed, suggesting recombination. Hybrids would likely stabilize at diploidy with chromosomes from both parents and higher polymorphism than parents, similar to natural TcV/TcVI hybrids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C92 are supported by SNP density analysis over time. However, the prediction that hybrids will stabilize at diploidy (C93) is speculative, appropriately qualified with 'it is likely.' The comparison to natural hybrids (C94-C95) is supported by citations but the claim that in vitro hybrid formation is 'highly similar' to natural hybrid formation (C95) is an inference that extends beyond the direct evidence, as the natural hybridization process was not directly observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "02220fe3-8eee-4bb3-a565-3c3720b4c605",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Surface protein-coding genes show higher genetic diversity and more rapid evolution than other genomic regions. Distinct genomic signatures and amino acid substitutions accumulated in both parental and hybrid clones after relatively few generations. Higher recombination frequency in repeat-rich regions likely contributes to this pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 are well-supported by SNP distribution and mutation rate analysis throughout the study. The inference about higher recombination in repeat-rich regions (C98) is supported by citation to prior work and is consistent with the observed patterns. The comparison to natural T. cruzi strains (C99) is appropriately supported by citation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "f60fa72b-5ee0-4333-a2ce-644ee9d87c05",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Natural inter-DTU hybridization between TcII and TcIII generated TcV and TcVI. Evidence for TcI/TcIV genetic exchange exists from phylogenetic incongruence. However, genetic exchange frequency appears too low to disrupt clade stability, likely due to ecological/geographical isolation and potentially high fitness costs of tetraploidy in the wild.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C102 about natural hybridization and clade stability are appropriately supported by citations. However, the explanations for clade robustness (C103) and fitness costs of tetraploidy (C104) are speculative inferences, though reasonable. C103 and C104 appropriately use cautious language ('likely promoted,' 'may also be').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "bd35ee5f-8a5c-42c2-95a5-514b1b4b0a6b",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In vitro T. cruzi hybrid formation occurs via parasexual mechanism, representing an important mechanism of genetic diversification. Tetraploid hybrids show progressive genome erosion shaped by environmental selective pressure. Hybrids show increased coding sequence diversity from new mutations and recombination. Repetitive gene families related to immune evasion evolve more rapidly than other genomic regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C108 appropriately summarize the major findings of the study. Each summary claim is supported by the detailed results presented earlier. The conclusions are appropriately qualified and acknowledge both demonstrated findings (parasexual mechanism, genome erosion, increased diversity) and inferences (role of selective pressure, intrinsic mechanism of variation).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    },
+    {
+      "id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d",
+      "content_id": "24bfd230-65c6-4088-8501-1dc31e9854f0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims establish that T. cruzi causes Chagas disease, has complex transmission cycles, displays diverse surface proteins encoded by repetitive genomic regions, and has debated reproductive modes. Natural TcV/TcVI hybrids exist, and in vitro hybrid formation has been demonstrated with non-Mendelian inheritance and elevated DNA content, suggesting parasexual mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 provide background context appropriately supported by citations to prior literature. These establish the scientific foundation for the current study but do not represent new findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:39.013797Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b716b53f-e7a4-4741-85f4-25e9b0cbc3b2",
+      "result_id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444"
+    },
+    {
+      "claim_id": "27477adf-45f5-4a0f-9691-e97658eadff7",
+      "result_id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444"
+    },
+    {
+      "claim_id": "4b1cb236-0774-4e8c-a491-1991973db37b",
+      "result_id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444"
+    },
+    {
+      "claim_id": "1ce04c61-3203-4c51-97b0-d60a66917c77",
+      "result_id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444"
+    },
+    {
+      "claim_id": "85af1ea2-a375-457e-af26-d6ffc6642b6b",
+      "result_id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444"
+    },
+    {
+      "claim_id": "bbc3f284-dc06-4d39-89dd-7df9f6d10617",
+      "result_id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444"
+    },
+    {
+      "claim_id": "fe14dbae-851e-47ed-b79e-26c63c17e8f9",
+      "result_id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444"
+    },
+    {
+      "claim_id": "85a399f5-02b4-4f92-a5cc-9f984d33704b",
+      "result_id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444"
+    },
+    {
+      "claim_id": "66b08668-bd2d-467d-85b8-b841cbce12cd",
+      "result_id": "d28b71b8-d2d0-4846-8039-cbe13ad7e444"
+    },
+    {
+      "claim_id": "af23cec8-b66c-4693-a8df-8371f0184384",
+      "result_id": "20593a1e-f562-4e06-81b0-f732ec33a8ce"
+    },
+    {
+      "claim_id": "733f27e7-1ba5-4af2-b7cd-8d07ebc2edc2",
+      "result_id": "586cd2d5-334e-442c-9040-f43ab577c19e"
+    },
+    {
+      "claim_id": "dda1fad8-ccc9-4e69-bc58-6ef9b49b85f2",
+      "result_id": "586cd2d5-334e-442c-9040-f43ab577c19e"
+    },
+    {
+      "claim_id": "05a3f8e9-70ae-4b0e-a9c0-8be0b2da9f26",
+      "result_id": "586cd2d5-334e-442c-9040-f43ab577c19e"
+    },
+    {
+      "claim_id": "c6c8bb73-58da-404c-8b8b-18c852ff6251",
+      "result_id": "586cd2d5-334e-442c-9040-f43ab577c19e"
+    },
+    {
+      "claim_id": "ecab5f8e-029d-476f-9b05-9e684d7b2c97",
+      "result_id": "586cd2d5-334e-442c-9040-f43ab577c19e"
+    },
+    {
+      "claim_id": "5dc3d63c-fb07-4cac-9160-765493922408",
+      "result_id": "f51687b4-38d7-4ab7-a990-c17686996823"
+    },
+    {
+      "claim_id": "b6ac0ba6-19eb-4cb2-a470-2ff29d050b4a",
+      "result_id": "f51687b4-38d7-4ab7-a990-c17686996823"
+    },
+    {
+      "claim_id": "01fc5dbc-a908-4bd6-970d-59d0168c31f8",
+      "result_id": "f51687b4-38d7-4ab7-a990-c17686996823"
+    },
+    {
+      "claim_id": "2fe7344e-328a-42d3-a869-b8ee74cec91a",
+      "result_id": "f51687b4-38d7-4ab7-a990-c17686996823"
+    },
+    {
+      "claim_id": "0af01d8a-c522-45d3-bdb2-8cef90ab88e0",
+      "result_id": "f51687b4-38d7-4ab7-a990-c17686996823"
+    },
+    {
+      "claim_id": "62e331b7-bd22-4289-993e-d2f8a0505557",
+      "result_id": "f51687b4-38d7-4ab7-a990-c17686996823"
+    },
+    {
+      "claim_id": "a619939a-aaa6-4282-aa31-70c146ab43da",
+      "result_id": "96723646-bd74-42a2-b11f-6b004ddcfd52"
+    },
+    {
+      "claim_id": "f2e92f29-5b98-412c-9baf-1c993b829878",
+      "result_id": "96723646-bd74-42a2-b11f-6b004ddcfd52"
+    },
+    {
+      "claim_id": "e6897a6d-d717-4d33-b637-e2453fc48c16",
+      "result_id": "96723646-bd74-42a2-b11f-6b004ddcfd52"
+    },
+    {
+      "claim_id": "4b1cf7c1-803e-4f5d-a191-aceaa95ccf0f",
+      "result_id": "96723646-bd74-42a2-b11f-6b004ddcfd52"
+    },
+    {
+      "claim_id": "ae4acde8-14fb-4664-9486-3b3d3f4c26fd",
+      "result_id": "96723646-bd74-42a2-b11f-6b004ddcfd52"
+    },
+    {
+      "claim_id": "d04eba9d-8062-4008-9921-a1ec7ee05cf9",
+      "result_id": "0a34b61d-4223-4021-ae8c-d3f6b5043344"
+    },
+    {
+      "claim_id": "5bea618a-eaa7-4355-b1df-d04b45788cab",
+      "result_id": "0a34b61d-4223-4021-ae8c-d3f6b5043344"
+    },
+    {
+      "claim_id": "95251c8e-a1e3-4c56-93d7-053efd378b1e",
+      "result_id": "0a34b61d-4223-4021-ae8c-d3f6b5043344"
+    },
+    {
+      "claim_id": "1c4362af-3b20-4cd1-a981-89be8b06b09a",
+      "result_id": "0a34b61d-4223-4021-ae8c-d3f6b5043344"
+    },
+    {
+      "claim_id": "cc226f8d-af3a-4ada-948a-eefc387cdd15",
+      "result_id": "0a34b61d-4223-4021-ae8c-d3f6b5043344"
+    },
+    {
+      "claim_id": "31527ba5-8ff7-4212-8d79-479e2e00171b",
+      "result_id": "52bd0d7d-74f3-410f-9ee3-67a263474587"
+    },
+    {
+      "claim_id": "b6fe9839-80d4-4d9d-a476-48a4252ebc42",
+      "result_id": "52bd0d7d-74f3-410f-9ee3-67a263474587"
+    },
+    {
+      "claim_id": "b753c32d-8299-4207-9bc0-8adadf7d411a",
+      "result_id": "52bd0d7d-74f3-410f-9ee3-67a263474587"
+    },
+    {
+      "claim_id": "5e9bf484-b8af-4253-8ca3-60fe1fbbd6b3",
+      "result_id": "52bd0d7d-74f3-410f-9ee3-67a263474587"
+    },
+    {
+      "claim_id": "839fe8ce-3849-43b3-b5a7-1aa9901db40c",
+      "result_id": "52bd0d7d-74f3-410f-9ee3-67a263474587"
+    },
+    {
+      "claim_id": "1e4c8e8b-3fb9-4e48-8258-4977268e3b24",
+      "result_id": "0ed3f5b1-9442-4862-b72c-21935f813e8a"
+    },
+    {
+      "claim_id": "39cf250f-0778-41b8-80d1-695d651b66cd",
+      "result_id": "0ed3f5b1-9442-4862-b72c-21935f813e8a"
+    },
+    {
+      "claim_id": "41d1eb6b-a5b2-44dc-92b5-55b75fce19ac",
+      "result_id": "0ed3f5b1-9442-4862-b72c-21935f813e8a"
+    },
+    {
+      "claim_id": "394cef1b-d4a4-4ac0-a0ab-3da51d0d8166",
+      "result_id": "0ed3f5b1-9442-4862-b72c-21935f813e8a"
+    },
+    {
+      "claim_id": "3ffb267d-aaa3-42c6-8742-b60ce0f17ed6",
+      "result_id": "0ed3f5b1-9442-4862-b72c-21935f813e8a"
+    },
+    {
+      "claim_id": "3a22e29c-fa52-411f-a9d3-3b80881469ed",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "ce68622a-df9e-4b12-a55b-38a196fbc5c3",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "efc3093e-be52-4dec-bf61-b537a121f68e",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "29f1f7db-808b-45eb-8f7a-4076d41154fc",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "1404b5b5-7454-4121-92e4-63b2bf348795",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "94f8d471-3908-4676-bfb9-c04acbafb2e3",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "d2c6af04-fb5e-4633-a3a3-c794f790f267",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "9b6d9a43-ee27-4a06-ae50-c4da433a21f2",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "ae1a721e-1e5b-4dc9-952f-b43c11e13dfa",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "8627004a-ef60-48c6-8c72-648469f74a04",
+      "result_id": "200a5e73-9c9b-44cc-b535-554ab896f7be"
+    },
+    {
+      "claim_id": "0698b0b4-1743-4e39-a40d-3bbbf17c5e2b",
+      "result_id": "ee17508d-0c80-46cd-a88a-3ce5d51a80b1"
+    },
+    {
+      "claim_id": "c98d3ab2-4dc7-4332-826d-10000eb4e3b4",
+      "result_id": "ee17508d-0c80-46cd-a88a-3ce5d51a80b1"
+    },
+    {
+      "claim_id": "e12f1171-129b-4455-a54e-08a9acabb4b4",
+      "result_id": "ee17508d-0c80-46cd-a88a-3ce5d51a80b1"
+    },
+    {
+      "claim_id": "fa45884c-943d-4301-82ec-c65787942458",
+      "result_id": "ee17508d-0c80-46cd-a88a-3ce5d51a80b1"
+    },
+    {
+      "claim_id": "18c7136c-baba-427b-8af5-ac706eb0a4d3",
+      "result_id": "ee17508d-0c80-46cd-a88a-3ce5d51a80b1"
+    },
+    {
+      "claim_id": "934f945b-cdee-437f-b61f-eb9e385a975a",
+      "result_id": "ee17508d-0c80-46cd-a88a-3ce5d51a80b1"
+    },
+    {
+      "claim_id": "44cbe5a4-5c65-434a-87b9-c815ef7c1a19",
+      "result_id": "63254bb6-0e1c-450f-b172-baa7f8ef1c15"
+    },
+    {
+      "claim_id": "9978a86e-bca9-4998-a9d8-3b1f3fd63e8c",
+      "result_id": "63254bb6-0e1c-450f-b172-baa7f8ef1c15"
+    },
+    {
+      "claim_id": "244dac01-054e-463b-a44b-b250bcd1890f",
+      "result_id": "63254bb6-0e1c-450f-b172-baa7f8ef1c15"
+    },
+    {
+      "claim_id": "afa0bd34-b4a9-49b2-97ab-1df5067ed015",
+      "result_id": "63254bb6-0e1c-450f-b172-baa7f8ef1c15"
+    },
+    {
+      "claim_id": "42b90b33-2b9c-4c6b-ae00-7e99fa93f7a3",
+      "result_id": "63254bb6-0e1c-450f-b172-baa7f8ef1c15"
+    },
+    {
+      "claim_id": "e6e9785e-513c-4f57-a198-7c318bfa5fb7",
+      "result_id": "63254bb6-0e1c-450f-b172-baa7f8ef1c15"
+    },
+    {
+      "claim_id": "2af58ee5-a0d6-4958-bfe8-3f634cb46439",
+      "result_id": "63254bb6-0e1c-450f-b172-baa7f8ef1c15"
+    },
+    {
+      "claim_id": "f39610db-9b72-49e1-8b4d-eb837a022fa4",
+      "result_id": "63254bb6-0e1c-450f-b172-baa7f8ef1c15"
+    },
+    {
+      "claim_id": "4caf2922-a92a-4895-9da4-809214d79761",
+      "result_id": "e13f43bc-f98d-4e62-bab8-095cb8695720"
+    },
+    {
+      "claim_id": "d6de03d3-6ce3-48ed-bc8c-12e3a67c2dad",
+      "result_id": "e13f43bc-f98d-4e62-bab8-095cb8695720"
+    },
+    {
+      "claim_id": "62795b23-9956-4be4-af57-f3ff6cfdf678",
+      "result_id": "e13f43bc-f98d-4e62-bab8-095cb8695720"
+    },
+    {
+      "claim_id": "51ea009b-703e-4296-b246-664f4155962f",
+      "result_id": "e13f43bc-f98d-4e62-bab8-095cb8695720"
+    },
+    {
+      "claim_id": "7d805252-b953-48f9-ada6-0edfe71639f8",
+      "result_id": "e13f43bc-f98d-4e62-bab8-095cb8695720"
+    },
+    {
+      "claim_id": "73557403-9924-4aa5-8d38-6f1baa2446bb",
+      "result_id": "e13f43bc-f98d-4e62-bab8-095cb8695720"
+    },
+    {
+      "claim_id": "5d6642b2-84fc-42ab-b518-5a9c58d3be70",
+      "result_id": "e13f43bc-f98d-4e62-bab8-095cb8695720"
+    },
+    {
+      "claim_id": "9cc05d5d-1332-4ff3-bb87-ec44568a64db",
+      "result_id": "6dc8190c-11e8-4b9f-8a22-78948878dd67"
+    },
+    {
+      "claim_id": "b1367339-0ace-42e1-a01b-7be191e6ae65",
+      "result_id": "6dc8190c-11e8-4b9f-8a22-78948878dd67"
+    },
+    {
+      "claim_id": "92a5b8a8-480a-4b1d-a68a-33a472b43148",
+      "result_id": "6dc8190c-11e8-4b9f-8a22-78948878dd67"
+    },
+    {
+      "claim_id": "d3cd5e9d-e727-4c95-94d2-cc7edb55ad01",
+      "result_id": "6dc8190c-11e8-4b9f-8a22-78948878dd67"
+    },
+    {
+      "claim_id": "c3d25aad-3f82-4e7e-ba4f-3ae625f5ee39",
+      "result_id": "6dc8190c-11e8-4b9f-8a22-78948878dd67"
+    },
+    {
+      "claim_id": "60535706-9586-4af8-98f0-4eb6aba8de2a",
+      "result_id": "6dc8190c-11e8-4b9f-8a22-78948878dd67"
+    },
+    {
+      "claim_id": "e4fbe0e9-13b4-4625-b46d-cb59bb06b799",
+      "result_id": "02220fe3-8eee-4bb3-a565-3c3720b4c605"
+    },
+    {
+      "claim_id": "e30097d6-3d39-44a5-ad4c-127b40026f0f",
+      "result_id": "02220fe3-8eee-4bb3-a565-3c3720b4c605"
+    },
+    {
+      "claim_id": "5db392ac-12ca-4ee5-b4d3-ae29a8ae1cd6",
+      "result_id": "02220fe3-8eee-4bb3-a565-3c3720b4c605"
+    },
+    {
+      "claim_id": "f62ef890-97c9-4a4e-bdb6-3e0216629fe1",
+      "result_id": "02220fe3-8eee-4bb3-a565-3c3720b4c605"
+    },
+    {
+      "claim_id": "5c383bc1-ae0a-42d3-a931-f3b936a4e13e",
+      "result_id": "f60fa72b-5ee0-4333-a2ce-644ee9d87c05"
+    },
+    {
+      "claim_id": "3a290f6d-d9ea-4a94-aad3-504f4d390140",
+      "result_id": "f60fa72b-5ee0-4333-a2ce-644ee9d87c05"
+    },
+    {
+      "claim_id": "9fae252a-495c-43e8-b734-bf2e878cf761",
+      "result_id": "f60fa72b-5ee0-4333-a2ce-644ee9d87c05"
+    },
+    {
+      "claim_id": "53546cb5-adb9-4330-b419-8c95f657b294",
+      "result_id": "f60fa72b-5ee0-4333-a2ce-644ee9d87c05"
+    },
+    {
+      "claim_id": "a7a282f3-4ec8-41a3-8035-03feab852abe",
+      "result_id": "f60fa72b-5ee0-4333-a2ce-644ee9d87c05"
+    },
+    {
+      "claim_id": "75e1eae8-405f-466c-b673-5c68d7d85f98",
+      "result_id": "bd35ee5f-8a5c-42c2-95a5-514b1b4b0a6b"
+    },
+    {
+      "claim_id": "b40eb006-9c24-4473-9960-bcfb7d48f1d2",
+      "result_id": "bd35ee5f-8a5c-42c2-95a5-514b1b4b0a6b"
+    },
+    {
+      "claim_id": "03180609-5e8a-4825-91ce-459d7c82d2b0",
+      "result_id": "bd35ee5f-8a5c-42c2-95a5-514b1b4b0a6b"
+    },
+    {
+      "claim_id": "60336feb-2e65-4d5d-9cf3-5b3afd1db51a",
+      "result_id": "bd35ee5f-8a5c-42c2-95a5-514b1b4b0a6b"
+    },
+    {
+      "claim_id": "ecabc41e-81c0-42f6-ba23-d3084d9ede4c",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "ea44559a-5ac7-4cf7-9bc0-21640c07864e",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "8d375751-db58-46c7-82aa-b19bcc405ff6",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "fcb224b6-5b7d-409d-8eda-6f879920eb2f",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "0df6743d-f273-41f8-9f7d-e785e3c7fc42",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "70b98f41-b83a-4ad9-896b-d51f87119a72",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "106433b9-bc76-475d-9577-c566bc8a66e4",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "6831058b-6fdc-426b-a7ad-0535c3b7f023",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "1d7093c4-54b6-44ba-9ae2-c4c1c6f2f73b",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "2e6d4471-8d10-4427-8e65-4931621b9b15",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "a97508ac-49f7-400c-b8a0-563954db6161",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "2639bc04-0a6e-4117-83a6-33f32181c21e",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "915b86d6-2225-4065-96f1-a88c2f14d89f",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "f95258b4-2447-4afa-8021-8da1ee1e8854",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "59017b8f-119e-40b4-b453-26d852bc1159",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "e33a6924-624e-4392-af7a-acf35f22f37a",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    },
+    {
+      "claim_id": "88d2bb86-ed6e-419a-a20f-d4a676de75c5",
+      "result_id": "8ff54def-bfcb-44f9-b073-c4f4fb15b23d"
+    }
+  ],
+  "comparisons": []
+}

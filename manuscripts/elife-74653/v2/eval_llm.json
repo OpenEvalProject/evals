@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes the theoretical foundation of hierarchical predictive coding, describing how the brain organizes information processing across hierarchical levels with reciprocal connections, prediction-error computation, and feedback mechanisms. The authors note that hierarchical depth across multiple levels remains less well investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by citations to established literature on brain organization and predictive coding theory. Claim C9 appropriately identifies a gap in the literature that motivates the current study. These claims provide necessary theoretical context rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Marmosets are justified as an appropriate animal model for auditory processing studies due to their human-like social behavior and vocal learning abilities, and their lissencephalic brain provides unique advantages for combined fMRI and ECoG recordings compared to humans and macaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by citations to prior research. Claims C12-C13 correctly identify anatomical constraints in other species and advantages of the marmoset model. This provides appropriate justification for the experimental model choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "First-level (local) novelty responses were identified bilaterally along the auditory pathway from subcortical structures (IC, MG) through auditory cortex to higher cortical areas, characterized by early \u03b3-band power increases (peak ~74 ms) in primary auditory cortex as measured by fMRI and ECoG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 present statistically significant fMRI and ECoG data with appropriate corrections (FDR, cluster-corrected). Claim C19 makes a reasonable inference about primary auditory cortex localization based on the highest auditory responses. The convergence of fMRI and ECoG findings strengthens these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Second-level (global) novelty responses were identified in higher-order regions including anterolateral auditory area, superior temporal rostral area, and prefrontal cortex, characterized by later \u03b3-band power increases (peak ~242 ms) in temporal regions and \u03b2-band power decreases (starting ~206 ms, lasting >300 ms) in frontal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 present statistically significant fMRI and ECoG data with appropriate corrections. The temporal dissociation between first-level and second-level responses and the distinct frequency signatures (\u03b3 vs \u03b2) provide strong evidence for hierarchical processing. The spatial and temporal patterns are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors propose that \u03b3-band activity represents bottom-up prediction-errors (PE1 and PE2) while \u03b2-band activity represents top-down prediction/updating processes, based on established frequency band functions and the observed spatiotemporal patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by citations to prior research on frequency band functions. Claims C25-C26 represent reasonable interpretations of the observed data patterns within the predictive coding framework. The interpretation is consistent with both the data and theoretical expectations, though it remains an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Sequences with both first-level and second-level violations (xY|xx) produced the strongest activation encompassing the entire auditory pathway from subcortical areas through temporal-frontal networks, with extended \u03b3-band increases (>200 ms) in temporal regions and \u03b2-band decreases (>300 ms) in frontal and auditory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 present statistically significant fMRI and ECoG data showing that combined violations produce more extensive activation than single-level violations. This supports the hierarchical model where first-level violations can trigger second-level processing. The data are internally consistent and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Functional correlation analyses within and across trials revealed that early \u03b3-band (PE1) correlates with late \u03b3-band (PE2), which correlates with \u03b2-band (prediction) signals within xY|xx trials, while only PE2-prediction correlations were observed in xx|xY trials. Across trials, prediction signals selectively updated PE1 and PE2 depending on task context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 present correlation data supporting the sequential processing and interaction of prediction-error and prediction signals. Claim C37 provides a reasonable interpretation of the differential correlation patterns. The selective correlations across different trial types support the hierarchical model, though the correlational nature limits causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Omission responses differed between xx and xY tasks, with early \u03b3-band responses (~48 ms) in primary auditory cortex for x_|xY sequences consistent with unfulfilled first-level predictions, and later \u03b3-band responses in both tasks in temporal regions, along with \u03b2-band decreases in frontal and auditory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C42-C44 present statistically significant fMRI and ECoG data. Claims C41 and C43 make reasonable inferences about the functional significance of the timing and localization. The omission paradigm provides strong evidence for prediction signals independent of bottom-up input, supporting the predictive coding framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Omission responses were greater in the xY task compared to the xx task in primary auditory and superior temporal cortices (peak ~85 ms), revealing the first-level prediction-error signal generated by top-down prediction in the absence of actual auditory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 present statistically significant fMRI and ECoG data comparing omission responses between tasks. Claim C47 provides a reasonable interpretation that the differential response reflects first-level prediction signals. This is a key finding supporting hierarchical predictive coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Functional correlation analyses of omission responses revealed that within x_|xx trials, PE2 correlated only with prediction signals, while within x_|xY trials, PE2 correlated with both prediction and PE1. Across trials, frontal prediction signals in x_|xx correlated with PE2 in subsequent trials, while prefrontal prediction signals in x_|xY correlated with both PE1 and PE2, and auditory cortex predictions correlated only with PE1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C53, C55 present correlation data from omission experiments. Claims C52, C54, C56 provide reasonable interpretations of these patterns supporting hierarchical top-down predictions. The selective correlations across different omission contexts provide strong evidence for hierarchical prediction updating, though causality cannot be definitively established from correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study demonstrates progressive encoding of auditory information along a hierarchical pathway, with local information (PE1, early \u03b3-band) propagating from subcortical areas through primary auditory cortex, and global information (PE2, late \u03b3-band) propagating to higher-order auditory, temporal, and prefrontal cortices, with prediction feedback signals (\u03b2-band) from temporal and prefrontal cortices interacting with prediction-errors and updating internal representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 summarize the main findings of the study. These summary claims are well-supported by the convergent evidence from fMRI, ECoG, novelty responses, omission responses, and functional correlation analyses presented throughout the manuscript. The integration of multiple experimental approaches provides strong support for the hierarchical predictive coding framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "This is the first study to construct the hierarchy of predictive auditory sequences in the marmoset brain, revealing that both prediction-error and prediction-updating signals are located in the core and belt regions of the auditory cortex, taking advantage of the marmoset's lissencephalic brain structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is a reasonable statement of novelty given the literature review. Claim C66 is supported by citation. Claim C67 summarizes a key finding of the study supported by the data. These claims appropriately contextualize the contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study extends prior research by identifying local novelty responses in subcortical regions (IC, MG) using high-field fMRI, which were difficult to detect in previous human and macaque studies due to methodological limitations. These findings are consistent with prior oddball paradigm studies and recent mouse electrophysiology work, supporting the involvement of subcortical areas in local prediction-error processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 appropriately characterize prior work and its limitations. Claim C70 summarizes a key finding. Claims C71-C76 appropriately contextualize the findings within prior literature through citations. The comparison with prior work strengthens the interpretation of the subcortical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "In the xY|xx condition with combined local and global violations, activations were observed in the medial geniculate nucleus (MG), suggesting that subcortical auditory regions may also process large timescale auditory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 presents an observation from the data. Claim C78 provides a reasonable interpretation supported by citations to prior work. However, this finding is somewhat speculative and would benefit from additional investigation to rule out alternative explanations for MG activation in this condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study addresses a gap in the literature by separating global novelties (xx|xY vs xY|xx) in the local-global paradigm, which is essential for understanding hierarchical propagation of prediction-error and prediction-updating information, as most prior studies combined these different violation types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 appropriately characterize prior work through citations. Claims C84-C85 correctly identify a methodological innovation of the current study. The separation of global novelty types is indeed important for dissecting hierarchical processing, though the claim of being \"first\" (C84) should be verified against the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The omission paradigm allows study of top-down prediction signals decoupled from bottom-up input, as responses to unexpected omissions reflect specific prediction signals rather than simple novelty detection. The differential omission responses between xx and xY tasks reveal hierarchical predictions, with temporal predictions in xx task and both temporal and identity predictions in xY task, supporting hierarchical top-down prediction updating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 provide appropriate rationale for the omission paradigm supported by citations. Claims C93-C101 present interpretations of omission data that are reasonable within the predictive coding framework. The omission results provide strong evidence for prediction signals, though alternative explanations (e.g., retrospective detection) cannot be completely ruled out despite the authors' arguments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The combined fMRI and ECoG results in marmosets reveal a complete account of a hierarchical predictive coding framework of auditory sequences, including prediction-error and prediction-updating information at two hierarchies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is a reasonable summary conclusion supported by the convergent evidence from multiple experimental approaches (fMRI, ECoG, novelty responses, omission responses, functional correlations). However, the claim of a \"complete account\" may be somewhat overstated, as questions remain about mechanisms and causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study used three marmosets for fMRI and two for ECoG experiments, with appropriate training, awake passive listening paradigms, and technical specifications for both imaging modalities including 9.4T fMRI with 3.5s temporal resolution and 96-channel ECoG with 1kHz sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C103-C116 provide methodological details that are clearly stated and appropriate for the experimental design. The sample sizes are small but typical for marmoset neuroimaging studies. The technical specifications are adequate for the research questions, though the 3.5s temporal resolution of fMRI limits temporal precision.",
+    "result_type": "MINOR"
+  }
+]

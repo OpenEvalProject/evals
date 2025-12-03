@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C27",
+      "C28"
+    ],
+    "result": "MEDYAN simulations reveal that varying filament treadmilling rate and myosin concentration induces a finite-size phase transition in actomyosin networks. At low treadmilling rates or high myosin concentrations, networks condense into clusters via centripetal collapse, while at high treadmilling rates and low myosin concentrations, networks form ring-like or cortex-like structures via centrifugal condensation without filament tethering to boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C27-C28 are strongly supported by simulation data in Figures 2-3 showing the phase transition and distinct network morphologies. The phase diagram (Figure 3d-e) demonstrates the critical treadmilling rate threshold separating cluster and ring states. The simulations systematically vary parameters and show reproducible transitions with quantitative measurements of network geometry (R_median).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Live T cells exhibit ring-like actin networks upon activation by anti-CD3 antibody, consisting of an outer lamellipodial region with Arp2/3-mediated branched actin that excludes NMII, an inner lamellar ring enriched in NMII-decorated actin filaments forming actomyosin arcs, and a central region depleted of actin and NMII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C38-C42 are supported by experimental imaging data in Figure 1a-c showing the spatial organization of actin and NMII in activated T cells. The fluorescence images clearly demonstrate the ring structure with distinct inner and outer regions and central depletion. The observations are consistent with prior literature on T cell immune synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C32",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Disruption of filament treadmilling via Latrunculin A treatment causes pre-existing actin rings to collapse into clusters in both live T cells and simulations. Weak inhibition preserves ring structure while strong inhibition induces centripetal collapse accompanied by cluster/bundle formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C32, C69-C71 are supported by experimental data (Figure 4a-e) showing dose-dependent LatA effects on T cells and corresponding simulation results (Figure 4f-j) that recapitulate the experimental observations. The quantitative measurements of R_median and collapse rates show agreement between experiments and simulations, validating the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C31",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Enhancement of myosin II activity via Calyculin A causes pre-existing actin rings to collapse centripetally toward the network center in both T cells and simulations. The collapse speed is proportional to the amount of NMII added, and high NMII activity is antagonistic to actin ring formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C31, C77-C79 are supported by experimental data (Figure 5a,c) showing CalyA-induced ring collapse in T cells and simulation results (Figure 5e-f) demonstrating proportional collapse rates with NMII concentration. The Y-27632 inhibition experiments (Figure 5b,d) provide complementary evidence that reduced NMII activity disrupts ring integrity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C33",
+      "C34",
+      "C35",
+      "C90",
+      "C95"
+    ],
+    "result": "Ring-like actin structures represent an energetically preferred state of low mechanical energy that is only kinetically accessible at sufficiently high treadmilling rates. Peripheral filament arrangements have 2-3 fold lower mechanical energy than cluster configurations due to reduced filament bending at the boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C33-C35, C90, C95 are supported by mechanical energy analysis in Figure 6a-b showing sharp reduction in U_Mech at the critical treadmilling threshold and negative correlation between U_Mech and R_median. The interpretation that peripheral arrangements minimize bending energy is mechanistically sound given the simulation's mechanical model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "Actin network morphology arises from competition between filament treadmilling and myosin-induced contraction. Addition of myosin to disordered networks creates high-energy clusters trapped in metastable states. Rapid treadmilling provides escape from these traps, allowing networks to reach lower-energy peripheral configurations, while slow treadmilling leads to non-ergodic centripetal collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C91-C94, C96-C97 present a mechanistic framework supported by simulation data showing energy landscapes (Figure 6c-d) and temporal evolution of network structures. The interpretation using dissipative structure theory is reasonable given the non-equilibrium nature of the system, though the metastability argument could benefit from more quantitative barrier height analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "MEDYAN simulations model actomyosin networks in confined geometries (3.8-10 \u03bcm diameter oblate cylinders) using a mechanochemical framework with solution and polymeric phases. Preferential Arp2/3 activation near the periphery alone is sufficient to generate lamellipodia-like rings without filament tethering, and simulated networks exhibit retrograde flow similar to T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C111-C120 describe the simulation methodology and initial validation results. The approach is well-documented with appropriate mechanical and chemical models (Tables 1-3). Figure 1d-e and supplements show that simulations reproduce key features of T cell actin rings including spatial organization and retrograde flow, validating the model setup.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In the absence of NMII, disordered actin networks form at all treadmilling rates tested with relatively uniform filament density. Boundary repulsion inhibits barbed end polymerization causing filaments reaching the boundary to rapidly depolymerize and disassemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by simulation data in Figure 2\u2014figure supplement 1 showing uniform R_median trajectories and density distributions in NMII-free networks. This establishes that NMII contractility is necessary for the observed phase transition, serving as an important control for the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Simulated actin rings and clusters are highly condensed structures with local concentrations of 234-263 \u03bcM (6-fold higher than initial G-actin concentration), thickness of a few hundred nanometers, and filaments oriented parallel to the boundary in rings. Ring thickness increases with initial G-actin concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C55-C57 are supported by quantitative measurements from simulations shown in Figure 2\u2014figure supplements 2 and 4, and Figure 2d. The concentration measurements use a density-based clustering algorithm described in methods. The filament orientation analysis provides mechanistic insight into ring structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C58",
+      "C59"
+    ],
+    "result": "During ring formation, NMII deforms filaments and changes their orientation from perpendicular to parallel relative to the boundary. Ring-like patterns are observed in larger systems (10 \u03bcm diameter) and spherical systems evolve into hollow cortex-like geometries under similar conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C58-C59 are supported by simulation data in Figure 2\u2014video 2, Figure 2\u2014figure supplement 5 (larger system), and Figure 2e with supplement 6 (spherical system). These results demonstrate that the ring formation mechanism is robust across different system sizes and geometries, strengthening the generality of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Increasing network contractility by tuning alpha-actinin concentration results in a transition from ring-like networks at low linker concentrations to bundles and clusters at higher concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by simulation data in Figure 3\u2014figure supplement 1 showing the phase transition with varying alpha-actinin concentration. This demonstrates that contractility can be modulated through either myosin or crosslinker concentration, providing additional validation of the competition mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C81"
+    ],
+    "result": "Under vehicle control, actin rings in T cells are stable over 10 minutes with steep center-to-plateau F-actin transitions. Y-27632 treatment (NMII inhibition) causes networks to become more disordered with shallower transitions and decreased slope over time, compromising ring integrity. Similar effects are observed in simulations with NMII reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C74-C76, C81 are supported by experimental data in Figure 5\u2014figure supplements 1-2 and Figure 5b,d showing quantitative slope measurements, and simulation data in Figure 5g-h. The agreement between experiments and simulations validates the role of NMII contractility in maintaining ring structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "A confined boundary is not required for the maintenance of actin rings, as demonstrated by simulations showing ring persistence after NMII perturbations without boundary constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by simulation results showing that rings can be maintained and respond to perturbations without requiring filament tethering to boundaries. This is an important mechanistic insight distinguishing this mechanism from models requiring membrane attachment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Ring-like architectures do not form due to enrichment of soluble constituent molecules near the periphery, as the numbers of F-actin, bound linkers, and bound motors remain constant across treadmilling rates and diffusive molecules are uniformly distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by analysis in Figure 6\u2014figure supplement 1 showing uniform distributions of diffusing molecules and constant numbers of polymeric components. This rules out a concentration-gradient mechanism and supports the energetic interpretation of ring formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The driving force for actin ring formation is energetic in origin rather than entropic, as both ring and cluster states have lower structural entropy compared to the uniform disordered state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 presents a reasonable interpretation based on the mechanical energy analysis, but the authors acknowledge that quantitative estimation of entropic contributions is needed to fully validate this argument. The claim is speculative without direct entropy calculations or free energy analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Forming long filaments is not necessary for generating actin rings, though filament length may modulate network morphology. Filament binding to membranes or spatially biased localization of regulators like Arp2/3 can further enhance ring formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is supported by simulations showing rings form without requiring long filaments (Figure 2\u2014figure supplement 7), but the authors acknowledge filament length effects require further exploration. Claim C100 is speculative, suggesting potential enhancements not tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The assembly and stability of cellular actin structures are crucially regulated by fine-tuning filament treadmilling through accessory proteins. Rapid treadmilling and myosin presence are sufficient to create ring/cortex structures in confined boundaries. T cells may modulate treadmilling or myosin activity upon antigen stimulation to generate rings, while cells lacking such structures may have slower treadmilling or higher contractility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 and C101 are supported by the combined simulation and experimental results demonstrating the sufficiency of treadmilling and myosin for ring formation. Claims C102-C103 are reasonable speculations based on the findings but lack direct experimental validation in the specific cellular contexts mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background knowledge claims about actin cortex structure, function, and dynamics in eukaryotic cells, including differences between in vitro and in vivo systems. The actin cortex is ubiquitous, controls cell shape and mechanics, adopts diverse forms including rings, and exhibits different structures in vitro (clusters) versus in vivo (rings/cortices) likely due to different parameter spaces, particularly treadmilling rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C26 represent established knowledge supported by appropriate citations to prior literature. These claims provide necessary context for the study and are accurately represented. The hypothesis about parameter space differences (C20) motivates the investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C37",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Background knowledge about actin regulatory proteins and drug mechanisms. Formin, profilin, and cofilin regulate treadmilling through local biochemical signaling. Formin boosts barbed end polymerization, ADF/cofilin promotes treadmilling by severing filaments, LatA sequesters G-actin and accelerates depolymerization, CalyA enhances NMII activity, and Y-27632 inhibits Rho kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C128-C134 represent established knowledge about actin regulatory mechanisms supported by appropriate citations. These are accurately stated and provide necessary background for interpreting the simulation parameters and experimental perturbations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Experimental methods for T cell culture, transfection, substrate preparation, and microscopy imaging. Jurkat T cells were cultured in RPMI with supplements, tested negative for mycoplasma, and imaged on anti-CD3 coated surfaces using TIRF microscopy with appropriate objectives and frame rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C106-C110 describe standard experimental methods that are appropriately detailed and include necessary quality controls (mycoplasma testing). The methods are sufficient for reproducibility and are consistent with established protocols for T cell imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The relaxation time for actin network deformations is much shorter than chemical event timescales (motor stepping, polymerization), creating separation of timescales. This allows the mechanical equilibrium process to be treated as pseudo-adiabatic and separated from chemical reactions in the simulation protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by citations to prior literature establishing the timescale separation. This is a standard and well-justified approximation in mechanochemical modeling of cytoskeletal systems that enables computational tractability while maintaining physical accuracy.",
+    "result_type": "MINOR"
+  }
+]

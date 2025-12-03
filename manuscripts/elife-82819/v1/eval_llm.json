@@ -1,0 +1,489 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C66",
+      "C67",
+      "C100",
+      "C158",
+      "C185",
+      "C186"
+    ],
+    "result": "Transformer-based deep learning models from NLP have led to breakthrough improvements in protein property prediction, overcoming limitations of previous methods and producing state-of-the-art results across diverse tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C14, C66-C67, C100, C158, C185-C186 collectively establish that Transformer models have achieved significant advances in protein prediction tasks. This is supported by multiple citations throughout the review documenting improved performance across structure prediction, homology detection, PTM prediction, and other applications, along with the proof-of-principle experiment (C154-C157) demonstrating superior performance of Transformer features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The Transformer model, introduced by Vaswani et al. in 2017, is an encoder-decoder architecture that uses attention mechanisms instead of recurrent or convolutional layers, achieving state-of-the-art language translation results with reduced training time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 describe the original Transformer architecture and its performance, all supported by citation to Vaswani et al., 2017. The architectural details (encoder-decoder structure, attention mechanism, multihead attention with 8 heads, 6 layers, 512-dimensional embeddings) are accurately reported from the original paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Transformer models are trained using self-supervised learning approaches, primarily autoregressive language modeling or masked language modeling (MLM), with MLM becoming particularly popular because it allows models to consider the entire input sequence bidirectionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C46-C48 describe the training approaches for Transformers, supported by multiple citations (Peters et al., 2018; Devlin et al., 2018; Nambiar et al., 2020; Elnaggar et al., 2020a; Rives et al., 2021; and others). The specific detail that typically 15% of tokens are masked in MLM (C59) is supported by citation to Devlin et al., 2018.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The BERT model, an encoder-only Transformer trained with masked language modeling, achieved state-of-the-art results on 11 NLP tasks and demonstrated that bidirectional pre-training is important for language representations, with larger model size (BERTLARGE) outperforming smaller variants (BERTBASE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 describe BERT's architecture and performance, all supported by citations to the original BERT paper (Devlin et al., 2018) and related work. The specific architectural details (12 vs 24 layers, 768 vs 1024 dimensions) and performance claims (11 NLP tasks, importance of bidirectional pre-training) are accurately reported from the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Transformer models overcome key limitations of RNNs and CNNs for sequence modeling: RNNs suffer from vanishing/exploding gradients and cannot capture long-range dependencies or parallelize computations, while CNNs require many hierarchical levels to capture distant features and don't utilize positional information. Transformers address these issues through attention mechanisms that directly connect all tokens, enabling parallelization and superior performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C79 describe limitations of RNNs and CNNs and advantages of Transformers, all supported by multiple citations (Bengio et al., 1994; Pascanu et al., 2013; Hanin, 2018; Dai et al., 2018; Wang et al., 2019; Raghu et al., 2021; Albawi et al., 2017; Dehghani et al., 2018; V\u00e4th et al., 2022). The technical details about gradient problems, parallelization constraints, and attention mechanisms are well-established in the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "NLP models can be adapted as protein language models by treating amino acids as tokens and protein sequences as sentences. Despite differences in syntax and semantics, protein sequences contain long-range dependencies suitable for Transformer analysis. These models are trained on large protein databases using self-supervised learning and applied to downstream tasks via feature-based or fine-tuning approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84, C90-C94 describe the adaptation of NLP models to proteins, supported by citations to Heinzinger et al., 2019; Ofer et al., 2021; Lopez and Mohiuddin, 2020; Ferruz et al., 2022; ElAbd et al., 2020; and Laskar et al., 2020. The conceptual framework for treating proteins as language and the two main application approaches (feature-based and fine-tuning) are well-established in the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The largest open sources of protein sequence data are UniProt (0.567M reviewed + 230M automatically annotated sequences), Pfam (19,632 families, 61M sequences), and BFD (65.9M families, >2B sequences clustered at 30% identity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 provide specific quantitative data about protein databases, supported by citations to UniProt, 2021; Mistry et al., 2021; Pfam 35.0, 2021; BFD, 2022; and Steinegger et al., 2019. The numerical values are presented as factual data from these cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C102",
+      "C103"
+    ],
+    "result": "Traditional MSA-based approaches using PSI-BLAST and HMMER have limitations including gaps from insertions/deletions, poor performance for sequences with few homologs, time-consuming database searches, and reliance on imperfect structural features. Protein language models offer advantages by generating embeddings more efficiently and building richer features for low-homology proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99, C102-C103 describe limitations of MSA-based methods and advantages of protein language models, supported by citations to Altschul et al., 1997; Finn et al., 2011; Golubchik et al., 2007; Phuong et al., 2006; Su\u0142kowska et al., 2012; Schmiedel and Lehner, 2019; Hong et al., 2021; and Wang et al., 2022. The comparative advantages are documented in the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Transformer models have achieved improved performance on protein structure prediction tasks including secondary structure and contact prediction, with studies showing improvements over evolutionary-profile-based methods and state-of-the-art results on CASP benchmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 describe specific applications to structure prediction, supported by citations to Rives et al., 2021; Kryshtafovych et al., 2019; Singh et al., 2021; Singh et al., 2022; and Zhang et al., 2021. The performance improvements on CASP benchmarks are documented in the cited studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Transformer-based approaches for homology prediction have shown promise, with methods using ProtAlbert and ProtT5 demonstrating ability to predict protein profiles, detect remote homologs with less preprocessing time than HMMER, and capture hidden protein characteristics including structural hierarchies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 describe applications to homology prediction, supported by citations to Zare-Mirakabad et al., 2021; Elnaggar et al., 2020b; Dodge et al., 1998; Heinzinger et al., 2022; Elnaggar et al., 2020a; Finn et al., 2011; and Behjati et al., 2022. The performance comparisons and capabilities are documented in the cited studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Transformer models have been successfully applied to mutation prediction, with pre-training and fine-tuning approaches showing better accuracy than LSTM-based methods for general mutations and outperforming existing tools for pathogenic missense mutation prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 describe applications to mutation prediction, supported by citations to Yamaguchi and Saito, 2021 and Jiang et al., 2021. The performance comparisons are documented in the cited studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Transformer models have demonstrated strong performance on protein-protein interaction (PPI) and drug-target interaction (DTI) prediction tasks, with various approaches outperforming CNN-based, RNN-based, and other state-of-the-art methods across multiple datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 describe applications to interaction prediction, supported by citations to Nambiar et al., 2020; Alanis-Lobato et al., 2016; Lanchantin et al., 2021; Ammari et al., 2016; Xue et al., 2022; Cai et al., 2021; Gaulton et al., 2012; Chen et al., 2002; Chan et al., 2015; Wishart et al., 2006; wang et al., 2021; Tang et al., 2014; Davis et al., 2011; and Liu et al., 2007. The performance improvements are documented in the cited studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Transformer-based approaches have shown superior performance for post-translational modification (PTM) prediction, including lysine crotonylation, S-nitrosylation, and phosphorylation, outperforming CNN-based and other state-of-the-art methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 describe applications to PTM prediction, supported by citations to Qiao et al., 2022; Devlin et al., 2018; Mikolov et al., 2013b; Zhao et al., 2021; Jones, 1999; and Wang et al., 2020. The performance comparisons are documented in the cited studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Transformer models offer interpretability through attention weight visualization, allowing analysis of token interactions that contributed to predictions. Studies have shown attention patterns can capture biologically meaningful features like zinc-binding coordination and structural contact maps, though attention weights don't necessarily indicate feature importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 describe interpretability of Transformers, supported by citations to Hao et al., 2021; Elnaggar et al., 2020a; Yamaguchi and Saito, 2021; and Zhang et al., 2021, with reference to Figure 5B. The examples of biological insights from attention visualization are documented in the cited studies, and the cautionary note about attention not necessarily indicating feature importance (C133) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "There has been a steady increase in Transformer-related publications since 2017, with 1388 publications found for 'Transformer Language Model' from 2017-2021 in Google Scholar, indicating growing adoption in bioinformatics for studying protein properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 present bibliometric data supported by citation to Vaswani et al., 2017 and reference to Figure 6. The specific count of 1388 publications (C139) is presented as data from the authors' Google Scholar search. While the search methodology is straightforward, the interpretation that this indicates effectiveness (C140) is a reasonable inference from the data presented in Figures 6 and 7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "In a proof-of-principle phosphoglycerylation prediction experiment using 253 samples, Transformer-derived features (ESM-1b and ProtT5) generally outperformed traditional MSA-based features (BigramPGK) and physicochemical features (Phy+Bio) across five classifiers, with concatenated ESM-1b features showing the best overall performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C157 describe the proof-of-principle experiment with detailed methodology and results. The experimental design is clearly described (dataset from Chandra et al., 2019; two Transformer models from Rives et al., 2021 and Elnaggar et al., 2020a; five classifiers; 5-fold CV with 51 held-out test samples). The results in Table 1 support the conclusion that Transformer features generally outperformed traditional features, though the authors appropriately note differences are not always significant (C157).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Standard Transformer attention mechanisms have limitations including fixed-length input processing and quadratic computational complexity with sequence length. Recent developments address these through techniques like passing hidden states between fragments, sparse attention mechanisms, locality-sensitive hashing, and reversible residual layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C168 describe limitations and solutions, supported by citations to Elnaggar et al., 2020a; Dai et al., 2019; Wang et al., 2019; Zaheer et al., 2020; Kitaev et al., 2020; and Sourkov, 2018. The technical details about computational complexity and proposed solutions are documented in the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Transformers have shown limitations on certain NLP tasks: LSTMs outperformed Transformers on subject-verb agreement and logical inference tasks, Transformers struggled with evaluating logical formulas and modeling hierarchical structures, and GPT-2/GPT-3 had difficulties with poetry and rhyming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 describe limitations of Transformers, supported by citations to Tran et al., 2018; Hahn, 2020; and Wang et al., 2021. These documented limitations provide important context about tasks where Transformers may not be optimal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Larger Transformer models generally achieve better performance but face memory and training time limitations. Solutions include parameter reduction through embedding projection and sharing (Lan et al., 2019), combining autoregressive and bidirectional approaches to address MLM's neglect of masked token dependencies (Yang et al., 2019), and replaced token detection for more efficient learning (Clark et al., 2020).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C179 describe scaling challenges and solutions, supported by citations to Lan et al., 2019; Yang et al., 2019; Wettig et al., 2022; and Clark et al., 2020. The technical approaches to addressing limitations are documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "There is a trend toward building increasingly large Transformer models in NLP (GPT-3 with 175B parameters, Megatron-Turing with 530B, and models exceeding 1 trillion parameters), but this trend may be unsustainable due to resource requirements and could limit protein research to well-funded institutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C182-C184 describe a trend supported by citations (Brown et al., 2020; Smith et al., 2022; Fedus et al., 2021; Narayanan et al., 2021), but the predictions about sustainability (C183) and impact on protein research (C184) are speculative (evidence_type: SPECULATION, INFERENCE). While the concern is reasonable, there is no empirical evidence provided to support these predictions about future trends and their consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "The authors conclude that while Transformers show great promise, they may not be optimal for all protein tasks, other factors beyond architecture may contribute to improvements, hybrid approaches combining Transformers with traditional methods may be beneficial, and the field will likely rely heavily on Transformer-based models in the foreseeable future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C189-C190, C195-C197 are primarily speculative conclusions (evidence_type: SPECULATION, INFERENCE) about future directions. While C191-C192 provide supporting examples (MLM with CNNs from Yang et al., 2022; AlphaFold's use of attention), the broader predictions about what approaches will be needed and how the field will develop lack empirical support. These are reasonable perspectives but represent the authors' opinions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Protein properties can be global or local, and determining them experimentally is challenging, time-consuming, and costly. There is exponential growth in sequenced proteins but a widening gap with annotated properties, driving interest in computational methods that can provide ranked predictions to guide experimental work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 establish the motivation for computational protein prediction, supported by citations to Walls and Loughran, 2017; Pan et al., 2022; Ehrenberger et al., 2015; UniProt Consortium, 2019; and Varadi et al., 2022. These are well-established facts about the protein annotation gap and the value of computational approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Machine learning, particularly deep learning, uses neural networks to automatically learn rich feature representations from unstructured data in an end-to-end manner, achieving unprecedented accuracy compared to traditional ML approaches that rely on analyst-determined features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 provide background on ML and DL, supported by citation to Khan et al., 2019 for the claim about unprecedented accuracy (C25). The other claims describe established knowledge about ML/DL concepts (evidence_type: KNOWLEDGE). These are accurate characterizations of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Common neural network architectures include MLPs (fully connected layers), CNNs (convolution operations for feature detection), and RNNs (sequential processing with recurrent connections including LSTM and GRU variants). RNNs were preferred for NLP tasks for a long time due to their ability to model contextual dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37 describe neural network architectures, supported by citations to Koumakis, 2020; Liu et al., 2020; Mikolov et al., 2013a; Zeng et al., 2016; Hochreiter and Schmidhuber, 1997; Chung et al., 2014; Huang et al., 2015; and Yin et al., 2017, with reference to Figure 2. These are accurate descriptions of established architectures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "NLP evolved from rule-based systems in the 1950s that produced unsatisfactory results to modern DL-based systems that automatically learn from large text datasets. Text is preprocessed through tokenization and converted to numerical embeddings, with DL methods extracting meaningful information more efficiently and accurately than manual feature engineering or human experts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 provide NLP background, supported by citations to Wang et al., 2018; Levy and Goldberg, 2014; Turian and Ratinov, 2010; Young et al., 2018; and Nauman et al., 2019, with reference to Figure 3A. These accurately describe the evolution and current state of NLP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C126",
+      "C127"
+    ],
+    "result": "Post-translational modifications (PTMs) are covalent enzymatic modifications of proteins after synthesis that change protein functionality, are associated with regulatory cascades and cellular signaling, provide structural and functional diversity, and are associated with diseases like cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C126-C127 describe PTMs, supported by citation to Chou, 2020. These are accurate characterizations of PTMs based on established knowledge in molecular biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "A Transformer-based framework by Chowdhury et al., 2022 outperformed AlphaFold2 in structure prediction for sequences lacking homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 reports a specific finding supported by citations to Chowdhury et al., 2022 and Jumper et al., 2021. This is a notable result demonstrating Transformer advantages for low-homology sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C194"
+    ],
+    "result": "The proof-of-principle example demonstrates that Transformer models can serve as general feature extractors that improve results compared to traditional protein features like MSA-based approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C194 is a conclusion from the proof-of-principle experiment (C141-C157), supported by the data in Table 1 and citation to Bepler and Berger, 2021 regarding evolutionary relations in language model representations. However, the authors appropriately note this doesn't prove general superiority (C195).",
+    "result_type": "MAJOR"
+  }
+]

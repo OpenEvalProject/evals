@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Lnc-Rewind is a conserved lncRNA expressed in murine MuSCs with a human ortholog (hs_Lnc-Rewind) showing ~46% sequence identity and active transcription in human myoblasts. Both mouse and human loci produce spliced and unspliced isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10-C13 collectively demonstrate conservation through multiple lines of evidence: FANTOM5 TSS analysis (C10), sequence alignment showing 46% identity (C11), RNA-seq and RT-PCR confirming human transcription (C12), and read coverage patterns showing isoform diversity (C13). The convergence of genomic, transcriptomic, and sequence data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C88"
+    ],
+    "result": "Lnc-Rewind is a chromatin-associated lncRNA highly expressed in proliferating C2C12 and MuSC-derived myoblasts, with expression significantly decreased upon differentiation. Both spliced and unspliced isoforms localize to the nuclear compartment and are enriched at discrete chromatin foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C88 are supported by complementary experimental approaches: qRT-PCR quantification (C14-C15), subcellular fractionation (C16), and RNA-FISH imaging (C17). The chromatin association is demonstrated through both biochemical fractionation and microscopy, providing robust evidence for nuclear/chromatin localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Lnc-Rewind acts as an epigenetic regulator of MuSC proliferation by influencing skeletal muscle gene expression. Depletion (~70% knockdown) resulted in 1088 differentially expressed genes (332 upregulated, 756 downregulated), with significant enrichment in muscle system processes and skeletal muscle contraction pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C18-C20, C22, C89-C91 are supported by RNA-seq analysis with appropriate statistical thresholds (p<0.05), PCA showing clear separation between conditions, and GO enrichment analysis. The ~70% knockdown efficiency (C89) is adequate for loss-of-function studies. The downregulation of muscle contraction genes (myosins, troponins) is consistent with the observed phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Wnt7b is a direct target of Lnc-Rewind regulation. The genes are genomically proximal (100 kb apart), display anti-correlated expression across 1196 FANTOM5 samples (R=-0.68), and Wnt7b is specifically upregulated at both transcript and protein levels upon Lnc-Rewind depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C29-C33 are supported by multiple lines of evidence: genomic proximity (C29), large-scale expression correlation analysis (C31), specificity demonstrated by lack of correlation with neighboring genes (C32), and upregulation upon depletion (C30, C33). The Spearman correlation of -0.68 across 1196 samples provides strong statistical support for anti-correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C93",
+      "C95"
+    ],
+    "result": "Lnc-Rewind depletion causes defects in MuSC proliferation and expansion, evidenced by decreased cell numbers, reduced EdU incorporation, downregulation of Cyclin D3, and reduced proliferating progeny and activated clusters/pairs in single myofiber assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C93, C95 are supported by multiple complementary assays: cell counting (C24), EdU incorporation (C25), molecular markers (C26), and ex vivo myofiber culture (C27-C28). The convergence of in vitro and ex vivo evidence strengthens the conclusion. However, C93 is speculative and represents an interpretation rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C81",
+      "C82"
+    ],
+    "result": "Rescue experiments demonstrate that restoring Wnt7b repression in Lnc-Rewind-depleted cells rescues MuSC proliferation and activation defects, establishing that Lnc-Rewind-mediated repression of Wnt7b is functionally important for MuSC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C81-C82 are supported by rescue experiments showing restoration of proliferation (EdU incorporation) and myofiber activation phenotypes when Wnt7b is knocked down in Lnc-Rewind-depleted cells. This genetic epistasis experiment provides strong evidence for a functional relationship and establishes causality rather than mere correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Lnc-Rewind physically interacts with the G9a histone methyltransferase but not with EZH2. This interaction is demonstrated by RIP, CLIP, and RNA pulldown experiments, with enrichment levels comparable to the positive control Kcnq1ot1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40-C43 are supported by three independent biochemical approaches (RIP, CLIP, RNA pulldown) demonstrating specific interaction with G9a but not EZH2. The use of Kcnq1ot1 as a positive control and the reciprocal nature of the experiments (protein-centric and RNA-centric) provide robust evidence for direct interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Lnc-Rewind mediates in cis repression of Wnt7b through G9a-dependent H3K9me2 deposition. Evidence includes RNA-DNA FISH showing colocalization, G9a ChIP showing enrichment at Wnt7b upstream regions, decreased H3K9me2 upon Lnc-Rewind depletion, and Wnt7b upregulation upon G9a knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C44-C49, C100-C104 are supported by convergent evidence from imaging (RNA-DNA FISH, combined FISH/immunostaining), ChIP experiments showing both G9a occupancy and H3K9me2 levels, and functional validation through G9a knockdown. The mechanism is well-supported by multiple orthogonal approaches demonstrating physical proximity, histone modification changes, and functional dependency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C92"
+    ],
+    "result": "Lnc-Rewind depletion results in downregulation of miRNAs Mirlet7b and Mirlet7c-2, but these miRNAs do not contribute to the observed phenotypes as their predicted targets (~1% of upregulated genes) do not belong to enriched GO categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C92 are supported by qRT-PCR data showing miRNA downregulation and target prediction analysis. The conclusion that miRNAs are not responsible for the phenotype is based on the lack of overlap between predicted targets and GO-enriched categories. This analysis appropriately addresses a potential confounding mechanism given the genomic overlap with miRNA loci.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Lnc-Rewind-depleted cells express lower levels of MyHC protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by Western blot analysis shown in Figure 2D. This finding is consistent with the downregulation of muscle contraction genes and reduced differentiation capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Lnc-Rewind overlaps pre-Mirlet7c-2 (mmu-let7c-2) and pre-Mirlet7b (mmu-let7b) genomic loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by UCSC genome browser visualization in Figure 1A showing the genomic overlap. This is a straightforward genomic annotation observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "EZH2 and G9a are mostly expressed in proliferating MuSCs and become downregulated during muscle differentiation, similar to Lnc-Rewind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by Western blot data (Figure 4\u2014figure supplement 1A) and citations to previous studies. This expression pattern is consistent with a role in proliferating cells and provides context for investigating these methyltransferases as potential Lnc-Rewind partners.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C96"
+    ],
+    "result": "The anti-correlated expression of Lnc-Rewind and Wnt7b across multiple cell types suggests a general regulatory role beyond satellite cells, and the genomic proximity combined with chromatin enrichment suggests a direct cis-regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C96 are inferences based on FANTOM5 data showing anti-correlation across diverse cell types and the combination of genomic proximity, expression correlation, and chromatin localization. While these are reasonable hypotheses supported by the data, they represent interpretations that would benefit from direct testing in other cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The slowness in the splicing process could contribute to the maintenance of Lnc-Rewind at its own site of transcription, improving its retention on chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is explicitly speculative, as acknowledged by the authors. While the observation of unspliced isoforms is supported by data, the mechanistic interpretation regarding splicing kinetics and chromatin retention is hypothetical and not directly tested. This represents an interesting hypothesis that requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C94",
+      "C98"
+    ],
+    "result": "Background and contextual claims establishing the importance of lncRNAs, WNT signaling, and muscle stem cell biology, drawn from established knowledge and prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C87, C94, C98 represent established knowledge in the field, supported by appropriate citations to review articles and primary literature. These claims provide necessary context for the study but do not constitute novel findings. The citations appear appropriate and the statements accurately reflect current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "EZH2 and G9a have been previously reported to be recruited to specific genomic loci through interaction with different lncRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by citations to previous studies and provide important precedent for investigating whether Lnc-Rewind might function through similar mechanisms. This contextualizes the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Lnc-Rewind acts as a repressor of Wnt7b expression, inferred from upregulation upon depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is an inference from the observation that Wnt7b is upregulated when Lnc-Rewind is depleted. While this is a reasonable interpretation supported by the data, the mechanistic details are elaborated in other claims (C8, C49). This represents a summary conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "In Lnc-Rewind CLIP experiments, RNA-specific enrichment was comparable to the Kcnq1ot1 positive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by the CLIP data in Figure 4A. The use of Kcnq1ot1 as a positive control is appropriate given its known interaction with G9a, and comparable enrichment levels support the specificity of the Lnc-Rewind-G9a interaction.",
+    "result_type": "MINOR"
+  }
+]

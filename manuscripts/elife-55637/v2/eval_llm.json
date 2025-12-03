@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "CRISPR/Cas9 targeting of the mouse Col8a2 start codon successfully creates indels in cultured NIH3T3 cells, as demonstrated by restriction enzyme digestion showing undigested PCR products and confirmed by Sanger sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide converging evidence from restriction enzyme assays (C24-C25) and direct sequencing (C26) that the designed gRNA creates indels at the target site in vitro. This establishes proof-of-concept for the targeting strategy with appropriate molecular validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C99"
+    ],
+    "result": "Anterior chamber injection of adenovirus efficiently transduces corneal endothelial cells and Ad-Cas9-Col8a2gRNA induces indels specifically in the corneal endothelium but not in epithelium or stroma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 demonstrates efficient adenoviral transduction via GFP expression, while C28 shows tissue-specific indel formation through PCR/restriction digest analysis of separated tissue layers. Claim C99 provides literature support for adenoviral tropism. The combination provides strong evidence for targeted delivery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C100"
+    ],
+    "result": "Ad-Cas9-Col8a2gRNA injection reduces COL8A2 protein expression specifically in corneal endothelium in a dose-dependent manner, with significant reduction at 0.63\u00d710^7 and 0.25\u00d710^8 vg doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 demonstrate protein-level knockdown through immunostaining with quantification showing dose-dependent, tissue-specific reduction. Claim C100 confirms this validates the start codon targeting strategy. The data directly link genetic editing to functional protein reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Ad-Cas9-Col8a2gRNA demonstrates a therapeutic window with doses \u22640.25\u00d710^8 vg showing no adverse effects on corneal transparency, thickness, histology, inflammation markers, retinal function, or systemic organs, while higher doses (\u22651.0\u00d710^8 vg) cause endothelial toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 comprehensively assess safety across multiple parameters (corneal structure, inflammation, retinal function, systemic toxicity) with appropriate controls and quantification. The dose-response relationship (C32-C33) clearly defines a therapeutic window. However, long-term safety beyond 4 weeks is not assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Deep sequencing reveals that Ad-Cas9-Col8a2gRNA creates indels in 23.7\u00b14.5% of sequencing reads, predominantly single adenine insertions (9.4\u00b11.9%) that disrupt the Kozak sequence by changing the -3 position from G to C, providing an effective knockdown mechanism without frameshift mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 and C67-C69 provide detailed molecular characterization of editing outcomes through deep sequencing. The identification of Kozak sequence disruption as the primary mechanism (C42-C45, C68) is well-supported by established translation biology (C44). However, the functional consequence of the cryptic ATG (C42) on translation efficiency is inferred rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "After accounting for stromal cell contamination in endothelial preparations, the normalized indel rate in corneal endothelial cells is calculated to be 102.5\u00b116.3%, suggesting near-complete transduction and editing of the endothelial cell population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 identify stromal contamination through gDNA quantification and histological validation, and C46 presents a normalized calculation. However, the >100% normalized indel rate is biologically implausible and suggests errors in the normalization assumptions or measurements. The calculation methodology requires validation, and alternative explanations (e.g., multiple indels per cell, PCR bias) are not addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cas9 and gRNA expression levels are positively correlated with each other and inversely correlated with normal Col8a2 mRNA levels in both wild-type and Col8a2Q455K mice, demonstrating dose-dependent gene editing at the mRNA level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 establish clear dose-response relationships through RT-PCR measurements with appropriate correlational analyses. The inverse relationship between Cas9/gRNA and intact Col8a2 mRNA (C51) directly supports editing efficiency. However, the high variability in some measurements (e.g., C48-C49) and lack of statistical testing for correlations weakens the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Ad-Cas9-Col8a2gRNA treatment significantly preserves corneal endothelial cell density in Col8a2Q455K/Q455K mice over 10 months, with improvements confirmed by both in vivo confocal microscopy and Alizarin red staining, and enhanced endothelial morphology as measured by hexagonality and coefficient of variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 demonstrate structural rescue through multiple complementary methods (confocal microscopy, Alizarin red staining) with quantification and paired analysis (C55). The morphological improvements (C56) provide additional evidence of functional endothelium. The long-term follow-up (10 months) and within-animal controls strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Ad-Cas9-Col8a2gRNA treatment reduces the formation of guttae-like structures in Col8a2Q455K/Q455K mice as demonstrated by in vivo OCT imaging and confirmed by histological analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 show reduction in a key pathological feature of FECD using complementary imaging modalities (OCT and histology). The convergent evidence from in vivo and ex vivo methods strengthens the conclusion. However, quantification details and statistical analysis are not fully described in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Ad-Cas9-Col8a2gRNA rescues corneal endothelial pump function in Col8a2Q455K/Q455K mice, as demonstrated by a novel de-swelling assay showing that treated corneas recover normal de-swelling rates similar to wild-type controls after hypertonic challenge, while untreated mutant corneas show significantly delayed recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 and C109-C111 establish functional rescue through a well-designed de-swelling assay with appropriate controls and optimization (C60-C63). The restoration of de-swelling rates to wild-type levels (C65, C111) provides strong functional evidence. However, the assay is novel and requires validation against established measures of endothelial function. Statistical analysis using linear mixed-effects regression (mentioned in methods) appropriately accounts for repeated measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Digenome sequencing identifies 13 potential off-target sites with sequence homology, predominantly in non-coding regions, with the only coding exonic site (ACAN) not expressed in corneal endothelium and intronic sites (SV2C, KAT6B) unlikely to affect function based on expression patterns and distance from splice sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C82 provide comprehensive off-target analysis using digenome sequencing with appropriate controls (C83-C84). The assessment of individual off-target sites considers expression data (C72, C75) and genomic context (C76). However, the analysis is performed on human sequences (HuCol8a2gRNA) rather than the mouse gRNA used therapeutically, limiting direct applicability. The recommendation for primate testing (C82) acknowledges this limitation but doesn't resolve the uncertainty about actual off-target effects in the mouse model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The adenoviral delivery approach offers advantages over dual AAV systems for post-mitotic cell editing, including higher efficiency, simpler vector design, transient expression that limits off-target editing risk, and achievement of functional rescue at sub-toxic doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 compare the current approach to published alternatives with appropriate citations (C85-C86). The advantages cited (efficiency, transient expression, reduced off-target risk) are logical inferences supported by the experimental data showing functional rescue without long-term toxicity. However, direct head-to-head comparisons were not performed, and some advantages (C89, C91) are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "This work represents the first demonstration of functional rescue (as opposed to prevention) using Cas9-mediated gene knockdown through start codon disruption in post-mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately distinguish this work from prior prevention studies (C93) and claim novelty for functional rescue. The distinction between prevention and rescue is supported by the experimental design (treatment at 2 months of age after disease onset). However, the degree of disease progression at treatment initiation could be better characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Early-onset FECD caused by COL8A2 missense mutations represents a gain-of-function disease where the mutant protein is pathogenic but the wild-type protein is not essential for corneal function, as evidenced by knockout mice lacking phenotypes while knock-in mice recapitulate disease features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 establish the disease context and rationale through appropriate citations to published literature. The gain-of-function mechanism (C22-C23) is well-supported by the contrast between knockout (C17-C19) and knock-in (C20) mouse phenotypes. This provides strong justification for a knockdown therapeutic strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Future studies are planned to assess the impact on endothelial and inflammatory gene expression via RNA-Seq, investigate effects on the unfolded protein response, and optimize the approach for clinical development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C96 describe planned future work that is necessary to fully validate the therapeutic approach. These studies are appropriately identified as needed but represent work not yet completed. The current results cannot be considered fully supported without this additional validation, particularly regarding mechanism of action and long-term safety.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C97",
+      "C98"
+    ],
+    "result": "CRISPR/Cas9-based postnatal gene editing achieves both structural and functional rescue in a mouse model of early-onset FECD through efficient knockdown of mutant COL8A2, representing a potential non-surgical therapeutic strategy that may be applicable to other adult-onset diseases in post-mitotic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C97 summarize the main findings that are well-supported by the detailed experimental results. The demonstration of rescue in post-mitotic cells (C9) is significant. However, the broader applicability to other diseases (C10, C98) is speculative and not directly tested. The potential to eliminate transplantation (C98) is overstated given the mouse model limitations and lack of clinical data.",
+    "result_type": "MAJOR"
+  }
+]

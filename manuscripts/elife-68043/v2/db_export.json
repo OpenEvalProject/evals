@@ -1,0 +1,1853 @@
+{
+  "submission": {
+    "id": "17e402d9-afdf-4680-b371-feffa77750a1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:04:05.476291Z",
+    "updated_at": "2025-12-03T08:04:05.476291Z"
+  },
+  "content": [
+    {
+      "id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "submission_id": "17e402d9-afdf-4680-b371-feffa77750a1",
+      "content_type": "manuscript",
+      "content_text": "# Closed-loop auditory stimulation method to modulate sleep slow waves and motor learning performance in rats\n\n## Authors\n\n- Carlos G Moreira<sup>1</sup> ([ORCID: 0000-0003-3197-3668](https://orcid.org/0000-0003-3197-3668))\n- Christian R Baumann<sup>1</sup> ([ORCID: 0000-0003-3417-1978](https://orcid.org/0000-0003-3417-1978))\n- Maurizio Scandella<sup>1</sup>\n- Sergio I Nemirovsky<sup>4</sup>\n- Sven Leach<sup>5</sup>\n- Reto Huber<sup>2</sup>\n- Daniela Noain<sup>1</sup> ([ORCID: 0000-0001-5482-7933](https://orcid.org/0000-0001-5482-7933)) \u2020\n\n### Affiliations\n\n1. Department of Neurology, University Hospital Zurich, University of Zurich Zurich Switzerland\n2. University Center of Competence Sleep & Health Zurich (CRPP), University of Zurich Zurich Switzerland\n3. Neuroscience Center Zurich (ZNZ) Zurich Switzerland\n4. Institute of Biological Chemistry, School of Exact and Natural Sciences (IQUIBICEN). CONICET \u2013 University of Buenos Aires Buenos Aires Argentina\n5. Child Development Center, University Children\u2019s Hospital Zurich, University of Zurich Zurich Switzerland\n6. Department of Child and Adolescent Psychiatry and Psychotherapy, Psychiatric Hospital, University of Zurich Zurich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nSlow waves and cognitive output have been modulated in humans by phase-targeted auditory stimulation. However, to advance its technical development and further our understanding, implementation of the method in animal models is indispensable. Here, we report the successful employment of slow waves\u2019 phase-targeted closed-loop auditory stimulation (CLAS) in rats. To validate this new tool both conceptually and functionally, we tested the effects of up- and down-phase CLAS on proportions and spectral characteristics of sleep, and on learning performance in the single-pellet reaching task, respectively. Without affecting 24 hr sleep-wake behavior, CLAS specifically altered delta (slow waves) and sigma (sleep spindles) power persistently over chronic periods of stimulation. While up-phase CLAS does not elicit a significant change in behavioral performance, down-phase CLAS exerted a detrimental effect on overall engagement and success rate in the behavioral test. Overall CLAS-dependent spectral changes were positively correlated with learning performance. Altogether, our results provide proof-of-principle evidence that phase-targeted CLAS of slow waves in rodents is efficient, safe, and stable over chronic experimental periods, enabling the use of this high-specificity tool for basic and preclinical translational sleep research.\n\n## Introduction\n\nNoninvasive neuromodulation strategies are en vogue for their unique potential to diagnose and treat neurological and psychiatric disorders, or to rebalance the activity in dysfunctional brain networks. In particular, modulation of slow wave sleep (SWS) has increasingly gained attention over recent years. Tailoring novel stimulation tools to effectively optimize SWS profiles appears crucial to intervene SWS-related cognition (Mander et al., 2013; Papalambros et al., 2017), as well as other important brain and body processes, in both rodents and humans. Therefore, innovative approaches to further comprehend and eventually enable therapeutic implementations of SWS modulation have been tested (Marshall et al., 2006; Massimini et al., 2007; Vyazovskiy et al., 2009). More recently, auditory stimulation during SWS was successfully implemented in human subjects in laboratory-based settings. At first, the method disregarded the phase of the ongoing oscillatory activity in the brain (Ngo et al., 2013b; Tononi et al., 2010), but was later developed further to deliver auditory stimulation in synchrony with the brain\u2019s own rhythm in a closed-loop manner (Ngo et al., 2013b). Targeting ongoing slow waves in their up-phase enhanced slow oscillations during SWS, while targeting the waves\u2019 down-phase had the opposite effect. The success of the human implementation of CLAS further encouraged the development of portable devices enabling acoustic stimulation in a home-based environment (Ferster et al., 2019).\n\nMemory formation is one of the most intriguing sleep-dependent brain processes for which the links between SWS\u2014characterized by brain slow oscillatory activity in the delta-frequency range (0.5\u20134 Hz) and oscillations <1 Hz among its most distinctive features in the human electroencephalogram (EEG) (Timofeev, 2011)\u2014and motor learning (Fischer et al., 2002; Stickgold, 2005; Walker et al., 2002), synaptic downscaling (Tononi and Cirelli, 2014), and consolidation mechanisms (Diekelmann and Born, 2010; Rasch and Born, 2013) have been exhaustively studied. In this context, it was not surprising that the novel specific auditory modulation of SWS methods implemented in humans was first assessed in their capacity to interact with memory performance. Initially, Ngo and colleagues found enhanced performance during a paired-associates learning task in subjects undergoing up-phase auditory stimulation (Ngo et al., 2013a), and soon several other studies employing similar stimulation paradigms replicated the enhanced memory effect, although with more modest effect sizes (Leminen et al., 2017; Ong et al., 2016; Papalambros et al., 2017). In a novel implementation of this concept, some of us found that auditory disruption of slow waves perturbing local SWS in the motor cortex attenuated the brain\u2019s SWS-dependent capacity to undergo neuroplastic changes (Fattinger et al., 2017), corroborating that SWS integrity is critical to maintain cognitive efficiency. However, some authors proposed that enhancing slow waves and spindles by auditory stimulation was insufficient to improve memory above sham (Cox et al., 2014; Ngo et al., 2019; Weigenand et al., 2016), suggesting that the effects of auditory stimulation on memory are moderate and highly variable inter- and intra-studies, and evidencing that a better understanding of the method is needed.\n\nTherefore, although a highly promising tool, the precise effects exerted by phase-targeted auditory stimulation at both electrophysiological and behavioral levels are not understood well enough yet. Moreover, effects of long-term interventions, as well as parameters\u2019 optimization, remain to be addressed. These limitations can partly be attributed to the lack of a closed-loop auditory stimulation (CLAS) paradigm in animals to facilitate both basic and preclinical research. For the first time, we explored here the effects exerted by phase-targeted CLAS of slow waves on slow-wave activity (SWA) in healthy rats. We conceptualized that up-phase CLAS will boost delta power during non-rapid eye movement (NREM) sleep, the sleep state rich in slow waves in animals, while down-phase CLAS will have the opposite effect. As a functional readout of CLAS of slow waves, we evaluated learning performance in the single-pellet reaching task (SPRT).\n\n## Results\n\n### CLAS\u2019 precision and phase detection\n\nTo study the effect of CLAS of slow waves in healthy rats (Figure 1, Figure 1\u2014figure supplement 1), we recorded animals during an undisturbed 24 hr baseline (BL) period and, thereafter, delivering up-phase, mock, or down-phase auditory stimulation continuously for 16 days, while undergoing behavioral training in the SPRT (Figure 2). Online NREM sleep staging is a crucial step during CLAS of slow waves. Briefly, our online NREM sleep staging tool consists of three real-time decision features: root mean square (rms) of delta and beta frequency bands, and electromyogram (EMG). In a separate cohort (14 animals: up-phase [n = 5], mock [n = 4], or down-phase [n = 5]), we assessed the performance of our online NREM sleep staging process, as well as the accuracy of our phase detector. Overall, online NREM sleep staging had a mean sensitivity of 12%, indicating how strictly the staging tool identifies sustained NREM sleep, and specificity of 98%, highlighting the high rejection rate of events in disagreement with NREM characteristics (Figure 3a, see detailed methods \u2018EEG/EMG offline scoring and online staging validation\u2019 section). Regarding online precision of NREM sleep staging, 70% of epochs on average were confirmed offline as NREM sleep, whereas 18% were later identified as wakefulness and 2% as REM sleep (Figure 3b). Artefacts, i.e. EEG/EMG perturbations related to environmental interference rather than changes in brain state, constituted roughly 10% of epochs labelled online as NREM sleep. Phase histograms of a different cohort showed high accuracy in trigger distribution relative to the intended targets of 65\u00b0 and 270\u00b0 for up- and down-phase stimulation, respectively. Although different phases were targeted in this cohort, the phase detector is, in its core and performance, the same. Up-phase paradigm revealed M = 74.97\u00b0 (SD = 38.10\u00b0; Var = 12.67\u00b0) while down-phase stimulation indicated a mean target M = 280.55\u00b0 (SD = 49.67\u00b0; Var = 19.75\u00b0). In mock animals, we confirmed onset of muted triggers around the positive peak of the slow wave (M = 101.20\u00b0; SD = 46.89\u00b0; Var = 19.19\u00b0) (Figure 3c). The difference in variances reflects the gradual loss of accuracy when higher phases are being targeted, an intrinsic characteristic of our phase-detection feature. Additionally, we explored the distribution of triggers across sleep stages and observed that up-phase-stimulated animals received more sound triggers during NREM sleep than down-phase-stimulated subjects (up-phase: M = 4959, SD = 3063; down-phase: M = 3148, SD = 2719; Figure 3\u2014figure supplement 1a). Nonetheless, the proportion of triggers did not differ between stimulation groups for any of the sleep stages (Figure 3\u2014figure supplement 1b). The breakdown of CLAS triggers through pre- and motor-training phases shows that NREM sleep targeting by day (number and proportion) remained constant within each condition (Figure 3\u2014figure supplement 1c and d).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig1-v2.jpg)\n\n**Figure 1.:** (a) Dorsal skull schematic of the two subdural (differential) channels for cortical EEG and one nuchal EMG. (b) Closed-loop auditory stimulation setup: the system can accommodate up to ieight subjects in the same machine. (c) Processing tree for online non-rapid eye movement (NREM) staging and phase-targeted auditory stimulation. EEG/EMG is sampled and amplified via PZ5 NeuroDigitizer preamplifier (TDT, USA). Left: EEG (EEG1) is filtered in the delta and beta bands, and between 0.1 and 36 Hz for offline analysis; EMG signal is filtered between 5 and 525 Hz for offline analysis. Power estimations (rms(EEG delta) in orange, rms(EEG beta) in blue, and rms(EMG) in pink) and amplitude of EEG 1 Hz component form the basis for detection of NREM. When NREM is identified, auditory triggers are delivered phase-locked to the EEG 1 Hz component (RX8 MULTI-I/O processor). Intermediary operations are in gray and outputs for offline analysis are in dark blue. (d) Animals were stimulated with either up-phase (60\u00b0), mock stimulation (0\u00b0, sound muted by disconnection of the speaker), or down-phase (180\u00b0) CLAS. (e) Distribution of sound triggers was analyzed in terms of trains of triggers (count of any size sequences of triggers 1 s or less apart) and interstimulus interval (ISI, time between triggers). rms: root mean square.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Single sound-insulated chamber for recording and auditory stimulation in a freely moving rat. (b) Processing tree for online non-rapid eye movement (NREM) staging and phase-targeted auditory stimulation: left: electroencephalogram (EEG) and electromyogram (EMG) channels are filtered and analyzed for spectral power. Based on individual thresholds predefined during baseline (BL) (highlighted pink areas for \u03b4-band/\u03b2-band [i.e., NREMratio] and EMGrms), auditory triggers were delivered in selected phases of slow waves, during online-staged NREM. (c) SYNAPSE interface depicting EEG/EMG signal (in color) and phase-locked stimulation triggers (vertical green lines) in four subjects. On the right, input boxes for individual NREMratio and EMGrms thresholds and phase targets will determine the optimal timing for phase-locked auditory stimulation during NREM in each animal.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig2-v2.jpg)\n\n**Figure 2.:** (a) During the course of 16 days under continuous auditory stimulation, the animals were trained in the single-pellet reaching task (SPRT) for the initial 12 days (8 days of pre-training [P-T] and 4 days of motor-training [M-T]). For the remaining and final 4 days, the non-training (N-T) phase, the animals did not perform any behavior test, although they were still kept under auditory stimulation. The protocol was terminated on the 16th day, with one last motor assessment (long-term memory [LTM]). (b, c) From protocol days 1\u201312, the animals were trained in the SPRT during the first hour of the light period and got back to the auditory stimulation chambers for the remaining time. Each training session had a cutoff at 60 min, divided into five bins of up to 12 min. BL: baseline.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig3-v2.jpg)\n\n**Figure 3.:** (a) Closed-loop auditory stimulation (CLAS) exhibited a 12% sensitivity, 98% specificity, and 70% precision for unsupervised real-time NREM staging (points represent all days from all animals). (b) Offline classification of online-labeled NREM sleep epochs per paradigm. . (c) Phase distribution at trigger onset for up-phase (targeting 65\u00b0), mock (targeting 90\u00b0 but no delivery of sound), and down-phase (targeting 270\u00b0), having defined slow wave\u2019s 0\u00b0 as the rising zero-crossing, 90\u00b0 to the positive peak, and 270\u00b0 to the slow-wave trough. For the definitions of sensitivity, specificity, and precision, as well as information about offline scoring of vigilance states and artifact detection, see detailed methods \u2018EEG/EMG offline scoring and online staging validation\u2019 section.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Distribution of triggers per animal * day across sleep stages, for pre-training (P-T) and motor-training (M-T) days. (b) Proportion of triggers per animal * day in relation to daily total of triggers. (c) Daily number of triggers during NREM sleep in up-phase-stimulated animals (bar plot, left axis) and proportion in relation to total triggers (green connecting line, right axis). (d) Daily number of triggers during NREM sleep in down-phase-stimulated animals (bar plot, left axis) and proportion in relation to total triggers (green connecting line, right axis). W: wakefulness; NR: NREM sleep; R: REM sleep.\n\n### CLAS modulates delta and sigma power while preserving sleep proportions over 24 hr\n\nWe analyzed sleep proportions at BL and all 16 protocol days under CLAS (pre-, motor-, and non-training phases). Neither up-phase nor down-phase stimulation disturbed total NREM amount compared to mock condition (two-way repeated measures analysis of variance [RM-ANOVA], time * condition interaction, F(32, 215) = 0.929, p=0.582, Figure 4a). Moreover, we observed no evidence of abnormal NREM sleep fragmentation in any stimulation group over time (RM-ANOVA, time * condition interaction, F(32, 228) = 0.830, p=0.730, Figure 4b). On third day of motor training (M-T3), 24 hr EEG power spectra in NREM exhibited increased delta activity in the up-phase-stimulated group (Figure 4c), whereas down-phase-stimulated animals showed a trend towards decreased delta-frequency activity (Figure 4e). Power spectral density in mock animals did not present distinctive changes on day M-T3 (Figure 4d). Notably, the stimulation design was accompanied by large interindividual variability with respect to EEG power in NREM (Table 1). To highlight the global effect of each modulatory paradigm, we pooled the daily results for the various sleep-frequency bands, from P-T1 to M-T3 days, and analyzed the average change from BL. Across the spectrum, delta (***p<0.001), sigma (11\u201316 Hz, ***p<0.001), and beta (16\u201330 Hz, *p=0.045) bands were significantly increased in up-phase-stimulated subjects. On the contrary, down-phase stimulation decreased delta (***p<0.001), alpha (8\u201311 Hz, *p=0.037), and sigma (*p=0.012) power during P-T1 \u2013 M-T3 days, collectively. Mock animals showed altered power in the sigma band (**p=0.002, one-sample Hotelling\u2019s T2, Figure 4f), an apparent effect of the skill learning task performed daily. This effect was corroborated by examining sigma activity during the N-T period \u2014 4 days without motor skill training \u2014 in all three groups: mock animals returned to BL indices (p=0.672), whereas up-phase (**p=0.002) and down-phase (*p=0.028)-stimulated groups showed increased and decreased sigma activity, respectively (one-sample t-test, Figure 4g). Taking into account that auditory stimulation was delivered phase-locked to the EEG\u2019s left derivation, we further investigated the possibility of interhemispheric asymmetries upon CLAS. Average power spectral density from stimulated animals was normalized to that of mock to account for effects associated with procedural or instrumental factors unrelated to CLAS, and subsequently compared to a null change (change in percentage points, multiple unpaired t-test followed by Holm\u2013Sidak corrections). Evaluation of protocol day M-T3 showed that both up- and down-phase-stimulated animals presented relatively symmetrical spectral power during wakefulness, NREM sleep, and REM sleep (Figure 4\u2014figure supplement 1a\u2013f). Additionally, we evaluated the impact of behavioral laterality in EEG power, specifically the delta and sigma bands that were found most altered upon CLAS. After splitting the animals within each CLAS paradigm into right- or left-pawed, we considered four scenarios for combined effects of CLAS and handedness (Vyazovskiy and Tobler, 2008) in regards to modulation of EEG activity from the left in relation to the right hemisphere (Figure 4\u2014figure supplement 2a). Under up-phase CLAS, delta activity was higher on the left EEG derivation in right-pawed animals (case i) than left-pawed ones (case ii), presumably reinforced by the added effect of handedness on the left hemisphere, contralateral to the preferred paw (Figure 4\u2014figure supplement 2b). Consistently, down-phase-stimulated animals showed slightly less reduced delta power in the left hemisphere of right-pawed animals (case iii) than subjects preferring the left paw (case iv) (Figure 4\u2014figure supplement 2b). Similarly, sigma power in the left hemisphere was found increased in relation to the right hemisphere in all dextral animals (Figure 4\u2014figure supplement 2c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig4-v2.jpg)\n\n**Figure 4.:** (a) Non-rapid eye movement (NREM) amount is not different between groups across all protocol days (two-way repeated measures analysis of variance [RM-ANOVA], condition * day interaction, F(32, 215) = 0.929, p=0.582), (b) Fragmentation index reveals no fragmented NREM in none of the groups overtime (RM-ANOVA, time * condition interaction, F(32, 228) = 0.830, p=0.730). (c\u2013e) Average power spectral density in NREM (0.5\u201328 Hz) extracted from the left electroencephalogram (EEG) derivation during M-T3, relative to baseline (BL). (f) 24 hr spectral for all the groups as percentage change from BL for delta (>0.5\u20134 Hz), theta (>4\u20138 Hz), alpha (>8\u201312 Hz), sigma (>11\u201316 Hz), and beta (>16\u201320 Hz) frequency bands for all pre-training (P-T) and motor-training (M-T) days (one-sample Hotelling\u2019s T2). The change in delta and beta was significantly increased during up-phase stimulation compared to mock (***p<0.001 and *p=0.010), whereas down-phase stimulation showed a significant reduction in relation to non-stimulated animals both in delta and sigma (***p<0.001 and ***p<0.001, respectively). Significant changes from BL are marked as gray bars on the lower part of the chart. (g) Sigma power in the mock group back to BL values during non-training (N-T) days (one-sample t-test, p=0.672). AUC: area under the curve.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013c) Up-phase-stimulated animals show fairly symmetrical power spectral, with exceptions in the delta range during non-rapid eye movement (NREM) sleep and alpha and beta ranges during rapid eye movement (REM) sleep. (d\u2013f) Down-phase-stimulated animals reveal interhemispheric asymmetry in the beta range during wakefulness, sigma range during NREM sleep, and alpha range during REM sleep (multiple unpaired t-test, significanct level *p>0.05 is represented below the corresponding datapoints). M-T: motor-training; p.p.: percentage points.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Diagram illustrating the combination of modulatory factors (closed-loop auditory stimulation [CLAS] and handedness) on EEG activity for right- and left-pawed animals (preferred paw highlighted in black). (b) Delta activity change on the left EEG derivation (used for CLAS) in relation to the right derivation for up- and down-phase-stimulated animals during M-T3. (c) Sigma activity change on the left EEG derivation (used for CLAS) in relation to the right derivation for up- and down-phase-stimulated animals during M-T3. M-T: motor-training; R: right paw; L: left paw.\n\n**Table 1.**\n Interindividual and longitudinal variability for delta activity (% change from baseline [BL]).Differences between subjects contribute the most to the variability seen during closed-loop auditory stimulation (CLAS). Values across animals represent the grand average (P\u2011T1 \u2013 M-T3) of delta power change from BL per animal. Values across days include a grand average of all animals per day. P-T: pre-training; M-T: motor-training.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"5\">Across animals (intervariability)</th>\n      <th colspan=\"5\">Across days (P-T1 \u2013 M-T33 = 11 days) (longitudinal variability)</th>\n    </tr>\n    <tr>\n      <th>Range</th>\n      <th>Mean</th>\n      <th>SD</th>\n      <th>F(DFn, DFd)</th>\n      <th>p-Value</th>\n      <th>Range</th>\n      <th>Mean</th>\n      <th>SD</th>\n      <th>F(DFn, DFd)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Up (n = 7)</td>\n      <td>+1.11 to +10.45</td>\n      <td>+7.36</td>\n      <td>3.19</td>\n      <td>(6,61) = 5.26</td>\n      <td>&lt;0.001</td>\n      <td>+3.04 to +10.3</td>\n      <td>+6.85</td>\n      <td>1.98</td>\n      <td>(10,57) = 1.66</td>\n      <td>0.114</td>\n    </tr>\n    <tr>\n      <td>Mock (n = 5)</td>\n      <td>\u20135.32 to +10.99</td>\n      <td>+0.14</td>\n      <td>5.91</td>\n      <td>(4,40) = 3.51</td>\n      <td>0.015</td>\n      <td>\u20134.60 to +3.32</td>\n      <td>\u20130.46</td>\n      <td>2.11</td>\n      <td>(10,34) = 1.22</td>\n      <td>0.313</td>\n    </tr>\n    <tr>\n      <td>Down (n = 8)</td>\n      <td>\u20138.93 to +1.59</td>\n      <td>+4.00</td>\n      <td>3.31</td>\n      <td>(7,68) = 4.86</td>\n      <td>&lt;0.001</td>\n      <td>\u20138.61 to \u20132.06</td>\n      <td>\u20134.47</td>\n      <td>1.96</td>\n      <td>(10,65) = 0.45</td>\n      <td>0.916</td>\n    </tr>\n  </tbody>\n</table>\n\n### Daily time course of delta power changes depends on CLAS\u2019 targeted phase, and its 24 hr pattern remains stable across prolonged and continuous stimulation\n\nTo understand the daily time course of power density in the delta-frequency band and to appreciate the effect of chronic stimulation during NREM throughout all protocol days, we examined the hourly change in relation to BL for each protocol day. Up-phase-stimulated animals consistently presented increased delta power throughout the day, with larger increases during the light phase (up to ~23% in some days), an effect that persisted until the end of the protocol (Figure 5a). Mock animals oscillated around zero-change value (Figure 5b), in concordance with the notion of a reorganized sleep-wake pattern, due to the 1-hr-long SPRT task and food-entrainment activity (Northeast et al., 2019), the later notably present in the other groups as well. Down-phase-stimulated animals exhibited reduced delta power for the majority of the time, with greater hourly decreases during the dark period, down to ~\u201317% (Figure 5c). We evaluated the time course of delta power from P-T8 to M-T1-4 days to explore the effect of stimulation before and after the SPRT hour. In up-phase-stimulated animals, the time-course analysis of delta activity revealed significantly higher power during the hours immediately after the testing session compared to BL (multiple paired t-tests, corrected with Holm\u2013Sidak method for multiple comparisons; Figure 5d). This finding overlapped with the animals\u2019 largest daily drop in homeostatic sleep pressure (see \u2018BL curve\u2019 section, Figure 5d). While mock animals did not show differences during the aforementioned stimulation days compared to BL (Figure 5e), down-phase-stimulated animals presented the largest decrease compared to BL during the hours immediately before the SPRT (multiple paired t-tests, corrected with Holm\u2013Sidak method for multiple comparisons; Figure 5f). Contrast between delta activity during the SPRT session\u2019s preceding and succeeding hours for up- and down-phase stimulation groups shows significant modulation levels for down-phase-stimulated animals in the end of the dark period and for up-phase-stimulated animals immediately after the testing session during the light period (Figure 5g).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig5-v2.jpg)\n\n**Figure 5.:** (a\u2013c) Delta activity (0.5\u20134 Hz) changes from BL, in 1 hr bins, for up-phase, mock, and down-phase-stimulated animals. Pre-training (P-T) and non-training (N-T) days were condensed into grand averages (top and bottom heatmap rows, respectively). Individual motor-training (M-T) days are shown in the middle rows. Hours in black represent the single-pellet reaching task (SPRT) training sessions, numbered with the respective protocol day. On the right side of each heatmap, the training sessions of the following protocol day are enumerated. (d\u2013f) Time course of hourly delta activity during BL and M-T days, collectively (colored line represents the grand average of training sessions P-T8 to M-T4). These 5 days, as seen individually in the five-row subpanels in the middle of each heatmap (a\u2013c), were chosen because they circumscribe the four M-T testing sessions and serve to illustrate the potential effect of modulated NREM sleep on behavior and vice versa. (g) Contrast between delta activity during the SPRT session\u2019s preceding and succeeding hours for up- and down-phase stimulation groups, plotted in percentage points from BL. Gray/colored shadows bellow plots (d\u2013g) represent significant timepoints (multiple t-tests, Holm\u2013Sidak correction for multiple comparisons). The light period comprises ZT-1 to ZT-12 (white rectangle), whereas the dark period spans from ZT-13 to ZT-24 (gray rectangle). ZT: zeitgeber; LTM: long-term memory; p.p.: percentage points.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a\u2013c) Sigma activity (11\u201316 Hz) changes from BL, in 1 hr bins, for up-phase, mock, and down-phase-stimulated animals. Pre-training (P-T) and non-training (N-T) days were condensed into grand averages (top and bottom rows, respectively). Individual M-T days are shown in the middle rows. Hours in black represent the single-pellet reaching task (SPRT) training sessions, numbered with the respective protocol day. On the right side of each heatmap, the training sessions of the following protocol day are enumerated. (d\u2013f) Time course of hourly sigma activity during BL and M-T days, collectively (colored line represents the grand average of training sessions P-T8 to M-T4). (g) Contrast between delta activity during the SPRT session\u2019s preceding and succeeding hours for up- and down-phase stimulation groups, plotted in percentage points from BL. Gray/colored shadows bellow plots (d\u2013g) represent significant timepoints (multiple t-tests, Holm\u2013Sidak correction for multiple comparisons). The light period comprises ZT-1 to ZT-12 (white rectangle), whereas the dark period spans from ZT-13 to ZT-24 (gray rectangle). ZT: zeitgeber; LTM: long-term memory; p.p.: percentage points.\n\n### CLAS modulates sigma power in a targeted phase-dependent manner\n\nCLAS targeting slow waves also altered sigma power (Figure 4g). The hourly time course of sigma-power changes showed a steady boost throughout the experiment, up to ~12% (Figure 5\u2014figure supplement 1a). Mock animals exhibited non-significant power changes (range: ~\u201310% to ~14%) across all stimulation days (Figure 5\u2014figure supplement 1b). The decrease in sigma power in the down-phase-stimulated animals reached depressions down to ~\u201312% during the light period, immediately after the test (Figure 5\u2014figure supplement 1c). When we investigated the combined effect of CLAS on P-T8 and M-T1-4 days immediately after the training sessions, we found no significant change in sigma power in the up-phase-stimulated and mock groups compared to their BL (multiple paired t-tests, Holm\u2013Sidak method for multiple comparisons, Figure 5\u2014figure supplement 1d and e). On the contrary, down-phase stimulation reduced sigma power compared to BL, particularly during the hours preceding the motor-training task (multiple paired t-tests, Holm\u2013Sidak method for multiple comparisons,Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 1g).\n\n### Up-phase CLAS preserves the natural proportion of same-size trains of triggers, whereas down-phase CLAS prolongs the interval between triggers\n\nNext, we examined the frequency of trains of triggers (interstimulus interval [ISI] \u2265 0.8 s): mock animals show a skewed distribution, with single triggers representing ~65% of all sequences of triggers and ~43% of all triggers in NREM (M = 2384, SD = 2296, per 24 hr). Up-phase-stimulated animals showed no difference in proportion of trains of any size when compared to the mock group (Figure 6a); however, they overall received more triggers per day (M = 5862, SD = 2214). Conversely, down-phase-stimulated subjects presented a different pattern of stimulation (two-way ANOVA, condition * train size interaction, F(8, 80) = 6.72, ***p<0.001, Figure 6a), with significant higher rate of single triggers (***p<0.001, ~58% of all triggers in NREM per 24 hr, M = 2462, SD = 1686) and less trains of two triggers (*p=0.020), hinting on the disruptive effects of down-phase targeting on slow waves. Corroborating these results, the analysis of ISIs (two-way ANOVA, condition * ISI interaction, F(16, 144) = 1.80, *p=0.037) showed that up-phase targeting preserved the proportion of same-length non-stimulated periods seen in the analysis of muted-sound triggers in non-stimulated subjects, whereas down-phase stimulation provided a distribution of triggers containing significantly less density of ISIs < 2 s (Figure 6b).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig6-v2.jpg)\n\n**Figure 6.:** (a) Histogram for the train of pulses, up to five consecutive stimuli, spaced by no more than 1 s (two-way ANOVA, condition * train size interaction, F(8, 80) = 6.72, ***p<0.001). (b) Histogram for the time between triggers, organized in a probability density function for different bin sizes (two-way ANOVA, condition * interstimulus interval interaction, F(16, 144) = 1.80, *p=0.037).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Waveforms from motor-training (M-T) period were locked to the start of each auditory trigger onset (t = 0). Up-phase seems to induce a second slow-wave cycle. (b) Down-phase stimulation does not preserve the slow oscillatory pattern. (c) Comparison of amplitude between up- and down-phase conditions for the depolarized up-state (US) (unpaired t-test, p=0.065) and the hyperpolarized down-state (DS) (unpaired t-test, p=0.058). au: arbitrary units.\n\n### Up-phase CLAS mildly entrains EEG slow waves, whereas stimulation during the down-phase disturbs it\n\nAnalysis of event-related potentials (ERPs, filtered in the 0.5\u20132 Hz frequency band), that is, all waveforms receiving triggers during NREM, revealed a small slow-wave cycle following the endogenous cycle that triggered the stimulation in up-phase CLAS (Figure 6\u2014figure supplement 1a), while down-phase targeting appeared to completely disrupt the slow-wave negative half-cycle (Figure 6\u2014figure supplement 1b). This is evidenced by the amplitude contrast between the two conditions for two succeeding slow-wave troughs (Figure 6\u2014figure supplement 1c). Although not statistically significant, we observed trends for lower amplitude for both the depolarized up-state (unpaired t-test, p=0.065) and the hyperpolarized down-state (unpaired t-test, p=0.058) in down-phase-stimulated animals compared to up-phase-stimulated rats.\n\n### Phase-targeted CLAS modulates success rate of motor learning in the SPRT\n\nWe first analyzed the raw counts for attempts, successes, failures, and drop-ins. Attempts\u2019 counts had high dispersion for every M-T day, and although they showed considerable qualitative clustering at day 4 (Figure 7a), their high dispersion did not allow differentiation of the groups. The lack of apparent interaction between group and day was confirmed by the negative binomial distribution model (\u03a72(2, N = 21) = 0.25, p=0.883). Increase in the incidence rate ratios (IRRs) of attempts across M-T days (IRR/day) did not achieve significance for mock animals (n = 6; pIRR/day = 0.126), but revealed a tendency of growth in the up-phase-stimulated group (n = 7; \u2020pIRR/day = 0.061) and a significant increase in the down-phase-stimulated group (n = 8; *pIRR/day = 0.014). Successes\u2019 count grew in all groups (\u03a72(1, N = 21) = 50.08, ***p<0.001), but without significant interaction (\u03a72(2, N = 21) = 0.55, p=0.761), rendering in neither up- (p=0.613) or down-phase (p=0.123)-stimulated groups significant differences from mock animals. Failed attempts\u2019 counts showed differences between groups across training days (\u03a72(2, N = 21) = 8.29, *p=0.016). This result reflects the decrease in the incidence of fails in the up-phase-stimulated group (***pIRR/day < 0.001), but not in the down-phase group (pIRR/day = 0.864), with mock intermediate to both (n = 6; \u2020pIRR/day = 0.054). Drop-in counts (the pellet is grasped but dropped during arm retraction) present only a collective reduction over time (\u03a72(1, N = 21) = 4.42, *p=0.035), without differences between groups. Between-group comparison of success rate (SR, successes per total attempts) and fail rate (FR, fails per total attempts) demonstrated that down-phase-stimulated subjects present a significantly worse learning progression when contrasted with mock subjects (SR: \u03a72(2, N = 21) = 17.50), ***p<0.001; Tukey post-hoc comparison up * mock: p=0.220, down * mock: *p=0.044, Figure 7b; FR: \u03a72(2, N = 21) = 18.34, ***p<0.001; Tukey post-hoc comparison up * mock: p=0.155, down * mock: \u2020p=0.056, Figure 7c. SR (two-way ANOVA, time * condition, F(2, 18) = 0.14, p=0.874) and FR (two-way ANOVA, time * condition, F(2, 18) = 0.08, p=0.920) at LTM-day did not significantly differ from M-T4 in any of the groups.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig7-v2.jpg)\n\n**Figure 7.:** (a) The number of attempts in up-phase (n = 7, \u2020pIRR/day = 0.061) and mock (n = 6, pIRR/day = 0.126)-stimulated rats did not significantly change over the period of the test, whereas down-phase rats showed a significant increase in this parameter (n = 8; *pIRR/day = 0.014). (b) By observing success rate (SR) (number of successes in total attempts), down-phase-stimulated subjects show significantly worse learning progression when contrasted with mock subjects ((\u03a72(2, N = 21) = 17.50), ***p<0.001; Tukey post-hoc comparison up * mock: p=0.220, down * mock: *p=0.044). (c) Like SR results, the fail rate (FR) analysis (\u03a72(2, N = 21) = 18.34, ***p<0.001; Tukey post-hoc comparison up * mock: p=0.155, down * mock: \u2020p=0.056) shows impaired learning in the down-phase-stimulated group compared to mock, while up-phase performs similarly to controls. M-T: motor-training; IRR/day: incidence rate ratios per day.\n\n### Up-phase-stimulated animals show daily intra-session improvements, while down-phase-stimulated animals attempt less towards the end of the session\n\nCompartmentalizing each training session into 12 min bins (or 20 pellets, whichever comes first) revealed that up-phase-stimulated and mock subjects maintained the same rate of attempted grasps across bins (RM-ANOVA, condition * bin interaction, F(2, 18) = 4.03, *p=0.036, Figure 8a), while down-phase-stimulated animals attempted significantly less towards the end of the session (first-bin * last-bin, *p=0.022) and significantly less than control animals during the last bin (down * mock, *p=0.037). When relativizing number of attempts per bin by the total number of attempts within the session (RM-ANOVA, condition * bin interaction, F(2, 18) = 5.24, *p=0.016, Figure 8b), down-phase-stimulated animals again show a sharp decrease towards the end of the session (first-bin * last-bin, **p=0.004). Attempting speed (number of attempts per minute) also showed a decline from the first to the fifth bin in the down-phase-stimulated subjects, but failed to reach significance (RM-ANOVA, condition * bin interaction, F(2, 18) = 1.33, p=0.291, Figure 8c). Although the intra-session attempt rate in the up-phase-stimulated group remained constant from the beginning to end of training sessions, there was an increase in successful attempts from the first to the fifth bin in this group in all M-T days. Conversely, down-phase-stimulated animals were always slightly less successful towards the end of each session (Figure 8d), although this observation might be explained by the reduction in attempts along the session duration.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig8-v2.jpg)\n\n**Figure 8.:** (a) Down-phase-stimulated animals attempt significantly less than control animals during the last bin (two-way repeated measures analysis of variance [RM-ANOVA], condition * bin interaction, F(2, 18) = 4.03, *p=0.036; down * mock, *p=0.037). (b) In relation to the proportion of attempts per bin to the total number of attempts, down-phase-stimulated animals again show a sharp decrease towards the end of the session (RM-ANOVA, condition * bin interaction, F(2, 18) = 5.24, *p=0.016; first-bin * last-bin, **p=0.004). (c) Attempting speed shows a non-significant decline from the first to the fifth bin in the down-phase-stimulated subjects (RM-ANOVA, condition * bin interaction, F(2, 18) = 1.33, p=0.291). (d) Up-phase-stimulated animals show a consistent increase in successful attempts from the first to the fifth bin, in all motor-training (M-T) days. Conversely, down-phase-stimulated animals were always slightly less successful towards the end of each session, although this might be due to the drop in attempts within the last testing window (plotted as the log2 of the fold-change of the number of successes of the last bin to the first bin of a session: \u20131 represents a 50% drop in successes, while 1 represents twice more successes from first bin).\n\n### Number of triggers correlates with magnitude of delta power changes, and both delta and sigma changes positively correlate with success rate at the end of the M-T period\n\nTo investigate whether the number of sound triggers influences the extent of delta power modulation, we extracted the number of triggers over each 24 hr period during the M-T phase for all stimulated animals. The magnitude of changes in the delta-frequency band was moderately correlated with the number of delivered stimuli, both for up- (Spearman\u2019s rho = 0.43, *p=0.022, Figure 9a) and down-phase-stimulated animals (Spearman\u2019s rho = \u20130.41, *p=0.026, Figure 9a). We also found a significant positive association between 24 hr changes in delta and sigma power (Spearman\u2019s rho = 0.57, **p=0.004, Figure 9b), reflecting the impact of CLAS on the two most dominant features during NREM sleep. Subsequent analysis between 24 hr average delta change (all training-phase days condensed) and SR at the end of the training phase revealed a moderate positive association between modulation of delta activity and SPRT performance (Spearman\u2019s rho = 0.41, *p=0.034, Figure 9c). Likewise, sigma activity changes positively correlate with SR scores (Spearman\u2019s rho = 0.53, *p=0.007, Figure 9d).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/68043/elife-68043-fig9-v2.jpg)\n\n**Figure 9.:** (a) The magnitude of changes in the delta-frequency band was moderately correlated with the number of stimuli delivered, both for up- (Spearman\u2019s rho = 0.43, *p=0.022) and down-phase-stimulated animals (Spearman\u2019s rho = \u20130.41, *p=0.026). (b) In turn, 24 hr grand average (motor-training [M-T] days) of delta activity changes from BL correlated significantly with sigma activity changes in the same period (Spearman\u2019s rho = 0.57, **p=0.004). (c, d) Moderate positive associations between the success rate (SR) scores achieved by all subjects in the last motor assessment (M-T4) and the global changes in delta activity (Spearman\u2019s rho = 0.41, *p=0.034) and sigma activity (Spearman\u2019s rho = 0.53, *p=0.007), from all days preceding the sessions of the M-T phase, collectively (P\u2011T8, M-T1, M-T2, and M-T3).\n\n## Discussion\n\n### Conceptual and technical validation of rodent CLAS: chronic continuous phase-targeted CLAS specifically and steadily modulated delta and sigma power\n\nThis is the first report of successful phase-targeted CLAS in rodents. With this paradigm, we delivered auditory triggers to healthy rats continuously over a period of 16 days. We observed a mild but specific average increase of 6.9% (up to 23% during the light period) in delta power per 24 hr on stimulation days compared to BL. This effect was stable over the entire stimulation period evaluated, with no signs of decay nor facilitation effects over time. Reverse effects (M = \u20134.5%, down to \u201317.5% by the end of the dark period) were observed during down-phase stimulation.\n\nNotably, application of CLAS in human subjects has often failed to demonstrate an overall inter-night effect (unperturbed night vs. stimulated night) of stimulation on power spectra (Papalambros et al., 2017; Papalambros et al., 2019), while comparison between same-night ON- and OFF-stimulation windows yielded significant stimulation effects that positively correlated with subsequent memory performance (Ong et al., 2016; Papalambros et al., 2017). In this study, we provide first evidence of a long-term effect when comparing unperturbed 24 hr (BL) vs. stimulated 24 hr in a paradigm of continuous stimulation, somewhat challenging the proposition that the effect of CLAS is mediated by qualitative transient reorganization of SWA rather than of a general SWS or SWA enhancement (Papalambros et al., 2017). CLAS elicited, however, a modest effect in both up- and down-conditions in our rats, without evidence of either build-up or adaptation mechanisms to regulate the impact of the stimulation across the days. Interestingly, chronic sleep deprivation studies in rodents demonstrate a comparable effect, suggesting that strong homeostatic compensatory mechanisms may be at play (Kim et al., 2020; Leemburg et al., 2010).\n\nTo achieve a greater effect, further refined CLAS paradigms must be evaluated. For instance, although the CLAS protocol employed in this study accomplished 70% NREM precision for sound triggering and clear phase-target accuracy, future NREM online staging and CLAS pipelines shall be optimized in terms of detection of particular EEG events, such as slow oscillations, spindles, or arousals. Triggers would ideally be delivered only during sustained NREM sleep, but motion behaviors with a rhythmic nature (e.g., grooming, feeding, and drinking) may have been major factors contributing to wakefulness and artifact epochs being identified online as NREM sleep, and consequently reducing precision. Thus, further artifact-rejection features shall be considered, such as auxiliary EMG information (e.g., piezo-electric sensors), especially in long-term experiments where attrition of implanted EEG/EMG headsets is unavoidable. In addition, very strict thresholds for NREM sleep online identification drastically limited sensitivity of the algorithm (12%). Nonetheless, the CLAS paradigm introduced here produces stable sleep modulation effects over time and successfully replicates the timing accuracy so far obtained in some methods of human CLAS (Fattinger et al., 2019; Papalambros et al., 2017). Also like in humans studies (Henin et al., 2019; Krugliakova et al., 2020; Papalambros et al., 2017), we observed an additional modulatory effect of CLAS on power in the sigma-frequency band in rats. Sigma modulation was, just like CLAS-dependent delta changes, phase-target-specific and steady over the 16 days of stimulation. Finally, further assessments indicated that exclusively targeting slow waves in the left hemisphere did not manipulate SWA during NREM sleep to a different extent in that brain area. However, a left predominance of SWA\u2014presumed to correspond with the naturally higher occurrence of right-pawed animals\u2014has been reported in rodents (Vyazovskiy et al., 2002; Vyazovskiy and Tobler, 2008), and therefore we cannot rule out the possibility that this natural characteristic mounts up with CLAS effect and entangles with our results.\n\nWe explored the size of trains of triggers and ISIs (Santostasi et al., 2016)\u2014proxies for length and distribution of delta wave trains\u2014to explore whether CLAS altered natural slow-wave patterns and if this could be the potential underlying process by which CLAS exerted its modulatory effect over delta power. In comparison to mock, down-phase-stimulated animals showed an increased number of single triggers, decreased proportion of trains of two triggers, and decreased density of <2 s ISIs, in contrast to maintained levels in the up-phase-stimulated group, potentially indicating that down-phase CLAS has disarrayed the natural pattern of delta wave trains.\n\nIn agreement with the apparent preservation of the slow-wave pattern with up-phase CLAS, and opposite effect with down-phase CLAS, analysis of ERPs indicated the occurrence of a post-trigger slow wave when targeting 60\u00b0, whereas a post-trigger pattern disruption arises from 180\u00b0 target stimulation. Peak-to-peak amplitude did not differ between up- and down-phase groups, although we cannot reject a possible tapering of the physiological response from stimuli outside of the desired phase. Taken together, these findings suggest that CLAS of rodent slow waves may be altering the natural slow waves\u2019 pattern rather than significantly affecting their amplitude.\n\n### Functional validation rodent CLAS: altered behavioral performance upon phase-targeted CLAS in healthy rats\n\nPhase-targeted CLAS produced significantly altered learning performance in the SPRT in healthy rats, mainly in the down-phase condition. Moreover, we found that the mean delta activity change in motor-training days 1\u20134 in relation to BL correlated positively with SR on motor-training day 4 in the SPRT. Through the positive correlation found between the number of triggers\u2014that is, extent of closed-loop auditory stimuli delivered\u2014and delta power changes in up- and down-phase groups, we confirmed indeed that delta activity changes during motor-training days 1\u20134 are actually driven by CLAS. Overall, these results suggest that CLAS-dependent delta activity levels drive next-day performance in healthy rats. Furthermore, we observed that the level of proficiency achieved at motor-training day 4 was maintained in all groups after 5 days without training. This observation suggests that CLAS modulated sleep-dependent skill acquisition and retention only immediately following a motor-training session. In short, without prior active task engagement or performance saturation (Kvint et al., 2011), up-phase CLAS per se seems insufficient to induce a significant performance enhancement at the present conditions, whereas there was no evidence of skill decay induced by down-phase CLAS either. Two sleep-dependent mechanisms may explain the observed effect of modulated slow waves on behavioral performance in our paradigm. Sleep-mediated synaptic downscaling, or recovery, after learning has been deemed critical to maintaining behavioral performance (Fattinger et al., 2017). Thus, it is conceivable that targeting slow waves with CLAS might have altered (up-: increased; down-: decreased) the normal recovery process after learning during wakefulness in our rats. In support of this argument, we observed that the number of attempts in the down-phase group seems lower than in the other groups at motor-training day 1, potentially indicating that before any memory consolidation process took place, these animals already performed worse than their counterparts did. On the other hand, memory consolidation, a process at least partially mediated by spindles (Diekelmann and Born, 2010) in which specific synapses are strengthened, is also potentially sensitive to CLAS (Krugliakova et al., 2020; Ngo et al., 2013a; Papalambros et al., 2017). In fact, we did observe positive correlations between sigma\u2014potentially a proxy for spindles (Holz et al., 2012)\u2014during motor-training days 1\u20134 and SR on motor-training day 4. The two theories, however, are certainly not mutually exclusive (Klinzing et al., 2019; Wilckens et al., 2018) and sleep-dependent memory benefit could well complementarily rely on them both. Our tool, thus, may be utilized to disentangle the exact effects of CLAS-modulated SWS on rodent cognition. Further, CLAS can be strategically combined with other tools, such as multiunit-activity recording, and provide crucial insight into the underlying neuronal mechanisms of auditory-modulated slow waves and sigma (Krugliakova et al., 2020), and their functional role on learning and memory.\n\n### Limitations\n\nAn experimental limitation is the fact that we did not actively apply randomization, nor exclusion criteria, in relation to the paw preference in our experimental groups of all-male rats. Thus, as we solely tracked the left-hemisphere EEG derivation for CLAS, distinct local network dynamics determined by paw dexterity (Hanlon et al., 2009; Vyazovskiy and Tobler, 2008) may have potentially affected closed-loop stimulation features in an uncontrolled manner in left- or right-pawed experimental subjects and contributed synergistically or in opposition to the CLAS modulatory effects. Larger group numbers allowing for exclusion or efficient randomization of this confounder variable shall be considered in future efforts. Lastly, in our temporal analysis of the delta power changes per 24 hr, we observed a clear pattern showing that animals in all groups present distinctively decreased delta power levels in the few hours before the behavioral test. Whether this activity pattern, likely attributable to food anticipation (Northeast et al., 2019), might have compounded with our CLAS-specific delta power findings remains to be determined and, ideally, further controlled in future experiments. Finally, in relation to the lack of effect of phase-targeted rodent CLAS on ERP amplitudes, as others demonstrated earlier, the broad range achieved by our phase-tracking algorithm might have contributed to the observed variable effects of CLAS across animals at the ERP level, ultimately leading to high interindividual variability on delta activity modulation, result that agrees with previous studies using non-adaptive prediction algorithms (Cox et al., 2014; Fattinger et al., 2017; Fattinger et al., 2019; Ngo et al., 2013a). Employing adaptive feedback methods based on phase-locked loops (at times associated with amplitude thresholds), producing optimal phase-prediction and inducing more specific and systematic effects on SWS (Ong et al., 2016; Papalambros et al., 2017; Papalambros et al., 2019; Santostasi et al., 2016), shall be assessed in rodents next.\n\nAltogether, our report presents the first successful implementation of phase-targeted CLAS in rats, demonstrating that phase-targeted continuous chronic CLAS is feasible, specific, and effective in rodents. Overall, this novel tool provides successful grounds to not only further study the substrate mechanisms by which CLAS affects SWA and associated outcomes, such as cognition, but to additionally assess its effect on models of brains disease. Ultimately, CLAS of slow waves in rodents may help pave the way to the clinical implementation of this novel technique in the context of brain/body disorders that may be targeted with sleep-based therapeutics (Arora and Taheri, 2015; Cook et al., 2020; Fung et al., 2011).\n\n## Materials and methods\n\n### Animals, surgeries, and husbandry\n\nTo develop this tool, we used 23 young adult male Sprague\u2013Dawley rats (Charles River, Italy) weighing 200\u2013220 g and group-housed them in standard IVC cages (T2000) prior to interventions. In all animals, we surgically implanted electrodes for continuous recording of EEG/EMG as described previously (B\u00fcchele et al., 2016). Briefly, we inserted four stainless steel miniature screws (Hasler, Switzerland), one pair for each hemisphere, into the rats\u2019 skull following specific stereotactic coordinates: the anterior electrodes were implanted 3 mm posterior to bregma and 2 mm lateral to the midline, and the posterior electrodes 6 mm posterior to bregma and 2 mm lateral to the midline. For monitoring of muscle tone, we inserted into the rats\u2019 neck muscle a pair of gold wires that served as EMG electrodes (Figure 1a). All electrodes were connected to stainless steel wires, further connected to a headpiece (Farnell, #M80-8540842, Switzerland) and fixed to the skull with dental cement. We performed all surgical procedures under deep anesthesia by inhalation of isoflurane (4.5% for induction, 2.5% for maintenance), and subsequent analgesia with buprenorphine (s.c., 0.05 mg/kg). Following surgery, we housed the animals individually for a minimum of 14 days for recovery, with food and water available ad libitum, and handled them daily for postoperative monitoring, body weight checkup, and familiarization with the experimenter. The animal room temperature was maintained at 22\u201323\u00b0C, and animals were kept on a 12 hr light-dark cycle. 2 weeks after surgery, we transferred the animals, still individually, to custom-made acrylic-glass cages (26.5 \u00d7 42.5 \u00d7 43.5 cm). Each cage was positioned inside a sound-attenuated chamber, built in-house, for EEG/EMG recording and auditory stimulation (Figure 1b). All procedures were approved by the veterinary office of the Canton Zurich (license ZH231/2015) and conducted in accordance with national and institutional regulations for care and use of laboratory animals.\n\n### Sound insulation chambers\n\nEight 40 \u00d7 50 \u00d7 60 cm sound-insulated chambers were design and built in-house with the purpose to simultaneously record physiological signals and deliver auditory stimulation to eight individual subjects at a time. Each chamber (Figure 1\u2014figure supplement 1a) was built using the following components:\n\n### Pilot studies\n\nWe performed a series of small studies in a cohort of 10 animals (five animals under up-phase and five under down-phase CLAS) to investigate the most adequate set of stimulation parameters. Briefly, we opted to stimulate at 35 dB (range tested: 50 dB, 45 dB, 40 dB, and 35 dB) based on real-time video and posterior EEG/EMG inspection as none of the animals showed any perturbation during sustained NREM sleep under this volume. Based on literature (Fattinger et al., 2017; Ngo et al., 2013a), and considering average delay from detection to trigger of 29.30 ms, we selected 60\u00b0 for up-phase and 180\u00b0 for down-phase stimulation (we defined slow wave\u2019s 0\u00b0 as the rising zero-crossing, 90\u00b0 to the positive peak, and 270\u00b0 to the slow-wave trough). Phase-target CLAS in humans typically uses 50 ms stimulus duration for a dominant slow oscillatory component of 0.8 Hz. Therefore, we determined 30 ms of stimulus duration to overlap with the ongoing slow wave proportionally\u2014slow oscillatory activity peaks at 1.35 Hz in rats (M\u00f6lle et al., 2009).\n\n### Experimental design\n\nWe performed the whole experiment in four batches of five or six animals each, divided evenly across experimental groups. Aiming to test several subjects daily, individually and at the same circadian time, the light/dark cycle of each subject was adapted accordingly. Briefly, we shifted the light/dark cycle at once, allocating the animals\u2019 first hour of light into successive testing windows of 1.5 hr during the course of the working day. Bearing in mind that, during the testing period, the circadian cycle of the last animal of each batch was shifted 9 hr in relation to the first, the entire batch was given a 10-day adaptation to the new routine, as well as to the recording chamber and cables. We kept the animals on a feeding schedule in which they daily received 50 g/kg of regular chow after training throughout the entire experiment. This feeding schedule did not cause any significant weight loss. Water was available ad libitum. Following 24 hr of BL recording, we initiated a 16-day auditory stimulation protocol in parallel with a fine motor-skill learning task (see \u2018Single-pellet reaching task protocol\u2019 section). On the 17th protocol day, we performed the last behavioral assessment and sacrificed the animals (Figure 2).\n\n### EEG/EMG recording and preprocessing\n\nIn order to verify the effect of auditory stimulation on EEG spectra, we conducted bilateral tethered EEG/EMG recordings (differential mode) during 24 hr, to serve as BL, and throughout all the subsequent 16 protocol days, applying our runtime stimulation paradigm in five or six freely moving animals simultaneously. We acquired data using a Multichannel Neurophysiology Recording System (Tucker Davis Technologies [ TDT], USA). We sampled all EEG/EMG signal at 610.35 Hz, amplified (PZ5 NeuroDigitizer preamplifier, TDT) after applying an anti-aliasing low-pass filter (45% of sampling frequency), synchronously digitized (RZ2 BIOAMP processor, TDT), recorded using SYNAPSE software (TDT), and stored locally (WS-8 workstation, TDT). We filtered real-time EEG between 0.1 and 36.0 Hz (second-order biquad filter, TDT), and EMG between 5.0 and 525.0 Hz (second-order biquad filter and 40 dB notch filter centered at 50 Hz, TDT), and feed the signals to real-time detection algorithms for NREM staging and phase detection (Figure 1c).\n\n### Online NREM staging\n\nParallel rule-based NREM staging and phase detection features were continuously running alongside EEG/EMG recording, that is, sound triggers were presented at every instance the stimulatory truth function compounding these features was reached (Figure 1c, Figure 1\u2014figure supplement 1). For online sleep staging, a nonlinear classifier compounds two major decision nodes: power in EEG and power in EMG (Hamrahi et al., 2001). Briefly, we computed high-beta (20\u201330 Hz) and delta (0.5\u20134 Hz) bands\u2019 rms on a sliding window of 1 s using an algorithm written in RPvdsEx (Real-Time Processor Visual Design Studio, TDT). Once the ratio rmsdelta/rmshigh-beta, hereinafter referred to as NREMratio, crossed a threshold individually identified during the BL recording, we further confronted EMG rms to a threshold, as well as defined during BL, in order to rule out movement artefacts. The abovementioned NREMratio and the EMG power thresholds for online NREM staging during auditory stimulation, suggestive of sustained SWS during NREM, were extracted individually and immediately after the BL recording: 24 hr EEG/EMG data was automatically scored (SPINDLE, ETH Zurich, Switzerland) and fed to a custom-written MATLAB (ver. R2016b) script. In short, a strict estimate of NREMratio threshold during NREM was established as +1.0 SD over the mean (representing the 84.1% percentile) of the NREMratio of all NREM epochs during BL. Similarly, EMG power in NREM was delimited to values \u20131.0 SD below the mean (threshold at 15.9% percentile) of the EMG rms values during offline-scored NREM sleep. These two values marked the transition into consolidated NREM sleep in each subject during online NREM staging and were introduced to our customized SYNAPSE (TDT) project.\n\n### Phase-targeted auditory closed-loop stimulation\n\nFor phase-targeted auditory stimulation of slow waves, SYNAPSE combines the online NREM staging feature with a phase detector. Briefly, a runtime very-narrow bandpass filter (TDT) for EEG phase detection isolated the 1 Hz component for phase targeting of slow waves (approximately 1.35 Hz in rats [M\u00f6lle et al., 2009]) of each subjects\u2019 left EEG channel. We predetermined slow wave\u2019s 0\u00b0 as the rising zero-crossing, 90\u00b0 to the positive peak, and 270\u00b0 to the slow-wave trough. At every identified positive zero-crossing on the filtered signal, the phase detector resets to 0\u00b0 and calculates any of the selected target phases based on the number of elapsed samples since the zero-crossing. This method offers the chance to recognize slow waves consistently across conditions, independently of the target phase. We divided the animals into three different phase-targeted stimulation approaches: up-phase stimulation targeting 60\u00b0, down-phase stimulation targeting 180\u00b0, and mock stimulation flagging slow waves at 0\u00b0 (arbitrarily chosen) with no delivery of sound (Figure 1d). On average, a sound trigger was sent 29.30 ms (RX8 MULTI-I/O processor, TDT) upon validation of truth value for NREMratio, EMG power, and phase-target criteria. Auditory stimuli consisted of clicks of pink 1/f noise (30 ms duration, 35 dB SPL, 2 ms rising and falling slopes) in free-field conditions, from built-in speakers (MF1 multi-field magnetic speakers, TDT) on top of the stimulation chamber, 50 cm above the center of the floor area. The protocol of the mock condition was identical to up-phase or down-phase stimulations, but the sound was muted, that is, the speaker was disconnected from the RX8 MULTI-I/O processor. All triggers were time-flagged for offline analysis. Throughout all days of stimulation, we used a video system to sporadically control for stimuli-evoked arousals or reflexes.\n\n### EEG/EMG offline scoring and online staging validation\n\nWe scored all recording files using the online computational tool SPINDLE (Sleep Phase Identification with Neural Networks for Domain-Invariant Learning) for animal sleep data (Miladinovi\u0107 et al., 2019). In short, European Data Format (.edf) files, consisting of two parietal EEG and one nuchal EMG channels, were uploaded to SPINDLE to retrieved vigilance states with 4 s epoch resolution. The algorithm classified three vigilance states: wakefulness, NREM sleep, and REM sleep. Additionally, epochs containing data outliers or signal perturbations related to environmental interference rather than changes in brain state were labeled as artefacts in wakefulness, NREM, or REM sleep. Wakefulness was defined based on high or phasic EMG activity for more than 50% of the epoch duration and low-amplitude but high-frequency EEG. NREM sleep was characterized by reduced or no EMG activity, increased EEG power in the frequency band <4 Hz, and the presence of SOs. REM sleep was defined based on high-theta power (6\u20139 Hz frequency band) and low-muscle tone. To validate our online NREM staging method, we contrasted all recording outputs (NREMratio \u2227 EMG power) with offline scores from SPINDLE. Since online staging categorizes ongoing signal in 1 s steps, these were grouped in blocks of four in order to match the length of offline scored epochs. Online scores (i.e., blocks of four values corresponding to each 1 s online assessment) were categorized as NREM sleep every time two or more 1 s values were validated true for NREM sleep. To attest for performance, we calculated sensitivity, specificity, and precision between the online and offline arrays. Sensitivity was assessed as the ratio between online-labeled NREM epochs confirmed offline as NREM sleep (true positives) and the total NREM epochs detected offline (true positives + false negatives), and reveals how strictly the pipeline identified sustained NREM sleep using the thresholds defined at BL. Specificity was calculated as the ration between online non-NREM epochs confirmed offline as other than NREM sleep (true negatives) and the total non-NREM epochs detected offline (true negatives + false positives), and measures how well the online tool can exclude all that it is not NREM sleep. Lastly, we evaluated precision as the proportion of online-labeled NREM epochs confirmed offline as NREM sleep (true positives) among all online NREM labels (true positives + false positives).\n\n### Postprocessing of EEG\n\nTime spent in NREM sleep was determined as an absolute number of minutes for BL and all subsequent 16 days under CLAS. We also calculated an NREM sleep fragmentation index, expressed as the number of NREM sleep bouts/total number of NREM sleep epochs, with higher index values expressing higher fragmentation. Furthermore, we extracted measures of global spectral responses in specific bandwidths by processing the left-hemisphere EEG signal with a custom MATLAB routine (ver. R2016b). Briefly, the EEG signal was resampled at 300 Hz, and multiplied with a basic Fermi window function $fn=1+e^{5-n/50}^{-1}$ , to gradually attenuate the first and last 2 s (n = 600). Next, we filtered the signal between 0.5 and 48 Hz using low- and high-pass zero-phased equiripple FIR filters (Parks\u2013McClellan algorithm; applied in both directions [filtfilt]; orderhigh = 1880, orderlow = 398; \u20136 dB [half-amplitude] cutoff: high-pass = 0.28 Hz, low-pass = 49.12 Hz). The signal was visually inspected for regional artefacts (2 hr sliding window) not detected during automatic scoring: within scored NREM sleep, brief portions (<10 sample points at 300 Hz) of signal > \u00b1 [8\u00d7 interquartile range] were reconstructed by piecewise cubic spline interpolation from neighboring points. We performed spectral analysis of consecutive 4 s epochs (FFT routine, Hamming window, 2 s overlap, resolution of 0.25 Hz) and normalized the power estimate of each frequency bin in relation to the total spectral power (0.5\u201330 Hz). To access potential interhemispheric asymmetries, we additionally extracted spectral density power from the EEG\u2019s right derivation for each sleep stage and calculated the perceptual change from BL. To normalize for effects related to procedural factors, we subtracted the changes observed in the mock group from the stimulated groups. In order to appreciate the longitudinal CLAS effect, we calculated the daily activity changes in each frequency band\u2014delta (>0.5\u20134 Hz), theta (>4\u20138 Hz), alpha (>8\u201311 Hz), sigma (>11\u201316 Hz), and beta (>16\u201320 Hz)\u2014as the daily mean power of NREM sleep epochs using the abovementioned digital filters (orderhigh = 3758 and orderlow = 3861), normalized by the daily total power (0.5\u201330 Hz). Relative 24 hr delta- and sigma power were calculated in a similar fashion for M-T days and subsequently grand-averaged for that period.\n\n### Postprocessing of sound triggers and evoked-response potentials\n\nWe analyzed the trigger distribution during pre- and motor-training days in several aspects: the daily number of triggers in wakefulness, NREM sleep and REM sleep; the ratio between the number of triggers in each sleep stage and the total number of triggers; trains of triggers as the count of any size sequences of triggers 1 s or less apart (as SOs in rats occur at a peak frequency of 1.35 Hz; M\u00f6lle et al., 2009); and ISI as the time between triggers (Figure 1e). Analysis of the evoked auditory ERPs was performed computing EEG snippets across all auditory triggers in NREM, within a 3.5 s window time-locked to the trigger onset, and a post-stimulus cutoff of 2 s. Only triggers with a post-ISI >1 s were included in this analysis. To assess the ability of the runtime paradigm to target 60\u00b0 (up-phase) and 180\u00b0 (down-phase), we filtered the left EEG channel between 0.5 and 2 Hz (same fashion as previous digital filters: orderhigh = 3758, orderlow = 3861; \u20136 dB [half-amplitude] cutoff: high-pass = 0.39 Hz, low-pass = 1.91 Hz), followed by a Hilbert transform to define instantaneous phase. We averaged the instantaneous phase for all triggers delivered in NREM during the 16-day stimulation period and plotted the results in histograms with six bins of 60\u00b0. Counts were normalized to the total number of counts in each animal. Summary statistics were computed using the CircStats toolbox in MATLAB (Berens, 2009).\n\n### Single-pellet reaching task protocol\n\nWe used a 15 \u00d7 40 \u00d7 30 cm (W \u00d7 L \u00d7 H) acrylic-glass chamber with a vertical window (1 cm wide, lower edge 5 cm above the cage floor) in the front wall. This window was covered by a motorized sliding door, connected to an inductive sensor in the back wall. The rat could open the mentioned door by poking the nose to the sensor in the back wall of the cage. The training procedure consisted of two phases: (1) habituation to the testing chamber and instrumental- or pre-training during which the rat is taught to operate the motorized door (further called P-T), and (2) reaching- or motor-training during which the rat is taught to use a single paw to obtain food pellets (further called M-T) (Figure 1f). In detail:\n\n### Single-pellet reaching task analysis\n\nWe defined SR and FR as the number of successes or fails (excluding drop-ins) out of 100 possible attempts. We calculated the intra-session change as the log2 of the fold-change of the number of successes of the last bin to the first bin of a session (\u20131 represents a 50% drop in successes, while 1 represents twice more successes from first bin). Rats that failed to achieve a minimum SR of 10% at M-T2 or after would be excluded, but no subject met this criteria.\n\n### Statistical analysis\n\nWe present all data as the mean \u00b1 SEM, unless stated otherwise. We performed statistical analyses using Prism 8.0 (GraphPad Inc, San Diego, CA), SPSS Statistics 26.0 (IBM Corp., Armonk, NY), R 4.0.2 (Boston, MA) (Bates et al., 2015; Lenth, 2020; R Development Core Team, 2020), and MATLAB R2016b and R2019a (Natick, MA). We performed power calculations (R 4.0.2, power.anova.test) based on human literature using the same stimulation paradigms. We expected a standard deviation of 15% for all group estimates referent to delta activity change from BL (up-phase = + 15% [Ngo et al., 2013a; Papalambros et al., 2017]; mock = 0%; down-phase = \u201310% [Fattinger et al., 2017; Ngo et al., 2013a]), to which we obtained a sample size n = 8 (for sigma level = 0.05 and power = 0.80). Multiple RM-ANOVA (adjusted using the Greenhouse\u2013Geisser correction when necessary) was used to assess the influence of time (days, or bins in the SPRT analysis) and condition (up-phase vs. mock, and down-phase vs. mock) on NREM proportions, time course of delta and sigma, and SR on last protocol day. Paired Wilcoxon rank tests were applied to NREM amount relative to BL values since data did not follow a normal distribution for the plotted protocol days. We used a one-sample Hotelling\u2019s T2 test to explore whether the daily changes in all frequency bands have a mean equal to a null change (Oja, 2010). Differences on the time course of delta- and sigma frequencies in relation to BL were tested using multiple paired t-tests, corrected with Holm\u2013Sidak method for multiple comparison. Phase targeting was evaluated using circular statistics from the CircStat toolbox (Berens, 2009). For the analysis of SPRT counts, Poisson distribution or, if dispersion was larger than expected, negative binomial distribution was fit to the data. Both models provide IRR for which the expected counts were estimated and analyzed using mixed regression models (fixed factors: days and groups; random factor: subjects) followed Tukey\u2019s multiple comparison tests. Significance for the models\u2019 fixed effects was estimated with type II Wald chi-square tests. Associations were tested using one-tailed Spearman\u2019s rank correlations, underlying established one-directional hypotheses. Unless stated otherwise: n (up-phase) = 7; n (mock) = 5 for electrophysiology results and n (mock) = 6 for behavioral results; n (down-phase) = 8. The alpha level for all statistical tests was set initially to 0.05.\n",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "6aa2a11e-d64c-4932-be0c-17236e51246d",
+      "submission_id": "17e402d9-afdf-4680-b371-feffa77750a1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Denise Cai, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68043.sa1](https://doi.org/10.7554/eLife.68043.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis manuscript provides a set of proof-of-concept data for a rodent model of closed-loop auditory stimulation during sleep as a method for augmenting NREM sleep thalamocortical oscillations. There is translational value to this approach as this has been previously used in human subjects- altering slow wave oscillation to modulate memory consolidation. Applying this tool to rodent research in future studies may allow for bridging some of the putative mechanisms underlying memory consolidation and behavioral changes observed with sleep.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Closed-loop auditory stimulation method to modulate sleep slow waves and motor learning performance in rats\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Barbara Shinn-Cunningham as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nOverall, the reviewers agreed that this manuscript was well suited for a Tools and Resource paper. They were enthusiastic about the contribution of this CLAS method to the field, particularly for providing a tool for future investigations into the neural mechanisms underlying sleep and behavior (e.g., cognition). However, there were several concerns list below that would need to be addressed before consideration for publication.\n\nEssential revisions:\n\n1) The authors have 4 EEG channels recorded from each animal. The authors state that they report only left hemisphere. It is unclear which of the two left hemisphere EEG channels is used, or whether this represents an average of both. The 4 channels are the major source of neurobiological information for the study, and provide the primary basis for assessing effects of CLAS. One can only conclude that the authors have not maximized their use of available data, and there is no clearly stated reason why. The authors should clearly describe and defend why any EEG channels were excluded. Moreover, they should provide analysis of data across the various recorded channels. For example, how does CLAS affect coherence of oscillations between the EEG sites? Are there region-specific changes in CLAS effects on oscillations? How does motor learning and handedness of task performance affect each of the 4 recording locations? All of these questions can and should be clearly addressed, using the data presently available, in the results. Having this information would make interpretation of all of the other data more straightforward.\n\n2) The authors don't seem extremely forthright in discussing their obvious lack of effect of upstate-targeted CLAS on motor learning. They should just state this clearly in the abstract, as well as the results. The framing of the results seems unbalanced. For example, the title of Figure 7: \"Up-phase stimulated animals attempt more, succeed more and fail less over time, whereas down-phase stimulated rats show a significantly reduced success-rate.\" There is no clear evidence that \"attempts\" are any different between upstate CLAS and sham CLAS animals, so this is not a fair statement (which seems to attribute attempts increasing to upstate CLAS, rather than attempts decreasing to downstate CLAS). Moreover, these differences are present on the first day of training, suggesting they are in no way related to learning. Indeed, all of the actual effects on motor task performance seem driven by deficits in the downstate-targeted rates. And all of those effects could be attributable to something very non-specific (which is not discretely tested here) such as fatigue in downstate-targeted rats. Thus I cannot agree with the way that the behavioral results are presented. Some features such as the success and failure numbers in Figure 7 are totally irrelevant in light of the attempt numbers being a variable. Success and failure rates (normalized to attempts) and changes in those rates across the multi day training are the only relevant variables. These should be measured and discussed in more concrete terms.\n\n3) The methodology for the CLAS itself is the major novel contribution, and it would be nice to have more detailed analysis of this in the results. The early description can easily be misconstrued by readers as being targeted to NREM, however, on closer reading it is clear that the triggering can occur in any state. It would be useful to get a sense of how many (and proportion) of the CLAS triggers occur in wake and REM, and what effects these off-target triggers have on EEG activity. Is this what is being shown in 3b? It is unclear whether this is showing offline sleep scoring overall, or targeting. The targeting by day should also be shown, rather than a grand mean.\n\n4) Regarding the accuracy of CLAS triggering reported in Figure 3, there are several points of confusion. For example, the definition of \"sensitivity\" (as opposed to \"precision\" should be outlined here, as well as in the results, readers, like myself, will have no idea what this means. In Figure 3a, it is not clear what these individual data points are, are these days of recording, or hours, or what?\n\n5) The scoring of sleep in the various groups is inadequate. Each day should be scored, and each animal should be scored. For example, why are there only 3 data points in the sleep architecture measure in Figure 4 a-c? The sleep architecture should be shown for each and every animal, and be shown longitudinally. This would address my concern that all of the behavioral effects of CLAS (i.e., deficits in downstate CLAS rats) are driven by gradual disruption or fragmentation of NREM, or conversely by accumulated cognitive effects of disrupting NREM oscillations over days.\n\n6) In Figure 5, there are additional points that need clarifying. I am assuming this is for offline scored NREM only? why not say this in the Figure legend? In Figure 5d-f, the choice of only pt8 (omitting pt1-7) seems a bit arbitrary to me, why not include all non-training days here?\n",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "772536c2-9108-4d5c-a490-3c17629195aa",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C1",
+      "claim": "Slow waves and cognitive output have been modulated in humans by phase-targeted auditory stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Slow waves and cognitive output have been modulated in humans by phase-targeted auditory stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about human studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "124a5110-dab9-496f-8dae-523dac05090c",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C2",
+      "claim": "This study reports the successful employment of slow waves' phase-targeted closed-loop auditory stimulation (CLAS) in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the successful employment of slow waves' phase-targeted closed-loop auditory stimulation (CLAS) in rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "e854a80e-59f8-4dcb-b2ff-8875f2e8c036",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C3",
+      "claim": "CLAS specifically altered delta (slow waves) and sigma (sleep spindles) power persistently over chronic periods of stimulation without affecting 24 hr sleep-wake behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Without affecting 24 hr sleep-wake behavior, CLAS specifically altered delta (slow waves) and sigma (sleep spindles) power persistently over chronic periods of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "58ca0585-e3ba-4c13-a18d-fab5f4a10a7d",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C4",
+      "claim": "Up-phase CLAS does not elicit a significant change in behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "While up-phase CLAS does not elicit a significant change in behavioral performance, down-phase CLAS exerted a detrimental effect on overall engagement and success rate in the behavioral test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by behavioral data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "a5145c42-2bf7-4632-b30e-c20181e7fe7d",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C5",
+      "claim": "Down-phase CLAS exerted a detrimental effect on overall engagement and success rate in the behavioral test.",
+      "claim_type": "EXPLICIT",
+      "source": "While up-phase CLAS does not elicit a significant change in behavioral performance, down-phase CLAS exerted a detrimental effect on overall engagement and success rate in the behavioral test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by behavioral data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "52eb4384-ed7b-401a-8705-3363fbd4365c",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C6",
+      "claim": "Overall CLAS-dependent spectral changes were positively correlated with learning performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall CLAS-dependent spectral changes were positively correlated with learning performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by correlation data in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "a8379d3a-6630-4c41-b975-2819ce938da6",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C7",
+      "claim": "Phase-targeted CLAS of slow waves in rodents is efficient, safe, and stable over chronic experimental periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results provide proof-of-principle evidence that phase-targeted CLAS of slow waves in rodents is efficient, safe, and stable over chronic experimental periods, enabling the use of this high-specificity tool for basic and preclinical translational sleep research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "06d2a02e-1d20-4cd1-9624-8861eae6ba08",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C8",
+      "claim": "Modulation of slow wave sleep (SWS) has increasingly gained attention over recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, modulation of slow wave sleep (SWS) has increasingly gained attention over recent years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "a0b022b2-cebb-4edb-8280-2475770e0358",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C9",
+      "claim": "Tailoring novel stimulation tools to effectively optimize SWS profiles appears crucial to intervene SWS-related cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Tailoring novel stimulation tools to effectively optimize SWS profiles appears crucial to intervene SWS-related cognition (Mander et al., 2013; Papalambros et al., 2017), as well as other important brain and body processes, in both rodents and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "0d323f0a-a141-433a-8605-fcc0a3ad4e03",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C10",
+      "claim": "Auditory stimulation during SWS was successfully implemented in human subjects in laboratory-based settings.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, auditory stimulation during SWS was successfully implemented in human subjects in laboratory-based settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "157d9da8-6c01-4e23-9043-6dfa71dca2c8",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C11",
+      "claim": "Targeting ongoing slow waves in their up-phase enhanced slow oscillations during SWS, while targeting the waves' down-phase had the opposite effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting ongoing slow waves in their up-phase enhanced slow oscillations during SWS, while targeting the waves' down-phase had the opposite effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a finding from previous human studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "0235dd35-28e3-42ba-8dd0-ffba85993430",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C12",
+      "claim": "SWS is characterized by brain slow oscillatory activity in the delta-frequency range (0.5\u20134 Hz) and oscillations <1 Hz among its most distinctive features in the human electroencephalogram (EEG).",
+      "claim_type": "EXPLICIT",
+      "source": "Memory formation is one of the most intriguing sleep-dependent brain processes for which the links between SWS\u2014characterized by brain slow oscillatory activity in the delta-frequency range (0.5\u20134 Hz) and oscillations <1 Hz among its most distinctive features in the human electroencephalogram (EEG) (Timofeev, 2011)\u2014and motor learning (Fischer et al., 2002; Stickgold, 2005; Walker et al., 2002), synaptic downscaling (Tononi and Cirelli, 2014), and consolidation mechanisms (Diekelmann and Born, 2010; Rasch and Born, 2013) have been exhaustively studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "35d4933c-4977-462b-b04e-3435f33fb14b",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C13",
+      "claim": "Ngo and colleagues found enhanced performance during a paired-associates learning task in subjects undergoing up-phase auditory stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, Ngo and colleagues found enhanced performance during a paired-associates learning task in subjects undergoing up-phase auditory stimulation (Ngo et al., 2013a), and soon several other studies employing similar stimulation paradigms replicated the enhanced memory effect, although with more modest effect sizes (Leminen et al., 2017; Ong et al., 2016; Papalambros et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "2e9b8840-258e-4819-9b01-91343251c8d8",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C14",
+      "claim": "Auditory disruption of slow waves perturbing local SWS in the motor cortex attenuated the brain's SWS-dependent capacity to undergo neuroplastic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In a novel implementation of this concept, some of us found that auditory disruption of slow waves perturbing local SWS in the motor cortex attenuated the brain's SWS-dependent capacity to undergo neuroplastic changes (Fattinger et al., 2017), corroborating that SWS integrity is critical to maintain cognitive efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "ca604bda-a0ca-43eb-a8ed-0f012b394442",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C15",
+      "claim": "Some authors proposed that enhancing slow waves and spindles by auditory stimulation was insufficient to improve memory above sham.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some authors proposed that enhancing slow waves and spindles by auditory stimulation was insufficient to improve memory above sham (Cox et al., 2014; Ngo et al., 2019; Weigenand et al., 2016), suggesting that the effects of auditory stimulation on memory are moderate and highly variable inter- and intra-studies, and evidencing that a better understanding of the method is needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "68d5aaa8-7db2-4b86-bbec-f84a290c0073",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C16",
+      "claim": "The effects of auditory stimulation on memory are moderate and highly variable inter- and intra-studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some authors proposed that enhancing slow waves and spindles by auditory stimulation was insufficient to improve memory above sham (Cox et al., 2014; Ngo et al., 2019; Weigenand et al., 2016), suggesting that the effects of auditory stimulation on memory are moderate and highly variable inter- and intra-studies, and evidencing that a better understanding of the method is needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an inference from cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "56d0dd59-11f7-4089-a4b7-a6333b378c4d",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C17",
+      "claim": "Online NREM sleep staging had a mean sensitivity of 12%, indicating how strictly the staging tool identifies sustained NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, online NREM sleep staging had a mean sensitivity of 12%, indicating how strictly the staging tool identifies sustained NREM sleep, and specificity of 98%, highlighting the high rejection rate of events in disagreement with NREM characteristics (Figure 3a, see detailed methods 'EEG/EMG offline scoring and online staging validation' section).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "e93695c6-a78e-43da-bdfb-b74e6060a714",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C18",
+      "claim": "Online NREM sleep staging had a specificity of 98%, highlighting the high rejection rate of events in disagreement with NREM characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, online NREM sleep staging had a mean sensitivity of 12%, indicating how strictly the staging tool identifies sustained NREM sleep, and specificity of 98%, highlighting the high rejection rate of events in disagreement with NREM characteristics (Figure 3a, see detailed methods 'EEG/EMG offline scoring and online staging validation' section).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "64cd3ec2-8491-4efa-a5dc-af26363ceb6a",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C19",
+      "claim": "70% of epochs on average were confirmed offline as NREM sleep regarding online precision of NREM sleep staging.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding online precision of NREM sleep staging, 70% of epochs on average were confirmed offline as NREM sleep, whereas 18% were later identified as wakefulness and 2% as REM sleep (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "be0e40ee-dac6-4292-9e03-568a07cd0a31",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C20",
+      "claim": "Up-phase paradigm revealed M = 74.97\u00b0 (SD = 38.10\u00b0; Var = 12.67\u00b0) while down-phase stimulation indicated a mean target M = 280.55\u00b0 (SD = 49.67\u00b0; Var = 19.75\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "Up-phase paradigm revealed M = 74.97\u00b0 (SD = 38.10\u00b0; Var = 12.67\u00b0) while down-phase stimulation indicated a mean target M = 280.55\u00b0 (SD = 49.67\u00b0; Var = 19.75\u00b0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as measured data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "72cd2032-0db5-4975-b055-f5819ab0048f",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C21",
+      "claim": "In mock animals, onset of muted triggers was confirmed around the positive peak of the slow wave (M = 101.20\u00b0; SD = 46.89\u00b0; Var = 19.19\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "In mock animals, we confirmed onset of muted triggers around the positive peak of the slow wave (M = 101.20\u00b0; SD = 46.89\u00b0; Var = 19.19\u00b0) (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "d06a6602-0eef-487c-8a00-5f356a9861eb",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C22",
+      "claim": "Up-phase-stimulated animals received more sound triggers during NREM sleep than down-phase-stimulated subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we explored the distribution of triggers across sleep stages and observed that up-phase-stimulated animals received more sound triggers during NREM sleep than down-phase-stimulated subjects (up-phase: M = 4959, SD = 3063; down-phase: M = 3148, SD = 2719; Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "ab51545b-3c45-48ff-8629-3fe554da50cc",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C23",
+      "claim": "The proportion of triggers did not differ between stimulation groups for any of the sleep stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the proportion of triggers did not differ between stimulation groups for any of the sleep stages (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "60725472-408a-4596-a6f9-856b7a5a90a7",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C24",
+      "claim": "Neither up-phase nor down-phase stimulation disturbed total NREM amount compared to mock condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither up-phase nor down-phase stimulation disturbed total NREM amount compared to mock condition (two-way repeated measures analysis of variance [RM-ANOVA], time * condition interaction, F(32, 215) = 0.929, p=0.582, Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "e673525b-38c0-429a-9ff5-63e5ece46623",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C25",
+      "claim": "No evidence of abnormal NREM sleep fragmentation was observed in any stimulation group over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed no evidence of abnormal NREM sleep fragmentation in any stimulation group over time (RM-ANOVA, time * condition interaction, F(32, 228) = 0.830, p=0.730, Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "215a9492-6733-449e-8a16-e81d281c983b",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C26",
+      "claim": "On third day of motor training (M-T3), 24 hr EEG power spectra in NREM exhibited increased delta activity in the up-phase-stimulated group.",
+      "claim_type": "EXPLICIT",
+      "source": "On third day of motor training (M-T3), 24 hr EEG power spectra in NREM exhibited increased delta activity in the up-phase-stimulated group (Figure 4c), whereas down-phase-stimulated animals showed a trend towards decreased delta-frequency activity (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b677aea4-a1c3-43b3-82a7-a55103c33af9",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C27",
+      "claim": "Down-phase-stimulated animals showed a trend towards decreased delta-frequency activity on M-T3.",
+      "claim_type": "EXPLICIT",
+      "source": "On third day of motor training (M-T3), 24 hr EEG power spectra in NREM exhibited increased delta activity in the up-phase-stimulated group (Figure 4c), whereas down-phase-stimulated animals showed a trend towards decreased delta-frequency activity (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "984ef028-ea37-4957-b982-accddc68f9b0",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C28",
+      "claim": "Delta (***p<0.001), sigma (11\u201316 Hz, ***p<0.001), and beta (16\u201330 Hz, *p=0.045) bands were significantly increased in up-phase-stimulated subjects across the spectrum from P-T1 to M-T3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the spectrum, delta (***p<0.001), sigma (11\u201316 Hz, ***p<0.001), and beta (16\u201330 Hz, *p=0.045) bands were significantly increased in up-phase-stimulated subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with statistical significance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "f33d3d24-26ff-43f6-b8aa-aeb330b74bd3",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C29",
+      "claim": "Down-phase stimulation decreased delta (***p<0.001), alpha (8\u201311 Hz, *p=0.037), and sigma (*p=0.012) power during P-T1 \u2013 M-T3 days, collectively.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, down-phase stimulation decreased delta (***p<0.001), alpha (8\u201311 Hz, *p=0.037), and sigma (*p=0.012) power during P-T1 \u2013 M-T3 days, collectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with statistical significance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "50fbf635-2d9f-450a-80dc-4b9d67321a9d",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C30",
+      "claim": "Mock animals showed altered power in the sigma band (**p=0.002), an apparent effect of the skill learning task performed daily.",
+      "claim_type": "EXPLICIT",
+      "source": "Mock animals showed altered power in the sigma band (**p=0.002, one-sample Hotelling's T2, Figure 4f), an apparent effect of the skill learning task performed daily.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 4f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "59e8f5ff-903d-4908-a131-180cb3aca7fe",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C31",
+      "claim": "Mock animals returned to BL indices during the N-T period (p=0.672) for sigma activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was corroborated by examining sigma activity during the N-T period \u2014 4 days without motor skill training \u2014 in all three groups: mock animals returned to BL indices (p=0.672), whereas up-phase (**p=0.002) and down-phase (*p=0.028)-stimulated groups showed increased and decreased sigma activity, respectively (one-sample t-test, Figure 4g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "e824568f-398d-45ef-b162-8322fe04cf8a",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C32",
+      "claim": "Up-phase (**p=0.002) and down-phase (*p=0.028)-stimulated groups showed increased and decreased sigma activity, respectively, during the N-T period.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was corroborated by examining sigma activity during the N-T period \u2014 4 days without motor skill training \u2014 in all three groups: mock animals returned to BL indices (p=0.672), whereas up-phase (**p=0.002) and down-phase (*p=0.028)-stimulated groups showed increased and decreased sigma activity, respectively (one-sample t-test, Figure 4g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "9d44cd6b-b3a7-4f7e-b30b-6e6bc107a10b",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C33",
+      "claim": "Both up- and down-phase-stimulated animals presented relatively symmetrical spectral power during wakefulness, NREM sleep, and REM sleep on protocol day M-T3.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluation of protocol day M-T3 showed that both up- and down-phase-stimulated animals presented relatively symmetrical spectral power during wakefulness, NREM sleep, and REM sleep (Figure 4\u2014figure supplement 1a\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4\u2014figure supplement 1a\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "1a7a2a62-c33a-49e0-8b79-84d56fe185cb",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C34",
+      "claim": "Up-phase-stimulated animals consistently presented increased delta power throughout the day, with larger increases during the light phase (up to ~23% in some days).",
+      "claim_type": "EXPLICIT",
+      "source": "Up-phase-stimulated animals consistently presented increased delta power throughout the day, with larger increases during the light phase (up to ~23% in some days), an effect that persisted until the end of the protocol (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "088f6ccf-2327-4514-900a-5469b18c0ac6",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C35",
+      "claim": "Down-phase-stimulated animals exhibited reduced delta power for the majority of the time, with greater hourly decreases during the dark period, down to ~\u201317%.",
+      "claim_type": "EXPLICIT",
+      "source": "Down-phase-stimulated animals exhibited reduced delta power for the majority of the time, with greater hourly decreases during the dark period, down to ~\u201317% (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "de055abc-11b7-40bc-9baf-35676e31ed0c",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C36",
+      "claim": "In up-phase-stimulated animals, the time-course analysis of delta activity revealed significantly higher power during the hours immediately after the testing session compared to BL.",
+      "claim_type": "EXPLICIT",
+      "source": "In up-phase-stimulated animals, the time-course analysis of delta activity revealed significantly higher power during the hours immediately after the testing session compared to BL (multiple paired t-tests, corrected with Holm\u2013Sidak method for multiple comparisons; Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "32c3a377-5a85-488c-b834-8b3136781f8a",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C37",
+      "claim": "Down-phase-stimulated animals presented the largest decrease compared to BL during the hours immediately before the SPRT.",
+      "claim_type": "EXPLICIT",
+      "source": "While mock animals did not show differences during the aforementioned stimulation days compared to BL (Figure 5e), down-phase-stimulated animals presented the largest decrease compared to BL during the hours immediately before the SPRT (multiple paired t-tests, corrected with Holm\u2013Sidak method for multiple comparisons; Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "5cb0a7e0-85df-4055-8eeb-d5ef12eab5f5",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C38",
+      "claim": "Up-phase CLAS preserves the natural proportion of same-size trains of triggers, whereas down-phase CLAS prolongs the interval between triggers.",
+      "claim_type": "EXPLICIT",
+      "source": "Up-phase CLAS preserves the natural proportion of same-size trains of triggers, whereas down-phase CLAS prolongs the interval between triggers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a section heading and supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "82257cc3-cad2-4593-9fda-7cba6ce35ad4",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C39",
+      "claim": "Up-phase-stimulated animals showed no difference in proportion of trains of any size when compared to the mock group.",
+      "claim_type": "EXPLICIT",
+      "source": "Up-phase-stimulated animals showed no difference in proportion of trains of any size when compared to the mock group (Figure 6a); however, they overall received more triggers per day (M = 5862, SD = 2214).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "f1be72ca-979c-458f-8a4e-4ff6f4891fbf",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C40",
+      "claim": "Down-phase-stimulated subjects presented a different pattern of stimulation (two-way ANOVA, condition * train size interaction, F(8, 80) = 6.72, ***p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, down-phase-stimulated subjects presented a different pattern of stimulation (two-way ANOVA, condition * train size interaction, F(8, 80) = 6.72, ***p<0.001, Figure 6a), with significant higher rate of single triggers (***p<0.001, ~58% of all triggers in NREM per 24 hr, M = 2462, SD = 1686) and less trains of two triggers (*p=0.020), hinting on the disruptive effects of down-phase targeting on slow waves.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "50cbc4f8-6345-48f0-8186-941a5803fdf9",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C41",
+      "claim": "Up-phase targeting preserved the proportion of same-length non-stimulated periods seen in the analysis of muted-sound triggers in non-stimulated subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating these results, the analysis of ISIs (two-way ANOVA, condition * ISI interaction, F(16, 144) = 1.80, *p=0.037) showed that up-phase targeting preserved the proportion of same-length non-stimulated periods seen in the analysis of muted-sound triggers in non-stimulated subjects, whereas down-phase stimulation provided a distribution of triggers containing significantly less density of ISIs < 2 s (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "345e063f-d795-4ea3-9b08-84c9beb84c02",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C42",
+      "claim": "Up-phase CLAS mildly entrains EEG slow waves, whereas stimulation during the down-phase disturbs it.",
+      "claim_type": "EXPLICIT",
+      "source": "Up-phase CLAS mildly entrains EEG slow waves, whereas stimulation during the down-phase disturbs it",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a section heading and supported by data in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "4427480a-3202-4a1f-a81b-ba0ba6652d11",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C43",
+      "claim": "Analysis of event-related potentials revealed a small slow-wave cycle following the endogenous cycle that triggered the stimulation in up-phase CLAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of event-related potentials (ERPs, filtered in the 0.5\u20132 Hz frequency band), that is, all waveforms receiving triggers during NREM, revealed a small slow-wave cycle following the endogenous cycle that triggered the stimulation in up-phase CLAS (Figure 6\u2014figure supplement 1a), while down-phase targeting appeared to completely disrupt the slow-wave negative half-cycle (Figure 6\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 6\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "f0a14397-8e6f-4a4d-bbf7-e9a33a59d665",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C44",
+      "claim": "Down-phase targeting appeared to completely disrupt the slow-wave negative half-cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of event-related potentials (ERPs, filtered in the 0.5\u20132 Hz frequency band), that is, all waveforms receiving triggers during NREM, revealed a small slow-wave cycle following the endogenous cycle that triggered the stimulation in up-phase CLAS (Figure 6\u2014figure supplement 1a), while down-phase targeting appeared to completely disrupt the slow-wave negative half-cycle (Figure 6\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 6\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b6ed8713-b936-437b-8f45-bc914d1e2d64",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C45",
+      "claim": "Down-phase-stimulated subjects show significantly worse learning progression when contrasted with mock subjects (SR: \u03a72(2, N = 21) = 17.50), ***p<0.001; Tukey post-hoc comparison up * mock: p=0.220, down * mock: *p=0.044).",
+      "claim_type": "EXPLICIT",
+      "source": "Between-group comparison of success rate (SR, successes per total attempts) and fail rate (FR, fails per total attempts) demonstrated that down-phase-stimulated subjects present a significantly worse learning progression when contrasted with mock subjects (SR: \u03a72(2, N = 21) = 17.50), ***p<0.001; Tukey post-hoc comparison up * mock: p=0.220, down * mock: *p=0.044, Figure 7b; FR: \u03a72(2, N = 21) = 18.34, ***p<0.001; Tukey post-hoc comparison up * mock: p=0.155, down * mock: \u2020p=0.056, Figure 7c.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "258f3eaf-cfed-4338-a070-5bb134330543",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C46",
+      "claim": "Up-phase-stimulated animals show daily intra-session improvements, while down-phase-stimulated animals attempt less towards the end of the session.",
+      "claim_type": "EXPLICIT",
+      "source": "Up-phase-stimulated animals show daily intra-session improvements, while down-phase-stimulated animals attempt less towards the end of the session",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a section heading and supported by data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "048560de-2a4b-427f-8705-510260186638",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C47",
+      "claim": "Down-phase-stimulated animals attempted significantly less towards the end of the session (first-bin * last-bin, *p=0.022) and significantly less than control animals during the last bin (down * mock, *p=0.037).",
+      "claim_type": "EXPLICIT",
+      "source": "Compartmentalizing each training session into 12 min bins (or 20 pellets, whichever comes first) revealed that up-phase-stimulated and mock subjects maintained the same rate of attempted grasps across bins (RM-ANOVA, condition * bin interaction, F(2, 18) = 4.03, *p=0.036, Figure 8a), while down-phase-stimulated animals attempted significantly less towards the end of the session (first-bin * last-bin, *p=0.022) and significantly less than control animals during the last bin (down * mock, *p=0.037).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "dd576253-8330-47ac-80be-fbbfabfcda5e",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C48",
+      "claim": "The magnitude of changes in the delta-frequency band was moderately correlated with the number of delivered stimuli, both for up- (Spearman's rho = 0.43, *p=0.022) and down-phase-stimulated animals (Spearman's rho = \u20130.41, *p=0.026).",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether the number of sound triggers influences the extent of delta power modulation, we extracted the number of triggers over each 24 hr period during the M-T phase for all stimulated animals. The magnitude of changes in the delta-frequency band was moderately correlated with the number of delivered stimuli, both for up- (Spearman's rho = 0.43, *p=0.022, Figure 9a) and down-phase-stimulated animals (Spearman's rho = \u20130.41, *p=0.026, Figure 9a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 9a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "9ecb9204-23e3-49a8-b936-fd7969bf2452",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C49",
+      "claim": "A significant positive association was found between 24 hr changes in delta and sigma power (Spearman's rho = 0.57, **p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a significant positive association between 24 hr changes in delta and sigma power (Spearman's rho = 0.57, **p=0.004, Figure 9b), reflecting the impact of CLAS on the two most dominant features during NREM sleep.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 9b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "d9ce7326-72e1-439b-94c3-f2298a1b39cf",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C50",
+      "claim": "Subsequent analysis between 24 hr average delta change (all training-phase days condensed) and SR at the end of the training phase revealed a moderate positive association between modulation of delta activity and SPRT performance (Spearman's rho = 0.41, *p=0.034).",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent analysis between 24 hr average delta change (all training-phase days condensed) and SR at the end of the training phase revealed a moderate positive association between modulation of delta activity and SPRT performance (Spearman's rho = 0.41, *p=0.034, Figure 9c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 9c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "87b855b3-b029-4595-9798-17773bb70e43",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C51",
+      "claim": "Sigma activity changes positively correlate with SR scores (Spearman's rho = 0.53, *p=0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, sigma activity changes positively correlate with SR scores (Spearman's rho = 0.53, *p=0.007, Figure 9d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical analysis and supported by data in Figure 9d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "586ef70c-7fd3-4e21-b693-1342c1cc37c7",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C52",
+      "claim": "This study observed a mild but specific average increase of 6.9% (up to 23% during the light period) in delta power per 24 hr on stimulation days compared to BL.",
+      "claim_type": "EXPLICIT",
+      "source": "With this paradigm, we delivered auditory triggers to healthy rats continuously over a period of 16 days. We observed a mild but specific average increase of 6.9% (up to 23% during the light period) in delta power per 24 hr on stimulation days compared to BL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "1234f43c-e593-402c-95b0-b06d5d5952f1",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C53",
+      "claim": "This effect was stable over the entire stimulation period evaluated, with no signs of decay nor facilitation effects over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was stable over the entire stimulation period evaluated, with no signs of decay nor facilitation effects over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "19484f28-76a7-4b24-bb62-b13eb84fdf3a",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C54",
+      "claim": "Reverse effects (M = \u20134.5%, down to \u201317.5% by the end of the dark period) were observed during down-phase stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reverse effects (M = \u20134.5%, down to \u201317.5% by the end of the dark period) were observed during down-phase stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "74499582-6219-435c-a1ac-0faed78ea3dc",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C55",
+      "claim": "Application of CLAS in human subjects has often failed to demonstrate an overall inter-night effect (unperturbed night vs. stimulated night) of stimulation on power spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, application of CLAS in human subjects has often failed to demonstrate an overall inter-night effect (unperturbed night vs. stimulated night) of stimulation on power spectra (Papalambros et al., 2017; Papalambros et al., 2019), while comparison between same-night ON- and OFF-stimulation windows yielded significant stimulation effects that positively correlated with subsequent memory performance (Ong et al., 2016; Papalambros et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "397a809b-dc33-4434-bc2a-10dd25d49924",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C56",
+      "claim": "This study provides first evidence of a long-term effect when comparing unperturbed 24 hr (BL) vs. stimulated 24 hr in a paradigm of continuous stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we provide first evidence of a long-term effect when comparing unperturbed 24 hr (BL) vs. stimulated 24 hr in a paradigm of continuous stimulation, somewhat challenging the proposition that the effect of CLAS is mediated by qualitative transient reorganization of SWA rather than of a general SWS or SWA enhancement (Papalambros et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a key finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "e7bb1178-71b9-4ca4-b7aa-9caf72ec002a",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C57",
+      "claim": "Chronic sleep deprivation studies in rodents demonstrate a comparable effect, suggesting that strong homeostatic compensatory mechanisms may be at play.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, chronic sleep deprivation studies in rodents demonstrate a comparable effect, suggesting that strong homeostatic compensatory mechanisms may be at play (Kim et al., 2020; Leemburg et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "133d17dd-b9dd-4f77-a631-3c11ac131ac7",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C58",
+      "claim": "The CLAS paradigm introduced here produces stable sleep modulation effects over time and successfully replicates the timing accuracy so far obtained in some methods of human CLAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the CLAS paradigm introduced here produces stable sleep modulation effects over time and successfully replicates the timing accuracy so far obtained in some methods of human CLAS (Fattinger et al., 2019; Papalambros et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "1432a4aa-6dcd-46dd-a091-0f0436a2b076",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C59",
+      "claim": "Like in humans studies, this study observed an additional modulatory effect of CLAS on power in the sigma-frequency band in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Also like in humans studies (Henin et al., 2019; Krugliakova et al., 2020; Papalambros et al., 2017), we observed an additional modulatory effect of CLAS on power in the sigma-frequency band in rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "f335d85d-487f-4295-bba4-a80837fefc6c",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C60",
+      "claim": "Sigma modulation was, just like CLAS-dependent delta changes, phase-target-specific and steady over the 16 days of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Sigma modulation was, just like CLAS-dependent delta changes, phase-target-specific and steady over the 16 days of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "e5c1ef82-de0f-45ac-b5ef-0e79c107d4a3",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C61",
+      "claim": "Down-phase-stimulated animals showed an increased number of single triggers, decreased proportion of trains of two triggers, and decreased density of <2 s ISIs, in contrast to maintained levels in the up-phase-stimulated group.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to mock, down-phase-stimulated animals showed an increased number of single triggers, decreased proportion of trains of two triggers, and decreased density of <2 s ISIs, in contrast to maintained levels in the up-phase-stimulated group, potentially indicating that down-phase CLAS has disarrayed the natural pattern of delta wave trains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "93fbe8a8-9968-48ef-8d90-7e1a50a814c2",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C62",
+      "claim": "Analysis of ERPs indicated the occurrence of a post-trigger slow wave when targeting 60\u00b0, whereas a post-trigger pattern disruption arises from 180\u00b0 target stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the apparent preservation of the slow-wave pattern with up-phase CLAS, and opposite effect with down-phase CLAS, analysis of ERPs indicated the occurrence of a post-trigger slow wave when targeting 60\u00b0, whereas a post-trigger pattern disruption arises from 180\u00b0 target stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "3c6dfe5e-c282-40e2-9eb6-fbf2712fb40f",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C63",
+      "claim": "CLAS of rodent slow waves may be altering the natural slow waves' pattern rather than significantly affecting their amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that CLAS of rodent slow waves may be altering the natural slow waves' pattern rather than significantly affecting their amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an inference from the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "167d4820-7e84-41c4-8555-3d544704f9da",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C64",
+      "claim": "The mean delta activity change in motor-training days 1\u20134 in relation to BL correlated positively with SR on motor-training day 4 in the SPRT.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the mean delta activity change in motor-training days 1\u20134 in relation to BL correlated positively with SR on motor-training day 4 in the SPRT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "e78488cc-e457-453f-aa1c-340a6f8e5c43",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C65",
+      "claim": "Delta activity changes during motor-training days 1\u20134 are actually driven by CLAS through the positive correlation found between the number of triggers and delta power changes in up- and down-phase groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the positive correlation found between the number of triggers\u2014that is, extent of closed-loop auditory stimuli delivered\u2014and delta power changes in up- and down-phase groups, we confirmed indeed that delta activity changes during motor-training days 1\u20134 are actually driven by CLAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an inference from the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "9383e9a5-74e6-4164-baec-165c2e57e260",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C66",
+      "claim": "CLAS-dependent delta activity levels drive next-day performance in healthy rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results suggest that CLAS-dependent delta activity levels drive next-day performance in healthy rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an inference from the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b703923a-d343-4991-84eb-07fb921d1bf4",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C67",
+      "claim": "The level of proficiency achieved at motor-training day 4 was maintained in all groups after 5 days without training.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that the level of proficiency achieved at motor-training day 4 was maintained in all groups after 5 days without training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "4abbca12-4c6c-42eb-ab84-e7611ce9761d",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C68",
+      "claim": "CLAS modulated sleep-dependent skill acquisition and retention only immediately following a motor-training session.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that CLAS modulated sleep-dependent skill acquisition and retention only immediately following a motor-training session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an inference from the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "59942957-4f8c-40ba-acdc-3d844967d7dc",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C69",
+      "claim": "Without prior active task engagement or performance saturation, up-phase CLAS per se seems insufficient to induce a significant performance enhancement at the present conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, without prior active task engagement or performance saturation (Kvint et al., 2011), up-phase CLAS per se seems insufficient to induce a significant performance enhancement at the present conditions, whereas there was no evidence of skill decay induced by down-phase CLAS either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an inference from the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "40010f89-c73c-4c92-a664-35a2f466c311",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C70",
+      "claim": "There was no evidence of skill decay induced by down-phase CLAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, without prior active task engagement or performance saturation (Kvint et al., 2011), up-phase CLAS per se seems insufficient to induce a significant performance enhancement at the present conditions, whereas there was no evidence of skill decay induced by down-phase CLAS either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "790880a2-81cc-4657-b037-2f25c800b02a",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C71",
+      "claim": "Targeting slow waves with CLAS might have altered (up-: increased; down-: decreased) the normal recovery process after learning during wakefulness in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep-mediated synaptic downscaling, or recovery, after learning has been deemed critical to maintaining behavioral performance (Fattinger et al., 2017). Thus, it is conceivable that targeting slow waves with CLAS might have altered (up-: increased; down-: decreased) the normal recovery process after learning during wakefulness in our rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a speculative explanation with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "519dcc63-7fb4-45f7-bbb7-f361be48c4a2",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C72",
+      "claim": "The number of attempts in the down-phase group seems lower than in the other groups at motor-training day 1, potentially indicating that before any memory consolidation process took place, these animals already performed worse than their counterparts did.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this argument, we observed that the number of attempts in the down-phase group seems lower than in the other groups at motor-training day 1, potentially indicating that before any memory consolidation process took place, these animals already performed worse than their counterparts did.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an observation supporting a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "a3094256-e23c-44d3-bd21-27bf69849083",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C73",
+      "claim": "Memory consolidation, a process at least partially mediated by spindles in which specific synapses are strengthened, is also potentially sensitive to CLAS.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, memory consolidation, a process at least partially mediated by spindles (Diekelmann and Born, 2010) in which specific synapses are strengthened, is also potentially sensitive to CLAS (Krugliakova et al., 2020; Ngo et al., 2013a; Papalambros et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "fb3a0280-d85b-420d-93f4-337d928181e0",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C74",
+      "claim": "Positive correlations were observed between sigma\u2014potentially a proxy for spindles\u2014during motor-training days 1\u20134 and SR on motor-training day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we did observe positive correlations between sigma\u2014potentially a proxy for spindles (Holz et al., 2012)\u2014during motor-training days 1\u20134 and SR on motor-training day 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "11083e9a-3655-425d-9376-d44270dfb6c0",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C75",
+      "claim": "The two theories (synaptic downscaling and memory consolidation) are certainly not mutually exclusive and sleep-dependent memory benefit could well complementarily rely on them both.",
+      "claim_type": "EXPLICIT",
+      "source": "The two theories, however, are certainly not mutually exclusive (Klinzing et al., 2019; Wilckens et al., 2018) and sleep-dependent memory benefit could well complementarily rely on them both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b088317d-4470-46bd-83d0-a2c0af6c4ba3",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C76",
+      "claim": "Distinct local network dynamics determined by paw dexterity may have potentially affected closed-loop stimulation features in an uncontrolled manner in left- or right-pawed experimental subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as we solely tracked the left-hemisphere EEG derivation for CLAS, distinct local network dynamics determined by paw dexterity (Hanlon et al., 2009; Vyazovskiy and Tobler, 2008) may have potentially affected closed-loop stimulation features in an uncontrolled manner in left- or right-pawed experimental subjects and contributed synergistically or in opposition to the CLAS modulatory effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a limitation with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "657e1f67-20b2-4dc9-9e0d-bfaed29d4529",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C77",
+      "claim": "Animals in all groups present distinctively decreased delta power levels in the few hours before the behavioral test, likely attributable to food anticipation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, in our temporal analysis of the delta power changes per 24 hr, we observed a clear pattern showing that animals in all groups present distinctively decreased delta power levels in the few hours before the behavioral test. Whether this activity pattern, likely attributable to food anticipation (Northeast et al., 2019), might have compounded with our CLAS-specific delta power findings remains to be determined and, ideally, further controlled in future experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a limitation with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "75604ac0-9113-49f7-95a3-25c53dbccaed",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C78",
+      "claim": "The broad range achieved by the phase-tracking algorithm might have contributed to the observed variable effects of CLAS across animals at the ERP level, ultimately leading to high interindividual variability on delta activity modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in relation to the lack of effect of phase-targeted rodent CLAS on ERP amplitudes, as others demonstrated earlier, the broad range achieved by our phase-tracking algorithm might have contributed to the observed variable effects of CLAS across animals at the ERP level, ultimately leading to high interindividual variability on delta activity modulation, result that agrees with previous studies using non-adaptive prediction algorithms (Cox et al., 2014; Fattinger et al., 2017; Fattinger et al., 2019; Ngo et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a limitation with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "0749df4e-dec6-4c13-ad3f-e86a5cfddbb8",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C79",
+      "claim": "This report presents the first successful implementation of phase-targeted CLAS in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our report presents the first successful implementation of phase-targeted CLAS in rats, demonstrating that phase-targeted continuous chronic CLAS is feasible, specific, and effective in rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b0285932-b077-4664-9c6d-dc8fed9ce19a",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C80",
+      "claim": "Phase-targeted continuous chronic CLAS is feasible, specific, and effective in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our report presents the first successful implementation of phase-targeted CLAS in rats, demonstrating that phase-targeted continuous chronic CLAS is feasible, specific, and effective in rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "15ec9dfc-db95-41ac-8ca6-ca7c7cd9a855",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C81",
+      "claim": "This novel tool provides successful grounds to not only further study the substrate mechanisms by which CLAS affects SWA and associated outcomes, such as cognition, but to additionally assess its effect on models of brains disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this novel tool provides successful grounds to not only further study the substrate mechanisms by which CLAS affects SWA and associated outcomes, such as cognition, but to additionally assess its effect on models of brains disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b18cfcf1-14ab-4afb-aa19-20d342fca378",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C82",
+      "claim": "CLAS of slow waves in rodents may help pave the way to the clinical implementation of this novel technique in the context of brain/body disorders that may be targeted with sleep-based therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, CLAS of slow waves in rodents may help pave the way to the clinical implementation of this novel technique in the context of brain/body disorders that may be targeted with sleep-based therapeutics (Arora and Taheri, 2015; Cook et al., 2020; Fung et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a conclusion with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "14acde49-f046-4e63-bd32-8e517bfceba0",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C83",
+      "claim": "23 young adult male Sprague\u2013Dawley rats weighing 200\u2013220 g were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To develop this tool, we used 23 young adult male Sprague\u2013Dawley rats (Charles River, Italy) weighing 200\u2013220 g and group-housed them in standard IVC cages (T2000) prior to interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "63cf7dcc-c5dd-4308-ae97-e3af0eb1ddab",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C84",
+      "claim": "Electrodes for continuous recording of EEG/EMG were surgically implanted in all animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In all animals, we surgically implanted electrodes for continuous recording of EEG/EMG as described previously (B\u00fcchele et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "c9f88fda-d379-4899-a691-314dc17eb0b5",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C85",
+      "claim": "All procedures were approved by the veterinary office of the Canton Zurich (license ZH231/2015) and conducted in accordance with national and institutional regulations for care and use of laboratory animals.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the veterinary office of the Canton Zurich (license ZH231/2015) and conducted in accordance with national and institutional regulations for care and use of laboratory animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "6d4f2795-737f-46c2-8667-d82ab033d378",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C86",
+      "claim": "The study opted to stimulate at 35 dB based on real-time video and posterior EEG/EMG inspection as none of the animals showed any perturbation during sustained NREM sleep under this volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a series of small studies in a cohort of 10 animals (five animals under up-phase and five under down-phase CLAS) to investigate the most adequate set of stimulation parameters. Briefly, we opted to stimulate at 35 dB (range tested: 50 dB, 45 dB, 40 dB, and 35 dB) based on real-time video and posterior EEG/EMG inspection as none of the animals showed any perturbation during sustained NREM sleep under this volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "e54fd710-aece-4a41-b4d7-30e971c5372b",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C87",
+      "claim": "60\u00b0 was selected for up-phase and 180\u00b0 for down-phase stimulation based on literature and considering average delay from detection to trigger of 29.30 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on literature (Fattinger et al., 2017; Ngo et al., 2013a), and considering average delay from detection to trigger of 29.30 ms, we selected 60\u00b0 for up-phase and 180\u00b0 for down-phase stimulation (we defined slow wave's 0\u00b0 as the rising zero-crossing, 90\u00b0 to the positive peak, and 270\u00b0 to the slow-wave trough).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b7dbbfe7-7c7f-4647-bfe3-fd9c9a04f403",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C88",
+      "claim": "30 ms of stimulus duration was determined to overlap with the ongoing slow wave proportionally\u2014slow oscillatory activity peaks at 1.35 Hz in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase-target CLAS in humans typically uses 50 ms stimulus duration for a dominant slow oscillatory component of 0.8 Hz. Therefore, we determined 30 ms of stimulus duration to overlap with the ongoing slow wave proportionally\u2014slow oscillatory activity peaks at 1.35 Hz in rats (M\u00f6lle et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "dba0352d-0677-4c5b-a542-0ecd90ccb327",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "claim_id": "C89",
+      "claim": "Differences between subjects contribute the most to the variability seen during closed-loop auditory stimulation (CLAS).",
+      "claim_type": "EXPLICIT",
+      "source": "Differences between subjects contribute the most to the variability seen during closed-loop auditory stimulation (CLAS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "951cf585-1bfb-4cce-9777-c92d3cbb1cdd",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The online NREM sleep staging system achieved 12% sensitivity, 98% specificity, and 70% precision, with phase detection accurately targeting up-phase (M=74.97\u00b0) and down-phase (M=280.55\u00b0) stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 provide comprehensive validation of the CLAS technical implementation. The sensitivity, specificity, and precision metrics (C17-C19) are clearly defined and measured, and phase targeting accuracy (C20-C21) is quantified with appropriate statistical descriptors. These technical validation results are essential for establishing the reliability of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "f0e74637-e686-4488-8e72-7a1084af0e3b",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CLAS did not disturb total NREM sleep amount or cause abnormal sleep fragmentation across any stimulation group over the 16-day protocol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 demonstrate that CLAS preserved normal sleep architecture using appropriate statistical tests (RM-ANOVA with reported F-statistics and p-values). This is a critical safety validation showing the method does not disrupt basic sleep homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "3eac7c05-68c5-4a7c-a409-436b6649473d",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Up-phase CLAS increased delta power by an average of 6.9% (up to 23%), while down-phase CLAS decreased it by 4.5% (down to -17.5%), with effects remaining stable over 16 days. Both conditions also modulated sigma power in a phase-specific manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 and C52-C54 collectively demonstrate robust, phase-specific, and sustained modulation of delta and sigma power. Statistical significance is reported with appropriate tests (one-sample Hotelling's T2, t-tests), effect sizes are quantified, and temporal stability is documented. The bidirectional effects support the mechanistic hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "4f72a50d-9eb0-4378-9b71-8f5f68f104f2",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Up-phase stimulation consistently increased delta power throughout the day with larger increases during the light phase, while down-phase stimulation reduced delta power with greater decreases during the dark period. Time-course analysis revealed specific temporal patterns relative to behavioral testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 provide detailed temporal characterization of delta power changes with appropriate statistical corrections (Holm-Sidak). The hourly resolution analysis and relationship to circadian phase strengthen the findings, though the authors acknowledge potential confounding from food anticipation (C77).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "11c9cc1e-9ae6-4797-9771-7be6fe7349d0",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Up-phase CLAS preserved the natural proportion of trigger trains and interstimulus intervals, while down-phase CLAS showed increased single triggers and decreased trains of two triggers, suggesting disruption of natural slow-wave patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 demonstrate differential effects on slow-wave train patterns using appropriate statistical tests (two-way ANOVA). The findings provide mechanistic insight into how CLAS affects slow-wave organization, though the interpretation relies on indirect measures of slow-wave trains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "1294e35c-b5a4-4e5f-a8c8-779b3a2ad367",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Event-related potential analysis revealed that up-phase CLAS mildly entrained slow waves with a post-trigger slow-wave cycle, while down-phase CLAS disrupted the slow-wave negative half-cycle, suggesting CLAS alters slow-wave patterns rather than amplitudes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C44 and C62-C63 describe ERP patterns, but the analysis lacks statistical testing of amplitude differences (C43-C44 note trends with p=0.065 and p=0.058). The interpretation that CLAS alters patterns rather than amplitudes (C63) is reasonable but would benefit from more rigorous quantification and statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b5b520cc-764b-4635-b004-0f80e78e3a88",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Down-phase CLAS significantly impaired learning performance (success rate and engagement) in the single-pellet reaching task, while up-phase CLAS did not significantly alter performance compared to mock controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C45-C47 demonstrate behavioral effects with appropriate statistical tests (chi-square, RM-ANOVA, post-hoc comparisons). The detrimental effect of down-phase stimulation is well-supported, though the lack of enhancement with up-phase stimulation is discussed as potentially requiring task saturation (C69).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "f4f7f129-f741-4464-9866-66ce8b6de718",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Delta power changes correlated positively with the number of triggers delivered, and both delta and sigma power changes positively correlated with learning performance (success rate), suggesting CLAS-dependent delta activity drives behavioral outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 and C64-C66 establish correlational relationships using appropriate non-parametric tests (Spearman's rho) with significant p-values. The correlations support a mechanistic link between CLAS-induced spectral changes and behavior, though causality cannot be definitively established from correlational data alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "571e4711-dc8e-4d58-aec2-110a21a2bc66",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Motor skill proficiency was maintained after 5 days without training in all groups, suggesting CLAS modulated skill acquisition and retention only immediately following training sessions, with up-phase CLAS insufficient to enhance performance without prior task engagement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 describe retention effects and limitations of the intervention. The findings are supported by the data showing maintained performance at LTM testing, though the interpretation involves some speculation about mechanisms (C68-C69). The lack of skill decay with down-phase CLAS (C70) is an important negative finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "08e3c8e3-cc0d-448f-b12f-81b96901187c",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Up-phase-stimulated animals received more sound triggers during NREM sleep than down-phase animals, but the proportion of triggers across sleep stages did not differ between groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 document differences in absolute trigger numbers but not proportions across sleep stages. This is an important methodological observation showing that while total trigger delivery differed, the relative targeting across vigilance states was consistent, supporting the specificity of the online staging algorithm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "8e1e0b03-660e-4cc2-9a74-13b1d724f0db",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both up- and down-phase-stimulated animals showed relatively symmetrical spectral power across hemispheres during wakefulness, NREM, and REM sleep on protocol day M-T3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 addresses potential interhemispheric asymmetries from unilateral targeting. The finding of relative symmetry is supported by Figure 4\u2014figure supplement 1, though the authors acknowledge potential confounding from paw preference (C76). This is an important control analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "61bd3daa-81c7-4253-98a7-35c20ef162dc",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "This study represents the first successful implementation of phase-targeted CLAS in rats, demonstrating that the method is feasible, specific, and effective in rodents over chronic experimental periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C7, C79-C80 state the novelty and overall success of the implementation. These claims are supported by the collective evidence from technical validation (C17-C21), spectral modulation (C26-C37), and behavioral effects (C45-C51). The characterization as 'first' implementation in rats appears accurate based on the literature review.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "1188f2a3-6300-40b1-a788-754c312574fc",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This study provides first evidence of long-term 24-hour effects of CLAS in a continuous stimulation paradigm, contrasting with human studies that typically show effects only in same-night ON/OFF comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 contextualize the findings relative to human CLAS literature. The comparison is appropriately cited and the claim of 'first evidence' of 24-hour effects appears justified. The discussion of homeostatic mechanisms (C57) provides reasonable interpretation, though remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "6c008977-0315-42d6-aced-7e56bf5420eb",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CLAS modulated sigma-frequency power in rats in a phase-target-specific manner that remained steady over 16 days, similar to effects observed in human studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 establish that sigma modulation in rats parallels human findings, with appropriate citations. The phase-specificity and temporal stability are well-documented in the results (C28-C32), making this a solid translational finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "3cdd30dd-07cd-45d3-a437-43a8473cf0aa",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Down-phase-stimulated animals showed altered trigger patterns (increased single triggers, decreased trains of two triggers, decreased short ISIs) compared to maintained patterns in up-phase animals, suggesting disruption of natural delta wave trains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 summarizes the trigger pattern analysis from C38-C41. The interpretation is reasonable given the data, though it relies on indirect inference about slow-wave train disruption. The finding is mechanistically important for understanding how down-phase stimulation affects sleep architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b4bae622-ca57-42c8-855a-4c6d83254120",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CLAS may have altered sleep-dependent synaptic downscaling and/or memory consolidation processes, with both mechanisms potentially contributing complementarily to the observed behavioral effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C75 propose mechanistic explanations for behavioral effects, invoking synaptic downscaling and memory consolidation theories. While the correlations with sigma power (C74) provide some support, these claims are largely speculative (marked as SPECULATION in evidence_type). The discussion appropriately acknowledges that mechanisms are not mutually exclusive (C75).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "6038374b-e2f0-4937-9288-6243db486d2d",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Several limitations were identified: paw preference may have affected CLAS features in an uncontrolled manner, food anticipation may have confounded delta power findings, and broad phase-tracking range may have contributed to interindividual variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 acknowledge important limitations with appropriate citations. These are honest assessments of potential confounds that could affect interpretation. The acknowledgment of high interindividual variability (C78, C89) is consistent with Table 1 data showing significant between-subject variance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "43a16973-adf6-4f8c-857e-202f9dc37d01",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "This CLAS tool provides grounds for studying mechanisms of slow-wave modulation and cognition, and may facilitate clinical implementation for brain/body disorders targeted with sleep-based therapeutics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C82 discuss future applications and translational potential. While the successful implementation supports these possibilities, the claims about clinical translation (C82) are speculative. The tool's utility for mechanistic studies (C81) is better supported by the demonstrated technical capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "3851696f-374c-4a6f-b3b6-b3e465d54bf7",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study used 23 male Sprague-Dawley rats with surgically implanted EEG/EMG electrodes, with stimulation parameters (35 dB, 60\u00b0/180\u00b0 phase targets, 30 ms duration) determined through pilot studies and based on rat slow-wave characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 describe methodological details that are clearly stated and appropriately justified with citations. The parameter selection is explained with reference to pilot data and species-specific physiology (rat slow oscillations at 1.35 Hz). Ethical approval is documented (C85).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "b4445b9d-8579-4359-9b0c-fa5b4835774b",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Interindividual differences contribute most to the variability observed during CLAS, as shown in Table 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is supported by Table 1 data showing significant between-subject variance (F-tests with p<0.001 for up-phase and down-phase groups) but non-significant longitudinal variance. This is an important observation for understanding the sources of variability in CLAS effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    },
+    {
+      "id": "5232958c-be0e-4d63-ba4d-5efea97ef8de",
+      "content_id": "7e9a5e0a-e5c8-4fad-a2f7-5a572b3c600f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background context establishes that slow-wave sleep modulation has gained attention, auditory stimulation has been implemented in humans with phase-specific effects, and memory effects have been variable across studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C8-C16 provide literature context with appropriate citations. These background claims accurately represent the state of the field and motivate the current study. The acknowledgment of variability in human studies (C15-C16) is important for contextualizing the need for animal models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:05.476291Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "56d0dd59-11f7-4089-a4b7-a6333b378c4d",
+      "result_id": "951cf585-1bfb-4cce-9777-c92d3cbb1cdd"
+    },
+    {
+      "claim_id": "e93695c6-a78e-43da-bdfb-b74e6060a714",
+      "result_id": "951cf585-1bfb-4cce-9777-c92d3cbb1cdd"
+    },
+    {
+      "claim_id": "64cd3ec2-8491-4efa-a5dc-af26363ceb6a",
+      "result_id": "951cf585-1bfb-4cce-9777-c92d3cbb1cdd"
+    },
+    {
+      "claim_id": "be0e40ee-dac6-4292-9e03-568a07cd0a31",
+      "result_id": "951cf585-1bfb-4cce-9777-c92d3cbb1cdd"
+    },
+    {
+      "claim_id": "72cd2032-0db5-4975-b055-f5819ab0048f",
+      "result_id": "951cf585-1bfb-4cce-9777-c92d3cbb1cdd"
+    },
+    {
+      "claim_id": "60725472-408a-4596-a6f9-856b7a5a90a7",
+      "result_id": "f0e74637-e686-4488-8e72-7a1084af0e3b"
+    },
+    {
+      "claim_id": "e673525b-38c0-429a-9ff5-63e5ece46623",
+      "result_id": "f0e74637-e686-4488-8e72-7a1084af0e3b"
+    },
+    {
+      "claim_id": "215a9492-6733-449e-8a16-e81d281c983b",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "b677aea4-a1c3-43b3-82a7-a55103c33af9",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "984ef028-ea37-4957-b982-accddc68f9b0",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "f33d3d24-26ff-43f6-b8aa-aeb330b74bd3",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "50fbf635-2d9f-450a-80dc-4b9d67321a9d",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "59e8f5ff-903d-4908-a131-180cb3aca7fe",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "e824568f-398d-45ef-b162-8322fe04cf8a",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "586ef70c-7fd3-4e21-b693-1342c1cc37c7",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "1234f43c-e593-402c-95b0-b06d5d5952f1",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "19484f28-76a7-4b24-bb62-b13eb84fdf3a",
+      "result_id": "3eac7c05-68c5-4a7c-a409-436b6649473d"
+    },
+    {
+      "claim_id": "1a7a2a62-c33a-49e0-8b79-84d56fe185cb",
+      "result_id": "4f72a50d-9eb0-4378-9b71-8f5f68f104f2"
+    },
+    {
+      "claim_id": "088f6ccf-2327-4514-900a-5469b18c0ac6",
+      "result_id": "4f72a50d-9eb0-4378-9b71-8f5f68f104f2"
+    },
+    {
+      "claim_id": "de055abc-11b7-40bc-9baf-35676e31ed0c",
+      "result_id": "4f72a50d-9eb0-4378-9b71-8f5f68f104f2"
+    },
+    {
+      "claim_id": "32c3a377-5a85-488c-b834-8b3136781f8a",
+      "result_id": "4f72a50d-9eb0-4378-9b71-8f5f68f104f2"
+    },
+    {
+      "claim_id": "5cb0a7e0-85df-4055-8eeb-d5ef12eab5f5",
+      "result_id": "11c9cc1e-9ae6-4797-9771-7be6fe7349d0"
+    },
+    {
+      "claim_id": "82257cc3-cad2-4593-9fda-7cba6ce35ad4",
+      "result_id": "11c9cc1e-9ae6-4797-9771-7be6fe7349d0"
+    },
+    {
+      "claim_id": "f1be72ca-979c-458f-8a4e-4ff6f4891fbf",
+      "result_id": "11c9cc1e-9ae6-4797-9771-7be6fe7349d0"
+    },
+    {
+      "claim_id": "50cbc4f8-6345-48f0-8186-941a5803fdf9",
+      "result_id": "11c9cc1e-9ae6-4797-9771-7be6fe7349d0"
+    },
+    {
+      "claim_id": "345e063f-d795-4ea3-9b08-84c9beb84c02",
+      "result_id": "1294e35c-b5a4-4e5f-a8c8-779b3a2ad367"
+    },
+    {
+      "claim_id": "4427480a-3202-4a1f-a81b-ba0ba6652d11",
+      "result_id": "1294e35c-b5a4-4e5f-a8c8-779b3a2ad367"
+    },
+    {
+      "claim_id": "f0a14397-8e6f-4a4d-bbf7-e9a33a59d665",
+      "result_id": "1294e35c-b5a4-4e5f-a8c8-779b3a2ad367"
+    },
+    {
+      "claim_id": "93fbe8a8-9968-48ef-8d90-7e1a50a814c2",
+      "result_id": "1294e35c-b5a4-4e5f-a8c8-779b3a2ad367"
+    },
+    {
+      "claim_id": "3c6dfe5e-c282-40e2-9eb6-fbf2712fb40f",
+      "result_id": "1294e35c-b5a4-4e5f-a8c8-779b3a2ad367"
+    },
+    {
+      "claim_id": "58ca0585-e3ba-4c13-a18d-fab5f4a10a7d",
+      "result_id": "b5b520cc-764b-4635-b004-0f80e78e3a88"
+    },
+    {
+      "claim_id": "a5145c42-2bf7-4632-b30e-c20181e7fe7d",
+      "result_id": "b5b520cc-764b-4635-b004-0f80e78e3a88"
+    },
+    {
+      "claim_id": "b6ed8713-b936-437b-8f45-bc914d1e2d64",
+      "result_id": "b5b520cc-764b-4635-b004-0f80e78e3a88"
+    },
+    {
+      "claim_id": "258f3eaf-cfed-4338-a070-5bb134330543",
+      "result_id": "b5b520cc-764b-4635-b004-0f80e78e3a88"
+    },
+    {
+      "claim_id": "048560de-2a4b-427f-8705-510260186638",
+      "result_id": "b5b520cc-764b-4635-b004-0f80e78e3a88"
+    },
+    {
+      "claim_id": "dd576253-8330-47ac-80be-fbbfabfcda5e",
+      "result_id": "f4f7f129-f741-4464-9866-66ce8b6de718"
+    },
+    {
+      "claim_id": "9ecb9204-23e3-49a8-b936-fd7969bf2452",
+      "result_id": "f4f7f129-f741-4464-9866-66ce8b6de718"
+    },
+    {
+      "claim_id": "d9ce7326-72e1-439b-94c3-f2298a1b39cf",
+      "result_id": "f4f7f129-f741-4464-9866-66ce8b6de718"
+    },
+    {
+      "claim_id": "87b855b3-b029-4595-9798-17773bb70e43",
+      "result_id": "f4f7f129-f741-4464-9866-66ce8b6de718"
+    },
+    {
+      "claim_id": "52eb4384-ed7b-401a-8705-3363fbd4365c",
+      "result_id": "f4f7f129-f741-4464-9866-66ce8b6de718"
+    },
+    {
+      "claim_id": "167d4820-7e84-41c4-8555-3d544704f9da",
+      "result_id": "f4f7f129-f741-4464-9866-66ce8b6de718"
+    },
+    {
+      "claim_id": "e78488cc-e457-453f-aa1c-340a6f8e5c43",
+      "result_id": "f4f7f129-f741-4464-9866-66ce8b6de718"
+    },
+    {
+      "claim_id": "9383e9a5-74e6-4164-baec-165c2e57e260",
+      "result_id": "f4f7f129-f741-4464-9866-66ce8b6de718"
+    },
+    {
+      "claim_id": "b703923a-d343-4991-84eb-07fb921d1bf4",
+      "result_id": "571e4711-dc8e-4d58-aec2-110a21a2bc66"
+    },
+    {
+      "claim_id": "4abbca12-4c6c-42eb-ab84-e7611ce9761d",
+      "result_id": "571e4711-dc8e-4d58-aec2-110a21a2bc66"
+    },
+    {
+      "claim_id": "59942957-4f8c-40ba-acdc-3d844967d7dc",
+      "result_id": "571e4711-dc8e-4d58-aec2-110a21a2bc66"
+    },
+    {
+      "claim_id": "40010f89-c73c-4c92-a664-35a2f466c311",
+      "result_id": "571e4711-dc8e-4d58-aec2-110a21a2bc66"
+    },
+    {
+      "claim_id": "d06a6602-0eef-487c-8a00-5f356a9861eb",
+      "result_id": "08e3c8e3-cc0d-448f-b12f-81b96901187c"
+    },
+    {
+      "claim_id": "ab51545b-3c45-48ff-8629-3fe554da50cc",
+      "result_id": "08e3c8e3-cc0d-448f-b12f-81b96901187c"
+    },
+    {
+      "claim_id": "9d44cd6b-b3a7-4f7e-b30b-6e6bc107a10b",
+      "result_id": "8e1e0b03-660e-4cc2-9a74-13b1d724f0db"
+    },
+    {
+      "claim_id": "124a5110-dab9-496f-8dae-523dac05090c",
+      "result_id": "61bd3daa-81c7-4253-98a7-35c20ef162dc"
+    },
+    {
+      "claim_id": "a8379d3a-6630-4c41-b975-2819ce938da6",
+      "result_id": "61bd3daa-81c7-4253-98a7-35c20ef162dc"
+    },
+    {
+      "claim_id": "0749df4e-dec6-4c13-ad3f-e86a5cfddbb8",
+      "result_id": "61bd3daa-81c7-4253-98a7-35c20ef162dc"
+    },
+    {
+      "claim_id": "b0285932-b077-4664-9c6d-dc8fed9ce19a",
+      "result_id": "61bd3daa-81c7-4253-98a7-35c20ef162dc"
+    },
+    {
+      "claim_id": "74499582-6219-435c-a1ac-0faed78ea3dc",
+      "result_id": "1188f2a3-6300-40b1-a788-754c312574fc"
+    },
+    {
+      "claim_id": "397a809b-dc33-4434-bc2a-10dd25d49924",
+      "result_id": "1188f2a3-6300-40b1-a788-754c312574fc"
+    },
+    {
+      "claim_id": "e7bb1178-71b9-4ca4-b7aa-9caf72ec002a",
+      "result_id": "1188f2a3-6300-40b1-a788-754c312574fc"
+    },
+    {
+      "claim_id": "133d17dd-b9dd-4f77-a631-3c11ac131ac7",
+      "result_id": "1188f2a3-6300-40b1-a788-754c312574fc"
+    },
+    {
+      "claim_id": "1432a4aa-6dcd-46dd-a091-0f0436a2b076",
+      "result_id": "6c008977-0315-42d6-aced-7e56bf5420eb"
+    },
+    {
+      "claim_id": "f335d85d-487f-4295-bba4-a80837fefc6c",
+      "result_id": "6c008977-0315-42d6-aced-7e56bf5420eb"
+    },
+    {
+      "claim_id": "e5c1ef82-de0f-45ac-b5ef-0e79c107d4a3",
+      "result_id": "3cdd30dd-07cd-45d3-a437-43a8473cf0aa"
+    },
+    {
+      "claim_id": "790880a2-81cc-4657-b037-2f25c800b02a",
+      "result_id": "b4bae622-ca57-42c8-855a-4c6d83254120"
+    },
+    {
+      "claim_id": "519dcc63-7fb4-45f7-bbb7-f361be48c4a2",
+      "result_id": "b4bae622-ca57-42c8-855a-4c6d83254120"
+    },
+    {
+      "claim_id": "a3094256-e23c-44d3-bd21-27bf69849083",
+      "result_id": "b4bae622-ca57-42c8-855a-4c6d83254120"
+    },
+    {
+      "claim_id": "fb3a0280-d85b-420d-93f4-337d928181e0",
+      "result_id": "b4bae622-ca57-42c8-855a-4c6d83254120"
+    },
+    {
+      "claim_id": "11083e9a-3655-425d-9376-d44270dfb6c0",
+      "result_id": "b4bae622-ca57-42c8-855a-4c6d83254120"
+    },
+    {
+      "claim_id": "b088317d-4470-46bd-83d0-a2c0af6c4ba3",
+      "result_id": "6038374b-e2f0-4937-9288-6243db486d2d"
+    },
+    {
+      "claim_id": "657e1f67-20b2-4dc9-9e0d-bfaed29d4529",
+      "result_id": "6038374b-e2f0-4937-9288-6243db486d2d"
+    },
+    {
+      "claim_id": "75604ac0-9113-49f7-95a3-25c53dbccaed",
+      "result_id": "6038374b-e2f0-4937-9288-6243db486d2d"
+    },
+    {
+      "claim_id": "15ec9dfc-db95-41ac-8ca6-ca7c7cd9a855",
+      "result_id": "43a16973-adf6-4f8c-857e-202f9dc37d01"
+    },
+    {
+      "claim_id": "b18cfcf1-14ab-4afb-aa19-20d342fca378",
+      "result_id": "43a16973-adf6-4f8c-857e-202f9dc37d01"
+    },
+    {
+      "claim_id": "14acde49-f046-4e63-bd32-8e517bfceba0",
+      "result_id": "3851696f-374c-4a6f-b3b6-b3e465d54bf7"
+    },
+    {
+      "claim_id": "63cf7dcc-c5dd-4308-ae97-e3af0eb1ddab",
+      "result_id": "3851696f-374c-4a6f-b3b6-b3e465d54bf7"
+    },
+    {
+      "claim_id": "c9f88fda-d379-4899-a691-314dc17eb0b5",
+      "result_id": "3851696f-374c-4a6f-b3b6-b3e465d54bf7"
+    },
+    {
+      "claim_id": "6d4f2795-737f-46c2-8667-d82ab033d378",
+      "result_id": "3851696f-374c-4a6f-b3b6-b3e465d54bf7"
+    },
+    {
+      "claim_id": "e54fd710-aece-4a41-b4d7-30e971c5372b",
+      "result_id": "3851696f-374c-4a6f-b3b6-b3e465d54bf7"
+    },
+    {
+      "claim_id": "b7dbbfe7-7c7f-4647-bfe3-fd9c9a04f403",
+      "result_id": "3851696f-374c-4a6f-b3b6-b3e465d54bf7"
+    },
+    {
+      "claim_id": "dba0352d-0677-4c5b-a542-0ecd90ccb327",
+      "result_id": "b4445b9d-8579-4359-9b0c-fa5b4835774b"
+    },
+    {
+      "claim_id": "772536c2-9108-4d5c-a490-3c17629195aa",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    },
+    {
+      "claim_id": "06d2a02e-1d20-4cd1-9624-8861eae6ba08",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    },
+    {
+      "claim_id": "a0b022b2-cebb-4edb-8280-2475770e0358",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    },
+    {
+      "claim_id": "0d323f0a-a141-433a-8605-fcc0a3ad4e03",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    },
+    {
+      "claim_id": "157d9da8-6c01-4e23-9043-6dfa71dca2c8",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    },
+    {
+      "claim_id": "0235dd35-28e3-42ba-8dd0-ffba85993430",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    },
+    {
+      "claim_id": "35d4933c-4977-462b-b04e-3435f33fb14b",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    },
+    {
+      "claim_id": "2e9b8840-258e-4819-9b01-91343251c8d8",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    },
+    {
+      "claim_id": "ca604bda-a0ca-43eb-a8ed-0f012b394442",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    },
+    {
+      "claim_id": "68d5aaa8-7db2-4b86-bbec-f84a290c0073",
+      "result_id": "5232958c-be0e-4d63-ba4d-5efea97ef8de"
+    }
+  ],
+  "comparisons": []
+}

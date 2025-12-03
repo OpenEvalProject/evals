@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Central Europe, particularly the study area in Hessen, Germany, has experienced substantial climate change from 1950-2019, characterized by increasing temperatures (January minimum +1.49\u00b0C, August maximum +2.37\u00b0C), decreasing precipitation (\u221240.5 mm annually, with 84% loss during the growth period), and increasing evapotranspiration. The years 2018 and 2019 represent part of a long-term accelerating drought trend rather than outliers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C33 provide comprehensive climate data from multiple sources (temperature, precipitation, evapotranspiration) with specific quantitative measurements and temporal trends. The PCA analysis (Figure 1B) and temporal data (Figure 1C, Figure 1\u2014figure supplement 1) support the characterization of climate change. The data sources are clearly documented and publicly available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Drought conditions during the main growth period (April-September) showed a strong negative correlation (r = 0.695) with leaf area index (LAI), validating that leaf loss and dried leaves are good indicators for drought stress in beech trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide a quantitative correlation coefficient and reference Figure 1\u2014figure supplement 2. The correlation is strong and the inference that leaf characteristics indicate drought stress is reasonable given the measured relationship between drought metrics and canopy cover.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C36",
+      "C37",
+      "C38",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A pairwise sampling design identified >200 neighboring tree pairs with contrasting drought phenotypes (damaged vs. healthy) within the same stands. Paired trees were closely spaced (mean 5.1 m), did not differ significantly in trunk circumference, tree height, canopy closure, or competition index, but differed substantially in dried leaves and leaf loss, confirming phenotype assignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide quantitative phenotypic data with statistical comparisons (Figure 2A-F, Supplementary file 1B). The sampling design is well-documented (C106-C111) with specific criteria. The lack of significant differences in confounding variables (size, competition) while showing clear differences in drought indicators (dried leaves, leaf loss) supports the validity of the phenotype classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The pairwise sampling design, with trees spaced ~5 m apart ensuring overlapping root systems, avoided confounding from cryptic population structure and environmental variation, supporting the hypothesis that genotype rather than environment is responsible for differential drought damage patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 provide logical reasoning about how the experimental design controls for environmental variation and population structure. The close spacing (C82) ensures similar environmental conditions, and C83 correctly notes that any misclassification would reduce rather than inflate genetic signal. This supports the genotype hypothesis (C3), though direct physiological proof of drought stress is acknowledged as lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Four DNA pools were constructed from 300 trees (South: 100 damaged, 100 healthy; North: 50 damaged, 50 healthy) and sequenced, yielding >96% mapping rate to the chromosome-level reference genome and 9.6 million filtered SNPs. Additionally, 100 North individuals were individually resequenced to ~20\u00d7 coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C115-C117 provide detailed methodology with specific numbers for pool composition, sequencing coverage, mapping rates, and SNP counts. The methods are standard for Pool-GWAS studies and the reference genome source is properly cited (Mishra et al., 2018, 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C85",
+      "C86"
+    ],
+    "result": "Linkage disequilibrium in F. sylvatica decays rapidly to r\u00b2 ~ 0.3 within <120 bp, indicating that associated polymorphisms are likely old-standing genetic variation and that significant SNPs are probably causal variants or in very close proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 provides quantitative LD data with reference to Figure 3\u2014figure supplement 1A. Claims C85-C86 make reasonable inferences based on population genetics theory (cited to Harris and Nielsen, 2013; Schaid et al., 2018) about the implications of short LD for identifying causal variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C84"
+    ],
+    "result": "Population genetic analyses revealed no significant population structure among sampling sites or between phenotypic classes. PCA explained only 12.3% variance on first two axes, trees from the same site did not cluster together, FST values were similar within and between regions, and ANOSIM showed no genomic similarity within phenotype classes (R = \u22120.008, p=0.76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C84 provide multiple lines of evidence (PCA, FST, ANOSIM) with specific statistics and figure references (Figure 3\u2014figure supplement 1B, 2, 3). The lack of population structure is consistent with prior studies (Rajendra et al., 2014) and validates the study design by ruling out confounding from ancestry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Pool-GWAS identified 106 significantly associated SNPs (80 independent genomic regions after accounting for linkage) distributed throughout the genome. None were fixed between phenotypes; allele frequency differences ranged from 0.12 to 0.51.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is directly supported by Figure 3A showing the Manhattan plot. Claims C49-C52 provide appropriate interpretation of the GWAS results, accounting for LD and characterizing the quantitative nature of allele frequency differences (Figure 3B). The statistical approach (Cochran-Mantel-Haenszel test with FDR correction) is appropriate for Pool-GWAS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C6"
+    ],
+    "result": "Of 106 significant SNPs, 24 were in 20 protein-coding genes and 82 were near 49 other genes (61 with best BLAST hits to trees). Among SNPs in genes, 13 were non-synonymous: 11 associated with damaged phenotype (including 3 stop codons), 2 with healthy phenotype. Eight of 10 remaining non-synonymous changes caused major amino acid property changes. One gene (PB1 domain-containing protein tyrosine kinase) had 4 non-synonymous changes suggesting loss of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 provide detailed characterization of SNP effects with reference to Table 1. The annotation of non-synonymous changes and their predicted functional impacts is appropriate. The inference about loss of function for the gene with 4 changes (C60) is reasonable given the nature of the mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C95"
+    ],
+    "result": "Most annotated genes (>70%) with or near associated SNPs were previously implicated in drought or environmental stress response. Of 14 genes with SNPs that had functional information, 10 were associated with stress response (8 drought-specific, 2 general environmental stress). Of 16 reliably annotated genes closest to remaining SNPs, 12 were drought-related and 3 were general stress-related.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C64, and C95 provide quantitative summaries of gene function analysis with references to Supplementary file 1C. The high proportion of drought-related genes provides biological validation of the GWAS findings. However, the authors acknowledge (C94) that none overlap with a prior transcriptomic study, suggesting these may represent different aspects of drought response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C59"
+    ],
+    "result": "The high proportion of non-synonymous SNPs within genes, most causing amino acid substitutions with different properties or premature termination, supports that associated SNPs are likely causal variants or in very close proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C59 make reasonable inferences based on the functional annotation data in Table 1. The combination of short LD (C44) and high proportion of functional variants provides strong evidence that identified SNPs are causal or very closely linked to causal variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C7"
+    ],
+    "result": "A validation SNP assay with 70 loci was developed and applied to 95 independent individuals (96.7% genotyping success). A machine learning approach (eSPA*) selected 20 most informative SNPs and identified 4 clusters, correctly classifying 88% of 98 trees according to their observed drought phenotype (47/50 resistant correct, 39/48 susceptible correct).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 provide detailed validation results with specific numbers and success rates. The 88% prediction accuracy on independent samples provides strong support for the biological relevance of the identified SNPs. The machine learning method (eSPA*) is appropriate for small sample sizes and is properly cited (Gerber et al., 2020; Horenko, 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Drought resistance in F. sylvatica is a moderately polygenic trait involving 67 genes with relatively flat effect size distribution, which should respond well to natural selection, selective management, and breeding. The low LD predicts that adaptation to drought will not compromise genome-wide genetic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 make reasonable inferences about the genetic architecture based on the number of genes (67) and effect size distribution. The prediction about response to selection (C97) is consistent with quantitative genetics theory for moderately polygenic traits. Claim C99 appropriately connects low LD to maintenance of diversity. Claim C98 appropriately acknowledges that more loci may exist below detection threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Most allelic variants associated with healthy phenotype matched the reference genome, which came from a >300-year-old tree at a particularly dry site where trees were likely selected for drought tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide an interesting observation (C89) with a plausible explanation based on the reference genome source (C90, citing Mishra et al., 2018). The inference about selection at dry sites (C91) is reasonable, though speculative. This provides context for interpreting which alleles are 'reference' vs. 'alternate.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Based on trunk circumference age estimates, >1/3 of sampled trees were present since the 1950s and ~60% since the 1980s. Climate shifts mean mountainous trees now experience conditions similar to 1950s lowland conditions, while lowland trees experience climates formerly typical of regions further south. Current conditions may exceed the reaction norm of some locally adapted genotypes, and continued drying trends will likely affect more trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide age estimates with appropriate citation (Bo\u0161e\u013ea et al., 2014). Claims C75-C76 make reasonable inferences from the climate data (C23-C33). Claim C77 appropriately connects local adaptation literature (multiple citations) to the observed patterns. Claim C78 is a reasonable prediction but appropriately qualified as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Deviant variants with substantial functional changes may be selectively neutral under ancestral benign conditions but become selectively relevant under changing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 presents a well-established concept in evolutionary genetics (cited to Paaby and Rockman, 2014) that provides a theoretical framework for interpreting the presence of functional variants segregating in the population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C100",
+      "C101"
+    ],
+    "result": "The climatic variation at sampling sites is representative of large parts of the species range. Limited population structure and long-range gene flow suggest identified drought tolerance variants are widely distributed. Validation analysis confirmed alleles are widespread rather than locally specific. Considerable genetic variation remains, with high-predictive-value trees showing no loss of heterozygosity, indicating adaptive potential for drought adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 make reasonable inferences about geographic representativeness with appropriate citations (Baumbach et al., 2019; Magri et al., 2006; Belmonte et al., 2008; Lander et al., 2021). Claims C100-C101 are supported by the validation analysis results. The observation about maintained heterozygosity (C101) is important for predicting adaptive potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The SNP assay can support seed tree selection for reforestation, provide guidance for selective logging, monitor natural selection on this trait, and serve as a starting point for molecular and physiological research on drought tolerance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 describe potential applications that are reasonable given the 88% prediction accuracy, but these remain to be validated in practice. Claim C105 appropriately frames the study as a starting point for mechanistic research. These are forward-looking statements about utility rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C71",
+      "C72",
+      "C79",
+      "C80",
+      "C94"
+    ],
+    "result": "Background context on European beech ecology, economic importance, drought impacts, and prior research on genetic diversity, local adaptation, and stress tolerance. Pool-GWAS approaches have proven useful for conservation management in tree species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C19, C71-C72, C79-C80, and C94 provide literature context with appropriate citations. These establish the ecological and economic importance of the study system and situate the work within prior research. All claims are properly attributed to cited sources.",
+    "result_type": "MINOR"
+  }
+]

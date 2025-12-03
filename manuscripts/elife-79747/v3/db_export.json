@@ -1,0 +1,1555 @@
+{
+  "submission": {
+    "id": "100d73ce-abcf-4dc6-8d7d-555c987dd154",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:35:21.547644Z",
+    "updated_at": "2025-12-03T17:35:21.547644Z"
+  },
+  "content": [
+    {
+      "id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "submission_id": "100d73ce-abcf-4dc6-8d7d-555c987dd154",
+      "content_type": "manuscript",
+      "content_text": "# Inhibition of mutant RAS-RAF interaction by mimicking structural and dynamic properties of phosphorylated RAS\n\n## Authors\n\n- Metehan Ilter<sup>1</sup>\n- Ramazan Kasmer<sup>2</sup>\n- Farzaneh Jalalypour<sup>4</sup>\n- Canan Atilgan<sup>4</sup> ([ORCID: 0000-0003-0557-6044](https://orcid.org/0000-0003-0557-6044))\n- Ozan Topcu<sup>2</sup>\n- Nihal Karakas<sup>2</sup> \u2020\n- Ozge Sensoy<sup>6</sup> ([ORCID: 0000-0001-5950-3436](https://orcid.org/0000-0001-5950-3436)) \u2020\n\n### Affiliations\n\n1. Graduate School of Engineering and Natural Sciences, Istanbul Medipol University Istanbul Turkey ([ROR:037jwzz50](https://ror.org/037jwzz50))\n2. Medical Biology and Genetics Program, Graduate School for Health Sciences, Istanbul Medipol University Istanbul Turkey ([ROR:037jwzz50](https://ror.org/037jwzz50))\n3. Cancer Research Center, Institute for Health Sciences and Technologies (SABITA), Istanbul Medipol University Istanbul Turkey ([ROR:037jwzz50](https://ror.org/037jwzz50))\n4. Faculty of Engineering and Natural Sciences, Sabanci University Istanbul Turkey ([ROR:049asqa32](https://ror.org/049asqa32))\n5. Department of Medical Biology, International School of Medicine, Istanbul Medipol University Istanbul Turkey ([ROR:037jwzz50](https://ror.org/037jwzz50))\n6. Department of Computer Engineering, School of Engineering and Natural Sciences, Istanbul Medipol University Istanbul Turkey ([ROR:037jwzz50](https://ror.org/037jwzz50))\n7. Regenerative and Restorative Medicine Research Center (REMER), Institute for Health Sciences and Technologies (SABITA), Istanbul Medipol University Istanbul Turkey ([ROR:037jwzz50](https://ror.org/037jwzz50))\n\n\u2020 Corresponding author\n\n## Abstract\n\nUndruggability of RAS proteins has necessitated alternative strategies for the development of effective inhibitors. In this respect, phosphorylation has recently come into prominence as this reversible post-translational modification attenuates sensitivity of RAS towards RAF. As such, in this study, we set out to unveil the impact of phosphorylation on dynamics of HRASWT and aim to invoke similar behavior in HRASG12D mutant by means of small therapeutic molecules. To this end, we performed molecular dynamics (MD) simulations using phosphorylated HRAS and showed that phosphorylation of Y32 distorted Switch I, hence the RAS/RAF interface. Consequently, we targeted Switch I in HRASG12D by means of approved therapeutic molecules and showed that the ligands enabled detachment of Switch I from the nucleotide-binding pocket. Moreover, we demonstrated that displacement of Switch I from the nucleotide-binding pocket was energetically more favorable in the presence of the ligand. Importantly, we verified computational findings in vitro where HRASG12D/RAF interaction was prevented by the ligand in HEK293T cells that expressed HRASG12D mutant protein. Therefore, these findings suggest that targeting Switch I, hence making Y32 accessible might open up new avenues in future drug discovery strategies that target mutant RAS proteins.\n\n## Introduction\n\nThe RAS gene family translates into four proteins, namely HRAS, NRAS, KRAS4A, and KRAS4B, that control mitogen-activated protein kinase (MAPK), phosphatidylinositol 3-kinase (PI3K), and Ras-like (RAL) pathways (Barbacid, 1987; Malumbres and Barbacid, 2003; Lu et al., 2016a; Khan et al., 2019; Duffy and Crown, 2021; Simanshu et al., 2017; Ferro and Trabalzini, 2010; De Luca et al., 2012; Young et al., 2013; Knight and Irving, 2014). These small G proteins act as a binary switch as the activation of the protein is modulated by two types of nucleotides, namely, guanosine-triphosphate (GTP) and guanosine-diphosphate (GDP). The exchange of GDP for GTP is maintained by guanine exchange factors (GEFs) which, in turn, activates the RAS protein (Downward, 1990; Grand and Owen, 1991; Bourne et al., 1991; Wittinghofer and Pai, 1991; Lowy et al., 1991; Wittinghofer and Vetter, 2011; Takai et al., 2001; Lamontanara et al., 2014; Vetter and Wittinghofer, 2001; Lu et al., 2016a). Consequently, activated RAS proteins can interact with their downstream effectors, thus initiating cellular signaling pathways (Vetter and Wittinghofer, 2001; Cherfils and Zeghouf, 2013; Geyer and Wittinghofer, 1997; Lu et al., 2016a). Unlike GEFs, GTPase-activating-proteins (GAPs) accelerate the intrinsic GTPase activity of RAS, which provides a control mechanism for precise termination of respective signaling pathways (Wittinghofer et al., 1997; Lu et al., 2016a).\n\nRAS proteins are made up of two domains, namely, G domain (residues 1\u2013172) and hypervariable region (173\u2013188 or \u2013189) (O\u2019Bryan, 2019; Khan et al., 2020, Figure 1A). The G domain consists of effector (residues 1\u201386) and allosteric lobes (residues 87\u2013172). The former, which is the invariant region, harbors the P-loop (residues 10\u201317), Switch I (30-38), and Switch II (59-76) regions, the last two of which adopt different conformational states depending on the type of the nucleotide (Wang et al., 2021). In particular, Switch I/II can be found in either open or closed conformation, both of which are described depending on the position of the domain with respect to the nucleotide-binding pocket. In the open conformation, Switch I/II is far from the nucleotide-binding pocket, whereas it is closer in the closed conformation. Importantly, the former prevents effector binding while the latter favors it. Moreover, it has been also shown that Switch II becomes less stable upon effector binding, which presumably allows RAS to cycle between catalytically incompetent and competent states in a timely manner that is important for maintaining the cell homeostasis (Johnson and Mattos, 2013; Khan et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig1-v3.jpg)\n\n**Figure 1.:** (a) Important residues/regions that play pivotal role in RAS function are shown. (b) A schematic that illustrates the impact of tyrosyl phosphorylation on the GTPase cycle of HRAS. The tyrosyl phosphorylation at the 32nd position, which is mediated by Src kinase, causes impairment of RAF binding, thus terminating RAF/MEK/ERK signaling pathway as long as the phosphoryl group of Y32 is not detached by SHP2 Bunda et al., 2014.\n\nSince RAS proteins are involved in signaling pathways, which are responsible for cell growth, differentiation, and proliferation, mutations, which are frequently found at the 12th, 13th, and 61st residues (Prior et al., 2020; Prior et al., 2012, cause several cancer types Holderfield et al., 2014; Eser et al., 2014; Prior et al., 2012; Stephen et al., 2014; McCormick, 2015a; McCormick, 2015b; Krens et al., 2010; Lu et al., 2016a as a result of attenuated GTP hydrolysis and increased nucleotide exchange rate Vigil et al., 2010). For instance, HRASG12D was shown to be the dominant mutant in ductal carcinoma (Myers et al., 2016) caused resistance to erlotinib, which is used as an epidermal growth factor receptor tyrosine kinase inhibitor (Hah et al., 2014), in head and neck squamous carcinoma. As such, RAS proteins have been standing as hot targets in drug discovery studies which are focused on the development of therapeutics against cancer.\n\nIn spite of extensive efforts that have been made to develop RAS inhibitors, no molecules have yet been approved for clinical use (Canon et al., 2019; Duffy and Crown, 2021). In these studies, the mutant RAS was targeted directly or in combination with other proteins including SOS, tyrosine kinase, SHP2, and RAF. Also, except KRASG12C mutant, the GTP-bound state of mutants has been targeted as they either lose their intrinsic or GAP-mediated GTPase activity. However, the intrinsic GTPase activity of KRASG12C is relatively higher than the other mutants which enables targeting in its GDP-bound state (Moore et al., 2020).\n\nThe undruggability of RAS proteins arises from lack of deep binding pockets on the surface of the protein and also picomolar affinity of the endogenous ligands which hinders development of competitive inhibitors (Gysin et al., 2011; Ledford, 2015; Cox et al., 2014; Milroy and Ottmann, 2014). Therefore, much attention has been focused on the discovery of allosteric sites that can regulate the function of the protein (Buhrman et al., 2010; Ostrem et al., 2013; Fetics et al., 2015; Johnson et al., 2017; McCarthy et al., 2019; Khan et al., 2022).\n\nImportantly, it is well-established that the function of the protein is modulated by post-translational modifications. In particular, phosphorylation/dephosphorylation can be given as an example, which is controlled by Src-kinase and Src homology region 2 domain-containing phosphatase-2 (SHP2), respectively (Figure 1B). It has been shown that phosphorylation of the tyrosine at the 32nd position by Src-kinase attenuated RAF binding to HRAS and NRAS while elevating intrinsic GTPase activity of the proteins (Bunda et al., 2014, Figure 1B). Furthermore, recently, Kano et al. have implied that Src-kinase phosphorylated tyrosine residues at the 32nd and 64th positions of KRAS4B isoform changed conformation of Switch I and II. Consequently, this led to a decrease in intrinsic GTPase activity, thus maintaining KRAS4B in the GTP-bound state. Interestingly, phosphorylated and GTP-bound KRAS4B was shown not to bind RAF, thus leaving the protein in the dark state (Kano et al., 2019). In the same study, it was also shown that if phosphoryl groups were removed by SHP2, then GTP-bound KRAS4B could interact with RAF and initiate signaling pathways through MAPK (Kano et al., 2019). Notably, it was shown that deletion or inhibition of SHP2 could slow down tumor progression, but remaining insufficient for tumor regression (Ruess et al., 2018). Collectively, these findings suggest that mimicking dynamics invoked by phosphorylation might provide an alternative strategy for inhibiting mutant RAS/RAF interaction.\n\nIn this study, we set out to investigate the impact of phosphorylation on the structure and dynamics of HRASWT by performing atomistic MD simulations. Comparison of the trajectory pertaining to the phosphorylated RAS with trajectories of GTP-bound HRASWT and HRASG12D showed that phosphorylation of Y32 increased the flexibility of RAF-RBD interface compared to the mutant and pushed Switch I, in particular Y32, out of the nucleotide-binding pocket. Considering the fact that, exposed Y32 precluded RAF binding, we searched for molecules that could evoke similar rearrangements in HRASG12D. To this end, we carried out virtual screening by using therapeutically-approved molecules deposited in DrugBank (Wishart et al., 2018; Law et al., 2014; Knox et al., 2011; Wishart et al., 2008; Wishart et al., 2006, BindingDB Gilson et al., 2016; Liu et al., 2007; Chen et al., 2001b; Chen et al., 2001a; Chen et al., 2002, DrugCentral Ursu et al., 2019; Ursu et al., 2017, and NCGC Huang et al., 2011). The impact of ligands on the structure and dynamics of HRASG12D mutant was examined using molecular dynamics simulations. We showed that cerubidine, tranilast, nilotinib, and epirubicin could induce similar dynamics and structural changes which were seen in the phosphorylated RAS protein. Moreover, we also calculated the energy required for pushing Switch I out of the nucleotide-binding pocket in the absence/presence of one of the successful ligands, namely cerubidine, using perturb-scan-pull (PSP) method Jalalypour et al., 2020 and showed that less energy was required for displacement of Switch I in the presence of the ligand. Importantly, we also tested the activity of cerubidine in preventing RAS/RAF interaction using immunoprecipitation assays and verified computational findings. Therefore, these results suggest that Y32 detachment from the nucleotide-binding pocket might be used as an alternative strategy for targeting mutant RAS proteins.\n\n## Results\n\n### Phosphorylation impacts the flexibility of Y32 and RAF-RBD/RAS interface residues\n\nThe comparison of RMSF profiles showed remarkable differences in the fluctuation patterns of certain residues/domains among wild-type, phosphorylated, and mutant protein. We showed that phosphorylation increased the flexibility of Y32 as a result of repulsion between negatively charged phosphate and GTP and also increased the flexibility of the residues that are involved in the RAF-RBD interaction interface compared to the mutant as shown in Table 1. Since RAF-RBD plays a major role in formation of high-affinity RAS-RAF complex, increased flexibility presumably precludes RAF binding. On the other hand, phosphorylation did not impact the RAF-CRD interface, which has been shown to play an important role in anchoring RAF to the membrane (Travers et al., 2018) as revealed by NMR and mutagenesis studies (Drugan et al., 1996). It is important to note that the difference seen in the flexibility of Y32 and RAF-RBD interface residues between HRASpY32 and HRASG12D could not be observed for G60 and Q61, although the two residues could reach relatively higher RMSF values in the phosphorylated RAS (see the standard errors in Table 1). This, in turn, which might cause perturbation of the interface formed with RAF-CRD and modulate GAP-mediated GTPase activity of RAS, respectively.\n\n**Table 1.**\n The backbone RMSF values of key regions/residues pertaining to HRASWT, HRASpY32, and HRASG12D.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Residue/Region-RMSF (\u00c5)</th>\n      <th>HRASWT</th>\n      <th>HRASpY32</th>\n      <th>HRASG12D</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Y32</td>\n      <td>1.6 \u00b1 0.2</td>\n      <td>1.5\u00b1 0.2</td>\n      <td>0.9\u00b1 0.1</td>\n    </tr>\n    <tr>\n      <td>RAF-RBD interface residues</td>\n      <td>1.2\u00b1 0.2</td>\n      <td>1.3\u00b1 0.2</td>\n      <td>0.8\u00b1 0.1</td>\n    </tr>\n    <tr>\n      <td>RAF-CRD interface residues</td>\n      <td>0.8\u00b1 0.1</td>\n      <td>0.9\u00b1 0.2</td>\n      <td>0.7\u00b1 0.03</td>\n    </tr>\n    <tr>\n      <td>G60</td>\n      <td>1.0\u00b1 0.3</td>\n      <td>1.4\u00b1 0.5</td>\n      <td>1.1\u00b1 0.2</td>\n    </tr>\n    <tr>\n      <td>Q61</td>\n      <td>1.2\u00b1 0.4</td>\n      <td>1.6\u00b1 0.4</td>\n      <td>1.5\u00b1 0.3</td>\n    </tr>\n  </tbody>\n</table>\n\n### Phosphorylation pushes Switch I and Y32 out of the nucleotide-binding pocket of RAS\n\nAs shown in Table 1, the flexibility of residues, which interact with RAF-CRD domain, increased upon phosphorylation compared to HRASG12D. Since these residues surround the Switch I domain, we sought to investigate whether the opening of the nucleotide-binding pocket was impacted by measuring the distance between C\u03b1 atoms of the G/D12 and P34 residues throughout the trajectories. We showed that phosphorylation pushed Switch I out of the binding pocket as the distance between G12 and P34 residues increased compared to the mutant protein (Figure 2A, Figure 2\u2014figure supplement 1A-C). Consequently, this makes the nucleotide-binding pocket more accessible to waters, as evident from the number of waters measured within 5 \u00c5 distance of GTP: 93.60\u00b10.20, 100.30\u00b10.20, and 72.68\u00b10.17 for HRAS WT, HRASpY32, and HRASG12D,respectively. Considering rearrangements occurring around the nucleotide-binding pocket and that GAP binding involves interaction with both Switch I and II, it can be said that phosphorylation triggers rearrangement around the pocket of RAS that prepares it for binding to GAP, thus, modulating the GTPase activity of the protein. Indeed, it was shown that GTPase activity of RAS increased upon phosphorylation (Bunda et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig2-v3.jpg)\n\n**Figure 2.:** (a) The normalized probability density distribution of the distance measured between the C\u03b1 atom of 12th 34th residues. The standard error (SE) of the measurements for HRASpY32, HRASWT, and HRASG12D are measured as 0.01, 0.004, and 0.01 \u00c5, respectively. (b) The normalized probability distribution of the distance between the side-chain oxygen atom of Y32 and P\u03b3 of GTP. The SE of the measurements for HRASpY32, HRASWT, and HRASG12D are calculated as 0.02, 0.02, and 0.003 \u00c5, respectively. (c) C\u03b1 atoms of 12th and 34th residues are shown on the crystal structure of HRASWT (PDB ID: 5P21) in vdW representation and colored with ocher and purple, respectively, whereas GTP is shown in the licorice and colored with red. (d) The orientational dynamics of Y32 in the HRASpY32 trajectory. (e) The H-bond formed between side-chain of Y32 and P\u03b3 of GTP in HRASG12D is shown in purple.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The timeline interatomic distances between OH atom of Y32 and P\u03b3 atom of GTP throughout (d) HRASWT, (e) HRASG12D, and (f) HRASpY32 trajectories.\n\nHaving observed phosphorylation-induced modulation in the flexibility of Y32, we also examined the positioning of the residue by measuring the distance between the side-chain oxygen of Y32 and P\u03b3 atom of GTP (see Figure 2\u2014figure supplement 1D,E and F). We showed that Y32 formed a hydrogen bond with the P\u03b3 atom of GTP in both HRASWT and HRASG12D which stabilized the residue in the vicinity of the nucleotide-binding pocket (Figure 2E). However, the hydrogen bond was not formed in HRASpY32, and Y32 was positioned far from the pocket, thus making it exposed to the environment, as evidenced by relatively longer distances measured (Figure 2B and D). In addition to the position, we also explored orientational preference of Y32 with respect to the nucleotide-binding pocket by measuring dihedral angles pertaining to backbone and side-chains of Y32, namely $\u03d5$/$\u03c8$ and $\u03c7$1/$\u03c7$2 angles. There was no remarkable difference in backbone dihedrals and $\u03c7$1, whereas $\u03c7$2 angle distribution was different among the systems studied. Specifically, Y32 displayed two peaks at \u2013100 to \u201390\u00b0 and 80\u201390\u00b0 in the phosphorylated RAS, whereas it adopted 60\u201370\u00b0 in the mutant and wild-type HRAS (Figure 3A and Figure 3\u2014figure supplement 1). It is important to point that Y32 adopted 80\u00b0 in the crystal structure of allosteric inhibitor-bound KRAS4BG12D (PDB ID:6WGN) Zhang et al., 2020, where the residue was exposed and far from the nucleotide-binding pocket as the distance measured between the side-chain of Y32 and P\u03b3 atom of GTP was 16 \u00c5.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig3-v3.jpg)\n\n**Figure 3.:** (a) The normalized probability density distribution of the measured \u03c72 angles of HRASWT, HRASG12D, and HRASpY32. The SE of \u03c72 pertaining to the phosphorylated, wild-type, and mutant systems are 0.44, 0.35, and 0.09, respectively. (b) A representative exposed state of Y32 obtained from the trajectory of the phosphorylated system.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig3-figsupp1-v3.jpg)\n\nHerein, it is important to mention that exposed conformation of Y32 was not observed in the trajectories pertaining to RAF-RBD-bound HRASWT as shown in our earlier study (Ilter and Sensoy, 2019). Therefore, this finding suggests that exposure of Y32 might occlude the interaction interface formed between RAS and RAF-RBD.\n\n### Global dynamics reveals a possible binding site near the nucleotide-binding pocket in HRASG12D\n\nBesides local analysis, the collective dynamic properties of the systems were also explored by calculating the principal components of their global motions. To do so, trajectories of HRASWT, HRASG12D, and HRASpY32 were projected along their first five eigenvectors, which reflect ca. 50% of the overall dynamics Petrone and Pande, 2006 (see Figure 4\u2014figure supplement 1), and compared to each other to investigate global conformational rearrangements induced by phosphorylation and mutation. Consequently, it was shown that the dynamics of Switch I domain, in particular RAF-RBD interaction interface, could be altered in the mutant, albeit to a lesser extent, compared to both HRASWT, HRASpY32. It is also important to mention that the contribution of Y32 to the first five eigenvectors was higher in HRASpY32 (3.14 \u00c5) than in the mutant protein (2.87 \u00c5) as seen in the RMSF values.\n\nON the other hand, the contribution of Switch II, which harbors both G60 and Q61, to the overall dynamics was higher in HRASWT and HRASpY32 than the mutant protein (Figure 4A). Q61 was positioned closer to the nucleotide-binding pocket in the mutant HRAS than in phosphorylated HRAS whereas G60 could sample longer distances than that was sampled by both HRASpY32 and HRASWT at their maximum probability (Figure 4C and D and Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig4-v3.jpg)\n\n**Figure 4.:** (a) Fluctuation of C\u03b1 atoms pertaining to HRASWT, HRASG12D, and HRASpY32 along the first five eigenvectors. The RAF-CRD & -RBD interaction interfaces, as well as Switch II, are shaded in the green, pink, and black rectangles, respectively. The eigen RMSF of Y32 pertaining to the phosphorylation system is pointed out by a dark violate bead. (b) The projected trajectories of the systems studied along with the first principal component, where the thickness of the ribbons are correlated the contribution of domain to the collective dynamics. The probability density distribution of the distance between (c) the backbone amide of G60 and P\u03b3 of GTP is shown, and (d) the side-chain oxygen of Q61 and P\u03b3 of GTP is shown. The SE of the distance between G60 and GTP pertaining to the phosphorylated, wild-type, and mutant systems are 0.01, 0.01, and 0.004 \u00c5, respectively. The SE of the distance between Q61 and GTP pertaining to the phosphorylated, wild-type, and mutat systems are 0.02, 0.01, and 0.01, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The contribution of the first five principal components are denoted by a cross symbol on the plots.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The timeline of the measured distances between O\u03b51 of Q61 and P\u03b3 of GTP for (d) wild-type, (e) mutant, and (f) phosphorylated systems.\n\nHaving observed flexibility at the RAF-RBD interface in the mutant, we set out to investigate if the site can be considered as a possible binding pocket that can accommodate small molecules to modulate the dynamics of Switch I. To do so, we clustered the trajectory of the mutant HRAS by considering probability density distributions of distances between the (i) side-chain oxygen of T35 and P\u03b3 of GTP (ii) backbone amide of G60 and P\u03b3 of GTP, which represent different conformational states of the nucleotide-binding pocket, according to the structural studies (Lu et al., 2016b; Shima et al., 2010; Araki et al., 2011). There were three states described for T35, labelled as state 1, 2, and 3, each of which sampled distances in the range of 3.0\u20135.0 \u00c5, 6.0\u20139.0 \u00c5, and 12.0\u201316.0 \u00c5, respectively (Figure 5A and Figure 5\u2014figure supplement 1). Similarly, G60 could also adopt three states, namely state 1, 2, and 3, which corresponds to distance range between 5.0\u20137.0 \u00c5, 2.0\u20134.0 \u00c5, and 8.0\u20139.0 \u00c5, respectively (Figure 5B). In light of clustered conformations, the most probable conformation that adopts values pertaining to State 1 in each atom-pair distances was picked up from the trajectory of HRASG12D. The possible binding pockets on the surface of mutant HRAS were identified and evaluated by comparing SiteMap scores. Eventually, the pocket, which had relatively higher SiteScore, enclosure and lower exposure, was selected to be used further (Table 2). The binding pocket, which was identified on the selected conformation, was next to Switch I. Considering the fact that this domain (i) includes residues that mediate RAF binding, (ii) acts as a regulator for intrinsic GTPase activity, and (iii) dominates the collective dynamics of the mutant protein, the region was used as the target binding pocket in the subsequent steps of the study.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig5-v3.jpg)\n\n**Figure 5.:** The normalized probability density distribution of the measured distance between the side-chain oxygen atom of T35 and P\u03b3 of GTP, and the backbone amide of G60 and P\u03b3 of GTP in the mutant system, where the sampling range for calculating the frequency of each interval was adjusted as 1 \u00c5. The SE of the distance between T35 and GTP is calculated as 0.001 \u00c5, whereas that of the distance between G60 and GTP is 0.004 \u00c5.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig5-figsupp1-v3.jpg)\n\n**Table 2.**\n The SiteMap scores of possible pockets found on the surface of the most probable conformation of HRASG12D.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>SiteScore</th>\n      <th>Size</th>\n      <th>DScore</th>\n      <th>Volume</th>\n      <th>Exposure</th>\n      <th>Enclosure</th>\n      <th>Contact</th>\n      <th>Phobic</th>\n      <th>Philic</th>\n      <th>Balance</th>\n      <th>Don/acc</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1.028</td>\n      <td>194</td>\n      <td>0.919</td>\n      <td>466.140</td>\n      <td>0.478</td>\n      <td>0.740</td>\n      <td>1.010</td>\n      <td>0.259</td>\n      <td>1.425</td>\n      <td>0.182</td>\n      <td>0.932</td>\n    </tr>\n    <tr>\n      <td>0.701</td>\n      <td>25</td>\n      <td>0.668</td>\n      <td>81.290</td>\n      <td>0.632</td>\n      <td>0.691</td>\n      <td>1.059</td>\n      <td>1.474</td>\n      <td>0.664</td>\n      <td>2.219</td>\n      <td>0.915</td>\n    </tr>\n    <tr>\n      <td>0.656</td>\n      <td>22</td>\n      <td>0.629</td>\n      <td>101.870</td>\n      <td>0.776</td>\n      <td>0.638</td>\n      <td>0.842</td>\n      <td>0.959</td>\n      <td>0.596</td>\n      <td>1.609</td>\n      <td>12.216</td>\n    </tr>\n  </tbody>\n</table>\n\n### Small therapeutic molecules distort the RAF binding interface and pushes Y32 out of the pocket\n\nThe pharmacophore groups of the binding site identified on the surface of HRASG12D were modeled with respect to both geometrical and chemical properties of residues 29\u201334. DrugBank (Wishart et al., 2018; Law et al., 2014; Knox et al., 2011; Wishart et al., 2008; Wishart et al., 2006, DrugCentral Ursu et al., 2019; Ursu et al., 2017, BindingDB Gilson et al., 2016; Liu et al., 2007; Chen et al., 2001b; Chen et al., 2001a; Chen et al., 2002, and NCGC Huang et al., 2011) databases were searched for molecules that could contain at least three features of the modeled pharmacophores and have molecular weight lower than 550 kDa. A total of 4292 molecules was retrieved from the databases (Figure 6A). Then, these molecules were docked to the identified binding pocket on the surface of HRASG12D and ligands were evaluated with respect to their spatial organization around the nucleotide-binding pocket and GScores, which is a term that is used to score binding poses in Schrodinger. Considering the close interaction observed between Y32 and GTP in HRASG12D, we prioritized the ligands, which disrupted interaction between the nucleotide and Y32. The impact of four ligands satisfying this criterion, namely cerubidine, tranilast, nilotinib, and epirubicin, (Figure 6B-E) was further tested by performing MD simulations using the ligand-HRASG12D complex (See Supplementary file 1 for respective simulation times).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig6-v3.jpg)\n\n**Figure 6.:** (a) A schematic that summarizes the virtual screening workflow done for the identified binding pocket on the most frequently sampled conformation of HRASG12D. The 3D structures and corresponding GScores of (b) cerubidine, (c) epirubicin, (d) tranilast, and (e) nilotinib are shown. GTP is shown in licorice and red.\n\nThe ligand-HRASG12D trajectories were analyzed based on the fluctuation pattern of RAF-RBD, RAF-CRD, and Y32. Moreover, the distances measured between G/D12 and P34 as well as Y32 and GTP were also compared to those of HRASG12D and HRASpY32. In that way, the capability of the ligands in distorting Switch I domain, widening the nucleotide-binding pocket, and displacing Y32 could be investigated. Accordingly, ligands, which could (i) increase the flexibility of RAF-RBD and -CRD interfaces, and (ii) displace Switch I and Y32 from the nucleotide-binding pocket were considered successful in terms of preventing HRASG12D/RAF interaction. We showed that all the ligands, namely cerubidine, nilotinib, tranilast, and epirubicin, considerably increased the flexibility of the RAF-RBD interaction interface (See Supplementary file 1) than in HRASG12D. Moreover, the flexibility of Y32, also significantly increased by all the ligands, except nilotinib (Bunda et al., 2014; Kano et al., 2019, Supplementary file 1).\n\nWe also examined the wideness of the nucleotide-binding pocket and the positioning of Y32 by measuring the distances between G/D12, respectively. We showed that cerubudine was more likely to trigger displacement of Switch I and Y32 away from the nucleotide-binding pocket, whereas the impact of nilotinib and epirubicin was not remarkable (See Figure 7A and B). This, in turn, explains accommodation of relatively higher number of waters within the nucleotide-binding pocket in cerubidine-bound HRASG12D (Supplementary file 1). Therefore, it is tempting to suggest that cerubidine can help elevate the intrinsic GTPase activity of the mutant RAS by exposing GTP to water.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig7-v3.jpg)\n\n**Figure 7.:** The normalized probability density distribution of (a) the distance between C\u03b1 atoms of G/D12 and P34, (b) the distance between the side-chain oxygen atom of Y32 and P\u03b3 of GTP, (c) \u03c72 in HRASG12D, HRASpY32, and cerubidine-, tranilast-, nilotinib-, and epirubicin-bound HRASG12D. The SE of the G/D12-D34 distance pertaining to the above-mentioned systems, in seriatim, 0.01, 0.01, 0.02, 0.02, 0.03, and 0.03 \u00c5. The SE of the same systems for Y32-GTP distance is 0.003, 0.02, 0.02, 0.03, 0.02, 0.04 \u00c5, respectively. The SE of \u03c72 is 0.09, 0.44, 0.37, 0.39, 0.51, and 0.39 degree for the mutant, phosphorylated, cerubidine-, tranilast-, nilotinib, and epirubicin-bound HRASG12D systems, respectively.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig7-figsupp1-v3.jpg)\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig7-figsupp2-v3.jpg)\n\nAlso, Y32 adopted similar $\u03c7$2 angle in cerubidine-bound HRASG12D to that in the phosphorylated RAS (Figure 7C and Figure 7\u2014figure supplement 2). Considering similarities between ligand-bound HRASG12D and HRASpY32, cerubidine can be thought to have relatively more potential for preventing HRASG12D/RAF interaction. Therefore, we used cerubidine in the subsequent steps of the study to test our proof-of-concept.\n\n### Perturb-Scan-Pull method reveals that displacement of Switch I and Y32 in HRASG12D is favored in the presence of cerubidine\n\nWe further set out to investigate if displacement of Switch I and Y32 is energetically favorable in the presence of the cerubidine. To do so, we applied perturb-scan-pull (PSP) method (Jalalypour et al., 2020), which was developed to investigate conformational transitions in proteins, on cerubidine-bound HRASG12D. In this approach, initial and target states are described and the most possible path for transitioning between the initial and the target state is determined by calculating the overlap between the states. The maximum overlap is thought to give the optimum conformational transition path. To be consistent with the previous analyses, we used the same reaction coordinates, such as the distance between (i) C\u03b1 atoms of D12 and P34, and (ii) the backbone amide of G60 and P\u03b3 of GTP, as the reaction coordinates, which, reflected dynamics of Switch I and II, respectively. Accordingly, we described three and two states for Switch I and II, respectively, considering the conformations obtained by clustering of HRASG12D trajectory. Accordingly, for Switch I, if the measured distance between C\u03b1 atoms of D12 and P34 is less than 8 \u00c5, Switch I is grouped as in the closed state. On the other hand, when the atom-pair distance is above 16 \u00c5, Switch I grouped as in the open state. The distance between 8 and 16 \u00c5 is grouped as the partially open state of Switch I. Likewise, we also determined the state of the Switch II by measuring the distance between the backbone amide of G60 and P\u03b3 of GTP. If the distance is above 11 \u00c5, Switch II is grouped as in the open state, if not, in the closed state. In light of these atom-pair distances, the initial state was described as the closed state of both Switch I and II domains, since it was the most frequently sampled conformation in trajectories of the mutant HRAS. As to the target states, we described three such scenarios as shown in Figure 8. The target state-1 was described, as the open state of Switch I and the closed state of Switch II, whereas the target state-2 was described as the partially open state of Switch I and the open state of Switch II. The target state-3 corresponded to the open state of Switch I and II as shown in Figure 8.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig8-v3.jpg)\n\n**Figure 8.:** The initial state represents the conformation of the closed-state of Switch I and II. The target state-1 is described as the open state of Switch I (blue) and close state of Switch II (purple). The target state-2 represents the partially open state of Switch I and open state of Switch II. The target state-3 corresponds to open state of Switch I and II.\n\nWe applied the PSP method (Jalalypour et al., 2020) on the three scenarios given in Figure 8. The results showed that transition between the initial state and the target state-1 gave the highest overlap compared to other two states of the final state as shown in Table 3. Therefore, this finding shows that Switch I residues mainly contributed to the conformational transition of displacement of Switch I out of the nucleotide-binding pocket in HRASG12D.\n\n**Table 3.**\n The results of PRS calculations for the transition between initial and target states.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Ligand</th>\n      <th>State</th>\n      <th>D12-P34 (\u00c5)</th>\n      <th>G60-GTP (\u00c5)</th>\n      <th>PRS selected residues</th>\n      <th>PRS overlap(Oi)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cerubidinea</td>\n      <td>Initial stateb</td>\n      <td>7.7 (closed)</td>\n      <td>7.0 (closed)</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Target state-1</td>\n      <td>26.3 (open)</td>\n      <td>11.00 (closed)</td>\n      <td>34, 35, 33, 32, 37, 36</td>\n      <td>0.74\u20130.70</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Target state-2</td>\n      <td>13.9 (partially open)</td>\n      <td>15.00 (open)</td>\n      <td>35, 34, 33, 66, 16, 65</td>\n      <td>0.58\u20130.50</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Target state-3</td>\n      <td>19.5 (open)</td>\n      <td>16.9 (open)</td>\n      <td>34, 66, 35, 64, 16, 33</td>\n      <td>0.59\u20130.50</td>\n    </tr>\n  </tbody>\n</table>\n\nWe further investigated if cerubidine facilitated displacement of Switch I in terms of the energetic cost required. To this end, we performed steered molecular dynamics simulations by using ligand-free and cerubidine-bound HRASG12D systems using the coordinates obtained by PRS method as shown in bold in Table 3. Y32 and its best direction with overlap values (Oi) of 0.72 were fed to SMD simulation. The initial structure was then perturbed by pulling the C\u03b1 atom of Y32 along this direction towards the target state-1. Each simulation was repeated 70 times and the potential of mean force (PMF) was calculated. We note that in the ligand-free simulations, 9 of the pullings led to diverging paths and were excluded from the analyses as they caused erroneous free energy287 estimates (see Figure 9B), Bray et al., 2022. Conversely, in the ligand-bound SMD simulations, all simulations were on the path (see Figure 9B). Results displayed in Figure 9 indicate that while the ligand-free Ras favors the open form by 3.5 kcal/mol, there is a high barrier to the opening of the cavity of ca. 30 kcal/mol. In the presence of cerubidine, the opening is achieved with a barrierless transition. This finding shows that cerubidine facilitates the lowering of the potential barrier to the opening of Switch I and exposure of Y32.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig9-v3.jpg)\n\n**Figure 9.:** PMF is calculated for the HRASG12D system in the presence and absence of cerubidine, and each simulation was repeated 70 times. The reaction coordinate refers to the distance covered by the SMD atom (shown as a yellow bead) during the course of the pulling experiments. The initial and final structures of an SMD simulation are illustrated on the left and right sides of the figure, respectively. Yellow bead: Y32; Green bead: P34; Iceblue bead: G60; GTP and Cerubidine: Licorice representation. Errors are indicated by the thickness of the curves and are less than 0.3 kcal/mol and 0.1 kcal/mol in ligand-free and ligand-bound simulations, respectively.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig9-figsupp1-v3.jpg)\n\n### HEK-293T cells were engineered to express HRASG12D mutant\n\nTo investigate G12D-specific system properties in vitro, we established G12D mutant HRAS expressing cell lines. Human embryonic kidney cells (HEK-293T; CRL-11268, ATCC) is a widely used cell line for gene delivery studies due to their high transfection efficiencies (Ooi et al., 2016). Accordingly, as proof of concept, we aimed to introduce G12D mutant HRAS into HEK-293T cells (293T-HRASG12D). We firstly subcloned the HRASG12D gene region in the commercially available plasmid with a bacterial expression system into the eukaryotic expression plasmid carrying a puroR gene as a selection marker (See Figure 10A). Next, we showed that the transfection method reaches a high efficiency (90\u201395%) when a GFP expressing plasmid is introduced into HEK-293T cells (See Figure 10B).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig10-v3.jpg)\n\n**Figure 10.:** (a) Schematic representation of the cloning HRASG12D gene region into the eukaryotic expression plasmid (with PuroR gene to select transgene positive population) using the Gibson Assembly method and engineering HEK-293T cell line to overexpress HRASG12D protein upon transfection followed by puromycin selection. (b) Fluorescent images 293T cells transfected with GFP-encoding plasmid. (c) RT-PCR analysis showing expression levels of HRASG12D in 293T cells transfected with HRASG12D plasmid. (d) ImageJ analysis of band densities from \u2018C\u2019. (e) Western blot analysis showing expression levels of HRASG12D in 293T-HRASG12D cells. (f) ImageJ analysis of western-blot band densities. Data represent the means of three independent assays. Unpaired t-test analysis was used to test the difference between each experimental group and the control group. BF: bright field, FL: Fluorescence, ***: p<0,0001.\n\nA cDNA library of the 293T-HRASG12D cell lysates was obtained for RT-PCR analysis and we detected that the 293T-HRASG12D cells express increased levels of HRAS transcripts compared to control 293T cells (wild-type; cells with no gene transfer) (See Figure 10C and D). The primer sets can amplify both wild-type and mutant forms of HRAS since there is only one single base difference and no mutant specificity (Mu\u00f1oz-Maldonado et al., 2019). Therefore, we detected HRASG12D expression at the protein level using a G12D specific antibody. Our results showed that the transfected cells (293T-HRASG12D) express significantly high levels of HRASG12D protein compared to wild-type cells (See Figure 10E and F). Interestingly, we found out that wild-type HEK-293T cells naturally lack G12D mutant protein expressions.\n\n### Cerubidine treatment selectively inhibits the HRASG12D-RAF interaction and blocks activation of HRASG12D\n\nTo study the potential HRASG12D-RAF targeting effects of our proposed small molecule cerubidine, firstly, we determined the optimum doses of the molecule in 293T cell lines. The cells treated with a range of compound concentrations (1, 5, 10, 25, 50, 100 \u03bcM) showed 80% viability up to 10 \u03bcM treatment. Besides that, 25 \u03bcM and above cerubidine treatments were cytotoxic to the cells (See Figure 11). We then used active RAS pull-down and detection kit (Thermo) to analyze the interaction of the active RAS protein with RAF protein in the presence of cerubidine. To confirm the proper functioning of the kit, we treated 293T cell lysates with GTP\u03b3S and GDP in-vitro to activate and inactivate RAS. GTP\u03b3S is the non-hydrolyzable or slowly hydrolyzable analog of GTP. RAS is active when interacting with GTP and inactive upon binding of GDP (Simanshu et al., 2017). In this context, GTP\u03b3S was treated with RAS, which increased the interaction of the RAS protein with RAF by keeping it in its active form (See Figure 12A,B and C). Following detection of the RAS-RAF interaction, we treated 293T-HRASG12D cells with optimum doses of cerubidine and collected lysate for protein isolation at different time points. We detected a significant decrease in the active RASG12D, especially at the 12th hr of treatment. Additionally, we analyzed the presence/decrease of active wild-type HRAS in the same line and there was no significant change in active HRAS levels after cerubidine treatment. Overall data showed that the cerubidine treatment blocks HRAS-RAF interaction in a G12D-specific manner (See Figure 12D, E and F).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig11-v3.jpg)\n\n**Figure 11.:** The plot indicates the cell viability of 293T cells upon treatment with cerubidine in a dose-dependent manner (1, 5, 10, 25, 50, 100 \u03bcM).\n\n![Figure 12.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig12-v3.jpg)\n\n**Figure 12.:** (a) Scheme to outline the principle of active Ras pull-down reaction. (b) Immunoprecipitation (IP) assays show interactions of RAS with RAF proteins in the presence (Lane 1\u20132) and absence (Lane 3) of GTP\u03b3S-GDP. Protein extracts were immunoprecipitated with Raf1-RBD probe and resolved by SDS PAGE. Protein-protein interactions were immunodetected using anti-RAS antibodies. (c) ImageJ analysis of Western-blot band densities. Unpaired t-test analysis was used to test the difference between each experimental group and the control group. (d) Scheme outlining the RAF1 interacted active HRASG12D precipitation assay. (e) Immunoprecipitation (IP) assays showing interactions of RAS with RAF proteins in 293THRASG12D++ cells treated with increasing doses (1,5 and 10 \u03bcM) of Cerubudine. Protein extracts obtained at different time points (0 hr, 3 hr, and 12 hr) were immunoprecipitated with the RAF1-RBD probe and resolved by SDS-PAGE. Protein-protein interactions were immunodetected using anti-RASG12D and anti-HRAS antibodies (f) ImageJ analysis of Western-blot band densities. Unpaired t-test analysis was used to test the difference between each RASG12D group and the HRAS group. **: p<0.001, ***: p<0.0001.\n\n## Discussion\n\nDue to involvement in crucial biological processes such as cell growth, proliferation, and differentiation, the RAS protein family has been used as a hot target in drug discovery studies. However, no therapeutic molecule has yet been proven to be used in the clinics due to the absence of deep clefts on the surface of the protein. On the other hand, recently, phosphorylation has been shown to impact the function of the RAS by inhibiting its interaction with effector proteins like RAF, which is involved in the onset of various cancer types. Moreover, examination of the crystal structures pertaining to RAS/RAF complexes showed that Y32 was pointing towards the nucleotide-binding pocket, whereas it was far in the RAF inhibitor-bound RAS protein (PDB ID: 6WGN) (Zhang et al., 2020) suggesting that orientational preference of Y32 might control interaction of RAS with RAF (See Figure 13).\n\n![Figure 13.](https://cdn.elifesciences.org/articles/79747/elife-79747-fig13-v3.jpg)\n\n**Figure 13.:** (a) RAF-RBD in complex with HRAS. Y32 and GTP are shown in licorice representation, whereas protein and RAF-RBD interaction interface is shown in New Cartoon, and surface representation, respectively. (b) The displacement of Y32 from the nucleotide-binding pocket by cerubidine, which is colored with red, causes steric clash at the RAS/RAF interface.\n\nIn this study, motivated by these structural and biochemical data we set out to investigate the impact of phosphorylation on dynamics and structure of HRASWT, and aimed to induce similar modulation in the mutant HRAS by means of small therapeutics to prevent interaction with RAF. To this end, we performed extensive MD simulations on the phosphorylated HRAS and showed that the post-translational modification impacted the dynamics of Switch I and also pushed Y32 out of the nucleotide-binding pocket. Importantly, flexibility of Switch I in the mutant RAS provided a possible binding pocket in the vicinity of the nucleotide-binding site which could be targeted by FDA-approved ligands that modulated dynamics of Y32. Moreover, we also showed that displacement of Switch I and Y32 by the ligand was energetically more favorable than in the absence of the ligand.\n\nCancer cells show highly mutagenic profile and hard to treat with standard therapies without cancer cell selectivity. Additionaly, in today\u2019s medicine, personalized approaches are ultimately needed considering the individual based differences of the pathology. HRAS mutations are very common in cancer and G12D variant is primarily found in bladder urothelial carcinoma, cutaneous melanoma, infiltrating renal pelvis, ureter urothelial carcinoma, melanoma, and colorectal adenocarcinoma (The AACR Project GENIE Consortium et al., 2017). Accordingly, in our study, we showed that cancer specific G12D mutant can be targeted by small molecules to interfere with RAF interaction and eventually RAS inactivation. Targeting HRAS-G12D by small molecules can be adopted to further study cell proliferation/death kinetics considering inhibition of RAF/MEK/ERK signalling. Here, we studied HRASG12D; however, high-sequence conservation and phosphorylation present among RAS isoforms suggest the potential application of the methodology to other members in the RAS protein family. From that perspective, this study does not only provide mechanistic insight into the impact of phosphorylation but also opens up new avenues for possible use of the post-translational modification in future drug discovery studies. Hereby, we suggest further preclinical examination of our hypothesis for biological mechanisms which might potentiate their clinical uses.\n\n## Materials and methods\n\n### Molecular dynamics simulations of GTP-bound HRASpY32\n\n#### System setup for molecular dynamics simulations\n\nThe crystal structure of phosphoaminophosphonic acid-guanylate ester (GNP)-bound HRASWT (PDB ID: 5P21) (Pai et al., 1990) was retrieved from the Protein Data Bank (https://www.rcsb.org/) (Berman, 2000; Burley et al., 2019). In order to prepare its GTP-bound state, the N3B atom of GNP was substituted with oxygen atom. The crystal waters, which were located within 5 \u00c5 of the nucleotide, were kept in simulations. Following, the GTP-bound form of the protein was protonated at pH 7.4 according to the pKa values obtained from the ProPka server (S\u00f8ndergaard et al., 2011; Olsson et al., 2011). The phosphorylation of Y32 residue was made using the TP2 patch provided by CHARMM-GUI server (Johnson and Lewis, 2001). The protein, GTP and Mg2+ ion were parametrized using the CHARMM36m force-field (Best et al., 2012) while water molecules were modeled using the TIP3P water model (Mark and Nilsson, 2001). The thickness of the water layer was set to 15 \u00c5 to take periodic boundary conditions into account. Eventually, the solvated system was neutralized with 0.15 M NaCl.\n\n#### Simulation protocol\n\nThe MD simulations were employed via Compute Unified Device Architecture (CUDA) version of NAnoscale Molecular Dynamics (NAMD) (Vanommeslaeghe et al., 2010; Best et al., 2012; Vanommeslaeghe and MacKerell, 2012; Vanommeslaeghe et al., 2012; Yu et al., 2012; Soteras Guti\u00e9rrez et al., 2016), in which the graphical processing unit acceleration was enabled. Temperature, pressure, and time step were set to 310 K, 1 atm, 2 femtoseconds, respectively. In order to calculate the long-range electrostatic interactions, the particle mesh Ewald method was used (Darden, 1993; Essmann et al., 1995). For computation of non-bonded interactions, the cut-off value was adjusted to 12 \u00c5. Moreover, the prepared system was minimized for 2400 time steps. After minimization, the GTP-bound HRASpY32 system was simulated in the NPT ensemble. Four simulations were performed per each system studied, each of which started with a different velocity distribution. We performed at least ca. 1 \u03bcs per each replicate of the system except some ligand-bound systems. For those, when the opening of Switch I was observed the simulation continued additional ca. 200 ns and then ended. Obtained trajectories were analyzed by combining these four replicates. Also, time-line data per each replicate is provided as the supplementary information (Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1, Figure 4\u2014figure supplement 2, Figure 5\u2014figure supplement 1, Figure 7\u2014figure supplement 1, and Figure 7\u2014figure supplement 2).\n\n### Ensemble-based virtual screening\n\n#### Clustering the trajectory pertaining to HRASG12D, identification of possible binding pockets, and determination of pharmacophore groups\n\nThe most probable conformational state of the binding pocket pertaining to HRASG12D was determined by using following reaction coordinates: distance measured between (i) side-chain oxygen of residue T35 and P\u03b3 atom of GTP, (ii) backbone amide of the residue G60 and P\u03b3 atom of GTP, which were used to point out different conformational states of the nucleotide-bindng pocket in our previous study (Ilter and Sensoy, 2019). The frames, which represent different conformational states of the nucleotide-binding pocket with respect to the above-mentioned coordinates, were selected. Subsequently, GTP and Mg2+ were removed from the frames and proteins were optimized using the OPLS3e force-field (Roos et al., 2019) that is available in the \u2018Protein Preparation\u2019 module of the Schr\u00f6dinger software (Sastry et al., 2013; Release, 2018; Roos et al., 2019). The optimized structures were provided as inputs to the \u2018SiteMap\u2019 module of the Schr\u00f6dinger (Halgren, 2007; Halgren, 2009; Release, 2018). Subsequently, possible binding pockets having higher scores were identified and utilized in further steps. Afterwards, pharmacophore groups were built up in accordance with chemical and geometrical properties of the identified binding pockets. To do so, the \u2018Develop Pharmacophore Model\u2019 module of Schr\u00f6dinger was utilized (Salam et al., 2009; Loving et al., 2009). Following, candidate molecules, which include at least 3 of the 7 pharmacophore features and have molecular weight less than 550 kDa, were sought in the BindingDB (Gilson et al., 2016; Liu et al., 2007; Chen et al., 2001b; Chen et al., 2001a; Chen et al., 2002, DrugCentral Ursu et al., 2019; Ursu et al., 2017, NCGC Huang et al., 2011, and DrugBank Wishart et al., 2018; Law et al., 2014; Knox et al., 2011; Wishart et al., 2008; Wishart et al., 2006 databases).\n\n### Testing the stability of ligand-HRASG12D complexes via atomistic simulations\n\nAfter the selection of candidates based on their GScore values and orientations next to the nucleotide-binding pocket, the stability and the impact of the ligands on the structure and dynamics of HRASG12D were explored by means of MD simulations. To this end, the topology and parameter files of the candidate molecules were prepared using the \u2018Ligand Reader & Modeler\u2019 of CHARMM-GUI (Jo et al., 2008; Kim et al., 2017). The systems were simulated using at least two replicates, each of which started with different initial velocity distribution under the same conditions that were used for HRASpY32.\n\n### Local and global analysis of the trajectories\n\nThe trajectories were visualized with the \u2018Visual Molecular Dynamics\u2019 (VMD) and snapshots were rendered using the \u2018Taychon Render\u2019 (Humphrey et al., 1996; Stone, 1998). \u2018Groningen Machine for Chemical Simulations\u2019 (GROMACS) package and ProDy library were utilized for the local and global trajectory analysis (Abraham et al., 2015; Lindahl and van der Spoel, 2021; Bakan et al., 2011). Data were visualized using the Seaborn and Matplotlib libraries Hunter, 2007.\n\n#### Root-mean-square fluctuation\n\nThe root-mean-square fluctuation (RMSF) of backbone atoms throughout the obtained trajectories was calculated using the \u2018gmx rmsf\u2019 module of GROMACS (Abraham et al., 2015; Lindahl and van der Spoel, 2021) as shown in the below formula;\n\n$$\nRMSF=\\sqrt{(1/T)\\sumt=1N(R_{i}(t)\u2212R_{t}\u00af)}\n$$\n\nwhere T and Ri(t) correspond to the duration of simulation and coordinates of backbone atom Ri at time t, respectively. By courtesy of this, the flexibility of each residue was computed, and made a holistic comparison with the systems. Particularly, for uncovering the impact of ligands on the backbone RMSF of Y32 and RAF interaction interfaces, the backbone RMSF value of the regions/residues of interest pertaining to ligand-bound HRASG12D was subtracted from those of HRASG12D.\n\n#### probability distribution\n\nThe probability density distributions of atom-pair distances were exploited to have a closer look into the impact of the tyrosyl phosphorylation on HRASWT as well as the impact of candidate molecules on HRASG12D. To this end, the \u2018gmx distance\u2019 module of GROMACS was utilized for measuring the distance (i) between the C\u03b1 atoms of G/D12 and P34, and (ii) between the side-chain oxygen atom of Y32\u2014OH\u2014and P\u03b3 atom of GTP (Abraham et al., 2015; Lindahl and van der Spoel, 2021). The computed raw-data was converted into normalized probability density distribution plots by calculating the frequencies of the sampled distances adjusting the sampling range as 1\u00c5 via Matplotlib\u2019 library Hunter, 2007. As a side note, the sampling range of angle was set to 20\u00b0.\n\nThe probability density distribution of the distance between (i) the O\u03b3 atom of T35 and P\u03b3 of GTP, (ii) the backbone amide of G60 and P\u03b3 of GTP, and (iii) O\u03b5 atom of Q61 and P\u03b3 of GTP were also drawn. In addition to the interatomic distances, the probability density distribution of $\u03c7_{2}$2 pertaining to pY32 was also calculated.\n\n### Number of water molecules\n\nThe number of water molecules around the GTP was calculated over the course of produced trajectories to reveal the impact of mutation, tyrosyl phosphorylation, and ligands on the exposure of GTP to the possible nucleophilic water attacks via the ProDy library (Bakan et al., 2011). To this end, the water molecules within 5 \u00c5 of GTP were selected and computed per frame. Thereafter, the mean of the number of water molecules around GTP was taken as well as the standard error of the mean was calculated.\n\n### Principal component analysis\n\nIn addition to the local dynamics and structural properties of the phosphorylated system, its overall dynamics were also scrutinized via principal component analysis (PCA). The principal components of HRASpY32 were compared with those of HRASWT, and HRASG12D. By doing so, the collective effect of the tyrosyl phosphorylation was demystified. In this regard, the trajectory of HRASpY32 was aligned with respect to the C\u03b1 atoms of the reference structure, and subsequently, a diagonalized co-variance matrix was generated;\n\n$$\nC_{jk}=\u27e8M_{jk}\u0394r_{j}\u0394r_{k}\u27e9\n$$\n\nwhere Mjk\u0394 rj\u0394 rk corresponds to displacement from time-averaged structure for each coordinate of j and k atoms, whilst co-variance matrix is abbreviated by Cjk.\n\nFollowing the generation of the diagonalized co-variance matrix, eigenvectors (v) and eigenvalues ($\\delta$2) were calculated.\n\n$$\nC_{jk}=\\delta^{2}v\n$$\n\nThe diagonalized co-variance matrix was generated using the \u2018gmx covar\u2019 module of GROMACS (Abraham et al., 2015; Lindahl and van der Spoel, 2021). Thereafter, the \u2018gmx anaeig\u2019 module of GROMACS was made use of taking the projection of the trajectory with respect to the eigenvectors of interest, which eventually illuminated the collective spatial organization of the protein as well as the eigen RMSF values of the C\u03b1 atoms (Abraham et al., 2015; Lindahl and van der Spoel, 2021).\n\n### Perturb-scan-pull\n\nPSP consists of three parts, which are PRS, steered molecular dynamics (SMD), and potential of mean force (PMF) calculation (Jalalypour et al., 2020). Firstly, the PRS calculation of all the ligand-bound systems were conducted, whilst the SMD and PMF calculation were carried out for the cerubidine-bound HRASG12D system, whose dynamic and structural properties are similar to those of other studied ligand-bound systems as elucidated by atomistic simulations.\n\n#### Perturbation-response scanning\n\nPRS was performed to achieve the target states by perturbing each residues on the initial state, which, in turn, provided insight into the response of all residues in the HRASG12D. In this way, the residues, which play a pivotal role in the anticipated transitions, were aimed to be identified. To this end, the spatial position of both Switch I and II was clustered to determine initial and target states by measuring the distance between (i)the C\u03b1 atoms of D12 and P34 and (ii) the backbone amide of G60 and P\u03b3 of GTP over the course of trajectories pertaining to HRASG12D and ligand-bound HRASG12D. Following, the coarse-grain representation of each state was modeled by selecting the center of mass of the C\u03b1 atom pertaining to each residue as a node. Herein, 1000 random forces (\u0394F) in distinct directions were sequentially exerted on each node in order to perturb the initial structure (Atilgan and Atilgan, 2009). In light of the linear response theory, displacement (\u0394R) as a response to force exerted on the structure was derived from an equilibrated chunk of MD simulations;\n\n$$\n\u0394R_{1}=\u27e8R\u27e9_{1}\u2212\u27e8R\u27e9_{0}\u2245\\frac{1}{k_{B}T}\u27e8\u0394R\u0394R^{T}\u27e9_{0}\u0394F=\\frac{1}{k_{B}T}C\u0394F\n$$\n\nwhere R0 and R1 correspond to the unperturbed initial state of HRASG12D and perturbed predicted coordinates, respectively;\n\n$$\nC=\u27e8\u0394R\u0394R^{T}\u27e9_{0}\n$$\n\nwhere the cross-correlation of the fluctuations of the nodes in the initial state is denoted by C.\n\n$$\nO^{i}=\\frac{\u0394R^{i}\u22c5\u0394S}{\u2223(\u0394R\u22c5\u0394R)^{i}(\u0394S\u22c5\u0394S)\u2223^{1/2}}\n$$\n\nThe measured difference between the initial and target structures and the overlap between two nodes are denoted by \u0394S and Oi, respectively.\n\n#### Steered molecular dynamics\n\nFollowing the PRS calculation, SMD simulations were employed under the same circumstances as the above-mentioned MD simulations pertaining to HRASpY32. The set of external poses were imposed to the C\u03b1 atom of Y32, where the constant velocity and spring constant were adjusted to 0.03 \u00c5 ps\u20131 and 90 kcal mol\u20131\u00c5\u20132, respectively. Moreover, the C\u03b1 atoms of L23 and R149 residues were fixed along the pulling direction so as to prevent dislocation and rotation on the structure. The SMD runs were considered completed as long as the secondary structure of the protein was maintained and the final structure resembled the target conformation. With the time step of the simulations of 2 fs, this leads to covering a distance of ca. 40 \u00c5 in the pulling direction in ca. 3 ns. Data were recorded every 12 steps for further processing.\n\n#### Potential of mean force\n\nThe energy landscape of the transition in either presence or lack of the drug molecule, namely cerubudine, was elaborated by calculating the PMF along the pulling direction. Considering the well-established procedure (Jalalypour et al., 2020), the PMF was computed according to the second-order cumulant expansion formula via,\n\n$$\nF_{\\lambda(t)}\u2212F_{\\lambda(0)}=\u27e8W(t)\u27e9\u2212\\frac{1}{2k_{B}T}(\u27e8W(t)^{2}\u27e9\u2212\u27e8W(t)\u27e9^{2})+...\n$$\n\nFor either of the ceribudine-bound and ceribudine-free systems, 70 SMD simulations were conducted. The resulting trajectories were monitored so as to ensure they did not diverge from the intended path. In the ceribudine-bound systems, all trajectories stayed on the path, while the 9 simulations that diverged were discarded from the analyses in the ligand-free simulations. Curves were calculated by binning the displacement vs. force data, each projected on the pulling direction at intervals of 24 fs, into reaction coordinate distances of size 0.4 \u00c5. Error bars were calculated by block averaging the data in each bin as well as bootstrapping (see Figure 9\u2014figure supplement 1). SMD data and the programs used in their analyses are accessible at https://github.com/midstlab/PMF_from_SMD_data/, (copy archived at swh:1:rev:f72f6cbe253ddc4515b47f670eb936a50adc7824; MIDST lab, 2022).\n\n### Preparation of plasmid constructs encoding HRASG12D\n\nThe bacterial expression plasmid Hs.HRASG12D (83183) was obtained from Addgene (U.S). The mutant HRASG12D was then inserted between the BamHI and BlpI restriction sites under the (UbC promoter) into the lentiviral vectors with the PuroR gene. (The vector was a kind gift from Dr. Shah (Brigham and Woman\u2019s Hospital, Harvard Medical School, Boston, U.S.) and was previously characterized and widely studied Stuckey et al., 2015).\n\n### Engineering HRASG12D expressing HEK-293T cells; 293T-HRASG12D\n\nTo investigate the in vitro outcomes of our in silico findings, HEK-293T cells (CRL-11268, ATCC) were engineered to express mutant HRASG12D. HEK-293T cell lines cultured on T75 flask with high-glucose DMEM medium which contains 10% fetal bovine serum (FBS), 1% Penicillin Streptomycin at 37 \u00b0C in 5% CO2 incubator. One day (18\u201324 hr) prior to transfection, cells were seeded at an optimum density that reaches 70\u201380% confluency the next day, at the time of transfection. Plasmid DNA was transfected into cells using Trans-Hi In Vitro DNA Transfection Reagent (F90101TH, FormuMax) according to the manufacturer\u2019s recommendations. 12\u201318 hr after transfection, the medium containing the Trans-Hi/DNA complex was removed and replaced with a fresh whole serum/antibiotic-containing medium.\n\n### HRASG12D expression analysis\n\nTo use 293T-HRASG12D cells in the following experiments, first of all, we analyzed the overexpression of HRAS transcripts by reverse transcriptase-polymerase chain reaction(RT-PCR). The primer sets can not be specific to the mutant G12D since there is only 1 single base difference in G12D mutant versus wild-type HRAS. For this reason, we further evaluated G12D expression at the protein level via western blot.\n\n#### RT-PCR\n\nTo verify increased HRAS transcript levels in HEK-293T cells by RT-PCR, we firstly harvested cells expressing HRASWT and HRASG12D to prepare RNA samples. Afterward, RNA was extracted using RNeasy Mini Kit (74104, Qiagen) and the cDNA library was prepared from 1 \u03bcg of total RNA, using SuperScript VILO cDNA Synthesis kit (11754050, Invitrogen). HRAS was then amplified by RT-PCR using a standard PCR protocol on a T100 Thermal Cycler (BIO-RAD). Gene expression was normalized to that of a housekeeping gene; GAPDH (glyceraldehyde-3-phosphate dehydrogenase). The primer sets (5\u2019\u20133\u2019) used for RT-PCR were as follows:\n\nGAPDH: Fw- GTCAGTGGTGGACCTGACCT; Rv- TGCTGTAGCCAAATTCGTTG (245 bp PCR product) and HRAS: Fw- GGATCCATGACGGAATATAAGCTGG; Rv- GCTCAGCTTAGGAGAGCACACACTTGC (570 bp PCR product).\n\n#### Protein sample preparation\n\nCells were washed two times with ice-cold phosphate-buffered saline (PBS) prior to 1 X lysis buffer (25 mM Tris-HCl,150 mM NaCl, 5 mM MgCl2,1%NP-40, and 5% glycerol) involving complete Mini Protease Inhibitor Cocktail tablet (11836153001, Roche). Lysates were spun at 16,000\u00d7g for 15 min and the supernatants were reserved as protein samples. The Pierce BCA Protein Assay Reagent (23227, Thermo Fisher Scientific) was used to quantify the protein concentration of each sample.\n\n#### Western blot (WB) analysis\n\nCell lysates were resolved by sodium dodecyl sulfate (SDS)-polyacrylamide gel electrophoresis (PAGE) using Bolt 4 to 12%, Bis-Tris, 1.0 mm, Mini Protein gel (NW04120BOX, Invitrogen). Proteins were transferred into nitrocellulose membrane by iBlot 2 Dry Blotting System (Inv\u0131trogen) at constant current of 1.3 A for 7 min. Membranes were blocked with 5% BSA-ALBUMIN in Tris-buffered saline/0.1% Tween-20 for 1 hr at room temperature and incubated overnight with rabbit anti-RASG12D (mutant specific) (14429, Cell Signaling Technology) antibody. After primary antibody incubation, membranes were washed with TBST (Tris-buffered saline with 0.05% Tween-20). Secondary antibody (R-05071\u2013500, Advansta), HRP conjugated goat anti-rabbit was diluted to 1:3000 in 5% BSA and incubated for 1 hr at room temperature. Membranes were developed using ECL substrate (1705061, Bio-Rad) and a chemiluminescence signal was detected by Chemidoc (Bio-Rad). Next, \u03b2-actin levels were determined as loading controls. For this, the membrane was incubated in stripping buffer (0.2 M Glycine, 0.10% Tween-20, pH:2.5) and blocking solution before reprobing with anti-\u03b2-actin (3700, Cell Signaling Technology).\n\n### Optimization of optimum cerubidine treatment doses to target HRASG12D-RAF interaction\n\nHEK-293T cells were plated at 5000 cells/well into 96 black well plates (3603, Corning) and cultured in DMEM, high glucose (Gibco) containing 10% FBS at 37 \u00b0C in 5% CO2. Cells were cultured overnight and the compounds (dissolved in DMSO) were added to the cells at concentrations ranging from 0 to 100 \u03bcM. The cells were incubated under standard culture conditions for 24 hr. Cell viability was quantified using the CellTiterGlo Luminescent Cell Viability Assay (Promega) according to the manufacturer\u2019s instructions to measure ATP generated by metabolically active cells. Luminescent signals were measured using the SpectraMAX (Molecular Devices). The luminescence signals obtained from the compound-treated cells were normalized against the signal for DMSO-only treated cells.\n\n### Active RAS pull-down assay\n\nIn this experimental setup, we conceptually investigated \"G12D versus wild-type\" HRAS presence in the active RAS population in the cells treated with cerubidine. RAS activity was determined using Active RAS Pull-Down and Detection Kit (Thermo Fisher Scientific) following the manufacturer\u2019s instructions. Firstly, we tested the assay validity using provided supplements. Lysates were incubated with glutathione S-transferase fusion of the RAS binding domain (RBD) of RAF1 along with glutathione agarose for 1 hr. Agarose beads were collected by centrifugation and washed three times with 1 X Wash Buffer (25 mM Tris-HCl,150 mM NaCl, 5 mM MgCl2,1%NP-40, and 5%glycerol). Each sample was resuspended and boiled at 100 \u00b0C for 5 min. Samples were analyzed by western blotting as previously described. Analysis of RBD pull-down lysates was performed with mouse anti-RAS Antibody (16117, Thermo Fisher Scientific). Secondly, we prepared cell lysates from cerubidine treated 293T-HRASG12D cells. One day prior to treatment plated a sufficient number of cells so that the cell density reaches the optimal confluency (60\u201370%) at the time of treatment. Cells were incubated with increased cerubidine concentrations (1, 5, and 10 \u03bcM) for 3 hr and 12 hr (0 hr was used as control). After incubation, the active Ras pull-down assay was performed with proteins isolated from the treated and untreated cells (as described above in the protein sample preparation section). Finally, samples were subjected to western blotting as previously described. RBD pull-down lysates were probed with mouse anti-HRAS (sc-29, Santa Cruz Biotechnology), and rabbit anti-RASG12D Mutant Specific antibodies (14429, Cell Signaling Technology).\n",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "d2330419-c5e3-4363-95dc-e6f302d76d90",
+      "submission_id": "100d73ce-abcf-4dc6-8d7d-555c987dd154",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Qiang Cui, https://ror.org/05qwgg493 Boston University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79747.sa0](https://doi.org/10.7554/eLife.79747.sa0)\n\nThis study employs extensive MD simulations to probe the effect of phosphorylation of a tyrosine residue on the conformational ensemble of Ras GTPase. The insights form the basis for a screen of small molecule(s) that disrupt interaction with its target Raf kinase, and predictions are tested experimentally. Overall, the integrated approach is of interest to a wide range of biochemists and protein scientists and could potentially be used to modulate the activities of other proteins.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Qiang Cui, https://ror.org/05qwgg493 Boston University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79747.sa1](https://doi.org/10.7554/eLife.79747.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Inhibition of mutant RAS-RAF interaction by mimicking structural and dynamic properties of phosphorylated RAS\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Yuji Sugita (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe most essential revisions that the reviewers have suggested concern statistical error analysis of the simulation results, and correction of the computed free energy profile in Figure 9. Essentially all reviewers expressed major concerns about the correctness of the computed PMF, in terms of both the qualitative trend and quantitative values.\n\nReviewer #1 (Recommendations for the authors):\n\nOverall, I think the simulations have been conducted properly and analyzed carefully. However, I have two major questions.\n\n1. Foremost, the results in Figure 9 are potentially very confusing. The free energy scale here is several hundreds of kcal/mol, which is clearly not physical for the conformational rearrangement of the SwI motif. Second, even at a qualitative level, the PMF is downhill in nature without any obvious barrier. This is also largely unexpected. Finally, the downhill nature is less clear with the bound ligand, which doesn't readily explain how the ligand facilitates the conformational rearrangement in SwI as the authors claim. I think the PSP method is interesting but needs to be explained and discussed much more carefully, in terms of both qualitative features and quantitative values of the results.\n\n2. On Pg6, the authors commented on the level of hydration of the \u03b3 phosphate in various protein variants, and suggested that a higher level of hydration can explain the higher level of intrinsic GTPase activity. This correlation is not immediately obvious to me, as the enzymatic activity is often inversely correlated with the level of active site hydration since a higher hydration level likely leads to higher reorganization energy and therefore a higher activation free energy barrier.\n\nReviewer #2 (Recommendations for the authors):\n\nAs I pointed out in the public review, I recommended the authors repeat the simulations a few times for improving the statistical significance and adding the errors. Also, I have several requests about the data presentations.\n\n(1) In the distributions they showed in Figures (such as Figures 4C, 4D, 5A, 5B, and 5C), the curves are very smooth, lacking any noise. It seems to be unusual for me in MD simulations. I recommend the authors show the original data without smoothing, which is more natural for me (and readers).\n\n(2) Clarification of structural figures is required. For instance, we can't see the green characters embedded in Figures 2E and 3B. Although the key residues are annotated in Figure 1A, I suggest the authors annotate key residues in other structural figures as well.\n\n(3) PMF should be computed with enhanced sampling, such as umbrella sampling or metadynamics.\n\n(4) More technical details are required in the Methods. Program package of MD simulation (Gromacs?) should be mentioned. I don't know which force field (AMBER of CHARMM, and which version) is used in the simulation.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors need to address the issues given in the public review by:\n\n\u2022 Increasing their data range (at least five independent simulations in total) and/or proving convincingly that the data they collected is robust and the observed structural and dynamical effects are real. The most convincing way to do so is to include ensemble means and respective error bars in all distribution plots.\n\n\u2022 Clearly stating which system (WT; pY32; G12D) has been simulated and how often for how much time.\n\n\u2022 Showing data on the convergence of their results, e.g., RMSD plots of the protein backbone over time for the simulations.\n\n\u2022 Either remove the PMF data completely or search for the pathways present in the data set (see the given article J\u00e4ger et al., J. Chem. Mol. Model. 2022) and analyze trajectories according to pathways. Additionally: how many independent pulling simulations did the authors perform? How long were these simulations?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Inhibition of mutant RAS-RAF interaction by mimicking structural and dynamic properties of phosphorylated RAS\" for further consideration by eLife. Your revised article has been evaluated by Jonathan Cooper (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been substantially improved but there are some remaining issues that need to be addressed. In particular, as Reviewer #3 highlighted, it is important to clarify several technical details, especially concerning the PMF calculations.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors significantly expanded the scope of the sampling in their simulations, especially the steered MD simulations. The results are more sound and generally support the mechanistic picture that emerged from the study of the effect of phosphorylation. I think the revision is appropriate for publication.\n\nReviewer #2 (Recommendations for the authors):\n\nIn the revised manuscript, the authors addressed almost all the issues that I had been concerned about in the original one. In particular, a very large free-energy barrier in figure 9 was a big problem in the original manuscript. To resolve this, the authors added more \"pulling simulations\" to get converged the PMF as shown in the revised manuscript. Although this is a different approach than I suggested, the results are now reasonable and fine for me. I expect that this has involved their significant computations in additional molecular dynamics simulations and I appreciate their effort in the revisions.\n\nI also suggested the authors to improve the methods section for telling the technical points more clearly. According to the modified sentences (highlighted in yellow), it looks now fine.\n\nOverall, the revised manuscript has been improved greatly compared to the original submission. The authors satisfactorily addressed the questions and comments by reviewers.\n\nReviewer #3 (Recommendations for the authors):\n\nWhile the authors have addressed some of my concerns, not all points have been sufficiently addressed and need additional revisions:\n\n\u2022 The distributions in Figures 2a,b; 3a; 4c,d; 5; 7 and most of the histograms in the SI still are missing error bars. Please do the following: Calculate distributions of distances or angles for each simulation separately. Then calculate the mean distributions as a function of distance/angle, as well as the respective standard error of the mean. Display the mean distributions as lines, and the standard error of the mean as a shaded area.\n\n\u2022 Steered pulling: The PMF in Figure 9 looks much better now \u2013 too good for my experience, actually, as only 70 simulations were used as input for a 2nd cumulant expansion of the Jarzynski identity. And especially the error bars are incredibly small. I do not understand how the block averaging procedure mentioned in the text should work here. Usually, error estimation with the 2nd cumulant approximation is performed based on Jackknifing or bootstrapping \u2013 what do the respective errors look like when using this approach? What are the pulling rates employed? How was the \"pathway analysis\" performed? On what criteria were trajectories kept or discarded? And: The insight that different paths cause erroneous free energy estimates is not \"well known\", as is currently described in the text, but rather new insight \u2013 please cite, e.g., Bray et al., J. Chem. Inf. Model. 2022, 62, 4591-4604. In general, I agree here with reviewer #2 who requested Umbrella Sampling calculations instead of the steered MD results given here.\n\n\u2022 PCA: I do not find the answer to my question why only the first three eigenvectors were used convincingly. If the authors want to leave out the remaining eigenvectors that contribute the remaining 30% of cumulative eigenvalues, they need to provide evidence of why this is applicable. They could, e.g., plot free energies calculated from the simulation data along the eigenvectors and show for which eigenvectors the distributions are non-trivial, i.e., not following a normal distribution.\n",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "61d8628e-d639-4e90-8ffd-5cb8b0ecf147",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C1",
+      "claim": "RAS proteins translate into four proteins: HRAS, NRAS, KRAS4A, and KRAS4B.",
+      "claim_type": "EXPLICIT",
+      "source": "The RAS gene family translates into four proteins, namely HRAS, NRAS, KRAS4A, and KRAS4B, that control mitogen-activated protein kinase (MAPK), phosphatidylinositol 3-kinase (PI3K), and Ras-like (RAL) pathways (Barbacid, 1987; Malumbres and Barbacid, 2003; Lu et al., 2016a; Khan et al., 2019; Duffy and Crown, 2021; Simanshu et al., 2017; Ferro and Trabalzini, 2010; De Luca et al., 2012; Young et al., 2013; Knight and Irving, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "1850993c-6654-405d-ad7b-6128c1575429",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C2",
+      "claim": "RAS proteins control MAPK, PI3K, and RAL pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The RAS gene family translates into four proteins, namely HRAS, NRAS, KRAS4A, and KRAS4B, that control mitogen-activated protein kinase (MAPK), phosphatidylinositol 3-kinase (PI3K), and Ras-like (RAL) pathways (Barbacid, 1987; Malumbres and Barbacid, 2003; Lu et al., 2016a; Khan et al., 2019; Duffy and Crown, 2021; Simanshu et al., 2017; Ferro and Trabalzini, 2010; De Luca et al., 2012; Young et al., 2013; Knight and Irving, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "381db9ee-d7c9-4eea-b369-d2a39fd3980e",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C3",
+      "claim": "RAS proteins act as a binary switch modulated by GTP and GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "These small G proteins act as a binary switch as the activation of the protein is modulated by two types of nucleotides, namely, guanosine-triphosphate (GTP) and guanosine-diphosphate (GDP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and reflects established knowledge about RAS protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "f5fd2467-4823-42e5-a93a-283baf6e13b6",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C4",
+      "claim": "The exchange of GDP for GTP is maintained by guanine exchange factors (GEFs).",
+      "claim_type": "EXPLICIT",
+      "source": "The exchange of GDP for GTP is maintained by guanine exchange factors (GEFs) which, in turn, activates the RAS protein (Downward, 1990; Grand and Owen, 1991; Bourne et al., 1991; Wittinghofer and Pai, 1991; Lowy et al., 1991; Wittinghofer and Vetter, 2011; Takai et al., 2001; Lamontanara et al., 2014; Vetter and Wittinghofer, 2001; Lu et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "9de23346-7511-4a80-ac5f-6b3e9f79f77b",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C5",
+      "claim": "Activated RAS proteins can interact with their downstream effectors, initiating cellular signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, activated RAS proteins can interact with their downstream effectors, thus initiating cellular signaling pathways (Vetter and Wittinghofer, 2001; Cherfils and Zeghouf, 2013; Geyer and Wittinghofer, 1997; Lu et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "247789d7-a4e3-42ad-95c7-6ad9f59e4786",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C6",
+      "claim": "GAPs accelerate the intrinsic GTPase activity of RAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike GEFs, GTPase-activating-proteins (GAPs) accelerate the intrinsic GTPase activity of RAS, which provides a control mechanism for precise termination of respective signaling pathways (Wittinghofer et al., 1997; Lu et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "81fa1012-45b6-400f-b2f3-95fc2d6c3973",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C7",
+      "claim": "RAS proteins are made up of the G domain (residues 1\u2013172) and hypervariable region (173\u2013188 or \u2013189).",
+      "claim_type": "EXPLICIT",
+      "source": "RAS proteins are made up of two domains, namely, G domain (residues 1\u2013172) and hypervariable region (173\u2013188 or \u2013189) (O'Bryan, 2019; Khan et al., 2020, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated in the text and references Figure 1A for visual support, with citations provided.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "af48fa5a-aef6-4d15-a2fa-43f90c835a5d",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C8",
+      "claim": "The G domain consists of effector lobe (residues 1\u201386) and allosteric lobe (residues 87\u2013172).",
+      "claim_type": "EXPLICIT",
+      "source": "The G domain consists of effector (residues 1\u201386) and allosteric lobes (residues 87\u2013172).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "68765a12-608d-4834-b853-fe1f10b91a89",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C9",
+      "claim": "The effector lobe harbors the P-loop (residues 10\u201317), Switch I (30-38), and Switch II (59-76) regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The former, which is the invariant region, harbors the P-loop (residues 10\u201317), Switch I (30-38), and Switch II (59-76) regions, the last two of which adopt different conformational states depending on the type of the nucleotide (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "9c6db062-ed3e-4a57-b3eb-6fbc3a85fadd",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C10",
+      "claim": "Switch I/II adopt different conformational states depending on the type of nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "The former, which is the invariant region, harbors the P-loop (residues 10\u201317), Switch I (30-38), and Switch II (59-76) regions, the last two of which adopt different conformational states depending on the type of the nucleotide (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "bf257b07-afdc-431b-9962-d8363ede627b",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C11",
+      "claim": "Switch I/II can be found in either open or closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Switch I/II can be found in either open or closed conformation, both of which are described depending on the position of the domain with respect to the nucleotide-binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "97512637-7f7e-49d4-97cc-b6fdc2bc7d79",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C12",
+      "claim": "In the open conformation, Switch I/II is far from the nucleotide-binding pocket and prevents effector binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open conformation, Switch I/II is far from the nucleotide-binding pocket, whereas it is closer in the closed conformation. Importantly, the former prevents effector binding while the latter favors it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "715db73a-e696-4caa-8e60-daca372de963",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C13",
+      "claim": "In the closed conformation, Switch I/II is closer to the nucleotide-binding pocket and favors effector binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open conformation, Switch I/II is far from the nucleotide-binding pocket, whereas it is closer in the closed conformation. Importantly, the former prevents effector binding while the latter favors it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "05e242c4-9400-4ca5-93d7-18d0422766f4",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C14",
+      "claim": "Switch II becomes less stable upon effector binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it has been also shown that Switch II becomes less stable upon effector binding, which presumably allows RAS to cycle between catalytically incompetent and competent states in a timely manner that is important for maintaining the cell homeostasis (Johnson and Mattos, 2013; Khan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "068a8277-1d9c-4f10-8292-9e37aa463b88",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C15",
+      "claim": "RAS mutations are frequently found at the 12th, 13th, and 61st residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Since RAS proteins are involved in signaling pathways, which are responsible for cell growth, differentiation, and proliferation, mutations, which are frequently found at the 12th, 13th, and 61st residues (Prior et al., 2020; Prior et al., 2012, cause several cancer types Holderfield et al., 2014; Eser et al., 2014; Prior et al., 2012; Stephen et al., 2014; McCormick, 2015a; McCormick, 2015b; Krens et al., 2010; Lu et al., 2016a as a result of attenuated GTP hydrolysis and increased nucleotide exchange rate Vigil et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "873b0806-7312-497b-b874-377464349fb0",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C16",
+      "claim": "RAS mutations cause several cancer types as a result of attenuated GTP hydrolysis and increased nucleotide exchange rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Since RAS proteins are involved in signaling pathways, which are responsible for cell growth, differentiation, and proliferation, mutations, which are frequently found at the 12th, 13th, and 61st residues (Prior et al., 2020; Prior et al., 2012, cause several cancer types Holderfield et al., 2014; Eser et al., 2014; Prior et al., 2012; Stephen et al., 2014; McCormick, 2015a; McCormick, 2015b; Krens et al., 2010; Lu et al., 2016a as a result of attenuated GTP hydrolysis and increased nucleotide exchange rate Vigil et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "b46fad2c-2723-4f9a-9525-d9c19f03e8fc",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C17",
+      "claim": "HRASG12D is the dominant mutant in ductal carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, HRASG12D was shown to be the dominant mutant in ductal carcinoma (Myers et al., 2016) caused resistance to erlotinib, which is used as an epidermal growth factor receptor tyrosine kinase inhibitor (Hah et al., 2014), in head and neck squamous carcinoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "ebb03825-f257-4bcc-a168-ca0c60d36a92",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C18",
+      "claim": "HRASG12D caused resistance to erlotinib in head and neck squamous carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, HRASG12D was shown to be the dominant mutant in ductal carcinoma (Myers et al., 2016) caused resistance to erlotinib, which is used as an epidermal growth factor receptor tyrosine kinase inhibitor (Hah et al., 2014), in head and neck squamous carcinoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "bbf8e39e-473a-4776-8899-0f2a295fa18a",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C19",
+      "claim": "No RAS inhibitors have yet been approved for clinical use.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of extensive efforts that have been made to develop RAS inhibitors, no molecules have yet been approved for clinical use (Canon et al., 2019; Duffy and Crown, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "2873ac9f-4d2a-41d7-b892-764c21793bdb",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C20",
+      "claim": "The GTP-bound state of mutants has been targeted except for KRASG12C mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, except KRASG12C mutant, the GTP-bound state of mutants has been targeted as they either lose their intrinsic or GAP-mediated GTPase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "fe205ac0-cd38-4ec1-84a8-647bcca9764b",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C21",
+      "claim": "The intrinsic GTPase activity of KRASG12C is relatively higher than other mutants, enabling targeting in its GDP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the intrinsic GTPase activity of KRASG12C is relatively higher than the other mutants which enables targeting in its GDP-bound state (Moore et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "34e18207-8880-4358-85b5-11f70e680372",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C22",
+      "claim": "The undruggability of RAS proteins arises from lack of deep binding pockets on the surface of the protein and picomolar affinity of endogenous ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The undruggability of RAS proteins arises from lack of deep binding pockets on the surface of the protein and also picomolar affinity of the endogenous ligands which hinders development of competitive inhibitors (Gysin et al., 2011; Ledford, 2015; Cox et al., 2014; Milroy and Ottmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "fcf688e6-a0dc-4324-8584-ff516e6f5029",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C23",
+      "claim": "Phosphorylation of tyrosine at the 32nd position by Src-kinase attenuated RAF binding to HRAS and NRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that phosphorylation of the tyrosine at the 32nd position by Src-kinase attenuated RAF binding to HRAS and NRAS while elevating intrinsic GTPase activity of the proteins (Bunda et al., 2014, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated, supported by a citation, and references Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "2dd60e9a-4439-4df7-92a0-bc13f8eae906",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C24",
+      "claim": "Phosphorylation of tyrosine at the 32nd position by Src-kinase elevated intrinsic GTPase activity of HRAS and NRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that phosphorylation of the tyrosine at the 32nd position by Src-kinase attenuated RAF binding to HRAS and NRAS while elevating intrinsic GTPase activity of the proteins (Bunda et al., 2014, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated, supported by a citation, and references Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "40301a50-6266-4608-b6c3-089f89317e57",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C25",
+      "claim": "Src-kinase phosphorylated tyrosine residues at the 32nd and 64th positions of KRAS4B isoform changed conformation of Switch I and II.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recently, Kano et al. have implied that Src-kinase phosphorylated tyrosine residues at the 32nd and 64th positions of KRAS4B isoform changed conformation of Switch I and II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and attributed to Kano et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "484d91fe-82c3-4a98-88e1-f78b8a2036bd",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C26",
+      "claim": "Phosphorylation of KRAS4B led to a decrease in intrinsic GTPase activity, maintaining KRAS4B in the GTP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, this led to a decrease in intrinsic GTPase activity, thus maintaining KRAS4B in the GTP-bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a consequence of phosphorylation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "54a2fc7d-f150-40f2-84fa-10ffd0ba6d62",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C27",
+      "claim": "Phosphorylated and GTP-bound KRAS4B does not bind RAF.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, phosphorylated and GTP-bound KRAS4B was shown not to bind RAF, thus leaving the protein in the dark state (Kano et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "57733001-880d-4c06-bdce-957f1763a668",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C28",
+      "claim": "If phosphoryl groups are removed by SHP2, GTP-bound KRAS4B can interact with RAF and initiate signaling pathways through MAPK.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same study, it was also shown that if phosphoryl groups were removed by SHP2, then GTP-bound KRAS4B could interact with RAF and initiate signaling pathways through MAPK (Kano et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "d8fd9fdd-05b4-4188-ac0a-33cf076c1236",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C29",
+      "claim": "Deletion or inhibition of SHP2 could slow down tumor progression but is insufficient for tumor regression.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, it was shown that deletion or inhibition of SHP2 could slow down tumor progression, but remaining insufficient for tumor regression (Ruess et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "66cbbcd2-34d3-4ba2-bab4-4dc9a3cf7368",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C30",
+      "claim": "Phosphorylation of Y32 increased the flexibility of RAF-RBD interface compared to the mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that phosphorylation increased the flexibility of Y32 as a result of repulsion between negatively charged phosphate and GTP and also increased the flexibility of the residues that are involved in the RAF-RBD interaction interface compared to the mutant as shown in Table 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "fd99bdf7-9ec9-46c4-a65d-fbaf24d4ac9e",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C31",
+      "claim": "Phosphorylation increased the flexibility of Y32 as a result of repulsion between negatively charged phosphate and GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that phosphorylation increased the flexibility of Y32 as a result of repulsion between negatively charged phosphate and GTP and also increased the flexibility of the residues that are involved in the RAF-RBD interaction interface compared to the mutant as shown in Table 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "b4b467c5-e85b-43c5-9190-bf01724b2295",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C32",
+      "claim": "Phosphorylation did not impact the RAF-CRD interface.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, phosphorylation did not impact the RAF-CRD interface, which has been shown to play an important role in anchoring RAF to the membrane (Travers et al., 2018) as revealed by NMR and mutagenesis studies (Drugan et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "90e8f4fb-47fb-49c8-9076-f5aba0794b67",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C33",
+      "claim": "Phosphorylation pushed Switch I out of the binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that phosphorylation pushed Switch I out of the binding pocket as the distance between G12 and P34 residues increased compared to the mutant protein (Figure 2A, Figure 2\u2014figure supplement 1A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "fd5fa307-af1b-4833-8386-e5f620749e09",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C34",
+      "claim": "Phosphorylation makes the nucleotide-binding pocket more accessible to waters.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, this makes the nucleotide-binding pocket more accessible to waters, as evident from the number of waters measured within 5 \u00c5 distance of GTP: 93.60\u00b10.20, 100.30\u00b10.20, and 72.68\u00b10.17 for HRAS WT, HRASpY32, and HRASG12D,respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "963df70c-0b95-4acf-b94b-93d02d691608",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C35",
+      "claim": "Y32 formed a hydrogen bond with the P\u03b3 atom of GTP in both HRASWT and HRASG12D.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that Y32 formed a hydrogen bond with the P\u03b3 atom of GTP in both HRASWT and HRASG12D which stabilized the residue in the vicinity of the nucleotide-binding pocket (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "c1eae9f4-81f4-42c9-97d5-d638fb0a8bef",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C36",
+      "claim": "The hydrogen bond between Y32 and GTP was not formed in HRASpY32.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the hydrogen bond was not formed in HRASpY32, and Y32 was positioned far from the pocket, thus making it exposed to the environment, as evidenced by relatively longer distances measured (Figure 2B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Figures 2B and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "f0d81b9f-f4db-482d-a544-362dbc5779f4",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C37",
+      "claim": "Y32 displayed two peaks at \u2013100 to \u201390\u00b0 and 80\u201390\u00b0 in the phosphorylated RAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Y32 displayed two peaks at \u2013100 to \u201390\u00b0 and 80\u201390\u00b0 in the phosphorylated RAS, whereas it adopted 60\u201370\u00b0 in the mutant and wild-type HRAS (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Figure 3A and supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "57752220-a212-4632-9e63-79697010a980",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C38",
+      "claim": "Y32 adopted 60\u201370\u00b0 in the mutant and wild-type HRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Y32 displayed two peaks at \u2013100 to \u201390\u00b0 and 80\u201390\u00b0 in the phosphorylated RAS, whereas it adopted 60\u201370\u00b0 in the mutant and wild-type HRAS (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Figure 3A and supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "81ff51b6-ef75-4f97-b76a-9bf15ff940d4",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C39",
+      "claim": "Y32 adopted 80\u00b0 in the crystal structure of allosteric inhibitor-bound KRAS4BG12D (PDB ID:6WGN).",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to point that Y32 adopted 80\u00b0 in the crystal structure of allosteric inhibitor-bound KRAS4BG12D (PDB ID:6WGN) Zhang et al., 2020, where the residue was exposed and far from the nucleotide-binding pocket as the distance measured between the side-chain of Y32 and P\u03b3 atom of GTP was 16 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation and structural data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "3a7ef232-2c5f-4178-b422-898956245d71",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C40",
+      "claim": "Exposed conformation of Y32 was not observed in the trajectories pertaining to RAF-RBD-bound HRASWT.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein, it is important to mention that exposed conformation of Y32 was not observed in the trajectories pertaining to RAF-RBD-bound HRASWT as shown in our earlier study (Ilter and Sensoy, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "f77f549a-dada-4533-9029-50acf51b4bae",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C41",
+      "claim": "Exposure of Y32 might occlude the interaction interface formed between RAS and RAF-RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this finding suggests that exposure of Y32 might occlude the interaction interface formed between RAS and RAF-RBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a suggestion based on findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "65136816-60de-4764-9321-2ab1fc696f95",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C42",
+      "claim": "The dynamics of Switch I domain could be altered in the mutant compared to both HRASWT and HRASpY32.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, it was shown that the dynamics of Switch I domain, in particular RAF-RBD interaction interface, could be altered in the mutant, albeit to a lesser extent, compared to both HRASWT, HRASpY32.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on principal component analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "d5fc0478-1049-480c-86ee-b80c66a57eaa",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C43",
+      "claim": "The contribution of Y32 to the first five eigenvectors was higher in HRASpY32 (3.14 \u00c5) than in the mutant protein (2.87 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to mention that the contribution of Y32 to the first five eigenvectors was higher in HRASpY32 (3.14 \u00c5) than in the mutant protein (2.87 \u00c5) as seen in the RMSF values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "cca88e9f-aed3-4ae1-826f-3dcefb7e8361",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C44",
+      "claim": "The contribution of Switch II to the overall dynamics was higher in HRASWT and HRASpY32 than the mutant protein.",
+      "claim_type": "EXPLICIT",
+      "source": "ON the other hand, the contribution of Switch II, which harbors both G60 and Q61, to the overall dynamics was higher in HRASWT and HRASpY32 than the mutant protein (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "b5f9dfd1-95ca-46c6-a248-37e96de77c80",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C45",
+      "claim": "Q61 was positioned closer to the nucleotide-binding pocket in the mutant HRAS than in phosphorylated HRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Q61 was positioned closer to the nucleotide-binding pocket in the mutant HRAS than in phosphorylated HRAS whereas G60 could sample longer distances than that was sampled by both HRASpY32 and HRASWT at their maximum probability (Figure 4C and D and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Figures 4C, 4D, and supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "ea8b75b1-ab91-48fb-9373-1eaf0131f9d6",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C46",
+      "claim": "Cerubidine, tranilast, nilotinib, and epirubicin could induce similar dynamics and structural changes seen in the phosphorylated RAS protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that cerubidine, tranilast, nilotinib, and epirubicin could induce similar dynamics and structural changes which were seen in the phosphorylated RAS protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "bff327e3-5b85-4d95-8769-6e7d3de6bee8",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C47",
+      "claim": "Cerubidine was more likely to trigger displacement of Switch I and Y32 away from the nucleotide-binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that cerubudine was more likely to trigger displacement of Switch I and Y32 away from the nucleotide-binding pocket, whereas the impact of nilotinib and epirubicin was not remarkable (See Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Figures 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "4a47b757-ceba-4b0f-8592-552981f43c8d",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C48",
+      "claim": "Cerubidine can help elevate the intrinsic GTPase activity of the mutant RAS by exposing GTP to water.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is tempting to suggest that cerubidine can help elevate the intrinsic GTPase activity of the mutant RAS by exposing GTP to water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a suggestion based on findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "40a1b5e1-3329-433a-8227-ee8e3a200cbb",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C50",
+      "claim": "Transition between the initial state and the target state-1 gave the highest overlap compared to other two states.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that transition between the initial state and the target state-1 gave the highest overlap compared to other two states of the final state as shown in Table 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "43f77181-583b-42f6-a201-e9549fba4efe",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C51",
+      "claim": "Switch I residues mainly contributed to the conformational transition of displacement of Switch I out of the nucleotide-binding pocket in HRASG12D.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this finding shows that Switch I residues mainly contributed to the conformational transition of displacement of Switch I out of the nucleotide-binding pocket in HRASG12D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on PRS calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "9e25813c-93b4-4eee-b9b0-96478b953eca",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C52",
+      "claim": "Ligand-free Ras favors the open form by 3.5 kcal/mol with a high barrier to opening of ca. 30 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "Results displayed in Figure 9 indicate that while the ligand-free Ras favors the open form by 3.5 kcal/mol, there is a high barrier to the opening of the cavity of ca. 30 kcal/mol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "4f5443b4-dd9e-49e0-aeec-de025e961913",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C53",
+      "claim": "In the presence of cerubidine, the opening is achieved with a barrierless transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of cerubidine, the opening is achieved with a barrierless transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on PMF calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "ac59f35b-fa74-4e05-848a-69feb2e03d3a",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C54",
+      "claim": "Cerubidine facilitates the lowering of the potential barrier to the opening of Switch I and exposure of Y32.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding shows that cerubidine facilitates the lowering of the potential barrier to the opening of Switch I and exposure of Y32.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on computational findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "ebf3736c-9f9c-4682-841e-a3a3175f4814",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C55",
+      "claim": "293T-HRASG12D cells express increased levels of HRAS transcripts compared to control 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A cDNA library of the 293T-HRASG12D cell lysates was obtained for RT-PCR analysis and we detected that the 293T-HRASG12D cells express increased levels of HRAS transcripts compared to control 293T cells (wild-type; cells with no gene transfer) (See Figure 10C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Figures 10C and 10D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "2202904e-a07b-4c3f-a247-688ca46c0397",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C56",
+      "claim": "Transfected cells (293T-HRASG12D) express significantly high levels of HRASG12D protein compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that the transfected cells (293T-HRASG12D) express significantly high levels of HRASG12D protein compared to wild-type cells (See Figure 10E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Figures 10E and 10F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "fd61e864-9e2b-491d-96a4-fd3fe661b9e4",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C57",
+      "claim": "Wild-type HEK-293T cells naturally lack G12D mutant protein expressions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found out that wild-type HEK-293T cells naturally lack G12D mutant protein expressions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "d3b4cec8-0bc6-40ef-9ae7-07f7380e2840",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C58",
+      "claim": "Cells treated with 25 \u03bcM and above cerubidine treatments were cytotoxic.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells treated with a range of compound concentrations (1, 5, 10, 25, 50, 100 \u03bcM) showed 80% viability up to 10 \u03bcM treatment. Besides that, 25 \u03bcM and above cerubidine treatments were cytotoxic to the cells (See Figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "3cabc0c8-0de5-411e-a3d3-0425f38ff0bc",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C59",
+      "claim": "Cerubidine treatment blocks HRAS-RAF interaction in a G12D-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall data showed that the cerubidine treatment blocks HRAS-RAF interaction in a G12D-specific manner (See Figure 12D, E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Figures 12D, 12E, and 12F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "5aef43be-9487-4d01-92ec-e68203303f01",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C60",
+      "claim": "There was a significant decrease in the active RASG12D, especially at the 12th hr of cerubidine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a significant decrease in the active RASG12D, especially at the 12th hr of treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "3bd6f117-4609-4c82-9a1d-d339577e1e7a",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C61",
+      "claim": "There was no significant change in active HRAS levels after cerubidine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we analyzed the presence/decrease of active wild-type HRAS in the same line and there was no significant change in active HRAS levels after cerubidine treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "5578724d-f0c7-437b-8aac-8bb23e2ea2b1",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C62",
+      "claim": "HRAS mutations are very common in cancer and G12D variant is primarily found in bladder urothelial carcinoma, cutaneous melanoma, infiltrating renal pelvis, ureter urothelial carcinoma, melanoma, and colorectal adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "HRAS mutations are very common in cancer and G12D variant is primarily found in bladder urothelial carcinoma, cutaneous melanoma, infiltrating renal pelvis, ureter urothelial carcinoma, melanoma, and colorectal adenocarcinoma (The AACR Project GENIE Consortium et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "00c33143-59b4-4b55-8086-5d44f3c9fae5",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C63",
+      "claim": "Cancer specific G12D mutant can be targeted by small molecules to interfere with RAF interaction and eventually RAS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, in our study, we showed that cancer specific G12D mutant can be targeted by small molecules to interfere with RAF interaction and eventually RAS inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "8ea29ad1-b7be-4e87-b480-3c64a0c6cbc2",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C64",
+      "claim": "High-sequence conservation and phosphorylation present among RAS isoforms suggest the potential application of the methodology to other members in the RAS protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we studied HRASG12D; however, high-sequence conservation and phosphorylation present among RAS isoforms suggest the potential application of the methodology to other members in the RAS protein family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a suggestion based on sequence conservation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "f679aa72-7adb-481c-ac20-e257814cf7c0",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C65",
+      "claim": "Mimicking dynamics invoked by phosphorylation might provide an alternative strategy for inhibiting mutant RAS/RAF interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings suggest that mimicking dynamics invoked by phosphorylation might provide an alternative strategy for inhibiting mutant RAS/RAF interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a suggestion based on findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "a81e91a5-6a37-425a-b8b2-cf36ed807097",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C66",
+      "claim": "Targeting Switch I, hence making Y32 accessible might open up new avenues in future drug discovery strategies that target mutant RAS proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these findings suggest that targeting Switch I, hence making Y32 accessible might open up new avenues in future drug discovery strategies that target mutant RAS proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a suggestion based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "2c71c4df-5492-40e7-86f5-374f6934bf10",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C67",
+      "claim": "The crystal structure of phosphoaminophosphonic acid-guanylate ester (GNP)-bound HRASWT (PDB ID: 5P21) was retrieved from the Protein Data Bank.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of phosphoaminophosphonic acid-guanylate ester (GNP)-bound HRASWT (PDB ID: 5P21) (Pai et al., 1990) was retrieved from the Protein Data Bank (https://www.rcsb.org/) (Berman, 2000; Burley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "d727e904-558a-4b12-89d7-ef8117d20968",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C68",
+      "claim": "The N3B atom of GNP was substituted with oxygen atom to prepare the GTP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to prepare its GTP-bound state, the N3B atom of GNP was substituted with oxygen atom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a methodological step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "8189fd89-dd3e-48b9-92e8-75bf69826b72",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C69",
+      "claim": "The protein, GTP and Mg2+ ion were parametrized using the CHARMM36m force-field.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein, GTP and Mg2+ ion were parametrized using the CHARMM36m force-field (Best et al., 2012) while water molecules were modeled using the TIP3P water model (Mark and Nilsson, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "64189a25-491a-4556-9523-72cdcec4dec5",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C70",
+      "claim": "Water molecules were modeled using the TIP3P water model.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein, GTP and Mg2+ ion were parametrized using the CHARMM36m force-field (Best et al., 2012) while water molecules were modeled using the TIP3P water model (Mark and Nilsson, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "9a79ead2-4f8b-4627-aa56-d2a674820cf1",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C71",
+      "claim": "Four simulations were performed per each system studied, each of which started with a different velocity distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Four simulations were performed per each system studied, each of which started with a different velocity distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "2db55660-c48a-4f5e-9bd2-d1d46c6dd7cd",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C72",
+      "claim": "At least ca. 1 \u03bcs per each replicate of the system was performed except some ligand-bound systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed at least ca. 1 \u03bcs per each replicate of the system except some ligand-bound systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "54d6d006-1b42-4905-a455-0afe2c705c31",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C73",
+      "claim": "A total of 4292 molecules was retrieved from the databases.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 4292 molecules was retrieved from the databases (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "01b7cf88-735c-4842-a41a-9e5069a2bc56",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C74",
+      "claim": "HEK-293T cells (CRL-11268, ATCC) is a widely used cell line for gene delivery studies due to their high transfection efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Human embryonic kidney cells (HEK-293T; CRL-11268, ATCC) is a widely used cell line for gene delivery studies due to their high transfection efficiencies (Ooi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "757bd0ab-0a71-42a7-945b-4d1a0759ac64",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C75",
+      "claim": "The transfection method reaches a high efficiency (90\u201395%) when a GFP expressing plasmid is introduced into HEK-293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we showed that the transfection method reaches a high efficiency (90\u201395%) when a GFP expressing plasmid is introduced into HEK-293T cells (See Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "95de2651-62ee-4dbc-9bc4-efc2ec8b6109",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C76",
+      "claim": "GTP\u03b3S is the non-hydrolyzable or slowly hydrolyzable analog of GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "GTP\u03b3S is the non-hydrolyzable or slowly hydrolyzable analog of GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "ef1a763d-9bcc-44fe-9a59-7e3040a82d91",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C77",
+      "claim": "RAS is active when interacting with GTP and inactive upon binding of GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "RAS is active when interacting with GTP and inactive upon binding of GDP (Simanshu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "3b4a9a98-98c2-4fae-965a-7498657b1b11",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "claim_id": "C78",
+      "claim": "GTP\u03b3S treatment increased the interaction of the RAS protein with RAF by keeping it in its active form.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, GTP\u03b3S was treated with RAS, which increased the interaction of the RAS protein with RAF by keeping it in its active form (See Figure 12A,B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Figures 12A, 12B, and 12C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "33af23ac-19e0-47b6-a58e-436551c72300",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on RAS protein structure, function, and role in cancer based on prior literature. RAS proteins are binary switches controlled by GTP/GDP, with mutations at positions 12, 13, and 61 causing cancer through impaired GTPase activity. RAS proteins have been difficult to target therapeutically due to lack of deep binding pockets and high affinity for endogenous ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 are all explicitly stated and supported by extensive citations to prior literature. These claims establish well-accepted background knowledge about RAS protein biology, structure, and therapeutic challenges. No original experimental data is presented for these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "956d2117-4c41-4450-9523-9edf0142367b",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work has shown that phosphorylation of RAS proteins by Src-kinase at Y32 (and Y64 in KRAS4B) modulates RAS function by attenuating RAF binding and affecting GTPase activity. Dephosphorylation by SHP2 restores RAF binding and signaling. SHP2 inhibition slows but does not reverse tumor progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 accurately summarize prior published work (Bunda et al. 2014, Kano et al. 2019, Ruess et al. 2018) on phosphorylation-mediated regulation of RAS. The claims are explicitly stated with appropriate citations and provide the rationale for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "e371eac2-debd-4d21-8d57-5bf50896828a",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phosphorylation of Y32 increases the flexibility of Y32 and RAF-RBD interface residues in HRAS compared to the G12D mutant, due to electrostatic repulsion between the phosphate group and GTP. Phosphorylation does not affect the RAF-CRD interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by RMSF data presented in Table 1 from MD simulations. The mechanistic explanation (electrostatic repulsion, C31) is reasonable but represents an inference from the simulation data. The lack of effect on RAF-CRD (C32) is supported by both simulation data and citations to prior structural studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "5451b2ce-5127-4213-b0e7-3935e08c12fe",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Phosphorylation pushes Switch I away from the nucleotide-binding pocket, making it more accessible to water molecules. The distance between G12 and P34 increases, and the number of water molecules within 5\u00c5 of GTP increases from 72.68\u00b10.17 (G12D) to 100.30\u00b10.20 (pY32).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by quantitative distance measurements and water counting from MD simulations (Figure 2A, supplementary figures). The data shows clear differences between phosphorylated and mutant forms with appropriate error estimates provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "62482373-c80d-4076-bd8a-cd8141898e90",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Y32 forms a hydrogen bond with GTP in wild-type and G12D mutant HRAS, stabilizing it near the nucleotide-binding pocket. In phosphorylated HRAS, this hydrogen bond is absent and Y32 adopts different dihedral angles (\u03c72: -100 to -90\u00b0 and 80-90\u00b0) compared to wild-type/mutant (60-70\u00b0), resulting in an exposed conformation. This exposed conformation was not observed in RAF-RBD-bound HRAS and may occlude the RAS/RAF-RBD interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 are supported by distance measurements (Figure 2B, 2D, 2E) and dihedral angle distributions (Figure 3A) from MD simulations. The comparison to crystal structure 6WGN (C39) and prior simulation work (C40) strengthens the interpretation. The suggestion that Y32 exposure occludes RAF binding (C41) is a reasonable inference but requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "3cd960a5-0472-4571-88f0-70ce1b5bd9ee",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Principal component analysis reveals that Switch I dynamics are altered in the G12D mutant compared to wild-type and phosphorylated HRAS. Y32 contributes more to overall dynamics in phosphorylated HRAS (3.14\u00c5) than in the mutant (2.87\u00c5). Switch II contributes more to dynamics in wild-type and phosphorylated HRAS than in the mutant, with Q61 positioned closer to the nucleotide-binding pocket in the mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by PCA data (Figure 4A) and distance measurements (Figures 4C, 4D). The analysis appropriately uses the first five eigenvectors representing ~50% of overall dynamics. Quantitative RMSF values and distance distributions are provided with error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "74247d51-8c80-4040-8d1c-642537ea79a0",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Four FDA-approved drugs (cerubidine, tranilast, nilotinib, epirubicin) identified through virtual screening can induce similar structural and dynamic changes in HRASG12D as seen in phosphorylated HRAS. Cerubidine is most effective at displacing Switch I and Y32 from the nucleotide-binding pocket and may elevate intrinsic GTPase activity by exposing GTP to water.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by MD simulation data comparing ligand-bound HRASG12D to phosphorylated HRAS (Figures 7A, 7B, 7C, Supplementary file 1). Cerubidine shows the most pronounced effects on Switch I displacement and Y32 positioning. The suggestion about GTPase activity (C48) is reasonable speculation based on increased water accessibility but requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "66cd3eb3-7f1e-4c6a-975e-369d6037e1a6",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Perturbation-response scanning (PRS) analysis shows that the transition from closed to open Switch I (target state-1) has the highest overlap compared to other conformational transitions. Switch I residues (34, 35, 33, 32, 37, 36) mainly contribute to this conformational transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by PRS calculations presented in Table 3, showing overlap values of 0.74-0.70 for target state-1 versus 0.58-0.50 and 0.59-0.50 for other states. The identification of key residues is based on the PRS methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "270c3cd0-4adc-4e9e-9f97-57aed1d5e6f3",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Potential of mean force (PMF) calculations from steered molecular dynamics show that ligand-free HRASG12D favors the open Switch I conformation by 3.5 kcal/mol but has a high energy barrier (~30 kcal/mol) to opening. In the presence of cerubidine, the opening occurs with a barrierless transition, indicating that cerubidine facilitates Switch I opening and Y32 exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by PMF data in Figure 9 from 70 SMD simulations per condition (with 9 divergent trajectories excluded from ligand-free analysis). The dramatic reduction in energy barrier with cerubidine is clearly demonstrated. Error estimates are provided (<0.3 and <0.1 kcal/mol). This is a key computational finding supporting the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "cfc45f31-8013-4c99-9cef-67629475b406",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "HEK-293T cells were successfully engineered to overexpress HRASG12D mutant protein. RT-PCR shows increased HRAS transcript levels, and Western blot with G12D-specific antibody confirms significantly elevated HRASG12D protein expression compared to wild-type cells. Wild-type HEK-293T cells naturally lack G12D mutant protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by RT-PCR data (Figures 10C, 10D) and Western blot analysis (Figures 10E, 10F) with appropriate statistical analysis (p<0.0001). The use of a G12D-specific antibody addresses the limitation that RT-PCR primers cannot distinguish mutant from wild-type transcripts. This establishes a valid experimental system for testing drug effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "d61091e2-263d-4782-ba4f-22787e6fb0e1",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cerubidine shows dose-dependent cytotoxicity in HEK-293T cells, with 80% viability maintained up to 10 \u03bcM treatment, while 25 \u03bcM and higher concentrations are cytotoxic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by cell viability data in Figure 11 showing dose-response across concentrations from 1-100 \u03bcM. This establishes appropriate non-toxic doses (1, 5, 10 \u03bcM) for subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "7c21ccd6-b0f5-4b2b-b875-78d8579e484b",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cerubidine treatment blocks HRAS-RAF interaction in a G12D-specific manner. Active RASG12D levels significantly decrease, especially at 12 hours of treatment, while active wild-type HRAS levels show no significant change after cerubidine treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by immunoprecipitation assays using RAF1-RBD pulldown (Figures 12D, 12E, 12F) with appropriate controls (GTP\u03b3S/GDP treatment, Figure 12A-C). The G12D-specific effect is demonstrated by comparing G12D-specific and pan-HRAS antibodies. Statistical analysis shows significance (p<0.001, p<0.0001). This is the key experimental validation of the computational predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "05267bed-42fc-48d5-b1bc-030e85f2c280",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study demonstrates that cancer-specific G12D mutant can be targeted by small molecules to interfere with RAF interaction. The approach of mimicking phosphorylation-induced dynamics may provide an alternative strategy for inhibiting mutant RAS/RAF interaction and could potentially be applied to other RAS isoforms given high sequence conservation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C66 represent the authors' interpretation and speculation about broader implications. While C62 (cancer prevalence) is supported by citation and C63 (targeting G12D) is supported by the experimental data, claims C64-C66 are speculative suggestions about future applications. The generalizability to other RAS isoforms (C64) and the therapeutic potential (C65-C66) require additional validation beyond this single study with one mutant and one drug candidate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    },
+    {
+      "id": "00c47295-dee4-48e0-88e6-e28f904d0c24",
+      "content_id": "7e68543a-4ade-4a37-b4eb-e7b9e36a5c6a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript describes comprehensive computational and experimental methods including MD simulation setup (crystal structure preparation, force fields, simulation parameters), virtual screening workflow (4292 molecules screened), cell line engineering (HEK-293T transfection with 90-95% efficiency), and validation assays (active RAS pulldown).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C78 describe methodological details that are explicitly stated with appropriate citations. The methods appear standard and well-documented. Simulation parameters (CHARMM36m force field, TIP3P water, 4 replicates per system, ~1 \u03bcs per replicate) and experimental procedures (transfection efficiency, GTP\u03b3S controls) are clearly specified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:35:21.547644Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "61d8628e-d639-4e90-8ffd-5cb8b0ecf147",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "1850993c-6654-405d-ad7b-6128c1575429",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "381db9ee-d7c9-4eea-b369-d2a39fd3980e",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "f5fd2467-4823-42e5-a93a-283baf6e13b6",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "9de23346-7511-4a80-ac5f-6b3e9f79f77b",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "247789d7-a4e3-42ad-95c7-6ad9f59e4786",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "81fa1012-45b6-400f-b2f3-95fc2d6c3973",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "af48fa5a-aef6-4d15-a2fa-43f90c835a5d",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "68765a12-608d-4834-b853-fe1f10b91a89",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "9c6db062-ed3e-4a57-b3eb-6fbc3a85fadd",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "bf257b07-afdc-431b-9962-d8363ede627b",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "97512637-7f7e-49d4-97cc-b6fdc2bc7d79",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "715db73a-e696-4caa-8e60-daca372de963",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "05e242c4-9400-4ca5-93d7-18d0422766f4",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "068a8277-1d9c-4f10-8292-9e37aa463b88",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "873b0806-7312-497b-b874-377464349fb0",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "b46fad2c-2723-4f9a-9525-d9c19f03e8fc",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "ebb03825-f257-4bcc-a168-ca0c60d36a92",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "bbf8e39e-473a-4776-8899-0f2a295fa18a",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "2873ac9f-4d2a-41d7-b892-764c21793bdb",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "fe205ac0-cd38-4ec1-84a8-647bcca9764b",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "34e18207-8880-4358-85b5-11f70e680372",
+      "result_id": "33af23ac-19e0-47b6-a58e-436551c72300"
+    },
+    {
+      "claim_id": "fcf688e6-a0dc-4324-8584-ff516e6f5029",
+      "result_id": "956d2117-4c41-4450-9523-9edf0142367b"
+    },
+    {
+      "claim_id": "2dd60e9a-4439-4df7-92a0-bc13f8eae906",
+      "result_id": "956d2117-4c41-4450-9523-9edf0142367b"
+    },
+    {
+      "claim_id": "40301a50-6266-4608-b6c3-089f89317e57",
+      "result_id": "956d2117-4c41-4450-9523-9edf0142367b"
+    },
+    {
+      "claim_id": "484d91fe-82c3-4a98-88e1-f78b8a2036bd",
+      "result_id": "956d2117-4c41-4450-9523-9edf0142367b"
+    },
+    {
+      "claim_id": "54a2fc7d-f150-40f2-84fa-10ffd0ba6d62",
+      "result_id": "956d2117-4c41-4450-9523-9edf0142367b"
+    },
+    {
+      "claim_id": "57733001-880d-4c06-bdce-957f1763a668",
+      "result_id": "956d2117-4c41-4450-9523-9edf0142367b"
+    },
+    {
+      "claim_id": "d8fd9fdd-05b4-4188-ac0a-33cf076c1236",
+      "result_id": "956d2117-4c41-4450-9523-9edf0142367b"
+    },
+    {
+      "claim_id": "66cbbcd2-34d3-4ba2-bab4-4dc9a3cf7368",
+      "result_id": "e371eac2-debd-4d21-8d57-5bf50896828a"
+    },
+    {
+      "claim_id": "fd99bdf7-9ec9-46c4-a65d-fbaf24d4ac9e",
+      "result_id": "e371eac2-debd-4d21-8d57-5bf50896828a"
+    },
+    {
+      "claim_id": "b4b467c5-e85b-43c5-9190-bf01724b2295",
+      "result_id": "e371eac2-debd-4d21-8d57-5bf50896828a"
+    },
+    {
+      "claim_id": "90e8f4fb-47fb-49c8-9076-f5aba0794b67",
+      "result_id": "5451b2ce-5127-4213-b0e7-3935e08c12fe"
+    },
+    {
+      "claim_id": "fd5fa307-af1b-4833-8386-e5f620749e09",
+      "result_id": "5451b2ce-5127-4213-b0e7-3935e08c12fe"
+    },
+    {
+      "claim_id": "963df70c-0b95-4acf-b94b-93d02d691608",
+      "result_id": "62482373-c80d-4076-bd8a-cd8141898e90"
+    },
+    {
+      "claim_id": "c1eae9f4-81f4-42c9-97d5-d638fb0a8bef",
+      "result_id": "62482373-c80d-4076-bd8a-cd8141898e90"
+    },
+    {
+      "claim_id": "f0d81b9f-f4db-482d-a544-362dbc5779f4",
+      "result_id": "62482373-c80d-4076-bd8a-cd8141898e90"
+    },
+    {
+      "claim_id": "57752220-a212-4632-9e63-79697010a980",
+      "result_id": "62482373-c80d-4076-bd8a-cd8141898e90"
+    },
+    {
+      "claim_id": "81ff51b6-ef75-4f97-b76a-9bf15ff940d4",
+      "result_id": "62482373-c80d-4076-bd8a-cd8141898e90"
+    },
+    {
+      "claim_id": "3a7ef232-2c5f-4178-b422-898956245d71",
+      "result_id": "62482373-c80d-4076-bd8a-cd8141898e90"
+    },
+    {
+      "claim_id": "f77f549a-dada-4533-9029-50acf51b4bae",
+      "result_id": "62482373-c80d-4076-bd8a-cd8141898e90"
+    },
+    {
+      "claim_id": "65136816-60de-4764-9321-2ab1fc696f95",
+      "result_id": "3cd960a5-0472-4571-88f0-70ce1b5bd9ee"
+    },
+    {
+      "claim_id": "d5fc0478-1049-480c-86ee-b80c66a57eaa",
+      "result_id": "3cd960a5-0472-4571-88f0-70ce1b5bd9ee"
+    },
+    {
+      "claim_id": "cca88e9f-aed3-4ae1-826f-3dcefb7e8361",
+      "result_id": "3cd960a5-0472-4571-88f0-70ce1b5bd9ee"
+    },
+    {
+      "claim_id": "b5f9dfd1-95ca-46c6-a248-37e96de77c80",
+      "result_id": "3cd960a5-0472-4571-88f0-70ce1b5bd9ee"
+    },
+    {
+      "claim_id": "ea8b75b1-ab91-48fb-9373-1eaf0131f9d6",
+      "result_id": "74247d51-8c80-4040-8d1c-642537ea79a0"
+    },
+    {
+      "claim_id": "bff327e3-5b85-4d95-8769-6e7d3de6bee8",
+      "result_id": "74247d51-8c80-4040-8d1c-642537ea79a0"
+    },
+    {
+      "claim_id": "4a47b757-ceba-4b0f-8592-552981f43c8d",
+      "result_id": "74247d51-8c80-4040-8d1c-642537ea79a0"
+    },
+    {
+      "claim_id": "40a1b5e1-3329-433a-8227-ee8e3a200cbb",
+      "result_id": "66cd3eb3-7f1e-4c6a-975e-369d6037e1a6"
+    },
+    {
+      "claim_id": "43f77181-583b-42f6-a201-e9549fba4efe",
+      "result_id": "66cd3eb3-7f1e-4c6a-975e-369d6037e1a6"
+    },
+    {
+      "claim_id": "9e25813c-93b4-4eee-b9b0-96478b953eca",
+      "result_id": "270c3cd0-4adc-4e9e-9f97-57aed1d5e6f3"
+    },
+    {
+      "claim_id": "4f5443b4-dd9e-49e0-aeec-de025e961913",
+      "result_id": "270c3cd0-4adc-4e9e-9f97-57aed1d5e6f3"
+    },
+    {
+      "claim_id": "ac59f35b-fa74-4e05-848a-69feb2e03d3a",
+      "result_id": "270c3cd0-4adc-4e9e-9f97-57aed1d5e6f3"
+    },
+    {
+      "claim_id": "ebf3736c-9f9c-4682-841e-a3a3175f4814",
+      "result_id": "cfc45f31-8013-4c99-9cef-67629475b406"
+    },
+    {
+      "claim_id": "2202904e-a07b-4c3f-a247-688ca46c0397",
+      "result_id": "cfc45f31-8013-4c99-9cef-67629475b406"
+    },
+    {
+      "claim_id": "fd61e864-9e2b-491d-96a4-fd3fe661b9e4",
+      "result_id": "cfc45f31-8013-4c99-9cef-67629475b406"
+    },
+    {
+      "claim_id": "d3b4cec8-0bc6-40ef-9ae7-07f7380e2840",
+      "result_id": "d61091e2-263d-4782-ba4f-22787e6fb0e1"
+    },
+    {
+      "claim_id": "3cabc0c8-0de5-411e-a3d3-0425f38ff0bc",
+      "result_id": "7c21ccd6-b0f5-4b2b-b875-78d8579e484b"
+    },
+    {
+      "claim_id": "5aef43be-9487-4d01-92ec-e68203303f01",
+      "result_id": "7c21ccd6-b0f5-4b2b-b875-78d8579e484b"
+    },
+    {
+      "claim_id": "3bd6f117-4609-4c82-9a1d-d339577e1e7a",
+      "result_id": "7c21ccd6-b0f5-4b2b-b875-78d8579e484b"
+    },
+    {
+      "claim_id": "5578724d-f0c7-437b-8aac-8bb23e2ea2b1",
+      "result_id": "05267bed-42fc-48d5-b1bc-030e85f2c280"
+    },
+    {
+      "claim_id": "00c33143-59b4-4b55-8086-5d44f3c9fae5",
+      "result_id": "05267bed-42fc-48d5-b1bc-030e85f2c280"
+    },
+    {
+      "claim_id": "8ea29ad1-b7be-4e87-b480-3c64a0c6cbc2",
+      "result_id": "05267bed-42fc-48d5-b1bc-030e85f2c280"
+    },
+    {
+      "claim_id": "f679aa72-7adb-481c-ac20-e257814cf7c0",
+      "result_id": "05267bed-42fc-48d5-b1bc-030e85f2c280"
+    },
+    {
+      "claim_id": "a81e91a5-6a37-425a-b8b2-cf36ed807097",
+      "result_id": "05267bed-42fc-48d5-b1bc-030e85f2c280"
+    },
+    {
+      "claim_id": "2c71c4df-5492-40e7-86f5-374f6934bf10",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "d727e904-558a-4b12-89d7-ef8117d20968",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "8189fd89-dd3e-48b9-92e8-75bf69826b72",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "64189a25-491a-4556-9523-72cdcec4dec5",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "9a79ead2-4f8b-4627-aa56-d2a674820cf1",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "2db55660-c48a-4f5e-9bd2-d1d46c6dd7cd",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "54d6d006-1b42-4905-a455-0afe2c705c31",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "01b7cf88-735c-4842-a41a-9e5069a2bc56",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "757bd0ab-0a71-42a7-945b-4d1a0759ac64",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "95de2651-62ee-4dbc-9bc4-efc2ec8b6109",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "ef1a763d-9bcc-44fe-9a59-7e3040a82d91",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    },
+    {
+      "claim_id": "3b4a9a98-98c2-4fae-965a-7498657b1b11",
+      "result_id": "00c47295-dee4-48e0-88e6-e28f904d0c24"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study is a nested case-control design within the China Kadoorie Biobank (CKB) prospective cohort. After quality control, 491 incident CHD cases and 491 matched controls were included, with DNA methylation measured using the Infinium Methylation EPIC BeadChip covering ~850,000 CpG sites, resulting in 747,726 CpG sites retained after QC. Technical reproducibility was high (correlation 0.992-0.997), and 90% of CHD diagnoses were confirmed by medical record review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design and methodology are well-documented with appropriate quality control measures (C24-C31). The nested case-control design within a prospective cohort is appropriate for the research question. Technical validation through duplicate measurements shows excellent reproducibility, and outcome validation through medical record review demonstrates high accuracy (C27, C31). Sample sizes and matching criteria are clearly specified (C102-C104).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Baseline characteristics showed that CHD cases (mean age 50.6\u00b17.6 years) had significantly higher prevalence of cardiovascular risk factors compared to controls (mean age 49.5\u00b17.3 years), including higher rates of smoking, unhealthy dietary habits, higher BMI, hypertension, diabetes, and worse lipid profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The baseline characteristics are clearly reported with appropriate statistical comparisons between cases and controls (C32-C39). The differences in risk factors between cases and controls are consistent with established CHD epidemiology, supporting the validity of case ascertainment. These findings provide important context for interpreting the methylation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Single-marker EWAS identified two CpG sites significantly associated with incident CHD at FDR<0.05: cg23398826 (annotated to SNX30, OR=0.56 per SD, P=1.57E-08) and cg02386575 (annotated to IMPDH2/QRICH1, OR=2.00 per SD, P=9.61E-08). The genomic inflation factor was 1.09, indicating minimal residual confounding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-marker analysis is appropriately conducted with comprehensive covariate adjustment and surrogate variable analysis (C40-C47). The genomic inflation factor of 1.09 suggests adequate control of confounding (C40). The two identified CpG sites meet stringent genome-wide significance thresholds (FDR<0.05), and effect sizes are substantial and precisely estimated with confidence intervals provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "WGCNA identified five co-methylation modules, with the Brown module (2,106 CpG sites) significantly associated with incident CHD (P=6.41E-08). Within this module, 24 CpGs were significantly associated with CHD at module-specific FDR<0.01. Gene enrichment analysis revealed significant enrichment for intracellular signaling, transcription regulation, and associations with tobacco use disorder, stroke, and kidney disease. Combined with single-marker results, 25 total CpGs were identified with ORs ranging from 0.53 to 2.18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The WGCNA approach is methodologically sound with appropriate permutation testing to control false positives (C48-C56, C105-C107). The Brown module shows strong statistical association with CHD, and functional enrichment analysis provides biological plausibility (C50-C53). The identification of hub genes (ZNF790, CC2D1B, TBR1, RERE, PLXNB2) adds network-level insights. The combined approach of single-marker and network analysis strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Methylation at cg08106661 (ANKS1A) was associated with smoking intensity (P=0.001), and mediation analysis revealed that 28.5% of smoking-associated CHD risk was mediated through methylation at this site (P=0.036). Three loci were associated with diet score and two with BMI, but no significant mediation effects were observed for these lifestyle factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The association between cg08106661 methylation and smoking is statistically significant with appropriate effect size reporting (C57). The mediation analysis is properly conducted with significant mediation proportion (C58). The lack of significant mediation for diet and BMI is appropriately reported (C59-C61), demonstrating selective rather than universal mediation effects, which increases confidence in the smoking-methylation pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Methylation at cg23398826 (SNX30) was associated with lower blood pressure (6.4 mmHg lower SBP and 3.6 mmHg lower DBP in top vs. bottom quartile, both P=0.003). Mediation analysis showed that 7.65% of CHD risk associated with cg23398826 was mediated via SBP (P=0.003) and 6.39% via DBP (P=0.006). Similar mediation effects were observed for cg13311494 (PEMT) through SBP (15.61%) and DBP (12.38%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The associations between methylation and blood pressure are statistically significant with clinically meaningful effect sizes (C62-C63). The mediation analyses are properly conducted with significant P-values for both SBP and DBP pathways (C64-C67). The consistency of findings across two CpG sites (cg23398826 and cg13311494) strengthens the evidence for blood pressure as a mediator. However, the cross-sectional measurement of methylation and blood pressure limits causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Four of 25 identified CpGs map to genes previously associated with cardiovascular disease in GWAS. Specifically, cg08106661 maps to ANKS1A, which regulates EGFR\u2014a pathway implicated in endothelial dysfunction and atherogenesis. SNPs in ANKS1A have been linked to CHD and smoking behavior. More than 25% of smoking-associated CHD risk was mediated through methylation at cg08106661, suggesting smoking-induced epigenetic modification plays an important role in the pathway from smoking to CHD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biological interpretation is well-supported by prior GWAS findings and mechanistic knowledge (C68-C71). The mediation analysis provides quantitative evidence for the smoking-methylation-CHD pathway (C72). The interpretation that smoking-induced epigenetic modification plays a role in CHD pathogenesis is reasonable given the data (C73), though the claim remains somewhat speculative without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Five CHD-associated CpG loci were linked to blood pressure in previous GWAS. cg23398826 is located in the promoter region of SNX30, a sorting nexin family member involved in endocytic trafficking. SNX30 has been associated with DBP night-to-day ratio in GWAS. Blood pressure mediated ~10% of the reduced CHD risk related to cg23398826 methylation, suggesting epigenetic regulation at this locus influences blood pressure and subsequent CHD risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The connection to prior GWAS findings strengthens the biological plausibility (C74, C78). The genomic location and functional annotation of SNX30 are clearly described (C75-C77). The mediation analysis provides quantitative evidence for the blood pressure pathway (C79). However, the interpretation that epigenetic regulation influences blood pressure and CHD risk (C80) is somewhat speculative given the cross-sectional measurement of methylation and blood pressure, limiting causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The CHD-associated co-methylation network (Brown module) was enriched for genes involved in intracellular signaling pathways. Intracellular signaling is a vital mechanism by which cells respond to environmental cues, and a previous in vitro study of cardiac hypertrophy found differentially methylated promoters involved in intracellular signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional enrichment analysis is appropriately conducted and shows significant enrichment for intracellular signaling (C81). The biological interpretation is supported by established knowledge about cellular signaling (C82) and prior experimental evidence (C83). However, the functional implications remain somewhat speculative without direct experimental validation in the context of CHD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Previous Asian EWAS of CHD were cross-sectional with small sample sizes, limiting causal inference. A large prospective meta-analysis in European populations (11,461 participants) identified 52 CpG sites associated with CHD using the 450K array. Three genes identified in the current study (ANKS1A, RERE, EDC3) were replicated at the gene level in a small study of atherosclerotic aorta samples, suggesting consistent methylation patterns in blood leukocytes and atherosclerotic lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior studies is well-documented with appropriate citations (C84-C88). The acknowledgment of differences in study design, population, and array platform provides context for the lack of direct CpG-level replication. The gene-level replication in atherosclerotic tissue (C88) provides some validation, though the interpretation of consistent patterns between blood and tissue (C89) remains speculative without direct comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "This is the first prospective and largest EWAS of CHD in the Asian population. The prospective design allows identification of methylation changes that potentially predict future CHD risk. The EPIC array provides extensive coverage of CpG islands, genes, and enhancers (~850,000 sites), though this increases the multiple testing burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of being the first prospective and largest Asian EWAS is supported by the literature review (C90). The advantage of prospective design for temporal inference is correctly stated (C91). The description of EPIC array coverage and the acknowledgment of increased multiple testing burden are accurate (C92-C93). The study appropriately addresses multiple testing through FDR correction and network-based approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Despite comprehensive adjustment for covariates and use of surrogate variable analysis, residual confounding remains possible. However, the Q-Q plot indicated minimal inflation (genomic inflation factor 1.09). Cases and controls were not randomized on arrays, and adjusting for batch effects may reduce statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of potential residual confounding is appropriate and scientifically honest (C94). The Q-Q plot evidence for minimal inflation provides reassurance (C95). The limitations regarding array randomization and batch effect adjustment are clearly stated (C96-C97). These limitations are common in large-scale methylation studies and do not fundamentally undermine the findings given the multiple lines of evidence and validation approaches used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CHD is a leading cause of morbidity and mortality worldwide, with considerable unexplained risk despite known genetic and environmental factors. DNA methylation, a common epigenetic modification, forms an interface between genotype and environment and is responsive to smoking, alcohol, obesity, and associated with hypertension and diabetes. Previous EWAS of CHD were characterized by small sample sizes, Western populations, and limited prospective studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations to established literature (C1-C14). The claims accurately represent the current state of knowledge regarding CHD epidemiology, DNA methylation biology, and limitations of prior EWAS studies. This provides appropriate context and justification for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C99",
+      "C100"
+    ],
+    "result": "In 982 participants (mean age 50.1 years), methylation at 25 CpG sites was associated with incident CHD (FDR<0.05 or module-specific FDR<0.01), with effect sizes ranging from 47% decreased to 118% increased CHD risk per SD methylation change. Mediation analyses revealed 28.5% of smoking-associated CHD risk was mediated by ANKS1A methylation, and 7.7% and 6.4% of SNX30 methylation-associated CHD risk was mediated via SBP and DBP, respectively. Network analysis identified a CHD-associated co-methylation module. These findings suggest epigenetic regulations play a role in pathways to CHD risk through lifestyle and cardiometabolic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary accurately represents the main findings of the study (C16-C23, C99-C100). The statistical evidence is strong with appropriate multiple testing correction, and the mediation analyses provide mechanistic insights. The interpretation that epigenetic regulation plays a role in CHD pathways is reasonable given the data, though somewhat speculative without experimental validation. The prospective design strengthens causal inference compared to cross-sectional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C101"
+    ],
+    "result": "Future studies with samples at multiple time points preceding CHD onset are needed to understand dynamic changes in methylation and expression during CHD progression. Studies are warranted to validate findings, elucidate functional mechanisms of identified CpGs, and translate findings toward preventive or clinical implications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These recommendations for future research are appropriate and well-justified (C98, C101). The call for longitudinal methylation measurements addresses a key limitation of single-timepoint assessment. The need for validation, mechanistic studies, and clinical translation is standard and appropriate for discovery-phase EWAS research.",
+    "result_type": "MINOR"
+  }
+]

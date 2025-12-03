@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Temperature regulates colony rugosity in V. cholerae strains lacking functional HapR. The rugose colony-forming strain co969 formed smooth colonies below 22\u00b0C, and this temperature-dependent phenotype was observed in multiple HapR-deficient strains but not in HapR-sufficient strains. Deletion of hapR in HapR+ strains conferred temperature-dependent rugosity, while complementation with functional hapR eliminated it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 provide converging genetic and phenotypic evidence demonstrating that temperature-dependent colony morphology requires the absence of functional HapR. The complementation experiments (C32-C33) and observations across multiple strains (C30-C31) provide strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Biofilm structural genes (vpsL, bap1, vpsI/II clusters, rbmA/C) are upregulated 10-20 fold at 37\u00b0C compared to 22\u00b0C in HapR-deficient co969 colonies, while known biofilm transcriptional regulators (vpsT, vpsR, hapR) show no differential expression. This temperature-dependent expression is absent in HapR-complemented strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by both qRT-PCR (C34-C36) and RNA-seq data (C37-C39) showing consistent upregulation of structural genes but not regulators. The absence of differential expression in known regulators (C39) is a critical negative result that motivated the genetic screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Transposon mutagenesis screening of 11,000 mutants identified VC2744 (BipA ortholog) as the most highly represented gene conferring rugose colony morphology at 22\u00b0C. Deletion of VC2744 caused rugosity at low temperature, and complementation with V. cholerae VC2744 or BipA homologs from E. coli or P. putida restored smooth morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic screen (C40-C42) identified BipA through an unbiased approach, and the phenotype was validated by clean deletion (C47) and complementation with both native and heterologous BipA (C48-C49). Cross-species complementation (C49) provides strong evidence for functional conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "BipA acts upstream of VpsR and VpsT in the biofilm regulatory hierarchy and is epistatic to HapR. Deletion of bipA increased rugosity only in HapR- strains, and \u0394bipA \u0394vpsR and \u0394bipA \u0394vpsT double mutants remained smooth, indicating BipA requires downstream biofilm regulators to affect colony morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistasis experiments (C51, C57) clearly demonstrate the genetic relationships. The double mutant analysis (C57-C59) provides strong evidence that BipA acts upstream of VpsR/VpsT, as loss of these regulators is epistatic to loss of BipA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C124"
+    ],
+    "result": "BipA protein levels are regulated post-transcriptionally by temperature. BipA protein levels were approximately 10-fold higher at 22\u00b0C compared to 37\u00b0C, while bipA transcript levels remained unchanged. This temperature-dependent regulation occurred independently of HapR status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 demonstrate a clear disconnect between transcript and protein levels, supported by both RNA-seq/qRT-PCR (C62) and Western blot (C63). The observation in both HapR+ and HapR- backgrounds (C64) strengthens the conclusion of HapR-independent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C125",
+      "C126"
+    ],
+    "result": "BipA exhibits temperature-dependent conformational changes that appear irreversible. Circular dichroism experiments showed that BipA pre-incubated at different temperatures (37\u00b0C, 22\u00b0C, 15\u00b0C) exhibited different CD curves, and shifting from 37\u00b0C to 22\u00b0C did not reverse the conformational state, suggesting temperature affects BipA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CD experiments (C65-C67) provide biophysical evidence for temperature-dependent conformational changes. The irreversibility observation (C66-C67) is particularly important for understanding the mechanism of temperature sensing. However, the connection to protein stability (C125-C126) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "LonA protease regulates biofilm-associated colony morphology but does not control BipA levels. Deletion of lonA resulted in smooth colonies at both temperatures, while overexpression increased rugosity, but BipA protein levels were unchanged in \u0394lonA, indicating LonA acts through a BipA-independent pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic experiments (C70-C71) establish LonA's role in biofilm regulation, while the Western blot data (C72) clearly demonstrate that LonA does not regulate BipA protein levels. This negative result (C73-C74) is important for ruling out a simple proteolytic control mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "BipA is required for optimal 50S ribosomal subunit assembly at low temperature in V. cholerae. Cells lacking BipA grown at 22\u00b0C showed increased proportions of free subunit particles and a shoulder of slower-migrating 50S particles, consistent with a modest 50S assembly defect. No differences were observed at 37\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sucrose gradient sedimentation data (C76-C78) provide direct biochemical evidence for BipA's role in ribosome assembly at low temperature. The temperature-specificity (C78) and comparison to E. coli (C79) strengthen the interpretation, though the defect is described as modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Loss of BipA alters production of >300 proteins at 22\u00b0C, with 250 proteins more abundant and 52 less abundant in \u0394bipA cells. Proteomic differences were greater at 22\u00b0C than 37\u00b0C, and upregulated proteins included biofilm components and proteins involved in localization and transport, confirming BipA inhibits biofilm formation at low temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative proteomics data (C80-C83) provide comprehensive evidence for BipA's broad influence on protein production. The temperature-dependence (C80) and functional enrichment (C83-C84) support the proposed mechanism. The scale of changes (>300 proteins) is substantial and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "BipA selectively controls translation of biofilm-related genes at low temperature. \u03b2-galactosidase assays showed increased translation of biofilm structural genes (vpsL, vpsU, bap1) and regulators (vpsR, vpsT) in \u0394bipA at 22\u00b0C, while housekeeping genes (gyrA, hfq, mrcA) were unaffected. Transcriptional levels of vpsR and vpsT remained unchanged, indicating post-transcriptional control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The translational reporter assays (C89, C92) combined with the negative controls (C90-C91) and transcriptional data (C93) provide strong evidence for selective translational control. The disconnect between transcription and translation (C93) is critical for establishing the post-transcriptional mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "BipA affects bacterial motility independently of HapR. The \u0394bipA mutant exhibited 10-20% reduced motility compared to wild-type, with slightly greater reduction at 22\u00b0C than 37\u00b0C, and this phenotype was observed in both HapR+ and HapR- backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The motility assays (C86-C87) demonstrate a modest but consistent effect of BipA on motility. The observation in both genetic backgrounds (C88) establishes HapR-independence. However, the magnitude of the effect is relatively small (10-20%).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C112",
+      "C114"
+    ],
+    "result": "The authors propose a model where perturbed ribosome assembly in the absence of BipA leads to altered free subunit ratios, which selectively enhances translation of key regulatory proteins (VpsR/VpsT), resulting in transcriptional activation of the biofilm regulon. This represents combined transcriptional and translational control of biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This mechanistic model (C103) is explicitly speculative and integrates multiple observations. While the individual components are supported (ribosome defects, increased VpsR/VpsT translation, biofilm activation), the causal chain connecting altered subunit ratios to selective translation enhancement (C102) is based on general principles rather than direct experimental evidence in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "BipA overexpression at 37\u00b0C led to only subtle reduction in rugosity compared to 22\u00b0C, suggesting BipA activity is higher or more consequential at lower temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overexpression experiment (C60) provides evidence for temperature-dependent BipA activity, though the effect is described as subtle. The inference about temperature-dependent activity (C61) is reasonable given the protein level data and phenotypic observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "HapR and BipA function through independent pathways but both contribute to repression of biofilm gene expression. HapR does not regulate BipA production or influence BipA's effect on motility, yet either HapR or BipA alone is sufficient to prevent rugose colony morphology under appropriate conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data clearly show HapR does not regulate BipA (C110) and that either regulator alone can prevent rugosity (C111). The conclusion about independent but convergent pathways (C112) is well-supported by the genetic epistasis experiments throughout the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "BipA function in temperature-dependent protein synthesis is conserved across Proteobacteria. BipA from E. coli and P. aeruginosa complemented V. cholerae \u0394bipA temperature-dependent phenotypes, suggesting similar roles at suboptimal temperatures across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-species complementation experiments (C119) provide strong evidence for functional conservation. The inference about conserved roles (C120) is well-supported, though the exact mechanisms may differ between species as discussed elsewhere in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The mechanism of BipA temperature regulation differs between E. coli and V. cholerae. BipA regulation is transcriptional in E. coli but post-transcriptional in V. cholerae, as evidenced by unchanged transcript levels but increased protein levels at low temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distinction between transcriptional control in E. coli (C122, supported by citation) and post-transcriptional control in V. cholerae (C123, supported by RNA-seq and Western blot data) is clearly established. This represents an important species-specific difference in regulatory strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Proteomic analysis revealed that BipA impacts diverse cellular processes beyond biofilm formation, including virulence, competence, quorum sensing, and protein secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the comprehensive proteomic analysis showing >300 differentially produced proteins with diverse functions. However, the manuscript focuses primarily on biofilm-related effects, and these other processes are not extensively characterized.",
+    "result_type": "MINOR"
+  }
+]

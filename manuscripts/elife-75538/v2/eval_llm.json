@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C40",
+      "C102"
+    ],
+    "result": "Dynein core components (DHC, DLIC, Lis1) and the dynactin regulator p150Glued are essential for Drosophila oocyte growth during mid-oogenesis. Among dynein activating adaptors, BicD is specifically required for oocyte growth, while Spindly and Hook are dispensable for this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide convergent genetic evidence using multiple RNAi lines and dominant-negative constructs showing complete oocyte growth arrest with proper early specification. The Orb marker data (C31-C32) demonstrates that the phenotype is specific to transport rather than early developmental defects. The adaptor screen (C34-C35, C40) is well-controlled with validation of RNAi efficacy (C36-C39), establishing BicD as the critical adaptor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C103"
+    ],
+    "result": "Microtubules are not static tracks but are actively moved by dynein within nurse cells and from nurse cells to oocytes through ring canals, with peak movement at stage 9 at ~140 nm/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 provide direct live-imaging evidence using multiple microtubule markers (photoconversion, EMTB, Patronin, Jupiter) showing robust microtubule movement. The dynein-dependence is convincingly demonstrated by complete loss of movement in Dhc64C-RNAi (C55, C57). Quantitative velocity measurements (C45) provide reproducible metrics. The use of multiple independent visualization methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C58",
+      "C59",
+      "C61",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The observed microtubule movement represents a distinct phase from myosin-II-driven nurse cell dumping, occurring during stages 8-9 when nurse cells are still growing, and is dynein-dependent but myosin-II-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 provide multiple lines of evidence distinguishing this process from dumping: timing (C120-C121), nurse cell growth vs. shrinkage (C47, C121), motor dependence (C50-C51, C58, C122), and comparison with dumpless mutants (C52-C53, C123). The zip-RNAi experiments with pMLC validation (C50) and zip2 germline clones (C52) provide strong genetic controls. The convergence of temporal, cellular, and genetic criteria is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Synchronized bulk cargo movement occurs through ring canals at stage 9, coinciding with the most rapid oocyte growth phase. The measured flow velocities (~140-150 nm/s) are consistent with the calculated requirements for 10-fold oocyte growth within 6 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 demonstrate synchronized cargo movement that is dynein-dependent and myosin-II-independent. The temporal correlation with peak oocyte growth (C124-C125) is well-documented. The quantitative analysis (C126-C128) showing agreement between calculated required flow (~150 nm/s) and measured velocities (~140 nm/s for microtubules, slightly lower for mitochondria) provides strong biophysical support. The differential velocities for different cargo sizes (C128) is consistent with viscous drag physics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C104",
+      "C114"
+    ],
+    "result": "Neutral GEM particles that do not interact with motors are transported from nurse cells to oocytes in a dynein-dependent manner, demonstrating that direct motor-cargo interaction is not necessary for transport and supporting a bulk flow mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 establish GEMs as appropriate neutral particles showing Brownian motion in S2R+ cells. The dramatic change to directed movement in egg chambers (C68-C69) and complete loss in dynein-RNAi (C70) provides strong evidence for bulk flow. The experimental design is elegant: GEMs serve as a critical negative control demonstrating that cargo-motor interaction is not required. The quantitative tracking data (referenced in methods) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C105",
+      "C115",
+      "C146"
+    ],
+    "result": "A cortically-anchored minus-end directed motor (either F-Tractin-BicD or F-Tractin-Kin14VIb) is sufficient to partially rescue oocyte growth and Orb localization in dynein/BicD knockdown, and to restore mitochondrial transport, demonstrating that microtubule gliding by cortical motors drives cargo transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 show that cortical BicD recruitment provides partial rescue with appropriate controls (F-Tractin alone). The Kin14VIb experiment (C76-C79) is particularly compelling as this plant kinesin cannot interact with Drosophila cargo adaptors (C116), isolating the gliding function. The rescue of both oocyte size (C76) and Orb localization (C77) in >95% of samples, plus restoration of mitochondrial flow (C79), provides strong functional evidence. However, the rescue is partial (C76), suggesting additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C106",
+      "C141"
+    ],
+    "result": "The C-terminus of dynein light intermediate chain (DlicCT) is sufficient to target dynein to the nurse cell cortex, independent of BicD, and both DlicNT and DlicCT are necessary for oocyte growth function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 demonstrate functional complementation using the LOVTRAP system, showing both truncations are necessary. The localization data (C85-C86) clearly shows cortical targeting by DlicCT. The independence from BicD (C86-C87) is well-demonstrated. However, the mechanism of cortical recruitment remains unresolved (C98), which is appropriately acknowledged. The experimental design using optogenetic reconstitution is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C148"
+    ],
+    "result": "DlicCT cortical localization is independent of known dynein regulators including dynactin/p150, Lis1, and the actin-microtubule crosslinker Shot, indicating a novel cortical anchoring mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C92, and C94 provide systematic testing of candidate linkers using loss-of-function approaches. The persistence of cortical DlicCT localization in all tested conditions is clearly demonstrated. However, this is primarily negative data showing what is NOT required. The actual mechanism remains unknown (C95, C98), and the speculation about potential linkers (C149-C157) is not tested. The conclusion of a 'novel mechanism' is justified but incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Stage-specific microtubule flow through ring canals (robust at stage 9 but limited at stages 6-8) may be controlled by developmental changes in microtubule organization within ring canals, transitioning from plus-ends-in (stages 1-8) to minus-ends-out (stages 8-9) orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C130 document the stage-specific timing with observational data. The proposed mechanism (C131, C134-C137) based on microtubule polarity changes is logical and supported by citations (C132-C133, C136), but is largely speculative (C131, C137 marked as SPECULATION). Direct evidence for the 'plug' model (C135) or the reorganization facilitating flow (C137) is limited. This represents a reasonable hypothesis requiring further testing, such as direct polarity measurements in ring canals at different stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C138",
+      "C139"
+    ],
+    "result": "The dynein-driven microtubule flow represents a novel intermediate phase of nurse cell-to-oocyte transport occurring between early selective transport (stages 1-8) and late nurse cell dumping (stages 10B-11), essential for rapid oocyte growth at stage 9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 establish the previously known two-phase model with appropriate citations. Claim C111 introduces the new phase with strong experimental support from earlier results. Claim C138 synthesizes the evidence into a coherent model. The inference about combined defects in dynein mutants (C139) is logical given the stage-specific flow data. This represents a significant conceptual advance in understanding oogenesis, well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The directional flow from nurse cells to oocytes may be controlled by differential dynein activity levels, with higher cortical dynein and microtubule density in nurse cells compared to oocytes, potentially regulated by the gatekeeper protein Shot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C161 provide observational data on differential dynein and microtubule localization. However, the mechanistic explanations (C159, C162, C163, C165) are largely speculative. While the Shot hypothesis (C163-C165) is based on prior work (C164), direct evidence linking Shot to flow directionality is lacking. The model is plausible but requires experimental validation, such as measuring flow directionality in Shot mutants or manipulating dynein levels differentially.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C101",
+      "C107",
+      "C140"
+    ],
+    "result": "This study reveals a novel 'go-with-the-flow' mechanism where cortically-anchored dynein glides microtubules to create cytoplasmic advection for bulk cargo transport, representing the first report of this mechanism in interphase cells and contrasting with kinesin-1-driven intracellular streaming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 assert novelty, which is supported by the comprehensive experimental evidence from earlier results. The comparison with kinesin-1 (C168-C172) appropriately contextualizes the finding, showing both motors can drive bulk flow but through different mechanisms (cortical gliding vs. microtubule sliding) and for different purposes (intercellular vs. intracellular). The claim of being 'first report' (C167) is strong but depends on literature knowledge. The overall conclusion (C101, C107, C140) is well-supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C177"
+    ],
+    "result": "The dynein-driven bulk transport mechanism is highly efficient for large cells and may be conserved in vertebrate oogenesis, where ring canals also connect germline cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C173 about efficiency is supported by citation but is somewhat general. Claim C174 is a reasonable inference from the data. However, claims C175 and C177 about vertebrate conservation are speculative. While ring canals exist in vertebrates (C175), and dynein is conserved (C177), no direct evidence is provided for this mechanism in vertebrates. This represents an interesting hypothesis for future work but is not demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C99",
+      "C100"
+    ],
+    "result": "Background claims establishing the known roles of dynein in cellular transport, oogenesis, and the conventional model of cargo transport along stationary microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C24, C99-C100) provide essential background context and are well-supported by appropriate citations to established literature. They accurately represent the prior state of knowledge and set up the contrast with the novel findings. The characterization of the conventional model (C100) is important for understanding the paradigm shift proposed by this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Validation of RNAi efficacy for Spindly and Hook through demonstration of expected loss-of-function phenotypes (embryonic lethality for Spindly, hooked bristles for Hook).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 demonstrate Spindly-RNAi causes expected lethality in both maternal and zygotic contexts. Claims C38-C39 show hook-RNAi phenocopies the known bristle phenotype. This validation is important for interpreting the negative result in oocyte growth (C35), confirming that lack of phenotype is not due to ineffective RNAi. The controls are appropriate and well-executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Unlike in neurons where Spindly anchors dynein to cortical actin, Spindly is not required for dynein-dependent oocyte growth, indicating tissue-specific mechanisms for dynein cortical targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 establishes the neuronal mechanism with appropriate citations. Claim C144 provides clear negative data from Figure 1F. The inference of tissue-specific mechanisms (C145) is reasonable given the contrasting requirements. However, this is primarily a negative result that raises questions rather than providing mechanistic insight. The conclusion is valid but limited in scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Speculation about potential cortical linkers for Dlic including Baz/Par-3, SKTL, 14-3-3, and NuMA/Mud, with discussion of possible genetic redundancy explaining lack of oocyte phenotypes in single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C153 cite relevant interactions and localizations from the literature. Claim C154 proposes these as candidate linkers, which is reasonable speculation. However, claim C155 notes that single mutants lack oocyte phenotypes, which weakens the hypothesis. The explanations offered (C156-C157) are purely speculative with no experimental support. This represents hypothesis generation rather than tested conclusions and should be clearly framed as such.",
+    "result_type": "MINOR"
+  }
+]

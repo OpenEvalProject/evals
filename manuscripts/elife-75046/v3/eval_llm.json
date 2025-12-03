@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The BashTheBug project launched on April 8, 2017, and attracted substantial volunteer participation with 9,372 volunteers completing 778,202 classifications across two collection periods (2017 and 2020). Participation was highly unequal, with a Gini coefficient of 0.85, where the top 10 volunteers contributed 13.1% of all classifications while nearly half did 10 or fewer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 provide consistent, specific statistics about project launch dates, volunteer participation numbers, and inequality metrics. The data are internally consistent and supported by referenced figures. The Gini coefficient calculation and participation statistics are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "BashTheBug's participation inequality (Gini coefficient 0.85) is higher than the mean for Zooniverse projects (0.80) and biomedical projects specifically (0.67), ranking 17th highest out of 63 surveyed Zooniverse projects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 cite appropriate prior work (Cox et al., 2015; Spiers et al., 2019, 2020) for comparison data and provide specific rankings. The comparison is methodologically sound, though C25 notes the biomedical mean was based on only three projects, appropriately acknowledging this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C86",
+      "C87"
+    ],
+    "result": "Volunteers spent a median of 3.5 seconds per drug image, with minimal variation across incubation times but observable differences between drugs after 14 days. A single plate requires approximately 13 minutes of volunteer time for 17 classifications per drug.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C86, C87 provide specific timing statistics supported by referenced figures. The calculation in C87 (13 min per plate) follows logically from C86 (3.5 s per image). The unexpected finding that timing doesn't vary with incubation time (C29) is appropriately noted as surprising.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "An Expert+AMyGDA consensus reference dataset was constructed from 6,205 drug images (49.7% of total) where both laboratory scientist and AMyGDA software agreed. This dataset is biased toward easier-to-read images with lower MIC dilutions (61.4% vs 45.8% with dilution 1-2) but has similar growth levels in positive controls as the larger Expert dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 describe the construction and characteristics of the reference dataset with specific statistics. The authors appropriately acknowledge the selection bias (C40) and demonstrate that it's not due to growth differences (C37). The reasoning about error sources (C36) is transparent, though the assumed \u22645% expert error rate lacks direct citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In the absence of an international standard for Mycobacterial AST, the authors applied ISO 20776-2 for aerobic bacteria, which requires \u226595% reproducibility and \u226590% accuracy (both measured by essential agreement, defined as within \u00b11 doubling dilution).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 appropriately cite the ISO standard and acknowledge the limitation that no Mycobacterial-specific standard exists. The definitions of exact and essential agreement are clearly stated and properly attributed. The application of an aerobic bacteria standard to Mycobacteria is acknowledged as tentative (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Individual volunteers showed 74.6% exact agreement and 86.4% essential agreement with the Expert+AMyGDA reference. Agreement varied by dilution (64.1% for no growth, 94.5% for dilution 8), with volunteers systematically biased toward higher dilutions (5-10\u00d7 more likely to overcall than undercall).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 provide detailed statistics about individual volunteer performance with appropriate references to supplementary data and figures. The systematic bias toward overcalling (C50-C51) is well-documented. The variation in agreement by dilution (C48) supports the inference about task difficulty (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "For reproducibility using 17 classifications, the mode achieved 89.2\u00b10.1% exact agreement and 94.1\u00b10.1% essential agreement, the median 86.9\u00b10.1% and 94.2\u00b10.1%, and the mean 74.3\u00b10.1% and 97.2\u00b10.1%. Only the mean exceeded the 95% essential agreement threshold for reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide precise statistics with standard errors and appropriate comparison to the ISO threshold (C56) and expert performance (C55, citing Rancoita et al., 2018 at 97.9%). The data are internally consistent and supported by referenced figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "For accuracy using 17 classifications, the mode achieved 80.9\u00b10.1% exact agreement and 91.0\u00b10.1% essential agreement, the median 78.1\u00b10.1% and 90.2\u00b10.1%, and the mean 68.4\u00b10.1% and 88.5\u00b10.1%. Both median and mode exceeded the 90% accuracy threshold, with volunteers systematically biased toward higher dilutions than experts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide detailed accuracy statistics with appropriate comparison to ISO thresholds. The conclusion that median and mode perform equally well (C60) is supported by the similar statistics. The inference about rare bi-modal distributions (C61) follows logically from the similarity of median and mode performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C68"
+    ],
+    "result": "Accuracy is less sensitive than reproducibility to reducing the number of classifications, and a simple dynamic retirement strategy (retiring images when first 3 volunteers agree) could reduce required classifications by 48% while maintaining or improving performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C68 are supported by the analysis showing that dynamic retirement at n=3 for unanimous agreement reduces classifications from 17 to 8.8 while maintaining essential agreement at 94.2-94.4% for reproducibility and 90.2-90.3% for accuracy. The conclusion is based on actual data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The amount of bacterial growth in positive control wells (low, medium, or high) has little effect on reproducibility or accuracy regardless of consensus method or number of classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by analysis shown in referenced figures (Figure 4\u2014figure supplements 4 and 5). This finding is somewhat surprising and appropriately noted as such, as one might expect poor growth to make classification more difficult.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Drug-specific performance varied substantially: reproducibility ranged from 79.6-91.4% (exact) and 90.8-97.0% (essential), with only 5 of 13 drugs meeting the 95% threshold. Accuracy ranged from 48.4-88.9% (exact) and 82.8-94.7% (essential), with only 6 of 13 drugs exceeding 90%. Variation is attributed to plate design, resistance mechanisms, and drug-specific growth patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 provide specific ranges and are supported by Figure 5A and comparison to prior work (C70, citing Rancoita et al., 2018). The explanations for variation (C74-C76) are appropriately presented as hypotheses and speculation rather than proven mechanisms. The specific examples (kanamycin, ethambutol, moxifloxacin, linezolid) illustrate the variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Volunteers can reproducibly and accurately measure M. tuberculosis growth on 96-well plates. Using median/mode with 17 classifications achieves 94.1-94.2% reproducibility (below the 95% ISO threshold) and 90.2-91.0% accuracy (meeting the 90% ISO threshold). The project successfully reduced measurement error in the CRyPTIC dataset of 268,281 MICs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 represent the main conclusions of the study. The statistics are consistent with earlier detailed results (C53-C58). The conclusion that volunteers are sufficiently accurate but not quite reproducible enough (C81) is appropriately nuanced. The successful application to the CRyPTIC dataset (C82) demonstrates practical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Volunteers exhibit a systematic bias toward overcalling (higher dilutions), supported by anecdotal observations of 'playing it safe.' This bias decreases but does not disappear with experience. In contrast, AMyGDA software tends to undercall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 describe systematic biases with supporting data (Figure 3\u2014figure supplement 1, Figure 6\u2014figure supplement 5) and cite prior work for AMyGDA's opposite bias (C91, Fowler et al., 2018c). The anecdotal evidence from public engagement events (C89) provides qualitative support for the quantitative finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Performance depends on multiple factors including resistance prevalence and plate design. The dataset used 19 EQA strains with variable resistance: only single strains resistant to clofazimine, bedaquiline, or delamanid, none to linezolid, but 8/19 and 7/19 resistant to isoniazid and rifampicin respectively\u2014higher than typical clinical prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 appropriately describe dataset composition and limitations, citing Rancoita et al., 2018 for the EQA strain characteristics. The acknowledgment that isoniazid/rifampicin resistance prevalence exceeds typical clinical rates (C95) is an important limitation for generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The classification dataset is ideally suited for training machine-learning models, an increasingly recognized use of citizen science that could enable automated MIC reading via mobile devices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 identify a secondary application of the data, appropriately citing Trouille et al., 2019 for the recognition of this use of citizen science. The suggestion about mobile device applications is presented as a possibility ('one could envisage') rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study used images from 447 UKMYC5 plates containing 13 antibiotics (5-8 concentrations each, doubling dilutions) inoculated with 19 EQA strains across 7 laboratories in 11 countries. Plates were read at 7, 10, 14, and 21 days by experts and AMyGDA software. Images were retired at 17 classifications on Zooniverse, though some received additional classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C112 provide detailed methodological information with specific numbers, dates, and procedures. The methods are clearly described and cite appropriate prior work (C103, C107, C108). The plate design details (C100-C102) and reading protocol (C104-C106) are specific and verifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The project developed two Python modules (pyniverse and bashthebug) for data analysis, both freely available. Engagement included a blog (71 posts, 7,393 visitors, 13,811 views), Twitter (@bashthebug, 393 followers, 400 tweets), and Talk Boards (6,255 posts by 1,042 individuals). One volunteer became a de facto moderator after answering >500 questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 provide specific statistics about project infrastructure and engagement. The software tools are cited (C113) and stated to be freely available (C114). The engagement metrics are specific and verifiable. The recognition of a volunteer as co-author (C118) demonstrates meaningful community involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The CRyPTIC project has contributed to the WHO resistance catalogue, conducted the largest M. tuberculosis GWAS, and assessed MIC-shifts for resistance mutations. The goal is to accelerate the shift to genetics-based AST, which is already faster and cheaper than culture-based methods for TB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 cite appropriate sources (Walker et al., 2022; The CRyPTIC Consortium, 2021; Pankhurst et al., 2016) for the stated contributions and comparisons. These claims provide context for the broader impact of the work but are not primary findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C12"
+    ],
+    "result": "The main finding is that untrained volunteers can reproducibly and accurately determine M. tuberculosis growth and MICs for 13 antibiotics on 96-well plates, with the goal of reducing measurement error in the CRyPTIC dataset of 20,637 isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C12 state the primary objective and main conclusion of the study. These are supported by the detailed results throughout the manuscript (C46-C82), though with the important caveat that reproducibility (94.1-94.2%) falls slightly short of the 95% ISO threshold while accuracy (90.2-91.0%) meets the 90% threshold.",
+    "result_type": "MAJOR"
+  }
+]

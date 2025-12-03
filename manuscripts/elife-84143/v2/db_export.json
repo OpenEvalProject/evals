@@ -1,0 +1,2179 @@
+{
+  "submission": {
+    "id": "33acd242-bf68-4f14-99c3-e70bd5a38c1d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:44:36.746208Z",
+    "updated_at": "2025-12-03T18:44:36.746208Z"
+  },
+  "content": [
+    {
+      "id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "submission_id": "33acd242-bf68-4f14-99c3-e70bd5a38c1d",
+      "content_type": "manuscript",
+      "content_text": "# Growth cone advance requires EB1 as revealed by genomic replacement with a light-sensitive variant\n\n## Authors\n\n- Alessandro Dema<sup>1</sup> ([ORCID: 0000-0003-0976-9396](https://orcid.org/0000-0003-0976-9396))\n- Rabab Charafeddine<sup>1</sup>\n- Shima Rahgozar<sup>1</sup>\n- Jeffrey van Haren<sup>2</sup> ([ORCID: 0000-0002-3160-3547](https://orcid.org/0000-0002-3160-3547))\n- Torsten Wittmann<sup>1</sup> ([ORCID: 0000-0001-9134-691X](https://orcid.org/0000-0001-9134-691X)) \u2020\n\n### Affiliations\n\n1. Department of Cell and Tissue Biology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Department of Cell Biology, Erasmus MC Rotterdam Netherlands ([ROR:018906e22](https://ror.org/018906e22))\n\n\u2020 Corresponding author\n\n## Abstract\n\nA challenge in analyzing dynamic intracellular cell biological processes is the dearth of methodologies that are sufficiently fast and specific to perturb intracellular protein activities. We previously developed a light-sensitive variant of the microtubule plus end-tracking protein EB1 by inserting a blue light-controlled protein dimerization module between functional domains. Here, we describe an advanced method to replace endogenous EB1 with this light-sensitive variant in a single genome editing step, thereby enabling this approach in human induced pluripotent stem cells (hiPSCs) and hiPSC-derived neurons. We demonstrate that acute and local optogenetic EB1 inactivation in developing cortical neurons induces microtubule depolymerization in the growth cone periphery and subsequent neurite retraction. In addition, advancing growth cones are repelled from areas of blue light exposure. These phenotypes were independent of the neuronal EB1 homolog EB3, revealing a direct dynamic role of EB1-mediated microtubule plus end interactions in neuron morphogenesis and neurite guidance.\n\n## Introduction\n\nMicrotubules (MTs) are essential components of the cytoskeleton in both mature neurons, in which polarized MT tracks support axonal transport, as well as during nervous system development (Atkins et al., 2023; Kapitein and Hoogenraad, 2015; van de Willige et al., 2016). During neuronal differentiation, the expression of many microtubule-associated proteins (MAPs) is upregulated, and numerous neurodevelopmental diseases are being linked to genetic alterations in MAPs, MT motors, and tubulin itself (Franker and Hoogenraad, 2013; Maillard et al., 2023). Developing neurites must elongate over long distances integrating extrinsic cues to achieve correct nervous system topology. Neurite growth and pathfinding are driven by adhesion and F-actin dynamics in the growth cone, the advancing terminal structure of growing neurites. Analogous to the role of MTs in migrating cells, dynamic MTs enter the F-actin rich growth cone periphery and these so-called \u2018pioneer\u2019 MTs participate in growth cone advance and guidance downstream of extracellular cues (Liu and Dwyer, 2014; Vitriol and Zheng, 2012).\n\nProteins that associate with growing MT plus ends (+TIPs), such as spectraplakins (MACF1), the adenomatous polyposis coli protein APC, CLASPs, and neuron navigator proteins (Nav1), play critical roles in neuron morphogenesis (Cammarata et al., 2016; Coles and Bradke, 2015). For example, Nav1 mediates interactions between dynamic MT plus ends and F-actin filaments (S\u00e1nchez-Huertas et al., 2020) and CLASPs are involved in cell-matrix adhesion site remodeling (Stehbens et al., 2014). These +TIPs bind to growing MT plus ends through small adaptor proteins of the end-binding (EB) family. In humans, EBs are encoded by three MAPRE genes, and although EB1 is the best characterized +TIP adaptor, it remains unclear to what extent EB functions overlap. For example, EB3, which is upregulated in neurons and other differentiated cell types, coordinates MT and F-actin dynamics in developing neurons independent of EB1 (Gordon-Weeks, 2017).\n\nThe role of EB1-dependent+TIPs in neuron morphogenesis is inferred mostly from genetic knockout phenotypes in model systems from different species. It has not been tested how +TIP association with growing MT ends participates in controlling growth cone dynamics in real time in developing human neurons in part due to an absence of technology to acutely inhibit these interactions. Here, we utilize our recent optogenetic tool to disrupt EB1 function and thus +TIP MT-binding in growth cones of hiPSC-derived developing cortical neurons. In addition to demonstrating a novel strategy to generate photosensitive variants of multidomain proteins in a single genome editing step, we show that EB1 is necessary to stabilize MTs in the growth cone periphery and to maintain growth cone advance, and that this function of EB1 cannot be compensated by EB3.\n\n## Results and discussion\n\n### One-step genome editing to generate photosensitive protein variants\n\nWe recently reported an optogenetic system to inactivate end-binding protein 1 (EB1) with high spatial and temporal accuracy in living cells by inserting a light-sensitive LOV2/Zdk1 dimerization module between the N-terminal +TIP and C-terminal MT-binding domains of EB1 (Figure 1A). We named this photo-inactivated construct \u03c0-EB1 and demonstrated effects on MT dynamics and function in interphase and mitotic human cancer cells (Dema et al., 2022b; van Haren et al., 2018). However, our initial method of generating \u03c0-EB1 cell lines required sequential genetic knockouts and re-expression of photosensitive EB1 variants. To enable and demonstrate the utility of this LOV2/Zdk1-mediated multidomain splitting strategy to photo-inactivate proteins expressed at endogenous levels in more complex cell systems such as an hiPSC model of neuronal morphogenesis, we devised a CRISPR/Cas9-mediated genome editing strategy to directly insert the LOV2/Zdk1 dimerization module into the EB1 gene and thus convert endogenous EB1 into the photosensitive \u03c0-EB1 variant in one genome editing step.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84143/elife-84143-fig1-v2.jpg)\n\n**Figure 1.:** (A) AlphaFold2 model of the \u03c0-EB1 tetramer (Mirdita et al., 2022). Note that AlphaFold2 does not correctly predict relative domain positions and did not capture the LOV2/Zdk1 interaction correctly although a structure of the LOV2/Zdk1 dimer has previously been determined (Wang et al., 2016). (B) Overview of the one-step CRISPR/Cas9-mediated insertion of a \u03c0-element construct containing the photosensitive LOV2/Zdk1 module, a fluorescent protein marker, and an internal EF1\u03b1 promoter. Arrows indicate the location of PCR primers. Lowercase letters indicate mutations introduced to make the homology-directed repair (HDR) template resistant to Cas9 cleavage. (C) Genomic PCR to validate \u03c0-element integration into the endogenous EB1 locus with primers as indicated in (B). The two clones shown are homozygous as there is no short product in PCR2, which corresponds to the non-edited EB1 locus. (D) Immunoblots with antibodies as indicated of control and \u03c0-EB1 i3N clones before and after 2 days of neuron differentiation showed replacement of EB1 by the photosensitive \u03c0-EB1 variant and expected +TIP expression level changes associated with neuron differentiation. (E) RT-qPCR analysis of the expression levels of the \u03c0-element N- and C-terminal halves relative to EB1 expression in wild-type (Ctrl) i3N hiPSCs. Shown are the mean and data points from individual qPCR reactions. (F) Comparison of nuclear Oct4 staining (white) as a pluripotency marker in control and \u03c0-EB1 i3N hiPSC colonies. Nuclei are identified with DAPI (blue). (G) Image of a \u03c0-EB1 i3N hiPSCs colony with magnified images on the right showing dissociation of EGFP-Zdk1-EB1C from growing MT ends in blue light. (H) Immunoblot of control and \u03c0-EB1 and EB3-/- i3Neurons showing expression of \u03c0-EB1 and deletion of both EB1 and EB3. (I) \u03c0-EB1 i3N hiPSCs transiently expressing a mScarlet-tagged EB1N MT-binding domain before and during blue light exposure. Maximum intensity projections in alternating green and magenta over 20 s at 3 s intervals illustrate attenuation of MT growth during blue light exposure. (J) Quantification of the median MT growth rate per cell before and during blue light exposure in control and \u03c0-EB1 i3N hiPSCs. Gray lines connect data points from the same cell. Statistical analysis by paired t-test for each i3N hiPSC line.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84143/elife-84143-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Genomic PCR showing \u03c0-element insertion in H1299 clones indicates that only clone #1 is edited correctly with only the large PCR fragment that spans the inserted \u03c0-element in exon 5 of the MAPRE1/EB1 gene. (B) Immunoblot analysis of EB1 expression in cells with different \u03c0-element designs. As indicated in (A), EF1\u03b1 clone #1 represents a homozygous insertion in which expression levels of both \u03c0-EB1 parts are similar to the amount of EB1 in control cells. Note that the IRES \u03c0-element (EMCV-IRES with A7 bifurcation loop) has nearly no expression of the C-terminal \u03c0-EB1 half, while expression of the N-terminal half is comparable to EF1\u03b1 clone #1. This is consistent with previous reports showing that IRES-dependent expression of the second gene is often much lower than cap-dependent first gene expression but might be improved with different IRES variants (Bochkov and Palmenberg, 2006). (C) Fluorescence intensity of mCherry-Zdk1-EB1C in the indicated clones. Compared to clone #1, the mCherry-Zdk1-EB1C expression in heterozygous clone #2 is approximately half, and there is a very low expression in cells with the IRES \u03c0-element. Each data point represents the mean fluorescence intensity of one cell. (D) Images of EF1\u03b1 clone #1 showing homogeneous expression and dissociation of mCherry-Zdk1-EB1C from growing MT ends during blue light exposure.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84143/elife-84143-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Changes of microtubule-associated protein (MAP) and +TIP translation during human neuron differentiation based on a published ribosome profiling data set (Blair et al., 2017). The vertical axis indicates changes between embryonic stem cells (ESCs) and neuron progenitor cells (NPGs) and the horizontal axis changes between NPGs and neurons. Changes in colored symbols were statistically significant to a p<0.001. Selected proteins are labeled. (B) RT-qPCR analysis of EB3 and DCX expression in control and \u03c0-EB1 i3N lines illustrating robust upregulation of both proteins during Ngn2-induced neuronal differentiation. (C) Examples of growing MT plus end localization of transiently transfected EGFP-tagged +TIPs in i3Neurons in early stages of differentiation. Note that Clasp2\u03b3 preferentially binds growth cone MTs likely due to a GSK3\u03b2 kinase activity gradient (Kumar et al., 2009). Amer2 also displays prominent membrane localization. (D) \u03c0-EB1 i3Neuron neurite and growth cone showing dissociation of the EGFP tagged \u03c0-EB1 C-terminal half during blue light exposure.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84143/elife-84143-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) MAPRE3/EB3 knockout strategy by CRISPR/Cas9 genome editing. (B) Genomic PCR across MAPRE3/EB3 exon 1 with the primers indicated in (A) showing a small downshift in the clone labeled D3. (C) Sequencing of the genomic PCR products from EB3 wild-type cells and the knockout clone indicates a four base pair deletion, also highlighted in red in (A) that introduces a frameshift and stop codon in exon 1. (D) Images of wildtype and \u03c0-EB1 EB3-/- i3Neurons showing normal differentiation 2 days after plating on laminin-coated dishes.\n\nEvaluating different designs of what we named \u03c0-elements in H1299 human cancer cells, we found that homozygous integration of a \u03c0-element in which an internal EF1\u03b1 promoter drives expression of the C-terminal \u03c0-EB1 half while the N-terminal half remains under the control of the endogenous promoter (Figure 1B) resulted in balanced expression of both \u03c0-EB1 parts and in homozygous edited clones yielded \u03c0-EB1 protein levels that were similar to EB1 in control cells (Figure 1\u2014figure supplement 1). In contrast, an internal ribosome entry site (IRES) resulted in very poor expression of the C-terminal half. Of note, self-cleaving 2 A peptides also did not work because the C-terminus of the LOV2 domain cannot be modified without greatly inhibiting Zdk1 binding (Wang et al., 2016).\n\nWe next tested \u03c0-element integration in i3N cells, an hiPSC line that expresses Ngn2 under the control of a doxycycline-induced promoter to allow inducible differentiation into cortical glutamatergic i3Neurons (Wang et al., 2017). Homozygous \u03c0-element integration into both copies of exon 5 of the endogenous MAPRE1 (EB1) gene was validated by genomic PCR, sequencing, and immunoblot (Figure 1C and D). Because the N-terminal \u03c0-EB1 half is expressed from the endogenous EB1 promoter, compared with EB1 in control cells, EB1N-LOV2 expression levels were similar and only mildly reduced in both i3N hiPSCs and i3Neurons (Figure 1D and E). In contrast, expression of Zdk1-EB1C that is driven by the EF1\u03b1 promoter was markedly increased in i3N hiPSCs but was lower in i3Neurons (Figure 1D). This indicates a change in the activity balance of these two promoters during i3N neuronal differentiation and suggests that the \u03c0-element design could be improved by also using the native promotor to drive expression of the C-terminal half. However, we did not try this, because proliferation, stem cell properties (Figure 1F), and most importantly differentiation into i3Neurons appeared normal as indicated by expected changes in expression levels of marker proteins such as EB3, DCX, and KIF2C that increase or decrease, respectively, during neuronal differentiation (Figure 1D, Figure 1\u2014figure supplement 2A and B) (Blair et al., 2017). Because EB1 and EB3 are very similar and may be at least partially functionally redundant, we also removed EB3 expression by introducing a frameshift and premature stop codon near the start of the EB3 open reading frame in \u03c0-EB1 i3N hiPSCs (Figure 1H; Figure 1\u2014figure supplement 3) to be able to ask how EB1 contributes to neuron morphogenesis and compare the relative contributions of EB1 and EB3.\n\nTo visualize \u03c0-EB1 photodissociation in genome-edited i3N cells, we chose to tag the \u03c0-EB1 C-terminal part with EGFP so that longer wavelength imaging channels remain available. Clonal \u03c0-EB1 i3N hiPSC colonies homogenously expressed EGFP-Zdk1-EB1C, and as expected, EGFP-Zdk1-EB1C rapidly dissociated from growing MT ends during blue light exposure in both i3N stem cells (Figure 1G) and differentiating i3Neurons (Figure 1\u2014figure supplement 2D). In addition, and similar to what we previously observed in interphase human cancer cells (van Haren et al., 2018), \u03c0-EB1 photoinactivation significantly attenuated MT growth in i3N hiPSCs transiently expressing EB1N-mScarlet-LOV2, which remains on MT ends and enables MT growth rate measurements before and during blue light exposure (Figure 1I and J, Figure 1\u2014video 1).\n\n### EB1 is required to stabilize growth cone microtubule growth\n\nUpon Ngn2-induced differentiation, \u03c0-EB1 EB3-/- i3Neurons sprouted neurites normally (Figure 1\u2014figure supplement 3D, Figure 1\u2014video 2), and as expected, the EGFP-tagged C-terminal half of \u03c0-EB1 associated with growing MT ends in neurites with the majority of growing MT ends localized to growth cones. Of note, because MT growth is slower in neurons than in proliferating cells (Stepanova et al., 2003), EGFP-Zdk1-EB1C comets were less elongated in i3Neurons and appeared more punctate compared with i3N hiPSCs. Nevertheless, EGFP-Zdk1-EB1C quickly and reversibly dissociated from MT ends upon blue light exposure in \u03c0-EB1 EB3-/- i3Neurons (Figure 2A, Figure 2\u2014video 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84143/elife-84143-fig2-v2.jpg)\n\n**Figure 2.:** (A) Growth cone of a \u03c0-EB1 EB3-/- i3Neuron in which MTs were labeled with the far-red cabazitaxel derivative 4\u2013610 CP-CTX. EGFP-Zdk1-EB1C dissociates from growing MT ends within seconds of blue light exposure. (B) MTs labeled with SPY555-tubulin in growth cones of i3Neurons with the \u03c0-EB1 genotype indicated on the left. Note that microtubules (MTs) continue to dynamically extend into the growth cone periphery in control i3Neurons but frequently depolymerize upon blue light exposure in both \u03c0-EB1 and \u03c0-EB1 EB3-/- i3Neuron growth cones. Images are shown in inverted contrast for better visibility. (C) Quantification of the length change of 3\u20134 MTs per growth cone of MT ends that were clearly visible before and during blue light exposure. Gray lines are individual MTs. Blue line is the average of all MTs and the shaded area indicates the 95% confidence interval. The orange dashed line indicates no change. Statistical analysis by paired t-test at 20 s before and during blue light exposure. (D) Quantification of the growth cone MT growth rate after 60 s of blue light exposure by tracking SPY555-tubulin-labeled MT ends. Data points represent the average of >100 frame-to-frame growth rate measurements from multiple MTs per growth cone. Statistical analysis by ANOVA and Tukey-Kramer HSD. To better show individual growth cone MTs, the gamma of the tubulin channels was adjusted non-linearly.\n\nUsing a fluorescently labeled EB1 MT-binding domain, we previously reported in interphase cells and here in proliferating i3N hiPSCs that \u03c0-EB1 photoinactivation attenuated MT growth. Because we were unable to reliably transfect differentiating i3Neurons, we instead used new fluorogenic taxane derivatives as live MT labels (Bucevi\u010dius et al., 2020; Lukinavi\u010dius et al., 2014) at very low concentrations to analyze length changes of growth cone MTs that were visible both before and during blue light exposure of the entire growth cone. In control i3Neuron growth cones, MTs dynamically extended from the central domain into the growth cone periphery and the average length of these MTs was not affected by blue light. In contrast, in \u03c0-EB1 i3Neurons MTs in the growth cone periphery frequently shortened in response to blue light exposure (Figure 2B and C; Figure 2\u2014video 2). While \u03c0-EB1 photoinactivation-induced MT shortening was most pronounced in \u03c0-EB1 EB3-/- i3Neurons, MTs also shortened in \u03c0-EB1 i3Neurons that still expressed EB3 and in both cases the relative MT length after 20 s of blue light was significantly reduced compared with control i3Neurons (p<0.001 by ANOVA and Tukey-Kramer HSD).\n\nAlthough taxane-based probes label growing MT ends more dimly than the rest of the MT possibly due to slow redistribution kinetics on MTs in cells (Ettinger et al., 2016), we were able to measure growth cone MT polymerization rates during blue light exposure by manual tracking MT length changes. Even though MT growth rates in neurons are lower compared with other cells (Stepanova et al., 2003), it is important to note that absolute MT growth rates in this experiment are further underestimated because of the reduced temporal resolution compared with EB1 tracking (Gierke et al., 2010). Nevertheless, compared with control i3Neurons, after 1 min of blue light exposure, growth cone MT growth rates in both \u03c0-EB1 lines were reduced at least fourfold (Figure 2D).\n\nThus, taken together these data show that EB1-mediated MT end interactions are required to stabilize and sustain net growth cone MT growth. In addition, our results indicate that endogenous EB3 cannot compensate for the acute loss of EB1 function in i3Neuron growth cones. Because we previously observed that \u03c0-EB1 photoinactivation can partially displace EB3 from growing MT ends (van Haren et al., 2018), we cannot completely exclude a dominant negative effect of \u03c0-EB1 photoinactivation on EB3. However, because the EB1N-LOV2 expression level in i3Neurons is below that of EB1 in control cells, EB1N-LOV2 likely does not interfere with EB3 binding to MTs by direct competition for binding sites. Our findings are however consistent with not fully understood functional differences between EB1 and EB3 in developing neurons that relate both to their binding sites on MT ends as well as differences in interaction partners. Specifically, EB3 trails behind EB1 on growing MT ends and only EB3 binds to the F-actin regulator drebrin possibly coordinating F-actin and MT dynamics independently of directly controlling MT growth (Poobalasingam et al., 2022; Roth et al., 2018). Alternatively, EB3 may also be more important during later stages of neuron development when EB3 is more highly expressed (Jaworski et al., 2009; Leterrier et al., 2011).\n\n### Acute EB1 inactivation does not immediately change F-actin dynamics\n\nBecause \u2018pioneer\u2019 MTs that enter the growth cone periphery participate in growth cone guidance (Buck and Zheng, 2002), and MT and F-actin dynamics are coupled both mechanically and biochemically through Rho GTPase signaling, we next asked how \u03c0-EB1 photoinactivation affected F-actin dynamics. MT growth is thought to activate Rac1 which drives leading-edge actin polymerization, while MT shortening activates RhoA that increases actomyosin contractility through the release of regulatory MT-bound factors (Garcin and Straube, 2019; Wittmann and Waterman-Storer, 2001). To investigate growth cone F-actin dynamics in response to \u03c0-EB1 photodissociation-mediated growth cone MT shortening, we used SPY650-FastAct, a fluorogenic jasplakinolide derivative that binds strongly to F-actin filaments and at very low concentrations forms fluorescent speckles that serve as reporters of F-actin flow dynamics (Figure 3A; Danuser and Waterman-Storer, 2006). On kymographs perpendicular to the growth cone edge (Figure 3B), we measured the same F-actin retrograde flow rate in control (2.8+/-0.4 \u00b5m/min; mean +/-standard deviation) and \u03c0-EB1 EB3-/- i3Neurons (2.8+/-0.3 \u00b5m/min) in the dark, similar to previous measurements in growth cones from other vertebrate species (Flynn et al., 2012; Geraldo and Gordon-Weeks, 2009; Gomez and Letourneau, 2014). Although growth cone morphology was highly dynamic (Figure 3\u2014video 1), the growth cone F-actin retrograde flow rate remained remarkably constant during blue light exposure (Figure 3C), and we also did not observe consistent changes in overall F-actin dynamics. Because retrograde F-actin flow is directly related to the rate of leading-edge actin polymerization, this indicates that EB1-mediated MT growth or +TIP interactions do not immediately influence growth cone actin polymerization dynamics.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84143/elife-84143-fig3-v2.jpg)\n\n**Figure 3.:** (A) Growth cones of control and \u03c0-EB1 EB3-/- i3Neurons labeled with SPY650-FastAct before and during blue light exposure. Apparent relocalization of F-actin to the middle of the growth cone is observed in both conditions and is likely related to the photobleaching of the probe. (B) Kymographs along the filopodia indicated by orange arrowheads in A illustrating F-actin retrograde flow. (C) Quantification of the F-actin retrograde flow rate before and during blue light exposure. Each data point represents the average of at least three flow measurements per growth cone. Gray lines connect data points from the same growth cone. Statistical analysis by paired t-test. In addition, ANOVA of all four groups showed no significant difference between control and \u03c0-EB1 EB3-/- i3Neurons (p>0.97 for all pairwise comparisons with Tukey-Kramer HSD).\n\n### EB1 is required for growth cone advance\n\nTo test how \u03c0-EB1 photoinactivation affected neurite dynamics, we next tracked growth cone position over longer periods of time. Within a 15 min observation window, >90% of \u03c0-EB1 neurites visibly retracted when the entire growth cone was exposed to blue light (Figure 4A and B; Figure 4\u2014video 1), regardless of whether these cells expressed EB3 or not, again indicating that EB3 is not able to compensate for the acute loss of EB1 function in early neurite development. In contrast and as expected, control i3Neurons were insensitive to blue light exposure with only ~40% of neurites shortening. Similarly, neurites from \u03c0-EB1 i3Neurons were repelled by blue light barriers placed in front of the growth cone while control i3Neurons were unaffected (Figure 4C), and in long term, time-lapse experiments \u03c0-EB1 i3Neurons were unable to cross a blue light barrier sometimes after repeated growth attempts over several hours (Figure 4D; Figure 4\u2014video 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84143/elife-84143-fig4-v2.jpg)\n\n**Figure 4.:** (A) Control and \u03c0-EB1 EB3-/- i3Neuron neurites in which MTs were labeled with 4\u2013610 CP-CTX before and during blue light exposure illustrating the retraction of the \u03c0-EB1 neurite in blue light while the control neurite continues to advance. In this experiment, the entire growth cone and adjacent neurite were exposed to blue light. (B) Quantification of the neurite length change before and during blue light exposure. Gray lines indicate individual neurites. Blue line is the average of all neurites, and the shaded area indicates the 95% confidence interval. The orange dashed line indicates no change. Statistical analysis by ANOVA and Tukey-Kramer HSD at 15 min of blue light exposure. (C) Quantification of the retraction response of control and \u03c0-EB1 EB3-/- i3Neuron growth cones that encounter a blue light barrier. Statistical analysis by Fisher\u2019s exact test. (D) Long-term phase contrast time-lapse sequence of a \u03c0-EB1 neurite advancing upward on a 10 \u00b5m wide stripe of laminin illustrating growth cone retraction every time the growth cone attempts to cross the virtual blue light barrier. Elapsed time is indicated in hours:minutes.\n\nCustom-engineered neuron networks with defined connectivity between individual neurons are a potential key to better understand nervous system information processing (Aebersold et al., 2016), and optogenetic guidance for developing neurites could be a useful tool to build such neuron networks from the bottom up. We, therefore, tested if more precise blue light exposure to small regions inside growth cones targeting only a few MTs could be used to control the direction of growth cone advance (Figure 5A). However, this experiment was technically very challenging. Although \u03c0-EB1 photo-dissociation remained sharply localized to small blue light-exposed regions (Figure 5\u2014figure supplement 1), it was difficult to correctly place these regions in dynamic, moving growth cones. Hence, most \u03c0-EB1 EB3-/- neurites (29 out of 58) still retracted even with localized blue light exposure, but ~38% (22 growth cones, six of which also eventually retracted) turned away from the blue light-exposed region (Figure 5). In contrast, control i3Neurons did not respond and showed no turning bias relative to localized blue light exposure.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84143/elife-84143-fig5-v2.jpg)\n\n**Figure 5.:** (A) Time-lapse of control and \u03c0-EB1 EB3-/- i3Neuron growth cones labeled with SPY555-tubulin (white) and SPY650-FastAct (magenta). The gamma of the tubulin channel was adjusted to 0.6 to better visualize growth cone microtubules (MTs). The blue circle indicates the light-exposed area. (B) Quantification of the relative turning angle in response to local blue light exposure. Gray lines are individual growth cones. Blue line is the average of all growth cones measurements, and the shaded area indicates the 95% confidence interval. The orange dashed line indicates the 0\u00b0 angle. Statistical analysis by unpaired t-test at 5 min of local blue light exposure.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84143/elife-84143-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The left panel shows the reflection of the 470 nm blue light stimulation pattern overlaid on the image of a \u03c0-EB1 EB3-/- i3Neuron growth cone. The right panel shows the blue light-stimulated region as targeted in the software. The EGFP-Zdk1-EB1C image is taken after several seconds of 10 ms stimulation pulses at 2 Hz (the same as in the growth cone turning experiment) in the indicated region showing that \u03c0-EB1 photodissociation remains tightly localized to the blue light exposed area.\n\nIn summary, we present a novel approach to replace the central MT regulator EB1 with a photosensitive variant by inserting a light-sensitive protein interaction module encoded by a short genetic cassette \u2013 that we named \u03c0-element \u2013 into an inter-domain linker by CRISPR/Cas9-mediated genome editing. It is important to note that the \u03c0-element only needs to contain ORFs encoding LOV2 and Zdk1 and the required regulatory elements, while the flanking homology arms direct it to the correct genomic locus. The rest of the protein of interest remains encoded by the endogenous gene. Here, we also include a fluorescent protein tag to monitor \u03c0-EB1 photodissociation and a leucine zipper coiled-coil to retain dimerization of the \u03c0-EB1 N-terminal half during blue light exposure. While we demonstrate the utility of this approach for the MAPRE1 gene in hiPSCs, we believe that a similar strategy could be adapted to many other multidomain proteins supplementing the optogenetic toolbox to investigate localized protein functions in real-time (Wittmann et al., 2020), but it should be noted that photodissociation kinetics may be different with monomeric proteins. The LOV2/Zdk1 module interacts in the dark, which is opposite to all other optogenetic dimerization modules and therefore, enables an unperturbed dark state and acute functional knockout of a given protein activity through blue light exposure. Thus, replacing an endogenous protein with a photosensitive variant in a single genome editing step as presented here has important advantages by allowing modification of proteins for which genetic knockouts might be lethal and further enabling optogenetics in complex cell systems that are not amenable to transient genetic manipulations.\n\nThis approach allowed us to directly demonstrate that EB1 in developing human cortical neurons is required for sustained growth cone MT growth and growth cone advance. Although we do not completely dissect the molecular mechanism underlying the \u03c0-EB1 photodissociation-mediated neurite retraction response, unchanged F-actin polymerization dynamics during blue light indicate that retraction likely results from a loss of growth cone adhesion or an increase in neurite actomyosin contractility consistent with MT-shortening induced RhoA activation (Joo and Olson, 2021). An increase in neurite contractility that does not remain localized to the region of blue light exposure may also explain our difficulty in using \u03c0-EB1 photodissociation to control growth cone guidance more precisely. Thus, although other optogenetic tools that provide attractive stimuli could be a promising avenue to control growth cone guidance (Harris et al., 2020), inhibitory stimuli that induce MT depolymerization may be too difficult to control to be practically useful in synthetic biology approaches building defined neuron networks. Nevertheless, it will be interesting to see how \u03c0-EB1 in i3Neurons or other types of neurons can be used to analyze how MTs and +TIPs contribute dynamically to other aspects of neuron morphogenesis such as branching, dendritic spine dynamics or synaptic plasticity (Dent et al., 2004; Jaworski et al., 2009).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>i3N induced pluripotent stem cells</td>\n      <td>Wang et al., 2017</td>\n      <td></td>\n      <td>Doxycycline-induced differentiation into cortical i3Neurons</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>NCI-H1299</td>\n      <td>ATCC</td>\n      <td>CRL-5803</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-EB1 (N-terminal epitope, mouse monoclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 41\u20132100, RRID:AB_2533500</td>\n      <td>1:1000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-EB1 (C-terminal epitope, mouse monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat# 610534, RRID:AB_397891</td>\n      <td>1:1000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-EB3 (rat monoclonal)</td>\n      <td>Absea</td>\n      <td>Cat# KT36</td>\n      <td>1:1000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-KIF2C (mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-81305, RRID:AB_2132051</td>\n      <td>1:1000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Oct-3/4 (mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-5279, RRID:AB_628051</td>\n      <td>1:500 (IF)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>EB1N-LZ-LOV2 (plasmid)</td>\n      <td>van Haren et al., 2018</td>\n      <td>Addgene plasmid 107614</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>MSCV-PIG</td>\n      <td>Scott Lowe, unpublished</td>\n      <td>Addgene plasmid 18751</td>\n      <td>IRES plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmCherry-Zdk1-EB1C</td>\n      <td>van Haren et al., 2018</td>\n      <td>Addgene plasmid 107695</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSpCas9(BB)\u20132A-GFP</td>\n      <td>Ran et al., 2013</td>\n      <td>Addgene plasmid 48138</td>\n      <td>Cas9 plasmid</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>EB1 Exon 1\u20132</td>\n      <td>Integrated DNA Technologies</td>\n      <td>RT-qPCR primers, Hs.PT.58.1854993</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>EB1 Exon 6\u20137</td>\n      <td>Integrated DNA Technologies</td>\n      <td>RT-qPCR primers, Hs.PT.58.24290642</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>EB3</td>\n      <td>Integrated DNA Technologies</td>\n      <td>RT-qPCR primers, Hs.PT.58.20604386</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DCX</td>\n      <td>Integrated DNA Technologies</td>\n      <td>RT-qPCR primers, Hs.PT.58.118505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SPY555-tubulin</td>\n      <td>Spyrochrome / Cytoskeleton Inc.</td>\n      <td>CY-SC203</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SPY650-FastAct</td>\n      <td>Spyrochrome / Cytoskeleton Inc.</td>\n      <td>CY-SC505</td>\n      <td>1:3000</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4\u2013610 CP-CTX</td>\n      <td>Bucevi\u010dius et al., 2020</td>\n      <td></td>\n      <td>5 nM</td>\n    </tr>\n  </tbody>\n</table>\n\n### Molecular cloning and genome editing\n\n#### Construction of knock-in \u03c0-EB1 cassettes\n\nPrimer sequences for all cloning, gRNAs, and genomic PCR are given in Supplementary file 1.\n\n1. pEB1N-LZ-LOV2-IRES-mCherry-Zdk1-EB1C was cloned as follows: EB1N-LZ-LOV2 (Wittmann and van Haren, 2018) (Addgene plasmid 107614) and EMCV IRES (from MSCV-PIG; Addgene plasmid 18751) were amplified by PCR, connected by overlap extension PCR, and ligated into the NheI site of pmCherry-Zdk1-EB1C (Addgene plasmid 107695).\n\n2. pUC19-\u03c0-EB1_IRES-mCherry (LZ-LOV2-IRES-mCherry-Zdk1) containing the homology-directed repair (HDR) template for targeting the IRES containing a version of the \u03c0-element into exon 5 of MAPRE1/EB1 was cloned as follows: >1.5 kb 5\u2019and 3\u2019 homology arms were amplified from genomic DNA isolated from one 6 cm dish of immortalized human retinal pigment epithelial cells (hTERT-RPE1 cells, ATCC) using a Purelink Genomic DNA Mini Kit (ThermoFisher). The \u03c0-element was PCR amplified from plasmid #1. Homology arms and \u03c0-element sequences were cloned into the EcoRI site of pUC19 by Gibson assembly in a single step. Several silent mutations were introduced to ensure that the HDR template could not be targeted by the gRNAs.\n\n3. pUC19-sv40-blastR-EF1\u03b1-mCherry-Zdk1-EB1C was generated by Gibson assembly of PCR amplified SV40promoter-BlasticidinR, SV40polyA, EF1alpha promoter (from a PiggyBac vector) and mCherry-Zdk1-EB1C-polyA (from pmCherry-Zdk1-EB1C) into HinDIII and EcoRI sites of pUC19.\n\n4. pEB1N-LZ-LOV2-polyA-EF1alpha-mCherry-Zdk1-EB1C was generated by Gibson assembly of PCR amplified polyA-EF1alpha-mCherry-Zdk1-EB1C from plasmid #3 into the BamHI site of pEB1N-LZ-LOV2.\n\n5. pUC19-\u03c0-EB1_EF1alpha-mCherry (LZ-LOV2-polyA-EF1\u03b1-mCherry-Zdk1) containing the HDR template for targeting the \u03c0-element to exon 5 of MAPRE1/EB1 was cloned by Gibson assembly of PCR amplified homology arms and \u03c0-element into the EcoRI site of pUC19 using the same primers as for the IRES plasmid (#2).\n\n6. For generating \u03c0-EB1 knock-in hiPSCs an EGFP-tagged variant of the \u03c0-element was used. pUC19-\u03c0-EB1_EF1\u03b1-EGFP was generated by replacing mCherry in plasmid #5 with EGFP by Gibson assembly of PCR-amplified EGFP into the NcoI sites.\n\n#### Guide RNAs\n\n7. pSpCas9(BB)\u20132A-GFP was a gift from Feng Zhang (Addgene plasmid 48138). pSpCas9(BB)\u20132A-mCherry was constructed by replacing GFP with mCherry. T2A-mCherry was PCR amplified and inserted into the EcoRI sites by Gibson assembly.\n\n8. Three gRNA sequences that target <25 bp from the integration site in exon 5 of MAPRE1/EB1 were cloned into the BbsI sites of pSpCas9(BB)\u20132A-GFP (Wittmann and van Haren, 2018) to knock in the \u03c0-element into the EB1 gene.\n\n9. Similarly, three gRNA sequences targeting exon 1 of MAPRE3 were cloned into the BbsI sites of pSpCas9(BB)\u20132A-GFP and pSpCas9(BB)\u20132A-mCherry to generate EB3 knockout lines.\n\n#### Other DNA constructs\n\n10. EB1N-mScarlet-I-LZ-LOV2 and EB1N-mApple-LZ-LOV2 were cloned by inserting PCR amplified mScarlet-I/mApple and LZ-LOV2 into the XhoI and BamHI sites of EB1-GFP-LOV2 by Gibson assembly. While the original EB1N-mCherry-LZ-LOV2 fusion construct did not perform well in iPSC-derived neurons (and showed striking aggregation), the mScarlet and mApple fusions showed the expected localization pattern at MT plus-ends. The two resulting PCR products were inserted into the XhoI/BamHI sites of plasmid EB1N-GFP-LOV2. mScarlet-I was PCR amplified using a mRuby2 forward oligo, which resulted in a slightly altered mScarlet-I N-terminus (MVSKGEEL instead of MVSKGEAV).\n\n### Cell lines\n\nH1299 human small lung cancer cells were authenticated by STR profiling. i3N hiPSCs are derived from the WTC11 human induced pluripotent stem cell line (Wang et al., 2017). No STR profile is available. Cells tested negative for mycoplasma.\n\n### i3Neuron cell culture and differentiation\n\ni3N hiPSCs were cultured essentially as described (Wang et al., 2017). In brief, i3N cells were cultured on dishes coated with Matrigel (08774552, Corning) in mTeSR1 medium (85850, STEMCELL Technologies) changed every 2 days for 3\u20135 days, until 70\u201380% confluent, then gently detached with Accutase (07920, STEMCELL Technologies) and reseeded at 2\u20135\u00d7104 cells/cm2 in mTeSR1 medium containing 10 \u03bcM Y-27632 (72304, STEMCELL Technologies) ROCK inhibitor (removed after 48 hr and exchanged for a fresh medium without ROCK inhibitor). i3N cells were transfected with Lipofectamine Stem (STEM00015, Invitrogen) 24 hr after seeding according to the manufacturer\u2019s protocol.\n\nFor pre-differentiation, 2\u20133\u00d7106 i3N hiPSCs were seeded on a Matrigel-coated 3.5 cm dish (high crowding helps the early steps of the differentiation process) in knockout DMEM/F12 (12660012, Life Technologies) supplemented with 1 x NEAA (11140050, Life Technologies), 1x N2 supplement (17502048, Life Technologies), 2 \u00b5g/ml doxycycline, 10 ng/ml recombinant neurotrophin-3 (NT-3, 50712487, Biolegend), 10 ng/ml recombinant brain-derived neurotrophic factor (BDNF, NC1043629, Fisher Scientific), 0.3 \u00b5g/ml murine laminin (CB40232, Corning) and 10 \u03bcM Y-28632 ROCK inhibitor (only for the first day, then withdrawn). The medium was changed every 24 hr for 3 days of culture.\n\nFor imaging-directed differentiation, 20 mm glass-bottom dishes (P35G-1.5\u201320 C, Mattek) were surface-activated for 1\u20132 min in a Harrick Expanded Plasma Cleaner (Dema et al., 2022a) set on \u2018High\u2019 and coated with 50 \u00b5g/ml poly-D-lysine (PDL, A-003-E, Sigma) in PBS for 20 min at 37 \u00b0C, washed extensively in PBS, then coated with 1.5 \u00b5g/ml murine laminin in PBS for 20 min at 37 \u00b0C. After a further PBS wash, 2\u00d7104 to 105 pre-differentiated i3N cells from the Accutase-dissociated cell pellet were seeded in Maturation Medium (MM), consisting of 50% Neurobasal (12349015, Life Technologies) and 50% DMEM/F12 (21041025, Life Technologies) supplemented with 1 x NEAA, 0.5 x GlutaMAX (35050061, Life Technologies), 1x N2 supplement, 1 x B27 supplement (17504044, Life Technologies), 2 \u00b5g/ml doxycycline, 10 ng/ml NT-3, 10 ng/ml BDNF and 0.3 \u00b5g/ml murine laminin. Laminin micropatterns on glass-bottom dishes were generated as described (Dema et al., 2022a). For immunoblots or qPCR, the pre-differentiated cells were seeded at 105 cm\u20132 on PDL and laminin-coated tissue culture plastic dishes. Cell lysate preparation and immunoblotting for EB1 and EB3 were performed as described (Wittmann and van Haren, 2018).\n\n### Antibodies\n\nMouse monoclonal anti-EB1 (N-terminal epitope): Thermo Fisher Scientific Cat# 41\u20132100, RRID:AB_2533500; Mouse monoclonal anti-EB1 (C-terminal epitope): BD Biosciences Cat# 610534, RRID:AB_397891; Rat monoclonal anti-EB3: Absea Cat# KT36, no RRID available; Mouse monoclonal anti-KIF2C: Santa Cruz Biotechnology Cat# sc-81305, RRID:AB_2132051; Mouse monoclonal anti-Oct-3/4: Santa Cruz Biotechnology Cat# sc-5279, RRID:AB_628051.\n\n### Genome editing\n\nIn general, cells were co-transfected with two or three gRNA Cas9 plasmids targeting MAPRE1/EB1 exon 5 and a pUC19 HDR template described above. H1299 cells were transfected using Lipofectamine 2000 in a 10 cm dish at ~75% confluency and 2\u20133 days later mCherry-positive cells (indicating \u03c0-element integration) were FACS sorted into 96-well plates for expansion and further analysis.\n\nFor generating i3N \u03c0-element lines, both the \u03c0-element and gRNA plasmids carried EGFP markers. Thus, cells were FACS sorted 6 days after transfection when we expected that most cells had lost transient expression from the gRNA plasmids. EGFP-positive i3N cells were then plated at low density (~3000 cells) in 6 cm Matrigel-coated dishes and cultured in mTeSR with ROCK inhibitor as described above. After 7\u201310 days, clonal colonies typically had grown enough to be seen by the naked eye. Up to 96 colonies from each dish were manually picked and expanded.\n\nInitial screening for positive clones in both H1299 and i3N cells was by spinning disk confocal microscopy because clones in which fluorescent signal was present on MT plus ends in the absence of blue light must have correctly integrated the \u03c0-element such that both halves are expressed as the N-terminal half (\u03c0-EB1N) expressed from the endogenous promoter is needed to target EGFP-tagged \u03c0-EB1C to MT plus ends. Together with wild-type controls, such clones were further analyzed by genomic PCR with primer sets that bind inside and outside the \u03c0-element sequence (Supplementary file 1). Genomic DNA was isolated using a Purelink Genomic DNA Mini Kit (ThermoFisher). Expected PCR products for EGFP EF1\u03b1 \u03c0-element: primer pair 11 a/11b, WT: 189 bp, \u03c0-element integration: 3058 bp; 11 c/11b, WT: 1628 bp; \u03c0-element integration: 4506 bp; 11e/11 f, WT: no product, \u03c0-element integration: 2152 bp.\n\nFor the MAPRE3/EB3 knockout in \u03c0-element i3N cells, gRNAs were cloned into a mCherry version of the Cas9 plasmid, and transfected cells FACS-sorted for mCherry expression, plated at low density, and clones expanded as described above. Initial positive clones identified by band shift in genomic PCR (see Supplementary file 1 for primer sequences) were further analyzed by Sanger sequencing of the PCR amplicon and analyzed by ICE (Synthego Performance Analysis, ICE Analysis. 2019. v3.0. Synthego). Pre-mixed prime-time qPCR primers were from IDT.\n\n### Live microscopy and \u03c0-EB1 photoinactivation\n\ni3Neuron imaging experiments were performed 1\u20133 days after replating on laminin-coated glass-bottom dishes. At later times i3Neurons form intricate networks and it becomes increasingly difficult to locate individual growth cones. SPY555-tubulin and SPY650-FastAct (Spyrochrome) were added to i3Neurons at a 1:2000 and 1:3000 dilution, respectively, and 4\u2013610 CP-CTX was added at 5 nM for at least 30 min before imaging, and cells were discarded after a maximum of 3 hr.\n\nLive microscopy was performed either with a Yokogawa CSU-X1 spinning disk confocal essentially as described (Stehbens et al., 2012) or, for most i3Neuron microscopy, with a CFI Apochromat TIRF 60 X NA 1.49 objective (Nikon) on a Yokogawa CSU-W1/SoRa spinning disk confocal system, and images acquired with an ORCA Fusion BT sCMOS camera (Hamamatsu). For high-resolution imaging of dim signal, SoRa mode was combined with 2x2 camera binning resulting in an image pixel size of 54 nm. This system was equipped with a Polygon 1000 pattern illuminator (Mightex) through an auxiliary filter turret and LAPP illuminator (Nikon). Integrated control of imaging and photoinactivation was through NIS Elements v5.3 software (Nikon), in combination with an external pulse generator to trigger the 470 nm photoinactivation LED (Spectra X light engine, Lumencor) for 10 ms pulses at 2 Hz at 5\u201310% LED power. \u03c0-EB1 photoinactivation was confirmed by dissociation of the C-terminal half from growing MT ends. The Polygon was calibrated with a mirror slide before every imaging session, and local light exposure was further verified by imaging the back reflection from the specimen coverslip.\n\n### Image analysis and statistics\n\nMT growth rate analysis in i3N hiPSCs was as described (van Haren et al., 2018). MT ends in SPY555-tubulin labeled i3Neurons as well as neurite length changes were tracked manually using the \u2018Segmented Line\u2019 tool of FiJi. Kymographs to measure retrograde F-actin flow were generated as described (Stehbens et al., 2014). Details of statistical analysis including the type of test, p-values, and numbers of biological replicates are provided within the relevant figures and figure legends. Statistical analysis was done in MATLAB (Mathworks, Inc) and graphs were produced in MATLAB and in Excel (Microsoft). In all figures, box plots show the median, first, and third quartile, with whiskers extending to observations within 1.5 times the interquartile range.\n",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "26fc9f51-b26f-4516-bc29-848cc282e767",
+      "submission_id": "33acd242-bf68-4f14-99c3-e70bd5a38c1d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kassandra M Ori-McKenney, https://ror.org/043mz5j54 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84143.sa0](https://doi.org/10.7554/eLife.84143.sa0)\n\nIn their manuscript, Dema et al. showcase a valuable tool to study the role of the microtubule end-binding protein, EB1. This important study replaces endogenous EB1 with a light-sensitive variant, which they use to locally inactivate EB1 in human iPSC-derived neurons. They find that EB1 inactivation induces microtubule depolymerization in the growth cone and neurite retraction. The data is of high quality, the evidence supporting the conclusions is solid, and the findings of this work will be of interest to cell biologists and neurobiologists, while the methods utilized will have even broader general interest.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kassandra M Ori-McKenney, https://ror.org/043mz5j54 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84143.sa1](https://doi.org/10.7554/eLife.84143.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Growth cone advance requires EB1 as revealed by genomic replacement with a light-sensitive variant\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Laura Anne Lowery (Reviewer #1); Feng-Quan Zhou (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Every reviewer agreed that this new methodology is compelling, but that the functional analysis required additional controls to strengthen the study. Specifically, the authors need to perform controls for Figure 3, Figure 4, and Figure 5. Please refer to the comments by Reviewers #1 and #3 for specific suggestions. In addition, please be sure to provide quantification of the control conditions.\n\n2) All of the reviewers highlighted the need for additional significance tests. Please be sure to perform statistical analyses for every experiment and include in the legend the n, the statistical test used, and the p-value.\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript would benefit from editing for grammar to improve readability. For example, on p.3, a comma is missing after \"neuron navigator proteins (Nav1)\" and before \"play.\" Another example \u2013 the last sentence of p. 4 is a run-on sentence that spans 7 lines and has incorrect grammar. These are just two examples.\n\np.3 \u2013 +TIP is not spelled out during its first use.\n\np.5 \u2013 referral to Figure 1F,G in text should be Figure 1G,H instead.\n\nFigure 2/Figure legend p. 22 \u2013 In the legend, \"MTs labelled with SPY555-tubulin in growth cones of i3Neurons with the \u03c0-EB1 genotype indicated on the right.\" This should be \"on the left.\"\n\np.6/Figure 2 \u2013 Text reads \"In contrast, in \u03c0-EB1 i3Neurons MTs rapidly retracted from the peripheral domain in response to blue light exposure (Figure 2B, C; Video 4). While this MT retraction was most pronounced in \u03c0-EB1 EB3-/- i3Neurons, MTs also shortened in \u03c0-EB1 i3Neurons that still expressed EB3, and in both cases this \u03c0-EB1 photoinactivation-induced MT shortening was significantly different from control i3Neurons.\"\n\nUnfortunately, the chosen representative neuron for the \u03c0-EB1 EB3-/- condition in Figure 2 does not appear to have significantly shorter MTs in the light compared to in the dark. In fact, to this reviewer, the MTs in the final right panel (the final light condition) appear to be actually longer than the third panel (the final dark condition). Thus, this image does not appear to be representative nor fit the data depicted in the graph of Figure 2C. One potential issue/reason for this is that the MTs in the EB3-/- growth cones are already compromised, but this is not mentioned.\n\np.7/Figure 5 \u2013 Testing whether precise blue light exposure to small regions inside growth cones targeting only a few MTs could be used to control the direction of growth cone advance \u2013 They reported in the text that 42 out of 58 cells still retracted, with only localized exposure. Then, they reported that \"analyzing GC displacement of neurites that did not immediately retract revealed a turning response away from the blue light exposed area (Figure 5B).\" However, in Figure 5B, they quantify the results of 22 growth cones. The numbers here do not add up. 42 cells that retract plus 22 cells that do not retract equals 64, not 58. Thus, are there some cells that retracted but not immediately and were counted in the turning quantification? Also, are there some cells that did not retract at all and were not counted? This should be clarified.\n\nReviewer #2 (Recommendations for the authors):\n\nWhile this is a well-conducted study, the publication of which I would support, there are some details I would like to see addressed before approval for publication:\n\nFig1S: These data are not sufficient to support the claim that expression of the N-terminal half of the \u03c0-EB1 is comparable to control cells. The WBs have to be quantified. Additionally, qPCR should be used to compare expression levels.\n\nFigure 3C: What statistical test has been used here? If it is a t-test, a p>0.05 does not mean the values are the same, it just means that these data are not sufficient to detect a difference. In other words, you cannot reject the hypothesis that they are from the same distribution, which does not mean that they are from the same distribution. Additionally, n=8 is fairly low for this type of analysis. The strength of this experiment would be increased by increasing the n.\n\nFigure 4A: Where was the neurite illuminated? It looks like the largest change happens somewhat down the shaft. Was the whole neurite illuminated? Please indicate in the figure as well as in the text.\n\nFigure 5: Please also show this experiment in the control neurons.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors should at least quantify the presented results with statistical analysis and add the necessary control experiments mentioned in the public review.\n\nA better explanation with new experiments or discussion about the results regarding EB3 is also necessary.\n\nIt will greatly improve the study if the new approach used in the study could discover some novel function of EB1 or related cellular mechanism underlying its function.\n",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6a156939-c05d-4916-b3da-3510e00eecc3",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C1",
+      "claim": "A light-sensitive variant of EB1 was developed by inserting a blue light-controlled protein dimerization module between functional domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously developed a light-sensitive variant of the microtubule plus end-tracking protein EB1 by inserting a blue light-controlled protein dimerization module between functional domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a previously developed method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "76f1beb7-890f-4a24-8d97-2653e9146760",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C2",
+      "claim": "Endogenous EB1 can be replaced with a light-sensitive variant in a single genome editing step.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe an advanced method to replace endogenous EB1 with this light-sensitive variant in a single genome editing step, thereby enabling this approach in human induced pluripotent stem cells (hiPSCs) and hiPSC-derived neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary methodological claim of the manuscript, stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "33e6a184-6b74-4779-870f-8a5f4e366611",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C3",
+      "claim": "Acute and local optogenetic EB1 inactivation in developing cortical neurons induces microtubule depolymerization in the growth cone periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that acute and local optogenetic EB1 inactivation in developing cortical neurons induces microtubule depolymerization in the growth cone periphery and subsequent neurite retraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "af9d153d-28f1-4c5b-bb73-79a2f6069447",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C4",
+      "claim": "Acute and local optogenetic EB1 inactivation in developing cortical neurons induces subsequent neurite retraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that acute and local optogenetic EB1 inactivation in developing cortical neurons induces microtubule depolymerization in the growth cone periphery and subsequent neurite retraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "7f0ba884-5761-445b-aefd-76a09592d65f",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C5",
+      "claim": "Advancing growth cones are repelled from areas of blue light exposure in \u03c0-EB1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, advancing growth cones are repelled from areas of blue light exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "7dc40c2e-9215-4820-8827-4c8f3c2daa29",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C6",
+      "claim": "The phenotypes of EB1 photoinactivation were independent of the neuronal EB1 homolog EB3.",
+      "claim_type": "EXPLICIT",
+      "source": "These phenotypes were independent of the neuronal EB1 homolog EB3, revealing a direct dynamic role of EB1-mediated microtubule plus end interactions in neuron morphogenesis and neurite guidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experiments using EB3 knockout cells shown in Figures 2-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "38e0e9de-c0ac-48ec-9290-1876cea0d202",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C7",
+      "claim": "EB1-mediated microtubule plus end interactions play a direct dynamic role in neuron morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These phenotypes were independent of the neuronal EB1 homolog EB3, revealing a direct dynamic role of EB1-mediated microtubule plus end interactions in neuron morphogenesis and neurite guidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing effects of EB1 photoinactivation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "a6593ee7-8f89-4d38-9aee-65ca90c3181a",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C8",
+      "claim": "EB1-mediated microtubule plus end interactions play a direct dynamic role in neurite guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "These phenotypes were independent of the neuronal EB1 homolog EB3, revealing a direct dynamic role of EB1-mediated microtubule plus end interactions in neuron morphogenesis and neurite guidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing growth cone repulsion from blue light.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "b9009432-91af-4d2e-bee5-d6d436f64a1f",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C9",
+      "claim": "Microtubules are essential components of the cytoskeleton in mature neurons where polarized MT tracks support axonal transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules (MTs) are essential components of the cytoskeleton in both mature neurons, in which polarized MT tracks support axonal transport, as well as during nervous system development (Atkins et al., 2023; Kapitein and Hoogenraad, 2015; van de Willige et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "503296c3-84b7-476e-b5ff-27715468eadd",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C10",
+      "claim": "Microtubules are essential components of the cytoskeleton during nervous system development.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules (MTs) are essential components of the cytoskeleton in both mature neurons, in which polarized MT tracks support axonal transport, as well as during nervous system development (Atkins et al., 2023; Kapitein and Hoogenraad, 2015; van de Willige et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "a8fa9a29-a4a2-4b69-96b9-dcd614029f36",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C11",
+      "claim": "During neuronal differentiation, the expression of many microtubule-associated proteins is upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "During neuronal differentiation, the expression of many microtubule-associated proteins (MAPs) is upregulated, and numerous neurodevelopmental diseases are being linked to genetic alterations in MAPs, MT motors, and tubulin itself (Franker and Hoogenraad, 2013; Maillard et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "c785005a-893f-476f-8c0d-733552981d5b",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C12",
+      "claim": "Numerous neurodevelopmental diseases are being linked to genetic alterations in MAPs, MT motors, and tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "During neuronal differentiation, the expression of many microtubule-associated proteins (MAPs) is upregulated, and numerous neurodevelopmental diseases are being linked to genetic alterations in MAPs, MT motors, and tubulin itself (Franker and Hoogenraad, 2013; Maillard et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "9dc19dc9-9fa8-47c8-b4a7-54403c903e6c",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C13",
+      "claim": "Neurite growth and pathfinding are driven by adhesion and F-actin dynamics in the growth cone.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurite growth and pathfinding are driven by adhesion and F-actin dynamics in the growth cone, the advancing terminal structure of growing neurites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "05508ccb-68b3-4b47-aa53-c0f310291365",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C14",
+      "claim": "Dynamic MTs enter the F-actin rich growth cone periphery and these 'pioneer' MTs participate in growth cone advance and guidance downstream of extracellular cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous to the role of MTs in migrating cells, dynamic MTs enter the F-actin rich growth cone periphery and these so-called 'pioneer' MTs participate in growth cone advance and guidance downstream of extracellular cues (Liu and Dwyer, 2014; Vitriol and Zheng, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "33528023-e402-4770-9322-e98134b65d2b",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C15",
+      "claim": "Proteins that associate with growing MT plus ends (+TIPs) play critical roles in neuron morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins that associate with growing MT plus ends (+TIPs), such as spectraplakins (MACF1), the adenomatous polyposis coli protein APC, CLASPs, and neuron navigator proteins (Nav1), play critical roles in neuron morphogenesis (Cammarata et al., 2016; Coles and Bradke, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "185621d2-f5af-4392-aa11-d7d9a69d820b",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C16",
+      "claim": "Nav1 mediates interactions between dynamic MT plus ends and F-actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Nav1 mediates interactions between dynamic MT plus ends and F-actin filaments (S\u00e1nchez-Huertas et al., 2020) and CLASPs are involved in cell-matrix adhesion site remodeling (Stehbens et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "04a5b8ee-05d8-439c-9e7e-b59908cf5151",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C17",
+      "claim": "CLASPs are involved in cell-matrix adhesion site remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Nav1 mediates interactions between dynamic MT plus ends and F-actin filaments (S\u00e1nchez-Huertas et al., 2020) and CLASPs are involved in cell-matrix adhesion site remodeling (Stehbens et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "601cff4a-9dcf-4e7d-9b00-a1bc6fadbf70",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C18",
+      "claim": "+TIPs bind to growing MT plus ends through small adaptor proteins of the end-binding (EB) family.",
+      "claim_type": "EXPLICIT",
+      "source": "These +TIPs bind to growing MT plus ends through small adaptor proteins of the end-binding (EB) family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "1ee53e55-0f9c-4bf9-a6f9-4c603e19686b",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C19",
+      "claim": "In humans, EBs are encoded by three MAPRE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, EBs are encoded by three MAPRE genes, and although EB1 is the best characterized +TIP adaptor, it remains unclear to what extent EB functions overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "7b9d0ecd-286c-4c87-815f-ff853121651b",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C20",
+      "claim": "EB1 is the best characterized +TIP adaptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, EBs are encoded by three MAPRE genes, and although EB1 is the best characterized +TIP adaptor, it remains unclear to what extent EB functions overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "70f06aad-9b98-48e8-9154-f37a755fb498",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C21",
+      "claim": "It remains unclear to what extent EB functions overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, EBs are encoded by three MAPRE genes, and although EB1 is the best characterized +TIP adaptor, it remains unclear to what extent EB functions overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "dd644107-1845-4b19-b7c1-5bf9776d177d",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C22",
+      "claim": "EB3 is upregulated in neurons and other differentiated cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, EB3, which is upregulated in neurons and other differentiated cell types, coordinates MT and F-actin dynamics in developing neurons independent of EB1 (Gordon-Weeks, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "bdc3b537-824b-4a99-80b8-6278de0bf5c0",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C23",
+      "claim": "EB3 coordinates MT and F-actin dynamics in developing neurons independent of EB1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, EB3, which is upregulated in neurons and other differentiated cell types, coordinates MT and F-actin dynamics in developing neurons independent of EB1 (Gordon-Weeks, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "ab76f1c4-55f8-4430-a87a-1080b7f8211b",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C24",
+      "claim": "The role of EB1-dependent +TIPs in neuron morphogenesis is inferred mostly from genetic knockout phenotypes in model systems from different species.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of EB1-dependent+TIPs in neuron morphogenesis is inferred mostly from genetic knockout phenotypes in model systems from different species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous research in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "6b868727-f1e5-449c-b047-e2ea737b1e5e",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C25",
+      "claim": "It has not been tested how +TIP association with growing MT ends participates in controlling growth cone dynamics in real time in developing human neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It has not been tested how +TIP association with growing MT ends participates in controlling growth cone dynamics in real time in developing human neurons in part due to an absence of technology to acutely inhibit these interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "9a436681-b38d-42e9-a6f7-7af9fea7dfaa",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C26",
+      "claim": "The absence of technology to acutely inhibit +TIP interactions has prevented testing how +TIP association with growing MT ends participates in controlling growth cone dynamics in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "It has not been tested how +TIP association with growing MT ends participates in controlling growth cone dynamics in real time in developing human neurons in part due to an absence of technology to acutely inhibit these interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technological limitation that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "a0d3357a-c5b4-486b-959a-cccb4bf90fce",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C27",
+      "claim": "EB1 is necessary to stabilize MTs in the growth cone periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to demonstrating a novel strategy to generate photosensitive variants of multidomain proteins in a single genome editing step, we show that EB1 is necessary to stabilize MTs in the growth cone periphery and to maintain growth cone advance, and that this function of EB1 cannot be compensated by EB3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the introduction and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "9cfdd1cc-7627-464a-a4de-c0ba6b81c738",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C28",
+      "claim": "EB1 is necessary to maintain growth cone advance.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to demonstrating a novel strategy to generate photosensitive variants of multidomain proteins in a single genome editing step, we show that EB1 is necessary to stabilize MTs in the growth cone periphery and to maintain growth cone advance, and that this function of EB1 cannot be compensated by EB3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the introduction and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "a1440e9b-0c58-461c-8b82-f60a0b814a62",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C29",
+      "claim": "The function of EB1 in stabilizing MTs in the growth cone periphery and maintaining growth cone advance cannot be compensated by EB3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to demonstrating a novel strategy to generate photosensitive variants of multidomain proteins in a single genome editing step, we show that EB1 is necessary to stabilize MTs in the growth cone periphery and to maintain growth cone advance, and that this function of EB1 cannot be compensated by EB3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the introduction and supported by experiments using EB3 knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "ad2759e8-ffba-4d24-99d2-3a9cab5a701a",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C30",
+      "claim": "AlphaFold2 does not correctly predict relative domain positions in the \u03c0-EB1 tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that AlphaFold2 does not correctly predict relative domain positions and did not capture the LOV2/Zdk1 interaction correctly although a structure of the LOV2/Zdk1 dimer has previously been determined (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the AlphaFold2 model shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "a41d1893-0d60-4aa9-b7f6-66e19ee5623a",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C31",
+      "claim": "AlphaFold2 did not capture the LOV2/Zdk1 interaction correctly.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that AlphaFold2 does not correctly predict relative domain positions and did not capture the LOV2/Zdk1 interaction correctly although a structure of the LOV2/Zdk1 dimer has previously been determined (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the AlphaFold2 model shown in Figure 1A, with reference to a previous structure determination.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "9ba2e0e7-26fa-4001-80d4-70c430a094c5",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C32",
+      "claim": "A structure of the LOV2/Zdk1 dimer has previously been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that AlphaFold2 does not correctly predict relative domain positions and did not capture the LOV2/Zdk1 interaction correctly although a structure of the LOV2/Zdk1 dimer has previously been determined (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "fafc034c-983d-4a05-99c5-415fdf1e1f49",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C33",
+      "claim": "Homozygous integration of a \u03c0-element with an internal EF1\u03b1 promoter driving expression of the C-terminal \u03c0-EB1 half resulted in balanced expression of both \u03c0-EB1 parts.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluating different designs of what we named \u03c0-elements in H1299 human cancer cells, we found that homozygous integration of a \u03c0-element in which an internal EF1\u03b1 promoter drives expression of the C-terminal \u03c0-EB1 half while the N-terminal half remains under the control of the endogenous promoter (Figure 1B) resulted in balanced expression of both \u03c0-EB1 parts and in homozygous edited clones yielded \u03c0-EB1 protein levels that were similar to EB1 in control cells (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "03b92881-47fd-4736-9c70-b187ab9452f4",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C34",
+      "claim": "Homozygous edited clones with the EF1\u03b1 \u03c0-element yielded \u03c0-EB1 protein levels that were similar to EB1 in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluating different designs of what we named \u03c0-elements in H1299 human cancer cells, we found that homozygous integration of a \u03c0-element in which an internal EF1\u03b1 promoter drives expression of the C-terminal \u03c0-EB1 half while the N-terminal half remains under the control of the endogenous promoter (Figure 1B) resulted in balanced expression of both \u03c0-EB1 parts and in homozygous edited clones yielded \u03c0-EB1 protein levels that were similar to EB1 in control cells (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "78b62205-3f70-4cdb-b4db-9bfcc397caee",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C35",
+      "claim": "An internal ribosome entry site (IRES) resulted in very poor expression of the C-terminal half of \u03c0-EB1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an internal ribosome entry site (IRES) resulted in very poor expression of the C-terminal half.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "c776ff61-4149-4d50-9ad3-af64235cd1dc",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C36",
+      "claim": "Self-cleaving 2A peptides did not work for \u03c0-element design because the C-terminus of the LOV2 domain cannot be modified without greatly inhibiting Zdk1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, self-cleaving 2 A peptides also did not work because the C-terminus of the LOV2 domain cannot be modified without greatly inhibiting Zdk1 binding (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design constraint with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "75812c8c-ac99-4746-910d-b4c09cf276ed",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C37",
+      "claim": "i3N cells are an hiPSC line that expresses Ngn2 under the control of a doxycycline-induced promoter to allow inducible differentiation into cortical glutamatergic i3Neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested \u03c0-element integration in i3N cells, an hiPSC line that expresses Ngn2 under the control of a doxycycline-induced promoter to allow inducible differentiation into cortical glutamatergic i3Neurons (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cell line used, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "636b6c60-c789-46d3-a498-1b174f930a4d",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C38",
+      "claim": "Homozygous \u03c0-element integration into both copies of exon 5 of the endogenous MAPRE1 (EB1) gene was validated by genomic PCR, sequencing, and immunoblot.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous \u03c0-element integration into both copies of exon 5 of the endogenous MAPRE1 (EB1) gene was validated by genomic PCR, sequencing, and immunoblot (Figure 1C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "61e7b0ae-7b91-4a8d-8af6-c04eac94fce9",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C39",
+      "claim": "EB1N-LOV2 expression levels were similar to EB1 in control cells and only mildly reduced in both i3N hiPSCs and i3Neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the N-terminal \u03c0-EB1 half is expressed from the endogenous EB1 promoter, compared with EB1 in control cells, EB1N-LOV2 expression levels were similar and only mildly reduced in both i3N hiPSCs and i3Neurons (Figure 1D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "ddd02e2d-4fe6-4a20-9a49-0d72b2c37001",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C40",
+      "claim": "Expression of Zdk1-EB1C driven by the EF1\u03b1 promoter was markedly increased in i3N hiPSCs but was lower in i3Neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, expression of Zdk1-EB1C that is driven by the EF1\u03b1 promoter was markedly increased in i3N hiPSCs but was lower in i3Neurons (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "7f25ea8b-c5de-4b65-8dc0-2953a1b9ac11",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C41",
+      "claim": "The change in Zdk1-EB1C expression indicates a change in the activity balance of the endogenous EB1 and EF1\u03b1 promoters during i3N neuronal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates a change in the activity balance of these two promoters during i3N neuronal differentiation and suggests that the \u03c0-element design could be improved by also using the native promotor to drive expression of the C-terminal half.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the expression data in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "ece58a16-2315-46b7-a6d7-bc2d3841ce16",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C42",
+      "claim": "The \u03c0-element design could be improved by also using the native promotor to drive expression of the C-terminal half.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates a change in the activity balance of these two promoters during i3N neuronal differentiation and suggests that the \u03c0-element design could be improved by also using the native promotor to drive expression of the C-terminal half.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future improvement based on the observed expression patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "45b72b74-11ed-4399-8fda-a106748f7366",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C43",
+      "claim": "Proliferation of \u03c0-EB1 i3N hiPSCs appeared normal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not try this, because proliferation, stem cell properties (Figure 1F), and most importantly differentiation into i3Neurons appeared normal as indicated by expected changes in expression levels of marker proteins such as EB3, DCX, and KIF2C that increase or decrease, respectively, during neuronal differentiation (Figure 1D, Figure 1\u2014figure supplement 2A and B) (Blair et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by observations and marker protein expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "e9c12c03-a1bc-44be-bad8-30f24c820b44",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C44",
+      "claim": "Stem cell properties of \u03c0-EB1 i3N hiPSCs appeared normal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not try this, because proliferation, stem cell properties (Figure 1F), and most importantly differentiation into i3Neurons appeared normal as indicated by expected changes in expression levels of marker proteins such as EB3, DCX, and KIF2C that increase or decrease, respectively, during neuronal differentiation (Figure 1D, Figure 1\u2014figure supplement 2A and B) (Blair et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Oct4 staining shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "aa9cfaaf-ff11-49eb-a304-f9afcb31efdd",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C45",
+      "claim": "Differentiation of \u03c0-EB1 i3N hiPSCs into i3Neurons appeared normal as indicated by expected changes in expression levels of marker proteins such as EB3, DCX, and KIF2C.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not try this, because proliferation, stem cell properties (Figure 1F), and most importantly differentiation into i3Neurons appeared normal as indicated by expected changes in expression levels of marker proteins such as EB3, DCX, and KIF2C that increase or decrease, respectively, during neuronal differentiation (Figure 1D, Figure 1\u2014figure supplement 2A and B) (Blair et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data in Figure 1D and ribosome profiling data in Figure 1\u2014figure supplement 2A and B, with reference to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "d3adc135-b3f6-4889-af01-35e9f4f5dfca",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C46",
+      "claim": "EB1 and EB3 are very similar and may be at least partially functionally redundant.",
+      "claim_type": "EXPLICIT",
+      "source": "Because EB1 and EB3 are very similar and may be at least partially functionally redundant, we also removed EB3 expression by introducing a frameshift and premature stop codon near the start of the EB3 open reading frame in \u03c0-EB1 i3N hiPSCs (Figure 1H; Figure 1\u2014figure supplement 3) to be able to ask how EB1 contributes to neuron morphogenesis and compare the relative contributions of EB1 and EB3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for generating EB3 knockout cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "c6879b1d-4889-4e64-86c3-c1ca19e9b638",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C47",
+      "claim": "EB3 expression was removed by introducing a frameshift and premature stop codon near the start of the EB3 open reading frame in \u03c0-EB1 i3N hiPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Because EB1 and EB3 are very similar and may be at least partially functionally redundant, we also removed EB3 expression by introducing a frameshift and premature stop codon near the start of the EB3 open reading frame in \u03c0-EB1 i3N hiPSCs (Figure 1H; Figure 1\u2014figure supplement 3) to be able to ask how EB1 contributes to neuron morphogenesis and compare the relative contributions of EB1 and EB3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1H and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "a5996def-9f0e-4d15-b5bb-421a4fffe910",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C48",
+      "claim": "Clonal \u03c0-EB1 i3N hiPSC colonies homogenously expressed EGFP-Zdk1-EB1C.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal \u03c0-EB1 i3N hiPSC colonies homogenously expressed EGFP-Zdk1-EB1C, and as expected, EGFP-Zdk1-EB1C rapidly dissociated from growing MT ends during blue light exposure in both i3N stem cells (Figure 1G) and differentiating i3Neurons (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "04ecee9b-5223-4242-8f6b-b3cb90680436",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C49",
+      "claim": "EGFP-Zdk1-EB1C rapidly dissociated from growing MT ends during blue light exposure in i3N stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal \u03c0-EB1 i3N hiPSC colonies homogenously expressed EGFP-Zdk1-EB1C, and as expected, EGFP-Zdk1-EB1C rapidly dissociated from growing MT ends during blue light exposure in both i3N stem cells (Figure 1G) and differentiating i3Neurons (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "b2cb3d2d-9c11-4e58-88d5-29599d20fef9",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C50",
+      "claim": "EGFP-Zdk1-EB1C rapidly dissociated from growing MT ends during blue light exposure in differentiating i3Neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal \u03c0-EB1 i3N hiPSC colonies homogenously expressed EGFP-Zdk1-EB1C, and as expected, EGFP-Zdk1-EB1C rapidly dissociated from growing MT ends during blue light exposure in both i3N stem cells (Figure 1G) and differentiating i3Neurons (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "bd512d56-cd11-4598-88c5-6814bf858b3c",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C51",
+      "claim": "\u03c0-EB1 photoinactivation significantly attenuated MT growth in i3N hiPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, and similar to what we previously observed in interphase human cancer cells (van Haren et al., 2018), \u03c0-EB1 photoinactivation significantly attenuated MT growth in i3N hiPSCs transiently expressing EB1N-mScarlet-LOV2, which remains on MT ends and enables MT growth rate measurements before and during blue light exposure (Figure 1I and J, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1I and J, and is consistent with previous observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "c4ed3561-a2ba-4556-a108-2b2b88021b69",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C52",
+      "claim": "\u03c0-EB1 EB3-/- i3Neurons sprouted neurites normally upon Ngn2-induced differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon Ngn2-induced differentiation, \u03c0-EB1 EB3-/- i3Neurons sprouted neurites normally (Figure 1\u2014figure supplement 3D, Figure 1\u2014video 2), and as expected, the EGFP-tagged C-terminal half of \u03c0-EB1 associated with growing MT ends in neurites with the majority of growing MT ends localized to growth cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "3cc9b031-455b-4940-a25f-5d2a2e6f2a77",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C53",
+      "claim": "The EGFP-tagged C-terminal half of \u03c0-EB1 associated with growing MT ends in neurites with the majority of growing MT ends localized to growth cones.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon Ngn2-induced differentiation, \u03c0-EB1 EB3-/- i3Neurons sprouted neurites normally (Figure 1\u2014figure supplement 3D, Figure 1\u2014video 2), and as expected, the EGFP-tagged C-terminal half of \u03c0-EB1 associated with growing MT ends in neurites with the majority of growing MT ends localized to growth cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "9bc38188-5078-47d9-8e3b-2a2ac555a010",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C54",
+      "claim": "MT growth is slower in neurons than in proliferating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, because MT growth is slower in neurons than in proliferating cells (Stepanova et al., 2003), EGFP-Zdk1-EB1C comets were less elongated in i3Neurons and appeared more punctate compared with i3N hiPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "63d2e246-92a7-42d3-947d-46dd17311328",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C55",
+      "claim": "EGFP-Zdk1-EB1C comets were less elongated in i3Neurons and appeared more punctate compared with i3N hiPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, because MT growth is slower in neurons than in proliferating cells (Stepanova et al., 2003), EGFP-Zdk1-EB1C comets were less elongated in i3Neurons and appeared more punctate compared with i3N hiPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation explained by the slower MT growth in neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "e2f5ae6b-666d-4d66-8649-7beaba645512",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C56",
+      "claim": "EGFP-Zdk1-EB1C quickly and reversibly dissociated from MT ends upon blue light exposure in \u03c0-EB1 EB3-/- i3Neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, EGFP-Zdk1-EB1C quickly and reversibly dissociated from MT ends upon blue light exposure in \u03c0-EB1 EB3-/- i3Neurons (Figure 2A, Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "db3e03c4-c3a0-438f-b395-a10ad62891d9",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C57",
+      "claim": "In control i3Neuron growth cones, MTs dynamically extended from the central domain into the growth cone periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In control i3Neuron growth cones, MTs dynamically extended from the central domain into the growth cone periphery and the average length of these MTs was not affected by blue light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "3a65c901-40a8-458d-82ff-d8c3af4e6185",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C58",
+      "claim": "The average length of MTs in control i3Neuron growth cones was not affected by blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "In control i3Neuron growth cones, MTs dynamically extended from the central domain into the growth cone periphery and the average length of these MTs was not affected by blue light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "e32ae943-794e-4cbd-894a-15d3e9853988",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C59",
+      "claim": "In \u03c0-EB1 i3Neurons, MTs in the growth cone periphery frequently shortened in response to blue light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in \u03c0-EB1 i3Neurons MTs in the growth cone periphery frequently shortened in response to blue light exposure (Figure 2B and C; Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "945b9a6a-2cd1-4fc7-a0fd-c52b74d92c04",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C60",
+      "claim": "\u03c0-EB1 photoinactivation-induced MT shortening was most pronounced in \u03c0-EB1 EB3-/- i3Neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03c0-EB1 photoinactivation-induced MT shortening was most pronounced in \u03c0-EB1 EB3-/- i3Neurons, MTs also shortened in \u03c0-EB1 i3Neurons that still expressed EB3 and in both cases the relative MT length after 20 s of blue light was significantly reduced compared with control i3Neurons (p<0.001 by ANOVA and Tukey-Kramer HSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and statistical analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "9d44e4c1-dd64-4e7d-983e-de62912103a0",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C61",
+      "claim": "MTs shortened in \u03c0-EB1 i3Neurons that still expressed EB3 in response to blue light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03c0-EB1 photoinactivation-induced MT shortening was most pronounced in \u03c0-EB1 EB3-/- i3Neurons, MTs also shortened in \u03c0-EB1 i3Neurons that still expressed EB3 and in both cases the relative MT length after 20 s of blue light was significantly reduced compared with control i3Neurons (p<0.001 by ANOVA and Tukey-Kramer HSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and statistical analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "010963a6-e702-442c-8a11-718539aa4215",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C62",
+      "claim": "The relative MT length after 20 s of blue light was significantly reduced in both \u03c0-EB1 and \u03c0-EB1 EB3-/- i3Neurons compared with control i3Neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03c0-EB1 photoinactivation-induced MT shortening was most pronounced in \u03c0-EB1 EB3-/- i3Neurons, MTs also shortened in \u03c0-EB1 i3Neurons that still expressed EB3 and in both cases the relative MT length after 20 s of blue light was significantly reduced compared with control i3Neurons (p<0.001 by ANOVA and Tukey-Kramer HSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and statistical analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "039711f0-fcc4-412e-b1a9-f945190728fa",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C63",
+      "claim": "Taxane-based probes label growing MT ends more dimly than the rest of the MT possibly due to slow redistribution kinetics on MTs in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although taxane-based probes label growing MT ends more dimly than the rest of the MT possibly due to slow redistribution kinetics on MTs in cells (Ettinger et al., 2016), we were able to measure growth cone MT polymerization rates during blue light exposure by manual tracking MT length changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "7660d743-eb5f-499d-8b6b-92104ab9b6a8",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C64",
+      "claim": "Absolute MT growth rates measured using taxane-based probes are underestimated due to reduced temporal resolution compared with EB1 tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though MT growth rates in neurons are lower compared with other cells (Stepanova et al., 2003), it is important to note that absolute MT growth rates in this experiment are further underestimated because of the reduced temporal resolution compared with EB1 tracking (Gierke et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological limitation with references to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "e9ea9b26-434e-4a02-be90-511cbb2531a5",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C65",
+      "claim": "After 1 min of blue light exposure, growth cone MT growth rates in both \u03c0-EB1 lines were reduced at least fourfold compared with control i3Neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, compared with control i3Neurons, after 1 min of blue light exposure, growth cone MT growth rates in both \u03c0-EB1 lines were reduced at least fourfold (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "dd7ef7c5-cff7-4413-a9a2-14d363701c4a",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C66",
+      "claim": "EB1-mediated MT end interactions are required to stabilize and sustain net growth cone MT growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, taken together these data show that EB1-mediated MT end interactions are required to stabilize and sustain net growth cone MT growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "bc1a46d3-065d-4d3e-8ab8-688d96dbf678",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C67",
+      "claim": "Endogenous EB3 cannot compensate for the acute loss of EB1 function in i3Neuron growth cones.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our results indicate that endogenous EB3 cannot compensate for the acute loss of EB1 function in i3Neuron growth cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data comparing \u03c0-EB1 and \u03c0-EB1 EB3-/- i3Neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "c2ad8e61-1fd2-4868-819b-f13ee420ff41",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C68",
+      "claim": "\u03c0-EB1 photoinactivation can partially displace EB3 from growing MT ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we previously observed that \u03c0-EB1 photoinactivation can partially displace EB3 from growing MT ends (van Haren et al., 2018), we cannot completely exclude a dominant negative effect of \u03c0-EB1 photoinactivation on EB3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to previous observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "45f2f9c6-b0e3-4dfc-90db-03423bdaa5f2",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C69",
+      "claim": "A dominant negative effect of \u03c0-EB1 photoinactivation on EB3 cannot be completely excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we previously observed that \u03c0-EB1 photoinactivation can partially displace EB3 from growing MT ends (van Haren et al., 2018), we cannot completely exclude a dominant negative effect of \u03c0-EB1 photoinactivation on EB3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a caveat to the interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "37244586-65ae-4378-9d07-4fd76e5103bc",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C70",
+      "claim": "EB1N-LOV2 likely does not interfere with EB3 binding to MTs by direct competition for binding sites because the EB1N-LOV2 expression level in i3Neurons is below that of EB1 in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the EB1N-LOV2 expression level in i3Neurons is below that of EB1 in control cells, EB1N-LOV2 likely does not interfere with EB3 binding to MTs by direct competition for binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the expression level data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "ab63e98a-a120-480f-82b7-8f468aa006d4",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C71",
+      "claim": "The findings are consistent with not fully understood functional differences between EB1 and EB3 in developing neurons that relate both to their binding sites on MT ends as well as differences in interaction partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are however consistent with not fully understood functional differences between EB1 and EB3 in developing neurons that relate both to their binding sites on MT ends as well as differences in interaction partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the context of existing knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "9d121109-7986-4021-8bcf-0d04bab156ec",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C72",
+      "claim": "EB3 trails behind EB1 on growing MT ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, EB3 trails behind EB1 on growing MT ends and only EB3 binds to the F-actin regulator drebrin possibly coordinating F-actin and MT dynamics independently of directly controlling MT growth (Poobalasingam et al., 2022; Roth et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "c6bb65d6-422f-4b11-a1bf-20978b98ef3e",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C73",
+      "claim": "Only EB3 binds to the F-actin regulator drebrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, EB3 trails behind EB1 on growing MT ends and only EB3 binds to the F-actin regulator drebrin possibly coordinating F-actin and MT dynamics independently of directly controlling MT growth (Poobalasingam et al., 2022; Roth et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "4efdd55d-b311-42c9-af94-6eb8ccda971c",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C74",
+      "claim": "EB3 binding to drebrin possibly coordinates F-actin and MT dynamics independently of directly controlling MT growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, EB3 trails behind EB1 on growing MT ends and only EB3 binds to the F-actin regulator drebrin possibly coordinating F-actin and MT dynamics independently of directly controlling MT growth (Poobalasingam et al., 2022; Roth et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "5f248228-79aa-4cdb-a116-e7cc05157559",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C75",
+      "claim": "EB3 may be more important during later stages of neuron development when EB3 is more highly expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, EB3 may also be more important during later stages of neuron development when EB3 is more highly expressed (Jaworski et al., 2009; Leterrier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an alternative explanation with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "f66f5751-0cd9-4f8f-9723-7135faa493fc",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C76",
+      "claim": "'Pioneer' MTs that enter the growth cone periphery participate in growth cone guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Because 'pioneer' MTs that enter the growth cone periphery participate in growth cone guidance (Buck and Zheng, 2002), and MT and F-actin dynamics are coupled both mechanically and biochemically through Rho GTPase signaling, we next asked how \u03c0-EB1 photoinactivation affected F-actin dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "d09ff1c6-f138-4b41-a4ba-13a218ce9c39",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C77",
+      "claim": "MT and F-actin dynamics are coupled both mechanically and biochemically through Rho GTPase signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Because 'pioneer' MTs that enter the growth cone periphery participate in growth cone guidance (Buck and Zheng, 2002), and MT and F-actin dynamics are coupled both mechanically and biochemically through Rho GTPase signaling, we next asked how \u03c0-EB1 photoinactivation affected F-actin dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "e4518d4d-70aa-4e14-b7dd-38782088b0af",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C78",
+      "claim": "MT growth is thought to activate Rac1 which drives leading-edge actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "MT growth is thought to activate Rac1 which drives leading-edge actin polymerization, while MT shortening activates RhoA that increases actomyosin contractility through the release of regulatory MT-bound factors (Garcin and Straube, 2019; Wittmann and Waterman-Storer, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "aa94e6f9-63b3-4a6c-b1e9-6ba31cd385fb",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C79",
+      "claim": "MT shortening activates RhoA that increases actomyosin contractility through the release of regulatory MT-bound factors.",
+      "claim_type": "EXPLICIT",
+      "source": "MT growth is thought to activate Rac1 which drives leading-edge actin polymerization, while MT shortening activates RhoA that increases actomyosin contractility through the release of regulatory MT-bound factors (Garcin and Straube, 2019; Wittmann and Waterman-Storer, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "599caf55-4306-4950-b4ce-4aea64ca3462",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C80",
+      "claim": "The F-actin retrograde flow rate in control i3Neurons was 2.8+/-0.4 \u00b5m/min.",
+      "claim_type": "EXPLICIT",
+      "source": "On kymographs perpendicular to the growth cone edge (Figure 3B), we measured the same F-actin retrograde flow rate in control (2.8+/-0.4 \u00b5m/min; mean +/-standard deviation) and \u03c0-EB1 EB3-/- i3Neurons (2.8+/-0.3 \u00b5m/min) in the dark, similar to previous measurements in growth cones from other vertebrate species (Flynn et al., 2012; Geraldo and Gordon-Weeks, 2009; Gomez and Letourneau, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "dea0608a-82c8-4554-9aaa-373717ad74f9",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C81",
+      "claim": "The F-actin retrograde flow rate in \u03c0-EB1 EB3-/- i3Neurons was 2.8+/-0.3 \u00b5m/min.",
+      "claim_type": "EXPLICIT",
+      "source": "On kymographs perpendicular to the growth cone edge (Figure 3B), we measured the same F-actin retrograde flow rate in control (2.8+/-0.4 \u00b5m/min; mean +/-standard deviation) and \u03c0-EB1 EB3-/- i3Neurons (2.8+/-0.3 \u00b5m/min) in the dark, similar to previous measurements in growth cones from other vertebrate species (Flynn et al., 2012; Geraldo and Gordon-Weeks, 2009; Gomez and Letourneau, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "5fdf02db-93b7-47ae-b090-0fd5601668f6",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C82",
+      "claim": "The measured F-actin retrograde flow rates are similar to previous measurements in growth cones from other vertebrate species.",
+      "claim_type": "EXPLICIT",
+      "source": "On kymographs perpendicular to the growth cone edge (Figure 3B), we measured the same F-actin retrograde flow rate in control (2.8+/-0.4 \u00b5m/min; mean +/-standard deviation) and \u03c0-EB1 EB3-/- i3Neurons (2.8+/-0.3 \u00b5m/min) in the dark, similar to previous measurements in growth cones from other vertebrate species (Flynn et al., 2012; Geraldo and Gordon-Weeks, 2009; Gomez and Letourneau, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "06c9f6d9-6c08-4b33-90d0-f386ccd15c08",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C83",
+      "claim": "The growth cone F-actin retrograde flow rate remained remarkably constant during blue light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although growth cone morphology was highly dynamic (Figure 3\u2014video 1), the growth cone F-actin retrograde flow rate remained remarkably constant during blue light exposure (Figure 3C), and we also did not observe consistent changes in overall F-actin dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "d81715d0-00ef-4e78-bb46-beff9279f5ba",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C84",
+      "claim": "No consistent changes in overall F-actin dynamics were observed during blue light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although growth cone morphology was highly dynamic (Figure 3\u2014video 1), the growth cone F-actin retrograde flow rate remained remarkably constant during blue light exposure (Figure 3C), and we also did not observe consistent changes in overall F-actin dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "6c738b16-d22b-4c89-a720-f752c07378a7",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C85",
+      "claim": "Retrograde F-actin flow is directly related to the rate of leading-edge actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Because retrograde F-actin flow is directly related to the rate of leading-edge actin polymerization, this indicates that EB1-mediated MT growth or +TIP interactions do not immediately influence growth cone actin polymerization dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "193fc589-79b2-4a0c-a2ac-3b9830a98bc5",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C86",
+      "claim": "EB1-mediated MT growth or +TIP interactions do not immediately influence growth cone actin polymerization dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Because retrograde F-actin flow is directly related to the rate of leading-edge actin polymerization, this indicates that EB1-mediated MT growth or +TIP interactions do not immediately influence growth cone actin polymerization dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the F-actin flow data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "2d259f01-3bbb-4d62-94f8-fa1be49e0cf0",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C87",
+      "claim": "Within a 15 min observation window, >90% of \u03c0-EB1 neurites visibly retracted when the entire growth cone was exposed to blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a 15 min observation window, >90% of \u03c0-EB1 neurites visibly retracted when the entire growth cone was exposed to blue light (Figure 4A and B; Figure 4\u2014video 1), regardless of whether these cells expressed EB3 or not, again indicating that EB3 is not able to compensate for the acute loss of EB1 function in early neurite development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "214c73b9-25d1-474d-a436-5be94d57a63f",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C88",
+      "claim": "The retraction of \u03c0-EB1 neurites occurred regardless of whether these cells expressed EB3 or not.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a 15 min observation window, >90% of \u03c0-EB1 neurites visibly retracted when the entire growth cone was exposed to blue light (Figure 4A and B; Figure 4\u2014video 1), regardless of whether these cells expressed EB3 or not, again indicating that EB3 is not able to compensate for the acute loss of EB1 function in early neurite development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing \u03c0-EB1 and \u03c0-EB1 EB3-/- i3Neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "9cbaecf7-3412-40fb-82eb-c84c66e7800c",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C89",
+      "claim": "EB3 is not able to compensate for the acute loss of EB1 function in early neurite development.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a 15 min observation window, >90% of \u03c0-EB1 neurites visibly retracted when the entire growth cone was exposed to blue light (Figure 4A and B; Figure 4\u2014video 1), regardless of whether these cells expressed EB3 or not, again indicating that EB3 is not able to compensate for the acute loss of EB1 function in early neurite development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "4c885990-96a7-4c7f-8c01-684282d12eda",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C90",
+      "claim": "Only ~40% of control i3Neuron neurites shortened during blue light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast and as expected, control i3Neurons were insensitive to blue light exposure with only ~40% of neurites shortening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "22273a2b-5526-463b-b817-7cfc7d5d123d",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C91",
+      "claim": "Neurites from \u03c0-EB1 i3Neurons were repelled by blue light barriers placed in front of the growth cone while control i3Neurons were unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, neurites from \u03c0-EB1 i3Neurons were repelled by blue light barriers placed in front of the growth cone while control i3Neurons were unaffected (Figure 4C), and in long term, time-lapse experiments \u03c0-EB1 i3Neurons were unable to cross a blue light barrier sometimes after repeated growth attempts over several hours (Figure 4D; Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "f5c432a6-2e24-4706-8ef7-63b84e0f6c74",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C92",
+      "claim": "In long term time-lapse experiments, \u03c0-EB1 i3Neurons were unable to cross a blue light barrier sometimes after repeated growth attempts over several hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, neurites from \u03c0-EB1 i3Neurons were repelled by blue light barriers placed in front of the growth cone while control i3Neurons were unaffected (Figure 4C), and in long term, time-lapse experiments \u03c0-EB1 i3Neurons were unable to cross a blue light barrier sometimes after repeated growth attempts over several hours (Figure 4D; Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "5efbf84f-d991-4162-aee5-997c60aea47c",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C93",
+      "claim": "Custom-engineered neuron networks with defined connectivity between individual neurons are a potential key to better understand nervous system information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Custom-engineered neuron networks with defined connectivity between individual neurons are a potential key to better understand nervous system information processing (Aebersold et al., 2016), and optogenetic guidance for developing neurites could be a useful tool to build such neuron networks from the bottom up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "6744484c-57a9-4ad6-967f-8df75a9b461c",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C94",
+      "claim": "Optogenetic guidance for developing neurites could be a useful tool to build neuron networks from the bottom up.",
+      "claim_type": "EXPLICIT",
+      "source": "Custom-engineered neuron networks with defined connectivity between individual neurons are a potential key to better understand nervous system information processing (Aebersold et al., 2016), and optogenetic guidance for developing neurites could be a useful tool to build such neuron networks from the bottom up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "da940f5c-24ca-4088-b53c-4696241d897e",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C95",
+      "claim": "\u03c0-EB1 photo-dissociation remained sharply localized to small blue light-exposed regions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this experiment was technically very challenging. Although \u03c0-EB1 photo-dissociation remained sharply localized to small blue light-exposed regions (Figure 5\u2014figure supplement 1), it was difficult to correctly place these regions in dynamic, moving growth cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "68f5f7bd-a576-4699-8b80-d136ada53979",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C96",
+      "claim": "Most \u03c0-EB1 EB3-/- neurites (29 out of 58) retracted even with localized blue light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, most \u03c0-EB1 EB3-/- neurites (29 out of 58) still retracted even with localized blue light exposure, but ~38% (22 growth cones, six of which also eventually retracted) turned away from the blue light-exposed region (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "18ad5c67-a925-47af-801c-5a99e8919815",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C97",
+      "claim": "~38% of \u03c0-EB1 EB3-/- growth cones (22 growth cones, six of which also eventually retracted) turned away from the blue light-exposed region.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, most \u03c0-EB1 EB3-/- neurites (29 out of 58) still retracted even with localized blue light exposure, but ~38% (22 growth cones, six of which also eventually retracted) turned away from the blue light-exposed region (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "4c9bc475-5632-46ae-92ea-b3945fd40577",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C98",
+      "claim": "Control i3Neurons did not respond and showed no turning bias relative to localized blue light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, control i3Neurons did not respond and showed no turning bias relative to localized blue light exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "3f147345-76f5-4b9d-aab8-cf3b53246b4c",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C99",
+      "claim": "A novel approach is presented to replace the central MT regulator EB1 with a photosensitive variant by inserting a light-sensitive protein interaction module encoded by a short genetic cassette into an inter-domain linker by CRISPR/Cas9-mediated genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we present a novel approach to replace the central MT regulator EB1 with a photosensitive variant by inserting a light-sensitive protein interaction module encoded by a short genetic cassette \u2013 that we named \u03c0-element \u2013 into an inter-domain linker by CRISPR/Cas9-mediated genome editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the methodological contribution of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "27668c37-579a-486b-8f29-27839c076848",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C100",
+      "claim": "The \u03c0-element only needs to contain ORFs encoding LOV2 and Zdk1 and the required regulatory elements, while the flanking homology arms direct it to the correct genomic locus.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that the \u03c0-element only needs to contain ORFs encoding LOV2 and Zdk1 and the required regulatory elements, while the flanking homology arms direct it to the correct genomic locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the \u03c0-element design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "f996dec2-6f82-4928-8ae5-237f102993fd",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C101",
+      "claim": "The rest of the protein of interest remains encoded by the endogenous gene when using the \u03c0-element approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The rest of the protein of interest remains encoded by the endogenous gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the \u03c0-element approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "e6783638-37e0-45bf-96ff-a128bec3d9a6",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C102",
+      "claim": "A similar strategy to the \u03c0-element approach could be adapted to many other multidomain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we also include a fluorescent protein tag to monitor \u03c0-EB1 photodissociation and a leucine zipper coiled-coil to retain dimerization of the \u03c0-EB1 N-terminal half during blue light exposure. While we demonstrate the utility of this approach for the MAPRE1 gene in hiPSCs, we believe that a similar strategy could be adapted to many other multidomain proteins supplementing the optogenetic toolbox to investigate localized protein functions in real-time (Wittmann et al., 2020), but it should be noted that photodissociation kinetics may be different with monomeric proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method with a reference.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "bdee1679-20b9-429e-99a0-d43bc3d57d6d",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C103",
+      "claim": "Photodissociation kinetics may be different with monomeric proteins when using the \u03c0-element approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we also include a fluorescent protein tag to monitor \u03c0-EB1 photodissociation and a leucine zipper coiled-coil to retain dimerization of the \u03c0-EB1 N-terminal half during blue light exposure. While we demonstrate the utility of this approach for the MAPRE1 gene in hiPSCs, we believe that a similar strategy could be adapted to many other multidomain proteins supplementing the optogenetic toolbox to investigate localized protein functions in real-time (Wittmann et al., 2020), but it should be noted that photodissociation kinetics may be different with monomeric proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a caveat for applying the method to monomeric proteins.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "4077aa12-b870-4832-bc0c-f68fd5a92f6c",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C104",
+      "claim": "The LOV2/Zdk1 module interacts in the dark, which is opposite to all other optogenetic dimerization modules.",
+      "claim_type": "EXPLICIT",
+      "source": "The LOV2/Zdk1 module interacts in the dark, which is opposite to all other optogenetic dimerization modules and therefore, enables an unperturbed dark state and acute functional knockout of a given protein activity through blue light exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key feature of the LOV2/Zdk1 module.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "7f95e99d-6f6a-4a11-ba15-0c8e3a31e30d",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C105",
+      "claim": "The LOV2/Zdk1 module enables an unperturbed dark state and acute functional knockout of a given protein activity through blue light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The LOV2/Zdk1 module interacts in the dark, which is opposite to all other optogenetic dimerization modules and therefore, enables an unperturbed dark state and acute functional knockout of a given protein activity through blue light exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the LOV2/Zdk1 module.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "108c2085-ca70-4fc1-8dbd-ef53e4502532",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C106",
+      "claim": "Replacing an endogenous protein with a photosensitive variant in a single genome editing step has important advantages by allowing modification of proteins for which genetic knockouts might be lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, replacing an endogenous protein with a photosensitive variant in a single genome editing step as presented here has important advantages by allowing modification of proteins for which genetic knockouts might be lethal and further enabling optogenetics in complex cell systems that are not amenable to transient genetic manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "fc1f3535-f60d-4da7-bb88-07df6fe54371",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C107",
+      "claim": "Replacing an endogenous protein with a photosensitive variant in a single genome editing step enables optogenetics in complex cell systems that are not amenable to transient genetic manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, replacing an endogenous protein with a photosensitive variant in a single genome editing step as presented here has important advantages by allowing modification of proteins for which genetic knockouts might be lethal and further enabling optogenetics in complex cell systems that are not amenable to transient genetic manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "61b6bcfd-d63a-4313-836d-17b05edaa2cc",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C108",
+      "claim": "The approach allowed direct demonstration that EB1 in developing human cortical neurons is required for sustained growth cone MT growth and growth cone advance.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach allowed us to directly demonstrate that EB1 in developing human cortical neurons is required for sustained growth cone MT growth and growth cone advance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings enabled by the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "f8231462-4cd1-402e-abb3-05c650032675",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C109",
+      "claim": "Unchanged F-actin polymerization dynamics during blue light indicate that retraction likely results from a loss of growth cone adhesion or an increase in neurite actomyosin contractility consistent with MT-shortening induced RhoA activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not completely dissect the molecular mechanism underlying the \u03c0-EB1 photodissociation-mediated neurite retraction response, unchanged F-actin polymerization dynamics during blue light indicate that retraction likely results from a loss of growth cone adhesion or an increase in neurite actomyosin contractility consistent with MT-shortening induced RhoA activation (Joo and Olson, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results with reference to previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "fa3bce54-a9a3-4bd4-95c8-3e70443d445e",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C110",
+      "claim": "An increase in neurite contractility that does not remain localized to the region of blue light exposure may explain the difficulty in using \u03c0-EB1 photodissociation to control growth cone guidance more precisely.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in neurite contractility that does not remain localized to the region of blue light exposure may also explain our difficulty in using \u03c0-EB1 photodissociation to control growth cone guidance more precisely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation for the experimental challenges.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "afba758b-5bba-41e8-94bf-3d75dd853e94",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C111",
+      "claim": "Optogenetic tools that provide attractive stimuli could be a promising avenue to control growth cone guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although other optogenetic tools that provide attractive stimuli could be a promising avenue to control growth cone guidance (Harris et al., 2020), inhibitory stimuli that induce MT depolymerization may be too difficult to control to be practically useful in synthetic biology approaches building defined neuron networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion with reference to previous literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "8db12db5-9792-4f28-b79a-ba2e64a819e3",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C112",
+      "claim": "Inhibitory stimuli that induce MT depolymerization may be too difficult to control to be practically useful in synthetic biology approaches building defined neuron networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although other optogenetic tools that provide attractive stimuli could be a promising avenue to control growth cone guidance (Harris et al., 2020), inhibitory stimuli that induce MT depolymerization may be too difficult to control to be practically useful in synthetic biology approaches building defined neuron networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental challenges encountered.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "a7466219-1ab5-404f-9a8f-a5683daf04d7",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "claim_id": "C113",
+      "claim": "It will be interesting to see how \u03c0-EB1 in i3Neurons or other types of neurons can be used to analyze how MTs and +TIPs contribute dynamically to other aspects of neuron morphogenesis such as branching, dendritic spine dynamics or synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it will be interesting to see how \u03c0-EB1 in i3Neurons or other types of neurons can be used to analyze how MTs and +TIPs contribute dynamically to other aspects of neuron morphogenesis such as branching, dendritic spine dynamics or synaptic plasticity (Dent et al., 2004; Jaworski et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future direction with reference to previous literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "434bd703-e579-478c-9ae9-d43f875332c7",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a \u03c0-element genome editing strategy that enables single-step replacement of endogenous EB1 with a photosensitive variant in hiPSCs. The \u03c0-element contains LOV2/Zdk1 modules with an internal EF1\u03b1 promoter driving C-terminal expression, resulting in balanced protein expression and normal cell differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C33-C51, C99-C101 collectively demonstrate successful \u03c0-element integration with validation by genomic PCR, sequencing, immunoblot, and functional imaging. The approach yielded cells with near-physiological expression levels that differentiated normally and showed expected photodissociation responses. Multiple independent clones and validation methods provide strong convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "39412728-434a-4247-862a-d9b8c44d9878",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Acute optogenetic EB1 inactivation induces microtubule depolymerization in the growth cone periphery. Blue light exposure caused MT shortening in \u03c0-EB1 neurons (both with and without EB3), with growth rates reduced at least fourfold compared to controls, demonstrating that EB1-mediated MT end interactions are required to stabilize growth cone MT growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C27, C56-C62, C65-C66 are supported by quantitative MT length measurements (Figure 2B-D) showing significant MT shortening (p<0.001) and growth rate reduction in \u03c0-EB1 cells during blue light exposure. Statistical analysis with appropriate controls and multiple replicates strengthens the conclusion. However, absolute MT growth rates may be underestimated due to methodological limitations (C63-C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The phenotypes of EB1 photoinactivation were independent of EB3, indicating that EB3 cannot compensate for acute loss of EB1 function in early neurite development. This reveals functional differences between EB1 and EB3 in developing neurons despite their structural similarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C29, C60-C61, C67, C88-C89 are supported by experiments comparing \u03c0-EB1 and \u03c0-EB1 EB3-/- neurons showing similar phenotypes in both genotypes. The authors appropriately acknowledge potential caveats (C68-C70) regarding dominant negative effects, but expression level data (C39, C70) argues against simple competition. The conclusion is consistent with known functional differences between EB1 and EB3 (C71-C75).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "cd88c9fe-5112-44fb-ad61-bb4c48707363",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Acute optogenetic EB1 inactivation induces neurite retraction. Within 15 minutes of whole growth cone blue light exposure, >90% of \u03c0-EB1 neurites retracted regardless of EB3 expression, while only ~40% of control neurites shortened, demonstrating that EB1 is required for sustained growth cone advance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28, C87-C90, C108 are supported by quantitative measurements of neurite length changes (Figure 4A-B) with clear statistical significance (p<0.001 by ANOVA). The high percentage of retracting \u03c0-EB1 neurites versus controls provides strong evidence. The independence from EB3 is demonstrated by comparing \u03c0-EB1 and \u03c0-EB1 EB3-/- neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "15620c72-0c95-4ccf-a5ae-cdeb14f519a5",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Growth cones are repelled from areas of blue light exposure. \u03c0-EB1 neurites were unable to cross blue light barriers and ~38% of growth cones turned away from localized blue light exposure, while control neurons showed no response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C91-C92, C96-C98 are supported by experimental data (Figures 4C-D, 5) showing repulsion responses. However, the authors acknowledge technical challenges (C95) with localized stimulation, and most neurites (29/58) still retracted even with localized exposure (C96). The turning response was modest (~38%) and technically difficult to achieve, limiting the practical utility for precise guidance applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "ff7a51e9-d47d-4524-af9d-9f29fa100f7a",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Acute EB1 inactivation does not immediately change F-actin dynamics. F-actin retrograde flow rates remained constant at ~2.8 \u03bcm/min during blue light exposure in both control and \u03c0-EB1 EB3-/- neurons, indicating that EB1-mediated MT growth does not immediately influence growth cone actin polymerization dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 are supported by quantitative kymograph measurements (Figure 3B-C) showing no significant change in F-actin flow rates during blue light exposure (p>0.87 by paired t-test, p>0.97 by ANOVA). The measurements are consistent with previous literature (C82) and the conclusion logically follows from the established relationship between retrograde flow and actin polymerization (C85).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "ac521fc0-af0d-47b0-a7f5-4ae97b6757f3",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mechanism underlying neurite retraction likely involves loss of growth cone adhesion or increased neurite actomyosin contractility consistent with MT-shortening induced RhoA activation, rather than changes in F-actin polymerization. Non-localized contractility may explain difficulties in precise guidance control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109-C110 are mechanistic interpretations based on unchanged F-actin dynamics (C83-C84) and known MT-RhoA signaling pathways. While the interpretation is reasonable and supported by citation (C109), it remains speculative as the authors acknowledge they do not completely dissect the molecular mechanism. Direct measurements of adhesion, contractility, or RhoA activity would be needed to confirm this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "bb2e1035-c2e1-4f7d-9dbc-4ebabe8418b4",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The \u03c0-element approach could be adapted to many other multidomain proteins to enable optogenetic control. The LOV2/Zdk1 module's dark-state interaction enables unperturbed function and acute knockout, with advantages for essential proteins and complex cell systems not amenable to transient manipulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102, C104-C107 describe the general applicability and advantages of the method, which are logical extensions of the demonstrated success with EB1. The unique properties of LOV2/Zdk1 (C104-C105) are established knowledge. However, C102-C103 appropriately note that adaptation to other proteins and monomeric proteins may require optimization, as photodissociation kinetics could differ. The evaluation is SUPPORTED for the demonstrated case but appropriately cautious about generalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "c6d11016-b1e9-4306-b5fb-2a7dfb1f2f3f",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Future applications and limitations of the approach are discussed. Attractive optogenetic stimuli may be more promising for growth cone guidance than inhibitory stimuli, which may be too difficult to control for synthetic biology applications. The system could be used to study other aspects of neuron morphogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C111-C113 are speculative statements about future directions and potential applications. While C111 is supported by citation and C112 is a reasonable inference from the experimental challenges encountered (C95-C96, C110), these remain untested hypotheses. C113 suggests future experiments without providing data. These are appropriate discussion points but do not constitute supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "b54b6d47-6b3f-4214-b25d-778af65a26ea",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background context on microtubules, MAPs, neuron development, and +TIPs is provided, establishing the rationale for studying EB1 function in growth cones. Previous work developed a light-sensitive EB1 variant, and the current study addresses the technological gap in acutely inhibiting +TIP interactions in developing human neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C26 provide background knowledge supported by appropriate citations. C1 describes prior work by the authors. These claims establish context and rationale but are not novel results of the current study. They are appropriately cited and accurately represent the state of knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "79874c2d-b0d2-4173-ac3a-448094adce10",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AlphaFold2 limitations in predicting \u03c0-EB1 structure are noted. The model does not correctly predict relative domain positions or the LOV2/Zdk1 interaction, despite a previously determined structure of the LOV2/Zdk1 dimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 accurately describe limitations of the AlphaFold2 model shown in Figure 1A, with appropriate citation (C32) to previous structural work. This is a minor methodological note acknowledging that the computational model has limitations, which is appropriate scientific practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "d35a1176-0890-4112-8dcf-a45a5112db59",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Characterization of the i3N cell system and \u03c0-EB1 behavior in differentiating neurons. The i3N system enables doxycycline-induced differentiation into cortical neurons. \u03c0-EB1 EB3-/- neurons sprouted neurites normally, with EGFP-Zdk1-EB1C localizing to MT ends in growth cones, appearing more punctate than in stem cells due to slower MT growth in neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C52-C55 describe the cell system (C37, supported by citation) and characterization of \u03c0-EB1 localization in neurons (C52-C53, supported by imaging data). The observation about comet morphology (C55) is explained by established knowledge about slower MT growth in neurons (C54, supported by citation). These are appropriate characterization results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "45bc8936-ef70-4dc2-b63e-64e10f7d008f",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological limitations of taxane-based MT labeling are acknowledged. These probes label growing MT ends more dimly than the rest of the MT and underestimate absolute growth rates due to reduced temporal resolution compared to EB1 tracking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 appropriately acknowledge methodological limitations with supporting citations. This transparency about measurement limitations is important for proper interpretation of the quantitative data (C65) and strengthens confidence in the conclusions by showing awareness of potential sources of error.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    },
+    {
+      "id": "81631475-e4e2-451a-ab88-e8ba024e726c",
+      "content_id": "8349051d-8a17-4709-8bf8-6e55e4ba26a8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on MT-actin coupling and potential applications is provided. Pioneer MTs participate in growth cone guidance, and MT/F-actin dynamics are coupled through Rho GTPase signaling. Custom-engineered neuron networks could benefit from optogenetic neurite guidance tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 provide established background knowledge supported by appropriate citations. Claims C93-C94 discuss potential applications, with C93 supported by citation and C94 being speculative. These provide context for the experimental design and potential impact but are not novel results of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:36.746208Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "76f1beb7-890f-4a24-8d97-2653e9146760",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "fafc034c-983d-4a05-99c5-415fdf1e1f49",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "03b92881-47fd-4736-9c70-b187ab9452f4",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "78b62205-3f70-4cdb-b4db-9bfcc397caee",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "c776ff61-4149-4d50-9ad3-af64235cd1dc",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "636b6c60-c789-46d3-a498-1b174f930a4d",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "61e7b0ae-7b91-4a8d-8af6-c04eac94fce9",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "ddd02e2d-4fe6-4a20-9a49-0d72b2c37001",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "7f25ea8b-c5de-4b65-8dc0-2953a1b9ac11",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "ece58a16-2315-46b7-a6d7-bc2d3841ce16",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "45b72b74-11ed-4399-8fda-a106748f7366",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "e9c12c03-a1bc-44be-bad8-30f24c820b44",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "aa9cfaaf-ff11-49eb-a304-f9afcb31efdd",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "c6879b1d-4889-4e64-86c3-c1ca19e9b638",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "a5996def-9f0e-4d15-b5bb-421a4fffe910",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "04ecee9b-5223-4242-8f6b-b3cb90680436",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "b2cb3d2d-9c11-4e58-88d5-29599d20fef9",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "bd512d56-cd11-4598-88c5-6814bf858b3c",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "3f147345-76f5-4b9d-aab8-cf3b53246b4c",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "27668c37-579a-486b-8f29-27839c076848",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "f996dec2-6f82-4928-8ae5-237f102993fd",
+      "result_id": "434bd703-e579-478c-9ae9-d43f875332c7"
+    },
+    {
+      "claim_id": "33e6a184-6b74-4779-870f-8a5f4e366611",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "a0d3357a-c5b4-486b-959a-cccb4bf90fce",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "e2f5ae6b-666d-4d66-8649-7beaba645512",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "db3e03c4-c3a0-438f-b395-a10ad62891d9",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "3a65c901-40a8-458d-82ff-d8c3af4e6185",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "e32ae943-794e-4cbd-894a-15d3e9853988",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "945b9a6a-2cd1-4fc7-a0fd-c52b74d92c04",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "9d44e4c1-dd64-4e7d-983e-de62912103a0",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "010963a6-e702-442c-8a11-718539aa4215",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "e9ea9b26-434e-4a02-be90-511cbb2531a5",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "dd7ef7c5-cff7-4413-a9a2-14d363701c4a",
+      "result_id": "39412728-434a-4247-862a-d9b8c44d9878"
+    },
+    {
+      "claim_id": "7dc40c2e-9215-4820-8827-4c8f3c2daa29",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "a1440e9b-0c58-461c-8b82-f60a0b814a62",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "d3adc135-b3f6-4889-af01-35e9f4f5dfca",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "c6879b1d-4889-4e64-86c3-c1ca19e9b638",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "945b9a6a-2cd1-4fc7-a0fd-c52b74d92c04",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "9d44e4c1-dd64-4e7d-983e-de62912103a0",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "bc1a46d3-065d-4d3e-8ab8-688d96dbf678",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "c2ad8e61-1fd2-4868-819b-f13ee420ff41",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "45f2f9c6-b0e3-4dfc-90db-03423bdaa5f2",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "37244586-65ae-4378-9d07-4fd76e5103bc",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "ab63e98a-a120-480f-82b7-8f468aa006d4",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "9d121109-7986-4021-8bcf-0d04bab156ec",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "c6bb65d6-422f-4b11-a1bf-20978b98ef3e",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "4efdd55d-b311-42c9-af94-6eb8ccda971c",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "5f248228-79aa-4cdb-a116-e7cc05157559",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "214c73b9-25d1-474d-a436-5be94d57a63f",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "9cbaecf7-3412-40fb-82eb-c84c66e7800c",
+      "result_id": "832aa44c-0d10-4d9b-82a7-904fd0fa1625"
+    },
+    {
+      "claim_id": "af9d153d-28f1-4c5b-bb73-79a2f6069447",
+      "result_id": "cd88c9fe-5112-44fb-ad61-bb4c48707363"
+    },
+    {
+      "claim_id": "9cfdd1cc-7627-464a-a4de-c0ba6b81c738",
+      "result_id": "cd88c9fe-5112-44fb-ad61-bb4c48707363"
+    },
+    {
+      "claim_id": "2d259f01-3bbb-4d62-94f8-fa1be49e0cf0",
+      "result_id": "cd88c9fe-5112-44fb-ad61-bb4c48707363"
+    },
+    {
+      "claim_id": "214c73b9-25d1-474d-a436-5be94d57a63f",
+      "result_id": "cd88c9fe-5112-44fb-ad61-bb4c48707363"
+    },
+    {
+      "claim_id": "9cbaecf7-3412-40fb-82eb-c84c66e7800c",
+      "result_id": "cd88c9fe-5112-44fb-ad61-bb4c48707363"
+    },
+    {
+      "claim_id": "4c885990-96a7-4c7f-8c01-684282d12eda",
+      "result_id": "cd88c9fe-5112-44fb-ad61-bb4c48707363"
+    },
+    {
+      "claim_id": "61b6bcfd-d63a-4313-836d-17b05edaa2cc",
+      "result_id": "cd88c9fe-5112-44fb-ad61-bb4c48707363"
+    },
+    {
+      "claim_id": "7f0ba884-5761-445b-aefd-76a09592d65f",
+      "result_id": "15620c72-0c95-4ccf-a5ae-cdeb14f519a5"
+    },
+    {
+      "claim_id": "22273a2b-5526-463b-b817-7cfc7d5d123d",
+      "result_id": "15620c72-0c95-4ccf-a5ae-cdeb14f519a5"
+    },
+    {
+      "claim_id": "f5c432a6-2e24-4706-8ef7-63b84e0f6c74",
+      "result_id": "15620c72-0c95-4ccf-a5ae-cdeb14f519a5"
+    },
+    {
+      "claim_id": "da940f5c-24ca-4088-b53c-4696241d897e",
+      "result_id": "15620c72-0c95-4ccf-a5ae-cdeb14f519a5"
+    },
+    {
+      "claim_id": "68f5f7bd-a576-4699-8b80-d136ada53979",
+      "result_id": "15620c72-0c95-4ccf-a5ae-cdeb14f519a5"
+    },
+    {
+      "claim_id": "18ad5c67-a925-47af-801c-5a99e8919815",
+      "result_id": "15620c72-0c95-4ccf-a5ae-cdeb14f519a5"
+    },
+    {
+      "claim_id": "4c9bc475-5632-46ae-92ea-b3945fd40577",
+      "result_id": "15620c72-0c95-4ccf-a5ae-cdeb14f519a5"
+    },
+    {
+      "claim_id": "599caf55-4306-4950-b4ce-4aea64ca3462",
+      "result_id": "ff7a51e9-d47d-4524-af9d-9f29fa100f7a"
+    },
+    {
+      "claim_id": "dea0608a-82c8-4554-9aaa-373717ad74f9",
+      "result_id": "ff7a51e9-d47d-4524-af9d-9f29fa100f7a"
+    },
+    {
+      "claim_id": "5fdf02db-93b7-47ae-b090-0fd5601668f6",
+      "result_id": "ff7a51e9-d47d-4524-af9d-9f29fa100f7a"
+    },
+    {
+      "claim_id": "06c9f6d9-6c08-4b33-90d0-f386ccd15c08",
+      "result_id": "ff7a51e9-d47d-4524-af9d-9f29fa100f7a"
+    },
+    {
+      "claim_id": "d81715d0-00ef-4e78-bb46-beff9279f5ba",
+      "result_id": "ff7a51e9-d47d-4524-af9d-9f29fa100f7a"
+    },
+    {
+      "claim_id": "6c738b16-d22b-4c89-a720-f752c07378a7",
+      "result_id": "ff7a51e9-d47d-4524-af9d-9f29fa100f7a"
+    },
+    {
+      "claim_id": "193fc589-79b2-4a0c-a2ac-3b9830a98bc5",
+      "result_id": "ff7a51e9-d47d-4524-af9d-9f29fa100f7a"
+    },
+    {
+      "claim_id": "f8231462-4cd1-402e-abb3-05c650032675",
+      "result_id": "ac521fc0-af0d-47b0-a7f5-4ae97b6757f3"
+    },
+    {
+      "claim_id": "fa3bce54-a9a3-4bd4-95c8-3e70443d445e",
+      "result_id": "ac521fc0-af0d-47b0-a7f5-4ae97b6757f3"
+    },
+    {
+      "claim_id": "e6783638-37e0-45bf-96ff-a128bec3d9a6",
+      "result_id": "bb2e1035-c2e1-4f7d-9dbc-4ebabe8418b4"
+    },
+    {
+      "claim_id": "bdee1679-20b9-429e-99a0-d43bc3d57d6d",
+      "result_id": "bb2e1035-c2e1-4f7d-9dbc-4ebabe8418b4"
+    },
+    {
+      "claim_id": "4077aa12-b870-4832-bc0c-f68fd5a92f6c",
+      "result_id": "bb2e1035-c2e1-4f7d-9dbc-4ebabe8418b4"
+    },
+    {
+      "claim_id": "7f95e99d-6f6a-4a11-ba15-0c8e3a31e30d",
+      "result_id": "bb2e1035-c2e1-4f7d-9dbc-4ebabe8418b4"
+    },
+    {
+      "claim_id": "108c2085-ca70-4fc1-8dbd-ef53e4502532",
+      "result_id": "bb2e1035-c2e1-4f7d-9dbc-4ebabe8418b4"
+    },
+    {
+      "claim_id": "fc1f3535-f60d-4da7-bb88-07df6fe54371",
+      "result_id": "bb2e1035-c2e1-4f7d-9dbc-4ebabe8418b4"
+    },
+    {
+      "claim_id": "afba758b-5bba-41e8-94bf-3d75dd853e94",
+      "result_id": "c6d11016-b1e9-4306-b5fb-2a7dfb1f2f3f"
+    },
+    {
+      "claim_id": "8db12db5-9792-4f28-b79a-ba2e64a819e3",
+      "result_id": "c6d11016-b1e9-4306-b5fb-2a7dfb1f2f3f"
+    },
+    {
+      "claim_id": "a7466219-1ab5-404f-9a8f-a5683daf04d7",
+      "result_id": "c6d11016-b1e9-4306-b5fb-2a7dfb1f2f3f"
+    },
+    {
+      "claim_id": "6a156939-c05d-4916-b3da-3510e00eecc3",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "b9009432-91af-4d2e-bee5-d6d436f64a1f",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "503296c3-84b7-476e-b5ff-27715468eadd",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "a8fa9a29-a4a2-4b69-96b9-dcd614029f36",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "c785005a-893f-476f-8c0d-733552981d5b",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "9dc19dc9-9fa8-47c8-b4a7-54403c903e6c",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "05508ccb-68b3-4b47-aa53-c0f310291365",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "33528023-e402-4770-9322-e98134b65d2b",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "185621d2-f5af-4392-aa11-d7d9a69d820b",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "04a5b8ee-05d8-439c-9e7e-b59908cf5151",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "601cff4a-9dcf-4e7d-9b00-a1bc6fadbf70",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "1ee53e55-0f9c-4bf9-a6f9-4c603e19686b",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "7b9d0ecd-286c-4c87-815f-ff853121651b",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "70f06aad-9b98-48e8-9154-f37a755fb498",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "dd644107-1845-4b19-b7c1-5bf9776d177d",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "bdc3b537-824b-4a99-80b8-6278de0bf5c0",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "ab76f1c4-55f8-4430-a87a-1080b7f8211b",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "6b868727-f1e5-449c-b047-e2ea737b1e5e",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "9a436681-b38d-42e9-a6f7-7af9fea7dfaa",
+      "result_id": "b54b6d47-6b3f-4214-b25d-778af65a26ea"
+    },
+    {
+      "claim_id": "ad2759e8-ffba-4d24-99d2-3a9cab5a701a",
+      "result_id": "79874c2d-b0d2-4173-ac3a-448094adce10"
+    },
+    {
+      "claim_id": "a41d1893-0d60-4aa9-b7f6-66e19ee5623a",
+      "result_id": "79874c2d-b0d2-4173-ac3a-448094adce10"
+    },
+    {
+      "claim_id": "9ba2e0e7-26fa-4001-80d4-70c430a094c5",
+      "result_id": "79874c2d-b0d2-4173-ac3a-448094adce10"
+    },
+    {
+      "claim_id": "75812c8c-ac99-4746-910d-b4c09cf276ed",
+      "result_id": "d35a1176-0890-4112-8dcf-a45a5112db59"
+    },
+    {
+      "claim_id": "c4ed3561-a2ba-4556-a108-2b2b88021b69",
+      "result_id": "d35a1176-0890-4112-8dcf-a45a5112db59"
+    },
+    {
+      "claim_id": "3cc9b031-455b-4940-a25f-5d2a2e6f2a77",
+      "result_id": "d35a1176-0890-4112-8dcf-a45a5112db59"
+    },
+    {
+      "claim_id": "9bc38188-5078-47d9-8e3b-2a2ac555a010",
+      "result_id": "d35a1176-0890-4112-8dcf-a45a5112db59"
+    },
+    {
+      "claim_id": "63d2e246-92a7-42d3-947d-46dd17311328",
+      "result_id": "d35a1176-0890-4112-8dcf-a45a5112db59"
+    },
+    {
+      "claim_id": "039711f0-fcc4-412e-b1a9-f945190728fa",
+      "result_id": "45bc8936-ef70-4dc2-b63e-64e10f7d008f"
+    },
+    {
+      "claim_id": "7660d743-eb5f-499d-8b6b-92104ab9b6a8",
+      "result_id": "45bc8936-ef70-4dc2-b63e-64e10f7d008f"
+    },
+    {
+      "claim_id": "f66f5751-0cd9-4f8f-9723-7135faa493fc",
+      "result_id": "81631475-e4e2-451a-ab88-e8ba024e726c"
+    },
+    {
+      "claim_id": "d09ff1c6-f138-4b41-a4ba-13a218ce9c39",
+      "result_id": "81631475-e4e2-451a-ab88-e8ba024e726c"
+    },
+    {
+      "claim_id": "e4518d4d-70aa-4e14-b7dd-38782088b0af",
+      "result_id": "81631475-e4e2-451a-ab88-e8ba024e726c"
+    },
+    {
+      "claim_id": "aa94e6f9-63b3-4a6c-b1e9-6ba31cd385fb",
+      "result_id": "81631475-e4e2-451a-ab88-e8ba024e726c"
+    },
+    {
+      "claim_id": "5efbf84f-d991-4162-aee5-997c60aea47c",
+      "result_id": "81631475-e4e2-451a-ab88-e8ba024e726c"
+    },
+    {
+      "claim_id": "6744484c-57a9-4ad6-967f-8df75a9b461c",
+      "result_id": "81631475-e4e2-451a-ab88-e8ba024e726c"
+    }
+  ],
+  "comparisons": []
+}

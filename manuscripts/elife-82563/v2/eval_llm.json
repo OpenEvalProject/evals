@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Cryptococcus neoformans is a ubiquitous environmental fungus that causes over 180,000 deaths annually from cryptococcal meningitis. The fungus is inhaled into the lungs where it can remain dormant until reactivation upon host immunosuppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide well-established background information about C. neoformans epidemiology and infection mechanism, supported by appropriate citations to the literature (Rajasingham et al., 2017; Casadevall and Perfect, 1998; Zhao et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Most environmental Cryptococcus isolates cannot cause fatal disease in mice despite having similar in vitro phenotypes to virulent strains. Tolerance to host CO2 levels (~5% vs. ~0.04% ambient) is likely a significant factor distinguishing virulent from non-pathogenic isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 establish the rationale for studying CO2 tolerance as a virulence factor, supported by citations to prior work (Litvintseva and Mitchell, 2009; Mukaremera et al., 2019; Krysan et al., 2019). The inference about CO2 tolerance is reasonable given the cited evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Many genes including calcineurin are essential for thermotolerance in C. neoformans, but the mechanisms underlying CO2 tolerance remain unidentified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 establish the knowledge gap that motivates this study. The claims about thermotolerance genes are supported by appropriate citations, and the statement about CO2 tolerance mechanisms being unknown is a reasonable characterization of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "CO2 at host concentrations inhibits cryptococcal growth and acts synergistically with fluconazole on buffered RPMI media. This inhibition occurs at both pH 6 and pH 7, indicating that CO2 growth inhibition is not simply due to lowered pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 are supported by experimental data shown in Figure 1A and 1B. The experiments appropriately test the pH-independence of CO2 effects by examining growth at two different pH values. The conclusion that CO2 effects are not simply due to pH is well-supported by the data showing inhibition at both pH 6 and pH 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A screen of over 5000 gene knockout mutants identified 96 CO2-sensitive mutants, including mutants in heat stress pathways (Ras1-Cdc24, calcineurin, CWI, RAM), indicating overlapping regulation of CO2 tolerance and thermotolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 describe the primary genetic screen results. The identification of 96 CO2-sensitive mutants from ~5000 screened is clearly stated and supported by Supplementary file 1. The observation that heat stress pathway mutants are CO2-sensitive provides strong evidence for overlapping regulation of these traits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Adenylyl cyclase pathway mutants showed no growth defects at host CO2 levels, indicating that CO2 growth defects are likely independent of bicarbonate activation of adenylyl cyclase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by experimental data in Figure 2\u2014figure supplement 1. The negative result with adenylyl cyclase pathway mutants is important for distinguishing the mechanism from that in C. albicans. The reasoning about bicarbonate not being limiting at high CO2 is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The cbk1\u0394 mutant showed the most severe CO2 and thermotolerance defects. CBK1 overexpression partially restored growth defects of cbk1\u0394, mpk1\u0394, cna1\u0394, and cdc24\u0394 mutants under specific conditions, but failed to rescue growth when both temperature and CO2 stressors were present. Reciprocal overexpression experiments showed that Cbk1 integrates multiple stress response pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 are supported by experimental data in Figure 2B and supplementary figures. The overexpression experiments are well-controlled with proper integration into the SH2 locus and RT-PCR confirmation (Figure 2\u2014figure supplement 2). The asymmetric rescue patterns (CBK1 rescues other mutants but not vice versa) support the conclusion that Cbk1 acts as an integrator. However, the failure to rescue under combined stress (37\u00b0C+5% CO2) and the modest growth defect from CBK1 overexpression in WT suggest the rescue is incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "NanoString profiling revealed that 81 of 118 CO2-associated genes are significantly differentially expressed in cbk1\u0394 (57 downregulated, 24 upregulated), with 16 of the downregulated genes also identified as CO2-sensitive in the deletion screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by NanoString data shown in Figure 2C and 2D. The transcriptomic profiling provides strong evidence that Cbk1 regulates CO2-related gene expression. The overlap between downregulated genes and screen hits (16/57) provides validation of the screening approach. However, the manuscript does not provide statistical details about the NanoString analysis (e.g., p-value thresholds, multiple testing correction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The RAM pathway effector kinase Cbk1 is a conserved NDR/LATS family kinase that impacts various virulence factors in C. neoformans. All tested RAM pathway mutants are extremely sensitive to 5% CO2 and high temperature, showing no growth at 37\u00b0C+5% CO2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by established knowledge (C37), prior literature (C38, Lee et al., 2016), and experimental data in Figure 3A (C39). The complete growth inhibition of RAM mutants at 37\u00b0C+5% CO2 is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RAM pathway mutants exhibit divergent morphological phenotypes between ascomycetes and basidiomycetes. In ascomycetes, RAM mutants show loss of polarity with enlarged round cells, while in Cryptococcus they are hyper-polarized with elongated pseudohyphal cells. C. albicans cbk1\u0394\u0394 shows no specific growth defect at 37\u00b0C with or without CO2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by experimental data in Figure 3B and Figure 3\u2014figure supplement 1. The morphological comparison between C. albicans and C. neoformans RAM mutants is striking and well-documented. The C. albicans growth data (C43) provides important comparative context. The conclusion about divergent downstream targets (C44) is a reasonable inference from the phenotypic differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In ascomycetes, Ace2 is a key downstream transcription factor of the RAM pathway important for cell separation. However, no Ace2 homolog or downstream RAM pathway targets have been identified in basidiomycetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 establish the knowledge gap about RAM pathway downstream targets in basidiomycetes. C45 is supported by citations (Mulhern et al., 2006; Wakade et al., 2020). C46 and C47 represent statements about the absence of identified homologs/targets, which are reasonable characterizations of the field at the time of publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "From >10^8 cbk1\u0394 cells screened at 37\u00b0C+5% CO2, 11 suppressor colonies were isolated and classified into two groups: sup1 (2/11) and sup2 (9/11). Both groups showed dramatically improved growth at 37\u00b0C and modestly improved growth at 37\u00b0C+5% CO2, with shorter cell chains indicating partial restoration of cytokinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe the suppressor screen results, supported by experimental data in Figure 4C and 4D. The large number of cells screened (>10^8) provides confidence in the screen's comprehensiveness. The phenotypic characterization of the two suppressor groups is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Both sup1 and sup2 displayed similar phenotypes in various growth assays including virulence traits (melanin, capsule, urease, cell wall stress), showed no improved growth at pH 7.4 37\u00b0C+5% CO2, and failed to restore growth on FK506 or mating ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by experimental data in Figure 4\u2014figure supplement 1. These characterizations help define the scope of suppression\u2014the suppressors partially rescue some phenotypes but not others. The failure to rescue at pH 7.4 with combined stressors is noted as likely due to the extreme conditions affecting even WT.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Both sup1 suppressors contained an in-frame deletion in CNAG_01919 (PSC1), encoding a PARN domain-containing protein. The PARN domain is present in S. pombe, basidiomycetes, and higher eukaryotes, but absent from S. cerevisiae, C. albicans, and other ascomycetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by whole genome sequencing data shown in Figure 4A and bioinformatics analysis. The identification of the same mutation in both sup1 isolates provides strong genetic evidence. The BLAST analysis showing the phylogenetic distribution of the PARN domain is interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "All nine sup2 isolates contained loss-of-function or missense mutations in CNAG_03345 (SSD1), encoding an RNA-binding protein homologous to S. cerevisiae Ssd1p, a known suppressor of cbk1\u0394 phenotypes that represses transcript translation and is negatively regulated by Cbk1p phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by whole genome sequencing data in Figure 4B and established knowledge about Ssd1p (Jansen et al., 2009; Wanless et al., 2014). The identification of mutations in SSD1 in all nine sup2 isolates provides very strong genetic evidence. The connection to known Ssd1p function in S. cerevisiae provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Engineered cbk1\u0394ssd1\u0394 and cbk1\u0394psc1\u0394 double mutants showed reduced sensitivity to host temperature and CO2 levels with morphology resembling spontaneous suppressors, confirming that loss-of-function mutations in SSD1 and PSC1 are responsible for suppression. Single deletions of SSD1 or PSC1 in WT showed no phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by experimental data in Figure 4C and 4D. The construction of engineered double mutants that recapitulate the spontaneous suppressor phenotypes provides strong validation that the identified mutations are causal. The lack of phenotype in single mutants (C65) is important for establishing that these genes function specifically in the context of cbk1\u0394.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "sup2 and cbk1\u0394ssd1\u0394 grew better than sup1 and cbk1\u0394psc1\u0394 at 37\u00b0C and 37\u00b0C+5% CO2. The triple mutant cbk1\u0394psc1\u0394ssd1\u0394 grew as well as sup2 at 37\u00b0C+5% CO2 but displayed aberrant morphology not seen in double mutants, suggesting Psc1 and Ssd1 function in the same pathway for thermotolerance/CO2 tolerance but have overlapping and distinct effects on cell separation/polarized growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by experimental data in Figure 4C and 4D. The genetic interaction analysis using double and triple mutants is well-designed. The observation that the triple mutant has unique morphological defects (C70) not seen in double mutants suggests complex genetic interactions. The inference about pathway relationships (C71-C72) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Spontaneous suppressors do not restore transcript abundances of most differentially expressed genes in cbk1\u0394 to WT levels, suggesting suppressors affect post-transcriptional regulation of CO2 tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by NanoString data in Figure 4\u2014figure supplement 2. The observation that phenotypic rescue occurs without transcriptional restoration provides strong evidence for post-transcriptional mechanisms. This is consistent with the known functions of Ssd1 as a translational regulator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "RAM mutants have been found to be attenuated in virulence in wax moth larva and mouse intranasal infection models. Occasionally, strains with RAM gene point mutations cause mouse death when revertant mutations restore RAM pathway function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 provide background from prior literature (Lee et al., 2016; Magditch et al., 2012) establishing that RAM pathway function is important for virulence and motivating the virulence testing of the suppressor strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In the intranasal mouse infection model, H99 caused mortality by day 26 with high organ fungal burdens, while cbk1\u0394 was cleared by day 35. Surprisingly, sup1 and sup2 caused no mortality; sup1 was cleared like cbk1\u0394, but sup2 replicated in lungs (8.2\u00d710^4 CFU at day 35, persisting to day 60) without disseminating to brain or kidney.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 are supported by experimental data in Figure 5A and 5B. The intranasal infection experiments are well-controlled with appropriate sample sizes (n=10 mice per group). The key finding that sup2 can replicate and persist in lungs but not disseminate is clearly demonstrated. The difference between sup1 and sup2 correlates with their in vitro CO2 tolerance differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "C. neoformans disseminates via a 'Trojan Horse' mechanism within phagocytes. The cbk1\u0394 mutant showed extremely low phagocytosis (~1% of WT with complement opsonization). Suppressor mutants showed increased but still reduced phagocytosis (\u226420% of WT with antibody opsonization), suggesting poor phagocytosis contributes to their lack of dissemination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by experimental data in Figure 5C and 5D and prior literature (Kechichian et al., 2007; Santiago-Tirado et al., 2017; Lin et al., 2015). The phagocytosis assays are well-controlled with two different opsonization conditions. The inference that poor phagocytosis contributes to lack of dissemination (C91) is reasonable but other factors could also contribute, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In the intravenous infection model, H99 disseminated to all organs within hours with high fungal burdens at day 5. The cbk1\u0394 mutant and sup1 failed to establish infection in any organ, while sup2 was recovered in all three organs with reduced burdens (~10^4 CFU in brain). This indicates sup2 can invade and replicate once in the bloodstream, and combined with in vitro data, implicates CO2 tolerance in pathogenesis. The cbk1\u0394ssd1\u0394 mutant recapitulated sup2 phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 are supported by experimental data in Figure 5E and prior literature (O'Connor et al., 2013). The intravenous infection model effectively tests the second hypothesis about organ invasion capacity. The key finding that sup2 (but not sup1) can survive and replicate in organs when the lung barrier is bypassed provides strong evidence for the importance of CO2 tolerance. The validation with cbk1\u0394ssd1\u0394 (C100) confirms the genetic basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In the G. mellonella larva infection model at 30\u00b0C, H99 killed all larvae by day 10, while cbk1\u0394 killed only 2/20. sup1 (5/20 deaths) and sup2 (7/20 deaths) showed partially restored virulence. Fungal burden measurements at day 5 confirmed sup1 and sup2 had significantly higher burdens than cbk1\u0394, with sup2 showing slightly better restoration than sup1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 are supported by experimental data in Figure 6A and 6B. The G. mellonella model provides an important control by testing virulence at 30\u00b0C, removing mammalian body temperature as a variable. The survival and fungal burden data are consistent and show partial virulence restoration in both suppressors. Statistical analysis is mentioned (p-values provided in figure legend) supporting the significance of differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Detection and adaptation to changing CO2 levels is important across biological kingdoms and may be crucial for fungal pathogenicity. Multiple pathways important for high temperature growth are required for growth at high CO2, indicating that host CO2 and temperature are intricately coordinated stressors that cryptococcal cells must overcome to cause disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 synthesize the main findings of the study. C110 is supported by prior literature (Bahn and M\u00fchlschlegel, 2006; Cummins et al., 2014; Hetherington and Raven, 2005; Krysan et al., 2019). C111-C112 are reasonable inferences from the experimental data showing overlap between heat stress and CO2 tolerance pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Previous work found synthetic lethality between RAM and calcineurin pathways in C. neoformans but not S. cerevisiae. In C. albicans, CO2 is sensed through adenylyl cyclase activation, but disruption of Cbk1 caused severe CO2 growth defects in C. neoformans but not C. albicans. These differences may reflect evolutionary distance and/or distinct ecological niches\u2014C. albicans is a human commensal adapted to host CO2, S. cerevisiae thrives in high CO2 fermentation conditions, while C. neoformans is an environmental fungus where host CO2 levels (~5%) are >100-fold higher than ambient air (~0.04%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 provide comparative context across fungal species. The claims about prior work (C113-C114) are supported by appropriate citations. The experimental comparison with C. albicans (C115) is supported by Figure 3\u2014figure supplement 1C. The evolutionary/ecological interpretation (C116-C120) is reasonable speculation based on known biology of these organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "SSD1 is a known suppressor of cbk1\u0394 phenotypes in ascomycetes that regulates translation of diverse mRNA transcripts. In S. cerevisiae, SSD1 deletion suppresses cbk1\u0394 lethality but not cell separation defects (regulated by Ace2). In C. albicans, Ssd1 regulates polarized growth by negatively regulating Nrg1. The observation that cbk1\u0394psc1\u0394 and cbk1\u0394ssd1\u0394 partially rescue cell separation defects suggests C. neoformans may primarily utilize Ssd1/Psc1 rather than Ace2 for these functions. Differential regulation by Ssd1 and Psc1 may explain RAM pathway functional divergence between basidiomycetes and ascomycetes. The lack of transcriptional restoration by suppressors supports post-transcriptional suppression mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 synthesize the mechanistic implications of the suppressor findings. The claims about Ssd1 function in other organisms (C121-C123) are supported by appropriate citations. The inference about C. neoformans utilizing Ssd1/Psc1 (C124) is reasonable given the phenotypic data. The speculation about functional divergence (C125) is plausible but remains to be tested. The post-transcriptional mechanism (C126) is well-supported by the NanoString data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "C. neoformans uses post-transcriptional regulation to adapt to host stresses. The temperature-sensitive environmental species C. amylolentus fails to initiate host stress-induced translational reprogramming and is non-pathogenic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 provide context from prior literature (Bloom et al., 2019; Kalem et al., 2021; Stovall et al., 2021) about the importance of post-transcriptional regulation in Cryptococcus, supporting the mechanistic interpretation of the current findings.",
+    "result_type": "MINOR"
+  }
+]

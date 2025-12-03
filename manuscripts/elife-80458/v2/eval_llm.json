@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The proportional recovery rule (PRR) is a model describing stroke recovery where most patients recover approximately 70% of maximal potential recovery from motor impairment, with a distinct subgroup of 'non-recoverers' showing much less recovery. The PRR was developed through investigation of upper-extremity Fugl-Meyer assessments and has been applied across multiple neurological domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide a well-documented historical and conceptual foundation for the PRR, supported by multiple citations to prior work (C3, C4, C5, C6, C7). These claims establish the background and context for the PRR as a biological model of stroke recovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C12"
+    ],
+    "result": "Statistical concerns have been raised about the PRR, including mathematical coupling from including baseline values in change scores, ceiling effects potentially exaggerating associations, and the inappropriateness of traditional hypothesis tests with null value of 0 for recovery investigations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 accurately summarize criticisms of the PRR from the literature, supported by citations to statistical work spanning decades (C8) and recent critiques (C9, C10). These represent legitimate methodological concerns that the manuscript addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C17",
+      "C19"
+    ],
+    "result": "Oldham's method, which examines cor(x+y, x-y), guards against false conclusions from mathematical coupling and regression to the mean, yielding zero correlation in canonical coupling examples rather than -0.71. However, this method does not address ceiling effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C17 describe well-established mathematical properties of Oldham's method supported by statistical theory. Claim C19 acknowledges a limitation cited in prior work (Hope et al., 2018; Hawe et al., 2018), providing a balanced assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Cross-validation on simulated datasets (C200, D200, E200) demonstrates that different recovery models perform best depending on the underlying data-generating mechanism, and cross-validation can effectively identify the best or worst model for prediction accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are directly supported by the cross-validation results shown in Figures 2 and 3. The simulated datasets with known properties provide clear evidence that CV can distinguish model performance, though the authors appropriately note CV focuses only on prediction accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C33",
+      "C34"
+    ],
+    "result": "Bootstrap analyses of three real datasets (Stinear & Byblow, Winters, Zarahn) show that variance ratios k differ significantly from 1 and correlations cor(x,y) differ from 0, indicating that strong correlations between baseline and follow-up are not driven by mathematical coupling or regression to the mean, and data among recoverers are consistent with the PRR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 present specific statistical estimates with confidence intervals from bootstrap analyses (Table 1, Figure 5). Claims C33-C34 draw appropriate inferences from these results. The bootstrap procedure is described in Methods with simulation validation (C75), providing methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36"
+    ],
+    "result": "Cross-validation on real datasets shows that constant recovery with ceiling underperforms competing methods, the PRR appears superior for Stinear & Byblow and Zarahn datasets, and the PRR explains 35-56% of outcome variation. Competing non-linear models do not produce more accurate predictions than the PRR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are directly supported by cross-validation results (Figure 6) and variance explained calculations (Table 2). Claim C36 appropriately summarizes the comparative model performance. The evidence consistently shows PRR performs well relative to alternatives across multiple real datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52"
+    ],
+    "result": "Prior studies support the existence of biologically distinct recoverer and non-recoverer groups in stroke recovery, which can be identified using baseline characteristics or appropriate unsupervised learning methods. The severely affected population contains these meaningful subgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by multiple citations to prior work. Claims C46, C49, and C52 represent inferences from data visualizations and analyses. Claims C47-C48 cite specific threshold identification approaches. The evidence converges to support distinct recovery subgroups, though the authors acknowledge methodological challenges in identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Clustering methods have weaknesses in recovery analysis, particularly in determining the true number of clusters. Inappropriate application of clustering assuming two clusters can produce misleading results. The Winters dataset rejects random recovery (p<0.001), and simulation studies showing PRR-like slopes do not refute the PRR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 describe well-known limitations of clustering methods. Claim C43 presents a specific hypothesis test result with visual support (Figure 7). Claims C44-C45 draw appropriate inferences about the interpretation of clustering and simulation studies. The statistical reasoning is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C73"
+    ],
+    "result": "The association between initial impairment and change is non-artifactual in the examined datasets, the PRR is better as a biological and predictive model than competing models including constant recovery with ceiling, and the PRR remains a biologically relevant model of stroke recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C73 represent the main conclusions synthesized from all analyses presented (bootstrap, cross-validation, clustering). The evidence from multiple datasets and analytical approaches converges to support these conclusions, though the authors appropriately acknowledge limitations and the need for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Lee et al., 2021 observed high rates of ceiling recovery, but the FMA-UE lacks resolution at higher values and their cohort was more mildly impaired at baseline due to exclusion criteria that likely removed moderate and severely affected patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 accurately cites findings from Lee et al., 2021. Claim C54 states a known limitation of the FMA-UE scale. Claim C55 provides a reasonable inference about cohort characteristics based on the exclusion criteria described in the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The PRR provides an appealingly simple model for understanding recovery and will continue to be relevant, though recovery depends on factors beyond initial impairment and the PRR estimates an average with individual variation that requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 represent balanced conclusions acknowledging both the value and limitations of the PRR. These are appropriate inferences from the analyses presented and align with the evidence showing the PRR explains 35-56% of variance, indicating both utility and room for improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C62"
+    ],
+    "result": "Mixed models with random intercepts and slopes will have correlated random effects when applied to baseline and follow-up data, and non-linear mixed models do not avoid the fundamental challenges of mathematical coupling and changing variances over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C62 present valid statistical inferences about the behavior of mixed models based on established statistical theory. The authors correctly note that more complex models do not inherently resolve the statistical issues discussed, which is an important methodological point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Bonkhoff et al., 2020 and 2022 found the PRR among the best performing models using rigorous Bayesian model selection, though with lower variance explained (21%) than the current analyses (35-56%). These studies used leave-one-out cross-validation and excluded patients with initial impairments above 45.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 accurately summarize findings and methods from Bonkhoff et al., 2020 and 2022 based on citations. The comparison of variance explained (C64) appropriately contextualizes the current findings relative to prior work using different analytical approaches and patient selection criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The PRR is intended as a model for recovery from impairment as measured by the FM, with deliberate emphasis on change between baseline and follow-up. Applications have found approximately 70% recovery of lost function, attributable to spontaneous biological recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 clarify the conceptual scope and rationale of the PRR. Claims C69-C70 summarize findings from multiple studies with appropriate citations (Cramer, 2008; Zeiler and Krakauer, 2013; Cassidy and Cramer, 2017). These provide important context for interpreting the PRR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The existence of spontaneous biological recovery does not preclude behavioral interventions from improving outcomes. Future trials should aim to improve the recovery proportion, reduce non-recoverers, or induce changes better than those expected under the PRR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 presents a logical inference about the implications of the PRR for interventions. Claim C72 provides reasonable recommendations for future research based on the findings. These represent appropriate forward-looking conclusions from the work presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Patients in the reported datasets received usual care without systematic interventions, and simulations show the bootstrap procedure achieves approximately 95% coverage for 95% confidence intervals at moderate sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 describes the treatment conditions in the datasets analyzed. Claim C75 reports simulation validation of the bootstrap method used for inference. Both provide important methodological context, with C75 supporting the validity of the statistical approach.",
+    "result_type": "MINOR"
+  }
+]

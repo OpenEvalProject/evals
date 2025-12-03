@@ -1,0 +1,1326 @@
+{
+  "submission": {
+    "id": "e9627aac-b38b-470e-9a18-e75d64ec479f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:21:11.574871Z",
+    "updated_at": "2025-12-03T13:21:11.574871Z"
+  },
+  "content": [
+    {
+      "id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "submission_id": "e9627aac-b38b-470e-9a18-e75d64ec479f",
+      "content_type": "manuscript",
+      "content_text": "# Nanoscale resolution of microbial fiber degradation in action\n\n## Authors\n\n- Meltem Tatli<sup>1</sup> ([ORCID: 0000-0003-3632-6208](https://orcid.org/0000-0003-3632-6208))\n- Sarah Mora\u00efs<sup>2</sup> ([ORCID: 0000-0001-9026-2386](https://orcid.org/0000-0001-9026-2386))\n- Omar E Tovar-Herrera<sup>2</sup>\n- Yannick J Bomble<sup>3</sup> ([ORCID: 0000-0001-7624-8000](https://orcid.org/0000-0001-7624-8000))\n- Edward A Bayer<sup>2</sup>\n- Ohad Medalia<sup>1</sup> ([ORCID: 0000-0003-0994-2937](https://orcid.org/0000-0003-0994-2937)) \u2020\n- Itzhak Mizrahi<sup>2</sup> ([ORCID: 0000-0001-6636-8818](https://orcid.org/0000-0001-6636-8818)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))\n2. Faculty of Natural Sciences, Ben-Gurion University of the Negev Beer Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))\n3. Biosciences Center, National Renewable Energy Laboratory Golden United States ([ROR:036266993](https://ror.org/036266993))\n4. Department of Biomolecular Sciences, The Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe lives of microbes unfold at the micron scale, and their molecular machineries operate at the nanoscale. Their study at these resolutions is key toward achieving a better understanding of their ecology. We focus on cellulose degradation of the canonical Clostridium thermocellum system to comprehend how microbes build and use their cellulosomal machinery at these nanometer scales. Degradation of cellulose, the most abundant organic polymer on Earth, is instrumental to the global carbon cycle. We reveal that bacterial cells form \u2018cellulosome capsules\u2019 driven by catalytic product-dependent dynamics, which can increase the rate of hydrolysis. Biosynthesis of this energetically costly machinery and cell growth are decoupled at the single-cell level, hinting at a division-of-labor strategy through phenotypic heterogeneity. This novel observation highlights intrapopulation interactions as key to understanding rates of fiber degradation.\n\n## Introduction\n\nPlants represent the largest reservoir of biomass on the planet (Bar-On et al., 2018). Hence, plant cell-wall degradation is essential for carbon recycling, environmental homeostasis, and of major significance to waste management and mammalian gut ecosystems. Bacteria are central players in this process, as some are capable of deconstructing cellulosic fibers into simple sugars that fuel microbial growth and fermentation cascades essential for nutrient cycling as well as their use in industrial processes (Himmel and Bayer, 2009). The intricate chemical composition of the plant cell wall is the major barrier to biomass recycling, and there is a long ongoing scientific and global interest to unravel how such microorganisms achieve the complex task of fiber degradation.\n\nSeveral anaerobic bacteria have evolved energy-effective strategies to solve the challenge of fiber breakdown through the biosynthesis of multienzymatic complexes called cellulosomes (Artzi et al., 2017). Cellulosomes are massive multimodular protein machineries, composed of numerous enzymes attached via complementary cohesin\u2013dockerin interactions to enzyme-integrating subunits called \u2018scaffoldins\u2019 (Bayer et al., 2004; Fontes and Gilbert, 2010; Lamed et al., 1983b). Genomes of the different cellulosome-producing bacterial species can encode up to 200 different types of dockerin-bearing proteins (notably enzymes) which bind tenaciously to the cohesins of the scaffoldin subunit. The resultant multiprotein complexes, heterogeneous in their enzyme content, are highly efficient in deconstructing plant cell-wall polysaccharides. Although extensive research has been dedicated to investigate cellulosome activity and its composition in various cellulosome-producing bacteria (Artzi et al., 2017), how cellulosomes are structured and organized on the bacterial cell wall in situ remains largely unknown (Bayer et al., 2009). Understanding how these complexes interact with their substrates while they are situated on the bacterium would therefore contribute immensely to our comprehension and control of such an efficient enzymatic strategy. Moreover, the question of how and whether the molecular organization of these complexes on single cells is interconnected with functional and regulatory aspects of cellulosomes at the population level remains unanswered and is essential to our understanding of both the fiber-degradation process and these canonical enzymatic complexes.\n\nConventional methods have identified structural features of individual cellulosomal modules, as well as crucial interface residues that are responsible for the specific tenacious intermodular cohesin\u2013dockerin binding between these definitive cellulosomal modules (Adams et al., 2006; Carvalho et al., 2007; Carvalho et al., 2003; Nash et al., 2016; Noach et al., 2010; Noach et al., 2009; Salama-Alber et al., 2013; Wojciechowski et al., 2018). In addition, larger cellulosome fragments have been structurally studied by complementary approaches, that is, crystallography, small-angle X-ray scattering, computational modeling, and negative-staining transmission electron microscopy (Bomble et al., 2011; Bule et al., 2018; Garc\u00eda-Alvarez et al., 2011; Hammel et al., 2005; Mayer et al., 1987). Additional studies have revealed some of the structural features of a cellulosome fragment composed of five separate cellulosomal modules from three different proteins (Adams et al., 2010; Currie et al., 2012; Smith et al., 2017). More recently, truncated recombinant minicellulosome complexes, from the canonical and most-studied cellulosome-producing bacterium Clostridium thermocellum, comprising a trivalent truncated scaffoldin and three copies of the Cel8A cellulosomal endoglucanase, have been analyzed (Garc\u00eda-Alvarez et al., 2011). These in vitro studies, focused mainly on specific enzymatic and structural components of the complex, without the presence of the microbial cells on which the cellulosomal complexes are situated. Pioneering studies published in the 1980s, using electron microscopic imaging, have provided a two-dimensional glimpse into the massive size and organization of the cellulolytic machinery on the bacterial cell surface of C. thermocellum (Artzi et al., 2017; Bayer and Lamed, 1986; Lamed et al., 1983b; Madkour and Mayer, 2003; Mayer et al., 1987). Nevertheless, these studies employed dehydration and chemical fixation procedures, which thus restrict the structural information and characterization of these bacterial cell-wall systems.\n\nHence, structural and ecological insights into the in situ fiber-degrading process at the molecular scale, while these complexes are in their active state, remains unknown. To this end, we exploited current technological advances that combined cryo-electron microscopy (cryo-EM) (Bai et al., 2015) and cryo-electron tomography (cryo-ET) (Beck and Baumeister, 2016; Weber et al., 2019) together with conventional approaches of microbial genetics, physiology, and biochemistry. Using these complementary approaches, we gained insights into the in vitro and in situ structure of the cellulosomal enzymes, from the single-enzyme level to the distribution of cellulosome complexes across single cells in a population, to reveal how cellulosome structure and distribution may be connected to gene expression and regulation at the population level.\n\n## Results\n\n### Cellulosomes surround the bacterium as an extensive layer of complexes at constant distance from the cell wall\n\nTo examine the detailed organization of the cellulosome complexes in situ, we applied cryo-EM and cryo-ET imaging to intact C. thermocellum bacterial cells. Low-magnification images of the bacteria indicated a typical view of the elongated cells, measuring a few micrometers in length and 500\u2013600 nm in thickness (Figure 1A), which represents a suitable size for in toto analysis of bacteria by cryo-ET (Ortega et al., 2020). Closer inspection of these bacteria confirmed the presence of a dense layer surrounding the bacterium (Figure 1A, arrowhead). Slices through typical cryo-tomograms (Figure 1B,C) revealed discrete globular protein densities in the extracellular layer and densities that emanate from the bacterial S-layer to this extracellular protein layer (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig1-v3.jpg)\n\n**Figure 1.:** (A) An image of C. thermocellum cells with surrounding cellulosomes on a cryo-EM grid at low magnification. The black arrowhead indicates the gray hue that forms a layer of extracellular cellulosome complexes surrounding the bacterium. At this magnification, the layer seems homogeneously thick. (B, C) Cellulosome complexes of two different bacteria at different magnifications. In (B), cellulosomes form a condensed layer which varies in thickness (arrowhead). At higher magnification in (C), the tomographic slice reveals the cellulosomes in greater detail (arrowhead). The density of the cellulosome layer reflects the protein occupancy within the layer. (D) Immunofluorescence confocal microscopy image of C. thermocellum bacteria reveals the position of the cellulose-binding module 3a (CBM3a) component of the CipA (ScaA) scaffoldin around the cells, using primary anti-CBM3a antibodies, detected with secondary goat anti-rabbit antibodies, conjugated with Alexa 594. (E) The extracellular density (arrowhead) detected by cryo-EM was verified to be cellulosomes. Immunogold labelling of cellulosomes, applied to localize the CipA scaffoldin using anti-CBM3a antibodies, indicates that the density detected around the bacteria corresponds to cellulosome complexes (Video 1, red arrowheads). The colloidal gold appears as black dots (arrowhead), while control experiments showed no gold nanoparticle signal around the bacteria (Figure 1\u2014figure supplement 2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A-F) Density spans between the bacterium and the cellulosome layer (arrows) was detected. x\u2013y slices through six bacteria, representing 5.4 nm in thickness.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Immunogold labeling using protein A coupled with colloidal gold alone showed no observed signals (A), while prior addition of the anti-CBM3a antibody directed the localization of the gold-conjugated protein A to the proteinaceous layer around the bacterium (B). Cryo-ET analysis of mutant strains: (C, D) Strain CTN7 expresses none of the major scaffoldins (i.e., CipA, OlpB, Orf2p, SdbA, OlpA, and OlpC). (E, F) Strain DS11 lacks the major enzyme-integrating scaffoldin (CipA). Neither strain produces cellulosomal structures outside the cells. These experiments indicate that the observed exogenous layer corresponds to cellulosome-related proteins.\n\nTo confirm that the extracellular density layer detected by cryo-ET is composed of cellulosome assemblies, we utilized confocal immunofluorescence imaging (Figure 1D) and immunogold labeling with specific antibody targeting of the cellulose-binding module 3a (CBM3a) component of the CipA (ScaA) scaffoldin (Figure 1E and Video 1), the major defining constituent of the C. thermocellum cellulosome complex. The results revealed an extensive layer of cellulosome structures around these bacteria with varied densities at different levels (Video 2). Gold nanoparticles were detected at the densities around the cells, indicating the position of CBM3a within the cellulosome assemblies (Figure 1E, Figure 1\u2014figure supplement 2A, B, and Video 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/76523/elife-76523-video1.mp4.jpg)\n\n**Video 1.:** The positions of CBM3a were identified by labeling with 6-nm gold clusters (red arrowheads). The protein was localized within the cellulosome layer.\n\n![Video 2.](https://cdn.elifesciences.org/articles/76523/elife-76523-video2.mp4.jpg)\n\n**Video 2.:** Cryo-ET reveals the organization of the cellulosome structures.\n\nTo further verify that the densities detected correspond to the cellulosomal fiber-degradation machinery, we analyzed two mutant strains of C. thermocellum, which either lacked the CipA scaffoldin subunit or lacked all of the anchored scaffoldins (knockout mutants DSN11 and CTN7, respectively) (Xu et al., 2016). Cryo-ET analysis of these mutant bacteria indicated complete absence of extracellular densities (Figure 1\u2014figure supplement 2C\u2013F) as compared to the wild-type cells. The above experiments suggest that the densities detected (Figure 1) correspond to the cellulose-degradation machinery of C. thermocellum.\n\nInterestingly, cryo-tomograms of intact C. thermocellum cells revealed a characteristic gap which was not visible in chemically fixed samples between the S-layer and the cellulosome layer, with an average distance of 64 \u00b1 17 nm (Figure 2\u2014figure supplement 3), while the thickness of the cellulosome-rich layer was 65 \u00b1 16 nm (Figure 2\u2014figure supplement 3), measured using bacterial cultures that were cultured for 24 hr. Density emanating from the bacterium to the cellulosome layer was detected, which presumably indicated the anchorage of the cellulosome to the cell wall (Figure 1\u2014figure supplement 1, arrows). The gap between the S-layer and cellulosome layer is reminiscent of the previously described \u2018contact corridors\u2019 (Bayer and Lamed, 1986), which were proposed to contain anchoring proteins, for example, OlpB (ScaB), that include exceptionally lengthy intermodular linking segments (Bayer and Shimon, 1998; Madkour and Mayer, 2003; Shoham et al., 1999).\n\n### Cellulosome interactions with its substrate\n\nHow does the cellulosome interact with its cellulose substrate? Unprecedented insight into cellulosome\u2013substrate interactions around the bacterial cell surface was obtained by utilizing volta-phase plate (VPP)-assisted cryo-ET analysis, which provides high-contrast imaging without the need for additional processing (Danev and Baumeister, 2016). We cultured C. thermocellum in the presence of microcrystalline cellulose (MCC) and were able to identify interactions between cellulose and the cell-associated cellulosomes. Strikingly, we observed the cellulosomes, which form a layer around the bacterium and envelop the cellulosic fibers (Figure 2A,B and Video 3). The cellulose was identified within the dense cellulosome layer, suggesting a flexible organization of the enzymes within the cellulosome layer while encompassing the cellulose substrate, presumably offering an advantage for its degradation (Figure 2A,B and Video 3). To further understand the enzyme\u2013substrate interface and gain more insight into the density of enzymes around the substrate, we employed a template-matching procedure. For this procedure, we purified a recombinant form of the most expressed C. thermocellum dockerin-containing enzyme, which is crucial for enzymatic digestion of MCC, Cel48S (Morag et al., 1991; Raman et al., 2011; Yoav et al., 2017; Zverlov et al., 2005) and determined its structure at 3.4 \u00c5 resolution (Figure 2\u2014figure supplements 1 and 2). The enzyme-matching structures were found in close proximity to the cellulose and appeared to localize between the cellulose chains, presumably, to increase the efficiency of degradation (Figure 2C). In order to better understand and validate our observation for the interactions between cellulosome and cellulose, we purified Cel48S together in a designer cellulosomal complex with a recombinant divalent truncated CipA scaffoldin that contains two cohesin modules (cohesin numbers 2 and 3) and the inherent CBM3a (see Materials and methods). This in vitro minicellulosome complex was incubated with MCC and analyzed by cryo-ET. The architecture found in this in vitro experiment (Figure 2D and Figure 2\u2014figure supplement 4C, D) shows an overwhelming resemblance to that found in situ around the bacterium, further corroborating our findings (Figure 2C). Indeed, our analysis revealed that the structure of cellulose undergoes major organizational changes during the interaction with the cellulosomes, transforming from a well-ordered crystalline cellulose structure (Figure 2E) to deconstructed crystalline packaging (Figure 2F, arrowheads). It should be noted that at the resolution of individual tomograms, we cannot distinguish the Cel48S from the other large globular enzymes of the cellulosome. Therefore, it is plausible that the depicted densities in our rendered view can be attributed the Cel48S enzyme as well as to additional cellulosome containing enzymes. Since the contrast of the globular cellulolytic enzymes is relatively high in comparison to the flexible rod-like appearance of scaffoldins, we could not reliably follow the densities of scaffoldins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig2-v3.jpg)\n\n**Figure 2.:** (A) An x\u2013y projection through a tomogram of a bacterium grown on microcrystalline cellulose (MCC; cyan), ~1 nm in thickness, shows the MCC densities and globular protein densities. The area that was investigated is indicated in the inset, and individual projections of the region can be seen in the video (Video 3). (B) A surface-rendered view of C. thermocellum (blue) depicts the interactions of cellulosomes (yellow) with cellulose (green). Several cellulose fibers were deconstructed into their component microfibrils within the cellulosome layer. (C) A rendered model indicating the position of cellulosomal enzymes around a cellulose fiber, enzymes (orange) and cellulose (green) in situ. (D) A rendered model of purified Cel48S, in complex with a divalent truncated scaffoldin, bound to a cellulose fiber, enzymes (orange) and cellulose (green). Positions of enzymes (orange) in (C, D) were determined by template matching and resemble each other (Figure 2\u2014figure supplement 4). (E) Surface rendering of purified MCC indicates a compact filamentous assembly. (F) The parallel packing of cellulose fibrils is altered (arrowheads) upon the interaction with cellulosomes. These surface-rendering views of cellulose fibers were isolated in silico from in situ tomograms where interactions with cellulosomes were observed.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) A typical micrograph depicting the major cellulosomal exoglucanase, Cel48S. (B) The final 2D classification showing different orientations of this asymmetric protein. (C) The workflow of image processing for Cel48S. After several rounds of 2D classifications removing false positives, 362,956 particles were selected for initial 3D model building. The particles were subjected to a couple rounds of 3D classifications and refinement. The percentage of particles within the resultant 3D classes and the respective resolution of the 3D classes are visualized. Further refinement with 55,206 particles is shown in the black circle. After final refinement with B-factor of \u2212110 \u00c52, a map of 3.66 \u00c5 was resolved. The map was postprocessed with a solvent mask, and the particles were subjected to Bayesian polishing and CTF refinement. These operations improved the map to 3.38 \u00c5. (D) The angular distribution of all 55,206 particles that contributed to the final Cel48S map is depicted. The height of the cylinder bars (from blue to red) is correlated with the number of particles in this view. (E) Local resolution variations in the cryo-EM map. The resolution ranges from 3.4 to 3.8 \u00c5 as calculated by the Relion local resolution option. (F) Fourier-shell correlation (FSC) plots of the final Cel48S density map. The plot shows the unmasked (green), masked (blue), phase randomized (red), and masking-effect-corrected (black) FSC curves. The resolution at which the gold-standard FSC curve drops below the 0.143 threshold is indicated (arrow).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The structure of the full-length Cel48S was determined by cryo-EM to a resolution of 3.4 \u00c5 (Figure 2\u2014figure supplement 3). The purple region is part of the linker that was structurally determined between the enzyme and the dockerin. (B) Ribbon representation of the cryo-EM structure (orange) overlayed with PDB:5YJ6 (yellow) (Liu et al., 2018). Slices through the structure (right, black, and red indicated in B) show the quality of our reconstruction and the position of the random coil linker (purple) that follows the catalytic domain. (C) Zooming into the random coil linker, overlayed with the density map, allows us to resolve the protein sequence (MTYKVPGTP) that bridges the catalytic domain to the dockerin (Dock). Tyr666 and Pro669 were used as anchors for modeling. (D) Backbone fit to the cryo-EM density map and the catalytic tunnel (asterisk). The black circle marks the position of Ser673 which immediately precedes the dockerin module, positioned ~1 nm away from the tunnel.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The thickness of the high-density cellulosome layer (A: 1\u20132) and the distance between the S-layer and cellulosomes (B: 2) were measured around the bacteria (B, C), respectively, see Materials and methods. Analysis of 16 tomograms was used for the histograms (B, C).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) A closeup projection of the in situ cellulosome layer of a tomogram depicts globular enzymes. (B) Due to the crystalline nature of MCC, straight cellulose fibrils in solution were running parallel to each other. (C) Purified recombinant cellulosome complexes, similar to the globular enzymatic densities in situ (A), interact with crystalline cellulose. A colored rendering depicts enzymes in orange and MCC in green. Enzymes appear in the outer surface of MCC as well as in between fibers. (D) Closeup rendered views are shown of interactions between MCC (green) and Cel48S in complex with the divalent truncated scaffoldin (orange). (E) A projection slice of a bacterium grown for 15 hr provides a view of the MCC\u2013cellulosome interaction in situ. Orange arrows point to globular cellulosomal enzymes sitting on a crystalline array which is remarkably similar to MCC with Cel48S in complex with the truncated scaffoldin in vitro (C).\n\n![Video 3.](https://cdn.elifesciences.org/articles/76523/elife-76523-video3.mp4.jpg)\n\n**Video 3.:** Globular enzymatic densities (orange) of the cellulosome layer were observed attached to the crystalline cellulose (green).\n\nThese observations provide snapshots of cellulose-degradation intermediates produced by the functional cellulosomal enzymes, located in the dense cellulosome layer around the bacterium. The findings further corroborated that our approach promoted the capture of real-time changes in cellulose organization and structure when interacting with cellulosomal complexes (Figure 2A, blue circles, Video 3).\n\n### Dynamic isogenic phenotypic heterogeneity of cellulosome organization\n\nThe detachment of the cellulosomal machinery from the cell surface during culture growth has been reported since its initial discovery (Bayer et al., 1985; Lamed et al., 1983a; Lamed et al., 1983b), thus raising questions concerning the extent of this phenomenon and its single-cell distribution across the microbial population, as well as its ecological relevance. Indeed, while studying the structure of the cellulosomal machinery during cellulose degradation, we observed two distinct phenotypes of cellulosome organization on the bacterial cells, that is, high-density (raw data in Figure 3\u2014figure supplement 1A, Video 2), and low-density organization (raw data in Figure 3\u2014figure supplement 1B, Video 4). To further pursue this phenomenon, we quantified the single-cell distribution of the cellulosome on the bacterial cells by employing cryo-EM as a tool for structural analysis of individual bacterial cells within the C. thermocellum bacterial population. Our analysis revealed clear phenotypic heterogeneity within the same environment, under the same conditions, with distinct cellulosome density distributions representing two different cell phenotypes. The distribution of these two phenotypes in the stationary-phase culture shows a ratio of 1:5 (high versus low density).\n\n![Video 4.](https://cdn.elifesciences.org/articles/76523/elife-76523-video4.mp4.jpg)\n\nPhenotypic heterogeneity is considered to be an important ecological strategy for microorganisms to cope with environmental fluctuations and could be mediated by gene expression, where the proportion of cells that express the related phenotype changes as a function of environmental cues (L\u00f3pez-Maury et al., 2008). To explore this notion, we subjected a stationary-phase culture, containing a large proportion of low-density phenotype, to a fresh medium, containing cellulose as the sole carbon source, and quantified the ratio between the populations of the two phenotypes during cell growth (Figure 3A), using high electron-dose-exposure cryo-EM images. We analyzed 1160 individual cells, sampled from cultures at five time points after inoculation, which correspond to different population growth phases (with an average of n = 232 cells per time point). Our analysis revealed that, upon exposure of the bacterial cells to the new environment containing only cellulose, a sharp increase in the ratio of the high-density phenotype occurred, after which a gradual decrease in its concentration was observed back to a 1:5 ratio (Figure 3A). Since soluble sugars, which are the product of the plant fiber degradation, are lacking at the beginning of culture growth, where only cellulose polymers are present as a carbon source, the findings raised the hypothesis that the soluble sugars, accumulated during population growth, would affect the ratio between the two subpopulations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig3-v3.jpg)\n\n**Figure 3.:** (A) Dynamics of phenotypic variants in C. thermocellum subpopulations. A proportion of 5:1 (low density:high density) is observed during lag and stationary phases, while the high-density subpopulation is transiently dominant at 15 hr, gradually decreasing in time to the initial proportion. Time 0 hr was not measured, as it corresponds to the proportion of cells from the inoculum of time 54 hr. (B) Available reducing sugars detected in C. thermocellum cultures grown on cellulose over time (black line, in mg/ml for total protein). A decrease in soluble sugars (10\u201315 hr) is followed by a rise in their concentration, which is maintained stable until 50 hr. Blue and orange rod-like shapes represent the low- and high-density subpopulations, respectively, and provide a schematic view of the relative changes in their distribution across the different growth phases and the levels of available sugars. (C) Expression dynamics of cellulosomal components at the level of transcript (RNA) and protein expression (units represent normalized copies/cells divided by 20,000 or band intensity, respectively). Per-cell RNA transcript copy number of cel48S (pink line) and cipA genes (blue line) from a culture of C. thermocellum growing on microcrystalline cellulose. At the protein level, CBM expression per cell was evaluated by using anti-CBM3a antibodies detecting the CBM present in the CipA scaffoldin. Cellulosomal gene expression is observed as a single peak after 15 hr of growth of C. thermocellum in a medium containing microcrystalline cellulose. The schematic representation of the C. thermocellum cellulosome, highlighting the major components tracked in this study, is given as an inset. (D) Cellulosomal gene expression is controlled by sugar availability. Addition of high concentration of cellobiose (10 g/l) into a 10-hr culture of C. thermocellum negatively affects the expression of the main cellulosomal enzyme Cel48S (squares), compared to control (circles) as reported previously (Morag et al., 1991). In (B\u2013D), error bars represent the standard deviation between three biological replicates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Examples of projections of high-density (A) and low-density (B) cellulosome layers around bacteria. The lack of densities is dramatically clear in the low-density phenotype (A) in comparison to the abundance seen in (B). The last images of each set demonstrate corresponding low-magnification views in the bottom-left corner.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** A sharp increase in the total cellulase activity normalized by cell number is observed at the early stages of bacterial growth and is followed by a marked decrease at the end of the exponential phase. Error bars represent the standard deviation between three biological replicates.\n\nTo address this hypothesis, we measured the availability of soluble sugars across the growth curve in the medium that contains cellulose as the sole carbon source. Our results revealed that the availability of soluble sugars derived from cellulose degradation is tightly connected to the ratio between the two subpopulations and culture growth stage (Figure 3B). At early stages of population growth, where the availability of soluble sugars is low, an increase in the high-density subpopulation occurs, whereas upon increase in sugar availability with population growth, the ratio of the low-density subpopulation increases (Figure 3B). Interestingly, in the late stages of growth, when the high-density subpopulation comprises only 20% of the overall population, the amount of the soluble sugar concentration remained stable and did not decrease even when the population growth reached its peak. This observation supports the notion that soluble sugar is provided in saturating amounts at this stage, and the 1:5 ratio of the high-density subpopulation is therefore maintained (Figure 3, 30\u201350 hr). These findings appear to reflect dynamic phenotypic variability, which infers that the accumulation of soluble sugars would be related to this phenomenon.\n\n### Dynamic phenotypic variability is controlled by availability of soluble sugar\n\nAs our results suggest that the expression of the cellulosomal machinery changes during population growth and exposure to new environmental conditions, we proceeded to better understand cellulosomal expression dynamics and the factors that influence its regulation, within the context of our findings. To this end, we examined the expression dynamics and activity of the cellulosomal machinery during population growth after exposure to a fresh cellulose-containing medium.\n\nOur results showed similar dynamics to that of the single-cell phenotypic analysis observed by cryo-EM: that is, a sharp increase in expression of the cellulosomal machinery upon exposure to the new environment, which was substantially reduced at the early stages of growth and then maintained at basal levels. This increase in cellulosome expression was corroborated at the RNA levels of the two major cellulosomal components, Cel48S and CipA (Figure 3C), thus corroborating previous reports (Dror et al., 2003a; Dror et al., 2003b; Ortiz de Ora et al., 2018; Ortiz de Ora et al., 2017), and at the protein level where we quantified the expression levels of CipA, using a specific antibody against its CBM3a component (Figure 3C). We also measured the total enzymatic activity, normalized per cell of the culture, which comprises both the enzymatic machinery on the cell surface and enzymes secreted into the extracellular environment. The total cellulolytic activity presents the same pattern, which comprises a sharp increase in activity during early growth, followed by a sharp decrease in later growth stages (Figure 3\u2014figure supplement 2).\n\nWe next examined our hypothesis that soluble sugar availability resulting from cellulose degradation modulates the expression of cellulosomal components. To this end, we devised an experiment in which we added cellobiose, the major degradation product of cellulose, at the onset of cellulosomal expression (10 hr after exposure of the cells to cellulose). Addition of cellobiose resulted in a negative effect on Cel48S expression, the main cellulosome component (Figure 3D), thereby suggesting that the availability of soluble sugars as products from the cellulose-degradation process is one of the cardinal ways for controlling the expression of cellulosomal components (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76523/elife-76523-fig4-v3.jpg)\n\n**Figure 4.:** The figure represents a schematic model of the findings revealed in our study. Blue and orange rod-like shapes represent the low- and high-density subpopulations, respectively. When C. thermocellum cells are exposed to a new environment containing cellulose (A), there are two possible outcomes depending on sugar availability. High sugar availability results in a basal level of cellulosome expression with no change in phenotypic heterogeneity of the population (B), where the high-density phenotype serves as a cellulosomal reservoir for future sugar-limiting conditions. In contrast, low sugar availability triggers the expression of the cellulosomal machinery (C), resulting in a major change in phenotypic heterogeneity of the population, where the high-density phenotype ratio increases and provides the present and future populations with high levels of sugar production from the cellulose substrate. This in turn increases the available sugar concentrations, arresting cellulosome expression and production resulting in an increase in the ratio of the low-density phenotype without the production of the high-cost enzymatic machinery, whereby the high-density phenotype returns to low ratios in the population (bet-hedging strategy). The secreted cell-free cellulosomes and their interaction with the cellulose substrate are not represented in the figure.\n\n## Discussion\n\nIn this work, we studied the plant fiber-degradation process at the scale in which it occurs, that is, micro- to-nanoscale level, from the individual microbes to the enzyme level, respectively. We selected C. thermocellum, one of the most efficient and well-characterized fiber-degrading microbes in nature. This bacterium deploys a multienzyme cellulosomal strategy that allows it to extract energy from highly resistant plant-fiber polymers, notably crystalline cellulose.\n\nCellulosomes are extraordinarily efficient cellulosic fiber-degradation machineries that have evolved to provide sugar metabolites for subsequent assimilation by the parent bacterial cell. Our exploration spanned from unique mechanistic insights into the way cellulosomes are distributed on the bacterial cell surface, the way their enzymes interact with and degrade plant-fiber polymers, and the way single cells employ phenotypic heterogeneity at the population level.\n\nStructural analysis by cryo-ET of C. thermocellum cells provided a tool to study the structure of cellulosomes in a near-physiological state, to understand their distribution on single cells, and to inspect the interactions of the bacterium with cellulose fibers (Figure 2A,B). In addition, our structure-based approach served to generate physiological and ecological hypotheses.\n\nOur study revealed that cellulosome complexes are arranged as a highly dense interconnected layer of protein around the bacterial cell at a distance of ~64 nm from the cell wall (Figure 2\u2014figure supplement 3). Intriguingly, we could directly observe the cellulosomal machineries during their interaction with the plant-fiber polymers as they envelop them with their numerous enzymes and modulate the crystalline organization of the cellulosic substrate (Figure 2E,F). We also determined the structure of the dominant cellulosomal enzyme, namely the Cel48S cellobiohydrolase. Our data confirmed a previously published X-ray structure of this enzyme (Liu et al., 2018) and added new information regarding the amino acids that link the enzyme to its dockerin and on the interaction of this enzyme with cellulose. In addition, our data suggested a flexible organization of the enzymes within the cellulosome layer while encompassing the cellulose substrate, presumably offering an advantage for its degradation. Such conformational adaptability of the cellulosome on the cellulose surface was also recently observed by atomic force microscopy (Eibinger et al., 2020).\n\nOur structural approach led to the detection and visualization of two major subpopulations in the C. thermocellum culture under the same experimental conditions: one with cellulosomes covering the bacterial cells in very high density and another in which cellulosomes are nearly absent (Figure 3\u2014figure supplement 1). We found that the ratio between these two phenotypes is dynamic and connected to the population growth stage and sugar availability (Figure 3A,B). After exposure to new environmental conditions lacking soluble sugars, the expression level of the cellulosomal machinery increased in the majority of the cells in the population, after which it was repressed in most cells of the population. Furthermore, our findings indicate that the expression of the cellulosome machinery is triggered upon exposure to low levels of soluble degradation products (e.g., cellobiose) and then inhibited by increasing sugar availability (Figure 3B\u2013D). These findings add an additional dimension to the regulation of expression of the cellulosome machinery, which has been reported previously to be mediated by sensing of extracellular polysaccharides via alternative sigma factors (Nataf et al., 2010). In addition, it is interesting to note that the basal expression level of the cellulosome machinery at time 54 hr is 20% of its highest expression levels at time 15 hr (Figure 3C). This corresponds to the proportion of the high-density subpopulation in the overall population (20%) at times 0 and 54 hr (Figure 3A), thus suggesting that the basal RNA levels stem from the expression of the cellulosome machinery in the high-density cell subpopulations.\n\nThe distribution of cellulosome density on the cell walls exhibited an all-or-none phenotype, where cells were either highly decorated with cellulosomes or almost devoid of cell-surface cellulosomes, without observable distribution of intermediate phenotypes (Figure 3\u2014figure supplement 1A, B), thus suggesting that cellulosome shedding occurs in an abrupt manner, similar to protein secretion, and not a gradual process during growth. Taking our overall findings into account, it is tempting to speculate that a division-of-labor strategy takes place in the C. thermocellum population. In this scenario, the high-density subpopulation expresses the cellulosome machinery comprising enormous amounts of proteins and consequent metabolic costs, thus limiting the resources that this subpopulation can invest in growth, while at the same time the low-density subpopulation does not pay these costs and can invest them in propagation. Hence, the low-density subpopulation balances the essential but costly high-energy process of expressing the cellulosomes by the high-density subpopulation.\n\nFinally, our findings are consistent with a bet-hedging strategy in the C. thermocellum population, mediated by phenotypic heterogeneity, whereby the presence of diverse phenotypes adapted to different environments would spread the risk of varying environmental conditions (Villa Mart\u00edn et al., 2019). Such a strategy would be particularly effective for organisms under fluctuating environmental conditions, where a proportion of individuals in the population pay an energetic/fitness cost by \u2018preparing\u2019 for changing environmental conditions. Similarly, in our case, although the soluble sugar levels are not limiting at stationary phase (Figure 3B), the high-density cell subpopulation, albeit at lower ratios, still expresses the costly cellulosomal machinery and would therefore provide the first line of defense for a future nutrient-poor and hostile environment containing only cellulose polymers.\n\nThe approach, whereby structural biology under near-physiological conditions was employed to understand microbial ecology, provides a pioneering view, at the micro- and nanoscales, into the unique organization of the cellulosome machinery on the bacterial cell surface, the way cellulosomes interact with their cellulosic substrate and how they are distributed and regulated across the bacterial population during the growth process.\n\n## Materials and methods\n\n### Expression of the Cel48S enzyme and scaffoldin protein\n\nThe plasmid for Cel48S expression was previously described (Vazana et al., 2010). The plasmid for expression of the truncated scaffoldin CipA (Yaron et al., 1995) was prepared by cloning the divalent Cohesin2\u2013CBM3a\u2013Cohesin3 region from the C. thermocellum genomic DNA using primers 5\u2032-ttactCCATGGgctcCgacggtgtggtagta-3\u2032 and 5\u2032-ttgatCTCGAGtgtatctccaacatttactc-3\u2032 and Phusion High-Fidelity polymerase (NEB, USA). The PCR product was restricted with NcoI and XhoI enzymes (FastDigest, ThermoScientific) and inserted into pET28a restricted with the same enzymes. Competent E. coli BL21 Star (DE3) cells were used to express both proteins in 2 L cultures, using isopropyl-1-thio-\u03b2-D-galactoside(Fermentas UAB Vilnius, Lithuania) to induce expression. Cells were harvested by centrifugation at 3000 \u00d7 g for 5 min. The Cel48S protein was purified using a Ni-NTA column (Qiagen, Hilden, Germany) as reported previously (Caspi et al., 2009) and further purified by size exclusion chromatography (Superdex 200 Increase, GE Healthcare Biosciences, Piscataway, NJ) in Tris Buffer Saline (TBS, 137 mM NaCl, 2.7 mM KCl, 25 mM Tris at pH 7.4) + 3 mM CaCl2 + 2 mM \u03b2-mercaptoethanol buffer. The expected peak was eluted at 12 ml, and the molecular weight of the protein in the selected fraction was confirmed by sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) and mass spectrometry. The truncated scaffoldin was purified using its affinity to phosphoric acid-swollen cellulose as described earlier (Vazana et al., 2010).\n\nFor assembling the Cel48S in complex with the divalent truncated scaffoldin, the Cel48S enzyme was added at a molar ratio 2:1 to the truncated scaffoldin protein and incubated for 2 h at room temperature with 10 mM CaCl2.\n\n### Sample preparation for cryo-EM and tomography\n\nThe concentration of Cel48S was diluted to ~0.35 mg/ml in ice-cold elution buffer, before being vitrified on carbon-coated Au grids (R0.6/1, 200 mesh; Quantifoil, Jena, Germany).\n\nC. thermocellum DSM1313 cells were grown on GS2 medium (Yoav et al., 2017) containing either 8% cellobiose or 0.2% MCC as carbon source. The cells were grown anaerobically at 60\u00b0C. The cells grown on cellobiose were harvested at 24 hr, and the cells grown on crystalline cellulose were harvested at different time points, ranging from 15 to 54 hr of incubation (Figure 3A). Cells were centrifuged for 5 min at 5000 \u00d7 g, washed briefly in TBS buffer, and resuspended in TBS prior to flash-freezing. A volume of 3 \u03bcl of cell sample was mixed with 3 \u03bcl of 10-nm fiducial bovine serum albumin BSA gold marker (Aurion, Wageningen, The Netherlands) and applied on glow-discharged copper EM grids, coated with a carbon mesh (R2/1, 200 mesh; Quantifoil, Jena, Germany). The grids were manually blotted for ~4\u20135 s from the reverse side and plunge frozen in liquid ethane by using an in-house plunger.\n\nTo analyze the organization of MCC (Sigma-Aldrich), dilute suspensions (0.04\u20130.0016 g/l in TBS) were prepared, 3 \u03bcl of the suspensions were mixed with 3 \u03bcl of 10 \u2009nm fiducial BSA gold marker (Aurion, Wageningen, The Netherlands) and applied on glow-discharged copper EM grids, coated with a carbon mesh (R2/1, 200 mesh; Quantifoil, Jena, Germany).\n\nCel48S interactions with MCC in vitro were studied as follows: A stock suspension of Avicel \u2013 MCC (Sigma-Aldrich) \u2013 was prepared at a concentration of 10 % (wt/vol) in a typical assay mixture of buffer (100 mM acetate buffer pH 5.0, 24 mM CaCl2, 4 mM ethylenediaminetetraacetic acid). The MCC suspension and the protein solutions were mixed at a ratio of 1:8 (MCC:Cel48S-scaffoldin). Next, they were incubated at 37\u00b0C for 1 hr with continuous agitation, and the suspension was centrifuged at 3000 \u00d7 g for 5 min. The supernatant fluids were deposited onto EM grids and plunge frozen as described above.\n\n### Cryo-EM data acquisition\n\nA total of ~2000 micrographs were acquired using Titan Krios (Thermo Fisher Scientific, Waltham, MA) equipped with Gatan energy filter and K2 summit (Gatan Inc, Pleasanton, CA). Using an underfocus range of 0.5\u20131.5 \u00b5m and the super resolution mode resulted in a pixel size of 0.425 \u00c5. Exposures of 0.2 s for 12 s resulted with 60 frames and a total dose of ~67 e\u2212/\u00c52.\n\n### Cryo-EM image processing\n\nThe micrographs were drift-corrected and binned once using Relion 3.0, resulting in a pixel size of 0.86 \u00c5. A total of ~1100 manually selected particles were used to create a 2D reference for further automatic particle picking using Relion 3.0. The structural determination steps are described in Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2\u2014source data 1. Initially, a few rounds of reference-free 2D classifications using ~363,000 particles resulted in an initial reference using Relion 3.0 by Stochastic Gradient Descent. 3D classifications and 3D refinements were performed by using the initial reference with the refined 3D classes. One the 3D-refined classes reached 3.6 \u00c5 resolution and was further improved by Bayesian polishing and CTF refinements. The final 3D structure was determined to be 3.38 \u00c5 resolution, using ~55,000 particles.\n\nThe obtained final model was compared to the pdb of the Cel48S exoglucanase (5yj6, Liu et al., 2018) by the fit-in-map option in Chimera, resulting in a correlation score of 0.87. The RMSD between 1 and 663 amino acids of two models were in 5.7 \u00c5. The stoichiometry of the model was improved by real-space refinement in Phenix, and the final atomic structure was validated by MolProbity.\n\n### Immunogold labeling of cellulosomes\n\nThe protocol was adapted from Turgay et al., 2017. A 1 ml sample of bacterial culture was washed in TBS as described above, and 5 \u00b5l of the washed cells were introduced to Au grids (R2/1, 200 mesh; Quantifoil). The grids were fixed in 4% paraformaldehyde (in TBS) for 5 min at room temperature and were quenched in 0.05 M glycine/PBS (purchased phosphate buffer saline) for 15 min at room temperature to inactivate aldehyde groups present after aldehyde fixation. Next, samples were blocked in blocking solution (5% BSA/0.1% cold water fish skin gelatin/PBS; Aurion, Wageningen, Netherlands) for 30 min at room temperature, and subsequently washed with the incubation solution (0.2% BSA-c [acetylated bovine serum albumin for eliminating the background]/PBS; Aurion). A volume of 20 \u00b5l of anti-CBM3a antibody (Morag et al., 1995) (1:1000 dilution in incubation solution) was incubated on grids for 1 hr at room temperature. The EM grids were washed with the incubation solution before treatment with gold conjugate (Protein A-6 nm gold; Aurion). Finally, the grids were washed extensively in PBS (3 \u00d7 5 min), 10 nm fiducial gold marker solution was added prior to vitrification in liquid ethane cooled liquid N2.\n\n### Cryo-ET data acquisition and reconstruction\n\nSixty tilt series of 24 hr grown C. thermocellum bacteria cultured on MCC were acquired at 53,000 magnifications, corresponding to a 0.27-nm pixel size, at a defocus of \u22121 \u00b5m. The tilt series cover an angular range of \u221260\u00b0 to +60\u00b0 with an angular increment of 2\u00b0 and total dose ~150 e\u2212/\u00c52, using a Thermo Fisher Titan Krios electron microscope operating at 300 keV, equipped with a quantum energy filter, a K2-Summit direct electron detector (Gatan Inc) and a VPP (Thermo Fisher Scientific, Eindhoven, Netherlands).\n\nTilt series of MCC were acquired at \u00d753,000 magnification, covering an angular range of \u221260\u00b0 to +60\u00b0 with an angular increment of 2\u00b0 and total dose ~150 e\u2212/\u00c52 and at \u22126 defocus for visualization purposes.\n\nInteractions of MCC with cellulosomes were analyzed using C. thermocellum cultures grown for 15 hr, 23 tilt series at \u00d753,000 magnification and a defocus of 1\u20132 \u00b5m were acquired using VPP. A single tilt series was recorded using an under-defocus value of 6 \u00b5m for visualization purposes (Figure 2A). Additional 25 tilt series of 15 hr grown C. thermocellum bacteria cultured on cellulose to use for further image processing; hence were acquired at \u00d7105,000 magnification with a corresponding 0.13-nm pixel size, at an under focus of 4 \u00b5m, and an angular increment of 3\u00b0.\n\nWe confirmed the low- and high-density populations were detectable at high-exposure images of \u00d74800 magnification by comparing it to higher magnification images. The bigger field of view of \u00d74800 magnification contributed to the visualization of more bacteria and thus, increased the number of bacteria counted. For population analysis, high-exposure images of C. thermocellum incubated at five different time periods 15 hr (42 images), 24 hr (219 images), 30 hr (69 images), 48 hr (40 images), and 54 hr (231 images) were acquired as described.\n\n### Image processing\n\n#### Population analysis\n\nThe total number of high- and low-cellulosome-expressing bacteria (nonlysed and nonsporulating) was manually counted in low-magnification images of C. thermocellum for different incubation periods: 84 bacteria for 15 hr, 499 bacteria for 24 hr, 179 bacteria for 30 hr, 170 bacteria for 48 hr, and 230 intact bacteria for 54 hr. The total number of high-cellulosome density-maintaining bacteria was also counted manually for the same images, and percentages of high-cellulosome density-maintaining bacteria were calculated for each condition in an Excel document. The final histogram, providing the ratio of the low- and high-density populations, was plotted in MATLAB (Figure 3B).\n\n#### Thickness measurements\n\nCentral x\u2013y slices, ~70 nm in thickness, through 15 bacteria were projected onto a plane. The images were exported to the Fiji software package. The thickness of the given cellulosome layer was measured by subtracting the length from the bacterial S-layer to the proximal cellulosome layer edge from the distal edge of the cellulosome layer. The measured lines were selected to be perpendicular to the S-layer plane. The measurements from each tomogram were analyzed by Excel (Figure 2\u2014figure supplement 3). The distance from S-layer to the proximal edge of the cellulosome layer was measured accordingly (Figure 2\u2014figure supplement 3).\n\n### Template matching and subtomogram averaging\n\nThe in vitro Cel48S structure was low-pass filtered to 50 \u00c5 and localized by PyTom template matching (Hrabe et al., 2012; Mahamid et al., 2016). The globular densities are much smaller and bigger in comparison to Cel48S and the linkers were not assigned with this procedure. The assigned particles were inspected manually in Chimera, and the coordinates that were outside of the cellulosome layer were removed by the Volume Erase tool.\n\n### Mapping the Cel48S structure into tomographic volumes\n\nTo visualize enzymatic densities around the bacterium or with the substrate (Figure 2C,D), the assigned angles and coordinates obtained from the template-matching procedure were used to demonstrate the in vitro Cel48S structure at the cellulose surface. The mapping of Cel48S units into the tomographic volumes was performed in MATLAB, and figures were prepared in Chimera (UCSF, USA).\n\n### Segmentation\n\nThe cellulosomes (Figure 2B; Figure 2\u2014figure supplement 3, Video 3), MCC (Figure 2B\u2013F and Video 3), enzymes (Figure 2F), and bacteria (Figure 2B; Figure 2\u2014figure supplement 3) were either manually or isosurface-threshold segmented in Amira-Avizo 2019.1 (Thermo Fischer Scientific). All rendered views except Figure 2\u2014figure supplement 3 were visualized in Chimera (UCSF, USA).\n\n### Confocal microscopy\n\nA volume of 2 ml of cells grown with MCC was centrifuged for 5 min at 5000 \u00d7 g. The cells were washed quickly in TBS and fixed with paraformaldehyde (Sigma-Aldrich, St. Louis, MO) diluted to 4% in TBS for 20 min. The cells were then washed and centrifuged for 5 min at 5000 \u00d7 g, three times with TBS and once in TBS containing 1% Triton X-100 (Sigma-Aldrich). The cells were then resuspended in 5% BSA diluted in TBS for blocking 1 hr at room temperature. After removing the blocking solution by centrifugation, rabbit anti-CBM3a from CipA antibody diluted at 1/5000 in 1% BSA in TBS was added, and the cells were incubated 1 hr at room temperature. The cells were washed three times with TBS by centrifugation as described above, and secondary goat anti-rabbit IgG Alexa 594 antibody (Thermo Fisher Scientific) diluted at 1/1000 in 1% BSA in TBS was allowed to interact for 1 hr at room temperature. After three washes of the cells (by centrifugation as above), the cells were mounted on slides with SlowFade Gold anti-fade reagent (Thermo Fisher Scientific) using polylysine-coated cover slides. Confocal images were obtained by using a LSM880 inverted laser-scanning confocal microscope (Carl Zeiss AG, Oberkochen, Germany) equipped with an Airyscan high-resolution detection unit. A Plain-Apochromat \u00d763/1.4 Oil DIC M27 objective with a 561-nm DPSS laser with a no-emission filter was used, and parameters were set to avoid pixel intensity saturation and to ensure Nyquist sampling in the x\u2013y plane.\n\n### RNA analysis\n\nThree independent sets of cellulose-grown cell cultures were individually sampled at different growth times from 10 to 43 hr. Cells were harvested for 5 min at 3000 \u00d7 g, and the pellets were resuspended in RNAlater solution according to the manufacturer\u2019s protocol. Cells were then stored in \u221280\u00b0C until downstream RNA extraction preparations. The RNA was isolated using an RNAeasy minikit (Qiagen, Germantown, MD) using protocol 4 with the following modifications: cells were incubated 2 hr at room temperature in TBS prepared with RNase-free water supplemented with lysozyme at a concentration of 15 mg/ml and 20 \u03bcl proteinase K at 20 mg/ml. Then the purified RNA samples were immediately processed with the Thermo Fisher Scientific verso cDNA synthesis kit. Quantitative real-time PCR analysis was performed to calculate the RNA levels of two genes of interest: Cel48S and CipA RNA, which were normalized to RecA RNA levels. A specific fragment of each gene was amplified using the primer pairs: 5\u2032-CGCAGAAGGCCGTGCTATA-3\u2032 and 5\u2032-CAGAACCTTTACCCTGCTCCTTT-3\u2032 for Cel48S, 5\u2032-CAGTATGCTCTTAGTTGTGGCTATGC-3\u2032 and 5\u2032-TGATCCAACGGCTGCTGTAA-3\u2032 for CipA, and 5\u2032-GTTGCGGTAAATCTCGATATTGTAAA-3\u2032 and 5\u2032-GGCCAATCTTCTGACCGTTG-3\u2032 for RecA. For each gene, individual standard curves were generated by amplifying serial tenfold dilutions of quantified gel-extracted PCR products obtained by the amplification of each fragment. The standard curves with required standard efficiencies were obtained using six dilution points and were calculated using the Rotorgene 6000 series software (Qiagen). Real-time PCR was performed in a 10-\u03bcl reaction mixture containing 5-\u03bcl Absolute blue SYBR green master mix (Thermo Fisher Scientific), 0.2 \u03bcl of each primer (diluted to 10 \u03bcM), 3.6 \u03bcl nuclease-free water, and 1 \u03bcl of cDNA.\n\n### CipA protein expression analysis\n\nA volume of 2 ml samples from the three independent sets of cellulose-grown cell cultures was taken from times 15, 24, 30, 39, 48, and 54 hr. Half of the volume was used to determine the cell numbers in the culture, by DNA extraction as performed by Stevenson and Weimer, 2007 without the initial filtration steps, followed by quantitative real-time PCR analysis as described above using 16S universal primers covering the V2 and V3 regions of the gene (5\u2032-TTTGATCNTGGCTCAG-3\u2032 and 5\u2032-GTNTTACNGCGGCKGCTG-3\u2032).\n\nThe calculated number of 16S copies served to normalize the volume taken for western blotting to a similar number of cells. Normalized volumes of samples from the different growth time points were applied on SDS\u2013PAGE gels (10% acrylamide) and transferred to a nitrocellulose membrane using Mini Trans-Blot cells (BioRad Laboratories Ltd, Rishon Le Zion, Israel). Nonspecific protein interactions were blocked by incubating the membrane for 1 hr with 5% BSA diluted in TBST (Tris-buffered saline with 0.05% of Tween 20). Rabbit antibody against CBM3a from CipA (Morag et al., 1995) at a dilution of 1:3000 was incubated with the nitrocellulose membrane for 1 hr in 1% BSA diluted in TBST. The membrane was then rinsed three times with TBST and then incubated for 1 hr with secondary anti-rabbit antibody labeled with horseradish peroxidase at a dilution of 1:10,000. The membrane was rinsed again three times with TBST and developed by incubation for 1 min with equal amounts of solutions A and B (ECL, Ornat Biochemicals & Lab Equipment, Rehovot, Israel). Chemiluminescence was quantified using a luminescent image analyzer (Fusion, FX7 G/R/IR).\n\n### Cellulolytic activity per cell\n\nAn overnight culture from C. thermocellum was used as a starter culture to inoculate 125 ml serum bottles containing 100 ml of GS2media with MCC as the sole carbon source. After inoculation, the serum bottles were incubated at 60\u00b0C for 45 hr and samples were taken at 0, 10, 15, 20, 25, 30, 35, 40 and 45 hr. The samples were centrifuged at 4000 rpm for 5 min to separate the bacterial pellet from the supernatant fluids, and the protein fraction was precipitated by adding ammonium sulfate at 80% saturation in order to recover the cellulosomes that were released into the media. Proteinaceous pellets were obtained by centrifuging the solutions from ammonium sulfate treatment at 4000 rpm for 10 min, resuspending the pellets in 1 ml of TBS buffer and then reuniting the resultant solution with the bacterial pellet collected from the original sample (overall \u00d715-fold concentration). Then, these samples were used for determining the cellulolytic activity per cell using phosphoric acid-swollen cellulose as a substrate (Wood, 1988). Enzymatic reactions were performed at 60\u00b0C for 72 hr under continuous agitation (600 rpm). After incubation, samples were centrifuged at 14,000 rpm for 10 min, and the supernatant fluids were used to determine the number of released sugars, by the DNS method (Miller, 2002). Cell numbers in each sample from different time points were normalized by absolute quantification of the 16S gene copy number using real-time qPCR.\n\n### Effect of soluble sugars on CipA and Cel48S gene expression\n\nIn order to determine the effect of soluble sugars on the expression of CipA and Cel48S genes in C. thermocellum, either cellobiose or sugars released from MCC by a 20-hr C. thermocellum culture were added into the culture media. In the case of cellobiose, a 10 hr growth culture of C. thermocellum was supplemented with 10 ml of cellobiose 10% (wt/vol), and samples were taken after 10, 12, 15, and 18 hr. Alternatively, taking into account that the peak of expression of the cellulosomes occurs at ~15 hr after inoculation, we extracted samples of 0.45-\u03bcm filter-sterilized supernatant fluids from a 20-hr growth culture and used it as the culture medium to inoculate the total cells of a 10-hr culture, obtained by centrifuging the cells (and cellulose) for 10 min at 4000 rpm. Before inoculation, cells were washed twice in fresh medium, in order to remove soluble sugar. All the steps were performed under anaerobic conditions. The cultures were incubated at 60\u00b0C, and 2 ml samples were taken at 10, 12, 15, and 18 hr. Finally, RNA was analyzed as described above.\n",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "c6b5cbc4-3438-4c4c-96c9-214b8a1a25e1",
+      "submission_id": "e9627aac-b38b-470e-9a18-e75d64ec479f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Steven Smith, Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76523.sa0](https://doi.org/10.7554/eLife.76523.sa0)\n\nThe premise behind this manuscript is timely and of interest to a broad scientific community working in the field of microbial recycling of cellulosic biomass. It provides a useful link between the occurrence and molecular aspects of the bacterial 'machinery' named cellulosome, and physiological traits of the same bacteria when grown on micro-crystalline cellulose. The key claims of the manuscript are well supported by the data, and the approaches used are thoughtful and rigorous.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Steven Smith, Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76523.sa1](https://doi.org/10.7554/eLife.76523.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Nanoscale resolution of microbial fiber degradation in action\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Steven Smith as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Mirjam Czjzek (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) While the cryo-EM structure of Cel48S allows the template-matching procedure, employed subsequently in the manuscript, it in itself does not represent particularly novel data. As such, this section and associated figures should be shifted to supplemental material. In doing so, the flow and focus of the manuscript will remain entirely on the novel electron tomography data and follow-up studies.\n\n2) The additional comments/suggested edits by the reviewers will also make for a more clear and comprehensive manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\nConsiderations for strengthening the manuscript:\n\n1. As written, the section describing the cryo-EM structure of Cel48S, somewhat disrupts the flow of the manuscript by being situated in the \"Cellulosome surround the bacteria as an extensive layer of complexes at constant distance from the cell wall\" section and \"Cellulosome interactions with its substrate\". Further, while the cryo-EM structure reveals a 10-amino acid residue section of the linker connecting the catalytic module to the dockerin module that had not previously been observed, this finding and the structure of the catalytic module, which has previously been determined by X-ray crystallography, does not have the novelty/impact of the other data. Consideration could be given to including this data as supplemental with reference at an appropriate place (e.g., line 214 in Cellulosome interactions with its substrate section).\n\nReviewer #2 (Recommendations for the authors):\n\nIn my opinion, this work is timely and of great interest to the field of microbial recycling of cellulosic biomass. In my opinion, the only weakness of the manuscript lies in the fact that some of the methods descriptions are particularly short and lack some crucial informative details, making it sometimes complicated to distinguish and understand in-situ experimental set-ups from data obtained from recombinant in-vitro set-ups, and how they correlate; as an example, it does not become clear why a cryo-EM 3D structure of Cel48S was necessary for this study, and why in some (in situ) figures this seems to be the only enzyme present.\n\nSpecific comments to the authors:\n\n1. Introduction page2-3: the statement line 78-80, that structural insights into the fiber-degrading process at the nanoscale level remain unknown, is only partially true. A recent study, also entitled the \"cellulosome in action\", is depicting first insights using AFM. This work by M. Eibinger et al., ACS Cent Sci. 2020 May 27; 6(5): 739-746. doi: 10.1021/acscentsci.0c00050, should be mentioned and cited here somewhere.\n\n2. Page 5 lines 158-159: \"We therefore studied the structure of recombinantly expressed full-length Cel48S by cryo-EM.\"\n\nI imagine that this cryo-EM structure determination was necessary to be able to perform the template-matching procedure, described later in the manuscript. At least in the material and methods description, this should be mentioned (if my assumption is correct). Otherwise, the low(er) resolution cryo-EM structure is not of great interest in the way it is discussed here. From supplemental Figure S3 it becomes clear that only 7% of the single-particle images were used for structural refinement; it would be interesting to know if the other particles were omitted only because of lack of resolution/quality or if the low percentage of identical images is due to inherent flexibility of the enzymes, or part of the enzyme (i.e specific loops or sub-domains?)? Are the other images just different and lower resolution \"views/orientations\", or do they contain any additional information that could be of interest (as compared to a more rigid crystal structure, at a higher resolution but tightly packed within the crystal lattice)?\n\n3. The title of the Figure legend for Figure 2 is misleading: \"Structure of Cel48S and location of cellulosomal enzymes around the C. thermocellum cell\".\n\nWhile I do see the cryo-EM structure of Cel48S depicted in panels A to D, I do not see any illustration of the location of the enzymes around the C. thermocellum cell in this figure!\n\n4. Page 7 line 206: \"The cellulose was identified within the dense cellulosome layer,\u2026\"\n\nHow were the cellulose fibers identified? Is it 'only' visual inspection? Do the cryo-ET images allow determining density values that can be correlated to different types of molecules/objects/molecular structures?\n\n5. Page 7 line 211: \"\u2026, we employed a template-matching procedure, as conducted above.\"\n\nThis must be a typo; it is in fact the first time template matching is mentioned in this manuscript. Please correct and replace \"as conducted above\" with the exact location in the manuscript where this is precisely described.\n\n6. Figure 3 C and D. It is a bit intriguing that the selected portion showing presumably Cel48S enzymes in contact with cellulose micro-fibrils of the in situ study matches extremely well with the more directed in vitro image of Cel48S (only) containing mini-cellulosomes in interaction with microfibrils. Indeed, one would expect to have globular enzymes of variable size in the in-situ image, since the \"natural cellulosome\" does contain other enzymes than Cel48S, although proven to be a major component. Also, where is the rest of the cellulosomal proteins located in this view? Why nothing resembling a scaffoldin can be seen in close vicinity? Are the parts to that extent flexible (through the linkers) that the rest of the machinery comes to lie so distantly that they are not caught in this close-up view?\n\n7. In the same idea, it would be interesting to describe, and for the reader to know, if the template matching of Cel48S works in all places? Or do globular regions that cannot be matched with Cel48S occur? Page 17, in the methods description line 596, the authors state that 63 Cel48S enzymes can be assigned in a sub-volume shown in Figure 3C. Thus, are there regions (and how many) that can not be assigned to Cel48S?\n\nAlso the sentence: \"The final number of assigned 63 Cel48S for the subvolume (Figure 3C)\" needs to be reformulated or corrected; as it stands it is not clear.\n\n8. Figure 3F. From the text, it is not clear what \"treatment\" has been done to the data to \"extract\" the altered microcellulose fibrils, shown in these rendered illustrations. In the raw data, are cellulosomal particles present and identified in the regions of the kinks that are highlighted by the arrowheads? Why not present the figure with a cellulosomal particle in orange, at least for one of these extractions (as it appears in one of the videos)? It would render the figure much clearer.\n",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3f397623-5135-41e4-9bb9-05880d1056f5",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C1",
+      "claim": "C. thermocellum bacterial cells measure a few micrometers in length and 500-600 nm in thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-magnification images of the bacteria indicated a typical view of the elongated cells, measuring a few micrometers in length and 500\u2013600 nm in thickness (Figure 1A), which represents a suitable size for in toto analysis of bacteria by cryo-ET (Ortega et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the measured dimensions of the bacterial cells based on low-magnification cryo-EM images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "a9d0765f-49a8-47c3-8030-21ea9f800610",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C2",
+      "claim": "C. thermocellum cells have a dense layer surrounding the bacterium visible by cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection of these bacteria confirmed the presence of a dense layer surrounding the bacterium (Figure 1A, arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from cryo-EM imaging showing a dense layer around bacteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "77469d7d-b70b-44a7-bbda-95d2286c9b21",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C3",
+      "claim": "Cryo-tomograms reveal discrete globular protein densities in the extracellular layer of C. thermocellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Slices through typical cryo-tomograms (Figure 1B,C) revealed discrete globular protein densities in the extracellular layer and densities that emanate from the bacterial S-layer to this extracellular protein layer (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from cryo-tomography data showing protein densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "b488dd79-5122-4d70-b035-384ab5456459",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C4",
+      "claim": "The extracellular density layer detected by cryo-EM corresponds to cellulosome complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that the extracellular density layer detected by cryo-ET is composed of cellulosome assemblies, we utilized confocal immunofluorescence imaging (Figure 1D) and immunogold labeling with specific antibody targeting of the cellulose-binding module 3a (CBM3a) component of the CipA (ScaA) scaffoldin (Figure 1E and Video 1), the major defining constituent of the C. thermocellum cellulosome complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence and immunogold labeling experiments confirm the identity of the extracellular layer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "5b1a7d0c-b593-4a98-ba7f-95cf30fd21bb",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C5",
+      "claim": "C. thermocellum mutant strains lacking cellulosomal scaffoldins show complete absence of extracellular densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-ET analysis of these mutant bacteria indicated complete absence of extracellular densities (Figure 1\u2014figure supplement 2C\u2013F) as compared to the wild-type cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of cryo-ET data between wild-type and mutant strains demonstrates the cellulosomal nature of the extracellular layer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "83aed24b-44e5-46f7-a078-7d914a167f21",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C6",
+      "claim": "There is a characteristic gap between the S-layer and the cellulosome layer with an average distance of 64 \u00b1 17 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cryo-tomograms of intact C. thermocellum cells revealed a characteristic gap which was not visible in chemically fixed samples between the S-layer and the cellulosome layer, with an average distance of 64 \u00b1 17 nm (Figure 2\u2014figure supplement 3), while the thickness of the cellulosome-rich layer was 65 \u00b1 16 nm (Figure 2\u2014figure supplement 3), measured using bacterial cultures that were cultured for 24 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurements from cryo-tomograms provide specific distance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "81d3e2cf-4ca7-4901-9dc3-415a5f0b9f24",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C7",
+      "claim": "The thickness of the cellulosome-rich layer is 65 \u00b1 16 nm in bacterial cultures cultured for 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cryo-tomograms of intact C. thermocellum cells revealed a characteristic gap which was not visible in chemically fixed samples between the S-layer and the cellulosome layer, with an average distance of 64 \u00b1 17 nm (Figure 2\u2014figure supplement 3), while the thickness of the cellulosome-rich layer was 65 \u00b1 16 nm (Figure 2\u2014figure supplement 3), measured using bacterial cultures that were cultured for 24 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct measurement from cryo-tomography data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "cb0a25b3-c89a-401d-a85b-bea3eb49e12b",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C8",
+      "claim": "Density emanating from the bacterium to the cellulosome layer presumably indicates the anchorage of the cellulosome to the cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Density emanating from the bacterium to the cellulosome layer was detected, which presumably indicated the anchorage of the cellulosome to the cell wall (Figure 1\u2014figure supplement 1, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from cryo-tomography with interpretation of the structural feature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "50f07e68-21c5-46a8-bf26-3f7203ef69f4",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C9",
+      "claim": "The gap between the S-layer and cellulosome layer is reminiscent of previously described 'contact corridors'.",
+      "claim_type": "EXPLICIT",
+      "source": "The gap between the S-layer and cellulosome layer is reminiscent of the previously described 'contact corridors' (Bayer and Lamed, 1986), which were proposed to contain anchoring proteins, for example, OlpB (ScaB), that include exceptionally lengthy intermodular linking segments (Bayer and Shimon, 1998; Madkour and Mayer, 2003; Shoham et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to previously published work on cellulosome structure.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "49e6a7a4-3dd2-4188-9cad-4f3f962f7fa9",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C10",
+      "claim": "Cellulosomes form a layer around the bacterium and envelop cellulosic fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed the cellulosomes, which form a layer around the bacterium and envelop the cellulosic fibers (Figure 2A,B and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from VPP-assisted cryo-ET analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "e05b27e9-53b8-427f-b65e-a13392d0a653",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C11",
+      "claim": "Cellulose was identified within the dense cellulosome layer, suggesting a flexible organization of the enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellulose was identified within the dense cellulosome layer, suggesting a flexible organization of the enzymes within the cellulosome layer while encompassing the cellulose substrate, presumably offering an advantage for its degradation (Figure 2A,B and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from cryo-ET with interpretation about enzyme organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "a0c68da5-28f8-407f-b576-762dabb6ba74",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C12",
+      "claim": "The structure of Cel48S was determined at 3.4 \u00c5 resolution by cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "For this procedure, we purified a recombinant form of the most expressed C. thermocellum dockerin-containing enzyme, which is crucial for enzymatic digestion of MCC, Cel48S (Morag et al., 1991; Raman et al., 2011; Yoav et al., 2017; Zverlov et al., 2005) and determined its structure at 3.4 \u00c5 resolution (Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural determination by cryo-EM with specific resolution reported.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "59189ce4-1d21-419a-b3e4-078ea6f60044",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C13",
+      "claim": "Cel48S is the most expressed C. thermocellum dockerin-containing enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "For this procedure, we purified a recombinant form of the most expressed C. thermocellum dockerin-containing enzyme, which is crucial for enzymatic digestion of MCC, Cel48S (Morag et al., 1991; Raman et al., 2011; Yoav et al., 2017; Zverlov et al., 2005) and determined its structure at 3.4 \u00c5 resolution (Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations about Cel48S expression and function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "56eed78f-cd0d-4059-bb51-efc531762692",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C14",
+      "claim": "Cel48S is crucial for enzymatic digestion of microcrystalline cellulose.",
+      "claim_type": "EXPLICIT",
+      "source": "For this procedure, we purified a recombinant form of the most expressed C. thermocellum dockerin-containing enzyme, which is crucial for enzymatic digestion of MCC, Cel48S (Morag et al., 1991; Raman et al., 2011; Yoav et al., 2017; Zverlov et al., 2005) and determined its structure at 3.4 \u00c5 resolution (Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations about Cel48S function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "9e38e3f6-29c2-4fa6-9a4e-4fcc1f09415d",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C15",
+      "claim": "Enzyme-matching structures were found in close proximity to cellulose and appeared to localize between cellulose chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The enzyme-matching structures were found in close proximity to the cellulose and appeared to localize between the cellulose chains, presumably, to increase the efficiency of degradation (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Template-matching analysis of cryo-tomography data showing enzyme positions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "a25d40ba-1c78-4902-ad90-ccf7bcd42514",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C16",
+      "claim": "The architecture of in vitro minicellulosome complex with MCC shows overwhelming resemblance to that found in situ around the bacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "This in vitro minicellulosome complex was incubated with MCC and analyzed by cryo-ET. The architecture found in this in vitro experiment (Figure 2D and Figure 2\u2014figure supplement 4C, D) shows an overwhelming resemblance to that found in situ around the bacterium, further corroborating our findings (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison between in vitro and in situ cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "ef8f67bd-28ed-40b3-81bc-eafb5a960774",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C17",
+      "claim": "The structure of cellulose undergoes major organizational changes during interaction with cellulosomes, transforming from well-ordered crystalline structure to deconstructed crystalline packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our analysis revealed that the structure of cellulose undergoes major organizational changes during the interaction with the cellulosomes, transforming from a well-ordered crystalline cellulose structure (Figure 2E) to deconstructed crystalline packaging (Figure 2F, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from cryo-ET showing structural changes in cellulose.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "bb11d3a1-141a-4b13-96e9-84a99ab9b14e",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C18",
+      "claim": "Two distinct phenotypes of cellulosome organization exist on bacterial cells: high-density and low-density organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while studying the structure of the cellulosomal machinery during cellulose degradation, we observed two distinct phenotypes of cellulosome organization on the bacterial cells, that is, high-density (raw data in Figure 3\u2014figure supplement 1A, Video 2), and low-density organization (raw data in Figure 3\u2014figure supplement 1B, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from cryo-EM analysis of bacterial populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "c05c24ef-0b4e-4c73-9e16-979ee303b1bf",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C19",
+      "claim": "The distribution of high-density versus low-density phenotypes in stationary-phase culture shows a ratio of 1:5.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of these two phenotypes in the stationary-phase culture shows a ratio of 1:5 (high versus low density).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantification from cryo-EM analysis of bacterial populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "70168465-78ce-4799-b4d0-5f036677fafa",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C20",
+      "claim": "Upon exposure to fresh medium containing cellulose, a sharp increase in the ratio of the high-density phenotype occurs, followed by a gradual decrease back to a 1:5 ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed that, upon exposure of the bacterial cells to the new environment containing only cellulose, a sharp increase in the ratio of the high-density phenotype occurred, after which a gradual decrease in its concentration was observed back to a 1:5 ratio (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-course analysis of phenotype ratios during bacterial growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "6e37d4b6-ad91-494f-a74d-34eed55aab4d",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C21",
+      "claim": "1160 individual cells were analyzed from cultures at five time points after inoculation.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed 1160 individual cells, sampled from cultures at five time points after inoculation, which correspond to different population growth phases (with an average of n = 232 cells per time point).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental sample size and methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "fd5f4ebe-cac9-41c9-a086-cd60ae143703",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C22",
+      "claim": "The availability of soluble sugars derived from cellulose degradation is tightly connected to the ratio between the two subpopulations and culture growth stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed that the availability of soluble sugars derived from cellulose degradation is tightly connected to the ratio between the two subpopulations and culture growth stage (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation analysis between sugar measurements and phenotype ratios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "406006cf-0ce6-4ee7-9f54-f90628ddcb99",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C23",
+      "claim": "At early stages of population growth where soluble sugar availability is low, an increase in the high-density subpopulation occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "At early stages of population growth, where the availability of soluble sugars is low, an increase in the high-density subpopulation occurs, whereas upon increase in sugar availability with population growth, the ratio of the low-density subpopulation increases (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation between sugar availability measurements and phenotype distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "a12bc3c1-cc12-436a-bdb2-7799fcf2f3c4",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C24",
+      "claim": "Upon increase in sugar availability with population growth, the ratio of the low-density subpopulation increases.",
+      "claim_type": "EXPLICIT",
+      "source": "At early stages of population growth, where the availability of soluble sugars is low, an increase in the high-density subpopulation occurs, whereas upon increase in sugar availability with population growth, the ratio of the low-density subpopulation increases (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation between sugar availability measurements and phenotype distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "920443d5-a022-4dd5-b660-8db1544a6804",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C25",
+      "claim": "In late stages of growth when the high-density subpopulation comprises only 20% of the overall population, the soluble sugar concentration remained stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the late stages of growth, when the high-density subpopulation comprises only 20% of the overall population, the amount of the soluble sugar concentration remained stable and did not decrease even when the population growth reached its peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from time-course measurements of sugar concentration and phenotype ratios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "86ea44d5-8c2a-4ef7-8e50-2020dc29b55e",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C26",
+      "claim": "A sharp increase in expression of the cellulosomal machinery occurs upon exposure to new environment, which is substantially reduced at early stages of growth and then maintained at basal levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed similar dynamics to that of the single-cell phenotypic analysis observed by cryo-EM: that is, a sharp increase in expression of the cellulosomal machinery upon exposure to the new environment, which was substantially reduced at the early stages of growth and then maintained at basal levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "RNA and protein expression measurements over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "d81a9ae8-609b-4894-8501-ee05a29ff51c",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C27",
+      "claim": "The increase in cellulosome expression is corroborated at the RNA levels of Cel48S and CipA.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in cellulosome expression was corroborated at the RNA levels of the two major cellulosomal components, Cel48S and CipA (Figure 3C), thus corroborating previous reports (Dror et al., 2003a; Dror et al., 2003b; Ortiz de Ora et al., 2018; Ortiz de Ora et al., 2017), and at the protein level where we quantified the expression levels of CipA, using a specific antibody against its CBM3a component (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA quantification data supported by previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "86f535d6-e80c-4564-a674-88946c3a7a0b",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C28",
+      "claim": "Addition of cellobiose at the onset of cellulosomal expression resulted in a negative effect on Cel48S expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of cellobiose resulted in a negative effect on Cel48S expression, the main cellulosome component (Figure 3D), thereby suggesting that the availability of soluble sugars as products from the cellulose-degradation process is one of the cardinal ways for controlling the expression of cellulosomal components (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental manipulation showing effect of cellobiose on gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "08fd762a-73a8-48c5-a75e-ce9d92f4538d",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C29",
+      "claim": "The availability of soluble sugars as products from cellulose degradation is one of the cardinal ways for controlling the expression of cellulosomal components.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of cellobiose resulted in a negative effect on Cel48S expression, the main cellulosome component (Figure 3D), thereby suggesting that the availability of soluble sugars as products from the cellulose-degradation process is one of the cardinal ways for controlling the expression of cellulosomal components (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data showing sugar effect on expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "f6bb6532-8f85-4e1c-a36b-df412765b9f5",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C30",
+      "claim": "The basal RNA levels of cellulosomal components at time 54 hr are 20% of the highest expression levels at time 15 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is interesting to note that the basal expression level of the cellulosome machinery at time 54 hr is 20% of its highest expression levels at time 15 hr (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative comparison of RNA expression levels at different time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "c95a49fe-9674-48c8-9b9b-94223a51582f",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C31",
+      "claim": "The basal expression level corresponds to the proportion of the high-density subpopulation in the overall population (20%) at times 0 and 54 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to the proportion of the high-density subpopulation in the overall population (20%) at times 0 and 54 hr (Figure 3A), thus suggesting that the basal RNA levels stem from the expression of the cellulosome machinery in the high-density cell subpopulations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation between expression levels and phenotype proportions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "1abc3a27-4266-4a7a-8ce1-3e25e0afc6d2",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C32",
+      "claim": "The distribution of cellulosome density on cell walls exhibited an all-or-none phenotype without observable distribution of intermediate phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of cellulosome density on the cell walls exhibited an all-or-none phenotype, where cells were either highly decorated with cellulosomes or almost devoid of cell-surface cellulosomes, without observable distribution of intermediate phenotypes (Figure 3\u2014figure supplement 1A, B), thus suggesting that cellulosome shedding occurs in an abrupt manner, similar to protein secretion, and not a gradual process during growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from cryo-EM analysis with interpretation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "ebf3f48f-f978-41e7-8d7f-0c95b8ae50bf",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C33",
+      "claim": "Cellulosome shedding occurs in an abrupt manner, similar to protein secretion, and not a gradual process during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of cellulosome density on the cell walls exhibited an all-or-none phenotype, where cells were either highly decorated with cellulosomes or almost devoid of cell-surface cellulosomes, without observable distribution of intermediate phenotypes (Figure 3\u2014figure supplement 1A, B), thus suggesting that cellulosome shedding occurs in an abrupt manner, similar to protein secretion, and not a gradual process during growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from the observed all-or-none phenotype distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "c978c65b-daca-4f71-abeb-a7e5f0557663",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C34",
+      "claim": "A division-of-labor strategy takes place in the C. thermocellum population where the high-density subpopulation expresses costly cellulosome machinery while the low-density subpopulation invests in propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking our overall findings into account, it is tempting to speculate that a division-of-labor strategy takes place in the C. thermocellum population. In this scenario, the high-density subpopulation expresses the cellulosome machinery comprising enormous amounts of proteins and consequent metabolic costs, thus limiting the resources that this subpopulation can invest in growth, while at the same time the low-density subpopulation does not pay these costs and can invest them in propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the observed phenotypic heterogeneity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "14149ab3-8459-4c5d-a12a-f3b0be83ce8c",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C35",
+      "claim": "The findings are consistent with a bet-hedging strategy in the C. thermocellum population mediated by phenotypic heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our findings are consistent with a bet-hedging strategy in the C. thermocellum population, mediated by phenotypic heterogeneity, whereby the presence of diverse phenotypes adapted to different environments would spread the risk of varying environmental conditions (Villa Mart\u00edn et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings in the context of ecological theory with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "a913327f-fa96-4557-b620-80f48f91cefd",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C36",
+      "claim": "Plants represent the largest reservoir of biomass on the planet.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants represent the largest reservoir of biomass on the planet (Bar-On et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "34bc6060-16bc-441c-98eb-2dc91cb27035",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C37",
+      "claim": "Plant cell-wall degradation is essential for carbon recycling, environmental homeostasis, and of major significance to waste management and mammalian gut ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, plant cell-wall degradation is essential for carbon recycling, environmental homeostasis, and of major significance to waste management and mammalian gut ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established scientific knowledge about ecological processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "ce13a1b7-f4b8-40ba-9fbf-4be3c8008358",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C38",
+      "claim": "Bacteria are central players in plant cell-wall degradation as some are capable of deconstructing cellulosic fibers into simple sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria are central players in this process, as some are capable of deconstructing cellulosic fibers into simple sugars that fuel microbial growth and fermentation cascades essential for nutrient cycling as well as their use in industrial processes (Himmel and Bayer, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation about bacterial cellulose degradation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "8d1a017c-05c2-4a2a-94dc-14a9d53250a4",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C39",
+      "claim": "Several anaerobic bacteria have evolved energy-effective strategies to solve the challenge of fiber breakdown through the biosynthesis of multienzymatic complexes called cellulosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Several anaerobic bacteria have evolved energy-effective strategies to solve the challenge of fiber breakdown through the biosynthesis of multienzymatic complexes called cellulosomes (Artzi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation about cellulosome evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "b2014653-d253-400c-86a1-648e099ae191",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C40",
+      "claim": "Cellulosomes are massive multimodular protein machineries composed of numerous enzymes attached via complementary cohesin-dockerin interactions to scaffoldins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellulosomes are massive multimodular protein machineries, composed of numerous enzymes attached via complementary cohesin\u2013dockerin interactions to enzyme-integrating subunits called 'scaffoldins' (Bayer et al., 2004; Fontes and Gilbert, 2010; Lamed et al., 1983b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations about cellulosome structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "54baf560-9a14-4680-90f5-6cb4158bd6ac",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C41",
+      "claim": "Genomes of different cellulosome-producing bacterial species can encode up to 200 different types of dockerin-bearing proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes of the different cellulosome-producing bacterial species can encode up to 200 different types of dockerin-bearing proteins (notably enzymes) which bind tenaciously to the cohesins of the scaffoldin subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about genomic content of cellulosome-producing bacteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "50b312c4-9841-4eed-96d1-5235a9e06773",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C42",
+      "claim": "The resultant multiprotein complexes, heterogeneous in their enzyme content, are highly efficient in deconstructing plant cell-wall polysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "The resultant multiprotein complexes, heterogeneous in their enzyme content, are highly efficient in deconstructing plant cell-wall polysaccharides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about cellulosome function based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "fb7f26c0-5f4f-4b31-8c95-ee757b6e32c7",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C43",
+      "claim": "How cellulosomes are structured and organized on the bacterial cell wall in situ remains largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Although extensive research has been dedicated to investigate cellulosome activity and its composition in various cellulosome-producing bacteria (Artzi et al., 2017), how cellulosomes are structured and organized on the bacterial cell wall in situ remains largely unknown (Bayer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about knowledge gap supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "3a668d10-38d6-47aa-85c5-7532682c93b4",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C44",
+      "claim": "Conventional methods have identified structural features of individual cellulosomal modules and crucial interface residues responsible for cohesin-dockerin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional methods have identified structural features of individual cellulosomal modules, as well as crucial interface residues that are responsible for the specific tenacious intermodular cohesin\u2013dockerin binding between these definitive cellulosomal modules (Adams et al., 2006; Carvalho et al., 2007; Carvalho et al., 2003; Nash et al., 2016; Noach et al., 2010; Noach et al., 2009; Salama-Alber et al., 2013; Wojciechowski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of previous structural studies supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "9bb03fa5-f777-4924-8924-6394dfc7cb5d",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C45",
+      "claim": "Larger cellulosome fragments have been structurally studied by crystallography, small-angle X-ray scattering, computational modeling, and negative-staining transmission electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, larger cellulosome fragments have been structurally studied by complementary approaches, that is, crystallography, small-angle X-ray scattering, computational modeling, and negative-staining transmission electron microscopy (Bomble et al., 2011; Bule et al., 2018; Garc\u00eda-Alvarez et al., 2011; Hammel et al., 2005; Mayer et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of previous structural studies supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "58a124d0-6604-4c4a-b2af-65ec7cb1bff3",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C46",
+      "claim": "Pioneering studies in the 1980s using electron microscopic imaging provided a two-dimensional glimpse into the massive size and organization of the cellulolytic machinery on the bacterial cell surface of C. thermocellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering studies published in the 1980s, using electron microscopic imaging, have provided a two-dimensional glimpse into the massive size and organization of the cellulolytic machinery on the bacterial cell surface of C. thermocellum (Artzi et al., 2017; Bayer and Lamed, 1986; Lamed et al., 1983b; Madkour and Mayer, 2003; Mayer et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of historical studies supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "2391beb2-a448-4675-9e07-fd77c14a24a0",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C47",
+      "claim": "Previous electron microscopy studies employed dehydration and chemical fixation procedures which restrict the structural information and characterization of bacterial cell-wall systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these studies employed dehydration and chemical fixation procedures, which thus restrict the structural information and characterization of these bacterial cell-wall systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Critique of previous methodologies based on their limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "49c624a9-e7e9-46de-8e14-26944e75ed85",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C48",
+      "claim": "Structural and ecological insights into the in situ fiber-degrading process at the molecular scale while complexes are in their active state remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, structural and ecological insights into the in situ fiber-degrading process at the molecular scale, while these complexes are in their active state, remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about knowledge gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "183ddb2b-b658-4be1-a956-df5aabe3b4ab",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C49",
+      "claim": "The cryo-EM structure of Cel48S confirmed a previously published X-ray structure of this enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data confirmed a previously published X-ray structure of this enzyme (Liu et al., 2018) and added new information regarding the amino acids that link the enzyme to its dockerin and on the interaction of this enzyme with cellulose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of new cryo-EM structure with previously published X-ray structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "c9e480f0-eeb9-4b4e-8729-5f114ff92dbc",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C50",
+      "claim": "The cryo-EM structure of Cel48S added new information regarding the amino acids that link the enzyme to its dockerin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data confirmed a previously published X-ray structure of this enzyme (Liu et al., 2018) and added new information regarding the amino acids that link the enzyme to its dockerin and on the interaction of this enzyme with cellulose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "New structural information obtained from cryo-EM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "710ad678-1646-4d62-b897-dc0d1487313f",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C51",
+      "claim": "Conformational adaptability of the cellulosome on the cellulose surface was recently observed by atomic force microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Such conformational adaptability of the cellulosome on the cellulose surface was also recently observed by atomic force microscopy (Eibinger et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supporting evidence from another study using different methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "7ffada55-9120-422a-86cc-cd89eb51d0ad",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C52",
+      "claim": "The detachment of the cellulosomal machinery from the cell surface during culture growth has been reported since its initial discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "The detachment of the cellulosomal machinery from the cell surface during culture growth has been reported since its initial discovery (Bayer et al., 1985; Lamed et al., 1983a; Lamed et al., 1983b), thus raising questions concerning the extent of this phenomenon and its single-cell distribution across the microbial population, as well as its ecological relevance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical observation supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "2732083e-822e-4be5-a978-ba958fae1b8f",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C53",
+      "claim": "Phenotypic heterogeneity is considered an important ecological strategy for microorganisms to cope with environmental fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic heterogeneity is considered to be an important ecological strategy for microorganisms to cope with environmental fluctuations and could be mediated by gene expression, where the proportion of cells that express the related phenotype changes as a function of environmental cues (L\u00f3pez-Maury et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ecological theory supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "dfb52964-bdf5-45ff-bc92-9e6fdbcf5084",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C54",
+      "claim": "The total cellulolytic activity presents a sharp increase during early growth followed by a sharp decrease in later growth stages.",
+      "claim_type": "EXPLICIT",
+      "source": "The total cellulolytic activity presents the same pattern, which comprises a sharp increase in activity during early growth, followed by a sharp decrease in later growth stages (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Enzymatic activity measurements over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "fa566fc5-54ac-454e-922f-059a702614f0",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C55",
+      "claim": "Cellulose degradation is instrumental to the global carbon cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Degradation of cellulose, the most abundant organic polymer on Earth, is instrumental to the global carbon cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the ecological importance of cellulose degradation based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "7ab3d200-76d2-4aaa-b038-662a4e6a3fef",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C56",
+      "claim": "Bacterial cells form 'cellulosome capsules' driven by catalytic product-dependent dynamics which can increase the rate of hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal that bacterial cells form 'cellulosome capsules' driven by catalytic product-dependent dynamics, which can increase the rate of hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of findings from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "088881e6-daf4-4b92-8f66-090a1e1a5dfa",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C57",
+      "claim": "Biosynthesis of cellulosomal machinery and cell growth are decoupled at the single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Biosynthesis of this energetically costly machinery and cell growth are decoupled at the single-cell level, hinting at a division-of-labor strategy through phenotypic heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of findings from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "afa164d1-9be0-4b7d-aba8-7726ae1e5eeb",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C58",
+      "claim": "Intrapopulation interactions are key to understanding rates of fiber degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "This novel observation highlights intrapopulation interactions as key to understanding rates of fiber degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretive conclusion from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "ee24cc57-f63e-4eb0-8831-f7077a1f091e",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C59",
+      "claim": "The obtained Cel48S model was compared to the pdb of the Cel48S exoglucanase (5yj6) by fit-in-map option in Chimera, resulting in a correlation score of 0.87.",
+      "claim_type": "EXPLICIT",
+      "source": "The obtained final model was compared to the pdb of the Cel48S exoglucanase (5yj6, Liu et al., 2018) by the fit-in-map option in Chimera, resulting in a correlation score of 0.87.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of structural models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "8d29c13b-f6f0-454a-9e2b-a6146bc21a46",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C60",
+      "claim": "The RMSD between amino acids 1 and 663 of the two Cel48S models was 5.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The RMSD between 1 and 663 amino acids of two models were in 5.7 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative structural comparison metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "3b60cd9b-480d-463f-9445-b415b6bc3f14",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C61",
+      "claim": "At the resolution of individual tomograms, Cel48S cannot be distinguished from other large globular enzymes of the cellulosome.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that at the resolution of individual tomograms, we cannot distinguish the Cel48S from the other large globular enzymes of the cellulosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the limitations of the imaging resolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "c58fcc50-1771-4dc9-ab11-7303c4d96f8e",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C62",
+      "claim": "The depicted densities in rendered views can be attributed to Cel48S enzyme as well as to additional cellulosome-containing enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is plausible that the depicted densities in our rendered view can be attributed the Cel48S enzyme as well as to additional cellulosome containing enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation acknowledging limitations in enzyme identification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "c8e03c62-63dc-427f-b42d-68fb289dd84a",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C63",
+      "claim": "The contrast of globular cellulolytic enzymes is relatively high in comparison to the flexible rod-like appearance of scaffoldins.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the contrast of the globular cellulolytic enzymes is relatively high in comparison to the flexible rod-like appearance of scaffoldins, we could not reliably follow the densities of scaffoldins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation about imaging contrast differences between structural components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "47acca9c-06fc-43f1-af51-b871db14a62d",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C64",
+      "claim": "Densities of scaffoldins could not be reliably followed in the tomograms.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the contrast of the globular cellulolytic enzymes is relatively high in comparison to the flexible rod-like appearance of scaffoldins, we could not reliably follow the densities of scaffoldins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations in tracking specific structural components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "0fc5c275-3838-4bc0-8b65-0c724a9b70f1",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C65",
+      "claim": "The high-density subpopulation serves as a cellulosomal reservoir for future sugar-limiting conditions.",
+      "claim_type": "IMPLICIT",
+      "source": "Similarly, in our case, although the soluble sugar levels are not limiting at stationary phase (Figure 3B), the high-density cell subpopulation, albeit at lower ratios, still expresses the costly cellulosomal machinery and would therefore provide the first line of defense for a future nutrient-poor and hostile environment containing only cellulose polymers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference about the ecological function of the high-density phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "33166677-c167-4cf1-87a3-c0bf37e3daa4",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "claim_id": "C66",
+      "claim": "The high-density phenotype provides the first line of defense for a future nutrient-poor environment containing only cellulose polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in our case, although the soluble sugar levels are not limiting at stationary phase (Figure 3B), the high-density cell subpopulation, albeit at lower ratios, still expresses the costly cellulosomal machinery and would therefore provide the first line of defense for a future nutrient-poor and hostile environment containing only cellulose polymers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Interpretation of the ecological role of phenotypic heterogeneity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c63dba58-6e9d-4469-ac01-bd296d9cb088",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. thermocellum cells are surrounded by a dense extracellular layer composed of cellulosome complexes, as confirmed by cryo-EM imaging, immunofluorescence, immunogold labeling, and analysis of mutant strains lacking cellulosomal scaffoldins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide converging evidence from multiple complementary techniques (cryo-EM, immunofluorescence, immunogold labeling, and genetic knockouts) that consistently demonstrate the presence and identity of the extracellular cellulosome layer. The mutant strain controls (C5) are particularly strong, showing complete absence of the layer when scaffoldins are deleted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "cd5418c4-e2ce-442b-a5de-fb6bd74b8141",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The cellulosome layer is positioned at a characteristic distance of 64 \u00b1 17 nm from the bacterial S-layer, with the cellulosome-rich layer itself measuring 65 \u00b1 16 nm in thickness. Density connecting the bacterium to the cellulosome layer suggests anchorage structures reminiscent of previously described 'contact corridors'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 provide quantitative measurements with standard deviations from cryo-tomography data. C8 appropriately qualifies the interpretation as 'presumably' regarding anchorage. C9 connects findings to prior literature. The measurements appear robust, though sample size (n=16 tomograms per Figure 2\u2014figure supplement 3) could be larger for more precise estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "71ac34cb-0254-4161-98b4-90377ae53a96",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cellulosomes envelop cellulosic fibers with enzymes positioned in close proximity to and between cellulose chains. The cellulose structure undergoes major organizational changes from well-ordered crystalline to deconstructed packaging during cellulosome interaction. In vitro minicellulosome-MCC complexes show architecture resembling in situ observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C15-C17 provide direct cryo-ET observations of cellulosome-cellulose interactions. C16 validates in situ findings with in vitro reconstitution experiments. However, C11 and C15 include interpretive language ('presumably', 'appeared to') that acknowledges limitations in resolution. The template-matching approach (C15) has inherent limitations acknowledged in C61-C62, but the overall convergence of evidence supports the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "c6e7f21e-8f9e-4e09-a906-4a87fb8e7528",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The structure of Cel48S, the most expressed C. thermocellum dockerin-containing enzyme crucial for MCC digestion, was determined at 3.4 \u00c5 resolution by cryo-EM. This structure confirms a previously published X-ray structure (RMSD 5.7 \u00c5, correlation 0.87) and adds new information about the linker region connecting the enzyme to its dockerin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C49-C50, C59-C60 provide structural data with appropriate resolution metrics and validation against prior work. The RMSD of 5.7 \u00c5 over 663 residues and correlation of 0.87 indicate reasonable agreement with the X-ray structure. Claims C13-C14 are supported by multiple citations. The new linker information (C50) represents a genuine contribution beyond prior structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "fbf79f64-5c96-4f44-bedb-365d40c2f67d",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two distinct phenotypes of cellulosome organization exist on bacterial cells (high-density and low-density), with a 1:5 ratio in stationary phase. Upon exposure to fresh cellulose-containing medium, the high-density phenotype ratio sharply increases then gradually decreases back to 1:5. The distribution exhibits an all-or-none phenotype without intermediate states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 provide quantitative phenotype analysis across 1160 cells at five time points (average n=232 per time point), which is a reasonable sample size. C32 describes the bimodal distribution. The temporal dynamics are clearly documented in Figure 3A. However, the manual counting method and subjective classification into high/low density could introduce observer bias, though the clear bimodal distribution suggests this is robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "139ee3fa-483e-49f8-96d5-2dc613ed2e0e",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The availability of soluble sugars from cellulose degradation is tightly connected to the ratio between high-density and low-density subpopulations. Low sugar availability correlates with increased high-density subpopulation, while high sugar availability correlates with increased low-density subpopulation. At late growth stages, sugar concentration remains stable when high-density cells comprise 20% of the population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 establish correlations between sugar availability and phenotype ratios across growth phases. The data show temporal correspondence between these variables. However, correlation does not establish causation\u2014the relationship could be bidirectional or mediated by other factors. The stability observation in C25 is interesting but the mechanistic interpretation requires caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "22ee2ff1-db6c-42b3-a21c-bcf4067d6d6e",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Expression of cellulosomal machinery (Cel48S and CipA at RNA and protein levels, plus total cellulolytic activity) shows a sharp increase upon exposure to cellulose, followed by substantial reduction and maintenance at basal levels. Addition of cellobiose negatively affects Cel48S expression. The basal expression level (20% of peak) corresponds to the proportion of high-density cells in the population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27, C30-C31, C54 provide expression dynamics data corroborated by prior literature. C28 provides experimental manipulation evidence for sugar control. The correspondence between basal expression (20%) and high-density phenotype proportion (20%) in C31 is compelling but represents a correlation requiring careful interpretation. Error bars indicate three biological replicates, which is adequate but minimal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "b0cb7827-ca79-4893-a8ae-75183ff1fc11",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that cellulosome shedding occurs abruptly, and that the observed phenotypic heterogeneity represents a division-of-labor and bet-hedging strategy where high-density cells express costly cellulosome machinery while low-density cells invest in propagation, with the high-density subpopulation serving as a reservoir for future sugar-limiting conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C35, C57-C58, C65-C66 present interpretive frameworks for the observed heterogeneity. While the data on phenotypic heterogeneity and its dynamics are solid, the mechanistic interpretations involve speculation (explicitly noted in C34 as 'tempting to speculate'). The division-of-labor and bet-hedging hypotheses are plausible but not directly tested\u2014no fitness measurements, growth rate comparisons between phenotypes, or demonstration that high-density cells actually limit growth are provided. These remain interesting hypotheses requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "4471750f-4b78-411e-ae48-8baca7aadeb8",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "At the resolution of individual tomograms, Cel48S cannot be distinguished from other large globular cellulosomal enzymes, and scaffoldin densities could not be reliably tracked due to lower contrast compared to globular enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 appropriately acknowledge technical limitations of the imaging approach. This transparency is important for interpreting the template-matching results (C15) and rendered views. The authors correctly note that depicted enzyme densities could represent Cel48S or other cellulosomal enzymes, which is an important caveat for claims about enzyme positioning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "ded5bc63-e233-4ff0-acef-4957ec33a615",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing the importance of cellulose degradation, the nature of cellulosomes, prior structural work on cellulosomal components, limitations of previous methods, and relevant ecological concepts like phenotypic heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C48, C51-C53, C55 provide context and background supported by appropriate citations. These establish the significance of the work and knowledge gaps being addressed. C47 correctly identifies limitations of prior chemical fixation methods that the current cryo-EM approach overcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    },
+    {
+      "id": "a2cef1c0-7264-4bee-86a1-3e2cd051c9a9",
+      "content_id": "d48c4c23-97e8-4893-b950-e4cdfb012e83",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Bacterial cells form 'cellulosome capsules' driven by catalytic product-dependent dynamics which can increase the rate of hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is a summary statement that introduces the term 'cellulosome capsules' and asserts that product-dependent dynamics 'can increase the rate of hydrolysis.' While the structural organization and product-dependent dynamics are demonstrated, the claim that this organization increases hydrolysis rates is not directly tested\u2014no comparative hydrolysis rate measurements between high- and low-density phenotypes or before/after capsule formation are provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:11.574871Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3f397623-5135-41e4-9bb9-05880d1056f5",
+      "result_id": "c63dba58-6e9d-4469-ac01-bd296d9cb088"
+    },
+    {
+      "claim_id": "a9d0765f-49a8-47c3-8030-21ea9f800610",
+      "result_id": "c63dba58-6e9d-4469-ac01-bd296d9cb088"
+    },
+    {
+      "claim_id": "77469d7d-b70b-44a7-bbda-95d2286c9b21",
+      "result_id": "c63dba58-6e9d-4469-ac01-bd296d9cb088"
+    },
+    {
+      "claim_id": "b488dd79-5122-4d70-b035-384ab5456459",
+      "result_id": "c63dba58-6e9d-4469-ac01-bd296d9cb088"
+    },
+    {
+      "claim_id": "5b1a7d0c-b593-4a98-ba7f-95cf30fd21bb",
+      "result_id": "c63dba58-6e9d-4469-ac01-bd296d9cb088"
+    },
+    {
+      "claim_id": "83aed24b-44e5-46f7-a078-7d914a167f21",
+      "result_id": "cd5418c4-e2ce-442b-a5de-fb6bd74b8141"
+    },
+    {
+      "claim_id": "81d3e2cf-4ca7-4901-9dc3-415a5f0b9f24",
+      "result_id": "cd5418c4-e2ce-442b-a5de-fb6bd74b8141"
+    },
+    {
+      "claim_id": "cb0a25b3-c89a-401d-a85b-bea3eb49e12b",
+      "result_id": "cd5418c4-e2ce-442b-a5de-fb6bd74b8141"
+    },
+    {
+      "claim_id": "50f07e68-21c5-46a8-bf26-3f7203ef69f4",
+      "result_id": "cd5418c4-e2ce-442b-a5de-fb6bd74b8141"
+    },
+    {
+      "claim_id": "49e6a7a4-3dd2-4188-9cad-4f3f962f7fa9",
+      "result_id": "71ac34cb-0254-4161-98b4-90377ae53a96"
+    },
+    {
+      "claim_id": "e05b27e9-53b8-427f-b65e-a13392d0a653",
+      "result_id": "71ac34cb-0254-4161-98b4-90377ae53a96"
+    },
+    {
+      "claim_id": "9e38e3f6-29c2-4fa6-9a4e-4fcc1f09415d",
+      "result_id": "71ac34cb-0254-4161-98b4-90377ae53a96"
+    },
+    {
+      "claim_id": "a25d40ba-1c78-4902-ad90-ccf7bcd42514",
+      "result_id": "71ac34cb-0254-4161-98b4-90377ae53a96"
+    },
+    {
+      "claim_id": "ef8f67bd-28ed-40b3-81bc-eafb5a960774",
+      "result_id": "71ac34cb-0254-4161-98b4-90377ae53a96"
+    },
+    {
+      "claim_id": "a0c68da5-28f8-407f-b576-762dabb6ba74",
+      "result_id": "c6e7f21e-8f9e-4e09-a906-4a87fb8e7528"
+    },
+    {
+      "claim_id": "59189ce4-1d21-419a-b3e4-078ea6f60044",
+      "result_id": "c6e7f21e-8f9e-4e09-a906-4a87fb8e7528"
+    },
+    {
+      "claim_id": "56eed78f-cd0d-4059-bb51-efc531762692",
+      "result_id": "c6e7f21e-8f9e-4e09-a906-4a87fb8e7528"
+    },
+    {
+      "claim_id": "183ddb2b-b658-4be1-a956-df5aabe3b4ab",
+      "result_id": "c6e7f21e-8f9e-4e09-a906-4a87fb8e7528"
+    },
+    {
+      "claim_id": "c9e480f0-eeb9-4b4e-8729-5f114ff92dbc",
+      "result_id": "c6e7f21e-8f9e-4e09-a906-4a87fb8e7528"
+    },
+    {
+      "claim_id": "ee24cc57-f63e-4eb0-8831-f7077a1f091e",
+      "result_id": "c6e7f21e-8f9e-4e09-a906-4a87fb8e7528"
+    },
+    {
+      "claim_id": "8d29c13b-f6f0-454a-9e2b-a6146bc21a46",
+      "result_id": "c6e7f21e-8f9e-4e09-a906-4a87fb8e7528"
+    },
+    {
+      "claim_id": "bb11d3a1-141a-4b13-96e9-84a99ab9b14e",
+      "result_id": "fbf79f64-5c96-4f44-bedb-365d40c2f67d"
+    },
+    {
+      "claim_id": "c05c24ef-0b4e-4c73-9e16-979ee303b1bf",
+      "result_id": "fbf79f64-5c96-4f44-bedb-365d40c2f67d"
+    },
+    {
+      "claim_id": "70168465-78ce-4799-b4d0-5f036677fafa",
+      "result_id": "fbf79f64-5c96-4f44-bedb-365d40c2f67d"
+    },
+    {
+      "claim_id": "6e37d4b6-ad91-494f-a74d-34eed55aab4d",
+      "result_id": "fbf79f64-5c96-4f44-bedb-365d40c2f67d"
+    },
+    {
+      "claim_id": "1abc3a27-4266-4a7a-8ce1-3e25e0afc6d2",
+      "result_id": "fbf79f64-5c96-4f44-bedb-365d40c2f67d"
+    },
+    {
+      "claim_id": "fd5f4ebe-cac9-41c9-a086-cd60ae143703",
+      "result_id": "139ee3fa-483e-49f8-96d5-2dc613ed2e0e"
+    },
+    {
+      "claim_id": "406006cf-0ce6-4ee7-9f54-f90628ddcb99",
+      "result_id": "139ee3fa-483e-49f8-96d5-2dc613ed2e0e"
+    },
+    {
+      "claim_id": "a12bc3c1-cc12-436a-bdb2-7799fcf2f3c4",
+      "result_id": "139ee3fa-483e-49f8-96d5-2dc613ed2e0e"
+    },
+    {
+      "claim_id": "920443d5-a022-4dd5-b660-8db1544a6804",
+      "result_id": "139ee3fa-483e-49f8-96d5-2dc613ed2e0e"
+    },
+    {
+      "claim_id": "86ea44d5-8c2a-4ef7-8e50-2020dc29b55e",
+      "result_id": "22ee2ff1-db6c-42b3-a21c-bcf4067d6d6e"
+    },
+    {
+      "claim_id": "d81a9ae8-609b-4894-8501-ee05a29ff51c",
+      "result_id": "22ee2ff1-db6c-42b3-a21c-bcf4067d6d6e"
+    },
+    {
+      "claim_id": "86f535d6-e80c-4564-a674-88946c3a7a0b",
+      "result_id": "22ee2ff1-db6c-42b3-a21c-bcf4067d6d6e"
+    },
+    {
+      "claim_id": "08fd762a-73a8-48c5-a75e-ce9d92f4538d",
+      "result_id": "22ee2ff1-db6c-42b3-a21c-bcf4067d6d6e"
+    },
+    {
+      "claim_id": "f6bb6532-8f85-4e1c-a36b-df412765b9f5",
+      "result_id": "22ee2ff1-db6c-42b3-a21c-bcf4067d6d6e"
+    },
+    {
+      "claim_id": "c95a49fe-9674-48c8-9b9b-94223a51582f",
+      "result_id": "22ee2ff1-db6c-42b3-a21c-bcf4067d6d6e"
+    },
+    {
+      "claim_id": "dfb52964-bdf5-45ff-bc92-9e6fdbcf5084",
+      "result_id": "22ee2ff1-db6c-42b3-a21c-bcf4067d6d6e"
+    },
+    {
+      "claim_id": "ebf3f48f-f978-41e7-8d7f-0c95b8ae50bf",
+      "result_id": "b0cb7827-ca79-4893-a8ae-75183ff1fc11"
+    },
+    {
+      "claim_id": "c978c65b-daca-4f71-abeb-a7e5f0557663",
+      "result_id": "b0cb7827-ca79-4893-a8ae-75183ff1fc11"
+    },
+    {
+      "claim_id": "14149ab3-8459-4c5d-a12a-f3b0be83ce8c",
+      "result_id": "b0cb7827-ca79-4893-a8ae-75183ff1fc11"
+    },
+    {
+      "claim_id": "088881e6-daf4-4b92-8f66-090a1e1a5dfa",
+      "result_id": "b0cb7827-ca79-4893-a8ae-75183ff1fc11"
+    },
+    {
+      "claim_id": "afa164d1-9be0-4b7d-aba8-7726ae1e5eeb",
+      "result_id": "b0cb7827-ca79-4893-a8ae-75183ff1fc11"
+    },
+    {
+      "claim_id": "0fc5c275-3838-4bc0-8b65-0c724a9b70f1",
+      "result_id": "b0cb7827-ca79-4893-a8ae-75183ff1fc11"
+    },
+    {
+      "claim_id": "33166677-c167-4cf1-87a3-c0bf37e3daa4",
+      "result_id": "b0cb7827-ca79-4893-a8ae-75183ff1fc11"
+    },
+    {
+      "claim_id": "3b60cd9b-480d-463f-9445-b415b6bc3f14",
+      "result_id": "4471750f-4b78-411e-ae48-8baca7aadeb8"
+    },
+    {
+      "claim_id": "c58fcc50-1771-4dc9-ab11-7303c4d96f8e",
+      "result_id": "4471750f-4b78-411e-ae48-8baca7aadeb8"
+    },
+    {
+      "claim_id": "c8e03c62-63dc-427f-b42d-68fb289dd84a",
+      "result_id": "4471750f-4b78-411e-ae48-8baca7aadeb8"
+    },
+    {
+      "claim_id": "47acca9c-06fc-43f1-af51-b871db14a62d",
+      "result_id": "4471750f-4b78-411e-ae48-8baca7aadeb8"
+    },
+    {
+      "claim_id": "a913327f-fa96-4557-b620-80f48f91cefd",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "34bc6060-16bc-441c-98eb-2dc91cb27035",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "ce13a1b7-f4b8-40ba-9fbf-4be3c8008358",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "8d1a017c-05c2-4a2a-94dc-14a9d53250a4",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "b2014653-d253-400c-86a1-648e099ae191",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "54baf560-9a14-4680-90f5-6cb4158bd6ac",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "50b312c4-9841-4eed-96d1-5235a9e06773",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "fb7f26c0-5f4f-4b31-8c95-ee757b6e32c7",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "3a668d10-38d6-47aa-85c5-7532682c93b4",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "9bb03fa5-f777-4924-8924-6394dfc7cb5d",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "58a124d0-6604-4c4a-b2af-65ec7cb1bff3",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "2391beb2-a448-4675-9e07-fd77c14a24a0",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "49c624a9-e7e9-46de-8e14-26944e75ed85",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "710ad678-1646-4d62-b897-dc0d1487313f",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "7ffada55-9120-422a-86cc-cd89eb51d0ad",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "2732083e-822e-4be5-a978-ba958fae1b8f",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "fa566fc5-54ac-454e-922f-059a702614f0",
+      "result_id": "ded5bc63-e233-4ff0-acef-4957ec33a615"
+    },
+    {
+      "claim_id": "7ab3d200-76d2-4aaa-b038-662a4e6a3fef",
+      "result_id": "a2cef1c0-7264-4bee-86a1-3e2cd051c9a9"
+    }
+  ],
+  "comparisons": []
+}

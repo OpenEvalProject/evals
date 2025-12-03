@@ -1,0 +1,437 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "iGluSnFR expression in primary hippocampal neurons does not disrupt synaptic organization, as evidenced by no significant change in excitatory synapse density compared to control neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by experimental data (Figure 1\u2014figure supplement 1A, B) comparing synapse density across iGluSnFR-transfected, GFP-transfected, and MAP2-stained control neurons. The methodology is appropriate and the conclusion that iGluSnFR does not disrupt synaptic organization is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Super-resolution microscopy reveals that iGluSnFR has greater density at synaptic regions with increased clustering near the center of synapses, suggesting a general trapping mechanism at dendritic spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are supported by STORM imaging data (Figures 1B-D, Figure 1\u2014figure supplement 2A, B) using DBSCAN clustering analysis and pair correlation analysis with PSD95 colocalization. The inference of a trapping mechanism (C6) is reasonable given the observed clustering pattern, though the specific molecular mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "iGluSnFR reports low and highly variable release probability at individual hippocampal synapses, consistent with single-synapse measurements reported in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are well-supported. C7 is backed by multiple literature citations, C8 is supported by experimental data (Figure 2E-G), and C9 is a reasonable inference from the observed low and variable Pr values. The consistency with established literature strengthens the conclusion that each ROI contains a single synapse.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Release probability and event amplitudes detected by iGluSnFR increase with extracellular Ca2+ concentration, with complete abrogation of release in 0 mM Ca2+ and high Pr values (0.86 \u00b1 0.23) in 8 mM Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are strongly supported by experimental data (Figure 2E-I) and literature citations. C15 is appropriately speculative about mechanisms (multivesicular release vs. spillover), acknowledging uncertainty while citing relevant literature. The Ca2+ dependence validation is critical for establishing iGluSnFR as a reliable reporter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "iGluSnFR detects spontaneous glutamate release events with high signal-to-noise ratio at frequencies comparable to literature values (~0.01-0.02 Hz), with event amplitudes similar to evoked events, supporting single vesicle detection at single synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are well-supported by experimental data (Figure 3A-D) and literature comparisons. The comparable amplitudes between spontaneous and evoked events (C20) strongly support the conclusion of single vesicle detection (C21). The frequency measurements align with established literature values, strengthening the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Spontaneous neurotransmission rate and evoked release probability do not correlate within individual synapses, reinforcing partial segregation of evoked and spontaneous neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by experimental data (Figure 3E) and consistent with prior studies. The lack of correlation is a key finding supporting functional segregation. However, the term 'partial segregation' could benefit from more precise definition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Inhibition of ionotropic glutamate receptors with CNQX and APV is sufficient to suppress action potential-driven release, allowing spontaneous neurotransmission to be studied without TTX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by experimental data (Figure 3F) and literature citation (C26). This methodological validation is important for the study design, though the mechanism by which CNQX/APV suppress action potential-driven release could be more explicitly explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Spontaneous release propensity decreases but is not completely abolished in 0 mM Ca2+, with unchanged event amplitudes, consistent with spontaneous release being less sensitive to Ca2+ reduction than evoked release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by experimental data (Figure 3H, I) and literature citations. The differential Ca2+ sensitivity between spontaneous and evoked release is an important validation of the segregation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Hypertonic sucrose (+100 mOsm) increases spontaneous event frequency detected by iGluSnFR while maintaining constant event amplitude, consistent with Ca2+-independent vesicle fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are well-supported by literature citations (C31-C33) and experimental data (C34, Figure 3J, K). The unchanged amplitude with increased frequency is consistent with single vesicle release and validates the detection method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "iGluSnFR is validated as a reliable tool for measuring quantal neurotransmitter release at single synapses for both evoked and spontaneous neurotransmission, with detection modulated by established parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are well-supported conclusions drawn from the comprehensive validation experiments (C1-C34). The multiple lines of evidence (Ca2+ dependence, sucrose response, frequency/amplitude measurements) collectively support the reliability of iGluSnFR for single-synapse measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "iGluSnFR is a highly mobile probe in neurons with recovery time constants of ~9-10 seconds and an immobile fraction of ~23-24% in both spine and shaft regions, as measured by FRAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by FRAP experimental data (Figure 4E, F). C38 is established knowledge appropriately cited. The similar mobility between spine and shaft regions is notable, and the immobile fraction is a key finding for interpreting photobleaching experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "iGluSnFR is more mobile in HEK cells (time constant ~5.6 s) than in neurons (~9-10 s), with similar immobile fractions, suggesting that diffusion limitations arise from neuron-specific barriers rather than intrinsic probe properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by FRAP data comparing neurons and HEK cells (Figure 4H-J). The inference that diffusion limitations are neuron-specific (C45, C46, C48) is reasonable given the differential mobility with similar immobile fractions. However, alternative explanations could be more thoroughly explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Photobleaching differentially affects evoked and spontaneous neurotransmission: spontaneous events remain detectable after 20 min of photobleaching, while evoked release becomes largely undetectable within 5-10 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are strongly supported by experimental data (Figure 5B-E, Figure 5\u2014figure supplement 1A). This differential photobleaching is the central finding of the paper and is well-documented with appropriate controls and time courses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Evoked release detection after photobleaching is not different with or without stimulation in normal Ca2+, but shows greater photobleaching with stimulation in 8 mM Ca2+, suggesting photobleaching scales with evoked glutamate release amount.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56, and C57 are supported by experimental data (Figure 5\u2014figure supplement 1G, I). C55 and C58 are appropriately speculative alternative explanations. The high Ca2+ experiment (C56-C57) provides important evidence for use-dependent photobleaching, though the alternative explanation (C58) regarding reduced excitability should be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Spontaneous neurotransmission is more resilient to photobleaching than evoked release, but can be nearly completely abolished by photobleaching during glutamate perfusion, validating the specificity of the photobleaching approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C62, C63, and C64 are strongly supported by experimental data (Figure 5K). C60 and C61 are reasonable interpretations and predictions. The glutamate perfusion experiment (C62-C64) is a critical negative control that validates the entire photobleaching approach by demonstrating that activating all probes eliminates detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "After photobleaching, spontaneous events recover within an hour while evoked events require 8-24 hours to recover, demonstrating differential recovery timescales (minutes vs. hours) between the two modes of neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are well-supported by recovery experiment data (Figure 5H, I). The dramatic difference in recovery timescales is a key finding supporting the spatial segregation hypothesis. The long-term recovery measurements (up to 24 hours) are technically challenging and strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The slower recovery of evoked events suggests that iGluSnFR probes responding to evoked release have less lateral mobility at the plasma membrane, consistent with the observed immobile fraction being related to evoked release architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are reasonable inferences connecting the recovery data to the FRAP data. The interpretation is logical and consistent with the overall model, though direct evidence linking the immobile fraction specifically to evoked release sites would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Photobleaching does not affect synaptic transmission or neuronal health as measured by electrophysiology, demonstrating that decreased iGluSnFR event detection reflects probe photobleaching rather than toxic effects on neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are strongly supported by electrophysiological control experiments (Figure 6B-F). This is a critical control demonstrating that the photobleaching effects are specific to the fluorescent probe and not due to phototoxicity or damage to synaptic function. The multiple electrophysiological parameters measured strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Previous studies using pharmacological blockers, electrophysiology, and super-resolution microscopy have demonstrated functional and spatial segregation of evoked and spontaneous release, with proteins aligning in nanocolumns to facilitate evoked release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are appropriately cited literature review claims that provide context for the current study. C83 is appropriately speculative in connecting prior AMPAR findings to the current iGluSnFR results. These claims establish the foundation for interpreting the photobleaching results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The findings reveal a subsynaptic structure where evoked release is more clustered and restricted than spontaneous release, with evoked sites having greater diffusion barriers that lead to slower photobleaching recovery, while spontaneous release occurs more broadly with higher iGluSnFR mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 represent the central model of the paper, integrating photobleaching, recovery, and FRAP data. The model is well-supported by the experimental evidence, though it remains somewhat inferential. The comparison of timescales (C90) effectively links probe mobility to photobleaching kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The alternative explanation that spontaneous release has more sites than evoked release is inconsistent with use-dependent blocker studies showing 10-15 min is sufficient to suppress spontaneous neurotransmission, supporting the rapid replenishment model instead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 appropriately consider and reject an alternative explanation using literature evidence (C92). This strengthens the preferred interpretation that differential photobleaching reflects probe mobility rather than site number. The logical reasoning is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The longer recovery time for evoked events compared to spontaneous events further supports greater diffusion barriers at evoked release sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a reasonable inference from the recovery data that reinforces the main model. This claim effectively integrates the recovery experiments with the overall spatial segregation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The experiments were performed in primary hippocampal cultures, and while findings are expected to translate to intact brain systems, potential differences due to extracellular matrix composition, 3D organization, and technical complications should be considered in future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 appropriately acknowledge the limitations of the in vitro system and speculate about potential differences in vivo. C95 is a factual methodological statement. C96-C100 are appropriately cautious speculations about generalizability, demonstrating scientific rigor in considering study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study demonstrates that photobleaching can be used as a novel tool to probe spatial segregation of neurotransmission modes, revealing the subsynaptic organization of evoked and spontaneous release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are well-supported conclusions that synthesize the entire study. The novelty of using photobleaching as a tool (C102-C103) is justified by the comprehensive experimental validation and the insights gained about spatial organization (C101, C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study addresses the unclear organization of evoked and spontaneous release within individual synapses, demonstrating through photobleaching that evoked release sites are clustered with diffusion-restricted iGluSnFR probes, while spontaneous release sites are broadly distributed with readily diffusible probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 effectively summarize the study's motivation (C105-C106), key findings (C107-C109), and main conclusion (C110). C110 represents the central thesis supported by the comprehensive experimental evidence. This is the primary contribution of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Background literature establishes that evoked and spontaneous release are functionally segregated, deriving from distinct vesicle pools, using different machinery, activating different receptors, and having distinct physiological roles, but the exact subsynaptic spatial organization remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 are well-supported literature review claims that establish the scientific context and motivation for the study. The citations are appropriate and the progression from established knowledge (C111-C117) to knowledge gap (C118) effectively frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Previous approaches using electrophysiology and optical imaging have limitations in resolving subsynaptic spatial organization, with electrophysiology lacking spatial information and wide-field imaging unable to resolve subsynaptic sites, though super-resolution microscopy has revealed nanocolumn organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 appropriately review prior methodological approaches and their limitations, establishing the need for the current study's approach. The citations are appropriate and the assessment of limitations is fair and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "iGluSnFR is a novel probe with high signal-to-noise ratio that demonstrates single synapse level resolution and can reveal the organization of distinct forms of neurotransmission at synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by literature citations (C125) and the validation experiments in the current study (C126-C127). These claims effectively introduce the tool and its capabilities that enable the study's findings.",
+    "result_type": "MINOR"
+  }
+]

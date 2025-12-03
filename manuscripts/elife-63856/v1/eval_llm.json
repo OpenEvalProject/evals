@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The study successfully profiled high-quality ORN transcriptomes at three developmental stages (24 hr APF, 42 hr APF, and adult) using scRNA-seq and snRNA-seq, obtaining 1,198, 1,016, and 1,891 neurons respectively for a total of 4,105 neurons. Quality filtering confirmed neuronal identity through marker expression and enabled stage-specific separation of transcriptomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 provide converging evidence of successful transcriptomic profiling with appropriate quality control measures. The specific cell numbers, quality filtering criteria (\u226550,000 reads, expression of neuronal markers), and validation through marker expression (C10) and stage separation (C11) demonstrate rigorous experimental design and data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Inclusion of intronic reads in snRNA-seq substantially improved gene detection rates in nuclei compared to exonic reads alone, with intronic reads comprising 32.7% and 26.2% of total reads in 24 hr APF and adult ORN nuclei respectively. Despite reduced detection compared to cells, snRNA-seq and scRNA-seq detected largely overlapping genes (>70% overlap).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 provide quantitative evidence with specific percentages showing that intronic read inclusion increases gene detection in nuclei. The overlap analysis (C19) demonstrates methodological validity. The data are internally consistent and supported by multiple figure panels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Gene Ontology analysis revealed distinct transcriptomic signatures between developmental stages and cell/nuclear compartments. Cellular transcriptomes were enriched for housekeeping functions (translation, protein folding, metabolism), while nuclear transcriptomes showed stage-specific enrichment. Developing ORNs expressed genes for axon guidance and circuit formation, whereas adult ORNs expressed genes for neuronal signaling and chemosensory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 present a coherent biological narrative supported by GO analysis. The findings are consistent with expected biological processes at different developmental stages and cellular compartments. The transition from developmental to functional gene expression programs is well-documented and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Drosophila ORNs maintain stable expression of the same olfactory receptor throughout development, contrasting with the transient multi-receptor expression observed in mouse ORNs. At 42 hr APF, 84% of Or-expressing ORNs expressed only one receptor, and permanent genetic labeling experiments showed that in >87% of cases, ORN axons projected to the same glomerulus across development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 provide multiple lines of evidence (scRNA-seq data showing single receptor expression in C28, permanent labeling experiments in C31-C32) supporting stable receptor expression. The quantitative data are specific and the experimental design (permanent vs. standard labeling) appropriately tests the hypothesis. The comparison to mouse (C33) is supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "24 hr APF transcriptomes separated into three distinct clusters, with the transcription factor acj6 distinguishing ORNs from auditory neurons and immature from more mature ORNs. The small acj6-negative cluster expressed auditory neuron markers, while the large acj6-negative cluster showed enrichment for neurogenesis genes compared to neurite development genes in acj6-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by multiple data types including transcriptomic clustering (C35), gene expression analysis (C36), antibody validation (C37), and GO analysis (C38-C39). The integration of computational and experimental validation strengthens the conclusions about cell identity and developmental state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The MARS clustering algorithm successfully separated 24 hr APF transcriptomes into 36 distinct clusters using differentially expressed genes from 42 hr APF (the stage with highest transcriptomic diversity) combined with known sensory receptors. MARS outperformed density-based HDBSCAN clustering, particularly in separating closely related ORN types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 demonstrate the superiority of MARS clustering with specific examples (e.g., separation of VM5d and VM5v in C44). The methodological choice to use 42 hr APF genes for dimensionality reduction is justified by the diversity analysis (C40). Comparative evaluation with HDBSCAN provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Using cluster-specific receptor expression and marker genes, 21 transcriptomic clusters were successfully mapped to ORN types at 24 hr APF. Six receptors enabled direct annotation, and marker genes (including fkh for V neurons) allowed mapping of 10 additional clusters. VM5d and VM5v ORNs mapped to a single cluster, indicating high similarity at this early stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe a systematic annotation strategy with specific examples and quantitative results. The inability to separate VM5d/VM5v at 24 hr APF (C48) is consistent with their later separation at 42 hr APF (C44), suggesting developmental progression. The annotation approach is well-documented with supporting figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Adult ORN transcriptomes were successfully profiled using snRNA-seq, detecting 84% of previously reported antennal sensory receptors with >80% of neurons expressing a sensory receptor. MARS clustering separated adult transcriptomes into 26 clusters, outperforming density-based methods, and 31 neuron types were mapped to 20 clusters using receptor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 demonstrate successful adult profiling with validation against bulk RNA-seq (C52). The high detection rate of known receptors (C50) and receptor-expressing neurons (C51) indicates good data quality. The clustering and annotation results are quantitatively specific and supported by comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Transcriptomic matching across developmental stages revealed that 24 hr and 42 hr APF ORNs of the same type predominantly clustered together, while adult transcriptomes remained distinct. Combining manual and automatic matching approaches, 17 ORN clusters were successfully matched across all three developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 describe a comprehensive matching strategy with clear quantitative outcomes. The observation that pupal stages cluster together while adults remain distinct (C56) is biologically plausible given the major transcriptomic changes during maturation. The integration of manual and automatic approaches (C58) provides methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "At 24 hr APF, ORN transcriptomic similarity reflected both sensillar class and axon trajectory. Hierarchical clustering showed that ORNs from the same sensillar class were more similar, but DL4 ORNs clustered with dorsolateral-projecting trichoids rather than basiconics. Transcription factors and cell-surface molecules were over-represented (25% and 14% respectively) in differentially expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 integrate transcriptomic analysis with anatomical features. The DL4 example (C60) provides specific evidence that trajectory influences transcriptomic similarity. The enrichment of TFs and CSMs (C61) is quantitatively supported and biologically relevant for axon guidance. The conclusion (C62) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Adult ORN transcriptomes reflected both sensory structure and stimulus modality. Neurons within the same sensory structures shared similar transcriptomes, and neurons detecting similar stimuli clustered together regardless of structure. For example, limonene-sensing DC1 trichoid ORNs were more similar to fruit odor-responsive basiconic ORNs than to pheromone-detecting trichoid ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 demonstrate that adult transcriptomes reflect functional properties. The DC1 example (C65) provides specific evidence with citation support for the functional characterization. The hierarchical clustering analysis supports the general conclusions about structure and stimulus modality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Differential gene expression analysis identified 370 and 554 differentially expressed genes at 24 hr and 42 hr APF respectively, with 211 genes shared between stages (170 in matched ORN types). Transcription factors and cell-surface molecules were over-represented in shared differentially expressed genes, with 34 TFs differentially expressed in matched developing ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 provide specific quantitative results from differential expression analysis. The higher number of DE genes at 42 hr APF (C67) is consistent with the earlier finding of highest transcriptomic diversity at this stage (C40). The enrichment of TFs and CSMs (C69) is biologically relevant for development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Specific transcription factors and cell-surface molecules showed distinct expression patterns in developing ORNs. Some TFs (tna, sbb, Dll, Fer1, Eip93F) were broadly expressed, while others showed class-specific or restricted expression. Fifty-three CSMs were differentially expressed, many belonging to families implicated in circuit assembly (beat, Dscam, Fas, Net, robo, Dpr, Sema). Analysis of synaptic partners identified 203 differentially expressed CSMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 provide detailed molecular characterization with specific gene examples. The broad vs. restricted expression patterns are well-documented with figure support. The identification of circuit assembly-related CSMs (C74) is supported by citations to relevant literature. The synaptic partner analysis (C75) integrates data from a companion manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Olfactory co-receptors showed broader expression than previously recognized. Orco was highly expressed in 68% of adult ORN nuclei and was found in many Ir and Gr clusters. Ir8a expression was restricted to Ir-positive clusters, but Ir25a was broadly expressed in some Or clusters. At the single-cell level, Orco was co-expressed with Ir8a, Ir25a, and Ir76b, as well as with Gr21a-positive ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C83 report unexpected broad co-receptor expression. While the data are presented with specific percentages and stringent thresholds (log2(CPM+1)\u22655), the authors acknowledge potential contamination issues (noted in methods regarding Obps and mitochondrial transcripts). The findings align with recent studies (C83), but the possibility of ambient RNA contamination for highly expressed genes like Orco cannot be fully excluded, as the authors themselves note in supplementary text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Gustatory receptors Gr64a, Gr64f, and Gr93a showed correlated expression with subsets of odorant receptors in adult ORNs. Gr64f expression was broadly correlated with Ors expressed by basiconic ORNs detecting food-related odorants, suggesting potential non-canonical functions for these Grs in Or-positive ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 report unexpected co-expression patterns supported by correlation analysis. The functional characterization of these Grs in gustatory neurons (C85) is well-cited. However, the suggestion of potential functions (C87) is appropriately cautious speculation based on expression patterns. The correlation with food odor-detecting ORNs (C86) provides biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Or-positive and Ir-positive ORNs showed distinct transcriptomic profiles with 262 differentially expressed genes, including genes important for chemosensory behavior (sensory receptors, Snmp1, ATP8B) as well as transcription factors and signaling proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 identify functional differences between Or and Ir neurons with specific gene examples. The findings are consistent with previous reports (citations in C89) and the conclusion (C90) is a reasonable inference from the differential expression data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The neuropeptide sNPF, previously reported to regulate olfactory sensitivity of DM1 ORNs, was differentially expressed in multiple adult ORN types, suggesting broader functions beyond DM1 ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 extend previous findings about sNPF function. The expression in multiple ORN types is documented with figure support (C91), and the inference about broader function (C92) is reasonable based on the expression pattern, though functional validation would be needed to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study successfully clustered and annotated ORN transcriptomes across three developmental stages, identifying 36, 34, and 26 clusters at 24 hr APF, 42 hr APF, and adult stages respectively, with 16 ORN types matched across all stages. Fewer clusters than expected glomerular types (~50) likely resulted from insufficient sampling of rare types, clustering of closely related types, or inability to separate Ir-positive neurons expressing the same receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 summarize the overall clustering and annotation results with specific explanations for discrepancies. The three explanations for fewer clusters (C95) are well-reasoned and supported by specific examples from the data (VM5d/VM5v clustering, Ir-positive neuron limitations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "snRNA-seq is a validated method for profiling cuticle-associated tissues in Drosophila, offering advantages including long-term tissue storage at -80\u00b0C, reduced cell-type sampling bias, and easier capture of large/fragile cells. The method detected largely overlapping genes with scRNA-seq and is well-suited for profiling previously inaccessible adult neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 establish snRNA-seq as a validated methodology. The advantages (C97) are supported by citations to previous work. The gene overlap with scRNA-seq (C99) provides direct validation. The conclusion (C100) is supported by the successful adult profiling demonstrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The dataset enables future analyses of neural circuit formation, maintenance, and function by providing transcriptomes at developmentally-relevant stages. The identified differentially expressed transcription factors and cell-surface molecules are candidates for regulating axon guidance and target selection, and the data suggest that neurons detecting similar cues may require analogous genes for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 appropriately frame the dataset's utility for future research. The claims about candidate regulators (C102) and functional insights (C103-C104) are reasonable inferences from the data. The forward-looking statements (C105) are appropriately speculative about future impact while being grounded in the presented results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The Drosophila olfactory system contains approximately 58 types of primary sensory neurons in the antenna, arista, and maxillary palp, with the majority being ORNs responding to volatile compounds. Each of ~52 antennal neuron types expresses a distinct receptor or combination of 2-3 receptors, and neurons expressing the same receptor(s) project to the same glomerulus where they form one-to-one connections with projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide established background information about the Drosophila olfactory system, all supported by multiple citations to previous literature. These claims establish the biological context for the study and are well-documented in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Stage-specific gene expression was observed, including miple1 in developing ORNs (with known CNS expression) and adult-specific expression of the olfactory co-receptor Orco, indicating substantial transcriptomic changes during ORN development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 provide specific examples of stage-specific expression with figure support and citations. The conclusion about substantial transcriptomic changes (C14) is a reasonable inference from the observed stage-specific patterns and is supported by the broader analyses in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "ORNs use three distinct families of chemoreceptors (Ors, Irs, Grs) to detect olfactory stimuli, and these receptors are gradually turned on during the pupal stage such that each neuron type expresses one or few specific receptor(s) by adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide established background information about chemoreceptor families and their developmental expression, supported by citations to foundational literature. This contextualizes the receptor expression analyses performed in the study.",
+    "result_type": "MINOR"
+  }
+]

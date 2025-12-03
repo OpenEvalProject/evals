@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "HERBS is a comprehensive, open-source Python software tool that provides rodent neuroscientists with four core functionalities through a user-friendly GUI: pre-surgical coordinate planning, histological image processing, registration and reconstruction of implanted objects (electrodes, viral expression, anatomical features), and 2D/3D visualization. The software is multi-platform (Windows, macOS, Linux), requires minimal programming knowledge, and integrates the Waxholm Space Rat Brain Atlas and Allen Mouse Brain Atlas with the ability to incorporate other atlases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C15 and C35-C49 collectively describe HERBS' design, functionalities, and technical specifications. The manuscript provides detailed descriptions of the software architecture (C45-C47), demonstrates each core functionality with figures (Figures 1-4), describes technical implementation (C96-C98), and documents atlas integration (C38, C48-C49). The claims are internally consistent and supported by visual evidence showing the GUI and outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "HERBS enables pre-surgical planning by allowing users to define electrode trajectories on 2D atlas slices through point-and-click interaction, with automatic computation of insertion angles, probe length, and stereotaxic coordinates relative to Bregma. The software handles unlimited trajectory numbers, supports multi-probe implants with user-defined geometries, and accounts for Neuropixels-specific features like the 175-\u00b5m channel-less shank tip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 describe the pre-surgical planning functionality demonstrated in Figure 2. The figure shows the workflow from atlas navigation (C50, C56) through trajectory definition (C51) to automatic parameter calculation (C52) and read-out generation. The Neuropixels-specific handling (C54-C55) and multi-probe capabilities (C57-C58) are explicitly described with supporting documentation references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "HERBS reconstructs electrode tracks from histological sections without upper limits on electrode numbers, supporting various electrode types (Neuropixels, tetrodes, recording arrays). The software includes pre-processing capabilities (rotation, brightness adjustment, gamma correction) and handles off-plane sections by allowing atlas tilting up to 30\u00b0, with support for user-defined probe geometries and channel layouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe electrode reconstruction functionality demonstrated in Figure 3. The figure shows the complete workflow from histological section loading through pre-processing, atlas matching with anchor points, trajectory marking, and 3D reconstruction with detailed read-outs. The versatility claims (C63-C64) are supported by descriptions of customization options and GitHub resources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "HERBS reconstructs viral expression volumes and other anatomical features across multiple tissue sections using 2D region delineation with a magic wand tool. The same workflow applies to labeling single cells, marking fibers of passage, or visualizing lesions, with 3D reconstruction resolution depending on the number of sections included. The software can import and visualize cell point data from external programs like CellFinder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe viral expression reconstruction demonstrated in Figure 4, which shows the complete workflow from tissue imaging through region delineation to 3D visualization and quantitative read-outs. The example uses 11 tissue slices (C69), demonstrating the multi-slice reconstruction capability. Interoperability with CellFinder (C70) is explicitly stated with citation support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "HERBS distinguishes itself from existing tools by combining pre- and post-surgical functionalities in a single GUI-based program, supporting both rat and mouse atlases without requiring programming knowledge or additional plugins. Unlike Brainrender (visualization-focused, requires separate registration software) and Neuropixels Trajectory Explorer (MATLAB-based, pre-surgical only), HERBS provides integrated registration and visualization for histological sections rather than whole-brain light sheet data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C86 compare HERBS to existing tools (Brainrender, Brainreg, Neuropixels Trajectory Explorer) with appropriate citations (C73-C75, C80, C86). The comparisons are reasonable and supported by documented differences in design philosophy (C73, C76), input data types (C79), software requirements (C77, C82), and functionality scope (C74-C75, C81, C83-C85). The claims accurately characterize both HERBS and competing tools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "HERBS has limitations including time-consuming template matching for large datasets, potential installation challenges for Python-naive users, inconsistent probe length estimates with many histological slices, and discrepancies from tissue shrinkage during paraformaldehyde fixation. The authors acknowledge these issues and propose future improvements (automated template matching) while noting that HERBS' multi-anchor-point warping approach mitigates shrinkage-related inconsistencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 honestly assess limitations based on the authors' testing experience (C90, C93) and established knowledge about histological processing (C92, C94). The speculation about error sources (C91) is appropriately qualified. The proposed solution using multiple anchor points (C95) is a feature already implemented in HERBS. Future improvements (C88) are clearly identified as planned work rather than current capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The manuscript describes detailed experimental methods for generating test data, including Neuropixels probe implantation with DiI coating, viral injections of AAV5-mDlx-Chr2-mCherry in rat cingulate cortex, tissue processing with paraformaldehyde fixation and cryoprotection, immunostaining protocols, and automated scanning for digitization. All procedures were approved by Norwegian authorities and followed ethical guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C113 provide comprehensive methodological details for the experimental validation of HERBS. The methods are standard for the field, include appropriate ethical approvals (C99-C100), specify reagents with catalog numbers (C102, C107, C109, C113), and describe tissue processing parameters (C104-C106, C111-C112). These methods generated the example data shown in Figures 3-4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "HERBS source code is available on GitHub, the WHS rat brain atlas files are available on NITRC under CC BY-SA 4.0 license, and the Allen Mouse Brain Atlas is freely available on GitHub. The software and atlases are openly accessible for community use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 provide specific URLs and licensing information for software and data availability. These are factual statements about resource accessibility that can be verified. The open-source nature and appropriate licensing (C116) support the stated goal of HERBS as a community resource (C44).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Advances in rodent recording technologies enabling simultaneous sampling of thousands of neurons across multiple brain regions have created challenges for traditional manual histological registration methods, necessitating the ability to consistently target brain regions and maintain objective anatomical records.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-C18 establish the scientific context and motivation for HERBS. C1 describes established technological advances (supported by general knowledge), C16 is supported by citation to Simmons and Swanson 2009, and C17-C18 accurately characterize traditional methods and emerging challenges. These claims provide appropriate background for the tool's development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Multiple software tools using computer vision have been developed for anatomical mapping in model species, with different approaches for whole-brain versus sectioned tissue data. Whole-brain methods (ITK-SNAP, Brainrender, Brainreg) provide 3D spatial relationships but require expensive equipment, while histological sectioning remains dominant due to lower cost but faces challenges in tissue-to-atlas matching. Existing tools like SHARP-TRACK address some issues but have limitations (mouse-only, MATLAB-based), and no single software combines pre-surgical planning with post-experiment registration without programming requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C34 provide a comprehensive literature review with appropriate citations (C19-C20, C23-C26, C28, C30-C32). The characterizations of existing tools are accurate and supported by citations. The assessment of the gap in available tools (C34) logically follows from the review and provides clear motivation for HERBS development. The comparisons between whole-brain and sectioning approaches (C21-C22, C27-C28) are reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C34"
+    ],
+    "result": "Existing anatomical mapping tools either provide limited functionalities or require coding proficiency, with no single software combining pre-surgical planning and post-experiment registration without programming requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2 and C34 make broad assertions about existing tools' limitations. While the manuscript provides evidence for specific tools (SHARP-TRACK, Brainrender, Neuropixels Trajectory Explorer), the claim that ALL existing tools have these limitations is difficult to verify without exhaustive review of the field. The characterization may be accurate but represents the authors' assessment rather than demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The WHS rat brain atlas version 4 contains over 200 labeled cortical and sub-cortical regions at sub-millimeter scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 describes a feature of the WHS atlas v4 and is supported by citation to Papp et al., 2014. This is a factual statement about the atlas that HERBS uses as a reference, verifiable from the cited source.",
+    "result_type": "MINOR"
+  }
+]

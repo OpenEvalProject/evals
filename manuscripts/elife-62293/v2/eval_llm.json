@@ -1,0 +1,428 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C111"
+    ],
+    "result": "The study analyzed 76 tissue-cell types from the TMS FACS dataset, which contains 110,096 cells from 16 C57BL/6JN mice (10 males, 6 females) aged 3-24 months across 23 tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, and C111 provide consistent descriptions of the dataset composition and sample selection criteria. The data are clearly documented with specific cell counts, tissue types, and age ranges that form the basis for all subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "The authors claim that 3 months in mice corresponds to a 20-year-old human equivalent and 24 months corresponds to a 70-year-old human equivalent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2 and C3 present mouse-to-human age equivalences without citation or justification. These conversions are commonly used but vary across literature depending on the conversion method. The lack of supporting references makes these specific equivalences uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C95"
+    ],
+    "result": "Most tissue-cell types show predominantly downregulated aging genes, with this pattern driven primarily by 24-month mice and not specific to sex. Most aging-related genes exhibit monotonic trajectories, though 13% show non-monotonic patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C95 are supported by systematic DGE analyses across age groups and sexes, with results shown in multiple supplementary figures. The authors appropriately ruled out technical confounders (sequencing depth) and performed stratified analyses to identify the source of the downregulation pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The majority of genes (13,376 in FACS data, 6,233 in droplet data) are significantly related to aging in at least one tissue-cell type, consistent with aging being a highly complex trait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 are supported by the comprehensive DGE analysis across 76 tissue-cell types. The large number of aging-related genes provides empirical support for the interpretation that aging involves many biological processes, though this interpretation is somewhat circular.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Aging-related genes significantly overlap with known aging markers from GenAge database, senescence genes, and other gene sets, with approximately 5% overlap per tissue-cell type and uniform conservation across tissue-cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 are supported by Fisher's exact tests showing significant overlaps with established gene sets. The uniform distribution across tissue-cell types (C18) is appropriately inferred from the lack of specific enrichment. The validation against known markers strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C93",
+      "C94"
+    ],
+    "result": "Aging-related genes exhibit a striking bimodal pattern, with consistent direction of change across most tissue-cell types, suggesting a uniform response to aging robust to tissue or cellular context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, C93, and C94 describe the bimodal pattern visible in Figure 2A and supported by independent studies (C20). The interpretation of uniform response (C94) is reasonable given the data, though the mechanism underlying this coordination is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C119",
+      "C120"
+    ],
+    "result": "330 global aging genes (GAGs) were identified using a threshold of >50% weighted tissue-cell types, with 93 consistently upregulated, 190 consistently downregulated, and only 47 with inconsistent directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C119, and C120 describe the GAG selection methodology and results. The weighting scheme (C120) ensures equal tissue representation. The threshold choice (50%) is somewhat arbitrary but the authors show robustness to different thresholds in supplementary analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C60"
+    ],
+    "result": "GAGs significantly overlap with genes associated with aging-related diseases including Alzheimer's disease, neuroblastoma, fibrosarcoma, and osteoporosis, with similar patterns in both FACS and droplet data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C60 report statistically significant overlaps with disease genes using Fisher's exact tests. The p-values are extremely significant for major diseases. However, the multiple testing correction approach across diseases is not clearly described, which could affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Specific GAGs have known functional roles in aging: Lars2 downregulation increases lifespan in C. elegans, Jund protects against oxidative stress, and Rpl13a (upregulated in old mice) regulates inflammatory response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by appropriate citations to prior functional studies. Claim C33 (old mice have severe inflammatory symptoms) is stated as observation but lacks quantification or citation. The interpretation connecting Rpl13a upregulation to inflammation is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "GAGs are associated with aging-relevant biological processes (apoptosis, translation, biosynthesis, metabolism, cellular organization) that are shared across cell types, representing global aging processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by GO enrichment analysis with appropriate citations linking these processes to aging (C35). The interpretation that GAGs represent global aging (C36) is reasonable given the shared pathways, though alternative explanations are not discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The mTOR pathway, a known aging-associated pathway, is predicted to be inhibited based on GAG expression, and mTOR downregulation promotes longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by IPA pathway analysis and appropriate citations. The prediction of mTOR inhibition (C38) is computational and would benefit from experimental validation. The connection to longevity (C40) is well-established in literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The GAG score shows highly significant positive correlation with chronological age across multiple datasets (p<1e-100 in most cases), with the model explaining 60.2% of variance in FACS data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 and C64-C67 demonstrate robust validation of the GAG score across independent datasets. The extremely significant p-values and consistent results across platforms (FACS, droplet, bulk, external datasets) strongly support the validity of the GAG score as an aging metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Four tissue-cell types show similar GAG scores across age groups, and eight have subpopulations with GAG scores resembling different age groups, highlighting heterogeneity in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 identify exceptions to the general aging pattern, appropriately documented in supplementary figures. These findings highlight biological heterogeneity, though the mechanisms underlying these exceptions are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Immune cells and stem cells have significantly higher GAG score effects than parenchymal cells, consistent with known aging biology where immune and stem cells undergo substantial age-related changes while parenchymal cells may be more resilient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present statistically significant differences supported by Figure 3B. Claims C49-C50 provide appropriate citations for the biological interpretation. Claim C52 is speculative but reasonable. The pattern is biologically plausible and well-supported by prior knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "GAG score effects positively correlate with cell turnover rate, with short-lived cells showing significantly higher effects than long-lived cells (p=1.68e-3), possibly reflecting that cells undergoing more divisions are 'older' with molecular memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by statistical analysis with appropriate citations for cell lifespan data. The use of binary classification (short vs. long-lived) is pragmatic given data availability. Claims C57-C58 offer reasonable mechanistic speculation but lack direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "GAGs show significant overlap between FACS and droplet datasets (34 genes, p=9e-48) and with Kimmel et al. shared aging genes (90 genes with FACS, 42 with droplet).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61-C63 demonstrate cross-dataset validation with highly significant overlaps. The smaller overlap with droplet data (59 vs. 330 GAGs) is appropriately attributed to lower detection power. The consistency across independent studies strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In hematopoietic stem cells, GAG score effects follow differentiation hierarchy (MPPs < ST-HSCs < LT-HSCs), supporting the hypothesis that more stem-like cells have higher GAG score effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide elegant validation of the GAG score concept using a well-characterized differentiation hierarchy. The ordering exactly matches known differentiation potentials, providing strong biological validation of the GAG score interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Tissue-cell GAG score effects are highly consistent between datasets (correlation 0.76 between FACS and droplet, 0.75 between FACS and Kimmel et al.).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C72 demonstrate strong cross-dataset reproducibility with high correlations and significant p-values. This consistency across different technologies and studies provides robust validation of the GAG score effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Endothelial, immune, stem, and stromal cells exhibit category-specific aging behavior with enrichment in functionally relevant pathways (angiogenesis, immune responses, ossification, extracellular matrix organization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 are supported by GO enrichment analysis showing biologically coherent pathway associations for each cell category. The interpretations (e.g., C76 linking negative regulation of migration to decreased endothelial function) are reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "C2cd4b, a parenchymal-specific aging gene upregulated in pancreatic and mammary gland cells, is associated with type 2 diabetes risk and sexually dimorphic metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 and C84-C85 are supported by data and appropriate citations. Claim C83 is speculative, extrapolating from association to risk prediction without validation. The example illustrates cell-type-specific aging patterns but the diabetes risk interpretation requires caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Gsn shows cell-type-specific regulation (downregulated in stromal/stem cells, upregulated in others), consistent with its role in cell movement and as a potential biomarker for aging-related neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by expression data and appropriate citations. The differential regulation pattern is interesting and the functional interpretation is reasonable, though the mechanistic connection between expression changes and functional outcomes is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Cell-type-specific aging genes were identified for several cell types (B cells, endothelial cells, macrophages, etc.) but no genes specific to single tissue-cell types were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C91 describe the results of category-specific gene analysis. The negative finding (C91) is appropriately reported. The identification of cell-type-specific genes provides additional resolution beyond functional categories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The decrease in gene expression and number of actively expressed genes suggests transcriptional shutdown during aging, similar to patterns observed during cellular differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 present an interesting parallel between aging and differentiation (C97 with citation). Claim C96 is interpretive but reasonable. Claim C98 appropriately notes limitations in the droplet data. The interpretation is plausible but the causal mechanism is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The GAG score captures both chronological age and transcriptional changes during aging, potentially reflecting biological age distinct from chronological age, though cell-type-specific programs also exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are well-supported by the validation analyses. Claims C101-C103 are appropriately presented as hypotheses and future directions. The distinction between global and cell-type-specific aging is conceptually important and well-articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The GAG score differs from previous transcriptome age predictors by using unbiased gene selection across 76 tissue-cell types rather than model-fitting on single tissues, avoiding tissue-specific bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 appropriately position the work relative to prior studies with relevant citations. The methodological distinction (unbiased multi-tissue selection vs. single-tissue model fitting) is valid, though the claim of complete lack of bias (C107) may be overstated given the 50% threshold choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The study provides a comprehensive characterization of aging genes across tissue-cell types in mice, serving as a reference for researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C110 are appropriate summary statements supported by the scope and depth of the analyses. The comprehensiveness is evident from the 76 tissue-cell types analyzed and multiple validation datasets used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The droplet data analysis used 26 tissue-cell types with >500 cells per age group, requiring more cells than FACS due to lower sequencing depth (6000 UMIs vs. 0.85 million reads per cell).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C113 describe appropriate quality control criteria accounting for technical differences between platforms. The higher cell number requirement for droplet data is justified by the substantial difference in sequencing depth.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "DGE analysis used MAST without CDR correction because CDR correlates positively with age and negatively with technical covariates, though results with/without correction are highly correlated (0.89-0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 describe methodological choices with appropriate justification. The decision not to control for CDR (C116) is reasonable given the correlations shown in C115, and the robustness analysis (C117) supports that this choice does not substantially affect results.",
+    "result_type": "MINOR"
+  }
+]

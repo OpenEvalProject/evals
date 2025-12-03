@@ -1,0 +1,2477 @@
+{
+  "submission": {
+    "id": "19c186b2-f181-4f30-a5a8-6058a1a4be21",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:50:52.288921Z",
+    "updated_at": "2025-12-03T04:50:52.288921Z"
+  },
+  "content": [
+    {
+      "id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "submission_id": "19c186b2-f181-4f30-a5a8-6058a1a4be21",
+      "content_type": "manuscript",
+      "content_text": "# Development and validation of a nomogram to better predict hypertension based on a 10-year retrospective cohort study in China\n\n## Authors\n\n- Xinna Deng<sup>1</sup>\n- Huiqing Hou<sup>2</sup>\n- Xiaoxi Wang<sup>2</sup>\n- Qingxia Li<sup>1</sup>\n- Xiuyuan Li<sup>3</sup>\n- Zhaohua Yang<sup>4</sup>\n- Haijiang Wu<sup>4</sup> ([ORCID: 0000-0003-1132-0352](https://orcid.org/0000-0003-1132-0352)) \u2020\n\n### Affiliations\n\n1. Departments of Oncology & Immunotherapy, Hebei General Hospital Shijiazhuang China\n2. Physical Examination Center, Hebei General Hospital Shijiazhuang China\n3. Department of Foreign Language Teaching, Hebei Medical University Shijiazhuang China\n4. Department of Pathology, Hebei Medical University Shijiazhuang China\n5. Medical Practice-Education Coordination & Medical Education Research Center, Hebei Medical University Shijiazhuang China\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Hypertension is a highly prevalent disorder. A nomogram to estimate the risk of hypertension in Chinese individuals is not available.Methods:6201 subjects were enrolled in the study and randomly divided into training set and validation set at a ratio of 2:1. The LASSO regression technique was used to select the optimal predictive features, and multivariate logistic regression to construct the nomograms. The performance of the nomograms was assessed and validated by AUC, C-index, calibration curves, DCA, clinical impact curves, NRI, and IDI.Results:The nomogram140/90 was developed with the parameters of family history of hypertension, age, SBP, DBP, BMI, MCHC, MPV, TBIL, and TG. AUCs of nomogram140/90 were 0.750 in the training set and 0.772 in the validation set. C-index of nomogram140/90 were 0.750 in the training set and 0.772 in the validation set. The nomogram130/80 was developed with the parameters of family history of hypertension, age, SBP, DBP, RDWSD, and TBIL. AUCs of nomogram130/80 were 0.705 in the training set and 0.697 in the validation set. C-index of nomogram130/80 were 0.705 in the training set and 0.697 in the validation set. Both nomograms demonstrated favorable clinical consistency. NRI and IDI showed that the nomogram140/90 exhibited superior performance than the nomogram130/80. Therefore, the web-based calculator of nomogram140/90 was built online.Conclusions:We have constructed a nomogram that can be effectively used in the preliminary and in-depth risk prediction of hypertension in a Chinese population based on a 10-year retrospective cohort study.Funding:This study was supported by the Hebei Science and Technology Department Program (no. H2018206110).\n\n## Introduction\n\nSystemic arterial hypertension (hereafter referred to as hypertension) is the most common risk factor for cardiovascular diseases and the biggest contributor to world mortality from noncommunicable diseases (Mills et al., 2020; Burnier and Egan, 2019). Globally, the number of adults with hypertension increased from 594 million in 1975 to 1.13 billion in 2015; the increase is especially significant in low-income and middle-income countries (NCD Risk Factor Collaboration (NCD-RisC), 2017). As estimated, the number of adults with hypertension is predicted to rise to 1.56 billion by 2025 (Kearney et al., 2005). In China, high systolicblood pressure (SBP) is the leading risk factor for both number of deaths and percentage of disability-adjusted life-years, which accounted for 2.54 million deaths in 2017 (Zhou et al., 2019). In addition, according to the latest nationwide survey of 451,755 participants from 31 provinces in China, 23.2% (nearly 244.5 million) of Chinese adults have hypertension. The data generated in the China Patient-Centered Evaluative Assessment of Cardiac Events Million Persons Project have shown more serious results [Joint Committee for Guideline Revision, 2019]. Among individuals with hypertension, while 46.9% are aware of their condition and 40.7% take prescribed antihypertensive medications, only 15.3% are in control of their blood pressure (Wang et al., 2018). Hypertension has imposed so heavy an economic burden on healthcare systems that it requires urgent attention. Early detection of hypertension is vitally important in its control and effective treatment, especially with high-risk subjects.\n\nHypertension, also known as high blood pressure, is characterized by a persistent elevation of blood pressure in the systemic arteries. Traditionally, the diagnostic criteria of hypertension were SBP \u2265140 mmHg and/or diastolicblood pressure (DBP) \u226590 mmHg for the untreated participants, or those taking medication for hypertension. The criteria were broadly accepted by both the 2018 Chinese Guidelines for Prevention and Treatment of Hypertension and the 2018 European Society of Cardiology/European Society of Hypertension guidelines (2018 ESC/ESH) (Joint Committee for Guideline Revision, 2019 ; Williams et al., 2018). However, in November 2017, the American College of Cardiology and the American Heart Association published a guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults (2017 ACC/AHA) (Whelton et al., 2018), which redefined the diagnostic criteria of hypertension from 140/90 mmHg to 130/80 mmHg for SBP/DBP. This conspicuous numerically based change results in an increased number of patients being diagnosed with hypertension and in questioning the goal\u2019s clinical applicability given the financial burden and clinical outcomes (L\u00f3pez-Jaramillo et al., 2020). The applicability and potential impact of ACC/AHA 2017 need to be assessed prior to adopting the guideline, especially in China.\n\nHypertension has been deemed as a complex and multifactorial trait. It is well known that the pathophysiology of hypertension is shaped by combined action of environmental, genetic, anatomical, neural, endocrinal, humoral, and hemodynamic factors (Rodriguez-Iturbe et al., 2017). For example, the Dietary Approaches to Stop Hypertension diet is reported to be closely related to lower risk of hypertension (Navarro-Prado et al., 2020; Francisco et al., 2020). Moreover, psychosocial factors are also possible potentiators and triggers of hypertension. It was showed that psychosocial stress, including occupational stress, socioeconomic pressure, anxiety, and depression, was all associated with greater risk of hypertension, and hypertensive patients had higher level of psychosocial stress compared to normotension patients (Liu et al., 2017). Therefore, a simple and reliable model that helps clinicians or subjects to estimate the risk of hypertension is urgently in need.\n\nIn the present study, we aimed to develop and validate a risk prediction model for the screening of hypertension by analyzing the routine parameters of physical examination in China.\n\n## Results\n\n### Characteristics of subjects\n\nIn Group140/90, as well as the cut-off value of 140/90 mmHg, the total prevalence of hypertension in 2019 was 24.77% (1536 subjects). At a ratio of 2:1, 4134 subjects were assigned into the training set and 2067 in the validation set. The prevalence of hypertension was 25.35% (1048 subjects) in the training set and 23.61% (488 subjects) in the validation set, respectively. The characteristics of subjects are shown in Table 1. There were no significant differences in the characteristics of hypertension status in 2019, gender, family history of hypertension, smoking status, drinking status, age, SBP, DBP, height, weight, body mass index (BMI), white blood cell count (WBC), lymphocyte count (LYMPH), neutrophil count (NEUT), lymphocyte percentage (LYMPHP), neutrophil percentage (NEUTP), red blood cell count (RBC), hemoglobin (HGB), hematocrit (HCT), mean corpuscular volume (MCV), mean corpuscular hemoglobin (MCH), mean cell hemoglobin concentration (MCHC), red blood cell distribution width-coefficient of variation (RDWCV), red blood cell distribution width standard deviation (RDWSD), platelet count (PLT), mean platelet volume (MPV), plateletcrit (PCT), platelet distribution width (PDW), middle cell count (MID), middle cell percentage (MIDP), alanine aminotransferase (ALT), aspartate transaminase (AST), total protein (TP), albumin (ALB), total bilirubin (TBIL), direct bilirubin (DBIL), glucose (GLU), cholesterol (CHOL), triglycerides (TG), neutrophil-to-lymphocyte ratio (NLR), and platelet-to-lymphocyte ratio (PLR) between the two sets.\n\n**Table 1.**\n Baseline characteristicsh of individuals in training set and validation set of Group140/90.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variables</th>\n      <th>Training set (N = 4,134)</th>\n      <th>Validation set (N = 2,067)</th>\n      <th>P values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Hypertension status in 2019, n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>3,086 (74.65%)</td>\n      <td>1,579 (76.39%)</td>\n      <td>0.1342</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>1,048 (25.35%)</td>\n      <td>488 (23.61%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gender</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Female</td>\n      <td>1,899 (45.94%)</td>\n      <td>968 (46.83%)</td>\n      <td>0.5052</td>\n    </tr>\n    <tr>\n      <td>Male</td>\n      <td>2,235 (54.06%)</td>\n      <td>1,099 (53.17%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Family history of hypertension</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>3,029 (73.27%)</td>\n      <td>1,491 (72.13%)</td>\n      <td>0.3424</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>1,105 (26.73%)</td>\n      <td>576 (27.87%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Smoking status</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>3,846 (93.03%)</td>\n      <td>1945 (94.10%)</td>\n      <td>0.1118</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>288 (6.97%)</td>\n      <td>122 (5.90%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Drinking status</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>3,715 (89.86%)</td>\n      <td>1,871 (90.52%)</td>\n      <td>0.4173</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>419 (10.14%)</td>\n      <td>196 (9.48%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Age, year</td>\n      <td>45.00 (37.00,54.00)</td>\n      <td>45.00 (37.00,54.00)</td>\n      <td>0.5448</td>\n    </tr>\n    <tr>\n      <td>SBP,mmHg</td>\n      <td>110.00 (100.00,120.00)</td>\n      <td>110.00 (100.00,120.00)</td>\n      <td>0.1163</td>\n    </tr>\n    <tr>\n      <td>DBP,mmHg</td>\n      <td>70.00 (70.00,80.00)</td>\n      <td>70.00 (70.00,80.00)</td>\n      <td>0.2938</td>\n    </tr>\n    <tr>\n      <td>Height, cm</td>\n      <td>167.00 (161.00,173.00)</td>\n      <td>166.00 (161.00,173.00)</td>\n      <td>0.3414</td>\n    </tr>\n    <tr>\n      <td>weight, kg</td>\n      <td>66.00 (59.00,76.00)</td>\n      <td>66.00 (59.00,75.00)</td>\n      <td>0.8163</td>\n    </tr>\n    <tr>\n      <td>BMI, kg/m2</td>\n      <td>24.03 (21.89,26.22)</td>\n      <td>24.07 (21.89,26.09)</td>\n      <td>0.9343</td>\n    </tr>\n    <tr>\n      <td>WBC, 109/L</td>\n      <td>5.50 (4.60,6.40)</td>\n      <td>5.50 (4.60,6.30)</td>\n      <td>0.6647</td>\n    </tr>\n    <tr>\n      <td>LYMPH, 109/L</td>\n      <td>1.80 (1.50,2.10)</td>\n      <td>1.80 (1.50,2.10)</td>\n      <td>0.9866</td>\n    </tr>\n    <tr>\n      <td>NEUT, 109/L</td>\n      <td>3.20 (2.60,3.90)</td>\n      <td>3.20 (2.60,3.80)</td>\n      <td>0.7023</td>\n    </tr>\n    <tr>\n      <td>LYMPHP, %</td>\n      <td>33.20 (28.90,37.80)</td>\n      <td>33.60 (29.20,37.90)</td>\n      <td>0.2718</td>\n    </tr>\n    <tr>\n      <td>NEUTP, %</td>\n      <td>58.50 (53.70,63.20)</td>\n      <td>58.30 (53.70,63.10)</td>\n      <td>0.6369</td>\n    </tr>\n    <tr>\n      <td>RBC, 1012/L</td>\n      <td>4.25 (3.93,4.57)</td>\n      <td>4.25 (3.93,4.56)</td>\n      <td>0.9433</td>\n    </tr>\n    <tr>\n      <td>HGB, g/L</td>\n      <td>130.00 (119.00,141.00)</td>\n      <td>129.00 (119.00,141.00)</td>\n      <td>0.6263</td>\n    </tr>\n    <tr>\n      <td>HCT, %</td>\n      <td>39.20 (37.00,42.30)</td>\n      <td>39.10 (37.00,42.10)</td>\n      <td>0.5409</td>\n    </tr>\n    <tr>\n      <td>MCV, fL</td>\n      <td>92.20 (89.70,94.60)</td>\n      <td>92.20 (89.60,94.60)</td>\n      <td>0.5249</td>\n    </tr>\n    <tr>\n      <td>MCH, pg</td>\n      <td>30.60 (29.60,31.00)</td>\n      <td>30.60 (29.60,31.00)</td>\n      <td>0.5454</td>\n    </tr>\n    <tr>\n      <td>MCHC, g/L</td>\n      <td>331.00 (325.00,337.00)</td>\n      <td>331.00 (325.00,337.00)</td>\n      <td>0.5947</td>\n    </tr>\n    <tr>\n      <td>RDWCV, %</td>\n      <td>14.40 (14.00,14.50)</td>\n      <td>14.40 (14.00,14.50)</td>\n      <td>0.1879</td>\n    </tr>\n    <tr>\n      <td>RDWSD, fL</td>\n      <td>48.70 (46.50,50.20)</td>\n      <td>48.70 (46.50,50.20)</td>\n      <td>0.8534</td>\n    </tr>\n    <tr>\n      <td>PLT, 109/L</td>\n      <td>211.00 (182.00,243.00)</td>\n      <td>211.00 (184.00,243.00)</td>\n      <td>0.9817</td>\n    </tr>\n    <tr>\n      <td>MPV, fL</td>\n      <td>8.80 (8.30,9.30)</td>\n      <td>8.80 (8.30,9.30)</td>\n      <td>0.3084</td>\n    </tr>\n    <tr>\n      <td>PCT, %</td>\n      <td>0.18 (0.16,0.21)</td>\n      <td>0.19 (0.16,0.21)</td>\n      <td>0.5154</td>\n    </tr>\n    <tr>\n      <td>PDW, fL</td>\n      <td>15.80 (15.70,16.00)</td>\n      <td>15.80 (15.70,16.00)</td>\n      <td>0.8825</td>\n    </tr>\n    <tr>\n      <td>MID, 109/L</td>\n      <td>0.40 (0.30,0.50)</td>\n      <td>0.40 (0.30,0.50)</td>\n      <td>0.1560</td>\n    </tr>\n    <tr>\n      <td>MIDP, %</td>\n      <td>8.20 (7.10,9.00)</td>\n      <td>8.10 (7.10,9.00)</td>\n      <td>0.1760</td>\n    </tr>\n    <tr>\n      <td>ALT, U/L</td>\n      <td>17.90 (14.20,24.30)</td>\n      <td>18.00 (14.30,23.90)</td>\n      <td>0.8201</td>\n    </tr>\n    <tr>\n      <td>AST, U/L</td>\n      <td>19.40 (17.00,22.90)</td>\n      <td>19.40 (17.00,22.60)</td>\n      <td>0.6713</td>\n    </tr>\n    <tr>\n      <td>TP, g/L</td>\n      <td>71.40 (69.00,73.90)</td>\n      <td>71.40 (69.00,73.90)</td>\n      <td>0.8951</td>\n    </tr>\n    <tr>\n      <td>ALB, g/L</td>\n      <td>42.38 (40.82,44.18)</td>\n      <td>42.44 (40.83,44.00)</td>\n      <td>0.4247</td>\n    </tr>\n    <tr>\n      <td>TBIL, \u03bcmol/L</td>\n      <td>16.90 (13.80,20.80)</td>\n      <td>16.80 (14.00,20.80)</td>\n      <td>0.6959</td>\n    </tr>\n    <tr>\n      <td>DBIL, \u03bcmol/L</td>\n      <td>2.00 (2.00,3.00)</td>\n      <td>2.00 (2.00,3.00)</td>\n      <td>0.9172</td>\n    </tr>\n    <tr>\n      <td>GLU, mmol/L</td>\n      <td>5.49 (5.19,5.86)</td>\n      <td>5.50 (5.17,5.87)</td>\n      <td>0.7616</td>\n    </tr>\n    <tr>\n      <td>CHOL, mmol/L</td>\n      <td>4.71 (4.17,5.32)</td>\n      <td>4.72 (4.19,5.34)</td>\n      <td>0.3311</td>\n    </tr>\n    <tr>\n      <td>TG, mmol/L</td>\n      <td>1.20 (0.82,1.78)</td>\n      <td>1.20 (0.82,1.78)</td>\n      <td>0.9119</td>\n    </tr>\n    <tr>\n      <td>NLR, %</td>\n      <td>1.76 (1.43,2.19)</td>\n      <td>1.74 (1.42,2.17)</td>\n      <td>0.2978</td>\n    </tr>\n    <tr>\n      <td>PLR, %</td>\n      <td>116.75 (96.07,141.88)</td>\n      <td>117.06 (97.50,140.67)</td>\n      <td>0.7375</td>\n    </tr>\n  </tbody>\n</table>\n\n_Data are presented as median (25% percentile, 75% percentile) for continuous variables and count (percentage) for categorical variables.SBP: systolic blood pressure; DBP: diastolic blood pressure; BMI: body mass index; WBC: white blood cell count; LYMPH: lymphocyte count; NEUT: neutrophil count; LYMPHP: lymphocyte percentage; NEUTP: neutrophil percentage; RBC: red blood cell count; HGB: hemoglobin; HCT: hematocrit; MCV: mean corpuscular volume; MCH: mean corpuscular hemoglobin; MCHC: mean cell hemoglobin concentration; RDWCV: red blood cell distribution width-coefficient of variation; RDWSD: red blood cell distribution width standard deviation; PLT: platelet count; MPV: mean platelet volume; PCT: plateletcrit; PDW: platelet distribution width; MID: middle cell count; MIDP: middle cell percentage; ALT: alanine aminotransferase; AST: aspartate transaminase; TP: total protein; ALB: albumin; TBIL: total bilirubin; DBIL: direct bilirubin; GLU: glucose; CHOL: cholesterol; TG: triglycerides; NLR: neutrophil-to-lymphocyte ratio; PLR: platelet-to-lymphocyte ratio._\n\nIn Group130/80, as well as the cut-off value of 130/80 mmHg, the total prevalence of hypertension in 2019 was 37.92% (1430 subjects). At a ratio of 2:1, 2514 subjects were assigned into the training set and 1257 in the validation set. The prevalence of hypertension was 37.39% (940 subjects) in the training set and 38.98% (490 subjects) in the validation set, respectively. The characteristics of subjects are shown in Table 2. There were no significant differences in characteristics of hypertension status in 2019, gender, family history of hypertension, smoking status, drinking status, age, SBP, DBP, height, weight, BMI, WBC, LYMPH, NEUT, LYMPHP, NEUTP, RBC, HGB, HCT, MCV, MCH, MCHC, RDWCV, RDWSD, PLT, MPV, PCT, PDW, MID, MIDP, ALT, AST, TP, ALB, TBIL, DBIL, GLU, CHOL, TG, NLR, and PLR between two sets.\n\n**Table 2.**\n Baseline characteristics of individuals in training set and validation set of Group130/80.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variables</th>\n      <th>Training set (N = 2,514)</th>\n      <th>Validation set (N = 1,257)</th>\n      <th>P values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Hypertension status in 2019, n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>1,574 (62.61%)</td>\n      <td>767 (61.02%)</td>\n      <td>0.3425</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>940 (37.39%)</td>\n      <td>490 (38.98%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gender</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Female</td>\n      <td>1,436 (57.12%)</td>\n      <td>685 (54.49%)</td>\n      <td>0.1255</td>\n    </tr>\n    <tr>\n      <td>Male</td>\n      <td>1,078 (42.88%)</td>\n      <td>572 (45.51%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Family history of hypertension</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>1,886 (75.02%)</td>\n      <td>949 (75.50%)</td>\n      <td>0.7491</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>628 (24.98%)</td>\n      <td>308 (24.50%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Smoking status</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>2,403 (95.58%)</td>\n      <td>1,195 (95.07%)</td>\n      <td>0.4743</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>111 (4.42%)</td>\n      <td>62 (4.93%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Drinking status</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>2,342 (93.16%)</td>\n      <td>1,173 (93.32%)</td>\n      <td>0.8547</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>172 (6.84%)</td>\n      <td>84 (6.68%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Age, year</td>\n      <td>43.00 (36.00,53.00)</td>\n      <td>44.00 (37.00,53.00)</td>\n      <td>0.2488</td>\n    </tr>\n    <tr>\n      <td>SBP, mmHg</td>\n      <td>104.00 (100.00,110.00)</td>\n      <td>104.00 (100.00,110.00)</td>\n      <td>0.3309</td>\n    </tr>\n    <tr>\n      <td>DBP, mmHg</td>\n      <td>70.00 (62.00,70.00)</td>\n      <td>70.00 (64.00,70.00)</td>\n      <td>0.1694</td>\n    </tr>\n    <tr>\n      <td>Height, cm</td>\n      <td>165.00 (160.00,172.00)</td>\n      <td>165.00 (160.00,172.00)</td>\n      <td>0.8938</td>\n    </tr>\n    <tr>\n      <td>weight, kg</td>\n      <td>63.00 (56.00,72.00)</td>\n      <td>63.00 (56.00,72.00)</td>\n      <td>0.3730</td>\n    </tr>\n    <tr>\n      <td>BMI, kg/m2</td>\n      <td>23.24 (21.30,25.39)</td>\n      <td>23.24 (21.09,25.27)</td>\n      <td>0.3171</td>\n    </tr>\n    <tr>\n      <td>WBC, 109/L</td>\n      <td>5.30 (4.50,6.30)</td>\n      <td>5.30 (4.50,6.30)</td>\n      <td>0.7810</td>\n    </tr>\n    <tr>\n      <td>LYMPH, 109/L</td>\n      <td>1.80 (1.50,2.10)</td>\n      <td>1.70 (1.50,2.10)</td>\n      <td>0.3251</td>\n    </tr>\n    <tr>\n      <td>NEUT, 109/L</td>\n      <td>3.10 (2.50,3.80)</td>\n      <td>3.10 (2.50,3.80)</td>\n      <td>0.9247</td>\n    </tr>\n    <tr>\n      <td>LYMPHP, %</td>\n      <td>33.40 (29.00,37.90)</td>\n      <td>33.40 (29.20,38.20)</td>\n      <td>0.5755</td>\n    </tr>\n    <tr>\n      <td>NEUTP, %</td>\n      <td>58.30 (53.70,63.20)</td>\n      <td>58.50 (53.25,63.20)</td>\n      <td>0.6634</td>\n    </tr>\n    <tr>\n      <td>RBC, 1012/L</td>\n      <td>4.15 (3.87,4.48)</td>\n      <td>4.14 (3.86,4.47)</td>\n      <td>0.4514</td>\n    </tr>\n    <tr>\n      <td>HGB, g/L</td>\n      <td>126.00 (116.00,138.00)</td>\n      <td>126.00 (117.00,138.00)</td>\n      <td>0.5630</td>\n    </tr>\n    <tr>\n      <td>HCT, %</td>\n      <td>38.10 (37.00,41.30)</td>\n      <td>38.20 (37.00,41.40)</td>\n      <td>0.6286</td>\n    </tr>\n    <tr>\n      <td>MCV, fL</td>\n      <td>92.20 (89.50,94.60)</td>\n      <td>92.30 (89.75,94.80)</td>\n      <td>0.2552</td>\n    </tr>\n    <tr>\n      <td>MCH, pg</td>\n      <td>30.50 (29.40,31.00)</td>\n      <td>30.60 (29.55,31.00)</td>\n      <td>0.0824</td>\n    </tr>\n    <tr>\n      <td>MCHC, g/L</td>\n      <td>330.00 (324.00,336.00)</td>\n      <td>331.00 (324.00,337.00)</td>\n      <td>0.0561</td>\n    </tr>\n    <tr>\n      <td>RDWCV, %</td>\n      <td>14.50 (14.00,14.50)</td>\n      <td>14.50 (14.10,14.50)</td>\n      <td>0.9732</td>\n    </tr>\n    <tr>\n      <td>RDWSD, fL</td>\n      <td>48.70 (47.20,50.20)</td>\n      <td>48.70 (47.20,50.20)</td>\n      <td>0.1531</td>\n    </tr>\n    <tr>\n      <td>PLT, 109/L</td>\n      <td>210.00 (181.00,241.00)</td>\n      <td>210.00 (181.00,239.50)</td>\n      <td>0.8556</td>\n    </tr>\n    <tr>\n      <td>MPV, fL</td>\n      <td>8.80 (8.30,9.30)</td>\n      <td>8.90 (8.40,9.30)</td>\n      <td>0.3158</td>\n    </tr>\n    <tr>\n      <td>PCT, %</td>\n      <td>0.18 (0.16,0.21)</td>\n      <td>0.18 (0.16,0.21)</td>\n      <td>0.9297</td>\n    </tr>\n    <tr>\n      <td>PDW, fL</td>\n      <td>15.80 (15.68,16.00)</td>\n      <td>15.80 (15.70,16.00)</td>\n      <td>0.6276</td>\n    </tr>\n    <tr>\n      <td>MID, 109/L</td>\n      <td>0.40 (0.30,0.50)</td>\n      <td>0.40 (0.30,0.50)</td>\n      <td>0.5171</td>\n    </tr>\n    <tr>\n      <td>MIDP, %</td>\n      <td>8.10 (7.10,9.00)</td>\n      <td>8.10 (6.90,9.00)</td>\n      <td>0.5763</td>\n    </tr>\n    <tr>\n      <td>ALT, U/L</td>\n      <td>16.60 (13.50,22.20)</td>\n      <td>16.70 (13.50,22.30)</td>\n      <td>0.5375</td>\n    </tr>\n    <tr>\n      <td>AST, U/L</td>\n      <td>18.70 (16.50,22.20)</td>\n      <td>18.90 (16.50,22.00)</td>\n      <td>0.5839</td>\n    </tr>\n    <tr>\n      <td>TP, g/L</td>\n      <td>71.30 (69.00,73.90)</td>\n      <td>71.20 (68.80,73.60)</td>\n      <td>0.3776</td>\n    </tr>\n    <tr>\n      <td>ALB, g/L</td>\n      <td>42.21 (40.64,43.96)</td>\n      <td>42.29 (40.64,43.96)</td>\n      <td>0.4390</td>\n    </tr>\n    <tr>\n      <td>TBIL, \u03bcmol/L</td>\n      <td>16.70 (13.70,20.50)</td>\n      <td>16.70 (13.70,20.45)</td>\n      <td>0.6017</td>\n    </tr>\n    <tr>\n      <td>DBIL, \u03bcmol/L</td>\n      <td>2.00 (2.00,3.00)</td>\n      <td>2.00 (2.00,3.00)</td>\n      <td>0.8340</td>\n    </tr>\n    <tr>\n      <td>GLU, mmol/L</td>\n      <td>5.43 (5.15,5.77)</td>\n      <td>5.42 (5.13,5.73)</td>\n      <td>0.3640</td>\n    </tr>\n    <tr>\n      <td>CHOL, mmol/L</td>\n      <td>4.65 (4.10,5.24)</td>\n      <td>4.69 (4.13,5.32)</td>\n      <td>0.1182</td>\n    </tr>\n    <tr>\n      <td>TG, mmol/L</td>\n      <td>1.05 (0.74,1.56)</td>\n      <td>1.06 (0.75,1.60)</td>\n      <td>0.4149</td>\n    </tr>\n    <tr>\n      <td>NLR, %</td>\n      <td>1.75 (1.43,2.19)</td>\n      <td>1.75 (1.41,2.17)</td>\n      <td>0.5353</td>\n    </tr>\n    <tr>\n      <td>PLR, %</td>\n      <td>119.23 (98.57,144.44)</td>\n      <td>117.62 (96.10,143.43)</td>\n      <td>0.1833</td>\n    </tr>\n  </tbody>\n</table>\n\n_Data were presented as median (the 25% percentile, the 75% percentile) for continuous variables and count (percentage) for categorical variables.SBP, systolic blood pressure; DBP, diastolic blood pressure; BMI, body mass index; WBC, white blood cell count; LYMPH, lymphocyte count; NEUT, neutrophil count; LYMPHP, lymphocyte percentage; NEUTP, neutrophil percentage; RBC, red blood cell count; HGB, hemoglobin; HCT, hematocrit; MCV, mean corpuscular volume; MCH, mean corpuscular hemoglobin; MCHC, mean cell hemoglobin concentration; RDWCV, red blood cell distribution width-coefficient of variation; RDWSD, red blood cell distribution width standard deviation; PLT, platelet count; MPV, mean platelet volume; PCT, plateletcrit; PDW, platelet distribution width; MID, middle cell count; MIDP, middle cell percentage; ALT, alanine aminotransferase; AST, aspartate transaminase; TP, total protein; ALB, albumin; TBIL, total bilirubin; DBIL, direct bilirubin; GLU, glucose; CHOL, cholesterol; TG, triglycerides; NLR, neutrophil to lymphocyte ratio; PLR, platelet-to-lymphocyte ratio._\n\n### Construction of nomogram140/90 and nomogram130/80\n\nIn Group140/90, 21 variables had nonzero coefficients in the least absoluteshrinkage and selection operator (LASSO) regression model based on the analysis of the training set. These variables included gender, family history of hypertension, age, SBP, DBP, height, BMI, LYMPH, LYMPHP, NEUTP, MCHC, RDWCV, RDWSD, PLT, MPV, AST, TP, TBIL, GLU, TG, and NLR (Figure 1A B). Multivariate logistic regression analysis revealed that family history of hypertension, age, SBP, DBP, BMI, MCHC, MPV, TP, TBIL, and TG were independent risk factors for hypertension (Table 3). These 10 independent factors were used to construct the nomogram140/90 (Figure 2A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66419/elife-66419-fig1-v1.jpg)\n\n**Figure 1.:** (A) Identification of the optimal penalization coefficient lambda (\u03bb) in the LASSO model with 10-fold cross-validation in Group140/90. (B) LASSO coefficient profiles of 21 features in Group140/90. The trajectory of each hypertension-related features\u2019 coefficient was observed in the LASSO coefficient profiles with the changing of the lambda in LASSO algorithm. (C) Identification of the optimal penalization coefficient lambda (\u03bb) in the LASSO model with 10-fold cross-validation in Group130/80. (D) LASSO coefficient profiles of 21 features in Group130/80. The trajectory of each hypertension-related features\u2019 coefficient was observed in the LASSO coefficient profiles with the changing of the lambda in LASSO algorithm. SBP: systolic blood pressure; DBP: diastolic blood pressure; BMI: body mass index; WBC: white blood cell count; LYMPH: lymphocyte count; NEUT: neutrophil count; LYMPHP: lymphocyte percentage; NEUTP: neutrophil percentage; RBC: red blood cell count; MCHC: mean cell hemoglobin concentration; RDWCV: red blood cell distribution width-coefficient of variation; RDWSD: red blood cell distribution width standard deviation; PLT: platelet count; MPV: mean platelet volume; PCT: plateletcrit; PDW: platelet distribution width; ALT: alanine aminotransferase; AST: aspartate transaminase; TP: total protein; TBIL: total bilirubin; GLU: glucose; CHOL: cholesterol; TG: triglycerides; NLR: neutrophil-to-lymphocyte ratio.\n\n**Table 3.**\n Risk factors for hypertension in the training set of Group140/90.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Variable</th>\n      <th colspan=\"3\">Model</th>\n    </tr>\n    <tr>\n      <th>\u03b2-Coefficient</th>\n      <th>Odds ratio (95%CI)</th>\n      <th>p value</th>\n    </tr>\n    <tr>\n      <th>Family history of hypertension</th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>No</td>\n      <td>Reference</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>0.483</td>\n      <td>1.621 (1.372\u20131.913)</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Age</td>\n      <td>0.036</td>\n      <td>1.037 (1.028\u20131.045)</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>SBP</td>\n      <td>0.041</td>\n      <td>1.041 (1.032\u20131.051)</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>DBP</td>\n      <td>0.031</td>\n      <td>1.031 (1.017\u20131.046)</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>BMI</td>\n      <td>0.039</td>\n      <td>1.040 (1.011\u20131.069)</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>MCHC</td>\n      <td>\u20130.015</td>\n      <td>0.985 (0.975\u20130.995)</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>MPV</td>\n      <td>0.161</td>\n      <td>1.175 (1.036\u20131.333)</td>\n      <td>0.012</td>\n    </tr>\n    <tr>\n      <td>TP</td>\n      <td>0.025</td>\n      <td>1.025 (1.003\u20131.049)</td>\n      <td>0.028</td>\n    </tr>\n    <tr>\n      <td>TBIL</td>\n      <td>0.015</td>\n      <td>1.015 (1.002\u20131.028)</td>\n      <td>0.023</td>\n    </tr>\n    <tr>\n      <td>TG</td>\n      <td>0.098</td>\n      <td>1.102 (0.962\u20131.132)</td>\n      <td>0.012</td>\n    </tr>\n  </tbody>\n</table>\n\n_SBP: systolic blood pressure; DBP: diastolic blood pressure; BMI: body mass index; MCHC: mean cell hemoglobinconcentration; MPV: mean platelet volume; TP: total protein; TBIL: total bilirubin; TG: triglycerides._\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66419/elife-66419-fig2-v1.jpg)\n\n**Figure 2.:** (A) Nomogram140/90 was constructed based on the data of Group140/90. (B) Nomogram130/80 was constructed based on the data of Group130/80. The points of each features were added to obtain the total points, and a vertical line was drawn on the total points to obtain the corresponding \u2018risk of hypertension\u2019. SBP: systolic blood pressure; DBP: diastolic blood pressure; BMI: body mass index; MCHC: mean cell hemoglobin concentration; MPV: mean platelet volume; TP: total protein; TBIL: total bilirubin; TG: triglycerides; RDWSD: red blood cell distribution width standard deviation.\n\nIn Group130/80, 21 variables had nonzero coefficients in the LASSO regression model based on the analysis of the training set. These variables included family history of hypertension, drinking status, age, SBP, DBP, weight, BMI, WBC, NEUT, LYMPHP, RBC, RDWSD, PCT, PDW, ALT, AST, TP, TBIL, GLU, CHOL, and TG (Figure 1C D). Multivariate logistic regression analysis revealed that family history of hypertension, age, SBP, DBP, RDWSD, and TBIL were independent risk factors for hypertension (Table 4). These six independent factors were used to construct the nomogram130/80 (Figure 2B).\n\n**Table 4.**\n Risk factors for hypertension in the training set of Group130/80.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Variable</th>\n      <th colspan=\"3\">Model</th>\n    </tr>\n    <tr>\n      <th>\u03b2-Coefficient</th>\n      <th>Odds ratio (95%CI)</th>\n      <th>p value</th>\n    </tr>\n    <tr>\n      <th>Family history of hypertension</th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>No</td>\n      <td>Reference</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>0.282</td>\n      <td>1.326 (1.084\u20131.620)</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>Age</td>\n      <td>0.032</td>\n      <td>1.032 (1.022\u20131.042)</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>SBP</td>\n      <td>0.040</td>\n      <td>1.041 (1.029\u20131.053)</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>DBP</td>\n      <td>0.033</td>\n      <td>1.034 (1.012\u20131.065)</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>RDWSD</td>\n      <td>\u20130.047</td>\n      <td>0.954 (0.916\u20130.994)</td>\n      <td>0.024</td>\n    </tr>\n    <tr>\n      <td>TBIL</td>\n      <td>0.015</td>\n      <td>1.016 (1.001\u20131.031)</td>\n      <td>0.041</td>\n    </tr>\n  </tbody>\n</table>\n\n_SBP: systolic blood pressure; DBP: diastolic blood pressure; RDWSD: red blood celldistribution width standard deviation; TBIL: total bilirubin._\n\n### Assessment of nomogram140/90 and nomogram130/80 in the training set\n\nAs mentioned above, the nomogram140/90 was constructed to predict the risk of hypertension by using family history of hypertension, age, SBP, DBP, BMI, MCHC, MPV, TP, TBIL, and TG. Its performance was assessed with the area under receiver operating characteristic curve (AUC) and C-index. The AUC value of the nomogram140/90 was 0.750 (95% CI: 0.733\u20130.767). The AUCs of family history of hypertension, age, SBP, DBP, BMI, MCHC, MPV, TP, TBIL, and TG were 0.554 (95% CI: 0.534\u20130.575), 0.659 (95% CI: 0.640\u20130.677), 0.711 (95% CI: 0.693\u20130.729), 0.645 (95% CI: 0.626\u20130.664), 0.618 (95% CI: 0.598\u20130.637), 0.513 (95% CI: 0.492\u20130.533), 0.507 (95% CI: 0.486\u20130.527), 0.515 (95% CI: 0.495\u20130.535), 0.517 (95% CI: 0.496\u20130.537), and 0.605 (95% CI: 0.586\u20130.625), respectively (Figure 3A). The C-index of nomogram140/90 was 0.75 (95% CI: 0.733\u20130.767) in the training set, which indicated that the model had a good predictive discrimination. Furthermore, the calibration curve showed a high consistency between prediction and actual observation (Figure 4A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66419/elife-66419-fig3-v1.jpg)\n\n**Figure 3.:** (A) ROC curves of the factors and nomogram140/90 in the training set of Group140/90. (B) ROC curves of the factors and nomogram130/80 in the training set of Group130/80. (C) ROC curves of the factors and nomogram140/90 in the validation set of Group140/90. (D) ROC curves of the factors and nomogram130/80 in the validation set of Group130/80. SBP: systolic blood pressure; DBP: diastolic blood pressure; BMI: body mass index; MCHC: mean cell hemoglobin concentration; MPV: mean platelet volume; TP: total protein; TBIL: total bilirubin; TG: triglycerides; RDWSD: red blood cell distribution width standard deviation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66419/elife-66419-fig4-v1.jpg)\n\n**Figure 4.:** (A) Calibration curves of nomogram140/90 prediction in the training set of Group140/90. (B) Calibration curves of nomogram130/80 prediction in the training set of Group130/80. (C) Calibration curves of nomogram140/90 prediction in the validation set of Group140/90. (D) Calibration curves of nomogram130/80 prediction in the validation set of Group130/80.\n\nAs mentioned above, the nomogram130/80 was constructed to predict the risk of hypertension with family history of hypertension, age, SBP, DBP, RDWSD, and TBIL. The AUC value of the nomogram130/80 was 0.705 (95% CI: 0.684\u20130.725). The AUCs of family history of hypertension, age, SBP, DBP, RDWSD, and TBIL were 0.523 (95% CI: 0.500\u20130.547), 0.629 (95% CI: 0.607\u20130.652), 0.669 (95% CI: 0.648\u20130.691), 0.623 (95% CI: 0.600\u20130.645), 0.532 (95% CI: 0.509\u20130.555), and 0.523 (95% CI: 0.500\u20130.547), respectively (Figure 3B). The C-index of nomogram130/80 was 0.705 (95% CI: 0.684\u20130.726) in the training set, which indicated that the model had a relatively bad predictive discrimination. Furthermore, the calibration curve showed a relatively low consistency between prediction and actual observation (Figure 4B).\n\n### Validation of nomogram140/90 and nomogram130/80 in the validation set\n\nSince the data of the training set were used to construct the nomogram, the data of the validation set were employed to validate the nomogram. The AUC of nomogram140/90 was 0.772 (95% CI: 0.749\u20130.795) (Figure 3C). The C-index of nomogram140/90 was 0.772 (95% CI: 0.748\u20130.796). The calibration curve also showed a high consistency between prediction and actual observation (Figure 4C). The AUC of nomogram130/80 was 0.697 (95% CI: 0.668\u20130.726) (Figure 3D). The C-index of nomogram130/80 was 0.697 (95% CI: 0.668\u20130.726). The calibration curve also showed a relatively low consistency between prediction and actual observation (Figure 4D).\n\n### Clinical utility of nomogram140/90 and nomogram130/80\n\nThe decision curve analysis (DCA) showed that the nomogram140/90 and nomogram130/80 had greater net benefits for the identification of hypertension than that of any single factor in the training sets, respectively (Figure 5A B). Similar results were found in the validation sets (Figure 5C D). In addition, based on the results of DCA, we further plotted clinical impact curves to evaluate the clinical utility of the nomograms. The clinical impact curves of nomogram140/90 and nomogram130/80 showed that the predicted probability coincided well with the actual probability in the training sets, respectively (Figure 6A B). Similar results were found in the validation sets (Figure 6C D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66419/elife-66419-fig5-v1.jpg)\n\n**Figure 5.:** (A) DCA of nomogram140/90 prediction in the training set of Group140/90. (B) DCA of nomogram130/80 prediction in the training set of Group130/80. (C) DCA of nomogram140/90 prediction in the validation set of Group140/90. (D) DCA of nomogram130/80 prediction in the validation set of Group130/80. SBP: systolic blood pressure; DBP: diastolic blood pressure; BMI: body mass index; MCHC: mean cell hemoglobin concentration; MPV: mean platelet volume; TP: total protein; TBIL: total bilirubin; TG: triglycerides; RDWSD: red blood cell distribution width standard deviation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66419/elife-66419-fig6-v1.jpg)\n\n**Figure 6.:** (A) Clinical impact curves of nomogram140/90 prediction in the training set of Group140/90. (B) Clinical impact curves of nomogram130/80 prediction in the training set of Group130/80. (C) Clinical impact curves of nomogram140/90 prediction in the validation set of Group140/90. (D) Clinical impact curves of nomogram130/80 prediction in the validation set of Group130/80.\n\n### Comparison between nomogram140/90 and nomogram130/80\n\nIn Group130/80, compared with the nomogram130/80, the nomogram140/90 resulted in a categorical net reclassification improvement (NRI) of 0.0081 (95% CI: \u22120.0097\u20130.0258, p=0.372), continuous NRI of 0.1174 (95% CI: 0.0517\u20130.1831, p<0.001), and integrated discrimination improvement (IDI) of 0.0032 (95% CI: 0.0001\u20130.0063, p=0.0432) for predicting the risk of hypertension. These results indicated that the nomogram140/90 exhibited superior predictive capability than nomogram130/80.\n\n### Website of nomogram140/90\n\nThe web-based user-friendly calculator of nomogram140/90 (https://haijianglaoqi.shinyapps.io/Risk-of-hypertension/) was developed and freely available online to help patients and physicians to calculate the risk of hypertension.\n\n## Discussion\n\nAccurate and timely diagnosis of hypertension is of great importance for effective therapy. Therefore, it is necessary to establish a model to estimate the risk of hypertension to aid in risk stratification and management. Some hypertension risk prediction models have been preliminarily developed in different populations in the past decade, such as in Iranian, Korean, Japanese, and Indian (Bozorgmanesh et al., 2011; Lim et al., 2013; Otsuka et al., 2015; Sathish et al., 2016). In these models, the risk factors of hypertension varied widely across studies. Age, SBP, DBP, and current smoking status were the most common independent factors in the studied population, and all of them were included in four prediction models. However, there is no agreement among investigators as to what constitutes a major predictor. It is therefore suggested that a hypertension risk prediction model developed in the particular racial, ethnic, or national groups may not be directly applied to other populations.\n\nIn China, some hypertension risk prediction models were also established. In 2016, Chen et al., 2016 constructed a sex-specific multivariable hypertension prediction model based on northern urban Han Chinese population. The predictive model yielded an AUC of 0.761 for men and 0.753 for women. The limitation of their study is that it did not perform internal or external validation. In 2019, Xu et al., 2019 constructed several predictive models for hypertension among Chinese rural populations. In the training set, AUCs ranged from 0.720 to 0.767 for men and from 0.740 to 0.809 for women. In the testing set, AUCs ranged from 0.722 to 0.773 for men and from 0.698 to 0.765 for women. Two studies mentioned above were carried out either in a single rural area or urban area. Another predicted model for hypertension based on a large cross-sectional study was established recently (Ren et al., 2020). In spite of a large group of people (73,158 samples), the prediction performances of the model were simply assessed by probability of disease (POD) index and AUC values (76.52% in the train set and 75.81% in the test set). Therefore, the present study might be the first one to develop nomogram for the prediction of hypertension based on systematic assessment and validation in China.\n\nIn this study, according to two diagnostic criteria of hypertension, we developed and validated two nomograms for the prediction of hypertension based on a 10-year retrospective cohort study in Chinese population. Both nomograms were constructed mainly based on the physical examination data. The nomogram140/90 incorporated 10 parameters including family history of hypertension, age, SBP, DBP, BMI, MCHC, MPV, TP, TBIL, and TG. The nomogram130/80 incorporated six parameters including family history of hypertension, age, SBP, DBP, RDWSD, and TBIL. All parameters are readily available in routine health examinations. Therefore, these nomograms will be useful for the in-depth assessment without the assistance of physicians. Notably, receiver operating characteristic (ROC) analysis indicated that AUC of nomogram140/90 was higher than that of nomogram130/80. The nomogram140/90 also displayed excellent discrimination with a C-index of 0.75 and good calibration. High C-index value of 0.772 could still be reached in the internal validation. DCA and clinical impact curve showed that the majority of the threshold probabilities in this model had good net benefits. Moreover, NRI and IDI were originally proposed to characterize accuracy improvement in predicting a binary outcome, when new biomarkers are added to regression models. Most recently, these two indices have been extended from binary outcomes to multicategorical and survival outcomes (Wang et al., 2020). For example, in 2020, Zhang et al. compared the predictive ability of a stroke prediction model (China-PAR) with the revised Framingham Stroke Risk Score (R-FSRS) for 5-year stroke incidence in a community cohort of Chinese adults [Zhang et al., 2020]. The two prediction models have five same risk factors, as well as two additional factors in R-FSRS and six additional factors in China-PAR. The NRI and IDI values were assessed to compare the discrimination ability of two prediction models. Similarly, to better assess the performance of nomogram140/90 and nomogram130/80, the NRI and IDI were also used to determine the best model. In this study, the NRI and IDI showed that the nomogram140/90 exhibited superior performance than nomogram130/80. Thus, the nomogram140/90 is the most sensitive hypertension risk prediction tool under the promise of guaranteeing accuracy.\n\nMultivariate logistic regression analysis revealed that gender was not an independent predictor for hypertension in our study. Similar to our study, researchers from Iran revealed the same result, reporting that sex was not found to be an independent risk factor for hypertension (Talaei et al., 2014). Nonetheless, several previous studies have reported gender to be significantly associated with hypertension (Chen et al., 2016; Fidalgo et al., 2019; Zheng et al., 2014; Kshirsagar et al., 2010). It is still controversial whether the incidence of hypertension is associated with gender. In the future, the role of gender on blood pressure and its correlation with hypertension need further evaluation with larger population cohorts.\n\nIn our study, the total incidence of hypertension was 24.77% and 37.92% at a cut-off value of 140/90 mmHg and 130/80 mmHg, respectively. The reported prevalence of hypertension in China shows a great geographical variation, ranging from 23.2% to 44.7% (Joint Committee for Guideline Revision, 2019; Lu et al., 2017; Asgari et al., 2020; Labasangzhu et al., 2020). The difference between these studies may be caused by the following reasons. Firstly, the surveys mentioned above were conducted in different periods and in different age groups by different organizations, which may result in inconsistencies. Secondly, different dietary habits and lifestyles among different populations may contribute to observed differences. For example, mean sodium intake of northern Chinese was notably higher than that of southerners [Heizhati et al., 2020]. That excessive salt intake increases the risk of hypertension has been well documented in epidemiological and clinical studies (Anderson et al., 2010).\n\nThere are also some limitations in our study. Firstly, as mentioned above, the nomogram was constructed based on multivariate analysis of physical examination data between 2009 and 2019. Loss to follow-up and missing data reduced the effective sample size and may threaten the internal validity of the study. Secondly, some subjects who were diagnosed with secondary hypertension may be also included in this study. The diagnosis of hypertension may lack strictness. Thirdly, the nomogram showed medium prediction accuracy may suggest that other factors should be included. Many blood parameters were deleted because of missing data. These may have inevitably caused bias. The prediction accuracy could perhaps be improved in further studies with large sample sizes and more variables. Further multicenter external validation should be performed to verify the discriminating ability and generalizability of our nomogram.\n\n## Materials and methods\n\n### Study population and data collection\n\nThe current study was carried out based on a large cohort study, named the Physical Examination Survey. The survey was conducted among subjects who underwent medical examination in a physical examination center of Hebei Province in 2009 and 2019. As shown in Figure 7, a total of 51,165 and 209,636 subjects who underwent physical examination in 2009 and 2019 were enrolled in this study, respectively. To avoid potential observational bias, we excluded subjects who had taken antihypertensive drugs before the medical examination. Subjects who did not finish the procedures of this survey and had missing data on the collected parameters were also excluded. After rigorous screening, 8020 subjects who underwent medical examination both in 2009 and 2019 were finally enrolled. At a cut-off value of 140/90 mmHg, 6201 subjects who had normal blood pressure in 2009 were enrolled in Group140/90. At a cut-off value of 130/80 mmHg, 3771 subjects who had normal blood pressure in 2009 were enrolled in Group130/80. The data of Group140/90 and Group130/80 were used to construct the nomogram140/90 and nomogram130/80 for predicting hypertension, respectively.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66419/elife-66419-fig7-v1.jpg)\n\n**Figure 7.:** A total of 51,165 and 209,636 subjects who underwent physical examination in 2009 and 2019 were enrolled in this study, respectively. 8020 subjects who underwent medical examination both in 2009 and 2019 were finally enrolled. At a cut-off value of 140/90 mmHg, 6201 subjects who had normal blood pressure in 2009 were enrolled in Group140/90. At a cut-off value of 130/80 mmHg, 3771 subjects who had normal blood pressure in 2009 were enrolled in Group130/80. The data of Group140/90 and Group130/80 were used to construct the nomogram140/90 and nomogram130/80 for predicting hypertension, respectively.\n\nThe socio-demographic and clinical parameters from the electronic medical records system were collected, including hypertension status in 2009, hypertension status in 2019, gender, family history of hypertension, smoking status, drinking status, age, SBP, DBP, height, weight, BMI, white blood cell count (WBC), lymphocyte count (LYMPH), neutrophil count (NEUT), lymphocyte percentage (LYMPHP), neutrophil percentage (NEUTP), red blood cell count (RBC), hemoglobin (HGB), hematocrit (HCT), mean corpuscular volume (MCV), mean corpuscular hemoglobin (MCH), MCHC, red blood cell distribution width-coefficient of variation (RDWCV), RDWSD, platelet count (PLT), MPV, plateletcrit (PCT), platelet distribution width (PDW), middle cell count (MID), middle cell percentage (MIDP), alanine aminotransferase (ALT), aspartate transaminase (AST), TP, albumin (ALB), total bilirubin (TBIL), direct bilirubin (DBIL), glucose (GLU), cholesterol (CHOL), TG, neutrophil-to-lymphocyte ratio (NLR), and platelet-to-lymphocyte ratio (PLR).\n\nAll procedures were approved by the Ethics Committee of Hebei General Hospital. All subjects\u2019 data were anonymized and de-identified prior to the analyses. The requirement for informed consent was therefore waived.\n\n### Definition and assessment\n\nHypertension was defined as two diagnostic criteria: (1) SBP \u2265 140 mmHg or DBP \u2265 90 mmHg or antihypertensive medication use according to 2018 Chinese Guidelines and 2018 ESC/ESH guidelines; (2) SBP \u2265 130 mmHg or DBP \u2265 80 mmHg or antihypertensive medication use according to 2017 ACC-AHA guidelines. Blood pressure was measured after a minimum of 5 min rest in sitting position. BMI was computed by the ratio of body weight (kg) to height squared (m2). The blood samples were collected in the morning on an empty stomach.\n\n### Statistical Aanalysis\n\nFor construction and validation of the nomogram, the subjects were randomly divided into training set and validation set at a ratio of 2:1, respectively. The comparability between the two sets was then evaluated. Continuous variables with normal distribution were described as means \u00b1 standard deviation and analyzed with Student\u2019s t-test to infer the differences between the two sets. Continuous variables with skewed distribution were described as median (25% percentile, 75% percentile) and analyzed with Mann\u2013Whitney U test. Categorical data were presented as numbers (percent) and analyzed with chi-square test or the Fisher\u2019s exact test for their comparisons.\n\nThe LASSO regression technique was used to select the optimal predictive features in the training set. Then, multivariate logistic regression analysis was used to identify the independent factors by incorporating the feature selected in the LASSO regression. Following the multivariate analysis, factors with a two-sided p value <0.05 were selected for developing the nomograms. The predictive accuracy of nomograms was measured by AUC of the ROC curve and concordance index (C-index) in both the training and validation sets. The consistency between the actual outcomes and predicted probabilities was measured by the calibration curve. The clinical utility of the nomograms was measured by DCA and clinical impact curves for a population size as 1000. To compare the predictive accuracy of the nomogram140/90 with that of nomogram130/80, NRI and IDI were calculated.\n\nStatistical analyses were performed with R software version 4.0.0 (RRID:SCR_001905), SPSS version 24.0 (RRID:SCR_019096), and MedCalc 19.0.7 (RRID:SCR_015044). Two-sided p value < 0.05 was considered to be statistically significant.\n\n### Conclusion\n\nIn conclusion, based on a 10-year retrospective cohort study, we developed and validated a simple and reliable nomogram to predict the risk of hypertension for the population of China. The nomogram demonstrated favorable predictive accuracy, discrimination, and clinical utility in the training set and validation set, indicating good performance in practical application. This visualization model and website will aid the patients and physicians to predict the 10-year risk of hypertension and better clinical management.\n",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "4a8a1b8f-b569-4f8c-823a-ee05d1e2840a",
+      "submission_id": "19c186b2-f181-4f30-a5a8-6058a1a4be21",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arduino A Mangoni, Flinders Medical Centre Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66419.sa1](https://doi.org/10.7554/eLife.66419.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this work, the authors developed easy-to-use simple nomograms to predict the 10-year probability of hypertension from easily accessible health metrics. The study deposits an important dataset, and carries out classical multivariate analyses to arrive to a usable model. Not accounting for inter-dependencies may, however, limit the performance of the generated models. Going beyond nomograms and employing advanced, yet easily accessible, machine learning approaches may show the real potential of the compiled data.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Development and validation of a nomogram to better predict hypertension based on a 10-year retrospective cohort study\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Matthias Barton as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Richard Woodman (Reviewer #1).\n\nThe reviewers and Editors have discussed their reviews with one another, and this letter will help you prepare a revised submission.\n\nEssential revisions:\n\n\u2013 The title would benefit from the mention of the population involved in the study, as the outcomes will likely not be transferrable to other populations. For the sake of clarity, it will also help if the manuscript body explicitly mentions that the predicted hypertension probabilities are for the 10-year risk.\n\n\u2013 The search for independent features zooms in to 10 features for nomogram140/90 and 6 features for nomogram130/80. Biologically, any feature that has an association in defining the hypertension probability, should have a predictive relevance regardless whether the cutoff for the hypertension definition is 140/90 or 130/80. The used approach of feature trimming, and different numbers of features for the two nomograms, may neglect important interactions. Furthermore, the overall low number of features warrant the application of higher-end machine learning techniques for feature selection (if at all deemed to be necessary to eliminate any). For this, decision-tree-based techniques, such as random forests or gradient boosting machines, may have greater promise for arriving to better models, while internally producing feature importance rankings for possible elimination of the low performing ones (all done while accounting possible complex and multiplexed interactions between the features).\n\n\u2013 The authors should explain their rationale for using the LASSO e.g. that they used it as a variable selection technique to reduce the number of parameters and thereby simply the risk prediction model? What was the degree of correlation amongst the 40 available covariates? Details of the package used in R to perform the LASSO should be provided. What was the approach used for the chosen value of lambda to identify the final LASSO model e.g. lambda that provides the minimum cross-validated MSE or lambda with minimum MSE +1SE? Were interactions and higher-order variables assessed in the LASSO. If not, why not?\n\n\u2013 The calibration curve for BP 140/90 is, as the authors point out, poor especially for higher risk patients. This is a real concern if the model is to be used for accurate risk prediction in those at higher risk.\n\n\u2013 It seems the NRI and IDI were used to determine the best model using an estimated risk prediction score from 130/80 versus 140/90 as the outcome. Normally the NRI and IDI are used to determine the value of additional covariates for risk prediction whereas here the authors are basing the choice of the outcome on the NRI and IDI. The authors should explain the logic of this and justify the approach to the Journal readers.\n\n\u2013 How are the cases handled when only the SBP or the DBP falls beyond the cutoff, but not the pair? If excluded, can excluding such cases eliminate an important, high-risk subpopulation from the model development?\n\n\u2013 The discriminatory power of the model is relatively modest. The authors should describe how the prediction accuracy could perhaps be improved.\n\n\u2013 P-values to 5 decimal places are not necessary \u2013 consult the Journal guidelines.\n\n\u2013 TG and TBIL, as predictors of hypertension, may be result of chance and the chosen sample and random sample. Except for the internal validation, the authors should discuss the need for external validation of the risk prediction model.\n\n\u2013 Section 2.2, the second to last line. Written \"weight (Kg)\", should be \"weight (kg)\".\n\n\u2013 Section 2.3, the C-index metric is introduced first time in the text (not counting the Abstract), without defining and expanding it.\n\n\u2013 Section 3.3, written \"\u2026 was assessed with the AUC and c-index\", c should be capitalised for consistency.\n\n\u2013 Section 4 (Discussion), 3rd paragraph. Written \"\u2026 AUC of nomogram140/90 was higher than that of monogram140/90\". The last one should be \"nomogram130/80\".\n\n\u2013 In the same section, written \"Similar to our study, the Iranian research from revealed the same result\u2026\". Seems there is a missing word in between \"from\" and \"revealed\".\n\n\u2013 Figure 1 caption. Needs an expansion with a brief description of the content.\n\n\u2013 Figure 2. The x-axes in A and C are labelled as Log(\u03bb), while those for B and D are labelled as Log Lambda. Please, change them to be the same.\n\n\u2013 Figure 2 caption. The caption needs comments about the line colours and about the lines that stand out in B and D.\n\n\u2013 Figure 3 and the associate text will benefit from a brief description of how one should use the nomogram. It is easy to infer from the nomogram itself, but, considering the presence of multiple types of nomograms, explicitly describing the usage of this particular type will save a few minutes for the readers.\n\n\u2013 Figure 4. Please organise the line labelling brought next to the plots in an ascending or descending order for the corresponding AUC values.\n\n\u2013 Most tables are missing footnotes to describe the abbreviations.\n",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d79f389f-2ef2-4bf1-a873-1f8fed8b834d",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C1",
+      "claim": "Hypertension is a highly prevalent disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Background:Hypertension is a highly prevalent disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract background section without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "26205dc0-63ed-476b-916a-c49734378e0f",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C2",
+      "claim": "6201 subjects were enrolled in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods:6201 subjects were enrolled in the study and randomly divided into training set and validation set at a ratio of 2:1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the specific number of subjects enrolled.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "8cfe28ed-67ac-4f4e-8991-3f47de2244c7",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C3",
+      "claim": "Subjects were randomly divided into training set and validation set at a ratio of 2:1.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods:6201 subjects were enrolled in the study and randomly divided into training set and validation set at a ratio of 2:1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology for dividing subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "3d8c6e12-fa99-43eb-b0a9-79492e170f11",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C4",
+      "claim": "The LASSO regression technique was used to select the optimal predictive features.",
+      "claim_type": "EXPLICIT",
+      "source": "The LASSO regression technique was used to select the optimal predictive features, and multivariate logistic regression to construct the nomograms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the statistical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "7ddddc7a-7e58-4f70-8144-a8875362a377",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C5",
+      "claim": "Multivariate logistic regression was used to construct the nomograms.",
+      "claim_type": "EXPLICIT",
+      "source": "The LASSO regression technique was used to select the optimal predictive features, and multivariate logistic regression to construct the nomograms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the statistical method used for nomogram construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "f2ce5860-d863-448b-9e23-6b833e605b48",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C6",
+      "claim": "The nomogram140/90 was developed with the parameters of family history of hypertension, age, SBP, DBP, BMI, MCHC, MPV, TBIL, and TG.",
+      "claim_type": "EXPLICIT",
+      "source": "Results:The nomogram140/90 was developed with the parameters of family history of hypertension, age, SBP, DBP, BMI, MCHC, MPV, TBIL, and TG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript lists the specific parameters included in the nomogram.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "35b697a2-1044-4370-9768-46bf48ef8ad8",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C7",
+      "claim": "AUCs of nomogram140/90 were 0.750 in the training set and 0.772 in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "AUCs of nomogram140/90 were 0.750 in the training set and 0.772 in the validation set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific AUC values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "07fc7355-a7b3-44b8-a85e-78cdd439ff42",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C8",
+      "claim": "C-index of nomogram140/90 were 0.750 in the training set and 0.772 in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "C-index of nomogram140/90 were 0.750 in the training set and 0.772 in the validation set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific C-index values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "c59bf440-89e9-4b14-83ce-766755660686",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C9",
+      "claim": "The nomogram130/80 was developed with the parameters of family history of hypertension, age, SBP, DBP, RDWSD, and TBIL.",
+      "claim_type": "EXPLICIT",
+      "source": "The nomogram130/80 was developed with the parameters of family history of hypertension, age, SBP, DBP, RDWSD, and TBIL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript lists the specific parameters included in the nomogram.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "8352b6eb-b141-4a70-9bc6-68cce9df9469",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C10",
+      "claim": "AUCs of nomogram130/80 were 0.705 in the training set and 0.697 in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "AUCs of nomogram130/80 were 0.705 in the training set and 0.697 in the validation set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific AUC values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "3cb0f414-7ae8-41da-878e-d3ff7649bdca",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C11",
+      "claim": "C-index of nomogram130/80 were 0.705 in the training set and 0.697 in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "C-index of nomogram130/80 were 0.705 in the training set and 0.697 in the validation set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific C-index values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "51ff5d8c-7eed-444e-b575-43a83e45cdaf",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C12",
+      "claim": "Both nomograms demonstrated favorable clinical consistency.",
+      "claim_type": "EXPLICIT",
+      "source": "Both nomograms demonstrated favorable clinical consistency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on calibration curves and other assessments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "75c1fc9c-85fa-427d-9aa2-d3a94239a4f7",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C13",
+      "claim": "The nomogram140/90 exhibited superior performance than the nomogram130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "NRI and IDI showed that the nomogram140/90 exhibited superior performance than the nomogram130/80.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides NRI and IDI analysis results supporting this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "d117e2de-548d-40d6-a724-fa47faf2a40f",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C14",
+      "claim": "The web-based calculator of nomogram140/90 was built online.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the web-based calculator of nomogram140/90 was built online.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that a web-based calculator was created.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "9a442476-745c-4e66-b9d3-e68eabb55bea",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C15",
+      "claim": "Hypertension is the most common risk factor for cardiovascular diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Systemic arterial hypertension (hereafter referred to as hypertension) is the most common risk factor for cardiovascular diseases and the biggest contributor to world mortality from noncommunicable diseases (Mills et al., 2020; Burnier and Egan, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mills et al., 2020 and Burnier and Egan, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "bae6051a-6b57-4eb6-a7f9-8b47959a04d3",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C16",
+      "claim": "Hypertension is the biggest contributor to world mortality from noncommunicable diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Systemic arterial hypertension (hereafter referred to as hypertension) is the most common risk factor for cardiovascular diseases and the biggest contributor to world mortality from noncommunicable diseases (Mills et al., 2020; Burnier and Egan, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mills et al., 2020 and Burnier and Egan, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "a014bc25-ec47-4177-8dbb-3aef4ef8fedb",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C17",
+      "claim": "The number of adults with hypertension increased from 594 million in 1975 to 1.13 billion in 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, the number of adults with hypertension increased from 594 million in 1975 to 1.13 billion in 2015; the increase is especially significant in low-income and middle-income countries (NCD Risk Factor Collaboration (NCD-RisC), 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to NCD Risk Factor Collaboration (NCD-RisC), 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "146bf0f9-7fc7-4968-a301-07e5ec115194",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C18",
+      "claim": "The increase in hypertension is especially significant in low-income and middle-income countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, the number of adults with hypertension increased from 594 million in 1975 to 1.13 billion in 2015; the increase is especially significant in low-income and middle-income countries (NCD Risk Factor Collaboration (NCD-RisC), 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to NCD Risk Factor Collaboration (NCD-RisC), 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "8bfe449e-e7d0-4ea0-8b59-e24c69e53cde",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C19",
+      "claim": "The number of adults with hypertension is predicted to rise to 1.56 billion by 2025.",
+      "claim_type": "EXPLICIT",
+      "source": "As estimated, the number of adults with hypertension is predicted to rise to 1.56 billion by 2025 (Kearney et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kearney et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "a6bfde33-4245-428e-a6c7-23748abcb5de",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C20",
+      "claim": "High systolic blood pressure is the leading risk factor for both number of deaths and percentage of disability-adjusted life-years in China.",
+      "claim_type": "EXPLICIT",
+      "source": "In China, high systolicblood pressure (SBP) is the leading risk factor for both number of deaths and percentage of disability-adjusted life-years, which accounted for 2.54 million deaths in 2017 (Zhou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zhou et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "b9ca13c9-25df-4e84-aa2c-7eaa0a7efec1",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C21",
+      "claim": "High systolic blood pressure accounted for 2.54 million deaths in China in 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "In China, high systolicblood pressure (SBP) is the leading risk factor for both number of deaths and percentage of disability-adjusted life-years, which accounted for 2.54 million deaths in 2017 (Zhou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zhou et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "ad9275b6-f7eb-4df8-8b06-18c153e3183b",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C22",
+      "claim": "23.2% (nearly 244.5 million) of Chinese adults have hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, according to the latest nationwide survey of 451,755 participants from 31 provinces in China, 23.2% (nearly 244.5 million) of Chinese adults have hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a nationwide survey as the source of this statistic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "abe6f776-8d85-4d80-8833-188e40028eb2",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C23",
+      "claim": "Among individuals with hypertension in China, 46.9% are aware of their condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Among individuals with hypertension, while 46.9% are aware of their condition and 40.7% take prescribed antihypertensive medications, only 15.3% are in control of their blood pressure (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "422d25f0-bb85-44f5-a2c4-2103ed5ba3ed",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C24",
+      "claim": "Among individuals with hypertension in China, 40.7% take prescribed antihypertensive medications.",
+      "claim_type": "EXPLICIT",
+      "source": "Among individuals with hypertension, while 46.9% are aware of their condition and 40.7% take prescribed antihypertensive medications, only 15.3% are in control of their blood pressure (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "ef0b4036-df12-445a-a0b3-ba93eeb1dd1d",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C25",
+      "claim": "Among individuals with hypertension in China, only 15.3% are in control of their blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Among individuals with hypertension, while 46.9% are aware of their condition and 40.7% take prescribed antihypertensive medications, only 15.3% are in control of their blood pressure (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "10eac5a9-8fff-44e5-901b-0449113424ab",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C26",
+      "claim": "Early detection of hypertension is vitally important in its control and effective treatment, especially with high-risk subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Early detection of hypertension is vitally important in its control and effective treatment, especially with high-risk subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "a90766ab-8fe0-478a-8904-ca71250d8e84",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C27",
+      "claim": "The traditional diagnostic criteria of hypertension were SBP \u2265140 mmHg and/or diastolic blood pressure (DBP) \u226590 mmHg for the untreated participants, or those taking medication for hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, the diagnostic criteria of hypertension were SBP \u2265140 mmHg and/or diastolicblood pressure (DBP) \u226590 mmHg for the untreated participants, or those taking medication for hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established medical criteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "0b3d1f1c-8fd3-46f2-9924-30674d1f3058",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C28",
+      "claim": "The 2018 Chinese Guidelines for Prevention and Treatment of Hypertension and the 2018 European Society of Cardiology/European Society of Hypertension guidelines broadly accepted the 140/90 mmHg criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The criteria were broadly accepted by both the 2018 Chinese Guidelines for Prevention and Treatment of Hypertension and the 2018 European Society of Cardiology/European Society of Hypertension guidelines (2018 ESC/ESH) (Joint Committee for Guideline Revision, 2019 ; Williams et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Joint Committee for Guideline Revision, 2019 and Williams et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "9b8de2ca-742a-4f76-8a1a-182799857317",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C29",
+      "claim": "In November 2017, the American College of Cardiology and the American Heart Association published a guideline that redefined the diagnostic criteria of hypertension from 140/90 mmHg to 130/80 mmHg for SBP/DBP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in November 2017, the American College of Cardiology and the American Heart Association published a guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults (2017 ACC/AHA) (Whelton et al., 2018), which redefined the diagnostic criteria of hypertension from 140/90 mmHg to 130/80 mmHg for SBP/DBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Whelton et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "8201efa5-499a-4c7f-8c45-17892cf40b59",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C30",
+      "claim": "The Dietary Approaches to Stop Hypertension diet is reported to be closely related to lower risk of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Dietary Approaches to Stop Hypertension diet is reported to be closely related to lower risk of hypertension (Navarro-Prado et al., 2020; Francisco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Navarro-Prado et al., 2020 and Francisco et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "428662c8-5bf7-4fb0-8677-42639b494514",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C31",
+      "claim": "Psychosocial stress, including occupational stress, socioeconomic pressure, anxiety, and depression, was all associated with greater risk of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "It was showed that psychosocial stress, including occupational stress, socioeconomic pressure, anxiety, and depression, was all associated with greater risk of hypertension, and hypertensive patients had higher level of psychosocial stress compared to normotension patients (Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Liu et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "440867a9-ad84-48df-a380-32f589f3ef79",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C32",
+      "claim": "Hypertensive patients had higher level of psychosocial stress compared to normotension patients.",
+      "claim_type": "EXPLICIT",
+      "source": "It was showed that psychosocial stress, including occupational stress, socioeconomic pressure, anxiety, and depression, was all associated with greater risk of hypertension, and hypertensive patients had higher level of psychosocial stress compared to normotension patients (Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Liu et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "184da3d3-3259-4eeb-b8fb-2d3713a54f5e",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C33",
+      "claim": "The total prevalence of hypertension in 2019 was 24.77% (1536 subjects) in Group140/90.",
+      "claim_type": "EXPLICIT",
+      "source": "In Group140/90, as well as the cut-off value of 140/90 mmHg, the total prevalence of hypertension in 2019 was 24.77% (1536 subjects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific prevalence data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "5b5fe2d0-880f-4ac1-86a7-20a9adf9d024",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C34",
+      "claim": "4134 subjects were assigned into the training set and 2067 in the validation set in Group140/90.",
+      "claim_type": "EXPLICIT",
+      "source": "At a ratio of 2:1, 4134 subjects were assigned into the training set and 2067 in the validation set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers for the training and validation sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "b3604a02-fdd0-43b4-8ff6-d93239be2435",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C35",
+      "claim": "The prevalence of hypertension was 25.35% (1048 subjects) in the training set of Group140/90.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of hypertension was 25.35% (1048 subjects) in the training set and 23.61% (488 subjects) in the validation set, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific prevalence data for the training set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "1b96ab69-a7cc-4d2e-b9cc-65267fe9d508",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C36",
+      "claim": "The prevalence of hypertension was 23.61% (488 subjects) in the validation set of Group140/90.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of hypertension was 25.35% (1048 subjects) in the training set and 23.61% (488 subjects) in the validation set, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific prevalence data for the validation set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "06689761-edee-4246-8315-3ed5f79cc659",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C37",
+      "claim": "There were no significant differences in the characteristics between the training set and validation set in Group140/90.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant differences in the characteristics of hypertension status in 2019, gender, family history of hypertension, smoking status, drinking status, age, SBP, DBP, height, weight, body mass index (BMI), white blood cell count (WBC), lymphocyte count (LYMPH), neutrophil count (NEUT), lymphocyte percentage (LYMPHP), neutrophil percentage (NEUTP), red blood cell count (RBC), hemoglobin (HGB), hematocrit (HCT), mean corpuscular volume (MCV), mean corpuscular hemoglobin (MCH), mean cell hemoglobin concentration (MCHC), red blood cell distribution width-coefficient of variation (RDWCV), red blood cell distribution width standard deviation (RDWSD), platelet count (PLT), mean platelet volume (MPV), plateletcrit (PCT), platelet distribution width (PDW), middle cell count (MID), middle cell percentage (MIDP), alanine aminotransferase (ALT), aspartate transaminase (AST), total protein (TP), albumin (ALB), total bilirubin (TBIL), direct bilirubin (DBIL), glucose (GLU), cholesterol (CHOL), triglycerides (TG), neutrophil-to-lymphocyte ratio (NLR), and platelet-to-lymphocyte ratio (PLR) between the two sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that statistical comparisons showed no significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "39a1d05b-7106-4682-825b-3b11f0027818",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C38",
+      "claim": "The total prevalence of hypertension in 2019 was 37.92% (1430 subjects) in Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "In Group130/80, as well as the cut-off value of 130/80 mmHg, the total prevalence of hypertension in 2019 was 37.92% (1430 subjects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific prevalence data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "26488a4f-5374-41ae-be42-ec7b257650f7",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C39",
+      "claim": "2514 subjects were assigned into the training set and 1257 in the validation set in Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "At a ratio of 2:1, 2514 subjects were assigned into the training set and 1257 in the validation set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers for the training and validation sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "e4140635-f653-4a5d-82e6-64cc19105029",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C40",
+      "claim": "The prevalence of hypertension was 37.39% (940 subjects) in the training set of Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of hypertension was 37.39% (940 subjects) in the training set and 38.98% (490 subjects) in the validation set, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific prevalence data for the training set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "2a70222c-b5af-436e-a485-fc3de110e7a2",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C41",
+      "claim": "The prevalence of hypertension was 38.98% (490 subjects) in the validation set of Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of hypertension was 37.39% (940 subjects) in the training set and 38.98% (490 subjects) in the validation set, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific prevalence data for the validation set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "36848ca0-929d-44bb-8579-f7bc5b2af22a",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C42",
+      "claim": "21 variables had nonzero coefficients in the LASSO regression model in Group140/90.",
+      "claim_type": "EXPLICIT",
+      "source": "In Group140/90, 21 variables had nonzero coefficients in the least absoluteshrinkage and selection operator (LASSO) regression model based on the analysis of the training set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the results of LASSO regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "839e2ce4-8691-41be-9080-34b876f5e6aa",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C43",
+      "claim": "The 21 variables with nonzero coefficients in Group140/90 included gender, family history of hypertension, age, SBP, DBP, height, BMI, LYMPH, LYMPHP, NEUTP, MCHC, RDWCV, RDWSD, PLT, MPV, AST, TP, TBIL, GLU, TG, and NLR.",
+      "claim_type": "EXPLICIT",
+      "source": "These variables included gender, family history of hypertension, age, SBP, DBP, height, BMI, LYMPH, LYMPHP, NEUTP, MCHC, RDWCV, RDWSD, PLT, MPV, AST, TP, TBIL, GLU, TG, and NLR (Figure 1A B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript lists the variables and references Figure 1A B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "d51a0b57-44a6-4dfc-9044-ca7bbddf78be",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C44",
+      "claim": "Family history of hypertension, age, SBP, DBP, BMI, MCHC, MPV, TP, TBIL, and TG were independent risk factors for hypertension in Group140/90.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariate logistic regression analysis revealed that family history of hypertension, age, SBP, DBP, BMI, MCHC, MPV, TP, TBIL, and TG were independent risk factors for hypertension (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the results of multivariate logistic regression analysis and references Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "a653e498-a037-4386-a7d6-c7f18002c540",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C45",
+      "claim": "21 variables had nonzero coefficients in the LASSO regression model in Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "In Group130/80, 21 variables had nonzero coefficients in the LASSO regression model based on the analysis of the training set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the results of LASSO regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "38a9e6d8-2d13-4cee-93d7-d7ee7fe2e0a2",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C46",
+      "claim": "The 21 variables with nonzero coefficients in Group130/80 included family history of hypertension, drinking status, age, SBP, DBP, weight, BMI, WBC, NEUT, LYMPHP, RBC, RDWSD, PCT, PDW, ALT, AST, TP, TBIL, GLU, CHOL, and TG.",
+      "claim_type": "EXPLICIT",
+      "source": "These variables included family history of hypertension, drinking status, age, SBP, DBP, weight, BMI, WBC, NEUT, LYMPHP, RBC, RDWSD, PCT, PDW, ALT, AST, TP, TBIL, GLU, CHOL, and TG (Figure 1C D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript lists the variables and references Figure 1C D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "d1f0ff1d-c106-40f3-91fb-e9a0b05ccd26",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C47",
+      "claim": "Family history of hypertension, age, SBP, DBP, RDWSD, and TBIL were independent risk factors for hypertension in Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariate logistic regression analysis revealed that family history of hypertension, age, SBP, DBP, RDWSD, and TBIL were independent risk factors for hypertension (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the results of multivariate logistic regression analysis and references Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "f245dda8-8cf3-473d-a252-3d1ba1842611",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C48",
+      "claim": "The AUC value of the nomogram140/90 was 0.750 (95% CI: 0.733\u20130.767) in the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC value of the nomogram140/90 was 0.750 (95% CI: 0.733\u20130.767).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific AUC values from ROC analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "a0ef024d-0300-46cb-8e5a-e00376b2b380",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C49",
+      "claim": "The C-index of nomogram140/90 was 0.75 (95% CI: 0.733\u20130.767) in the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-index of nomogram140/90 was 0.75 (95% CI: 0.733\u20130.767) in the training set, which indicated that the model had a good predictive discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific C-index values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "e982a206-a208-45dd-b080-16fd9218362a",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C50",
+      "claim": "The nomogram140/90 model had a good predictive discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-index of nomogram140/90 was 0.75 (95% CI: 0.733\u20130.767) in the training set, which indicated that the model had a good predictive discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the C-index value as indicating good predictive discrimination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "16c76460-c205-4a31-87e2-b70a9c817cc3",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C51",
+      "claim": "The calibration curve showed a high consistency between prediction and actual observation for nomogram140/90 in the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the calibration curve showed a high consistency between prediction and actual observation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this conclusion and references Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "f257469e-2e4c-4deb-933f-b6c4ae8078d1",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C52",
+      "claim": "The AUC value of the nomogram130/80 was 0.705 (95% CI: 0.684\u20130.725) in the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC value of the nomogram130/80 was 0.705 (95% CI: 0.684\u20130.725).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific AUC values from ROC analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "7caf00ee-e388-4f29-b431-10b0728f92e4",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C53",
+      "claim": "The C-index of nomogram130/80 was 0.705 (95% CI: 0.684\u20130.726) in the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-index of nomogram130/80 was 0.705 (95% CI: 0.684\u20130.726) in the training set, which indicated that the model had a relatively bad predictive discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific C-index values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "4ebcdba5-fdd7-421e-bbee-e4a0fea54c9c",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C54",
+      "claim": "The nomogram130/80 model had a relatively bad predictive discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-index of nomogram130/80 was 0.705 (95% CI: 0.684\u20130.726) in the training set, which indicated that the model had a relatively bad predictive discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the C-index value as indicating relatively bad predictive discrimination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "71094040-e585-448b-8d03-beeb2128c9f1",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C55",
+      "claim": "The calibration curve showed a relatively low consistency between prediction and actual observation for nomogram130/80 in the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the calibration curve showed a relatively low consistency between prediction and actual observation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this conclusion and references Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "dbb49f49-b4b0-48d8-a309-e3950bfd5b3b",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C56",
+      "claim": "The AUC of nomogram140/90 was 0.772 (95% CI: 0.749\u20130.795) in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC of nomogram140/90 was 0.772 (95% CI: 0.749\u20130.795) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific AUC values from ROC analysis and references Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "861ae922-e093-4488-b42d-a0a6bab874fd",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C57",
+      "claim": "The C-index of nomogram140/90 was 0.772 (95% CI: 0.748\u20130.796) in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-index of nomogram140/90 was 0.772 (95% CI: 0.748\u20130.796).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific C-index values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "d9bc61be-b79d-4d82-a4ca-fe053fcece2f",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C58",
+      "claim": "The calibration curve showed a high consistency between prediction and actual observation for nomogram140/90 in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "The calibration curve also showed a high consistency between prediction and actual observation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this conclusion and references Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "c3a79976-b224-46b6-bc68-52fa42c6b187",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C59",
+      "claim": "The AUC of nomogram130/80 was 0.697 (95% CI: 0.668\u20130.726) in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC of nomogram130/80 was 0.697 (95% CI: 0.668\u20130.726) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific AUC values from ROC analysis and references Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "bc001a80-a2a1-4223-9726-0da7148295fb",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C60",
+      "claim": "The C-index of nomogram130/80 was 0.697 (95% CI: 0.668\u20130.726) in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-index of nomogram130/80 was 0.697 (95% CI: 0.668\u20130.726).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific C-index values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "a9f6ad02-2ae9-4ab8-835b-002befec6b6f",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C61",
+      "claim": "The calibration curve showed a relatively low consistency between prediction and actual observation for nomogram130/80 in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "The calibration curve also showed a relatively low consistency between prediction and actual observation (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this conclusion and references Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "0af24545-9b09-48ea-bea0-3fa6ee90394a",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C62",
+      "claim": "The nomogram140/90 and nomogram130/80 had greater net benefits for the identification of hypertension than that of any single factor in the training sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The decision curve analysis (DCA) showed that the nomogram140/90 and nomogram130/80 had greater net benefits for the identification of hypertension than that of any single factor in the training sets, respectively (Figure 5A B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the results of DCA and references Figure 5A B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "df5569b2-23c8-4ca6-97ba-8cd94662f45b",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C63",
+      "claim": "Similar results were found in the validation sets for DCA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were found in the validation sets (Figure 5C D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states that similar DCA results were found in validation sets and references Figure 5C D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "4657ff2b-1453-422b-9c03-87cb225e4314",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C64",
+      "claim": "The clinical impact curves of nomogram140/90 and nomogram130/80 showed that the predicted probability coincided well with the actual probability in the training sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical impact curves of nomogram140/90 and nomogram130/80 showed that the predicted probability coincided well with the actual probability in the training sets, respectively (Figure 6A B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the results of clinical impact curve analysis and references Figure 6A B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "9b77adac-7614-4aef-86ee-e4229a4c1457",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C65",
+      "claim": "Similar results were found in the validation sets for clinical impact curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were found in the validation sets (Figure 6C D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states that similar clinical impact curve results were found in validation sets and references Figure 6C D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "fdc53425-6933-41b6-bd65-761b7cb70d8e",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C66",
+      "claim": "Compared with the nomogram130/80, the nomogram140/90 resulted in a categorical NRI of 0.0081 (95% CI: \u22120.0097\u20130.0258, p=0.372) in Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "In Group130/80, compared with the nomogram130/80, the nomogram140/90 resulted in a categorical net reclassification improvement (NRI) of 0.0081 (95% CI: \u22120.0097\u20130.0258, p=0.372), continuous NRI of 0.1174 (95% CI: 0.0517\u20130.1831, p<0.001), and integrated discrimination improvement (IDI) of 0.0032 (95% CI: 0.0001\u20130.0063, p=0.0432) for predicting the risk of hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific NRI values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "8e00a322-a0f0-4280-909b-1acbf609b0a6",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C67",
+      "claim": "Compared with the nomogram130/80, the nomogram140/90 resulted in a continuous NRI of 0.1174 (95% CI: 0.0517\u20130.1831, p<0.001) in Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "In Group130/80, compared with the nomogram130/80, the nomogram140/90 resulted in a categorical net reclassification improvement (NRI) of 0.0081 (95% CI: \u22120.0097\u20130.0258, p=0.372), continuous NRI of 0.1174 (95% CI: 0.0517\u20130.1831, p<0.001), and integrated discrimination improvement (IDI) of 0.0032 (95% CI: 0.0001\u20130.0063, p=0.0432) for predicting the risk of hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific continuous NRI values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "9fb38d50-90fa-4eee-9f23-0290757d133a",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C68",
+      "claim": "Compared with the nomogram130/80, the nomogram140/90 resulted in an IDI of 0.0032 (95% CI: 0.0001\u20130.0063, p=0.0432) in Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "In Group130/80, compared with the nomogram130/80, the nomogram140/90 resulted in a categorical net reclassification improvement (NRI) of 0.0081 (95% CI: \u22120.0097\u20130.0258, p=0.372), continuous NRI of 0.1174 (95% CI: 0.0517\u20130.1831, p<0.001), and integrated discrimination improvement (IDI) of 0.0032 (95% CI: 0.0001\u20130.0063, p=0.0432) for predicting the risk of hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific IDI values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "e9ac5801-60e2-48cd-883d-2e3da2af7dce",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C69",
+      "claim": "The web-based user-friendly calculator of nomogram140/90 is available at https://haijianglaoqi.shinyapps.io/Risk-of-hypertension/.",
+      "claim_type": "EXPLICIT",
+      "source": "The web-based user-friendly calculator of nomogram140/90 (https://haijianglaoqi.shinyapps.io/Risk-of-hypertension/) was developed and freely available online to help patients and physicians to calculate the risk of hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the specific URL for the web-based calculator.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "1d05baa7-e76c-4857-baf0-421b995c1121",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C70",
+      "claim": "Some hypertension risk prediction models have been preliminarily developed in different populations in the past decade, such as in Iranian, Korean, Japanese, and Indian.",
+      "claim_type": "EXPLICIT",
+      "source": "Some hypertension risk prediction models have been preliminarily developed in different populations in the past decade, such as in Iranian, Korean, Japanese, and Indian (Bozorgmanesh et al., 2011; Lim et al., 2013; Otsuka et al., 2015; Sathish et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "ebcd6f82-87bf-44e3-bf0f-aadb1055ad04",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C71",
+      "claim": "Age, SBP, DBP, and current smoking status were the most common independent factors in the studied population, and all of them were included in four prediction models.",
+      "claim_type": "EXPLICIT",
+      "source": "Age, SBP, DBP, and current smoking status were the most common independent factors in the studied population, and all of them were included in four prediction models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes findings from previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "6140b8ec-19ea-41f2-99bb-f55f9f59224f",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C72",
+      "claim": "A hypertension risk prediction model developed in the particular racial, ethnic, or national groups may not be directly applied to other populations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore suggested that a hypertension risk prediction model developed in the particular racial, ethnic, or national groups may not be directly applied to other populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of variability across studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "eef49735-3e56-4729-9be8-9b80a8a30f31",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C73",
+      "claim": "Chen et al., 2016 constructed a sex-specific multivariable hypertension prediction model based on northern urban Han Chinese population.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2016, Chen et al., 2016 constructed a sex-specific multivariable hypertension prediction model based on northern urban Han Chinese population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "e9dd7d1c-f40d-4172-8060-2d3136f604a3",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C74",
+      "claim": "The predictive model by Chen et al., 2016 yielded an AUC of 0.761 for men and 0.753 for women.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictive model yielded an AUC of 0.761 for men and 0.753 for women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites specific AUC values from Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "10a751a4-8374-4e7f-95b6-c6814a2a75c7",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C75",
+      "claim": "The limitation of Chen et al., 2016 study is that it did not perform internal or external validation.",
+      "claim_type": "EXPLICIT",
+      "source": "The limitation of their study is that it did not perform internal or external validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a limitation of the cited study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "e58e412c-e3aa-4f13-a8a4-d4ee3857a2eb",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C76",
+      "claim": "Xu et al., 2019 constructed several predictive models for hypertension among Chinese rural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2019, Xu et al., 2019 constructed several predictive models for hypertension among Chinese rural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Xu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "6011e584-6f01-44c4-a34d-2daa657c1448",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C77",
+      "claim": "In the training set of Xu et al., 2019, AUCs ranged from 0.720 to 0.767 for men and from 0.740 to 0.809 for women.",
+      "claim_type": "EXPLICIT",
+      "source": "In the training set, AUCs ranged from 0.720 to 0.767 for men and from 0.740 to 0.809 for women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites specific AUC ranges from Xu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "d67a49ef-84ec-4080-bbcf-3b50dcdb2964",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C78",
+      "claim": "In the testing set of Xu et al., 2019, AUCs ranged from 0.722 to 0.773 for men and from 0.698 to 0.765 for women.",
+      "claim_type": "EXPLICIT",
+      "source": "In the testing set, AUCs ranged from 0.722 to 0.773 for men and from 0.698 to 0.765 for women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites specific AUC ranges from Xu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "a96b1292-f166-4405-93d0-d79219e3b14c",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C79",
+      "claim": "Ren et al., 2020 established a predicted model for hypertension based on a large cross-sectional study.",
+      "claim_type": "EXPLICIT",
+      "source": "Another predicted model for hypertension based on a large cross-sectional study was established recently (Ren et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ren et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "2743dcbf-95b7-463e-be53-5eb6f640f32a",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C80",
+      "claim": "The Ren et al., 2020 study included 73,158 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of a large group of people (73,158 samples), the prediction performances of the model were simply assessed by probability of disease (POD) index and AUC values (76.52% in the train set and 75.81% in the test set).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the sample size from Ren et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "c7188760-ea76-4139-8b07-3e9af77f609d",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C81",
+      "claim": "The prediction performances of the Ren et al., 2020 model were assessed by POD index and AUC values (76.52% in the train set and 75.81% in the test set).",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of a large group of people (73,158 samples), the prediction performances of the model were simply assessed by probability of disease (POD) index and AUC values (76.52% in the train set and 75.81% in the test set).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites specific performance metrics from Ren et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "2b036765-9d75-4e79-b616-3a554f88d813",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C82",
+      "claim": "The present study might be the first one to develop nomogram for the prediction of hypertension based on systematic assessment and validation in China.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the present study might be the first one to develop nomogram for the prediction of hypertension based on systematic assessment and validation in China.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim made by the authors based on their review of the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "5357ab86-2309-430e-9af7-6a4db9aed14c",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C83",
+      "claim": "Both nomograms were constructed mainly based on the physical examination data.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, according to two diagnostic criteria of hypertension, we developed and validated two nomograms for the prediction of hypertension based on a 10-year retrospective cohort study in Chinese population. Both nomograms were constructed mainly based on the physical examination data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the data source for nomogram construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "734daafd-9f60-4260-bb3f-ee610d01bf3c",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C84",
+      "claim": "All parameters in the nomograms are readily available in routine health examinations.",
+      "claim_type": "EXPLICIT",
+      "source": "All parameters are readily available in routine health examinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that the parameters are routinely available.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "5d81d821-c2c4-4348-9999-e26e311a070f",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C85",
+      "claim": "These nomograms will be useful for the in-depth assessment without the assistance of physicians.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these nomograms will be useful for the in-depth assessment without the assistance of physicians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors about the utility of their nomograms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "ab7944f8-a1d2-4b9d-936c-910f34c9a35f",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C86",
+      "claim": "AUC of nomogram140/90 was higher than that of nomogram130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, receiver operating characteristic (ROC) analysis indicated that AUC of nomogram140/90 was higher than that of nomogram130/80.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares AUC values between the two nomograms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "291d85bd-3d4a-44f7-9e03-a693f8a02817",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C87",
+      "claim": "The nomogram140/90 displayed excellent discrimination with a C-index of 0.75 and good calibration.",
+      "claim_type": "EXPLICIT",
+      "source": "The nomogram140/90 also displayed excellent discrimination with a C-index of 0.75 and good calibration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript evaluates the performance of nomogram140/90.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "1b32d43e-ed7c-4ed4-aee9-5a570067b27e",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C88",
+      "claim": "High C-index value of 0.772 could still be reached in the internal validation for nomogram140/90.",
+      "claim_type": "EXPLICIT",
+      "source": "High C-index value of 0.772 could still be reached in the internal validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the C-index value in the validation set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "7c06425d-dbc6-464e-9b87-c9ec9b27efa9",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C89",
+      "claim": "DCA and clinical impact curve showed that the majority of the threshold probabilities in this model had good net benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "DCA and clinical impact curve showed that the majority of the threshold probabilities in this model had good net benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the results of DCA and clinical impact curve analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "71524e1a-aa09-49d2-a21f-aee22ddbfc91",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C90",
+      "claim": "NRI and IDI were originally proposed to characterize accuracy improvement in predicting a binary outcome, when new biomarkers are added to regression models.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, NRI and IDI were originally proposed to characterize accuracy improvement in predicting a binary outcome, when new biomarkers are added to regression models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the original purpose of NRI and IDI.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "e09a26a6-d1ca-4d92-a599-783ed520ae33",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C91",
+      "claim": "NRI and IDI have been extended from binary outcomes to multicategorical and survival outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, these two indices have been extended from binary outcomes to multicategorical and survival outcomes (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "0130d345-5b54-4290-a67d-d07e6042ef4b",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C92",
+      "claim": "Zhang et al. compared the predictive ability of a stroke prediction model (China-PAR) with the revised Framingham Stroke Risk Score (R-FSRS) for 5-year stroke incidence in a community cohort of Chinese adults.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in 2020, Zhang et al. compared the predictive ability of a stroke prediction model (China-PAR) with the revised Framingham Stroke Risk Score (R-FSRS) for 5-year stroke incidence in a community cohort of Chinese adults [Zhang et al., 2020].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zhang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "2f8ad98b-9fa4-45c9-8540-695d551ac383",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C93",
+      "claim": "The nomogram140/90 is the most sensitive hypertension risk prediction tool under the promise of guaranteeing accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the nomogram140/90 is the most sensitive hypertension risk prediction tool under the promise of guaranteeing accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors based on their comparative analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "2699a357-56f6-49c2-8b1d-d097f989d495",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C94",
+      "claim": "Gender was not an independent predictor for hypertension in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariate logistic regression analysis revealed that gender was not an independent predictor for hypertension in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the results of multivariate logistic regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "b31a7235-e7cb-4f4d-b6b4-04ef94fdde39",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C95",
+      "claim": "Researchers from Iran revealed that sex was not found to be an independent risk factor for hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our study, researchers from Iran revealed the same result, reporting that sex was not found to be an independent risk factor for hypertension (Talaei et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Talaei et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "76db5514-9a6d-4eab-bb87-bffd98f67d2a",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C96",
+      "claim": "Several previous studies have reported gender to be significantly associated with hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, several previous studies have reported gender to be significantly associated with hypertension (Chen et al., 2016; Fidalgo et al., 2019; Zheng et al., 2014; Kshirsagar et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "be6de197-5cde-4446-95d9-2fda05430cc0",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C97",
+      "claim": "It is still controversial whether the incidence of hypertension is associated with gender.",
+      "claim_type": "EXPLICIT",
+      "source": "It is still controversial whether the incidence of hypertension is associated with gender.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from conflicting findings in the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "5269b440-e639-4727-bed1-15b8c33af7e9",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C98",
+      "claim": "The total incidence of hypertension was 24.77% at a cut-off value of 140/90 mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, the total incidence of hypertension was 24.77% and 37.92% at a cut-off value of 140/90 mmHg and 130/80 mmHg, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific incidence data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "85c82236-5668-4671-bffd-54f731e9a0ee",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C99",
+      "claim": "The total incidence of hypertension was 37.92% at a cut-off value of 130/80 mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, the total incidence of hypertension was 24.77% and 37.92% at a cut-off value of 140/90 mmHg and 130/80 mmHg, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific incidence data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "9e0b7bcc-13e7-45fc-8f18-9142b0c8bb1c",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C100",
+      "claim": "The reported prevalence of hypertension in China shows a great geographical variation, ranging from 23.2% to 44.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "The reported prevalence of hypertension in China shows a great geographical variation, ranging from 23.2% to 44.7% (Joint Committee for Guideline Revision, 2019; Lu et al., 2017; Asgari et al., 2020; Labasangzhu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "5789e95e-802f-4da4-93a3-a7c2042d01ab",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C101",
+      "claim": "Mean sodium intake of northern Chinese was notably higher than that of southerners.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mean sodium intake of northern Chinese was notably higher than that of southerners [Heizhati et al., 2020].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Heizhati et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "161c3c43-3ba1-43ba-bc89-a4f27e35b4d8",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C102",
+      "claim": "Excessive salt intake increases the risk of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "That excessive salt intake increases the risk of hypertension has been well documented in epidemiological and clinical studies (Anderson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Anderson et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "751bb7b5-0a4e-4067-b178-63aa5fb7d0a5",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C103",
+      "claim": "Loss to follow-up and missing data reduced the effective sample size and may threaten the internal validity of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, as mentioned above, the nomogram was constructed based on multivariate analysis of physical examination data between 2009 and 2019. Loss to follow-up and missing data reduced the effective sample size and may threaten the internal validity of the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors acknowledge this as a limitation of their study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "53846694-3436-44cc-bd93-eee967777b53",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C104",
+      "claim": "Some subjects who were diagnosed with secondary hypertension may be also included in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, some subjects who were diagnosed with secondary hypertension may be also included in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors acknowledge this as a limitation of their study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "e79552aa-1f12-4071-b62a-2f18e263e665",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C105",
+      "claim": "The diagnosis of hypertension may lack strictness.",
+      "claim_type": "EXPLICIT",
+      "source": "The diagnosis of hypertension may lack strictness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors acknowledge this as a limitation of their study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "6417990c-bc00-4f87-9c62-86d327182532",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C106",
+      "claim": "The nomogram showed medium prediction accuracy may suggest that other factors should be included.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, the nomogram showed medium prediction accuracy may suggest that other factors should be included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors acknowledge this as a limitation and suggest future improvements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "f8fc315d-a847-496c-8322-51c15191f4f8",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C107",
+      "claim": "Many blood parameters were deleted because of missing data.",
+      "claim_type": "EXPLICIT",
+      "source": "Many blood parameters were deleted because of missing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors acknowledge this as a limitation of their study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "0ca1c84c-e361-434b-b2a4-6698c49d832c",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C108",
+      "claim": "The prediction accuracy could perhaps be improved in further studies with large sample sizes and more variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The prediction accuracy could perhaps be improved in further studies with large sample sizes and more variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "bae0c262-f45e-4186-a36a-3c9e6bc3c79d",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C109",
+      "claim": "Further multicenter external validation should be performed to verify the discriminating ability and generalizability of the nomogram.",
+      "claim_type": "EXPLICIT",
+      "source": "Further multicenter external validation should be performed to verify the discriminating ability and generalizability of our nomogram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "1deae847-b28e-4090-b938-9c6165e61e50",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C110",
+      "claim": "A total of 51,165 subjects underwent medical examination in 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "The survey was conducted among subjects who underwent medical examination in a physical examination center of Hebei Province in 2009 and 2019. As shown in Figure 7, a total of 51,165 and 209,636 subjects who underwent physical examination in 2009 and 2019 were enrolled in this study, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numbers and references Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "b46a86ec-c21a-4105-9814-c160d539316a",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C111",
+      "claim": "A total of 209,636 subjects underwent medical examination in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The survey was conducted among subjects who underwent medical examination in a physical examination center of Hebei Province in 2009 and 2019. As shown in Figure 7, a total of 51,165 and 209,636 subjects who underwent physical examination in 2009 and 2019 were enrolled in this study, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numbers and references Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "220fc76c-bfe2-47f9-880d-72b8fd504ab8",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C112",
+      "claim": "Subjects who had taken antihypertensive drugs before the medical examination were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid potential observational bias, we excluded subjects who had taken antihypertensive drugs before the medical examination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "26a1097b-e352-424c-9a4b-431d4b1733e8",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C113",
+      "claim": "Subjects who did not finish the procedures of this survey and had missing data on the collected parameters were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects who did not finish the procedures of this survey and had missing data on the collected parameters were also excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "bef4cae9-ffb2-40c9-8b27-e16482a2ad4d",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C114",
+      "claim": "8020 subjects who underwent medical examination both in 2009 and 2019 were finally enrolled.",
+      "claim_type": "EXPLICIT",
+      "source": "After rigorous screening, 8020 subjects who underwent medical examination both in 2009 and 2019 were finally enrolled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the final number of enrolled subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "4a8469a5-8ab4-4167-ba75-3573f2ab1d69",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C115",
+      "claim": "At a cut-off value of 140/90 mmHg, 6201 subjects who had normal blood pressure in 2009 were enrolled in Group140/90.",
+      "claim_type": "EXPLICIT",
+      "source": "At a cut-off value of 140/90 mmHg, 6201 subjects who had normal blood pressure in 2009 were enrolled in Group140/90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the composition of Group140/90.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "300e635a-163b-434b-bd7a-d2ba17cf6f24",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C116",
+      "claim": "At a cut-off value of 130/80 mmHg, 3771 subjects who had normal blood pressure in 2009 were enrolled in Group130/80.",
+      "claim_type": "EXPLICIT",
+      "source": "At a cut-off value of 130/80 mmHg, 3771 subjects who had normal blood pressure in 2009 were enrolled in Group130/80.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the composition of Group130/80.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "b5393cf7-f4af-452b-af52-98a179fc518b",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C117",
+      "claim": "All procedures were approved by the Ethics Committee of Hebei General Hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Ethics Committee of Hebei General Hospital.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that ethical approval was obtained.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "91357428-9d39-4a5b-94ce-8523d4f7ea52",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C118",
+      "claim": "All subjects' data were anonymized and de-identified prior to the analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects' data were anonymized and de-identified prior to the analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes data handling procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "5c0c1194-7bbb-4603-9b87-e21126295ce1",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C119",
+      "claim": "The requirement for informed consent was waived.",
+      "claim_type": "EXPLICIT",
+      "source": "The requirement for informed consent was therefore waived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that informed consent was waived.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "095d54d5-b476-4ec2-9b11-74e3155b8e2b",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C120",
+      "claim": "Blood pressure was measured after a minimum of 5 min rest in sitting position.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood pressure was measured after a minimum of 5 min rest in sitting position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology for blood pressure measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "72d857b4-b9a3-4002-adfc-feeacc2cef6a",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C121",
+      "claim": "BMI was computed by the ratio of body weight (kg) to height squared (m2).",
+      "claim_type": "EXPLICIT",
+      "source": "BMI was computed by the ratio of body weight (kg) to height squared (m2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the calculation method for BMI.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "1862fb31-4b8b-4f25-a00d-aa4d461fef7c",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C122",
+      "claim": "The blood samples were collected in the morning on an empty stomach.",
+      "claim_type": "EXPLICIT",
+      "source": "The blood samples were collected in the morning on an empty stomach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology for blood sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "52fbe3d7-c12a-4d3a-af01-1879d19f0043",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C123",
+      "claim": "Statistical analyses were performed with R software version 4.0.0, SPSS version 24.0, and MedCalc 19.0.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analyses were performed with R software version 4.0.0 (RRID:SCR_001905), SPSS version 24.0 (RRID:SCR_019096), and MedCalc 19.0.7 (RRID:SCR_015044).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript lists the software used for statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "ed39e023-184f-47de-a7ef-5b954e3d4083",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C124",
+      "claim": "Two-sided p value < 0.05 was considered to be statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-sided p value < 0.05 was considered to be statistically significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the threshold for statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "ea686bd1-e317-47af-bc5b-881f89329730",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C125",
+      "claim": "The nomogram demonstrated favorable predictive accuracy, discrimination, and clinical utility in the training set and validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "The nomogram demonstrated favorable predictive accuracy, discrimination, and clinical utility in the training set and validation set, indicating good performance in practical application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "b7298aac-8de2-488f-a133-1385c5476cbe",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C126",
+      "claim": "This visualization model and website will aid the patients and physicians to predict the 10-year risk of hypertension and better clinical management.",
+      "claim_type": "EXPLICIT",
+      "source": "This visualization model and website will aid the patients and physicians to predict the 10-year risk of hypertension and better clinical management.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the potential utility of the developed tools.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "abb7e45d-cd8e-4a23-9be5-bf4336163745",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "claim_id": "C127",
+      "claim": "This study was supported by the Hebei Science and Technology Department Program (no. H2018206110).",
+      "claim_type": "EXPLICIT",
+      "source": "Funding:This study was supported by the Hebei Science and Technology Department Program (no. H2018206110).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the funding source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study enrolled 6,201 subjects for Group140/90 and 3,771 subjects for Group130/80 from a larger cohort of individuals who underwent medical examinations in 2009 and 2019. Subjects were randomly divided into training and validation sets at a 2:1 ratio after excluding those who had taken antihypertensive drugs or had missing data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims provide consistent and detailed information about subject enrollment, exclusion criteria, and randomization procedures (C2, C3, C34, C110-C116). The numbers are internally consistent across claims, and the methodology is clearly described with appropriate exclusion criteria to reduce bias (C112, C113).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "2ba6518d-b764-4463-be9e-4e1d0f0c913f",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The prevalence of hypertension in 2019 was 24.77% in Group140/90 and 37.92% in Group130/80. Training and validation sets showed similar prevalence rates and no significant differences in baseline characteristics between the two sets for both groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The prevalence data are clearly reported with specific numbers (C33, C35, C36, C38, C40, C41). The claim of no significant differences between training and validation sets (C37) is stated but the manuscript does not provide p-values for all variables listed, though this is a standard validation step. The consistency between sets supports the validity of the randomization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "8ca80641-19b4-4934-9956-59a8627092cd",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LASSO regression identified 21 variables with nonzero coefficients in both groups. Multivariate logistic regression revealed 10 independent risk factors for Group140/90 (family history, age, SBP, DBP, BMI, MCHC, MPV, TP, TBIL, TG) and 6 for Group130/80 (family history, age, SBP, DBP, RDWSD, TBIL).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical methodology is appropriate and clearly described (C4, C5). LASSO regression results are reported with specific variables identified (C42, C43, C45, C46), and multivariate logistic regression results are provided with odds ratios and p-values in Tables 3 and 4 (C44, C47). The two-stage approach (LASSO followed by logistic regression) is a valid method for feature selection and model building.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "a342d229-da9a-46be-8b8a-4885c7146908",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Nomogram140/90 was developed with 10 parameters and demonstrated good performance in the training set with AUC and C-index of 0.750 (95% CI: 0.733-0.767). Calibration curves showed high consistency between predicted and observed outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The nomogram construction is well-documented with specific parameters listed (C6). Performance metrics are clearly reported with confidence intervals (C7, C8, C48, C49). The interpretation of C-index 0.75 as \"good predictive discrimination\" (C50) is reasonable, though somewhat subjective. Calibration is assessed visually (C51), which is standard practice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "0213b3c9-7c05-4c38-afed-b73cb41d42ae",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nomogram130/80 was developed with 6 parameters and showed moderate performance in the training set with AUC and C-index of 0.705 (95% CI: 0.684-0.726). The authors characterized this as \"relatively bad predictive discrimination\" with \"relatively low consistency\" in calibration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The nomogram construction and performance metrics are clearly reported (C9-C11, C52, C53). However, the characterization of C-index 0.705 as \"relatively bad\" (C54) is questionable\u2014this represents fair to good discrimination by standard criteria. The subjective language undermines the interpretation, though the numerical results themselves are valid.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "6bfa5087-2743-4c8f-85a9-215baa90d4ee",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Internal validation showed that nomogram140/90 maintained good performance (AUC=0.772, C-index=0.772) while nomogram130/80 showed similar performance to training (AUC=0.697, C-index=0.697). Calibration patterns were consistent with training set results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Validation results are clearly reported with confidence intervals (C56, C57, C59, C60). The improved performance of nomogram140/90 in validation (0.772 vs 0.750) is notable and suggests good generalizability. The consistency between training and validation for nomogram130/80 is also appropriate. However, this is internal validation only, not external validation, which limits generalizability claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "77a00acb-1651-4dd6-96d0-a8006fec954e",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Decision curve analysis and clinical impact curves demonstrated that both nomograms provided greater net benefit than individual factors alone, with predicted probabilities coinciding well with actual probabilities in both training and validation sets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "DCA and clinical impact curves are appropriate methods for assessing clinical utility (C62-C65). The results are presented graphically in Figures 5 and 6, and the consistency between training and validation sets supports the findings. However, the manuscript lacks quantitative thresholds or specific clinical scenarios where the models would be most beneficial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "3c8a24be-9f04-4abc-86e8-a49e42d31bfa",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison between nomograms using NRI and IDI showed that nomogram140/90 exhibited superior performance to nomogram130/80, with significant continuous NRI (0.1174, p<0.001) and IDI (0.0032, p=0.0432), though categorical NRI was not significant (0.0081, p=0.372).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The statistical comparison is reported with appropriate metrics (C66-C68), but the interpretation is problematic. The categorical NRI is not significant (C66), and the IDI improvement is very small (0.0032) despite statistical significance (C68). The claim that nomogram140/90 is \"the most sensitive hypertension risk prediction tool\" (C93) is not supported by the data and represents an overinterpretation. The comparison is also confounded by different sample sizes and diagnostic criteria.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "16037108-d8a6-47d3-9d3f-06849e449fcd",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A web-based calculator for nomogram140/90 was developed and made freely available online to help patients and physicians predict 10-year hypertension risk and improve clinical management.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The web calculator is documented with a specific URL (C69) and represents a practical application of the research (C14). However, the claim that it will \"aid\" in clinical management (C126) is speculative and not validated. The utility and usability of the tool have not been tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "9f8f8bcc-ab26-4ddd-a185-c4f95d096f8b",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Gender was not identified as an independent predictor of hypertension in this study, consistent with some prior research but contradicting other studies, indicating ongoing controversy about the role of gender in hypertension risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The finding is clearly stated (C94) and appropriately contextualized with citations to both supporting (C95) and contradicting (C96) literature. The acknowledgment of controversy (C97) is appropriate. However, the manuscript does not explore potential reasons for this discrepancy, such as differences in study populations or adjustment for confounders.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "f473a0d5-6bf2-4a01-82f0-88defd281bbf",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study found hypertension incidence of 24.77% (140/90 criteria) and 37.92% (130/80 criteria), which falls within the reported range for China (23.2-44.7%). Geographic variation in hypertension prevalence may be related to dietary factors such as sodium intake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The incidence data are clearly reported (C98, C99) and appropriately compared to literature values (C100). The discussion of geographic variation and dietary factors (C101, C102) is supported by citations. However, the study does not directly measure dietary factors, so this remains speculative for the current cohort.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "681643ba-6547-45e0-8040-ac5ee61d010b",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors acknowledge several limitations including loss to follow-up and missing data reducing sample size, possible inclusion of secondary hypertension cases, lack of diagnostic strictness, medium prediction accuracy suggesting missing factors, and need for external validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The limitations are appropriately acknowledged (C103-C107) and demonstrate scientific rigor. The suggestions for future research (C108, C109) are reasonable. However, some limitations are more serious than presented\u2014the 10-year gap with only two time points limits the ability to capture incident hypertension timing, and the lack of external validation significantly limits generalizability claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "21f2f14f-0e3e-40d2-b66e-d77985d11465",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors review prior hypertension prediction models from various populations and Chinese studies, noting variability in risk factors across populations and limitations in prior Chinese studies, claiming this may be the first nomogram for hypertension prediction with systematic assessment and validation in China.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The literature review is appropriate and well-cited (C70-C81). However, the claim of being \"the first\" nomogram with systematic assessment and validation in China (C82) is qualified with \"might be\" and is difficult to verify. The criticism of prior studies (C75) for lacking validation is somewhat undermined by this study's own lack of external validation. The review appropriately contextualizes the work but the novelty claim is overstated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "f75b5976-a2d8-428c-b06e-c547f073c3c6",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The nomograms were constructed from routine physical examination data with readily available parameters, demonstrating favorable predictive accuracy, discrimination, and clinical utility, making them useful for assessment without physician assistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The use of routine examination data (C83, C84) is a strength for practical application. The performance metrics are documented (C87, C88, C89, C125). However, the claim that the nomograms are useful \"without the assistance of physicians\" (C85) is problematic\u2014medical interpretation is still needed for clinical decision-making. The characterization of performance as \"excellent\" (C87) for C-index 0.75 is somewhat generous, and the claim of \"favorable\" performance (C125) should be tempered by the acknowledged limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "c8d5cd65-3950-4d10-b541-a28bbaa68c9e",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study received ethics approval, used anonymized data with waived informed consent, and employed standardized measurement protocols for blood pressure, BMI, and blood samples. Statistical analyses used appropriate software with p<0.05 significance threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Ethics approval and data handling are appropriately documented (C117-C119). Measurement protocols are described (C120-C122), though some details are limited. Statistical software and significance thresholds are clearly stated (C123, C124). The waiver of informed consent (C119) is appropriate for retrospective analysis of anonymized data. However, more detail on blood pressure measurement (number of readings, device calibration) would strengthen reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The introduction establishes hypertension as a highly prevalent disorder and major contributor to global mortality, with increasing prevalence especially in low- and middle-income countries including China, where awareness and control rates are low despite high prevalence. Various risk factors and diagnostic criteria are discussed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The background claims are well-supported by appropriate citations (C15-C32). The epidemiological data are from credible sources and accurately represent the global and Chinese burden of hypertension. The discussion of diagnostic criteria (C27-C29) appropriately frames the study's rationale for using two different thresholds. This provides solid justification for the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "678db07e-a68e-4a50-bd07-63fc491b612c",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript describes NRI and IDI as metrics originally developed for binary outcomes that have been extended to other outcome types, citing an example of their use in comparing stroke prediction models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The description of NRI and IDI is accurate (C90, C91) and appropriately cited. The example application (C92) provides relevant context for their use in model comparison. However, the manuscript does not discuss limitations of these metrics or appropriate interpretation thresholds, which would strengthen the methodological justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    },
+    {
+      "id": "9f28791b-7ebe-46ed-b86a-953801a44636",
+      "content_id": "d812ad18-ad01-46f7-8d43-0df0a327f51f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Both nomograms demonstrated clinical consistency based on calibration curves, though nomogram140/90 showed \"high consistency\" while nomogram130/80 showed \"relatively low consistency\" between predicted and observed outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The claim of \"favorable clinical consistency\" for both nomograms (C12) contradicts the characterization of nomogram130/80 as having \"relatively low consistency\" (C55, C61). The calibration assessment relies on visual inspection of curves without quantitative metrics (Hosmer-Lemeshow test, calibration slope, etc.). The subjective language and lack of quantitative calibration metrics make it difficult to objectively assess this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:50:52.288921Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "26205dc0-63ed-476b-916a-c49734378e0f",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "8cfe28ed-67ac-4f4e-8991-3f47de2244c7",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "5b5fe2d0-880f-4ac1-86a7-20a9adf9d024",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "1deae847-b28e-4090-b938-9c6165e61e50",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "b46a86ec-c21a-4105-9814-c160d539316a",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "220fc76c-bfe2-47f9-880d-72b8fd504ab8",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "26a1097b-e352-424c-9a4b-431d4b1733e8",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "bef4cae9-ffb2-40c9-8b27-e16482a2ad4d",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "4a8469a5-8ab4-4167-ba75-3573f2ab1d69",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "300e635a-163b-434b-bd7a-d2ba17cf6f24",
+      "result_id": "4b96622d-52d0-4f2b-bfe9-01ace36e0cf5"
+    },
+    {
+      "claim_id": "184da3d3-3259-4eeb-b8fb-2d3713a54f5e",
+      "result_id": "2ba6518d-b764-4463-be9e-4e1d0f0c913f"
+    },
+    {
+      "claim_id": "b3604a02-fdd0-43b4-8ff6-d93239be2435",
+      "result_id": "2ba6518d-b764-4463-be9e-4e1d0f0c913f"
+    },
+    {
+      "claim_id": "1b96ab69-a7cc-4d2e-b9cc-65267fe9d508",
+      "result_id": "2ba6518d-b764-4463-be9e-4e1d0f0c913f"
+    },
+    {
+      "claim_id": "06689761-edee-4246-8315-3ed5f79cc659",
+      "result_id": "2ba6518d-b764-4463-be9e-4e1d0f0c913f"
+    },
+    {
+      "claim_id": "39a1d05b-7106-4682-825b-3b11f0027818",
+      "result_id": "2ba6518d-b764-4463-be9e-4e1d0f0c913f"
+    },
+    {
+      "claim_id": "e4140635-f653-4a5d-82e6-64cc19105029",
+      "result_id": "2ba6518d-b764-4463-be9e-4e1d0f0c913f"
+    },
+    {
+      "claim_id": "2a70222c-b5af-436e-a485-fc3de110e7a2",
+      "result_id": "2ba6518d-b764-4463-be9e-4e1d0f0c913f"
+    },
+    {
+      "claim_id": "3d8c6e12-fa99-43eb-b0a9-79492e170f11",
+      "result_id": "8ca80641-19b4-4934-9956-59a8627092cd"
+    },
+    {
+      "claim_id": "7ddddc7a-7e58-4f70-8144-a8875362a377",
+      "result_id": "8ca80641-19b4-4934-9956-59a8627092cd"
+    },
+    {
+      "claim_id": "36848ca0-929d-44bb-8579-f7bc5b2af22a",
+      "result_id": "8ca80641-19b4-4934-9956-59a8627092cd"
+    },
+    {
+      "claim_id": "839e2ce4-8691-41be-9080-34b876f5e6aa",
+      "result_id": "8ca80641-19b4-4934-9956-59a8627092cd"
+    },
+    {
+      "claim_id": "d51a0b57-44a6-4dfc-9044-ca7bbddf78be",
+      "result_id": "8ca80641-19b4-4934-9956-59a8627092cd"
+    },
+    {
+      "claim_id": "a653e498-a037-4386-a7d6-c7f18002c540",
+      "result_id": "8ca80641-19b4-4934-9956-59a8627092cd"
+    },
+    {
+      "claim_id": "38a9e6d8-2d13-4cee-93d7-d7ee7fe2e0a2",
+      "result_id": "8ca80641-19b4-4934-9956-59a8627092cd"
+    },
+    {
+      "claim_id": "d1f0ff1d-c106-40f3-91fb-e9a0b05ccd26",
+      "result_id": "8ca80641-19b4-4934-9956-59a8627092cd"
+    },
+    {
+      "claim_id": "f2ce5860-d863-448b-9e23-6b833e605b48",
+      "result_id": "a342d229-da9a-46be-8b8a-4885c7146908"
+    },
+    {
+      "claim_id": "35b697a2-1044-4370-9768-46bf48ef8ad8",
+      "result_id": "a342d229-da9a-46be-8b8a-4885c7146908"
+    },
+    {
+      "claim_id": "07fc7355-a7b3-44b8-a85e-78cdd439ff42",
+      "result_id": "a342d229-da9a-46be-8b8a-4885c7146908"
+    },
+    {
+      "claim_id": "f245dda8-8cf3-473d-a252-3d1ba1842611",
+      "result_id": "a342d229-da9a-46be-8b8a-4885c7146908"
+    },
+    {
+      "claim_id": "a0ef024d-0300-46cb-8e5a-e00376b2b380",
+      "result_id": "a342d229-da9a-46be-8b8a-4885c7146908"
+    },
+    {
+      "claim_id": "e982a206-a208-45dd-b080-16fd9218362a",
+      "result_id": "a342d229-da9a-46be-8b8a-4885c7146908"
+    },
+    {
+      "claim_id": "16c76460-c205-4a31-87e2-b70a9c817cc3",
+      "result_id": "a342d229-da9a-46be-8b8a-4885c7146908"
+    },
+    {
+      "claim_id": "c59bf440-89e9-4b14-83ce-766755660686",
+      "result_id": "0213b3c9-7c05-4c38-afed-b73cb41d42ae"
+    },
+    {
+      "claim_id": "8352b6eb-b141-4a70-9bc6-68cce9df9469",
+      "result_id": "0213b3c9-7c05-4c38-afed-b73cb41d42ae"
+    },
+    {
+      "claim_id": "3cb0f414-7ae8-41da-878e-d3ff7649bdca",
+      "result_id": "0213b3c9-7c05-4c38-afed-b73cb41d42ae"
+    },
+    {
+      "claim_id": "f257469e-2e4c-4deb-933f-b6c4ae8078d1",
+      "result_id": "0213b3c9-7c05-4c38-afed-b73cb41d42ae"
+    },
+    {
+      "claim_id": "7caf00ee-e388-4f29-b431-10b0728f92e4",
+      "result_id": "0213b3c9-7c05-4c38-afed-b73cb41d42ae"
+    },
+    {
+      "claim_id": "4ebcdba5-fdd7-421e-bbee-e4a0fea54c9c",
+      "result_id": "0213b3c9-7c05-4c38-afed-b73cb41d42ae"
+    },
+    {
+      "claim_id": "71094040-e585-448b-8d03-beeb2128c9f1",
+      "result_id": "0213b3c9-7c05-4c38-afed-b73cb41d42ae"
+    },
+    {
+      "claim_id": "dbb49f49-b4b0-48d8-a309-e3950bfd5b3b",
+      "result_id": "6bfa5087-2743-4c8f-85a9-215baa90d4ee"
+    },
+    {
+      "claim_id": "861ae922-e093-4488-b42d-a0a6bab874fd",
+      "result_id": "6bfa5087-2743-4c8f-85a9-215baa90d4ee"
+    },
+    {
+      "claim_id": "d9bc61be-b79d-4d82-a4ca-fe053fcece2f",
+      "result_id": "6bfa5087-2743-4c8f-85a9-215baa90d4ee"
+    },
+    {
+      "claim_id": "c3a79976-b224-46b6-bc68-52fa42c6b187",
+      "result_id": "6bfa5087-2743-4c8f-85a9-215baa90d4ee"
+    },
+    {
+      "claim_id": "bc001a80-a2a1-4223-9726-0da7148295fb",
+      "result_id": "6bfa5087-2743-4c8f-85a9-215baa90d4ee"
+    },
+    {
+      "claim_id": "a9f6ad02-2ae9-4ab8-835b-002befec6b6f",
+      "result_id": "6bfa5087-2743-4c8f-85a9-215baa90d4ee"
+    },
+    {
+      "claim_id": "0af24545-9b09-48ea-bea0-3fa6ee90394a",
+      "result_id": "77a00acb-1651-4dd6-96d0-a8006fec954e"
+    },
+    {
+      "claim_id": "df5569b2-23c8-4ca6-97ba-8cd94662f45b",
+      "result_id": "77a00acb-1651-4dd6-96d0-a8006fec954e"
+    },
+    {
+      "claim_id": "4657ff2b-1453-422b-9c03-87cb225e4314",
+      "result_id": "77a00acb-1651-4dd6-96d0-a8006fec954e"
+    },
+    {
+      "claim_id": "9b77adac-7614-4aef-86ee-e4229a4c1457",
+      "result_id": "77a00acb-1651-4dd6-96d0-a8006fec954e"
+    },
+    {
+      "claim_id": "75c1fc9c-85fa-427d-9aa2-d3a94239a4f7",
+      "result_id": "3c8a24be-9f04-4abc-86e8-a49e42d31bfa"
+    },
+    {
+      "claim_id": "fdc53425-6933-41b6-bd65-761b7cb70d8e",
+      "result_id": "3c8a24be-9f04-4abc-86e8-a49e42d31bfa"
+    },
+    {
+      "claim_id": "8e00a322-a0f0-4280-909b-1acbf609b0a6",
+      "result_id": "3c8a24be-9f04-4abc-86e8-a49e42d31bfa"
+    },
+    {
+      "claim_id": "9fb38d50-90fa-4eee-9f23-0290757d133a",
+      "result_id": "3c8a24be-9f04-4abc-86e8-a49e42d31bfa"
+    },
+    {
+      "claim_id": "ab7944f8-a1d2-4b9d-936c-910f34c9a35f",
+      "result_id": "3c8a24be-9f04-4abc-86e8-a49e42d31bfa"
+    },
+    {
+      "claim_id": "2f8ad98b-9fa4-45c9-8540-695d551ac383",
+      "result_id": "3c8a24be-9f04-4abc-86e8-a49e42d31bfa"
+    },
+    {
+      "claim_id": "d117e2de-548d-40d6-a724-fa47faf2a40f",
+      "result_id": "16037108-d8a6-47d3-9d3f-06849e449fcd"
+    },
+    {
+      "claim_id": "e9ac5801-60e2-48cd-883d-2e3da2af7dce",
+      "result_id": "16037108-d8a6-47d3-9d3f-06849e449fcd"
+    },
+    {
+      "claim_id": "b7298aac-8de2-488f-a133-1385c5476cbe",
+      "result_id": "16037108-d8a6-47d3-9d3f-06849e449fcd"
+    },
+    {
+      "claim_id": "2699a357-56f6-49c2-8b1d-d097f989d495",
+      "result_id": "9f8f8bcc-ab26-4ddd-a185-c4f95d096f8b"
+    },
+    {
+      "claim_id": "b31a7235-e7cb-4f4d-b6b4-04ef94fdde39",
+      "result_id": "9f8f8bcc-ab26-4ddd-a185-c4f95d096f8b"
+    },
+    {
+      "claim_id": "76db5514-9a6d-4eab-bb87-bffd98f67d2a",
+      "result_id": "9f8f8bcc-ab26-4ddd-a185-c4f95d096f8b"
+    },
+    {
+      "claim_id": "be6de197-5cde-4446-95d9-2fda05430cc0",
+      "result_id": "9f8f8bcc-ab26-4ddd-a185-c4f95d096f8b"
+    },
+    {
+      "claim_id": "5269b440-e639-4727-bed1-15b8c33af7e9",
+      "result_id": "f473a0d5-6bf2-4a01-82f0-88defd281bbf"
+    },
+    {
+      "claim_id": "85c82236-5668-4671-bffd-54f731e9a0ee",
+      "result_id": "f473a0d5-6bf2-4a01-82f0-88defd281bbf"
+    },
+    {
+      "claim_id": "9e0b7bcc-13e7-45fc-8f18-9142b0c8bb1c",
+      "result_id": "f473a0d5-6bf2-4a01-82f0-88defd281bbf"
+    },
+    {
+      "claim_id": "5789e95e-802f-4da4-93a3-a7c2042d01ab",
+      "result_id": "f473a0d5-6bf2-4a01-82f0-88defd281bbf"
+    },
+    {
+      "claim_id": "161c3c43-3ba1-43ba-bc89-a4f27e35b4d8",
+      "result_id": "f473a0d5-6bf2-4a01-82f0-88defd281bbf"
+    },
+    {
+      "claim_id": "751bb7b5-0a4e-4067-b178-63aa5fb7d0a5",
+      "result_id": "681643ba-6547-45e0-8040-ac5ee61d010b"
+    },
+    {
+      "claim_id": "53846694-3436-44cc-bd93-eee967777b53",
+      "result_id": "681643ba-6547-45e0-8040-ac5ee61d010b"
+    },
+    {
+      "claim_id": "e79552aa-1f12-4071-b62a-2f18e263e665",
+      "result_id": "681643ba-6547-45e0-8040-ac5ee61d010b"
+    },
+    {
+      "claim_id": "6417990c-bc00-4f87-9c62-86d327182532",
+      "result_id": "681643ba-6547-45e0-8040-ac5ee61d010b"
+    },
+    {
+      "claim_id": "f8fc315d-a847-496c-8322-51c15191f4f8",
+      "result_id": "681643ba-6547-45e0-8040-ac5ee61d010b"
+    },
+    {
+      "claim_id": "0ca1c84c-e361-434b-b2a4-6698c49d832c",
+      "result_id": "681643ba-6547-45e0-8040-ac5ee61d010b"
+    },
+    {
+      "claim_id": "bae0c262-f45e-4186-a36a-3c9e6bc3c79d",
+      "result_id": "681643ba-6547-45e0-8040-ac5ee61d010b"
+    },
+    {
+      "claim_id": "1d05baa7-e76c-4857-baf0-421b995c1121",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "ebcd6f82-87bf-44e3-bf0f-aadb1055ad04",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "6140b8ec-19ea-41f2-99bb-f55f9f59224f",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "eef49735-3e56-4729-9be8-9b80a8a30f31",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "e9dd7d1c-f40d-4172-8060-2d3136f604a3",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "10a751a4-8374-4e7f-95b6-c6814a2a75c7",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "e58e412c-e3aa-4f13-a8a4-d4ee3857a2eb",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "6011e584-6f01-44c4-a34d-2daa657c1448",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "d67a49ef-84ec-4080-bbcf-3b50dcdb2964",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "a96b1292-f166-4405-93d0-d79219e3b14c",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "2743dcbf-95b7-463e-be53-5eb6f640f32a",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "c7188760-ea76-4139-8b07-3e9af77f609d",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "2b036765-9d75-4e79-b616-3a554f88d813",
+      "result_id": "21f2f14f-0e3e-40d2-b66e-d77985d11465"
+    },
+    {
+      "claim_id": "5357ab86-2309-430e-9af7-6a4db9aed14c",
+      "result_id": "f75b5976-a2d8-428c-b06e-c547f073c3c6"
+    },
+    {
+      "claim_id": "734daafd-9f60-4260-bb3f-ee610d01bf3c",
+      "result_id": "f75b5976-a2d8-428c-b06e-c547f073c3c6"
+    },
+    {
+      "claim_id": "5d81d821-c2c4-4348-9999-e26e311a070f",
+      "result_id": "f75b5976-a2d8-428c-b06e-c547f073c3c6"
+    },
+    {
+      "claim_id": "291d85bd-3d4a-44f7-9e03-a693f8a02817",
+      "result_id": "f75b5976-a2d8-428c-b06e-c547f073c3c6"
+    },
+    {
+      "claim_id": "1b32d43e-ed7c-4ed4-aee9-5a570067b27e",
+      "result_id": "f75b5976-a2d8-428c-b06e-c547f073c3c6"
+    },
+    {
+      "claim_id": "7c06425d-dbc6-464e-9b87-c9ec9b27efa9",
+      "result_id": "f75b5976-a2d8-428c-b06e-c547f073c3c6"
+    },
+    {
+      "claim_id": "ea686bd1-e317-47af-bc5b-881f89329730",
+      "result_id": "f75b5976-a2d8-428c-b06e-c547f073c3c6"
+    },
+    {
+      "claim_id": "b5393cf7-f4af-452b-af52-98a179fc518b",
+      "result_id": "c8d5cd65-3950-4d10-b541-a28bbaa68c9e"
+    },
+    {
+      "claim_id": "91357428-9d39-4a5b-94ce-8523d4f7ea52",
+      "result_id": "c8d5cd65-3950-4d10-b541-a28bbaa68c9e"
+    },
+    {
+      "claim_id": "5c0c1194-7bbb-4603-9b87-e21126295ce1",
+      "result_id": "c8d5cd65-3950-4d10-b541-a28bbaa68c9e"
+    },
+    {
+      "claim_id": "095d54d5-b476-4ec2-9b11-74e3155b8e2b",
+      "result_id": "c8d5cd65-3950-4d10-b541-a28bbaa68c9e"
+    },
+    {
+      "claim_id": "72d857b4-b9a3-4002-adfc-feeacc2cef6a",
+      "result_id": "c8d5cd65-3950-4d10-b541-a28bbaa68c9e"
+    },
+    {
+      "claim_id": "1862fb31-4b8b-4f25-a00d-aa4d461fef7c",
+      "result_id": "c8d5cd65-3950-4d10-b541-a28bbaa68c9e"
+    },
+    {
+      "claim_id": "52fbe3d7-c12a-4d3a-af01-1879d19f0043",
+      "result_id": "c8d5cd65-3950-4d10-b541-a28bbaa68c9e"
+    },
+    {
+      "claim_id": "ed39e023-184f-47de-a7ef-5b954e3d4083",
+      "result_id": "c8d5cd65-3950-4d10-b541-a28bbaa68c9e"
+    },
+    {
+      "claim_id": "d79f389f-2ef2-4bf1-a873-1f8fed8b834d",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "9a442476-745c-4e66-b9d3-e68eabb55bea",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "bae6051a-6b57-4eb6-a7f9-8b47959a04d3",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "a014bc25-ec47-4177-8dbb-3aef4ef8fedb",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "146bf0f9-7fc7-4968-a301-07e5ec115194",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "8bfe449e-e7d0-4ea0-8b59-e24c69e53cde",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "a6bfde33-4245-428e-a6c7-23748abcb5de",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "b9ca13c9-25df-4e84-aa2c-7eaa0a7efec1",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "ad9275b6-f7eb-4df8-8b06-18c153e3183b",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "abe6f776-8d85-4d80-8833-188e40028eb2",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "422d25f0-bb85-44f5-a2c4-2103ed5ba3ed",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "ef0b4036-df12-445a-a0b3-ba93eeb1dd1d",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "10eac5a9-8fff-44e5-901b-0449113424ab",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "a90766ab-8fe0-478a-8904-ca71250d8e84",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "0b3d1f1c-8fd3-46f2-9924-30674d1f3058",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "9b8de2ca-742a-4f76-8a1a-182799857317",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "8201efa5-499a-4c7f-8c45-17892cf40b59",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "428662c8-5bf7-4fb0-8677-42639b494514",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "440867a9-ad84-48df-a380-32f589f3ef79",
+      "result_id": "7c9ee83a-46e8-42e5-b638-4a15a6495d24"
+    },
+    {
+      "claim_id": "71524e1a-aa09-49d2-a21f-aee22ddbfc91",
+      "result_id": "678db07e-a68e-4a50-bd07-63fc491b612c"
+    },
+    {
+      "claim_id": "e09a26a6-d1ca-4d92-a599-783ed520ae33",
+      "result_id": "678db07e-a68e-4a50-bd07-63fc491b612c"
+    },
+    {
+      "claim_id": "0130d345-5b54-4290-a67d-d07e6042ef4b",
+      "result_id": "678db07e-a68e-4a50-bd07-63fc491b612c"
+    },
+    {
+      "claim_id": "51ff5d8c-7eed-444e-b575-43a83e45cdaf",
+      "result_id": "9f28791b-7ebe-46ed-b86a-953801a44636"
+    },
+    {
+      "claim_id": "e982a206-a208-45dd-b080-16fd9218362a",
+      "result_id": "9f28791b-7ebe-46ed-b86a-953801a44636"
+    },
+    {
+      "claim_id": "16c76460-c205-4a31-87e2-b70a9c817cc3",
+      "result_id": "9f28791b-7ebe-46ed-b86a-953801a44636"
+    },
+    {
+      "claim_id": "4ebcdba5-fdd7-421e-bbee-e4a0fea54c9c",
+      "result_id": "9f28791b-7ebe-46ed-b86a-953801a44636"
+    },
+    {
+      "claim_id": "71094040-e585-448b-8d03-beeb2128c9f1",
+      "result_id": "9f28791b-7ebe-46ed-b86a-953801a44636"
+    },
+    {
+      "claim_id": "d9bc61be-b79d-4d82-a4ca-fe053fcece2f",
+      "result_id": "9f28791b-7ebe-46ed-b86a-953801a44636"
+    },
+    {
+      "claim_id": "a9f6ad02-2ae9-4ab8-835b-002befec6b6f",
+      "result_id": "9f28791b-7ebe-46ed-b86a-953801a44636"
+    }
+  ],
+  "comparisons": []
+}

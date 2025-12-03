@@ -1,0 +1,190 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors collected 345 clam specimens from six sampling regions across five European countries and identified eight warty venus clams with hemic neoplasia (HN) from two Spanish locations more than 1000 nautical miles apart. Histological, electron microscopy, and cytogenetic analyses characterized the disease stages (N1, N2, N3) and confirmed morphological features consistent with HN, including abnormal karyotypes showing ~100 chromosomes instead of the normal 38.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C45 provide comprehensive methodological details and diagnostic findings that are well-documented through multiple complementary techniques (histology, electron microscopy, cytogenetics). The staging criteria are clearly defined, sample sizes are adequate, and the morphological characterization is supported by visual evidence in figures. The geographic sampling is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C86",
+      "C87"
+    ],
+    "result": "Mitochondrial genome sequencing revealed the coexistence of two distinct mtDNA haplotypes in six out of eight neoplastic warty venus specimens, corresponding to V. verrucosa (18,092 bp) and C. gallina (17,618 bp). The proportion of each haplotype varied between tumor-rich (haemolymph) and tumor-poor (foot) tissues, with striped venus mtDNA predominating in haemolymph where tumor cells are abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C58, C86-C87 present consistent findings from multiple sequencing approaches (Illumina paired-end, PCR/capillary sequencing, Oxford Nanopore) showing >99% read mapping to two species. The tissue-specific mtDNA proportions correlate logically with tumor cell abundance, and the mitogenome assemblies are validated through multiple platforms. The K2P distance of 21.13% (C53) confirms these are distinct species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Phylogenetic analysis of mitochondrial genomes (13 coding genes and 2 rRNA genes) demonstrated that tumor sequences from neoplastic warty venus specimens are monophyletic, identical to each other, and phylogenetically closer to striped venus (C. gallina) than to warty venus (V. verrucosa), supporting a single cancer clone that originated in C. gallina and transmitted to V. verrucosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 present phylogenetic evidence from comprehensive mtDNA analysis (~14 kb alignment) using appropriate Bayesian methods. The finding that all tumor sequences are identical (C60) and cluster with C. gallina rather than their V. verrucosa hosts (C61) provides strong evidence for cross-species transmission. The phylogenetic methodology appears sound with proper model selection and convergence assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "To address potential mitochondrial capture artifacts, nuclear markers (DEAH12 and TFIIH genes) were analyzed. Fixed SNVs (>95% allele frequency) at 14 and 15 sites respectively discriminated between species. While DEAH12 phylogeny confirmed tumor monophyly and C. gallina origin, TFIIH showed tumors in a basal position. A multilocus species tree combining mtDNA and both nuclear genes resolved this, confirming tumors are closer to C. gallina than to V. verrucosa hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 demonstrate rigorous validation using nuclear markers to address a known confounding factor in transmissible cancer studies (mitochondrial capture). The identification of species-specific fixed SNVs is methodologically sound, and the multilocus approach appropriately resolves conflicting single-gene phylogenies. The use of multispecies coalescent methods (starBEAST) is appropriate for this analysis. However, the discordance between TFIIH and other markers (C71) warrants caution and the authors appropriately address this with multilocus analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C88",
+      "C89"
+    ],
+    "result": "FISH analysis using species-specific satellite DNA repeats (CL4: 332-bp monomers; CL17: 429-bp monomers) showed these repeats are abundant in heterochromatic regions of C. gallina and neoplastic V. verrucosa chromosomes but absent in healthy V. verrucosa, suggesting tumor chromosomes derive from C. gallina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C88-C89 provide independent cytogenetic evidence supporting C. gallina origin through species-specific repetitive elements. The presence of C. gallina-specific satellites in tumor cells but not healthy V. verrucosa is compelling. However, the number of specimens tested is not clearly stated, and quantification of signal intensity would strengthen the conclusion. The approach is sound but could benefit from more extensive sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Screening of 213 C. gallina and 9 C. striatula specimens from five sampling points across Spain and Italy found no histological evidence of HN in striped venus populations, suggesting the cancer may now transmit primarily or exclusively among warty venus specimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 present negative findings from a reasonably sized screening (n=222). However, C79 is explicitly speculative (\"may suggest\") and the absence of disease in sampled populations does not definitively establish current transmission patterns. The screening may have insufficient geographic coverage or sample size to detect low-prevalence disease in C. gallina. The authors appropriately acknowledge this limitation, noting \"further sampling... may be necessary.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The leukaemia originated in striped venus clams, transmitted to warty venus where it survives as a contagious cancer, and was identified at two locations >1000 nautical miles apart. Analysis of mitochondrial and nuclear sequences revealed no nucleotide diversity among seven tumors, indicating all belong to a single neoplastic lineage spreading in Southern European seas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C80-C82 synthesize the major findings. The lack of genetic diversity (C81) across geographically distant samples strongly supports a single clonal lineage (C82). The integration of mitochondrial and nuclear evidence (C6) provides robust support for the cross-species transmission and current propagation in V. verrucosa (C7). The geographic distribution (C80) is well-documented. These conclusions are well-supported by the collective evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The cancer arose before 2011 based on a specimen collected that year. The lack of genetic variation suggests either recent origin or human-mediated dispersal, a transmission mode proposed for other bivalve transmissible cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is a logical inference from specimen collection dates. However, C84 presents two alternative hypotheses without sufficient evidence to distinguish between them. The lack of genetic diversity could reflect recent origin, strong purifying selection, rapid spread, or human-mediated transport. While C85 correctly cites precedent for human-mediated transmission, this remains speculative for this particular cancer. Additional analyses (e.g., mutation rate estimates, population genetics) would be needed to resolve these alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C42"
+    ],
+    "result": "Background claims establishing the context of transmissible cancers, their occurrence in various species including marine bivalves, the nature of hemic neoplasia (HN), disease progression, and normal V. verrucosa karyotype (2n=38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C28, C42 are primarily definitional, contextual, or cite established literature. These are appropriately supported by citations to published work and represent accurate background knowledge. C20 and C22 are appropriately qualified as speculative (\"most likely\", \"likely\"). These claims provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

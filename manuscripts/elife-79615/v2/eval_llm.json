@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C29",
+      "C108",
+      "C111"
+    ],
+    "result": "The study analyzed nationally representative data from 44,224 individuals across 33 African countries (representing ~60% of the continent's ~1.4 billion population) using Round 7 of the Afrobarometer surveys conducted in 2017-2018. Kenya was excluded because its questionnaire did not differentiate between smartphone and basic phone ownership.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C16-C19, C29, C108, and C111 provide consistent information about the data source, sample size, geographic coverage, and temporal scope. The Afrobarometer is described as a reputable pan-African research project, and the methodological decision to exclude Kenya is clearly justified. These claims establish the study's data foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Overall, 82% of individuals in 33 African countries own mobile phones (42% basic phones, 40% smartphones), with substantial variation between and within countries. The probability of not owning a mobile phone has a median of 0.15 (range: 0.05-0.53, SD=0.12), basic phone ownership has a median of 0.40 (range: 0.23-0.66, SD=0.10), and smartphone ownership shows greater variability (SD=0.16) than basic phone ownership.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C32-C38 present consistent quantitative findings about mobile phone ownership patterns across the 33 countries. The data show high overall ownership with substantial between-country and within-country variation, supported by statistical summaries and visual evidence in Figures 1A-D (C119-C122). The finding that country-level BP and SP ownership probabilities are not significantly different (C36: t=0.76, p=0.45) is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Only 13% of smartphone owners and 89% of basic phone owners reported never accessing the internet, validating the classification of phone types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 provide validation for the smartphone/basic phone classification used in the study. The finding that 87% of classified smartphone owners report internet access supports the validity of the classification scheme, though the authors acknowledge this as a limitation (C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C123",
+      "C124"
+    ],
+    "result": "Individuals living close to a health clinic have higher odds of mobile phone ownership (aOR: 1.31, 95% HPD: 1.24-1.39). Smartphone owners were more likely than basic phone owners to live close to a health clinic (t=6.86, p<0.001), and basic phone owners were more likely than non-owners to live close to a health clinic (t=5.52, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39-C40, and C123-C124 present a consistent pattern linking proximity to health clinics with mobile phone ownership. The statistical tests are appropriately reported with effect sizes and p-values. The multivariable analysis (C6) controls for confounders, strengthening the association. Figure 2 provides visual support for these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C59",
+      "C60"
+    ],
+    "result": "Men have over twice the odds of mobile phone ownership compared to women (aOR: 2.37, 95% HPD: 1.96-2.84). Across the 33 countries, 87% of men versus 76% of women own mobile phones, and 50% of male phone owners versus 46% of female phone owners own smartphones. Men are significantly more likely to own mobile phones in 27 of 33 countries, with the greatest disparity in Benin (cOR: 4.78). Gender inequity is present across all age classes and is accentuated for smartphones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41-C47, C59-C60 present consistent evidence of gender disparities in mobile phone ownership. The multivariable analysis (C7) controls for confounders, and country-specific analyses (C43-C47) show the pattern holds in most countries. The finding that 6 countries show no significant gender difference (C45) adds nuance. Statistical tests are appropriately reported throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Urban residents have almost three times the odds of mobile phone ownership compared to rural residents (aOR: 2.66, 95% HPD: 2.22-3.18), and among phone owners, nearly three times the odds of owning a smartphone (aOR: 2.67, 95% HPD: 2.33-3.10). Across the 33 countries, 91% of urban versus 74% of rural residents own mobile phones, and 61% of urban versus 35% of rural phone owners own smartphones. Significant urban-rural differences were found in 29 of 33 countries for any phone ownership and 31 of 33 countries for smartphone ownership.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C48-C55 present robust evidence of urban-rural disparities in mobile phone ownership. The multivariable analyses control for confounders, country-specific analyses show the pattern is widespread, and the magnitude of effects is substantial. The identification of countries without significant urban-rural differences (C52, C55) adds appropriate nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C56",
+      "C57",
+      "C58",
+      "C66",
+      "C125"
+    ],
+    "result": "Mobile phone ownership increases with age, peaks in 26-40 year olds, then decreases. Almost half of phone owners are under 30 years old. Individuals under 30 (18-30 for women, 18-35 for men) are more likely to own smartphones than basic phones, while older individuals are more likely to own basic phones. Among phone owners, smartphone ownership is most likely in 18-30 year olds and decreases with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C56-C58, C66, and C125 present consistent findings about age patterns in mobile phone ownership. The age-stratified analyses show clear patterns, with younger individuals favoring smartphones and older individuals favoring basic phones. Figure 3 (C125) provides visual support for these demographic patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C62",
+      "C67",
+      "C68"
+    ],
+    "result": "Mobile phone ownership decreases with the Lived Poverty Index, with the wealthiest individuals having approximately three times higher odds of owning mobile phones than the poorest (aOR: 2.87, 95% HPD: 2.53-3.27). Among phone owners, the wealthiest are approximately three times more likely to own smartphones than the poorest (aOR: 2.86, 95% HPD: 2.57-3.17). However, some of the poorest individuals in all 33 countries own smartphones, with relatively high ownership even among the poorest wealth classes in many countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C62, C67-C68 present a nuanced picture of wealth-based disparities. The multivariable analyses show strong associations between poverty and phone ownership, but the observation that some poor individuals own smartphones (C14, C68) is an important finding. Figure 1\u2014figure supplement 3 provides visual support for smartphone ownership among the poorest individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "All odds ratios in the Bayesian multilevel logistic regression models are significantly different from one in both bivariable and multivariable analyses. Country-specific effects are apparent for gender and urban/rural inequities. An interaction effect exists between gender and proximity to health clinics for smartphone ownership: men not in close proximity to a health clinic have higher odds of smartphone ownership (aOR: 1.50, 95% HPD: 1.30-1.72) than women not in close proximity, and this gender difference is accentuated by proximity to a health clinic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63-C65 describe the statistical modeling results and interaction effects. The Bayesian multilevel models appropriately account for country-level variation and nested data structure. The interaction between gender and health clinic proximity (C64-C65) reveals important nuances in smartphone ownership patterns. Figure 4 and supplements provide visual support for country-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Women may be less likely to own mobile phones due to less education, higher poverty, and cultural norms of patriarchy. Rural populations may be less likely to own mobile phones due to fewer years of schooling, lower literacy, and higher poverty. However, the main driver of urban-rural inequality may be less infrastructure in rural areas (lower cell coverage, less reliable electricity, lack of high-speed broadband).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 provide explanations for observed disparities, supported by citations to previous research. These are appropriately framed as potential explanations ('may be') rather than definitive causal claims. The distinction between individual-level factors (education, poverty) and structural factors (infrastructure) is important for understanding the mechanisms underlying the observed patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Smartphones have increasingly become essential tools for improving livelihoods in Africa, used for accessing government services, healthcare, agriculture, commerce, education, employment, entrepreneurialism, and electronic money transfer. Some of the poorest individuals may own smartphones due to participation in the Village Phone Program, which operates in countries like Nigeria, Uganda, and Rwanda, where individuals take loans to buy smartphones and are trained to profit by charging others to use them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 explain the surprising finding that some poor individuals own smartphones. The explanation is supported by citations to previous research and provides context for understanding smartphone adoption patterns. The description of the Village Phone Program (C74-C76) offers a plausible mechanism for smartphone ownership among poor individuals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "mHealth interventions are being investigated or used at small scale throughout Africa for multiple purposes including disease diagnosis, treatment support, sexual and reproductive health, HIV prevention and management, maternal and child health, COVID-19 response, and disease surveillance. The majority of implemented interventions have focused on SMS/texting to improve treatment adherence and retention, which only require basic phones. Studies show these interventions have substantially improved medication adherence and retention in care for HIV patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22-C28, and C81-C91 provide comprehensive background on mHealth interventions in Africa, all supported by citations to previous research. The claims establish the context for why mobile phone ownership patterns matter for healthcare delivery. The distinction between interventions requiring basic phones versus smartphones is important for the study's implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Distance decay in health clinic utilization has been observed in many African countries, with geographic inaccessibility associated with decreased healthcare utilization across multiple domains. The inequalities in mobile phone ownership mirror inequalities in accessing healthcare, with rural residents and vulnerable populations (women, children, elderly, those in poverty) having the greatest difficulty accessing healthcare and health-related information, despite often being most in need.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C77-C80 establish the healthcare access context and draw connections between mobile phone ownership patterns and healthcare access patterns. These claims are supported by citations to previous research and provide important context for understanding the implications of the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Systematic reviews show some (but not all) mHealth programs have positive impacts on health behaviors and outcomes, especially in rural communities. mHealth interventions have potential to increase quality, reduce cost, and extend healthcare reach. However, those most in need (rural residents not close to health clinics) are currently far less likely to own mobile phones. mHealth interventions need to be designed considering age, geographic variation, and inequities in phone ownership. Due to current ownership levels, it may only be possible to scale up mHealth interventions in a few countries, and high-tech smartphone-based interventions will be hard to implement in low-ownership countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 synthesize the study's findings with the mHealth literature to draw implications. The conclusions logically follow from the documented disparities in phone ownership (C94-C95) and are appropriately cautious about scalability (C98, C100). The recommendation to design interventions considering inequities (C96) is well-supported by the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C118"
+    ],
+    "result": "Rolling out mHealth interventions without equal availability of digital devices is likely to propagate existing healthcare access inequities. Before mHealth interventions can reach their promise in Africa, a 'digital transformation' is needed. The African Union's 2030 digital empowerment goals may be more aspirational than achievable given current smartphone ownership (40%). Major infrastructural barriers need to be overcome, sustainability must be ensured, and current urban-rural, gender, and wealth inequities in smartphone ownership must be addressed. Broadband services in Africa are extremely expensive relative to income.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C101-C107, and C118 present the study's main policy implications and conclusions. These are logical inferences from the empirical findings, supported by citations to policy documents (C102-C103) and infrastructure reports (C105, C107). The conclusion that current ownership patterns could propagate inequities (C15) follows directly from the documented disparities and is the paper's central message.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study has limitations including that a small percentage of smartphone owners do not regularly use the internet, the study has not demonstrated that phone owners have better healthcare access than non-owners, and the data are from 2017-2018. Future trends are uncertain: mobile phone ownership is predicted to grow, but the degree of expansion in basic phones versus smartphones is unknown. Africa is becoming increasingly urbanized, and urban residents are more likely to afford smartphones, but increasing poverty could limit smartphone expansion. Some countries have developed specific digital expansion plans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C117 appropriately acknowledge study limitations and discuss future trends with appropriate uncertainty. The limitations (C109-C111) are clearly stated. The discussion of future trends (C112-C117) appropriately uses cautious language ('predicted,' 'unknown,' 'could') and acknowledges competing forces (urbanization vs. poverty) that may affect future ownership patterns.",
+    "result_type": "MINOR"
+  }
+]

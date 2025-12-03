@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The Clk856-GAL4 driver labels most circadian clock neurons in the Drosophila brain. Immunostaining shows that most neurons in every clock neuron group are GFP-positive, with the exception of DN3s (30% GFP-positive), and approximately seven ectopic GFP-positive cells per hemisphere are TIM-negative. Functional validation demonstrates that cell-specific knockdown of clock components with this driver mimics classic circadian mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are well-supported by immunostaining data (Figure 1A-C), quantification, and functional validation through cited work (C31). The driver successfully labels the majority of functionally important clock neurons, providing a solid foundation for the single-cell sequencing approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors optimized a CEL-Seq2-based single-cell RNA sequencing method for Drosophila clock neurons, achieving deep molecular characterization with ~2600 genes and ~20,000 UMIs per cell at 0.5 million reads sequencing depth. A total of 4671 cells passed stringent filtering criteria, with high reproducibility between replicates (Pearson correlation) and between LD and DD conditions (r=0.97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are supported by detailed methodological descriptions, quality control metrics (Figure 1\u2014figure supplement 1B-D), and negative control data. The high sequencing depth and reproducibility metrics provide strong evidence for the technical quality of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Unsupervised clustering with Seurat identified 39 distinct clusters from the integrated LD and DD single-cell data. Each cluster contains cells from all six time points and both conditions with modest variability, though there is substantial variability in cell numbers per cluster. Despite this, each cluster (except cluster 0) shows a unique marker gene expression profile with similar numbers of genes and UMIs per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by the clustering analysis (Figure 1D-E) and supplementary data showing temporal and condition distribution (Figure 1\u2014figure supplement 1E-H). The unique marker gene profiles validate even the smallest clusters, though the biological interpretation of 39 clusters requires further analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C23"
+    ],
+    "result": "Core clock genes (tim, vri, Clk) show cycling expression with expected phases in most clusters, but with marked differences in expression levels per cell among clusters. Clusters with more cells generally show higher clock gene expression per cell. Based on higher levels of Clk and CLK-CYC target genes identifying bona fide clock neurons, 17 clusters were selected for detailed analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 and C23 are supported by the cycling analysis (Figure 2A-B, Figure 2\u2014figure supplement 1). The rationale for selecting 17 clusters based on clock gene expression is reasonable, though the correlation between cluster size and clock gene expression (C47) may reflect technical biases in cell recovery rather than biological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Pdf expression identifies two clusters (2 and 25) corresponding to s-LNvs and l-LNvs, respectively, based on differential sNPF expression. Cluster 2 (s-LNvs) contains substantially more cells than cluster 25 (l-LNvs) despite equal anatomical numbers of these neurons in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are well-supported by expression data (Figure 3B-C) and established knowledge about Pdf and sNPF expression patterns. However, C55 identifies a discrepancy between cluster size and expected cell numbers that is acknowledged but not fully explained, suggesting potential technical issues in cell recovery or clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "ITP expression identifies a single cluster (cluster 8, LN_ITP) containing the fifth s-LNv and one LNd, two neurons with indistinguishable functional and connectivity properties. The single cluster assignment implies very similar transcript composition between these anatomically distinct neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by expression data (Figure 3D) and citations to functional studies. The clustering of two anatomically distinct cell types into one cluster based on transcriptional similarity is a notable finding that aligns with their known functional equivalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Cluster 5 is identified as LNd_Trissin based on prominent Trissin expression and validated by immunohistochemistry using Trissin-GAL4 and intersectional genetic approaches, confirming expression in two LNd neurons that co-localize with TIM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 are strongly supported by expression data (Figure 3E), immunostaining validation (Figure 3F, Figure 3\u2014figure supplement 1), and established knowledge. The combination of transcriptomic and genetic validation provides robust evidence for this cluster assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The remaining LNd neurons are assigned to clusters 9 (LNd_NPF) and 12 (LNd) based on gene expression similarity to previously defined lateral neuron clusters and AstC-R2 expression. Cluster 9 contains two NPF-expressing LNds, while cluster 12 contains the remaining single LNd by elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 are supported by correlation analysis (Figure 3G), expression data (Figure 3H-I), and citations to prior work. The assignment by elimination (C75) is reasonable given the comprehensive analysis of other markers, though C74 notes a technical consideration about NPF upregulation in DD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The two DN1a neurons are assigned to cluster 3 based on exclusive CCHa1 expression, validated by immunohistochemistry showing CCHa1 expression in only two clock neurons at the expected DN1a location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are well-supported by expression data (Figure 4A), immunostaining validation (Figure 4\u2014figure supplement 1A), and citations. The combination of transcriptomic and anatomical evidence provides strong support for this assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "DN2 neurons are assigned to cluster 19 based on unique anti-phasic cycling of core clock genes (tim, vri) in DD conditions, a known characteristic of DN2 molecular oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are strongly supported by cycling data (Figure 2, Figure 4B, Figure 2\u2014figure supplement 1) and established knowledge about DN2 anti-phasic cycling. The unique cycling pattern provides unambiguous identification of this cluster.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The three LPN neurons are assigned to cluster 29 based on co-expression of both AstC and AstA, a unique characteristic of this clock neuron group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by expression data (Figure 4C-D) and citations to prior work. The unique co-expression pattern provides clear identification, though the small cluster size may reflect incomplete cell recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Six DN1p clusters are identified using multiple criteria: glass (gl) expression identifies five clusters (1, 6, 7, 15, 18); Dh31 and CNMa expression identify clusters 1 and 15; AstC identifies cluster 1; and Rh7 identifies cluster 4. CNMa expression is validated by immunohistochemistry showing 6-8 DN1p neurons overlapping with the Clk4.1 driver. VGlut expression is enriched in most DN1p clusters except cluster 4, validated by split-GAL4 assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C106 are supported by comprehensive expression data (Figure 4E-K), immunostaining validation (Figure 4I-J), split-GAL4 validation (Figure 4\u2014figure supplement 1B-C), and citations. The multi-marker approach provides robust identification of six DN1p subclusters, representing a major advance in understanding DN1p heterogeneity. However, cluster 4's assignment despite lacking robust gl expression (C99) relies more heavily on Rh7 expression and prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Clusters 14 and 20 are assigned to the DN3 population by elimination, lacking marker genes of better-characterized clock neurons. Cluster 14 expresses VGlut, consistent with some DN3s being glutamatergic, and cluster 20 shows gene expression similarity to cluster 14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C111 rely primarily on negative evidence (lack of known markers) and correlation analysis (Figure 3G). While VGlut expression in cluster 14 (C108) is consistent with prior knowledge about DN3s (C109), the assignment is less definitive than for other clusters. The DN3 population is acknowledged as poorly characterized, and these clusters may represent only a subset of DN3 neurons given the low recovery of DN3s noted in C29.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Each of the 17 clock neuron clusters shows unique marker gene expression profiles with prominent transcription factor (TF) expression extending beyond known clock TFs. Some TFs are enriched across anatomical groups (e.g., ham, D, gl in DN1ps; hth, bi, toy, Hr51 in lateral neurons), while each DN and LPN cluster has at least one cluster-specific enriched TF. Some TFs show circadian oscillations (e.g., CrebA in s-LNvs, pdm3 in DN1p_CNMa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C122 are supported by comprehensive expression analysis (Figure 5, Figure 5\u2014figure supplement 1) showing both spatial and temporal regulation of TF expression. The identification of cluster-specific and cycling TFs represents a significant resource for understanding clock neuron identity and function. The observation about CrebA amplitude being more robust in DD than LD (C121) is noted but unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Approximately 24% of transcripts (1320/5517) show circadian oscillations in at least one cluster using conservative criteria. Most cycling transcripts (74% in LD) are found in only one or two clusters, with only ~30% overlap between the two largest clusters. Core clock genes cycle in most clusters (Clk: 11, tim: 17, vri: 12, Pdp1: 13), while a few other transcripts (fne, ArgK, CG15628) cycle in multiple clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are supported by comprehensive cycling analysis (Figure 6\u2014figure supplement 1A-B, Supplementary file 1). The high percentage of cycling transcripts and their cluster specificity is a major finding. However, the conservative criteria used (noted in C123) may underestimate cycling, particularly in smaller clusters, as acknowledged in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Gene ontology analysis of cycling transcripts reveals both shared and cluster-specific functional enrichments. Combined analysis of all cycling transcripts identifies enrichment for second messenger-mediated signaling, cell-cell adhesion via plasma membrane adhesion molecules, and axonogenesis. Time-of-day analysis shows G-protein-coupled receptor signaling enriched in night-peaking transcripts and neuron-projection morphogenesis enriched in day-peaking transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C135 are supported by GO analysis (Figure 6A, Supplementary files 2-3). The identification of cell-cell adhesion and axonogenesis as enriched GO terms is particularly notable and leads to the detailed analysis of DIP, Dpr, and Beat families. The time-of-day specific enrichments (C134-C135) provide additional functional insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Cell-surface molecules involved in developmental synapse specificity show cluster-specific enrichment and circadian cycling. Four of 11 DIP transcripts and 10 of 21 Dpr transcripts cycle in specific clusters. DIP-beta cycles in s-LNvs while its partner Dpr8 cycles with similar phase in DN1ps. Beat family transcripts also show cluster-specific enrichment and cycling. The authors speculate these molecules may temporally coordinate synaptic contacts within the circadian circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 and C142 are well-supported by expression and cycling data (Figure 6B-G, Figure 6\u2014figure supplement 1C). The coordinated cycling of DIP-beta and Dpr8 in functionally connected neurons is particularly compelling. However, C140, C141, and C143 are speculative interpretations about functional significance that require experimental validation. The speculation is reasonable given the known developmental roles of these molecules and the known s-LNv-DN1p connectivity, but remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The identification of 17 (from initial 39) clock clusters reflects gene expression heterogeneity revealed by the modified CEL-Seq2 method with high sequencing depth (~2600 genes, ~20,000 UMIs per cell). Studies with similar sequencing depth reported comparable heterogeneity. The initial 39 clusters suggest ~1-2 cells/cluster with ~8X coverage per timepoint, with many small clusters possibly representing inefficiently recovered DN3 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 are supported by the sequencing metrics and citations to comparable studies. C147 is a reasonable calculation based on the data. C148 is speculative but plausible given the low Clk expression in DN3s (Figure 2B) and the low recovery of DN3s noted in C29. The interpretation acknowledges technical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The 17 final clusters contain ~2-3 cells per cluster on average, with some clusters (DN1as, LNd_Trissin, DN2s, s-LNvs) containing the predicted number of cells based on anatomy. However, l-LNv and LPN clusters contain fewer cells than expected (should be 4 and 3, respectively), likely due to poor recovery or incorrect assignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 are supported by the clustering results and anatomical knowledge. C152 acknowledges a limitation in the dataset where some known cell types are underrepresented. This is an honest assessment of the data quality and completeness, though it raises questions about whether all neurons of these types were successfully profiled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The clustering analysis clarified clock neuron identity for LNds and DN1ps. The ITP-positive LNd and fifth s-LNv show indistinguishable gene expression profiles, consistent with their nearly identical anatomical and functional properties. The division of DN1ps into six clusters was surprising, with two expressing Rh7 and two expressing CNMa/Dh31. CNMa-expressing cells are spatially distinct but divided into two clusters based on molecular profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 are supported by the clustering results and validation experiments. C154 is supported by citations to neuroanatomical studies. C158 notes that recently identified sleep-promoting DN1p groups should be relevant but cannot yet be mapped to specific clusters, acknowledging a limitation in connecting the current molecular taxonomy to functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Post-transcriptional regulation may be important for neuronal function, as exemplified by AstC-R2 mRNA being expressed in both clusters 9 and 12 despite prior reports of protein expression in only one LNd. This discrepancy may reflect post-transcriptional regulation refining protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C159 is a general speculation. C160 identifies a specific discrepancy between the current mRNA data and prior protein expression data. C161 offers a speculative explanation for this discrepancy. While post-transcriptional regulation is well-established, this specific case requires validation at the protein level to confirm whether the mRNA expression pattern reflects protein expression or represents post-transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "There is abundant circadian mRNA cycling in the 17 clusters, though core clock genes don't meet computational cycling criteria in all clusters. However, vri and tim visually cycle in all 17 clusters, suggesting the lack of universal detection reflects data variability and conservative criteria. Most non-clock gene cycling is highly neuron-specific, consistent with prior bulk sequencing studies and general principles of circadian gene regulation being cell- and tissue-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C169 are supported by the cycling analysis and visual inspection of the data (Figure 2). The explanation for why clock genes don't meet cycling criteria in all clusters (C165) is reasonable. The neuron-specific cycling (C166) is well-documented and consistent with prior work (C167). The interpretation aligns with established principles of circadian regulation (C169).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The mammalian brain has the lowest number of tissue-specific cycling transcripts, possibly because it has the greatest number of constituent cell types, making cell-specific cycling invisible in bulk tissue analysis. Most cycling mRNAs identified in this study were not detected as cycling in fly head or brain bulk mRNA studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C170 is supported by citation. C171 is a reasonable speculation to explain this observation. C172 is a logical inference about the limitations of bulk tissue analysis. C173 is supported by citation and demonstrates the value of single-cell approaches for detecting cell-type-specific cycling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "A mouse SCN single-cell study identified only five neuronal subtypes, consistent with prior characterizations but possibly underestimating heterogeneity due to lower sequencing depth from droplet-based methods. High-throughput commercial methods may similarly underestimate neuronal heterogeneity, as evidenced by only 29 and 87 initial clusters identified in larval and adult Drosophila brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C174 is supported by citations. C175 and C176 are reasonable speculations based on the comparison of sequencing methods, supported by citations. C177 provides supporting evidence from other Drosophila studies. The argument that sequencing depth affects the detection of neuronal heterogeneity is well-founded, though other factors (biological differences, analysis methods) could also contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "This work reveals surprising fly brain clock neuron heterogeneity and provides a resource for future circadian studies. Neuronal heterogeneity is likely a general characteristic of fly brain circuits and helps explain Drosophila's sophisticated behavioral repertoire despite only 100,000 neurons, suggesting that drivers expressing in one or few neurons may have substantial behavioral impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C178 and C179 are well-supported summary statements of the study's contributions. C180 is a reasonable speculation about broader implications. C181 and C182 are logical inferences about the functional significance of neuronal heterogeneity, though they remain to be tested experimentally. These claims appropriately frame the study's significance while acknowledging that broader implications require further investigation.",
+    "result_type": "MAJOR"
+  }
+]

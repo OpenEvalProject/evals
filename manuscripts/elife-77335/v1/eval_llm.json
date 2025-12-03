@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "A subset of glioblastoma (approximately 36-46%) exhibits a DNA hypomethylation bias at differentially methylated regions (DMRs), with four GICs (19, 30, 31, 17) showing >60% hypomethylated DMRs. This bias is GIC-driven, not an artifact of the comparator, and is confirmed in both the study's cohort and the independent HGCC cohort, as well as in FFPE tumor tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C13, C16-C24 collectively demonstrate the hypomethylation bias through multiple lines of evidence: statistical comparison of DMRs (C12-C13), PCA analysis showing clustering (C16-C17), non-syngeneic comparisons ruling out comparator effects (C18), validation in independent HGCC cohort (C19-C22), and confirmation in FFPE tissue (C23-C24). The convergence of methylation array data, statistical tests, and validation across cohorts provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The hypomethylation bias does not correspond to known DNA methylation-based classification systems, with B-GICs distributed across RTKI, RTKII, and Mesenchymal subgroups. The bias is exaggerated when patient-specific probes and DMRs are considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by classification analysis and methylation data showing that the hypomethylation bias cuts across established subgroups and is enhanced in patient-specific analyses. This suggests the bias represents a distinct epigenetic feature independent of current classification schemes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The hypomethylation bias at the DNA level does not translate to a directional bias in gene or miRNA expression. PCA of transcriptome data recapitulates the B-GIC/nB-GIC grouping, but differential expression analysis shows no bias toward up- or down-regulation, and known epigenetic remodeling genes (DNMTs, TETs) are not differentially expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by transcriptome PCA (C25), differential expression analysis (C26-C27, C30), and targeted examination of epigenetic machinery genes (C28). The lack of directional bias in gene expression despite methylation changes is well-documented through multiple analytical approaches, though this appears counterintuitive and warrants mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C34",
+      "C37",
+      "C40"
+    ],
+    "result": "Five miRNAs (miR-1275, miR-4443, miR-196, miR-5100, miR-1268) are differentially expressed in the same direction across all B-GICs, with miR-1275 and miR-4443 down-regulated and miR-196 up-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 identifies five miRNAs consistently differentially expressed in B-GICs, with C34, C37, and C40 specifying the direction of change for three of these. The consistency across all B-GICs and the connection to glial differentiation pathways (C32-C33, C35-C39) provides strong support, though functional validation would strengthen the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Hypomethylated DMRs from B-GICs are enriched for transcription factor binding motifs associated with glial/astrocyte differentiation, including NFI, ETV4, DLX, KLF, PLAGL1, and SOX family members. These motifs are specifically enriched in hypomethylated (not hypermethylated) regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by Homer motif enrichment analysis showing consistent enrichment of glial differentiation-associated TF binding sites in hypomethylated DMRs (C41, C43), with literature support for their role in astrocyte differentiation (C42, C44), and negative control showing absence in hypermethylated regions (C45). The computational analysis is rigorous, though experimental validation of TF binding would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Patient-derived induced astrocyte progenitor cells (iAPCs) and induced oligodendrocyte progenitor cells (iOPCs) were successfully generated and validated. iAPCs co-express CD44 and NESTIN, show IL6-induced pro-inflammatory response, exhibit proliferative activity, and are enriched for astrocytic signatures, while iOPCs are enriched for oligodendrocyte signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by multiple validation approaches: flow cytometry for marker expression (C46), functional assays for IL6 response (C47) and proliferation (C48), epigenetic/transcriptional distinctness (C49), and ssGSEA signature enrichment (C50-C51). The multi-modal validation provides strong evidence for successful differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Hypomethylated DMRs in iAPCs are enriched for ETV4 and NFI binding motifs, confirming the link between these transcription factors and astrocyte-associated hypomethylated loci. In contrast, iOPCs show enrichment for different motifs (ZIC, HOX, SOX genes, zinc-finger proteins) but not ETV4 or NFI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by motif enrichment analysis in differentiated cell types, showing lineage-specific enrichment patterns. The presence of ETV4/NFI motifs in iAPC hypomethylated regions (C52-C53) but not iOPC regions (C54-C55) provides strong evidence for the specificity of these TF binding sites to astrocytic differentiation and validates findings from B-GICs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "B-GICs show significantly higher enrichment for the astrocyte composite signature (ACS) compared to OPC signatures. This enrichment is validated in the independent HGCC cohort (55% vs 64% in study cohort) and in single-cell RNA sequencing data from patient tumors, though the pattern is not retained in bulk FFPE tumor tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by ssGSEA analysis across multiple cohorts and data types. The consistency between the study cohort (C57, C60), HGCC cohort (C59), and scRNAseq data (C61-C62) provides strong validation. The loss of signal in bulk FFPE tissue (C58) is acknowledged and may reflect technical limitations or tumor heterogeneity, which is appropriately discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "A significant positive correlation exists between the percentage of hypomethylated DMRs and ACS enrichment scores in both the study's cohort and the independent HGCC cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by correlation analysis in two independent cohorts, with statistical significance and visual representation in figures. The replication across cohorts strengthens the finding, though the correlation does not establish causality and the mechanistic relationship requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C72"
+    ],
+    "result": "Differential expression analysis between BE-GICs and nBE-GICs identifies significant overlap with ACS genes (47/465 in study cohort, 52/902 in HGCC cohort, with 105 genes shared between cohorts). Top DEGs include RUNX2 (up-regulated) and OLIG2 (down-regulated), and pathway analysis reveals enrichment for extracellular matrix, morphogenesis, cell adhesion, angiogenesis, locomotion, wound healing, and cytokine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C71-C72 are supported by differential expression analysis in two independent cohorts with statistical validation (Fisher's exact test p<0.00001). The identification of RUNX2/OLIG2 as master regulators of astrocytic/oligodendrocyte differentiation (C67-C70) and the pathway enrichment results (C72) provide biological coherence. The replication across cohorts strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Xenografts derived from BE-GICs show significantly increased invasiveness compared to other GICs, despite having smaller tumor cores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by quantitative image analysis of xenograft tumors using machine learning-based pixel classification (QuPath) to calculate invasiveness index. The finding of increased invasion despite smaller core size is statistically significant and biologically interesting, though the small sample size (N=4 BE-GICs vs N=8 other GICs) and lack of survival data limit the strength of conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "SRPX2 is identified as a candidate gene linking hypomethylation bias to astrocytic signature and invasiveness. SRPX2 is up-regulated in iAPC vs iNSC comparisons and specifically higher in GICs 19 and 31. SRPX2 expression is elevated in glioblastoma tissue vs normal brain (TCGA), in BE-GICs (HGCC cohort), and high SRPX2 expression correlates with worse prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C79-C83 are supported by a systematic gene selection strategy (C75), expression analysis in the study cohort (C79-C80), and validation in independent datasets (C81-C83). The convergence of evidence from multiple sources and the prognostic association strengthen the findings, though the mechanistic role requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SRPX2 knockdown significantly reduces invasion in both GIC19 and U3118 cell lines in transwell assays, without affecting proliferation. Effects on neurosphere formation are inconsistent, with reduced neurosphere formation in U3118 but not GIC19 knockdown lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84 and C89 are well-supported by invasion and proliferation assays with statistical significance. However, C90-C91 show inconsistent effects on neurosphere formation between cell lines, which undermines confidence in SRPX2's role in self-renewal. The invasion phenotype is robust, but the lack of in vivo validation and inconsistent self-renewal results limit the strength of conclusions about SRPX2's functional role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "SRPX2 expression is predominantly localized to perivascular regions (including microvascular proliferation and hyperplastic blood vessels) and down-regulated in parenchymal leading edge and infiltrating tumor. The perivascular signature correlates positively with ACS but not OPC signatures in single-cell data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by analysis of Ivy GAP spatial transcriptomics data (C85-C86) and correlation analysis in scRNAseq data (C87-C88). The spatial localization pattern is intriguing and suggests SRPX2 may mediate perivascular invasion rather than parenchymal invasion, though this hypothesis requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C106"
+    ],
+    "result": "RARRES2, a chemoattractant, is significantly up-regulated in BE-GICs compared to nBE-GICs in both cohorts and in non-G-CIMP tumor tissue. High RARRES2 expression correlates with worse prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95, C106 are supported by differential expression analysis in multiple cohorts (C93-C94), survival analysis (C95), and pathway enrichment showing immune pathway deregulation (C92). The identification of RARRES2 as a key immune-related gene in BE-GICs is well-supported, though functional validation of its role would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108"
+    ],
+    "result": "Tumors with higher ACS enrichment show altered immune landscape, with increased proportions of tumor-associated macrophages (TAMs, particularly SEPP1-hi moTAMs) and proliferating CD8 T cells, and decreased proportion of cancer cells. CMKLR1 (RARRES2 receptor) is expressed in TAMs, particularly non-hypoxic TAMs. These findings are validated using both ACS and Neftel et al. signatures, though CD68 staining in FFPE tissue shows only a trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105, C107-C108 are supported by comprehensive analysis of scRNAseq data showing consistent correlations between ACS enrichment and immune cell proportions (C100-C104), with validation using alternative signatures (C104). The expression of CMKLR1 in TAMs (C98-C99) provides mechanistic plausibility for RARRES2-mediated immune cell recruitment. The trend in CD68 staining (C105) is weaker but consistent. The convergence of computational and experimental evidence supports the conclusion of altered immune landscape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C123"
+    ],
+    "result": "The hypomethylation bias, enrichment for astrocytic signatures, and enrichment for TF binding sites associated with glial differentiation collectively point to a shared ontogeny between B-GICs and astroglial progenitors. B-GICs may arise from neural progenitor populations that have undergone glial/astrocyte priming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C123 represent the central interpretive conclusion of the manuscript, integrating findings from methylation (C1), transcription (C2), and motif analysis (C3). The convergence of multiple lines of evidence\u2014hypomethylation bias, ACS enrichment, NFI/ETV4 motif enrichment, validation in iAPCs, and literature on glial differentiation\u2014provides strong support for this ontogenic hypothesis. However, this remains an inference based on correlative data; definitive proof would require lineage tracing or functional experiments showing that manipulation of these TFs in progenitors can generate B-GIC-like cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The subset of glioblastoma with hypomethylation bias and astrocytic signature enrichment is functionally characterized by increased invasiveness (at least partially mediated by SRPX2) and macrophage infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 summarize the key functional findings of the manuscript. C5 is supported by xenograft data (C73), C6 by SRPX2 knockdown experiments (C84), and C7 by scRNAseq analysis (C100-C107). The qualifier \"at least in part\" for SRPX2's role (C6) is appropriate given the incomplete knockdown and cell line-specific effects. The convergence of in vivo, in vitro, and computational evidence provides strong support for these functional characteristics.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1642 @@
+{
+  "submission": {
+    "id": "b2312ec8-1e10-45ba-8407-c0d5ad657c9f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:59:52.679735Z",
+    "updated_at": "2025-12-03T06:59:52.679735Z"
+  },
+  "content": [
+    {
+      "id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "submission_id": "b2312ec8-1e10-45ba-8407-c0d5ad657c9f",
+      "content_type": "manuscript",
+      "content_text": "# A unified platform to manage, share, and archive morphological and functional data in insect neuroscience\n\n## Authors\n\n- Stanley Heinze<sup>1</sup> ([ORCID: 0000-0002-8145-3348](https://orcid.org/0000-0002-8145-3348)) \u2020\n- Basil el Jundi<sup>3</sup> ([ORCID: 0000-0002-4539-6681](https://orcid.org/0000-0002-4539-6681))\n- Bente G Berg<sup>4</sup> ([ORCID: 0000-0003-4035-9125](https://orcid.org/0000-0003-4035-9125))\n- Uwe Homberg<sup>5</sup> ([ORCID: 0000-0002-8229-7236](https://orcid.org/0000-0002-8229-7236))\n- Randolf Menzel<sup>6</sup> ([ORCID: 0000-0002-9576-039X](https://orcid.org/0000-0002-9576-039X))\n- Keram Pfeiffer<sup>3</sup> ([ORCID: 0000-0001-5348-2304](https://orcid.org/0000-0001-5348-2304))\n- Ronja Hensgen<sup>5</sup> ([ORCID: 0000-0002-4876-9084](https://orcid.org/0000-0002-4876-9084))\n- Frederick Zittrell<sup>5</sup> ([ORCID: 0000-0001-7878-4325](https://orcid.org/0000-0001-7878-4325))\n- Marie Dacke<sup>1</sup> ([ORCID: 0000-0001-6444-7483](https://orcid.org/0000-0001-6444-7483))\n- Eric Warrant<sup>7</sup> ([ORCID: 0000-0001-7480-7016](https://orcid.org/0000-0001-7480-7016))\n- Gerit Pfuhl<sup>4</sup> ([ORCID: 0000-0002-3271-6447](https://orcid.org/0000-0002-3271-6447))\n- J\u00fcrgen Rybak<sup>9</sup> ([ORCID: 0000-0003-0571-9957](https://orcid.org/0000-0003-0571-9957))\n- Kevin Tedore<sup>1</sup> ([ORCID: 0000-0002-2722-8393](https://orcid.org/0000-0002-2722-8393))\n\n### Affiliations\n\n1. Department of Biology, Lund University Lund Sweden\n2. NanoLund, Lund University Lund Sweden\n3. Biocenter, Behavioral Physiology and Sociobiology, University of W\u00fcrzburg W\u00fcrzburg Germany\n4. Department of Psychology, Chemosensory lab, Norwegian University of Science and Technology Trondheim Norway\n5. Fachbereich Biologie, Tierphysiologie, and Center for Mind Brain and Behavior (CMBB), University of Marburg and Justus Liebig University Giessen Marburg Germany\n6. Institut f\u00fcr Biologie - Neurobiologie, Free University Berlin Germany\n7. Research School of Biology, Australian National University Canberra Australia\n8. Department of Psychology, UiT The Arctic University of Norway Tromso Norway\n9. Department of Evolutionary Neuroethology, Max Planck Institute for Chemical Ecology Jena Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nInsect neuroscience generates vast amounts of highly diverse data, of which only a small fraction are findable, accessible and reusable. To promote an open data culture, we have therefore developed the InsectBrainDatabase (IBdb), a free online platform for insect neuroanatomical and functional data. The IBdb facilitates biological insight by enabling effective cross-species comparisons, by linking neural structure with function, and by serving as general information hub for insect neuroscience. The IBdb allows users to not only effectively locate and visualize data, but to make them widely available for easy, automated reuse via an application programming interface. A unique private mode of the database expands the IBdb functionality beyond public data deposition, additionally providing the means for managing, visualizing, and sharing of unpublished data. This dual function creates an incentive for data contribution early in data management workflows and eliminates the additional effort normally associated with publicly depositing research data.\n\n## Introduction\n\nData are the essence of what science delivers - to society, to researchers, to engineers, to entrepreneurs. These data enable progress, as they provide the basis on which new experiments are designed, new machines are developed, and from which new ideas emerge. Independent of the research field, many terabytes of data are produced every year, yet only a small fraction of these data become openly available to other researchers, with even less penetrating the invisible wall between the scientific community and the public (Mayernik, 2017). While research papers report conclusions that are based on data and present summaries and analyses, the underlying data most often remain unavailable, despite their value beyond the original context. Whereas this is changing in many fields and the use of open data repositories becomes increasingly mandatory upon publication of a research paper, this is not ubiquitous and older data remain inaccessible in most instances. Additionally, merely meeting the data deposition requirement by 'dumping' poorly annotated raw files on an internet platform does not aid transparency or reuse of the data. To ensure common standards for data repositories and the datasets to be stored in them, the FAIR principles for data deposition (Findability, Accessibility, Interoperability, and Reusability) were developed (Wilkinson et al., 2016). It is clear from these principles that annotation and rich metadata are essential, if a dataset is supposed to be beneficial to others. While this is relatively easily achievable for data such as gene sequences, protein sequences, or numerical datasets, the challenges are much bigger for complex morphological data, physiological observations, or behavioral studies. The difficulties result not only from large file sizes of image stacks, high-speed videos, or recorded voltage traces, but also from the heterogeneous data structure often generated by custom designed software or equipment.\n\nInsect neuroscience is no stranger to these challenges. Particularly for research outside the genetically accessible fruit fly Drosophila, no universal data repository exists that allows retrieval of original observations that underlie published articles. Research groups worldwide investigate the nervous systems of a wide range of insect species, but mostly operate in isolation of each other. Data from these projects are often deposited in local backup facilities of individual institutions and thus remain inaccessible to the community. Combined with a lack of interoperability caused by independent choices of data formats this has the potential to severely hamper progress, given that interspecies comparison is one of the existential pillars on which insect neuroscience rests. The problem is amplified by the fact that much of the data are both large and heterogeneous (e.g. 2D and 3D images, models of brain regions, digital neuron reconstructions, immunostaining patterns, electrophysiological recordings, functional imaging data).\n\nA final problem is that depositing well-annotated data takes time and effort, and little incentive is generally given to prioritize this work over acquiring new data or publishing research papers. While this is true for all research fields, the complex data in neuroscience requires an extra amount of effort to meet acceptable standards. This has made depositing data in a form that is useful to the community a relatively rare event. Early efforts were made to develop brain databases for various insect species (e.g. honeybee [Brandt et al., 2005], Manduca sexta [El Jundi et al., 2009a], Tribolium castaneum [Dreyer et al., 2010], desert locust [Kurylas et al., 2008]), but in those cases, the anticipated interactive platforms for exchange and deposition of anatomical data were short-lived and not used beyond the laboratories that hosted them. More recently, several successful databases for anatomical data from insects were developed. Most notably, Virtual Fly Brain (VFB) (Osumi-Sutherland et al., 2014) now bundles most efforts in the Drosophila community regarding the deposition of neuroanatomical data - including single-cell morphologies from light microscopy, data from recent connectomics projects (most notably from Scheffer et al., 2020), as well as catalogues of GAL4 driver lines, which enable access to specific neurons with genetic methods. VFB hosts most content of older independent databases, such as FlyCircuit (Chiang et al., 2011) and FlyBrain (Armstrong et al., 1995) and is dedicated to providing smart ways of utilizing and visualizing Drosophila neuroanatomy. Similarly, but more focused on data visualization and connectivity modeling, the FruitFlyBrainObservatory allows access to current datasets of single neuron morphologies from Drosophila. Another database, founded in 2007, has grown substantially over recent years: NeuroMorpho.Org (Ascoli et al., 2007). It provides 3D reconstructed datasets of more than 100,000 neurons from across animal species and includes substantial numbers of single-cell data from insects. While the latter platform is comparative in nature, it does not offer dedicated tools for comparisons between species or much context for the deposited neuron skeletons. In contrast, the data on VFB are much richer and different datasets are tightly linked to each other, allowing, for example, correlation between GAL4 driver lines and electron microscopy based single neuron reconstructions. Yet, no comparison to other species is possible or intended via VFB. Additionally, no systematic information is provided about the function of the deposited neurons in either database, precluding insights into the structure-function relations that are critically important to understanding the insect brain.\n\nTo address these shortcomings we have developed the Insect Brain Database (IBdb), a cross-species, web-based platform designed for depositing and sharing research data that consist of morphological and functional information from insect brains. With an overall modular design, a concept for dual use as depository and data management tool, combined with widely useful visualization tools, this database yields a tool for increasing transparency, accessibility, and interoperability of insect neuroscience data. Moreover, the newly developed concepts are not only relevant to insect neuroscience, but to any scientific field that can be linked to a hierarchically organized framework. We thus hope that our conceptual design can be adopted by a range of users from across the sciences to simplify data handling and make scientific results in general more transparent.\n\n## Results\n\n### Database outline\n\nThe 'Insect Brain Database' (IBdb) can be found on the internet at insectbraindb.org and is freely available to everyone. It can be used with most modern web browsers with active Javascript (tested with Google Chrome, Safari, Firefox) on computers running any operating system, without the need for any additional plugins. A user account can be registered free of charge and is required for users who wish to download data and to contribute content.\n\nThe IBdb is divided into three main hierarchical layers: Species, brain structures, and neuron types. Each level is additionally linked to 'experiments', which is the fourth major organizational layer of the database (Figure 1A). At each level, a database entry is represented by profile pages, on which all relevant information is collected (Figure 1C). These profile pages are the core of the database. They can be reached directly by several search functions, as well as by entry lists. As profile pages are embedded in a hierarchical framework of species, brain regions, and cell types, they become automatically associated with metadata. For instance, an entry for a pontine neuron of the fan-shaped body (central body upper division) in the monarch butterfly would become linked to the brain regions 'fan-shaped body/central body upper division' and its parent region 'central complex', as well as to 'monarch butterfly' as species. The neuron can then be found, for example, by querying the brain regions associated with it, or by exploring the species of interest.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig1-v2.jpg)\n\n**Figure 1.:** (A) Organizational layers of the database. Elements in each layer are represented on their respective profile pages, which can be located either through lists or search interfaces. (B) Examples for information that can be deposited on each level of the database, illustrating how diverse data is automatically associated with hierarchical metadata. (C) Schematic illustration of a neuron profile page. Detailed anatomical and functional data is available on this page, from where experiments associated with this cell type are also linked. Similar pages exist for species and brain regions. Abbreviations: AL, antennal lobe; IHC, immunohistochemistry; TEM, transmission electron microscopy; \u03bcCT,\u00a0micro computed tomography.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Illustration of the interactions between the user interface, the web server, database, data storage and handles management.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Cell types are defined as all neurons that are morphologically indistinguishable. In many cases, a cell type comprises an individual neuron, while in other cases, several neurons with identical morphologies comprise a cell type. For highly organized brain regions, cell types can be grouped into higher order categories. (A). Three cell types of the Monarch butterfly central complex (CX), which differ in their innervated columns, overall morphology, detailed location of dendrites and axonal branching patterns. (B). Cell types that only differ in the innervated CX column are grouped into a super-type. (C). Several super-types can be grouped into a neuron family. (D). Illustration of neuron classes: CX neurons, for\u00a0example in dung beetles can be grouped in three classes (columnar CX neurons, tangential CX neurons and pontine neurons). (E). Corresponding neurons in different brain hemispheres are treated as separate cell types, but are cross linked in the database. (F). The neuron name is composed of a species prefix, hemisphere suffix (both automatically generated) and a user defined neuron name. Alternative names can be assigned to the neuron, for\u00a0example to refer to older naming schemes or names from different species. Those names are automatically queried as well, when searching for neuron names. Note that the hemisphere suffix is not used for columnar CX neurons, as hemisphere is already identified via the innervated CX column. Data from Heinze et al., 2013 (A\u2013C), El Jundi et al., 2018 (D), and Stone et al., 2017 (E); all visualizations generated with Insectbraindb.org.\n\nSpecies entries contain representative data of an insect species, with the aim of defining that species and the overall layout of its brain. Similarly, entries for brain regions and cell types contain representative examples of data that illustrate the respective entity and provide all information to unambiguously define it, essentially providing type-specimen. While the definition of species and brain regions are straight forward in the context of this database, neuron types can theoretically be defined in many different ways, based on connectivity, function, developmental origin, morphology or neurochemical identity. Given that the database is predominantly organized according to anatomical principles, we have defined a cell type as a collection of individual neurons that are morphologically indistinguishable at the level of light microscopy. In many cases, a cell type comprises only a single individual per brain hemisphere, but in cases where multiple identical neurons are present, a cell type is defined as the first level of similarity beyond the individual neuron. Higher levels of neuron categories group neurons according to anatomical similarities (Figure 1\u2014figure supplement 2).\n\nContrary to the first three levels, experiment entries contain specific data from individual, defined experiments (Figure 1B). As research data can be obtained at the levels of species, brain regions and cell types, experiment entries exist for all three levels and are accessible via the respective profile pages (Figure 1A). This distinction between representative and concrete data is important, as for example only one entry for a certain columnar neuron type of the central complex exists in the database, yet, if that single cell type was subject to 30 intracellular recordings, the profile page of that cell type would list 30 experiments, each containing a unique individual neuron with its associated physiology. While an anatomical type specimen can easily be defined as the most complete example of any particular neuron\u2019s morphology, the decision of what content to depict as representative functional data is less straight forward. The functional information on the profile page should reflect the range of experimental results present in the experiment entries of any particular cell type. As those results potentially diverge, for\u00a0example due to different experimental paradigms used in different research groups, the function section can contain as many entries as needed to capture the available information, without need for consensus. With new experiment entries added, this section can evolve over time.\n\nIn the context of this evolving content, it is key to ensure that entries which are cited in published work remain findable in the exact form they existed when they were cited (Ito, 2010). Therefore each entry receives a persistent identifier. This identifier (a 'handle') links to a version of the entry that was frozen at the time it was created (and cited). Once information is added or removed from that entry, a new handle must be generated, providing a new access link for future citations. This system is applied to multiple levels of the database (experiments, neurons, and species) and ensures that all information in the database, as well as the interrelations between entries, are truly persistent.\n\n### Interactive search interfaces\n\nAs locating specific datasets is one of the core functions of a database, we have developed a novel, more intuitive way to find specific neuron data. A graphical representation of the insect brain, resembling the overall anatomical outline of all brain regions and highlighting the regions containing neuron data (Figure 2A), makes it easy to search for neurons within single species and across species. This graphical interface is generated directly on the database website for each species and is adapted from a generic insect brain, that\u00a0is a shared ground plan. This generic brain is the least detailed fall-back option for any cross-species search and was generated based on the insect brain nomenclature developed by Insect Brain Name Working Group et al., 2014. It resembles the shared anatomical hierarchy of all brain regions in insect brains. Within this hierarchy, the entire brain is divided into 13 super-regions, which consist of individual neuropils. The latter can be further divided into sub-regions. While all super-regions exist in all species, differences become more pronounced at lower levels of the hierarchy. The generic brain therefore largely contains super-regions as well as several highly conserved neuropils (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2). As these categories are simply tags of brain region entries used to organize the database, the search interface does not differentiate between them, simplifying the user experience (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig2-v2.jpg)\n\n**Figure 2.:** (A) Screenshot of the schematic brain search interface (Monarch butterfly) in single species mode. Selecting a neuropil will reveal all neurons connected to that neuropil. (B) Schematic wiring diagram view of the search result; orange neuropil was queried. Selecting an individual neuron will reveal the profile page of that cell type. (C) Example of a neuron profile page with anatomical information. Confocal image stack and functional data are not listed in this example. (D) Semi-schematic search interface. The section view is scrollable and allows the user to query individual neuropils for connected neurons by clicking the cross section. The inserts show the results view at three levels of the brain. Neuropils connected to the queried neuropil are highlighted. Switching to the schematic view will then show the neurons as wiring diagram. Switching to the 3D mode will show registered neurons in 3D. (E) The 3D results viewer allows one to view all neurons registered into a common reference frame; example from Monarch butterfly (data from Heinze and Reppert, 2012) . The user can continuously switch between the three modes (schematic, semi-schematic, 3D). All visualizations generated with Insectbraindb.org.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The brain builder module enables to generate the schematic brain models required for the graphical search functions. It allows the user to draw brain regions (tagged as either super-region, neuropil, or sub-region) as well as fiber bundles and invisible bridges. The latter provide shortcuts for neurons in the wiring diagram view (schematic search results), preventing overly convoluted neuron paths. The top panel shows the generic brain that is used as the template for all other species and which combines brain regions and fiber bundles shared by the majority of insect species. The bottom four panels illustrate the modifications of this template needed to account for species-specific features of four insect species examples.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Brain structures included in the insect brain database. All regions shown in black font are included in the generic insect brain that serves as a template for all other species and as a fall-back option for cross-species search. Bold regions are super-regions, which consist of neuropils, which in turn can be divided into sub-regions. Note that neuropils and subregions can be species-specific (gray font) and no single species contains all listed structures.\n\nIf more than one species is subject to a query, a schematic brain is generated that displays the commonly shared features of the species involved. For both single and multi-species search, when selecting a specific brain region, all neurons in the IBdb that connect to this region become visualized by a dynamically drawn wiring diagram (Figure 2B). Filters can be applied to narrow down search results according to neuron polarity, functional class, etc. Individual neurons in the wiring diagram can be selected to reveal the neuron's profile page. Here, all available information for this cell type is displayed, including links to deposited experiment entries (Figure 2C). The schematic display of search results can visualize any neuron in the database, only requiring that a neuron is annotated with respect to the brain regions it innervates. A list of search results is additionally made available after each search and offers the possibility to also display experiment entries associated with the found neurons.\n\nFor single species queries, two more modes for visualizing search results are available: the semi-schematic view and the 3D view. The semi-schematic view mode emphasizes the natural brain organization on the level of brain regions, while also serving as interface for launching search queries. It comprises a full series of automatically generated sections through a segmented 3D brain of a species. Each brain region present in that species' 3D brain is shown as an interactive cross section that can be used to query neural connections of that region (Figure 2D). If a region is selected, all connected brain areas are highlighted and neurons resulting from this query can be visualized by changing to either the schematic view, the 3D view, or a list view. The advantage of the anatomically correct layout of this interface is that a brain region can be queried for a neuron, even if its name is not known to the researcher. This is particularly useful for regions with uncommon names that have only recently been introduced to the insect brain naming scheme (e.g. crepine, superior clamp, etc., see Insect Brain Name Working Group et al., 2014). Launching a search for neurons in regions with unfamiliar names is made much easier when the search interface resembles the information a researcher has obtained from, for\u00a0example, confocal images or physical brain slices. The semi-schematic mode of the database search function fulfills this demand and bridges the schematic wiring diagram view and the full 3D view.\n\nThe 3D view visualizes search results in an anatomically correct way and shows queried neurons in the context of a species' reference brain (given that this information was added) (Figure 2E). It displays interactive surface models of that brain together with neuron skeletons obtained from the neuron-type's profile page.\n\nIn the graphical search interface the search parameters are limited to anatomical information defining the neuron's location in the brain (i.e. likely input and output areas). In contrast, an additional text-based search function (\u2019Expert Search\u2019) allows users to query all information deposited on a neuron's profile page. Individual search parameters can be logically combined to generate arbitrarily complex searches. The results are displayed as a list of neurons, which can be sent to populate a schematic wiring diagram view by a single click. Thus, this tool effectively combines complex search with the advantages of an intuitive display of results.\n\nA different means of locating data on neurons and experiments is achieved via a publication based search function. Each neuron and experiment that is associated with a publication becomes automatically part of a dataset linked to this publication. By definition, experiments are only part of one publication, while neuron entries can be referenced by many publications. In either case, users can locate all data that has contributed to a specific piece of scientific literature.\n\nFinally, whereas the emphasis of the database search lies on locating cell types, information on brain regions can also be found using identical interfaces. The schematic search option allows users to reveal brain region profile pages by selecting schematic neuropil representations. The same information can also be obtained by selecting brain regions in the semi-schematic neuropil search interface.\n\n### Online applications and tools\n\nTo maximize the usefulness of the database, we have implemented an integrated 3D viewer to deliver platform independent, high-quality data visualization without any additional software demands. Neuropil visibility can be independently switched on and off for each brain region, transparency can be freely adjusted, and colors of neurons can be changed (Figure 3A). Neurons can be shown either with diameter information or as simple backbones. The built-in screenshot function enables the user to capture any scene displayed in the 3D viewer and produces a high-resolution, publication-ready image with transparent background (Figure 3B,C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig3-v2.jpg)\n\n**Figure 3.:** (A) Screenshot illustrating the functionality of the 3D viewer in the insect brain database. Cyan arrow: Screenshot button. Cyan panel: Tools for adjusting appearance of neuropils. (B) Examples of neuropil images generated with the IBdb 3D viewer, illustrating navigation relevant neuropils in three insect species (Monarch butterfly [Heinze and Reppert, 2012], sweat bee Megalopta genalis [Stone et al., 2017], dung beetle [Immonen et al., 2017]). (C) Neurons associated with the antennal lobe of the honeybee, generated with the IBdb 3D neuron viewer (data from Rybak, 2012). (D) Elements in the neuron clipboard (left) can be arbitrarily combined and displayed in the 3D viewer to highlight neural pathways and circuits. Shown are two parallel input pathways from the anterior optic tubercle to the ellipsoid body of the central complex in the Monarch butterfly (data from Heinze et al., 2013). (E) Side-by-side neuron viewer. Screenshot showing comparison of 3D skeletons of CPU1 (PFL) neurons from four species (top left: Monarch butterfly [Heinze et al., 2013]; bottom left: desert locust [El Jundi et al., 2009b]; top right: Dung beetle [el Jundi et al., 2015]; bottom right: Bogong moth [de Vries et al., 2017]). All visualizations generated with Insectbraindb.org.\n\nThe IBdb allows users to not only locate neuronal morphologies quickly, but also to combine arbitrary neurons from any single species into a common visualization. To achieve this, we have generated a neuron clipboard, in which individual neurons from search results can be stored temporarily (Figure 3D). Any subset of cells in the clipboard can be sent to the 3D viewer, as long as all neurons belong to the same species, that\u00a0is can be displayed using the same reference brain. The desired configuration of neurons and neuropils can be generated using the interactive tools of the viewer and the screenshot function can be used to create a high-resolution image to be used for illustration purposes (e.g. reviews, conference talks, teaching).\n\nAdditionally, we have embedded a function to directly compare up to four neurons side by side on screen. Any neuron located in the neuron clipboard can be chosen to be included in this comparison. The comparison uses the 3D view, the profile image, or the confocal stack located on the respective neurons' profile pages. This function is ideally suited to compare homologous neurons from across species to quickly assess differences and shared features of these cells. The four-window 3D viewer retains all functions of the normal full screen 3D viewer and thus also allows the capture of high resolution screen shots of each of the neurons being compared (Figure 3E).\n\nThe data in the database are suited for many applications, including more sophisticated ones. To provide direct access to all levels of the data in the IBdb we have created an API interface, specifying how to automatically draw data from the database via web-browser based apps. Applications produced by third parties that use this function can be embedded directly on the IBdb website, once they are approved by the site administrators. Applications envisioned are, for example, quantitative comparisons of both single neuron morphologies and neuropils between species, direct online multi-compartment modeling of neurons deposited in the database, or virtual reality interfaces that allow exploration of anatomical data in a 3D virtual reality environment. Over time, we hope that our unified platform will stimulate the insect neuroscience community to generate a collection of online tools to analyze and explore neuroanatomical and physiological data deposited in the IBdb, thereby allowing straight-forward meta-analysis of all raw data deposited in the database. As an offline tool, the Natverse package in R already offers the possibility to explore IBdb data (Bates et al., 2020).\n\n### Contribution of data\n\nAll data on the internet is public. This also applies to any data publicly available in the IBdb. Driven by the requirement to obtain data persistency and implemented by the use of handles, no data can be removed from the database once it is public (and thus citable). For all data, the contributors retain ownership and hold the copyright to their data. The publishing is performed explicitly by the owners, not by the database administrators, and the license attached to each dataset is a Creative Commons Attribution Non Commercial 4.0 International (CC BY NC 4.0). Thus, when data in the IBdb are downloaded for reuse, the original work that underlies these data has to be credited together with the IBdb as the source. When data are used to generate images with the help of the IBdb, these images are licensed via Creative Commons Attribution 4.0 International (CC BY 4.0), that\u00a0is they can be used in any publication as long as the original data owners and the IBdb are credited.\n\nData can be contributed by registered users at all levels of the database, i.e. species, brain regions, neurons, and experiments. The process is similar on all levels but requires more expert knowledge the higher in the hierarchy the data reside. In the following sections we will briefly illustrate the main principles of how to contribute data (for full instructions see the Online User Guide).\n\n#### Species\n\nTo submit a new species, a profile page has to be created, which then has to be populated with data. While photographs, bibliography, and text descriptions of the species are desirable and strongly encouraged, the most important next step is to generate a schematic brain (Figure 4A). This will ensure that brain structure entries are created in the database, a prerequisite for neuropil-based search and 3D brain region identity. To generate a schematic brain, we have created the 'Brain Builder' tool on the IBdb website, which provides templates based on either the generic insect brain, or related species already deposited in the database. The user can simply copy an existing brain, associate it with the new species and modify it to match any unique features of the new species. Note that the ventral nerve cord (VNC), even though not part of the brain, was included as a single region as well, allowing to deposit information about VNC neurons as well and opening the possibility to expand the database beyond the actual brain in the future.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig4-v2.jpg)\n\n**Figure 4.:** (A) Three main elements have to be created for each new species: the schematic brain, the 3D brain, and an image stack. The schematic brain is generated directly on the IBdb website using the 'Brain Builder', while the other two elements are uploaded. For each, both source files and viewer files are needed. Viewer files are used for online display, while source files can be downloaded by users. (B) Neuropil profile pages are automatically generated when creating the schematic brain. They have to be populated with images and texts by the user. (C) The semi-schematic brain is automatically generated based on the provided 3D brain. (D) The species profile page must be populated with images, texts and a bibliography to provide context for the species. Visualizations in A,B,c generated with Insectbraindb.org, Megalopta genalis data from Stone et al., 2017.\n\nOnce the profile page and the schematic brain is created, a 3D brain can be uploaded to illustrate the brain organization of the new species and to serve as reference brain for neuron display (Figure 4A). For all uploaded data, the database distinguishes between source files and display files. Source files contain the 3D reconstruction in a format that the researcher would like to make available for others in the field. The second set of files, the display files, are required for automatic online display and must constitute the surface models of each neuropil (.obj-format). Each brain region model is tagged with a unique neuropil identity, so that the schematic brain regions and the 3D surface models will be linked to the identical brain-structure entry. Finally, following the same principles as for the 3D brain, an image stack can be uploaded to the profile page as well (Figure 4A). This can be any representative dataset that illustrates the layout of the species' brain (e.g. confocal stack, \u00b5CT image series, serial sections with any other technique).\n\n#### Brain structures\n\nBrain structure entries are automatically generated when defining the schematic brain search interface for a new species (Figure 4B). These profile pages are automatically populated by a 3D brain in which the relevant region is highlighted, a brain structure tree that reveals the relative location of the respective neuropil in the hierarchy of the species' brain, and with links to neuron entries associated with each brain region. All remaining data have to be manually added. These are mostly descriptive in nature and encompass images, text-based descriptions, and volumetric data.\n\n#### Neurons\n\nContribution of neurons follows a similar procedure as the contribution of new species (Figure 5). The user creates a profile page for the new cell type that subsequently has to be populated with information. To make a neuron findable in the database, its arborization regions in the brain have to be defined (Figure 5C). Within a graphical user interface, these regions are chosen from the brain structures available in the schematic brain of the respective species. One arborization entry has to be created for each branching domain of the neuron, leaving no part of the neuron un-annotated. To enable the automatic generation of a wiring diagram view of the new neuron for displaying schematic search results, an outline of its branching structure has to be generated in an embedded tool called the neuron-path assistant (Figure 5D). This branch tree defines which neuropils are innervated in which order and where main branch points are located.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig5-v2.jpg)\n\n**Figure 5.:** (A) A new neuron type can be created by submitting a neuron form containing basic information. This generates a neuron profile page that then has to be populated with information by the owner. Each entry is findable by the expanded search function. (B) 3D-skeletons are added as swc-files (online display) and source files (download). Confocal image stacks are uploaded as jpeg series for online display and as original data files for download. (C) All arborization regions of the neuron must be defined (at the level specified in the species' schematic brain) and labeled as either input, output, or unknown polarity. (D) To enable automatic drawing of wiring diagrams in schematic search results, the order of innervation of neuropils and the branch-points of the neuron must be defined using the path assistant. All visualizations generated with Insectbraindb.org.\n\nThe remaining procedure for neuron contribution is largely identical to species contribution and follows the dual approach towards source data and display data for 3D reconstruction and image stacks (Figure 5B). All other information, that\u00a0is images, bibliography, keywords, representative functional data, transmitter content, and textual descriptions, can be added to the profile page at any time prior to publication. To ensure common minimal standards and to avoid rudimentary datasets, several data fields have to contain valid information before a request for publication can be made. These include an image of the neuron that allows to clearly identify the cell type, a complete morphology section (including soma location, a description of the neuron\u2019s morphology, and arborization regions), as well as a link to a publication (or preprint) that contains data on the cell type depicted in the new entry. If no publication is available, a note in that section will state that the neuron is not part of any publication.\n\nImportantly, the IBdb can be used to house data that have been obtained by classical methods, for\u00a0example camera lucida drawings of Golgi impregnated neurons. While no 3D information is available in those cases, drawings can be uploaded as images after which annotation of the neuron's morphology (arborization regions) is performed as described. These neurons will therefore become findable in the schematic search interface and will be added to the publicly available pool of neuronal data. To allow these datasets to exist in the database, 3D reconstructions and image stacks are not mandatory content. Similarly, 3D data that is not registered to a common reference frame can be deposited in the database, with or without individual brain region reconstructions, but a shared display in the context of a reference brain will not be available for these datasets.\n\n#### Experiments\n\nExperiment entries are created by adding them directly to the profile page to which they are linked (species, brain structure, or neuron). The automatically generated experiment profile page must then be filled with basic meta-information about the experiment (date, what was done, who did it), after which a series of files can be uploaded. These files can be in any format and are made available for download. This allows users to provide not only the raw data of any experiment, but also, for example, analysis scripts, custom made equipment-control software, and analysis results. Image files can be selected for direct online display on the experiment profile page to allow online examination of the data. Importantly, experiment entries are independently published from neuron entries.\n\n### Curation and administration\n\nThe database is managed via a group of voluntary curators, a scientific administrator, and a technical administrator. Importantly, no single person curates all data in the IBdb, but each species is managed by a specialized curator, who is an expert for that species. This distributed curation system ensures that no single person is responsible for too many datasets, and that no curator has to evaluate data outside their area of expertise. To additionally reduce the workload for species with many entries, more than one curator can be assigned to any given species. The scientific administrator (the lead author of this publication) oversees the curators, while technical administration is carried out by the technical administrator (last author of this publication). The technical administrator is the only person who has potential access to all data in the database.\n\nThe responsibility of the scientific administrator is to approve new species and to train and support the curators for individual species. This training is carried out during a training period during which actions of the curator have to be approved by the scientific administrator before they take effect. Once a new curator is sufficiently trained to carry out all tasks independently, the scientific administrator grants full curator privileges. The responsibility of each curator is to approve new neuron-type datasets and to re-evaluate major updates of these (data re-approval). This process entails checking for formal errors in the submitted data, ensuring that new data do not accidentally duplicate already existing data, and that the quality of the data meets acceptable standards. To ensure swift correction of any issues, we have implemented a private communication channel between curator and data owner. This was realized through a commenting function that enables the curator to post comments on a neuron page, which are only visible to the data owner. The owner can then directly respond to the comments and any issues raised can be resolved.\n\nWhile our distributed approach to curation has many advantages, it creates challenges towards ensuring that curation of data across all species and levels is accurate, consistent and complete. We have therefore designed multiple tools and features to facilitate effective and consistent data curation. Besides formalized training and approval for each new curator, we have provided checklists for both data contributors and curators (found in the online help menu) that must be followed to ensure that database entries fulfill predefined standards. Yearly meetings among all curators will ensure that these standards are known and can evolve over time. If mandatory data is not provided by a data contributor, request for approval of the dataset is automatically blocked, preventing rudimentary datasets to enter the public section of the database. Finally, if an entry becomes obsolete, for\u00a0example when new research data provides conclusive evidence that cell types listed as separate entries belong to the same type, existing entries can be archived. This process preserves the persistent handle of the entry, but removes it from public lists and search results in the IBdb. This way, references to these datasets remain resolvable, while, at the same time, obsolete data cannot clutter the database. In the long run, this function provides the means to keep the database clean without violating the principle of data persistence.\n\nThe definition of what constitutes minimal standards for a neuron or species entry reflects a scientific consensus among curators. Rather than imposing these standards onto the field, the IBdb generates the means to develop a common set of rules by providing the platform for continued discussions among curators as well as to reinforce an evolving consensus.\n\nTo enable all users to provide feedback and to discuss topics relevant to other database users, we have added a discussion forum directly to the IBdb website. This forum is intended as a means for reporting potential bugs, suggesting new IBdb features, or for discussing scientific content (methods for data processing or acquisition, requests for literature, staining protocols etc.).\n\n### The IBdb as tool for data management and data deposition\n\nEach database entry has to be explicitly published by the contributor. In the process, it is approved by either the database administrator (species), or the species' curator (neurons). While this procedure was initially intended only as a quality control measure to prevent incomplete or inaccurate data from compromising the database, we have developed it into a unique feature: the IBdb private mode. Before a dataset is made public, it is invisible to all other users, curators and the scientific database administrator. The dataset can thus be updated and even deleted. This creates the potential of using the IBdb to deposit data while they are being collected or prepared for publication in a research paper, that\u00a0is, for data management (Figure 6A). The API can be used to programmatically integrate the IBdb into any individual data management workflow; a community driven MATLAB implementation for automatic deposition of cell types and experiments is available on GitHub (https://github.com/zifredder/IBdb-matlab).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig6-v2.jpg)\n\n**Figure 6.:** (A) Interconnection of private, public, and pre-public datasets. Private datasets can be viewed and edited by members of user groups with access granted to a particular dataset. Pre-public datasets can be viewed by anyone in possession of the pre-publication handle (distributed by the data owner, e.g. within a manuscript). Public datasets can be accessed by all users. Publication of data cannot be undone as persistent handles are generated. Gray arrows indicate control actions employed by the dataset owner. (B) Re-publication strategy of evolving datasets. A current version of each public dataset remains present in the owner's private database mode and can be edited at wish. Once sufficient updates have accumulated, the dataset can be re-published. A new version of the persistent handle is assigned and the now public dataset (version 2) becomes locked. Datasets can be edited by the owner and anyone who has been granted permission to edit by the owner.\n\nTo facilitate the use of the IBdb as a data management tool, we have enabled three operational modes of the database site: private, public, and mixed. Any user logged in can thus choose to either access only (own) private data, only public data, or both. The first mode turns the IBdb into a data management site for ongoing research, the second mode is the default mode for viewing publicly available data, and the third mode allows the user to compare their own unpublished data with public data.\n\nAs efficient data management requires researchers from the same laboratory, as well as collaborators, to have access to relevant unpublished data, each user can grant access to their own private datasets (Figure 7). To this end, a user can create a user group and invite other database users to join. Datasets can then be added and made visible or editable to all members of the group. These data can either comprise individual entries at all levels of the database, or collections of entries defined by common features.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig7-v2.jpg)\n\n**Figure 7.:** The private sections of the database are accessible to only the owner of the data, and datasets within this section can be shared with team members and collaborators. Up- and download of these data are possible either directly or via an application programming interface (API). As these datasets are unlocked, they can continuously be updated and also be deleted. Upon publication and curator approval, datasets become locked (persistent) and are deposited in the public section of the database. As an intermediate step, datasets can be pre-published (locked but private) and made available to journal editors and peer reviewers when including datasets in manuscripts of journal articles. Data in the public section of the database are accessible directly for all interested users (relevant user groups are shown on the right). Additionally, an API also allows automated access of public data, which can therefore be used by third party applications (illustrated as \u2019App 1\u20133\u2019) for generating specific user experiences with additional capabilities, for instance in the context of teaching. To remove obsolete datasets from the public domain, they can be archived, a process that preserves persistence but prevents datasets from being findable without the explicit handle.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65376/elife-65376-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Usage statistics of the IBdb since its initial launch in 2015. (A) Number of registered user accounts (cumulative). (B) Number of downloaded files for each year since tracking of download was implemented in 2018. Note that for 2021 only data until July could be included before submission of this publication. (C) Number of deposited datasets, for Experiments, Species, and Neuron types for each year (cumulative). Note that usage of the database has grown steadily during the development phase since its launch in 2015 and that most substantial growth in data deposition has occurred in 2020 and 2021, that\u00a0is, since the deposition of the preprint version of this publication.\n\nFinally, users are often reluctant to make datasets available to the public before they are included in a research paper, yet, these data should be available to editors and anonymous reviewers. We have therefore created the possibility for 'pre-publishing' database entries (Figure 6A). This function allows a user to assign a persistent handle to a dataset (e.g. a neuron profile page) without approval by the curator and without making the dataset findable through search or lists in the IBdb. Editors and reviewers of the research paper (anyone in possession of the handle) then have direct access to the linked pages. Once the manuscript is accepted for publication, the user can submit the respective datasets for publication, obtain curator approval, and thus make them findable in the IBdb public mode.\n\nTo avoid having to separately provide numerous independent handles when sharing data, individual entries can be grouped into datasets. These receive a unique link that grants access to the entire collection. Only public or pre-public data can be included in datasets.\n\nPublic entries of the IBdb are maintained in a dual way; the persistent version is locked and cannot be changed, whereas a second, current version remains visible to the owner and to all members of user groups with appropriate access rights (Figure 6B). This current version is fully private and can be freely edited or expanded. Importantly, no data that is already part of a public version can be deleted. Rather, when for instance a confocal image stack should be replaced by a better one, the old stack can be archived, so that it will not be visible in new versions of the dataset, but will remain present in the database for display of earlier versions. Once all required updates of a dataset have been made, the edited version can be re-published and will be assigned a new version of the persistent identifier after re-approval by the assigned curator. This new version is now also locked and any further edits will again have to be done in the current version of the dataset. This ensures that all data that have been assigned a persistent identifier will remain valid and accessible, while at the same time allowing each entry to evolve. The described strategy of publishing and re-publishing and the associated duality of persistent and current versions are implemented at the levels of species, neurons and experiments.\n\n### Drosophila and interoperability with Virtual Fly Brain\n\nThe IBdb does intentionally not include Drosophila melanogaster as a species. This is because huge efforts have been spent developing highly efficient resources for this widely used model system and, as a result, the Virtual Fly Brain (VFB) resource has been created (Osumi-Sutherland et al., 2014). It bundles data from several older Drosophila databases (e.g. FlyCircuit) to the most recent connectomics datasets (Scheffer et al., 2020). Serving as the main repository for anatomical data from the Drosophila brain it has become the main site to locate GAL4 driver lines, single-cell morphologies, and synaptic connectivity data. It contains tens of thousands of datasets and is designed to specifically meet the needs of the Drosophila research community. By being less specialized, the IBdb has a wider scope. We are hosting many species and include both functional and anatomical data. We also do not require neuronal anatomies to be registered to a reference brain, if this is not possible for some reason. This opens the IBdb up to more diverse data, but as a result cannot provide most of the specialized services that VFB can deliver (e.g. automatic bridging registrations of 3D data between different reference brains). Cross-linking the two databases to effectively enable comparing neurons from the insect species deposited in the IBdb with Drosophila, nevertheless, was highly desirable. Importantly, both databases have converged on highly similar hierarchical frameworks. As the brain nomenclature used by the IBdb and VFB is identical, neuropil identities were mapped across both databases. In cases were homology between corresponding neuropils is unclear, regions map to the next higher order brain region (e.g. Monarch butterfly dorsal bulb maps to the entire Drosophila bulb). For some neuropils, there are no known counterparts in the fly (e.g. the posterior optic tubercle).\n\nWe use the APIs of both databases to allow direct communication between the IBdb and VFB. In principle, when searching the IBdb for neurons, an API mediated query can be automatically sent to VFB and search results are displayed as a list of single neuron entries. Each item on the list contains information obtained from VFB and is directly linked to the corresponding entry at VFB. This feature is available for the graphic, brain region based search. This includes complex multi-neuropil searches, aimed at identifying neurons connecting several brain regions. Effectively, this enables a user to launch a query in the IBdb and directly view corresponding neuron data in VFB, including data from recent connectomics efforts (Scheffer et al., 2020). This seamless interoperability makes maximal use of both complementary resources, without duplicating functionality.\n\n## Discussion\n\n### Specific problems solved by the IBdb\n\nPrevious and current online databases hosting insect neuroscience data have suffered from several shortcomings: Most severely for old databases, a lack of maintenance often quickly led to outdated file formats, rendering the deposited information no longer compatible for viewing with current web browsers (anticipated by Ito, 2010). Second, while some databases originally allowed interactive viewing of the data, no possibility for contribution of one\u2019s own data existed and data download was limited to very few files, for\u00a0example Brandt et al., 2005, Kurylas et al., 2008. Usability of larger databases was generally impaired by a layout that often required expert knowledge to be able to launch meaningful database queries or to understand search results (e.g. FlyCircuit, Invertebrate Brain Platform [now: Comparative Neuroscience Platform]). This not only applies to old databases, but the restriction to individual species and often highly complex interfaces limit the potential user base to specialists even in cutting edge databases such as VFB or visualization tools such as FruitFlyBrainObservatory. Finally, the limitation to purely anatomical data, including in the major current cross-species database NeuroMorpho.org, does not account for one of the key advantages of insect neuroscience: the high level of tractable structure-function relations.\n\nThe IBdb addresses each of these issues. Firstly, we have developed the database software to be independent of the operating system and type of web browser used, as well as to not rely on any third party plugins. Additionally, we implemented the database as a classic, relational database without experimental data structures (e.g. intelligent, adaptive search), aiming at maximal robustness. Having created a conceptionally simple software that uses standard web-technology with standard file-formats makes continued compatibility and technical maintenance comparably simple.\n\nSecond, we have invested substantial effort in making the IBdb intuitive to use and visually attractive to provide a positive user experience. The latter factor should not be underestimated in its importance. One of the problems encountered in previous databases were user interfaces that were difficult to use, creating an immediate negative experience when attempting to use a site for the first time and therefore reducing the motivation to interact with it. As for commercial software, we aspired to generate a user interface that is largely self-explanatory, provides immediate visual feedback when a user action was successful, and which clearly shows what actions can be performed. Several years of beta-testing by a multitude of users have streamlined the site to a point at which interacting with the IBdb is both straight forward and fun.\n\nAs the success of the database depends on many users sharing their data, we aimed at making contributing data as intuitive and as easy as searching and visualizing data. We have thus simplified the data contribution process to a point where only very limited anatomical knowledge is needed, aiming at enabling physiologists without deep anatomical training to submit data as well.\n\nFinally, to our knowledge the IBdb is the first database in the field of invertebrate neuroscience that combines functional data with anatomical data, and at multiple levels ranging from entire brains to single neurons. This ability, together with the possibility to deposit not only representative data but concrete sets of experiments, provides an opportunity for anatomists to directly interpret their findings in a functional context, as well as allowing physiologists to tether their findings to a coherent anatomical framework that automatically generates context for any functional data. The ease of use of the IBdb, combined with housing functional and anatomical data, has the potential to facilitate interactions between expert anatomists and physiologists and thereby strengthen structure-function analysis across the diversity of insect brains.\n\n### Motivation to contribute\n\nThe landscape in the insect neuroscience research community has changed dramatically, and most relevant funding bodies are in the process of implementing open data mandates or have already done so (e.g. European Research Council, National Institutes of Health, Wellcome Trust, etc). Thus, the initial driving force for data deposition is much larger compared to that surrounding earlier database attempts. Yet, why should researchers use the IBdb for meeting these new mandates rather than other available databases? Different from open databases, for\u00a0example Figshare.org, the IBdb is dedicated to insect neuroscience and thus provides all tools required to manage, annotate, and cross-link the specific data formats generated in this field. However, it is not rooted within a single laboratory, nor a single species, thus providing a framework for data from a broad research community. The unique possibility for cross-species comparison and the combination of anatomical and functional data additionally broadens the relevance of the IBdb.\n\nVisualization of anatomical research data is often difficult and particularly complex when involving data from other research groups. We have implemented a range of tools enabling the visualization of data in fast, flexible, and effortless ways. This saves considerable time compared to other available software tools, in particular for complex 3D neuron data (e.g. Amira). The data contributed are also immediately incorporated into the framework of existing data. Outside the IBdb these data are distributed across many publications. Comparison of one\u2019s own data to any published data would entail contacting authors, obtaining files in unpredictable formats and finding ways to compare them to one\u2019s own work within the software a research group is currently using. The IBdb solves these issues and delivers such comparisons within seconds. Crucially, these advantages are already present immediately after data upload, prior to publication. Via the private mode of the IBdb, individual neurons can already be compared to their counterparts in other species while datasets are being obtained, enabling the user to generate visualizations suitable for conference contributions and publication figures. This possibility is to our knowledge unique to the IBdb and provides a major motivation for data contribution.\n\nImportantly, the dual function of the IBdb as data repository and data management tool eliminates the need to reformat and prepare datasets for publication, a process that is required when submitting datasets to websites dedicated to only data deposition. The IBdb therefore provides a streamlined and integrated experience from data acquisition to publication, aimed a minimizing researcher workload. This is additionally relevant as formulating a data management plan has also become mandatory for projects funded by most funding organizations. By using the IBdb, users in insect neuroscience not only have access to a dedicated data repository, but at the same time have a tool at hand for efficient handling of ongoing research data, making data management plans easy to design and effective. This is particularly the case when using the API for accessing the data, as up- and download can be automated and custom designed interfaces can be programmed according to the needs of any particular research group.\n\nIndependent from these aspects, the API of the IBdb offers users the opportunity to expose their published data directly to approved third party applications. The bundled availability of data from many research groups generates a possibility of data reuse with a much broader scope than any individual solutions, providing an increased motivation for developers to design workflows that incorporate deposited data. High-quality data deposited in the IBdb therefore additionally increases the visibility of the data owners.\n\n### Biological insights\n\nWhile the data currently deposited in the IBdb represents only a starting point to illustrate the functions and possibilities of our database concept and user interface, the neurons and species present in the IBdb already highlight new biological insights as well as concrete paths towards such insights.\n\nMost obvious insights can be gained from data deposited in the IBdb that is not published or publishable elsewhere. For example, isolated neural morphologies from the Monarch butterfly have been published solely in the IBdb and demonstrated a previously unknown connection between the gall of the lateral complex and the mushroom body lobes (dp-GA-MB(L) neuron, NIN-0000383), thus directly linking the output of the central complex with the mushroom body for the first time in insects.\n\nThe possibility for direct comparison of neuropil and neuron data from many insect species has the potential to identify discrepancies in neuropil definitions across species and pinpoint solutions for revised homologies. For example, the main output neurons of the central complex (PFL or CPU1 neurons) are most likely homologous across insects and target the dorsal LAL in all species in which this region has been described (e.g. butterflies, moths, flies, beetles), except in locusts, in which they terminate in the ventral LAL. This discrepancy suggests that the definition of subregions of the LAL and their borders to surrounding brain regions (e.g. crepine) might have to be re-evaluated.\n\nAlong similar lines, the IBdb has generally the potential to expose discrepancies in functional data. Work carried out in a research group interested in sensory processing might define the function of a particular cell type very differently than a group focused on motor control, or one focused on neuromodulatory functions, simply because different experimental paradigms are aimed at different aspects of neural function and interpretations of results might be biased toward the underlying hypotheses. Such diverging views of neuron function can silently coexist in the literature for long times, but if bundled in side-by-side function entries on the same neuron profile page in the IBdb they become highly obvious. Such exposure will facilitate scientific discussion and the emergence of unified ideas of neural function.\n\nFinally, in any field it is important to consistently define technical terms, agree on key concepts, and have consistent standards regarding what is acceptable data to validate conclusions. During the development phase of the IBdb it became clear that the isolated work in many insect model species has led to a wide range of cases in which similar terms have different meanings in different species and where views on what is acceptable proof for, for\u00a0example, neural function varies. The definition of cell type is one such example, where researchers working in different species and brain regions attached substantially different meaning to the term. With the unifying approach of the IBdb we had to therefore identify common ground and define cell type in a way that was acceptable to each contributing party. Similar issues for other aspects of insect neuroscience research will likely be exposed by the increased levels of communication enabled by the IBdb. While resolving these issues will often take time and effort (and will involve researchers from across the field), the main function of the IBdb in this context is not to impose a strict set of rules, but to provide the framework in which inconsistencies can be exposed and resolved, eventually facilitating biological insight.\n\n### Scalability and long-term sustainability\n\nThe IBdb is designed for long-term accumulation of data by many contributing research groups across the field of insect neuroscience. To successfully provide this service, the IBdb has to address several challenges of sustainability. These challenges are threefold: First, ensuring technical and financial maintenance of the database infrastructure; second, guaranteed, continued scientific oversight and expert curation, and third, lasting scientific relevance. We have therefore taken steps to address each of these points.\n\nIn the light of fast changing web technology, maintenance of high technical standards requires continuous effort and active updating of the database code, which in turn requires financial resources. The first issue is covered by an ongoing agreement with the web-developers that built and maintained the database software over the period of the last six years. Financially, voluntary contributions from research groups that initiated the database have paid for its creation. As the maintenance costs are a small fraction of the development costs, it will be easily possible to run the database within the framework of the existing service agreement for at least the next 5 years without any changes required. However, when the data volume increases substantially, the static costs of housing the data will increase accordingly. While keeping all public, persistent data available free of charge is mandatory (given that the IBdb functions as a public data repository), maintaining the IBdb as a free data management tool, that\u00a0is allowing unlimited private data for each user, will likely become unsustainable over time. If this becomes a problem, free space in the private section of the database will have to be restricted. All space required beyond a certain limit will have to be rented to directly offset the costs for maintaining and administering these data. At the same time, research groups involved in creating the IBdb use this platform as their primary tool for management of research data and public data repository. The obligation to formulate data management plans and strategies for public deposition of research data, combined with the lack of equally suitable alternative platforms, will ensure that third party funding dedicated to maintaining the database will continuously be available via research funding of the founders of the IBdb.\n\nTo anticipate the slowly growing costs of housing the database due to increasing data volume, we aim at eventually relocating the data from the currently used commercial Amazon cloud platform to an academic server that is provided at minimal costs or free of charge. To this end we have ensured that the IBdb does not depend on any core functions of the Amazon cloud storage service, enabling to move the database to a new location with comparably moderate effort.\n\nThe second issue of continued quality control and expert curation is addressed at several levels. Firstly, at the level of species, the scientific administrator has the main responsibility to oversee the curation of the species entries by each species\u2019 dedicated group of curators. Given the limited number of species that can realistically be included in the IBdb over the coming years (our estimate is a maximum of several hundred), the associated workload for general oversight is limited and manageable by a single person. As species curators actively perform research on the species they are responsible for, there is a substantial self interest to maintain high standards to advertise their work and thus facilitate their research.\n\nAt the level of neuron entries, the workload is higher due to larger data volumes. Accordingly, the main responsibility for oversight is more distributed and lies with the species\u2019 curators. Once datasets exist in the database, updating is generally optional and will only in rare cases be necessary. In those cases, the strongest incentive for keeping data up to date lies with the data owners and research group leaders, who also possess the highest expertise for these data. Overall, expertise is mostly required to approve new datasets, a process requiring substantial overview over the data available for the relevant species. With an increasing number of species, the number of curators will also have to increase. This makes curator recruitment and training key requirements both for quality assurance and for enforcing consistent curation strategies. For this purpose, regular meetings of all curators will be held and approval of new curators will be carried out only after an extended training period. To attract new curators in the future, the IBdb administrators will actively approach researchers in the field of insect neuroanatomy. Finally, to identify existing quality issues with deposited data, establish routine workflows, to support curators and contributors at all levels, and to recruit new users, a dedicated, full time database curator position is being created, initially funded by members of the IBdb consortium for a minimum of one year.\n\nThird, continued scientific relevance of the database will have to be ensured to attract users and contributors long term. Most crucially, after introducing the database to the field, the available deposited information has to grow beyond a critical point, at which the IBdb becomes the natural choice for depositing insect neuroscience data. We believe that this point has already been reached, as the number of deposited data sets is growing extensively (Figure 7\u2014figure supplement 1) and users without affiliation to the founding consortium have begun to deposit data. Nevertheless, attracting more data will remain a key mechanism to increase the attractiveness and acceptance, and, consequently, the relevance of the database in the field. As one of the key advantages of our concept is the possibility to deposit all anatomical and functional data from insect neuroscience, irrespective of data format, we have begun to approach authors of published work to enable them to make old data available to the growing IBdb user base.\n\n### IBdb usage for outreach and teaching\n\nWhile highly useful for classroom teaching of structure-function relations in neural systems, the IBdb has proven to be invaluable to introduce new members of a research team to the basic layout of brains, neurons, and neural circuits in a particular species. Using the database serves as an easy (and fun) access point to available information on a research species, including key publications, and therefore saves significant effort when writing review papers, PhD thesis introductions, background sections for travel grants, etc. While this is true for established researchers as well, it is especially true for younger scientists and students who are new to the field or are at the beginning of their careers.\n\nFinally, the IBdb provides the possibility for anyone to access original research data in intuitive and attractive ways (Figure 7). This provides opportunities to design teaching assignments for neuroscience students to carry out meta-analyses. With access to the data in the IBdb via the application programming interface (API), we have provided the possibility for third parties to develop dedicated teaching tools that provide streamlined methods to use the data for specific classroom exercises. Beyond researchers and students, journalists, interested members of the public, or members of funding bodies can also view and explore neuroscience data. Ideally, this will contribute to a more transparent understanding of what the output of science is and could spark increased interest in insect neuroscience.\n\n### Widening the scope toward other animal groups\n\nThe framework we have generated with the IBdb is not limited to housing insect brain data. Without major modifications it would be equally suited for hosting data from other animal taxa. While the intuitive, schematic search engine would not be useful for comparing species that do not share a common basic brain outline (i.e. a relevant 'generic brain'), the text-based expanded search could allow the construction of queries across multiple groups, for\u00a0example searches according to functional terms. We are currently conceptualizing the expansion of the database toward including spiders and envision that crustaceans and other arthropods would be logical next groups.\n\nThe IBdb therefore provides not only a tool for the insect neuroscience community to facilitate data management, data visualization, transparency of results and effective teaching, but it can easily be expanded toward related fields. Additionally, it might also serve as a blueprint for how to set up similar databases in unrelated research areas. In principle, the strategies used in the IBdb are applicable to any scientific field that can be linked to a hierarchical framework.\n\n## Materials and methods\n\n### Data location\n\nAll web infrastructure is hosted by Amazon web services on servers located in Frankfurt, Germany. Data is stored using a PostgreSQL relational database hosted by the Amazon Relational Database Service and files are stored using the Amazon S3 object storage service. The servers hosting the website and the local HANDLE system are running in Amazon EC2 containers, which runs Linux. Resources communicate using Amazon Virtual Private Cloud.\n\n### Database framework\n\nThe database structure and interaction is managed by a python based Django application. User authentication, permissions, and data security are also managed within the Django application. A NGINX web server hosts static content and serves as a reverse proxy for dynamic content served by a uWSGI application server hosting the project's Django application. Asynchronous tasks are implemented using the Celery distributed task queue and RabbitMQ message broker.\n\nData is externally accessible via a web API delivering content in the JSON format to the front-end web application. The web API was implemented with Django and the Django REST framework.\n\nLong-term data persistency is provided to allow users to reference information or profile pages on the site in scientific publications and other external media in a static state, while continuing to allow data to be updated as more information is acquired. When a request is made by a user for a persistent copy of a dataset to be created, a copy of the data related to the current state of the dataset is serialized and parsed into JSON. A persistent unique identifier is then assigned (HANDLE). The JSON data, HANDLE and additional metadata is recorded in a separate table and can no longer be modified. All files associated with the persistent dataset are marked as locked in the database and can no longer be modified by the user. The recorded state of that dataset can be accessed and viewed on the site using the url associated with the assigned HANDLE. The original data copied to create the persistent dataset can be modified without effecting the persistent dataset. Additional files may also be added, but will not be reflected in earlier persistent records.\n\n### Graphical user interface\n\nThe front-end of the database is primarily implemented using the Angular web framework in Typescript, HTML and SASS (CSS extension language). The Typescript, HTML and SASS are compiled and bundled with the Angular CLI using WebPack to create the distributed application files targeting ECMAScript 2015 capable browsers. Graphical consistency is targeted for browsers using Webkit and Gecko-based layout engines adhering to web standards.\n\nThe web based three-dimensional viewer was implemented using Typescript, WebGL and the Three.js three-dimensional graphics framework. The two-dimensional schematic view, brain designer and path designer was implemented using Typescript, the Canvas API and Paper.js vector graphics scripting framework.\n\n### Security measures\n\nUser to server communication is protected by the Hyper Text Transfer Protocol Secure (HTTPS). User authentication is managed by the Django authentication system. Access to data is restricted by object based permissions limited to authorized users through the web interface or API arbitrated by the Django server.\n\nFile downloads of protected content stored on Amazon S3 are accessed using time limited urls, assigned to an authorized user at the time of a download request by the Django server. Files are directly downloaded from the S3 storage to the user using the temporary URL. The process is seamless to the end user who needs only be logged into the website and click the link associate with the intended file. Downloads are logged and accessible to the owner of the data being accessed. Files can be uploaded to the S3 object storage only by authorized users with a time limited URL provided by the server. The upload is logged and associated with the contributing user. Publicly available thumbnail images and other reduced quality images are stored separately in a publicly accessible (read-only) S3 bucket.\n\nContent explicitly designated as public is accessible through the graphical user interface or via the API to any authorized visitor. Private content is only accessible to authorized users given permission to access the data.\n\nThe PostgreSQL database is protected by a firewall allowing access only via the Amazon Virtual Private Cloud and is not open to direct access via the web.\n\n### Nomenclature and brain hierarchy\n\nAll names for brain areas are in line with previous research. The brain regions of the generic insect brain follow the new insect brain nomenclature introduced for Drosophila by Insect Brain Name Working Group et al., 2014. Accordingly, we have established three hierarchical levels of brain regions: super-regions, neuropils, and sub-regions. Super-regions are stereotypical and can be expected to comprise the ground pattern of the brain in all insects (although some might be reduced in certain species). The only exception to the Insect Brain Name Working Group et al., 2014 scheme is the anterior optic tubercle, which we have raised to the level of super-region, given its prominence and distinct nature in most insect species. Sub-regions are often specific to individual species and therefore, if such regions were defined, we used the names given to them within the relevant species. We did not unify for\u00a0example names of the mushroom body calyx divisions across species, as this would firstly imply homology where there might not be any, and second, novel naming schemes will have to be developed by the community and not be imposed by a data repository. Anticipating that changes to brain names can and will happen in the future, all names, as well as the level of a region within a hierarchy, can be modified.\n\nWithin some neuropils, regular, repeating elements can be found, usually defined as columns and layers. We have implemented such a system in the central complex, that\u00a0is without having to define an array of sub-regions, several strata and orthogonal slices (following the new brain nomenclature) can be generated. The default number of slices in the generic brain is 16, assuming that this number is the ancestral state of this region.\n\nNeuron names follow the conventions within each species, as there is no common naming scheme for insect brain neurons yet in place. However, we provide the possibility to define several alternative names for each cell type to allow the parallel use of names. This is possible as the identity of a neuron is linked to the persistent ID, and not to the neuron's name. Given that we house neurons from multiple species, we add a prefix to the full name of each cell type specifying the species, for\u00a0example 'am' for Apis mellifera.\n",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "1954aae2-1863-4d49-a7c4-83dac547c487",
+      "submission_id": "b2312ec8-1e10-45ba-8407-c0d5ad657c9f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65376.sa1](https://doi.org/10.7554/eLife.65376.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis manuscript will be of interest to insect neuroscientists and broadly to the neuroanatomy community. It presents a new web resource that collects and displays neuron, brain region and species data in user-friendly ways. Ease of use and data (including functional) now on the site, contribute to fulfilling its potential as the insect neuroscience data hub.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The insect brain database \u2013 A unified platform to manage, share, and archive morphological and functional data\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Ronald Calabrese as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Marta Costa (Reviewer #1).\n\nEssential revisions:\n\n1. A concern that must be addressed is the quality and effectiveness of the curation. The reviewers found that the curation of data was often incomplete or inconsistent. This might be a consequence of the distributed strategy for curation together with the significant direct input from users. What backstops for quality control and proofreading are in place?\n\n2. The issue of cell type as defined in the database must be addressed. The authors use the term 'cell type' often in the manuscript, and a few times in the user guide. The concept of 'cell type' is an essential one for neuroscience researchers. However, we were unable to find any reference to it on the site, particularly in the information pages for neurons. This led to ambiguity about what data was displayed, what constitutes a cell type and how one would search for it.\n\n3. Plans to incorporate (or not) Drosophila into the database by potentially by linking to, VirtualFlyBrain, and IBdb should be described and discussed.\n\n4. Issues of sustainability should be addressed.\n\nReviewer #1 (Recommendations for the authors):\n\nBelow I list some questions for the authors that relate to each of the concerns listed in the public review.\n\n1) Could the authors please clarify how is the assignment and naming of cell types done, and how that relates to the neuron name (full and alternate)? Furthermore, if there are additional cases of neurons being present twice (mirrored and non-mirrored) could the authors please make that clear on the neuron page, linking the 2 objects.\n\n2) Could the authors please comment on what is their strategy to ensure accuracy, consistency and completeness of curation? The current section 'Curation and administration' does not provide enough information on this.\n\n3) Could the authors please rewrite the highlighted sentence in the abstract for clarity?\n\nReviewer #2 (Recommendations for the authors):\n\n1) As the authors mentioned, this comparative database does not include some species, most critically Drosophila melanogaster. This exclusion is a pity, as searching homologous neurons of the Drosophila neurons in other insects, or vice versa, would be inspiring and promote further comparative approach. As the same neuropil nomenclature was used in the largest and probably most elaborate database with similar functions for the Drosophila brain, VirtualFlyBrain, and IBdb, it would be helpful to implement cross-species neuron search based on arbor areas (as mentioned in Line 508).\n\n2) More comprehensive 'preset' depository of published data would make this database more attractive, as users naturally tend to first go to the largest and most comprehensive one. VFB also made a big success in this respect by actively indexing massive data taken in different labs.\n\n3) Maybe it is not a requirement of this article type, but I would have liked to see some demonstration of new biological findings using this new database.\n\n4) There is a concern on sustainability, as administration/management (e.g. species, curation, approval) continuously need expertise. It would be powerful to come up with a mechanism to encourage participation of more active users.\n\n5) This database doesn't seem to require registration of neurons to a standard brain of the species (Line 502). It is unclear how one can make visualization as in Figure 4 without registration. It would be helpful to detail what one can/cannot do depending on the data type.\n\n6) Line 253 \"To create a new species\" It sounds like creationism. Better rephrase.\n",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "909e135a-3fc8-41d2-bcc1-3359399e41eb",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C1",
+      "claim": "Insect neuroscience generates vast amounts of highly diverse data, of which only a small fraction are findable, accessible and reusable.",
+      "claim_type": "EXPLICIT",
+      "source": "Insect neuroscience generates vast amounts of highly diverse data, of which only a small fraction are findable, accessible and reusable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the state of data in insect neuroscience, presented as established knowledge in the field without specific supporting data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "6bd68127-8b40-40e2-9caf-00398ae8a225",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C2",
+      "claim": "The InsectBrainDatabase (IBdb) is a free online platform for insect neuroanatomical and functional data.",
+      "claim_type": "EXPLICIT",
+      "source": "To promote an open data culture, we have therefore developed the InsectBrainDatabase (IBdb), a free online platform for insect neuroanatomical and functional data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about what the authors have developed, describing the nature of the IBdb.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "fd14d04d-f816-4286-98b5-3e5ed258f0e7",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C3",
+      "claim": "The IBdb facilitates biological insight by enabling effective cross-species comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "The IBdb facilitates biological insight by enabling effective cross-species comparisons, by linking neural structure with function, and by serving as general information hub for insect neuroscience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a capability of the IBdb based on its design and implementation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "7cc249b5-0ed8-4b13-9898-da534a003d34",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C4",
+      "claim": "The IBdb links neural structure with function.",
+      "claim_type": "EXPLICIT",
+      "source": "The IBdb facilitates biological insight by enabling effective cross-species comparisons, by linking neural structure with function, and by serving as general information hub for insect neuroscience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a functional capability of the database based on its design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "9abd1bde-863e-4039-92bb-14b6913ce82b",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C5",
+      "claim": "The IBdb serves as a general information hub for insect neuroscience.",
+      "claim_type": "EXPLICIT",
+      "source": "The IBdb facilitates biological insight by enabling effective cross-species comparisons, by linking neural structure with function, and by serving as general information hub for insect neuroscience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the intended role of the database.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "61ad7a6f-bc7c-42fa-8e36-8c0842462f92",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C6",
+      "claim": "The IBdb allows users to effectively locate and visualize data.",
+      "claim_type": "EXPLICIT",
+      "source": "The IBdb allows users to not only effectively locate and visualize data, but to make them widely available for easy, automated reuse via an application programming interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the database based on its implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "40593f06-04db-4e20-b052-5c675eae7b58",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C7",
+      "claim": "The IBdb makes data widely available for easy, automated reuse via an application programming interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The IBdb allows users to not only effectively locate and visualize data, but to make them widely available for easy, automated reuse via an application programming interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical feature of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "e4862339-f6b4-4c54-b78c-0018246d7811",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C8",
+      "claim": "A unique private mode of the database provides means for managing, visualizing, and sharing of unpublished data.",
+      "claim_type": "EXPLICIT",
+      "source": "A unique private mode of the database expands the IBdb functionality beyond public data deposition, additionally providing the means for managing, visualizing, and sharing of unpublished data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the database implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "3c7adda9-6587-4829-a61c-3427a8eb2653",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C9",
+      "claim": "The dual function of the IBdb creates an incentive for data contribution early in data management workflows.",
+      "claim_type": "EXPLICIT",
+      "source": "This dual function creates an incentive for data contribution early in data management workflows and eliminates the additional effort normally associated with publicly depositing research data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the expected impact of the database design on user behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "e4c27485-d777-45b2-a3d9-6ea80e429b23",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C10",
+      "claim": "The dual function of the IBdb eliminates the additional effort normally associated with publicly depositing research data.",
+      "claim_type": "EXPLICIT",
+      "source": "This dual function creates an incentive for data contribution early in data management workflows and eliminates the additional effort normally associated with publicly depositing research data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the impact of the database design on workflow efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "1e227a34-19c4-46cd-8abc-3eabd609a2a1",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C11",
+      "claim": "Only a small fraction of data produced in research become openly available to other researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of the research field, many terabytes of data are produced every year, yet only a small fraction of these data become openly available to other researchers, with even less penetrating the invisible wall between the scientific community and the public (Mayernik, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mayernik, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "cc22045d-6bfd-4161-b48b-a72f1aa6a5f5",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C12",
+      "claim": "Research papers report conclusions based on data but the underlying data most often remain unavailable.",
+      "claim_type": "EXPLICIT",
+      "source": "While research papers report conclusions that are based on data and present summaries and analyses, the underlying data most often remain unavailable, despite their value beyond the original context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about current research practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "b52acbbb-9366-47aa-b712-552ee3752730",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C13",
+      "claim": "The FAIR principles for data deposition were developed to ensure common standards for data repositories.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure common standards for data repositories and the datasets to be stored in them, the FAIR principles for data deposition (Findability, Accessibility, Interoperability, and Reusability) were developed (Wilkinson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wilkinson et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "2766dd9c-b498-4065-bd44-8b78c24be672",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C14",
+      "claim": "Annotation and rich metadata are essential for datasets to be beneficial to others.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear from these principles that annotation and rich metadata are essential, if a dataset is supposed to be beneficial to others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the FAIR principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "cc4ef7f7-6858-49ae-ad06-8c2e18997462",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C15",
+      "claim": "No universal data repository exists for insect neuroscience research outside Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly for research outside the genetically accessible fruit fly Drosophila, no universal data repository exists that allows retrieval of original observations that underlie published articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an observation about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "ee0f0d12-9898-4d8d-bfe9-95947ae00089",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C16",
+      "claim": "Data from insect neuroscience projects are often deposited in local backup facilities of individual institutions and remain inaccessible to the community.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from these projects are often deposited in local backup facilities of individual institutions and thus remain inaccessible to the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an observation about current data management practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "6a15dd70-4dbc-44b9-9ba2-173af0056c3b",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C17",
+      "claim": "Interspecies comparison is one of the existential pillars on which insect neuroscience rests.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with a lack of interoperability caused by independent choices of data formats this has the potential to severely hamper progress, given that interspecies comparison is one of the existential pillars on which insect neuroscience rests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the field of insect neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "af53e5f3-f75b-4020-8a1c-372bc7cd4731",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C18",
+      "claim": "Early efforts were made to develop brain databases for honeybee.",
+      "claim_type": "EXPLICIT",
+      "source": "Early efforts were made to develop brain databases for various insect species (e.g. honeybee [Brandt et al., 2005], Manduca sexta [El Jundi et al., 2009a], Tribolium castaneum [Dreyer et al., 2010], desert locust [Kurylas et al., 2008]), but in those cases, the anticipated interactive platforms for exchange and deposition of anatomical data were short-lived and not used beyond the laboratories that hosted them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Brandt et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "da7b88d6-62f6-4475-9087-dbf9f708896b",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C19",
+      "claim": "Early efforts were made to develop brain databases for Manduca sexta.",
+      "claim_type": "EXPLICIT",
+      "source": "Early efforts were made to develop brain databases for various insect species (e.g. honeybee [Brandt et al., 2005], Manduca sexta [El Jundi et al., 2009a], Tribolium castaneum [Dreyer et al., 2010], desert locust [Kurylas et al., 2008]), but in those cases, the anticipated interactive platforms for exchange and deposition of anatomical data were short-lived and not used beyond the laboratories that hosted them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El Jundi et al., 2009a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "d3134e2c-e363-4ab6-9421-718755c69445",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C20",
+      "claim": "Early efforts were made to develop brain databases for Tribolium castaneum.",
+      "claim_type": "EXPLICIT",
+      "source": "Early efforts were made to develop brain databases for various insect species (e.g. honeybee [Brandt et al., 2005], Manduca sexta [El Jundi et al., 2009a], Tribolium castaneum [Dreyer et al., 2010], desert locust [Kurylas et al., 2008]), but in those cases, the anticipated interactive platforms for exchange and deposition of anatomical data were short-lived and not used beyond the laboratories that hosted them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dreyer et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "e70983ff-3db0-4df4-83a3-89ae6fb5b8c6",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C21",
+      "claim": "Early efforts were made to develop brain databases for desert locust.",
+      "claim_type": "EXPLICIT",
+      "source": "Early efforts were made to develop brain databases for various insect species (e.g. honeybee [Brandt et al., 2005], Manduca sexta [El Jundi et al., 2009a], Tribolium castaneum [Dreyer et al., 2010], desert locust [Kurylas et al., 2008]), but in those cases, the anticipated interactive platforms for exchange and deposition of anatomical data were short-lived and not used beyond the laboratories that hosted them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kurylas et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "11a14bb3-0a70-478f-8ba3-8e6fbd3666e5",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C22",
+      "claim": "Early insect brain database platforms were short-lived and not used beyond the laboratories that hosted them.",
+      "claim_type": "EXPLICIT",
+      "source": "Early efforts were made to develop brain databases for various insect species (e.g. honeybee [Brandt et al., 2005], Manduca sexta [El Jundi et al., 2009a], Tribolium castaneum [Dreyer et al., 2010], desert locust [Kurylas et al., 2008]), but in those cases, the anticipated interactive platforms for exchange and deposition of anatomical data were short-lived and not used beyond the laboratories that hosted them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an observation about the fate of earlier database efforts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "05366660-ca41-44d4-91fe-6b5ae0708545",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C23",
+      "claim": "Virtual Fly Brain (VFB) bundles most efforts in the Drosophila community regarding the deposition of neuroanatomical data.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, Virtual Fly Brain (VFB) (Osumi-Sutherland et al., 2014) now bundles most efforts in the Drosophila community regarding the deposition of neuroanatomical data - including single-cell morphologies from light microscopy, data from recent connectomics projects (most notably from Scheffer et al., 2020), as well as catalogues of GAL4 driver lines, which enable access to specific neurons with genetic methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Osumi-Sutherland et al., 2014 and Scheffer et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "6f799001-2a63-461a-9157-99af56aa2847",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C24",
+      "claim": "VFB hosts most content of older independent databases such as FlyCircuit and FlyBrain.",
+      "claim_type": "EXPLICIT",
+      "source": "VFB hosts most content of older independent databases, such as FlyCircuit (Chiang et al., 2011) and FlyBrain (Armstrong et al., 1995) and is dedicated to providing smart ways of utilizing and visualizing Drosophila neuroanatomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chiang et al., 2011 and Armstrong et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "f91f79d5-20c0-41b2-9aee-dad639438d05",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C25",
+      "claim": "NeuroMorpho.Org provides 3D reconstructed datasets of more than 100,000 neurons from across animal species.",
+      "claim_type": "EXPLICIT",
+      "source": "Another database, founded in 2007, has grown substantially over recent years: NeuroMorpho.Org (Ascoli et al., 2007). It provides 3D reconstructed datasets of more than 100,000 neurons from across animal species and includes substantial numbers of single-cell data from insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ascoli et al., 2007 and describes the content of the database.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "358c849a-66f4-4c5f-b939-9b4879df5695",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C26",
+      "claim": "NeuroMorpho.Org includes substantial numbers of single-cell data from insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Another database, founded in 2007, has grown substantially over recent years: NeuroMorpho.Org (Ascoli et al., 2007). It provides 3D reconstructed datasets of more than 100,000 neurons from across animal species and includes substantial numbers of single-cell data from insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the content of NeuroMorpho.Org.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "5207ba1d-306b-4fbe-8bdb-8e0c4d3f2e17",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C27",
+      "claim": "NeuroMorpho.Org does not offer dedicated tools for comparisons between species.",
+      "claim_type": "EXPLICIT",
+      "source": "While the latter platform is comparative in nature, it does not offer dedicated tools for comparisons between species or much context for the deposited neuron skeletons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the capabilities of NeuroMorpho.Org.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "0e3f904c-b13c-4389-a194-70e09852eb95",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C28",
+      "claim": "VFB does not allow comparison to other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, no comparison to other species is possible or intended via VFB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scope and capabilities of VFB.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "a1db3b11-0ec3-4097-9000-d0f6706c9bb3",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C29",
+      "claim": "No systematic information is provided about the function of deposited neurons in VFB or NeuroMorpho.Org.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, no systematic information is provided about the function of the deposited neurons in either database, precluding insights into the structure-function relations that are critically important to understanding the insect brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about limitations of existing databases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "90c5260a-62a0-499d-9178-e901086a8611",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C30",
+      "claim": "The Insect Brain Database (IBdb) can be found on the internet at insectbraindb.org.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'Insect Brain Database' (IBdb) can be found on the internet at insectbraindb.org and is freely available to everyone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about where to access the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "03a7188b-3b16-4e98-b744-9a2410cd6474",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C31",
+      "claim": "The IBdb is freely available to everyone.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'Insect Brain Database' (IBdb) can be found on the internet at insectbraindb.org and is freely available to everyone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the accessibility of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "547944a4-9ee7-4656-978b-0671be6d532c",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C32",
+      "claim": "The IBdb can be used with most modern web browsers with active Javascript.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be used with most modern web browsers with active Javascript (tested with Google Chrome, Safari, Firefox) on computers running any operating system, without the need for any additional plugins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical requirements for using the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "7546dc7b-9356-42bc-9382-471945275747",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C33",
+      "claim": "A user account is required for users who wish to download data and contribute content to the IBdb.",
+      "claim_type": "EXPLICIT",
+      "source": "A user account can be registered free of charge and is required for users who wish to download data and to contribute content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the access requirements for certain database functions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "c8c06fcb-fc37-48ab-8b09-fe9a7a1b832f",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C34",
+      "claim": "The IBdb is divided into three main hierarchical layers: Species, brain structures, and neuron types.",
+      "claim_type": "EXPLICIT",
+      "source": "The IBdb is divided into three main hierarchical layers: Species, brain structures, and neuron types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the organizational structure of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "1bf9a46a-7779-49f6-b94d-e4d3df46eece",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C35",
+      "claim": "Each hierarchical level in the IBdb is linked to 'experiments', which is the fourth major organizational layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Each level is additionally linked to 'experiments', which is the fourth major organizational layer of the database (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the organizational structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "83627e48-d018-4e15-b301-0a32d254c3b3",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C36",
+      "claim": "At each level in the IBdb, a database entry is represented by profile pages on which all relevant information is collected.",
+      "claim_type": "EXPLICIT",
+      "source": "At each level, a database entry is represented by profile pages, on which all relevant information is collected (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes how information is organized in the database, as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "b7ca1c93-6d96-47bb-9e67-ba7488a64246",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C37",
+      "claim": "Profile pages in the IBdb become automatically associated with metadata through the hierarchical framework.",
+      "claim_type": "EXPLICIT",
+      "source": "As profile pages are embedded in a hierarchical framework of species, brain regions, and cell types, they become automatically associated with metadata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the database design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "1733bb19-d1fe-4a6a-bfef-5970eb3823bd",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C38",
+      "claim": "A cell type in the IBdb is defined as all neurons that are morphologically indistinguishable at the level of light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the database is predominantly organized according to anatomical principles, we have defined a cell type as a collection of individual neurons that are morphologically indistinguishable at the level of light microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition established by the authors for the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "6a643683-734a-41a4-be7a-5bd17db32ed3",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C39",
+      "claim": "Experiment entries in the IBdb contain specific data from individual, defined experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the first three levels, experiment entries contain specific data from individual, defined experiments (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the nature of experiment entries as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "305516be-390c-41ca-99f8-ed668f26fb88",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C40",
+      "claim": "Each entry in the IBdb receives a persistent identifier (a 'handle').",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore each entry receives a persistent identifier. This identifier (a 'handle') links to a version of the entry that was frozen at the time it was created (and cited).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the database for ensuring data persistence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "24c40c3d-318f-4c84-8efd-56a075e407a0",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C41",
+      "claim": "Once information is added or removed from an entry in the IBdb, a new handle must be generated.",
+      "claim_type": "EXPLICIT",
+      "source": "Once information is added or removed from that entry, a new handle must be generated, providing a new access link for future citations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the versioning system works in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "9682259f-96fb-4d85-ac5e-5efa0d43a560",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C42",
+      "claim": "The generic insect brain in the IBdb was generated based on the insect brain nomenclature developed by Insect Brain Name Working Group et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "This generic brain is the least detailed fall-back option for any cross-species search and was generated based on the insect brain nomenclature developed by Insect Brain Name Working Group et al., 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Insect Brain Name Working Group et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "188d8ebb-613d-4b93-8eb0-897c6acf17f3",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C43",
+      "claim": "The entire insect brain is divided into 13 super-regions in the IBdb hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this hierarchy, the entire brain is divided into 13 super-regions, which consist of individual neuropils.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the organizational structure of the generic brain in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "5d35f82f-fd60-4517-baa2-125b578084c1",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C44",
+      "claim": "The anterior optic tubercle was raised to the level of super-region in the IBdb.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exception to the Insect Brain Name Working Group et al., 2014 scheme is the anterior optic tubercle, which we have raised to the level of super-region, given its prominence and distinct nature in most insect species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modification made by the authors to the standard nomenclature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "520b9d61-6400-4574-8d95-dafe53209fe7",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C45",
+      "claim": "The default number of slices in the central complex in the generic brain is 16.",
+      "claim_type": "EXPLICIT",
+      "source": "The default number of slices in the generic brain is 16, assuming that this number is the ancestral state of this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design decision made by the authors based on an assumption about ancestral state.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "81840cd1-4cfb-4d88-aa46-7347ba185fb5",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C46",
+      "claim": "All web infrastructure for the IBdb is hosted by Amazon web services on servers located in Frankfurt, Germany.",
+      "claim_type": "EXPLICIT",
+      "source": "All web infrastructure is hosted by Amazon web services on servers located in Frankfurt, Germany.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical infrastructure of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "65f5d777-0d38-422c-9777-7d82c21e91d2",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C47",
+      "claim": "Data in the IBdb is stored using a PostgreSQL relational database.",
+      "claim_type": "EXPLICIT",
+      "source": "Data is stored using a PostgreSQL relational database hosted by the Amazon Relational Database Service and files are stored using the Amazon S3 object storage service.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of data storage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "a1002672-f104-4b99-b8f9-26321ec3ed7c",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C48",
+      "claim": "The database structure and interaction is managed by a python based Django application.",
+      "claim_type": "EXPLICIT",
+      "source": "The database structure and interaction is managed by a python based Django application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "dd02d382-bb84-422d-9819-5c494d706ef4",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C49",
+      "claim": "The front-end of the database is primarily implemented using the Angular web framework in Typescript, HTML and SASS.",
+      "claim_type": "EXPLICIT",
+      "source": "The front-end of the database is primarily implemented using the Angular web framework in Typescript, HTML and SASS (CSS extension language).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the user interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "6534de45-3511-4150-9d4c-1923952eebac",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C50",
+      "claim": "The web based three-dimensional viewer was implemented using Typescript, WebGL and the Three.js three-dimensional graphics framework.",
+      "claim_type": "EXPLICIT",
+      "source": "The web based three-dimensional viewer was implemented using Typescript, WebGL and the Three.js three-dimensional graphics framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the 3D viewer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "bab8dc34-c067-4fc8-b5b7-e357c57065b5",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C51",
+      "claim": "User to server communication is protected by the Hyper Text Transfer Protocol Secure (HTTPS).",
+      "claim_type": "EXPLICIT",
+      "source": "User to server communication is protected by the Hyper Text Transfer Protocol Secure (HTTPS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a security feature of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "bd16643d-0967-4d4e-98e9-876a7fda049c",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C52",
+      "claim": "For all data in the IBdb, the contributors retain ownership and hold the copyright to their data.",
+      "claim_type": "EXPLICIT",
+      "source": "For all data, the contributors retain ownership and hold the copyright to their data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ownership policy of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "178486a9-3290-4af9-8dc4-f03b1020c952",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C53",
+      "claim": "The license attached to each dataset in the IBdb is a Creative Commons Attribution Non Commercial 4.0 International (CC BY NC 4.0).",
+      "claim_type": "EXPLICIT",
+      "source": "The publishing is performed explicitly by the owners, not by the database administrators, and the license attached to each dataset is a Creative Commons Attribution Non Commercial 4.0 International (CC BY NC 4.0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the licensing policy of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "edf617bf-a47c-48b2-be26-8be25c9e3eef",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C54",
+      "claim": "Images generated with the help of the IBdb are licensed via Creative Commons Attribution 4.0 International (CC BY 4.0).",
+      "claim_type": "EXPLICIT",
+      "source": "When data are used to generate images with the help of the IBdb, these images are licensed via Creative Commons Attribution 4.0 International (CC BY 4.0), that is they can be used in any publication as long as the original data owners and the IBdb are credited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the licensing policy for images generated using the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "e873990b-ec41-42f9-ad97-a8900cee1a9c",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C55",
+      "claim": "The database is managed via a group of voluntary curators, a scientific administrator, and a technical administrator.",
+      "claim_type": "EXPLICIT",
+      "source": "The database is managed via a group of voluntary curators, a scientific administrator, and a technical administrator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the management structure of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "27e1be09-01fa-4bb7-a815-aa311a6386e7",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C56",
+      "claim": "Each species in the IBdb is managed by a specialized curator who is an expert for that species.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no single person curates all data in the IBdb, but each species is managed by a specialized curator, who is an expert for that species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distributed curation system of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "95ef7508-d9b5-4ed3-8eff-dc9e96cfcabb",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C57",
+      "claim": "The IBdb does intentionally not include Drosophila melanogaster as a species.",
+      "claim_type": "EXPLICIT",
+      "source": "The IBdb does intentionally not include Drosophila melanogaster as a species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design decision about the scope of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "52b615af-e38c-4c38-ac83-b8afd357187b",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C58",
+      "claim": "The brain nomenclature used by the IBdb and VFB is identical.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both databases have converged on highly similar hierarchical frameworks. As the brain nomenclature used by the IBdb and VFB is identical, neuropil identities were mapped across both databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the compatibility between the two databases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "5f8cd648-bf35-4cfc-bc95-a8683443ec50",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C59",
+      "claim": "The IBdb uses the APIs of both databases to allow direct communication between the IBdb and VFB.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the APIs of both databases to allow direct communication between the IBdb and VFB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical feature enabling interoperability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "806e353f-eb90-4d60-b1aa-b841f512b10b",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C60",
+      "claim": "When searching the IBdb for neurons, an API mediated query can be automatically sent to VFB.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, when searching the IBdb for neurons, an API mediated query can be automatically sent to VFB and search results are displayed as a list of single neuron entries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a functional capability of the database integration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "6be97873-8541-4bc9-b764-42c1be09be5c",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C61",
+      "claim": "Previous and current online databases hosting insect neuroscience data have suffered from a lack of maintenance leading to outdated file formats.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous and current online databases hosting insect neuroscience data have suffered from several shortcomings: Most severely for old databases, a lack of maintenance often quickly led to outdated file formats, rendering the deposited information no longer compatible for viewing with current web browsers (anticipated by Ito, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ito, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "e5ca67c7-cf7e-4b28-8fd8-c378eabd272e",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C62",
+      "claim": "Some older insect neuroscience databases allowed interactive viewing but no possibility for contribution of one's own data existed.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, while some databases originally allowed interactive viewing of the data, no possibility for contribution of one's own data existed and data download was limited to very few files, for example Brandt et al., 2005, Kurylas et al., 2008.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Brandt et al., 2005 and Kurylas et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "db952e4f-9f77-40a6-9ed5-9027c1b3b919",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C63",
+      "claim": "The IBdb is the first database in the field of invertebrate neuroscience that combines functional data with anatomical data at multiple levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to our knowledge the IBdb is the first database in the field of invertebrate neuroscience that combines functional data with anatomical data, and at multiple levels ranging from entire brains to single neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the database based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "26248001-3a78-4d32-b3b9-374225fc25f2",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C64",
+      "claim": "Most relevant funding bodies are implementing or have implemented open data mandates.",
+      "claim_type": "EXPLICIT",
+      "source": "The landscape in the insect neuroscience research community has changed dramatically, and most relevant funding bodies are in the process of implementing open data mandates or have already done so (e.g. European Research Council, National Institutes of Health, Wellcome Trust, etc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an observation about current trends in research funding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "c2736f4c-be74-464f-af94-a37d510d8143",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C65",
+      "claim": "Formulating a data management plan has become mandatory for projects funded by most funding organizations.",
+      "claim_type": "EXPLICIT",
+      "source": "This is additionally relevant as formulating a data management plan has also become mandatory for projects funded by most funding organizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an observation about current funding requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "ab105ff5-7f5a-4ee4-b330-816a0dfec790",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C66",
+      "claim": "Isolated neural morphologies from the Monarch butterfly have been published solely in the IBdb.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, isolated neural morphologies from the Monarch butterfly have been published solely in the IBdb and demonstrated a previously unknown connection between the gall of the lateral complex and the mushroom body lobes (dp-GA-MB(L) neuron, NIN-0000383), thus directly linking the output of the central complex with the mushroom body for the first time in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data published in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "50cdcd82-083d-4af9-84d7-b12d7d714b68",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C67",
+      "claim": "The dp-GA-MB(L) neuron demonstrates a previously unknown connection between the gall of the lateral complex and the mushroom body lobes in the Monarch butterfly.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, isolated neural morphologies from the Monarch butterfly have been published solely in the IBdb and demonstrated a previously unknown connection between the gall of the lateral complex and the mushroom body lobes (dp-GA-MB(L) neuron, NIN-0000383), thus directly linking the output of the central complex with the mushroom body for the first time in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a biological finding based on data in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "bc2aab72-e1e8-4149-a8b0-b1c0b6a77885",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C68",
+      "claim": "The main output neurons of the central complex (PFL or CPU1 neurons) are most likely homologous across insects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the main output neurons of the central complex (PFL or CPU1 neurons) are most likely homologous across insects and target the dorsal LAL in all species in which this region has been described (e.g. butterflies, moths, flies, beetles), except in locusts, in which they terminate in the ventral LAL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparative data available in the database.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "03a30a84-a43f-45cf-98a5-5ba02e808ea9",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C69",
+      "claim": "PFL or CPU1 neurons target the dorsal LAL in all species in which this region has been described except in locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the main output neurons of the central complex (PFL or CPU1 neurons) are most likely homologous across insects and target the dorsal LAL in all species in which this region has been described (e.g. butterflies, moths, flies, beetles), except in locusts, in which they terminate in the ventral LAL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on comparative anatomical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "6b1a29ec-4625-4523-aff9-4b104c381655",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C70",
+      "claim": "In locusts, PFL or CPU1 neurons terminate in the ventral LAL.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the main output neurons of the central complex (PFL or CPU1 neurons) are most likely homologous across insects and target the dorsal LAL in all species in which this region has been described (e.g. butterflies, moths, flies, beetles), except in locusts, in which they terminate in the ventral LAL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an anatomical observation about locusts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "d105261e-961c-43fe-b7b6-9b4042737069",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C71",
+      "claim": "The framework generated with the IBdb is not limited to housing insect brain data.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework we have generated with the IBdb is not limited to housing insect brain data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential scope of the database framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "0cf51f67-1dec-4087-bcdf-cdce9fbe2cda",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C72",
+      "claim": "The IBdb framework would be equally suited for hosting data from other animal taxa without major modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Without major modifications it would be equally suited for hosting data from other animal taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the adaptability of the database design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "e62dd65b-203f-43b2-a395-e2a557869eed",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C73",
+      "claim": "The authors are currently conceptualizing the expansion of the database toward including spiders.",
+      "claim_type": "EXPLICIT",
+      "source": "We are currently conceptualizing the expansion of the database toward including spiders and envision that crustaceans and other arthropods would be logical next groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future plans for the database.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "6fc7caff-d1cd-4680-ba41-74e13e378193",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C74",
+      "claim": "A community driven MATLAB implementation for automatic deposition of cell types and experiments is available on GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "The API can be used to programmatically integrate the IBdb into any individual data management workflow; a community driven MATLAB implementation for automatic deposition of cell types and experiments is available on GitHub (https://github.com/zifredder/IBdb-matlab).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about available tools for using the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "7a6844f7-2b0b-4711-bf14-ced64babbb2b",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C75",
+      "claim": "The Natverse package in R offers the possibility to explore IBdb data.",
+      "claim_type": "EXPLICIT",
+      "source": "As an offline tool, the Natverse package in R already offers the possibility to explore IBdb data (Bates et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bates et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "14b23d9e-3458-425f-8ad8-ed58c7fc71f3",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C76",
+      "claim": "The number of registered user accounts in the IBdb has grown from 9 in 2015 to 68 in 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Usage statistics of the IBdb since its initial launch in 2015. (A) Number of registered user accounts (cumulative).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data shown in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "e25f734f-ef65-4a4a-80a6-3657c775db2a",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C77",
+      "claim": "The number of downloaded files from the IBdb has increased from approximately 750 in 2018 to approximately 3400 in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Number of downloaded files for each year since tracking of download was implemented in 2018.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data shown in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "b7a04fe9-0c7e-474f-93cb-d2f7863e6353",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "claim_id": "C78",
+      "claim": "Most substantial growth in data deposition in the IBdb has occurred in 2020 and 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that usage of the database has grown steadily during the development phase since its launch in 2015 and that most substantial growth in data deposition has occurred in 2020 and 2021, that is, since the deposition of the preprint version of this publication.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "67556601-28bb-4a59-b564-e25d0d0ee34a",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the motivation for developing the IBdb by documenting the current state of data accessibility in insect neuroscience. They claim that only a small fraction of insect neuroscience data are findable, accessible, and reusable (C1), that underlying research data most often remain unavailable (C12), that no universal data repository exists for insect neuroscience outside Drosophila (C15), and that data are often deposited in inaccessible local facilities (C16). They further assert that interspecies comparison is a fundamental pillar of insect neuroscience (C17).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11, C12, C15, and C16 are supported by citations (C11) and represent established knowledge about data management practices in the field. Claim C17 about the importance of interspecies comparison is presented as domain knowledge and is consistent with the comparative nature of insect neuroscience research. These claims collectively establish a well-documented need for the database.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors review existing databases for insect neuroscience data, documenting both historical efforts and current platforms. They describe early database attempts for various species (C18-C21) that were short-lived (C22), and current databases including Virtual Fly Brain (C23-C24, C28), NeuroMorpho.Org (C25-C27), noting limitations such as lack of cross-species comparison tools (C27, C28) and absence of systematic functional information (C29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All claims about existing databases are supported by appropriate citations (C18-C21, C23-C26). The characterizations of database limitations (C22, C27-C29) are presented as observations based on the authors' knowledge and experience with these platforms. This comprehensive review establishes the context and identifies gaps that the IBdb aims to address.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "5b869029-c8c3-4c53-8cd4-b6e47be45512",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors describe the basic accessibility and technical requirements of the IBdb. They state that the IBdb is a free online platform (C2, C31) accessible at insectbraindb.org (C30), compatible with most modern web browsers with active Javascript (C32), and requires user registration for downloading data and contributing content (C33).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C30-C33 describe factual, verifiable features of the database implementation. These are straightforward descriptive claims about the database's accessibility and technical requirements that can be directly verified by accessing the platform.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "9ec3d8c9-fa50-46e6-afe9-721f1d1af160",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors describe the organizational structure and data management features of the IBdb. The database is organized into three hierarchical layers (species, brain structures, neuron types) plus experiments (C34-C35), with profile pages collecting relevant information at each level (C36). Profile pages automatically acquire metadata through the hierarchical framework (C37). Cell types are defined as morphologically indistinguishable neurons at light microscopy level (C38). Experiment entries contain specific data from individual experiments (C39). Each entry receives a persistent identifier (handle) (C40) that must be regenerated when information is modified (C41).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 describe the implemented organizational structure and data management features of the database, supported by Figure 1A-C. The hierarchical organization, profile page system, cell type definition, and persistent identifier system are design features that are demonstrated through the database implementation and illustrated in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "39040e76-18a5-483a-b6db-82b68b3c0949",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors describe the generic insect brain framework used in the IBdb. The generic brain was generated based on the insect brain nomenclature from Insect Brain Name Working Group et al., 2014 (C42), divides the brain into 13 super-regions (C43), with one modification raising the anterior optic tubercle to super-region level (C44). The default number of slices in the central complex is 16, assumed to be the ancestral state (C45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by citation to the established nomenclature system and describe implementation decisions. Claim C45 involves an assumption about ancestral state that is explicitly acknowledged as such. The generic brain framework is illustrated in Figure 2\u2014figure supplement 1 and 2, providing visual evidence for these organizational decisions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "0984f521-605b-4ad0-9333-a48046231133",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors describe the technical infrastructure of the IBdb. The web infrastructure is hosted by Amazon Web Services in Frankfurt, Germany (C46), data is stored using PostgreSQL (C47), database structure is managed by Django (C48), the front-end uses Angular framework (C49), the 3D viewer uses Three.js (C50), and communication is protected by HTTPS (C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 describe the technical implementation details of the database, which are factual statements about the technology stack used. These are verifiable technical specifications that are standard practice to document in database development papers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "62d51554-46f2-4a46-98bc-9e1e1d539a97",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors describe the data ownership and licensing policies of the IBdb. Contributors retain ownership and copyright of their data (C52), datasets are licensed under CC BY NC 4.0 (C53), and images generated using the IBdb are licensed under CC BY 4.0 (C54).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 describe the implemented licensing and ownership policies of the database. These are policy decisions that are clearly stated and represent standard practices in open data repositories.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "1c2d25f6-b9b6-40fc-b8ce-f82418c05805",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors describe the curation and management structure of the IBdb. The database is managed by voluntary curators, a scientific administrator, and a technical administrator (C55), with each species managed by a specialized expert curator (C56). The IBdb intentionally does not include Drosophila melanogaster (C57).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 describe the implemented management structure and scope decisions for the database. The distributed curation system and exclusion of Drosophila are design decisions that are clearly stated and justified in the context of complementing existing resources like VFB.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "c06d8525-ab1f-4d49-9678-389f635942d0",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors describe the interoperability between IBdb and Virtual Fly Brain (VFB). The brain nomenclature used by both databases is identical (C58), the databases use APIs to allow direct communication (C59), and searches in IBdb can automatically query VFB via API (C60).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 describe the implemented interoperability features between the two databases. The shared nomenclature and API-based communication are technical features that enable cross-database functionality, representing a significant achievement in database integration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "0233ad33-ee4e-4164-a893-70a5cdd791fe",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors claim that the IBdb facilitates biological insight through multiple capabilities: enabling cross-species comparisons (C3), linking neural structure with function (C4), serving as an information hub (C5), allowing users to locate and visualize data (C6), and making data available for automated reuse via API (C7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 describe the intended capabilities of the database based on its design and implementation. The cross-species comparison capability is demonstrated through the generic brain framework and search interfaces. The structure-function linking is enabled by the hierarchical organization that connects anatomical and functional data. The visualization and API features are implemented technical capabilities. These claims are supported by the described features and illustrated in multiple figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "c8f64932-fb4f-4e40-b1db-4385d63f2a3f",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors claim that the private mode of the IBdb provides means for managing, visualizing, and sharing unpublished data (C8), and that this dual function creates incentives for early data contribution (C9) and eliminates additional effort for public deposition (C10).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C8 describes an implemented feature of the database that is supported by the technical description and Figure 6-7. However, claims C9 and C10 are inferences about user behavior and workflow efficiency that are not empirically validated in the manuscript. While the logic is sound, actual evidence of these effects on user behavior would require user studies or longitudinal data on contribution patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "b9f4ee41-52bc-4084-a956-a1dc00dda4b3",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors identify specific problems with previous insect neuroscience databases: lack of maintenance leading to outdated formats (C61), limited data contribution and download capabilities (C62), and absence of combined functional and anatomical data (C63). They claim the IBdb is the first invertebrate neuroscience database to combine functional and anatomical data at multiple levels (C63).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by citations and represent documented problems with earlier databases. Claim C63 about the IBdb being the first to combine functional and anatomical data is qualified with \"to our knowledge\" and is consistent with the review of existing databases (C23-C29) which documented the absence of systematic functional information in other platforms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "543c9f2d-6daf-46c1-9af1-05d353400ae0",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors claim that most relevant funding bodies are implementing or have implemented open data mandates (C64) and that formulating data management plans has become mandatory for most funding organizations (C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 represent general knowledge about current trends in research funding policy. These are verifiable statements about funding requirements from major organizations (European Research Council, NIH, Wellcome Trust) that provide context for the need for data management tools like the IBdb.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "7d3b2fe8-0135-47cc-a84d-1887c48ea2fc",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors present a biological finding from data published in the IBdb: neural morphologies from the Monarch butterfly published solely in the IBdb (C66) demonstrated a previously unknown connection between the gall of the lateral complex and the mushroom body lobes via the dp-GA-MB(L) neuron (C67).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 describe a specific biological finding based on data deposited in the database. The neuron is identified with a specific database identifier (NIN-0000383), making it verifiable. This represents a concrete example of how the database enables new biological discoveries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "ed149721-8aeb-41ce-8df1-8048c083717c",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors present comparative anatomical observations enabled by the IBdb: PFL/CPU1 neurons are likely homologous across insects (C68), target the dorsal LAL in most species (C69), but terminate in the ventral LAL in locusts (C70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 represent comparative anatomical observations based on data available in the database. The homology inference (C68) is appropriately qualified as \"most likely,\" and the anatomical observations (C69-C70) are based on comparative data from multiple species. This demonstrates the cross-species comparison capability of the database.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "03ce5635-07f8-4f40-81e3-70f291d358b5",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors claim that the IBdb framework is not limited to insect brain data (C71), would be suitable for other animal taxa without major modifications (C72), and they are conceptualizing expansion to include spiders (C73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is a statement about the potential scope of the framework. Claim C72 is an inference about adaptability that has not been empirically tested. Claim C73 is explicitly about future plans. While the hierarchical organization principle could theoretically apply to other taxa, the actual suitability for other animal groups would require demonstration through implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "237b4eca-e80d-41b8-97e9-a7f92d2782a2",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors describe available tools for programmatic access to the IBdb: a MATLAB implementation for automatic deposition is available on GitHub (C74), and the Natverse package in R offers the possibility to explore IBdb data (C75).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 describe available tools with specific references (GitHub link for C74, citation to Bates et al., 2020 for C75). These are verifiable statements about existing software tools that interface with the database.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "e28e5d53-5158-4ec8-9952-8afd984b81ae",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors present usage statistics for the IBdb: registered user accounts grew from 9 in 2015 to 68 in 2021 (C76), downloaded files increased from approximately 750 in 2018 to approximately 3400 in 2020 (C77), and most substantial growth in data deposition occurred in 2020 and 2021 (C78).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 are supported by data shown in Figure 7\u2014figure supplement 1. These are quantitative measurements of database usage that demonstrate growing adoption of the platform. The data provide evidence of increasing engagement with the database over time.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    },
+    {
+      "id": "58fa425e-0102-4ac5-9b09-f7e3670a0355",
+      "content_id": "87a285d8-06e1-4239-b803-f388cb25d7d3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors state that FAIR principles were developed to ensure common standards for data repositories (C13) and that annotation and rich metadata are essential for datasets to be beneficial to others (C14).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 is supported by citation to Wilkinson et al., 2016, the foundational FAIR principles paper. Claim C14 is a reasonable inference from the FAIR principles. These claims establish the conceptual framework and standards that guided the database design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:59:52.679735Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "909e135a-3fc8-41d2-bcc1-3359399e41eb",
+      "result_id": "67556601-28bb-4a59-b564-e25d0d0ee34a"
+    },
+    {
+      "claim_id": "1e227a34-19c4-46cd-8abc-3eabd609a2a1",
+      "result_id": "67556601-28bb-4a59-b564-e25d0d0ee34a"
+    },
+    {
+      "claim_id": "cc22045d-6bfd-4161-b48b-a72f1aa6a5f5",
+      "result_id": "67556601-28bb-4a59-b564-e25d0d0ee34a"
+    },
+    {
+      "claim_id": "cc4ef7f7-6858-49ae-ad06-8c2e18997462",
+      "result_id": "67556601-28bb-4a59-b564-e25d0d0ee34a"
+    },
+    {
+      "claim_id": "ee0f0d12-9898-4d8d-bfe9-95947ae00089",
+      "result_id": "67556601-28bb-4a59-b564-e25d0d0ee34a"
+    },
+    {
+      "claim_id": "6a15dd70-4dbc-44b9-9ba2-173af0056c3b",
+      "result_id": "67556601-28bb-4a59-b564-e25d0d0ee34a"
+    },
+    {
+      "claim_id": "af53e5f3-f75b-4020-8a1c-372bc7cd4731",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "da7b88d6-62f6-4475-9087-dbf9f708896b",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "d3134e2c-e363-4ab6-9421-718755c69445",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "e70983ff-3db0-4df4-83a3-89ae6fb5b8c6",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "11a14bb3-0a70-478f-8ba3-8e6fbd3666e5",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "05366660-ca41-44d4-91fe-6b5ae0708545",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "6f799001-2a63-461a-9157-99af56aa2847",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "f91f79d5-20c0-41b2-9aee-dad639438d05",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "358c849a-66f4-4c5f-b939-9b4879df5695",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "5207ba1d-306b-4fbe-8bdb-8e0c4d3f2e17",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "0e3f904c-b13c-4389-a194-70e09852eb95",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "a1db3b11-0ec3-4097-9000-d0f6706c9bb3",
+      "result_id": "6b22b6c7-441b-4b29-82f6-24d75fd3e5ae"
+    },
+    {
+      "claim_id": "6bd68127-8b40-40e2-9caf-00398ae8a225",
+      "result_id": "5b869029-c8c3-4c53-8cd4-b6e47be45512"
+    },
+    {
+      "claim_id": "90c5260a-62a0-499d-9178-e901086a8611",
+      "result_id": "5b869029-c8c3-4c53-8cd4-b6e47be45512"
+    },
+    {
+      "claim_id": "03a7188b-3b16-4e98-b744-9a2410cd6474",
+      "result_id": "5b869029-c8c3-4c53-8cd4-b6e47be45512"
+    },
+    {
+      "claim_id": "547944a4-9ee7-4656-978b-0671be6d532c",
+      "result_id": "5b869029-c8c3-4c53-8cd4-b6e47be45512"
+    },
+    {
+      "claim_id": "7546dc7b-9356-42bc-9382-471945275747",
+      "result_id": "5b869029-c8c3-4c53-8cd4-b6e47be45512"
+    },
+    {
+      "claim_id": "c8c06fcb-fc37-48ab-8b09-fe9a7a1b832f",
+      "result_id": "9ec3d8c9-fa50-46e6-afe9-721f1d1af160"
+    },
+    {
+      "claim_id": "1bf9a46a-7779-49f6-b94d-e4d3df46eece",
+      "result_id": "9ec3d8c9-fa50-46e6-afe9-721f1d1af160"
+    },
+    {
+      "claim_id": "83627e48-d018-4e15-b301-0a32d254c3b3",
+      "result_id": "9ec3d8c9-fa50-46e6-afe9-721f1d1af160"
+    },
+    {
+      "claim_id": "b7ca1c93-6d96-47bb-9e67-ba7488a64246",
+      "result_id": "9ec3d8c9-fa50-46e6-afe9-721f1d1af160"
+    },
+    {
+      "claim_id": "1733bb19-d1fe-4a6a-bfef-5970eb3823bd",
+      "result_id": "9ec3d8c9-fa50-46e6-afe9-721f1d1af160"
+    },
+    {
+      "claim_id": "6a643683-734a-41a4-be7a-5bd17db32ed3",
+      "result_id": "9ec3d8c9-fa50-46e6-afe9-721f1d1af160"
+    },
+    {
+      "claim_id": "305516be-390c-41ca-99f8-ed668f26fb88",
+      "result_id": "9ec3d8c9-fa50-46e6-afe9-721f1d1af160"
+    },
+    {
+      "claim_id": "24c40c3d-318f-4c84-8efd-56a075e407a0",
+      "result_id": "9ec3d8c9-fa50-46e6-afe9-721f1d1af160"
+    },
+    {
+      "claim_id": "9682259f-96fb-4d85-ac5e-5efa0d43a560",
+      "result_id": "39040e76-18a5-483a-b6db-82b68b3c0949"
+    },
+    {
+      "claim_id": "188d8ebb-613d-4b93-8eb0-897c6acf17f3",
+      "result_id": "39040e76-18a5-483a-b6db-82b68b3c0949"
+    },
+    {
+      "claim_id": "5d35f82f-fd60-4517-baa2-125b578084c1",
+      "result_id": "39040e76-18a5-483a-b6db-82b68b3c0949"
+    },
+    {
+      "claim_id": "520b9d61-6400-4574-8d95-dafe53209fe7",
+      "result_id": "39040e76-18a5-483a-b6db-82b68b3c0949"
+    },
+    {
+      "claim_id": "81840cd1-4cfb-4d88-aa46-7347ba185fb5",
+      "result_id": "0984f521-605b-4ad0-9333-a48046231133"
+    },
+    {
+      "claim_id": "65f5d777-0d38-422c-9777-7d82c21e91d2",
+      "result_id": "0984f521-605b-4ad0-9333-a48046231133"
+    },
+    {
+      "claim_id": "a1002672-f104-4b99-b8f9-26321ec3ed7c",
+      "result_id": "0984f521-605b-4ad0-9333-a48046231133"
+    },
+    {
+      "claim_id": "dd02d382-bb84-422d-9819-5c494d706ef4",
+      "result_id": "0984f521-605b-4ad0-9333-a48046231133"
+    },
+    {
+      "claim_id": "6534de45-3511-4150-9d4c-1923952eebac",
+      "result_id": "0984f521-605b-4ad0-9333-a48046231133"
+    },
+    {
+      "claim_id": "bab8dc34-c067-4fc8-b5b7-e357c57065b5",
+      "result_id": "0984f521-605b-4ad0-9333-a48046231133"
+    },
+    {
+      "claim_id": "bd16643d-0967-4d4e-98e9-876a7fda049c",
+      "result_id": "62d51554-46f2-4a46-98bc-9e1e1d539a97"
+    },
+    {
+      "claim_id": "178486a9-3290-4af9-8dc4-f03b1020c952",
+      "result_id": "62d51554-46f2-4a46-98bc-9e1e1d539a97"
+    },
+    {
+      "claim_id": "edf617bf-a47c-48b2-be26-8be25c9e3eef",
+      "result_id": "62d51554-46f2-4a46-98bc-9e1e1d539a97"
+    },
+    {
+      "claim_id": "e873990b-ec41-42f9-ad97-a8900cee1a9c",
+      "result_id": "1c2d25f6-b9b6-40fc-b8ce-f82418c05805"
+    },
+    {
+      "claim_id": "27e1be09-01fa-4bb7-a815-aa311a6386e7",
+      "result_id": "1c2d25f6-b9b6-40fc-b8ce-f82418c05805"
+    },
+    {
+      "claim_id": "95ef7508-d9b5-4ed3-8eff-dc9e96cfcabb",
+      "result_id": "1c2d25f6-b9b6-40fc-b8ce-f82418c05805"
+    },
+    {
+      "claim_id": "52b615af-e38c-4c38-ac83-b8afd357187b",
+      "result_id": "c06d8525-ab1f-4d49-9678-389f635942d0"
+    },
+    {
+      "claim_id": "5f8cd648-bf35-4cfc-bc95-a8683443ec50",
+      "result_id": "c06d8525-ab1f-4d49-9678-389f635942d0"
+    },
+    {
+      "claim_id": "806e353f-eb90-4d60-b1aa-b841f512b10b",
+      "result_id": "c06d8525-ab1f-4d49-9678-389f635942d0"
+    },
+    {
+      "claim_id": "fd14d04d-f816-4286-98b5-3e5ed258f0e7",
+      "result_id": "0233ad33-ee4e-4164-a893-70a5cdd791fe"
+    },
+    {
+      "claim_id": "7cc249b5-0ed8-4b13-9898-da534a003d34",
+      "result_id": "0233ad33-ee4e-4164-a893-70a5cdd791fe"
+    },
+    {
+      "claim_id": "9abd1bde-863e-4039-92bb-14b6913ce82b",
+      "result_id": "0233ad33-ee4e-4164-a893-70a5cdd791fe"
+    },
+    {
+      "claim_id": "61ad7a6f-bc7c-42fa-8e36-8c0842462f92",
+      "result_id": "0233ad33-ee4e-4164-a893-70a5cdd791fe"
+    },
+    {
+      "claim_id": "40593f06-04db-4e20-b052-5c675eae7b58",
+      "result_id": "0233ad33-ee4e-4164-a893-70a5cdd791fe"
+    },
+    {
+      "claim_id": "e4862339-f6b4-4c54-b78c-0018246d7811",
+      "result_id": "c8f64932-fb4f-4e40-b1db-4385d63f2a3f"
+    },
+    {
+      "claim_id": "3c7adda9-6587-4829-a61c-3427a8eb2653",
+      "result_id": "c8f64932-fb4f-4e40-b1db-4385d63f2a3f"
+    },
+    {
+      "claim_id": "e4c27485-d777-45b2-a3d9-6ea80e429b23",
+      "result_id": "c8f64932-fb4f-4e40-b1db-4385d63f2a3f"
+    },
+    {
+      "claim_id": "6be97873-8541-4bc9-b764-42c1be09be5c",
+      "result_id": "b9f4ee41-52bc-4084-a956-a1dc00dda4b3"
+    },
+    {
+      "claim_id": "e5ca67c7-cf7e-4b28-8fd8-c378eabd272e",
+      "result_id": "b9f4ee41-52bc-4084-a956-a1dc00dda4b3"
+    },
+    {
+      "claim_id": "db952e4f-9f77-40a6-9ed5-9027c1b3b919",
+      "result_id": "b9f4ee41-52bc-4084-a956-a1dc00dda4b3"
+    },
+    {
+      "claim_id": "26248001-3a78-4d32-b3b9-374225fc25f2",
+      "result_id": "543c9f2d-6daf-46c1-9af1-05d353400ae0"
+    },
+    {
+      "claim_id": "c2736f4c-be74-464f-af94-a37d510d8143",
+      "result_id": "543c9f2d-6daf-46c1-9af1-05d353400ae0"
+    },
+    {
+      "claim_id": "ab105ff5-7f5a-4ee4-b330-816a0dfec790",
+      "result_id": "7d3b2fe8-0135-47cc-a84d-1887c48ea2fc"
+    },
+    {
+      "claim_id": "50cdcd82-083d-4af9-84d7-b12d7d714b68",
+      "result_id": "7d3b2fe8-0135-47cc-a84d-1887c48ea2fc"
+    },
+    {
+      "claim_id": "bc2aab72-e1e8-4149-a8b0-b1c0b6a77885",
+      "result_id": "ed149721-8aeb-41ce-8df1-8048c083717c"
+    },
+    {
+      "claim_id": "03a30a84-a43f-45cf-98a5-5ba02e808ea9",
+      "result_id": "ed149721-8aeb-41ce-8df1-8048c083717c"
+    },
+    {
+      "claim_id": "6b1a29ec-4625-4523-aff9-4b104c381655",
+      "result_id": "ed149721-8aeb-41ce-8df1-8048c083717c"
+    },
+    {
+      "claim_id": "d105261e-961c-43fe-b7b6-9b4042737069",
+      "result_id": "03ce5635-07f8-4f40-81e3-70f291d358b5"
+    },
+    {
+      "claim_id": "0cf51f67-1dec-4087-bcdf-cdce9fbe2cda",
+      "result_id": "03ce5635-07f8-4f40-81e3-70f291d358b5"
+    },
+    {
+      "claim_id": "e62dd65b-203f-43b2-a395-e2a557869eed",
+      "result_id": "03ce5635-07f8-4f40-81e3-70f291d358b5"
+    },
+    {
+      "claim_id": "6fc7caff-d1cd-4680-ba41-74e13e378193",
+      "result_id": "237b4eca-e80d-41b8-97e9-a7f92d2782a2"
+    },
+    {
+      "claim_id": "7a6844f7-2b0b-4711-bf14-ced64babbb2b",
+      "result_id": "237b4eca-e80d-41b8-97e9-a7f92d2782a2"
+    },
+    {
+      "claim_id": "14b23d9e-3458-425f-8ad8-ed58c7fc71f3",
+      "result_id": "e28e5d53-5158-4ec8-9952-8afd984b81ae"
+    },
+    {
+      "claim_id": "e25f734f-ef65-4a4a-80a6-3657c775db2a",
+      "result_id": "e28e5d53-5158-4ec8-9952-8afd984b81ae"
+    },
+    {
+      "claim_id": "b7a04fe9-0c7e-474f-93cb-d2f7863e6353",
+      "result_id": "e28e5d53-5158-4ec8-9952-8afd984b81ae"
+    },
+    {
+      "claim_id": "b52acbbb-9366-47aa-b712-552ee3752730",
+      "result_id": "58fa425e-0102-4ac5-9b09-f7e3670a0355"
+    },
+    {
+      "claim_id": "2766dd9c-b498-4065-bd44-8b78c24be672",
+      "result_id": "58fa425e-0102-4ac5-9b09-f7e3670a0355"
+    }
+  ],
+  "comparisons": []
+}

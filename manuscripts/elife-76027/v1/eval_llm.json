@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C48",
+      "C49",
+      "C53",
+      "C87",
+      "C88"
+    ],
+    "result": "P. aeruginosa biofilms grown under flow in microfluidic channels undergo buckling-delamination driven by growth-induced compressive stress, which is controlled by biofilm growth rate and adhesion to the substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C48, C49, C53, C87, and C88 collectively establish that buckling-delamination is the mechanism for channel formation, driven by biofilm growth in confined space. The nutrient on/off experiment (C49, C52, C53) provides direct evidence that growth is the driving force, while the surface energy experiments (C64-C66, C92) demonstrate the role of adhesion. The confocal microscopy data (C42, C44-C47) confirms delamination from the substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C5",
+      "C6"
+    ],
+    "result": "Wrinkles in P. aeruginosa biofilms consist of hollow channels that fully detach from the substrate, with channel height substantially greater than the original biofilm thickness, and these channels facilitate bacterial movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44-C47 provide direct microscopy evidence of hollow channels devoid of biofilm matrix that detach from the substrate. The confocal imaging with fluorescent staining (C44, C45, C46) clearly demonstrates the three-dimensional structure. Claims C5 and C6 about increased volume and bacterial movement are supported by the imaging data and activity mapping experiments (C73-C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C92",
+      "C71",
+      "C72"
+    ],
+    "result": "Channel formation can be suppressed or spatially controlled by increasing the surface free energy of the substrate, which increases adhesion strength between biofilm and substrate, allowing millimeter-scale patterning of biofilm morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C92 demonstrate that biofilms on high surface energy PDMS do not buckle while those on low surface energy PDMS form channels. The patterned PDMS experiment (C71, C72) provides compelling evidence for spatial control. The theoretical framework linking adhesion to interface toughness and crack propagation resistance supports the mechanism. However, the exact quantitative relationship between surface energy and critical stress could benefit from more detailed analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Biofilm wrinkle formation proceeds through three distinct temporal stages over 9-10 hours: initial appearance of isolated wrinkles, merging into interconnected networks, and reaching steady state, with wrinkles increasing effective biofilm thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 provide quantitative temporal characterization of wrinkle formation with specific timeframes. The three-stage model is supported by quantitative analysis of wrinkle number and length (Figure 1c). Claims C29, C30, and C34 provide context about initial growth and thickness changes. The characterization appears robust with clear metrics, though biological variability is acknowledged in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C70"
+    ],
+    "result": "Biofilms with channel networks show substantially greater effective thickness increase compared to non-buckled biofilms, but this does not necessarily correspond to increased biomass as water-filled channels constitute the additional volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by direct thickness measurements comparing biofilms on different PDMS surfaces (Figure 4b). Claim C70 provides important clarification that increased thickness is due to hollow channels rather than increased biomass. This interpretation is consistent with the confocal microscopy showing hollow, matrix-free channels. The distinction between effective thickness and actual biomass is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The hollow channel network becomes populated by actively motile bacteria with no preferential direction, with bacterial activity exclusively localized inside the channels as demonstrated by spatially resolved correlation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by high-speed microscopy and spatially resolved correlation analysis. The activity maps clearly show localized bacterial movement within channels (Figure 5a). The comparison between activity maps and brightfield images (C76) provides strong spatial correlation. The methodology (spatially resolved time-correlation coefficient) is appropriate and previously validated (Secchi et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "As biofilms mature, bacterial motility in channels diminishes without structural changes or dispersal events, hypothesized to result from renewed surface colonization and biofilm formation by planktonic cells within channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78 and C79 are supported by activity map and phase-contrast data showing decreased motility without structural changes. However, C80 is explicitly stated as a hypothesis by the authors with no direct experimental validation. While the hypothesis is reasonable, no evidence is provided for renewed colonization or biofilm formation within channels. Additional experiments (e.g., time-lapse imaging of channel interiors, matrix staining over time) would be needed to support this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C85",
+      "C86"
+    ],
+    "result": "Bacterial swimming speed inside channels is independent of external fluid flow velocity, indicating that bulk flow does not introduce advection inside the biofilm and channels consist of closed biofilm matrix layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C82, C85, and C86 are supported by DDM experiments across varying flow rates (0 to 11.1 mm/s). The swimming speeds (20-30 \u03bcm/s) are consistent with literature values for P. aeruginosa PAO1. The lack of flow dependence despite three orders of magnitude difference between flow velocity and swimming speed provides strong evidence for closed channels. The DDM methodology is well-established and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C89",
+      "C90"
+    ],
+    "result": "P. aeruginosa biofilms can exert kPa-range stresses during growth, and moderate fluid flow minimizes nutrient gradients in thin biofilms, allowing compressive stresses from confined uniform growth to induce buckling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by citation to prior literature (Chew et al., 2016). Claim C89 about fluid flow effects is supported by citation (Krsmanovic et al., 2021) and is consistent with the experimental design. Claim C90 connects these observations to the current findings and cites similar results in bacterial pellicles (Qin et al., 2021). The integration of prior knowledge with current observations is appropriate, though direct measurement of stress in the current system would strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The findings are hypothesized to be general and applicable to other bacterial species because the growth conditions (fluid flow and solid substrates) are common in biofilm habitats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is explicitly stated as a hypothesis by the authors. While the reasoning is plausible given that flow and solid substrates are common, no experimental evidence is provided for other bacterial species. The generalizability depends on whether other species produce biofilms with similar mechanical properties, adhesion characteristics, and growth patterns. This remains speculative without additional experiments on other species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background knowledge about biofilm structure, composition, mechanical properties, and prior observations of flow effects and wrinkle formation in various systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C13, C15-C20, C22-C23 are all supported by appropriate citations to prior literature and represent established knowledge in the field. Claim C14 accurately assesses the state of knowledge. Claim C21 represents the authors' assessment of biofilm-agar system complexity, which is reasonable. These claims provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "Channel networks within biofilms play an important role in colony viability by promoting transport of nutrients and chemicals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is supported by citations to prior literature and represents established understanding in the field. This provides important motivation for the current study, though the current work does not directly test this functional role. The claim appropriately represents prior work rather than a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Detailed experimental protocols for bacterial culture, microfluidic device fabrication, PDMS surface modification, staining procedures, and imaging methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C111 describe methodological details that are appropriately documented with specific parameters, equipment specifications, and citations to established methods. The protocols appear sufficiently detailed for reproducibility. Surface energy measurements using the Owens-Wendt method (C104) and DDM analysis (C110) are established techniques appropriately applied. These methodological claims support the reproducibility of the work.",
+    "result_type": "MINOR"
+  }
+]

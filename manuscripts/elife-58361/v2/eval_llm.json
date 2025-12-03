@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior observational studies on lipoprotein subfractions and CVD have produced conflicting results, creating uncertainty about their clinical utility and causal roles. This motivates the use of genetic data and Mendelian randomization to clarify these relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C8-C17 establish the background and rationale for the study through appropriate citations to prior literature. The conflicting evidence from observational studies (C11-C15) and ongoing controversy (C16-C17) provide clear justification for applying MR methods to this question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Mendelian randomization is presented as a causal inference method that uses genetic variants as instrumental variables to estimate causal effects while avoiding confounding, making it superior to observational studies for this research question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 accurately describe the MR methodology with appropriate citations to methodological literature. These are standard descriptions of MR principles and are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study analyzed 82 lipoprotein traits measured by NMR spectroscopy from two GWAS, applied LD-score regression to estimate genetic correlations, and filtered to 27 traits with genetic correlation \u22640.8 with traditional lipid factors to identify potentially independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe the data sources and analytical approach with appropriate citations. The filtering threshold of 0.8 genetic correlation is reasonable for identifying potentially distinct traits, and the rationale for avoiding multicollinearity (C27) is sound. Multiple testing correction was appropriately applied (C28).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A three-sample MR design was employed using Davis et al. for instrument selection, Kettunen et al. for exposure associations, and UK Biobank for outcome associations, with a genome-wide MR approach to maximize power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 describe a methodologically sound three-sample MR design with appropriate citations. The rationale for using the smaller dataset for selection to avoid winner's curse (C31-C32) is correct, and the genome-wide MR approach (C34) is an established method for maximizing power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Two multivariable MR analyses were performed for each trait: one adjusting for TG, LDL-C, and HDL-C, and another adjusting for TG, ApoB, and ApoA1, to control for pleiotropic effects through traditional risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe a reasonable multivariable MR strategy to address pleiotropy. Using two different sets of traditional lipid adjustments (C36-C37) provides robustness, and this approach is consistent with recent literature (C37 cites Richardson et al., 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RAPS was used for univariable MR and GRAPPLE for multivariable MR, both robust methods that can handle some invalid instruments. Instrument strength was assessed with modified Cochran's Q, and multiple testing was corrected using Benjamini-Hochberg procedure (FDR=0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe appropriate statistical methods with proper citations. RAPS and GRAPPLE are established robust MR methods, and the multiple testing correction approach is appropriate for the exploratory nature of analyzing many traits simultaneously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C114"
+    ],
+    "result": "Genetic correlation analysis identified 27 lipoprotein traits with genetic correlation \u22640.8 with traditional lipids. VLDL traits showed near-perfect correlation with TG, while large HDL traits correlated highly with HDL-C/ApoA1. The 27 selected traits divided into two groups (VLDL/LDL/IDL vs HDL), with exceptions including LDL-D and small HDL traits showing weak correlations with traditional lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C45-C52 describe genetic correlation results supported by Figure 1 (C114). The findings are internally consistent and the filtering approach is clearly described. The identification of traits with lower genetic correlations (C51-C52) is important for identifying potentially independent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C115"
+    ],
+    "result": "VLDL, LDL, and IDL subfractions showed harmful effects on MI in univariable MR, but these effects were attenuated to near-zero after adjusting for traditional lipids in multivariable MR. LDL particle diameter showed a small harmful effect in univariable MR that was also attenuated in multivariable analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe MR results supported by Figure 2 (C115). The attenuation of effects after adjustment for traditional lipids suggests these subfraction effects are largely mediated through known lipid pathways. The exception noted for IDL-FC (C54) appropriately acknowledges a deviation from the general pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C57",
+      "C58",
+      "C108",
+      "C111"
+    ],
+    "result": "Medium HDL particle concentration and content showed protective effects against CAD in both univariable and multivariable MR analyses, with effects remaining significant after adjusting for traditional lipids (effect estimates: -0.69 [-1.09, -0.30] and -0.47 [-0.80, -0.15] in the two multivariable models).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C57-C58 describe the main finding for medium HDL, supported by quantitative estimates from Table 2 (C108, C111). The consistency across univariable and multivariable analyses strengthens the evidence. However, the interpretation depends on the validity of MR assumptions, which cannot be fully verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C109",
+      "C112"
+    ],
+    "result": "Small HDL particle concentration and lipid content showed protective effects in multivariable MR analyses with smaller effect sizes than medium HDL (effect estimates: -0.33 [-0.52, -0.15] and -0.24 [-0.40, -0.08] in the two multivariable models).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C59 describe findings for small HDL supported by quantitative estimates from Table 2 (C109, C112). The smaller effect sizes compared to medium HDL are noted, and the effects only emerged in multivariable analysis, suggesting a more complex relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C61",
+      "C110",
+      "C113"
+    ],
+    "result": "HDL particle diameter showed almost no effect in univariable MR but a harmful effect on CAD after adjusting for traditional lipids in multivariable MR (effect estimates: 0.33 [0.11, 0.56] and 0.30 [0.08, 0.52] in the two multivariable models).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C60-C61 describe the HDL diameter findings supported by Table 2 (C110, C113). The emergence of a harmful effect only in multivariable analysis is notable and suggests suppression effects. However, this finding is complex and the authors appropriately note it requires careful interpretation (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The estimated effects of HDL-C/ApoA1 on CAD changed substantially depending on which HDL subfraction trait was included in multivariable MR: showing harmful effects when M-HDL-P was included, protective effects when HDL-D was included, and minimal change when S-HDL-P was included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 describe how traditional HDL measures behave differently in multivariable models depending on which subfraction is included, supported by Table 2. This finding suggests complex interrelationships among HDL traits and highlights the difficulty of interpreting HDL's causal role. The baseline finding (C62) is consistent with prior MR studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C66",
+      "C67",
+      "C68",
+      "C116"
+    ],
+    "result": "Four genetic variants were identified that associate with HDL particle size/subfractions and CAD but not with LDL-C or ApoB: rs838880 (SCARB1), rs737337 (DOCK6), rs2943641 (IRS1), and rs6065904 (PLTP). The first three showed uniform positive associations with medium-to-extra-large HDL and negative associations with CAD, while rs6065904 showed positive associations with small-to-medium HDL and negative associations with CAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C66-C68 describe genetic marker findings supported by Figure 3 (C116) and eQTL validation. The selection criteria (associated with HDL traits and CAD, not with LDL-C/ApoB) are clearly stated. However, the p-value threshold for CAD (p\u22640.05) is relatively lenient and may include false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Sensitivity analyses using multiple GWAS datasets, MR designs, and statistical methods showed general agreement with primary results, and diagnostic plots did not suggest violations of the InSIDE assumption for S-HDL-P and M-HDL-P.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe sensitivity and diagnostic analyses that support the robustness of the main findings. However, the full results are in appendices, limiting direct evaluation. The lack of evidence against InSIDE violations (C70) is reassuring but does not prove the assumptions hold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study concludes that VLDL subfractions offer little value beyond triglycerides, LDL particle size may have a small harmful effect, and HDL particle size may play an important previously undiscovered role in CAD, with small and medium HDL particles showing genetic correlations <1 with HDL-C/ApoA1, suggesting independent pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 summarize the main conclusions, which are supported by the genetic correlation and MR analyses. However, the claim of a 'previously undiscovered role' (C73) may be overstated given prior observational studies on HDL subfractions. The evidence is suggestive but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study contextualizes findings within the ongoing debate about HDL's role in CAD, noting that observational studies show inverse associations but MR studies have found conflicting evidence, with some showing heterogeneous or attenuated effects after adjusting for other lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 provide appropriate context through citations to clinical trials and prior MR studies. This background accurately represents the current state of knowledge and controversy in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors note that the harmful effect of larger HDL diameter depends on including HDL-C/ApoA1 in multivariable MR, suggesting HDL's role in CAD is more complicated than LDL/ApoB, and that HDL measures may all be markers for underlying causal mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide appropriate interpretation and caveats about the HDL diameter findings. The acknowledgment that this is a complex conditional effect (C80) and speculation about underlying mechanisms (C82) are reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors propose that cholesterol efflux capacity may be the underlying mechanism, noting that while epidemiologic studies found HDL size positively associated with efflux capacity, mechanistic studies show small HDL mediates more efflux, possibly explained by blocked maturation of small HDL particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 synthesize prior literature on HDL function with appropriate citations and propose a mechanistic explanation for the findings. This interpretation is speculative (C86-C87 involve speculation) but is grounded in cited evidence and provides a plausible biological framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The identified genetic markers SCARB1 and PLTP have established roles in HDL metabolism and CAD. SCARB1 encodes an HDL receptor involved in cholesterol uptake, with a rare mutation raising HDL-C but increasing CAD risk. PLTP mediates lipid transfer and plays a pivotal role in HDL particle size, with high activity being a CAD risk factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 provide biological context for the genetic markers with appropriate citations. The discussion of SCARB1 and PLTP functions and their roles in CAD is well-supported by prior literature and helps interpret the genetic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors acknowledge multiple limitations: MR assumptions may be violated despite using robust methods, lack of adjustment for other CAD risk factors, limited generalizability to non-European populations, potential bias from heterogeneous subpopulations, and not including multiple subfraction traits simultaneously due to high correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 provide appropriate and honest acknowledgment of study limitations. These are genuine limitations of the MR approach and study design that readers should consider when interpreting results. The acknowledgment strengthens rather than weakens the overall credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors suggest future directions including alternative statistical methods for selecting causal risk factors, note that triglycerides and HDL size may represent gene-environment interactions, mention new NMR methods for measuring HDL efflux capacity, and call for more research to clarify HDL subfraction roles in CVD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 appropriately suggest future research directions and acknowledge additional complexities (C103-C104). These represent reasonable next steps and acknowledge uncertainties that remain after this study.",
+    "result_type": "MINOR"
+  }
+]

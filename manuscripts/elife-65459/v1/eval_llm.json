@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "A substantial fraction (20-40%) of excitatory neurons in the neocortex exhibit spike frequency adaptation (SFA), which produces history dependence of neural firing on the time scale of seconds (up to 20s) through biophysical mechanisms including inactivation of depolarizing currents and activation of slow hyperpolarizing currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by citations to experimental data from the Allen Institute and other studies (Pozzorini et al., Gutkin and Zeldenrust, Benda and Herz). The prevalence, time scales, and mechanisms of SFA are established through prior experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "SFA reduces firing activity and is metabolically efficient, but makes spike codes history-dependent and harder to decode. However, careful network construction can ensure stable neural codes emerge despite SFA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are supported by citations to relevant studies (Gutierrez and Den\u00e8ve, Weber and Fairhall, Weber et al.). These represent established knowledge about the computational trade-offs and potential solutions for SFA in neural coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "SFA provides multiple computational advantages including cellular short-term memory, enhanced sensitivity to synchronous input, modifications to frequency response curves, and at the network level may enhance rhythms and support Bayesian inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are supported by citations to prior work. However, C9 uses tentative language ('may enhance') indicating these network-level benefits are less firmly established than the cellular-level advantages in C7-C8.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C18",
+      "C19"
+    ],
+    "result": "SNNs with SFA can solve a 20-dimensional STORE-RECALL task with >99% accuracy on novel bit vectors (Hamming distance \u22655 from training), while networks without SFA remain at chance level. Neurons that fire strongly during STORE fire less during RECALL, demonstrating the negative imprinting principle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C18-C19 are supported by experimental data from the authors' simulations. The comparison between SFA and non-SFA networks is clear, and the generalization test with Hamming distance constraints is well-designed. Figure 2A provides visual evidence for the negative imprinting principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The SFA-based working memory model shares features with activity-silent working memory in humans: classifiers trained on STORE activity cannot decode RECALL activity and vice versa, and stored information cannot be decoded from firing activity between STORE and RECALL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by classifier analysis performed by the authors and comparison with experimental data from Wolff et al. 2017. The inability to decode across phases and during delay periods provides evidence against persistent firing mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C76",
+      "C77"
+    ],
+    "result": "The alignment between SFA time constants and working memory duration can be loose - diverse time constants (including random distributions) yield similar performance to precisely aligned time constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C76-C77 are supported by data in Table 1 showing that power-law and uniform distributions of time constants perform comparably to optimally aligned fixed time constants. This demonstrates robustness of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "SNNs with SFA achieve substantially better performance than SNNs without SFA on temporal computing benchmarks: 93.7% vs 51.8% on sMNIST, and 91.21% vs 89.04% on Google Speech Commands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by experimental data from the authors' simulations. The performance improvements are substantial and consistent across different benchmark tasks, demonstrating the general utility of SFA for temporal computing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Comparison of slow mechanisms shows that SNNs with SFA provide the best performance on 1D working memory tasks, while both SFA and depressing short-term plasticity (STP-D) achieve high performance on sMNIST. Facilitating synapses perform poorly on both tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by experimental data in Figure 2B-C and citations to prior work on synaptic properties. The comparison is systematic and uses biologically realistic parameters from Wang et al. 2006. The poor performance of facilitating synapses is surprising but clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A generic SNN with SFA can solve the demanding 12AX task (requiring hierarchical working memory and dynamic rule application) with 97.79% accuracy on novel sequences, representing the first solution of this task by a spiking neural network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are well-supported. The task description is validated by citations (C32-C33), prior work is accurately cited (C34), and the novelty claim (C35) is reasonable given the literature review. The performance data (C36-C37) is clearly presented with Figure 3 providing detailed evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "On the 12AX task, biologically plausible e-prop training achieves 92.89% performance (vs 97.79% with BPTT). Performance depends on the fraction of neurons with SFA: 50% SFA achieves 97.79%, 100% SFA achieves 72.01%, 10% SFA achieves 95.39%, and 0% SFA achieves only 0.39%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by experimental data averaged over five network initializations. The systematic variation of SFA fraction reveals an optimal range, with both too many and too few SFA neurons reducing performance. The e-prop result demonstrates biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The SNN model is robust to noise (little affected by low noise, graceful degradation at higher noise) and does not require specialized architecture - a generic fully connected network with SFA achieves near-perfect performance on the hierarchical 12AX task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by noise robustness analysis (referenced in Appendix) and the observation that no task-specific architecture was needed. The emergence of hierarchical working memory from generic connectivity is a notable finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "SNNs with SFA can duplicate and reverse sequences with 95.88% success on novel sequences, while networks without SFA achieve 0% performance. This addresses a fundamental capability of primate brains for operations on symbol sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are well-supported. The cognitive significance is established by citations (C45), biological relevance by primate studies (C46-C48), and performance data is clear (C49-C50). The stark contrast between SFA and non-SFA networks demonstrates necessity of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In the sequence duplication/reversal task, about one-third of neurons show task-independent sequential firing, while a large fraction encode nonlinear combinations of symbol identity, serial position, and task type. The network produces factorial codes and brain-like neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C54-C56 are supported by three-way ANOVA analysis and data in Figure 4B-D. The emergence of factorial coding and diverse neural representations matches experimental observations from primate studies, providing validation of the model's biological realism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "SFA enables SNNs to integrate temporally dispersed information seamlessly into ongoing computations, moving performance from fairly low levels up to human brain performance levels on temporal computing tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 represent summary conclusions supported by the collective experimental results across multiple tasks (STORE-RECALL, sMNIST, 12AX, sequence operations). The consistent performance improvements with SFA across diverse tasks support these broad conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Brains must solve temporal computing tasks on the scale of seconds in dynamic environments, but spiking neural network models face inherent difficulties due to the millisecond timescale of spikes. While biological neurons have slower dynamic processes, it has been unclear whether these support robust temporal computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 establish the motivation and context for the work. These are supported by general knowledge about brain function and neural dynamics. The identification of the knowledge gap (C62) appropriately frames the contribution of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "The GLIF2 model of SFA (where firing increases threshold transiently) can be efficiently simulated and trained with gradient descent. Biologically plausible e-prop training achieves similar performance to BPTT for SNNs with and without SFA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C65-C66 are supported by model definition, Figure 1A-B illustration, and citations to prior work (Bellec et al. 2018a, 2020). The equivalence of e-prop and BPTT is demonstrated empirically for the 12AX task (C39).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Reduced excitability (from SFA) protects hidden states from noise perturbations better than increased excitability, as adapted neurons respond less to noise inputs. This aligns with findings that inhibition is critical for robust cortical memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by logical inference about noise sensitivity and citations to relevant studies (Mongillo et al. 2018, Kim and Sejnowski 2021). The reasoning is sound and consistent with the empirical observation that SFA outperforms ELIF (enhanced excitability) models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Metabotropic glutamate receptors are widespread in thalamus and cortex and integrate signals over long timescales (seconds to days), but we lack mathematical models to evaluate their contribution to temporal computing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by established knowledge (C70), citation to Sherman 2014 (C71), and honest acknowledgment of modeling limitations (C72). This appropriately identifies an important direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Temporal computing capabilities likely arise through nature and nurture. Genetically encoded connection probabilities can provide some working memory without learning, but the extent of genetic endowment for temporal computing remains to be examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are appropriately speculative about the origins of temporal computing capabilities. C74 is supported by citation to St\u00f6ckl et al. 2021. This identifies an important open question about the relative contributions of innate structure versus learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "For the STORE-RECALL task, the time constants of neurons with SFA had little impact on their intrinsic time scale, with network input having much greater impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by experimental analysis referenced in Appendix 1. This finding is consistent with C20, C76-C77 showing that precise alignment of SFA time constants with task demands is not critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The contribution of SFA to temporal computing in recurrent SNNs was first examined by Bellec et al. 2018a, and its role in language processing in feedforward networks was examined by Fitz et al. 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 accurately cite prior work establishing the context for the current study. These claims appropriately acknowledge previous contributions while distinguishing the current work's focus and scope.",
+    "result_type": "MINOR"
+  }
+]

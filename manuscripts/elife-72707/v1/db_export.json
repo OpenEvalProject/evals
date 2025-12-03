@@ -1,0 +1,918 @@
+{
+  "submission": {
+    "id": "26c675b0-7c2d-4687-84aa-98adeccfd074",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:08:04.738989Z",
+    "updated_at": "2025-12-03T11:08:04.738989Z"
+  },
+  "content": [
+    {
+      "id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "submission_id": "26c675b0-7c2d-4687-84aa-98adeccfd074",
+      "content_type": "manuscript",
+      "content_text": "# Cellular organization in lab-evolved and extant multicellular species obeys a maximum entropy law\n\n## Authors\n\n- Thomas C Day<sup>1</sup> ([ORCID: 0000-0003-4681-9348](https://orcid.org/0000-0003-4681-9348)) \u2020\n- Stephanie S H\u00f6hn<sup>2</sup> ([ORCID: 0000-0003-1815-705X](https://orcid.org/0000-0003-1815-705X)) \u2020\n- Seyed A Zamani-Dahaj<sup>1</sup>\n- David Yanni<sup>1</sup>\n- Anthony Burnetti<sup>3</sup>\n- Jennifer Pentz<sup>3</sup>\n- Aurelia R Honerkamp-Smith<sup>2</sup>\n- Hugo Wioland<sup>2</sup>\n- Hannah R Sleath<sup>2</sup>\n- William C Ratcliff<sup>3</sup> \u2020\n- Raymond E Goldstein<sup>2</sup> ([ORCID: 0000-0003-2645-0598](https://orcid.org/0000-0003-2645-0598)) \u2020\n- Peter J Yunker<sup>1</sup> ([ORCID: 0000-0001-8471-4171](https://orcid.org/0000-0001-8471-4171)) \u2020\n\n### Affiliations\n\n1. School of Physics, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))\n2. Department of Applied Mathematics and Theoretical Physics, Centre for Mathematical Sciences, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n3. School of Biological Sciences, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))\n4. Quantitative Biosciences Graduate Program, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))\n5. Department of Molecular Biology, Ume\u00e5 University Ume\u00e5 Sweden ([ROR:05kb8h459](https://ror.org/05kb8h459))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe prevalence of multicellular organisms is due in part to their ability to form complex structures. How cells pack in these structures is a fundamental biophysical issue, underlying their functional properties. However, much remains unknown about how cell packing geometries arise, and how they are affected by random noise during growth - especially absent developmental programs. Here, we quantify the statistics of cellular neighborhoods of two different multicellular eukaryotes: lab-evolved \u2018snowflake\u2019 yeast and the green alga Volvox carteri. We find that despite large differences in cellular organization, the free space associated with individual cells in both organisms closely fits a modified gamma distribution, consistent with maximum entropy predictions originally developed for granular materials. This \u2018entropic\u2019 cellular packing ensures a degree of predictability despite noise, facilitating parent-offspring fidelity even in the absence of developmental regulation. Together with simulations of diverse growth morphologies, these results suggest that gamma-distributed cell neighborhood sizes are a general feature of multicellularity, arising from conserved statistics of cellular packing.\n\n## Introduction\n\nThe evolution of multicellularity was transformative for life on Earth, occurring in at least 25 separate lineages (Grosberg and Strathmann, 2007). The success of multicellular organisms is due in part to their ability to assemble cells into complex, functional arrangements. Self-assembly, however, is fundamentally subject to random noise (Zeravcic and Brenner, 2014; Szavits-Nossan et al., 2014; Damavandi and Lubensky, 2019) that affects the final emergent structure (Michel and Yunker, 2019). The physiology of multicellular organisms can depend sensitively on the geometry of cellular packing (Bi et al., 2015b; Drescher et al., 2016; Jacobeen et al., 2018b; Brunet et al., 2019; Schmideder et al., 2021), and such noise may therefore have direct consequences on organismal fitness. Understanding the evolution of multicellularity, and the subsequent evolution of multicellular complexity (Bell and Mooers, 1997), requires understanding the impact of random noise on multicellular self-assembly. How do organisms accurately assemble functional multicellular components in the presence of noise?\n\nRecent work has shown that extant multicellular organisms can either suppress (Hong et al., 2016) or leverage (Haas et al., 2018) variability in the process of reliably generating structures, and their tissues can change function based on cellular packing geometry (Bi et al., 2015a). This occurs through a coordinated developmental process involving genetic (Davidson, 2001), chemical (Sampathkumar, 2020), mechanical (Deneke and Di Talia, 2018), and bioelectric (Levin, 2004) feedbacks between interacting cells. However, even with coordinated developmental processes, noise during self-assembly results in deviations from perfectly regular structures. Further, as these developmental processes have not yet evolved in nascent multicellular organisms, it is unclear how unregulated assembly can reliably result in reproducible packing geometries and multicellular structures.\n\nMulticellular organisms also exhibit diverse growth morphologies; for example, cells can remain attached through incomplete cytokinesis (Bonner, 1998; Grosberg and Strathmann, 2007; Knoll, 2011), they can adhere through aggregative bonds (Claessen et al., 2014), and they can assemble multicellular groups through successive cell division within a confining membrane (Angert, 2005; Herron et al., 2019). These growth morphologies can have distinct intercellular connection topologies (Yanni et al., 2020), changing how randomness is manifested. For instance, groups that grow with persistent mother-daughter bonds maintain the same intercellular connections, \u2018freezing\u2019 in place any structural randomness that arises during reproduction. In contrast, cells in aggregates can rearrange, so their final structure emerges from a combination of reproduction and intercellular interactions and noise (Delarue et al., 2016; Hartmann et al., 2019). Further, the dimensionality of multicellular groups can vary, from filaments (Herrero et al., 2016) and quasi-two-dimensional sheets (Besson and Dumais, 2011; Brunet et al., 2019) to groups that grow equally in three dimensions (Ratcliff et al., 2012; Tang et al., 2020; Butterfield, 2016). While the impact of noise on systems in thermal equilibrium is well known to depend sensitively on spatial dimensionality (Mermin and Wagner, 1966; Hohenberg, 1967; Vivek et al., 2017), no such information is yet at hand for biological development, which is intrinsically out of equilibrium. The growth morphology, connection topology, and dimensionality therefore altogether determine a multicellular architecture. Randomness resulting from many sources, such as stochastic cell division, variability in cell growth, intercellular interactions, and more, subsequently occurs as perturbations to this idealized form. It would appear that noise manifests in a unique, context-dependent manner in each of these different multicellular systems.\n\nHere, we provide experimental evidence that, rather than being context-dependent, fluctuations in cell packing geometry instead follow a universal distribution, independent of the presence or absence of developmental regulation. We quantify the distributions of cellular space in two different types of organisms: experimentally evolved multicellular yeast (Ratcliff et al., 2012) and wild-type multicellular green algae (Goldstein, 2015). In both cases, maximum entropy considerations (Aste and Di Matteo, 2008) (see inset box) accurately predict the cell packing distribution. Building on these observations, we use computational models of diverse prescribed growth rules, mimicking extant biological morphologies, to show that cells are ubiquitously packed according to the maximum entropy principle. Detailed analysis of the case of green algae shows that correlations, that is, the lack of structural randomness, produce deviations from maximum entropy predictions, but that even a relatively small amount of randomness is sufficient to generate cellular packings that largely follow maximum entropy predictions. Next, we explore the evolutionary consequences of cell packing. We use the cell packing distribution to predict the distribution of snowflake yeast group sizes, an emergent multicellular trait that arises from cell crowding (Jacobeen et al., 2018b). Then, we use a theoretical analysis to show that the effects of fluctuations in intercellular space on the motility of green algae are small. These findings together suggest that, rather than impeding innovation, fluctuations in cell packing are highly repeatable, and may play a fundamental role in the origin and subsequent evolution of multicellular organisms.\n\n## Results\n\n### Maximum entropy\n\nWithin statistical physics, the maximum entropy principle relates randomness in low-level units (e.g. cells) to the properties of the assembly (e.g. a multicellular group). It works by enumerating all low-level configurations that conform to a set of constraints. Any particular group-level property can be generated by many different low-level configurations, but some group-level properties may correspond to more low-level configurations than others. Those that are generated by many configurations are more likely to be observed than those that correspond to relatively few configurations; in this way, the maximum entropy principle allows one to calculate the probability of observing different group properties, given a set of constraints. Multicellular groups obey a simple but universal constraint: each group has some total volume, $V$. This volume can be divided into $N$ pieces, where $N$ is the total number of cells. Each piece is associated with a particular cell, and the $N$ pieces must sum to the total volume of the group, $V=\\sum_{i}v_{i}$, for $i=1,2,\u2026,N$. Using this constraint, and assuming no correlations, one can predict the most likely distribution of volumes for the $N$ pieces. This approach has been successfully used to predict the distribution of free volumes within granular materials and foams (Aste and Di Matteo, 2008; Katgert and van Hecke, 2010). Here, we use it to predict the distribution of cellular free volumes in the absence of spatial correlations in cell positions.\n\nConsider the ensemble of all possible cellular configurations in a simple group. As first derived by Aste and Di Matteo, 2008 and Aste et al., 2007 for granular materials, the maximum entropy probability distribution $p\u2062(v)$ of cell neighborhood volumes within $V$ is the modified gamma distribution\n\n$$\np\u2062(v)=\\frac{k^{k}}{\u0393\u2062(k)}\u2062\\frac{(v-v_{c})^{k-1}}{(v\u00af-v_{c})^{k}}\u2062exp\u2061(-k\u2062\\frac{v-v_{c}}{v\u00af-v_{c}})\n$$\n\nwhere $v\u00af$ is the mean cell neighborhood volume, vc is the minimum cell neighborhood volume, $\u0393\u2062(k)$ is the gamma function, and $k\u2261(v\u00af-v_{c})^{2}/\\sigma_{v}^{2}$ is a shape parameter that is defined by vc, $v\u00af$, and the variance of the cell neighborhood volumes, $\\sigma_{v}^{2}$. This distribution is expected if cell neighborhood volumes are determined independently of each other (while still conforming to the total volume constraint). In other words, volumes must be set randomly; correlations between the size of separate volumes will lead to deviations from maximum entropy predictions. If this condition holds, then maximum entropy volume distribution predictions should be valid, regardless of other geometric or structural details. For example, maximum entropy statistics hold in granular materials, despite the fact that they must obey strict force and torque balance conditions (Aste and Di Matteo, 2008; Snoeijer et al., 2004; Bi et al., 2015a). Further, the same approach applies to groups with a constraint on total area or length; this does not change the result, and $V$ can be replaced by $A$ or $L$ without other modifications. However, we would not expect this prediction to necessarily hold for confluent cell layers (i.e. packing fraction $\u03d5\u22481$), since in general cell size is a highly regulated process; when cells tile space, the cell neighborhood volume distribution will strongly correlate with the the cell size distribution.\n\nIn practice, we divide the total group volume or area into $N$ pieces via a Voronoi tessellation. The size of the space associated with cell $i$ includes the cell itself and the portion of intercellular space closer to its center than to the center of any other cell. As cells must have non-zero size, we therefore set vc to be the volume of a single cell without any intercellular space (or ac, the area of a single cell).\n\n### Experimental tests of multicellular maximum entropy predictions\n\nTo test whether different kinds of multicellular groups pack their cells according to the maximum entropy principle, we investigated cell packing in two different multicellular organisms. First, we used experimentally evolved \u2018snowflake\u2019 yeast (Ratcliff et al., 2012), a model system of undifferentiated multicellularity. Second, we used the green microalga Volvox carteri, a member of the volvocine algae that first evolved multicellularity in the Triassic (Starr, 1969; Herron et al., 2009).\n\n#### Snowflake yeast\n\nSnowflake yeast grow via incomplete cytokinesis, generating branched structures in which mother-daughter cells remain attached by permanently bonded cell walls (Figure 1A). New buds appear on ellipsoidal cells at a polar angle $\u27e8\\theta\u27e9=42%\\pm23%$ and azimuthal angle $\u03d5$ that is randomly distributed ($\u27e8\u03d5\u27e9=180%\\pm104%$, Figure 1\u2014figure supplement 1). Therefore, even though snowflake yeast structure is limited to configurations in which daughter cells remain attached at their base to their mother, these new cells bud in random orientations. Each snowflake yeast cluster has a different specific configuration of cells; the ensemble of snowflake clusters will include many different configurations. We expect that this structural randomness produces predictable distributions of cellular neighborhood volumes. Conversely, if there are strong correlations in the locations of daughter cells, then we will observe deviations from maximum entropy predictions regarding the cell neighborhood volumes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72707/elife-72707-fig1-v1.jpg)\n\n**Figure 1.:** (A) Cross-section of a multicellular yeast organism, which grows with persistent intercellular bonds. Scalebar is 5 m. The inset shows a smaller section, with ellipsoidal fits to individual cells along with their corresponding Voronoi polyhedra. Black overlays indicate the connection topology between yeast cells; not all connections are labeled. (B) Darkfield microscopy image of Volvox carteri, scalebar is $100\u2062\u00b5\u2062m$. Inset: a small piece of the Voronoi-tessellated surface; black points are somatic cell positions. (C) Distributions of Voronoi polyhedron volumes as a function of cell size normalized by average size vc for snowflake yeast. In orange is the histogram for all cells; the other three distributions correspond to different subsections of Voronoi volumes. The cells were grouped into spherical shells with radius $R$ and width $\u0394\u2062R$ from the cluster center of mass. Shown are shells with edges $[0,6.2]$, $[6.2,9.7]$, and $[9.7,20.4]$. Black lines are maximum entropy predictions. (D) Distributions of solid angles subtended by Volvox somatic cells divided by a minimum solid angle $\u03a9_{c}$. Solid black lines are the maximum entropy predictions. The top row shows the histogram for all cells in green and a subsection of correlated areas in gray. Bottom row illustrates the subsectioning process: blue polygon is the center of the subsectioned region. Only the Voronoi polygons, i.e. not the somatic cells, are shown for clarity. (E,F) Empirical cumulative distribution function vs entropic predictions for all distributions shown in c,d. The dashed black line represents hypothetical perfect agreement between observation and prediction.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72707/elife-72707-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Bud scars determine the position of new cell buds, and are distributed across the surface of yeast cells. We locate bud scars in a spherical coordinate system with polar angle $\\theta$ and azimuthal angle $\u03d5$. (B) Distribution of measured polar angle positions of new cells. (C) Distribution of measured azimuthal angle positions.\n\nTo determine the distribution of cell neighborhood volumes, we first must measure the position of every cell in a cluster. It is difficult to image individual cells within snowflake yeast clusters due to excessive light scattering. Instead, we used a serial block face scanning electron microscope equipped with a microtome to scan and shave thin ($50\u2062nm$) layers off a resin block with embedded yeast clusters with stained cytoplasms. This process allowed us to determine the 3D structure of $N=20$ snowflake yeast clusters and locate cell centers with nanometer precision.\n\nWe define the group volume as the smallest convex hull that surrounds all cells in the cluster and computed the 3D Voronoi tessellation of cell centers within that (Figure 1A). The distribution of cellular Voronoi volumes closely matched the predicted k-gamma distribution (Figure 1C, $k=2.88$). This agreement is quantified via \u2018P-P plots\u2019 of the empirical cumulative distribution function (CDF) plotted against the predicted k-gamma CDF. We find a root-mean-square residual $r_{R\u2062M\u2062S}=\\sqrt{\u27e8(F\u2062(v)-F_{i})^{2}\u27e9}=0.02$, where $F_{i}$ is the empirical CDF and $F\u2062(v)$ is the predicted k-gamma CDF.\n\nThe influence of the convex hull on these results was investigated by using an alternative procedure in which the Voronoi volumes were binned into shells centered at the cluster\u2019s center of mass (Figure 1C and E). We binned cells into shells with shell edges of $[0,6.2]$, $[6.2,9.7]$, and $[9.7,20.4]$ away from the center of mass. We found that the distribution of Voronoi volumes within each shell matched the predicted k-gamma distribution, with $r_{R\u2062M\u2062S}={0.037,0.020,0.014}$, $k={3.45,3.08,4.63}$ in the shells shown in Figure 1C(ii-iv).\n\n#### Volvocine algae\n\nTo test if cell neighborhood volumes in extant multicellular organisms are consistent with maximum entropy cell packing predictions, we examined cell packing within the green microalgae Volvox carteri. Development in V. carteri, which evolved over millions of years, is highly regulated, occurring through a stereotyped morphological progression (Kirk, 2005). V. carteri embryos arise as a spherical cellular monolayer from palintomic cell divisions with incomplete cytokinesis, which leaves the cells attached via cytoplasmic bridges. These bridges disappear when ECM is secreted by the cells, filling the entire sphere, and eventually moving the cells apart. The approximately 1000 somatic cells remain embedded on the surface of a translucent sphere of extracellular matrix (Figure 1B). While six-fold coordination is the most frequent local arrangement of somatic cells, the fact that the cells are embedded in a surface with spherical topology requires there to be \u2018defects\u2019 with differing coordination number (e.g. 5,7), and these are found interspersed around the spheroid. Thus, despite their developmental regulation, somatic cells exhibit a degree of disorder with respect to coordination number. From a physics perspective, the local hexatic order in the somatic cell arrangement is low (see Materials and methods).\n\nTo determine the distribution of Volvox cell neighborhood sizes, we imaged somatic cells using their chlorophyll autofluorescence in a light sheet microscope. Since the somatic cells are arranged around a surface embedded in 3D space, we constructed a 2D Voronoi tessellation of somatic cells on the surface. Each organism imaged had a different size, and therefore had a different mean Voronoi area $\u27e8A\u27e9$. To compare distributions across organisms, we removed the systematic area differences by recording the solid angle $\u03a9_{i}=4\u2062\\pi\u2062A_{i}/S$ subtended by each somatic cell, where $S=\\sum_{i}A_{i}$ is the total surface area of the organism. We found that the k-gamma distribution largely matched the distribution of solid angles (Figure 1D, $k=2.40$, $r_{R\u2062M\u2062S}=0.04$). However, there are systematic deviations between the data and maximum entropy predictions (Figure 1F).\n\nWe next investigated if maximum entropy predictions are more accurate within subregions with similar mean solid angles; specifically we examine regions whose mean is $\u27e8\u03a9\u27e9=0.0185\\pm0.0003$, obtained across six organisms. The distribution of Voronoi solid angles within these subregions closely follows the k-gamma distribution (Figure 1F, $k=10.66$, $r_{R\u2062M\u2062S}=0.01$). This observation suggests that while there are systematically correlated subregions of cells, within these subregions cells are largely arranged randomly. Thus, the organization of Volvox carteri somatic cells is consistent with maximum entropy predictions.\n\n### Simulations of different growth morphologies\n\nWe next used simulations to investigate the impact on cell packing of four different growth morphologies: growth via incomplete cell division (cf. snowflake yeast), cells distributed on a spherical surface (cf. Volvox), aggregation, and palintomy. The goal of these studies was to determine if morphological details and constraints impact entropic packing using simplified models that capture the essential features of the growth and behavior of these varied organisms. These simulations captured a couple basic properties of multicellularity: organisms may grow in both two and three dimensions, and they may assemble with two different classes of bonds: bonds that are reformable, and bonds that are not reformable. Nonreformable, or \u2018fixed\u2019 bonds (like those formed from incomplete cytokinesis) are common in plants, algaes, and fungi; on the other hand, reformable bonds (such as those formed via sticky proteins) are common in animal tissues and cellular aggregates, like biofilms and slime molds. Finally, palintomy, or growth confined inside a maternal membrane, is also common from algae to animals.\n\nFirst, we performed geometric simulations of multicellular groups that grow via incomplete cell division; these simulations were inspired by previous simulations of snowflake yeast (Jacobeen et al., 2018a; Jacobeen et al., 2018b). Daughter cells bud from mother cells with experimentally determined polar angle and random azimuthal angle, and remain attached to mother cells with rigid bonds. We ran 9, 100 simulations starting from a single cell, each of which underwent seven generations of division, and calculated the Voronoi tessellation of the final structure from each simulation. The distribution of Voronoi volumes closely matched the k-gamma distribution across four orders of magnitude (Figure 2A, $k=2.26$, $r_{R\u2062M\u2062S}=0.007$).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72707/elife-72707-fig2-v1.jpg)\n\n**Figure 2.:** We simulated four different growth morphologies: (A) Tree-like groups formed with rigid, permanent bonds between cells, (B) surface-attached cells located on a spherical surface, (C) aggregates formed with attractive \u2018sticky\u2019 interactions, and (D) groups formed by rapid cell division within a maternal membrane. In all subfigures, left panel shows the predicted and observed probability distributions, and right panel plots the observed cumulative distribution vs. the expected cumulative distribution. Histogram bars represent measured Voronoi volume distribution in simulations, and black solid line represents the maximum entropy prediction. Maximum entropy predictions accurately described the distribution of cellular volumes/areas, despite their varying mechanisms of group formation ($r_{R\u2062M\u2062S}\\leq0.01$).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72707/elife-72707-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Probability distribution functions for the dataset and the four model distributions, using parameters measured from the dataset. All measured values were used for this plot (number of datapoints, $N=857368).$ (B) Empirical cumulative distribution function vs. predicted cumulative distribution function. Black dashed line corresponds to perfect agreement, $y=x$. (C) Root-mean-square residual of the cumulative distribution functions for various sample sizes bootstrapped from the dataset. In open symbols are simulation datasets: black circle is k-gamma, red diamond is normal, blue square is log-normal, and green triangle is beta-prime. We also include data from snowflake yeast experiments; these bootstrapped samples are shown as dotted lines with filled symbols.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72707/elife-72707-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** We show the percent error of the estimated skewness ($(E\u2062s\u2062t-T\u2062r\u2062u\u2062e)/T\u2062r\u2062u\u2062e$) for both experimental data (left bars, bright) and simulation data (right bars, dark). (B-C), Four different distributions were fit using a least-squares algorithm; the fit distributions were then compared to the experimentally observed distribution by comparing their first two moments. The mean is show in B, the standard deviation in C. Experimental data was used for least square fits in the left-side bars for each pair, simulation data was used in the right-side bars for each pair.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72707/elife-72707-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Voronoi polyhedron volume, $V$, vs. distance from the center of mass, $d$. The distance $d$ is normalized by the maximum distance $R$ of any cell for each group; the volume is normalized by the minimum cell volume $V_{c}=4/3\u2062\\pi\u2062r^{3}$. All simulations are shown together as orange points. The colored partitions correspond to spherical shells. Panels B-E show the distribution of Voronoi volumes within each shell. In all cases, the k-gamma distribution describes the data well ($r_{R\u2062M\u2062S}=[0.017,0.035,0.011,0.004]$, respectively).\n\nInspired by Volvox, we simulated cells distributed across the two-dimensional surface of a sphere through a random Poisson point process. We completed 10 simulations, each with 1000 cells, and computed the distribution of solid angles subtended by Voronoi cells. As shown in Figure 2B, the distribution of Voronoi solid angles is consistent with maximum entropy predictions ($k=9.29$, $r_{R\u2062M\u2062S}=0.009$).\n\nNext, we simulated organisms that stick together via reformable cell-cell adhesions, a mechanism of group formation that is common in biofilms and extant aggregative multicellular life (Claessen et al., 2014) (i.e. Dictylostelium and Myxococcus; Figure 2C). In these simulations, multicellular aggregates were grown from a single cell. Seven generations of cell division occurred, in which new cells appear on the surface of existing cells at random positions, and steric interactions force cells to separate after division and occupy space. Aggregative bonds were modeled through harmonic interactions of the cell centers. The observed Voronoi volume distributions were consistent with maximum entropy predictions ($k=7.84$ and $r_{R\u2062M\u2062S}=0.007$).\n\nFinally, we modeled cells undergoing palintomic division within a maternal cell wall, as is common in green algae (L\u00fcrling and Van Donk, 1997; Boraas et al., 1998; Ratcliff et al., 2013; Fisher et al., 2016; Herron et al., 2019), and is reminiscent of both baeocyte production in Stanieria bacteria (Angert, 2005) and neoproterozoic fossils of early multicellularity (Xiao et al., 1998; Figure 2D). The details of these simulations remained similar to the simulations of aggregative multicellularity, with the important difference being that instead of harmonic interactions between cell centers enforcing groups to stay together, cells interacted with a spherical maternal wall acting as a corral. The Voronoi volume distributions for these simulations were also consistent with maximum entropy predictions ($k=15.16$ and $r_{R\u2062M\u2062S}=0.013$).\n\nTaken together, the results of these simulations suggest that a broad distribution of cell neighborhood sizes is a general feature of multicellular growth morphologies. In particular, when cell locations are random under these rules, cell neighborhood size distributions closely follow the k-gamma distribution.\n\n### The role of spatial correlations\n\nWhile we have shown that the distribution of cell neighborhood volumes closely follows the k-gamma distribution in two very different organisms, we have also seen that in some cases maximum entropy predictions are more accurate in sub-sections of an organism than across its entirety. For instance, in Volvox we observed that $r_{R\u2062M\u2062S}$ is much smaller within subregions with similar mean solid angles than across the whole organism. This observation suggests that correlations exist in the arrangement of V. carteri somatic cells. Such a correlation is not wholly unexpected; V. carteri have a well-known anterior-posterior polarity which they use to orient and swim toward light sources (Drescher et al., 2010b). This polarity may affect the somatic cell packing distribution in different subregions of the organism, leading to deviations from maximum entropy predictions.\n\nThe spatial correlations in the cellular areas in Volvox were studied first by plotting a 3D heatmap of Voronoi solid angle sizes (Figure 3A). It is apparent that extended spatial regions have well-defined and non-random mean Voronoi solid angles. We quantified this feature by calculating the spatial correlation function $C\u2062(Q)$ of the solid angle\n\n$$\nC\u2062(Q)=\\frac{\u27e8(\u03a9-\u27e8\u03a9\u27e9)\u2062Y_{Q}\u27e9}{\\sigma_{\u03a9}\u2062\\sigma_{Y_{Q}}},\n$$\n\nwhere $Y_{Q}=J\u2062(Q)^{-1}\u2062\\sum_{j}(\u03a9_{j}-\u27e8\u03a9\u27e9)$ is the average deviation of the solid angle of a given polygon\u2019s neighbors at a neighbor distance $Q$ from the mean. Here, the number of neighbors is $J\u2062(Q)$, a function of $Q$, which enumerates the network distance from the polygon of interest (i.e. $Q=1$ calls the nearest neighbors, of which there are $J\u2062(1)$, $Q=2$ calls the next nearest neighbors, of which there are $J\u2062(2)$, and so on). The standard deviation of the solid angle across the population is $\\sigma_{\u03a9}$, and $\\sigma_{Y_{Q}}$ is the standard deviation of $Y_{Q}$ across the population. We find that Volvox Voronoi solid angles are positively correlated at distances as large as $Q=10$ (Figure 3A). This analysis suggests that there are systematic differences in Volvox group structure in different spatial regions. We therefore should expect to observe deviations from the k-gamma distribution, which was derived under the assumption that there are no correlations in the division of space among cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72707/elife-72707-fig3-v1.jpg)\n\n**Figure 3.:** (A) Correlation function of Voronoi polygon areas vs. network neighbor distance $Q$. Green circles represent all experimental Volvox data. Lines indicate the same correlation function calculated in subsections of size $Q_{0}={6,10,14,18}$. Inset: visualization of spatial correlations of solid angle; one Volvox\u2019s Voronoi tessellation is displayed with a three-color heatmap corresponding to polygons with areas smaller than (light gray), within (gray) and larger (black) than one standard deviation of the mean. Scale bar is $200\u2062\u00b5\u2062m$. (B) PP plots for the observed vs predicted cumulative distribution function. In green is the Volvox distribution for all cells before corrections for correlations. A selection of differently-sized subsections is also plotted, corresponding to sizes $Q_{0}={6,10,14,18}$. Arrow indicates direction of increasing Q0 value. (C) Root-mean-square residual deviation from maximum entropy predictions as a function of subsection size, as a function of nearest neighbor number Q0. As the subsection size increases (including more and more uncorrelated Voronoi areas), the deviation from predictions first decreases until $Q_{0}=6$, then increases.\n\nA natural question is whether maximum entropy predictions are more accurate within correlated subregions of an organism. We measured the Voronoi distribution in subregions with similar mean solid angles across six organisms and, for each subregion, a central node and its neighbors up to Q0 were identified. We varied Q0 from 3 (corresponding to, on average, $38\\pm2$ cells in the subregion) to $Q_{0}=20$ ($928\\pm10$ cells on average in the subregion) to measure the Voronoi solid angle distributions in subregions of different sizes. Spatial correlations were weaker within smaller domains (Figure 3A), and deviations from maximum entropy predictions smaller as well (Figure 3B) with the minimum $r_{R\u2062M\u2062S}$ at $Q_{0}=6$ (Figure 3C, average of $133\\pm5$ cells). These observations suggest that while there are systematic correlations between subregions, cell neighborhood sizes are largely randomly distributed within subregions.\n\n#### The crucial role of randomness\n\nHow much randomness is necessary for the k-gamma distribution to predict cell neighborhood size distributions? Our analysis of the solid angle distribution of Volvox cells demonstrates that maximum entropy principle predictions are relatively accurate ($r_{R\u2062M\u2062S}=0.04$) even in the presence of some spatial correlations. However, it is unclear how much randomness is necessary for the k-gamma distribution to be predictive. Developmental processes are known to incur random effects (Hong et al., 2016; Haas et al., 2018), but, at the same time, fluctuations must be sufficiently suppressed for complex structures to assemble. This dilemma is augmented because there are few methods for measuring the degree of randomness in developmental processes. Therefore, it is difficult to disentangle exactly which reproducible qualities and traits stem from regulated processes, and which ones stem from random processes. In this section, we address this gap by assessing the stability of maximum entropy packing distributions to correlative perturbations (Figure 4). We do so by simulating three different sources of correlations: (i) size polydispersity, (ii) precisely defined growth patterns, and (iii) coordinated cellular apoptosis, each of which is a common multicellular developmental process. In each scenario, we varied the relative strength of correlations and noise, and monitored how closely the cell neighborhood size distributions agreed with the k-gamma distribution via P-P plots and the $r_{R\u2062M\u2062S}$. We do not attempt to exactly recapitulate naturally-occurring levels of randomness strength; rather, we investigate the limits of how well maximum entropy predictions can measure the impact of correlations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72707/elife-72707-fig4-v1.jpg)\n\n**Figure 4.:** In A-C are PP plots of the observed vs. predicted cumulative distribution function for three different simulations. The colors correspond to increasing levels of noisiness in the simulations, from red (strongest correlations/determinism) to blue (strongest noise). The dashed black line in each represents $y=x$, or exact predictive efficacy. (A) Aggregative groups with bimodal size polydispersity; noise is introduced by varying the probability that small cells reproduce into small or large cells, and vice versa. (B) Tree-like groups with persistent intercellular bonds that grow according to a growth plan modified by noise in cell placement. (C) Surface-bound groups with programmed cell death events that may be localized or randomly dispersed. (D) The root mean square deviation from predicted values for each simulation case. Circles are aggregative simulations from A, triangles are tree-like simulations from B, and squares are surface-bound simulations from C. Note: the discrete points in (B) arise because absent randomness in the cell locations the exact same cellular structure is achieved by every simulation. Therefore, the observed distribution of Voronoi volumes is noticeably discrete for this case. Upon adding randomness, the cellular structure is altered between successive simulations, and the distribution of Voronoi volumes becomes less discrete.\n\nThe impact of heritable size polydispersity was investigated by simulating aggregative groups consisting of large and small cells. All simulations were seeded with one small cell and one large cell. We then varied the probability $\u03be$ that a new cell is the same size as its mother from 0.5 to 1.0. When $\u03be=1$, cells always produce offspring with the same radius; for $\u03be=0.5$ it is equally likely that a small cell produces a small or large daughter (and vice versa for large cells). Therefore, groups with $\u03be=1$ have correlated regions of cell size, but the degree of correlations decreases with decreasing $\u03be$. While groups with $\u03be=1$ deviate significantly from the k-gamma distribution ($r_{R\u2062M\u2062S}=0.09$), we observed that even a small amount of randomness results in excellent agreement between simulated groups and the k-gamma distribution (in order from $\u03be=1$ to $\u03be=0.5$, $r_{R\u2062M\u2062S}={0.09,0.04,0.03,0.03,0.02}$).\n\nNext we investigated groups with varying amounts of noise on top of defined growth patterns. In these simulations, new cells bud in precise positions; the first daughter at the position ($\\theta=0\\pm\u03b7$, $\u03d5=0\\pm\u03b7$ in spherical coordinates), the second at $\\theta=90\\pm\u03b7$, $\u03d5=0\\pm\u03b7$, the third at $\\theta=90\\pm\u03b7$, $\u03d5=180\\pm\u03b7$, etc., where the noise is uniformly distributed with zero mean and width $\u03b7$. For $\u03b7=0$ (no noise), the distribution of Voronoi volumes was discontinuous, since cells could only access a finite number of local configurations. As expected, as $\u03b7$ increases ($\u03b7={0,5,30,60,90}$), $r_{R\u2062M\u2062S}$ decreases ($r_{R\u2062M\u2062S}={0.07,0.05,0.02,0.02,0.02}$).\n\nFinally, we investigated groups with localized and random cell death. In these simulations, 50 cells were confined to the surface of a sphere of unit radius following the protocol described above. One cell is randomly selected to die. Centered at this cell, a spherical region of radius $R$ is defined, and then 10 cells in this region were randomly selected to die (and disappear, thereby not contributing to the Voronoi tessellation). For small $R$, cell death is highly localized, and thus spatially correlated. As $R$ increases, cell death events become less localized, and therefore more random. We find that highly correlated cell death resulted in large deviations from maximum entropy predictions. Conversely, as $R$ increases dead cells become less localized, the observed distribution becomes more accurately described by the k-gamma distribution; as $R$ increases from $R={0.75,1,1.25,1.5,1.75,2}$, we find $r_{R\u2062M\u2062S}={0.10,0.07,0.03,0.02,0.01}$.\n\nIn summary, absent randomness, spatial correlations lead to large deviations from the k-gamma distribution. Yet, with even a small amount of randomness, the k-gamma distribution holds significant predictive power. These simulations suggest that maximum entropy predictions are likely to be robust against even moderate correlations.\n\n#### Parent-offspring fidelity via maximum entropy packing\n\nSo far, we have shown that randomness in cellular packing leads to highly predictable packing statistics. Here we show that maximum entropy statistics can directly impact the emergence of a highly heritable multicellular trait, organism size.\n\nPrior work has shown that the size of snowflake yeast at fragmentation is remarkably heritable \u2013 higher, in fact, than the traits of most clonally reproducing animals (Ratcliff et al., 2015). The size to which snowflake yeast grow depends strongly on the aspect ratio of its constituent cells; more elongated cells allow the growth of larger clusters before strain from cellular packing causes group fragmentation (Jacobeen et al., 2018a; Jacobeen et al., 2018b). Recently, experiments with engineered yeast showed that this emergent multicellular trait, group size, was in fact more heritable than the underlying cellular trait upon which it was based (cellular aspect ratio), despite the fact that the mutations engineered in this system only affected cellular aspect ratio directly (Zamani-Dahaj et al., 2021). Simulations of multicellular chemotaxis observed a similar effect (Colizzi et al., 2020). While at first glance this may seem surprising, we show below that the high heritability of snowflake yeast group size arises from the direct dependence of size on the robust maximum entropy distribution of volume within groups.\n\nBefore addressing how fracture impacts the distribution of cluster sizes by impacting the number of cells within a group, we first must address fluctuations in size among clusters with the same number of cells. Given a number of cells $N$ in the cluster, variation in cell packing fraction results in variation of the total volume. The arguments given above for predicting the distribution of individual cell volumes also applies to the distribution of total volume (Aste and Di Matteo, 2008); the distribution of total volume for clusters with the same number of cells should follow the k-gamma distribution. To generate enough clusters with identical $N$ to test this prediction, we used simulations. We generated 3000 snowflake yeast clusters, each with 100 cells, and measured their total volumes. The distribution of volumes is consistent ($r_{R\u2062M\u2062S}=0.0043$, $k=23.0$) with the k-gamma distribution as shown in Figure 5A. Further, these fluctuations in size are small compared to the differences in size gained via reproduction of cells or lost via fracture.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72707/elife-72707-fig5-v1.jpg)\n\n**Figure 5.:** (A) Distribution of total cluster volume for 3000 simulated snowflake clusters, each with $N=100$ cells. The total volume is divided by the minimum possible volume $N\u2062v_{c}$. The k-gamma distribution (black line, $k=23.0,r_{R\u2062M\u2062S}=0.0043$) provides a good description of the data. (B) Distribution of all experimental Voronoi volumes (black circles) and the maximum entropy prediction (black line). The vertical black dashed line is the critical Voronoi volume $v^{*}=2.02$ predicted from simulations. Orange filled region integrates up to $p^{*}$ the probability that any one cell occupies a volume less than $v^{*}$. Insets: sequential brightfield microscope images of one yeast cluster undergoing group fragmentation. White arrowhead indicates location of fracture point. The images measure $150\u2062\u00b5\u2062m$ across from top to bottom. (C), Experimentally measured yeast cluster size distribution (solid black line) along with the prediction from weakest link theory (orange line). Gray region represents $1\u2062\\sigma$ confidence bounds on the measured distribution from estimating the number of cells in a group. (D), Coefficient of variation in group radius ($\\sigma/R\u00af$) for snowflake groups (S) and flocculating groups (F). Data from Pentz et al., 2020.\n\nTo predict the group size distribution, we consider the probability of fragmentation via a weakest-link model of fracture. As the location of new cells is random (see Figure 1\u2014figure supplement 1), each new cell has a chance of causing intercellular bond fracture. It was previously observed that bonds only break if cells are highly confined, that is they have smaller Voronoi volumes; otherwise flexible cellular branches simply bend (Jacobeen et al., 2018b). We model fracture as occurring when a cell\u2019s Voronoi volume is below a critical value denoted by $v^{*}$ (Figure 5B) such that its motion is completely restricted. We measure $v^{*}$ from simulations that determine the maximum local packing density for groups with same cell size and shape distributions as seen in experiments (see Materials and methods). The probability that a particular cell is confined to a Voronoi volume $v\\leqv^{*}$ is the integral\n\n$$\np^{\u2217}=\\int_{v_{c}}^{v^{\u2217}}p(v)dv.\n$$\n\nAs each cell in a cluster of $N$ cells independently has probability $p^{*}$ of having $v\\leqv^{*}$ (and thus causing fracture), the probability of a cluster with $N$ cells not fragmenting is\n\n$$\nP\u2062(N)=(1-p^{*})^{N}\n$$\n\nAs we do not model the fate of products of fragmentation (i.e. the size of the separate pieces post-fracture), we expect the weakest link model to be more accurate for larger clusters than it is for smaller clusters.\n\nWe measured group size for approximately $10,000$ snowflake clusters, all descendants of a single isolate, using a particle multisizer, and found strong agreement between the experimentally observed cluster size distribution and the weakest-link prediction (the coefficient of determination is $r^{2}=0.97$ for $log\u2061(C\u2062o\u2062u\u2062n\u2062t\u2062s)$ vs $N$) (Figure 5C). Hence, the predictable statistics of entropic cell packing guides the distribution of group size among offspring of a single isolate.\n\nFor context, we compared the distribution of group size in snowflake yeast to that of flocculating yeast, which forms multicellular groups via aggregation. The multicellular size of flocculating yeast depends on the rate of collisions with other cells and groups of cells. The growth rate of aggregates is thus typically proportional to their size, as larger aggregates are more likely to contact more cells (Pentz et al., 2020). In fact, the maximum size of a flocculating yeast aggregate is bounded by the duration of aggregation, an extrinsic parameter, while the minimum size can be a single cell (Stratford, 1992). Using data from Pentz et al., 2020, we compared the group size distributions of snowflake yeast and flocculating yeast grown in the same environmental conditions. We find that flocculating yeast groups exhibit a much larger coefficient of variation in size compared to snowflake yeast groups (Pentz et al., 2020; Figure 5D). These results demonstrate that randomly assembled groups can exhibit more reproducible group traits than groups assembled with correlations.\n\n#### Multicellular motility is robust to cellular area heterogeneity\n\nOne of the issues arising from the existence of the broad distribution of somatic cell areas in Volvox is the extent to which colony motility is affected by that heterogeneity. Each of the somatic cells at the surface of a Volvox colony has two flagella that beat at $\u223c30$ Hz, in planes that are primarily oriented in the anterior-posterior (AP) direction but with a slight lateral tilt that makes each colony spin around its AP axis. A longstanding focus in biological fluid mechanics of multicellular flagellates has been to understand the connection between the beating of the carpet of flagella that cover their surface and their self-propulsion. Measurements of the flow fields around micropipette-held (Short et al., 2006) and freely-swimming colonies (Drescher et al., 2010a) have shown that despite the discreteness of the flagella, the flow is remarkably smooth, albeit often displaying metachronal waves (Brumley et al., 2015), long-wavelength phase modulations of the beating pattern. However, the effect of heterogeneity in cell area on motility is as yet unknown; naively, we might expect that heterogeneities in flagella packing may lower the motility of the organism in comparison to a highly regular arrangement. Here, we show in fact that Volvox motility is largely unaffected by fluctuations in cell area, indicating that area heterogeneity may not be detrimental to the organism\u2019s swimming fitness. The absence of such a barrier may represent a scenario where trait optimization can be achieved without first evolving sophisticated developmental genes.\n\nA heuristic explanation for the smoothness of the flows can be developed by noting first that the flow arising from each flagellum, beating close to the no-slip surface of the colony, will fall off only as an inverse power of distance $r$ from the flagellum. Thus, the superposition of the flows from many flagella will be sensitive to contributions from distant neighbors (Boselli et al., 2021) and will tend to wash out local variations in flagellar actuation. This argument can be made quantitative using two different models for the motility of such flagellates. The first is the \u2018squirmer\u2019 model (Lighthill, 1952), in which the flagellate is characterized by a tangential \u2018slip\u2019 velocity $u\u2062(\\theta)$ on the surface, which can be thought of as corresponding to the mean motion of the flagella tips. Here, $\\theta\\in[0,\\pi]$ is the polar angle with respect to the AP axis. In this approach the details of the fluid velocity profile below the tips are not resolved, and in particular the no-slip condition at the surface of the ECM is ignored. In the second approach (Ishikawa et al., 2020), which builds on earlier work (Short et al., 2006) that specified a force density at the colony surface instead of a slip velocity, there is a specified force density applied at some small distance above the no-slip colony surface, and the flow field below that locus is resolved. This approach, termed the \u2018shear stress, no-slip\u2019 model, captures the very large viscous dissipation that occurs in the region between the ECM and the locus of forcing. Within either of these two approaches above the effects of area inhomogeneities can be investigated by coarse-graining the flagella dynamics; either the local slip velocity $u\u2062(\\theta)$ or the local tangential force density $f\u2062(\\theta)$ has noise.\n\nIn the squirmer model, the swimming speed $U$ is (Lauga, 2020)\n\n$$\nU=\\frac{1}{2}\\int_{0}^{\\pi}d\\thetasin\u2061\\thetau_{\\theta}(\\theta)V_{1}(\\theta),\n$$\n\nwhere\n\n$$\nV_{n}\u2062(\\theta)=\\frac{2}{n\u2062(n+1)}\u2062P_{n}^{^{\u2032}}\u2062(cos\u2061\\theta)\u2062sin\u2061\\theta,\n$$\n\n$P_{n}$\u2009is the Legendre polynomial, and the prime indicates differentiation with respect to its argument. If we represent the effects of area inhomogeneities as noise in the slip velocity, then it is most natural to use $V_{n}$ as the basis functions for the tangential slip velocity, expressed as\n\n$$\nu_{\\theta}\u2062(\\theta)=\\sumn=1\u221eu_{n}\u2062V_{n}\u2062(\\theta),\n$$\n\nwhere $V_{n}\u2062(0)=V_{n}\u2062(\\pi)=0$, guaranteeing that the slip velocity vanishes at the anterior and posterior poles (Short et al., 2006). Accurate experimental measurements of the azimuthal velocity field of Volvox (Drescher et al., 2010b) show that it is well-captured by that lowest mode, leading to a modest anterior-posterior asymmetry. From the orthogonality relation for the $V_{n}$,\n\n$$\n\\intd\\thetasin\u2061\\thetaV_{1}(\\theta)V_{n}(\\theta)=\\frac{2n(n+1)}{2n+1}\\delta_{1n},\n$$\n\nwe see immediately that the contributions from all modes $n>1$ vanish identically, and thus the swimming speed is given identically by the amplitude of the lowest mode $V_{1}\u2062(\\theta)=sin\u2061\\theta$,\n\n$$\nU=\\frac{2}{3}\u2062u_{1}.\n$$\n\nThus, within the squirmer model, motility is essentially insensitive to area inhomogeneities. This result does not preclude effects of those higher modes, only that such effects will be on quantities other than the swimming speed, such as the nutrient uptake rate (Magar et al., 2003).\n\nIn the shear-stress, no-slip model, the velocity field in the region between the colony radius $R$ and the radius $R\u2062(1+\u03f5)$ at which the shear stress is applied is solved separately from that for $r>R(1+\u03f5)$ and the two flow fields are matched at $R\u2062(1+\u03f5)$ through boundary conditions of continuity in velocity and normal stress and the specified discontinuity in shear stress. Analogously to the expansion of the slip velocity in the squirmer model (7), noise in that discontinuity can be expressed by assuming that the coarse-grained shear force applied by the flagella has spatial variations, and can be expanded in the form\n\n$$\nf_{\\theta}\u2062(\\theta)=\\sumn=1\u221ef_{n}\u2062V_{n}\u2062(\\theta).\n$$\n\nThe swimming speed again depends only on the lowest-order mode in this expansion,\n\n$$\nU=\\frac{2\u2062\u03f5\u2062R}{3\u2062\\mu}\u2062f_{1},\n$$\n\nand we again have insensitivity of $U$ to inhomogeneities in the area per somatic cell.\n\n## Discussion\n\nIn this paper, we demonstrated that universal cellular packing geometries are an inevitable consequence of noisy multicellular assembly. We measured the distribution of Voronoi polytope sizes in both nascent and extant multicellular organisms, and showed that they are consistent with the k-gamma distribution, which arises via maximum entropy considerations. Using simulations, we demonstrated that k-gamma distributions arise in many different growth morphologies, and do so requiring only a relatively small amount of structural randomness. Further, we showed that the distribution of cell neighborhood sizes can be used to distinguish the effects of randomness from the effects of developmental patterning. Finally, we demonstrated that consistent packing statistics can lead to highly reproducible, and thus heritable, multicellular traits, such as group size in snowflake yeast. Altogether, these results indicate that entropic cell packing is a general organizing feature of multicellularity, applying to multicellular organisms with varying growth morphologies, connection topologies, and dimensionalities.\n\nOne of the strengths of the packing-based maximum entropy framework employed here is its simplicity. We have demonstrated that the distribution of cell neighborhood sizes can be predicted with high accuracy, in many different multicellular morphologies, from only the first two moments of the distribution. Deviations from maximum entropy predictions therefore encode important information about additional correlations that can arise via a variety of sources, such as developmental regulation or interactions with the environment. These additional correlations could be explored via, for example, higher order structures to the maximum entropy model (Schneidman et al., 2003). Relatedly, it would be interesting to extend our analysis to include topological information, which has recently been applied to theoretical and experimental systems (Skinner et al., 2021; Jeckel et al., 2021). Developing methods to incorporate these higher-order effects may prove especially useful when assessing the importance of random fluctuations in organisms with structures more complex than those studied here.\n\nThe effect of random noise has been an important area of research in developmental biology (Tsimring, 2014; Lander, 2011). During development, cellular growth, reproduction, differentiation, and patterning combine to form a multicellular organism. Random noise introduced at any stage in this process can result in phenotypic variability, which may affect an organism\u2019s fitness (Waddington, 1957). But while some multicellular traits exhibit high variability, others are tightly conserved, leading to a wide body of research addressing the origin of mechanisms underlying robustness and stability, and the nature of feedback mechanisms that must be present to manage the large number of stochastic fluctuations in gene expression and growth (Gregor et al., 2007; Haas et al., 2018; Hong et al., 2016; Sampathkumar, 2020; Deneke and Di Talia, 2018). In this context, our results demonstrate that random noise can itself lead to highly reproducible multicellular traits such as the cell packing distribution.\n\nOur observation that heritable properties can arise from random processes is reminiscent of the reproducible structures and phenomena generated by random noise in a wide range of physical (Shinbrot and Muzzio, 2001; Manoharan, 2015) and biological systems (Tsimring, 2014; Lander, 2011). While it may be surprising that the distribution of free space in snowflake yeast and Volvox follow the same k-gamma distributions despite the many differences between these organisms, this universality actually extends beyond multicellular organisms to non-living materials, such as those seen in granular materials and foams (Katgert and van Hecke, 2010; Varadan and Solomon, 2002; Aste and Di Matteo, 2008). This broad universality likely arises due to the simple requirements for application of the maximum entropy principle to packing; specifically, there must be a total volume, individual volumes cannot overlap, and volumes must be determined independently (subject to the total volume constraint). It is thus important to note that entropic packing is not necessarily adaptive; it can readily emerge as a consequence of random cellular reproduction or interactions. While entropic packing statistics may produce advantages in some cases, they could be neutral or detrimental in others.\n\nAn example of one possible advantage granted by entropic packing is the parent-offspring fidelity that arises from its ensemble statistics. Since both parents and their offspring are assembled through similar noisy processes, they achieve similar cell packing distributions. This statistical similarity therefore details at least one heritable multicellular trait that does not rely on genetically regulated multicellular development. Other multicellular traits that build on the cell packing distribution are similarly affected by this emergent process and could become heritable as well. Such parent-offspring heredity could play a crucial role in the evolutionary transition to multicellularity, providing a mechanism for nascent multicellular organisms to participate in the evolutionary process without first having to possess genetically regulated development. Over time, developmental innovation may arise via multicellular adaptation, modifying or replacing entropic cell packing as a mechanism of multicellular heredity. Consistent with this hypothesis, maximum entropy retains considerable predictive power in extant multicellular organisms such as Volvox, animal embryos (Alsous et al., 2018), and epithelial tissue monolayers (Atia et al., 2018), each of which have canalized development. There may be other examples of organisms with highly regulated development which pack cells according to maximum entropy predictions, and future work could address cell packing in, for example, animal embryos, brain tissue, and more. Finally, as fragmentation is a common mode of multicellular reproduction (Larson et al., 2020; Prakash et al., 2021; Angert, 2005; Keim et al., 2004; Koyama et al., 1977), fracture driven by maximum entropy packing statistics may be relevant to organisms other than snowflake yeast.\n\nThe broad distributions in cellular volumes we have found in two very different types of organisms, with two very different modes of reproduction and growth, suggest that noise in developmental geometry may be an inevitable consequence of almost any microscopic mechanism. In this sense, they may be just as unavoidable in biological contexts as thermal fluctuations are in systems that obey the rules of equilibrium statistical physics. As an example, we recall the \u2018flicker phenomenon\u2019 of erythrocytes, in which the red blood cell membrane exhibits stochastic motions around its equilibrium biconcave discoid shape. Thought for many years to be a consequence of specific biochemical processes associated with living systems, flickering was eventually shown by quantitative video microscopy (Brochard and Lennon, 1975) to be consistent with equilibrium thermal fluctuations of elastic biomembranes immersed in water. This was later confirmed by similar studies of shape fluctuations exhibited by large lipid vesicles (Schneider et al., 1984). The generalization of these considerations to homeostatic tissues with cell division, rearrangements and apoptosis has also been considered (Risler et al., 2015; Kalziqi et al., 2018). While such membrane systems may differ greatly in the specific values of their elastic modulus (and, indeed, of their microscopic membrane constituents), the viscosity of the surrounding fluid, and their physical size, the space-time correlation function of fluctuations about the equilibrium shape adopts a universal form in appropriately rescaled length and frequency variables.\n\nThese results on equilibrium fluctuations provide a conceptual precedent for the results reported here. A central issue that then arises from our results is how to connect any given stochastic biochemical growth process defined at the microscopic level to the more macroscopic probability distribution function observed for cellular volumes. Mathematically, this is the same question that arises in the theory of random walks, wherein a Langevin equation defined at the microscopic level leads, through suitable averaging, to a Fokker-Planck equation for the probability distribution function of displacements. Can the same procedure be implemented for growth laws?\n\n## Materials and methods\n\n### Yeast genotypes and growth morphology\n\n#### Snowflake yeast genotypes\n\nMulticellular yeast groups were constructed from initially unicellular Saccharomyces cerevisiae. Petite yeast groups (P-) were used in all experiments except those noted below. Snowflake yeast were engineered by replacing a functional copy of ace2 with a nonfunctional version as described in Ratcliff et al., 2015 (these modified genotypes will be referred to as either snowflakes or Ace2KO). Under daily selection for large size through settling in liquid media, groups can arise via a single mutation in the ace2 gene (Ratcliff et al., 2012; Ratcliff et al., 2015). When the ace2 gene is not expressed, the final stage of cell division is not completed, and mother-daughter cells remain attached at the chitinous bud site. Since all cells are attached directly to their mothers, snowflake groups form a fractal-like branched tree collective. To measure bud scar size, we used a unicellular strain of Y55 yeast; these measurements were only used to pick parameters for snowflake yeast simulations.\n\n#### Yeast growth morphology\n\nS. cerevisiae cells reproduce by budding, a type of asexual reproduction where a new cell extrudes from the surface of the parent cell. During budding, mother and daughter cells remain attached via a rigid chitinous bond; in unicellular yeast, chitinase will degrade this bond as the last step in cell division, releasing the daughter cell and leaving behind a \u2018bud scar\u2019 on the mother surface and a \u2018birth scar\u2019 defining the proximal hemisphere on the daughter\u2019s cell surface. In all experiments, we use yeast expressing bipolar budding patterns (Chant and Pringle, 1995). The bipolar budding pattern is characterized by bud sites that typically do not form along the equator of the cell. Usually, the first daughter buds near the distal pole. Subsequent budding sites are typically positioned along a budding ring defined by a polar angle $\\theta$ ( Figure 1\u2014figure supplement 1). Some buds will \u2018backbud\u2019 toward the mother cell (i.e. on the proximal end of the cell), but most buds are placed on the distal side. By contrast, the azimuthal positions of all buds appears to be randomly distributed.\n\n#### Growth conditions\n\nAll experiments were performed on yeast grown for approximately 24 hr in 10 mL of yeast peptone dextrose (YPD, 10 g/L yeast extract, 20 g/L peptone, and 20 g/L dextrose) liquid medium at 30 C, and shaken at 250 rpm in a Symphony Incubating Orbital Shaker model 3,500I. All cultures were therefore in the stationary phase of growth at the time of experiments.\n\n### Scanning electron microscopy to measure group structure\n\nSince yeast cells have thick cell walls that limit the effectiveness of optical microscopy, we used a Zeiss Sigma VP 3View scanning electron microscope (SEM) equipped with a Gatan 3View SBF microtome installed inside a Gemini SEM column to obtain high resolution images of the internal structure of snowflake yeast groups and locate the positions of all cells. All SEM images were obtained in collaboration with the University of Illinois\u2019s Materials Research Laboratory at the Grainger College of Engineering. Snowflake yeast clusters were grown overnight in YPD media, then fixed, stained with osmium tetroxide, and embedded in resin in an eppendorf tube. A cube of resin $200\u2062\u00b5\u2062m$ x $200\u2062\u00b5\u2062m$ x $200\u2062\u00b5\u2062m$ (with an isotropic distribution of yeast clusters) was cut out of the resin block for imaging. The top surface of the cube was scanned by the SEM to acquire an image with resolution $50\u2062nm$ per pixel (4000 \u00d7 4000 pixels). Then, a microtome shaved a 50-nm-thick layer from the top of the specimen, and the new top surface was scanned. This process was repeated until 4000 images were obtained so that the data cube had equal resolution in $x,y,z$ dimensions.\n\nCustom image analysis scripts were written for the SEM datasets. First, a local adaptive threshold was used to binarize the image. A distance transform was used to identify the center of each cell slice in a particular 2d image. A watershed algorithm was then seeded with the cell slice centers, followed by a particle tracking algorithm to label cells across image slices. After labeling, the boundary for each cell was found, resulting in a point cloud of the exterior of each cell. Each cell was then fitted with an ellipsoid with nine fit parameters: $(x_{0},y_{0},z_{0})$ cell center, $(a,b,c)$ cell radii, and $(\\theta,\\phi,\u03c8)$ for cell orientation. The net rotation matrix $R$ was then found, where each column of $R$ corresponds to the direction vector of one principal axis of the ellipsoid. We consider the radii of the principal axes $(a,b,c)$ to be part of a diagonal scaling matrix $S$ which sets the ellipsoid size. Since the SEM images only capture the cell cytoplasm, each principal axis was increased in size by an additional $100\u2062nm$ to account for the cell wall during visualization. Last, although there is no possible 3d 3 \u00d7 3 translation matrix, a 4 \u00d7 4 translation matrix $T$ can capture the position of the cell center $(x_{0},y_{0},z_{0})$. Adding one additional column and row to the matrices $R$ and $S$ with the diagonal element being 1 and all other elements being 0 then means that a unit sphere centered at the origin can be mapped to any specific cell by a surface matrix $M=T\u2062R\u2062S$, and furthermore any point on the cell\u2019s surface can be mapped back to the unit sphere by the inverse of $M$. Then, the surface matrices are the only information that must be stored. From this dataset, 20 clusters of $105\\pm51$ cells in each cluster were identified along with their intercellular mother-daughter chitin bonds. We chose to stop at $N=20$ clusters due to the expensive nature of hand-identifying mother-daughter bonds, and since $N=20$ clusters gave over 2000 measurements of single cells in the clusters. In following experiments with different organisms and in following simulations of different growth morphologies, we always made at least as many measurements as for these experiments of snowflake yeast.\n\n#### Petite yeast cell size and shape\n\nWe measured cellular volumes from SEM images by ellipsoid fits. The average cellular volume of petite yeast was $v_{c}=17.44\u2062\u00b5\u2062m^{3}\\pm7.33\u2062\u00b5\u2062m^{3}$. This measurement was used in our Voronoi distribution derivations. We measured the mean cellular aspect ratio to be $\\alpha\u2261a/b=1.28\\pm0.20$.\n\n#### Bud scar size\n\nWe next measured the typical size of bud scars on the surface of Y55 yeast cells. Single cells were stained with calcafluor to highlight the chitinous bud scars (Figure 1\u2014figure supplement 1). Confocal $z$-stacks were obtained on a Nikon A1R confocal microscope equipped with a 40\u00d7 oil immersion objective. These images were visualized using the image processing software FIJI, and the 3d volume viewer plugin. To track the location and size of bud scars, a custom MatLab script was written to map the strongest calcafluor signals, since calcafluor makes bud scars brighter than other portions of the cell wall. Brightness isosurfaces then isolated the bud scars from the cell wall. Next, the isosurface points were rotated to the $x-y$ plane by finding its principal components in a principal component analysis. The rotated surface points were then fit with an ellipse, returning the major and minor axes. The average of the major and minor axes returned an average interior bud scar diameter of $1.2\u2062\u00b5\u2062m$. This value was later used in simulations of yeast groups.\n\n#### Bud scar locations\n\nWe measured bud scar positional distributions for petite yeast Ace2KO. Since the SEM does not image chitinous bud scars, we approximated bud scar positions as the closest point on a mother cell\u2019s surface to the corresponding daughter cell\u2019s proximal pole. We recorded 1990 bud scar positions in polar coordinates, as defined in Figure 1\u2014figure supplement 1. There is a clearly defined polar angle for the budding ring, while the azimuthal angle is uniformly distributed. The mean and standard deviations of the two angular coordinates were $\\theta=42%\\pm23%$, and $\\phi=180%\\pm104%$.\n\n### Imaging Volvox\n\n#### Cultivation and selective plane illumination microscopy\n\nThe V. carteri f. nagariensis strain HK10 (UTEX 1885) was obtained from the Culture Collection of Algae at the University of Texas at Austin and cultured as previously described (Brumley et al., 2014). To visualise somatic cells, V. carteri spheroids were embedded in 1% low-melting-point agarose, suspended in liquid medium and imaged using a custom-built Selective Plane Illumination Microscope (Haas et al., 2018). Each somatic cell is mostly filled with a single chloroplast. Chlorophyll autofluorescence was excited at $\\lambda=561\u2062nm$ and detected at $\\lambda=570\u2062nm$. To increase the accuracy with which we identify somatic cell positions, $z$-stacks of six spheroids were acquired from three different angles (0, 120, 240 degrees) and fused as described in the following paragraph. We used data from $N=6$ different Volvox organisms, which gave us $\u223c6000$ measurements of single-cell positions. This gave us more data than what we measured for snowflake yeast clusters.\n\n#### Registration of cell positions\n\nPositions of cells were registered based on fluorescence intensity using custom Matlab scripts. This was achieved by carrying out a 2D convolution of each frame of the $z$-stack with a basic kernel modeling the appearance of a cell \u2013 this was set to be an asymmetric double sigmoidal function. Cell segmentation was corrected manually. $Z$-stacks taken from different angles were roughly aligned using Fiji and the Matlab function fminsearch to minimise distances between the reproductive cells. This alignment was used as starting point for alignment of the somatic cells again using fminsearch. The positions of somatic cells were merged and averaged.\n\n### Voronoi tessellation\n\nWe used a Voronoi tessellation algorithm to measure the distribution of cell neighborhood sizes in groups. We computed both 3D and 2D Voronoi tessellations.\n\n#### 3D voronoi tessellations\n\nFirst, we computed 3D Voronoi tessellations within a defined boundary. These tessellations were performed for experimental snowflake yeast data from the SEM and simulations of 3D groups using the open-source Voronoi code Voro++ (Rycroft, 2009), wrapped in a custom MatLab script. Voro ++ takes as input the Cartesian coordinates of the cell centers and the boundary of the shape within which to compute the tessellation. Without a boundary, all of the Voronoi cells located on the periphery would extend to infinity. We started the tessellation process by setting the input boundary to be a sphere; the Voronoi algorithm tessellated space within the spherical boundary. Then, pieces of the sphere were pared away until a Voronoi tessellation within the group\u2019s convex hull was obtained, as described in the next paragraph.\n\nThe boundary sphere was centered on the cluster\u2019s center of mass. Its radius was the distance to the farthest cell center plus an additional $5\u2062\u00b5\u2062m$. Upon tessellation within the sphere, each Voronoi polyhedron is defined by Cartesian vertices $r_{j}$. We group these preliminary vertices by the cells to which they correspond, so that $Q_{i}={r_{1},r_{2},...,r_{m}}$ is a list of the $m$ vertices corresponding to cell $i\\in[1,N]$, $N$ being the total number of cells in the organism. We next computed the cluster\u2019s convex hull, which is the smallest convex polyhedron that contains all cell centers. We then extended the vertices of the convex hull by $3\u2062\u00b5\u2062m$ outwards from the cluster center of mass so the boundary contained the entirety of each cell. This new boundary polyhedron, whose vertices are labeled $B$, defines the cluster boundary. We then found the intersection polyhedron, $Z_{i}=Q_{i}\u2229B$ by taking the union of the dual of their vertices. This process thereby trims all Voronoi polyhedra to lie exclusively within the cluster\u2019s convex hull. The polyhedra $Z_{i}$ were the final Voronoi polyhedra used for the remaining data analysis.\n\n#### Voronoi tessellation on a sphere\n\nFor Voronoi tessellations of cells on the surface of simulated spheres (see Figure 3 and Figure 4 of the main text), we used a built-in Matlab function called \u2018voronoisphere\u2019 for Voronoi tessellations on a sphere.\n\n#### Voronoi tessellation on non-spherical surfaces\n\nWe also computed 2D Voronoi tessellations on surfaces embedded in 3D space using custom-written MatLab functions. This approach was used for Volvox experimental data. Performing this computation with Volvox experiments presented a challenge as Volvox are roughly spherical, but with varying local curvature. It was therefore necessary to compute a Voronoi tessellation on an arbitrary surface.\n\nThe first step toward generating the proper Voronoi tessellation was computing the Delaunay triangulation of the cells on the surface (the Voronoi tessellation is the dual of the Delaunay triangulation). First, we found the Cartesian coordinates of each somatic cell (as described above), and normalized these coordinates so that all cell centers laid on the unit sphere. Then, a Delaunay triangulation of the normalized points was calculated. Edges of the triangulation that cut through the unit sphere were eliminated, and edges that laid along the sphere surface were kept. This Delaunay triangulation therefore mapped out the connectivity of the somatic cells. We then projected that triangulation onto the lumpy surface. The Voronoi polygon vertices are the circumcenters of each Delaunay triangle. Further, any edge shared between two Delaunay triangles denotes an edge shared between the Voronoi vertices associated with those two triangles. We found all edges connecting the Voronoi vertices. Next, connected edges were flattened so that each Voronoi cell was a 2D polygon. This step eliminates the curvature associated with the surface of the organism. However, we found that the distribution of Voronoi areas was unaffected by taking either the planar approximation or by approximating the area by taking the local curvature into account \u2013 the average difference between Voronoi areas when approximating the surface as a plane $A_{p}$ vs. approximating the surface as a spherical cap $A_{s}$ was found to be $\u27e8\\frac{A_{p}-A_{s}}{A_{p}}\u27e9=0.001$, measured for one organism. Therefore, we used the flattened Voronoi polygons as the final tessellation shapes.\n\n### Data analysis of voronoi measurements\n\nIn all cases, the output of the Voronoi algorithm is a list of Voronoi polytope sizes: in 3D, the measurements were the final Voronoi polyhedron volumes, while in 2D the measurements were polygon areas. Histograms of these sizes were generated to compare with the k-gamma distribution. As we observe cells in direct contact with each other, the minimum size of a Voronoi volume or area was defined by single cell measurements. For petite yeast cells, the mean cell size was calculated from the ellipsoid fits described above to be $v_{c}=17.44\u2062\u00b5\u2062m^{3}\\pm7.33\u2062\u00b5\u2062m^{3}$. In simulations, the minimum volume was set by the defined cell radius; in bidisperse simulations, the minimum size was set by the volume of the smallest cells.\n\nWe then calculated the expected maximum entropy distribution using only the mean and variance of the observed Voronoi volumes, $v\u00af$ and $\\sigma^{2}$, as inputs. Together with the minimum volume vc, these measurements define $k=(v\u00af-v_{c})^{2}/\\sigma^{2}$, a dimensionless shape parameter (Aste and Di Matteo, 2008). The maximum entropy distribution was therefore not fit to the data using, for example, a least squares method, but inferred from the first two moments of the distribution.\n\n#### Volvox\n\nAlong the surface of the Volvox organisms, there are gaps between some of the somatic cells due to the gonidia that lie beneath, but near the surface of the organism. These gonidia effectively occupy space on the surface, making it inaccessible to somatic cells. We excluded all Voronoi cells that intersected these gonidia gaps. We identified gaps in the soma cells by flagging Delaunay triangles with exceptionally high aspect ratios. Any Voronoi polygons that intersect the flagged Delaunay triangles were then flagged and later excluded from the dataset. The polygons were generally spatially clustered, indicating that the gonidial gaps were being correctly isolated. Roughly 90 polygons were excluded from each organism.\n\nIn Volvox organisms, each cell is surrounded by extracellular matrix, so cells do not contact each other. Furthermore, each of the six organisms studied varied in diameter (standard deviation in diameter was $28.2\u2062\u00b5\u2062m$), yet all contained roughly the same number of somatic cells, leading to systematic differences in average surface area per cell across the organisms. Quantitatively, the coefficient of variation of the diameter of the groups was $C\u2062V_{D}=0.05$, while the coefficient of variation in the number of cells in each group was roughly 10 times smaller, $C\u2062V_{N}=0.006$. To counter the systematic size differences between organisms, we converted the Voronoi polygon areas into solid angles by dividing by the total surface area of each organism, $\u03a9_{i}=A_{i}/S$; we then grouped all six organisms together into one histogram. We allowed the minimum solid angle, used in the k-gamma equation, to be a fit parameter in a least squares minimization procedure. There was one outlier cell with solid angle $\u03a9=0.0048$ steradians; the next two smallest cells had solid angles 0.0068 and 0.0069 steradians. We removed the outlier; the least squares minimization procedure then fit a minimum solid angle $\u03a9_{c}=0.0070$ steradians. We used this value for all further calculations. Just as in the 3D case, the mean and variance of the solid angle were measured to set the expected maximum entropy distribution.\n\n### Goodness-of-fit analysis\n\nTo test how well the k-gamma distribution performed as a predictive distribution, we systematically compared its performance to three other distributions: the normal (Gaussian) distribution, the log-normal distribution, and the beta prime distribution. We used two of our datasets for this comparison: experimental values of Voronoi volumes for snowflake yeast, and simulations of snowflake yeast (which provided us with more datapoints for comparison). First, we used the measured mean $V\u00af$ and standard deviation $s$ of the datasets to estimate each distribution\u2019s parameters. In Table 1 are the two parameters of each distribution and how they are calculated from the measured mean and variance of the dataset.\n\n**Table 1.**\n Model parameters for distribution comparisons.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>K-gamma (\u03bc,k)</td>\n      <td>\u03bc=V\u00af</td>\n      <td>k=(V\u00af-vc)2/s2</td>\n    </tr>\n    <tr>\n      <td>Normal (\u03bc,\u03c3)</td>\n      <td>\u03bc=V\u00af</td>\n      <td>\u03c3=s</td>\n    </tr>\n    <tr>\n      <td>Log-normal (\u03bc,\u03c3)</td>\n      <td>\u03bc=exp\u2061(V\u00af+s2/2)</td>\n      <td>\u03c3=(exp\u2061(s2)-1)\u2062exp\u2061(2\u2062V\u00af+s2)</td>\n    </tr>\n    <tr>\n      <td>Beta prime (\u03b1,\u03b2)</td>\n      <td>\u03b1=V\u00af\u2062(V\u00af+V\u00af2+s2)/s2</td>\n      <td>\u03b2=(V\u00af+V\u00af2+2\u2062s2)/s2</td>\n    </tr>\n  </tbody>\n</table>\n\nThe three distributions that we used to compare to the k-gamma distribution were chosen based upon their properties. For instance, all three comparison distributions have two parameters; also, all three chosen distributions have either semi-infinite or infinite domain. We chose the Normal distribution because it is the centrally-limiting distribution for a process with summative random errors. We chose the Log-normal distribution because it is the centrally-limiting distribution for a process with multiplicative random errors. Last, we chose the beta prime distribution arbitrarily; the goal was to make comparisons to a distribution which we have no reason to believe would accurately describe this dataset.\n\nTo systematically compare the distributions, we sampled $N$ datapoints, with replacement, from the original datasets. We varied $N$ to test the effect of finite datasets. Each time we sub-sampled the dataset, we calculated the mean and variance of the new data sample, then used those measured values to estimate the parameters of the four distributions. We then recorded the root-mean-square residual for all four cases. We plotted the root-mean-square residual for each distribution as a function of the data sample size, $N$, in Figure 2. We observed that the k-gamma distribution outperformed the other distributions at every sample size.\n\nNext, we used the four distributions to predict the skewness of the simulation data. We empirically determined the first two moments of the dataset: we take these to be the first two moments for each of our distributions. Then, we used the first two moments to predict the skewness, which is related to the third moment of the distribution. We then compared this value to experimentally-measured skewness, finding that the k-gamma distribution estimated the experimentally observed skewness with only a 7% error; the other three distributions estimated the skewness with percent errors of $\u2212100%,96%,and174%$ for the normal, log-normal, and beta-prime distributions, respectively (Figure 2).\n\nAs an additional test, we used least-squares fitting to test the performance of the k-gamma distribution compared to the other three distributions for simulation data. In this case, we let the least-squares fitting algorithm find the best parameters to fit each distribution; then, we compared the least-squares-achieved mean and standard deviation of the fit distribution to the measured mean and standard deviation of the population. We found that the k-gamma fit reproduced the closest values to the measured mean and standard deviation (Figure 2).\n\n#### Cluster size distribution measurements\n\nCluster sizes were measured using a Beckman Coulter Multisizer 4e particle analyzer in the Cellular Analysis and Cytometry Core of the Shared User Management System located at the Georgia Institute of Technology. Petite Ace2KO clusters were taken from steady state concentration in YPD and then submerged in electrolytic fluid and passed through a $100\u2062\u00b5\u2062m$ aperture tube. The volume measured on the multisizer corresponds to the volume of electrolyte displaced by the cluster. The number of cells in each cluster was then estimated by $N=V/v_{c}$, where $V$ is the volume of organism measured by the Coulter Counter, and vc is the average cell volume from SEM measurements, $v_{c}=17.44\u2062\u00b5\u2062m^{3}$.\n\n#### Cumulative distribution function statistics\n\nTo quantify goodness-of-fit for predicted maximum entropy distributions, we compared the predicated cumulative distribution function (CDF), $F\u2062(x)$, to the empirical CDF, $F_{i}$, using P-P plots. Exactly predicted points will lie on the line $y=x$ in these plots. We measured the root-mean-square residual from the line\n\n$$\nr_{RMS}=\\sqrt{\u27e8(F_{i}\u2212F(x))^{2}\u27e9}\n$$\n\n### Measurements of \u03a86 in V. carteri\n\nFrom the light sheet images of Volvox, we obtained the Cartesian coordinates of each somatic cell. From Delaunay triangulation, we then obtained a list of every cell\u2019s closest neighbors. Each cell and its $N\u2062N$ nearest neighbors did not generally lie in a plane due to local curvature of the Volvox surface. We therefore calculated in-plane and out-of-plane components using principal component analysis. The in-plane components were then used to write the positions of each nearest neighbor in polar coordinates. The formula for calculating $\u03a8_{6}$ is\n\n$$\n\u03a8_{6}=|\u27e8\\frac{1}{N\u2062N}\u2062\\sumj=1N\u2062Ne^{6\u2062i\u2062\\theta_{j}}\u27e9|\n$$\n\nwhere $\\theta_{j}$ defines the polar angle coordinates around the cell of interest and $\u27e8\u2026\u27e9$ denotes averaging over all cells. We calculated $\u03a8_{6}$ separately for each of six different organisms; we report $\u03a8_{6}=0.03\\pm0.01$.\n\n#### Correlation of voronoi areas\n\nIn Volvox organisms, we calculated the spatial correlation of polygon areas. First, we extracted the list of cell neighbors from the Delaunay triangulation of the organism surface. Nearest neighbors were designated as living a network distance of 1 away from a cell of interest; next nearest neighbors live a network distance of 2 away from the cell of interest, etc. The number of neighbors a network distance of $Q$ away is then $J\u2062(Q)$, which is empirically determined. The network correlation function is then\n\n$$\nC\u2062(Q)=\\frac{\u27e8(\u03a9-\u27e8\u03a9\u27e9)\u2062Y_{Q}\u27e9}{\\sigma_{\u03a9}\u2062\\sigma_{Y_{Q}}}\n$$\n\nwhere $Y_{Q}=J\u2062(Q)^{-1}\u2062\\sum_{j}(\u03a9_{j}-\u27e8\u03a9\u27e9)$ is the average deviation of the solid angle of a given polygon\u2019s neighbors from the mean. The standard deviation of the solid angle across the population is $\\sigma_{\u03a9}$, and $\\sigma_{Y_{Q}}$ is the standard deviation of $Y_{Q}$ across the population.\n\n### Simulation methods\n\n#### Simulations of snowflake yeast groups\n\nSimulations of snowflake yeast groups were adapted from previously published work by Jacobeen et al., 2018a; Jacobeen et al., 2018b that found simulations of snowflake yeast growth morphology accurately replicated experimentally measured cellular packing fractions and average group sizes. In the present work, cells were modeled as prolate ellipsoids of revolution with a semi-major axis $a=2.88\u2062\u00b5\u2062m$ and semi-minor axis $b=2.29\u2062\u00b5\u2062m$, characterized by the aspect ratio $\\alpha\u2261a/b=1.26$. Each generation, every cell attempted to reproduce; however, if new cells closely overlapped with existing cells (i.e. their bud scars are closer than $1.2\u2062\u00b5\u2062m$), they were eliminated. Setting the number of generations (for example, 7) sets the maximum possible number of cells in the group at the end of the simulation ($2^{7}=128$), and roughly sets the expected number of cells in the group ($\u223c100$). In our simulations, cells were 80% likely to bud first from the distal pole (i.e. $\\theta=0\\pm10$ degrees). Subsequent cells budded at a polar angle $\\theta$, and with an azimuthal angle randomly chosen from a uniform distribution $\\phi\\in[0,2\u2062\\pi]$; in other words, after the first bud, cells generally appeared along a \u2018budding ring\u2019. There was a 20% chance that the first bud would appear along this budding ring instead of exactly at the pole. After 3 bud scars, there was a 50% chance that new cells bud on the proximal side ($\\pi-\\theta$) instead of the distal side. The orientation of the new cell is determined by the surface normal to the mother cell at the position of the bud site; the major axis of the new cell lies along the surface normal.\n\nTo compare exhaustively the distribution of Voronoi volumes between simulations and the k-gamma distribution, we simulated $9,100$ clusters. In each simulation, clusters were allowed to grow for 7 generations of cell division, corresponding to an average of $94.2\\pm10.9$ cells per cluster. The budding ring was defined by the polar angle $\\theta=45%$, a close approximation to the experimentally measured mean polar angle. These simulations did not include intercellular forces. The cell centers were recorded and then Voronoi tessellations were made within each cluster\u2019s convex hull.\n\n#### Simulations of V. carteri\n\nWe simulated 10 Volvox-like groups with $N=1000$ cells confined to the surface of a sphere. Cells were placed on the surface of a sphere of unit radius by randomly selecting polar and azimuthal coordinates in a Poisson point process. The process proceeds as follows: each new cell was randomly placed, and its distance from all other cells was calculated. If the new cell is within a threshold distance $d$ from any existing cell, it was removed and a new cell was placed elsewhere on the spherical surface. This process was iterated until all 1000 cells were placed. We chose a minimum separation distance of $d=0.088$, which allowed reasonably rapid convergence. We then calculated the Voronoi tessellation and the correlation function as described above. The $N=10$ groups, each with 1000 cells, returned 10000 single cell measurements.\n\n#### Simulations of two additional growth morphologies\n\nWe next sought to model two additional classes of growth morphologies: sticky aggregates and cells contained within a maternal membrane. In both simulations, cells were modeled as spheres with unit radius.\n\n#### Aggregative groups\n\nFirst, we considered a multicellular model of sticky aggregates, mimicking group formation in, for example, flocculating yeast and bacterial aggregates. In our simulations, groups were grown from a single cell. New spherical daughters appeared at a polar angle $\\theta$ and azimuthal angle $\\phi$. Within each step, there was stochasticity in the budding location: cells would appear at $\\theta=\\theta_{0}\\pm15%$. The azimuthal angle was always drawn from a uniform distribution on the interval $[0%,360%]$. We simulated $N=50$ aggregative groups, each with 64 cells, for a total of gt3000 measurements of single-cell volume.\n\nCells interacted with both steric and attractive interactions in overdamped dynamics. Steric interactions were modeled through a harmonic potential when two cells overlapped, with a cutoff once cells were no longer overlapping. That is, for two cells $i$ and $j$ (radii $R_{i}$ and $R_{j}$) separated by the vector $r_{ij}=r_{j}\u2212r_{i}$, the steric force acting on cell $i$ from cell $j$ is\n\n$$\nF_{ij}={0|r_{ij}|>(R_{i}+R_{j})\u03ba_{s}(|r_{ij}|\u2212(R_{i}+R_{j}))r^_{ij}|r_{ij}|\\leq(R_{i}+R_{j})\n$$\n\nAttractive interactions (i.e. sticky, aggregative bonds) were also modeled through a harmonic potential, but these interactions had both a lower bound and upper bound cutoff.\n\n$$\nG_{ij}={0|r_{ij}|>2(R_{i}+R_{j})\u2212\u03ba_{a}(|r_{ij}|\u2212a(R_{i}+R_{j}))r^_{ij}(R_{i}+R_{j})\\leq|r_{ij}|\\leq2(R_{i}+R_{j})0|r_{ij}|<(R_{i}+R_{j}),\n$$\n\nwhere $a$ sets the location of the attractive well minimum. We used $a=0.9$, so that the attractive interactions allow a small amount of cell overlap.\n\n#### Size polydispersity\n\nIn simulations in which we introduced size polydispersity, cells were allowed to reproduce into two separate sizes, $R_{1}=1$ and $R_{2}=2$. The probability of budding cells of the same size as the mother cell is denoted $\u03be$. When $\u03be=1$, the mother cell always produces cells of the same size, while when $\u03be=0.5$, there is a 50% chance that the mother cell produces a cell of size R1 or R2, independent of the radius of the mother. Simulations were seeded with a pair of contacting cells, one each of the two radii. The simulation then proceeded with subsequent rounds of cell division and mechanical relaxation. We varied the polydispersity parameter $\u03be$ in even increments from $\u03be=0.5$ to $\u03be=1.0$ for a total of 6 different simulations. In each simulation, we simulated $N=50$ organisms, each with 64 cells, for a total of 3200 cells per simulation, and almost 20,000 cells total.\n\n#### Groups confined within a membrane\n\nIn another common mode of group formation, cells divide repeatedly within a confining membrane. This type of group formation has been observed in experimentally-evolved multicellular algae derived from unicellular Chlamydomonas reinhardtii (Herron et al., 2019), and is reminiscent of both baeocyte production in Stanieria bacteria (Angert, 2005), and neoproterozoic embryo fossils (Xiao et al., 1998). In a simulation model, we adopted the essential components of this class of growth: groups grow from a single spherical cell, cells divide stochastically, and cells interact sterically with both a maternal cell wall and each other. Typically, palintomic cell division occurs rapidly, meaning that the packing fraction remains the same within the maternal cell wall. We simulated this by increasing the radius of the cell membrane after each cell division, but before allowing any mechanical relaxations.\n\nSteric forces between a cell and the maternal cell wall were modeled as being proportional to the non-overlapping volume of the cell and the maternal cell wall. In other words, if a cell is not contacting the membrane, there is no force acting on it. However, if the cell is contacting the membrane, the force is proportional to how much of the cell volume lies outside the membrane. Each cell was assigned volume $v_{c}=4/3*p\u2062i$. The overlapping volume of the cell and the membrane is labeled vi. The force the cell experiences from the membrane is then\n\n$$\nF_{i}=\u03ba_{m}(v_{c}\u2212v_{i})r^_{i},\n$$\n\nwhere $r^_{i}$ is a unit vector pointing to the center of the maternal membrane. Additionally, steric interactions between cells were calculated as described above for aggregative groups.\n\nWe simulated $N=200$ groups growing in a confining membrane, each with 64 cells in the group, for a total of 12800 measurements of single cells.\n\n#### Groups confined to a spherical surface\n\nSome groups form by arranging cells around a central core of extracellular matrix (ECM). To simulate such groups, we modeled a sphere of ECM with cells arranged randomly along the surface. Cell positions were chosen by selecting a position in spherical coordinates from uniform polar $\\theta\\in[0,\\pi]$ and uniform azimuthal $\\phi\\in[0,2\u2062\\pi]$ distributions. The only rule implemented in cell placement is that no two cells can be located closer than two cell radii from one another. If a new cell is chosen to be located too close to any existing cells, it is eliminated and a new position is chosen. We iterated this process until $N$ cells were placed on the ECM surface.\n\nFirst, we chose to place $N=50$ cells on the surface. Therefore, the maximum cell radius allowing all 50 cells to be placed is 0.283 units (where the total sphere has unit radius). We chose the cell radius to be 0.1980 units, which allowed for reasonably rapid random placement of all 50 cells (other choices of cell radii demonstrate qualitatively similar results).\n\n#### Simulated cellular apoptosis\n\nIn simulations with apoptosis events, cell death occurred after group generation. Briefly, groups were generated by iterated generations of cell division starting from a single cell. After this process, one cell was chosen at random to die. Then, all cells within a localization radius $R$ were flagged. Of the flagged cells, 9 more were chosen at random to die. Therefore, small localization radii correspond to highly localized death events, where 10 juxtaposed cells may die together. As the localization radius increases, there are more flagged cells, and therefore more randomness in cell death. All other cells were unaffected by the cell death process. We simulated six different cell death radii. Each cell death radius simulation included 100 organisms simulated, each with 43 cells after the cell death process. Therefore, each cell death radius $R$ includes 4300 single cell measurements, for a total of 25,800 measurements.\n\n#### Tree-like groups with precisely defined cell placement/location\n\nWe also investigated groups with precisely defined growth patterns. The spherical cells were held together with fixed, chitin-like bonds. The first cell was placed at the origin. It then proceeded to bud 3 daughter cells, each of which also budded subsequent cells. The exact budding pattern is described below.\n\nDaughter cells were placed as follows. In spherical coordinates on the surface of the mother cell, the first daughter cell was placed at $(\\theta=0\\pm\u03b7$, $\u03d5=0\\pm\u03b7)$, the second at $(\\theta=90\\pm\u03b7$, $\u03d5=90\\pm\u03b7)$, and the third at $(\\theta=90\\pm\u03b7$, $\u03d5=270\\pm\u03b7)$, where $\u03b7$ is the strength of random noise added.\n\nThe first daughter cell\u2019s coordinate system was rotated $90%\\pm\u03b7$ around the $z$-axis from the mother cell; in other words, for the first daughter cell, $x\u2192x^{\u2032}$, $y\u2192y^{\u2032}$, and $z\u2192z^{\u2032}$, where $x^{\u2032}=R_{z}(\\pi/2+\u03b7)x$, $y^{\u2032}=R_{z}(\\pi/2+\u03b7)y$, and $z^{\u2032}=R_{z}(\\pi/2+\u03b7)z$, and $R_{z}$ is the rotation matrix around the $z$-axis. This daughter cell then proceeded to bud daughters in the exact same pattern as its mother; however, because its local coordinates were rotated, the budding positions were also rotated 90% with respect to the mother cell\u2019s buds. This process was iterated for five generations of cell division. When $\u03b7=0$, this corresponds to only three cells overlapping three other cells. The three overlapping cells were then removed.\n\nAfter each round of cell division, cells were allowed to relax mechanically in overdamped dynamics according to steric repulsive interactions and sticky, rigid bond interactions to their mother cell. The steric interactions were the same as described above. Fixed bond interactions were modeled as follows. When new cells appear, they incur a bud scar on the mother cell\u2019s surface and a birth scar on the daughter cell\u2019s surface. The positions $r_{bu}$ and $r_{bi}$ of the bud scar and the birth scar were recorded and tracked. The vector pointing from the bud scar (on the mother\u2019s surface) to the birth scar (on the daughter\u2019s surface) is $r=r_{bi}\u2212r_{bu}$. Then, the force acting on a cell from it\u2019s mother cell is\n\n$$\nF_{mother}=\u03ba(|r|\u22122)r^\n$$\n\nwhere $\u03ba$ was the chitin bond strength. In addition, cells experienced forces from all of their daughter buds (given by the same relationship and the same chitin bond strength). The initially seeded cell did not experience forces from a mother cell.\n\nFor $\u03b7=0$ (i.e. no noise), the distribution of Voronoi volumes was visually discontinuous, since cells could only access a finite number of local configurations. As the noise strength increased, the maximum entropy predictions were gradually recovered. We simulated 11 different noise strenths, each with 150 organisms, each with 28 different cells simulated, for a total of 46,800 measurements.\n",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "89d1522c-c18b-4b40-be36-c74f872a1d80",
+      "submission_id": "26c675b0-7c2d-4687-84aa-98adeccfd074",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Irene Giardina, https://ror.org/02be6w209 Universit\u00e0 Sapienza Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72707.sa0](https://doi.org/10.7554/eLife.72707.sa0)\n\nThis work uncovers a simple but far-reaching statistical principle that describes the geometry of cell packing in snowflake yeast and green algae. It draws on ideas from granular physics to offer new insight into universal rules of multicellular geometry that are otherwise easily obscured by the cell-scale idiosyncrasies of the different biological systems.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Irene Giardina, https://ror.org/02be6w209 Universit\u00e0 Sapienza Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72707.sa1](https://doi.org/10.7554/eLife.72707.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cellular organization in lab-evolved and extant multicellular species obeys a maximum entropy law\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBoth reviewers praise the quality of the paper and the relevance of the results. There are not, in their opinion, critical aspects in the manuscript to be further addressed. However, they suggest a number of revisions, which would improve the clarity and presentation of the work. In particular, both reviewers think that more discussion is needed of the maximum entropy model, e.g. whether additional information on higher order structures or morphology related correlations might lead to more effective statistical models. Referee 2 also advises for more contextualization of the results, and a wider discussion about their generality.\n\nBelow the full reports, the authors are kindly invited to take into account the referees' comments in a revised version.\n\nReviewer #1:\n\nThe manuscript by Day and colleagues investigates the geometry of cell packing in two multicellular eukaryotes (snowflake yeast and green algae). Using a combination of experiments and models drawn from statistical physics, they show that the distribution of cellular neighborhood volumes follows a simple universal form \u2013 a modified gamma function \u2013 that arises from a maximum entropy argument. Using simulations of different growth processes, they then show that these universal distributions are ubiquitous-arising, for example, even in correlated systems as long as there is a minimal level of noise. Finally, they show how these principles contribute to emergent evolutionary features (specifically group size distributions) in snowflake yeast, and use simple theoretical models to argue that fluctuations, while inherently stochastic, give rise to robust structures that do not depend sensitively on the microscopic and biological features of the system.\n\nThis paper is a beautiful example of how simple biophysical models can provide fundamental and unifying insight into complex biological systems. It is well written, addresses an important and timely topic, and raises intriguing questions about the balance between \"regulated\" biology and simple statistical physics as selective forces for evolution.\n\nI have several comments for the authors to consider, at their discretion. Overall, I really enjoyed this paper and learned a great deal from it.\n\n\u2013 The manuscript offers an interesting guiding principle that describes two considerably different biological systems. As the authors show in simulations, the principle is expected to hold over a broad range of conditions, but of course not universally (though even small levels of stochasticity broaden the range of applicability). I think the paper could be improved by expanding on the discussion of these limitations. In particular, it is not clear to me exactly how surprising it is to see \"good\" fits to a 2-parameter distribution of this sort (or more generally, what level of \"good\" we should expect of the fits in finite data sets like these). The authors address this issue in part by showing fits to other distributions, which is nice. But I wonder if it would be helpful to also include (or at least discuss) more systematic model selection. To be clear, I find the analysis quite convincing as is. But I am trying to get my head around the limitations, and in particular, to get a feel for how likely one is to see similar \"goodness of fit\" results using other distributions with a relatively small number of parameters.\n\n\u2013 Related to the previous point: one approach might be to construct a type of \"null\" model from the data, perhaps by systematically shuffling the data in some way and then bootstrapping to evaluate the likelihood of achieving fits of similar quality.\n\n\u2013 Have the authors considered trying to systematically quantify the impact of including higher-order structures in the max ent model? For example, one could perhaps use multi-information metrics (https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91.238701) to evaluate the extent to which higher-order features of the data are relevant / necessary; the idea is essentially to construct maximum entropy models with various levels of data complexity \"built in\" and then evaluate (perhaps with an info-theoretic style metric) the extent to which that complexity improved the model. Perhaps something similar has been done for granular materials to capture higher-order statistics of packing? I ask this primarily out of curiosity, not as a serious criticism of the current approach. A discussion of this point might add to the paper.\n\nReviewer #2:\n\nDay, Thomas C. et al. investigate the geometrical statistic of cell packing in multicellular organisms. Using a maximum entropy prediction originally developed in the study of granular materials, the authors show that the statistics of cell packing imposes a robust physical, entropic constraint on the geometrical arrangement of cells. Strikingly, the authors show that both snowflake yeast evolved under lab conditions and wild-type Volvox, which develop according to very different processes and have disparate overall morphology, both exhibit cell packing statistics consistent with the maximum entropy predictions. They then use simulations to show that entropic cellular packing can arise from various modes of multicellular development due to randomness in cell positions and that substantial deviations from entropic packing arise only in the case of low developmental noise (randomness) and strong correlations in cell positions. Finally, the authors use theory and measurements from experiments with yeast to show how maximum entropy statistics dictate size heritability in simple multicellular systems. Together, their results support the perhaps counterintuitive result that developmental randomness can actually underpin developmental reproducibility, in this case reproducibility in the geometry of cell packing in terms of the free space associated with individual cells within a multicellular structure. This work contributes the identification and new consideration of a fundamental physical constraint of particular relevance to the evolutionary origins of multicellularity and to multicellular morphogenesis in general.\n\nThe conclusions of this paper are well supported by the rigorous analysis of data and simulations.\n\nWork on the evolution of multicellularity has traditionally focused on molecular and genetic mechanisms, but because multicellular morphogenesis is an inherently physical process, biophysical studies provide an important complementary perspective. A particular strength of this paper is that insights are derived from theory that requires few, but specific, conditions be met in order to be satisfied, and therefore stands to apply generally to diverse multicellular systems, irrespective of many differences between them. The combination of empirical results from disparate multicellular systems in conjunction with simulations encompassing an expanded set of multicellular morphologies and growth processes compellingly support the generality of the insights. Beyond simply speculating about the implications of entropic packing on the function of multicellular systems, the authors demonstrate impact or lack thereof on aspects of form and function in multicellular yeast and Volvox. Importantly, simulations allowed the authors to investigate in detail the robustness of theoretical predictions in terms of deviations from theory arising from developmental processes. In addition to providing new insight, this work lays the foundation for the exciting possibility of inferring aspects of developmental dynamics and regulation simply by observing the statistics of cell packing in an organism, which could be of great use in comparative evo-devo studies where developmental processes are difficult or impossible to observe.\n\nWhile the work is very strong overall, there are a few caveats to consider, primarily concerning the simulations. Multicellularity takes many forms by many different processes among eukaryotes. While simulations do cover a range of different morphologies and developmental processes found in nature, factors not explicitly addressed such as constraint or patterning by secreted extracellular matrix, differences in cell shape, cell migration, and others can lead to different kinds of multicellular form. The extent to which potential correlations imposed by diverse morphologies might lead to deviations from theoretical maximum entropy predictions, and how robust those deviations might be to noise is not entirely clear. Additionally, the randomness strength in simulations from high to low, while reasonable, does not appear to be grounded in empirical characterization of randomness strength in developmental processes across biological systems. Ultimately, although they leave some uncertainty as to the generality of the results, these limitations do not contradict or significantly diminish the key claims of the paper.\n\nComments for the authors:\n\n1) The simulation results are compelling but left me with some questions. To what extent do the morphologies and processes investigated by simulations address the diverse forms of multicellularity encountered across eukaryotes? To what extent does the overall shape of the multicellular structure affect the cell packing distribution (e.g. multi-lobed structure as in Zoothamnium niveum, dichotomous branching as in Dinobryon, something with an undulating boundary)? Are there any examples of simple multicellular eukaryotes that might exhibit very strongly correlated cell positions? What is known about randomness strength or precision in developmental processes in biological systems, and if anything is known, how does this compare to values in simulations? Providing a bit more contextualization or motivation for specific choices in simulations could help address these questions and would support the generality of conclusions drawn from the simulations. Although I am convinced that the results hold for a broad range of multicellular architectures and do not think that the possible existence of a few edge cases contradicts the main conclusions of the work, it is not entirely clear to me that the effects of growth morphology, connection topology, and dimensionality have been accounted for.\n\n2) The sections titled \"Multicellular motility is robust to cellular area heterogeneity\" starting on p. 11 is slightly perplexing. It is certainly interested, and I see that it addresses a question that may arise from analysis of Volvox cell packing, but in its current form, I do not believe it contributes substantially to the key points of the paper. The introduction section seemed to imply that the results would demonstrate that fluctuations in cell packing may play a role in the evolution of multicellular systems, but as I understood them, the results suggest that fluctuations do not affect motility, at least implying that there should be little to no effect on any aspect of fitness related to motility. It is possible that there could be other aspects of organismal fitness related to cell packing, so while these results are consistent with cell packing fluctuations not necessarily impeding or constraining the evolution of multicellularity, they do not strongly support that conclusion. Perhaps contextualizing the results a bit more in terms of key points of the paper while reporting them and referring to them in the Discussion section might help the reader better appreciate their significance within the context of the paper overall.\n\n3) I might suggest removing or otherwise modifying the phrase \"highly-evolved\" (p.14) as its meaning is unclear, has connotations of evolutionary teleology, and clashes with the fact that all extant organisms share an evolutionary history of equal length. Maybe something such as \"organisms with highly-regulated development\" may be more appropriate.\n\n4) Is anything known about the source of correlated subregions of cells in Volvox? Do the authors have any ideas about this? Either way, it would be interesting to know and may warrant at least a small comment in the text.\n\n5) In the author list, SSH is missing an asterisk to denote corresponding authorship.\n\n6) An \"e\" is missing in \"surface\" in the caption for Figure 2B.\n\n7) I believe the dotted red line in Figure 4B should be a solid line to match those in panels A and C.\n",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "98a3b0e0-75f1-4d62-8aab-0389de63ebc5",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C1",
+      "claim": "The evolution of multicellularity occurred in at least 25 separate lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of multicellularity was transformative for life on Earth, occurring in at least 25 separate lineages (Grosberg and Strathmann, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Grosberg and Strathmann, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "3e7199d5-3fc3-4f19-b73a-566fee3ca216",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C2",
+      "claim": "Self-assembly is fundamentally subject to random noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-assembly, however, is fundamentally subject to random noise (Zeravcic and Brenner, 2014; Szavits-Nossan et al., 2014; Damavandi and Lubensky, 2019) that affects the final emergent structure (Michel and Yunker, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies on self-assembly and noise",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "2b293696-4687-4026-81d0-ec93f99231fa",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C3",
+      "claim": "The physiology of multicellular organisms can depend sensitively on the geometry of cellular packing.",
+      "claim_type": "EXPLICIT",
+      "source": "The physiology of multicellular organisms can depend sensitively on the geometry of cellular packing (Bi et al., 2015b; Drescher et al., 2016; Jacobeen et al., 2018b; Brunet et al., 2019; Schmideder et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "dfdec6bd-1563-42ce-a68c-c38afeb5611c",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C4",
+      "claim": "Extant multicellular organisms can either suppress or leverage variability in the process of reliably generating structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has shown that extant multicellular organisms can either suppress (Hong et al., 2016) or leverage (Haas et al., 2018) variability in the process of reliably generating structures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hong et al., 2016 and Haas et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "6b3b66f3-5e24-41a2-a72d-f7627b02a880",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C5",
+      "claim": "The free space associated with individual cells in snowflake yeast closely fits a modified gamma distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that despite large differences in cellular organization, the free space associated with individual cells in both organisms closely fits a modified gamma distribution, consistent with maximum entropy predictions originally developed for granular materials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "0fb51939-245f-4812-b7ad-87076aec7031",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C6",
+      "claim": "The free space associated with individual cells in Volvox carteri closely fits a modified gamma distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that despite large differences in cellular organization, the free space associated with individual cells in both organisms closely fits a modified gamma distribution, consistent with maximum entropy predictions originally developed for granular materials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "6d817557-18a8-4c68-9a90-ca3600b42400",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C7",
+      "claim": "Snowflake yeast grow via incomplete cytokinesis, generating branched structures in which mother-daughter cells remain attached by permanently bonded cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Snowflake yeast grow via incomplete cytokinesis, generating branched structures in which mother-daughter cells remain attached by permanently bonded cell walls (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by description and reference to Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "0bf5a74f-af12-4358-b360-052d4da36ae7",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C8",
+      "claim": "New buds appear on ellipsoidal snowflake yeast cells at a polar angle \u27e8\u03b8\u27e9=42\u00b0\u00b123\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "New buds appear on ellipsoidal cells at a polar angle \u27e8\u03b8\u27e9=42%\u00b123% and azimuthal angle \u03d5 that is randomly distributed (\u27e8\u03d5\u27e9=180%\u00b1104%, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "475aa8cb-d153-4f9b-8cf5-896a023f494b",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C9",
+      "claim": "The azimuthal angle of new buds on snowflake yeast cells is randomly distributed with \u27e8\u03d5\u27e9=180\u00b0\u00b1104\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "New buds appear on ellipsoidal cells at a polar angle \u27e8\u03b8\u27e9=42%\u00b123% and azimuthal angle \u03d5 that is randomly distributed (\u27e8\u03d5\u27e9=180%\u00b1104%, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "cf0cbfc0-8959-4549-bad9-fa9182ed5e6a",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C10",
+      "claim": "The distribution of Voronoi volumes in snowflake yeast closely matched the predicted k-gamma distribution with k=2.88.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of cellular Voronoi volumes closely matched the predicted k-gamma distribution (Figure 1C, k=2.88).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "a15b5ef8-f4bf-4e80-8144-3ed0831caa28",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C12",
+      "claim": "Volvox carteri embryos arise as a spherical cellular monolayer from palintomic cell divisions with incomplete cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "V. carteri embryos arise as a spherical cellular monolayer from palintomic cell divisions with incomplete cytokinesis, which leaves the cells attached via cytoplasmic bridges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of Volvox development based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "c1f843ff-42d5-41ea-810c-5c68f00cfade",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C13",
+      "claim": "Volvox carteri has approximately 1000 somatic cells embedded on the surface of a translucent sphere of extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "The approximately 1000 somatic cells remain embedded on the surface of a translucent sphere of extracellular matrix (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by description and Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "7cbfd6c9-5bc7-4f38-8dbd-72aa08a0c999",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C20",
+      "claim": "Volvox Voronoi solid angles are positively correlated at distances as large as Q=10.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Volvox Voronoi solid angles are positively correlated at distances as large as Q=10 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "926ec8ea-49e2-4177-ba0f-92e7a88f821f",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C26",
+      "claim": "Flocculating yeast groups exhibit a much larger coefficient of variation in size compared to snowflake yeast groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that flocculating yeast groups exhibit a much larger coefficient of variation in size compared to snowflake yeast groups (Pentz et al., 2020; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from Pentz et al., 2020 shown in Figure 5D",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "5b181528-0e34-45e8-940d-298382278de1",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C27",
+      "claim": "Within the squirmer model, motility is essentially insensitive to area inhomogeneities.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, within the squirmer model, motility is essentially insensitive to area inhomogeneities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from theoretical analysis of the squirmer model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "36762ab4-c9ef-4e9b-894e-f7b65cfa7b5a",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C30",
+      "claim": "The maximum entropy distribution is expected if cell neighborhood volumes are determined independently of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "This distribution is expected if cell neighborhood volumes are determined independently of each other (while still conforming to the total volume constraint).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical explanation of when maximum entropy predictions apply",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "19db48ce-3b6f-46dd-89d4-80bed48d4812",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C31",
+      "claim": "Correlations between the size of separate volumes will lead to deviations from maximum entropy predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, volumes must be set randomly; correlations between the size of separate volumes will lead to deviations from maximum entropy predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical explanation of when deviations from maximum entropy occur",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "4941ea14-b440-487e-8a73-0022b1716382",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C32",
+      "claim": "Maximum entropy statistics hold in granular materials despite strict force and torque balance conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, maximum entropy statistics hold in granular materials, despite the fact that they must obey strict force and torque balance conditions (Aste and Di Matteo, 2008; Snoeijer et al., 2004; Bi et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on granular materials",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "157ab9d1-0808-4804-bc51-a35a702c8449",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C34",
+      "claim": "The mean cellular aspect ratio of petite yeast was \u03b1\u2261a/b=1.28\u00b10.20.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the mean cellular aspect ratio to be \u03b1\u2261a/b=1.28\u00b10.20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from SEM images",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "4d31ed5c-ad49-498f-bca3-c4975f961d81",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C36",
+      "claim": "The local hexatic order in Volvox somatic cell arrangement is low.",
+      "claim_type": "EXPLICIT",
+      "source": "From a physics perspective, the local hexatic order in the somatic cell arrangement is low (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text with reference to Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "60c2acff-d9b3-4675-8edd-5f8087be4f57",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C37",
+      "claim": "\u03a86 for Volvox carteri somatic cells is 0.03\u00b10.01.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated \u03a86 separately for each of six different organisms; we report \u03a86=0.03\u00b10.01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "a818f66c-6ca3-4746-8f10-d779517e34c3",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C38",
+      "claim": "The size to which snowflake yeast grow depends strongly on the aspect ratio of its constituent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The size to which snowflake yeast grow depends strongly on the aspect ratio of its constituent cells; more elongated cells allow the growth of larger clusters before strain from cellular packing causes group fragmentation (Jacobeen et al., 2018a; Jacobeen et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jacobeen et al., 2018a and 2018b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "7d9d3ea3-b66f-4c8e-9d5d-85b9229d07d7",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C39",
+      "claim": "Group size in engineered yeast was more heritable than the underlying cellular trait of aspect ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, experiments with engineered yeast showed that this emergent multicellular trait, group size, was in fact more heritable than the underlying cellular trait upon which it was based (cellular aspect ratio), despite the fact that the mutations engineered in this system only affected cellular aspect ratio directly (Zamani-Dahaj et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zamani-Dahaj et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "5a6e9516-7554-4590-a2e7-2b0e93a3c506",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C40",
+      "claim": "Gamma-distributed cell neighborhood sizes are a general feature of multicellularity, arising from conserved statistics of cellular packing.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with simulations of diverse growth morphologies, these results suggest that gamma-distributed cell neighborhood sizes are a general feature of multicellularity, arising from conserved statistics of cellular packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental and simulation results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "d8cba312-7804-48f1-a375-04592532ad77",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C41",
+      "claim": "Entropic cellular packing ensures a degree of predictability despite noise, facilitating parent-offspring fidelity even in the absence of developmental regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'entropic' cellular packing ensures a degree of predictability despite noise, facilitating parent-offspring fidelity even in the absence of developmental regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a key finding",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "e1c5d376-04eb-4d46-bec0-01856674abb6",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C42",
+      "claim": "Volvox carteri first evolved multicellularity in the Triassic.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we used the green microalga Volvox carteri, a member of the volvocine algae that first evolved multicellularity in the Triassic (Starr, 1969; Herron et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Starr, 1969 and Herron et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "07e333bf-6289-4e53-ab1d-e48f006084ed",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C43",
+      "claim": "Six-fold coordination is the most frequent local arrangement of somatic cells in Volvox.",
+      "claim_type": "EXPLICIT",
+      "source": "While six-fold coordination is the most frequent local arrangement of somatic cells, the fact that the cells are embedded in a surface with spherical topology requires there to be 'defects' with differing coordination number (e.g. 5,7), and these are found interspersed around the spheroid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "0b24abcc-6e93-4336-aada-25aec31e2a17",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C44",
+      "claim": "Deviations from maximum entropy predictions encode important information about additional correlations that can arise via developmental regulation or interactions with the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Deviations from maximum entropy predictions therefore encode important information about additional correlations that can arise via a variety of sources, such as developmental regulation or interactions with the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the significance of deviations from predictions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "43df8fab-c367-4da7-b3be-6f6f8d5247f2",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C45",
+      "claim": "Random noise can lead to highly reproducible multicellular traits such as the cell packing distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, our results demonstrate that random noise can itself lead to highly reproducible multicellular traits such as the cell packing distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "e49f7e7a-a5eb-4a6b-bc23-ba10396e030c",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C46",
+      "claim": "Entropic packing is not necessarily adaptive; it can readily emerge as a consequence of random cellular reproduction or interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus important to note that entropic packing is not necessarily adaptive; it can readily emerge as a consequence of random cellular reproduction or interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the evolutionary implications of entropic packing",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "6fff0a30-e778-4492-b433-12ead3dfd712",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C47",
+      "claim": "Parent-offspring heredity arising from entropic packing could play a crucial role in the evolutionary transition to multicellularity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such parent-offspring heredity could play a crucial role in the evolutionary transition to multicellularity, providing a mechanism for nascent multicellular organisms to participate in the evolutionary process without first having to possess genetically regulated development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about evolutionary implications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "53d9f88d-c731-4977-8e5d-2dde869f764f",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C48",
+      "claim": "Fragmentation is a common mode of multicellular reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as fragmentation is a common mode of multicellular reproduction (Larson et al., 2020; Prakash et al., 2021; Angert, 2005; Keim et al., 2004; Koyama et al., 1977), fracture driven by maximum entropy packing statistics may be relevant to organisms other than snowflake yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "5a4cce9b-f647-46cf-a83a-8ac3f5117a44",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C49",
+      "claim": "Noise in developmental geometry may be an inevitable consequence of almost any microscopic mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The broad distributions in cellular volumes we have found in two very different types of organisms, with two very different modes of reproduction and growth, suggest that noise in developmental geometry may be an inevitable consequence of almost any microscopic mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation based on findings from two different organisms",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "9bf97525-b462-4ca5-8048-7e99e098b047",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C50",
+      "claim": "Measurements of the flow fields around Volvox colonies have shown that despite the discreteness of the flagella, the flow is remarkably smooth.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of the flow fields around micropipette-held (Short et al., 2006) and freely-swimming colonies (Drescher et al., 2010a) have shown that despite the discreteness of the flagella, the flow is remarkably smooth, albeit often displaying metachronal waves (Brumley et al., 2015), long-wavelength phase modulations of the beating pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Short et al., 2006, Drescher et al., 2010a, and Brumley et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "14845091-f4d0-4526-9684-7f42da738ad0",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C51",
+      "claim": "Volvox motility is largely unaffected by fluctuations in cell area.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show in fact that Volvox motility is largely unaffected by fluctuations in cell area, indicating that area heterogeneity may not be detrimental to the organism's swimming fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from theoretical analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "e7498df8-26c4-4d05-bc9d-65be37165c8b",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C52",
+      "claim": "Each of the somatic cells at the surface of a Volvox colony has two flagella that beat at ~30 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the somatic cells at the surface of a Volvox colony has two flagella that beat at \u223c30 Hz, in planes that are primarily oriented in the anterior-posterior (AP) direction but with a slight lateral tilt that makes each colony spin around its AP axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of Volvox flagellar beating based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "176bb757-ef6f-43a8-8015-ed23c035c448",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C56",
+      "claim": "Snowflake yeast clusters were grown for approximately 24 hr in YPD liquid medium at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed on yeast grown for approximately 24 hr in 10 mL of yeast peptone dextrose (YPD, 10 g/L yeast extract, 20 g/L peptone, and 20 g/L dextrose) liquid medium at 30 C, and shaken at 250 rpm in a Symphony Incubating Orbital Shaker model 3,500I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental growth conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "ff9b5359-03db-419f-a5e6-e79b6c1c86a2",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C57",
+      "claim": "20 snowflake yeast clusters were analyzed using serial block face scanning electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "This process allowed us to determine the 3D structure of N=20 snowflake yeast clusters and locate cell centers with nanometer precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "9bffd89b-01ad-4212-90cf-e25a0b6c8ac9",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C58",
+      "claim": "9,100 snowflake yeast clusters were simulated, each growing for 7 generations of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "To compare exhaustively the distribution of Voronoi volumes between simulations and the k-gamma distribution, we simulated 9,100 clusters. In each simulation, clusters were allowed to grow for 7 generations of cell division, corresponding to an average of 94.2\u00b110.9 cells per cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "e63bb682-65de-4a33-9cc9-8a94b5889df8",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C59",
+      "claim": "10 Volvox-like groups with N=1000 cells were simulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated 10 Volvox-like groups with N=1000 cells confined to the surface of a sphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "0e81f830-b3f2-4dda-9fbe-e8bc2f951621",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C60",
+      "claim": "The k-gamma distribution outperformed normal, log-normal, and beta-prime distributions in predicting Voronoi volume distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the k-gamma distribution outperformed the other distributions at every sample size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of different distribution models",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "10040b0d-f5b5-4f7d-86fc-83f71f1380b3",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "claim_id": "C61",
+      "claim": "The k-gamma distribution estimated the experimentally observed skewness with only a 7% error.",
+      "claim_type": "EXPLICIT",
+      "source": "We then compared this value to experimentally-measured skewness, finding that the k-gamma distribution estimated the experimentally observed skewness with only a 7% error; the other three distributions estimated the skewness with percent errors of \u2212100%,96%,and174% for the normal, log-normal, and beta-prime distributions, respectively (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative comparison shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "deb04dc1-c8dc-4f55-bd97-3cc5e97d81c9",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cell neighborhood volumes in both snowflake yeast and Volvox carteri follow a modified gamma (k-gamma) distribution consistent with maximum entropy predictions. The k-gamma distribution outperformed alternative distributions (normal, log-normal, beta-prime) in predicting Voronoi volume distributions, with only 7% error in estimating skewness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C10 provide direct experimental evidence from two distinct organisms showing agreement with k-gamma predictions (r_RMS=0.02-0.04, k=2.40-2.88). Claims C60-C61 demonstrate rigorous statistical validation showing the k-gamma distribution significantly outperforms alternative models. The convergence of experimental data, visual P-P plots (Figure 1), and quantitative goodness-of-fit metrics provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "d1e63e02-b75a-415e-a6ae-a05c68900cd9",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Snowflake yeast exhibit a specific growth morphology with incomplete cytokinesis, where new buds appear at polar angle 42\u00b0\u00b123\u00b0 with randomly distributed azimuthal angles. Detailed 3D structural analysis was performed on 20 clusters using serial block face SEM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 describe the growth morphology with specific angular measurements supported by Figure 1\u2014figure supplement 1. Claims C34, C56-C57 provide methodological details including sample size (N=20 clusters, >2000 cells), growth conditions, and imaging approach. The combination of structural characterization and quantitative measurements provides adequate experimental foundation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "15bf0326-cec7-4b4d-8a9c-563885773c38",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Volvox carteri somatic cells (~1000 cells) are arranged on a spherical surface with low hexatic order (\u03a86=0.03\u00b10.01) and predominantly six-fold coordination, though topological defects are present due to spherical geometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 describe the basic Volvox structure supported by Figure 1B and established knowledge. Claims C36-C37 provide quantitative measurements of hexatic order from six organisms. Claim C43 describes the coordination pattern consistent with spherical topology constraints. The structural characterization is well-documented though represents descriptive rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "9f96daf2-d9bf-487b-a075-3a5f4e0178b0",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spatial correlations in Volvox Voronoi solid angles extend to network distances Q=10, causing deviations from maximum entropy predictions. These deviations encode information about developmental regulation or environmental interactions, as maximum entropy requires independent volume determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 provides quantitative evidence of long-range correlations shown in Figure 3A. Claims C30-C31 establish the theoretical basis for when maximum entropy applies and when deviations occur. Claim C44 interprets the biological significance. The correlation analysis is rigorous, though the interpretation of biological mechanisms (C44) remains somewhat speculative without direct experimental validation of specific regulatory processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "ea026877-2c0b-4ad8-95e9-d88f92323423",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Simulations of diverse growth morphologies (9,100 snowflake-like clusters and 10 Volvox-like groups) demonstrate that gamma-distributed cell neighborhood sizes are a general feature arising from conserved packing statistics across different multicellular architectures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 states the general conclusion supported by extensive simulations detailed in C58-C59 (>850,000 total cell measurements across multiple morphologies shown in Figure 2). The simulations systematically varied growth rules while maintaining agreement with k-gamma predictions (r_RMS\u22640.01). However, the generalization is limited to the specific morphologies tested and assumes the simulation parameters accurately capture biological reality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "f6529039-4977-4804-bbd3-ece00ffd1d35",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Entropic cellular packing produces predictable multicellular traits despite noise, enabling parent-offspring fidelity without developmental regulation. Group size in snowflake yeast is more heritable than underlying cellular aspect ratio, potentially facilitating evolutionary transitions to multicellularity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 cite prior work establishing the relationship between cell aspect ratio and group size heritability. Claim C41 states the key finding about entropic packing enabling fidelity. Claim C45 generalizes about noise producing reproducible traits. However, C47 is explicitly speculative about evolutionary implications. The mechanistic link between packing statistics and heritability is demonstrated, but the evolutionary significance remains hypothetical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "3ec0b655-f0ca-41c0-ab41-ce88f2633c3c",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Flocculating yeast groups exhibit much larger coefficient of variation in size compared to snowflake yeast groups, demonstrating that randomly assembled groups can be more reproducible than aggregated groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by data from Pentz et al., 2020 shown in Figure 5D, providing a direct comparison between two assembly mechanisms. The comparison effectively illustrates the consequence of different assembly processes on trait variability. However, the sample size and statistical testing details are not provided in the claim, and the result relies on external data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "c5fbdd41-a235-49f1-9aec-6bb9609b3f02",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Theoretical analysis using squirmer and shear-stress models demonstrates that Volvox motility is largely insensitive to cell area heterogeneity, as swimming speed depends only on the lowest-order mode of the velocity/force field expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 establish the biological context of Volvox flagellar beating and flow smoothness from prior work. Claim C27 presents the theoretical result that motility is insensitive to area inhomogeneities. Claim C51 states the biological interpretation. The mathematical derivation appears sound (equations 4-10), showing higher modes contribute zero to swimming speed. However, this is purely theoretical without experimental validation of the prediction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "c4f83b11-e4d3-4e86-83c5-1a5a195a398a",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Maximum entropy statistics hold in granular materials despite strict force and torque balance conditions, providing precedent for biological applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 cites established work (Aste and Di Matteo, 2008; Snoeijer et al., 2004; Bi et al., 2015a) on granular materials. This represents accurate citation of prior work establishing the physical precedent for applying maximum entropy principles to constrained systems. The claim appropriately contextualizes the biological findings within established physics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "e7d0b915-ce03-4b59-b7e5-5e1fa20df25a",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background context on multicellularity evolution, noise in self-assembly, and the importance of cellular packing geometry, establishing the motivation for studying entropic packing in multicellular organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C42, and C48 provide background information supported by appropriate citations to establish context. These represent accurate summaries of prior work rather than novel findings. The citations appear appropriate for the claims made, though detailed verification of each cited work is beyond the scope of this evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    },
+    {
+      "id": "f8657661-c807-4a92-97d4-0969fc283f4e",
+      "content_id": "5ba7a0f5-12b2-4af1-a071-a1c3934da420",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Entropic packing is not necessarily adaptive but may emerge from random cellular processes. Noise in developmental geometry may be inevitable across diverse microscopic mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C46 explicitly notes entropic packing is \"not necessarily adaptive\" and \"can readily emerge,\" which is appropriately cautious. Claim C49 suggests noise \"may be an inevitable consequence\" based on observations in two organisms. However, these are interpretive claims about evolutionary significance and mechanistic inevitability that extend beyond the direct experimental evidence. The universality claim requires broader taxonomic sampling and mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:08:04.738989Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6b3b66f3-5e24-41a2-a72d-f7627b02a880",
+      "result_id": "deb04dc1-c8dc-4f55-bd97-3cc5e97d81c9"
+    },
+    {
+      "claim_id": "0fb51939-245f-4812-b7ad-87076aec7031",
+      "result_id": "deb04dc1-c8dc-4f55-bd97-3cc5e97d81c9"
+    },
+    {
+      "claim_id": "cf0cbfc0-8959-4549-bad9-fa9182ed5e6a",
+      "result_id": "deb04dc1-c8dc-4f55-bd97-3cc5e97d81c9"
+    },
+    {
+      "claim_id": "0e81f830-b3f2-4dda-9fbe-e8bc2f951621",
+      "result_id": "deb04dc1-c8dc-4f55-bd97-3cc5e97d81c9"
+    },
+    {
+      "claim_id": "10040b0d-f5b5-4f7d-86fc-83f71f1380b3",
+      "result_id": "deb04dc1-c8dc-4f55-bd97-3cc5e97d81c9"
+    },
+    {
+      "claim_id": "6d817557-18a8-4c68-9a90-ca3600b42400",
+      "result_id": "d1e63e02-b75a-415e-a6ae-a05c68900cd9"
+    },
+    {
+      "claim_id": "0bf5a74f-af12-4358-b360-052d4da36ae7",
+      "result_id": "d1e63e02-b75a-415e-a6ae-a05c68900cd9"
+    },
+    {
+      "claim_id": "475aa8cb-d153-4f9b-8cf5-896a023f494b",
+      "result_id": "d1e63e02-b75a-415e-a6ae-a05c68900cd9"
+    },
+    {
+      "claim_id": "157ab9d1-0808-4804-bc51-a35a702c8449",
+      "result_id": "d1e63e02-b75a-415e-a6ae-a05c68900cd9"
+    },
+    {
+      "claim_id": "176bb757-ef6f-43a8-8015-ed23c035c448",
+      "result_id": "d1e63e02-b75a-415e-a6ae-a05c68900cd9"
+    },
+    {
+      "claim_id": "ff9b5359-03db-419f-a5e6-e79b6c1c86a2",
+      "result_id": "d1e63e02-b75a-415e-a6ae-a05c68900cd9"
+    },
+    {
+      "claim_id": "a15b5ef8-f4bf-4e80-8144-3ed0831caa28",
+      "result_id": "15bf0326-cec7-4b4d-8a9c-563885773c38"
+    },
+    {
+      "claim_id": "c1f843ff-42d5-41ea-810c-5c68f00cfade",
+      "result_id": "15bf0326-cec7-4b4d-8a9c-563885773c38"
+    },
+    {
+      "claim_id": "4d31ed5c-ad49-498f-bca3-c4975f961d81",
+      "result_id": "15bf0326-cec7-4b4d-8a9c-563885773c38"
+    },
+    {
+      "claim_id": "60c2acff-d9b3-4675-8edd-5f8087be4f57",
+      "result_id": "15bf0326-cec7-4b4d-8a9c-563885773c38"
+    },
+    {
+      "claim_id": "07e333bf-6289-4e53-ab1d-e48f006084ed",
+      "result_id": "15bf0326-cec7-4b4d-8a9c-563885773c38"
+    },
+    {
+      "claim_id": "7cbfd6c9-5bc7-4f38-8dbd-72aa08a0c999",
+      "result_id": "9f96daf2-d9bf-487b-a075-3a5f4e0178b0"
+    },
+    {
+      "claim_id": "36762ab4-c9ef-4e9b-894e-f7b65cfa7b5a",
+      "result_id": "9f96daf2-d9bf-487b-a075-3a5f4e0178b0"
+    },
+    {
+      "claim_id": "19db48ce-3b6f-46dd-89d4-80bed48d4812",
+      "result_id": "9f96daf2-d9bf-487b-a075-3a5f4e0178b0"
+    },
+    {
+      "claim_id": "0b24abcc-6e93-4336-aada-25aec31e2a17",
+      "result_id": "9f96daf2-d9bf-487b-a075-3a5f4e0178b0"
+    },
+    {
+      "claim_id": "5a6e9516-7554-4590-a2e7-2b0e93a3c506",
+      "result_id": "ea026877-2c0b-4ad8-95e9-d88f92323423"
+    },
+    {
+      "claim_id": "9bffd89b-01ad-4212-90cf-e25a0b6c8ac9",
+      "result_id": "ea026877-2c0b-4ad8-95e9-d88f92323423"
+    },
+    {
+      "claim_id": "e63bb682-65de-4a33-9cc9-8a94b5889df8",
+      "result_id": "ea026877-2c0b-4ad8-95e9-d88f92323423"
+    },
+    {
+      "claim_id": "a818f66c-6ca3-4746-8f10-d779517e34c3",
+      "result_id": "f6529039-4977-4804-bbd3-ece00ffd1d35"
+    },
+    {
+      "claim_id": "7d9d3ea3-b66f-4c8e-9d5d-85b9229d07d7",
+      "result_id": "f6529039-4977-4804-bbd3-ece00ffd1d35"
+    },
+    {
+      "claim_id": "d8cba312-7804-48f1-a375-04592532ad77",
+      "result_id": "f6529039-4977-4804-bbd3-ece00ffd1d35"
+    },
+    {
+      "claim_id": "43df8fab-c367-4da7-b3be-6f6f8d5247f2",
+      "result_id": "f6529039-4977-4804-bbd3-ece00ffd1d35"
+    },
+    {
+      "claim_id": "6fff0a30-e778-4492-b433-12ead3dfd712",
+      "result_id": "f6529039-4977-4804-bbd3-ece00ffd1d35"
+    },
+    {
+      "claim_id": "926ec8ea-49e2-4177-ba0f-92e7a88f821f",
+      "result_id": "3ec0b655-f0ca-41c0-ab41-ce88f2633c3c"
+    },
+    {
+      "claim_id": "5b181528-0e34-45e8-940d-298382278de1",
+      "result_id": "c5fbdd41-a235-49f1-9aec-6bb9609b3f02"
+    },
+    {
+      "claim_id": "9bf97525-b462-4ca5-8048-7e99e098b047",
+      "result_id": "c5fbdd41-a235-49f1-9aec-6bb9609b3f02"
+    },
+    {
+      "claim_id": "14845091-f4d0-4526-9684-7f42da738ad0",
+      "result_id": "c5fbdd41-a235-49f1-9aec-6bb9609b3f02"
+    },
+    {
+      "claim_id": "e7498df8-26c4-4d05-bc9d-65be37165c8b",
+      "result_id": "c5fbdd41-a235-49f1-9aec-6bb9609b3f02"
+    },
+    {
+      "claim_id": "4941ea14-b440-487e-8a73-0022b1716382",
+      "result_id": "c4f83b11-e4d3-4e86-83c5-1a5a195a398a"
+    },
+    {
+      "claim_id": "98a3b0e0-75f1-4d62-8aab-0389de63ebc5",
+      "result_id": "e7d0b915-ce03-4b59-b7e5-5e1fa20df25a"
+    },
+    {
+      "claim_id": "3e7199d5-3fc3-4f19-b73a-566fee3ca216",
+      "result_id": "e7d0b915-ce03-4b59-b7e5-5e1fa20df25a"
+    },
+    {
+      "claim_id": "2b293696-4687-4026-81d0-ec93f99231fa",
+      "result_id": "e7d0b915-ce03-4b59-b7e5-5e1fa20df25a"
+    },
+    {
+      "claim_id": "dfdec6bd-1563-42ce-a68c-c38afeb5611c",
+      "result_id": "e7d0b915-ce03-4b59-b7e5-5e1fa20df25a"
+    },
+    {
+      "claim_id": "e1c5d376-04eb-4d46-bec0-01856674abb6",
+      "result_id": "e7d0b915-ce03-4b59-b7e5-5e1fa20df25a"
+    },
+    {
+      "claim_id": "53d9f88d-c731-4977-8e5d-2dde869f764f",
+      "result_id": "e7d0b915-ce03-4b59-b7e5-5e1fa20df25a"
+    },
+    {
+      "claim_id": "e49f7e7a-a5eb-4a6b-bc23-ba10396e030c",
+      "result_id": "f8657661-c807-4a92-97d4-0969fc283f4e"
+    },
+    {
+      "claim_id": "5a4cce9b-f647-46cf-a83a-8ac3f5117a44",
+      "result_id": "f8657661-c807-4a92-97d4-0969fc283f4e"
+    }
+  ],
+  "comparisons": []
+}

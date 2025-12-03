@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CRL5 regulates BCAR3 protein turnover through the ubiquitin-proteasome system. BCAR3 was identified in a phosphotyrosine proteomics screen as being stabilized in Cul5-deficient cells, with protein levels increasing ~4-fold without changes in RNA levels. BCAR3 half-life increased from ~4 hr to >8 hr upon Cul5 depletion, and degradation was blocked by proteasome and cullin neddylation inhibitors but not lysosome inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C56-C62 provide converging evidence from multiple experimental approaches (mass spectrometry, Western blotting, qPCR, cycloheximide chase, and pharmacological inhibitors) demonstrating CRL5-dependent regulation of BCAR3 protein stability. The data consistently show increased BCAR3 protein without RNA changes and proteasome-dependent degradation, supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "BCAR3 Y117 is the specific phosphorylation site that recruits SOCS6 through its SH2 domain for CRL5-dependent degradation. SOCS6 specifically co-precipitated with BCAR3, and this interaction was phosphotyrosine-dependent and required the SOCS6 SH2 domain. Mutagenesis studies demonstrated that Y117 is both necessary and sufficient for SOCS6 binding, as the Y117F mutation abolished binding while the F4 mutant (retaining only Y117) maintained binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C69-C83 present systematic biochemical evidence using co-immunoprecipitation, phosphatase inhibition, domain deletion/mutation, and site-directed mutagenesis to identify Y117 as the SOCS6-binding site. The convergence of multiple independent approaches (pervanadate treatment, SH2 domain mutations, individual tyrosine mutations) provides strong support for this molecular mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Y117 and Cas association are both required for CRL5-dependent BCAR3 degradation. Using a doxycycline-inducible system to express BCAR3 at near-endogenous levels, the Y117F mutant accumulated to ~2-fold higher levels than wildtype and was not further stabilized by Cul5 depletion. The F4 mutant (containing Y117) remained CRL5-regulated, while the EE mutant (which binds SOCS6 but not Cas) was not regulated by CRL5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 use a well-controlled inducible expression system with multiple BCAR3 mutants to dissect the requirements for degradation. The data show that both Y117 phosphorylation and Cas binding are necessary for CRL5-dependent turnover, with the EE mutant providing a critical control demonstrating that SOCS6 binding alone is insufficient. The experimental design appropriately controls for expression levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "BCAR3 is required for single-cell migration and invasion, and for the enhanced lamellipodial ruffling and collective migration observed in Cul5-deficient cells. BCAR3 depletion reduced single-cell migration and invasion regardless of Cul5 status, suggesting independent regulation. However, in collective migration assays, BCAR3 was only required when Cul5 was depleted, indicating an epistatic relationship where CRL5 inhibits BCAR3-dependent migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C64-C68 present data from multiple migration assays (Boyden chamber, Matrigel invasion, scratch wound) with appropriate controls including siRNA knockdown and CRISPR knockout cells. The epistatic relationship between BCAR3 and Cul5 in collective but not single-cell migration is clearly demonstrated with quantitative measurements of migration distance, ruffling percentage, and lamellipodia length (n=3 biological replicates with statistical analysis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "BCAR3 Y117 and the SH2 domain are both required for BCAR3 function in promoting membrane ruffling and cell migration. Overexpression of wildtype BCAR3 or the F4 mutant (containing Y117) induced ruffling and rescued migration in BCAR3-depleted cells, while Y117F, R177K (SH2 mutant), and EE (Cas-binding mutant) failed to rescue these functions despite accumulating to higher levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 use rescue experiments with multiple BCAR3 mutants to demonstrate that Y117 serves dual roles in both activation and degradation. The data show that the same residue required for degradation (Y117) is also required for function, as are the SH2 domain and Cas binding. The experimental design with multiple mutants and functional readouts (ruffling, single-cell migration, collective migration) provides strong support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "BCAR3 localization to integrin adhesions requires Cas, but Cas localization is independent of BCAR3. Immunofluorescence microscopy showed that Cas remained in adhesions when BCAR3 was depleted, while BCAR3 was absent from adhesions when Cas was depleted. All BCAR3 mutants that bound Cas localized to adhesions, while the EE mutant (which cannot bind Cas) did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50, C103-C108 present clear immunofluorescence data with quantification showing that BCAR3 requires Cas for adhesion localization. The use of multiple BCAR3 mutants and the correlation between Cas-binding ability and adhesion localization provides strong support. The reciprocal experiment showing Cas independence from BCAR3 establishes the directionality of this relationship. Quantification was performed on 8-14 cells from multiple biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "BCAR3 activates Cas phosphorylation and SFK activity in adhesions, dependent on both Y117 and the SH2 domain. BCAR3 depletion reduced Cas pY165 in adhesions, and this was rescued by wildtype BCAR3 or F4 but not by Y117F, R177K, or EE mutants. BCAR3 depletion also reduced FAK pY861 (an SFK substrate) but not FAK pY397 (autophosphorylation), indicating a general role in SFK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51, C109-C116 use phospho-specific antibodies and immunofluorescence to demonstrate BCAR3's role in activating Cas and SFKs in adhesions. The rescue experiments with multiple mutants establish the requirements for Y117 and the SH2 domain. The differential effects on FAK pY861 vs pY397 provide mechanistic insight into SFK activation. Controls with dasatinib and Cas siRNA validate the specificity of the pY165-Cas signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C130",
+      "C131"
+    ],
+    "result": "BCAR3 and Cas form a co-regulatory positive-feedback circuit with dual negative feedback by the ubiquitin-proteasome system. Cas recruits BCAR3 to adhesions where BCAR3 activates Cas phosphorylation (positive feedback). Both proteins are then targeted for CRL5-dependent degradation through their respective phosphodegrons (dual negative feedback), providing 'double insurance' against excess activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C117-C123, C125-C126, C130-C131 synthesize the experimental findings into a coherent model of bidirectional regulation. The positive feedback (Cas recruits BCAR3, BCAR3 activates Cas) is supported by the localization and phosphorylation data. The dual negative feedback is supported by the degradation studies showing both proteins are CRL5 substrates. This represents a well-supported mechanistic model integrating multiple lines of experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C142"
+    ],
+    "result": "The dual use of Y117 for both BCAR3 activation and degradation ensures reliable negative feedback. Unlike Cas, where the SOCS6-binding site is dispensable for function, BCAR3's Y117 serves both roles, meaning activation automatically triggers degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C142 present a conceptual interpretation of the functional significance of Y117's dual role. This is supported by the experimental data showing Y117 is required for both function (C94-C99) and degradation (C84-C92), and by the comparison to Cas where these functions are separable (C143-C144). The interpretation is logical and well-supported by the data, though it represents a mechanistic inference rather than direct experimental demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C135",
+      "C136",
+      "C137",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The mechanism by which BCAR3 Y117 and the SH2 domain activate SFKs remains unclear. While prior work suggested PTPRA binding to the BCAR3 SH2 domain might recruit the Cas-BCAR3 complex to adhesions, the current data show the SH2 domain is not required for localization. PTPRA depletion also did not inhibit Cas phosphorylation. The Y117 sequence does not suggest obvious SH2 binding partners besides SOCS6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133, C135-C137, C139-C141 acknowledge limitations in understanding the activation mechanism. While the requirement for Y117 and the SH2 domain is clearly established (C51, C113), the molecular mechanism remains speculative. The negative results with PTPRA and sequence analysis suggest alternative mechanisms, but no definitive mechanism is established. This represents an important gap requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The complex post-translational regulation of BCAR3 may help reconcile the paradox that BCAR3 overexpression is oncogenic in cell culture while increased BCAR3 RNA correlates with favorable patient outcomes. Post-translational regulation means protein levels may not correlate with RNA levels in patient samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C147 present an interesting hypothesis connecting the mechanistic findings to clinical observations, but this remains speculative. While the post-translational regulation of BCAR3 is well-established in this study, the connection to patient outcomes is based on cited literature and represents an inference rather than direct experimental evidence. Testing this hypothesis would require analysis of BCAR3 protein levels (not just RNA) in patient samples.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The study characterizes the regional contributions of four nuisance processes (SLFOs, head motion, breathing motion, cardiac pulsatility) to the BOLD signal. SLFOs primarily affected sensory regions including visual and somatosensory cortices, with no modulation by phase encoding. Head motion showed largest effects in somatosensory and visual cortices with phase encoding-dependent hemispheric asymmetry. Breathing motion was more pronounced in prefrontal, parietal and temporal regions with strong phase encoding-dependent hemispheric effects. Cardiac pulsatility was highest in visual, auditory, and insular cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are well-supported by data presented in Figure 1, which shows distinct regional patterns for each nuisance process using statistical testing (p<0.05, FDR corrected). The spatial patterns are consistent with known vascular architecture and prior literature on physiological artifacts in fMRI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The study identifies stereotyped whole-brain functional connectivity patterns for SLFOs, head motion, and breathing motion. SLFOs exhibited strong positive correlations across all edges, particularly within and between visual networks. Head motion influenced connectivity within visual and sensorimotor networks and the DMN. Breathing motion showed a distinctive pattern with positive within-hemisphere correlations and near-zero or negative between-hemisphere correlations. Cardiac pulsatility did not exhibit systematic spatial patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by group-averaged FC matrices from 1568 scans shown in Figure 2A-D. The distinct spatial signatures for each nuisance process are clearly demonstrated, with particularly novel findings regarding the hemispheric pattern of breathing motion artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study evaluates the effectiveness of various preprocessing strategies in removing nuisance signatures from static FC. SLFOs, head motion, and breathing motion had the strongest influence on static FC. WM50 and WM200 strategies greatly reduced SLFO effects, while FIX was unable to remove most SLFOs. GSR effectively removed SLFO signatures but sometimes introduced negative correlations. No strategy completely eradicated head motion effects. FIX denoising was most effective for breathing motion. Cardiac pulsatility confounds were small and effectively removed by FIX, WM50, and WM200.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by similarity analyses between nuisance and neural FC matrices shown in Figure 2E-H. The differential effectiveness of preprocessing strategies is clearly demonstrated, with WM denoising and GSR showing the strongest performance for different nuisance processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The study evaluates the addition of model-based physiological regressors to preprocessing strategies. Including the SLFO regressor reduced effects for all strategies except WM50/WM200, but similarity remained above chance. RETROICOR regressors for cardiac pulsatility completely removed effects for raw data and mild strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by data in Figure 2\u2014figure supplement 3. The results demonstrate that model-based approaches can complement data-driven strategies, particularly for cardiac pulsatility, though they are less effective than aggressive denoising for SLFOs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C123",
+      "C124"
+    ],
+    "result": "The study demonstrates that nuisance processes exhibit above-chance subject discriminability in connectome fingerprinting, with accuracy rates up to 40%. Breathing motion showed a bimodal distribution where same phase encoding pairs yielded much higher identification rates than different phase encoding pairs. This suggests some degree of subject specificity in nuisance processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C123-C124 are supported by fingerprinting analysis shown in Figure 3A. The above-chance identification accuracy for all nuisance processes demonstrates their subject-specific nature, with the phase encoding effect for breathing motion providing additional validation of the artifact characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C126"
+    ],
+    "result": "The study shows that neural datasets yielded much higher identification accuracy (52-99%) than nuisance datasets. WM50 and WM200 significantly outperformed other preprocessing strategies. GSR considerably improved identification accuracy for MildA, MildB, and FIX strategies. The highest accuracy with the most aggressive denoising suggests that high subject discriminability in HCP data is not due to confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C126 are supported by fingerprinting results in Figure 3B. The observation that better denoising improves rather than reduces identification accuracy provides strong evidence that individual differences in connectivity are primarily neural rather than artifactual in origin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study demonstrates network-specific patterns in subject discriminability. Between-network connections contributed more to SLFO discriminability than within-network connections. Top-down control networks and DMN yielded higher identification accuracy than sensorimotor processing networks across all preprocessing strategies. WM200 denoising significantly increased discriminability of connections within and between control networks and specific connections involving visual and sensorimotor networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by network-based fingerprinting analysis in Figure 4. The differential discriminability of association cortices versus sensory regions is consistent with prior literature and suggests neural rather than artifactual origins of individual differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study characterizes nuisance effects on time-varying FC using FCD matrices. SLFOs and head motion showed temporal evolution patterns similar to raw data, while breathing motion and cardiac pulsatility showed distributions around zero. No preprocessing pipeline completely eliminated SLFO and head motion effects, though WM50 and WM200 considerably reduced them. FIX was the least successful for reducing SLFO signatures in time-varying FC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by FCD similarity analyses in Figures 5 and 6. The persistent effects of SLFOs and head motion on time-varying FC even after preprocessing highlight the challenges in removing these confounds from dynamic connectivity measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study provides mechanistic interpretation of SLFO and cardiac pulsatility spatial patterns. SLFOs affected regions with high venous density, and their spatial pattern resembles maps of global signal correlation from prior studies. The global signal is strongly driven by heart rate and breathing fluctuations. SLFOs and cardiac pulsatility affect different brain regions, with cardiac pulsatility dominant in regions with highest arterial density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 integrate the current findings with prior literature and known vascular anatomy. The consistency between observed patterns and vascular architecture provides biological plausibility for the findings, though the mechanistic claims rely partly on inference from anatomical knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study characterizes head and breathing motion effects on FC and evaluates preprocessing effectiveness. After regressing out breathing from realignment parameters, sensorimotor and visual areas were strongly affected by head motion, while breathing motion artifacts were more pronounced in prefrontal, parietal, and temporal cortices. Head motion influenced connectivity within visual and sensorimotor networks. Regressing realignment parameters and WM/CSF signals alone was insufficient. WM denoising yielded the largest motion reduction, with WM200 more effective than WM50. Breathing motion inflated within-hemisphere connectivity, likely due to factitious motion related to phase encoding. All strategies reduced breathing motion artifacts, with FIX most effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C85 are supported by data in Figures 1B-C and 2B-C, F-G. The novel separation of head and breathing motion effects and the identification of phase encoding-dependent breathing artifacts represent important methodological advances. The evaluation of preprocessing strategies is comprehensive and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The study acknowledges a potential limitation regarding cardiac pulsatility effects in subcortical regions due to poor temporal SNR in the 3T HCP dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 appropriately acknowledge a limitation based on prior reports about HCP data quality. This represents appropriate scientific caution about potential underestimation of effects in specific brain regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study discusses the potential caveat that physiological fluctuations may give rise to networks resembling neurally-driven networks due to concurrent vascular and neuronal development. However, the preprocessing strategies that reduced nuisance effects most (FIX and WM denoising with GSR) also showed highest network identifiability in prior work, suggesting they preserve signal of interest while removing confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 appropriately discuss a potential limitation of the methodology while providing evidence that the concern may not be critical. The argument that effective denoising improves rather than reduces network identifiability provides reassurance, though this remains somewhat circular reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study interprets time-varying FC findings in the context of prior literature. Variations in FC over short time scales could be explained by sampling error, artifacts, and arousal. Even after regression, correlations between time-varying FC and nuisance fluctuations remain. The results suggest either that significant variability is due to non-neural confounds that WM denoising removes, or that WM denoising removes neural variance. Breathing motion and cardiac pulsatility likely don't influence time-varying FC due to their quasi-periodic nature, while ROIs sensitive to head motion and SLFOs exhibit time-varying SNR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C97 represent interpretations and speculations about the findings. While the interpretations are reasonable and supported by the data patterns, they remain speculative. The alternative explanations for WM denoising effects (removing confounds vs. removing signal) cannot be definitively resolved with the current data. Future work with concurrent neural recordings would be needed to resolve these uncertainties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study evaluates GSR effectiveness for static FC. GSR removes physiological fluctuations related to SLFOs and to a lesser extent head motion artifacts. GSR improved connectome fingerprinting accuracy, suggesting it enhances individual specificity by removing nuisance fluctuations. The strong reduction in SLFO and head motion effects outweighs possible loss of neuronal fluctuations. GSR is particularly important for ICA-based techniques like FIX and AROMA since SLFO components are often misclassified as neural.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by data in Figures 2E-F and 3B. The argument that GSR benefits outweigh costs is well-supported by the fingerprinting results, though the claim about preserving signal of interest relies partly on inference. The mechanistic explanation for why ICA-based methods fail to remove SLFOs is plausible and consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study investigates cases where GSR introduced negative SLFO-neural similarity. Scans with negative similarity had a large fraction of GS variance attributed to SLFOs and showed relatively low SLFO contributions in somatosensory and auditory networks. The use of a single global regressor doesn't account for spatial variability in SLFO dynamics. Primary sensory areas exhibit different respiration response functions. Modeling SLFOs could be improved by accounting for spatial RRF variability. GSR cannot correct SLFO effects equally well in all areas. Combining GSR with WM denoising substantially decreased negative similarity, suggesting WM regressors can reduce SLFO fluctuations better than GSR alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 are supported by data in Figure 2\u2014figure supplement 4 and integration with prior literature. The analysis of negative similarity cases provides important insights into GSR limitations. However, the proposed improvements (accounting for spatial RRF variability) remain speculative and would require validation in future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The study discusses GSR effects on time-varying FC. GSR did not reduce nuisance effects as well for time-varying FC as for static FC. However, prior work showed GSR improved modularity identification in time-varying FC, possibly by removing nuisance processes not evaluated in the current study (scanner instabilities, CO2, finger skin vascular tone).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 appropriately contextualize the time-varying FC findings with prior literature. The speculation about additional nuisance processes is reasonable but remains unvalidated. The differential effectiveness of GSR for static vs. time-varying FC is an important observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study characterizes phase encoding effects on breathing motion artifacts. Chest wall movements perturb the B0 field, causing factitious motion in the phase encoding direction and location-dependent artifacts. Breathing motion artifacts were more pronounced in the left or right hemisphere depending on LR or RL phase encoding. Breathing motion increased within-hemisphere connectivity for both phase encoding types, implying different artifactual fluctuations between hemispheres. Factitious rather than real motion is the predominant source of respiration-related artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 are supported by data in Figures 1C and 2C and integration with prior literature on B0 field effects. The phase encoding-dependent hemispheric patterns provide strong evidence for the factitious motion mechanism. This represents an important methodological insight for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C125"
+    ],
+    "result": "The study discusses the relationship between nuisance processes and test-retest reliability. Nuisance processes can impact reliability given their subject-specific nature. Prior studies show reduced ICC values with aggressive pipelines, suggesting artifact subject specificity. Motion can classify subjects above chance, and breathing motion is more prominent in older individuals and those with higher BMI. The high subject discriminability of SLFOs suggests idiosyncrasy possibly related to individual vascular architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122, C125 integrate the current findings with prior literature on test-retest reliability and individual differences. The interpretation that SLFO discriminability reflects vascular architecture is speculative but plausible. The discussion appropriately contextualizes the fingerprinting findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study interprets higher identification accuracy for same-day scans as potentially reflecting vigilance levels, mind-wandering, or time-of-day effects. Overall, high connectome-based identification accuracies do not appear driven by nuisance confounds, suggesting neural origins of inter-individual connectivity differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 provide reasonable interpretations of the fingerprinting results, supported by citations to relevant literature. The conclusion that individual differences are primarily neural is well-supported by the observation that better denoising improves identification accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study discusses the neural basis of high identification rates in association cortices. Subject variability in functional connections may arise from spatial topographical variability. Association cortices are evolutionarily recent and involved in higher-level functions. Alternative explanations suggest these networks are less prone to susceptibility artifacts. The results indicate the basis of high identification rates for association cortices is neural, and resting-state fMRI fingerprinting can capture idiosyncratic cognitive aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 integrate the network-based fingerprinting results with evolutionary and functional neuroscience literature. The inference that high identification rates reflect neural rather than artifactual origins is supported by the observation that preprocessing doesn't reduce accuracy for these networks, though alternative explanations cannot be completely ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study's main conclusions are that head motion and systemic BOLD fluctuations cause systematic biases in static FC and recurrent patterns in time-varying FC. Data-driven techniques (PCA, ICA) combined with GSR lead to strongest reduction of these effects. Preprocessing strategies that reduce nuisance effects improve connectome-based identification, indicating high subject discriminability is not attributable to nuisance processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 represent the main conclusions of the study, well-supported by the comprehensive analyses of static FC, time-varying FC, and fingerprinting. The conclusions are appropriately qualified and represent significant contributions to understanding physiological confounds in fMRI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The study used HCP 3T resting-state data from 392 subjects, acquired on 2 different days with eyes-open fixation. Each day included two 15-minute runs with LR and RL phase encoding. Each run acquired 1200 frames using gradient-echo EPI with multiband factor 8, 2mm isotropic voxels, and TR=0.72s. Cardiac and respiratory signals were measured concurrently at 400 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 describe the dataset and are standard methodological details that can be verified against HCP documentation. The sample size of 392 subjects after quality control is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The study speculates that the structure of the SLFOs' connectome profile may largely reflect underlying vascular architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is explicitly speculative and based on inference from observed patterns and known vascular density. While plausible, this mechanistic interpretation would require direct validation with vascular imaging or other methods to be definitively supported.",
+    "result_type": "MINOR"
+  }
+]

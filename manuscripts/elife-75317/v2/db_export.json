@@ -1,0 +1,1124 @@
+{
+  "submission": {
+    "id": "4603820e-0671-46be-9304-50bacdafbbbb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:57:34.827574Z",
+    "updated_at": "2025-12-03T10:57:34.827574Z"
+  },
+  "content": [
+    {
+      "id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "submission_id": "4603820e-0671-46be-9304-50bacdafbbbb",
+      "content_type": "manuscript",
+      "content_text": "# Body mass index and adipose distribution have opposing genetic impacts on human blood traits\n\n## Authors\n\n- Christopher S Thom<sup>1</sup> ([ORCID: 0000-0003-1830-9922](https://orcid.org/0000-0003-1830-9922)) \u2020\n- Madison B Wilken<sup>1</sup>\n- Stella T Chou<sup>2</sup>\n- Benjamin F Voight<sup>3</sup> ([ORCID: 0000-0002-6205-9994](https://orcid.org/0000-0002-6205-9994)) \u2020\n\n### Affiliations\n\n1. Division of Neonatology, Children's Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))\n2. Division of Hematology, Children's Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))\n3. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania - Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n4. Department of Genetics, University of Pennsylvania - Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n5. Institute for Translational Medicine, University of Pennsylvania - Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBody mass index (BMI), hyperlipidemia, and truncal adipose distribution concordantly elevate cardiovascular disease risks, but have unknown genetic effects on blood trait variation. Using Mendelian randomization, we define unexpectedly opposing roles for increased BMI and truncal adipose distribution on blood traits. Elevated genetically determined BMI and lipid levels decreased hemoglobin and hematocrit levels, consistent with clinical observations associating obesity and anemia. We found that lipid-related effects were confined to erythroid traits. In contrast, BMI affected multiple blood lineages, indicating broad effects on hematopoiesis. Increased truncal adipose distribution opposed BMI effects, increasing hemoglobin and blood cell counts across lineages. Conditional analyses indicated genes, pathways, and cell types responsible for these effects, including Leptin Receptor and other blood cell-extrinsic factors in adipocytes and endothelium that regulate hematopoietic stem and progenitor cell biology. Our findings identify novel roles for obesity on hematopoiesis, including a previously underappreciated role for genetically determined adipose distribution in determining blood cell formation and function.\n\n## Introduction\n\nBlood cell homeostasis is achieved through incompletely understood coordination of blood cell-intrinsic gene regulation and blood cell-extrinsic environmental mechanisms (Comazzetto et al., 2021; Ulirsch et al., 2019). The importance of blood cell formation and function in normal hematopoietic development, hematologic diseases, and clinical manifestations of systemic disorders has prompted extensive investigation of loci underlying human blood trait variation through genome-wide association studies (GWAS) (Astle et al., 2016; Chen et al., 2020; Vuckovic et al., 2020). One shortcoming has been an inability to identify extrinsic effects from these data.\n\nAdipocytes and endothelial cells within the bone marrow environment regulate hematopoiesis (Comazzetto et al., 2021; Zhong et al., 2020). Discrete adipocyte populations differentially modulate systemic physiology and homeostasis (Hildreth et al., 2021). For example, white adipose tissue has a derogatory effect on hematopoiesis, whereas mesenchymal-derived bone marrow adipocyte populations support blood cell formation (Comazzetto et al., 2021; Cuminetti and Arranz, 2019; Wang et al., 2018; Zhong et al., 2020).\n\nSingle nucleotide polymorphisms (SNPs) that genetically increase body mass index (BMI) also raise metabolic and cardiovascular disease risks (Pulit et al., 2019). Some observational studies have linked obesity (BMI > 30 kg/m2; Aigner et al., 2014) or hypercholesterolemia (Shalev et al., 2007) with anemia. However, others observed apparent erythrocytosis in obese individuals (Keohane et al., 2013). Genetic relationships have not been elucidated for BMI on erythroid or other blood traits. A genetic predisposition to accumulate truncal adipose tissue elevates waist-to-hip ratio (WHR). Like BMI, WHR influences cardiovascular risks (Huang et al., 2021; Pulit et al., 2019), but genetic impacts of WHR on blood traits are unknown.\n\nOur study was designed to test several hypotheses. First, we wanted to determine if increased BMI decreased hemoglobin (HGB) at the genetic level, consistent with higher anemia risk in obese individuals (Aigner et al., 2014). Second, we wanted to identify BMI-related traits and mechanisms responsible for effects on erythroid traits (e.g., HGB level and hematocrit [HCT]). We specifically examined effects of adipose distribution (WHR), which impacts cardiovascular disease risk along with BMI variation (Huang et al., 2021). We also analyzed genetically determined lipid fractions, since hyperlipidemia has been linked with anemia risk (Shalev et al., 2007) and since lipids can impact erythrocyte stability (Mohandas and Gallagher, 2008). Third, we asked if BMI and related traits impacted non-erythroid blood cell lineages. This led us to assess genetic impacts on a total of 15 quantitative blood traits, which generally reflect perturbations in blood cell formation and/or function (Chen et al., 2020; Vuckovic et al., 2020).\n\nWe used a Mendelian randomization (MR) framework for our study, anticipating that the results would help to clarify the complex interplay between cardiometabolic traits and hematopoiesis without necessarily revealing clinically apparent effects. MR leverages variants linked to an exposure trait to estimate causal genetic effects on an outcome (Hemani et al., 2018). Multivariable MR (MVMR) and causal mediation analyses can parse effects from multiple factors (Burgess et al., 2017). Interrogating causal effects of BMI and related factors on erythroid and other blood traits revealed unexpected associations between BMI, WHR, and hematopoietic variation. Conditional genome-wide analyses using mtCOJO (Zhu et al., 2018) highlighted blood loci that were substantially influenced by BMI and/or WHR, helping to reveal genes and pathways by which these physiological factors impact blood trait variation.\n\n## Results\n\n### Causal association between genetically determined BMI and lower HGB level\n\nWe hypothesized that BMI would decrease HGB at the genetic level, consistent with clinical observations. Using MR, we found that each standard deviation (SD) unit increase in BMI caused a 0.057 SD decrease in HGB levels by the inverse variance weighted (IVW) method (p = 1.0 \u00d7 10\u20135) that was directionally consistent across sensitivity analyses without evidence of horizontal pleiotropy or weak instrument bias (Figure 1a, Figure 1\u2014figure supplement 1a, Supplementary file 1\u2014Table 1). Similar effects were observed for HCT (Figure 1b and Figure 1\u2014figure supplement 1b), suggesting BMI is genetically linked with reduced HGB.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-v2.jpg)\n\n**Figure 1.:** (a\u2013f) Effects of BMI, WHR, WHRadjBMI on (a) hemoglobin (HGB), (b) hematocrit (HCT), (c) mean corpuscular volume (MCV), (d) red blood cell count (RBC), (e) platelet count (PLT), or (f) white blood cell count (WBC). Shown in top panel are effects of BMI, WHR, or WHRadjBMI on HGB in univariable Mendelian randomization (MR) experiments by inverse variance weighted (IVW) method. Underneath univariable MR results, effects of BMI or WHR at 639 LD-independent WHR-associated single nucleotide polymorphisms (SNPs) are shown. Bottom row of panels show effects of BMI or WHR at 1268 LD-independent BMI-associated SNPs. Effects are in SD units with 95% confidence intervals. *p < 0.05, **p < 0.003. (g) Schematic summarizing effects of indicated exposures on blood traits (created with https://BioRender.com).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a\u2013b) Effects of BMI on (a) HGB or (b) HCT by inverse variance weighted (IVW), weighted median (WM), or MR Egger methods. Effects are in standard deviation (SD) units. Error bars represent 95% confidence intervals. Insignificant MR Egger intercept p-values validate effect estimates. *p < 0.05.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a\u2013c) Effect sizes (standard deviation [SD] units) with 95% confidence intervals for (a) low density lipoprotein (LDL), (b) high density lipoprotein (HDL), or (c) TG, on erythroid traits (hemoglobin [HGB] or hematocrit [HCT]) by univariable Mendelian randomization (MR) (top) or multivariable MR (MVMR) (bottom). MVMR experiments adjusted for body mass index (BMI) effects. Shapes are centered at mean and error bars represent 95% confidence intervals. *p < 0.05, **p < 0.003.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Effects of TC on HGB or HCT by inverse variance weighted (IVW) method. (b) Effects of TC on HGB or HCT by IVW after adjusting for BMI. (c) Effects of BMI on HGB or HCT by IVW after adjusting for TC. Effects are in standard deviation (SD) units. Error bars represent 95% confidence intervals. **p < 0.003.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a\u2013c) Effects of (a) BMI, (b) WHR, or (c) WHRadjBMI on MCV by univariable MR. Shapes are centered at mean and error bars represent 95% confidence intervals. *p < 0.05, **p < 0.003.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Two-sample Mendelian randomization (MR) experiments show effects (standard deviation [SD] units) with 95% confidence intervals for indicated erythroid traits on BMI by inverse variance weighted (IVW) method. **p < 0.003.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (a\u2013b) By univariable MR, WHR exerts a positive effect on (a) hemoglobin (HGB) and (b) hematocrit (HCT). (c\u2013d) In analogous experiments, WHRadjBMI exerts a positive effect on (c) HGB and (d) HCT. Effects were larger after WHR was adjusted for BMI at the individual level (WHRadjBMI). Shapes are centered at mean and error bars represent 95% confidence intervals. *p < 0.05, **p < 0.003.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (a\u2013c) Univariable Mendelian randomization (MR) experiments showing the effects of genetically determined (a) BMI, (b) WHR, or (c) WHRadjBMI on blood traits or coronary artery disease risk (CAD) by inverse variance weighted method. Shapes are centered at mean and error bars represent 95% confidence intervals. *p < 0.05, **p < 0.003.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** (a\u2013b) Effects of BMI or WHR, as quantified by MVMR using instrumental variables based on single nucleotide polymorphisms (SNPs) significant for (a) BMI or (b) WHR. Shapes are centered at mean and error bars represent 95% confidence intervals. *p < 0.05, **p < 0.003.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig1-figsupp9-v2.jpg)\n\n**Figure 1\u2014figure supplement 9.:** (a\u2013c) Effects of WHR, BMI, or WHRadjBMI on (a) red blood cell (RBC) count, (b) platelet (PLT) count, or (c) white blood cell (WBC) count. Left panel indicates trait used to create instrumental variables (IVs) (639 LD-independent statistically significant single nucleotide polymorphisms [SNPs] for WHR or 1268 SNPs for BMI). Exposure and mediator traits are listed at right. Within plots, large labels indicate effects from the IV trait with smaller symbols denoting potential mediating traits. Shapes are centered at mean and error bars represent 95% confidence intervals. *p < 0.05, **p < 0.003.\n\n### Cholesterol levels impact erythroid traits independent of BMI\n\nWe next investigated previously proposed mechanisms to explain observational links between BMI and anemia. For example, we hypothesized that hypercholesterolemia may cause anemia (Shalev et al., 2007) through altered erythrocyte membrane formation and stability (Mohandas and Gallagher, 2008). We confirmed that increased total cholesterol (TC) or lipid fractions (low density lipoprotein [LDL] or high density lipoprotein [HDL]), but not triglyceride levels (TG), decreased HGB or HCT (Figure 1\u2014figure supplements 2\u20133). However, multivariable and mediation experiments revealed that cholesterol levels alter erythroid traits via mechanisms independent from BMI (Figure 1\u2014figure supplement 3b and Supplementary file 1\u2014Table 2). Chronic inflammation and iron deficiency, which cause decreased erythrocyte size (microcytosis), have also been suggested to mediate obesity-related anemia (Aigner et al., 2014). However, BMI did not alter erythrocyte mean corpuscular volume (MCV) by MR (p = 0.12, Figure 1c, Figure 1\u2014figure supplement 4a). In sum, these findings aligned with clinical observations linking BMI with anemia risk, but argued against prevailing mechanistic hypotheses at the genetic level.\n\nReverse causality experiments also identified inverse correlations between erythroid and metabolic traits (Figure 1\u2014figure supplement 5). Directional MR Steiger (Hemani et al., 2017) analyses were inconsistent (Supplementary file 1\u2014Table 3), perhaps limited by blood trait measurement variation or quantitative adjustments for individual characteristics (Vuckovic et al., 2020).\n\n### Genetic impacts of WHR oppose BMI effects on blood trait variation\n\nWe then considered an alternative hypothesis that the physiological distribution of adipose, as measured by WHR, could impact BMI-related anemia risk. Unexpectedly, and in contrast to BMI, higher WHR increased red blood cell (RBC) traits (Figure 1a and b and Figure 1\u2014figure supplement 6a,b). WHR adjusted for BMI on an individual level (WHRadjBMI) exacerbated these positive effects (Figure 1a and b and Figure 1\u2014figure supplement 6c,d) and also associated with decreased MCV (Figure 1c and Figure 1\u2014figure supplement 4b,c). Multivariable analyses formally validated the opposing, cross-mediating effects of BMI and WHR on erythroid traits (Figure 1a, b and c).\n\nNext, we asked whether BMI- and WHR-related effects impacted non-erythroid blood traits. Multivariable and mediation analyses on other blood traits identified cross-mediating opposing effects of WHR and BMI on quantitative blood counts across cell lineages (Figure 1d, e and f and Figure 1\u2014figure supplements 7\u20138). These effects persisted after accounting for related blood traits (Figure 1\u2014figure supplement 9). The directionally consistent effects across multiple lineages suggested that underlying mechanisms related to hematopoietic stem and progenitor cells (HSCs) common to these lineages (Thom and Voight, 2020; Figure 1g). These findings also argued against sex-related effects. Men generally have higher HGB (Vuckovic et al., 2020) and WHR (Pulit et al., 2019), but women can have higher platelet and neutrophil counts (Bain, 1996).\n\n### BMI- and WHR-adjusted conditional analyses clarify blood trait variation loci\n\nOur findings suggested that effects from BMI and WHR were likely to have influenced some previously reported blood trait loci. To identify blood loci related to these factors, we applied mtCOJO (Zhu et al., 2018) to condition blood trait GWAS data on polygenic-measured BMI and/or WHR. BMI adjustment modestly changed SNP effect sizes and retained most (91%) unadjusted lead sentinel variants (Figure 2a and b and Supplementary file 1\u2014Table 4). However, combined BMI and WHR adjustment resulted in substantial SNP effect size changes (>36-fold increased SD (SD = 7.6 \u00d7 10\u20133) vs. BMI adjustment alone (SD = 2.1 \u00d7 10\u20134), p < 0.0001 by F-test to compare variances), with a negative skew (\u20132.0) reflecting adjustment for the positive effect of WHR on HGB levels (Figure 2a and b). Thus, while prior GWAS adjusted for BMI (Astle et al., 2016), we identified more prominent effects for WHR across blood traits and lineages.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig2-v2.jpg)\n\n**Figure 2.:** (a) Violin plots showing the dispersion in effect size at genome-wide significant loci after adjusting erythroid traits (hemoglobin [HGB] or hematocrit [HCT]) for BMI, or WHR and BMI. **p < 0.0001 by F-test to compare variances. (b) Scatterplots depicting changes in effect sizes and p-values for all genome-wide significant sentinel loci before or after adjustment. Novel loci (red) had p < 5 \u00d7 10\u20138 only after adjustment and represent new loci (not in LD with genome-wide significant single nucleotide polymorphisms [SNPs] before adjustment). Clarified loci (pink) are sentinel SNPs with p < 5 \u00d7 10\u20138 after adjustment and are in linkage disequilibrium with significant pre-adjustment SNPs. Missing loci (blue) are those with adjusted p > 5 \u00d7 10\u22128, which were significant pre-adjustment. Shared SNPs (gray) are sentinel SNPs before and after adjustment for the indicated factors. (c) After adjustment for WHR and BMI, the common coding SNP (rs145878042) in RAPGEF3 significantly impacts HGB level. (d) Adjustment for WHR and BMI alters interpretation of SNP effects at the RSPO3 locus, including more significant effects for new sentinel variant rs72959041 (unadjusted p = 2.1 \u00d7 10\u201310, adjusted p = 3.4 \u00d7 10\u201340). (e) Gene-based Manhattan plots for HGB, before or after BMI/WHR adjustment. (f) Gene ontology analyses for hematopoietic, mesenchymal, and vascular biological processes for HGB loci before and after mtCOJO adjustment for BMI and WHR. Significance reflects Fisher\u2019s exact test after multiple testing.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Violin plots show adjustment for indicated trait(s) via mtCOJO (BMI and/or WHR) modifies effect sizes at genome-wide significant blood trait loci. WHR disperses effect sizes more than BMI adjustment alone. (b) After mtCOJO adjustment for WHR and BMI, significant single nucleotide polymorphisms (SNPs) and nearby genes excluded some blood cell-specific gene ontology pathways. Shown are significant pathways related to hemopoiesis/hematopoiesis, erythrocyte biology, or megakaryocyte/platelet biology (Fisher\u2019s exact test p < 0.05 after multiple testing).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Significantly enriched adipose populations are identified by arrows in each plot.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** There were no significantly enriched adipose populations.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Significantly enriched adipose populations are identified by arrows in each plot.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Significantly enriched adipose populations are identified by arrows in each plot.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/75317/elife-75317-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Significantly enriched adipose populations are identified by arrows in each plot.\n\nCombined BMI/WHR adjustment shifted 341 HGB-associated loci toward the null, supporting a key role for BMI- and WHR-mediated mechanisms at these sites, while also identifying 844 sites that either clarified interpretation of previously implicated HGB loci or tagged previously unreported regions (n = 242 novel loci, Figure 2b and Supplementary file 1\u2014Table 5). For example, a missense coding variant in RAPGEF3 (rs145878042), previously linked to BMI (Pulit et al., 2019), WHRadjBMI (Pulit et al., 2019), and platelet distribution width (Vuckovic et al., 2020), did not meet genome-wide significance for HGB (p = 0.003) until BMI/WHR adjustment (p = 2.4 \u00d7 10\u201314, Figure 2b and c). Interpretation of SNPs at the RSPO3 locus also dramatically changed (Figure 2b and d). RSPO3, a Wnt pathway modulator that directs development of bone and other tissues (Nilsson et al., 2021), has been linked with adipose distribution (Pulit et al., 2019) and blood trait variation (Vuckovic et al., 2020). Similar effects were seen in adjusted HCT data (Figure 2a and b and Supplementary file 1\u2014Tables 6\u20137) and quantitative traits across blood lineages (Figure 2\u2014figure supplement 1). These conditional analyses presumably revealed sites where BMI and/or WHR biology most strongly impact blood trait variation, although it is possible that some pleiotropic loci independently regulate blood traits through shared or different gene regulation.\n\nFunctional enrichment analyses identified many consistent genes and processes in unadjusted vs. BMI/WHR-adjusted data across blood traits, with some notable changes (Figure 2e and f, Figure 2\u2014figure supplements 2\u20136 and Supplementary file 1\u2014Tables 8\u201323) (Mi et al., 2019; Watanabe et al., 2019). For example, at the gene level, association with LEPR in these adjusted analysis for HGB elevated to statistical attention (Figure 2e). LEPR perturbations cause obesity (Dubern and Clement, 2012), and LepR+ endothelial niches support HSC survival (Comazzetto et al., 2021). Further, adjusted HGB locus-related genes were enriched for some endothelial and mesenchymal development processes, albeit with diminished p-values due to power loss from limited SNP sets (Figure 2f and Supplementary file 1-Tables 8\u201317). Adjusted RBC, PLT, and WBC data also demonstrated enrichment of endothelial and cell adhesion pathways (Figure 2\u2014figure supplement 1 and Supplementary file 1-Tables 18\u201323). These findings highlight the relevance for BMI, WHR, and related biology in regulating multilineage blood traits, including contributions from mesenchyme-derived adipocytes (Zhong et al., 2020) and stromal endothelial cells in bone marrow (Comazzetto et al., 2021).\n\n## Discussion\n\nThe obesity epidemic has increased the importance of understanding associated systemic comorbidities (Koenen et al., 2021), including complex physiology linking cardiometabolic and blood traits. While some clinical epidemiological studies have proposed iron deficiency and chronic inflammation to explain anemia observed in obese populations (Aigner et al., 2014; Benova and Tencerova, 2020; Koenen et al., 2021), confounders inherent to observational studies may limit interpretation. Consistent with most clinical observations (Aigner et al., 2014), genetically determined BMI is indeed causally associated with lower HGB and HCT levels.\n\nWe identified divergent genome-wide effects of BMI and WHR on erythroid traits. Whereas increased BMI or WHR are typically thought to concordantly raise cardiovascular risk, our results agree with recent findings showing that adipose distribution can influence obesity-related comorbidities (Huang et al., 2021). We were somewhat surprised to identify impacts for BMI and WHR on multilineage blood traits that extended beyond clinically reported erythroid effects, suggesting BMI and WHR may act through different mechanisms than previously proposed (Aigner et al., 2014; Koenen et al., 2021). While the absolute effect sizes are unlikely to impact patient management (e.g., a 1 SD unit increase in BMI [~4.8 kg/m2] decreases HGB by ~0.06 g/dL [Beutler and Waalen, 2006; Gharahkhani et al., 2019]), genetic mechanisms linking BMI, WHR, and blood traits may help elucidate how cardiovascular disease (Heyde et al., 2021; Rohde et al., 2021) and cardiometabolic derangements (Fuster et al., 2020; Jaiswal et al., 2014) are linked to normal or clonal hematopoiesis.\n\nDirectionally consistent effects for BMI and WHR across blood lineages may indicate influences on HSCs in the bone marrow (Figure 1g). For example, genetic predisposition to accumulate bone marrow white adipose tissue may underlie age- (Tuljapurkar et al., 2011) or obesity-related (Benova and Tencerova, 2020) cytopenias by regulating HSC self-renewal or differentiation (Wang et al., 2018). Alternatively, genetically determined differences in bone marrow stromal cell types (e.g., mesenchymal stem cell-derived bone marrow adipocytes; Zhong et al., 2020) could impact HSC biology. Finally, WHR-related mechanisms impacting blood trait variation may reflect inhibitory paracrine or endocrine effects from gluteal or truncal adipose depots (Comazzetto et al., 2021).\n\nStrengths of this study include the use of the largest and most recent GWAS statistics available for all traits, as well as consistent directional effect trends across multiple analyses. However, these analyses were restricted to individuals of European descent, perhaps limiting generalizability. Our study is also subject to limitations of currently available MR methods, including potential MR assumption violations (see Materials and methods), unforeseen pleiotropy, or traits correlating with BMI or WHR that may confound direct causality (Burgess et al., 2019).\n\nAt minimum, this provides a rationale for concurrent BMI and WHR adjustments when analyzing blood trait GWAS loci to avoid directional bias. These adjustments also provide novel stratification criteria for blood trait GWAS fine mapping studies and candidate blood gene selection. This will be particularly important for studies aiming to explain metabolic or stromal effects on blood cells, which are notably distinct from cholesterol- or lipid-mediated peripheral effects on erythroid cells at the genetic level.\n\n## Materials and methods\n\n### GWAS summary statistics collection\n\nWe analyzed publicly available GWAS summary statistics for blood traits (n = 563,085) (Vuckovic et al., 2020), BMI (n = 484,680) (Pulit et al., 2019), WHR (n = 485,486) (Pulit et al., 2019), WHRadjBMI (n = 484,563) (Pulit et al., 2019), CAD (n = 547,261) (van der Harst and Verweij, 2018), and lipid traits including TC (n = 215,551), TG (n = 211,491), LDL (n = 215,196), and HDL (n = 210,967) (Klarin et al., 2018). A glossary of these traits, including unit measurements and descriptions, is available in Supplementary file 1\u2014Table 24. Data were derived from individuals of European ancestry only and were analyzed using genome build hg19/GRCh37.\n\n### Instrumental variable creation\n\nTo construct instrumental variables (IVs), we identified all SNPs common to exposure and outcome data sets and clumped genome-wide significant SNPs for the exposure to identify linkage-independent SNPs (EUR r2 < 0.01) in 500 kb regions using TwoSample MR. IV strengths were estimated using F-statistics calculated as described (Burgess and Thompson, 2011). IVs used in this study can be found on GitHub (https://github.com/thomchr/ObesityAdiposityBloodMR) or obtained upon request.\n\n### MR and causal effect estimation\n\nUnivariable MR analyses (TwoSample MR package v0.5.5; Hemani et al., 2018) were conducted using R (v3.6.3). Random variant allele allocation at meiosis enables the MR approach to address confounding and reverse causality that can otherwise preclude causal inference from epidemiologic and cohort studies. Key assumptions must hold in order to make valid conclusions from MR studies. For example, independent genetic instruments (SNPs) must be specifically associated with the exposure trait. Weak instruments, the presence of horizontal pleiotropy, heterogeneity, and error in measured instrument-exposure associations can limit applicability or inferences gleaned from MR studies (Burgess et al., 2019).\n\nPresented data show causal estimates from IVW (random effects model), weighted median, and MR Egger regression methods. We assessed pleiotropic bias using MR Egger regression intercepts, which if significantly non-zero can imply directional bias (Bowden et al., 2015). MVMR analyses utilized the MVMR package (Sanderson et al., 2019) in R. Results shown are IVW method-based causal estimates. Causal direction analyses utilized MR-Steiger and we report values for sensitivity, statistical significance, and inference of the \u2018correct causal direction\u2019 (Hemani et al., 2017).\n\nFor continuous outcomes (blood traits, lipid traits, BMI), results are presented as beta effect values representing changes in SD units for these traits, per SD unit change in exposure. SD unit estimations were previously calculated for BMI (Gharahkhani et al., 2019) and HGB (Beutler and Waalen, 2006). For dichotomous outcomes (CAD), causal effect estimates can be converted to odds ratios by exponentiating causal effect estimates ( = exp^[effect]) to calculate a value reflecting the change in outcome per SD unit increase in exposure (Burgess and Labrecque, 2018). However, CAD outcome values are presented as SD units to facilitate comparison with blood trait effects.\n\n### Mediation analysis\n\nMediation analysis estimates were calculated as described (Burgess et al., 2017). Total and direct effects are reported for the exposure and mediating trait on each outcome.\n\n### Conditional GWAS analysis\n\nConditional analyses of filtered SNP sets, containing SNPs found in BMI, WHR, and blood trait summary statistics, were analyzed using mtCOJO with a limit of r2 < 0.01 (Yang et al., 2011). Results were clumped using plink (v1.90 beta) (Purcell et al., 2007) to identify linkage-independent sentinel SNPs with r2 < 0.01 in 500 kb genomic regions (flagged parameters were --clump-p1 5E-8 --clump-p2 1 --clump-r2 0.01 --clump-kb 500). Separate experiments were performed on the same filtered SNP sets to adjust for BMI, or both BMI and WHR. To compare uncorrected with BMI- or BMI-and-WHR-adjusted results, we aggregated sentinel SNPs and clumped based on original GWAS p-values (--clump-p1 1 --clump-p2 1 --clump-r2 0.01 --clump-kb 500) to retrieve a complete set of linkage-independent loci. This second clump output allowed us to calculate how many regions were shared, nullified, or novel in the adjusted vs. unadjusted data sets. The gene nearest to each sentinel locus was identified using bedtools (Quinlan and Hall, 2010). Locus zoom plots were created through the online instrument (http://locuszoom.org, Pruim et al., 2010).\n\n### Gene-level analyses\n\nWe identified gene and tissue associations for blood trait summary statistics before and after adjustment using FUMA (Watanabe et al., 2019), which uses MAGMA for gene identification (de Leeuw et al., 2015).\n\n### Gene ontology\n\nGene lists were analyzed for significantly over- or under-enriched gene ontology biological processes. Statistical significance was assigned based on Fisher\u2019s exact test p < 0.05 after Bonferroni correction for multiple testing (http://geneontology.org, Mi et al., 2019).\n\n### Statistical analyses and data presentation\n\nEstimated effects from exposure(s) on outcome are presented from IVW, weighted median, and MR Egger regression measures. Because Cochran\u2019s Q test (included in the TwoSample MR package; Hemani et al., 2018 found heterogeneity in some IVs, we utilized the random effect model when performing inverse variance weighted MR). Thus, we performed and report MR results using IVs that had not undergone pruning. Statistical significance was defined as p < 0.05 for all experiments. For experiments that analyzed 16 blood traits, we also report those that met a more stringent threshold of p < 0.003 (~0.05/16).\n\nStatistics were calculated with GraphPad Prism 8. Figures were prepared using GraphPad Prism 8 and Inkscape (v1.1). Schematic cartoons were created using BioRender.\n\n### Coding scripts and data sets\n",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "b06c1404-cc07-4d2d-93d3-c39acb05a6be",
+      "submission_id": "4603820e-0671-46be-9304-50bacdafbbbb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sara H\u00e4gg, https://ror.org/056d84691 Karolinska Institutet Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75317.sa0](https://doi.org/10.7554/eLife.75317.sa0)\n\nThe study shows that genetically determined adiposity plays a previously underappreciated role in determining blood cell formation and function. The authors have clearly spelled out their hypothesis and performed all the relevant and available analyses in the \"Mendelian Randomization toolbox\". The study will help understand the pathogenesis for clonal hematopoiesis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sara H\u00e4gg, https://ror.org/056d84691 Karolinska Institutet Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75317.sa1](https://doi.org/10.7554/eLife.75317.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Obesity and adiposity have opposing genetic impacts on human blood traits\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Sara H\u00e4gg as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by David James as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nIn your revision, please address in particular the following issues, as well as the points mentioned in the individual reviewers' reports below.\n\n1) Please explain in more detail why the study was done, what the main hypothesis tested were, and how are all the extra analyses fit into this. There are many different exposures and outcomes used, which makes it difficult to follow the story. For example, how are all the blood traits connected, what were the expected associations and how does the result confirm or contradict those expectations?\n\n2) Both adiposity (WHR) and obesity (BMI) are introduced without further explanations. Why was BMI defined as obesity and WHR as adiposity? In many studies, BMI is referred to as adiposity as well. Especially when a continuous scale of SD increase is used, as in this study. If obesity is what is intended, this is most often defined as a BMI > 30, hence a dichotomized value.\n\n3) Please provide a better definition of some key terms such as genetically determined body mass index.\n\n4) More details are needed around units presented.\n\n5) Is there additional clinical evidence available that supports the findings \u2013 for instance are obese people with low hematocrit more or less likely to develop other metabolic diseases?\n\n6) In biological contexts such as here, sex should be used to refer to men versus women.\n\n7) Please discuss the generalizability of your findings as well as strengths and weaknesses of your study.\n\nReviewer #1 (Recommendations for the authors):\n\nOverall, why was the study done? What is the main hypothesis that was tested, and how are all the extra analyses fitting into this? There are many different exposures and outcomes used, and it makes it difficult to follow. In what way are all the blood traits connected? What were the expected associations and how does the result confirm or contradict those expectations?\n\nRelated to that, in the introduction both adiposity (WHR) and obesity (BMI) are introduced without further explanations. Why was BMI defined as obesity and WHR as adiposity? No references listed. In many studies, BMI is referred to as adiposity as well. Especially when a continuous scale of SD increase is used, as in this study. If obesity is what is intended, this is most often defined as a BMI > 30, hence a dichotomized value.\n\nMore details are needed around units presented. What does an SD increase in BMI causing a 0.057 SD decrease in HGB mean? If this study is indeed done to facilitate interpretation and clinical management as claimed, what is the clinical interpretation of this result? Unit change in clinical meaningful HGB levels, and put in relation to e.g. a treatment effect?\n\nGender is a socio-cultural concept. Sex is used in the biological context.\n\nNo discussion around generalizability or strengths and weaknesses with the current study. MR assumptions or shortcomings with the method not described.\n\nReviewer #2 (Recommendations for the authors):\n\nThe study is well performed, presented, written, and novel. The authors utilize summary statistics from publicly available resources.\n\nThe methodological section is adequate and clearly describes resources, design, and statistics. The authors performed all the relevant and available MR analyses in the \"toolbox\".\n\nFigures are good.\n\nFigure 2f: spell error in \"process\" (spelled \"rocess\")\n\nFigure supplement 2 a-e: these figures are almost impossible to read. Please make one figure per page.\n\nReviewer #3 (Recommendations for the authors):\n\nThe manuscript would benefit from a better definition of some key terms such as genetically determined body mass index, the authors here probably intend to describe the genetic component of BMI as described in M and M. Along the same lines, the authors use truncal adiposity and adipose distribution, rather than adipose tissue or fat.\n\nLines 136-137, the authors should put the 36 folds changes into appropriate context (e.g. from x% SD to y% SD), otherwise it would be hard for the inexperienced reader to appropriately judge these changes.\n\nSome parts of the discussion (lines 197-199) are hard to follow and perhaps they should be explained with a few more sentences and/or in more layman terms.\n\nIn line 204 the authors claim that there is the first example of divergent genome wide effects between BMI and truncal adiposity, however similar claims have been made also in one of the articles from which they took part of the data for their analyses.\n",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dd202d84-5926-473e-923e-1eda8cf149a5",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C1",
+      "claim": "Each standard deviation (SD) unit increase in BMI causes a 0.057 SD decrease in HGB levels by the inverse variance weighted (IVW) method (p = 1.0 \u00d7 10\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "Using MR, we found that each standard deviation (SD) unit increase in BMI caused a 0.057 SD decrease in HGB levels by the inverse variance weighted (IVW) method (p = 1.0 \u00d7 10\u20135) that was directionally consistent across sensitivity analyses without evidence of horizontal pleiotropy or weak instrument bias (Figure 1a, Figure 1\u2014figure supplement 1a, Supplementary file 1\u2014Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Mendelian randomization analysis results presented in the manuscript, including statistical significance values and reference to supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "233f55c1-64d5-4318-9610-1994f4cce119",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C2",
+      "claim": "BMI has similar effects on HCT as on HGB.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar effects were observed for HCT (Figure 1b and Figure 1\u2014figure supplement 1b), suggesting BMI is genetically linked with reduced HGB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in figures and the text statement comparing effects on HCT to HGB.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "33623541-1651-4efa-b00a-6e72f8c65f5f",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C3",
+      "claim": "Increased total cholesterol (TC) or lipid fractions (LDL or HDL), but not triglyceride levels (TG), decreased HGB or HCT.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that increased total cholesterol (TC) or lipid fractions (low density lipoprotein [LDL] or high density lipoprotein [HDL]), but not triglyceride levels (TG), decreased HGB or HCT (Figure 1\u2014figure supplements 2\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in supplementary figures showing effects of different lipid fractions on erythroid traits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "8e477476-ff0c-4899-bb63-e3c05f7ab827",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C4",
+      "claim": "Cholesterol levels alter erythroid traits via mechanisms independent from BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "However, multivariable and mediation experiments revealed that cholesterol levels alter erythroid traits via mechanisms independent from BMI (Figure 1\u2014figure supplement 3b and Supplementary file 1\u2014Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by multivariable MR and mediation analysis results shown in figures and supplementary tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "ffb67b4a-6862-49bd-8791-e8b288d565d5",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C5",
+      "claim": "BMI did not alter erythrocyte mean corpuscular volume (MCV) by MR (p = 0.12).",
+      "claim_type": "EXPLICIT",
+      "source": "However, BMI did not alter erythrocyte mean corpuscular volume (MCV) by MR (p = 0.12, Figure 1c, Figure 1\u2014figure supplement 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by MR analysis results with a non-significant p-value and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "5088f3b7-ab59-4a80-a08f-6b77cedcb513",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C6",
+      "claim": "Higher WHR increased red blood cell (RBC) traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, and in contrast to BMI, higher WHR increased red blood cell (RBC) traits (Figure 1a and b and Figure 1\u2014figure supplement 6a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in multiple figures demonstrating the effect of WHR on RBC traits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "5f8c49c8-ebdf-4787-a823-c4da35d8c48b",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C7",
+      "claim": "WHR adjusted for BMI on an individual level (WHRadjBMI) exacerbated the positive effects of WHR on RBC traits.",
+      "claim_type": "EXPLICIT",
+      "source": "WHR adjusted for BMI on an individual level (WHRadjBMI) exacerbated these positive effects (Figure 1a and b and Figure 1\u2014figure supplement 6c,d) and also associated with decreased MCV (Figure 1c and Figure 1\u2014figure supplement 4b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data comparing WHR and WHRadjBMI effects shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "e65b5da2-ee7d-47bf-8308-ee3fac1e468e",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C8",
+      "claim": "WHR and BMI have opposing, cross-mediating effects on erythroid traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariable analyses formally validated the opposing, cross-mediating effects of BMI and WHR on erythroid traits (Figure 1a, b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by multivariable MR analysis results presented in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "d898e2af-e129-4329-8b0f-57aae0958643",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C9",
+      "claim": "WHR and BMI have cross-mediating opposing effects on quantitative blood counts across cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariable and mediation analyses on other blood traits identified cross-mediating opposing effects of WHR and BMI on quantitative blood counts across cell lineages (Figure 1d, e and f and Figure 1\u2014figure supplements 7\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by multivariable and mediation analysis results shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "b6d7077c-d895-431d-9167-abf523ad2919",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C10",
+      "claim": "The directionally consistent effects of BMI and WHR across multiple lineages suggest that underlying mechanisms relate to hematopoietic stem and progenitor cells (HSCs) common to these lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The directionally consistent effects across multiple lineages suggested that underlying mechanisms related to hematopoietic stem and progenitor cells (HSCs) common to these lineages (Thom and Voight, 2020; Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference based on observed data patterns across lineages, supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "2a6d50d3-26bd-4146-9053-7a10287b75a9",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C11",
+      "claim": "BMI adjustment modestly changed SNP effect sizes and retained most (91%) unadjusted lead sentinel variants.",
+      "claim_type": "EXPLICIT",
+      "source": "BMI adjustment modestly changed SNP effect sizes and retained most (91%) unadjusted lead sentinel variants (Figure 2a and b and Supplementary file 1\u2014Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by conditional GWAS analysis results showing the proportion of retained variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "c16e44c3-b2f9-489e-99d4-ecbe11668e2e",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C12",
+      "claim": "Combined BMI and WHR adjustment resulted in substantial SNP effect size changes (>36-fold increased SD vs. BMI adjustment alone, p < 0.0001 by F-test to compare variances).",
+      "claim_type": "EXPLICIT",
+      "source": "However, combined BMI and WHR adjustment resulted in substantial SNP effect size changes (>36-fold increased SD (SD = 7.6 \u00d7 10\u20133) vs. BMI adjustment alone (SD = 2.1 \u00d7 10\u20134), p < 0.0001 by F-test to compare variances), with a negative skew (\u20132.0) reflecting adjustment for the positive effect of WHR on HGB levels (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical comparison of effect size distributions after different adjustments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "d23105d5-1486-4648-bdf9-12cd0c2e5057",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C13",
+      "claim": "Combined BMI/WHR adjustment shifted 341 HGB-associated loci toward the null.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined BMI/WHR adjustment shifted 341 HGB-associated loci toward the null, supporting a key role for BMI- and WHR-mediated mechanisms at these sites, while also identifying 844 sites that either clarified interpretation of previously implicated HGB loci or tagged previously unreported regions (n = 242 novel loci, Figure 2b and Supplementary file 1\u2014Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by conditional GWAS analysis results quantifying the number of loci affected by adjustment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "49b0ee18-3e5f-4a3f-8677-db20962363ea",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C14",
+      "claim": "Combined BMI/WHR adjustment identified 242 novel HGB-associated loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined BMI/WHR adjustment shifted 341 HGB-associated loci toward the null, supporting a key role for BMI- and WHR-mediated mechanisms at these sites, while also identifying 844 sites that either clarified interpretation of previously implicated HGB loci or tagged previously unreported regions (n = 242 novel loci, Figure 2b and Supplementary file 1\u2014Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by conditional GWAS analysis results identifying new genome-wide significant loci after adjustment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "e1d06b78-950d-4ecb-89d2-84377f728cf4",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C15",
+      "claim": "A missense coding variant in RAPGEF3 (rs145878042) did not meet genome-wide significance for HGB (p = 0.003) until BMI/WHR adjustment (p = 2.4 \u00d7 10\u201314).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a missense coding variant in RAPGEF3 (rs145878042), previously linked to BMI (Pulit et al., 2019), WHRadjBMI (Pulit et al., 2019), and platelet distribution width (Vuckovic et al., 2020), did not meet genome-wide significance for HGB (p = 0.003) until BMI/WHR adjustment (p = 2.4 \u00d7 10\u201314, Figure 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data showing p-values before and after adjustment, with citations to prior GWAS studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "c5fdb7e4-2be2-4edf-ad99-b16ecfe665da",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C16",
+      "claim": "RSPO3 is a Wnt pathway modulator that directs development of bone and other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "RSPO3, a Wnt pathway modulator that directs development of bone and other tissues (Nilsson et al., 2021), has been linked with adipose distribution (Pulit et al., 2019) and blood trait variation (Vuckovic et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature describing RSPO3 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "253ab4fb-c3bd-494f-8ddc-105d699462e0",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C17",
+      "claim": "RSPO3 has been linked with adipose distribution and blood trait variation.",
+      "claim_type": "EXPLICIT",
+      "source": "RSPO3, a Wnt pathway modulator that directs development of bone and other tissues (Nilsson et al., 2021), has been linked with adipose distribution (Pulit et al., 2019) and blood trait variation (Vuckovic et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior GWAS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "c343847e-6bf8-478f-83f9-a8054c03ae62",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C18",
+      "claim": "At the gene level, association with LEPR in adjusted analysis for HGB elevated to statistical attention.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at the gene level, association with LEPR in these adjusted analysis for HGB elevated to statistical attention (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene-based analysis results shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "5f143fef-03d5-49d8-87c1-7cd0d44301c3",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C19",
+      "claim": "LEPR perturbations cause obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "LEPR perturbations cause obesity (Dubern and Clement, 2012), and LepR+ endothelial niches support HSC survival (Comazzetto et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature on LEPR function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "e846da69-d93c-4e5b-bdbc-48adbd9b0457",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C20",
+      "claim": "LepR+ endothelial niches support HSC survival.",
+      "claim_type": "EXPLICIT",
+      "source": "LEPR perturbations cause obesity (Dubern and Clement, 2012), and LepR+ endothelial niches support HSC survival (Comazzetto et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature on LepR+ niche function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "351a9f31-bbeb-4761-a66e-145400a52899",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C21",
+      "claim": "Adjusted HGB locus-related genes were enriched for some endothelial and mesenchymal development processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, adjusted HGB locus-related genes were enriched for some endothelial and mesenchymal development processes, albeit with diminished p-values due to power loss from limited SNP sets (Figure 2f and Supplementary file 1-Tables 8\u201317).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology enrichment analysis results shown in figures and supplementary tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "4cb7f6ae-b000-4a6e-8300-8714d2db95d9",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C22",
+      "claim": "Adjusted RBC, PLT, and WBC data demonstrated enrichment of endothelial and cell adhesion pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjusted RBC, PLT, and WBC data also demonstrated enrichment of endothelial and cell adhesion pathways (Figure 2\u2014figure supplement 1 and Supplementary file 1-Tables 18\u201323).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology enrichment analysis results shown in supplementary figures and tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "5a2d1b82-a80a-4a1d-8bbb-659c664017aa",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C23",
+      "claim": "Genetically determined BMI is causally associated with lower HGB and HCT levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with most clinical observations (Aigner et al., 2014), genetically determined BMI is indeed causally associated with lower HGB and HCT levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary statement supported by the MR analysis results presented earlier in the manuscript and cited clinical observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "6039b079-49b7-4696-9ca5-6de7938022ba",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C24",
+      "claim": "Adipose distribution can influence obesity-related comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas increased BMI or WHR are typically thought to concordantly raise cardiovascular risk, our results agree with recent findings showing that adipose distribution can influence obesity-related comorbidities (Huang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to recent literature and agreement with the study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "d272db2d-9ee6-470a-bd9d-281f72c68ec2",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C25",
+      "claim": "A 1 SD unit increase in BMI (~4.8 kg/m2) decreases HGB by ~0.06 g/dL.",
+      "claim_type": "EXPLICIT",
+      "source": "While the absolute effect sizes are unlikely to impact patient management (e.g., a 1 SD unit increase in BMI [~4.8 kg/m2] decreases HGB by ~0.06 g/dL [Beutler and Waalen, 2006; Gharahkhani et al., 2019]), genetic mechanisms linking BMI, WHR, and blood traits may help elucidate how cardiovascular disease (Heyde et al., 2021; Rohde et al., 2021) and cardiometabolic derangements (Fuster et al., 2020; Jaiswal et al., 2014) are linked to normal or clonal hematopoiesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by conversion of SD units to clinical units using cited references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "737358e2-3305-40d1-b4cd-f5ed61cc2153",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C26",
+      "claim": "Genetic predisposition to accumulate bone marrow white adipose tissue may underlie age- or obesity-related cytopenias by regulating HSC self-renewal or differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, genetic predisposition to accumulate bone marrow white adipose tissue may underlie age- (Tuljapurkar et al., 2011) or obesity-related (Benova and Tencerova, 2020) cytopenias by regulating HSC self-renewal or differentiation (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative mechanistic explanation supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "c32be098-33be-4402-a8e7-54238d42e1cd",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C27",
+      "claim": "Genetically determined differences in bone marrow stromal cell types could impact HSC biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, genetically determined differences in bone marrow stromal cell types (e.g., mesenchymal stem cell-derived bone marrow adipocytes; Zhong et al., 2020) could impact HSC biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative mechanistic explanation supported by citation to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "888988d8-b9e8-4091-8603-b7f653c618c2",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C28",
+      "claim": "WHR-related mechanisms impacting blood trait variation may reflect inhibitory paracrine or endocrine effects from gluteal or truncal adipose depots.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, WHR-related mechanisms impacting blood trait variation may reflect inhibitory paracrine or endocrine effects from gluteal or truncal adipose depots (Comazzetto et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative mechanistic explanation supported by citation to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "db959c1e-433a-4664-8191-9d0830b242b9",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C29",
+      "claim": "The study analyzed publicly available GWAS summary statistics for blood traits (n = 563,085).",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed publicly available GWAS summary statistics for blood traits (n = 563,085) (Vuckovic et al., 2020), BMI (n = 484,680) (Pulit et al., 2019), WHR (n = 485,486) (Pulit et al., 2019), WHRadjBMI (n = 484,563) (Pulit et al., 2019), CAD (n = 547,261) (van der Harst and Verweij, 2018), and lipid traits including TC (n = 215,551), TG (n = 211,491), LDL (n = 215,196), and HDL (n = 210,967) (Klarin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data sources used in the study with citations to the original GWAS publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "f9ca47f1-ea27-4db3-9733-8c04a3e2f28d",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C30",
+      "claim": "Data were derived from individuals of European ancestry only.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were derived from individuals of European ancestry only and were analyzed using genome build hg19/GRCh37.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological detail about the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "eb91e26d-f5e7-47d2-8f2e-96c6b7c71736",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C31",
+      "claim": "Adipocytes and endothelial cells within the bone marrow environment regulate hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Adipocytes and endothelial cells within the bone marrow environment regulate hematopoiesis (Comazzetto et al., 2021; Zhong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature on bone marrow niche biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "cc1ad7ab-d500-43c9-9039-7adadf8d84f5",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C32",
+      "claim": "White adipose tissue has a derogatory effect on hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, white adipose tissue has a derogatory effect on hematopoiesis, whereas mesenchymal-derived bone marrow adipocyte populations support blood cell formation (Comazzetto et al., 2021; Cuminetti and Arranz, 2019; Wang et al., 2018; Zhong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature on adipose tissue effects on hematopoiesis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "baffc286-d114-45eb-8b36-0591768f0c06",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C33",
+      "claim": "Mesenchymal-derived bone marrow adipocyte populations support blood cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, white adipose tissue has a derogatory effect on hematopoiesis, whereas mesenchymal-derived bone marrow adipocyte populations support blood cell formation (Comazzetto et al., 2021; Cuminetti and Arranz, 2019; Wang et al., 2018; Zhong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature on bone marrow adipocyte function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "335652c4-410c-4f75-987f-6250ddf89e2f",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C34",
+      "claim": "SNPs that genetically increase body mass index (BMI) also raise metabolic and cardiovascular disease risks.",
+      "claim_type": "EXPLICIT",
+      "source": "Single nucleotide polymorphisms (SNPs) that genetically increase body mass index (BMI) also raise metabolic and cardiovascular disease risks (Pulit et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior GWAS literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "57b46607-7add-4276-9360-9444937406a9",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C35",
+      "claim": "Some observational studies have linked obesity (BMI > 30 kg/m2) with anemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Some observational studies have linked obesity (BMI > 30 kg/m2; Aigner et al., 2014) or hypercholesterolemia (Shalev et al., 2007) with anemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior observational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "840073b2-320f-463e-a264-a938eedd25bf",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C36",
+      "claim": "Some observational studies have linked hypercholesterolemia with anemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Some observational studies have linked obesity (BMI > 30 kg/m2; Aigner et al., 2014) or hypercholesterolemia (Shalev et al., 2007) with anemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior observational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "5f3ebc02-1c86-496e-81c2-2225d2bd1792",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C37",
+      "claim": "Some observational studies observed apparent erythrocytosis in obese individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, others observed apparent erythrocytosis in obese individuals (Keohane et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior observational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "eec6d437-54c3-4962-be50-7c44f6d17ec4",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C38",
+      "claim": "A genetic predisposition to accumulate truncal adipose tissue elevates waist-to-hip ratio (WHR).",
+      "claim_type": "EXPLICIT",
+      "source": "A genetic predisposition to accumulate truncal adipose tissue elevates waist-to-hip ratio (WHR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the relationship between adipose distribution and WHR based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "8ddb2eb4-b31f-48d9-9242-2433edc9401e",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C39",
+      "claim": "WHR influences cardiovascular risks.",
+      "claim_type": "EXPLICIT",
+      "source": "Like BMI, WHR influences cardiovascular risks (Huang et al., 2021; Pulit et al., 2019), but genetic impacts of WHR on blood traits are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature on WHR and cardiovascular risk.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "6ec9fca9-22d9-429b-948c-d395671eb358",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C40",
+      "claim": "Lipids can impact erythrocyte stability.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed genetically determined lipid fractions, since hyperlipidemia has been linked with anemia risk (Shalev et al., 2007) and since lipids can impact erythrocyte stability (Mohandas and Gallagher, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature on lipid effects on erythrocytes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "84933a43-b19f-4744-9f30-b7b6f555e7e7",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C41",
+      "claim": "Blood cell homeostasis is achieved through incompletely understood coordination of blood cell-intrinsic gene regulation and blood cell-extrinsic environmental mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood cell homeostasis is achieved through incompletely understood coordination of blood cell-intrinsic gene regulation and blood cell-extrinsic environmental mechanisms (Comazzetto et al., 2021; Ulirsch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature on hematopoietic regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "a49f9d4b-2101-4e3d-8855-70aefcd4645f",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C42",
+      "claim": "One shortcoming of blood trait GWAS has been an inability to identify extrinsic effects from these data.",
+      "claim_type": "EXPLICIT",
+      "source": "One shortcoming has been an inability to identify extrinsic effects from these data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an assessment of limitations in prior GWAS studies based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "1867be59-e34f-464b-b4c2-1adca68007bc",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C43",
+      "claim": "Discrete adipocyte populations differentially modulate systemic physiology and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrete adipocyte populations differentially modulate systemic physiology and homeostasis (Hildreth et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature on adipocyte heterogeneity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "0c72bf05-348c-4310-9d72-c955a56e39b2",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C44",
+      "claim": "Men generally have higher HGB and WHR than women.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings also argued against sex-related effects. Men generally have higher HGB (Vuckovic et al., 2020) and WHR (Pulit et al., 2019), but women can have higher platelet and neutrophil counts (Bain, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature on sex differences in blood traits and body composition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "2ad821a9-dc3e-4d4a-9de0-219bcf33ab7f",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C45",
+      "claim": "Women can have higher platelet and neutrophil counts than men.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings also argued against sex-related effects. Men generally have higher HGB (Vuckovic et al., 2020) and WHR (Pulit et al., 2019), but women can have higher platelet and neutrophil counts (Bain, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature on sex differences in blood traits.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "998e80c1-a947-4583-8bbf-4826f57f2328",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C46",
+      "claim": "The study was restricted to individuals of European descent, perhaps limiting generalizability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these analyses were restricted to individuals of European descent, perhaps limiting generalizability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an acknowledgment of a study limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "e0001147-6932-4789-8556-32503f894938",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C47",
+      "claim": "The study is subject to limitations of currently available MR methods, including potential MR assumption violations, unforeseen pleiotropy, or traits correlating with BMI or WHR that may confound direct causality.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study is also subject to limitations of currently available MR methods, including potential MR assumption violations (see Materials and methods), unforeseen pleiotropy, or traits correlating with BMI or WHR that may confound direct causality (Burgess et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an acknowledgment of methodological limitations with citation to MR methodology literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "77e0d20b-126b-4879-89d7-d629dd5be8bb",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C48",
+      "claim": "Concurrent BMI and WHR adjustments when analyzing blood trait GWAS loci can avoid directional bias.",
+      "claim_type": "EXPLICIT",
+      "source": "At minimum, this provides a rationale for concurrent BMI and WHR adjustments when analyzing blood trait GWAS loci to avoid directional bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "471fd47e-a3fd-46fc-a284-4e3078703b68",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C49",
+      "claim": "BMI and WHR adjustments provide novel stratification criteria for blood trait GWAS fine mapping studies and candidate blood gene selection.",
+      "claim_type": "EXPLICIT",
+      "source": "These adjustments also provide novel stratification criteria for blood trait GWAS fine mapping studies and candidate blood gene selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a recommendation for future research based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "13d2d5eb-8311-4553-8033-baf7383e0ee0",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "claim_id": "C50",
+      "claim": "Cholesterol- or lipid-mediated peripheral effects on erythroid cells are distinct from metabolic or stromal effects on blood cells at the genetic level.",
+      "claim_type": "EXPLICIT",
+      "source": "This will be particularly important for studies aiming to explain metabolic or stromal effects on blood cells, which are notably distinct from cholesterol- or lipid-mediated peripheral effects on erythroid cells at the genetic level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the study's findings showing independent effects of lipids and BMI/WHR.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d5d35e5c-b1ba-4d82-977d-4dbdc481ddf3",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Genetically determined BMI causally decreases hemoglobin (HGB) and hematocrit (HCT) levels. Each SD unit increase in BMI causes a 0.057 SD decrease in HGB (p = 1.0 \u00d7 10\u207b\u2075), with similar effects on HCT, consistent across sensitivity analyses without evidence of horizontal pleiotropy or weak instrument bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C23 are well-supported by Mendelian randomization analyses using multiple methods (IVW, weighted median, MR Egger) with appropriate sensitivity analyses. The statistical significance is robust (p = 1.0 \u00d7 10\u207b\u2075), and the authors properly tested for pleiotropy and weak instrument bias. The findings align with cited clinical observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "13b6ed4b-da4b-46a8-8b7a-e02161f8ecc4",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Increased cholesterol levels (TC, LDL, HDL, but not TG) decrease HGB and HCT through mechanisms independent of BMI. Multivariable MR and mediation analyses demonstrate that cholesterol effects on erythroid traits are distinct from BMI-mediated effects at the genetic level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, and C50 are supported by multivariable MR and mediation analyses showing independent effects of lipids and BMI on erythroid traits. The statistical evidence is presented in multiple supplementary figures, and the independence is formally tested through appropriate conditional analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "29380589-b529-43c1-80df-9a383fd42497",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "BMI does not alter erythrocyte mean corpuscular volume (MCV) by Mendelian randomization (p = 0.12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by MR analysis showing no significant effect of BMI on MCV (p = 0.12). This negative result is important as it argues against microcytosis-related mechanisms (iron deficiency, chronic inflammation) as explanations for BMI-related anemia at the genetic level.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "a40ca196-f986-469a-89cf-bc8baeecf240",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Waist-to-hip ratio (WHR) has opposing effects to BMI on erythroid traits, with higher WHR increasing RBC traits. WHR adjusted for BMI (WHRadjBMI) exacerbates these positive effects and associates with decreased MCV. Multivariable analyses validate the opposing, cross-mediating effects of BMI and WHR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, and C8 are well-supported by univariable and multivariable MR analyses showing directionally opposite effects of WHR compared to BMI. The data are presented across multiple figures with appropriate statistical methods. The finding that WHRadjBMI strengthens the effect provides additional evidence for independent mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "30d638da-9868-4666-b808-e2fbd128e004",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BMI and WHR have cross-mediating opposing effects on quantitative blood counts across multiple cell lineages (erythroid, platelet, white blood cells). The directionally consistent effects across lineages suggest underlying mechanisms relate to hematopoietic stem and progenitor cells (HSCs) common to these lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C10 are supported by multivariable and mediation analyses across multiple blood traits shown in multiple figures. The inference about HSC involvement (C10) is reasonable given the multi-lineage effects, though it remains an inference rather than direct demonstration. The logic is sound and supported by citation to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "7a48bb3c-fc8d-42ab-b583-55fcbba24c16",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Conditional GWAS analysis adjusting for BMI and WHR substantially alters blood trait loci interpretation. Combined BMI/WHR adjustment resulted in >36-fold increased effect size variance compared to BMI adjustment alone (p < 0.0001), shifted 341 HGB loci toward the null, and identified 242 novel HGB-associated loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are supported by conditional GWAS analyses using mtCOJO with appropriate statistical comparisons (F-test for variance comparison). The quantification of loci affected (341 shifted, 242 novel) is clearly documented. The substantial difference between BMI-only and BMI/WHR adjustment (>36-fold) is statistically significant and biologically meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "129db4df-ab05-4a0d-a318-9774fe9112d9",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A missense variant in RAPGEF3 (rs145878042) reached genome-wide significance for HGB only after BMI/WHR adjustment (unadjusted p = 0.003, adjusted p = 2.4 \u00d7 10\u207b\u00b9\u2074), exemplifying how adjustment reveals previously masked associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is supported by conditional GWAS data showing dramatic p-value change after adjustment. The variant was previously linked to BMI, WHRadjBMI, and platelet traits in cited studies, providing biological plausibility. This serves as a clear example of the utility of the adjustment approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "92279306-4515-42ad-828e-3043f8d867f0",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RSPO3, a Wnt pathway modulator directing bone and tissue development, has been linked with adipose distribution and blood trait variation in prior GWAS studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C17 accurately cite prior literature on RSPO3 function and genetic associations. These are background claims establishing context for the study's findings at the RSPO3 locus, properly attributed to cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "49b34fb7-6228-483a-bbdc-dd6a0364ff82",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gene-based analysis after BMI/WHR adjustment elevated LEPR association with HGB to statistical significance. LEPR perturbations cause obesity, and LepR+ endothelial niches support HSC survival, suggesting a mechanistic link between obesity genetics and hematopoiesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by gene-based analysis results (C18) and properly cited prior literature on LEPR function (C19, C20). The connection between LEPR genetics, obesity, and HSC biology provides biological plausibility for the observed associations, though the mechanistic link remains inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "c9290085-2e5d-4a89-b424-8e7b4b3c5d54",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Adjusted blood trait locus-related genes show enrichment for endothelial and mesenchymal development processes (HGB) and endothelial/cell adhesion pathways (RBC, PLT, WBC), though with diminished p-values due to reduced SNP sets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C22 are supported by gene ontology enrichment analyses presented in figures and supplementary tables. The authors appropriately acknowledge reduced statistical power due to smaller SNP sets after adjustment. The enrichment patterns are consistent with known biology of bone marrow niches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "c5c8d63c-6cbd-4d7c-a4f6-4c032b713c19",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Adipose distribution influences obesity-related comorbidities, though the absolute effect sizes of BMI on HGB (1 SD BMI increase [~4.8 kg/m\u00b2] decreases HGB by ~0.06 g/dL) are unlikely to impact clinical patient management.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C25 are supported by the study's findings and proper conversion to clinical units using cited references. The authors appropriately contextualize their findings, noting statistical significance without overstating clinical relevance. The agreement with recent literature (C24) is properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "ed903973-df20-4c5c-b6b0-92a63f9ba340",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Potential mechanisms linking BMI/WHR to blood traits include: genetic predisposition to bone marrow white adipose accumulation affecting HSC self-renewal/differentiation, differences in bone marrow stromal cell types (mesenchymal-derived adipocytes), or paracrine/endocrine effects from adipose depots.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C26-C28 are explicitly speculative mechanistic hypotheses supported by citations to relevant literature. While biologically plausible and well-grounded in prior work, these remain untested hypotheses in the current study. The authors appropriately present these as potential mechanisms ('may underlie', 'could impact', 'may reflect') rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "7c2c1150-6d6d-4a64-acfe-b8a988f19f08",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study analyzed publicly available GWAS summary statistics from large cohorts (n = 484,680-563,085) for blood traits, BMI, WHR, and related traits, restricted to individuals of European ancestry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C30 accurately describe the data sources with proper citations to original GWAS publications. Sample sizes are clearly stated and the restriction to European ancestry is explicitly acknowledged. This is straightforward methodological reporting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishing prior knowledge: adipocytes and endothelial cells regulate hematopoiesis with differential effects of white vs. bone marrow adipocytes; BMI SNPs raise disease risks; observational studies show conflicting obesity-anemia associations; WHR influences cardiovascular risk; lipids affect erythrocyte stability; blood trait GWAS have not identified extrinsic effects; sex differences exist in blood traits and body composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C45 are background/context claims properly supported by citations to relevant literature. These establish the rationale and knowledge gaps motivating the study. The citations appear appropriate and the characterizations of prior work are reasonable, though individual citations were not independently verified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "3345ce63-8023-4fb0-9e40-b3b99aba296c",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Study limitations include restriction to European ancestry (limiting generalizability) and inherent limitations of MR methods (potential assumption violations, unforeseen pleiotropy, confounding by correlated traits).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C47 appropriately acknowledge study limitations. The restriction to European ancestry is a real limitation for generalizability. The MR limitations are standard caveats properly cited to methodological literature. These represent appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    },
+    {
+      "id": "e54fee06-2314-4c8b-9bb0-6b8384aba54a",
+      "content_id": "2f9de59a-5c3c-499d-8494-7521224e8f16",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study provides rationale for concurrent BMI and WHR adjustments in blood trait GWAS analyses to avoid directional bias and offers novel stratification criteria for fine mapping and candidate gene selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C49 are reasonable recommendations based on the study's findings. The demonstration of opposing effects and substantial changes in loci interpretation after adjustment provides clear justification for these methodological recommendations for future studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:34.827574Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd202d84-5926-473e-923e-1eda8cf149a5",
+      "result_id": "d5d35e5c-b1ba-4d82-977d-4dbdc481ddf3"
+    },
+    {
+      "claim_id": "233f55c1-64d5-4318-9610-1994f4cce119",
+      "result_id": "d5d35e5c-b1ba-4d82-977d-4dbdc481ddf3"
+    },
+    {
+      "claim_id": "5a2d1b82-a80a-4a1d-8bbb-659c664017aa",
+      "result_id": "d5d35e5c-b1ba-4d82-977d-4dbdc481ddf3"
+    },
+    {
+      "claim_id": "33623541-1651-4efa-b00a-6e72f8c65f5f",
+      "result_id": "13b6ed4b-da4b-46a8-8b7a-e02161f8ecc4"
+    },
+    {
+      "claim_id": "8e477476-ff0c-4899-bb63-e3c05f7ab827",
+      "result_id": "13b6ed4b-da4b-46a8-8b7a-e02161f8ecc4"
+    },
+    {
+      "claim_id": "13d2d5eb-8311-4553-8033-baf7383e0ee0",
+      "result_id": "13b6ed4b-da4b-46a8-8b7a-e02161f8ecc4"
+    },
+    {
+      "claim_id": "ffb67b4a-6862-49bd-8791-e8b288d565d5",
+      "result_id": "29380589-b529-43c1-80df-9a383fd42497"
+    },
+    {
+      "claim_id": "5088f3b7-ab59-4a80-a08f-6b77cedcb513",
+      "result_id": "a40ca196-f986-469a-89cf-bc8baeecf240"
+    },
+    {
+      "claim_id": "5f8c49c8-ebdf-4787-a823-c4da35d8c48b",
+      "result_id": "a40ca196-f986-469a-89cf-bc8baeecf240"
+    },
+    {
+      "claim_id": "e65b5da2-ee7d-47bf-8308-ee3fac1e468e",
+      "result_id": "a40ca196-f986-469a-89cf-bc8baeecf240"
+    },
+    {
+      "claim_id": "d898e2af-e129-4329-8b0f-57aae0958643",
+      "result_id": "30d638da-9868-4666-b808-e2fbd128e004"
+    },
+    {
+      "claim_id": "b6d7077c-d895-431d-9167-abf523ad2919",
+      "result_id": "30d638da-9868-4666-b808-e2fbd128e004"
+    },
+    {
+      "claim_id": "2a6d50d3-26bd-4146-9053-7a10287b75a9",
+      "result_id": "7a48bb3c-fc8d-42ab-b583-55fcbba24c16"
+    },
+    {
+      "claim_id": "c16e44c3-b2f9-489e-99d4-ecbe11668e2e",
+      "result_id": "7a48bb3c-fc8d-42ab-b583-55fcbba24c16"
+    },
+    {
+      "claim_id": "d23105d5-1486-4648-bdf9-12cd0c2e5057",
+      "result_id": "7a48bb3c-fc8d-42ab-b583-55fcbba24c16"
+    },
+    {
+      "claim_id": "49b0ee18-3e5f-4a3f-8677-db20962363ea",
+      "result_id": "7a48bb3c-fc8d-42ab-b583-55fcbba24c16"
+    },
+    {
+      "claim_id": "e1d06b78-950d-4ecb-89d2-84377f728cf4",
+      "result_id": "129db4df-ab05-4a0d-a318-9774fe9112d9"
+    },
+    {
+      "claim_id": "c5fdb7e4-2be2-4edf-ad99-b16ecfe665da",
+      "result_id": "92279306-4515-42ad-828e-3043f8d867f0"
+    },
+    {
+      "claim_id": "253ab4fb-c3bd-494f-8ddc-105d699462e0",
+      "result_id": "92279306-4515-42ad-828e-3043f8d867f0"
+    },
+    {
+      "claim_id": "c343847e-6bf8-478f-83f9-a8054c03ae62",
+      "result_id": "49b34fb7-6228-483a-bbdc-dd6a0364ff82"
+    },
+    {
+      "claim_id": "5f143fef-03d5-49d8-87c1-7cd0d44301c3",
+      "result_id": "49b34fb7-6228-483a-bbdc-dd6a0364ff82"
+    },
+    {
+      "claim_id": "e846da69-d93c-4e5b-bdbc-48adbd9b0457",
+      "result_id": "49b34fb7-6228-483a-bbdc-dd6a0364ff82"
+    },
+    {
+      "claim_id": "351a9f31-bbeb-4761-a66e-145400a52899",
+      "result_id": "c9290085-2e5d-4a89-b424-8e7b4b3c5d54"
+    },
+    {
+      "claim_id": "4cb7f6ae-b000-4a6e-8300-8714d2db95d9",
+      "result_id": "c9290085-2e5d-4a89-b424-8e7b4b3c5d54"
+    },
+    {
+      "claim_id": "6039b079-49b7-4696-9ca5-6de7938022ba",
+      "result_id": "c5c8d63c-6cbd-4d7c-a4f6-4c032b713c19"
+    },
+    {
+      "claim_id": "d272db2d-9ee6-470a-bd9d-281f72c68ec2",
+      "result_id": "c5c8d63c-6cbd-4d7c-a4f6-4c032b713c19"
+    },
+    {
+      "claim_id": "737358e2-3305-40d1-b4cd-f5ed61cc2153",
+      "result_id": "ed903973-df20-4c5c-b6b0-92a63f9ba340"
+    },
+    {
+      "claim_id": "c32be098-33be-4402-a8e7-54238d42e1cd",
+      "result_id": "ed903973-df20-4c5c-b6b0-92a63f9ba340"
+    },
+    {
+      "claim_id": "888988d8-b9e8-4091-8603-b7f653c618c2",
+      "result_id": "ed903973-df20-4c5c-b6b0-92a63f9ba340"
+    },
+    {
+      "claim_id": "db959c1e-433a-4664-8191-9d0830b242b9",
+      "result_id": "7c2c1150-6d6d-4a64-acfe-b8a988f19f08"
+    },
+    {
+      "claim_id": "f9ca47f1-ea27-4db3-9733-8c04a3e2f28d",
+      "result_id": "7c2c1150-6d6d-4a64-acfe-b8a988f19f08"
+    },
+    {
+      "claim_id": "eb91e26d-f5e7-47d2-8f2e-96c6b7c71736",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "cc1ad7ab-d500-43c9-9039-7adadf8d84f5",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "baffc286-d114-45eb-8b36-0591768f0c06",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "335652c4-410c-4f75-987f-6250ddf89e2f",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "57b46607-7add-4276-9360-9444937406a9",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "840073b2-320f-463e-a264-a938eedd25bf",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "5f3ebc02-1c86-496e-81c2-2225d2bd1792",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "eec6d437-54c3-4962-be50-7c44f6d17ec4",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "8ddb2eb4-b31f-48d9-9242-2433edc9401e",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "6ec9fca9-22d9-429b-948c-d395671eb358",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "84933a43-b19f-4744-9f30-b7b6f555e7e7",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "a49f9d4b-2101-4e3d-8855-70aefcd4645f",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "1867be59-e34f-464b-b4c2-1adca68007bc",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "0c72bf05-348c-4310-9d72-c955a56e39b2",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "2ad821a9-dc3e-4d4a-9de0-219bcf33ab7f",
+      "result_id": "8965eb27-e057-4c67-91c9-9d7d86b01ca3"
+    },
+    {
+      "claim_id": "998e80c1-a947-4583-8bbf-4826f57f2328",
+      "result_id": "3345ce63-8023-4fb0-9e40-b3b99aba296c"
+    },
+    {
+      "claim_id": "e0001147-6932-4789-8556-32503f894938",
+      "result_id": "3345ce63-8023-4fb0-9e40-b3b99aba296c"
+    },
+    {
+      "claim_id": "77e0d20b-126b-4879-89d7-d629dd5be8bb",
+      "result_id": "e54fee06-2314-4c8b-9bb0-6b8384aba54a"
+    },
+    {
+      "claim_id": "471fd47e-a3fd-46fc-a284-4e3078703b68",
+      "result_id": "e54fee06-2314-4c8b-9bb0-6b8384aba54a"
+    }
+  ],
+  "comparisons": []
+}

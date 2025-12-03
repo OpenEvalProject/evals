@@ -1,0 +1,1750 @@
+{
+  "submission": {
+    "id": "91c50aa6-f44f-4fb0-98a6-f79f79907f1b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:27:32.295450Z",
+    "updated_at": "2025-12-03T16:27:32.295450Z"
+  },
+  "content": [
+    {
+      "id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "submission_id": "91c50aa6-f44f-4fb0-98a6-f79f79907f1b",
+      "content_type": "manuscript",
+      "content_text": "# CompoundRay, an open-source tool for high-speed and high-fidelity rendering of compound eyes\n\n## Authors\n\n- Blayze Millward<sup>1</sup> ([ORCID: 0000-0001-9025-1484](https://orcid.org/0000-0001-9025-1484)) \u2020\n- Steve Maddock<sup>1</sup> ([ORCID: 0000-0003-3179-0263](https://orcid.org/0000-0003-3179-0263))\n- Michael Mangan<sup>1</sup>\n\n### Affiliations\n\n1. Department of Computer Science, University of Sheffield Sheffield United Kingdom ([ROR:05krs5044](https://ror.org/05krs5044))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRevealing the functioning of compound eyes is of interest to biologists and engineers alike who wish to understand how visually complex behaviours (e.g. detection, tracking, and navigation) arise in nature, and to abstract concepts to develop novel artificial sensory systems. A key investigative method is to replicate the sensory apparatus using artificial systems, allowing for investigation of the visual information that drives animal behaviour when exposed to environmental cues. To date, \u2018compound eye models\u2019 (CEMs) have largely explored features such as field of view and angular resolution, but the role of shape and overall structure have been largely overlooked due to modelling complexity. Modern real-time ray-tracing technologies are enabling the construction of a new generation of computationally fast, high-fidelity CEMs. This work introduces a new open-source CEM software (CompoundRay) that is capable of accurately rendering the visual perspective of bees (6000 individual ommatidia arranged on 2 realistic eye surfaces) at over 3000 frames per second. We show how the speed and accuracy facilitated by this software can be used to investigate pressing research questions (e.g. how low resolution compound eyes can localise small objects) using modern methods (e.g. machine learning-based information exploration).\n\n## Introduction\n\nInsects visually solve an array of complex problems including the detection and tracking of fast moving prey (Wiederman et al., 2017), long-distance navigation (Wehner, 2020), and even three-dimensional (3D) depth estimation (Nityananda et al., 2018). These capabilities are realised using a sensory apparatus that is fundamentally different from those of mammals. Therefore revealing the functional properties of the insect visual system offers insights for biologists as well as inspiration for engineers looking to develop novel artificial imaging systems (Land and Fernald, 1992; Land, 1997; Arendt, 2003; Song et al., 2013).\n\nArthropods possess two primary visual sensors known as compound eyes. Each eye is constructed from a patchwork of self-contained light-sensing structures known as ommatidia, each featuring a lens, a light guide, and a cluster of photosensitive cells (Figure 1a). Ommatidia are physically interlocked with their neighbours, together forming a bulbous outer structure (the compound eye itself) that can vary in size, shape, and curvature, offering a range of adaptations for particular tasks and environments (Land and Nilsson, 2002; Figure 1b). The properties of the lens and photo-receptors are fixed for individual ommatidia but can vary across regions of an individual\u2019s eye (Meyer and Labhart, 1993) as well as between individuals of different castes (Collett and Land, 1975) and species (Land, 1989). This arrangement of independent, interlocked light sensing elements and lenses differs greatly from the mammalian system that utilises a single lens to project a high-resolution image onto a retina.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig1-v2.jpg)\n\n**Figure 1.:** (a) A diagram of a single ommatidium, shown with the lensing apparatus at the top that guides light into the photo-sensitive cells below. (b) An image of a real compound eye consisting of hundreds of ommatidia, available in WikiMedia Commons copyright holder Moussa Direct Ltd., copyright year 2001, distributed under the terms of a CC BY-SA 3.0 license (https://creativecommons.org/licenses/by-sa/3.0), and cropped with an added zoom indicator (red) from the original.\n\nCreation of compound eye models (CEMs), in both hardware or software, is a well-established mechanism to explore the information provided by compound eyes and assess their impact on behaviour. Insights derived from this methodology include demonstration of the benefits of a wide field of view (FOV) and low resolution for visual navigation (Zeil et al., 2003; Vardy and Moller, 2005; Mangan and Webb, 2009; Wystrach et al., 2016), and the role played by non-visible light sensing for place recognition (M\u00f6ller, 2002; Stone et al., 2006; Differt and M\u00f6ller, 2016) and direction sensing (Lambrinos et al., 1997; Gkanias et al., 2019). Yet, simulated CEMs tend to suffer from a common design shortcoming that limits their ability to accurately replicate insect vision. Specifically, despite differences in the sampling techniques used (e.g. see Mangan and Webb, 2009; Baddeley et al., 2012 for custom sampling approaches, Neumann, 2002; Basten and Mallot, 2010 for rendering based cubemapping CEMs, and Polster et al., 2018 for ray-casting methods), all contemporary CEMs sample from a single viewpoint. In contrast, the distributed arrangement of ommatidia on distinct 3D eye surfaces provides insects with a multi-viewpoint system that generates different information for different eye shapes.\n\nTo facilitate exploration of such features, e.g., the placement of ommatidia on arbitrary surfaces, an ideal rendering system would allow light to be sampled from different 3D locations through individually configured ommatidia replicating the complex structure of real compound eyes. High-fidelity compound-vision rendering engines with some of these features (though notably slower than real time) were developed previously (Giger, 1996; Collins, 1998; Polster et al., 2018) but were not widely adopted. Difficulties arising as a result of the computational complexity (and so execution time) of CEMs are diminishing as dedicated ray-casting hardware emerges that allows for the capture of visual data from multiple locations in parallel at high speed (e.g. Nvidia [Santa Clara, California, United States] RTX series GPUs [Purcell et al., 2005; Burgess, 2020]). Such systems present an ideal tool tferreo replicate insect vision in unprecedented accuracy at the speeds needed for effective exploration of the compound eye design space itself. As outlined in Millward et al., 2020, a next-generation insect eye renderer should:\n\nThis paper presents a ray-casting-based renderer, CompoundRay, that leverages modern hardware-accelerated ray-tracing (RT) graphics pipelines and fulfils all three of these criteria, allowing researchers in the fields of compound vision and biorobotics to quickly explore the impact varying eye designs have on an autonomous agent\u2019s ability to perceive the world.\n\n## Materials and methods\n\n### Ray-casting-based insect eye renderer\n\nA common approach for general real-time rendering such as that found in video games and interactive displays follows polygon-projection-based methods inspired by the simple pinhole camera. As Figure 2a shows, these systems function by directly projecting the faces and vertices of the scene\u2019s 3D geometry through a singular imaging point and on to a projection plane. In contrast, compound visual systems essentially form multiple pinhole-like viewing systems (Figure 2c), each with their own image point. This is similar to the effects that mirrors, lenses, and other reflective, diffracting, and refractive surfaces have on light transport, in which multiple imaging points are formed as the result of light being diverted from its original course (Figure 2b). A polygon projection approach will struggle with these optical phenomena as the process directly transforms the faces of the 3D object from the scene onto the camera\u2019s view plane, in effect applying a projection transform onto a plane or other regular surface forming a singular image point (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig2-v2.jpg)\n\n**Figure 2.:** (a) In three-dimensional (3D) projection-based rendering, the polygons that comprise the 3D geometry are projected down to a viewing plane, through one image point. (b) In 3D ray-casting-based rendering (used in this paper), rays are emitted into a scene and sample the 3D geometry they contact, potentially forming many image points. (c) A compound eye requires many image points in order to image its surroundings.\n\nDrawing on previous work from Polster et al., 2018, CompoundRay uses a ray-casting approach to rendering the insect visual perspective. Ray-based methods offer an alternative to projective transform rendering: rays are sent out from the virtual viewpoint, simulating \u2013 in reverse \u2013 the paths of photons from the scene into the cone of vision, accumulating colour from the surfaces they interact with (Figure 2b). This allows for surfaces such as mirrors and lenses to accurately reflect light being rendered. The term ray-based methods here is used as an umbrella term for all rendering approaches that primarily use the intersection of rays and a scene in order to generate an image. In particular, we refer to ray casting as the act of sampling a scene using a single ray (as per Roth, 1982) \u2013 a process that CompoundRay performs multiple times from each ommatidium \u2013 and ray tracing as the act of using multiple recursive ray casts to simulate light bouncing around a scene and off of objects within, similar to early work in the field of shading (Appel, 1968; Whitted, 1979). In this work we do not recursively cast rays, instead only using a single ray cast to sample directly the environment from an arbitrary point in 3D space (in this case, over the sampling cone of an ommatidium).\n\nRay-based approaches can be incredibly computationally complex, as each ray (of which there can be thousands per pixel) needs to be tested against every object in the scene (which can be composed of millions of objects) to detect and simulate interactions. Thus, they have historically only been used in offline cases where individual frames of an animation can take many hours to render, such as in cinema (Christensen et al., 2018), and prior to that in architectural and design drafting (Appel, 1968; Roth, 1982). In recent years, however, graphics processing units (GPUs) have been increasing in capability. In order to better capture the photo-realistic offerings of ray-based rendering methods, GPU manufacturers have introduced dedicated programmable RT hardware into their graphics pipelines (Purcell et al., 2005). These RT cores are optimised for efficient parallel triangle-line intersection, allowing billions of rays to be cast in real time into complex 3D scenes.\n\nAs compound eyes consist of a complex lensing structure formed over a non-uniform surface, they naturally form a multitude of imaging points across a surface (Figure 2c). These projection surfaces are often unique and varied, meaning it is practically infeasible to find a single projective transform to produce the appropriate composite view in a single projection-based operation. As a result, ray-based methods become the natural choice for simulating compound vision, as opposed to the more commonly seen projection-based methods. By utilising modern hardware, it is possible to effectively capture the optical features of the compound eye from the ommatidia up, in a high-fidelity yet performant way.\n\n### Modelling individual ommatidia\n\nAs the compound eyes of insects contain many hundreds or even thousands of lenses (Figure 1b) and each acts to focus light to its own point (forming a unique perspective), ray-based methods become the natural technology to use to implement a simulator that can capture their unique sensory abilities. Here, a single ommatidium is first examined, simulated, and then integrated into a complete compound eye simulation.\n\nEach individual ommatidium in a compound eye captures light from a cone of vision (defined by the ommatidial acceptance angle), much in the way that our own eyes observe only a forward cone of the world around us. However, in the case of the ommatidium, all light captured within the cone of vision is focused to a singular point on a small photo-receptor cluster, rather than the many millions of photo-receptors in the human eye that allow for the high-resolution image that we experience \u2013 in this way, the vision of a singular ommatidium is more akin to the singular averaged colour of all that is visible within its given cone of vision \u2013 its sampling domain, much as a pixel from a photo is the average colour of all that lies \u2018behind\u2019 it.\n\nCompoundRay uses Monte Carlo integration (Kajiya, 1986) to estimate the light intensity from the scene within the ommatidium\u2019s sampling domain, effectively forming a small pinhole-type camera at the position of the ommatidium. These discrete samples must be accrued in alignment with the ommatidium\u2019s sampling function \u2013 as the lens gathers more light from forward angles than those diverging away from the ommatidial axis. Increasing the sample count will result in a more accurate estimate of the light converging on the point.\n\nPrevious works Collins, 1998; Polster et al., 2018 have implemented this approximation of the light sampling function by assuming the influence of individual light rays, distributed statically across the sampling cone, is modulated dependent on the angle to the ommatidial axis via a Gaussian function with a full width at half maximum equal to the acceptance angle of the ommatidium, as seen in Figure 3a. CompoundRay also uses the Gaussian function as a basis for sampling modulation; however, unlike other works, it is not approximated via a static sampling pattern with weighting biasing the forward direction (as is seen in Figure 3a:i). Instead, sampling direction is modulated and chosen at random in relation to the Gaussian probability curve of the sampling function on a temporal, frame-by-frame basis. Each sample is assumed to have an equal weight, with the visual input to a single ommatidium then being formed as the average of all samples (Figure 3a:ii).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig3-v2.jpg)\n\n**Figure 3.:** (a) The Gaussian sampling curve (red) with a full width at half maximum (FWHM) equal to the acceptance angle of each ommatidium. (i) Example statically distributed sampling rays, length indicates weight. (ii) Example stochastically distributed sampling rays, equal weight, distributed according to Gaussian distribution. (b) A concentric circular static sampling pattern (red dots) aliases away the three concentric dark grey rings present on a surface. (c) The per-sample colours as seen from a single ommatidium mapping to the samples in b, note the lack of any influence from the dark grey concentric rings, which have been aliased out.\n\nStatic sampling can result in elements of the scene (in the case demonstrated in Figure 3b, dark grey circles) being aliased out of the final measurement of sensed light. Increasing per-ommatidium sampling rate can ease these aliasing problems (even in the case of a static sampling pattern) at close range but only serves to delay triggering aliasing until further distances where structural frequency again matches sampling pattern. Rather, by choosing to stochastically vary the sampled direction on a frame-by-frame basis removes the structured nature of any single frame\u2019s aliasing, as that same view point will generate different aliasing artefacts on the next frame, having the net effect of reducing structured aliasing when considering sequences of frames (Figure 3c). One benefit of this approach is that averaging renderings from the same perspective becomes synonymous with an increased sampling rate, indeed, this is how the renderer increases sampling rate internally: by increasing the rendering volume for the compound perspective, effectively batch-rendering and averaging frames from the same point in time. However, as each ommatidium will sample the simulated environment differently for every frame rendered, small variations in the colour received at any given ommatidium occur over time. This point is explored further in the \u2018Results\u2019 section.\n\nIn the natural compound eye, light focused from each ommatidium\u2019s sampling domain is transported via a crystalline cone and one or more rhabdomeres toward the receiving photo-receptor cluster \u2013 a process that has been modelled by Song et al., 2009. However, modelling the biophysical intricacies of the internal ommatidium structure is considered beyond the scope of this software and is considered a post-processing step that could be run on the generated image, considering each pixel intensity as a likelihood measure of photon arrival at an ommatidium.\n\n### From single ommatidia to full compound eye\n\nBy arranging the simulated ommatidia within 3D space so as to mimic the way real compound eyes are arranged, an image can be generated that captures the full compound eye view. For this task, per-ommatidium facet diameter and acceptance angle can be used to generate the cone of influence of each ommatidium, and simulated ommatidia can be placed at any position and orientation within the environment. As the system is using RT techniques to effectively simulate pinhole cameras at each individual ommatidium, orientation and position relative to the lens of each ommatidium can be set with a single per-ommatidium data point (consisting of the position, orientation, and lens properties), allowing each ommatidium to spawn rays independently of each other. This has the benefit of allowing the system to simulate any type of eye surface shape, and even multiple eyes simultaneously, fulfilling the first of the three defined criteria: allowing for the arrangement of an arbitrary number of ommatidia at arbitrary 3D points. The generated images can then be used to allow human viewers to visualise the information captured by the eye by projecting this visual surface onto a two-dimensional (2D) plane using orientation-wise or position-wise spherical equirectangular Voronoi diagrams of each ommatidium\u2019s visual input. Alternatively, a simpler vectorised projection method that plots the visual inputs of each ommatidium in a vector can be used directly as a standardised input to computational models of insect neurobiology.\n\n### The CompoundRay software pipeline\n\nThe renderer is written in C++ and the Nvidia Compute Unified Device Architecture (CUDA) GPU programming language and allows for a 3D environment representing a given experimental setup to be rendered from the perspective of an insect. The core of the renderer runs in parallel on the GPU (the device) as a series of CUDA shader programs, which are driven by a C++ program running on the host computer (the host). Environments are stored in GL Transmission Format (glTF; Robinet et al., 2014) files consisting of 3D objects and cameras, the latter of which can be of two types: compound (structured sets of ommatidia) or traditional (perspective, orthographic, and panoramic). Traditional cameras are implemented to aid the user in the design and analysis of their assembled 3D environment. Compound cameras contain all relevant information for rendering a view of the environment from the perspective of a compound eye. Each camera stores the information required for rendering its view (such as its orientation, position, FOV, or ommatidial structure) in an on-device data record data structure.\n\nFigure 4 shows the operational design of the renderer from the device side. The renderer is built on top of Nvidia\u2019s Optix (Parker et al., 2010) RT framework, which is a pipeline-based system: a pipeline is assembled, which then allows for parallel per-pixel rendering of the environment. A pipeline consists of a ray generator shader, a geometry acceleration structure (GAS), and numerous material shaders. A shader is a small program that is designed to be run in a massively parallel fashion. In a typical application, an individual shader program will be loaded onto a GPU and many thousands of instances of the program will be executed, with varying input parameters. The returned values of each instance are then returned to the \u2018host-side\u2019 of the application, allowing for the optimisation of tasks that are well suited to parallelisation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig4-v2.jpg)\n\n**Figure 4.:** Featured are the joined ommatidial and display rendering pipelines (including display buffers) as well as the on-device (running on the GPU) per-camera configuration records and related memory allocations. Data structure memory allocations are shown in grey (indicating in-place data) or purple (indicating pointers to other sections of data). Vertical stacks of memory indicate contiguously allocated structures. Data structures marked with an orange square are automatically updated as their host-side (running on the CPU) copies change; those with red circles are manually updated via application programming interface (API) calls. Circled numbers (1\u20134) indicate the path of processing through both pipelines required to display a compound eye view. FOV: field of views.\n\nA ray generator shader spawns rays to sample the environment with \u2013 these are dependent on the type, position, and orientation of the chosen camera. In the case of a panoramic camera (in the display pipeline), for instance, rays are spawned in a spherical manner around a central point (the position component of the currently selected camera\u2019s ray generation configuration record). In the case of a compound eye (in the ommatidial pipeline), each ray is generated as a function of the relative position and direction of a single ommatidium to the eye\u2019s position and orientation (note that the \u2018eye\u2019-type data records in Figure 4 contain links to per-eye ommatidial arrays that define the ommatidial configuration of the eye).\n\nA GAS stores the 3D geometry of the scene on the device in a format optimised for ray-geometry intersection and also provides functions to perform these intersection tests. Upon the intersection of a generated ray and the environment the material shader associated with the intersected geometry is run. These material shaders are responsible for the calculation and retrieval of the correct colour for the given geometry. For example, if a ray were to fall onto a blade of grass, the material shader would be expected to compute and return the colour green. We note that CompoundRay currently implements a simple texture lookup, interpolating the nearest pixels of the texture associated with the geometry intersected. Future extensions are presented in more detail in the \u2018Discussion section.\n\nTwo pipelines are used in the renderer: an ommatidial pipeline and a display pipeline. The ommatidial pipeline handles sampling of the environment through the currently active compound eye, saving all samples from all ommatidia to a buffer stored within the eye\u2019s \u2018raw ommatidial view\u2019 portion of its data record. First, it generates per-ommatidium rays (Figure 4 -1) via instances of the ommatidial ray generation shader. It then uses these to sample the environment through the GAS and appropriate material shaders, finally storing each ommatidium\u2019s view as a vector of single-pixel tri-colour samples in the raw ommatidial view buffer (Figure 4 -2).\n\nConversely, the display pipeline handles the generation of the user-facing display buffer (Figure 4 \u20134). In the case of generating a compound eye view display, ommatidial projector shaders are spawned (one per output pixel) and used to lookup (orange arrow connecting Figure 4 parts 2 and 3) and average the values associated with each given ommatidium from the per-camera raw ommatidial view buffer. These values are then re-projected into a human-interpretable view \u2013 in the case of the image seen at Figure 4 \u20134, using an equirectangular orientation-wise projection of the Voronoi regions of each ommatidium. However, for practical applications, this re-projection can be to a simple vector of all ommatidial values, allowing an algorithm to examine the data on a per-ommatidium basis, much in the same way that a real neural circuit would have direct access to the light sensors within the eye. In the case where the current camera is non-compound the display pipeline becomes the only active pipeline, handling the initiation of ray generation, GAS intersection, and materials shading for any given camera view in a single pass using a standard 2D camera projection model (simple pinhole, equirectangular panoramic, or orthographic). By referencing both with GPU video and RAM pointers, both pipelines are able to share a common GAS and material shaders so as to save device memory.\n\nA full compound eye rendering (as indicated via numbered red circles in Figure 4) consists of first rendering the ommatidial view via the ommatidial pipeline to the current camera\u2019s raw ommatidial view buffer using the associated eye data record. After this, the raw ommatidial view buffer is re-projected onto the display buffer as a human-interpretable view via the ommatidial projector shaders within the display pipeline. Alternatively, for debugging purposes, rendering can be performed using a traditional camera rather than via an eye model, skipping steps 1 and 2 and instead simply rendering to the display view by passing fully through the display pipeline using the data record associated with the selected camera.\n\n### Scene composure and use\n\nUsing the glTF file format for scene storage allows the experimental configuration of 3D models, surface textures, and camera poses to be packed into a single file (although per-eye ommatidial configurations are stored separately as comma-separated value (CSV) files and linked to within the glTF file to avoid file bloat, retaining the readability of the glTF file). The glTF format is a JavaScript object notation (JSON)-based human-readable file format for 3D scene storage that is readily supported by a number of popular 3D editors and has allowances for extensions within its specification. As such, all configurable parts of the scene that relate to CompouundRay are placed within each camera\u2019s reserved \u2018extras\u2019 property. The renderer is programmed to ingest these extra properties, expanding the scene definition beyond standard glTF without compromising the readability of scene files by other third-party 3D modelling suites.\n\nWhile the software comes packaged with a stand-alone executable that can load and render compound eye scenes, this is not the most powerful way of using the tool. When compiled, a shared object library is also generated that can then be called from more accessible languages, such as Python (Van Rossum and Drake, 2009). Through the use of this, Python\u2019s ctypes system and a helper library that is bundled with the code, can be used directly with Python and the Numpy (Harris et al., 2020) mathematical framework. This allows for a significantly wider experimental scope through automated configuration \u2013 for instance, one can programmatically move an insect eye around a simulated world extracting views directly from the renderer to be used alongside neural modelling frameworks accessible under Python. This is the recommended way of using the rendering system due to the increased utility that it affords.\n\n### Example inter-eye comparison method\n\nTo demonstrate the utility of CompoundRay for modern, data-intensive scientific analysis, we designed an example experiment. We note that any data outcomes are secondary to the validation of the tool and experimental procedure. Three virtual eye models were created, based on increasing simplifications of real-world eye data. The virtual eye models were assembled based on one (Apis mellifera) of eight scans of real-world samples (two Apis mellifera, six Bombus terrestris) taken by Baird and Taylor, 2017, with the 3D surface shape used to derive sample points and axial directions for each of the 6374 ommatidia present in both eyes. This model was used as a baseline \u2018real\u2019 model, from which two simplified derivatives, \u2018split\u2019 and \u2018single\u2019 were created. These were created by editing the eye\u2019s ommatidial positions to either converge on two or one single point (Figure 5 i-iii, i-iii) to mimic assumptions made in past simulated compound vision studies (Franz et al., 1998; Baddeley et al., 2012; Nityananda et al., 2016; Polster et al., 2018). The three variations on the real eye design were then assessed against each other for their ability to resolve the 3D position of a target point within a simple black and white environment by training a multi-layer perceptron (MLP) network with two fully connected hidden layers to estimate the point\u2019s position, encoding the relationship between visual scene and relative location - a task that was taken as a proxy for the eye\u2019s ability to perform basic small-point spatial awareness tasks. The accuracy of the network\u2019s ability to represent this encoding at any given point within a sampling volume (forming an error volume as seen in Figure 5c) could then be compared to another, producing maps of difference in utility of a given eye design over the sampling volume when compared to another (Figure 11b, c). The results of this experiment are presented in the later section \u2018Example experiment: Apis mellifera visual field comparison\u2019.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig5-v2.jpg)\n\n**Figure 5.:** (a) A camera is placed at various locations within an environment consisting of a single small point in an entirely white world. (b) Images (and the associated relative position of the camera in the $x$, $y$, and $z$ axes) are collected from each location through the differing eye designs that are being compared (here \u2018realistic\u2019, \u2018split\u2019, and \u2018single\u2019 designs). (c) A simple multi-layer perceptron neural network is trained to predict the the relative position ($x^{\u2032}$, $y^{\u2032}$, and $z^{\u2032}$) given a compound eye view. The quality of this encoding can then be interrogated by sampling uniformly across the test volume forming an error volume, here presented directly as the L1 loss (the sum of all absolute errors between the output of the network and each axis of the ground truth relative position vector) for any given point.\n\nComparing the views from varying ommatidial eye designs presents a number of challenges. In particular, the differing surface shapes and ommatidial counts between any two eyes make direct comparison very challenging as a result of the lack of a one-to-one correspondence between the ommatidia of each eye. Due to these challenges, the method of indirect comparison via a proxy variable was chosen. In this example comparison method, we propose using the task of small-point localisation as a basis for measuring eye utility, as similar tasks have formed key parts of many behavioural studies (van Praagh et al., 1980; Juusola and French, 1997; Nityananda et al., 2016). As shown in Figure 5, a camera simulating the desired eye design is placed within a matte white environment with a small matte black sphere (in this case, 2 mm in diameter) placed at its centre. The camera can then be moved around a sampling volume (here 50 mm3), and a pair consisting of the view from the eye and the relative $x$, $y$, and $z$ offset, forming its relative position. A neural network can then be trained on a sufficient number of pairs encode the mapping from eye view to relative position (localisation).\n\nThe non-Euclidian surface geometry of the compound eye makes convolutional neural network architectures (which typically operate over euclidian 2D or 3D space [Li et al., 2021]) inappropriate, as doing so would require a conversion from eye surface to a 2D surface, potentially introducing biases (as further elaborated in the \u2018Discussion\u2019 section). Graph neural networks (Scarselli et al., 2009) \u2013 neural networks that operate independent of assumptions of implicit spatially uniform sampling, instead operating over data structured in a graph \u2013 provide a method of operating over the 3D surface of the eye. However, the simpler approach of flattening the visual field into a single vector (with each element representing a single ommatidium\u2019s view sample) was taken here. This approach chosen as the task of self-localisation from a single dark point in a light environment becomes a simple pattern matching task due to every position in the field producing a unique view, not requiring translation or rotation invariant feature recognition, all of which can be encompassed in a simple fully connected MLP network with two or more hidden layers (Lippmann, 1987). Furthermore, the views were passed to the network as one-dimensional black and white images to reduce on computational cost when running the experiment, as the environment was purely black and white, resulting in the red, green, and blue components to each ommatidial sample being identical.\n\nFor the purposes of our example experiment any encoding sufficiently capable of representing the mapping of visual input to relative location could have been used. The example MLP network we provide is specific to the example scenario given and as such should only be referred to as a starting point when considering a neural-network-based abstracted comparison method. We designed an MLP with 2 hidden layers (1000 and 256 neurons, with rectified linear activation functions to act as non-linearities) and a final linear output layer of 3 neurons to represent the x, y, and z components of the relative position vector. The hidden layers act to encode the non-linear relation between the views and the relative position of the eye, with the count at each layer chosen to provide a gradual decline in complexity from input visual field size to the 3D output vector.\n\nThe data was standardised using z-score normalisation across all training points for each eye on both input and output dimensions before training to ensure learning was weighted equally over all dimensions of the input vector and to reduce bias on output vectors. As each eye sample had a differing number of ommatidia, the size of the input vector (and as such the first layer weight vector) for the neural network differed from eye to eye. Batched stochastic gradient descent was then used to optimise the sum of all absolute errors between the output of the network and each axis of the ground truth relative position vector (the L1 loss function). This error could then be observed with respect to the experimental sampling volume to assess the eye design\u2019s task-specific performance across the sampling space (Figure 5c). A batch size of 64 was selected in order to train at an appropriate speed while balancing efficient use of available hardware (Golmant et al., 2018); however, in practice, any commonly used batch size would be suitable.\n\nFor each eye design, 100,000 image position pairs were generated for training purposes. Of these, 80,000 were used for training, and 20,000 were used as a validation dataset in order to plot training progress. For each derivative eye design, the neural network was trained across 100 epochs (Figure 11a shows the error over the validation set during training). A total of 100 epochs were chosen as by this point in training no significant further training gains are made, as can be seen inFigure 11a.\n\n## Results\n\nThe analysis that follows first assesses the performance of CompoundRay with respect to the three criteria defined in the \u2018Introduction\u2019, before showing its utility in an example experiment. Performance is benchmarked in two 3D environments: a lab environment inspired by those used in insect cognitive experiments (Ofstad et al., 2011); and a 3D scan of a real-world natural environment covering an area of a number of square kilometers. The natural environment was constructed using structure-from-motion photogrammetry using photos captured from a drone over rural Harpenden, UK (3D model subject to upcoming publication, available via contact of Dr. Joe Woodgate, Queen Mary University of London).\n\n### Criterion 1: arbitrary arrangements of ommatidia\n\nCriterion 1 states that the renderer must support arbitrary arrangements of ommatidia within 3D space. Figure 6 shows two different environments rendered using three differing eye designs, from a simple spherical model with spherical uniformly distributed ommatidia that more closely aligns with current compound eye rendering methods, to a hypothetical arbitrary arrangement similar to that of the now long-extinct Erbenochile erbeni. While Figure 6a&b is still possible to simulate using traditional projection-based methods due to their ommatidial axes converging onto one central spot, 6 c demonstrates an eye with multiple unique focal points across an irregular surface which must be rendered from the viewpoint of each ommatidium independently.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig6-v2.jpg)\n\n**Figure 6.:** Renderings are projected to two-dimensional using a spherical orientation-wise Voronoi latitude/longitude mapping (orientation-wise equirectangular spherical mapping). (a) Spherically uniformly distributed ommatidia. (b) Ommatidia clumped to form a horizontal acute zone (c) A design inspired by the Erbenochile erbeni.\n\n### Criterion 2: inhomogeneous ommatidial properties\n\nCriterion 2 states that it should be possible to specify heterogeneous ommatidial optical properties across an eye, such as the enlarged facets as found in robberflies (Wardill et al., 2017). As demonstrated in Figure 7, the renderer achieves this by allowing for shaping of the acceptance cone of each ommatidium. In doing so, Figure 7 also demonstrates the importance of heterogeneous ommatidial configurations.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig7-v2.jpg)\n\n**Figure 7.:** (c) An eye with heterogeneous ommatidial acceptance angles. Below each output image is a three-dimensional depiction of the field of view of the specific array of ommitidia making up each eye: (a) oversampled, homogeneous eye; (b) undersampled, homogeneous eye; (c) evenly sampled, heterogeneous eye. Model (c) has the benefit of being able to leverage the most useful aspects of (b) and (a). Renderings are projected to wo-dimensional using an orientation-wise equirectangular spherical mapping.\n\nFigure 7a&b shows a non-uniform eye design with homogeneous, globally identical, ommatidial acceptance angles. It can be seen that in Figure 7b, where the acceptance angle is lower, aliasing occurs as objects are only partially observed through any given ommatidium, causing blind spots to form, introducing noise into the image. Conversely, in Figure 7a, where the acceptance angle is large, the image becomes blurry, with each ommatidium oversampling portions of its neighbour\u2019s cone of vision. Figure 7c, however, demonstrates a heterogeneous ommatidial distribution, in which the acceptance angles toward the dorsal and ventral regions of the eye are larger compared with the angles of those around the eye\u2019s horizontal acute zone. This mirrors what is seen in nature, where ommatidial FOV is seen to vary in order to encompass the entirety of an insect\u2019s spherical visual field (Land and Nilsson, 2002). As can be seen in the generated image, this is important as it appropriately avoids creating blind-spots in the dorsal and ventral regions while also avoiding oversampling (blurring) in the horizontally acute region, resulting in a much clearer picture of the observed environment (before the visual data is passed into any insect visual processing neural circuits) while also minimising the required number of ommatidia. The data presented in Figures 6 and 7 clearly demonstrates differences in visual information provided by different ommatidial layouts, reinforcing the need for realistic eye modelling methods.\n\n### Criterion 3: speed\n\n#### Minimum sample count\n\nCriterion 3 states that to rapidly explore the information content of various eye designs any such rendering system should be able to perform at real time or faster. However, speed of the system is dependent on the number of rays required to render a given scene from a given eye; higher total ray counts will require more compute power. As discussed in the section \u2018Modelling individual ommatidia\u2019, per-ommatidial sampling choice can have a dramatic impact on the image generated, meaning that lower ray counts \u2013 while increasing speed \u2013 will decrease the accuracy of the image produced. As a result, it is important to be able to define some minimum number of samples required for any given eye in any given environment in a reliable and repeatable manner. Previous works Polster et al., 2018 have attempted to establish a baseline number of samples required per ommatidium before additional samples become redundant only via qualitative visual analysis of the results produced. Here we perform quantitative analysis of images produced by the renderer in order to more definitively define this baseline (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig8-v2.jpg)\n\n**Figure 8.:** Top: How changing sample count changes the generated image. Note that the left side (with only 1 sample per ommatidium) is more \u2018jagged\u2019 than the right side image (70 samples per ommatidium) due to aliasing. Middle: Relative standard deviations of each ommatidium across 1000 frames, where difference is measured as the Euclidean distance between the two colours, this highlights the significantly larger standard deviation at points of high visual contrast in the image. Bottom: Plot of the average standard deviation of an eye per sample rays per ommatidium, normalised to one steradian. The standard deviation decreases as per-ommatidium sampling rate increases.\n\nUnlike previous works, the temporally stochastic nature of CompoundRays\u2019 sampling approach can be used to aid the measurement of impact that sampling rate has on the final image. By measuring the per-ommatidium spread (here, standard deviation) of the Euclidean distance of the received colour as plotted in RGB colour space over a range of frames captured from a static compound camera, the precision of the light sampling function approximation can be measured. To control for the varying FOV of each ommatidium (which impacts the number of samples required, as larger FOVs require more sampling rays to accurately capture the ommatidium\u2019s sampling domain), we normalize the measure of spread recorded at each ommatidium against its degree of coverage, in steradians, expressing the solid angle subtended by the ommatidium\u2019s FOV at the eye\u2019s centre. That is, a steradian measures the solid angle within a sphere, in the same same way that a radian measures 2D angles within a circle.\n\nFigure 8 shows this measure of variance within the compound eye across a range of sample-rays-per-ommatidium, from 1 to 700. As the number of samples increases, the variance decreases logarithmically. We propose iteratively increasing samples until the maximum variance falls below a defined threshold value. Here, we use a threshold of 1%, meaning that the maximum expected standard deviation of the most deviant ommatidium on an eye (normalised to one steradian) should be no greater than 1% of the maximum difference between two received colours, here defined as the length of vector [255, 255, 255]. This method allows for standardised, eye-independent configuration of per-ommatidial sampling rate.\n\nHowever, the required number of samples per eye is highly positively correlated with the visual frequency and intensity of the simulated environment at any given point, with locations exhibiting high contrast seen from a distance requiring higher sampling rates in order to properly resolve. This can be seen in the skyline in Figure 8, which remains dominant throughout the majority of the sampling rates, consistently forming the source of the highest spread. Figure 9 shows how the perceived variance changes over two example environments. The varying environment presents an obstacle in our attempts to standardise sampling rates, as deriving a suitable minimum sampling rate at one point in an environment \u2013 e.g., where the visual frequency was, on average, low \u2013 could lead to aliasing occurring in more visually complex areas of the same environment, potentially introducing bias for or against certain areas if analysis on the generated data were sensitive to the variance introduced.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig9-v2.jpg)\n\n**Figure 9.:** These hotspots must be accounted for when calculating minimum sample ray count. Inserts bottom left and right: the maximum (over all ommatidia) standard deviation recorded in the eye at each location.\n\nUltimately, the varying visual complexity poses a challenge. In an ideal scenario maximum per-ommatidium frame-to-frame variation caused by visual complexity should be a controllable factor. In the examples presented in this paper, we worked to minimise this variation to a point at which the most variable ommatidial response had a standard deviation of 1% or less of the total maximal difference in colour. One way of achieving this would be to keep a running measure of the standard deviation of each ommatidium and dynamically adapt sampling rates to ensure that no ommatidium had such a high sampling spread (adaptive antialiasing). In this work, however, we define a minimum sampling count for a given environment by performing a search for that environment\u2019s point of highest visual complexity (indicated by highest per-ommatidium deviation) \u2013 with this location found, sampling rate can be increased until deviation decreases to acceptable limits (in this case, within 1%). Figure 9 shows plots of the relative variation in standard deviation over the lab and (partial) natural environments.\n\n#### Performance\n\nFigure 10 shows the rendering speed, in frames per second, against the number of sample rays being emitted in each frame when running using a selection of high-end consumer-grade graphics cards and our two sample environments. Marked on the graph are the total per-frame sample counts required by common insect eyes, chosen to encourage a maximum per-ommatidium standard deviation of 1%.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig10-v2.jpg)\n\n**Figure 10.:** Marked are expected FPS values for a desert ant (Schwarz et al., 2011), honey bee (Greiner et al., 2004), and dragonfly (Labhart and Nilsson, 1995; Land and Nilsson, 2002). Averaged data is smoothed using a 1-dimensional box filter acting over 10 samples, clipped at the beginning and end.\n\nAs can be seen, performance improves significantly when the renderer is able to utilise the next-generation RT hardware available in the newer RTX series of NVidia graphics cards, consistently outperforming older cards in the larger natural environment and outperforming in the smaller lab environment when using more than 30,000 rays. Counterintuitively, the previous generation of NVidia graphics cards was found to outperform the RTX series in the (relatively small) lab environment at lower ray counts (below 30,000). This appears to be due to static overhead involved with the use of the RTX series\u2019 RT cores, which may also be the cause of the small positive trend seen between 1000 and 8000 samples when using the 2080Ti. Another potentially counterintuitive result that can be seen here is the higher performance of the dragonfly eye in the natural (high polygon) environment versus in the low-polygon laboratory environment. This is because the laboratory environment produces significantly higher visual contrast (emphasised in Figure 9) due to its stark black/white colour scheme, resulting in a requirement of almost double the number of rays per steradian to target 1% standard deviation, resulting in higher ray counts overall, particularly in models with a high number of ommatidia.\n\n#### Example experiment: Apis mellifera visual field comparison\n\nLeveraging the speed of CompoundRay, an example data-driven comparative analysis was performed between a realistic eye model and two simplified derivatives. We note that the data outcomes should be considered as pilot data, with the focus being on proving the tool and its usability. As laid out in the section \u2018Example inter-eye comparison method\u2019, this experiment used an MLP network to estimate the relative position of a 2 mm sphere within a 50 mm3 test area using only the visual information provided from each of the eye models, with neural network performance acting as a measure of eye configuration utility. The models were split into the \u2018real\u2019 eye model (Figure 5i), an eye pair based directly on the measurements of Baird and Taylor, 2017; the \u2018split\u2019 eye model (Figure 5ii), an eye pair retaining per-ommatidial headings (ommatidial axial directions), but sampled from the centre points of each eye (as per approaches common in insect binocular vision study); and finally the \u2018single\u2019 eye model, an eye pair sampled from a single point between the two eyes (Figure 5iii). We hypothesise that the \u2018real\u2019 eye design will outperform the \u2018split\u2019 and \u2018single\u2019 eye models by increasing margins, as for each of the latter two designs the data relating to the surface shape and relative positions of the eyes is increasingly reduced.\n\nIn terms of total error over the validation set, we observed that \u2013 as expected \u2013 the \u2018real\u2019 eye design appears to offer a higher utility (lower total error when trying to locate the relative position of the sphere), ultimately decreasing its network\u2019s validation error quicker and to a lower minimum after 100 epochs when compared to both the \u2018split\u2019 and \u2018single\u2019 eye designs (Figure 11a). Interestingly, despite an initial slow in learning rate, the \u2018single\u2019 eye design eventually achieved a similar utility score on the validation set than that of the \u2018split\u2019 eye design.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/73893/elife-73893-fig11-v2.jpg)\n\n**Figure 11.:** (a) The validation error graphs over 100 epochs of training for each eye design. The majority of learning occurs between epoch 0 and 60, and by epoch 100 all networks have converged in optimal-approximating states. (b) The absolute relative differences across the error volumes (see Figure 5c) between the \u2018real\u2019 and \u2018single\u2019 eye designs, as seen from the top. (c) As in (b), but between the \u2018real\u2019 and \u2018split\u2019 designs.\n\nTo qualitatively assess the performance of each eye across the entire 50 mm3 sampling cube, a further 1,000,000 samples were taken at regular intervals forming an error volume for each eye design by measuring the error between the trained neural network\u2019s relative position and the real relative position (the error volume for the \u2018real\u2019 eye is pictured in Figure 5c). In this case, to demonstrate versatility, CompoundRay was used in real time to generate these views, rather than simply being used in an offline manner to generate these benchmarking datasets.\n\nThe most obvious region of high error is that outside of the insect\u2019s FOV. As these eyes were designed with uniform average acceptance angles, this is larger than might be expected of a real bee eye. Comparing the \u2018real\u2019 eye to its \u2018single\u2019 and \u2018split\u2019 counterparts by means of comparing the absolute difference between their error volumes (creating the difference volumes shown from top-down in Figure 11b&c), patterns emerge. Seemingly, the most significant region of difference between the \u2018real\u2019 eye model and the \u2018single\u2019 eye model can be seen around the edges of the eye\u2019s field of vision. As this difference follows the entirety of the edge of the eye\u2019s field of vision, this appears to be likely due to parallax \u2013 the \u2018real\u2019 eye samples from two points, allowing it slightly extended range of vision compared to that of the \u2018single\u2019 eye model, resulting in slightly different ranges of FOV between the two, with this difference increasing the further from the eye the point is. In the \u2018real\u2019 vs \u2018split\u2019 comparison image, however, there are two regions of higher error (highlighted in red circles in Figure 11c) toward the forward-facing regions of the eye\u2019s vision. These indicate a region of improved visual information when using a full eye surface as compared to simple two-point sampling of the environment.\n\n## Discussion\n\nThis paper has introduced a new compound eye perspective rendering software, CompoundRay, that addresses the need for a fast, compound eye perspective rendering pipeline (St\u00fcrzl et al., 2015; Taylor and Baird, 2017; Millward et al., 2020). In particular, the tool supports arbitrary instantiation of heterogeneous ommatidia at any place in space and can perform rendering tasks at speeds in the order of thousands of frames per second using consumer-grade graphics hardware. We have demonstrated the utility afforded by the software and highlighted the importance of using higher-fidelity compound eye perspective rendering systems by demonstrating the visual differences introduced by altering these traits. It has also set a grounding for reasonable use of the software to ensure reproducibility and reduce biasing introduced as a result of the variety present in simulated environments and compound eye designs while warning of potential dangers that might arise during data analysis. With the introduction of the CompoundRay rendering library, it is possible to simulate in a timely manner the visual experience of structurally diverse compound eyes in complex environments, digitally captured or otherwise manually constructed. CompoundRay is provided as an open-sourced library (https://github.com/BrainsOnBoard/compound-ray).\n\nThis work lays the technical foundations for future research into elements of compound eye design that have previously been given little consideration. In particular, CompoundRay can act as the previously missing step to integrate recently catalogued real eye designs (Baird and Taylor, 2017; Bagheri et al., 2020) into mapped insect environments (St\u00fcrzl et al., 2015; Risse et al., 2018) to explore the information provided to insects in their natural surroundings. Similarly, the ability to configure ommatidial properties individually and with respect to eye surface shape enables new investigations into the benefits of asymmetric compound eyes such as those found in robber flies (Wardill et al., 2017) and crabs (Zeil et al., 1986). Furthermore, we see opportunities to model the recently reported microsaccadic sampling in fruit flies (Juusola et al., 2017), as well as aid with similar vision-centric neurological studies (Viollet, 2014; Wystrach et al., 2016; Kemppainen et al., 2021).\n\nOur example study demonstrated the utility of CompoundRay for this strand of research. Beyond its ability to replicate insect vision in unprecedented detail, its image generation speeds facilitate use of contemporary data-driven methods to explore the eye design space. For example, we used over 3.3 million training images, which CompoundRay rendered in only 2 hr. The insights gained from more thorough analysis of the insect visual perspective\u2014and its design relative to visual feature extraction\u2014will help guide the development of artificial visual systems by considering not only visual post-processing steps but also the intrinsic structure and design of the image retrieval system itself. CompoundRay is explicitly designed to be highly configurable to allow members of the research community to pursue their specific research questions.\n\nIn our example study, we compared eye designs using an MLP network as a utility function, bypassing the need to directly compare the images generated by two differing eye designs. This was done as the task of directly comparing two dissimilar eye designs \u2013 either analytically using a comparison program or qualitatively via human observation \u2013 is non-trivial. Compound eyes are inherently different from our own, and the CompoundRay rendering system allows for large-scale data collection on arbitrary compound surfaces. We note that with this comes the risk of anthropomorphising the data received when directly observing it, or placing bias on one area over another when comparing programmatically. At its base level, the eye data gathered is most \u2018pure\u2019 when considered as a single vector of ommatidial samples, much in the same way that the neural systems of any insect will interpret the data. In contrast, all the images that we have presented here have been projected onto a 2D plane in order to be displayed. Great care must be taken when considering these projections, as they can introduce biases that may be easy to overlook. For instance, in Figure 6a&b, orientation-wise spherical projection mapping was used to artificially place the ommatidia across the 2D spaces, forming panoramic Voronoi plots of observed light at each ommatidium. In these projections, much as is seen in 2D projections of Earth, the points at the poles of the image are artificially inflated, giving a bias in terms of raw surface area affected toward ommatidia present in the ventral and dorsal regions of the eye. Not only do these visual distortions warp the image produced, but if that image is used as the basis for algorithmic comparison (e.g., as the input to an image difference function [Philippides et al., 2011]) then that too, will be effected by these projection biases. In the case where direct comparison between two eyes with entirely dissimilar surfaces is attempted, the problems can be magnified further, as the projections of each eye will introduce biases that may interact in unexpected ways.\n\nThese projection biases highlight how fundamentally difficult it is to directly compare eye designs that do not share an underlying surface structure, unless those surfaces happen to be affine transformations of one another (they are affinely equivalent). For any surfaces that are affinely equivalent, the surface itself can be used as a projection surface. In this way, for instance, the outputs of two cubic eyes could be compared to each other by performing all comparison calculations on the cube\u2019s surface, interpolating between points where an ommatidia exists on one eye but not another. It is trivial to directly compare compound eye images from eyes with the same structure in terms of ommatidial placement, and eyes with surfaces that are affinely equivalent can also be compared; however, further precautions must be taken when comparing the images from two or more eyes that do not have compatible projection surfaces so as not to unduly bias a portion of one surface over any other. If direct comparison between two eye designs is required, and their surfaces are not affine transformations of each other, then intermediate surfaces to perform calculations over must be found within the interpolation from one surface to the other, with a significant amount of care taken to reduce as much as possible projection artefacts forming between the two. However, we recommend instead taking a proxy metric as demonstrated here (using a localisation task) to measure differences between eye-accessible information content.\n\nBy basing CompoundRay around the conceptually simple approach of ray-casting and adhering to open standards, the rendering system has been designed with open development in mind. In the future, the library could be extended to further enhance biological realism by adding non-visible spectral (e.g. ultraviolet) lighting (M\u00f6ller, 2002; Stone et al., 2006; Differt and M\u00f6ller, 2015) and polarisation (e.g.Gkanias et al., 2019) sensitivities, as well as more realistic photo-receptor response characteristics (e.g. Song et al., 2009). Similarly, new technologies could be rapidly evaluated by simulating the input to novel imaging systems (e.g. dynamic; Viollet and Franceschini, 2010 or heterogeneous pixel arrays) and processing pipelines (e.g. event-based retinas; Gallego et al., 2022). In addition, environmental features such as shadow casting, reflection, and refractions present obvious extensions as well the introduction of features such as adaptive anti-aliasing and increasing the projections available to users. Currently, CompoundRay returns all output images in an eight-bit colourspace, which aligns with most contemporary display equipment. However, we note that the underlying GPU implementation operates on 32-bit floating-point variables which if exposed to the high-level Python API could improve the system\u2019s ability to represent visual sensors that experience a wider bandwidth of light (hyperspectral visual systems). It is hoped that as further efforts are conducted to map the eye structures of insects, CompoundRay will serve as a key tool in uncovering the intricacies of these eye designs in a modern, data-driven way.\n",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "9223e46d-4719-4b03-9eba-29f996d5c8af",
+      "submission_id": "91c50aa6-f44f-4fb0-98a6-f79f79907f1b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Albert Cardona, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73893.sa0](https://doi.org/10.7554/eLife.73893.sa0)\n\nIn this important work, the authors develop compelling new open source methods to study compound eye vision, with particular emphasis and examples in insects and appropriately supporting arbitrarily diverse spatial distributions, types and mixtures of types of ommatidia. The manuscript introduces example experiments to illustrate the use of the new methodology. This work supports future studies of invertebrate brains, a timely addition to the newly mapped connectomes of insect brains.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Albert Cardona, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73893.sa1](https://doi.org/10.7554/eLife.73893.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"CompoundRay: An open-source tool for high-speed and high-fidelity rendering of compound eyes\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by myself Albert Cardona as a Reviewing Editor and Tirin Moore as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Stephan Saalfeld (Reviewer #1); Andrew D Straw (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) All reviewers agree that the raw ommatidial view buffer aspect of the work is the strongest piece and with the most potential to support neuroscience experiments. Expanding on this and discussing the possible applications in simulating insect vision and e.g., interpreting the neural connectomes of insect visual systems is most appropriate. Discussion of the modeling of e.g., insect compound eyes with asymmetric ommatidia is a must; one such example could be robber flies.\n\n2) The motivation for the visualization for human observers is weak, and it is unclear of what use it can be for insect vision or vision research more generally. On surface, it seems a contradiction that the software goes to great lengths to model ommaditia with independent focal points, as necessary for the accurate modeling of each ommatidium, only to then project to a single nodal point to create a camera eye image, contrary to the main point of the work. A stronger motivation with explicit applications that aren't possible otherwise with this camera image are necessary. Otherwise, this aspect of the work ought to be downsized relative to the clearly innovative and useful raw ommaditial view buffer approach for compound eye vision research.\n\nReviewer #1 (Recommendations for the authors):\n\nMore details as they emerged, comments overlap:\n\n98 Do you really mean that each ray has a maximum recursion depth of 0? Did you implement illumination by a light source? If rays do not recurse or trace to light sources, all surfaces are 100% diffuse and ambient and ray casting is equivalent to polygon projection with local illumination. If no illumination by an independent light source is implemented, all surfaces are 100% ambient and ray casting is equivalent to polygon projection. Please clarify.\n\n64 \u2013 67 The first two criteria both cover \"arbitrary ommatidia geometry\" which I think is one criterion.\n\n65 Spectral sensitivity, which could be criterion 2 is not addressed as far as I understand. The renderer is purely RGB in 8-bit depth, correct? This is not discussed in section \"Criterion 2\" and could be a big obstacle for real applications. Is it hard to fix?\n\n78 shadow maps are not more resource hungry than ray tracing with direct illumination, can you please explain better or remove?\n\n84 interreflection of light can be implemented by e.g. calculating radiosity maps or doing sampling of rays cast from light sources. I do not see that CompoundRay is doing either, so it is not clear what the relationship to this work is? Can you please clarify?\n\nOverall, I find the paragraph about ray-casting ray-tracing and the concrete relationship with CompoundRay unnecessarily confusing. As said before, I believe it would be better to explain the relevant differences of rendering methods only in how they relate to this project. I.e. how they produce an image (projection rendering by projecting polygons using painters algorithm, texture mapping and/ or colorize with local illumination model; ray-casting by identifying first intersection, texture mapping and/ or colorize with local illumination model, averaging over rays). Mention illumination, shadows (maps for each light in projection, testing for object intersection by tracing to light in ray-tracing) and global models (radiosity or photon sampling) only as possible extensions, not used in this work.\n\n124 \u2013 128 state the above but the language and reasoning are unclear.\n\n227 \u2013 229 eventually clarify that CompoundRay does not currently implement any illumination model or first order ray recursion to cast shadows, so the output would be equivalent to per ommatidium camera rendering and integration, this is way too late in the text as illumination and shading capabilities were used earlier to root for ray-casting for no practical reason.\n\nReviewer #2 (Recommendations for the authors):\n\nAbstract:\n\nL12-13: I think some expectation of why this might be relevant or interesting would be useful.\n\nL19: Was there any insight that arose from doing this? Especially in regards to the idea raised above \u2013 that the shape and overall structure have been ignored?\n\nIntro:\n\nFigure 2: It would be helpful to explicitly indicate which approach is used in the present paper.\n\nFigure 7, top panel and caption for top panel: If I understand it correctly, this top panel is a composite of 100s of individual images but I am confused that I do not see many, if any, vertical edges where one set of samples gives way to another. Also, the jagged effect is not particularly obvious.\n\nReviewer #3 (Recommendations for the authors):\n\nBelow I list a number of small details in need of attention.\n\nFigure 2c could improve, at least by making it larger, or by magnifying a few adjacent ommatidia to better appreciate the effect of not sharing a focal point.\n\nLine 124: Figure 1b is not adequate to illustrate that insect eyes \"contain many hundreds or even thousands of lenses\".\n\nLine 183: \"an image can be generated that captures the full compound eye view.\" But isn't the point that an image cannot be generated because of the lack of a shared focal point, assuming then that the brain's internal representation of the field of view will be the product of a neural network parsing the output of the many ommatidia? The \"cone of influence\" of each ommatidium on the final image seems \u2026 premature. Neural circuits will combine inputs from ommatidia in ways that have not been worked out in the insect literature, as far as I know. The motivation for wanting to generate an image is unclear: is this for ease of the researchers, which are human, or what is the goal?\n\nThe \"raw ommatidial view buffer\" seems most useful to neuroscientists. The design of a neural network that composes your \"Display buffer\" from the \"raw ommatidial view buffer\" would be a most interesting research project, particularly for the opportunity to compare it with the existing, mapped circuit wiring diagram, or connectome, of the Drosophila optic lobes. You could discuss this. In other words, Line 240, \"These values are then re-projected into a human-interpretable view\" is the potential start of a fascinating research project in its own right, if one redefines this as \"fruit-fly interpretable view\", as in, the brain of the fruit fly needs to make effective use of this information to successfully navigate the world.\n\nLine 227: \"Currently CompoundRay implements only a simple texture lookup, interpolating the nearest pixels of the texture associated with the geometry intersected.\" What would be gained by, or what is lost now relative to, implementing the full ray tracing approach?\n\nLine 247: \"Both pipelines share a common geometry acceleration structure and material shaders so as to save device memory.\" How is this possible? Can you hand-hold the reader a bit more to clarify how can both pipelines share the same GPU shaders? I may have missed a critical point.\n\nLine 253: \"rendering using a traditional camera skips steps 1\", you mean, your software can alternatively use traditional cameras in place of modeled ommatidia? I am not sure I get it.\n\nLine 293: \"inhomogeneous ommatidial properties\". An example you could cite is the eyes of the robber flies, Wardill et al., 2017 Curr Biol., where a frontal fovea with enlarged facets is reported.\n\nFigure 6: seems to imply that overlap is not desirable? Overlap could allow for all kinds of spatial computations, from supraresolution to contrast enhancement to motion detection.\n\nLine 309: the statements would apply only in the absence of a nervous system that would make full use of the ommatidial signals.\n\nAnd, in general: aren't insect compound eyes known to present significant overlap in the field of view of each ommatidium relative to its neighbors? Figure 6c would then be the most realistic, if ignoring post-processing by the optic lobes?\n\nFigure 7: qualitatively, the top rendered scene looks quite similar throughout. I am not able to notice much difference between the left and right ends. Figure 7 needs work to better convey your message, and to better establish or highlight the vertical relationship between the images in the top and middle and the plot at the bottom.\n\nLine 357: \"using a genetic algorithm to \ufb01nd the location\", where are the technical details of this approach? Parameters? Framework used, or code? Is it your own code?\n\nLine 440: \"On top of the potential biological insights CompoundRay may be able to offer\", indeed, your paper would be so much stronger if you showed one such biological insight. It would then become a reference software for compound eye vision.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"CompoundRay, an open-source tool for high-speed and high-fidelity rendering of compound eyes\" for further consideration by eLife. Your revised article has been evaluated by Tirin Moore (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nLine 234: the sentence starting with \"This will aid\u2026\" makes claims that, first, aren't entirely clear, and second, seem speculative and belong to the discussion.\n\nFigure 10: the legend is far too short. Needs more detail on what each panel is, particularly for the lower panels. Also, where in the methods is the neural network described? Could be referenced here. Also, \"network\" is not quite the right shorthand to describe a neural network. Was it a CNN? Or generically an ANN? Or a perceptron?\n\nLine 504: where is the Materials and methods description for the \"4-layer fully-connected neural network\"?\n\nLine 532: \"neural network was trained across 100 epochs three times\", why? Why not 200 epochs, or 50, and 2 times, or 10? Why a batch size of 64? Also, these details are hardly worthy of opening the \"Experimental results\" section. Rather, they belong to the methods, alongside explanations and figures demonstrating why the set of parameters chosen are sensible and appropriate for the problem at hand.\n\nLine 538, isn't the fact that a simple \"single eye\" design achieved a similar utility score concerning? Perhaps this reveals a disconnect between the test, which runs for 100 epochs (as plotted in Figure 10), and the real world, where an insect needs to take split-second decisions from the let go.\n\nLine 565 reference to \"Figure 10 bottom left\" could really use the lettering of panels. In addition to a far lengthier and detailed explanation on what, exactly, is in that panel and how it was generated. And if these panels are as critical as they seem to be to evaluate the performance of the 3 eye models, then they ought to be bigger and far more richly annotated, to assist the reader in understanding what is being plotted.\n\nLine 603: if you see opportunities for modeling the \"recently reported\" (2017) microsaccadic sampling in fruit flies, then why didn't you? Or is this the subject of a paper in preparation or under review elsewhere?\n\nA question for the discussion: with its intrinsically distributed light sampling, compound eyes surely work not with frame-processing downstream circuits but rather event-based circuits, such as those of the dynamic vision sensor or silicon retina (Tobi Delbruck et al., various papers). Could you discuss the implications of asynchronous compound eye-based sensors, particularly when considering uneven ommatidial size which is not available in camera-based eyes such as in mammals or cephalopods? In a fast-moving animal such as a flying honeybee, asynchronous processing surely has advantages for motion detection and obstacle detection and avoidance, and scene recognition (i.e., flowers to land on), or better, to decode the waggle dance language of conspecifics.\n\nConsidering event-based computing could make for a much nicer discussion than the caveats of anthropomorphised, frame-based visual computing, or at least complement it well, outlining the intrinsic advantages of compound eyes.\n",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "21a53546-f0a0-45ca-8908-371f369823c6",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C1",
+      "claim": "Insects visually solve complex problems including the detection and tracking of fast moving prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Insects visually solve an array of complex problems including the detection and tracking of fast moving prey (Wiederman et al., 2017), long-distance navigation (Wehner, 2020), and even three-dimensional (3D) depth estimation (Nityananda et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wiederman et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "2f8f2653-7fe4-428f-826d-741df8655899",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C2",
+      "claim": "Insects perform long-distance navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Insects visually solve an array of complex problems including the detection and tracking of fast moving prey (Wiederman et al., 2017), long-distance navigation (Wehner, 2020), and even three-dimensional (3D) depth estimation (Nityananda et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wehner, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "6f57a4bb-6eea-41da-9f26-5205bb4ba83c",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C3",
+      "claim": "Insects perform three-dimensional depth estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "Insects visually solve an array of complex problems including the detection and tracking of fast moving prey (Wiederman et al., 2017), long-distance navigation (Wehner, 2020), and even three-dimensional (3D) depth estimation (Nityananda et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nityananda et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "16fc1d43-9d80-4f70-9e64-9508b8df2cc2",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C4",
+      "claim": "The insect visual system is fundamentally different from that of mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "These capabilities are realised using a sensory apparatus that is fundamentally different from those of mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about differences between insect and mammalian visual systems",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "45bd8eb5-8274-48b5-8a5e-7d1634f1cad3",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C5",
+      "claim": "Each ommatidium features a lens, a light guide, and a cluster of photosensitive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Each eye is constructed from a patchwork of self-contained light-sensing structures known as ommatidia, each featuring a lens, a light guide, and a cluster of photosensitive cells (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1a showing ommatidium structure",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "44327772-45b8-4ff1-8b5a-fc2574b77a66",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C6",
+      "claim": "Ommatidia are physically interlocked with their neighbours.",
+      "claim_type": "EXPLICIT",
+      "source": "Ommatidia are physically interlocked with their neighbours, together forming a bulbous outer structure (the compound eye itself) that can vary in size, shape, and curvature, offering a range of adaptations for particular tasks and environments (Land and Nilsson, 2002; Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Land and Nilsson, 2002 and Figure 1b",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "3118fe77-9d93-4e3b-8254-f3eb618454a9",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C7",
+      "claim": "Compound eyes can vary in size, shape, and curvature, offering adaptations for particular tasks and environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Ommatidia are physically interlocked with their neighbours, together forming a bulbous outer structure (the compound eye itself) that can vary in size, shape, and curvature, offering a range of adaptations for particular tasks and environments (Land and Nilsson, 2002; Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Land and Nilsson, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "b65fa449-928e-415a-b077-77969ef96eb3",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C8",
+      "claim": "The properties of the lens and photo-receptors are fixed for individual ommatidia but can vary across regions of an individual's eye.",
+      "claim_type": "EXPLICIT",
+      "source": "The properties of the lens and photo-receptors are fixed for individual ommatidia but can vary across regions of an individual's eye (Meyer and Labhart, 1993) as well as between individuals of different castes (Collett and Land, 1975) and species (Land, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Meyer and Labhart, 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "78419e14-0b57-4905-a187-1ef1b313d060",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C9",
+      "claim": "Ommatidial properties can vary between individuals of different castes.",
+      "claim_type": "EXPLICIT",
+      "source": "The properties of the lens and photo-receptors are fixed for individual ommatidia but can vary across regions of an individual's eye (Meyer and Labhart, 1993) as well as between individuals of different castes (Collett and Land, 1975) and species (Land, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Collett and Land, 1975",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "28a416dc-90df-41c9-948c-cda515a60ae0",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C10",
+      "claim": "Ommatidial properties can vary between species.",
+      "claim_type": "EXPLICIT",
+      "source": "The properties of the lens and photo-receptors are fixed for individual ommatidia but can vary across regions of an individual's eye (Meyer and Labhart, 1993) as well as between individuals of different castes (Collett and Land, 1975) and species (Land, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Land, 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "c3c1f959-34cb-4915-b994-67a2e768a671",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C11",
+      "claim": "The compound eye arrangement differs greatly from the mammalian system that utilises a single lens to project a high-resolution image onto a retina.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement of independent, interlocked light sensing elements and lenses differs greatly from the mammalian system that utilises a single lens to project a high-resolution image onto a retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of mammalian and insect visual system differences",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "42936872-6660-45ff-915c-ba4a4700232b",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C12",
+      "claim": "Wide field of view and low resolution benefit visual navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Insights derived from this methodology include demonstration of the benefits of a wide field of view (FOV) and low resolution for visual navigation (Zeil et al., 2003; Vardy and Moller, 2005; Mangan and Webb, 2009; Wystrach et al., 2016), and the role played by non-visible light sensing for place recognition (M\u00f6ller, 2002; Stone et al., 2006; Differt and M\u00f6ller, 2016) and direction sensing (Lambrinos et al., 1997; Gkanias et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Zeil et al., 2003; Vardy and Moller, 2005; Mangan and Webb, 2009; Wystrach et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "e50ea568-5d76-456b-982f-87a1b64cc1ef",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C13",
+      "claim": "Non-visible light sensing plays a role in place recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Insights derived from this methodology include demonstration of the benefits of a wide field of view (FOV) and low resolution for visual navigation (Zeil et al., 2003; Vardy and Moller, 2005; Mangan and Webb, 2009; Wystrach et al., 2016), and the role played by non-visible light sensing for place recognition (M\u00f6ller, 2002; Stone et al., 2006; Differt and M\u00f6ller, 2016) and direction sensing (Lambrinos et al., 1997; Gkanias et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to M\u00f6ller, 2002; Stone et al., 2006; Differt and M\u00f6ller, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "ad0e8c73-673e-45df-9044-07a26a7435a9",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C14",
+      "claim": "Non-visible light sensing plays a role in direction sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Insights derived from this methodology include demonstration of the benefits of a wide field of view (FOV) and low resolution for visual navigation (Zeil et al., 2003; Vardy and Moller, 2005; Mangan and Webb, 2009; Wystrach et al., 2016), and the role played by non-visible light sensing for place recognition (M\u00f6ller, 2002; Stone et al., 2006; Differt and M\u00f6ller, 2016) and direction sensing (Lambrinos et al., 1997; Gkanias et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lambrinos et al., 1997; Gkanias et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "aa6b3fd8-54f7-4d7f-8f37-8ae87fcfc64a",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C15",
+      "claim": "All contemporary compound eye models sample from a single viewpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, despite differences in the sampling techniques used (e.g. see Mangan and Webb, 2009; Baddeley et al., 2012 for custom sampling approaches, Neumann, 2002; Basten and Mallot, 2010 for rendering based cubemapping CEMs, and Polster et al., 2018 for ray-casting methods), all contemporary CEMs sample from a single viewpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple CEM approaches and inference from the literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "c9249221-a9d7-4cf6-a4d9-58cd27ee449a",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C16",
+      "claim": "The distributed arrangement of ommatidia on distinct 3D eye surfaces provides insects with a multi-viewpoint system that generates different information for different eye shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the distributed arrangement of ommatidia on distinct 3D eye surfaces provides insects with a multi-viewpoint system that generates different information for different eye shapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the physical structure of compound eyes",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "7dcfbafd-dc36-4961-88d2-e1071b296a9d",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C17",
+      "claim": "High-fidelity compound-vision rendering engines were developed previously but were not widely adopted.",
+      "claim_type": "EXPLICIT",
+      "source": "High-fidelity compound-vision rendering engines with some of these features (though notably slower than real time) were developed previously (Giger, 1996; Collins, 1998; Polster et al., 2018) but were not widely adopted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Giger, 1996; Collins, 1998; Polster et al., 2018 and inference about adoption",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "641c28da-8526-4ebb-b35a-03a4f532ec8e",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C18",
+      "claim": "Previous high-fidelity compound-vision rendering engines were notably slower than real time.",
+      "claim_type": "EXPLICIT",
+      "source": "High-fidelity compound-vision rendering engines with some of these features (though notably slower than real time) were developed previously (Giger, 1996; Collins, 1998; Polster et al., 2018) but were not widely adopted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Giger, 1996; Collins, 1998; Polster et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "aa096a91-c47e-4f03-a753-0536fb89c587",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C19",
+      "claim": "Dedicated ray-casting hardware allows for the capture of visual data from multiple locations in parallel at high speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Difficulties arising as a result of the computational complexity (and so execution time) of CEMs are diminishing as dedicated ray-casting hardware emerges that allows for the capture of visual data from multiple locations in parallel at high speed (e.g. Nvidia [Santa Clara, California, United States] RTX series GPUs [Purcell et al., 2005; Burgess, 2020]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Purcell et al., 2005; Burgess, 2020 and knowledge of GPU technology",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "abd21f0d-472b-40ca-a86b-8e5a1bbc7486",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C20",
+      "claim": "CompoundRay is capable of accurately rendering the visual perspective of bees with 6000 individual ommatidia arranged on 2 realistic eye surfaces at over 3000 frames per second.",
+      "claim_type": "EXPLICIT",
+      "source": "This work introduces a new open-source CEM software (CompoundRay) that is capable of accurately rendering the visual perspective of bees (6000 individual ommatidia arranged on 2 realistic eye surfaces) at over 3000 frames per second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "024a06a5-9e06-423c-83e1-894d2a8333e2",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C21",
+      "claim": "Polygon projection-based rendering systems function by directly projecting the faces and vertices of the scene's 3D geometry through a singular imaging point and on to a projection plane.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 2a shows, these systems function by directly projecting the faces and vertices of the scene's 3D geometry through a singular imaging point and on to a projection plane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2a and established knowledge of projection-based rendering",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "2176cdf3-c324-4772-bfe4-ee67b6cc3e1d",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C22",
+      "claim": "Compound visual systems essentially form multiple pinhole-like viewing systems, each with their own image point.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, compound visual systems essentially form multiple pinhole-like viewing systems (Figure 2c), each with their own image point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2c and inference from compound eye structure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "dbd5caf4-2003-44df-af91-8406b87825ec",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C23",
+      "claim": "A polygon projection approach will struggle with optical phenomena involving multiple imaging points.",
+      "claim_type": "EXPLICIT",
+      "source": "A polygon projection approach will struggle with these optical phenomena as the process directly transforms the faces of the 3D object from the scene onto the camera's view plane, in effect applying a projection transform onto a plane or other regular surface forming a singular image point (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from the limitations of projection-based rendering and reference to Figure 2a",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "8fe3e7fe-c006-469b-920b-a061e0c5e01d",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C24",
+      "claim": "CompoundRay uses a ray-casting approach to rendering the insect visual perspective.",
+      "claim_type": "EXPLICIT",
+      "source": "Drawing on previous work from Polster et al., 2018, CompoundRay uses a ray-casting approach to rendering the insect visual perspective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software's methodology, with citation to Polster et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "d12ed2ae-b488-4b38-bfb8-8c9925ca59db",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C25",
+      "claim": "Ray-based methods allow for surfaces such as mirrors and lenses to accurately reflect light being rendered.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows for surfaces such as mirrors and lenses to accurately reflect light being rendered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of ray-based rendering capabilities",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "a82f81cb-021d-4723-965b-cbcabcc110e8",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C26",
+      "claim": "Ray-based approaches can be incredibly computationally complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Ray-based approaches can be incredibly computationally complex, as each ray (of which there can be thousands per pixel) needs to be tested against every object in the scene (which can be composed of millions of objects) to detect and simulate interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of ray-based rendering computational requirements",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "825fd3da-d2c2-4c58-b28b-a355b1d18592",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C27",
+      "claim": "Ray-based rendering has historically only been used in offline cases where individual frames can take many hours to render.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, they have historically only been used in offline cases where individual frames of an animation can take many hours to render, such as in cinema (Christensen et al., 2018), and prior to that in architectural and design drafting (Appel, 1968; Roth, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Christensen et al., 2018; Appel, 1968; Roth, 1982",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "02b202e9-86c0-4dca-bd0c-bf6a44581981",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C28",
+      "claim": "GPU manufacturers have introduced dedicated programmable ray-tracing hardware into their graphics pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to better capture the photo-realistic offerings of ray-based rendering methods, GPU manufacturers have introduced dedicated programmable RT hardware into their graphics pipelines (Purcell et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Purcell et al., 2005 and knowledge of GPU technology",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "670000b9-ac07-4c4b-b2b3-58abe4c244fd",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C29",
+      "claim": "RT cores are optimised for efficient parallel triangle-line intersection.",
+      "claim_type": "EXPLICIT",
+      "source": "These RT cores are optimised for efficient parallel triangle-line intersection, allowing billions of rays to be cast in real time into complex 3D scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of RT core functionality",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "b2579480-1a71-482f-a6ac-da2fbc3dc825",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C30",
+      "claim": "It is practically infeasible to find a single projective transform to produce the appropriate composite view of compound eyes in a single projection-based operation.",
+      "claim_type": "EXPLICIT",
+      "source": "These projection surfaces are often unique and varied, meaning it is practically infeasible to find a single projective transform to produce the appropriate composite view in a single projection-based operation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the complexity of compound eye geometry",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "86bf3d63-5d2f-40a1-9421-b08006ee774a",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C31",
+      "claim": "Each individual ommatidium captures light from a cone of vision defined by the ommatidial acceptance angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Each individual ommatidium in a compound eye captures light from a cone of vision (defined by the ommatidial acceptance angle), much in the way that our own eyes observe only a forward cone of the world around us.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of ommatidium function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "1bde3465-7309-4149-a633-a104fb76900a",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C32",
+      "claim": "All light captured within the ommatidium's cone of vision is focused to a singular point on a small photo-receptor cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the case of the ommatidium, all light captured within the cone of vision is focused to a singular point on a small photo-receptor cluster, rather than the many millions of photo-receptors in the human eye that allow for the high-resolution image that we experience",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of ommatidium structure and function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "63d9e0ee-77f9-4910-8705-86b23b59cd02",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C33",
+      "claim": "CompoundRay uses Monte Carlo integration to estimate the light intensity from the scene within the ommatidium's sampling domain.",
+      "claim_type": "EXPLICIT",
+      "source": "CompoundRay uses Monte Carlo integration (Kajiya, 1986) to estimate the light intensity from the scene within the ommatidium's sampling domain, effectively forming a small pinhole-type camera at the position of the ommatidium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software's methodology with citation to Kajiya, 1986",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "0b36c775-0313-4a18-a3b6-e0bc6b628f1e",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C34",
+      "claim": "Previous works have implemented light sampling function approximation by assuming the influence of individual light rays is modulated dependent on the angle to the ommatidial axis via a Gaussian function.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works Collins, 1998; Polster et al., 2018 have implemented this approximation of the light sampling function by assuming the influence of individual light rays, distributed statically across the sampling cone, is modulated dependent on the angle to the ommatidial axis via a Gaussian function with a full width at half maximum equal to the acceptance angle of the ommatidium, as seen in Figure 3a.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Collins, 1998; Polster et al., 2018 and Figure 3a",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "cbd2a8ee-e89d-4afe-8ed4-65f08aa3c1d6",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C35",
+      "claim": "CompoundRay uses stochastic sampling direction modulation chosen at random in relation to the Gaussian probability curve on a frame-by-frame basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, sampling direction is modulated and chosen at random in relation to the Gaussian probability curve of the sampling function on a temporal, frame-by-frame basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software's methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "f5c62115-0684-40f8-ae28-eb0458deaa87",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C36",
+      "claim": "Static sampling can result in elements of the scene being aliased out of the final measurement of sensed light.",
+      "claim_type": "EXPLICIT",
+      "source": "Static sampling can result in elements of the scene (in the case demonstrated in Figure 3b, dark grey circles) being aliased out of the final measurement of sensed light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by demonstration in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "995a8d2f-8a43-4b85-8d6e-cc5ecc957ceb",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C37",
+      "claim": "Stochastically varying the sampled direction on a frame-by-frame basis removes the structured nature of any single frame's aliasing.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, by choosing to stochastically vary the sampled direction on a frame-by-frame basis removes the structured nature of any single frame's aliasing, as that same view point will generate different aliasing artefacts on the next frame, having the net effect of reducing structured aliasing when considering sequences of frames (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from stochastic sampling theory and supported by Figure 3c",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "388c0134-6de3-45be-b8d9-f4857d2452d6",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C38",
+      "claim": "Averaging renderings from the same perspective becomes synonymous with an increased sampling rate.",
+      "claim_type": "EXPLICIT",
+      "source": "One benefit of this approach is that averaging renderings from the same perspective becomes synonymous with an increased sampling rate, indeed, this is how the renderer increases sampling rate internally: by increasing the rendering volume for the compound perspective, effectively batch-rendering and averaging frames from the same point in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the stochastic sampling approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "802db2c4-9f53-4ca4-b688-95948f10415a",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C39",
+      "claim": "Each ommatidium will sample the simulated environment differently for every frame rendered, causing small variations in the colour received at any given ommatidium over time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as each ommatidium will sample the simulated environment differently for every frame rendered, small variations in the colour received at any given ommatidium occur over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the stochastic sampling methodology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "fbce2d0b-4fa4-4403-9fdb-91fc3ec792cb",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C40",
+      "claim": "The renderer is written in C++ and the Nvidia Compute Unified Device Architecture (CUDA) GPU programming language.",
+      "claim_type": "EXPLICIT",
+      "source": "The renderer is written in C++ and the Nvidia Compute Unified Device Architecture (CUDA) GPU programming language and allows for a 3D environment representing a given experimental setup to be rendered from the perspective of an insect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software implementation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "6f83f28a-9b3d-4b18-9fad-55f2089932f7",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C41",
+      "claim": "The core of the renderer runs in parallel on the GPU as a series of CUDA shader programs.",
+      "claim_type": "EXPLICIT",
+      "source": "The core of the renderer runs in parallel on the GPU (the device) as a series of CUDA shader programs, which are driven by a C++ program running on the host computer (the host).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software architecture",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "0bba28f9-a263-45ec-8a26-341504a5eb48",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C42",
+      "claim": "Environments are stored in GL Transmission Format (glTF) files.",
+      "claim_type": "EXPLICIT",
+      "source": "Environments are stored in GL Transmission Format (glTF; Robinet et al., 2014) files consisting of 3D objects and cameras, the latter of which can be of two types: compound (structured sets of ommatidia) or traditional (perspective, orthographic, and panoramic).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software's file format with citation to Robinet et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "c99cf1bd-c9ee-4eee-836d-de21782a3ae0",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C43",
+      "claim": "The renderer is built on top of Nvidia's Optix ray-tracing framework.",
+      "claim_type": "EXPLICIT",
+      "source": "The renderer is built on top of Nvidia's Optix (Parker et al., 2010) RT framework, which is a pipeline-based system: a pipeline is assembled, which then allows for parallel per-pixel rendering of the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software foundation with citation to Parker et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "28b09a75-22cc-4b0f-8473-8eccecdec0f0",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C44",
+      "claim": "Two pipelines are used in the renderer: an ommatidial pipeline and a display pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "Two pipelines are used in the renderer: an ommatidial pipeline and a display pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software architecture",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "6f3f31aa-6841-4ff7-ba21-38761bdc7de5",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C45",
+      "claim": "The ommatidial pipeline handles sampling of the environment through the currently active compound eye.",
+      "claim_type": "EXPLICIT",
+      "source": "The ommatidial pipeline handles sampling of the environment through the currently active compound eye, saving all samples from all ommatidia to a buffer stored within the eye's 'raw ommatidial view' portion of its data record.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software functionality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "ee56ce26-907f-4abb-82fb-1651da037896",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C46",
+      "claim": "The display pipeline handles the generation of the user-facing display buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the display pipeline handles the generation of the user-facing display buffer (Figure 4 \u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Explicit statement about the software functionality with reference to Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "eead1ba1-c25c-4b73-8c07-293183bfb8cf",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C47",
+      "claim": "Using the glTF file format for scene storage allows the experimental configuration of 3D models, surface textures, and camera poses to be packed into a single file.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the glTF file format for scene storage allows the experimental configuration of 3D models, surface textures, and camera poses to be packed into a single file (although per-eye ommatidial configurations are stored separately as comma-separated value (CSV) files and linked to within the glTF file to avoid file bloat, retaining the readability of the glTF file).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software's file format capabilities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "7b77e88f-db71-4f22-aca6-55891527faba",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C48",
+      "claim": "The glTF format is a JSON-based human-readable file format for 3D scene storage that is readily supported by a number of popular 3D editors.",
+      "claim_type": "EXPLICIT",
+      "source": "The glTF format is a JavaScript object notation (JSON)-based human-readable file format for 3D scene storage that is readily supported by a number of popular 3D editors and has allowances for extensions within its specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of the glTF file format",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "65d167a2-ab31-4e22-888f-549ec97356e9",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C49",
+      "claim": "Three virtual eye models were created based on increasing simplifications of real-world eye data.",
+      "claim_type": "EXPLICIT",
+      "source": "Three virtual eye models were created, based on increasing simplifications of real-world eye data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "69486247-06e3-4f6b-a63f-6d0f65433133",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C50",
+      "claim": "The virtual eye models were assembled based on one Apis mellifera scan from eight scans of real-world samples taken by Baird and Taylor, 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "The virtual eye models were assembled based on one (Apis mellifera) of eight scans of real-world samples (two Apis mellifera, six Bombus terrestris) taken by Baird and Taylor, 2017, with the 3D surface shape used to derive sample points and axial directions for each of the 6374 ommatidia present in both eyes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the data source with citation to Baird and Taylor, 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "a5153c38-2d6a-41c2-9024-9509ccd69303",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C51",
+      "claim": "The real eye model contains 6374 ommatidia present in both eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "The virtual eye models were assembled based on one (Apis mellifera) of eight scans of real-world samples (two Apis mellifera, six Bombus terrestris) taken by Baird and Taylor, 2017, with the 3D surface shape used to derive sample points and axial directions for each of the 6374 ommatidia present in both eyes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the eye model specifications",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "c78799c9-7d8c-4fca-9304-29d04559bdb4",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C52",
+      "claim": "The 'split' and 'single' eye models were created to mimic assumptions made in past simulated compound vision studies.",
+      "claim_type": "EXPLICIT",
+      "source": "These were created by editing the eye's ommatidial positions to either converge on two or one single point (Figure 5 i-iii, i-iii) to mimic assumptions made in past simulated compound vision studies (Franz et al., 1998; Baddeley et al., 2012; Nityananda et al., 2016; Polster et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Explicit statement with citations to Franz et al., 1998; Baddeley et al., 2012; Nityananda et al., 2016; Polster et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "d43f69dd-541c-4af1-a363-de4d872ed5c0",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C53",
+      "claim": "A multi-layer perceptron network with two fully connected hidden layers was trained to estimate the point's position as a proxy for the eye's ability to perform basic small-point spatial awareness tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "The three variations on the real eye design were then assessed against each other for their ability to resolve the 3D position of a target point within a simple black and white environment by training a multi-layer perceptron (MLP) network with two fully connected hidden layers to estimate the point's position, encoding the relationship between visual scene and relative location - a task that was taken as a proxy for the eye's ability to perform basic small-point spatial awareness tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the experimental methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "3b53cf6e-7f9d-486e-aa82-c4644af71153",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C54",
+      "claim": "Comparing the views from varying ommatidial eye designs presents challenges due to differing surface shapes and ommatidial counts.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the differing surface shapes and ommatidial counts between any two eyes make direct comparison very challenging as a result of the lack of a one-to-one correspondence between the ommatidia of each eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the geometric differences between eye designs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "40ce5b96-ae06-4709-8f8e-03539a40264b",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C55",
+      "claim": "Small-point localisation was used as a basis for measuring eye utility because similar tasks have formed key parts of many behavioural studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In this example comparison method, we propose using the task of small-point localisation as a basis for measuring eye utility, as similar tasks have formed key parts of many behavioural studies (van Praagh et al., 1980; Juusola and French, 1997; Nityananda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to van Praagh et al., 1980; Juusola and French, 1997; Nityananda et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "11150733-00ab-4c94-805b-b802cc8bcab3",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C56",
+      "claim": "The non-Euclidian surface geometry of the compound eye makes convolutional neural network architectures inappropriate.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-Euclidian surface geometry of the compound eye makes convolutional neural network architectures (which typically operate over euclidian 2D or 3D space [Li et al., 2021]) inappropriate, as doing so would require a conversion from eye surface to a 2D surface, potentially introducing biases (as further elaborated in the 'Discussion' section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the geometric properties of compound eyes and citation to Li et al., 2021",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "06978c69-b570-467d-b836-59e921ac2271",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C57",
+      "claim": "Graph neural networks provide a method of operating over the 3D surface of the eye independent of assumptions of implicit spatially uniform sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Graph neural networks (Scarselli et al., 2009) \u2013 neural networks that operate independent of assumptions of implicit spatially uniform sampling, instead operating over data structured in a graph \u2013 provide a method of operating over the 3D surface of the eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Scarselli et al., 2009 and knowledge of graph neural networks",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "1daf0859-d7e8-4d94-a6fb-9a66108e485e",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C58",
+      "claim": "The MLP network was designed with 2 hidden layers (1000 and 256 neurons) and a final linear output layer of 3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed an MLP with 2 hidden layers (1000 and 256 neurons, with rectified linear activation functions to act as non-linearities) and a final linear output layer of 3 neurons to represent the x, y, and z components of the relative position vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the neural network architecture",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "8f0cf55d-8f5d-4d26-a7d3-f2bac75a5a5e",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C59",
+      "claim": "For each eye design, 100,000 image position pairs were generated for training purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "For each eye design, 100,000 image position pairs were generated for training purposes. Of these, 80,000 were used for training, and 20,000 were used as a validation dataset in order to plot training progress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the experimental dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "af4c965c-e277-43b8-b06d-92984c8d1cdd",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C60",
+      "claim": "Performance was benchmarked in two 3D environments: a lab environment and a 3D scan of a real-world natural environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Performance is benchmarked in two 3D environments: a lab environment inspired by those used in insect cognitive experiments (Ofstad et al., 2011); and a 3D scan of a real-world natural environment covering an area of a number of square kilometers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the benchmarking environments with citation to Ofstad et al., 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "8ab03fb6-1328-40ee-a130-5046fd89dc11",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C61",
+      "claim": "The natural environment was constructed using structure-from-motion photogrammetry using photos captured from a drone over rural Harpenden, UK.",
+      "claim_type": "EXPLICIT",
+      "source": "The natural environment was constructed using structure-from-motion photogrammetry using photos captured from a drone over rural Harpenden, UK (3D model subject to upcoming publication, available via contact of Dr. Joe Woodgate, Queen Mary University of London).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the data collection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "d4896517-6658-4ecf-a1bb-3eb00a1fa6a9",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C62",
+      "claim": "CompoundRay supports arbitrary arrangements of ommatidia within 3D space.",
+      "claim_type": "EXPLICIT",
+      "source": "Criterion 1 states that the renderer must support arbitrary arrangements of ommatidia within 3D space. Figure 6 shows two different environments rendered using three differing eye designs, from a simple spherical model with spherical uniformly distributed ommatidia that more closely aligns with current compound eye rendering methods, to a hypothetical arbitrary arrangement similar to that of the now long-extinct Erbenochile erbeni.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Figure 6 showing different eye designs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "356c104a-898e-45fc-9ef7-61a15c7838cf",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C63",
+      "claim": "It is possible to specify heterogeneous ommatidial optical properties across an eye in CompoundRay.",
+      "claim_type": "EXPLICIT",
+      "source": "Criterion 2 states that it should be possible to specify heterogeneous ommatidial optical properties across an eye, such as the enlarged facets as found in robberflies (Wardill et al., 2017). As demonstrated in Figure 7, the renderer achieves this by allowing for shaping of the acceptance cone of each ommatidium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Figure 7 and citation to Wardill et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "b8aebd94-f39c-4199-96ea-9cfcc82d3042",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C64",
+      "claim": "Heterogeneous ommatidial configurations are important for avoiding blind-spots and oversampling.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in the generated image, this is important as it appropriately avoids creating blind-spots in the dorsal and ventral regions while also avoiding oversampling (blurring) in the horizontally acute region, resulting in a much clearer picture of the observed environment (before the visual data is passed into any insect visual processing neural circuits) while also minimising the required number of ommatidia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the visual results shown in Figure 7",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "37b609e1-1445-4269-8150-f0b804b20756",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C65",
+      "claim": "The required number of samples per eye is highly positively correlated with the visual frequency and intensity of the simulated environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the required number of samples per eye is highly positively correlated with the visual frequency and intensity of the simulated environment at any given point, with locations exhibiting high contrast seen from a distance requiring higher sampling rates in order to properly resolve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the sampling analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "5c5ac057-ca7a-47fe-b1d0-41867faa744e",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C66",
+      "claim": "A threshold of 1% was used, meaning that the maximum expected standard deviation of the most deviant ommatidium should be no greater than 1% of the maximum difference between two received colours.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use a threshold of 1%, meaning that the maximum expected standard deviation of the most deviant ommatidium on an eye (normalised to one steradian) should be no greater than 1% of the maximum difference between two received colours, here defined as the length of vector [255, 255, 255].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the experimental threshold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "78670c76-00ed-456b-abd0-a3d0cb9e9798",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C67",
+      "claim": "Performance improves significantly when the renderer is able to utilise the next-generation RT hardware available in the newer RTX series of NVidia graphics cards.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, performance improves significantly when the renderer is able to utilise the next-generation RT hardware available in the newer RTX series of NVidia graphics cards, consistently outperforming older cards in the larger natural environment and outperforming in the smaller lab environment when using more than 30,000 rays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "851e1221-8af2-48f8-bd72-f21fb5ddaf93",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C68",
+      "claim": "The previous generation of NVidia graphics cards was found to outperform the RTX series in the lab environment at lower ray counts (below 30,000).",
+      "claim_type": "EXPLICIT",
+      "source": "Counterintuitively, the previous generation of NVidia graphics cards was found to outperform the RTX series in the (relatively small) lab environment at lower ray counts (below 30,000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "9443313e-17d0-485c-8eb3-4b6187732e63",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C69",
+      "claim": "Static overhead involved with the use of the RTX series' RT cores may cause the counterintuitive performance at lower ray counts.",
+      "claim_type": "EXPLICIT",
+      "source": "This appears to be due to static overhead involved with the use of the RTX series' RT cores, which may also be the cause of the small positive trend seen between 1000 and 8000 samples when using the 2080Ti.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about the cause of observed performance patterns",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "b10723a3-6d6c-484c-b9e8-f1218a0ec037",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C70",
+      "claim": "The 'real' eye design offers a higher utility (lower total error) when trying to locate the relative position of the sphere compared to both the 'split' and 'single' eye designs.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of total error over the validation set, we observed that \u2013 as expected \u2013 the 'real' eye design appears to offer a higher utility (lower total error when trying to locate the relative position of the sphere), ultimately decreasing its network's validation error quicker and to a lower minimum after 100 epochs when compared to both the 'split' and 'single' eye designs (Figure 11a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 11a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "38634424-1b90-4897-b0e1-a7896c68ecd8",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C71",
+      "claim": "The 'single' eye design eventually achieved a similar utility score on the validation set than that of the 'split' eye design.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite an initial slow in learning rate, the 'single' eye design eventually achieved a similar utility score on the validation set than that of the 'split' eye design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 11a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "638e35a0-16d9-4c98-ad46-8b6a0f2ccb55",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C72",
+      "claim": "The most significant region of difference between the 'real' eye model and the 'single' eye model can be seen around the edges of the eye's field of vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Seemingly, the most significant region of difference between the 'real' eye model and the 'single' eye model can be seen around the edges of the eye's field of vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of the difference volumes shown in Figure 11b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "fa5ed7bf-5dba-471c-92ed-2ece91dcf58d",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C73",
+      "claim": "The difference between 'real' and 'single' eye models around the edges of the field of vision appears to be likely due to parallax.",
+      "claim_type": "EXPLICIT",
+      "source": "As this difference follows the entirety of the edge of the eye's field of vision, this appears to be likely due to parallax \u2013 the 'real' eye samples from two points, allowing it slightly extended range of vision compared to that of the 'single' eye model, resulting in slightly different ranges of FOV between the two, with this difference increasing the further from the eye the point is.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the observed differences and knowledge of parallax effects",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "2004d598-844d-4963-aa7e-5e1deb00665e",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C74",
+      "claim": "There are two regions of higher error toward the forward-facing regions in the 'real' vs 'split' comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'real' vs 'split' comparison image, however, there are two regions of higher error (highlighted in red circles in Figure 11c) toward the forward-facing regions of the eye's vision.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by visual data shown in Figure 11c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "5c0de19d-4ed0-4313-9ef3-ddf2439113f3",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C75",
+      "claim": "The regions of higher error in the 'real' vs 'split' comparison indicate a region of improved visual information when using a full eye surface as compared to simple two-point sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "These indicate a region of improved visual information when using a full eye surface as compared to simple two-point sampling of the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the observed differences in Figure 11c",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "4b246224-6cc3-4aae-b5cd-fca2c9619d22",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C76",
+      "claim": "CompoundRay addresses the need for a fast, compound eye perspective rendering pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "This paper has introduced a new compound eye perspective rendering software, CompoundRay, that addresses the need for a fast, compound eye perspective rendering pipeline (St\u00fcrzl et al., 2015; Taylor and Baird, 2017; Millward et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to St\u00fcrzl et al., 2015; Taylor and Baird, 2017; Millward et al., 2020",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "048f0415-29a8-4e1c-9057-8cd1a0b43d4c",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C77",
+      "claim": "CompoundRay can perform rendering tasks at speeds in the order of thousands of frames per second using consumer-grade graphics hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the tool supports arbitrary instantiation of heterogeneous ommatidia at any place in space and can perform rendering tasks at speeds in the order of thousands of frames per second using consumer-grade graphics hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "b54a39da-4e64-4102-bfe6-f9d7eb53bc02",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C78",
+      "claim": "CompoundRay rendered over 3.3 million training images in only 2 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we used over 3.3 million training images, which CompoundRay rendered in only 2 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software's performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "d349ec32-dba6-4c34-a38b-04fa1f53ca4d",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C79",
+      "claim": "CompoundRay can act as the previously missing step to integrate recently catalogued real eye designs into mapped insect environments.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CompoundRay can act as the previously missing step to integrate recently catalogued real eye designs (Baird and Taylor, 2017; Bagheri et al., 2020) into mapped insect environments (St\u00fcrzl et al., 2015; Risse et al., 2018) to explore the information provided to insects in their natural surroundings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baird and Taylor, 2017; Bagheri et al., 2020; St\u00fcrzl et al., 2015; Risse et al., 2018",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "85929217-9062-4779-b87d-6ab5d74affb3",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C80",
+      "claim": "The ability to configure ommatidial properties individually enables new investigations into the benefits of asymmetric compound eyes such as those found in robber flies and crabs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the ability to configure ommatidial properties individually and with respect to eye surface shape enables new investigations into the benefits of asymmetric compound eyes such as those found in robber flies (Wardill et al., 2017) and crabs (Zeil et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wardill et al., 2017 and Zeil et al., 1986",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "5f0494c5-26d5-4417-9306-03d3485ec4f5",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C81",
+      "claim": "CompoundRay can be used to model microsaccadic sampling in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we see opportunities to model the recently reported microsaccadic sampling in fruit flies (Juusola et al., 2017), as well as aid with similar vision-centric neurological studies (Viollet, 2014; Wystrach et al., 2016; Kemppainen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Juusola et al., 2017",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "d136031c-cc4e-47f3-85e2-17e598864f63",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C82",
+      "claim": "Direct comparison between two eye designs with entirely dissimilar surfaces is fundamentally difficult unless those surfaces are affine transformations of one another.",
+      "claim_type": "EXPLICIT",
+      "source": "These projection biases highlight how fundamentally difficult it is to directly compare eye designs that do not share an underlying surface structure, unless those surfaces happen to be affine transformations of one another (they are affinely equivalent).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from geometric properties of surfaces",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "e049120a-09a3-400f-b1d4-00fd1e3eeca7",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C83",
+      "claim": "CompoundRay could be extended to add non-visible spectral lighting and polarisation sensitivities.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, the library could be extended to further enhance biological realism by adding non-visible spectral (e.g. ultraviolet) lighting (M\u00f6ller, 2002; Stone et al., 2006; Differt and M\u00f6ller, 2015) and polarisation (e.g.Gkanias et al., 2019) sensitivities, as well as more realistic photo-receptor response characteristics (e.g. Song et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to M\u00f6ller, 2002; Stone et al., 2006; Differt and M\u00f6ller, 2015; Gkanias et al., 2019; Song et al., 2009",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "506595a3-6498-4cf7-8c73-b3e59b0b66ae",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C84",
+      "claim": "CompoundRay currently returns all output images in an eight-bit colourspace.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, CompoundRay returns all output images in an eight-bit colourspace, which aligns with most contemporary display equipment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software's current capabilities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "2c242f8a-747e-4ac4-8b54-8f6da6bcf1b0",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C85",
+      "claim": "The underlying GPU implementation operates on 32-bit floating-point variables.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that the underlying GPU implementation operates on 32-bit floating-point variables which if exposed to the high-level Python API could improve the system's ability to represent visual sensors that experience a wider bandwidth of light (hyperspectral visual systems).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software's implementation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "daa61607-777f-4697-a756-5069c873e690",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "claim_id": "C86",
+      "claim": "CompoundRay is provided as an open-sourced library.",
+      "claim_type": "EXPLICIT",
+      "source": "CompoundRay is provided as an open-sourced library (https://github.com/BrainsOnBoard/compound-ray).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about the software's availability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Insect compound eyes have a fundamentally different structure from mammalian visual systems, consisting of ommatidia with fixed optical properties that vary across eye regions, castes, and species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 establish well-documented background knowledge about insect vision and compound eye structure. All claims are supported by appropriate citations to established literature (Wiederman et al., 2017; Wehner, 2020; Land and Nilsson, 2002; etc.) and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "11d9c523-51bc-465d-add8-6b36fc6d5529",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous compound eye models have demonstrated benefits of wide field of view and non-visible light sensing, but all contemporary models sample from a single viewpoint, unlike real compound eyes which provide multi-viewpoint information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 accurately summarize prior work on compound eye models and identify a key limitation. The claims are well-supported by multiple citations and the inference about single-viewpoint sampling (C15) is reasonable given the cited literature. The contrast with real multi-viewpoint systems (C16) is logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "06cd71ff-7c75-4a40-9b2b-60b0d841b54d",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Previous high-fidelity compound eye rendering engines existed but were not widely adopted due to slow rendering speeds, though modern GPU ray-tracing hardware now enables high-speed multi-location visual data capture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 establish the technological context and motivation for the work. The claims about previous systems being slow (C18) and not widely adopted (C17) are supported by citations, and the emergence of dedicated ray-tracing hardware (C19) is well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "7c6fb2bb-0e4c-4519-84f7-be910ca1bd54",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CompoundRay achieves rendering speeds of over 3000 frames per second for bee eyes with 6000 ommatidia and rendered 3.3 million training images in 2 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C77, and C78 report specific performance metrics that are supported by experimental data presented in the manuscript (particularly Figure 10). The performance claims are concrete, measurable, and consistent with the benchmarking results shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "35bf74ef-87b1-4b95-b3fd-65a687c94655",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ray-casting methods are more suitable than polygon projection for compound eye rendering because compound eyes form multiple imaging points, though ray-based approaches are computationally complex. Modern GPU ray-tracing hardware addresses this complexity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C30 establish the technical rationale for using ray-casting over projection-based rendering. The reasoning is sound and supported by both established knowledge of rendering techniques and appropriate citations. The inference about projection methods struggling with multiple imaging points (C23, C30) is logically justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CompoundRay uses Monte Carlo integration with stochastic frame-by-frame sampling modulated by a Gaussian function to estimate light intensity, which reduces structured aliasing compared to static sampling patterns used in previous works.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C39 describe the core sampling methodology. The approach is clearly explained with appropriate citations (Kajiya, 1986; Collins, 1998; Polster et al., 2018). The advantage of stochastic over static sampling (C36-C37) is demonstrated in Figure 3. The trade-off of frame-to-frame variation (C39) is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "dc83647f-fde1-4ff6-804f-8c265cc85437",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CompoundRay is implemented in C++ and CUDA, uses glTF file format for scene storage, and employs two rendering pipelines (ommatidial and display) built on Nvidia's Optix framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C48 describe the software architecture and implementation details. These are explicit statements about the software design supported by Figure 4 and appropriate citations (Robinet et al., 2014; Parker et al., 2010). The technical details are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Three virtual eye models (real, split, single) were created from Apis mellifera scans and compared using an MLP network trained to localize a point as a proxy for spatial awareness, chosen because direct comparison between dissimilar eye designs is challenging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C59 describe the experimental design. The methodology is clearly explained with appropriate citations (Baird and Taylor, 2017; van Praagh et al., 1980; etc.). The rationale for using indirect comparison via a proxy task (C54-C55) is well-justified. The MLP architecture (C58) and dataset size (C59) are explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "4f3dcb65-45ef-4983-bacb-988ca6482891",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Performance was benchmarked in a lab environment and a natural environment constructed from drone photogrammetry over rural Harpenden, UK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 describe the benchmarking environments. The lab environment is appropriately cited (Ofstad et al., 2011) and the natural environment methodology is clearly described. The data source for the natural environment is identified though noted as subject to upcoming publication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "39d5f54d-2195-4beb-908b-c04fe08cc06f",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CompoundRay supports arbitrary ommatidial arrangements and heterogeneous optical properties, which are important for avoiding blind spots and oversampling while minimizing ommatidial count.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 demonstrate key software capabilities. Support for arbitrary arrangements (C62) and heterogeneous properties (C63) is clearly shown in Figures 6 and 7. The importance of heterogeneous configurations (C64) is demonstrated visually in Figure 7, though the inference could benefit from quantitative analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "f0889dbc-a915-4d7b-994b-40704af5216f",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The required sampling rate is positively correlated with visual complexity, and a 1% standard deviation threshold was used to determine minimum sample counts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 describe the sampling rate determination methodology. The correlation with visual complexity (C65) is demonstrated in Figures 8-9. The 1% threshold (C66) is explicitly stated and justified. The approach is reasonable though somewhat arbitrary in threshold choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "c24bd37d-c167-4127-a0f5-fc98459a0ae0",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "RTX series GPUs significantly outperform older cards in larger environments and at higher ray counts, though older cards perform better in small environments at low ray counts, possibly due to RT core overhead.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 report performance comparisons supported by Figure 10 data. However, C69's explanation of the counterintuitive result is explicitly speculative and lacks supporting evidence. The performance data itself is solid, but the mechanistic explanation is uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "3e03f7b0-dbf9-42cf-b39b-68b79f380919",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The 'real' eye design achieved lower validation error than 'split' and 'single' designs in point localization. Differences between 'real' and 'single' models appear at field-of-view edges due to parallax, while 'real' vs 'split' differences occur in forward-facing regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 report experimental results supported by Figure 11. The performance differences (C70-C71) are clearly shown in Figure 11a. The spatial patterns of differences (C72, C74) are visible in Figure 11b-c. The mechanistic explanations (C73, C75) are reasonable inferences though not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "a905f248-c216-4ee2-a659-79199990305a",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CompoundRay addresses the need for fast compound eye rendering and enables new investigations into eye design benefits, integration of real eye scans with mapped environments, and modeling of microsaccadic sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C79-C81 discuss the software's impact and potential applications. C76 is well-supported by the demonstrated performance. However, C79-C81 are largely speculative about future applications, supported by citations but not demonstrated in this work. These represent potential rather than realized capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "09efb75d-707d-481d-8dba-89821c0a1896",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Direct comparison between eye designs with dissimilar surfaces is fundamentally difficult unless surfaces are affine transformations of one another.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 makes a valid geometric argument about the difficulty of comparing non-affinely-equivalent surfaces. This is a reasonable inference from geometric principles and helps justify the indirect comparison methodology used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "4edde91e-bb4f-4f9e-bccf-5a160c293c08",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CompoundRay currently outputs 8-bit color images but uses 32-bit floating-point internally, and could be extended to support UV lighting, polarization, and more realistic photoreceptor responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 describe current limitations and future extensions. C84-C85 accurately describe the current implementation. C83 discusses potential extensions supported by appropriate citations, though these are speculative future work rather than current capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    },
+    {
+      "id": "09a336d1-5715-4bf9-b846-230e00fd9aad",
+      "content_id": "8ccfda0c-a830-4296-81cd-96ed5b8e0bbb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CompoundRay is provided as an open-source library.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 is an explicit statement about software availability with a GitHub URL provided. This is directly verifiable and represents an important contribution to the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:32.295450Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21a53546-f0a0-45ca-8908-371f369823c6",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "2f8f2653-7fe4-428f-826d-741df8655899",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "6f57a4bb-6eea-41da-9f26-5205bb4ba83c",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "16fc1d43-9d80-4f70-9e64-9508b8df2cc2",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "45bd8eb5-8274-48b5-8a5e-7d1634f1cad3",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "44327772-45b8-4ff1-8b5a-fc2574b77a66",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "3118fe77-9d93-4e3b-8254-f3eb618454a9",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "b65fa449-928e-415a-b077-77969ef96eb3",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "78419e14-0b57-4905-a187-1ef1b313d060",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "28a416dc-90df-41c9-948c-cda515a60ae0",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "c3c1f959-34cb-4915-b994-67a2e768a671",
+      "result_id": "90d098d2-bdfe-4540-92d3-1b9dc91044f5"
+    },
+    {
+      "claim_id": "42936872-6660-45ff-915c-ba4a4700232b",
+      "result_id": "11d9c523-51bc-465d-add8-6b36fc6d5529"
+    },
+    {
+      "claim_id": "e50ea568-5d76-456b-982f-87a1b64cc1ef",
+      "result_id": "11d9c523-51bc-465d-add8-6b36fc6d5529"
+    },
+    {
+      "claim_id": "ad0e8c73-673e-45df-9044-07a26a7435a9",
+      "result_id": "11d9c523-51bc-465d-add8-6b36fc6d5529"
+    },
+    {
+      "claim_id": "aa6b3fd8-54f7-4d7f-8f37-8ae87fcfc64a",
+      "result_id": "11d9c523-51bc-465d-add8-6b36fc6d5529"
+    },
+    {
+      "claim_id": "c9249221-a9d7-4cf6-a4d9-58cd27ee449a",
+      "result_id": "11d9c523-51bc-465d-add8-6b36fc6d5529"
+    },
+    {
+      "claim_id": "7dcfbafd-dc36-4961-88d2-e1071b296a9d",
+      "result_id": "06cd71ff-7c75-4a40-9b2b-60b0d841b54d"
+    },
+    {
+      "claim_id": "641c28da-8526-4ebb-b35a-03a4f532ec8e",
+      "result_id": "06cd71ff-7c75-4a40-9b2b-60b0d841b54d"
+    },
+    {
+      "claim_id": "aa096a91-c47e-4f03-a753-0536fb89c587",
+      "result_id": "06cd71ff-7c75-4a40-9b2b-60b0d841b54d"
+    },
+    {
+      "claim_id": "abd21f0d-472b-40ca-a86b-8e5a1bbc7486",
+      "result_id": "7c6fb2bb-0e4c-4519-84f7-be910ca1bd54"
+    },
+    {
+      "claim_id": "048f0415-29a8-4e1c-9057-8cd1a0b43d4c",
+      "result_id": "7c6fb2bb-0e4c-4519-84f7-be910ca1bd54"
+    },
+    {
+      "claim_id": "b54a39da-4e64-4102-bfe6-f9d7eb53bc02",
+      "result_id": "7c6fb2bb-0e4c-4519-84f7-be910ca1bd54"
+    },
+    {
+      "claim_id": "024a06a5-9e06-423c-83e1-894d2a8333e2",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "2176cdf3-c324-4772-bfe4-ee67b6cc3e1d",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "dbd5caf4-2003-44df-af91-8406b87825ec",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "8fe3e7fe-c006-469b-920b-a061e0c5e01d",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "d12ed2ae-b488-4b38-bfb8-8c9925ca59db",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "a82f81cb-021d-4723-965b-cbcabcc110e8",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "825fd3da-d2c2-4c58-b28b-a355b1d18592",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "02b202e9-86c0-4dca-bd0c-bf6a44581981",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "670000b9-ac07-4c4b-b2b3-58abe4c244fd",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "b2579480-1a71-482f-a6ac-da2fbc3dc825",
+      "result_id": "35bf74ef-87b1-4b95-b3fd-65a687c94655"
+    },
+    {
+      "claim_id": "86bf3d63-5d2f-40a1-9421-b08006ee774a",
+      "result_id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b"
+    },
+    {
+      "claim_id": "1bde3465-7309-4149-a633-a104fb76900a",
+      "result_id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b"
+    },
+    {
+      "claim_id": "63d9e0ee-77f9-4910-8705-86b23b59cd02",
+      "result_id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b"
+    },
+    {
+      "claim_id": "0b36c775-0313-4a18-a3b6-e0bc6b628f1e",
+      "result_id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b"
+    },
+    {
+      "claim_id": "cbd2a8ee-e89d-4afe-8ed4-65f08aa3c1d6",
+      "result_id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b"
+    },
+    {
+      "claim_id": "f5c62115-0684-40f8-ae28-eb0458deaa87",
+      "result_id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b"
+    },
+    {
+      "claim_id": "995a8d2f-8a43-4b85-8d6e-cc5ecc957ceb",
+      "result_id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b"
+    },
+    {
+      "claim_id": "388c0134-6de3-45be-b8d9-f4857d2452d6",
+      "result_id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b"
+    },
+    {
+      "claim_id": "802db2c4-9f53-4ca4-b688-95948f10415a",
+      "result_id": "68569549-8704-4d2c-96fb-b6a3bac5fc3b"
+    },
+    {
+      "claim_id": "fbce2d0b-4fa4-4403-9fdb-91fc3ec792cb",
+      "result_id": "dc83647f-fde1-4ff6-804f-8c265cc85437"
+    },
+    {
+      "claim_id": "6f83f28a-9b3d-4b18-9fad-55f2089932f7",
+      "result_id": "dc83647f-fde1-4ff6-804f-8c265cc85437"
+    },
+    {
+      "claim_id": "0bba28f9-a263-45ec-8a26-341504a5eb48",
+      "result_id": "dc83647f-fde1-4ff6-804f-8c265cc85437"
+    },
+    {
+      "claim_id": "c99cf1bd-c9ee-4eee-836d-de21782a3ae0",
+      "result_id": "dc83647f-fde1-4ff6-804f-8c265cc85437"
+    },
+    {
+      "claim_id": "28b09a75-22cc-4b0f-8473-8eccecdec0f0",
+      "result_id": "dc83647f-fde1-4ff6-804f-8c265cc85437"
+    },
+    {
+      "claim_id": "6f3f31aa-6841-4ff7-ba21-38761bdc7de5",
+      "result_id": "dc83647f-fde1-4ff6-804f-8c265cc85437"
+    },
+    {
+      "claim_id": "ee56ce26-907f-4abb-82fb-1651da037896",
+      "result_id": "dc83647f-fde1-4ff6-804f-8c265cc85437"
+    },
+    {
+      "claim_id": "eead1ba1-c25c-4b73-8c07-293183bfb8cf",
+      "result_id": "dc83647f-fde1-4ff6-804f-8c265cc85437"
+    },
+    {
+      "claim_id": "7b77e88f-db71-4f22-aca6-55891527faba",
+      "result_id": "dc83647f-fde1-4ff6-804f-8c265cc85437"
+    },
+    {
+      "claim_id": "65d167a2-ab31-4e22-888f-549ec97356e9",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "69486247-06e3-4f6b-a63f-6d0f65433133",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "a5153c38-2d6a-41c2-9024-9509ccd69303",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "c78799c9-7d8c-4fca-9304-29d04559bdb4",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "d43f69dd-541c-4af1-a363-de4d872ed5c0",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "3b53cf6e-7f9d-486e-aa82-c4644af71153",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "40ce5b96-ae06-4709-8f8e-03539a40264b",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "11150733-00ab-4c94-805b-b802cc8bcab3",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "06978c69-b570-467d-b836-59e921ac2271",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "1daf0859-d7e8-4d94-a6fb-9a66108e485e",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "8f0cf55d-8f5d-4d26-a7d3-f2bac75a5a5e",
+      "result_id": "e3cbe9ed-2479-46d1-9edb-d47c34222a44"
+    },
+    {
+      "claim_id": "af4c965c-e277-43b8-b06d-92984c8d1cdd",
+      "result_id": "4f3dcb65-45ef-4983-bacb-988ca6482891"
+    },
+    {
+      "claim_id": "8ab03fb6-1328-40ee-a130-5046fd89dc11",
+      "result_id": "4f3dcb65-45ef-4983-bacb-988ca6482891"
+    },
+    {
+      "claim_id": "d4896517-6658-4ecf-a1bb-3eb00a1fa6a9",
+      "result_id": "39d5f54d-2195-4beb-908b-c04fe08cc06f"
+    },
+    {
+      "claim_id": "356c104a-898e-45fc-9ef7-61a15c7838cf",
+      "result_id": "39d5f54d-2195-4beb-908b-c04fe08cc06f"
+    },
+    {
+      "claim_id": "b8aebd94-f39c-4199-96ea-9cfcc82d3042",
+      "result_id": "39d5f54d-2195-4beb-908b-c04fe08cc06f"
+    },
+    {
+      "claim_id": "37b609e1-1445-4269-8150-f0b804b20756",
+      "result_id": "f0889dbc-a915-4d7b-994b-40704af5216f"
+    },
+    {
+      "claim_id": "5c5ac057-ca7a-47fe-b1d0-41867faa744e",
+      "result_id": "f0889dbc-a915-4d7b-994b-40704af5216f"
+    },
+    {
+      "claim_id": "78670c76-00ed-456b-abd0-a3d0cb9e9798",
+      "result_id": "c24bd37d-c167-4127-a0f5-fc98459a0ae0"
+    },
+    {
+      "claim_id": "851e1221-8af2-48f8-bd72-f21fb5ddaf93",
+      "result_id": "c24bd37d-c167-4127-a0f5-fc98459a0ae0"
+    },
+    {
+      "claim_id": "9443313e-17d0-485c-8eb3-4b6187732e63",
+      "result_id": "c24bd37d-c167-4127-a0f5-fc98459a0ae0"
+    },
+    {
+      "claim_id": "b10723a3-6d6c-484c-b9e8-f1218a0ec037",
+      "result_id": "3e03f7b0-dbf9-42cf-b39b-68b79f380919"
+    },
+    {
+      "claim_id": "38634424-1b90-4897-b0e1-a7896c68ecd8",
+      "result_id": "3e03f7b0-dbf9-42cf-b39b-68b79f380919"
+    },
+    {
+      "claim_id": "638e35a0-16d9-4c98-ad46-8b6a0f2ccb55",
+      "result_id": "3e03f7b0-dbf9-42cf-b39b-68b79f380919"
+    },
+    {
+      "claim_id": "fa5ed7bf-5dba-471c-92ed-2ece91dcf58d",
+      "result_id": "3e03f7b0-dbf9-42cf-b39b-68b79f380919"
+    },
+    {
+      "claim_id": "2004d598-844d-4963-aa7e-5e1deb00665e",
+      "result_id": "3e03f7b0-dbf9-42cf-b39b-68b79f380919"
+    },
+    {
+      "claim_id": "5c0de19d-4ed0-4313-9ef3-ddf2439113f3",
+      "result_id": "3e03f7b0-dbf9-42cf-b39b-68b79f380919"
+    },
+    {
+      "claim_id": "4b246224-6cc3-4aae-b5cd-fca2c9619d22",
+      "result_id": "a905f248-c216-4ee2-a659-79199990305a"
+    },
+    {
+      "claim_id": "d349ec32-dba6-4c34-a38b-04fa1f53ca4d",
+      "result_id": "a905f248-c216-4ee2-a659-79199990305a"
+    },
+    {
+      "claim_id": "85929217-9062-4779-b87d-6ab5d74affb3",
+      "result_id": "a905f248-c216-4ee2-a659-79199990305a"
+    },
+    {
+      "claim_id": "5f0494c5-26d5-4417-9306-03d3485ec4f5",
+      "result_id": "a905f248-c216-4ee2-a659-79199990305a"
+    },
+    {
+      "claim_id": "d136031c-cc4e-47f3-85e2-17e598864f63",
+      "result_id": "09efb75d-707d-481d-8dba-89821c0a1896"
+    },
+    {
+      "claim_id": "e049120a-09a3-400f-b1d4-00fd1e3eeca7",
+      "result_id": "4edde91e-bb4f-4f9e-bccf-5a160c293c08"
+    },
+    {
+      "claim_id": "506595a3-6498-4cf7-8c73-b3e59b0b66ae",
+      "result_id": "4edde91e-bb4f-4f9e-bccf-5a160c293c08"
+    },
+    {
+      "claim_id": "2c242f8a-747e-4ac4-8b54-8f6da6bcf1b0",
+      "result_id": "4edde91e-bb4f-4f9e-bccf-5a160c293c08"
+    },
+    {
+      "claim_id": "daa61607-777f-4697-a756-5069c873e690",
+      "result_id": "09a336d1-5715-4bf9-b846-230e00fd9aad"
+    }
+  ],
+  "comparisons": []
+}

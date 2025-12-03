@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The auxin-inducible degron (AID) system was optimized in C. elegans to enable rapid depletion of dynein from oocyte spindles within minutes. The Dynein AID strain appears wild-type in the absence of auxin, and 4-hour auxin treatment results in undetectable dynein levels in mitotic embryos with expected phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C45-C48 collectively demonstrate successful optimization and validation of the AID system. The strain shows no developmental defects without auxin (C45-C46), and auxin treatment depletes dynein within the expected timeframe (C6) with canonical mitotic phenotypes (C47-C48). Control experiments with the TIR1 control strain (C57) further validate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60",
+      "C74"
+    ],
+    "result": "Dynein is required to maintain the integrity of acentrosomal poles during spindle assembly. Long-term dynein depletion causes pole splaying in 69.4% of spindles, with microtubule minus ends failing to coalesce, and this phenotype is dependent on dynein localization to poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C53-C56 provide quantitative evidence from germline counting and IF imaging showing consistent pole splaying phenotypes. Claims C58-C60 demonstrate that delocalization of dynein via ASPM-1 or LIN-5 depletion produces identical phenotypes, confirming that pole localization is necessary for dynein function. The conclusion (C74) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Acute dynein depletion from pre-formed metaphase spindles causes rapid pole splaying within 2-3 minutes, increases spindle length by ~3.5 \u03bcm, and disperses ASPM-1 across the spindle, while maintaining chromosome-microtubule associations and spindle bipolarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73 provide comprehensive evidence from both fixed and live imaging showing rapid phenotypes upon acute dynein depletion. The ~50% increase in pole-to-equator ratio (C62), spindle lengthening (C67), and ASPM-1 dispersion (C65-C66) are quantified. Control experiments with TIR1 control strain (C72) and unarrested spindles (C64, C73) validate specificity and generality of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Dynein depletion from monopolar spindles (induced by KLP-18 depletion) causes catastrophic breakdown of the monopole, ejecting chromosomes with associated microtubule bundles into the cytoplasm. This demonstrates dynein's essential role in maintaining pole integrity and suggests the overlap zone stabilizes bipolar spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C75-C82 provide strong evidence from both long-term and acute AID experiments showing monopole breakdown. The phenotype is observed in 92.8% of oocytes (C76) and confirmed by live imaging (C81). The cone-shaped microtubule structures (C79) are described, though the interpretation about minus end coalescence (C80) is speculative. The conclusion about pole integrity (C83) and overlap zone stabilization (C84) is reasonably inferred from comparing bipolar and monopolar phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Following monopole breakdown, individual chromosomes reorganize local microtubules and establish miniature bipolar spindles that mediate chromosome segregation. These mini anaphases segregate chromosomes to similar distances as wild-type (~5 \u03bcm) but not as far as dynein-depleted bipolar spindles (~6.5 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C86-C91 describe a striking and unexpected phenotype observed in live imaging (n=5). The synchronous, bidirectional chromosome movement (C87-C88) and quantified segregation distances (C90-C91) provide strong evidence. The inference that neither KLP-18 nor dynein is absolutely required for segregation (C89) is well-supported. The speculation about KLP-18's role in spindle elongation (C92) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Miniature anaphase spindles recapitulate key hallmarks of normal anaphase, including lateral microtubule bundles in early anaphase, central microtubule localization in late anaphase, proper SUMO-marked ring complex behavior, and correct SEP-1 (separase) localization dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 describe microtubule organization patterns in mini anaphases from fixed imaging. Claims C97-C99 show SUMO localization in 93/93 oocytes, and C100-C103 show SEP-1 localization in 81/81 oocytes, both matching normal anaphase patterns. The conclusion (C104) that mini spindles recapitulate normal anaphase is well-supported by multiple independent markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Microtubules reorganize into bipolar structures around individual chromosomes following monopole breakdown. ASPM-1 localization suggests a transitional reorganization period, and SPD-1 localization between segregating chromosomes (122/122 oocytes) demonstrates antiparallel microtubule overlap in mini spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 present the hypothesis and limited evidence (n=3) for transitional reorganization based on ASPM-1 localization. Claims C108-C112 provide strong evidence from SPD-1 localization in 122/122 oocytes showing antiparallel overlap. The conclusion (C113) about microtubule reorganization is well-supported, though the ASPM-1 data is limited and the transitional state is rarely captured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C157"
+    ],
+    "result": "The kinesin-5 motor BMK-1 provides redundant outward microtubule sorting force that enables mini spindle formation in the absence of KLP-18 and dynein. BMK-1 localizes to microtubules under all conditions (150/150 oocytes), and its removal prevents mini anaphase formation (0/164 oocytes in bmk-1(ok391); confirmed in bmk-1(syb3914)).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C115-C129 provide strong evidence for BMK-1's role. BMK-1 localizes to microtubules in all conditions including monopole breakdown (C121-C123). Loss of BMK-1 completely abolishes mini anaphase formation in both deletion alleles (C124, C127-C128), while monopole breakdown still occurs (C125). This represents the first evidence for kinesin-5 contribution to C. elegans meiotic spindle organization (C16), which is a significant finding given prior reports of no major phenotypes (C117-C119).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C114"
+    ],
+    "result": "The formation of miniature bipolar spindles reveals redundant microtubule sorting forces that are undetectable when KLP-18 and dynein are active, providing a unique opportunity to probe for masked motor forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C114 present the key conceptual framework for discovering BMK-1's role. The inference that redundant forces exist is well-supported by the experimental observation of mini spindle formation (C11-C12) and the subsequent identification of BMK-1 as providing this force (C15, C129). This represents an important insight into spindle organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C150"
+    ],
+    "result": "Multiple motors (dynein, KLP-18, BMK-1) work synchronously to establish and maintain acentrosomal spindle bipolarity. Dynein provides inward force and pole focusing, KLP-18 provides major outward force, and BMK-1 provides redundant outward force. Imbalance of these forces quickly leads to spindle defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C130-C137 summarize the overall model supported by all experimental findings. The conclusion about multiple motors working synchronously (C17) integrates findings about dynein's role in pole integrity (C135), microtubule reorganization after monopole breakdown (C136-C137), and BMK-1's redundant function (C157). The statement about force balance (C150) is supported by the rapid phenotypes observed and comparison to prior work on KLP-18 inactivation (C148-C149).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background context: Centrosomes organize mitotic spindle poles, but oocyte meiosis occurs without centrosomes. Acentrosomal spindles in human oocytes are frequently unstable, with poles splitting and rejoining, leading to high rates of chromosome segregation errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C18-C20 provide established background knowledge supported by citations (particularly Holubcov\u00e1 et al., 2015 for human oocyte instability). These claims establish the biological context and motivation for the study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on C. elegans oocyte spindle assembly: Microtubules nucleate near the nuclear envelope, KLP-18 pushes minus ends to form multiple poles that coalesce into a bipolar structure, the spindle rotates and shortens before anaphase, and various MAPs and motors (ASPM-1, KLP-7, MEI-1/2) contribute to assembly. Katanin is essential for spindle maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C33 describe the known process of spindle assembly in C. elegans oocytes, supported by multiple citations (Wolff et al., 2016; Gigant et al., 2017; Albertson and Thomson, 1993; Connolly et al., 2014, 2015; Srayko et al., 2000; McNally et al., 2014). These provide essential background but are not new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background on dynein function: In mitosis and other systems, dynein is required for pole focusing, centrosome anchoring, and poleward flux. In Xenopus, dynein inhibition causes splayed poles. In mouse oocytes, dynein is required for early spindle assembly. In C. elegans, dynein is crucial for spindle positioning and rotation, and its depletion causes longer spindles with pole defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 summarize prior work on dynein function across multiple systems, supported by numerous citations. These establish the rationale for studying dynein in C. elegans oocytes but represent prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Validation of Dynein AID strain: Tagged dynein localizes to oocyte spindles with enrichment at poles during anaphase, consistent with previous studies. Live imaging confirms this pattern and reveals a kinetochore population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 validate the Dynein AID strain by showing that tagged dynein localizes correctly (Figure 1C, Video 1, n=3), consistent with prior studies (Ellefson and McNally, 2009; van der Voet et al., 2009; McNally et al., 2016; Danlasky et al., 2020). This is important methodological validation but not a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "ASPM-1 and LIN-5 depletion produces pole splaying phenotypes nearly identical to Dynein AID (64-70%), and co-depletion with dynein does not worsen phenotypes. This confirms these proteins function in a single pathway by directing dynein localization to poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C162-C165 show that ASPM-1 and LIN-5 depletion phenocopy dynein depletion with similar frequencies (Figure 1\u2014figure supplement 2, Table 4), and co-depletion shows no additive effects. This supports the conclusion that these proteins function in a single pathway (C165), though the inference about a cross-linked network versus parallel pathways is discussed as uncertain in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Discussion of prior work: The current findings clarify that anaphase-B-like spindle elongation is the major driver of chromosome segregation in C. elegans oocytes, with dynein playing at most a minor, redundant role. KLP-18 is not absolutely required for anaphase spindle elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C145 discuss how current findings relate to and refine prior work (Muscat et al., 2015; McNally et al., 2016; Laband et al., 2017). The reinterpretation that dynein's role in segregation is redundant (C143) is well-supported by the observation of mini anaphases. However, these are primarily interpretive claims reconciling current and prior work rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C158"
+    ],
+    "result": "Discussion of motor force balance: Rapid phenotypes upon dynein loss suggest it provides inward force. KLP-18 provides major outward force in C. elegans (versus kinesin-5 in other organisms). Prior work shows dynein and kinesin-5 antagonize each other in other systems, and kinesin-12 can provide supplemental outward force when kinesin-5 is inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 and C151-C158 discuss force balance and compare motor roles across organisms, supported by citations to prior work (Ferenz et al., 2009; van Heesbeen et al., 2014; Wolff et al., 2021; Schuh and Ellenberg, 2007; Mann and Wadsworth, 2019; Mitchison et al., 2005; Tanenbaum et al., 2008, 2009; Vanneste et al., 2009). These provide important context but are primarily interpretive rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Discussion of BMK-1 regulation: Aurora B kinase (AIR-2) is required for BMK-1 spindle localization and can phosphorylate BMK-1 in vitro. AIR-2 inhibition causes collapsed spindles, consistent with a role in regulating spindle force generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 discuss potential regulation of BMK-1 by AIR-2, supported by citations to Bishop et al., 2005 and Divekar et al., 2021a. This represents discussion of prior work and speculation about mechanisms rather than new experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Discussion of pole protein functions: Not all pole protein depletions yield the same defects. ZYG-9 depletion causes multipolar spindles with broader defects, suggesting different groups of proteins work in parallel to form and stabilize poles rather than functioning as a single cross-linked network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C170 discuss recent work on ZYG-9 (Mullen et al., 2022) and interpret the broader implications for pole protein organization. The conclusion that different protein groups work in parallel (C170) is a reasonable inference but represents interpretation and discussion rather than new experimental data from this study.",
+    "result_type": "MINOR"
+  }
+]

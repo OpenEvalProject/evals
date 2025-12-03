@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "A genome-wide CRISPR screen in macrophages successfully identified regulators of IFN\u03b3-inducible surface markers MHCII, CD40, and PD-L1, with sgRNAs targeting the genes encoding these markers showing 30-60-fold enrichment in sorted populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 demonstrate successful establishment and validation of the CRISPR screening approach. The positive controls (sgRNAs targeting the sorted markers themselves) showed expected depletion patterns with substantial fold-changes, confirming the screen's technical validity and ability to identify regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "TNF synergizes with IFN\u03b3 to enhance CD40 expression (6-fold increase) but does not enhance MHCII expression, demonstrating pathway-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are supported by experimental validation (Figure 1E) and consistent with prior literature. The specificity of TNF's effect on CD40 versus MHCII is clearly demonstrated, though the molecular mechanism underlying this selectivity is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Novel negative regulators of PD-L1 expression, Ostc and Cnbp, were identified and validated through knockout experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by both screen data and independent validation experiments (Figure 1F). The identification of novel regulators demonstrates the power of the unbiased screening approach, though mechanistic understanding is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Combined analysis of CRISPR screens identified mitochondrial complex I as a critical positive regulator of the IFN\u03b3 response, with 29 of 42 complex I subunits significantly enriched and a correlation between subunit effects on N-module stability and screen enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 present the major discovery from the pooled screen analysis. The identification of complex I is supported by multiple lines of evidence: GSEA enrichment, individual gene analysis, and correlation with structural data. The exception of Ndufab1 (C13) is appropriately explained by its essentiality. The statistical analysis appears robust with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "IFN\u03b3 stimulation increases both oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) in macrophages, with increases in both basal and maximal OCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by Seahorse metabolic measurements (Figures 2F-H). The data demonstrate that IFN\u03b3 affects both glycolysis and oxidative metabolism, providing context for the genetic findings. However, the temporal dynamics and relative contributions are not fully characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Complex I-deficient macrophages (sgNdufa1, sgNdufa2) maintain ATP levels in glucose but show reduced ATP in pyruvate-only media and are insensitive to oligomycin, confirming glycolytic dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide metabolic validation of the complex I mutants. The differential ATP production in glucose versus pyruvate media, and the oligomycin insensitivity, clearly demonstrate the expected metabolic phenotype. This validates the genetic perturbations before testing IFN\u03b3 responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Genetic and chemical inhibition of complex I significantly reduces IFN\u03b3-dependent induction of MHCII and PD-L1, with Ndufa1 mutation reducing MHCII to levels comparable to Ifngr1 deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 demonstrate the functional consequence of complex I deficiency on IFN\u03b3 responses using both genetic (sgNdufa1, sgNdufa2) and pharmacological (rotenone) approaches. The magnitude of effect (comparable to receptor knockout) is striking and well-documented across multiple figures (3C-G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Oligomycin partially inhibits IFN\u03b3 responses while CCCP has no effect, and complex III/IV inhibitors show intermediate effects, suggesting complex I activity rather than ATP generation or membrane potential is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 use differential inhibitor effects to dissect mechanism. The lack of CCCP effect (C27) argues against a role for membrane potential/ATP, while the partial effects of downstream inhibitors (C26, C28) suggest they may indirectly affect complex I through backpressure. This mechanistic dissection is logical though not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "IFN\u03b3 induces similar MHCII expression in glucose, pyruvate, or citrate media, demonstrating that mitochondrial respiration is both necessary and sufficient for the response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 demonstrate sufficiency of OXPHOS-dependent carbon sources for IFN\u03b3 responses. Combined with the necessity shown by inhibitor studies, this supports the conclusion that respiration itself (not just glycolysis) drives IFN\u03b3 signaling. However, 'sufficient' may be overstated as other cellular requirements are not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Complex I-deficient macrophages show enhanced TLR2 responses (increased TNF and IL-6 secretion), indicating opposing metabolic dependencies for IFN\u03b3 versus TLR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 demonstrate pathway specificity and reveal an important dichotomy. The enhanced TLR2 response in complex I mutants (Figure 4A) contrasts with impaired IFN\u03b3 responses, supporting the conclusion of opposing metabolic dependencies. This is a key finding for understanding immune regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Linezolid treatment reduced mitochondrial mass by ~50% and nearly abolished IFN\u03b3-induced MHCII expression while preserving or enhancing TLR2 responses, confirming that mitochondrial activity itself is required for IFN\u03b3 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 use an orthogonal approach (mitochondrial depletion) to validate the complex I findings. The preservation of TLR2 responses argues against general cellular dysfunction. This strengthens the conclusion that mitochondrial function specifically regulates IFN\u03b3 signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ROS scavenging (galactose, NAC, MitoTEMPO), HIF-1\u03b1 stabilization (DMOG), and NOS2 inhibition (1400W) do not affect IFN\u03b3-induced MHCII expression, ruling out ROS, HIF-1\u03b1, and nitric oxide as mediators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 systematically exclude alternative mechanisms. The negative results with multiple approaches (Figure 3 supplement 1E-I) argue against secondary effects of mitochondrial inhibition through ROS or other stress pathways. This strengthens the case for a direct metabolic requirement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In human macrophages, rotenone inhibits IFN\u03b3-induced expression of PD-L1, ICAM1, and CD40 while enhancing TLR2-dependent IL-1\u03b2 and TNF secretion, demonstrating conservation of complex I requirement across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 extend findings to human cells (Figure 5), demonstrating translational relevance. The parallel effects in human and mouse cells strengthen the biological significance. Multiple human cell types were tested (GM-CSF and M-CSF macrophages, monocytes), enhancing robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Both mRNA and protein levels of PD-L1 and MHCII are proportionally reduced in complex I-deficient cells, indicating the defect occurs at the transcriptional level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 use time-course analysis (Figure 6A-B) to localize the defect to transcription. The parallel reduction in mRNA and protein argues against post-transcriptional mechanisms. However, the conclusion (C46) is somewhat inferential as direct transcriptional measurements were not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Delayed rotenone addition has diminishing effects on MHCII expression (negligible if added >4 hours post-IFN\u03b3), with similar kinetics in IRF1-deficient and control cells, indicating complex I affects early IFN\u03b3 signaling upstream of IRF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 use temporal analysis and IRF1 knockout to position complex I in the pathway. The time-window experiment (Figure 6C) and IRF1 epistasis analysis logically support the conclusion that complex I acts early, though the exact molecular target remains undefined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Complex I deficiency delays and reduces phosphorylation of JAK2 (Y1007/8), STAT1 (Y701), and STAT1 (S727) following IFN\u03b3 treatment, demonstrating that complex I is required for proximal receptor signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 identify the molecular level at which complex I acts. The immunoblot data (Figure 6D) clearly show reduced phosphorylation of receptor-proximal signaling molecules. This is a key mechanistic finding, though the molecular link between complex I and receptor signaling is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Rotenone and oligomycin inhibit IFN\u03b3-dependent MHCII induction in both macrophages and dendritic cells, and complex I inhibition abolishes IFN\u03b3-dependent T cell activation by both cell types, with T cell stimulation correlating with complex I activity in mixed APC populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 demonstrate functional consequences for adaptive immunity. The T cell activation assays (Figure 7) show that the metabolic requirement translates to impaired APC function. The dose-response with mixed populations (C57) provides additional quantitative support. This establishes biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study demonstrates that unbiased CRISPR screening can reveal unexpected regulators of well-characterized pathways, specifically showing that IFN\u03b3 receptor activity and T cell stimulation by APCs depend on mitochondrial function in mouse and human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are high-level summary conclusions supported by the cumulative evidence from the study. The identification of mitochondrial complex I as a critical regulator of IFN\u03b3 signaling represents a major conceptual advance, though mechanistic details remain incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "IFN\u03b3 stimulation increases both oxygen consumption and glycolytic activity in macrophages, but genetic data unequivocally demonstrate that mitochondrial respiration is required for IFN\u03b3 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 reconcile metabolic observations with genetic requirements. While IFN\u03b3 affects multiple metabolic pathways (C62, supported by Seahorse data and citations), the genetic screens definitively establish the requirement for respiration (C63). The word 'unequivocally' is strong but justified by the genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Inhibition of complex III, IV, or V reduces IFN\u03b3 responses less than complex I inhibition, and combined with CCCP data, this indicates that complex I-dependent NAD+ regeneration (rather than quinone reduction or ATP generation) is the most likely regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 synthesize inhibitor studies to propose NAD+ regeneration as the key function. The logic is sound: CCCP doesn't inhibit (ruling out ATP/membrane potential), downstream complex inhibitors have partial effects (possibly through backpressure on complex I), leaving NAD+ regeneration as the primary candidate. However, this remains inferential without direct NAD+ measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "NAD+ synthesis is necessary for macrophage functions, and recent work shows NAD+ regulates STAT1 activation via TET1 in cancer cells, though TET1 expression is low in macrophages, suggesting both NAD+ synthesis and regeneration contribute to IFN\u03b3 responses across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C69 integrate literature to contextualize findings. While C66 and C67 cite relevant prior work, the applicability to macrophages is uncertain (C68). The synthesis (C69) is reasonable but speculative, as direct evidence for NAD+ involvement in the authors' system is limited. This represents an important hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "T cell activation requires mitochondrial respiration in APCs, and since unstimulated DCs express MHCII levels similar to IFN\u03b3-stimulated macrophages but cannot activate T cells, additional IFN\u03b3- and complex I-dependent aspects of antigen processing, presentation, or co-stimulation must exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 identify an important gap in understanding. The observation (C71) that MHCII levels alone don't predict T cell activation is well-supported, and the inference (C72) that additional complex I-dependent factors exist is logical. However, the specific factors remain unidentified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TLR stimulation inhibits IFN\u03b3 responses through multiple mechanisms including ETC disassembly, which would inhibit STAT1 phosphorylation, suggesting metabolic programs integrate activation signals in APCs to influence immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 synthesize prior literature (C73-C74) with current findings to propose a broader model (C75). The citations support that TLR signaling causes ETC disassembly, which the current work predicts would inhibit IFN\u03b3 signaling. This represents an important conceptual framework, though direct testing of this crosstalk is not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Background claims establishing the IFN\u03b3 signaling pathway, its importance in immunity and disease, and prior knowledge about metabolic regulation of immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 provide essential background context, all supported by appropriate citations to established literature. These are standard knowledge claims that frame the study's significance and novelty.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44"
+    ],
+    "result": "In a sample of 94 healthy volunteers, no significant correlations were found between striatal dopamine synthesis capacity (measured with [18F]-FDOPA PET in three ROIs: caudate nucleus, putamen, nucleus accumbens) and working memory capacity, trait impulsivity, or spontaneous eye-blink rate. Bayesian analyses provided evidence favoring the absence of correlations for these measures, except for subjective reward sensitivity where evidence was inconclusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C39 provide comprehensive statistical evidence (correlation coefficients near zero, p-values >0.05, Bayes factors favoring null hypothesis) across multiple ROIs and trait measures. The Bayesian analyses (C35-C39) strengthen the conclusion by quantifying evidence for absence of effects rather than just lack of significance. Voxel-wise analyses (C34) corroborate ROI findings. The large sample size (C1) and appropriate statistical corrections (C90) support the reliability of these null findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C93",
+      "C102",
+      "C103"
+    ],
+    "result": "Cross-validation analyses demonstrated that trait measures (working memory capacity, trait impulsivity, sEBR, subjective reward sensitivity) had no out-of-sample predictive power for striatal dopamine synthesis capacity. All cross-validated R\u00b2 values were negative, indicating worse performance than simply predicting the mean, with permutation testing confirming non-significant predictive performance (all p-values >0.10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide rigorous cross-validation evidence using appropriate methodology (k-fold with 100 repeats, permutation testing per C93). The negative R\u00b2 values (C40-C41) and high RMSE relative to the IQR (C102-C103) demonstrate poor predictive accuracy. Permutation testing (C42) confirms results are not better than chance. This represents a strong test of predictive validity beyond simple correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C46"
+    ],
+    "result": "Power analyses revealed the study had adequate power (0.8-0.9) to detect correlations of \u03c1 \u2265 0.25-0.29, but observed correlations were much weaker (mostly \u03c1 < 0.1). The sample size was sufficient to detect effect sizes previously reported in smaller studies (\u03c1 \u2265 0.6), but detecting the observed small effects would have required N = 614-850.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 provide clear power calculations demonstrating the study could detect medium-to-large effects with adequate power. C100 shows observed effects were far below detectable thresholds. C46 contextualizes this by comparing to prior studies' larger effect sizes. This analysis effectively addresses the concern that null findings resulted from insufficient power, strengthening the conclusion that true effects, if present, are much smaller than previously reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C110"
+    ],
+    "result": "The absence of correlations was not due to measurement error or lack of behavioral relevance of the dopamine synthesis capacity estimates. The [18F]-FDOPA uptake values were in the typical range, and dopamine synthesis capacity from this dataset has been shown to predict effort-based decision-making, response vigor, prediction error signals, and smartphone social activity in expected directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 cite multiple published studies using the same dataset demonstrating behavioral validity of the dopamine measures. C110 confirms the PET values are in normal range. C47 explicitly addresses this alternative explanation. This evidence effectively rules out the possibility that null findings resulted from poor data quality or invalid dopamine measurements, strengthening the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior literature on relationships between trait measures and striatal dopamine function shows inconsistent findings, with small sample sizes (N = 11-60) that may have produced inflated and unstable correlation estimates. Some studies reported positive correlations while others using overlapping samples found no effects or opposite directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 document specific inconsistencies in prior literature with appropriate citations. C19 provides methodological context about small sample bias. C21 is particularly important, noting sample overlap between studies with contradictory findings. This effectively establishes the motivation for the current large-scale study and contextualizes why prior findings may have been unreliable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The findings are specific to striatal dopamine synthesis capacity and do not speak to relationships with other dopamine system measures (D2/3-receptor availability, dopamine release). Prior work shows trait measures have been associated with these other dopamine measures, though results are mixed, and relationships between different dopamine measures are inconsistent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 appropriately limits the scope of conclusions. C54-C60 cite relevant literature on other dopamine measures, showing both supporting and contradictory evidence. This discussion appropriately acknowledges limitations and suggests future research directions. The claims accurately represent the complexity of relationships between different dopamine system measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The trait measures have been shown to moderate dopaminergic drug effects on cognition, but the current results suggest these interactive effects may reflect factors other than individual variation in baseline dopamine synthesis capacity, such as differences in cognitive strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C61 documents prior findings of trait-dependent drug effects with appropriate citations. C62 appropriately interprets the current findings in this context without invalidating prior work. C63 offers a plausible alternative mechanism. This represents appropriate scientific reasoning about how the current null findings relate to established phenomena in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "More sophisticated quantitative indices of value-based learning, motivation, and daily behavioral logs might be better proxy measures of striatal dopamine synthesis capacity than simple trait measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C52 is a speculative suggestion based on prior findings (C48-C51) showing associations with more complex behavioral measures. While the reasoning is sound, this claim represents a hypothesis for future work rather than a tested conclusion. The suggestion is reasonable but requires empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study used [18F]-FDOPA rather than [18F]-FMT (used in some prior studies). While [18F]-FDOPA is more commonly used with good test-retest reliability, [18F]-FMT has better signal-to-noise ratio. [18F]-FDOPA reflects dopamine turnover to some degree, though this is only significant with longer scan times than used here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 accurately describe methodological differences between tracers with appropriate citations. C109 appropriately notes that turnover effects are minimal with the scan duration used. This discussion acknowledges a potential limitation while providing evidence it likely did not affect results. The reasoning is sound and well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study employed rigorous methodology including: 100 participants recruited (94 with complete PET data), within-subject double-blind design, validated [18F]-FDOPA PET imaging with established preprocessing, standardized behavioral measures (Digit Span, Listening Span, BIS-11, sEBR, BAS), and appropriate statistical analyses including one-sided Pearson correlations with Holm-Bonferroni correction, Bayesian analyses, and voxel-wise regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C92 comprehensively document the methodology with appropriate detail. The PET methodology (C71-C77) follows established protocols with proper citations. Behavioral measures (C78-C88) are well-validated instruments. Statistical approaches (C89-C92) are appropriate for the research questions. However, C83 and C86 document data collection errors that could introduce noise, though sensitivity analyses (C104) suggest minimal impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Dopamine synthesis capacity values showed strong inter-correlations between the three striatal ROIs (caudate nucleus, putamen, nucleus accumbens).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C97 states strong correlations with reference to Table 3, which shows correlations ranging from 0.649 to 0.787. This is expected given anatomical and functional connectivity within the striatum and supports the validity of the PET measurements. The finding is clearly stated and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Excluding nine participants who received inconsistent sEBR instructions slightly increased the correlation with dopamine synthesis capacity in nucleus accumbens (\u03c1=0.184) but remained non-significant after correction (p=0.143).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C104 reports a sensitivity analysis addressing the data collection error noted in C86. The analysis shows the error had minimal impact on conclusions. The correlation remained non-significant and the Bayes factor (C38) still showed only weak evidence. This appropriately addresses a potential confound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C25"
+    ],
+    "result": "Prior literature has established that the mesocorticolimbic dopamine system plays a key role in cognitive control and working memory, with individual differences in striatal dopamine function associated with working memory capacity, impulsivity, and sEBR. These findings have led to suggestions that simple behavioral tests could approximate striatal dopamine activity, though this predictive value has not been established in adequately powered studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C18 provide appropriate background from prior literature with extensive citations. C25 notes the functional heterogeneity of the striatum, motivating the ROI approach. These claims accurately represent the state of prior knowledge and establish the rationale for the current study. The citations appear appropriate and the characterization of prior work is balanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The absence of correlations provides a cautionary message against using simple behavioral indices (working memory capacity, trait impulsivity, sEBR, subjective reward sensitivity) as proxies for striatal dopamine synthesis capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C64 appropriately summarizes the main implication of the findings. This conclusion is well-supported by the comprehensive evidence of absent correlations (C27-C39), lack of predictive power (C40-C42), adequate statistical power (C98-C101), and valid measurements (C47-C51). The cautionary message is warranted and appropriately stated.",
+    "result_type": "MAJOR"
+  }
+]

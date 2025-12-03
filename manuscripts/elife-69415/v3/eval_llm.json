@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C87"
+    ],
+    "result": "Multiple C-type lectin receptors (CTLs) and other immune receptors were compared for their information transmission capacity using channel capacity as a metric. TNF\u03b1R, dectin-1, MINCLE, and TLR1&2 all showed channel capacities around 1 bit or higher (1.34, 1.20/1.09, 0.98, and 0.99 bits respectively), while dectin-2 consistently showed lower channel capacity (0.49-0.80 bits depending on ligand).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C35-C43, and C87 collectively demonstrate through experimental data (Figure 2A-B) that dectin-2 has significantly lower channel capacity compared to other receptors tested. The measurements are consistent across different ligands and cell types (U937 and THP-1), with appropriate controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "FcR\u03b3 overexpression in dectin-2 cells increased sensitivity (EC50) by ~50-fold and increased maximal GFP expression, but paradoxically decreased channel capacity from 0.70 to 0.41 bits. This effect was partially reversed by mannose competition, suggesting self-recognition contributes to the reduced information transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 are well-supported by experimental data (Figure 2C-E, Appendix 1-figure 2G) showing the decoupling of sensitivity from channel capacity. The mannose competition experiment (C49) provides mechanistic insight, though the self-recognition hypothesis (C50) remains speculative. The conclusion that channel capacity is independent of sensitivity (C51) and receptor number (C53-C54) is appropriately drawn from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C91",
+      "C92"
+    ],
+    "result": "Co-expression of dectin-1 and dectin-2 resulted in a compromise between the two receptors when stimulated with FurFurMan, showing intermediate EC50 and channel capacity values. Mannose inhibition of dectin-2 restored dectin-1-like responses, and dectin-1-specific stimulation (DZ) was unaffected by dectin-2 co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 and C91-C92 are supported by experimental data (Figure 3A-D, Appendix 1-figure 3A-C) demonstrating signal integration through compromise. The mannose competition and DZ-specific stimulation experiments provide appropriate controls. The inference that dectin-2 actively inhibits dectin-1 at high concentrations (C92) is reasonable but could benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75"
+    ],
+    "result": "DC-SIGN co-expression with dectin-2 increased ligand binding and sensitivity (EC50) but did not significantly alter channel capacity for FurFurMan or invertase stimulation, nor did it modulate TLR4 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69, C74-C75 are supported by experimental data (Figure 4A-C, Appendix 1-figure 4A-C) showing that DC-SIGN enhances binding and sensitivity without affecting channel capacity. The controls for TLR4 signaling (C68) strengthen the specificity of the findings. The conclusion distinguishes between binding enhancement and information transmission capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C70",
+      "C71",
+      "C74"
+    ],
+    "result": "MCL co-expression synergistically increased dectin-2 channel capacity, particularly at low invertase concentrations, enhancing the fidelity of information transmission. This contrasts with DC-SIGN, which only enhanced sensitivity without affecting channel capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C70-C71, and C74 are supported by experimental data (Figure 4B, D, Appendix 1-figure 4D-E) showing statistically significant increases in channel capacity with MCL co-expression, especially at low ligand concentrations. The concentration-dependent analysis (C70) strengthens the finding. The synergistic effect is appropriately quantified and compared to DC-SIGN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Signal and noise power decomposition revealed that dectin-2's low channel capacity is primarily due to low signal power rather than high noise power. TNF\u03b1R, MINCLE, and dectin-1 showed signal-to-noise ratios >1, while dectin-2's noise power exceeded signal power. FcR\u03b3 overexpression increased noise power without increasing signal power, further reducing channel capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C86 are supported by signal/noise decomposition analysis (Figure 5, Appendix 1-figure 5). The mathematical framework for decomposing signal and noise power is appropriate, and the conclusions about dectin-2's low signal power (C82, C86) are well-justified. The analysis of FcR\u03b3 overexpression effects (C84-C85) and dectin-1/dectin-2 co-expression (C83) provides mechanistic insight into channel capacity modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Dectin-2 reporter cells respond to multivalent mannose-containing ligands (FurFurMan, mannan, invertase) but not monomeric mannose, which acts as an inhibitor. The cellular response shows broad population distributions without clear two-state behavior, and this heterogeneity is independent of genetic differences between cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C32 are supported by experimental data (Figure 1C-E, Appendix 1-figure 1A-E) demonstrating ligand specificity, multivalency requirements, and population heterogeneity. The controls including mannose inhibition (C24), \u03b1-mannosidase treatment (C25), time-course experiments (C29-C30), and cell sorting/re-stimulation (C31-C32) appropriately validate the findings and rule out artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C88"
+    ],
+    "result": "Prior work established that TNF-\u03b1 receptor has a channel capacity of approximately 1.64\u00b10.36 bits in reporter cell systems, and that channel capacity can be increased by measuring temporal dynamics rather than static outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C88 accurately cite prior literature (Cheong et al., 2011; Selimkhanov et al., 2014) and provide appropriate context for the current study's findings. The values are correctly attributed and the methodological considerations are relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Despite TNF\u03b1R having nanomolar affinity for its ligand, stimulation of dectin-2 cells with high-affinity anti-dectin-2 antibody did not increase channel capacity, suggesting that affinity alone does not determine information transmission capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by citation (Grell et al., 1998) and experimental data (Appendix 1-figure 4F). This control experiment appropriately tests whether high-affinity binding can rescue dectin-2's low channel capacity, supporting the conclusion that other factors beyond affinity determine information transmission.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C54"
+    ],
+    "result": "The number of receptors expressed on the cell surface does not determine the channel capacity of a signaling channel, as demonstrated by quantification of receptor numbers across different CTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C54 are supported by experimental data (Appendix 1-figure 2G) showing that receptor expression levels do not correlate with channel capacity. This finding is important for understanding that information transmission capacity is not simply a function of receptor abundance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Human monocytes and dectin-2 positive U937 cells have comparable receptor densities and respond similarly to zymosan particle stimulation, validating the U937 reporter system as a model for primary immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by experimental data (Appendix 1-figure 6A-B) comparing primary cells to the model system. This validation is important for establishing the physiological relevance of the findings, though more extensive characterization of primary cells would strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors speculate that dectin-2's low channel capacity may result from early receptor-level events, potentially due to crystalline ligand clustering differences (for MINCLE), self-recognition of cellular mannose structures, or evolutionary pressure to avoid autoimmune reactions from recognizing eukaryotic high-mannose structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C101 are primarily speculative (C97-C99, C101) or inferential (C96, C100) interpretations of the data. While the speculation is reasonable and supported by some evidence (mannose competition in FcR\u03b3 overexpression), these mechanistic hypotheses require direct experimental validation. The evolutionary argument (C99, C101) is plausible but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background knowledge claims about glycan biology, lectin function, and CTL signaling pathways, including the roles of MINCLE, dectin-1, and dectin-2 in immune recognition and their downstream signaling through NF-\u03baB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C22 represent established knowledge appropriately cited from prior literature. These provide necessary context for the study but are not novel findings. The citations appear accurate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C102",
+      "C103",
+      "C106"
+    ],
+    "result": "Interpretive claims about the stochastic nature of lectin signaling, signal integration during infection, and the broader applicability of channel capacity analysis to cellular communication systems. Also includes citations about CTL roles in autoimmunity and allergic reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C93-C95, C102-C103, and C106 represent reasonable interpretations and generalizations from the data, supported by appropriate citations. The stochastic interpretation (C90) is well-justified by the population distribution data. The speculation about pathogen recognition (C94) is reasonable but extends beyond the experimental data. The methodological claim (C106) about general applicability is appropriate.",
+    "result_type": "MINOR"
+  }
+]

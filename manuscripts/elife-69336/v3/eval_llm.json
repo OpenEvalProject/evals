@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C67",
+      "C68",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors created the World Mortality Dataset, collecting all-cause mortality data from 103 countries and territories (50 weekly, 51 monthly, 2 quarterly), adding 59 countries beyond existing EuroStat and STMF datasets. The dataset is openly available on GitHub and updated almost daily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C16, C67, C68, C75-C78 collectively establish the creation, scope, and maintenance of the dataset. The data collection methodology is described (C75-C76), the temporal scope is specified (C77), and the commitment to ongoing maintenance is stated (C78). The dataset's contribution relative to existing resources is quantified (C67-C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Analysis of the dataset revealed statistically significant positive excess mortality in 69 of 103 countries, with the largest absolute numbers in the United States (640,000), Brazil (500,000), Russia (500,000), and Mexico (470,000). Several countries showed negative excess mortality, including Australia (-3,700), Uruguay (-2,200), and New Zealand (-1,900), with decreases occurring during winter seasons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C22-C26 present the primary findings from the excess mortality analysis. The statistical significance is established (C17), absolute numbers are provided with dates (C18), and negative excess mortality is documented with seasonal patterns (C22-C26). The methodology for calculating excess mortality and statistical significance is described in the methods section (C70-C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "When normalized by population, Peru showed the highest excess mortality per 100,000 inhabitants (590), followed by Bulgaria (460), North Macedonia (420), and Serbia (400). When normalized by baseline annual mortality (P-score), Peru had the highest relative increase (153%), followed by Ecuador (80%), Bolivia (68%), and Mexico (61%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C28, and C30 present normalized excess mortality metrics. The per-capita rates (C27-C28) and P-scores (C30) are calculated from the raw data using documented methodology. The P-score definition is cited (C30), and the values are presented with appropriate context regarding age structure differences between countries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C32",
+      "C33",
+      "C43",
+      "C44",
+      "C62",
+      "C64"
+    ],
+    "result": "The authors identified substantial underreporting of COVID-19 deaths in multiple countries by comparing excess mortality to official COVID-19 death counts. The highest undercount ratios were found in Tajikistan (100), Nicaragua (51), Uzbekistan (31), Belarus (14), and Egypt (13). Some countries with accurate reporting showed undercount ratios below 1 (Belgium 0.6, France 0.7, Germany 0.4). The global undercount ratio across all countries in the dataset was 1.4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5-C6, C32-C33, C43-C44, C62, and C64 establish the undercount analysis. The methodology is straightforward (ratio of excess deaths to official COVID deaths), and the results are presented with appropriate caveats. The interpretation that large undercount ratios suggest intentional underreporting (C44) is supported by citation and is presented as inference rather than definitive proof. The finding of undercount ratios below 1 in countries with accurate reporting is explained by influenza suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Temporal analysis revealed that undercount ratios changed over time in several countries. In Italy, Spain, Netherlands, and United Kingdom, the ratio decreased from ~1.5 during the first wave to ~1.0 during the second wave. In Austria, Belgium, France, Germany, Slovenia, and Sweden, excess deaths underestimated COVID-19 deaths by 2.3-5.9% of baseline annual mortality during winter 2020/21, consistent with influenza suppression observed in countries without COVID outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 document temporal patterns in undercount ratios with supporting data from Figure 4. The comparison between European winter data and Southern Hemisphere countries (C42) provides convergent evidence for the influenza suppression hypothesis. The specific percentages are calculated from the data and are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C60"
+    ],
+    "result": "The authors conclude that lockdown and social distancing measures decreased mortality in the short-term, primarily through influenza suppression. Countries implementing stringent measures without COVID community spread (Australia, New Zealand, Uruguay) showed winter-season mortality decreases. The authors estimate influenza suppression alone can decrease annual mortality by 3-6%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C49, and C60 present the inference about lockdown effects. The evidence is based on observed negative excess mortality in specific countries with documented seasonal patterns (C25-C26), convergent evidence from multiple countries (C41-C42), and synthesis of cited literature on changes in other causes of death (C50-C59). The conclusion is appropriately qualified as speculative (C4) and limited to short-term effects (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors reviewed literature on changes in unnatural causes of death during the pandemic, finding country-specific patterns for traffic accidents, homicides, suicides, and drug overdoses. However, the combined effect of all changes in unnatural deaths did not exceed ~1% of baseline annual mortality, indicating these factors play only a minor role in excess mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 synthesize findings from multiple cited studies. The evidence is entirely based on citations to published reports and studies, which is appropriate for this type of literature review. The conclusion (C59) that these factors are minor contributors to excess mortality is a reasonable inference from the cited evidence and supports the main argument that excess mortality primarily reflects COVID-19 deaths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors establish the conceptual foundation that excess mortality is widely considered a more objective indicator of pandemic death toll than reported cases and deaths, which can be affected by testing capacity and reporting policy. Excess mortality has been used historically to estimate death tolls from pandemics dating back to the Great Plague of London in 1665.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 establish the rationale for using excess mortality. These are well-established concepts in epidemiology supported by appropriate citations (C8, C10). The definition (C7) is standard, and the limitations of reported COVID-19 data (C9) are widely recognized. This provides essential context for the study but represents established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors describe existing mortality data collection efforts: EuroStat began collecting weekly deaths across European countries in April 2020 (covering 36 countries), and the Human Mortality Database started the STMF dataset in May 2020 (containing 35 countries with weekly data disaggregated by age and sex).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 accurately describe existing data collection efforts based on citations and publicly available information. These claims provide context for the contribution of the World Mortality Dataset but do not represent findings from the current study. The information is factual and verifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C31"
+    ],
+    "result": "The authors note that COVID-19 infection-fatality rate is strongly age-dependent, and that Peru's highest relative mortality increase is consistent with parts of Peru showing the highest measured seroprevalence levels in the world.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C31 provide contextual information supported by citations. C29 cites published research on age-dependent IFR, and C31 cites seroprevalence data that corroborates the excess mortality findings for Peru. These claims support the interpretation of the main results but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "According to UN data, 83 of the 103 countries in the dataset have death registration coverage \u226590%, while 20 countries have coverage <90% or no estimate. The early pre-outbreak 2020 data for all countries matched the baseline from 2015-2019 data, indicating data self-consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 address data quality concerns. The death registration coverage information (C45-C46) is cited from UN sources and transparently reported. The validation that early 2020 data match historical baselines (C47) is an important quality check that supports the reliability of the excess mortality estimates, even for countries with incomplete coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "In South Africa, lockdowns noticeably decreased toddler mortality (0-4 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by citation to published research (Bradshaw et al., 2021). This is a specific example used to illustrate broader points about non-COVID mortality changes during lockdowns. The claim is appropriately attributed to the cited source.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The authors speculate that when COVID deaths are counted perfectly, they should exceed excess mortality, leading to undercount ratios below 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is explicitly presented as speculation and is supported by observed data from countries with accurate COVID death reporting (C62). The reasoning is logical: if lockdowns reduce non-COVID mortality (particularly influenza), then perfect COVID death counting should yield more COVID deaths than excess deaths. This is appropriately qualified as speculation rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Summing excess mortality across all countries in the dataset yields 4.0 million excess deaths, compared to 2.9 million official COVID-19 deaths (global undercount ratio 1.4). The Economist estimated 7-13 million excess deaths worldwide using statistical modeling to predict excess mortality in countries without data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 present straightforward aggregations of the data with transparent calculations. Claim C65 appropriately cites The Economist's modeling work and clearly distinguishes it from the authors' own analysis. The global undercount ratio (C64) is a simple calculation from the aggregated data. These provide important context for the global scale of the pandemic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "After initial release, the dataset was incorporated into excess mortality trackers by Our World in Data, The Economist, and the Financial Times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 documents the impact and adoption of the dataset by major organizations. This is a factual statement about the dataset's use and demonstrates its value to the research and policy community. The claim is verifiable and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors describe their methodology for calculating excess mortality: baseline mortality for 2020 was predicted using 2015-2019 data with linear trend and seasonal variation, excess mortality was calculated as the difference between actual and baseline mortality starting from March 2020, and adjustments were made for the Nagorno-Karabakh war and August 2020 European heat wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 describe the methodological approach. The baseline estimation method (C70) is clearly specified with mathematical formulation in the methods section. The adjustments for non-COVID events (C73-C74) are transparently documented with specific numbers and rationale. The caveat about preliminary data (C69) is an important limitation. The methodology is appropriate and well-documented.",
+    "result_type": "MINOR"
+  }
+]

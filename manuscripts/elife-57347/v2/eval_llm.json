@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C78",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C113"
+    ],
+    "result": "The study demonstrates a universal trend of reduced hydrophobic amino acid clustering with protein domain age across all lineages examined (animals, plants, and pre-LECA domains). Young pfams show significantly more clustering (slope = \u22120.037, R\u00b2 = 0.028, p = 1\u00d710\u207b\u2075\u2070), and this trend is consistent across taxonomic groups, unlike trends in intrinsic structural disorder. The improved HMMER-based methodology yields stronger effect sizes than previous BLASTp-based studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C68-C73, and C113 provide converging statistical evidence from multiple analyses showing consistent negative slopes across lineages with highly significant p-values. The universality is demonstrated by consistent trends in ancient domains (slope = \u22120.025, p = 0.008) and animal-specific domains (slope = \u22120.067, p = 0.0005). Claims C78, C88-C91 provide mechanistic interpretation supported by citations, and C94 rules out alternative explanations. The methodological improvement (C70) strengthens confidence that results are not artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C75",
+      "C80"
+    ],
+    "result": "Trends in intrinsic structural disorder (ISD) are lineage-specific rather than universal. Only young animal domains show significantly elevated ISD (R\u00b2 = 0.13, p = 3\u00d710\u207b\u00b2\u2074\u2075 for pfams), with no significant ISD trends in ancient domains or recent plant domains. Recent animal pfams have higher mean disorder (0.36) than recent plant pfams (0.26, p = 4\u00d710\u207b\u2075), and this difference persists even in shared ancient domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C40-C44 provide robust statistical evidence with highly significant p-values and clear effect sizes. The lineage-specificity is demonstrated by contrasting results across taxonomic groups (C40-C42) with appropriate statistical tests. Claim C38 shows pfam-level analysis has 1.8-fold steeper slopes than gene-level analysis, supporting the methodological approach. Claims C45 and C75 provide reasonable interpretations consistent with the data, and C80 argues against homology detection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C47",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C76",
+      "C112"
+    ],
+    "result": "Among ancient protein domains (>2101 MY old), amino acid composition trends correlate with the hypothesized order of amino acid recruitment into the genetic code. The oldest domains are enriched in amino acids recruited earliest (Spearman's \u03c1 = \u22120.62, p = 0.004 for nontransmembrane; \u03c1 = \u22120.55, p = 0.01 for transmembrane). This correlation is strongest for the three oldest phylostrata (LUCA through pre-LECA) and weakens for younger domains, suggesting amino acid availability during early life shaped protein composition in ways that persist today.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C65 provide statistically significant correlations that remain after excluding composition-based criteria from the recruitment order ranking (C64-C65). Claims C66-C67 show the temporal specificity of the effect, strengthening the interpretation. The consistency between transmembrane and nontransmembrane domains (C61) argues against confounding factors. Claims C62-C63 and C112 provide reasonable mechanistic interpretations. However, the authors acknowledge the recruitment order ranking is speculative, and alternative explanations (e.g., amino acid simplicity) cannot be fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C74",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Recent animal and plant pfams show different, uncorrelated trends in amino acid composition with age (p = 0.8). In plants, young domains are enriched in cysteine (3.5% vs. 2.6% in animals and 2.1% in ancient domains), as well as glutamic and aspartic acids. The authors hypothesize this reflects high cysteine availability in plant cells due to its role in sulfur assimilation, photosynthesis-related detoxification, and redox maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C51-C52 provide clear statistical evidence for lineage-specific differences in amino acid trends. The cysteine enrichment in young plant domains is a striking finding supported by quantitative data. Claims C103-C107 provide biological context from the literature supporting the availability hypothesis. However, the mechanistic interpretation (C102) is explicitly speculative, and the recalculation excluding cysteine from IUPred scores (C54) suggests cysteine's impact on disorder predictions may be limited. The result is well-supported descriptively but the mechanistic explanation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Young animal pfams are enriched in serine and proline, the same amino acids previously identified as characteristic of eukaryotic 'linker' regions between domains. The authors suggest linker regions may simply be young sequences not yet annotated as pfam domains, rather than having special properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 provides a clear empirical finding from the data analysis. Claim C56 appropriately cites prior work establishing the eukaryote-prokaryote difference. Claim C57 offers a parsimonious reinterpretation of previous findings. However, this is primarily a reinterpretation rather than a direct test, and alternative explanations for linker region properties are not fully excluded. The result is supported but represents a more modest contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Using phylostratigraphy, the study finds no evidence for recent tyrosine loss in animals (slope indistinguishable from 0), contradicting previous claims that selection against tyrosine phosphorylation drove tyrosine decline in metazoa. However, there is more tyrosine in younger ancient pfams than in the oldest ancient pfams, compatible with an ancient rather than recent process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide clear negative and positive findings from the phylostratigraphy analysis. Claim C58 appropriately cites the prior hypothesis being tested. The analysis directly addresses a specific evolutionary hypothesis using an appropriate method. However, this is a more focused finding that refines understanding of tyrosine evolution rather than revealing a major new principle. The result is well-supported but narrower in scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Multiple lines of evidence argue against homology detection bias as an explanation for the observed trends. The improved HMMER-based methods yield stronger rather than weaker trends compared to BLASTp-based studies. Homology detection bias cannot explain lineage-specific patterns, and recent animal domains (which should be least affected by detection bias) drive the ISD result. Recent studies using synteny and power analysis support substantial de novo gene birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide logical arguments and empirical observations that collectively argue against homology detection bias. The strengthening of trends with improved methods (C78) is particularly compelling, as it contradicts the prediction if trends were artifacts. Claims C81-C82 cite independent evidence for de novo gene birth. However, these are primarily negative results and methodological validations rather than positive discoveries. The arguments are sound but this represents quality control rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C34",
+      "C39"
+    ],
+    "result": "The study employs an improved phylostratigraphy methodology using the manually curated Pfam database (HMMER3-based) across 435 species with 8,209 pfams. Protein domains show 1.8-fold steeper relationships with age than full genes, demonstrating that domains are more fundamental evolutionary units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C34 clearly describe the methodological approach and dataset scope. Claim C39 provides a quantitative comparison (1.8-fold difference) supported by citations. This represents a methodological advance and validation of the domain-based approach. However, this is primarily a methodological contribution rather than a biological discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The results are interpreted as consistent with selection acting to reduce protein aggregation propensity, with young animal genes avoiding aggregation through high disorder and hydrophobic clustering. Plant domains are more ordered overall, possibly because plants have better proteostasis mechanisms including aggregation-inhibiting molecules, reducing selection pressure against aggregation in young plant proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 provide a mechanistic framework supported by citations, including direct experimental evidence from E. coli (C86). Claims C97-C101 offer a speculative but plausible explanation for plant-animal differences, supported by literature on plant aggregation inhibitors (C99-C100). However, claim C87 is explicitly speculative, and C98 and C101 are acknowledged as speculation. The aggregation-avoidance hypothesis is reasonable and supported by correlative evidence, but lacks direct experimental validation in the current study. Alternative mechanisms are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The clustering trend is not driven by protein 'stickiness' or length effects. Older domains have higher abundance (which should increase clustering via reduced stickiness), opposite to observations. Younger animal domains are shorter, but shorter domains are actually less disordered (R\u00b2 = 0.0025, p = 0.007), ruling out length as an explanation for ISD trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 provide clear negative results that rule out specific alternative explanations. The logic is sound: if stickiness or length drove the trends, the relationships should go in the opposite direction. Claims C95-C96 provide statistical evidence, though the effect size is very small (R\u00b2 = 0.0025). These are important controls that strengthen confidence in the main results, but represent elimination of alternatives rather than positive findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Animal and plant genomes differ in GC content (50% vs. 47%, p = 0.0001), which could account for several percentage points of ISD difference but not the much larger observed difference in young domain ISD. GC content variation within taxonomic groups (e.g., monocots vs. dicots) can exceed variation between animals and plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 provide statistical evidence and appropriate citations. The analysis appropriately considers GC content as a potential confounding factor and quantitatively assesses its likely contribution. However, the argument that GC content cannot fully explain the ISD difference relies on comparison of effect sizes without formal statistical testing. The result is a useful control but represents a negative finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C35",
+      "C46",
+      "C50",
+      "C77",
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "The introduction and discussion provide context from prior work on protein age distributions, de novo gene birth, phylostratigraphy methods, homology detection challenges, and previous findings on disorder and clustering trends. The authors situate their work within ongoing debates about the universality of these trends and potential artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite and summarize prior literature (C1-C2, C7-C8, C11-C30, C32-C33, C46, C50, C77, C114) and provide necessary background knowledge (C1, C9-C10, C35). Claims C110-C111 summarize the study's main conclusions. All citations appear appropriate and the logical framework is sound. However, these are primarily literature review and framing rather than original results from the current study.",
+    "result_type": "MINOR"
+  }
+]

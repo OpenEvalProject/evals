@@ -1,0 +1,452 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The study cohort consisted of 43 U.S. solid organ transplant recipients who developed bladder cancer. The cohort was 70% male, 70% non-Hispanic white, with a median age of 65 years at diagnosis. Kidney was the most commonly transplanted organ (56%), and tumors were diagnosed a median of 5.7 years post-transplant. WGS was generated for 38 primary tumors, 3 metastases, and 10 normal tissues with median 31x coverage; RNA-seq was generated for 43 primary tumors, 5 metastases, and 14 normal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 provide comprehensive demographic and technical details about the study cohort and sequencing data. These are straightforward descriptive statistics directly stated in the manuscript with appropriate sample sizes and coverage metrics reported. The data generation is adequately described for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C72",
+      "C73"
+    ],
+    "result": "Viral sequences were detected in 45% (20/43) of bladder tumors from transplant recipients. BKPyV was most common (9 tumors, 21%), followed by JCPyV (7 tumors, 16%), high-risk HPV types 16 and 51 (3 tumors, 7%), and torque teno viruses (5 tumors, 12%). This represents a much higher frequency than the <5% detection rate in bladder cancers from the general population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27, C72-C73 collectively demonstrate high viral detection rates in this immunosuppressed cohort. The detection methods (WGS and RNA-seq) are appropriate, and the comparison to general population rates (C52) provides important context. The percentages are clearly stated and internally consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C69",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "BKPyV integration sites were identified in 5 of 9 BKPyV-positive tumors and 1 normal tissue. Integration was consistent with microhomology-mediated end joining (MMEJ), with 80% of junctions showing \u22652 bp microhomology. Focal amplifications adjacent to integration sites were observed in three tumors (TBC03, TBC04, TBC08). Integration junctions intersected protein-coding genes in 88% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C69, C90-C95 provide detailed evidence for BKPyV integration using WGS data. The MMEJ mechanism is supported by microhomology analysis (C30), and focal amplifications (C31, C93-C95) are consistent with integration-mediated genomic instability. The data from multiple tumor sections (C91-C92) demonstrates clonality. Integration site analysis appears rigorous with appropriate validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C96"
+    ],
+    "result": "Seven of 9 BKPyV-positive tumors predominantly expressed T antigens with little to no expression of late genes VP1 and VP2. The LTag open reading frames were truncated before the helicase domain through deletions, frameshifts, or point mutations. Only TBC01 showed regulatory region rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C96 describe viral gene expression patterns from RNA-seq data. The predominant early gene expression with truncated LTag is well-documented across multiple tumors. The exception of TBC01 (C96) is appropriately noted. This pattern is consistent with integrated virus and supports a transforming role for T antigens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Immunohistochemistry revealed variable LTag expression in BKPyV-positive tumors, ranging from >80% positive cells in three tumors to <1% in TBC01. Control sections were negative. Eleven of 18 polyomavirus-positive specimens showed LTag positivity. Heterogeneous staining was observed within and between tumor sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C97-C105 describe IHC validation of viral protein expression. The variable staining patterns are well-documented with specific percentages for individual cases. Negative controls (C98) validate specificity. The heterogeneity (C101-C105) is important for understanding tumor biology, though it raises questions about clonality that are addressed by sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C55",
+      "C56",
+      "C70",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Differential gene expression analysis identified 1,062 genes significantly differentially regulated in BKPyV-positive versus virus-negative tumors. BKPyV-positive tumors showed significantly higher APOBEC3B expression and upregulation of genes associated with cell cycle progression, DNA damage, histones, and mitotic spindle. They also showed downregulation of keratins, cell adhesion genes, and FGFR3. Clustering identified three major groups corresponding to BKPyV DNA/RNA abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C55-C56, C70, C106-C111 present comprehensive transcriptomic analysis. The differential expression analysis appears appropriately controlled (comparing BKPyV+ to virus-negative tumors). The gene expression patterns (C55-C56, C108-C109) are consistent with known BKPyV LTag functions. APOBEC3B upregulation (C37) is statistically significant and biologically relevant. The clustering analysis (C106-C107) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C113"
+    ],
+    "result": "BKPyV-positive tumors showed moderate enrichments for gains of chromosome segments 1q, 2p, 3p, 7q, 20q, and 22q, and losses of 2q, 6q, and 10q compared to virus-negative tumors. Similar patterns have been observed in virus-positive versus virus-negative Merkel cell carcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C113 describe copy number variant patterns from WGS data. The CNV analysis appears appropriate, and the comparison to Merkel cell carcinoma (C113) provides supporting context. However, the claim of 'moderate enrichments' is somewhat vague without statistical testing or effect sizes reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C66",
+      "C67",
+      "C68",
+      "C86",
+      "C87",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Four mutation signatures were identified: APOBEC3 (SBS2/SBS13, N=13), SBS5 (N=11), aristolochic acid (SBS22, N=4), and ganciclovir. The four aristolochic acid signature cases showed very high mutational burden and were in the top seven for total mutation burden. One case with SBS22 had documented Chinese herbal medicine nephropathy. Likely ganciclovir-mediated mutations were identified in most patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C66-C68, C86-C87, C120-C122 describe mutation signature analysis. The signatures identified are appropriate for bladder cancer and this patient population. The aristolochic acid signature (C42-C43, C120-C121) is well-validated with clinical correlation. The ganciclovir signature (C68, C122) is novel and appropriately referenced. However, 'most patients' (C68) is vague without specific numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The spectrum of frequently mutated genes was similar to other urothelial carcinomas (e.g., KMT2D, KDM6A, ARID1A). No nonsynonymous mutations were found in FGFR3 or PIK3CA. TP53 mutations were detected in four tumors. None of the HPV-positive tumors harbored TP53 or RB1 mutations, and none of the polyomavirus-positive tumors harbored RB1 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 describe somatic mutation patterns. The absence of FGFR3/PIK3CA mutations (C45) and TP53/RB1 mutations in virus-positive tumors (C47-C48) is biologically consistent with viral oncogene function. However, the variant calling approach has limitations (acknowledged in C162, C165) including lack of matched normals for most cases and low coverage, which could affect sensitivity for detecting mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C124"
+    ],
+    "result": "Overall, BK or JC polyomavirus sequences were detected in 16 tumors (37%), with LTag expression documented in 10 cases. HPV sequences were detected in 6 cases, including 4 with cervical cancer-associated types. This represents a much higher frequency than the <5% detection in general population bladder cancers, suggesting that polyomaviruses and papillomaviruses can play a carcinogenic role in bladder cancer among transplant recipients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C124 summarize the main findings and provide the key conclusion. The detection rates are well-supported by the data (C23-C27), and the comparison to general population (C52) is appropriately cited. The conclusion (C124) is reasonable given the integration data, gene expression patterns, and lack of TP53/RB1 mutations in virus-positive tumors. However, causality is inferred rather than definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C81",
+      "C82",
+      "C117",
+      "C118",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Four tumors contained carcinogenic Alphapapillomavirus sequences (HPV16 or HPV51), with E6/E7 oncogene transcripts detected in 2 of 3 cases. One case contained HPV20 (Betapapillomavirus) and one contained HPV28. While HPVs are not generally considered causative in bladder cancer, they have been detected in rare cases. The role of cutaneous papillomaviruses in bladder cancer remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61, C81-C82, C117-C118, C139-C146 describe HPV findings. The detection of high-risk HPV types with E6/E7 expression (C81-C82) provides some evidence for a carcinogenic role. However, the numbers are small (4 tumors), and the role of cutaneous HPV types (C61, C118, C141-C146) is highly speculative (C145). The absence of RNA expression for HPV20/28 (C118) weakens the case for their involvement. More data would be needed to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "JCPyV was detected in 7 cases, but DNA and RNA coverage was much lower than for BKPyV, transcription was not detected in several DNA-positive cases, and no integration was observed. The low abundance and absence of integration raises the possibility that JCPyV observations reflect incidental detection rather than causal involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C114-C116 appropriately acknowledge uncertainty about JCPyV's role. The low abundance, lack of integration, and minimal IHC staining (C116) suggest these may be passenger infections. The authors appropriately note this as a possibility (C62) rather than making definitive claims. This is a reasonable interpretation of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C83",
+      "C84",
+      "C119",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Torque teno virus (TTV) sequences were detected in 5 tumors and 3 normal tissues. All TTV ORF1 sequences belonged to Alphatorquevirus genus. No integration was observed. TTVs establish chronic infections controlled by the immune system, and their detection may serve as an indicator of immune suppression in transplant recipients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C83-C84, C119, C157-C159 describe TTV findings. The detection in both tumors and normal tissues (C27) and absence of integration (C83) suggest TTVs are not causally involved in carcinogenesis. The interpretation as markers of immune suppression (C158) is appropriately cited and reasonable. The technical limitation regarding GC-rich regions (C119) is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C123",
+      "C163"
+    ],
+    "result": "Validation of variant calling was performed by sequencing separate tumor sections and primary-metastatic pairs. For multi-region sequencing, 77-82% of somatic mutations were common to both sections. For primary-metastatic pairs, 84% of metastasis mutations were found in the primary tumor (TBC06). This concordance is similar to that reported from flash-frozen tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C123, C163 describe internal validation of the variant calling approach. The concordance rates (77-82%) are reasonable for FFPE tissue and comparable to frozen tissue (C163). However, the asymmetry in TBC06 (C79) where only 28% of primary mutations were in the metastasis suggests either significant intratumor heterogeneity or technical issues. The validation is adequate but not comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C54",
+      "C128"
+    ],
+    "result": "In TBC03, BKPyV integration into BCAR3 resulted in increased expression of the host gene. Elevated BCAR3 expression has been shown to increase proliferation, motility, and invasiveness in breast cancer cells. HPV16 integration in BCAR3 has been reported previously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C54, C128 describe a specific integration event with functional consequences. The increased BCAR3 expression (C80) is directly demonstrated in the data. The functional significance is supported by prior literature (C54, C128). However, this is a single case, and the functional consequences in bladder cancer specifically are inferred from breast cancer studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C132"
+    ],
+    "result": "Overall tumor mutation burden did not show clear correlation with viral sequences. Despite increased APOBEC3B expression in BKPyV-positive tumors, the APOBEC3B mutation signature did not appear enriched in these tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C132 describe an unexpected finding. The lack of correlation between APOBEC3B expression and mutation signature is puzzling but honestly reported. The authors provide a reasonable speculation (C133) about intratumor heterogeneity and technical limitations. This negative result is important and appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C130",
+      "C131",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Gene expression changes in BKPyV-positive tumors are consistent with known LTag functions. LTag binds Rb-family proteins and alters E2F transcription factors, leading to APOBEC3B upregulation (via DREAM complex disruption), increased expression of homologous recombination genes (RAD51, BRCA1, BRCA2), and upregulation of MYBL2, FOXM1, and their downstream targets. This expression pattern might promote cell survival in the face of genomic damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C130-C131, C134-C138 connect observed gene expression changes to known viral mechanisms. The mechanistic links are well-supported by prior literature (C57, C58, C130, C135-C137) and consistent with the observed data. The interpretation (C138) is reasonable but speculative. The biological coherence of these findings strengthens the case for BKPyV's causal role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors speculate that loss of the BKPyV helicase domain is driven by negative selection against deleterious effects on tumor survival. The absence of the p53-binding domain may be compensated by increased expression of TRIM71, which can bind and ubiquitinate p53 for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C127 present speculative mechanistic explanations. The speculation about helicase domain loss (C125) is reasonable but not directly tested. The TRIM71 compensation hypothesis (C126) is based on observed upregulation and known function (C127), but the functional connection is not experimentally validated. These are plausible hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C56"
+    ],
+    "result": "Downregulation of keratins and cell adhesion genes in BKPyV-positive tumors may contribute to their high-grade and invasive behavior observed in this and other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129, C56 connect gene expression changes to tumor phenotype. The downregulation is clearly demonstrated (C56), and the inference about invasive behavior (C129) is supported by citations to prior studies. However, the causal connection is inferred rather than experimentally demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "The authors propose that transplant recipients may become newly infected through donor graft transmission, possibly with different viral genotypes. This phenomenon is commonly observed in kidney transplantation and associated with BKVN, but has not been documented for heart, lung, or liver transplant recipients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C148 present a speculative explanation for high viral prevalence. The hypothesis is reasonable and supported for kidney transplants (C148), but the study does not directly test this mechanism. Viral genotyping data (C28) could potentially address this but is not analyzed in that context. This remains an untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C63",
+      "C64"
+    ],
+    "result": "The data suggest that BKPyV can cause bladder cancer through clonal integration in the context of strong immune suppression, but is rarely detected in general population tumors. BKPyV LTag may be relatively immunogenic compared to HPV or MCPyV oncoproteins. Reports of tumor regression after reduction of immune suppression support immune control of BKPyV-positive tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150, C63-C64 synthesize the findings into a coherent model. The conclusion about BKPyV causing cancer in immunosuppressed patients (C149) is well-supported by integration data, gene expression, and comparison to general population (C63). The immunogenicity hypothesis (C150) is reasonable but speculative. The tumor regression reports (C64) provide important supporting evidence for immune control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Heterogeneous LTag expression could represent transcriptional silencing or loss of viral DNA, supporting the possibility of 'hit-and-run' carcinogenesis. However, sequencing data support dominant clonally integrated forms established early in tumor development for most BKPyV-positive tumors. TBC01 likely represents a passenger infection. Archetypal BKPyV is more likely to integrate than rearranged strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156 address the heterogeneity observed in IHC and propose mechanistic explanations. The clonal integration data (C153) argues against widespread hit-and-run, though heterogeneous expression (C152) leaves this possibility open. The TBC01 interpretation (C154) is reasonable given its unique features. The archetypal BKPyV preference (C156) is supported by the rearrangement data (C96). These interpretations are reasonable but some remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "A clonal BKPyV integrant was identified in normal bladder tissue from case TBC09, distinct from the tumor integrant, supporting the idea that integration may be more common than previously assumed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 describes an important finding of viral integration in histologically normal tissue. This is well-documented with both RNA and WGS data. The interpretation that integration may be more common is reasonable, though the functional significance of this particular integration is unclear given the lack of LTag expression noted elsewhere. This finding has important implications for understanding BKPyV biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Recent advances in nucleic acid isolation from FFPE tissues enabled WGS and RNA-seq. Variants were called using consensus of three callers, focusing on mutations >10% allele frequency with functional effects, excluding known germline variants. Methods were validated by multi-region and primary-metastatic sequencing, showing concordance similar to frozen tissues. Four deconvoluted signatures matched expectations. However, low WGS coverage remains a limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C165 describe the methodological approach and its validation. The multi-caller consensus approach (C161) and filtering strategy (C162) are appropriate for FFPE tissue without matched normals. The internal validation (C163-C164) provides confidence in the results. The acknowledged limitation of low coverage (C165) is important and honest. The methods are adequate for the study's goals but have recognized limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "Aristolochic acid exposure likely contributed to patients' need for kidney transplantation and eventual bladder cancer development. Ganciclovir treatment may promote mutagenesis in the urinary bladder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 draw inferences about environmental and iatrogenic mutagenesis. The aristolochic acid inference (C166) is strongly supported by the SBS22 signature, high mutation burden, and clinical history (C121). The ganciclovir inference (C167) is supported by signature matching (C122) but lacks treatment history confirmation. Both are reasonable interpretations with important clinical implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C53",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Background claims establish that 20% of cancers are attributable to infections, HPVs cause cervical and other cancers through E6/E7 oncogenes that inactivate p53/Rb, polyomavirus T antigens perform similar functions, MCPyV causes Merkel cell carcinoma, BKPyV is associated with increased bladder cancer risk in transplant recipients, and both viruses upregulate APOBEC3 enzymes. Bladder cancers show APOBEC3-mediated mutations. Up to 25% of transplant recipient bladder tumors harbor BKPyV versus <5% in the general population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13, C53, C74-C77 provide essential background context from prior literature. These are appropriately cited and establish the rationale for the study. The claims about virus-cancer associations, oncogene mechanisms, and APOBEC3 involvement are well-established in the literature. The comparison of BKPyV prevalence in transplant versus general populations (C74-C75) provides key motivation for the study.",
+    "result_type": "MINOR"
+  }
+]

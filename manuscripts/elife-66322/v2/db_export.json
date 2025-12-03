@@ -1,0 +1,1131 @@
+{
+  "submission": {
+    "id": "5cabe3d5-26c2-49ab-93c7-25ae23f8f83d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:30:54.653563Z",
+    "updated_at": "2025-12-03T06:30:54.653563Z"
+  },
+  "content": [
+    {
+      "id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "submission_id": "5cabe3d5-26c2-49ab-93c7-25ae23f8f83d",
+      "content_type": "manuscript",
+      "content_text": "# Ciliary chemosensitivity is enhanced by cilium geometry and motility\n\n## Authors\n\n- David Hickey<sup>1</sup> ([ORCID: 0000-0003-0149-712X](https://orcid.org/0000-0003-0149-712X))\n- Andrej Vilfan<sup>1</sup> ([ORCID: 0000-0001-8985-6072](https://orcid.org/0000-0001-8985-6072)) \u2020\n- Ramin Golestanian<sup>1</sup> ([ORCID: 0000-0002-3149-4002](https://orcid.org/0000-0002-3149-4002)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Dynamics and Self-Organization (MPIDS) G\u00f6ttingen Germany\n2. J. Stefan Institute Ljubljana Slovenia\n3. Rudolf Peierls Centre for Theoretical Physics, University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCilia are hairlike organelles involved in both sensory functions and motility. We discuss the question of whether the location of chemical receptors on cilia provides an advantage in terms of sensitivity and whether motile sensory cilia have a further advantage. Using a simple advection-diffusion model, we compute the capture rates of diffusive molecules on a cilium. Because of its geometry, a non-motile cilium in a quiescent fluid has a capture rate equivalent to a circular absorbing region with \u223c4\u00d7 its surface area. When the cilium is exposed to an external shear flow, the equivalent surface area increases to \u223c6\u00d7. Alternatively, if the cilium beats in a non-reciprocal way in an otherwise quiescent fluid, its capture rate increases with the beating frequency to the power of 1/3. Altogether, our results show that the protruding geometry of a cilium could be one of the reasons why so many receptors are located on cilia. They also point to the advantage of combining motility with chemical reception.\n\n## Introduction\n\nCilia are small hairlike organelles with a microtubule-based core structure that protrude from the cell surface. They are found on most eukaryotic cells (Nachury and Mick, 2019) and can be broadly classified into two categories: primary and motile. Primary cilia, of which there is only one on each cell, have primarily sensory functions (as receptors for chemical, mechanical, or other signals) (Zimmermann, 1898; Berbari et al., 2009; Hilgendorf et al., 2016; Spasic and Jacobs, 2017; Ferreira et al., 2019). Due to their shape and their role in signalling, they are often referred to as \u2018the cell\u2019s antenna\u2019 (Marshall and Nonaka, 2006; Malicki and Johnson, 2017). Motile cilia, typically appearing in larger numbers (Brooks and Wallingford, 2014; Spassky and Meunier, 2017), move the surrounding fluid by beating in an asymmetric fashion (Golestanian et al., 2011; Gilpin et al., 2020), and often with some degree of coordination (Uchida and Golestanian, 2010; Elgeti and Gompper, 2013). They play a key role in a number of processes, including the swimming and feeding of microorganisms (Guasto et al., 2012; Lisicki et al., 2019), mucus clearance in airways (Bustamante-Marin and Ostrowski, 2017), fluid transport in brain ventricles (Faubel et al., 2016), and egg transport in Fallopian tubes. However, there are exceptions to this classification. Primary cilia in the vertebrate left-right organiser are motile and drive a lateral fluid flow that triggers, through a mechanism that is not yet fully understood, a distinct signalling cascade determining the body laterality (Essner et al., 2002). There is also mounting evidence that motile cilia can have various sensory roles (Bloodgood, 2010), including chemical reception (Shah et al., 2009). Adversely, receptors localised on motile cilia, such as ACE2, can also act as entry points for viruses including SARS-CoV-2 (Lee et al., 2020). Some chemosensory systems, including vomeronasal (Leinders-Zufall et al., 2000) and olfactory neurons (Bhandawat et al., 2010) and marine sperm cells (Kaupp et al., 2003), are known to achieve a sensitivity high enough to detect a small number of molecules.\n\nThe sensitivity of a chemoreceptor is characterised by its binding affinity for the ligand, as well as its association/dissociation kinetics. If the time-scale of ligand dissociation is longer than the time-scale of the changes in ligand concentration, or if the ligands bind irreversibly, the sensitivity is determined by the binding rate alone. It has been shown that the theoretical limit of sensing accuracy is achieved when the receptors detect the frequency of binding events and when re-binding is excluded\u00a0(Bialek and Setayeshgar, 2005;\u00a0Endres and Wingreen, 2009) Because diffusion is fast on very short length scales, only 1% of the surface area of a cell or cilium needs to be covered in high-affinity receptors to obtain near-perfect adsorption (Berg and Purcell, 1977). Even if this condition is not satisfied, the membrane itself could non-specifically bind the ligands with near-perfect efficacy, which then reach the receptors in a two-stage process. In either of these cases, as long as there is no advection, the binding rates can be estimated using the theory of diffusion-limited reactions (Adam and Delbruck, 1968). This binding rate is known as the diffusion limit, and it has already been shown that flagella-driven swimming microorganisms can break the diffusion limit in order to increase their access to nutrients (Short et al., 2006).\n\nThe increasingly overlapping functions of sensory and motile cilia lead to the natural question about the advantage of placing receptors on a cilium, or in particular on a motile cilium. Because of its small volume, a cilium forms a compartment that facilitates efficient accumulation of second messengers (Marshall and Nonaka, 2006; Hilgendorf et al., 2016). Placing receptors on a protrusion, away from the flat surface, could have other advantages, like avoiding the effect of surface charges or the glycocalycx. It has also been suggested that the location of chemoreceptors on cilia exposes them to fluid that is better mixed (Marshall and Nonaka, 2006). A recent study suggests that the hydrodynamic interaction between motile and sensory cilia can enhance the sensitivity of the latter (Reiten et al., 2017). However, the question of how the geometry and motility of cilia affect their ability to capture and detect ligands has still remained largely unexplored.\n\nIn this paper, we investigate the theoretical limits on association rates of ligands on passive and motile cilia. In particular, we address the question of whether the elongated shape of a cilium and its motility can improve its chemosensory effectiveness. By using analytical arguments and numerical simulations, we show that the capture rate of a cilium is significantly higher than that of a receptor located on a flat epithelial surface. Motile cilia can further improve their chemosensitivity. Finally, we show that a cilium within an immotile bundle has a lower capture rate than an isolated cilium, but a higher one when the cilia are sufficiently motile.\n\n## Results\n\nIn this study, we calculate the second-order rate constant for diffusive particle capture on a cilium. We discuss scenarios where the fluid and the cilium are at rest, where the fluid exhibits a shear flow, where the cilium is actively beating, and where a bundle of hydrodynamically interacting cilia absorbs particles.\n\nWe consider a perfectly absorbing cilium protruding from a non-absorbing surface, in a fluid containing some chemical species with a concentration field $c$. Far from the cilium, the unperturbed concentration has a constant value\u00a0$c_{0}$. The rate constant $k$ is defined such that\n\n$$\nI=c_{0}\u2062k,\n$$\n\nwhere $I$ is the capture rate, defined as the number of captured particles per unit time.\n\nSince the aforementioned cilium is perfectly absorbing, we define an absorbing boundary condition such that the concentration of the chemical species is zero at every point on the cilium\u2019s surface. We assume that the flat membrane surrounding the cilium does not absorb particles and it is therefore described with a reflecting boundary condition at $z=0$. The geometry and boundary conditions are illustrated in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66322/elife-66322-fig1-v2.jpg)\n\n**Figure 1.:** The cilium satisfies an absorbing boundary condition, and there is a constant concentration an infinite distance from the cilium. The coloured overlay shows the concentration field in the absence of any fluid flow.\n\n### Cilium in quiescent fluid\n\nWe consider a cilium (modelled as a cylinder next to a boundary at $z=0$) in a quiescent fluid, with the goal of determining its capture rate constant in the absence of advection. In the case where there is a steady state with no advection, the advection-diffusion equation reduces to\n\n$$\nD\u2062\\nabla^{2}\u2061c=0,\n$$\n\nwhere $D$ is the diffusion constant. The rate constant is determined by the integral of the current density $\ud835\udc09$ over the surface, which follows from Fick\u2019s law:\n\n$$\nk=-\\frac{1}{c_{0}}\u2062\\intd\ud835\udc12\u22c5\ud835\udc09=\\frac{1}{c_{0}}\u2062\\intd\ud835\udc12\u22c5(D\u2062\\nabla\u2061c).\n$$\n\nAs we show in Appendix 1, the rate constant can be evaluated using an analogy between particle diffusion and electrostatics (Berg and Purcell, 1977). Up to a prefactor, the capture rate is determined by the self-capacitance $C$ of a conducting body of the same shape as $k=D\u2062C/\\epsilon_{0}$.\n\nTo determine the capture rate of a cilium embedded in a non-absorbing surface, we first eliminate the reflective boundary condition at the surface by symmetrically extending the problem to a cylinder of length $2\u2062L$ in open space and considering $1/2$ of its capacitance. There is no closed-form expression for the capacitance of a cylinder, so we loosely approximate this cylinder as a prolate spheroid with semi-major axis $L$ and semi-minor axis $a$. Using its self-capacitance in the limit $L\u226ba$ (Snow, 1954), we find the rate constant:\n\n$$\nk_{cilium}=2\u2062\\pi\u2062D\u2062\\frac{L}{ln\u2061(2\u2062L/a)}.\n$$\n\nThis value agrees well with simulations: the ratio of the simulated to this analytical rate constant is 1.02.\n\nThe finding that the capture rate scales almost linearly with the length of the cilium can be compared to experimental data obtained on olfactory cilia from the nasal cavity of mouse, whose lengths in different regions vary from a few micrometers to tens of micrometers. Challis et al., 2015 have used patch-clamp recordings on olfactory sensory neurons and measured the response to pulses of an odorant (eugenol or a mixture of 10 odorants), lasting $5-400\u2062ms$. Regions with different lengths show very different sensitivity thresholds, differing by an order of magnitude. The results are qualitatively consistent with the predicted length dependence of the capture rate.\n\nTo quantify the advantage of localising the receptors on a cilium, we compare it with a case where the receptors form a circular patch on a flat surface (Figure 2a). Again, we assume that the receptor patch has a perfectly absorbing surface, while the surface surrounding it is reflective. We determine the size of the patch needed to attain the same rate constant as the cilium. The rate constant for a circular patch on the reflective boundary can be found by applying the electrostatic analogy to the well-known result for the self-capacitance of a thin conducting disc of radius $R$ (Berg and Purcell, 1977):\n\n$$\nk_{patch}\u22484\u2062D\u2062R.\n$$\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66322/elife-66322-fig2-v2.jpg)\n\n**Figure 2.:** All diagrams use $L/a=80$, indicated on the graphs by a red dot. (a) In a quiescent fluid, the cilium has the same capture rate as a surface patch with 3.8 times the surface area. (b) The area ratio $A_{patch}/A_{cilium}$ as a function of the cilium aspect ratio $L/a$ in a quiescent fluid, given by Equation (6). (c) In a shear flow at a high P\u00e9clet number, the capture rate of the cilium reaches that of a surface patch with 6.0 times the surface area. (d) The area ratio as a function of the aspect ratio in the high P\u00e9clet number limit (Equation 14).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66322/elife-66322-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The lines show the capture rates for cilia that absorb particles only on a fraction of their length, starting from the tip. The schematics indicate the absorbing part of the cilium in blue and the non-absorbing part in black.\n\nWe find that the patch has a much larger surface area than the cilium with the same rate constant. We can calculate this area ratio:\n\n$$\n\\frac{A_{patch}}{A_{cilium}}\u2248\\frac{\\pi^{2}}{8}\u22c5\\frac{L}{a}\\frac{1}{ln^{2}\u2061(2L/a)}.\n$$\n\nThe area ratio as a function of the aspect ratio $L/a$ is shown in Figure 2b. For a typical cilium aspect ratio of $L/a=80$ (with $L=10\\mum$, and $a=125nm$), this area ratio is 3.8, implying that the cilium is much more effective per unit area than a receptor on the surface of the cell. Olfactory cilia have a great variation of lengths, ranging from $2.5\u2062\\mu\u2062m$ to $100\u2062\\mu\u2062m$ (Challis et al., 2015; Williams et al., 2014). If we neglect the fact that long cilia are not straight, the calculated area ratio ranges from 2.7 to 18. Using an exact numerical result for the capacitance of a cylinder (Paffuti, 2018), the ratio becomes 4.5 for $L/a=80$. With the dimensions given above, the radius of the circular patch with the same capture rate is $R=3.4\\mum$.\n\n### Cilium in shear flow\n\nAt the scale of cilia, the flow is characterised by a low Reynolds number, meaning that viscous forces dominate over inertia. The fluid motion is well-described by the Stokes equation, together with the incompressibility condition:\n\n$$\n\u03b7\u2207^{2}u\u2212\u2207p=0\n$$\n\n\n\n$$\n\u2207\u22c5u=0\n$$\n\nin which $\ud835\udc2e$ is the fluid velocity, \u03b7 is the dynamic viscosity, and $p$ is the pressure. The concentration field of some chemical species suspended within this fluid is governed by the advection-diffusion equation:\n\n$$\n\\frac{\u2202c}{\u2202t}+u\u22c5\u2207c=D\u2207^{2}c\n$$\n\nwhere $c$ is a function of both position and time.\n\nThe ratio of advection to diffusion is described by the dimensionless P\u00e9clet number. This is usually written as some characteristic flow speed multiplied by some characteristic length scale, all divided by the diffusion constant.\n\nBecause the cilium grows from a flat surface with a no-slip boundary condition, the flow can be described as a uniform shear flow with the shear rate $\\gamma\u02d9$. To estimate the capture rate constant of a cilium in a shear flow, we make use of the fact that the radius of the cylinder is much smaller than the length scale over which the shear flow varies. We therefore approximate the local rate density at any point on the cilium with that of an infinitely long cylinder in a uniform flow with velocity $v\u2062(z)=\\gamma\u02d9\u2062z$. The capture rate per unit length is\n\n$$\n\\frac{dk_{cilium}}{dz}=\\betaD\u22c5(A\\frac{av}{D})^{1/3},\n$$\n\nwhere $\\beta=2.50$ is a numerical constant (see Appendix 2 for derivation).\n\nNow the total rate constant is obtained by integration over the cilium length\n\n$$\nk_{cilium}=\\int_{0}^{L}dz\u2062\\beta\u2062D\u22c5(\\frac{a\u2062\\gamma\u02d9\u2062z}{D})^{1/3}=\\frac{3}{4}\u2062\\beta\u2062D\u2062L\u22c5(\\frac{L}{a})^{-1/3}\u2062Pe_{cilium}^{1/3}.\n$$\n\nWe take the characteristic velocity to be the speed of the cilium\u2019s tip relative to the surrounding fluid, and hence the P\u00e9clet number for the extended cilium is\n\n$$\nPe_{cilium}=\\frac{\\gamma\u02d9\u2062L^{2}}{D}.\n$$\n\nThis expression for the rate once again shows a strong positive relationship between cilium length and sensitivity, as is known to be the case in real biological systems (Challis et al., 2015). The characteristic P\u00e9clet number for the cross-over between the diffusive and the convective capture is of the order $\u223cL/a\u224880$.\n\nOnce again we determine the size of a circular surface patch offering an equivalent effectiveness to the cilium in a flow with the same shear rate (Figure 2c). The high-Pe rate constant for a patch in a shear flow is (Stone, 1989):\n\n$$\nk_{patch}\u2248D\u2062R\u2062[\u03b6\u22c5Pe_{patch}^{1/3}+O\u2062(Pe_{patch}^{-1/6})],\n$$\n\nwhere $Pe_{patch}\u2261\\gamma\u02d9\u2062R^{2}/D$ and $\u03b6=2.157$ is a purely numerical constant. We can calculate the ratio of the area of the equivalent patch to the area of the cilium for these high-Pe asymptotic results:\n\n$$\n\\frac{A_{patch}}{A_{cilium}}\u2248\\frac{1}{2}\u2062(\\frac{3\u2062\\beta}{4\u2062\u03b6})^{6/5}\u22c5(\\frac{L}{a})^{3/5}\u22480.42\u2062(\\frac{L}{a})^{3/5}.\n$$\n\nThe area ratio is shown in Figure 2d and compared with the results in a quiescent fluid. For a typical cilium aspect ratio $L/a=80$ (with $L=10\\mum$, and $a=125nm$), this area ratio is 6.0 \u2013 much larger than the area ratio in a quiescent fluid, which was 3.8. This means that a cilium is better per area than a patch at both low and high P\u00e9clet numbers, but the cilium excels when the P\u00e9clet number is large.\n\nWe additionally investigated the question how robust the results are if the receptors are localised to only one segment of the cilium. In a model, we assumed that of the total length $L$, the distal part $\u03bd\u2062L$ is absorbing, while the proximal $(1-\u03bd)\u2062L$ is reflective. At high P\u00e9clet numbers, we can modify the integration limits in Equation (11) and obtain a theoretical capture rate $k_{cilium}(\u03bd)=k_{cilium}\u22c5(1\u2212(1\u2212\u03bd)^{4/3})$. The result is compared to simulations in Figure 2\u2014figure supplement 1. A cilium with receptors over the distal 50% of its length therefore achieves 60% of the maximal capture rate.\n\n### Active pumping\n\nA mounting collection of evidence suggests that both primary and motile cilia have sensory roles (Bloodgood, 2010). We are interested in the extent to which cilium motility can increase their ability to detect particles. To this end, we numerically simulate various different possible types of ciliary motion in otherwise quiescent fluids.\n\nBecause of the complex flow patterns and time-dependent boundary conditions, the absorption by a beating cilium is not analytically tractable. Instead, we use numerical simulations to determine the rate constants. We consider four different active pumping scenarios: a purely reciprocally moving cilium, a cilium tracing out a cone around an axis perpendicular to the surface, a cilium tracing out a tilted cone, and a cilium with a trajectory that includes bending, to raise the pumping efficiency (all shown in their respective order in Figure 3a\u2013d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66322/elife-66322-fig3-v2.jpg)\n\n**Figure 3.:** (a) The cilium is undergoing reciprocal motion, which is not generating any net flow. (b) The cilium moves along a cone with its axis perpendicular to the surface, such that it produces a rotational flow, but no long-range fluid transport. (c) The cilium moves along a tilted cone, which generates a long-range volume flow. (d) The cilium follows a realistic trajectory, beginning with a recovery stroke along the no-slip surface in 1, then performing an overhead power-stroke from 2 to 3 before returning to one in another recovery stroke. (e) The capture rate constants $k$ of a beating cilium as a function of the P\u00e9clet number. The rates are determined using stochastic simulations. The error bars denote 95% confidence intervals and the dashed line shows a fit function that interpolates between the high and low-P\u00e9clet limits. All rates are normalised to the rate constant for a diffusion-limited capture with a cylindrical cilium with the same length and width.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66322/elife-66322-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** These results were obtained from numerical simulations. The lines show the capture rates for cilia that absorb particles only on a fraction of their length, starting from the tip. The schematics indicate the absorbing part of the cilium in blue and the non-absorbing part in black.\n\nThe rate constants in these scenarios, relative to that of a non-moving cilium, are plotted in Figure 3e. Analogously to the cilium in a shear flow, we define the P\u00e9clet number using the maximum tip velocity during the cycle:\n\n$$\nPe=\\frac{v_{tip}^{max}\u2062L}{D}.\n$$\n\nThe reciprocally moving cilium (Figure 3a) displays almost no improvement over several orders of magnitude of the P\u00e9clet number. This is expected, because Purcell\u2019s scallop theorem (Purcell, 1977)\u00a0states that purely reciprocal motion does not create any net flow, so the particle intake is largely diffusive in nature. A minor increase of the rate constant with the P\u00e9clet number is caused by the local shear flow that facilitates absorption on the surface.\n\nThe cilium moving around a vertical cone (Figure 3b) induces a net rotational flow, but no inflow or outflow (by symmetry, the time-averaged flow can only have a rotational component [Vilfan, 2012]). Nevertheless, the constant motion of the cilium through the fluid leads to a higher local capture efficiency. The rate constant therefore shows more improvement; over a few orders of magnitude of the P\u00e9clet number, the rate constant increases by a factor of two.\n\nThe tilted cone (Figure 3c) shows a much higher capture rate, which is unsurprising. When the cilium is near to the plane, the no-slip boundary screens the flow, whereas when it is far from the plane, its pumping is unimpeded. This results in the cilium inducing a long range flow in one direction, characterised by a finite volume flow rate (Smith et al., 2008). The long range flow causes a constant intake that replenishes the depleted particles. At high P\u00e9clet numbers, the capture rate scales $k\u223cPe^{1/3}$, which is the same dependence as in an external shear-flow, although with a prefactor that is lower by a factor of \u223c2. Locally, the relative flow around the cilium is the same whether a cilium is pivoting or resting in a shear flow. The pumping effect of the tilted cilium, on the other hand, provides sufficient inflow that the concentration around a cilium sees only a small depletion effect.\n\nWe finally simulated the capture process on a cilium exerting a realistic beating pattern, consisting of a stretched working stroke and a bent, sweeping recovery stroke (Figure 3d). The capture rate is close to that of the tilted cone, but surpasses it at very high P\u00e9clet numbers.\n\n### Collective active pumping\n\nWe consider seven cilia on a hexagonal centred lattice with lattice\u00a0constant $0.95\u2062L$, with a view to understand how the presence of multiple cilia affects performance. We quantify the performance gain using a quantity $Q$, which we define as\n\n$$\nQ=\\frac{k_{multiple}}{k_{cilium}\u2062(Pe)\u22c5N_{cilia}},\n$$\n\nwhich represents the fractional per-cilium improvement in rate constant compared to a single isolated cilium at the same P\u00e9clet number.\n\nUsing numerical simulations, we find that at zero P\u00e9clet number (Figure 4a\u2013b), $Q\u22480.5$, which means that the cilia locally deplete the concentration field, harming the per-cilium effectiveness; in a quiescent fluid, it is most efficient for cilia to stand far away from their neighbours.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66322/elife-66322-fig4-v2.jpg)\n\n**Figure 4.:** Comparison between the capture rate constant of a single cilium (a, c) and a bundle of $N_{cilia}\\in{4,7,19}$ cilia (b, d\u2013g).In the insets, the height of each red cylinder indicates the rate constant per cilium at $Pe\u224810000$, and the number of cylinders represents the number of cilia. For immotile cilia (a, b), a bundle has a lower per-cilium capture rate than an isolated cilium, although the the total rate constant of the bundle is higher. The reduced capture rate per cilium is caused by the depletion of ligands close to the bundle. For motile cilia (d\u2013g), the situation is reversed and the capture rate per cilium in a bundle (d\u2013g) can be significantly higher than for an isolated cilium (c). The increase can be explained by the collective flow generation, which helps the capture on all cilia. In (d) the cilia all beat with the same frequency corresponding to $Pe\u224810000$ but with identical phases. In (e\u2013g) all cilia beat with the same frequency corresponding to $Pe\u224810000$, but their phases are chosen randomly. It can be seen that the random phases give a higher rate constant than the uniform phases. (h) shows how the performance gain $Q$ varies with the P\u00e9clet number for different configurations. The rates shown at each point are the average of 30 random phase configurations like the one shown in (e). The dashed line is the $Q$-value for $Pe=0$ for each configuration.\n\nHowever, when the cilia actively move (with each tracing out a tilted cone with a different randomly-chosen phase lag compared to its neighbours, as in Figure 4e) the trend is reversed: we find that at $Pe\u224810000$, $Q\u22481.53$, meaning that per cilium, the capture rate is around 50% higher in the collective when compared to an isolated cilium with the same P\u00e9clet number. We find that over the range of P\u00e9clet numbers simulated, the $Q$ increases monotonically with the P\u00e9clet number (Figure 4h).\n\nWhen comparing these randomly chosen phases to a patch of cilia which beat in uniform, we find that cilia which beat in phase (Figure 4d) see an improvement over the stationary case with $Q\u22481.16$, but are much less effective than the cilia patch that beats with random phases. The random phases give a higher volume flow, and complex hydrodynamic interactions between the randomly-phased cilia result in a slightly higher capture chance for any given particle. Similar levels of improvement are also seen for other arrangements of cilia forming a bundle, that\u00a0is, $N_{cilia}=19$ on a hexagon (Figure 4f) or $N_{cilia}=4$ on a square (Figure 4g). Furthermore, an improvement of randomly\u00a0beating over uniformly-beating cilia has been observed in previous work with finite-sized particles (Ding and Kanso, 2015; Nawroth et al., 2017). The results suggest that mutual enhancement of capture rates is a robust phenomenon and does not depend on a specific geometry.\n\n## Discussion\n\nOur results address a simple question: does the location of so many chemical receptors on cilia bring them an advantage in sensitivity? Besides the well-known advantages of compartmentalisation, which facilitates the downstream signal processing, we show that the elongated shape of a cilium provides an advantage for the capture rate of molecules in the surrounding fluid. The advantages can be summarised as follows:\n\nOur results are based on a few assumptions. We assumed that the particles get absorbed and detected upon their first encounter of the cilia surface \u2013 an assumption that is justified if the receptors are covering the surface at a sufficient density (Berg and Purcell, 1977), or if the particles bind non-specifically to the membrane of the cilium first. We also treat the particles as point-like (their size only has an influence on their diffusivity), which is accurate for molecules up to the sizes of a protein and we do not expect a significant error even for small vesicles. The Rotne-Prager tensor approximation used to determine the flow fields does not exactly satisfy the no-slip boundary condition on the surface of the cilium, especially at high P\u00e9clet numbers.\n\nWith the typical dimensions of a cilium ($L=10\u2062\\mu\u2062m$, $a=0.125\u2062\\mu\u2062m$) and a diffusion constant of a small molecule $D=10^{\u22129}m^{2}s^{\u22121}$, we obtain $k_{cilium}=7\u2062pM^{-1}\u2062s^{-1}$. A chemosensory cilium working at the physical limit is therefore capable of detecting picomolar ligand concentrations on a timescale of seconds. Sensitivity thresholds in the sub-picomolar range have been measured in some olfactory neurons (Frings and Lindemann, 1990; Zhang et al., 2013), indicating that some olfactory cilia work close to the theoretical sensitivity limit. If the cilia are embedded in mucus with a viscosity at least 3 orders of magnitude higher than water (Lai et al., 2009) (we disregard its viscoelastic nature here) and the molecule has a Stokes radius of a few nanometres, the diffusion-limited capture rate reduces to around $k_{cilium}=1\u2062nM^{-1}\u2062s^{-1}$.\n\nIn a shear flow with a typical shear rate of\u00a0$\\gamma\u02d9=10s^{\u22121}$, the P\u00e9clet number of a small molecule in water is of the order of $Pe\u22481$, where the capture rate still corresponds to the stationary case. However, with larger molecules and higher viscosities, the P\u00e9clet numbers can exceed 104, leading to a significant enhancement of the capture rate.\n\nWhen the same cilium is beating with a frequency of $25Hz$, the P\u00e9clet number is of the order \u223c10, which is too small to have an effect on the capture rate. With larger molecules and higher viscosities, the P\u00e9clet numbers can be significantly higher. With a medium viscosity of $0.2Pa\u22c5s$ (200 times the water viscosity) and a Stokes radius of $10nm$, it reaches 105, meaning that the motility accelerates the capture rate by one order of magnitude. For example, according to one hypothesis, motile cilia in the zebrafish left-right organizer (Kupffer\u2019s vesicle) both generate flow and detect signalling particles, possibly extracellular vesicles (Ferreira et al., 2017; Ferreira et al., 2019) similar to the proposed \u2018nodal vesicular parcels\u2019 (Tanaka et al., 2005). With a cilium length of $L=6\u2062\\mu\u2062m$ and a particle radius of $a=100\u2062nm$, we obtain $Pe=1300$, showing that the capture rates can be several times higher than in a passive cilium. Figure 5 shows how the molecular Stokes radius affects the fluid viscosity required to break the diffusion limit for a few different scenarios. However, when the particle size becomes comparable to the cilium diameter, the approximation that treats them as point particles loses validity. Indeed, it has been shown that particle size can have a direct steric effect on the capture rate (Ding and Kanso, 2015). Furthermore, the capture process of large particles can depend on a competition between hydrodynamic and adhesive forces (Tripathi et al., 2013). Steric effects can even lead to particle enrichment in flow compartments (Nawroth et al., 2017).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66322/elife-66322-fig5-v2.jpg)\n\n**Figure 5.:** The blue, orange, and green lines show the results for a passive cilium in a shear flow\u00a0(Figure 2c), the red line for an actively beatig cilium (Figure 3c) and the magenta line for a bundle of 7 cilia (Figure 4e). For all lines, the cilium dimensions are $L=10\\mum$ and $a=250nm$.\n\nWe have thus proven that for individual isolated cilia the geometry of a cilium always means an advantage in chemical sensitivity over receptors covering the same area on a flat surface (assuming they act as perfect absorbers), whether in a quiescent or moving fluid. At high P\u00e9clet numbers, which are achieved in viscous fluids, with very large particles or in very strong flows, the advantage of a cilium increases further and even confers an advantage in chemosensitivity to cilium bundles over individual cilia. These advantages can work in concert with others, such as avoiding charged surfaces and glycocalix and the provision of a closed compartment on the inside. Further work might examine the extent to which motility benefits cilia in a fluid with bulk flow, or investigate the effect of metachronal waves on ciliary chemosensitivity. Finally, our results shed light on possible engineering applications for microfluidic sensing devices based on these ideas, for\u00a0example using magnetic actuation (Vilfan et al., 2010; Meng et al., 2019; Matsunaga et al., 2019).\n\n## Materials and methods\n\nNumerically\u00a0simulated point particles are injected into a finite system containing a motile cilium, and move around due to advection (resulting from the motion of the cilium) and diffusion, until they either escape from the system or are absorbed by the cilium. The proportion of particles which are captured is used to compute a rate constant.\n\n### Flow calculation\n\nThe hydrodynamics are computed using a modified Rotne-Prager mobility tensor $\ud835\udc0c$ that accounts for the no-slip boundary. If there are $N$ spheres of equal radius $R$ in the simulation, each having a prescribed trajectory $\ud835\udc2b_{i}\u2062(t)$ and each acted upon by a force $\ud835\udc05_{i}\u2062(t)$, then these forces must satisfy (Vilfan et al., 2010)\n\n$$\nr\u02d9_{i}(t)=\\sumj=1NM[r_{i}(t),r_{j}(t);R,R]\u22c5F_{j}(t)\n$$\n\nfor every $i\\in[1,N]$. Since every term except the forces is known, the forces can be determined numerically at a given $t$ by solving this set of simultaneous equations. Then the fluid velocity at any point $\ud835\udc31$ can be determined by\n\n$$\n\ud835\udc2e\u2062(\ud835\udc31,t)=\\sumi=1N\ud835\udc0c\u2062[\ud835\udc31,\ud835\udc2b_{i}\u2062(t);0,R]\u22c5\ud835\udc05_{i}\u2062(t).\n$$\n\nIn the simulations we used $N=20$ spheres, corresponding to an aspect ratio $L/a=40$. A somewhat lower value than in the analytical calculations was chosen to save computational time and also to compensate for the fact that a cylinder is replaced with a chain of spheres.\n\n### Injection\n\nWe require a particle injection procedure that satisfies the concentration boundary condition $c\u2192c_{0}$ far from the absorbing cilium. We achieve this by introducing two bounding boxes in the simulation: an inner and an outer box, separated by a thin distance $d$ (Figure 6). The particles are injected at the boundary of the inner box and absorbed at the outer box. The injection rate is calculated such that it corresponds to the advective-diffusive flux through the layer between the boxes if the concentration at the inner box is $c_{0}$. Because the flux through the boundary layer is much larger than the flux of particles absorbed inside the inner box, the method is suited to ensure a constant concentration boundary condition. The method is similar to a recent algorithm using a single boundary (Ram\u00edrez-Piscina, 2018), but uses a simpler injection function.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66322/elife-66322-fig6-v2.jpg)\n\n**Figure 6.:** Since the fraction in incident particles absorbed by the cilium is small compared to the fraction absorbed by the outer surface, the concentration at the inner boundary is very close to c0. The coloured overlay shows the concentration as recorded in an example numerical simulation of a cilium in a shear flow with $Pe=50$.\n\nTo calculate the injection current density, we solve the one-dimensional steady-state advection-diffusion equation\n\n$$\n0=D\u2062\\frac{d^{2}\u2062c}{d\u2062x^{2}}-v\u2062\\frac{d\u2062c}{d\u2062x},\n$$\n\nwith the boundary conditions $c\u2062(0)=0$ and $c\u2062(d)=c_{0}$. The solution is\u00a0\n\n$$\nc\u2062(x)=c_{0}\u2062\\frac{e^{vx/D}-1}{e^{vd/D}-1}.\n$$\n\nBy the application of Fick\u2019s law, this leads to an expression for the current density through the inner box:\n\n$$\nj\u2062(x)=v\u2062c_{0}\u2062\\frac{1}{1-e^{-vd/D}}.\n$$\n\nWe assume that a test particle will take take much longer to reach the cilium than the characteristic time required for the flow to change, and hence we take $v=\u27e8u(x,t)\u22c5n^\u27e9_{t}$, where $n^$ is the inward pointing surface normal of the inner box. This function can then be used to probabilistically weight where particles are injected on the inner box.\n\n### Numerical integration\n\nThe test particle position is updated using an Adams-Bashforth-Milstein multistep numerical integration method in the presence of noise (Tocino and Senosiain, 2015):\n\n$$\n\ud835\udc31_{i+1}=\ud835\udc31_{i}+\u0394\u2062t\u2062[\\frac{3}{2}\u2062\ud835\udc2e\u2062(\ud835\udc31_{i},t)-\\frac{1}{2}\u2062\ud835\udc2e\u2062(\ud835\udc31_{i-1},t-\u0394\u2062t)]+\u03be_{i}.\n$$\n\nBecause the computation of the flow field $\ud835\udc2e$ (see Equation 18) is the most demanding step, it is advantageous over methods that require additional function evaluations per step. $\u03be_{i}$ is a vector where each element is pseudorandomly generated Gaussian noise with standard deviation $\\sqrt{2\u2062D\u2062\u0394\u2062t}$ and mean of zero.\n\n### Rate evaluation\n\nWe finish each simulation run when the particle position reaches the cilium (capture), or the outer box (escape). At the end, the rate constant is determined as\n\n$$\nk=\\frac{I}{c_{0}}\u2062\\frac{n_{capture}}{n_{capture}+n_{escape}},\n$$\n\nwhere $I$ is the calculated total particle flux, obtained by integrating the flux density over the inner box, $I=\\intjdS$.\n\n### Numerical parameters\n\nFor all numerical simulations, we use a cilium consisting of 20 beads (thus giving a length to radius ratio $L/a=40$). For the conical and reciprocal motion (Figure 3a\u2013c), we use an opening angle (between the cone axis and surface) of 30\u00b0, and for the titled conical motion (Figure 3c) the axis of the cone is tilted relative to the vertical by an angle of 55\u00b0.\n\nIn the collective regime, the parameters are the same, with the addition of a hexagon lattice constant of $0.95\u2062L$. The cones are tilted such that their axes are perpendicular to one chosen side of the hexagon (left to right in Figure 4d-f).\n",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "cce737d7-40bd-4baa-967b-8cfa2d76197a",
+      "submission_id": "5cabe3d5-26c2-49ab-93c7-25ae23f8f83d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66322.sa1](https://doi.org/10.7554/eLife.66322.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe cilium is a conserved organelle found in most cell types, broadly classifiable as motile or primary cilia. For a long time, the function of the latter had been thought to be vestigial, until recent studies have revealed their importance for signalling. The authors suggest based on a theoretical model that the distinctive elongated shape of a cilium may be coupled to its sensory function.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Ciliary chemosensitivity is enhanced by cilium geometry and motility\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. We note that while the reviewers are generally supportive of the work, they have raised a number of pointed questions about the relevance of the results to biology. These include (1) the lack of consideration of heterogeneity in receptor distribution (there are many reasons why cilia are slender \u2013 not just for sensing), (2) the very large Peclet numbers required for not much enhancement in performance, and (3) a lack of biological relevance in the case of motile bundles.\n\nReviewer #1 (Recommendations for the authors):\n\nThe problem is interesting and the approach is valid. I have the following comments and questions about the work:\n\n1. The main research question \"why are so many chemical receptors located on cilia\" (Line 228) seems ill-posed. Perhaps the question can be rephrased in terms of the effect of cilia geometry and motility on capture rate, which is tractable and quantifiable.\n\n2. I appreciate that the authors quantify the amount of increase in capture rates by a cilium at rest and in shear flow compared to a surface patch. However, it is not clear to me whether in Figure 2(a) the authors use the classic analytical solution for the single cilium or their numerical solution. It is also not clear whether the classic analytical solution for the single cilium in a fluid at rest accounts for the presence of the reflecting wall. Please clarify and include a comparison between the analytical solution and the numerical solution in the presence of the wall.\n\n3. The study of the effect of motility on the cilium capture rate could be developed further beyond the three examples shown in Figure 3. For example, how does the capture rate depend, not only on Pe, but also on the beating profile of the cilium. But my major concern with this study is that it considers ranges of Pe that are not achievable by the motion of a single cilium. I think a detailed discussion of the ranges of flow speeds generated by the beating cilium is in order here.\n\n4. I have a similar comment on the case of collective pumping. The study considers only a single configuration with 7 cilia. Why 7? And Why this configuration? Further the range of Pe numbers considered also seems unrealistic for cilia-driven flows. What cilia-driven speeds are observed in the current model? How do they compare to cilia-driven flows reported in other experimental and computational studies. A comparison of the range of Pe to existing ranges of cilia-generated flow speeds would be very helpful here to gauge the validity of these large Pe.\n\n5. I am particularly surprised by the author's claim that collective active pumping enhances capture rate. This is only true for extremely large Pe. The authors use Pe = 10000 to get 50% improvement in capture rate over cilia acting individually. This seems to suggest an unfavorable effect of hydrodynamic interactions among cilia for the purpose of chemical detection and seems to favor the hypothesis that solitary primary cilia are more suited for chemical detection.\n\n6. Lines 252-253: the idea that randomly beating cilia are more suited for sensing and particle capture is already presented in Ding and Kanso 2015 and Nawroth et al. 2017 and should be acknowledged here. Note that these two references are cited by the authors but their contribution to the hypothesis that randomly-beating cilia enhance capture is not properly described. Only the fact that they considered finite sized particles is mentioned in lines 281 and 284.\n\n7. The numerical algorithm uses a finite Reynolds number Re = 0.2, which is close but not consistent with cilia-driven flows. At the cilium level, Re is of the order 10-6 to 10-4.\n\n8. Lines 272-273 and lines 276-277, the claim that Pe can exceed 104 needs justification (see related comment above).\n\n9. Paragraph 286-306 is awkward. It is not clear what is its purpose. If it is a motivational example, it is not clear why it is at the end of the manuscript. If the results in the manuscript are directly relevant to shed light on this system or suggest experiments (I don't think so), it should be stated explicitly.\n\n10. Lines 307-309: I'm not sure if the series of examples considered in this manuscript constitute a proof that \"the geometry of a cilium always means an advantage in chemical sensitivity over receptors on the epithelial surface, whether in a quiescent or moving fluid.\" This is true for the isolated cilium case but not straightforward to claim for interacting motile cilia.\n\n11. In addition, it is my understanding that cilia also have receptors at their base. Please discuss.\n\nReviewer #2 (Recommendations for the authors):\n\n1. In all cases considered by the authors, the capture rate of a cilium was comparable to a circular patch of larger (in some cases much larger) size, this cost-benefit analysis does not take into account the energetic costs of building/sculpting an elongated structure in the first place, compared to simply populating an area of flat membrane with receptors. Can the authors comment on this? Ideally with supporting calculations.\n\n2. Many of the rate constants and other quantifiers show a strong length dependence, so one should expect to see such a dependence in experiments. The authors cite Challis et al. 2015 a few times in passing (line 117, line 157 etc) \u2013 a more detailed explanation and discussion of the Challis et al. experiments and findings could be useful here (type of cilia, length, function etc). Are there any other experimental studies that could support this, e.g. in other organisms?\n\n3. Generally, the enhancement in capture rate for active cilia increases with Peclet number, but the degree of enhancement does not seem to be very large \u2013 so a high Pe is needed for a real effect. Please clarify the range of biologically relevant Peclet numbers? The discussions around this seemed to be very scattered. Pe = 10000 seems rather high (line 217), especially as most sensory (but motile) cilia operate in much more quiescent conditions and/or are involved in sensing very small molecules such as neuropeptides not large vesicles.\n\n4. In the case of collective ciliary pumping, the authors found that the per-cilium improvement is higher when the cilia are not beating synchronously\u2026 how can this be reconciled with the fact that motile cilia in such a bundle will tend to synchronize by hydrodynamic interactions? Doesn't this mean that such bundles of motile cilia are therefore unlikely to be for useful chemosensing?\n\n5. What about the distribution of receptors on a cilium? At the moment the authors assume and make comparisons with respect to uniform distributions only, related to the perfect absorber assumption \u2013 surely the elongated shape also presents opportunities for heterogeneous localisation of receptors. For instance, it is known that some receptors are restricted to the base of cilia, whereas other receptor types to ciliary tips.\n\n6. Do cilia operate near the chemosensory limit? It is often said that detection of chemical molecules occurs at the physical limit in the motility apparatus of bacteria, what is the evidence that is happening with cilia? A more in-depth discussion with supporting numbers from the literature would be helpful.\n",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7497476-f454-48f6-84b3-afa33dc9fb0a",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C1",
+      "claim": "Cilia are hairlike organelles involved in both sensory functions and motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia are hairlike organelles involved in both sensory functions and motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cilia that draws from established scientific knowledge about their structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "1a04d733-596b-49f3-86f7-e389ee301738",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C2",
+      "claim": "A non-motile cilium in a quiescent fluid has a capture rate equivalent to a circular absorbing region with approximately 4 times its surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its geometry, a non-motile cilium in a quiescent fluid has a capture rate equivalent to a circular absorbing region with \u223c4\u00d7 its surface area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analytical calculations and simulations presented in the manuscript, specifically in the Results section on 'Cilium in quiescent fluid' and shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "b3f8dbcd-44ab-444e-95f4-db4529e9796e",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C3",
+      "claim": "When a cilium is exposed to an external shear flow, the equivalent surface area increases to approximately 6 times its actual surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "When the cilium is exposed to an external shear flow, the equivalent surface area increases to \u223c6\u00d7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analytical calculations and numerical simulations for cilia in shear flow, presented in the Results section and Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "32d27ab3-4ca3-477a-85ab-a892ad99bb38",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C4",
+      "claim": "If a cilium beats in a non-reciprocal way in an otherwise quiescent fluid, its capture rate increases with the beating frequency to the power of 1/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, if the cilium beats in a non-reciprocal way in an otherwise quiescent fluid, its capture rate increases with the beating frequency to the power of 1/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by numerical simulations of beating cilia shown in Figure 3, where the capture rate scales as Pe^(1/3) at high P\u00e9clet numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "8e21315b-6db6-4fcd-b986-623b649daa4a",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C5",
+      "claim": "Cilia are found on most eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "They are found on most eukaryotic cells (Nachury and Mick, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nachury and Mick, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "72689b4a-3fd9-47ab-96b8-ec846dca05c5",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C6",
+      "claim": "Primary cilia have primarily sensory functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary cilia, of which there is only one on each cell, have primarily sensory functions (as receptors for chemical, mechanical, or other signals) (Zimmermann, 1898; Berbari et al., 2009; Hilgendorf et al., 2016; Spasic and Jacobs, 2017; Ferreira et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to the scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "690b28c2-775c-4ad9-ad89-ed0e35911322",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C7",
+      "claim": "Primary cilia are often referred to as 'the cell's antenna' due to their shape and role in signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their shape and their role in signalling, they are often referred to as 'the cell's antenna' (Marshall and Nonaka, 2006; Malicki and Johnson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Marshall and Nonaka, 2006 and Malicki and Johnson, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "9d23909b-531e-4371-a585-c8a539a17b28",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C8",
+      "claim": "Motile cilia move the surrounding fluid by beating in an asymmetric fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Motile cilia, typically appearing in larger numbers (Brooks and Wallingford, 2014; Spassky and Meunier, 2017), move the surrounding fluid by beating in an asymmetric fashion (Golestanian et al., 2011; Gilpin et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to the scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "e727822c-cbb4-4044-a25a-c5b392c36cf3",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C9",
+      "claim": "Primary cilia in the vertebrate left-right organiser are motile and drive a lateral fluid flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary cilia in the vertebrate left-right organiser are motile and drive a lateral fluid flow that triggers, through a mechanism that is not yet fully understood, a distinct signalling cascade determining the body laterality (Essner et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Essner et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "0a91c98b-5016-442d-badf-f2bdce4976a1",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C10",
+      "claim": "There is mounting evidence that motile cilia can have various sensory roles.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also mounting evidence that motile cilia can have various sensory roles (Bloodgood, 2010), including chemical reception (Shah et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bloodgood, 2010 and Shah et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "da6f6f3c-38e4-4c3b-aff8-a5ff72dd6193",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C11",
+      "claim": "Receptors localised on motile cilia, such as ACE2, can act as entry points for viruses including SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Adversely, receptors localised on motile cilia, such as ACE2, can also act as entry points for viruses including SARS-CoV-2 (Lee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lee et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "68e63b94-449b-49cb-a081-7ea89ff6421d",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C12",
+      "claim": "Some chemosensory systems are known to achieve a sensitivity high enough to detect a small number of molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Some chemosensory systems, including vomeronasal (Leinders-Zufall et al., 2000) and olfactory neurons (Bhandawat et al., 2010) and marine sperm cells (Kaupp et al., 2003), are known to achieve a sensitivity high enough to detect a small number of molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies on different chemosensory systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "71a55f71-57cd-4284-a1e3-26fdc989d7c8",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C13",
+      "claim": "Only 1% of the surface area of a cell or cilium needs to be covered in high-affinity receptors to obtain near-perfect adsorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Because diffusion is fast on very short length scales, only 1% of the surface area of a cell or cilium needs to be covered in high-affinity receptors to obtain near-perfect adsorption (Berg and Purcell, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Berg and Purcell, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "194ce0a9-e262-4b94-bda4-53363395a51c",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C14",
+      "claim": "Flagella-driven swimming microorganisms can break the diffusion limit to increase their access to nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "In either of these cases, as long as there is no advection, the binding rates can be estimated using the theory of diffusion-limited reactions (Adam and Delbruck, 1968). This binding rate is known as the diffusion limit, and it has already been shown that flagella-driven swimming microorganisms can break the diffusion limit in order to increase their access to nutrients (Short et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Short et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "91692579-2a88-46c5-a24b-251ac29281ef",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C15",
+      "claim": "Placing receptors on a cilium forms a compartment that facilitates efficient accumulation of second messengers.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its small volume, a cilium forms a compartment that facilitates efficient accumulation of second messengers (Marshall and Nonaka, 2006; Hilgendorf et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Marshall and Nonaka, 2006 and Hilgendorf et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "9f6e7792-6188-477a-b75a-12ddf7ac1ab0",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C16",
+      "claim": "The location of chemoreceptors on cilia exposes them to fluid that is better mixed.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been suggested that the location of chemoreceptors on cilia exposes them to fluid that is better mixed (Marshall and Nonaka, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Marshall and Nonaka, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "ce39ecf9-7da0-4daa-91dd-9a8abcd16460",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C17",
+      "claim": "Hydrodynamic interaction between motile and sensory cilia can enhance the sensitivity of sensory cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study suggests that the hydrodynamic interaction between motile and sensory cilia can enhance the sensitivity of the latter (Reiten et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Reiten et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "b0feadd5-62e7-4511-8dad-0b7e1f83164b",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C19",
+      "claim": "The ratio of the simulated capture rate to the analytical rate constant for a cilium in quiescent fluid is 1.02.",
+      "claim_type": "EXPLICIT",
+      "source": "This value agrees well with simulations: the ratio of the simulated to this analytical rate constant is 1.02.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by numerical simulations that validate the analytical result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "3f03005c-65ac-4a93-b056-d4f5694967c3",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C20",
+      "claim": "The capture rate of a cilium scales almost linearly with its length.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that the capture rate scales almost linearly with the length of the cilium can be compared to experimental data obtained on olfactory cilia from the nasal cavity of mouse, whose lengths in different regions vary from a few micrometers to tens of micrometers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analytical expression for k_cilium and supported by comparison with experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "deed79d3-f929-421e-a5f5-3be08abf1987",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C21",
+      "claim": "Olfactory cilia from different regions of the mouse nasal cavity show sensitivity thresholds that differ by an order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Challis et al., 2015 have used patch-clamp recordings on olfactory sensory neurons and measured the response to pulses of an odorant (eugenol or a mixture of 10 odorants), lasting 5-400\u2062ms. Regions with different lengths show very different sensitivity thresholds, differing by an order of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to experimental data from Challis et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "949a4ac9-a39d-4e7d-b4cd-9a131896b3ce",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C22",
+      "claim": "The experimental results on olfactory cilia sensitivity are qualitatively consistent with the predicted length dependence of the capture rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The results are qualitatively consistent with the predicted length dependence of the capture rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing the theoretical predictions with experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "a7335115-ca8a-4b77-abc3-af58e67a3c8e",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C26",
+      "claim": "For olfactory cilia with lengths from 2.5 \u03bcm to 100 \u03bcm, the calculated area ratio ranges from 2.7 to 18.",
+      "claim_type": "EXPLICIT",
+      "source": "If we neglect the fact that long cilia are not straight, the calculated area ratio ranges from 2.7 to 18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the analytical expressions for different cilium lengths.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "e2f1d628-09bc-4205-bd79-ec9f4c276632",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C27",
+      "claim": "Using an exact numerical result for the capacitance of a cylinder, the area ratio becomes 4.5 for L/a=80.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an exact numerical result for the capacitance of a cylinder (Paffuti, 2018), the ratio becomes 4.5 for L/a=80.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim uses a more exact numerical result from Paffuti, 2018 to refine the calculation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "c86ad620-0ebd-4510-9139-c483b6a6fdd0",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C28",
+      "claim": "At the scale of cilia, the flow is characterised by a low Reynolds number, meaning that viscous forces dominate over inertia.",
+      "claim_type": "EXPLICIT",
+      "source": "At the scale of cilia, the flow is characterised by a low Reynolds number, meaning that viscous forces dominate over inertia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of fluid mechanics at microscopic scales.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "78d6612c-a533-4bd4-894f-30e257e48a97",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C31",
+      "claim": "The capture rate shows a strong positive relationship between cilium length and sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This expression for the rate once again shows a strong positive relationship between cilium length and sensitivity, as is known to be the case in real biological systems (Challis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analytical expression and supported by citation to experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "8693aad4-98e7-4f45-adf7-1c8cbbc83a28",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C32",
+      "claim": "The characteristic P\u00e9clet number for the cross-over between diffusive and convective capture is of the order ~L/a \u2248 80.",
+      "claim_type": "EXPLICIT",
+      "source": "The characteristic P\u00e9clet number for the cross-over between the diffusive and the convective capture is of the order \u223cL/a\u224880.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the scaling of the capture rate expressions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "dc3c8bf9-0df3-4287-b5c6-f10797972bfd",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C34",
+      "claim": "A cilium is better per area than a patch at both low and high P\u00e9clet numbers, but excels when the P\u00e9clet number is large.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that a cilium is better per area than a patch at both low and high P\u00e9clet numbers, but the cilium excels when the P\u00e9clet number is large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the area ratios at different P\u00e9clet numbers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "4c452ba2-ee04-46e5-a0a6-755146be281e",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C35",
+      "claim": "A cilium with receptors over the distal 50% of its length achieves 60% of the maximal capture rate at high P\u00e9clet numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "A cilium with receptors over the distal 50% of its length therefore achieves 60% of the maximal capture rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the modified integration and compared to simulations in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "ffdbef34-f907-4f75-ad34-62a3c551264f",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C36",
+      "claim": "A purely reciprocally moving cilium displays almost no improvement in capture rate over several orders of magnitude of the P\u00e9clet number.",
+      "claim_type": "EXPLICIT",
+      "source": "The reciprocally moving cilium (Figure 3a) displays almost no improvement over several orders of magnitude of the P\u00e9clet number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the numerical simulations presented in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "3e7745ef-b257-4f55-a1ee-68fec06635d0",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C37",
+      "claim": "Purcell's scallop theorem states that purely reciprocal motion does not create any net flow.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected, because Purcell's scallop theorem (Purcell, 1977) states that purely reciprocal motion does not create any net flow",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Purcell, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "7e404cb4-b753-420b-812a-accd7da30ecb",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C38",
+      "claim": "A cilium moving around a vertical cone shows an increase in rate constant by a factor of two over a few orders of magnitude of the P\u00e9clet number.",
+      "claim_type": "EXPLICIT",
+      "source": "The cilium moving around a vertical cone (Figure 3b) induces a net rotational flow, but no inflow or outflow (by symmetry, the time-averaged flow can only have a rotational component [Vilfan, 2012]). Nevertheless, the constant motion of the cilium through the fluid leads to a higher local capture efficiency. The rate constant therefore shows more improvement; over a few orders of magnitude of the P\u00e9clet number, the rate constant increases by a factor of two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in numerical simulations in Figure 3e and explained by the rotational flow pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "7ac0265f-afcc-47dd-bbad-b4104eead00e",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C39",
+      "claim": "A cilium moving in a tilted cone induces a long range flow characterized by a finite volume flow rate.",
+      "claim_type": "EXPLICIT",
+      "source": "When the cilium is near to the plane, the no-slip boundary screens the flow, whereas when it is far from the plane, its pumping is unimpeded. This results in the cilium inducing a long range flow in one direction, characterised by a finite volume flow rate (Smith et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained by the asymmetry in the cilium's motion and supported by a citation to Smith et al., 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "dff6bfdf-f0ed-4be2-8c90-03e63dce6d5f",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C41",
+      "claim": "A cilium with a realistic beating pattern has a capture rate close to that of the tilted cone, but surpasses it at very high P\u00e9clet numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "We finally simulated the capture process on a cilium exerting a realistic beating pattern, consisting of a stretched working stroke and a bent, sweeping recovery stroke (Figure 3d). The capture rate is close to that of the tilted cone, but surpasses it at very high P\u00e9clet numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the numerical simulations in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "1d7a4afd-0503-4cea-bb5e-8d92e03bf3a9",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C42",
+      "claim": "At zero P\u00e9clet number, a bundle of cilia has a per-cilium capture rate of approximately 0.5 times that of an isolated cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "Using numerical simulations, we find that at zero P\u00e9clet number (Figure 4a\u2013b), Q\u22480.5, which means that the cilia locally deplete the concentration field, harming the per-cilium effectiveness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in numerical simulations comparing isolated and bundled cilia at Pe=0.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "72e73b50-2176-4af1-b545-e1983b795421",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C43",
+      "claim": "For motile cilia at Pe\u224810000, the per-cilium capture rate in a bundle is around 50% higher than for an isolated cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the cilia actively move (with each tracing out a tilted cone with a different randomly-chosen phase lag compared to its neighbours, as in Figure 4e) the trend is reversed: we find that at Pe\u224810000, Q\u22481.53, meaning that per cilium, the capture rate is around 50% higher in the collective when compared to an isolated cilium with the same P\u00e9clet number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in numerical simulations of beating cilium bundles in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "22745186-e7fa-424a-b753-62890cf01368",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C44",
+      "claim": "Cilia that beat with random phases are more effective than cilia that beat in phase.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing these randomly chosen phases to a patch of cilia which beat in uniform, we find that cilia which beat in phase (Figure 4d) see an improvement over the stationary case with Q\u22481.16, but are much less effective than the cilia patch that beats with random phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in numerical simulations comparing uniform and random phase beating in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "076b3813-262d-480d-ba3b-2d65af7c7129",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C45",
+      "claim": "Random phases give a higher volume flow and complex hydrodynamic interactions result in a slightly higher capture chance.",
+      "claim_type": "EXPLICIT",
+      "source": "The random phases give a higher volume flow, and complex hydrodynamic interactions between the randomly-phased cilia result in a slightly higher capture chance for any given particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results and the observed differences between random and uniform phase beating.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "8f15f87d-2fa4-4b7b-b539-821049141c17",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C47",
+      "claim": "Mutual enhancement of capture rates in cilium bundles is a robust phenomenon that does not depend on a specific geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that mutual enhancement of capture rates is a robust phenomenon and does not depend on a specific geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulations showing similar improvements for different bundle configurations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "a18235b6-72c1-4ef6-bb4a-a087116d40fa",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C49",
+      "claim": "A chemosensory cilium working at the physical limit is capable of detecting picomolar ligand concentrations on a timescale of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "A chemosensory cilium working at the physical limit is therefore capable of detecting picomolar ligand concentrations on a timescale of seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the calculated capture rate constant.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "66733bd1-e69d-44d2-8ad7-816bd930ce2d",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C50",
+      "claim": "Sensitivity thresholds in the sub-picomolar range have been measured in some olfactory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity thresholds in the sub-picomolar range have been measured in some olfactory neurons (Frings and Lindemann, 1990; Zhang et al., 2013), indicating that some olfactory cilia work close to the theoretical sensitivity limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "df9fda3c-6ac3-46c4-b28d-b2fea7a2f080",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C53",
+      "claim": "With larger molecules and higher viscosities, P\u00e9clet numbers can exceed 10^4, leading to significant enhancement of the capture rate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with larger molecules and higher viscosities, the P\u00e9clet numbers can exceed 104, leading to a significant enhancement of the capture rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the scaling relationships and the effect of viscosity and molecule size on the P\u00e9clet number.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "565b5b99-42b6-456f-afd3-8d6d7884e56f",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C54",
+      "claim": "When a cilium is beating with a frequency of 25 Hz, the P\u00e9clet number is of the order ~10.",
+      "claim_type": "EXPLICIT",
+      "source": "When the same cilium is beating with a frequency of 25Hz, the P\u00e9clet number is of the order \u223c10, which is too small to have an effect on the capture rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the cilium dimensions and beating frequency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "0825dcde-5a88-4b9a-ad24-c448830724c5",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C55",
+      "claim": "With a medium viscosity of 0.2 Pa\u00b7s and a Stokes radius of 10 nm, the P\u00e9clet number reaches 10^5, meaning motility accelerates the capture rate by one order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "With a medium viscosity of 0.2Pa\u22c5s (200 times the water viscosity) and a Stokes radius of 10nm, it reaches 105, meaning that the motility accelerates the capture rate by one order of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the parameters and the scaling relationship for capture rate with P\u00e9clet number.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "36795dc7-c21f-45a2-8172-7a297b62357a",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C56",
+      "claim": "Motile cilia in the zebrafish left-right organizer (Kupffer's vesicle) may both generate flow and detect signalling particles, possibly extracellular vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, according to one hypothesis, motile cilia in the zebrafish left-right organizer (Kupffer's vesicle) both generate flow and detect signalling particles, possibly extracellular vesicles (Ferreira et al., 2017; Ferreira et al., 2019) similar to the proposed 'nodal vesicular parcels' (Tanaka et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to Ferreira et al., 2017, Ferreira et al., 2019, and Tanaka et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "b87db2e3-49e4-4742-894f-b72e110b7c77",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C58",
+      "claim": "Particle size can have a direct steric effect on the capture rate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the particle size becomes comparable to the cilium diameter, the approximation that treats them as point particles loses validity. Indeed, it has been shown that particle size can have a direct steric effect on the capture rate (Ding and Kanso, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ding and Kanso, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "526e40b8-383c-4fef-8bec-8eb9bac42933",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C59",
+      "claim": "The capture process of large particles can depend on a competition between hydrodynamic and adhesive forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the capture process of large particles can depend on a competition between hydrodynamic and adhesive forces (Tripathi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tripathi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "0fe91aef-f10e-4a66-ae09-2128bdbdd81d",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C60",
+      "claim": "Steric effects can lead to particle enrichment in flow compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Steric effects can even lead to particle enrichment in flow compartments (Nawroth et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nawroth et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "54481d13-81f3-4261-8bb3-7875498914a6",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C61",
+      "claim": "For individual isolated cilia, the geometry of a cilium always means an advantage in chemical sensitivity over receptors covering the same area on a flat surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We have thus proven that for individual isolated cilia the geometry of a cilium always means an advantage in chemical sensitivity over receptors covering the same area on a flat surface (assuming they act as perfect absorbers), whether in a quiescent or moving fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analytical and numerical results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "8d12f107-9725-4a03-9c6c-f74b12b9c34b",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C62",
+      "claim": "At high P\u00e9clet numbers, the advantage of a cilium increases further and confers an advantage in chemosensitivity to cilium bundles over individual cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "At high P\u00e9clet numbers, which are achieved in viscous fluids, with very large particles or in very strong flows, the advantage of a cilium increases further and even confers an advantage in chemosensitivity to cilium bundles over individual cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the numerical simulations of cilium bundles at high P\u00e9clet numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "642a33be-2b01-4a60-859b-3a417eca61e6",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C63",
+      "claim": "The hydrodynamics are computed using a modified Rotne-Prager mobility tensor that accounts for the no-slip boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrodynamics are computed using a modified Rotne-Prager mobility tensor \ud835\udc0c that accounts for the no-slip boundary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "c4967bbe-c0d2-4a2f-af4b-55ba173bcaf2",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C64",
+      "claim": "In the simulations, N=20 spheres were used, corresponding to an aspect ratio L/a=40.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations we used N=20 spheres, corresponding to an aspect ratio L/a=40.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a parameter choice in the numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "dbc60ba5-845b-4a39-bd47-c5f833c0a99a",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C65",
+      "claim": "The Rotne-Prager tensor approximation does not exactly satisfy the no-slip boundary condition on the surface of the cilium, especially at high P\u00e9clet numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rotne-Prager tensor approximation used to determine the flow fields does not exactly satisfy the no-slip boundary condition on the surface of the cilium, especially at high P\u00e9clet numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the computational method acknowledged by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "1cb59a05-6c85-43f9-a374-02f16de5f6b9",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C66",
+      "claim": "The elongated shape of a cilium provides an advantage for the capture rate of molecules in the surrounding fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the well-known advantages of compartmentalisation, which facilitates the downstream signal processing, we show that the elongated shape of a cilium provides an advantage for the capture rate of molecules in the surrounding fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on the analytical and numerical results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "c1c1d5ba-37fa-4789-8a06-0b1910375659",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C67",
+      "claim": "A cilium within an immotile bundle has a lower capture rate than an isolated cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that a cilium within an immotile bundle has a lower capture rate than an isolated cilium, but a higher one when the cilia are sufficiently motile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the numerical simulations comparing isolated and bundled cilia at different P\u00e9clet numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "8dafedd6-4411-4708-9370-9e47678c6412",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C68",
+      "claim": "A cilium within a motile bundle has a higher capture rate than an isolated cilium when the cilia are sufficiently motile.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that a cilium within an immotile bundle has a lower capture rate than an isolated cilium, but a higher one when the cilia are sufficiently motile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the numerical simulations of beating cilium bundles at high P\u00e9clet numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "1b1d3c8a-b9f2-4b50-ba9c-863a062c8053",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C69",
+      "claim": "The protruding geometry of a cilium could be one of the reasons why so many receptors are located on cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results show that the protruding geometry of a cilium could be one of the reasons why so many receptors are located on cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the demonstrated advantages of ciliary geometry for capture rates.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "cc6986a7-81cc-48b0-b7ee-8aaf2b9bb35b",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "claim_id": "C70",
+      "claim": "The results point to the advantage of combining motility with chemical reception.",
+      "claim_type": "EXPLICIT",
+      "source": "They also point to the advantage of combining motility with chemical reception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the demonstrated enhancement of capture rates by ciliary motility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5f5962a5-592c-4504-9a07-177563c3572e",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A non-motile cilium in quiescent fluid has a capture rate equivalent to a circular absorbing patch with approximately 4 times its surface area (3.8\u00d7 for L/a=80). The capture rate scales almost linearly with cilium length, with area ratios ranging from 2.7 to 18 for biologically relevant cilium lengths (2.5-100 \u03bcm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C19, C26-27 provide converging analytical and numerical evidence. The simulation-to-analytical ratio of 1.02 (C19) validates the approximation. The use of exact numerical capacitance (C27) refines the estimate to 4.5\u00d7, demonstrating robustness. The length-scaling relationship (C20, C26) follows logically from the analytical expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "e2397617-e7fc-41e3-a740-3ea89906990c",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The predicted linear scaling of capture rate with cilium length is qualitatively consistent with experimental data from mouse olfactory cilia, where regions with different cilium lengths show sensitivity thresholds differing by an order of magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C21-22 cite experimental data (Challis et al., 2015) showing length-dependent sensitivity, but the comparison is explicitly stated as only 'qualitatively consistent.' No quantitative validation is provided, and other factors (receptor density, downstream signaling) could contribute to the observed sensitivity differences. The experimental system involves pulsed odorant delivery (5-400 ms), which may not directly correspond to the steady-state diffusion model used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "4f82a599-68a9-4b0c-a5d5-3e1e55810241",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In an external shear flow at high P\u00e9clet numbers, a cilium's equivalent surface area increases to approximately 6 times its actual surface area (6.0\u00d7 for L/a=80), providing greater advantage than in quiescent fluid. The crossover between diffusive and convective capture occurs at Pe ~ L/a \u2248 80.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31-32, C34 are supported by analytical derivations (Equations 11-14) and show internal consistency. The Pe^(1/3) scaling at high P\u00e9clet numbers follows from established theory for convective-diffusive transport. The comparison with patch geometry uses established results (Stone, 1989), providing a solid theoretical foundation. However, experimental validation is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "e70e1fab-e278-4fe4-b910-38ccd8278d2b",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A cilium with receptors localized to only the distal 50% of its length achieves 60% of the maximal capture rate at high P\u00e9clet numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by modified analytical integration and validated against simulations (Figure 2\u2014figure supplement 1). This addresses the biological relevance of non-uniform receptor distribution. The theoretical prediction k_cilium(\u03bd) = k_cilium \u00b7 (1-(1-\u03bd)^(4/3)) provides a testable relationship.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "53840b34-4336-4a51-8595-7d6c2a6f8988",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ciliary motility enhances capture rates in a pattern-dependent manner. Reciprocal motion shows minimal improvement (C36-37), vertical cone motion increases rates by ~2\u00d7 (C38), while tilted cone and realistic beating patterns show Pe^(1/3) scaling at high P\u00e9clet numbers with capture rates 5-6\u00d7 higher than stationary cilia (C39, C41).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-41 are supported by numerical simulations (Figure 3e) showing distinct behaviors for different beating patterns. The lack of improvement for reciprocal motion (C36-37) is explained by Purcell's scallop theorem. The Pe^(1/3) scaling for tilted cone (C39) matches the shear flow case, which is physically reasonable. However, the simulations use simplified beating patterns that may not capture all aspects of biological ciliary motion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "6a0778f5-5b00-45ed-874f-c8fc9d7908a8",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In cilium bundles, immotile cilia show reduced per-cilium capture rates (Q\u22480.5) due to concentration depletion, but motile cilia at high Pe show enhanced rates (Q\u22481.53 at Pe\u224810,000). Random phase beating is more effective than synchronized beating (Q\u22481.16), and this enhancement is robust across different bundle geometries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-45, C47 are supported by numerical simulations (Figure 4) comparing isolated and bundled cilia. The reversal from depletion (Pe=0) to enhancement (high Pe) is physically reasonable due to collective flow generation. The comparison of random vs. uniform phases (C44-45) provides mechanistic insight. Testing multiple geometries (C47) strengthens the conclusion, though only three configurations are shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "a53f4808-7845-4614-b86d-0931b50735cc",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A chemosensory cilium working at the physical limit can detect picomolar ligand concentrations on a timescale of seconds (k_cilium = 7 pM^(-1)s^(-1) for typical dimensions). Some olfactory neurons achieve sub-picomolar sensitivity thresholds, suggesting they operate near the theoretical limit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 follows from the calculated rate constant with specified parameters. Claim C50 cites experimental measurements (Frings and Lindemann, 1990; Zhang et al., 2013) showing sub-picomolar sensitivity. The comparison is reasonable, though it assumes perfect receptor coverage and ignores downstream signal processing limitations. The calculation provides a useful benchmark for biological systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "50964c49-de5b-44ed-b125-4cd3672e9be4",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For small molecules in water, beating cilia operate at low Pe (~10 at 25 Hz), providing minimal enhancement. However, with larger molecules (10 nm radius) in viscous media (0.2 Pa\u00b7s), Pe reaches 10^5, accelerating capture rates by one order of magnitude. This may be relevant for systems like zebrafish Kupffer's vesicle where motile cilia may detect extracellular vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-55 provide parameter-dependent calculations showing when motility matters. The calculations are internally consistent, but C56 is explicitly presented as a hypothesis with speculative language ('according to one hypothesis,' 'possibly'). The biological relevance depends on accurate parameter estimates (viscosity, particle size) that are not experimentally validated in this study. The connection to Kupffer's vesicle remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "da422586-b175-45e3-a96d-c83d9343cc9b",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The elongated geometry of cilia provides a consistent advantage in chemical sensitivity over flat surface receptors across all conditions tested. At high P\u00e9clet numbers, this advantage increases further and extends to cilium bundles. These geometric advantages could explain why many receptors are localized to cilia and support the combination of motility with chemical reception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-62, C66, C69-70 represent the main conclusions synthesizing results from all conditions. The geometric advantage is demonstrated across quiescent fluid, shear flow, and active beating scenarios. However, C69 uses cautious language ('could be one of the reasons'), appropriately acknowledging that other factors (compartmentalization, signal processing) also contribute. The conclusions are well-supported by the presented data but remain theoretical without direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "f6d6e52b-ba06-4585-9275-e2bc28f9b000",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The numerical simulations use a modified Rotne-Prager mobility tensor with N=20 spheres (L/a=40). This approximation does not exactly satisfy the no-slip boundary condition on the cilium surface, especially at high P\u00e9clet numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-65 describe the computational methodology and acknowledge a key limitation. The authors transparently state that the Rotne-Prager approximation has limitations (C65), particularly at high Pe where their most dramatic results occur. However, they do not quantify the error or validate against more accurate methods. The choice of L/a=40 in simulations vs. L/a=80 in analytical calculations is explained as a computational compromise but introduces some inconsistency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "8eb6c965-d085-46fe-a8a7-317edb3884e0",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The point-particle approximation breaks down when particle size becomes comparable to cilium diameter. Particle size can have direct steric effects on capture rates, and large particle capture may depend on competition between hydrodynamic and adhesive forces, potentially leading to particle enrichment in flow compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-60 acknowledge limitations of the point-particle assumption and cite relevant literature (Ding and Kanso, 2015; Tripathi et al., 2013; Nawroth et al., 2017). These are appropriately presented as limitations and directions for future work. The authors do not attempt to extend their model beyond its valid regime.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    },
+    {
+      "id": "6d82093a-eb0c-4154-88b6-1e16e2b510e8",
+      "content_id": "2e0d8e37-f5df-41d6-b7aa-d6e8e2e6a803",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Immotile cilium bundles show reduced per-cilium capture rates compared to isolated cilia, but motile bundles show enhanced per-cilium capture rates when sufficiently motile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-68 summarize the collective effects results and are directly supported by the simulations in Figure 4. This represents a key finding showing that the collective behavior depends critically on motility. The result is counterintuitive (bundles can be better than isolated cilia) and well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:30:54.653563Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1a04d733-596b-49f3-86f7-e389ee301738",
+      "result_id": "5f5962a5-592c-4504-9a07-177563c3572e"
+    },
+    {
+      "claim_id": "b0feadd5-62e7-4511-8dad-0b7e1f83164b",
+      "result_id": "5f5962a5-592c-4504-9a07-177563c3572e"
+    },
+    {
+      "claim_id": "3f03005c-65ac-4a93-b056-d4f5694967c3",
+      "result_id": "5f5962a5-592c-4504-9a07-177563c3572e"
+    },
+    {
+      "claim_id": "a7335115-ca8a-4b77-abc3-af58e67a3c8e",
+      "result_id": "5f5962a5-592c-4504-9a07-177563c3572e"
+    },
+    {
+      "claim_id": "e2f1d628-09bc-4205-bd79-ec9f4c276632",
+      "result_id": "5f5962a5-592c-4504-9a07-177563c3572e"
+    },
+    {
+      "claim_id": "3f03005c-65ac-4a93-b056-d4f5694967c3",
+      "result_id": "e2397617-e7fc-41e3-a740-3ea89906990c"
+    },
+    {
+      "claim_id": "deed79d3-f929-421e-a5f5-3be08abf1987",
+      "result_id": "e2397617-e7fc-41e3-a740-3ea89906990c"
+    },
+    {
+      "claim_id": "949a4ac9-a39d-4e7d-b4cd-9a131896b3ce",
+      "result_id": "e2397617-e7fc-41e3-a740-3ea89906990c"
+    },
+    {
+      "claim_id": "b3f8dbcd-44ab-444e-95f4-db4529e9796e",
+      "result_id": "4f82a599-68a9-4b0c-a5d5-3e1e55810241"
+    },
+    {
+      "claim_id": "78d6612c-a533-4bd4-894f-30e257e48a97",
+      "result_id": "4f82a599-68a9-4b0c-a5d5-3e1e55810241"
+    },
+    {
+      "claim_id": "8693aad4-98e7-4f45-adf7-1c8cbbc83a28",
+      "result_id": "4f82a599-68a9-4b0c-a5d5-3e1e55810241"
+    },
+    {
+      "claim_id": "dc3c8bf9-0df3-4287-b5c6-f10797972bfd",
+      "result_id": "4f82a599-68a9-4b0c-a5d5-3e1e55810241"
+    },
+    {
+      "claim_id": "4c452ba2-ee04-46e5-a0a6-755146be281e",
+      "result_id": "e70e1fab-e278-4fe4-b910-38ccd8278d2b"
+    },
+    {
+      "claim_id": "32d27ab3-4ca3-477a-85ab-a892ad99bb38",
+      "result_id": "53840b34-4336-4a51-8595-7d6c2a6f8988"
+    },
+    {
+      "claim_id": "ffdbef34-f907-4f75-ad34-62a3c551264f",
+      "result_id": "53840b34-4336-4a51-8595-7d6c2a6f8988"
+    },
+    {
+      "claim_id": "3e7745ef-b257-4f55-a1ee-68fec06635d0",
+      "result_id": "53840b34-4336-4a51-8595-7d6c2a6f8988"
+    },
+    {
+      "claim_id": "7e404cb4-b753-420b-812a-accd7da30ecb",
+      "result_id": "53840b34-4336-4a51-8595-7d6c2a6f8988"
+    },
+    {
+      "claim_id": "7ac0265f-afcc-47dd-bbad-b4104eead00e",
+      "result_id": "53840b34-4336-4a51-8595-7d6c2a6f8988"
+    },
+    {
+      "claim_id": "dff6bfdf-f0ed-4be2-8c90-03e63dce6d5f",
+      "result_id": "53840b34-4336-4a51-8595-7d6c2a6f8988"
+    },
+    {
+      "claim_id": "1d7a4afd-0503-4cea-bb5e-8d92e03bf3a9",
+      "result_id": "6a0778f5-5b00-45ed-874f-c8fc9d7908a8"
+    },
+    {
+      "claim_id": "72e73b50-2176-4af1-b545-e1983b795421",
+      "result_id": "6a0778f5-5b00-45ed-874f-c8fc9d7908a8"
+    },
+    {
+      "claim_id": "22745186-e7fa-424a-b753-62890cf01368",
+      "result_id": "6a0778f5-5b00-45ed-874f-c8fc9d7908a8"
+    },
+    {
+      "claim_id": "076b3813-262d-480d-ba3b-2d65af7c7129",
+      "result_id": "6a0778f5-5b00-45ed-874f-c8fc9d7908a8"
+    },
+    {
+      "claim_id": "8f15f87d-2fa4-4b7b-b539-821049141c17",
+      "result_id": "6a0778f5-5b00-45ed-874f-c8fc9d7908a8"
+    },
+    {
+      "claim_id": "a18235b6-72c1-4ef6-bb4a-a087116d40fa",
+      "result_id": "a53f4808-7845-4614-b86d-0931b50735cc"
+    },
+    {
+      "claim_id": "66733bd1-e69d-44d2-8ad7-816bd930ce2d",
+      "result_id": "a53f4808-7845-4614-b86d-0931b50735cc"
+    },
+    {
+      "claim_id": "df9fda3c-6ac3-46c4-b28d-b2fea7a2f080",
+      "result_id": "50964c49-de5b-44ed-b125-4cd3672e9be4"
+    },
+    {
+      "claim_id": "565b5b99-42b6-456f-afd3-8d6d7884e56f",
+      "result_id": "50964c49-de5b-44ed-b125-4cd3672e9be4"
+    },
+    {
+      "claim_id": "0825dcde-5a88-4b9a-ad24-c448830724c5",
+      "result_id": "50964c49-de5b-44ed-b125-4cd3672e9be4"
+    },
+    {
+      "claim_id": "36795dc7-c21f-45a2-8172-7a297b62357a",
+      "result_id": "50964c49-de5b-44ed-b125-4cd3672e9be4"
+    },
+    {
+      "claim_id": "54481d13-81f3-4261-8bb3-7875498914a6",
+      "result_id": "da422586-b175-45e3-a96d-c83d9343cc9b"
+    },
+    {
+      "claim_id": "8d12f107-9725-4a03-9c6c-f74b12b9c34b",
+      "result_id": "da422586-b175-45e3-a96d-c83d9343cc9b"
+    },
+    {
+      "claim_id": "1cb59a05-6c85-43f9-a374-02f16de5f6b9",
+      "result_id": "da422586-b175-45e3-a96d-c83d9343cc9b"
+    },
+    {
+      "claim_id": "1b1d3c8a-b9f2-4b50-ba9c-863a062c8053",
+      "result_id": "da422586-b175-45e3-a96d-c83d9343cc9b"
+    },
+    {
+      "claim_id": "cc6986a7-81cc-48b0-b7ee-8aaf2b9bb35b",
+      "result_id": "da422586-b175-45e3-a96d-c83d9343cc9b"
+    },
+    {
+      "claim_id": "642a33be-2b01-4a60-859b-3a417eca61e6",
+      "result_id": "f6d6e52b-ba06-4585-9275-e2bc28f9b000"
+    },
+    {
+      "claim_id": "c4967bbe-c0d2-4a2f-af4b-55ba173bcaf2",
+      "result_id": "f6d6e52b-ba06-4585-9275-e2bc28f9b000"
+    },
+    {
+      "claim_id": "dbc60ba5-845b-4a39-bd47-c5f833c0a99a",
+      "result_id": "f6d6e52b-ba06-4585-9275-e2bc28f9b000"
+    },
+    {
+      "claim_id": "b87db2e3-49e4-4742-894f-b72e110b7c77",
+      "result_id": "8eb6c965-d085-46fe-a8a7-317edb3884e0"
+    },
+    {
+      "claim_id": "526e40b8-383c-4fef-8bec-8eb9bac42933",
+      "result_id": "8eb6c965-d085-46fe-a8a7-317edb3884e0"
+    },
+    {
+      "claim_id": "0fe91aef-f10e-4a66-ae09-2128bdbdd81d",
+      "result_id": "8eb6c965-d085-46fe-a8a7-317edb3884e0"
+    },
+    {
+      "claim_id": "c1c1d5ba-37fa-4789-8a06-0b1910375659",
+      "result_id": "6d82093a-eb0c-4154-88b6-1e16e2b510e8"
+    },
+    {
+      "claim_id": "8dafedd6-4411-4708-9370-9e47678c6412",
+      "result_id": "6d82093a-eb0c-4154-88b6-1e16e2b510e8"
+    }
+  ],
+  "comparisons": []
+}

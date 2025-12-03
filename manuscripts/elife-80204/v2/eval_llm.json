@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors developed and validated MIP-seq as a method for measuring strain frequencies in pooled populations of C. elegans. They designed 4 MIPs per strain for 103 diverse wild strains, with 321 of 412 MIPs passing quality filters. MIP-seq accurately measured strain frequencies over three orders of magnitude and was applied to 100 strains for starvation resistance phenotyping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 and C77-C82 collectively demonstrate successful development and validation of MIP-seq methodology. The technical specifications (C77-C79), quality metrics (C15-C16, C80-C82), and validation data (C17) provide strong evidence for the method's accuracy and reliability. The standard curve experiment (C17) directly validates quantitative performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The experimental design integrated effects of starvation on mortality, growth, and reproduction by sampling larvae after different durations of L1 arrest (days 1, 9, 13, 17) followed by recovery and reproduction. After normalization for initial pool composition, duration of starvation was the major factor explaining strain frequency differences, with PC1 correlating with starvation duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 describe the experimental design and its validation through PCA. The normalization approach (C21-C22) successfully removed batch effects, and the correlation between PC1 and starvation duration (C22) validates that the assay captures starvation-related phenotypes. The observation of substantial mortality by day 17 (C23) confirms biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Starvation resistance (Slope metric) showed modest correlations with geographic latitude of strain collection and negative correlation with growth rate after one day of starvation, suggesting possible adaptation and trade-offs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24-C25 report correlations but explicitly acknowledge these as speculative interpretations. The correlations are described as 'modest' without effect sizes or confidence intervals provided. These observations suggest interesting patterns but require additional validation and mechanistic investigation to be considered well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Manual validation assays confirmed that MIP-seq-identified resistant strains (DL238, EG4725) survived starvation longer, recovered better, and had higher early fecundity than sensitive strains (MY2147, NIC526). However, differences among wild strains were relatively small compared to published mutants, and NIC526 sensitivity was driven primarily by survival and fecundity rather than growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide orthogonal validation of MIP-seq results using traditional assays. Multiple phenotypic measurements (survival C26, growth C27, fecundity C28) converge to support strain classifications. The acknowledgment of modest effect sizes (C29) and strain-specific phenotypic profiles (C30) demonstrates appropriate interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Genome-wide association analysis identified three QTL on chromosomes IV and V affecting starvation resistance, validated by near-isogenic lines. The QTL contain 867 genes enriched for serpentine receptors, nuclear hormone receptors, C-type lectins, and notably the receptor L domain found in the IRLD protein family, with variants in 16 irld genes across the QTL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 describe GWA results with appropriate validation. The use of NILs (C32) provides strong genetic validation of QTL effects. Enrichment analyses (C34-C35) are statistically rigorous with Bonferroni correction mentioned. The identification of irld genes is well-supported by multiple lines of evidence including domain enrichment and variant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Four irld genes were prioritized as candidates: irld-39 contains a variant predicted to disrupt the start codon, irld-52 has a frameshift variant, and irld-11/irld-44/irld-45 and irld-57 are in hyper-divergent regions associated with starvation resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 identify specific candidate genes with supporting evidence. The variant predictions (C38-C39) are computationally supported, and the association with hyper-divergence (C40-C43) is validated by statistical analysis shown in Figure 3G. However, the authors appropriately note these predictions have not been functionally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CRISPR-engineered alleles of four irld genes did not affect starvation survival in either N2 or MY2147 backgrounds, but all four mitigated effects of starvation on growth rate specifically in the MY2147 background. The engineered variants had weaker effects than NILs, suggesting additional variants contribute to the QTL effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 report functional validation with appropriate statistical analysis and power calculations. The background-specific effects (C45-C46) are well-documented with linear mixed-effects models. The acknowledgment that engineered alleles don't fully recapitulate NIL effects (C47) demonstrates appropriate interpretation and suggests polygenic architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The irld-39; irld-52 double mutant did not significantly increase starvation survival but showed modest improvements in growth recovery after 8 days and increased early fecundity. Both variants are present in the most resistant strain DL238.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 demonstrate additive effects of irld variants with appropriate statistical testing. The lack of survival effect (C48) with sufficient power is honestly reported, while growth (C49) and fecundity (C50) effects are statistically significant. The presence of both variants in DL238 (C51) provides genetic support for their relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Genetic epistasis analysis showed that the starvation resistance effect of irld-39; irld-52 depends on daf-16/FoxO, and the double mutant increased DAF-16 nuclear localization in intestinal cells, suggesting IRLD-39 and IRLD-52 act through DAF-16/FoxO to affect starvation resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide mechanistic insight through genetic epistasis (C53-C54) and cellular localization (C55). The epistasis experiment is appropriately designed and analyzed. However, the authors appropriately note the DAF-16 localization difference is modest (C55) and acknowledge uncertainty about tissue-specificity, preventing overinterpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The irld gene family is expanded in C. elegans relative to other Caenorhabditis species, with some irld genes in hyper-divergent genomic regions. However, individual irld variants had weak effects compared to NILs, suggesting other variants of potentially larger effect also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 appropriately contextualize findings. The comparative genomics claim (C58) is stated with appropriate speculation. The acknowledgment of incomplete QTL explanation (C60-C61) demonstrates scientific rigor and appropriate interpretation of effect sizes. This suggests complex, polygenic architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Alternative mechanisms for irld function are discussed, including potential effects on DAF-16 independent of IIS and possible involvement of EGF signaling, though whether EGF signaling affects starvation resistance is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C65 present alternative hypotheses and acknowledge knowledge gaps. These are appropriately speculative (C62) and cite relevant prior work (C64), but no experimental evidence is provided to test these alternatives. This represents appropriate scientific discussion of limitations and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C102"
+    ],
+    "result": "Re-analysis of published RNA-seq data showed that about half of irld genes are differentially expressed between fed and starved L1 larvae, with all differentially expressed irld genes upregulated during starvation, though overall expression levels are low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C102 report re-analysis of published data with appropriate methods (edgeR, FDR < 0.05). The consistent upregulation pattern (C67) supports a role in starvation response. The acknowledgment of low expression (C102) is important context, though low expression doesn't preclude biological significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Single-cell RNA-seq analysis indicates irld genes are most prominently expressed in sensory neurons, with irld-39 in ASJ neurons and irld-52 in ADL neurons. These sensory neurons influence IIS-regulated traits and express insulin-like peptides (daf-28, ins-4) that affect L1 starvation survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 integrate published single-cell data to provide cellular context. The expression patterns (C68-C71) are supported by analysis of two independent datasets. The connection to IIS through sensory neurons (C72-C76) is well-supported by citations and provides mechanistic context, though direct functional validation in these specific neurons is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors speculate that IRLD proteins may modify IIS by binding insulin-like peptides (40 ILPs in C. elegans), analogous to IGF-binding proteins in mammals, but acknowledge this has not been demonstrated and uncertainties remain about IRLD function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C101 present a mechanistic hypothesis with appropriate caveats. The speculation (C96) is based on structural homology and prior proposals, with relevant comparisons to DAF-2B (C97-C98) and mammalian IGF-binding proteins (C99-C100). However, the explicit acknowledgment that binding has not been demonstrated (C101) prevents this from being considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C86",
+      "C103"
+    ],
+    "result": "MIP-seq is generalizable to other organisms with known sequence variants and sufficient culture capacity. Results correlate with a previous lower-power population-sequencing approach, validating the method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C86, and C103 discuss method generalizability and validation. The correlation with previous RAD-seq results (C103, R\u00b2=0.26) provides independent validation despite the modest correlation, which is expected given the lower power of the previous method. The generalizability claim (C57) is reasonable given the technical requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Background claims about C. elegans L1 arrest, starvation responses, insulin/IGF signaling pathway, and the development of population-selection-and-sequencing approaches are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C11 and C83-C94 provide essential background supported by appropriate citations to established literature. These claims accurately represent prior knowledge about C. elegans starvation biology, IIS pathway components, and the history of population-sequencing methods. This background appropriately contextualizes the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Methodological details including the choice of 36 hr timepoint for DAF-16 localization (intermediate in nuclear-cytoplasmic shuttling dynamics) and gene annotation details (60 irld genes in WS273) are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 provide methodological transparency. The rationale for the 36 hr timepoint (C104) is based on published dynamics (C83) and represents appropriate experimental design. The gene annotation detail (C105) provides necessary context for data analysis.",
+    "result_type": "MINOR"
+  }
+]

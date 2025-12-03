@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C43",
+      "C44"
+    ],
+    "result": "The study applied highly comparative time-series analysis (hctsa) to extract 6441 temporal features from regional BOLD fMRI time-series, including measures of frequency composition, variance, autocorrelation, fractal scaling, and entropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C43, and C44 describe the comprehensive feature extraction methodology. The manuscript provides clear methodological details and the hctsa toolbox is well-established. The number of features (6441) and feature types are explicitly stated and consistent throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Two robust spatial gradients of intrinsic dynamics were identified via PCA: PC1 spans a ventromedial-dorsolateral axis separating occipital-parietal and anterior temporal cortex, while PC2 spans a unimodal-transmodal gradient. Together they account for >70% of variance in time-series features and show hemispheric symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C57-C60 collectively describe the two principal components. Figure 3a provides clear visual evidence of the spatial distributions, variance explained (>70%), and hemispheric symmetry. The PCA methodology is standard and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PC1 is dominated by autocorrelation features (short-lag loading positively, long-lag negatively), while PC2 is dominated by distributional features (entropy, kurtosis) capturing dynamic range. Ventromedial areas show lower autocorrelation; sensory areas show greater distributional entropy and kurtosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 describe the feature composition of the two PCs. Figure 3b-c provides feature loading analyses and spatial distributions. The interpretation that PC1 captures temporal dependencies and PC2 captures amplitude distribution shape is well-supported by the loading patterns and representative features shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C110",
+      "C111"
+    ],
+    "result": "Temporal profile similarity between brain regions decreases exponentially with Euclidean distance and is significantly higher for structurally connected regions and regions within the same functional network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C110, C111 describe relationships between temporal profile similarity and network organization. Figure 2b-d provides statistical evidence including exponential fits, t-tests (p\u22480), and validation against null models (rewired networks and spin tests). The findings are robust to distance correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C113",
+      "C114"
+    ],
+    "result": "Temporal profile similarity and functional connectivity are only weakly correlated (rs=0.23, distance-corrected rs=0.18), indicating that regions can have similar time-series features without coherent fluctuations, representing a distinct type of inter-regional relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C113, C114 describe the weak relationship between temporal profile similarity and functional connectivity. Figure 2e provides quantitative evidence (Spearman correlations with p<0.05). The interpretation that this represents a distinct relationship is logical and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C90",
+      "C93"
+    ],
+    "result": "PC1 is significantly correlated with gene expression PC1 (rs=0.57, pspin=0.03), suggesting a molecular and cellular basis for regional differences in temporal autocorrelation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C88, C90, C93 link PC1 to gene expression. Figure 4 shows significant correlation with appropriate spatial permutation testing. The inference about molecular/cellular basis is reasonable given the established relationship between gene expression PC1 and cell type composition (C89, supported by citation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "PC2 is significantly correlated with the principal functional gradient (rs=0.77, pspin=0.0001), T1w/T2w ratio (rs=-0.57, pspin=0.0001), and cortical thickness (rs=0.43, pspin=0.008), suggesting that dynamic range relates to macroscale circuit organization and microstructural properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C91, C92, C94 link PC2 to multiple structural features. Figure 4 provides strong statistical evidence with spatial permutation testing for all correlations. The interpretation linking dynamic range to macroscale organization is well-supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C79",
+      "C80",
+      "C101",
+      "C103",
+      "C104"
+    ],
+    "result": "The two gradients correlate with distinct axes of meta-analytic functional activation: PC1 differentiates cognitive versus affective processing (e.g., attention vs. stress/fear/emotion), while PC2 differentiates sensory versus higher-order cognitive processing (e.g., perception/multisensory vs. cognitive control/memory retrieval).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C79-C80, C101, C103-C104 describe relationships with functional activation. Figure 5 shows correlations with 123 Neurosynth terms with Bonferroni correction (\u03b1=0.05). The cognitive-affective and sensory-cognitive axes are clearly demonstrated with specific examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The findings are robust across methodological variations (individual-level analysis, grey-matter signal regression, alternative parcellations) and validated in two independent held-out samples (HCP Validation n=127, Midnight Scan Club n=9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe robustness and replication. Figure 6 systematically shows high correlations (rs>0.5-0.99) between original and alternative analyses across multiple conditions. The replication in independent datasets with different acquisition parameters strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C102",
+      "C105",
+      "C106",
+      "C119"
+    ],
+    "result": "The study demonstrates that intrinsic dynamics are shaped by both microscale attributes (gene expression, myelin, thickness) and macroscale connectome architecture (structural/functional connectivity), linking brain architecture to intrinsic dynamics and ultimately to patterns of functional specialization and cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C102, C105, C106, C119 represent the overarching conclusions. These are well-supported by the convergent evidence from multiple analyses showing relationships between dynamics gradients and structural features (Figures 2, 4) and functional activation (Figure 5). The logical chain from structure\u2192dynamics\u2192function is demonstrated empirically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C112"
+    ],
+    "result": "The intrinsic dynamics gradients reflect structural and functional network embedding, with network organization and local intrinsic dynamics being intertwined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C112 describe the relationship between dynamics and network embedding. Figure 2 provides evidence that temporal profile similarity relates to both structural connectivity and functional network membership. The interpretation that these are intertwined is supported by the data and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Regional haemodynamic activity possesses a rich dynamic signature, and feature-based time-series phenotyping offers a powerful, data-driven method to quantify neural dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 represent methodological conclusions. The comprehensive feature extraction (6441 features) and identification of meaningful spatial gradients support the claim about rich dynamics. The methodological innovation is demonstrated through the novel application of hctsa to fMRI data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study acknowledges methodological limitations including lower temporal resolution of BOLD compared to electrophysiology, potential mismatch between hemodynamic and neuronal dynamics, and non-uniform temporal SNR (though tSNR is not correlated with the identified patterns).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 describe acknowledged limitations. These are explicitly stated in the Discussion. The tSNR analysis (C117) provides evidence that signal quality does not confound the main findings (PC1: rs=0.28, pspin=0.19; PC2: rs=0.21, pspin=0.16).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C42"
+    ],
+    "result": "The study used resting-state fMRI data from the Human Connectome Project (n=201 discovery, n=127 validation) and the Midnight Scan Club (n=9) for external replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C42 describe the datasets. These are clearly documented in the Methods section with appropriate citations. The sample sizes and data sources are explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The introduction establishes prior knowledge about brain organization, including hierarchical organization of neural circuits, cortical gradients of molecular/cellular properties, relationships between structure and dynamics, and limitations of conventional time-series analysis approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C39 represent background knowledge and motivation. These are appropriately supported by citations to established literature throughout the introduction. The claims accurately represent prior work and provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The discussion contextualizes findings within the emerging literature on hierarchical organization, showing that systematic variation in laminar architecture and cytological properties (neuron density, spine count, branching, receptor profiles) manifests as gradients that are reflected in the observed intrinsic dynamics patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 synthesize findings with prior literature. These are supported by appropriate citations and by the empirical correlations shown in Figure 4. The interpretation builds logically on established knowledge and the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The findings contribute to the trend of understanding structure-function relationships through 'annotated networks' where macroscale architecture reflects similarity in local properties, with similar regions being more likely to be connected and functionally interact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 place findings in broader context. These are supported by citations to recent literature and confirmed by the empirical findings in Figure 2 showing relationships between temporal profile similarity and connectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C30",
+      "C100"
+    ],
+    "result": "The study was motivated by the hypothesis that different types of local computations may manifest as different organizational gradients, potentially through variation in local excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C30 is explicitly speculative (evidence_type: SPECULATION) and C100 proposes a mechanism supported only by citations to computational models. While the hypothesis motivated the study and the mechanism is plausible, direct evidence for the excitability mechanism is not provided in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Spatial variation of intrinsic dynamics parallels spatial variation of meta-analytic cognitive functional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 summarizes the relationship between dynamics and activation. This is directly supported by Figure 5 showing significant correlations between PC1/PC2 and Neurosynth activation maps for multiple psychological terms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Gene expression PC1 is closely related to cell type composition, synaptic physiology and cortical cytoarchitecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by citation to Burt et al., 2018. This prior work characterization is important for interpreting the correlation between PC1 and gene expression PC1, but the claim itself relies on external literature rather than data from the current study.",
+    "result_type": "MINOR"
+  }
+]

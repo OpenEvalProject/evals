@@ -1,0 +1,1453 @@
+{
+  "submission": {
+    "id": "7a56f3ca-be52-46f6-ac04-69f48c5e6773",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:22:00.063875Z",
+    "updated_at": "2025-12-03T11:22:00.063875Z"
+  },
+  "content": [
+    {
+      "id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "submission_id": "7a56f3ca-be52-46f6-ac04-69f48c5e6773",
+      "content_type": "manuscript",
+      "content_text": "# Identification of bipotent progenitors that give rise to myogenic and connective tissues in mouse\n\n## Authors\n\n- Alexandre Grimaldi<sup>1</sup> ([ORCID: 0000-0002-5978-2057](https://orcid.org/0000-0002-5978-2057))\n- Glenda Comai<sup>1</sup> ([ORCID: 0000-0003-3244-3378](https://orcid.org/0000-0003-3244-3378))\n- Sebastien Mella<sup>4</sup> ([ORCID: 0000-0002-8679-5718](https://orcid.org/0000-0002-8679-5718))\n- Shahragim Tajbakhsh<sup>1</sup> ([ORCID: 0000-0003-1809-7202](https://orcid.org/0000-0003-1809-7202)) \u2020\n\n### Affiliations\n\n1. Stem Cells and Development Unit, Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))\n2. UMR CNRS 3738, Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))\n3. Sorbonne Universit\u00e9s, Complexit\u00e9 du Vivant, F-75005 Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))\n4. Cytometry and Biomarkers UTechS, Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))\n5. Bioinformatics and Biostatistics Hub, Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow distinct cell fates are manifested by direct lineage ancestry from bipotent progenitors, or by specification of individual cell types is a key question for understanding the emergence of tissues. The interplay between skeletal muscle progenitors and associated connective tissue cells provides a model for examining how muscle functional units are established. Most craniofacial structures originate from the vertebrate-specific neural crest cells except in the dorsal portion of the head, where they arise from cranial mesoderm. Here, using multiple lineage-tracing strategies combined with single cell RNAseq and in situ analyses, we identify bipotent progenitors expressing Myf5 (an upstream regulator of myogenic fate) that give rise to both muscle and juxtaposed connective tissue. Following this bifurcation, muscle and connective tissue cells retain complementary signalling features and maintain spatial proximity. Disrupting myogenic identity shifts muscle progenitors to a connective tissue fate. The emergence of Myf5-derived connective tissue is associated with the activity of several transcription factors, including Foxp2. Interestingly, this unexpected bifurcation in cell fate was not observed in craniofacial regions that are colonised by neural crest cells. Therefore, we propose that an ancestral bi-fated program gives rise to muscle and connective tissue cells in skeletal muscles that are deprived of neural crest cells.\n\n## Introduction\n\nStromal cells that are associated with skeletal muscles play critical roles in providing structural support and molecular cues (Biferali et al., 2019; Kardon et al., 2003; Sefton and Kardon, 2019). The majority of muscle-associated connective tissues in the head is derived from cranial neural crest cells (NCCs), an embryonic cell population that contributes to most of the structural components of the \u2018new head\u2019, a vertebrate innovation (Le Douarin and Kalcheim, 1999; Gans and Northcutt, 1983; Grenier et al., 2009; Heude et al., 2018; Noden and Trainor, 2005). Recently, the extent of this contribution was redefined in muscles derived from cranial mesoderm, including extraocular (EOM), laryngeal and pharyngeal muscles (Comai et al., 2020; Grimaldi et al., 2015; Heude et al., 2018; Kuroda et al., 2021; Noden and Epstein, 2010). Interestingly, these muscles contain mesenchyme that is mesoderm-derived in their dorso-medial component, whereas the remaining muscle mass is embedded in mesenchyme that is neural crest-derived. It is unclear how the coordinated emergence of myogenic and connective tissues takes place during development, and how they establish long-lasting paracrine communication.\n\nAlong the trunk axis, paraxial somitic mesoderm gives rise to skeletal muscles and associated connective tissues (Burke and Nowicki, 2003). Upon signals emanating from adjacent tissues, the dermomyotome (dorsal portion of the somite) undergoes an epithelial-to-mesenchymal transition and gives rise to several cell types including all skeletal muscles of the body, vasculature, tendons and bones (Ben-Yair and Kalcheim, 2008; Christ et al., 2007). Similarly, cranial mesodermal progenitors give rise to these diverse cell types, yet, its unsegmented nature raises the question of how spatiotemporal control of these cellular identities is established. Moreover, cardiopharyngeal mesoderm, which constitutes the major portion of cranial mesoderm, has cardiovascular potential, which manifests in the embryo as regions of clonally related cardiac and craniofacial skeletal muscles (Diogo et al., 2015; Swedlund and Lescroart, 2020). This skeletal muscle/cardiac branchpoint has been the subject of intense investigation in several model organisms including ascidians, avians, and mouse (Wang et al., 2019). While cardiopharyngeal mesoderm was shown to give rise to connective tissues in the mammalian pharynx, the extent of its contribution to other craniofacial muscles in general has not been fully addressed (Adachi et al., 2020).\n\nRecently, advanced pipelines integrating scRNAseq data and modern algorithms have been instrumental for identifying new lineage relationships during development (Cao et al., 2019; He et al., 2020; Qiu et al., 2021). Here, we employed lineage-restricted single-cell transcriptomics using multiple transgenic mouse lines combined with various computational methods, in situ labeling and loss-of-function experiments, and show that bipotent progenitors expressing the muscle determination gene Myf5 give rise to both skeletal muscle and anatomically associated connective tissues. Surprisingly, this property was restricted to muscle masses lacking NCC-derived connective tissues, indicating that cranial mesoderm acts as a source of connective tissues in the absence of neural crest cells.\n\n## Results\n\n### Myogenic and non-myogenic mesodermal populations coexist within distinct head lineages\n\nSomitic (Pax3-dependent) and cranial (Tbx1/Pitx2-dependent) mesoderm give rise to diverse cell types including those of the musculoskeletal system (Figure 1A). We first set out to explore the emergence of skeletal muscles and other associated mesodermal tissue within these programs. To that end, we employed a broad anterior mesoderm lineage-tracing strategy using the Mesp1Cre/+;Rosa26mTmG/+ line as it labels cranial-derived mesoderm and the anterior somites (Heude et al., 2018). At E10.5, when craniofacial skeletal muscles start to be specified, the upper third (anterior to forelimb) of the embryos was dissected, live GFP+ cells were isolated by FACS, and processed for scRNAseq analysis (Figure 1\u2014figure supplement 1A-C). After removal of doublets and lower quality cells (see Materials and methods), a large portion of the cells obtained by Mesp1Cre/+;Rosa26mTmG/+ lineage tracing segregated as individual clusters expressing markers of adipogenic, chondrogenic, sclerotomal, endothelial, and cardiovascular lineages as well as the foregut and primitive lung mesenchyme (Figure 1B, Figure 1\u2014figure supplement 2A-B). Pax3, Pitx2, Tbx1, Myf5, and Myod expression were used to identify clusters containing the cranial myogenic progenitors, annotated as \u2018Cardiopharyngeal mesoderm\u2019 and \u2018Anterior somite\u2019 (Figure 1B\u2013C, Figure 1\u2014figure supplement 2A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig1-v3.jpg)\n\n**Figure 1.:** (A) Scheme of connective tissue origin in the head and known mesodermal upstream regulators. E: Eye, 1\u20134: Pharyngeal arches 1\u20134. (B\u2013F) scRNAseq analysis on Mesp1Cre/+; Rosa26mTmG/+ embryos at E10.5 (2 datasets of 2 embryos were aggregated to generate this data, see methods). (B) UMAP of Mesp1Cre/+; Rosa26mTmG/+ E10.5 scRNAseq with main cell types highlighted. The clusters \u2018Anterior somite\u2019 and \u2018Cardiopharyngeal mesoderm\u2019 were subsetted for further analysis below. (C) UMAP expression plots of Pitx2 (EOM), Tbx1 (cranial mesoderm except EOM) and Pax3 (somitic mesoderm), indicating the clusters of progenitors that were selected. (D) UMAP of progenitor subset annotated as myogenic and non-myogenic based on expression patterns found in E and F. (E) UMAP expression plots of Pitx2, Tbx1 and Pax3 in the Mesp1Cre/+; Rosa26mTmG/+ E10.5 subset. (F) Heatmap of top 20 markers of myogenic versus non-myogenic clusters Mesp1Cre/+; Rosa26mTmG/+ E10.5 subset. Pdgfra/Pdgfa genes are highlighted.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Gating strategy used to isolate by FACS Mesp1Cre/+; Rosa26mTmG/+ cells. The FITC channel was used to identify GFP+ cells. The AmCyan channel was used to identify the Calcein Blue+ live cells. The PE-Texas Red channel was used to discard mTomato+ cells and Propidium Iodide+ cells. The percentage of cells captured by each gate is displayed on each plot. (B) Violin plots of gene count, UMI count and mitochondrial fraction for overall dataset. (C) Violin plots of gene count and UMI count by cluster (n = 2 pooled datasets).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Mesp1Cre/+;Rosa26mTmG/+ E10.5 UMAP expression plots of markers of various mesodermal lineages. (B) Heatmap of top 5 markers of each cluster of Mesp1Cre/+;Rosa26mTmG/+ E10.5. (C) UMAP expression plot of the Mesp1Cre/+;Rosa26mTmG/+ E10.5 subset. En2: marker of pharyngeal arch 1 (Knight et al., 2008), En1: marker of epaxial somitic progenitors (Sp\u00f6rle, 2001), Lbx1: marker of tongue progenitors (Gross et al., 2000), Isl1: marker of cardiopharyngeal mesoderm of pharyngeal arch 2\u20136 (Nathan et al., 2008), Shox2: marker of caudal cardiopharyngeal mesoderm (Wang et al., 2020), Pitx2: marker of the extraocular region (Zacharias et al., 2011) (n = 2 pooled datasets).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Pearson correlation plot of myogenic (Pdgfa, Myf5, Myod1, Myog, Acta2) and non-myogenic (Pdgfra, Prrx1, Meis1, Twist1, Osr1, Col1a1) genes in the Mesp1Cre/+;Rosa26mTmG/+ E10.5 subset. The size of the dots is inversely proportional to their p-value. A cross indicates a p-value > 0.05. The color of the dots indicates the strength of the positive (blue) or negative (red) correlation. (B) Expression patterns of Myf5, Myod, Myog, Pdgfa, Pdgfra, and Col1a1 in the Mesp1Cre/+;Rosa26mTmG/+ E10.5 subset dataset. Note that Myf5+ cells were overwhelmingly Pdgfra- and Myf5+/Pdgfra+ cells represent 8% of all cells (i.e. expressing at least one transcript of both genes). Pdgfra+ cells represent 40% of all cells (n = 2 pooled datasets).\n\nAfter subsetting these clusters (\u2018Cardiopharyngeal mesoderm\u2019 and \u2018Anterior somite\u2019), a few subclusters clearly separated based on their origin and anatomical location (Figure 1D\u2013E, Figure 1\u2014figure supplement 2C). Surprisingly, about half of the supposedly myogenic cells exhibited a connective tissue signature, including a strong bias toward Prrx1, a marker of lateral plate mesoderm (Durland et al., 2008), Col1a1, a major extracellular matrix component of connective tissue cells (De Micheli et al., 2020), and Twist1, a key determinant for the mesenchymal properties of cranial mesoderm (Bildsoe et al., 2016; Figure 1F). Furthermore, the expression of Pdgfra, a well-defined marker of stromal cells (Farahani and Xaymardan, 2015), was robustly anticorrelated with the expression of its ligand Pdgfa and associated with non-myogenic genes. Conversely, Pdgfa, was correlated with a myogenic cell state (Figure 1F, Figure 1\u2014figure supplement 3A-B). Of note, myogenic Pdgfa expression was shown to promote adjacent sclerotomal cells to adopt a rib cartilage fate (Tallquist et al., 2000). Therefore, this analysis identified anatomically distinct muscle and closely associated connective tissue progenitors and highlights a potential PDGFR-mediated crosstalk between these 2 cells types.\n\n### Transcriptional trajectories reveal a myogenic to non-myogenic cell state transition\n\nTo understand the lineage relationship between myogenic and non-myogenic cells, we exploited the unspliced and spliced variants of our scRNAseq data, and computed the RNA velocity in each cell, using a recently described tool (Bergen et al., 2020; Figure 2, Figure 2\u2014figure supplement 1). RNA velocity interrogates the relative abundance of unspliced and spliced gene variants, which depends on the rates of transcription, degradation, and splicing to infer directional trajectories (Bergen et al., 2020; La Manno et al., 2018). The cell cycle status constitutes a potential bias in scRNAseq data, especially when heterogeneous populations undergo cellular expansion, commitment and differentiation (McDavid et al., 2016). To eliminate this potential bias, cell cycle genes were consistently regressed out during preprocessing and directional trajectories were overlaid with cell cycle phase visualization for comparisons (Figure 2\u2014figure supplement 1A, Materials and methods). Notably, RNA velocity-inferred trajectories suggested that Myf5+ cells from the myogenic compartment contributed to non-myogenic cells (Figure 2A). These calculations were based on gene- and cluster-specific dynamics, which yield higher accuracy than the initially described RNA velocity method, while providing quantitative metrics for quality control (Figure 2\u2014figure supplement 1B-D and Materials and methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig2-v3.jpg)\n\n**Figure 2.:** (A) Velocity UMAP plots of Mesp1Cre/+; Rosa26mTmG/+ embryos at E10.5 displaying myogenic and non-myogenic clusters. Arrows represent the lineage progression based on RNA velocity (relative abundance of unspliced and spliced transcripts). (B) Heatmap of driver genes accounting for anterior somite velocity, highlighting Pdgfra. Driver genes are genes that are transcriptomically active in a given cluster. (C) Phase portraits of few selected driver genes in the anterior somites: Foxp1, Meox2, Meis1, Twist2, Fap, Pdgfra, Prrx1, and Pcolce. Y-axis represents the amount of unspliced transcript per cell; X-axis represents the number of spliced transcripts per cell. A high fraction of unspliced variants indicates an active transcription of the locus, while the inverse indicates inactive/repressed transcription. Dynamics of transcription were inferred at a gene- and cluster-specific level (see Methods). (D) Phase portraits, RNA velocity and expression plots of Pdgfa and Pdgfra showing splicing dynamics of these two genes. (E) Working model of myogenic and non-myogenic fate decisions from a common bipotent progenitor in anterior somites.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) UMAP of Mesp1Cre/+;Rosa26mTmG/+ E10.5 subset with overlaid velocity and cell cycle phase. (B\u2013D) Quality control metrics of scvelo, including velocity length, velocity confidence and spliced/unspliced abundance in the overall dataset and by cluster (n = 2 pooled datasets).\n\nAnother powerful feature of this method is the ability to infer \u2018driver genes\u2019 that are responsible for most of the calculated RNA velocity, hence actively transcribed, or repressed (Bergen et al., 2020). Therefore, these genes can identify transitory states underlying cell fate decisions. We used this approach to uncover the driver genes that were responsible for the velocity found in anterior somites, as these cells displayed the most consistent directionality, and appeared to be independent of cell cycle (Figure 2B, Figure 2\u2014figure supplement 1A, Table 1). Top transcribed driver genes included Foxp1 (Shao and Wei, 2018), Meox2 (Noizet et al., 2016), Meis1 (L\u00f3pez-Delgado et al., 2020), Twist2 (Franco et al., 2009), Fap (Pur\u00e9 and Blomberg, 2018), Pdgfra (Tallquist et al., 2000), Prrx1 (Leavitt et al., 2020), and Pcolce (Bildsoe et al., 2016; Figure 2C), which are associated with fibrosis and connective tissue development. Interestingly, we noted that Pdgfra appeared as a driver gene and was activated along this inferred trajectory, whereas Pdgfa expression decreased rapidly (Figure 2D). Taken together, RNA velocity analysis for anterior somite mesodermal progenitors showed that Myf5+/Pdgfa+ cells shifted toward a non-myogenic fate, which includes the downregulation of Myf5 and Pdgfa and the activation of Pdgfra expression (Figure 2E).\n\n**Table 1.**\n Driver genes underlying cell fate decisions in each dataset.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>E10.5 Anterior somites</th>\n      <th>E11.5 EOM Myogenic</th>\n      <th>E11.5 EOM Non-myogenic</th>\n      <th>E12.5 Non-myogenic</th>\n      <th>E14.5 Non-myogenic</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Tshz2</td>\n      <td>Ccdc141</td>\n      <td>Zfpm2</td>\n      <td>Mgat4c</td>\n      <td>Dnm1</td>\n    </tr>\n    <tr>\n      <td>Eya1</td>\n      <td>Mcm6</td>\n      <td>Plxna4</td>\n      <td>Cenpv</td>\n      <td>Pid1</td>\n    </tr>\n    <tr>\n      <td>C1qtnf3</td>\n      <td>Dync1i1</td>\n      <td>Col23a1</td>\n      <td>C130073E24Rik</td>\n      <td>Nrp2</td>\n    </tr>\n    <tr>\n      <td>Meis2</td>\n      <td>Tpm2</td>\n      <td>Edil3</td>\n      <td>Tbx3os1</td>\n      <td>Ntrk3</td>\n    </tr>\n    <tr>\n      <td>Limch1</td>\n      <td>Celf2</td>\n      <td>Map2</td>\n      <td>E330013P04Rik</td>\n      <td>Tmem132c</td>\n    </tr>\n    <tr>\n      <td>Moxd1</td>\n      <td>Sox6</td>\n      <td>Rora</td>\n      <td>Stk26</td>\n      <td>Egflam</td>\n    </tr>\n    <tr>\n      <td>Epha4</td>\n      <td>Tnc</td>\n      <td>Sema5a</td>\n      <td>Edil3</td>\n      <td>Gpr153</td>\n    </tr>\n    <tr>\n      <td>Pitx2</td>\n      <td>Magi3</td>\n      <td>Colec12</td>\n      <td>Fdft1</td>\n      <td>Efemp1</td>\n    </tr>\n    <tr>\n      <td>Parm1</td>\n      <td>Sh3glb1</td>\n      <td>Smoc1</td>\n      <td>Lima1</td>\n      <td>Adamts2</td>\n    </tr>\n    <tr>\n      <td>Hpse2</td>\n      <td>Parm1</td>\n      <td>Ptprt</td>\n      <td>Trim59</td>\n      <td>Brinp1</td>\n    </tr>\n    <tr>\n      <td>Lrrn1</td>\n      <td>Ephb1</td>\n      <td>Ror1</td>\n      <td>Meg3</td>\n      <td>Vegfc</td>\n    </tr>\n    <tr>\n      <td>Dmrt2</td>\n      <td>Bmpr1b</td>\n      <td>Dock5</td>\n      <td>Gins3</td>\n      <td>Twist2</td>\n    </tr>\n    <tr>\n      <td>Myl3</td>\n      <td>Hells</td>\n      <td>Map1b</td>\n      <td>Tpm2</td>\n      <td>Itgb5</td>\n    </tr>\n    <tr>\n      <td>Fap</td>\n      <td>Pdgfc</td>\n      <td>Fn1</td>\n      <td>Cdh6</td>\n      <td>Gria1</td>\n    </tr>\n    <tr>\n      <td>Hs6st2</td>\n      <td>Ptprd</td>\n      <td>Limch1</td>\n      <td>Csmd3</td>\n      <td>Sned1</td>\n    </tr>\n    <tr>\n      <td>Ddr2</td>\n      <td>Cnr1</td>\n      <td>Tenm4</td>\n      <td>Tceal5</td>\n      <td>Sorcs3</td>\n    </tr>\n    <tr>\n      <td>Cald1</td>\n      <td>Sema3d</td>\n      <td>Rbms3</td>\n      <td>Pclaf</td>\n      <td>Ebf2</td>\n    </tr>\n    <tr>\n      <td>Prrx1</td>\n      <td>Clcn5</td>\n      <td>Srgap3</td>\n      <td>Tspan9</td>\n      <td>Fam19a1</td>\n    </tr>\n    <tr>\n      <td>Magi3</td>\n      <td>Chd7</td>\n      <td>Tmem132c</td>\n      <td>Eps8</td>\n      <td>Trabd2b</td>\n    </tr>\n    <tr>\n      <td>Ntn1</td>\n      <td>Col25a1</td>\n      <td>Sdc2</td>\n      <td>Lmna</td>\n      <td>Plxdc2</td>\n    </tr>\n    <tr>\n      <td>Zfhx3</td>\n      <td>Reep1</td>\n      <td>Add3</td>\n      <td>Dmrt2</td>\n      <td>Sh3gl3</td>\n    </tr>\n    <tr>\n      <td>Meis1</td>\n      <td>Ctnnal1</td>\n      <td>Pdgfra</td>\n      <td>Cpeb4</td>\n      <td>Luzp2</td>\n    </tr>\n    <tr>\n      <td>Tnni1</td>\n      <td>Tpm1</td>\n      <td>Gmds</td>\n      <td>Hpgd</td>\n      <td>Pdzd2</td>\n    </tr>\n    <tr>\n      <td>Crym</td>\n      <td>Zim1</td>\n      <td>St6galnac3</td>\n      <td>Rcsd1</td>\n      <td>Sema3e</td>\n    </tr>\n    <tr>\n      <td>Ebf1</td>\n      <td>Lmx1a</td>\n      <td>Epb41l3</td>\n      <td>Pdgfra</td>\n      <td>Rims1</td>\n    </tr>\n    <tr>\n      <td>Nr2f1</td>\n      <td>Neb</td>\n      <td>Pde3a</td>\n      <td>Plac1</td>\n      <td>Epha3</td>\n    </tr>\n    <tr>\n      <td>Ntng1</td>\n      <td>Atad2</td>\n      <td>Tox</td>\n      <td>Palmd</td>\n      <td>Cyp7b1</td>\n    </tr>\n    <tr>\n      <td>Pgm5</td>\n      <td>Dapk2</td>\n      <td>Smarca2</td>\n      <td>Gucy1a1</td>\n      <td>Gem</td>\n    </tr>\n    <tr>\n      <td>Cdh6</td>\n      <td>Prox1</td>\n      <td>Ctdspl</td>\n      <td>Wif1</td>\n      <td>Ldb2</td>\n    </tr>\n    <tr>\n      <td>Foxp1</td>\n      <td>Lsamp</td>\n      <td>Magi2</td>\n      <td>Naalad2</td>\n      <td>Scube1</td>\n    </tr>\n    <tr>\n      <td>Celf2</td>\n      <td>Ttn</td>\n      <td>Dpysl3</td>\n      <td>Smoc2</td>\n      <td>Pdgfra</td>\n    </tr>\n    <tr>\n      <td>Tbx1</td>\n      <td>Pls3</td>\n      <td>Fgfr2</td>\n      <td>Rassf4</td>\n      <td>Pde1a</td>\n    </tr>\n    <tr>\n      <td>Bdnf</td>\n      <td>Slf2</td>\n      <td>Ldb2</td>\n      <td>Pttg1</td>\n      <td>Nde1</td>\n    </tr>\n    <tr>\n      <td>Colec12</td>\n      <td>Vat1l</td>\n      <td>Igf1</td>\n      <td>Josd2</td>\n      <td>Enpp2</td>\n    </tr>\n    <tr>\n      <td>Eya4</td>\n      <td>E2f1</td>\n      <td>Elk3</td>\n      <td>Plxna4</td>\n      <td>Fam107b</td>\n    </tr>\n    <tr>\n      <td>Sobp</td>\n      <td>Epb41l2</td>\n      <td>Zmiz1</td>\n      <td>Eya2</td>\n      <td>Stxbp6</td>\n    </tr>\n    <tr>\n      <td>Peg3</td>\n      <td>Gm28653</td>\n      <td>Dlc1</td>\n      <td>Nrsn1</td>\n      <td>Rerg</td>\n    </tr>\n    <tr>\n      <td>Pdgfra</td>\n      <td>Lrrn1</td>\n      <td>Nhs</td>\n      <td>Fign</td>\n      <td>Prex2</td>\n    </tr>\n    <tr>\n      <td>Nrk</td>\n      <td>Mef2c</td>\n      <td>Cdkn1c</td>\n      <td>Inppl1</td>\n      <td>Man1a</td>\n    </tr>\n    <tr>\n      <td>Ptn</td>\n      <td>St8sia2</td>\n      <td>Plpp3</td>\n      <td>Rnf152</td>\n      <td>Tmem45a</td>\n    </tr>\n    <tr>\n      <td>Daam1</td>\n      <td>Tshz1</td>\n      <td>Ebf1</td>\n      <td>Lasp1</td>\n      <td>Sh3bp4</td>\n    </tr>\n    <tr>\n      <td>Dlk1</td>\n      <td>Wee1</td>\n      <td>Sorbs2</td>\n      <td>Mrln</td>\n      <td>Mcc</td>\n    </tr>\n    <tr>\n      <td>Unc5c</td>\n      <td>Slc24a3</td>\n      <td>Baz1a</td>\n      <td>Cdt1</td>\n      <td>Ncald</td>\n    </tr>\n    <tr>\n      <td>Lpar1</td>\n      <td>Ncoa1</td>\n      <td>Fat4</td>\n      <td>Notch3</td>\n      <td>Kdelr2</td>\n    </tr>\n    <tr>\n      <td>Syne2</td>\n      <td>Dek</td>\n      <td>Golgb1</td>\n      <td>Pax3</td>\n      <td>Pcdh19</td>\n    </tr>\n    <tr>\n      <td>Nkd2</td>\n      <td>Kdm5b</td>\n      <td>Hpse2</td>\n      <td>Egfr</td>\n      <td>Gas7</td>\n    </tr>\n    <tr>\n      <td>Brinp1</td>\n      <td>Unc13c</td>\n      <td>Samd4</td>\n      <td>Dbf4</td>\n      <td>Cpt1c</td>\n    </tr>\n    <tr>\n      <td>Zfhx4</td>\n      <td>Ddr1</td>\n      <td>Itga9</td>\n      <td>Bcr</td>\n      <td>Adam22</td>\n    </tr>\n    <tr>\n      <td>Nnat</td>\n      <td>Pip4k2a</td>\n      <td>Magi1</td>\n      <td>Mllt3</td>\n      <td>Itgb8</td>\n    </tr>\n    <tr>\n      <td>Gxylt2</td>\n      <td>Fndc3c1</td>\n      <td>Pcdh9</td>\n      <td>Nectin1</td>\n      <td>Dchs2</td>\n    </tr>\n    <tr>\n      <td>Clmp</td>\n      <td>Rbm24</td>\n      <td>Tgfbr2</td>\n      <td>Grin3a</td>\n      <td>Cep350</td>\n    </tr>\n    <tr>\n      <td>Ror2</td>\n      <td>Rreb1</td>\n      <td>Ntf3</td>\n      <td>Cbfa2t3</td>\n      <td>Oat</td>\n    </tr>\n    <tr>\n      <td>Nfia</td>\n      <td>Rragd</td>\n      <td>Col11a1</td>\n      <td>Cdh2</td>\n      <td>Rab30</td>\n    </tr>\n    <tr>\n      <td>Ebf2</td>\n      <td>Acsl3</td>\n      <td>Runx1t1</td>\n      <td>Anln</td>\n      <td>Aff2</td>\n    </tr>\n    <tr>\n      <td>Ednra</td>\n      <td>Acvr2a</td>\n      <td>Tnrc18</td>\n      <td>Ccdc6</td>\n      <td>Gna14</td>\n    </tr>\n    <tr>\n      <td>Fli1</td>\n      <td>Zeb1</td>\n      <td>Crym</td>\n      <td>Mcu</td>\n      <td>Slc29a1</td>\n    </tr>\n    <tr>\n      <td>Tspan12</td>\n      <td>Rgma</td>\n      <td>Fap</td>\n      <td>Fnip2</td>\n      <td>Pls3</td>\n    </tr>\n    <tr>\n      <td>Ttc28</td>\n      <td>Arpp21</td>\n      <td>Ppp1r1a</td>\n      <td>Kcnk13</td>\n      <td>Traf3ip1</td>\n    </tr>\n    <tr>\n      <td>Nfib</td>\n      <td>Lef1</td>\n      <td>Tes</td>\n      <td>Sned1</td>\n      <td>Rcsd1</td>\n    </tr>\n    <tr>\n      <td>Ccdc88c</td>\n      <td>Nr2f2</td>\n      <td>Bicc1</td>\n      <td>Nde1</td>\n      <td>Lgr4</td>\n    </tr>\n    <tr>\n      <td>Col13a1</td>\n      <td>Foxo1</td>\n      <td>Il1rapl1</td>\n      <td>Hipk3</td>\n      <td>Zfp9</td>\n    </tr>\n    <tr>\n      <td>2700069I18Rik</td>\n      <td>Pdzrn4</td>\n      <td>Alcam</td>\n      <td>Arhgap11a</td>\n      <td>Hs3st5</td>\n    </tr>\n    <tr>\n      <td>Pcolce</td>\n      <td>Hmga2</td>\n      <td>2700069I18Rik</td>\n      <td>Fam8a1</td>\n      <td>Aspn</td>\n    </tr>\n    <tr>\n      <td>Scn3a</td>\n      <td>Lurap1l</td>\n      <td>Dab2</td>\n      <td>Kif21a</td>\n      <td>Nrxn1</td>\n    </tr>\n    <tr>\n      <td>Acvr2a</td>\n      <td>Pkig</td>\n      <td>Cntln</td>\n      <td>Mtss1</td>\n      <td>Rrm1</td>\n    </tr>\n    <tr>\n      <td>Auts2</td>\n      <td>Ncl</td>\n      <td>Clmn</td>\n      <td>Abcd2</td>\n      <td>Igfbp7</td>\n    </tr>\n    <tr>\n      <td>Col3a1</td>\n      <td>CT025619.1</td>\n      <td>Rbms1</td>\n      <td>Irx5</td>\n      <td>Slc35f3</td>\n    </tr>\n    <tr>\n      <td>Gap43</td>\n      <td>Erbb4</td>\n      <td>Tmem2</td>\n      <td>Pacs2</td>\n      <td>Kif15</td>\n    </tr>\n    <tr>\n      <td>Mrln</td>\n      <td>Cdk14</td>\n      <td>Cdh6</td>\n      <td>Nab1</td>\n      <td>Slc1a3</td>\n    </tr>\n    <tr>\n      <td>Pax3</td>\n      <td>Kif21a</td>\n      <td>Lypd6</td>\n      <td>Ccnd2</td>\n      <td>Bmp6</td>\n    </tr>\n    <tr>\n      <td>Sim1</td>\n      <td>Zfp704</td>\n      <td>Mmp2</td>\n      <td>Bok</td>\n      <td>Dkk2</td>\n    </tr>\n    <tr>\n      <td>Epb41l2</td>\n      <td>Nasp</td>\n      <td>Kif5c</td>\n      <td>Dok5</td>\n      <td>Tspan9</td>\n    </tr>\n    <tr>\n      <td>Ppp3ca</td>\n      <td>Plekha5</td>\n      <td>Cadm2</td>\n      <td>Ncapg</td>\n      <td>Ets1</td>\n    </tr>\n    <tr>\n      <td>Tnfaip6</td>\n      <td>Cap2</td>\n      <td>Prkg2</td>\n      <td>Rfx8</td>\n      <td>Gria3</td>\n    </tr>\n    <tr>\n      <td>Tmem132c</td>\n      <td>Snca</td>\n      <td>Cped1</td>\n      <td>Fhod3</td>\n      <td>Sox8</td>\n    </tr>\n    <tr>\n      <td>Tmem2</td>\n      <td>Epha4</td>\n      <td>Dtl</td>\n      <td>Tk1</td>\n      <td>Melk</td>\n    </tr>\n    <tr>\n      <td>Epb41l3</td>\n      <td>Atad5</td>\n      <td>Ror2</td>\n      <td>Asf1b</td>\n      <td>Ntm</td>\n    </tr>\n    <tr>\n      <td>Crybg3</td>\n      <td>Cntn3</td>\n      <td>Utrn</td>\n      <td>Tek</td>\n      <td>Synpo2l</td>\n    </tr>\n    <tr>\n      <td>Nrxn1</td>\n      <td>Cacna2d1</td>\n      <td>Foxp1</td>\n      <td>Arfgef3</td>\n      <td>Hlf</td>\n    </tr>\n    <tr>\n      <td>Farp1</td>\n      <td>Pak3</td>\n      <td>L3mbtl3</td>\n      <td>Rnf182</td>\n      <td>Adamts5</td>\n    </tr>\n    <tr>\n      <td>Sulf1</td>\n      <td>Megf10</td>\n      <td>Cdh23</td>\n      <td>Kif14</td>\n      <td>Plcb4</td>\n    </tr>\n    <tr>\n      <td>Tmtc2</td>\n      <td>Tnnt1</td>\n      <td>Negr1</td>\n      <td>1810041L15Rik</td>\n      <td>Cdc25b</td>\n    </tr>\n    <tr>\n      <td>Pde4dip</td>\n      <td>Acta2</td>\n      <td>Hmcn1</td>\n      <td>Rrm2</td>\n      <td>Mgat4a</td>\n    </tr>\n    <tr>\n      <td>Phldb2</td>\n      <td>Barx2</td>\n      <td>Col26a1</td>\n      <td>Fgf5</td>\n      <td>Mdfic</td>\n    </tr>\n    <tr>\n      <td>Plpp3</td>\n      <td>Mrln</td>\n      <td>Fbn2</td>\n      <td>Barx2</td>\n      <td>Trpc5</td>\n    </tr>\n    <tr>\n      <td>Ybx3</td>\n      <td>Pgm5</td>\n      <td>Ankrd12</td>\n      <td>Fli1</td>\n      <td>Kif4</td>\n    </tr>\n    <tr>\n      <td>Ppm1l</td>\n      <td>Fmr1</td>\n      <td>Lhfp</td>\n      <td>Jph2</td>\n      <td>Plce1</td>\n    </tr>\n    <tr>\n      <td>Twist2</td>\n      <td>Smc4</td>\n      <td>Hs3st3b1</td>\n      <td>Dtx4</td>\n      <td>Il17rd</td>\n    </tr>\n    <tr>\n      <td>Nuak1</td>\n      <td>Clmp</td>\n      <td>Adgrl3</td>\n      <td>Ncald</td>\n      <td>Mmp16</td>\n    </tr>\n    <tr>\n      <td>Tgfb2</td>\n      <td>Alpk2</td>\n      <td>Svil</td>\n      <td>Zic4</td>\n      <td>Hhip</td>\n    </tr>\n    <tr>\n      <td>Sfrp1</td>\n      <td>Kctd1</td>\n      <td>Mob3b</td>\n      <td>Dlc1</td>\n      <td>Tpx2</td>\n    </tr>\n    <tr>\n      <td>Sncaip</td>\n      <td>Meg3</td>\n      <td>Trabd2b</td>\n      <td>Cdc45</td>\n      <td>Ndc80</td>\n    </tr>\n    <tr>\n      <td>Tenm3</td>\n      <td>Samd5</td>\n      <td>Rmst</td>\n      <td>Gatm</td>\n      <td>Bub1b</td>\n    </tr>\n    <tr>\n      <td>Cdh2</td>\n      <td>Nrk</td>\n      <td>Prrx1</td>\n      <td>Ssc5d</td>\n      <td>Hmmr</td>\n    </tr>\n    <tr>\n      <td>Iqgap2</td>\n      <td>Piezo2</td>\n      <td>5330434G04Rik</td>\n      <td>Phactr2</td>\n      <td>Kank4</td>\n    </tr>\n    <tr>\n      <td>App</td>\n      <td>Robo1</td>\n      <td>Zfhx3</td>\n      <td>Ppp1r14c</td>\n      <td>Tmeff2</td>\n    </tr>\n    <tr>\n      <td>Pgam2</td>\n      <td>Col1a2</td>\n      <td>Foxp2</td>\n      <td>Agl</td>\n      <td>Nr4a1</td>\n    </tr>\n    <tr>\n      <td>Rspo3</td>\n      <td>Cntrl</td>\n      <td>Mpp6</td>\n      <td>Tox3</td>\n      <td>Aurkb</td>\n    </tr>\n    <tr>\n      <td>Cdon</td>\n      <td>Mllt3</td>\n      <td>Crispld1</td>\n      <td>Aurka</td>\n      <td>Lrrtm3</td>\n    </tr>\n    <tr>\n      <td>Ebf3</td>\n      <td>Peg3</td>\n      <td>Eya1</td>\n      <td>Cdh15</td>\n      <td>Cenpq</td>\n    </tr>\n  </tbody>\n</table>\n\n### Myf5-derived lineage contributes to connective tissue cells in the absence of neural crest\n\nGiven that the number of cells examined in the EOM and pharyngeal arch mesodermal clusters from the E10.5 dataset was lower than for anterior somites, we decided to validate the relevance of Myf5-derived non-myogenic cells in these cranial regions directly in vivo. We thus examined the EOM, larynx and upper back muscles in the early fetus at E14.5 using a Myf5-lineage reporter mouse (Myf5Cre/+; Rosa26TdTomato/+) combined with a contemporary reporter for Pdgfra (PdgfraH2BGFP/+) (Figure 3). Notably, we observed GFP+ TOM+ double-positive cells in regions of EOM, laryngeal and upper back muscles that are partially or fully deprived of neural crest (Adachi et al., 2020; Comai et al., 2020; Heude et al., 2018; Figure 3A\u2013C'). Conversely, no double-positive cells were detected in muscles that are fully embedded in neural crest derived mesenchyme such as mandibular and tongue muscles (Heude et al., 2018; Figure 3D\u2013E').\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig3-v3.jpg)\n\n**Figure 3.:** (A-E') Transverse sections of an E14.5 Myf5Cre/+; Rosa26TdTomato/+; PdgfraH2BGFP/+ embryo immunostained for Myod/Myog. White arrowheads indicate cells double-positive GFP/TOM and negative for Myod/Myog (n = 3 embryos). (F-I') Transverse cryosections of the EOM at E13.5 of Wnt1Cre/+; Rosa26mTmG/+; Myf5nlacZ/+ (G,I) and Mesp1Cre/+; Rosa26mTmG/+; Myf5nlacZ/+ (F,H) immunostained for \u03b2-gal, at the level of the medial attachment (F,G) and lateral muscle masses (H,I). Yellow arrowheads indicate Myf5-expressing cells in the context of mesodermal and neural crest lineages. Note that Myf5-expressing cells are mGFP+ in the Mesp1 lineage and mGFP- in the Wnt1 lineage. Red arrowheads indicate neural-crest cells that are excluded from the Myf5 lineage (n = 2 embryos for each). (J) Scatter plots of the proportion of double positive cells in E14.5 Myf5Cre/+; Rosa26TdTomato/+; PdgfraH2BGFP/+ embryos in various regions throughout the EOM (the line is the mean, each dot is a tissue section, each color is a different embryo, n = 3 embryos). (K) Scheme highlighting the quantified regions in (J) and summarising the contribution of each population to periocular connective tissues. TOM: TdTOMATO.\n\nMesenchymal tissues associated with the EOM arise from mesoderm in its most dorso-medial portion and from neural crest in its ventro-lateral portion (Comai et al., 2020; Kuroda et al., 2021). This dual origin makes it a prime candidate to explore the relative contribution of Myf5-derived cells to the associated connective tissues within a single functional unit. Using Wnt1Cre/+; Rosa26mTmG/+; Myf5nlacZ/+ (NCC tracing with Wnt1) and Mesp1Cre/+;Rosa26mTmG/+;Myf5nlacZ/+ (mesoderm tracing with Mesp1) at E13.5, we found that GFP+ cells that expressed Myf5 (\u03b2-gal+) were exclusively present in Mesp1-derived domains and absent from the Wnt1 lineage (Figure 3F\u2013I'). To further evaluate the contribution of Myf5-derived cells to connective tissues in either domain, we re-examined the Myf5Cre/+; Rosa26TdTomato/+; PdgfraH2BGFP/+mouse line and quantified the percentage of GFP+ TOM+ cells in the EOM. As expected, we observed a medio-lateral gradient of Myf5-lineage contribution to EOM-associated connective tissues by E14.5, and this was anticorrelated with the local contribution of neural crest cells to connective tissues (Figure 3J\u2013K). Thus, in agreement with our scRNAseq velocity analysis, these observations suggest that the mesodermal Myf5-lineage contributes to muscle-associated connective tissue in domains that are deprived of neural crest mesenchyme.\n\n### Myf5-derived cells can maintain a molecular crosstalk following bifurcation into myogenic and connective tissue fates\n\nTo identify the transition between these two fates, we generated an additional sc-RNAseq dataset based on Myf5-lineage tracing at E11.5 (Myf5Cre/+;Rosa26mTmG/+) and produced RNA velocity streams (Figure 4A, Figure 4\u2014figure supplement 1). We focused on the EOM and anterior somites, which were clearly distinguished as independent clusters based on the expression of Alx4 (Bothe and Dietrich, 2006) and Pax3 (Heude et al., 2018), respectively (Figure 4B). In agreement with the E10.5 mesodermal (Mesp1) sc-RNAseq dataset, these progenitors presented a strong dichotomy in Pdgfa and Pdfgra expression between myogenic and non-myogenic cells, respectively (Figure 4\u2014figure supplement 1D). Moreover, RNA velocity suggested more myogenic to non-myogenic conversion (Figure 4A, Figure 4\u2014figure supplement 1E-H). To explore further the cell fate transition in these regions, we used a recently described approach by creating a \u2018Coexpression score\u2019 based on myogenic and non-myogenic signatures (Kameneva et al., 2021) (see Materials and methods, Figure 4C). This analysis revealed that individual cells undergo a progressive switch from myogenic to non-myogenic gene expression along the inferred trajectories, where cells at the transition zone shut off the myogenic program and start activating fibrogenic genes (Figure 4C heatmap).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig4-v3.jpg)\n\n**Figure 4.:** (A\u2013D) scRNAseq analysis of the Myf5Cre/+; Rosa26mTmG/+ E11.5 dataset (2 datasets of 2 embryos were aggregated to generate this data, see Materials and methods). (A) UMAPs of Myf5Cre/+; Rosa26mTmG/+ E11.5 RNA velocity trajectories. (B) Expression plots of Alx4 and Pax3, highlighting EOM and Anterior somite clusters, respectively. (C) Plots of Myogenic and Non-myogenic signatures, Coexpression score and heatmaps of top markers, highlighting the transition population in EOM and anterior somites. Cells are ordered based on their non-myogenic signature score (increasing). The coexpression score is the product of the myogenic and non-myogenic signatures. Cells presenting a coexpression score higher than 0.20 are highlighted in yellow. These cells represent the transition between the myogenic and non-myogenic fates. (D) UMAP of the EOM subset revealing the bipartite fate of Myf5-expressing cells. (E-G\u2019) RNAscope on Myf5Cre/+; Rosa26mTmG/+ E14.5 tissue sections with Pdgfra (cyan) and Pdgfa (red) probes (E-E\u2019\u2019), Bmprb1 (red) and Bmp4 (cyan) probes (F-F\u2019) and Ephb1 (red) and Efnb1 (cyan) probes (G-G\u2019). Myf5-derived cells are labelled by membrane GFP staining (n = 3 embryos each). Red and yellow arrowheads indicate Myf5-derived myogenic and non-myogenic cells respectively. The dotted lines highlight the boundary of the muscle masses. (H) Quantification of the Ligand-Receptor scores for each pair (see Materials and methods). Note that these ratios are negative in the case of Bmp and Eph (signaling from non-myogenic to myogenic) but positive for Pdgf (signaling from myogenic to non-myogenic). (G) Model of myogenic and non-myogenic cell communication following bifurcation from a bipotent cell.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Gating strategy used to isolate by FACS Myf5Cre/+; Rosa26mTmG/+ cells. The Alexa Fluor 488 channel was used to identify GFP+ cells. The Alexa Fluor 405 channel was used to identify the Calcein Blue+ live cells. The PE-Texas Red channel was used to discard mTomato+ cells (non recombined) and Propidium Iodide+ cells. The percentage of cells captured by each gate is displayed on each plot. (B) Violin plots of gene count, UMI count and mitochondrial fraction for overall dataset. (C) Violin plots of gene count and UMI count by cluster. (D) Expression patterns of Myf5, Myod, Myog, Pdgfa, Pdgfra, and Col1a1 in the Myf5Cre/+; Rosa26mTmG/+ E11.5 dataset. Note that Myf5+ cells were overwhelmingly Pdgfra- and Myf5+/Pdgfra+ cells represent 5.5% of all cells (i.e. expressing at least one transcript of both genes). Pdgfra+ cells represent 56% of all cells. (E) UMAP of Myf5Cre/+; Rosa26mTmG/+ E11.5 with overlaid velocity and cell cycle phase. (F\u2013H) Quality control metrics of scvelo, including velocity length, velocity confidence and spliced/unspliced abundance in overall dataset and by cluster (n = 2 pooled datasets).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) GO Molecular Function network of top 100 driver genes of the Myf5Cre/+; Rosa26mTmG/+ E11.5 EOM dataset (see Table 1), including relative contribution of each cluster (myogenic and non-myogenic) to the term and significance levels. Insert show the significance of each term. (B) UMAPs of the Myf5Cre/+; Rosa26mTmG/+ E11.5 EOM dataset showing the expression of kinase ligands (left side) and the velocity of their corresponding receptors (right side). Note the complementary patterns of the L/R pairs (n = 2 pooled datasets).\n\nTo investigate in more detail potential paracrine cell-cell communication between myogenic and non-myogenic cells, we examined their expression patterns within the EOM, given its well-defined morphology (Comai et al., 2020), and its strong myogenic/non-myogenic bi-directional cell-fate (Figure 4D). We performed single molecule fluorescent in situ hybridization (RNAscope) for Pdgfa and Pdgfra on E14.5 lineage-traced Myf5Cre/+;Rosa26mTmG/+ fetuses (Figure 4E). In accordance with the scRNAseq analysis, we observed cells exhibiting a mostly non-overlapping, complementary pattern of Pdgfa and Pdgfra transcripts within the Myf5-derived lineage, while retaining anatomical proximity, even at later stages of EOM development.\n\nGene set enrichment analysis of EOM myogenic and non-myogenic driver genes showed that transmembrane receptor protein kinase and SMAD activity were shared terms between the two clusters, suggesting that specific complementary signaling networks could be actively maintained between these two populations (Figure 4\u2014figure supplement 2A). Both signaling pathways were reported to act as inhibitors of myogenic differentiation and could therefore be associated with progenitor cell maintenance (Arnold et al., 2020; Cossu et al., 2000). Notably, Bmpr1b and Ephb1 were among the top 100 driver genes of the myogenic EOM compartment, suggesting that myogenic commitment is associated with upregulation of these kinase receptors in the EOM (Figure 4\u2014figure supplement 2B, Table 1). Strikingly, two of their respective ligands, Bmp4 and Efnb1, were preferentially expressed in non-myogenic cells. Analysis of their expression patterns in E14.5 embryos by RNAscope validated these complementary expression patterns in adjacent muscle and connective tissue domains (Figure 4F\u2013H). These results favor a model where paracrine signaling networks operate between myogenic and non-myogenic Myf5-derived cells (Figure 4I), while their cellular juxtaposition is maintained through fetal stages.\n\n### Obstructing myogenesis expands connective tissue formation from bipotent cells\n\nThe directional trajectories identified by RNA velocity in the EOM at E11.5 showed a strong bidirectionality in fate with a higher velocity confidence index at each end of the myogenic and non-myogenic domains, and lower at their interface (Figure 5\u2014figure supplement 1A). This suggested that cells at the interface are bipotential while cells located on either side of this central region are committed either to a myogenic-or non-myogenic fate. To identify the regulatory factors underlying this potential bipotency, we used SCENIC, a regulatory network inference algorithm (Aibar et al., 2017). This tool allows regrouping of sets of correlated genes into regulons (each regulon consists of a transcription factor and its targets) based on binding motifs and co-expression. The top regulons of this analysis revealed active transcription factors underlying myogenic and non-myogenic cell fates in the EOM at E11.5. Notably, Myf5, Pitx1, Mef2a, and Six1, transcription factors known to be implicated in myogenic development (Buckingham and Rigby, 2014), appeared among the top regulons in myogenic cells whereas Fli1, Ebf1, Ets1, Foxc1, Meis1, and Six2, genes known for their involvement in adipogenic, vascular, mesenchymal and tendon development (Jimenez et al., 2007; L\u00f3pez-Delgado et al., 2020; Noizet et al., 2016; Truong and Ben-David, 2000; Whitesell et al., 2019; Yamamoto-Shiraishi and Kuroiwa, 2013), constituted some of the highly active non-myogenic transcription factors (Figure 5A). Interestingly, recent work uncovered Fli1 as a potential regulator of vascular fate in multipotent myogenic progenitors (Ferdous et al., 2021). Accordingly, we found that Scube1, a gene known for its involvement in vasculature development, was upregulated in the Pdgfra+ non-myogenic fraction of the EOM (Figure 5\u2014figure supplement 1B). RNAscope in situ hybridization confirmed these findings and showed that Scube1 was expressed at the level of the EOM medial attachment at E14.5 (Figure 5\u2014figure supplement 1C-E). In addition, Scube1 was reported to promote BMP signaling (Liao et al., 2016). Thus, the EOM tendon attachment seems to rely on transcription factors and markers that are typically vascular, hence suggesting that some of them are coopted.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig5-v3.jpg)\n\n**Figure 5.:** (A) Heatmap of top regulons (transcription factor and associated targets) of the EOM subset of the Myf5Cre/+; Rosa26mTmG/+ E11.5 dataset. The suffix \u2018_extended\u2019 indicates that the regulon includes motifs that have been linked to the TF by lower confidence annotations, for instance, inferred by motif similarity. Number in brackets indicates number of genes comprising the regulon (n = 2 pooled datasets). (B\u2013C) Transverse sections of Myf5nlacZ/+ (B), and Myf5nlacZ/nlacZ (C) embryos in the EOM region at E12.5 immunostained for \u03b2-gal (green), and Myod/Myog/Pax7 (red). Red arrowheads indicate \u03b2-gal/ Myod/Myog/Pax7 double positive cells in control EOM/Masseter and in mutant Masseter. Asterisk highlights the lack of myogenic progenitors in the EOM region of the mutant embryo, indicated by the absence of Myod/Myog/Pax7 staining. (D-E\u2019) Transverse sections of Myf5nlacZ/+ (D-D'), and Myf5nlacZ/nlacZ (E-E') in the EOM region at E12.5 immunostained for \u03b2-gal (green), Sox9 (red), and Myod/Myog/Pax7 (gray). Yellow arrowheads indicate \u03b2-gal/Sox9 double positive cells and show an expansion of this cell population in the mutant. (F) Quantification of proportion of \u03b2-gal+;Sox9+ double positive cells in the total Sox9+ population of the EOM and Masseter muscles. Each dot is a different sample, the center line of the boxplot is the median value. (n = 3 embryos, p-values were calculated using a two-sided Mann-Whitney U test). (G-I\u2019) Transverse sections of MyodiCre/+; Rosa26TdTomato/+; PdgfraH2BGFP/+ embryos at E14.5 immunostained for Myod/Myog (committed and differentiating myoblasts) in the extraocular (G-G\u2019\u2019), mandibular (H-H\u2019), and back muscles (I-I\u2019). White arrowhead indicates double positive cells (GFP+ TOM+). (J) Quantification of double positive cells (GFP+ TOM+) in EOM, mandibular muscles and back muscles per 100 \u03bcm2 area on MyodiCre/+; Rosa26TdTomato/+; PdgfraH2BGFP/+ sections shown in E-G (n = 4 embryos). (K) Model of lineage progression from bipotent cells in a Myf5 null background.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) UMAP of Myf5Cre/+; Rosa26mTmG/+ E11.5 EOM dataset illustrating velocity confidence and velocity length. Higher confidence is found on both ends of the EOM cluster. (B) Expression pattern of Scube1 in the EOM subset (mostly in the non-myogenic compartment). (C-C\u2019\u2019) Combined RNAscope for Scube1 and Myod/Myog/GFP immunostaining on transverse sections of Myf5Cre/+; Rosa26mTmG/+ at E14.5. (D) Model of the EOM muscle vs EOM origin compartmentalization used for quantification in (E). (E) Quantification of Scube1 signal in each compartment (n = 2 embryos).\n\nGiven that Myf5 appeared itself as a top myogenic regulon (Figure 5A), we interrogated the fate of Myf5-expressing progenitors in a Myf5nlacZ/nlacZ null embryos at E12.5 (Figure 5B\u2013E\u2019). As previously reported, the EOMs are absent in this mutant (Figure 5C, asterisk) (Sambasivan et al., 2009). Interestingly, some \u03b2-gal+ cells were found in the cartilage primordium (Sox9+) of the EOM in the heterozygous control indicating that cells with recent Myf5 activity diverged to this non-myogenic fate (Figure 5D\u2013D'). Notably, disruption of Myf5 activity led to a threefold increase in the proportion of non-myogenic Myf5-derived cells in this region (Figure 5E\u2013F). In contrast, no double-positive cells were found in the masseter, a muscle fully embedded in neural crest-derived connective tissue, even in the absence of Myf5 (Figure 5F). Myf5 expression is thus necessary to maintain a balance between myogenic and non-myogenic cell fates of Myf5+ progenitors only in neural crest-depleted regions. In contrast, very few Pdgfra+ cells were found to be derived from Myod expressing cells in MyodiCre;Rosa26TdTomato/+;PdgfraH2BGFP/+ fetuses at E14.5, particularly in the EOM and the back muscles (about 3 and 1.5 cells per 100 \u03bcm2 of muscle, respectively)(Figure 5G, I, J). Accordingly, the masseter lacked Myod-derived connective tissue cells (Figure 5H and J). These observations indicate that progenitors that bifurcate to myogenic and non-myogenic cell fates are present only in neural-crest depleted regions. This property is associated primarily with Myf5 expression, as subsequent activation of Myod within this lineage appears to lock cell fate into the myogenic program and suppress their connective tissue potential (Figure 5K).\n\n### Myf5-derived connective tissues are observed in fetal stages\n\nAlthough we identified Myf5-derived non-myogenic cells in various regions of the embryo, it was not clear if this population was continuously generated throughout development. To address this issue, we performed two more scRNAseq experiments at E12.5 and E14.5, using contemporary Myf5 labeling, which led to much fewer non-myogenic cells that could be captured (Myf5GFP-P/+; Figure 6, Figure 6\u2014figure supplement 1, Figure 6\u2014figure supplement 2). In accordance with the earlier datasets, some cells that appeared to belong to muscle anlagen of EOM, somites and caudal arches progressed toward a non-myogenic state (Figure 6A\u2013C\u2019). To assess the identity of these cells, we performed a gene set enrichment network analysis combining the differentially expressed genes of non-myogenic clusters of all stages. We found that all stages contributed relatively equally to each \u2018GO Molecular Function\u2019 and \u2018Reactome pathways\u2019 terms despite their relatively diverse gene expression signatures (Figure 6D\u2013E\u2019, Figure 6\u2014figure supplement 3). This suggests that these non-myogenic cells are relatively homogeneous in gene signatures throughout cranial muscles. Highly significant terms hinted at a myogenic-supporting role, providing muscle progenitors with extracellular matrix components, and contributing to neuronal guidance (Figure 6E). Among these terms, presence of Pdgf signalling and receptor kinase activity indicated, once again, that the interactions found in the EOM could occur also at later stages in various craniofacial muscles that are deprived of neural crest derived connective tissue.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig6-v3.jpg)\n\n**Figure 6.:** (A-C') RNA velocity plots of Myf5Cre/+; Rosa26mTmG/+ E11.5, Myf5GFP-P/+ E12.5 and Myf5GFP-P/+ E14.5 datasets (n = 2 pooled datasets, n = 1 embryo and n = 1 embryo, respectively) displaying cell-type annotation (A\u2013C) and myogenic and non-myogenic clustering (A\u2019-C\u2019). The dotted boxes highlight the transitions to non-myogenic clusters in each dataset. (D\u2013E) Gene ontology network of GO Molecular Function and Reactome pathway performed on combined top 100 markers using Cluego. These terms were generated using the sum of all differentially expressed genes of the non-myogenic clusters across all datasets (see Materials and methods). (D\u2019-E\u2019) Relative contribution of each stage to term node represented as piecharts (i.e. the proportion of genes underlying this term coming from that stage). Dotted boxes highlight the shared tyrosine kinase and PDGF signaling pathways.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Gating strategy used to isolate by FACS Myf5GFP-P/+ cells. The FITC channel was used to identify GFP+ cells. The BV421 was used to identify the Calcein Blue+ live cells. The PE-Texas Red channel was used to discard Propidium Iodide+ cells. The percentage of cells captured by each gate is displayed on each plot. (B) Violin plots of gene count, UMI count and mitochondrial fraction for overall dataset. (C) Violin plots of gene count and UMI count by cluster. (D) Expression patterns of Myf5, Myod, Myog, Pdgfa, Pdgfra, and Col1a1 in the Myf5GFP-P/+ E12.5 dataset. Note that Myf5+ cells were overwhelmingly Pdgfra- and Myf5+/Pdgfra+ cells represent 0.5% of all cells (i.e. expressing at least one transcript of both genes). Pdgfra+ cells represent 3% of all cells. (E) UMAP of Myf5GFP-P/+ E12.5 with overlaid velocity and cell cycle phase. (F\u2013H) Quality control metrics of scvelo, including velocity length, velocity confidence and spliced/unspliced abundance in overall dataset and by cluster (n = 1 embryo).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Violin plots of gene count, UMI count and mitochondrial fraction for overall dataset. (B) Violin plots of gene count and UMI count by cluster. (C) Expression patterns of Myf5, Myod, Myog, Pdgfa, Pdgfra, and Col1a1 in the Myf5GFP-P/+ E14.5 dataset. Note that Myf5+ cells were overwhelmingly Pdgfra- and Myf5+/Pdgfra+ cells represent 0.15% of all cells (i.e. expressing at least one transcript of both genes). Pdgfra+ cells represent 7% of all cells (n = 1 embryo). (D) UMAP of Myf5GFP-P/+ E14.5 with overlaid velocity and cell cycle phase (n = 1 embryo). (E\u2013G) Quality control metrics of scvelo, including velocity length, velocity confidence and spliced/unspliced abundance in overall dataset and by cluster (n = 1 embryo).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Gene ontology analysis for Reactome pathways, including genes underlying each term, and their representation in each dataset generated using Cluego based on top 100 differentially expressed genes of the non-myogenic clusters (see Materials and methods, E10.5: n = 2 pooled datasets, E11.5: n = 2 pooled datasets, E12.5: n = 1 embryo and E14.5: n = 1 embryo).\n\n### A novel regulatory network underlies the non-myogenic cell fate\n\nMyf5+ bipotent progenitors were observed at multiple stages and anatomical locations, and they yielded a relatively homogeneous population expressing common markers associated with extracellular matrix components, cell adhesion molecules, and kinase signalling. To assess whether the regulatory mechanisms guiding this transition are distinct in different locations in the head, we set out to explore the common molecular switches underlying cell fate decisions. To do so, we developed a pipeline where we combined the list of driver genes at the start of the non-myogenic trajectory (Table 1) with the most active regulons in the non-myogenic region (Materials and methods, code in open access). This resulted in a network consisting of the most active transcription factors and the most transcriptionally dynamic genes found at the non-myogenic branchpoint. We performed this operation for each dataset independently and displayed them as individual networks (Figure 7\u2014figure supplement 1A-D). Finally, we overlapped the list of these \u2018driver regulators\u2019 to identify the common transcription factors guiding the non-myogenic cell fate decision (Figure 7A). Notably, Foxp2, Hmga2, Meis1, Meox2, and Tcf7l2 were identified in all four scRNAseq datasets as key driver regulators, and thus are likely to play significant role in the non-myogenic transition (Figure 7A, Table 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig7-v3.jpg)\n\n**Figure 7.:** (A) Barplot displaying frequency of appearance of most predominant transcription factors as driver regulators (4 = present in all four datasets as driver regulon, 1 = present in a single dataset). (B-D\u2019\u2019) Transverse sections of an E12.5 Myf5Cre/+; Rosa26TdTomato/+; PdgfraH2BGFP/+ embryo immunostained for Foxp2 at the level of the EOM (B-B\u2019\u2019), Mandibular muscles (C-C\u2019\u2019), and Back muscles (D-D\u2019\u2019). Yellow arrowheads indicated the double positive cells to better appreciate Foxp2 intensity in Myf5-derived cells. (E) Quantification of Foxp2 signal intensity in TOM+ (Myf5-derived) cells in each muscle (n = 3 embryos). Statistical test performed: Mann-Whitney U test. (F) FACS plots of dissected E12.5 Myf5Cre/+; Rosa26TdTomato/+; PdgfraH2BGFP/+ embryos (head region here) highlighting the Myf5-derived GFP- TOM+ population transitioning to the GFP+ TOM+ population. Each plot was generated on the population gated in the previous one (\u2018Singlets\u2019, \u2018TOM+\u2019 and \u2018NonFaps\u2019). FAPS:Fibroadipogenic progenitors, a denomination for resident Pdgfra+ cells. (G) Quantification of the transitioning population in Head, Limb and Trunk. Proportion of transitioning cells is calculated as the number of Alexa488+/Total cell number in the \u2018NonFAPs\u2019 gate. Note that the Head region is mostly populated by muscles embedded in neural crest (n = 5 embryos). TOM: TdTOMATO.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013D) Driver genes and regulatory networks (regulons) were produced for each stage independently, and a stage-specific network of active transcription factor and associated driver gene targets was built (n = 2 pooled datasets, n = 2 pooled datasets, n = 1 embryo and n = 1 embry, respectively). The size of nodes corresponds to the number of edges (connections) they have, i.e. the number of driver genes the transcription factor regulates. (E\u2013H) Dotplot of the expression levels and percent of Axin2 and Dkk2 in the myogenic and the non-myogenic portions of all four datasets.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70235/elife-70235-fig7-figsupp2-v3.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Model for bipotent Myf5+/Pdgfa+ progenitors giving rise to myogenic and non-myogenic cells; discrete parts of the head deprived of neural crest are indicated. Upon activation of a set of transcription factors including Prrx1/2, Foxp2, Hmga2, Meis1, Meox2, Fli1, Twist1, Ets1, Tcf7l2, and Tcf4, a fibrogenic fate is acquired. A molecular dialogue is initiated at the branchpoint including extracellular matrix components and kinase signalling such as Pdgf, Ephrins, and Bmps. The non-myogenic fate may be maintained cell-autonomously by a canonical Wnt-positive feedback loop.\n\n**Table 2.**\n Driver regulators of non-myogenic fate in each dataset.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>E10.5</th>\n      <th>E11.5</th>\n      <th>E12.5</th>\n      <th>E14.5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Foxp2</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Hmga2</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Meis1</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Meox2</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Tcf7l2</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Fli1</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Lef1</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Prrx1</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Prrx2</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Six2</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Creb3l1</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Ebf1</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Ets1</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Foxp4</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Hoxb3</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Klf6</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Nfatc4</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Nfib</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Pax7</td>\n      <td>(-)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Pbx1</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Rreb1</td>\n      <td>(-)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Tbx15</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Tcf4</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Twist1</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Zic4</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Zmiz1</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Ar</td>\n      <td>(-)</td>\n      <td>(-)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Arid5b</td>\n      <td>(-)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n      <td>(-)</td>\n    </tr>\n    <tr>\n      <td>Atf3</td>\n      <td>(-)</td>\n      <td>(-)</td>\n      <td>(-)</td>\n      <td>(+)</td>\n    </tr>\n    <tr>\n      <td>Chd2</td>\n      <td>(+)</td>\n      <td>(-)</td>\n      <td>(-)</td>\n      <td>(-)</td>\n    </tr>\n  </tbody>\n</table>\n\n_(+): Present, (-): Absent._\n\nForkhead box transcription factors FOXC1 and FOXC2 were reported to regulate the balance between myogenic and vascular lineages within somites (Lagha et al., 2009; Mayeuf-Louchart et al., 2016). Interestingly, Foxc1 has been reported to promote both cranial vasculature and cranial cartilage development in zebrafish (Whitesell et al., 2019; Xu et al., 2021). FOXP2 immunostaining on Myf5Cre/+;Rosa26TdTom/+;PdgfraH2BGFP/+ E12.5 embryos showed that the Myf5-derived EOM cells expressed a relatively high level of Foxp2 compared to mandible and trunk muscles, consistent with their apparent high contribution to connective tissue (Figure 7B\u2013E).\n\nTo gain further insights into the transitioning population, we performed FACS analysis of dissected head, limb and trunk regions of Myf5Cre/+;Rosa26TdTom/+;PdgfraH2BGFP/+ embryos at E12.5 (Figure 7F\u2013G). We focused on TOM+ cells (Myf5-lineage) and assessed their GFP expression levels as a readout of their commitment toward connective tissue. This analysis identified non-FAPs cells (GFPlow) transitioning towards a Pdgfra+ state in head and trunk regions but very few in the limb (Figure 7G). Interestingly, while trunk muscles presented the largest portion of transitioning cells (40%), a similar transitioning population was noted in the head (20%) despite a large contribution of NCC to head connective tissues. Thus, cardiopharyngeal mesoderm may have a superior potential to give rise to connective tissue compared to somite-derived progenitors in the limb (1.5%).\n\nIn addition, Tcfs and Lef1 were among the top common regulators identified, and they form a complex effector for the canonical Wnt pathway. Previous work showed that during cranial myogenesis, neural crest cells release inhibitors of the Wnt pathway to promote myogenesis (Tzahor et al., 2003). It is thus tempting to speculate that in the absence of neural crest, mesoderm-derived progenitors can give rise to connective tissue by maintaining canonical Wnt activity. To test this hypothesis, we examined the expression of Axin2, a common readout for Wnt/\u03b2-cat activity (Babb et al., 2017; van de Moosdijk et al., 2020). Interestingly, Axin2 levels were elevated in the non-myogenic portion of all the different datasets (Figure 7\u2014figure supplement 1E-H). Additionally, Dkk2, which has been described as an activator of Wnt/\u03b2-cat pathway in the neural crest (Devotta et al., 2018), was also found to be elevated, indicative of a putative positive-feedback loop mechanism supporting the maintenance of this population.\n\n## Discussion\n\nDistinct fates can emerge through the specification of individual cell types, or through direct lineage ancestry from bipotent or multipotent cells. Here, we addressed this issue in the context of the emergence of myogenic and associated connective tissue cells during the formation of craniofacial muscles. By combining state-the-art computational methods and in-situ analyses, we identified the transcriptional dynamics, the intercellular communication networks, and the regulators controlling the balance between complementary cell fates. Specifically, our work provides evidence for a novel mesoderm-derived bipotent cell population that gives rise to muscle and associated connective tissue cells spatiotemporally, and only in regions deprived of neural crest cells (Figure 7\u2014figure supplement 2).\n\nBrown adipocytes, neurons, pericytes, and rib cartilage have been reported to express Myf5 in ancestral cells (Daubas et al., 2000; Haldar et al., 2008; Sebo et al., 2018; Stuelsatz et al., 2014). Interestingly, when Myf5 expression is disrupted, cells can acquire non-myogenic fates and contribute to connective tissue (this study), cartilage, and dermis (Tajbakhsh et al., 1996), while others remain apparently undifferentiated (cells labeled with an asterisk in Figure 5C). It is likely that these cells are undergoing apoptosis as reported previously (Sambasivan et al., 2009). These studies suggest that Myf5-expression alone is not sufficient to promote robust myogenic fate in multiple regions of developing embryos. Consistent with these observations, Myod+ cells do not contribute to rib cartilage (Wood et al., 2020) and give rise to few connective tissue cells in the periocular and back regions (this study). These findings are also consistent with the role of Myod in defining the committed myogenic cell state and its higher chromatin-remodelling capacity compared to Myf5 (Conerly et al., 2016; Tapscott, 2005). In contrast to a previous study (Stuelsatz et al., 2014), we found no neural-crest derived cells expressing Myf5 during EOM tissue genesis at E13.5 (using Wnt1Cre/+;Rosa26mTmG/+;Myf5nlacZ/+). We note that Myf5-expressing cells contribute to non-myogenic cells from early embryonic stages (E10.5) and continue to do so in the fetus, indicating that these bipotent cells persist well after muscles are established.\n\nHere, we also identifed a core set of transcription factors specifically active in the non-myogenic cells across all datasets. We propose that these genes guide bipotent cells to a non-myogenic fate and thus confer mesenchymal properties to non-committed progenitors. Recent studies have identified anatomically distinct fibroblastic populations using single-cell transcriptomics, yet unique markers could not be identified (Muhl et al., 2020; Sacchetti et al., 2016), making characterisation of cell subtypes challenging. Tcf4/Tcf7l2 was identified as a master regulator of fibroblastic fate during muscle-associated connective tissue development, although it is also expressed in myogenic progenitors at lower levels (Kardon et al., 2003; Mathew et al., 2011; Sefton and Kardon, 2019). We also report that this gene is one of the main regulators of connective tissue fate. Other transcription factors have been linked to skin fibroblast fates including Tcf4, Six2, Meox2, Egr2, and Foxs1, and their repression favors a myofibroblastic potential (Noizet et al., 2016). Six2 and Meox2 were also identified in our analysis, which raises the question of the shared genetic programs between myofibroblastic cells and fibroblastic cells derived from progenitors primed for myogenesis during development.\n\nInterestingly, Prrx1, a marker for lateral plate mesoderm (Durland et al., 2008), was differentially expressed in the connective tissue population at various stages. Although lateral plate mesoderm is identifiable in the trunk, its anterior boundaries in the head are unclear (Prummel et al., 2020). More detailed analyses of Prrx1, Isl1, and Myf5 lineages need to be carried out to delineate the specific boundaries of each progenitor contribution to cranial connective tissues.\n\nKinase receptors have been implicated in a number of developmental programs for both muscle and associated connective tissues (Arnold et al., 2020; Knight and Kothary, 2011; Olson and Soriano, 2009; Tallquist et al., 2000; Tzahor et al., 2003; Vinagre et al., 2010). For example, the differentiation of fetal myoblasts is inhibited by growth factors Tgf\u03b2 and Bmp4 (Cossu et al., 2000). Epha7 signaling is active in embryonic and adult myocytes and promotes their differentiation (Arnold et al., 2020). Significantly, we noticed a striking and lasting complementary expression of Pdgfa and Pdgfra throughout embryonic stages, in the myogenic and non-myogenic progenitors respectively. Pdgf ligands emanating from hypaxial myogenic cells under the control of Myf5 were shown to be necessary from rib cartilage development (Tallquist et al., 2000; Vinagre et al., 2010). Additionally, Pdgfra promotes expansion of fibroblasts during fibrosis (Olson and Soriano, 2009). Interestingly, we found that Pdgfa expression was reduced in cells expressing high levels of Myog at the fetal stage (Figure 6\u2014figure supplement 2C). Therefore, Myf5-derived myogenic progenitor cells might guide non-myogenic Myf5-derived expansion, which in turn provides ligands and extracellular matrix components to favor myogenic development and patterning. Moreover, unlike trunk myogenesis, cranial muscle development relies on the expression of Wnt and Bmp inhibitors from surrounding tissues (Tzahor et al., 2003). Interestingly, we showed that the Myf5-derived non-myogenic cells express Bmp4, Dkk2, and Axin2. Additionally, we showed that the Wnt effector complex Tcf/Lef is expressed to a lower extent in these cells. It is thus likely that these cells maintain their non-myogenic fate by promoting Bmp production and Wnt activity cell-autonomously.\n\nOf note, another study suggested shared fate relationships between fibroblast connective tissue cells and skeletal muscle where fibroblastic cells commit to myogenic fate during limb development (Esteves de Lima et al., 2021). Regarding the possibility that some non-myogenic cells may retain bipotent characteristics, our data suggests that the opposite is true during cranial muscle development. First, RNA velocity analysis did not reveal transitioning cells from non-myogenic clusters to myogenic (even at early stages), nor do they express myogenic markers. Further, at least some of these non-myogenic cells gave rise to chondrocytes, which to our knowledge has never been shown to give rise to skeletal muscle. Additionally, bipotency appears to be more associated with myogenic cells since they express Myf5, and to a minor extent Myod. Finally, we did not observe NCC-derived Myf5+ cells indicating that connective tissue in the head does not give rise to muscle. Nevertheless, to formally exclude the possibility of connective tissue progenitors giving rise to muscle in the embryo, analysis of appropriate markers would need to be done (ex. Pdgfra-driven lineage). Further studies should provide insights into the evolutionary ancestry of progenitors that bifurcate to give rise to myogenic and connective tissue cells by studying other model organisms that are devoid of neural crest cells.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>B6D2F1/JRj</td>\n      <td>Janvier</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Myf5Cre</td>\n      <td>PMID:17418413</td>\n      <td>MGI:3710099</td>\n      <td>Dr. Mario R Capecchi (Institute of Human Genetics, University of Utah, USA)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Wnt1Cre</td>\n      <td>PMID:9843687</td>\n      <td>MGI:J:69326</td>\n      <td>Pr. Andrew P. McMahon (Keck School of Medicine of the University of Southern California, USA)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Mesp1Cre</td>\n      <td>PMID:10393122</td>\n      <td>MGI:2176467</td>\n      <td>Pr. Yumiko Saga (National Institute of Genetics, Japan)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Myf5nlacZ</td>\n      <td>PMID:8918877</td>\n      <td>MGI:1857973</td>\n      <td>Dr. Shahragim Tajbakhsh (Department of Developmental and Stem Cell Biology, Institut Pasteur, France)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Rosa26tdTomato</td>\n      <td>PMID:20023653</td>\n      <td>MGI:3809524</td>\n      <td>Dr. Hongkui Zeng (Allen Institute for Brain Science, USA)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Rosa26mT/mG</td>\n      <td>PMID:17868096</td>\n      <td>MGI:3716464</td>\n      <td>Pr. Philippe Soriano (Icahn School of Medicine at Mt. Sinai, USA)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>PdgfraH2BGFP</td>\n      <td>PMID:12748302</td>\n      <td>MGI:2663656</td>\n      <td>Pr. Philippe Soriano (Icahn School of Medicine at Mt. Sinai, USA)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>MyodiCre</td>\n      <td>PMID:19464281</td>\n      <td>MGI:3840216</td>\n      <td>Pr. David Goldhamer (University of Connecticut, USA)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Myf5GFP-P</td>\n      <td>PMID:15386014</td>\n      <td>MGI:3055340</td>\n      <td>Dr. Shahragim Tajbakhsh (Department of Developmental and Stem Cell Biology, Institut Pasteur, France)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sucrose,for molecular biology, \u2265 99.5% (GC)</td>\n      <td>Sigma-Aldrich</td>\n      <td>S0389-500G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Gelatin</td>\n      <td>Sigma-Aldrich</td>\n      <td>G-7041</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Foxp2 5C11A8 (Mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>SC-517261</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b2-gal (Chicken polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat. #: ab9361 RRID:AB_307210</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b2-gal (Rabbit polyclonal)</td>\n      <td>MP Biomedicals</td>\n      <td>Cat. #: MP 559761 RRID:AB_2687418</td>\n      <td>IF (1:1500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (Chicken polyclonal)</td>\n      <td>Aves Labs</td>\n      <td>Cat. #: 1020 RRID:AB_10000240</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (Chicken polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat. #: 13970 RRID:AB_300798</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Myod (Mouse monoclonal)</td>\n      <td>Dako</td>\n      <td>Cat. #: M3512 RRID:AB_2148874</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Myod (Mouse monoclonal)</td>\n      <td>BD-Biosciences</td>\n      <td>Cat. #: 554130 RRID:AB_395255</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Pax7 (Mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat. #: Pax7 RRID:AB_528428</td>\n      <td>IF (1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Myog (Mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat. #: F5D RRID:AB_2146602</td>\n      <td>IF (1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 633 F(ab')2 Fragment of Goat Anti-Rabbit IgG (H + L) (polyclonal antibody)</td>\n      <td>Life Technologies</td>\n      <td>Cat. #: A-21072 RRID:AB_2535733</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 555 F(ab')2 Fragment of Goat Anti-Rabbit IgG (H + L) (polyclonal antibody)</td>\n      <td>Life Technologies</td>\n      <td>Cat. #: A-21430 RRID:AB_2535851</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488 F(ab')2 Fragment of Goat Anti-Rabbit IgG (H + L) (polyclonal antibody)</td>\n      <td>Life Technologies</td>\n      <td>Cat. #: A-11070 RRID:AB_2534114</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 633 Goat Anti-Chicken IgG (H + L) (polyclonal antibody)</td>\n      <td>Life Technologies</td>\n      <td>Cat. #: A-21103 RRID:AB_2535756</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488 Goat Anti-Chicken IgG (H + L) (polyclonal antibody)</td>\n      <td>Life Technologies</td>\n      <td>Cat. #: A-11039 RRID:AB_2534096</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 633 Goat Anti-Mouse IgG1 (\u03b31) (polyclonal antibody)</td>\n      <td>Life Technologies</td>\n      <td>Cat. #: A-21126 RRID:AB_2535768</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor488 AffiniPure Goat Anti-Mouse IgG1 (\u03b31) (polyclonal antibody)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat. #: 115-545-205 RRID:AB_2338854</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cy3-AffiniPure Goat Anti-Mouse IgG1 (\u03b31) (polyclonal antibody)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat. #: 115-165-205 RRID:AB_2338694</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cy3-AffiniPure Goat Anti-Mouse IgG2a (\u03b32a) (polyclonal antibody)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat. #: 115-165-206 RRID:AB_2338695</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Dylight 405 Goat Anti-Mouse IgG2a (\u03b32a) (polyclonal antibody)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat. #: 115-475-206 RRID:AB_2338800</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Hoechst 33,342</td>\n      <td>Thermo Scientific</td>\n      <td>Cat. #:H3570</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope Multiplex Fluorescent reagent Kit-V2</td>\n      <td>ACD/Bio-techne</td>\n      <td>Cat. #: 323100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope H202 &amp; Protease Plus Reagents</td>\n      <td>ACD/Bio-techne</td>\n      <td>Cat #: 322330</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Opal 650 Reagent Pack</td>\n      <td>PerkinElmer</td>\n      <td>Cat. #: FP1496001KT</td>\n      <td>1:1,500 of reconstituted reagent in RNAscope Multiplex TSA Buffer</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Opal 570 Reagent Pack</td>\n      <td>PerkinElmer</td>\n      <td>Cat. #: FP1488001KT</td>\n      <td>1:1,500 of reconstituted reagent in RNAscope Multiplex TSA Buffer</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope Mm-Pdgfa</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Cat #:411361</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope Mm-Pdgfra</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Cat #:480661-C2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope Mm-Bmpr1b</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Cat #:533941</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope Mm-Efnb1</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Cat #:526761</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope Mm-Bmp4-O1-C3</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Cat #:527501-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope Mm-Ephb1-C3</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Cat #:567571-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope Mm-Scube1</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Cat #:488131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Paraformaldehyde</td>\n      <td>Electron Microscopy Sciences</td>\n      <td>Cat. #: 15710</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Isopentane</td>\n      <td>VWR</td>\n      <td>Cat. #: 24872.298</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Triton X-100</td>\n      <td>Sigma</td>\n      <td>Cat. #: T8787</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tween 20</td>\n      <td>Sigma</td>\n      <td>Cat. #: P1379</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TrypLE</td>\n      <td>ThermoFisher</td>\n      <td>Cat #: 12604013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Calcein Blue</td>\n      <td>eBioscience</td>\n      <td>Cat #: 65-0855-39</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Propidium Iodide</td>\n      <td>ThermoFisher</td>\n      <td>Cat #: P1304MP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Chromium Next GEM Chip G Single Cell Kit, 16 rxns</td>\n      <td>10 X Genomics</td>\n      <td>Cat #: 1000127</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Chromium Next GEM Single Cell 3' GEM, Library &amp; Gel Bead Kit v3.1, 4 rxns</td>\n      <td>10 X Genomics</td>\n      <td>Cat #:1000128</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>NextSeq 500/550 High Output Kit v2.5</td>\n      <td>Illumina</td>\n      <td>Cat #: 20024906</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Agilent High Sensitivity DNA Kit</td>\n      <td>Agilent</td>\n      <td>Cat #:5067\u20134626</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Agilent High Sensitivity DNA Reagents</td>\n      <td>Agilent</td>\n      <td>Cat #:5067\u20134627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Qubit dsDNA HS Assay Kit</td>\n      <td>Life Technologies</td>\n      <td>Cat #:Q32854</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RStudio</td>\n      <td>Rstudio</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Anaconda</td>\n      <td>Anaconda Inc</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Zen</td>\n      <td>Zeiss</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cytoscape</td>\n      <td>Cytoscape Team</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>Johannes Schindelin, Ignacio Arganda-Carreras, Albert Cardona, Mark Longair, Benjamin Schmid, and others</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad Software</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo</td>\n      <td>FlowJo</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### scRNAseq data generation\n\nFor E10.5 to E12.5 embryos, the cranial region above the forelimb was dissected in ice-cold 3% FBS in PBS and mechanically dissociated with forceps and pipetting. The same procedure was applied at E14.5 but the dissection was refined to the pharyngeal and laryngeal regions. Tissues were then digested in TrypLE (ThermoFisher Cat #: 12604013) during 3 rounds of 5 min incubation (37 \u00b0C, 1400 RPM), interspersed with gentle pipetting to further dissociate the tissue. Cells were resuspended in FBS 3%, filtered, and incubated with Calcein Blue (eBioscience, Cat #: 65-0855-39) and Propidium Iodide (ThermoFisher Cat #: P1304MP) to check for viability. Viable cells were sorted on BD FACS Aria III and manually counted using a hemocytometer. RNA integrity was assessed with Agilent Bioanalyzer 2,100 to validate the isolation protocol prior to scRNAseq (RIN >8 was considered acceptable). A total of 4000\u201313,000 cells were loaded onto 10 X Genomics Chromium microfluidic chip and cDNA libraries were generated following manufacturer\u2019s protocol. Concentrations and fragment sizes were measured using Agilent Bioanalyzer and Invitrogen Qubit. cDNA libraries were sequenced using NextSeq 500 and High Output v2.5 (75 cycles) kits. Genome mapping and count matrix generation were done following 10X Genomics Cell Ranger pipeline.\n\n### RNA velocity and driver genes\n\nRNA velocity analyses were performed using scvelo (Bergen et al., 2020) in Python. This tool allows inferring velocity flow and driver genes using scRNAseq data, with major improvements from previous methods (La Manno et al., 2018). First, unspliced and spliced transcript matrices were generated using velocyto (La Manno et al., 2018) command line function, which outputs unspliced, spliced, and ambiguous matrices as a single loom file. These files were combined with filtered Seurat objects to yield objects with unspliced and spliced matrices, as well as Seurat-generated annotations and cell-embeddings (UMAP, tSNE, PCA). These datasets were then processed following scvelo online guide and documentation. Velocity was calculated based on the dynamical model (using scv.tl.recover_dynamics(adata), and scv.tl.velocity(adata, mode=\u2019dynamical\u2019)) and when outliers were detected, differential kinetics based on top driver genes were calculated and added to the model (using scv.tl.velocity(adata, diff_kinetics = True)). Specific driver genes were identified by determining the top likelihood genes in the selected cluster. The lists of top 100 drivers for each stage are given in Table 1.\n\n### Data processing\n\nscRNAseq datasets were preprocessed using Seurat in R (https://satijalab.org/seurat/) (Butler et al., 2018). Cells with more than 20% of mitochondrial gene fraction were discarded. The number of genes expressed averaged to 4000 in all four datasets. Dimension reduction and UMAP generation were performed following Seurat workflow. Doublets were inferred using DoubletFinder v3 (McGinnis et al., 2019). Cell cycle genes, mitochondrial fraction, number of genes, number of UMI were regressed in all datasets following Seurat dedicated vignette. We noticed that cell cycle regression, although clarifying anatomical diversity, seemed to induce low and high UMI clustering (Figure 4A, Figure 4\u2014figure supplement 1C). For the E10.5 and E11.5 datasets, two replicates were generated from littermates and merged after confirming their similitude. For subsequent datasets (E12.5 and E14.5), no replicates were used. Annotation and subsetting were also performed in Seurat. \u2018Myogenic\u2019 and \u2018Non-myogenic\u2019 annotations were based on Pdgfa and Pdgfra expression and myogenic genes Myf5, Myod, and Myog. Cells not expressing Pdgfa were annotated as \u2018non-myogenic\u2019 unless they express myogenic genes. Cells expressing Pdgfa were annotated as \u2018myogenic\u2019. We noticed that at later stages, Pdgfa expression decreases in Myog+ cells. Driver genes of connective tissue at E12.5 and E14.5 were determined using cluster annotations obtained from Leiden-based clustering. Myogenic and non-myogenic scores were generated by aggregating the total expression of all genes in a signature based on the top 10 markers of these compartments (visible on Figure 4C). Each score was then divided by the sum of the two to generate myogenic and non-myogenic signatures. The coexpression score was defined by the product of these signatures. To generate the plots, cells were ordered based on their non-myogenic signature. The \u2018transition\u2019 was defined as cells with a coexpression score higher than 0.20.\n\n### Gene regulatory network inference\n\nGene regulatory networks were inferred using SCENIC (R implementation) (Aibar et al., 2017) and pySCENIC (Python implementation) (Van de Sande et al., 2020). This algorithm allows regrouping of sets of correlated genes into regulons (i.e. a transcription factor and its targets) based on motif binding and co-expression. UMAP and heatmap were generated using regulon AUC matrix (Area Under Curve) which refers to the activity level of each regulon in each cell. We used two cisTarget databases: \u2018mm9-500bp-upstream-7species.mc9nr\u2019 (500 bp upstream of TSS) and \u2018mm9-tss-centered-10kb-7species.mc9nr\u2019 (10kb \u00b1TSS).\n\n### Driver regulons\n\nResults from SCENIC and scvelo were combined to identify regulons that could be responsible for the transcriptomic induction of driver genes. Similarly to the steps mentioned above, SCENIC lists of regulons were used to infer connections between transcription factors and driver gene. Networks were generated as explained above and annotated with \u2018Active regulon\u2019 or \u2018driver gene\u2019. The lists of individual driver regulons of each dataset were then combined and the most recurring driver regulons were identified. The code is available at this address: https://github.com/TajbakhshLab/DriverRegulators, (copy archived at swh:1:rev:49db57e7ede9f248de937b7a47eb96b02aa2ce67; Grimaldi, 2021).\n\n### Gene set enrichment analysis\n\nGene set enrichment analyses were performed on either the top markers (obtained from Seurat function FindAllMarkers) or from driver genes (obtained from scvelo), using Cluego (Bindea et al., 2009). \u2018GO Molecular Pathway\u2019, \u2018GO Biological Process\u2019 and \u2018Reactome pathways\u2019 were used independently to identify common and unique pathways involved in each dataset. In all analyses, an enrichment/depletion two-sided hypergeometric test was performed and p-values were corrected using the Bonferroni step down method.\n\n### Mouse strains\n\nAnimals were handled as per European Community guidelines and the ethics committee of the Institut Pasteur (CETEA) approved protocols (APAFIS#6354\u201320160809 l2028839). The following strains were previously described: Myf5Cre\u2009(Haldar et al., 2008), MyodiCre (Kanisicak et al., 2009), Mesp1Cre (Saga et al., 1999), Tg:Wnt1Cre (Danielian et al., 1998), Rosa26TdTom (Ai9; Madisen et al., 2010), Rosa26mTmG (Muzumdar et al., 2007), Myf5nlacZ (Tajbakhsh et al., 1996), PdgfraH2BGFP (Hamilton et al., 2003) and Myf5GFP-P (Kassar-Duchossoy et al., 2004). To generate Myf5Cre/+;Rosa26TdTomato/+;PdgfraH2BGFP/+embryos, Myf5Cre/+ females were crossed with PdgfraH2BGFP/+;Rosa26TdTomato/TdTomato males. Mice were kept on a mixed genetic background C57BL/6JRj and DBA/2JRj (B6D2F1, Janvier Labs). Mouse embryos and fetuses were collected between embryonic day (E) E10.5 and E14.5, with noon on the day of the vaginal plug considered as E0.5.\n\n### Immunofluorescence\n\nCollected embryonic and adult tissues were fixed 2.5 h in 4% paraformaldehyde (Electron Microscopy Sciences, Cat #:15710) in PBS with 0.2\u20130.5% Triton X-100 (according to their stage) at 4 \u00b0C and washed overnight at 4 \u00b0C in PBS. In preparation for cryosectioning, embryos were equilibrated in 30% sucrose in PBS overnight at 4 \u00b0C and embedded in OCT. Cryosections (16\u201320 \u00b5m) were left to dry at RT for 30 min and washed in PBS. For Foxp2 immunostaining (Santa Cruz Cat. #: SC-517261), embryos were first equilibrated in 15% sucrose overnight, then in a 15% sucrose/7.5% gelatin solution at 37 \u00b0C the next day and embedded in the same solution the following day. Blocks were then kept at 4 \u00b0C in a humid environment and trimmed, before being submerged in liquid nitrogen-cooled isopentane at \u201360 \u00b0C to freeze. After cryosectioning, slides were washed twice for 15 min each at 37 \u00b0C inPBS to remove the gelatin. The primary antibodies used in this study are chicken polyclonal anti-\u03b2-gal (Abcam, Cat #: ab9361, dilution 1:1000), mouse monoclonal IgG1 anti-Myod (BD Biosciences, Cat# 554130, dilution 1:100), mouse monoclonal IgG1 anti-Pax7 (DSHB, Cat. #: AB_528428, dilution 1:20), rabbit anti-mouse Sox9 (Millipore, Cat. #: AB5535, dilution 1/2000), rabbit polyclonal anti-Tomato (Clontech Cat. #: 632496, dilution 1:400) and chicken polyclonal anti-GFP (Abcam Cat. #: 13970, dilution 1:1000). Images were acquired using Zeiss LSM780 or LSM700 confocal microscopes and processed using ZEN software (Carl Zeiss). Control and mutant embryos were selected randomly, quantifications were performed blindly by hiding the discriminating channels. Quantifications were performed using Fiji (https://imagej.net/software/fiji/). Barplots, dotplots and boxplots were generated using Seaborn (https://seaborn.pydata.org; https://seaborn.pydata.org/) or Prism (https://www.graphpad.com/scientific-software/prism/). For the Myf5Cre/+;Rosa26TdTomato/+;PdgfraH2BGFP/+ embryos, 4 regions were manually defined across the medio-lateral axis. For each region, the absolute number of double-positive cells within the defined area was divided by the total number of GFP+ cells which was determined first, and blindly (with the TOMchannel disabled). For the MyodiCre lineage-tracing experiment, the absolute number of double positive cells were counted and divided by the area of the muscle given by the TOM channel. These \u2018number of cells/area\u2019 scores were then corrected based on the size of the image in microns, and adjusted to match an area of 100 \u03bcm2 of muscle. To quantify the intensity of Foxp2 immunostaining, we first generated ROIs of the Myf5-derived cells based on the TOM channels as previously mentioned and extracted the mean pixel value. All images were acquired using the exact same settings for a given embryo.\n\n### RNAscope in situ hybridization\n\nEmbryos for in situ hybridization were fixed overnight in 4% PFA. Embryos were equilibrated in 30% sucrose in PBS and sectioned as described for immunofluorescence. RNAscope probes Mm-Pdgfa (411361), Mm-Pdgfra (480661-C2), Mm-Bmpr1b (533941), Mm-Efnb1 (526761), Mm-Bmp4-O1-C3 (527501-C3), Mm-Ephb1-C3 (567571-C3) and Mm-Scube1 (488131) were purchased from Advanced Cell Diagnostics, Inc. In situ hybridization was performed using the RNAscope Multiplex Fluorescent Reagent Kit V2 as described previously (Comai et al., 2019). Quantifications were performed using Fiji (https://imagej.net/software/fiji/). 2 ROIs were first defined visually using the GFP channel: \u2018myogenic\u2019 and \u2018non-myogenic\u2019. The channels containing the RNAscope signals were then thresholded to obtain binary images, and measurement of the \u2018Area%\u2019 was performed for each ROI. For each probe, we generated a ratio of myogenic to non-myogenic signal. The ratio of each receptor was then substracted from the ratio of each corresponding ligand.\n",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "f05b25da-60cb-4d34-bb2e-84c199a0b04b",
+      "submission_id": "7a56f3ca-be52-46f6-ac04-69f48c5e6773",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70235.sa0](https://doi.org/10.7554/eLife.70235.sa0)\n\nThis study combines sophisticated lineage tracing and single-cell RNAseq analysis to provide insights into cell fate decision in myogenesis and fibrogenesis. The paper will be of interest to a broad audience of developmental biologists, as it provides evidence for a population of novel bipotent cells, which possess a signature of both muscle and connective tissue.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70235.sa1](https://doi.org/10.7554/eLife.70235.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Identification of bipotent progenitors that give rise to myogenic and connective tissues in mouse\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Peter Currie (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers found the paper interesting and potentially acceptable after revisions, including better descriptions of the scRNAseq by refining some of the in silico analyses and providing better quantitation. Currently, there is too much emphasis placed on possible signaling cross-talk which are not validated. While functional validation would be helpful, this seems like a minor aspect of the paper which could be reduced and toned down. The main contribution is the identification of myf5 positive progenitors able to contribute to the fibroblastic lineage. The full comments of the reviewers are provided below to help you in revising the paper.\n\nReviewer #1 (Recommendations for the authors):\n\nOverall, this is a very interesting study and the conclusions of the paper are consistent with their presented data. The work will be of interest for the readership of eLife.\n\nThere are some concerns I have that require some additional clarification:\n\nOverall, the description of the scRNAseq and the velocity analysis could be improved and for instance the criteria to decide whether a population is myo or fibrogenic should be better explained in the text.\n\nIn figure 1B, lung and foregut precursors are identified whereas the population was sorted based on Mesp1 previous expression which labels the mesoderm. Are these mesodermal components of the lung and foregut?\n\nThe myogenic nature of the cells could be better described and illustrated on figure 1 and 2 and the expression pattern of myf5 in the different clusters would help. It would also be helpful to show the expression pattern of PDGFRA on the UMAPs as this is a key gene in this study. The Myogenic gene set shown in Figure 1F does not include many myogenic genes (except maybe Tnnt1), could the authors comment on why this is?\n\nIn the working model of fate decision, the bipotent cells have a signature of Myf5+, Pdgfra- and Pdgfa+. However, there is no strong evidence showing that these cells are Pdgfra-. Is there any cell that transiently express both Myf5 and Pdgfra mRNA or protein? What's the transcriptional expression level of Pdgfra in the scRNAseq data of cells sorted from mo\n\nuse Myf5GFP-P/+ embryos at E12.5 and E14.5? Is it expressed in the non-myogenic cluster? Additionally, for the EOM subset of the Myf5 lineage at E11.5, the expression plot of Myf5 is not shown. Does the cell population in between the myogenic and non-myogenic cells have both Myf5 and Pdgfra expression?\n\nFor immunofluorescence experiments, quantification of the proportion of double positive cells would be important. Especially the results verifying that Myf5 cells partially compensate for the lack of neural crest (Figure 3F-I'), since the green cells are hard to distinguish from the figure and the Myf5-expressing cells indicated by yellow arrowheads also exist in Wnt1 lineage cells.\n\nDirect examination of Pdgfra+ cells using immunostaining or RNAscope in Myf5+ and Myf5-null embryos may be needed to strengthen the conclusion in Figure 5. In addition, the asterisk labeled \u03b2-gal+ cells in Figure 5D show neither myogenic marker nor Sox9 expression. The fate of these cells may merit discussion.\n\nWhat is shown in figure 6 is not very clear. More specifically, the fibrogenic fraction at stages 12.5 and 14.5 could be better described. What are the hatched boxes represented on the figure? It looks like the fibroblastic fraction strongly decreases with age which goes against their claim that the bipotential population is maintained.\n\nA quantification of the Myod-iCre double positive cells shown on figure S5 would be helpful\n\nDo the authors mean that the stages gave a similar level of enrichment for the same GO terms and reactome pathways?\n\nThe number of embryos stained by immunohistochemistry for each condition is on the low side (n=2) and could be increased.\n\nFigure legends are too succinct and lack important details\n\nIn Figure 3, the labels of A-E are not consistent with the schematic depiction showing the positions of transverse sections.\n\nReviewer #2 (Recommendations for the authors):\n\nA major strength of this manuscript is that it provides a comprehensive profiling of the embryonic craniofacial tissues in mouse, with the use of elaborated computational analysis, that will certainly be of great interest to the scientific community. The illustrations emanating from the in silico data are presented in an informative way, and the schemes are clear and elegant. It is also clearly written.\n\nSpecific point to address:\n\n1. Some conclusions are solely based on the RNA-Seq data that would require further experimental validations. Specifically, based on Figure 4, the authors are claiming that two tyrosine kinase receptors, Bmpr1 and Ephb1 are among their top drivers genes of the myogenic EOM compartment, with two of their ligands expressed in the non-myogenic cells. To further test the relevance of an hypothetic paracrine signalling between these two Myf5 derived cell lineages, the authors could have undertaken a similar RNA in situ strategy (RNA-scope) as the one performed for Pdgfra and Pdgfa or IHC. A similar comment can be done with regards to figure 7, where the authors argue that Wnt/\u03b2-catenin pathway, emanating from the neural crest could influence the maintenance of the non-myogenic population. This hypothesis could be strengthen with downstream in situ validation experiments in the EOM region.\n\n2. In figure 3, if I have understood correctly, it appears that the labels on the transversal sections depicted on the mouse embryo scheme are not reflecting those corresponding to the immunostaining tiles?\n\n3. In figure 3 panel J, the authors are quantifying the number of double positive Tomato/GFP cells over the total GFP cells per region to determine the contribution of Myf5-lineage cells to the associated connective tissue in the EOM at E14.5. I have found it confusing that in order to create their graph, the authors are coming back to their transgenic line Myf5Cre/+;R26TdTom/+;PdgfraH2BGFP/+ without mentioning in the text, when they have previously used different lineage tracing strategy in the EOM at 13.5 (panel F to I).Reviewer #3 (Recommendations for the authors):\n\n\u2013 Is it expected to obtain anterior somite cells in Mesp1+ lineage? Or even a lung/foregut population? Unexpected populations in Mesp1+ lineage are worth discussing already in the Results section, with respect to previous lineage tracing and clonal analyses, which also used the Mesp1 driver.\n\n\u2013 P.4, L.111: \"indicated\" should read \"suggested\", because RNA velocity is consistent with the clonal interpretation but cannot be treated as conclusive. Proper clonal analysis would be necessary.\n\n\u2013 Figure 2 is potentially interesting, but requires validation to be conclusive, both regarding the existence of bipotent progenitors, and the transition from a myogenic to a connective state.\n\n\u2013 Statement that \" Myf5-derived lineage contributes to connective tissue cells in the absence of neural crest\" suggest that experimental removal of NCCs would trigger cartilage formation from myogenic lineages even in the ventral regions. Could this be tested?\n\n\u2013 Figure 4A,B shows again excessive reliance on RNA velocity for clonal inference.\n\n\u2013 P.6, L.178L BMPRI are serine/threonine kinases, not tyrosine kinase. The conclusion relying solely on scRNA-seq data regarding signaling needs to be validated by complementary experiments. Many plots on Figure 4F are seemingly redundant and not informative.\n\n\u2013 Figure 4: if the idea is to reconstruct the EOM trajectories, why not integrate the data from distinct time points?\n\n\u2013 Figure 5: SCENIC analysis is presented rather superficially. For instance, what genomic sequences were used to search for putative binding motifs? Is accessibility data for EOM cells available?\n\n\u2013 Some of the non-myogenic factors mentioned (Ebf1, Six2, Foxc1) have also been involved in muscle development in other systems, so this point deserves to be clarified.\n\n\u2013 The Myf5 null mutant showing an increase in Sox9+ cells is consistent with the hypothetized fate choice, but should be contrasted with the presumed signaling cross-talk between cell populations: if the muscles are missing, how does this affect their connective partners?\n\n\u2013 Conclusions based on colocalization would be better supported by quantitative data e.g. % of double positive cells measured from images, instead of qualitative image accompanied by statement like \"only rare double positive cells\".\n\n\u2013 It is not clear to this reviewer what the true value of Figures 6 and 7 are without further experimental validations. For instance, identification of candidate drivers for the non-myogenic fate calls for some degree of experimental validation of this prediction. the section on these TFs and on the Wnt pathway, inasmuch as they rely exclusively on computational analysis of descriptive scRNA-seq data, remain largely speculative.\n",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "980678ee-7c26-4e0e-8308-a6dee4f0242a",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C1",
+      "claim": "Most craniofacial structures originate from the vertebrate-specific neural crest cells except in the dorsal portion of the head, where they arise from cranial mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Most craniofacial structures originate from the vertebrate-specific neural crest cells except in the dorsal portion of the head, where they arise from cranial mesoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the developmental origins of craniofacial structures, presented as background information in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "b2c9c0b3-bd0a-4e5c-9e64-54e02eee644b",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C2",
+      "claim": "Bipotent progenitors expressing Myf5 give rise to both muscle and juxtaposed connective tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using multiple lineage-tracing strategies combined with single cell RNAseq and in situ analyses, we identify bipotent progenitors expressing Myf5 (an upstream regulator of myogenic fate) that give rise to both muscle and juxtaposed connective tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental approaches including lineage tracing, scRNAseq, and in situ analyses as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "10c2ee03-40a3-4838-bf8c-f60364ce1fae",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C3",
+      "claim": "Following bifurcation, muscle and connective tissue cells retain complementary signalling features and maintain spatial proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this bifurcation, muscle and connective tissue cells retain complementary signalling features and maintain spatial proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from the study presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "555c4310-f778-4c3b-a716-347c04c04e62",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C4",
+      "claim": "Disrupting myogenic identity shifts muscle progenitors to a connective tissue fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting myogenic identity shifts muscle progenitors to a connective tissue fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental manipulation described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "d665b7d8-dceb-4f01-a157-5ad3967f98d1",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C5",
+      "claim": "The emergence of Myf5-derived connective tissue is associated with the activity of several transcription factors, including Foxp2.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of Myf5-derived connective tissue is associated with the activity of several transcription factors, including Foxp2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from the study presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "a4a983b4-d541-494a-ad1b-21b62fe6e303",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C6",
+      "claim": "The bifurcation in cell fate was not observed in craniofacial regions that are colonised by neural crest cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this unexpected bifurcation in cell fate was not observed in craniofacial regions that are colonised by neural crest cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of findings from the study presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "ece1a132-ecf6-488a-8ed6-647c243e97ec",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C7",
+      "claim": "An ancestral bi-fated program gives rise to muscle and connective tissue cells in skeletal muscles that are deprived of neural crest cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that an ancestral bi-fated program gives rise to muscle and connective tissue cells in skeletal muscles that are deprived of neural crest cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation of the findings presented in the abstract.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "a6f4c36f-4579-4f80-8d71-fc16a975edd1",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C8",
+      "claim": "The majority of muscle-associated connective tissues in the head is derived from cranial neural crest cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of muscle-associated connective tissues in the head is derived from cranial neural crest cells (NCCs), an embryonic cell population that contributes to most of the structural components of the 'new head', a vertebrate innovation (Le Douarin and Kalcheim, 1999; Gans and Northcutt, 1983; Grenier et al., 2009; Heude et al., 2018; Noden and Trainor, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "4576a9eb-fe63-49aa-863a-bf0a8630ea8d",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C9",
+      "claim": "Extraocular, laryngeal and pharyngeal muscles contain mesenchyme that is mesoderm-derived in their dorso-medial component, whereas the remaining muscle mass is embedded in mesenchyme that is neural crest-derived.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the extent of this contribution was redefined in muscles derived from cranial mesoderm, including extraocular (EOM), laryngeal and pharyngeal muscles (Comai et al., 2020; Grimaldi et al., 2015; Heude et al., 2018; Kuroda et al., 2021; Noden and Epstein, 2010). Interestingly, these muscles contain mesenchyme that is mesoderm-derived in their dorso-medial component, whereas the remaining muscle mass is embedded in mesenchyme that is neural crest-derived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "0d1743d1-38eb-4444-9cd7-bd2022293c22",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C10",
+      "claim": "Paraxial somitic mesoderm gives rise to skeletal muscles and associated connective tissues along the trunk axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the trunk axis, paraxial somitic mesoderm gives rise to skeletal muscles and associated connective tissues (Burke and Nowicki, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "3c5f967f-08ca-43eb-9b7f-26ef72a9b704",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C11",
+      "claim": "The dermomyotome gives rise to several cell types including all skeletal muscles of the body, vasculature, tendons and bones.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon signals emanating from adjacent tissues, the dermomyotome (dorsal portion of the somite) undergoes an epithelial-to-mesenchymal transition and gives rise to several cell types including all skeletal muscles of the body, vasculature, tendons and bones (Ben-Yair and Kalcheim, 2008; Christ et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "622a9dba-f118-48c9-a077-695d6ea7d90d",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C12",
+      "claim": "Cardiopharyngeal mesoderm has cardiovascular potential, which manifests in the embryo as regions of clonally related cardiac and craniofacial skeletal muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cardiopharyngeal mesoderm, which constitutes the major portion of cranial mesoderm, has cardiovascular potential, which manifests in the embryo as regions of clonally related cardiac and craniofacial skeletal muscles (Diogo et al., 2015; Swedlund and Lescroart, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "5d47bf41-6086-4922-b64c-39219cd44417",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C13",
+      "claim": "Cardiopharyngeal mesoderm was shown to give rise to connective tissues in the mammalian pharynx.",
+      "claim_type": "EXPLICIT",
+      "source": "While cardiopharyngeal mesoderm was shown to give rise to connective tissues in the mammalian pharynx, the extent of its contribution to other craniofacial muscles in general has not been fully addressed (Adachi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "6828b61f-09a8-4f1d-be70-557f7299b467",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C14",
+      "claim": "A large portion of cells obtained by Mesp1Cre/+;Rosa26mTmG/+ lineage tracing at E10.5 segregated as individual clusters expressing markers of adipogenic, chondrogenic, sclerotomal, endothelial, and cardiovascular lineages as well as the foregut and primitive lung mesenchyme.",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of doublets and lower quality cells (see Materials and methods), a large portion of the cells obtained by Mesp1Cre/+;Rosa26mTmG/+ lineage tracing segregated as individual clusters expressing markers of adipogenic, chondrogenic, sclerotomal, endothelial, and cardiovascular lineages as well as the foregut and primitive lung mesenchyme (Figure 1B, Figure 1\u2014figure supplement 2A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis shown in Figure 1B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "4f61559b-a245-4a30-baa3-7c4133fc764d",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C15",
+      "claim": "About half of the supposedly myogenic cells exhibited a connective tissue signature, including a strong bias toward Prrx1, Col1a1, and Twist1.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, about half of the supposedly myogenic cells exhibited a connective tissue signature, including a strong bias toward Prrx1, a marker of lateral plate mesoderm (Durland et al., 2008), Col1a1, a major extracellular matrix component of connective tissue cells (De Micheli et al., 2020), and Twist1, a key determinant for the mesenchymal properties of cranial mesoderm (Bildsoe et al., 2016; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis shown in Figure 1F and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "5b2fde99-3791-4fdc-a3b4-aa2cb65184c2",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C16",
+      "claim": "Pdgfra expression was robustly anticorrelated with the expression of its ligand Pdgfa and associated with non-myogenic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the expression of Pdgfra, a well-defined marker of stromal cells (Farahani and Xaymardan, 2015), was robustly anticorrelated with the expression of its ligand Pdgfa and associated with non-myogenic genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "ecb77bef-2290-44f4-96a9-97e886e21805",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C17",
+      "claim": "Pdgfa was correlated with a myogenic cell state.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Pdgfa, was correlated with a myogenic cell state (Figure 1F, Figure 1\u2014figure supplement 3A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis shown in Figure 1F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "96553ca2-275a-448b-98f7-7edfc63085ad",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C18",
+      "claim": "Myogenic Pdgfa expression was shown to promote adjacent sclerotomal cells to adopt a rib cartilage fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, myogenic Pdgfa expression was shown to promote adjacent sclerotomal cells to adopt a rib cartilage fate (Tallquist et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "deff43c9-2dd1-4971-8c02-00a0c82b0ef8",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C19",
+      "claim": "RNA velocity-inferred trajectories suggested that Myf5+ cells from the myogenic compartment contributed to non-myogenic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, RNA velocity-inferred trajectories suggested that Myf5+ cells from the myogenic compartment contributed to non-myogenic cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA velocity analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "6c4a8efc-09b2-464e-bd27-5648a0e43e4d",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C20",
+      "claim": "Top transcribed driver genes in anterior somites included Foxp1, Meox2, Meis1, Twist2, Fap, Pdgfra, Prrx1, and Pcolce, which are associated with fibrosis and connective tissue development.",
+      "claim_type": "EXPLICIT",
+      "source": "Top transcribed driver genes included Foxp1 (Shao and Wei, 2018), Meox2 (Noizet et al., 2016), Meis1 (L\u00f3pez-Delgado et al., 2020), Twist2 (Franco et al., 2009), Fap (Pur\u00e9 and Blomberg, 2018), Pdgfra (Tallquist et al., 2000), Prrx1 (Leavitt et al., 2020), and Pcolce (Bildsoe et al., 2016; Figure 2C), which are associated with fibrosis and connective tissue development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA velocity driver gene analysis shown in Figure 2C and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "957b4625-3734-404e-af4d-661303ab82ee",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C21",
+      "claim": "Pdgfra appeared as a driver gene and was activated along the inferred trajectory, whereas Pdgfa expression decreased rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noted that Pdgfra appeared as a driver gene and was activated along this inferred trajectory, whereas Pdgfa expression decreased rapidly (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA velocity analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "5f904093-d812-4060-866f-58c04adb5b95",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C22",
+      "claim": "RNA velocity analysis for anterior somite mesodermal progenitors showed that Myf5+/Pdgfa+ cells shifted toward a non-myogenic fate, which includes the downregulation of Myf5 and Pdgfa and the activation of Pdgfra expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, RNA velocity analysis for anterior somite mesodermal progenitors showed that Myf5+/Pdgfa+ cells shifted toward a non-myogenic fate, which includes the downregulation of Myf5 and Pdgfa and the activation of Pdgfra expression (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is a summary of RNA velocity analysis findings shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "9c91748d-e832-46d6-9558-b085ff308046",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C23",
+      "claim": "GFP+ TOM+ double-positive cells were observed in regions of EOM, laryngeal and upper back muscles that are partially or fully deprived of neural crest at E14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed GFP+ TOM+ double-positive cells in regions of EOM, laryngeal and upper back muscles that are partially or fully deprived of neural crest (Adachi et al., 2020; Comai et al., 2020; Heude et al., 2018; Figure 3A\u2013C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3A-C' and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "575d7b25-ed96-4c16-83f6-b56b42e6d5c2",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C24",
+      "claim": "No double-positive cells were detected in muscles that are fully embedded in neural crest derived mesenchyme such as mandibular and tongue muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, no double-positive cells were detected in muscles that are fully embedded in neural crest derived mesenchyme such as mandibular and tongue muscles (Heude et al., 2018; Figure 3D\u2013E').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3D-E' and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "d1ca4f0a-6b37-4bd4-b320-d2f2c16a2fae",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C25",
+      "claim": "GFP+ cells that expressed Myf5 (\u03b2-gal+) were exclusively present in Mesp1-derived domains and absent from the Wnt1 lineage at E13.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Wnt1Cre/+; Rosa26mTmG/+; Myf5nlacZ/+ (NCC tracing with Wnt1) and Mesp1Cre/+;Rosa26mTmG/+;Myf5nlacZ/+ (mesoderm tracing with Mesp1) at E13.5, we found that GFP+ cells that expressed Myf5 (\u03b2-gal+) were exclusively present in Mesp1-derived domains and absent from the Wnt1 lineage (Figure 3F\u2013I').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 3F-I'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "9d7fa4c7-56ed-4144-baff-ec7960b35e4c",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C26",
+      "claim": "A medio-lateral gradient of Myf5-lineage contribution to EOM-associated connective tissues was observed by E14.5, and this was anticorrelated with the local contribution of neural crest cells to connective tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a medio-lateral gradient of Myf5-lineage contribution to EOM-associated connective tissues by E14.5, and this was anticorrelated with the local contribution of neural crest cells to connective tissues (Figure 3J\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 3J-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "88cceaed-b138-47af-baad-bc3d89d1bb40",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C27",
+      "claim": "Individual cells undergo a progressive switch from myogenic to non-myogenic gene expression along the inferred trajectories, where cells at the transition zone shut off the myogenic program and start activating fibrogenic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that individual cells undergo a progressive switch from myogenic to non-myogenic gene expression along the inferred trajectories, where cells at the transition zone shut off the myogenic program and start activating fibrogenic genes (Figure 4C heatmap).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by coexpression score analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "8432237e-8783-45bf-bd8a-442c2a13095c",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C28",
+      "claim": "Cells exhibiting a mostly non-overlapping, complementary pattern of Pdgfa and Pdgfra transcripts within the Myf5-derived lineage were observed at E14.5, while retaining anatomical proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the scRNAseq analysis, we observed cells exhibiting a mostly non-overlapping, complementary pattern of Pdgfa and Pdgfra transcripts within the Myf5-derived lineage, while retaining anatomical proximity, even at later stages of EOM development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope in situ hybridization data described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "efdd2683-481e-4a76-98ef-e4e3c52363a4",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C29",
+      "claim": "Bmpr1b and Ephb1 were among the top 100 driver genes of the myogenic EOM compartment, suggesting that myogenic commitment is associated with upregulation of these kinase receptors in the EOM.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Bmpr1b and Ephb1 were among the top 100 driver genes of the myogenic EOM compartment, suggesting that myogenic commitment is associated with upregulation of these kinase receptors in the EOM (Figure 4\u2014figure supplement 2B, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by driver gene analysis shown in supplementary figures and Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "7de439fc-45fc-4905-9a53-57e753128f65",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C30",
+      "claim": "Bmp4 and Efnb1 were preferentially expressed in non-myogenic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, two of their respective ligands, Bmp4 and Efnb1, were preferentially expressed in non-myogenic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "2c1095ce-c6af-438d-95b6-cd4f7e510adc",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C31",
+      "claim": "Analysis of Bmp4 and Efnb1 expression patterns in E14.5 embryos by RNAscope validated complementary expression patterns in adjacent muscle and connective tissue domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of their expression patterns in E14.5 embryos by RNAscope validated these complementary expression patterns in adjacent muscle and connective tissue domains (Figure 4F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAscope in situ hybridization data shown in Figure 4F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "39d42500-a8f2-4be9-b33a-025bad2fe787",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C32",
+      "claim": "Myf5, Pitx1, Mef2a, and Six1 appeared among the top regulons in myogenic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Myf5, Pitx1, Mef2a, and Six1, transcription factors known to be implicated in myogenic development (Buckingham and Rigby, 2014), appeared among the top regulons in myogenic cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SCENIC analysis and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "391b5418-52c4-40e8-a793-cf9f1f5d9b19",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C33",
+      "claim": "Fli1, Ebf1, Ets1, Foxc1, Meis1, and Six2 constituted some of the highly active non-myogenic transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Fli1, Ebf1, Ets1, Foxc1, Meis1, and Six2, genes known for their involvement in adipogenic, vascular, mesenchymal and tendon development (Jimenez et al., 2007; L\u00f3pez-Delgado et al., 2020; Noizet et al., 2016; Truong and Ben-David, 2000; Whitesell et al., 2019; Yamamoto-Shiraishi and Kuroiwa, 2013), constituted some of the highly active non-myogenic transcription factors (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SCENIC analysis shown in Figure 5A and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "a945d7a8-7df6-4aa7-a441-0eda7c4f214d",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C34",
+      "claim": "Scube1 was upregulated in the Pdgfra+ non-myogenic fraction of the EOM.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that Scube1, a gene known for its involvement in vasculature development, was upregulated in the Pdgfra+ non-myogenic fraction of the EOM (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "094021a2-72a7-4f0e-b547-df3c1dc8a874",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C35",
+      "claim": "RNAscope in situ hybridization confirmed that Scube1 was expressed at the level of the EOM medial attachment at E14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAscope in situ hybridization confirmed these findings and showed that Scube1 was expressed at the level of the EOM medial attachment at E14.5 (Figure 5\u2014figure supplement 1C-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAscope in situ hybridization data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "517945b7-74a2-47e7-a77b-ed8ea1aa2b15",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C36",
+      "claim": "Disruption of Myf5 activity led to a threefold increase in the proportion of non-myogenic Myf5-derived cells in the EOM region.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, disruption of Myf5 activity led to a threefold increase in the proportion of non-myogenic Myf5-derived cells in this region (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data from Myf5 null embryos shown in Figure 5E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "b4749b01-1818-46b4-ac2f-593f04d94f1b",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C37",
+      "claim": "No double-positive cells were found in the masseter, a muscle fully embedded in neural crest-derived connective tissue, even in the absence of Myf5.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no double-positive cells were found in the masseter, a muscle fully embedded in neural crest-derived connective tissue, even in the absence of Myf5 (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data from Myf5 null embryos shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "c7283ff8-98b3-4c5b-914e-43c8f70515f1",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C38",
+      "claim": "Very few Pdgfra+ cells were found to be derived from Myod expressing cells in MyodiCre;Rosa26TdTomato/+;PdgfraH2BGFP/+ fetuses at E14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, very few Pdgfra+ cells were found to be derived from Myod expressing cells in MyodiCre;Rosa26TdTomato/+;PdgfraH2BGFP/+ fetuses at E14.5, particularly in the EOM and the back muscles (about 3 and 1.5 cells per 100 \u03bcm2 of muscle, respectively)(Figure 5G, I, J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 5G, I, J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "c6ae4c29-8d36-4a68-9bf2-caaf07245b8a",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C39",
+      "claim": "The masseter lacked Myod-derived connective tissue cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the masseter lacked Myod-derived connective tissue cells (Figure 5H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 5H and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "d28f1e15-80ff-4701-9e15-4532cf09aa2d",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C40",
+      "claim": "Progenitors that bifurcate to myogenic and non-myogenic cell fates are present only in neural-crest depleted regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that progenitors that bifurcate to myogenic and non-myogenic cell fates are present only in neural-crest depleted regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings described in the text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "dfae5c64-40a6-431f-a70a-76aeff3aa0dc",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C41",
+      "claim": "This property is associated primarily with Myf5 expression, as subsequent activation of Myod within this lineage appears to lock cell fate into the myogenic program and suppress their connective tissue potential.",
+      "claim_type": "EXPLICIT",
+      "source": "This property is associated primarily with Myf5 expression, as subsequent activation of Myod within this lineage appears to lock cell fate into the myogenic program and suppress their connective tissue potential (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental findings described in the text and shown in Figure 5K.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "bab4e7ed-b86d-4925-828a-c080a368cd98",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C42",
+      "claim": "All stages contributed relatively equally to each 'GO Molecular Function' and 'Reactome pathways' terms despite their relatively diverse gene expression signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all stages contributed relatively equally to each 'GO Molecular Function' and 'Reactome pathways' terms despite their relatively diverse gene expression signatures (Figure 6D\u2013E', Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene set enrichment analysis shown in Figure 6D-E' and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "61c269ba-6e1a-4057-9fdd-25a95328b72c",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C43",
+      "claim": "These non-myogenic cells are relatively homogeneous in gene signatures throughout cranial muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that these non-myogenic cells are relatively homogeneous in gene signatures throughout cranial muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the gene set enrichment analysis findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "b871aa55-f6c5-4da3-9a7e-133005a0e402",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C44",
+      "claim": "Foxp2, Hmga2, Meis1, Meox2, and Tcf7l2 were identified in all four scRNAseq datasets as key driver regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Foxp2, Hmga2, Meis1, Meox2, and Tcf7l2 were identified in all four scRNAseq datasets as key driver regulators, and thus are likely to play significant role in the non-myogenic transition (Figure 7A, Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by driver regulator analysis shown in Figure 7A and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "97a5cb08-f2bc-4a1d-ad55-03f80d78ec6a",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C45",
+      "claim": "The Myf5-derived EOM cells expressed a relatively high level of Foxp2 compared to mandible and trunk muscles at E12.5.",
+      "claim_type": "EXPLICIT",
+      "source": "FOXP2 immunostaining on Myf5Cre/+;Rosa26TdTom/+;PdgfraH2BGFP/+ E12.5 embryos showed that the Myf5-derived EOM cells expressed a relatively high level of Foxp2 compared to mandible and trunk muscles, consistent with their apparent high contribution to connective tissue (Figure 7B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 7B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "4e198120-af22-4f81-98f2-749279fe3e54",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C46",
+      "claim": "FACS analysis identified non-FAPs cells (GFPlow) transitioning towards a Pdgfra+ state in head and trunk regions but very few in the limb.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified non-FAPs cells (GFPlow) transitioning towards a Pdgfra+ state in head and trunk regions but very few in the limb (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FACS analysis data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "9a715357-9cf2-49c2-bf77-3cb265dae272",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C47",
+      "claim": "Trunk muscles presented the largest portion of transitioning cells (40%), while a similar transitioning population was noted in the head (20%) despite a large contribution of NCC to head connective tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while trunk muscles presented the largest portion of transitioning cells (40%), a similar transitioning population was noted in the head (20%) despite a large contribution of NCC to head connective tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by FACS analysis data described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "8b4be718-1b60-45f8-939b-422f1b0783bf",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C48",
+      "claim": "Cardiopharyngeal mesoderm may have a superior potential to give rise to connective tissue compared to somite-derived progenitors in the limb (1.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cardiopharyngeal mesoderm may have a superior potential to give rise to connective tissue compared to somite-derived progenitors in the limb (1.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FACS analysis findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "50fcb3e5-c760-4eec-b6aa-7127eb8071ec",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C49",
+      "claim": "Axin2 levels were elevated in the non-myogenic portion of all the different datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Axin2 levels were elevated in the non-myogenic portion of all the different datasets (Figure 7\u2014figure supplement 1E-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "dc7bdd56-3c00-489c-a9f6-0828a238d914",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C50",
+      "claim": "Dkk2 was found to be elevated in non-myogenic cells, indicative of a putative positive-feedback loop mechanism supporting the maintenance of this population.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Dkk2, which has been described as an activator of Wnt/\u03b2-cat pathway in the neural crest (Devotta et al., 2018), was also found to be elevated, indicative of a putative positive-feedback loop mechanism supporting the maintenance of this population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "f303b5a6-0077-4b50-88f6-9dab66bd2159",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C51",
+      "claim": "Brown adipocytes, neurons, pericytes, and rib cartilage have been reported to express Myf5 in ancestral cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Brown adipocytes, neurons, pericytes, and rib cartilage have been reported to express Myf5 in ancestral cells (Daubas et al., 2000; Haldar et al., 2008; Sebo et al., 2018; Stuelsatz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "ccd845ba-ac91-4ec0-9b90-cff61c7da7b5",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C52",
+      "claim": "When Myf5 expression is disrupted, cells can acquire non-myogenic fates and contribute to connective tissue, cartilage, and dermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when Myf5 expression is disrupted, cells can acquire non-myogenic fates and contribute to connective tissue (this study), cartilage, and dermis (Tajbakhsh et al., 1996), while others remain apparently undifferentiated (cells labeled with an asterisk in Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from this study and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "1b6e60d6-d8ad-4c00-9a32-0e25dcc87e9c",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C53",
+      "claim": "Myf5-expression alone is not sufficient to promote robust myogenic fate in multiple regions of developing embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies suggest that Myf5-expression alone is not sufficient to promote robust myogenic fate in multiple regions of developing embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings from this study and previous literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "8cc296ea-390c-48a4-b24d-ed9acab0a9ec",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C54",
+      "claim": "Myod+ cells do not contribute to rib cartilage and give rise to few connective tissue cells in the periocular and back regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, Myod+ cells do not contribute to rib cartilage (Wood et al., 2020) and give rise to few connective tissue cells in the periocular and back regions (this study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from this study and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "d94bb9d5-d214-4c1a-a4b7-d520e1fa0d1c",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C55",
+      "claim": "Myf5-expressing cells contribute to non-myogenic cells from early embryonic stages (E10.5) and continue to do so in the fetus.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that Myf5-expressing cells contribute to non-myogenic cells from early embryonic stages (E10.5) and continue to do so in the fetus, indicating that these bipotent cells persist well after muscles are established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "b03a72a0-fc6f-4545-b879-667ce2bb91ae",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C56",
+      "claim": "Tcf4/Tcf7l2 was identified as a master regulator of fibroblastic fate during muscle-associated connective tissue development.",
+      "claim_type": "EXPLICIT",
+      "source": "Tcf4/Tcf7l2 was identified as a master regulator of fibroblastic fate during muscle-associated connective tissue development, although it is also expressed in myogenic progenitors at lower levels (Kardon et al., 2003; Mathew et al., 2011; Sefton and Kardon, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "d59fca00-424b-4d98-ab6d-14a6bbd6a965",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C57",
+      "claim": "Six2, Meox2, Egr2, and Foxs1 have been linked to skin fibroblast fates, and their repression favors a myofibroblastic potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Other transcription factors have been linked to skin fibroblast fates including Tcf4, Six2, Meox2, Egr2, and Foxs1, and their repression favors a myofibroblastic potential (Noizet et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "7bc89e51-a6f9-4466-8803-44de63a6dcfb",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C58",
+      "claim": "Prrx1 was differentially expressed in the connective tissue population at various stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Prrx1, a marker for lateral plate mesoderm (Durland et al., 2008), was differentially expressed in the connective tissue population at various stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "e88de618-419a-4177-8f5f-3b33b2463bd8",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C59",
+      "claim": "The differentiation of fetal myoblasts is inhibited by growth factors Tgf\u03b2 and Bmp4.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the differentiation of fetal myoblasts is inhibited by growth factors Tgf\u03b2 and Bmp4 (Cossu et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "e36394c2-6f7f-482a-8782-f59632894015",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C60",
+      "claim": "Epha7 signaling is active in embryonic and adult myocytes and promotes their differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Epha7 signaling is active in embryonic and adult myocytes and promotes their differentiation (Arnold et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "0c0de89b-1234-4bd9-8750-95ab1930cfb3",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C61",
+      "claim": "Pdgf ligands emanating from hypaxial myogenic cells under the control of Myf5 were shown to be necessary for rib cartilage development.",
+      "claim_type": "EXPLICIT",
+      "source": "Pdgf ligands emanating from hypaxial myogenic cells under the control of Myf5 were shown to be necessary from rib cartilage development (Tallquist et al., 2000; Vinagre et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "3ecefe05-1089-4ca9-be67-60de5fccfb3e",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C62",
+      "claim": "Pdgfra promotes expansion of fibroblasts during fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Pdgfra promotes expansion of fibroblasts during fibrosis (Olson and Soriano, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "14d46e7c-989b-45ac-9f6d-c57edec7f5b4",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C63",
+      "claim": "Pdgfa expression was reduced in cells expressing high levels of Myog at the fetal stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that Pdgfa expression was reduced in cells expressing high levels of Myog at the fetal stage (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "9cc8cd39-46b6-4930-8b2e-d71536d143a4",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C64",
+      "claim": "Cranial muscle development relies on the expression of Wnt and Bmp inhibitors from surrounding tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, unlike trunk myogenesis, cranial muscle development relies on the expression of Wnt and Bmp inhibitors from surrounding tissues (Tzahor et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "03158559-9595-4361-8a5e-b05752dcb598",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C65",
+      "claim": "The Myf5-derived non-myogenic cells express Bmp4, Dkk2, and Axin2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we showed that the Myf5-derived non-myogenic cells express Bmp4, Dkk2, and Axin2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "50560173-0c72-4a00-af4a-8e68298032dd",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C66",
+      "claim": "The Wnt effector complex Tcf/Lef is expressed to a lower extent in Myf5-derived non-myogenic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we showed that the Wnt effector complex Tcf/Lef is expressed to a lower extent in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNAseq data analysis described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "3a27b1c0-8e2e-4b3c-8f99-ff4c5912ab0d",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C67",
+      "claim": "Another study suggested shared fate relationships between fibroblast connective tissue cells and skeletal muscle where fibroblastic cells commit to myogenic fate during limb development.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, another study suggested shared fate relationships between fibroblast connective tissue cells and skeletal muscle where fibroblastic cells commit to myogenic fate during limb development (Esteves de Lima et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "156016f1-335d-415d-bc93-608e5a49ddf4",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C68",
+      "claim": "RNA velocity analysis did not reveal transitioning cells from non-myogenic clusters to myogenic even at early stages.",
+      "claim_type": "EXPLICIT",
+      "source": "First, RNA velocity analysis did not reveal transitioning cells from non-myogenic clusters to myogenic (even at early stages), nor do they express myogenic markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the findings from RNA velocity analysis in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "96c373a3-ba57-43a0-94fa-1c10b062bdc0",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C69",
+      "claim": "At least some of the non-myogenic cells gave rise to chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, at least some of these non-myogenic cells gave rise to chondrocytes, which to our knowledge has never been shown to give rise to skeletal muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the findings from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "d8b60fdd-1325-47cd-8a0d-14e1779e0937",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C70",
+      "claim": "Bipotency appears to be more associated with myogenic cells since they express Myf5, and to a minor extent Myod.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, bipotency appears to be more associated with myogenic cells since they express Myf5, and to a minor extent Myod.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings from this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "c960b156-edfd-4d45-b02c-963c97e1528c",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "claim_id": "C71",
+      "claim": "No NCC-derived Myf5+ cells were observed indicating that connective tissue in the head does not give rise to muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we did not observe NCC-derived Myf5+ cells indicating that connective tissue in the head does not give rise to muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the findings from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f01ec203-666d-4c22-8bd9-7c33c4321d28",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify bipotent progenitors expressing Myf5 that give rise to both muscle and connective tissue cells. This bifurcation is supported by RNA velocity analysis showing directional trajectories from Myf5+ myogenic cells to non-myogenic cells, lineage tracing showing Myf5-derived Pdgfra+ cells in neural crest-depleted regions, and the absence of this phenomenon in neural crest-colonized regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent lines of evidence converge: RNA velocity analysis (C19, C22), lineage tracing with multiple reporter systems (C23-C26), coexpression analysis (C27), in situ validation (C28), and regional specificity (C24, C40). The claim is further strengthened by temporal persistence (C55) and directional specificity (C68, C71). The combination of computational prediction and experimental validation provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Following bifurcation, muscle and connective tissue cells retain complementary signaling features including Pdgfa/Pdgfra, Bmp4/Bmpr1b, and Efnb1/Ephb1 ligand-receptor pairs, while maintaining spatial proximity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The complementary expression patterns are demonstrated through multiple approaches: scRNAseq showing anticorrelation of Pdgfa/Pdgfra (C16, C17, C21), RNA velocity analysis identifying receptors as driver genes (C29), and RNAscope validation of complementary spatial patterns for multiple ligand-receptor pairs (C28, C31). The temporal dynamics are also characterized (C63).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Disrupting myogenic identity through Myf5 loss shifts muscle progenitors to connective tissue fate, while Myod expression locks cells into myogenic fate. This demonstrates that Myf5 expression alone is insufficient for robust myogenic commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Loss-of-function experiments show threefold increase in non-myogenic Myf5-derived cells in Myf5 null embryos (C36), with regional specificity maintained (C37). Complementary Myod lineage tracing shows minimal connective tissue contribution (C38, C39). This is consistent with prior literature on Myf5 derivatives (C52, C54) and supports the interpretation about Myf5 insufficiency (C53).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "aa309dc8-5127-4f88-8b64-1f71be9635a9",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The emergence of Myf5-derived connective tissue is associated with activity of transcription factors including Foxp2, Hmga2, Meis1, Meox2, and Tcf7l2, identified as common driver regulators across multiple developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Driver regulator analysis across four independent scRNAseq datasets identifies five transcription factors present in all stages (C44). Foxp2 expression is validated by immunostaining showing higher levels in EOM compared to other muscles (C45). FACS analysis confirms transitioning populations with regional differences (C46, C47), supporting the interpretation about cardiopharyngeal mesoderm potential (C48).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "3358e5a8-2d92-4a62-9c27-3e5275441c16",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The bifurcation in cell fate is restricted to craniofacial regions deprived of neural crest cells and is not observed in regions colonized by neural crest cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple lineage tracing experiments demonstrate presence of Myf5-derived connective tissue in neural crest-depleted regions (C23) but absence in neural crest-colonized regions (C24). Dual lineage tracing confirms Myf5 expression is exclusive to mesoderm-derived domains (C25). This regional specificity is maintained even in Myf5 null embryos (C37) and Myod lineage (C39).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "06c4aa13-cf8b-433a-b8f4-5d8cc5194351",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ScRNAseq analysis of Mesp1-derived cells at E10.5 reveals that approximately half of supposedly myogenic cells exhibit a connective tissue signature, and non-myogenic cells are relatively homogeneous across developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The scRNAseq data clearly identifies diverse mesodermal lineages (C14) with approximately half showing connective tissue markers (C15). Gene set enrichment analysis across multiple stages shows equal contribution to functional terms despite diverse signatures (C42), supporting the interpretation of homogeneity (C43). However, the claim would benefit from more rigorous quantification of the 'approximately half' proportion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "832879d9-3618-4216-a313-73d79af64f1c",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SCENIC analysis identifies distinct transcriptional programs: myogenic cells express Myf5, Pitx1, Mef2a, and Six1, while non-myogenic cells express Fli1, Ebf1, Ets1, Foxc1, Meis1, and Six2. Non-myogenic cells also express vascular markers like Scube1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Driver gene analysis (C20) and SCENIC regulon analysis (C32, C33) identify distinct transcriptional programs supported by literature citations. The vascular marker Scube1 is validated by both scRNAseq (C34) and RNAscope (C35), providing orthogonal confirmation. The integration of computational prediction and experimental validation strengthens the claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "637613e2-d441-4465-bb71-1986f1c61402",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Myf5-derived non-myogenic cells express elevated levels of Axin2 and Dkk2, suggesting maintenance through a Wnt/\u03b2-catenin positive feedback loop, while expressing lower levels of Tcf/Lef effector complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "ScRNAseq data shows elevated Axin2 across all datasets (C49) and elevated Dkk2 (C50), with the interpretation of a feedback loop supported by literature citation. Direct measurement of Bmp4, Dkk2, and Axin2 expression (C65) and lower Tcf/Lef expression (C66) provides consistent evidence. However, the feedback loop mechanism remains inferential without functional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "ff9a1afc-185b-4811-a9aa-ce2ec1130469",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that an ancestral bi-fated program gives rise to muscle and connective tissue cells in skeletal muscles deprived of neural crest cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is an evolutionary interpretation (C7) that extends beyond the experimental data. While the data support bipotency in neural crest-depleted regions, the claim about an 'ancestral' program requires comparative evolutionary evidence from organisms lacking neural crest, which is not provided. This remains speculative despite strong support for the bipotency itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "21fb8923-4579-465d-ad88-d914c8ca32e6",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims about developmental origins of craniofacial structures, neural crest contribution, and mesodermal derivatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established knowledge claims supported by appropriate literature citations (C1, C8, C10, C11, C12, C13). The specific claim about dual origin of EOM mesenchyme (C9) is supported by recent citations. These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Literature-based claims about prior findings on Pdgf signaling, Myf5 derivatives, transcription factors, and signaling pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately represent prior literature with appropriate citations. They provide important context for interpreting the current findings but do not constitute new results. The citations appear accurate and relevant to the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    },
+    {
+      "id": "5fae1ca5-4717-4e85-bc99-e8fdfbd99cbb",
+      "content_id": "485c5f9b-3589-4077-8789-26e9d85353d1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prrx1, a marker for lateral plate mesoderm, was differentially expressed in the connective tissue population at various stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a straightforward observation from scRNAseq data (C58) supported by a literature citation for Prrx1's identity. However, the functional significance and implications for lateral plate mesoderm boundaries in the head remain unclear and would require additional investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:00.063875Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b2c9c0b3-bd0a-4e5c-9e64-54e02eee644b",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "deff43c9-2dd1-4971-8c02-00a0c82b0ef8",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "5f904093-d812-4060-866f-58c04adb5b95",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "9c91748d-e832-46d6-9558-b085ff308046",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "575d7b25-ed96-4c16-83f6-b56b42e6d5c2",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "d1ca4f0a-6b37-4bd4-b320-d2f2c16a2fae",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "9d7fa4c7-56ed-4144-baff-ec7960b35e4c",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "88cceaed-b138-47af-baad-bc3d89d1bb40",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "8432237e-8783-45bf-bd8a-442c2a13095c",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "d28f1e15-80ff-4701-9e15-4532cf09aa2d",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "d94bb9d5-d214-4c1a-a4b7-d520e1fa0d1c",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "156016f1-335d-415d-bc93-608e5a49ddf4",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "96c373a3-ba57-43a0-94fa-1c10b062bdc0",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "d8b60fdd-1325-47cd-8a0d-14e1779e0937",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "c960b156-edfd-4d45-b02c-963c97e1528c",
+      "result_id": "f01ec203-666d-4c22-8bd9-7c33c4321d28"
+    },
+    {
+      "claim_id": "10c2ee03-40a3-4838-bf8c-f60364ce1fae",
+      "result_id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4"
+    },
+    {
+      "claim_id": "5b2fde99-3791-4fdc-a3b4-aa2cb65184c2",
+      "result_id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4"
+    },
+    {
+      "claim_id": "ecb77bef-2290-44f4-96a9-97e886e21805",
+      "result_id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4"
+    },
+    {
+      "claim_id": "957b4625-3734-404e-af4d-661303ab82ee",
+      "result_id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4"
+    },
+    {
+      "claim_id": "8432237e-8783-45bf-bd8a-442c2a13095c",
+      "result_id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4"
+    },
+    {
+      "claim_id": "efdd2683-481e-4a76-98ef-e4e3c52363a4",
+      "result_id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4"
+    },
+    {
+      "claim_id": "7de439fc-45fc-4905-9a53-57e753128f65",
+      "result_id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4"
+    },
+    {
+      "claim_id": "2c1095ce-c6af-438d-95b6-cd4f7e510adc",
+      "result_id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4"
+    },
+    {
+      "claim_id": "14d46e7c-989b-45ac-9f6d-c57edec7f5b4",
+      "result_id": "baf7bb39-298f-4cbf-9eee-c1f9d42352c4"
+    },
+    {
+      "claim_id": "555c4310-f778-4c3b-a716-347c04c04e62",
+      "result_id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359"
+    },
+    {
+      "claim_id": "517945b7-74a2-47e7-a77b-ed8ea1aa2b15",
+      "result_id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359"
+    },
+    {
+      "claim_id": "b4749b01-1818-46b4-ac2f-593f04d94f1b",
+      "result_id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359"
+    },
+    {
+      "claim_id": "c7283ff8-98b3-4c5b-914e-43c8f70515f1",
+      "result_id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359"
+    },
+    {
+      "claim_id": "c6ae4c29-8d36-4a68-9bf2-caaf07245b8a",
+      "result_id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359"
+    },
+    {
+      "claim_id": "dfae5c64-40a6-431f-a70a-76aeff3aa0dc",
+      "result_id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359"
+    },
+    {
+      "claim_id": "ccd845ba-ac91-4ec0-9b90-cff61c7da7b5",
+      "result_id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359"
+    },
+    {
+      "claim_id": "1b6e60d6-d8ad-4c00-9a32-0e25dcc87e9c",
+      "result_id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359"
+    },
+    {
+      "claim_id": "8cc296ea-390c-48a4-b24d-ed9acab0a9ec",
+      "result_id": "b99aea71-48d3-4ac6-aed6-0f9e2d9a2359"
+    },
+    {
+      "claim_id": "d665b7d8-dceb-4f01-a157-5ad3967f98d1",
+      "result_id": "aa309dc8-5127-4f88-8b64-1f71be9635a9"
+    },
+    {
+      "claim_id": "b871aa55-f6c5-4da3-9a7e-133005a0e402",
+      "result_id": "aa309dc8-5127-4f88-8b64-1f71be9635a9"
+    },
+    {
+      "claim_id": "97a5cb08-f2bc-4a1d-ad55-03f80d78ec6a",
+      "result_id": "aa309dc8-5127-4f88-8b64-1f71be9635a9"
+    },
+    {
+      "claim_id": "4e198120-af22-4f81-98f2-749279fe3e54",
+      "result_id": "aa309dc8-5127-4f88-8b64-1f71be9635a9"
+    },
+    {
+      "claim_id": "9a715357-9cf2-49c2-bf77-3cb265dae272",
+      "result_id": "aa309dc8-5127-4f88-8b64-1f71be9635a9"
+    },
+    {
+      "claim_id": "8b4be718-1b60-45f8-939b-422f1b0783bf",
+      "result_id": "aa309dc8-5127-4f88-8b64-1f71be9635a9"
+    },
+    {
+      "claim_id": "a4a983b4-d541-494a-ad1b-21b62fe6e303",
+      "result_id": "3358e5a8-2d92-4a62-9c27-3e5275441c16"
+    },
+    {
+      "claim_id": "9c91748d-e832-46d6-9558-b085ff308046",
+      "result_id": "3358e5a8-2d92-4a62-9c27-3e5275441c16"
+    },
+    {
+      "claim_id": "575d7b25-ed96-4c16-83f6-b56b42e6d5c2",
+      "result_id": "3358e5a8-2d92-4a62-9c27-3e5275441c16"
+    },
+    {
+      "claim_id": "d1ca4f0a-6b37-4bd4-b320-d2f2c16a2fae",
+      "result_id": "3358e5a8-2d92-4a62-9c27-3e5275441c16"
+    },
+    {
+      "claim_id": "b4749b01-1818-46b4-ac2f-593f04d94f1b",
+      "result_id": "3358e5a8-2d92-4a62-9c27-3e5275441c16"
+    },
+    {
+      "claim_id": "c6ae4c29-8d36-4a68-9bf2-caaf07245b8a",
+      "result_id": "3358e5a8-2d92-4a62-9c27-3e5275441c16"
+    },
+    {
+      "claim_id": "d28f1e15-80ff-4701-9e15-4532cf09aa2d",
+      "result_id": "3358e5a8-2d92-4a62-9c27-3e5275441c16"
+    },
+    {
+      "claim_id": "6828b61f-09a8-4f1d-be70-557f7299b467",
+      "result_id": "06c4aa13-cf8b-433a-b8f4-5d8cc5194351"
+    },
+    {
+      "claim_id": "4f61559b-a245-4a30-baa3-7c4133fc764d",
+      "result_id": "06c4aa13-cf8b-433a-b8f4-5d8cc5194351"
+    },
+    {
+      "claim_id": "bab4e7ed-b86d-4925-828a-c080a368cd98",
+      "result_id": "06c4aa13-cf8b-433a-b8f4-5d8cc5194351"
+    },
+    {
+      "claim_id": "61c269ba-6e1a-4057-9fdd-25a95328b72c",
+      "result_id": "06c4aa13-cf8b-433a-b8f4-5d8cc5194351"
+    },
+    {
+      "claim_id": "6c4a8efc-09b2-464e-bd27-5648a0e43e4d",
+      "result_id": "832879d9-3618-4216-a313-73d79af64f1c"
+    },
+    {
+      "claim_id": "39d42500-a8f2-4be9-b33a-025bad2fe787",
+      "result_id": "832879d9-3618-4216-a313-73d79af64f1c"
+    },
+    {
+      "claim_id": "391b5418-52c4-40e8-a793-cf9f1f5d9b19",
+      "result_id": "832879d9-3618-4216-a313-73d79af64f1c"
+    },
+    {
+      "claim_id": "a945d7a8-7df6-4aa7-a441-0eda7c4f214d",
+      "result_id": "832879d9-3618-4216-a313-73d79af64f1c"
+    },
+    {
+      "claim_id": "094021a2-72a7-4f0e-b547-df3c1dc8a874",
+      "result_id": "832879d9-3618-4216-a313-73d79af64f1c"
+    },
+    {
+      "claim_id": "50fcb3e5-c760-4eec-b6aa-7127eb8071ec",
+      "result_id": "637613e2-d441-4465-bb71-1986f1c61402"
+    },
+    {
+      "claim_id": "dc7bdd56-3c00-489c-a9f6-0828a238d914",
+      "result_id": "637613e2-d441-4465-bb71-1986f1c61402"
+    },
+    {
+      "claim_id": "03158559-9595-4361-8a5e-b05752dcb598",
+      "result_id": "637613e2-d441-4465-bb71-1986f1c61402"
+    },
+    {
+      "claim_id": "50560173-0c72-4a00-af4a-8e68298032dd",
+      "result_id": "637613e2-d441-4465-bb71-1986f1c61402"
+    },
+    {
+      "claim_id": "ece1a132-ecf6-488a-8ed6-647c243e97ec",
+      "result_id": "ff9a1afc-185b-4811-a9aa-ce2ec1130469"
+    },
+    {
+      "claim_id": "980678ee-7c26-4e0e-8308-a6dee4f0242a",
+      "result_id": "21fb8923-4579-465d-ad88-d914c8ca32e6"
+    },
+    {
+      "claim_id": "a6f4c36f-4579-4f80-8d71-fc16a975edd1",
+      "result_id": "21fb8923-4579-465d-ad88-d914c8ca32e6"
+    },
+    {
+      "claim_id": "4576a9eb-fe63-49aa-863a-bf0a8630ea8d",
+      "result_id": "21fb8923-4579-465d-ad88-d914c8ca32e6"
+    },
+    {
+      "claim_id": "0d1743d1-38eb-4444-9cd7-bd2022293c22",
+      "result_id": "21fb8923-4579-465d-ad88-d914c8ca32e6"
+    },
+    {
+      "claim_id": "3c5f967f-08ca-43eb-9b7f-26ef72a9b704",
+      "result_id": "21fb8923-4579-465d-ad88-d914c8ca32e6"
+    },
+    {
+      "claim_id": "622a9dba-f118-48c9-a077-695d6ea7d90d",
+      "result_id": "21fb8923-4579-465d-ad88-d914c8ca32e6"
+    },
+    {
+      "claim_id": "5d47bf41-6086-4922-b64c-39219cd44417",
+      "result_id": "21fb8923-4579-465d-ad88-d914c8ca32e6"
+    },
+    {
+      "claim_id": "96553ca2-275a-448b-98f7-7edfc63085ad",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "f303b5a6-0077-4b50-88f6-9dab66bd2159",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "b03a72a0-fc6f-4545-b879-667ce2bb91ae",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "d59fca00-424b-4d98-ab6d-14a6bbd6a965",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "e88de618-419a-4177-8f5f-3b33b2463bd8",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "e36394c2-6f7f-482a-8782-f59632894015",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "0c0de89b-1234-4bd9-8750-95ab1930cfb3",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "3ecefe05-1089-4ca9-be67-60de5fccfb3e",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "9cc8cd39-46b6-4930-8b2e-d71536d143a4",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "3a27b1c0-8e2e-4b3c-8f99-ff4c5912ab0d",
+      "result_id": "3db12174-6ac7-43bc-9e9d-e0eedc29338f"
+    },
+    {
+      "claim_id": "7bc89e51-a6f9-4466-8803-44de63a6dcfb",
+      "result_id": "5fae1ca5-4717-4e85-bc99-e8fdfbd99cbb"
+    }
+  ],
+  "comparisons": []
+}

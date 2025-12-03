@@ -1,0 +1,1442 @@
+{
+  "submission": {
+    "id": "67c4a649-68b6-433b-a93c-fd96e2947b2a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:32:28.311565Z",
+    "updated_at": "2025-12-03T03:32:28.311565Z"
+  },
+  "content": [
+    {
+      "id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "submission_id": "67c4a649-68b6-433b-a93c-fd96e2947b2a",
+      "content_type": "manuscript",
+      "content_text": "# Colistin kills bacteria by targeting lipopolysaccharide in the cytoplasmic membrane\n\n## Authors\n\n- Akshay Sabnis<sup>1</sup>\n- Katheryn LH Hagart<sup>1</sup>\n- Anna Kl\u00f6ckner<sup>1</sup>\n- Michele Becce<sup>2</sup>\n- Lindsay E Evans<sup>1</sup>\n- R Christopher D Furniss<sup>1</sup> ([ORCID: 0000-0002-5806-5099](https://orcid.org/0000-0002-5806-5099))\n- Despoina AI Mavridou<sup>6</sup>\n- Ronan Murphy<sup>7</sup>\n- Molly M Stevens<sup>2</sup> ([ORCID: 0000-0002-7335-266X](https://orcid.org/0000-0002-7335-266X))\n- Jane C Davies<sup>7</sup>\n- G\u00e9rald J Larrouy-Maumus<sup>1</sup>\n- Thomas B Clarke<sup>1</sup>\n- Andrew M Edwards<sup>1</sup> ([ORCID: 0000-0002-7173-7355](https://orcid.org/0000-0002-7173-7355)) \u2020\n\n### Affiliations\n\n1. MRC Centre for Molecular Bacteriology and Infection, Imperial College London London United Kingdom\n2. Department of Bioengineering, Imperial College London London United Kingdom\n3. Department of Materials, Imperial College London London United Kingdom\n4. Institute of Biomedical Engineering, Imperial College London London United Kingdom\n5. Department of Chemistry, Imperial College London, Molecular Sciences Research Hub London United Kingdom\n6. Department of Molecular Biosciences, University of Texas at Austin Austin United States\n7. National Heart and Lung Institute, Imperial College London London United Kingdom\n8. Department of Paediatric Respiratory Medicine, Royal Brompton Hospital London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nColistin is an antibiotic of last resort, but has poor efficacy and resistance is a growing problem. Whilst it is well established that colistin disrupts the bacterial outer membrane (OM) by selectively targeting lipopolysaccharide (LPS), it was unclear how this led to bacterial killing. We discovered that MCR-1 mediated colistin resistance in Escherichia coli is due to modified LPS at the cytoplasmic rather than OM. In doing so, we also demonstrated that colistin exerts bactericidal activity by targeting LPS in the cytoplasmic membrane (CM). We then exploited this information to devise a new therapeutic approach. Using the LPS transport inhibitor murepavadin, we were able to cause LPS accumulation in the CM of Pseudomonas aeruginosa, which resulted in increased susceptibility to colistin in vitro and improved treatment efficacy in vivo. These findings reveal new insight into the mechanism by which colistin kills bacteria, providing the foundations for novel approaches to enhance therapeutic outcomes.\n\n## Introduction\n\nThe emergence of multi-drug-resistant Gram-negative pathogens such as Escherichia coli, Klebsiella pneumoniae\u00a0and Pseudomonas aeruginosa has led to the increased use of polymyxin antibiotics, which are often the only viable last-resort therapeutic option (Velkov et al., 2010; Garg et al., 2017; Biswas et al., 2012; Thomas et al., 2019). Two closely related polymyxin antibiotics are used clinically, colistin (polymyxin E) and polymyxin B, which share a high degree of structural similarity, consisting of a cationic peptide ring of 7 amino acids connected to a hydrophobic acyl tail by a linear chain of three amino acids (Velkov et al., 2010; Biswas et al., 2012).\n\nPolymyxins are rapidly bactericidal towards Gram-negative bacteria in vitro but are considerably less efficacious in vivo, with up to 70% of patients failing to respond to colistin treatment (Falagas et al., 2010; Paul et al., 2018; Linden et al., 2003). Restrictions on dosage due to the nephrotoxicity of polymyxins mean that only 50% of people with normal renal function achieve a steady state serum concentration sufficient to kill bacteria (Tran et al., 2016; Satlin et al., 2020). As such, there is a desperate need to develop new approaches to enhance the efficacy of polymyxin antibiotics.\n\nBarriers to increasing polymyxin efficacy include the significant gaps in our understanding of their mode of action. Whilst it is well established that the binding of polymyxins to lipopolysaccharide (LPS) on the surface of Gram-negative bacteria leads to disruption of the outer membrane (OM), it is unclear how this results in cell lysis and bacterial death (Figure 1\u2014figure supplement 1; Biswas et al., 2012; MacNair et al., 2018). It is hypothesised that damage to the LPS monolayer enables polymyxins to traverse the OM via a process of \u2018self-directed uptake\u2019, although this has not been demonstrated experimentally (MacNair et al., 2018; Powers and Hancock, 2003). Once across the OM, polymyxins permeabilise the cytoplasmic membrane (CM), which is required for bacterial lysis and killing (Velkov et al., 2010; Garg et al., 2017; Biswas et al., 2012). However, the mechanism by which colistin damages the CM is unclear (Powers and Hancock, 2003; Trimble et al., 2016). It has been proposed that the surfactant activity of polymyxins, conferred by the positively charged peptide ring and hydrophobic tail, is sufficient to compromise the phospholipid bilayer of the CM via a detergent-like effect (Velkov et al., 2010; Biswas et al., 2012). In support of this, polymyxins can interact with mammalian cell membranes, leading to changes in epithelial monolayer permeability (Berg et al., 1996). Polymyxin antibiotics also have some inhibitory activity against the Gram-positive bacterium Streptococcus pyogenes, where the CM is formed of a phospholipid bilayer (Betts et al., 2016).\n\nHowever, several lines of evidence call into doubt the ability of physiologically relevant concentrations of polymyxins to disrupt phospholipid bilayers. Firstly, the concentrations of polymyxin B required to disrupt mammalian epithelial cells or inhibit the growth of S. pyogenes (8\u201316 \u00b5g ml\u22121) are above typical serum concentrations of the antibiotic, and colistin at clinically relevant concentrations displays no activity against other Gram-positive organisms such as Staphylococcus aureus or Enterococcus faecalis (Berg et al., 1996; Betts et al., 2016; Si et al., 2018; Kouidhi et al., 2011). Furthermore, colistin has very little activity against synthetic phospholipid bilayer membranes unless LPS is present, a finding that explains why polymyxins are 30\u2013100-fold less active against colistin-resistant Acinetobacter baumanii isolates that are LPS-deficient, with an OM composed of a phospholipid bilayer (Khadka et al., 2018; Moffatt et al., 2010; Zhang et al., 2018). Finally, molecular dynamics simulations show that the interaction of colistin with phospholipid bilayers is unlike what has been reported for other antimicrobial peptides that target phospholipid bilayers (Fu et al., 2020). Together, these observations call into question whether, at physiologically relevant concentrations, colistin disrupts the CM of Gram-negative bacteria via the engagement of the polymyxin antibiotic with membrane phospholipids.\n\nIn addition to the mode of action of colistin, there are also gaps in our understanding of the mechanisms by which colistin resistance protects bacteria from polymyxin antibiotics. In Gram-negative bacteria, LPS is synthesised in the cytoplasm via the Raetz pathway, during which it is introduced into the inner leaflet of the CM (Raetz et al., 2007; Simpson and Trent, 2019). It is then flipped to the outer leaflet of the CM by MsbA before transportation to the OM via the LptABCDEFG machinery (Okuda et al., 2016; Zhou et al., 1998; Li et al., 2019). To date, 10 mobile colistin resistance (mcr) gene variants have been described, all of which encode phosphoethanolamine (pEtN) transferases that modify the lipid A component of LPS with pEtN as it is trafficked through the CM on the way to the OM (Liu et al., 2016; Carroll et al., 2019; Nang et al., 2019; Skov and Monnet, 2016; Wang et al., 2020). Colistin resistance can also arise via mutations in genes encoding two-component regulatory systems such as PhoPQ, PmrAB, or BasRS (Poirel et al., 2017; Janssen et al., 2020). This typically leads to the addition of 4-amino-4-deoxy-l-arabinose (L-ara4N) and/or pEtN groups to LPS, with this modification also occurring at the CM (Simpson and Trent, 2019; Poirel et al., 2017).\n\nDespite the association between MCR-mediated LPS modification and colistin resistance, there is evidence that it does not prevent polymyxin-mediated damage of the OM. For example, colistin has been shown to permit ingress of the N-phenyl-1-napthylamine (NPN) fluorophore into the OM of E. coli expressing mcr-1 (MacNair et al., 2018). Furthermore, colistin greatly enhances the activity of hydrophobic antibiotics such as rifampicin against polymyxin-resistant bacteria via disruption of the OM (Brennan-Krohn et al., 2018). However, despite colistin damaging the OM of resistant bacteria, it is unable to kill or lyse them (MacNair et al., 2018). This suggests that the modification of LPS with pEtN and/or L-ara4N protects the CM from colistin, but it is not clear how (MacNair et al., 2018; Brennan-Krohn et al., 2018).\n\nImproving our knowledge of how colistin kills bacteria is essential to help devise new approaches to enhance the efficacy of last resort polymyxin antibiotics (Liu et al., 2016; Carroll et al., 2019; Nang et al., 2019; Skov and Monnet, 2016; Wang et al., 2020). To do this, we set out to better understand how mcr-1 protects bacteria from colistin and to then use this information to elucidate the mode of action of colistin, with the ultimate aim of exploiting this information to improve colistin efficacy.\n\n## Results\n\n### MCR-1 protects the CM but not the OM from colistin-mediated disruption\n\nThe first issue we wanted to resolve was whether MCR-1 protected the CM and/or OM of bacteria from colistin. To do this, we used an isogenic E. coli MC1000 strain pair, one of which expresses mcr-1 from the IPTG-inducible vector pDM1 (mcr-1) to ensure consistent expression under our experimental conditions, and the other transformed with the pDM1 vector alone as a control (pEmpty) (Dortet et al., 2018; Key resources table). As expected, we found that E. coli MC1000 expressing mcr-1 had a significantly greater colistin minimum inhibitory concentration (MIC, 2 \u00b5g ml\u22121) compared to the MC1000 pEmpty control strain (0.25 \u00b5g ml\u22121), which was similar to that seen for clinical isolates (Dortet et al., 2018; Figure 1\u2014figure supplement 2). This confirmed that the E. coli cells were producing functional MCR-1.\n\nTo fully characterise the LPS-modifying activity of MCR-1, we undertook MALDI-TOF-based lipidomic analysis of both whole E. coli cells and E. coli spheroplasts that lacked an OM (Weiss and Fraser, 1973). We confirmed spheroplast formation by microscopy and used FITC labelling of OM surface proteins to demonstrate removal of the OM (Figure 1\u2014figure supplement 3, Figure 1\u2014figure supplement 4). Our lipidomic analysis revealed the presence of LPS modified with pEtN in both the CM and OM of mcr-1 expressing bacteria, consistent with the location of MCR-1 in the CM (Dortet et al., 2018; Furniss et al., 2019; Figure 1\u2014figure supplement 5). Of note, whilst 42 \u00b1 19% of total cellular LPS from MCR-1-producing E. coli was unmodified, the proportion of unmodified LPS in the CM was just 21 \u00b1 2% (Figure 1A, Figure 1\u2014figure supplement 5).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig1-v2.jpg)\n\n**Figure 1.:** (A) Quantification of LPS modified with phosphoethanolamine, expressed as the percentage of unmodified lipid A and unmodified lipid A, in whole cells and spheroplasts of E. coli MC1000 expressing mcr-1, as determined by MALDI-TOF-based lipidomics (n\u00a0=\u00a03 in duplicate, *p<0.05 between Whole Cells and Spheroplasts). (B) OM disruption of E. coli MC1000 cells expressing mcr-1 or an empty plasmid control strain (pEmpty) during 10 min of exposure to colistin at the indicated antibiotic concentrations, as determined by uptake of the fluorescent dye NPN (10 \u00b5M) (n\u00a0=\u00a05, each data point represents the arithmetic mean of 20 replicate measurements; ns: p>0.05 between pEmpty and mcr-1 strains, *p<0.05 between the indicated concentrations of colistin). (C) Permeabilisation of the CM of E. coli MC1000 cells expressing mcr-1 or empty plasmid-containing cells during incubation with colistin (4 \u00b5g ml\u22121), as determined using 2.5 \u00b5M propidium iodide (PI) (n\u00a0=\u00a04; *p<0.0001 between pEmpty and mcr-1 strains). (D) Growth or lysis of E. coli MC1000 cells expressing mcr-1 or empty plasmid control cells during exposure to colistin (4 \u00b5g ml\u22121), as measured using OD595nm readings (n\u00a0=\u00a04; *p<0.05 between pEmpty and mcr-1 strains). Data in (A) were analysed by a two-tailed paired Student\u2019s t-test. Data in (B\u2013D) were analysed by a two-way ANOVA with Sidak\u2019s (B) or Dunnett\u2019s (C,\u00a0D) post\u00a0hoc tests. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean. OM: outer membrane; NPN: N-phenyl-1-naphthylamine; CM: cytoplasmic membrane; r.f.u.: relative fluorescence units; OD: optical density.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Diagrammatic representation of the current hypothesised mechanism of action of colistin: (1) Colistin binds to LPS in the OM, causing displacement of cations that form bridges between LPS molecules and leading to membrane disruption. (2) The antibiotic then crosses the OM via a process termed \u2018self-directed uptake\u2019. (3) Colistin subsequently disrupts the CM through a mechanism that remains unclear. (4,\u00a05) Once the cell envelope is permeabilised, the bacteria lyse and are killed.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Growth of E. coli MC1000 cells containing an empty pDM1 plasmid (pEmpty) or MC1000 cells containing the pDM1 plasmid expressing the mcr-1 gene, as determined by measuring OD600nm over 16 hr incubation at 37\u00b0C (n\u00a0=\u00a03 in triplicate). (B) Final growth densities of E. coli MC1000 cells with an empty pDM1 plasmid and MC1000 cells harbouring the pDM1 plasmid encoding the mcr-1 gene in MHB media containing the indicated concentrations of colistin, as determined by measuring OD595nm after 18 hr incubation (n\u00a0=\u00a03 in triplicate; *p<0.0001 compared to pEmpty strain). Expression of the mobilised colistin resistance determinant mcr-1 by E. coli MC1000 bacteria resulted in only a minor growth defect relative to empty plasmid-containing control cells (A). As expected, E. coli MC1000 cells producing MCR-1 had an eightfold increase in the MIC of colistin in comparison to the isogenic empty plasmid strain (2 \u03bcg ml\u22121 versus 0.25 \u03bcg ml\u22121) (B). This confirmed that the bacteria harbouring a plasmid with the mcr-1 gene were resistant to colistin. Data in B were analysed by a two-way ANOVA with Sidak\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Representative phase contrast micrographs of E. coli MC1000 cells harbouring an empty pDM1 plasmid (pEmpty) or a pDM1 plasmid expressing the colistin-resistance determinant mcr-1 before (Whole Cells) and after (Spheroplasts) treatment with 0.25 mg ml\u22121 EDTA (to remove the outer membrane\u00a0[OM]) and 1 mg ml\u22121 lysozyme (to remove the cell wall) for 1 hr at 30\u00b0C, followed by the addition of trypsin (0.5 mg ml\u22121) for 15 min, with all incubations occurring in Tris buffer (0.03 M, pH 8.0) containing 20% sucrose (Scale bars: 5 \u03bcm). (B) Quantification of length:width ratio of E. coli MC1000 cells containing an empty plasmid, or E. coli cells with the same plasmid encoding the mcr-1 gene, before (Whole Cells) and after (Spheroplasts) exposure to EDTA, lysozyme and trypsin (A) (n\u00a0=\u00a0100 cells per group; *p<0.0001 compared to the respective Whole Cells). Removal of the OM and cell wall from both E. coli MC1000 pEmpty and mcr-1-expressing bacteria results in the formation of round cells with a length:width ratio of\u00a0~1 (A, B), confirming the successful production of E. coli spheroplasts lacking the OM and cell wall. Data in B were analysed by a one-way ANOVA with Tukey\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Representative fluorescence microscopy images of E. coli MC1000 pEmpty cells labelled with fluorescein isothiocyanate (FITC, 0.5 mg ml\u22121) before (Whole Cells) and after (Spheroplasts) conversion to spheroplasts with EDTA (0.25 mg ml\u22121) and lysozyme (1 mg ml\u22121) in Tris buffer (0.03 M, pH 8.0) containing 20% sucrose, as described in Figure 1\u2014figure supplement 6 (Scale bars: 5 \u03bcm). (B) Quantification of fluorescence from FITC-labelled E. coli MC1000 pEmpty cells before (Whole Cells) and after (Spheroplasts) conversion to spheroplasts (n\u00a0=\u00a03 in triplicate; *p<0.01 compared to Whole Cells). Proteins in the OM of whole E. coli MC1000 cells were tagged with a FITC fluorophore for 30 min, as previously described (Wiegand et al., 2008). Following conversion of these labelled bacterial cells to spheroplasts, there was virtually no fluorescence from FITC visible by microscopy (A), or when quantifying the entire cell population (B). This confirmed that the OM had been successfully removed during the formation of spheroplasts, and that there was no contamination of the CM with material from the OM. Data in B were analysed by a paired Student\u2019s t-test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Representative mass spectra showing the ratio of unmodified lipid A (red) to lipid A modified with phosphoethanolamine (blue) in whole cells and spheroplasts of E. coli MC1000 expressing mcr-1, as determined by MALDI-TOF-based lipidomics. There was a higher proportion of LPS modified with pETN in mcr-1-expressing E. coli MC1000 spheroplasts compared to whole E. coli MC1000 cells, demonstrating that there is an increased\u00a0abundance of unmodified LPS in the OM compared to the CM.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Checkerboard broth microdilution assay showing the synergistic growth-inhibitory activity of colistin and rifampicin against E. coli MC1000 cells producing MCR-1, as determined by measuring OD600nm after 18 hr incubation. Gram-negative bacteria including E. coli are intrinsically resistant to rifampicin, due to its inability to penetrate the OM of the cell envelope and access its intracellular target (MacNair et al., 2018). However, colistin and rifampicin displayed potent synergy against mcr-1-expressing E. coli, with a fractional inhibitory concentration index (FICI) value of 0.14. This indicated that colistin was enabling rifampicin to cross the OM and enter the cytoplasm, providing further evidence that colistin was able to disrupt the OM of resistant bacteria producing MCR-1.\n\nWe next assessed the effect of colistin on the integrity of the E. coli OM using the hydrophobic NPN dye, which fluoresces upon contact with phospholipids exposed by damage to the LPS monolayer (MacNair et al., 2018; Helander and Mattila-Sandholm, 2000). As expected, colistin caused permeabilisation of the OM of the E. coli pEmpty strain in a dose-dependent manner (Figure 1B). In agreement with previous findings, we found that colistin also disrupted the OM of E. coli expressing mcr-1 to a similar degree to E. coli pEmpty (Figure 1B; MacNair et al., 2018). To further investigate permeabilisation of the OM by colistin, we assessed the susceptibility of bacteria to rifampicin in the presence of the polymyxin antibiotic. Rifampicin cannot normally cross the OM, which makes E. coli intrinsically resistant to the antibiotic. However, in keeping with previous work, we found that colistin sensitised E. coli expressing mcr-1 to rifampicin, with a fractional inhibitory concentration index (FICI) value of 0.14 indicating synergy between the two antibiotics in a checkerboard assay (Figure 1\u2014figure supplement 6; MacNair et al., 2018). This confirmed that colistin disrupted the OM of resistant bacteria producing MCR-1. Therefore, MCR-1-mediated changes to LPS did not prevent permeabilisation of the OM by colistin, which reflects the presence of the relatively large quantity of unmodified LPS in the OM as determined in our lipidomic analysis (Figure 1A, Figure 1\u2014figure supplement 5).\n\nNext, we assessed damage to the CM structure in the E. coli strain pair during colistin exposure, using the membrane impermeant dye propidium iodide (PI). PI fluoresces upon contact with DNA in the bacterial cytoplasm, and thus is indicative of permeabilisation of the both the OM and CM of whole bacterial cells (Allison and Lambert, 2015; Pietschmann et al., 2009). As expected, colistin exposure resulted in a strong PI signal from E. coli pEmpty cells, indicative of CM permeabilisation (Figure 1C), which gradually declined, most likely due to nucleases released from lysed bacteria (Lee et al., 2017). However, despite colistin permeabilising the OM of E. coli expressing mcr-1, the CM of these bacteria remained intact, as demonstrated by the lack of PI-mediated fluorescence (Figure 1C). In keeping with these findings, colistin caused lysis of E. coli pEmpty cells, as seen by a reduction in OD595nm readings over time (Figure 1D). By contrast, E. coli cells producing MCR-1 grew in the presence of colistin despite the damage the polymyxin caused to the OM, as demonstrated by an increase in OD595nm measurements over time (Figure 1D). As such, the damage caused to the OM of E. coli MCR-1 strain by colistin is likely to be minor.\n\nTaken together, these data demonstrate that MCR-1 protects the CM but not the OM from colistin-mediated permeabilisation.\n\n### Colistin targets LPS in the CM\n\nAlthough colistin was able to permeabilise the OM of E. coli expressing mcr-1, it was possible that the pEtN modifications might reduce the ability of the antibiotic to access the periplasm and thus the CM. To negate this possibility and focus on whether MCR-1 mediated LPS modification directly protected the CM from colistin, we performed experiments using spheroplasts of our E. coli strains that lacked both OM and cell wall.\n\nTo test whether LPS modifications altered the biophysical properties of the CM, we measured both membrane fluidity and surface charge of the E. coli spheroplasts using established methods. There were no differences in fluidity of the CM between E. coli pEmpty or mcr-1-expressing cells (Figure 2\u2014figure supplement 1). As might be expected, there was a slight increase in the positive charge of the CM of the mcr-1-expressing E. coli relative to the pEmpty control, indicative of the presence of cationic pEtN modifications to LPS (Figure 2\u2014figure supplement 1). To investigate whether this slight increase in membrane positivity was likely to be sufficient to repel colistin from the membrane, we determined the susceptibility of spheroplasts from E. coli MC1000 mcr-1 or pEmpty to colistin and compared it with the cationic antimicrobial peptides (CAMPs) daptomycin or nisin. Both CAMPs are well characterised for their ability to permeabilise phospholipid bilayers and, like colistin, they are positively charged, enabling us to detect whether the change to membrane charge conferred by MCR-1-modified LPS in the CM contributed specifically to polymyxin resistance (Karas et al., 2020; Zendo et al., 2010). Importantly, increased membrane positive charge is a common mechanism of resistance to daptomycin (Karas et al., 2020).\n\nIn the absence of treatment, there was a small but progressive loss of CM integrity over time due to the fragile nature of spheroplasts. However, allowing for this, the CM of spheroplasts of E. coli MC1000 mcr-1 was resistant to damage by colistin, but susceptible to daptomycin and nisin (Figure 2A\u2013C). By contrast, colistin, daptomycin, and nisin all permeabilised the CM of spheroplasts of E. coli pEmpty (Figure 2A\u2013C). In keeping with the data from assays measuring CM damage, colistin, daptomycin, and nisin all caused lysis of spheroplasts of E. coli pEmpty, whilst the spheroplasts from E. coli expressing mcr-1 were undamaged by colistin, but were lysed by both daptomycin and nisin (Figure 2D\u2013F). Combined, these data demonstrated that the protection afforded to the CM by MCR-1 is specific for colistin, and that the polymyxin antibiotic does not share the same target as the phospholipid-targeting CAMPs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Permeabilisation of the CM of E. coli MC1000 spheroplasts generated from bacteria expressing mcr-1 or empty plasmid control bacteria (pEmpty) during incubation with (A) colistin (4 \u00b5g ml\u22121), (B) daptomycin (20 \u00b5g ml\u22121, with 1.25 mM Ca2+ ions), or (C) nisin (20 \u00b5g ml\u22121), as determined using 0.25 \u00b5M PI (n\u00a0=\u00a03, experiment performed on four independent occasions; *p<0.01 between pEmpty and mcr-1 strains). (D\u2013F) Lysis of E. coli MC1000 spheroplasts generated from bacteria expressing mcr-1 or empty plasmid control bacteria during incubation with (D) colistin (4 \u00b5g ml\u22121), (E) daptomycin (20 \u00b5g ml\u22121, with 1.25 \u00b5M Ca2+ ions), or (F) nisin (20 \u00b5g ml\u22121), as measured using OD600nm readings (n\u00a0=\u00a03, experiment performed on four independent occasions; *p<0.05 between pEmpty and mcr-1 strains, error bars are omitted for clarity). Data in (A\u2013F) were analysed by a two-way ANOVA with Dunnett\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars, where shown, represent the standard deviation of the mean. CM: cytoplasmic membrane; r.f.u.: relative fluorescence units; OD: optical density.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Fluidity of the CM of E. coli MC1000 spheroplasts producing MCR-1 or an empty plasmid control strain, as determined using the fluorescent Laurdan dye (100 \u00b5M) to generate Generalised Polarisation (GP) values (n\u00a0=\u00a03 in duplicate; ns: p>0.05 compared to pEmpty). (B) Charge of the CM of E. coli MC1000 spheroplasts producing MCR-1 or an empty plasmid control strain, as determined by binding of highly\u00a0positively charged FITC-labelled Poly-L-Lysine (PLL, 20 \u00b5g ml\u22121) to the surface of spheroplasts (n\u00a0=\u00a03; *p<0.05 compared to pEmpty). There was no difference in GP between pEmpty spheroplasts and spheroplasts expressing mcr-1, indicating that modified LPS had no effect on the fluidity of the CM (A). As expected, there was a small decrease in the amount of positively-charged PLL that could bind to the CM of spheroplasts producing MCR-1 compared to pEmpty, demonstrating that LPS modifications slightly increased the net positive charge of the CM (B). Data in (A, B) were analysed by a two-tailed paired Student\u2019s t-test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative mass spectra showing the presence and abundance of unmodified lipid A (red) and lipid A modified with phosphoethanolamine (blue) in MCR-1-producing spheroplasts of E. coli MC1000 either uninduced, or induced with 0.05 mM IPTG, as determined by MALDI-TOF-based lipidomics. Also shown, a spectrum from the same analysis of E. coli pEmpty (B) Quantification of LPS modified with phosphoethanolamine, expressed as the ratio of modified lipid A to unmodified lipid A, in MCR-1-producing spheroplasts of E. coli MC1000 either uninduced, or induced with 0.05 mM IPTG, as determined by MALDI-TOF-based lipidomics. (n\u00a0=\u00a03, *p<0.01 between 0 mM IPTG and 0.05 mM IPTG). (C) Permeabilisation by colistin (4 \u00b5g ml\u22121) of the CM of E. coli MC1000 spheroplasts generated from empty plasmid control bacteria, or from bacteria expressing mcr-1 either uninduced, or induced with 0.05 mM IPTG, as determined using 0.25 \u00b5M PI (n\u00a0=\u00a03, experiment performed on three independent occasions). (D) Lysis by colistin (4 \u00b5g ml\u22121) of E. coli MC1000 spheroplasts generated from empty plasmid control bacteria, or from bacteria expressing mcr-1 either uninduced, or induced with 0.05 mM IPTG, as measured using OD600nm readings (n\u00a0=\u00a03, experiment performed on three independent occasions). Spheroplasts of E. coli cells producing MCR-1 with different amounts of modified LPS in the CM were generated using the IPTG-inducible pDM1 plasmid. In the absence of IPTG induction, pETN-modified LPS was detected in the CM of E. coli spheroplasts, suggesting leakiness of the expression vector (A). Crucially, however, there was a significant increase in the proportion of pETN-modified lipid A relative to unmodified lipid A in the CM in response to 0.05 mM IPTG, in keeping with increased mcr-1 expression (A, B). The quantity of unmodified LPS in the CM of E. coli spheroplasts correlated with the extent to which the CM was susceptible to colistin-induced disruption of the CM, with spheroplasts that were not induced with IPTG displaying only a partial reduction in PI uptake in response to the polymyxin antibiotic compared to pEmpty spheroplasts (C). In keeping with this, colistin-mediated lysis of uninduced spheroplasts producing MCR-1 was delayed, but not prevented (D). By contrast, E. coli spheroplasts expressing mcr-1 which were induced with 0.05 mM IPTG and had a lower proportion of unmodified lipid A in the CM and exhibited no CM disruption in response to colistin and there was also no lysis of spheroplasts observed (C, D). This confirmed that resistance to colistin conferred by mcr-1 was directly related to the amount of unmodified LPS present in the CM. Data in B were analysed by a one-way ANOVA with Sidak\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\nTo further explore the specificity of MCR-1-mediated LPS modifications in the CM for protection against colistin, we produced spheroplasts of E. coli with different levels of LPS modification. This revealed a clear dose-dependent relationship between the abundance of unmodified LPS in the CM and the susceptibility of spheroplasts to colistin-mediated CM damage and lysis (Figure 2\u2014figure supplement 2).\n\nTherefore, since MCR-1 specifically modifies LPS and this modification selectively protects the CM from colistin in a dose-dependent manner, we concluded that LPS is the CM target of colistin, just as it is in the OM.\n\n### Colistin damages the CM by disrupting cation bridges between LPS molecules\n\nTo understand how colistin targeting of LPS in the CM leads to membrane disruption, we studied the role of cation bridges which are crucial for stabilising interactions between LPS molecules, by exposing spheroplasts from E. coli pEmpty cells to colistin in the absence or presence of excess magnesium. In keeping with a role for cation bridges, we found that magnesium chloride conferred dose-dependent protection from colistin-mediated CM disruption (Figure 3A). To rule out a general protective osmotic effect from the higher salt concentration, we demonstrated that identical concentrations of sodium chloride did not protect spheroplasts from colistin (Figure 3B). Furthermore, the presence of exogenous magnesium had no significant effect on reducing spheroplast CM damage caused by daptomycin or nisin (Figure 3C,D), confirming that these CAMPs do not have the same CM target as colistin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Permeabilisation of the CM of E. coli MC1000 spheroplasts generated from empty plasmid control bacteria during incubation with colistin (4 \u00b5g ml\u22121), in the absence or presence of either MgCl2( A) or NaCl (B) at the indicated concentrations, as determined using 0.25 \u00b5M PI (n\u00a0=\u00a03, experiment performed on three independent occasions; *p<0.01 between 0 mM MgCl2 and 10 mM MgCl2). (C, D) Permeabilisation of the CM of E. coli MC1000 spheroplasts generated from empty plasmid control bacteria during incubation with either (C) daptomycin (20 \u00b5g ml\u22121, with 1.25 mM Ca2+ ions) or (D) nisin (20 \u00b5g ml\u22121), in the absence or presence of MgCl2 at the indicated concentrations, as determined using 0.25 \u00b5M PI (n\u00a0=\u00a03, experiment performed on three independent occasions). Data in (A\u2013D) were analysed by a two-way ANOVA with Dunnett\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean. CM: cytoplasmic membrane; r.f.u.: relative fluorescence units.\n\nIn conclusion, our findings demonstrate that colistin targets LPS in the CM of polymyxin-susceptible E. coli, leading to the displacement of cationic inter-LPS bridges, membrane disruption, and ultimately bacterial lysis. This is similar to the mechanism by which colistin disrupts the OM of bacteria and synthetic phospholipid bilayer membranes containing low levels of LPS (Khadka et al., 2018; Moore and Hancock, 1986; D'amato et al., 1975). However, the high levels of LPS modified by pEtN in the CM of MCR-1-producing E. coli prevent colistin from targeting LPS in the CM, protecting the membrane and conferring resistance to the polymyxin antibiotic.\n\n### Murepavadin-triggered LPS accumulation in the CM sensitises P. aeruginosa to colistin\n\nHaving determined that colistin kills bacteria by targeting LPS in the CM, we wanted to use this information to develop a new therapeutic approach to enhance colistin efficacy.\n\nMurepavadin is a first-in-class peptide-based inhibitor of the LptD component of the LptABCDEFG complex of P. aeruginosa that transports LPS from the CM to the OM (Andolina et al., 2018). Thus, inhibition of the Lpt system in P. aeruginosa leads to LPS accumulation in the CM, which we hypothesised would increase the susceptibility of the bacterium to colistin (Andolina et al., 2018; Sperandeo et al., 2008).\n\nTo test our hypothesis, we first used a checkerboard MIC assay and found that colistin synergised with murepavadin against P. aeruginosa PA14 cells (FICI value of 0.375), revealing that sub-lethal concentrations of the LptD inhibitor sensitised the bacterium to colistin (Figure 4A; Odds, 2003).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig4-v2.jpg)\n\n**Figure 4.:** (A) Checkerboard broth microdilution assay showing the synergistic growth-inhibitory interaction between colistin and the LPS transport inhibitor murepavadin against P. aeruginosa PA14 cells, as determined by measuring OD595nm after 18 hr incubation. (B) OM disruption of P. aeruginosa PA14 cells during 10 min exposure to colistin (2 \u00b5g ml\u22121) in the absence or presence of murepavadin (0.05 \u00b5g ml\u22121), as assessed by uptake of the fluorescent dye NPN (10 \u00b5M) (n\u00a0=\u00a04, each data point represents the arithmetic mean of 20 replicate measurements; ns: p>0.05 between colistin-treated bacteria). (C) CM disruption of P. aeruginosa PA14 cells exposed to colistin (2 \u00b5g ml\u22121) in the absence or presence of murepavadin (0.05 \u00b5g ml\u22121), as determined using 2.5 \u00b5M PI (n\u00a0=\u00a04; *p<0.0001 for colistin and murepavadin-exposed cells compared to colistin alone). (D) Lysis of P. aeruginosa PA14 cells exposed to colistin (2 \u00b5g ml\u22121) in the absence of presence of murepavadin (0.05 \u00b5g ml\u22121), as measured by OD595nm readings (n\u00a0=\u00a04; *p<0.01 for colistin and murepavadin-exposed cells compared to colistin alone). Data in (B) were analysed by a one-way ANOVA with Tukey\u2019s post\u00a0hoc test. Data in (C,\u00a0D) were analysed by a two-way ANOVA with Dunnett\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean. OM: outer membrane; NPN: N-phenyl-1-naphthylamine; CM: cytoplasmic membrane; r.f.u.: relative fluorescence units; OD: optical density.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) Representative phase contrast micrographs of P. aeruginosa PA14 cells before (A) and after (B) treatment with 0.25 mg ml\u22121 EDTA (to remove the OM) and 1 mg ml\u22121 lysozyme (to remove the cell wall) for 1 hr at 30\u00b0C, followed by the addition of trypsin (0.5 mg ml\u22121) for 15 min, with all incubations occurring in Tris buffer (0.03 M, pH 8.0) containing 20% sucrose (Scale bars: 5 \u03bcm). (C) Quantification of length:width ratio of P. aeruginosa PA14 whole cells (A) and P. aeruginosa spheroplasts following exposure to EDTA, lysozyme, and trypsin (B) (n\u00a0=\u00a0250 cells per group; *p<0.0001 compared to Whole Cells). (D) Lysis of P. aeruginosa spheroplasts exposed to EDTA (0.25 mg ml\u22121) and lysozyme (1 mg ml\u22121) at 30\u00b0C in Tris buffer (0.03 M, pH 8.0), in the presence or absence of 20% sucrose, as determined by OD595nm measurements (n\u00a0=\u00a04; *p<0.0001 compared to No Sucrose). After removal of the OM and cell wall with EDTA and lysozyme respectively, the resulting P. aeruginosa cells formed had a length:width ratio of almost exactly 1 (C) and immediately lysed when not maintained in an osmoprotective environment containing 20% sucrose (D). Together, these data confirmed the successful production of P. aeruginosa spheroplasts lacking the OM and cell wall. Data in C were analysed by an unpaired Student\u2019s t-test. Data in D were analysed by a two-way ANOVA with Sidak\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative fluorescence microscopy images of P. aeruginosa PA14 cells labelled with fluorescein isothiocyanate (FITC, 0.5 mg ml\u22121) before (Whole Cells) and after (Spheroplasts) conversion to spheroplasts with EDTA (0.25 mg ml\u22121) and lysozyme (1 mg ml\u22121) in Tris buffer (0.03 M, pH 8.0) containing 20% sucrose, as described in Figure 4\u2014figure supplement 1 (Scale bars: 5 \u03bcm). (B) Quantification of fluorescence from FITC-labelled P. aeruginosa PA14 cells before (Whole Cells) and after (Spheroplasts) conversion to spheroplasts (n\u00a0=\u00a03 in triplicate; *p<0.05 compared to Whole Cells). Proteins in the OM of whole P. aeruginosa cells were tagged with a FITC fluorophore for 30 min, as previously described (Wiegand et al., 2008). Following conversion of these labelled bacterial cells to spheroplasts, there was virtually no fluorescence from FITC visible by microscopy (A), or when quantifying the entire cell population (B). This confirmed that the OM had been successfully removed during the formation of spheroplasts, and that there was no contamination of the CM with material from the OM. Data in B were analysed by a paired Student\u2019s t-test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A, B) Representative mass spectra (A) and quantification (B) showing the ratio of lipid A to a membrane phospholipid species (34:1,2) in the CM of P. aeruginosa PA14 spheroplasts exposed, or not, to murepavadin (0.05 \u00b5g ml\u22121) for 2 hr, as determined by MALDI-TOF-based lipidomics (n\u00a0=\u00a03 in duplicate). (C, D) Quantification of LPS levels in the OM (C) and CM (D) of P. aeruginosa PA14 during conversion to spheroplasts from whole cells pre-exposed, or not, to the LPS transport inhibitor murepavadin (0.05 \u03bcg ml\u22121) for 2 hr, as determined using the Limulus Amebocyte Lysate (LAL) assay (n\u00a0=\u00a03; ns: p>0.05, *p<0.05 compared to Untreated conditions). Exposure of P. aeruginosa to a sub-lethal concentration of the LPS transport inhibitor murepavadin triggered an accumulation of LPS in the CM, but had no effect on LPS levels in the OM. Furthermore, MALDI-TOF analysis confirmed that the LPS in murepavadin-treated cells was unmodified, confirming it could be accurately detected and quantified using the LAL assay. Data in B\u2013D were analysed by a two-tailed paired Student\u2019s t-test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Growth of P. aeruginosa PA14 cells in the presence of a sub-lethal concentration of the LptD inhibitor murepavadin at the indicated concentration, as determined by measuring OD600nm during 14 hr incubation at 37\u00b0C (n\u00a0=\u00a04; murepavadin-treated population not significantly different i.e. p>0.05 compared to Untreated). Exposure of P. aeruginosa to murepavadin at the concentration used in experiments had no effect on blocking bacterial growth, confirming that this was a sub-lethal concentration. Data were analysed by a two-way ANOVA with Sidak\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Checkerboard broth microdilution assay showing the growth-inhibitory interaction between PMBN and murepavadin against P. aeruginosa PA14 cells, as determined by measuring OD600nm after 18 hr incubation. In contrast to the synergistic interaction between colistin and murepavadin (Figure 4A), there was no synergy observed between murepavadin and PMBN, with an FICI value of 1. The lack of synergy between PMBN and murepavadin confirms that the synergistic interaction between colistin and murepavadin was not due to colistin permeabilising the OM and enhancing the activity of murepavadin.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Survival of P. aeruginosa PA14 cells exposed to polymyxin B nonapeptide (1.67 \u00b5g ml\u22121) in the absence of presence of murepavadin (0.05 \u00b5g ml\u22121), as determined by c.f.u. counts (n\u00a0=\u00a04). In contrast to the marked increase in bacterial killing when colistin was used in combination with murepavadin (Figure 5A), there was no decrease in survival of P. aeruginosa cells when treated with murepavadin alongside the molar equivalent concentration of PMBN (1.73 \u00b5M) as was used for colistin experiments in Figure 5A (2 \u00b5g ml\u22121), although there was evidence of an additive effect. Since PMBN and colistin both share the ability to permeabilise the OM, this provided further confirmation that the enhanced bacterial killing was not due to colistin providing murepavadin with increased access to its target, but rather due to murepavadin-induced accumulation of LPS in the CM. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig4-figsupp7-v2.jpg)\n\n**Figure 4\u2014figure supplement 7.:** (A) Permeabilisation of the CM of P. aeruginosa PA14 spheroplasts by colistin (2 \u00b5g ml\u22121) following exposure, or not, of bacteria to murepavadin (0.05 \u00b5g ml\u22121) for 2 hr prior to conversion to spheroplasts, as determined using 0.25 \u00b5M PI (n\u00a0=\u00a03; experiment performed on three independent occasions, *p<0.01 for murepavadin pre-treated spheroplasts compared to untreated cells). (B) Lysis of P. aeruginosa PA14 spheroplasts by colistin (2 \u00b5g ml\u22121) following exposure, or not, of bacteria to murepavadin (0.05 \u00b5g ml\u22121) for 2 hr prior to conversion to spheroplasts, as measured by OD600nm readings (*p<0.05 for murepavadin pre-treated spheroplasts compared to untreated cells). As observed with whole bacterial cells (Figure 4C,D), murepavadin-induced accumulation of LPS in the CM of P. aeruginosa spheroplasts significantly enhanced the ability of colistin to damage the CM (A). In keeping with this, the increased amount of LPS in the CM of murepavadin pre-treated spheroplasts led to an increase in colistin-mediated lysis (B). Crucially, these experiments were performed with cells that were pre-treated with murepavadin, with the LptD inhibitor washed out prior to exposure to colistin. This confirmed that it was murepavadin triggering LPS accumulation in the CM that led to an increase in bacterial lysis in response to colistin, rather than the polymyxin antibiotic enhancing murepavadin activity through OM permeabilisation. Data in A, B were analysed by a two-way ANOVA with Sidak\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\nTo confirm that sub-lethal concentrations of murepavadin altered LPS abundance in the CM, P. aeruginosa was incubated with murepavadin, before the amount of LPS in whole cells and spheroplasts was measured using the well-established Limulus Amoebocyte Lysate (LAL) assay, since previous work has shown this approach to be a highly accurate way of quantifying LPS in whole cell lysates (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2; Hoppe Parr et al., 2017). The suitability of the LAL assay was further confirmed using a MALDI-TOF-based lipidomic analysis of spheroplast lysates, which confirmed that the LPS in both murepavadin-exposed and untreated bacteria was unmodified and thus able to be accurately detected and quantified (Figure 4\u2014figure supplement 3; Takayama et al., 1984). Sub-lethal concentrations of murepavadin caused a slight reduction in LPS levels in the OM of P. aeruginosa cells, but a significant increase in the amount of LPS in the CM compared to untreated spheroplasts (Figure 4\u2014figure supplement 3, Figure 4\u2014figure supplement 4). Moreover, our lipidomic analysis revealed that the ratio of lipid A:phospholipid increased in P. aeruginosa spheroplasts pre-exposed to murepavadin, confirming that the LptD inhibitor caused LPS to accumulate in the CM (Figure 4\u2014figure supplement 3).\n\nNext, we proceeded to test whether LPS accumulation in the CM increased the susceptibility of P. aeruginosa to colistin. We started by examining the effect of colistin on the OM and CM of P. aeruginosa exposed, or not, to murepavadin. Despite the slight reduction of LPS at the OM caused by murepavadin, colistin permeabilised the OM to the same extent as bacteria that had not been exposed to murepavadin, with similar levels of NPN uptake (Figure 4B). By contrast, however, murepavadin significantly enhanced permeabilisation of the CM by colistin in whole cells of P. aeruginosa, as determined via uptake of PI (Figure 4C). Thus, an increase in LPS levels in the CM promoted colistin-mediated damage, in keeping with our conclusion that LPS in the CM is the target of the polymyxin antibiotic. Furthermore, P. aeruginosa cells exposed to murepavadin were more rapidly lysed by colistin than untreated cells (Figure 4D).\n\nTaken together, these findings indicated that LPS accumulation in the CM increased susceptibility to the polymyxin antibiotic. However, an alternative explanation for the synergy between colistin and murepavadin was that polymyxin-mediated damage to the OM enabled murepavadin greater access to LptD in the periplasm. To test this, we first examined whether the OM permeabilising agent polymyxin B nonapeptide (PMBN) also synergised with murepavadin. However, we did not see synergy in MIC checkerboard or bactericidal assays between PMBN and murepavadin (Figure 4\u2014figure supplement 5, Figure 4\u2014figure supplement 6). Next, we pre-treated P. aeruginosa with murepavadin alone to cause LPS accumulation in the CM and then removed the murepavadin by washing before converting the whole cells to spheroplasts and exposing these to colistin alone. The murepavadin pre-treated spheroplasts were much more susceptible to colistin-induced CM damage and lysis than untreated spheroplasts (Figure 4\u2014figure supplement 7). Therefore, colistin does not sensitise P. aeruginosa to murepavadin by compromising the OM; rather, murepavadin-induced accumulation of LPS in the CM potentiates the activity of colistin.\n\nTaken together, these experiments provided further evidence that colistin targets LPS in the CM and suggest that murepavadin and colistin might form a useful combination therapy.\n\n### Combination therapy with colistin and murepavadin promotes clearance of P. aeruginosa\n\nP. aeruginosa is a major cause of chronic lung infection in people with cystic fibrosis\u00a0(CF) and bronchiectasis. In both conditions, disease severity can rapidly increase during episodes of \u2018exacerbation\u2019 which must be treated aggressively to quickly restore lung function and reduce long-term damage (Polverino et al., 2017; Karampitsakos et al., 2020; Stanford et al., 2021). Therefore, having shown that murepavadin sensitised the CM to colistin-mediated damage, we wanted to determine whether this translated into enhanced antibacterial activity against relevant clinical isolates and increased treatment efficacy in vivo. We found that a sub-lethal concentration of murepavadin sensitised P. aeruginosa PA14 to a normally sub-lethal concentration of colistin (2 \u00b5g ml\u22121), resulting in\u00a0>10,000-fold reduction in c.f.u. counts relative to bacteria incubated with murepavadin or colistin alone after 8 hr (Figure 5A). We also found that murepavadin potentiated the activity of even lower concentrations of colistin (1 \u00b5g ml\u22121), with exposure to the LPS transport inhibitor increasing the ability of the polymyxin antibiotic to damage the CM, triggering bacterial lysis and cell death (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig5-v2.jpg)\n\n**Figure 5.:** (A) Survival of P. aeruginosa PA14 cells exposed to colistin (2 \u00b5g ml\u22121) in the absence of presence of murepavadin (0.05 \u00b5g ml\u22121), as determined by c.f.u. counts (n\u00a0=\u00a04; *p<0.05 for colistin and murepavadin-exposed cells compared to colistin alone). (B) Survival or growth of a panel of clinical multidrug-resistant P. aeruginosa strains isolated from the sputum of cystic fibrosis patients after 8 hr exposure to colistin (2 \u00b5g ml\u22121) alone, or in the presence of a sub-lethal concentration (0.5\u00d7 MIC) of murepavadin, as determined by c.f.u. counts (n\u00a0=\u00a04; *p<0.01 for colistin and murepavadin-exposed cells compared to colistin alone). (C) Burden of P. aeruginosa PA14 in the lungs of mice after 3 hr treatment with murepavadin (0.25 mg\u00a0kg-1), colistin (5 mg\u00a0kg-1), neither antibiotic, or both antibiotics in combination, as determined by c.f.u. counts (each data point represents a single mouse; for each group, n\u00a0=\u00a05; ns: p>0.05, *p<0.001 compared to untreated mice). Data in (A,\u00a0B) were analysed by a two-way ANOVA with Dunnett\u2019s (A) or Sidak\u2019s (B) post\u00a0hoc tests. Data in (C) were analysed by a Kruskal\u2013Wallis test with Dunn\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars, where shown, represent the standard deviation of the mean.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) OM disruption of P. aeruginosa PA14 cells during 10 min exposure to colistin (1 \u03bcg ml\u22121) in the absence or presence of murepavadin (0.05 \u03bcg ml\u22121), as assessed by uptake of the fluorescent dye NPN (10 \u03bcM) (n\u00a0=\u00a04, each data point represents the arithmetic mean of 20 replicate measurements; ns: p>0.05 between colistin-treated bacteria). (B) CM disruption of P. aeruginosa PA14 cells exposed to colistin (1 \u03bcg ml\u22121) in the absence or presence of murepavadin (0.05 \u03bcg ml\u22121), as determined using 2.5 \u03bcM PI (n\u00a0=\u00a04; *p<0.0001 for murepavadin-exposed cells compared to Colistin alone). (C) Growth of P. aeruginosa PA14 cells exposed to colistin (1 \u03bcg ml\u22121) in the absence or presence of murepavadin (0.05 \u03bcg ml\u22121), as measured by OD595nm readings (n\u00a0=\u00a04; *p<0.01 for murepavadin-exposed cells compared to Colistin alone). (D) Survival of P. aeruginosa PA14 cells exposed to colistin (1 \u03bcg ml\u22121) in the absence or presence of murepavadin (0.05 \u03bcg ml\u22121), as determined by c.f.u. counts (n\u00a0=\u00a04; *p<0.0001 for murepavadin-exposed cells compared to Colistin alone). Exposure of P. aeruginosa to murepavadin, which leads to accumulation of LPS in the CM, had no impact on the ability of colistin to damage the OM, further confirming that the LPS transport inhibitor, at the concentration used, did not significantly affect LPS levels in the OM (A). However, a normally sub-lethal concentration of colistin was able to permeabilise the CM of murepavadin-exposed whole cells of P. aeruginosa (B). This enhanced CM disruption by a sub-lethal concentration of colistin in combination with murepavadin led to an increase in lysis of P. aeruginosa cells, and ultimately greater bacterial killing (C, D). Together, these data showed that accumulation of LPS in the CM via murepavadin enhanced the bactericidal activity of colistin, even at concentrations of the polymyxin antibiotic that otherwise had no growth inhibitory effects. Data in A were analysed by a one-way ANOVA with Tukey\u2019s post\u00a0hoc test. Data in B, C were analysed by a two-way ANOVA with Dunnett\u2019s post\u00a0hoc test. Data in D were analysed by a two-way ANOVA with Tukey\u2019s post\u00a0hoc test. Data are presented as the arithmetic mean, and error bars represent the standard deviation of the mean.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** S: susceptible (green), I: intermediate (orange), R: resistant (red). Bacterial strains were isolated and antimicrobial susceptibility testing was performed at the Royal Brompton Hospital, Royal Brompton, and Harefield NHS Foundation Trust.\n\nWe next examined a panel of 15 multi-drug resistant P. aeruginosa clinical strains, isolated from the sputum of CF patients, to investigate whether murepavadin increased colistin-mediated bacterial killing (Figure 5\u2014figure supplement 2). Of these 15 clinical isolates, 14 were susceptible to murepavadin alone, whilst one strain was resistant to the LptD inhibitor (Supplementary file 1). In 11 out of 14 murepavadin-susceptible CF isolates tested (79%), sub-lethal concentrations of murepavadin caused a significant increase in the bactericidal activity of colistin against P. aeruginosa (Figure 5B). Importantly, murepavadin did not affect the bactericidal activity of colistin against the strain that was resistant to the LptD inhibitor (Figure 5B). This confirmed that the potentiating effects of the LptD inhibitor on polymyxin-mediated killing were not due to off-target effects.\n\nNext, we employed a high inoculum P. aeruginosa murine lung infection model and used a short treatment duration to assess how quickly combined colistin and murepavadin therapy could reduce bacterial burden, relative to mono-therapy. Mice were inoculated via the intranasal route with P. aeruginosa PA14 to cause a lung infection, and then treated intranasally with PBS alone, or PBS containing colistin only (5 mg kg\u22121), murepavadin only (0.25 mg kg\u22121), or colistin and murepavadin combined at the concentrations used for mono-treatment. These concentrations were based on those used previously to mimic treatment of human lung infections, and the route of delivery is similar to that used clinically (Bernardini et al., 2019; Yapa et al., 2014; Melchers et al., 2019; Aoki et al., 2009). Mono-therapy with colistin alone or murepavadin alone had very little effect on the bacterial load assessed after 3 hr treatment compared with the no-treatment control (Figure 5C). By contrast, combination therapy with colistin and murepavadin caused a\u00a0~500-fold reduction in c.f.u. counts relative to the no-treatment control (Figure 5C). Therefore, murepavadin synergises with colistin both in vitro and in vivo, suggesting it may be useful as a combination therapeutic approach for lung infections caused by P. aeruginosa.\n\n## Discussion\n\nColistin is an increasingly important last-resort antibiotic used to treat infections caused by multi-drug-resistant Gram-negative pathogens, including P. aeruginosa, K. pneumoniae, and E. coli (Garg et al., 2017; Biswas et al., 2012; Thomas et al., 2019). However, treatment failure occurs frequently, and resistance is a growing concern (Falagas et al., 2010; Paul et al., 2018; Linden et al., 2003; Tran et al., 2016; Satlin et al., 2020; MacNair et al., 2018). Efforts to address these issues are compromised by a poor understanding of colistin\u2019s bactericidal mode of action. Whilst the initial interactions of colistin with LPS in the OM of Gram-negative bacteria were well\u00a0established, it was unclear how the antibiotic traversed the OM and damaged the CM to cause cell lysis (Figure 1\u2014figure supplement 1). In this work, we demonstrate that colistin targets LPS in the CM, resulting in membrane permeabilisation, bacterial lysis, and killing (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65836/elife-65836-fig6-v2.jpg)\n\n**Figure 6.:** Diagrammatic representation of the novel proposed mechanism of action of colistin: Colistin binds to LPS in the OM (1), displacing cations that form bridges between LPS molecules, which leads to destabilisation of the OM (2). As a consequence of the weakening of intermolecular bonds in the LPS monolayer, LPS is released from the bacterial surface (3), allowing colistin to further damage the OM via the action of the polymyxin lipid tail (4). This provides colistin with access to the periplasm, where colistin interacts with LPS in the CM (5) that is awaiting transport to the OM by the LptABCDEFG machinery after being synthesised in the cytoplasm and flipped to the outer leaflet of the CM by MsbA. As in the OM, colistin binding to LPS results in displacement of cation bridges and disruption of the CM (6), which it ultimately permeabilises (7), culminating in the loss of cytoplasmic contents, cell lysis, and bacterial death (8).\n\nOur conclusion that colistin targets LPS in the CM was based initially on experiments with E. coli expressing the mcr-1 colistin resistance determinant. MCR-1 modifies lipid A with a pEtN moiety as it passes through the CM on its way to the OM (Liu et al., 2016; Nang et al., 2019). Since MCR-1 specifically protected spheroplasts from colistin but not nisin or daptomycin, which both target phospholipid bilayers, it was clear that colistin did not share the same target as the other two CAMPs. Given the only difference between E. coli spheroplasts expressing mcr-1 and pEmpty spheroplasts was modified LPS, our data reveal that colistin targets LPS in the CM, leading to disruption of the CM, which is a pre-requisite for subsequent cell lysis and bacterial killing (Allison and Lambert, 2015). These findings were then supported by experiments showing that LPS accumulation in the CM of P. aeruginosa sensitised this bacterium to colistin.\n\nSimilar to Salmonella and E. coli, the abundance of LPS in the CM of P. aeruginosa was found to be\u00a0~100 times lower than the OM, indicating that only about 1% of total LPS is present in the CM (Zendo et al., 2010; Osborn et al., 1972). However, studies with model membranes have shown that the presence of low concentrations of LPS (1% total composition) in phospholipid bilayer membranes was both necessary and sufficient for colistin-mediated permeabilisation (Khadka et al., 2018). Therefore, our conclusion explains how an antibiotic with a high degree of specificity for LPS could damage both the OM and CM (Velkov et al., 2010). The reason why MCR-1 protected the CM but not OM from colistin-mediated damage is most likely due to the lower proportion of unmodified LPS at the CM (21 \u00b1 2%) relative to the OM (42 \u00b1 19%) (Figure 1A). Furthermore, the overall abundance of LPS in the CM is very low, resulting in very few targets (i.e. unmodified LPS molecules) for colistin in the CM of mcr-1-expressing E. coli. By contrast, the OM of MCR-1-producing E. coli contains many more unmodified LPS molecules that can be bound by colistin, explaining why colistin is able to damage this structure, but cannot permeabilise the CM of E. coli expressing mcr-1 at a physiologically relevant concentration (Khadka et al., 2018). Whether colistin resistance conferred by chromosomal mutations in two-component systems is also mediated by modified LPS in the CM remains to be tested (Carroll et al., 2019; Nang et al., 2019; Skov and Monnet, 2016; Wang et al., 2020; Raetz et al., 2007; Simpson and Trent, 2019).\n\nOur data showing that colistin requires unmodified LPS to be present in the CM to kill bacteria explains how an antibiotic with high affinity and specificity for LPS causes disruption to both the OM and CM (Velkov et al., 2010). Furthermore, these findings provide support for the observations that colistin does not damage the OM of colistin-resistant A. baumannii isolates where LPS has been replaced by a phospholipid bilayer, and that polymyxins cause only minimal disruption to model phospholipid membranes unless LPS is present (Khadka et al., 2018; Moffatt et al., 2010; Zhang et al., 2018; Fu et al., 2020).\n\nWhilst the interaction of colistin with LPS in the CM is likely to share similarities with the same process at the OM, there are also likely to be differences owing to the differing concentrations of LPS between the two membranes (Khadka et al., 2018; Zendo et al., 2010; Osborn et al., 1972). In the OM, LPS is a highly abundant component with molecules tightly packed and stabilised with cation bridges. By contrast, LPS is a minority component in the CM, which may affect the rate and degree to which the CM is disrupted by polymyxins. In support of this, whilst colistin induced OM damage within minutes of bacterial exposure to the antibiotic, disruption of the CM took much longer. Even when spheroplasts lacking an OM were exposed to colistin, it still took more than 2 hr for CM permeabilisation to occur. Therefore, it appears that colistin-mediated disruption of the CM is considerably less efficient than that of the OM, likely due to the much lower levels of LPS present in the CM.\n\nIn addition to disruption of both the OM and IM, it has been proposed that the lethal activity of polymyxin antibiotics may be due, at least in part, to: disruption of NADH-quinone reductase; the generation of reactive oxygen species (ROS); the binding of the antibiotic to ribosomes; and the fusion of the OM and CM, leading to phospholipid exchange (Cajal et al., 1996; Clausell et al., 2006; Clausell et al., 2007; Deris et al., 2014; Ajiboye et al., 2018; Li and Velkov, 2019; Ayoub Moubareck, 2020; El-Sayed Ahmed et al., 2020). However, whilst these have been considered as discrete events or alternative mechanisms of action, it is possible that all these phenomena occur as downstream consequences of colistin-mediated CM disruption. For example, NADH-quinone reductase is a component of the electronic transport chain (ETC), which is located within the CM and may therefore be disrupted by membrane damage, whilst the generation of ROS may arise via disruption of the ETC as has been proposed for the CAMP LL-37 (Deris et al., 2014; Ayoub Moubareck, 2020; Choi et al., 2017). The fusion of the OM and CM and subsequent exchange of lipids appears to depend upon the interaction of the polymyxin with, and presumably disruption of, both membranes (Cajal et al., 1996; Clausell et al., 2006; Clausell et al., 2007; Ayoub Moubareck, 2020; El-Sayed Ahmed et al., 2020). Finally, the interaction of polymyxins with ribosomes requires the antibiotic to pass through the CM to access the cytoplasm (McCoy et al., 2013). Therefore, whilst the disruption of the CM by polymyxin antibiotics is the key step required for bacterial killing, this may be due to multiple deleterious effects on cellular processes.\n\nOur findings provide strong evidence that colistin targets LPS in the CM, in addition to the OM, and that this is required for the bactericidal and lytic activity of the antibiotic at clinically relevant concentrations. This insight into the mode of action of colistin enabled us to devise a new therapeutic approach to enhance colistin efficacy. Using the LptD inhibitor murepavadin, which is in development as an inhaled treatment for P. aeruginosa infections, we triggered LPS accumulation in the CM, and thereby increased the susceptibility of bacteria to colistin (Lehman and Grabowicz, 2019). The potential clinical utility of this approach was demonstrated by showing enhanced activity of colistin\u2013murepavadin combination therapy against a panel of clinical CF isolates, as well as potent efficacy in a murine model of P. aeruginosa lung infection. It is anticipated that a combination of colistin and murepavadin could enhance the low treatment efficacy of polymyxin antibiotics and may also limit the toxic side effects associated with both compounds by enabling the use of lower doses of the drugs (Lehman and Grabowicz, 2019).\n\nInterestingly, whilst we found that blocking LPS transport to the OM sensitised bacteria to colistin, previous work has shown that novobiocin increases the susceptibility of bacteria to colistin by increasing LPS transport to the OM (Mandler et al., 2018). This might suggest that novobiocin reduces LPS levels in the CM and thus contradicts our findings. However, transport of LPS to the OM is regulated such that this process does not deplete LPS in the CM (Xie et al., 2018). Furthermore, LPS biosynthesis is tightly regulated at the CM in response to the abundance of LPS by PbgA, LapB, and FtsH (Clairfeuille et al., 2020; Guest et al., 2020; Fivenson and Bernhardt, 2020; O'Rourke et al., 2020; Lee et al., 2006). Therefore, it is expected that LPS synthesis would be increased to address the elevated rate of transport to the OM, which might lead to elevated levels of LPS in the CM as it is produced to meet demand. In support of this, novobiocin exposure increases the expression of lpxC in E. coli, which encodes the enzyme that is the first committed step in LPS biosynthesis and provides a key checkpoint in LPS production (Raetz et al., 2007; Simpson and Trent, 2019; O'Rourke et al., 2020). However, the effect of novobiocin on LPS abundance in the CM remains to be tested.\n\nIt should be noted that whilst bacteria can modulate LPS biosynthesis to maintain LPS abundance in the CM, there is no mechanism to remove LPS from the CM, which is why LPS accumulation occurs with murepavadin.\n\nIn summary, this work contributes to our understanding of the mechanism of action of colistin by demonstrating that polymyxin antibiotics target LPS in both the OM and the CM, and that this leads to the disruption of both membranes, resulting in the bactericidal and lytic activities of the antibiotic. Modulation of LPS levels in the CM can enhance colistin activity, providing the foundations for new approaches to enhance the efficacy of this antibiotic of last resort.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>MC1000</td>\n      <td>Dortet et al., 2018 PMID:30442963</td>\n      <td>pEmpty</td>\n      <td>Background strain (araD139, \u2206(ara, leu)7697, \u2206lacX74, galU, galK, strA) harbouring the IPTG-inducible pDM1 plasmid (GenBank MN128719)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>MC1000</td>\n      <td>Dortet et al., 2018 PMID:30442963</td>\n      <td>mcr-1</td>\n      <td>MC1000 strain harbouring the pDM1 plasmid encoding the mcr-1 gene amplified from a clinical E. coli isolate</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>PA14</td>\n      <td>Lee et al., 2006 PMID:17038190</td>\n      <td>PA14</td>\n      <td>Wild-type reference strain; highly virulent human isolate representing most common clonal group worldwide</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK3</td>\n      <td>This study</td>\n      <td>AK3</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient \u2013 mucoid strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK10</td>\n      <td>This study</td>\n      <td>AK10</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK20</td>\n      <td>This study</td>\n      <td>AK20</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK6</td>\n      <td>This study</td>\n      <td>AK6</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient \u2013 mucoid strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK12</td>\n      <td>This study</td>\n      <td>AK12</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient \u2013 mucoid strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK8</td>\n      <td>This study</td>\n      <td>AK8</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient \u2013 mucoid strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK17</td>\n      <td>This study</td>\n      <td>AK17</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK9</td>\n      <td>This study</td>\n      <td>AK9</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK14</td>\n      <td>This study</td>\n      <td>AK14</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK5</td>\n      <td>This study</td>\n      <td>AK5</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient \u2013 mucoid strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK11</td>\n      <td>This study</td>\n      <td>AK11</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient \u2013 mucoid strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK13</td>\n      <td>This study</td>\n      <td>AK13</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK18</td>\n      <td>This study</td>\n      <td>AK18</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK22</td>\n      <td>This study</td>\n      <td>AK22</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>AK19</td>\n      <td>This study</td>\n      <td>AK19</td>\n      <td>Multi-drug resistant human clinical isolate from sputum of cystic fibrosis patient \u2013 murepavadin-resistant</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Colistin</td>\n      <td>Sigma-Aldrich</td>\n      <td>C4461-1G</td>\n      <td>Targets LPS</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Murepavadin (POL7080)</td>\n      <td>DC Chemicals</td>\n      <td>DC11273</td>\n      <td>Targets LptD</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Daptomycin</td>\n      <td>Bio-Techne Ltd</td>\n      <td>3917/10</td>\n      <td>Targets phosphatidylglycerol in the bacterial membrane</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nisin</td>\n      <td>Sigma-Aldrich</td>\n      <td>N5764-5G</td>\n      <td>Targets bacterial membranes</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rifampicin</td>\n      <td>Molekula Ltd</td>\n      <td>32609202</td>\n      <td>Targets RNA Polymerase</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polymyxin B nonapeptide (PMBN)</td>\n      <td>Sigma-Aldrich</td>\n      <td>P2076-5MG</td>\n      <td>Permeabilises the OM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetracycline</td>\n      <td>Sigma-Aldrich</td>\n      <td>87128\u201325G</td>\n      <td>Protein synthesis inhibitor</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>LAL Chromogenic Endotoxin Quantitation Kit</td>\n      <td>Thermo Scientific Pierce</td>\n      <td>88282</td>\n      <td>Quantitative assay for LPS</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Isopropyl \u03b2-d-1-thiogalactopyranoside (IPTG)</td>\n      <td>Melford Laboratories</td>\n      <td>MB1008</td>\n      <td>Induces gene expression</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lysozyme from chicken egg white</td>\n      <td>Sigma-Aldrich</td>\n      <td>L6876-1G</td>\n      <td>Degrades peptidoglycan</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ethylenediaminetetraacetic acid (EDTA)</td>\n      <td>Sigma-Aldrich</td>\n      <td>E6511-100G</td>\n      <td>Removes OM from bacteria</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trypsin</td>\n      <td>Sigma-Aldrich</td>\n      <td>T7309-1G</td>\n      <td>Degrades proteins</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Propidium iodide (PI)</td>\n      <td>Sigma-Aldrich</td>\n      <td>P4864-10ML</td>\n      <td>Fluoresces when bound to DNA</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fluorescein 5 (6)-isothiocyanate</td>\n      <td>Sigma-Aldrich</td>\n      <td>46950\u201350MG-F</td>\n      <td>Used to label proteins with a fluorescent tag</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N-phenyl-1-napthylamine (NPN)</td>\n      <td>Acros Organics</td>\n      <td>147160250</td>\n      <td>Fluoresces when bound to phospholipids</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FITC-labelled Poly-L-lysine (PLL)</td>\n      <td>Sigma-Aldrich</td>\n      <td>P3543-10MG</td>\n      <td>Used to measure membrane surface charge</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>6-Dodecanoyl-N,N-dimethyl-2-naphthylamine (Laurdan)</td>\n      <td>Sigma-Aldrich</td>\n      <td>40227\u2013100 MG</td>\n      <td>Used to measure membrane fluidity</td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial strains and growth conditions\n\nThe bacterial strains used in this study are listed in Key resources table. For each experiment, all strains were grown in Luria broth (LB; Thermo Fisher Scientific, USA) for 18 hr to stationary phase at 37\u00b0C with shaking (180 r.p.m.). For routine culture of bacteria on solid media, strains were grown on LB supplemented with 1.5% technical agar (BD Biosciences, USA). Liquid and solid growth media were supplemented with tetracycline (12.5 \u03bcg ml\u22121; Sigma-Aldrich, USA) and isopropyl-\u03b2-D-thiogalactoside (IPTG, Melford Laboratories, UK; used at 0.5 mM unless stated otherwise) where required. Enumeration of bacterial c.f.u. was done by plating 10-fold serial dilutions of bacterial cultures on to Mueller-Hinton agar (MHA; Thermo Fisher Scientific) plates. Inoculated agar plates were incubated statically for 18 hr in air at 37\u00b0C.\n\n### Determination of MICs of antibiotics\n\nThe MIC of colistin and murepavadin against bacterial strains was determined by the broth microdilution protocol (Wiegand et al., 2008). A microtitre plate was used to prepare a range of antibiotic concentrations in 200 \u03bcl cation-adjusted Mueller-Hinton broth (CA-MHB; Thermo Fisher Scientific) by two-fold serial dilutions. For certain experiments, checkerboard analyses were performed by preparing two-fold serial dilutions of two antibiotics in different directions, generating an 8 \u00d7 8 matrix to assess the MICs of the relevant antibiotics in combination, with FICI values calculated as previously described (Odds, 2003). Stationary-phase bacteria were diluted 1000-fold in fresh CA-MHB and seeded into each well of the microtitre plate to a final concentration of 5 \u00d7 105 c.f.u. ml\u22121. The microtitre plates were then incubated statically at 37\u00b0C for 18 hr in air, after which point the MIC was defined as the lowest antibiotic concentration at which there was no visible growth of bacteria. In some cases, the extent of bacterial growth after 18 hr incubation was also determined by obtaining OD595nm measurements using a Bio-Rad iMark microplate absorbance reader (Bio-Rad Laboratories, USA).\n\n### Bacterial growth assay\n\nStationary-phase bacteria were diluted 1000-fold in fresh CA-MHB, and 4 \u03bcl was seeded into the wells of a microtitre plate containing 200 \u03bcl CA-MHB, and for some experiments the LptD inhibitor murepavadin, to give a final inoculum of 5 \u00d7 105 c.f.u. ml\u22121. The microtitre plate was incubated with shaking (180 r.p.m.) at 37\u00b0C for 16 hr in a Tecan Infinite 200 Pro multiwell plate reader (Tecan Group Ltd., Switzerland) and optical density measurements were taken at 600 nm every 15 min.\n\n### Production of spheroplasts\n\nSpheroplasts of E. coli and P. aeruginosa strains lacking an OM and cell wall were generated as previously described (Weiss and Fraser, 1973). Briefly, stationary-phase bacteria grown overnight were washed twice by centrifugation (12,300\u00a0\u00d7 g, 3 min) followed by resuspension in CA-MHB, and added at a final inoculum of 108 c.f.u. ml\u22121 to 9 ml CA-MHB containing for some experiments varying concentration of IPTG, or the LPS transport inhibitor murepavadin. Cultures were then incubated at 37\u00b0C with shaking (180 r.p.m.) for 2 hr. After the incubation, bacteria were washed twice by centrifuging (3273\u00a0\u00d7 g, 20 min, 4\u00b0C) and resuspending first in 10 ml Tris buffer (0.03 M, pH 8.0; Sigma-Aldrich), and subsequently in Tris buffer (0.03 M, pH 8.0) containing 20% sucrose. EDTA (250 \u00b5l, 10 mg ml\u22121; Sigma-Aldrich) and lysozyme (1 ml, 10 mg ml\u22121; Roche, Switzerland) were added to remove the OM and cell wall respectively, and the cell suspension was incubated for 1 hr in a water bath shaker at 30\u00b0C. Trypsin (500 \u00b5l, 10 mg ml\u22121; Sigma-Aldrich) was then added, and the culture again incubated at 30\u00b0C in a water bath shaker for 15 min. The resulting spheroplasts produced were harvested by mild centrifugation (2000\u00a0\u00d7 g, 20 min, 4\u00b0C), with the supernatant containing the removed OM extracted for further analysis. Successful conversion of bacterial whole cells into spheroplasts was confirmed using phase-contrast microscopy, as detailed below.\n\n### Confirmation of successful spheroplast formation\n\nWhole cells of E. coli and P. aeruginosa grown overnight were washed twice by centrifugation (12,300\u00a0\u00d7 g, 3 min) and resuspension in CA-MHB, added at a final inoculum of 108 c.f.u. ml\u22121 to 9 ml CA-MHB, and incubated for 2 hr at 37\u00b0C with shaking (180 r.p.m.). OM proteins of these bacteria were subsequently labelled with fluorescein isothiocyanate (FITC, Sigma-Aldrich) as previously described (Loh and Ward, 2012). Bacterial cells were washed twice by centrifugation (3273\u00a0\u00d7 g, 20 min, 4\u00b0C) and resuspension in 10 ml Labelling Buffer (50 mM Na2CO3, 100 mM NaCl, pH 8.0), to which FITC was added at a final concentration of 0.5 mg ml\u22121. Bacteria were incubated for 30 min at room temperature, before labelled cells were harvested by centrifuging (3273\u00a0\u00d7 g, 20 min, 4\u00b0C) and washed thrice by resuspending in 10 ml Tris buffer (0.03 M, pH 8.0) containing 20% sucrose. 1 ml of FITC-labelled bacteria was extracted and centrifuged (12,300\u00a0\u00d7 g, 3 min), and the cells were fixed in 4% paraformaldehyde (PFA) in phosphate-buffered saline (PBS). The remaining 9 ml of FITC-labelled cells were converted into spheroplasts, as described above. The spheroplasts produced were recovered by mild centrifugation (2000\u00a0\u00d7 g, 20 min, 4\u00b0C) and resuspension in 9 ml Tris buffer (0.03 M, pH 8.0) containing 20% sucrose, before 1 ml of spheroplasts were fixed in the same way as with whole cells. The amount of FITC fluorescence in the OM of whole cells and CM of spheroplasts was observed using fluorescence microscopy, as described below. For quantification of FITC fluorescence, 200 \u00b5l samples of the fixed bacterial suspensions were seeded into the wells of a black-walled microtitre plate, and fluorescence measured with a Tecan Infinite 200 Pro multiwell plate reader, using an excitation wavelength of 490 nm and an emission wavelength of 525 nm.\n\n### Microscopy\n\nFor phase-contrast and fluorescence microscopy, a 5 \u00b5l sample of fixed bacterial whole cells or spheroplasts was spotted onto a thin 1.2% agarose gel patch prepared in distilled water on a microscope slide. Bacteria were imaged using an Axio Imager.A2 Zeiss microscope (Carl Zeiss Microscopy GmbH, Germany) at 1000\u00d7 magnification with an oil immersion objective lens. The ZEN 2012 software was used for image acquisition, whilst analysis of cell length:width ratios was done using the FIJI/ImageJ software by measuring two perpendicular lines drawn through the centre of bacteria. For each experiment, all microscopy images were acquired and processed using identical settings throughout.\n\n### Determination of LPS concentration and modification by mass spectroscopy\n\nSpheroplasts from bacterial cells were prepared as described above and then resuspended in ddH2O (200 \u03bcl), before mild acid hydrolysis was performed via the addition of 2% (vol/vol) acetic acid in ddH2O (200 \u03bcl) and incubation at 100\u00b0C for 30 min. For experiments with whole cells, bacteria grown overnight to stationary-phase were washed three times by centrifuging and resuspending in ddH2O, and a mild acid hydrolysis was performed on these whole cells as described for spheroplasts. Acid-treated whole cells or spheroplasts were recovered by centrifugation (17,000 \u00d7\u00a0g, 2 min), and the resulting pellet was washed before being resuspended in 50 \u03bcl ultrapure water. The whole cell or spheroplast suspension (0.5 \u03bcl) was then loaded immediately onto the target and overlaid with 1.2 \u03bcl of a matrix consisting of 9H-Pyrido[3,4-B]indole (Norharmane) (Sigma-Aldrich) dissolved in 90:10 (vol/vol) chloroform/methanol to a final concentration of 10 mg ml\u22121. The bacterial suspension and matrix were then mixed on the target before gentle drying under air at room temperature. MALDI-TOF mass spectroscopy analysis was undertaken with a MALDI Biotyper Sirius system (Bruker Daltonics, USA), using the linear negative-ion mode as described previously (Furniss et al., 2019). Manual peak picking at masses relevant to phospholipids or lipid A was performed on the mass spectra obtained, and the corresponding signal intensities at the defined masses were determined. Peaks were considered only if their signal/noise ratio was at least 5. To determine the ratio of modified lipid A to unmodified lipid A, the area under the pETN-modified lipid A peak (m/z 1,919.2) was divided by the area under the peak corresponding to native lipid A (m/z 1,796.2). To determine the relative abundance of LPS, the sum of the area under the lipid A peaks (m/z 1447\u20131700) was divided by the sum of the area under representative phospholipid peaks (phospholipid 34:1,2, m/z 717\u2013747). All mass spectra were generated and analysed with three biological replicates and two technical replicates.\n\n### OM disruption assay\n\nTo detect damage to the OM of bacteria, the well-established NPN uptake assay was used (Helander and Mattila-Sandholm, 2000). Stationary-phase bacterial cells were washed in fresh CA-MHB and diluted to an optical density (OD600nm) of 0.5 in 5 mM pH 7.2 HEPES buffer (Sigma-Aldrich). This bacterial suspension was added to wells containing the relevant antibiotics in HEPES buffer, as well as the fluorescent probe N-phenyl-1-naphthylamine (NPN; Acros Organics, USA) at a final concentration of 10 \u03bcM. Samples were placed in a black microtitre plate with clear-bottomed wells and fluorescence measured immediately in a Tecan Infinite 200 Pro multiwell plate using an excitation wavelength of 355 nm and an emission wavelength of 405 nm. Fluorescence measurements were obtained every 30 s for 10 min, and the degree of OM permeabilisation, referred to as the NPN Uptake Factor, was calculated using the following formula:\n\n$$\n\\frac{Fluorescence\u00a0of\u00a0sample\u00a0with\u00a0NPN\u2212Fluorescence\u00a0of\u00a0sample\u00a0without\u00a0NPN}{Fluorescence\u00a0of\u00a0HEPES\u00a0buffer\u00a0with\u00a0NPN\u2212Fluorescence\u00a0of\u00a0HEPES\u00a0buffer\u00a0without\u00a0NPN}\n$$\n\n### CM disruption assay\n\nTo measure CM disruption of whole cells, bacteria grown to stationary-phase overnight were washed and inoculated into 3 ml MHB containing the relevant antibiotics. Cultures were incubated at 37\u00b0C with shaking (180 r.p.m.) for up to 8 hr, and every 30 min, aliquots (200 \u03bcl) were taken and bacteria isolated by centrifugation (12,300\u00a0\u00d7 g, 3 min). Cells were then washed in sterile PBS before being added to the wells of a black-walled microtitre plate, and PI (Sigma-Aldrich) was added to each well at a final concentration of 2.5 \u03bcM. Fluorescence was measured immediately in a Tecan Infinite 200 Pro multiwell plate reader (excitation at 535 nm, emission at 617 nm). To measure disruption of the CM in spheroplasts, spheroplasts of E. coli and P. aeruginosa generated as detailed above were washed by centrifugation (4000\u00a0\u00d7 g, 5 min) and resuspension in Tris buffer (0.03 M, pH 8.0) containing 20% sucrose. Spheroplast samples (20 \u00b5l) were then added in the wells of a black-walled microtitre plate to 180 \u00b5l of Tris buffer (0.03 M, pH 8.0) containing 20% sucrose, the relevant antibiotics, and PI at a final concentration of 0.25 \u03bcM. The microtitre plate was incubated with shaking (180 r.p.m.) at 37\u00b0C for up to 8 hr in a Tecan Infinite 200 Pro multiwell plate reader and fluorescence (excitation at 535 nm, emission at 617 nm) measured every 15 min using a gain of 80 or 100. For both whole bacterial cells and spheroplasts, to account for differences in fluorescence values arising from variations in cell number, relative fluorescence unit (r.f.u.) measurements were corrected for OD at 600 nm.\n\n### Determination of bacterial lysis\n\nIn the case of whole bacterial cells, washed stationary-phase bacteria were inoculated into 3 ml CA-MHB containing the relevant antibiotics, as described above. Cultures were then placed in a shaking incubator (37\u00b0C, 180 r.p.m.) for 8 hr, and every 30 min, samples (200 \u03bcl) were transferred to a microtitre plate, where OD595nm measurements were obtained using a Bio-Rad iMark microplate absorbance reader. For spheroplasts, washed spheroplasts (20 \u00b5l) were added to 180 \u00b5l of Tris buffer (0.03 M, pH 8.0) containing 20% sucrose and the relevant antibiotics in a microtitre plate as detailed above. The microtitre plate was incubated for up to 8 hr at 37\u00b0C with shaking (180 r.p.m.) in a Tecan Infinite 200 Pro multiwell plate reader, and readings of OD600nm were made every 15 min.\n\n### Determination of membrane fluidity\n\nThe fluidity of the CM of spheroplasts was assessed using the fluorescent dye Laurdan, as previously described (M\u00fcller et al., 2016). Washed spheroplasts of E. coli (500 \u00b5l) prepared as described above were incubated at room temperature for 5 min in Tris buffer (0.03 M, pH 8.0) containing 20% sucrose and Laurdan at a final concentration of 100 \u00b5M. Spheroplast samples were washed by three rounds of centrifugation (4000\u00a0\u00d7 g, 5 min) and resuspension in Tris buffer containing 20% sucrose, then 200 \u00b5l was transferred to the wells of a black-walled microtitre plate. Membrane fluidity was measured using a Tecan Infinite 200 Pro multiwell plate reader, with fluorescence determined using an excitation wavelength of 330 nm, and emission wavelengths of 460 nm and 500 nm. Generalised Polarisation (GP) values were calculated using the following formula:\n\n$$\nGP=\\frac{Emission\u00a0intensity\u00a0at\u00a0460\u00a0nm\u2212Emission\u00a0intensity\u00a0at\u00a0500\u00a0nm\u00a0}{Emission\u00a0intensity\u00a0at\u00a0460\u00a0nm+Emission\u00a0intensity\u00a0at\u00a0500\u00a0nm}\n$$\n\nA higher GP value indicated a membrane with reduced fluidity, with altered water penetration into the membrane affecting the fluorescence of the Laurdan dye.\n\n### Determination of membrane charge\n\nThe charge of the CM of spheroplasts was measured using FITC-labelled Poly-L-Lysine (PLL) (Jones et al., 2008). Washed E. coli spheroplasts (300 \u00b5l) generated as described above were incubated in the dark for 10 min at room temperature in Tris buffer (0.03 M, pH 8.0) containing 20% sucrose and FITC-PLL at a final concentration of 20 \u00b5g ml\u22121. To remove any unbound PLL, spheroplasts were subsequently washed thoroughly by three rounds of centrifugation (4000\u00a0\u00d7 g, 5 min) and resuspension in Tris buffer containing 20% sucrose. Spheroplast samples (200 \u00b5l) were seeded into the wells of a black-walled microtitre plate, and FITC fluorescence was quantified in a Tecan Infinite 200 Pro multiwell plate reader (excitation at 490 nm, emission at 525 nm). Reduced PLL binding to the surface of spheroplasts indicated a more positively\u00a0charged membrane, with the cationic FITC fluorophore having less affinity for the CM.\n\n### Determination of LPS concentration by Limulus Amebocyte Lysate assay\n\nStationary-phase bacteria grown overnight were washed and grown for 2 hr, before conversion to spheroplasts as described above. During formation of spheroplasts, the OM extracted from the bacterial cells was recovered, and the concentration of LPS in the OM, as well as the concentration of LPS in the CM of spheroplasts, was determined using the chromogenic Limulus Amebocyte Lysate (LAL) assay (all reagents from Thermo Fisher Scientific) as described previously (Lam et al., 2014). OM samples and spheroplasts lysed by freeze-thaw to release LPS were diluted in 10-fold steps, and 50 \u03bcl of each sample was equilibrated to 37\u00b0C and loaded into the wells of a microtitre plate at the same temperature. LAL reagent (50 \u03bcl) was added to each well, and the mixture incubated at 37\u00b0C for 10 min. Chromogenic substrate solution (100 \u03bcl, 2 mM) was subsequently added to each well and the microtitre plate was incubated for a further 6 min at 37\u00b0C. The enzymatic reaction was stopped by adding 50 \u03bcl of 25% acetic acid to each well, and the presence of LPS was determined by measuring absorbance at 405 nm in a Tecan Infinite 200 Pro multiwell plate reader. A standard curve was generated using an E. coli endotoxin standard stock solution, which enabled the conversion of A405nm values into concentrations of LPS.\n\n### Determination of bactericidal activity of antibiotics\n\nAs described above, stationary-phase bacteria grown overnight were washed twice and added at a final inoculum of 108 c.f.u. ml\u22121 to 3 ml CA-MHB containing colistin and/or murepavadin. Cultures were incubated with shaking (37\u00b0C, 180 r.p.m.) for up to 8 hr. Bacterial survival was determined after 2, 4, 6, and 8 hr by serially diluting cultures in 10-fold steps in 200 \u03bcl sterile PBS (VWR International, USA), before enumeration of c.f.u. counts on MHA plates.\n\n### Murine lung infection model\n\nThe use of mice was performed under the authority of the UK Home Office outlined in the Animals (Scientific Procedures) Act 1986 after ethical review by Imperial College London Animal Welfare and Ethical Review Body (PPL 70/7969). Wild-type C57BL/6 mice were purchased from Charles River (UK). All mice were female and aged between 6\u00a0and 8 weeks. Mice were housed with five per cage with Aspen chip 2 bedding and 12 h light/dark cycles at 20\u201322\u00b0C. Mice were randomly assigned to experimental groups. Water was provided ad libitum and mice were fed RM1 (Special Diet Services). To establish colonisation of the lungs, mice were anesthetised and intranasally inoculated with 107 c.f.u. of P. aeruginosa PA14 in 50 \u03bcl of PBS, as described previously (Clarke, 2014; Brown et al., 2017). Infection was allowed to establish for 5 hr, before mice were again anaesthetised and treated via the intranasal route with 50 \u03bcl of PBS alone, or PBS containing colistin (5 mg kg\u22121), murepavadin (0.25 mg kg\u22121), or a combination of colistin and murepavadin for 3 hr. To enumerate bacterial load in the lungs, mice were humanely sacrificed, their lungs removed and homogenised in PBS, and then plated onto Pseudomonas isolation agar (Thermo Fisher Scientific).\n\n### Statistical analyses\n\nExperiments were performed on at least three independent occasions, and the resulting data are presented as the arithmetic mean of these biological repeats, unless stated otherwise. Error bars, where shown, represent the standard deviation of the mean. For single comparisons, a two-tailed Student\u2019s t-test was used to analyse the data. For multiple comparisons at a single time point or concentration, data were analysed using a one-way analysis of variance (ANOVA) or a Kruskal\u2013Wallis test. Where data were obtained at several different time points or concentrations, a two-way ANOVA was used for statistical analyses. Appropriate post\u00a0hoc tests (Dunnett\u2019s, Tukey\u2019s, Sidak\u2019s, Dunn\u2019s) were carried out to correct for multiple comparisons, with details provided in the figure legends. Asterisks on graphs indicate significant differences between data, and the corresponding p-values are reported in the figure legend. All statistical analyses were performed using GraphPad Prism 7 software (GraphPad Software Inc, USA).\n",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "8a7b1d38-0ae5-40ac-bceb-201f68346148",
+      "submission_id": "67c4a649-68b6-433b-a93c-fd96e2947b2a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Philip A Cole, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65836.sa1](https://doi.org/10.7554/eLife.65836.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe antibacterial mechanism of the cyclic peptide antibiotic colistin has been controversial. This paper is of interest to scientists within the field of antimicrobial discovery, as it implies a major adjustment to our current understanding of colistin's mechanism of action and translates this knowledge to potential therapeutic applications.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Colistin kills bacteria by targeting lipopolysaccharide in the cytoplasmic membrane\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by myself. The following individuals involved in review of your submission have agreed to reveal their identity: Lianghui Gao (Reviewer #2); Willem van Schaik (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nSummary:\n\nThe submitted manuscript presents an argument for a novel mechanism of action for the antibiotic colistin. The authors suggest that colistin kills bacteria through its action on lipopolysaccharides at the inner membrane. This is primarily supported by MCR-1 mediated colistin resistance conferring resistance only to cell lysis and not to outer membrane permeabilization. The authors extend this hypothesis to suggest that increasing the amount of LPS in the inner membrane should increase susceptibility to colistin. By inhibiting LPS transport with murepavadin, the accumulation of LPS in the cytoplasmic membrane increased. Combinations of colistin and murepavadin act synergistically to improve bacterial lysis and show efficacy in a murine lung infection model.\n\nEssential Revisions:\n\n1. Observations demonstrating MCR-1 modification does not impact outer membrane perturbation and provides resistance to colistin induced lysis are supported by MacNair et al. They suggest that strengthened LPS packing provided by mcr-1 could play an important role in reducing the uptake and lytic activities of colistin. The author's should address that decreased colistin uptake could also result in reduced lysis. To support their hypothesis, the relationship between the amount of modified LPS in the inner membrane and resistance to cell lysis could be expanded on. https://www.nature.com/articles/s41467-018-02875-z\n\n2. The authors use the lack of change in susceptibility of mcr-1 spheroplasts to daptomycin and nisin to support that there is no change to the biophysical properties of the phospholipid bilayer of the cytoplasmic membrane. However, whether the sensitivity of daptomycin and nisin to changes to membrane charge or fluidity remains unclear.\n\n3. Murepavadin is used to increase LPS at the CM and as interpreted would support the hypothesis. However, it is also possible that in the whole cell assays, the OM disruption of colistin sensitizes the cells to the killing activity of murepavadin. Repeating the assays with a non-lethal OM permeabilizer like polymyxin B nonapeptide would eliminate this possibility and strengthen the authors conclusions.\n\n4. The authors suggest that mcr-1 provides protection from colistin through the modification of LPS at the inner membrane and that outer membrane modification has no impact on colistin activity. In contrast, it has been demonstrated that mcr-1 decoration is capable of preventing outer membrane perturbation by polymyxin B nonapeptide (https://www.nature.com/articles/nmicrobiol201728). This suggests that modified LPS at both the inner and outer membrane may play a role in resistance.\n\n5. Authors should discuss work in the synergy between novobiocin and colistin where novobiocin enhances colistin killing through the stimulation of LPS transport. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5990483/\n\n6. Hydrophobic NPN dye was used to explore the permeabilization of OM in this work. However, the uptake of NPN is not absolute proof that colistin is permeable. The authors should discuss this as a possible caveat of their mechanistic model.\n",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c89f16aa-5a83-4de1-b122-ecb5c74d7787",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C1",
+      "claim": "MCR-1 mediated colistin resistance in Escherichia coli is due to modified LPS at the cytoplasmic rather than outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that MCR-1 mediated colistin resistance in Escherichia coli is due to modified LPS at the cytoplasmic rather than OM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding as a discovery from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "3135c6a1-10c7-4c6f-a53f-13b80c63222b",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C2",
+      "claim": "Colistin exerts bactericidal activity by targeting LPS in the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that MCR-1 mediated colistin resistance in Escherichia coli is due to modified LPS at the cytoplasmic rather than OM. In doing so, we also demonstrated that colistin exerts bactericidal activity by targeting LPS in the cytoplasmic membrane (CM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a demonstrated finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "8aa5c1fa-e879-47c9-b6c7-818dbdd22efa",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C3",
+      "claim": "Murepavadin causes LPS accumulation in the cytoplasmic membrane of Pseudomonas aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the LPS transport inhibitor murepavadin, we were able to cause LPS accumulation in the CM of Pseudomonas aeruginosa, which resulted in increased susceptibility to colistin in vitro and improved treatment efficacy in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "2bc7cb0b-6045-4454-9c05-b6325ff2300b",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C4",
+      "claim": "LPS accumulation in the cytoplasmic membrane results in increased susceptibility to colistin in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the LPS transport inhibitor murepavadin, we were able to cause LPS accumulation in the CM of Pseudomonas aeruginosa, which resulted in increased susceptibility to colistin in vitro and improved treatment efficacy in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "d160fe8f-e938-4a74-82e5-a73febacd3e0",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C5",
+      "claim": "Combination of murepavadin and colistin improves treatment efficacy in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the LPS transport inhibitor murepavadin, we were able to cause LPS accumulation in the CM of Pseudomonas aeruginosa, which resulted in increased susceptibility to colistin in vitro and improved treatment efficacy in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "4fefca97-c567-4816-94e2-b502005eab70",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C6",
+      "claim": "Colistin and polymyxin B are two closely related polymyxin antibiotics used clinically.",
+      "claim_type": "EXPLICIT",
+      "source": "Two closely related polymyxin antibiotics are used clinically, colistin (polymyxin E) and polymyxin B, which share a high degree of structural similarity, consisting of a cationic peptide ring of 7 amino acids connected to a hydrophobic acyl tail by a linear chain of three amino acids (Velkov et al., 2010; Biswas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "ee7f5161-7e9c-48a0-90bf-fa31674b5262",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C7",
+      "claim": "Polymyxins consist of a cationic peptide ring of 7 amino acids connected to a hydrophobic acyl tail by a linear chain of three amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Two closely related polymyxin antibiotics are used clinically, colistin (polymyxin E) and polymyxin B, which share a high degree of structural similarity, consisting of a cationic peptide ring of 7 amino acids connected to a hydrophobic acyl tail by a linear chain of three amino acids (Velkov et al., 2010; Biswas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural description is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "df7d7f58-5265-4817-a35b-8042b30eac5d",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C8",
+      "claim": "Up to 70% of patients fail to respond to colistin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymyxins are rapidly bactericidal towards Gram-negative bacteria in vitro but are considerably less efficacious in vivo, with up to 70% of patients failing to respond to colistin treatment (Falagas et al., 2010; Paul et al., 2018; Linden et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clinical observation is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "0f9fa53e-31e1-41fc-9471-2b040d1fc2f4",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C9",
+      "claim": "Only 50% of people with normal renal function achieve a steady state serum concentration of polymyxins sufficient to kill bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Restrictions on dosage due to the nephrotoxicity of polymyxins mean that only 50% of people with normal renal function achieve a steady state serum concentration sufficient to kill bacteria (Tran et al., 2016; Satlin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clinical observation is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "18bbf4da-1600-4f5b-b01e-93b2b8d54f79",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C10",
+      "claim": "The binding of polymyxins to lipopolysaccharide on the surface of Gram-negative bacteria leads to disruption of the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst it is well established that the binding of polymyxins to lipopolysaccharide (LPS) on the surface of Gram-negative bacteria leads to disruption of the outer membrane (OM), it is unclear how this results in cell lysis and bacterial death (Figure 1\u2014figure supplement 1; Biswas et al., 2012; MacNair et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is described as well established and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "b39ad36a-44ec-4260-bb2e-87cf3110ea6c",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C11",
+      "claim": "Polymyxins permeabilise the cytoplasmic membrane, which is required for bacterial lysis and killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Once across the OM, polymyxins permeabilise the cytoplasmic membrane (CM), which is required for bacterial lysis and killing (Velkov et al., 2010; Garg et al., 2017; Biswas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "97c208e8-cb98-4eec-914f-06875b854075",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C12",
+      "claim": "The mechanism by which colistin damages the cytoplasmic membrane is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mechanism by which colistin damages the CM is unclear (Powers and Hancock, 2003; Trimble et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This gap in knowledge is explicitly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "ed51899d-6007-41a7-87ec-f10c974c04ca",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C13",
+      "claim": "Polymyxins can interact with mammalian cell membranes, leading to changes in epithelial monolayer permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, polymyxins can interact with mammalian cell membranes, leading to changes in epithelial monolayer permeability (Berg et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "5bdf6ce2-a183-4b86-8a6a-1d4d09750c46",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C14",
+      "claim": "Polymyxin antibiotics have some inhibitory activity against Streptococcus pyogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymyxin antibiotics also have some inhibitory activity against the Gram-positive bacterium Streptococcus pyogenes, where the CM is formed of a phospholipid bilayer (Betts et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "e35c379f-8c12-4f51-918f-c7259a922770",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C15",
+      "claim": "The concentrations of polymyxin B required to disrupt mammalian epithelial cells or inhibit the growth of S. pyogenes (8\u201316 \u00b5g ml\u22121) are above typical serum concentrations of the antibiotic.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, the concentrations of polymyxin B required to disrupt mammalian epithelial cells or inhibit the growth of S. pyogenes (8\u201316 \u00b5g ml\u22121) are above typical serum concentrations of the antibiotic, and colistin at clinically relevant concentrations displays no activity against other Gram-positive organisms such as Staphylococcus aureus or Enterococcus faecalis (Berg et al., 1996; Betts et al., 2016; Si et al., 2018; Kouidhi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "5cad7878-2282-40fd-85ca-b0839eef23aa",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C16",
+      "claim": "Colistin has very little activity against synthetic phospholipid bilayer membranes unless LPS is present.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, colistin has very little activity against synthetic phospholipid bilayer membranes unless LPS is present, a finding that explains why polymyxins are 30\u2013100-fold less active against colistin-resistant Acinetobacter baumanii isolates that are LPS-deficient, with an OM composed of a phospholipid bilayer (Khadka et al., 2018; Moffatt et al., 2010; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "27c3d084-cbb7-416e-9423-bf1f1f200073",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C17",
+      "claim": "Polymyxins are 30\u2013100-fold less active against colistin-resistant Acinetobacter baumannii isolates that are LPS-deficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, colistin has very little activity against synthetic phospholipid bilayer membranes unless LPS is present, a finding that explains why polymyxins are 30\u2013100-fold less active against colistin-resistant Acinetobacter baumanii isolates that are LPS-deficient, with an OM composed of a phospholipid bilayer (Khadka et al., 2018; Moffatt et al., 2010; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "7f2d2093-9da2-499e-8e2e-23783a4d065f",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C18",
+      "claim": "Molecular dynamics simulations show that the interaction of colistin with phospholipid bilayers is unlike what has been reported for other antimicrobial peptides that target phospholipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, molecular dynamics simulations show that the interaction of colistin with phospholipid bilayers is unlike what has been reported for other antimicrobial peptides that target phospholipid bilayers (Fu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "540429ef-443e-4330-9857-97a5ecc68aa2",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C19",
+      "claim": "LPS is synthesised in the cytoplasm via the Raetz pathway and introduced into the inner leaflet of the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gram-negative bacteria, LPS is synthesised in the cytoplasm via the Raetz pathway, during which it is introduced into the inner leaflet of the CM (Raetz et al., 2007; Simpson and Trent, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This biochemical pathway is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "512052ca-981a-4352-a264-059e8c37855c",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C20",
+      "claim": "LPS is flipped to the outer leaflet of the cytoplasmic membrane by MsbA.",
+      "claim_type": "EXPLICIT",
+      "source": "It is then flipped to the outer leaflet of the CM by MsbA before transportation to the OM via the LptABCDEFG machinery (Okuda et al., 2016; Zhou et al., 1998; Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This transport mechanism is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "0bb8a06e-c1c5-4a6c-ae38-c50985a9dfe6",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C21",
+      "claim": "LPS is transported to the outer membrane via the LptABCDEFG machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "It is then flipped to the outer leaflet of the CM by MsbA before transportation to the OM via the LptABCDEFG machinery (Okuda et al., 2016; Zhou et al., 1998; Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This transport mechanism is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "d5a72bdb-cd10-4a14-8f00-162796cf7160",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C22",
+      "claim": "Ten mobile colistin resistance (mcr) gene variants have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, 10 mobile colistin resistance (mcr) gene variants have been described, all of which encode phosphoethanolamine (pEtN) transferases that modify the lipid A component of LPS with pEtN as it is trafficked through the CM on the way to the OM (Liu et al., 2016; Carroll et al., 2019; Nang et al., 2019; Skov and Monnet, 2016; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "578c26e4-ac37-4b1f-b302-a750ad073172",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C23",
+      "claim": "MCR proteins encode phosphoethanolamine transferases that modify the lipid A component of LPS with pEtN as it is trafficked through the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, 10 mobile colistin resistance (mcr) gene variants have been described, all of which encode phosphoethanolamine (pEtN) transferases that modify the lipid A component of LPS with pEtN as it is trafficked through the CM on the way to the OM (Liu et al., 2016; Carroll et al., 2019; Nang et al., 2019; Skov and Monnet, 2016; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "4126f095-a3f1-4a6c-a186-939e4c062eae",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C24",
+      "claim": "Colistin resistance can arise via mutations in genes encoding two-component regulatory systems such as PhoPQ, PmrAB, or BasRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Colistin resistance can also arise via mutations in genes encoding two-component regulatory systems such as PhoPQ, PmrAB, or BasRS (Poirel et al., 2017; Janssen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "ad472123-aa47-41db-b3d4-f671d240b7b0",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C25",
+      "claim": "Mutations in two-component regulatory systems typically lead to the addition of 4-amino-4-deoxy-l-arabinose (L-ara4N) and/or pEtN groups to LPS at the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This typically leads to the addition of 4-amino-4-deoxy-l-arabinose (L-ara4N) and/or pEtN groups to LPS, with this modification also occurring at the CM (Simpson and Trent, 2019; Poirel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "f61e5aff-7b50-44e6-b207-069b89bd1e79",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C26",
+      "claim": "Colistin permits ingress of the N-phenyl-1-napthylamine (NPN) fluorophore into the outer membrane of E. coli expressing mcr-1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, colistin has been shown to permit ingress of the N-phenyl-1-napthylamine (NPN) fluorophore into the OM of E. coli expressing mcr-1 (MacNair et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "36db2dbd-1434-4d8b-91e6-ef5e2a5a8a47",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C27",
+      "claim": "Colistin greatly enhances the activity of hydrophobic antibiotics such as rifampicin against polymyxin-resistant bacteria via disruption of the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, colistin greatly enhances the activity of hydrophobic antibiotics such as rifampicin against polymyxin-resistant bacteria via disruption of the OM (Brennan-Krohn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "a106b0ec-6082-4f0b-85bc-3f9ee78f537c",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C28",
+      "claim": "Despite colistin damaging the outer membrane of resistant bacteria, it is unable to kill or lyse them.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite colistin damaging the OM of resistant bacteria, it is unable to kill or lyse them (MacNair et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "efcb3ff8-5713-4f5b-8595-efb84ce811fa",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C29",
+      "claim": "E. coli MC1000 expressing mcr-1 had a colistin MIC of 2 \u00b5g ml\u22121 compared to 0.25 \u00b5g ml\u22121 for the pEmpty control strain.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we found that E. coli MC1000 expressing mcr-1 had a significantly greater colistin minimum inhibitory concentration (MIC, 2 \u00b5g ml\u22121) compared to the MC1000 pEmpty control strain (0.25 \u00b5g ml\u22121), which was similar to that seen for clinical isolates (Dortet et al., 2018; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "8b58e84d-5a6b-40fd-ac24-c037d81c3da3",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C30",
+      "claim": "42 \u00b1 19% of total cellular LPS from MCR-1-producing E. coli was unmodified.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, whilst 42 \u00b1 19% of total cellular LPS from MCR-1-producing E. coli was unmodified, the proportion of unmodified LPS in the CM was just 21 \u00b1 2% (Figure 1A, Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This quantitative result is directly stated and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "a77d1f7c-b8f6-44c3-ade8-f21c5f6f9b34",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C31",
+      "claim": "The proportion of unmodified LPS in the cytoplasmic membrane of MCR-1-producing E. coli was 21 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, whilst 42 \u00b1 19% of total cellular LPS from MCR-1-producing E. coli was unmodified, the proportion of unmodified LPS in the CM was just 21 \u00b1 2% (Figure 1A, Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This quantitative result is directly stated and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "f9ff4e17-062e-4d20-9fdf-99eb46e173bf",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C32",
+      "claim": "Colistin caused permeabilisation of the outer membrane of E. coli pEmpty strain in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, colistin caused permeabilisation of the OM of the E. coli pEmpty strain in a dose-dependent manner (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "1b14202f-2257-416f-99c6-db40ab415334",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C33",
+      "claim": "Colistin disrupted the outer membrane of E. coli expressing mcr-1 to a similar degree to E. coli pEmpty.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous findings, we found that colistin also disrupted the OM of E. coli expressing mcr-1 to a similar degree to E. coli pEmpty (Figure 1B; MacNair et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated, shown in Figure 1B, and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "5a3d9a42-e24f-4283-9a03-2d3adddda9d4",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C34",
+      "claim": "Colistin sensitised E. coli expressing mcr-1 to rifampicin with a fractional inhibitory concentration index (FICI) value of 0.14.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in keeping with previous work, we found that colistin sensitised E. coli expressing mcr-1 to rifampicin, with a fractional inhibitory concentration index (FICI) value of 0.14 indicating synergy between the two antibiotics in a checkerboard assay (Figure 1\u2014figure supplement 6; MacNair et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated, shown in Figure 1\u2014figure supplement 6, and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "e14a44fc-d0ae-4397-82bf-e9ffb0c65f8f",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C35",
+      "claim": "Colistin exposure resulted in a strong PI signal from E. coli pEmpty cells, indicative of cytoplasmic membrane permeabilisation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, colistin exposure resulted in a strong PI signal from E. coli pEmpty cells, indicative of CM permeabilisation (Figure 1C), which gradually declined, most likely due to nucleases released from lysed bacteria (Lee et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "f1b8c9e4-d706-4bb8-80d0-1ebdf91e499f",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C36",
+      "claim": "The cytoplasmic membrane of E. coli expressing mcr-1 remained intact during colistin exposure, as demonstrated by the lack of PI-mediated fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite colistin permeabilising the OM of E. coli expressing mcr-1, the CM of these bacteria remained intact, as demonstrated by the lack of PI-mediated fluorescence (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "3e8e363f-531f-44ff-922e-a9da25ff222a",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C37",
+      "claim": "Colistin caused lysis of E. coli pEmpty cells, as seen by a reduction in OD595nm readings over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with these findings, colistin caused lysis of E. coli pEmpty cells, as seen by a reduction in OD595nm readings over time (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "1679d4b1-5a47-485a-8714-ef5e44824e4e",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C38",
+      "claim": "E. coli cells producing MCR-1 grew in the presence of colistin despite the damage the polymyxin caused to the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, E. coli cells producing MCR-1 grew in the presence of colistin despite the damage the polymyxin caused to the OM, as demonstrated by an increase in OD595nm measurements over time (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "642391c9-e3e4-4361-aaf5-e2e54d84a4ff",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C39",
+      "claim": "There were no differences in fluidity of the cytoplasmic membrane between E. coli pEmpty or mcr-1-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no differences in fluidity of the CM between E. coli pEmpty or mcr-1-expressing cells (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "74cd8b5f-348a-4cea-8f13-e091928f0f48",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C40",
+      "claim": "There was a slight increase in the positive charge of the cytoplasmic membrane of mcr-1-expressing E. coli relative to the pEmpty control.",
+      "claim_type": "EXPLICIT",
+      "source": "As might be expected, there was a slight increase in the positive charge of the CM of the mcr-1-expressing E. coli relative to the pEmpty control, indicative of the presence of cationic pEtN modifications to LPS (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "3803867e-86b9-4c10-b827-8dca2b249133",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C41",
+      "claim": "The cytoplasmic membrane of spheroplasts of E. coli MC1000 mcr-1 was resistant to damage by colistin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of treatment, there was a small but progressive loss of CM integrity over time due to the fragile nature of spheroplasts. However, allowing for this, the CM of spheroplasts of E. coli MC1000 mcr-1 was resistant to damage by colistin, but susceptible to daptomycin and nisin (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figures 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "c1a6e51d-fc75-4eb1-a445-af18f6ceb700",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C42",
+      "claim": "The cytoplasmic membrane of spheroplasts of E. coli MC1000 mcr-1 was susceptible to daptomycin and nisin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of treatment, there was a small but progressive loss of CM integrity over time due to the fragile nature of spheroplasts. However, allowing for this, the CM of spheroplasts of E. coli MC1000 mcr-1 was resistant to damage by colistin, but susceptible to daptomycin and nisin (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figures 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "7d5c896f-572c-4a13-916f-e2fea86a1ab7",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C43",
+      "claim": "Colistin, daptomycin, and nisin all permeabilised the cytoplasmic membrane of spheroplasts of E. coli pEmpty.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, colistin, daptomycin, and nisin all permeabilised the CM of spheroplasts of E. coli pEmpty (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figures 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "ccedea32-2390-4803-a81d-1fdf42bb67f3",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C44",
+      "claim": "Colistin, daptomycin, and nisin all caused lysis of spheroplasts of E. coli pEmpty.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with the data from assays measuring CM damage, colistin, daptomycin, and nisin all caused lysis of spheroplasts of E. coli pEmpty, whilst the spheroplasts from E. coli expressing mcr-1 were undamaged by colistin, but were lysed by both daptomycin and nisin (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figures 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "12e643a2-f0ee-4d7e-9fa2-ddaae23a3f82",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C45",
+      "claim": "Spheroplasts from E. coli expressing mcr-1 were undamaged by colistin, but were lysed by both daptomycin and nisin.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with the data from assays measuring CM damage, colistin, daptomycin, and nisin all caused lysis of spheroplasts of E. coli pEmpty, whilst the spheroplasts from E. coli expressing mcr-1 were undamaged by colistin, but were lysed by both daptomycin and nisin (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figures 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "d6010e4a-5557-40d5-b3e2-4a8b30035141",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C46",
+      "claim": "The protection afforded to the cytoplasmic membrane by MCR-1 is specific for colistin.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, these data demonstrated that the protection afforded to the CM by MCR-1 is specific for colistin, and that the polymyxin antibiotic does not share the same target as the phospholipid-targeting CAMPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental data showing differential effects of colistin versus daptomycin and nisin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "6118d0d2-d0f4-4590-b896-8c4a2688d1fb",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C47",
+      "claim": "There is a clear dose-dependent relationship between the abundance of unmodified LPS in the cytoplasmic membrane and the susceptibility of spheroplasts to colistin-mediated cytoplasmic membrane damage and lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore the specificity of MCR-1-mediated LPS modifications in the CM for protection against colistin, we produced spheroplasts of E. coli with different levels of LPS modification. This revealed a clear dose-dependent relationship between the abundance of unmodified LPS in the CM and the susceptibility of spheroplasts to colistin-mediated CM damage and lysis (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "8217b66a-a0a0-403b-aa7c-5452640fdd46",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C48",
+      "claim": "Magnesium chloride conferred dose-dependent protection from colistin-mediated cytoplasmic membrane disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with a role for cation bridges, we found that magnesium chloride conferred dose-dependent protection from colistin-mediated CM disruption (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "dfa98828-3796-4190-905b-cfa803e04a3b",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C49",
+      "claim": "Identical concentrations of sodium chloride did not protect spheroplasts from colistin.",
+      "claim_type": "EXPLICIT",
+      "source": "To rule out a general protective osmotic effect from the higher salt concentration, we demonstrated that identical concentrations of sodium chloride did not protect spheroplasts from colistin (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "6d365a70-eb14-43b7-a3b6-74ad9fa71159",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C50",
+      "claim": "The presence of exogenous magnesium had no significant effect on reducing spheroplast cytoplasmic membrane damage caused by daptomycin or nisin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the presence of exogenous magnesium had no significant effect on reducing spheroplast CM damage caused by daptomycin or nisin (Figure 3C,D), confirming that these CAMPs do not have the same CM target as colistin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "5ac7c577-641b-43be-8184-388c1ffe3c77",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C51",
+      "claim": "Colistin synergised with murepavadin against P. aeruginosa PA14 cells with a FICI value of 0.375.",
+      "claim_type": "EXPLICIT",
+      "source": "To test our hypothesis, we first used a checkerboard MIC assay and found that colistin synergised with murepavadin against P. aeruginosa PA14 cells (FICI value of 0.375), revealing that sub-lethal concentrations of the LptD inhibitor sensitised the bacterium to colistin (Figure 4A; Odds, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "ed50a76f-9fc8-4970-9c78-9c4ca39fc33f",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C52",
+      "claim": "Sub-lethal concentrations of murepavadin caused a slight reduction in LPS levels in the outer membrane of P. aeruginosa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Sub-lethal concentrations of murepavadin caused a slight reduction in LPS levels in the OM of P. aeruginosa cells, but a significant increase in the amount of LPS in the CM compared to untreated spheroplasts (Figure 4\u2014figure supplement 3, Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "97cfabf1-390a-41ce-8b6e-15c85d7b2518",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C53",
+      "claim": "Sub-lethal concentrations of murepavadin caused a significant increase in the amount of LPS in the cytoplasmic membrane of P. aeruginosa compared to untreated spheroplasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Sub-lethal concentrations of murepavadin caused a slight reduction in LPS levels in the OM of P. aeruginosa cells, but a significant increase in the amount of LPS in the CM compared to untreated spheroplasts (Figure 4\u2014figure supplement 3, Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "84312b6c-d0e0-4035-ad38-fad0ead5503d",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C54",
+      "claim": "Colistin permeabilised the outer membrane of P. aeruginosa to the same extent in bacteria exposed or not exposed to murepavadin.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the slight reduction of LPS at the OM caused by murepavadin, colistin permeabilised the OM to the same extent as bacteria that had not been exposed to murepavadin, with similar levels of NPN uptake (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "b8a6ce5a-021f-4f38-9877-3b8e9533839a",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C55",
+      "claim": "Murepavadin significantly enhanced permeabilisation of the cytoplasmic membrane by colistin in whole cells of P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, however, murepavadin significantly enhanced permeabilisation of the CM by colistin in whole cells of P. aeruginosa, as determined via uptake of PI (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "f28a736d-0f09-48d2-9647-e28faa9a4a7e",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C56",
+      "claim": "P. aeruginosa cells exposed to murepavadin were more rapidly lysed by colistin than untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, P. aeruginosa cells exposed to murepavadin were more rapidly lysed by colistin than untreated cells (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "fc4e4a86-c5d9-4e37-850c-186d5a53a0ba",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C57",
+      "claim": "There was no synergy observed between murepavadin and PMBN, with an FICI value of 1.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we first examined whether the OM permeabilising agent polymyxin B nonapeptide (PMBN) also synergised with murepavadin. However, we did not see synergy in MIC checkerboard or bactericidal assays between PMBN and murepavadin (Figure 4\u2014figure supplement 5, Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "b325a8a0-1323-4e4a-834b-499712cc5d48",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C58",
+      "claim": "Murepavadin pre-treated spheroplasts were much more susceptible to colistin-induced cytoplasmic membrane damage and lysis than untreated spheroplasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we pre-treated P. aeruginosa with murepavadin alone to cause LPS accumulation in the CM and then removed the murepavadin by washing before converting the whole cells to spheroplasts and exposing these to colistin alone. The murepavadin pre-treated spheroplasts were much more susceptible to colistin-induced CM damage and lysis than untreated spheroplasts (Figure 4\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 4\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "5dbfbf64-aa5f-47e1-9632-846043962fd4",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C59",
+      "claim": "A sub-lethal concentration of murepavadin sensitised P. aeruginosa PA14 to a normally sub-lethal concentration of colistin (2 \u00b5g ml\u22121), resulting in >10,000-fold reduction in c.f.u. counts relative to bacteria incubated with murepavadin or colistin alone after 8 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a sub-lethal concentration of murepavadin sensitised P. aeruginosa PA14 to a normally sub-lethal concentration of colistin (2 \u00b5g ml\u22121), resulting in >10,000-fold reduction in c.f.u. counts relative to bacteria incubated with murepavadin or colistin alone after 8 hr (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "32bd178b-3f6d-4a75-a5f1-320fbb0ae448",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C60",
+      "claim": "In 11 out of 14 murepavadin-susceptible CF isolates tested (79%), sub-lethal concentrations of murepavadin caused a significant increase in the bactericidal activity of colistin against P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "In 11 out of 14 murepavadin-susceptible CF isolates tested (79%), sub-lethal concentrations of murepavadin caused a significant increase in the bactericidal activity of colistin against P. aeruginosa (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "45982576-dbe2-4635-aa02-8baf6c048f30",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C61",
+      "claim": "Murepavadin did not affect the bactericidal activity of colistin against the strain that was resistant to the LptD inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, murepavadin did not affect the bactericidal activity of colistin against the strain that was resistant to the LptD inhibitor (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "78f1ab56-5dff-4ff0-84b7-f88cdfa29180",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C62",
+      "claim": "Mono-therapy with colistin alone or murepavadin alone had very little effect on the bacterial load assessed after 3 hr treatment compared with the no-treatment control in a murine lung infection model.",
+      "claim_type": "EXPLICIT",
+      "source": "Mono-therapy with colistin alone or murepavadin alone had very little effect on the bacterial load assessed after 3 hr treatment compared with the no-treatment control (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "7b37b4db-86af-4be3-98ec-3a1e06fd1200",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C63",
+      "claim": "Combination therapy with colistin and murepavadin caused a ~500-fold reduction in c.f.u. counts relative to the no-treatment control in a murine lung infection model.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, combination therapy with colistin and murepavadin caused a ~500-fold reduction in c.f.u. counts relative to the no-treatment control (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is directly stated and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "34ba2b25-4ac8-4210-bd87-152530f5ff87",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C64",
+      "claim": "Colistin-mediated disruption of the cytoplasmic membrane is considerably less efficient than that of the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, whilst colistin induced OM damage within minutes of bacterial exposure to the antibiotic, disruption of the CM took much longer. Even when spheroplasts lacking an OM were exposed to colistin, it still took more than 2 hr for CM permeabilisation to occur. Therefore, it appears that colistin-mediated disruption of the CM is considerably less efficient than that of the OM, likely due to the much lower levels of LPS present in the CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experimental observations comparing the kinetics of OM versus CM disruption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "0b6f6544-ae40-418e-b23d-6c9ac3b2f74a",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C65",
+      "claim": "The abundance of LPS in the cytoplasmic membrane of P. aeruginosa was found to be ~100 times lower than the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Salmonella and E. coli, the abundance of LPS in the CM of P. aeruginosa was found to be ~100 times lower than the OM, indicating that only about 1% of total LPS is present in the CM (Zendo et al., 2010; Osborn et al., 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "8e1c8e3d-5eca-45bb-97b8-8265544dba51",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C66",
+      "claim": "The presence of low concentrations of LPS (1% total composition) in phospholipid bilayer membranes was both necessary and sufficient for colistin-mediated permeabilisation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, studies with model membranes have shown that the presence of low concentrations of LPS (1% total composition) in phospholipid bilayer membranes was both necessary and sufficient for colistin-mediated permeabilisation (Khadka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "9d3926e9-28c2-4874-882c-7e337e974d15",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C67",
+      "claim": "Murepavadin is a first-in-class peptide-based inhibitor of the LptD component of the LptABCDEFG complex of P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Murepavadin is a first-in-class peptide-based inhibitor of the LptD component of the LptABCDEFG complex of P. aeruginosa that transports LPS from the CM to the OM (Andolina et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This description is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "a31e892f-60d5-4ff7-83b6-5f5a14c9c6a9",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C68",
+      "claim": "Inhibition of the Lpt system in P. aeruginosa leads to LPS accumulation in the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, inhibition of the Lpt system in P. aeruginosa leads to LPS accumulation in the CM, which we hypothesised would increase the susceptibility of the bacterium to colistin (Andolina et al., 2018; Sperandeo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "5e3b787f-7006-4394-b342-ee602f72d4b7",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C69",
+      "claim": "Colistin damages the cytoplasmic membrane by disrupting cation bridges between LPS molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our findings demonstrate that colistin targets LPS in the CM of polymyxin-susceptible E. coli, leading to the displacement of cationic inter-LPS bridges, membrane disruption, and ultimately bacterial lysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experimental data showing magnesium protection and is consistent with the known mechanism at the outer membrane.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "565cabd9-9a7f-442c-b066-557480d2e529",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C70",
+      "claim": "The high levels of LPS modified by pEtN in the cytoplasmic membrane of MCR-1-producing E. coli prevent colistin from targeting LPS in the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the high levels of LPS modified by pEtN in the CM of MCR-1-producing E. coli prevent colistin from targeting LPS in the CM, protecting the membrane and conferring resistance to the polymyxin antibiotic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experimental data showing the relationship between LPS modification and colistin resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "60d2549a-8f2a-4903-a075-7a8e556da035",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C71",
+      "claim": "MCR-1 protects the cytoplasmic membrane but not the outer membrane from colistin-mediated permeabilisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that MCR-1 protects the CM but not the OM from colistin-mediated permeabilisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experimental data showing differential protection of the two membranes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "2c4a10d2-1523-4f28-b36d-038767bbd9a0",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "claim_id": "C72",
+      "claim": "LPS is the cytoplasmic membrane target of colistin.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, since MCR-1 specifically modifies LPS and this modification selectively protects the CM from colistin in a dose-dependent manner, we concluded that LPS is the CM target of colistin, just as it is in the OM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experimental data showing the specificity of MCR-1 protection and dose-dependent relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MCR-1 protects the cytoplasmic membrane but not the outer membrane from colistin-mediated permeabilisation. E. coli expressing mcr-1 showed increased colistin MIC (2 \u00b5g/ml vs 0.25 \u00b5g/ml), with 21\u00b12% unmodified LPS in the CM versus 42\u00b119% in whole cells. Colistin disrupted the OM equally in both strains but only permeabilised the CM of pEmpty cells, not mcr-1-expressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C38 provide comprehensive experimental evidence from MIC assays, lipidomic analysis, NPN uptake, PI fluorescence, and lysis measurements showing differential protection of CM versus OM. The data consistently demonstrate that MCR-1 specifically protects the CM while the OM remains susceptible to colistin damage. Statistical significance is reported (C29-C38) and multiple complementary assays support the conclusion (C71).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "3cd48f4e-5e20-4be6-958a-c461b1e92840",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LPS is the cytoplasmic membrane target of colistin. Spheroplasts of E. coli expressing mcr-1 were resistant to colistin but susceptible to daptomycin and nisin, while pEmpty spheroplasts were susceptible to all three antimicrobials. This specificity demonstrates that colistin targets LPS rather than phospholipids in the CM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 provide direct experimental evidence using spheroplasts (lacking OM) exposed to different antimicrobials. The differential susceptibility pattern\u2014MCR-1 protection specific to colistin but not to phospholipid-targeting CAMPs\u2014strongly supports LPS as the CM target. The logic is sound: if MCR-1 only modifies LPS and provides colistin-specific protection, then LPS must be the target (C46, C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "fbe4e11a-6e9f-4612-954c-e8a9d853c540",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "There is a dose-dependent relationship between unmodified LPS abundance in the cytoplasmic membrane and susceptibility to colistin. Spheroplasts with varying levels of LPS modification showed proportional susceptibility to colistin-mediated CM damage and lysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 describes experiments using IPTG titration to generate different levels of MCR-1 expression and LPS modification. The dose-dependent relationship provides strong mechanistic evidence linking LPS modification levels directly to colistin resistance, supporting the conclusion that LPS is the CM target. Data shown in Figure 2\u2014figure supplement 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "c635d0cf-f52e-416b-a9fd-3c90d2ec2b58",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Colistin damages the cytoplasmic membrane by disrupting cation bridges between LPS molecules. Magnesium chloride provided dose-dependent protection from colistin-mediated CM disruption, while sodium chloride did not. Magnesium had no effect on daptomycin or nisin activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 provide experimental evidence using spheroplasts with controlled cation concentrations. The specificity of magnesium (but not sodium) protection for colistin (but not other CAMPs) supports the cation bridge disruption mechanism. This is consistent with the known mechanism at the OM and provides mechanistic insight into how colistin damages the CM (C69).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "84e7f186-233c-4d02-a551-f8bc68c6ff11",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Murepavadin causes LPS accumulation in the cytoplasmic membrane of P. aeruginosa, resulting in increased susceptibility to colistin. Sub-lethal murepavadin (0.05 \u00b5g/ml) caused significant LPS increase in CM, enhanced colistin-mediated CM permeabilisation and lysis, while OM permeabilisation remained unchanged. Pre-treatment experiments confirmed the effect was due to LPS accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56, C58 provide comprehensive evidence using checkerboard assays (FICI=0.375), LAL assays showing LPS accumulation, and functional assays (NPN, PI, lysis). The pre-treatment experiment (C58) with murepavadin washout is particularly strong evidence that LPS accumulation, not OM permeabilisation, drives the synergy. Multiple complementary approaches support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "80b31d17-66c4-4347-a5bf-7478128cd012",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Murepavadin and colistin combination therapy shows enhanced bactericidal activity against P. aeruginosa in vitro. Sub-lethal murepavadin sensitised PA14 to sub-lethal colistin (2 \u00b5g/ml), causing >10,000-fold reduction in CFU. This effect was observed in 79% (11/14) of murepavadin-susceptible CF isolates but not in the resistant strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 provide quantitative bactericidal data from time-kill assays with both reference strain and clinical isolates. The >10,000-fold reduction is substantial, and testing against a murepavadin-resistant strain (C61) serves as an important negative control demonstrating specificity. The 79% response rate across diverse clinical isolates supports clinical relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "c6a1cdc0-ad98-45bf-bedd-a738409e813e",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Combination therapy with colistin and murepavadin improves treatment efficacy in vivo. In a murine lung infection model, mono-therapy had minimal effect, while combination therapy caused ~500-fold reduction in bacterial load after 3 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 provide in vivo validation using an established murine lung infection model. The ~500-fold reduction with combination therapy versus minimal effect with mono-therapy demonstrates therapeutic potential. However, the study is limited to a single time point (3 hr), single dose level, and one bacterial strain. Longer-term efficacy, optimal dosing, and safety data would strengthen clinical translation potential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "88b17405-ac86-4985-9ee1-74c21669e63a",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PMBN does not synergise with murepavadin (FICI=1), demonstrating that the colistin-murepavadin synergy is not due to enhanced OM permeabilisation enabling murepavadin access to its target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 provides an important control experiment. Since PMBN permeabilises the OM like colistin but lacks the full bactericidal activity, the absence of synergy with murepavadin rules out the alternative hypothesis that OM permeabilisation drives the synergy. This supports the conclusion that LPS accumulation in the CM is the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "333f6c60-4ad5-4bf0-b7b2-e30da1437264",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MCR-1 expression causes a slight increase in positive charge of the cytoplasmic membrane but does not affect membrane fluidity. The charge increase is consistent with cationic pEtN modifications to LPS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 provide biophysical characterization using Laurdan (fluidity) and FITC-PLL (charge) assays. The data show that MCR-1 protection is not due to gross changes in membrane properties but rather specific chemical modification. This supports the specificity of the LPS-targeting mechanism and rules out non-specific membrane effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "4464eee5-143c-4f6c-8614-e5c728148405",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Colistin-mediated disruption of the cytoplasmic membrane is considerably less efficient than disruption of the outer membrane, taking >2 hours for CM permeabilisation even in spheroplasts versus minutes for OM damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 synthesizes kinetic observations from multiple experiments. The slower CM disruption is attributed to lower LPS abundance (~1% in CM vs OM). This is a reasonable inference supported by the experimental observations and consistent with the ~100-fold lower LPS levels in CM (C65). The conclusion logically follows from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on polymyxin antibiotics, their clinical use, known mechanisms, resistance mechanisms, and LPS biosynthesis/transport pathways. This includes structural features, clinical efficacy limitations, established OM disruption mechanism, gaps in understanding CM damage, LPS synthesis and transport machinery, and MCR-mediated resistance mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C28, C65-C68 are background claims supported by citations to established literature. These provide context for the study but are not novel findings. The citations appear appropriate and the claims are consistent with established knowledge in the field. These are necessary for framing the research questions but do not constitute results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    },
+    {
+      "id": "88c2a680-661c-4337-ac9d-0e81b6a0d3de",
+      "content_id": "1a26eaca-fe39-4a77-9635-cb1b24fafa1c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "High levels of pEtN-modified LPS in the cytoplasmic membrane of MCR-1-producing E. coli prevent colistin from targeting LPS in the CM, conferring resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is a mechanistic conclusion synthesizing the experimental findings. It is well-supported by the dose-dependent relationship (C47), the differential LPS modification levels between CM and OM (C30-C31), and the protection pattern observed. This represents the key mechanistic insight explaining MCR-1-mediated resistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:28.311565Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c89f16aa-5a83-4de1-b122-ecb5c74d7787",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "efcb3ff8-5713-4f5b-8595-efb84ce811fa",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "8b58e84d-5a6b-40fd-ac24-c037d81c3da3",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "a77d1f7c-b8f6-44c3-ade8-f21c5f6f9b34",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "f9ff4e17-062e-4d20-9fdf-99eb46e173bf",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "1b14202f-2257-416f-99c6-db40ab415334",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "5a3d9a42-e24f-4283-9a03-2d3adddda9d4",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "e14a44fc-d0ae-4397-82bf-e9ffb0c65f8f",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "f1b8c9e4-d706-4bb8-80d0-1ebdf91e499f",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "3e8e363f-531f-44ff-922e-a9da25ff222a",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "1679d4b1-5a47-485a-8714-ef5e44824e4e",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "60d2549a-8f2a-4903-a075-7a8e556da035",
+      "result_id": "e285379b-aaef-465a-acf9-b3faa7b7d9b6"
+    },
+    {
+      "claim_id": "3135c6a1-10c7-4c6f-a53f-13b80c63222b",
+      "result_id": "3cd48f4e-5e20-4be6-958a-c461b1e92840"
+    },
+    {
+      "claim_id": "3803867e-86b9-4c10-b827-8dca2b249133",
+      "result_id": "3cd48f4e-5e20-4be6-958a-c461b1e92840"
+    },
+    {
+      "claim_id": "c1a6e51d-fc75-4eb1-a445-af18f6ceb700",
+      "result_id": "3cd48f4e-5e20-4be6-958a-c461b1e92840"
+    },
+    {
+      "claim_id": "7d5c896f-572c-4a13-916f-e2fea86a1ab7",
+      "result_id": "3cd48f4e-5e20-4be6-958a-c461b1e92840"
+    },
+    {
+      "claim_id": "ccedea32-2390-4803-a81d-1fdf42bb67f3",
+      "result_id": "3cd48f4e-5e20-4be6-958a-c461b1e92840"
+    },
+    {
+      "claim_id": "12e643a2-f0ee-4d7e-9fa2-ddaae23a3f82",
+      "result_id": "3cd48f4e-5e20-4be6-958a-c461b1e92840"
+    },
+    {
+      "claim_id": "d6010e4a-5557-40d5-b3e2-4a8b30035141",
+      "result_id": "3cd48f4e-5e20-4be6-958a-c461b1e92840"
+    },
+    {
+      "claim_id": "2c4a10d2-1523-4f28-b36d-038767bbd9a0",
+      "result_id": "3cd48f4e-5e20-4be6-958a-c461b1e92840"
+    },
+    {
+      "claim_id": "6118d0d2-d0f4-4590-b896-8c4a2688d1fb",
+      "result_id": "fbe4e11a-6e9f-4612-954c-e8a9d853c540"
+    },
+    {
+      "claim_id": "8217b66a-a0a0-403b-aa7c-5452640fdd46",
+      "result_id": "c635d0cf-f52e-416b-a9fd-3c90d2ec2b58"
+    },
+    {
+      "claim_id": "dfa98828-3796-4190-905b-cfa803e04a3b",
+      "result_id": "c635d0cf-f52e-416b-a9fd-3c90d2ec2b58"
+    },
+    {
+      "claim_id": "6d365a70-eb14-43b7-a3b6-74ad9fa71159",
+      "result_id": "c635d0cf-f52e-416b-a9fd-3c90d2ec2b58"
+    },
+    {
+      "claim_id": "5e3b787f-7006-4394-b342-ee602f72d4b7",
+      "result_id": "c635d0cf-f52e-416b-a9fd-3c90d2ec2b58"
+    },
+    {
+      "claim_id": "8aa5c1fa-e879-47c9-b6c7-818dbdd22efa",
+      "result_id": "84e7f186-233c-4d02-a551-f8bc68c6ff11"
+    },
+    {
+      "claim_id": "5ac7c577-641b-43be-8184-388c1ffe3c77",
+      "result_id": "84e7f186-233c-4d02-a551-f8bc68c6ff11"
+    },
+    {
+      "claim_id": "ed50a76f-9fc8-4970-9c78-9c4ca39fc33f",
+      "result_id": "84e7f186-233c-4d02-a551-f8bc68c6ff11"
+    },
+    {
+      "claim_id": "97cfabf1-390a-41ce-8b6e-15c85d7b2518",
+      "result_id": "84e7f186-233c-4d02-a551-f8bc68c6ff11"
+    },
+    {
+      "claim_id": "84312b6c-d0e0-4035-ad38-fad0ead5503d",
+      "result_id": "84e7f186-233c-4d02-a551-f8bc68c6ff11"
+    },
+    {
+      "claim_id": "b8a6ce5a-021f-4f38-9877-3b8e9533839a",
+      "result_id": "84e7f186-233c-4d02-a551-f8bc68c6ff11"
+    },
+    {
+      "claim_id": "f28a736d-0f09-48d2-9647-e28faa9a4a7e",
+      "result_id": "84e7f186-233c-4d02-a551-f8bc68c6ff11"
+    },
+    {
+      "claim_id": "b325a8a0-1323-4e4a-834b-499712cc5d48",
+      "result_id": "84e7f186-233c-4d02-a551-f8bc68c6ff11"
+    },
+    {
+      "claim_id": "2bc7cb0b-6045-4454-9c05-b6325ff2300b",
+      "result_id": "80b31d17-66c4-4347-a5bf-7478128cd012"
+    },
+    {
+      "claim_id": "5dbfbf64-aa5f-47e1-9632-846043962fd4",
+      "result_id": "80b31d17-66c4-4347-a5bf-7478128cd012"
+    },
+    {
+      "claim_id": "32bd178b-3f6d-4a75-a5f1-320fbb0ae448",
+      "result_id": "80b31d17-66c4-4347-a5bf-7478128cd012"
+    },
+    {
+      "claim_id": "45982576-dbe2-4635-aa02-8baf6c048f30",
+      "result_id": "80b31d17-66c4-4347-a5bf-7478128cd012"
+    },
+    {
+      "claim_id": "d160fe8f-e938-4a74-82e5-a73febacd3e0",
+      "result_id": "c6a1cdc0-ad98-45bf-bedd-a738409e813e"
+    },
+    {
+      "claim_id": "78f1ab56-5dff-4ff0-84b7-f88cdfa29180",
+      "result_id": "c6a1cdc0-ad98-45bf-bedd-a738409e813e"
+    },
+    {
+      "claim_id": "7b37b4db-86af-4be3-98ec-3a1e06fd1200",
+      "result_id": "c6a1cdc0-ad98-45bf-bedd-a738409e813e"
+    },
+    {
+      "claim_id": "fc4e4a86-c5d9-4e37-850c-186d5a53a0ba",
+      "result_id": "88b17405-ac86-4985-9ee1-74c21669e63a"
+    },
+    {
+      "claim_id": "642391c9-e3e4-4361-aaf5-e2e54d84a4ff",
+      "result_id": "333f6c60-4ad5-4bf0-b7b2-e30da1437264"
+    },
+    {
+      "claim_id": "74cd8b5f-348a-4cea-8f13-e091928f0f48",
+      "result_id": "333f6c60-4ad5-4bf0-b7b2-e30da1437264"
+    },
+    {
+      "claim_id": "34ba2b25-4ac8-4210-bd87-152530f5ff87",
+      "result_id": "4464eee5-143c-4f6c-8614-e5c728148405"
+    },
+    {
+      "claim_id": "4fefca97-c567-4816-94e2-b502005eab70",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "ee7f5161-7e9c-48a0-90bf-fa31674b5262",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "df7d7f58-5265-4817-a35b-8042b30eac5d",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "0f9fa53e-31e1-41fc-9471-2b040d1fc2f4",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "18bbf4da-1600-4f5b-b01e-93b2b8d54f79",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "b39ad36a-44ec-4260-bb2e-87cf3110ea6c",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "97c208e8-cb98-4eec-914f-06875b854075",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "ed51899d-6007-41a7-87ec-f10c974c04ca",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "5bdf6ce2-a183-4b86-8a6a-1d4d09750c46",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "e35c379f-8c12-4f51-918f-c7259a922770",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "5cad7878-2282-40fd-85ca-b0839eef23aa",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "27c3d084-cbb7-416e-9423-bf1f1f200073",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "7f2d2093-9da2-499e-8e2e-23783a4d065f",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "540429ef-443e-4330-9857-97a5ecc68aa2",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "512052ca-981a-4352-a264-059e8c37855c",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "0bb8a06e-c1c5-4a6c-ae38-c50985a9dfe6",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "d5a72bdb-cd10-4a14-8f00-162796cf7160",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "578c26e4-ac37-4b1f-b302-a750ad073172",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "4126f095-a3f1-4a6c-a186-939e4c062eae",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "ad472123-aa47-41db-b3d4-f671d240b7b0",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "f61e5aff-7b50-44e6-b207-069b89bd1e79",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "36db2dbd-1434-4d8b-91e6-ef5e2a5a8a47",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "a106b0ec-6082-4f0b-85bc-3f9ee78f537c",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "0b6f6544-ae40-418e-b23d-6c9ac3b2f74a",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "8e1c8e3d-5eca-45bb-97b8-8265544dba51",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "9d3926e9-28c2-4874-882c-7e337e974d15",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "a31e892f-60d5-4ff7-83b6-5f5a14c9c6a9",
+      "result_id": "6bd808f3-a97f-46a4-89a5-71018d4ff6de"
+    },
+    {
+      "claim_id": "565cabd9-9a7f-442c-b066-557480d2e529",
+      "result_id": "88c2a680-661c-4337-ac9d-0e81b6a0d3de"
+    }
+  ],
+  "comparisons": []
+}

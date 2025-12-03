@@ -1,0 +1,2320 @@
+{
+  "submission": {
+    "id": "fea2eb31-7097-4e9e-a5af-f92079b77ee8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:22:46.933598Z",
+    "updated_at": "2025-12-03T01:22:46.933598Z"
+  },
+  "content": [
+    {
+      "id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "submission_id": "fea2eb31-7097-4e9e-a5af-f92079b77ee8",
+      "content_type": "manuscript",
+      "content_text": "# Defining human mesenchymal and epithelial heterogeneity in response to oral inflammatory disease\n\n## Authors\n\n- Ana J Caetano<sup>1</sup> ([ORCID: 0000-0003-4588-3241](https://orcid.org/0000-0003-4588-3241))\n- Val Yianni<sup>1</sup> ([ORCID: 0000-0001-9857-7577](https://orcid.org/0000-0001-9857-7577))\n- Ana Volponi<sup>1</sup>\n- Veronica Booth<sup>2</sup>\n- Eleanor M D'Agostino<sup>3</sup>\n- Paul Sharpe<sup>1</sup> ([ORCID: 0000-0003-2116-9561](https://orcid.org/0000-0003-2116-9561)) \u2020\n\n### Affiliations\n\n1. Centre for Craniofacial and Regenerative Biology, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London London United Kingdom\n2. Department of Periodontology, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London London United Kingdom\n3. Unilever R&D, Colworth Science Park, Sharnbrook, Bedfordshire Bedford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman oral soft tissues provide the first barrier of defence against chronic inflammatory disease and hold a remarkable scarless wounding phenotype. Tissue homeostasis requires coordinated actions of epithelial, mesenchymal, and immune cells. However, the extent of heterogeneity within the human oral mucosa and how tissue cell types are affected during the course of disease progression is unknown. Using single-cell transcriptome profiling we reveal a striking remodelling of the epithelial and mesenchymal niches with a decrease in functional populations that are linked to the aetiology of the disease. Analysis of ligand\u2013receptor interaction pairs identify potential intercellular hubs driving the inflammatory component of the disease. Our work establishes a reference map of the human oral mucosa in health and disease, and a framework for the development of new therapeutic strategies.\n\n## Introduction\n\nThe oral mucosa is one of the most rapidly dividing tissues in the body and provides the first line of defence against the development of oral disease. Gingiva is the oral mucosa that surrounds the cervical portion of the teeth, and consists of a keratinised stratified squamous epithelium and an underlying connective tissue containing multiple cell types that collectively orchestrate tissue homeostasis during health and in response to mechanical and microbial challenges (Lindhe et al., 2008; Cekici et al., 2014). Periodontal disease is a chronic inflammatory condition associated with a dysbiosis of the commensal oral microbiota and host immune defences causing irreversible destruction of the soft and hard supporting tissues of the teeth (Pihlstrom et al., 2005; Lindhe et al., 2008). Gingivitis is a mild and reversible inflammation of the gingiva that does not permanently compromise the integrity of the tissues supporting the teeth. Chronic periodontitis occurs when untreated gingivitis progresses to the loss of the gingiva, bone, and ligament (Lamont and Hajishengallis, 2015; Pihlstrom et al., 2005; Lindhe et al., 2008). Regenerating lost tissues remains the fundamental therapeutic goal and to achieve this it is necessary to understand the mechanisms and pathways controlling disease progression while identifying novel candidates for intervention.\n\nMost studies on the pathogenesis of periodontal disease have largely focused on characterising the microbial biofilm and host immune response (Hajishengallis, 2014; Yucel-Lindberg and B\u00e5ge, 2013). However, it is recognised that tissue resident cells play an instrumental role in innate immunity, immune regulation, and epithelial barrier maintenance (Krausgruber et al., 2020). Additionally, individual molecules known to play important roles in disease pathogenesis and the cell types they originate from remain ill-defined (Yucel-Lindberg and B\u00e5ge, 2013).\n\nHere, we set out to unbiasedly profile human gingiva, including epithelial, mesenchymal and immune compartments using single-cell RNA sequencing. To better characterise the dynamics of disease progression we used samples isolated from healthy and diseased patients. Our single-cell analysis identified differences in the composition of cellular sub populations residing within the gingival tissues and changes in the transcriptional fingerprint between healthy and diseased patient samples. We showed that these changes correlate with progressive diseased states.\n\nDespite the growing recognition that mesenchymal (stromal) cells maintain epithelial barrier integrity and immune homeostasis in several organs (Kabiri et al., 2014; Nowarski et al., 2017; Bernardo and Fibbe, 2013), the identity of gingiva-specific mesenchymal subtypes and the molecular attributes that regulate niche maintenance or disease remodelling have not been described. Significantly, we identified specific changes in mesenchymal cell populations indicative of playing a role in disease progression.\n\nIntercellular network reconstruction in healthy and diseased states revealed loss of cell communication and increased immune interactions between the identified cell types. We provide novel insights into altered communication patterns between epithelial and mesenchymal cells caused by the inflammatory response.\n\nTaken together, our data characterise the cellular landscape and intercellular interactions of the human gingiva, which enables the discovery of previously unreported cell populations contributing to oral chronic disease. Understanding the crucial roles of individual cell states during disease progression will contribute to the development of targeted cell-based approaches to promote regeneration or reduce inflammation-associated tissue dysfunction.\n\n## Results\n\n### Generation of the gingival transcriptional landscape in health and periodontitis\n\nSimilar to other tissues in the gastrointestinal tract, the oral mucosa is a good model for studying a rapidly renewing tissue. To provide an in-depth analysis of cellular architecture, cell heterogeneity, and understand gingival cell dynamics when transitioning from health to disease, we transcriptionally profiled single cells derived from patients. We obtained freshly resected human gingival tissue and isolated live cells (Figure 1\u2014figure supplement 1) to be sequenced on the 10x Genomics Chromium platform for single-cell RNA-seq (scRNA-seq) (Figure 1A). A total of 12,411 cells were captured across four patient biopsies, allowing us to perform an in-depth analysis of single-cell transcriptomics. In order to ascertain the extent of likely human variation between datasets we first compared data from two healthy patients. Cells from these healthy patients were remarkably similar (Figure 1\u2014figure supplement 2) and we observed a strong linear relationship in gene signatures between the two patient samples (Figure 1\u2014figure supplement 2). Having established a high concordance of datasets obtained from two biopsies of healthy gingiva and to amplify the power of the study, these were merged and handled together for the subsequent analysis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig1-v2.jpg)\n\n**Figure 1.:** (A) Overview of the experimental workflow. All samples were processed immediately after clinical surgery. (B) scRNA-seq data obtained from healthy and periodontitis cells (n\u00a0=\u00a012,411) from four donors illustrated by UMAP coloured by cell-type annotation (nHealthy\u00a0=\u00a04639, nMild\u00a0=\u00a04401, nSevere\u00a0=\u00a03367). (C) Heatmap of the mean expression of the most differentially expressed marker genes for each cluster identified. (D) Haematoxylin and eosin staining of gingival sections from healthy, mild, and severe patient samples showing increasing changes in tissue architecture with loss of epithelial rete ridges definition and infiltration of leukocytes. (E) Changes in tissue composition in periodontitis showing UMAP of progressive diseased states from healthy, mild, and severely diseased donors.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Cells were gated based on size using standard SSC-A and FSC-A parameters. Doublets were excluded using SSC-A and SSC-W parameters. Live cells were selected as cells dimly fluorescing in DAPI. Samples were analysed on BD FACS Aria III Fusion machine.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) UMAP visualisation of human gingiva clusters from healthy human donors. (B) Scatter plots showing differential expressed genes across the two healthy samples. Panels A-B, n\u00a0=\u00a02 individuals.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) UMAP illustration of scRNA-seq data obtained from healthy and periodontitis cells (n\u00a0=\u00a012,411) from four donors coloured by condition. (B) Cell subset distributions across conditions. Shown are percentage of cells (y axis) in each cell subset (bars) that are derived from each healthy (orange), mild (green), and severe (blue) samples. X axis represents cluster ID. (C) Feature Plot showing the expression of lineage marker genes used for cell-type classification.\n\nCarrying out a comparative bioinformatic analysis of samples obtained from healthy and periodontitis patients revealed a diversity in epithelial, stromal, endothelial, and immune cells. A total of 16 distinct transcriptomic signatures were detected that corresponded to cell types or sub-populations of identifiable cell states. These were visualised using UMAP (Figure 1B).\n\nIn the epithelial compartment, we identified three subsets (clusters 1, 8, and 12), potentially corresponding to distinct differentiation stages. Cluster 1 shows a basal cell state with expression of HOPX, IGFBP5, and LAMB3; and cluster 8 a more mature cell state with expression of KRT1, KRT8, LAT (Linker for Activation of T cells) and PTGER both required for TCR (T-cell antigen receptor) signalling (Figure 1B,C; Figure 1\u2014figure supplement 3).\n\nProliferating basal cells were identified in cluster 12 by expression of canonical marker genes of proliferating cells such as MKI67 and TOP2A (Whitfield et al., 2006; Figure 1B,C; Figure 1\u2014figure supplement 2). We also identify a mesenchymal (stromal-fibroblast) (cluster 6) based on collagen expression; one perivascular (cluster 10) by high expression of PDGFRB and RGS5 (Figure 1B,C; Figure 1\u2014figure supplement 3); two endothelial (clusters 9 and 15) in which cluster 9 specifically expresses CLDN5 and EMCN and cluster 15 shows high expression of genes involved in the regulation of angiogenesis such as KDR, TIE1, and SOX18 (Jones et al., 2001; Fran\u00e7ois et al., 2008; Figure 1B,C; Figure 1\u2014figure supplement 3).\n\nWe identified immune clusters of the myeloid (macrophages and dendritic cells) and lymphoid (T and B cells) lineages. B cells are shown in three distinct populations (clusters 0, 5, and 7) with clusters 0 and 5 expressing MZB1, DERL3, and IGHG4 characteristic of follicular and IgG plasma B cells respectively, and cluster 7 expressing MS4A1 and CD37 corresponding to memory B cells (Akkaya et al., 2020; James et al., 2020; Figure 1B,C; Figure 1\u2014figure supplement 3). T cells are shown in cluster 3 identified by expression of canonical TRM marker CXCR6. Dendritic cells of myeloid origin with high expression of CLEC9A and IRF8 are found in clusters 13 and 14 (Eisenbarth, 2019; James et al., 2020), and mast cells are indicated in cluster 2 expressing TPSB2 and TPSB1 (Abraham and John, 2010; Figure 1B,C; Figure 1\u2014figure supplement 3). Macrophages are found in two populations (clusters 4 and 11) sharing high expression of LYZ and AIF1 (Chakarov et al., 2019; Figure 1B,C; Figure 1\u2014figure supplement 3). In most cases, further sub-clusters could not be distinguished by an additional clustering, with the exception of epithelial and stromal clusters.\n\nTogether, these data provide the first detailed molecular insight into gingival cell populations supported by known and novel markers.\n\n### Transcriptional comparison of healthy and periodontitis reveals progressive diseased states\n\nDuring disease progression there is a distinct signature of clinical phenotypes including redness, swelling, bleeding, destruction of periodontal ligament and bone and gingival recession (Kinane, 2001). These clinical manifestations are due to the dysregulation of a number of cell types which include epithelial, stromal, immune, and the associate cross-talk between them (Pihlstrom et al., 2005).\n\nHistologically, the diseased samples showed different levels of severity. Therefore, in our analysis we staged the samples as healthy, mild, and severe. (Figure 1D). In the mildly affected sample, we observed an intact keratinised squamous epithelial layer, minor losses of collagen, and rete-ridge definition. In contrast, in the severe state we detected a dense infiltrate of lymphocytes, breakdown of the epithelial barrier and clear reduction of collagen content (Figure 1D).\n\nTo investigate the transitions between health and mild to severe periodontitis, we determined the contribution of cells sampled from each condition to the main cell classes, and investigated whether their respective subpopulations were maintained, amplified or depleted across the conditions.\n\nAt a transcriptomic level, the cellular landscape is dominated by a corresponding shift in cellular proportions (Figure 1E). In health, we observed low numbers of follicular and plasma B cells and a progressive increase from mild to severe (Figure 1E; Figure 1\u2014figure supplement 3). The minimal presence of B cells in healthy gingiva was also reported by others (Dutzan et al., 2016; Mahanonda et al., 2016; Artese et al., 2011). Memory B cells show a distinctive increase in the mild sample with a subsequent decrease in the severe sample (Figure 1E).\n\nSimilarly, there was a surge in T cells in mild disease followed by a decrease in severe. While there has been some characterisation of immune cell subsets in health and periodontitis (Dutzan et al., 2016), the timing of their involvement is still unclear. Our study addresses this to some extent by showing that these populations may be abundant in the mild stage and then gradually decrease as disease progresses. T-cell senescence as a result of persistent immune activation in chronic diseases has been previously reported (Effros and Pawelec, 1997; Vallejo et al., 2004). A decrease in the severe stage might suggest that the persistent immune activation characteristic of chronic inflammation may lead to T-cell senescence, and consequently to the inability to reduce local inflammatory responses contributing to disease persistence. Additionally, we also identified a dynamic shift in the two macrophage populations with an expansion in the mild stage consistent with their function in tissue clearing and a subsequent reduction at the severe stage (Figure 1E). There is no clear difference in the dendritic cell compartment during disease progression. Mast cells also show a significant enrichment in mild and a decrease in the severe state. These results deliver the first unbiased immune characterisation of the gingiva across disease states (Figure 1E).\n\nIn addition to infiltrating immune cells driving the inflammatory process, mesenchymal and epithelial gingival cells in the gingiva are also affected during the progression and persistence of the disease (Yucel-Lindberg and B\u00e5ge, 2013). We observed a progressive depletion of both mesenchymal and epithelial cell populations (Figure 1E), in line with the patient matched immunohistochemical studies.\n\nTogether these results provide with the first comprehensive platform to compare dynamic changes of gingival cell populations during disease development.\n\n### Cellular and molecular map of the stromal gingival compartment in health and disease identifies subpopulations with potential roles in disease progression\n\nTissue mesenchymal cells play essential roles in epithelial homeostasis, matrix remodelling, immunity, and inflammation (Kinchen et al., 2018; Nowarski et al., 2017). Their function in the regulation of acute and chronic inflammation in peripheral organs is now well established (Fiocchi et al., 2006; Kinchen et al., 2018; Croft et al., 2019). Despite the growing recognition that the mesenchyme acts as a critical regulator in disease persistence by producing cytokines, chemokines, proteolytic enzymes, and prostaglandins (Yucel-Lindberg and B\u00e5ge, 2013), the identity of gingiva-specific mesenchymal subtypes and the molecular attributes that regulate niche maintenance in disease have not been described. To better visualise the difference in cellular heterogeneity of gingival stromal cells in health and disease, we performed re-clustering analysis of collagen expressing cells to identify any possible sub-clusters with a distinct transcriptional signature.\n\nThese data revealed five fibroblast-like populations, one pericyte and one myofibroblast (Figure 2A; Figure 2\u2014figure supplement 1). Myofibroblasts were identified by expression of ACTA2 and by gene ontology (GO) terms such as \u2018muscle contraction\u2019 and \u2018smooth muscle contraction\u2019. Pericytes were identified by PDGFRB and MCAM expression and GO terms such as \u2018regulation of angiogenesis\u2019 (Figure 2C,D). S0, S2, and S4 fibroblast-like subpopulations showed enrichment for genes annotated with \u2018extracellular matrix\u2019-related GO terms. Interestingly, one of the fibroblast-like populations (S0) GO enrichment included \u2018upregulation of fibroblast proliferation\u2019 with marked expression of PDGFRA, WNT5A, and IGF1. It also shows upregulation of POSTN which is essential for tissue repair (K\u00fchn et al., 2007). Another fibroblast-like population (S2) showed enrichment for genes involved in the negative regulation of Wnt signalling (GREM1, SFRP1, APCDD1, and DKK3); S4 showed expression of OSR2, FGFR1, SOX4, and TBX3 known to be involved in skeletal development. Additionally, S4 also differed in the expression of a specific form of collagen, collagen IV, which is known to be a key component of the epithelial basement membrane and might suggest a role in epithelial barrier membrane as previously described (Kinchen et al., 2018). Finally, S5 and S6 show a potential role in immune regulation with enrichment for \u2018cytokine-mediated signalling pathway\u2019, \u2018IFN-\u03b3 signalling\u2019 and \u2018T-cell activation\u2019 (Figure 2\u2014figure supplement 1; Source data 2). Highly ranked S5 markers included ILR1, IFN\u03b3R1, and a member of the TNF-receptor superfamily \u2013 TNFRS11B (osteoprotegerin) which is a negative regulator of bone resorption and thus a key regulator of osteoclast activity (Zaidi, 2007).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig2-v2.jpg)\n\n**Figure 2.:** (A) UMAP plot of gingival stromal cells. Single cells coloured by cluster annotation. (B) UMAP plot of stromal cells during disease progression. (C) Heatmap showing subset-specific markers. (D) GO enrichment terms for S1 (myofibroblast) and S3 (pericyte). -log adjusted p-value shown (dotted line corresponds to FDR\u00a0=\u00a00.05). (E) Immunofluorescence staining showing COLVI, ACTA2 expression throughout disease progression. Scale bars, 100 \u03bcm. n\u00a0=\u00a03 patient samples/condition. Feature plots showing COLVI\u00a0and\u00a0ACTA2 expression across clusters and conditions. (F) UMAP annotated with CytoTRACE analysis to predict stromal stem populations. Transcriptional diversity is used here to predict maturation states. (G) Immunohistochemistry staining showing AEBP1+ cells tissue distribution. Scale bar, 100 \u03bcm. n\u00a0=\u00a06 patient samples.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Feature Plots showing the expression of individual genes used for cell-type assignment of different stromal subsets. (B) GO enrichment terms for the different stromal subsets. -log adjusted p-value shown (dotted line corresponds to FDR\u00a0=\u00a00.05).\n\nTo uncover the role of the newly identified mesenchymal subsets in periodontitis, we investigated changes in their contribution across diseased states. Most significantly, we identified a marked decreased in the myofibroblast (S1) and pericyte (S3) subpopulations in the mild stage, while the other fibroblast-like cells appeared unchanged with the exception of S6 (Figure 2B). This suggests loss of S1 and S3 cells was the most pronounced change from healthy tissue to mild disease. We further explored the nature of the pro-inflammatory cluster S6, and it included the expression of the major histocompatibility complex (MHC) class II invariant chain (CD74) and AREG (amphiregulin). Amphiregulin is a reparative cytokine previously described with a role in gingival immune homeostasis (Krishnan et al., 2018). These results identified the potential expansion of a novel stromal population enriched for pro-inflammatory genes in periodontitis.\n\nNext, we investigated whether we could detect these changes using immunofluorescence analysis in gingival tissue samples. We confirmed a decrease in collagen VI levels suggesting overwhelming changes in the ECM composition and deposition (Figure 2E). We also assessed the myofibroblast population by looking at expression of ACTA2 (Figure 2E).\n\nUnderstanding the pathways underlying stromal differentiation will be essential to understand tissue homeostasis in chronic diseases. Given the lack of markers to reconstruct a cellular trajectory and the knowledge that the number of expressed genes per cells is a hallmark of developmental potential (Teschendorff and Enver, 2017; Han et al., 2020), we used transcriptional diversity to predict candidate stromal precursors (Gulati et al., 2020; Figure 2F). This analysis placed sub-clusters S5 and S0 as the less differentiated subpopulations, and S1 and S3 (myofibroblasts and pericytes) as fully differentiated states (Figure 3F). Using this pipeline, we identified genes such as IGHBP4 and AEBP1 in the less differentiated states. We next defined the tissue distribution of AEBP1+ cells using immunohistochemistry. We observed that the majority of these cells were concentrated near the subepithelial region (Figure 2G).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig3-v2.jpg)\n\n**Figure 3.:** (A) UMAP plot of human gingival epithelial cells. Single cells coloured by cluster annotation. (B) UMAP plot of epithelial cells during disease progression. (C) Heatmap showing subset-specific markers. (D) GO enrichment terms for E0, E6, and E8 with -log adjusted p-value shown (dotted line corresponds to FDR\u00a0=\u00a00.05). (E) Dot plot showing top predicted ligands expressed by epithelial cells that modulate the E0 (stem) compartment. (F) Expression of KI67 and SOX2 in human healthy tissue. KI67 marks proliferative cells (cluster E5), and SOX2 marks an epithelial stem cell compartment (cluster E0). Scale bars\u00a0=\u00a0100 \u03bcm (A, B). Scale bars, 50 \u03bcm (A\u2019, B\u2019). n\u00a0=\u00a04 patient samples/condition.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Feature Plots showing the expression of individual genes used for cell-type assignment of different epithelial subsets. (B) GO enrichment terms for the different epithelial subsets. -log adjusted p-value shown (dotted line corresponds to FDR\u00a0=\u00a00.05).\n\nOverall, we demonstrate that stromal remodelling in periodontitis is heterogenous with a disruption in cell populations known to be involved in tissue repair, and a higher proportion in a pro-inflammatory cell population that could prevent disease resolution. Collectively, these observations suggest that stromal cells shape a permissive inflammatory niche.\n\n### Cellular and molecular map of the epithelial gingival compartment in health and disease\n\nThe oral epithelium is one of the fastest renewing tissues in the human body and shows a remarkable regenerative potential. Cell division in epithelial cells takes place in the basal layer which contains the stem cell compartment. After dividing, the committed cells undergo differentiation that leads to expression of structural keratins as cells move superficially (Blanpain and Fuchs, 2009). Recent work has started to elucidate epithelial heterogeneity in the basal layer using mouse models (Jones et al., 2019; Byrd et al., 2019). However, little is known about human gingival epithelial cell heterogeneity and its role in disease. Thus, we further explored the single-cell transcriptomes of epithelial clusters (1, 8, and 12).\n\nBy re-clustering the epithelial cells, we identified ten populations (Figure 3A; Figure 3\u2014figure supplement 1). Two basal cell populations were identified in E0 and E1. E0 shows expression of HOPX which marks known stem cells in the intestinal and skin epithelia (Takeda et al., 2013; Takeda et al., 2011) and IGFBP5 which is enriched in transit-amplifying cells (TACs) in the interfollicular epidermis (Tumbar et al., 2004) and recently shown through lineage-tracing to label oral epithelial stem cells in the hard palate (Byrd et al., 2019). E1 indicated a more mature basal cell state with expression of DDR1 known as a cell surface receptor for fibrillar collagen, and COL17A1. Cycling basal cells were identified in E5 by expression of MKI67 and AURKB. E2 showed enrichment for SAA1 and TNFRSF21 both involved in chronic inflammatory conditions. E3 showed enrichment for B-cell receptor signalling pathway, and E4 and E8 for neutrophil mediated immunity. We further identified E6 and E7 with a role in cell cycle regulation. Finally, E9 had a gene expression profile consistent with a role in ECM organisation and angiogenesis (Figure 3A,D; Figure 3\u2014figure supplement 1).\n\nNext, we investigated changes in epithelial cell composition and gene expression through the different disease states (Figure 3B). In the mild stage, we observed a depletion in E6 and E7 populations which show enrichment in genes involved in cell cycle regulation; and in E9 which is involved in ECM organisation. Cycling cells (E5) show a decrease in mild, and a subsequent increase in severe (Figure 3B). We detected an increase in E8 defined in GO terms by \u2018cytokine- mediated signalling\u2019 (Figure 3B,D). Next, we asked which epithelial signals are predicted to modulate the identified stem cell signature found in E0 in disease. Using NicheNet (Browaeys et al., 2020) we identified sub-cluster E8 as the main signalling source predicted to modulate E0 through the expression of several ligands including MMP9, SPN, and HLA-DRA (Figure 3E). While more work is necessary to understand the functional role of the E8 subpopulation, targeting this subpopulation in future immune-modulatory experiments may lead to important findings.\n\n### Identifying ligand\u2013receptor interactions and transcriptional regulation contributing to disease progression\n\nPeriodontitis is characterised by tissue remodelling, which depends on complex interactions between stromal, epithelial, and immune cells. However, how these cells interact to contribute to tissue homeostasis and how these interactions are dysregulated during disease remains poorly defined. To understand this cross-talk, we used NicheNet (Browaeys et al., 2020) to model which cellular signals induce a stromal and perivascular response in periodontitis (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of the NicheNet analysis of upstream ligand\u2013receptor pairs and stromal target genes inducing DE genes in periodontitis. Created with BioRender.com. (B) Dot plots depicting which gingival cell populations express top-ranked ligands contributing to the transcriptional response observed from health to mild disease and from mild to severe in the stromal compartment. (C) Schematic representation of the NicheNet analysis of epithelial-mesenchymal crosstalk in mild disease. Created with BioRender.com. (D) Top predicted epithelial ligands driving the stromal inflammatory response and dot plot showing which epithelial subpopulation express these ligands. (E) Ligand-receptor heatmap of potential receptors expressed by stromal cells associated with each epithelial ligand. (F) Ligand-target heatmap of stromal and perivascular target genes of the identified epithelial ligands. (G) Dot plot confirming upregulation of the identified stromal target genes in disease. (H) UMAPs feature plots mapping the identified epithelial ligands and target genes to the respective target genes expressed by stromal cells.\n\nIn healthy and mild stages, the cell-stromal/cell-perivascular interaction landscape was dominated by endothelial, stromal, macrophage, and epithelial originating signals (Figure 4B). As disease progresses, in mild and severe stages, we observed a clear loss in endothelial and stromal originating signals, and an increase in macrophage, mast, T, and B-cell signalling (Figure 4B). Analysis of these cell\u2013cell interactions revealed several signalling pathways including tumour necrosis factor (TNF) and bone morphogenetic protein (BMP) signalling (Figure 4B). Overall, the number of predicted interactions in severe disease was strongly reduced.\n\nWe next focused on epithelial\u2013mesenchymal interactions in the mild stage by investigating which signalling interactions could potentially induce an inflammatory signature in the mesenchymal compartment (Figure 4C). Analysis of epithelial ligands predicted to cause an inflammatory response revealed IL1, EDN1, TNF, LTB, and BMP2 as the main contributors to the mild inflammatory stage (Figure 4D). Proliferative cells (TACs) are suggested to be the main source of these ligands with the exception of BMP2 (Figure 4D). We next analysed which stromal and perivascular receptors can potentially bind to these identified epithelial ligands (Figure 4E) and the target genes of these ligand\u2013receptor interactions (Figure 4F). We estimated prominent IL1B-CXCL9, TNF-CXCL9, TNF-UBD, BMP2-COL1A2 interactions, suggesting that these molecular interactions may be crucial in sustaining a proinflammatory microenvironment. Target genes were confirmed to be differentially expressed with disease (Figure 4G). IL1B and TNF epithelial ligands specifically targeted S0 and S5 stromal subpopulations, and BMP2 all fibroblast-like subpopulations and pericytes (Figure 4H).\n\nTogether, these results identify IL1B, EDN1, TNF, and BMP2 as the main epithelial modulators driving an inflammatory response in stromal and perivascular cells. Based on their expression, we identified novel epithelial-mesenchymal interactions in periodontitis: the interactions between epithelial IL1B and TNF and stromal target genes. It is unclear if the interactions described above are causative or consequential of disease progression; however, this analysis provides a wealth of novel targets that can be pharmacologically targeted in studies aiming to ameliorate the disease phenotype.\n\n### Single-cell transcriptomics of human B cells reveals activation signature in periodontitis\n\nB cells are essential in the generation of protective immunity. However, tissue-based B-cell subsets are not well characterised in human oral tissues. Following our observations that there is a consistent increase of B cells in line with disease severity, and their established role in disease immunopathogenesis, we next focused on the humoral response by performing a more in-depth transcriptomic analysis. Previous studies have established that B cells constitute the majority of cells in periodontitis lesions (Thorbert-Mros et al., 2015), and it has been suggested a dual protective and detrimental role (Oliver-Bell et al., 2015; Abe et al., 2015).\n\nWe compared their transcriptional profiles across disease states (Figure 5A). We found a profound prevalence of IgG plasma B cells in disease which is supported by another study (Kinane et al., 1999) in periodontitis patients. Similarly, it has been reported an increase in local IgG within the gastrointestinal tract during intestinal inflammation (Castro-Dopico et al., 2019). Here, we found IgG plasma cells almost absent in health and distinctively expanded with disease progression (Figure 5A). Upregulation of an IGH signature has been previously linked to disease severity and renders activation of the mononuclear phagocyte response in the intestinal mucosa (Castro-Dopico et al., 2019). In humans, mucosal IgG responses are pro-inflammatory when they involve complement activation. This cluster showed enrichment of genes involved in the complement system such as CFB and C2 (Figure 5D). This system plays a critical role in signalling B-cell activation (Carroll and Isenman, 2012; Chen et al., 2020), and previous research has established a role in periodontitis. There was no inherent transcriptional heterogeneity to allow further re-clustering of these B-cell into more bioinformatically refined subtypes (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig5-v2.jpg)\n\n**Figure 5.:** (A) UMAP analysis of human B cells identifying follicular and IgG plasma B cells split by condition. (B) UMAP expression plots of human B-cell subset markers. Cells coloured by normalised expression of indicated genes. (C) CD79A in human gingival tissue across health and disease. Scale bars, 100 \u03bcm. n\u00a0=\u00a03 patient samples/condition. (D) Gene enrichment analysis of IgG plasma B cells. -log adjusted p-value shown (dotted line corresponds to FDR\u00a0=\u00a00.05).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) UMAP plot of B cells in health and disease. (B) Heatmap showing subset-specific markers. (C) UMAP plot of B cells during disease progression. (D) Feature Plots showing the expression of individual genes used for assignment of different B-cell subsets. (E) GO enrichment terms for IgG plasma B cells with -log adjusted p-value shown (dotted line corresponds to FDR\u00a0=\u00a00.05). (F) UMAP plot of T cells in health and disease. (G) UMAP plot of T cells during disease progression. (H) Feature Plots showing the expression of CD4 and CD8 T-cell subsets. (I) UMAP showing number of detected genes.\n\n## Discussion\n\nThe human gingiva is a unique barrier site since failure to appropriately control immune responses leads to periodontitis. However, the molecular mechanisms of homeostasis and how they are disrupted in disease are poorly understood. Previous studies have reported on gene expression in gingival tissue from patients with periodontitis, however these studies have used conventional bulk RNA sequencing on whole-biopsies which average gene expression changes across the whole tissue, and therefore lose all information of discreet cellular subpopulations (Becker et al., 2014; Davanian et al., 2012; Demmer et al., 2008; Kim et al., 2016; Lundmark et al., 2015). In this work, we provided the first comprehensive cellular landscape of in vivo human gingiva, charting dynamic cellular composition differences at single-cell level across disease states. Our atlas comprises all the main gingival cell types defined by the expression of canonical and novel gene markers, with highly consistent results across all samples tested. Next, we analysed the potential molecular signals driving the inflammatory response in the stromal niche.\n\nWe identified a striking difference in mesenchymal and epithelial cells during disease progression. In the mesenchymal lineage, we identified populations of established cells, such as myofibroblasts and pericytes, and five additional distinct populations of fibroblast-like cells. Recent studies have started to elucidate the role of stromal cell populations in tissue homeostasis (Shoshkes-Carmel et al., 2018; Bahar Halpern et al., 2020; Greicius et al., 2018), and consistent with previous studies we identified two populations expressing Wnts and Wnt inhibitors suggesting the presence of mesenchymal niche regulating populations (Kinchen et al., 2018; Kim et al., 2020) that may be required for oral mucosa maintenance. We also identified a population defined by AEBP1 expression concentrated in the subepithelial region and associated with a less differentiated stromal state. This protein has been reported to be a DNA-binding transcriptional repressor with role in smooth muscle differentiation and wound healing (Layne et al., 2001). In periodontitis, we observed a selective loss of stromal populations; fibroblast-like cells were preserved in the mild stage, whereas the myofibroblast and pericyte populations were strikingly reduced. Myofibroblasts are known to be responsible for excessive synthesis, deposition, and remodelling or extracellular matrix proteins (Tomasek et al., 2002), however less is known about the mechanisms that promote their survival and persistence in inflammatory conditions. Multiple single-cell analysis have revealed that myofibroblast populations are heterogenous and undergo dynamic changes during tissue repair in various organs (Farbehi et al., 2019; Guerrero-Juarez et al., 2019; Xie et al., 2018; Tabib et al., 2018; Peyser et al., 2019; Lambrechts et al., 2018). Our observation that myofibroblasts are reduced in the transition from health to mild disease, might suggest a contribution to ECM degradation and to the persistence of a chronic inflammatory state characteristic of periodontitis. Previous research has suggested two mechanisms that limit myofibroblast survival; either a dependence on growth factor receptor-mediated pathways required for their survival (Bostr\u00f6m et al., 1996), or pro-apoptotic cytokines might selectively induce apoptosis by directly activating cell death signalling pathways or by inhibiting pro-survival pathways. One example is IL-1B which induces caspase-dependent apoptosis in mouse lung myofibroblasts by inhibiting FAK (Zhang and Phan, 1999). We also detected a decrease in the pericyte population from health to mild disease. Pericytes are present in all vascularised tissues, and provide structural support to the vasculature with proven roles in angiogenesis (Lindblom et al., 2003), wound healing (Kramann et al., 2015), progenitor cell functions (Crisan et al., 2008) and immunomodulation (Meyers et al., 2018; Yianni and Sharpe, 2020). It has been demonstrated that there is an expansion and dilation of the vasculature in periodontitis (Zoellner et al., 2002), contributing to increased leukocyte recruitment into the tissue. The loss or detachment of pericytes has been implicated in disease (Armulik et al., 2011), and has been related to infiltration of inflammatory cells (Ogura et al., 2017). Interestingly, Pdgfb or Pdgfr loss-of-function embryos show vascular hyperplasia and microvessel dilation (Hellstr\u00f6m et al., 2001). We hypothesise that the observed pericyte decrease might impair the stromal compartments ability to regenerate as these are mesenchymal stem cell precursors in vivo (Sacchetti et al., 2016; Yianni and Sharpe, 2018).\n\nIn periodontitis, we observed the emergence of one fibroblast-like population highly enriched in pro-inflammatory genes such as AREG. Overall, we observed stromal remodelling in a subpopulation specific way and in accordance with previous reports (Kinchen et al., 2018). Normal repair and regeneration responses are compromised, while continuous production of pro-inflammatory factors prevent inflammatory resolution.\n\nThis work also provides the first comprehensive analysis of the human gingival epithelium. Understanding the molecular mechanisms underlying this mucosal barrier can help shape immunoregulatory responses in the context of homeostasis and disease. Our data identified a basal progenitor cell population expressing HOPX and IGFBP5. Although, recent studies have started to elucidate oral progenitor cells\u2019 heterogeneity, this is the first human detailed characterisation that will allow the development of future validation models. We identified one epithelial subpopulation (E8) expanded in disease, and intercellular communication analysis suggested that this population is the main signalling centre driving the epithelial inflammatory response. More work is needed to address this finding and the immunoregulation of this population.\n\nWe provided an immune repertoire profiling and described in detail the expansion of B-cell subtypes. These results are consistent with data obtained in a previous study despite the difference in tissue collection. Our samples were obtained from sites which had received non-surgical treatment but still had residual disease and the Dutzan study collected from a cohort that had never been treated for disease (Dutzan et al., 2016). We also observed a T-cell-rich inflammatory infiltrate with minimal B cells present in health. This rich and diverse immune network present in health explains the immunosurveillance required to control the constant bacterial exposure. While Dutzan et al, identified neutrophils as the most notable cellular difference in periodontitis we were unable to capture these cells due to the digestion protocol used to dissociate these biopsies. single-cell analysis of neutrophils has known technical challenges due to their low RNA content, high level of RNases and high susceptibility to degradation during tissue digestion. Hence, we acknowledge this as an important study limitation of the immune compartment. In addition, we seem to be capturing a reduced number of T-cells which we were able to only re-cluster into CD4 and CD8 T-cell subtypes (Figure 5\u2014figure supplement 1). This sequencing limitation specific to T-cells has been acknowledged by independent studies showing that T-cells are difficult to bioinformatically segregate and re-cluster unless sequenced to high numbers and depth (Ding et al., 2020).\n\nWe provided a detailed molecular description of B-cell subsets as it was the major cellular shift detected in the immune cell network. This is consistent with previous observations showing that the most upregulated genes in periodontitis are involved in B-cell development (Lundmark et al., 2018). Despite the knowledge that atypical activation of B cells contribute to disease progression by their antigen-presentation, cytokine production, and expression and secretion of receptor activator of nuclear factor-kB ligand (RANKL), contributing to osteoclastogenesis (Thorbert-Mros et al., 2015), little is known about the molecular mechanisms driving these processes. We identified a specific IgG plasma cell response. Recently, a IgG contribution has been specifically linked with driving chronic inflammatory responses (Castro-Dopico et al., 2019). In that study, patient samples with higher levels of IgG had the highest disease severity scores and correlated with neutrophil infiltration and IL-1B expression. In our study, this response was associated with complement activation. Previously, complement split products were found absent or present at low concentrations in healthy individuals, but abundant in periodontitis (Damgaard et al., 2015; Hajishengallis et al., 2017). Continuous complement activation promotes survival of local pathogens in a nutritionally favourable inflammatory environment that promotes dysbiosis and disease development (Hajishengallis et al., 2017; Hajishengallis et al., 2011; Maekawa et al., 2014). While we could not bioinformatically resolve multiple B-cell subtypes, our findings have therapeutic implications by identifying IgG signalling as a potential therapeutic target in periodontitis.\n\nFinally, we aimed to identify the signals driving the inflammatory response in the stromal compartment. Previous studies have reported IL1B and TNF as key regulators in the periodontitis pathogenesis (Yucel-Lindberg and B\u00e5ge, 2013), therefore it was not surprising to find these molecules highly represented in our cell interaction analysis (Figure 4). We described newly identified molecular mechanisms involved in the regulation of these cytokines by predicting new receptor interactions and previously unidentified target genes. These findings bring new perspectives on periodontitis molecular mechanisms governing tissue loss and future experiments will be important to test these predictions.\n\nIn summary, we have established the first human gingiva cell atlas, revealing heterogeneity within major gingiva cell populations and providing with a roadmap for further functional insights into the immune and structural populations present in the gingiva. It also provides new biological insights into the immunopathogenesis of periodontitis. These data offer enormous potential for medicine, drug discovery and diagnostics through a more detailed understanding of cell types, basic biological processes and disease states.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Human)</td>\n      <td>Human gingival biopsies</td>\n      <td>Periodontology department, King\u2019s College London</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-COLVI (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat #ab182744, RRID:AB_2847919</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ACTA2 (Mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat #ab7817, RRID:AB_262054</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-MCAM (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat #ab75769, RRID:AB_2143375</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-KI67 (Rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat #ab15580, RRID:AB_443209</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-SOX2 (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab92494, RRID:AB_10585428</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CD79A (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab79414, RRID:AB_2260147</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-AEBP1 (Rabbit polyclonal)</td>\n      <td>Atlas Antibodies</td>\n      <td>Cat# HPA064970, RRID:AB_2685394</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ImmPRESS Excel Staining Kit, Anti-Rabbit Ig</td>\n      <td>Vector Laboratories</td>\n      <td>Cat# MP-7601, RRID:AB_2336533</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>UltraPure BSA (50 mg/mL)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat# AM2618</td>\n      <td>0.04%</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Chromium Single Cell 3\u2019 Library and Gel Bead Kit v3</td>\n      <td>10X Genomics</td>\n      <td>Cat# PN-1000092</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Chromium Single Cell B Chip Kit</td>\n      <td>10X Genomics</td>\n      <td>Cat# PN-1000074</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Whole Skin Dissociation Kit, human</td>\n      <td>Miltenyi Biotec</td>\n      <td>Cat# 130-101-540</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CellRanger Version 4</td>\n      <td>10X Genomics</td>\n      <td>RRID:SCR_017344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Seurat Version 3.0</td>\n      <td>R Bioconductor</td>\n      <td>RRID:SCR_007322 https://satijalab.org/seurat/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Enrichr</td>\n      <td>Chen et al., 2013</td>\n      <td>RRID:SCR_001575</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CytoTRACE</td>\n      <td>R Bioconductor</td>\n      <td>https://cytotrace.stanford.edu</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NicheNet</td>\n      <td>GitHub</td>\n      <td>https://github.com/saeyslab/nichenetr</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>GRCh38</td>\n      <td>CellRanger, 10X Genomics</td>\n      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Invitrogen</td>\n      <td>D1306, RRID:AB_2629482</td>\n      <td>(1 ug/mL)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Patient recruitment and ethical approval\n\nHuman gingival samples were obtained from consenting patients undergoing routine periodontal surgical procedures (Department of Periodontology, Guy\u2019s Hospital, King\u2019s College London). All samples were collected and processed in compliance with the UK Human Tissue Act (Human Tissue Authority #203019), ethically approved by the UK National Research Ethics Service (Research Ethics Committee 17/LO/1188). Written informed consent was received from participants prior to inclusion in the study. Cohort inclusion criteria for all subjects were: absent history of relevant medical conditions, no use of medication, no use of nicotine or nicotine-replacement medications, no pregnancy, and breast feeding.\n\nHealthy controls included crown lengthening procedures, and periodontitis patients, pocket reduction surgeries. Patients with periodontitis had tooth sites with probing depth\u00a0\u22656 mm, and bleeding on probing. Patients used as controls showed no signs of periodontal disease, with no gingival/periodontal inflammation, a probing depth\u00a0\u22643 mm, and no bleeding on probing.\n\nPatient 33. Gender: male. Age band: 41\u201365. No history of periodontal disease. Site: buccal gingival margin.\n\nPatient 35. Gender: female. Age band: 41\u201365. Chronic periodontitis with previous history of non-surgical treatment (mild). Site: buccal gingival margin.\n\nPatient 37. Gender: male. Age band: 41\u201365. Chronic periodontitis with previous history of non-surgical treatment (severe). Site: buccal gingival margin.\n\nPatient 38. Gender: male. Age band: 41\u201365. No history of periodontal disease. Site: buccal gingival margin.\n\n### Histology and microscopy\n\nHuman gingival tissue was freshly collected and fixed overnight in 4% neutral buffered formalin. Then, tissue underwent three 5 min washes in PBS at room temperature followed by dehydration washes in increasing ethanol concentrations. After dehydration, tissue was processed using a Leica ASP300 Tissue Processing for one hour. Tissues were then embedded in paraffin. Serial sections (12 \u00b5m thick) were cut for haematoxylin and eosin (H and E) and immunohistochemistry (IHC) staining.\n\nH and E was carried out for each patient sample using an Automated Slide Stainer. Slides were dewaxed by immersion in Neo-Clear (Merck Millipore), twice for 10 min. Tissue was then rehydrated by decreasing volumes of ethanol in deionised H20 (100, 90, 70, 50%) for two minutes in each step and rinsed in deionised H20 for 2 min. Samples were then stained in Ehrlich\u2019s Haematoxylin (Solmedia) for 10 min followed by a 10 min rinse under running water and then a two-minute rinse in deionised H20. Tissue was then stained in 0.5% Eosin Y (Sigma-Aldrich) for 5 min and washed twice in deionised H20. Samples were dehydrated in increasing IMS in deionised H20 concentration steps (70, 90, 100, 100%) for two minutes each. Slides were immersed in Neo-Clear three times for 5 min and then mounted using Neo-mount mounting medium (Merck Millipore), coverslipped and left to dry overnight in at 42\u00b0C.\n\n### Immunohistochemical staining\n\nImmunofluorescence staining was performed on 12 \u00b5m sections as described above. In short, slides were dewaxed in Neo-Clear twice for 10 min and rehydrated in a series of decreasing ethanol volumes as described above. Heat induced epitope retrieval was performed with sodium citrate buffer (pH 6) in a Decloaking chamber NXGEN (Menarini Diagnostics) for 3 min at 110\u00b0C. Slides were cooled to room temperature before blocking for 1 hr at room temperature in Blocking Buffer (0.2% BSA, 0.15% glycine, 0.1% TritonX in PBS) with 10% goat or donkey serum depending on the secondary antibody used. Primary antibodies were diluted in blocking buffer with 1% of the respective blocking buffer and incubated overnight at 4\u00b0C. The following day, slides were washed three times in PBST and incubated with the respective secondary antibodies diluted 1:500 in 1% blocking buffer for one hour at room temperature. Slides were mounted with Citifluor AF1 mountant media (Citifluor Ltd., AF1-100) and cover slipped for microscopy. Slides were put to dry in a dry chamber that omitted all light, and kept at 4\u00b0C. For AEBP1 staining, slides were incubated following primary antibody step with ImmPRESS Excel Staining Kit Anti-Rabbit IgG (Peroxidase) Polymer Detection Kit (Vector Laboratories, Peterborough, U.K.) for 30 min at room temperature. Peroxidase activity was visualised using ImmPACT DAB Peroxidase (HRP) Substrate (Vector Laboratories). Finally, sections were counter-stained with Mayer\u2019s hematoxylin, dehydrated, and mounted. Primary antibody was excluded from negative controls.\n\nThe following antibodies were used: COLVI raised in rabbit (ab182744, 1:500, Alexa Fluor-488 secondary), ACTA2 raised in mouse (ab7817, 1:200, Alexa Fluor-633), MCAM raised in rabbit (ab75769, 1:100, Alexa Fluor-594), KI-67 raised in rabbit (ab15580, 1:100, Alexa Fluor-594), SOX2 raised in rabbit (ab92494, 1:100, biotinylated secondary), CD79A raised in rabbit (ab79414, 1:100, Alexa Fluor \u2212488 secondary), AEBP1 raised in rabbit (HPA064970, 1:200).\n\n### Imaging\n\nFor bright field images, stained slides were scanned with Nanozoomer-XR Digital slide scanner (Hamamatsu) and images processed using Nanozoomer Digital Pathology View. Fluorescent staining was imaged with a TCS SP5 confocal microscope (Leica Microsystems) and Leica Application Suite Advanced Fluorescence (LAS-AF) software. Images were collected and labelled using Adobe Photoshop 21.1.2 software and processed using Fiji (Schindelin et al., 2012).\n\n### Tissue processing for single-cell isolation\n\nFresh tissues were processed immediately after clinical surgery using the same protocol. Tissue was transferred to a sterile petri dish and cut into\u00a0<1 mm3 segments before being transferred to a 15 mL conical tube. Tissue was digested for 30 min at 37\u00b0C with intermittent shaking using an enzymes dissociation kit (Miltenyi, Bergisch-Gladbach, Germany). The resulting cell suspension was filtered through a 70 \u00b5m cell strainer to ensure a single-cell preparation and cells collected by centrifugation (1,200 rpm for 5 min at 4\u00b0C). Cells were resuspended in 0.04% non-acetylated BSA (UltraPure BSA, ThermoFisher Scientific) and stained with 1.5 \u03bcg DAPI (D1306, Invitrogen) used as dead cell exclusion marker. Samples were analysed on BD FACS Aria III fusion machine. Cells were gated based on size using standard SSC-A and FSC-A parameters so that debris is excluded. Doublets were excluded using SSC-A and SSC-W parameters. Live cells were selected as cells identified to be dimly fluorescing in DAPI and were then sorted into chilled FACS tubes prefilled with 0.04% 300 \u03bcL BSA. Single-cell suspensions were captured using the 10X Genomics Chromium Single Cell 3\u2019 Solution (v3) according to the manufacturers protocol. Cells were resuspended separately in PBS with 0.04% BSA at a density of 50\u2013100 cells per \u03bcL. While neutrophils were not specifically targeted for exclusion, due to their small size they heavily co-localised with cellular debris in FACS plots, and therefore not included. Isolation of neutrophils for single-cell RNA sequencing on Chromium platforms has been thoroughly documented and reported (Smillie et al., 2019).\n\n### Chromium 10x genomics library and sequencing\n\nSingle-cell suspensions were manually counted using a haemocytometer and concentration adjusted to a minimum of 300 cells \u03bcL\u22121. Cells were loaded according to standard protocol of the Chromium single-cell 3\u2019 kit to capture around 5,000 cells per chip position. Briefly, a single-cell suspension in PBS 0.04% BSA was mixed with RT-PCR master mix and loaded together with Single Cell 3\u2019 Gel Beads and Partitioning Oil into a Single Cell 3\u2019 Chip (10x Genomics) according to the manufacturer\u2019s instructions. RNA transcripts from single cells were uniquely barcoded and reverse transcribed. Samples were run on individual lanes of the Illumina HiSeq 2500.\n\n### Computational analysis of sc-RNAseq datasets\n\nThe cell ranger pipeline was used for processing of the single-cell RNAseq data files prior to analysis according to the instructions provided by 10x Genomics. Briefly, base call files obtained from each of the HiSeq2500 flow cells used were demultiplexed by calling the \u2018cellranger mkfastq\u2019. Resulting FASTQ files were aligned to the human reference genome GRCh38/hg19 and subsequently filtered and had barcodes and unique molecular identifiers counted and count files generated for each sample. These were used for subsequent processing and data analysis using R.\n\n### Integrative analysis\n\nIntegrated analysis was performed according to the authors of the Seurat package (Butler et al., 2018; Stuart et al., 2019). Briefly, count files for each condition were read into RStudio and cells corresponding to each condition were labelled accordingly as \u2018Healthy\u2019, \u2018Mild\u2019 and \u2018Severe\u2019. Only cells found to be expressing more than 500 transcripts were considered as to limit contamination from dead or dying cells. Each dataset was normalised for sequencing depth by calling the \u2018NormalizeData\u2019 function and the 2000 most variable features of each dataset were detected using the \u2018vst\u2019 method by calling the \u2018FindVariableFeatures\u2019 function. Subsequently the \u2018FindIntegrationAnchors\u2019 function was called to identify anchors across the datasets and the \u2018IntegrateData\u2019 function to integrate them so an integrated analysis could be run on all cells simultaneously. The data was then scaled to account for sequencing depth using \u2018ScaleData\u2019 and PCA components were used for an initial clustering of the cells (using \u2018RunPCA\u2019). 20 dimensions were used to capture the majority of the variability across the datasets. \u2018FindNeighbors\u2019 was then used, utilising the above dimensionality parameters to construct a K-nearest neighbour graph based on Euclidian distances in PCA space. The clusters are then refined by applying a Louvain algorithm that optimises the modularity of the dataset and groups the cells together based on global and local characteristics. This is done by calling the \u2018FindClusters\u2019 function. We then run non-linear dimensionality reduction using UMAP to be able to visualise and explore the datasets. The same principle components were used as above. The Stromal, Epithelial, and B-cell clusters were then extracted using the \u2018Subset\u2019 function.\n\n### Stromal cell re-clustering analysis\n\nStromal clusters were identified as being \u2018collagen producing\u2019. These two clusters were reanalysed separately from the integrated dataset. Stromal cells were filtered to only utilise live cells using percentage of mitochondrial gene expression as an exclusion metric (<15%). Datasets were then re-normalised by calling the \u2018NormalizeData\u2019 function to account for the reduction in cell numbers subsequent to subsetting the data. According to the author instructions, the top 2000 most variable features across the dataset were then identified using the \u2018FindVariableFeatures\u2019. These variable features were subsequently used to inform clustering by passing them into the \u2018RunPCA\u2019 command. Using \u2018Elbowplot\u2019 we identified that the first eight principle components should be used for downstream clustering when invoking the \u2018FindNeighbors\u2019 and \u2018RunUMAP\u2019, as detailed above.\n\n### Epithelial cell re-clustering\n\nEpithelial cells were identified from the epithelial clusters in the integrated UMAP and re-clustered as explained above with some minor exceptions. Epithelial cells were isolated as being the clusters 1, 8, 12. The first five principal components were used as these were identified as being significant by the \u2018Elbowplot\u2019 function.\n\n### Gene Ontology (GO) analysis\n\nGene ontology (GO) analysis was performed using Enrichr (Chen et al., 2013) on the top 200 differentially expressed genes (adjusted p-value\u00a0<\u00a00.05 by Wilcoxon Rank Sum test). GO terms shown are enriched at FDR\u00a0<\u00a00.05.\n\n### CytoTRACE\n\nAn expression matrix consisting of only the specified sub-set of cellular populations was used as a starting point. CytoTRACE analysis was performed according to the developer\u2019s instructions (Gulati et al., 2020). The resulting embeddings were then projected onto the UMAP projections.\n\n### NicheNet analysis\n\nThis analysis predicts which ligands produced by a sender cell regulate the expression of receptors/target genes in another (receiver) cell. We followed the open-source R implementation available at GitHub (https://github.com/saeyslab/nichenetr). For differential expression we used FindMarkers function in Seurat to generate average logFC values per cell type. For Figure 3E, we assigned all epithelial populations as \u2018sender cells\u2019 and E0 as \u2018receiver\u2019 to derive a set of predicted epithelial ligands modulating the mild response seen in this specific subpopulation. For Figure 4B, we assigned all cell types as \u2018sender cells\u2019 and the stromal populations as \u2018receiver\u2019 and extracted all cell type signatures by taking the 100 differentially expressed genes isolated in health/mild and in mild/severe.\n\nFor Figure 4D\u2013G, we defined all epithelial populations as \u2018sender\u2019 and all stromal as \u2018receiver\u2019 in health vs mild responses.\n\n### Study approval\n\nInformed consent in writing before their participation in this study was obtained from each subject in compliance with the UK Human Tissue Act (Human Tissue Authority #203019), and ethically approved by the UK National Research Ethics Service (Research Ethics Committee 17/LO/1188).\n",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "08b32c92-f8ab-4e93-9464-f8bca42d1de3",
+      "submission_id": "fea2eb31-7097-4e9e-a5af-f92079b77ee8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Valerie Horsley, Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62810.sa1](https://doi.org/10.7554/eLife.62810.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this study, the authors investigated the cellular heterogeneity of human oral mucosa in health and disease using single cell transcriptome profiling, and identified potential ligand-receptor interaction between different cell types that drive the inflammation of periodontitis. Overall, the concept of the study is of great interest and human data from healthy and diseased tissue may provide valuable information to the field. The study has been improved with some in vivo validation and clarification.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Defining human mesenchymal and epithelial heterogeneity in response to oral inflammatory disease\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kathryn Cheah as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript investigated the cellular heterogeneity of human oral mucosa in health and disease using single cell transcriptome profiling, and identified potential ligand-receptor interaction between different cell types that drive the inflammation of periodontitis. Overall, the concept of the study is of great interest and human data from healthy and diseased tissue may provide valuable information to the field.\n\nEssential revisions:\n\n1) For the integration analysis, the authors should state how many cells were analyzed from each healthy and periodontitis patient.\n\n2) Using computational analysis, the authors identified a subpopulation of stromal cells expressing IGHBP4 and AEBP1 that are in a less differentiated state. It would be helpful to analyze some human gingival tissue and see where these AEBP1+ cells are located.\n\n3) In the integration analysis, it seems that epithelium is first affected relative to the stromal population in periodontitis patients. Even in the mild cases, the epithelial cell number is dramatically reduced. However, histology is not echoing this observation (at least in mild cases), so the authors should explain this discrepancy.\n\n4) In Figure 4H, I couldn't see any of the epithelial ligand expression in the plot. The authors should either provide enlarged pictures or immunostaining for validation.\n\n5) The authors predicted several ligand/receptor interactions between cell types using NicheNet, and stated that these interactions may be crucial for the inflammation associated with the disease. The differential expression of these target genes could be simply a reflection of the inflammatory state rather than its cause. The authors need to provide some functional study showing these genes are actually important for the disease progression. Alternatively, a deeper discussion of this topic would be helpful.\n\n6) The authors comment that; In our FACS gating strategy, neutrophils co-localised extensively with cell debris and were therefore excluded to avoid contamination. This raises a few points that need to be commented upon in the manuscript.\n\n7) Neutrophils are not examined. This needs to be highlighted early in the manuscript as a non-expert would not necessarily know these are the most abundant immune population in health gingiva and that it would be expected to see them.\n\n8) By not examining neutrophils the immune profiling of the manuscript is limited. This does not negate any of the important information shown in the manuscript but is a caveat when they authors suggest they are detailing the immune landscape. This needs to be acknowledged.\n\n9) Why do the neutrophils co-localise with the cell debris? This raises an issue true of any single-cell examination of tissues \u2013 the populations that can be examined are dependent on the tissue digestion method/process; a different isolation protocol could generate slightly different results. This should be briefly commented upon.\n\n10) It is unclear where the mild/onset and severe disease samples come from. In the clinical information provided, disease for the periodontitis patients was stated as being probing depth of \u22656mm \u2013 surely this would be \"severe\" disease? I understand that the catagories were based upon the authors own H and E but what was the initial tissue source. Same patient but different sites in their mouth?\n\n11) For the data shown in 1E it would be nice to present an over-view of increases and decreases in populations across disease \u2013 a simple line graph showing proportions of cells in health, mild and severe disease which could go in the supplemental.\n\n12) It is surprising that the two clusters of B cells cannot be further subsetted, similar to that which has been achieved for epithelial and mesenchymal cells. Is there substantial heterogeneity within IgG plasma cells and follicular B cells which prevents this?\n\n13) Given the focus on T cells in the development and/or pathogenesis of periodontitis, an examination of the T cell subsets identified should be undertaken. Similar to what has been done for B cells in Figure 5.\n",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3f31013d-8983-44ec-bead-9e50fecedee8",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C1",
+      "claim": "A total of 12,411 cells were captured across four patient biopsies",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 12,411 cells were captured across four patient biopsies, allowing us to perform an in-depth analysis of single-cell transcriptomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of cells captured and the number of patient biopsies used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "4f027383-619f-4a80-b2a4-ae5f68a4c19c",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C2",
+      "claim": "Cells from two healthy patients were remarkably similar",
+      "claim_type": "EXPLICIT",
+      "source": "Cells from these healthy patients were remarkably similar (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this observation and references Figure 1\u2014figure supplement 2 as supporting evidence",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "44c61b92-1d42-4078-9f9d-9789f03d57db",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C3",
+      "claim": "A strong linear relationship in gene signatures was observed between the two healthy patient samples",
+      "claim_type": "EXPLICIT",
+      "source": "we observed a strong linear relationship in gene signatures between the two patient samples (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and references Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "baa6550a-d666-4ddd-9ffc-7dc31d44d007",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C4",
+      "claim": "A total of 16 distinct transcriptomic signatures were detected",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 16 distinct transcriptomic signatures were detected that corresponded to cell types or sub-populations of identifiable cell states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of distinct transcriptomic signatures identified",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "fe0f906c-cb8d-401b-9612-747ebc312e91",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C5",
+      "claim": "Three epithelial subsets were identified (clusters 1, 8, and 12)",
+      "claim_type": "EXPLICIT",
+      "source": "In the epithelial compartment, we identified three subsets (clusters 1, 8, and 12), potentially corresponding to distinct differentiation stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies three epithelial subsets by cluster number",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "573bf57c-0aee-4496-a143-92748fb3c401",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C6",
+      "claim": "Cluster 1 shows a basal cell state with expression of HOPX, IGFBP5, and LAMB3",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 1 shows a basal cell state with expression of HOPX, IGFBP5, and LAMB3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the cell state and marker genes for cluster 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "2a946f9a-3248-4657-8ed0-fc49c6c65216",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C7",
+      "claim": "Cluster 8 represents a more mature cell state with expression of KRT1, KRT8, LAT and PTGER",
+      "claim_type": "EXPLICIT",
+      "source": "cluster 8 a more mature cell state with expression of KRT1, KRT8, LAT (Linker for Activation of T cells) and PTGER both required for TCR (T-cell antigen receptor) signalling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes cluster 8 as a more mature cell state and lists its marker genes",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "b80e2d99-244c-4424-ab47-58f37f7fee06",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C8",
+      "claim": "LAT and PTGER are both required for TCR signalling",
+      "claim_type": "EXPLICIT",
+      "source": "LAT (Linker for Activation of T cells) and PTGER both required for TCR (T-cell antigen receptor) signalling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this functional relationship",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "be5485b7-73ba-4b1b-84de-6dca835ac4b8",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C9",
+      "claim": "Proliferating basal cells were identified in cluster 12 by expression of MKI67 and TOP2A",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferating basal cells were identified in cluster 12 by expression of canonical marker genes of proliferating cells such as MKI67 and TOP2A (Whitfield et al., 2006; Figure 1B,C; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies cluster 12 as proliferating basal cells based on marker gene expression, supported by citation and figures",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "188acffb-ba02-4b60-a4fa-56bf4d1a168c",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C10",
+      "claim": "MKI67 and TOP2A are canonical marker genes of proliferating cells",
+      "claim_type": "EXPLICIT",
+      "source": "expression of canonical marker genes of proliferating cells such as MKI67 and TOP2A (Whitfield et al., 2006; Figure 1B,C; Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this and cites Whitfield et al., 2006",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "d8825cff-8b20-4700-8cf7-3baf0d58c1d8",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C11",
+      "claim": "A mesenchymal (stromal-fibroblast) population was identified in cluster 6 based on collagen expression",
+      "claim_type": "EXPLICIT",
+      "source": "We also identify a mesenchymal (stromal-fibroblast) (cluster 6) based on collagen expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies cluster 6 as mesenchymal based on collagen expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "d2810aec-be0a-46e8-ae3c-27903fe57986",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C12",
+      "claim": "One perivascular population was identified in cluster 10 by high expression of PDGFRB and RGS5",
+      "claim_type": "EXPLICIT",
+      "source": "one perivascular (cluster 10) by high expression of PDGFRB and RGS5 (Figure 1B,C; Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies cluster 10 as perivascular based on marker gene expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "e37a61db-402d-4895-a25a-34df44de9814",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C13",
+      "claim": "Two endothelial populations were identified in clusters 9 and 15",
+      "claim_type": "EXPLICIT",
+      "source": "two endothelial (clusters 9 and 15) in which cluster 9 specifically expresses CLDN5 and EMCN and cluster 15 shows high expression of genes involved in the regulation of angiogenesis such as KDR, TIE1, and SOX18 (Jones et al., 2001; Fran\u00e7ois et al., 2008; Figure 1B,C; Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies two endothelial clusters with their marker genes and cites supporting literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "13c891cb-158c-4118-8701-5c593cbac5af",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C14",
+      "claim": "Cluster 9 specifically expresses CLDN5 and EMCN",
+      "claim_type": "EXPLICIT",
+      "source": "cluster 9 specifically expresses CLDN5 and EMCN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the marker genes for cluster 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "2eb50a70-bb76-46db-9c98-1d7b1cb397b3",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C15",
+      "claim": "Cluster 15 shows high expression of genes involved in the regulation of angiogenesis such as KDR, TIE1, and SOX18",
+      "claim_type": "EXPLICIT",
+      "source": "cluster 15 shows high expression of genes involved in the regulation of angiogenesis such as KDR, TIE1, and SOX18 (Jones et al., 2001; Fran\u00e7ois et al., 2008; Figure 1B,C; Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the marker genes and their function, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "d856f565-41a2-46da-8906-e089b483d8b7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C16",
+      "claim": "B cells are shown in three distinct populations (clusters 0, 5, and 7)",
+      "claim_type": "EXPLICIT",
+      "source": "B cells are shown in three distinct populations (clusters 0, 5, and 7) with clusters 0 and 5 expressing MZB1, DERL3, and IGHG4 characteristic of follicular and IgG plasma B cells respectively, and cluster 7 expressing MS4A1 and CD37 corresponding to memory B cells (Akkaya et al., 2020; James et al., 2020; Figure 1B,C; Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies three B cell populations with their marker genes and functional identities, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "c51c9778-c174-4c1c-902c-9cb4104cffb5",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C17",
+      "claim": "Clusters 0 and 5 express MZB1, DERL3, and IGHG4 characteristic of follicular and IgG plasma B cells respectively",
+      "claim_type": "EXPLICIT",
+      "source": "clusters 0 and 5 expressing MZB1, DERL3, and IGHG4 characteristic of follicular and IgG plasma B cells respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the marker genes and cell types for clusters 0 and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "01839c31-f1c6-48db-a661-0e9bac34c472",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C18",
+      "claim": "Cluster 7 expresses MS4A1 and CD37 corresponding to memory B cells",
+      "claim_type": "EXPLICIT",
+      "source": "cluster 7 expressing MS4A1 and CD37 corresponding to memory B cells (Akkaya et al., 2020; James et al., 2020; Figure 1B,C; Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies cluster 7 as memory B cells based on marker gene expression, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "ef1ea507-8202-42a2-83a1-4c8e115b70f6",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C19",
+      "claim": "T cells are shown in cluster 3 identified by expression of canonical TRM marker CXCR6",
+      "claim_type": "EXPLICIT",
+      "source": "T cells are shown in cluster 3 identified by expression of canonical TRM marker CXCR6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies cluster 3 as T cells based on CXCR6 expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "ab1327f5-3f35-492c-8edd-1a6716275ac7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C20",
+      "claim": "Dendritic cells of myeloid origin with high expression of CLEC9A and IRF8 are found in clusters 13 and 14",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic cells of myeloid origin with high expression of CLEC9A and IRF8 are found in clusters 13 and 14 (Eisenbarth, 2019; James et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies dendritic cells in clusters 13 and 14 with marker genes, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "dd6b07dc-0ad9-4c9d-a7b1-acb054a4b127",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C21",
+      "claim": "Mast cells are indicated in cluster 2 expressing TPSB2 and TPSB1",
+      "claim_type": "EXPLICIT",
+      "source": "mast cells are indicated in cluster 2 expressing TPSB2 and TPSB1 (Abraham and John, 2010; Figure 1B,C; Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies cluster 2 as mast cells based on marker gene expression, supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "a865bcdc-0936-4ed8-b1ed-0b668e1f8d50",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C22",
+      "claim": "Macrophages are found in two populations (clusters 4 and 11) sharing high expression of LYZ and AIF1",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages are found in two populations (clusters 4 and 11) sharing high expression of LYZ and AIF1 (Chakarov et al., 2019; Figure 1B,C; Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies two macrophage populations with shared marker genes, supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "1e853202-3234-4d14-8b0d-60140392fa98",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C23",
+      "claim": "In the mildly affected sample, an intact keratinised squamous epithelial layer was observed",
+      "claim_type": "EXPLICIT",
+      "source": "In the mildly affected sample, we observed an intact keratinised squamous epithelial layer, minor losses of collagen, and rete-ridge definition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes histological observations in the mildly affected sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "5ce6cb62-6902-4e62-9c40-0a50a3b5ebe7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C24",
+      "claim": "In the severe state, a dense infiltrate of lymphocytes was detected",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the severe state we detected a dense infiltrate of lymphocytes, breakdown of the epithelial barrier and clear reduction of collagen content (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes histological observations in the severe state",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "423d0185-d8b7-431c-baab-76e74f6dc4c5",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C25",
+      "claim": "In the severe state, breakdown of the epithelial barrier was detected",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the severe state we detected a dense infiltrate of lymphocytes, breakdown of the epithelial barrier and clear reduction of collagen content (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes histological observations in the severe state",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "77e067fe-31c4-414d-a737-d3956ef8174b",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C26",
+      "claim": "In the severe state, a clear reduction of collagen content was detected",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the severe state we detected a dense infiltrate of lymphocytes, breakdown of the epithelial barrier and clear reduction of collagen content (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes histological observations in the severe state",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "d7a9898a-a1f4-45a0-8855-2195b3443e40",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C27",
+      "claim": "In health, low numbers of follicular and plasma B cells were observed",
+      "claim_type": "EXPLICIT",
+      "source": "In health, we observed low numbers of follicular and plasma B cells and a progressive increase from mild to severe (Figure 1E; Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this observation about B cell numbers in health",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "40ecb59e-ef34-491c-9b6f-413e8f1c8d38",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C28",
+      "claim": "There is a progressive increase in follicular and plasma B cells from mild to severe disease",
+      "claim_type": "EXPLICIT",
+      "source": "In health, we observed low numbers of follicular and plasma B cells and a progressive increase from mild to severe (Figure 1E; Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this progressive increase across disease states",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "67852d0e-b640-493e-8f3f-d25fb7df2985",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C29",
+      "claim": "The minimal presence of B cells in healthy gingiva was also reported by others",
+      "claim_type": "EXPLICIT",
+      "source": "The minimal presence of B cells in healthy gingiva was also reported by others (Dutzan et al., 2016; Mahanonda et al., 2016; Artese et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding is consistent with previous literature and provides citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "aadf3e1c-8709-4e84-90b5-8d04e310a2f5",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C30",
+      "claim": "Memory B cells show a distinctive increase in the mild sample with a subsequent decrease in the severe sample",
+      "claim_type": "EXPLICIT",
+      "source": "Memory B cells show a distinctive increase in the mild sample with a subsequent decrease in the severe sample (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the pattern of memory B cell changes across disease states",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "9f392649-c823-4b3f-a722-062330600b6c",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C31",
+      "claim": "There was a surge in T cells in mild disease followed by a decrease in severe",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there was a surge in T cells in mild disease followed by a decrease in severe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the pattern of T cell changes across disease states",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "a519fe62-8d69-4806-925c-e39568c16937",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C32",
+      "claim": "T-cell senescence as a result of persistent immune activation in chronic diseases has been previously reported",
+      "claim_type": "EXPLICIT",
+      "source": "T-cell senescence as a result of persistent immune activation in chronic diseases has been previously reported (Effros and Pawelec, 1997; Vallejo et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature and provides citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "1133285a-34f4-4d8f-a4b5-ece8f3a99241",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C33",
+      "claim": "A dynamic shift in the two macrophage populations was identified with an expansion in the mild stage",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we also identified a dynamic shift in the two macrophage populations with an expansion in the mild stage consistent with their function in tissue clearing and a subsequent reduction at the severe stage (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the pattern of macrophage changes across disease states",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "97e0e057-7adb-492f-8ca2-a4cf8912cb60",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C34",
+      "claim": "Macrophage expansion in the mild stage is consistent with their function in tissue clearing",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we also identified a dynamic shift in the two macrophage populations with an expansion in the mild stage consistent with their function in tissue clearing and a subsequent reduction at the severe stage (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly links the observed expansion to known macrophage function",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "2a879cdb-bed1-4cf4-9666-f20c0b3d6614",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C35",
+      "claim": "There is no clear difference in the dendritic cell compartment during disease progression",
+      "claim_type": "EXPLICIT",
+      "source": "There is no clear difference in the dendritic cell compartment during disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "4e327807-9a82-4884-a956-cd3468e306f4",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C36",
+      "claim": "Mast cells show a significant enrichment in mild and a decrease in the severe state",
+      "claim_type": "EXPLICIT",
+      "source": "Mast cells also show a significant enrichment in mild and a decrease in the severe state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the pattern of mast cell changes across disease states",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "ada5fab6-f3d7-4b33-9ca6-2cace284fb05",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C37",
+      "claim": "A progressive depletion of both mesenchymal and epithelial cell populations was observed",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a progressive depletion of both mesenchymal and epithelial cell populations (Figure 1E), in line with the patient matched immunohistochemical studies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this observation and notes consistency with immunohistochemical studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "604cfe15-3d29-43c2-956a-d96aed82e58c",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C38",
+      "claim": "Five fibroblast-like populations, one pericyte and one myofibroblast were revealed in the stromal compartment",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed five fibroblast-like populations, one pericyte and one myofibroblast (Figure 2A; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number and types of stromal populations identified",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "cbe48629-aa01-4416-a535-ab78ca881c93",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C39",
+      "claim": "Myofibroblasts were identified by expression of ACTA2",
+      "claim_type": "EXPLICIT",
+      "source": "Myofibroblasts were identified by expression of ACTA2 and by gene ontology (GO) terms such as 'muscle contraction' and 'smooth muscle contraction'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the marker gene and GO terms used to identify myofibroblasts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "ca3b641f-f88e-4661-bf03-ae5c33683547",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C40",
+      "claim": "Pericytes were identified by PDGFRB and MCAM expression",
+      "claim_type": "EXPLICIT",
+      "source": "Pericytes were identified by PDGFRB and MCAM expression and GO terms such as 'regulation of angiogenesis' (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the marker genes used to identify pericytes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "4873f893-9e4d-4c11-8a21-3f765c43d95b",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C41",
+      "claim": "S0, S2, and S4 fibroblast-like subpopulations showed enrichment for genes annotated with 'extracellular matrix'-related GO terms",
+      "claim_type": "EXPLICIT",
+      "source": "S0, S2, and S4 fibroblast-like subpopulations showed enrichment for genes annotated with 'extracellular matrix'-related GO terms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the GO term enrichment for these subpopulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "d8e288df-ea99-426d-940e-c9a0f428cd96",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C42",
+      "claim": "S0 fibroblast-like population GO enrichment included 'upregulation of fibroblast proliferation' with marked expression of PDGFRA, WNT5A, and IGF1",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, one of the fibroblast-like populations (S0) GO enrichment included 'upregulation of fibroblast proliferation' with marked expression of PDGFRA, WNT5A, and IGF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the GO enrichment and marker genes for S0",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "1392a080-839c-47ff-a89c-589649886a59",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C43",
+      "claim": "S0 shows upregulation of POSTN which is essential for tissue repair",
+      "claim_type": "EXPLICIT",
+      "source": "It also shows upregulation of POSTN which is essential for tissue repair (K\u00fchn et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states POSTN upregulation and its function, supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "68ade0c2-58d6-45b8-b51e-c55e858f67b7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C44",
+      "claim": "S2 fibroblast-like population showed enrichment for genes involved in the negative regulation of Wnt signalling (GREM1, SFRP1, APCDD1, and DKK3)",
+      "claim_type": "EXPLICIT",
+      "source": "Another fibroblast-like population (S2) showed enrichment for genes involved in the negative regulation of Wnt signalling (GREM1, SFRP1, APCDD1, and DKK3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the functional enrichment and specific genes for S2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "3c14afdb-d32d-45c7-9566-554b0f984649",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C45",
+      "claim": "S4 showed expression of OSR2, FGFR1, SOX4, and TBX3 known to be involved in skeletal development",
+      "claim_type": "EXPLICIT",
+      "source": "S4 showed expression of OSR2, FGFR1, SOX4, and TBX3 known to be involved in skeletal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the marker genes and their known function for S4",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "34f8d130-653c-4d23-bf3b-a66a13d853cf",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C46",
+      "claim": "S4 also differed in the expression of collagen IV, which is known to be a key component of the epithelial basement membrane",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, S4 also differed in the expression of a specific form of collagen, collagen IV, which is known to be a key component of the epithelial basement membrane and might suggest a role in epithelial barrier membrane as previously described (Kinchen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the collagen IV expression and its known function, supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "d7b710d8-1715-4a9a-9e78-ecb8f88c16d5",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C47",
+      "claim": "S5 and S6 show a potential role in immune regulation with enrichment for 'cytokine-mediated signalling pathway', 'IFN-\u03b3 signalling' and 'T-cell activation'",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, S5 and S6 show a potential role in immune regulation with enrichment for 'cytokine-mediated signalling pathway', 'IFN-\u03b3 signalling' and 'T-cell activation' (Figure 2\u2014figure supplement 1; Source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the GO enrichment for S5 and S6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "7a6bf591-9eea-42ce-b85f-ccc783ce6dda",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C48",
+      "claim": "Highly ranked S5 markers included ILR1, IFN\u03b3R1, and TNFRS11B (osteoprotegerin)",
+      "claim_type": "EXPLICIT",
+      "source": "Highly ranked S5 markers included ILR1, IFN\u03b3R1, and a member of the TNF-receptor superfamily \u2013 TNFRS11B (osteoprotegerin) which is a negative regulator of bone resorption and thus a key regulator of osteoclast activity (Zaidi, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the marker genes for S5 and describes the function of TNFRS11B, supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "9c78be13-914c-4c57-88ad-2634269098ed",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C49",
+      "claim": "TNFRS11B (osteoprotegerin) is a negative regulator of bone resorption and a key regulator of osteoclast activity",
+      "claim_type": "EXPLICIT",
+      "source": "TNFRS11B (osteoprotegerin) which is a negative regulator of bone resorption and thus a key regulator of osteoclast activity (Zaidi, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the function of TNFRS11B, supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "6ca4d3e2-5a80-4cfb-a6a0-51a9b7cf3ecc",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C50",
+      "claim": "A marked decrease in the myofibroblast (S1) and pericyte (S3) subpopulations was identified in the mild stage",
+      "claim_type": "EXPLICIT",
+      "source": "Most significantly, we identified a marked decreased in the myofibroblast (S1) and pericyte (S3) subpopulations in the mild stage, while the other fibroblast-like cells appeared unchanged with the exception of S6 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the changes in S1 and S3 populations in mild disease",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "892839af-caa4-481b-9a23-93e23ec71d0f",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C51",
+      "claim": "Loss of S1 and S3 cells was the most pronounced change from healthy tissue to mild disease",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests loss of S1 and S3 cells was the most pronounced change from healthy tissue to mild disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this interpretation of the data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "e32b0de6-3816-4873-8919-1420aaf8e888",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C52",
+      "claim": "The pro-inflammatory cluster S6 includes expression of CD74 and AREG (amphiregulin)",
+      "claim_type": "EXPLICIT",
+      "source": "We further explored the nature of the pro-inflammatory cluster S6, and it included the expression of the major histocompatibility complex (MHC) class II invariant chain (CD74) and AREG (amphiregulin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the marker genes for S6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "7eee1592-cc4f-48e4-940a-eeaa361d9be9",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C53",
+      "claim": "Amphiregulin is a reparative cytokine previously described with a role in gingival immune homeostasis",
+      "claim_type": "EXPLICIT",
+      "source": "Amphiregulin is a reparative cytokine previously described with a role in gingival immune homeostasis (Krishnan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this function of amphiregulin, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "1e6d05ff-6e4c-4eda-8669-06835d35cb56",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C54",
+      "claim": "A decrease in collagen VI levels was confirmed using immunofluorescence analysis",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed a decrease in collagen VI levels suggesting overwhelming changes in the ECM composition and deposition (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding from immunofluorescence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "74f8e9ce-926d-4d24-8b31-c4a9f7d3ddf8",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C55",
+      "claim": "The number of expressed genes per cell is a hallmark of developmental potential",
+      "claim_type": "EXPLICIT",
+      "source": "Given the lack of markers to reconstruct a cellular trajectory and the knowledge that the number of expressed genes per cells is a hallmark of developmental potential (Teschendorff and Enver, 2017; Han et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this principle, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "267b064b-b100-4281-bfa8-b73ea96bcf27",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C56",
+      "claim": "CytoTRACE analysis placed sub-clusters S5 and S0 as the less differentiated subpopulations",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis placed sub-clusters S5 and S0 as the less differentiated subpopulations, and S1 and S3 (myofibroblasts and pericytes) as fully differentiated states (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the results of the CytoTRACE analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "63b95d84-2bbd-4a24-a2ea-ebbd5329f672",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C57",
+      "claim": "CytoTRACE analysis placed S1 and S3 (myofibroblasts and pericytes) as fully differentiated states",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis placed sub-clusters S5 and S0 as the less differentiated subpopulations, and S1 and S3 (myofibroblasts and pericytes) as fully differentiated states (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the results of the CytoTRACE analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "3105bc7e-7030-4a53-88a4-dde0e7363429",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C58",
+      "claim": "IGHBP4 and AEBP1 were identified in the less differentiated states",
+      "claim_type": "EXPLICIT",
+      "source": "Using this pipeline, we identified genes such as IGHBP4 and AEBP1 in the less differentiated states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states these genes were identified in less differentiated states",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "cc5bb61d-e666-4945-bf06-6fadc945d26a",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C59",
+      "claim": "The majority of AEBP1+ cells were concentrated near the subepithelial region",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the majority of these cells were concentrated near the subepithelial region (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the tissue distribution of AEBP1+ cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "b7d91c2a-db9c-4962-813a-7fcfa370c6c7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C60",
+      "claim": "Ten epithelial populations were identified by re-clustering epithelial cells",
+      "claim_type": "EXPLICIT",
+      "source": "By re-clustering the epithelial cells, we identified ten populations (Figure 3A; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number of epithelial populations identified",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "02216334-c88d-4ee0-8852-f0e500f687d7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C61",
+      "claim": "Two basal cell populations were identified in E0 and E1",
+      "claim_type": "EXPLICIT",
+      "source": "Two basal cell populations were identified in E0 and E1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the identification of two basal cell populations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "8f965c5f-5949-429e-9a2d-3fb0d8cff5c7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C62",
+      "claim": "E0 shows expression of HOPX which marks known stem cells in the intestinal and skin epithelia",
+      "claim_type": "EXPLICIT",
+      "source": "E0 shows expression of HOPX which marks known stem cells in the intestinal and skin epithelia (Takeda et al., 2013; Takeda et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states HOPX expression in E0 and its known function, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "fc123cf5-b989-4a77-9dcd-c526c577451a",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C63",
+      "claim": "IGFBP5 is enriched in transit-amplifying cells (TACs) in the interfollicular epidermis",
+      "claim_type": "EXPLICIT",
+      "source": "IGFBP5 which is enriched in transit-amplifying cells (TACs) in the interfollicular epidermis (Tumbar et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "0aa8bb5d-8d60-4821-a77a-e92437c95455",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C64",
+      "claim": "IGFBP5 was recently shown through lineage-tracing to label oral epithelial stem cells in the hard palate",
+      "claim_type": "EXPLICIT",
+      "source": "recently shown through lineage-tracing to label oral epithelial stem cells in the hard palate (Byrd et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "a0c87c23-086e-4540-a483-c05def32627c",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C65",
+      "claim": "E1 indicated a more mature basal cell state with expression of DDR1 and COL17A1",
+      "claim_type": "EXPLICIT",
+      "source": "E1 indicated a more mature basal cell state with expression of DDR1 known as a cell surface receptor for fibrillar collagen, and COL17A1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes E1 as a more mature basal cell state with specific marker genes",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "dc547be3-057a-45fb-97c4-70bec118dac6",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C66",
+      "claim": "DDR1 is known as a cell surface receptor for fibrillar collagen",
+      "claim_type": "EXPLICIT",
+      "source": "DDR1 known as a cell surface receptor for fibrillar collagen",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this known function of DDR1",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "39abf471-6372-4d78-9ba1-5ed504db6cc2",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C67",
+      "claim": "Cycling basal cells were identified in E5 by expression of MKI67 and AURKB",
+      "claim_type": "EXPLICIT",
+      "source": "Cycling basal cells were identified in E5 by expression of MKI67 and AURKB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies E5 as cycling basal cells based on marker gene expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "bd89b98a-c111-4f1e-a5e7-36c28cfc196d",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C68",
+      "claim": "E2 showed enrichment for SAA1 and TNFRSF21 both involved in chronic inflammatory conditions",
+      "claim_type": "EXPLICIT",
+      "source": "E2 showed enrichment for SAA1 and TNFRSF21 both involved in chronic inflammatory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the marker genes and their functional association for E2",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "8d66da10-7285-4289-a4a1-f3bf5ed081a7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C69",
+      "claim": "E3 showed enrichment for B-cell receptor signalling pathway",
+      "claim_type": "EXPLICIT",
+      "source": "E3 showed enrichment for B-cell receptor signalling pathway",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the pathway enrichment for E3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "609e107d-6206-40d7-8e03-16f96f873e01",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C70",
+      "claim": "E4 and E8 showed enrichment for neutrophil mediated immunity",
+      "claim_type": "EXPLICIT",
+      "source": "E4 and E8 for neutrophil mediated immunity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the functional enrichment for E4 and E8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "fe38436e-6b26-426f-bf9a-386ef295b4eb",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C71",
+      "claim": "E6 and E7 showed enrichment for genes with a role in cell cycle regulation",
+      "claim_type": "EXPLICIT",
+      "source": "We further identified E6 and E7 with a role in cell cycle regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the functional role for E6 and E7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "55ead8f2-a1ae-4891-8d4a-f831afb57618",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C72",
+      "claim": "E9 had a gene expression profile consistent with a role in ECM organisation and angiogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, E9 had a gene expression profile consistent with a role in ECM organisation and angiogenesis (Figure 3A,D; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the functional profile of E9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "fb63becb-de83-40d2-80a3-6165c8780e96",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C73",
+      "claim": "In the mild stage, a depletion in E6 and E7 populations was observed",
+      "claim_type": "EXPLICIT",
+      "source": "In the mild stage, we observed a depletion in E6 and E7 populations which show enrichment in genes involved in cell cycle regulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the depletion of E6 and E7 in mild disease",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "6ed162e3-a85e-4f7b-9ae6-da85bb72afc7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C74",
+      "claim": "In the mild stage, a depletion in E9 was observed",
+      "claim_type": "EXPLICIT",
+      "source": "and in E9 which is involved in ECM organisation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the depletion of E9 in mild disease",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "7b52e631-d423-4ddd-8ec7-1f994efe1b03",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C75",
+      "claim": "Cycling cells (E5) show a decrease in mild, and a subsequent increase in severe",
+      "claim_type": "EXPLICIT",
+      "source": "Cycling cells (E5) show a decrease in mild, and a subsequent increase in severe (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the pattern of E5 changes across disease states",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "792e1b59-e5d0-4e55-8a9b-f4103a1e793b",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C76",
+      "claim": "An increase in E8 was detected in disease",
+      "claim_type": "EXPLICIT",
+      "source": "We detected an increase in E8 defined in GO terms by 'cytokine- mediated signalling' (Figure 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the increase in E8 in disease",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "711bb7fa-87ee-44d2-b9cf-2d6575bdac8e",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C77",
+      "claim": "NicheNet analysis identified sub-cluster E8 as the main signalling source predicted to modulate E0",
+      "claim_type": "EXPLICIT",
+      "source": "Using NicheNet (Browaeys et al., 2020) we identified sub-cluster E8 as the main signalling source predicted to modulate E0 through the expression of several ligands including MMP9, SPN, and HLA-DRA (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the results of the NicheNet analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "e1829eda-7edf-4e95-9b56-0e71f61faadf",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C78",
+      "claim": "E8 is predicted to modulate E0 through the expression of several ligands including MMP9, SPN, and HLA-DRA",
+      "claim_type": "EXPLICIT",
+      "source": "we identified sub-cluster E8 as the main signalling source predicted to modulate E0 through the expression of several ligands including MMP9, SPN, and HLA-DRA (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the predicted ligands",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "c8c4a0d1-99da-4c2d-89fd-a7ebe61be319",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C79",
+      "claim": "In healthy and mild stages, the cell-stromal/cell-perivascular interaction landscape was dominated by endothelial, stromal, macrophage, and epithelial originating signals",
+      "claim_type": "EXPLICIT",
+      "source": "In healthy and mild stages, the cell-stromal/cell-perivascular interaction landscape was dominated by endothelial, stromal, macrophage, and epithelial originating signals (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the cell interaction landscape in healthy and mild stages",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "a22f5577-ef8e-4346-af9c-0d6360bd29c8",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C80",
+      "claim": "As disease progresses, in mild and severe stages, a clear loss in endothelial and stromal originating signals was observed",
+      "claim_type": "EXPLICIT",
+      "source": "As disease progresses, in mild and severe stages, we observed a clear loss in endothelial and stromal originating signals, and an increase in macrophage, mast, T, and B-cell signalling (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the changes in cell signaling as disease progresses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "e49b0400-a847-4445-af99-cbd0585310d7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C81",
+      "claim": "As disease progresses, in mild and severe stages, an increase in macrophage, mast, T, and B-cell signalling was observed",
+      "claim_type": "EXPLICIT",
+      "source": "As disease progresses, in mild and severe stages, we observed a clear loss in endothelial and stromal originating signals, and an increase in macrophage, mast, T, and B-cell signalling (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the changes in cell signaling as disease progresses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "e0fa26c5-47f5-4ecd-bd02-36afb8ee445e",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C82",
+      "claim": "The number of predicted interactions in severe disease was strongly reduced",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the number of predicted interactions in severe disease was strongly reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this observation about interaction numbers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "075f46fc-6d9f-4e9d-a588-2e8013357d01",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C83",
+      "claim": "Analysis of epithelial ligands predicted to cause an inflammatory response revealed IL1, EDN1, TNF, LTB, and BMP2 as the main contributors to the mild inflammatory stage",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of epithelial ligands predicted to cause an inflammatory response revealed IL1, EDN1, TNF, LTB, and BMP2 as the main contributors to the mild inflammatory stage (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the predicted epithelial ligands",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "87dcc7ac-f3b4-46f3-9412-0be58cfd37a4",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C84",
+      "claim": "Proliferative cells (TACs) are suggested to be the main source of IL1, EDN1, TNF, and LTB ligands",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferative cells (TACs) are suggested to be the main source of these ligands with the exception of BMP2 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the cellular source of these ligands",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "70d87e04-c20d-4159-9004-780a9e735f57",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C85",
+      "claim": "Prominent IL1B-CXCL9, TNF-CXCL9, TNF-UBD, BMP2-COL1A2 interactions were estimated",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated prominent IL1B-CXCL9, TNF-CXCL9, TNF-UBD, BMP2-COL1A2 interactions, suggesting that these molecular interactions may be crucial in sustaining a proinflammatory microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states these predicted interactions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "08174021-b078-453e-bfca-94e96cbf4eb5",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C86",
+      "claim": "IL1B and TNF epithelial ligands specifically targeted S0 and S5 stromal subpopulations",
+      "claim_type": "EXPLICIT",
+      "source": "IL1B and TNF epithelial ligands specifically targeted S0 and S5 stromal subpopulations, and BMP2 all fibroblast-like subpopulations and pericytes (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the target stromal populations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "7d9d52a7-e86e-4709-a2e6-1e61d6a38699",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C87",
+      "claim": "BMP2 targeted all fibroblast-like subpopulations and pericytes",
+      "claim_type": "EXPLICIT",
+      "source": "IL1B and TNF epithelial ligands specifically targeted S0 and S5 stromal subpopulations, and BMP2 all fibroblast-like subpopulations and pericytes (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the target stromal populations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "afefc429-cbba-4ff9-90f7-8b91e0ba01aa",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C88",
+      "claim": "IgG plasma cells were found almost absent in health and distinctively expanded with disease progression",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found IgG plasma cells almost absent in health and distinctively expanded with disease progression (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the pattern of IgG plasma cell changes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "4af7657e-1d1a-48ec-9682-385176bd240d",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C89",
+      "claim": "Upregulation of an IGH signature has been previously linked to disease severity",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulation of an IGH signature has been previously linked to disease severity and renders activation of the mononuclear phagocyte response in the intestinal mucosa (Castro-Dopico et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "17e119ec-e08d-4544-a289-86b7f8988e54",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C90",
+      "claim": "In humans, mucosal IgG responses are pro-inflammatory when they involve complement activation",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, mucosal IgG responses are pro-inflammatory when they involve complement activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "b0f0a92f-9b1b-46aa-9515-0a8101c85db5",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C91",
+      "claim": "The IgG plasma B cell cluster showed enrichment of genes involved in the complement system such as CFB and C2",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster showed enrichment of genes involved in the complement system such as CFB and C2 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the enrichment of complement system genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "35e30a19-1450-4acd-9caf-a897e78b65b8",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C92",
+      "claim": "The complement system plays a critical role in signalling B-cell activation",
+      "claim_type": "EXPLICIT",
+      "source": "This system plays a critical role in signalling B-cell activation (Carroll and Isenman, 2012; Chen et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this function, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "a427976f-d08a-4b72-8765-8860d9ec75c1",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C93",
+      "claim": "Previous research has established a role for the complement system in periodontitis",
+      "claim_type": "EXPLICIT",
+      "source": "and previous research has established a role in periodontitis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "57719742-9c4a-40c1-915f-0a487aa0c904",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C94",
+      "claim": "Myofibroblasts are known to be responsible for excessive synthesis, deposition, and remodelling of extracellular matrix proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Myofibroblasts are known to be responsible for excessive synthesis, deposition, and remodelling or extracellular matrix proteins (Tomasek et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this known function, supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "4a15138c-9555-4cd7-919d-fd2336e13ea6",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C95",
+      "claim": "Multiple single-cell analyses have revealed that myofibroblast populations are heterogenous and undergo dynamic changes during tissue repair in various organs",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple single-cell analysis have revealed that myofibroblast populations are heterogenous and undergo dynamic changes during tissue repair in various organs (Farbehi et al., 2019; Guerrero-Juarez et al., 2019; Xie et al., 2018; Tabib et al., 2018; Peyser et al., 2019; Lambrechts et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "47e966fe-dbb8-49db-ab50-cb5383db7843",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C96",
+      "claim": "IL-1B induces caspase-dependent apoptosis in mouse lung myofibroblasts by inhibiting FAK",
+      "claim_type": "EXPLICIT",
+      "source": "One example is IL-1B which induces caspase-dependent apoptosis in mouse lung myofibroblasts by inhibiting FAK (Zhang and Phan, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "90981f34-a84a-4235-8bba-b02377602093",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C97",
+      "claim": "Pericytes are present in all vascularised tissues",
+      "claim_type": "EXPLICIT",
+      "source": "Pericytes are present in all vascularised tissues, and provide structural support to the vasculature with proven roles in angiogenesis (Lindblom et al., 2003), wound healing (Kramann et al., 2015), progenitor cell functions (Crisan et al., 2008) and immunomodulation (Meyers et al., 2018; Yianni and Sharpe, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "97ed1def-6af0-4661-94a3-b2ff6fcdf710",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C98",
+      "claim": "There is an expansion and dilation of the vasculature in periodontitis",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that there is an expansion and dilation of the vasculature in periodontitis (Zoellner et al., 2002), contributing to increased leukocyte recruitment into the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "f4e40f0a-0300-4398-ac07-3b735761921b",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C99",
+      "claim": "The loss or detachment of pericytes has been implicated in disease",
+      "claim_type": "EXPLICIT",
+      "source": "The loss or detachment of pericytes has been implicated in disease (Armulik et al., 2011), and has been related to infiltration of inflammatory cells (Ogura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "946be616-5e7b-4670-b83a-259ab8bed4e7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C100",
+      "claim": "Pdgfb or Pdgfr loss-of-function embryos show vascular hyperplasia and microvessel dilation",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Pdgfb or Pdgfr loss-of-function embryos show vascular hyperplasia and microvessel dilation (Hellstr\u00f6m et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "350ca9ef-60f9-4723-a0a1-ac78850fc2af",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C101",
+      "claim": "Pericytes are mesenchymal stem cell precursors in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesise that the observed pericyte decrease might impair the stromal compartments ability to regenerate as these are mesenchymal stem cell precursors in vivo (Sacchetti et al., 2016; Yianni and Sharpe, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "b35aa347-c771-47c4-a289-c42f3bfa2eec",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C102",
+      "claim": "AEBP1 has been reported to be a DNA-binding transcriptional repressor with role in smooth muscle differentiation and wound healing",
+      "claim_type": "EXPLICIT",
+      "source": "This protein has been reported to be a DNA-binding transcriptional repressor with role in smooth muscle differentiation and wound healing (Layne et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "148d805f-f105-4201-ae74-d5f1b50cc64f",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C103",
+      "claim": "HOPX marks known stem cells in the intestinal and skin epithelia",
+      "claim_type": "EXPLICIT",
+      "source": "E0 shows expression of HOPX which marks known stem cells in the intestinal and skin epithelia (Takeda et al., 2013; Takeda et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "2c020ed4-a4c9-4d69-b97d-0b0e10a0f78a",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C104",
+      "claim": "Complement split products were found absent or present at low concentrations in healthy individuals, but abundant in periodontitis",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, complement split products were found absent or present at low concentrations in healthy individuals, but abundant in periodontitis (Damgaard et al., 2015; Hajishengallis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "a47ed33f-f24d-4ccc-afa0-3be22b4076d1",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C105",
+      "claim": "Continuous complement activation promotes survival of local pathogens in a nutritionally favourable inflammatory environment that promotes dysbiosis and disease development",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous complement activation promotes survival of local pathogens in a nutritionally favourable inflammatory environment that promotes dysbiosis and disease development (Hajishengallis et al., 2017; Hajishengallis et al., 2011; Maekawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this mechanism, supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "b01cc6df-c588-4d30-a216-006059dd43f4",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C106",
+      "claim": "Previous studies have reported IL1B and TNF as key regulators in the periodontitis pathogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have reported IL1B and TNF as key regulators in the periodontitis pathogenesis (Yucel-Lindberg and B\u00e5ge, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "cd015d99-7d5d-4174-851e-459e22de5175",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C107",
+      "claim": "The oral mucosa is one of the most rapidly dividing tissues in the body",
+      "claim_type": "EXPLICIT",
+      "source": "The oral mucosa is one of the most rapidly dividing tissues in the body and provides the first line of defence against the development of oral disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this characteristic of the oral mucosa",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "da139d60-3d73-4e72-8fc5-c4535b174a8a",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C108",
+      "claim": "Gingiva is the oral mucosa that surrounds the cervical portion of the teeth",
+      "claim_type": "EXPLICIT",
+      "source": "Gingiva is the oral mucosa that surrounds the cervical portion of the teeth, and consists of a keratinised stratified squamous epithelium and an underlying connective tissue containing multiple cell types that collectively orchestrate tissue homeostasis during health and in response to mechanical and microbial challenges (Lindhe et al., 2008; Cekici et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines gingiva and its structure, supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "16838561-908f-4732-b70e-af5ae1753ad7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C109",
+      "claim": "Periodontal disease is a chronic inflammatory condition associated with a dysbiosis of the commensal oral microbiota and host immune defences",
+      "claim_type": "EXPLICIT",
+      "source": "Periodontal disease is a chronic inflammatory condition associated with a dysbiosis of the commensal oral microbiota and host immune defences causing irreversible destruction of the soft and hard supporting tissues of the teeth (Pihlstrom et al., 2005; Lindhe et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines periodontal disease, supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "60ffc917-0907-4377-a10f-76cd81f86fd0",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C110",
+      "claim": "Gingivitis is a mild and reversible inflammation of the gingiva that does not permanently compromise the integrity of the tissues supporting the teeth",
+      "claim_type": "EXPLICIT",
+      "source": "Gingivitis is a mild and reversible inflammation of the gingiva that does not permanently compromise the integrity of the tissues supporting the teeth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines gingivitis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "62a87135-d598-45f9-9e73-5645118de28a",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C111",
+      "claim": "Chronic periodontitis occurs when untreated gingivitis progresses to the loss of the gingiva, bone, and ligament",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic periodontitis occurs when untreated gingivitis progresses to the loss of the gingiva, bone, and ligament (Lamont and Hajishengallis, 2015; Pihlstrom et al., 2005; Lindhe et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines chronic periodontitis, supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "1d644e19-a8f2-4d88-9289-75584c6ceb7c",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C112",
+      "claim": "Tissue resident cells play an instrumental role in innate immunity, immune regulation, and epithelial barrier maintenance",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is recognised that tissue resident cells play an instrumental role in innate immunity, immune regulation, and epithelial barrier maintenance (Krausgruber et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as recognized knowledge, supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "2807fbd5-4db1-4311-9986-4c6b9ba223e6",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C113",
+      "claim": "Mesenchymal (stromal) cells maintain epithelial barrier integrity and immune homeostasis in several organs",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the growing recognition that mesenchymal (stromal) cells maintain epithelial barrier integrity and immune homeostasis in several organs (Kabiri et al., 2014; Nowarski et al., 2017; Bernardo and Fibbe, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as growing recognition, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "0a690378-049f-425f-9b74-b358b7943c44",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C114",
+      "claim": "B cells constitute the majority of cells in periodontitis lesions",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have established that B cells constitute the majority of cells in periodontitis lesions (Thorbert-Mros et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "6dfc5c14-c580-469b-8b24-7af63f6c4fd9",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C115",
+      "claim": "An increase in local IgG within the gastrointestinal tract during intestinal inflammation has been reported",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, it has been reported an increase in local IgG within the gastrointestinal tract during intestinal inflammation (Castro-Dopico et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from previous literature, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "1a51d8b5-c985-4fac-8752-ddbef8e137b7",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C116",
+      "claim": "Patient samples with higher levels of IgG had the highest disease severity scores and correlated with neutrophil infiltration and IL-1B expression",
+      "claim_type": "EXPLICIT",
+      "source": "In that study, patient samples with higher levels of IgG had the highest disease severity scores and correlated with neutrophil infiltration and IL-1B expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from a previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "fb0efba3-1006-4037-b3a4-f55c29bc810c",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C117",
+      "claim": "This work provides the first comprehensive cellular landscape of in vivo human gingiva",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we provided the first comprehensive cellular landscape of in vivo human gingiva, charting dynamic cellular composition differences at single-cell level across disease states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly claims this as a first",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "1167077e-2353-4f4f-97b0-ff72b041deb8",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C118",
+      "claim": "This is the first human detailed characterisation of oral epithelial progenitor cells",
+      "claim_type": "EXPLICIT",
+      "source": "Although, recent studies have started to elucidate oral progenitor cells' heterogeneity, this is the first human detailed characterisation that will allow the development of future validation models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly claims this as a first",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "eb26bd8f-92e6-4645-94ae-0ad9336131d2",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C119",
+      "claim": "This work provides the first comprehensive analysis of the human gingival epithelium",
+      "claim_type": "EXPLICIT",
+      "source": "This work also provides the first comprehensive analysis of the human gingival epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly claims this as a first",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "3d782217-2c12-420c-8fec-1a4107e024e5",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C120",
+      "claim": "The samples were staged as healthy, mild, and severe based on histological differences",
+      "claim_type": "EXPLICIT",
+      "source": "Histologically, the diseased samples showed different levels of severity. Therefore, in our analysis we staged the samples as healthy, mild, and severe. (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the staging criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "cf9a7851-03a3-4732-b167-5dbd11cc8d08",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C121",
+      "claim": "Only cells expressing more than 500 transcripts were considered to limit contamination from dead or dying cells",
+      "claim_type": "EXPLICIT",
+      "source": "Only cells found to be expressing more than 500 transcripts were considered as to limit contamination from dead or dying cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this quality control criterion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "1a37cb6e-0a48-4e0b-a2ca-fa9568b01c07",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "claim_id": "C122",
+      "claim": "The 2000 most variable features of each dataset were detected using the 'vst' method",
+      "claim_type": "EXPLICIT",
+      "source": "Each dataset was normalised for sequencing depth by calling the 'NormalizeData' function and the 2000 most variable features of each dataset were detected using the 'vst' method by calling the 'FindVariableFeatures' function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes this computational method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c574061-64a6-4133-870e-12023f81e1d5",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of human gingival tissue identified 16 distinct cell populations across 12,411 cells from four patient biopsies. The analysis revealed three epithelial subsets, mesenchymal/stromal populations, two endothelial populations, three B cell populations, T cells, dendritic cells, mast cells, and two macrophage populations, each characterized by specific marker gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 provide comprehensive characterization of cell populations with specific marker genes and appropriate citations. The methodology is clearly described (10x Genomics platform), quality control criteria are stated (>500 transcripts), and the identification of 16 distinct populations is supported by marker gene expression patterns. The consistency between two healthy patient samples (C2, C3) validates the technical reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "6ad49012-0d78-4a84-a04f-c2a046487b23",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Histological analysis revealed progressive tissue changes across disease states. Samples were staged as healthy, mild, and severe based on histological features including epithelial integrity, collagen content, and lymphocyte infiltration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 and C120 describe clear histological differences between disease states with specific observations (intact epithelium in mild, lymphocyte infiltration and epithelial breakdown in severe). The staging criteria are explicitly stated and supported by H&E staining (Figure 1D). However, the staging appears subjective without quantitative metrics or blinded assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "cb165585-6e5b-4347-ba24-be11aadfaac8",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Disease progression is characterized by dynamic changes in immune and structural cell populations. B cells (follicular and plasma) show progressive increase from health to severe disease, while memory B cells and T cells peak in mild disease then decrease. Macrophages expand in mild disease consistent with tissue clearing function, while mesenchymal and epithelial populations progressively deplete.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C37 describe cell population dynamics across disease states with supporting figures (Figure 1E). The observations are consistent with prior literature (C29, C32 with citations). However, the study has only one sample per disease state (except two healthy), limiting statistical power to assess significance of these changes. The term 'significant enrichment' (C36) is used without statistical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "a486ddd0-1674-4911-a4ea-ecba81f070bf",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Re-clustering of stromal cells identified seven distinct populations: five fibroblast-like populations (S0, S2, S4, S5, S6), one myofibroblast (S1), and one pericyte (S3). These populations show distinct functional signatures including ECM organization, Wnt signaling regulation, immune regulation, and tissue repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C49 provide detailed characterization of stromal heterogeneity with marker genes and GO term enrichment. The functional annotations are supported by literature citations (C43, C46, C49). The re-clustering methodology is described in Methods. However, the functional interpretations are largely based on GO enrichment without experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "767408b1-eac0-4286-b282-7557ff168b31",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In mild disease, myofibroblast (S1) and pericyte (S3) populations show marked decrease, representing the most pronounced stromal change from health to mild disease. A pro-inflammatory fibroblast population (S6) expressing CD74 and AREG emerges. Collagen VI levels decrease as confirmed by immunofluorescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 describe specific stromal changes in disease with supporting data (Figure 2B, 2E). The immunofluorescence validation (C54) strengthens the scRNA-seq findings. However, with only one mild disease sample, the generalizability is uncertain. The interpretation that S1/S3 loss is the 'most pronounced change' (C51) is subjective without quantitative comparison to other populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "e4cbd617-4451-4ae1-9b47-2bcd0f593094",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CytoTRACE analysis based on transcriptional diversity identified S5 and S0 as less differentiated stromal subpopulations, while S1 (myofibroblasts) and S3 (pericytes) represent fully differentiated states. AEBP1 was identified as a marker of less differentiated states, with AEBP1+ cells concentrated in the subepithelial region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 describe a computational approach to infer differentiation states with appropriate citations (C55). The CytoTRACE analysis is a recognized method for predicting developmental potential. Immunohistochemistry validation of AEBP1 localization (C59, Figure 2G) supports the computational prediction. However, this remains a prediction without lineage tracing or functional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "d49c99bc-a590-47ff-b7fe-82cced3e9895",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Re-clustering of epithelial cells identified ten populations including two basal cell populations (E0 expressing HOPX/IGFBP5 as stem markers, E1 as more mature basal cells), cycling cells (E5), and populations with inflammatory signatures (E2, E3, E4, E8), cell cycle regulation (E6, E7), and ECM organization (E9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C72 provide comprehensive epithelial characterization with marker genes and functional annotations. The stem cell markers HOPX and IGFBP5 are supported by literature citations (C62, C63, C64). GO enrichment provides functional context. However, the stem cell identity of E0 is inferred from marker expression without functional validation (e.g., organoid formation, lineage tracing).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "4acfa69b-c133-4184-957b-1b466c120137",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Epithelial populations show disease-specific changes: E6, E7 (cell cycle regulation) and E9 (ECM organization) deplete in mild disease, cycling cells (E5) decrease in mild then increase in severe, and E8 (cytokine-mediated signaling) increases in disease. NicheNet analysis predicted E8 as the main signaling source modulating the stem cell population E0 through ligands including MMP9, SPN, and HLA-DRA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 describe epithelial dynamics with supporting figures (Figure 3B). The NicheNet analysis (C77, C78) is a computational prediction of cell-cell communication with appropriate methodology citation. However, these are predictions from a single mild and single severe sample without statistical testing or experimental validation of the predicted interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "5829ee12-b88e-43de-b849-3a12e0abdfb6",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cell-cell interaction analysis revealed that in health and mild disease, stromal interactions are dominated by endothelial, stromal, macrophage, and epithelial signals. As disease progresses, endothelial and stromal signals decrease while immune cell signaling increases. Epithelial ligands IL1, EDN1, TNF, LTB, and BMP2 (mainly from proliferative cells) are predicted to drive stromal inflammatory responses, with IL1B and TNF targeting S0/S5 populations and BMP2 targeting all fibroblast-like populations and pericytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C87 describe computational predictions of cell-cell interactions using NicheNet. While the methodology is appropriate and cited, these are entirely computational predictions without experimental validation. The authors acknowledge uncertainty: 'It is unclear if the interactions described above are causative or consequential of disease progression' (manuscript text). The predictions are based on single samples per condition, limiting confidence in the generalizability of these interaction patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "bb94e9bf-a85f-430d-83ae-d3ebc9e4dc67",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IgG plasma B cells are almost absent in health but expand with disease progression. This population shows enrichment for complement system genes (CFB, C2), which play critical roles in B-cell activation and have established roles in periodontitis. Mucosal IgG responses are pro-inflammatory when involving complement activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C93 describe B cell dynamics with supporting data (Figure 5A) and appropriate literature context (C89, C92, C93 with citations). The complement gene enrichment is shown in Figure 5D. However, the functional significance is inferred from literature rather than demonstrated experimentally. The study lacks functional assays to confirm that these IgG plasma cells are indeed pro-inflammatory or that complement activation is occurring.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within existing literature on myofibroblast function, pericyte biology, complement activation in periodontitis, and the roles of IL1B and TNF in disease pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C106 are literature citations and established knowledge statements that appropriately contextualize the study findings. All claims are supported by citations to primary literature. These provide important context but do not represent new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "3671809f-01fe-4e3d-8e13-de5f7273a376",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "This work provides the first comprehensive cellular landscape of in vivo human gingiva, the first detailed human characterization of oral epithelial progenitor cells, and the first comprehensive analysis of the human gingival epithelium at single-cell resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C119 assert novelty as 'first' comprehensive analyses. While previous bulk RNA-seq studies exist (cited in manuscript), this appears to be the first single-cell RNA-seq study of human gingiva across disease states. The claim is supported by the comprehensive characterization presented. However, the small sample size (n=1 per disease state except healthy) limits the comprehensiveness of the atlas.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "e6dbc4e8-fb47-4715-97e7-102f737da526",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about oral mucosa biology, periodontal disease pathogenesis, and the roles of tissue resident cells in immunity and homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C116 are background statements from the introduction, all supported by appropriate citations. These establish the scientific context and rationale for the study but do not represent findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    },
+    {
+      "id": "4bc7df43-296c-488e-910a-41c28fdc5a10",
+      "content_id": "1995ee42-23ce-4cbb-b829-b66b566fbf18",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Quality control filtering retained cells expressing >500 transcripts to limit contamination from dead or dying cells. Variable feature selection identified the 2000 most variable features using the 'vst' method.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C121-C122 describe standard computational methods for scRNA-seq analysis. The 500 transcript threshold is a reasonable quality control metric, though relatively permissive compared to some studies. The use of 2000 variable features and 'vst' method are standard Seurat pipeline parameters. These methodological choices are appropriate and clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:22:46.933598Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3f31013d-8983-44ec-bead-9e50fecedee8",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "4f027383-619f-4a80-b2a4-ae5f68a4c19c",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "44c61b92-1d42-4078-9f9d-9789f03d57db",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "baa6550a-d666-4ddd-9ffc-7dc31d44d007",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "fe0f906c-cb8d-401b-9612-747ebc312e91",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "573bf57c-0aee-4496-a143-92748fb3c401",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "2a946f9a-3248-4657-8ed0-fc49c6c65216",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "b80e2d99-244c-4424-ab47-58f37f7fee06",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "be5485b7-73ba-4b1b-84de-6dca835ac4b8",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "188acffb-ba02-4b60-a4fa-56bf4d1a168c",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "d8825cff-8b20-4700-8cf7-3baf0d58c1d8",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "d2810aec-be0a-46e8-ae3c-27903fe57986",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "e37a61db-402d-4895-a25a-34df44de9814",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "13c891cb-158c-4118-8701-5c593cbac5af",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "2eb50a70-bb76-46db-9c98-1d7b1cb397b3",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "d856f565-41a2-46da-8906-e089b483d8b7",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "c51c9778-c174-4c1c-902c-9cb4104cffb5",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "01839c31-f1c6-48db-a661-0e9bac34c472",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "ef1ea507-8202-42a2-83a1-4c8e115b70f6",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "ab1327f5-3f35-492c-8edd-1a6716275ac7",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "dd6b07dc-0ad9-4c9d-a7b1-acb054a4b127",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "a865bcdc-0936-4ed8-b1ed-0b668e1f8d50",
+      "result_id": "0c574061-64a6-4133-870e-12023f81e1d5"
+    },
+    {
+      "claim_id": "1e853202-3234-4d14-8b0d-60140392fa98",
+      "result_id": "6ad49012-0d78-4a84-a04f-c2a046487b23"
+    },
+    {
+      "claim_id": "5ce6cb62-6902-4e62-9c40-0a50a3b5ebe7",
+      "result_id": "6ad49012-0d78-4a84-a04f-c2a046487b23"
+    },
+    {
+      "claim_id": "423d0185-d8b7-431c-baab-76e74f6dc4c5",
+      "result_id": "6ad49012-0d78-4a84-a04f-c2a046487b23"
+    },
+    {
+      "claim_id": "77e067fe-31c4-414d-a737-d3956ef8174b",
+      "result_id": "6ad49012-0d78-4a84-a04f-c2a046487b23"
+    },
+    {
+      "claim_id": "3d782217-2c12-420c-8fec-1a4107e024e5",
+      "result_id": "6ad49012-0d78-4a84-a04f-c2a046487b23"
+    },
+    {
+      "claim_id": "d7a9898a-a1f4-45a0-8855-2195b3443e40",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "40ecb59e-ef34-491c-9b6f-413e8f1c8d38",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "67852d0e-b640-493e-8f3f-d25fb7df2985",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "aadf3e1c-8709-4e84-90b5-8d04e310a2f5",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "9f392649-c823-4b3f-a722-062330600b6c",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "a519fe62-8d69-4806-925c-e39568c16937",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "1133285a-34f4-4d8f-a4b5-ece8f3a99241",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "97e0e057-7adb-492f-8ca2-a4cf8912cb60",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "2a879cdb-bed1-4cf4-9666-f20c0b3d6614",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "4e327807-9a82-4884-a956-cd3468e306f4",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "ada5fab6-f3d7-4b33-9ca6-2cace284fb05",
+      "result_id": "cb165585-6e5b-4347-ba24-be11aadfaac8"
+    },
+    {
+      "claim_id": "604cfe15-3d29-43c2-956a-d96aed82e58c",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "cbe48629-aa01-4416-a535-ab78ca881c93",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "ca3b641f-f88e-4661-bf03-ae5c33683547",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "4873f893-9e4d-4c11-8a21-3f765c43d95b",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "d8e288df-ea99-426d-940e-c9a0f428cd96",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "1392a080-839c-47ff-a89c-589649886a59",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "68ade0c2-58d6-45b8-b51e-c55e858f67b7",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "3c14afdb-d32d-45c7-9566-554b0f984649",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "34f8d130-653c-4d23-bf3b-a66a13d853cf",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "d7b710d8-1715-4a9a-9e78-ecb8f88c16d5",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "7a6bf591-9eea-42ce-b85f-ccc783ce6dda",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "9c78be13-914c-4c57-88ad-2634269098ed",
+      "result_id": "a486ddd0-1674-4911-a4ea-ecba81f070bf"
+    },
+    {
+      "claim_id": "6ca4d3e2-5a80-4cfb-a6a0-51a9b7cf3ecc",
+      "result_id": "767408b1-eac0-4286-b282-7557ff168b31"
+    },
+    {
+      "claim_id": "892839af-caa4-481b-9a23-93e23ec71d0f",
+      "result_id": "767408b1-eac0-4286-b282-7557ff168b31"
+    },
+    {
+      "claim_id": "e32b0de6-3816-4873-8919-1420aaf8e888",
+      "result_id": "767408b1-eac0-4286-b282-7557ff168b31"
+    },
+    {
+      "claim_id": "7eee1592-cc4f-48e4-940a-eeaa361d9be9",
+      "result_id": "767408b1-eac0-4286-b282-7557ff168b31"
+    },
+    {
+      "claim_id": "1e6d05ff-6e4c-4eda-8669-06835d35cb56",
+      "result_id": "767408b1-eac0-4286-b282-7557ff168b31"
+    },
+    {
+      "claim_id": "74f8e9ce-926d-4d24-8b31-c4a9f7d3ddf8",
+      "result_id": "e4cbd617-4451-4ae1-9b47-2bcd0f593094"
+    },
+    {
+      "claim_id": "267b064b-b100-4281-bfa8-b73ea96bcf27",
+      "result_id": "e4cbd617-4451-4ae1-9b47-2bcd0f593094"
+    },
+    {
+      "claim_id": "63b95d84-2bbd-4a24-a2ea-ebbd5329f672",
+      "result_id": "e4cbd617-4451-4ae1-9b47-2bcd0f593094"
+    },
+    {
+      "claim_id": "3105bc7e-7030-4a53-88a4-dde0e7363429",
+      "result_id": "e4cbd617-4451-4ae1-9b47-2bcd0f593094"
+    },
+    {
+      "claim_id": "cc5bb61d-e666-4945-bf06-6fadc945d26a",
+      "result_id": "e4cbd617-4451-4ae1-9b47-2bcd0f593094"
+    },
+    {
+      "claim_id": "b7d91c2a-db9c-4962-813a-7fcfa370c6c7",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "02216334-c88d-4ee0-8852-f0e500f687d7",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "8f965c5f-5949-429e-9a2d-3fb0d8cff5c7",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "fc123cf5-b989-4a77-9dcd-c526c577451a",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "0aa8bb5d-8d60-4821-a77a-e92437c95455",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "a0c87c23-086e-4540-a483-c05def32627c",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "dc547be3-057a-45fb-97c4-70bec118dac6",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "39abf471-6372-4d78-9ba1-5ed504db6cc2",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "bd89b98a-c111-4f1e-a5e7-36c28cfc196d",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "8d66da10-7285-4289-a4a1-f3bf5ed081a7",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "609e107d-6206-40d7-8e03-16f96f873e01",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "fe38436e-6b26-426f-bf9a-386ef295b4eb",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "55ead8f2-a1ae-4891-8d4a-f831afb57618",
+      "result_id": "d49c99bc-a590-47ff-b7fe-82cced3e9895"
+    },
+    {
+      "claim_id": "fb63becb-de83-40d2-80a3-6165c8780e96",
+      "result_id": "4acfa69b-c133-4184-957b-1b466c120137"
+    },
+    {
+      "claim_id": "6ed162e3-a85e-4f7b-9ae6-da85bb72afc7",
+      "result_id": "4acfa69b-c133-4184-957b-1b466c120137"
+    },
+    {
+      "claim_id": "7b52e631-d423-4ddd-8ec7-1f994efe1b03",
+      "result_id": "4acfa69b-c133-4184-957b-1b466c120137"
+    },
+    {
+      "claim_id": "792e1b59-e5d0-4e55-8a9b-f4103a1e793b",
+      "result_id": "4acfa69b-c133-4184-957b-1b466c120137"
+    },
+    {
+      "claim_id": "711bb7fa-87ee-44d2-b9cf-2d6575bdac8e",
+      "result_id": "4acfa69b-c133-4184-957b-1b466c120137"
+    },
+    {
+      "claim_id": "e1829eda-7edf-4e95-9b56-0e71f61faadf",
+      "result_id": "4acfa69b-c133-4184-957b-1b466c120137"
+    },
+    {
+      "claim_id": "c8c4a0d1-99da-4c2d-89fd-a7ebe61be319",
+      "result_id": "5829ee12-b88e-43de-b849-3a12e0abdfb6"
+    },
+    {
+      "claim_id": "a22f5577-ef8e-4346-af9c-0d6360bd29c8",
+      "result_id": "5829ee12-b88e-43de-b849-3a12e0abdfb6"
+    },
+    {
+      "claim_id": "e49b0400-a847-4445-af99-cbd0585310d7",
+      "result_id": "5829ee12-b88e-43de-b849-3a12e0abdfb6"
+    },
+    {
+      "claim_id": "e0fa26c5-47f5-4ecd-bd02-36afb8ee445e",
+      "result_id": "5829ee12-b88e-43de-b849-3a12e0abdfb6"
+    },
+    {
+      "claim_id": "075f46fc-6d9f-4e9d-a588-2e8013357d01",
+      "result_id": "5829ee12-b88e-43de-b849-3a12e0abdfb6"
+    },
+    {
+      "claim_id": "87dcc7ac-f3b4-46f3-9412-0be58cfd37a4",
+      "result_id": "5829ee12-b88e-43de-b849-3a12e0abdfb6"
+    },
+    {
+      "claim_id": "70d87e04-c20d-4159-9004-780a9e735f57",
+      "result_id": "5829ee12-b88e-43de-b849-3a12e0abdfb6"
+    },
+    {
+      "claim_id": "08174021-b078-453e-bfca-94e96cbf4eb5",
+      "result_id": "5829ee12-b88e-43de-b849-3a12e0abdfb6"
+    },
+    {
+      "claim_id": "7d9d52a7-e86e-4709-a2e6-1e61d6a38699",
+      "result_id": "5829ee12-b88e-43de-b849-3a12e0abdfb6"
+    },
+    {
+      "claim_id": "afefc429-cbba-4ff9-90f7-8b91e0ba01aa",
+      "result_id": "bb94e9bf-a85f-430d-83ae-d3ebc9e4dc67"
+    },
+    {
+      "claim_id": "4af7657e-1d1a-48ec-9682-385176bd240d",
+      "result_id": "bb94e9bf-a85f-430d-83ae-d3ebc9e4dc67"
+    },
+    {
+      "claim_id": "17e119ec-e08d-4544-a289-86b7f8988e54",
+      "result_id": "bb94e9bf-a85f-430d-83ae-d3ebc9e4dc67"
+    },
+    {
+      "claim_id": "b0f0a92f-9b1b-46aa-9515-0a8101c85db5",
+      "result_id": "bb94e9bf-a85f-430d-83ae-d3ebc9e4dc67"
+    },
+    {
+      "claim_id": "35e30a19-1450-4acd-9caf-a897e78b65b8",
+      "result_id": "bb94e9bf-a85f-430d-83ae-d3ebc9e4dc67"
+    },
+    {
+      "claim_id": "a427976f-d08a-4b72-8765-8860d9ec75c1",
+      "result_id": "bb94e9bf-a85f-430d-83ae-d3ebc9e4dc67"
+    },
+    {
+      "claim_id": "57719742-9c4a-40c1-915f-0a487aa0c904",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "4a15138c-9555-4cd7-919d-fd2336e13ea6",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "47e966fe-dbb8-49db-ab50-cb5383db7843",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "90981f34-a84a-4235-8bba-b02377602093",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "97ed1def-6af0-4661-94a3-b2ff6fcdf710",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "f4e40f0a-0300-4398-ac07-3b735761921b",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "946be616-5e7b-4670-b83a-259ab8bed4e7",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "350ca9ef-60f9-4723-a0a1-ac78850fc2af",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "b35aa347-c771-47c4-a289-c42f3bfa2eec",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "148d805f-f105-4201-ae74-d5f1b50cc64f",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "2c020ed4-a4c9-4d69-b97d-0b0e10a0f78a",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "a47ed33f-f24d-4ccc-afa0-3be22b4076d1",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "b01cc6df-c588-4d30-a216-006059dd43f4",
+      "result_id": "c9e844be-f222-4cfb-b7fc-f9f77c46b33c"
+    },
+    {
+      "claim_id": "fb0efba3-1006-4037-b3a4-f55c29bc810c",
+      "result_id": "3671809f-01fe-4e3d-8e13-de5f7273a376"
+    },
+    {
+      "claim_id": "1167077e-2353-4f4f-97b0-ff72b041deb8",
+      "result_id": "3671809f-01fe-4e3d-8e13-de5f7273a376"
+    },
+    {
+      "claim_id": "eb26bd8f-92e6-4645-94ae-0ad9336131d2",
+      "result_id": "3671809f-01fe-4e3d-8e13-de5f7273a376"
+    },
+    {
+      "claim_id": "cd015d99-7d5d-4174-851e-459e22de5175",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "da139d60-3d73-4e72-8fc5-c4535b174a8a",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "16838561-908f-4732-b70e-af5ae1753ad7",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "60ffc917-0907-4377-a10f-76cd81f86fd0",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "62a87135-d598-45f9-9e73-5645118de28a",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "1d644e19-a8f2-4d88-9289-75584c6ceb7c",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "2807fbd5-4db1-4311-9986-4c6b9ba223e6",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "0a690378-049f-425f-9b74-b358b7943c44",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "6dfc5c14-c580-469b-8b24-7af63f6c4fd9",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "1a51d8b5-c985-4fac-8752-ddbef8e137b7",
+      "result_id": "e6dbc4e8-fb47-4715-97e7-102f737da526"
+    },
+    {
+      "claim_id": "cf9a7851-03a3-4732-b167-5dbd11cc8d08",
+      "result_id": "4bc7df43-296c-488e-910a-41c28fdc5a10"
+    },
+    {
+      "claim_id": "1a37cb6e-0a48-4e0b-a2ca-fa9568b01c07",
+      "result_id": "4bc7df43-296c-488e-910a-41c28fdc5a10"
+    }
+  ],
+  "comparisons": []
+}

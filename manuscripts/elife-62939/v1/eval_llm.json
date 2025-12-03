@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C92",
+      "C93",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Maternal loss after age 2 does not significantly reduce survival in mountain gorillas. Cox-proportional hazards analysis and Bayesian survival trajectory analysis found no significant differences in survival between orphan classes (infants, juveniles, subadults) and non-orphans for both sexes, with the null model showing highest support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C93 provide direct statistical evidence from two independent analytical approaches (Cox-proportional hazards and Bayesian survival trajectory analysis) showing no significant survival differences. While C154 acknowledges sample size limitations (n=59 orphans), C155 notes that comparable sample sizes detected effects in other species, strengthening the interpretation that effects are genuinely absent or very weak (C156). The convergence of multiple statistical approaches supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C161",
+      "C163",
+      "C164"
+    ],
+    "result": "Maternal loss has no significant effect on age at first birth in female mountain gorillas. Orphaned females gave birth slightly younger (9.67-9.72 years) than non-orphans (10.24 years), a pattern consistent with the stress acceleration hypothesis, though the effect was not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 provides direct statistical evidence of no significant effect using generalized linear models. The descriptive statistics (C102-C104) show the direction of effect, and C161 notes the non-significant trend. Claims C163-C164 appropriately contextualize this as consistent with stress acceleration theory while acknowledging lack of statistical significance. The result is well-supported by appropriate statistical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C162"
+    ],
+    "result": "Maternal loss does not significantly affect survival of first offspring through infancy in female mountain gorillas. First offspring of orphaned females showed marginally higher survival (57-60%) compared to non-orphans (51.5%), but this difference was not statistically significant after controlling for age at first birth and dispersal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 provides direct statistical evidence using binomial generalized linear models with appropriate controls. The descriptive statistics (C106-C108) show the actual survival rates, and C162 notes the non-significant trend. The statistical approach appropriately accounts for potential confounders (age at first birth, dispersal), strengthening the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "Maternal loss affects dispersal decisions differently by age and sex. Females orphaned as juveniles/subadults showed a near-significant increase in dispersal likelihood (75% vs 37.5% for non-orphans, p=0.072). Males orphaned as juveniles/subadults were significantly more likely to disperse before age 16 (84.6% vs 37.5%, p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 report appropriate statistical testing for females with borderline significance. Claim C100 provides strong statistical evidence for males (p=0.008). The descriptive statistics (C96-C98) support the patterns. However, the female result is marginally below conventional significance thresholds, which is appropriately noted. The sex difference in statistical significance is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Maternal loss shows age-dependent effects on male dominance attainment. All three infant-orphaned males became dominant by age 23, while no juvenile/subadult-orphaned males (n=5) achieved dominance by this age, compared to 52% of non-orphans. However, 71% of younger juvenile/subadult-orphaned males (age 16-23) had already become dominant, indicating capacity for later dominance attainment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The descriptive statistics (C109-C115) show clear patterns, but the authors explicitly acknowledge that small sample sizes prevented statistical testing (C171). While the pattern mirrors dispersal effects (C172), and C169-C170 demonstrate that orphans can achieve dominance, the lack of statistical testing and very small sample sizes (especially n=3 infant orphans, n=5 juvenile/subadult orphans) make it impossible to determine if observed differences are statistically meaningful or due to chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C124",
+      "C125",
+      "C126",
+      "C189",
+      "C190"
+    ],
+    "result": "Following maternal loss, orphans' proximity-based social relationships strengthen significantly. Orphans showed significantly greater increases in eigenvector centrality (p<0.001) and weighted degree (p=0.021) compared to non-orphans, resulting in similar network positions post-loss despite losing a key social partner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 provide strong statistical evidence using GAMMs with node-level permutations, an appropriate method for network data. Both parametric (p<0.001, p=0.021) and permutation-based (Pnull<0.001, Pnull=0.024) tests support the findings. Claim C126 demonstrates the biological significance: orphans achieve similar network positions to non-orphans post-loss. The convergence of multiple network metrics strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C122",
+      "C195"
+    ],
+    "result": "Orphans did not show significant increases in contact-based network metrics relative to non-orphans. Neither eigenvector centrality (p=0.554) nor weighted degree (p=0.513) changed significantly more for orphans, resulting in a net 31% decrease in affiliative contact following maternal loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 provide clear statistical evidence of non-significant effects using appropriate methods (GAMMs with permutation tests). The p-values are well above conventional thresholds. Claims C122 and C195 quantify the net effect, showing that increased contact with other group members did not compensate for loss of maternal contact. This contrasts with proximity-based measures, providing important nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Relationships with dominant males strengthen most following maternal loss. Both affiliative contact and proximity with dominant males increased significantly more for orphans than non-orphans, with the increase significantly greater than all other age-sex classes for contact, and greater than subordinate males for proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C137 provide detailed statistical evidence from GAMMs showing which relationships strengthen (Figure 3, Supplementary Table 6). Claims C146-C148 demonstrate that dominant males show the greatest increase, with appropriate statistical comparisons across age-sex classes. The pattern is consistent across both measures of affiliation, though with some differences in statistical significance for specific comparisons. The evidence strongly supports dominant males as primary sources of social support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C142",
+      "C143",
+      "C140",
+      "C141"
+    ],
+    "result": "Age-mates (within 2 years age difference) show greater increases in proximity with orphans after maternal loss (p=0.004), but not in affiliative contact (non-significant). The increase in proximity is smaller for older orphans (p=0.042), but age effects on contact are non-significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 provide clear statistical evidence from GAMMs (Table 5) showing differential effects by relationship type. Claims C140-C141 document age-dependent effects with appropriate statistical testing. The distinction between proximity and contact measures is important and well-documented. The statistical evidence is appropriately qualified, noting which effects are significant and which are not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C214"
+    ],
+    "result": "Subordinate adult males and subadult females increase affiliative contact with younger siblings following maternal loss, while siblings in other age-sex classes do not. This pattern is similar to that observed in chimpanzees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 provide statistical evidence from GAMMs showing significant interaction effects (Table 5). Claim C214 appropriately contextualizes this within comparative literature (citing Reddy and Mitani 2019 on chimpanzees). The specificity of the effect to certain age-sex classes is well-documented. However, the biological mechanisms (C215, C218-C220) remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C212",
+      "C213"
+    ],
+    "result": "Paternity does not influence social support from adult males after maternal loss (contact: p=0.262; proximity: p=0.583), but maternal siblings increase both contact (p<0.001) and proximity (p=0.028) more than non-siblings. This effect is driven primarily by subordinate males, while dominant males show similar support regardless of kinship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 provide clear statistical evidence on paternity and sibling effects from GAMMs. Claims C152-C153 appropriately decompose the sibling effect by male dominance status (Supplementary Table 7, Figure 3\u2014supplement 2). Claim C212 contextualizes this within prior findings on paternal care. The statistical evidence is strong, though the sample size for paternity analysis is limited (n=18 orphans with known paternity, C149).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C191"
+    ],
+    "result": "Binary degree (number of social connections) did not increase more for orphans than non-orphans in either contact or proximity networks, suggesting orphans strengthen existing bonds rather than forming new ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 provides statistical evidence from GAMMs (Supplementary Table 5). Claim C191 appropriately interprets this as strengthening existing relationships rather than forming new ones. This interpretation is logical given the increases in weighted degree without increases in binary degree. The distinction between relationship strength and number is important for understanding the social response mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "The extent to which orphans' relationships with other group members strengthened following maternal loss did not differ by orphan sex for either affiliative contact or proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 report non-significant sex effects from GAMMs (Table 5). This is important for demonstrating that social buffering occurs similarly for both sexes, despite sex differences in other outcomes (e.g., dispersal). The statistical testing is appropriate and the null result is clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C89",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C188",
+      "C237",
+      "C239",
+      "C240",
+      "C243"
+    ],
+    "result": "In mountain gorillas, maternal loss may be buffered by relationships within cohesive social groups, breaking the link between maternal loss, social adversity, and decreased fitness. This pattern resembles certain human populations and possibly killer whales, contrasting with most other social mammals where maternal loss causes considerable social adversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis result integrates findings across multiple fitness measures (survival, reproduction) and social network analyses. Claims C177-C180 summarize fitness effects, C188 and C239 note the absence of social adversity, and C240 identifies the buffering mechanism. Claims C237 and C243 appropriately contextualize within comparative literature. However, C178 and C238 acknowledge important limitations: longer-term reproductive effects cannot be ruled out, and direct causal links between social buffering and fitness outcomes are not established. The result is well-supported but appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C226",
+      "C238"
+    ],
+    "result": "Study limitations include: sample size (n=59 orphans) may limit detection of weak survival effects, though comparable studies found significant effects; social network analysis covers only 6 months post-loss; and direct causal links between social buffering and fitness cannot be demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately acknowledge study limitations. C154-C156 address statistical power concerns while contextualizing with comparative data. C226 notes the temporal limitation of social network analysis, though C227-C228 provide some evidence for longer-term persistence. C238 appropriately acknowledges the limitation in establishing causality between social changes and fitness outcomes. These are honest assessments of what the data can and cannot demonstrate.",
+    "result_type": "MINOR"
+  }
+]

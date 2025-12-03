@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Cell extrusion is a fundamental biological process for removing unwanted cells from tissues, initiated by various triggers including apoptotic signaling, oncogenic transformation, overcrowding, and replication stress. Despite its importance in developmental, homeostatic, and pathological processes including cancer metastasis, the underlying mechanical mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C16 establish the biological context and importance of cell extrusion through citations to established literature. Claim C17 accurately identifies the knowledge gap regarding mechanical mechanisms. These are well-supported background claims from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8"
+    ],
+    "result": "Current computational approaches to studying cell extrusion are limited by their two-dimensional nature, which fails to capture the inherently three-dimensional mechanical forces involved in this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7, and C8 collectively establish the motivation for the study by identifying limitations in current modeling approaches. These claims are supported by general knowledge of the field and accurately characterize the state of computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Cellular systems exhibit liquid crystal-like properties including nematic and hexatic order, with topological defects (\u00b11/2 defects and fivefold disclinations) that have been experimentally correlated with cell extrusion events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C18-C27 establish the theoretical framework by citing extensive prior experimental and theoretical work on liquid crystal properties in cellular systems and their relationship to extrusion. These background claims are well-supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The 3D phase-field simulations show that introducing self-propulsion forces pushes the system away from hexagonal equilibrium, generating half-integer nematic topological defects that spontaneously nucleate in pairs and follow chaotic trajectories, with emergent nematic symmetry despite polar cell propulsion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe simulation observations supported by data in Figures 2a-b and Appendix figures. The emergence of nematic defects from polar forces is validated against experimental observations and other models through appropriate citations. The characterization appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C37"
+    ],
+    "result": "Simulation results demonstrate that extrusion events are statistically correlated with both +1/2 and -1/2 topological defects, with Kolmogorov-Smirnov tests rejecting the null hypothesis of no correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C37 are supported by statistical analysis shown in Figure 2c-d and Appendix 1. The KS test provides appropriate statistical validation. The correlation is consistent with experimental observations (Saw et al., 2017), strengthening the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Cell extrusion in the simulations follows mechanical rather than geometrical routes, emerging from cells pushing and pulling on neighbors due to intrinsic activity, with coordination number remaining constant while projected area decreases prior to extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 establish that extrusion is mechanically driven rather than geometrically constrained. The findings that Lewis's law doesn't hold (C42-C43, Figure 3b) and that coordination number remains constant (C43) support this interpretation. The contrast with vertex models (C45) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C69",
+      "C70"
+    ],
+    "result": "By increasing the relative cell-cell to cell-substrate adhesion ratio (\u03a9), the cell monolayer switches between two distinct mechanical pathways for extrusion: from half-integer nematic defects at low \u03a9 to fivefold hexatic disclinations at high \u03a9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C69, and C70 describe the central finding regarding adhesion-dependent switching between extrusion mechanisms. This is supported by data in Figures 2d-e showing the shift in probability distributions with varying \u03a9. The result represents a novel prediction from the 3D model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C65",
+      "C66"
+    ],
+    "result": "Fivefold disclinations are energetically favored for stress relief on rigid substrates because they can form positive Gaussian curvature through buckling, while sevenfold disclinations require negative Gaussian curvature that the rigid substrate prevents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C65-C66 provide the theoretical explanation for why fivefold disclinations are preferred. The reasoning is supported by citations to established theory (Irvine et al., Landau et al., Seung and Nelson, etc.) and is consistent with the simulation setup.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "Cell extrusion acts as a mechanism to relieve localized stress concentration, with high out-of-plane shear stress and force chain-like stress pathways observed at extrusion sites, exhibiting large oscillations prior to extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50-C51, C53 describe stress field observations supported by data in Figure 4a-d. The 3D stress field analysis is a key capability of the model. The observation of force chains and stress oscillations is well-documented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "High out-of-plane shear stress concentration hinders collective cell migration, with cell extrusion providing a mechanism to re-establish normal migration patterns, analogous to plithotaxis where cells migrate along minimal in-plane shear stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 accurately cites prior work on plithotaxis. However, C55 is explicitly labeled as a conjecture by the authors. While the analogy is interesting and the association with high shear stress is demonstrated, the causal claim that extrusion 're-establishes the status quo' lacks direct validation and remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "There is a 5-fold asymmetry in stress intensity between the compressive region at the head of +1/2 defects compared to the tensile region at the tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by stress field analysis data shown in Figure 5c. The quantitative asymmetry measurement provides specific characterization of the stress distribution around nematic defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C76",
+      "C78"
+    ],
+    "result": "The study presents a 3D phase-field modeling framework that independently tunes cell-cell and cell-substrate adhesion forces, provides access to full 3D stress fields including out-of-plane components, and uses polarization dynamics based on contact inhibition of locomotion with parameters validated against epithelial layer data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C71, C76, C78 describe the modeling framework and methodology. The capabilities are demonstrated throughout the results. Parameter validation against prior work (C78, citing Balasubramaniam et al., 2021) provides appropriate justification for parameter choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "While simulations without cell proliferation may lose confluency at high extrusion rates, the identified mechanical routes to extrusion remain valid across both high and low extrusion conditions where confluency is maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 acknowledge a limitation of the model (lack of proliferation) while asserting robustness of the main findings. This is an appropriate caveat that doesn't undermine the core results, as the mechanisms are shown to operate across different conditions.",
+    "result_type": "MINOR"
+  }
+]

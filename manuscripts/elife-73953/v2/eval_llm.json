@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C70",
+      "C71"
+    ],
+    "result": "Arbidol inhibits ESCC cell proliferation, colony formation, and anchorage-independent growth in vitro with preferential toxicity toward cancer cells. IC50 values in ESCC cell lines (KYSE150: 57.54 \u03bcM at 24h, 26.37 \u03bcM at 48h; KYSE450: 54.72 \u03bcM at 24h, 20.75 \u03bcM at 48h) were lower than in normal esophageal cells (SHEE: 87.63 \u03bcM at 24h, 62.52 \u03bcM at 48h), and Arbidol dose-dependently inhibited proliferation, soft agar colony formation, and anchorage-dependent colony formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28, C70-C71 are well-supported by multiple complementary in vitro assays (IC50 determination, proliferation, soft agar, colony formation) shown in Figure 1. The data consistently demonstrate dose-dependent inhibition across multiple ESCC cell lines with appropriate controls. Statistical analyses are reported and the preferential toxicity toward cancer cells is supported by comparative IC50 values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Phosphoproteomics analysis reveals that Arbidol treatment downregulates 241 proteins and 340 phosphorylation sites, with DNA replication identified as the key affected pathway. MCM2 S108 phosphorylation was significantly downregulated after Arbidol treatment, confirmed by both mass spectrometry and western blot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by comprehensive phosphoproteomics data (Figure 2) with appropriate KEGG pathway enrichment analysis and orthogonal validation by western blot. The mass spectrometry data have been deposited in a public repository (PXD034944), enhancing reproducibility. The convergence of unbiased proteomics and targeted validation strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Arbidol directly binds to ATR kinase at ASN 2346 and HIS 2361 residues. This was demonstrated through computational docking, pull-down mass spectrometry identifying 906 candidate targets, direct pull-down assays with purified ATR protein and cell lysates, and site-directed mutagenesis showing reduced binding when these residues are mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C36-C40, C86-C88 are well-supported by multiple orthogonal approaches including computational docking (Figure 3a), pull-down MS, in vitro pull-down assays with purified protein (Figure 3b-d), and functional validation through mutagenesis (Figure 3e). The convergence of computational prediction, biochemical binding assays, and mutational analysis provides strong evidence for direct ATR-Arbidol interaction at the specified residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C99"
+    ],
+    "result": "Arbidol inhibits ATR kinase activity as an ATP-competitive inhibitor, reducing MCM2 phosphorylation. In vitro kinase assays demonstrate that Arbidol treatment reduces MCM2 phosphorylation levels, and ATP competition assays confirm that Arbidol functions as an ATP-competitive inhibitor of ATR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C99 are supported by direct biochemical evidence from in vitro kinase assays (Figure 3f) and ATP competition assays (Figure 3g). The demonstration that Arbidol reduces ATR-mediated MCM2 phosphorylation in a cell-free system and competes with ATP provides strong mechanistic evidence. However, the kinetic parameters (Ki, IC50 for kinase activity) are not reported, which would strengthen the characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C83",
+      "C98"
+    ],
+    "result": "Arbidol induces G1-phase cell cycle arrest and reduces S-phase progression in ESCC cells in a dose-dependent manner. Western blot analysis shows dose-dependent reduction in MCM2 S108 phosphorylation, and flow cytometry demonstrates that Arbidol strongly reduces the S-phase fraction while increasing G1-phase arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C47, C83, C98 are supported by western blot data (Figure 4b) and flow cytometry analysis (Figure 4c) showing dose-dependent effects on cell cycle distribution. The data are consistent across two ESCC cell lines with appropriate statistical analysis. The connection between reduced MCM2 phosphorylation and cell cycle arrest is mechanistically plausible given MCM2's role in DNA replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C57",
+      "C58"
+    ],
+    "result": "Arbidol specifically targets ATR rather than other cell cycle kinases (CDK2, CDK4, CDK6), and the G1-phase arrest occurs independently of the CDK/RB1 signaling pathway. Pull-down assays show no binding to CDK2, CDK4, or CDK6, and phosphorylated RB1 levels (S204, S807, T826) remain unchanged after Arbidol treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C57-C58 are supported by negative control experiments (Figure 4\u2014figure supplement 2) showing lack of binding to CDKs and unchanged RB1 phosphorylation. These controls are important for establishing specificity and ruling out alternative mechanisms for the observed G1 arrest. The logic connecting these observations to ATR-specific targeting is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "ATR expression correlates with esophageal cancer and is functionally important for ESCC cell growth. Bioinformatic analysis shows high correlation between ATR and MCM2 expression and elevated ATR in esophageal cancer. ATR knockdown significantly reduces ESCC cell growth, and the inhibitory effect of Arbidol is reduced in ATR knockdown cells, demonstrating that Arbidol's effects are ATR-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by bioinformatic analysis (Figure 5a-c), genetic knockdown experiments (Figure 5d-f), and rescue experiments (Figure 5g). The demonstration that ATR knockdown phenocopies Arbidol treatment and that Arbidol's effects are diminished in ATR knockdown cells provides strong genetic evidence for on-target activity. The use of two independent shRNAs strengthens confidence in the specificity of the knockdown effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C72",
+      "C100"
+    ],
+    "result": "Arbidol inhibits ESCC tumor growth in vivo using a patient-derived xenograft (PDX) model. Treatment with Arbidol (100 mg/kg and 400 mg/kg) effectively reduced tumor volume and weight without affecting body weight. Immunohistochemical analysis confirmed reduced MCM2 S108 phosphorylation and Ki67 proliferation marker expression in treated tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C72, C100 are supported by PDX model experiments (Figure 6) with appropriate group sizes (n=7 per group), dose-response relationship, and histological validation. The lack of body weight changes suggests acceptable tolerability. However, the study uses only one PDX model (EG20), which limits generalizability. Additional PDX models or cell line xenografts would strengthen the in vivo evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C84",
+      "C85",
+      "C95",
+      "C96"
+    ],
+    "result": "Arbidol inhibits ESCC growth through the ATR/MCM2 signaling axis, affecting DNA replication and cell cycle progression. The authors propose that Arbidol binds ATR, reduces MCM2 S108 phosphorylation, decreases S-phase progression, and induces G1-phase arrest, ultimately inhibiting ESCC proliferation in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C84-C85, C95-C96 represent the integrated mechanistic model supported by the collective evidence from phosphoproteomics, biochemical binding assays, kinase assays, cell cycle analysis, genetic validation, and in vivo studies. While C84 is explicitly labeled as speculation by the authors, the overall model is well-supported by the convergence of multiple lines of evidence. The mechanistic pathway from ATR inhibition to reduced MCM2 phosphorylation to cell cycle arrest is biologically plausible and experimentally supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Both Cdc7 and ATR can phosphorylate MCM2 at Ser108, but Cdc7 does not directly bind to Arbidol. Pull-down assays demonstrated that while ATR binds Arbidol, Cdc7 does not, helping to identify ATR as the relevant target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by literature citations for the ability of both kinases to phosphorylate MCM2 S108, and by experimental data (Figure 2\u2014figure supplement 1) showing lack of Cdc7 binding to Arbidol. This negative control is important for narrowing down the mechanism and identifying ATR as the specific target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Arbidol could be considered a promising chemoprevention drug against ESCC based on its efficacy in vitro and in vivo without significant toxicity (no body weight changes in treated animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 represents a translational conclusion that extends beyond the presented data. While the in vitro and in vivo efficacy data are solid, and the lack of body weight changes is encouraging, comprehensive toxicity assessment, pharmacokinetic studies, and clinical trials would be required to support this claim. The concentrations used in vitro (IC50 ~20-60 \u03bcM) are relatively high, raising questions about achievable therapeutic concentrations in humans. This represents a reasonable hypothesis for future work rather than a supported conclusion from the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims establishing the clinical significance of ESCC, current treatment approaches, and the rationale for drug repurposing. These include epidemiological data on esophageal cancer incidence and mortality, the prevalence of ESCC in China, current treatment options, poor survival rates, and examples of successful drug repurposing for cancer chemoprevention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 are background/contextual claims supported by appropriate literature citations. These establish the clinical need and rationale for the study. While we cannot verify the accuracy of all cited sources, the claims are consistent with general knowledge about ESCC epidemiology and treatment, and the citations appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Background claims about ATR, MCM2, cell cycle regulation, and the therapeutic potential of ATR inhibitors. These include ATR's role in DNA replication and damage response, MCM2's function in DNA replication, the role of CDKs and RB1 in cell cycle control, and the status of ATR inhibitors in clinical development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18, C46, C48-C50, C53-C56, C74-C82, C89-C94 are background/mechanistic claims supported by appropriate literature citations. These provide the biological context for interpreting the experimental findings. The claims are consistent with established knowledge in the field and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Arbidol was identified through FDA-approved drug screening as an effective inhibitor of ESCC proliferation in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by the described screening approach and subsequent validation experiments. However, details about the screening methodology, library size, hit selection criteria, and other hits identified are not provided, which limits full evaluation of the screening approach.",
+    "result_type": "MINOR"
+  }
+]

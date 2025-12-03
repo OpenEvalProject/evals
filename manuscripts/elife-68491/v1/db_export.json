@@ -1,0 +1,1891 @@
+{
+  "submission": {
+    "id": "57f5b28b-bd4f-4e44-bf79-62422c75298b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:21:43.020188Z",
+    "updated_at": "2025-12-03T07:21:43.020188Z"
+  },
+  "content": [
+    {
+      "id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "submission_id": "57f5b28b-bd4f-4e44-bf79-62422c75298b",
+      "content_type": "manuscript",
+      "content_text": "# Separable neural signatures of confidence during perceptual decisions\n\n## Authors\n\n- Tarryn Balsdon<sup>1</sup> ([ORCID: 0000-0002-3122-6630](https://orcid.org/0000-0002-3122-6630)) \u2020\n- Pascal Mamassian<sup>1</sup> ([ORCID: 0000-0002-1605-4607](https://orcid.org/0000-0002-1605-4607))\n- Valentin Wyart<sup>2</sup> ([ORCID: 0000-0001-6522-7837](https://orcid.org/0000-0001-6522-7837))\n\n### Affiliations\n\n1. Laboratoire des Syst\u00e8mes Perceptifs (CNRS UMR 8248), DEC, ENS, PSL University Paris France\n2. Laboratoire de Neurosciences Cognitives et Computationnelles (Inserm U960), DEC, ENS, PSL University Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nPerceptual confidence is an evaluation of the validity of perceptual decisions. While there is behavioural evidence that confidence evaluation differs from perceptual decision-making, disentangling these two processes remains a challenge at the neural level. Here, we examined the electrical brain activity of human participants in a protracted perceptual decision-making task where observers tend to commit to perceptual decisions early whilst continuing to monitor sensory evidence for evaluating confidence. Premature decision commitments were revealed by patterns of spectral power overlying motor cortex, followed by an attenuation of the neural representation of perceptual decision evidence. A distinct neural representation was associated with the computation of confidence, with sources localised in the superior parietal and orbitofrontal cortices. In agreement with a dissociation between perception and confidence, these neural resources were recruited even after observers committed to their perceptual decisions, and thus delineate an integral neural circuit for evaluating perceptual decision confidence.\n\n## Introduction\n\nWhilst perception typically feels effortless and automatic, it requires probabilistic inference to resolve the uncertain causes of essentially ambiguous sensory input (Helmholtz, 1856). Human observers are capable of discriminating which perceptual decisions are more likely to be correct using subjective feelings of confidence (Pollack and Decker, 1958). These feelings of perceptual confidence have been associated with metacognitive processes (Fleming and Daw, 2017) that enable self-monitoring for learning (Veenman et al., 2004) and communication (Bahrami et al., 2012; Frith, 2012). We are only just beginning to uncover the complex functional role of metacognition in human behaviour, and outline the computational and neural processes that enable metacognition. The study of perceptual confidence offers promising insight into metacognition, because one can use our detailed knowledge of perceptual processes to isolate factors which affect the computation of perceptual confidence.\n\nAt the computational level, perceptual decisions are described by sequential sampling processes (Ratcliff, 1978; Vickers, 1970), in which noisy samples of evidence are accumulated over time, until there is sufficient evidence to commit to a decision. The most relevant information for evaluating perceptual confidence is the quantity and quality of evidence used to make the perceptual decision (Kepecs et al., 2008; Moreno-Bote, 2010; Vickers, 1979). At the neural level, perceptual confidence could therefore follow a strictly serial circuit: Relying only on information computed by perceptual processes, with any additional processes contributing only to transform this information for building the confidence response required by the task. Indeed, confidence (or a non-human primate proxy for confidence) can be reliably predicted from the firing rates of neurons coding the perceptual decision itself (Kiani and Shadlen, 2009), suggesting that confidence may be a direct by-product of perceptual processing. However, a large body of behavioural studies suggest that the computation of confidence is not strictly serial. Confidence can integrate additional evidence after the observer commits to their perceptual decision (Pleskac and Busemeyer, 2010; Baranski and Petrusic, 1994), and while this continued evidence accumulation could incorporate only perceptual information, it implies that confidence evaluation does not directly follow from perceptual decision commitment (and therefore involves at least partially dissociable neural processes).\n\nThere is also evidence that perceptual confidence can rely on separate (non-perceptual) sources of information, such as decision time (Kiani et al., 2014) and attentional cues (Denison et al., 2018). This suggests that the processes involved in the computation of perceptual confidence may not be reduced to the same processes as for the perceptual decision. Higher\u00a0order theories of metacognition propose a framework in which specialised metacognitive resources could be recruited for computing confidence across all forms of decision-making (a general metacognitive mechanism). Indeed, there is some evidence that confidence precision is correlated across different cognitive tasks (such as memory and perception; Mazancieux et al., 2020), suggesting a common source of noise affecting the computation of confidence across tasks (on top of the sensory noise; Bang et al., 2019; Shekhar and Rahnev, 2021).\n\nIt is reasonable to expect that a general metacognitive mechanism relies on processing in higher order brain regions. Several experiments have linked modulations in confidence with activity in a variety of subregions of the prefrontal cortex (including the orbitofrontal cortex, Lak et al., 2014; Masset et al., 2020; right frontopolar cortex, Yokoyama et al., 2010; rostro-lateral prefrontal cortex, Fleming et al., 2012; Geurts et al., 2021; Cortese et al., 2016; see also Vaccaro and Fleming, 2018, for a meta-analysis). Moreover, disrupting the processing in subregions of the prefrontal cortex (Fleming et al., 2014; Lak et al., 2014; Rounis et al., 2010) tends to impair (though not obliterate) the ability to appropriately adjust behavioural confidence responses, whilst leaving perceptual decision accuracy largely unaffected (although these results can be difficult to replicate, Bor et al., 2017; Lapate et al., 2020, and may not generalise to metacognition for memory; Fleming et al., 2014). A challenge in this literature is in specifically relating the neural processing to the computation of confidence, as opposed to transforming confidence into a behavioural response, or a downstream effect of confidence, such as the positive valence (and sometimes reward expectation) accompanying correct decisions. Moreover, identifying how these neural mechanisms could be separable from the underlying perceptual processes is important for understanding the computational architecture of metacognition.\n\nOne promising avenue of research for separating the mechanisms of metacognition from perceptual processes has been to utilise tasks where the observer may integrate additional evidence for confidence after they have committed to their perceptual decision (Fleming et al., 2018; Murphy et al., 2015), which presumably relies on processing independent of the perceptual decision. These studies show that post-decisional changes in confidence magnitude correlate with signals from the posterior medial frontal cortex. However, these signals could reflect processes occurring downstream of confidence, such as an emotional response to the error signal, which has been shown to drive medial frontal activity more strongly than decision accuracy (Gehring and Willoughby, 2002). Further research is therefore required to link neural processes specifically with the computation of perceptual confidence.\n\nIn this experiment, we aim to identify the neural processes specifically contributing to the computation of confidence, in a paradigm in which these processes can be delineated from those of perceptual decision-making. We exploit a protracted decision-making task in which the evidence presented to the observer can be carefully controlled. On each trial, the observer is presented with a sequence of visual stimuli, oriented Gabor patches, which offer a specific amount of evidence towards the perceptual decision. The orientations are sampled from one of two overlapping circular Gaussian distributions, and the observer is asked to categorise which distribution the orientations were sampled from. We manipulate the amount of evidence presented such that the observer tends to covertly commit to their perceptual decision before evidence presentation has finished, whilst continuing to monitor ongoing evidence for assessing their confidence (Balsdon et al., 2020). These covert decisions are evident from behaviour and computational modelling, and we show similarities between the neural processes of decision-making across conditions of immediate and delayed response execution.\n\nTo examine the computation of confidence, we compare human behaviour to an optimal observer who perfectly accumulates all the presented evidence for perceptual decisions and confidence evaluation. The optimal observer must accurately encode the stimulus orientation, the decision update relevant for the categorisation, and add this to the accumulated evidence for making the perceptual decision. We uncover dynamic neural representations of these variables using model-based electroencephalography (EEG), and examine how the precision of these representations fluctuate with behavioural precision. We find two distinct representations of the accumulated evidence. The first one reflects the internal evidence used to make perceptual decisions. The second representation reflects the internal evidence used to make confidence evaluations (separably from the perceptual evidence), and is localised to the superior parietal and orbitofrontal cortices. Whilst the perceptual representation is attenuated following covert decisions, the confidence representation continues to reflect evidence accumulation. This is consistent with a neural circuit that can be recruited for confidence evaluation independently of perceptual processes, providing empirical evidence for the theoretical dissociation between perception and confidence.\n\n## Results\n\n### Preview\n\nWe present analyses to address two key hypotheses in this experiment: First, that observers are prematurely committing to their perceptual decisions whilst continuing to monitor additional evidence for evaluating their confidence. And second, that there are separable neural signatures of the evaluation of confidence during perceptual decision-making. To address the first hypothesis, we use a combination of behavioural analyses and computational modelling, and in addition, show that the EEG signatures of response preparation are triggered from the time of decision commitment, even when this occurs seconds prior to the response cue. To address the second hypothesis, we use the stimulus evoked responses in EEG to trace the representation of the presented evidence throughout each trial. We show that these neural representations of the optimal accumulated decision evidence are less precise when the observers\u2019 behavioural responses were also less precise relative to optimal. We use this to isolate clusters of activity that specifically reflect the internal evidence used for observers\u2019 confidence evaluations beyond the presented evidence. We then localise the sources of this activity, and relate these processes back to observers\u2019 eventual confidence ratings.\n\n### The computational architecture of perceptual confidence\n\nHuman observers (N = 20) performed two versions of the task whilst EEG was recorded. Across the two tasks, 100 predefined sequences of oriented Gabors were repeated for each observer, with stimuli presented as described in Figure 1a. In the Free task, the sequence continued until observers entered their perceptual decision (Figure 1b), indicating which category (Figure 1d) they thought the orientations were sampled from. Observers were instructed to enter their response as soon as they \u2018felt ready\u2019, on three repeats of each predefined sequence (300 trials in total). In the Replay task (Figure 1c), observers were shown a specific number of samples and could only enter their response after the response cue. After entering their perceptual decision, they made a confidence evaluation, how confident they were that their perceptual decision was correct, on a four-point scale. Importantly, the number of samples shown in the Replay task was manipulated relative to the Free task, in three intermixed conditions: in the Less condition, they were shown two fewer than the minimum they had chosen to respond to over the three repeats of that predefined sequence in the Free task; in the Same condition, they were shown the median number of samples; and in the More condition, four more than the maximum. The variability across repeats in the Free task means that in the More condition, observers were show at least four additional stimuli, but often more than that. There is an optimal way to perform this task, in the sense of maximising perceptual decision accuracy across trials. The optimal computation takes as decision evidence the log probability of each orientation given the category distributions (Figure 1d) and accumulates the difference in this evidence for each category (Figure 1e, Drugowitsch et al., 2016). We refer to the accumulated difference in log probabilities as the optimal presented evidence, L. Human observers may have a suboptimal representation of this evidence, L*, and we estimate the contribution of different types of suboptimalites (specifically, inference noise, and a temporal integration bias) with the help of a computational model (full details in Materials\u00a0and\u00a0methods and Appendix 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68491/elife-68491-fig1-v1.jpg)\n\n**Figure 1.:** (a) Stimulus presentation: stimuli were presented at an average rate of 3 Hz, but with variable onset and offset ($vs\\in83,133$\u00a0ms,\u00a0$vs_{s}+ve_{s-1}\\geq216$\u00a0ms; see Materials\u00a0and\u00a0methods). Stimuli were presented within a circular annulus which acted as a colour guide for the category distributions. The colour guide and the fixation point were present throughout the trial. (b) Free task: on each trial observers were presented with a sequence of oriented Gabors, which continued until the observer entered their response (or 40 samples were shown). 100 sequences were predefined and repeated three times. (c) Replay task: The observer was presented with a specific number of samples and could only enter their response after the cue (fixation changing to red). The number of samples (x) was determined relative to the number the observer chose to respond to on that same sequence in the Free task (p). There were three intermixed conditions, Less (x = pmin \u2013 2; where pmin is the minimum p of the three repeats), Same (x = pmed; where pmed is the median p) and More (x = pmax + 4; where pmax is the maximum p of the three repeats of that predefined sequence). (d) Categories were defined by circular Gaussian distributions over the orientations, with means -45\u00b0 ($\u03c8_{1}$, blue) and 45\u00b0 ($\u03c8_{2}$, orange), and concentration\u00a0$\u03ba=0.5$. The distributions overlapped such that an orientation of 45\u00b0 was most likely drawn from the orange distribution but could also be drawn from the blue distribution with lower likelihood. (e) The optimal observer accumulates the difference in the evidence for each category, which is defined as the log probability of the sample orientation ($\\theta$) given the distributions. The perceptual decision is determined by the sign of the accumulated evidence, where the evidence accumulated across more samples better differentiates the true categories (example evidence traces are coloured by the true category).\n\nBased on our previous findings (Balsdon et al., 2020), we expected observers to prematurely commit to perceptual decisions in the More condition, whilst continuing to monitor sensory evidence for evaluating their confidence. Replicating these previous results (Balsdon et al., 2020), we found that perceptual decision sensitivity (d\u2019) was significantly decreased with just two fewer stimuli in the Less condition compared to those same (pmin) trials in the Free task (Wilcoxon sign rank Z = 3.88, p < 0.001, Bonferroni corrected for three comparisons), but four additional stimuli in the More condition resulted in only a small but not significant increase compared to the pmax trials in the Free task (Z = -1.53, p = 0.13, uncorrected). There was also no significant difference for the Same condition (Z = 1.21, p = 0.23, uncorrected; Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68491/elife-68491-fig2-v1.jpg)\n\n**Figure 2.:** (a) Proportion correct in each condition of the Replay task, relative to the Free task (orange horizontal lines). Individual data are shown in scattered points, error bars show 95% between- (thin) and 95% within- (thick) subject confidence intervals. Open red markers show the model prediction. (b) Distributions of the number of samples per trial in the Free task, and Replay task conditions (over all observers).\u00a0(c) Difference in log-likelihood of the models utilising a covert bound relative to the models with no covert bound. On the left, the model fitting perceptual decisions only. The middle bar shows the difference in log-likelihood of the fit to confidence ratings with identical perceptual and confidence bounds. The right bar shows the difference in log-likelihood of the fit to confidence ratings of the model with an independent bound for confidence evidence accumulation. Error bars show 95% between-subject confidence intervals. (d) The computational architecture of perceptual and confidence decisions, based on model comparison. Perceptual and confidence decisions accumulate the same noisy perceptual evidence, but confidence is affected by additional noise ($\\epsilon_{c}$) and a separate temporal bias ($\\alpha_{c}$). This partial dissociation allows confidence\u00a0evidence accumulation to continue after the observer has committed to a perceptual decision. (e) Predicted proportion correct compared to actual proportion correct for each observer, based on the fitted model parameters of the final computational model. The left panel shows proportion correct split by condition, and the right, split by confidence rating. (f) Regression coefficients from the GLM analysis showing the relationship between the optimal evidence L, and observers\u2019 perceptual (top) and confidence (bottom) responses for trials split by condition. The right set of bars show the same analysis but with evidence accumulated up to four samples from the response cue.\n\nThis lack of substantial increase in performance in the More condition could be the result of either a performance ceiling effect or a premature commitment to the perceptual decision. The former explanation reflects a limitation of the perceptual evidence accumulation process, whereas the latter refers to an active mechanism that ignores the final sensory evidence. We compared these two hypotheses using a computational modelling approach (Balsdon et al., 2020; see Materials\u00a0and\u00a0methods). Specifically, we compared a model in which performance in the More condition is limited by the suboptimalities evident from the Same and the Less conditions (inference noise, and temporal integration bias, see Materials\u00a0and\u00a0methods and Appendix 1), to a model in which performance could be impacted by a covert bound at which point observers commit to a decision irrespective of additional evidence. Cross-validated model comparison provided significant evidence that observers were implementing a covert bound (mean relative increase in model log-likelihood = 0.048, bootstrapped p = 0.001, Figure 2c). The winning model provided a good description of the data (red open markers in Figure 2a, and individual participants in Figure 2e).\n\nIn contrast to what we found for the perceptual decision, there was no evidence that observers were implementing a covert bound on confidence: Implementing the same bound as the perceptual decision did not improve the fit (relative improvement with bound = \u22120.007, bootstrapped p = 0.11, uncorrected) and an independent bound actually significantly reduced the fit compared to continued accumulation (relative improvement = \u22120.014, p = 0.022, Bonferroni corrected for two comparisons; Figure 2c). We obtained further distinctions between perceptual and confidence processes through computational modelling: additional noise was required to explain the confidence ratings, along with a separate temporal bias. The best description of both perceptual and confidence responses was provided by a partially dissociated computational architecture (full details in Appendix 1), where perceptual and confidence decisions are based on the same noisy representation of the sensory evidence, but confidence accumulation incurs additional noise and can continue after the completion of perceptual decision processes (Figure 2d, and the predictions of this model for individual participants are show in Figure 2e). These computational differences between perceptual decisions and confidence evaluations suggest deviations between the internal evidence on which observers base their perceptual and confidence decisions (see Appendix 2 for model simulations).\n\nThese modelling results are supported by an analysis using general linear models to examine the relationship between the optimal presented evidence, L, and observers\u2019 behaviour in the perceptual decision and confidence evaluation. As stated above, L is the evidence that which maximises the probability of a correct response: the accumulated difference in the log probabilities of the presented orientations given the category distribution (Figure 1e). First, we find the presented evidence accumulated over all samples does explain substantial variance in observers\u2019 perceptual decisions (average $\\beta$\u00a0= 0.77, t(19) = 6.48, p < 0.001), and confidence evaluations (with the evidence signed by the perceptual response; $\\beta$\u00a0= 0.24, t(19) = 6.46, p < 0.001). This suggests that the internal evidence that observers were using to make their responses, L*, correlated significantly with the optimal evidence L (as has been found previously; Drugowitsch et al., 2016). Second, the total accumulated evidence in the More condition was not a significantly better predictor of the observers\u2019 perceptual decisions than the evidence up to four samples prior to the response (average difference in $\\beta$\u00a0= 0.034, t(19) = 1.63, p = 0.12), while for the Same and Less conditions the total accumulated evidence was a significantly better predictor (Less: t(19) = 4.99, p < 0.001; Same: t(19) = 3.11, p = 0.006; causing a significant interaction between condition and sample accumulated to F(2,38) = 10.348, p = 0.001, Bonferroni corrected for three comparisons, Figure 2f, top). This supports the finding from model comparison and behaviour that observers implemented a covert bound on perceptual evidence accumulation. And finally, this interaction was not present when examining how the presented evidence affected confidence evaluations (F(2,38) = 3.124, p = 0.09, uncorrected, Figure 2f, bottom). Rather, the accumulated evidence up to the final sample in the More condition was a significantly better predictor of confidence than the evidence accumulated to four samples from the response (average difference in $\\beta$\u00a0= 0.26, t(19) = 5.33, p < 0.001), supporting the prediction from the computational model analysis that observers integrated all the presented evidence for evaluating confidence.\n\n### EEG signatures of premature perceptual decision commitment\n\nThe analysis of behaviour and computational modelling so far has suggested that observers were committing to their perceptual decisions early in the More condition and ignoring the additional evidence for their perceptual decision. We questioned the extent of this covert decision commitment, that is, whether observers were going as far as to plan their motor response before the response cue. We examined the neural signatures of the planning and execution of motor responses using a linear discriminant analysis of the spectral power of band-limited EEG oscillations (see Materials\u00a0and\u00a0methods). Initial analysis suggested the spectral power in the 8\u00a0to\u00a032 Hz frequency range (the \u2018alpha\u2019 and \u2018beta\u2019 bands) could be used to classify perceptual decisions based on lateralised differences over motor cortex (Appendix 5). A classifier was trained to discriminate observers\u2019 perceptual decisions at each time-point in a four second window around the response in the Free task (3 s prior to 1 s after). This classifier was then tested across time in each condition of the Replay task, to trace the progression of perceptual decision-making in comparison to the Free task (where decisions are directly followed by response execution). If covert decisions lead to early motor response preparation, we would expect asymmetries in cross-classification performance on trials where the observer was likely to have covertly committed to a decision (in the More condition) compared to those trials in which they were unlikely to have committed to their decision (in the Less condition). Indeed, there were opposite asymmetries in the cross-classification of the Less and the More conditions (Figure 3a). Statistical comparison revealed substantial clusters of significant differences (Figure 3b): Training around \u22120.78 to 0.44 s from the time of the response in the Free task led to significantly better accuracy testing in the More condition than in the Less condition, prior to when the response was entered (for the cluster testing at \u22122.5 to \u22121.6 s Zave = 2.04, pcluster = 0.002; testing at \u22121.5 to \u22121 s, Zave = 1.95, pcluster = 0.01; testing at \u22120.8 to \u22120.3, Zave = 2.32, pcluster < 0.001). This pattern of findings suggests that observers were not only committing to their perceptual decision early, but already preparing their motor response.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68491/elife-68491-fig3-v1.jpg)\n\n**Figure 3.:** (a). Classifier AUC training at each time-point in the Free task and testing across time in the Less (top), Same (middle), and More (bottom) conditions of the Replay task. Black contours encircle regions where the mean is 3.1 standard deviations from chance (0.5; 99% confidence). (b) Difference in AUC between the More and Less conditions. Cluster corrected significant differences are highlighted. (c) The relationship between the evidence accumulated up to n samples prior to the response cue and the strength of the neural signature of response execution in each condition. Error bars show 95% within- (thick) and between-subject (thin) confidence intervals.\n\nAs an exploratory analysis, we took the strength of the classifier prediction trained and tested at the time of the response as a trial-wise measure of the decision variable used by the participant to enter a response. We reasoned that the amount of evidence in favour of the decision could influence the assiduity with which observers enter their response. We found that the optimal evidence L, accumulated over all samples, could predict the strength of the classifier prediction at response time (mean $\\beta$\u00a0= 0.11, t(19) = 3.89, p < 0.001; Figure 3c). For the Same and Less conditions, the weight on the accumulated evidence appeared to decrease as evidence was accumulated to samples further prior from the response. But, in the More condition, the evidence accumulated up to four samples prior to the response still predicted the strength of the classifier prediction (t(19) = 3.81, p = 0.001). This difference between conditions over samples is evidenced by a significant interaction based on a repeated measures ANOVA (F(8,152) = 2.429, p = 0.05, after Bonferroni correction for three comparisons). Leading up to the response, the accumulated evidence becomes increasingly predictive of the strength of the classifier prediction, except in the More condition, where this prediction is already accurate up to four samples prior to the response: After committing to a perceptual decision, the observer\u2019s perceptual response is no longer influenced by additional evidence.\n\n### Representations of decision evidence in EEG signals\n\nOur main goal was to isolate the neural signatures of the computation of confidence. Observers\u2019 behaviour varied with the optimal evidence L presented to them, but the internal evidence on which they based their perceptual decisions and confidence evaluations, L*, clearly deviated from L. In other words, the observers\u2019 behavioural performance was not optimal. To identify the neural computations underlying human behaviour, we therefore began by isolating the neural signals which correlate with L. We then isolated where and when deviations in the neural representation of L covary with deviations in L* - the internal evidence reflected in observers\u2019 behaviour.\n\nTo perform this task the optimal observer must encode the orientation of the stimulus, estimate the decision update based on the categories, and add this to the accumulated evidence for discriminating between the categories (Wyart et al., 2012; Wyart et al., 2015). We examined the neural representation of these optimal variables using a regression analysis with the EEG signals (evoked response, bandpass filtered between 1 and 8 Hz, see Materials\u00a0and\u00a0methods). At each time point, we used the relationship between the pattern of neural activity and the encoding variables on 90% of the data to predict the encoding variables on the remaining 10% of the data (10-fold cross validation). The precision of the neural representation was calculated as the correlation between the predicted encoding variable and actual encoding variable in the held-out data, across all 10 folds (see Materials\u00a0and\u00a0methods). Figure 4a shows the time course of the precision of the neural representation of stimulus orientation, momentary decision update, and accumulated evidence (L), locked to stimulus onset. The precision of the representations of these variables showed distinct time courses and relied on distinct patterns of EEG activity over scalp topography (Figure 4b). There was a transient representation of stimulus orientation localised over occipital electrodes. The representation of the momentary decision update was maintained for a longer duration, initially supported by occipital electrodes, then increasingly localised over central-parietal electrodes. The representation of the accumulated evidence was sustained even longer and relied on both frontal and occipital electrodes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68491/elife-68491-fig4-v1.jpg)\n\n**Figure 4.:** (a) Representation precision (Fischer transformed correlation coefficient, z) of stimulus orientation (blue, left), momentary decision update (green, middle), and accumulated decision evidence (purple, right). The encoded variables are shown in the insets (the accumulated evidence is the cumulative sum of the momentary evidence signed by the response, only one example sequence is shown). Shaded regions show 95% between-subject confidence intervals. (b) Relative electrode representation precision over three characteristic time windows (100\u2013200 ms, left; 400\u2013600 ms, middle; and 600\u2013800 ms, right). (c) Representation precision for epochs leading to optimal and suboptimal perceptual (T1) and confidence (T2) responses. Lighter lines show perceptual decisions that match the optimal response, dashed lines show suboptimal confidence ratings. Dashed red horizontal lines show significant interactions between perceptual and confidence suboptimality. The light red horizontal line shows the significant effect of suboptimal perception and the dark red horizontal line shows the significant effect of suboptimal confidence. Shaded regions show 95% within-subject confidence intervals. (d) Difference in decoding precision between the More and the Less conditions for epochs corresponding to the last four samples of the trial. The purple horizontal line shows the significant difference in decoding of accumulated evidence.\n\nThe internal evidence on which observers base their response, L*, can differ from the optimal evidence, L. When the eventual behavioural response differs from that predicted by L, L* is likely to be more different from L. A neural representation of L that reflects L* (that is, reflecting the underlying processing responsible for behaviour) should also be less precise for samples in these trials. For each variable, we estimated the representation precision separately for epochs leading to behavioural responses that differed from the optimal response (based on L), and responses that matched those of the optimal observer (Replay task epochs only; Figure 4c; Appendix 3). For perceptual decisions, the optimal observer responds with the correct category. For confidence evaluations, the optimal observer gives high confidence on trials with greater than the median evidence (over all trials) for their perceptual response. The precision of the representation of stimulus orientation did not significantly vary based on whether behaviour matched the optimal response. The representation precision of the momentary decision update showed a significant effect for the perceptual decision from 380 to 468 ms (Favg(1,19) = 7.97, pcluster = 0.008) and a significant interaction between perceptual and confidence responses from 396 to 468 ms (Favg(1,19) = 6.66, pcluster = 0.022) and from 716 to 856 ms (Favg(1,19) = 10.75, pcluster < 0.001). The largest effects were seen in the representation precision of the accumulated evidence. Representation precision was significantly reduced in epochs leading to non-optimal perceptual decisions from 108 ms post stimulus onset to the end of the epoch (Favg(1,19) = 13.65, pcluster <0.001). In addition, there was a significant interaction with confidence from 696 to 836 ms (Favg(1,19) = 8.72, pcluster = 0.005). The precision of the EEG representations therefore showed distinct associations with behaviour.\n\nThe presence of a covert bound implies that, after the observer commits to a decision, they no longer incorporate additional evidence for that decision. We should therefore see significant decreases in the precision of representations that specifically contribute to perceptual evidence accumulation. Indeed, the precision of the early representation of accumulated evidence was significantly attenuated for the last four samples of the More condition (in which observers were likely to have already committed to a decision), compared to the last four samples of the Less condition (where observers were unlikely to have committed to a decision; from the start of the epoch to 424 ms, Figure 4d; tavg(19) = \u22125.19, pcluster<0.001). These differences in representation precision were not present for the encoding of stimulus orientation, nor the decision update, suggesting that these processes may reflect input to perceptual evidence accumulation, but not the accumulation process itself. As a control analysis, this decreased precision was not evident in a comparison of the first four samples (Appendix 6), suggesting this effect on the representation of accumulated evidence is specific to those samples likely to have occurred after perceptual decision commitment, as opposed to those samples in More condition trials per se. Together, these comparisons suggest that different aspects of these evolving EEG representations of decision variables are related to the neural processes for perception and confidence.\n\n### Neural processes for confidence\n\nThe analysis above shows that the EEG representation of accumulated evidence reflected greater differences from the optimal presented evidence L in trials where behaviour does not match the optimal response. This suggests that the corresponding neural signals reflect more closely L* (the internal evidence actually used by observers to decide) than L. To isolate the neural signals which reflect L*, we assume that L* approximates L with normally distributed errors, and that these errors have larger variance on trials leading to responses that do not match the optimal evidence L (a similar approach as in van Bergen et al., 2015). We used multivariate Bayesian scan statistics (Neill, 2011; Neill, 2019) to cluster signals in space (electrode location) and time where the variance from L in the neural representation corresponded to deviations in L*, based on behaviour. The statistic tested whether the variability in the neural representation was related to L* to a greater extent than could be explained by measurement noise alone (see Appendix 7 for further details). In this way, the statistic isolates signals more closely related to L* than can be explained by L, taking into account the noise affecting our measurement of these neural signals.\n\nFor perceptual decision-making, signals related to L* were initially clustered over posterior electrodes, becoming dispersed over more anterior electrodes late in the epoch (Figure 5a, top). For confidence, we found two co-temporal clusters in posterior and anterior electrodes emerging from 668 ms to 824 ms from stimulus onset (Figure 5a, bottom). In Figure 5a, we highlight an early posterior cluster of signals strongly related to L* for perceptual decisions, that was not diagnostic of confidence evaluations (in fact the evidence was in favour of the null hypothesis; summed log likelihood ratio = \u22121176). We obtained cluster-wide representations of L from the signals in this early posterior cluster and the two confidence related clusters. The precision of these representations is shown in Figure 5b, left. That the information from these clusters is not redundant is evident from the fact that combining the clusters improves the representation precision (Figure 5b). For simplicity, we combined the two confidence clusters for further analysis. Similar to the previous analysis (Figure 4d), the representation precision of the early posterior cluster was attenuated for the last four samples of the More condition. But, the representation precision of the confidence cluster was maintained (a repeated measures ANOVA revealed a significant interaction between cluster and condition for decoding precision in the last four samples, F(1,19) = 32.00, p = 0.001, Bonferroni corrected for three comparisons). These results are consistent with dissociable stages of neural processing for confidence evaluation and perceptual decision-making, and support the computational modelling in suggesting a partial dissociation between the internal evidence used for making perceptual decisions and confidence evaluations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68491/elife-68491-fig5-v1.jpg)\n\n**Figure 5.:** (a) Log likelihood ratio (LLR) of the data given the hypothesis that decoding precision varies with behavioural suboptimalities, against the null hypothesis that decoding precision varies only with measurement noise. Perceptual (Type-I) behaviour is shown on top and confidence (Type-II) behaviour is shown on the bottom. Clusters where the log posterior odds ratio outweighed the prior are circled, only the bold area of the perceptual cluster was further analysed. Time series (left) show the maximum LLR of electrodes laterally, with frontal polar electrodes at the top descending to occipital electrodes at the bottom. Scalp maps (right) show the summed LLR over the indicated time windows. (b) Left: representation precision (z) training and testing on signals within the clusters. Colours correspond to the circles in (a), with the dark green bar showing the combined decoding precision of the anterior and posterior confidence clusters, and the black bar showing the combined representation precision of all clusters. Right: Representation precision of the last four samples in the Less and the More conditions for the combined confidence representation and the perceptual representation. Error bars show 95% within-subject confidence intervals. (c) ROIs (defined by mindBoggle coordinates; Klein et al., 2017): lateral occipital cortex (blue); superior parietal cortex (green); orbitofrontal cortex (orange); and rostral middle frontal cortex (red). (d) ROI time series for Noise Max (black) and Noise Min (coloured) epochs, taking the average rectified normalised current density (z) across participants. Shaded regions show 95% within-subject confidence intervals, red horizontal lines indicate cluster corrected significant differences. Standardised within-subject differences are traced above the x-axis, with the shaded region marking z = 0 to z = 1.96 (95% confidence).\u00a0(e) Standardised regression weight (t-statistic) of the GLM comparing observers\u2019 confidence ratings to those predicted from the activity localised to the orbitofrontal cortex. The shaded region shows the 95% between-subject confidence interval, and the red horizontal line marks the time-window showing cluster-corrected significant differences from 0.\n\nWe used the representation from the confidence cluster as an estimate of the internal evidence on which observers base their confidence ratings. We then took the difference from L in the estimate of L* from the cluster representation as an estimate of the single-sample inference error. This estimate of the single-sample inference error was significantly correlated with the single-sample inference error estimated from the computational model of confidence ratings (t(19) = 5.12, p < 0.001), and this correlation was significantly greater than the correlation with the error estimated from the model of perceptual decisions alone (t(19) = 2.62, p = 0.017; see Appendix 8). This suggests that this cluster representation is indeed reflecting activity specific to the computation of confidence.\n\nWe asked what processes were responsible for driving variability in the internal evidence for confidence beyond what could be explained by the evidence presented to the observer. We selected \u2018Noise Min\u2019 and \u2018Noise Max\u2019 epochs as the top and bottom quartile of epochs sorted by the estimate of the inference error from the cluster representation, and examined the source-localised EEG activity across these epochs. The presented sensory evidence was similar across Noise Min and Noise Max epochs (see Appendix 8), but the additional variability in the Noise Max epochs pushes the represented evidence further from the mean, and should therefore correspond to a greater absolute normalised signal. We estimated the sources of activity in the Noise Min and Noise Max epochs using a template brain (see Materials\u00a0and\u00a0methods) and tested for differences in the rectified normalised current density in ROIs defined based on the previous literature (Figure 5c; Graziano et al., 2015; Gherman and Philiastides, 2018; Herding et al., 2019, see Appendix 9). As expected, Noise Max epochs showed a greater increase in current density power over time. Significant differences first emerged in the superior parietal cortex (Figure 5d; 276\u00a0to\u00a0304 ms; tavg(19) = 2.37, pcluster = 0.016, re-emerging at 596\u00a0to\u00a0748 ms; tavg(19) = 2.53, pcluster = 0.016; and 912 ms; tavg(19) = 2.50, pcluster = 0.014), and then in the orbitofrontal cortex (OFC; 516\u00a0to\u00a0556 ms; tavg(19) = 2.30, pcluster = 0.022, re-emerging at 660\u00a0to\u00a0772 ms; tavg(19) = 2.79, pcluster = 0.032, and 824\u00a0to\u00a01000 ms; tavg(19) = 2.60, pcluster = 0.022). No differences in the rostral middle frontal cortex nor lateral occipital cortex survived cluster correction.\n\nWhilst the activity localised to the superior parietal cortex reflected stimulus driven computations (the consecutive peaks correspond temporally to the response to subsequent stimuli), the activity localised to the orbitofrontal cortex was more indicative of an accumulation process across samples (a smoother increase in signal over time). As an exploratory analysis, we tested whether the activity localised to the orbitofrontal cortex could predict observers\u2019 confidence ratings, presumably by accumulating evidence for evaluating confidence up to the observers\u2019 perceptual decision response. Indeed, the activity localised to the orbitofrontal cortex predicted observers\u2019 confidence ratings, based on the predictions of a generalised linear model with 90/10 cross validation: the standardised regression coefficients increased up to and continued after the perceptual decision response (Figure 5e, a\u00a0significant cluster was located from \u2212300 to 520 ms around the time of the response; tave(19) = 3.46, cluster-corrected p < 0.001).\n\n## Discussion\n\nWe examined the dynamic neural signals associated with the accumulation of evidence for evaluating confidence in perceptual decisions. Observers were required to integrate evidence over multiple samples provided by a sequence of visual stimuli. When observers were unable to control the amount of evidence they were exposed to, they employed a covert decision bound, committing to perceptual decisions when they had enough evidence, even if stimulus presentation continued. We had previously shown evidence for this premature decision commitment based on behaviour and computational modelling (Balsdon et al., 2020). We replicated these results here, and further examined the neural signatures of covert decision making. We found that the distribution of spectral power associated with the preparation and execution of motor responses in the Free task (where the response is entered as soon as the decision is made) could be used to accurately predict responses in the More condition of the Replay task over 1 s prior to when the response was entered, and with significantly greater sensitivity than in the Less condition (when observers were unlikely to have committed to a decision early). This suggests that covert decisions could trigger the motor preparation for pressing the response key. Moreover, the strength of the eventual motor response signal could be predicted by earlier decision evidence in the More condition, as if observers are maintaining some representation of the decision evidence whilst waiting to press the response key.\n\nBased on the evoked representation of accumulated evidence, perceptual decision accuracy relied on a flow of information processing from early occipital and parietal signals, which then spread through to anterior electrodes. When observers committed to perceptual decisions prematurely, only the early part of the representation of accumulated evidence was attenuated. This selective dampening of the representation of accumulated evidence following premature decision commitment delineates which computations are devoted solely to the perceptual decision process, and which computations reflect the input to the decision process: The representations of stimulus orientation and decision update (Wyart et al., 2012; Wyart et al., 2015; Weiss et al., 2021), which are necessary input for the perceptual decision, did not substantially change after committing to a perceptual decision. This initial perceptual processing stage likely remained important for the continued accumulation of evidence for evaluating confidence (even after the completion of perceptual decision processes), though it could also be that these processes are automatically triggered by stimulus onset irrespective of whether the evidence is being accumulated for decision-making.\n\nConfidence should increase with increasing evidence for the perceptual decision. It is therefore unsurprising that the neural correlates of confidence magnitude have found similar EEG markers as those related to the accumulation of the underlying perceptual decision evidence: the P300 (Gherman and Philiastides, 2015; Desender et al., 2016; Desender et al., 2019; Zakrzewski et al., 2019; Rausch et al., 2020) and Central Parietal Positivity (CPP; Boldt et al., 2019; Herding et al., 2019, indeed we show a similar effect in Appendix 4). The analysis presented in this manuscript targeted confidence precision rather than confidence magnitude, by assessing confidence relative to an optimal observer who gives high confidence ratings on trials where the evidence in favour of the perceptual choice is greater than the median across trials. We isolated part of the neural representation of accumulated evidence where imprecision relative to the optimal presented evidence predicted greater deviations from optimal in the internal representation of evidence used for confidence evaluation implied from behaviour. The internal evidence predicted from this neural representation was also more strongly related to the evidence for confidence than the evidence used for perceptual decisions based on the computational model fit to describe behaviour.\n\nWe analysed the sources of activity more closely representing the internal evidence on which the confidence evaluation was based than the optimal presented evidence. Activity localised to the superior parietal and orbitofrontal cortices was found to track this internal evidence for confidence throughout decision-making. This is not at odds with the previous literature: The difference in superior parietal cortex could be linked with findings from electrophysiology that suggest that confidence is based on information coded in parietal cortex, where the underlying perceptual decision evidence is integrated (Kiani and Shadlen, 2009; Rutishauser et al., 2018; though at least a subset of these neurons reflect bounded accumulation, which is in contrast with the continued confidence accumulation described in this experiment;\u00a0Kiani et al., 2008). Early electrophysiological investigation into the function of the orbitofrontal cortex revealed neural coding associated with stimulus value (Thorpe et al., 1983), which has since been linked with a confidence-modulated signal of outcome-expectation (Kepecs et al., 2008; and in human fMRI; Rolls et al., 2010) and recently, shown to be domain-general (single OFC neurons were associated with confidence in both olfactory and auditory tasks; Masset et al., 2020). The source localisation analysis therefore connects previous findings, indicating confidence feeds off an evidence accumulation process, culminating in higher\u00a0order brain areas that appear to function for guiding outcome-driven behaviour based on decision certainty.\n\nThese neural signatures of confidence evidence encoding were present throughout the process of making a perceptual decision. This is in line with more recent evidence suggesting that confidence could be computed online, alongside perceptual evidence accumulation (Zizlsperger et al., 2014; Gherman and Philiastides, 2015; Balsdon et al., 2020), as opposed to assessing the evidence in favour of the perceptual decision only after committing to that decision. Computational model comparison supported this interpretation, showing the best description of confidence behaviour was an accumulation process that was partially dissociable from perceptual evidence accumulation (Appendix 1; replicating our previous analysis, Balsdon et al., 2020). This partial dissociation mediates the ongoing debate between single-channel (for example, Maniscalco and Lau, 2016) and dual-channel (for example, Charles et al., 2014) models, as it constrains confidence by perceptual suboptimalities, at the same time as allowing additional processing to independently shape confidence. The combination of this partial dissociation and online monitoring could allow for metacognitive control of perceptual evidence accumulation, to flexibly balance perceptual accuracy against temporal efficiency, by bounding perceptual evidence accumulation according to contemporaneous confidence.\n\nUsing this protocol, we were able to delineate two distinct representations of accumulated evidence which correspond to perceptual decision-making and confidence evaluations. These neural representations were partially dissociable in that the perceptual representation neglected additional evidence following premature decision commitment whilst the confidence representation continued to track the updated evidence independently of decision commitment. This partial dissociation validates the predictions of the computational model and provides a framework for the cognitive architecture underlying the distinction between perception and confidence. That the neural resources involved in the confidence representation can be recruited independently of perceptual processes implies a specific neural circuit for the computation of confidence, a necessary feature of a general metacognitive mechanism flexibly employed to monitor the validity of any cognitive process.\n\n## Materials and methods\n\n### Participants\n\nA total of 20 participants were recruited from the local cognitive science mailing list (RISC) and by word of mouth. No participant met the pre-registered (https://osf.io/346pe/) exclusion criteria of chance-level performance or excessive EEG noise. Written informed consent was provided prior to commencing the experiment. Participants were required to have normal or corrected to normal vision. Ethical approval was granted by the INSERM ethics committee (ID RCB: 2017-A01778-45 Protocol C15-98).\n\n### Materials\n\nStimuli were presented on a 24\u2019 BenQ LCD monitor running at 60 Hz with resolution 1920\u00a0x\u00a01080 pixels and mean luminance 45 cd/m2. Stimulus generation and presentation was controlled by MATLAB (Mathworks) and the Psychophysics toolbox (Brainard, 1997; Pelli, 1997; Kleiner et al., 2007), run on a Dell Precision M4800 Laptop. Observers viewed the monitor from a distance of 57 cm, with their head supported by a chin rest. EEG data were collected using a 64-electrode BioSemi ActiveTwo system, run on a dedicated mac laptop (Apple Inc), with a sample rate of 512 Hz. Data were recorded within a shielded room.\n\n### Stimuli\n\nStimuli were oriented Gabor patches displayed at 70% contrast, subtending four dva and with spatial frequency two cyc/deg. On each trial a sequence of stimuli was presented, at an average rate of 3 Hz, with the stimulus presented at full 70% contrast for a variable duration between 50 and 83 ms, with a sudden onset, followed by an offset ramp over two flips, where the stimulus contrast decreased by 50% and 75% before complete offset. Stimulus onset timing was jittered within the stimulus presentation interval such that the timing of stimulus onset was irregular but with at least 216 ms between stimuli. These timings and stimulus examples are shown in Figure 1a.\n\nOn each trial the orientations of the presented Gabors were drawn from one of two circular Gaussian (Von Mises) distributions centred on +/- 45\u00b0 from vertical (henceforth referred to as the \u2018orange\u2019 and \u2018blue\u2019 distributions, respectively), with concentration \u03ba = 0.5 (shown in Figure 1d). Stimuli were displayed within an annular \u2018colour-guide\u2019 where the colour of the annulus corresponds to the probability of the orientation under each distribution, using the red and blue RGB channels to represent the probabilities of each orientation under each distribution. Stimuli were presented in the centre of the screen, with a black central fixation point to guide observers\u2019 gaze.\n\n### Procedure\n\nThe task was a modified version of the weather prediction task (Knowlton et al., 1996; Drugowitsch et al., 2016). Throughout the experiment, the observer\u2019s perceptual task was to categorise which distribution the stimulus orientations were sampled from. They were instructed to press the \u2018d\u2019 key with their left hand (of a standard querty keyboard) for the blue distribution and the \u2018k\u2019 key with their right hand for the orange distribution. There were two variants of the task: The Free task and the Replay task. The trials were composed of three repetitions of 100 predefined sequences of up to 40 samples (50 trials from each distribution) for each observer (300 trials per task).\n\nIn the \u2018Free\u2019 task, observers were continually shown samples (up to 40) until they entered their response. They were instructed to enter their response as soon as they \u2018feel ready\u2019 to make a decision, with emphasis on both accuracy (they should make their decision when they feel they have a good chance of being correct) and on time (they shouldn\u2019t take too long to complete each trial). A graphical description of this task is shown in Figure 1b.\n\nAfter completing the Free task, observers then completed the Replay task. In this task they were shown a specific number of samples and could only enter their response after the sequence finished, signalled by the fixation point turning red. The number of samples was determined based on the number observers chose to respond to in the Free task. There were three intermixed conditions: In the Less condition observers were shown two fewer samples than the minimum they had chosen to respond to on that predefined sequence in the Free task; In the Same condition observers were shown the median number of samples from that predefined sequence; in the More condition observers were shown four additional samples compared to the maximum number they chose to respond to on that sequence in the Free task. After entering their perceptual response, observers were cued to give a confidence rating. The confidence rating was given on a four-point scale where 1 represents very low confidence that the perceptual decision was correct, and 4, certainty that the perceptual decision was correct. The rating was entered by pressing the \u2018space bar\u2019 when a presented dial reached the desired rating. The dial was composed of a black line which was rotated clockwise to each of 4 equidistant angles (marked 1\u20134) around a half circle, at a rate of 1.33 Hz. The dial started at a random confidence level on each trial and continued updating until a rating was chosen. A graphical description of this task is shown in Figure 1c.\n\nPrior to commencing the experimental trials, participants were given the opportunity to practice the experiment and ask questions. They first performed 20 trials of a fixed number of samples with only the perceptual decision, with feedback after each response as to the true category. They then practiced the Replay task with the confidence rating (and an arbitrary number of samples). Finally, they practiced the Free task, before commencing the experiment with the Free task.\n\n### Analysis\n\n#### Behaviour\n\nPerceptual decisions were evaluated relative to the category the orientations were actually drawn from. Performance is presented as proportion correct, whilst statistical analyses were performed on sensitivity (d\u2019). Sensitivity was calculated based on the proportion of hits (responding \u2018Category A\u2019 when category A was presented) and false alarms (responding \u2018Category A\u2019 when category B was presented). Confidence was evaluated relative to an optimal observer who gives high confidence when the log-likelihood of the chosen category, based on the presented orientations, is above the median across trials, and low confidence on trials with less than the median log-likelihood. More broadly, confidence should increase with increasing evidence in favour of the perceptual decision, see Appendix 3. A General Linear Model was used to validate the influence of the optimal presented evidence on perceptual decisions and confidence evaluations. The accumulated evidence up to the final sample and four samples before the response was used as a regressor for the perceptual decision assuming a binomial distribution with a probit link function. A comparable analysis was performed for confidence by binarizing confidence ratings into Low (ratings of 1 or 2) and High (ratings of 3 or 4) and taking the evidence signed by the perceptual decision.\n\n#### Computational modelling\n\nComputational modelling followed the same procedure as Balsdon et al., 2020. The model parametrically describes suboptimalities relative to the Bayesian optimal observer. The Bayesian optimal observer knows the category means, $\\mu_{1}=-\\frac{\\pi}{4},\\mu_{2}=\\frac{\\pi}{4}$, and the concentration, $\u03ba=0.5$, and takes the probability of the orientation $\\theta_{n}$ (at sample n) given each category\u00a0$\u03c8$ ($\u03c8=1$\u00a0or\u00a0$\u03c8=2$)\n\n$$\np(\\theta_{n}|\u03c8)=\\frac{e^{\u03bacos\u2061(2(\\theta_{n}\u2212\\mu_{\u03c8}))}}{\\piI_{0}(\u03ba)}\n$$\n\nwhere $I_{0}(\u2219)$ is the modified Bessel function of order 0. The optimal observer then chooses the category $\u03c8$\u00a0with the greatest posterior probability over all samples for that trial, T (T varies from trial to trial). Given a uniform category prior, $p\u03c8\u221d\\frac{1}{2}$, and perfect anticorrelation in $p\\theta_{n}|\u03c8$\u00a0over the categories, the log posterior is proportional to the sum of the difference in the log-likelihood for each category ($\u2113_{n}=\u2113_{n,1}\u2212\u2113_{n,2}$)\n\n$$\nL=\\sumn=1T\u2113_{n}\n$$\n\nwhere:\n\n$$\n\u2113_{n,\u03c8}=logp(\\theta_{n}|\u03c8)=\u03bacos\u2061(2(\\theta_{n}\u2212\\mu_{\u03c8}))+const.\n$$\n\nSuch that the Bayesian optimal decision is 1 if $L>0$\u00a0and 2 if\u00a0$L\\leq0$.\n\nThe suboptimal observer suffers inaccuracies in the representation of each evidence sample, captured by additive independent identically distributed (i.i.d) noise,\u00a0$\\epsilon_{n}$. The noise is Gaussian distributed with zero mean, and the degree of variability parameterised by\u00a0$\\sigma$, the standard deviation\n\n$$\n\\epsilon_{n}~N0,\\sigma^{2}\n$$\n\nThe evidence over samples is also imperfectly accumulated, incurring primacy or recency biases parameterised by\u00a0$\\alpha$, the weight on the current accumulated evidence compared to the new sample ($\\alpha>1$\u00a0creates a primacy effect). By the end of the trial, the weight on each sample n is equal to\n\n$$\nv_{n}=\\alpha^{T-n}\n$$\n\nwhere T is the eventual total samples on that trial and\u00a0$n\\in1,T$.\n\nIn the Free task, the observer responds when accumulated evidence reaches a bound,\u00a0$\u039b$. The optimal observer sets a constant bound on proportion correct over sequence length, which is an exponential function on the average evidence over the samples accumulated. The human observer can set the scale, b, and the rate of decline, $\\lambda$, of the bound suboptimally, resulting in\n\n$$\n\u039b_{n+}=n\\timesa+be^{-\\frac{n}{\\lambda}}\n$$\n\nfor the positive decision bound (the negative bound,\u00a0$\u039b_{n-}=-\u039b_{n+}$). The likelihood $fn$\u00a0of responding at sample n was estimated by computing the frequencies, over 1000 samples from $\\epsilon_{n}$ (Monte Carlo simulation), of first times where the following inequality is verified\n\n$$\n|\\sumn=1N(l_{n}+\\epsilon_{n})\u22c5v_{n}|>\u039b_{n}\n$$\n\nThe response time, relative to reaching the decision bound, is delayed by a\u00a0non-decision time for executing the motor response, which is described by a Gaussian distribution of mean, $\\mu_{U}$, and variance,\u00a0$\\sigma_{U}^{2}$.\n\n#### Model fitting\n\nParameters were optimised to minimise the negative log-likelihood of the observer making response r on sample n on each trial for each participant using Bayesian Adaptive Direct Search (Acerbi and Ma, 2017). The log-likelihoods were estimated using Monte Carlo Simulation, with the sensitivity of this approach being addressed in previous work (Balsdon et al., 2020). The full model was simplified using a knock-out procedure based on Bayesian Model Selection (Rigoux et al., 2014) to fix the bias (exceedance probability = 0.93) and lapse (exceedance probability >0.99) parameters (not described above, see Appendix 1).\n\nIn the Replay task, confidence ratings were fit using the same model described above, but with additional criteria determining confidence ratings, described by three bounds on the confidence evidence, parameterised in the same manner as the decision bound. These models were then used to simulate the internal evidence of each observer from sample to sample, and the error compared to the optimal evidence (uncorrupted by suboptimalities, see Appendix 2).\n\n#### EEG pre-processing\n\nEEG data were pre-processed using the PREP processing pipeline (Bigdely-Shamlo et al., 2015), implemented in EEGlab (v2019.0, Delorme and Makeig, 2004) in MATLAB (R2019a, Mathworks). This includes line noise removal (notch filter at 50 Hz and harmonics) and re-referencing (robust average re-reference on data detrended at 1 Hz). The data were then filtered to frequencies between 0.5 and 80 Hz, and down-sampled to 256 Hz. Large epochs were taken locked to each stimulus (\u2212500 to 1500 ms) and each response (\u22125000 to 1500 ms). Independent Components Analysis was used to remove artefacts caused by blinks and excessive muscle movement identified using labels with a probability greater than 0.35 from the ICLabel project classifier (Swartz Centre for Computational Neuroscience).\n\n#### Response classification analysis\n\nThe power spectrum across frequency tapers from 1 to 64 Hz with 25% spectral smoothing was resolved using wavelet convolution implemented in FieldTrip (Oostenveld et al., 2011). The epochs were then clipped at \u22123 to 1 s around the time of entering the perceptual response. Linear discriminant analysis was performed to classify perceptual responses, using 10-fold cross validation, separately on each taper at each time-point. An analysis of the frequencies contributing to accurate classification at the time of the response revealed significant contributions from 8 to 26 Hz (Appendix 4). We therefore continued by using the power averaged across these frequency bands to train and test the classifier. Classifier accuracy was assessed using the area under the receiver operating characteristic curve (AUC). At the single-trial level, the probability of the response based on the classifier was computed from the relative normalised Euclidean distance of the trial features from the response category means in classifier decision space.\n\n#### Encoding variable regression\n\nWe used a linear regression analysis to examine the EEG correlates of different aspects of the decision evidence (encoding variables) in epochs locked to stimulus onset. Regularised ridge regression (ridge\u00a0$\\lambda=1$) was used to predict the encoding variables based on EEG data, over 10-fold cross validation. The precision of the representation of each encoding variable was computed within each observer by taking the Fisher transform of the correlation coefficient (Pearson\u2019s r) between the encoded variable and predicted variable. To maximise representation precision, the data were bandpass filtered (1 \u2013 8 Hz) and decomposed into real and imaginary parts using a Hilbert Transform (Appendix 5). For each time point, the data from all electrodes were used to predict the encoded variable. The temporal generalisation of decoding weights was examined by training at one time point and testing at another. The contribution of information from signals at each electrode was examined by training and testing on the signals at each electrode at each time point (further details in Appendix 5).\n\nBehaviourally relevant signals were isolated by comparing representation precision at each time point and electrode for epochs leading to optimal perceptual and confidence responses, compared to responses that did not match the optimal observer. Cluster modelling was used to isolate contiguous signals where the log posterior odds were in favour of the alternative hypothesis that the representation systematically deviated further from the optimal presented evidence than what could be explained by measurement noise alone (Appendix 6). New regression weights were then calculated on signals from the entire cluster and representation errors calculated as the difference of the predicted variable from the expected value given the representation.\n\n#### Source localisation\n\nIdentifying the clusters of signals associated with confidence processes offers relatively poor spatial and temporal (given the bandpass filter; de Cheveign\u00e9 and Nelken, 2019) resolution for identifying the source of confidence computations. Source localisation was therefore performed, using Brainstorm (Tadel et al., 2011). The forward model was computed using OpenMEEG (Gramfort et al., 2010; Kybic et al., 2005) and the ICBM152 anatomy (Fonov et al., 2011; Fonov et al., 2009). Two conditions were compared, Noise Min and Noise Max, which corresponded to quartiles of epochs sorted by representation error in the confidence clusters (see Appendix 7 for more details). Cortical current source density was estimated from the average epochs using orientation-constrained minimum norm imaging (Baillet et al., 2001). ROIs in the lateral occipital, superior parietal, rostral middle frontal (including dlPFC), medial orbitofrontal, and rostral anterior cingulate cortex, were defined using MindBoggle coordinates (Klein et al., 2017). Statistical comparisons were performed on the bilateral ROI time series (using cluster correction and a minimum duration of 20 ms), computed over separate conditions on rectified normalised subject averages (low-pass filtered at 40 Hz).\n\nTo predict confidence magnitude from the activity localised to the orbitofrontal cortex, we recovered to current density from 20 subregions (approximately equal parcellations) of the orbitofrontal cortex in epochs locked to the time of the response. A general linear model (assuming a normal distribution with identity link) was used to predict the observers\u2019 confidence ratings on held-out data (90/10 cross-fold) from the neural activity at each time-point leading to the response. The prediction was quantified as the standardised regression weight from a new general linear model comparing the predicted and actual confidence ratings across all folds.\n",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "663fffb8-f655-4975-952f-38b0ed8d8757",
+      "submission_id": "57f5b28b-bd4f-4e44-bf79-62422c75298b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Redmond G O'Connell, Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68491.sa1](https://doi.org/10.7554/eLife.68491.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis paper is of interest to neuroscientists and psychologists working on perceptual decision-making and metacognition. Using a novel task varying the timing of covert decisions, together with sophisticated computational modelling, allowed identifying neural correlates of latent states related to confidence. The conclusions are in line with other papers identifying a dissociation between brain activity supporting performance and confidence, but provide a novel lens through which to understand these differences by focusing on confidence noise.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Separable neural signatures of confidence during perceptual decisions\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Redmond G O'Connell as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Frank as the Senior Editor. The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions (for the authors):\n\n1) The study needs to be more clearly framed with respect to the previous literature. Extensive neuroimaging and lesion work has already provided compelling evidence that perceptual decisions and metacognition rely on distinct neural circuits. In addition, previous modeling work that has provided a joint account of first- and second-order behaviour has assigned a key role to post-decision processing (whether within same or different circuits). The authors should clarify their hypotheses and how they relate to this previous work.\n\n2) Substantial rewriting of the Results is necessary. A clear rationale should be provided for each analysis step and the results of those analyses need to be linked back to the study hypotheses.\n\n3) Consider whether a simpler model-free analysis (e.g. check whether confidence resolution is higher for More vs Less trials) could be done to validate the key claim of confidence/performance dissociations (see Reviewer 2 comment)\n\n4) Check impact of high-pass filtering and current source density on CPP signals (or consider removing those signals from the analysis if they are not speaking to the study hypotheses).\n\nReviewer #1 (Recommendations for the authors):\n\nSome substantial rewriting of the Results section is required to clarify the rationale for each analysis without requiring that the reader read all of the Supplemental Materials in order to follow the narrative. In several instances it is not clear why the analysis is being run or what we should take from it. A prominent example is the ERP analysis where the choice of signals or their relevance to the hypothesis is not explained and the relevance of the reported results to those hypotheses is similarly not clarified. It is not clear why only the More and Less conditions are compared or why post-response time-points are considered relevant. Additionally the purpose of the decoding analysis is left obscure and it is not clear why 8-32Hz is the focus Throughout I think a lot more hand holding is required for the reader to follow why each analysis is being run and how exactly it relates to the stated hypotheses.\n\nI also have a few more specific comments regarding particular aspects of the results.\n\nIf the CPP analyses are deemed important to the overall story then the use of a 0.5Hz filter may be problematic as it is likely to attenuate a slow building signal like the CPP. This could conceivably lead to some issues when comparing Less/Same/More trials where the CPP may build over different durations. The authors might also consider applying CSD transformation which has been shown to reduce interference from overlapping fronto-central negativities (e.g. Kelly and O'Connell 2013, J Neurosci).\n\nOne of the key observations is that the precision of neural representations of accumulated evidence drop towards the end of the More trials but there is no such dropoff in the decision update representation. I am struggling to understand how this might arise and it would be helpful if the authors could provide an explanation.\n\nThe authors report that there is no significant effect of More vs Same on choice accuracy but the figure suggests that there is a substantial numerical difference in the expected direction. Bayes factors should be provided to quantify the evidence in favour of the null hypothesis.\n\nReviewer #2 (Recommendations for the authors):\n\nI found myself wondering in lots of places here whether a simpler model-free analysis could have been done to validate the key claim of confidence/performance dissociations in behaviour and neural activity. For behaviour, would it not be possible to eg check whether confidence resolution is higher for More compared to Same trials? Or do a lagged regression (similar to Figure 4c, but now for behaviour) to show the latter samples have an impact on confidence but not performance on More trials?\n\nI found the writing hard going in places. It was often difficult to figure out what exactly had been done in analysis \u2013 in particular \"representation precision\" (line 228) was only briefly defined in the figure legend, and it would be useful to spend some more time unpacking this in the text to help the reader follow along.\n\nLine 399 of the supplement, \"We used the representation error as an estimate of the inference error of the observer: the absolute difference between the cluster predicted value and the expected value given the cluster representation and the true value of the accumulated evidence based on the orientations presented to the observer.\" There are two \"ands\" here, so I did not understand what the absolute difference was between.\n",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "615d270f-064b-4435-ad9e-09f5b2879cb6",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C1",
+      "claim": "Perceptual confidence is an evaluation of the validity of perceptual decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Perceptual confidence is an evaluation of the validity of perceptual decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement presented in the abstract that establishes the concept being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "06f34dc1-264b-49ff-9568-9a43185d5a2e",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C2",
+      "claim": "There is behavioural evidence that confidence evaluation differs from perceptual decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is behavioural evidence that confidence evaluation differs from perceptual decision-making, disentangling these two processes remains a challenge at the neural level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement references existing behavioral evidence without specific citations in this sentence, drawing on established findings in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "7e029b3c-6399-477e-bd72-e590ee46870a",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C3",
+      "claim": "Observers tend to commit to perceptual decisions early whilst continuing to monitor sensory evidence for evaluating confidence in protracted perceptual decision-making tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we examined the electrical brain activity of human participants in a protracted perceptual decision-making task where observers tend to commit to perceptual decisions early whilst continuing to monitor sensory evidence for evaluating confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the current study as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "1dbc2ae6-e0ad-41c1-ac8b-65484fa7f188",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C4",
+      "claim": "Premature decision commitments are revealed by patterns of spectral power overlying motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Premature decision commitments were revealed by patterns of spectral power overlying motor cortex, followed by an attenuation of the neural representation of perceptual decision evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct finding from the EEG analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "c9a77637-1933-4932-abc9-01d069be7ac1",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C5",
+      "claim": "Premature decision commitments are followed by an attenuation of the neural representation of perceptual decision evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Premature decision commitments were revealed by patterns of spectral power overlying motor cortex, followed by an attenuation of the neural representation of perceptual decision evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct finding from the neural representation analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "1eb798f3-db1b-425d-af86-0504b7c97dc2",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C6",
+      "claim": "A distinct neural representation is associated with the computation of confidence, with sources localised in the superior parietal and orbitofrontal cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "A distinct neural representation was associated with the computation of confidence, with sources localised in the superior parietal and orbitofrontal cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the source localization analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "9dbbccb0-886e-4ef6-8831-bbb7971ff2c6",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C7",
+      "claim": "Neural resources for confidence evaluation are recruited even after observers committed to their perceptual decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with a dissociation between perception and confidence, these neural resources were recruited even after observers committed to their perceptual decisions, and thus delineate an integral neural circuit for evaluating perceptual decision confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the temporal analysis of neural representations in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "3cd71540-593e-487e-ab3d-cd22ca7ad779",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C8",
+      "claim": "Perception requires probabilistic inference to resolve the uncertain causes of essentially ambiguous sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst perception typically feels effortless and automatic, it requires probabilistic inference to resolve the uncertain causes of essentially ambiguous sensory input (Helmholtz, 1856).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Helmholtz (1856), representing established theory in perception.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "bd56d08e-e3ca-47d7-b9f3-6d72d6731db8",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C9",
+      "claim": "Human observers are capable of discriminating which perceptual decisions are more likely to be correct using subjective feelings of confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Human observers are capable of discriminating which perceptual decisions are more likely to be correct using subjective feelings of confidence (Pollack and Decker, 1958).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pollack and Decker (1958), representing established empirical findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "e5bf68d2-b91a-493e-a895-fa52bc6998ca",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C10",
+      "claim": "Feelings of perceptual confidence have been associated with metacognitive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These feelings of perceptual confidence have been associated with metacognitive processes (Fleming and Daw, 2017) that enable self-monitoring for learning (Veenman et al., 2004) and communication (Bahrami et al., 2012; Frith, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to Fleming and Daw (2017), Veenman et al. (2004), Bahrami et al. (2012), and Frith (2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "d9914a8c-9c68-4d76-95a2-2a7263bf7584",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C11",
+      "claim": "Metacognitive processes enable self-monitoring for learning.",
+      "claim_type": "EXPLICIT",
+      "source": "These feelings of perceptual confidence have been associated with metacognitive processes (Fleming and Daw, 2017) that enable self-monitoring for learning (Veenman et al., 2004) and communication (Bahrami et al., 2012; Frith, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Veenman et al. (2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "f6745eec-7b7d-4a05-ac0b-88dcadd19cc2",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C12",
+      "claim": "Metacognitive processes enable communication.",
+      "claim_type": "EXPLICIT",
+      "source": "These feelings of perceptual confidence have been associated with metacognitive processes (Fleming and Daw, 2017) that enable self-monitoring for learning (Veenman et al., 2004) and communication (Bahrami et al., 2012; Frith, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bahrami et al. (2012) and Frith (2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "6e293b8d-245d-4ffc-9017-0ab4778d9c81",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C13",
+      "claim": "Perceptual decisions are described by sequential sampling processes at the computational level.",
+      "claim_type": "EXPLICIT",
+      "source": "At the computational level, perceptual decisions are described by sequential sampling processes (Ratcliff, 1978; Vickers, 1970), in which noisy samples of evidence are accumulated over time, until there is sufficient evidence to commit to a decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ratcliff (1978) and Vickers (1970), representing established computational models.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "c301f5fd-aa9a-4e28-97f1-8b3e9e54ea62",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C14",
+      "claim": "In sequential sampling processes, noisy samples of evidence are accumulated over time until there is sufficient evidence to commit to a decision.",
+      "claim_type": "EXPLICIT",
+      "source": "At the computational level, perceptual decisions are described by sequential sampling processes (Ratcliff, 1978; Vickers, 1970), in which noisy samples of evidence are accumulated over time, until there is sufficient evidence to commit to a decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sequential sampling framework supported by the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "afd914fd-8106-4427-acee-e1cea6fa1051",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C15",
+      "claim": "The most relevant information for evaluating perceptual confidence is the quantity and quality of evidence used to make the perceptual decision.",
+      "claim_type": "EXPLICIT",
+      "source": "The most relevant information for evaluating perceptual confidence is the quantity and quality of evidence used to make the perceptual decision (Kepecs et al., 2008; Moreno-Bote, 2010; Vickers, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kepecs et al. (2008), Moreno-Bote (2010), and Vickers (1979).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "4a536959-072a-42f6-a87e-688532535dc4",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C16",
+      "claim": "Confidence can be reliably predicted from the firing rates of neurons coding the perceptual decision itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, confidence (or a non-human primate proxy for confidence) can be reliably predicted from the firing rates of neurons coding the perceptual decision itself (Kiani and Shadlen, 2009), suggesting that confidence may be a direct by-product of perceptual processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kiani and Shadlen (2009), representing empirical findings from neurophysiology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "639c28ae-3b25-42e9-bda0-31dd262dcbae",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C17",
+      "claim": "Confidence may be a direct by-product of perceptual processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, confidence (or a non-human primate proxy for confidence) can be reliably predicted from the firing rates of neurons coding the perceptual decision itself (Kiani and Shadlen, 2009), suggesting that confidence may be a direct by-product of perceptual processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited neurophysiological findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "31fb01be-9aec-441e-bd54-897a340195a5",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C18",
+      "claim": "Confidence can integrate additional evidence after the observer commits to their perceptual decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Confidence can integrate additional evidence after the observer commits to their perceptual decision (Pleskac and Busemeyer, 2010; Baranski and Petrusic, 1994), and while this continued evidence accumulation could incorporate only perceptual information, it implies that confidence evaluation does not directly follow from perceptual decision commitment (and therefore involves at least partially dissociable neural processes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pleskac and Busemeyer (2010) and Baranski and Petrusic (1994).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "f90c6d94-8c01-4ac3-9ebb-4c021f5fdb35",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C19",
+      "claim": "Confidence evaluation does not directly follow from perceptual decision commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Confidence can integrate additional evidence after the observer commits to their perceptual decision (Pleskac and Busemeyer, 2010; Baranski and Petrusic, 1994), and while this continued evidence accumulation could incorporate only perceptual information, it implies that confidence evaluation does not directly follow from perceptual decision commitment (and therefore involves at least partially dissociable neural processes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited behavioral findings about post-decisional evidence integration.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "45cc275f-8a7e-4897-a965-ffc90f6fc69e",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C20",
+      "claim": "Confidence evaluation involves at least partially dissociable neural processes from perceptual decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Confidence can integrate additional evidence after the observer commits to their perceptual decision (Pleskac and Busemeyer, 2010; Baranski and Petrusic, 1994), and while this continued evidence accumulation could incorporate only perceptual information, it implies that confidence evaluation does not directly follow from perceptual decision commitment (and therefore involves at least partially dissociable neural processes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the behavioral evidence of post-decisional integration.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "0f309ab9-e551-4562-9d3c-9f1d55cc27b3",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C21",
+      "claim": "Perceptual confidence can rely on separate non-perceptual sources of information such as decision time.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also evidence that perceptual confidence can rely on separate (non-perceptual) sources of information, such as decision time (Kiani et al., 2014) and attentional cues (Denison et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kiani et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "702cbf3a-183f-4fb4-bc28-45c18b262cf1",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C22",
+      "claim": "Perceptual confidence can rely on separate non-perceptual sources of information such as attentional cues.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also evidence that perceptual confidence can rely on separate (non-perceptual) sources of information, such as decision time (Kiani et al., 2014) and attentional cues (Denison et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Denison et al. (2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "f19948f3-98d5-49ce-8dc4-ddf00ddc9c15",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C23",
+      "claim": "Confidence precision is correlated across different cognitive tasks such as memory and perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there is some evidence that confidence precision is correlated across different cognitive tasks (such as memory and perception; Mazancieux et al., 2020), suggesting a common source of noise affecting the computation of confidence across tasks (on top of the sensory noise; Bang et al., 2019; Shekhar and Rahnev, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mazancieux et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "4c895e89-70ec-43bc-91bc-31c2f808d836",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C24",
+      "claim": "There is a common source of noise affecting the computation of confidence across tasks on top of sensory noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there is some evidence that confidence precision is correlated across different cognitive tasks (such as memory and perception; Mazancieux et al., 2020), suggesting a common source of noise affecting the computation of confidence across tasks (on top of the sensory noise; Bang et al., 2019; Shekhar and Rahnev, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to Bang et al. (2019) and Shekhar and Rahnev (2021).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "0e843041-4dca-488f-b34c-e032fa0d86f4",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C25",
+      "claim": "Modulations in confidence have been linked with activity in subregions of the prefrontal cortex including the orbitofrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Several experiments have linked modulations in confidence with activity in a variety of subregions of the prefrontal cortex (including the orbitofrontal cortex, Lak et al., 2014; Masset et al., 2020; right frontopolar cortex, Yokoyama et al., 2010; rostro-lateral prefrontal cortex, Fleming et al., 2012; Geurts et al., 2021; Cortese et al., 2016; see also Vaccaro and Fleming, 2018, for a meta-analysis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lak et al. (2014) and Masset et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "7aca9f8c-01d3-4f86-8bd8-4035c3ee47a9",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C26",
+      "claim": "Modulations in confidence have been linked with activity in the right frontopolar cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Several experiments have linked modulations in confidence with activity in a variety of subregions of the prefrontal cortex (including the orbitofrontal cortex, Lak et al., 2014; Masset et al., 2020; right frontopolar cortex, Yokoyama et al., 2010; rostro-lateral prefrontal cortex, Fleming et al., 2012; Geurts et al., 2021; Cortese et al., 2016; see also Vaccaro and Fleming, 2018, for a meta-analysis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yokoyama et al. (2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "2032e7db-4439-4d27-acb4-82c9395dd0db",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C27",
+      "claim": "Modulations in confidence have been linked with activity in the rostro-lateral prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Several experiments have linked modulations in confidence with activity in a variety of subregions of the prefrontal cortex (including the orbitofrontal cortex, Lak et al., 2014; Masset et al., 2020; right frontopolar cortex, Yokoyama et al., 2010; rostro-lateral prefrontal cortex, Fleming et al., 2012; Geurts et al., 2021; Cortese et al., 2016; see also Vaccaro and Fleming, 2018, for a meta-analysis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fleming et al. (2012), Geurts et al. (2021), and Cortese et al. (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "48dbb8c9-fbf3-441b-bb0f-019ea2896ef9",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C28",
+      "claim": "Disrupting processing in subregions of the prefrontal cortex tends to impair the ability to appropriately adjust behavioural confidence responses whilst leaving perceptual decision accuracy largely unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, disrupting the processing in subregions of the prefrontal cortex (Fleming et al., 2014; Lak et al., 2014; Rounis et al., 2010) tends to impair (though not obliterate) the ability to appropriately adjust behavioural confidence responses, whilst leaving perceptual decision accuracy largely unaffected (although these results can be difficult to replicate, Bor et al., 2017; Lapate et al., 2020, and may not generalise to metacognition for memory; Fleming et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fleming et al. (2014), Lak et al. (2014), and Rounis et al. (2010), with caveats noted from Bor et al. (2017) and Lapate et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "06866cd4-73a9-4632-97a0-00bb52809385",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C29",
+      "claim": "Post-decisional changes in confidence magnitude correlate with signals from the posterior medial frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies show that post-decisional changes in confidence magnitude correlate with signals from the posterior medial frontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from studies mentioned in the preceding sentence (Fleming et al., 2018; Murphy et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "a542f47c-1e65-4b84-a6d1-9180342acc38",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C30",
+      "claim": "Error signals drive medial frontal activity more strongly than decision accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these signals could reflect processes occurring downstream of confidence, such as an emotional response to the error signal, which has been shown to drive medial frontal activity more strongly than decision accuracy (Gehring and Willoughby, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gehring and Willoughby (2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "18743dfd-0d16-47b5-a0e5-c1cd7c38b381",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C31",
+      "claim": "Perceptual decision sensitivity (d') was significantly decreased with two fewer stimuli in the Less condition compared to the Free task.",
+      "claim_type": "EXPLICIT",
+      "source": "Replicating these previous results (Balsdon et al., 2020), we found that perceptual decision sensitivity (d') was significantly decreased with just two fewer stimuli in the Less condition compared to those same (pmin) trials in the Free task (Wilcoxon sign rank Z = 3.88, p < 0.001, Bonferroni corrected for three comparisons), but four additional stimuli in the More condition resulted in only a small but not significant increase compared to the pmax trials in the Free task (Z = -1.53, p = 0.13, uncorrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the behavioral analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "2ea95bdd-fafe-4dd8-892e-ac033d9abfbc",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C32",
+      "claim": "Four additional stimuli in the More condition resulted in only a small but not significant increase in perceptual decision sensitivity compared to the Free task.",
+      "claim_type": "EXPLICIT",
+      "source": "Replicating these previous results (Balsdon et al., 2020), we found that perceptual decision sensitivity (d') was significantly decreased with just two fewer stimuli in the Less condition compared to those same (pmin) trials in the Free task (Wilcoxon sign rank Z = 3.88, p < 0.001, Bonferroni corrected for three comparisons), but four additional stimuli in the More condition resulted in only a small but not significant increase compared to the pmax trials in the Free task (Z = -1.53, p = 0.13, uncorrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the behavioral analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "e886a49e-6a62-4743-8514-4f24a3c1da36",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C33",
+      "claim": "Cross-validated model comparison provided significant evidence that observers were implementing a covert bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-validated model comparison provided significant evidence that observers were implementing a covert bound (mean relative increase in model log-likelihood = 0.048, bootstrapped p = 0.001, Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling analysis, with reference to Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "69370a97-515a-48ea-88c7-61939fc3fc03",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C34",
+      "claim": "There was no evidence that observers were implementing a covert bound on confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to what we found for the perceptual decision, there was no evidence that observers were implementing a covert bound on confidence: Implementing the same bound as the perceptual decision did not improve the fit (relative improvement with bound = \u22120.007, bootstrapped p = 0.11, uncorrected) and an independent bound actually significantly reduced the fit compared to continued accumulation (relative improvement = \u22120.014, p = 0.022, Bonferroni corrected for two comparisons; Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling analysis, with reference to Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "1114cffc-49fd-480f-a439-66eb1ca5f1bf",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C35",
+      "claim": "The best description of both perceptual and confidence responses was provided by a partially dissociated computational architecture where perceptual and confidence decisions are based on the same noisy representation of the sensory evidence, but confidence accumulation incurs additional noise and can continue after the completion of perceptual decision processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The best description of both perceptual and confidence responses was provided by a partially dissociated computational architecture (full details in Appendix 1), where perceptual and confidence decisions are based on the same noisy representation of the sensory evidence, but confidence accumulation incurs additional noise and can continue after the completion of perceptual decision processes (Figure 2d, and the predictions of this model for individual participants are show in Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling analysis, with references to Figures 2d and 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "290cc0b4-79e8-4f56-a716-028e24c9f6f6",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C36",
+      "claim": "The presented evidence accumulated over all samples explains substantial variance in observers' perceptual decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we find the presented evidence accumulated over all samples does explain substantial variance in observers' perceptual decisions (average \u03b2 = 0.77, t(19) = 6.48, p < 0.001), and confidence evaluations (with the evidence signed by the perceptual response; \u03b2 = 0.24, t(19) = 6.46, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the GLM analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "c3f4568f-708f-44c5-9d39-330434606d8b",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C37",
+      "claim": "The presented evidence accumulated over all samples explains substantial variance in observers' confidence evaluations.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we find the presented evidence accumulated over all samples does explain substantial variance in observers' perceptual decisions (average \u03b2 = 0.77, t(19) = 6.48, p < 0.001), and confidence evaluations (with the evidence signed by the perceptual response; \u03b2 = 0.24, t(19) = 6.46, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the GLM analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "fcb5f693-ca64-4b44-88e0-aedfd0ef2562",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C38",
+      "claim": "The total accumulated evidence in the More condition was not a significantly better predictor of observers' perceptual decisions than the evidence up to four samples prior to the response.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the total accumulated evidence in the More condition was not a significantly better predictor of the observers' perceptual decisions than the evidence up to four samples prior to the response (average difference in \u03b2 = 0.034, t(19) = 1.63, p = 0.12), while for the Same and Less conditions the total accumulated evidence was a significantly better predictor (Less: t(19) = 4.99, p < 0.001; Same: t(19) = 3.11, p = 0.006; causing a significant interaction between condition and sample accumulated to F(2,38) = 10.348, p = 0.001, Bonferroni corrected for three comparisons, Figure 2f, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the GLM analysis, with reference to Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "40a11baa-33b3-4797-89c3-27f02f54b6c1",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C39",
+      "claim": "For the Same and Less conditions, the total accumulated evidence was a significantly better predictor of perceptual decisions than evidence accumulated to four samples prior.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the total accumulated evidence in the More condition was not a significantly better predictor of the observers' perceptual decisions than the evidence up to four samples prior to the response (average difference in \u03b2 = 0.034, t(19) = 1.63, p = 0.12), while for the Same and Less conditions the total accumulated evidence was a significantly better predictor (Less: t(19) = 4.99, p < 0.001; Same: t(19) = 3.11, p = 0.006; causing a significant interaction between condition and sample accumulated to F(2,38) = 10.348, p = 0.001, Bonferroni corrected for three comparisons, Figure 2f, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the GLM analysis, with reference to Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "8814959b-15c5-47be-98f9-cb49116d7fab",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C40",
+      "claim": "The accumulated evidence up to the final sample in the More condition was a significantly better predictor of confidence than the evidence accumulated to four samples from the response.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the accumulated evidence up to the final sample in the More condition was a significantly better predictor of confidence than the evidence accumulated to four samples from the response (average difference in \u03b2 = 0.26, t(19) = 5.33, p < 0.001), supporting the prediction from the computational model analysis that observers integrated all the presented evidence for evaluating confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the GLM analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "ec55e92e-edf0-4e54-9ae4-3a727c620741",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C41",
+      "claim": "Spectral power in the 8 to 32 Hz frequency range could be used to classify perceptual decisions based on lateralised differences over motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial analysis suggested the spectral power in the 8 to 32 Hz frequency range (the 'alpha' and 'beta' bands) could be used to classify perceptual decisions based on lateralised differences over motor cortex (Appendix 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the EEG spectral analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "ec4ea784-72e6-413e-86f7-c93427ef1bd4",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C42",
+      "claim": "Training around \u22120.78 to 0.44 s from the time of the response in the Free task led to significantly better accuracy testing in the More condition than in the Less condition, prior to when the response was entered.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical comparison revealed substantial clusters of significant differences (Figure 3b): Training around \u22120.78 to 0.44 s from the time of the response in the Free task led to significantly better accuracy testing in the More condition than in the Less condition, prior to when the response was entered (for the cluster testing at \u22122.5 to \u22121.6 s Zave = 2.04, pcluster = 0.002; testing at \u22121.5 to \u22121 s, Zave = 1.95, pcluster = 0.01; testing at \u22120.8 to \u22120.3, Zave = 2.32, pcluster < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the cross-classification analysis, with reference to Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "ec4a9e78-805d-432e-989b-8bc4ca93fec1",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C43",
+      "claim": "Observers were not only committing to their perceptual decision early, but already preparing their motor response.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of findings suggests that observers were not only committing to their perceptual decision early, but already preparing their motor response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cross-classification analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "49df9d23-cd82-4f15-b422-35be57f609c5",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C44",
+      "claim": "The optimal evidence L accumulated over all samples could predict the strength of the classifier prediction at response time.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the optimal evidence L, accumulated over all samples, could predict the strength of the classifier prediction at response time (mean \u03b2 = 0.11, t(19) = 3.89, p < 0.001; Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the exploratory analysis, with reference to Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "ed2a3c81-99c5-4ea6-b683-e279fc73b3ef",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C45",
+      "claim": "In the More condition, the evidence accumulated up to four samples prior to the response still predicted the strength of the classifier prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "But, in the More condition, the evidence accumulated up to four samples prior to the response still predicted the strength of the classifier prediction (t(19) = 3.81, p = 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the exploratory analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "9c6cb56a-a936-4cc9-a4e1-1a64f6954d06",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C46",
+      "claim": "There was a significant interaction between condition and samples accumulated in predicting the strength of the classifier prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference between conditions over samples is evidenced by a significant interaction based on a repeated measures ANOVA (F(8,152) = 2.429, p = 0.05, after Bonferroni correction for three comparisons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the exploratory analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "fbf578fe-1faf-44c4-bde4-5b1f97b01bc6",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C47",
+      "claim": "The optimal observer must encode the orientation of the stimulus, estimate the decision update based on the categories, and add this to the accumulated evidence for discriminating between the categories.",
+      "claim_type": "EXPLICIT",
+      "source": "To perform this task the optimal observer must encode the orientation of the stimulus, estimate the decision update based on the categories, and add this to the accumulated evidence for discriminating between the categories (Wyart et al., 2012; Wyart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the optimal computation supported by citations to Wyart et al. (2012, 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "ff04700d-70d1-46f2-8b80-ff1ad680c0fd",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C48",
+      "claim": "The precision of the representations of stimulus orientation, momentary decision update, and accumulated evidence showed distinct time courses and relied on distinct patterns of EEG activity over scalp topography.",
+      "claim_type": "EXPLICIT",
+      "source": "The precision of the representations of these variables showed distinct time courses and relied on distinct patterns of EEG activity over scalp topography (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the EEG encoding analysis, with reference to Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "9b0dd18f-3cc9-4a54-afce-eab18a78051d",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C49",
+      "claim": "There was a transient representation of stimulus orientation localised over occipital electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a transient representation of stimulus orientation localised over occipital electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the EEG encoding analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "d0720f88-162e-4a58-9d55-3ecf819603b1",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C50",
+      "claim": "The representation of the momentary decision update was maintained for a longer duration, initially supported by occipital electrodes, then increasingly localised over central-parietal electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The representation of the momentary decision update was maintained for a longer duration, initially supported by occipital electrodes, then increasingly localised over central-parietal electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the EEG encoding analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "51a72020-68c5-4c2b-a099-7a81f8abedec",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C51",
+      "claim": "The representation of the accumulated evidence was sustained even longer and relied on both frontal and occipital electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The representation of the accumulated evidence was sustained even longer and relied on both frontal and occipital electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the EEG encoding analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "403fcb9b-3ed5-4ed7-bace-61de04258061",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C52",
+      "claim": "The precision of the representation of stimulus orientation did not significantly vary based on whether behaviour matched the optimal response.",
+      "claim_type": "EXPLICIT",
+      "source": "For each variable, we estimated the representation precision separately for epochs leading to behavioural responses that differed from the optimal response (based on L), and responses that matched those of the optimal observer (Replay task epochs only; Figure 4c; Appendix 3). For perceptual decisions, the optimal observer responds with the correct category. For confidence evaluations, the optimal observer gives high confidence on trials with greater than the median evidence (over all trials) for their perceptual response. The precision of the representation of stimulus orientation did not significantly vary based on whether behaviour matched the optimal response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the behavioral comparison analysis, with reference to Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "6cda6139-136a-4023-bc70-67c4b4fa8096",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C53",
+      "claim": "The representation precision of the momentary decision update showed a significant effect for the perceptual decision from 380 to 468 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The representation precision of the momentary decision update showed a significant effect for the perceptual decision from 380 to 468 ms (Favg(1,19) = 7.97, pcluster = 0.008) and a significant interaction between perceptual and confidence responses from 396 to 468 ms (Favg(1,19) = 6.66, pcluster = 0.022) and from 716 to 856 ms (Favg(1,19) = 10.75, pcluster < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the behavioral comparison analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "d42a5fa3-e81c-4230-872e-7cd59318fe13",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C54",
+      "claim": "Representation precision of accumulated evidence was significantly reduced in epochs leading to non-optimal perceptual decisions from 108 ms post stimulus onset to the end of the epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "Representation precision was significantly reduced in epochs leading to non-optimal perceptual decisions from 108 ms post stimulus onset to the end of the epoch (Favg(1,19) = 13.65, pcluster <0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the behavioral comparison analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "8ff94965-2d08-4196-b2cc-f88cb5093e84",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C55",
+      "claim": "There was a significant interaction between perceptual and confidence responses in the representation precision of accumulated evidence from 696 to 836 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there was a significant interaction with confidence from 696 to 836 ms (Favg(1,19) = 8.72, pcluster = 0.005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the behavioral comparison analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "9509c0d6-074c-482c-98eb-6addb60cfe56",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C56",
+      "claim": "The precision of the early representation of accumulated evidence was significantly attenuated for the last four samples of the More condition compared to the last four samples of the Less condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the precision of the early representation of accumulated evidence was significantly attenuated for the last four samples of the More condition (in which observers were likely to have already committed to a decision), compared to the last four samples of the Less condition (where observers were unlikely to have committed to a decision; from the start of the epoch to 424 ms, Figure 4d; tavg(19) = \u22125.19, pcluster<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the condition comparison analysis, with reference to Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "e905a19a-1f20-45f1-a002-591d1cfff9be",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C57",
+      "claim": "Differences in representation precision between More and Less conditions were not present for the encoding of stimulus orientation nor the decision update.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences in representation precision were not present for the encoding of stimulus orientation, nor the decision update, suggesting that these processes may reflect input to perceptual evidence accumulation, but not the accumulation process itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the condition comparison analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "3a3da991-317e-4a18-90b7-2737750c5baf",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C58",
+      "claim": "Signals related to internal evidence for perceptual decisions were initially clustered over posterior electrodes, becoming dispersed over more anterior electrodes late in the epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "For perceptual decision-making, signals related to L* were initially clustered over posterior electrodes, becoming dispersed over more anterior electrodes late in the epoch (Figure 5a, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Bayesian scan statistics analysis, with reference to Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "ee490ca6-c4b4-48a5-95b6-92f6c71c1760",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C59",
+      "claim": "For confidence, two co-temporal clusters in posterior and anterior electrodes emerged from 668 ms to 824 ms from stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "For confidence, we found two co-temporal clusters in posterior and anterior electrodes emerging from 668 ms to 824 ms from stimulus onset (Figure 5a, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Bayesian scan statistics analysis, with reference to Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "270b2f59-9f71-4b9b-adfb-c8d8fc08f713",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C60",
+      "claim": "An early posterior cluster of signals was strongly related to internal evidence for perceptual decisions but was not diagnostic of confidence evaluations.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 5a, we highlight an early posterior cluster of signals strongly related to L* for perceptual decisions, that was not diagnostic of confidence evaluations (in fact the evidence was in favour of the null hypothesis; summed log likelihood ratio = \u22121176).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Bayesian scan statistics analysis, with reference to Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "2f9c1430-fc52-4c9a-9a3c-953e541335e8",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C61",
+      "claim": "Combining the perceptual and confidence clusters improves the representation precision.",
+      "claim_type": "EXPLICIT",
+      "source": "That the information from these clusters is not redundant is evident from the fact that combining the clusters improves the representation precision (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the cluster analysis, with reference to Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "6a885b8c-84f4-44fd-b93f-555961b17a4a",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C62",
+      "claim": "The representation precision of the early posterior cluster was attenuated for the last four samples of the More condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the previous analysis (Figure 4d), the representation precision of the early posterior cluster was attenuated for the last four samples of the More condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the cluster analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "c22272eb-0af6-4e94-9518-d02f63743d79",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C63",
+      "claim": "The representation precision of the confidence cluster was maintained for the last four samples of the More condition.",
+      "claim_type": "EXPLICIT",
+      "source": "But, the representation precision of the confidence cluster was maintained (a repeated measures ANOVA revealed a significant interaction between cluster and condition for decoding precision in the last four samples, F(1,19) = 32.00, p = 0.001, Bonferroni corrected for three comparisons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the cluster analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "26bd1fdd-6554-4c27-b1a2-21eb23a425a3",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C64",
+      "claim": "The estimate of single-sample inference error from the confidence cluster representation was significantly correlated with the single-sample inference error estimated from the computational model of confidence ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "This estimate of the single-sample inference error was significantly correlated with the single-sample inference error estimated from the computational model of confidence ratings (t(19) = 5.12, p < 0.001), and this correlation was significantly greater than the correlation with the error estimated from the model of perceptual decisions alone (t(19) = 2.62, p = 0.017; see Appendix 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the model comparison analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "ed6770fc-a9eb-46ec-a9b7-1412ec974193",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C65",
+      "claim": "Noise Max epochs showed a greater increase in current density power over time compared to Noise Min epochs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Noise Max epochs showed a greater increase in current density power over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the source localization analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "e2096dab-0143-423e-9075-9cc5cc78084c",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C66",
+      "claim": "Significant differences between Noise Max and Noise Min epochs first emerged in the superior parietal cortex from 276 to 304 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant differences first emerged in the superior parietal cortex (Figure 5d; 276 to 304 ms; tavg(19) = 2.37, pcluster = 0.016, re-emerging at 596 to 748 ms; tavg(19) = 2.53, pcluster = 0.016; and 912 ms; tavg(19) = 2.50, pcluster = 0.014), and then in the orbitofrontal cortex (OFC; 516 to 556 ms; tavg(19) = 2.30, pcluster = 0.022, re-emerging at 660 to 772 ms; tavg(19) = 2.79, pcluster = 0.032, and 824 to 1000 ms; tavg(19) = 2.60, pcluster = 0.022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the source localization analysis, with reference to Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "c5b52831-900e-437a-9c07-1e6d04152cb8",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C67",
+      "claim": "Significant differences between Noise Max and Noise Min epochs emerged in the orbitofrontal cortex from 516 to 556 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant differences first emerged in the superior parietal cortex (Figure 5d; 276 to 304 ms; tavg(19) = 2.37, pcluster = 0.016, re-emerging at 596 to 748 ms; tavg(19) = 2.53, pcluster = 0.016; and 912 ms; tavg(19) = 2.50, pcluster = 0.014), and then in the orbitofrontal cortex (OFC; 516 to 556 ms; tavg(19) = 2.30, pcluster = 0.022, re-emerging at 660 to 772 ms; tavg(19) = 2.79, pcluster = 0.032, and 824 to 1000 ms; tavg(19) = 2.60, pcluster = 0.022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the source localization analysis, with reference to Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "db235176-52cb-47d1-a5fb-9d5d8a884426",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C68",
+      "claim": "No differences in the rostral middle frontal cortex nor lateral occipital cortex survived cluster correction.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences in the rostral middle frontal cortex nor lateral occipital cortex survived cluster correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the source localization analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "19fa2e1c-8ba6-4dac-be2b-65769cd1a0b1",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C69",
+      "claim": "Activity localised to the superior parietal cortex reflected stimulus driven computations.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the activity localised to the superior parietal cortex reflected stimulus driven computations (the consecutive peaks correspond temporally to the response to subsequent stimuli), the activity localised to the orbitofrontal cortex was more indicative of an accumulation process across samples (a smoother increase in signal over time).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the temporal dynamics observed in the source localization analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "805a5af0-0b5a-4075-b52f-e3d61ab365a2",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C70",
+      "claim": "Activity localised to the orbitofrontal cortex was more indicative of an accumulation process across samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the activity localised to the superior parietal cortex reflected stimulus driven computations (the consecutive peaks correspond temporally to the response to subsequent stimuli), the activity localised to the orbitofrontal cortex was more indicative of an accumulation process across samples (a smoother increase in signal over time).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the temporal dynamics observed in the source localization analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "fcec54ab-d2ac-480c-8b60-4c05b0fc7380",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C71",
+      "claim": "The activity localised to the orbitofrontal cortex predicted observers' confidence ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the activity localised to the orbitofrontal cortex predicted observers' confidence ratings, based on the predictions of a generalised linear model with 90/10 cross validation: the standardised regression coefficients increased up to and continued after the perceptual decision response (Figure 5e, a significant cluster was located from \u2212300 to 520 ms around the time of the response; tave(19) = 3.46, cluster-corrected p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the exploratory GLM analysis, with reference to Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "c3fd3a4a-711c-47eb-91c0-3e9df2a78dca",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C72",
+      "claim": "Covert decisions could trigger the motor preparation for pressing the response key.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that covert decisions could trigger the motor preparation for pressing the response key.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cross-classification analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "ddda3c1f-7c54-4ba0-bf0f-3c5cde600457",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C73",
+      "claim": "When observers committed to perceptual decisions prematurely, only the early part of the representation of accumulated evidence was attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "When observers committed to perceptual decisions prematurely, only the early part of the representation of accumulated evidence was attenuated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the EEG representation analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "57f8d7cd-7ddf-4309-97c6-228069cae3c2",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C74",
+      "claim": "The representations of stimulus orientation and decision update did not substantially change after committing to a perceptual decision.",
+      "claim_type": "EXPLICIT",
+      "source": "The representations of stimulus orientation and decision update (Wyart et al., 2012; Wyart et al., 2015; Weiss et al., 2021), which are necessary input for the perceptual decision, did not substantially change after committing to a perceptual decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the EEG representation analysis, with citations to related work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "9fee3a60-062c-4705-8ca1-7e9625a237c8",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C75",
+      "claim": "Initial perceptual processing likely remained important for the continued accumulation of evidence for evaluating confidence even after the completion of perceptual decision processes.",
+      "claim_type": "EXPLICIT",
+      "source": "This initial perceptual processing stage likely remained important for the continued accumulation of evidence for evaluating confidence (even after the completion of perceptual decision processes), though it could also be that these processes are automatically triggered by stimulus onset irrespective of whether the evidence is being accumulated for decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the pattern of neural representations observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "31703734-3e11-43f4-803d-6c729690ae18",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C76",
+      "claim": "The P300 and Central Parietal Positivity (CPP) have been found as neural correlates of confidence magnitude related to the accumulation of perceptual decision evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Confidence should increase with increasing evidence for the perceptual decision. It is therefore unsurprising that the neural correlates of confidence magnitude have found similar EEG markers as those related to the accumulation of the underlying perceptual decision evidence: the P300 (Gherman and Philiastides, 2015; Desender et al., 2016; Desender et al., 2019; Zakrzewski et al., 2019; Rausch et al., 2020) and Central Parietal Positivity (CPP; Boldt et al., 2019; Herding et al., 2019, indeed we show a similar effect in Appendix 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "eac02f1a-6821-47fb-9773-91cad13ea6ea",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C77",
+      "claim": "Activity localised to the superior parietal and orbitofrontal cortices tracked the internal evidence for confidence throughout decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity localised to the superior parietal and orbitofrontal cortices was found to track this internal evidence for confidence throughout decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the source localization analysis of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "bcfae75f-25d4-4655-9208-b256fb11e1d3",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C78",
+      "claim": "Confidence is based on information coded in parietal cortex where the underlying perceptual decision evidence is integrated.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in superior parietal cortex could be linked with findings from electrophysiology that suggest that confidence is based on information coded in parietal cortex, where the underlying perceptual decision evidence is integrated (Kiani and Shadlen, 2009; Rutishauser et al., 2018; though at least a subset of these neurons reflect bounded accumulation, which is in contrast with the continued confidence accumulation described in this experiment; Kiani et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the current findings to previous electrophysiology studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "c2478103-ab33-4634-ae6f-4c78b797ecfe",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C79",
+      "claim": "The orbitofrontal cortex has neural coding associated with stimulus value.",
+      "claim_type": "EXPLICIT",
+      "source": "Early electrophysiological investigation into the function of the orbitofrontal cortex revealed neural coding associated with stimulus value (Thorpe et al., 1983), which has since been linked with a confidence-modulated signal of outcome-expectation (Kepecs et al., 2008; and in human fMRI; Rolls et al., 2010) and recently, shown to be domain-general (single OFC neurons were associated with confidence in both olfactory and auditory tasks; Masset et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Thorpe et al. (1983), Kepecs et al. (2008), Rolls et al. (2010), and Masset et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "7959975e-ead8-478e-8eba-762dd7e238e2",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C80",
+      "claim": "The orbitofrontal cortex has been linked with a confidence-modulated signal of outcome-expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "Early electrophysiological investigation into the function of the orbitofrontal cortex revealed neural coding associated with stimulus value (Thorpe et al., 1983), which has since been linked with a confidence-modulated signal of outcome-expectation (Kepecs et al., 2008; and in human fMRI; Rolls et al., 2010) and recently, shown to be domain-general (single OFC neurons were associated with confidence in both olfactory and auditory tasks; Masset et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kepecs et al. (2008) and Rolls et al. (2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "66731704-e383-4e9c-8f3a-f3e3326d726b",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C81",
+      "claim": "Single OFC neurons were associated with confidence in both olfactory and auditory tasks, showing domain-general confidence coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Early electrophysiological investigation into the function of the orbitofrontal cortex revealed neural coding associated with stimulus value (Thorpe et al., 1983), which has since been linked with a confidence-modulated signal of outcome-expectation (Kepecs et al., 2008; and in human fMRI; Rolls et al., 2010) and recently, shown to be domain-general (single OFC neurons were associated with confidence in both olfactory and auditory tasks; Masset et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Masset et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "e45fa91d-f4d7-4e5e-98f7-65fd2f7fe406",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C82",
+      "claim": "Neural signatures of confidence evidence encoding were present throughout the process of making a perceptual decision.",
+      "claim_type": "EXPLICIT",
+      "source": "These neural signatures of confidence evidence encoding were present throughout the process of making a perceptual decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the temporal analysis of neural representations in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "5938d993-ff51-466c-9a01-acd5c467f0a9",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C83",
+      "claim": "Confidence could be computed online, alongside perceptual evidence accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with more recent evidence suggesting that confidence could be computed online, alongside perceptual evidence accumulation (Zizlsperger et al., 2014; Gherman and Philiastides, 2015; Balsdon et al., 2020), as opposed to assessing the evidence in favour of the perceptual decision only after committing to that decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zizlsperger et al. (2014), Gherman and Philiastides (2015), and Balsdon et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "4145232f-c7be-4074-8ba0-fc8c269c0a25",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C84",
+      "claim": "The best description of confidence behaviour was an accumulation process that was partially dissociable from perceptual evidence accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational model comparison supported this interpretation, showing the best description of confidence behaviour was an accumulation process that was partially dissociable from perceptual evidence accumulation (Appendix 1; replicating our previous analysis, Balsdon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational modeling analysis, replicating previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "d9b35174-3549-41f8-9d19-c6aa10f9cf62",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C85",
+      "claim": "The partial dissociation between perceptual and confidence processes constrains confidence by perceptual suboptimalities while allowing additional processing to independently shape confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial dissociation mediates the ongoing debate between single-channel (for example, Maniscalco and Lau, 2016) and dual-channel (for example, Charles et al., 2014) models, as it constrains confidence by perceptual suboptimalities, at the same time as allowing additional processing to independently shape confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the computational modeling results in the context of theoretical debates, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "85b98092-af9d-468c-b1e2-ef3f223d2d52",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C86",
+      "claim": "The combination of partial dissociation and online monitoring could allow for metacognitive control of perceptual evidence accumulation to flexibly balance perceptual accuracy against temporal efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of this partial dissociation and online monitoring could allow for metacognitive control of perceptual evidence accumulation, to flexibly balance perceptual accuracy against temporal efficiency, by bounding perceptual evidence accumulation according to contemporaneous confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the functional implications of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "766b45fa-9c92-4e69-8927-584a69006a75",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C87",
+      "claim": "The perceptual representation neglected additional evidence following premature decision commitment whilst the confidence representation continued to track the updated evidence independently of decision commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "These neural representations were partially dissociable in that the perceptual representation neglected additional evidence following premature decision commitment whilst the confidence representation continued to track the updated evidence independently of decision commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the neural representation analyses of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "9888a07f-91d2-4277-948f-bcdd04664499",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C88",
+      "claim": "The partial dissociation between perceptual and confidence neural representations validates the predictions of the computational model.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial dissociation validates the predictions of the computational model and provides a framework for the cognitive architecture underlying the distinction between perception and confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the neural findings to the computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "e421e580-21a8-4a3c-9b70-116f7c6b5d56",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C89",
+      "claim": "The neural resources involved in the confidence representation can be recruited independently of perceptual processes, implying a specific neural circuit for the computation of confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "That the neural resources involved in the confidence representation can be recruited independently of perceptual processes implies a specific neural circuit for the computation of confidence, a necessary feature of a general metacognitive mechanism flexibly employed to monitor the validity of any cognitive process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the dissociation observed in the neural representations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "cd2c233d-c7c0-4201-b687-e54510ed5276",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C90",
+      "claim": "A specific neural circuit for confidence computation is a necessary feature of a general metacognitive mechanism flexibly employed to monitor the validity of any cognitive process.",
+      "claim_type": "EXPLICIT",
+      "source": "That the neural resources involved in the confidence representation can be recruited independently of perceptual processes implies a specific neural circuit for the computation of confidence, a necessary feature of a general metacognitive mechanism flexibly employed to monitor the validity of any cognitive process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference about the implications of the findings for understanding metacognition.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "015e3c01-0312-4236-8177-6cf3e25d1265",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C91",
+      "claim": "Twenty participants were recruited from the local cognitive science mailing list and by word of mouth.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 20 participants were recruited from the local cognitive science mailing list (RISC) and by word of mouth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the participant recruitment for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "921a54f9-6918-45aa-9520-a9e13dac58f0",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C92",
+      "claim": "No participant met the pre-registered exclusion criteria of chance-level performance or excessive EEG noise.",
+      "claim_type": "EXPLICIT",
+      "source": "No participant met the pre-registered (https://osf.io/346pe/) exclusion criteria of chance-level performance or excessive EEG noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of the data quality from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "15250993-cf99-44ca-9a12-edf1213a0c9f",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C93",
+      "claim": "Stimuli were oriented Gabor patches displayed at 70% contrast, subtending four dva and with spatial frequency two cyc/deg.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli were oriented Gabor patches displayed at 70% contrast, subtending four dva and with spatial frequency two cyc/deg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "b203a599-90b4-4615-9a2c-52623b7cee2f",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C94",
+      "claim": "On each trial the orientations of the presented Gabors were drawn from one of two circular Gaussian (Von Mises) distributions centred on +/- 45\u00b0 from vertical with concentration \u03ba = 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "On each trial the orientations of the presented Gabors were drawn from one of two circular Gaussian (Von Mises) distributions centred on +/- 45\u00b0 from vertical (henceforth referred to as the 'orange' and 'blue' distributions, respectively), with concentration \u03ba = 0.5 (shown in Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the stimulus generation procedure, with reference to Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "3e576eec-46ec-48cf-8961-f6c9494c8467",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C95",
+      "claim": "In the Free task, observers were continually shown samples until they entered their response.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'Free' task, observers were continually shown samples (up to 40) until they entered their response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Free task procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "86ae03da-c062-4f5b-8b8d-177188144b99",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C96",
+      "claim": "In the Replay task, observers were shown a specific number of samples and could only enter their response after the sequence finished.",
+      "claim_type": "EXPLICIT",
+      "source": "After completing the Free task, observers then completed the Replay task. In this task they were shown a specific number of samples and could only enter their response after the sequence finished, signalled by the fixation point turning red.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Replay task procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "77cf28d6-1436-42ed-8306-38989813db14",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C97",
+      "claim": "In the Less condition, observers were shown two fewer samples than the minimum they had chosen to respond to on that predefined sequence in the Free task.",
+      "claim_type": "EXPLICIT",
+      "source": "There were three intermixed conditions: In the Less condition observers were shown two fewer samples than the minimum they had chosen to respond to on that predefined sequence in the Free task; In the Same condition observers were shown the median number of samples from that predefined sequence; in the More condition observers were shown four additional samples compared to the maximum number they chose to respond to on that sequence in the Free task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Less condition in the Replay task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "d16287d6-1109-440c-9478-bba6037a3638",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C98",
+      "claim": "In the Same condition, observers were shown the median number of samples from that predefined sequence in the Free task.",
+      "claim_type": "EXPLICIT",
+      "source": "There were three intermixed conditions: In the Less condition observers were shown two fewer samples than the minimum they had chosen to respond to on that predefined sequence in the Free task; In the Same condition observers were shown the median number of samples from that predefined sequence; in the More condition observers were shown four additional samples compared to the maximum number they chose to respond to on that sequence in the Free task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Same condition in the Replay task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "25053047-ab36-4ada-9f1c-bb570280b003",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "claim_id": "C99",
+      "claim": "In the More condition, observers were shown four additional samples compared to the maximum number they chose to respond to on that sequence in the Free task.",
+      "claim_type": "EXPLICIT",
+      "source": "There were three intermixed conditions: In the Less condition observers were shown two fewer samples than the minimum they had chosen to respond to on that predefined sequence in the Free task; In the Same condition observers were shown the median number of samples from that predefined sequence; in the More condition observers were shown four additional samples compared to the maximum number they chose to respond to on that sequence in the Free task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the More condition in the Replay task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Observers commit to perceptual decisions prematurely in the More condition while continuing to accumulate evidence for confidence evaluation. This is demonstrated through behavioral performance showing no significant improvement with additional stimuli (C31-C32), computational modeling revealing a covert bound for perceptual decisions but not confidence (C33-C35), GLM analysis showing differential evidence integration patterns (C38-C40), and motor preparation signatures appearing before the response cue (C43, C72).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple converging lines of evidence support premature decision commitment: behavioral data (C31-C32), computational modeling with cross-validation (C33-C35), GLM regression analyses (C38-C40), and neural signatures of motor preparation (C43, C72). The statistical tests are appropriate with proper corrections, and the findings replicate prior work (Balsdon et al., 2020).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "e1a972b8-ad41-4575-80d7-39678a42b880",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Premature decision commitments are revealed by spectral power patterns (8-32 Hz) over motor cortex, with cross-classification showing significantly better accuracy in the More vs Less condition up to 2.5 seconds before response entry. The strength of motor response signals is predicted by accumulated evidence up to four samples prior to response in the More condition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cross-classification analysis with cluster correction (C42) provides strong evidence for early motor preparation. The finding that evidence accumulated up to four samples prior still predicts motor signals in the More condition (C45-C46) supports the interpretation of premature commitment. Statistical tests include appropriate corrections and the approach is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "34a19ee0-e9f0-4014-b518-fa163c191aad",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Distinct neural representations of stimulus orientation, decision update, and accumulated evidence show different temporal dynamics and topographies. After premature decision commitment, the early representation of accumulated evidence is attenuated (C56, C73) while representations of stimulus orientation and decision update remain unchanged (C57, C74), demonstrating partial dissociation between perceptual and confidence processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The encoding analysis using ridge regression with cross-validation provides robust evidence for distinct representations (C48-C51). The comparison between optimal and suboptimal trials (C52-C55) and between More/Less conditions (C56-C57) with cluster-corrected statistics supports the dissociation. The selective attenuation of accumulated evidence representation after decision commitment is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "5a70da6f-0778-481c-9ad5-300c4e7f790c",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bayesian scan statistics identified spatially and temporally distinct clusters for perceptual decisions (early posterior) and confidence evaluation (co-temporal posterior and anterior clusters emerging 668-824 ms post-stimulus). The confidence cluster representation is maintained after decision commitment in the More condition while the perceptual cluster is attenuated, and correlates more strongly with confidence model parameters than perceptual model parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Bayesian scan statistics approach provides a principled method for identifying behaviorally relevant signals (C58-C60). The finding that combining clusters improves precision (C61) and the differential maintenance in More condition (C62-C63) with significant interaction (F(1,19)=32.00, p=0.001) strongly support dissociation. The correlation with computational model parameters (C64) validates the functional interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "2fbab750-0afb-47d9-9e86-e29433109a36",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Source localization reveals that activity in superior parietal cortex (276-304 ms, stimulus-driven) and orbitofrontal cortex (516-556 ms, accumulation-like) tracks internal evidence for confidence. OFC activity predicts confidence ratings with significant regression weights from -300 to 520 ms around response time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Source localization using minimum norm imaging with cluster-corrected comparisons between Noise Max/Min epochs provides robust evidence (C66-C67). The temporal dynamics distinguish stimulus-driven (parietal) from accumulation (OFC) processes (C69-C70). The GLM prediction of confidence ratings from OFC activity (C71) with cross-validation strengthens the functional interpretation. However, source localization from EEG has inherent spatial resolution limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "b9a944d6-20ad-4a15-8446-b32ac5971c43",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The optimal presented evidence (accumulated log-likelihood) explains substantial variance in both perceptual decisions (\u03b2=0.77, t(19)=6.48, p<0.001) and confidence evaluations (\u03b2=0.24, t(19)=6.46, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The GLM analysis with appropriate statistical tests demonstrates that optimal evidence L predicts both perceptual and confidence responses. The lower beta for confidence is expected given additional noise sources. The analysis validates that observers' internal evidence L* correlates with optimal evidence L.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "bcef4d5a-bd11-4beb-bb25-d9e195dfefa5",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The optimal observer computation requires encoding stimulus orientation, estimating decision updates, and accumulating evidence. These variables show distinct temporal dynamics and topographic patterns in EEG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The description of optimal computation is well-grounded in prior work (Wyart et al., 2012, 2015). The finding of distinct representations (C48) is supported by the encoding analysis, though this is more of a methodological validation than a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "f4b1ff5b-5685-45d9-8e18-447c122a2bad",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The partial dissociation between perceptual and confidence processes validates computational model predictions and implies a specific neural circuit for confidence computation that can be recruited independently of perceptual processes, potentially enabling metacognitive control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the partial dissociation is well-supported by data (C88), the broader implications about metacognitive control (C86) and general metacognitive mechanisms (C89-C90) are speculative inferences. These claims extend beyond what the current data directly demonstrate and would require additional experiments testing metacognitive control and domain-generality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "323e4b21-ea48-49f5-a29c-5ad059fc735f",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings connect to prior literature showing parietal cortex involvement in evidence integration and OFC involvement in confidence-modulated outcome expectation. The results support online confidence computation alongside perceptual accumulation and mediate between single-channel and dual-channel models through partial dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims appropriately contextualize the current findings within existing literature. The citations are relevant and the interpretations are reasonable. The partial dissociation framework (C85) provides a useful synthesis of competing theoretical models, though this is more interpretive than a direct empirical result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "dc76f032-2819-44d5-b133-f4b787a020c4",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Twenty participants completed Free and Replay tasks with oriented Gabor stimuli drawn from overlapping Von Mises distributions. The Replay task manipulated evidence presentation (Less: pmin-2, Same: pmed, More: pmax+4 samples) relative to Free task behavior. No participants were excluded based on pre-registered criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological details are clearly described and appropriate for the experimental design. The pre-registration (C92) and manipulation based on individual Free task behavior provide good experimental control. Sample size (N=20) is reasonable for within-subject EEG design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    },
+    {
+      "id": "203deabf-892c-42c9-99ed-4180329c338a",
+      "content_id": "0b2699c5-9fc0-44b6-8f96-0754c4ff3fa3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establish that perceptual confidence evaluates decision validity, involves metacognitive processes, can integrate post-decisional evidence, may rely on non-perceptual information, and has been linked to prefrontal cortex activity in prior studies. Neural correlates include P300 and CPP signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established background claims supported by appropriate citations to prior literature. They provide necessary context but are not novel findings from this study. The citations appear accurate and relevant to the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:43.020188Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7e029b3c-6399-477e-bd72-e590ee46870a",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "18743dfd-0d16-47b5-a0e5-c1cd7c38b381",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "2ea95bdd-fafe-4dd8-892e-ac033d9abfbc",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "e886a49e-6a62-4743-8514-4f24a3c1da36",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "69370a97-515a-48ea-88c7-61939fc3fc03",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "1114cffc-49fd-480f-a439-66eb1ca5f1bf",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "fcb5f693-ca64-4b44-88e0-aedfd0ef2562",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "40a11baa-33b3-4797-89c3-27f02f54b6c1",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "8814959b-15c5-47be-98f9-cb49116d7fab",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "ec4a9e78-805d-432e-989b-8bc4ca93fec1",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "c3fd3a4a-711c-47eb-91c0-3e9df2a78dca",
+      "result_id": "df1552f2-1d94-4c64-a5c8-1dd5811469a9"
+    },
+    {
+      "claim_id": "1dbc2ae6-e0ad-41c1-ac8b-65484fa7f188",
+      "result_id": "e1a972b8-ad41-4575-80d7-39678a42b880"
+    },
+    {
+      "claim_id": "c9a77637-1933-4932-abc9-01d069be7ac1",
+      "result_id": "e1a972b8-ad41-4575-80d7-39678a42b880"
+    },
+    {
+      "claim_id": "ec55e92e-edf0-4e54-9ae4-3a727c620741",
+      "result_id": "e1a972b8-ad41-4575-80d7-39678a42b880"
+    },
+    {
+      "claim_id": "ec4ea784-72e6-413e-86f7-c93427ef1bd4",
+      "result_id": "e1a972b8-ad41-4575-80d7-39678a42b880"
+    },
+    {
+      "claim_id": "49df9d23-cd82-4f15-b422-35be57f609c5",
+      "result_id": "e1a972b8-ad41-4575-80d7-39678a42b880"
+    },
+    {
+      "claim_id": "ed2a3c81-99c5-4ea6-b683-e279fc73b3ef",
+      "result_id": "e1a972b8-ad41-4575-80d7-39678a42b880"
+    },
+    {
+      "claim_id": "9c6cb56a-a936-4cc9-a4e1-1a64f6954d06",
+      "result_id": "e1a972b8-ad41-4575-80d7-39678a42b880"
+    },
+    {
+      "claim_id": "1eb798f3-db1b-425d-af86-0504b7c97dc2",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "9dbbccb0-886e-4ef6-8831-bbb7971ff2c6",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "ff04700d-70d1-46f2-8b80-ff1ad680c0fd",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "9b0dd18f-3cc9-4a54-afce-eab18a78051d",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "d0720f88-162e-4a58-9d55-3ecf819603b1",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "51a72020-68c5-4c2b-a099-7a81f8abedec",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "403fcb9b-3ed5-4ed7-bace-61de04258061",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "6cda6139-136a-4023-bc70-67c4b4fa8096",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "d42a5fa3-e81c-4230-872e-7cd59318fe13",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "8ff94965-2d08-4196-b2cc-f88cb5093e84",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "9509c0d6-074c-482c-98eb-6addb60cfe56",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "e905a19a-1f20-45f1-a002-591d1cfff9be",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "ddda3c1f-7c54-4ba0-bf0f-3c5cde600457",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "57f8d7cd-7ddf-4309-97c6-228069cae3c2",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "766b45fa-9c92-4e69-8927-584a69006a75",
+      "result_id": "34a19ee0-e9f0-4014-b518-fa163c191aad"
+    },
+    {
+      "claim_id": "3a3da991-317e-4a18-90b7-2737750c5baf",
+      "result_id": "5a70da6f-0778-481c-9ad5-300c4e7f790c"
+    },
+    {
+      "claim_id": "ee490ca6-c4b4-48a5-95b6-92f6c71c1760",
+      "result_id": "5a70da6f-0778-481c-9ad5-300c4e7f790c"
+    },
+    {
+      "claim_id": "270b2f59-9f71-4b9b-adfb-c8d8fc08f713",
+      "result_id": "5a70da6f-0778-481c-9ad5-300c4e7f790c"
+    },
+    {
+      "claim_id": "2f9c1430-fc52-4c9a-9a3c-953e541335e8",
+      "result_id": "5a70da6f-0778-481c-9ad5-300c4e7f790c"
+    },
+    {
+      "claim_id": "6a885b8c-84f4-44fd-b93f-555961b17a4a",
+      "result_id": "5a70da6f-0778-481c-9ad5-300c4e7f790c"
+    },
+    {
+      "claim_id": "c22272eb-0af6-4e94-9518-d02f63743d79",
+      "result_id": "5a70da6f-0778-481c-9ad5-300c4e7f790c"
+    },
+    {
+      "claim_id": "26bd1fdd-6554-4c27-b1a2-21eb23a425a3",
+      "result_id": "5a70da6f-0778-481c-9ad5-300c4e7f790c"
+    },
+    {
+      "claim_id": "ed6770fc-a9eb-46ec-a9b7-1412ec974193",
+      "result_id": "2fbab750-0afb-47d9-9e86-e29433109a36"
+    },
+    {
+      "claim_id": "e2096dab-0143-423e-9075-9cc5cc78084c",
+      "result_id": "2fbab750-0afb-47d9-9e86-e29433109a36"
+    },
+    {
+      "claim_id": "c5b52831-900e-437a-9c07-1e6d04152cb8",
+      "result_id": "2fbab750-0afb-47d9-9e86-e29433109a36"
+    },
+    {
+      "claim_id": "db235176-52cb-47d1-a5fb-9d5d8a884426",
+      "result_id": "2fbab750-0afb-47d9-9e86-e29433109a36"
+    },
+    {
+      "claim_id": "19fa2e1c-8ba6-4dac-be2b-65769cd1a0b1",
+      "result_id": "2fbab750-0afb-47d9-9e86-e29433109a36"
+    },
+    {
+      "claim_id": "805a5af0-0b5a-4075-b52f-e3d61ab365a2",
+      "result_id": "2fbab750-0afb-47d9-9e86-e29433109a36"
+    },
+    {
+      "claim_id": "fcec54ab-d2ac-480c-8b60-4c05b0fc7380",
+      "result_id": "2fbab750-0afb-47d9-9e86-e29433109a36"
+    },
+    {
+      "claim_id": "eac02f1a-6821-47fb-9773-91cad13ea6ea",
+      "result_id": "2fbab750-0afb-47d9-9e86-e29433109a36"
+    },
+    {
+      "claim_id": "290cc0b4-79e8-4f56-a716-028e24c9f6f6",
+      "result_id": "b9a944d6-20ad-4a15-8446-b32ac5971c43"
+    },
+    {
+      "claim_id": "c3f4568f-708f-44c5-9d39-330434606d8b",
+      "result_id": "b9a944d6-20ad-4a15-8446-b32ac5971c43"
+    },
+    {
+      "claim_id": "fbf578fe-1faf-44c4-bde4-5b1f97b01bc6",
+      "result_id": "bcef4d5a-bd11-4beb-bb25-d9e195dfefa5"
+    },
+    {
+      "claim_id": "ff04700d-70d1-46f2-8b80-ff1ad680c0fd",
+      "result_id": "bcef4d5a-bd11-4beb-bb25-d9e195dfefa5"
+    },
+    {
+      "claim_id": "9fee3a60-062c-4705-8ca1-7e9625a237c8",
+      "result_id": "f4b1ff5b-5685-45d9-8e18-447c122a2bad"
+    },
+    {
+      "claim_id": "85b98092-af9d-468c-b1e2-ef3f223d2d52",
+      "result_id": "f4b1ff5b-5685-45d9-8e18-447c122a2bad"
+    },
+    {
+      "claim_id": "9888a07f-91d2-4277-948f-bcdd04664499",
+      "result_id": "f4b1ff5b-5685-45d9-8e18-447c122a2bad"
+    },
+    {
+      "claim_id": "e421e580-21a8-4a3c-9b70-116f7c6b5d56",
+      "result_id": "f4b1ff5b-5685-45d9-8e18-447c122a2bad"
+    },
+    {
+      "claim_id": "cd2c233d-c7c0-4201-b687-e54510ed5276",
+      "result_id": "f4b1ff5b-5685-45d9-8e18-447c122a2bad"
+    },
+    {
+      "claim_id": "bcfae75f-25d4-4655-9208-b256fb11e1d3",
+      "result_id": "323e4b21-ea48-49f5-a29c-5ad059fc735f"
+    },
+    {
+      "claim_id": "c2478103-ab33-4634-ae6f-4c78b797ecfe",
+      "result_id": "323e4b21-ea48-49f5-a29c-5ad059fc735f"
+    },
+    {
+      "claim_id": "7959975e-ead8-478e-8eba-762dd7e238e2",
+      "result_id": "323e4b21-ea48-49f5-a29c-5ad059fc735f"
+    },
+    {
+      "claim_id": "66731704-e383-4e9c-8f3a-f3e3326d726b",
+      "result_id": "323e4b21-ea48-49f5-a29c-5ad059fc735f"
+    },
+    {
+      "claim_id": "5938d993-ff51-466c-9a01-acd5c467f0a9",
+      "result_id": "323e4b21-ea48-49f5-a29c-5ad059fc735f"
+    },
+    {
+      "claim_id": "4145232f-c7be-4074-8ba0-fc8c269c0a25",
+      "result_id": "323e4b21-ea48-49f5-a29c-5ad059fc735f"
+    },
+    {
+      "claim_id": "d9b35174-3549-41f8-9d19-c6aa10f9cf62",
+      "result_id": "323e4b21-ea48-49f5-a29c-5ad059fc735f"
+    },
+    {
+      "claim_id": "015e3c01-0312-4236-8177-6cf3e25d1265",
+      "result_id": "dc76f032-2819-44d5-b133-f4b787a020c4"
+    },
+    {
+      "claim_id": "921a54f9-6918-45aa-9520-a9e13dac58f0",
+      "result_id": "dc76f032-2819-44d5-b133-f4b787a020c4"
+    },
+    {
+      "claim_id": "15250993-cf99-44ca-9a12-edf1213a0c9f",
+      "result_id": "dc76f032-2819-44d5-b133-f4b787a020c4"
+    },
+    {
+      "claim_id": "b203a599-90b4-4615-9a2c-52623b7cee2f",
+      "result_id": "dc76f032-2819-44d5-b133-f4b787a020c4"
+    },
+    {
+      "claim_id": "3e576eec-46ec-48cf-8961-f6c9494c8467",
+      "result_id": "dc76f032-2819-44d5-b133-f4b787a020c4"
+    },
+    {
+      "claim_id": "86ae03da-c062-4f5b-8b8d-177188144b99",
+      "result_id": "dc76f032-2819-44d5-b133-f4b787a020c4"
+    },
+    {
+      "claim_id": "77cf28d6-1436-42ed-8306-38989813db14",
+      "result_id": "dc76f032-2819-44d5-b133-f4b787a020c4"
+    },
+    {
+      "claim_id": "d16287d6-1109-440c-9478-bba6037a3638",
+      "result_id": "dc76f032-2819-44d5-b133-f4b787a020c4"
+    },
+    {
+      "claim_id": "25053047-ab36-4ada-9f1c-bb570280b003",
+      "result_id": "dc76f032-2819-44d5-b133-f4b787a020c4"
+    },
+    {
+      "claim_id": "615d270f-064b-4435-ad9e-09f5b2879cb6",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "06f34dc1-264b-49ff-9568-9a43185d5a2e",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "3cd71540-593e-487e-ab3d-cd22ca7ad779",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "bd56d08e-e3ca-47d7-b9f3-6d72d6731db8",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "e5bf68d2-b91a-493e-a895-fa52bc6998ca",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "d9914a8c-9c68-4d76-95a2-2a7263bf7584",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "f6745eec-7b7d-4a05-ac0b-88dcadd19cc2",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "6e293b8d-245d-4ffc-9017-0ab4778d9c81",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "c301f5fd-aa9a-4e28-97f1-8b3e9e54ea62",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "afd914fd-8106-4427-acee-e1cea6fa1051",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "4a536959-072a-42f6-a87e-688532535dc4",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "639c28ae-3b25-42e9-bda0-31dd262dcbae",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "31fb01be-9aec-441e-bd54-897a340195a5",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "f90c6d94-8c01-4ac3-9ebb-4c021f5fdb35",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "45cc275f-8a7e-4897-a965-ffc90f6fc69e",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "0f309ab9-e551-4562-9d3c-9f1d55cc27b3",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "702cbf3a-183f-4fb4-bc28-45c18b262cf1",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "f19948f3-98d5-49ce-8dc4-ddf00ddc9c15",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "4c895e89-70ec-43bc-91bc-31c2f808d836",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "0e843041-4dca-488f-b34c-e032fa0d86f4",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "7aca9f8c-01d3-4f86-8bd8-4035c3ee47a9",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "2032e7db-4439-4d27-acb4-82c9395dd0db",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "48dbb8c9-fbf3-441b-bb0f-019ea2896ef9",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "06866cd4-73a9-4632-97a0-00bb52809385",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "a542f47c-1e65-4b84-a6d1-9180342acc38",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "31703734-3e11-43f4-803d-6c729690ae18",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    },
+    {
+      "claim_id": "e45fa91d-f4d7-4e5e-98f7-65fd2f7fe406",
+      "result_id": "203deabf-892c-42c9-99ed-4180329c338a"
+    }
+  ],
+  "comparisons": []
+}

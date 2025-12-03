@@ -1,0 +1,2289 @@
+{
+  "submission": {
+    "id": "e8f427b4-ca04-476b-b656-b8e8a606d34a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:19:26.265779Z",
+    "updated_at": "2025-12-03T19:19:26.265779Z"
+  },
+  "content": [
+    {
+      "id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "submission_id": "e8f427b4-ca04-476b-b656-b8e8a606d34a",
+      "content_type": "manuscript",
+      "content_text": "# The aperiodic exponent of subthalamic field potentials reflects excitation/inhibition balance in Parkinsonism\n\n## Authors\n\n- Christoph Wiest<sup>1</sup> ([ORCID: 0000-0001-5728-3951](https://orcid.org/0000-0001-5728-3951))\n- Flavie Torrecillos<sup>1</sup>\n- Alek Pogosyan<sup>1</sup>\n- Manuel Bange<sup>2</sup>\n- Muthuraman Muthuraman<sup>2</sup> ([ORCID: 0000-0001-6158-2663](https://orcid.org/0000-0001-6158-2663))\n- Sergiu Groppa<sup>2</sup>\n- Natasha Hulse<sup>3</sup>\n- Harutomo Hasegawa<sup>3</sup>\n- Keyoumars Ashkan<sup>3</sup>\n- Fahd Baig<sup>4</sup>\n- Francesca Morgante<sup>4</sup>\n- Erlick A Pereira<sup>4</sup>\n- Nicolas Mallet<sup>5</sup>\n- Peter J Magill<sup>1</sup>\n- Peter Brown<sup>1</sup> ([ORCID: 0000-0002-5201-3044](https://orcid.org/0000-0002-5201-3044))\n- Andrew Sharott<sup>1</sup>\n- Huiling Tan<sup>1</sup> ([ORCID: 0000-0001-8038-3029](https://orcid.org/0000-0001-8038-3029)) \u2020\n\n### Affiliations\n\n1. Medical Research Council Brain Network Dynamics Unit, Nuffield Department of Clinical Neurosciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n2. Movement Disorders and Neurostimulation, Biomedical Statistics and Multimodal Signal Processing Unit, Department of Neurology, University Medical Center of the Johannes Gutenberg University Mainz Mainz Germany ([ROR:00q1fsf04](https://ror.org/00q1fsf04))\n3. Department of Neurosurgery, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n4. Neurosciences Research Centre, Molecular and Clinical Sciences Institute, St. George' s, University of London London United Kingdom ([ROR:040f08y74](https://ror.org/040f08y74))\n5. Institut des Maladies Neurod\u00e9g\u00e9n\u00e9ratives, CNRS UMR5293, Universit\u00e9 de Bordeaux Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPeriodic features of neural time-series data, such as local field potentials (LFPs), are often quantified using power spectra. While the aperiodic exponent of spectra is typically disregarded, it is nevertheless modulated in a physiologically relevant manner and was recently hypothesised to reflect excitation/inhibition (E/I) balance in neuronal populations. Here, we used a cross-species in vivo electrophysiological approach to test the E/I hypothesis in the context of experimental and idiopathic Parkinsonism. We demonstrate in dopamine-depleted rats that aperiodic exponents and power at 30\u2013100 Hz in subthalamic nucleus (STN) LFPs reflect defined changes in basal ganglia network activity; higher aperiodic exponents tally with lower levels of STN neuron firing and a balance tipped towards inhibition. Using STN-LFPs recorded from awake Parkinson\u2019s patients, we show that higher exponents accompany dopaminergic medication and deep brain stimulation (DBS) of STN, consistent with untreated Parkinson\u2019s manifesting as reduced inhibition and hyperactivity of STN. These results suggest that the aperiodic exponent of STN-LFPs in Parkinsonism reflects E/I balance and might be a candidate biomarker for adaptive DBS.\n\n## Introduction\n\nPower spectral densities (PSDs) of neural time series, such as electroencephalography (EEG), electrocorticography (ECoG), or local field potentials (LFPs), tend to follow a 1/f power law distribution, where f is frequency, meaning that power is greatest at low frequencies and diminishes rapidly as frequencies increase (He et al., 2010). In this study, we will refer to the slope of the PSD as the aperiodic exponent. For decades, the aperiodic exponent has been deemed unimportant and was often removed from analyses to emphasise brain oscillations (He, 2014). Only recently did the aperiodic exponent gain more attention and was attributed a physiological meaning. Aperiodic exponents in LFP, EEG, and ECoG recordings vary by age (He et al., 2019; Schaworonkow and Voytek, 2021; Voytek et al., 2015), cortical depth (Halgren et al., 2021), psychiatric disorders (Adelh\u00f6fer et al., 2021; Molina et al., 2020; Robertson et al., 2019; Veerakumar et al., 2019), and Parkinson\u2019s disease (PD) (Mostile et al., 2019). They track sensory stimuli (Waschke et al., 2021) and change with movement (Belova et al., 2021). Moreover, the aperiodic exponent was suggested to reflect neuronal spiking (Manning et al., 2009; Ray and Maunsell, 2011), synaptic currents (Baranauskas et al., 2012; Buzs\u00e1ki et al., 2012), and excitation-inhibition (E/I) balance, which describes the delicate balance of inhibitory and excitatory synaptic inputs to neurons (Chini et al., 2022; Gao et al., 2017; Trakoshis et al., 2020). The latter is supported by multiple studies showing that aperiodic exponents in non-invasive EEG and invasive LFP measurements were modulated by sleep and anaesthesia, with lower exponents, corresponding to slower decay of power with increasing frequencies, during the conscious state, which is linked with increased excitation. Inversely, higher aperiodic exponents, corresponding to faster decay of power with increasing frequencies, were observed during the unconscious state (NREM sleep, anaesthesia), which is linked with more inhibition (Colombo et al., 2019; Huang et al., 2020; Lendner et al., 2020; Miskovic et al., 2019; Niethard et al., 2016; Waschke et al., 2021). In addition, Gao and colleagues found that theta cycle-modulated E/I changes in the rat hippocampus are reflected in the per-cycle PSD exponent of hippocampal LFPs calculated at different theta phases (peaks or troughs) confirming the E/I hypothesis for LFPs (Gao et al., 2017).\n\nIn our study, we seek to test whether the aperiodic exponent of LFPs recorded in the subthalamic nucleus (STN) tracks changes in E/I balance. To this end, we take advantage of the well-characterised rhythmic changes in neuronal firing patterns within the basal ganglia during slow-wave activity (SWA, see Figure 1A) induced in dopamine-depleted rats by general anaesthesia. STN and external globus pallidus (GPe) neurons are rhythmically active in time with cortical SWA in rats rendered Parkinsonian by lesion of midbrain dopamine neurons with 6-hydroxydopamine (6-OHDA) (Figure 1A). STN neurons are predominantly active during the active phase of cortical slow (~1 Hz) oscillations (Magill et al., 2001; Mallet et al., 2008a). Inversely, STN neurons reduce their firing around the inactive phase when GPe-Ti (\u2018type-inactive\u2019) neurons tend to fire most. GPe-Ti neurons largely correspond to prototypic GPe neurons that are GABAergic and project to and inhibit STN (Abdi et al., 2015; Mallet et al., 2012); the GPe is considered the primary source of inhibitory inputs to the STN (Smith et al., 1998). Based on single-unit activity, we extracted separate periods with high levels of STN excitation or inhibition, and applied the FoooF algorithm to parameterise PSDs of LFPs during both states (Donoghue et al., 2020). Aperiodic exponents of STN-LFPs were consistently modulated with expected differences of the E/I ratio of STN in these states.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82467/elife-82467-fig1-v2.jpg)\n\n**Figure 1.:** (A) Example traces of electrocorticography (ECoG) and single-unit spiking activity of STN and GPe-Ti neurons during slow-wave activity (SWA) in anaesthetised 6-hydroxydopamine (6-OHDA)-lesioned animals. Note the rhythmic spiking pattern of both neuron types, which either aligns with peaks or troughs of cortical slow (~1 Hz) oscillations. (B) We identified 250 ms epochs of relatively high spiking (>75th percentile) and epochs of low spiking (<25th percentile) based on STN neuron activity during cortical SWA. The distribution of STN (i) and GPe-Ti (ii) spiking activity is shown for one example animal, which confirms that spiking rates are clearly differentiable for the two high and low STN spiking states. GPe-Ti neurons are most active when STN neurons are relatively inactive and vice versa (iii; ***p<.001, Wilcoxon rank-sum test). (C) Average power spectral densities (PSDs) of STN-LFPs in the two states identified above (mean \u00b1 SEM, n = 8 animals). The black dotted lines denote the aperiodic fits (exponent values [exp] are colour-coded) for the respective PSDs between 30 and 100 Hz. (D) Aperiodic exponents are high during low STN spiking epochs corresponding to more GPe-Ti activity and, by inference, more inhibition of STN. Inversely, aperiodic exponents are low during high STN spiking epochs associated with less GPe-Ti activity and, by inference, disinhibition (LME: estimate = 0.12, t = 3.92, p<0.001). (E) Average power between 30 and 100 Hz in the STN-LFPs is higher when STN neurons are highly active than when STN spiking is low (LME: estimate = \u20130.02, t = \u20132.34, p=0.02). (D, E) Large dots denote the mean per animal and are colour-coded. Small dots denote individual LFP channels. n = 8 animals, *p<0.05, **p<0.01, ***p<.001, LME.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82467/elife-82467-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Parasagittal cross section of the rat brain. Multi-contact electrode arrays (\u2018silicon probes\u2019) were used to record wideband signals (incorporating local field potentials [LFPs] and single-unit activities) from the subthalamic nucleus (STN, in red) in eight 6-hydroxydopamine (6-OHDA)-lesioned rats during cortical slow-wave activity (SWA). GPe: external globus pallidus; SNr: substantia nigra pars reticulata; Thal: thalamus; ECoG: electrocorticogram; D: dorsal; V: ventral; R: rostral; C: caudal. (B) Spikes were isolated from the wideband signal using standard spike sorting procedures as in Mallet et al. 2008. Top: spike events per 250 ms epoch were calculated for probe channels within STN (GPe-Ti spikes are shown for comparison). Bottom: the spike distribution is shown for an example STN channel. Epochs above the 75th percentile were considered high spiking. Epochs below the 25th percentile were considered low spiking. (C) Left: LFP was re-referenced by subtracting the mean of the six neighbouring LFP channels. Right: this approach was chosen to control volume conduction since coherence between the re-referenced LFP channel and ECoG recorded from a steel screw over the frontal cortex (red) was lower compared to no re-referencing (blue) and subtracting the mean of all channels (yellow). (D) Complex Morlet wavelet transforms (50 cycles) were used for time-frequency decomposition of the full LFP time series. Afterwards, average power spectral densities (PSDs) were computed for non-overlapping 250 ms epochs. PSDs of all high-spiking epochs (blue boxes) and low-spiking epochs (red boxes) were averaged. (E) Periodic and aperiodic components of the PSD were separated using the FoooF parameterisation (see \u2018Methods\u2019). The original PSD of all low-spiking epochs (black) is shown for one example LFP channel with the FoooF model fit (orange) and the aperiodic fit (dashed green). The aperiodic exponent and goodness-of-fit metric for this example are shown. (F) Example analysis of the aperiodic exponent for one STN-LFP channel in one subject. The blue and red lines show the average PSDs of \u2018high STN spiking\u2019 epochs and \u2018low STN spiking\u2019 epochs, respectively. The black lines denote the aperiodic fit in the selected fitting range (30\u2013100 Hz). Note the PSD is roughly linear across this frequency range in log-log space.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82467/elife-82467-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Power spectra from Figure 1C were parameterised using the fixed (A) and knee (B) mode. Goodness of fit and fitting errors are colour-coded. The dashed black line denotes the aperiodic fit from 30 to 100 Hz.\n\nIn a second step, we tested whether similar findings can be obtained in human STN-LFP recordings from awake patients with PD. In PD, STN shows exaggerated and synchronised oscillatory activity in the beta range (Bergman et al., 1994; Brown et al., 2001; Levy et al., 2000). Dopaminergic medication and deep brain stimulation (DBS) desynchronise STN in the beta range (Eusebio et al., 2011; K\u00fchn et al., 2008; Whitmer et al., 2012) and reduce STN single-unit activity (Filali et al., 2004). Here, we compare aperiodic exponents of the STN-LFP ON and OFF dopaminergic medication and ON and OFF DBS. We show that aperiodic exponents of the STN-LFP were increased with both therapies, and these results from PD patients are also consistent with the E/I hypothesis.\n\n## Results\n\n### Establishing the validity of STN-LFP aperiodic exponents as a marker of E/I balance\n\nTo validate the aperiodic exponent of STN activity as an estimate for E/I changes, we first took advantage of the distinct rhythmic changes in neuronal firing patterns within the basal ganglia during SWA in 6-OHDA-lesioned rats under anaesthesia. During SWA, STN neurons exhibit distinct periodic changes in firing rates, which are tightly linked with the phase of cortical slow (~1 Hz) oscillations that dominate SWA (Figure 1A; Magill et al., 2001). These changes in STN firing rates have been defined, by us and others, in relation to their major excitatory and inhibitory inputs (Abdi et al., 2015; Magill et al., 2001; Mallet et al., 2008a).\n\nTo contrast STN activity during opposing conditions of E/I balance, we first distinguished 250 ms epochs of \u2018high\u2019 and \u2018low\u2019 levels of spiking of STN single units during SWA (Figure 1\u2014figure supplement 1B). Because STN and GPe-Ti neurons fire in a near anti-phase relationship during cortical SWA (Mallet et al., 2008a), high- and low-spiking epochs of STN neurons tend to occur in time with, respectively, low and high levels of GPe-Ti spiking (Figure 1B). We assume that, during low and high levels of GPe-Ti spiking, STN neurons receive low and high levels of inhibitory input from the GPe, respectively. Previous studies have shown that during SWA, excitatory input from cortical projection neurons would be in-phase with the high-spiking epochs of STN neurons, and thus, anti-phase to inhibitory inputs from GPe (Parr-Brownlie et al., 2007). First, we computed PSDs of STN-LFPs for the two states (high and low STN spiking epochs, Figure 1C) and extracted both aperiodic exponents and average power between 30 and 100 Hz. Aperiodic exponents were smaller in high compared to low STN spiking epochs, consistent with small exponents being generated in conditions of more excitation/less inhibition and vice versa (LME: estimate = 0.12, t = 3.92, p<0.001; Figure 1D). The total power of activities between 30 and 100 Hz in STN-LFP was smaller during low STN spiking epochs compared to high STN spiking epochs (LME: estimate = \u20130.02, t = \u20132.34, p=0.02; Figure 1E). Furthermore, the lack of correlations between power and aperiodic exponents suggests that both power and exponents from the same frequency range are dissociable and might contain different information (Spearman; \u03c1 = \u20130.07, p=0.56 and \u03c1 = \u20130.18, p=0.14 for high and low STN spiking epochs, respectively). When pooling aperiodic exponents and power from high and low STN spiking epochs, we still did not observe a significant correlation (\u03c1 = \u20130.15, p=.07).\n\nOverall, these results from 6-OHDA-lesioned rats suggest that the aperiodic exponent of STN-LFPs is altered according to different levels of STN spiking. The high- and low-spiking epochs of single STN neurons can in turn be ascribed with confidence to an E/I balance that is tipped in favour of excitation and inhibition, respectively. As such, these results support the notion that STN-LFP aperiodic exponents may become valid markers of overall E/I balance in STN.\n\n### Aperiodic exponents from 40 to 90 Hz separate levodopa medication states in PD patients\n\nAfter corroborating the link between aperiodic exponents in STN-LFPs and changes in E/I balance in the STN in an animal model under anaesthesia, we sought to apply the same concept to clinical data from awake PD patients. According to the classical direct/indirect pathways model of basal ganglia functional organisation, the Parkinsonian STN is overactive (reduced inhibition), which is alleviated by dopaminergic stimulation (Albin et al., 1989; DeLong, 1990). Therefore, we hypothesised that aperiodic exponents of STN-LFPs are relatively low in the untreated Parkinsonian state and would be increased with dopaminergic medication. To test this hypothesis, we estimated aperiodic exponents in STN-LFPs recorded from 30 hemispheres in 17 patients both ON and OFF levodopa (Figure 2A and B). Aperiodic exponents at 40\u201390 Hz successfully distinguished dopaminergic medication states (paired samples permutation t-test; t = \u20133.31, p=0.0015, Cohen\u2019s d: 0.60) and were larger ON medication (in 66% of hemispheres), suggesting a faster drop of power with increasing frequencies and in keeping with more inhibition of STN (Figure 2C). The levodopa effect on aperiodic exponents was robust against different settings for FoooF parameterisation (Figure 2\u2014figure supplement 1). Note that for human data, the frequency range was adjusted to 40\u201390 Hz (the lower bound due to high-amplitude beta peaks crossing the fitting range and the upper bound due to the harmonic of mains interference; see section \u2018Signal processing\u2019 for more details).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82467/elife-82467-fig2-v2.jpg)\n\n**Figure 2.:** (A) We analysed 60 s segments of bipolar STN-LFP recorded from Parkinson\u2019s patients at rest while leads were externalised (iii). Recordings were performed ON and OFF dopaminergic medication. Directional contacts were fused (i) and bipolar recordings were conducted from contacts adjacent to the stimulation contact (red; ii). (B) Average power spectral densities (PSDs) from 30 hemispheres (17 patients) ON and OFF medication of 60 s recordings using Morlet wavelet transforms (mean \u00b1 SEM). Aperiodic exponents were computed between 40 and 90 Hz (fixed mode, bottom-right subplot) to avoid high-amplitude beta peaks and harmonics of mains noise at 100 Hz and the fixed mode was used since the PSD was relatively linear in log-log space within this range. To obtain periodic beta power, we fit the FoooF algorithm between 5 and 90 Hz (knee mode, top-right subplot) and picked the power of the largest oscillatory component within the beta range (13\u201335 Hz, green rectangle). (C) Aperiodic exponents and periodic beta power differ between medication states (p=0.0015 and p=0.048). \u2020p-Values were computed using a paired samples permutation t-test with multiple comparison correction on 30 hemispheres recorded from 17 Parkinson\u2019s disease (PD) patients. (D) Aperiodic exponent and periodic beta power changes with levodopa are not correlated (Spearman; \u03c1 = \u20130.33, p=0.07, n = 30). (E, F) Neither periodic beta power (E) nor the aperiodic exponent (F) changes with medication are correlated with contralateral appendicular bradykinesia and rigidity UPDRS part III sub-scores OFF-ON levodopa (Spearman: \u03c1 = \u20130.04, p=0.85, n = 28 hemispheres for periodic beta; Spearman: \u03c1 = \u20130.014, p=0.94, n = 28 hemispheres for aperiodic exponents).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82467/elife-82467-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We tested different fitting ranges (A), peak thresholds (B), peak width limits (C), and a different aperiodic mode (knee mode, D) for FoooF parameterisation of patients\u2019 local field potentials (LFPs in both medication states). Dots denote individual hemispheres.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82467/elife-82467-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Average power of six different frequency bands and periodic beta power were compared between OFF and ON levodopa. Changes in beta power distinguished medication states. (B) For the same frequency bands, changes between medication states were correlated with aperiodic exponent changes. Note that correlations with beta power were not significant, while there was a weak positive correlation between aperiodic exponents at 40\u201390 Hz and power changes in the gamma range. (C) Average power of the same frequency bands and periodic beta power were compared before and during 130 Hz STN-DBS. Primarily high beta and low gamma power separated ON and OFF stimulation conditions. Note the power increase of the high gamma band ON DBS, which is driven by artefacts of stimulation in this frequency band. (D) Spectral changes with DBS were not correlated with changes of the aperiodic exponent at 10\u201350 Hz.\n\nIn addition, we quantified periodic beta power identified using the FoooF parameterisation (Figure 2B) and average power of six different frequency bands and compared them between conditions ON and OFF levodopa. Periodic beta power differed between the two medication states (paired samples permutation t-test, t = 2.08, p=0.048), with higher power in the OFF medication state consistent with previous studies (Brown et al., 2001; Neumann et al., 2017; Figure 2C). Of the six frequency ranges, only beta power distinguished medication states (Figure 2\u2014figure supplement 2A). However, neither average (Spearman; \u03c1 = \u20130.08, p=0.67), low (\u03c1 = \u20130.20, p=0.28), nor high beta power (\u03c1 = 0.004, p=0.99) correlated with aperiodic exponents (Figure 2\u2014figure supplement 2B). In 10 of 20 cases in which the aperiodic exponent was higher ON medication, there was either no clear beta peak in the OFF state or no clear beta reduction with levodopa. This underlines the benefit of multi-biomarker adaptive DBS compared to an algorithm that only relies on beta power as a feedback signal. In 8 of 10 hemispheres in which aperiodic exponents were not higher ON medication, exponents were either very similar and the difference between medication states was <0.1 (four cases) or beta power was not affected by levodopa either ( four cases).\n\nMedication-induced changes of aperiodic exponents and periodic beta power displayed a trend for a negative correlation (Spearman; \u03c1 = \u20130.33, p=0.07, n = 30; Figure 2D), indicating that they may contain similar information on levodopa-induced changes in the STN. This may also hint at a physiological meaning of aperiodic exponents. Furthermore, neither levodopa-induced changes of periodic beta power (Spearman; \u03c1 = \u20130.04, p=0.85, n = 28; Figure 2E) nor aperiodic exponents (Spearman; \u03c1 = \u20130.014, p=0.94, n = 28; Figure 2F) were correlated with contralateral appendicular bradykinesia and rigidity UPDRS part III sub-scores OFF-ON levodopa in this cohort.\n\nThese results suggest that aperiodic exponents of STN-LFPs may be a useful measure to distinguish and track medication states.\n\n### Aperiodic exponents of STN-LFPs from 10 to 50 Hz distinguish periods ON and OFF DBS\n\nHigh-frequency DBS was thought to induce functional inactivation of the neurons in the stimulated area (Aziz et al., 1991; Benabid et al., 1994; Bergman et al., 1990; Limousin et al., 1995). Furthermore, the inactivation hypothesis was corroborated when suppression of neuronal activity was recorded surrounding STN-DBS leads in patients, non-human primates, and rodents (Filali et al., 2004; Meissner et al., 2005; Shi et al., 2006) in line with the classical rate model of movement disorders. Here, we compared aperiodic exponents at 10\u201350 Hz of STN-LFPs ON and OFF high-frequency DBS in 26 hemispheres from 17 PD patients. Compared to previous analyses, we lowered the frequency range for parameterisation to avoid a spectral plateau starting >50 Hz when stimulation was on (Figure 3A). We found increased aperiodic exponents ON DBS (paired samples permutation t-test; t = \u20136.27, p<0.001, Cohen\u2019s d: 1.23, Figure 3B), a similar effect as levodopa, in keeping with the E/I hypothesis and of the notion that DBS supresses STN firing to some degree.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82467/elife-82467-fig3-v2.jpg)\n\n**Figure 3.:** (A) Average power spectral densities (PSDs) and linear fitting in the exponential scale of 60 s segments of bipolar STN-LFPs ON and OFF 130 Hz STN-DBS recorded from externalised electrodes in 26 hemispheres from 17 PD patients (mean \u00b1 SEM). PSDs during DBS (red) display a spectral plateau >50 Hz, hence, exponents were isolated between 10 and 50 Hz (black rectangle). Linear fitting of the aperiodic exponents between 10 and 50 Hz for no DBS and DBS is shown in black and yellow, respectively. While the dotted extension of the black line is still a relatively good fit for the no DBS PSD, the yellow dotted line deviates from the DBS PSD due to the plateau at around 50 Hz. (B) Aperiodic exponents differ between periods of no DBS and periods of 130 Hz STN-DBS (paired samples permutation t-test, n = 26, p<0.001). (C) Periodic beta power was compared before and during 130 Hz STN-DBS (paired samples permutation t-test, n = 26, p=0.007).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82467/elife-82467-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** R2 values are shown for all FoooF parameterisations used to analyse animal data in Figure 1 (n = 140; 70 local field potential [LFP] channels in both subthalamic nucleus [STN] spiking states), human LFP data ON and OFF medication in Figure 2 (n = 60; 30 hemispheres in both conditions) and human LFP data ON and OFF DBS in Figure 3 (n = 52; 26 hemispheres in both conditions).\n\nWhen the average power of six different frequency ranges and periodic beta power was compared immediately before and during 130 Hz STN-DBS, beta power (primarily high beta) and low gamma power were suppressed with DBS (Figure 3C, Figure 2\u2014figure supplement 2C) in accordance with our previous work (Wiest et al., 2020). The power increase of the high gamma band (51\u201390 Hz) was driven by artefacts of stimulation in that range (Figure 3A). Aperiodic exponent changes with DBS were not correlated with spectral changes of any frequency (Figure 2\u2014figure supplement 2D). Again, this implies that the aperiodic exponent is independent of spectral changes averaged over pre-defined frequency ranges or periodic beta power and might provide additional information.\n\n## Discussion\n\nIn this study, we validated the aperiodic exponent of STN-LFPs as a marker of E/I balance using single-unit activity from the basal ganglia in 6-OHDA-lesioned animals, under conditions of where the activity levels of neurons providing major excitatory and inhibitory inputs to STN neurons are well defined. Having validated the approach with single-unit activities under these controlled conditions in rodents, we found that the aperiodic exponent of STN-LFPs recorded from awake PD patients distinguishes medication and stimulation states. Its sensitivity to levodopa and DBS underlines the notion that the aperiodic exponent of the STN-LFP may indicate pathological states of PD and can potentially serve as a feedback signal for adaptive DBS.\n\n### The aperiodic exponent as a marker of E/I balance\n\nOur results support that the aperiodic exponent of STN-LFPs changes with excitatory and inhibitory inputs to STN in both a rodent PD model and patients with PD. STN dendrites are innervated by glutamatergic inputs from ipsilateral somatomotor and frontal cortical areas (Monakow et al., 1978), glutamatergic intralaminar thalamic nuclei (Kita et al., 2016), and GABAergic inputs from prototypic GPe neurons (Mallet et al., 2012). In lesioned animals, on the active phase of the cortical slow oscillation (here referred to as high STN spiking epochs), STN neurons are expected to receive intense excitatory input from cortical and thalamic afferents and decreased inhibitory input from prototypic GPe neurons (Mallet et al., 2012), conditions that lead to vigorous STN spiking. In contrast, during the inactive phase of the cortical slow oscillation, inhibition from prototypic GPe neurons should be high and excitation from cortex and thalamus is relatively low, conditions that can completely prevent STN spiking (Mallet et al., 2012). We found clear differences in the aperiodic exponents of STN-LFPs between these extreme states of local excitation and inhibition (Figure 1).\n\nThe majority of previous studies into the relationship between the aperiodic exponent and neuronal activity have been investigated in cortex (Waschke et al., 2021). However, the anatomy and physiology of STN differs significantly from cortex in that it is made up of relatively homogenous, glutamatergic projection neurons that fire action potentials autonomously and receive tonic inhibition from prototypic GPe neurons. Cortical circuits, in contrast, comprise a vast array of neuron types and activity of cortical projection neurons is predominantly input driven. Thus, our findings provide important validation that aperiodic exponents reflect changes in E/I balance at the synaptic (LFP) levels, specifically in STN. In addition, in contrast to these previous efforts examining the E/I hypothesis (Gao et al., 2017; Lendner et al., 2020; Waschke et al., 2021), we directly link aperiodic exponents to single-neuron spiking and predefined parameters of the dynamic E/I balance that specifically relate to the majority of neurons in the recorded structure (Figure 1). This approach provided a platform for understanding changes in the aperiodic exponent in STN-LFP recordings from humans.\n\nBuilding on these findings, our clinical results hold up against the E/I hypothesis as well (Figures 2 and 3). Aperiodic exponents of STN-LFPs recorded from awake PD patients are increased ON medication and ON DBS when STN local activity is believed to be decreased according to the classical direct/indirect pathways model (Albin et al., 1989; DeLong, 1990). The increased exponents ON dopaminergic medication in PD are consistent with a recent study that reported higher aperiodic exponents in dopamine-intact compared to lesioned animals (Kim et al., 2022). Furthermore, our results indicate that periodic beta power differs between the two dopaminergic medication states (Figure 2C), consistent with previous findings (Kim et al., 2022; K\u00fchn et al., 2006; Neumann et al., 2017; Ray et al., 2008). Finally, the missing correlation between medication-induced changes of aperiodic exponents and average beta power suggests that aperiodic exponents capture changes with medication that are not reflected by beta power alone and might be complimentary in an adaptive DBS algorithm ( Figure 2\u2014figure supplement 2).\n\n### Can the aperiodic exponent be useful as a feedback signal in adaptive DBS?\n\nBeta-band oscillations were identified as the most promising feedback signal for adaptive DBS considering their strong relationship with motor impairment in PD (K\u00fchn et al., 2006; Priori et al., 2004). However, the correlation between beta and contralateral appendicular bradykinesia and rigidity UPDRS scores was not significant in our cohort, and abnormal beta activity is not observed in all patients (Giannicola et al., 2010) nor is it correlated with tremor, freezing of gait, or dyskinesia (Marceglia et al., 2021). It is therefore unlikely that a beta-only feedback model will address all PD symptoms. Several factors point towards the aperiodic exponent as a candidate feedback signal. First, it changes with medication and DBS (Figures 2 and 3), similar characteristics which brought beta oscillations into the spotlight and which may suggest a link to clinical improvement (K\u00fchn et al., 2006; K\u00fchn et al., 2008). Second, we observed medication-related changes of the aperiodic exponent in hemispheres without clear beta peaks or medication-related beta changes. Third, we estimate the aperiodic exponent between 40 and 90 Hz, when studying the effect of levodopa, avoiding lower frequencies, which are particularly susceptible to movement-related artefacts (van Rheede et al., 2022).\n\nHowever, there are some obstacles to its use as a feedback marker. First, we could not show a direct link between the aperiodic exponent and clinical symptoms, but a trend for a negative correlation with periodic beta power (Figure 2D) and in our data set UPDRS part III scores were not correlated with periodic beta power either (Figure 2E and F). To unequivocally assess clinical relevance of aperiodic exponents, motor tests with higher discriminatory power than UPDRS motor sub-scores such as the BRAIN TEST may be useful (Giovannoni et al., 1999). Second, the aperiodic exponent would present a feedback signal with low temporal resolution. We averaged PSDs over 60 s to isolate exponents of STN-LFPs. Shortening this time window will introduce noise into the PSD and increase the error of aperiodic estimates. While these temporal dynamics prevent aperiodic exponents from targeting beta bursts, they may provide additional information about the E/I balance with slower temporal dynamics. Third, the frequency range is critical for isolating the aperiodic exponent and results may vary considerably depending on this. Moreover, for some PSDs with large oscillatory components and a spectral plateau at low frequencies, it may even be impossible to obtain an unequivocal linear fit (Gerster et al., 2022). Fourth, it is unclear if a miniaturised implantable device will have the computational power to parameterise PSDs in real time and what effects this may have on battery longevity. Whether aperiodic exponents can be combined with other LFP parameters to improve optimal DBS settings will depend on whether they can add additional clinical information than beta power alone, which our results imply (see section \u2018Aperiodic exponents from 40 to 90 Hz separate levodopa medication states in PD patients\u2019). In this cohort, we did not find correlations between levodopa-induced changes of aperiodic exponents and average beta power of three different frequency ranges (Figure 2\u2014figure supplement 2B), but a trend for a negative correlation with periodic beta power, which comprises a measure similar to beta peaks that were used before (Darcy et al., 2022; Neumann et al., 2017). It is therefore possible that aperiodic exponents extract similar information than beta power, but may aid in subjects where no beta peaks are present or beta peaks are not affected by levodopa.\n\n### Limitations\n\nThe chosen frequency band for linear fitting can affect FoooF parameterisation. In the past, many different fitting ranges were applied to extract the aperiodic exponent (reviewed in Gerster et al., 2022). Most of these frequency ranges comprise low-frequency oscillations and start in the delta, theta, alpha, or beta range. If prominent low-frequency oscillations are present, this may lead to steepening of the spectrum and error-prone aperiodic fits (Gerster et al., 2022). In this study, when parameterising PSDs from rodent data recorded using high-impedance microelectrodes, we chose the frequency band from 30 to 100 Hz to avoid false-high exponents due to high power in the lower frequency bands. The lower fitting bound of 30 Hz was chosen to exclude overlap of the lower fitting bound with the rising or falling arm of alpha or beta oscillations. A similar frequency range has been recommended to estimate the E/I ratio before (from 30 to 70 Hz, if this range is uncorrupted by oscillatory peaks) (Gao et al., 2017; Trakoshis et al., 2020). To asses differences with medication in clinical data recorded using macro-electrodes, we narrowed the fitting range to 40\u201390 Hz to avoid overlap and false-high estimates due to peaks in the high beta range (Figure 2B), and to avoid the harmonic of mains interference. These results are robust as long as the selected frequency range covers 40\u201370 Hz (Figure 2\u2014figure supplement 1). For DBS data analysis, we adapted the fitting range to avoid a spectral plateau (Figure 3A) which would have resulted in false-low exponents had we used the same fitting range as for the previous analysis. We observed this prominent plateau at frequencies larger than 50 Hz when DBS was switched ON in addition to prominent peaks at half stimulation frequency and other harmonics (Figure 3A). However, we did observe reduced power in the high beta and low gamma frequency bands (21\u201350 Hz) with stimulation, suggesting that the signal-to-noise ratio is sufficient to detect physiological signals in this frequency band. Therefore, we have focused on the lower frequency bands (10\u201350 Hz) for quantifying aperiodic exponents ON and OFF stimulation. In addition, in our dataset we did not see a link between medication-induced changes of either the aperiodic exponent or periodic beta power and contralateral bradykinesia and rigidity scores OFF-ON levodopa (Figure 2E and F) and further studies will be required to investigate if and to what extent aperiodic exponents of STN-LFPs correlate with Parkinsonian symptoms.\n\n### Conclusions\n\nWe showed that aperiodic exponents of STN-LFPs reflect STN excitation and inhibition as evinced by single-neuron activity in states of extreme spiking differences in rodents. We further showed that aperiodic exponents of STN-LFP in PD patients are larger ON dopaminergic medication and ON DBS reflecting more inhibition of STN compared to the dopamine-depleted and OFF DBS states. Our results corroborate that the aperiodic exponent contains information with respect to E/I balance and our clinical results give reason to believe the aperiodic component may be useful in a closed-loop feedback algorithm for PD.\n\n## Methods\n\n### Rodent data\n\nExperiments were performed on adult male Sprague\u2013Dawley rats (Charles River) and were conducted in accordance with the Animals (Scientific Procedures) Act, 1986 (UK). Animal data that was analysed in this paper has been generated under the project licence numbers 30/2131 and 30/2629. All details on the 6-OHDA lesion and electrophysiological recordings were published before (Mallet et al., 2008a).\n\n#### 6-Hydroxydopamine lesion of dopaminergic neurons\n\nUnilateral 6-OHDA lesion was performed as described in Magill et al., 2001; Mallet et al., 2008a. Then, 25 min before injection, animals received desipramine i.p. to minimise uptake of 6-OHDA by noradrenergic neurons. 6-OHDA was dissolved in NaCl to a concentration of 4 mg/ml of which 3 \u03bcl were injected medial to the substantia nigra pars compacta to target the medial forebrain bundle, which results in widespread loss of midbrain dopaminergic neurons. The extent of the dopamine lesion was assessed 14\u201315 days after injection by apomorphine challenge. Lesions were considered successful if animals made >80 contraversive rotations in 20 min. Electrophysiological recordings were performed ipsilateral to 6-OHDA lesion 21\u201345 days after surgery when pathophysiological changes in the basal ganglia have likely reached their maxima.\n\n#### Electrophysiological recordings\n\nData was recorded as described in Mallet et al., 2008a from eight 6-OHDA-lesioned rats. Here, we summarise key steps of the experimental procedure and data acquisition. Anaesthesia was induced with isoflurane and maintained with urethane, ketamine, and xylazine throughout the recording (Magill et al., 2006). Animals were placed in a stereotaxic frame where their body temperature was maintained at 37\u00b0C. ECoG, electrocardiograms (ECG), and respiration rate were monitored to ensure animal well-being. ECoG was recorded via a 1 mm steel screw juxtaposed to the dura mater above the frontal cortex and referenced against another screw in the skull above the ipsilateral cerebellum (Figure 1\u2014figure supplement 1A). Raw ECoG traces were bandpass filtered (0.3\u20131500 Hz) and amplified (2000\u00d7) before acquisition. Extracellular recordings of unit activity and LFPs in the external globus pallidus (GPe) and STN were simultaneously made using silicon probes with high-impedance microelectrodes (Figure 1\u2014figure supplement 1A). Each probe had one or two vertical arrays (500 \u03bcm apart) with 16 recording contacts along the arrays with 100 \u03bcm spacing. Monopolar probe signals were referenced against a screw above the contralateral cerebellum. Probes were advanced into the brain under stereotaxic control and extracellular signals were lowpass filtered (6000 Hz). ECoG and probe signals were each sampled at 17.9 kHz using a Power 1401 Analog-Digital converter. Recording locations were verified after experiments using histological procedures. STN was identified by comparison of recorded unit activity with the known characteristics of STN neurons in urethane anaesthesia (Magill et al., 2001).\n\nThe ECoG measurements were used to assess whether the rodent was in SWA state, which accompanies deep anaesthesia and is similar to activity observed during natural sleep (Steriade, 2000). We analysed a total of 28 extracellular LFP channels within STN during SWA (3.5 \u00b1 0.18 channels per animal [mean \u00b1 SEM]). STN single-unit activity was isolated from 20 of these channels (2.5 \u00b1 0.07 per animal).\n\n#### Signal processing\n\n##### Extraction of single-unit activity\n\nData analysis was performed using custom-written scripts in MATLAB (R2020b). Periods of robust SWA were selected according to previously described characteristics of these brain states (Magill et al., 2006; Magill et al., 2001). Analyses were performed on 97.61 \u00b1 2.17 s of data during SWA in 6-OHDA-lesioned animals. After offline bandpass filtering (500\u20136000 Hz) of the probe signals, single-unit activity was isolated with standard spike sorting procedures including template matching, principal component analysis, and supervised clustering (Spike2) as described in Mallet et al., 2008a. Isolation of single units was verified by the presence of a distinct refractory period. Only neurons in which <1% of interspike intervals were <2 ms were analysed in this study. For further analysis, single-unit activity was converted such that each spike was represented by a single digital event. To analyse aperiodic exponents of STN-LFPs, raw signals were lowpass filtered at 300 Hz (third-order Butterworth filter; Oostenveld et al., 2011). A similar procedure to analyse LFPs from silicon probe electrodes was described before (Mallet et al., 2008b).\n\n##### Re-referencing\n\nLFPs were downsampled to 2048 Hz. Target channels within STN were re-referenced by subtracting the mean signal across the six neighbouring channels to reduce volume conduction (Figure 1\u2014figure supplement 1C). We computed wavelet magnitude squared coherence between the target LFP channel in STN and ECoG to control for volume conduction and opted for the above re-referencing approach with coherence <0.1 for all frequencies >10 Hz (Figure 1\u2014figure supplement 1C).\n\n##### Spectral decomposition\n\nSpectral parameters were evaluated using continuous complex Morlet wavelet convolution. The entire 100 s time series was decomposed from 1 to 100 Hz with a frequency resolution of 1 Hz (frequencies increased linearly) before epoching to reduce the edge effect on each epoch. Morlet wavelets of 50 cycles were used which did not change as a function of frequency. We counted the spike events per consecutive non-overlapping 250 ms epoch for all unit activity channels (Figure 1\u2014figure supplement 1B). The epoch duration was chosen such that it captures the rhythmic dynamics during SWA. For every unit channel, we defined epochs with a spike rate >75th percentile as \u2018high spiking\u2019 and all epochs with a spike rate <25th percentile as \u2018low spiking\u2019 (Figure 1\u2014figure supplement 1B). We computed the mean PSD for every 250 ms epoch and normalised it by dividing through the mean power from 1 to 100 Hz (Figure 1\u2014figure supplement 1D).\n\n##### FoooF parameterisation\n\nFor every LFP channel within STN, we computed the mean PSD of all high- and all low-spiking epochs separately. To isolate the aperiodic component from these spectra, we used the open-source FoooF algorithm (version 1.0.0) (Donoghue et al., 2020). Settings for the algorithm were set as peak width limits: 2\u201312; max number of peaks: infinite; minimum peak height: 0; peak threshold: 2; and aperiodic mode: fixed. Power spectra were parameterised across the frequency range 30\u2013100 Hz. The lower bound was selected to avoid the impact of low-frequency oscillations, the upper bound was selected to avoid the impact of spectral plateaus (Gerster et al., 2022). Moreover, PSDs were linear across this frequency range in log-log space assuming a single 1/f like characteristic and did not contain overlapping periodic components (Figure 1\u2014figure supplement 1E and F). Hence, higher aperiodic exponents indicate steeper power reduction with increasing frequencies in the PSD and vice versa as shown in Figure 1\u2014figure supplement 1F. We evaluated the goodness of fit (R2) for all data used in this study (Figure 3\u2014figure supplement 1). In addition, we evaluated and compared the goodness of fit using either \u2018fixed\u2019 mode or \u2018knee\u2019 mode in the FoooF fitting. Results show that using the \u2018knee\u2019 mode for parameterisation did not improve aperiodic fitting (Figure 1\u2014figure supplement 2). Therefore, we opted to use the \u2018fixed\u2019 mode for parameterisation within the selected frequency range. To compare power across different spiking states, we computed the mean power between 30 and 100 Hz of the average PSD of all high or low-spiking epochs.\n\n### Human data\n\nThis protocol was approved by the Health Research Authority UK, the National Research Ethics Service local Research Ethics Committee (IRAS: 46576), and the local ethics committee at the University of Mainz (837.208.17 [11042]). Patients were recruited at St. George\u2019s University Hospital NHS Foundation Trust, London, King\u2019s College Hospital NHS Foundation Trust, London, and the University Medical Center Mainz. Written informed consent, and consent to publish, was obtained before surgery in line with the Declaration of the Principles of Helsinki. We analysed data from 24 patients from these three centres. Data from 17 patients were previously published (Wiest et al., 2021; Wiest et al., 2020).\n\n#### Patients and surgery\n\nStudy participants were evaluated by an interdisciplinary team of movement disorder neurologists and functional neurosurgeons and met the UK Parkinson\u2019s Disorder Society Brain Bank Diagnostic Criteria for diagnosis of PD. Baseline motor function in the ON and OFF medication state was assessed pre-operatively using the part III of the Unified Parkinson\u2019s disease rating scale motor subscale (UPDRS-III). When UPDRS part III scores were reported in Figure 2, we used the contralateral appendicular categories (bradykinesia and rigidity scores only). The surgical target was STN. Five models of DBS leads were used: quadripolar (model 3389) or directional (SenSight) leads from Medtronic Inc, Neurological Division, USA, directional (Vercise model DB-2202) or non-directional (model DB-2201) leads from Boston Scientific, USA, and directional leads (Infinity model 6172ANS) from Abbott Inc, USA. DBS implantation was guided either by magnetic resonance imaging alone (St. George\u2019s University Hospital) or with additional intra-operative microelectrode recordings and stimulation (King\u2019s College Hospital and University Medical Center Mainz). The subthalamic leads were connected to temporary extension leads and these were externalised. Assessment of contact localisation was made through co-registration of immediate post-operative CT with pre-operative MRI by an experienced neurosurgeon or neurologist specialising in deep brain stimulation. Assessment was blinded to the electrophysiological data and made using Lead-DBS (Horn et al., 2019).\n\n#### Data recording and lead localisation determination\n\nRecordings were made between 3 and 6 days post-operatively, while lead extensions were still externalised and before implantation of the subcutaneous pulse generator. In total, 24 patients (37 hemispheres) were recorded for this study; 17 patients (30 hemispheres) were recorded ON and OFF dopaminergic medication and 17 patients (26 hemispheres) ON and OFF stimulation. In patients with directional leads, the three directional contacts were joined to form a ring contact (Figure 2Ai). All LFPs were amplified and sampled at either 2048 Hz using a TMSi Porti (TMS International, Netherlands) or at 4096 Hz using a TMSi Saga32 (TMS International, Netherlands). The ground electrode was placed on the non-dominant forearm. High-frequency stimulation at 130 Hz was only tested at the middle contacts to allow bipolar LFP recordings from the two surrounding contacts (Figure 2Aii). A self-adhesive electrode attached to the patient\u2019s back served as a reference for stimulation, which was delivered using a custom-built highly configurable in-house neurostimulator. Stimuli comprised symmetric constant-current biphasic pulses (60 \u03bcs pulse width, negative phase first). The stimulation current was started at 0.5 mA and increased in increments of 0.5 mA until first a benefit in Parkinsonian motor symptoms was observed and second side-effect threshold was reached. The contact and current associated with the best clinical improvement were selected. If no stimulation was applied and multiple bipolar configurations were available, we selected the bipolar channel with the largest beta peak at rest. If only one hemisphere was recorded per patient, it was the hemisphere contralateral to the most affected upper limb.\n\n#### Signal processing\n\nAnalyses were performed on 60 s of data while patients were awake and at rest. LFP time series were highpass filtered at 1 Hz. Complex Morlet wavelet convolution was used for time-frequency decomposition with 50 wavelet cycles between 1 and 90 Hz as described in section \u2018Spectral decomposition\u2019. To exclude artefacts from mains interference at 50 Hz before isolating the aperiodic component, frequencies between 47 and 53 Hz were removed and the gap was linearly interpolated using the fillmissing function. To run the FoooF algorithm, the same settings were used as described in \u2018FoooF parameterisation\u2019, and power spectra were parameterised across the frequency range 40\u201390 Hz. The lower bound was increased to avoid high-amplitude beta peaks crossing the fitting range (see Figure 2B). The upper bound was lowered to avoid the harmonic of mains interference. When a broad frequency band (e.g. 1\u2013100 Hz) was considered, the PSD was not linear in log-log space. However, within the selected frequency band, the power spectrum followed an almost perfect linear line as illustrated in Figure 2B (bottom-right plot). Therefore, we used the \u2018fixed\u2019 mode for parameterisation of the selected frequency range. To isolate periodic beta activity, the PSD was parameterised using FoooF between 5 and 90 Hz (\u2018knee\u2019 mode in this case as such a wide frequency range is unlikely to only have a single aperiodic component, all other FoooF settings were identical to what was used in animal data). After removing the aperiodic component, the largest peak within the canonical beta range from 8 to 35 Hz was selected (Figure 2B). All other FoooF fittings presented elsewhere in this study were performed using the \u2018fixed\u2019 mode. In the stimulation ON condition, stimulation artefacts led to a plateau at frequencies >50 Hz in the spectra (Figure 3A). Therefore, aperiodic exponents were estimated between 10 and 50 Hz to evaluate the effect of DBS. A similar frequency range (5\u201345 Hz) was used in a previous study (Chini et al., 2022). Beta (13\u201335 Hz), low beta (13\u201320 Hz), high beta (21\u201335 Hz), gamma (35\u201390 Hz), low gamma (35\u201350 Hz), and high gamma (51\u201390 Hz) power were computed as the mean power of the normalised (divided by the mean power from 1 to 90 Hz), 50 Hz removed and 1/F-corrected PSD across the respective frequency range.\n\n### Statistics\n\nStatistical analyses were performed using custom-written scripts in MATLAB (R2020b). To perform paired comparisons between the two medication or stimulation conditions, we used a paired samples permutation t-test with multiple comparison correction (50,000 permutations each) as implemented in Groppe, 2022. When correlations were reported, we calculated Spearman\u2019s rank coefficients because the non-baseline-transformed power data are non-normally distributed and contain outliers. When multiple channels within one animal were available, hierarchical comparisons of aperiodic exponents and power across different epochs was performed using linear mixed-effects models to take repeated measures from multiple electrodes for each animal into account. The exponent or power data was set as dependent variable and different STN spiking conditions (e.g. high STN spiking epochs, low STN spiking epochs) as fixed effects. The normal distribution of each variable and the residuals were visually inspected with quantile-quantile plots and histograms of distribution. All models were estimated by the method of maximum likelihood and included random intercept for subjects to allow different intercepts for each subject, thereby capturing individual differences. Multiple statistical tests were performed in this study under FDR control at 5% using the adaptive linear step-up procedure, a modification of the original Benjamini and Hochberg procedure (Duchet et al., 2021). This ensures that the expectation of the number of false positives over the total number of positives is less than 5% when many statistical tests are performed. When histograms of distribution are shown, the optimal number of histogram bins was determined using the Freedman\u2013Diaconis rule (Freedman and Diaconis, 1981). All data are shown as mean \u00b1 standard error of the mean (SEM) unless mentioned otherwise.\n\n### Sample size estimation, replicates, and group allocation\n\nDue to the explorative nature of this study, we did not perform prospective sample size estimations but included all animal data with wideband recordings from STN that were available to us (n = 8). Since 6-OHDA-lesion was performed unilaterally, only one STN was recorded per animal. Similarly, we did not perform prospective sample size calculations for human data, but included all STN recordings we had available (37 STNs from 24 patients). This approach was chosen as postoperative LFP recordings from DBS electrodes are rare research opportunities. Fortunately, due to the relatively high signal-to-noise ratio of LFP recordings, a small number of patients between 7 and 12 is considered sufficient to detect robust effects in LFP studies (Alegre et al., 2013; Brittain et al., 2012; Wessel et al., 2016).\n\nIn our study, each STN was treated as one independent sample. In doing so, we follow the definition that \u2018biological replicates are parallel measurements of biologically distinct samples that capture random biological variation\u2019 (Blainey et al., 2014). It should be recognised that the variations we observed in our sample can be caused by variability in the phenotype of PD, of the target location of the electrode, or in the temporary lesion effect of DBS surgery.\n\nThis was not a clinical study. We used a within-subject design to test the effects of DBS and dopaminergic medication. All available animal and human data recordings were included in the analysis (no attrition).\n",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "aa9dbe8d-6c7b-44a8-8b22-d97e8bfe2693",
+      "submission_id": "e8f427b4-ca04-476b-b656-b8e8a606d34a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicole C Swann, https://ror.org/0293rh119 University of Oregon United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82467.sa0](https://doi.org/10.7554/eLife.82467.sa0)\n\nThis important work provides compelling evidence for the relationship between aperiodic components of spectral signals in the subthalamic nucleus and changes in neural firing. The manuscript is particularly notable because the authors used a unique cross-species approach in human patients and rats. The mechanistic insight this work provides will be especially impactful given the current interest in considering aperiodic components of electrophysiological signals.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nicole C Swann, https://ror.org/0293rh119 University of Oregon United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82467.sa1](https://doi.org/10.7554/eLife.82467.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The aperiodic exponent of subthalamic field potentials reflects excitation/inhibition balance in Parkinsonism: a cross-species study in vivo\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Floris de Lange as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Bradley Voytek (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Our biggest concern was with some of the methodological choices, elaborated on in Reviewer #1's first point. In particular, the rationale with respect to the choice of frequency band used to fit the 1/f, and the inconsistency between experiments was unclear to us. Related, the modeling choices at times fail to account for some aspects of the spectra, which, for some cases, may impact results. The authors should respond to this, either by explaining the rationale or perhaps some re-analysis. One possibility is using a Lorentzian fit (\"knee mode\"). Please see Reviewer 1's main first point.\n\n2) To elaborate a bit on the point above, as Reviewer #1 highlights in their public review, there was concern that the assumption of a monolithic model of the 1/f pattern (and its representation with a single exponent) fails to capture nuanced/fine-grained aspects of the spectrum, and might confuse an overall elevation of broadband \u03b3 power with a change of 1/f exponent. In such cases, observed changes in 1/f exponents would result from improper model fitting and be spurious findings. This issue needs to be carefully addressed.\n\n3) Line 80-83. Is it possible the null result is due to the authors' choice of analyzing the two conditions separately? If the data were pooled between high and low spiking epochs, presumably a significant correlation between power and exponent would be found here. Could the authors please address this?\n\n4) The authors conducted many bivariate correlation analyses, but it would be worthwhile to run a multiple linear regression analysis to see whether and to what degree the different electrophysiological features relate to clinical status.\n\n5) In Figure 3, why do the authors not also show the aperiodic-adjusted \u03b2 oscillation features?\n\nReviewer #1 (Recommendations for the authors):\n\nSpecific issues:\n\n1) Line 5-7, the authors' terminology here confuses the exponent, which is measured from the power spectrum, with the activity that contributes to that power spectrum. In other words, 1/f exponent or aperiodic exponent should not be in the same status as the other terms. It is probably also safe to say that the term \"1/f noise\" is no longer used in the literature due to the increased recognition that this activity is not noise.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 The authors perform permutation tests, but report t-values and p-values. Are the p-values the empirical p-values derived from the permutation measure, or are they the inferred p-values from the t-test itself?\n\n\u2013 Relatedly, 50,000 permutations seem excessive! Not problematic in any way, just probably overkill.\n\n\u2013 The authors should look at Chini et al., eLife 2022 as optogenetic support that aperiodic activity indexes EI balance.\n\n\u2013 In Figures 1D and E, the individual datapoints are difficult to see. Maybe they can be offset a bit, or the \u03b1 adjusted so they're not as faint. This is especially true when the figures are printed.\n\n\u2013 Across the Figures, the visual language isn't consistent. For example, in Figure 1 red and blue mean low- and high-spiking epochs, respectively. In Figure 2 red and blue mean on and off meds. In Figure 3 red and blue mean on or off DBS. In these cases they're somewhat consistent in the humans (on/off meds is similar to on/off DBS), and theoretically related to low- and high-spiking, but I think different colors should be used to make them better stand apart.\n\n\u2013 In Figure 2B, the exponent fit lines in black and yellow are \u2013very\u2013 difficult to see, especially in print.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 The motivation for selecting frequency ranges for analysis is not clear/convincing enough from my point of view, eg. why is it starting at 30 / 40 Hz only?\n\nPotential \u03b2 band activity below 30 / 40 Hz seems like a weak argument as strong \u03b2 activity can appear at much lower frequencies or not really at all.\n\n\u2013 Chapter 4.2.2: The last sentence appears redundant to me, is it?\n\n\u2013 Just a typo on p. 12: SNc needs to be Substantia nigra pars compacta.\n\n\u2013 Please double-check the citation Oostenveld et al. 2011. The Journal name is missing.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The aperiodic exponent of subthalamic field potentials reflects excitation/inhibition balance in Parkinsonism\" for further consideration by eLife. Your revised article has been evaluated by Floris de Lange (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been very much improved but there are some remaining issues that need to be addressed, as outlined below:\n\nUpon discussion between the reviewers we have identified the following points which we would like the authors to address.\n\n1) The reviewers felt the authors had not clearly indicated when a \"knee\" was included in the fit and when it was not included. The manuscript would be strengthened by clarifying this and also explaining how the decision was made.\n\n2) We are concerned that the authors used the fact that a correlation yielded a p-value greater than 0.05 as justification for the idea that no correlation was present. The authors should include a clear discussion of this and consideration of alternative interpretations.\n\n3) With respect to Figure 2B, we would like the authors to perform an analysis on the narrowband \u03b2 peak (in addition to the analysis looking at the broader \u03b2 range already included) and discuss any differences in the on vs off findings.\n\nBelow are the individual reviewer comments.\n\nReviewer #1 (Recommendations for the authors):\n\nThis revised manuscript is much improved. However, there are still some significant issues that are left unaddressed, which in my opinion precludes publication in the present form.\n\n1. Essential revision Point 1, author point 2. FOOOF fitting with a new parameter.\n\nThe authors suggest that \"PSDs in log-log space were almost linear (Figure 1C + Figure 2B + Figure 1\u2014figure supplement 1E+F + Figure 3A).\" However, a knee is evident in Figure 1C, Figure 2B, and Figure 3A, no-DBS condition. So, this sentence does not fit with the data presented in the figures.\n\nOverall, from reading the response letter, I'm missing a principled approach to decide whether the knee fitting is used or not used in each case. If there was a consistent and objective criterion, the authors should clarify it in the paper.\n\n2. Essential revision Point 3. You can't use a trend-level correlation (p = 0.07) to support a lack of correlation! This correlation is at trend-level, and you might just lack sufficient statistical power for it to cross the arbitrary p = 0.05 threshold.\n\n3. Reviewer #1, point 2. The authors' response here is entirely unconvincing. Their response does not solve the salient issue that Figure 2B and Figure 2C are intuitively contradictory. The authors' response is essentially that a modification of their analysis pipeline yields the same result, even though this result is contrary to the impression one gets from looking at the power spectrum. Instead of believing that the method cannot fail, when the result from a multi-level complicated analysis does not fit the impression from the raw data, it would be prudent to at least consider the possibility that one's tools might be problematic. At the very least, no satisfactory answer is given here about why the statistics do not fit with the raw impression by examining the power spectrum in Figure 2B.\n\nReviewer #2 (Recommendations for the authors):\n\nI've reviewed all of the author's comments and changes, and they have done a fine job addressing all of my concerns.\n\nReviewer #3 (Recommendations for the authors):\n\nIn their responses the authors have addressed all my comments convincingly. I also would consider the aspects raised by the other two reviewers as well addressed.\n\nThe additional data analyses did not change the nature of the work but confirmed the robustness of the results nicely. The manuscript and the figures have further improved through the revisions. I have no further comments.\n",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1e29419a-e245-45dc-bbc5-3acf5b8cf3f8",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C1",
+      "claim": "Power spectral densities (PSDs) of neural time series tend to follow a 1/f power law distribution, where power is greatest at low frequencies and diminishes rapidly as frequencies increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Power spectral densities (PSDs) of neural time series, such as electroencephalography (EEG), electrocorticography (ECoG), or local field potentials (LFPs), tend to follow a 1/f power law distribution, where f is frequency, meaning that power is greatest at low frequencies and diminishes rapidly as frequencies increase (He et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to He et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "872eba48-18dc-4e9d-944f-41fe30727589",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C2",
+      "claim": "Aperiodic exponents in LFP, EEG, and ECoG recordings vary by age.",
+      "claim_type": "EXPLICIT",
+      "source": "Aperiodic exponents in LFP, EEG, and ECoG recordings vary by age (He et al., 2019; Schaworonkow and Voytek, 2021; Voytek et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to He et al., 2019; Schaworonkow and Voytek, 2021; Voytek et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "8c44e2c0-c0a4-4baf-b826-1cf673c85448",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C3",
+      "claim": "Aperiodic exponents in LFP, EEG, and ECoG recordings vary by cortical depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Aperiodic exponents in LFP, EEG, and ECoG recordings vary by age (He et al., 2019; Schaworonkow and Voytek, 2021; Voytek et al., 2015), cortical depth (Halgren et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Halgren et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "7d47a3fa-515e-4536-9423-7ad51a39ffe3",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C4",
+      "claim": "Aperiodic exponents in LFP, EEG, and ECoG recordings vary by psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Aperiodic exponents in LFP, EEG, and ECoG recordings vary by age (He et al., 2019; Schaworonkow and Voytek, 2021; Voytek et al., 2015), cortical depth (Halgren et al., 2021), psychiatric disorders (Adelh\u00f6fer et al., 2021; Molina et al., 2020; Robertson et al., 2019; Veerakumar et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Adelh\u00f6fer et al., 2021; Molina et al., 2020; Robertson et al., 2019; Veerakumar et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "8b7fcd80-fcbc-44dd-a0b6-db491ee9d623",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C5",
+      "claim": "Aperiodic exponents in LFP, EEG, and ECoG recordings vary by Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Aperiodic exponents in LFP, EEG, and ECoG recordings vary by age (He et al., 2019; Schaworonkow and Voytek, 2021; Voytek et al., 2015), cortical depth (Halgren et al., 2021), psychiatric disorders (Adelh\u00f6fer et al., 2021; Molina et al., 2020; Robertson et al., 2019; Veerakumar et al., 2019), and Parkinson's disease (PD) (Mostile et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mostile et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "6b944bce-e4d2-4d15-8577-77e3525bf181",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C6",
+      "claim": "Aperiodic exponents track sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "They track sensory stimuli (Waschke et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Waschke et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "d8d99520-871f-49ea-bc77-d34001cce18f",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C7",
+      "claim": "Aperiodic exponents change with movement.",
+      "claim_type": "EXPLICIT",
+      "source": "and change with movement (Belova et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Belova et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "f934f37b-e8c0-4f0f-aff0-d7c917a3efd1",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C8",
+      "claim": "The aperiodic exponent was suggested to reflect neuronal spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the aperiodic exponent was suggested to reflect neuronal spiking (Manning et al., 2009; Ray and Maunsell, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Manning et al., 2009; Ray and Maunsell, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "2b7f5842-c9e8-49c5-aec8-2b909d34a333",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C9",
+      "claim": "The aperiodic exponent was suggested to reflect synaptic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "synaptic currents (Baranauskas et al., 2012; Buzs\u00e1ki et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baranauskas et al., 2012; Buzs\u00e1ki et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "53199c9e-d876-41e5-9bee-b2f1781a1b1d",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C10",
+      "claim": "The aperiodic exponent was suggested to reflect excitation-inhibition (E/I) balance.",
+      "claim_type": "EXPLICIT",
+      "source": "and excitation-inhibition (E/I) balance, which describes the delicate balance of inhibitory and excitatory synaptic inputs to neurons (Chini et al., 2022; Gao et al., 2017; Trakoshis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chini et al., 2022; Gao et al., 2017; Trakoshis et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "1945868f-cdb9-46c5-ab88-6e0f646f77f8",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C12",
+      "claim": "Higher aperiodic exponents correspond to faster decay of power with increasing frequencies during the unconscious state (NREM sleep, anaesthesia), which is linked with more inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, higher aperiodic exponents, corresponding to faster decay of power with increasing frequencies, were observed during the unconscious state (NREM sleep, anaesthesia), which is linked with more inhibition (Colombo et al., 2019; Huang et al., 2020; Lendner et al., 2020; Miskovic et al., 2019; Niethard et al., 2016; Waschke et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Colombo et al., 2019; Huang et al., 2020; Lendner et al., 2020; Miskovic et al., 2019; Niethard et al., 2016; Waschke et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "05502a35-01f5-44ae-8afb-a18829bfe3bf",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C13",
+      "claim": "Theta cycle-modulated E/I changes in the rat hippocampus are reflected in the per-cycle PSD exponent of hippocampal LFPs calculated at different theta phases.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Gao and colleagues found that theta cycle-modulated E/I changes in the rat hippocampus are reflected in the per-cycle PSD exponent of hippocampal LFPs calculated at different theta phases (peaks or troughs) confirming the E/I hypothesis for LFPs (Gao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gao et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "e7f2ab40-1aee-4663-9387-b916c15e5842",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C14",
+      "claim": "STN and external globus pallidus (GPe) neurons are rhythmically active in time with cortical SWA in rats rendered Parkinsonian by lesion of midbrain dopamine neurons with 6-hydroxydopamine (6-OHDA).",
+      "claim_type": "EXPLICIT",
+      "source": "STN and external globus pallidus (GPe) neurons are rhythmically active in time with cortical SWA in rats rendered Parkinsonian by lesion of midbrain dopamine neurons with 6-hydroxydopamine (6-OHDA) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1A showing rhythmic activity patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "0ee6c041-8e76-41c5-8673-e6d0706a9882",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C15",
+      "claim": "STN neurons are predominantly active during the active phase of cortical slow (~1 Hz) oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "STN neurons are predominantly active during the active phase of cortical slow (~1 Hz) oscillations (Magill et al., 2001; Mallet et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Magill et al., 2001; Mallet et al., 2008a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "aec991be-039e-4a94-a350-4b5405ae9aae",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C16",
+      "claim": "STN neurons reduce their firing around the inactive phase when GPe-Ti ('type-inactive') neurons tend to fire most.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, STN neurons reduce their firing around the inactive phase when GPe-Ti ('type-inactive') neurons tend to fire most.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the anti-phase relationship between STN and GPe-Ti neurons",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "f4bf4e01-8c22-4a3e-bd2f-ae1b501ce2bf",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C17",
+      "claim": "GPe-Ti neurons largely correspond to prototypic GPe neurons that are GABAergic and project to and inhibit STN.",
+      "claim_type": "EXPLICIT",
+      "source": "GPe-Ti neurons largely correspond to prototypic GPe neurons that are GABAergic and project to and inhibit STN (Abdi et al., 2015; Mallet et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abdi et al., 2015; Mallet et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "169cef1b-ef8f-4ff4-9af4-0759440828ba",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C18",
+      "claim": "The GPe is considered the primary source of inhibitory inputs to the STN.",
+      "claim_type": "EXPLICIT",
+      "source": "the GPe is considered the primary source of inhibitory inputs to the STN (Smith et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "e1cb8bf3-18c5-4df5-ba64-0c6b319c10f8",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C19",
+      "claim": "Aperiodic exponents of STN-LFPs were consistently modulated with expected differences of the E/I ratio of STN in high and low excitation states.",
+      "claim_type": "EXPLICIT",
+      "source": "Aperiodic exponents of STN-LFPs were consistently modulated with expected differences of the E/I ratio of STN in these states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "e34ac2ed-7ab2-470a-972c-461b87151611",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C20",
+      "claim": "GPe-Ti neurons are most active when STN neurons are relatively inactive and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "GPe-Ti neurons are most active when STN neurons are relatively inactive and vice versa (iii; ***p<.001, Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis shown in Figure 1B(iii)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "384b9a28-6936-445c-95ec-daaa7cdd79b5",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C21",
+      "claim": "Aperiodic exponents are high during low STN spiking epochs corresponding to more GPe-Ti activity and, by inference, more inhibition of STN.",
+      "claim_type": "EXPLICIT",
+      "source": "Aperiodic exponents are high during low STN spiking epochs corresponding to more GPe-Ti activity and, by inference, more inhibition of STN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1D with statistical analysis (LME: estimate = 0.12, t = 3.92, p<0.001)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "55bae935-f15c-41bc-9e15-e795b1274b46",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C22",
+      "claim": "Aperiodic exponents are low during high STN spiking epochs associated with less GPe-Ti activity and, by inference, disinhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, aperiodic exponents are low during high STN spiking epochs associated with less GPe-Ti activity and, by inference, disinhibition (LME: estimate = 0.12, t = 3.92, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1D with statistical analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "45f8412e-9a6e-4239-8abc-68578d436002",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C23",
+      "claim": "Average power between 30 and 100 Hz in the STN-LFPs is higher when STN neurons are highly active than when STN spiking is low.",
+      "claim_type": "EXPLICIT",
+      "source": "Average power between 30 and 100 Hz in the STN-LFPs is higher when STN neurons are highly active than when STN spiking is low (LME: estimate = \u20130.02, t = \u20132.34, p=0.02).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1E with statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "2bdc92b3-3dc7-43da-9315-a97c8be17d04",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C24",
+      "claim": "In PD, STN shows exaggerated and synchronised oscillatory activity in the beta range.",
+      "claim_type": "EXPLICIT",
+      "source": "In PD, STN shows exaggerated and synchronised oscillatory activity in the beta range (Bergman et al., 1994; Brown et al., 2001; Levy et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bergman et al., 1994; Brown et al., 2001; Levy et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "33ac4ad6-d859-43a4-ac46-eb729ef0b65a",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C25",
+      "claim": "Dopaminergic medication and deep brain stimulation (DBS) desynchronise STN in the beta range.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopaminergic medication and deep brain stimulation (DBS) desynchronise STN in the beta range (Eusebio et al., 2011; K\u00fchn et al., 2008; Whitmer et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Eusebio et al., 2011; K\u00fchn et al., 2008; Whitmer et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "61213776-a3db-4236-8239-67d5abe6408b",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C26",
+      "claim": "Dopaminergic medication and deep brain stimulation reduce STN single-unit activity.",
+      "claim_type": "EXPLICIT",
+      "source": "and reduce STN single-unit activity (Filali et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Filali et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "b419ddcc-99f2-4b85-a052-887472eab1a6",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C27",
+      "claim": "Aperiodic exponents of the STN-LFP were increased with both dopaminergic medication and DBS therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that aperiodic exponents of the STN-LFP were increased with both therapies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "d7175a11-2af8-47c8-8c0b-38e9eef14977",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C28",
+      "claim": "Results from PD patients showing increased aperiodic exponents with medication and DBS are consistent with the E/I hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and these results from PD patients are also consistent with the E/I hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from consistency with E/I hypothesis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "3d3d4254-63e6-483e-8f48-e149f5bf6d3d",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C29",
+      "claim": "Aperiodic exponents at 40\u201390 Hz successfully distinguished dopaminergic medication states (ON vs OFF).",
+      "claim_type": "EXPLICIT",
+      "source": "Aperiodic exponents at 40\u201390 Hz successfully distinguished dopaminergic medication states (paired samples permutation t-test; t = \u20133.31, p=0.0015, Cohen's d: 0.60)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of patient data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "322071c0-8b81-4252-a353-8a08bec622ca",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C30",
+      "claim": "Aperiodic exponents were larger ON medication in 66% of hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "and were larger ON medication (in 66% of hemispheres)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "9ffed908-4284-4ba7-9364-b52190acf1e5",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C31",
+      "claim": "Larger aperiodic exponents ON medication suggest a faster drop of power with increasing frequencies and in keeping with more inhibition of STN.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting a faster drop of power with increasing frequencies and in keeping with more inhibition of STN (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the relationship between exponent values and E/I balance",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "ef20e018-d2a7-46bc-bd69-836a1e33b00f",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C32",
+      "claim": "Periodic beta power differed between the two medication states (ON vs OFF).",
+      "claim_type": "EXPLICIT",
+      "source": "Periodic beta power differed between the two medication states (paired samples permutation t-test, t = 2.08, p=0.048)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "42dcb7a7-bf84-41e0-849b-79076a0f09bd",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C33",
+      "claim": "Periodic beta power was higher in the OFF medication state.",
+      "claim_type": "EXPLICIT",
+      "source": "with higher power in the OFF medication state consistent with previous studies (Brown et al., 2001; Neumann et al., 2017; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data and citations to Brown et al., 2001; Neumann et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "b8df532f-d233-48f0-9fb6-049d8ae8d4a1",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C34",
+      "claim": "Average beta power did not correlate with aperiodic exponents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither average (Spearman; \u03c1 = \u20130.08, p=0.67), low (\u03c1 = \u20130.20, p=0.28), nor high beta power (\u03c1 = 0.004, p=0.99) correlated with aperiodic exponents (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "c7af16c5-733c-48b0-b634-ddacaa10dc9b",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C35",
+      "claim": "Medication-induced changes of aperiodic exponents and periodic beta power displayed a trend for a negative correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Medication-induced changes of aperiodic exponents and periodic beta power displayed a trend for a negative correlation (Spearman; \u03c1 = \u20130.33, p=0.07, n = 30; Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "10475c9b-c873-47cc-a2af-5debde65176e",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C36",
+      "claim": "Neither levodopa-induced changes of periodic beta power nor aperiodic exponents were correlated with contralateral appendicular bradykinesia and rigidity UPDRS part III sub-scores OFF-ON levodopa in this cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, neither levodopa-induced changes of periodic beta power (Spearman; \u03c1 = \u20130.04, p=0.85, n = 28; Figure 2E) nor aperiodic exponents (Spearman; \u03c1 = \u20130.014, p=0.94, n = 28; Figure 2F) were correlated with contralateral appendicular bradykinesia and rigidity UPDRS part III sub-scores OFF-ON levodopa in this cohort.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "06aecc8e-6f5c-45f0-b2fb-9125bb37e0da",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C37",
+      "claim": "Aperiodic exponents of STN-LFPs at 10\u201350 Hz were increased ON DBS compared to OFF DBS.",
+      "claim_type": "EXPLICIT",
+      "source": "We found increased aperiodic exponents ON DBS (paired samples permutation t-test; t = \u20136.27, p<0.001, Cohen's d: 1.23, Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of patient data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "6941f578-e811-45ad-ad64-2083dc4a3b8c",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C38",
+      "claim": "The increase in aperiodic exponents ON DBS is a similar effect as levodopa, in keeping with the E/I hypothesis and the notion that DBS suppresses STN firing to some degree.",
+      "claim_type": "EXPLICIT",
+      "source": "a similar effect as levodopa, in keeping with the E/I hypothesis and of the notion that DBS supresses STN firing to some degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from consistency with E/I hypothesis and known effects of DBS",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "141a47d1-3ee1-48db-9efc-f5e15dd335a4",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C39",
+      "claim": "High-frequency DBS was thought to induce functional inactivation of the neurons in the stimulated area.",
+      "claim_type": "EXPLICIT",
+      "source": "High-frequency DBS was thought to induce functional inactivation of the neurons in the stimulated area (Aziz et al., 1991; Benabid et al., 1994; Bergman et al., 1990; Limousin et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aziz et al., 1991; Benabid et al., 1994; Bergman et al., 1990; Limousin et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "5e961f33-bd1d-4db0-bda5-0fc4681c2500",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C40",
+      "claim": "Suppression of neuronal activity was recorded surrounding STN-DBS leads in patients, non-human primates, and rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the inactivation hypothesis was corroborated when suppression of neuronal activity was recorded surrounding STN-DBS leads in patients, non-human primates, and rodents (Filali et al., 2004; Meissner et al., 2005; Shi et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Filali et al., 2004; Meissner et al., 2005; Shi et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "fbd26950-cace-4d3f-914a-857b9098333a",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C41",
+      "claim": "STN dendrites are innervated by glutamatergic inputs from ipsilateral somatomotor and frontal cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "STN dendrites are innervated by glutamatergic inputs from ipsilateral somatomotor and frontal cortical areas (Monakow et al., 1978)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Monakow et al., 1978",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "31370071-e930-45f1-b82d-6ddfbe039f63",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C42",
+      "claim": "STN dendrites are innervated by glutamatergic intralaminar thalamic nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "glutamatergic intralaminar thalamic nuclei (Kita et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kita et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "af6bd7e3-47d2-4b99-adc7-5e3bf99064da",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C43",
+      "claim": "STN dendrites are innervated by GABAergic inputs from prototypic GPe neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "and GABAergic inputs from prototypic GPe neurons (Mallet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mallet et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "8ec3437a-d982-48f8-a64c-df76fb561302",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C44",
+      "claim": "On the active phase of the cortical slow oscillation, STN neurons are expected to receive intense excitatory input from cortical and thalamic afferents and decreased inhibitory input from prototypic GPe neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In lesioned animals, on the active phase of the cortical slow oscillation (here referred to as high STN spiking epochs), STN neurons are expected to receive intense excitatory input from cortical and thalamic afferents and decreased inhibitory input from prototypic GPe neurons (Mallet et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from known connectivity and supported by citation to Mallet et al., 2012",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "a0200210-c489-49cb-82b5-a21c0c295ab5",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C45",
+      "claim": "During the inactive phase of the cortical slow oscillation, inhibition from prototypic GPe neurons should be high and excitation from cortex and thalamus is relatively low.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during the inactive phase of the cortical slow oscillation, inhibition from prototypic GPe neurons should be high and excitation from cortex and thalamus is relatively low, conditions that can completely prevent STN spiking (Mallet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from known connectivity and supported by citation to Mallet et al., 2012",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "bf4fdcbb-8219-41c2-ab4c-e1c4b85485c7",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C46",
+      "claim": "Clear differences in the aperiodic exponents of STN-LFPs were found between extreme states of local excitation and inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found clear differences in the aperiodic exponents of STN-LFPs between these extreme states of local excitation and inhibition (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "b75ee8e5-75e1-4764-be1f-28c223338b05",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C47",
+      "claim": "The anatomy and physiology of STN differs significantly from cortex in that it is made up of relatively homogenous, glutamatergic projection neurons that fire action potentials autonomously and receive tonic inhibition from prototypic GPe neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the anatomy and physiology of STN differs significantly from cortex in that it is made up of relatively homogenous, glutamatergic projection neurons that fire action potentials autonomously and receive tonic inhibition from prototypic GPe neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of STN anatomy and physiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "8235bf75-6cf1-405e-9f58-4aeccfef1ec1",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C48",
+      "claim": "Cortical circuits comprise a vast array of neuron types and activity of cortical projection neurons is predominantly input driven.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical circuits, in contrast, comprise a vast array of neuron types and activity of cortical projection neurons is predominantly input driven.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of cortical anatomy and physiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "6050fcf7-8c0d-4512-902d-de9b99ae1a54",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C49",
+      "claim": "The findings provide important validation that aperiodic exponents reflect changes in E/I balance at the synaptic (LFP) levels, specifically in STN.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings provide important validation that aperiodic exponents reflect changes in E/I balance at the synaptic (LFP) levels, specifically in STN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the study's experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "c9b38f6e-d6c4-4487-b642-580a17cf981a",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C50",
+      "claim": "The study directly links aperiodic exponents to single-neuron spiking and predefined parameters of the dynamic E/I balance that specifically relate to the majority of neurons in the recorded structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in contrast to these previous efforts examining the E/I hypothesis (Gao et al., 2017; Lendner et al., 2020; Waschke et al., 2021), we directly link aperiodic exponents to single-neuron spiking and predefined parameters of the dynamic E/I balance that specifically relate to the majority of neurons in the recorded structure (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the experimental approach described and data in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "3b3784c5-1854-4bfd-a3a3-b5e84e2395d9",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C51",
+      "claim": "Clinical results hold up against the E/I hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on these findings, our clinical results hold up against the E/I hypothesis as well (Figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from consistency of clinical data with E/I hypothesis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "c5df00ee-7f49-4eb0-be58-c287792bccd4",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C52",
+      "claim": "Aperiodic exponents of STN-LFPs recorded from awake PD patients are increased ON medication and ON DBS when STN local activity is believed to be decreased according to the classical direct/indirect pathways model.",
+      "claim_type": "EXPLICIT",
+      "source": "Aperiodic exponents of STN-LFPs recorded from awake PD patients are increased ON medication and ON DBS when STN local activity is believed to be decreased according to the classical direct/indirect pathways model (Albin et al., 1989; DeLong, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data and citations to Albin et al., 1989; DeLong, 1990",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "37e5f3f6-0a2c-4ee6-a25d-51563d72eed4",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C53",
+      "claim": "The increased exponents ON dopaminergic medication in PD are consistent with a recent study that reported higher aperiodic exponents in dopamine-intact compared to lesioned animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased exponents ON dopaminergic medication in PD are consistent with a recent study that reported higher aperiodic exponents in dopamine-intact compared to lesioned animals (Kim et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "9c8ec543-111a-413d-95a9-c56b2ca1f26a",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C54",
+      "claim": "Periodic beta power differs between the two dopaminergic medication states, consistent with previous findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results indicate that periodic beta power differs between the two dopaminergic medication states (Figure 2C), consistent with previous findings (Kim et al., 2022; K\u00fchn et al., 2006; Neumann et al., 2017; Ray et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data and citations to Kim et al., 2022; K\u00fchn et al., 2006; Neumann et al., 2017; Ray et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "2ab6a213-4bc4-4f92-bad5-474a6c382191",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C55",
+      "claim": "The missing correlation between medication-induced changes of aperiodic exponents and average beta power suggests that aperiodic exponents capture changes with medication that are not reflected by beta power alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the missing correlation between medication-induced changes of aperiodic exponents and average beta power suggests that aperiodic exponents capture changes with medication that are not reflected by beta power alone and might be complimentary in an adaptive DBS algorithm ( Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from lack of correlation in the data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "247878ac-4997-446d-bfd5-6b00f78f6458",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C56",
+      "claim": "Beta-band oscillations were identified as the most promising feedback signal for adaptive DBS considering their strong relationship with motor impairment in PD.",
+      "claim_type": "EXPLICIT",
+      "source": "Beta-band oscillations were identified as the most promising feedback signal for adaptive DBS considering their strong relationship with motor impairment in PD (K\u00fchn et al., 2006; Priori et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to K\u00fchn et al., 2006; Priori et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "d97ee1f7-bc8b-4c85-adaa-b8a3788f3b8c",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C57",
+      "claim": "The correlation between beta and contralateral appendicular bradykinesia and rigidity UPDRS scores was not significant in this cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the correlation between beta and contralateral appendicular bradykinesia and rigidity UPDRS scores was not significant in our cohort",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "7bb569a1-bdb7-4da8-92c3-b415f496d164",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C58",
+      "claim": "Abnormal beta activity is not observed in all patients.",
+      "claim_type": "EXPLICIT",
+      "source": "and abnormal beta activity is not observed in all patients (Giannicola et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Giannicola et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "119ae55d-ee7d-4072-8e40-e6a9dd3753ef",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C59",
+      "claim": "Abnormal beta activity is not correlated with tremor, freezing of gait, or dyskinesia.",
+      "claim_type": "EXPLICIT",
+      "source": "nor is it correlated with tremor, freezing of gait, or dyskinesia (Marceglia et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marceglia et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "1d9f4d0d-b944-4828-8ab0-66d2f4d289ca",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C60",
+      "claim": "It is unlikely that a beta-only feedback model will address all PD symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore unlikely that a beta-only feedback model will address all PD symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from limitations of beta as a biomarker",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "638f8d46-d745-40a5-a22f-ef1d9dd692a9",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C61",
+      "claim": "The aperiodic exponent changes with medication and DBS, similar characteristics which brought beta oscillations into the spotlight and which may suggest a link to clinical improvement.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it changes with medication and DBS (Figures 2 and 3), similar characteristics which brought beta oscillations into the spotlight and which may suggest a link to clinical improvement (K\u00fchn et al., 2006; K\u00fchn et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data and citations to K\u00fchn et al., 2006; K\u00fchn et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "ba81a8d4-1b91-4f6e-bbc4-39eddd099664",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C62",
+      "claim": "Medication-related changes of the aperiodic exponent were observed in hemispheres without clear beta peaks or medication-related beta changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we observed medication-related changes of the aperiodic exponent in hemispheres without clear beta peaks or medication-related beta changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "9ce0b848-9b5f-417b-8f3c-6b27cc3b8c15",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C63",
+      "claim": "The aperiodic exponent is estimated between 40 and 90 Hz when studying the effect of levodopa, avoiding lower frequencies which are particularly susceptible to movement-related artefacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we estimate the aperiodic exponent between 40 and 90 Hz, when studying the effect of levodopa, avoiding lower frequencies, which are particularly susceptible to movement-related artefacts (van Rheede et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to van Rheede et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "57127216-1a26-4f6d-a757-241f54fee976",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C64",
+      "claim": "A direct link between the aperiodic exponent and clinical symptoms could not be shown in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are some obstacles to its use as a feedback marker. First, we could not show a direct link between the aperiodic exponent and clinical symptoms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledged limitation of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "f4808b71-4fe1-4c26-ac57-dcf782fb4736",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C65",
+      "claim": "PSDs were averaged over 60 s to isolate exponents of STN-LFPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the aperiodic exponent would present a feedback signal with low temporal resolution. We averaged PSDs over 60 s to isolate exponents of STN-LFPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study's methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "aea1883c-7f06-48ed-8d1e-b952115c4591",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C66",
+      "claim": "Shortening the time window for PSD averaging will introduce noise into the PSD and increase the error of aperiodic estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortening this time window will introduce noise into the PSD and increase the error of aperiodic estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from signal processing principles",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "b2bf8ec9-f69f-48f6-808d-65114923b641",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C67",
+      "claim": "The frequency range is critical for isolating the aperiodic exponent and results may vary considerably depending on this.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the frequency range is critical for isolating the aperiodic exponent and results may vary considerably depending on this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledged limitation based on methodological considerations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "6be16b18-6194-4a68-9e69-47fdd79f33d0",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C68",
+      "claim": "For some PSDs with large oscillatory components and a spectral plateau at low frequencies, it may be impossible to obtain an unequivocal linear fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, for some PSDs with large oscillatory components and a spectral plateau at low frequencies, it may even be impossible to obtain an unequivocal linear fit (Gerster et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gerster et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "f6ed8352-829a-4995-8a1e-bc61efc57a35",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C69",
+      "claim": "It is unclear if a miniaturised implantable device will have the computational power to parameterise PSDs in real time and what effects this may have on battery longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, it is unclear if a miniaturised implantable device will have the computational power to parameterise PSDs in real time and what effects this may have on battery longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative consideration about practical implementation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "38c678d8-d3b5-45fd-99d7-3b48910dfcb5",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C70",
+      "claim": "In this cohort, levodopa-induced changes of aperiodic exponents and average beta power of three different frequency ranges were not correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, we did not find correlations between levodopa-induced changes of aperiodic exponents and average beta power of three different frequency ranges (Figure 2\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "333ebe8b-6990-418d-ace1-7101b9001920",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C71",
+      "claim": "There was a trend for a negative correlation between aperiodic exponents and periodic beta power.",
+      "claim_type": "EXPLICIT",
+      "source": "but a trend for a negative correlation with periodic beta power, which comprises a measure similar to beta peaks that were used before (Darcy et al., 2022; Neumann et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis and citations to Darcy et al., 2022; Neumann et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "b92c0d50-01b1-4b90-98b0-0b3e7b64463f",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C72",
+      "claim": "It is possible that aperiodic exponents extract similar information than beta power, but may aid in subjects where no beta peaks are present or beta peaks are not affected by levodopa.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that aperiodic exponents extract similar information than beta power, but may aid in subjects where no beta peaks are present or beta peaks are not affected by levodopa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference from the data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "6df209d1-bdef-4402-b18e-87b1764e5f0a",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C73",
+      "claim": "The chosen frequency band for linear fitting can affect FoooF parameterisation.",
+      "claim_type": "EXPLICIT",
+      "source": "The chosen frequency band for linear fitting can affect FoooF parameterisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on methodological considerations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "1f2cc053-f934-4a57-91d0-bcc104ba7811",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C74",
+      "claim": "Many different fitting ranges were applied to extract the aperiodic exponent in the past.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past, many different fitting ranges were applied to extract the aperiodic exponent (reviewed in Gerster et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gerster et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "f1703c9b-f3d8-4590-973c-7b2049a4b853",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C75",
+      "claim": "If prominent low-frequency oscillations are present, this may lead to steepening of the spectrum and error-prone aperiodic fits.",
+      "claim_type": "EXPLICIT",
+      "source": "If prominent low-frequency oscillations are present, this may lead to steepening of the spectrum and error-prone aperiodic fits (Gerster et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gerster et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "546728c0-e9af-4535-a05c-c6fcec0b6445",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C76",
+      "claim": "When parameterising PSDs from rodent data recorded using high-impedance microelectrodes, the frequency band from 30 to 100 Hz was chosen to avoid false-high exponents due to high power in the lower frequency bands.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, when parameterising PSDs from rodent data recorded using high-impedance microelectrodes, we chose the frequency band from 30 to 100 Hz to avoid false-high exponents due to high power in the lower frequency bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "2ad55c1e-71cc-4aec-9b6a-f499b878c683",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C77",
+      "claim": "The lower fitting bound of 30 Hz was chosen to exclude overlap of the lower fitting bound with the rising or falling arm of alpha or beta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower fitting bound of 30 Hz was chosen to exclude overlap of the lower fitting bound with the rising or falling arm of alpha or beta oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "daf2bc94-4074-4bda-8d44-45e0c63a0fbf",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C78",
+      "claim": "A frequency range from 30 to 70 Hz has been recommended to estimate the E/I ratio before, if this range is uncorrupted by oscillatory peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar frequency range has been recommended to estimate the E/I ratio before (from 30 to 70 Hz, if this range is uncorrupted by oscillatory peaks) (Gao et al., 2017; Trakoshis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gao et al., 2017; Trakoshis et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "0f1417f2-68f5-4167-a8f9-4d52091119b5",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C79",
+      "claim": "To assess differences with medication in clinical data, the fitting range was narrowed to 40\u201390 Hz to avoid overlap and false-high estimates due to peaks in the high beta range and to avoid the harmonic of mains interference.",
+      "claim_type": "EXPLICIT",
+      "source": "To asses differences with medication in clinical data recorded using macro-electrodes, we narrowed the fitting range to 40\u201390 Hz to avoid overlap and false-high estimates due to peaks in the high beta range (Figure 2B), and to avoid the harmonic of mains interference.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "8f90ef57-7962-4e2b-ad09-c5ec9795e49f",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C80",
+      "claim": "The results for medication effects on aperiodic exponents are robust as long as the selected frequency range covers 40\u201370 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are robust as long as the selected frequency range covers 40\u201370 Hz (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sensitivity analysis shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "27ea91a4-958d-4899-a630-73aac789a8a9",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C81",
+      "claim": "For DBS data analysis, the fitting range was adapted to avoid a spectral plateau which would have resulted in false-low exponents.",
+      "claim_type": "EXPLICIT",
+      "source": "For DBS data analysis, we adapted the fitting range to avoid a spectral plateau (Figure 3A) which would have resulted in false-low exponents had we used the same fitting range as for the previous analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "fcda61eb-d727-4cc2-b9db-84ec73ddc8f9",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C82",
+      "claim": "A prominent plateau at frequencies larger than 50 Hz was observed when DBS was switched ON in addition to prominent peaks at half stimulation frequency and other harmonics.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed this prominent plateau at frequencies larger than 50 Hz when DBS was switched ON in addition to prominent peaks at half stimulation frequency and other harmonics (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "5cdacc26-f81b-490a-9aef-d630543303df",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C83",
+      "claim": "Reduced power in the high beta and low gamma frequency bands (21\u201350 Hz) was observed with stimulation, suggesting that the signal-to-noise ratio is sufficient to detect physiological signals in this frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did observe reduced power in the high beta and low gamma frequency bands (21\u201350 Hz) with stimulation, suggesting that the signal-to-noise ratio is sufficient to detect physiological signals in this frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "b8bd9d1b-a218-48a2-b4f2-a2f5fa26aa5a",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C84",
+      "claim": "The study focused on the lower frequency bands (10\u201350 Hz) for quantifying aperiodic exponents ON and OFF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we have focused on the lower frequency bands (10\u201350 Hz) for quantifying aperiodic exponents ON and OFF stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "171c9c23-2e68-4efe-8982-289a15581168",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C85",
+      "claim": "In the dataset, there was no link between medication-induced changes of either the aperiodic exponent or periodic beta power and contralateral bradykinesia and rigidity scores OFF-ON levodopa.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in our dataset we did not see a link between medication-induced changes of either the aperiodic exponent or periodic beta power and contralateral bradykinesia and rigidity scores OFF-ON levodopa (Figure 2E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "13c1f537-cbbb-426e-a636-d6f971653e3d",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C86",
+      "claim": "Aperiodic exponents of STN-LFPs reflect STN excitation and inhibition as evinced by single-neuron activity in states of extreme spiking differences in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that aperiodic exponents of STN-LFPs reflect STN excitation and inhibition as evinced by single-neuron activity in states of extreme spiking differences in rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of study findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "039d3ca6-061b-4e49-bdac-9959edf01e18",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C87",
+      "claim": "Aperiodic exponents of STN-LFP in PD patients are larger ON dopaminergic medication and ON DBS reflecting more inhibition of STN compared to the dopamine-depleted and OFF DBS states.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that aperiodic exponents of STN-LFP in PD patients are larger ON dopaminergic medication and ON DBS reflecting more inhibition of STN compared to the dopamine-depleted and OFF DBS states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of study findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "d9ed5d8f-8356-4532-b930-d1bba98a1ebd",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C88",
+      "claim": "The results corroborate that the aperiodic exponent contains information with respect to E/I balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results corroborate that the aperiodic exponent contains information with respect to E/I balance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "d8c39819-a51e-470a-bc3d-1defaaae5cfd",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C89",
+      "claim": "The clinical results give reason to believe the aperiodic component may be useful in a closed-loop feedback algorithm for PD.",
+      "claim_type": "EXPLICIT",
+      "source": "and our clinical results give reason to believe the aperiodic component may be useful in a closed-loop feedback algorithm for PD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conclusion based on study findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "56244431-c59f-4903-b25d-148ade12ca40",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C90",
+      "claim": "Unilateral 6-OHDA lesion was performed by injecting 3 \u03bcl of 6-OHDA (4 mg/ml) medial to the substantia nigra pars compacta to target the medial forebrain bundle, resulting in widespread loss of midbrain dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "6-OHDA was dissolved in NaCl to a concentration of 4 mg/ml of which 3 \u03bcl were injected medial to the substantia nigra pars compacta to target the medial forebrain bundle, which results in widespread loss of midbrain dopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "6e5864f4-73d1-41a3-8f6e-c5065d7115c0",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C91",
+      "claim": "Lesions were considered successful if animals made >80 contraversive rotations in 20 min during apomorphine challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Lesions were considered successful if animals made >80 contraversive rotations in 20 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental criterion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "9486542b-bfef-4b29-b9a9-1b82854853e7",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C92",
+      "claim": "Electrophysiological recordings were performed ipsilateral to 6-OHDA lesion 21\u201345 days after surgery when pathophysiological changes in the basal ganglia have likely reached their maxima.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological recordings were performed ipsilateral to 6-OHDA lesion 21\u201345 days after surgery when pathophysiological changes in the basal ganglia have likely reached their maxima.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental timing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "40d905ab-dacf-4be3-9dc2-093b3a1d3de7",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C93",
+      "claim": "A total of 28 extracellular LFP channels within STN during SWA were analysed (3.5 \u00b1 0.18 channels per animal).",
+      "claim_type": "EXPLICIT",
+      "source": "We analysed a total of 28 extracellular LFP channels within STN during SWA (3.5 \u00b1 0.18 channels per animal [mean \u00b1 SEM]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data analyzed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "69ed4267-ddd7-44f6-a383-983f0cb1a6ad",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C94",
+      "claim": "STN single-unit activity was isolated from 20 of these channels (2.5 \u00b1 0.07 per animal).",
+      "claim_type": "EXPLICIT",
+      "source": "STN single-unit activity was isolated from 20 of these channels (2.5 \u00b1 0.07 per animal).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data analyzed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "49601420-aedd-4020-a571-cc5bbd0a5eeb",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C95",
+      "claim": "Analyses were performed on 97.61 \u00b1 2.17 s of data during SWA in 6-OHDA-lesioned animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses were performed on 97.61 \u00b1 2.17 s of data during SWA in 6-OHDA-lesioned animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data analyzed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "2995f938-6523-41cc-bd39-22b1e9380931",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C96",
+      "claim": "Only neurons in which <1% of interspike intervals were <2 ms were analysed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Only neurons in which <1% of interspike intervals were <2 ms were analysed in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of inclusion criterion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "0bd43742-ce63-4b54-95cb-67f28b1bb665",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C97",
+      "claim": "Target channels within STN were re-referenced by subtracting the mean signal across the six neighbouring channels to reduce volume conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Target channels within STN were re-referenced by subtracting the mean signal across the six neighbouring channels to reduce volume conduction (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of signal processing method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "90e58cb1-3437-4aec-b287-a4ca524b0078",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C98",
+      "claim": "The re-referencing approach was chosen with coherence <0.1 for all frequencies >10 Hz to control for volume conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed wavelet magnitude squared coherence between the target LFP channel in STN and ECoG to control for volume conduction and opted for the above re-referencing approach with coherence <0.1 for all frequencies >10 Hz (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of methodological validation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "abf3cd47-376d-4213-810f-daec09dbf615",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C99",
+      "claim": "Morlet wavelets of 50 cycles were used for spectral decomposition which did not change as a function of frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Morlet wavelets of 50 cycles were used which did not change as a function of frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of signal processing method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "91f31029-fafe-4e11-be74-d6cd3ac94816",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C100",
+      "claim": "The epoch duration of 250 ms was chosen such that it captures the rhythmic dynamics during SWA.",
+      "claim_type": "EXPLICIT",
+      "source": "The epoch duration was chosen such that it captures the rhythmic dynamics during SWA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "2f61cb86-5d77-466a-87e0-f08cf4a824b8",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C101",
+      "claim": "For every unit channel, epochs with a spike rate >75th percentile were defined as 'high spiking' and all epochs with a spike rate <25th percentile as 'low spiking'.",
+      "claim_type": "EXPLICIT",
+      "source": "For every unit channel, we defined epochs with a spike rate >75th percentile as 'high spiking' and all epochs with a spike rate <25th percentile as 'low spiking' (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of data categorization method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "4166c1ca-8129-4909-8c08-5eca5ee5fde6",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C102",
+      "claim": "Using the 'knee' mode for parameterisation did not improve aperiodic fitting compared to 'fixed' mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Results show that using the 'knee' mode for parameterisation did not improve aperiodic fitting (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "5e66109e-509b-4cda-9aad-9d4960696e34",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C103",
+      "claim": "The study analysed data from 24 patients from three centres.",
+      "claim_type": "EXPLICIT",
+      "source": "We analysed data from 24 patients from these three centres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "6f085db1-8f3c-4580-b738-9d6a1854b858",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C104",
+      "claim": "Data from 17 patients were previously published.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from 17 patients were previously published (Wiest et al., 2021; Wiest et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wiest et al., 2021; Wiest et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "c1084bf7-21f7-4173-b38e-42ad0010d4a6",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C105",
+      "claim": "Recordings were made between 3 and 6 days post-operatively, while lead extensions were still externalised and before implantation of the subcutaneous pulse generator.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were made between 3 and 6 days post-operatively, while lead extensions were still externalised and before implantation of the subcutaneous pulse generator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of recording timing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "dab127fd-2473-4f57-b03b-055331266e4a",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C106",
+      "claim": "In total, 24 patients (37 hemispheres) were recorded for this study; 17 patients (30 hemispheres) were recorded ON and OFF dopaminergic medication and 17 patients (26 hemispheres) ON and OFF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 24 patients (37 hemispheres) were recorded for this study; 17 patients (30 hemispheres) were recorded ON and OFF dopaminergic medication and 17 patients (26 hemispheres) ON and OFF stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "f6475343-daf9-4373-8f6d-5be571d10fa5",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C107",
+      "claim": "In patients with directional leads, the three directional contacts were joined to form a ring contact.",
+      "claim_type": "EXPLICIT",
+      "source": "In patients with directional leads, the three directional contacts were joined to form a ring contact (Figure 2Ai).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of recording configuration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "062c75e2-144e-4e2f-8389-75601b54d889",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C108",
+      "claim": "High-frequency stimulation at 130 Hz was only tested at the middle contacts to allow bipolar LFP recordings from the two surrounding contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "High-frequency stimulation at 130 Hz was only tested at the middle contacts to allow bipolar LFP recordings from the two surrounding contacts (Figure 2Aii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "fac891ae-8b29-4e9e-b9fc-b04f30e83b54",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C109",
+      "claim": "Stimuli comprised symmetric constant-current biphasic pulses (60 \u03bcs pulse width, negative phase first).",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli comprised symmetric constant-current biphasic pulses (60 \u03bcs pulse width, negative phase first).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of stimulation parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "67f01e17-10e9-4160-9564-814a98920ab7",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C110",
+      "claim": "The stimulation current was started at 0.5 mA and increased in increments of 0.5 mA until first a benefit in Parkinsonian motor symptoms was observed and second side-effect threshold was reached.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation current was started at 0.5 mA and increased in increments of 0.5 mA until first a benefit in Parkinsonian motor symptoms was observed and second side-effect threshold was reached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of stimulation protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "df639477-3863-4137-9ade-c69f05bf357f",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C111",
+      "claim": "Analyses were performed on 60 s of data while patients were awake and at rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses were performed on 60 s of data while patients were awake and at rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data analyzed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "2d75c282-06d7-42ea-bd77-c928da7e7d7d",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C112",
+      "claim": "Frequencies between 47 and 53 Hz were removed and the gap was linearly interpolated to exclude artefacts from mains interference at 50 Hz before isolating the aperiodic component.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude artefacts from mains interference at 50 Hz before isolating the aperiodic component, frequencies between 47 and 53 Hz were removed and the gap was linearly interpolated using the fillmissing function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of signal processing method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "fceec6df-2000-4b53-9a7a-b7394f8dd873",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C113",
+      "claim": "Within the selected frequency band (40-90 Hz), the power spectrum followed an almost perfect linear line in log-log space.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within the selected frequency band, the power spectrum followed an almost perfect linear line as illustrated in Figure 2B (bottom-right plot).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "d6f38d71-ef4f-4994-84fa-51c8fe659623",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C114",
+      "claim": "To isolate periodic beta activity, the PSD was parameterised using FoooF between 5 and 90 Hz ('knee' mode) and the largest peak within the canonical beta range from 8 to 35 Hz was selected.",
+      "claim_type": "EXPLICIT",
+      "source": "To isolate periodic beta activity, the PSD was parameterised using FoooF between 5 and 90 Hz ('knee' mode in this case as such a wide frequency range is unlikely to only have a single aperiodic component, all other FoooF settings were identical to what was used in animal data). After removing the aperiodic component, the largest peak within the canonical beta range from 8 to 35 Hz was selected (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of signal processing method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "03bb4b7d-02fc-4498-a32f-4f277807a6e3",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C115",
+      "claim": "Stimulation artefacts led to a plateau at frequencies >50 Hz in the spectra in the stimulation ON condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the stimulation ON condition, stimulation artefacts led to a plateau at frequencies >50 Hz in the spectra (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "0a4ef483-d65b-405d-866f-1b16d11e7797",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C116",
+      "claim": "A similar frequency range (5\u201345 Hz) was used in a previous study to evaluate the effect of DBS.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar frequency range (5\u201345 Hz) was used in a previous study (Chini et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chini et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "de4c32fa-e7fa-488e-becc-64a9569c86e7",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C117",
+      "claim": "Due to the explorative nature of this study, prospective sample size estimations were not performed but all available animal data with wideband recordings from STN were included (n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the explorative nature of this study, we did not perform prospective sample size estimations but included all animal data with wideband recordings from STN that were available to us (n = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "7de4ee44-6f5e-4d6e-802e-d9a78b8aa7a2",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C118",
+      "claim": "Prospective sample size calculations for human data were not performed, but all available STN recordings were included (37 STNs from 24 patients).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we did not perform prospective sample size calculations for human data, but included all STN recordings we had available (37 STNs from 24 patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "1dc2b06d-fcce-444f-8c9f-897cd3f25e9f",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C119",
+      "claim": "Due to the relatively high signal-to-noise ratio of LFP recordings, a small number of patients between 7 and 12 is considered sufficient to detect robust effects in LFP studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortunately, due to the relatively high signal-to-noise ratio of LFP recordings, a small number of patients between 7 and 12 is considered sufficient to detect robust effects in LFP studies (Alegre et al., 2013; Brittain et al., 2012; Wessel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alegre et al., 2013; Brittain et al., 2012; Wessel et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "577292c8-2665-4e14-917f-e46cb8d02e5f",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C120",
+      "claim": "In this study, each STN was treated as one independent sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, each STN was treated as one independent sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "475e3114-6a76-4bd7-bd89-31ed06883613",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C121",
+      "claim": "A within-subject design was used to test the effects of DBS and dopaminergic medication.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a within-subject design to test the effects of DBS and dopaminergic medication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "c436fff1-5e2f-4ff9-8a40-4a72b65535dd",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "claim_id": "C122",
+      "claim": "All available animal and human data recordings were included in the analysis (no attrition).",
+      "claim_type": "EXPLICIT",
+      "source": "All available animal and human data recordings were included in the analysis (no attrition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data inclusion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that aperiodic exponents of neural power spectral densities follow a 1/f distribution and vary with multiple physiological and pathological conditions. The aperiodic exponent has been proposed to reflect neuronal spiking, synaptic currents, and excitation-inhibition (E/I) balance, with supporting evidence from sleep/anesthesia states and hippocampal recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims summarize established literature through citations and provide the foundational context for the study. All claims are supported by appropriate citations to prior work (C1-C13), establishing the scientific background and E/I hypothesis that motivates the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In 6-OHDA-lesioned rats during slow-wave activity, STN and GPe-Ti neurons exhibit rhythmic, anti-phase firing patterns synchronized with cortical oscillations. STN neurons are predominantly active during the active phase of cortical slow oscillations when they receive excitatory input from cortex/thalamus and reduced inhibition from GPe, while GPe-Ti neurons (prototypic GABAergic neurons) are most active during the inactive phase when they provide maximal inhibition to STN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe the well-characterized neurophysiology of the basal ganglia circuit in the 6-OHDA model, supported by both prior literature citations (C15, C17, C18, C41-C43) and the study's own data (C14, C20 with statistical support). The anti-phase relationship and anatomical connectivity are established facts that provide the foundation for interpreting E/I balance changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "33680927-0a98-4ae8-98b5-9abac62f0719",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In 6-OHDA-lesioned rats (n=8 animals, 28 LFP channels, 20 single-unit channels), aperiodic exponents of STN-LFPs at 30-100 Hz were significantly higher during low STN spiking epochs (more inhibition) compared to high STN spiking epochs (more excitation) (LME: estimate=0.12, t=3.92, p<0.001). Average power at 30-100 Hz was higher during high spiking epochs (LME: estimate=-0.02, t=-2.34, p=0.02). These findings directly link aperiodic exponents to single-neuron activity and defined E/I balance states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the core validation result from the animal model. The claims are well-supported by appropriate statistical analysis (linear mixed-effects models accounting for repeated measures), adequate sample sizes, proper controls (re-referencing to reduce volume conduction with coherence <0.1), and methodological rigor (spike sorting criteria, epoch selection based on quartiles). The direct linkage between single-unit activity and LFP aperiodic exponents in defined E/I states provides strong evidence for the E/I hypothesis in STN.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In PD patients (n=17, 30 hemispheres), aperiodic exponents at 40-90 Hz successfully distinguished medication states (ON vs OFF levodopa), with higher exponents ON medication in 66% of hemispheres (paired permutation t-test: t=-3.31, p=0.0015, Cohen's d=0.60). Periodic beta power also differed between states (t=2.08, p=0.048), with higher power OFF medication, consistent with prior literature. These results support the E/I hypothesis in awake PD patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The medication effect on aperiodic exponents is well-supported by appropriate within-subject statistical testing, adequate sample size for LFP studies (n=30 hemispheres from 17 patients), and consistency with prior literature on beta power changes. The effect size is moderate (Cohen's d=0.60) and the result was robust across different frequency ranges (C80). The findings align with predictions from the E/I hypothesis and the animal model results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "7b4d6d40-90ea-4f25-864f-3c3a1fbc266b",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Average beta power did not correlate with aperiodic exponents (Spearman \u03c1=-0.08 to 0.004, p>0.05), but medication-induced changes showed a trend for negative correlation with periodic beta power (\u03c1=-0.33, p=0.07). Aperiodic exponent changes were observed in some hemispheres without clear beta peaks or medication-related beta changes, suggesting aperiodic exponents may capture complementary information to beta power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The lack of correlation between aperiodic exponents and beta power is well-documented with appropriate statistical tests (C34, C70). The trend toward correlation with periodic beta power (C35, C71) is appropriately reported as non-significant but suggestive. The observation that exponent changes occur in hemispheres without beta changes (C62) provides evidence for complementary information, though this is somewhat speculative (C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "1f5756e9-f596-4134-9cd5-8a06c1ba3096",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Neither levodopa-induced changes in periodic beta power nor aperiodic exponents correlated with contralateral appendicular bradykinesia and rigidity UPDRS part III sub-scores (Spearman: \u03c1=-0.04, p=0.85 for beta; \u03c1=-0.014, p=0.94 for exponents; n=28). The authors acknowledge they could not demonstrate a direct link between aperiodic exponents and clinical symptoms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The lack of correlation with clinical scores is clearly documented with appropriate statistical tests and acknowledged as a limitation (C64). This negative result is important for interpreting the clinical utility of aperiodic exponents. The authors appropriately note this limitation and suggest that more discriminatory motor tests may be needed for future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In PD patients (n=17, 26 hemispheres), aperiodic exponents at 10-50 Hz were significantly increased during 130 Hz STN-DBS compared to OFF DBS (paired permutation t-test: t=-6.27, p<0.001, Cohen's d=1.23). This effect is similar to levodopa and consistent with the E/I hypothesis and the notion that DBS suppresses STN firing, supported by prior literature on DBS-induced neuronal inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The DBS effect on aperiodic exponents is strongly supported by robust statistics (large effect size, Cohen's d=1.23, highly significant p<0.001) and appropriate within-subject design. The frequency range was appropriately adjusted (10-50 Hz) to avoid stimulation artifacts (spectral plateau >50 Hz, C82, C115). The interpretation is consistent with both the E/I hypothesis and established literature on DBS mechanisms (C39, C40).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "46028139-f745-4ad1-ba3a-964da2b35ac3",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study validates that aperiodic exponents reflect E/I balance in STN, a structure with distinct anatomy and physiology compared to cortex (homogeneous glutamatergic neurons with autonomous firing and tonic GPe inhibition). This validation is achieved by directly linking aperiodic exponents to single-neuron spiking and predefined E/I balance parameters, extending beyond previous cortical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretive claims are well-supported by the convergent evidence from both animal (direct single-unit validation) and human (medication/DBS effects) experiments. The distinction between STN and cortical circuits (C47, C48) is important for establishing the generalizability of the E/I hypothesis. The claim of validation (C49, C50) is justified by the experimental design linking single-unit activity to LFP exponents in defined E/I states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "52314b19-07c6-458a-a6a3-b74174722cfd",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Beta oscillations have limitations as a feedback signal for adaptive DBS (not present in all patients, not correlated with all symptoms). Aperiodic exponents show promise as a complementary biomarker because they change with medication and DBS, can be detected in hemispheres without beta peaks, and can be estimated at 40-90 Hz to avoid movement artifacts. However, the clinical utility remains speculative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the limitations of beta as a biomarker are well-documented by citations (C56, C58, C59), and the advantages of aperiodic exponents are supported by the study's data (C61, C62, C63), the claim that aperiodic exponents may be useful for adaptive DBS (C89) is speculative. The lack of correlation with clinical symptoms (C36, C64) and acknowledged obstacles (C64-C69) make the clinical utility uncertain despite the promising physiological findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "b231ead8-cd4b-4ea5-8082-d140c7b9e673",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Several obstacles limit the use of aperiodic exponents as a feedback signal: low temporal resolution (60s averaging required), sensitivity to frequency range selection, potential inability to obtain unequivocal fits with large oscillatory components, and unclear computational requirements for real-time implementation in implantable devices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These limitations are appropriately acknowledged and well-reasoned. The temporal resolution constraint (C65, C66) follows from signal processing principles. The frequency range sensitivity (C67, C73-C84) is demonstrated through the study's methodological choices and sensitivity analyses. The computational concerns (C69) are speculative but reasonable. These represent honest assessment of practical limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The frequency range for aperiodic exponent estimation critically affects results and was carefully selected for each dataset: 30-100 Hz for rodent data (avoiding low-frequency power), 40-90 Hz for medication data (avoiding beta peaks and mains harmonics), and 10-50 Hz for DBS data (avoiding stimulation-induced spectral plateau >50 Hz). Results were robust when the range covered 40-70 Hz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological choices for frequency ranges are well-justified based on the characteristics of each dataset (C76-C84), supported by prior recommendations (C78), and validated through sensitivity analyses (C80). The authors transparently discuss how spectral features (beta peaks, stimulation artifacts, low-frequency power) influenced their choices. This represents rigorous methodological consideration, though it also highlights a limitation in standardization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "2d666f12-2768-4310-99e3-d9762daed492",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The increased aperiodic exponents ON dopaminergic medication in PD patients are consistent with a recent study reporting higher exponents in dopamine-intact compared to lesioned animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim appropriately contextualizes the findings within recent literature (Kim et al., 2022) and demonstrates consistency across studies. The citation provides external validation for the medication effect observed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    },
+    {
+      "id": "faa51141-e350-4fc8-badc-4a449467f825",
+      "content_id": "653394e1-b25e-4587-b647-2b76a69364b2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study used appropriate experimental designs and sample sizes: 6-OHDA lesions validated by apomorphine challenge (>80 contraversive rotations), recordings 21-45 days post-lesion, within-subject designs for medication/DBS comparisons, and sample sizes (n=8 animals, 24 patients/37 hemispheres) considered adequate for LFP studies based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological details are clearly described and appropriate. The 6-OHDA lesion validation (C90, C91) follows established protocols. The timing of recordings (C92) is justified. The sample sizes (C117-C119) are defended with citations showing that 7-12 patients are sufficient for LFP studies. The within-subject design (C121) is appropriate for the research questions. No attrition (C122) strengthens the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:19:26.265779Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1e29419a-e245-45dc-bbc5-3acf5b8cf3f8",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "872eba48-18dc-4e9d-944f-41fe30727589",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "8c44e2c0-c0a4-4baf-b826-1cf673c85448",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "7d47a3fa-515e-4536-9423-7ad51a39ffe3",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "8b7fcd80-fcbc-44dd-a0b6-db491ee9d623",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "6b944bce-e4d2-4d15-8577-77e3525bf181",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "d8d99520-871f-49ea-bc77-d34001cce18f",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "f934f37b-e8c0-4f0f-aff0-d7c917a3efd1",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "2b7f5842-c9e8-49c5-aec8-2b909d34a333",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "53199c9e-d876-41e5-9bee-b2f1781a1b1d",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "1945868f-cdb9-46c5-ab88-6e0f646f77f8",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "05502a35-01f5-44ae-8afb-a18829bfe3bf",
+      "result_id": "5e1cd735-5423-4b1d-bc9e-3d40b7d169af"
+    },
+    {
+      "claim_id": "e7f2ab40-1aee-4663-9387-b916c15e5842",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "0ee6c041-8e76-41c5-8673-e6d0706a9882",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "aec991be-039e-4a94-a350-4b5405ae9aae",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "f4bf4e01-8c22-4a3e-bd2f-ae1b501ce2bf",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "169cef1b-ef8f-4ff4-9af4-0759440828ba",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "e34ac2ed-7ab2-470a-972c-461b87151611",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "fbd26950-cace-4d3f-914a-857b9098333a",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "31370071-e930-45f1-b82d-6ddfbe039f63",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "af6bd7e3-47d2-4b99-adc7-5e3bf99064da",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "8ec3437a-d982-48f8-a64c-df76fb561302",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "a0200210-c489-49cb-82b5-a21c0c295ab5",
+      "result_id": "67bf89c2-35f8-416a-bb02-7c0c4f6ff572"
+    },
+    {
+      "claim_id": "e1cb8bf3-18c5-4df5-ba64-0c6b319c10f8",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "384b9a28-6936-445c-95ec-daaa7cdd79b5",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "55bae935-f15c-41bc-9e15-e795b1274b46",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "45f8412e-9a6e-4239-8abc-68578d436002",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "bf4fdcbb-8219-41c2-ab4c-e1c4b85485c7",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "13c1f537-cbbb-426e-a636-d6f971653e3d",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "40d905ab-dacf-4be3-9dc2-093b3a1d3de7",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "69ed4267-ddd7-44f6-a383-983f0cb1a6ad",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "49601420-aedd-4020-a571-cc5bbd0a5eeb",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "2995f938-6523-41cc-bd39-22b1e9380931",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "0bd43742-ce63-4b54-95cb-67f28b1bb665",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "90e58cb1-3437-4aec-b287-a4ca524b0078",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "abf3cd47-376d-4213-810f-daec09dbf615",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "91f31029-fafe-4e11-be74-d6cd3ac94816",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "2f61cb86-5d77-466a-87e0-f08cf4a824b8",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "4166c1ca-8129-4909-8c08-5eca5ee5fde6",
+      "result_id": "33680927-0a98-4ae8-98b5-9abac62f0719"
+    },
+    {
+      "claim_id": "2bdc92b3-3dc7-43da-9315-a97c8be17d04",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "33ac4ad6-d859-43a4-ac46-eb729ef0b65a",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "61213776-a3db-4236-8239-67d5abe6408b",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "b419ddcc-99f2-4b85-a052-887472eab1a6",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "d7175a11-2af8-47c8-8c0b-38e9eef14977",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "3d3d4254-63e6-483e-8f48-e149f5bf6d3d",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "322071c0-8b81-4252-a353-8a08bec622ca",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "9ffed908-4284-4ba7-9364-b52190acf1e5",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "ef20e018-d2a7-46bc-bd69-836a1e33b00f",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "42dcb7a7-bf84-41e0-849b-79076a0f09bd",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "c5df00ee-7f49-4eb0-be58-c287792bccd4",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "9c8ec543-111a-413d-95a9-c56b2ca1f26a",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "5e66109e-509b-4cda-9aad-9d4960696e34",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "6f085db1-8f3c-4580-b738-9d6a1854b858",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "c1084bf7-21f7-4173-b38e-42ad0010d4a6",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "dab127fd-2473-4f57-b03b-055331266e4a",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "f6475343-daf9-4373-8f6d-5be571d10fa5",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "df639477-3863-4137-9ade-c69f05bf357f",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "2d75c282-06d7-42ea-bd77-c928da7e7d7d",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "fceec6df-2000-4b53-9a7a-b7394f8dd873",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "d6f38d71-ef4f-4994-84fa-51c8fe659623",
+      "result_id": "513992a0-b16e-4b24-83c7-98fb11a5c2ea"
+    },
+    {
+      "claim_id": "b8df532f-d233-48f0-9fb6-049d8ae8d4a1",
+      "result_id": "7b4d6d40-90ea-4f25-864f-3c3a1fbc266b"
+    },
+    {
+      "claim_id": "c7af16c5-733c-48b0-b634-ddacaa10dc9b",
+      "result_id": "7b4d6d40-90ea-4f25-864f-3c3a1fbc266b"
+    },
+    {
+      "claim_id": "2ab6a213-4bc4-4f92-bad5-474a6c382191",
+      "result_id": "7b4d6d40-90ea-4f25-864f-3c3a1fbc266b"
+    },
+    {
+      "claim_id": "ba81a8d4-1b91-4f6e-bbc4-39eddd099664",
+      "result_id": "7b4d6d40-90ea-4f25-864f-3c3a1fbc266b"
+    },
+    {
+      "claim_id": "38c678d8-d3b5-45fd-99d7-3b48910dfcb5",
+      "result_id": "7b4d6d40-90ea-4f25-864f-3c3a1fbc266b"
+    },
+    {
+      "claim_id": "333ebe8b-6990-418d-ace1-7101b9001920",
+      "result_id": "7b4d6d40-90ea-4f25-864f-3c3a1fbc266b"
+    },
+    {
+      "claim_id": "b92c0d50-01b1-4b90-98b0-0b3e7b64463f",
+      "result_id": "7b4d6d40-90ea-4f25-864f-3c3a1fbc266b"
+    },
+    {
+      "claim_id": "10475c9b-c873-47cc-a2af-5debde65176e",
+      "result_id": "1f5756e9-f596-4134-9cd5-8a06c1ba3096"
+    },
+    {
+      "claim_id": "d97ee1f7-bc8b-4c85-adaa-b8a3788f3b8c",
+      "result_id": "1f5756e9-f596-4134-9cd5-8a06c1ba3096"
+    },
+    {
+      "claim_id": "57127216-1a26-4f6d-a757-241f54fee976",
+      "result_id": "1f5756e9-f596-4134-9cd5-8a06c1ba3096"
+    },
+    {
+      "claim_id": "171c9c23-2e68-4efe-8982-289a15581168",
+      "result_id": "1f5756e9-f596-4134-9cd5-8a06c1ba3096"
+    },
+    {
+      "claim_id": "06aecc8e-6f5c-45f0-b2fb-9125bb37e0da",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "6941f578-e811-45ad-ad64-2083dc4a3b8c",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "141a47d1-3ee1-48db-9efc-f5e15dd335a4",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "5e961f33-bd1d-4db0-bda5-0fc4681c2500",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "039d3ca6-061b-4e49-bdac-9959edf01e18",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "062c75e2-144e-4e2f-8389-75601b54d889",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "fac891ae-8b29-4e9e-b9fc-b04f30e83b54",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "67f01e17-10e9-4160-9564-814a98920ab7",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "03bb4b7d-02fc-4498-a32f-4f277807a6e3",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "0a4ef483-d65b-405d-866f-1b16d11e7797",
+      "result_id": "bf69da53-ee4a-4d1c-892f-4e402ca7e83e"
+    },
+    {
+      "claim_id": "b75ee8e5-75e1-4764-be1f-28c223338b05",
+      "result_id": "46028139-f745-4ad1-ba3a-964da2b35ac3"
+    },
+    {
+      "claim_id": "8235bf75-6cf1-405e-9f58-4aeccfef1ec1",
+      "result_id": "46028139-f745-4ad1-ba3a-964da2b35ac3"
+    },
+    {
+      "claim_id": "6050fcf7-8c0d-4512-902d-de9b99ae1a54",
+      "result_id": "46028139-f745-4ad1-ba3a-964da2b35ac3"
+    },
+    {
+      "claim_id": "c9b38f6e-d6c4-4487-b642-580a17cf981a",
+      "result_id": "46028139-f745-4ad1-ba3a-964da2b35ac3"
+    },
+    {
+      "claim_id": "3b3784c5-1854-4bfd-a3a3-b5e84e2395d9",
+      "result_id": "46028139-f745-4ad1-ba3a-964da2b35ac3"
+    },
+    {
+      "claim_id": "d9ed5d8f-8356-4532-b930-d1bba98a1ebd",
+      "result_id": "46028139-f745-4ad1-ba3a-964da2b35ac3"
+    },
+    {
+      "claim_id": "247878ac-4997-446d-bfd5-6b00f78f6458",
+      "result_id": "52314b19-07c6-458a-a6a3-b74174722cfd"
+    },
+    {
+      "claim_id": "7bb569a1-bdb7-4da8-92c3-b415f496d164",
+      "result_id": "52314b19-07c6-458a-a6a3-b74174722cfd"
+    },
+    {
+      "claim_id": "119ae55d-ee7d-4072-8e40-e6a9dd3753ef",
+      "result_id": "52314b19-07c6-458a-a6a3-b74174722cfd"
+    },
+    {
+      "claim_id": "1d9f4d0d-b944-4828-8ab0-66d2f4d289ca",
+      "result_id": "52314b19-07c6-458a-a6a3-b74174722cfd"
+    },
+    {
+      "claim_id": "638f8d46-d745-40a5-a22f-ef1d9dd692a9",
+      "result_id": "52314b19-07c6-458a-a6a3-b74174722cfd"
+    },
+    {
+      "claim_id": "9ce0b848-9b5f-417b-8f3c-6b27cc3b8c15",
+      "result_id": "52314b19-07c6-458a-a6a3-b74174722cfd"
+    },
+    {
+      "claim_id": "d8c39819-a51e-470a-bc3d-1defaaae5cfd",
+      "result_id": "52314b19-07c6-458a-a6a3-b74174722cfd"
+    },
+    {
+      "claim_id": "f4808b71-4fe1-4c26-ac57-dcf782fb4736",
+      "result_id": "b231ead8-cd4b-4ea5-8082-d140c7b9e673"
+    },
+    {
+      "claim_id": "aea1883c-7f06-48ed-8d1e-b952115c4591",
+      "result_id": "b231ead8-cd4b-4ea5-8082-d140c7b9e673"
+    },
+    {
+      "claim_id": "b2bf8ec9-f69f-48f6-808d-65114923b641",
+      "result_id": "b231ead8-cd4b-4ea5-8082-d140c7b9e673"
+    },
+    {
+      "claim_id": "6be16b18-6194-4a68-9e69-47fdd79f33d0",
+      "result_id": "b231ead8-cd4b-4ea5-8082-d140c7b9e673"
+    },
+    {
+      "claim_id": "f6ed8352-829a-4995-8a1e-bc61efc57a35",
+      "result_id": "b231ead8-cd4b-4ea5-8082-d140c7b9e673"
+    },
+    {
+      "claim_id": "6df209d1-bdef-4402-b18e-87b1764e5f0a",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "1f2cc053-f934-4a57-91d0-bcc104ba7811",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "f1703c9b-f3d8-4590-973c-7b2049a4b853",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "546728c0-e9af-4535-a05c-c6fcec0b6445",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "2ad55c1e-71cc-4aec-9b6a-f499b878c683",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "daf2bc94-4074-4bda-8d44-45e0c63a0fbf",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "0f1417f2-68f5-4167-a8f9-4d52091119b5",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "8f90ef57-7962-4e2b-ad09-c5ec9795e49f",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "27ea91a4-958d-4899-a630-73aac789a8a9",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "fcda61eb-d727-4cc2-b9db-84ec73ddc8f9",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "5cdacc26-f81b-490a-9aef-d630543303df",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "b8bd9d1b-a218-48a2-b4f2-a2f5fa26aa5a",
+      "result_id": "9fa71e3c-217f-440b-8e6e-2ec746ed9b1d"
+    },
+    {
+      "claim_id": "37e5f3f6-0a2c-4ee6-a25d-51563d72eed4",
+      "result_id": "2d666f12-2768-4310-99e3-d9762daed492"
+    },
+    {
+      "claim_id": "56244431-c59f-4903-b25d-148ade12ca40",
+      "result_id": "faa51141-e350-4fc8-badc-4a449467f825"
+    },
+    {
+      "claim_id": "6e5864f4-73d1-41a3-8f6e-c5065d7115c0",
+      "result_id": "faa51141-e350-4fc8-badc-4a449467f825"
+    },
+    {
+      "claim_id": "9486542b-bfef-4b29-b9a9-1b82854853e7",
+      "result_id": "faa51141-e350-4fc8-badc-4a449467f825"
+    },
+    {
+      "claim_id": "de4c32fa-e7fa-488e-becc-64a9569c86e7",
+      "result_id": "faa51141-e350-4fc8-badc-4a449467f825"
+    },
+    {
+      "claim_id": "7de4ee44-6f5e-4d6e-802e-d9a78b8aa7a2",
+      "result_id": "faa51141-e350-4fc8-badc-4a449467f825"
+    },
+    {
+      "claim_id": "1dc2b06d-fcce-444f-8c9f-897cd3f25e9f",
+      "result_id": "faa51141-e350-4fc8-badc-4a449467f825"
+    },
+    {
+      "claim_id": "577292c8-2665-4e14-917f-e46cb8d02e5f",
+      "result_id": "faa51141-e350-4fc8-badc-4a449467f825"
+    },
+    {
+      "claim_id": "475e3114-6a76-4bd7-bd89-31ed06883613",
+      "result_id": "faa51141-e350-4fc8-badc-4a449467f825"
+    },
+    {
+      "claim_id": "c436fff1-5e2f-4ff9-8a40-4a72b65535dd",
+      "result_id": "faa51141-e350-4fc8-badc-4a449467f825"
+    }
+  ],
+  "comparisons": []
+}

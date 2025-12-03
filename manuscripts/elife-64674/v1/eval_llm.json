@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C50"
+    ],
+    "result": "The study collected longitudinal blood samples from 50 HD mutation carriers over 20 years, post-mortem tissue from 15 adults, and fetal cortical samples from 7 fetuses at 13 weeks' gestation with CAG repeats ranging from 40-46.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C40, and C50 describe the study design and sample collection. The methodology is clearly documented with specific sample sizes, timeframes, and tissue types. This represents a well-characterized cohort appropriate for longitudinal analysis of somatic instability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "An expansion index (EI) was calculated using PCR fragment sizing, where the reference peak represents the inherited CAG repeat size and additional peaks to the right indicate somatic expansions. Only peaks >3% of the main peak height and to the right were included to avoid PCR artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 describe the EI calculation methodology. The approach is standard for measuring somatic instability, with appropriate controls for PCR artifacts (excluding left-side peaks from polymerase slippage). The 3% threshold and normalization procedures are clearly defined and methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Fetal cortex at 13 weeks' gestation showed minimal somatic instability with EI ranging from 0.043 to 0.060 (mean 0.050 \u00b1 0.006), similar to trophoblast tissue, though EI still correlated with CAG repeat length (p=0.023).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51-C53 report minimal somatic expansion in fetal tissue. The data show very low EI values with small variance, and the correlation with CAG length is statistically significant despite the low absolute values. This finding is consistent with the Kaplan model prediction and supported by similar findings in other repeat expansion diseases (C85-C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Blood samples from premanifest carrier parents showed somatic expansions with mean EI of 0.256 \u00b1 0.11 (range: 0.107 to 0.369), substantially higher than their fetuses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 reports EI measurements in adult blood that are approximately 5-fold higher than fetal tissue values (C51). This demonstrates age-dependent accumulation of somatic instability even in short-lived blood cells, supporting the longitudinal progression hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Post-mortem cortices showed the highest EI in the cohort (3.361 \u00b1 2.390, range: 1.288 to 9.094), correlating with CAG repeat length (r=0.615, p=0.015). A juvenile case with 128 CAG repeats showed extreme mosaicism precluding EI calculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C60-C62 report the highest somatic instability in adult brain tissue, consistent with prior literature (cited in C5). The correlation with CAG length is statistically significant. The exclusion of the extreme juvenile case (C62) is appropriate given the technical limitations, though this represents a missed opportunity to characterize extreme expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In the longitudinal cohort, EI increased over time from t1 (0.620 \u00b1 0.655) to t2 (0.881 \u00b1 0.929) to t3 (0.967 \u00b1 0.841), with significant linear relationships between EI and CAG repeat length at all timepoints (r=0.816-0.901, all p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C55-C58 demonstrate progressive increase in somatic instability over time in blood samples. The strong correlations with CAG length at each timepoint and the consistent increase in mean EI provide robust evidence for age-dependent expansion. The large standard deviations reflect inter-individual variability but don't undermine the overall trend.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "A linear mixed-effects model showed that somatic instability in blood was driven primarily by CAG repeat length (coefficient=0.276, p=1.6e-30), then age (coefficient=0.028, p=3.4e-34), with a significant interaction between these variables (coefficient=0.002, p=2.2e-7). Sex had no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C77-C81 report results from an appropriate statistical model for longitudinal data. The LMM accounts for within-subject correlation and identifies CAG length as the strongest predictor (t=24.0), followed by age (t=22.8), with a significant interaction (t=5.7). The model is well-specified and the conclusions are supported by the statistical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Expansion rate (ER) was calculated as the slope of EI over time for each subject (mean 0.024 \u00b1 0.033 units/year). ER showed strong associations with CAG repeat length (r=0.861, p=2.1e-15) and with EI-AO (r=0.847, p=1.6e-14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 describe the derivation of ER as a rate metric. The calculation is methodologically sound (slope of individual regression lines), and the strong correlations with CAG length and EI-AO are statistically robust. This metric captures the propensity to expand rather than just the absolute expansion level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C76"
+    ],
+    "result": "Expansion rates were higher in symptomatic subjects, with significant differences between premanifest and manifest groups in both residual EI (p=3.5e-05) and residual ER (p=0.023).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C76 demonstrate group-level differences in expansion metrics between disease states. The use of residuals after accounting for CAG length is appropriate, and the statistical significance is clear. However, the inability to predict individual-level phenoconversion (acknowledged in the discussion) limits the clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CAG repeat length accounted for 47.6% of variance in age at onset and 68% in age at death. EI-AO explained 20.7% of AO variance and 49.7% of AD variance. ER explained 33% of AO variance but did not explain AD variance. ER explained more AO variance than EI-AO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C75 report variance explained by different predictors. While the statistical analyses are appropriate, the small sample size for AD analysis (n=14) limits confidence in those findings. The authors acknowledge that their CAG-AO correlation (47.6%) is at the low end of published ranges, likely due to small sample size. The comparison between ER and EI-AO for predicting AO is interesting but would benefit from larger samples and cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study findings support three key predictions of the Kaplan model: (1) minimal somatic instability at birth, (2) progression of expansions with age even before disease onset, and (3) expansion rate increases with time as a function of repeat length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 interpret the study findings in relation to the Kaplan model. The data clearly support all three predictions: fetal tissue shows minimal expansion (C51), premanifest adults show progression (C54), and the interaction between age and CAG length (C79) demonstrates that expansion rate increases with both time and repeat length. This represents strong validation of the model's core predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C33",
+      "C34"
+    ],
+    "result": "Recent work suggests somatic instability of CAG repeats, which can expand into the hundreds in neurons, better explains clinical outcomes than inherited allele length, with expansion propensity relating to both baseline allele length and age. The current study's data support this somatic instability-driven disease model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13, C33-C34 summarize prior work and the study's contribution. The citations to recent large-scale studies (Ciosi et al., 2019; Lee et al., 2019) support the premise. The current study provides longitudinal validation of age-dependent expansion and its relationship to clinical outcomes, though the predictive power for individual patients remains limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The Kaplan model proposes that HD onset and progression are determined by the rate of somatic expansion in disease-relevant cells, with symptoms manifesting when ~20% of cells exceed a pathogenic threshold (~115 repeats in striatal neurons), starting from the inherited repeat at birth and expanding at a rate that increases linearly with repeat number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 accurately describe the Kaplan model as presented in the cited work (Kaplan et al., 2007). These are well-established theoretical predictions that the current study aims to test. The description is accurate and provides appropriate context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Studies in other repeat expansion diseases (Friedreich ataxia and myotonic dystrophy) show minimal somatic instability in fetal tissues compared to adult tissues, suggesting this is a general feature of repeat expansion diseases early in life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 cite comparative evidence from other diseases. The citations support the generalization that early-life somatic instability is minimal across repeat expansion disorders. This contextualizes the HD findings and strengthens the biological interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The brain regions with greatest repeat expansions in HD (striatum and cortex) are hypermetabolic from early in disease, with neurons showing greater instability than glia. Metabolic stress may lead to mitochondrial dysfunction and energy deficit, with excitotoxicity from glutamatergic inputs potentially contributing to cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 discuss mechanistic hypotheses linking metabolism, excitotoxicity, and somatic instability. All claims are supported by appropriate citations. This represents established knowledge in the field that provides biological context for understanding why certain brain regions show greater expansion. The discussion is speculative but well-grounded in prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Variants in DNA repair genes (MSH3, MLH1, MLH3, FAN1, MSH2) are associated with somatic instability in HD patients and animal models. Loss of function of some repair factors (MSH2, MSH3) can be protective by preventing expansions, while FAN1 stabilizes repeats and its loss increases instability. ATM is upregulated in HD and its heterozygous loss is protective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C97-C103 summarize the role of DNA repair in somatic instability. All claims are supported by appropriate citations to recent large-scale studies and mechanistic work. This represents well-established knowledge that provides important context for understanding the mechanisms driving somatic expansion and potential therapeutic targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Age-related decline in DNA repair capacity may contribute to increasing somatic instability in blood cells, which seem too short-lived to accumulate expansions through cell division alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is explicitly speculative (\"It could be that...\") and attempts to explain the paradox of expansion in short-lived blood cells. While the citation supports age-related decline in DNA repair, the specific application to blood cell expansion in HD is hypothetical. This represents reasonable speculation but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C105"
+    ],
+    "result": "Variants in the GluR6 kainate receptor account for 13% of AO variation not explained by CAG length. Absence of aryl hydrocarbon receptor (AhR) reduced behavioral deficits in R6/1 mice. A small molecule binding CAG slip-out structures contracted expansions and reduced aggregates in R6/2 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C105 cite specific therapeutic and mechanistic findings. All are supported by appropriate citations. These represent established findings that illustrate potential therapeutic approaches and additional genetic modifiers of disease. The evidence is from cited work rather than the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on HD genetics and pathology: CAG repeats expand through replication/transcription mechanisms; longer repeats cause earlier and more aggressive disease; 40 repeats cause adult-onset while >80 cause childhood-onset; inherited CAG size accounts for 42-71% of AO variance; individuals with identical repeats can have onset decades apart; brain abnormalities are present from early development; CAG repeats are somatically unstable across tissues with greatest expansions in cortex and striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C30 provide established background knowledge about HD, all supported by appropriate citations. This represents well-established facts in the field that provide necessary context for the study. These are not novel findings but accurate summaries of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Blood cells are short-lived compared to neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 states established biological knowledge about cell lifespans. Blood cells (particularly leukocytes) have lifespans of days to months, while neurons are post-mitotic and persist for the organism's lifetime. This is well-established and provides important context for interpreting the paradoxical finding of age-dependent expansion in blood.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The lowest EI value associated with a symptomatic subject was 0.137 in a patient with 39 CAG repeats who showed motor signs at age 49.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 reports a specific observation from the cohort. This represents an interesting data point suggesting a potential threshold for clinical manifestation, though with n=1 it cannot establish a generalizable threshold. The observation is clearly documented in Table 2.",
+    "result_type": "MINOR"
+  }
+]

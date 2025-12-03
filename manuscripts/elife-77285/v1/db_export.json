@@ -1,0 +1,2092 @@
+{
+  "submission": {
+    "id": "2dd92d9e-9280-49e5-9563-9cd7d5ffc4b9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:24:21.351116Z",
+    "updated_at": "2025-12-03T17:24:21.351116Z"
+  },
+  "content": [
+    {
+      "id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "submission_id": "2dd92d9e-9280-49e5-9563-9cd7d5ffc4b9",
+      "content_type": "manuscript",
+      "content_text": "# Transcriptome-wide association study and eQTL colocalization identify potentially causal genes responsible for human bone mineral density GWAS associations\n\n## Authors\n\n- Basel Maher Al-Barghouthi<sup>1</sup> ([ORCID: 0000-0001-9816-8044](https://orcid.org/0000-0001-9816-8044))\n- Will T Rosenow<sup>1</sup>\n- Kang-Ping Du<sup>3</sup>\n- Jinho Heo<sup>4</sup>\n- Robert Maynard<sup>5</sup>\n- Larry Mesner<sup>1</sup>\n- Gina Calabrese<sup>1</sup>\n- Aaron Nakasone<sup>7</sup>\n- Bhavya Senwar<sup>8</sup>\n- Louis Gerstenfeld<sup>9</sup>\n- James Larner<sup>3</sup>\n- Virginia Ferguson<sup>8</sup>\n- Cheryl Ackert-Bicknell<sup>5</sup>\n- Elise Morgan<sup>7</sup>\n- David Brautigan<sup>4</sup>\n- Charles R Farber<sup>1</sup> ([ORCID: 0000-0002-6748-4711](https://orcid.org/0000-0002-6748-4711)) \u2020\n\n### Affiliations\n\n1. Center for Public Health Genomics, School of Medicine, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n2. Department of Biochemistry and Molecular Genetics, School of Medicine, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n3. Department of Radiation Oncology, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n4. Department of Microbiology, Immunology, and Cancer Biology, School of Medicine, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n5. Department of Orthopedics, Anschutz Medical Campus, University of Colorado Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))\n6. Department of Public Health Sciences, School of Medicine, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n7. Department of Mechanical Engineering, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))\n8. Department of Mechanical Engineering, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))\n9. Department of Orthopaedic Surgery, Boston University Medical Center Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenome-wide association studies (GWASs) for bone mineral density (BMD) in humans have identified over 1100 associations to date. However, identifying causal genes implicated by such studies has been challenging. Recent advances in the development of transcriptome reference datasets and computational approaches such as transcriptome-wide association studies (TWASs) and expression quantitative trait loci (eQTL) colocalization have proven to be informative in identifying putatively causal genes underlying GWAS associations. Here, we used TWAS/eQTL colocalization in conjunction with transcriptomic data from the Genotype-Tissue Expression (GTEx) project to identify potentially causal genes for the largest BMD GWAS performed to date. Using this approach, we identified 512 genes as significant using both TWAS and eQTL colocalization. This set of genes was enriched for regulators of BMD and members of bone relevant biological processes. To investigate the significance of our findings, we selected PPP6R3, the gene with the strongest support from our analysis which was not previously implicated in the regulation of BMD, for further investigation. We observed that Ppp6r3 deletion in mice decreased BMD. In this work, we provide an updated resource of putatively causal BMD genes and demonstrate that PPP6R3 is a putatively causal BMD GWAS gene. These data increase our understanding of the genetics of BMD and provide further evidence for the utility of combined TWAS/colocalization approaches in untangling the genetics of complex traits.\n\n## Introduction\n\nOsteoporosis, a disease characterized by low bone mineral density (BMD), decreased bone strength, and an increased risk of fracture, affects over 10 million individuals in the United States (Black and Rosen, 2016; Burge et al., 2007). BMD is the single strongest predictor of fracture and a highly heritable quantitative trait (Miller et al., 1999; Ralston and Uitterlinden, 2010; Peacock et al., 2002). Over the last decade, genome-wide association studies (GWASs) have identified over 1100 independent associations for BMD (Morris et al., 2019; Estrada et al., 2012; Kemp et al., 2017). However, despite the success of GWAS, few of the underlying causal genes have been identified (Rocha-Braz and Ferraz-de-Souza, 2016; Sabik and Farber, 2017).\n\nOne of the main difficulties in GWAS gene discovery is that the vast majority (>90%) of associations are driven by non-coding variation (Giral et al., 2018; Edwards et al., 2013). Over the last decade, approaches such as transcriptome-wide association studies (TWASs) and expression quantitative trait locus (eQTL) colocalization have been developed which leverage transcriptomic data in order to inform gene discovery by connecting non-coding disease-associated variants to changes in transcript levels (Gusev et al., 2016; Barbeira et al., 2018; Pividori et al., 2020; Giambartolomei et al., 2014; Wen et al., 2017). These approaches have proven successful for a wide array of diseases and disease-associated quantitative traits (Pividori et al., 2020; Bhattacharya et al., 2020; Thom and Voight, 2020). However, the osteoporosis field has lagged behind such efforts, due to the limited number of large-scale bone-related transcriptomic datasets.\n\nIn a TWAS, genetic predictors of gene expression (e.g., local eQTL \u2013 sets of genetic variants that influence the expression of a gene in close proximity, Nica and Dermitzakis, 2013) identified in a reference population (e.g., the Genotype-Tissue Expression [GTEx] project, Consortium, 2013) are used to impute gene expression in a GWAS cohort. Components of gene expression due to genetic variation are then associated with a disease or disease-associated quantitative trait. Genes identified by TWAS are often located in GWAS associations, suggesting that the genetic regulation of their expression is the mechanism underlying such associations. Several tools, for example, FUSION, PrediXcan, and MultiXcan (Gusev et al., 2016; Gamazon et al., 2015; Barbeira et al., 2019) have been developed to perform TWASs. Most of these tools use GWAS summary statistics, making TWAS widely applicable to large GWAS datasets. In contrast, eQTL colocalization is a statistical approach that determines if there is a shared genetic basis for two associations (e.g., a local eQTL and BMD GWAS locus). Recently, it has been demonstrated that prioritizing genes using both TWAS and eQTL colocalization provides a way to identify genes with the strongest support for causality (Barbeira et al., 2018; Pividori et al., 2020).\n\nThe GTEx project has generated RNA-seq data on over 50 tissues across hundreds of individuals (Consortium, 2020). Even though data on the tissues/cell types likely to be most relevant to BMD (bone or bone cells) were not included, the project demonstrated that many eQTL were shared across tissues (Consortium, 2020; Battle et al., 2017). Additionally, it is well known that effects in a wide-array of non-bone cell types and tissues can impact bone and BMD (Fitzpatrick, 2002; Mirza and Canalis, 2015). As a result, we sought to use the GTEx resource in conjunction with TWAS and eQTL colocalization to leverage non-bone gene expression data to identify putatively causal genes underlying BMD GWAS.\n\nHere, we performed TWAS and eQTL colocalization using the GTEx resource and the largest BMD GWAS performed to date to identify potentially causal genes (Morris et al., 2019). Using this approach, we identified 512 genes significantly associated via TWAS with a significant colocalizing eQTL. To investigate the significance of our findings we selected Protein Phosphatase 6 Regulatory Subunit 3 (PPP6R3), the gene with the strongest support not previously implicated in the regulation of BMD, for further investigation. We demonstrate using mutant mice that Ppp6r3 is a regulator of lumbar spine BMD. These results highlight the power of leveraging GTEx data, even in the absence of data from the most relevant tissue/cell types, to increase our understanding of the genetic architecture of BMD.\n\n## Results\n\n### TWAS and eQTL colocalization identify potentially causal BMD GWAS genes\n\nTo identify potentially causal genes responsible for BMD GWAS associations, we combined TWAS and eQTL colocalization using GTEx data (Figure 1A). We began by performing a TWAS using reference gene expression predictions from GTEx (Version 8; 49 tissues) and the largest GWAS performed to date for heel estimated BMD (eBMD) (>1100 independent associations) (Morris et al., 2019; Consortium, 2020). The analysis was performed using S-MultiXcan, which allowed us to leverage information across all 49 GTEx tissues (Barbeira et al., 2019). Our analysis focused on protein-coding genes (excluded non-coding genes). A total of 2156 protein-coding genes were significantly (Bonferroni-adjusted p value \u22640.05) associated with eBMD (Supplementary file 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overview of the analysis. The human image was obtained from BioRender.com. TWAS/colocalization plot for genes in the locus around RUNX2 (B) and RERE (C). The \u2212log10 Bonferroni-adjusted p values from the TWAS analysis (top panel) and the maximum regional colocalization probabilities (RCPs) from the colocalization analyses (bottom panel). Genes alternate in color for visual clarity. Triangles represent RUNX2 (B) and RERE (C). (D) Distribution of prioritized genes within estimated BMD (eBMD) GWAS loci.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Transcriptome-wide association study (TWAS)/colocalization plot for genes in the chromosome 20 locus (lead (single nucleotide polymorphism)SNP rs6142137). The \u2212log10 Bonferroni-adjusted p values from the TWAS analysis (top panel) and the maximum regional colocalization probabilities (RCPs) from the colocalization analyses (bottom panel) are shown. Genes alternate in color for visual clarity. Traingles represent the nine prioritized genes in the locus.\n\nNext, we identified colocalizing eQTL from each of the 49 tissues in GTEx using fastENLOC (Pividori et al., 2020; Wen et al., 2017). We identified 1182 colocalizing protein-coding genes with a regional colocalization probability (RCP) of 0.1 or greater (Supplementary file 1b). In total, 512 protein-coding genes were significant in both the TWAS and eQTL colocalization analyses (Table 1 and Supplementary file 1c). Among the identified genes were many with well-known roles in the regulation of BMD, such as RUNX2 (Figure 1B), IGF1, and LRP6, as well as novel genes such as RERE (Figure 1C). Overall, the identified genes had significantly colocalizing eQTL in all 49 GTEx tissues, with eQTL from cultured fibroblasts (132 genes), subcutaneous adipose tissue (117 genes), tibial artery (115 genes), and tibial nerve (114 genes) exhibiting the highest number of significant colocalizations (Supplementary file 1d). TWAS predictors were only generated for genes on autosomes and of the 1103 independent associations identified by Morris et al., 2019, 1097 were autosomal. For each of these, we defined a locus as the region consisting of \u00b11 Mbp around each association. Of the 1097 loci, almost half (542; 49%) of the loci contained at least one of the 512 prioritized genes. Most loci overlapped one gene (mean = 1.7, median = 1); however, 184 loci overlapped multiple genes, including a locus on Chromosome (Chr.) 20 (lead SNP rs6142137) which contained 9 prioritized genes (Figure 1D and Figure 1\u2014figure supplement 1).\n\n**Table 1.**\n Top 10 protein-coding genes significant by colocalization (RCP \u22650.1) and TWAS, sorted by TWAS p value.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Tissue with greatest RCP</th>\n      <th>Max. RCP</th>\n      <th>TWAS p value (Bonferroni)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SPTBN1</td>\n      <td>Cells_Cultured_Fibroblasts</td>\n      <td>0.9469</td>\n      <td>&lt;5 \u00d7 10\u2212324</td>\n    </tr>\n    <tr>\n      <td>CCDC170</td>\n      <td>Spleen</td>\n      <td>0.6582</td>\n      <td>&lt;5 \u00d7 10\u2212324</td>\n    </tr>\n    <tr>\n      <td>FAM3C</td>\n      <td>Artery_Tibial</td>\n      <td>0.4917</td>\n      <td>&lt;5 \u00d7 10\u2212324</td>\n    </tr>\n    <tr>\n      <td>SEPT5</td>\n      <td>Skin_Sun_Exposed</td>\n      <td>0.4868</td>\n      <td>2.26 \u00d7 10\u2212286</td>\n    </tr>\n    <tr>\n      <td>FGFRL1</td>\n      <td>Cells_Cultured_Fibroblasts</td>\n      <td>0.1611</td>\n      <td>5.31 \u00d7 10\u2212272</td>\n    </tr>\n    <tr>\n      <td>GREM2</td>\n      <td>Cells_Cultured_Fibroblasts</td>\n      <td>0.9998</td>\n      <td>4.31 \u00d7 10\u2212257</td>\n    </tr>\n    <tr>\n      <td>GPATCH1</td>\n      <td>Whole_Blood</td>\n      <td>0.3564</td>\n      <td>3.44 \u00d7 10\u2212226</td>\n    </tr>\n    <tr>\n      <td>RHPN2</td>\n      <td>Pituitary</td>\n      <td>0.2181</td>\n      <td>8.71 \u00d7 10\u2212221</td>\n    </tr>\n    <tr>\n      <td>BMP4</td>\n      <td>Brain_Cortex</td>\n      <td>0.5468</td>\n      <td>5.49 \u00d7 10\u2212169</td>\n    </tr>\n    <tr>\n      <td>RUNX2</td>\n      <td>Esophagus_Gastroesophageal_Junction</td>\n      <td>0.2372</td>\n      <td>1.99 \u00d7 10\u2212146</td>\n    </tr>\n  </tbody>\n</table>\n\n### Characterization of genes identified by TWAS/eQTL colocalization\n\nTo evaluate the ability of the combined TWAS/colocalization approach to identify genes previously implicated in the regulation of BMD, other bone traits, or the activity of bone cells, we queried the presence of \u2018known bone genes\u2019 within the list of the 512 prioritized protein-coding genes. To do so, we created a database-curated set of genes previously implicated in the regulation of bone processes (henceforth referred to as our \u2018known bone genes\u2019 list, N = 1399, Supplementary file 1e). Of the 512 genes identified above, 66 (12.9%) were known bone genes, representing a significant enrichment (odds ratio [OR] = 1.72; p = 1.0 \u00d7 10\u22124) over what would be expected by chance (Supplementary file 1f).\n\nWe also performed a Gene Ontology (GO) enrichment analysis of the 512 prioritized genes. We observed enrichments in several bone-relevant ontologies, such as \u2018ossification\u2019 (p = 3.1 \u00d7 10\u22126), \u2018skeletal system development\u2019 (p = 2 \u00d7 10\u22125), and \u2018regulation of osteoblast differentiation\u2019 (p = 3.9 \u00d7 10\u22125) (Figure 2A and Supplementary file 1g).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig2-v1.jpg)\n\n**Figure 2.:** (A) The top 40 terms from a Gene Ontology analysis of the 512 potentially causal BMD genes identified by our analysis. Terms with clear relevance to bone are highlighted in red. Only terms from the \u2018Biological Process\u2019 (BP) subontology are listed, and similar terms were removed for clarity. (B) TWAS/colocalization plot for genes in the locus around GPATCH1 (\u00b11.5 Mbp). The \u2212log10 Bonferroni-adjusted p values from the TWAS analysis (top panel) and the maximum regional colocalization probabilities (RCPs) from the colocalization analyses (bottom panel). Genes alternate in color for visual clarity. Triangles represent GPATCH1. (C) Mirrorplot showing estimated BMD (eBMD) GWAS locus (top panel) and colocalizing GPATCH1 eQTL in whole blood (bottom panel). SNPs are colored by their linkage disequilibrium (LD) with rs11881367 (purple), the most significant GWAS SNP in the locus. (D) Scatterplot of \u2212log10 p values for GPATCH1 eQTL versus eBMD GWAS SNPs. SNPs are colored by their LD with rs11881367 (purple). (E) BMD in Gpatch1 knockdown mice. N = 7 females and N = 4 males for Gpatch1+/\u2212 mice, N = 880 females and N = 906 males for Gpatch1+/+ mice. Boxplots indicate the median (middle line), the 25th and 75th percentiles (box) and the whiskers extend to 1.5 * IQR.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Venn diagram showing the overlaps in data in the general gene prioritization pipeline. Overlapping transcriptome-wide association study (TWAS)/colocalization genes are termed \u2018prioritized genes\u2019. (B) Venn diagram showing overlap between the significant (p \u2264 0.05) S-MultiXcan TWAS genes and the prioritization datasets. (C) Venn diagram showing overlap between the fastENLOC colocalizing genes and the prioritization datasets.For all data, the black values indicate values obtained when a fastENLOC colocalization threshold of 0.1 is used, while the red values are those that are obtained when a fasENLOC colocalization threshold of 0.5 is used.\n\nTo compare our approach with the approach of prioritizing the closest genes to GWAS associations as potentially causal, we quantified the number of genes that were both the closest genes to eBMD GWAS associations and were members of the \u2018known bone gene\u2019 list. Of the 863 genes that were the closest genes to eBMD GWAS associations (Supplementary file 1h), 139 were members of the \u2018known bone gene list\u2019, representing a more significant enrichment of \u2018known bone genes\u2019 than our prioritization approach (OR = 2.56, p = 6.37 \u00d7 10\u221219). Of our 512 prioritized genes, 206 (40%) were also the closest genes to eBMD GWAS associations, with 27 of the remaining 306 prioritized genes (8.8%) being members of the \u2018known bone gene\u2019 list.\n\nThe International Mouse Phenotype Consortium (IMPC) has recently measured whole body BMD in hundreds of mouse knockouts (Dickinson et al., 2016; Swan et al., 2020). We searched the IMPC database for any of the 512 genes identified by TWAS and eQTL colocalization. Of the 512, 142 (27.7%) had been tested by the IMPC and 64 (12.5% of the 512 prioritized genes, 45% of the 142 IMPC-tested genes) had a nominally significant (p \u2264 0.05) alteration of whole-body BMD in knockout/knockdown mice, compared to controls. Of the 64, 49 (76.5%) were not members of the \u2018known bone gene\u2019 list (Figure 2\u2014figure supplement 1A, B).\n\nAn example of one of the 64 genes is GPATCH1, located within a GWAS association on human chromosome 19q13.11. GPATCH1 is part of the catalytic step 2 spliceosome, and may be involved in mRNA splicing, and is predicted to enable RNA-binding activity. It is also expressed in bone cells in mouse (Alliance of genome resources, 2022; Lattin et al., 2008). Of all the genes in the region, GPATCH1 had the strongest TWAS association (p = 3.44 \u00d7 10\u2212226) (Figure 2B) and the strongest eQTL colocalization (whole blood, RCP = 0.36) (Figure 2B\u2013D). The eQTL and BMD GWAS allele effects for the top SNPs were in the same direction, suggesting that decreasing the expression of GPATCH1 would lead to decreased BMD. BMD data from the IMPC showed that female mice heterozygous for a Gpatch1 null allele had decreased BMD (p = 2.17 \u00d7 10\u22128) (Figure 2E). Together, these data suggest that many of the genes identified by the combined TWAS/colocalization approach are likely causal BMD GWAS genes.\n\n### PPP6R3 is a candidate causal gene for a GWAS association on Chr. 11\n\nTo identify novel candidate genes for functional validation, we focused on genes with the strongest evidence of being causal. To do so, we increased the colocalization RCP threshold to 0.5, and then sorted genes based on TWAS Bonferroni-adjusted p values. Furthermore, we constrained the list of candidates for functional validation to genes which were not members of the \u2018known bone gene\u2019 list or genes with a nominal (p \u2264 0.05) alteration in whole-body BMD as determined by the IMPC. This yielded 137 putatively causal BMD genes (Table 2, Supplementary file 1i, and Figure 2\u2014figure supplement 1C).\n\n**Table 2.**\n Top 10 novel protein-coding genes significant by colocalization (RCP \u22650.5) and TWAS, sorted by TWAS p value.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Tissue with greatest RCP</th>\n      <th>Max. RCP</th>\n      <th>TWAS p value (Bonferroni)</th>\n      <th># GTEx tissues with RCP \u22650.5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SPTBN1</td>\n      <td>Cells_Cultured_fibroblasts</td>\n      <td>0.9469</td>\n      <td>&lt;5 \u00d7 10\u2212324</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>PPP6R3</td>\n      <td>Thyroid</td>\n      <td>0.5291</td>\n      <td>5.7 \u00d7 10\u221293</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>BARX1</td>\n      <td>Colon_Transverse</td>\n      <td>0.7764</td>\n      <td>6.36 \u00d7 10\u221263</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MEOX2</td>\n      <td>Brain_Nucleus_accumbens_basal_ganglia</td>\n      <td>0.6286</td>\n      <td>3.21 \u00d7 10\u221253</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>RERE</td>\n      <td>Adipose_Subcutaneous</td>\n      <td>0.6431</td>\n      <td>6.95 \u00d7 10\u221246</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>SIPA1</td>\n      <td>Nerve_Tibial</td>\n      <td>0.9981</td>\n      <td>4.26 \u00d7 10\u221241</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>CAPZB</td>\n      <td>Testis</td>\n      <td>0.6716</td>\n      <td>3.64 \u00d7 10\u221233</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>B4GALNT3</td>\n      <td>Artery_Aorta</td>\n      <td>0.9241</td>\n      <td>2.67 \u00d7 10\u221233</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>TRPC4AP</td>\n      <td>Breast_Mammary_Tissue</td>\n      <td>0.5577</td>\n      <td>8.62 \u00d7 10\u221231</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>AXL</td>\n      <td>Minor_Salivary_Gland</td>\n      <td>0.6205</td>\n      <td>9.74 \u00d7 10\u221231</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\nThough it was not on the \u2018known bone gene\u2019 list, the first gene ranked by TWAS p value, SPTBN1, has been demonstrated to play a role in the regulation of BMD (Calabrese et al., 2017). The second, PPP6R3, has not been previously implicated in the regulation of BMD. PPP6R3, a regulatory subunit of protein phosphatase 6, which shows ubiquitous expression across tissues in humans (Cristiano, 2020), is located on human Chr. 11 within 1 Mbp of seven independent eBMD GWAS SNPs identified by Morris et al., 2019 (subsequently referred to as \u2018eBMD lead SNPs\u2019) (Figure 3A). Of all the protein-coding genes (N = 29) in the ~1.8 Mbp region surrounding PPP6R3, its expression was the most significantly associated with eBMD by TWAS (Bonferroni = 5.7 \u00d7 10\u221293) (Figure 3B). Furthermore, PPP6R3 was the only gene in the region with eQTL (in four GTEx tissues, thyroid, ovary, brain_putamen_basal_ganglia, and stomach with RCPs = 0.53, 0.50, 0.28, and 0.14, respectively) that colocalized with at least one of the eBMD associations (Figure 3B). Based on these data, we chose to further investigate PPP6R3 as a potentially causal BMD gene.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig3-v1.jpg)\n\n**Figure 3.:** (A) eBMD genome-wide association study (GWAS) SNPs around the PPP6R3 locus (\u00b11 Mbp). The y-axis represents \u2212log10 eBMD GWAS p values. Highlighted SNPs (black) are the seven lead eBMD GWAS SNPs in the locus. (B) Transcriptome-wide association study (TWAS)/colocalization plot for genes in the locus around PPP6R3 (\u00b11 Mbp). The \u2212log10 Bonferroni-adjusted p values from the TWAS analysis (top panel) and the maximum regional colocalization probabilities (RCPs) from the colocalization analyses (bottom panel). Genes alternate in color for visual clarity. Triangles represent PPP6R3. Mirrorplot of the eBMD locus (C) and PPP6R3 expression quantitative trait loci (eQTL) in thyroid, and fracture locus and PPP6R3 eQTL in thyroid (D). The panels on the right are scatterplots of \u2212log10 p values for PPP6R3 eQTL and eBMD GWAS SNPs (C) and the PPP6R3 eQTL and fracture GWAS SNPs (D). SNPs are colored by their linkage disequilibrium (LD) with rs10047483 (purple), the most significant PPP6R3 eQTL in the locus. Not all genes are shown.\n\nWe first determined which of the seven associations colocalized with the PPP6R3 eQTL (Figure 3C). The most significant PPP6R3 eQTL SNP in thyroid tissue (the tissue with the highest RCP) was rs10047483 (Chr. 11, 68.464237 Mbp) (PPP6R3 eQTL p = 6.99 \u00d7 10\u22128, eBMD GWAS p = 1.2 \u00d7 10\u2212100) located in intron 1 of PPP6R3. The most significant eBMD lead SNP in the locus was rs11228240 (Chr. 11, 68.450822 Mbp, eBMD GWAS p = 6.6 \u00d7 10\u2212101, PPP6R3 eQTL p = 3.7 \u00d7 10\u22126), located upstream of PPP6R3. Consistent with the colocalization analysis, these two variants are in high LD (r2 = 0.941) and rs10047483 does not exhibit strong LD (r2 < 0.104) with any of the other six eBMD lead SNPs in the locus. The eQTL and BMD GWAS allele effects for rs10047483 were opposing, suggesting that a decrease in the expression of PPP6R3 would lead to an increase in BMD.\n\nA recent fracture GWAS identified 14 significant associations, one of which was located in the PPP6R3 region (rs35989399, Chr. 11, 68.622433 Mbp) (Morris et al., 2019). We analyzed the fracture GWAS in the same manner as we did above for eBMD. We found that PPP6R3 expression when analyzed by TWAS was significant for fracture (TWAS Bonferroni-pval = 6.0 \u00d7 10\u22123) and the same PPP6R3 eQTL colocalized with the fracture association (RCP = 0.49 in ovary, RCP = 0.36 in thyroid) (Figure 3D). Together, these data highlight PPP6R3 as a strong candidate for one of the seven eBMD/fracture associations in this region.\n\n### PPP6R3 is a regulator of femoral geometry, BMD, and vertebral microarchitecture\n\nTo assess the effects of PPP6R3 expression on bone phenotypes, we characterized mice harboring a gene-trap allele (Ppp6r3tm1a(KOMP)Wtsi) (Figure 4A). We intercrossed mice heterozygous for the mutant allele to generate mice of all three genotypes (wild-type (WT, N = 26 females, 21 males), heterozygous (HET, N = 33 females, 36 males), and mutant (MUT, N = 20 females, 21 males)). The absence of PPP6R3 protein in MUT mice was confirmed through western blotting (Figure 4B). Furthermore, we sequenced RNA extracted from the L5 vertebrae of wild-type and mutant mice, and found that PPP6R3 was differentially expressed between the mutant and wild-type mice (padj = 3.67 \u00d7 10\u2212104, log2 fold change = \u22121.63). We did not observe changes in gene expression for any other gene in the locus, including Lrp5 (padj = 0.99, log2 fold change = \u22120.068), a well-known regulator of bone mass just upstream of Ppp6r3 (Supplementary file 1j).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of the Ppp6r3 gene-trap allele (Ppp6r3tm1a(KOMP)Wtsi). Image obtained from the International Mouse Phenotype Consortium (IMPC). (B) Western blot of Ppp6r3 in experimental mouse spleens. Top left panel shows that PPP6R1 protein (control) levels are not affected by the Ppp6r3 gene-trap allele. Top right panel shows the effect of the gene-trap allele on PPP6R3 protein levels. The two bands are ostensibly due to different PPP6R3 isoforms. Bottom panel shows that PP6C protein (control) levels are not affected by the Ppp6r3 gene-trap allele. For raw blots, refer to Figure 4\u2014source data 1. Least-squares means for spinal (C) and femoral (D) areal BMD (aBMD) dual X-ray absorptiometry (DXA) in Ppp6r3 wild-type (WT), heterozygous (HET), and mutant (MUT) mice. Contrast p values, adjusted for multiple comparisons are presented. *p \u2264 0.05. (E) Representative images of vertebrae for the Ppp6r3 experimental mice. Scale is shown on the bottom right. (F, G) Least-squares means for micro-computed tomography (\u03bcCT) measurements in the lumbar spines of Ppp6r3 WT, HET, and MUT mice. Contrast p values, adjusted for multiple comparisons are presented. *p \u2264 0.05. (H, I) Least-squares means for \u03bcCT measurements in the femoral midshaft of Ppp6r3 WT, HET, and MUT mice. Contrast p values, adjusted for multiple comparisons are presented. *p \u2264 0.05. Abbreviations: BV/TV \u2013 bone volume fraction, vBMD \u2013 volumetric bone mineral density, Tot.Ar \u2013 total area, Ma.Ar \u2013 medullary area. In panels (C, D and F\u2013I), the center points represent the least-square means, and the error bars represent confidence intervals at a confidence level of 0.9. Data presented here are from both male and female mice.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) GWAS SNPs for LSBMD in the PPP6R3 locus. SNPs in red are significant PPP6R3 expression quantitative trait loci (eQTL) in thyroid tissue. The dashed line represents the genome-wide significance level (p value = 5 \u00d7 10\u22128). (B) GWAS SNPs for FNBMD in the PPP6R3 locus. SNPs in red are significant PPP6R3 eQTLin thyroid tissue. The dashed line represents the genome-wide significance level (p value = 5 \u00d7 10\u22128). (C) Mirroplot of LSBMD SNPs and PPP6R3 eQTL SNPs are colored by their linkage disequilibrium (LD) with rs10047483 (purple), the most significant PPP6R3 eQTL in thyroid. In the LSBMD panel, the most significant SNP is highlighted in purple, as rs10047483 was not assayed. (D) Mirroplot of FNBMD SNPs and PPP6R3 eQTL SNPs are colored by their LD with rs10047483 (purple), the most significant PPP6R3 eQTL in thyroid. In the FNBMD panel, the most significant SNP is highlighted in purple, as rs10047483 was not assayed.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Weight. (B) Anterior\u2013posterior (AP) femoral width. (C) Medial\u2013lateral (ML) femoral width. (D) Femoral length (FL). (E) Lumbar spine tissue mineral density (TMD). (F) Lumbar spine trabecular separation (TbSp). (G) Lumbar spine trabecular thickness (TbTh). (H) Lumbar spine trabecular number (TbN). (I) P1NP serum concentration in sex-combined samples. (J) P1NP serum concentration in male samples. (K) P1NP serum concentration in female samples. Panels (E\u2013H) are measured by micro-computed tomography (\u03bcCT). In panels A\u2013H, least-square means are plotted. p values are contrast p values, adjusted for multiple comparisons. In panels I\u2013K, p values are calculated by t-test. Asterisks represent significance (p \u2264 0.05).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013C) Least-square means for mean(mineral:matrix) in sex-combined, female, and male samples, respectively. (D\u2013F) Least-square means for mean(carbonate:phosphate) in sex-combined, female, and male samples, respectively. (G\u2013I) Least-square means for mean(crystallinity) in sex-combined, female, and male samples, respectively. Contrast p values, adjusted for multiple comparisons, are presented.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A\u2013C) Least-square means for mean(mineral:matrix) in sex-combined, female, and male samples, respectively. (D\u2013F) Least-square means for mean(carbonate:phosphate) in sex-combined, female, and male samples, respectively. (G\u2013I) Least-square means for mean(crystallinity) in sex-combined, female, and male samples, respectively. Contrast p values, adjusted for multiple comparisons, are presented.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A\u2013C) Least-square means for sd(mineral:matrix) in sex-combined, female, and male samples, respectively. (D\u2013F) Least-square means for sd(carbonate:phosphate) in sex-combined, female, and male samples, respectively. (G\u2013I) Least-square means for sd(crystallinity) in sex-combined, female, and male samples, respectively. Contrast p values, adjusted for multiple comparisons, are presented.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A\u2013C) Least-square means for sd(mineral:matrix) in sex-combined, female, and male samples, respectively. (D\u2013F) Least-square means for sd(carbonate:phosphate) in sex-combined, female, and male samples, respectively. (G\u2013I) Least-square means for sd(crystallinity) in sex-combined, female, and male samples, respectively. Contrast p values, adjusted for multiple comparisons, are presented.\n\nThe BMD analyses presented above used heel eBMD GWAS data. We used these data because they represent the largest, most well-powered BMD GWAS to date (Estrada et al., 2012). However, to determine whether perturbation of Ppp6r3 would be expected to impact femoral or lumbar spine BMD in a similar manner, we turned to a smaller GWAS to look at both of these traits. In a GWAS by Estrada et al., 2012, a total of 56 loci were identified for femoral neck (FNBMD) and lumbar spine (LSBMD) BMD. One of the 56 loci corresponded to the same SNPs associated with the PPP6R3 eQTL. The locus was significant for LSBMD; however, it did not reach genome-wide significance for FNBMD (Figure 4\u2014figure supplement 1).\n\nWe evaluated BMD at both the femur and the lumbar spine in Ppp6r3tm1a(KOMP)Wtsi mice, with the expectation, based on the above data, that perturbation of Ppp6r3 would have a stronger impact on BMD at the lumbar spine. At approximately 9 weeks of age, we measured areal BMD (aBMD) at the femur and lumbar spine using dual X-ray absorptiometry (DXA). First, we observed no change in body weight at 9 weeks that might impact bone phenotypes (Figure 4\u2014figure supplement 2A). As the above analysis predicted, we observed a significant effect of Ppp6r3 genotype on aBMD at the lumbar spine (WT vs. MUT p = 0.01, Figure 4\u2014figure supplement 2C), but not the femur (WT vs. MUT p = 0.26, Figure 4\u2014figure supplement 2D). It should also be noted, however, that we observed significantly decreased femoral width, but not length, in Ppp6r3 mutant mice (anterior\u2013posterior [AP] femoral width, WT vs. MUT p = 0.02; medial\u2013lateral [ML] femoral width, WT vs. MUT p = 2.2 \u00d7 10\u22126, Figure 4\u2014figure supplement 2B\u2013D).\n\nWe further characterized the effects of Ppp6r3 genotype on microarchitectural phenotypes, in spine and femur, via micro-computed tomography (\u03bcCT). We observed significant (p \u2264 0.05) decreases in trabecular bone volume fraction (BV/TV, WT vs. MUT p = 0.015, Figure 4\u2014figure supplement 2E, F) and volumetric BMD (vBMD, WT vs. MUT p = 0.015, Figure 4\u2014figure supplement 2G) of the lumbar spine as a function of Ppp6r3 genotype, but found no significant changes in tissue mineral density (TMD, Figure 4\u2014figure supplement 2E), trabecular separation (TbSp), trabecular thickness (TbTh), or trabecular number (TbN) (Figure 4\u2014figure supplement 2F\u2013H). In the femoral midshaft, we observed significant decreases in total area (Tot.Ar, WT vs. MUT p = 0.00724, Figure 4\u2014figure supplement 2H) and medullary area (Ma.Ar, WT vs. MUT p = 0.00903, Figure 4\u2014figure supplement 2I), which are concordant with the aforementioned observed decreases in femoral width in Ppp6r3 mutant mice. We did not observe any changes in trabecular bone parameters in the distal femur.\n\nWe also measured Procollagen 1 Intact N-Terminal Propeptide P1NP levels in plasma, and observed a significant increase in P1NP levels in mutant mice (p = 0.00422), suggesting that the observed decrease in bone mass is due to increased bone turnover (Figure 4\u2014figure supplement 2I\u2013K). Finally, to assess the effects of Ppp6r3 genotype on bone matrix composition, we performed periosteal Raman spectroscopy on both the lumbar spines and femurs. We did not observe any significant (p \u2264 0.05) effects of Ppp6r3 genotype on bone matrix composition (Figure 4\u2014figure supplements 3\u20136).\n\n## Discussion\n\nBMD GWASs have identified over 1100 associations to date. However, identifying causal genes remains a challenge. To aid researchers in further dissecting the genetics of complex traits, reference transcriptomic datasets and computational methods have been developed for the prioritization and identification of causal genes underlying GWAS associations. In this work, our goal was to utilize these data and tools to prioritize putatively causal genes underlying BMD GWAS associations. Specifically, we used the GTEx eQTL reference dataset in 49 tissues to perform TWAS and eQTL colocalization on the largest BMD GWAS. Using this approach, we identified 512 putatively causal protein-coding genes that were significant in both the TWAS and colocalization approaches.\n\nOur approach was inspired by a recent study that used the GTEx resource and a TWAS/eQTL colocalization approach similar to the one we employed. Pividori et al., 2020 recently combined TWAS and eQTL colocalization to GTEx and GWAS data on 4091 traits, including BMD, from the UK Biobank data. A total of 76 protein-coding genes were identified and of the 76, we identified 55 (72.4%) of the same genes in our implementation. There are several reasons for this discrepancy in the number of prioritized genes. First, both studies used a GWAS based on the UK Biobank (Bycroft et al., 2018); however, sample sizes were different. The PhenomeXcan project utilized GWAS data based on the analysis of ~207,000 individuals, whereas we used GWAS data based on the analysis of ~426,000 individuals (Morris et al., 2019; Pividori et al., 2020). Second, the two GWAS studies utilized different association models. Finally, due to the breadth of the PhenomeXcan project, they had a higher multiple-testing burden than we did, which led to different Bonferroni-adjusted p value thresholds (p < 5.49 \u00d7 10\u221210 vs. p \u2264 2.38 \u00d7 10\u22126).\n\nOne of many novel genes identified in our study was PPP6R3, which was also identified in the PhenomeXcan project (Pividori et al., 2020). PPP6R3 is a regulatory subunit of protein phosphatase 6 and has been implicated in several cancers (Cristiano, 2020; Stefansson and Brautigan, 2006). In humans, the PPP6R3 protein shows ubiquitous expression across tissues, and may have an important role in maintaining immune self-tolerance (Cristiano, 2020). It is unclear how PPP6R3 may be influencing BMD. However, protein phosphatase 6 has been shown to oppose activation of the nuclear factor kappa-light-chain enhancer of activated B cells (NF-\u03baB) pathway in lymphocytes (Ziembik et al., 2017). Since the NF-\u03baB signaling pathway is highly involved in osteoclastogenesis and bone resorption, it is possible that PPP6R3 may be involved in the regulation of this pathway in osteoclasts (Abu-Amer, 2013). Further studies that characterize the role of PPP6R3, and the effects of its deletion, in bone cells are required to further elucidate its effect on BMD.\n\nThe PPP6R3 locus demonstrated a high level of complexity, containing seven independent GWAS associations, at least one of which was also associated with fracture. Interestingly, just upstream of PPP6R3 is LRP5, a WNT signaling co-receptor (Mao et al., 2001). LRP5 is a well-known regulator of BMD and gain and loss of function mutations lead to high bone mass syndrome and osteoporosis pseudoglioma, respectively (Mizuguchi et al., 2004; Boyden et al., 2002; Marques-Pinheiro et al., 2010; Gong et al., 2001). LRP5 expression was not significantly associated with eBMD by TWAS (Bonferroni p = 1), nor did it have a colocalizing eQTL in GTEx tissues (most significant RCP = 1.6 \u00d7 10\u22122 in pancreas). However, another eBMD lead SNP in the region, rs4988321, is a missense mutation in LRP5 (Val667Met) that has been associated with BMD in multiple studies (van Meurs et al., 2008; Brixen et al., 2007; Giroux et al., 2007). While this variant represents an association that is independent of the rs10047483 association (r2 = 0.104), it further highlights the complexity of this locus both in terms of the number of associations and target genes. We believe these data support a model of allelic heterogeneity involving multiple genes (at least LRP5 and PPP6R3) at this locus, similar to other BMD loci identified by GWAS such as the \u2018Wnt16\u2019 locus (Chesi et al., 2019).\n\nTo determine the effect of Ppp6r3 expression on bone, we characterized bone phenotypes in mice harboring a gene-trap allele (Ppp6r3tm1a(KOMP)Wtsi). Consistent with the observation that the PPP6R3 eQTL SNPs were significantly associated with lumbar spine, but not femoral neck BMD, we observed that Ppp6r3 deletion had a significant effect on lumbar spine BMD, but not femoral BMD. Using \u03bcCT, we further characterized the effect of Ppp6r3 deletion on lumbar spine and femoral microarchitecture. We observed significant decreases in trabecular bone volume fraction (BV/TV) and vBMD of the lumbar spine as a function of PPP6R3 genotype. While we did not observe significant effects of Ppp6r3 deletion on trabecular thickness or number, the direction of effects for those phenotypes suggests that the observed decrease in bone volume fraction and BMD may be explained by the cumulative but more subtle effects of Ppp6r3 deletion on trabecular thickness and number. Consistent with our caliper-based observations that femoral width was decreased at the midshaft in Ppp6r3 mutants, we observed a decrease in medullary and total area in the femoral midshaft. We also hypothesized that Ppp6r3 deficiency might lead to defects in matrix composition; however, we did not observe any significant differences. The lack of differences might be due to the fact that we used relatively young mice for these assays.\n\nOur hypothesis regarding the directions of effect of Ppp6r3 expression on BMD based on the eQTL and eBMD/lumbar spine BMD GWAS were opposite to what we observed. There are several reasons that may explain this. First, our hypothesis was based on expression data in non-bone tissues and cell types. Recent studies have shown that the direction of eQTL effects can differ between different cells and tissues within humans (Peters et al., 2016; Mizuno and Okada, 2019). Second, our hypothesis was based on human data, while our functional experiments were performed in mice. Third, we globally deleted Ppp6r3 in mice, as opposed to ablating it in a cell-type-specific manner. Future studies investigating which tissue/cell-type Ppp6r3 is operative in and the generation of conditional Ppp6r3 knockouts will allow us to unravel the precise role of this association and Ppp6r3 in the regulation of bone mass.\n\nAs we and others have shown, the use of both TWAS and eQTL colocalization can prioritize putatively causal genes underlying GWAS associations. Here, we have shown the utility of this approach even in the absence of eQTL data from the most phenotype-relevant tissue. However, it is important to highlight the limitations of our analysis. While studies have shown that many eQTL are shared among tissues, the lack of eQTL data in bone and bone cells means that bone-specific eQTL were missed. For example, a study conducted by Mullin et al. performed eQTL colocalization and summary-based Mendelian randomization (SMR) by utilizing GWAS and expression data from osteoclast-like cells, and prioritized several eBMD genes (Mullin et al., 2020). Thirty-eight percent of the colocalizing eQTL and 19% of the SMR genes that they identified overlapped with our 512 prioritized genes, suggesting that we have missed many potential effector genes with eQTL specific to bone cells. In addition, the use of multiple non-bone tissues may have inflated the number of false positives based on coincidence of strong TWAS and eQTL colocalization signals that have no biological impact on bone. Furthermore, the lack of bone transcriptomic data may also explain the observed disparity between our hypothesized and observed direction-of-effect for PPP6R3. It is also important to note that due to the reliance of this approach on eQTL data, genes that affect BMD via non-expression-related mechanisms were not captured. Another limitation of our approach arises from the definition of loci based on linkage disequilibrium (LD). We used a set of previously defined approximately independent LD blocks, derived from a cohort of European individuals, in our fastENLOC analysis (Berisa and Pickrell, 2016). The inexact nature of these data may lead to spurious colocalizations due to mismatches in LD structure between the reference LD blocks and the GWAS/eQTL populations. Additionally, because the GWAS and eQTL data have mismatching LD structures, due to their being derived from cohorts with different ancestries, our analyses, particularly the colocalization analyses, may suffer from reduced power (Hukku et al., 2021). This also raises the related issue of the reduced generalizability of our results in non-European individuals, which brings further attention to the necessity of performing GWASs and providing reference data in diverse and underrepresented populations. Additionally, another issue arises when considering correlations in expression, and predicted expression, between genes in a locus, which may lead to spurious associations in TWAS analyses (Wainberg et al., 2019). Finally, as we show above, our method does not perform as well as prioritizing genes based on their proximity to GWAS associations. However, because our method utilizes systems genetics techniques and data, such as eQTL, we believe that our method prioritizes genes in a more biologically relevant manner. In fact, utilizing the closest gene method alone, PPP6R3 would not have been prioritized as a bone-relevant gene. We suggest that future studies utilize both prioritization techniques, such as taking the closest genes to GWAS associations and cross referencing them with colocalizing and TWAS-associated genes, in order to provide further evidence for functional validation.\n\nIn summary, we applied a combined TWAS/colocalization approach using GTEx and identified 512 putatively causal BMD genes. We further investigated PPP6R3 and demonstrated that it is a regulator of lumbar spine BMD. We believe this work provides a valuable resource for the bone genetics community and may serve as a framework for prioritizing genes underlying GWAS associations using publicly available tools and data for a wide range of diseases.\n\n## Methods\n\n### fastENLOC colocalization\n\nFor each of the eBMD and fracture GWASs, we performed colocalization using fastENLOC, by following the tutorial and guidelines available at https://github.com/xqwen/fastenloc (Wen, 2022).\n\nBriefly, for each GWAS, we converted variant coordinates to the hg38 human genome assembly, using the UCSC liftOver tool (minimum ratio of bases that must remap = 1; https://genome.ucsc.edu/cgi-bin/hgLiftOver). We calculated z-scores by dividing GWAS betas by standard errors. We then defined loci based on European LD blocks, as defined based on the results of Berisa and Pickrell, 2016.\n\nZ-scores were then converted to posterior inclusion probabilities using torus (Wen, 2015). Finally, these data were colocalized with fastENLOC for all 49 GTEx V8 tissues, with the \u2018-total_variants\u2019 flag set to 14,000,000. Colocalization was performed using pre-computed GTEx multi-tissue annotations, obtained from https://github.com/xqwen/fastenloc; Wen, 2022. Finally, to identify protein-coding genes in the results, we utilized Ensembl\u2019s \u2018hsapiens_gene_ensembl\u2019 dataset using biomaRt (version 2.45.8).\n\n### S-MultiXcan\n\nWe conducted a TWAS by integrating genome-wide SNP-level association summary statistics from an eBMD GWAS (Morris et al., 2019) with GTEx version 8 gene expression QTL data from 49 tissue types. We used the S-MultiXcan approach for this analysis, to correlate gene expression across tissues to increase power and identify candidate susceptibility genes (Barbeira et al., 2019). Default parameters were used, with the exception of the \u2018--cutoff_condition_number\u2019 parameter, which was set to 30. Bonferroni-correction of p values was performed on the resultant gene set (22,337 genes), using R\u2019s \u2018p.adjust\u2019 function. This was followed by the removal of non-protein-coding genes. The analysis was also performed in the same manner using summary statistics from a fracture GWAS (Morris et al., 2019). Finally, to identify protein-coding genes in the results, we utilized Ensembl\u2019s \u2018hsapiens_gene_ensembl\u2019 dataset using biomaRt (Durinck et al., 2009; Durinck et al., 2005).\n\n### Creation of the \u2018known bone gene\u2019 list\n\nWe generated a \u2018known bone gene\u2019 set as follows: First, we downloaded Gene Ontology IDs for the following terms: \u2018osteo*\u2019, \u2018bone\u2019, and \u2018ossif*\u2019 from AmiGO2 (version 2.5.13) (Carbon et al., 2009). After removal of non-bone-related terms, we extracted all mouse and human genes related to the GO terms, using biomaRt. From this list, we retained protein-coding genes.\n\nWe also used the \u2018Human-Mouse: Disease Connection\u2019 database available at the Mouse Genome Informatics website, to download human and mouse genes annotated with the terms \u2018osteoporosis\u2019, \u2018bone mineral density\u2019, \u2018osteoblast\u2019, \u2018osteoclast\u2019, and \u2018osteocyte\u2019. We used biomaRt to identify the gene biotypes, and retained protein-coding genes. We then used the MGI human-mouse homology table (http://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt) to convert all mouse genes to their human homologs. Finally, we removed genes that were not interrogated in both the colocalization and the TWAS analyses.\n\n### GO enrichment analyses\n\nGO analysis was performed for the set of protein-coding genes passing the colocalization threshold RCP \u22650.1 and S-MultiXcan Bonferroni p value \u22640.05, using the \u2018topGO\u2019 package (version 2.46.0) in R (Alexa and Rahnenfuhrer, 2021). Enrichment tests were performed for the \u2018Molecular Function\u2019, \u2018Biological Process\u2019, and \u2018Cellular Component\u2019 ontologies, using all protein-coding genes that were subjected to colocalization and MultiXcan analysis as background. Enrichment was performed using the \u2018classic\u2019 algorithm with Fisher\u2019s exact test. p values were not adjusted for multiple testing.\n\n### LD calculations\n\nLD between variants was calculated using the LDlinkR (version 1.0.2) R package, using the \u2018EUR\u2019 population (Myers et al., 2020).\n\n### Ppp6r3 knockout mouse generation\n\nThe study was carried out in strict accordance with NIH\u2019s Guide for the Care and Use of Laboratory Animals. Additionally, the University of Virginia Institutional Animal Care and Use Committee approved all animal procedures. Ppp6r3 gene-trap mice were generated using targeted embryonic stem cell clones heterozygous for the Ppp6r3tm1a(KOMP)Wtsi gene-trap allele obtained from the International Knockout Mouse Project (KOMP; https://www.komp.org). KOMP ES clones were karyotyped and injected using a XYClone Laser (Hamilton Thorne, Beverly, MA) into B6N-Tyrc-Brd/BrdCrCrl (Charles River, Wilmington, MA) eight-cell stage embryos to create chimeric mice. Resultant chimeras were bred to B6N-Tyrc-Brd/BrdCrCrl mice to obtain germline transmission of the Ppp6r3 gene-trap allele. From a breeding pair of two heterozygous mice, we generated our experimental population through HET \u00d7 HET matings. Breeder mice were fed a breeder chow diet (Envigo Teklad S-2335 mouse breeder sterilizable diet, irradiated. Product # 7904), and experimental mice were fed a standard chow diet (Envigo Teklad LM-485 irradiated mouse/rat sterilizable diet. Product #7912).\n\n### Genotyping of Ppp6r3 mice\n\nDNA for genotyping was extracted from tail clips as follows: tail clips were incubated overnight at 55\u00b0C in a solution of 200 \u00b5l digestion/lysis buffer (Viagen Direct PCR [tail], Los Angeles, CA) and 1 mg/ml proteinase K (Viagen, Los Angeles, CA). After overnight incubation, tails were heated at 85\u00b0C for 45 min, and solutions were subsequently stored at 4\u00b0C.\n\nFor genotyping, PCR reactions were set up as follows. For each reaction, 1 \u03bcl of DNA was mixed with 24 \u03bcl of a master mix consisting of 19.5 \u03bcl nuclease-free H2O, 2.5 \u03bcl 10\u00d7 PCR reaction buffer (Invitrogen, Waltham, MA), 0.75 \u03bcl of MgCl2 (Invitrogen, Waltham, MA), 0.5 \u03bcl of 10 mmol Quad dNTPs (Roche Diagnostics GmbH, Mannheim, Germany) 0.25 \u03bcl of Platinum Taq DNA polymerase (Invitrogen, Waltham, MA), and 0.25 \u03bcl of each primer, diluted to 20 \u03bcmol.\n\nPrimers: PCR primers were obtained from Integrated DNA Technologies, Coralville, IA.\n\nThe following PCR settings were used:\n\nPCR products were run on a 2% agarose gel for 150 min at 60 V, to distinguish between wild-type, heterozygous and mutant Ppp6r3 mice.\n\n### PPP6R3 western blotting\n\nMouse spleens 20\u201340 mg in weight were suspended in 1% NP40 buffer (50 mM Tris [pH 8] 100 mM NaCl, 1% NP40, 1 mM EGTA(egtazic acid), 1 mM EDTA(ethylenediaminetetraacetic acid), Protease inhibitor cocktail (04-693-116-001, Roche), 1 mM PMSF(phenylmethylsulfonyl fluoride), 50 mM NaF, 0.2 mM sodium vanadate). The tissue was homogenized by RNase-free disposable pestles (Thermo Fisher #12-141-364) and incubated for 10 min on ice. After brief sonication, the sample was centrifuged for 10 min at 13,000 \u00d7 rpm at 4\u00b0C. The protein concentration in the extract was measured by Bradford assay. 100 \u00b5g of sample protein was boiled 5 min in sodium dodecyl sulfate (SDS) sample buffer, loaded in each lane, resolved by gradient SDS\u2013polyacrylamide gel electrophoresis (Bio-Rad #456-1085) and immunoblotted as described in Guergnon et al., 2009. Primary antibodies were diluted 1:1000 (SAPS1 Ab: Thermo Fisher #PA5-44275, SAPS3 Ab: Thermo Fisher #PA5-58405, PP6C Ab: Sigma #HPA050940).\n\n### PPP6R3 functional validation\n\nExperimental mice of both sexes were sacrificed at approximately 9 weeks of age (mean age = 61 days). At sacrifice, the right femurs were isolated, and femoral morphology (length and widths in anterior\u2013posterior and medial\u2013lateral orientations) was measured with digital calipers (Mitoyuto American, Aurora, IL).\n\nFemurs were then wrapped in phosphate-buffered saline (PBS)-soaked gauze and stored at \u221220\u00b0C, until analysis. Lumbar vertebrae L3\u2013L5 were also dissected at sacrifice and were wrapped in PBS-soaked gauze and frozen at \u221220\u00b0C. Given our prior experience in measuring bone geometry and microstructure, we used a minimum N = 14 for our analyses, ensuring 80% power to detect a statistically significant effect at an alpha \u22640.05.\n\n### Bulk RNA isolation, sequencing, and quantification\n\nWe isolated RNA from a randomly chosen subset (n = 16, 4/sex each of WT and MUT) of the available mice.Total RNA was isolated from L5 vertebrae, using the mirVana miRNA Isolation Kit (Life Technologies, Carlsbad, CA). Total RNA-seq libraries were constructed using Illumina TruSeq Stranded mRNA LT sample prep kits. Samples were sequenced to an average of 39 million 2 \u00d7 151 bp paired-end reads (total RNA-seq) on an Illumina NextSeq500 sequencer by Psomagen, Inc A custom bioinformatics pipeline was used to quantify RNA-seq data. Briefly, RNA-seq FASTQ files were quality controlled using FASTQC (version 0.11.5) and MultiQC (version 1.11). Reads were trimmed using bbduk (bbmap package version 38.57). Trimmed reads were then aligned to the mm10 genome assembly with HISAT2 (version 2.1), and quantified with Stringtie (version 1.3.3). Read count information was then extracted with a Python script provided by the Stringtie website (prepDE.py).\n\n### Bulk RNA differential expression analyses\n\nUsing gene count matrices, differential expression was performed using DESeq2 (Love et al., 2014; Version 1.34.0) between wild-type and mutant samples. We used the \u2018DESeq\u2019 function from DESeq2, with a design formula of ~sex + genotype. p values were adjusted using the \u2018p.value\u2019 function, using the \u2018BH\u2019 method.\n\n### Dual X-ray absorptiometry\n\nIndividual right femurs and the lumbar spine (L5 vertebrae) were isolated from surrounding soft tissues and frozen at \u221220\u00b0C in PBS. DXA was performed on the femurs and lumbar vertebrae using the Lunar Piximus II (GE Healthcare) as described previously by Beamer et al., 2011. In short, 10 isolated bones were placed in the detector field at a time and the samples were analyzed one by one, such that the region of interest (ROI) was set for one specimen at a time for data collection. The ROI for the femurs was on the entire isolated femur. For the spine, was on the entire isolated L5. Care was taken to ensure that the sample orientation was identical for all samples.\n\n### \u03bcCT and image analysis\n\nAll \u03bcCT analyses were carried out at the \u03bcCT Imaging Core Facility at Boston University using a Scanco Medical \u03bcCT 40 instrument (Br\u00fctisellen, Switzerland). The power, current, and integration time used for all scans were 70 kVp, 113 \u03bcA, and 200 ms, respectively. The L5 vertebrae and right femora were scanned at a resolution of 12 \u03bcm/voxel. Two volumes of interest (VOIs) in the L5 were selected for analysis: (1) the entire portion of the L5 vertebra extending from 60 \u03bcm caudal to the cranial growth plate in the vertebral body to 60 \u03bcm cranial to the caudal growth plate; and (2) only the trabecular centrum contained in the first VOI. Semi-automated-edge detection (Scanco Medical) was used to define the boundary between the trabecular centrum and cortical shell to produce the second VOI. Two VOIs were also analyzed for each femur: (1) a 0.3-mm-long segment of the diaphysis, centered at the mid-point of the bone; and (2) a 1.2-mm-long segment of the distal metaphyseal trabecular compartment. To define the location of the latter, the location of the distal femoral growth plate was determined, and the distal end of the VOI was set at 60 \u03bcm proximal to that growth plate. Gaussian filtering (sigma = 0.8, support = 1) was used for partial background noise suppression. A scan of a potassium hydroxyapatite phantom allowed conversion of gray values to mineral density. For segmentation of bone tissue, the threshold was set at a 16-bit gray value of 7143 (521 mgHA/ccm), and this global threshold was applied to all of the samples. For each VOI, the following were calculated: total volume (TV), bone volume (BV), bone volume fraction (BV/TV), BMD, and TMD. BMD was defined as the average density of all voxels in the VOI, whereas TMD was defined as the average density of all voxels in the VOI above the threshold (Bouxsein et al., 2010). For the second VOI, the following additional parameters were calculated: trabecular thickness (Tb.Th), trabecular separation (Tb.Sp), trabecular number (Tb.N), connectivity density (Conn.D), and structure model index (SMI) (Bouxsein et al., 2010).\n\nFor the femoral VOI, the following additional parameters were calculated instead: cortical thickness (Ct.Th), total area (Tot.Ar), marrow area (Ma.Ar), maximum and minimum moments of inertia, and polar moment of inertia (Bouxsein et al., 2010).\n\n### P1NP collection and quantification\n\nPlasma was collected via submandibular bleeding from isoflurane anesthetized wild-type and mutant PPP6R3 mice (N = 10/sex/genotype). Plasma P1NP levels were measured using commercially available kits from IDS (Gaithersburg, MD), according to the manufacturer\u2019s instructions. The assay sensitivity was 0.7 ng/ml. The intra-assay variation was 6.3%, and the inter-assay variation was 8.5%. All measurements were performed in duplicate.\n\n### Raman spectroscopy\n\nRaman spectroscopy was performed using a Renishaw inVia Raman Microscope (Gloucestershire, UK) on each bone sample using a 785-nm-edge red incident laser. A rectangular filled map was created with 3 points in the x-axis and 20 points in the y-axis, for a total of 60 collected points. Each point was exposed 10 times for 6 s per exposure. A custom MATLAB script was used to evaluate the peak position, maximum intensity, peak width, full width at half maximum (FWHM), and the area under each peak. Peak area ratios were calculated for mineral:matrix, carbonate:phosphate, and crystallinity. Furthermore, the standard deviations of peak area ratios were calculated for each mouse, and were further used to evaluate the material heterogeneity in groups.\n\n### Statistical analyses\n\nTo calculate the enrichment of bone genes in prioritized genes, we performed Fisher\u2019s exact test, using R\u2019s \u2018fisher.test\u2019 function, with the alternative hypothesis set as \u2018greater\u2019.\n\nFor the statistical analysis of the phenotyping results, we calculated least-squares means (lsmeans) using the \u2018emmeans\u2019 R package (version 1.5.2.1) (Lenth, 2020). Input for the lsmeans function was a linear model including terms for genotype, weight, and age in days. For sex-combined data, we also added a term for sex. For DXA phenotypes, we included a term for \u2018CenterRectX\u2019 and \u2018CenterRectY\u2019. For the Raman spectroscopy data, weight and age were not included as terms in the linear model.\n\nWe used Tukey\u2019s HSD(honest significance test) test to test for significant differences in lsmeans, for each pair of genotype levels. Tukey\u2019s HSD also controls the family-wise error rate. We performed Welch two-sample t-test\u2019s, using R\u2019s \u2018t.test\u2019 function, to quantify differences in P1NP levels between mutant and wild-type mice.\n\n### Analyses involving data from the International Mouse Phenotyping Consortium\n\nFor the IMPC data, we obtained data using their \u2018statistical-result\u2019 SOLR database, using the \u2018solrium\u2019 R package (version 1.1.4) (Chamberlain, 2019). We obtained experimental results using the \u2018Bone*Mineral*Density\u2019 parameter. We then pruned the resulting data to only include \u2018Successful\u2019 analyses, and removed experiments that included the skull. To generate the Gpatch1 boxplot, we obtained raw data using from IMPC\u2019s \u2018statistical-raw-data\u2019 SOLR database for Gpatch1, and analyzed the data in the same manner as IMPC, using the \u2018OpenStats\u2019 R package (version 1.0.2), using the method = \u2018MM\u2019 and MM_BodyWeightIncluded = TRUE arguments (Haselimashhadi et al., 2020). Finally, mouse genes were converted to their human syntenic counterparts using Ensembl\u2019s \u2018hsapiens_gene_ensembl\u2019 and \u2018mmusculus_gene_ensembl\u2019 datasets through biomaRt.\n\n### PhenomeXcan data analysis\n\nWe obtained all significant PhenomeXcan gene\u2013trait associations from their paper (https://advances.sciencemag.org/content/6/37/eaba2083), and used data for the \u20183148_raw-Heel_bone_mineral_density_BMD\u2019 phenotype (Pividori et al., 2020). Furthermore, we constrained our search to only include genes that were annotated by the authors as \u2018protein_coding\u2019.\n\n### LSBMD/FNBMD GWAS analysis\n\nWe obtained sex-combined LSBMD and FNBMD GWAS summary statistics from GEFOS (http://www.gefos.org/?q=content/data-release-2012), and then used a custom script that utilized the biomaRt R package to convert variants to their GRCh38 coordinates.\n\n### Data availability\n\neBMD and fracture GWAS summary statistics were obtained from GEFOS, as were the LSBMD and FNBMD GWAS summary statistics. GTEx eQTL data were obtained from the GTEx web portal. Data from the PhenomeXcan project were obtained from Pividori et al., 2020. Statistical data from the IMPC were obtained using an R interface to their SOLR database. Ppp6r3 experimental data are provided on our GitHub (https://github.com/basel-maher/BMD_TWAS_colocalization; Al-Barghouthi, 2022). Mouse-Human homologs were obtained from MGI (http://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt). We also obtained data from the MGI Human-Mouse:Disease Connection database (http://www.informatics.jax.org/diseasePortal). Gene Ontologies were obtained from AmiGO2 (http://amigo.geneontology.org/amigo).\n\n### Code availability\n\nAnalysis code and the raw data for our Ppp6r3 functional validation analyses are available on GitHub (https://github.com/basel-maher/BMD_TWAS_colocalization, copy archived at swh:1:rev:6aaa8819c2e335013a665e76318dc98aeb9a52ce; Al-Barghouthi, 2022).\n",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "fb8018c5-59b7-4475-be0f-82d15dcea959",
+      "submission_id": "2dd92d9e-9280-49e5-9563-9cd7d5ffc4b9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nele Haelterman, https://ror.org/02pttbw34 Baylor College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77285.sa0](https://doi.org/10.7554/eLife.77285.sa0)\n\nMany GWAS studies have been done to understand the genetic contributions to bone density, but very few have managed to pinpoint the gene affected by a polymorphism that caused an observed difference. In this paper, your team shows how scientists can identify causative variants from GWAS studies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nele Haelterman, https://ror.org/02pttbw34 Baylor College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77285.sa1](https://doi.org/10.7554/eLife.77285.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Transcriptome-wide Association Study and eQTL colocalization identify potentially causal genes responsible for bone mineral density GWAS associations\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Erika Kague (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers would like to see more data and discussion on the possible role of LRP5 in the bone phenotype of PPP6R3 mutant mice.\n\na. Please assess expression levels of Ppp6r3 and Lrp5 in your mutant model.\n\nb. Please include a more in-depth characterization of Ppp6r3 mutant mice:\n\nfemoral microCT data, P1NP or TRAP expression.\n\nc. Please discuss whether rs10047483 is in LD with the SNP that is closest to LRP5.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have presented the methods, data, analysis, and interpretation clearly. It's refreshing that the authors were transparent about several issues that did not show their approach in the most positive light, i.e. the fact that these approaches were not appreciably better than the \"nearest neighbor\" approach, the fact that deletion of their candidate gene in mouse resulted in the opposite phenotype from the one predicted. In addition, their explanations for these issues were clear and rational. Overall, the manuscript is interesting and informative and, as such, will be useful for researchers in bone biology as well as for many readers interested in the challenge of candidate gene identification from human GWAS.\n\nReviewer #2 (Recommendations for the authors):\n\nI have a few comments for the authors:\n\n\"Most loci overlapped one gene (mean = 1.7, median = 1); however, 184 loci overlapped multiple genes, including a locus on Chromosome (Chr.) 20 (lead SNP rs6142137) which contained 9 prioritized genes. (Figure 1D).\"\n\n1. Figure 1D does not show the respective locus with 9 prioritized genes. It would be helpful to have Figure1E showing the Associated genomic regions and highlighting the 9 prioritized genes as well as what tissues each of them expressed.\n\n\"To do so, we created a database-curated set of genes previously implicated in the regulation of bone processes (henceforth referred to as our \"known bone genes\" list, N=1,399, Supplementary Table 5).\"\n\n2. What database was used to annotate the genes as \"known bone genes\". Could the authors please clarify? Also, why osteoblast transcriptome was not used here?\n\n\"we quantified the number of genes that were both the closest genes to eBMD GWAS associations and were members of the \"known bone gene\" list. \"\n\n3. Please provide additional information on what is considered the closest gene (in Mb).\n\n4. Please provide diagrams showing the different steps of gene prioritization (TWAS+eQTL, \"known bone genes\" within 1Mb) versus (closest gene + \"known bone genes\") and their overlap (\"Of our 512 prioritized genes, 206 (40%) were also the closest genes to eBMD GWAS associations, with 27 of the remaining 306 prioritized genes (8.8%) being members of the \"known bone gene\" list\").\n\n\"Together, these data suggest that many of the genes identified by the combined TWAS/colocalization approach are likely causal BMD GWAS ge \"\n\n5. Incomplete phrase.\n\n\"An example of one of the 64 genes is GPATCH1, located within a GWAS association on human chromosome 19q13.11. \"\n\n6. Please provide a brief description of the gene GPATCH1. Any data showing expression of this gene in bone, other than the phenotype from IMPC?\n\n7. In Figure 3A, could the authors please highlight where PPP6R3 is located?\n\n\"Together, these data highlight PPP6R3 as a strong candidate for one of the seven eBMD/fracture associations in this region.\"\n\n8. Please provide a description of the gene PPP6R3 in the Results section as well.\n\n9. rs10047483 is nearby LRP5, is this SNP in LD with the SNPs closest to LRP5? Do the authors suggest that the association to the LRP5 region is polygenic? In the discussion, could the authors provide further examples of complex BMD loci that could help to accept the also role of PPP6R3 in causality? (ex. WNT16 locus by Chesi et al. doi.org/10.1038/s41467-019-09302-x, another example is the FTO locus)\n\n.\n\n10. Figure 4E: Scales are on the bottom left, not right.\n\n11. Would the lack of information to support Ppp6r3 in fracture risk, would be also due to the age at which the analysis of knockout mice was carried out? Could the authors provide a sentence or two to the discussion?\n\nReviewer #3 (Recommendations for the authors):\n\nWhile this work makes a solid contribution, the significance is somewhat moderated by the application of established protocols to study eBMD, the limited analysis of 2 genes prioritized using this approach following their systemic ablation, the modest phenotypes of the mutant mice, and the lack of mechanistic studies on candidate gene function. Specifically, one gene was not studied in depth beyond the phenotype available in the IMPC. Deletion of Ppp6r3 causes modest reductions in vertebral BMD measurements by DXA and microCT, but the mechanisms by which the systemic ablation of the Ppp6r3 gene contributes to this mild phenotype are not explored. Additional analysis of Ppp6r3 function in bone cell lines or tissues would be especially important since this 'hit' arose using GTEx, which unfortunately does not include bone tissues and bone cells.\n\nOther points for authors to consider:\n\nThe authors acknowledge that the Ppp6r3 variant is near Lrp5, and suggest in the Discussion that the Ppp6r3 variant association is independent of Lrp5. However, given the pivotal and well-known role of Lrp5 in BMD, it is important to document that the effects of the Ppp6r3 gene trap are not affecting Lrp5 expression or function.\n\nAlthough there is a decrease in femoral width, there is no cortical microCT data for the femur. What might be the cause of this decrease in the width of the femur? Is this a developmental issue? Is there any change in the TRAP or P1NP levels in mutant mice?\n\nIt would be great to test whether deletion of PPP6R3 affects the mechanical properties of bone, whether in 3-point bending for the femurs or compression tests for the vertebrae. Does PPP6R3 deletion affect porosity to cause changes in BMD without affecting trabecular parameters?\n\nWhat is the sex of the mice that were used in this study?\n\nThe authors performed pathway analysis for the potentially causal 512 BMD genes and showed GO terms. It would have been informative to include a gene network plot to visualize which genes are shared in these pathways focusing on bone-related pathways or a heatmap plot to show which genes are shared in the bone-related pathways. Additionally, does PPP6R3 belong to any bone-related pathway?\n",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a89f90a2-7c96-4536-b308-60bca2baaca5",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C1",
+      "claim": "Genome-wide association studies (GWASs) for bone mineral density (BMD) in humans have identified over 1100 associations to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWASs) for bone mineral density (BMD) in humans have identified over 1100 associations to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Morris et al., 2019 in the manuscript context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "601ae85d-132e-4f31-9eb2-010ed988cc4d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C2",
+      "claim": "Identifying causal genes implicated by GWAS studies has been challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, identifying causal genes implicated by such studies has been challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field supported by the broader scientific literature context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "73f947e3-f903-448c-a2b9-bd521e50b13c",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C3",
+      "claim": "The study identified 512 genes as significant using both TWAS and eQTL colocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we identified 512 genes as significant using both TWAS and eQTL colocalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's analysis, supported by the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "5b21536f-7642-4449-b1d5-74c72d1b5f7b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C4",
+      "claim": "The set of 512 genes was enriched for regulators of BMD and members of bone relevant biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "This set of genes was enriched for regulators of BMD and members of bone relevant biological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Gene Ontology enrichment analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "bd1435f2-a737-4c28-8666-db1a33c80810",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C5",
+      "claim": "PPP6R3 was the gene with the strongest support from the analysis which was not previously implicated in the regulation of BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the significance of our findings, we selected PPP6R3, the gene with the strongest support from our analysis which was not previously implicated in the regulation of BMD, for further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the ranking of genes by TWAS p-value and colocalization scores, as shown in Table 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "41681e5b-a080-4d6d-a2ac-2bbe20f0b93c",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C6",
+      "claim": "Ppp6r3 deletion in mice decreased BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Ppp6r3 deletion in mice decreased BMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from Ppp6r3 knockout mice presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "ac489872-b27d-4cab-8360-814c17d0f093",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C7",
+      "claim": "Osteoporosis affects over 10 million individuals in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoporosis, a disease characterized by low bone mineral density (BMD), decreased bone strength, and an increased risk of fracture, affects over 10 million individuals in the United States (Black and Rosen, 2016; Burge et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Black and Rosen, 2016 and Burge et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "9c008005-ecdf-4838-934e-3ca99a21909d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C8",
+      "claim": "BMD is the single strongest predictor of fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "BMD is the single strongest predictor of fracture and a highly heritable quantitative trait (Miller et al., 1999; Ralston and Uitterlinden, 2010; Peacock et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Miller et al., 1999; Ralston and Uitterlinden, 2010; Peacock et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "7cc0af5b-c167-40f7-aaf5-302f2940b5e1",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C9",
+      "claim": "BMD is a highly heritable quantitative trait.",
+      "claim_type": "EXPLICIT",
+      "source": "BMD is the single strongest predictor of fracture and a highly heritable quantitative trait (Miller et al., 1999; Ralston and Uitterlinden, 2010; Peacock et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Miller et al., 1999; Ralston and Uitterlinden, 2010; Peacock et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "5e90cc2e-39a7-437c-9f8c-d4cfe009ecdd",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C10",
+      "claim": "Over the last decade, genome-wide association studies (GWASs) have identified over 1100 independent associations for BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the last decade, genome-wide association studies (GWASs) have identified over 1100 independent associations for BMD (Morris et al., 2019; Estrada et al., 2012; Kemp et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Morris et al., 2019; Estrada et al., 2012; Kemp et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "a8b27d00-a44f-466b-958a-0364e20b3b44",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C11",
+      "claim": "Despite the success of GWAS, few of the underlying causal genes have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite the success of GWAS, few of the underlying causal genes have been identified (Rocha-Braz and Ferraz-de-Souza, 2016; Sabik and Farber, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Rocha-Braz and Ferraz-de-Souza, 2016; Sabik and Farber, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "38cd3eb1-bd38-4fae-8075-f28bcbd8abf7",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C12",
+      "claim": "The vast majority (>90%) of GWAS associations are driven by non-coding variation.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main difficulties in GWAS gene discovery is that the vast majority (>90%) of associations are driven by non-coding variation (Giral et al., 2018; Edwards et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Giral et al., 2018; Edwards et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "db6a8860-21e2-444e-bbe4-296f229edf65",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C13",
+      "claim": "Transcriptome-wide association studies (TWASs) and expression quantitative trait locus (eQTL) colocalization have been developed to leverage transcriptomic data for gene discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the last decade, approaches such as transcriptome-wide association studies (TWASs) and expression quantitative trait locus (eQTL) colocalization have been developed which leverage transcriptomic data in order to inform gene discovery by connecting non-coding disease-associated variants to changes in transcript levels (Gusev et al., 2016; Barbeira et al., 2018; Pividori et al., 2020; Giambartolomei et al., 2014; Wen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gusev et al., 2016; Barbeira et al., 2018; Pividori et al., 2020; Giambartolomei et al., 2014; Wen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "6a0a2fef-be7b-46f7-a87c-9bf7ce33c5a8",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C14",
+      "claim": "TWAS and eQTL colocalization approaches have proven successful for a wide array of diseases and disease-associated quantitative traits.",
+      "claim_type": "EXPLICIT",
+      "source": "These approaches have proven successful for a wide array of diseases and disease-associated quantitative traits (Pividori et al., 2020; Bhattacharya et al., 2020; Thom and Voight, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pividori et al., 2020; Bhattacharya et al., 2020; Thom and Voight, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "2fb3a847-899e-413d-9bd1-10183da09bfb",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C15",
+      "claim": "The osteoporosis field has lagged behind in TWAS/colocalization efforts due to the limited number of large-scale bone-related transcriptomic datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the osteoporosis field has lagged behind such efforts, due to the limited number of large-scale bone-related transcriptomic datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field based on the authors' assessment.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "326b1d1e-5d94-4b80-a341-832cb47c8ef6",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C16",
+      "claim": "The GTEx project has generated RNA-seq data on over 50 tissues across hundreds of individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The GTEx project has generated RNA-seq data on over 50 tissues across hundreds of individuals (Consortium, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Consortium, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "9f2819f4-caaa-4614-b0dc-3f56f103f324",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C17",
+      "claim": "Many eQTL are shared across tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though data on the tissues/cell types likely to be most relevant to BMD (bone or bone cells) were not included, the project demonstrated that many eQTL were shared across tissues (Consortium, 2020; Battle et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Consortium, 2020; Battle et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "5369e68b-fcdb-431f-9b04-bcd1dadf6e1b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C18",
+      "claim": "Effects in a wide-array of non-bone cell types and tissues can impact bone and BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it is well known that effects in a wide-array of non-bone cell types and tissues can impact bone and BMD (Fitzpatrick, 2002; Mirza and Canalis, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fitzpatrick, 2002; Mirza and Canalis, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "656ba07c-1f0b-4254-8178-451c3ac2f49e",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C19",
+      "claim": "A total of 2156 protein-coding genes were significantly (Bonferroni-adjusted p value \u22640.05) associated with eBMD.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 2156 protein-coding genes were significantly (Bonferroni-adjusted p value \u22640.05) associated with eBMD (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the TWAS analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "81d12e92-e0a8-45f7-95ad-800cdd74c2c7",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C20",
+      "claim": "1182 colocalizing protein-coding genes were identified with a regional colocalization probability (RCP) of 0.1 or greater.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 1182 colocalizing protein-coding genes with a regional colocalization probability (RCP) of 0.1 or greater (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the colocalization analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "16878aec-96a2-4c61-9ee1-46e4adb719a3",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C21",
+      "claim": "512 protein-coding genes were significant in both the TWAS and eQTL colocalization analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 512 protein-coding genes were significant in both the TWAS and eQTL colocalization analyses (Table 1 and Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding combining TWAS and colocalization results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "b2cf5e5a-d271-4976-bb8a-bb89b7e6aa3d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C22",
+      "claim": "The identified genes included many with well-known roles in the regulation of BMD, such as RUNX2, IGF1, and LRP6.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the identified genes were many with well-known roles in the regulation of BMD, such as RUNX2 (Figure 1B), IGF1, and LRP6, as well as novel genes such as RERE (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the list of prioritized genes and known bone biology literature.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "671b1083-32ee-4ddb-bba4-302d2e97e859",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C23",
+      "claim": "The identified genes had significantly colocalizing eQTL in all 49 GTEx tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the identified genes had significantly colocalizing eQTL in all 49 GTEx tissues, with eQTL from cultured fibroblasts (132 genes), subcutaneous adipose tissue (117 genes), tibial artery (115 genes), and tibial nerve (114 genes) exhibiting the highest number of significant colocalizations (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the colocalization analysis results across GTEx tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "301ed6d6-2afd-4c6d-bc81-25c257acb5b2",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C24",
+      "claim": "Of the 1097 autosomal loci, almost half (542; 49%) contained at least one of the 512 prioritized genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 1097 loci, almost half (542; 49%) of the loci contained at least one of the 512 prioritized genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mapping prioritized genes to GWAS loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "494dcde9-f358-4044-80b6-7efedccfa36a",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C25",
+      "claim": "Most loci overlapped one gene (mean = 1.7, median = 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Most loci overlapped one gene (mean = 1.7, median = 1); however, 184 loci overlapped multiple genes, including a locus on Chromosome (Chr.) 20 (lead SNP rs6142137) which contained 9 prioritized genes (Figure 1D and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the distribution of prioritized genes across GWAS loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "d86c4a6f-26f2-4634-8581-b73bf32cbe6d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C26",
+      "claim": "Of the 512 prioritized genes, 66 (12.9%) were known bone genes, representing a significant enrichment (odds ratio [OR] = 1.72; p = 1.0 \u00d7 10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 512 genes identified above, 66 (12.9%) were known bone genes, representing a significant enrichment (odds ratio [OR] = 1.72; p = 1.0 \u00d7 10\u22124) over what would be expected by chance (Supplementary file 1f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on enrichment analysis comparing prioritized genes to a curated list of known bone genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "bdb5fea4-fab2-4cf8-b30e-49e3e9e3e86c",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C27",
+      "claim": "Gene Ontology enrichment analysis of the 512 prioritized genes showed enrichments in several bone-relevant ontologies, such as 'ossification' (p = 3.1 \u00d7 10\u22126), 'skeletal system development' (p = 2 \u00d7 10\u22125), and 'regulation of osteoblast differentiation' (p = 3.9 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed enrichments in several bone-relevant ontologies, such as 'ossification' (p = 3.1 \u00d7 10\u22126), 'skeletal system development' (p = 2 \u00d7 10\u22125), and 'regulation of osteoblast differentiation' (p = 3.9 \u00d7 10\u22125) (Figure 2A and Supplementary file 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Gene Ontology enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "b93e0289-779f-47c7-95fe-aa70a26c5731",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C28",
+      "claim": "Of the 863 genes that were the closest genes to eBMD GWAS associations, 139 were members of the 'known bone gene list', representing a more significant enrichment (OR = 2.56, p = 6.37 \u00d7 10\u221219) than the prioritization approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 863 genes that were the closest genes to eBMD GWAS associations (Supplementary file 1h), 139 were members of the 'known bone gene list', representing a more significant enrichment of 'known bone genes' than our prioritization approach (OR = 2.56, p = 6.37 \u00d7 10\u221219).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of enrichment between the prioritization approach and the closest gene approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "8aaf0a81-c02e-4d25-9238-6b6852635cf4",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C29",
+      "claim": "Of the 512 prioritized genes, 206 (40%) were also the closest genes to eBMD GWAS associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Of our 512 prioritized genes, 206 (40%) were also the closest genes to eBMD GWAS associations, with 27 of the remaining 306 prioritized genes (8.8%) being members of the 'known bone gene' list.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on overlap analysis between prioritized genes and closest genes to GWAS associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "dd23b967-20ea-43b5-ab7f-6df0c192fc3b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C30",
+      "claim": "Of the 512 prioritized genes, 142 (27.7%) had been tested by the IMPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 512, 142 (27.7%) had been tested by the IMPC and 64 (12.5% of the 512 prioritized genes, 45% of the 142 IMPC-tested genes) had a nominally significant (p \u2264 0.05) alteration of whole-body BMD in knockout/knockdown mice, compared to controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on querying the IMPC database for prioritized genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "37f7a015-f250-4f34-9e19-647b4fa28e45",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C31",
+      "claim": "64 of the 512 prioritized genes (12.5%) had a nominally significant (p \u2264 0.05) alteration of whole-body BMD in knockout/knockdown mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 512, 142 (27.7%) had been tested by the IMPC and 64 (12.5% of the 512 prioritized genes, 45% of the 142 IMPC-tested genes) had a nominally significant (p \u2264 0.05) alteration of whole-body BMD in knockout/knockdown mice, compared to controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on IMPC data for prioritized genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "e56fc90d-0a88-490e-8721-5904d3e1ecf6",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C32",
+      "claim": "Of the 64 genes with significant BMD alterations in IMPC, 49 (76.5%) were not members of the 'known bone gene' list.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 64, 49 (76.5%) were not members of the 'known bone gene' list (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of IMPC-validated genes with the known bone gene list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "d49f9371-8300-4f2b-8a12-47f38eaafbfa",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C33",
+      "claim": "GPATCH1 is part of the catalytic step 2 spliceosome and may be involved in mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "GPATCH1 is part of the catalytic step 2 spliceosome, and may be involved in mRNA splicing, and is predicted to enable RNA-binding activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known molecular function of GPATCH1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "a05ff088-5309-4313-b718-925b9002dff4",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C34",
+      "claim": "GPATCH1 is expressed in bone cells in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also expressed in bone cells in mouse (Alliance of genome resources, 2022; Lattin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Alliance of genome resources, 2022; Lattin et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "f89cb53c-7d74-4a14-8964-a3b8eed00f4d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C35",
+      "claim": "GPATCH1 had the strongest TWAS association (p = 3.44 \u00d7 10\u2212226) in its genomic region.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all the genes in the region, GPATCH1 had the strongest TWAS association (p = 3.44 \u00d7 10\u2212226) (Figure 2B)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on TWAS results for the GPATCH1 locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "22295073-2ae2-44d1-9a3b-f9572854bae4",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C36",
+      "claim": "GPATCH1 had the strongest eQTL colocalization (whole blood, RCP = 0.36) in its genomic region.",
+      "claim_type": "EXPLICIT",
+      "source": "and the strongest eQTL colocalization (whole blood, RCP = 0.36) (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on colocalization results for the GPATCH1 locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "7553b1b1-188a-4474-b734-ed93c6744d5b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C37",
+      "claim": "The eQTL and BMD GWAS allele effects for the top SNPs in the GPATCH1 locus were in the same direction, suggesting that decreasing the expression of GPATCH1 would lead to decreased BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "The eQTL and BMD GWAS allele effects for the top SNPs were in the same direction, suggesting that decreasing the expression of GPATCH1 would lead to decreased BMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the direction of effects in eQTL and GWAS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "49ca2740-9f22-4238-aa2a-ee1d96a7bc61",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C38",
+      "claim": "Female mice heterozygous for a Gpatch1 null allele had decreased BMD (p = 2.17 \u00d7 10\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "BMD data from the IMPC showed that female mice heterozygous for a Gpatch1 null allele had decreased BMD (p = 2.17 \u00d7 10\u22128) (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on IMPC experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "9825ab45-63bb-480a-9077-840e5c506fed",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C39",
+      "claim": "PPP6R3 is a regulatory subunit of protein phosphatase 6.",
+      "claim_type": "EXPLICIT",
+      "source": "PPP6R3, a regulatory subunit of protein phosphatase 6, which shows ubiquitous expression across tissues in humans (Cristiano, 2020), is located on human Chr. 11 within 1 Mbp of seven independent eBMD GWAS SNPs identified by Morris et al., 2019 (subsequently referred to as 'eBMD lead SNPs') (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known molecular function of PPP6R3, supported by citation to Cristiano, 2020.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "a69e39e7-b9b2-466d-87a4-6fdfb8ca8693",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C40",
+      "claim": "PPP6R3 shows ubiquitous expression across tissues in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "PPP6R3, a regulatory subunit of protein phosphatase 6, which shows ubiquitous expression across tissues in humans (Cristiano, 2020), is located on human Chr. 11 within 1 Mbp of seven independent eBMD GWAS SNPs identified by Morris et al., 2019 (subsequently referred to as 'eBMD lead SNPs') (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cristiano, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "93f11d7d-2c82-46dd-84d2-8541a3c659d1",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C41",
+      "claim": "PPP6R3 is located on human Chr. 11 within 1 Mbp of seven independent eBMD GWAS SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "PPP6R3, a regulatory subunit of protein phosphatase 6, which shows ubiquitous expression across tissues in humans (Cristiano, 2020), is located on human Chr. 11 within 1 Mbp of seven independent eBMD GWAS SNPs identified by Morris et al., 2019 (subsequently referred to as 'eBMD lead SNPs') (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genomic location data and GWAS results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "bea1e7a5-1040-4898-89cf-9639e213ea4d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C42",
+      "claim": "Of all the protein-coding genes (N = 29) in the ~1.8 Mbp region surrounding PPP6R3, its expression was the most significantly associated with eBMD by TWAS (Bonferroni = 5.7 \u00d7 10\u221293).",
+      "claim_type": "EXPLICIT",
+      "source": "Of all the protein-coding genes (N = 29) in the ~1.8 Mbp region surrounding PPP6R3, its expression was the most significantly associated with eBMD by TWAS (Bonferroni = 5.7 \u00d7 10\u221293) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on TWAS results for the PPP6R3 locus shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "1a1629ed-38d8-42c1-bb40-024a28fde84f",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C43",
+      "claim": "PPP6R3 was the only gene in the region with eQTL that colocalized with at least one of the eBMD associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PPP6R3 was the only gene in the region with eQTL (in four GTEx tissues, thyroid, ovary, brain_putamen_basal_ganglia, and stomach with RCPs = 0.53, 0.50, 0.28, and 0.14, respectively) that colocalized with at least one of the eBMD associations (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on colocalization analysis results for the PPP6R3 locus shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "c01f02ff-f0bd-4892-8f5e-52194901bae9",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C44",
+      "claim": "The most significant PPP6R3 eQTL SNP in thyroid tissue was rs10047483 (Chr. 11, 68.464237 Mbp) (PPP6R3 eQTL p = 6.99 \u00d7 10\u22128, eBMD GWAS p = 1.2 \u00d7 10\u2212100).",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant PPP6R3 eQTL SNP in thyroid tissue (the tissue with the highest RCP) was rs10047483 (Chr. 11, 68.464237 Mbp) (PPP6R3 eQTL p = 6.99 \u00d7 10\u22128, eBMD GWAS p = 1.2 \u00d7 10\u2212100) located in intron 1 of PPP6R3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on eQTL and GWAS data for the PPP6R3 locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "231949a3-b7a1-4284-a1ee-990c22c4a25d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C45",
+      "claim": "The most significant eBMD lead SNP in the PPP6R3 locus was rs11228240 (Chr. 11, 68.450822 Mbp, eBMD GWAS p = 6.6 \u00d7 10\u2212101, PPP6R3 eQTL p = 3.7 \u00d7 10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant eBMD lead SNP in the locus was rs11228240 (Chr. 11, 68.450822 Mbp, eBMD GWAS p = 6.6 \u00d7 10\u2212101, PPP6R3 eQTL p = 3.7 \u00d7 10\u22126), located upstream of PPP6R3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on GWAS and eQTL data for the PPP6R3 locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "d3f5b03f-59cd-49c6-84e6-4112d73c7f27",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C46",
+      "claim": "rs10047483 and rs11228240 are in high LD (r2 = 0.941).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the colocalization analysis, these two variants are in high LD (r2 = 0.941) and rs10047483 does not exhibit strong LD (r2 < 0.104) with any of the other six eBMD lead SNPs in the locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LD calculations for SNPs in the PPP6R3 locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "ae64758c-d2df-436b-b95b-10e9ad0031c8",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C47",
+      "claim": "The eQTL and BMD GWAS allele effects for rs10047483 were opposing, suggesting that a decrease in the expression of PPP6R3 would lead to an increase in BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "The eQTL and BMD GWAS allele effects for rs10047483 were opposing, suggesting that a decrease in the expression of PPP6R3 would lead to an increase in BMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the direction of effects in eQTL and GWAS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "36db475e-1433-433c-bd1a-2d9b04754b7a",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C48",
+      "claim": "A recent fracture GWAS identified 14 significant associations, one of which was located in the PPP6R3 region (rs35989399, Chr. 11, 68.622433 Mbp).",
+      "claim_type": "EXPLICIT",
+      "source": "A recent fracture GWAS identified 14 significant associations, one of which was located in the PPP6R3 region (rs35989399, Chr. 11, 68.622433 Mbp) (Morris et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Morris et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "18286436-e788-4e07-9a01-73c405eb4e5a",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C49",
+      "claim": "PPP6R3 expression when analyzed by TWAS was significant for fracture (TWAS Bonferroni-pval = 6.0 \u00d7 10\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PPP6R3 expression when analyzed by TWAS was significant for fracture (TWAS Bonferroni-pval = 6.0 \u00d7 10\u22123) and the same PPP6R3 eQTL colocalized with the fracture association (RCP = 0.49 in ovary, RCP = 0.36 in thyroid) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on TWAS analysis of fracture GWAS data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "182a1bee-a295-4f74-a46f-98e948e2fc78",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C50",
+      "claim": "The same PPP6R3 eQTL colocalized with the fracture association (RCP = 0.49 in ovary, RCP = 0.36 in thyroid).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PPP6R3 expression when analyzed by TWAS was significant for fracture (TWAS Bonferroni-pval = 6.0 \u00d7 10\u22123) and the same PPP6R3 eQTL colocalized with the fracture association (RCP = 0.49 in ovary, RCP = 0.36 in thyroid) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on colocalization analysis of fracture GWAS data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "23533153-d3d5-4753-a56f-e957178919eb",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C51",
+      "claim": "The absence of PPP6R3 protein in MUT mice was confirmed through western blotting.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of PPP6R3 protein in MUT mice was confirmed through western blotting (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "0ac712ff-0ad9-4035-a3b5-32f420135373",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C52",
+      "claim": "PPP6R3 was differentially expressed between the mutant and wild-type mice (padj = 3.67 \u00d7 10\u2212104, log2 fold change = \u22121.63).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we sequenced RNA extracted from the L5 vertebrae of wild-type and mutant mice, and found that PPP6R3 was differentially expressed between the mutant and wild-type mice (padj = 3.67 \u00d7 10\u2212104, log2 fold change = \u22121.63).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "fac20146-91df-4e66-9aaa-1a83719b8dd0",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C53",
+      "claim": "No changes in gene expression were observed for any other gene in the locus, including Lrp5 (padj = 0.99, log2 fold change = \u22120.068).",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe changes in gene expression for any other gene in the locus, including Lrp5 (padj = 0.99, log2 fold change = \u22120.068), a well-known regulator of bone mass just upstream of Ppp6r3 (Supplementary file 1j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "1c2e4beb-79a4-40df-a0ac-5a1aa82109f7",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C54",
+      "claim": "In a GWAS by Estrada et al., 2012, a total of 56 loci were identified for femoral neck (FNBMD) and lumbar spine (LSBMD) BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "In a GWAS by Estrada et al., 2012, a total of 56 loci were identified for femoral neck (FNBMD) and lumbar spine (LSBMD) BMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Estrada et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "917bcf3e-8bc8-47a2-9521-d897ab391858",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C55",
+      "claim": "One of the 56 loci in the Estrada et al., 2012 GWAS corresponded to the same SNPs associated with the PPP6R3 eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the 56 loci corresponded to the same SNPs associated with the PPP6R3 eQTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of GWAS loci with PPP6R3 eQTL SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "0a1413d0-b39e-4412-9083-1256402f55a8",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C56",
+      "claim": "The PPP6R3 locus was significant for LSBMD but did not reach genome-wide significance for FNBMD.",
+      "claim_type": "EXPLICIT",
+      "source": "The locus was significant for LSBMD; however, it did not reach genome-wide significance for FNBMD (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GWAS data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "1db3d7dc-00b3-403d-943f-b1b616eb3be5",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C57",
+      "claim": "No change in body weight was observed at 9 weeks in Ppp6r3 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we observed no change in body weight at 9 weeks that might impact bone phenotypes (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on body weight measurements shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "a4c94080-989e-400c-a3b2-92f95cd90f70",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C58",
+      "claim": "A significant effect of Ppp6r3 genotype on aBMD at the lumbar spine was observed (WT vs. MUT p = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "As the above analysis predicted, we observed a significant effect of Ppp6r3 genotype on aBMD at the lumbar spine (WT vs. MUT p = 0.01, Figure 4\u2014figure supplement 2C), but not the femur (WT vs. MUT p = 0.26, Figure 4\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on DXA measurements shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "9ea3408c-5831-4233-a9ae-ffe30df269f5",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C59",
+      "claim": "No significant effect of Ppp6r3 genotype on aBMD at the femur was observed (WT vs. MUT p = 0.26).",
+      "claim_type": "EXPLICIT",
+      "source": "As the above analysis predicted, we observed a significant effect of Ppp6r3 genotype on aBMD at the lumbar spine (WT vs. MUT p = 0.01, Figure 4\u2014figure supplement 2C), but not the femur (WT vs. MUT p = 0.26, Figure 4\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on DXA measurements shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "88e3d265-6e08-4c08-8c72-c6dffa72c69f",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C60",
+      "claim": "Significantly decreased femoral width was observed in Ppp6r3 mutant mice (anterior\u2013posterior [AP] femoral width, WT vs. MUT p = 0.02; medial\u2013lateral [ML] femoral width, WT vs. MUT p = 2.2 \u00d7 10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noted, however, that we observed significantly decreased femoral width, but not length, in Ppp6r3 mutant mice (anterior\u2013posterior [AP] femoral width, WT vs. MUT p = 0.02; medial\u2013lateral [ML] femoral width, WT vs. MUT p = 2.2 \u00d7 10\u22126, Figure 4\u2014figure supplement 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on caliper measurements shown in Figure 4\u2014figure supplement 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "df9afe61-0f1a-4bdd-a464-6e1761d00d57",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C61",
+      "claim": "Significant decreases in trabecular bone volume fraction (BV/TV, WT vs. MUT p = 0.015) of the lumbar spine were observed as a function of Ppp6r3 genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant (p \u2264 0.05) decreases in trabecular bone volume fraction (BV/TV, WT vs. MUT p = 0.015, Figure 4\u2014figure supplement 2E, F) and volumetric BMD (vBMD, WT vs. MUT p = 0.015, Figure 4\u2014figure supplement 2G) of the lumbar spine as a function of Ppp6r3 genotype",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on \u03bcCT measurements shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "3a77e6e2-f84a-499f-8332-1626bca049a5",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C62",
+      "claim": "Significant decreases in volumetric BMD (vBMD, WT vs. MUT p = 0.015) of the lumbar spine were observed as a function of Ppp6r3 genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant (p \u2264 0.05) decreases in trabecular bone volume fraction (BV/TV, WT vs. MUT p = 0.015, Figure 4\u2014figure supplement 2E, F) and volumetric BMD (vBMD, WT vs. MUT p = 0.015, Figure 4\u2014figure supplement 2G) of the lumbar spine as a function of Ppp6r3 genotype",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on \u03bcCT measurements shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "48a0775c-014e-4b3b-8565-1cd50246d4f5",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C63",
+      "claim": "No significant changes in tissue mineral density (TMD), trabecular separation (TbSp), trabecular thickness (TbTh), or trabecular number (TbN) of the lumbar spine were found.",
+      "claim_type": "EXPLICIT",
+      "source": "but found no significant changes in tissue mineral density (TMD, Figure 4\u2014figure supplement 2E), trabecular separation (TbSp), trabecular thickness (TbTh), or trabecular number (TbN) (Figure 4\u2014figure supplement 2F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on \u03bcCT measurements shown in Figure 4\u2014figure supplement 2E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "94d3ed2f-5de8-4e53-9118-8fd26fba2d7f",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C64",
+      "claim": "Significant decreases in total area (Tot.Ar, WT vs. MUT p = 0.00724) in the femoral midshaft were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the femoral midshaft, we observed significant decreases in total area (Tot.Ar, WT vs. MUT p = 0.00724, Figure 4\u2014figure supplement 2H) and medullary area (Ma.Ar, WT vs. MUT p = 0.00903, Figure 4\u2014figure supplement 2I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on \u03bcCT measurements shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "197ef414-e05d-44bf-97d0-6b6aa39b0e01",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C65",
+      "claim": "Significant decreases in medullary area (Ma.Ar, WT vs. MUT p = 0.00903) in the femoral midshaft were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the femoral midshaft, we observed significant decreases in total area (Tot.Ar, WT vs. MUT p = 0.00724, Figure 4\u2014figure supplement 2H) and medullary area (Ma.Ar, WT vs. MUT p = 0.00903, Figure 4\u2014figure supplement 2I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on \u03bcCT measurements shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "989fc158-bd22-4de3-99e6-10c3faf9e88d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C66",
+      "claim": "No changes in trabecular bone parameters in the distal femur were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any changes in trabecular bone parameters in the distal femur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on \u03bcCT measurements of the distal femur.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "e2379668-1df1-498c-a5fe-7c4e0622afcc",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C67",
+      "claim": "A significant increase in P1NP levels in mutant mice was observed (p = 0.00422).",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured Procollagen 1 Intact N-Terminal Propeptide P1NP levels in plasma, and observed a significant increase in P1NP levels in mutant mice (p = 0.00422), suggesting that the observed decrease in bone mass is due to increased bone turnover (Figure 4\u2014figure supplement 2I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on P1NP measurements shown in Figure 4\u2014figure supplement 2I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "860bba04-3c16-42f4-8edb-f1b5bcabc325",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C68",
+      "claim": "The observed decrease in bone mass is due to increased bone turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured Procollagen 1 Intact N-Terminal Propeptide P1NP levels in plasma, and observed a significant increase in P1NP levels in mutant mice (p = 0.00422), suggesting that the observed decrease in bone mass is due to increased bone turnover (Figure 4\u2014figure supplement 2I\u2013K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on P1NP measurements, which is a marker of bone formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "44f69ede-ae37-4bbe-8884-75896312ad66",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C69",
+      "claim": "No significant effects of Ppp6r3 genotype on bone matrix composition were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to assess the effects of Ppp6r3 genotype on bone matrix composition, we performed periosteal Raman spectroscopy on both the lumbar spines and femurs. We did not observe any significant (p \u2264 0.05) effects of Ppp6r3 genotype on bone matrix composition (Figure 4\u2014figure supplements 3\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Raman spectroscopy measurements shown in Figure 4\u2014figure supplements 3\u20136.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "656ace4b-e286-458d-8a54-d5abd680ac26",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C70",
+      "claim": "The lack of differences in bone matrix composition might be due to the fact that relatively young mice were used for these assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of differences might be due to the fact that we used relatively young mice for these assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation by the authors about why no differences were observed.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "ac837310-0dcd-423f-a2e0-300166fecfc1",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C71",
+      "claim": "The direction of eQTL effects can differ between different cells and tissues within humans.",
+      "claim_type": "EXPLICIT",
+      "source": "First, our hypothesis was based on expression data in non-bone tissues and cell types. Recent studies have shown that the direction of eQTL effects can differ between different cells and tissues within humans (Peters et al., 2016; Mizuno and Okada, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Peters et al., 2016; Mizuno and Okada, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "44c5c1a8-e79f-4699-9893-2d4ad541ba57",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C72",
+      "claim": "Many eQTL are shared among tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "While studies have shown that many eQTL are shared among tissues, the lack of eQTL data in bone and bone cells means that bone-specific eQTL were missed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known properties of eQTL from GTEx and other studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "6617e9de-5201-4baa-930f-945d5f41fd4d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C73",
+      "claim": "A study by Mullin et al. performed eQTL colocalization and summary-based Mendelian randomization (SMR) using GWAS and expression data from osteoclast-like cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a study conducted by Mullin et al. performed eQTL colocalization and summary-based Mendelian randomization (SMR) by utilizing GWAS and expression data from osteoclast-like cells, and prioritized several eBMD genes (Mullin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mullin et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "74f64c91-0edd-4e69-9525-fbe71b0aadc5",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C74",
+      "claim": "Thirty-eight percent of the colocalizing eQTL identified by Mullin et al. overlapped with the 512 prioritized genes in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-eight percent of the colocalizing eQTL and 19% of the SMR genes that they identified overlapped with our 512 prioritized genes, suggesting that we have missed many potential effector genes with eQTL specific to bone cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of results with Mullin et al., 2020.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "3c7190af-805e-49e5-9ca8-9fddd59b30ad",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C75",
+      "claim": "Nineteen percent of the SMR genes identified by Mullin et al. overlapped with the 512 prioritized genes in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-eight percent of the colocalizing eQTL and 19% of the SMR genes that they identified overlapped with our 512 prioritized genes, suggesting that we have missed many potential effector genes with eQTL specific to bone cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of results with Mullin et al., 2020.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "e8db04eb-f484-403d-9343-3c1367e5b89b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C76",
+      "claim": "The use of multiple non-bone tissues may have inflated the number of false positives based on coincidence of strong TWAS and eQTL colocalization signals that have no biological impact on bone.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the use of multiple non-bone tissues may have inflated the number of false positives based on coincidence of strong TWAS and eQTL colocalization signals that have no biological impact on bone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation by the authors about a potential limitation of their approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "2f55e88f-eb37-4ff6-9f34-4012314dca7c",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C77",
+      "claim": "The lack of bone transcriptomic data may explain the observed disparity between the hypothesized and observed direction-of-effect for PPP6R3.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the lack of bone transcriptomic data may also explain the observed disparity between our hypothesized and observed direction-of-effect for PPP6R3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation by the authors about why their hypothesis was not supported.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "fb879dc7-5276-483d-b523-d3e87157aa26",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C78",
+      "claim": "Due to the reliance of this approach on eQTL data, genes that affect BMD via non-expression-related mechanisms were not captured.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that due to the reliance of this approach on eQTL data, genes that affect BMD via non-expression-related mechanisms were not captured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of eQTL-based approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "919c50ff-41c3-4ae7-80e9-e23b350ea60b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C79",
+      "claim": "PPP6R3 has been implicated in several cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "PPP6R3 is a regulatory subunit of protein phosphatase 6 and has been implicated in several cancers (Cristiano, 2020; Stefansson and Brautigan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cristiano, 2020; Stefansson and Brautigan, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "e72bcf8f-7194-405d-a97b-5202b6f18286",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C80",
+      "claim": "PPP6R3 may have an important role in maintaining immune self-tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, the PPP6R3 protein shows ubiquitous expression across tissues, and may have an important role in maintaining immune self-tolerance (Cristiano, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cristiano, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "6648ee9d-e03b-467f-9663-f862e3ddea95",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C81",
+      "claim": "Protein phosphatase 6 has been shown to oppose activation of the nuclear factor kappa-light-chain enhancer of activated B cells (NF-\u03baB) pathway in lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, protein phosphatase 6 has been shown to oppose activation of the nuclear factor kappa-light-chain enhancer of activated B cells (NF-\u03baB) pathway in lymphocytes (Ziembik et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ziembik et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "c54a68f5-0d53-432e-a1c0-6ba17692337e",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C82",
+      "claim": "The NF-\u03baB signaling pathway is highly involved in osteoclastogenesis and bone resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the NF-\u03baB signaling pathway is highly involved in osteoclastogenesis and bone resorption, it is possible that PPP6R3 may be involved in the regulation of this pathway in osteoclasts (Abu-Amer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Abu-Amer, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "e6552493-7637-4ade-8dc1-1f27c5392226",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C83",
+      "claim": "It is possible that PPP6R3 may be involved in the regulation of the NF-\u03baB pathway in osteoclasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the NF-\u03baB signaling pathway is highly involved in osteoclastogenesis and bone resorption, it is possible that PPP6R3 may be involved in the regulation of this pathway in osteoclasts (Abu-Amer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation by the authors about a potential mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "440b9311-e1fa-457f-b19f-dd22f02e1b9c",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C84",
+      "claim": "LRP5 is a WNT signaling co-receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, just upstream of PPP6R3 is LRP5, a WNT signaling co-receptor (Mao et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mao et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "8cc88743-c35d-4c65-aced-146679e53a9d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C85",
+      "claim": "LRP5 is a well-known regulator of BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "LRP5 is a well-known regulator of BMD and gain and loss of function mutations lead to high bone mass syndrome and osteoporosis pseudoglioma, respectively (Mizuguchi et al., 2004; Boyden et al., 2002; Marques-Pinheiro et al., 2010; Gong et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mizuguchi et al., 2004; Boyden et al., 2002; Marques-Pinheiro et al., 2010; Gong et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "ffcf7b34-d983-487f-83ee-7b0e99611e8c",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C86",
+      "claim": "Gain and loss of function mutations in LRP5 lead to high bone mass syndrome and osteoporosis pseudoglioma, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "LRP5 is a well-known regulator of BMD and gain and loss of function mutations lead to high bone mass syndrome and osteoporosis pseudoglioma, respectively (Mizuguchi et al., 2004; Boyden et al., 2002; Marques-Pinheiro et al., 2010; Gong et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mizuguchi et al., 2004; Boyden et al., 2002; Marques-Pinheiro et al., 2010; Gong et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "89eaa5ca-f20c-43fa-9995-e521b4b4f8a9",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C87",
+      "claim": "LRP5 expression was not significantly associated with eBMD by TWAS (Bonferroni p = 1).",
+      "claim_type": "EXPLICIT",
+      "source": "LRP5 expression was not significantly associated with eBMD by TWAS (Bonferroni p = 1), nor did it have a colocalizing eQTL in GTEx tissues (most significant RCP = 1.6 \u00d7 10\u22122 in pancreas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on TWAS results for LRP5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "fb1377aa-423e-4c59-9edc-cd68ad3d17a4",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C88",
+      "claim": "LRP5 did not have a colocalizing eQTL in GTEx tissues (most significant RCP = 1.6 \u00d7 10\u22122 in pancreas).",
+      "claim_type": "EXPLICIT",
+      "source": "LRP5 expression was not significantly associated with eBMD by TWAS (Bonferroni p = 1), nor did it have a colocalizing eQTL in GTEx tissues (most significant RCP = 1.6 \u00d7 10\u22122 in pancreas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on colocalization results for LRP5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "3e9200c6-fcca-468e-9d9e-817c08a2515b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C89",
+      "claim": "rs4988321 is a missense mutation in LRP5 (Val667Met) that has been associated with BMD in multiple studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, another eBMD lead SNP in the region, rs4988321, is a missense mutation in LRP5 (Val667Met) that has been associated with BMD in multiple studies (van Meurs et al., 2008; Brixen et al., 2007; Giroux et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to van Meurs et al., 2008; Brixen et al., 2007; Giroux et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "c44f6d56-d815-48b6-b1c2-33fdf319ad88",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C90",
+      "claim": "The data support a model of allelic heterogeneity involving multiple genes (at least LRP5 and PPP6R3) at the PPP6R3 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe these data support a model of allelic heterogeneity involving multiple genes (at least LRP5 and PPP6R3) at this locus, similar to other BMD loci identified by GWAS such as the 'Wnt16' locus (Chesi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors based on the complexity of the locus, supported by citation to Chesi et al., 2019 for a similar example.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "61e26bd6-5f72-44bf-a98d-8dc5c854e372",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C91",
+      "claim": "Ppp6r3 deletion had a significant effect on lumbar spine BMD, but not femoral BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observation that the PPP6R3 eQTL SNPs were significantly associated with lumbar spine, but not femoral neck BMD, we observed that Ppp6r3 deletion had a significant effect on lumbar spine BMD, but not femoral BMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DXA measurements in Ppp6r3 knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "0bcf84d6-3285-431b-b90f-58c40a92829b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C92",
+      "claim": "The observed decrease in bone volume fraction and BMD may be explained by the cumulative but more subtle effects of Ppp6r3 deletion on trabecular thickness and number.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not observe significant effects of Ppp6r3 deletion on trabecular thickness or number, the direction of effects for those phenotypes suggests that the observed decrease in bone volume fraction and BMD may be explained by the cumulative but more subtle effects of Ppp6r3 deletion on trabecular thickness and number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors based on the direction of non-significant effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "1b6302f5-c3eb-45a5-992c-a7d977440ba5",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C93",
+      "claim": "The hypothesis regarding the directions of effect of Ppp6r3 expression on BMD based on the eQTL and eBMD/lumbar spine BMD GWAS were opposite to what was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our hypothesis regarding the directions of effect of Ppp6r3 expression on BMD based on the eQTL and eBMD/lumbar spine BMD GWAS were opposite to what we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the discrepancy between predicted and observed effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "8d0f3a2f-e4f6-4670-858e-41d33391d3f3",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C94",
+      "claim": "The combined TWAS/colocalization approach can prioritize putatively causal genes underlying GWAS associations.",
+      "claim_type": "EXPLICIT",
+      "source": "As we and others have shown, the use of both TWAS and eQTL colocalization can prioritize putatively causal genes underlying GWAS associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results of the study and comparison with other studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "8f570e84-0e7e-4d3c-904d-5015220b60a0",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C95",
+      "claim": "The utility of the TWAS/colocalization approach is demonstrated even in the absence of eQTL data from the most phenotype-relevant tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown the utility of this approach even in the absence of eQTL data from the most phenotype-relevant tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results of the study using non-bone GTEx tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "34b67c65-0826-45e0-91df-619937c97a74",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C96",
+      "claim": "The study provides an updated resource of putatively causal BMD genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we provide an updated resource of putatively causal BMD genes and demonstrate that PPP6R3 is a putatively causal BMD GWAS gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "4b068c92-43d2-47fe-b7ec-d12b3fbb16df",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C97",
+      "claim": "PPP6R3 is a putatively causal BMD GWAS gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we provide an updated resource of putatively causal BMD genes and demonstrate that PPP6R3 is a putatively causal BMD GWAS gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the combined TWAS/colocalization analysis and functional validation in mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "cab29c1b-0a93-4fad-bc2b-10c6dc41a05e",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C98",
+      "claim": "The data increase our understanding of the genetics of BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "These data increase our understanding of the genetics of BMD and provide further evidence for the utility of combined TWAS/colocalization approaches in untangling the genetics of complex traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the impact of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "16f3bbb9-eeb6-4346-b91e-da09d9926962",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C99",
+      "claim": "The data provide further evidence for the utility of combined TWAS/colocalization approaches in untangling the genetics of complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "These data increase our understanding of the genetics of BMD and provide further evidence for the utility of combined TWAS/colocalization approaches in untangling the genetics of complex traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the successful application of the approach in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "b630b346-a811-4149-a3d2-12d9be297bb6",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C100",
+      "claim": "A total of 76 protein-coding genes were identified by the PhenomeXcan project for BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Pividori et al., 2020 recently combined TWAS and eQTL colocalization to GTEx and GWAS data on 4091 traits, including BMD, from the UK Biobank data. A total of 76 protein-coding genes were identified and of the 76, we identified 55 (72.4%) of the same genes in our implementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pividori et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "825574a1-830e-47c8-b0f7-98a7b4f7f32a",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C101",
+      "claim": "Of the 76 genes identified by PhenomeXcan, 55 (72.4%) were also identified in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 76 protein-coding genes were identified and of the 76, we identified 55 (72.4%) of the same genes in our implementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of results with Pividori et al., 2020.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "b19f0c52-0864-44a0-b3c0-e9c061c73177",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "claim_id": "C102",
+      "claim": "PPP6R3 was identified in the PhenomeXcan project.",
+      "claim_type": "EXPLICIT",
+      "source": "One of many novel genes identified in our study was PPP6R3, which was also identified in the PhenomeXcan project (Pividori et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pividori et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2bf447b6-3365-43e8-b065-726ab2c189b5",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Over 1100 independent GWAS associations for BMD have been identified to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C10 are consistent statements about the number of BMD GWAS associations, both supported by citations to Morris et al., 2019 and other studies. This represents established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "cd309dce-7bd0-476b-9478-2cf55e30ee4b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Despite the success of GWAS, identifying causal genes underlying BMD associations has been challenging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C11 consistently state the challenge of identifying causal genes from GWAS, supported by citations to relevant literature. This establishes the motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "523f5d5d-cde4-42c5-9d0e-fbca09cbf33c",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study identified 512 protein-coding genes that were significant in both TWAS (2156 total significant genes) and eQTL colocalization (1182 total colocalizing genes) analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19, C20, and C21 present the primary computational findings with specific numbers and statistical thresholds (Bonferroni p\u22640.05, RCP\u22650.1). The methodology is described and results are presented in supplementary files, providing adequate support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "9300f668-c1f9-4b58-99f1-413a438ccc44",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The 512 prioritized genes were enriched for known bone genes and bone-relevant biological processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C22, C26, and C27 demonstrate validation of the prioritization approach through enrichment analysis. The enrichment of known bone genes (OR=1.72, p=1.0\u00d710\u207b\u2074) and GO terms like 'ossification' (p=3.1\u00d710\u207b\u2076) provide statistical support. The inclusion of known regulators like RUNX2, IGF1, and LRP6 further validates the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "4be5706b-7b36-4aed-88a1-23d793dda1f2",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The prioritized genes had colocalizing eQTL across all 49 GTEx tissues and mapped to approximately half (49%) of the autosomal GWAS loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C24, and C25 describe the distribution of prioritized genes across tissues and GWAS loci. The data show coverage across all GTEx tissues with specific counts provided, and mapping statistics are clearly stated (542/1097 loci contain at least one prioritized gene).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "4e8ab325-4784-48c4-bb58-7e0ea553ec17",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The closest gene approach showed stronger enrichment for known bone genes (OR=2.56, p=6.37\u00d710\u207b\u00b9\u2079) compared to the TWAS/colocalization approach, with 40% overlap between the two methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C29 provide a comparison between the prioritization approach and the traditional closest gene method. The statistical comparison is clear and the overlap percentage is stated, though this somewhat undermines the superiority of the TWAS/colocalization approach for enrichment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "150fff65-6317-449a-8961-a739d24ffc01",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Of the 512 prioritized genes, 142 had been tested by IMPC, with 64 showing nominally significant BMD alterations in knockout mice, and 76.5% of these were not previously known bone genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C31, and C32 provide validation through independent mouse phenotyping data from IMPC. The percentages and counts are specific, and the finding that most validated genes were novel (76.5% not in known bone gene list) supports the discovery potential of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "5b3d75cd-19d5-43e3-8626-8d3fe00452e8",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GPATCH1 was identified as a prioritized gene with the strongest TWAS association (p=3.44\u00d710\u207b\u00b2\u00b2\u2076) and strongest colocalization (RCP=0.36) in its region, with IMPC data showing decreased BMD in Gpatch1 heterozygous female mice (p=2.17\u00d710\u207b\u2078).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 present GPATCH1 as an example validation case. The computational evidence (TWAS and colocalization) is strong, and independent IMPC data confirm the BMD phenotype. The directional inference (C37) is logical based on eQTL/GWAS concordance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "5e98e025-f57e-4f4a-b133-d1f84a48eb06",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PPP6R3 was selected as the top novel candidate gene, showing the strongest TWAS association (Bonferroni=5.7\u00d710\u207b\u2079\u00b3) in its region and being the only gene with colocalizing eQTL in four GTEx tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C39-C43 establish PPP6R3 as the primary candidate for functional validation. The selection criteria are clearly stated (strongest support, not previously implicated), and the computational evidence is robust with very strong TWAS significance and unique colocalization in the region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "b55b564b-cf6e-49bb-a455-a3d5c91a3a22",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The most significant PPP6R3 eQTL SNP (rs10047483) and the most significant eBMD GWAS SNP (rs11228240) in the locus are in high LD (r\u00b2=0.941), with opposing allele effects suggesting decreased PPP6R3 expression would increase BMD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 provide detailed genetic evidence for the PPP6R3 association. The LD calculation and p-values are specific, and the directional inference (C47) is based on the observed opposing effects between eQTL and GWAS.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "3241adad-a83e-4afa-8f6c-d249ffea2f8f",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PPP6R3 was also significantly associated with fracture risk by TWAS (Bonferroni p=6.0\u00d710\u207b\u00b3), with the same eQTL colocalizing with the fracture GWAS association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 extend the PPP6R3 findings to fracture risk, a related phenotype. The TWAS significance and colocalization data are provided, strengthening the case for PPP6R3 as a bone-relevant gene.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "2d9c61e6-4d8c-4e55-98ed-ed27e61586f6",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Western blotting confirmed absence of PPP6R3 protein in mutant mice, and RNA-seq showed differential expression (padj=3.67\u00d710\u207b\u00b9\u2070\u2074, log2FC=-1.63) with no changes in other genes in the locus including Lrp5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 provide molecular validation of the knockout model. Western blot (Figure 4B) confirms protein absence, and RNA-seq provides quantitative expression data. The specificity to PPP6R3 (no changes in Lrp5) is important for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "e9263100-1fa8-4174-855d-d9a3c68fe32b",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Analysis of Estrada et al. 2012 GWAS data showed the PPP6R3 locus was significant for lumbar spine BMD but not femoral neck BMD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 provide site-specific GWAS evidence that informed the experimental design. The differential significance between LSBMD and FNBMD is clearly stated and shown in Figure 4\u2014figure supplement 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "4da44413-0ee3-483d-b998-29defcfc899c",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Ppp6r3 deletion in mice resulted in decreased lumbar spine BMD (WT vs. MUT p=0.01) but not femoral BMD (p=0.26), consistent with human GWAS predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C57-C59, and C91 present the primary phenotypic finding. DXA measurements show site-specific effects matching GWAS predictions. Body weight was controlled (C57), strengthening the interpretation. The consistency between mouse and human data supports causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "5390ae71-1bae-4ada-bbe0-64dae797378d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Ppp6r3 mutant mice showed significantly decreased femoral width (AP: p=0.02; ML: p=2.2\u00d710\u207b\u2076) and decreased total area (p=0.00724) and medullary area (p=0.00903) at the femoral midshaft.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C64, and C65 describe femoral geometry changes. The measurements are specific with clear p-values, and the consistency between caliper and \u03bcCT measurements strengthens the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "84fbf67c-53dd-4513-a373-1f39579b496d",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "\u03bcCT analysis showed significant decreases in trabecular bone volume fraction (BV/TV, p=0.015) and volumetric BMD (vBMD, p=0.015) in the lumbar spine, but no significant changes in TMD, trabecular separation, thickness, or number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 provide detailed microarchitectural analysis. The significant changes in BV/TV and vBMD are clearly stated, while the lack of changes in other parameters is also reported. This suggests subtle cumulative effects rather than dramatic structural changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "5782f198-3dbb-464b-9bcc-7a5c96b068d4",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "No changes in trabecular bone parameters were observed in the distal femur.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 reports negative findings for the distal femur, consistent with the site-specific effects observed in the lumbar spine. This is appropriately reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "d3b4a530-8ece-485e-8cda-a090f6b4d691",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "P1NP levels were significantly increased in mutant mice (p=0.00422), suggesting the decreased bone mass is due to increased bone turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 presents significant P1NP elevation, but C68's interpretation that this indicates increased bone turnover is incomplete. P1NP is a marker of bone formation, not turnover per se. Without bone resorption markers (e.g., CTX), the mechanism remains unclear. Increased P1NP could indicate increased formation as a compensatory response.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "219b4e80-ecd0-4601-a36d-bcaa16b9320e",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "No significant effects of Ppp6r3 genotype on bone matrix composition were observed by Raman spectroscopy, possibly due to the use of relatively young mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 reports negative findings from Raman spectroscopy (Figure 4\u2014figure supplements 3-6). Claim C70 provides speculation about age effects, which is reasonable but unproven. The negative result is appropriately reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "3ac7fec0-eb6c-4c6a-9b9c-c1679e222583",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The observed decrease in bone volume fraction and BMD may be explained by cumulative subtle effects of Ppp6r3 deletion on trabecular thickness and number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C92 is speculative inference based on non-significant trends. While the authors acknowledge the lack of statistical significance, this interpretation is not strongly supported by the data and represents post-hoc rationalization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "ca1d94a2-518a-47c7-b72d-93f8f9452554",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The observed direction of effect in mice (decreased BMD with Ppp6r3 deletion) was opposite to the hypothesis based on eQTL and GWAS data (decreased expression should increase BMD).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93 and C47 acknowledge a discrepancy between prediction and observation. This is honestly reported and discussed in the context of tissue-specific effects and limitations of using non-bone eQTL data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "58d57e3a-b996-492c-88cd-7dc7a6df6a0a",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The study's limitations include lack of bone-specific eQTL data, potential false positives from using multiple non-bone tissues, and tissue-specific directional effects that may explain discrepancies between predictions and observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 provide thoughtful discussion of limitations. The comparison with Mullin et al. (C73-C75) showing only 38% overlap for colocalizing eQTL demonstrates missed bone-specific genes. The speculation about false positives (C76) and directional effects (C77) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "a0485f28-640b-4951-8ba3-e3db4c98a0f2",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Due to reliance on eQTL data, genes affecting BMD through non-expression-related mechanisms were not captured.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 correctly identifies a fundamental limitation of the eQTL-based approach. This is a logical inference about the scope of the methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "34d72ff1-9b02-4228-b2e2-b1f14acfe148",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The PPP6R3 locus shows allelic heterogeneity involving multiple genes including LRP5 (a known BMD regulator with a missense mutation rs4988321) and PPP6R3, despite LRP5 not showing significant TWAS or colocalization signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C90 describe the complexity of the locus. The evidence for LRP5 involvement (known function, missense mutation) is strong despite lack of eQTL signals. The inference of allelic heterogeneity (C90) is reasonable given the multiple independent associations and genes in the region.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "42dd55a1-7653-4419-9296-05b7a8c33b0f",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The study demonstrates that combined TWAS/colocalization approaches can prioritize putatively causal genes even without tissue-specific eQTL data, providing an updated resource of BMD genes and identifying PPP6R3 as a putatively causal BMD gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C99 present the main conclusions. The approach successfully identified genes enriched for bone function and validated in mice (C94-C95). The resource of 512 genes is provided (C96). PPP6R3 validation supports causality despite directional discrepancy (C97). The broader impact claims (C98-C99) are reasonable given the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    },
+    {
+      "id": "71d8aa6b-913c-49aa-bd49-e9f6d9fb7865",
+      "content_id": "097291ed-fc4e-4830-b206-02cd23457e79",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Comparison with the PhenomeXcan project showed 72.4% overlap (55/76 genes) with this study's prioritized genes, including PPP6R3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C102 provide external validation through comparison with independent analysis. The overlap percentage is clearly stated, and differences are explained by sample size and multiple testing thresholds. PPP6R3 identification in both studies strengthens its candidacy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:24:21.351116Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a89f90a2-7c96-4536-b308-60bca2baaca5",
+      "result_id": "2bf447b6-3365-43e8-b065-726ab2c189b5"
+    },
+    {
+      "claim_id": "5e90cc2e-39a7-437c-9f8c-d4cfe009ecdd",
+      "result_id": "2bf447b6-3365-43e8-b065-726ab2c189b5"
+    },
+    {
+      "claim_id": "601ae85d-132e-4f31-9eb2-010ed988cc4d",
+      "result_id": "cd309dce-7bd0-476b-9478-2cf55e30ee4b"
+    },
+    {
+      "claim_id": "a8b27d00-a44f-466b-958a-0364e20b3b44",
+      "result_id": "cd309dce-7bd0-476b-9478-2cf55e30ee4b"
+    },
+    {
+      "claim_id": "73f947e3-f903-448c-a2b9-bd521e50b13c",
+      "result_id": "523f5d5d-cde4-42c5-9d0e-fbca09cbf33c"
+    },
+    {
+      "claim_id": "656ba07c-1f0b-4254-8178-451c3ac2f49e",
+      "result_id": "523f5d5d-cde4-42c5-9d0e-fbca09cbf33c"
+    },
+    {
+      "claim_id": "81d12e92-e0a8-45f7-95ad-800cdd74c2c7",
+      "result_id": "523f5d5d-cde4-42c5-9d0e-fbca09cbf33c"
+    },
+    {
+      "claim_id": "16878aec-96a2-4c61-9ee1-46e4adb719a3",
+      "result_id": "523f5d5d-cde4-42c5-9d0e-fbca09cbf33c"
+    },
+    {
+      "claim_id": "5b21536f-7642-4449-b1d5-74c72d1b5f7b",
+      "result_id": "9300f668-c1f9-4b58-99f1-413a438ccc44"
+    },
+    {
+      "claim_id": "b2cf5e5a-d271-4976-bb8a-bb89b7e6aa3d",
+      "result_id": "9300f668-c1f9-4b58-99f1-413a438ccc44"
+    },
+    {
+      "claim_id": "d86c4a6f-26f2-4634-8581-b73bf32cbe6d",
+      "result_id": "9300f668-c1f9-4b58-99f1-413a438ccc44"
+    },
+    {
+      "claim_id": "bdb5fea4-fab2-4cf8-b30e-49e3e9e3e86c",
+      "result_id": "9300f668-c1f9-4b58-99f1-413a438ccc44"
+    },
+    {
+      "claim_id": "671b1083-32ee-4ddb-bba4-302d2e97e859",
+      "result_id": "4be5706b-7b36-4aed-88a1-23d793dda1f2"
+    },
+    {
+      "claim_id": "301ed6d6-2afd-4c6d-bc81-25c257acb5b2",
+      "result_id": "4be5706b-7b36-4aed-88a1-23d793dda1f2"
+    },
+    {
+      "claim_id": "494dcde9-f358-4044-80b6-7efedccfa36a",
+      "result_id": "4be5706b-7b36-4aed-88a1-23d793dda1f2"
+    },
+    {
+      "claim_id": "b93e0289-779f-47c7-95fe-aa70a26c5731",
+      "result_id": "4e8ab325-4784-48c4-bb58-7e0ea553ec17"
+    },
+    {
+      "claim_id": "8aaf0a81-c02e-4d25-9238-6b6852635cf4",
+      "result_id": "4e8ab325-4784-48c4-bb58-7e0ea553ec17"
+    },
+    {
+      "claim_id": "dd23b967-20ea-43b5-ab7f-6df0c192fc3b",
+      "result_id": "150fff65-6317-449a-8961-a739d24ffc01"
+    },
+    {
+      "claim_id": "37f7a015-f250-4f34-9e19-647b4fa28e45",
+      "result_id": "150fff65-6317-449a-8961-a739d24ffc01"
+    },
+    {
+      "claim_id": "e56fc90d-0a88-490e-8721-5904d3e1ecf6",
+      "result_id": "150fff65-6317-449a-8961-a739d24ffc01"
+    },
+    {
+      "claim_id": "d49f9371-8300-4f2b-8a12-47f38eaafbfa",
+      "result_id": "5b3d75cd-19d5-43e3-8626-8d3fe00452e8"
+    },
+    {
+      "claim_id": "a05ff088-5309-4313-b718-925b9002dff4",
+      "result_id": "5b3d75cd-19d5-43e3-8626-8d3fe00452e8"
+    },
+    {
+      "claim_id": "f89cb53c-7d74-4a14-8964-a3b8eed00f4d",
+      "result_id": "5b3d75cd-19d5-43e3-8626-8d3fe00452e8"
+    },
+    {
+      "claim_id": "22295073-2ae2-44d1-9a3b-f9572854bae4",
+      "result_id": "5b3d75cd-19d5-43e3-8626-8d3fe00452e8"
+    },
+    {
+      "claim_id": "7553b1b1-188a-4474-b734-ed93c6744d5b",
+      "result_id": "5b3d75cd-19d5-43e3-8626-8d3fe00452e8"
+    },
+    {
+      "claim_id": "49ca2740-9f22-4238-aa2a-ee1d96a7bc61",
+      "result_id": "5b3d75cd-19d5-43e3-8626-8d3fe00452e8"
+    },
+    {
+      "claim_id": "bd1435f2-a737-4c28-8666-db1a33c80810",
+      "result_id": "5e98e025-f57e-4f4a-b133-d1f84a48eb06"
+    },
+    {
+      "claim_id": "9825ab45-63bb-480a-9077-840e5c506fed",
+      "result_id": "5e98e025-f57e-4f4a-b133-d1f84a48eb06"
+    },
+    {
+      "claim_id": "a69e39e7-b9b2-466d-87a4-6fdfb8ca8693",
+      "result_id": "5e98e025-f57e-4f4a-b133-d1f84a48eb06"
+    },
+    {
+      "claim_id": "93f11d7d-2c82-46dd-84d2-8541a3c659d1",
+      "result_id": "5e98e025-f57e-4f4a-b133-d1f84a48eb06"
+    },
+    {
+      "claim_id": "bea1e7a5-1040-4898-89cf-9639e213ea4d",
+      "result_id": "5e98e025-f57e-4f4a-b133-d1f84a48eb06"
+    },
+    {
+      "claim_id": "1a1629ed-38d8-42c1-bb40-024a28fde84f",
+      "result_id": "5e98e025-f57e-4f4a-b133-d1f84a48eb06"
+    },
+    {
+      "claim_id": "c01f02ff-f0bd-4892-8f5e-52194901bae9",
+      "result_id": "b55b564b-cf6e-49bb-a455-a3d5c91a3a22"
+    },
+    {
+      "claim_id": "231949a3-b7a1-4284-a1ee-990c22c4a25d",
+      "result_id": "b55b564b-cf6e-49bb-a455-a3d5c91a3a22"
+    },
+    {
+      "claim_id": "d3f5b03f-59cd-49c6-84e6-4112d73c7f27",
+      "result_id": "b55b564b-cf6e-49bb-a455-a3d5c91a3a22"
+    },
+    {
+      "claim_id": "ae64758c-d2df-436b-b95b-10e9ad0031c8",
+      "result_id": "b55b564b-cf6e-49bb-a455-a3d5c91a3a22"
+    },
+    {
+      "claim_id": "36db475e-1433-433c-bd1a-2d9b04754b7a",
+      "result_id": "3241adad-a83e-4afa-8f6c-d249ffea2f8f"
+    },
+    {
+      "claim_id": "18286436-e788-4e07-9a01-73c405eb4e5a",
+      "result_id": "3241adad-a83e-4afa-8f6c-d249ffea2f8f"
+    },
+    {
+      "claim_id": "182a1bee-a295-4f74-a46f-98e948e2fc78",
+      "result_id": "3241adad-a83e-4afa-8f6c-d249ffea2f8f"
+    },
+    {
+      "claim_id": "23533153-d3d5-4753-a56f-e957178919eb",
+      "result_id": "2d9c61e6-4d8c-4e55-98ed-ed27e61586f6"
+    },
+    {
+      "claim_id": "0ac712ff-0ad9-4035-a3b5-32f420135373",
+      "result_id": "2d9c61e6-4d8c-4e55-98ed-ed27e61586f6"
+    },
+    {
+      "claim_id": "fac20146-91df-4e66-9aaa-1a83719b8dd0",
+      "result_id": "2d9c61e6-4d8c-4e55-98ed-ed27e61586f6"
+    },
+    {
+      "claim_id": "1c2e4beb-79a4-40df-a0ac-5a1aa82109f7",
+      "result_id": "e9263100-1fa8-4174-855d-d9a3c68fe32b"
+    },
+    {
+      "claim_id": "917bcf3e-8bc8-47a2-9521-d897ab391858",
+      "result_id": "e9263100-1fa8-4174-855d-d9a3c68fe32b"
+    },
+    {
+      "claim_id": "0a1413d0-b39e-4412-9083-1256402f55a8",
+      "result_id": "e9263100-1fa8-4174-855d-d9a3c68fe32b"
+    },
+    {
+      "claim_id": "41681e5b-a080-4d6d-a2ac-2bbe20f0b93c",
+      "result_id": "4da44413-0ee3-483d-b998-29defcfc899c"
+    },
+    {
+      "claim_id": "1db3d7dc-00b3-403d-943f-b1b616eb3be5",
+      "result_id": "4da44413-0ee3-483d-b998-29defcfc899c"
+    },
+    {
+      "claim_id": "a4c94080-989e-400c-a3b2-92f95cd90f70",
+      "result_id": "4da44413-0ee3-483d-b998-29defcfc899c"
+    },
+    {
+      "claim_id": "9ea3408c-5831-4233-a9ae-ffe30df269f5",
+      "result_id": "4da44413-0ee3-483d-b998-29defcfc899c"
+    },
+    {
+      "claim_id": "61e26bd6-5f72-44bf-a98d-8dc5c854e372",
+      "result_id": "4da44413-0ee3-483d-b998-29defcfc899c"
+    },
+    {
+      "claim_id": "88e3d265-6e08-4c08-8c72-c6dffa72c69f",
+      "result_id": "5390ae71-1bae-4ada-bbe0-64dae797378d"
+    },
+    {
+      "claim_id": "94d3ed2f-5de8-4e53-9118-8fd26fba2d7f",
+      "result_id": "5390ae71-1bae-4ada-bbe0-64dae797378d"
+    },
+    {
+      "claim_id": "197ef414-e05d-44bf-97d0-6b6aa39b0e01",
+      "result_id": "5390ae71-1bae-4ada-bbe0-64dae797378d"
+    },
+    {
+      "claim_id": "df9afe61-0f1a-4bdd-a464-6e1761d00d57",
+      "result_id": "84fbf67c-53dd-4513-a373-1f39579b496d"
+    },
+    {
+      "claim_id": "3a77e6e2-f84a-499f-8332-1626bca049a5",
+      "result_id": "84fbf67c-53dd-4513-a373-1f39579b496d"
+    },
+    {
+      "claim_id": "48a0775c-014e-4b3b-8565-1cd50246d4f5",
+      "result_id": "84fbf67c-53dd-4513-a373-1f39579b496d"
+    },
+    {
+      "claim_id": "989fc158-bd22-4de3-99e6-10c3faf9e88d",
+      "result_id": "5782f198-3dbb-464b-9bcc-7a5c96b068d4"
+    },
+    {
+      "claim_id": "e2379668-1df1-498c-a5fe-7c4e0622afcc",
+      "result_id": "d3b4a530-8ece-485e-8cda-a090f6b4d691"
+    },
+    {
+      "claim_id": "860bba04-3c16-42f4-8edb-f1b5bcabc325",
+      "result_id": "d3b4a530-8ece-485e-8cda-a090f6b4d691"
+    },
+    {
+      "claim_id": "44f69ede-ae37-4bbe-8884-75896312ad66",
+      "result_id": "219b4e80-ecd0-4601-a36d-bcaa16b9320e"
+    },
+    {
+      "claim_id": "656ace4b-e286-458d-8a54-d5abd680ac26",
+      "result_id": "219b4e80-ecd0-4601-a36d-bcaa16b9320e"
+    },
+    {
+      "claim_id": "0bcf84d6-3285-431b-b90f-58c40a92829b",
+      "result_id": "3ac7fec0-eb6c-4c6a-9b9c-c1679e222583"
+    },
+    {
+      "claim_id": "1b6302f5-c3eb-45a5-992c-a7d977440ba5",
+      "result_id": "ca1d94a2-518a-47c7-b72d-93f8f9452554"
+    },
+    {
+      "claim_id": "ae64758c-d2df-436b-b95b-10e9ad0031c8",
+      "result_id": "ca1d94a2-518a-47c7-b72d-93f8f9452554"
+    },
+    {
+      "claim_id": "ac837310-0dcd-423f-a2e0-300166fecfc1",
+      "result_id": "58d57e3a-b996-492c-88cd-7dc7a6df6a0a"
+    },
+    {
+      "claim_id": "44c5c1a8-e79f-4699-9893-2d4ad541ba57",
+      "result_id": "58d57e3a-b996-492c-88cd-7dc7a6df6a0a"
+    },
+    {
+      "claim_id": "6617e9de-5201-4baa-930f-945d5f41fd4d",
+      "result_id": "58d57e3a-b996-492c-88cd-7dc7a6df6a0a"
+    },
+    {
+      "claim_id": "74f64c91-0edd-4e69-9525-fbe71b0aadc5",
+      "result_id": "58d57e3a-b996-492c-88cd-7dc7a6df6a0a"
+    },
+    {
+      "claim_id": "3c7190af-805e-49e5-9ca8-9fddd59b30ad",
+      "result_id": "58d57e3a-b996-492c-88cd-7dc7a6df6a0a"
+    },
+    {
+      "claim_id": "e8db04eb-f484-403d-9343-3c1367e5b89b",
+      "result_id": "58d57e3a-b996-492c-88cd-7dc7a6df6a0a"
+    },
+    {
+      "claim_id": "2f55e88f-eb37-4ff6-9f34-4012314dca7c",
+      "result_id": "58d57e3a-b996-492c-88cd-7dc7a6df6a0a"
+    },
+    {
+      "claim_id": "fb879dc7-5276-483d-b523-d3e87157aa26",
+      "result_id": "a0485f28-640b-4951-8ba3-e3db4c98a0f2"
+    },
+    {
+      "claim_id": "440b9311-e1fa-457f-b19f-dd22f02e1b9c",
+      "result_id": "34d72ff1-9b02-4228-b2e2-b1f14acfe148"
+    },
+    {
+      "claim_id": "8cc88743-c35d-4c65-aced-146679e53a9d",
+      "result_id": "34d72ff1-9b02-4228-b2e2-b1f14acfe148"
+    },
+    {
+      "claim_id": "ffcf7b34-d983-487f-83ee-7b0e99611e8c",
+      "result_id": "34d72ff1-9b02-4228-b2e2-b1f14acfe148"
+    },
+    {
+      "claim_id": "89eaa5ca-f20c-43fa-9995-e521b4b4f8a9",
+      "result_id": "34d72ff1-9b02-4228-b2e2-b1f14acfe148"
+    },
+    {
+      "claim_id": "fb1377aa-423e-4c59-9edc-cd68ad3d17a4",
+      "result_id": "34d72ff1-9b02-4228-b2e2-b1f14acfe148"
+    },
+    {
+      "claim_id": "3e9200c6-fcca-468e-9d9e-817c08a2515b",
+      "result_id": "34d72ff1-9b02-4228-b2e2-b1f14acfe148"
+    },
+    {
+      "claim_id": "c44f6d56-d815-48b6-b1c2-33fdf319ad88",
+      "result_id": "34d72ff1-9b02-4228-b2e2-b1f14acfe148"
+    },
+    {
+      "claim_id": "8d0f3a2f-e4f6-4670-858e-41d33391d3f3",
+      "result_id": "42dd55a1-7653-4419-9296-05b7a8c33b0f"
+    },
+    {
+      "claim_id": "8f570e84-0e7e-4d3c-904d-5015220b60a0",
+      "result_id": "42dd55a1-7653-4419-9296-05b7a8c33b0f"
+    },
+    {
+      "claim_id": "34b67c65-0826-45e0-91df-619937c97a74",
+      "result_id": "42dd55a1-7653-4419-9296-05b7a8c33b0f"
+    },
+    {
+      "claim_id": "4b068c92-43d2-47fe-b7ec-d12b3fbb16df",
+      "result_id": "42dd55a1-7653-4419-9296-05b7a8c33b0f"
+    },
+    {
+      "claim_id": "cab29c1b-0a93-4fad-bc2b-10c6dc41a05e",
+      "result_id": "42dd55a1-7653-4419-9296-05b7a8c33b0f"
+    },
+    {
+      "claim_id": "16f3bbb9-eeb6-4346-b91e-da09d9926962",
+      "result_id": "42dd55a1-7653-4419-9296-05b7a8c33b0f"
+    },
+    {
+      "claim_id": "b630b346-a811-4149-a3d2-12d9be297bb6",
+      "result_id": "71d8aa6b-913c-49aa-bd49-e9f6d9fb7865"
+    },
+    {
+      "claim_id": "825574a1-830e-47c8-b0f7-98a7b4f7f32a",
+      "result_id": "71d8aa6b-913c-49aa-bd49-e9f6d9fb7865"
+    },
+    {
+      "claim_id": "b19f0c52-0864-44a0-b3c0-e9c061c73177",
+      "result_id": "71d8aa6b-913c-49aa-bd49-e9f6d9fb7865"
+    }
+  ],
+  "comparisons": []
+}

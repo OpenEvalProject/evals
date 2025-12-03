@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C79"
+    ],
+    "result": "METTL3 expression is reduced in atheroprone regions and under oscillatory stress conditions. The authors demonstrate through multiple approaches (UHPLC-MRM-MS, western blot, immunofluorescence) that oscillatory stress decreases m6A modification levels and specifically reduces METTL3 and Virilizer expression in cultured endothelial cells and in atheroprone regions of mouse aortas (aortic arch inner curvature, bifurcations, and ligated carotid arteries).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C9-C13, and C79 provide converging evidence from multiple experimental approaches (mass spectrometry, western blot, immunofluorescence) and models (in vitro OS treatment, in vivo atheroprone regions) consistently showing METTL3 downregulation. The data include appropriate controls (static treatment, atheroprotective regions) and statistical significance is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "Endothelial-specific METTL3 deficiency promotes endothelial activation and accelerates atherosclerosis. Using EC-Mettl3KO mice, the authors show increased VCAM-1 expression in atheroprone regions and enhanced atherosclerotic lesion formation in both partial carotid ligation and Western diet models. METTL3 overexpression reverses these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C35-C38 demonstrate a clear phenotype in EC-specific knockout mice with appropriate controls (Mettl3flox/flox littermates). The rescue experiments with AAV9-METTL3 overexpression (C17) strengthen causality. Multiple atherosclerosis readouts are provided (lesion area, lipid deposition, macrophage infiltration). Statistical significance is reported with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C80"
+    ],
+    "result": "MeRIP-seq and RNA-seq analysis identifies EGFR as a key target of m6A-mediated regulation under oscillatory stress. The authors identify thousands of m6A peaks enriched in the GGACU motif, with downregulated m6A peaks enriched in cell adhesion pathways. EGFR shows reduced m6A modification (IP/input ratio) and increased mRNA expression under OS, and is identified through IPA analysis as a key regulator of OS-enhanced pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 present comprehensive sequencing data with appropriate bioinformatic analysis. The identification of EGFR is supported by multiple lines of evidence: MeRIP-seq showing reduced m6A, RNA-seq showing increased expression, MeRIP-qPCR validation, and IPA pathway analysis. The motif analysis and pathway enrichment provide mechanistic context. However, the IPA analysis identifying EGFR as a 'key regulator' (C22) involves some inference beyond direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "m6A modification of EGFR 3'UTR regulates its mRNA stability. METTL3 overexpression accelerates EGFR mRNA decay while METTL3 knockdown or OS treatment slows decay. Mutation of two m6A motifs in the EGFR 3'UTR abolishes the effect of METTL3 overexpression on luciferase reporter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C26-C28 provide direct mechanistic evidence through actinomycin D chase assays and luciferase reporter assays. The mutational analysis (C5, C28) is particularly strong, showing that specific m6A sites are required for METTL3's effect. The experiments include appropriate controls (GFP, wild-type 3'UTR) and show consistent directional effects. Statistical significance is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C81"
+    ],
+    "result": "METTL3 overexpression inhibits EGFR signaling and endothelial dysfunction induced by oscillatory stress. Adenoviral METTL3 overexpression reduces EGFR phosphorylation, downstream AKT/ERK signaling, VCAM-1 expression, and monocyte adhesion in response to OS. The EGFR inhibitor AG1478 phenocopies METTL3 overexpression effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29-C33, and C81 demonstrate functional consequences of METTL3-mediated EGFR regulation through western blot and cell adhesion assays. The pharmacological inhibition with AG1478 provides orthogonal validation. The experiments include appropriate controls and show consistent effects across multiple readouts. However, the claim that METTL3 overexpression 'significantly reduced endothelial dysfunction' (C6) is somewhat broad given the specific markers measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C34",
+      "C88"
+    ],
+    "result": "TSP-1 expression is increased under oscillatory stress and in atheroprone regions but is not regulated by METTL3. The authors show TSP-1 upregulation at mRNA and protein levels under OS, and that METTL3 overexpression does not affect TSP-1 levels despite inhibiting EGFR expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C30, C34 provide consistent evidence that TSP-1 is not a target of METTL3 regulation, supported by western blot, qPCR, and immunofluorescence data. This is important for establishing the specificity of the METTL3-EGFR axis. However, C88 is explicitly marked as speculation by the authors ('we presume'), indicating this is an inference rather than directly demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C82"
+    ],
+    "result": "Inhibition of the TSP-1/EGFR axis ameliorates atherosclerosis in vivo. Both Thbs1 knockdown and EGFR inhibitor AG1478 reduce lesion area and VCAM-1 expression in partially ligated carotid arteries of EC-Mettl3KO mice, reversing the pro-atherogenic effects of METTL3 deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C39-C43, and C82 provide strong in vivo evidence for the functional importance of the TSP-1/EGFR axis using both genetic (shRNA) and pharmacological (AG1478) approaches. The rescue of the EC-Mettl3KO phenotype is particularly compelling. Appropriate controls and statistical analyses are included. The claim of 'significantly ameliorated' is supported by quantitative lesion measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Plasma lipid levels and body weight are unchanged between EC-Mettl3KO and control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides important control data showing that the atherosclerosis phenotype is not due to systemic metabolic changes. This is supported by measurements of triglycerides, cholesterol, and body weight with no significant differences reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C78",
+      "C83",
+      "C89",
+      "C90"
+    ],
+    "result": "Overall conclusion: METTL3-mediated m6A modification alleviates endothelial atherogenic progression through regulation of EGFR mRNA stability, with the TSP-1/EGFR axis as a key regulatory target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C78, C83, C89-C90 represent summary conclusions that integrate the experimental findings. These are well-supported by the collective data from in vitro and in vivo experiments demonstrating: (1) METTL3 downregulation in atheroprone regions, (2) m6A-dependent regulation of EGFR mRNA stability, (3) functional consequences for endothelial activation, and (4) effects on atherosclerosis development. The conclusions appropriately reflect the scope of the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background and context claims about atherosclerosis, m6A modification, METTL3 function, TSP-1, and EGFR based on prior literature and general knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C44-C77, C84-C87) represent established knowledge from the literature, supported by appropriate citations. They provide necessary context for the study but are not novel findings. The citations appear appropriate and the statements are consistent with current understanding of these biological systems. Some claims (e.g., C87) include preliminary data from the current study to support the rationale.",
+    "result_type": "MINOR"
+  }
+]

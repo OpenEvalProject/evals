@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C55",
+      "C56",
+      "C59",
+      "C60"
+    ],
+    "result": "Metabolic energy expenditure during cyclic reaching increased substantially with movement frequency (3.56-fold increase for 2.33-fold frequency increase), even though mechanical work rate remained constant. This increase was consistent with a hypothesized force-rate cost (proportional to f^5/2) plus a constant mechanical work cost, with force-rate accounting for 6% of metabolic cost at low frequency (0.58 Hz) and 74% at high frequency (1.36 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47, C48 provide the primary experimental finding with specific quantitative data (5.32\u00b12.73 W at 0.58 Hz vs 18.95\u00b16.02 W at 1.36 Hz). Claims C55, C56, C59, C60 demonstrate the decomposition into work and force-rate components with specific proportions. The experimental design successfully isolated force-rate cost by maintaining constant mechanical power, and the data show strong statistical support (R\u00b2=0.50, p=1e-8 for metabolic power vs f^5/2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "EMG amplitudes increased with movement frequency approximately as f^3/2 (faster than torque which increased as f^1/2), consistent with first-order dynamics between muscle activation and force production requiring greater activation at higher frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C160-C162 provide both empirical EMG data and theoretical justification. The EMG data for pectoralis (R\u00b2=0.65, p=1.1e-6) and deltoid (R\u00b2=0.56, p=1.5e-5) show statistically significant increases with f^3/2. The first-order dynamics model (C160-C162) provides mechanistic explanation for why activation must increase faster than force at higher frequencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C166",
+      "C167"
+    ],
+    "result": "Cross-validation with a separate group of subjects performing different movement conditions (higher mechanical work and force-rate) showed good agreement with force-rate coefficients derived from the primary experiment (R\u00b2=0.42, p=2.7e-6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C166, C167 describe an independent validation test. The cross-validation used different subjects and different experimental conditions (frequencies 0.67-1.3 Hz, amplitudes 12.5-4.42\u00b0), yet the model with coefficients from the primary experiment predicted metabolic costs reasonably well. This provides evidence for generalizability of the force-rate cost model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The estimated natural frequency of cyclic arm motions was 2.83\u00b10.56 Hz, suggesting rotational stiffness of ~250 N\u00b7m\u00b7rad\u207b\u00b9 if series elasticity exists. With passive elastic energy storage, active mechanical power would decrease slightly (0.5 W to 0.33 W per arm), meaning series elasticity would cause active mechanical power to decrease as energy expenditure increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide resonant frequency measurements and calculations of elastic energy storage effects. The analysis shows that elastic energy storage cannot explain the observed increase in metabolic cost with frequency, since it would reduce rather than increase the mechanical work required from muscles. This strengthens the force-rate hypothesis by ruling out an alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A Hill-type musculoskeletal model dramatically over-predicted net metabolic cost by up to 6.2-fold and predicted metabolic cost increased only 1.42-fold across frequencies (vs. empirical 3.56-fold), demonstrating that current musculoskeletal models do not accurately predict the cost of cyclic reaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide specific quantitative comparisons between Hill-type model predictions and experimental data. The model's failure to predict both absolute costs and frequency-dependent trends is clearly documented. This negative result is important as it demonstrates limitations of existing models and supports the need for the force-rate hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C88"
+    ],
+    "result": "The force-rate-dependent cost predicts bell-shaped velocity profiles for point-to-point reaching similar to minimum variance model and empirical data, with high correlation (r=0.99) using cost coefficients derived from cyclic reaching experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C75, C76, C88 demonstrate that the empirically-derived force-rate cost can predict discrete reaching movements. The trajectory optimization using coefficients from cyclic experiments (without fitting to point-to-point data) produces bell-shaped velocities with correlation r=0.99 to empirical data. This cross-validation between cyclic and discrete movements is strong evidence for the generalizability of the force-rate hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C89"
+    ],
+    "result": "The proposed metabolic energy cost model predicts that optimal movement durations increase with distance (roughly similar to human preferred durations) while retaining bell-shaped velocities across all distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C89 show that the force-rate cost model with a duration penalty predicts both trajectories and durations. The qualitative comparison with Reppert et al. 2018 data shows similar trends. However, the evaluation is limited to qualitative comparison and the duration penalty parameter (k=25 J/s) was selected to match average speeds rather than independently validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The force-rate hypothesis explains the observed metabolic energy cost increases better than alternative explanations including mechanical work alone, force-velocity relationship, or current musculoskeletal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 systematically rule out alternative explanations. Mechanical work was held constant (C81), hand speeds decreased with frequency ruling out force-velocity effects (C82), and musculoskeletal models failed to predict the data (C83). This process of elimination strengthens the force-rate hypothesis by demonstrating it explains the data better than competing theories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The proposed mechanism for force-rate cost is that brief bursts of activation require greater active calcium transport because muscle force production has slower dynamics than muscle activation. This cost has been observed in isolated muscle preparations, whole organisms, and various lower extremity tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42, C86 provide the physiological basis for the force-rate hypothesis with extensive citations to prior work (Hogan et al. 1998, Bergstr\u00f6m & Hultman 1988, Doke & Kuo 2007, Dean & Kuo 2011, van der Zee & Kuo 2020). The mechanism is grounded in established muscle physiology (calcium transport) and has been observed across multiple experimental contexts. However, the current study does not directly measure calcium transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The force-rate cost is not the sole explanation for reaching, and the study does not disambiguate force-rate from minimum-variance since both predict similar point-to-point movements. Both objectives could potentially contribute to a unified framework, with minimum variance dominating for fast/accurate movements and energy cost for trajectory/duration of slower movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 acknowledge important limitations and propose integration of force-rate and minimum-variance hypotheses. This is a reasonable interpretation given that both models predict similar bell-shaped profiles (C93, C102) and minimum-variance has implicit effort dependency through signal-dependent noise (C94). The speculation about complementary roles (C97) is plausible but untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C116"
+    ],
+    "result": "The study has several limitations: metabolic cost was measured for the whole body rather than individual muscles, force-rate was estimated from joint torque rather than actual muscle forces, and other physiological processes cannot be eliminated as contributors to observed energy cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114, C116 clearly state methodological limitations. These are valid concerns that affect interpretation: whole-body respirometry cannot isolate muscle-specific costs, joint torque is only proportional to muscle force under assumptions of constant moment arms, and other processes (e.g., postural control, co-contraction) may contribute to metabolic cost. The authors appropriately acknowledge these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Multiple objectives can reproduce bell-shaped velocities non-uniquely, making metabolic energy expenditure valuable as a physiological, independently testable measure of effort. Changes in metabolic cost during adaptation and effects of metabolic state on reaching patterns suggest a role for energy in reaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 highlight the challenge of non-uniqueness in motor control models and the value of physiological measurements. The citations to Huang et al. 2012 and Taylor & Faisal 2018 provide independent evidence for energy's role in reaching. This contextualizes the current study's contribution within the broader literature on effort-based motor control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "There is a measurable and non-trivial energetic cost for cyclic reaching: at 1.5 Hz, net metabolic rate was ~19 W (nearly as costly as standing up, which costs ~24 W), corresponding to ~3.5 J per arm per half-cycle reaching action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 provide context for the magnitude of metabolic costs. The comparison to standing (C108, citing Mansoubi et al. 2015) helps interpret whether the measured costs are physiologically meaningful. The calculation of 3.5 J per reaching action (C110) provides a useful reference for discrete movements. These contextual claims are well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Human reaching movements are characterized by smooth kinematic trajectories and consistent durations. Smoothness has been explained by accuracy objectives while duration has been explained by energy economy, but current understanding of energy expenditure does not explain smoothness, creating seemingly incompatible objectives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 accurately summarize the state of knowledge in the field and identify the key gap that motivates the study. These are well-established characteristics of reaching movements (C1, C2) and the tension between accuracy-based (C3) and energy-based (C4) explanations is clearly articulated (C5, C6). This provides appropriate context for the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C10",
+      "C11",
+      "C124"
+    ],
+    "result": "The study's main conclusion is that smoothness in reaching movements is economical because humans expend more metabolic energy for jerkier motions. This mechanistic, physiologically measurable energy cost may explain both smoothness and duration in terms of economy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C10, C11, C124 state the study's primary conclusions. These are well-supported by the experimental data showing increased metabolic cost with frequency (C7, C47, C48), the successful prediction of bell-shaped velocity profiles (C74, C88), and prediction of movement durations (C77, C89). The conclusion integrates multiple lines of evidence from both cyclic and discrete reaching experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The minimum variance model, which minimizes final endpoint position variance, predicts smooth reaching movements well. It explains why curved/accurate motions must be slower, subsumes minimum-jerk theory, and makes better predictions than competing theories. Non-smooth motions introduce inaccuracy due to signal-dependent noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 accurately summarize the minimum variance hypothesis from Harris & Wolpert 1998 and related work. These claims establish the current leading theory that the authors are comparing against. The characterization is accurate and well-cited (Harris & Wolpert 1998, Matthews 1996, Sutton & Sykes 1967, Flash & Hogan 1985, Diedrichsen et al. 2010, Haith et al. 2012, Todorov 2004).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Effort costs are necessary in optimal control to avoid maximal-effort solutions. Metabolic energy expenditure is substantial during novel reaching and decreases with adaptation, and helps determine movement duration/vigor. However, many effort costs produce non-smooth profiles or lack physiological justification, and no physiologically tested cost function predicts reaching velocity profiles as well as minimum variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 accurately characterize the state of effort-based theories in motor control. The citations are appropriate (Harris & Wolpert 1998, Bryson & Ho 1975, Huang et al. 2012, Shadmehr et al. 2016, Kistemaker et al. 2010). The identification of gaps in existing effort-based models (C29, C30, C32) provides clear motivation for the current study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Energy is expended in proportion to force and time in isometric conditions and in proportion to mechanical work in steady work conditions, but neither condition applies well to reaching movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 accurately describe established relationships between energy expenditure and muscle mechanics (citing Crow & Kushmerick 1982, Barclay 2015, Margaria 1976). The inference that these conditions don't apply well to reaching (C35) is reasonable given that reaching involves dynamic, non-steady movements with varying force and velocity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The force-rate hypothesis suggests a substantial role for energy expenditure in reaching movements. Energy expenditure is a major factor in animal behavior, but may have been overshadowed by minimum-variance because both make similar predictions for point-to-point movements. Further work is needed to test the hypothesis more specifically, perhaps in combination with minimum-variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 provide appropriate discussion of the study's implications and future directions. The citations to Alexander 1996 and Sterling & Laughlin 2017 (C120, C121) support the general importance of energy in biology. The acknowledgment that force-rate may have been overlooked due to similar predictions (C122) and the call for future work (C123) are reasonable interpretations.",
+    "result_type": "MINOR"
+  }
+]

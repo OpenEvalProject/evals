@@ -1,0 +1,1860 @@
+{
+  "submission": {
+    "id": "1aa69874-0051-41c3-9b27-aa5759f78c2f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:44:27.446191Z",
+    "updated_at": "2025-12-03T20:44:27.446191Z"
+  },
+  "content": [
+    {
+      "id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "submission_id": "1aa69874-0051-41c3-9b27-aa5759f78c2f",
+      "content_type": "manuscript",
+      "content_text": "# The mutational signatures of poor treatment outcomes on the drug-susceptible Mycobacterium tuberculosis genome\n\n## Authors\n\n- Yiwang Chen<sup>1</sup>\n- Qi Jiang<sup>3</sup>\n- Mijiti Peierdun<sup>4</sup>\n- Howard E Takiff<sup>5</sup>\n- Qian Gao<sup>1</sup> ([ORCID: 0000-0002-8489-3672](https://orcid.org/0000-0002-8489-3672)) \u2020\n\n### Affiliations\n\n1. Key Laboratory of Medical Molecular Virology (MOE/NHC/CAMS), School of Basic Medical Sciences, Shanghai Medical College, Shanghai Institute of Infectious Disease and Biosecurity, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))\n2. National Clinical Research Center for Infectious Diseases, Shenzhen Third People's Hospital Shenzhen China ([ROR:04xfsbk97](https://ror.org/04xfsbk97))\n3. School of Public Health, Public Health Research Institute of Renmin Hospital, Wuhan University Wuhan China ([ROR:033vjfk17](https://ror.org/033vjfk17))\n4. Department of Epidemiology and Biostatistics,School of Public Health, Xinjiang Medical University Urumqi China ([ROR:01p455v08](https://ror.org/01p455v08))\n5. Instituto Venezolano de Investigaciones Cientificas (IVIC) Caracas Venezuela ([ROR:02ntheh91](https://ror.org/02ntheh91))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDrug resistance is a known risk factor for poor tuberculosis (TB) treatment outcomes, but the contribution of other bacterial factors to poor outcomes in drug-susceptible TB is less well understood. Here, we generate a population-based dataset of drug-susceptible Mycobacterium tuberculosis (MTB) isolates from China to identify factors associated with poor treatment outcomes. We analyzed whole-genome sequencing (WGS) data of MTB strains from 3196 patients, including 3105 patients with good and 91 patients with poor treatment outcomes, and linked genomes to patient epidemiological data. A genome-wide association study (GWAS) was performed to identify bacterial genomic variants associated with poor outcomes. Risk factors identified by logistic regression analysis were used in clinical models to predict treatment outcomes. GWAS identified fourteen MTB fixed mutations associated with poor treatment outcomes, but only 24.2% (22/91) of strains from patients with poor outcomes carried at least one of these mutations. Isolates from patients with poor outcomes showed a higher ratio of reactive oxygen species (ROS)-associated mutations compared to isolates from patients with good outcomes (26.3% vs 22.9%, t-test, p=0.027). Patient age, sex, and duration of diagnostic delay were also independently associated with poor outcomes. Bacterial factors alone had poor power to predict poor outcomes with an AUC of 0.58. The AUC with host factors alone was 0.70, but increased significantly to 0.74 (DeLong\u2019s test, p=0.01) when bacterial factors were also included. In conclusion, although we identified MTB genomic mutations that are significantly associated with poor treatment outcomes in drug-susceptible TB cases, their effects appear to be limited.\n\n## Introduction\n\nTuberculosis (TB), caused by Mycobacterium tuberculosis (MTB), is responsible for more deaths globally than any other single infectious agent, causing nearly 1.5 million deaths and an estimated 10 million new cases each year (World Health Organization, 2022). Successful treatment of TB not only cures the patient but also prevents disease transmission and the development of difficult-to-treat drug-resistant strains. Treatment outcomes are therefore important metrics for assessing the effectiveness of national TB control programs (Dheda et al., 2017; Migliori et al., 2019). While approximately 86% of patients with drug-susceptible TB are cured with the standard four-drug treatment (World Health Organization, 2022), there remains a substantial subset of patients who fail treatment. To formulate strategies that will reduce treatment failures, it would be helpful to first define the risk factors associated with poor outcomes.\n\nThere are host factors that are well known to be associated with treatment failure, including poor patient adherence (Alipanah et al., 2018), sex, age (Imperial et al., 2018), diagnostic delay (Lestari et al., 2020), co-infection with the human immunodeficiency virus (HIV) and TB treatment history (Bastos et al., 2017; Chenciner et al., 2021), but we wondered whether the genetic composition of the infecting strain might also contribute to poor outcomes. While drug resistance is the major bacterial risk factor for TB treatment failure (Lange et al., 2019; Mirzayev et al., 2021), a growing number of genomic studies suggest that other bacterial determinants may also be risk factors. For example, specific mutations in metabolism-related genes of MTB could lead to drug tolerance (Hicks et al., 2018; Torrey et al., 2016), thereby increasing the risk of developing resistance and relapsing after treatment (Brauner et al., 2016; Liu et al., 2020a). (Liu et al., 2022) recently showed that genetic mutations in the gene encoding the transcriptional regulator resR can cause antibiotic resilience and are associated with the acquisition of drug resistance and treatment failure. Although these genetic polymorphisms in the MTB genome do not directly lead to drug resistance, they are significantly more common in drug-resistant bacteria (Hicks et al., 2018; Liu et al., 2022). Because drug resistance is such a dominant risk factor for treatment failure, a search for other bacterial genomic determinants associated with treatment failure is best performed in drug-susceptible MTB isolates.\n\nTo study the role of bacterial genomic determinants, other than drug resistance mutations, that might be associated with poor treatment outcomes, we analyzed drug-susceptible TB isolates from new TB cases collected in population-based cohort studies at three different sites in China. The bacterial determinants we identified and the patient characteristics were then used to build a clinical prediction model to estimate the contribution of bacterial factors to poor TB treatment outcomes.\n\n## Results\n\n### Characteristics of the study population and MTB isolates\n\nThe pooled study population from the three different sites in China consisted of 3496 new cases of drug-susceptible TB. The patients were divided into three groups based on their treatment outcomes: good outcomes (88.8%, 3105/3496), poor outcomes (2.6%, 91/3496), and other outcomes (8.6%, 300/3496). To explore the bacterial factors associated with poor TB treatment outcomes, we first excluded patients with outcomes unlikely to be associated with bacterial factors, including patients lost to follow-up, non-TB deaths, and unknown outcomes. Ultimately, a total of 3196 new cases with drug-susceptible TB were included in the study (Figure 1A): 3105 with good outcomes and 91 with poor outcomes (failure, 25; TB death, 15; transferred for MDR, 4; and relapse, 47). The study patients were recruited from Shanghai (49.1%, 1569/3196), Sichuan (30.6%, 979/3196), and Heilongjiang (20.3%, 648/3196) provinces, China (Figure 1A). They had a mean age of 42.1 \u00b1 18.2 years and 72.4% (2313/3196) were male. WGS was performed on all 3196 isolates, with an average depth of 100\u00d7and average genome coverage of 98%. Phylogenetic analysis of WGS data showed that nearly three-quarters of the isolates were lineage 2 (74.2%, 2373/3196), with more than half belonging to the modern Beijing sublineage L2.3 (54.9%, 1754/3196) (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig1-v2.jpg)\n\n**Figure 1.:** (A) Geographic location of the samples analyzed and study cohort characteristics. (B) The phylogenetic tree of 3196 drug-susceptible tuberculosis strains. The different colors on the branches indicate different lineages and sublineages. The outside circle indicates the treatment outcomes of corresponding patients.\n\n### Identification of a functional mutation set for predicting treatment outcomes\n\nGWAS of the MTB isolates identified fourteen fixed nonsynonymous variants associated with poor treatment outcomes (Figure 2A). These variants were distributed in thirteen genes involved in intermediary metabolism, and respiration (cobN, dlaT, metA, Rv0648, and Rv1248c), cell wall and cell processes (ctpB, Rv2164c, and Rv1717) and virulence (otsB1 and Rv3168), with the otsB1 G559D mutation showing the strongest association (p=7.3 \u00d7 10\u201310) (Figure 2\u2014source data 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-v2.jpg)\n\n**Figure 2.:** (A) Manhattan plots of genome-wide association study (GWAS) for fixed single nucleotide polymorphisms (SNPs) associated with poor treatment outcomes. The dashed red line highlights the Bonferroni-corrected threshold (p=5.04 \u00d7 10\u20137). (B) Distribution of GWAS identified unfixed SNPs across gene functional categories. CWP, cell wall, and cell processes; IMR, intermediary metabolism, and respiration; CH, conserved hypotheticals; LM, lipid metabolism; IP, information pathways; RP, regulatory proteins; VDA, virulence, detoxification, adaptation; UN, unknown. (C) Gene prioritization strategies (based on p-value rank) for significantly associated unfixed SNPs. (D) Gene expression from RNA-seq (log2FPKM) of Rv2164c under drug pressure and hypoxia.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The top 50 unfixed mutations were annotated with the gene. The dashed red line highlights the Bonferroni-corrected threshold (p=4.82 \u00d7 10\u20136).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-figsupp3-v2.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The dashed red line highlights the Bonferroni-corrected threshold (p=2.66 \u00d7 10\u20136).\n\nUnfixed mutations are thought to represent adaptive mutations emerging within the host (Nimmo et al., 2020). To investigate whether unfixed mutations affect treatment outcomes, we performed a GWAS analysis of unfixed mutations and found that 237 mutations were associated with poor treatment outcomes (Figure 2\u2014figure supplement 1). The frequency of these mutations was mostly in the range of 5\u201310%, and they were predominantly found in genes whose encoded proteins are involved in cell wall and cell processes, intermediary metabolism, and respiration (Figure 2B). When the genes carrying unfixed mutations were ranked according to the significance of their associations with poor outcomes, the highest ranked gene was gatA, which has been previously associated with rifampicin tolerance (Cai et al., 2020; Figure 2C).\n\nGene expression patterns under stress conditions can provide important insights into the gene\u2019s function (Bosch et al., 2021). We, therefore, analyzed the genes containing GWAS-identified fixed mutations for changes in expression after exposure to first-line drugs and hypoxic conditions. The expression of some of the genes increased under these conditions (drug-treated: Rv2164c, cobN, Rv0260c; hypoxia: Rv2164c, otsB1, papA1), but only Rv2164c (Figure 2D) contained both GWAS-identified fixed (Figure 2A) and unfixed (Figure 2C) mutations. The expression of other genes decreased (drug-treated: otsB1, Rv0648, Rv1248c, Rv3168; hypoxia: Rv0648) (Figure 2D; Figure 2\u2014figure supplement 2), suggesting these genes could be involved in adaptation to drug and hypoxic stress.\n\n### Ongoing mutational signatures of ROS associated with TB treatment outcomes\n\nPrevious reports have suggested that poor TB treatment outcomes may be associated with increased ROS mutational signatures (C>T/G>A mutations) (Liu et al., 2020b; Moreno-Molina et al., 2021). To determine whether the increased ROS signatures were the result of mutations that were fixed before the infection or were unfixed because they arose de novo during infection, we compared the distribution of six mutation types in fixed and unfixed mutations. In the fixed mutations, there was no significant difference in the proportions of ROS mutational signatures for isolates from patients with good or poor outcomes (43.9% vs 44.2%, t-test, p=0.364, Figure 3A). In the unfixed de novo mutations, however, the ROS mutational signatures were significantly more frequent in isolates from patients with poor outcomes (26.3% vs 22.9%, t-test, p=0.027, Figure 3A). A further analysis of the distribution of unfixed mutations across gene functional categories found no difference in the distribution of total unfixed mutations between good and poor outcomes (Figure 3B), but isolates from patients with poor outcomes showed a higher percentage of nonsynonymous mutations (5.7% vs 3.9%, t-test, p=0.048, Figure 3B) in genes belonging to the functional category \u2018information pathway\u2019.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig3-v2.jpg)\n\n**Figure 3.:** (A) The proportion of six mutation types in all fixed and unfixed mutations (t-test, mean range: mean \u00b1 SE). (B) Distribution of total unfixed mutations and nonsynonymous unfixed mutations across gene functional categories (t-test). VDA, virulence, detoxification, adaptation; LM, lipid metabolism; IP, information pathways; CWP, cell wall, and cell processes; ISP, insertion seqs and phages; IMR, intermediary metabolism, and respiration; RP, regulatory proteins; CH, conserved hypotheticals; UN, unknown. (C) Comparison of nucleotide genetic diversity between isolated patients with good and poor outcomes (t-test). (D) Distribution of Mycobacterium tuberculosi (MTB) lineages and sublineages (chi-square test). p-value <0.05 was considered significant. *, p<0.05, ns, no significant.\n\nNucleotide diversity and the characteristics of the different lineages of MTB are thought to be determinants of virulence and thus may affect TB treatment outcomes. (O\u2019Neill et al., 2015; Tong et al., 2022). An analysis of nucleotide diversity revealed no significant differences between isolates from patients with good or poor outcomes (2.0 \u00d7 10\u20134 vs 2.6 \u00d7 10\u20134, t-test, p=0.156, Figure 3C). In contrast, an analysis of lineage distribution showed that strains belonging to the modern Beijing lineage L2.3 were significantly more prevalent in patients with good outcomes (55.5% vs 44.0%, chi-square test, p=0.038, Figure 3D). Although lineage L2.3 has been associated with high virulence and increased transmission (Tong et al., 2022), lineage was not associated with poor treatment outcomes in the populations studied.\n\n### GWAS-identified mutations help predict TB treatment outcomes\n\nTo identify the risk factors for poor TB treatment outcomes, we used logistic regression that included both the patients\u2019 clinical characteristics and the bacterial factors associated with poor outcomes. We found that patient age, sex, duration of diagnostic delay, and the GWAS-identified fixed mutations were all independently associated with poor TB outcomes (Figure 4A). We then performed logistic regression with the identified risk factors to construct a clinical prediction model that is depicted graphically by the nomogram (Figure 4B). For example, in a 65-year-old male TB patient with a 4 month delay in diagnosis, the risk of poor outcome would increase from 5.4 to 17.4% if his MTB isolate contained at least one GWAS-identified mutation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig4-v2.jpg)\n\n**Figure 4.:** (A) Univariable and multivariable logistic regression on the risk factors for poor treatment outcomes. (B) Nomogram for predicting the probability of poor treatment outcomes. (C) ROC curves are based on risk factors that may be predictive of tuberculosis treatment outcomes. p-value <0.05 was considered significant. *p<0.05, **p<0.01, ***p<0.001.\n\nThe ROC curve for the clinical prediction model based only on host risk factors had an AUC of 0.70, which was significantly higher than the AUC of 0.58 (DeLong\u2019s test, p<0.001) when only GWAS-identified bacterial mutations were included (Figure 4C). However, when both host factors and GWAS-identified mutations were included in the model, the AUC for predicting poor treatment outcomes increased significantly (DeLong\u2019s test, p=0.01) from 0.70 to 0.74, with a sensitivity of 0.85 and specificity of 0.55 (Figure 4C). Based on this analysis, it appears that genomic variants of the infecting MTB strain may be markers for poor tuberculosis treatment outcomes.\n\n## Discussion\n\nTo our knowledge, this is the first comprehensive evaluation of the contribution of bacterial genetic factors to poor treatment outcomes in drug-susceptible TB patients. Although our analysis showed that, as expected, patient characteristics of age, sex, and duration of diagnostic delay were associated with poor TB treatment outcomes, it also found fourteen bacterial genomic variants that were associated with an increased risk of poor treatment outcomes. The best clinical prediction model, with an AUC of 0.74, incorporates both host and bacterial risk factors. In a setting where the genomes of all MTB isolates are sequenced, these risk factors may provide a rationale for developing personalized approaches to tuberculosis treatment.\n\nGWAS has yielded remarkable advances in the understanding of complex traits and has identified hundreds of genetic risk variants in humans (Uffelmann et al., 2021), including genetic polymorphisms associated with increased susceptibility to TB (Quistrebert et al., 2021; Zheng et al., 2018). With the increasing availability of bacterial WGS data, it is now possible to use GWAS to probe the relationship between pathogen genotypes and clinical disease phenotypes. GWAS has identified genetic determinants of MTB drug resistance (Coll et al., 2018; Farhat et al., 2013), TB transmission (Sobkowiak et al., 2020), virulence (Genestet et al., 2022) and host preference (Luo et al., 2022). In this study, GWAS was used to identify bacterial genetic variants associated with poor treatment outcomes in patients with drug-susceptible TB and assess their impact on outcomes.\n\nWhile this study found mutations in the MTB genome that were associated with poor treatment outcomes, models that consider only bacterial factors were poor predictors of outcome, with an AUC of only 0.58. Furthermore, only 24.2% (22/91) of patients with poor outcomes carried at least one of the GWAS-identified fixed mutations (Figure 2\u2014source data 1), and therefore these mutations played no role in the majority of poor outcomes. The 237 GWAS-identified unfixed mutations are diverse (Figure 2\u2014figure supplement 1) and have a mutation frequency that is generally only 5%\u201310% (Figure 2\u2014figure supplement 3). The low frequency of these diverse unfixed mutations suggests they may confer a relatively small selective advantage without any preferential mutation types or increasing mutation frequency. In addition, none of the GWAS-identified unfixed mutations were among the 14 GWAS-identified fixed mutations, suggesting the unfixed mutations merely reflect individual genetic features of the particular MTB isolate with no evidence of homoplastic fixation in the bacterial population.\n\nThere is evidence, although limited, that genes carrying the fourteen fixed GWAS-identified mutations play a role in the response to first-line drug and hypoxic stress. The otsB1 gene harbors the mutation with the strongest association and encodes trehalose-6-phosphate phosphatase, which has been associated with rifampicin tolerance under hypoxic stress (Jakkala and Ajitkumar, 2019). The E2 component of pyruvate dehydrogenase, encoded by dlaT, is required for optimal MTB growth and resistance to reactive nitrogen intermediates (RNI) and immune killing by host cells (Shi and Ehrt, 2006; Tian et al., 2005). Most of the genes carrying the fourteen GWAS-identified fixed mutations were rarely reported in previous large-scale GWAS of drug-resistant MTB (Coll et al., 2018; Farhat et al., 2013; Naz et al., 2023), and none of the fourteen mutations were reported in these studies. However, two of the genes in which the mutations were found had been previously identified as potentially associated with first-line drug resistance (Farhat et al., 2013): CtpB, a probable cation-transporter P-type ATPase B; and MetA, a probable homoserine O-acetyltransferase. Our inference that the fourteen fixed mutations had only limited effects on treatment outcome would explain why: they were not identified in previous studies; isolates from only 24.2% (22/91) of patients carried any of these 14 mutations; and none of the mutations were shared amongst all 22 patients.\n\nThe mutations may be epistatic adaptations suited to the genomic characteristics of each individual strain. The GWAS-identified mutations were also present in some patients with good outcomes but were less frequent than in patients with poor outcomes. Although patient information was unavailable concerning other known host risk factors such as adherence to the treatment regimen and comorbidities such as HIV co-infection, diabetes, smoking, and low BMI (Kamara et al., 2022; Leung et al., 2015; Vernon et al., 2019), our clinical prediction model still revealed that host factors are significantly more important determinants of poor outcomes than bacterial factors. Nevertheless, we believe that our study has shown that bacterial genomic factors can also contribute to poor outcomes.\n\nSample size and the classification of treatment outcomes are important challenges when exploring the association of bacterial factors with poor outcomes. Because standard first-line regimens cure at least 85% of drug-susceptible TB patients, this study had to pool data from three sites with a total of 3496 new cases to obtain 91 patients with poor outcomes. We excluded 300 patients who either died from non-TB causes, were lost to follow-up, or had unknown outcomes. We attempted to validate our findings with a dataset of 1397 new drug-susceptible TB cases from Malawi (Guerra-Assun\u00e7\u00e3o et al., 2015), but were unable to replicate the GWAS analysis because the only poor treatment outcome in the Malawi dataset was death, and it was impossible to distinguish the patients who succumbed to TB from those who died from non-TB causes (Figure 2\u2014figure supplement 4).\n\nIn conclusion, we found that there are bacterial genomic variants that are significantly associated with poor treatment outcomes in drug-susceptible TB patients. Although host factors are clearly more important, the most accurate models for predicting poor treatment outcomes with drug-susceptible TB incorporate both host and bacterial risk factors. In the future, it may be possible to identify patients at high risk for treatment failure by analyzing the characteristics of both the host and the bacterial genome of the infecting strain. This could make it possible to identify patients requiring longer or individualized treatment regimens and thus improve cure rates for drug-susceptible TB.\n\n## Materials and methods\n\n### Selection of patients and samples\n\nA strain database search was performed for TB patients treated during 2009\u20132020 at three study sites in Shanghai, Sichuan, and Heilongjiang, China. For each of the 4374 TB patients registered during this period, a pretreatment sputum sample was decontaminated and inoculated onto L\u00f6wenstein-Jensen (LJ) medium (Heilongjiang) or in liquid medium (Shanghai and Sichuan) and observed for 6\u20138 weeks. Culture-positive isolates were re-cultured on LJ medium for 3\u20134 weeks. Colonies were scraped from the surface of the LJ slopes and the DNA was isolated for WGS. WGS data and the patients\u2019 demographic and clinical features were obtained from a published study (Li et al., 2022). All new cases susceptible to first-line drugs (rifampicin, isoniazid, pyrazinamide, ethambutol) by genotypic drug-susceptibility testing (gDST), and whose records contained treatment outcomes, were selected for the study.\n\nThe WHO recommended treatment outcome definitions for TB are cured, treatment completed, treatment failed, died, lost to follow-up and not evaluated (Linh et al., 2021). Of these, patients who died were divided into deaths from TB and non-TB, and those not evaluated included cases transferred for treatment of multidrug-resistant tuberculosis (MDR-TB) and cases whose treatment outcome was unknown. For the current study, TB treatment outcomes were grouped into three categories: (1) good outcomes -- cured and treatment completed; (2) poor outcomes -- treatment failures, deaths from TB, transferred for MDR and relapse; and (3) other -- lost to follow-up, non-TB deaths and unknown outcome.\n\n### SNPs calling, resistance prediction, and phylogenetic reconstruction\n\nA previously described pipeline was used for calling single nucleotide polymorphisms (SNPs) (Chen et al., 2021). Briefly, the Sickle tool was used to trim WGS data to retain reads with a Phred base quality above 20 and a length greater than 30 nucleotides. Reads were mapped to the MTB H37Rv reference strain (GenBank AL123456) with bowtie2 (v2.2.9), and then SAMtools (v1.3.1) was used for SNP-calling with a mapping quality greater than 30. Varscan (v2.3.9) was used to identify fixed (frequency, \u226575%) and unfixed (<75%) SNPs with at least 5 supporting reads and the strand bias filter option on. A previously validated pipeline was used to filter out false positives that may have arisen during the in vitro expansion of bacterial colonies or caused by PCR and sequencing errors (Liu et al., 2022). The drug-resistance profile and lineages were predicted from WGS data using SAM-TB (Yang et al., 2022). Phylogenetic trees were constructed using the maximum-likelihood method (RAxML-NG) (Kozlov et al., 2019) and visualized on the Interactive Tree of Life platform (https://itol.embl.de/).\n\n### Estimates of nucleotide diversity and GWAS analyses\n\nNucleotide diversity (\u03c0) was estimated using the PoPoolation package (Kofler et al., 2011). Following O\u2019Neill et al. (O\u2019Neill et al., 2015), we randomly subsampled (n=10) read data from each sample to a uniform 50x coverage to limit the effects of differential coverage across samples. Using the subsampled data with uniform coverage, we then calculated nucleotide diversity in 100 kb sliding windows across the genome in 10 kb steps. GWAS analyses were performed using GEMMA software (v0.98.3) (Zhou and Stephens, 2012) to identify nonsynonymous variants associated with poor TB treatment outcomes. A linear mixed model was used to control for the confounding effects of MTB lineage, sublineage, and outbreak-based population structure (Coll et al., 2018). Host risk factors associated with poor treatment outcomes such as age, sex, and duration of diagnostic delay were included as covariates in the GWAS, and the significance threshold was adjusted with the Bonferroni correction.\n\n### RNA-seq data collection and analysis\n\nRaw RNA-Seq read data (GSE165581: INH, GSE166622: RIF, GSE118084: EMB, and GSE116353: hypoxia) from MTB laboratory strain H37Rv exposed to first-line drugs and hypoxic conditions was downloaded from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/). Sequencing reads passing quality control was aligned to the MTB H37Rv reference strain using bowtie2. Unique reads were selected and sorted using SAMtools, then quantitated using htseq-count (v0.11.3). FPKM values calculated by DESeq2 (v1.26.0) were used as measures of gene expression, and genes with |log2(fold change)|\u22651 and p-values <0.05 were considered differentially expressed.\n\n### Statistical analysis\n\nThe t-test was used for comparing the mutations across gene functional categories in TubercuList (Kapopoulou et al., 2011) nucleotide diversity and the ratios of the six mutation types between TB patients with good and poor treatment outcomes. The mean was given plus or minus standard error (mean \u00b1 SE). The chi-square test was used to assess whether the distribution of MTB lineages differed between patients with different treatment outcomes. Factors associated with poor treatment outcomes were tested with logistic regression in univariate and multivariate analyses. Variables found to have a p<0.2 in the univariate analyses were included in the multivariate models. We constructed logistic regression models with the selected bacterial and host factors as predictors of TB treatment outcome, and the ROC curves of the prediction models were compared using DeLong\u2019s test.\n",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "78ea0b67-65ce-4fc3-9292-0a60754aa310",
+      "submission_id": "1aa69874-0051-41c3-9b27-aa5759f78c2f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, https://ror.org/03rp50x72 University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84815.sa0](https://doi.org/10.7554/eLife.84815.sa0)\n\nIn this useful study, a Genome Wide Association-type analysis is applied to clinical Mycobacterium tuberculosis isolates to discover genetic polymorphisms linked to poor tuberculosis outcomes. The evidence for the detected associations is still incomplete, as the corresponding polymorphisms are not adequate to power a prediction model for infection outcome, although key host factors \u2013 including patient age, sex, and duration of diagnostic delay (which have stronger predictive value) \u2013 appear to enhance predictive capacity. The work will be of interest to clinical microbiologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, https://ror.org/03rp50x72 University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84815.sa1](https://doi.org/10.7554/eLife.84815.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The mutational signatures of poor treatment outcomes on the drug-susceptible Mycobacterium tuberculosis genome\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Bavesh Kana as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Annelies Van Rie (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1. The manuscript provides little to no detail about how the samples were obtained, other than the fact that they are \"pre-treatment\" samples. The authors must clarify if they are all sputum samples (as assumed) and if some/all represent induced sputa. Similarly, much greater detail is required about sample propagation, in particular, the possibility that samples underwent (multiple rounds of) in vitro culture to achieve sufficient biomass for whole-genome sequencing. If so, what growth media were used, how long were samples cultured, and how many generations does this equate to? Also, it is very important to know if all samples were treated identically.\n\n2. Continuing from the above, it wasn't clear what was meant by some of the terminology used in the manuscript. Does the term \"isolates\" indicate that samples were plated to separate single colonies? Or are the \"isolates\" referred to throughout the manuscript actually populations of potentially different Mtb clones obtained \u2013 and propagated \u2013 as mixed samples? This information is critical given the potential that the identified polymorphisms \u2013 both fixed and, perhaps even more so, unfixed \u2013 might have arisen as a consequence of in vitro (laboratory) handling under standard aerobic conditions.\n\n3. Causation is always difficult to establish unequivocally in this type of study. Ideally, the Mtb genotypes contained within samples obtained pre-treatment should be compared with samples obtained following treatment when the \"poor\" outcome was manifest \u2013 the expectation being that the polymorphisms identified should be evident (even dominant) at the later stage. In the absence of these data \u2013 which are difficult to obtain (even impossible, for example, where the \"poor\" outcome was death) \u2013 it would strengthen the perceived relevance of the identified mutations if the authors were able to provide any other evidence \u2013 perhaps from studies of drug-resistant Mtb isolates? \u2013 supporting their inferred role in undermining frontline treatment.\n\n4. Related to the above, the authors make a valid point that their intention here was different from other studies which have deliberately utilized drug-resistant Mtb isolates to identify resistance-conferring and resistance-enabling mutations. Nevertheless, it would be very interesting to know if any of the mutations identified in those other studies were also picked up here \u2013 and, if not, why that might be the case.\n\n5. The analyses presented in this study are heavily dependent on statistical methods; however, there is very little detail provided about the methodology applied. This omission detracts from the inferred outcomes-associated Mtb polymorphisms, especially given that the predominance of lineage 2 (and sub-lineage 2.3) risks a lineage-specific association, rather than a more generalizable pathogenicity phenotype.\n\n6. It is also not clear that the statistical analyses have considered the fact that the \"good\" outcomes exceed the \"poor\" outcomes by a factor of ~34x. Similarly, the heavy skew in the \"good\" (3105) versus \"poor\" (91) samples (approximately 34x difference in sample size) raises the possibility that mutations identified in the \"poor\" category might be artificially over-represented. More clarity in detailing the statistical methods is required to allay any concerns about the identification of candidate polymorphisms.\n\n7. Related to the above: The reference in the abstract to \"3496 MTB strains\" is deceptive: 300 \"other\" were excluded, and the remaining samples are split 3105:91. This means only 91 samples derive from \"poor\" outcomes, which is the focus of the work.\n\n8. The authors note the importance of \"host\" factors, including age, sex, duration of diagnostic delay, etc. How were these factors separated (excluded) from the mycobacterium-associated factors in comparing genotypes from \"good\" versus \"poor\" outcomes?\n\n9. It is not clear why SEM was performed. SEM is used to assess causal relationships between variables. This study is focused on the predictive power of the genomic mutations, on their own and adjusted for patient-related factors. SEM seems inappropriate here and can be removed.\n\n10. In drug-susceptible TB, adherence to treatment is probably the most important determinant for failure and relapse. Were data on adherence included as a variable in the logistic regression model?\n\n11. The following results are essential and should be included in the abstract: (i) Bacterial factors on their own had poor predictive power AUC of 0.58. The AUC for predicting poor treatment outcomes increased significantly (P = 0.01) from 0.70 to 0.74 when including both. (ii) Only 24.2% (22/91) of patients with poor outcomes carried at least one GWAS-identified fixed mutation.\n\n12. In the conclusion, it is stated: \"While we found a statistically significant effect of the MTB genomic determinants on treatment outcomes of drug-sensitive cases, the effect appears to be limited\" This would be the most appropriate conclusion for the abstract.\n\nReviewer #1 (Recommendations for the authors):\n\nHalf of the poor treatment outcomes were relapses.\n\nQ1: did you check if there were differences in the14 Mtb variants between the relapse cases and other reasons for poor treatment outcomes?\n\nQ2: For the patients who relapsed, was the isolate at the time of relapse also sequenced? Di you find the same variants in the 13 genes of interest at the time of relapse in these samples?\n\nIt is not clear to me why a SEM was performed. SEM is used to assess causal relationships between variables. In your analysis, you are much more interested in the predictive power of the genomic mutations, on their own and adjusted for patient-related factors. I do not think SEM is appropriate here and suggest you remove these results.\n\nIn drug-susceptible TB, adherence to treatment is probably the most important determinant for failure and relapse. Did you have data on adherence was this included as a variable in the logistic regression model?\n\nComment: (1) Bacterial factors on their own had poor predictive power AUC of 0.58. The AUC for predicting poor treatment outcomes increased significantly (P = 0.01) from 0.70 to 0.74 when including both. (2) only 24.2% (22/91) of patients with poor outcomes carried at least one GWAS-identified fixed mutation. These results are essential and should be included in the abstract\n\nIn the conclusion, you state: \"While we found a statistically significant effect of the MTB genomic determinants on treatment outcomes of drug-sensitive cases, the effect appears to be limited\" This would be the most appropriate conclusion for the abstract.\n\nReviewer #2 (Recommendations for the authors):\n\nThere is a novelty in this study given the focus on drug-susceptible treatment outcomes, and the results presented support the value of this type of work. That said, there are some aspects of the manuscript that the authors might consider addressing to strengthen the claims made:\n\n1. The manuscript provides little to no detail about how the samples were obtained, other than the fact that they are \"pre-treatment\" samples. The authors must clarify if they are all sputum samples (as assumed) and if some/all represent induced sputa. Similarly, much greater detail is required about sample propagation, in particular, the possibility that samples underwent (multiple rounds) of in vitro culture to achieve sufficient biomass for whole-genome sequencing. If so, what growth media were used, how long were samples cultured, and how many generations does this equate to? Also, it is very important to know if all samples were treated identically.\n\n2. Continuing from the above, it wasn't clear what was meant by some of the terminology used in the manuscript. Does the term \"isolates\" indicate that samples were plated to separate single colonies? Or are the \"isolates\" referred to throughout the manuscript actually populations of potentially different Mtb clones obtained \u2013 and propagated \u2013 as a mixed sample? This information is critical given the potential that the identified polymorphisms \u2013 both fixed and, perhaps even more so, unfixed \u2013 might have arisen as a consequence of in vitro (laboratory) handling under standard aerobic conditions.\n\n3. Causation is always difficult to establish unequivocally in this type of study. Ideally, the Mtb genotypes contained within samples obtained pre-treatment should be compared with samples obtained following treatment \u2013 when the \"poor\" outcome was manifest, the expectation being that the polymorphisms identified should be evident (even dominant) at the later stage. In the absence of these data \u2013 which I recognize are difficult to obtain (even impossible, for example where the \"poor\" outcome was death) \u2013 it would strengthen the perceived relevance of the identified mutations if the authors were able to provide any other evidence \u2013 perhaps from studies of drug-resistant Mtb isolates? \u2013 supporting their inferred role in undermining frontline treatment.\n\n4. Related to the above, the authors make a valid point that their intention here was different from other studies which have deliberately utilized drug-resistant Mtb isolates to identify resistance-conferring and resistance-enabling mutations. Nevertheless, it would be very interesting to know if any of the mutations identified in those other studies were also picked up here \u2013 and, if not, why that might be the case.\n\n5. The analyses presented in this study are heavily dependent on statistical methods. As for sample handling, however, there is very little detail provided about the methodology applied. This omission detracts from the interpretation, especially given that the predominance of lineage 2 (and sub-lineage 2.3) risks a lineage-specific association, rather than a more generalizable pathogenicity phenotype.\n\n6. Related to the above: The reference in the abstract to \"3496 MTB strains\" is deceptive: 300 \"other\" were excluded, and the remaining samples are split 3105:91. This means only 91 samples derive from \"poor\" outcomes, which is the focus of the work.\n\n7. Continuing from the above, it is not clear that the statistical analyses have taken into account the fact that the \"good\" outcomes exceed the \"poor\" outcomes by a factor of ~34x. Similarly, the heavy skew in the \"good\" (3105) versus \"poor\" (91) samples (approximately 34x difference in sample size) raises the possibility that mutations identified in the \"poor\" category might be artificially over-represented. More clarity in detailing the statistical methods is required to allay any concerns about the identification of candidate polymorphisms.\n\n8. The authors note the importance of \"host\" factors, including age, sex, duration of diagnostic delay, etc. How were these factors separated (excluded) from the mycobacterium-associated factors in comparing genotypes from \"good\" versus \"poor\" outcomes?\n",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a7362562-8b10-49dd-8d8f-10a306a1bec6",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C1",
+      "claim": "Tuberculosis (TB), caused by Mycobacterium tuberculosis (MTB), is responsible for more deaths globally than any other single infectious agent, causing nearly 1.5 million deaths and an estimated 10 million new cases each year.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuberculosis (TB), caused by Mycobacterium tuberculosis (MTB), is responsible for more deaths globally than any other single infectious agent, causing nearly 1.5 million deaths and an estimated 10 million new cases each year (World Health Organization, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to World Health Organization, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "9467fa7a-99c9-4c5c-9129-b1e0db194ae5",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C2",
+      "claim": "Approximately 86% of patients with drug-susceptible TB are cured with the standard four-drug treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "While approximately 86% of patients with drug-susceptible TB are cured with the standard four-drug treatment (World Health Organization, 2022), there remains a substantial subset of patients who fail treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to World Health Organization, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "47411d11-d81c-48aa-ae8d-d2611cd15ae1",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C3",
+      "claim": "Poor patient adherence is a host factor associated with treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "There are host factors that are well known to be associated with treatment failure, including poor patient adherence (Alipanah et al., 2018), sex, age (Imperial et al., 2018), diagnostic delay (Lestari et al., 2020), co-infection with the human immunodeficiency virus (HIV) and TB treatment history (Bastos et al., 2017; Chenciner et al., 2021), but we wondered whether the genetic composition of the infecting strain might also contribute to poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alipanah et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "af1a3025-245d-40dd-817c-fe481b86331c",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C4",
+      "claim": "Sex is a host factor associated with treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "There are host factors that are well known to be associated with treatment failure, including poor patient adherence (Alipanah et al., 2018), sex, age (Imperial et al., 2018), diagnostic delay (Lestari et al., 2020), co-infection with the human immunodeficiency virus (HIV) and TB treatment history (Bastos et al., 2017; Chenciner et al., 2021), but we wondered whether the genetic composition of the infecting strain might also contribute to poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Imperial et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "9d61b1ed-4bcb-40f7-81be-d2849fc48d01",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C5",
+      "claim": "Age is a host factor associated with treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "There are host factors that are well known to be associated with treatment failure, including poor patient adherence (Alipanah et al., 2018), sex, age (Imperial et al., 2018), diagnostic delay (Lestari et al., 2020), co-infection with the human immunodeficiency virus (HIV) and TB treatment history (Bastos et al., 2017; Chenciner et al., 2021), but we wondered whether the genetic composition of the infecting strain might also contribute to poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Imperial et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "e5279eae-d86d-4657-bc8d-5716b9206718",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C6",
+      "claim": "Diagnostic delay is a host factor associated with treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "There are host factors that are well known to be associated with treatment failure, including poor patient adherence (Alipanah et al., 2018), sex, age (Imperial et al., 2018), diagnostic delay (Lestari et al., 2020), co-infection with the human immunodeficiency virus (HIV) and TB treatment history (Bastos et al., 2017; Chenciner et al., 2021), but we wondered whether the genetic composition of the infecting strain might also contribute to poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lestari et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "35ea364f-d907-4921-9400-dd3a23b41530",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C7",
+      "claim": "Co-infection with HIV is a host factor associated with treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "There are host factors that are well known to be associated with treatment failure, including poor patient adherence (Alipanah et al., 2018), sex, age (Imperial et al., 2018), diagnostic delay (Lestari et al., 2020), co-infection with the human immunodeficiency virus (HIV) and TB treatment history (Bastos et al., 2017; Chenciner et al., 2021), but we wondered whether the genetic composition of the infecting strain might also contribute to poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bastos et al., 2017 and Chenciner et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "28eeb349-b9a6-4f5f-a1b1-5d2379be075f",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C8",
+      "claim": "TB treatment history is a host factor associated with treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "There are host factors that are well known to be associated with treatment failure, including poor patient adherence (Alipanah et al., 2018), sex, age (Imperial et al., 2018), diagnostic delay (Lestari et al., 2020), co-infection with the human immunodeficiency virus (HIV) and TB treatment history (Bastos et al., 2017; Chenciner et al., 2021), but we wondered whether the genetic composition of the infecting strain might also contribute to poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bastos et al., 2017 and Chenciner et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "4f2a04f3-e1ef-4e61-b779-a8c495d0b519",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C9",
+      "claim": "Drug resistance is the major bacterial risk factor for TB treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "While drug resistance is the major bacterial risk factor for TB treatment failure (Lange et al., 2019; Mirzayev et al., 2021), a growing number of genomic studies suggest that other bacterial determinants may also be risk factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lange et al., 2019 and Mirzayev et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "4fe7b6c4-b1eb-4076-862f-c0d9da4eeb26",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C10",
+      "claim": "Specific mutations in metabolism-related genes of MTB could lead to drug tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, specific mutations in metabolism-related genes of MTB could lead to drug tolerance (Hicks et al., 2018; Torrey et al., 2016), thereby increasing the risk of developing resistance and relapsing after treatment (Brauner et al., 2016; Liu et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hicks et al., 2018 and Torrey et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "001b18f2-a8dc-41a3-9e91-05f215d6ef4f",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C11",
+      "claim": "Drug tolerance increases the risk of developing resistance and relapsing after treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, specific mutations in metabolism-related genes of MTB could lead to drug tolerance (Hicks et al., 2018; Torrey et al., 2016), thereby increasing the risk of developing resistance and relapsing after treatment (Brauner et al., 2016; Liu et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brauner et al., 2016 and Liu et al., 2020a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "1a8f3398-f9f4-45d7-8173-e637c2828721",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C12",
+      "claim": "Genetic mutations in the gene encoding the transcriptional regulator resR can cause antibiotic resilience and are associated with the acquisition of drug resistance and treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "(Liu et al., 2022) recently showed that genetic mutations in the gene encoding the transcriptional regulator resR can cause antibiotic resilience and are associated with the acquisition of drug resistance and treatment failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d7857114-cab3-405a-82bf-193680591675",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C13",
+      "claim": "The pooled study population from the three different sites in China consisted of 3496 new cases of drug-susceptible TB.",
+      "claim_type": "EXPLICIT",
+      "source": "The pooled study population from the three different sites in China consisted of 3496 new cases of drug-susceptible TB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "5c854b37-8734-46cf-ade0-e596ffd7fc6e",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C14",
+      "claim": "88.8% (3105/3496) of patients had good outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The patients were divided into three groups based on their treatment outcomes: good outcomes (88.8%, 3105/3496), poor outcomes (2.6%, 91/3496), and other outcomes (8.6%, 300/3496).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "64ee8042-b034-440c-9f59-0c917e20fa16",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C15",
+      "claim": "2.6% (91/3496) of patients had poor outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The patients were divided into three groups based on their treatment outcomes: good outcomes (88.8%, 3105/3496), poor outcomes (2.6%, 91/3496), and other outcomes (8.6%, 300/3496).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "cb44cc45-6c33-46cc-9eb3-b6ed81886b06",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C16",
+      "claim": "8.6% (300/3496) of patients had other outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The patients were divided into three groups based on their treatment outcomes: good outcomes (88.8%, 3105/3496), poor outcomes (2.6%, 91/3496), and other outcomes (8.6%, 300/3496).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "4bf36ec3-206d-45f8-9c16-2eadb5e91497",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C17",
+      "claim": "A total of 3196 new cases with drug-susceptible TB were included in the study: 3105 with good outcomes and 91 with poor outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, a total of 3196 new cases with drug-susceptible TB were included in the study (Figure 1A): 3105 with good outcomes and 91 with poor outcomes (failure, 25; TB death, 15; transferred for MDR, 4; and relapse, 47).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data and shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "f201db0a-093a-47fe-a65b-d058cbd869de",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C18",
+      "claim": "Poor outcomes included failure (25 cases), TB death (15 cases), transferred for MDR (4 cases), and relapse (47 cases).",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, a total of 3196 new cases with drug-susceptible TB were included in the study (Figure 1A): 3105 with good outcomes and 91 with poor outcomes (failure, 25; TB death, 15; transferred for MDR, 4; and relapse, 47).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data and shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "000a9cbf-77cf-4103-a451-de3351a359a5",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C19",
+      "claim": "49.1% (1569/3196) of study patients were recruited from Shanghai.",
+      "claim_type": "EXPLICIT",
+      "source": "The study patients were recruited from Shanghai (49.1%, 1569/3196), Sichuan (30.6%, 979/3196), and Heilongjiang (20.3%, 648/3196) provinces, China (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data and shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "7601f233-acd3-4435-92d3-4a2aee1539cb",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C20",
+      "claim": "30.6% (979/3196) of study patients were recruited from Sichuan.",
+      "claim_type": "EXPLICIT",
+      "source": "The study patients were recruited from Shanghai (49.1%, 1569/3196), Sichuan (30.6%, 979/3196), and Heilongjiang (20.3%, 648/3196) provinces, China (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data and shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "0a40e315-e198-4713-97b8-bb13b4084a82",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C21",
+      "claim": "20.3% (648/3196) of study patients were recruited from Heilongjiang.",
+      "claim_type": "EXPLICIT",
+      "source": "The study patients were recruited from Shanghai (49.1%, 1569/3196), Sichuan (30.6%, 979/3196), and Heilongjiang (20.3%, 648/3196) provinces, China (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data and shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d0f1fbb2-95c1-4467-85a0-863aabb767e4",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C22",
+      "claim": "The study patients had a mean age of 42.1 \u00b1 18.2 years.",
+      "claim_type": "EXPLICIT",
+      "source": "They had a mean age of 42.1 \u00b1 18.2 years and 72.4% (2313/3196) were male.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "49d878d0-68c3-4bf6-891c-d301f8c2323b",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C23",
+      "claim": "72.4% (2313/3196) of study patients were male.",
+      "claim_type": "EXPLICIT",
+      "source": "They had a mean age of 42.1 \u00b1 18.2 years and 72.4% (2313/3196) were male.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "732de83a-307a-4f17-8582-a54487354609",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C24",
+      "claim": "WGS was performed on all 3196 isolates, with an average depth of 100\u00d7 and average genome coverage of 98%.",
+      "claim_type": "EXPLICIT",
+      "source": "WGS was performed on all 3196 isolates, with an average depth of 100\u00d7and average genome coverage of 98%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "abd0e0bf-c716-4084-9a15-0a4287803115",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C25",
+      "claim": "Nearly three-quarters of the isolates were lineage 2 (74.2%, 2373/3196).",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis of WGS data showed that nearly three-quarters of the isolates were lineage 2 (74.2%, 2373/3196), with more than half belonging to the modern Beijing sublineage L2.3 (54.9%, 1754/3196) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data and shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "e6478d46-1880-4c9b-8cee-bc1d1e74ffde",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C26",
+      "claim": "More than half of the isolates belonged to the modern Beijing sublineage L2.3 (54.9%, 1754/3196).",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis of WGS data showed that nearly three-quarters of the isolates were lineage 2 (74.2%, 2373/3196), with more than half belonging to the modern Beijing sublineage L2.3 (54.9%, 1754/3196) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data and shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "ca0ec157-e120-406c-94ae-90b4515aa24b",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C27",
+      "claim": "GWAS of the MTB isolates identified fourteen fixed nonsynonymous variants associated with poor treatment outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS of the MTB isolates identified fourteen fixed nonsynonymous variants associated with poor treatment outcomes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from GWAS analysis and shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "4c07ebc5-f6e9-4e4e-afc6-0f4f0db0ccb1",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C28",
+      "claim": "The fourteen variants were distributed in thirteen genes involved in intermediary metabolism, and respiration (cobN, dlaT, metA, Rv0648, and Rv1248c), cell wall and cell processes (ctpB, Rv2164c, and Rv1717) and virulence (otsB1 and Rv3168).",
+      "claim_type": "EXPLICIT",
+      "source": "These variants were distributed in thirteen genes involved in intermediary metabolism, and respiration (cobN, dlaT, metA, Rv0648, and Rv1248c), cell wall and cell processes (ctpB, Rv2164c, and Rv1717) and virulence (otsB1 and Rv3168), with the otsB1 G559D mutation showing the strongest association (p=7.3 \u00d7 10\u201310) (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from GWAS analysis with reference to Figure 2\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "4b004b0d-d114-4fd0-ba98-debfc19a4a82",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C29",
+      "claim": "The otsB1 G559D mutation showed the strongest association with poor treatment outcomes (p=7.3 \u00d7 10\u201310).",
+      "claim_type": "EXPLICIT",
+      "source": "These variants were distributed in thirteen genes involved in intermediary metabolism, and respiration (cobN, dlaT, metA, Rv0648, and Rv1248c), cell wall and cell processes (ctpB, Rv2164c, and Rv1717) and virulence (otsB1 and Rv3168), with the otsB1 G559D mutation showing the strongest association (p=7.3 \u00d7 10\u201310) (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from GWAS analysis with reference to Figure 2\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "2d86136f-a930-4271-af2b-d092049a24ea",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C30",
+      "claim": "Unfixed mutations are thought to represent adaptive mutations emerging within the host.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfixed mutations are thought to represent adaptive mutations emerging within the host (Nimmo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nimmo et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "97dba3b6-8333-4387-aed3-858c53dd0e5c",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C31",
+      "claim": "237 unfixed mutations were associated with poor treatment outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether unfixed mutations affect treatment outcomes, we performed a GWAS analysis of unfixed mutations and found that 237 mutations were associated with poor treatment outcomes (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from GWAS analysis and shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d858bb3f-7b2a-4f43-b1aa-e1dc3e5e7b3d",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C32",
+      "claim": "The frequency of unfixed mutations associated with poor outcomes was mostly in the range of 5\u201310%.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of these mutations was mostly in the range of 5\u201310%, and they were predominantly found in genes whose encoded proteins are involved in cell wall and cell processes, intermediary metabolism, and respiration (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data and shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "85e07f78-49ec-4b9d-8872-494840dcdbc2",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C33",
+      "claim": "Unfixed mutations associated with poor outcomes were predominantly found in genes whose encoded proteins are involved in cell wall and cell processes, intermediary metabolism, and respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of these mutations was mostly in the range of 5\u201310%, and they were predominantly found in genes whose encoded proteins are involved in cell wall and cell processes, intermediary metabolism, and respiration (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data and shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "4c611594-9467-4123-823d-146bd2b20778",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C34",
+      "claim": "The highest ranked gene carrying unfixed mutations was gatA, which has been previously associated with rifampicin tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "When the genes carrying unfixed mutations were ranked according to the significance of their associations with poor outcomes, the highest ranked gene was gatA, which has been previously associated with rifampicin tolerance (Cai et al., 2020; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from analysis with citation to Cai et al., 2020 and shown in Figure 2C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "76f66cc6-055d-4de4-aa11-ae257e80db82",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C35",
+      "claim": "Gene expression patterns under stress conditions can provide important insights into the gene's function.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression patterns under stress conditions can provide important insights into the gene's function (Bosch et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bosch et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "c2ee4429-d0c4-4ebe-8688-4a7e26a7be73",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C36",
+      "claim": "The expression of Rv2164c increased under drug-treated and hypoxia conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of some of the genes increased under these conditions (drug-treated: Rv2164c, cobN, Rv0260c; hypoxia: Rv2164c, otsB1, papA1), but only Rv2164c (Figure 2D) contained both GWAS-identified fixed (Figure 2A) and unfixed (Figure 2C) mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from RNA-seq analysis and shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "3cd379dd-90f2-4b2c-8779-7571fcdf320f",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C37",
+      "claim": "Only Rv2164c contained both GWAS-identified fixed and unfixed mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of some of the genes increased under these conditions (drug-treated: Rv2164c, cobN, Rv0260c; hypoxia: Rv2164c, otsB1, papA1), but only Rv2164c (Figure 2D) contained both GWAS-identified fixed (Figure 2A) and unfixed (Figure 2C) mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data with references to Figures 2A, 2C, and 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "305e279b-593a-4952-b077-1f2c97abc507",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C38",
+      "claim": "The expression of otsB1, Rv0648, Rv1248c, and Rv3168 decreased under drug-treated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of other genes decreased (drug-treated: otsB1, Rv0648, Rv1248c, Rv3168; hypoxia: Rv0648) (Figure 2D; Figure 2\u2014figure supplement 2), suggesting these genes could be involved in adaptation to drug and hypoxic stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from RNA-seq analysis and shown in Figure 2D and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "3c5bc146-0cba-480f-b059-bbbb6683148c",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C39",
+      "claim": "The expression of Rv0648 decreased under hypoxia conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of other genes decreased (drug-treated: otsB1, Rv0648, Rv1248c, Rv3168; hypoxia: Rv0648) (Figure 2D; Figure 2\u2014figure supplement 2), suggesting these genes could be involved in adaptation to drug and hypoxic stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from RNA-seq analysis and shown in Figure 2D and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "6dd26bff-3f27-40ae-8f7d-8370b9975029",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C40",
+      "claim": "Genes with decreased expression under drug and hypoxic stress could be involved in adaptation to drug and hypoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of other genes decreased (drug-treated: otsB1, Rv0648, Rv1248c, Rv3168; hypoxia: Rv0648) (Figure 2D; Figure 2\u2014figure supplement 2), suggesting these genes could be involved in adaptation to drug and hypoxic stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an inference based on gene expression data shown in Figure 2D and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "05641297-ee32-4b14-8f9f-a4de0ba6d2ca",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C41",
+      "claim": "Poor TB treatment outcomes may be associated with increased ROS mutational signatures (C>T/G>A mutations).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports have suggested that poor TB treatment outcomes may be associated with increased ROS mutational signatures (C>T/G>A mutations) (Liu et al., 2020b; Moreno-Molina et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liu et al., 2020b and Moreno-Molina et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "05c9acb9-9957-4b0f-85c6-28fd9de10e80",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C42",
+      "claim": "In the fixed mutations, there was no significant difference in the proportions of ROS mutational signatures for isolates from patients with good or poor outcomes (43.9% vs 44.2%, t-test, p=0.364).",
+      "claim_type": "EXPLICIT",
+      "source": "In the fixed mutations, there was no significant difference in the proportions of ROS mutational signatures for isolates from patients with good or poor outcomes (43.9% vs 44.2%, t-test, p=0.364, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from statistical analysis and shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "40dcf777-67a0-4402-ae7c-2af1d355f140",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C43",
+      "claim": "In the unfixed de novo mutations, the ROS mutational signatures were significantly more frequent in isolates from patients with poor outcomes (26.3% vs 22.9%, t-test, p=0.027).",
+      "claim_type": "EXPLICIT",
+      "source": "In the unfixed de novo mutations, however, the ROS mutational signatures were significantly more frequent in isolates from patients with poor outcomes (26.3% vs 22.9%, t-test, p=0.027, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from statistical analysis and shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "57303dcc-bed9-445e-9a43-897ff0fd3aa0",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C44",
+      "claim": "There was no difference in the distribution of total unfixed mutations between good and poor outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A further analysis of the distribution of unfixed mutations across gene functional categories found no difference in the distribution of total unfixed mutations between good and poor outcomes (Figure 3B), but isolates from patients with poor outcomes showed a higher percentage of nonsynonymous mutations (5.7% vs 3.9%, t-test, p=0.048, Figure 3B) in genes belonging to the functional category 'information pathway'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from statistical analysis and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "b801844d-d204-4926-a086-28973a34819f",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C45",
+      "claim": "Isolates from patients with poor outcomes showed a higher percentage of nonsynonymous mutations (5.7% vs 3.9%, t-test, p=0.048) in genes belonging to the functional category 'information pathway'.",
+      "claim_type": "EXPLICIT",
+      "source": "A further analysis of the distribution of unfixed mutations across gene functional categories found no difference in the distribution of total unfixed mutations between good and poor outcomes (Figure 3B), but isolates from patients with poor outcomes showed a higher percentage of nonsynonymous mutations (5.7% vs 3.9%, t-test, p=0.048, Figure 3B) in genes belonging to the functional category 'information pathway'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from statistical analysis and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "9b20f851-8999-4793-8b92-c748f454a369",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C46",
+      "claim": "Nucleotide diversity and the characteristics of the different lineages of MTB are thought to be determinants of virulence and thus may affect TB treatment outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleotide diversity and the characteristics of the different lineages of MTB are thought to be determinants of virulence and thus may affect TB treatment outcomes. (O'Neill et al., 2015; Tong et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Neill et al., 2015 and Tong et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "50c4dcf4-6138-4a9a-8d14-dd8ec7775041",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C47",
+      "claim": "An analysis of nucleotide diversity revealed no significant differences between isolates from patients with good or poor outcomes (2.0 \u00d7 10\u20134 vs 2.6 \u00d7 10\u20134, t-test, p=0.156).",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of nucleotide diversity revealed no significant differences between isolates from patients with good or poor outcomes (2.0 \u00d7 10\u20134 vs 2.6 \u00d7 10\u20134, t-test, p=0.156, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from statistical analysis and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "9a367fb8-1f93-4d0a-8964-93c1f1cf09b0",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C48",
+      "claim": "Strains belonging to the modern Beijing lineage L2.3 were significantly more prevalent in patients with good outcomes (55.5% vs 44.0%, chi-square test, p=0.038).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an analysis of lineage distribution showed that strains belonging to the modern Beijing lineage L2.3 were significantly more prevalent in patients with good outcomes (55.5% vs 44.0%, chi-square test, p=0.038, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from statistical analysis and shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "4fe1e5da-9f5a-4856-8895-955d3e7946c0",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C49",
+      "claim": "Lineage L2.3 has been associated with high virulence and increased transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Although lineage L2.3 has been associated with high virulence and increased transmission (Tong et al., 2022), lineage was not associated with poor treatment outcomes in the populations studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tong et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "6ab9a909-345c-4fd6-a0d2-1b5034d86ae4",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C50",
+      "claim": "Lineage was not associated with poor treatment outcomes in the populations studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Although lineage L2.3 has been associated with high virulence and increased transmission (Tong et al., 2022), lineage was not associated with poor treatment outcomes in the populations studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct result from the study analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "5d3c5d8b-384d-427d-adec-697affe06c25",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C51",
+      "claim": "Patient age, sex, duration of diagnostic delay, and the GWAS-identified fixed mutations were all independently associated with poor TB outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that patient age, sex, duration of diagnostic delay, and the GWAS-identified fixed mutations were all independently associated with poor TB outcomes (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from logistic regression analysis and shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "40d2ae5a-148a-481e-8223-fec66e77e801",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C52",
+      "claim": "In a 65-year-old male TB patient with a 4 month delay in diagnosis, the risk of poor outcome would increase from 5.4 to 17.4% if his MTB isolate contained at least one GWAS-identified mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in a 65-year-old male TB patient with a 4 month delay in diagnosis, the risk of poor outcome would increase from 5.4 to 17.4% if his MTB isolate contained at least one GWAS-identified mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an example calculation from the clinical prediction model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "619d7868-1c82-4bf2-b604-ae72cce882d8",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C53",
+      "claim": "The ROC curve for the clinical prediction model based only on host risk factors had an AUC of 0.70.",
+      "claim_type": "EXPLICIT",
+      "source": "The ROC curve for the clinical prediction model based only on host risk factors had an AUC of 0.70, which was significantly higher than the AUC of 0.58 (DeLong's test, p<0.001) when only GWAS-identified bacterial mutations were included (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from ROC analysis and shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d3f43b3c-064e-45e9-9ffe-5e27b6e30d87",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C54",
+      "claim": "The AUC of 0.70 for host risk factors was significantly higher than the AUC of 0.58 when only GWAS-identified bacterial mutations were included (DeLong's test, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The ROC curve for the clinical prediction model based only on host risk factors had an AUC of 0.70, which was significantly higher than the AUC of 0.58 (DeLong's test, p<0.001) when only GWAS-identified bacterial mutations were included (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from statistical comparison and shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "a298bf1a-dfd4-408e-8b86-6be79b71a1b1",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C55",
+      "claim": "When both host factors and GWAS-identified mutations were included in the model, the AUC for predicting poor treatment outcomes increased significantly (DeLong's test, p=0.01) from 0.70 to 0.74, with a sensitivity of 0.85 and specificity of 0.55.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when both host factors and GWAS-identified mutations were included in the model, the AUC for predicting poor treatment outcomes increased significantly (DeLong's test, p=0.01) from 0.70 to 0.74, with a sensitivity of 0.85 and specificity of 0.55 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct result from statistical comparison and shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d9edc829-8ceb-4302-97b9-e131029b873c",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C56",
+      "claim": "Genomic variants of the infecting MTB strain may be markers for poor tuberculosis treatment outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this analysis, it appears that genomic variants of the infecting MTB strain may be markers for poor tuberculosis treatment outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference based on the ROC analysis results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d3d8261d-9cd1-4cfe-873c-98203a4615ea",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C57",
+      "claim": "This is the first comprehensive evaluation of the contribution of bacterial genetic factors to poor treatment outcomes in drug-susceptible TB patients.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first comprehensive evaluation of the contribution of bacterial genetic factors to poor treatment outcomes in drug-susceptible TB patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a claim about the novelty of the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "457cc2b1-ef5f-4ce3-9de5-446db095b876",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C58",
+      "claim": "Patient characteristics of age, sex, and duration of diagnostic delay were associated with poor TB treatment outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our analysis showed that, as expected, patient characteristics of age, sex, and duration of diagnostic delay were associated with poor TB treatment outcomes, it also found fourteen bacterial genomic variants that were associated with an increased risk of poor treatment outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct result from the study analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "b444ccc1-d6c5-4fe9-a772-c23555cefe88",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C59",
+      "claim": "Fourteen bacterial genomic variants were associated with an increased risk of poor treatment outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our analysis showed that, as expected, patient characteristics of age, sex, and duration of diagnostic delay were associated with poor TB treatment outcomes, it also found fourteen bacterial genomic variants that were associated with an increased risk of poor treatment outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct result from the study analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "7460c6bc-139b-43ce-87d4-09ab3c473569",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C60",
+      "claim": "The best clinical prediction model, with an AUC of 0.74, incorporates both host and bacterial risk factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The best clinical prediction model, with an AUC of 0.74, incorporates both host and bacterial risk factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct result from the study analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "ec271b21-e2a9-494d-a68a-65cde3cd8e13",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C61",
+      "claim": "In a setting where the genomes of all MTB isolates are sequenced, these risk factors may provide a rationale for developing personalized approaches to tuberculosis treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In a setting where the genomes of all MTB isolates are sequenced, these risk factors may provide a rationale for developing personalized approaches to tuberculosis treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculative implication of the study findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "15196454-c667-47d9-9cd4-3fe741dc8937",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C62",
+      "claim": "GWAS has yielded remarkable advances in the understanding of complex traits and has identified hundreds of genetic risk variants in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS has yielded remarkable advances in the understanding of complex traits and has identified hundreds of genetic risk variants in humans (Uffelmann et al., 2021), including genetic polymorphisms associated with increased susceptibility to TB (Quistrebert et al., 2021; Zheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Uffelmann et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "1665d2e1-3926-408c-99ff-3c5693cd2a3c",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C63",
+      "claim": "GWAS has identified genetic polymorphisms associated with increased susceptibility to TB.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS has yielded remarkable advances in the understanding of complex traits and has identified hundreds of genetic risk variants in humans (Uffelmann et al., 2021), including genetic polymorphisms associated with increased susceptibility to TB (Quistrebert et al., 2021; Zheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Quistrebert et al., 2021 and Zheng et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "118ac6d9-f02c-4a23-ad23-b86b28477b8b",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C64",
+      "claim": "GWAS has identified genetic determinants of MTB drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS has identified genetic determinants of MTB drug resistance (Coll et al., 2018; Farhat et al., 2013), TB transmission (Sobkowiak et al., 2020), virulence (Genestet et al., 2022) and host preference (Luo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Coll et al., 2018 and Farhat et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d981b156-2ab1-47ea-a647-be682c8698a6",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C65",
+      "claim": "GWAS has identified genetic determinants of TB transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS has identified genetic determinants of MTB drug resistance (Coll et al., 2018; Farhat et al., 2013), TB transmission (Sobkowiak et al., 2020), virulence (Genestet et al., 2022) and host preference (Luo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sobkowiak et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d2719aae-5973-4145-9462-d686e55c7bbb",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C66",
+      "claim": "GWAS has identified genetic determinants of MTB virulence.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS has identified genetic determinants of MTB drug resistance (Coll et al., 2018; Farhat et al., 2013), TB transmission (Sobkowiak et al., 2020), virulence (Genestet et al., 2022) and host preference (Luo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Genestet et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "ecc72996-9bcd-4b6e-94ff-04ae3f500cc7",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C67",
+      "claim": "GWAS has identified genetic determinants of MTB host preference.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS has identified genetic determinants of MTB drug resistance (Coll et al., 2018; Farhat et al., 2013), TB transmission (Sobkowiak et al., 2020), virulence (Genestet et al., 2022) and host preference (Luo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Luo et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "212291a7-249f-43be-8471-5596de43664f",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C68",
+      "claim": "Models that consider only bacterial factors were poor predictors of outcome, with an AUC of only 0.58.",
+      "claim_type": "EXPLICIT",
+      "source": "While this study found mutations in the MTB genome that were associated with poor treatment outcomes, models that consider only bacterial factors were poor predictors of outcome, with an AUC of only 0.58.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct result from the study analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "a9d7aff3-d80f-4b30-b207-71c50a5d9e8a",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C69",
+      "claim": "Only 24.2% (22/91) of patients with poor outcomes carried at least one of the GWAS-identified fixed mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, only 24.2% (22/91) of patients with poor outcomes carried at least one of the GWAS-identified fixed mutations (Figure 2\u2014source data 1), and therefore these mutations played no role in the majority of poor outcomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data with reference to Figure 2\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "35104904-8cce-4869-a1b9-1d6be350b870",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C70",
+      "claim": "The GWAS-identified fixed mutations played no role in the majority of poor outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, only 24.2% (22/91) of patients with poor outcomes carried at least one of the GWAS-identified fixed mutations (Figure 2\u2014source data 1), and therefore these mutations played no role in the majority of poor outcomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an inference based on the low frequency of mutations in patients with poor outcomes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "9a4cf61a-b1ff-4fa2-88a9-70db5619b308",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C71",
+      "claim": "The 237 GWAS-identified unfixed mutations are diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "The 237 GWAS-identified unfixed mutations are diverse (Figure 2\u2014figure supplement 1) and have a mutation frequency that is generally only 5%\u201310% (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data with reference to Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "6ebaf3a3-6a44-4c5f-adaa-cdd777c358b0",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C72",
+      "claim": "The 237 GWAS-identified unfixed mutations have a mutation frequency that is generally only 5%\u201310%.",
+      "claim_type": "EXPLICIT",
+      "source": "The 237 GWAS-identified unfixed mutations are diverse (Figure 2\u2014figure supplement 1) and have a mutation frequency that is generally only 5%\u201310% (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a direct observation from the study data with reference to Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d10ff2fe-a54b-42eb-a5a6-b13d32c99e82",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C73",
+      "claim": "The low frequency of diverse unfixed mutations suggests they may confer a relatively small selective advantage without any preferential mutation types or increasing mutation frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The low frequency of these diverse unfixed mutations suggests they may confer a relatively small selective advantage without any preferential mutation types or increasing mutation frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference based on the observed mutation frequencies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "b7427f2a-99cf-4a04-9dd0-c92e38c9ee13",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C74",
+      "claim": "None of the GWAS-identified unfixed mutations were among the 14 GWAS-identified fixed mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, none of the GWAS-identified unfixed mutations were among the 14 GWAS-identified fixed mutations, suggesting the unfixed mutations merely reflect individual genetic features of the particular MTB isolate with no evidence of homoplastic fixation in the bacterial population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "41dc6b03-8034-4682-ac02-709f859abd1b",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C75",
+      "claim": "The unfixed mutations merely reflect individual genetic features of the particular MTB isolate with no evidence of homoplastic fixation in the bacterial population.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, none of the GWAS-identified unfixed mutations were among the 14 GWAS-identified fixed mutations, suggesting the unfixed mutations merely reflect individual genetic features of the particular MTB isolate with no evidence of homoplastic fixation in the bacterial population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference based on the lack of overlap between fixed and unfixed mutations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "976d0714-b02f-45f0-aa5c-dcae511ba5db",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C76",
+      "claim": "The otsB1 gene encodes trehalose-6-phosphate phosphatase, which has been associated with rifampicin tolerance under hypoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The otsB1 gene harbors the mutation with the strongest association and encodes trehalose-6-phosphate phosphatase, which has been associated with rifampicin tolerance under hypoxic stress (Jakkala and Ajitkumar, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jakkala and Ajitkumar, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "401baacb-b104-4442-a906-0be39880b28f",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C77",
+      "claim": "The E2 component of pyruvate dehydrogenase, encoded by dlaT, is required for optimal MTB growth and resistance to reactive nitrogen intermediates (RNI) and immune killing by host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The E2 component of pyruvate dehydrogenase, encoded by dlaT, is required for optimal MTB growth and resistance to reactive nitrogen intermediates (RNI) and immune killing by host cells (Shi and Ehrt, 2006; Tian et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shi and Ehrt, 2006 and Tian et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "e1abe308-390c-4054-9ca5-2c1b4fe9fb0a",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C78",
+      "claim": "Most of the genes carrying the fourteen GWAS-identified fixed mutations were rarely reported in previous large-scale GWAS of drug-resistant MTB.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the genes carrying the fourteen GWAS-identified fixed mutations were rarely reported in previous large-scale GWAS of drug-resistant MTB (Coll et al., 2018; Farhat et al., 2013; Naz et al., 2023), and none of the fourteen mutations were reported in these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison with previous studies cited",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "755f23e7-b5b8-44ac-84fd-9f9c04ecba4b",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C79",
+      "claim": "None of the fourteen mutations were reported in previous large-scale GWAS of drug-resistant MTB.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the genes carrying the fourteen GWAS-identified fixed mutations were rarely reported in previous large-scale GWAS of drug-resistant MTB (Coll et al., 2018; Farhat et al., 2013; Naz et al., 2023), and none of the fourteen mutations were reported in these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison with previous studies cited",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "3593a805-e06d-41f2-9dc7-9740230d0dd0",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C80",
+      "claim": "CtpB is a probable cation-transporter P-type ATPase B that had been previously identified as potentially associated with first-line drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, two of the genes in which the mutations were found had been previously identified as potentially associated with first-line drug resistance (Farhat et al., 2013): CtpB, a probable cation-transporter P-type ATPase B; and MetA, a probable homoserine O-acetyltransferase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Farhat et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "8bdc0b13-a620-4564-af0c-2dbf25d1f8fd",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C81",
+      "claim": "MetA is a probable homoserine O-acetyltransferase that had been previously identified as potentially associated with first-line drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, two of the genes in which the mutations were found had been previously identified as potentially associated with first-line drug resistance (Farhat et al., 2013): CtpB, a probable cation-transporter P-type ATPase B; and MetA, a probable homoserine O-acetyltransferase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Farhat et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "e77d7019-beb6-4f36-a524-2ae3c457b05f",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C82",
+      "claim": "The inference that the fourteen fixed mutations had only limited effects on treatment outcome would explain why they were not identified in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our inference that the fourteen fixed mutations had only limited effects on treatment outcome would explain why: they were not identified in previous studies; isolates from only 24.2% (22/91) of patients carried any of these 14 mutations; and none of the mutations were shared amongst all 22 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference based on the study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "ef6c8504-856f-433b-9ac7-11a4be901424",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C83",
+      "claim": "None of the fourteen mutations were shared amongst all 22 patients who carried at least one of these mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our inference that the fourteen fixed mutations had only limited effects on treatment outcome would explain why: they were not identified in previous studies; isolates from only 24.2% (22/91) of patients carried any of these 14 mutations; and none of the mutations were shared amongst all 22 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "561fbbd2-ee0b-40fd-a449-50e12ff6fff4",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C84",
+      "claim": "The mutations may be epistatic adaptations suited to the genomic characteristics of each individual strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations may be epistatic adaptations suited to the genomic characteristics of each individual strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculative interpretation of the findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "827625f9-ee71-4fc3-bb25-e72ada1e8c06",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C85",
+      "claim": "The GWAS-identified mutations were also present in some patients with good outcomes but were less frequent than in patients with poor outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The GWAS-identified mutations were also present in some patients with good outcomes but were less frequent than in patients with poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct observation from the study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "be5e879c-1246-4def-af67-b3f4d1804ffa",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C86",
+      "claim": "Host factors are significantly more important determinants of poor outcomes than bacterial factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although patient information was unavailable concerning other known host risk factors such as adherence to the treatment regimen and comorbidities such as HIV co-infection, diabetes, smoking, and low BMI (Kamara et al., 2022; Leung et al., 2015; Vernon et al., 2019), our clinical prediction model still revealed that host factors are significantly more important determinants of poor outcomes than bacterial factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct result from the clinical prediction model analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "cf5435c5-ea59-4e13-b6f9-559565930631",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C87",
+      "claim": "Bacterial genomic factors can contribute to poor outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we believe that our study has shown that bacterial genomic factors can also contribute to poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "8e294141-ba7a-43ec-a8fa-20198bf02b6b",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C88",
+      "claim": "Sample size and the classification of treatment outcomes are important challenges when exploring the association of bacterial factors with poor outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample size and the classification of treatment outcomes are important challenges when exploring the association of bacterial factors with poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a reflection on methodological challenges",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "ad59fe11-c9b2-45df-ae14-050c391fce60",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C89",
+      "claim": "Standard first-line regimens cure at least 85% of drug-susceptible TB patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Because standard first-line regimens cure at least 85% of drug-susceptible TB patients, this study had to pool data from three sites with a total of 3496 new cases to obtain 91 patients with poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about TB treatment outcomes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "bcca4d49-34c5-40a2-bdce-5921860db92a",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C90",
+      "claim": "The study pooled data from three sites with a total of 3496 new cases to obtain 91 patients with poor outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because standard first-line regimens cure at least 85% of drug-susceptible TB patients, this study had to pool data from three sites with a total of 3496 new cases to obtain 91 patients with poor outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct description of the study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "93c458b2-01c0-4b67-ba8c-bff11e048318",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C91",
+      "claim": "300 patients who either died from non-TB causes, were lost to follow-up, or had unknown outcomes were excluded from the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded 300 patients who either died from non-TB causes, were lost to follow-up, or had unknown outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct description of the study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "8d82d7d9-10a2-41ea-aa6e-d05316d25c29",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C92",
+      "claim": "The authors attempted to validate their findings with a dataset of 1397 new drug-susceptible TB cases from Malawi.",
+      "claim_type": "EXPLICIT",
+      "source": "We attempted to validate our findings with a dataset of 1397 new drug-susceptible TB cases from Malawi (Guerra-Assun\u00e7\u00e3o et al., 2015), but were unable to replicate the GWAS analysis because the only poor treatment outcome in the Malawi dataset was death, and it was impossible to distinguish the patients who succumbed to TB from those who died from non-TB causes (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a description of an attempted validation with reference to Guerra-Assun\u00e7\u00e3o et al., 2015 and Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d39d6f6e-22f3-4260-9f25-69b88218569e",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C93",
+      "claim": "The authors were unable to replicate the GWAS analysis with the Malawi dataset because the only poor treatment outcome in the Malawi dataset was death, and it was impossible to distinguish the patients who succumbed to TB from those who died from non-TB causes.",
+      "claim_type": "EXPLICIT",
+      "source": "We attempted to validate our findings with a dataset of 1397 new drug-susceptible TB cases from Malawi (Guerra-Assun\u00e7\u00e3o et al., 2015), but were unable to replicate the GWAS analysis because the only poor treatment outcome in the Malawi dataset was death, and it was impossible to distinguish the patients who succumbed to TB from those who died from non-TB causes (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an explanation for why validation was not possible with reference to Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "6361ccfc-ce0f-4269-8e72-3cf1d084b4b8",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C94",
+      "claim": "There are bacterial genomic variants that are significantly associated with poor treatment outcomes in drug-susceptible TB patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we found that there are bacterial genomic variants that are significantly associated with poor treatment outcomes in drug-susceptible TB patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "b46f0b91-17f4-4ea3-8395-019452321ad2",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C95",
+      "claim": "Host factors are clearly more important than bacterial factors for predicting poor treatment outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although host factors are clearly more important, the most accurate models for predicting poor treatment outcomes with drug-susceptible TB incorporate both host and bacterial risk factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "0d5fb806-8ee6-4c03-917e-ff8b54e38f34",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C96",
+      "claim": "The most accurate models for predicting poor treatment outcomes with drug-susceptible TB incorporate both host and bacterial risk factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although host factors are clearly more important, the most accurate models for predicting poor treatment outcomes with drug-susceptible TB incorporate both host and bacterial risk factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "f5776699-ff78-4c52-b013-280d18e0ab2b",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C97",
+      "claim": "In the future, it may be possible to identify patients at high risk for treatment failure by analyzing the characteristics of both the host and the bacterial genome of the infecting strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, it may be possible to identify patients at high risk for treatment failure by analyzing the characteristics of both the host and the bacterial genome of the infecting strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculative future application of the study findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "b6feb27c-dda6-4f74-8ce2-b81c8192c4ac",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C98",
+      "claim": "Identifying patients at high risk for treatment failure could make it possible to identify patients requiring longer or individualized treatment regimens and thus improve cure rates for drug-susceptible TB.",
+      "claim_type": "EXPLICIT",
+      "source": "This could make it possible to identify patients requiring longer or individualized treatment regimens and thus improve cure rates for drug-susceptible TB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculative future application of the study findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "84736f3f-4c6b-4ad1-b70a-768f1e180bb3",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C99",
+      "claim": "Isolates from patients with poor outcomes showed a higher ratio of reactive oxygen species (ROS)-associated mutations compared to isolates from patients with good outcomes (26.3% vs 22.9%, t-test, p=0.027).",
+      "claim_type": "EXPLICIT",
+      "source": "Isolates from patients with poor outcomes showed a higher ratio of reactive oxygen species (ROS)-associated mutations compared to isolates from patients with good outcomes (26.3% vs 22.9%, t-test, p=0.027).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct result from statistical analysis in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "8dc77bd1-850b-40ff-a6ee-271b8b3d31e4",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C100",
+      "claim": "Bacterial factors alone had poor power to predict poor outcomes with an AUC of 0.58.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial factors alone had poor power to predict poor outcomes with an AUC of 0.58.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct result from ROC analysis in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "551c6deb-4f9c-4913-80c5-c3ff299e7e78",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C101",
+      "claim": "The AUC with host factors alone was 0.70, but increased significantly to 0.74 (DeLong's test, p=0.01) when bacterial factors were also included.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC with host factors alone was 0.70, but increased significantly to 0.74 (DeLong's test, p=0.01) when bacterial factors were also included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a direct result from ROC analysis in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "ef588d4c-6090-41e5-b332-0456b2e5ce76",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "claim_id": "C102",
+      "claim": "Although the study identified MTB genomic mutations that are significantly associated with poor treatment outcomes in drug-susceptible TB cases, their effects appear to be limited.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, although we identified MTB genomic mutations that are significantly associated with poor treatment outcomes in drug-susceptible TB cases, their effects appear to be limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study findings in the abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study cohort consisted of 3196 drug-susceptible TB patients from three sites in China (Shanghai, Sichuan, Heilongjiang), with 3105 good outcomes and 91 poor outcomes. The patients had a mean age of 42.1\u00b118.2 years, 72.4% were male, and whole-genome sequencing showed 74.2% were lineage 2, with 54.9% belonging to the modern Beijing sublineage L2.3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C26 provide comprehensive descriptive statistics of the study population that are internally consistent and clearly documented. The demographic and genomic characterization data appear straightforward and well-supported by the figures referenced (Figure 1A, 1B).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "642d9d44-f59d-4d99-b03e-a6af83e5aba4",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GWAS identified fourteen fixed nonsynonymous variants in thirteen genes associated with poor treatment outcomes, with the otsB1 G559D mutation showing the strongest association (p=7.3\u00d710\u207b\u00b9\u2070). These genes are involved in intermediary metabolism, respiration, cell wall processes, and virulence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 report the primary GWAS findings with appropriate statistical thresholds (Bonferroni correction) and functional annotation. The p-value for the lead variant is highly significant, and the results are visualized in Figure 2A with supporting data referenced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "bff8474b-c16b-4f92-a9f9-45aed98c922a",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GWAS analysis of unfixed mutations identified 237 mutations associated with poor outcomes, with frequencies mostly 5-10%, predominantly in genes involved in cell wall processes, intermediary metabolism, and respiration. The highest-ranked gene was gatA, previously associated with rifampicin tolerance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 describe unfixed mutation analysis with appropriate characterization of frequency distributions and functional categories. The connection to gatA and prior literature (C34) provides biological plausibility, though the low frequencies suggest limited individual effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "c44f4af3-a9f9-4781-a550-a4b7ceff3e73",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gene expression analysis under drug and hypoxic stress showed that Rv2164c expression increased under both conditions and was the only gene containing both GWAS-identified fixed and unfixed mutations. Other genes (otsB1, Rv0648, Rv1248c, Rv3168) showed decreased expression under stress, suggesting involvement in stress adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C40 integrate expression data with GWAS findings, but the expression data comes from H37Rv laboratory strain (not patient isolates), which may not reflect in vivo conditions. The inference about stress adaptation (C40) is speculative without functional validation. The connection between expression changes and treatment outcomes remains indirect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "bc62741b-41de-41a5-805d-ee2c7d12b9ba",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Fixed mutations showed no difference in ROS mutational signatures between good and poor outcomes (43.9% vs 44.2%, p=0.364), but unfixed de novo mutations showed significantly higher ROS signatures in poor outcomes (26.3% vs 22.9%, p=0.027).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 report statistically significant findings for unfixed mutations with appropriate statistical tests. The distinction between fixed and unfixed mutations is biologically meaningful, suggesting ongoing oxidative stress during infection in poor outcome cases. The p-value for unfixed mutations (p=0.027) is marginally significant but consistent across claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "b5a3cafc-6148-437a-be41-5e0893414f50",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Analysis of unfixed mutations across functional categories showed no difference in total mutations between outcomes, but isolates from poor outcomes had a higher percentage of nonsynonymous mutations in 'information pathway' genes (5.7% vs 3.9%, p=0.048).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 report a specific finding about nonsynonymous mutations in information pathway genes with marginal statistical significance (p=0.048). The finding is biologically plausible as information pathway genes could affect bacterial fitness, though the effect size is modest.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "3df78c17-681e-4dd8-903b-95900345323d",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Nucleotide diversity showed no significant difference between good and poor outcomes (p=0.156), but modern Beijing lineage L2.3 was more prevalent in good outcomes (55.5% vs 44.0%, p=0.038). However, lineage was not associated with poor treatment outcomes in the populations studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C50 present contradictory findings: C48 shows L2.3 is significantly associated with good outcomes, but C50 states lineage was not associated with poor outcomes. This logical inconsistency suggests either the statistical analysis or interpretation may be problematic. The finding contradicts prior literature (C49) associating L2.3 with high virulence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "5e2fe13a-2120-4d3d-ada9-64032cfe0f30",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Logistic regression identified patient age, sex, diagnostic delay, and GWAS-identified fixed mutations as independently associated with poor outcomes. A clinical example showed risk increasing from 5.4% to 17.4% in a 65-year-old male with 4-month diagnostic delay if carrying at least one GWAS-identified mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 report multivariable regression results with appropriate covariates. The clinical prediction example (C52) demonstrates practical application, though it's based on model predictions rather than observed data. The independent associations are visualized in Figure 4A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "2773e640-d336-48ed-9742-025cb0b05918",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prediction models showed host factors alone had AUC=0.70, bacterial factors alone had AUC=0.58, and combining both significantly improved prediction to AUC=0.74 (p=0.01, sensitivity=0.85, specificity=0.55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 report ROC analysis with appropriate statistical comparisons (DeLong's test). The modest improvement from 0.70 to 0.74 is statistically significant but clinically limited. The low specificity (0.55) indicates high false positive rates. The findings are consistent across abstract and results sections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "f84a6ba5-8f84-4ef3-b5ed-80d8239ebd04",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Only 24.2% (22/91) of patients with poor outcomes carried at least one GWAS-identified fixed mutation, and none of the fourteen mutations were shared among all 22 patients, suggesting these mutations played no role in the majority of poor outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 provide critical context showing limited penetrance of identified mutations. The inference in C70 is reasonable given the low frequency. The lack of shared mutations (C83) suggests heterogeneous mechanisms rather than a single dominant pathway, which is biologically plausible but limits clinical utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "ce457c9a-4313-4858-9487-456ff803abf2",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The 237 GWAS-identified unfixed mutations are diverse with frequencies generally 5-10%, suggesting small selective advantages without preferential mutation types. None overlapped with the 14 fixed mutations, suggesting they reflect individual genetic features without homoplastic fixation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 provide appropriate characterization of unfixed mutations with reasonable inferences about selective advantage and lack of homoplasy. The low frequencies and diversity are consistent with within-host evolution rather than transmitted variants. The interpretation is cautious and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "1687864d-2dfb-453a-9c42-8e247518b81a",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Host factors are significantly more important determinants of poor outcomes than bacterial factors, but bacterial genomic factors can also contribute. The most accurate prediction models incorporate both host and bacterial risk factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 and C95-C96 synthesize the main findings appropriately. The conclusion that host factors dominate is supported by the AUC comparisons (0.70 vs 0.58), while the modest but significant improvement with combined factors (AUC=0.74) supports the contribution of bacterial factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "d7e53f18-b3f9-475e-8005-6457f1afe9f3",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Attempted validation with 1397 Malawi TB cases failed because the dataset only recorded death as poor outcome without distinguishing TB deaths from non-TB deaths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 transparently report failed validation attempts, which is scientifically appropriate. The explanation for failure (inability to distinguish TB vs non-TB deaths) is reasonable and highlights a key limitation in outcome classification that affects generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "fc873846-75d9-4464-bfd5-16975e4c0478",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Several genes carrying GWAS-identified mutations have prior functional evidence: otsB1 encodes trehalose-6-phosphate phosphatase associated with rifampicin tolerance under hypoxia; dlaT encodes pyruvate dehydrogenase E2 required for MTB growth and RNI resistance; ctpB and metA were previously associated with first-line drug resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 and C80-C81 appropriately cite prior literature to provide biological context for identified mutations. The functional evidence strengthens the plausibility of associations, though it doesn't prove causality in the current study. The citations appear appropriate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "250577cd-22de-4773-a896-18b5152970c5",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Most genes with the fourteen fixed mutations were rarely reported in previous large-scale GWAS of drug-resistant MTB, and none of the specific mutations were reported. The limited effects on treatment outcomes would explain why they weren't identified previously.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 appropriately compare findings to prior literature, and C82 provides a reasonable inference about why these mutations weren't previously detected (limited effect sizes, drug-susceptible vs drug-resistant populations). The interpretation is scientifically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    },
+    {
+      "id": "a4635a12-5905-435d-b669-b640e3231aba",
+      "content_id": "fde9d5f4-16d1-4499-a3de-a30cc81d6980",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Future applications may include identifying high-risk patients by analyzing both host and bacterial genome characteristics, potentially enabling personalized treatment regimens to improve cure rates for drug-susceptible TB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-C98 are speculative about future applications. While the direction is reasonable, the modest predictive performance (AUC=0.74, specificity=0.55) and lack of validation limit confidence in clinical utility. The claims appropriately use conditional language ('may', 'could') but require prospective validation before implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:44:27.446191Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d7857114-cab3-405a-82bf-193680591675",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "5c854b37-8734-46cf-ade0-e596ffd7fc6e",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "64ee8042-b034-440c-9f59-0c917e20fa16",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "cb44cc45-6c33-46cc-9eb3-b6ed81886b06",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "4bf36ec3-206d-45f8-9c16-2eadb5e91497",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "f201db0a-093a-47fe-a65b-d058cbd869de",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "000a9cbf-77cf-4103-a451-de3351a359a5",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "7601f233-acd3-4435-92d3-4a2aee1539cb",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "0a40e315-e198-4713-97b8-bb13b4084a82",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "d0f1fbb2-95c1-4467-85a0-863aabb767e4",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "49d878d0-68c3-4bf6-891c-d301f8c2323b",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "732de83a-307a-4f17-8582-a54487354609",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "abd0e0bf-c716-4084-9a15-0a4287803115",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "e6478d46-1880-4c9b-8cee-bc1d1e74ffde",
+      "result_id": "c8d1f2d0-99f4-4a2c-a3b4-6a436f56bdbd"
+    },
+    {
+      "claim_id": "ca0ec157-e120-406c-94ae-90b4515aa24b",
+      "result_id": "642d9d44-f59d-4d99-b03e-a6af83e5aba4"
+    },
+    {
+      "claim_id": "4c07ebc5-f6e9-4e4e-afc6-0f4f0db0ccb1",
+      "result_id": "642d9d44-f59d-4d99-b03e-a6af83e5aba4"
+    },
+    {
+      "claim_id": "4b004b0d-d114-4fd0-ba98-debfc19a4a82",
+      "result_id": "642d9d44-f59d-4d99-b03e-a6af83e5aba4"
+    },
+    {
+      "claim_id": "97dba3b6-8333-4387-aed3-858c53dd0e5c",
+      "result_id": "bff8474b-c16b-4f92-a9f9-45aed98c922a"
+    },
+    {
+      "claim_id": "d858bb3f-7b2a-4f43-b1aa-e1dc3e5e7b3d",
+      "result_id": "bff8474b-c16b-4f92-a9f9-45aed98c922a"
+    },
+    {
+      "claim_id": "85e07f78-49ec-4b9d-8872-494840dcdbc2",
+      "result_id": "bff8474b-c16b-4f92-a9f9-45aed98c922a"
+    },
+    {
+      "claim_id": "4c611594-9467-4123-823d-146bd2b20778",
+      "result_id": "bff8474b-c16b-4f92-a9f9-45aed98c922a"
+    },
+    {
+      "claim_id": "c2ee4429-d0c4-4ebe-8688-4a7e26a7be73",
+      "result_id": "c44f4af3-a9f9-4781-a550-a4b7ceff3e73"
+    },
+    {
+      "claim_id": "3cd379dd-90f2-4b2c-8779-7571fcdf320f",
+      "result_id": "c44f4af3-a9f9-4781-a550-a4b7ceff3e73"
+    },
+    {
+      "claim_id": "305e279b-593a-4952-b077-1f2c97abc507",
+      "result_id": "c44f4af3-a9f9-4781-a550-a4b7ceff3e73"
+    },
+    {
+      "claim_id": "3c5bc146-0cba-480f-b059-bbbb6683148c",
+      "result_id": "c44f4af3-a9f9-4781-a550-a4b7ceff3e73"
+    },
+    {
+      "claim_id": "6dd26bff-3f27-40ae-8f7d-8370b9975029",
+      "result_id": "c44f4af3-a9f9-4781-a550-a4b7ceff3e73"
+    },
+    {
+      "claim_id": "05c9acb9-9957-4b0f-85c6-28fd9de10e80",
+      "result_id": "bc62741b-41de-41a5-805d-ee2c7d12b9ba"
+    },
+    {
+      "claim_id": "40dcf777-67a0-4402-ae7c-2af1d355f140",
+      "result_id": "bc62741b-41de-41a5-805d-ee2c7d12b9ba"
+    },
+    {
+      "claim_id": "84736f3f-4c6b-4ad1-b70a-768f1e180bb3",
+      "result_id": "bc62741b-41de-41a5-805d-ee2c7d12b9ba"
+    },
+    {
+      "claim_id": "57303dcc-bed9-445e-9a43-897ff0fd3aa0",
+      "result_id": "b5a3cafc-6148-437a-be41-5e0893414f50"
+    },
+    {
+      "claim_id": "b801844d-d204-4926-a086-28973a34819f",
+      "result_id": "b5a3cafc-6148-437a-be41-5e0893414f50"
+    },
+    {
+      "claim_id": "50c4dcf4-6138-4a9a-8d14-dd8ec7775041",
+      "result_id": "3df78c17-681e-4dd8-903b-95900345323d"
+    },
+    {
+      "claim_id": "9a367fb8-1f93-4d0a-8964-93c1f1cf09b0",
+      "result_id": "3df78c17-681e-4dd8-903b-95900345323d"
+    },
+    {
+      "claim_id": "6ab9a909-345c-4fd6-a0d2-1b5034d86ae4",
+      "result_id": "3df78c17-681e-4dd8-903b-95900345323d"
+    },
+    {
+      "claim_id": "5d3c5d8b-384d-427d-adec-697affe06c25",
+      "result_id": "5e2fe13a-2120-4d3d-ada9-64032cfe0f30"
+    },
+    {
+      "claim_id": "40d2ae5a-148a-481e-8223-fec66e77e801",
+      "result_id": "5e2fe13a-2120-4d3d-ada9-64032cfe0f30"
+    },
+    {
+      "claim_id": "457cc2b1-ef5f-4ce3-9de5-446db095b876",
+      "result_id": "5e2fe13a-2120-4d3d-ada9-64032cfe0f30"
+    },
+    {
+      "claim_id": "619d7868-1c82-4bf2-b604-ae72cce882d8",
+      "result_id": "2773e640-d336-48ed-9742-025cb0b05918"
+    },
+    {
+      "claim_id": "d3f43b3c-064e-45e9-9ffe-5e27b6e30d87",
+      "result_id": "2773e640-d336-48ed-9742-025cb0b05918"
+    },
+    {
+      "claim_id": "a298bf1a-dfd4-408e-8b86-6be79b71a1b1",
+      "result_id": "2773e640-d336-48ed-9742-025cb0b05918"
+    },
+    {
+      "claim_id": "8dc77bd1-850b-40ff-a6ee-271b8b3d31e4",
+      "result_id": "2773e640-d336-48ed-9742-025cb0b05918"
+    },
+    {
+      "claim_id": "551c6deb-4f9c-4913-80c5-c3ff299e7e78",
+      "result_id": "2773e640-d336-48ed-9742-025cb0b05918"
+    },
+    {
+      "claim_id": "a9d7aff3-d80f-4b30-b207-71c50a5d9e8a",
+      "result_id": "f84a6ba5-8f84-4ef3-b5ed-80d8239ebd04"
+    },
+    {
+      "claim_id": "35104904-8cce-4869-a1b9-1d6be350b870",
+      "result_id": "f84a6ba5-8f84-4ef3-b5ed-80d8239ebd04"
+    },
+    {
+      "claim_id": "ef6c8504-856f-433b-9ac7-11a4be901424",
+      "result_id": "f84a6ba5-8f84-4ef3-b5ed-80d8239ebd04"
+    },
+    {
+      "claim_id": "9a4cf61a-b1ff-4fa2-88a9-70db5619b308",
+      "result_id": "ce457c9a-4313-4858-9487-456ff803abf2"
+    },
+    {
+      "claim_id": "6ebaf3a3-6a44-4c5f-adaa-cdd777c358b0",
+      "result_id": "ce457c9a-4313-4858-9487-456ff803abf2"
+    },
+    {
+      "claim_id": "d10ff2fe-a54b-42eb-a5a6-b13d32c99e82",
+      "result_id": "ce457c9a-4313-4858-9487-456ff803abf2"
+    },
+    {
+      "claim_id": "b7427f2a-99cf-4a04-9dd0-c92e38c9ee13",
+      "result_id": "ce457c9a-4313-4858-9487-456ff803abf2"
+    },
+    {
+      "claim_id": "41dc6b03-8034-4682-ac02-709f859abd1b",
+      "result_id": "ce457c9a-4313-4858-9487-456ff803abf2"
+    },
+    {
+      "claim_id": "be5e879c-1246-4def-af67-b3f4d1804ffa",
+      "result_id": "1687864d-2dfb-453a-9c42-8e247518b81a"
+    },
+    {
+      "claim_id": "cf5435c5-ea59-4e13-b6f9-559565930631",
+      "result_id": "1687864d-2dfb-453a-9c42-8e247518b81a"
+    },
+    {
+      "claim_id": "b46f0b91-17f4-4ea3-8395-019452321ad2",
+      "result_id": "1687864d-2dfb-453a-9c42-8e247518b81a"
+    },
+    {
+      "claim_id": "0d5fb806-8ee6-4c03-917e-ff8b54e38f34",
+      "result_id": "1687864d-2dfb-453a-9c42-8e247518b81a"
+    },
+    {
+      "claim_id": "8d82d7d9-10a2-41ea-aa6e-d05316d25c29",
+      "result_id": "d7e53f18-b3f9-475e-8005-6457f1afe9f3"
+    },
+    {
+      "claim_id": "d39d6f6e-22f3-4260-9f25-69b88218569e",
+      "result_id": "d7e53f18-b3f9-475e-8005-6457f1afe9f3"
+    },
+    {
+      "claim_id": "976d0714-b02f-45f0-aa5c-dcae511ba5db",
+      "result_id": "fc873846-75d9-4464-bfd5-16975e4c0478"
+    },
+    {
+      "claim_id": "401baacb-b104-4442-a906-0be39880b28f",
+      "result_id": "fc873846-75d9-4464-bfd5-16975e4c0478"
+    },
+    {
+      "claim_id": "3593a805-e06d-41f2-9dc7-9740230d0dd0",
+      "result_id": "fc873846-75d9-4464-bfd5-16975e4c0478"
+    },
+    {
+      "claim_id": "8bdc0b13-a620-4564-af0c-2dbf25d1f8fd",
+      "result_id": "fc873846-75d9-4464-bfd5-16975e4c0478"
+    },
+    {
+      "claim_id": "e1abe308-390c-4054-9ca5-2c1b4fe9fb0a",
+      "result_id": "250577cd-22de-4773-a896-18b5152970c5"
+    },
+    {
+      "claim_id": "755f23e7-b5b8-44ac-84fd-9f9c04ecba4b",
+      "result_id": "250577cd-22de-4773-a896-18b5152970c5"
+    },
+    {
+      "claim_id": "e77d7019-beb6-4f36-a524-2ae3c457b05f",
+      "result_id": "250577cd-22de-4773-a896-18b5152970c5"
+    },
+    {
+      "claim_id": "f5776699-ff78-4c52-b013-280d18e0ab2b",
+      "result_id": "a4635a12-5905-435d-b669-b640e3231aba"
+    },
+    {
+      "claim_id": "b6feb27c-dda6-4f74-8ce2-b81c8192c4ac",
+      "result_id": "a4635a12-5905-435d-b669-b640e3231aba"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C72",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "McsB forms a self-compartmentalized octamer with active sites sequestered in a molecular cage. The octamer is a tetramer of dimers stabilized by pArg194-mediated interactions, with entrance gates of ~25 \u00c5 and functional internal active sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure at 2.5 \u00c5 resolution (C24) provides direct structural evidence for the octameric cage architecture (C4, C25, C26). The electron density clearly shows pArg194 phosphorylation (C28) and its interactions with neighboring residues (C29, C30), supporting the stabilization mechanism (C31, C32). The structural data demonstrating that catalytic residues are not involved in inter-dimer contacts (C91) supports the inference that internal active sites are functional (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "McsB oligomers interconvert in a phosphorylation-dependent manner, with pArg194 playing a special role in stabilizing the octamer. Mass photometry reveals concentration-dependent oligomer distributions, and YwlE phosphatase treatment destabilizes most oligomers except the octamer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Mass photometry data (C33, C34, C35) directly demonstrate concentration-dependent oligomer distributions. YwlE treatment experiments (C36, C37) combined with MS analysis (C38) provide strong evidence for phosphorylation-dependent interconversion. The R194K mutation specifically destabilizes the octamer (C41), and the R337A/D338A mutation destabilizes multimers (C42), supporting the pArg194-pR-RS interaction model. The resistance of the octamer to YwlE (C37, C85) is consistent with the structural burial of pArg194.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The octameric and dimeric forms of McsB have complementary substrate specificities. The octamer preferentially targets unfolded proteins, while the dimer phosphorylates proteins more promiscuously. This represents a substrate filtering mechanism mediated by the narrow entrance gates of the octamer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Radiometric kinase assays with multiple substrates (C43, C45, C46, C47, C48, C49) provide direct experimental evidence for differential substrate specificity. The dilution series experiment (C44) demonstrates that activity changes correlate with oligomeric state. The pattern across substrates of varying foldedness is internally consistent and supports the molecular filter hypothesis based on the 25 \u00c5 entrance gates. The complementary specificities (C88, C89, C90) are well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C22",
+      "C23",
+      "C52",
+      "C53",
+      "C54",
+      "C64"
+    ],
+    "result": "Heat-shock triggers accumulation of higher-order McsB oligomers in vivo, and the octameric form is essential for bacterial survival under stress conditions. McsB levels increase ~8-fold during heat shock, and the R194K mutation that destabilizes the octamer causes a thermosensitive phenotype similar to \u0394mcsB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SEC analysis of B. subtilis lysates (C7, C22, C23) provides direct in vivo evidence for heat-shock-induced oligomer accumulation. Quantitative Western blot data (C52) demonstrates significant McsB upregulation. The cell viability assays (C53, C54) show that R194K mutant cells have survival rates (1-5%) comparable to \u0394mcsB cells, strongly supporting the functional importance of the octamer. The convergence of in vitro structural/biochemical data with in vivo phenotypic data provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Open higher-order oligomers (HOOs) of McsB exhibit enhanced kinase activity compared to dimers. The pArg-mediated linkage of subunits exerts a stimulatory allosteric effect, and HOOs are proposed to target protein aggregates through multivalent interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Kinase assays with the R190A/R194A mutant enriched in open HOOs (C50, C51) demonstrate 2-fold higher activity than dimers against folded substrates. This is consistent with previous reports of allosteric activation by pArg binding (C77). The inference that HOOs target aggregates (C76) is reasonable given their multivalent binding capacity, though direct experimental evidence for aggregate targeting is not provided in the claims. The stimulatory effect is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C75",
+      "C79"
+    ],
+    "result": "The R194K mutation impairs octamer stability rather than enzymatic function, and the thermosensitive phenotype is due to a misbalance between open HOO forms and the octameric cage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The R194K mutant shows increased activity (~1.5-fold) against folded substrates (C55), indicating that enzymatic function is not impaired. Mass photometry shows selective octamer destabilization (C41, referenced in C75). SEC analysis shows altered oligomer distribution for R194K (Figure 6\u2014supplement 1b, referenced in C79). The convergence of these observations supports the interpretation that the phenotype results from altered oligomer balance rather than loss of catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C66"
+    ],
+    "result": "YwlE phosphatase is essential for thermotolerance, with deletion causing a severe thermosensitive phenotype. YwlE may prevent unintended protein degradation by affecting McsB oligomeric state and directly dephosphorylating substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The \u0394ywlE phenotype (C56) is clearly demonstrated by cell viability assays. However, the mechanistic interpretation (C66) is speculative. The authors note that Western blot profiles of McsB in WT and \u0394ywlE cells look virtually identical (stated in text), suggesting the method may not be sensitive enough to detect oligomer differences. The dual mechanism proposed (affecting oligomer state and dephosphorylating substrates) is plausible but not directly demonstrated in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C70",
+      "C86"
+    ],
+    "result": "The interconversion of open and closed McsB oligomers represents a distinct regulatory mechanism that defines substrate specificity and is essential during stress for efficient elimination of damaged proteins. This demonstrates that bacterial degradation labeling is as carefully regulated as in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the convergence of multiple lines of evidence: structural data showing the octamer architecture, mass photometry demonstrating phosphorylation-dependent interconversion, kinase assays showing differential substrate specificity, and in vivo data showing the octamer is essential for stress survival. The comparison to eukaryotic regulation (C70) is justified given the demonstrated complexity of the system. This represents a synthesis of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "McsB is a protein arginine kinase central to protein quality control in Gram-positive bacteria, with roles in stress response, pathogenicity, and degradation labeling. It phosphorylates transcriptional repressors and marks proteins for ClpCP-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established background knowledge supported by multiple citations to prior work. They provide the foundational context for the current study. While not novel findings of this manuscript, they are accurately stated and well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "McsB is composed of a phosphotransferase domain and dimerization domain, with dimer formation required for full activity. McsB exists in various oligomeric states and is a promiscuous kinase without consensus sequence specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established background from prior structural and functional studies, particularly from work on the G. stearothermophilus ortholog. They are supported by citations and provide important context for understanding the current findings about oligomer interconversion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "McsBBS mainly consists of large higher-order oligomers in SEC analysis, with only a minor dimer peak, in contrast to McsBGS which shows a prominent dimer peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is directly demonstrated by SEC data in Figure 1b. The observation establishes that the B. subtilis ortholog has a different oligomer distribution than the G. stearothermophilus ortholog, motivating the detailed characterization of McsBBS oligomers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The pArg194-linked McsB octamer represents the first atomic visualization of a defined higher-order oligomer that strictly depends on a specific phosphorylation event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the crystal structure showing pArg194 in the inter-dimer interface and the functional data showing that R194K specifically destabilizes the octamer. The novelty claim ('first atomic visualization') is stated with appropriate qualification ('to our knowledge') and is consistent with the structural biology literature on phosphorylation-dependent oligomerization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C71",
+      "C73"
+    ],
+    "result": "McsB belongs to the family of self-compartmentalized PQC factors with structural organization similar to proteases like the proteasome and ClpP. The 25 \u00c5 entry gate constitutes a molecular filter favoring unstructured polypeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison to other compartmentalized proteases (C71) is supported by citations and is a reasonable inference from the structural data. The molecular filter hypothesis (C61) is well-supported by the combination of structural data (25 \u00c5 gates) and functional data showing preferential activity against unfolded substrates (C73).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Small-molecule compounds blocking octamer formation could abolish bacterial stress response and represent an appealing antibiotic strategy targeting the PQC system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims about potential therapeutic applications. While the R194K phenotype (C53, C54) provides proof-of-concept that disrupting octamer formation is deleterious, the leap to small-molecule drug development is speculative. No compounds are tested, and drug development feasibility is not assessed. This represents reasonable speculation for future work but is not experimentally supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Upregulation of McsB favors formation of higher-order oligomers with enhanced phosphorylation activity but less selective substrate targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by the combination of data showing McsB upregulation during stress (C52) and kinase assays showing HOOs have higher activity but less selectivity (C50, C51). The inference that upregulation favors HOO formation is reasonable given the concentration-dependent oligomerization demonstrated by mass photometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Under normal conditions, monomers and dimers are the predominant McsB species. The monomer is enzymatically inactive and may provide a cellular pool of activatable units, while the dimer executes basal housekeeping activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The predominance of smaller species under normal conditions is supported by SEC analysis of non-heat-shocked cells (C22). The inference about monomer inactivity (C68) is consistent with prior knowledge about the requirement for dimerization for activity (C18). The proposed roles are reasonable inferences from the data, though direct experimental evidence for the 'activatable pool' function is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The functional importance of the McsB phosphorylation chamber is highlighted by the thermosensitive phenotype of the R194K mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a summary statement connecting the structural findings (phosphorylation chamber) with the functional in vivo data (R194K phenotype). It is well-supported by the convergence of structural and phenotypic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Each McsB dimer in the octamer is bound to two other molecules, providing enhanced stability. The high stability limits transient dissociation and may protect from dephosphorylation. McsB oligomer conversion can be achieved in trans by pArg-labeled products or effector proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural basis for enhanced stability (C80) is clear from the crystal structure. The resistance to YwlE dephosphorylation (C37, C38) supports the protection hypothesis (C81), though the mechanism ('limiting transient dissociation') is somewhat speculative. The trans regulation by free pArg (C82) is directly demonstrated by mass photometry experiments (C39, C40).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The pArg receptor site (pR-RS) in the octamer corresponds to the previously identified pArg binding pocket that enables allosteric stimulation. Specific residues (Arg337*, Arg341*, Ser285*, Asp338*) mediate the pArg194 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correspondence to the previously identified allosteric site (C94) is supported by structural alignment with the G. stearothermophilus structure and citation. The specific interactions (C95, C30) are directly observed in the crystal structure with clear electron density (C28).",
+    "result_type": "MINOR"
+  }
+]

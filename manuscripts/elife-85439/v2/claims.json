@@ -1,0 +1,2398 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The method allows testing a large number of drug combinations in a single-cell culture sample.",
+    "claim_type": "EXPLICIT",
+    "source": "We develop a method that allows one to test a large number of drug combinations in a single-cell culture sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the primary stated objective of the manuscript, supported by the experimental demonstrations throughout the paper.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The method relies on randomness of drug uptake in individual cells to create and encode drug treatment regimens.",
+    "claim_type": "EXPLICIT",
+    "source": "We rely on the randomness of drug uptake in individual cells as a tool to create and encode drug treatment regimens.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a stated principle of the method, demonstrated experimentally with various drug combinations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Independent transient drug gradients are created across the cell culture sample to produce heterogeneous local drug combinations.",
+    "claim_type": "EXPLICIT",
+    "source": "We create independent transient drug gradients across the cell culture sample to produce heterogeneous local drug combinations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated experimentally through point injection methods shown in Figures 2, 3, and throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The number of possible drug combinations grows exponentially with the number of drugs and dosages.",
+    "claim_type": "EXPLICIT",
+    "source": "This limitation is a reflection of the fact that the number of possible drug combinations grows exponentially with the number of drugs and dosages (cf., Supporting Information).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical statement supported by reference to Supporting Information.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The number of all possible combinations of three drugs tested at ten different concentrations (including zero) is 10\u00b3.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the number of all possible combinations of three drugs tested at ten different concentrations (including zero) is 103.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical calculation demonstrating the combinatorial explosion problem.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Accurate reproducibility of in vivo and in vitro experiments is notoriously difficult to achieve in many biological applications.",
+    "claim_type": "EXPLICIT",
+    "source": "accurate reproducibility of in vivo and in vitro experiments is notoriously difficult to achieve in many biological applications, such as drug dose-response quantification. Many confounding factors contribute to the variability in sample readout Bal\u00e1zsi et al., 2011; Niepel et al., 2019",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to published literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Confounding factors contributing to variability in sample readout can be grouped into intrinsic and extrinsic noise categories.",
+    "claim_type": "EXPLICIT",
+    "source": "these factors can generally be grouped into two categories, which are usually described as intrinsic and extrinsic noise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This classification is based on established terminology in the field, as referenced by citations to Elowitz et al., 2002 and Raj and van Oudenaarden, 2008.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The noise nomenclature was originally used to describe temporal fluctuations in a single protein within a single cell.",
+    "claim_type": "EXPLICIT",
+    "source": "Originally, this noise nomenclature was used to describe temporal fluctuations in a single protein within a single cell (Elowitz et al., 2002; Raj and van Oudenaarden, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical statement supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Sources of intrinsic noise in drug uptake include fundamental biochemical processes such as passive uptake, active transport, and degradation.",
+    "claim_type": "EXPLICIT",
+    "source": "Sources of intrinsic noise in drug uptake by and action within cells include fundamental biochemical processes, such as passive uptake, active transport, and degradation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established biological knowledge about cellular drug uptake mechanisms.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "External factors contributing to noise are principally manifest through convection and advection.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, external factors that contribute to noise are principally manifest through convection and advection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on physical principles of fluid dynamics and mass transport.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Extrinsic factors drive sample variability in most experimental cellular systems more than intrinsic cell variability.",
+    "claim_type": "EXPLICIT",
+    "source": "While intrinsic cell variability can be significant, we believe that it is the extrinsic factor(s) that drive sample variability in most experimental cellular systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is supported by inference from the Law of Large Numbers and typical experimental parameters.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The conclusion that extrinsic factors drive sample variability derives from the Law of Large Numbers.",
+    "claim_type": "EXPLICIT",
+    "source": "This conclusion derives from the Law of Large Numbers (Feller, 1968), since the typical number of cells in a culture sample is at least of the order of 104, while the number of biological/technical replicates is \u223c3.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical inference supported by citation to statistical theory.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The typical number of cells in a culture sample is at least of the order of 10\u2074.",
+    "claim_type": "EXPLICIT",
+    "source": "since the typical number of cells in a culture sample is at least of the order of 104",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about typical experimental conditions in cell culture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The typical number of biological/technical replicates is approximately 3.",
+    "claim_type": "EXPLICIT",
+    "source": "while the number of biological/technical replicates is \u223c3.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about typical experimental practice in biological research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Drugs can be uniquely labeled using fluorescent tags, where the amount of drug taken up by each cell scales as the fluorescence of its corresponding tag.",
+    "claim_type": "EXPLICIT",
+    "source": "Drugs can be uniquely labeled (e.g. using fluorescent tags), in which case, the amount of drug taken up by each cell would scale as the fluorescence of its corresponding tag.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This principle is demonstrated experimentally throughout the manuscript with various fluorescent labeling approaches.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Even cells with identical DNA typically exhibit deviations in drug uptake.",
+    "claim_type": "EXPLICIT",
+    "source": "Even cells with identical DNA typically exhibit deviations in drug uptake.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge of cellular heterogeneity and is demonstrated in the experimental data.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The random nature of drug(s) uptake by individual cells can be utilized to create different drug combinations.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the random nature of drug(s) uptake by individual cells can be utilized to create different drug combinations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key principle of the method, demonstrated experimentally throughout the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Cell 'barcoding' terminology in biology usually implies DNA identification.",
+    "claim_type": "EXPLICIT",
+    "source": "Cell 'barcoding' terminology in biology usually implies DNA identification, but here we use fluorescent signal(s) instead to encode drug regimen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about conventional terminology in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Krutzik and Nolan used fluorescent barcoding to distinguish between individual samples exposed to different drug regimens for high-throughput analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "This method was used by Krutzik and Nolan to distinguish between individual samples exposed to different drug regimens for high-throughput analysis (Krutzik and Nolan, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a citation to prior work describing a related but different barcoding approach.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "In Krutzik and Nolan's experiments, the number of samples was equal to the number of drug conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "The number of samples in their experiments was equal to the number of drug conditions, since the authors were barcoding samples, not individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the prior work by Krutzik and Nolan, distinguishing it from the current method.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Fluorescently labeled drugs are clustered into three 'barcoding' classes distinguished by the physical association of the label with the drug.",
+    "claim_type": "EXPLICIT",
+    "source": "In this work, fluorescently labeled drugs are clustered into three 'barcoding' classes distinguished by the physical association of the label with the drug: either irreversibly linked or cleavable/separable chemistry.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the classification system used in the manuscript, demonstrated with different experimental approaches.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "A labeling method was developed that does not require any chemical modification of the drug(s).",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, we developed a labeling method that does not require any chemical modification of the drug(s), such as covalent fluorescent tagging.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated experimentally with co-delivery experiments shown in Figures 4 and 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The conjugation-free barcoding approach involves local co-injection of an unconjugated pair of pre-mixed drug and fluorescent dye.",
+    "claim_type": "EXPLICIT",
+    "source": "This particular approach involves local co-injection of an unconjugated pair of pre-mixed drug and fluorescent dye that serves as a correlative barcode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This method is described and demonstrated experimentally in Figures 4 and 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "On short incubation time scales (less than an hour), initial injection producing forced advection is mainly responsible for transient gradients in the sample.",
+    "claim_type": "EXPLICIT",
+    "source": "We utilize the fact that on short incubation time scales (less than an hour), the initial injection producing forced advection is mainly responsible for transient gradients in the sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on physical principles of mass transport and is used to justify the conjugation-free barcoding approach.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Immediately after local injection, the drug and its tag concentration profiles across the sample correlate.",
+    "claim_type": "EXPLICIT",
+    "source": "Immediately after local injection, the drug and its tag concentration profiles across the sample correlate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated experimentally in Figures 3 and 4 showing high correlation coefficients.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The subsequent diversion of concentration profiles due to differences in diffusion and transport rates between the drug and its unconjugated tag occurs slowly over short incubation periods.",
+    "claim_type": "EXPLICIT",
+    "source": "The subsequent diversion of these profiles due to differences in diffusion and transport rates between the drug and its unconjugated tag occurs slowly (di Cagno and Stein, 2019) over this comparatively short incubation period, ensuring persisting correlation between drug and tag uptakes throughout the course of the typical experiment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation and demonstrated experimentally with high correlation coefficients in co-delivery experiments.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "For all drug barcoding classes designed and tested, the drug barcode is retained by the cells.",
+    "claim_type": "EXPLICIT",
+    "source": "For all drug barcoding classes we designed and tested, we rely on the fact that the drug barcode is retained by the cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a design principle of the method, demonstrated with CellTracker dyes and QD nanoparticles.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Total drug exposure over time (area under the curve) can be assessed by a single time point measurement.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, total drug exposure over time (area under the curve) can be assessed by a single time point measurement.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the retention of drug barcodes by cells.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "A segmentation-free image analysis was developed capable of handling large optical fields containing thousands of cells in the sample, even in confluent growth conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "We also developed segmentation-free image analysis capable of handling large optical fields containing thousands of cells in the sample, even in confluent growth condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the Materials and methods section and applied throughout the experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The technology necessary to execute the method is readily available in most biological laboratories.",
+    "claim_type": "EXPLICIT",
+    "source": "The technology necessary to execute our method is readily available in most biological laboratories, does not require robotic or microfluidic devices, and dramatically reduces resource needs and resulting costs of the traditional high-throughput studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the accessibility of the method, supported by the description of standard equipment used.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The method does not require robotic or microfluidic devices.",
+    "claim_type": "EXPLICIT",
+    "source": "The technology necessary to execute our method is readily available in most biological laboratories, does not require robotic or microfluidic devices",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the experimental procedures described, which use simple point injection methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The method dramatically reduces resource needs and resulting costs of traditional high-throughput studies.",
+    "claim_type": "EXPLICIT",
+    "source": "dramatically reduces resource needs and resulting costs of the traditional high-throughput studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the ability to test multiple combinations in a single sample rather than requiring separate samples for each condition.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "A benchmark system was implemented in which 'drugs' are diester dyes with distinguishable fluorescent properties.",
+    "claim_type": "EXPLICIT",
+    "source": "We first consider a benchmark system in which 'drugs' are diester dyes with distinguishable fluorescent properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated experimentally in Figures 2 and 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The effect of a combination of siRNAs on GFP fluorescence was assessed as modified by siRNA-dependent expression of GFP protein.",
+    "claim_type": "EXPLICIT",
+    "source": "To go beyond this 'toy' system, we assessed the effect of a combination of siRNAs on a direct and quantifiable target, viz., GFP fluorescence, as modified by siRNA-dependent expression of GFP protein.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated experimentally in Figures 6 and 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Multiple cell culture experiments were conducted treating cells with combinations of drugs commonly used in multi-drug chemotherapy regimens, such as cisplatin, docetaxel, cyclophosphamide, and 5-fluorouracil.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, we conducted multiple cell culture experiments treating cells with combinations of drugs commonly used in multi-drug chemotherapy regimens, such as cisplatin, docetaxel, cyclophosphamide, and 5-fluorouracil.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated experimentally in Figures 8, 9, and 10.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The approach has distinct advantages over conventional drug combination screening methods, including far greater efficiency.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach has distinct advantages over conventional drug combination screening methods, including far greater efficiency, a smooth (continuous) variation of drug concentrations in the resulting combinations, and concomitant phenotype readout.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the ability to test multiple combinations in a single sample.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The approach provides smooth (continuous) variation of drug concentrations in the resulting combinations.",
+    "claim_type": "EXPLICIT",
+    "source": "a smooth (continuous) variation of drug concentrations in the resulting combinations",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the experimental data showing continuous distributions of drug concentrations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Stochastic mixing occurs naturally due to randomness in the drug(s) uptake process by individual cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Stochastic mixing occurs naturally due to randomness in the drug(s) uptake process by individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a fundamental principle of the method, demonstrated experimentally throughout the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Random process of drugs' uptake is enhanced by creating transient drug gradients across the sample.",
+    "claim_type": "EXPLICIT",
+    "source": "We enhance the random process of drugs' uptake by creating transient drug gradients across the sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated experimentally by comparing homogeneous delivery to point injection methods in Figures 2 and 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Point injection of multiple drugs ensures chaotic/stochastic mixing patterns across sample.",
+    "claim_type": "EXPLICIT",
+    "source": "Point injection of multiple drugs ensures chaotic/stochastic mixing patterns across sample (Box 1, Figure 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated experimentally in Figures 2 and 3 and illustrated in Figure 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Cell-permeable diester dye, carboxy fluorescein succinimidyl ester, and its derivatives are examples of irreversibly tagged drugs.",
+    "claim_type": "EXPLICIT",
+    "source": "The cell-permeable diester dye, carboxy fluorescein succinimidyl ester, and its derivatives are an example of this type of drug.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge of the chemical properties of these dyes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Diester dyes are well retained by the cell for an extended period.",
+    "claim_type": "EXPLICIT",
+    "source": "These dyes are well retained by the cell for an extended period and, hence, can be used to characterize total uptake by individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge of CellTrace and CellTracker dye properties.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Typical targets of diester dyes are intracellular thiol or amine groups.",
+    "claim_type": "EXPLICIT",
+    "source": "Typical targets of these 'drugs' are intracellular thiol or amine groups (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the known chemistry of CellTracker and CellTrace dyes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "HeLa cells were exposed to four different dyes mixed together simultaneously in suspension cell culture according to the manufacturer's protocol.",
+    "claim_type": "EXPLICIT",
+    "source": "HeLa cells were exposed to four different dyes mixed together simultaneously in suspension cell culture according to the manufacturer's protocol and imaged using confocal microscopy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for the benchmark system shown in Figure 2a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Point injection greatly increased the range of drug uptake across the population compared to homogeneous delivery.",
+    "claim_type": "EXPLICIT",
+    "source": "As in the case of cells grown in suspension culture, point injection greatly increased the range of drug uptake across the population compared to homogeneous delivery (Figure 3a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated experimentally in Figure 3a comparing distribution widths.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Locally co-delivered dyes exhibited a far greater degree of correlation compared to those in unmatched pairs of drugs delivered to different slide locations.",
+    "claim_type": "EXPLICIT",
+    "source": "Locally co-delivered dyes (point-injection) exhibited a far greater degree of correlation compared to those in unmatched pairs of drugs delivered to different slide locations (Figure 3b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated experimentally in Figure 3b showing correlation coefficients.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Pre-mixed dyes co-delivered locally exhibit a high degree of correlation with coefficients of correlation greater than 0.8.",
+    "claim_type": "EXPLICIT",
+    "source": "The pre-mixed dyes co-delivered locally exhibit a high degree of correlation with coefficients of correlation greater than 0.8 (cf., right column in Figure 3c), even for structurally and chemically different agents such as CellTrace and nanoparticle QD dyes.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated experimentally in Figure 3c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The underlying cause of high correlation in co-delivered dyes is identical initial dispersion of pre-mixed co-delivered dyes throughout a sample by forced advection.",
+    "claim_type": "EXPLICIT",
+    "source": "The underlying cause of this surprising behavior is identical initial dispersion of pre-mixed co-delivered dyes throughout a sample by forced advection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on physical principles of mass transport.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Drug uptake is governed by transport and diffusive processes, as well as molecular interactions with its targets, both specific and non-specific.",
+    "claim_type": "EXPLICIT",
+    "source": "Drug (and dye) uptake is governed by transport and diffusive processes, as well as molecular interactions with its targets, both specific and non-specific (Elgart et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established principles of pharmacokinetics and is supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Strong, specific drug binding to the target leads to fast reaction rates which result in the uptake process being diffusion/transport-limited.",
+    "claim_type": "EXPLICIT",
+    "source": "In many cases, strong, specific drug binding to the target leads to fast reaction rates which, in turn, result in the uptake process being diffusion/transport-limited.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established principles of chemical kinetics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "A high degree of linear correlation in the uptake of co-delivered dyes was observed in fixed cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We also observed a high degree of linear correlation in the uptake of co-delivered dyes in fixed cells (Figure 4e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated experimentally in Figure 4e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The drugs' target is the exogenous green fluorescent protein (eGFP) gene (d2EGFP, a short-lived variant).",
+    "claim_type": "EXPLICIT",
+    "source": "The drugs' target is the exogenous green fluorescent protein (eGFP) gene (d2EGFP, a short-lived variant, cf., Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental system design for siRNA experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The drugs are small interfering RNA (siRNA) duplexes targeting different regions of the GFP transcript.",
+    "claim_type": "EXPLICIT",
+    "source": "The drugs are small interfering RNA (siRNA) duplexes targeting different regions of the GFP transcript.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental system design for siRNA experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Two classes of siRNA were designed: typical 21 nucleotide-long siRNA molecules targeting complementary binding sequences on eGFP mRNA, and 'msiRNA' with mismatch(es) in its targeting binding sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "We designed two classes of siRNA: (i) typical 21 nucleotide-long siRNA molecules targeting complementary binding sequences on eGFP mRNA; and (ii) 'msiRNA', that is, siRNA with mismatch(es) in its targeting binding sequence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The msiRNA guide strand may still bind target transcripts via partial sequence complementarity by a mechanism closely mirroring microRNA (miRNA) silencing.",
+    "claim_type": "EXPLICIT",
+    "source": "The msiRNA guide strand may still bind target transcripts (and, hence, interfere with target gene expression) via partial sequence complementarity by a mechanism closely mirroring microRNA (miRNA) silencing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge of miRNA mechanisms.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "One can expect weaker target protein repression by msiRNA compared to siRNA.",
+    "claim_type": "EXPLICIT",
+    "source": "By analogy with endogenous miRNA in eukaryotic cells, one can expect weaker target protein repression by msiRNA compared to siRNA (Carthew and Sontheimer, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on established knowledge of miRNA function, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Naturally occurring miRNAs can typically achieve significant repression of the target gene only by utilizing multiple/tandem binding sites on the target mRNA.",
+    "claim_type": "EXPLICIT",
+    "source": "[Naturally occurring miRNAs can typically achieve significant repression of the target gene only by utilizing multiple/tandem binding sites on the target mRNA].",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge of miRNA function.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "For low drug concentrations, additive drug interaction is expected regardless of the regions' proximity since there is an abundance of target copy numbers to which siRNA molecules can bind.",
+    "claim_type": "EXPLICIT",
+    "source": "For low drug concentrations, we expected additive drug interaction regardless of the regions' proximity since there is an abundance of target copy numbers to which siRNA molecules can bind.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical prediction based on principles of molecular binding kinetics.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "At high drug concentrations, different drug interaction patterns are expected that depend on target site locations.",
+    "claim_type": "EXPLICIT",
+    "source": "At high drug concentrations, we expected different drug interaction patterns that depend on target site locations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical prediction tested experimentally in Figure 7.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Different siRNA molecules targeting overlapping regions may antagonize each other due to binding competition.",
+    "claim_type": "EXPLICIT",
+    "source": "Different siRNA molecules targeting overlapping regions may, for example, antagonize each other due to binding competition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical prediction based on principles of competitive binding.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "For siRNAs targeting non-overlapping regions, one can expect additive or synergistic drug interactions owing to accelerated mRNA degradation and modulated translation rates in the presence of multiple RISC complexes bound to the mRNA.",
+    "claim_type": "EXPLICIT",
+    "source": "For siRNAs targeting non-overlapping regions, one can expect additive or, perhaps, synergistic drug interactions owing to accelerated mRNA degradation and modulated translation rates in the presence of multiple RISC complexes bound to the mRNA.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical prediction based on knowledge of RISC-mediated gene silencing.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Cell-penetrating peptide-conjugated Quantum Dots (QD) were used both for drug delivery and barcoding.",
+    "claim_type": "EXPLICIT",
+    "source": "Cell-penetrating peptide-conjugated, nanoparticles, Quantum Dots (QD), were used both for drug delivery and barcoding (Figure 6c and d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental approach shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Point injection of a drug conjugated and delivered via QD introduces a broad range of drug uptake across the sample.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, point injection of a drug conjugated and delivered in this way introduces a broad range of drug uptake across the sample (Appendix 1\u2014figure 10), as compared to the homogeneous random mixing approach (Appendix 1\u2014figure 9b), and suppresses the proportionality bias in drug combinations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated experimentally in the referenced figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The siRNA1 and siRNA2 species have perfect complementarity to non-overlapping regions of mRNA.",
+    "claim_type": "EXPLICIT",
+    "source": "The siRNA1 and siRNA2 species have perfect complementarity to non-overlapping regions of mRNA.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design of the siRNA system.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The msiRNA1 was designed to bind to the same region of mRNA as siRNA1 but has a mismatched nucleotide pair within the targeting sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "The msiRNA1 was designed to bind to the same region of mRNA as siRNA1 but has a mismatched nucleotide pair within the targeting sequence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "At high concentrations, the 'mismatched' siRNA (msiRNA1) acts as an inhibitor for the strong repressors siRNA1 and siRNA2.",
+    "claim_type": "EXPLICIT",
+    "source": "At high concentrations, the \"mismatched\" siRNA, msiRNA1 (with incomplete complementarity in its target binding sequence), acts as an inhibitor for the strong repressors siRNA1 and siRNA2, as shown in Figure 7a and b.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated experimentally in Figure 7a and b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The antagonistic effect of msiRNA1 is more pronounced in the siRNA1-msiRNA1 combination as compared to the siRNA2-msiRNA1 combination.",
+    "claim_type": "EXPLICIT",
+    "source": "This antagonistic effect is more pronounced in the siRNA1-msiRNA1 combination as compared to the siRNA2-msiRNA1 combination.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed in the experimental data shown in Figure 7a and b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The outcome of pairwise combinations of the non-overlapping strong repressors siRNA1 and siRNA2 suggests additive or synergistic interaction for these drugs.",
+    "claim_type": "EXPLICIT",
+    "source": "The outcome of pairwise combinations of the non-overlapping strong repressors siRNA1 and siRNA2 suggests additive or synergistic interaction for these drugs (Figure 7c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated experimentally in Figure 7c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Direct binding competition is not the only source of possible antagonistic siRNAs interaction.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that direct binding competition is not the only source of possible antagonistic siRNAs interaction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on knowledge of RISC-mediated silencing mechanisms.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "At high intracellular concentration of siRNA duplexes, one may expect competition for RISC integration by different siRNA species due to the limited pool of RISC in the cell.",
+    "claim_type": "EXPLICIT",
+    "source": "At the high intracellular concentration of siRNA duplexes, one may expect competition for RISC integration by different siRNA species due to the limited pool of RISC in the cell.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on knowledge of RISC availability, supported by citations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Competition for RISC integration may result in antagonistic siRNA interactions, regardless of the abundance of their target.",
+    "claim_type": "EXPLICIT",
+    "source": "This type of competition may result in antagonistic siRNA interactions, regardless of (the abundance of) their target (Castanotto et al., 2007; Loinger et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to the literature.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Drugs tested include cyclophosphamide (CP), docetaxel (TXT), 5-fluorouracil (5-FU), and cisplatin (CIS).",
+    "claim_type": "EXPLICIT",
+    "source": "We tested drugs commonly used in combination chemotherapy regimens to treat different forms of cancer, such as cyclophosphamide (CP), docetaxel (TXT), 5-fluorouracil (5-FU), and cisplatin (CIS).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental system for chemotherapy drug combinations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The desired phenotype in chemotherapy drug testing is cell death, which can be assessed by utilizing fluorescent biomarkers, such as Annexin-V stain.",
+    "claim_type": "EXPLICIT",
+    "source": "The desired phenotype in this application is cell death, which can be assessed by utilizing fluorescent biomarkers, such as Annexin-V stain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established methods for detecting apoptosis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Death phenotype can be assessed by monitoring cell detachment and/or changes in cell morphology, which may be resolved by bright field/phase contrast microscopy.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternatively, death phenotype can be assessed by monitoring cell detachment and/or changes in cell morphology, which may be resolved by bright field/phase contrast microscopy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established methods for detecting cell death, demonstrated in Figure 10.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Cell shrinkage due to dehydration and cell debris can be detected by a decrease in intensity of the forward light scatter (FSC) signal in flow cytometry measurements.",
+    "claim_type": "EXPLICIT",
+    "source": "Cell shrinkage due to dehydration and cell debris can also be detected by a decrease in intensity of the forward light scatter (FSC) signal in flow cytometry measurements (Wlodkowic et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established flow cytometry methods, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The HeLa cell line was used as a benchmark system to evaluate the effect(s) of drug combinations in individual cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We used the HeLa cell line as a benchmark system to evaluate the effect(s) of drug combinations in individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental system used throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "In all chemotherapy experiments, cells were treated with drugs for a short duration (1/2 hr).",
+    "claim_type": "EXPLICIT",
+    "source": "In all experiments reported below, cells were treated with drugs for a short duration (1/2 hr).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental protocol for chemotherapy drug testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Cisplatin was inactivated by DMSO to create a negative drug control.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to create a negative drug control, cisplatin was inactivated by DMSO (Hall et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design, supported by citation to the method.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "For sufficiently large cell fragments, normalization using Deep Red signal holds, which allows an estimation of the drug concentrations in both intact cells and dead cells (debris).",
+    "claim_type": "EXPLICIT",
+    "source": "We assumed that for sufficiently large cell fragments, this normalization also holds, which allows an estimation of the drug concentrations in both intact cells and dead cells (debris).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assumption made for the analysis method.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The absolute fluorescent signal from the parent cell will decrease due to dilution by cell division, but the ratio of homogeneously distributed targets should persist.",
+    "claim_type": "EXPLICIT",
+    "source": "The absolute fluorescent signal from the parent cell will decrease due to dilution by cell division, but the ratio of homogeneously distributed targets should persist.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on principles of cell division and fluorescent dye distribution.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "For samples created by gradient drug mixing, the concentrations of effective and ineffective drugs should decrease and increase, respectively, with time.",
+    "claim_type": "EXPLICIT",
+    "source": "For samples created by gradient drug mixing, one naively expects qualitatively the following picture for the population average of drug concentrations: the concentrations of effective and ineffective drugs should decrease and increase, respectively, with time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical prediction based on selective survival of cells with lower effective drug exposure.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The qualitative picture of drug concentration dynamics holds only if drugs act independently in individual cells.",
+    "claim_type": "EXPLICIT",
+    "source": "This qualitative picture (evaluated on a whole cell population level) holds only if drugs act independently in individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical consideration about the interpretation of population-level data.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The dynamics of inactivated cisplatin displays the time dependence expected from an ineffective drug.",
+    "claim_type": "EXPLICIT",
+    "source": "The dynamics of inactivated cisplatin (labeled NC in Figure 8b), indeed, displays the time dependence expected from an ineffective drug (concentration).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the experimental data shown in Figure 8b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The pharmacodynamics of CP and TXT is difficult to interpret because the time dependence is not monotonic.",
+    "claim_type": "EXPLICIT",
+    "source": "It is much more difficult to interpret the pharmacodynamics of CP and TXT because the time dependence is not monotonic.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed in the experimental data shown in Figure 8b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Drug-drug interactions, drug effect on cell cycle, and other time-dependent drug actions can all play a significant role in overall cell population behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Drug-drug interactions, drug effect on cell cycle, and other time-dependent drug actions can all play a significant role in overall cell population behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the complex dynamics observed in Figure 8b.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The initial distribution of each drug across the sample is shown using four different colors corresponding to the fluorescent label for each drug.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, the initial distribution of each drug across the sample is shown in Figure 10a using four different colors (blue, green, red, deep red) corresponding to the fluorescent label for each drug.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental data shown in Figure 10a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Biologists often treat noise in samples as a nuisance that must be minimized.",
+    "claim_type": "EXPLICIT",
+    "source": "Biologists often treat noise in samples as a nuisance that must be minimized, an important consideration for typical experimental measurements.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about common practice in biological research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The approach was inspired by the celebrated fluctuation\u2013dissipation theorem in statistical physics.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach was inspired by the celebrated fluctuation\u2013dissipation theorem in statistical physics (Cardy, 1996) that predicts the response of a system to external perturbations based on the underlying properties of noise in the system at equilibrium.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the theoretical inspiration for the method, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "As little as a single-cell culture sample is required to perform the search for optimal drug combination using this approach.",
+    "claim_type": "EXPLICIT",
+    "source": "Rather than testing thousands of samples, as little as a single-cell culture sample is required to perform the search for optimal drug combination using our approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key advantage of the method, demonstrated throughout the experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Applications of the method are not limited to the identification of optimal drug concentrations.",
+    "claim_type": "EXPLICIT",
+    "source": "Applications of our method are not limited to the identification of optimal drug concentrations, as the approach is applicable to any quantifiable cell phenotype.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the variety of phenotypes tested (dye uptake, GFP expression, cell death).",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The method is readily generalizable to a much broader set of problems involving complex biochemical or molecular perturbations applied in vitro and in vivo.",
+    "claim_type": "EXPLICIT",
+    "source": "The method is readily generalizable to a much broader set of problems involving complex biochemical or molecular perturbations applied in vitro and in vivo.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about potential applications, based on the demonstrated versatility of the method.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Examples of potential perturbations include combinations of signaling molecules, optimization of drug delivery strategies, lineage differentiation identification, stem cell manipulations and tracking.",
+    "claim_type": "EXPLICIT",
+    "source": "Examples of these perturbations include combinations of signaling molecules, optimization of drug delivery strategies, lineage differentiation identification, stem cell manipulations and tracking, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "These are speculative examples of potential applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The best possible random drug mixing is achieved in cells in suspension.",
+    "claim_type": "EXPLICIT",
+    "source": "The best possible random drug mixing is achieved in cells in suspension.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the ability to physically mix suspension cells between drug deliveries.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Suspension cells can be easily mixed and local drug gradients can be applied in a statistically independent serial fashion.",
+    "claim_type": "EXPLICIT",
+    "source": "Suspension cells can be easily mixed (i.e. cell locations can be randomly re-distributed), and local drug gradients can be applied in a statistically independent serial fashion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the physical properties of suspension cell culture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "For adherent cells, the method exclusively relies on the randomness of the drug distribution in the media by means of forced advection, which is challenging to control.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, since the locations of adherent cells in the sample are fixed, we exclusively rely on the randomness of the drug distribution in the media by means of forced advection, which is challenging to control.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a limitation of the method for adherent cells, acknowledged by the authors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Further theoretical and experimental work is required to improve the stochastic drug mixing range and its smoothness for adherent cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, further theoretical and experimental work is required to improve the stochastic drug mixing range and its smoothness for adherent cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of a limitation and direction for future work.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "A possible way to improve the mixing range can be utilization of recently developed 'Dye Drop' method.",
+    "claim_type": "EXPLICIT",
+    "source": "A possible way to improve the mixing range (and minimize reagent use even further) can be utilization of recently developed 'Dye Drop' method (Mills et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion for future improvement, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The method assumes that both drugs and their labels are retained by the cells and are not re-distributed from cell to cell after the washing step.",
+    "claim_type": "EXPLICIT",
+    "source": "Throughout this paper, we tacitly assumed that both drugs and their labels are retained by the cells and are not re-distributed from cell to cell after the washing step.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an important assumption underlying the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "This assumption holds for siRNA drugs delivered via nanoparticles and CellTracker dyes.",
+    "claim_type": "EXPLICIT",
+    "source": "This is certainly the case for siRNA drugs delivered via nanoparticles and CellTracker dyes in our applications, but this assumption does not necessarily hold in general.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the known properties of these reagents.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Drugs can leak from the cells into the culture media after the washing step and be redistributed homogeneously across the entire cell population.",
+    "claim_type": "EXPLICIT",
+    "source": "Drugs can, in principle, leak from the cells into the culture media after the washing step and, eventually, be redistributed homogeneously across the entire cell population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a potential limitation of the method.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Drug leakage will affect the 'area under the curve' for individual cells after prolonged incubation periods, especially cells that had initially very low (or no) drug exposure.",
+    "claim_type": "EXPLICIT",
+    "source": "This behavior will affect the 'area under the curve' for individual cells after prolonged incubation periods, especially cells that had initially very low (or no) drug exposure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the consequences of drug leakage.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Multiple washing steps were performed to mitigate the effect of drug redistribution.",
+    "claim_type": "EXPLICIT",
+    "source": "(Multiple washing steps were performed to mitigate this effect.)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological approach to address a potential limitation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "A limit on maximal drug concentration exists due to drug solubility and its solvent (e.g. DMSO) toxicity.",
+    "claim_type": "EXPLICIT",
+    "source": "Another possible drawback of our method is a limit on maximal drug concentration due to drug solubility and its solvent (e.g. DMSO) toxicity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a practical limitation of the method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Low concentrations of individual drugs are typically desired in combination therapies.",
+    "claim_type": "EXPLICIT",
+    "source": "Typically, low concentrations of individual drugs are desired in combination therapies and, hence, our method can be implemented even for drugs with low solubility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established principles of combination therapy.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Possible adaptation of the point injection method to facilitate random mixing in vivo is expected.",
+    "claim_type": "EXPLICIT",
+    "source": "We expect possible adaptation of the point injection method to facilitate random mixing in vivo.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about future applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The spatial distances between injection sites, geometry, needle gauge size, injection volume, and the specific measurement protocol will need to be established and optimized for a particular in vivo application.",
+    "claim_type": "EXPLICIT",
+    "source": "The spatial distances between injection sites, geometry, needle gauge size, injection volume, and the specific measurement protocol (readout) will, of course, all need to be established and optimized for a particular application.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about requirements for future in vivo applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The manuscript focuses exclusively on the measurement approach rather than on data interpretation.",
+    "claim_type": "EXPLICIT",
+    "source": "Throughout this paper, we focus exclusively on the measurement approach rather than on data interpretation, which is context- and phenotype-dependent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the scope of the manuscript.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Further work is necessary to develop a methodology, interpretation, and dedicated numerical methods to identify optimal drug combinations from high dimensional experimental data.",
+    "claim_type": "EXPLICIT",
+    "source": "Further work is necessary to develop a methodology, interpretation, and dedicated numerical methods to identify optimal drug combinations from high dimensional experimental data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of future work needed for practical applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Injection speed is slow to ensure local initial distribution of the drug in the sample.",
+    "claim_type": "EXPLICIT",
+    "source": "injection speed is slow to ensure local initial distribution of the drug in the sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental protocol for point injection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "CellTracker probes have been designed to pass freely through cell membranes and are converted into impermeable fluorescent products once inside the cell.",
+    "claim_type": "EXPLICIT",
+    "source": "The CellTracker probes have been designed to pass freely through cell membranes, and once inside the cell, they are converted into impermeable fluorescent products.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the known chemistry of CellTracker dyes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "The probes are transferred to daughter cells, but are not transferred to adjacent cells in a population.",
+    "claim_type": "EXPLICIT",
+    "source": "The probes are transferred to daughter cells, but are not transferred to adjacent cells in a population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the known properties of CellTracker dyes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "CellTracker fluorescence probes contain chloromethyl/bromomethyl or succinimidyl ester reactive groups that react with ubiquitous intracellular thiol or amine groups, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "The CellTracker fluorescence probes contain chloromethyl/bromomethyl or succinimidyl ester reactive groups that react with ubiquitous intracellular thiol or amine groups, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the known chemistry of CellTracker dyes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The fluorescent reporter (QD) is retained within the cell upon entry and the drug (siRNA) is released locally into the cytosol via cleavage of a disulfide bond in the cytosolic reducing environment.",
+    "claim_type": "EXPLICIT",
+    "source": "The fluorescent reporter (QD) is retained within the cell upon entry and the drug, siRNA in our case, is released locally into the cytosol via cleavage of a disulfide bond in the cytosolic reducing environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mechanism of the cleavable linker system shown in Figure 6.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "To achieve one-to-one correspondence between total cellular drug uptake and its conjugation-free tag, it is important to ensure non-saturation labeling and detection conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that to achieve one-to-one (monotonic) correspondence between total cellular drug uptake and its conjugation-free tag, it is important to ensure non-saturation labeling and detection conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological consideration for the conjugation-free barcoding approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "If the tag fluorescence intensity saturates beyond a certain exposure concentration (or time), the total drug uptake prediction will be inaccurate.",
+    "claim_type": "EXPLICIT",
+    "source": "If the tag fluorescence intensity saturates beyond a certain exposure concentration (or time), the total drug uptake prediction will be inaccurate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of saturation in the detection system.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Saturation in tag signal may be caused by microscopy detection limits for either too low or too high fluorescent signals at the given laser power and sensitivity of the photomultiplier settings.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the saturation in tag signal may be caused by microscopy detection limits (for either too low or too high fluorescent signals at the given laser power and sensitivity of the photomultiplier settings).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge of microscopy instrumentation limitations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Careful adjustment of microscopy parameters is required to ensure a maximal dynamic detection range.",
+    "claim_type": "EXPLICIT",
+    "source": "Careful adjustment of these parameters is required to ensure a maximal dynamic detection range.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological recommendation based on instrumentation considerations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Washing steps need to be performed quickly using large dilution volumes to avoid label and drug homogenization.",
+    "claim_type": "EXPLICIT",
+    "source": "To avoid label and drug homogenization during the wash/collection steps using media (containing both fluorescent tags and drugs), the washing steps need be performed quickly using large dilution volumes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological recommendation to preserve drug gradients.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "Homogenization can affect local labeled drug gradients in the culture, reducing the dynamic range of drug concentrations within the sample.",
+    "claim_type": "EXPLICIT",
+    "source": "This homogenization, in turn, can affect local labeled drug gradients in the culture, reducing the dynamic range of drug concentrations within the sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the consequences of inadequate washing procedures.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Cells that were initially exposed to very low local drug(s) concentration are most affected by homogenization during washing.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells that were initially exposed to very low local drug(s) concentration are most affected.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about which cells are most susceptible to artifacts from washing.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "Short time scale 'leakage' effect occurs with both label(s) and drug(s) proportionally.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that this short time scale 'leakage' effect occurs with both label(s) and drug(s) proportionally.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the nature of drug and label redistribution during washing.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "Label intensity should be proportional to the corresponding drug concentration even with short-term leakage.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, label intensity should be proportional to the corresponding drug concentration, and can be still used as a proxy for drug concentration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference justifying the use of labels despite potential leakage.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Long time scale leakage occurs if the drug within cells is released to neighboring cells either via media or through cell-to-cell contact.",
+    "claim_type": "EXPLICIT",
+    "source": "Long time scale leakage occurs if the drug within cells is released to neighboring cells either via media or through cell-to-cell contact.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential limitation of the method for long-term experiments.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "Secondary drug exposure cannot be accounted for using fluorescent tags because the tags/labels are designed to be irreversibly bound to the cells and do not leak.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, this secondary drug exposure cannot be accounted for using fluorescent tags in our method because the tags/labels are designed to be irreversibly bound to the cells and do not leak (labels can, however, be diluted by cell division).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a limitation of the method for drugs that leak from cells.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "Drug leakage from cell to cell mediated by media can be estimated using the volume ratio of cells and culture media.",
+    "claim_type": "EXPLICIT",
+    "source": "Drug leakage from cell to cell mediated by media can be estimated using the volume ratio of cells and culture media.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological consideration for assessing drug redistribution.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The volume ratio of cells to media in most cell culture conditions is negligibly small and leakage via media can be ignored.",
+    "claim_type": "EXPLICIT",
+    "source": "This ratio in most cell culture condition is negligibly small and leakage of this sort can be ignored.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on typical cell culture conditions.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "Drug leakage from cell-to-cell mediated by direct contact can be much more significant than leakage via media.",
+    "claim_type": "EXPLICIT",
+    "source": "Drug leakage from cell-to-cell mediated by direct contact can be much more significant.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a potential limitation of the method.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "Cell-to-cell drug leakage is mitigated in adherent cell culture experiments by the coarse-graining procedure when the optical field containing multiple neighboring cells is averaged.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this effect is mitigated in adherent cell culture experiments by the coarse-graining procedure when the optical field containing multiple neighboring cells is averaged.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about how the analysis method addresses a potential limitation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "In all single-cell experiments, multidimensional intensity data were compiled using averaged fluorescence intensity measurements of each optical drug barcode for each cell.",
+    "claim_type": "EXPLICIT",
+    "source": "In all single-cell experiments, multidimensional intensity data were compiled using averaged fluorescence intensity measurements of each optical drug barcode for each cell.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data analysis approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "The ensuing phenotype for each individual cell was recorded using the corresponding fluorescence signal in functional experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, the ensuing phenotype for each individual cell was recorded using the corresponding fluorescence signal in functional experiments (conjugation-free barcoding, auranofin, and siRNA combinations).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data collection approach for phenotype measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "For experiments utilizing a single barcoded drug, coarse-grained modeling was used to recover the relationship between drug and tag.",
+    "claim_type": "EXPLICIT",
+    "source": "For experiments utilizing a single barcoded drug, we used coarse-grained modeling to recover the relationship between drug and tag as follows:",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data analysis approach for conjugation-free barcoding.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "All measured single-cell fluorescence intensity data were ordered by increasing value of the intensity of the tag.",
+    "claim_type": "EXPLICIT",
+    "source": "all measured single-cell fluorescence intensity data were ordered by increasing value of the intensity of the tag.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a step in the data analysis procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "This coarse-grained process ensures reduction in intrinsic noise due to the Law of Large Numbers.",
+    "claim_type": "EXPLICIT",
+    "source": "This coarse-grained process ensures reduction in intrinsic noise due to the Law of Large Numbers (cf., Supporting Information).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a justification for the coarse-graining approach based on statistical principles.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "Noise filtering can alternatively be implemented by moving average approach, preserving data dimensionality.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternatively, noise filtering can be implemented by moving the average approach, preserving data dimensionality.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an alternative data analysis approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "Cell intensity data were clustered hierarchically based on the barcodes' signals for coarse-grained analysis of barcoded multi-drug experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Cell intensity data were clustered hierarchically based on the barcodes' signals, and renormalized data were produced by averaging all optical parameters within each cluster",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data analysis approach for multi-drug experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "For siRNA experiments, after image segmentation, fluorescence of QD drug carriers and of GFP was assessed for individual cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, for siRNA experiments, after image segmentation, fluorescence of QD drug carriers and of GFP was assessed for individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data collection approach for siRNA experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "Each drug's uptake was assumed to be proportional to the intensity of the corresponding QD carrier in each cell.",
+    "claim_type": "EXPLICIT",
+    "source": "Each drug's uptake was assumed to be proportional to the intensity of the corresponding QD carrier in each cell.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assumption underlying the quantification of siRNA delivery.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "For pairwise drug combination experiments, binning was achieved by partitioning the 2d space of the corresponding QD-tags' fluorescence values into a finite mesh.",
+    "claim_type": "EXPLICIT",
+    "source": "For pairwise drug combination experiments, binning was achieved by partitioning the 2d space of the corresponding QD-tags' fluorescence values into a finite mesh.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data analysis approach for pairwise drug combinations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "The bins were designed to contain 30 or more cells each.",
+    "claim_type": "EXPLICIT",
+    "source": "The bins were designed to contain 30 or more cells each.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a parameter of the data analysis approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "A phenotypic marker (e.g. GFP intensity) was averaged over each binned cell population.",
+    "claim_type": "EXPLICIT",
+    "source": "We averaged a phenotypic marker (e.g. GFP intensity) over each binned cell population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data analysis approach for phenotype quantification.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "The great majority of the experiments were conducted with the HeLa cell line.",
+    "claim_type": "EXPLICIT",
+    "source": "The great majority of the experiments were conducted with the HeLa cell line.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental system used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "Human pulmonary artery endothelial cells (HPAEC) were used for quantification of auranofin delivery.",
+    "claim_type": "EXPLICIT",
+    "source": "We used human pulmonary artery endothelial cells (HPAEC) for quantification of auranofin delivery.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental system for auranofin experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "All experiments utilizing the point injection method were performed in confluent cell culture.",
+    "claim_type": "EXPLICIT",
+    "source": "All experiments utilizing the point injection method were performed in confluent cell culture.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "Rectangular 4 and 8 chamber slides (Ibidi \u03bc-Slides) were used for siRNA experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "we used rectangular 4 and 8 chamber slides (Ibidi \u03bc-Slides) for siRNA experiments",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental materials.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "In experiments requiring single-cell imaging, cells were either 'shrunken' or completely detached using Accutase treatment to facilitate image segmentation.",
+    "claim_type": "EXPLICIT",
+    "source": "In experiments requiring single-cell imaging, cells were either 'shrunken' or completely detached using Accutase treatment to facilitate image segmentation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for single-cell imaging.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "Homogeneous dye and QD labeling were performed according to the manufacturer's (Thermo-Fisher) suggested protocol(s), typically at room temperature.",
+    "claim_type": "EXPLICIT",
+    "source": "Homogeneous dye and QD labeling were performed according to the manufacturer's (Thermo-Fisher) suggested protocol(s), typically at room temperature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for homogeneous labeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "For point injection experiments, 10x dye concentration was used compared to the homogeneous staining condition.",
+    "claim_type": "EXPLICIT",
+    "source": "For point injection experiments, we used 10 x dye concentration (compared to the homogeneous staining condition).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental conditions for point injection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "Cell imaging was performed with an inverted fully motorized Zeiss LSM-800 confocal scanning microscope utilizing 405, 488, 561, and 640 nm diode lasers for excitation of dyes and markers.",
+    "claim_type": "EXPLICIT",
+    "source": "Cell imaging was performed with an inverted fully motorized Zeiss LSM-800 confocal scanning microscope utilizing 405, 488, 561, and 640 nm diode lasers for excitation of dyes and markers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the imaging equipment and settings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "Most of the microscopy experiments were performed using the 5x objective to capture larger optical fields necessary for statistical analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Most of the microscopy experiments were performed using the 5 x objective to capture larger optical fields necessary for statistical analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the imaging conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "Cell segmentation was performed using bright-field and/or dedicated cytosolic markers.",
+    "claim_type": "EXPLICIT",
+    "source": "cell segmentation was performed using bright-field and/or dedicated cytosolic markers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the image analysis approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "Cellpose was employed for accurate cellular segmentation.",
+    "claim_type": "EXPLICIT",
+    "source": "We employed Cellpose (Stringer et al., 2021) for accurate cellular segmentation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the software used for image analysis, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "For the auranofin co-delivery experiments, the ratiometric signal of the HyPer7 sensor was calculated as the ratio of cellular fluorescence intensities of the GFP channel excited by 488 and 405 nm laser sources.",
+    "claim_type": "EXPLICIT",
+    "source": "For the auranofin co-delivery experiments, the ratiometric signal of the HyPer7 sensor was calculated as the ratio of cellular fluorescence intensities of the GFP channel excited by 488 and 405 nm laser sources.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data analysis approach for HyPer7 measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "Fluorescent labels/markers were tested individually to detect possible cross-channel leakage/overlap.",
+    "claim_type": "EXPLICIT",
+    "source": "We tested fluorescent labels/markers individually to detect possible cross-channel leakage/overlap.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a quality control step in the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "Analysis of cross-channel leakage was especially critical in dye co-delivery experiments where the degree of correlation may be strongly affected by channel leakage.",
+    "claim_type": "EXPLICIT",
+    "source": "This analysis was especially critical in dye co-delivery experiments where the degree of correlation may be strongly affected by channel leakage.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological consideration for ensuring data quality.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "Dyes/fluorophores with well separated emission spectra were utilized to ensure channel 'isolation'.",
+    "claim_type": "EXPLICIT",
+    "source": "To ensure channel 'isolation', we utilized dyes/fluorophores with well separated emission spectra for these experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design to minimize cross-talk.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "Human pulmonary artery endothelial cells (HPAEC) were cultured at 37\u00b0C in modified EGM2 medium (Clonetics).",
+    "claim_type": "EXPLICIT",
+    "source": "Human pulmonary artery endothelial cells (HPAEC) were cultured at 37\u00b0C in modified EGM2 medium (Clonetics).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the cell culture conditions for HPAEC.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "Cells were maintained in continuous culture in an air-5% CO2 atmosphere at constant humidity and used within three to five passages.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells were maintained in continuous culture in an air-5% CO2 atmosphere at constant humidity and used within three to five passages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the cell culture conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "For fixation experiments, after aspiration of the culture media, cells were incubated with 10% formalin for 5 min at room temperature followed by a PBS wash.",
+    "claim_type": "EXPLICIT",
+    "source": "For fixation experiments, after aspiration of the culture media, cells were incubated with 10% formalin for 5 min at room temperature followed by a PBS wash.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for cell fixation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "For cell suspension experiments, HeLa cells were detached with Accutase solution (Sigma-Aldrich), washed with culture media, and kept at either room temperature or 4\u00b0C in dPBS in non-treated plastic cuvettes for a short duration of dye(s) labeling (typically 1/2 hour).",
+    "claim_type": "EXPLICIT",
+    "source": "For cell suspension experiments, we detached HeLa cells with Accutase solution (Sigma-Aldrich), washed the cells with culture media, and kept them at either room temperature or 4\u00b0C in dPBS in non-treated plastic cuvettes for a short duration of dye(s) labeling (typically 1/2 hour).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for suspension cell experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "In siRNA experiments, point-injection of two different QD nanoparticles carrying different siRNAs was performed at two different corners of the cell culture plate (chamber slide).",
+    "claim_type": "EXPLICIT",
+    "source": "In siRNA experiments, point-injection of two different QD nanoparticles carrying different siRNAs was performed at two different corners of the cell culture plate (chamber slide).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for siRNA delivery.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "Samples were incubated at 37\u00b0 for 30 min after siRNA point injection.",
+    "claim_type": "EXPLICIT",
+    "source": "Samples were incubated at 37\u00b0 for 30 min.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental conditions for siRNA experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C178",
+    "claim": "No special precautions were taken to suppress the advection process in siRNA experiments, which facilitated the creation of concentration gradients.",
+    "claim_type": "EXPLICIT",
+    "source": "(Of note, no special precautions were taken to suppress the advection process, which facilitated the creation of concentration gradients).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental approach for creating gradients.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C179",
+    "claim": "Short-lived green fluorescent protein (d2EGFP) was used to ensure correlation between fluorescent GFP signal and mRNA target concentration in cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We used short-lived green fluorescent protein (d2EGFP) to ensure correlation between fluorescent GFP signal and mRNA target concentration in cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the rationale for using d2EGFP in siRNA experiments.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "The d2EGFP plasmid was a gift from Derrick Rossi, Addgene #26821.",
+    "claim_type": "EXPLICIT",
+    "source": "The d2EGFP plasmid (Warren et al., 2010) was a gift from Derrick Rossi, Addgene #26821.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the source of the plasmid, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "siRNAs were designed and experimentally validated by Dharmacon and the Sharp laboratory.",
+    "claim_type": "EXPLICIT",
+    "source": "We used siRNAs that were designed and experimentally validated by Dharmacon (cf., Accell eGFP Control siRNA) and the Sharp laboratory",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the source and validation of siRNA sequences.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "The binding strand sequence of siRNA1 is GCCACAACGTCTATATCAT.",
+    "claim_type": "EXPLICIT",
+    "source": "with binding strand sequences GCCACAACGTCTATATCAT (siRNA1)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the specific sequence used in the experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "The binding strand sequence of siRNA2 is GCACCATCTTCTTCAAGGA.",
+    "claim_type": "EXPLICIT",
+    "source": "and GCACCATCTTCTTCAAGGA (siRNA2)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the specific sequence used in the experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C185",
+    "claim": "The msiRNA1 construct has a single nucleotide mismatch in the binding strand, GCCACAACGGCTATATCAT.",
+    "claim_type": "EXPLICIT",
+    "source": "The msiRNA1 construct has a single nucleotide mismatch in the binding strand, GCCACAACGGCTATATCAT",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design of the mismatched siRNA.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C187",
+    "claim": "All siRNAs were designed with a cleavable disulfide linker (CL) attached to their 3' end.",
+    "claim_type": "EXPLICIT",
+    "source": "All siRNAs were designed with a cleavable disulfide linker (CL) attached to their 3' end (Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the siRNA design shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C188",
+    "claim": "Streptavidin-conjugated Quantum Dots (QDs) were used as fluorescent tags for each class of siRNAs, creating uniquely labeled siRNA-QD pairs.",
+    "claim_type": "EXPLICIT",
+    "source": "We used streptavidin-conjugated Quantum Dots (QDs) as fluorescent tags for each class of siRNAs, creating uniquely labeled siRNA-QD pairs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the labeling strategy for siRNA experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C189",
+    "claim": "Quantum Dots (QDs) are semiconductor nanoparticles, typically excitable by UV light, with fluorescence emission spectra that are fairly narrow.",
+    "claim_type": "EXPLICIT",
+    "source": "Quantum Dots (QDs) are semiconductor nanoparticles, typically excitable by UV light, with fluorescence emission spectra that are fairly narrow.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge of QD properties.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C190",
+    "claim": "The emission peaks of QDs depend on the nanoparticle size, a property that makes QDs very useful for high-throughput microscopy measurements.",
+    "claim_type": "EXPLICIT",
+    "source": "The emission peaks of QDs depend on the nanoparticle size, a property that makes QDs very useful for high-throughput microscopy measurements (Wegner and Hildebrandt, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge of QD properties, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C191",
+    "claim": "QDs were further functionalized with a cell penetrating peptide (CPP) [a nanopeptide (Arg)9] to facilitate siRNA-QD cellular delivery.",
+    "claim_type": "EXPLICIT",
+    "source": "To facilitate siRNA-QD cellular delivery, we further functionalized the QDs with a cell penetrating peptide (CPP) [a nanopeptide (Arg)9] that can facilitate cell uptake through endocytosis or non-endocytotic mechanisms (Verma and Stellacci, 2010)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the delivery strategy, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C192",
+    "claim": "Cell penetrating peptides can facilitate cell uptake through endocytosis or non-endocytotic mechanisms.",
+    "claim_type": "EXPLICIT",
+    "source": "that can facilitate cell uptake through endocytosis or non-endocytotic mechanisms (Verma and Stellacci, 2010)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge of CPP mechanisms, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C193",
+    "claim": "The initial drugs' distribution is spread ('averaged') locally across finite regions of space due to the dispersion process.",
+    "claim_type": "EXPLICIT",
+    "source": "Due to the dispersion process, the initial drugs' distribution is spread ('averaged') locally across finite regions of space (spread size depends on drug diffusion and uptake rates, and also incubation time).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on physical principles of diffusion and mass transport.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C194",
+    "claim": "The spread size depends on drug diffusion and uptake rates, and also incubation time.",
+    "claim_type": "EXPLICIT",
+    "source": "(spread size depends on drug diffusion and uptake rates, and also incubation time).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on physical principles of diffusion and mass transport.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C195",
+    "claim": "Local averaging over multiple confluent cells can be performed by partitioning the entire image into tiles.",
+    "claim_type": "EXPLICIT",
+    "source": "We performed effective local averaging over multiple confluent cells by partitioning the entire image into tiles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the coarse-grained image analysis approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C196",
+    "claim": "The size of the tile (typically, \u223c50x50 microns) was estimated to contain at least a few cells on average.",
+    "claim_type": "EXPLICIT",
+    "source": "The size of the tile (typically, \u223c50x50 microns) was estimated to contain at least a few cells on average.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a parameter of the image analysis approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C197",
+    "claim": "Each tile in the image was replaced with an effective 'pixel' characterized by the average fluorescence intensity of real pixels within the tile.",
+    "claim_type": "EXPLICIT",
+    "source": "Each tile in the image was replaced with an effective 'pixel' characterized by the average fluorescence intensity of real pixels within the tile.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the coarse-graining procedure for image analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C198",
+    "claim": "The only segmentation performed in coarse-grained image analysis was identification of large lacunae (cell-free regions) in the optical field, with exclusion of these regions from image analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "The only segmentation we performed in this case was identification of large lacunae (cell-free regions) in the optical field, with exclusion of these regions from image analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the minimal segmentation required for the coarse-grained approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript establishes that learning and decision-making are interactive processes, but cognitive modeling of these processes has historically evolved separately. This separation is acknowledged in the literature but has persisted in practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C14 provide consistent statements about the relationship between learning and decision-making and the historical separation of their modeling traditions. These are well-supported by citations and represent accurate characterizations of the field's development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Recent advances have combined reinforcement learning (RL) models with evidence accumulation models (EAMs) into joint RL-EAM frameworks. These frameworks provide mutual benefits including comprehensive behavioral data analysis, improved parameter recovery, and single-trial parameter estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C21-C33 describe the development and benefits of combined RL-EAM frameworks, supported by multiple citations. The characterization of how these models work (C23-C27) and their benefits (C28-C33) is well-documented in prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The DDM is the dominant EAM currently used in reinforcement learning, but this choice lacks experimental justification. The DDM has fundamental limitations including inability to handle multi-alternative choice and difficulties explaining effects of absolute stimulus and reward magnitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C83-C85 identify limitations of the DDM that are well-supported by citations. The characterization of DDM as dominant but unjustified (C34-C35) and its theoretical limitations (C36-C37, C83-C85) are consistent with cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C81",
+      "C82"
+    ],
+    "result": "The RL-DDM consistently fails to capture crucial aspects of response times during reinforcement learning, specifically overestimating RT variability and skew. This is problematic because RT distribution characteristics are considered critical for evaluating decision-making models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48, C81, and C82 present a major empirical finding supported by data from all four experiments (Figures 3, 6, 7). The consistent pattern of RT distribution misfit across multiple experimental contexts provides strong evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C87"
+    ],
+    "result": "The authors propose the RL-ARD model based on an advantage racing diffusion framework. The model uses three components to drive evidence accumulation: stimulus-independent urgency, the advantage (difference) between options, and the sum of evidence values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40, C41, and C87 describe the architecture of the proposed RL-ARD model. The model specification is clearly defined with mathematical equations and builds on the cited advantage framework (van Ravenzwaaij et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50"
+    ],
+    "result": "In Experiment 1, the RL-ARD models provide the best explanation of stimulus difficulty effects, capturing accuracy, RT distributions, and learning-related changes better than RL-DDM and RL-RD models. Data from 55 participants across four difficulty conditions support this conclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C44-C50 describe Experiment 1 methods and results. Figure 3 shows that RL-ARD captures RT distributions and accuracy well, while RL-DDM overestimates variability and skew. BPIC values (Table 1) provide formal model comparison support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The RL-ARD explains learning-related RT decreases through the increasing sum of Q-values over trials, which increases drift rates. The sum component, though having the weakest effect among the three components, is necessary for accurate model fit and plays an important role in explaining reward reversal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C90-C93 describe the role of the sum component in the RL-ARD. Figure 5 shows Q-value evolution and drift rate changes. Model comparisons between RL-ARD and RL-lARD (which lacks the sum term) demonstrate its necessity, and Experiment 3 results show its role in reversals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C88",
+      "C89"
+    ],
+    "result": "In Experiment 2, the RL-ARD model combining response caution and urgency effects provides the best explanation of speed-accuracy trade-off (SAT) effects. The urgency component plays a key role in explaining SAT effects. Data from 19 participants show RTs decreased with trial bin and were faster in the speed condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C53-C64, C88-C89 describe Experiment 2 methods and results. Statistical tests confirm SAT manipulation effects (C57-C62). Figure 6 shows RL-ARD captures SAT effects better than RL-DDM. BPIC values strongly favor RL-ARD (\u0394BPIC > 200), and the urgency component is identified as critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In Experiment 3, the RL-ARD captures stimulus-response-mapping reversal effects, providing better account of RT distribution changes than RL-DDM. Both models capture choice proportion changes reasonably well but underestimate the speed of change. The RL-ARD explains prolonged RT elevation after reversal through relatively high Q-values for the previously correct option.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C65-C73 describe Experiment 3 results with 47 participants. Figure 7 shows RL-ARD captures RT distributions better than RL-DDM (\u0394BPIC = 4051). The observation that RTs remain elevated longer than choice proportions (C71-C72) is explained by Q-value dynamics (C73, Figure 8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The RL-ARD extends to multi-alternative choice (three options) while maintaining constant parameter count. In Experiment 4 with 34 participants, the model accurately predicted learning curves and full RT distributions across four conditions varying in difficulty and reward magnitude. The model remained fully recoverable despite relatively low trial numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C74-C80, and C94-C98 describe the multi-alternative extension and Experiment 4 results. Figure 11 shows excellent model fit to three-choice data. The architectural property that parameter count remains constant (C96-C97) is a theoretical strength, and parameter recovery (C98, Figure 11\u2014supplement 1) demonstrates practical viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The RL-ARD remedied all problems of the RL-DDM and provided generally accurate accounts of data, though some misfits remain. The model underestimated RT and accuracy in initial trials of easy conditions and underestimated the speed of choice probability changes after reversals, pointing to limited ability to capture some learning-related changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C105-C108 provide an honest assessment of model limitations. The specific misfits described (C106-C107) are visible in Figures 4, 6, and 7. The acknowledgment of limitations (C108) is appropriate given the simple learning rule used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The consistent overestimation of RT variability and skewness by RL-DDM is surprising given DDM's success in perceptual tasks. Adding between-trial variability in non-decision times partially mitigated the misfit but required implausibly high values. These results suggest decision processes in value-based decision and instrumental learning may be fundamentally different from two-sided diffusion processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 provide interpretation of the RL-DDM failures. The finding about non-decision time variability (C100) is supported by supplementary analyses. The theoretical conclusion (C101) is appropriately cautious ('may be') and supported by the consistent pattern of results across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Racing diffusion processes were chosen over LBA models for parsimony reasons, as error-driven learning introduces between-trial variability in accumulation rates. Exploratory fits showed an RL-ALBA model fit experiment one data well, though formal model comparisons preferred the RL-ARD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 explain a methodological choice and report exploratory analyses. The reasoning for choosing racing diffusion (C102) is sound. The RL-ALBA results (C103-C104, Figure 4\u2014supplement 3) demonstrate the advantage framework's generality beyond the specific diffusion implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study used a simple model of error-driven learning, which may explain some misfits. Working memory likely plays a role in some reinforcement learning tasks, explaining accurate but slow early responses in easy conditions. The multi-alternative choice experiment with 12 stimuli per block hampered working memory strategies, so performance was explained by purely error-driven learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 acknowledge limitations and provide interpretations. The role of working memory (C110) is supported by citations and explains specific misfits. The interpretation about Experiment 4 (C111) is consistent with the better early-trial fit observed in that experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The ARD decision mechanism provides a firm basis for future RL-EAM research with good parameter recovery properties even with low trial numbers. The advantage framework extends to multiple choice while maintaining analytical tractability and addressing key empirical phenomena, enabling future clinical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 provide concluding statements about the model's utility. Parameter recovery properties (C113) are demonstrated in multiple supplementary figures. The extension to multiple choice (C114) is demonstrated in Experiment 4, and the cited phenomena (Hick's Law, response competition) are from van Ravenzwaaij et al., 2020.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "In error-driven learning studies, the decision process is typically simplified to soft-max, which offers no process-level understanding and ignores response times. In contrast, EAMs provide detailed process accounts but are typically applied to tasks minimizing learning influence, treating learning-related variability as noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 characterize current practices in the field, supported by citations. These statements accurately describe the limitations of soft-max (C15-C17) and typical EAM applications (C18-C20), providing context for the motivation of combined models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "Models that fail to capture crucial aspects of performance risk producing misleading inferences. For EAMs, full RT distributions (variability and skew) are crucial. In perceptual choice, the advantage term dominates the sum term by an order of magnitude, but the sum term is necessary to explain absolute stimulus magnitude effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 state general principles about model evaluation. Claims C42-C43 cite findings from van Ravenzwaaij et al., 2020 that motivated the RL-ARD design. These provide important context for the model architecture and evaluation criteria.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Characterization of p150CC1B, NudECC, and light chains shows they are homogeneous dimers with coiled-coil structures and similar sedimentation coefficients (2-3 S range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 collectively demonstrate that p150CC1B and NudECC are strong dimers with Kd values of 0.03 and 0.20 \u03bcM respectively, confirmed by SE-AUC (C37-C39). CD spectra confirm coiled-coil structures with 222/208 ratios >1 (C41), and SV-AUC shows homogeneous single peaks for all proteins (C32-C34). The data are internally consistent across multiple biophysical techniques.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "IC1-260 and full-length IC (ICFL) are monomeric in solution, with ICFL requiring light chains for dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SEC-MALS data show IC1-260 has a mass of ~29.5 kDa (C42) and ICFL has a mass of ~75.4 kDa (C96), both consistent with monomeric states. SV-AUC confirms ICFL is monomeric with a single peak at 4.0 S (C99). Claims C97-C98 represent the first demonstration that full-length IC is monomeric and requires light chains for dimerization, supported by multiple orthogonal techniques.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Ct IC1-260 contains a unique predicted third helix (H3, residues 170-200) and exhibits enhanced thermostability compared to shorter IC constructs, suggesting tertiary contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Agadir predictions and CD data (C43-C44) identify H3 in Ct IC. Variable temperature CD shows IC1-260 resists unfolding until >50\u00b0C (C45), while shorter constructs unfold at lower temperatures (C46-C47). The enhanced stability and cooperative unfolding of IC1-260 support the hypothesis of tertiary contacts (C48), though this remains inferential until directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "IC1-88 and IC100-260 interact to form a 1:1 complex, confirming tertiary contacts within IC1-260.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SV-AUC shows formation of a complex with sedimentation coefficient of 2 S (C49), and SEC-MALS confirms a mass of 30.3 kDa matching the expected 1:1 stoichiometry (C50). These data directly demonstrate intramolecular interactions within IC1-260 (C51), providing strong evidence for long-range tertiary contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "NMR characterization reveals IC1-260 contains both structured and disordered regions, with temperature-dependent peak visibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "At 10\u00b0C, limited chemical shift dispersion and CLEANEX data indicate observable peaks correspond to disordered regions (C52), with 37% of non-proline residues assigned (C53-C54). At 40\u00b0C, new peaks with greater dispersion appear (C55) without secondary structure changes by CD (C56), attributed to increased molecular tumbling (C57). The multi-temperature NMR approach effectively characterizes the disorder-order balance in IC1-260 (C58).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "NMR titrations identify tertiary contacts between the SAH/H2 regions and the LC7 binding site, ruling out strong SAH-H3 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "NMR titrations show limited IC1-88/IC160-240 interaction (C59) but pronounced effects with IC100-260 (C60-C61), ruling out strong SAH-H3 contacts (C62). Titrations with IC216-260 identify interactions with the LC7 binding site (C63-C64), which are stronger in the context of longer constructs (C65). The systematic NMR approach provides residue-level evidence for specific long-range interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "p150CC1B and NudECC have different binding modes to IC: p150CC1B binds both SAH and H2 regions forming a compact complex, while NudECC binds only SAH forming a less compact complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SV-AUC shows IC1-88/p150CC1B has a larger sedimentation coefficient (3.7 S) than IC1-88/NudECC (2.7 S) despite similar masses (C66-C68), confirmed by MALS (C69). NMR shows H2 binds p150CC1B but not NudECC (C70-C72), confirmed by ITC. The differential binding modes are well-supported by multiple orthogonal techniques, though the structural basis for compaction differences requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "IC1-88 binds NudECC with 1:1 stoichiometry and Kd of 0.3 \u03bcM, weaker than p150CC1B binding, with binding dramatically reduced or undetectable for IC1-260.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ITC demonstrates 1:1 binding of IC1-88 to NudECC with Kd = 0.3 \u03bcM (C75-C76), weaker than nM affinity for p150CC1B (C77). Binding is notably different or undetectable for IC1-260 (C78), supported by ITC data in Figure 6C. The dramatic difference between short and long IC constructs is a key finding supporting autoinhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Binary complexes of IC1-260 with individual binding partners show differential effects: LC8 binding is strongest, while NudECC binding is weak; LC7, p150CC1B, and NudECC cause similar extensive NMR peak disappearances suggesting long-range communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SV-AUC shows IC1-260/LC8 has the largest sedimentation coefficient (C79), while IC1-260/NudECC shows minimal change (C80-C82). NMR reveals limited peak changes with Tctex/LC8 (C83) but extensive changes with LC7/p150CC1B/NudECC (C84-C85). The similar NMR patterns for proteins binding opposite ends of IC1-260 provide strong evidence for long-range intramolecular communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C94",
+      "C95"
+    ],
+    "result": "Reconstituted dynein subcomplexes show differential compaction: p150CC1B binding produces a more compact complex (7 S, f/f\u2080=1.75) than NudECC binding (5 S, f/f\u2080=2.38), with significant disorder retained in the assembled complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SEC, SDS-PAGE, and SV-AUC confirm successful subcomplex assembly (C86-C88). Addition of p150CC1B increases sedimentation to ~7 S while NudECC only slightly increases it (C89-C90), with frictional coefficient ratios indicating p150CC1B complexes are more globular (C92). NMR shows retained disorder at 10\u00b0C but peak disappearance at 40\u00b0C (C94-C95). The multi-technique characterization provides strong evidence for differential conformational states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Full-length IC (ICFL) exhibits autoinhibition that prevents binding to p150CC1B and NudECC, which is relieved by light chain binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SV-AUC shows negligible shift when p150CC1B or NudECC are added to ICFL alone (C100), indicating autoinhibition (C101). However, ICFL/Tctex/LC8/LC7 shows sedimentation shifts to 7.5 S and 8 S upon addition of NudECC and p150CC1B respectively (C102-C104), confirming light chains relieve autoinhibition (C105). This is the first demonstration of autoinhibition in full-length IC, a major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "LC7 is sufficient to relieve autoinhibition for both p150CC1B and NudECC binding to ICFL, while Tctex/LC8 only promote p150CC1B binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SV-AUC shows ICFL/Tctex/LC8 shifts with p150CC1B but not NudECC (C106-C108), while ICFL/LC7 shifts with both (C107-C109). This demonstrates LC7 is sufficient for both interactions while Tctex/LC8 are selective (C110-C111). The differential regulation by light chains is well-supported and reveals a unique role for LC7 in autoinhibition relief.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "IC1-260 adopts an autoinhibited compact conformation through long-range interactions between SAH and the LC7 binding site, which prevents NudECC binding and reduces p150CC1B affinity; LC7 binding relieves this autoinhibition while Tctex/LC8 binding maintains it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The autoinhibition model is supported by reduced binding affinity to p150CC1B and loss of NudECC binding for IC1-260 vs. short constructs (C5-C6), attributed to long-range SAH-LC7 site interactions (C7, C64, C128-C130). Light chain binding differentially regulates autoinhibition (C8, C110-C111, C131-C132), with LC7 relieving it (C117, C121) while Tctex/LC8 maintain it (C120, C131). The model is well-supported by ITC, NMR, and AUC data, though direct structural evidence would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "p150CC1B and NudECC induce different IC subcomplex conformations: NudECC binding produces a more elongated conformation while p150CC1B binding results in a more compact conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 propose differential conformational effects based on sedimentation coefficient and frictional ratio differences (C68, C92, C122). While the data consistently show these differences across multiple complexes, the proposed model (C124) is somewhat speculative as it lacks direct structural evidence. The conclusion is reasonable given the biophysical data but would benefit from additional structural characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C112",
+      "C113",
+      "C114",
+      "C125"
+    ],
+    "result": "Background and context claims establish the biological importance of dynein, IC structure and function, and prior knowledge about IC interactions with p150Glued and NudE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C9-C30, C112-C114, C125) provide established background knowledge supported by appropriate citations. They contextualize the current work within the dynein field and establish the rationale for studying IC autoinhibition. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C115"
+    ],
+    "result": "The Ct IC1-260 construct is the longest IC construct studied to date, and mechanisms observed in IC1-260 are retained in full-length IC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by comparison with prior constructs shown in Figure 1A. Claim C115 is supported by the parallel findings with ICFL (C97-C111), demonstrating that autoinhibition and light chain regulation occur in both IC1-260 and full-length IC. This validates the use of IC1-260 as a model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Disordered linkers in IC provide flexibility for long-range interactions and conformational changes, with LC7 having a unique role in regulating IC interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by the collective data showing LC7's unique ability to relieve autoinhibition (C110, C117, C121, C132) and the demonstrated long-range interactions between distant regions (C64-C65, C85). The conclusion about LC7's unique role is well-supported, though the specific mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,384 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C61",
+      "C117"
+    ],
+    "result": "DddX is a novel ATP-dependent DMSP lyase belonging to the acyl-CoA synthetase superfamily, distinct from the eight previously known DMSP lyases. It catalyzes a two-step reaction converting DMSP to DMS and acryloyl-CoA via a DMSP-CoA intermediate, with the mechanism elucidated through structural and biochemical analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C34-C37, C61, and C117 are well-supported by multiple lines of experimental evidence including enzymatic assays (GC, HPLC, LC-MS), genetic complementation studies, crystal structure determination, and mutational analysis. The detection of DMSP-CoA intermediate (C62) and acryloyl-CoA product (C60) with matching molecular weights, combined with the requirement for ATP and CoA as co-substrates, provides strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Psychrobacter sp. D2 was isolated from Antarctic samples and grows on DMSP as sole carbon source, producing DMS at 44.8 \u00b1 1.8 nmol min\u207b\u00b9 mg protein\u207b\u00b9. Transcriptome analysis identified a DMSP-responsive gene cluster (1696-1699) containing a novel gene (1697/dddX) with low sequence identity (<15%) to known DMSP lyase DddD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C50 are supported by isolation data, growth curves (Figure 2A), GC measurements (Figure 2B), genome sequencing, transcriptome analysis (Figure 2C, Figure 2\u2014figure supplement 2), and sequence comparisons. The experimental design appropriately uses controls and the data consistently demonstrate DMSP utilization and DMS production by strain D2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Genetic deletion of dddX abolishes both growth on DMSP and DMS production in Psychrobacter sp. D2, with full restoration of both phenotypes upon complementation, demonstrating that dddX is essential for DMSP utilization and encodes a functional DMSP lyase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are strongly supported by genetic complementation experiments with appropriate controls (Figure 3A-B). The complete loss of function in the deletion mutant and full restoration in the complemented strain provide definitive evidence for dddX essentiality in DMSP metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Recombinant DddX directly converts DMSP to DMS and acryloyl-CoA (MW 822.1317) with ADP as a co-product. The reaction proceeds through a DMSP-CoA intermediate rather than free acrylate, as evidenced by detection of DMSP-CoA and absence of acrylate in the reaction system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are well-supported by GC (Figure 3C), HPLC (Figure 3D), and LC-MS data (Figure 3E-F). The identification of products by retention time comparison and exact mass determination is rigorous. The detection of DMSP-CoA intermediate (C62) and absence of acrylate (C63) provide strong evidence for the proposed two-step mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "DddX exhibits optimal activity at 40\u00b0C and pH 8.5, with apparent KM values of 2.5 mM for ATP, 0.4 mM for CoA, and 0.4 mM for DMSP. The catalytic efficiency (kcat/KM = 1.6 \u00d7 10\u00b3 M\u207b\u00b9 s\u207b\u00b9) is higher than DddK, DddP, and DddD but lower than DddY and Alma1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 are supported by systematic enzymatic assays (Figure 3\u2014figure supplement 3) with appropriate controls and replicates. The kinetic parameters are determined using standard methods and compared to literature values (Supplementary file 1c). The measurements appear technically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Despite belonging to the ACD superfamily with 26% identity to Giardia lamblia ACS, DddX shows no activity toward acetate or propionate, and deletion of dddX does not affect growth on these substrates, indicating DddX does not function as an acetate-CoA ligase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are supported by sequence analysis, enzymatic assays (Figure 3\u2014figure supplement 4-5), and growth experiments (Figure 3\u2014figure supplement 6). The combination of in vitro enzyme assays and in vivo growth phenotypes provides strong evidence that DddX is specific for DMSP and not involved in acetate/propionate metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The crystal structure of DddX in complex with ATP was solved at sufficient resolution, revealing a dimeric enzyme in solution with each monomer containing a CoA-binding domain and ATP-grasp domain. The structure shows similarity to NDP-forming acetyl-CoA synthetase ACD1 (RMSD 4.6 \u00c5 over 581 C\u03b1 atoms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 are supported by crystallographic data (Supplementary file 1d), gel filtration analysis (Figure 4\u2014figure supplement 1B), and structural comparisons (Figure 4A, Figure 4\u2014figure supplement 2). The structure determination methods are appropriate and the comparison to ACD1 provides valuable mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "His292, located in the swinging loop (Gly280-Tyr300), forms a hydrogen bond with ATP's \u03b3-phosphate and is essential for catalysis. Mutation to alanine abolishes activity without altering protein structure (CD spectroscopy), indicating His292 is phosphorylated during catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 are supported by sequence alignment (Figure 4\u2014figure supplement 3), structural analysis (Figure 4B), mutational analysis (Figure 4C), and CD spectroscopy (Figure 4\u2014figure supplement 4). The combination of structural and functional data provides strong evidence for His292's role in phosphorylation, though direct detection of phosphohistidine would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Structural analysis of docked DMSP-CoA identified key catalytic residues: Trp391 and Phe435 form cation-\u03c0 interactions with the sulfonium group, while Glu432 is the most probable catalytic base for DMSP-CoA cleavage. Mutations of these residues significantly reduce or abolish activity without structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 are supported by molecular docking, mutational analysis (Figure 4C), and CD spectroscopy (Figure 4\u2014figure supplement 4). The systematic mutagenesis with structural controls is rigorous. However, the reliance on docking rather than co-crystal structures introduces some uncertainty about exact substrate positioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A catalytic mechanism is proposed where His292 is phosphorylated by ATP, the phosphoryl group is transferred to DMSP forming DMSP-phosphate, CoA attacks to form DMSP-CoA, and Glu432-mediated deprotonation cleaves DMSP-CoA to yield DMS and acryloyl-CoA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 represent a proposed mechanism based on structural data, mutational analysis, and comparison with related ACD superfamily enzymes (C108 cites Wei\u00dfe et al., 2016; Verschueren et al., 2019; Hu et al., 2017). While the mechanism is well-reasoned and consistent with available data, it remains a model that would benefit from additional validation such as detection of phosphorylated intermediates or time-resolved structural studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C145"
+    ],
+    "result": "DddX homologs are present in diverse bacteria including Alphaproteobacteria, Gammaproteobacteria, and Firmicutes, with conserved key residues (H292, W391, D432). Representative homologs from all three groups were experimentally validated to degrade DMSP and produce acryloyl-CoA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 and C145 are supported by bioinformatic searches (Figure 6), sequence alignment showing conserved residues, and experimental validation of four representative homologs (Figure 6\u2014figure supplement 1). The combination of computational prediction and experimental validation provides strong evidence for functional conservation across bacterial lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "DddX is fundamentally different from DddD: DddX requires ATP and free CoA as co-substrates and produces acryloyl-CoA, while DddD uses acetyl-CoA (no ATP required) and produces 3-HP-CoA. DddX cannot use acetyl-CoA as a CoA donor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 are supported by enzymatic assays comparing substrate requirements (Figure 1\u2014figure supplement 1) and product analysis. The distinctions between DddX and DddD are clearly demonstrated experimentally and properly contextualized with literature citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C136"
+    ],
+    "result": "Acryloyl-CoA produced by DddX is toxic and requires detoxification. Genes 1698/1699 (dddC/dddB homologs) are co-transcribed with dddX but show no activity on acryloyl-CoA. The genome contains acuI/acuH homologs that may convert acryloyl-CoA to propionate-CoA or 3-HP-CoA, with 0105 (AcuI) experimentally shown to produce propionate-CoA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C136 mix well-supported observations (toxicity citations, transcriptional data, genome content, 0105 activity in Figure 1\u2014figure supplement 2) with speculative inferences about metabolic roles (C131, C134, C136). While the transcriptional upregulation of 1698/1699 suggests involvement in DMSP metabolism, their lack of activity on acryloyl-CoA (C132) and the speculative nature of downstream metabolism pathways make the overall result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Unlike some DMSP-catabolizing bacteria that can use acrylate as a carbon source, Psychrobacter sp. D2 cannot grow on acrylate despite having acuN/acuK/acuI/acuH/prpE homologs. The strain lacks DmdA homologs and possesses only one DMSP lysis pathway (DddX).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C144 are supported by growth experiments (Figure 2A), genome analysis, and genetic complementation data. The inability to use acrylate is clearly demonstrated, and the conclusion that D2 has only one DMSP lysis pathway is well-supported by the complete loss of DMSP utilization in the \u0394dddX mutant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The phylogenetic distribution of DddX across diverse bacterial lineages suggests horizontal gene transfer played a role in dddX dissemination. DddX is found in bacteria from soil and plant roots, suggesting DMSP may be produced in these ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C148 are speculative inferences from phylogenetic distribution data (Figure 6). While the patchy distribution across distant lineages is consistent with HGT (C146), no direct evidence for HGT is provided. The suggestion that DMSP is produced in soil/plant ecosystems (C148) is a reasonable hypothesis but lacks direct supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Many Gram-positive actinobacteria can produce DMS from DMSP but lack dddX and all other known DMSP lyase genes, indicating additional undiscovered DMSP lyases exist in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 are supported by citation to Liu et al., 2018 and genome analysis showing absence of known lyase genes. This observation logically supports the conclusion that more DMSP lyase diversity remains to be discovered, consistent with the broader theme of the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background claims establishing the importance of DMSP in marine biogeochemistry, its various biological functions, the three known bacterial DMSP metabolic pathways (demethylation, oxidation, lysis), and the eight previously characterized DMSP lyases from four protein families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C32 are background/context claims supported by appropriate literature citations. These establish the scientific context for the discovery of DddX and are well-documented in the literature. The claims accurately represent prior knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Many marine bacteria, especially roseobacters like Ruegeria pomeroyi DSS-3, metabolize DMSP via multiple pathways and possess multiple ddd genes (dddQ, dddP, dddW).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are background claims supported by appropriate citations (Curson et al., 2011b; Bullock et al., 2017; Reisch et al., 2013; Todd et al., 2011). These provide context for understanding the diversity of DMSP metabolism strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C38"
+    ],
+    "result": "DddX is found in several Alphaproteobacteria, Gammaproteobacteria, and Firmicutes, representing both Gram-negative and Gram-positive bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C38 are supported by bioinformatic searches and phylogenetic analysis (Figure 6) combined with experimental validation of representative homologs. The distribution data is clearly presented and experimentally verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Among reported DMSP lyases, only DddD catalyzes a two-step reaction involving CoA transfer and cleavage, with DMSP-CoA inferred as an intermediate in DddD catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are background claims supported by citation to Alcolombri et al., 2014 and related literature. These provide important context for understanding how DddX relates to previously known DMSP lyases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152"
+    ],
+    "result": "DddX maintains a specific activity of ~8.0 \u03bcmol min\u207b\u00b9 mg protein\u207b\u00b9 at 20\u00b0C, pH 8.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C152 is supported by enzymatic assay data shown in Figure 3C. This represents a straightforward measurement of enzyme activity under specified conditions.",
+    "result_type": "MINOR"
+  }
+]

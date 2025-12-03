@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript establishes the biological context for mitochondria-targeted therapeutics by describing mitochondrial function, dysfunction, and disease, and noting the absence of FDA-approved treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C16-C19 present well-established background knowledge about mitochondrial biology and disease. These are supported by general scientific consensus and do not require experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "SS-31 and related tetrapeptides show therapeutic promise for mitochondrial disorders based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C26 summarize prior work on SS-31 efficacy, supported by multiple citations to published studies. These establish the rationale for the current structure-activity study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Prior work suggests SS peptides target cardiolipin-containing membranes and interact with mitochondrial proteins involved in ATP generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 describe the current understanding of SS peptide mechanism based on cited literature. These provide context for the present study's focus on structure-function relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The study evaluates four tetrapeptide analogs (SS-31, SS-20, SPN4, SPN10) that differ in aromatic side chain composition and sequence register.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C50 describe the study design and peptide test set. The peptide sequences are clearly shown in Figure 1A, and the rationale for their selection is well-justified based on prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Free peptides in solution are largely disordered but show some residual structure due to aromatic and cation-\u03c0 interactions, with B-\u03c6-B-\u03c6 peptides showing greater structural precision than \u03c6-B-\u03c6-B peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C69 are supported by NMR data (Figure 1B, Supplementary files 1-2) and MD simulations (Figure 1C). The structural characterization is thorough with appropriate controls (PFG-NMR for oligomerization state). The observation that B-\u03c6-B-\u03c6 peptides have lower RMSD and non-sequential NOEs is consistent across both NMR and MD approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "This study presents the first structural models showing that all peptide analogs except SS-31 form compact reverse turn conformations when membrane-bound, with H-bonds stabilizing the structures and creating asymmetric charge distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C85-C98 describe the major structural finding. The NMR structures (Figure 3) are well-defined with 95-110 trNOEs per peptide (~25 restraints/residue) and low RMSD values (0.5-0.9 \u00c5). The observation that SS-31 uniquely adopts an extended conformation is attributed to steric effects of Dmt methyl groups, which is chemically reasonable. The structural precision is significantly better for membrane-bound vs. free states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "MD simulations show peptides rapidly adsorb to membranes and adopt stable configurations, with SS-31 burying deepest, followed by SPN10, SS-20, and SPN4. Imposing NMR restraints improves structural similarity to experimental structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 are supported by extensive MD simulations (2-3 \u03bcs per system) shown in Figure 4 and supplements. The NOE violation analysis (Figure 4\u2014supplement 6) shows ~71% of restraints violated <20% of the time, indicating reasonable agreement. The peptide-lipid NOEs (Figure 3\u2014supplement 4) support interfacial binding. However, the MD structures show higher RMSD/Rg than NMR, suggesting sampling limitations despite long simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "All peptides bind cardiolipin-containing membranes with similar affinity (KD ~27-40 \u03bcM) but differ in binding stoichiometry, with SPN10 binding at higher density (n=3.3) and SS-20 at lower density (n=7.4) than SS-31 (n=5.4). Binding is entropy-driven for all peptides, but SPN10 shows greater enthalpic contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C70-C84 are supported by ITC data (Figure 2) with n\u22653 replicates. The thermodynamic analysis is rigorous, showing entropy-dominated binding (T\u0394S/|\u0394H| = 2.7-6.9) consistent with hydrophobic effect. The trend in \u0394H correlating with polar groups on aromatic side chains is chemically reasonable. Statistical comparisons are appropriate (one-way ANOVA with Tukey's test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "Peptide binding affects membrane properties differently: SPN10 uniquely minimizes both headgroup and acyl chain SASA while expanding membrane area, and disfavors close CL contact. SS-31 and SPN10 cause greater membrane expansion than SPN4 and SS-20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C118 are supported by MD analysis of SASA (Figure 4D), bilayer thickness/area (Figure 4\u2014supplement 8), and radial distributions (Figure 4\u2014supplement 9). The observation that SPN10 maintains low total SASA while expanding membrane area is notable and well-documented. Statistical comparisons use appropriate non-parametric tests (Wilcoxon rank sum). Block averaging was used to ensure independent samples (Figure 4\u2014supplement 10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Peptides have markedly different effects on membrane electrostatics: SPN10 causes the greatest attenuation of surface potential (\u03c8s) in both mitoplasts and liposomes, all peptides reduce dipole potential (\u03c8d) with SS-20 having the weakest effect, and no peptides affect transmembrane potential (\u0394\u03a8m).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C119-C127 are supported by fluorescence measurements using ANS (\u03c8s, Figure 5A-B), di-8-ANEPPS (\u03c8d, Figure 5C), and TMRM (\u0394\u03a8m, Figure 5D) with n=3 replicates. The differential effects on \u03c8s are striking, with SPN10 showing markedly greater attenuation. Controls confirm peptides alone don't affect ANS fluorescence (Figure 5\u2014supplement 1). The lack of effect on \u0394\u03a8m is important for safety profile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C128",
+      "C129",
+      "C172",
+      "C173"
+    ],
+    "result": "Biotinylated SS-31 and SPN10 readily penetrate cells and localize to mitochondria within 1 hour in both HK-2 and ARPE-19 cells, indicating cell uptake and mitochondrial targeting are sequence-promiscuous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C128-C129, C172-C173 are supported by confocal microscopy (Figure 6A) showing mitochondrial localization patterns for both B-\u03c6-B-\u03c6 (SS-31) and \u03c6-B-\u03c6-B (SPN10) registers. This demonstrates the general motif is sufficient for cellular uptake and targeting, though only two peptides were tested with biotinylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C174",
+      "C176",
+      "C177"
+    ],
+    "result": "All four peptides are pharmacologically active in serum withdrawal stress models, rapidly restoring mitochondrial membrane potential (\u0394\u03a8m) within 2 hours and restoring mitochondrial network morphology, with SPN10 and SS-20 showing significantly greater \u0394\u03a8m restoration than SS-31.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C130-C137, C174, C176-C177 are supported by TMRM fluorescence microscopy (Figure 6B) and confocal imaging (Figure 6\u2014supplement 1A) with n=3 experiments and 4-6 fields per experiment. Statistical analysis (one-way ANOVA with Tukey's test) shows significant differences. The rapid kinetics (2 hr) suggest direct membrane effects rather than transcriptional changes. The rank order SPN4<SS-31<SS-20<SPN10 for \u0394\u03a8m restoration is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "SPN10 shows the greatest efficacy in cell culture studies, significantly outperforming SS-31 in promoting cell survival (p<0.001) and preserving ATP content (p<0.001) under 7-day serum deprivation, with rank orders of SS-31=SS-20<SPN4<SPN10 for viability and SS-31<SS-20=SPN4<SPN10 for ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C138-C146 are supported by cell viability assays (Figure 6C) and ATP measurements (Figure 6D, Figure 6\u2014supplement 1B) with n=4-6 samples. Statistical analysis is appropriate (one-way ANOVA with Tukey's test). Controls show no effect under non-stressed conditions. The differential efficacy among peptides is clearly demonstrated, with SPN10 consistently showing superior performance. The parallel trends between viability and ATP are notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C147",
+      "C148"
+    ],
+    "result": "Side chain composition and register influence the activity of mitochondria-targeted peptides, with the alternating cationic-aromatic motif being sufficient for molecular action but specific side chains modulating efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C147-C148 represent the main conclusion integrating all findings. The structure-activity relationships are well-established through the comprehensive biophysical and cellular characterization. The conclusion that the general motif is sufficient but side chain composition modulates activity is supported by the differential effects observed across all assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The membrane-bound reverse-turn conformation is stabilized by i to i+3 H-bonds and cation-\u03c0 interactions, with C-terminal amidation providing an H-bond donor for B-\u03c6-B-\u03c6 peptides. These structural features facilitate membrane partitioning and interfacial residence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C155 synthesize structural findings with mechanistic interpretation. The classification as beta turns is supported by structural criteria (C\u03b1 distance ~7 \u00c5, i to i+3 H-bonds) and appropriate citations. The role of C-terminal amidation in SPN4 is a novel insight. The mechanistic interpretation regarding membrane partitioning is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "SPN10 has greater binding density than SS-31/SPN4 (270 vs. 434-466 \u00c5\u00b2/peptide), minimizes solvent exposure of both lipid chains and headgroups, and may fill membrane packing defects, potentially contributing to reduced proton leak and lipid oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C162 integrate ITC stoichiometry data with MD SASA analysis to calculate binding footprints and propose mechanistic implications. The calculations are sound, and the correlation with prior observations of reduced proton leak (cited) is reasonable. However, the mechanistic link to packing defects is somewhat speculative (C161) and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Peptide-membrane binding shows enthalpy-entropy compensation, with binding dominated by hydrophobic effect (entropy) but modulated by polar interactions (enthalpy), particularly for SPN10 with its indole NH groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C167 provide thermodynamic interpretation of ITC data. The attribution of entropy to hydrophobic effect and enthalpy to polar contacts is well-supported by cited theory (Seelig, 2004) and consistent with side chain chemistry. The enthalpy-entropy compensation is appropriately identified. However, the specific proposals for SS-20 (C165) and SPN10 (C166) are somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Peptides modulate membrane electrostatics by attenuating surface potential (\u03c8s) and dipole potential (\u03c8d) without affecting transmembrane potential (\u0394\u03a8m), with tuning of \u03c8s proposed as an important mechanism of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C171 summarize electrostatic findings from Figure 5. The experimental data are solid, but the mechanistic proposal (C171) that \u03c8s tuning modulates protein-lipid interactions or facilitates curvature is speculative and based primarily on prior work (Mitchell et al., 2020). This hypothesis requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C175",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "None of the peptides affect viability of non-stressed cells, consistent with prior SS-31 studies. The trend in \u0394\u03a8m restoration does not follow the rank order for cell viability and ATP content, suggesting complex mechanisms beyond simple membrane repolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175, C178-C180 note important observations about peptide selectivity for stressed cells and the disconnect between \u0394\u03a8m restoration kinetics and longer-term viability/ATP outcomes. This is an important caveat suggesting multiple mechanisms may be involved. The observation is well-supported by the data in Figure 6.",
+    "result_type": "MAJOR"
+  }
+]

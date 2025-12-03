@@ -1,0 +1,162 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "LASSO logistic regression analysis of rare variants in X chromosome genes identified TLR7 as one of the most important susceptibility genes for severe COVID-19 in young males. The model achieved 60% accuracy, 59% precision, 75% sensitivity, 43% specificity, and 68% ROC-AUC score using 10-fold cross-validation after PCA-based outlier removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The LASSO analysis (C19, C59) identifies TLR7 as important, but the model performance is modest with particularly low specificity (43%). The analysis is appropriately cross-validated (C60), but the predictive power is limited. The feature selection approach is sound (C18), but no independent validation cohort was used to confirm the model's generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C41"
+    ],
+    "result": "In young males (<60 years), rare TLR7 missense variants predicted to impact protein function were found in 6/135 severely affected cases (4.4%) and 0/104 asymptomatic controls, with statistical significance (p=0.037 by Fisher's exact test). After functional validation, deleterious variants were confirmed in 3/135 cases (2.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic association is statistically significant (C23, p=0.037) across two cohorts (C20, C21, C22). However, the significance is marginal and the effect size calculation (C2, C41) appropriately accounts for functionally validated variants only. The finding is strengthened by replication in a second wave cohort (C22), though sample sizes remain modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C42"
+    ],
+    "result": "In the entire male cohort regardless of age (561 patients), TLR7 deleterious variants were found in 5/261 cases (1.9%). Three additional variants were identified in patients over 60 years, including one control with a low-impact variant (p.Val222Asp, CADD=5.36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The prevalence estimate (C42) is consistent across age groups and appropriately distinguishes between high-impact and low-impact variants (C24, C25). The identification of a low-impact variant in a control (C25) supports the specificity of the association with functional variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C44"
+    ],
+    "result": "Functional characterization of TLR7 variants in PBMCs showed that Ser301Pro and Ala1032Thr caused complete impairment of TLR7 signaling (all downstream genes reduced), Val219Ile showed hypomorphic effects (IRF7 and IFN-\u03b3 only), while Ala288Val, Ala448Val, and Val222Asp were functionally neutral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional data (C26, C27, C28) clearly distinguish between loss-of-function, hypomorphic, and neutral variants using appropriate statistical tests. The findings are internally consistent: neutral variants were found in cases without functional validation (C29, C30, C31) or in controls (C32). Computational predictions align with experimental results (C30, C31). However, gene expression was measured 6 months post-recovery, not during acute infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Transfection experiments in HEK293 cells, which lack endogenous TLR7, confirmed the functional effects of TLR7 variants observed in patient PBMCs, validating the loss-of-function and hypomorphic classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HEK293 validation (C36) is appropriate because these cells lack endogenous TLR7 (C35), providing a clean system to test variant function. The concordance between PBMC and transfection results strengthens the functional characterization, though the manuscript notes that not all variants could be confirmed by sequencing (C69).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Flow cytometry analysis showed that both patients with TLR7 variants and controls expressed TLR7 protein at intracellular levels, and LPS-induced IL-6 production by monocytes was similar between groups, indicating intact TLR4 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protein expression data (C33) confirms that variants do not prevent protein expression, suggesting functional rather than expression defects. The TLR4 control experiment (C34) appropriately demonstrates that the immune defect is specific to TLR7 signaling, not a general immune impairment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Pedigree analysis in two families (P3 and P8) showed X-linked segregation of severe COVID-19 with TLR7 variants. In family P8, the mutated brother had severe disease while his wild-type brother remained asymptomatic despite SARS-CoV-2 infection, with corresponding differences in IRF7 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pedigree data (C37, C39) provides strong evidence for X-linked inheritance conditioned by SARS-CoV-2 exposure. The within-family comparison (C39) is particularly compelling as it controls for genetic background and environmental factors. The functional correlation with IRF7 expression (C38) supports the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Males with rare missense TLR7 variants in this study developed severe COVID-19 at a mean age of 56.5 years, considerably later than the 26-year mean age reported for loss-of-function variants by van der Made et al., consistent with a smaller predicted protein impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The age comparison (C43) is logical and consistent with the genotype-phenotype correlation: missense variants with partial function lead to later disease onset than complete loss-of-function variants. However, the comparison is limited by different study designs and the small number of patients in both studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C40"
+    ],
+    "result": "The study concludes that young males with TLR7 loss-of-function variants represent a subset contributing to disease susceptibility in up to 2% of severe COVID-19 cases, extending the findings of van der Made et al. from two families to a broader patient population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main conclusion (C4, C40) is supported by the genetic, functional, and pedigree data. The 2% estimate is appropriately conservative, accounting only for functionally validated variants (C41). The study successfully demonstrates that the two families reported by van der Made et al. represent a broader phenomenon, though the prevalence estimate has wide confidence intervals given the sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The authors suggest that TLR7 screening in severely affected male patients may lead to personalized interferon treatment for those with this specific genetic disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C45) is speculative and not supported by treatment data in the manuscript. While the biological rationale is sound (TLR7 deficiency impairs interferon responses), no clinical trial data or treatment outcomes are presented. This represents a reasonable hypothesis for future work but is not a supported result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The study employed a nested case-control design within the GEN-COVID cohort, selecting 156 young male patients (<60 years) with extreme phenotypes: 79 cases requiring intubation or CPAP/BiPAP and 77 oligo-asymptomatic controls not requiring hospitalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design (C13, C15, C16, C17) is appropriate for identifying genetic factors associated with disease severity. The extreme phenotype approach (C17) maximizes power to detect associations. Ethical approval is documented (C14). However, the age restriction may limit generalizability.",
+    "result_type": "MINOR"
+  }
+]

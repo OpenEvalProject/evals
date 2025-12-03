@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study profiled single-cell and single-nucleus transcriptomes from dLGN of adult human, macaque, and mouse, generating 2003 macaque, 1209 human, and 2118 mouse QC-qualified transcriptomes. Samples were sequenced to median depths of 1.3-2.5 million reads per nucleus/cell, with median gene detection of ~6000-6200 in primate nuclei and ~9000 in mouse cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 describe the experimental design and basic quality metrics of the sequencing data. The reported sample sizes, sequencing depths, and gene detection rates are clearly stated and supported by Figure 1\u2014figure supplement 1. These technical details are well-documented and form the foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In macaque dLGN, donor-specific heterogeneity was observed with 1026-1438 genes differentially expressed between donor pairs, associated with neuronal signaling rather than metabolic processes. After correction using fastMNN, nine shared neuronal types were identified, divided into GABAergic (4 types) and glutamatergic (5 types) branches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 describe the identification of donor effects in macaque and the subsequent batch correction strategy. The differential expression analysis (C41-C42) and use of fastMNN (C43-C44) are appropriate approaches. The identification of nine neuronal types (C44, C46) is supported by Figure 2A-B and represents a key finding for macaque dLGN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Two distinct koniocellular (K) types were identified in macaque dLGN: Kap and Kp, both expressing K-specific markers CAMK2A and PRKCG, with Kp selectively expressing PENK in posterior K1 and K2 layers. M and P neurons expressed previously reported and novel marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 describe the identification and characterization of K, M, and P neuron types in macaque. The identification of two K subtypes (C47-C49) is supported by marker gene expression and validated by RNA ISH (Figure 2\u2014figure supplement 1E). The expression of known M and P markers (C51-C52) and identification of novel markers (C53) are well-documented in Figure 2C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Six neuronal types were defined in human dLGN, including two K types (Kap and Kp) and a single MP cluster containing cells from both M and P layer dissections. The Kp type, expressing PENK, was limited to posterior K1 and K2 layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 describe the human dLGN cell type taxonomy. The identification of six neuronal types (C54-C55) and two K subtypes (C56-C57) parallels the macaque findings. The assignment of remaining glutamatergic cells to a single MP cluster (C58) is based on multiple lines of evidence including marker gene expression and dissection location, though this represents a key difference from macaque.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Donor-related heterogeneity was detected in the human MP cluster, with 877-1324 genes differentially expressed between donors, associated with ribosomal processing rather than neuronal function. This heterogeneity was attributed to variable tissue quality across donors, limiting discrimination of M and P populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe donor effects in human tissue and their interpretation. The differential expression analysis (C61-C62) and comparison to postmortem tissue markers (C63) support the inference about tissue quality (C64). However, the causal link between tissue quality and inability to separate M/P types is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Comparison to cortical data from the same donors showed that only 456 genes were differentially expressed between donors in cortical L2/3 IT neurons, representing 40% of the differences seen in dLGN excitatory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 provide a comparative analysis showing that donor effects are more prominent in dLGN than cortex. This comparison is valid since the same donors were used, and the quantitative difference (40%) is clearly stated. This supports the interpretation that dLGN may be more sensitive to donor variability or tissue quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Within individual human donors, MP nuclei formed a continuum between M and P dissections, with co-clustering analysis revealing substructure corresponding to M and P dissections. Many genes were consistently differentially expressed between M and P neurons, validated by RNA ISH including novel markers CRH, SUSD2, EPHA7, and BTLN9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 describe the detection of M/P signatures within individual human donors despite the overall MP cluster assignment. The co-clustering analysis (C68) and differential expression (C69) provide computational evidence, while RNA ISH validation (C70) provides spatial confirmation. This demonstrates that M/P differences exist but are subtle in human tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Cross-species integration of human and macaque data showed that the human MP continuum aligned with distinct macaque M and P clusters, with conserved markers FOXP2 (P-enriched) and ROBO2 (M-enriched), indicating a shared M/P gene expression axis across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe the cross-species alignment revealing conservation of M/P signatures. The CCA integration (C72-C73) and marker gene analysis (C75-C76) demonstrate that despite differences in cluster resolution, the underlying M/P axis is conserved. This is a key finding supporting evolutionary conservation of cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Twelve neuronal types (9 GABAergic, 3 glutamatergic) were identified from mouse dLGN dissections. Based on marker gene expression in Allen Brain Atlas, three GABAergic types were assigned to dLGN, while others likely originated from adjacent nuclei. All glutamatergic cells from dLGN belonged to a single cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 describe the mouse dLGN cell type identification and anatomical assignment. The use of Allen Brain Atlas for anatomical validation (C82) is appropriate. The assignment of only three GABAergic types to dLGN proper (C83) and grouping of all glutamatergic cells into one cluster (C84) represent key findings about mouse dLGN organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Mouse dLGN glutamatergic neurons showed continuous heterogeneity along a core-shell axis, with differential expression of genes like Pvalb (core-enriched) and Necab1/Calb1 (shell-enriched), validated by RNA ISH. A subset of neurons co-expressed markers, suggesting intermediate cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 describe the core-shell gradient in mouse dLGN. The identification of graded gene expression (C85), exclusion of activity-dependent effects (C86), and RNA ISH validation (C87-C88) provide strong support. The observation of intermediate cells (C89) and agreement with prior immunohistochemistry (C90) strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Cross-species integration of 4979 neurons from macaque, human, and mouse revealed extensive intermingling of GABAergic types across species but more separation of glutamatergic types. The integrated taxonomy contained 17 species-specific types mapping to 10 integrated types, with GABAergic neurons showing 16 species-specific types mapping to 4 integrated types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe the cross-species integration analysis. The use of CCA in Seurat v3 (C91) is appropriate for this comparison. The observation of greater conservation in GABAergic versus glutamatergic types (C92) and the quantitative mapping of species-specific to integrated types (C93-C95) are well-documented in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Mouse GABAergic types divided into two groups based on developmental origin: Sox14+ (midbrain-derived) types found in dLGN, and Sox14- (forebrain-derived) types found only in adjacent nuclei. Primate dLGN contained both Sox14+ and Sox14- types, with two macaque and two human types expressing SOX14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 describe the developmental classification of GABAergic interneurons. The division based on Sox14 expression and developmental origin (C97-C98) is supported by prior literature. The cross-species comparison showing Sox14+ types in all species' dLGN but Sox14- types only in primate dLGN (C99-C101) represents a key evolutionary finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The forebrain-derived GABA1 type represented ~40% of GABAergic neurons in human dLGN but only ~15% in macaque, validated by RNA ISH. Two major groups of GABAergic neurons with distinct embryonic origins are conserved across species with different proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 quantify the species differences in GABAergic interneuron proportions. The RNA ISH validation (C102) and quantitative proportions (C103-C104) are clearly stated. The summary statement (C105) appropriately captures the conservation of cell types with variation in proportions, representing a key comparative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Glutamatergic types showed less clear cross-species alignment than GABAergic types. Mouse dLGN neurons spanned both the M/P continuum and the M/P to K/pulvinar continuum, with shell neurons resembling K/pulvinar neurons more than core neurons. Mouse LP neurons resembled macaque inferior pulvinar neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 describe the complex alignment of glutamatergic types across species. The observation that mouse types are particularly distinct (C106) and span multiple axes of variation (C111) is well-supported by Figure 5E. The homology between mouse LP and macaque pulvinar (C109) and the shell-K/pulvinar similarity (C112) represent important comparative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Gene expression correlation analysis revealed many genes with graded expression along UMAP axes, with clear conservation of genes like ROBO2, FOXP2, and CAMK2A along the M/P to K/pulvinar axis. Despite cell type conservation, prominent differences exist in gene expression and cell-type proportions across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 describe conserved gene expression patterns across species. The correlation analysis (C113) and identification of conserved markers (C114) are supported by Figure 5F. The summary statement (C115) appropriately balances conservation and divergence, representing a key conclusion of the cross-species analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Primate K neurons are transcriptomically distinct from M and P neurons, with two K types identified that may correspond to populations with distinct laminar distributions and V1 projections. K neurons are more similar to inferior pulvinar neurons than to M or P neurons, consistent with shared connectivity. M and P neurons are transcriptomically similar to each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 summarize key findings about primate TC neuron relationships. The distinction of K from M/P (C116), identification of two K types (C117), and K-pulvinar similarity (C118-C119) are well-supported by the data. The M-P similarity (C120) is a central finding of the study, though C117 includes speculation about correspondence to anatomical populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Mouse dLGN TC neurons cannot be grouped into discrete types but show graded expression differences between core and shell. Cross-species alignment revealed homologies between pulvinar and LP neurons, with mouse shell neurons aligning with primate K neurons and core neurons with M and P neurons. Calcium binding protein genes showed opposing gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 summarize mouse TC neuron findings and cross-species homologies. The lack of discrete types (C121), comparison to other thalamic nuclei (C122), and cross-species alignments (C123-C124) are well-supported. The calcium binding protein gradient (C125) provides molecular evidence for the core-shell and cross-species relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Two homologous GABAergic interneuron subclasses were identified across species: Sox14+ (midbrain-derived) present in all species' dLGN, and Sox14- (forebrain-derived) present in primate dLGN but only in adjacent nuclei in mouse. Sox14- interneurons are progressively more common in larger-brained primates (marmoset <10%, macaque 15%, human 40%), possibly driven by human-specific migration from ganglionic eminences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 describe the evolutionary expansion of GABAergic diversity in primates. The identification of two conserved subclasses (C126-C128) and quantification of proportions (C129) are well-supported. The speculation about human-specific migration (C130) is appropriately qualified and supported by citation, though it remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Strong donor-specific signatures were found in primate datasets, potentially due to genetic diversity, cell state differences, or tissue quality. Donor effects were more prominent in TC neurons than GABAergic neurons or cortical neurons, and M/P discrimination was better in macaque (acute tissue) than human (postmortem tissue).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 discuss technical factors affecting the results. The observation of donor effects (C131) and exploration of potential causes (C132-C135) are appropriate. The comparison showing greater donor effects in TC neurons (C136) and better M/P separation in macaque (C135) are important for interpreting the main findings, though the causal explanations remain somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Despite morphological and physiological distinctions, transcriptomic types did not correspond to previously described X-, Y-, and W-like morphological types in mouse or to M and P morphological/connectional types in primates. Similar observations have been made in other brain regions where neurons with different projection patterns show subtle transcriptomic differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 discuss the discrepancy between morphological/functional and transcriptomic classifications. The failure to identify discrete transcriptomic types corresponding to known morphological types (C138-C139) is a key negative finding. The citations to similar observations in other systems (C140-C141) provide important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "One explanation for the morphological-transcriptomic discrepancy is that genes shaping morphology and connectivity are expressed transiently during development. Studies in mouse dLGN and Drosophila show increased transcriptional heterogeneity during circuit assembly compared to adult stages, suggesting maturing TC neurons may show more discrete transcriptomic signatures than adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C146 propose a developmental explanation for the observed discrepancy. While the hypothesis (C142) is reasonable and supported by developmental studies in mouse (C143-C144) and Drosophila (C145), the speculation about maturing TC neurons (C146) remains untested. This represents an important hypothesis for future work but is not directly demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The discrepancy between morphological/functional and transcriptomic distinctions reinforces the need for multimodal approaches to cell type identification. Examples from cerebellar interneurons and methods like Patch-seq demonstrate the value of combining gene expression with morphology, connectivity, and physiology. Future spatial transcriptomics methods may better define discrete and continuous heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 discuss methodological implications and future directions. The call for multimodal approaches (C147) is well-justified by the findings. The examples from cerebellum (C148-C149) and references to Patch-seq (C150) and spatial transcriptomics (C151) provide appropriate context for future work, though C151 is speculative about future capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study identified four distinct TC neuron types in primate dLGN (M, P, and two K types), but found few differentially expressed genes between M and P despite their morphological and physiological differences. Similarly, mouse dLGN TC neurons showed high transcriptomic similarity with core-shell heterogeneity. Transcriptomic differences between principal cell types are subtle relative to morphological and projection differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C155 summarize the main findings stated in the abstract. The identification of four primate types (C152) and the observation of subtle M/P transcriptomic differences (C153) are central findings. The mouse findings (C154) and overall conclusion (C155) appropriately capture the key message that transcriptomic similarity does not necessarily reflect morphological/functional diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "Cross-species alignment revealed expanded diversity of GABAergic neurons in primate versus mouse dLGN and identified homologous TC neuron types in primates that are distinct from mouse TC neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 summarize the comparative findings from the abstract. The expanded GABAergic diversity in primates (C156) and identification of homologous but distinct TC types (C157) are well-supported by the cross-species integration analysis and represent major comparative findings of the study.",
+    "result_type": "MAJOR"
+  }
+]

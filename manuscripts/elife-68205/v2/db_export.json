@@ -1,0 +1,2228 @@
+{
+  "submission": {
+    "id": "69650444-489e-4706-a9de-a691f59d5bcd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:11:46.267580Z",
+    "updated_at": "2025-12-03T06:11:46.267580Z"
+  },
+  "content": [
+    {
+      "id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "submission_id": "69650444-489e-4706-a9de-a691f59d5bcd",
+      "content_type": "manuscript",
+      "content_text": "# A role for glial fibrillary acidic protein (GFAP)-expressing cells in the regulation of gonadotropin-releasing hormone (GnRH) but not arcuate kisspeptin neuron output in male mice\n\n## Authors\n\n- Charlotte Vanacker<sup>1</sup> ([ORCID: 0000-0001-5289-9298](https://orcid.org/0000-0001-5289-9298)) \u2020\n- R Anthony Defazio<sup>1</sup> ([ORCID: 0000-0001-7302-7528](https://orcid.org/0000-0001-7302-7528))\n- Charlene M Sykes<sup>1</sup>\n- Suzanne M Moenter<sup>1</sup> ([ORCID: 0000-0001-9812-0497](https://orcid.org/0000-0001-9812-0497)) \u2020\n\n### Affiliations\n\n1. Departments of Molecular & Integrative Physiology, University of Michigan Ann Arbor United States\n2. Internal Medicine, University of Michigan Ann Arbor United States\n3. Obstetrics & Gynecology, University of Michigan Ann Arbor United States\n4. Reproductive Sciences Program, University of Michigan Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGnRH neurons are the final central neural output regulating fertility. Kisspeptin neurons in the hypothalamic arcuate nucleus (KNDy neurons) are considered the main regulator of GnRH output. GnRH and KNDy neurons are surrounded by astrocytes, which can modulate neuronal activity and communicate over distances. Prostaglandin E2 (PGE2), synthesized primarily by astrocytes, increases GnRH neuron activity and downstream pituitary release of luteinizing hormone (LH). We hypothesized that glial fibrillary acidic protein (GFAP)-expressing astrocytes play a role in regulating GnRH and/or KNDy neuron activity and LH release. We used adeno-associated viruses to target designer receptors exclusively activated by designer drugs (DREADDs) to GFAP-expressing cells to activate Gq- or Gi-mediated signaling. Activating Gq signaling in the preoptic area, near GnRH neurons, but not in the arcuate, increases LH release in vivo and GnRH firing in vitro via a mechanism in part dependent upon PGE2. These data suggest that astrocytes can activate GnRH/LH release in a manner independent of KNDy neurons.\n\n## Introduction\n\nReproduction is controlled by the hypothalamo-pituitary-gonadal axis. The episodic release of gonadotropin-releasing hormone (GnRH) from neurons in the preoptic area (POA) of the hypothalamus drives the function of this axis (Belchetz et al., 1978). GnRH stimulates the anterior pituitary gland to synthesize and secrete two gonadotropins, luteinizing hormone\u00a0(LH) and follicle-stimulating hormone, which subsequently activate gonadal functions including steroidogenesis. Sex steroids feed back to regulate the GnRH/LH release in both sexes (Czieselsky et al., 2016; Karsch et al., 1987; Moenter et al., 1991; Hileman et al., 1996).\n\nHow GnRH neurons are activated remains incompletely understood. Over the past several years, kisspeptin neurons located in the arcuate nucleus of the hypothalamus (ARC) have emerged as a leading candidate for initiating GnRH/LH release (Lehman et al., 2010; Navarro et al., 2009; Keen et al., 2008; Oakley et al., 2009; Han et al., 2020), as well as for integrating steroid negative feedback (Smith et al., 2005a; Smith et al., 2005b; Vanacker et al., 2017; Moore et al., 2018). These cells are called KNDy neurons for their coexpression of kisspeptin, neurokinin B, and dynorphin. KNDy neurons in brain slices exhibit changes in spontaneous action potential firing activity that is on the time-scale of episodic LH release and that is steroid-sensitive (Vanacker et al., 2017). In vivo, optogenetic activation of KNDy neurons induces LH release, and increases in intracellular calcium in these cells measured by bulk photometry are associated with spontaneous LH release (Han et al., 2020; Clarkson et al., 2017). Whether or not KNDy neurons endogenously generate the release of GnRH or are a relay station for a signal generated in other cell types is not known, nor is the list of other cell types that may alter GnRH neuron firing independent of KNDy neurons complete.\n\nIn this regard, evidence suggests that\u00a0astroglia play a role in reproductive function (Prevot et al., 2005; Sandau et al., 2011; Clasadonte et al., 2011a; Clasadonte and Prevot, 2018; Ma et al., 1999; Garcia-Segura et al., 2008). Astrocytes are a major glial type in the central nervous system. GnRH and KNDy neurons are contacted by astrocytes, and astrocytic coverage of neurons in the POA and ARC varies with estrous cycle stage, gonadal status, and seasonal reproduction (Witkin et al., 1991; Baroncini et al., 2007; Olmos et al., 1989; Cashion et al., 2003; Mong and McCarthy, 1999). Astrocytes can propagate information to adjacent astrocytes (Nagy and Rash, 2000; Hassinger et al., 1996; Brancaccio et al., 2017) making them intriguing candidates for coordinating episodic hormone release over the distances among scattered GnRH neurons. A consensus has yet to emerge regarding vesicle-mediated transmission by astrocytes (Savtchouk and Volterra, 2018), but there are data indicating that\u00a0these cells may release multiple gliotransmitters (Araque et al., 2001; D'Ascenzo et al., 2007; Panatier et al., 2011). Among these is prostaglandin E2\u00a0(PGE2), a non-vesicular transmitter that can increase GnRH neuron activity, GnRH release and LH release (Rage et al., 1997; Eskay et al., 1975; Harms et al., 1973).\n\nOur working hypothesis is that local astrocytes modulate GnRH and/or KNDy neuron activity to alter LH release in vivo. To investigate the role of astrocyte signaling in the control of GnRH and KNDy neurons in vitro and LH release in vivo, we took advantage of designer receptors exclusively activated by designer drugs (DREADDs). DREADDs were genetically targeted to astroglia by putting them under the control of the glial fibrillary acidic protein (GFAP) promoter coupled with local adeno-associated virus (AAV) delivery. GFAP is mainly expressed by astrocytes in the central nervous system (Eng, 1985), thus this approach allowed temporal and spatial control of G-protein-coupled receptor (GPCR) signaling in astrocytes. Our results indicate that activating signaling in GFAP-expressing cells can induce GnRH neuron activity and LH release in a sex-dependent manner, but does not alter KNDy neuron activity. This suggests that\u00a0central elements other than KNDy neurons can initiate GnRH release.\n\n## Results\n\n### AAV5 bearing GFAP promoter-driven construct effectively targets\u00a0GFAP-expressing cells\n\nTo examine the response of the reproductive neuroendocrine system to activation of Gq signaling in GFAP-expressing cells, we injected AAV5 bearing GFAP promoter-driven constructs expressing either the mCherry reporter or Gq- or Gi-coupled DREADDs and mCherry. Table 1 shows the animal models and viruses used in this work and how they are abbreviated in the text; Table 2 shows the primary antibodies. GFAP is expressed in glial cells throughout the body, including, for example, the pancreas and pituitary (Regoli et al., 2000; Redecker and Morgenroth, 1989). We thus used stereotaxic injection to limit manipulations to the region of interest. Bilateral viral injections were made in adult mice into either the POA near GnRH soma (Figure 1A,C), or ARC near KNDy neurons (Figure 1B,D). Successful infection of the area of interest was confirmed by localized expression of mCherry (Figure 1A,B). About 73.3 \u00b1 5.7% of GnRH neurons were surrounded by mCherry in the POA (n=10 mice) and about 90.2 \u00b1 1.7% of kisspeptin neurons were surrounded by mCherry in infected arcuate nuclei (n=13 mice), regardless of virus used. Mice infected unilaterally in the ARC were considered for analysis; it is estimated that 54.7 \u00b1 1.8% of the total population of arcuate kisspeptin neurons (from both nuclei) was surrounded by mCherry in unilateral hit animals (n=3 mice). Dual immunofluorescence for mCherry and either the astroglial cytoplasmic marker S100\u03b2 (Figure 1E) or the neuronal marker NeuN (Figure 1F) was performed to characterize the infected population. S100\u03b2 was used to identify astroglia as GFAP was the driving promoter in the viral constructs used. S100\u03b2 and GFAP are colocalized in most (<90%) cells examined in hypothalamic tissue (Figure 1\u2014figure supplement 1). Data for colocalization of S100\u03b2 and NeuN with mCherry were similar between ARC and POA and were combined for analysis. Over 90% of mCherry infected cells colocalized with S100\u03b2 regardless of virus used or region examined (Figure 1G). Of note, a few mCherry-positive cells in the ARC region showed morphological characteristics of alpha tanycytes, which are known to express GFAP (Pellegrino et al., 2018). A small percent of mCherry infected cells colocalized with NeuN and about 2% of mCherry infected cells did not colocalize with either marker. DREADD expression was thus primarily targeted to astrocytes and compatible with in vitro and in vivo approaches. Because of the small percent of neuronal colocalization, all slices for physiology studies were examined for mCherry infection of neurons based on either\u00a0morphology or NeuN staining. No expression of mCherry was observed in any recorded or imaged GnRH-green fluorescent protein\u00a0(GFP) or Tac2-GFP neuron, thus cells from which data were directly obtained were likely not infected. Data from mice (for LH measures) or from those brain slices with mCherry signal observed in cells with neuronal morphology (for electrophysiology) were excluded from statistical analyses. For transparency, these data are shown in different colors (magenta for unidentified neurons, cyan for Tac2-expressing neurons) when individual cell data are presented.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig1-v2.jpg)\n\n**Figure 1.:** (A,B) Bilateral stereotaxic injection (left) and corresponding infection (right) of the preoptic area (POA) (A) and arcuate nucleus of the hypothalamus (ARC) (B). (C,D) Dual immunofluorescence for green fluorescent protein\u00a0(GFP) (left) and mCherry (middle) in the POA (C) and ARC (D) reveals GFP-positive neurons surrounded by infected tissue (merge, right). Arrowheads in middle panels of C, D show gaps in mCherry signal where neurons are located; scale bar is the same for (C) and (D). (E) Immunofluorescence for mCherry (left), S100\u03b2 (middle), and merge (right) showing colocalization of the two signals, white arrowheads identify colocalization between mCherry and S100\u03b2 staining; dashed box shows area magnified in lower left. (F) Immunofluorescence for mCherry (left), NeuN (middle), and merge (right) showing colocalization of the two signals, white arrowheads identify colocalization between mCherry and NeuN staining; dashed box shows area magnified in upper right. (G) Quantification of infected cells expressing specific markers for each virus type (n=3 mice per group, 5 fields/mouse).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig1-figsupp1-v2.jpg)\n\n**Table 1.**\n Mouse strains and viruses used.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Full name</th>\n      <th>Referred to in text as</th>\n      <th>Reference</th>\n      <th>Supplier catalog #</th>\n      <th>RRID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Mouse</td>\n      <td>B6;CBATg(Gnrh1-EGFP)51Sumo/J</td>\n      <td>GnRH-GFP</td>\n      <td>Suter et al., 2000</td>\n      <td>JAX 033639</td>\n      <td>IMSR_JAX:033639</td>\n    </tr>\n    <tr>\n      <td>Mouse</td>\n      <td>Tg [Tac2-EGFP]381Gsat</td>\n      <td>Tac2-GFP</td>\n      <td>Ruka et al., 2013</td>\n      <td>MMRRC; 015495-UCD/STOCK</td>\n      <td>MMRRC_015495-UCD</td>\n    </tr>\n    <tr>\n      <td>AAV</td>\n      <td>AAV5-GFAP-hM3Dq(Gq)-mCherry</td>\n      <td>AAV-Gq</td>\n      <td>Erickson et al., 2021</td>\n      <td>Addgene; 50478-AAV5</td>\n      <td>Addgene_50478</td>\n    </tr>\n    <tr>\n      <td>AAV</td>\n      <td>AAV5-GFAP-hM4Di(Gi)-mCherry</td>\n      <td>AAV-Gi</td>\n      <td>This paper</td>\n      <td>Addgene;\u00a050479-AAV5</td>\n      <td>Addgene_50479</td>\n    </tr>\n    <tr>\n      <td>AAV</td>\n      <td>AAV5-GFAP104-mCherry</td>\n      <td>AAV-mCherry</td>\n      <td>This paper</td>\n      <td>Addgene; 58909-AAV5</td>\n      <td>Addgene_58909</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Antibodies used.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Antibody</th>\n      <th>Species</th>\n      <th>Dilution/use</th>\n      <th>Reference</th>\n      <th>Supplier catalog #</th>\n      <th>RRID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Anti-GFAP</td>\n      <td>Rabbit</td>\n      <td>1:10,000</td>\n      <td>Buckmaster et al., 2017</td>\n      <td>Agilent DAKO z0334</td>\n      <td>RRID:AB_10013382</td>\n    </tr>\n    <tr>\n      <td>Anti-S100\u03b2</td>\n      <td>Mouse</td>\n      <td>1:500</td>\n      <td>Nishiyama et al., 2002</td>\n      <td>Sigma S2532</td>\n      <td>RRID:AB_477499</td>\n    </tr>\n    <tr>\n      <td>Anti-mCherry</td>\n      <td>Rat</td>\n      <td>1:3000</td>\n      <td>Zhang et al., 2016</td>\n      <td>Thermo Fisher Scientific M11217</td>\n      <td>RRID:AB_2536611</td>\n    </tr>\n    <tr>\n      <td>Anti-NeuN</td>\n      <td>Rabbit</td>\n      <td>1:3000</td>\n      <td>Li et al., 2016</td>\n      <td>Abcam ab177487</td>\n      <td>RRID:AB_2532109</td>\n    </tr>\n    <tr>\n      <td>Anti-GFP</td>\n      <td>Chicken</td>\n      <td>1:1000</td>\n      <td>Kerman et al., 2006</td>\n      <td>Abcam ab13970</td>\n      <td>RRID:AB_300798</td>\n    </tr>\n    <tr>\n      <td>Anti-bovine LH\u03b2 518B7</td>\n      <td></td>\n      <td>LH assay capture</td>\n      <td>Steyn et al., 2013</td>\n      <td>Janet Roser, UC Davis</td>\n      <td>RRID:AB_2665514</td>\n    </tr>\n    <tr>\n      <td>AFP240580Rb</td>\n      <td>Rabbit</td>\n      <td>LH assay detection</td>\n      <td>Steyn et al., 2013</td>\n      <td>National Hormone and Peptide Program</td>\n      <td>RRID:AB_2665533</td>\n    </tr>\n    <tr>\n      <td>Goat anti-rabbit HRP</td>\n      <td>Goat</td>\n      <td>LH assay enzyme conjugated</td>\n      <td>Steyn et al., 2013</td>\n      <td>Dako D048701-2</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Gq activation in POA but not ARC GFAP-expressing cells increases LH in vivo in male mice\n\nTo examine the response of the reproductive neuroendocrine system to activation of Gq signaling in GFAP-expressing cells, serial blood samples obtained from gonad-intact males were assayed for LH. Injection of vehicle had no effect on LH release in any group (Figure 2). When AAV-mCherry control virus was targeted to either the POA or the ARC, CNO injection similarly had no effect on circulating LH levels (Figure 2A,D). When AAV-Gq was targeted to the POA, however, CNO induced an abrupt increase in LH by the next 10 min sample (Figure 2B,C; two-way, repeated-measures ANOVA AAV-mCherry vs. AAV-Gq F(1,10)=59, p<0.0001; time F(8,80)=26, p<0.0001; interaction F(8,80)=33, p<0.0001). In marked contrast, neither unilateral nor bilateral hits targeting AAV-Gq to the ARC produced a consistent LH response in the absence of overt neuronal infection (Figure 2E,F; two-way, repeated-measures ANOVA AAV-mCherry vs. AAV-Gq F(1,13)=0.1916, p=0.6688; time F(8,104)=1.597, p=0.1345; interaction F(8,104)=0.9265, p=0.4980).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig2-v2.jpg)\n\n**Figure 2.:** (A,B) LH levels in five mice bilaterally injected in the POA with adeno-associated virus (AAV)-mCherry (A) vs. 10 mice injected with AAV-Gq (B). Magenta lines in A and B show LH in mice rejected based on infection of unidentified neurons. (C) Mean \u00b1 SEM LH in mice with no observed neuronal infection *p<0.0001 Bonferroni (n=4\u20138 mice). (D,E) LH levels in individual mice with unilateral (dashed lines) or bilateral (solid lines) ARC hits in nine mice with AAV-mCherry (D) vs. 14 mice with AAV-Gq (E). Magenta lines in D and E show LH in mice rejected based on infection of unidentified neurons, the cyan line in D indicates a mouse with Tac2 neurons infected. (F) Mean \u00b1 SEM LH in mice with no observed neuronal infection (n=6\u20139 mice). Veh, vehicle.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Left panels show LH levels measured every 6 min for a duration of 210 min from a male injected in the POA with adeno-associated virus (AAV)-mCherry (top) and AAV-G (bottom). CNO was administered intraperitoneally at 90 min, gonadotropin-releasing hormone (GnRH) was administered at 180 min. Right panels show the number of pulses per 90 min detected during the baseline period (base) and after CNO administration (n=3 mice per group).\n\nWe examined LH release in preliminary studies in castrated male mice (n=3/group). CNO had no effect on the mean LH levels (AAV-mCherry, control 4.5\u00b10.7, CNO 3.8\u00b10.5; AAV-Gi, control 4.9\u00b10.3, CNO 4.7\u00b10.5; two-way repeated-measures ANOVA AAV-mCherry vs. AAV-Gi F(1,4)=1.4, p=0.2971, control vs. CNO (F(1,4)=6.4, p=0.0631), interaction F(1,4)=1.4, p=0.2971) or LH pulse frequency (Figure 2\u2014figure supplement 1). Although the p-value for CNO approaches the level accepted for significance, it should be noted that\u00a0this is most likely attributable to values in the AAV-mCherry, not the AAV-Gi group. Because these preliminary results were negative for LH with the Gi-coupled DREADD, further experiments were restricted to the Gq-coupled DREADD.\n\n### Gq activation in GFAP-expressing cells of the POA increases GnRH neuron firing rate in vitro in male mice\n\nExtracellular recordings of GFP-identified GnRH neurons were made in brain slices from mice infected in the POA with either AAV-mCherry or AAV-Gq. Bath application of CNO (200 nM) had no effect on firing rate of GnRH neurons from AAV-mCherry control mice (Figure 3A,D). In contrast, CNO increased firing rate of GnRH neurons within the infected area of AAV-Gq mice as identified by mCherry signal (Figure 3B,D, two-way repeated-measures ANOVA mCherry vs. Gq-mCherry F(2,26)\u00a0= 4.013, p=0.0303). Interestingly, GnRH neurons located outside of the infected region in AAV-Gq mice, easily distinguishable because they were not surrounded by mCherry signal, did not respond to CNO treatment (Figure 3C). This suggests that activation of Gq signaling in GFAP-expressing POA cells can increase the firing rate of GnRH neurons but that the propagation of that signal to GnRH neurons in uninfected areas is limited.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig3-v2.jpg)\n\n**Figure 3.:** (A-C) Top, representative example; bottom, firing rate of individual GnRH-green fluorescent protein\u00a0(GFP) neurons in mice injected in the preoptic area (POA) with adeno-associated virus (AAV)-mCherry (A, n=12 cells from four mice) or AAV-Gq (B, n=9 from six mice, C, n=8 from six mice). Cells in B were within the mCherry-defined hit, cells in C were outside the hit. Representative raw recording data (60 s each, scale bar in A applies to all raw data) from the time indicated by the lower case a,b,c, are shown at the top of each panel in A-C and also E-F. Yellow indicated time of CNO treatment. (D) Mean\u00a0\u00b1\u00a0SEM firing rate during the different periods. *p<0.0001 Bonferroni Gq inside hit vs. Gq outside hit and mCherry (n=8\u201312). (E-G) Top, representative example; bottom, firing rate of individual Tac2-GFP neurons in mice injected in the ARC with AAV-mCherry (E, n=12 from five mice) or AAV-Gq (F, n=14 from six mice, G, n=4 from two mice). Cells in F were within an ARC hit, cells in G were from mice in which the injection missed the ARC. The two magenta lines in E and F indicate cells in slices with unidentified infected neurons; the single cyan line in E and F indicate cells in slices with Tac2 neurons infected. Data from both magenta and cyan cells were excluded from H, mean\u00a0\u00b1\u00a0SEM firing rate, *p=0.0033 Bonferroni AAV-Gq control vs. wash (n=4\u201311).\n\nTo test if activating Gq signaling in GFAP-expressing cells alters firing rate of Tac-2 GFP neurons, the above studies were repeated after targeting injection to the ARC. In this brain region, infection of cells with neuronal morphology within experimental slices was noted. Some of these neurons expressed GFP indicating that\u00a0they are Tac2-expressing neurons, which are known to activate one another (Qiu et al., 2016). While these mCherry-expressing neurons were not recorded, they could influence the response within the slice; data from slices with infected neurons were excluded from statistical analyses but are shown in the individual data plots (Figure 3E,F). Neither the type of virus injected (AAV-mCherry vs. AAV-Gq) nor the location of the cell inside or outside the hit affected the firing rate of Tac2-GFP neurons in response to bath application of 200 nM CNO (Figure 3E\u2013H, Table 3). The firing rate of Tac2-GFP neurons tends to increase over time of recording (Phumsatitpong et al., 2020); this was observed as an increase in firing rate during the wash vs. control period.\n\n**Table 3.**\n Statistical parameters for effects of CNO on neuronal firing rate (Figure 3), p-values <0.05 are in bold.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>GnRH-GFP neurons</th>\n      <th>F</th>\n      <th>p</th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AAV-mCherry vs. AAV-Gq inside hit vs. AAV-Gq outside hit</td>\n      <td>(2,26)=4.013</td>\n      <td>0.0303</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Control vs. CNO vs. wash</td>\n      <td>(2,52)=7.711</td>\n      <td>0.0012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Interaction</td>\n      <td>(4,52)=8.590</td>\n      <td>&lt;0.0001</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Bonferroni</td>\n      <td>Con vs. CNO</td>\n      <td>Con vs. wash</td>\n      <td>CNO vs. wash</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AAV-mCherry</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AAV-Gq in hit</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.0001</td>\n      <td>0.8009</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AAV-Gq outside hit</td>\n      <td>&gt;0.9999</td>\n      <td>0&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tac2-GFP neurons</td>\n      <td>F</td>\n      <td>p</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>AAV-mCherry vs. AAV-Gq inside hit vs. AAV-Gq outside hit</td>\n      <td>(2,21)=0,2496</td>\n      <td>0.7814</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Control vs. CNO vs. wash</td>\n      <td>(2,42)=6.751</td>\n      <td>0.0029</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Interaction</td>\n      <td>(4,42)=1.641</td>\n      <td>0.1819</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Bonferroni</td>\n      <td>Con vs. CNO</td>\n      <td>Con vs. wash</td>\n      <td>CNO vs. wash</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AAV-mCherry</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AAV-Gq hit</td>\n      <td>0.7680</td>\n      <td>0.0033</td>\n      <td>0.0707</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AAV-Gq miss</td>\n      <td>0.1342</td>\n      <td>0.0626</td>\n      <td>&gt;0.9999</td>\n    </tr>\n  </tbody>\n</table>\n\n### CNO-induced increase in GnRH neuron\u00a0firing\u00a0rate depends at least in part on activation of PGE2 receptors in male mice\n\nThe putative gliotransmitter PGE2 is primarily produced by astrocytes in the hypothalamus and can increase GnRH neuron firing rate (Ma et al., 1997; Clasadonte et al., 2011b) by acting on EP1 and EP2 receptors expressed by these neurons (Rage et al., 1997; Jasoni et al., 2005). We hypothesized that the CNO-induced increase in firing in AAV5-Gq mice is PGE2-dependent. We first examined the effects of the stable PGE2 analogue dimethyl-PGE2 (dmPGE2) on firing rate of GnRH and Tac2 neurons. In GnRH-GFP neurons, pretreatment with either DMSO vehicle (0.3%) or a mix of EP1- and EP2-specific antagonists (100 \u03bcM SC19220 and 20 \u03bcM PF04418948, respectively) had no effect on the firing rate (Figure 4A\u2013C). Consistent with previous studies using PGE2 (Clasadonte et al., 2011b), dmPGE2 increased GnRH neuron firing rate in cells pretreated with vehicle for the antagonists (Figure 4A,C, n=9, p<0.0001 two-way repeated-measures ANOVA/Bonferroni, Table 4). Pretreatment with EP1/EP2 receptor antagonists blocked the effect of dmPGE2 on GnRH neuron firing rate (Figure 4B,C, n=10, Table 5). In contrast to GnRH-GFP neurons, neither pretreatment with methylacetate vehicle nor 200 nM dmPGE2 had an effect on the firing rate of Tac2-GFP neurons (Figure 4D\u2013F, n=9 cells, Friedman test F=5.07, p=0.1671).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig4-v2.jpg)\n\n**Figure 4.:** (A,B) Representative examples of GnRH neuron firing rate response to dmPGE2 following vehicle pretreatment (A) or EP1/EP2 receptor antagonists (B). (C) Left, mean firing of individual neurons in each period; right, group mean\u00a0\u00b1\u00a0SEM, *p<0.05, **p<0.0001, two-way repeated-measure ANOVA/Bonferroni (vehicle n=9 from five mice, EP1/EP2 antag n=10 from five mice). (D) Representative example of Tac2-GFP neuron response to dmPGE2. Note Y-axis is zoomed in compared to A-C. (E) Left, mean firing of individual neurons in each period; right, group mean\u00a0\u00b1\u00a0SEM (n=9). (F,G) Representative examples of GnRH neurons from mice injected with AAV-Gq in the POA in which pretreatment with EP1/EP2 receptor antagonists blocked (F) or reduced response (G) to CNO. (H) Left, mean firing of individual neurons in each period, the single magenta line shows a cell in a slice with AAV-Dq infected neurons (n=12 from seven mice), which was omitted from the group mean\u00a0\u00b1\u00a0SEM on the right (n=11 from seven mice).\n\n**Table 4.**\n Statistical parameters for effects of dimethyl-PGE2 (dmPGE2), EP1 and EP2 receptor blockers and CNO on gonadotropin-releasing hormone (GnRH)-green fluorescent protein\u00a0(GFP) neuron firing rate (Figure 4), p-values <0.05 are in bold font.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>GnRH-GFP neurons</th>\n      <th>F</th>\n      <th>p</th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Vehicle vs. EP1/EP2 antagonist pretreatment</td>\n      <td>F(1,17)</td>\n      <td>0.0229</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Time (baseline vs. pretreatment vs. dmPGE2 vs wash)</td>\n      <td>F(3,51)</td>\n      <td>&lt;0.0001</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Interaction</td>\n      <td>(3,51)=11</td>\n      <td>&lt;0.0001</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Bonferroni</td>\n      <td>Baseline vs. pretreatment</td>\n      <td>Baseline vs. dmPGE2</td>\n      <td>Baseline vs. wash</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Vehicle</td>\n      <td>&gt;0.9999</td>\n      <td>&lt;0.0001</td>\n      <td>0.0407</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>EP1/EP2 antagonists</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 5.**\n Statistical parameters for effects of CNO on gonadotropin-releasing hormone (GnRH)-green fluorescent protein\u00a0(GFP) neuron firing rate in diestrous females (Figure 5), p-values <0.05 are in bold font.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>GnRH-GFP neurons</th>\n      <th>F</th>\n      <th>p</th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AAV-mCherry vs. AAV-Gq vs. AAV-Gq in\u00a0neurons</td>\n      <td>(2,23)=45.50</td>\n      <td>&lt;0.0001</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Control vs. CNO vs. wash</td>\n      <td>(2,46)=45.50</td>\n      <td>&lt;0.0001</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Interaction</td>\n      <td>(4,46)=30.11</td>\n      <td>&lt;0.0001</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Bonferroni</td>\n      <td>Con vs. CNO</td>\n      <td>Con vs. wash</td>\n      <td>CNO vs. wash</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AAV-mCherry</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AAV-Gq</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n      <td>&gt;0.9999</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AAV-Gq with infected neurons</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.0001</td>\n      <td>0.0023</td>\n    </tr>\n  </tbody>\n</table>\n\nTo test if the CNO-induced increase in firing rate of GnRH neurons in brain slices from mice injected with AAV5-Gq in the POA was dependent upon PGE2 signaling, slices were pretreated with the EP1/2 antagonist mix before exposure to CNO in the continued presence of the antagonists. Pretreatment with antagonists blunted the CNO-induced increase in GnRH neuron firing (Figure 4F\u2013H, n=11 cells, p=0.4327, Friedman statistic 2.74, Friedman test). This suggests that activating Gq signaling in GFAP-expressing cells stimulates GnRH neurons at least in part via a PGE2-dependent mechanism.\n\n### Activating Gq did not affect reproductive neuroendocrine parameters in vivo or in vitro in females but there are caveats\n\nTo examine if the effects of activating Gq signaling in GFAP-expressing cells is sexually\u00a0differentiated, females were bilaterally injected in the POA with either AAV-mCherry or AAV-Gq. The survival time post-surgery was longer (3.5\u20137 vs. 18\u201322 weeks) because of COVID research shutdown. LH was measured in 10 min samples taken on diestrus. CNO increased LH in mice infected with AAV-Gq, but all mice exhibited infected cells with neuronal morphology and these data were not considered further (Figure 5\u2014figure supplement 1, virus F(1,9)=12, p=0.0069; time F(9,81)=21, p<0.0001; interaction F(9,81)=25, p<0.0001). In brain slices, CNO had no effect on firing rate of GnRH neurons from female mice infected with either virus (Figure 5B,C,E, Table 5), unless infected cells with neuronal morphology were observed within the slice (Figure 5D,E). These data suggest that\u00a0there may be a sex difference in the regulation of GnRH neurons by GFAP-expressing cells. An important caveat to point out is that these recordings were made in the afternoon (slices made 2:30\u20133:30\u00a0pm, recordings 3:30\u20139:30\u00a0pm), whereas recordings from males were made in the morning (slices 9:30\u00a0am\u201312\u00a0pm, recordings 10:30\u00a0am\u20136\u00a0pm).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig5-v2.jpg)\n\n**Figure 5.:** (A-C) Firing rate of individual GnRH-green fluorescent protein\u00a0(GFP) neurons in brain slices from diestrous females injected in the POA with adeno-associated virus (AAV)-mCherry (A, n=12 from five mice) or AAV-Gq (B, n=10 from five mice, C, n=4 from two mice); slices in C had viral infection of cells with neuronal morphology. Green symbols and lines show data in AAV-Gq infected slices without detected contamination by neuronal infection; magenta symbols and lines show data in slices with Gq-infected neurons. (D) Mean\u00a0\u00b1\u00a0SEM firing rate during the three periods, *p<0.0001 Bonferroni for cells in slices with Gq-infected neurons vs. the other groups (n=4\u201312).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** LH levels in individual mice bilaterally injected in the POA with adeno-associated virus (AAV)-mCherry (left, n=5) and AAV-Gq (right, n=6).\n\n## Discussion\n\nThe central regulation of fertility depends on the secretion of appropriate patterns of GnRH. An emerging dogma in the field is that this is substantially regulated by arcuate kisspeptin, also known as KNDy, neurons. Here, we present evidence that activation of Gq signaling in astrocytes near GnRH neurons in males triggers increased LH release and increased GnRH neuron firing. This is independent of KNDy neurons as similar activation of Gq signaling in astrocytes near these cells fails to alter either LH release or their firing rate. Further, this effect appears to be sexually differentiated as GnRH neurons from diestrous females did not respond. This astrocyte signaling may be a key element in the modulation of GnRH neuron firing and LH release in male mice.\n\nThe present findings support and extend previous work suggesting an involvement of astroglia in the regulation of reproductive neuroendocrine function (Garcia-Segura et al., 2008; Sharif et al., 2013; Ojeda et al., 2010). Anatomically, a substantial proportion of GnRH neuron somatic membrane is contacted by glia and this contact varies with reproductive state (Witkin et al., 1991; Xiong et al., 1997). GnRH terminals are intimately connected with specialized tanycytes in the median eminence; this interaction is dependent upon hormonal milieu in females (Prevot et al., 1999; King and Letourneau, 1994). Functional interactions among GnRH neurons and glia have been postulated to be primarily mediated by PGE2, as blocking central prostaglandin synthesis reduces gonadotropin release (Ojeda et al., 1975), whereas injection of PGE2 into the third ventricle or implantation into the POA enhances LH release (Harms et al., 1973; Ojeda et al., 1977). More recently, PGE2 was shown to increase firing rate of GnRH neurons in both sexes (Clasadonte et al., 2011a). By activating Gq signaling within GFAP-expressing cells directly, the present work extends these findings to the in vivo situation in which the entire hypothalamo-pituitary-gonadal axis can interact, and indicates a role for these cells within the POA in ultimately increasing LH release in males. In other brain regions, when astrocytes were activated with either DREADDs or by agonists of native GPCRs, the time\u00a0course of increases in intracellular calcium are similar to changes in firing rate in the present study\u00a0(Bonder and McCarthy, 2014;\u00a0Kang et al., 2020; D'Ascenzo et al., 2007). This suggests that the GnRH neuron response may be dependent upon the elevation of calcium in astrocytes, and also that the signal conveyed to the GnRH neuron produces a prolonged response consistent with activation of a GPCR within the neurons. This postulate was confirmed as the CNO-induced increase in firing rate response was mimicked by treatment with a stable form of PGE2 and was largely dependent upon activation of EP1 and EP2 receptors.\n\nAstroglia perform several functions within the central nervous system, including release of multiple substances that can serve as gliotransmitters. Astrocytes are\u00a0also able to communicate over broad areas, propagating elevations in intracellular calcium (Brancaccio et al., 2017). This latter observation was key to sparking our interest in how astroglia may function in GnRH release, in particular we postulated that the propagation of signals to distal astrocytes may serve as a mechanism for coordinating activity among the soma of GnRH neurons, which are spread over a wide area from the diagonal band of Broca through the medial basal hypothalamus (Silverman, 1994). It was with this postulate in mind that we recorded from GnRH neurons outside the hit region as defined by mCherry fluorescence. These neurons outside the area of infection did not respond to bath application of CNO with an increase in firing rate, however, suggesting that astroglia do not effectively propagate a signal capable of activating distal GnRH neurons in brain slices. In this regard, most GnRH neurons were located inside the hit area, a number substantially above the relatively small number of these cells needed to support LH release (Livne et al., 1992; Herbison et al., 2008).\n\nInterestingly, the activation of Gq signaling in GFAP-expressing cells within the arcuate nucleus was without effect on either LH release or firing rate of KNDy neurons, indicating that the effects on GnRH neurons were independent of this cell type that appears to play a key role in other aspects of GnRH neuron activation. Consistent with a role for PGE2 in the putative astroglia-GnRH communication, treatment of KNDy neurons with PGE2 had no effect upon their firing rate. The lack of effect of astroglia Gq-signaling on KNDy neurons is not likely attributable to a lack of viral coverage as the majority of KNDy neurons were located within the infected area. Interestingly, the area infected by virus includes tissue through which the processes of GnRH neurons pass en route to the median eminence. This suggests that this region of the GnRH neuron axon may not be sensitive to mediators released by astroglia. Of interest in this regard, treatment of explants containing the median eminence along with the medial basal hypothalamic region with PGE2-induced GnRH release (Ojeda et al., 1988). Our arcuate hits typically did not extend into the median eminence itself. As was the case with GnRH neurons outside the hit, it is possible that\u00a0there is not sufficient propagation of astroglial signals effective in activating GnRH neuron terminals outside the local region of infection. It is also possible that astrocytes exhibit regional variation in the gliotransmitters they produce. Of note, however, activation of Gq signaling in these cells would be postulated to induce release of whatever substances are downstream of that signaling pathway in the cells and not be limited to prostaglandin synthesis. Together these observations suggest the effects of Gq signaling within astroglia are at least in part specialized to preoptic regions of GnRH neurons for the reproductive neuroendocrine system.\n\nWe conducted limited studies of activating Gq signaling in astroglia in diestrous females. CNO treatment failed to alter GnRH neuron firing rate unless there were overtly infected neurons within the slice. There are several possible explanations for these observations. First, cycle stage may affect the response. Second, different gliotransmitters may be released upon astroglia activation in females, perhaps also dependent upon cycle stage. In prior work, over two-thirds of GnRH neurons increased firing rate in response to PGE2 regardless of sex or of cycle stage in females (Clasadonte et al., 2011a), indicating responsiveness to this mediator is consistent among groups. Third, it is possible that the relevant astroglia regulating GnRH release are located in different brain regions, for example, more caudal within the anteroventral periventricular region known to be important for induction of the female-specific preovulatory GnRH and LH surge (Sinchak et al., 2020).\n\nIn contrast to the robust serum LH and GnRH neuron firing response to activation of Gq signaling in astroglia, activation of Gi signaling had no effect on LH in castrated mice. The effects of activating Gi signaling in GFAP-expressing cells vary with brain region. In the hippocampus, increases in intracellular calcium were reported (Durkee et al., 2019), whereas in the hypothalamic arcuate region, activation of Gq and Gi signaling has opposing effects on food intake (Chen et al., 2016). As in females, interpretation of lack of effect must be limited to the experiments conducted, and it is possible that activation of Gi signaling in astroglia in other brain regions will alter the output of GnRH and LH. Interestingly, there are no reports of receptors acting via Gi-coupled receptors within the POA/hypothalamus.\n\nIn the present work, the main mediator of the effects of activating Gq signaling in astroglia appeared to be PGE2. GnRH neurons express both EP1 and EP2 receptors (Rage et al., 1997), thus PGE2 could be acting directly upon these cells. There are several things we cannot rule out from our studies. First, while astroglia appear to be the primary source of PGE2 in the hypothalamus, it is possible that other cell types also produce this signal. Second, it is possible that mediators other than PGE2 are produced by astroglia in response to activating Gq signaling. In this regard, in addition to prostaglandins, these cells have been shown to release other mediators including glutamate (Fellin et al., 2004; Slezak et al., 2012; Corkrum et al., 2019) and ATP (Lalo et al., 2014; Guthrie et al., 1999). Finally, any of these mediators may act via intermediate cell types within the brain slice to bring about effects on GnRH neuron firing. An intriguing question that remains to be answered is what substances serve as the endogenous activators of Gq signaling in POA astroglia. Activation of group 1 metabotropic glutamate receptors induces release of transforming growth factor alpha and neuregulins, which activate ErbB receptors on astroglia. This activation leads to activation of cyclooxygenase 2, a rate limiting step in the synthesis of PGE2 from arachidonic acid. Also of interest, an increase in intracellular calcium induced by activation of Gq signaling via the MrgA1 receptor is associated with the release of PGE2 in astrocytes from organotypic cultures of mouse cerebellum (Forsberg et al., 2017). Together with our study, this suggests a link between calcium elevation in astrocytes and PGE2 release that remains to be further delineated. While pure speculation, there are several interesting substances active within the reproductive neuroendocrine system that act via Gq-coupled receptors, including neurokinin B, kisspeptin, and GnRH itself.\n\nIn summary, the present work defines that activation of Gq signaling in astrocytes can increase GnRH neuron activity and LH release in a sex-dependent manner. Activation of this pathway may activate this system independent of arcuate kisspeptin neurons or may sculpt the response to that or other critical inputs to GnRH neurons to affect ultimately reproduction.\n\n## Materials and methods\n\nAll reagents were purchased from Sigma-Aldrich (St. Louis, MO) unless noted.\n\n### Animals\n\nMouse strains used for this work are summarized in Table 1. Mice expressing enhanced green fluorescent protein (GFP) under the control of Gnrh promoter (GnRH-GFP mice, JAX 033639) (Suter et al., 2000) or Tac2-GFP BAC transgenic mice (015495-UCD/STOCK Tg [Tac2-EGFP]381Gsat, Mouse Mutant Regional Resource Center http://www.mmrrc.org/) (Ruka et al., 2013) were used to identify GnRH and KNDy neurons for recording, respectively. Tac2 encodes neurokinin B, which is coexpressed with kisspeptin and dynorphin in KNDy neurons. Tac2-GFP-identified cells in brain slices used for recording also express kisspeptin and/or dynorphin at high percentages, supporting their identity as KNDy neurons (Ruka et al., 2013). Mice were held on a 14 hr light/10 hr dark light cycle with lights on at 0300 Eastern Standard Time and had ad libitum access to water and chow (Teklad 2916). Adult gonad-intact males and females were used between 60 and 220 days of age. In females, estrous cycle stage was determined by vaginal lavage and confirmed by uterine mass (\u2264\ufeff80 mg for diestrus) (Wagenmaker and Moenter, 2017). Castration efficacy in males was determined by seminal vesicle mass (intact >250\u00a0mg, castrate <150\u00a0mg). Animals were distributed randomly among groups and, when possible, experiments were performed blinded. The Institutional Animal Care and Use Committee at the University of Michigan approved all procedures.\n\n### Stereotaxic injections\n\nViruses used in this work are summarized in Table 1. Mice were anesthetized with isoflurane to effect and received 5 mg/kg carprofen before the surgery and 24 hr post-surgery for analgesia. AAV5 carrying a payload encoding the hM3Dq (Addgene 50478) or the hM4Di (Addgene 50479) DREADDs or control AAV (Addgene58909) fused to mCherry under the control of the GFAP\u00a0promoter were used to introduce DREADDs to regions of interest. AAVs (50\u2013100 nL) were administered by bilateral stereotaxic injection into the POA (AP: \u22122.27 mm; ML: \u22120.3 and +0.3 mm; DV: \u22124.55 mm from frontal vein) or ARC (AP: \u22121.6 mm; ML: \u22120.2 and +0.2 mm; DV: \u22125.95 mm from Bregma). Mice were monitored until fully recovered from anesthesia and surgery sites were examined daily for 10\u00a0days. Viral infection was allowed to proceed for 3-6\u00a0weeks before experiments.\n\n### Immunohistofluorescence\n\nMice were deeply anesthetized with isoflurane and transcardially perfused with 0.9% NaCl (10 mL) then 10% neutral-buffered formalin for 15 min (~50 mL). Brains were placed into 10% formalin for 4 hr and transferred into 20% sucrose in 0.1\u00a0M PBS for cryoprotection for at least 48 hr and until sectioning. Four series of 30 \u03bcm free-floating sections were obtained with a cryostat (Leica CM3050S) in 0.1\u00a0M phosphate-buffered saline (PBS) pH=7.4, then transferred to antifreeze solution (30% ethylene glycol, 20% glycerol in PBS) for storage at \u221220\u00b0C. Sections were washed three times in PBS, incubated in blocking solution (PBS containing 0.4% Triton X-100, 2% normal goat serum, Jackson ImmunoResearch) for 1 hr at room temperature, and incubated in primary antibody (Table 2) diluted in blocking solution for 48 hr at 4\u00b0C. Sections were washed three times in PBS and incubated with Alexa-conjugated secondary antibodies for 1.5 hr at room temperature (Molecular Probes and Jackson ImmunoResearch, 1:500). After three washes with PBS, slices were incubated with 300 nM 4\u2019,6-diaminidino-2-phenylindole dihydrochloride in PBS for 10 min at room temperature. Slices were washed three times in PBS, mounted on Superfrost plus slides (Thermo\u00a0Fisher Scientific) with ProLong Gold antifade reagent (Invitrogen) and coverslipped (VWR International). Primary antibodies and dilutions used are in Table 2. Images were collected on a Zeiss AXIO Imager M2 (lower magnification) or on a Nikon A1 confocal microscope (colocalization studies). The number of mCherry only, mCherry/S100\u03b2, and mCherry/NeuN coexpressing cells was counted from confocal pictures (3.49 \u03bcm optical sectioning, same exposure for each signal, levels adjusted to represent the signal observed by eye, 5 fields/mouse in the infected region; AAV-mCherry and AAV-Gq n=3 mice each POA and ARC, AAV-Gi n=4 mice POA). Brightness was increased 30% in pictures used for figures. In addition to immuno-identification, all 300 \u00b5m slices for imaging and electrophysiology were examined for infection of cells with neuronal morphology. Data from slices or mice in which infection of neuronal cells was detected were eliminated from statistical analysis but individual data are shown for transparency in the figures.\n\n### Tail tip blood collection\n\nTo examine the effect of DREADD activation on LH levels, mice were handled daily for 2\u00a0weeks before CNO\u00a0(Tocris) administration studies or 5\u00a0weeks before sampling LH pulses and habituated to IP injection of 0.9% saline for the last 3-4\u00a0days. The tip of the tail was nicked and 6 \u03bcL of blood was collected and mixed immediately with 54 \u00b5L of assay buffer (PBS, 0.05%Tween and 0.2% BSA). Sampling regimen and animal models were selected based on postulated LH response to activating Gq or Gi signaling within GFAP-expressing cells. To test the effects of activating Gq, postulated to be activating, gonad-intact males were sampled every 10 min for 2 hr, with IP injection of 0.9% saline vehicle at 30 min, and IP injection of 0.3 mg/kg CNO at 60 min. To test the effect of activating Gi, postulated to be inhibitory, males were castrated to elevate LH release; 1 week after castration, these mice were sampled every 6 min for 3 hr, with IP injection of 0.3 mg/kg CNO at 90 min.\n\n### LH assay\n\nTail blood diluted with assay buffer was kept on ice until the end of sampling, then stored at \u221220\u00b0C until LH assay by the University of Virginia Ligand Assay and Analysis Core (Steyn et al., 2013). The capture monoclonal antibody (anti-bovine LH\u00df subunit, 518B7) is provided by Janet Roser, University of California, Davis. The detection polyclonal antibody (rabbit LH antiserum, AFP240580Rb) is provided by the National Hormone and Peptide Program (NHPP). HRP-conjugated polyclonal antibody (goat anti-rabbit) is purchased from DakoCytomation (Glostrup, Denmark; D048701-2). Mouse LH reference prep (AFP5306A; NHPP) is used as the assay standard. The limit of quantitation (functional sensitivity) was 0.016 ng/mL, defined as the lowest concentration that demonstrates accuracy within 20% of expected values. Coefficient of variation (%CV) was determined from serial dilutions of a defined sample pool. Intraassay CV was 2.2%; interassay CVs were 7.3% (low QC, 0.13 ng/mL), 5.0% (medium QC, 0.8 ng/mL), and 6.5% (high QC, 2.3 ng/mL).\n\n### Brain slice preparation\n\nAll solutions were bubbled with 95% O2/5% CO2 for at least 30 min before exposure to tissue and throughout the experiments. At least 1 week after sampling for LH, brain slices were prepared through the hypothalamus as described (Chu and Moenter, 2005). The brain was rapidly removed and placed in ice-cold sucrose saline solution containing (in mM): 250 sucrose, 3.5 KCl, 26 NaHCO3, 10 D-glucose, 1.25 Na2HPO4, 1.2 MgSO4, and 3.8 MgCl2. Coronal slices (300 \u03bcm) were cut with Leica VT1200S (Leica Biosystems, Buffalo Grove, IL). Slices were incubated for 30 min at room temperature (~21\u201323\u00b0C) in 50% sucrose saline and 50% artificial cerebrospinal fluid (ACSF) containing (in mM): 135 NaCl, 3.5 KCl, 26 NaHCO3, 10 D-glucose, 1.25 Na2HPO4, 1.2 MgSO4, 2.5 CaCl2 (pH 7.4), then transferred to 100% ACSF at room temperature for 0.5\u20134.5 hr before recording. At the end of the recording, slices of interest were fixed with 10% formalin for 40 min, washed three times in PBS, and were processed for immunofluorescence to study the spread of the infected area or examined directly for mCherry signal in cells with neuronal morphology.\n\n### Electrophysiological recordings\n\nTargeted single-unit extracellular recordings were used to minimize impact on the cell\u2019s intrinsic properties (Nunemaker et al., 2003; Alcami et al., 2012). Recording pipettes (2\u20134 M\u03a9) were pulled from borosilicate glass (Schott no. 8250; World Precision Instruments, Sarasota, FL) with a Sutter P-97 puller (Sutter Instrument, Novato, CA). Pipettes were filled with HEPES-buffered solution containing (in mM): 150 NaCl, 10 HEPES, 10 D-glucose, 2.5 CaCl2, 1.3 MgCl2, and 3.5 KCl, and low-resistance (6\u201315 M\u03a9) seals were formed between the pipette and neuron. Recordings were made in voltage clamp with a 0 mV pipette holding potential, data acquired at 10 kHz, and filtered at 5 kHz using a one amplifier of an EPC10 dual patch clamp amplifier controlled with PatchMaster software (HEKA Elektronic, Lambrecht, Germany).\n\nSlices were transferred to a recording chamber with constant perfusion of carboxygenated ACSF at 29\u201332\u00b0C at a rate of approximately 3 mL/min. GFP-positive cells were targeted for recording in the POA (GnRH neurons) or ARC (KNDy neurons). Cells that were surrounded by mCherry signal were considered within the infected area (hit) and those with no detectable peripheral mCherry signal within 150 \u00b5m were considered outside the infected area (miss). Recordings consisted of a 5\u201310 min stabilization period, a 5 min control period, bath\u00a0application of treatment for 6\u00a0min, followed by a wash. Mean firing rate was calculated for the last 3 min baseline period, for min 5\u20137 of treatments, and min 8\u201310 after treatment (wash). At the end of each recording, cells that were inactive throughout the recording were treated with 20 mM potassium in ACSF; cells that exhibited action currents in response were verified to be alive and recordable, and all data were used. Cells that did not respond to elevated potassium were excluded. No more than three cells from the same animal were included and at least four animals were studied per group for electrophysiology studies.\n\nTo test the hypothesis PGE2 affects GnRH and KNDy neuron firing, we used 16,16-dimethyl PGE2 (dmPGE2, 200 nM), a stable form of PGE2 (Cayman Chemical 14750) in 0.00076% methyl acetate vehicle. Antagonists for prostaglandin receptor EP1 (SC-19220, 100 \u03bcM,\u00a0Tocris) and EP2 (PF-04418948, 20 \u03bcM,\u00a0Tocris) were diluted into fresh bubbled ACSF (final DMSO concentration 0.3%) and bath applied before CNO treatment. The recording paradigm was a 6 min baseline, 6 min pretreatment with methyl acetate vehicle containing either DMSO vehicle or EP1 and EP2 antagonists, a 6 min treatment that added 200 nM dmPGE2, followed by wash in ACSF. Mean firing rate was calculated for the last 3 min baseline and pretreatment periods, min 5\u20137 following addition of dmPGE2 for treatment, and min 8\u201310 after wash began.\n\n### Analysis and statistics\n\nData were analyzed using code written in IgorPro 8 (Wavemetrics).\u00a0The code is available on GitLab (DeFazio, 2021 copy archived at swh:1:rev:2d400d05d3443defb99bf8c8a9b3c2c846a8b1be).\u00a0Action currents (events) were detected and confirmed by eye. Statistical analyses were conducted with GraphPad Prism 9. Distribution normality was checked with Shapiro-Wilk; most experiments included one or more groups that were not normally distributed. One-way repeated-measures tests were conducted with the Friedman test. For two-way repeated-measures ANOVA, the Bonferroni post hoc is considered sufficiently rigorous for non-normally distributed data (Underwood, 1997). Statistical tests for each study are specified in the Results\u00a0section. p<0.05 was considered significant and exact p-values are reported.\n",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "e6243be6-4965-4257-8716-2e411db46826",
+      "submission_id": "69650444-489e-4706-a9de-a691f59d5bcd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joel K Elmquist, University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68205.sa1](https://doi.org/10.7554/eLife.68205.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nYour study will be of interest to neuroendocrinologists and more broadly to neuroscientists since it addresses the contribution of astrocytes to the activity of a neuronal system orchestrating the reproductive function. You used an innovative techniques to target astrocytes and provide results that complement and extend previous work on the role of astrocytes in the control of the GnRH system.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A role for glial fibrillary acidic protein (GFAP)-expressing cells in the regulation of gonadotropin-releasing hormone (GnRH) but not arcuate kisspeptin neuron output\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe results from the experiment examining AAV-Gi effect on LH could be shown in a supplementary figure.\n\nThe values of LH dosage in female mice should be provided.\n\nFigure 4B: why is the firing rate equal to 0 before application of CNO while a low frequency firing rate is visible in AAV-mCherry and AAV-Gq outside hits?\n\nTo address possible sex differences, in addition to recording GnRH neurons in the same conditions as in males, analysis of Tac2 neurons should also be included in order to extend the impact of the present study.\n\nFor better readability, the number of animals used in each experiment should be clearly specified (e.g in the figure legends). Moreover, in neuronal firing rate analyses (data shown in figures 4, 5 and 6), the details of how many cells were recorded from how many animals should be indicated.\n\nFor better readability, the sex of animals used in each experiment should be indicated in the main text and figure legends.\n\nTable 2: the column \"reference\" is empty. Please complete.\n\nPage 9, first paragraph: a reference to Figure 5 is missing.\n\nPlease correct the following typos:\n\n- Page 3 line 48: \u00ab this approaches \u00bb.\n\n- Page 4 line 59: remove the parenthesis.\n\n- page 4 line 68: \"cells examined hypothalamic tissue\".\n\n- page 5 line 78: \"with mCherry signal was observed\".\n\n- page 5 line 88: \"together with the either\".\n\n- page 8 line 168: \"AAV-Dq\".\n\nWhat receptor/mechanism is required in astrocytes to produce and release PGE2? Have the authors considered a role for MrgA1 receptors in astrocytes to be a Gq receptor mechanism that can be responsible for the release PGE2 and subsequent alteration of neuronal activity? Possibly recent work from Forsberg and colleagues may be relevant (PMID: 28976306).\n\nCurious about the location of the injections and the impact on the reported observations. For example, in Figure 3 the authors observed an increase in LH in one mouse that was received AAV-Gq bilaterally into the ARC and was verified to be absent of infection in unidentified neurons. Similarly, a single ARC Tac2 neurons appears to have increased firing rate in response to CNO in Figure 4F (in a slice absent of unidentified or Tac2 infected neurons). What may explain this response while the remaining animals did not exhibit this increase. Did the authors observe any rostral to caudal or medial to lateral differences with regard to the injections in either the ARC or the POA? In addition to injection location, did the authors observe any differences in penetrance of virally transduced neurons?\n\nPGE2 in the POA is associated with both thermogenic and tachycardic conditions (PMID: 2245331; PMID: 12648744; PMID: 16406311; PMID: 1967907). Do the authors suspect release of PGE2 from astrocytes in the POA regulates this activity?\n\nFigure 2B and C. the authors should define the color coding. What is the significance of the black, cyan, and magenta traces in each panel? Are these different ROIs?\n\nFigures 3, 4, 5; the overlap of the magenta and cyan lines with green lines is confusing. Possibly the authors could modify these figures based on the format of figure 6 which shows separate graphs for infected neurons.\n\nThe number of animals used for the current study is surprisingly small (n=1 or 2; table 3).\n\nWhat age animals were used?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A role for glial fibrillary acidic protein (GFAP)-expressing cells in the regulation of gonadotropin-releasing hormone (GnRH) but not arcuate kisspeptin neuron output in male mice\" for further consideration by eLife. Your revised article has been evaluated by Catherine Dulac (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe calcium imaging analyses performed on 1 to 2 animals per group should be deleted or additional cases should be added.\n",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "65b44223-fc9d-4906-91bb-a028d6ff99c3",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C1",
+      "claim": "GnRH neurons are the final central neural output regulating fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH neurons are the final central neural output regulating fertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "fe047c31-b92f-44a8-a791-a9b2182f9225",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C2",
+      "claim": "Kisspeptin neurons in the hypothalamic arcuate nucleus (KNDy neurons) are considered the main regulator of GnRH output.",
+      "claim_type": "EXPLICIT",
+      "source": "Kisspeptin neurons in the hypothalamic arcuate nucleus (KNDy neurons) are considered the main regulator of GnRH output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current scientific consensus in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "b092ba28-7372-4acf-9167-59823b987db6",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C3",
+      "claim": "GnRH and KNDy neurons are surrounded by astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH and KNDy neurons are surrounded by astrocytes, which can modulate neuronal activity and communicate over distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "8ac155a3-885a-4cd0-80d5-ad111bc35771",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C4",
+      "claim": "Astrocytes can modulate neuronal activity and communicate over distances.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH and KNDy neurons are surrounded by astrocytes, which can modulate neuronal activity and communicate over distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "bfa3cfee-413d-4e54-9fb2-529e00404be4",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C5",
+      "claim": "Prostaglandin E2 (PGE2) is synthesized primarily by astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Prostaglandin E2 (PGE2), synthesized primarily by astrocytes, increases GnRH neuron activity and downstream pituitary release of luteinizing hormone (LH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "e5d4b538-f4c8-4ef1-8717-257b7262404c",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C6",
+      "claim": "PGE2 increases GnRH neuron activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Prostaglandin E2 (PGE2), synthesized primarily by astrocytes, increases GnRH neuron activity and downstream pituitary release of luteinizing hormone (LH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "eddfca69-2a06-48fd-8b2c-882bb000877a",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C7",
+      "claim": "PGE2 increases downstream pituitary release of luteinizing hormone (LH).",
+      "claim_type": "EXPLICIT",
+      "source": "Prostaglandin E2 (PGE2), synthesized primarily by astrocytes, increases GnRH neuron activity and downstream pituitary release of luteinizing hormone (LH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "ca5071b2-6d6e-487a-9ae1-9ce25078813d",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C8",
+      "claim": "Activating Gq signaling in the preoptic area, near GnRH neurons, but not in the arcuate, increases LH release in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating Gq signaling in the preoptic area, near GnRH neurons, but not in the arcuate, increases LH release in vivo and GnRH firing in vitro via a mechanism in part dependent upon PGE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "d95fa6a8-4b32-4f02-b3c8-f8473f17f4d9",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C9",
+      "claim": "Activating Gq signaling in the preoptic area increases GnRH firing in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating Gq signaling in the preoptic area, near GnRH neurons, but not in the arcuate, increases LH release in vivo and GnRH firing in vitro via a mechanism in part dependent upon PGE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "8491efdc-eb36-4fa7-b00d-2f591f9c5fbf",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C10",
+      "claim": "The mechanism by which activating Gq signaling in the preoptic area increases GnRH firing is in part dependent upon PGE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating Gq signaling in the preoptic area, near GnRH neurons, but not in the arcuate, increases LH release in vivo and GnRH firing in vitro via a mechanism in part dependent upon PGE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "90f4dd88-9d9f-4bbe-843f-9bc1b42abd1e",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C11",
+      "claim": "Astrocytes can activate GnRH/LH release in a manner independent of KNDy neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that astrocytes can activate GnRH/LH release in a manner independent of KNDy neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that Gq activation in the POA but not ARC affects LH release.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "5ec538f5-571a-4a05-805f-345713fbbf8d",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C12",
+      "claim": "The episodic release of gonadotropin-releasing hormone (GnRH) from neurons in the preoptic area (POA) of the hypothalamus drives the function of the hypothalamo-pituitary-gonadal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The episodic release of gonadotropin-releasing hormone (GnRH) from neurons in the preoptic area (POA) of the hypothalamus drives the function of this axis (Belchetz et al., 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Belchetz et al., 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "f999d1f9-8443-4ee2-96c7-9b6892174bad",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C13",
+      "claim": "GnRH stimulates the anterior pituitary gland to synthesize and secrete luteinizing hormone (LH) and follicle-stimulating hormone.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH stimulates the anterior pituitary gland to synthesize and secrete two gonadotropins, luteinizing hormone (LH) and follicle-stimulating hormone, which subsequently activate gonadal functions including steroidogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "8acf0550-d952-4f3b-8397-88368b58a0de",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C14",
+      "claim": "Gonadotropins activate gonadal functions including steroidogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH stimulates the anterior pituitary gland to synthesize and secrete two gonadotropins, luteinizing hormone (LH) and follicle-stimulating hormone, which subsequently activate gonadal functions including steroidogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "cb7c9f20-557a-4461-8a19-d36a7c1969c4",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C15",
+      "claim": "Sex steroids feed back to regulate the GnRH/LH release in both sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex steroids feed back to regulate the GnRH/LH release in both sexes (Czieselsky et al., 2016; Karsch et al., 1987; Moenter et al., 1991; Hileman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "da858e35-cc4c-4db7-a922-d76c098229c4",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C16",
+      "claim": "Kisspeptin neurons located in the arcuate nucleus of the hypothalamus (ARC) have emerged as a leading candidate for initiating GnRH/LH release.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the past several years, kisspeptin neurons located in the arcuate nucleus of the hypothalamus (ARC) have emerged as a leading candidate for initiating GnRH/LH release (Lehman et al., 2010; Navarro et al., 2009; Keen et al., 2008; Oakley et al., 2009; Han et al., 2020), as well as for integrating steroid negative feedback (Smith et al., 2005a; Smith et al., 2005b; Vanacker et al., 2017; Moore et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "aee58f90-1266-4035-872b-f4563b76e0be",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C17",
+      "claim": "Arcuate kisspeptin neurons are candidates for integrating steroid negative feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the past several years, kisspeptin neurons located in the arcuate nucleus of the hypothalamus (ARC) have emerged as a leading candidate for initiating GnRH/LH release (Lehman et al., 2010; Navarro et al., 2009; Keen et al., 2008; Oakley et al., 2009; Han et al., 2020), as well as for integrating steroid negative feedback (Smith et al., 2005a; Smith et al., 2005b; Vanacker et al., 2017; Moore et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "b2ec4a78-221b-4126-be00-edf24058801c",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C18",
+      "claim": "KNDy neurons coexpress kisspeptin, neurokinin B, and dynorphin.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are called KNDy neurons for their coexpression of kisspeptin, neurokinin B, and dynorphin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "40e765d4-f3e1-4d57-8f53-ca1b5f0f0479",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C19",
+      "claim": "KNDy neurons in brain slices exhibit changes in spontaneous action potential firing activity that is on the time-scale of episodic LH release.",
+      "claim_type": "EXPLICIT",
+      "source": "KNDy neurons in brain slices exhibit changes in spontaneous action potential firing activity that is on the time-scale of episodic LH release and that is steroid-sensitive (Vanacker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Vanacker et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "5da42782-75f1-4b93-8e56-57454e13185a",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C20",
+      "claim": "KNDy neuron firing activity is steroid-sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "KNDy neurons in brain slices exhibit changes in spontaneous action potential firing activity that is on the time-scale of episodic LH release and that is steroid-sensitive (Vanacker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Vanacker et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "6e3fb780-63fc-4cf1-9f67-ff0ad78459f0",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C21",
+      "claim": "Optogenetic activation of KNDy neurons induces LH release in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, optogenetic activation of KNDy neurons induces LH release, and increases in intracellular calcium in these cells measured by bulk photometry are associated with spontaneous LH release (Han et al., 2020; Clarkson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Han et al., 2020 and Clarkson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "a8dbd483-1f6b-4747-a7f1-d1a9f5a6d215",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C22",
+      "claim": "Increases in intracellular calcium in KNDy neurons measured by bulk photometry are associated with spontaneous LH release.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, optogenetic activation of KNDy neurons induces LH release, and increases in intracellular calcium in these cells measured by bulk photometry are associated with spontaneous LH release (Han et al., 2020; Clarkson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Han et al., 2020 and Clarkson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "1b88b3e4-4f33-4c2a-8922-9e06e94a2a87",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C23",
+      "claim": "Evidence suggests that astroglia play a role in reproductive function.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, evidence suggests that astroglia play a role in reproductive function (Prevot et al., 2005; Sandau et al., 2011; Clasadonte et al., 2011a; Clasadonte and Prevot, 2018; Ma et al., 1999; Garcia-Segura et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "648d7da2-ce81-4bcc-a508-09d16436a3dc",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C24",
+      "claim": "Astrocytes are a major glial type in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Astrocytes are a major glial type in the central nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "ba96f0ea-3ec4-4a70-b7e5-19785fe8835d",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C25",
+      "claim": "GnRH and KNDy neurons are contacted by astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH and KNDy neurons are contacted by astrocytes, and astrocytic coverage of neurons in the POA and ARC varies with estrous cycle stage, gonadal status, and seasonal reproduction (Witkin et al., 1991; Baroncini et al., 2007; Olmos et al., 1989; Cashion et al., 2003; Mong and McCarthy, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "0eeb8d41-88d6-43de-bb81-fc3f32f6f070",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C26",
+      "claim": "Astrocytic coverage of neurons in the POA and ARC varies with estrous cycle stage, gonadal status, and seasonal reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH and KNDy neurons are contacted by astrocytes, and astrocytic coverage of neurons in the POA and ARC varies with estrous cycle stage, gonadal status, and seasonal reproduction (Witkin et al., 1991; Baroncini et al., 2007; Olmos et al., 1989; Cashion et al., 2003; Mong and McCarthy, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "14f854e2-57cb-494a-8d61-feae18ad9189",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C27",
+      "claim": "Astrocytes can propagate information to adjacent astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Astrocytes can propagate information to adjacent astrocytes (Nagy and Rash, 2000; Hassinger et al., 1996; Brancaccio et al., 2017) making them intriguing candidates for coordinating episodic hormone release over the distances among scattered GnRH neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "b0b92220-7834-46e8-99fb-5361a20ac6b1",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C28",
+      "claim": "Astrocytes are intriguing candidates for coordinating episodic hormone release over the distances among scattered GnRH neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Astrocytes can propagate information to adjacent astrocytes (Nagy and Rash, 2000; Hassinger et al., 1996; Brancaccio et al., 2017) making them intriguing candidates for coordinating episodic hormone release over the distances among scattered GnRH neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited ability of astrocytes to propagate information.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "c676c609-8577-4641-ada0-4fa781041973",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C29",
+      "claim": "A consensus has yet to emerge regarding vesicle-mediated transmission by astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "A consensus has yet to emerge regarding vesicle-mediated transmission by astrocytes (Savtchouk and Volterra, 2018), but there are data indicating that these cells may release multiple gliotransmitters (Araque et al., 2001; D'Ascenzo et al., 2007; Panatier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Savtchouk and Volterra, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "a86154d2-9d81-44b7-8049-cd5bf1190fb5",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C30",
+      "claim": "There are data indicating that astrocytes may release multiple gliotransmitters.",
+      "claim_type": "EXPLICIT",
+      "source": "A consensus has yet to emerge regarding vesicle-mediated transmission by astrocytes (Savtchouk and Volterra, 2018), but there are data indicating that these cells may release multiple gliotransmitters (Araque et al., 2001; D'Ascenzo et al., 2007; Panatier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "184c3763-131d-4f1b-bc9b-dd6112a58221",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C31",
+      "claim": "Prostaglandin E2 (PGE2) is a non-vesicular transmitter.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these is prostaglandin E2 (PGE2), a non-vesicular transmitter that can increase GnRH neuron activity, GnRH release and LH release (Rage et al., 1997; Eskay et al., 1975; Harms et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "ecde42be-2772-405e-b582-7654e17fc248",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C32",
+      "claim": "PGE2 can increase GnRH neuron activity, GnRH release and LH release.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these is prostaglandin E2 (PGE2), a non-vesicular transmitter that can increase GnRH neuron activity, GnRH release and LH release (Rage et al., 1997; Eskay et al., 1975; Harms et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "508b3e14-9345-48e6-afcb-41d8f8b3011f",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C33",
+      "claim": "AAV5 bearing GFAP promoter-driven constructs effectively targets GFAP-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "AAV5 bearing GFAP promoter-driven construct effectively targets GFAP-expressing cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "cf400683-4666-42b3-be8f-fbef44739c8d",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C34",
+      "claim": "About 73.3 \u00b1 5.7% of GnRH neurons were surrounded by mCherry in the POA.",
+      "claim_type": "EXPLICIT",
+      "source": "About 73.3 \u00b1 5.7% of GnRH neurons were surrounded by mCherry in the POA (n=10 mice) and about 90.2 \u00b1 1.7% of kisspeptin neurons were surrounded by mCherry in infected arcuate nuclei (n=13 mice), regardless of virus used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "771a44dc-4b6f-41d5-b76c-c37dc828bbb2",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C35",
+      "claim": "About 90.2 \u00b1 1.7% of kisspeptin neurons were surrounded by mCherry in infected arcuate nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "About 73.3 \u00b1 5.7% of GnRH neurons were surrounded by mCherry in the POA (n=10 mice) and about 90.2 \u00b1 1.7% of kisspeptin neurons were surrounded by mCherry in infected arcuate nuclei (n=13 mice), regardless of virus used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "e8197c01-ba59-4def-9284-b2496c4a6d1e",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C36",
+      "claim": "It is estimated that 54.7 \u00b1 1.8% of the total population of arcuate kisspeptin neurons (from both nuclei) was surrounded by mCherry in unilateral hit animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice infected unilaterally in the ARC were considered for analysis; it is estimated that 54.7 \u00b1 1.8% of the total population of arcuate kisspeptin neurons (from both nuclei) was surrounded by mCherry in unilateral hit animals (n=3 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "238ff8c4-879a-4124-bcd2-afa01752c3cf",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C37",
+      "claim": "S100\u03b2 and GFAP are colocalized in most (<90%) cells examined in hypothalamic tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "S100\u03b2 and GFAP are colocalized in most (<90%) cells examined in hypothalamic tissue (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "81f1456d-aa11-43fd-bc3b-918552f01ffe",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C38",
+      "claim": "Over 90% of mCherry infected cells colocalized with S100\u03b2 regardless of virus used or region examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 90% of mCherry infected cells colocalized with S100\u03b2 regardless of virus used or region examined (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "61a17d32-d21a-4945-bab3-b978eaad3e40",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C39",
+      "claim": "A few mCherry-positive cells in the ARC region showed morphological characteristics of alpha tanycytes, which are known to express GFAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a few mCherry-positive cells in the ARC region showed morphological characteristics of alpha tanycytes, which are known to express GFAP (Pellegrino et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study with a citation supporting that tanycytes express GFAP.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "c7c3cab5-4356-49e5-9ed0-36dbdd740793",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C40",
+      "claim": "A small percent of mCherry infected cells colocalized with NeuN.",
+      "claim_type": "EXPLICIT",
+      "source": "A small percent of mCherry infected cells colocalized with NeuN and about 2% of mCherry infected cells did not colocalize with either marker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "838bd806-4cdb-4814-b84a-73572fd5d25a",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C41",
+      "claim": "About 2% of mCherry infected cells did not colocalize with either S100\u03b2 or NeuN marker.",
+      "claim_type": "EXPLICIT",
+      "source": "A small percent of mCherry infected cells colocalized with NeuN and about 2% of mCherry infected cells did not colocalize with either marker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "30fe8d19-a3f8-4af2-a2f1-78efe928e6da",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C42",
+      "claim": "No expression of mCherry was observed in any recorded or imaged GnRH-GFP or Tac2-GFP neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "No expression of mCherry was observed in any recorded or imaged GnRH-green fluorescent protein (GFP) or Tac2-GFP neuron, thus cells from which data were directly obtained were likely not infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "df02cdb5-798f-49cc-a0c1-c61406942a23",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C43",
+      "claim": "Cells from which data were directly obtained were likely not infected.",
+      "claim_type": "EXPLICIT",
+      "source": "No expression of mCherry was observed in any recorded or imaged GnRH-green fluorescent protein (GFP) or Tac2-GFP neuron, thus cells from which data were directly obtained were likely not infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that no mCherry was observed in recorded neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "baa6b3d2-33fa-44c9-8c07-5226bc463ad2",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C44",
+      "claim": "Injection of vehicle had no effect on LH release in any group.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of vehicle had no effect on LH release in any group (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "83c7abf6-e9b2-4dc9-b856-06b5db41afa1",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C45",
+      "claim": "When AAV-mCherry control virus was targeted to either the POA or the ARC, CNO injection had no effect on circulating LH levels.",
+      "claim_type": "EXPLICIT",
+      "source": "When AAV-mCherry control virus was targeted to either the POA or the ARC, CNO injection similarly had no effect on circulating LH levels (Figure 2A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "596b4ae4-8be4-4066-83c9-4d69b47b51cd",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C46",
+      "claim": "When AAV-Gq was targeted to the POA, CNO induced an abrupt increase in LH by the next 10 min sample.",
+      "claim_type": "EXPLICIT",
+      "source": "When AAV-Gq was targeted to the POA, however, CNO induced an abrupt increase in LH by the next 10 min sample (Figure 2B,C; two-way, repeated-measures ANOVA AAV-mCherry vs. AAV-Gq F(1,10)=59, p<0.0001; time F(8,80)=26, p<0.0001; interaction F(8,80)=33, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2B,C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "87fe6220-4185-4420-b098-8d40499b05b5",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C47",
+      "claim": "Neither unilateral nor bilateral hits targeting AAV-Gq to the ARC produced a consistent LH response in the absence of overt neuronal infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In marked contrast, neither unilateral nor bilateral hits targeting AAV-Gq to the ARC produced a consistent LH response in the absence of overt neuronal infection (Figure 2E,F; two-way, repeated-measures ANOVA AAV-mCherry vs. AAV-Gq F(1,13)=0.1916, p=0.6688; time F(8,104)=1.597, p=0.1345; interaction F(8,104)=0.9265, p=0.4980).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2E,F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "2676c145-179f-4d22-9dfc-169e5df9d895",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C48",
+      "claim": "CNO had no effect on the mean LH levels in castrated male mice.",
+      "claim_type": "EXPLICIT",
+      "source": "CNO had no effect on the mean LH levels (AAV-mCherry, control 4.5\u00b10.7, CNO 3.8\u00b10.5; AAV-Gi, control 4.9\u00b10.3, CNO 4.7\u00b10.5; two-way repeated-measures ANOVA AAV-mCherry vs. AAV-Gi F(1,4)=1.4, p=0.2971, control vs. CNO (F(1,4)=6.4, p=0.0631), interaction F(1,4)=1.4, p=0.2971) or LH pulse frequency (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "f53b2792-ebf1-4f0b-9522-3fdaeee8f290",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C49",
+      "claim": "Bath application of CNO (200 nM) had no effect on firing rate of GnRH neurons from AAV-mCherry control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Bath application of CNO (200 nM) had no effect on firing rate of GnRH neurons from AAV-mCherry control mice (Figure 3A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "76b48182-f672-44a6-bc7b-aeb7d4a2f66d",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C50",
+      "claim": "CNO increased firing rate of GnRH neurons within the infected area of AAV-Gq mice as identified by mCherry signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CNO increased firing rate of GnRH neurons within the infected area of AAV-Gq mice as identified by mCherry signal (Figure 3B,D, two-way repeated-measures ANOVA mCherry vs. Gq-mCherry F(2,26) = 4.013, p=0.0303).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3B,D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "6890e37d-247a-4bd1-a314-aca5ccbfe305",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C51",
+      "claim": "GnRH neurons located outside of the infected region in AAV-Gq mice did not respond to CNO treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GnRH neurons located outside of the infected region in AAV-Gq mice, easily distinguishable because they were not surrounded by mCherry signal, did not respond to CNO treatment (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "6ff1d169-8cf1-42cb-9b80-d06c6902015e",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C52",
+      "claim": "Activation of Gq signaling in GFAP-expressing POA cells can increase the firing rate of GnRH neurons but the propagation of that signal to GnRH neurons in uninfected areas is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that activation of Gq signaling in GFAP-expressing POA cells can increase the firing rate of GnRH neurons but that the propagation of that signal to GnRH neurons in uninfected areas is limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that GnRH neurons outside the infected region did not respond to CNO.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "6663c93f-3172-4758-966f-691f4ed40af3",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C53",
+      "claim": "Neither the type of virus injected (AAV-mCherry vs. AAV-Gq) nor the location of the cell inside or outside the hit affected the firing rate of Tac2-GFP neurons in response to bath application of 200 nM CNO.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the type of virus injected (AAV-mCherry vs. AAV-Gq) nor the location of the cell inside or outside the hit affected the firing rate of Tac2-GFP neurons in response to bath application of 200 nM CNO (Figure 3E\u2013H, Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3E\u2013H and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "c7cf9eda-7c13-4fcc-89bd-c186d490ac59",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C54",
+      "claim": "The firing rate of Tac2-GFP neurons tends to increase over time of recording.",
+      "claim_type": "EXPLICIT",
+      "source": "The firing rate of Tac2-GFP neurons tends to increase over time of recording (Phumsatitpong et al., 2020); this was observed as an increase in firing rate during the wash vs. control period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Phumsatitpong et al., 2020 and observed in the data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "06e55974-1324-4504-8cd0-245e7f55d4c8",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C55",
+      "claim": "PGE2 is primarily produced by astrocytes in the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "The putative gliotransmitter PGE2 is primarily produced by astrocytes in the hypothalamus and can increase GnRH neuron firing rate (Ma et al., 1997; Clasadonte et al., 2011b) by acting on EP1 and EP2 receptors expressed by these neurons (Rage et al., 1997; Jasoni et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ma et al., 1997 and Clasadonte et al., 2011b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "3be42a56-30ae-46f7-80ca-f94fbface987",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C56",
+      "claim": "PGE2 can increase GnRH neuron firing rate by acting on EP1 and EP2 receptors expressed by these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The putative gliotransmitter PGE2 is primarily produced by astrocytes in the hypothalamus and can increase GnRH neuron firing rate (Ma et al., 1997; Clasadonte et al., 2011b) by acting on EP1 and EP2 receptors expressed by these neurons (Rage et al., 1997; Jasoni et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rage et al., 1997 and Jasoni et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "8a5d3e8a-3bd8-41dc-ac64-75ba98aff9fc",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C57",
+      "claim": "GnRH neurons express EP1 and EP2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The putative gliotransmitter PGE2 is primarily produced by astrocytes in the hypothalamus and can increase GnRH neuron firing rate (Ma et al., 1997; Clasadonte et al., 2011b) by acting on EP1 and EP2 receptors expressed by these neurons (Rage et al., 1997; Jasoni et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rage et al., 1997 and Jasoni et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "9b8bdddb-cdc8-4465-b466-6ef683116d87",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C58",
+      "claim": "The CNO-induced increase in firing in AAV5-Gq mice is PGE2-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the CNO-induced increase in firing in AAV5-Gq mice is PGE2-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "df715317-80fb-4dc9-9153-8fb530c36992",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C59",
+      "claim": "Pretreatment with either DMSO vehicle (0.3%) or a mix of EP1- and EP2-specific antagonists (100 \u03bcM SC19220 and 20 \u03bcM PF04418948, respectively) had no effect on the firing rate of GnRH-GFP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In GnRH-GFP neurons, pretreatment with either DMSO vehicle (0.3%) or a mix of EP1- and EP2-specific antagonists (100 \u03bcM SC19220 and 20 \u03bcM PF04418948, respectively) had no effect on the firing rate (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "f6489e8c-8dab-458a-9bde-9bd202c55d9a",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C60",
+      "claim": "dmPGE2 increased GnRH neuron firing rate in cells pretreated with vehicle for the antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies using PGE2 (Clasadonte et al., 2011b), dmPGE2 increased GnRH neuron firing rate in cells pretreated with vehicle for the antagonists (Figure 4A,C, n=9, p<0.0001 two-way repeated-measures ANOVA/Bonferroni, Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A,C with statistical analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "36e0cf80-6359-4202-9d0f-b122cf8ff9f6",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C61",
+      "claim": "Pretreatment with EP1/EP2 receptor antagonists blocked the effect of dmPGE2 on GnRH neuron firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Pretreatment with EP1/EP2 receptor antagonists blocked the effect of dmPGE2 on GnRH neuron firing rate (Figure 4B,C, n=10, Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4B,C and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "dcb20db5-2f03-4c1a-8607-43d6e64ea992",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C62",
+      "claim": "Neither pretreatment with methylacetate vehicle nor 200 nM dmPGE2 had an effect on the firing rate of Tac2-GFP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to GnRH-GFP neurons, neither pretreatment with methylacetate vehicle nor 200 nM dmPGE2 had an effect on the firing rate of Tac2-GFP neurons (Figure 4D\u2013F, n=9 cells, Friedman test F=5.07, p=0.1671).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4D\u2013F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "991f6084-8d61-4794-8bae-6470196d7b5f",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C63",
+      "claim": "Pretreatment with EP1/2 antagonists blunted the CNO-induced increase in GnRH neuron firing in brain slices from mice injected with AAV5-Gq in the POA.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if the CNO-induced increase in firing rate of GnRH neurons in brain slices from mice injected with AAV5-Gq in the POA was dependent upon PGE2 signaling, slices were pretreated with the EP1/2 antagonist mix before exposure to CNO in the continued presence of the antagonists. Pretreatment with antagonists blunted the CNO-induced increase in GnRH neuron firing (Figure 4F\u2013H, n=11 cells, p=0.4327, Friedman statistic 2.74, Friedman test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4F\u2013H with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "ed9c722a-2b2e-4239-ab52-346abf078d7f",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C64",
+      "claim": "Activating Gq signaling in GFAP-expressing cells stimulates GnRH neurons at least in part via a PGE2-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that activating Gq signaling in GFAP-expressing cells stimulates GnRH neurons at least in part via a PGE2-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing that EP1/2 antagonists blunted the CNO-induced increase in GnRH neuron firing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "55c1a194-8648-4868-90fb-ae21b9877280",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C65",
+      "claim": "CNO increased LH in female mice infected with AAV-Gq, but all mice exhibited infected cells with neuronal morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "CNO increased LH in mice infected with AAV-Gq, but all mice exhibited infected cells with neuronal morphology and these data were not considered further (Figure 5\u2014figure supplement 1, virus F(1,9)=12, p=0.0069; time F(9,81)=21, p<0.0001; interaction F(9,81)=25, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5\u2014figure supplement 1 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "601a245d-9e37-44c0-9805-fe9e35272a47",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C66",
+      "claim": "In brain slices from female mice, CNO had no effect on firing rate of GnRH neurons from female mice infected with either virus, unless infected cells with neuronal morphology were observed within the slice.",
+      "claim_type": "EXPLICIT",
+      "source": "In brain slices, CNO had no effect on firing rate of GnRH neurons from female mice infected with either virus (Figure 5B,C,E, Table 5), unless infected cells with neuronal morphology were observed within the slice (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B,C,D,E and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "98d7f569-6b5a-4a38-a63f-2e0e3fe342e5",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C67",
+      "claim": "There may be a sex difference in the regulation of GnRH neurons by GFAP-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that there may be a sex difference in the regulation of GnRH neurons by GFAP-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that CNO did not affect GnRH neuron firing in females as it did in males.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "49c00a4c-57e3-48f6-bff3-d77f85aca42d",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C68",
+      "claim": "Recordings from female mice were made in the afternoon (slices made 2:30\u20133:30 pm, recordings 3:30\u20139:30 pm), whereas recordings from males were made in the morning (slices 9:30 am\u201312 pm, recordings 10:30 am\u20136 pm).",
+      "claim_type": "EXPLICIT",
+      "source": "An important caveat to point out is that these recordings were made in the afternoon (slices made 2:30\u20133:30 pm, recordings 3:30\u20139:30 pm), whereas recordings from males were made in the morning (slices 9:30 am\u201312 pm, recordings 10:30 am\u20136 pm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail that could affect interpretation of results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "3e51cdb2-e568-40e9-b323-f6bf7e1986cb",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C69",
+      "claim": "Activation of Gq signaling in astrocytes near GnRH neurons in males triggers increased LH release and increased GnRH neuron firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present evidence that activation of Gq signaling in astrocytes near GnRH neurons in males triggers increased LH release and increased GnRH neuron firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "ba3a0b03-3938-42cd-bef4-a028cdb6d862",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C70",
+      "claim": "Activation of Gq signaling in astrocytes near KNDy neurons fails to alter either LH release or their firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "This is independent of KNDy neurons as similar activation of Gq signaling in astrocytes near these cells fails to alter either LH release or their firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "f94bd4d8-3af0-4e18-892b-fedb45963047",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C71",
+      "claim": "The effect of astrocyte signaling on GnRH neurons appears to be sexually differentiated as GnRH neurons from diestrous females did not respond.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this effect appears to be sexually differentiated as GnRH neurons from diestrous females did not respond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "03750530-490b-4998-b970-d086584da795",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C72",
+      "claim": "Astrocyte signaling may be a key element in the modulation of GnRH neuron firing and LH release in male mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This astrocyte signaling may be a key element in the modulation of GnRH neuron firing and LH release in male mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "846ae675-4273-4a19-93c5-c56697a6496d",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C73",
+      "claim": "A substantial proportion of GnRH neuron somatic membrane is contacted by glia and this contact varies with reproductive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomically, a substantial proportion of GnRH neuron somatic membrane is contacted by glia and this contact varies with reproductive state (Witkin et al., 1991; Xiong et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Witkin et al., 1991 and Xiong et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "0dd613e7-bbd6-42a2-b888-0a28e71415b6",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C74",
+      "claim": "GnRH terminals are intimately connected with specialized tanycytes in the median eminence.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH terminals are intimately connected with specialized tanycytes in the median eminence; this interaction is dependent upon hormonal milieu in females (Prevot et al., 1999; King and Letourneau, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Prevot et al., 1999 and King and Letourneau, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "0c29eadc-0a6d-4222-b5dd-d924169c293f",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C75",
+      "claim": "The interaction between GnRH terminals and tanycytes in the median eminence is dependent upon hormonal milieu in females.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH terminals are intimately connected with specialized tanycytes in the median eminence; this interaction is dependent upon hormonal milieu in females (Prevot et al., 1999; King and Letourneau, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Prevot et al., 1999 and King and Letourneau, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "a425da33-ec11-431a-a3d2-8718ad045d02",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C76",
+      "claim": "Blocking central prostaglandin synthesis reduces gonadotropin release.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional interactions among GnRH neurons and glia have been postulated to be primarily mediated by PGE2, as blocking central prostaglandin synthesis reduces gonadotropin release (Ojeda et al., 1975), whereas injection of PGE2 into the third ventricle or implantation into the POA enhances LH release (Harms et al., 1973; Ojeda et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ojeda et al., 1975.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "9190d0cf-e67d-4fb3-ac76-e6c86c07c107",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C77",
+      "claim": "Injection of PGE2 into the third ventricle or implantation into the POA enhances LH release.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional interactions among GnRH neurons and glia have been postulated to be primarily mediated by PGE2, as blocking central prostaglandin synthesis reduces gonadotropin release (Ojeda et al., 1975), whereas injection of PGE2 into the third ventricle or implantation into the POA enhances LH release (Harms et al., 1973; Ojeda et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Harms et al., 1973 and Ojeda et al., 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "eb8e77f7-aa4a-4270-ac52-5282947d8494",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C78",
+      "claim": "PGE2 increases firing rate of GnRH neurons in both sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, PGE2 was shown to increase firing rate of GnRH neurons in both sexes (Clasadonte et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Clasadonte et al., 2011a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "aa61c946-f555-4183-9aec-03a11fe9c072",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C79",
+      "claim": "Activating Gq signaling within GFAP-expressing cells directly indicates a role for these cells within the POA in ultimately increasing LH release in males.",
+      "claim_type": "EXPLICIT",
+      "source": "By activating Gq signaling within GFAP-expressing cells directly, the present work extends these findings to the in vivo situation in which the entire hypothalamo-pituitary-gonadal axis can interact, and indicates a role for these cells within the POA in ultimately increasing LH release in males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "a200a486-7526-4c5c-9c3e-3ae9ceeae6c3",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C80",
+      "claim": "When astrocytes were activated with either DREADDs or by agonists of native GPCRs in other brain regions, the time course of increases in intracellular calcium are similar to changes in firing rate in the present study.",
+      "claim_type": "EXPLICIT",
+      "source": "In other brain regions, when astrocytes were activated with either DREADDs or by agonists of native GPCRs, the time course of increases in intracellular calcium are similar to changes in firing rate in the present study (Bonder and McCarthy, 2014; Kang et al., 2020; D'Ascenzo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bonder and McCarthy, 2014; Kang et al., 2020; D'Ascenzo et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "d89b75be-f120-42c1-98f4-10b082602ecf",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C81",
+      "claim": "The GnRH neuron response may be dependent upon the elevation of calcium in astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the GnRH neuron response may be dependent upon the elevation of calcium in astrocytes, and also that the signal conveyed to the GnRH neuron produces a prolonged response consistent with activation of a GPCR within the neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity of time courses between calcium increases in astrocytes and firing rate changes in GnRH neurons.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "886b4a02-323d-4236-b8dc-f6f964dc2ff3",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C82",
+      "claim": "The signal conveyed to the GnRH neuron produces a prolonged response consistent with activation of a GPCR within the neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the GnRH neuron response may be dependent upon the elevation of calcium in astrocytes, and also that the signal conveyed to the GnRH neuron produces a prolonged response consistent with activation of a GPCR within the neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed prolonged response in GnRH neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "4e426b39-8f9e-455d-a8e0-70d3c9cb6c78",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C83",
+      "claim": "Astroglia perform several functions within the central nervous system, including release of multiple substances that can serve as gliotransmitters.",
+      "claim_type": "EXPLICIT",
+      "source": "Astroglia perform several functions within the central nervous system, including release of multiple substances that can serve as gliotransmitters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "97340476-29f9-4f70-a8d0-47de77cfbab7",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C84",
+      "claim": "Astrocytes are able to communicate over broad areas, propagating elevations in intracellular calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Astrocytes are also able to communicate over broad areas, propagating elevations in intracellular calcium (Brancaccio et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Brancaccio et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "fa226b0c-f923-4cc2-b229-dd2fc20e3e9f",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C85",
+      "claim": "The propagation of signals to distal astrocytes may serve as a mechanism for coordinating activity among the soma of GnRH neurons, which are spread over a wide area from the diagonal band of Broca through the medial basal hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "This latter observation was key to sparking our interest in how astroglia may function in GnRH release, in particular we postulated that the propagation of signals to distal astrocytes may serve as a mechanism for coordinating activity among the soma of GnRH neurons, which are spread over a wide area from the diagonal band of Broca through the medial basal hypothalamus (Silverman, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis with a citation to Silverman, 1994 for the distribution of GnRH neurons.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "925308b0-2c98-48a0-9067-e0342493d579",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C86",
+      "claim": "GnRH neurons are spread over a wide area from the diagonal band of Broca through the medial basal hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "This latter observation was key to sparking our interest in how astroglia may function in GnRH release, in particular we postulated that the propagation of signals to distal astrocytes may serve as a mechanism for coordinating activity among the soma of GnRH neurons, which are spread over a wide area from the diagonal band of Broca through the medial basal hypothalamus (Silverman, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Silverman, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "b228584c-a9fe-4b0e-ae18-9bcbb884dbb4",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C87",
+      "claim": "Astroglia do not effectively propagate a signal capable of activating distal GnRH neurons in brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons outside the area of infection did not respond to bath application of CNO with an increase in firing rate, however, suggesting that astroglia do not effectively propagate a signal capable of activating distal GnRH neurons in brain slices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that GnRH neurons outside the infected area did not respond to CNO.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "fad26cf1-ff93-4b57-ad92-21a20a88211c",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C88",
+      "claim": "Most GnRH neurons were located inside the hit area, a number substantially above the relatively small number of these cells needed to support LH release.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, most GnRH neurons were located inside the hit area, a number substantially above the relatively small number of these cells needed to support LH release (Livne et al., 1992; Herbison et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study with citations supporting that a small number of GnRH neurons is needed for LH release.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "d0c4d802-04dd-44f7-9c03-70e80dba1cb9",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C89",
+      "claim": "A relatively small number of GnRH neurons is needed to support LH release.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, most GnRH neurons were located inside the hit area, a number substantially above the relatively small number of these cells needed to support LH release (Livne et al., 1992; Herbison et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Livne et al., 1992 and Herbison et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "91290557-13eb-4dd5-b36c-77b08aab52e0",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C90",
+      "claim": "The effects on GnRH neurons were independent of KNDy neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the activation of Gq signaling in GFAP-expressing cells within the arcuate nucleus was without effect on either LH release or firing rate of KNDy neurons, indicating that the effects on GnRH neurons were independent of this cell type that appears to play a key role in other aspects of GnRH neuron activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that Gq activation in the ARC did not affect LH release or KNDy neuron firing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "68001773-4408-47aa-b2a9-0bba78bfa80e",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C91",
+      "claim": "Treatment of KNDy neurons with PGE2 had no effect upon their firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for PGE2 in the putative astroglia-GnRH communication, treatment of KNDy neurons with PGE2 had no effect upon their firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "b834d341-9537-405a-93dd-87bd547d1e91",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C92",
+      "claim": "The lack of effect of astroglia Gq-signaling on KNDy neurons is not likely attributable to a lack of viral coverage as the majority of KNDy neurons were located within the infected area.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of effect of astroglia Gq-signaling on KNDy neurons is not likely attributable to a lack of viral coverage as the majority of KNDy neurons were located within the infected area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that most KNDy neurons were within the infected area.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "2c901adb-e7ae-4429-9929-412c645b4bd2",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C93",
+      "claim": "The area infected by virus includes tissue through which the processes of GnRH neurons pass en route to the median eminence.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the area infected by virus includes tissue through which the processes of GnRH neurons pass en route to the median eminence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "35c2eb90-83a3-4603-8cec-e492ec0e63d6",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C94",
+      "claim": "The region of the GnRH neuron axon may not be sensitive to mediators released by astroglia.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that this region of the GnRH neuron axon may not be sensitive to mediators released by astroglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that the infected area includes GnRH axons but did not affect LH release when in the ARC.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "52950113-69d0-434b-87f3-9a38b7e67158",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C95",
+      "claim": "Treatment of explants containing the median eminence along with the medial basal hypothalamic region with PGE2-induced GnRH release.",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest in this regard, treatment of explants containing the median eminence along with the medial basal hypothalamic region with PGE2-induced GnRH release (Ojeda et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ojeda et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "dc49eeb9-229b-4cd2-964f-6da6c3850b86",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C96",
+      "claim": "Arcuate hits typically did not extend into the median eminence itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Our arcuate hits typically did not extend into the median eminence itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "1aeceb74-b2e6-4621-95c0-393fd4f90601",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C97",
+      "claim": "It is possible that there is not sufficient propagation of astroglial signals effective in activating GnRH neuron terminals outside the local region of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "As was the case with GnRH neurons outside the hit, it is possible that there is not sufficient propagation of astroglial signals effective in activating GnRH neuron terminals outside the local region of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "c630fcb2-0db3-41dd-9a82-4ca5b5669549",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C98",
+      "claim": "It is possible that astrocytes exhibit regional variation in the gliotransmitters they produce.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that astrocytes exhibit regional variation in the gliotransmitters they produce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "f55c0892-b7a7-49f2-832e-d7c7bc37bfcb",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C99",
+      "claim": "Activation of Gq signaling in astrocytes would be postulated to induce release of whatever substances are downstream of that signaling pathway in the cells and not be limited to prostaglandin synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, however, activation of Gq signaling in these cells would be postulated to induce release of whatever substances are downstream of that signaling pathway in the cells and not be limited to prostaglandin synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of Gq signaling.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "93315e7f-ad2a-4c79-9dd9-d17ef38a2ea2",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C100",
+      "claim": "The effects of Gq signaling within astroglia are at least in part specialized to preoptic regions of GnRH neurons for the reproductive neuroendocrine system.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these observations suggest the effects of Gq signaling within astroglia are at least in part specialized to preoptic regions of GnRH neurons for the reproductive neuroendocrine system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observations that Gq activation in the POA but not ARC affected GnRH/LH.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "64f9f109-1365-40a6-91b3-89edc7f1da1c",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C101",
+      "claim": "Cycle stage may affect the response of GnRH neurons to astrocyte Gq signaling in females.",
+      "claim_type": "EXPLICIT",
+      "source": "There are several possible explanations for these observations. First, cycle stage may affect the response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations for the lack of effect in females.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "bd2db23e-aea0-4609-b6cf-b084fb99173e",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C102",
+      "claim": "Different gliotransmitters may be released upon astroglia activation in females, perhaps also dependent upon cycle stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, different gliotransmitters may be released upon astroglia activation in females, perhaps also dependent upon cycle stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations for the lack of effect in females.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "7a386953-4cc2-4179-937f-73829026c5d2",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C103",
+      "claim": "Over two-thirds of GnRH neurons increased firing rate in response to PGE2 regardless of sex or of cycle stage in females.",
+      "claim_type": "EXPLICIT",
+      "source": "In prior work, over two-thirds of GnRH neurons increased firing rate in response to PGE2 regardless of sex or of cycle stage in females (Clasadonte et al., 2011a), indicating responsiveness to this mediator is consistent among groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Clasadonte et al., 2011a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "29109418-ff2d-4b83-abfd-fae978adab23",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C104",
+      "claim": "Responsiveness of GnRH neurons to PGE2 is consistent among groups regardless of sex or cycle stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In prior work, over two-thirds of GnRH neurons increased firing rate in response to PGE2 regardless of sex or of cycle stage in females (Clasadonte et al., 2011a), indicating responsiveness to this mediator is consistent among groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "80f75397-e863-46a0-a09b-d5744b1fd48f",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C105",
+      "claim": "It is possible that the relevant astroglia regulating GnRH release in females are located in different brain regions, for example, more caudal within the anteroventral periventricular region known to be important for induction of the female-specific preovulatory GnRH and LH surge.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, it is possible that the relevant astroglia regulating GnRH release are located in different brain regions, for example, more caudal within the anteroventral periventricular region known to be important for induction of the female-specific preovulatory GnRH and LH surge (Sinchak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation with a citation to Sinchak et al., 2020 supporting the role of the anteroventral periventricular region.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "ba3a0639-0b44-43b4-937e-8a51e0fc09fe",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C106",
+      "claim": "The anteroventral periventricular region is known to be important for induction of the female-specific preovulatory GnRH and LH surge.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, it is possible that the relevant astroglia regulating GnRH release are located in different brain regions, for example, more caudal within the anteroventral periventricular region known to be important for induction of the female-specific preovulatory GnRH and LH surge (Sinchak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sinchak et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "a775a62c-7098-4170-8557-5d5dd004b38e",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C107",
+      "claim": "Activation of Gi signaling in GFAP-expressing cells had no effect on LH in castrated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the robust serum LH and GnRH neuron firing response to activation of Gq signaling in astroglia, activation of Gi signaling had no effect on LH in castrated mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data mentioned in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "6285665c-7283-4364-bd65-6f814a1c7c82",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C108",
+      "claim": "The effects of activating Gi signaling in GFAP-expressing cells vary with brain region.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of activating Gi signaling in GFAP-expressing cells vary with brain region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "0a65b088-12c5-4515-86ca-0c38886c1f4e",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C109",
+      "claim": "In the hippocampus, activation of Gi signaling in astrocytes resulted in increases in intracellular calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hippocampus, increases in intracellular calcium were reported (Durkee et al., 2019), whereas in the hypothalamic arcuate region, activation of Gq and Gi signaling has opposing effects on food intake (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Durkee et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "1e7b3d68-0df8-40c4-8923-143930759844",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C110",
+      "claim": "In the hypothalamic arcuate region, activation of Gq and Gi signaling has opposing effects on food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hippocampus, increases in intracellular calcium were reported (Durkee et al., 2019), whereas in the hypothalamic arcuate region, activation of Gq and Gi signaling has opposing effects on food intake (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "c8e4d61e-befa-499d-a7b6-334b7ac704b5",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C111",
+      "claim": "It is possible that activation of Gi signaling in astroglia in other brain regions will alter the output of GnRH and LH.",
+      "claim_type": "EXPLICIT",
+      "source": "As in females, interpretation of lack of effect must be limited to the experiments conducted, and it is possible that activation of Gi signaling in astroglia in other brain regions will alter the output of GnRH and LH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "14dac38c-aeec-4a2f-8df3-71249d0ad554",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C112",
+      "claim": "There are no reports of receptors acting via Gi-coupled receptors within the POA/hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there are no reports of receptors acting via Gi-coupled receptors within the POA/hypothalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "9af2008d-1faa-48a0-8604-ea6b0644cbba",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C113",
+      "claim": "The main mediator of the effects of activating Gq signaling in astroglia appeared to be PGE2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present work, the main mediator of the effects of activating Gq signaling in astroglia appeared to be PGE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "b403d065-c2e7-4e66-8a3d-c3afa26df545",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C114",
+      "claim": "PGE2 could be acting directly upon GnRH neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "GnRH neurons express both EP1 and EP2 receptors (Rage et al., 1997), thus PGE2 could be acting directly upon these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the expression of EP1 and EP2 receptors on GnRH neurons.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "0f5f39d7-a3fc-4865-8b93-7737e981c0c6",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C115",
+      "claim": "It is possible that other cell types also produce PGE2.",
+      "claim_type": "EXPLICIT",
+      "source": "There are several things we cannot rule out from our studies. First, while astroglia appear to be the primary source of PGE2 in the hypothalamus, it is possible that other cell types also produce this signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "ec9babd1-bea7-4a2a-a71c-3168d8fbf207",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C116",
+      "claim": "It is possible that mediators other than PGE2 are produced by astroglia in response to activating Gq signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it is possible that mediators other than PGE2 are produced by astroglia in response to activating Gq signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "717d264b-979b-4a8a-b6d7-097c887589fd",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C117",
+      "claim": "Astrocytes have been shown to release glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, in addition to prostaglandins, these cells have been shown to release other mediators including glutamate (Fellin et al., 2004; Slezak et al., 2012; Corkrum et al., 2019) and ATP (Lalo et al., 2014; Guthrie et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fellin et al., 2004; Slezak et al., 2012; Corkrum et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "3da7131d-bb46-4f37-ad5c-83102477c2e3",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C118",
+      "claim": "Astrocytes have been shown to release ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, in addition to prostaglandins, these cells have been shown to release other mediators including glutamate (Fellin et al., 2004; Slezak et al., 2012; Corkrum et al., 2019) and ATP (Lalo et al., 2014; Guthrie et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lalo et al., 2014; Guthrie et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "27e4d6f1-6411-4c88-bc8e-6804d81adc38",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C119",
+      "claim": "Mediators released by astrocytes may act via intermediate cell types within the brain slice to bring about effects on GnRH neuron firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, any of these mediators may act via intermediate cell types within the brain slice to bring about effects on GnRH neuron firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "23db13ab-e1a3-4a5c-93a3-4ad0421d4a9a",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C120",
+      "claim": "Activation of group 1 metabotropic glutamate receptors induces release of transforming growth factor alpha and neuregulins, which activate ErbB receptors on astroglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of group 1 metabotropic glutamate receptors induces release of transforming growth factor alpha and neuregulins, which activate ErbB receptors on astroglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "9e6c58f8-97ab-42cd-9fb8-3b2379800215",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C121",
+      "claim": "Activation of ErbB receptors on astroglia leads to activation of cyclooxygenase 2, a rate limiting step in the synthesis of PGE2 from arachidonic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation leads to activation of cyclooxygenase 2, a rate limiting step in the synthesis of PGE2 from arachidonic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "318b7078-4911-447f-b845-7c037e4f1b4f",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C122",
+      "claim": "An increase in intracellular calcium induced by activation of Gq signaling via the MrgA1 receptor is associated with the release of PGE2 in astrocytes from organotypic cultures of mouse cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Also of interest, an increase in intracellular calcium induced by activation of Gq signaling via the MrgA1 receptor is associated with the release of PGE2 in astrocytes from organotypic cultures of mouse cerebellum (Forsberg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Forsberg et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "361e170e-56d7-4259-8b8b-b9f7b5f17f57",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C123",
+      "claim": "There is a link between calcium elevation in astrocytes and PGE2 release.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our study, this suggests a link between calcium elevation in astrocytes and PGE2 release that remains to be further delineated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited study and the present findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "f369ac46-a3ed-4997-9967-11f63e648b57",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C124",
+      "claim": "There are several interesting substances active within the reproductive neuroendocrine system that act via Gq-coupled receptors, including neurokinin B, kisspeptin, and GnRH itself.",
+      "claim_type": "EXPLICIT",
+      "source": "While pure speculation, there are several interesting substances active within the reproductive neuroendocrine system that act via Gq-coupled receptors, including neurokinin B, kisspeptin, and GnRH itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible endogenous activators of Gq signaling in astrocytes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "479643f4-e7f8-407b-a3d9-34a3fd1fa47b",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C125",
+      "claim": "Activation of Gq signaling in astrocytes can increase GnRH neuron activity and LH release in a sex-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the present work defines that activation of Gq signaling in astrocytes can increase GnRH neuron activity and LH release in a sex-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "bc7162ed-39e7-4e45-9fbf-0c2af07f1c34",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C126",
+      "claim": "Activation of this pathway may activate the reproductive neuroendocrine system independent of arcuate kisspeptin neurons or may sculpt the response to that or other critical inputs to GnRH neurons to affect ultimately reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of this pathway may activate this system independent of arcuate kisspeptin neurons or may sculpt the response to that or other critical inputs to GnRH neurons to affect ultimately reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "64a04247-3f3d-4446-a9e4-60fe5c4b77ed",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C127",
+      "claim": "GFAP is mainly expressed by astrocytes in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "GFAP is mainly expressed by astrocytes in the central nervous system (Eng, 1985), thus this approach allowed temporal and spatial control of G-protein-coupled receptor (GPCR) signaling in astrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Eng, 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "734e37c2-791a-45c7-b145-d1ed29fcb842",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C128",
+      "claim": "Activating signaling in GFAP-expressing cells can induce GnRH neuron activity and LH release in a sex-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that activating signaling in GFAP-expressing cells can induce GnRH neuron activity and LH release in a sex-dependent manner, but does not alter KNDy neuron activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "b2195369-f0e7-42fe-9d8d-786b31a9e1e3",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C129",
+      "claim": "Activating signaling in GFAP-expressing cells does not alter KNDy neuron activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that activating signaling in GFAP-expressing cells can induce GnRH neuron activity and LH release in a sex-dependent manner, but does not alter KNDy neuron activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "2ccf86f1-0a79-4f8a-988d-f86195627c5f",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "claim_id": "C130",
+      "claim": "Central elements other than KNDy neurons can initiate GnRH release.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that central elements other than KNDy neurons can initiate GnRH release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "92db4a73-b8d0-43c9-aed2-66480206c9bf",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AAV5 with GFAP promoter-driven constructs effectively targets astrocytes in the POA and ARC, with over 90% of infected cells colocalizing with the astrocyte marker S100\u03b2 and minimal neuronal infection. Approximately 73% of GnRH neurons and 90% of kisspeptin neurons were surrounded by mCherry-expressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C43 provide converging evidence from immunohistochemistry showing high specificity of viral targeting to astrocytes (>90% S100\u03b2 colocalization), appropriate coverage of target neuron populations, and minimal off-target neuronal infection. The quantitative data and imaging support the technical validity of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "6f67fd25-d27a-4f03-8741-f7b50fd7d876",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Activating Gq signaling in GFAP-expressing cells in the POA, but not the ARC, rapidly increases LH release in gonad-intact male mice. CNO administration induced an abrupt LH increase within 10 minutes in AAV-Gq POA-injected mice but had no effect in control virus or ARC-targeted mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C44-C47 are supported by in vivo LH measurements with appropriate controls (vehicle, AAV-mCherry) and statistical analysis (two-way repeated-measures ANOVA, p<0.0001). The regional specificity (POA vs ARC) is clearly demonstrated with both unilateral and bilateral ARC injections showing no effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "e75b7beb-3720-44e3-afff-cf2d9956e04a",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Activating Gq signaling in GFAP-expressing cells in the POA increases GnRH neuron firing rate in vitro, but only for neurons within the infected region. GnRH neurons outside the mCherry-defined infected area did not respond to CNO, suggesting limited propagation of astrocyte signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C49-C52 are supported by extracellular recordings with appropriate controls and statistical analysis (two-way repeated-measures ANOVA, p=0.0303). The spatial specificity is demonstrated by comparing neurons inside vs outside the infected region, providing insight into signal propagation limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "dd2d7632-45e2-4b1c-a9e9-a0de28128680",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Activating Gq signaling in GFAP-expressing cells in the ARC does not affect KNDy neuron firing rate or LH release, indicating that the effects on GnRH neurons are independent of KNDy neurons. PGE2 treatment also had no effect on KNDy neuron firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, C70, C90-C92, C129 are supported by electrophysiology data showing no CNO effect on Tac2-GFP neurons and in vivo data showing no LH response to ARC Gq activation. The lack of effect is unlikely due to insufficient viral coverage as most KNDy neurons were within the infected area. This demonstrates independence from the KNDy neuron pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "eaca4174-1c40-4ea1-8c07-f8310920e744",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The mechanism by which Gq activation in POA astrocytes increases GnRH neuron firing is at least partially dependent on PGE2 signaling through EP1/EP2 receptors. dmPGE2 increased GnRH but not KNDy neuron firing, and EP1/EP2 antagonists blocked both dmPGE2 and CNO-induced increases in GnRH neuron firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C58-C64, C113 are supported by pharmacological experiments showing dmPGE2 increases GnRH firing (p<0.0001), EP1/EP2 antagonists block this effect, and antagonists blunt CNO-induced firing increases in AAV-Gq mice. The cell-type specificity (GnRH responsive, KNDy not responsive) strengthens the conclusion. However, the mechanism is only 'partially' dependent as antagonists 'blunted' but may not have completely blocked the response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "1f0113ed-1f4b-4297-970d-4143caf0d097",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Activating Gq signaling in GFAP-expressing cells in the POA did not increase GnRH neuron firing in diestrous female mice, suggesting a potential sex difference in astrocyte regulation of GnRH neurons. However, all in vivo experiments showed neuronal infection, and recordings were performed at different times of day than male experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C68, C71 show lack of effect in females, but critical confounds limit interpretation: (1) all in vivo female experiments had neuronal infection and were excluded, (2) female recordings were done in afternoon vs morning for males, introducing a circadian confound, (3) only diestrus stage was tested. The authors appropriately acknowledge these limitations (C68, C101-C102, C105). Additional experiments controlling for these variables are needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "8ebdd1ab-9b0f-4761-a3ed-2c81df732d65",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Activating Gi signaling in GFAP-expressing cells in the POA had no effect on mean LH levels or LH pulse frequency in castrated male mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C107 are supported by in vivo LH measurements with statistical analysis showing no significant effect (p=0.2971 for virus effect, p=0.0631 for CNO effect). However, the sample size was small (n=3/group) and described as preliminary, limiting confidence. The authors appropriately did not pursue further Gi experiments based on these negative results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "661551a9-8011-44e0-8f5b-04a52b36baa3",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Astrocytes can activate GnRH neuron firing and LH release in a manner independent of KNDy neurons, representing a novel pathway for regulating the reproductive neuroendocrine system. This pathway is region-specific to the POA and may be sexually differentiated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C69, C72, C79, C100, C125-C126, C128, C130 represent the main conclusions synthesizing the experimental findings. These are well-supported by the convergence of in vivo LH data (C8, C46-C47), in vitro electrophysiology (C9, C50-C51), lack of ARC/KNDy effects (C47, C53, C70), and mechanistic data (C10, C63-C64). The regional and pathway specificity is clearly demonstrated, though sex differences remain uncertain due to experimental limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "94be8a0a-e236-42b8-9ff9-f1b867752dba",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Astrocytes do not effectively propagate signals capable of activating distal GnRH neurons in brain slices, as neurons outside the infected region did not respond to CNO. The infected area included GnRH neuron processes but not the median eminence, and most GnRH neurons were within the hit area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88, C93-C94, C96-C97 are supported by the observation that GnRH neurons outside the mCherry-defined region did not respond to CNO (C51), despite most neurons being within the hit (C88). This addresses the initial hypothesis about astrocyte signal propagation (C85) and provides important mechanistic insight, though C97 appropriately notes this is speculative regarding terminal activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    },
+    {
+      "id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d",
+      "content_id": "f6b873aa-650f-4b21-9199-986312428a05",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge establishing the reproductive neuroendocrine axis, the role of GnRH and KNDy neurons, astrocyte-neuron interactions, and PGE2 as a gliotransmitter that can modulate GnRH neuron activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C32 represent established knowledge from the literature, appropriately cited throughout. These provide the scientific context and rationale for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:11:46.267580Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "508b3e14-9345-48e6-afcb-41d8f8b3011f",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "cf400683-4666-42b3-be8f-fbef44739c8d",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "771a44dc-4b6f-41d5-b76c-c37dc828bbb2",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "e8197c01-ba59-4def-9284-b2496c4a6d1e",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "238ff8c4-879a-4124-bcd2-afa01752c3cf",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "81f1456d-aa11-43fd-bc3b-918552f01ffe",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "61a17d32-d21a-4945-bab3-b978eaad3e40",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "c7c3cab5-4356-49e5-9ed0-36dbdd740793",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "838bd806-4cdb-4814-b84a-73572fd5d25a",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "30fe8d19-a3f8-4af2-a2f1-78efe928e6da",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "df02cdb5-798f-49cc-a0c1-c61406942a23",
+      "result_id": "92db4a73-b8d0-43c9-aed2-66480206c9bf"
+    },
+    {
+      "claim_id": "ca5071b2-6d6e-487a-9ae1-9ce25078813d",
+      "result_id": "6f67fd25-d27a-4f03-8741-f7b50fd7d876"
+    },
+    {
+      "claim_id": "baa6b3d2-33fa-44c9-8c07-5226bc463ad2",
+      "result_id": "6f67fd25-d27a-4f03-8741-f7b50fd7d876"
+    },
+    {
+      "claim_id": "83c7abf6-e9b2-4dc9-b856-06b5db41afa1",
+      "result_id": "6f67fd25-d27a-4f03-8741-f7b50fd7d876"
+    },
+    {
+      "claim_id": "596b4ae4-8be4-4066-83c9-4d69b47b51cd",
+      "result_id": "6f67fd25-d27a-4f03-8741-f7b50fd7d876"
+    },
+    {
+      "claim_id": "87fe6220-4185-4420-b098-8d40499b05b5",
+      "result_id": "6f67fd25-d27a-4f03-8741-f7b50fd7d876"
+    },
+    {
+      "claim_id": "d95fa6a8-4b32-4f02-b3c8-f8473f17f4d9",
+      "result_id": "e75b7beb-3720-44e3-afff-cf2d9956e04a"
+    },
+    {
+      "claim_id": "f53b2792-ebf1-4f0b-9522-3fdaeee8f290",
+      "result_id": "e75b7beb-3720-44e3-afff-cf2d9956e04a"
+    },
+    {
+      "claim_id": "76b48182-f672-44a6-bc7b-aeb7d4a2f66d",
+      "result_id": "e75b7beb-3720-44e3-afff-cf2d9956e04a"
+    },
+    {
+      "claim_id": "6890e37d-247a-4bd1-a314-aca5ccbfe305",
+      "result_id": "e75b7beb-3720-44e3-afff-cf2d9956e04a"
+    },
+    {
+      "claim_id": "6ff1d169-8cf1-42cb-9b80-d06c6902015e",
+      "result_id": "e75b7beb-3720-44e3-afff-cf2d9956e04a"
+    },
+    {
+      "claim_id": "6663c93f-3172-4758-966f-691f4ed40af3",
+      "result_id": "dd2d7632-45e2-4b1c-a9e9-a0de28128680"
+    },
+    {
+      "claim_id": "c7cf9eda-7c13-4fcc-89bd-c186d490ac59",
+      "result_id": "dd2d7632-45e2-4b1c-a9e9-a0de28128680"
+    },
+    {
+      "claim_id": "ba3a0b03-3938-42cd-bef4-a028cdb6d862",
+      "result_id": "dd2d7632-45e2-4b1c-a9e9-a0de28128680"
+    },
+    {
+      "claim_id": "91290557-13eb-4dd5-b36c-77b08aab52e0",
+      "result_id": "dd2d7632-45e2-4b1c-a9e9-a0de28128680"
+    },
+    {
+      "claim_id": "68001773-4408-47aa-b2a9-0bba78bfa80e",
+      "result_id": "dd2d7632-45e2-4b1c-a9e9-a0de28128680"
+    },
+    {
+      "claim_id": "b834d341-9537-405a-93dd-87bd547d1e91",
+      "result_id": "dd2d7632-45e2-4b1c-a9e9-a0de28128680"
+    },
+    {
+      "claim_id": "b2195369-f0e7-42fe-9d8d-786b31a9e1e3",
+      "result_id": "dd2d7632-45e2-4b1c-a9e9-a0de28128680"
+    },
+    {
+      "claim_id": "8491efdc-eb36-4fa7-b00d-2f591f9c5fbf",
+      "result_id": "eaca4174-1c40-4ea1-8c07-f8310920e744"
+    },
+    {
+      "claim_id": "9b8bdddb-cdc8-4465-b466-6ef683116d87",
+      "result_id": "eaca4174-1c40-4ea1-8c07-f8310920e744"
+    },
+    {
+      "claim_id": "df715317-80fb-4dc9-9153-8fb530c36992",
+      "result_id": "eaca4174-1c40-4ea1-8c07-f8310920e744"
+    },
+    {
+      "claim_id": "f6489e8c-8dab-458a-9bde-9bd202c55d9a",
+      "result_id": "eaca4174-1c40-4ea1-8c07-f8310920e744"
+    },
+    {
+      "claim_id": "36e0cf80-6359-4202-9d0f-b122cf8ff9f6",
+      "result_id": "eaca4174-1c40-4ea1-8c07-f8310920e744"
+    },
+    {
+      "claim_id": "dcb20db5-2f03-4c1a-8607-43d6e64ea992",
+      "result_id": "eaca4174-1c40-4ea1-8c07-f8310920e744"
+    },
+    {
+      "claim_id": "991f6084-8d61-4794-8bae-6470196d7b5f",
+      "result_id": "eaca4174-1c40-4ea1-8c07-f8310920e744"
+    },
+    {
+      "claim_id": "ed9c722a-2b2e-4239-ab52-346abf078d7f",
+      "result_id": "eaca4174-1c40-4ea1-8c07-f8310920e744"
+    },
+    {
+      "claim_id": "9af2008d-1faa-48a0-8604-ea6b0644cbba",
+      "result_id": "eaca4174-1c40-4ea1-8c07-f8310920e744"
+    },
+    {
+      "claim_id": "55c1a194-8648-4868-90fb-ae21b9877280",
+      "result_id": "1f0113ed-1f4b-4297-970d-4143caf0d097"
+    },
+    {
+      "claim_id": "601a245d-9e37-44c0-9805-fe9e35272a47",
+      "result_id": "1f0113ed-1f4b-4297-970d-4143caf0d097"
+    },
+    {
+      "claim_id": "98d7f569-6b5a-4a38-a63f-2e0e3fe342e5",
+      "result_id": "1f0113ed-1f4b-4297-970d-4143caf0d097"
+    },
+    {
+      "claim_id": "49c00a4c-57e3-48f6-bff3-d77f85aca42d",
+      "result_id": "1f0113ed-1f4b-4297-970d-4143caf0d097"
+    },
+    {
+      "claim_id": "f94bd4d8-3af0-4e18-892b-fedb45963047",
+      "result_id": "1f0113ed-1f4b-4297-970d-4143caf0d097"
+    },
+    {
+      "claim_id": "2676c145-179f-4d22-9dfc-169e5df9d895",
+      "result_id": "8ebdd1ab-9b0f-4761-a3ed-2c81df732d65"
+    },
+    {
+      "claim_id": "a775a62c-7098-4170-8557-5d5dd004b38e",
+      "result_id": "8ebdd1ab-9b0f-4761-a3ed-2c81df732d65"
+    },
+    {
+      "claim_id": "90f4dd88-9d9f-4bbe-843f-9bc1b42abd1e",
+      "result_id": "661551a9-8011-44e0-8f5b-04a52b36baa3"
+    },
+    {
+      "claim_id": "3e51cdb2-e568-40e9-b323-f6bf7e1986cb",
+      "result_id": "661551a9-8011-44e0-8f5b-04a52b36baa3"
+    },
+    {
+      "claim_id": "03750530-490b-4998-b970-d086584da795",
+      "result_id": "661551a9-8011-44e0-8f5b-04a52b36baa3"
+    },
+    {
+      "claim_id": "aa61c946-f555-4183-9aec-03a11fe9c072",
+      "result_id": "661551a9-8011-44e0-8f5b-04a52b36baa3"
+    },
+    {
+      "claim_id": "93315e7f-ad2a-4c79-9dd9-d17ef38a2ea2",
+      "result_id": "661551a9-8011-44e0-8f5b-04a52b36baa3"
+    },
+    {
+      "claim_id": "479643f4-e7f8-407b-a3d9-34a3fd1fa47b",
+      "result_id": "661551a9-8011-44e0-8f5b-04a52b36baa3"
+    },
+    {
+      "claim_id": "bc7162ed-39e7-4e45-9fbf-0c2af07f1c34",
+      "result_id": "661551a9-8011-44e0-8f5b-04a52b36baa3"
+    },
+    {
+      "claim_id": "734e37c2-791a-45c7-b145-d1ed29fcb842",
+      "result_id": "661551a9-8011-44e0-8f5b-04a52b36baa3"
+    },
+    {
+      "claim_id": "2ccf86f1-0a79-4f8a-988d-f86195627c5f",
+      "result_id": "661551a9-8011-44e0-8f5b-04a52b36baa3"
+    },
+    {
+      "claim_id": "b228584c-a9fe-4b0e-ae18-9bcbb884dbb4",
+      "result_id": "94be8a0a-e236-42b8-9ff9-f1b867752dba"
+    },
+    {
+      "claim_id": "fad26cf1-ff93-4b57-ad92-21a20a88211c",
+      "result_id": "94be8a0a-e236-42b8-9ff9-f1b867752dba"
+    },
+    {
+      "claim_id": "2c901adb-e7ae-4429-9929-412c645b4bd2",
+      "result_id": "94be8a0a-e236-42b8-9ff9-f1b867752dba"
+    },
+    {
+      "claim_id": "35c2eb90-83a3-4603-8cec-e492ec0e63d6",
+      "result_id": "94be8a0a-e236-42b8-9ff9-f1b867752dba"
+    },
+    {
+      "claim_id": "dc49eeb9-229b-4cd2-964f-6da6c3850b86",
+      "result_id": "94be8a0a-e236-42b8-9ff9-f1b867752dba"
+    },
+    {
+      "claim_id": "1aeceb74-b2e6-4621-95c0-393fd4f90601",
+      "result_id": "94be8a0a-e236-42b8-9ff9-f1b867752dba"
+    },
+    {
+      "claim_id": "65b44223-fc9d-4906-91bb-a028d6ff99c3",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "fe047c31-b92f-44a8-a791-a9b2182f9225",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "b092ba28-7372-4acf-9167-59823b987db6",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "8ac155a3-885a-4cd0-80d5-ad111bc35771",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "bfa3cfee-413d-4e54-9fb2-529e00404be4",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "e5d4b538-f4c8-4ef1-8717-257b7262404c",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "eddfca69-2a06-48fd-8b2c-882bb000877a",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "5ec538f5-571a-4a05-805f-345713fbbf8d",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "f999d1f9-8443-4ee2-96c7-9b6892174bad",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "8acf0550-d952-4f3b-8397-88368b58a0de",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "cb7c9f20-557a-4461-8a19-d36a7c1969c4",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "da858e35-cc4c-4db7-a922-d76c098229c4",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "aee58f90-1266-4035-872b-f4563b76e0be",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "b2ec4a78-221b-4126-be00-edf24058801c",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "40e765d4-f3e1-4d57-8f53-ca1b5f0f0479",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "5da42782-75f1-4b93-8e56-57454e13185a",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "6e3fb780-63fc-4cf1-9f67-ff0ad78459f0",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "a8dbd483-1f6b-4747-a7f1-d1a9f5a6d215",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "1b88b3e4-4f33-4c2a-8922-9e06e94a2a87",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "648d7da2-ce81-4bcc-a508-09d16436a3dc",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "ba96f0ea-3ec4-4a70-b7e5-19785fe8835d",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "0eeb8d41-88d6-43de-bb81-fc3f32f6f070",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "14f854e2-57cb-494a-8d61-feae18ad9189",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "b0b92220-7834-46e8-99fb-5361a20ac6b1",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "c676c609-8577-4641-ada0-4fa781041973",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "a86154d2-9d81-44b7-8049-cd5bf1190fb5",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "184c3763-131d-4f1b-bc9b-dd6112a58221",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    },
+    {
+      "claim_id": "ecde42be-2772-405e-b582-7654e17fc248",
+      "result_id": "1e41b6eb-97a7-4616-9bef-61956f6c1c3d"
+    }
+  ],
+  "comparisons": []
+}

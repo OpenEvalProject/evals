@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C47"
+    ],
+    "result": "Free PLN in lipid bilayers exhibits a topological equilibrium between two distinct orientations with tilt angles of 37.5\u00b10.7\u00b0 (major, ~70%) and 34.8\u00b10.5\u00b0 (minor, ~30%), where the minor state overlaps with phosphorylated PLN (pPLN). Phosphorylation shifts this equilibrium toward the less populated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide direct NMR measurements showing two populations in free PLN with quantified tilt angles and populations. The overlap of the minor population with pPLN (C43) and the interpretation of topological equilibrium (C44) are well-supported by the spectroscopic data in Figure 1B. Claim C47 logically follows from the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Upon binding SERCA in the E2 state, PLN undergoes statistically significant topological changes: a tilt angle decrease of -4.3\u00b11.4\u00b0 (p=4.3\u00d710\u207b\u00b9\u2075) and rotation change of -8\u00b18\u00b0 (p=0.00027). Phosphorylated PLN bound to SERCA shows similar adjustments: -3.4\u00b11.2\u00b0 tilt (p=2.9\u00d710\u207b\u00b9\u2074) and -4\u00b16\u00b0 rotation (p=0.0013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 report precise NMR-derived topological parameters with statistical significance values. The measurements are internally consistent and supported by the PISA fitting methodology described in the methods. The p-values indicate high confidence in the observed changes, though the rotation changes have larger uncertainties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C83"
+    ],
+    "result": "Phosphorylation and SERCA binding cause dramatic broadening of domain Ib resonances (around 140 ppm), attributed to structural disorder and unwinding of the juxtamembrane region. This domain Ib dynamics transduces communication between cytoplasmic and transmembrane regions. Phosphorylation at Ser16 restores most resonance intensities except at the upper binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 and C83 describe consistent NMR spectral changes supported by Figure 1E. The interpretation that domain Ib mediates allosteric communication (C56) is reasonable given the spectral evidence and is supported by prior literature (C54-C55). The selective restoration of resonances upon phosphorylation (C57) is directly observable in the spectra.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C67",
+      "C68",
+      "C76",
+      "C77",
+      "C85"
+    ],
+    "result": "Phosphorylation causes reorganization rather than dissociation of the SERCA-PLN complex, involving rearrangement of intramembrane contacts, reconfiguration of electrostatic interactions near Ser16, and disruption of specific inhibitory contacts (Gln23-Leu321/Arg325, Lys27-Phe809, Asn30-Trp107) while retaining domain II contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C67-C68, C76-C77, and C85 are supported by both NMR data (showing reorganization rather than dissociation) and MD simulations (identifying specific contact changes). The interpretation is consistent with prior spectroscopic studies cited in C58. The MD simulations provide molecular-level detail for the observed NMR changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "MD simulations reveal that SERCA/PLN spans 4 distinct conformational clusters while SERCA/pPLN spans 8 clusters. Phosphorylation leads to additional open states (clusters 5-8) through pSer16 interaction with Arg604, weakening interdomain hydrogen bonds and enabling salt bridges with SERCA-Arg460 and SERCA-Glu392.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C65 describe MD simulation results showing increased conformational heterogeneity upon phosphorylation. While the computational analysis appears rigorous (PCA, clustering), the authors explicitly state 'our experimental data cannot verify these conformational landscapes of SERCA' (C66). The MD predictions require experimental validation, particularly for the specific open states and their functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "MD simulations identify persistent electrostatic interactions in both complexes (PLN-Glu2/SERCA-Lys365, PLN-Glu19/SERCA-Lys328) and phosphorylation-specific changes: strong pSer16 interactions with SERCA-Arg604/Lys605, intramolecular salt bridges with PLN arginines causing domain Ia compaction, and loss of lipid headgroup interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 describe specific molecular interactions from MD simulations. The intramolecular salt bridges (C74-C75) are consistent with prior fluorescence data cited. The loss of lipid interactions (C73) aligns with prior work on membrane detachment and reduced inhibition. While computational, these predictions are consistent with multiple experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "Correlation analysis of MD trajectories shows that PLN binding creates dense correlated motions between PLN's TM region and SERCA's binding groove and Ca\u00b2\u207a-binding helices, potentially reducing Ca\u00b2\u207a affinity. Phosphorylation disrupts these correlations, uncoupling PLN from SERCA dynamics and removing structural hindrance to augment Ca\u00b2\u207a transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90, C92-C93 describe correlation analysis from MD simulations showing mechanistic coupling. The dense correlation network in SERCA/PLN (C86-C87) versus sparse network in SERCA/pPLN (C89-C90) provides a molecular explanation for inhibition relief. The interpretation that uncoupling removes structural hindrance (C93) is supported by Figure 4 and consistent with the overall experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Ca\u00b2\u207a binding to SERCA causes minimal topological changes to PLN (\u03b8=32.9\u00b11.4\u00b0, p=0.29) but induces binding interface rearrangement. For pPLN, Ca\u00b2\u207a causes small but significant changes (\u0394\u03b8=-1.8\u00b11.3\u00b0, \u0394\u03c1=-10\u00b17\u00b0, p<10\u207b\u2076). Loss of inhibition does not require extensive PLN domain II reconfiguration or complex dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 report NMR measurements of Ca\u00b2\u207a effects with appropriate statistical analysis. The finding that Ca\u00b2\u207a causes interface rearrangement without major topological changes (C94-C95) is supported by spectral evidence. The conclusion that extensive reconfiguration is not required (C97) is consistent with both E2 and E1 state data, though limited by lack of E1 state MD models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "OS-ssNMR reveals topological equilibrium in PLN's TM helix shifted by phosphorylation, providing direct evidence of allosteric coupling between regulatory and inhibitory regions. Structural disorder of domain Ib signals slight topological changes sufficient to relieve inhibition through allosteric effects propagated to Ca\u00b2\u207a-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 summarize the main findings integrating NMR and MD data. The topological equilibrium (C98) is directly demonstrated by NMR. The allosteric coupling (C99) is supported by both spectroscopic evidence and MD simulations. The sufficiency of slight topological changes (C100, C104) is demonstrated by the quantitative measurements showing small but significant angle changes correlating with functional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C116"
+    ],
+    "result": "Phosphorylation of PLN's cytoplasmic domain signals disruption of inhibitory contacts at the transmembrane interface, propagated to SERCA's active site to augment Ca\u00b2\u207a transport. ssNMR-driven dynamics calculations show topological and structural changes modify interface interactions and propagate to distal Ca\u00b2\u207a-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C116 represent the central mechanistic conclusion. The disruption of inhibitory contacts is demonstrated by NMR (spectral changes) and MD simulations (specific contact analysis). The propagation to the active site is supported by correlation analysis (C86-C90) and functional assays (Figure 7C). The integration of NMR restraints with MD provides strong support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The structural and dynamic changes detected by OS-ssNMR resolve the controversy between subunit and dissociative models of SERCA regulation. The dissociative model (complete dissociation upon activation) is not supported by spectroscopic evidence. The subunit model agrees with spectroscopy but does not explain reversal of inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 address a longstanding mechanistic debate. The evidence against the dissociative model (C112-C113) is strong, supported by multiple spectroscopic techniques cited. The limitation of the subunit model (C115) is acknowledged. The current work provides a refined mechanism showing reorganization without dissociation, supported by both NMR and MD data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "In the E2 state, PLN's TM region remains locked in SERCA's binding groove. Ca\u00b2\u207a increase drives SERCA to E1 and reconfigures the interface without significant PLN topological changes. Phosphorylation causes detectable topological changes at both low and high Ca\u00b2\u207a, shifting equilibrium to the non-inhibitory B state and increasing Ca\u00b2\u207a transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 integrate findings across different conditions (E1/E2, \u00b1phosphorylation, \u00b1Ca\u00b2\u207a). The differential effects of Ca\u00b2\u207a versus phosphorylation are well-documented by the NMR measurements (C94-C96). The shift to the B state (C120-C121) is supported by prior work cited and consistent with the current spectroscopic observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C123",
+      "C124"
+    ],
+    "result": "PLN experiences significant tilt angle changes (28.6-37.5\u00b0) depending on conformational and enzymatic states. These dynamic and topological transitions provide a mechanism to modulate transmembrane protein-protein interactions, tunable by posttranslational modifications. This may explain how bitopic miniproteins fulfill diverse regulatory roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110, C123-C124 generalize the findings to broader biological principles. The range of tilt angles (C109) is well-documented by the NMR measurements. The proposed general mechanism (C110, C123-C124) is a reasonable extrapolation supported by the PLN data and consistent with known biology of other miniproteins, though direct evidence for other systems is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "The inhibitory activity of PLN against SERCA and relieved inhibition of pPLN in DMPC/POPC (4:1) lipid bilayers was confirmed by coupled enzyme assay, validating the functional relevance of the structural studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 provides critical functional validation. Figure 7C shows clear differences in pKCa values between SERCA alone, SERCA+PLN, and SERCA+pPLN with appropriate statistical analysis (p<0.05). This confirms that the lipid composition used for NMR studies maintains physiologically relevant PLN function, validating the structural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establishing PLN as a cardiac Ca\u00b2\u207a-transport regulator that binds SERCA, maintains its activity within a physiological window, and is relieved by \u03b2-adrenergic stimulation and PKA phosphorylation at Ser16. PLN mutations are linked to heart disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C12-C23 provide established background knowledge supported by appropriate citations. These are well-accepted facts in the field that provide context for the current study. The citations appear appropriate and the claims are consistent with the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior to this study, the inhibitory mechanism of PLN and its reversal upon phosphorylation or Ca\u00b2\u207a increase were unknown. Previous structural techniques offered incomplete mechanistic insights, as the TM domain does not undergo significant secondary structure changes upon phosphorylation or SERCA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 accurately describe the knowledge gap motivating this study. The citations support the limitations of prior structural approaches. The observation that secondary structure is preserved (C26) is important context for why topological changes (rather than structural changes) are the focus of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Prior structural characterization of PLN: L-shaped conformation with membrane-adsorbed domain Ia connected to transmembrane domains Ib and II; pentameric storage form that de-oligomerizes to active monomers; cytoplasmic region undergoes T/R state transitions promoted by phosphorylation; domain Ia transitions to bound B state upon SERCA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 summarize prior structural knowledge of PLN with appropriate citations. These established findings provide the structural framework for interpreting the current topological measurements. The T/R/B state model (C32-C35) is from prior work by the same group and is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Distance measurements show the inhibitory TM region is ~45 \u00c5 from Ser16 and ~20 \u00c5 from SERCA's Ca\u00b2\u207a-binding sites, leading to speculation that phosphorylation and Ca\u00b2\u207a binding must transmit conformational and topological changes across the membrane to allosterically modulate SERCA function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 report distance measurements that motivate the hypothesis in C38. The distances are reasonable based on structural models. The speculation (C38) is explicitly labeled as such and provides the rationale for the experimental approach. The subsequent results validate this speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C91"
+    ],
+    "result": "Prior work showed PLN phosphorylation shifts conformational equilibrium toward the R state, releasing domain Ia interactions with lipid membranes and increasing electrostatic interactions with SERCA's cytoplasmic domain (R to B state transition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C91 cite prior work from the same group establishing the R state shift and membrane detachment upon phosphorylation. These findings provide context for the current topological measurements and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "For pPLN, disrupted domain Ib-SERCA interactions are substituted by lipid headgroup interactions, suggesting the membrane may play a localized role in modulating inhibition. Hydrophobic substitutions in domain Ib create super-inhibitory mutants with stable helical structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe MD observations with appropriate speculation about membrane involvement. Claim C79 is explicitly speculative. Claims C80-C81 cite prior mutagenesis work supporting the importance of domain Ib, providing independent validation of the MD predictions about this region's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C84"
+    ],
+    "result": "The MD structural ensembles capture order-disorder dynamics of domain Ib observed in OS-ssNMR spectra. The interactions of domain Ia (Arg13-Ser16) and inhibitory contacts of domain Ib (Lys27) with SERCA appear mutually exclusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C84 validate the MD simulations against experimental observations. The capture of domain Ib dynamics (C82) shows the MD is consistent with NMR. The mutual exclusivity of domain Ia and Ib interactions (C84) is supported by Figure 3C-F and provides mechanistic insight into the B state's non-inhibitory nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Although experimental data cannot verify SERCA's conformational landscapes from MD, the ensembles strongly suggest phosphorylation has long-range effects on the complex beyond the protein-protein binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 acknowledges a key limitation: the MD predictions of SERCA conformational changes lack direct experimental validation. While the suggestion of long-range effects is reasonable given the correlation analysis and functional data, the specific conformational states (clusters 5-8) remain computational predictions requiring experimental verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Prior studies show SERCA undergoes significant rocking motions during its enzymatic cycle with highly concerted and cooperative conformational transitions. PLN wedges into the binding groove and interferes with these motions, leading to uncoupling of ATP hydrolysis and Ca\u00b2\u207a transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 cite prior structural and computational work on SERCA dynamics. Claims C107-C108 integrate these prior findings with the current results to propose a mechanism. The interpretation is reasonable given the correlation analysis (C86-C90) showing PLN couples to SERCA dynamics, though direct evidence for uncoupling of ATP hydrolysis is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C117",
+      "C122"
+    ],
+    "result": "Prior work established PLN's cytoplasmic domain undergoes T/R/B equilibrium where T and R are inhibitory while B is non-inhibitory. Single-site disease mutations or deletions in domains Ia and Ib may perturb the electrostatic network, resulting in dysfunctional Ca\u00b2\u207a transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 cites prior work establishing the three-state model. Claim C122 applies the current findings to explain disease mutations, supported by citations to specific mutations. This is a reasonable interpretation given the identified importance of electrostatic interactions, though direct testing of disease mutants is not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Several mini-membrane proteins regulate membrane-embedded enzymes or receptors, including phospholemman (regulates Na\u207a/K\u207a-ATPase) and other SERCA regulins. They bind at distal locations from active sites, revealing potential hotspots for allosteric control. Understanding PLN regulation represents a first step toward understanding evolutionary preservation of these regulatory polypeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 place the findings in broader biological context with appropriate citations. The generalization to other miniproteins (C130-C131) is reasonable given structural similarities, though direct evidence for topological allostery in other systems is limited. The suggestion of drug targeting hotspots (C130) is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Monomeric PLN is the functional form, so a cysteine-null monomeric mutant (Cys36Ala, Cys41Phe, Cys46Ala) was used exclusively throughout this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 describe the experimental system with appropriate citations. The use of monomeric mutant is well-justified given prior work showing it is the functional form. This is important methodological information ensuring the relevance of the structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Miniproteins are translated from small open-reading frames (100-300 nucleotides), constitute a neglected portion of the human proteome, and most are membrane-embedded acting as regulators or ancillary proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 provide general background on miniproteins with appropriate citations. These establish the biological importance of the protein class being studied and are well-supported by the literature.",
+    "result_type": "MINOR"
+  }
+]

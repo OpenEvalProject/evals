@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25"
+    ],
+    "result": "The study employed a blocked-design fMRI paradigm with 19 participants viewing semi-transparent stimuli from two categories (bodies and houses) in eight conditions (four isolated, three paired, one fixation). Stimuli were superimposed in paired blocks to minimize spatial attention effects. Participants achieved >86% accuracy overall, with lower performance in conditions requiring attention to paired stimuli (BatH and BHat).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C25 describe the experimental design and behavioral performance. The design is clearly documented with figures, sample size is adequate (N=19), and behavioral data show participants successfully performed the tasks with expected difficulty patterns in dual-attention conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C39",
+      "C40"
+    ],
+    "result": "Attention to objects increased cortical responses across higher visual regions (LO, pFs, EBA, PPA) but not in V1. In category-selective regions (EBA, PPA), responses showed interactions between attention and regional preference. Voxel-level analysis revealed that LO and pFs had balanced selectivity for both categories, while EBA and PPA showed strong category preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33, C39-C40 report attentional modulation effects with appropriate statistical tests and are consistent with prior literature on attention in visual cortex. The absence of effects in V1 is well-documented in prior work and appropriately cited. Regional differences in voxel preferences are clearly shown in Figure 2f.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C46",
+      "C51",
+      "C55"
+    ],
+    "result": "The normalization model provided significantly better fits to fMRI data than weighted sum (p<0.02) and weighted average (p<0.0001) models across all ROIs. This superiority was confirmed using both cross-validated r-squared and AIC measures. The normalization model was equally successful across ROIs in predicting explainable variance (NRD analysis showed no significant differences across regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41, C46, C51, C55 present the core model comparison results with appropriate statistical tests, cross-validation, and correction for model complexity using AIC. The use of cross-validation addresses concerns about overfitting due to different numbers of parameters. Results are clearly presented in Figure 3f with error bars and noise ceiling estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C17",
+      "C18"
+    ],
+    "result": "In the absence of attention (PN condition), the weighted average model predictions were closer to the normalization model, consistent with prior studies. However, when considering all attended and unattended conditions, the normalization and weighted average models diverged more substantially in the presence of attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C54, C17, C18 describe how model predictions differ depending on attentional state. The findings are supported by data and appropriately contextualized with citations to prior work (Zoccolan et al., 2005; Macevoy and Epstein, 2009; Kliger and Yovel, 2020). Statistical comparisons show the normalization model is significantly better overall despite similarity in the PN condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C125"
+    ],
+    "result": "Simulation results demonstrated that the normalization model's superiority is not due to its higher number of parameters or nonlinearity, but reflects the actual neural computation. Simulations showed the normalization model only fit normalizing neuron populations better, not summing or averaging populations. Cross-validation confirmed the model successfully predicted left-out data, and a nonlinear variant with five parameters was still worse than normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C115-C119, C125 address a critical methodological concern about model complexity. The simulation approach (Figure 3\u2014figure supplement 2) provides strong evidence that model superiority reflects the underlying computation rather than overfitting. Cross-validation and testing of alternative nonlinear models strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Shifting attention from preferred to null stimuli caused significant response reductions in higher visual regions (LO, pFs, EBA, PPA) but not V1, with effects increasing along the visual hierarchy. The normalization model accurately predicted these response changes across all regions except V1, while the weighted average model's predictions were significantly lower than observed data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C58, C88-C91 describe attentional effects on response magnitude with appropriate statistical tests and model comparisons. The hierarchical pattern is consistent with prior work (Cook and Maunsell, 2002) and clearly shown in Figure 4a. The normalization model's superior prediction of these effects is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "An asymmetry in attentional modulation was observed: attention to the preferred stimulus nearly eliminated the effect of the ignored null stimulus, but attention to the null stimulus did not remove the preferred stimulus effect. This asymmetry remained constant across regions, suggesting dependence on local normalization computation rather than top-down signals. This is the first report of such asymmetry in human fMRI, though consistent with monkey electrophysiology. The normalization model predicted this asymmetry, but weighted sum and average models did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69, C92-C96 describe a novel finding in human fMRI with appropriate statistical quantification (asymmetry index). The consistency across regions (C94) supports the interpretation about local computation (C95). Agreement with monkey studies (Lee and Maunsell, 2010; Ni et al., 2012) strengthens the finding. Model predictions clearly distinguish normalization from alternatives (Figure 4b).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study demonstrates that attention can shift responses between averaging and winner-take-all regimes without changing stimulus contrast. When the preferred stimulus was attended, winner-take-all behavior emerged; when the null stimulus was attended, responses were closer to averaging. This shows that bottom-up and top-down signals combine to produce responses ranging from averaging to winner-take-all.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 extend prior work on contrast-dependent regime shifts (Busse et al., 2009) by showing attention can produce similar effects. The interpretation is supported by the data patterns and appropriately contextualized with prior findings on contrast (Busse et al., 2009) and selectivity (Bao and Tsao, 2018). This reconciles apparently conflicting prior reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The normalization model is superior to the weighted average model in accounting for fMRI responses with attention. The weighted average model performed better than weighted sum in higher occipito-temporal cortex, but weighted sum was better in V1, suggesting stronger sublinearity in higher regions consistent with prior reports (Kay et al., 2013b).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C105-C107 summarize key model comparison findings with appropriate statistical support. The regional differences in weighted sum vs. average performance are clearly shown in the data and appropriately interpreted in terms of sublinearity. Citation to Kay et al. (2013b) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Alternative explanations for the observed asymmetry were tested, including BOLD saturation. A weighted average model with saturation could partially predict asymmetry but was an overall worse fit than normalization. While saturation is a characteristic of neural responses and the asymmetry has been reported at the neural level (Ni et al., 2012), whether it results from saturation or normalization cannot be definitively distinguished. The normalization model provides a more parsimonious account.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 appropriately address alternative explanations through additional modeling (Figure 5b-c). The acknowledgment of limitations (C131) is appropriate, but the empirical comparison favors normalization. The citation to neural-level asymmetry (Ni et al., 2012) suggests the effect is not solely due to BOLD saturation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The observation that weighted sum performs better in V1 might be related to V1 neurons' higher sensitivity to contrast (Goodyear and Menon, 1998), causing greater response decreases to low-contrast stimuli, which could make stimuli weaker and reduce sublinearity (Sceniak et al., 1999).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C110 present speculative reasoning about V1 differences. While appropriately cited and plausible, this is post-hoc interpretation without direct evidence. The reasoning chain involves multiple inferences (C109-C110 marked as INFERENCE or SPECULATION). This would require direct measurement of contrast response functions to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "To fully ascertain normalization's role in the human brain, future experiments must measure contrast response functions in each voxel and include conditions with varying contrast levels across attentional manipulations. The current results remain suggestive until such experiments are conducted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 appropriately acknowledge a significant limitation: the study used constant contrast and cannot fully disentangle attention and contrast effects. This is an honest assessment that the conclusions are suggestive rather than definitive regarding the full role of normalization. The limitation is clearly stated and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C127"
+    ],
+    "result": "The BOLD response is an indirect measure of neural activity that could reflect local firing rates (Logothetis et al., 2001) or subthreshold activity from feedback (Heeger and Ress, 2002). Effects may change during population averaging. While simulations suggest normalization effects are preserved after averaging, these are not based on direct neural measurements. Future intracranial recordings would be invaluable for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124, C126-C127 appropriately acknowledge fundamental limitations of fMRI. The discussion is balanced, noting both what BOLD can and cannot tell us, and appropriately cites relevant work. The call for future intracranial recordings (C127) is reasonable. The simulation results (C125) provide some reassurance but limitations are acknowledged (C126).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The exact nonlinearities in the transformation from neural responses to BOLD are not fully mapped, especially for multiple overlapping stimuli. It is possible that the normalization model's advantage could partly relate to these nonlinearities. Modeling such nonlinearities requires simultaneous fMRI and neural recordings, and conclusions about normalization superiority should be reevaluated when such data becomes available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 acknowledge another fundamental limitation: unknown nonlinearities in neurovascular coupling could contribute to the normalization model's success. This is an honest and important caveat. The statement that conclusions should be reevaluated (C138) is appropriately cautious, though perhaps overly so given the convergent evidence from simulations and prior neural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "The normalization model predicts voxel-level responses across the visual hierarchy beyond V1, especially in higher occipito-temporal regions, with and without attention and in isolated or cluttered conditions. This provides evidence suggesting divisive normalization as a canonical computation in the human brain during object-based attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 summarize the main conclusions. These are well-supported by the comprehensive data presented, including model comparisons, attentional effects, and asymmetry findings. The evidence is convergent across multiple analyses. The conclusion is appropriately qualified as 'suggesting' rather than 'proving' given acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior work has established normalization in primate electrophysiology and suggested its role in human vision, but quantitative evidence in humans remains limited. Previous studies showed weighted average models can account for monkey responses, except in category-selective regions where winner-take-all prevails. Normalization has been proposed to underlie attention effects, but direct quantitative tests in human cortex are scarce.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C16 provide literature context with appropriate citations. The characterization of prior work appears accurate and sets up the study's contribution. The statement that quantitative human evidence is scarce (C2, C15) is supported by the limited citations and motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C111",
+      "C112"
+    ],
+    "result": "Prior work shows responses to high-contrast stimuli are added sublinearly, but sublinearity decreases for lower contrasts and can become linear or supralinear for weak stimuli (Heuer and Britten, 2002; Rubin et al., 2015). Attention has been suggested to be similar to increasing stimulus contrast (Ni et al., 2012), which is manifested in the normalization equation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104, C111-C112 accurately cite prior work on contrast effects and the relationship between attention and contrast. These are well-established findings that provide important context for interpreting the current results, particularly regarding why weighted sum might perform better in V1 with low-contrast stimuli.",
+    "result_type": "MINOR"
+  }
+]

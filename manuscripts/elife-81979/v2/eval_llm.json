@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "RNA-seq and Ribo-seq datasets were generated for 11 evolved E. coli lines (excluding contaminated Ara+6) with high technical quality, including 151-1693 deduplicated reads per transcript, high biological replicate correlations (R>0.93), and verified three-nucleotide periodicity in Ribo-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 provide strong technical validation of the sequencing data quality. The high correlations between biological replicates (C16), appropriate read depth (C15), and verification of Ribo-seq periodicity (C17) demonstrate experimental rigor. The exclusion of Ara+6 due to contamination concerns (C14) shows appropriate quality control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study characterized specific clones including Ara-2 from the L ecotype and Cit+ Ara-3, with all lines grown in LTEE media supplemented with additional glucose beyond standard conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C18-C19 appropriately characterize the specific clones used, C20 reveals a critical experimental deviation: cells were grown with supplemented glucose (4 g/L vs 25 mg/L standard). This 160-fold increase in glucose concentration may substantially alter gene expression patterns and confound comparisons to prior LTEE studies. The authors acknowledge this in Appendix A2 but the impact on conclusions remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Evolved lines show remarkably parallel transcriptomic changes despite genetic diversity: expression levels of most genes remain unchanged (r>0.95 correlation with ancestor), but ~270 genes per line are differentially expressed, with 117 genes showing parallel changes in 5+ lines\u2014significantly more than expected by chance (p~0.01). Downregulated genes predominate and show larger fold-changes than upregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 collectively demonstrate strong statistical evidence for parallel transcriptomic evolution. The SINIB null model (C25) appropriately tests for non-random parallelism, and the finding of 117 genes with parallel changes versus 3 expected (C26) is compelling. The statistical tests (KS tests, binomial tests) are appropriate. However, the high glucose growth condition (C20) may inflate apparent parallelism if it drives convergent expression responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C83"
+    ],
+    "result": "Despite phenotypic differences (mutator phenotypes in half the lines, Cit+ in Ara-3, ecotypes in Ara-2), expression patterns remain highly correlated between mutator and non-mutator lines, suggesting most additional mutations in mutators are passengers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C83 demonstrate that even lines with dramatically different mutational burdens show similar expression patterns. The PCA analysis (C32) appropriately separates the most phenotypically distinct lines (Ara-3, Ara-2). The high correlation between mutator and non-mutator expression (C83) supports the passenger mutation interpretation, though this remains correlative rather than causative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "All evolved lines are significantly larger than ancestors, with cell volume increases appearing to be under selection rather than solely growth-rate dependent. Volume measurements by microscopy correlate well with independent Coulter counter measurements (R=0.87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 establish increased cell size across all evolved lines with appropriate validation. The correlation with independent measurements (C38, R=0.87) strengthens confidence. Citations to prior work (C33-C36) establish this as a replicated finding. However, the causal claim that size increases are under selection (C35) relies on cited work rather than data presented here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C57"
+    ],
+    "result": "Using ERCC spike-in controls, the study quantified absolute mRNA abundances per CFU, finding that most genes show increased mRNA per CFU in evolved lines, with total mRNA abundance scaling linearly with cell volume across lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C57 demonstrate a rigorous approach to absolute quantification using spike-in standards. The linear relationship between spike-ins and TPM (C39) validates the method. High replicate correlations (C40, R>0.93) indicate reproducibility. The scaling of mRNA with volume (C42) is a key finding, though the authors acknowledge CFU estimates may be underestimates (Appendix A3), which could affect absolute quantification accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C59"
+    ],
+    "result": "Changes in ribosome densities are highly correlated with mRNA abundance changes (R>0.85), with only a handful of genes showing altered ribosome densities and none shared across 3+ lines, indicating that transcriptional changes dominate over translational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C45 and C59 conclude minimal translational regulation, but this interpretation has limitations. While the high correlation (C43) and few genes with altered ribosome density (C44) are clearly shown, the authors acknowledge Riborex has limited power to detect small-to-moderate shifts. The conclusion of \"insufficient evidence for significant changes\" (C45) may reflect statistical power limitations rather than biological reality. The dynamic range of bacterial translational regulation may indeed be smaller (C82), but this remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C64",
+      "C65"
+    ],
+    "result": "Stop codons show decreased ribosome density relative to sense codons across all evolved lines (mean log2 fold-change -0.32, range -0.088 to -0.657), potentially indicating faster translation termination that could increase ribosome recycling and protein production rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present appropriate statistical analysis using linear mixed models to account for line-specific effects. The consistent decrease in stop codon ribosome density across all lines is compelling. However, C65's mechanistic interpretation (faster termination increases protein production) is speculative and not directly tested. The lack of consistent changes in termination factor expression (Figure 3D) complicates the mechanistic story.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Functional analysis reveals parallel downregulation of flagellar assembly genes in 10/11 lines, upregulation of biosynthetic/metabolic processes for sugars and amino acids, and major alterations in lipopolysaccharide biosynthesis pathways (4 of 5 most altered pathways).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are well-supported by multiple functional analysis methods (KEGG, GO, PPS). The flagellar downregulation (C49) replicates prior microarray findings (Cooper et al., 2003), strengthening confidence. The upregulation of biosynthetic processes (C50) is consistent with increased growth rates. The LPS biosynthesis finding (C52) is novel and interesting, though functional consequences are not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Mutations in transcriptional regulators malT and nadR drive parallel expression changes in their downstream targets: malT mutations lead to downregulation of maltose metabolism operons across all lines, while nadR mutations (present in all evolved clones) cause upregulation of NAD biosynthesis genes, with genes not regulated by nadR remaining unaltered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C66-C70 provide strong evidence linking specific mutations to expression changes. The parallel downregulation of all malT-regulated operons (C53) and upregulation of nadR-regulated genes (C55) with specificity (C56 shows non-regulated genes unchanged) demonstrates regulatory logic. However, the causal claims rely partly on prior work (C66-C70) rather than functional validation in this study. The fitness benefits remain inferred rather than directly measured here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Despite few shared mutations at the genetic level, evolved lines show remarkably similar gene expression patterns, suggesting that expression profiles serve as a link between disparate mutations and parallel fitness gains, potentially indicating an optimal expression profile for the LTEE environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C60, and C71 summarize the main findings appropriately. However, C72-C73's interpretation of an \"optimal expression profile\" is speculative. While the parallel expression changes are well-documented, the causal link to fitness is correlative. The study does not directly test whether expression changes drive fitness gains or are consequences of other adaptive changes. The high glucose growth condition (C20) also complicates interpretation of what constitutes \"optimal\" for standard LTEE conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Multiple mechanisms may drive parallel expression changes including: mutations in key regulators (spoT in 8/12 lines), fast-evolving genes (ribosomal proteins, rpoD), and chromosomal architecture genes (fis, topoisomerases) affecting DNA superhelicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C74-C79 synthesize prior LTEE findings to propose mechanisms. The modest genetic parallelism (22 genes, C61) contrasts with high expression parallelism. However, these mechanistic proposals are largely based on cited work rather than new analyses. The spoT discussion (C74-C76) notes it only explains 11/59 parallel expression changes in prior work, indicating incomplete mechanistic understanding. These remain plausible hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The lack of translational changes may reflect biological constraints: bacterial gene expression scales with growth rate to maintain stoichiometry, polycistronic genes require coordinated regulation, and the dynamic range of translational changes may be smaller than transcriptional changes in bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C82 propose explanations for minimal translational changes, but these are largely speculative (C82 explicitly notes this). While the cited literature supports these general principles, whether they explain the specific LTEE results versus statistical power limitations (acknowledged for Riborex) remains unclear. The 50,000 generation timescale should be sufficient for translational adaptation if it were strongly beneficial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The LTEE consists of 12 replicate E. coli populations evolving for >75,000 generations in glucose-limited medium, showing parallel phenotypic changes (fitness, cell size) despite genomic diversity, with prior work demonstrating parallel expression changes in 2 lines at 20,000 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 accurately summarize the LTEE background and prior work. These are well-established facts supported by extensive citations. The characterization of genomic diversity (C6-C9) and prior expression work (C10) appropriately contextualizes the current study. C11 correctly notes translation's importance, motivating the Ribo-seq approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C84"
+    ],
+    "result": "Evolved lines show reduced lag times, and populations spend significant time in stationary phase before transfer, though the current study focused only on exponential phase expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 cite prior work on lag time reduction. C84 appropriately acknowledges a limitation: the study only examines exponential phase despite significant stationary phase time in the LTEE cycle. This is an important caveat as stationary phase expression patterns may differ substantially and could be under selection. Future work examining stationary phase expression is warranted.",
+    "result_type": "MINOR"
+  }
+]

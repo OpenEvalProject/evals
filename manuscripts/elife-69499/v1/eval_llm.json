@@ -1,0 +1,397 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C69",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors introduce a continuous attractor network model with memory-dependent asymmetric synaptic connectivity that spontaneously breaks equilibrium and produces dynamic retrieval. The model is analytically tractable and robustly retrieves multiple dynamical memories across a wide range of parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C49, C69, C132-134 collectively establish the core model and its capabilities. The model is supported by both analytical derivations (C88, C133) and numerical simulations (C70-71, C93-95) showing robust dynamic retrieval. The biological motivation via STDP (C50, C61-62) provides plausibility, though actual learning dynamics are not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C75"
+    ],
+    "result": "Asymmetric connectivity generates a steady flow of activity along the manifold direction without loss of coherence. The activity bump shifts at a speed that increases with asymmetry strength \u03b3, as demonstrated in 1D, 2D, and 3D manifolds (Figure 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-75 describe the fundamental dynamic mechanism with direct support from simulations (Figure 2). The coherence preservation (C73) and speed dependence on \u03b3 (C75) are clearly demonstrated. The mechanism is shown to work across different dimensionalities, providing strong evidence for the core dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C80",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The model predicts that retrieval speed depends on both asymmetry strength \u03b3 and activity sparsity f, allowing the network to retrieve at different velocities without requiring short-term synaptic modifications. This yields a testable prediction that faster hippocampal replay should correlate with increased population excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C136-138 present a key prediction supported by analytical solutions (C136) and simulations (Figure 2d, Figure 3c). The functional relationship s(\u03b3,f) is demonstrated empirically, though the exact form remains approximated. The prediction is specific and testable, making it a strong contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C88",
+      "C90",
+      "C92"
+    ],
+    "result": "The model admits a full analytical solution using a generalization of the Battaglia and Treves (1998) framework. The solution shows that dynamic retrieval occurs for all values of \u03b3 and characterizes how \u03b3 influences retrieval speed and bump asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C90, C92 describe the analytical treatment with results shown in Figure 3. The analytical solution provides exact characterization of bump shapes and their dependence on parameters. The approach is mathematically sound and provides theoretical foundation for the numerical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Dynamic retrieval is robust across four orders of magnitude in both \u03b3 and \u03be parameters. All features vary gradually with parameters, and the mechanism does not require fine-tuning, though it relies on exponential kernel shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-96 establish robustness through systematic parameter exploration (Figure 4). The wide parameter range and gradual variation support the robustness claim. However, C96 acknowledges dependence on exponential kernel form, which is then addressed by C97-99 showing robustness to kernel shape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The dynamic retrieval mechanism is robust to the precise shape of the asymmetric kernel. Simulations with Gaussian-derivative, sinusoidal, and step-function kernels all produce stable shifting bumps, with only minor effects on bump shape details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-99 demonstrate kernel-shape robustness through systematic testing (Figure 5). Three qualitatively different kernel shapes all produce the same fundamental dynamics. This addresses a potential limitation from C96 and strengthens the generality of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The network can store and retrieve multiple manifolds as an autoassociative memory. Given an initial configuration, it converges to the nearest attractor and moves along it, while activity projected on unretrieved manifolds appears as noise. Simulated recordings show sequential activity patterns only when sorted by the retrieved manifold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-106 establish multi-memory capability with clear evidence from Figure 6. The selective retrieval (C103-104) and manifold-specific sequential patterns (C105-106) demonstrate proper memory function. The simulated electrophysiology (C105-106) provides a concrete link to experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Multiple dynamic manifolds can be stored with different retrieval speeds by encoding each with a different \u03b3 value. This allows simultaneous storage of memories without constraint to a fixed dynamical timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-109 demonstrate speed-multiplexing capability (Figure 7a-b). Five manifolds with different \u03b3 values are successfully retrieved at their respective speeds. This is a natural extension of the single-manifold results and is well-supported by simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Memories can interact through a mechanism where manifold endpoints cue retrieval of other manifolds, producing sequential chained retrieval. This creates a hybrid system with discrete transitions between manifolds and continuous dynamics within each manifold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-115 present the memory-chaining mechanism (Figure 7c-d). The sequential retrieval with all-or-nothing overlap dynamics (C113) and continuous within-manifold position (C114) is clearly demonstrated. However, the interaction mechanism is described only briefly in Appendix E, limiting full evaluation of its generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C142"
+    ],
+    "result": "In diluted networks, asymmetry decreases storage capacity continuously (scaling with \u03b3\u00b2) but not catastrophically. A wide range of \u03b3 and map sparsity values support storage of many dynamic manifolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-126, C142 present analytical capacity results (Figure 8a). The signal-to-noise analysis (C121) provides theoretical foundation. The continuous, non-catastrophic decrease with \u03b3 is clearly shown, and the capacity remains substantial across parameter ranges. The analytical approach is appropriate for the diluted regime.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C143"
+    ],
+    "result": "In fully connected networks, a network of ~10,000 neurons can store tens to hundreds of dynamical memories. Capacity peaks at intermediate values of both map sparsity and \u03b3, with moderate asymmetry actually enhancing capacity compared to static attractors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-130, C143 present numerical capacity estimates (Figure 8b-c). The non-monotonic dependence on \u03b3 (C129-130) is a surprising and important finding. The capacity enhancement at intermediate \u03b3 (C143) is clearly demonstrated. The numerical approach is appropriate for the fully connected case where analytical methods are intractable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "At trajectory intersections in 2D manifolds, the network switches trajectories at low \u03b3 but successfully crosses at sufficiently high \u03b3. Successful crossing requires the activity bump to be sufficiently elongated in the retrieval direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-84, C86 address trajectory crossing (Figure 2e). The \u03b3-dependent transition from switching to crossing is demonstrated, and the dependence on \u03be is characterized. The interpretation via bump elongation (C86) is intuitive and consistent with the mechanism. However, this is a limited exploration of position-dependent asymmetry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The symmetric interaction kernel in continuous attractor networks arises from time-averaged Hebbian plasticity, but this neglects temporal structure. STDP can produce asymmetry when neurons fire sequentially along trajectories, as the postsynaptic neuron must fire after the presynaptic one for potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C60-62 provide biological motivation for the asymmetric connectivity. The STDP mechanism (C62) is well-established (Markram et al., 1997), and the reasoning for how sequential firing produces asymmetry is sound. However, no learning simulations are performed to demonstrate this mechanism actually produces the required connectivity pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C66"
+    ],
+    "result": "The parameter \u03b3 regulates the relative strength of symmetric and asymmetric connectivity components. Asymmetric mechanisms have been shown to produce rigid shifts along manifolds without loss of coherence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C66 describe model parameters and cite prior work (Zhang 1996, Burak & Fiete 2009, Fuhs & Touretzky 2006) establishing that asymmetric connectivity can produce coherent shifts. These are well-established results that provide foundation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The robustness to interaction details suggests the mechanism could emerge from noisy learning processes. The asymmetric Hebbian rule provides a biologically realistic starting point, and is sufficient to describe dynamic memory with multiple manifolds at different speeds and inter-memory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-141 make inferences about learning and biological plausibility. While the robustness results (C97-99) support C139's speculation, no actual learning simulations are performed. C140 acknowledges learning analysis is beyond scope. The claims are reasonable extrapolations but lack direct empirical support within this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The capacity results are compatible with Zhong et al. (2020) who found mild detrimental effects of velocity in a different out-of-equilibrium scenario, suggesting possible universality. High capacity for dynamical sequences is also achievable with discrete items (Gillett et al. 2020), indicating temporal structure is compatible with autoassociative memory function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-148 compare results with related work. The comparison with Zhong et al. (2020) is appropriate and the compatibility is accurately stated. The speculation about universality (C146) is reasonable but tentative. The broader conclusion (C148) about compatibility of temporal structure with memory is well-supported by the convergent evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The model suggests dynamic activity is a natural feature of asymmetric networks, with static memories potentially being exceptional. Mehta et al. (2000) showed place fields become more asymmetric during learning, supporting this view. The structural role of asymmetry has implications for analysis methods assuming symmetry or equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-150 are speculative interpretations (marked as SPECULATION in evidence). C151 correctly cites supporting evidence, but this is a single study. C152's implications for analysis methods are reasonable but not demonstrated. These are interesting hypotheses but go beyond what the model directly establishes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "Place field elongation in the running direction has been observed on linear tracks (Mehta et al. 1997). The model predicts analogous elongation in open fields when analyzing trajectories in the same direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-154 present a testable prediction based on the model's bump asymmetry. The prediction is a logical extension of the linear track observations to 2D environments. The prediction is specific and experimentally testable, though not yet validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Replayed sequences can be forward or backward (Foster & Wilson 2006), but the current model cannot alternate between directions. This suggests the hippocampus might use different representations for forward and backward components, with some support from reward modulation of backward replay (Ambrose et al. 2016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-158 identify a model limitation and speculate about solutions. C156 correctly identifies the limitation. C157's speculation about separate representations is reasonable but undemonstrated. C158 cites relevant evidence but acknowledges the question remains open. This is an honest assessment of limitations but the proposed solution is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The model generalizes cognitive maps by incorporating temporal organization in memory manifolds, reminiscent of memory schemata. Application to schemata would require accounting for hippocampus-neocortex interaction and expanded transition mechanisms, but the dynamic retrieval concept and integration with cortical models offer promising perspectives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C159-162 discuss potential applications to memory schemata. The connection is conceptually reasonable (C160 cites Ciaramelli & Treves 2019) but C161 acknowledges substantial additional work is needed. These are speculative future directions rather than established results, though the speculation is well-grounded in the demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The introduction establishes that episodic memory has dynamic temporal structure, exemplified by hippocampal replay, preplay, and sequences in various contexts. Similar dynamics appear in memory schemata and motor programs. Most existing models treat memories as static, while computational analyses of dynamics don't focus on memory storage. The concept of dynamical continuous attractors involves activity constrained to and moving along low-dimensional manifolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-48 provide background and motivation, extensively citing prior work. The characterization of existing models (C3, C39-40) and the gap they address is accurate. The biological phenomena (C2, C9-28) are well-documented in cited literature. The conceptual framework (C33-35) is clearly defined. This effectively motivates the work, though these are primarily literature review claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The signal-to-noise analytical approach involves decomposing the local field into a signal term from the retrieved map and a noise term from uncondensed maps, following Battaglia and Treves (1998).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 describes the analytical method with appropriate citation. This is a standard approach for analyzing diluted attractor networks and is correctly applied here. The method is well-established and appropriate for the problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "The natural tendency of neural activity to show rich spontaneous dynamics not only doesn't hinder memory coexistence but can be crucial for correct memory functioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C131 is marked as INFERENCE and SPECULATION. While the capacity results (C129-130) show moderate asymmetry can enhance capacity, the stronger claim that dynamics are \"crucial\" for memory function goes beyond the demonstrated results. The capacity is still substantial even without asymmetry (\u03b3=0), so dynamics appear beneficial but not strictly necessary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C163"
+    ],
+    "result": "Full analytical description of densely connected asymmetric attractor networks remains an open challenge that could yield valuable insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C163 accurately identifies a limitation and future direction. The paper addresses this by using numerical simulations for the fully connected case (Figure 8b-c) while providing analytical results only for the diluted regime. This is an honest acknowledgment of the current state of the field.",
+    "result_type": "MINOR"
+  }
+]

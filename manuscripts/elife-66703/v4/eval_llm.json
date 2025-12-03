@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The TGEM isolation method yields a highly pure macrophage population (~95% CD11b+F4/80+ cells) that is unaffected by the age of the donor mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are directly supported by flow cytometry data (Figure 1\u2014figure supplement 1) showing consistent macrophage purity across young and old mice. The methodology is well-validated and appropriate for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C20",
+      "C21",
+      "C23",
+      "C27",
+      "C80",
+      "C82"
+    ],
+    "result": "Mir146b expression progressively and unidirectionally declines with age in thioglycollate-elicited macrophages (TGEMs) and bone marrow-derived macrophages (BMDMs), decreasing more than twofold from 3 to 30 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by multiple independent methods: RNA-seq (C2, C80), qPCR validation in TGEMs (C20, C82), qPCR in BMDMs (C21, C82), and QuantiGene assay (C23). The unidirectional decline is consistent across methods and time points (C27). The data are robust and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C24"
+    ],
+    "result": "Mir146b expression is substantially lower in BMDMs compared to TGEMs, with BMDMs showing only ~20% of TGEM expression levels and being below detection limits in QuantiGene assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C24 are supported by qPCR data (Figure 1D) and QuantiGene assay results. This finding justifies the authors' focus on TGEMs for subsequent experiments. The comparison is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Transient knockdown of Mir146b in TGEMs (>50% reduction) results in decreased expression of multiple cytokines (Nos2, Mmp9, Il1b, Il6, Arg1, Cd163) and a trend toward increased Il10, with minimal cell death (<2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the knockdown efficiency (C30) and cell viability (C28, C29) are well-documented, the cytokine expression changes (C31, C32) are described as 'trends' without statistical significance values reported in Figure 2C. The lack of statistical testing weakens the support for altered cytokine expression. Additionally, pooling samples from 2-3 mice reduces statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TGEMs from Mir146b conditional knockout (cKO) mice show reduced Mir146b expression without compensatory Mir146a upregulation, and display altered cytokine expression patterns similar to knockdown experiments, with most markers decreased except Mmp9 which showed an increasing trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic validation (C34, C35) is solid with qPCR data. The cytokine expression patterns (C37-C41) largely recapitulate the knockdown results, though the Mmp9 discrepancy (C41) is noted and discussed. The use of pooled samples (2-3 mice) for gene expression analysis is a limitation, but the overall pattern is consistent and the genetic model provides stronger evidence than transient knockdown alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C83"
+    ],
+    "result": "Mir146b deficiency phenocopies aging macrophage characteristics, including decreased M1-associated cytokine markers with elevated Il10, paralleling low-grade chronic inflammation associated with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This interpretive claim (C33, C83) relies on comparison to prior literature and the cytokine expression data. However, the cytokine changes are described as 'trends' without robust statistical support, and the comparison to aging phenotypes is inferential rather than directly demonstrated through side-by-side comparison of aged vs. Mir146b-deficient macrophages at the same age. The claim requires stronger statistical evidence and direct comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C84"
+    ],
+    "result": "Mir146b-deficient TGEMs exhibit abnormal mitochondrial structure, including decreased mitochondrial number and increased intercrystal spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are well-supported by electron microscopy data with quantification (Figure 3A-F). The structural abnormalities are statistically significant and clearly documented. This provides strong morphological evidence for mitochondrial dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C85"
+    ],
+    "result": "Mir146b-deficient TGEMs show reduced mitochondrial metabolic activity, characterized by decreased MTT reduction, reduced maximal oxidative phosphorylation (OCR), and decreased extracellular acidification rates (ECAR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The metabolic dysfunction is well-documented through multiple assays: MTT (C45, Figure 3G), Seahorse OCR measurements (C46, Figure 3H), and ECAR measurements (C47, Figure 3I). The data are statistically significant and consistent across methods. Claims C4, C48, and C85 are well-supported summary statements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C86"
+    ],
+    "result": "Overexpression of Mir146b in wildtype TGEMs increases both maximal mitochondrial respiration (OCR) and ECAR, reversing the metabolic dysfunction phenotype observed in Mir146b-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 are supported by Seahorse data (Figure 3J-K) showing statistically significant increases in both OCR and ECAR. This gain-of-function experiment (C86) provides strong evidence for a causal role of Mir146b in regulating mitochondrial metabolism (C51). The experimental design is appropriate and the results are convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C87"
+    ],
+    "result": "Bulk RNA-seq of Mir146b-deficient TGEMs reveals downregulation of multiple genes critical for mitochondrial morphology, respiration, and glucose metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by RNA-seq data (Figure 4A) and citations to prior literature establishing the mitochondrial roles of the identified genes. The inference (C53, C87) that these changes broadly affect mitochondrial function is reasonable given the functional data. However, the bulk RNA-seq used only n=4 biological replicates per group, which is adequate but not highly powered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C63",
+      "C64",
+      "C65",
+      "C90",
+      "C91"
+    ],
+    "result": "Lyz1 was the only gene significantly upregulated in Mir146b cKO TGEMs by bulk RNA-seq, but this increase was not recapitulated by natural aging or Mir146b overexpression, and Lyz1 has not been previously linked to mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The upregulation of Lyz1 in cKO cells is documented in both bulk (C54) and single-cell RNA-seq (C63, C64). The lack of age-related increase (C65) and absence of change in overexpression experiments (C55) suggest the regulation may be indirect or specific to the knockout model. The authors appropriately note that Lyz1 has not been linked to mitochondrial function (C55, C91), and the data support this as a secondary finding rather than a central mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Single-cell RNA-seq identified three transcriptionally distinct TGEM populations: Cluster 1 (mature recruited monocyte-derived macrophages specialized for antigen presentation), Cluster 2 (resident peritoneal macrophages), and Cluster 3 (highly active recruited macrophages).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis (C56) and marker expression patterns (C57-C60) are well-documented in Figure 4B-D. The cell type assignments are based on established marker genes and are consistent with known macrophage biology. The single-cell approach appropriately addresses the heterogeneity of the TGEM population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C66"
+    ],
+    "result": "Downregulated genes from bulk RNA-seq showed lower expression primarily in Clusters 1 and 3 of cKO cells, consistent with a premature aging phenotype, with Cluster 1 representing the majority of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C66 are supported by single-cell RNA-seq data (Figure 4E, Figure 4\u2014figure supplement 1B). The inference of premature aging (C62) is reasonable based on comparison of gene expression patterns across age and genotype, though this remains an interpretation rather than a direct demonstration of accelerated aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Differential expression analysis of Cluster 1 cells identified five hierarchical expression patterns (a-e), with four patterns showing gene expression loss in old cKO macrophages, enriched for functions including cholesterol metabolism (pattern b), phagocytosis/migration (pattern c), negative regulation of inflammation (pattern d), and calcium homeostasis/endocytosis (pattern e).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of expression patterns (C67, C68) is supported by single-cell RNA-seq data (Figure 4F, Figure 4\u2014figure supplement 2). The functional enrichment assignments (C69-C72) are based on gene ontology/pathway analysis, which is standard practice. However, the manuscript does not provide detailed statistical information about the enrichment analysis or list all genes in each pattern within the main text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C93"
+    ],
+    "result": "Pattern a genes, which increased in aged cKO TGEMs, include six interferon gamma (IFN\u03b3) signaling pathway genes (Isg15, Ccl5, Ifitm3, Irf7, Il18bp, Slpi), suggesting that loss of Mir146b may contribute to TGEM dysfunction through altered IFN gene response, as IFN\u03b3 treatment reduces macrophage respiratory capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the identification of IFN-related genes in pattern a (C74) is data-supported, the mechanistic link to mitochondrial dysfunction (C76, C93) is speculative. The connection relies on a single citation (C75) showing that IFN\u03b3 treatment reduces respiratory capacity, but no direct experimental evidence is provided linking the observed IFN gene expression changes to the mitochondrial phenotype in this study. This represents a plausible hypothesis requiring further validation rather than a demonstrated mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C94"
+    ],
+    "result": "This study identifies a novel role for Mir146b in mitochondrial metabolic function in macrophages, and changes in TGEM metabolism, activation, and polarization may contribute to para-inflammation associated with aging and diseases of aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is well-supported by the combined experimental evidence showing that Mir146b regulates mitochondrial structure, function, and metabolism in macrophages\u2014a role not previously demonstrated. Claim C94 is more speculative, as the connection to para-inflammation and age-related diseases is inferential rather than directly demonstrated. However, the overall conclusion that Mir146b plays a novel role in macrophage mitochondrial function is strongly supported.",
+    "result_type": "MAJOR"
+  }
+]

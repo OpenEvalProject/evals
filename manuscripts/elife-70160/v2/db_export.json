@@ -1,0 +1,1499 @@
+{
+  "submission": {
+    "id": "a4906e13-e80e-43b0-a22d-36941ee5178c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:30:10.921175Z",
+    "updated_at": "2025-12-03T05:30:10.921175Z"
+  },
+  "content": [
+    {
+      "id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "submission_id": "a4906e13-e80e-43b0-a22d-36941ee5178c",
+      "content_type": "manuscript",
+      "content_text": "# Structure and mechanistic features of the prokaryotic minimal RNase P\n\n## Authors\n\n- Rebecca Feyh<sup>1</sup>\n- Nadine B Waeber<sup>1</sup>\n- Simone Prinz<sup>2</sup>\n- Pietro Ivan Giammarinaro<sup>3</sup> ([ORCID: 0000-0002-0356-8481](https://orcid.org/0000-0002-0356-8481))\n- Gert Bange<sup>3</sup>\n- Georg Hochberg<sup>3</sup>\n- Roland K Hartmann<sup>1</sup> \u2020\n- Florian Altegoer<sup>3</sup> ([ORCID: 0000-0002-6012-9047](https://orcid.org/0000-0002-6012-9047)) \u2020\n\n### Affiliations\n\n1. Institute of Pharmaceutical Chemistry, Philipps-University Marburg Marburg Germany\n2. Department of Structural Biology, Max Planck Institute of Biophysics Frankfurt Germany\n3. Center for Synthetic Microbiology and Department of Chemistry, Philipps-University Marburg Marburg Germany\n4. Max-Planck Institute for Terrestrial Microbiology Marburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nEndonucleolytic removal of 5\u2019-leader sequences from tRNA precursor transcripts (pre-tRNAs) by ribonuclease P (RNase P) is essential for protein synthesis. Beyond RNA-based RNase P enzymes, protein-only versions of the enzyme exert this function in various eukarya (there termed PRORPs) and in some bacteria (Aquifex aeolicus and close relatives); both enzyme types belong to distinct subgroups of the PIN domain metallonuclease superfamily. Homologs of Aquifex RNase P (HARPs) are also expressed in some other bacteria and many archaea, where they coexist with RNA-based RNase P and do not represent the main RNase P activity. Here, we solved the structure of the bacterial HARP from Halorhodospira halophila by cryo-electron microscopy, revealing a novel screw-like dodecameric assembly. Biochemical experiments demonstrate that oligomerization is required for RNase P activity of HARPs. We propose that the tRNA substrate binds to an extended spike-helix (SH) domain that protrudes from the screw-like assembly to position the 5\u2019-end in close proximity to the active site of the neighboring dimer. The structure suggests that eukaryotic PRORPs and prokaryotic HARPs recognize the same structural elements of pre-tRNAs (tRNA elbow region and cleavage site). Our analysis thus delivers the structural and mechanistic basis for pre-tRNA processing by the prokaryotic HARP system.\n\n## Introduction\n\nRibonuclease P (RNase P) is the essential endonuclease that catalyzes the 5\u2019-end maturation of tRNAs (Klemm et al., 2016; Rossmanith and Hartmann, 2020; Guerrier-Takada et al., 1983). The enzyme is present in all forms of life, yet shows a remarkable variation in the molecular architecture. There are two basic types of RNase P, RNA-based and protein-only variants. The former consists of a structurally conserved, catalytic RNA molecule that associates with a varying number of protein cofactors (1 in bacteria, 5 in archaea, and\u00a09\u201310 in eukarya [Klemm et al., 2016; Jarrous and Gopalan, 2010]). Protein-only enzymes arose independently twice in evolution. In eukarya, a protein-only RNase P (termed PRORP) apparently originated at the root of eukaryotic evolution and is present in four of the five eukaryotic supergroups (Lechner et al., 2015). This type of enzyme replaced the RNA-based enzyme in one compartment or even in all compartments with protein synthesis machineries, such as land plants harboring PRORP enzymes in the nucleus, mitochondria, and chloroplasts (Gobert et al., 2010). In metazoan mitochondria, PRORP requires two additional protein cofactors for efficient function (Holzmann et al., 2008).\n\nMore recently, a bacterial protein-only RNase P, associated with a single polypeptide as small as ~23 kDa, was discovered in the hyperthermophilic bacterium Aquifex aeolicus that lost the genes for the RNA and protein subunits (rnpB and rnpA) of the classical and ancient bacterial RNase P (Nickel et al., 2017). This prokaryotic type of minimal RNase P system was named HARP (for: Homolog of Aquifex RNase P) and identified in 5 other of the 36 bacterial phyla beyond Aquificae (Nickel et al., 2017). Among HARP-encoding bacteria, only some lack the genes for RNA-based RNase P (i.e., Aquificae, Nitrospirae), while others harbor rnpA and rnpB genes as well (Daniels et al., 2019; Nickel et al., 2017). Overall, HARP genes are more abundant in archaea than bacteria. However, all of these HARP-positive archaea also encode the RNA and protein subunits of the RNA-based RNase P (Nickel et al., 2017; Daniels et al., 2019). Remarkably, HARP gene knockouts in two Euryarchaeota, Haloferax volcanii and Methanosarcina mazei, showed no growth phenotypes under standard conditions, temperature, and salt stress (H. volcanii) or nitrogen deficiency (M. mazei) (Schwarz et al., 2019). In contrast, it was impossible to entirely erase the RNase P RNA gene from the polyploid genome of H. volcanii (~18 genome copies per cell in exponential growth phase; Breuert et al., 2006). Even a knockdown to ~20% of the wild-type RNase P RNA level in H. volcanii was detrimental to tRNA processing and resulted in retarded cell growth (Stachler and Marchfelder, 2016). The findings suggest that HARP is neither essential nor represents the housekeeping RNase P function in archaea, explaining its sporadic loss in archaea. HARPs are evolutionarily linked to toxin-antitoxin systems (Daniels et al., 2019; Schwarz et al., 2019; Gobert et al., 2019). Frequently, the toxin proteins are endoribonucleases that cleave mRNA, rRNA, tmRNA, or tRNA to inhibit protein biosynthesis in response to certain stresses (Masuda and Inouye, 2017). Conceivably, the progenitor of A. aeolicus and related Aquificaceae might have acquired such a toxin-like tRNA endonuclease via horizontal gene transfer and established it as the main RNase P activity with relatively little reprogramming.\n\nHARPs belong to the PIN domain-like superfamily of metallonucleases. They were assigned to the PIN_5 cluster, VapC structural group, whereas eukaryal PRORPs belong to a different subgroup of this superfamily (Matelska et al., 2017; Gobert et al., 2019). HARPs oligomerize and Aq880 was originally observed to elute as a large homo-oligomeric complex of ~420 kDa in gel filtration experiments (Nickel et al., 2017). However, its specific mode of substrate recognition and the underlying structural basis is lacking to date. Here, we present the homo-dodecameric structure of the HARP from the \u03b3-bacterium Halorhodospira halophila SL1 (Hhal2243) solved by cryo-electron microscopy\u00a0(EM) at 3.37 \u00c5 resolution. Furthermore, we employed mass photometry (MP)\u00a0to investigate the oligomerization behavior of HARP and correlated the oligomeric state with enzyme activity. Our structure reveals that HARPs form stable dimers via a two-helix domain inserted into the metallonuclease domain. These dimers further assemble into a screw-like assembly resulting in an asymmetric and thus imperfect novel type of homo-dodecamer. Our biochemical analysis suggests that pre-tRNA processing involves the neighboring dimers and thus requires the\u00a0formation of a higher-order HARP oligomer. In conclusion, we here present the structural basis for the RNase P-like pre-tRNA processing activity of prokaryotic HARPs.\n\n## Results\n\n### Dodecameric structure of the HARP from H. halophila\n\nStructural information on A. aeolicus RNase P (Aq880) and HARPs is lacking and a mechanistic understanding of pre-tRNA processing by HARPs has remained unknown so far. As previously observed by size exclusion chromatography (SEC), Aq880 forms large oligomers of ~420 kDa (Nickel et al., 2017). Our attempts to resolve its structure by X-ray crystallography or nuclear magnetic resonance were unsuccessful. Therefore,\u00a0we also purified other HARPs to increase the chances of successful structure determination. Among those was the HARP of H. halophila (Hhal2243) that was purified to homogeneity using a two-step protocol consisting of Ni2+-affinity chromatography and anion-exchange chromatography (Figure 1\u2014figure supplement 1; see Materials and methods). Hhal2243 formed an assembly of similar size as Aq880 (Figure 1\u2014figure supplement 2A) but adopted a more uniform oligomeric state than Aq880 (see below). Like Aq880 (Marszalkowski et al., 2008), Hhal2243 showed pre-tRNA processing activity in the presence of Mg2+ and Mn2+ (Figure 1\u2014figure supplement 2B,C).\n\nWe succeeded in solving the structure of Hhal2243 by cryo-EM to 3.37 \u00c5 resolution (Figure 1, Figure 1\u2014figure supplement 3, supplementary file 1a). Hhal2243 assembles into a dodecamer in a left-handed screw-like manner, with each molecule being rotated by approximately 58\u00b0, except for the interface between dimers 1/1* and 6/6*. Upon completion of the single screw turn, the first and last dimers (1/1* and 6/6*) encounter each other at a slightly larger angle of 70\u00b0 (Figure 1A, top view, left) and laterally displaced (Figure 1A, side view, right); they cannot form the same inter-dimer contacts as dimers can form within the screw turn; the steric clash between dimers 1/1* and 6/6* terminates oligomerization. Hypothetic geometric scenarios that would allow a continuation of oligomerization beyond a dodecamer are illustrated in Figure 1\u2014figure supplement 4. Hhal2243 consists of a PIN-like metallonuclease domain into which two helices are inserted that we termed the \u2018spike-helix\u2019 (SH) domain (Figure 1B). The PIN-like domain is formed by six \u03b1-helices (\u03b11\u2013\u03b14, \u03b17, and\u00a0\u03b18) and four \u03b2-strands (\u03b21\u2013\u03b24) that fold into an \u03b1/\u03b2/\u03b1 domain with a central, four-stranded parallel \u03b2-sheet (Figure 1C). Two Hhal2243 monomers align head-to-head with their SH domains consisting of helices \u03b15 and \u03b16 to form a dimer, while two SH domains form a four-helix bundle resulting in six spikes that protrude from the dodecameric assembly (Figure 1C). The dimer interface covers a buried surface area of 1300 \u00c52 and is mainly of hydrophobic nature with two clamping salt bridges formed by R141 and E91 from either monomer, respectively (Figure 1D,E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Cryo-EM electron density map of Hhal2243 shown from a top view\u00a0(left) and a side view (right). The monomers are colored in blue and olive, respectively. The angles between dimers are indicated in the top view. The sketch in the upper left corner of the view on the right indicates how the dimers assemble to form the screw-like arrangement of the dodecamer. (B) Domain architecture of Hhal2243. (C) Model of the Hhal2243 dimer. The protein consists of a PIN five domain with an inserted spike-helix (SH) domain forming the dimer interface. The numbers indicate the amino acid boundaries of the SH domain. (D, E) Detailed view of the dimer interface. The clamping salt bridges are shown as sticks and indicated with dashed yellow lines. The hydrophobic core between the two monomers is marked by the gray sphere in (D).\u00a0EM,\u00a0electron microscopy.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Chromatograms of the Ni-ion-affinity chromatography (HisTrap 1 mL column, left) and ion-exchange chromatography (MonoQ column, right). (B) SDS-PAGEs of fractions from the HisTrap (left) and MonoQ column (right). (C) Western blot analysis of fractions from the MonoQ column to verify successful removal of the His6-tag by thrombin digestion using an \u03b1\u22126His-HRP antibody (Thermo Fisher Scientific, Invitrogen) diluted 1:5000 in 1% Casein Blocker (Thermo Fisher Scientific). Source data of the SDS-PAGEs and the western blot are available in Figure 1\u2014figure supplement 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0Chromatographic analysis of Hhal2243. The sample was analyzed on a Superose 6 3.2/300 column using an \u00c4KTA PURE (GE Healthcare) FPLC system operated at room temperature.\u00a0(B) Secondary structure of precursor tRNAGly (pre-tRNAGly) of the thermophilic bacterium Thermus thermophilus carrying a 5\u2019-leader of 14 nucleotides; the curved arrow indicates the canonical (c0) RNase P cleavage site. (C) RNase P processing of 5\u2019-32P-labeled T. thermophilus pre-tRNAGly by recombinant HARPs from the hyperthermophilic bacterium A. aeolicus (Aq880) and the \u03b3-proteobacterium Halorhodospira halophila (Hhal2243) in the presence of either 4.5 mM Mg2+, Mn2+, Sr2+ or Ca2+ in buffer F for 2 hr at 37\u00b0C. Enzyme and substrate concentrations were 500 nM and ~5 nM, respectively. Samples were separated by 20% denaturing PAGE and analyzed by phosphor\u00a0imaging (for details, see Materials and methods of the main text). C,\u00a0control, substrate alone incubated for 2 hr at 37\u00b0C in enzyme dilution buffer (30 mM Tris-HCl pH 7.8, 30 mM NaCl, 0.3 mM EDTA, and\u00a01 mM DTT). Source data of phosphor\u00a0images are available in Figure 1\u2014figure supplement 2\u2014source data 1.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A)\u00a0Representative cryo-EM micrograph collected with a Thermo Fisher Scientific Titan Krios microscope, operated at 300 kV, and equipped with a K3 direct electron detector. Representative reference-free 2D class averages are shown on the right side of the micrograph. (B) FSC analysis of the dataset with the blue line representing the estimated global FSC of 3.4 \u00c5. (C) The 2,749,587 particles from the dataset were 3D classified into three classes using a reference ab initio model generated in Cryosparc v3.1. The class consisting of the best aligning particles was selected for 3D homogenous refinement in Cryosparc resulting in a final map at 3.37 \u00c5 resolution. (D) Local resolution estimation of the final map colored from blue (3 \u00c5) to red (5 \u00c5). (E) Representative images of the Hhal2243 model and surrounding electron density. Maps are displayed as mesh and contoured at 3\u03c3.\u00a0EM,\u00a0electron microscopy.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A)\u00a0Geometry of the HARP dodecamer. (B, C) Hypothetic geometric scenarios that would allow a continuation of oligomerization beyond a dodecamer. In (B), the screw diameter would be expanded, while in (C) a helical pitch would be increased to such an extent that any steric interference between the first and last dimers is avoided.\n\n### Oligomerization and its influence on pre-tRNA processing activity\n\nOur findings and the conservation of HARPs suggested that the dodecameric superstructure represents a conserved feature of HARPs and might therefore be required for their RNase P-like activity. To scrutinize this idea, we took a closer look at the interactions between two dimers. The covered interface between neighboring dimers extends over 900 \u00c52 and involves the long \u03b14\u2013\u03b15 loop of one monomer and the \u03b17\u2013\u03b18 loop as well as helix \u03b18 of the respective other monomer (Figure 2A). The interactions between interdimer residues are mainly of polar nature.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Oligomer interface between two monomers (colored in blue and olive) of interacting dimers. The C-terminus starting at residue 177 is colored in red to highlight the region deleted in the \u2018shortest\u2019 Aq880 variant (\u0394177\u2013191). Salt bridges are indicated with yellow dashed lines. (B) Mass photometry of Hhal2243, Aq880 wt, Aq880\u0394184\u2013191, Aq880\u0394181\u2013191, Aq880\u0394179\u2013191,\u00a0and Aq880\u0394177\u2013191. Molecular masses corresponding to the respective Gaussian fits are shown in kDa above the fits. (C) Processing of pre-tRNAGly by Aq880 wt and derived mutant variants. Aliquots were withdrawn at different time points (1, 3, 10, or 25 min) of incubation at 37\u00b0C; 0, substrate without addition of enzyme. Aq880 wt in comparison with the C-terminal deletion variants \u0394177\u2013191, \u0394179\u2013191, \u0394181\u2013191, and \u0394184\u2013191, all at 500 nM enzyme. For more details, see Materials and methods. Source data of phosphor images are available in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Chromatogram of the Ni-ion-affinity chromatography (HisTrap 5 mL column). (B) 12% TGX-gel of fractions from the HisTrap. Source data of the SDS-PAGEs are available in Figure 2\u2014figure supplement 1\u2014source data 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Samples were analyzed on a Superose 6 10/300 GL column using an \u00c4KTA Purifier (GE Healthcare) FPLC system operated at room temperature. The running buffer contained 20 mM Tris-HCl pH 8.0, 100 mM KCl, 0.1 mM EDTA, and 3 mM DTT. The flow rate was 0.5 mL/min. (A) Overlay of two column runs with three marker proteins each, termed Standard Mix 1 and 2 (Gel Filtration Markers Kit for Protein Molecular Weights 12\u2013200 kDa and Apoferritin, Merck Sigma-Aldrich). Identities of individual proteins and elution volumes of the respective peak fractions are indicated; ADH, alcohol dehydrogenase; BSA, bovine serum albumin. (B) Elution profile of Aq880 wt. (C) Elution profiles of C-terminal deletion variants of Aq880 lacking the indicated amino acids of the native protein. The elution profiles in panel A suggest an approximate mass of 430 kDa for Aq880 wt. The elution volumes of the C-terminal deletions mutants suggest molecular masses between ~55 and 68 kDa.\n\nTo investigate the oligomerization behavior, we employed MP, a method allowing for the rapid and reliable determination of the dynamic oligomeric distribution of macromolecules in solution (Sonn-Segev et al., 2020; Soltermann et al., 2020). Application of this method to Hhal2243 revealed a stable dodecameric assembly of 295 kDa that included 98% of all molecules in the sample (Figure 2B, top left panel). To compare this oligomerization behavior with that of Aq880, we purified Aq880 by Ni-ion affinity chromatography and SEC (Figure 2\u2014figure supplements 1 and 2). Interestingly, despite their similar behavior on SEC, MP of Aq880 unveiled a major species at 277 kDa that, however, included only 47% of all molecules, while several subspecies with lower molecular weights became visible (Figure 2B, top right panel; supplementary file 1b). This polydispersity of Aq880, not detectable in SEC profiles, is probably the reason why all structural approaches failed so far in the case of Aq880.\n\nTo investigate whether oligomerization of Aq880 might impact its pre-tRNA processing activity, we analyzed the oligomer interface of the Hhal2243 structure in more detail. As outlined above, the interdimer interaction involves the\u00a0\u03b14\u2013\u03b15 loop of one monomer (e.g., monomer 1) and the \u03b17\u2013\u03b18 loop as well as the C-terminal helix \u03b18 of the other monomer (e.g., monomer 2) provided by the neighboring dimer (Figure 2A). This implied that C-terminal protein truncations affecting the integrity of helix \u03b18 will impede oligomer formation. We thus evaluated the ability of C-terminally truncated Aq880 variants to oligomerize by MP and their activity in pre-tRNA processing experiments. Five truncated variants of Aq880 were purified to homogeneity and analyzed by SEC (Figure 2\u2014figure supplement 2). Notably, SEC calibration suggested molecular masses of 55\u201368 kDa for all truncated Aq880 variants (Figure 2\u2014figure supplement 2). MP of protein variant Aq880\u0394184\u2013191 still showed a considerable subfraction (~18%; see supplementary file 1b) of higher-order oligomers (\u2265133 kDa), whereas Aq880\u0394181\u2013191 formed only 4% hexamer (peak at 134 kDa), 41% tetramer (peak at 81 kDa) beyond the dimer subfraction at 42 kDa (Figure 2B, middle panels; supplementary file 1b). Further truncation of Aq880 had an impact on protein stability, as judged by lower purification yields, and MP revealed that variants Aq880\u0394179\u2013191 and Aq880\u0394177\u2013191 form only dimeric species (Figure 2B, lower panels). Processing assays revealed that deletion of residues 184\u2013191 resulted in a protein that still had substantial activity, while all the other truncations showed almost no activity or were entirely inactive (Table 1, Figure 2C). Thus, our experiments show that the activity of the enzyme in pre-tRNA processing assays depends on its ability to form higher-order oligomers.\n\n**Table 1.**\n Processing activities of Aq880 variants.n.d., no cleavage detectable.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Aq880 variant</th>\n      <th>kobs (min-1) (\u00b1SD)</th>\n      <th>Substrate cleaved after 25 min (in %)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>wt 50 nM wt 500 nM</td>\n      <td>0.62 \u00b1 0.15 2.06 \u00b1 0.42</td>\n      <td>95 98</td>\n    </tr>\n    <tr>\n      <td>\u2206184\u2013191 50 nM \u2206184\u2013191 500 nM</td>\n      <td>0.22 \u00b1 0.08 1.41 \u00b1 0.07</td>\n      <td>46 97</td>\n    </tr>\n    <tr>\n      <td>\u2206181\u2013191 500 nM \u2206179\u2013191 500 nM</td>\n      <td>(4 \u00b1 1)\u00a0\u00d7 10\u20133 (7 \u00b1 3)\u00a0\u00d7 10\u20133</td>\n      <td>9 15</td>\n    </tr>\n    <tr>\n      <td>\u2206177\u2013191 500 nM</td>\n      <td>\u2013</td>\n      <td>n.d.</td>\n    </tr>\n    <tr>\n      <td>R125A 50 nM R125A 500 nM</td>\n      <td>(15 \u00b1 3)\u00a0\u00d7 10\u22124 (16.1 \u00b1 0.3) \u00d7 10\u20132</td>\n      <td>2 26</td>\n    </tr>\n    <tr>\n      <td>R129A 500 nM</td>\n      <td>\u2013</td>\n      <td>n.d.</td>\n    </tr>\n    <tr>\n      <td>R125A/R129A 500 nM</td>\n      <td>\u2013</td>\n      <td>n.d.</td>\n    </tr>\n    <tr>\n      <td>K119A/R123A/R125A/K127A/R129A 500 nM</td>\n      <td>\u2013</td>\n      <td>n.d.</td>\n    </tr>\n  </tbody>\n</table>\n\n### The active site is conserved among HARPs and PRORPs\n\nPhylogenetic analyses indicate that the two protein-only RNase P systems found in bacteria and eukarya evolved independently (Lechner et al., 2015; Nickel et al., 2017). This is consistent with the different structural basis of the two types of enzymes acting on tRNAs. PRORPs are composed of a PPR domain important for substrate recognition, a central zinc finger domain, and a flexible hinge connecting it to the metallonuclease domain (Howard et al., 2012; Teramoto et al., 2020). In contrast, HARPs solely consist of a metallonuclease domain (Figure 3A). The active sites of both molecules superpose well with a root mean square deviation (r.m.s.d.) of 0.445 over 30 C\u03b1 atoms. More precisely, the \u03b2-strands 5, 6, and 8, and the \u03b1-helices 16 and 20 within the metallonuclease domain of Arabidopsis thaliana PRORP1 (AtPRORP1) were used for the structural superposition with \u03b21, \u03b24, \u03b11, and \u03b16 of Hhal2243, as the overall scaffold of the two metallonuclease domains is related but shows large structural deviations. In earlier studies, we could already show that the catalytic aspartates D7, D138, D142, and D161 are indispensable for Aq880 activity (Nickel et al., 2017; Schwarz et al., 2019). Our Hhal2243 structure supports the prediction that these residues constitute the active site of the protein (Figure 3B), including an almost perfect superposition with three of the four active site aspartates of AtPRORP1 (D399, D475, and D493; Howard et al., 2012;\u00a0Figure 3B). We conclude that the mechanism of catalysis is conserved among the two distinct protein families with RNase P activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Superposition of AtPRORP1 (PDB: 4G24) and Hhal2243 shows that the metallonuclease domain superposes well, while the PPR domain is absent in HARPs. The red rectangle shows the closeup in (B). (B) Orientation of active site residues is conserved among PRORPs and HARPs; the active site residues are positioned similarly in both enzyme types. AtPRORP1 is colored in gray and Hhal2243 in blue.\n\n### The SH domain is critical for RNase P activity\n\nIn the next step, we sought to identify those amino acid residues that are required for the interaction of the enzyme with its pre-tRNA substrate. Helices \u03b15 and \u03b16 of the SH domain expose several conserved arginines and lysines that might be critical for pre-tRNA binding. Notably, several of the residues lie within the distal part of the SH domain that was not resolved in our cryo-EM structure, likely due to a high degree of conformational flexibility. As secondary structure predictions indicated a continuation of the helical arrangement in this region, we generated a homology model of Aq880 based on the Hhal2243 structure and the secondary structure prediction (Figure 4\u2014figure supplement 1A). The resulting Aq880 model was further verified by rigid-body docking into the electron density map of our Hhal2243 structure (Figure 4\u2014figure supplement 1B).\n\nAll residues that were varied to alanines are within the distal part of helix \u03b16 of the SH domain (Figure 4A). Variation of the entire positive arginine/lysine stretch resulted in the inability of the mutant protein to cleave off the 5\u2019-leader sequence (Figure 4B). To narrow down the critical residues, we generated the R125A/R129A double mutant and protein variants with single mutations of R125 or R129. While both R129A and the double mutant R125A/R129A were inactive, R125A retained residual activity (Figure 4C, Table 1). Notably, variation of positively charged residues to alanines in the SH\u00a0domain did not significantly change the oligomerization behavior of Aq880 as judged by MP (Figure 4D). Our data suggest that the cluster of positively charged side chains in the SH domain is required for pre-tRNA binding. Although this part is less ordered in our cryo-EM structure, it might become more rigid upon tRNA substrate binding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Homology model of Aq880 with residues critical for pre-tRNA processing activity in the SH domain displayed as sticks. Processing of pre-tRNAGly by Aq880 wt and derived mutant variants. Aliquots were withdrawn at different time points (1, 3, 10, or 25 min) of incubation at 37\u00b0C; 0, substrate without addition of enzyme. (B) Aq880 wt and the quintuple mutant K119A/R123A/R125A/K127A/R129A at 50 nM (left) or 500 nM (right) enzyme; (C) Aq880 wt, the single mutants R125A and R129A, and the double mutant R125A/R129A, assayed at 50 nM (left) or 500 nM (right) enzyme. Source data of phosphor images are available in Figure 4\u2014source data 1. (D) Mass photometry of Aq880R125A, Aq880R129A, and Aq880K119A/R123A/R125A/K127A/R129A. Molecular masses corresponding to the respective Gaussian fits are shown in kDa above the fits. Source data of phosphor images are available in Figure 4\u2014source data 1.\u00a0SH, spike helix.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Sequence alignment of Hhal2243 and Aq880. Secondary structure elements are drawn as observed in the cryo-EM structure of Hhal2243. The secondary structure prediction has been generated using PSIPRED (3) and is shown below the sequence alignment. The alignment colors are according to the physico-chemical properties of the respective amino acids. (B) Electron density map contoured at level 0.12 with the docked Aq880 model shown in yellow.\u00a0EM,\u00a0electron microscopy.\n\n## Discussion\n\nHere, we present the cryo-EM structure of Hhal2243, a member of the recently described HARP family of bacterial and archaeal proteins with RNase P activity (Nickel et al., 2017). Our combined structural and biochemical analysis sheds light on this prokaryotic minimal protein-only RNase P system.\n\nThe Hhal2243 HARP structure assembles into a homo-dodecameric ultrastructure. The dodecamer consists of six dimers that oligomerize in a screw-like fashion (Figure 1). The monomeric subunits of the dimers interact via their SH domains. There are many examples of proteins forming symmetric homo-dodecameric assemblies (e.g., glutamine synthase\u00a0[van Rooyen et al., 2011]; helicases\u00a0[Bazin et al., 2015] or bacterial DNA-binding proteins expressed in the stationary phase (DPS)\u00a0[Roy et al., 2008]) and recent studies have discussed the theoretical types of possible quaternary structures (Laniado and Yeates, 2020; Ahnert et al., 2015). However, the screw-like assembly of HARPs leads to an asymmetric and thus imperfect novel type of oligomer. This way, HARPs form a defined quaternary structure that is not entirely symmetric, while the screw-like assembly terminates the\u00a0incorporation of new subunits at the stage of a dodecamer. By stepwise truncation of the C-terminus of Aq880, oligomerization could be reduced or abolished, which correlated with functional losses (Figure 2C). Our results thus clearly show that only oligomeric species of HARP are able to cleave the 5\u2019-leader sequence of pre-tRNAs.\n\nHARPs belong to the PIN domain-like superfamily of metallonucleases and share this classification with the eukaryotic PRORPs, although the two systems belong to distinct subgroups (Matelska et al., 2017). We compared our structure to the PIN domain of PRORPs and could demonstrate that the active site residues superpose well (Figure 3B), suggesting that the catalytic mechanism is basically conserved. Notably, the two proteins had to be superposed over a small range of C\u03b1\u2212atoms to obtain a good r.m.s.d. (Figure 3A) owing to the large overall differences of the two PIN domains.\n\nWith the knowledge of the structural conservation of the active site, we examined the pre-tRNA substrate recognition and binding by the two protein-only RNase P systems: the crystal structure of the PPR domain of AtPRORP1 in complex with a tRNA unveiled how PRORPs recognize the pre-tRNA via its PPR RNA-binding domain (Teramoto et al., 2020). The characteristic feature of classical pentatricopeptide repeats (PPRs) is that each PPR repeat recognizes a specific nucleotide, allowing high RNA target specificity (Yan et al., 2019). Interestingly, the PPR domain of PRORP recognizes conserved structural elements of tRNAs rather than single nucleotides in a binding mode reminiscent to that of the RNA-based RNase P holoenzyme (Teramoto et al., 2020). More precisely, the elbow region, where D- and T-loop interact, is the main tRNA-protein interaction interface (Teramoto et al., 2020), a feature that became already evident in previous biochemical and biophysical investigations (Pinker et al., 2013; Gobert et al., 2013; Brillante et al., 2016; Pinker et al., 2017). Moreover,\u00a0the same region, representing the most conserved structural element of tRNAs, is also recognized by RNA-based RNase P enzymes (reviewed in Rossmanith and Hartmann, 2020). We thus considered it likely that pre-tRNA recognition by HARPs involves the tRNA elbow region in a similar manner as for all other RNase P types, although we were puzzled by the absence of any evident RNA binding motifs in HARPs. We then focused on exposed positively charged residues and were indeed able to identify a stretch of conserved arginine and lysine residues within the SH domain of the protein. Variation of this positive stretch to alanines rendered the protein inactive (Figure 4).\n\nCombining our knowledge on the active site, on the residues critical for pre-tRNA binding and the correlation of an oligomeric assembly with enzymatic activity, we set out to propose a model for pre-tRNA binding by HARP proteins. Assuming that the outer SH domain, harboring the stretch of positively charged amino acid side chains, interacts with the tRNA elbow, then the distance of approximately 45 \u00c5 between the outer SH domain of one dimer and the active site of the neighboring dimer perfectly positions one pre-tRNA molecule for cleavage (Figure 5A). To test this, we used the yeast tRNA from the PRORP structure as model (Teramoto et al., 2020) and could perfectly dock it onto our HARP structure (Figure 5B). Notably, in this scenario, the D-loop is near helix \u03b13 (Figure 5B). We thus also consider it likely that residues within \u03b13 are involved in the\u00a0coordination of the D-loop. Our proposed tRNA binding mode considers that oligomerization is strictly required for HARP activity. This framework enables the cooperation of two adjacent dimers, where one monomer of each dimer binds the tRNA elbow in such a manner that the pre-tRNA cleavage site, at a distance of ~45 \u00c5, directly reaches into the active site of the monomer from the neighboring dimer (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Surface of two adjacent Aq880 dimers colored according to the calculated electrostatic potential. The proposed recognition site for the tRNA elbow and the active site is indicated by curved dashed green lines; the distance between the two regions is approximately 45 \u00c5. The almost vertical straight and dashed line marks the interdimer axis. The distance between the two regions is approximately 45 \u00c5. The remaining subunits of the dodecamer are shown as cartoon in the background. (B) Closeup of the Aq880 surface colored in blue and olive. The tRNAPhe, taken from the PRORP PPR domain co-structure (PDB: 6LVR), was docked onto our structure. The model predicts how the tRNA is coordinated via positive residues within the SH domain (of monomer 6* in this example) to position the 5\u2019-end in close proximity to the active site of the neighboring dimer (of monomer 5* in this example). (C) Left: sketch of the Hhal2243 homo-dodecamer with docked tRNAs as side view. The view is rotated by 75\u00b0 compared to the view in Figure 1A indicated by a sketch in the upper left corner. Right: sketch of tRNA recognition and cleavage by HARPs shown from the top. Numbers indicate monomers.\n\nAccording to this scenario and as exemplarily illustrated in Figure 5B, the SH domain of monomer 6* would bind the tRNA elbow region, while the tRNA 5\u2019-end is docked into the active site of monomer 5*. This way, five pre-tRNAs can potentially be docked onto the upper or lower layer of the dodecameric, distorted double donut structure (Figure 5C). This raises the question, how likely the simultaneous occupancy of all 10 potential tRNA binding sites is. So far, we have been unable to obtain stable HARP:tRNA complexes at submicromolar concentrations, for\u00a0example, on size exclusion columns. However, considering that tRNA concentration within an Escherichia coli cell was estimated to be 0.5 mM (Goodsell, 1991), conditions might be conceivable (e.g., after shutdown of protein synthesis) at which all 10 tRNA binding sites could be saturated. Another possibility is cooperative tRNA binding, such that binding of one tRNA allosterically facilitates binding of the next one. Such a model could also explain the observed requirement of a higher-order oligomer structure for RNase P activity. However, we found no evidence for cooperativity in pre-tRNA cleavage kinetics catalyzed by Aq880 under multiple turnover conditions (Nickel et al., 2017).\n\nAlthough the model is hypothetical at present, other pre-tRNA binding modes seem unlikely based on the spatial constraints imposed by the dodecameric HARP structure and the uniformity and rigidity of prokaryotic tRNAs. Our data furthermore suggest that in the higher oligomeric assemblies, the dimers mutually stabilize by each other for productive pre-tRNA processing. Variant Aq880\u0394181\u2013191 still forms tetramers and a low number of hexamers but is only 10% active (Figure 2B,C). In contrast, Aq880\u0394184\u2013191 also assembles into octamers, decamers, and a small subset of even dodecamers but retains over 90% activity (Figure 2B,C, Table 1). We thus consider it likely that higher oligomers form a more rigid scaffold, while a tetramer alone is too flexible for efficient binding and cleavage of precursor tRNAs. HARPs thus represent an impressive example of how a more complex biological task can be accomplished by a small protein that assembles into a large homo-oligomeric ultrastructure, and where different monomers contribute distinct partial functions.\n\nTaken together, we here present the molecular framework for pre-tRNA processing by HARPs and show that this enzyme system, although it evolved independently of PRORPs, shares conserved features with eukaryotic PRORPs concerning pre-tRNA recognition and nuclease activity.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Aquifex aeolicus)</td>\n      <td>Aq_880</td>\n      <td>GenBank</td>\n      <td>AAC07003.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Halorhodospira halophila)</td>\n      <td>Hhal_2243</td>\n      <td>GenBank</td>\n      <td>ABM63007.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Rosetta (DE3)</td>\n      <td>Merck Novagen</td>\n      <td>70954\u20133</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Lemo21 (DE3)</td>\n      <td>NEB Biolabs</td>\n      <td>HC2528J</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>6\u00d7His Tag HRP (mouse monoclonal)</td>\n      <td>Thermo Fisher Scientific, Invitrogen</td>\n      <td>Catalog #MA1-21315-HRP</td>\n      <td>Dilution 1:5000</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Gel Filtration Markers Kit for Protein Molecular Weights12\u2013200 kDa</td>\n      <td>Merck Sigma-Aldrich</td>\n      <td>MWGF200</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Apoferritin</td>\n      <td>Merck Sigma-Aldrich</td>\n      <td>A3660</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Adobe Illustrator CC</td>\n      <td>Adobe</td>\n      <td></td>\n      <td>Version 25.0</td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Adobe Photoshop CC</td>\n      <td>Adobe</td>\n      <td></td>\n      <td>Version 22.0.0</td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>CryoSparc</td>\n      <td>doi: 10.1038/nmeth.4169</td>\n      <td></td>\n      <td>v3.1</td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>CTFfind4</td>\n      <td>doi: 10.1016/j.jsb.2015.08.008</td>\n      <td></td>\n      <td>Version 4.1.14</td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Topaz</td>\n      <td>doi: 10.1038/s41592-019-0575-8</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>COOT</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n      <td></td>\n      <td>Version 0.9.3</td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Phenix</td>\n      <td>http://www.phenix-online.org</td>\n      <td></td>\n      <td>Version 1.18</td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>UCSF ChimeraX</td>\n      <td>https://www.cgl.ucsf.edu/chimerax/</td>\n      <td></td>\n      <td>Version 1.2.5</td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Molprobity</td>\n      <td>Duke Biochemistry,http://molprobity.biochem.duke.edu/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>PyMol 2</td>\n      <td>https://pymol.org/2/</td>\n      <td></td>\n      <td>Version 2.0.6</td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>AcquireMP</td>\n      <td>Refeyn (https://www.refeyn.com)</td>\n      <td></td>\n      <td>v.2.3</td>\n    </tr>\n  </tbody>\n</table>\n\n### Molecular cloning and plasmid generation\n\nIn order to overexpress the Aq880cHis protein, a pET-28a(+)_Aq880cHis plasmid was constructed. For this purpose, the genomic DNA of A. aeolicus strain was isolated and used as template for amplification of the aq_880 gene with the primer pair listed in supplementary file 1c as described by (1). The PCR product was inserted into the pET-28a(+) vector via XhoI and NcoI restriction sites. For all the Aq880cHis variants, site-directed mutagenesis was done to gain either the C-terminal truncated proteins or the arginine and lysine-to-alanine mutants. The polymerase chain reaction\u00a0(PCR) was performed using the Platinum SuperFi PCR Master Mix (Invitrogen) and the primers listed in supplementary file 1c. For the pET-28a(+)_Hhal2243nHis construct, isolated chromosomal DNA of H. halophila was used as template, and the PCR amplified product (primers listed below) was inserted via the restriction sites NheI and Bpu1102I into the pET-28a(+) vector (2). For Primer and plasmid constructions, see the Supplementary file 1c.\n\n### Expression and purification of recombinant proteins\n\n#### Preparation of Hhal2243\n\nFor recombinant overexpression of the HARP from H. halophila SL1 (Hhal2243) with N-terminal His tag, a pET28(+) Hhal2243nHis plasmid was introduced into Lemo21 (DE3) competent E. coli cells as well as into the Rosetta (DE3) strain. For protein expression in the Lemo21 strain, an LB broth culture supplemented with 50 \u00b5g/mL kanamycin and 34 \u00b5g/mL chloramphenicol was incubated for 6 hr at 37\u00b0C. The main culture was inoculated 1:50 with this pre-culture supplemented with 500 \u00b5M rhamnose. After 2 hr at 37\u00b0C, overexpression of the Hhal2243nHis protein was induced upon addition of IPTG (0.4 mM) and cells were incubated for another 16 hr. Protein expression in the Rosetta strain was done as described below for Aq880 and mutants thereof. Cells obtained in both expression systems were harvested by centrifugation at 2000\u00d7g for 30 min at 4\u00b0C and combined. The combined cell pellets were resuspended in NPI-20 buffer (50 mM NaH2PO4/NaOH, pH 8.0, 300 mM NaCl, and\u00a020 mM imidazole) and disrupted by sonification (output control: 50%, duty cycle: 50%, output: 20%) in three cycles for 2 min on ice. After centrifugation (4\u00b0C, 1 hr, 10,500\u00d7g), the lysate was filtered and loaded onto a 1 mL HisTrap column. Elution was performed with NPI-500 buffer (as NPI-20, but containing 500 mM imidazole) applying a linear gradient over 30 column volumes (Figure 1\u2014figure supplement 1A), and HARP-containing fractions were dialyzed against thrombin cleavage buffer (10 mM Tris-HCl, pH 8.0, 100 mM KCl, 0.1 mM EDTA, 2 mM CaCl2, and\u00a010% (v/v) glycerol). The N-terminal His6-tag was then removed by digestion with thrombin (\u22481 U/mg; GE Healthcare) at 4\u00b0C overnight. For removal of thrombin and further purification, the protein fractions were subjected to MonoQ anion-exchange chromatography (Figure 1\u2014figure supplement 1A). The tag-free HARP was eluted with thrombin cleavage buffer containing 1 M KCl and dialyzed against \u2018crystallization buffer\u2019 (10 mM Tris-HCl pH 8.0, 100 mM KCl, and\u00a00.1 mM EDTA). Protein purity was analyzed by 15% SDS-PAGE (Figure 1\u2014figure supplement 1B), and successful removal of the His6-tag by thrombin digestion was verified using an \u03b1\u22126His-HRP antibody (Figure 1\u2014figure supplement 1C). The protein was frozen in liquid nitrogen and stored at \u221280\u00b0C. All protein concentrations were determined via Bradford assay. All protein preparations were nucleic acid-free based on absorption ratios > 1 for 280/260 nm.\n\n#### Preparation of Aq880 and mutants\n\nAq880 with C-terminal His6 tag (Aq880cHis) and mutants thereof were overexpressed in Rosetta (DE3) cells in LB autoinduction medium (0.2% [w/v] lactose, 0.05% [w/v] glucose) supplemented with 50 \u00b5g/mL kanamycin and 34 \u00b5g/mL chloramphenicol. Cells grown at 37\u00b0C for 18\u201322 hr were harvested by centrifugation at 2000\u00d7g for 30 min at 4\u00b0C. After resuspension in NPI-20 buffer (see above), cells were lysed via sonification (output control: 50%, duty cycle: 50%, output: 20%) in five cycles (each 2 min) and with cooling on ice between the cycles. After centrifugation (10,500\u00d7g for 4\u00b0C, 1 hr), the lysate was filtered and loaded onto a 1 mL HisTrap column. Elution was performed with NPI-500 buffer applying a step gradient in 20% steps over 20 column volumes. Protein purity was analyzed using 12% stain-free TGX gels detected via the ChemiDoc MP Imaging System (BioRad). The protein was dialyzed against \u2018storage buffer\u2019 (10 mM Tris-HCl pH 8.0, 100 mM KCl, 10 mM MgCl2, 0.1 mM EDTA, 3 mM DTT immediately added before use, and\u00a050% [v/v] glycerol) and stored at \u221220\u00b0C. For analyzing the protein's oligomerization state, analytical SEC was performed. Beforehand, Aq880cHis was purified over a MonoQ column and eluting protein fractions were dialyzed against \u2018crystallization buffer\u2019 (10 mM Tris-HCl pH 8.0, 100 mM KCl, and\u00a00.1 mM EDTA). Then 250 \u00b5L protein (0.2\u20132.3 mg) was loaded onto the Superose 6 10/300 GL column. To obtain a calibration curve for molecular mass estimation, protein standards (Merck Sigma-Aldrich) specified in Figure 2\u2014figure supplement 2 were separated on the same column.\n\n#### Cryo-EM grid preparation and data collection\n\nTo prepare cryo-EM grids, 3 \u00b5L of Hhal2243 at 100 \u00b5M concentration was applied to CF 1.2/1.3 grids (Protochips) that were glow-discharged 20 s immediately before use. The sample was incubated 30 s at 100% humidity and 10\u00b0C before blotting for 11 s with blotforce \u22122 and then plunge-frozen into a liquid ethane cooled by liquid nitrogen using a Vitrobot Mark IV (FEI). Data were acquired on a Titan Krios electron microscope (Thermo Fisher Scientific, FEI) operated at 300 kV, equipped with a K3 direct electron detector (Gatan). Movies were recorded in counting mode at a pixel size of 0.833 \u00c5\u00a0per pixel using a cumulative dose of 40 e\u2212/\u00c52 and 40 frames. Data acquisition was performed using EPU two with two exposures per hole with a target defocus range of 1.5\u20132.4 \u03bcm.\n\n#### Cryo-EM data processing\n\nThe Hhal2243 dataset was processed in CryoSparc v3.1 (Punjani et al., 2017). Dose-fractionated movies were gain-normalized, aligned, and dose-weighted using Patch Motion correction. The contrast transfer function (CTF) was determined using CTFfind4 (Rohou and Grigorieff, 2015). A total of 52,710 particles was picked using the blob picking algorithm and used to train a model that was subsequently used to pick the entire dataset using TOPAZ (Bepler et al., 2019). A total of 2,749,587 candidate particles were extracted and cleaned using iterative-rounds of reference-free 2D classification. The 2,665,011 particles after 2D classification were used for ab initio model reconstruction. The particles were further iteratively classified in 3D using heterogenous refinement. The 1,736,597 particles belonging to the best-aligning particles were subsequently subjected to homogenous 3D refinement, yielding 3.37 \u00c5 global resolution and a B-factor of \u2212181.8 \u00c52.\n\n#### Model building\n\nThe reconstructed density was interpreted using COOT (Emsley and Cowtan, 2004); a model was built manually into the electron density of the best resolved molecule and superposed to reconstruct the symmetry mates. Model building was iteratively interrupted by real-space refinements using Phenix (Liebschner et al., 2019). Statistics assessing the quality of the final model were generated using Molprobity (Chen et al., 2010). Images of the calculated density and the built model were prepared using UCSF Chimera (Pettersen et al., 2004), UCSF ChimeraX (Goddard et al., 2018), and PyMOL.\n\n#### Mass photometry\n\nMP experiments were performed using a OneMP mass photometer (Refeyn Ltd, Oxford, UK). Data acquisition was performed using AcquireMP (Refeyn Ltd. v2.3). MP movies were recorded at 1 kHz, with exposure times varying between 0.6 and 0.9 ms, adjusted to maximize camera counts while avoiding saturation. Microscope slides (70\u00a0\u00d7 26 mm2) were cleaned for 5 min in 50% (v/v) isopropanol (HPLC grade in Milli-Q H2O) and pure Milli-Q H2O, followed by drying with a pressurized air stream. Silicon gaskets to hold the sample drops were cleaned in the same manner and fixed to clean glass slides immediately prior to measurement. The instrument was calibrated using the NativeMark Protein Standard (Thermo Fisher Scientific) immediately prior to measurements. The concentration during measurement of Aq880, Aq880 mutants, or Hhal2243 during measurements was typically 100 nM. Each protein was measured in a new gasket well (i.e., each well was used once). To find focus, 18 \u00b5L of fresh buffer (10 mM Tris pH 8.0, 100 mM KCl, and\u00a00.1 mM EDTA) adjusted to room temperature was pipetted into a well, the focal position was identified and locked using the autofocus function of the instrument. For each acquisition, 2 \u00b5L of diluted protein was added to the well and thoroughly mixed. For each sample, three individual measurements were performed. The data were analyzed using the DiscoverMP software.\n\n#### Pre-tRNA processing assays\n\nActivity of recombinant HARPs was analyzed essentially as described (Nickel et al., 2017). Processing assays were carried out in buffer F (50 mM Tris-HCl, pH 7.0, 20 mM NaCl, and\u00a05 mM DTT added immediately before use) supplemented with 4.5 mM divalent metal ions (usually 4.5 mM MgCl2). Cleavage assays were performed with 50 or 500 nM HARP and ~5 nM 5\u2019-32P-labeled pre-tRNAGly. Enzyme and substrate were preincubated separately (enzyme: 5 min at 37\u00b0C; substrate 5 min at 55\u00b0C/5 min at 37\u00b0C). To start the reaction, 4 \u00b5L of substrate mix was added to 16 \u00b5L enzyme mix. At different time points, 4 \u00b5L aliquots were withdrawn, mixed with 2\u00d7 denaturing loading buffer (0.02% [w/v] bromophenol blue, 0.02% [w/v] xylene cyanol blue, 2.6 M urea, 66% [v/v] formamide, and\u00a02\u00d7 TBE) on ice and subjected to electrophoresis on 20% denaturing polyacrylamide gels. 5\u2019-32P-labeled pre-tRNAGly substrate and the cleaved off 5\u2019-leader product were visualized using a Bio-Imaging Analyzer FLA3000-2R (Fujifilm) and quantified with the AIDA software (Raytest). First-order rate constants of cleavage (kobs) were calculated with Grafit 5.0.13 (Erithacus Software) by nonlinear regression analysis. HARP working solutions, obtained by dilution from stock solutions, were prepared in EDB buffer (10 mM Tris-HCl pH 7.8, 30 mM NaCl, 0.3 mM EDTA, and\u00a01 mM DTT added immediately before use) and kept on ice before use; ~1 \u00b5L enzyme working solution was added to the aforementioned enzyme mix (\u03a316 \u00b5L). All experiments were at least performed in triplicates.\n",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "ea4bdefe-b6f5-4609-91d3-848777fd74e8",
+      "submission_id": "a4906e13-e80e-43b0-a22d-36941ee5178c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Philip A Cole, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70160.sa1](https://doi.org/10.7554/eLife.70160.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nNature has evolved remarkably different enzymes for the essential processing of 5\u00b4 ends of pre-tRNAs. The ribonucleoprotein RNase P uses its RNA component for pre-tRNA recognition and catalysis, the protein-only RNase P (PRORP) contains a pentatricopeptide repeat domain for pre-tRNA recognition and a nuclease domain for catalysis, and more recently a new family, Homolog of Aquifex RNase P (HARP), was identified. The HARPs seem mysterious as they are quite small (~23 kDa) and form oligomers. Although they appeared to possess a catalytic domain, it was unclear how they would recognize and process pre-tRNAs. Here the authors have addressed these questions by determining a cryo-EM structure of a dodecameric HARP, Hhal2243, and using the structural information to strikingly demonstrate the essential nature of the oligomerization for enzymatic activity of the Aquifex HARP, Aq880. Enzymatic activity assays with mutant enzymes identify basic residues for pre-tRNA substrate recognition, and a preliminary HARP/tRNA model suggests a possible mode for pre-tRNA recognition and catalysis by the dodecamer. The authors responded comprehensively and effectively to the prior concerns raised and included new data about the oligomerization state of the mutant enzymes. The revised manuscript is acceptable for publication.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structure and mechanistic features of the prokaryotic minimal RNase P\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing and Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and we have drafted this to help you prepare a revised submission. There was strong enthusiasm for this study and almost all the requested revisions, though rather numerous, are related to improving the text and figure presentation.\n\nEssential revisions:\n\n1) The authors aligned their cryo-EM model with the crystal structure of the Arabidopsis PRORP1 to show that the arrangement of catalytic acidic residues is conserved in these two families, although I believe the overall structure of each protein family is distinct. To clarify this point, please explain the structural alignment more (page 9, lines 178-179). Are the folds distinct, yet the catalytic residues align? The authors should consider moving Figure S5 to the main figures. The conservation of the arrangement of catalytic residues will likely be of interest to enzymologists fascinated by the consistent geometric arrangement produced by distinct structural scaffolds.\n\n2) The authors identified two basic residues, R125 and R129, that are located in the spike-helix region of the protein. Mutation of either or both arginine residues to alanine abrogates enzymatic activity. The authors did not include experimental data (such as mass photometry) to confirm oligomerization status of these point mutants. This is a critical control that is necessary to support the conclusion.\n\n3) The manuscript could be considerably strengthened if elements could be provided to support the proposed model for tRNA binding. Obviously the 3D structure of complex with pre-tRNA would validate (or not) the hypothesis presented here. While this is not required for this particular publication, could authors at least mention, if they attempted to obtain such a structure and if they did so, describe what they tried. In addition, Figure 3 describing SH domain mutants should be renamed \"SH domain is essential for RNase P activity\" because only RNase P activity was measured and not tRNA binding. Although I agree with authors that their data very strongly suggest a requirement of the distal part of helix a6 from the SH domain for tRNA binding, their results do not directly show it. This assumption and the resulting model for HARP / tRNA interaction would be considerably strengthened if authors could directly measure pre-tRNA interactions with the one or two mutants compared to wild-type using techniques such as micro scale thermophoresis or similar techniques.\n\n4) If the authors elect not to perform additional experiments on characterizing the pre-tRNA interaction with their RNAse P (which will not be required by eLife), we request additional edits. We found somewhat confusing to understand which monomers were engaging pre-tRNA, and we recommend improving the presentation of the model and how it was generated. Including the coordinates of the model as a supplement file would be important.\n\n5) It would be helpful to establish clear and consistent nomenclature for the individual subunits and dimers and to add labels to figures. For example, Figure 1A refers to both monomer and dimer subunits and a dimer subunit is shown in Figure 1C that seems to include monomer N and N\u00b4 but a different interface is shown in Figure 2A (monomer N and N+1). Labeling the monomers and the two different types of interfaces would prevent confusion throughout the manuscript. I suggest numbering the chains in the PDB file to roughly follow the nomenclature.\n\n6) How well do the different dimers superimpose, such as 1/1\u00b4 with 2/2\u00b4, etc. or 1/2 with 2/3, etc.? Do the interfaces or monomer-monomer arrangements suggest what causes the screw axis to form? Are there indications of why a dodecamer might be favored or a higher order oligomer prohibited?\n\n7) The relationship of pre-tRNAs to the dodecamer in the protein-RNA model is difficult to appreciate from Figure 4 and the text. The text reads, \"This framework enables the cooperation of two adjacent dimer subunits, where one dimer binds the tRNA elbow in such a manner that the pre-tRNA cleavage site, at a distance of ~45 \u00c5, directly reaches into the active site of the neighboring dimer (Figure 4B).\" Could you please clarify that the adjacent dimer subunits shown in Figures 4A and B are N/N\u00b4 and N+1/N+1\u00b4 and indicate which monomer binds the tRNA elbow and which monomer binds the 5\u00b4 end?\n\n8) Only one recognition site and one active site are labeled in Figures 4A and B. It seems that there are two recognition sites close to each other from N and N\u00b4 monomers and therefore four recognition sites in the dimer of dimers shown in Figures 4A and B. Similarly, there should be four active sites. How did you choose which recognition sites and active sites to engage substrate? It would be helpful to provide a more detailed description of how you eliminated other possibilities. Was there a combination of recognition site and active site that more closely aligned with PRORP models? If you aligned the active sites as in Suppl. Figure 5A, would the tRNA elbow recognition sites of HARP and PRORP be near each other?\n\nPlease consider briefly discussing these points. Do you envision that all five pre-tRNA molecules are engaged via both 5\u00b4 end and T loop? Do you think the binding of one substrate molecule affects binding or cleavage of other pre-tRNAs? Do you know if it is possible to form a stable complex of the dodecamer and pre-tRNA or tRNA in solution to determine stoichiometry?\n\n9) Part of the confusion about the model could be cured by adding labels and descriptions to Figure 4. In Figure 4A, please indicate the orientation relative to Figure 1. We expected that subunit 1 would be on the right and subunit 2 would be on the left, but it seems like PIN and PIN\u00b4 could be mislabeled. In Figure 4C, please label the features of the tRNAs: D loop, T loop, 5\u00b4 end, 3\u00b4 end. Are the model and cartoon showing the same orientation? It seems like they are not the same. Are they flipped 180\u00b0?\n",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9d317156-fad3-4a4b-ad04-2871e42540e4",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C1",
+      "claim": "Endonucleolytic removal of 5'-leader sequences from tRNA precursor transcripts (pre-tRNAs) by ribonuclease P (RNase P) is essential for protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Endonucleolytic removal of 5'-leader sequences from tRNA precursor transcripts (pre-tRNAs) by ribonuclease P (RNase P) is essential for protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement about RNase P function, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "3d7d6974-ae98-44b1-b989-292ef01d26f5",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C2",
+      "claim": "Protein-only versions of RNase P exist in various eukarya (termed PRORPs) and in some bacteria (Aquifex aeolicus and close relatives).",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond RNA-based RNase P enzymes, protein-only versions of the enzyme exert this function in various eukarya (there termed PRORPs) and in some bacteria (Aquifex aeolicus and close relatives)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research establishing the existence of these protein-only RNase P variants.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "ec513b30-80c8-49e1-b904-497068e63643",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C3",
+      "claim": "Both eukaryotic PRORPs and bacterial HARPs belong to distinct subgroups of the PIN domain metallonuclease superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "both enzyme types belong to distinct subgroups of the PIN domain metallonuclease superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is supported by phylogenetic analysis and structural comparisons referenced in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "e3dd5b42-352a-4d78-b08e-d109d4c65182",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C4",
+      "claim": "Homologs of Aquifex RNase P (HARPs) are expressed in some bacteria and many archaea where they coexist with RNA-based RNase P.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologs of Aquifex RNase P (HARPs) are also expressed in some other bacteria and many archaea, where they coexist with RNA-based RNase P and do not represent the main RNase P activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This distribution pattern is supported by genomic surveys and phylogenetic analyses cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "7da5b9d4-67e2-4f6f-8898-5fd4c84b9daa",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C5",
+      "claim": "The structure of bacterial HARP from Halorhodospira halophila was solved by cryo-electron microscopy at 3.37 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we solved the structure of the bacterial HARP from Halorhodospira halophila by cryo-electron microscopy, revealing a novel screw-like dodecameric assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is explicitly stated in the abstract and supported by cryo-EM data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "0584b7c9-8b7d-4440-91a6-b8cf280ed36c",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C6",
+      "claim": "Hhal2243 assembles into a novel screw-like dodecameric structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we solved the structure of the bacterial HARP from Halorhodospira halophila by cryo-electron microscopy, revealing a novel screw-like dodecameric assembly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural organization is directly observed in the cryo-EM structure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "0b136d3b-8c5f-40ef-a3ec-d6fd5ca30b3a",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C7",
+      "claim": "Oligomerization is required for RNase P activity of HARPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical experiments demonstrate that oligomerization is required for RNase P activity of HARPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through C-terminal truncation experiments and mass photometry data showing correlation between oligomeric state and activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "47db603d-2f0b-4ec7-bb20-485e72457c74",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C8",
+      "claim": "The tRNA substrate binds to an extended spike-helix (SH) domain that protrudes from the screw-like assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the tRNA substrate binds to an extended spike-helix (SH) domain that protrudes from the screw-like assembly to position the 5'-end in close proximity to the active site of the neighboring dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed based on structural analysis, mutagenesis data showing critical residues in the SH domain, and modeling of tRNA binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "6b57aedf-5e54-4d9e-ae4b-fc79e7c7fe12",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C9",
+      "claim": "Eukaryotic PRORPs and prokaryotic HARPs recognize the same structural elements of pre-tRNAs (tRNA elbow region and cleavage site).",
+      "claim_type": "EXPLICIT",
+      "source": "The structure suggests that eukaryotic PRORPs and prokaryotic HARPs recognize the same structural elements of pre-tRNAs (tRNA elbow region and cleavage site).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural comparisons and the positioning of conserved residues relative to modeled tRNA substrates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "ba477e16-80f2-479a-9c9c-b61e6ac80661",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C10",
+      "claim": "RNA-based RNase P consists of a structurally conserved catalytic RNA molecule that associates with varying numbers of protein cofactors (1 in bacteria, 5 in archaea, and 9-10 in eukarya).",
+      "claim_type": "EXPLICIT",
+      "source": "The former consists of a structurally conserved, catalytic RNA molecule that associates with a varying number of protein cofactors (1 in bacteria, 5 in archaea, and 9\u201310 in eukarya [Klemm et al., 2016; Jarrous and Gopalan, 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "c2d3e43f-b149-4f20-87ba-0ef2e44d25cf",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C11",
+      "claim": "Protein-only RNase P enzymes arose independently twice in evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-only enzymes arose independently twice in evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic analyses showing distinct evolutionary origins for PRORPs and HARPs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "6c015a9a-5105-4974-84a9-49af2e2206fa",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C12",
+      "claim": "PRORP originated at the root of eukaryotic evolution and is present in four of the five eukaryotic supergroups.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukarya, a protein-only RNase P (termed PRORP) apparently originated at the root of eukaryotic evolution and is present in four of the five eukaryotic supergroups (Lechner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This evolutionary history is supported by phylogenetic analysis cited from Lechner et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "9cc46468-81a3-4ec8-a396-2965bf0eb5d9",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C13",
+      "claim": "Land plants harbor PRORP enzymes in the nucleus, mitochondria, and chloroplasts.",
+      "claim_type": "EXPLICIT",
+      "source": "such as land plants harboring PRORP enzymes in the nucleus, mitochondria, and chloroplasts (Gobert et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This subcellular distribution is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "c3188035-1fc2-410b-be09-dddc9ac86112",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C14",
+      "claim": "In metazoan mitochondria, PRORP requires two additional protein cofactors for efficient function.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoan mitochondria, PRORP requires two additional protein cofactors for efficient function (Holzmann et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This requirement is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "388cf48a-bb2c-4838-9524-f76a95483899",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C15",
+      "claim": "A bacterial protein-only RNase P associated with a single polypeptide as small as ~23 kDa was discovered in Aquifex aeolicus.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, a bacterial protein-only RNase P, associated with a single polypeptide as small as ~23 kDa, was discovered in the hyperthermophilic bacterium Aquifex aeolicus that lost the genes for the RNA and protein subunits (rnpB and rnpA) of the classical and ancient bacterial RNase P (Nickel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This discovery is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "0fee3c9d-e004-46dc-bf0a-f6a0fa7bf5d1",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C16",
+      "claim": "Aquifex aeolicus lost the genes for the RNA and protein subunits (rnpB and rnpA) of the classical bacterial RNase P.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, a bacterial protein-only RNase P, associated with a single polypeptide as small as ~23 kDa, was discovered in the hyperthermophilic bacterium Aquifex aeolicus that lost the genes for the RNA and protein subunits (rnpB and rnpA) of the classical and ancient bacterial RNase P (Nickel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This genomic observation is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "1a9420ed-2ae7-4d53-acba-7de7ad7be9ae",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C17",
+      "claim": "HARP genes were identified in 5 other bacterial phyla beyond Aquificae.",
+      "claim_type": "EXPLICIT",
+      "source": "This prokaryotic type of minimal RNase P system was named HARP (for: Homolog of Aquifex RNase P) and identified in 5 other of the 36 bacterial phyla beyond Aquificae (Nickel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This distribution is documented through genomic surveys in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "37c74a71-64fa-4dc2-a23f-2a17e6e28055",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C18",
+      "claim": "Only some HARP-encoding bacteria lack the genes for RNA-based RNase P (i.e., Aquificae, Nitrospirae).",
+      "claim_type": "EXPLICIT",
+      "source": "Among HARP-encoding bacteria, only some lack the genes for RNA-based RNase P (i.e., Aquificae, Nitrospirae), while others harbor rnpA and rnpB genes as well (Daniels et al., 2019; Nickel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This genomic distribution pattern is documented in the cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "0da8337b-1277-42e2-aadf-4922ebd3592b",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C19",
+      "claim": "HARP genes are more abundant in archaea than bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, HARP genes are more abundant in archaea than bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This distribution pattern is based on genomic surveys cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "c0822759-86d3-451c-bb4c-824bf3d17110",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C20",
+      "claim": "All HARP-positive archaea also encode the RNA and protein subunits of RNA-based RNase P.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all of these HARP-positive archaea also encode the RNA and protein subunits of the RNA-based RNase P (Nickel et al., 2017; Daniels et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This genomic observation is documented in the cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "0f2acebb-f122-4774-b9eb-fcbd257fc14c",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C21",
+      "claim": "HARP gene knockouts in Haloferax volcanii and Methanosarcina mazei showed no growth phenotypes under standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, HARP gene knockouts in two Euryarchaeota, Haloferax volcanii and Methanosarcina mazei, showed no growth phenotypes under standard conditions, temperature, and salt stress (H. volcanii) or nitrogen deficiency (M. mazei) (Schwarz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental result is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "ff6e04b6-c6ed-4471-bcd5-8505a4276a30",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C22",
+      "claim": "It was impossible to entirely erase the RNase P RNA gene from the polyploid genome of H. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, it was impossible to entirely erase the RNase P RNA gene from the polyploid genome of H. volcanii (~18 genome copies per cell in exponential growth phase; Breuert et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental observation is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "ac933c61-663f-4bd5-851d-be9042f57e84",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C23",
+      "claim": "H. volcanii has ~18 genome copies per cell in exponential growth phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, it was impossible to entirely erase the RNase P RNA gene from the polyploid genome of H. volcanii (~18 genome copies per cell in exponential growth phase; Breuert et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cellular characteristic is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "4bb8225c-f32c-485b-bab7-a02c375a11ca",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C24",
+      "claim": "A knockdown to ~20% of the wild-type RNase P RNA level in H. volcanii was detrimental to tRNA processing and resulted in retarded cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Even a knockdown to ~20% of the wild-type RNase P RNA level in H. volcanii was detrimental to tRNA processing and resulted in retarded cell growth (Stachler and Marchfelder, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental result is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "b921f38d-9b2e-4ee8-9a4e-9bc080965701",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C25",
+      "claim": "HARP is neither essential nor represents the housekeeping RNase P function in archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings suggest that HARP is neither essential nor represents the housekeeping RNase P function in archaea, explaining its sporadic loss in archaea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the knockout experiments and genomic distribution patterns.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "80fc3e1e-e80c-48ef-8d60-38370889ab57",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C26",
+      "claim": "HARPs are evolutionarily linked to toxin-antitoxin systems.",
+      "claim_type": "EXPLICIT",
+      "source": "HARPs are evolutionarily linked to toxin-antitoxin systems (Daniels et al., 2019; Schwarz et al., 2019; Gobert et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This evolutionary relationship is documented in the cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "0c846ce4-36cc-42f3-9e3b-5595ed8e5c80",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C27",
+      "claim": "Toxin proteins in toxin-antitoxin systems are frequently endoribonucleases that cleave mRNA, rRNA, tmRNA, or tRNA to inhibit protein biosynthesis in response to certain stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequently, the toxin proteins are endoribonucleases that cleave mRNA, rRNA, tmRNA, or tRNA to inhibit protein biosynthesis in response to certain stresses (Masuda and Inouye, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional characteristic is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "01baff1c-32b8-4946-b755-e8215985af5e",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C28",
+      "claim": "HARPs belong to the PIN_5 cluster, VapC structural group of the PIN domain-like superfamily of metallonucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "HARPs belong to the PIN domain-like superfamily of metallonucleases. They were assigned to the PIN_5 cluster, VapC structural group, whereas eukaryal PRORPs belong to a different subgroup of this superfamily (Matelska et al., 2017; Gobert et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is documented in the cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "22945056-89a5-4d42-aa71-d6bcd4001044",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C29",
+      "claim": "Eukaryal PRORPs belong to a different subgroup of the PIN domain-like superfamily than HARPs.",
+      "claim_type": "EXPLICIT",
+      "source": "They were assigned to the PIN_5 cluster, VapC structural group, whereas eukaryal PRORPs belong to a different subgroup of this superfamily (Matelska et al., 2017; Gobert et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is documented in the cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "b15cc580-f98e-47ad-a411-9a23eab882cb",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C30",
+      "claim": "HARPs oligomerize and Aq880 was originally observed to elute as a large homo-oligomeric complex of ~420 kDa in gel filtration experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "HARPs oligomerize and Aq880 was originally observed to elute as a large homo-oligomeric complex of ~420 kDa in gel filtration experiments (Nickel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "05199af0-7c53-4609-8a50-0ea64bde837f",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C31",
+      "claim": "Hhal2243 assembles into a dodecamer in a left-handed screw-like manner, with each molecule rotated by approximately 58\u00b0, except for the interface between dimers 1/1* and 6/6*.",
+      "claim_type": "EXPLICIT",
+      "source": "Hhal2243 assembles into a dodecamer in a left-handed screw-like manner, with each molecule being rotated by approximately 58\u00b0, except for the interface between dimers 1/1* and 6/6*.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural organization is directly observed in the cryo-EM structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "65e7046c-0df2-403d-b51b-3cf6f195c89d",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C32",
+      "claim": "The first and last dimers (1/1* and 6/6*) encounter each other at a slightly larger angle of 70\u00b0 and are laterally displaced.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon completion of the single screw turn, the first and last dimers (1/1* and 6/6*) encounter each other at a slightly larger angle of 70\u00b0 (Figure 1A, top view, left) and laterally displaced (Figure 1A, side view, right)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural feature is directly observed in the cryo-EM structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "1d96c2a8-f6d2-4006-9197-6f29a0e23b42",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C33",
+      "claim": "The steric clash between dimers 1/1* and 6/6* terminates oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "the steric clash between dimers 1/1* and 6/6* terminates oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis showing the spatial arrangement of the dimers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "db511bdf-9cb0-4676-a8ad-27004c93c163",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C34",
+      "claim": "Hhal2243 consists of a PIN-like metallonuclease domain into which two helices are inserted that form the 'spike-helix' (SH) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Hhal2243 consists of a PIN-like metallonuclease domain into which two helices are inserted that we termed the 'spike-helix' (SH) domain (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This domain architecture is directly observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "7e53b658-ee6e-4653-a104-ee6b3de9bafe",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C35",
+      "claim": "The PIN-like domain is formed by six \u03b1-helices (\u03b11\u2013\u03b14, \u03b17, and \u03b18) and four \u03b2-strands (\u03b21\u2013\u03b24) that fold into an \u03b1/\u03b2/\u03b1 domain with a central, four-stranded parallel \u03b2-sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "The PIN-like domain is formed by six \u03b1-helices (\u03b11\u2013\u03b14, \u03b17, and \u03b18) and four \u03b2-strands (\u03b21\u2013\u03b24) that fold into an \u03b1/\u03b2/\u03b1 domain with a central, four-stranded parallel \u03b2-sheet (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural organization is directly observed in the cryo-EM structure shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "d88d7779-18cc-4cd9-82a1-2d32181ba2c3",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C36",
+      "claim": "Two Hhal2243 monomers align head-to-head with their SH domains consisting of helices \u03b15 and \u03b16 to form a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Two Hhal2243 monomers align head-to-head with their SH domains consisting of helices \u03b15 and \u03b16 to form a dimer, while two SH domains form a four-helix bundle resulting in six spikes that protrude from the dodecameric assembly (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural organization is directly observed in the cryo-EM structure shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "088a0f20-d651-4ffd-a10c-97939d6055bb",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C37",
+      "claim": "The dimer interface covers a buried surface area of 1300 \u00c52 and is mainly of hydrophobic nature.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimer interface covers a buried surface area of 1300 \u00c52 and is mainly of hydrophobic nature with two clamping salt bridges formed by R141 and E91 from either monomer, respectively (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the structural data and shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "6e977410-caf4-41e9-a25d-77c023aeefff",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C38",
+      "claim": "Two clamping salt bridges are formed by R141 and E91 from either monomer at the dimer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimer interface covers a buried surface area of 1300 \u00c52 and is mainly of hydrophobic nature with two clamping salt bridges formed by R141 and E91 from either monomer, respectively (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural feature is directly observed in the cryo-EM structure shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "a8eeb350-8cce-4762-b99d-e7c6511aa307",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C39",
+      "claim": "Hhal2243 showed pre-tRNA processing activity in the presence of Mg2+ and Mn2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Aq880 (Marszalkowski et al., 2008), Hhal2243 showed pre-tRNA processing activity in the presence of Mg2+ and Mn2+ (Figure 1\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in the processing assays shown in Figure 1\u2014figure supplement 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "9dece0ee-bb0a-4ac9-9048-6ee926c02e99",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C40",
+      "claim": "The covered interface between neighboring dimers extends over 900 \u00c52 and involves the long \u03b14\u2013\u03b15 loop of one monomer and the \u03b17\u2013\u03b18 loop as well as helix \u03b18 of the respective other monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "The covered interface between neighboring dimers extends over 900 \u00c52 and involves the long \u03b14\u2013\u03b15 loop of one monomer and the \u03b17\u2013\u03b18 loop as well as helix \u03b18 of the respective other monomer (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the structural data and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "37a301c9-3806-475d-b8a6-4cd334939d51",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C41",
+      "claim": "The interactions between interdimer residues are mainly of polar nature.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions between interdimer residues are mainly of polar nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the structural analysis of the interdimer interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "f7097979-2932-40f6-ac86-917d6a8ac5e5",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C42",
+      "claim": "Mass photometry of Hhal2243 revealed a stable dodecameric assembly of 295 kDa that included 98% of all molecules in the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of this method to Hhal2243 revealed a stable dodecameric assembly of 295 kDa that included 98% of all molecules in the sample (Figure 2B, top left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured using mass photometry as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "4a6e2451-8a9d-4bd0-be76-dec208cf9d5b",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C43",
+      "claim": "Mass photometry of Aq880 unveiled a major species at 277 kDa that included only 47% of all molecules, while several subspecies with lower molecular weights became visible.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite their similar behavior on SEC, MP of Aq880 unveiled a major species at 277 kDa that, however, included only 47% of all molecules, while several subspecies with lower molecular weights became visible (Figure 2B, top right panel; supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured using mass photometry as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "97a21215-6359-4f85-b7c5-2dfb05bc67cc",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C44",
+      "claim": "The polydispersity of Aq880, not detectable in SEC profiles, is probably the reason why all structural approaches failed so far in the case of Aq880.",
+      "claim_type": "EXPLICIT",
+      "source": "This polydispersity of Aq880, not detectable in SEC profiles, is probably the reason why all structural approaches failed so far in the case of Aq880.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mass photometry data showing heterogeneity and the history of unsuccessful structural studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "a80b9427-968f-4c34-9c46-64ddd88dbd6d",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C45",
+      "claim": "Aq880\u0394184-191 still showed a considerable subfraction (~18%) of higher-order oligomers (\u2265133 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "MP of protein variant Aq880\u0394184\u2013191 still showed a considerable subfraction (~18%; see supplementary file 1b) of higher-order oligomers (\u2265133 kDa)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured using mass photometry as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "b58c3731-896d-4f8c-803e-2cd027cb0ede",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C46",
+      "claim": "Aq880\u0394181-191 formed only 4% hexamer (peak at 134 kDa), 41% tetramer (peak at 81 kDa) beyond the dimer subfraction at 42 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Aq880\u0394181\u2013191 formed only 4% hexamer (peak at 134 kDa), 41% tetramer (peak at 81 kDa) beyond the dimer subfraction at 42 kDa (Figure 2B, middle panels; supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured using mass photometry as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "69f865a2-4fdd-46e9-bf9c-84215e752d65",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C47",
+      "claim": "Aq880\u0394179-191 and Aq880\u0394177-191 form only dimeric species.",
+      "claim_type": "EXPLICIT",
+      "source": "Further truncation of Aq880 had an impact on protein stability, as judged by lower purification yields, and MP revealed that variants Aq880\u0394179\u2013191 and Aq880\u0394177\u2013191 form only dimeric species (Figure 2B, lower panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured using mass photometry as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "bfc3e272-e772-4181-bf18-f80be97638c9",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C48",
+      "claim": "Deletion of residues 184-191 resulted in a protein that still had substantial activity, while all the other truncations showed almost no activity or were entirely inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Processing assays revealed that deletion of residues 184\u2013191 resulted in a protein that still had substantial activity, while all the other truncations showed almost no activity or were entirely inactive (Table 1, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in the processing assays shown in Table 1 and Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "63ec088e-8fb3-4ab8-89ac-cd7446dbfefe",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C49",
+      "claim": "The activity of the enzyme in pre-tRNA processing assays depends on its ability to form higher-order oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our experiments show that the activity of the enzyme in pre-tRNA processing assays depends on its ability to form higher-order oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the correlation between oligomeric state (measured by mass photometry) and enzymatic activity (measured in processing assays).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "b973c39c-b879-4888-bb38-9ad86f36f0b7",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C50",
+      "claim": "The active sites of Hhal2243 and AtPRORP1 superpose well with a root mean square deviation (r.m.s.d.) of 0.445 over 30 C\u03b1 atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The active sites of both molecules superpose well with a root mean square deviation (r.m.s.d.) of 0.445 over 30 C\u03b1 atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from structural superposition of the two proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "57ee541c-797a-48f0-a47b-4a17b033f0bf",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C51",
+      "claim": "The catalytic aspartates D7, D138, D142, and D161 are indispensable for Aq880 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In earlier studies, we could already show that the catalytic aspartates D7, D138, D142, and D161 are indispensable for Aq880 activity (Nickel et al., 2017; Schwarz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in the cited references from earlier mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "ea0f6143-e48d-4bee-8b4f-75c0d49245a2",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C52",
+      "claim": "The Hhal2243 structure supports the prediction that residues D7, D138, D142, and D161 constitute the active site of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Our Hhal2243 structure supports the prediction that these residues constitute the active site of the protein (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the structural positioning of these residues in the cryo-EM structure shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "e6bb9817-ae81-4f7f-adc6-c5c4dd7846da",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C53",
+      "claim": "Three of the four active site aspartates of Hhal2243 show an almost perfect superposition with three of the four active site aspartates of AtPRORP1 (D399, D475, and D493).",
+      "claim_type": "EXPLICIT",
+      "source": "including an almost perfect superposition with three of the four active site aspartates of AtPRORP1 (D399, D475, and D493; Howard et al., 2012; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural superposition shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "d34ea314-ac2e-4d94-9bbb-b7cfe0978ed2",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C54",
+      "claim": "The mechanism of catalysis is conserved among PRORPs and HARPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the mechanism of catalysis is conserved among the two distinct protein families with RNase P activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural conservation of active site residues between the two enzyme types.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "db3add04-ed59-4807-b762-d89636c73411",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C55",
+      "claim": "Variation of the entire positive arginine/lysine stretch (K119A/R123A/R125A/K127A/R129A) resulted in the inability of the mutant protein to cleave off the 5'-leader sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation of the entire positive arginine/lysine stretch resulted in the inability of the mutant protein to cleave off the 5'-leader sequence (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in the processing assays shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "a94c218a-fbe9-4f2d-a1e4-b5c123e9631b",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C56",
+      "claim": "Both R129A and the double mutant R125A/R129A were inactive, while R125A retained residual activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While both R129A and the double mutant R125A/R129A were inactive, R125A retained residual activity (Figure 4C, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in the processing assays shown in Figure 4C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "9c05186d-b59f-4f41-9b9d-84553893917e",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C57",
+      "claim": "Variation of positively charged residues to alanines in the SH domain did not significantly change the oligomerization behavior of Aq880.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, variation of positively charged residues to alanines in the SH domain did not significantly change the oligomerization behavior of Aq880 as judged by MP (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by mass photometry measurements shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "13a10414-b181-4791-aa6f-b32815dedf26",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C58",
+      "claim": "The cluster of positively charged side chains in the SH domain is required for pre-tRNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the cluster of positively charged side chains in the SH domain is required for pre-tRNA binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis data showing loss of activity when these residues are mutated, without affecting oligomerization.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "516b8e20-3190-4d06-b346-55fe6b268742",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C59",
+      "claim": "The Hhal2243 HARP structure assembles into a homo-dodecameric ultrastructure consisting of six dimers that oligomerize in a screw-like fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hhal2243 HARP structure assembles into a homo-dodecameric ultrastructure. The dodecamer consists of six dimers that oligomerize in a screw-like fashion (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural organization is directly observed in the cryo-EM structure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "3b40a210-1854-4870-84e4-bc47feeac67a",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C60",
+      "claim": "The screw-like assembly of HARPs leads to an asymmetric and thus imperfect novel type of oligomer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the screw-like assembly of HARPs leads to an asymmetric and thus imperfect novel type of oligomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the structural analysis showing the non-symmetric arrangement of the dodecamer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "59a048f7-b606-4a85-ba77-a86daed9b906",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C61",
+      "claim": "HARPs form a defined quaternary structure that is not entirely symmetric, while the screw-like assembly terminates the incorporation of new subunits at the stage of a dodecamer.",
+      "claim_type": "EXPLICIT",
+      "source": "This way, HARPs form a defined quaternary structure that is not entirely symmetric, while the screw-like assembly terminates the incorporation of new subunits at the stage of a dodecamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis showing the steric clash that prevents further oligomerization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "d9411992-60c3-4da0-bc11-e28b1e07834a",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C62",
+      "claim": "Only oligomeric species of HARP are able to cleave the 5'-leader sequence of pre-tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus clearly show that only oligomeric species of HARP are able to cleave the 5'-leader sequence of pre-tRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the correlation between oligomeric state and enzymatic activity demonstrated through truncation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "c708409f-9061-4645-abc1-6b1c1a9a103a",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C63",
+      "claim": "The active site residues of HARPs and PRORPs superpose well, suggesting that the catalytic mechanism is basically conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared our structure to the PIN domain of PRORPs and could demonstrate that the active site residues superpose well (Figure 3B), suggesting that the catalytic mechanism is basically conserved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural superposition shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "2994a7fe-674f-4834-91a4-589cb46fc0c8",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C64",
+      "claim": "The PPR domain of PRORP recognizes conserved structural elements of tRNAs rather than single nucleotides in a binding mode reminiscent to that of the RNA-based RNase P holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the PPR domain of PRORP recognizes conserved structural elements of tRNAs rather than single nucleotides in a binding mode reminiscent to that of the RNA-based RNase P holoenzyme (Teramoto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "502f29eb-7bc8-4496-b4d2-3f61536d451a",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C65",
+      "claim": "The elbow region, where D- and T-loop interact, is the main tRNA-protein interaction interface for PRORPs.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, the elbow region, where D- and T-loop interact, is the main tRNA-protein interaction interface (Teramoto et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in the cited reference and previous biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "119e0544-7a44-4a6f-a9eb-6197db2ad455",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C66",
+      "claim": "The tRNA elbow region is the most conserved structural element of tRNAs and is also recognized by RNA-based RNase P enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the same region, representing the most conserved structural element of tRNAs, is also recognized by RNA-based RNase P enzymes (reviewed in Rossmanith and Hartmann, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, documented in the cited review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "9c4b46f4-ea2b-4e38-a39d-35c7e3b51378",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C67",
+      "claim": "The distance between the outer SH domain of one dimer and the active site of the neighboring dimer is approximately 45 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that the outer SH domain, harboring the stretch of positively charged amino acid side chains, interacts with the tRNA elbow, then the distance of approximately 45 \u00c5 between the outer SH domain of one dimer and the active site of the neighboring dimer perfectly positions one pre-tRNA molecule for cleavage (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This distance is measured from the structural model shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "5f0b6c3b-5a00-4b24-a774-11f3f9d87513",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C68",
+      "claim": "Yeast tRNA from the PRORP structure could be perfectly docked onto the HARP structure.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we used the yeast tRNA from the PRORP structure as model (Teramoto et al., 2020) and could perfectly dock it onto our HARP structure (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by molecular modeling shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "03c71180-716e-4e12-87e3-f61225a74f00",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C69",
+      "claim": "Residues within \u03b13 are likely involved in the coordination of the D-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in this scenario, the D-loop is near helix \u03b13 (Figure 5B). We thus also consider it likely that residues within \u03b13 are involved in the coordination of the D-loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the proximity of the D-loop to helix \u03b13 in the modeled tRNA-HARP complex.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "8d8a09e0-cfa9-4326-895b-8a43f1900767",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C70",
+      "claim": "The proposed tRNA binding mode enables the cooperation of two adjacent dimers, where one monomer of each dimer binds the tRNA elbow such that the pre-tRNA cleavage site directly reaches into the active site of the monomer from the neighboring dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This framework enables the cooperation of two adjacent dimers, where one monomer of each dimer binds the tRNA elbow in such a manner that the pre-tRNA cleavage site, at a distance of ~45 \u00c5, directly reaches into the active site of the monomer from the neighboring dimer (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is proposed based on structural modeling and the spatial constraints of the dodecameric assembly.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "818dce9d-cde6-4fb1-9924-7e4690965f88",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C71",
+      "claim": "Five pre-tRNAs can potentially be docked onto the upper or lower layer of the dodecameric, distorted double donut structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This way, five pre-tRNAs can potentially be docked onto the upper or lower layer of the dodecameric, distorted double donut structure (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural model showing potential binding sites for tRNAs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "fd00fe9e-af6e-4c2a-a905-d64acb5e2ef8",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C72",
+      "claim": "tRNA concentration within an Escherichia coli cell was estimated to be 0.5 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "However, considering that tRNA concentration within an Escherichia coli cell was estimated to be 0.5 mM (Goodsell, 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "1c74cb91-9a85-409f-a891-9ead500c8d75",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C73",
+      "claim": "No evidence for cooperativity in pre-tRNA cleavage kinetics catalyzed by Aq880 under multiple turnover conditions was found.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found no evidence for cooperativity in pre-tRNA cleavage kinetics catalyzed by Aq880 under multiple turnover conditions (Nickel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in the cited reference from earlier kinetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "e8e521c8-9a34-4243-9b24-43a3d68acee9",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C74",
+      "claim": "Aq880\u0394181-191 still forms tetramers and a low number of hexamers but is only 10% active.",
+      "claim_type": "EXPLICIT",
+      "source": "Variant Aq880\u0394181\u2013191 still forms tetramers and a low number of hexamers but is only 10% active (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by mass photometry and activity assays shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "d84fcce4-c7ad-4792-8f05-0f5e9e044859",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C75",
+      "claim": "Aq880\u0394184-191 assembles into octamers, decamers, and a small subset of dodecamers and retains over 90% activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Aq880\u0394184\u2013191 also assembles into octamers, decamers, and a small subset of even dodecamers but retains over 90% activity (Figure 2B,C, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by mass photometry and activity assays shown in Figure 2B,C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "27127d8f-0f43-44af-9344-b8accb2163da",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C76",
+      "claim": "Higher oligomers form a more rigid scaffold, while a tetramer alone is too flexible for efficient binding and cleavage of precursor tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus consider it likely that higher oligomers form a more rigid scaffold, while a tetramer alone is too flexible for efficient binding and cleavage of precursor tRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between oligomeric state and activity, where tetramers show low activity despite forming oligomers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "ef79c129-7944-4acd-9683-f8b76b3429e8",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "claim_id": "C77",
+      "claim": "HARPs and PRORPs evolved independently but share conserved features concerning pre-tRNA recognition and nuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we here present the molecular framework for pre-tRNA processing by HARPs and show that this enzyme system, although it evolved independently of PRORPs, shares conserved features with eukaryotic PRORPs concerning pre-tRNA recognition and nuclease activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the structural and biochemical analyses showing conservation of active site residues and substrate recognition mechanisms despite independent evolutionary origins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of Hhal2243 reveals a novel screw-like dodecameric assembly at 3.37 \u00c5 resolution. The dodecamer consists of six dimers arranged in a left-handed screw with ~58\u00b0 rotation between most dimers, except for the terminal interface (70\u00b0), where steric clash terminates oligomerization. Each monomer contains a PIN-like metallonuclease domain with an inserted spike-helix (SH) domain that mediates dimer formation through a 1300 \u00c5\u00b2 hydrophobic interface stabilized by salt bridges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural claims are directly supported by high-resolution cryo-EM data (C5, C31-C38) with detailed measurements of angles, buried surface areas, and specific residue interactions. The novel screw-like architecture is clearly visualized in Figure 1, and the structural features are consistent across multiple independent observations. The resolution of 3.37 \u00c5 is sufficient to support the detailed structural claims made.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Oligomerization is required for HARP RNase P activity, as demonstrated by systematic C-terminal truncation experiments combined with mass photometry. Hhal2243 forms stable dodecamers (98% homogeneity), while Aq880 shows polydispersity. Truncation variants that retain higher-order oligomers (\u2265octamers) maintain >90% activity, while those forming only tetramers or dimers show drastically reduced or abolished activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation between oligomeric state and activity is convincingly demonstrated through multiple complementary approaches (C42-C48, C74-C75). Mass photometry provides quantitative oligomer distribution data, and activity assays show clear correlation with oligomeric state. The systematic truncation series provides strong evidence that higher-order oligomerization is functionally required. The interpretation that tetramers are too flexible (C76) is reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "c6afb4b0-233e-40fe-b1a0-ecb599bb5520",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The active sites of HARPs and PRORPs are structurally conserved despite independent evolutionary origins. The catalytic aspartates (D7, D138, D142, D161) of Hhal2243 superpose well with three of four active site aspartates in AtPRORP1 (r.m.s.d. 0.445 over 30 C\u03b1 atoms), suggesting conservation of the catalytic mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural superposition data (C50, C53) and prior mutagenesis studies (C51) provide strong support for active site conservation. The r.m.s.d. value indicates good structural alignment of the catalytic residues. However, the conclusion about mechanistic conservation (C54, C63) is inferential\u2014while reasonable given the structural similarity, direct mechanistic studies would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "54dd0ec0-63cf-4514-baa5-5cc7509b4ab7",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A cluster of positively charged residues (K119, R123, R125, K127, R129) in the spike-helix domain is critical for pre-tRNA binding but not for oligomerization. Mutation of the entire stretch abolishes activity, with R129 being particularly critical, while these mutations do not affect oligomeric state as measured by mass photometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mutagenesis data clearly demonstrate that the positive residue cluster is essential for activity (C55-C56) and that oligomerization is unaffected by these mutations (C57). This provides strong evidence that these residues are involved in substrate binding rather than protein-protein interactions. The inference about pre-tRNA binding (C58) is reasonable given the loss of activity without loss of oligomerization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A structural model proposes that HARPs recognize pre-tRNA through the conserved tRNA elbow region via the spike-helix domain, positioning the 5'-end ~45 \u00c5 away at the active site of the neighboring dimer. This binding mode would be similar to PRORPs and RNA-based RNase P, with potential for five tRNAs to bind per dodecamer layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the model is structurally plausible and supported by molecular docking (C68) and distance measurements (C67), it remains hypothetical. The authors acknowledge they could not obtain stable HARP:tRNA complexes experimentally. The model relies heavily on inference from PRORP structures and the positioning of conserved residues. Key predictions (e.g., involvement of \u03b13 in D-loop coordination, C69) need experimental validation. The proposal for simultaneous binding of multiple tRNAs (C71) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "49b4875c-48fc-4f32-b259-273c462aff7e",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Background on RNase P diversity and HARP distribution: RNase P exists as RNA-based enzymes (with varying protein cofactors) and protein-only versions (PRORPs in eukaryotes, HARPs in some bacteria/archaea) that evolved independently. HARPs are found in some bacteria (including Aquifex aeolicus which lacks RNA-based RNase P) and many archaea (where they coexist with RNA-based RNase P). Genetic studies suggest HARPs are not essential in archaea and may be linked to toxin-antitoxin systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the field, supported by appropriate citations to prior work (C10-C30). The genomic distribution patterns, knockout studies, and evolutionary relationships are documented in the cited literature. These background claims provide context for the current structural and biochemical work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "2015f0ef-8d4c-41a7-8e89-4ede9ae12a06",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Hhal2243 shows pre-tRNA processing activity in the presence of Mg2+ and Mn2+. The interdimer interface extends over 900 \u00c5\u00b2 and involves specific loops and helices, with interactions that are mainly polar in nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The activity data (C39) is directly demonstrated in Figure 1\u2014figure supplement 2B,C. The structural measurements of the interdimer interface (C40-C41) are calculated from the cryo-EM structure and are consistent with the resolution achieved. These are straightforward observations supporting the structural and functional characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "de995465-721d-4a94-8ef1-d127f87b6db1",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The screw-like assembly of HARPs represents a novel type of asymmetric oligomer where the non-symmetric arrangement terminates oligomerization at the dodecameric stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The asymmetric nature of the assembly is directly observed in the structure (C60-C61) and is a consequence of the screw-like arrangement with the terminal steric clash (C33). This represents a novel oligomeric architecture that is well-supported by the structural data. The novelty claim is reasonable given the unusual geometry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "f6cd64af-2949-4f1b-b461-733d1749a453",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cellular tRNA concentrations are estimated at 0.5 mM in E. coli, and no cooperativity in pre-tRNA cleavage kinetics was observed for Aq880 under multiple turnover conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both claims are supported by appropriate citations (C72-C73). These observations provide context for discussing the biological relevance of multiple tRNA binding sites and the mechanism of HARP action. The lack of cooperativity is relevant to interpreting the functional significance of the dodecameric structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    },
+    {
+      "id": "ce92be52-58ca-4762-805d-77f11be033d4",
+      "content_id": "deb6c2c5-04d7-495c-86ac-3dfc70bd5bc0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "HARPs and PRORPs evolved independently but share conserved features in pre-tRNA recognition (elbow region binding) and nuclease activity (active site architecture).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion integrates multiple lines of evidence: independent evolutionary origins (C11, supported by phylogenetic analyses), conserved active site architecture (C50-C54), and similar substrate recognition strategies (C9, C64-C66). While the substrate recognition model is partially hypothetical, the convergent evolution of similar catalytic and recognition strategies is well-supported by the structural and biochemical data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:10.921175Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7da5b9d4-67e2-4f6f-8898-5fd4c84b9daa",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "0584b7c9-8b7d-4440-91a6-b8cf280ed36c",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "05199af0-7c53-4609-8a50-0ea64bde837f",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "65e7046c-0df2-403d-b51b-3cf6f195c89d",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "1d96c2a8-f6d2-4006-9197-6f29a0e23b42",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "db511bdf-9cb0-4676-a8ad-27004c93c163",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "7e53b658-ee6e-4653-a104-ee6b3de9bafe",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "d88d7779-18cc-4cd9-82a1-2d32181ba2c3",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "088a0f20-d651-4ffd-a10c-97939d6055bb",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "6e977410-caf4-41e9-a25d-77c023aeefff",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "516b8e20-3190-4d06-b346-55fe6b268742",
+      "result_id": "6068854e-19f7-4bb6-b2fe-4a4093a2a51e"
+    },
+    {
+      "claim_id": "0b136d3b-8c5f-40ef-a3ec-d6fd5ca30b3a",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "f7097979-2932-40f6-ac86-917d6a8ac5e5",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "4a6e2451-8a9d-4bd0-be76-dec208cf9d5b",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "97a21215-6359-4f85-b7c5-2dfb05bc67cc",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "a80b9427-968f-4c34-9c46-64ddd88dbd6d",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "b58c3731-896d-4f8c-803e-2cd027cb0ede",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "69f865a2-4fdd-46e9-bf9c-84215e752d65",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "bfc3e272-e772-4181-bf18-f80be97638c9",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "63ec088e-8fb3-4ab8-89ac-cd7446dbfefe",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "d9411992-60c3-4da0-bc11-e28b1e07834a",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "e8e521c8-9a34-4243-9b24-43a3d68acee9",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "d84fcce4-c7ad-4792-8f05-0f5e9e044859",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "27127d8f-0f43-44af-9344-b8accb2163da",
+      "result_id": "b24cb626-bf12-4f84-9a36-8ecc21c634fa"
+    },
+    {
+      "claim_id": "b973c39c-b879-4888-bb38-9ad86f36f0b7",
+      "result_id": "c6afb4b0-233e-40fe-b1a0-ecb599bb5520"
+    },
+    {
+      "claim_id": "57ee541c-797a-48f0-a47b-4a17b033f0bf",
+      "result_id": "c6afb4b0-233e-40fe-b1a0-ecb599bb5520"
+    },
+    {
+      "claim_id": "ea0f6143-e48d-4bee-8b4f-75c0d49245a2",
+      "result_id": "c6afb4b0-233e-40fe-b1a0-ecb599bb5520"
+    },
+    {
+      "claim_id": "e6bb9817-ae81-4f7f-adc6-c5c4dd7846da",
+      "result_id": "c6afb4b0-233e-40fe-b1a0-ecb599bb5520"
+    },
+    {
+      "claim_id": "d34ea314-ac2e-4d94-9bbb-b7cfe0978ed2",
+      "result_id": "c6afb4b0-233e-40fe-b1a0-ecb599bb5520"
+    },
+    {
+      "claim_id": "c708409f-9061-4645-abc1-6b1c1a9a103a",
+      "result_id": "c6afb4b0-233e-40fe-b1a0-ecb599bb5520"
+    },
+    {
+      "claim_id": "db3add04-ed59-4807-b762-d89636c73411",
+      "result_id": "54dd0ec0-63cf-4514-baa5-5cc7509b4ab7"
+    },
+    {
+      "claim_id": "a94c218a-fbe9-4f2d-a1e4-b5c123e9631b",
+      "result_id": "54dd0ec0-63cf-4514-baa5-5cc7509b4ab7"
+    },
+    {
+      "claim_id": "9c05186d-b59f-4f41-9b9d-84553893917e",
+      "result_id": "54dd0ec0-63cf-4514-baa5-5cc7509b4ab7"
+    },
+    {
+      "claim_id": "13a10414-b181-4791-aa6f-b32815dedf26",
+      "result_id": "54dd0ec0-63cf-4514-baa5-5cc7509b4ab7"
+    },
+    {
+      "claim_id": "47db603d-2f0b-4ec7-bb20-485e72457c74",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "6b57aedf-5e54-4d9e-ae4b-fc79e7c7fe12",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "2994a7fe-674f-4834-91a4-589cb46fc0c8",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "502f29eb-7bc8-4496-b4d2-3f61536d451a",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "119e0544-7a44-4a6f-a9eb-6197db2ad455",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "9c4b46f4-ea2b-4e38-a39d-35c7e3b51378",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "5f0b6c3b-5a00-4b24-a774-11f3f9d87513",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "03c71180-716e-4e12-87e3-f61225a74f00",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "8d8a09e0-cfa9-4326-895b-8a43f1900767",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "818dce9d-cde6-4fb1-9924-7e4690965f88",
+      "result_id": "9cec9cfa-aa68-45a8-84f0-7e5f5e6ff9a2"
+    },
+    {
+      "claim_id": "9d317156-fad3-4a4b-ad04-2871e42540e4",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "3d7d6974-ae98-44b1-b989-292ef01d26f5",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "ec513b30-80c8-49e1-b904-497068e63643",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "e3dd5b42-352a-4d78-b08e-d109d4c65182",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "ba477e16-80f2-479a-9c9c-b61e6ac80661",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "c2d3e43f-b149-4f20-87ba-0ef2e44d25cf",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "6c015a9a-5105-4974-84a9-49af2e2206fa",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "9cc46468-81a3-4ec8-a396-2965bf0eb5d9",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "c3188035-1fc2-410b-be09-dddc9ac86112",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "388cf48a-bb2c-4838-9524-f76a95483899",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "0fee3c9d-e004-46dc-bf0a-f6a0fa7bf5d1",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "1a9420ed-2ae7-4d53-acba-7de7ad7be9ae",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "37c74a71-64fa-4dc2-a23f-2a17e6e28055",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "0da8337b-1277-42e2-aadf-4922ebd3592b",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "c0822759-86d3-451c-bb4c-824bf3d17110",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "0f2acebb-f122-4774-b9eb-fcbd257fc14c",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "ff6e04b6-c6ed-4471-bcd5-8505a4276a30",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "ac933c61-663f-4bd5-851d-be9042f57e84",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "4bb8225c-f32c-485b-bab7-a02c375a11ca",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "b921f38d-9b2e-4ee8-9a4e-9bc080965701",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "80fc3e1e-e80c-48ef-8d60-38370889ab57",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "0c846ce4-36cc-42f3-9e3b-5595ed8e5c80",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "01baff1c-32b8-4946-b755-e8215985af5e",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "22945056-89a5-4d42-aa71-d6bcd4001044",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "b15cc580-f98e-47ad-a411-9a23eab882cb",
+      "result_id": "49b4875c-48fc-4f32-b259-273c462aff7e"
+    },
+    {
+      "claim_id": "a8eeb350-8cce-4762-b99d-e7c6511aa307",
+      "result_id": "2015f0ef-8d4c-41a7-8e89-4ede9ae12a06"
+    },
+    {
+      "claim_id": "9dece0ee-bb0a-4ac9-9048-6ee926c02e99",
+      "result_id": "2015f0ef-8d4c-41a7-8e89-4ede9ae12a06"
+    },
+    {
+      "claim_id": "37a301c9-3806-475d-b8a6-4cd334939d51",
+      "result_id": "2015f0ef-8d4c-41a7-8e89-4ede9ae12a06"
+    },
+    {
+      "claim_id": "3b40a210-1854-4870-84e4-bc47feeac67a",
+      "result_id": "de995465-721d-4a94-8ef1-d127f87b6db1"
+    },
+    {
+      "claim_id": "59a048f7-b606-4a85-ba77-a86daed9b906",
+      "result_id": "de995465-721d-4a94-8ef1-d127f87b6db1"
+    },
+    {
+      "claim_id": "fd00fe9e-af6e-4c2a-a905-d64acb5e2ef8",
+      "result_id": "f6cd64af-2949-4f1b-b461-733d1749a453"
+    },
+    {
+      "claim_id": "1c74cb91-9a85-409f-a891-9ead500c8d75",
+      "result_id": "f6cd64af-2949-4f1b-b461-733d1749a453"
+    },
+    {
+      "claim_id": "ef79c129-7944-4acd-9683-f8b76b3429e8",
+      "result_id": "ce92be52-58ca-4762-805d-77f11be033d4"
+    }
+  ],
+  "comparisons": []
+}

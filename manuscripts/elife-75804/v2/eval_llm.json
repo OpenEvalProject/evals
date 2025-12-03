@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed BrainPalmSeq, a web-based database curating expression data for palmitoylation-related proteins from publicly available RNAseq datasets covering the mouse nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C25-C28 describe the creation of BrainPalmSeq using three large scRNAseq datasets complemented with bulk RNAseq studies. The methodology is clearly documented with appropriate citations, data sources are specified in Table 1, and the web tool is accessible at the provided URL.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "ZDHHC expression shows regional and cell-type heterogeneity across the nervous system, with highest expression in PNS neurons, cholinergic/monoaminergic neurons, and oligodendrocytes among non-neuronal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by expression data shown in Figure 1A-B from the MouseBrain dataset. The findings are validated across independent datasets (C38) and show consistent patterns of cell-type specific expression with appropriate data visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Neurons utilizing acetylcholine and nitric oxide as co-neurotransmitters show the highest mean ZDHHC expression, with cholinergic and monoaminergic neurons ranking high across neurotransmitter combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by neurotransmitter-based clustering analysis shown in Figure 1C. The data clearly demonstrate elevated ZDHHC expression in specific neurotransmitter-defined neuronal populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Co-expression analysis reveals that neuron-enriched Zdhhc3, Zdhhc8, Zdhhc17, and Zdhhc21 form strong co-expression networks, while glial-enriched Zdhhc2, Zdhhc9, and Zdhhc20 show weaker correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by Spearman correlation analysis shown in Figure 1D. The correlation network clearly demonstrates differential co-expression patterns between neuronal and glial-enriched ZDHHCs, though the biological significance requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Genes co-expressed with ZDHHCs (R>0.7) are significantly enriched for S-palmitoylation substrates, indicating ZDHHCs are more likely to be co-expressed with their substrates in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by enrichment analysis shown in Figure 1E using SwissPalm annotation. The statistical significance is demonstrated (p<0.001), and the finding is replicated in the DropViz dataset (Figure 1\u2014figure supplement 1E), providing strong evidence for substrate co-expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "ZDHHC co-expressed S-palmitoylation substrates are enriched in GO terms related to protein localization and transport, consistent with known S-palmitoylation functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by PANTHER GO analysis shown in Figure 1F. The enrichment analysis appropriately identifies biological processes, and the interpretation is consistent with established knowledge about S-palmitoylation function in membrane protein regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ZDHHC expression shows considerable regional heterogeneity in the hippocampus, with hierarchical clustering revealing DG-enriched, DG-depleted, and CA1/CA2-enriched patterns that are consistent across multiple studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by hippocampal expression analysis shown in Figure 2A-B and validated across multiple datasets (Figure 2\u2014figure supplement 1A) and in situ hybridization (Figure 2\u2014figure supplement 1B). The cross-study validation strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CA1 excitatory neurons express Zdhhc2, Zdhhc17, Zdhhc23, and Zdhhc9 at highest levels, with the CA1 projected-palmitoylome enriched for synaptic proteins and pathways related to calcium signaling and long-term potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by expression data (Figure 2C), KEGG pathway analysis (Figure 2E), and SynGO analysis (Figure 2F). The findings are consistent with known roles of S-palmitoylation in CA1 synaptic plasticity, supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "DG granule cells show highest expression of Zdhhc21, Zdhhc4, Zdhhc24, and Zdhhc8, with the DG projected-palmitoylome enriched for ribosome-related pathways and protein translation at synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by expression data (Figure 2G-H), KEGG analysis (Figure 2I), and SynGO analysis (Figure 2J). However, C56 is speculative about a potential role in translation regulation that has not been studied, which is appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Multiple independent studies show consistent cortical layer-specific ZDHHC expression patterns, including Zdhhc8 enrichment in Layer 2/3, Zdhhc2 in Layer 4, and Zdhhc21 in Layer 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by comparative analysis across multiple cortical datasets shown in Figure 3\u2014figure supplement 1A and validated by in situ hybridization (Figure 3\u2014figure supplement 1B). The cross-study consistency strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Analysis of Allen Brain Institute data reveals Zdhhc14 as the highest expressed ZDHHC in glutamatergic neurons and Zdhhc2 in GABAergic neurons, with highest expression in deep cortical layers and Sncg interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by ranked expression analysis from Allen Brain 10X data shown in Figure 3C-D. The cell type identification for Sncg neurons is appropriately cited (C64), and the findings are consistent with other cortical datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "De-palmitoylating enzymes show cell-type specific expression patterns, with Abhd12 and Ppt1 broadly expressed, Abhd4 enriched in astrocytes, and Abhd17c showing lowest brain expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by expression analysis shown in Figure 4A-B and Figure 4\u2014figure supplement 1. The findings are consistent across MouseBrain and DropViz datasets, with appropriate citations supporting functional interpretations (C66, C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Correlation analysis reveals numerous instances of co-expression between ZDHHCs and de-palmitoylating enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by correlation network analysis shown in Figure 4D. The analysis identifies potential cooperative enzyme pairs, though functional validation would be needed to confirm these relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "ZDHHC accessory proteins show distinct expression patterns: Selenok is widespread and highly expressed, Golga7b is neuronal-enriched and correlates with neuronal ZDHHCs, while Golga7 is enriched in oligodendrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by expression data shown in Figure 4A, Figure 4\u2014figure supplement 1A, and correlation analysis (Figure 4D). The interpretation of Selenok function (C74) is appropriately supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Zdhhc9 and Zdhhc6 are not expressed without their accessory proteins Golga7 and Selenok, respectively, while Zdhhc5/Golga7b co-expression is highest in neurons and Zdhhc9/Golga7 in oligodendrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by co-expression analysis shown in Figure 4\u2014figure supplement 2. The findings suggest cell-type specific importance of these enzyme-accessory protein pairs, though functional validation would strengthen these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Cell-type mRNA enrichment for palmitoylation-related proteins is partially maintained at the protein level, with significant correlation (r=0.63, p<0.0001) between mRNA and protein z-scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by comparative analysis of scRNAseq and proteomic data shown in Figure 4\u2014figure supplement 3. The moderate correlation is appropriately interpreted, acknowledging that some highly expressed genes were not detected at the protein level, which may reflect technical limitations or post-transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Zdhhc8 expression is highest in cortex and hippocampus neurons, particularly Layer 2/3, with patterns established early in development and maintained into adulthood, supporting a model where LOF ZDHHC8 mutations contribute to schizophrenia pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by developmental expression analysis (Figure 5A-C) and appropriately cited prior research on ZDHHC8 and schizophrenia. However, C89 is speculative about the mechanism, which is appropriately presented as a hypothesis rather than a proven conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Zdhhc9 shows strong oligodendrocyte enrichment across developmental ages and is highly expressed in corpus callosum, suggesting disrupted oligodendrocyte S-palmitoylation may underlie white matter pathology in X-linked ID patients with ZDHHC9 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by expression analysis (Figure 5D-F) and appropriately cited prior research on ZDHHC9 mutations and patient phenotypes. However, C96 is a hypothesis about mechanism that requires further validation, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Ppt1 shows high expression in spinal cord, olfactory bulb, and mid/hindbrain neurons, with elevated expression in microglia, consistent with early pathology in these regions in CLN1 disease mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 are supported by developmental expression analysis (Figure 5G-I) and appropriately cited prior research on PPT1 function and CLN1 disease pathology. The expression patterns align well with known disease progression in knockout mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Zdhhc9 expression increases during oligodendrocyte maturation with highest levels in myelin-forming oligodendrocytes, and ZDHHC9 can palmitoylate MOBP and PLP1 but not CNP in HEK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by oligodendrocyte-specific expression analysis (Figure 6A) and experimental validation using acyl-RAC assays (Figure 6D-G). The statistical analysis is appropriate (two-way ANOVA with post-hoc tests), and the findings identify novel ZDHHC9 substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "No change in MOBP and PLP1 palmitoylation was observed in Zdhhc9 knockout mice, possibly due to compensation by other ZDHHCs or technical limitations of whole-brain lysate analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by experimental data from knockout mice (Figure 6\u2014figure supplement 2). Claims C110-C111 appropriately acknowledge alternative explanations for the negative result, including compensation and technical limitations, which are supported by citations to prior work showing similar issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Cell-type enrichments of ZDHHC enzymes can guide identification of enzyme-substrate interactions for further in vivo investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by the successful prediction and validation of ZDHHC9 substrates (C106-C108) using expression-based approaches. This demonstrates the utility of the BrainPalmSeq resource for hypothesis generation, though in vivo validation remains necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims establish that S-palmitoylation is a critical reversible post-translational modification in the brain, regulated by ZDHHC enzymes and de-palmitoylating enzymes, with dysregulation underlying neurological disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 provide background context supported by established knowledge and appropriate citations. These claims establish the scientific rationale for the study and identify the gap in knowledge (C24) that the current work addresses.",
+    "result_type": "MINOR"
+  }
+]

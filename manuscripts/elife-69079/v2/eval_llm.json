@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C75"
+    ],
+    "result": "The EEG-based energy landscape analysis successfully replicated the three-state brain dynamics (Frontal, Visual, and Intermediate states) previously observed in fMRI studies of bistable visual perception. The pairwise maximum entropy model fit the data well (>84% accuracy), and the identified brain states showed strong correlations with behavioral percept duration both across and within participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C28 and C75 provide converging evidence from model fitting accuracy, brain state identification, transition dynamics, and brain-behavior correlations. The consistency between EEG and prior fMRI findings (C75), combined with strong quantitative metrics (r64=0.67 for group-level, r19>0.54 for individual-level correlations), supports the validity of the energy landscape approach in EEG data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The brain-state-dependent TMS system achieved high accuracy in real-time brain state tracking (>82.3% similarity to offline analysis) and precise temporal control of TMS delivery (>84.8% accuracy, <0.8 ms latency) when the neural activity pattern was in a specific brain state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 demonstrate technical validation of the closed-loop system with quantitative metrics showing both spatial accuracy in state identification and temporal precision in TMS triggering. These are critical methodological validations that enable the subsequent causal experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C43",
+      "C44"
+    ],
+    "result": "State-dependent TMS revealed distinct causal roles of three PFC regions in bistable perception: DLPFC inhibition during F-state prolonged percept duration, IFC inhibition during F-state destabilized perception, and FEF inhibition during F-state reduced percept duration. Critically, these effects were only detectable with state-dependent stimulation, as conventional 30-min TMS showed no significant behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 report statistically significant behavioral effects (all p<0.001, large effect sizes d>1.7) that are state-specific, while C43-C44 provide the critical control showing null effects with conventional TMS. This contrast strongly supports the necessity of state-dependent approaches. The ANOVA (F8,33=25.9, p<10^-3) confirms the overall pattern across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "State-history-dependent TMS effects were observed for DLPFC and IFC but not FEF. DLPFC stimulation during Int-state showed opposite effects depending on prior state (shortened duration after F-state, prolonged after V-state). IFC showed similar state-history dependence, while FEF showed no state-history effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 demonstrate state-history-dependent causality with strong statistical support (all significant effects p<0.001, d>1.6). The differential effects based on state history (Post-F vs Post-V) provide evidence for dynamic, context-dependent PFC function. The null result for FEF (C42) serves as an internal control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Numerical simulations predicted that TMS would alter energy landscape structures in region-specific ways: DLPFC inhibition increased F-to-Int barriers and decreased Int-to-V barriers; IFC inhibition decreased both F-to-Int and Int-to-V barriers; FEF inhibition selectively lowered F-to-Int barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 report simulation results with strong statistical significance (all p<0.001, large effect sizes). However, these are computational predictions rather than direct empirical measurements. The support comes from the internal consistency of the simulation framework and subsequent validation through correlation with empirical neural effects (addressed in other results).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Empirical measurements of brain state dynamics confirmed the numerical predictions: changes in energy barriers correlated with corresponding changes in state dwelling times and transition frequencies across all three PFC regions (all r>0.52, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide empirical validation of the simulation predictions through significant correlations between predicted energy barrier changes and observed neural dynamics. The consistency across multiple PFC regions and the strength of correlations (r=0.52-0.69) support the energy landscape framework as a valid model of the underlying neural dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Mediation analyses revealed that behavioral effects of TMS were mediated by changes in brain state dynamics, which were in turn attributable to structural changes in energy landscapes. This three-level causal chain (energy landscape \u2192 brain state dynamics \u2192 behavior) was significant across all tested conditions (all indirect effects p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 report mediation analyses linking energy landscape changes to neural dynamics to behavior. The statistical significance of indirect effects (\u03b1\u00d7\u03b2) across multiple conditions provides strong support for the proposed mechanistic framework. However, mediation analysis assumes temporal ordering and cannot definitively establish causality between the mediator and outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The three PFC regions showed distinct functional roles in brain state dynamics: DLPFC enhances integration between Frontal and Intermediate states, IFC promotes segregation between these states, and FEF stabilizes the Frontal state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C71-C73 synthesize the experimental findings into functional interpretations. These interpretations are well-supported by the pattern of energy barrier changes and behavioral effects across regions. However, these are inferences from the data rather than direct measurements, and alternative interpretations may be possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The neural effects of TMS were transient, with correlations between energy barrier changes and neural dynamics beginning to decay approximately 1.5 seconds after stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 report temporal dynamics of TMS effects based on sliding window analysis. The ~1.5s decay time is empirically derived from the data and provides important information about the temporal specificity of the intervention. This supports the interpretation that effects are due to transient neural modulation rather than long-lasting changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The main behavioral findings were replicated in an independent cohort (N=14), and excitatory TMS produced opposite effects to inhibitory TMS (N=15), providing convergent validation of the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 report successful replication and validation experiments. The replication in an independent sample (C67) and the predicted opposite effects with excitatory stimulation (C68) strengthen confidence in the main findings. However, the replication sample is relatively small (N=14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Longitudinal experiments (N=63) revealed accumulative effects of state-dependent TMS over 8 weeks, with behavioral effects increasing over time and baseline perceptual stability changes detectable one week after the intervention ended.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 demonstrate long-term effects of repeated state-dependent TMS with appropriate statistical support (t12>3.2, p<0.05 for accumulation; F6,12=16.4, p<10^-3 for baseline changes). These findings suggest potential clinical applications, though the mechanisms underlying accumulation are not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study was motivated by the controversy over PFC involvement in bistable perception and the hypothesis that PFC causal roles are dynamically changing with brain state, explaining why previous studies failed to detect PFC causality without tracking brain state dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 establish the background, motivation, and hypothesis. These are well-supported by citations to prior literature (C2, C9-C15) and logical reasoning (C16-C18). The hypothesis is clearly stated and testable, providing the conceptual foundation for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C76"
+    ],
+    "result": "The study used structure-from-motion (SFM) stimuli rather than binocular rivalry to focus on higher-order cortical involvement, and mixture perception was minimal (1.4\u00b10.5%), validating the experimental paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C76 describe methodological choices and validation. The rationale for using SFM is supported by citations (C74), and the low proportion of mixture perception (C76) validates that participants experienced clear bistable perception. These are important methodological details but not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study included appropriate sample sizes (N=65 for control experiments, N=34 for main experiment) and followed ethical guidelines with institutional approval and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 report sample sizes and ethical compliance. These are factual statements about study design and ethics that are appropriately documented. The sample size for the main experiment (N=34) was determined by power analysis, which is methodologically sound.",
+    "result_type": "MINOR"
+  }
+]

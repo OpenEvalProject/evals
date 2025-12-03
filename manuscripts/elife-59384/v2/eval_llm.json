@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C178",
+      "C179",
+      "C180",
+      "C183"
+    ],
+    "result": "Autophagy-related genes show differential conservation across apicomplexan parasites. Canonical autophagy genes (ATG1, ATG2, ATG9) are conserved in cyst-forming coccidia (H. hammondi, N. caninum, S. neurona) but absent in non-coccidian apicomplexans (C. parvum, P. falciparum, Babesia spp.). Genes involved in apicoplast maintenance (ATG3, ATG7, ATG8, VPS15, VPS34) are more universally conserved across apicomplexans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C178-C179 are directly supported by reciprocal BLAST analysis data presented in Figure 1A. The inference that canonical autophagy is specific to cyst-forming parasites while apicoplast-related functions are universal (C55-C56, C180, C183) is logically derived from the conservation patterns, though the evolutionary interpretation remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Proteins involved in apicoplast segregation have strongly negative phenotype scores in tachyzoites, indicating essentiality, while canonical autophagy proteins (TgATG1, TgATG2, TgATG9, TgProp1) have neutral or positive scores, suggesting dispensability in acute-stage parasites. The retention of canonical autophagy genes in cyst-forming parasites suggests stage-specific importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by phenotype scores from Sidik et al., 2016 presented in Figure 1B. The inference that canonical autophagy is non-essential in tachyzoites (C59) is well-supported by the data. The hypothesis about stage-specific function (C60-C61) is reasonable speculation based on gene retention patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Stage-specific knockdown of TgATG8 in bradyzoites (S/ATG8 strain) results in loss of autophagy and bradyzoite viability. GFP-TgATG8 expression is maintained in tachyzoites where it supports apicoplast segregation, but is lost upon differentiation to bradyzoites. LHVS-treated S/ATG8 bradyzoites show reduced accumulation of autophagic material and no viable parasites can be recovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by microscopy and western blot data in Figure 2C-D. Claims C68-C70 are supported by CytoID staining in Figure 2E. Claim C71 is supported by plaque assay data in Figure 2F. However, the interpretation is complicated because TgATG8 has dual roles in both autophagy and apicoplast maintenance, making it difficult to definitively attribute the viability defect to loss of autophagy alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TgATG9 is dispensable in tachyzoites but required for efficient autophagy in bradyzoites. \u0394atg9 bradyzoites show substantially reduced accumulation of dark puncta and CytoID-positive structures following LHVS treatment compared to parental and complemented strains, indicating impaired delivery of autophagic material to the VAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by citations to previous work. Claims C75-C80 are well-supported by quantitative data in Figure 3A-E showing reduced puncta size and number in \u0394atg9 bradyzoites. The inference that TgATG9 is necessary for efficient autophagy (C81-C82) is strongly supported by the data, though some residual autophagy appears to occur.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Loss of TgATG9 causes morphological abnormalities in bradyzoites including enlarged cysts, misshapen and bloated parasites, vacuolization, enlarged nuclear envelope, and aberrant cell division with multinucleated parasites (26% vs <1% in controls). These findings indicate TgATG9 is necessary for normal bradyzoite morphology and cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by quantitative data in Figure 4A-B. Claims C85-C88 are supported by TEM images and quantification in Figure 4C-D and Table 1. The inference that TgATG9 is necessary for bradyzoite fitness (C89-C90) is well-supported by the multiple abnormalities observed. The multinucleated phenotype is particularly striking and well-quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "\u0394atg9 bradyzoites show various VAC abnormalities including enlarged empty VACs and VACs filled with electron-dense material. 12.3% of vehicle-treated \u0394atg9 bradyzoites have electron-dense VACs (vs 0% in controls), while 93-94% of LHVS-treated parasites show this phenotype regardless of genotype, suggesting a link between TgATG9 and VAC proteolytic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 and C97-C98 are directly supported by TEM images in Figure 5 and quantification in Table 1. The inference about a link between TgATG9 and VAC function (C96) is reasonable given the data, though the mechanism remains unclear. The observation that LHVS treatment causes similar VAC phenotypes in both genotypes is important for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Multimembrane vesicular structures are observed in both LHVS-treated control parasites (6.9%) and \u0394atg9 bradyzoites (6% vehicle-treated, 10.1% LHVS-treated), suggesting TgATG9 is not required for biogenesis of these structures but may affect their turnover rate by the VAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 are supported by TEM observations and quantification in Table 1 and Figure 6A. However, the interpretation (C102-C103) is speculative. The identity of these structures is uncertain, and whether they represent autophagosomes or alternative autophagy-like structures is unclear. The hypothesis about reduced turnover is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "\u0394atg9 bradyzoites display striking mitochondrial abnormalities including thin, horseshoe-shaped mitochondria with bulbous ends (22.6% of parasites) that encapsulate cytoplasmic components within four-membrane structures. These abnormalities are observed in vehicle-treated \u0394atg9 parasites and persist with LHVS treatment. Quantitative morphology analysis shows significant differences at days 6 and 8 of differentiation but not at days 1 or 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are well-supported by TEM images in Figure 6B-E and quantification in Table 1. Claims C110-C112 are supported by quantitative morphology analysis in Figure 6F-G. The inference that impaired autophagy leads to mitochondrial abnormalities (C113) is supported by the data, though the mechanism is unclear. The four-membrane structure clearly distinguishes these from autophagosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "\u0394atg9 bradyzoites show severely compromised viability in vitro. 30% of \u0394atg9 cysts show signs of degeneration by TEM. Vehicle-treated \u0394atg9 bradyzoites are significantly less viable than controls at 14 and 21 days of differentiation, while LHVS treatment further reduces viability in all strains. These findings indicate autophagy is important for bradyzoite survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is supported by TEM quantification in Table 1. Claims C116-C119 are supported by viability assay data in Figure 7A-C. The inference that autophagy is important for survival (C115) is well-supported. The experimental design appropriately includes complemented strains and multiple time points. Statistical analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "\u0394atg9 parasites show no defect in tachyzoite-to-bradyzoite differentiation and form plaques normally as tachyzoites, indicating TgATG9 is non-essential in tachyzoites and that reduced bradyzoite viability is due to a persistence defect rather than a differentiation defect. Host cell invasion is not measurably impacted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by differentiation assay data in Figure 7\u2014figure supplement 1. Claim C122 is supported by plaque assay data in Figure 7\u2014figure supplement 2. The inferences about TgATG9 dispensability in tachyzoites (C123) and normal invasion (C124-C125) are well-supported by the data. These controls are important for interpreting the bradyzoite-specific phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "\u0394atg9 parasites show reduced virulence in mice with 100% survival at 35 days post-infection (vs 70-80% for controls). Brain parasite burden at day 7 is similar across strains, but brain cyst burden at 5 weeks shows an ~100-fold reduction in \u0394atg9-infected mice, indicating TgATG9 is necessary for long-term persistence in vivo but not for initial dissemination to the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 are supported by survival data in Figure 7D. Claim C130 is supported by qPCR data in Figure 7E. Claim C132 is supported by cyst burden data in Figure 7F. The inferences about dissemination (C131) and the conclusion about autophagy being critical for persistence (C133) are well-supported. The experimental design with multiple time points and appropriate controls is strong. However, the authors note that cyst enumeration from surviving mice may underestimate differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Genetic ablation of TgATG9 results in bradyzoite death both in TgCPL-proficient and LHVS-treated parasites, demonstrating that autophagy is a primary essential pathway in chronic-stage T. gondii. \u0394atg9 parasites can differentiate normally but fail to persist, indicating the defect is in survival rather than differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 are supported by experimental data throughout the manuscript. The hypothesis that autophagy is a primary essential pathway (C148, C150) is well-supported by the viability and persistence data. Claims C149, C151-C152 appropriately distinguish between differentiation and persistence defects. The logic is sound and the data are consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "LHVS treatment and TgATG9 ablation both cause VAC abnormalities. Despite reduced canonical autophagy, 90% of LHVS-treated \u0394atg9 bradyzoites have electron-dense VACs, suggesting alternative sources of proteinaceous material (either host protein uptake via endolysosomal system or alternative autophagy mechanisms). However, neither alternative pathway can rescue canonical autophagy function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C154 are supported by TEM data. The inference about VAC homeostasis (C155) is reasonable. Claim C156 is supported by the observation of electron-dense VACs. However, the interpretation (C157) and proposed hypotheses (C158-C159) are speculative. Claim C160 is supported by citation to recent work. The conclusion that alternatives cannot rescue autophagy (C161) is supported by the viability data, but the nature of the alternative pathways remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "\u0394atg9 bradyzoites show a sharp increase in multinucleated parasites (~30% vs <1% in controls), implicating TgATG9 in bradyzoite replication and development. This contrasts with tachyzoites where the lytic cycle is unaffected by TgATG9 knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C162 is supported by citation. Claim C163 is supported by TEM quantification. The inference about TgATG9's role in replication (C164) is reasonable given the data, though whether this is direct or indirect is unclear. Claim C165 is supported by citation to previous work. The stage-specific difference is notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The mitochondrial abnormalities in \u0394atg9 bradyzoites resemble 'm-vacuoles' in Dictyostelium and spherical mitochondrial structures in CCCP-treated mammalian cells. These structures encapsulate various organelles and may represent an attempt at organelle clearance in the absence of ATG9-dependent canonical autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C173-C176 are supported by citations to previous literature describing similar structures in other organisms. The comparison is interesting and the morphological similarities are striking based on the TEM images. However, the speculation that these represent organelle clearance attempts (C177) is not directly tested. The functional significance of these structures remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The manuscript provides background on the canonical autophagy pathway, describing the process from initiation through ATG1 activation, ATG2/ATG18/ATG9 complex assembly, phagophore formation with ATG8 lipidation, autophagosome closure, and fusion with lytic compartments. The process occurs within 3-10 minutes and is widely conserved among eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C34-C43) represent established knowledge about autophagy supported by appropriate citations to the literature. They provide necessary background context for the experimental work. The information is accurate and well-documented in the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The manuscript provides background on autophagy in Apicomplexa, noting that whether all members can perform canonical autophagy is debated, that several autophagy proteins have non-canonical roles in apicoplast segregation, and that TgCPL is dispensable in tachyzoites but essential in bradyzoites where its inhibition causes accumulation of autophagic material in the VAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C44-C50) represent established knowledge from the literature, appropriately cited. They provide important context for understanding the dual roles of autophagy proteins in Apicomplexa and the rationale for studying TgATG9 specifically. The information is accurate based on the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The manuscript provides background on ATG9 function, describing recent findings that ATG9 is a scramblase that translocates phospholipids, forms a homotrimer with lateral and vertical pores, serves as an anchoring point for autophagosome nucleation, and is integral for autophagosome formation. Many autophagy proteins in Apicomplexa have been repurposed for apicoplast maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C134-C141) represent recent advances in understanding ATG9 function, appropriately cited to the literature. The information provides important mechanistic context for interpreting the experimental results. The citations are to high-quality recent papers and the information is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The manuscript provides background on TgCPL, noting it is non-essential in tachyzoites (likely due to sufficient nutrient access from host cytoplasm) but that accumulation of autophagic material in TgCPL-deficient bradyzoites coincides with loss of viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C142-C144) are supported by appropriate citations to previous literature. They provide important context for the experimental rationale, explaining why the authors investigated autophagy in bradyzoites and why they used LHVS treatment as a tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The manuscript provides background on ATG9 localization and function in various organisms, noting that alternative autophagy can occur without ATG9, that ATG9 shuttles from mitochondria or Golgi to phagophore assembly sites, and that TgATG9 localizes to Golgi and VAC but not mitochondria in tachyzoites. Previous work found no extensive impact on mitochondrial morphology in tachyzoites, though this was not assessed ultrastructurally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C166-C172) are supported by appropriate citations to the literature, including previous work by the authors. They provide important context for interpreting the mitochondrial abnormalities observed in bradyzoites and highlight the stage-specific nature of the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The manuscript provides extensive background on T. gondii biology, epidemiology, and life cycle, including prevalence of infection, transmission routes, health consequences, tachyzoite and bradyzoite stages, nutrient trafficking, differentiation triggers, and host immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C14-C33) represent established knowledge about T. gondii, appropriately cited to the literature. They provide necessary background context for understanding the significance of the work. The information is accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The conservation patterns suggest canonical autophagy promotes survival within cysts in coccidia. Cryptosporidia lack canonical autophagy genes but have a reduced genome and may use alternative strategies. The data indicate canonical autophagy was conserved in cyst-forming apicomplexans from a common ancestor and lost in non-cyst-forming lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C180 is a reasonable hypothesis based on the conservation data (C51-C54). Claims C181-C182 about Cryptosporidia are partially speculative. Claim C183 represents an evolutionary inference that, while plausible given the data, cannot be definitively proven from conservation patterns alone. These are reasonable interpretations but remain hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  }
+]

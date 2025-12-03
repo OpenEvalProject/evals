@@ -1,0 +1,458 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study sequenced 785 Mycobacterium tuberculosis strains from Valencia region, representing 77% of culture-positive TB cases reported between 2014 and 2016. Demographic, clinical, and microbiological records were obtained for 724 samples from 18 regional hospitals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 provide clear methodological details about sample collection and coverage. The 77% coverage of culture-positive cases (785 of 1019) represents a robust population-based sample, and the availability of epidemiological data for 724 samples is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Six different M. tuberculosis lineages were identified circulating in Valencia region, with lineage 4 (L4) being the most frequent at 92.1%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are directly supported by the phylogenetic analysis shown in Figure 1A. The dominance of L4 is consistent with European TB epidemiology and is clearly documented in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "TB incidence in Valencia region ranged between 8.3-8.7 per 100,000 inhabitants, with higher incidence in migrants (23.6) than local-born individuals (6.9). The majority (63%) of cases were Spanish-born, while 30% came from high-incidence countries and 7% from other low-incidence countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 present epidemiological characteristics that are clearly stated in the manuscript. These descriptive statistics are fundamental to understanding the study population and are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Diabetes was present in 10.4% of TB cases and was more prevalent in Spanish-born patients (OR 2.7, CI 1.5-5.4, p<0.001), though values were similar to diabetes prevalence in the general Spanish population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 present statistical analysis of diabetes as a risk factor. The odds ratio with confidence intervals and p-value are clearly stated, and the comparison to general population prevalence provides appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Contact tracing identified 66 epidemiological clusters with 97 cases (12.5%), while genomic clustering at 12 SNPs identified 112 clusters with 331 cases (42.7%). Spanish-born patients were more likely to be in genomically linked groups (OR 2, CI 1.44-2.79, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 compare epidemiological and genomic clustering results with clear statistical support. The data demonstrate a substantial difference between contact tracing and genomic methods, with appropriate statistical testing showing Spanish origin as a significant predictor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Pulmonary TB localization (OR 2.5, CI 1.60-3.98, p<0.001), younger age, and male sex were associated with clustering. After correcting for confounders using logistic regression, Spanish origin (p<0.001), younger age, pulmonary localization, and male sex remained significant (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 present multivariable analysis with appropriate statistical methods. The use of logistic regression to control for confounders strengthens the findings, and the results are clearly stated with statistical significance values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "90% of TB cases in Valencia region were susceptible to all antibiotics, indicating that drug resistance had no impact on clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 document drug susceptibility patterns. The high proportion of susceptible cases (90%) supports the inference that resistance does not confound clustering analysis in this setting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Genomic clustering consistently detected more transmission than contact tracing across all SNP thresholds. Only 15.4% of the 331 patients in genomic clusters (12 SNPs) had an identified epidemiological link, with many genomic links undetected by epidemiological investigation and some epidemiological links not confirmed genomically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 demonstrate systematic discordance between epidemiological and genomic methods. The 15.4% agreement rate is clearly documented and represents a key finding about the limitations of contact tracing in this setting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "ROC curve analysis established 11.5 SNPs as the optimal threshold maximizing agreement between epidemiological investigation and genomic data, with an area under the curve >0.9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 presents ROC analysis with appropriate statistical metrics. The AUC >0.9 indicates excellent discriminatory ability, and the optimal threshold is clearly identified in Figure 2B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Oxfordshire displayed a bimodal clustering pattern with clear differentiation at >50 SNPs, while Valencia and Malawi showed continuous clustering across 0-150 SNPs. This suggests that a strict 12 SNP threshold does not universally apply across settings, particularly in areas with higher transmission burdens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 compare clustering patterns across settings using pairwise distance distributions. The bimodal vs. continuous patterns are clearly shown in Figure 3A, supporting the conclusion that universal SNP thresholds are problematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The oldest genomic clusters in Valencia dated to ~30 years before sampling, while epidemiologically linked cases traced back <10 years. A 12 SNP threshold captures both recent and older transmission events, while a 5 SNP threshold (dating clusters 1999-2015) better captures recent transmission relevant for public health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 present temporal analysis of clusters using Bayesian dating methods. The distinction between genomic cluster ages and epidemiological link ages is well-documented in Table 1 and supports the interpretation about threshold utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Historical transmission link analysis revealed distinct patterns: Oxfordshire had 14 links between 5-25 years before 2016 with a 75-year gap to older links; Malawi had 70 links <50 years and 46 links 50-150 years; Valencia had 143 links <50 years and 43 links 50-150 years. The gap observed in Oxfordshire was absent in Malawi and Valencia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 present transmission link dating across three settings. The data are clearly presented in Figure 3B and supplementary figures, showing distinct temporal patterns that support the interpretation of continuous vs. interrupted transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Patient age did not differ from inferred cluster age (Welch t-test, p>0.1), suggesting strains do not represent reactivations and that uninterrupted transmission is the most likely explanation for old links.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54 use patient age vs. cluster age comparison to argue against reactivation. However, this analysis has limitations: (1) the assumption that reactivation would correlate with older patient age may not hold if reactivation occurs at various ages; (2) the test only addresses one alternative explanation; (3) other factors like immigration timing are not fully considered. The statistical test is appropriate but the biological interpretation requires additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Genomic clustering (12 SNPs) was 43% overall, 47% in Spanish-born, and 31% in imported cases, suggesting transmission among locally-born patients majorly contributes to disease burden. Clustering remained high at 5 SNPs (35% overall, 39% Spanish-born).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 present clustering rates stratified by origin. The higher clustering in Spanish-born patients supports the inference about local transmission contribution, though the causal interpretation (C58) is somewhat stronger than the data directly show.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Valencia region showed higher transmission (clustering rates) than other low-burden settings (14-16%) and closer to mid/high-burden settings (39-85%), with high transmission among Spanish-born individuals being a major contributor to disease burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 compare Valencia to other settings using cited literature. The comparison is valid and supports the conclusion about Valencia's unusual transmission dynamics for a low-burden setting, though the inference about 'major contributor' (C62) is interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In low-burden settings, 38-57% of genomically linked cases had epidemiological links, while in high-burden settings this was 8-19%. Valencia showed 15.4% agreement similar to high-burden settings, meaning ~80% of transmission was missed by the health system despite 78% contact tracing coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 compare Valencia to other settings using literature values and study data. The 15.4% agreement is clearly documented, and the comparison to high-burden settings is appropriate. The inference about 80% missed transmission follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Contact tracing among household contacts will not significantly affect TB incidence at community level in settings like Valencia, as transmission likely results from casual community contact between individuals not known to one another, associated with social drivers. Community transmission explains the lack of agreement between genomic and epidemiological clusters and is relevant in low-burden settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 draw inferences about community transmission based on the low agreement between contact tracing and genomic data, supported by citations to similar findings in other settings. The interpretation is reasonable given the data, though direct evidence of community transmission mechanisms is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Epidemiologically linked cases had common ancestors <10 years before sampling with distances typically 0-4 SNPs (one at 11 SNPs). Strains linked by >5 SNPs involve transmission links too old for public health intervention. A 5 SNP threshold better captures actionable events, though public health still only identifies ~15% of cases in genomic clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 integrate temporal and genetic distance data to make recommendations about thresholds for public health. The data support the temporal distinction between recent and older links, and the 15% identification rate is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Valencia and Malawi display continuous and sustained transmission links over time. Events outside genomic transmission clusters likely reflect older contagion chains still contributing to TB incidence today, resulting in continuous clustering in settings with sustained transmission dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 interpret the continuous clustering pattern as evidence of sustained transmission. The data from Figure 4C support this interpretation, showing continuous transmission links over time in both settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Oxfordshire displayed bimodal clustering distribution and lacked transmission events beyond 12 SNP clusters, consistent with robust TB reduction until the 1990s in the UK, followed by expansion due to HIV, immigration, and drug resistance. Ongoing transmission in Oxfordshire dated to 1993. This implies uninterrupted transmission in Valencia and Malawi but not Oxfordshire, explaining SNP distribution differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 integrate clustering patterns with historical epidemiological context. The bimodal pattern in Oxfordshire is clearly shown in Figure 4, and the dating to 1993 aligns with cited historical trends. The interpretation of uninterrupted vs. interrupted transmission is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Continuous transmission plays a primary role in fueling TB incidence in Valencia region, with community transmission occurring more frequently than household transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 synthesize multiple lines of evidence: high clustering rates, continuous transmission links over time, and low agreement with contact tracing. These collectively support the conclusion about continuous community transmission, though the evidence is largely inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C106",
+      "C107",
+      "C110",
+      "C111"
+    ],
+    "result": "Low TB burden does not translate to low transmission. Low-burden locations can have distinct scenarios requiring specifically tailored management, and general guidelines should not be applied based solely on incidence rate. Understanding heterogeneities in transmission dynamics is essential for defining tailor-made interventions with population-level impact, which is key to reducing TB incidence worldwide. Burden and transmission are not necessarily linked due to the role of past epidemics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C111 present the main conclusions of the study. The comparison of Valencia (low burden, high transmission) with Oxfordshire (low burden, low transmission) and Malawi (high burden, high transmission) provides strong evidence for the lack of correlation between burden and transmission. The call for tailored strategies follows logically from the demonstrated heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Clustering in Valencia (47.4%) is higher than Oxfordshire (27%) and similar to Malawi (49.8%). Settings with high transmission rates are associated with decades of uninterrupted transmission, irrespective of burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 present comparative clustering rates and their temporal interpretation. The clustering percentages are clearly documented, and the association with uninterrupted transmission is supported by the transmission link dating analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C133",
+      "C134"
+    ],
+    "result": "The study compared three settings: Oxfordshire (8.4 cases/100,000, 92% of culture-positive cases sequenced), Malawi (87 cases/100,000, 72% sequenced), and Valencia (~8 cases/100,000, 77% sequenced).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114, C133-C134 provide basic descriptive information about the three datasets used for comparison. The incidence rates and sequencing coverage are clearly stated and represent appropriate population-based samples for comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The results reveal heterogeneity of the TB epidemic among settings, highlighting the lack of correlation between a region's TB burden and the level of local transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 synthesizes the main finding from the comparative analysis. The demonstration that Valencia (low burden) has transmission rates similar to Malawi (high burden) and much higher than Oxfordshire (also low burden) provides strong evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The lack of effective past efforts to halt transmission may explain continuous transmission in Valencia. Spain suffered higher TB incidence for most of the 20th century due to lower socioeconomic status than neighboring countries. Improved TB control has led to continuous decline from incidence of 22 to 6.4 in the last 20 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85 provide historical context and speculation about causes of current transmission patterns. While the historical incidence decline (C85) is documented, the causal explanations (C83-C84) are speculative and not directly tested. The interpretation is plausible but lacks direct supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In other low-burden countries, transmission is limited and immigration/reactivation from high-burden countries drives incidence. Meta-analysis suggests MTB infection may not be lifelong and most people clear it, implying LTBI prevalence is lower than assumed and most TB cases come from recent contagion or importation depending on setting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 cite literature to provide context for interpreting the Valencia findings. The citations to other studies (C95, C96) support these statements, though C97 represents an inference that extends beyond the direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In areas where transmission drives incidence, actions beyond passive case finding are likely more successful. Active case finding strategies from low-income countries can be transferred to high/middle-income settings. There is opportunity for genomics-informed infection control programs to identify transmission hotspots and risk factors. Active case finding has potential to tackle subclinical TB transmission, though its impact on TB control is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C105 discuss implications and future directions. While the recommendations follow logically from the findings about high transmission in Valencia, they represent speculation about interventions not tested in this study. The citations provide some support, but the effectiveness of these approaches in Valencia specifically is not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "TB is the leading cause of death by infectious disease, with 10 million cases and 1.4 million deaths in 2019, likely to increase due to COVID-19. Recent transmission significantly contributes to TB burden in high-incidence regions, while in low-burden countries, TB is mainly from LTBI reactivation in migrants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide background information supported by citations to WHO and published literature. These establish the context for the study but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "WGS provides higher resolution and accuracy for tracking recent transmission than previous molecular markers, with greater agreement with epidemiological results. A 5 SNP threshold is widely accepted for recent transmission, while 12 SNPs captures older transmission events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 summarize established knowledge about WGS methods and SNP thresholds, supported by multiple citations. These provide methodological context but represent prior work rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Reactivation of infections in imported cases from high-burden settings is the significant driver in other low-burden settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 cites literature to contrast Valencia with other low-burden settings. The citations support this characterization of other settings, providing important context for understanding Valencia's distinctiveness.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2398 @@
+{
+  "submission": {
+    "id": "0b784f9b-80c9-492f-afe5-261b78a6559d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:47:51.933030Z",
+    "updated_at": "2025-12-03T10:47:51.933030Z"
+  },
+  "content": [
+    {
+      "id": "516a8e12-3077-427c-9163-fd524930a776",
+      "submission_id": "0b784f9b-80c9-492f-afe5-261b78a6559d",
+      "content_type": "manuscript",
+      "content_text": "# Reversing chemorefraction in colorectal cancer cells by controlling mucin secretion\n\n## Authors\n\n- Gerard Cantero-Recasens<sup>1</sup> ([ORCID: 0000-0001-6452-782X](https://orcid.org/0000-0001-6452-782X)) \u2020\n- Josune Alonso-Mara\u00f1\u00f3n<sup>2</sup>\n- Teresa Lobo-Jarne<sup>2</sup>\n- Marta Garrido<sup>2</sup>\n- Mar Iglesias<sup>3</sup>\n- Lluis Espinosa<sup>2</sup> ([ORCID: 0000-0002-2897-4099](https://orcid.org/0000-0002-2897-4099)) \u2020\n- Vivek Malhotra<sup>4</sup> ([ORCID: 0000-0001-6198-7943](https://orcid.org/0000-0001-6198-7943)) \u2020\n\n### Affiliations\n\n1. Renal Physiopathology Group, Vall d\u2019Hebron Research Institute (VHIR) Barcelona Spain ([ROR:01d5vx451](https://ror.org/01d5vx451))\n2. Cancer Research Program, Institut Mar d'Investigacions M\u00e8diques, CIBERONC Hospital del Mar Barcelona Spain ([ROR:042nkmz09](https://ror.org/042nkmz09))\n3. Department of Pathology, Institut Mar d'Investigacions M\u00e8diques, Universitat Aut\u00f2noma de Barcelona, CIBERONC Barcelona Spain ([ROR:042nkmz09](https://ror.org/042nkmz09))\n4. Centre for Genomic Regulation (CRG), The Barcelona Institute for Science and Technology Barcelona Spain ([ROR:03kpps236](https://ror.org/03kpps236))\n5. Instituci\u00f3 Catalana de Recerca i Estudis Avan\u00e7ats (ICREA) Barcelona Spain ([ROR:0371hy230](https://ror.org/0371hy230))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFifteen percent of colorectal cancer (CRC) cells exhibit a mucin hypersecretory phenotype, which is suggested to provide resistance to immune surveillance and chemotherapy. We now formally show that CRC cells build a barrier to chemotherapeutics by increasing mucins\u2019 secretion. We show that low levels of KChIP3, a negative regulator of mucin secretion (Cantero-Recasens et al., 2018), is a risk factor for CRC patients\u2019 relapse in a subset of untreated tumours. Our results also reveal that cells depleted of KChIP3 are four times more resistant (measured as cell viability and DNA damage) to chemotherapeutics 5-fluorouracil + irinotecan (5-FU+iri.) compared to control cells, whereas KChIP3-overexpressing cells are 10 times more sensitive to killing by chemotherapeutics. A similar increase in tumour cell death is observed upon chemical inhibition of mucin secretion by the sodium/calcium exchanger (NCX) blockers (Mitrovic et al., 2013). Finally, sensitivity of CRC patient-derived organoids to 5-FU+iri. increases 40-fold upon mucin secretion inhibition. Reducing mucin secretion thus provides a means to control chemoresistance of mucinous CRC cells and other mucinous tumours.\n\n## Introduction\n\nSecreted mucins are synthesized in the endoplasmic reticulum (ER) and transported to the Golgi apparatus, where they receive extensive O-glycosylation that increases their molecular weight by about fivefold. These heavily glycosylated mucins are then packed into specialized micrometre-sized granules where they can reach molecular weights of up to 50 MDa (Sheehan et al., 2004; Thornton et al., 2008). These granules mature by a process that involves mucin condensation, and, finally, a small number of granules fuse to plasma membrane in a calcium-dependent manner to release the required quantity of mucins in the extracellular space (Adler et al., 2013; Rossi et al., 2004). Specifically, mucins are secreted by two main processes: (1) extracellular calcium-dependent pathway called stimulated secretion, which is triggered by an exogenous agonist; and (2) intracellular calcium-dependent release, but independent of external agonists, called baseline secretion. It has recently been shown that cooperation between TRPM4/5 sodium channels and the Na+/Ca2+ exchangers (NCX) controls stimulated secretion (Mitrovic et al., 2013; Cantero-Recasens et al., 2019). The calcium-binding protein KChIP3, on the other hand, regulates baseline secretion (Cantero-Recasens et al., 2018).\n\nThe secreted mucins compose the mucus that protects the underlying epithelium from toxins, pathogens, and allergens (Kesimer et al., 2013). Secretion of the right quantity and quality of mucins is crucial because mucin hypersecretion in the airways is linked to chronic obstructive diseases and hyposecretion makes the underlying tissue more susceptible to damage by the immune cells and the foreign particles (Thornton et al., 2008; Pelaseyed et al., 2014). Most cancer cells start expressing mucins, and it is widely thought that they isolate tumour cells from the immune system and also render them resistant to anticancer therapies (Kufe, 2009). Indeed, treatment with O-glycosylation inhibitors (benzyl-\u03b1-GalNAc) increases the effectiveness of chemotherapy on pancreatic cells overexpressing the transmembrane mucin MUC1 (Kalra and Campbell, 2007). But whether this is due to inhibition of MUC1 glycosylation only or any of the other O-glycosylated proteins is not known. Patients with mucinous colorectal adenocarcinoma (10\u201315% of colorectal cancer [CRC]; Luo et al., 2019), however, present dysregulated mucin secretion that is long associated with high resistance to chemotherapy. In fact, extracellular mucins account for at least 50% of the volume of these tumours (Hugen et al., 2016). Whether or not controlling the levels of mucins secreted by cancer cells affects their susceptibility to chemotherapeutics, however, remains untested. Here, we have studied this question directly in CRC cell lines and organoids derived from a CRC patient and show that reducing mucin secretion reverses the chemorefractory properties of hypersecretory CRC cells.\n\n## Results\n\n### 5-Fluorouracil + irinotecan treatment induces mucin production\n\n15\u201320% of CRCs develop a mucinous profile (Luo et al., 2019), which renders cancer cells highly resistant to commonly used chemotherapies, such as 5-fluorouracil + irinotecan (5-FU+ iri.) (Van Cutsem et al., 2016). To study the contribution of secreted mucins to CRC chemorefraction, we used the HT29 CRC cell line (clones HT29-18N2 and HT29-M6) that are differentiated into mucin-producing cells (Mitrovic et al., 2013; Mayo et al., 2007).\n\nWe first tested the effect of 5-FU + iri. on mucin production, focusing on secreted mucins, which are the main macrocomponents of the mucus layer (i.e. MUC5AC) (Thornton et al., 2008). Briefly, differentiated HT29-M6 cells were treated with 5-FU + iri. (50 \u03bcg/mL 5-fluorouracil + 20 \u03bcg/mL irinotecan diluted in normal tissue culture medium) and MUC5AC levels monitored over time (0, 1, 3, 6, and 24 hr) by Western blot (WB) (scheme in Figure 1\u2014figure supplement 1A). Our results reveal that 5-FU + iri. treatment strongly increases MUC5AC intracellular levels (Figure 1A). To further confirm this effect, 5-FU + iri.-treated HT29-M6 cells (24 hr) were imaged by confocal immunofluorescence microscopy. Accordingly, we found that 5-FU + iri.-treated cells present a clear increase in MUC5AC level compared to control cells (Figure 1B). These results suggest that increased production of mucins after 5-FU + iri. treatment could act as a barrier to chemical permeation, thus enhancing chemorefraction of mucosecretory cancer subtypes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73926/elife-73926-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cell lysates from differentiated HT29-M6 cells treated with 5-fluorouracil + irinotecan (5-FU + iri.) (50 \u00b5g/mL 5-FU + 20 \u00b5g/mL iri.) for 24 hr were analysed by Western blot with an anti-MUC5AC to test expression levels. Tubulin was used as a loading control. (B) Immunofluorescence Z-stack projections of differentiated HT29-M6 cells treated with vehicle (control) or 5-FU + iri. (50 \u00b5g/mL 5-FU + 20 \u00b5g/mL irinotecan) for 24 hr. Cells were stained with anti-MUC5AC (red) and DAPI (blue). Scale bar = 50 \u00b5m. (C) Differentiated HT29 cells were treated with 100 \u00b5M ATP for 30 min, washed extensively (upper panel) or smoothly (lower panel), and incubated with Alexa Fluor 488-labelled albumin for 1 hr. Cells were stained with anti-MUC5AC antibody (red) and DAPI (blue). In the orthogonal view, dotted lines across the images demarcate the top surface of the cell. Scale bars correspond to 5 \u00b5m. (D) Colocalization between MUC5AC and albumin was calculated from immunofluorescence images by Manders\u2019 coefficient using Fiji. Average values \u00b1 SEM are plotted as scatter plot with bar graph. The y-axis represents Manders\u2019 coefficient of the fraction of albumin overlapping with MUC5AC (N \u2265 3). (E) Consensus molecular subtype (CMS) distribution of high and low MUC5AC-expressing colorectal tumours (Jorissen cohort). (F) Disease-free survival (DFS) of colorectal cancer patients with high (n = 73) or low (n = 153) MUC5AC levels (Jorissen cohort). NOLBL: samples without a defined CMS subtype (tumours with no label). *p<0.05, **p<0.01.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73926/elife-73926-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic diagram of the experimental set-up to measure mucin production after 5-fluorouracil + irinotecan (5-FU + iri.) treatment.\n\nDifferentiated HT29-M6 cells were seeded in glass-bottom dishes and treated with 100 \u00b5M ATP, a well-known secretagogue for mucins (Abdullah et al., 1997). After 30 min, cells were divided into two groups: one group was extensively washed with isotonic solution to remove the mucin fibres, while the other group was subjected to mild washes to preserve these fibres. Next, cells were incubated with Alexa Fluor 488-labelled albumin for 1 hr, processed for confocal immunofluorescence microscopy and stained with anti-MUC5AC antibody. As shown in Figure 1C, mucins act as a barrier that prevents the endocytosis of albumin by HT29-M6 cells (Figure 1C, upper panel). Contrarily, removal of mucin fibres allows the contact and uptake of albumin by cells (Figure 1C, lower panel). Quantification of the images using the Fiji software revealed that in the presence of mucin fibres albumin colocalizes with MUC5AC (Manders\u2019 coefficient albumin-MUC5AC: 0.16 vs. 0.01, p=0.01), whereas in cells without mucin barrier, albumin is found intracellularly (Figure 1D). Altogether, these data demonstrate that colonic cancer cells produce higher levels of MUC5AC in response to chemotherapy treatment, which form a barrier that protects cells from incorporation of extracellular compounds. We anticipated that MUC5AC may act as a barrier against chemotherapy in human CRC tumours, and as a consequence, it could represent a prognostic biomarker for CRC.\n\nAnalysis of CRC subtypes, using the consensus molecular subgroup (CMS) classification from Guinney et al., 2015, indicated a radically different distribution of high and low MUC5AC-expressing tumours among subtypes: CMS1 (28% vs. 10%), CMS2 (15% vs. 41%), CMS3 (36% vs. 6%), and CMS4 (5% vs. 26%) (Figure 1E). Importantly, both CMS1 (associated with immune evasion) and CMS3 (metabolic dysregulation and goblet cell markers enrichment) have worse prognosis than CMS2 (Guinney et al., 2015), which include the majority of tumours with low MUC5AC expression. These results point to an important role of MUC5AC in the prognosis of CRC patients. To directly assess this possibility, we evaluated whether MUC5AC expression levels discriminate patients\u2019 outcome in a well-annotated CRC cohort (GSE14333, Jorissen et al., 2009). Importantly, although this public database does not include information on chemotherapy treatment, we could analyse the disease-free survival (DFS) of patients depending on the gene-expression levels, a parameter that is related to tumour chemoresistance. However, DFS analysis revealed no significant differences between patients with high or low MUC5AC levels (Figure 1F), strongly suggesting that factors controlling mucin secretion, and not only intracellular mucin levels, might be relevant biomarkers for CRC prognosis.\n\n### The mucin regulator KChIP3 is a risk factor for CRC with high MUC5AC expression\n\nMucin secretion can be triggered by an external agonist (stimulated secretion), such as ATP and allergens, or in the absence of external agonists (baseline secretion) (Adler et al., 2013). We have shown previously that KChIP3, an intracellular calcium sensor, negatively controls baseline mucin secretion (loss of KChIP3 causes mucin hypersecretion) (Cantero-Recasens et al., 2018). So, we checked whether KChIP3 could be a prognostic biomarker for CRC. Analysis of DFS of patients according to KChIP3 levels, encoded by the KCNIP3 gene, revealed that KChIP3 is, indeed, a prognostic factor (hazard ratio [HR] = 1.925, p=0.02) (Figure 2A). To further confirm whether this effect is related to mucins, patients were divided between high (n = 73) and low (n = 153) MUC5AC expression levels, and then we studied the effect of KChIP3 on the DFS of patients. Our analysis reveals that low levels of KChIP3 are a clear risk factor in those patients with high MUC5AC levels (HR = 3.29, p=0.04) (Figure 2B). There is no significant effect on patients with low MUC5AC expression (Figure 2C), although after 100 months there is a decrease in DFS. Further analysis of this effect revealed that three patients (GSM358532, GSM358534, and GSM358438) were responsible for this effect. We studied these patients in more detail, and interestingly, although they have low levels of MUC5AC, these patients present increased levels of other secreted mucins (e.g., MUC2) (Figure 2\u2014figure supplement 1A). However, similarly to previous studies (Kufe, 2009; Luo et al., 2019), analysis of the effect of MUC2 levels on DFS shows that high MUC2 levels are protective while patients with low levels of MUC2, which may reflect a more dedifferentiated state of cancer cells, have a lower DFS (HR = 2.54, p=0.023) (Figure 2\u2014figure supplement 1B). Importantly, when we studied the effect of KChIP3 on the DFS of patients with high expression of MUC2, we found a clear tendency (p=0.08) to worse prognosis in patients with low levels of KChIP3 (Figure 2\u2014figure supplement 1C). Altogether, these results suggest that low levels of KChIP3, which consequently increase the quantity of mucins secreted, protect cancer cells from chemotherapeutic drugs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73926/elife-73926-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Disease-free survival (DFS) according to KChIP3 levels of CRC patients (low KChIP3 levels, n = 120; high KChIP3 levels, n = 106) (A), CRC patients with high MUC5AC levels (low KChIP3 levels, n = 39; high KChIP3 levels, n = 34) (B), or CRC with low MUC5AC levels (low KChIP3 levels, n = 81; high KChIP3 levels, n = 72) (C). (D) Differentiated control (black), KChIP3-overexpressing cells (KCNIP3-OV, blue) and KChIP3-depleted cells (KCNIP3-KD, red) were treated for 72 hr with increasing concentrations of 5-fluorouracil + irinotecan (5-FU + iri.). Average values \u00b1 SEM are plotted as scatter plot (N > 3). The y-axis represents the percentage of cell growth relative to the lowest concentration of 5-FU + iri. The IC50 was calculated from the interpolated curve. HR, hazard ratio. *p<0.05, **p<0.01.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73926/elife-73926-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Expression levels of secreted mucins MUC2, MUC5AC, MUC5B, MUC6, MUC7, and MUC19. Each dot represents a different patient. Patients GSM358532, GSM358535, and GSM358538 are highlighted in green, blue, and red, respectively. (B) Disease-free survival (DFS) of colorectal cancer patients with high (n = 73) or low (n = 153) MUC2 levels (Jorissen cohort). (C) DFS according to KChIP3 levels of colorectal cancer patients with high MUC2 expression (low KChIP3 levels, n = 27; high KChIP3 levels, n = 30).\n\n### Modulation of KChIP3 levels alters CRC cells\u2019 chemoresistance\n\nTo further test this hypothesis and the role of KChIP3 in chemoresistance, we used HT29-18N2 cell lines stably depleted or overexpressing KChIP3 (KChIP3-KD or KChIP3-OV, respectively) (Cantero-Recasens et al., 2018). Briefly, differentiated control, KChIP3-KD (increased mucin secretion), and KChIP3-OV (reduced mucin release) cells were treated with increasing concentrations of 5-FU + iri. and then monitored for cell viability using the CellTiter-Glo assay. As shown in Figure 2D, cells depleted of KChIP3 are fourfold more resistant to 5-FU + iri. than control cells, whereas overexpression of KChIP3 renders cancer cells almost 10 times more sensitive to the chemotherapy (IC50 control cells = 2.9 \u00b5g/mL, KChIP3-KD cells = 13.4 \u00b5g/mL, KChIP3-OV = 0.3 \u00b5g/mL) (Figure 2D).\n\nIn summary, low levels of KChIP3 increase mucin secretion (Cantero-Recasens et al., 2018), which protects CRC cells from chemotherapy. Contrarily, high levels of KChIP3 inhibit baseline mucin release, thereby reducing the mucus barrier and rendering cancer cells more sensitive to 5-FU+ iri.\n\n### Inhibition of MUC5AC secretion enhances the effect of chemotherapy\n\nAlthough baseline mucin secretion and its regulator KChIP3 have a clear role in the response to chemotherapy of CRC cells, our results indicated that 5-FU + iri. treatment can trigger mucin production. Interestingly, it was previously described that stimulated mucin secretion depends on extracellular calcium entry through TRPM4/5 \u2013 Na+/Ca2+ exchangers (NCX) cooperation (Cantero-Recasens et al., 2019). We anticipated that if CT-induced mucin secretion was increasing CRC chemoresistance, benzamil, an NCX inhibitor (Watanabe et al., 2006), should enhance the effect of 5-FU + iri. on HT29-M6 CRC cells. Differentiated HT29-M6 cells were treated with 5-FU + iri. (IC50) and 20 \u00b5M benzamil or vehicle, and the levels of DNA damage were determined by the standard comet assay (Colomer et al., 2019). Our results showed that co-treatment with 5-FU + iri. and benzamil increased the levels of DNA breaks compared to 5-FU + iri. plus vehicle (Figure 3A). We then tested cell viability of HT29-M6 at 24 and 72 hr post-treatment of 5-FU + iri. alone or in combination with benzamil. There was no significant effect of the combined benzamil and 5-FU + iri. treatment at 24 hr. At 72 hr, however, the therapeutic effect of low concentration of 5-FU + iri. (15% reduction on cell viability) was strongly enhanced when combined with 20 \u00b5M benzamil (40% reduction on cell viability compared with the control) (Figure 3B). These results demonstrate that treatment with the NCX inhibitor benzamil improves the effect of chemotherapy on tumour cell eradication.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73926/elife-73926-fig3-v2.jpg)\n\n**Figure 3.:** (A) Comet assay of HT29-M6 cell line treated with 5-FU + iri. (25 \u00b5g/mL 5-FU + 10 \u00b5g/mL irinotecan) and 20 \u00b5M benzamil, alone or in combination. The tail moment was measured after 72 hr of treatment (N > 3). (B) Quantification of cell viability in HT29-M6 cell line after treatment (24 or 72 hr) with 5-FU + iri. (10 \u00b5g/mL 5-FU + 4 \u00b5g/mL Irinotecan) and 20 \u00b5M benzamil, alone or in combination (N \u2265 3). (C) Immunofluorescence Z-stack projections of differentiated HT29-M6 cells treated with vehicle, 20 \u00b5M benzamil, or 10 \u00b5M SN-6 in the presence or absence of 5-FU + iri. Cells were stained with anti-MUC5AC (green), phalloidin (red), and DAPI (blue). Scale bar = 5 \u00b5m. (D) Quantification of the number (upper graph) and volume (lower graph) of MUC5AC granules from immunofluorescence images by confocal microscope. Average values \u00b1 SEM are plotted as scatter plot with bar graph (N \u2265 3). Veh., vehicle; Benz., benzamil. *p<0.05, **p<0.01.\n\nTo further confirm that this additive effect was due to the inhibition of 5-FU + iri.-dependent mucin secretion, we used a second inhibitor called SN-6, which is a specific blocker of the reverse mode (calcium influx) of NCX and can be used at lower concentration, therefore presenting fewer side effects than benzamil (Niu et al., 2007). HT29-M6 cells were grown at post-confluence (differentiation) in glass-bottom dishes and then left untreated or treated with 5-FU + iri. (IC50) in combination with vehicle, 20 \u00b5M benzamil, or 10 \u00b5M SN-6. Next, cells were processed for immunofluorescence with anti-MUC5AC antibody and imaged by confocal microscopy to visualize mucin granules (Figure 3C). Analyses of images using Fiji software (Schindelin et al., 2012) revealed that cells treated with 5-FU + iri. contained significantly fewer MUC5AC-containing particles than control cells (75.7 vs. 100.7 particles/field, p=0.002) with a reduced average size (1.12 \u00b5m3 vs. 2.48 \u00b5m3) (Figure 3C, quantification in Figure 3D). It is important to note that this anti-MUC5AC antibody mainly recognizes the mature mucin granules (close to the plasma membrane, as shown in Cantero-Recasens et al., 2018), which can explain the apparent contradiction with the effect of 5-FU + iri. treatment on mucin production (Figure 1). Besides, it has been previously shown that after maximum stimulated secretion mucin stores require 24 hr to be fully restored (Zhu et al., 2015). Thus, this decrease in the numbers (and size) of mucin granules is in accordance with enhanced mucin secretion by 5-FU + iri. treatment as shown in Figure 4. Importantly, co-treatment with benzamil or SN-6 reverted this effect, causing a strong accumulation of mucin granules, as shown by an increase in the number of MUC5AC-containing particles (benzamil: 1.88 particles/field, SN-6: 2.19 particles/field) and their size (benzamil: 134.3 \u00b5m3, SN-6: 120.5 \u00b5m3), compared to cells treated with 5-FU + iri. and vehicle (Figure 3C, quantification in Figure 3D). Interestingly, SN-6 had a stronger effect than benzamil on cells treated with 5-FU + iri., further indicating that NCX inhibition enhanced sensitivity to chemotherapy.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73926/elife-73926-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cell lysates and secreted medium of differentiated HT29-M6 cells pre-treated with a vehicle or 10 \u00b5M SN-6 inhibitor for 24 hr and then exposed to 5-FU + iri. (50 \u00b5g/mL 5-FU + 20 \u00b5g/mL iri.) for 0, 1, 3, 6, and 24 hr were analysed by Western blot with an anti-MUC5AC, anti-\u03b3H2A.X, and H3 to test their levels. Tubulin was used as a loading control. Quantification of MUC5AC and \u03b3H2A.X is included (N \u2265 3). (B) Immunofluorescence images of differentiated HT29-M6 cells treated with vehicle (control) or 10 \u00b5M SN-6 in the presence or absence of 5-FU + iri. (50 \u00b5g/mL 5-FU + 20 \u00b5g/mL irinotecan) for 24 hr. Cells were stained with anti-MUC5AC (red), anti-\u03b3H2A.X (green), and DAPI (blue). Scale bar = 50 \u00b5m. (C) Quantification of the number of \u03b3H2A.X-positive cells in the different conditions relative to the total number of cells from the immunofluorescence images (N \u2265 3). (D) CRC patient-derived organoids (PDOs) were treated for 72 hr with increasing concentrations of 5-FU + iri. with vehicle or 10 \u00b5M SN-6. Average values \u00b1 SEM are plotted as scatter plot. The y-axis represents the percentage of cell growth relative to the lowest concentration of 5-FU + iri. The IC50 was calculated from the interpolated curve (N \u2265 3). *p<0.05, **p<0.01.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73926/elife-73926-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic diagram of the experimental set-up to measure mucin secretion and production. (B) Representative images of HT29-M6 differentiated cell (vehicle [control], 5-fluorouracil + irinotecan [5-FU+ iri.], SN-6, and 5-FU + iri. + SN-6) stained with Alcian blue. Scale bar = 50 \u00b5m. (C) Relative MUC5AC RNA levels in HT29-M6 treated with vehicle (control), 5-FU + iri., SN-6, and 5-FU + iri. + SN-6 (N = 3). (D) Alcian blue-stained patient-derived organoid to visualize external mucins (in blue). Scale bar = 50 \u00b5m.\n\n### Specific inhibition of NCX enhances 5-FU + iri.-dependent damage in both cells and patient-derived organoids\n\nIn order to test whether SN-6 effect observed on mucins correlated with increased sensitivity to 5-FU + iri. treatment, we determined the levels of \u03b3H2AX, a standard marker of genotoxic damage (Podhorecka et al., 2010) in HT29-M6 cells treated with 5-FU + iri. (IC50) in the presence or absence of 10 \u00b5M SN-6 (diluted in normal tissue culture medium). We obtained cell lysates at different time points (0, 1, 3, and 6 hr) after treatment and then measured the levels of MUC5AC and \u03b3H2AX by WB. Our results confirmed that SN-6 leads to MUC5AC intracellular accumulation over time in 5-FU + iri.-treated cells (Figure 4A, first lane), which correlated with a slight increase in \u03b3H2AX levels (Figure 4A, second lane). MUC5AC secretion was also tested in these cells by collecting the extracellular medium at the same time points. Importantly, the first time point (time 0) represents HT29 cells not treated with 5-FU + iri. or mucin secretion inhibitors (scheme in Figure 4\u2014figure supplement 1A). Thus, our results revealed that 5-FU + iri treatment caused an increase in mucin secretion (60\u201380% compared to time 0), which was blocked by SN-6 (relative levels: 1.8 vs. 1.0, respectively) (Figure 4A). Next, to validate the increase in DNA damage, differentiated HT29-M6 cells were treated with vehicle (control), 5-FU + iri. (IC50), 10 \u00b5M SN-6 or 5-FU + iri.+ SN-6, and processed for immunofluorescence with anti-MUC5AC and anti-\u03b3H2AX antibodies (Figure 4B). Quantification of \u03b3H2AX-positive cells confirmed the increase on DNA damage in cells treated with 5-FU + iri. and SN-6 (control: 0.9%; SN-6: 0.4%; 5-FU + iri.: 8.0%; 5-FU + iri.+ SN-6: 24.8%) (Figure 4C). Mucin production was further confirmed by Alcian blue staining (Figure 4\u2014figure supplement 1B). In addition, to test for the transcriptional effect of SN-6 on 5-FU + iri.-dependent mucin production, we analysed RNA levels of MUC5AC in HT29-M6 cells treated with vehicle (control), 5-FU + iri. (IC50), 10 \u00b5M SN-6, or 5-FU + iri. + SN-6. Our results revealed that the increase in mucin production and secretion by 5-FU + iri. and the effect of SN-6 on 5-FU + iri. are independent of MUC5AC transcription (Figure 4\u2014figure supplement 1C).\n\nFinally, to test the pathophysiological relevance of our findings, we studied the effect of SN-6 + 5-FU + iri. combination on a CRC patient-derived organoid (PDO). With this aim, we treated PDO cells, which we recently validated as model for therapy prescription (Colomer et al., 2019), with suboptimal doses of 5-FU + iri. alone or in combination with SN-6. First, we confirmed the presence of secreted mucins in the PDO by Alcian blue staining (Figure 4\u2014figure supplement 1D). Next, and consistent with our cellular studies, mucin secretion inhibition with SN-6 increased up to 40 times the sensitivity of PDO cells to 5-FU + iri. compared with cells treated with vehicle (IC50 5-FU + iri. + vehicle = 0.90 \u00b5g/mL, IC50 5-FU + iri. + SN-6 = 0.02 \u00b5g/mL) (Figure 4D).\n\nTogether, these results show that mucin secretion inhibitors alleviate the resistance to chemotherapeutics agents of cells that secrete mucins.\n\n## Discussion\n\nMucins are high-molecular-weight O-glycosylated proteins produced by goblet cells that line the epithelium of several organs of the airway and the digestive tract (Adler et al., 2013; Pelaseyed et al., 2014). These proteins are the major macrocomponents of the mucus layer, which is a physical barrier that protects the underlying tissue from external insults (Cone, 2009). Importantly, the combination of different mucins and the type of secretion (baseline or stimulated) modulates the properties of the mucus layer to meet the tissue demands. For instance, baseline secretion is the prominent pathway that maintains the colonic mucus layer, while stimulated is the main pathway to rapidly protect the epithelium after allergen or toxic challenge in the airways (Zhu et al., 2015). Accordingly, tight regulation of mucin quantities and composition is essential for the correct functioning of the mucus. Alterations in their synthesis or release are, therefore, hallmarks of several pathological situations like severe asthma or CRC. Hyperproduction of mucin in some subtypes of CRC leads to enhanced chemoresistance of cancer cells, thereby reducing patients\u2019 survival (Pothuraju et al., 2020; Jin et al., 2017). However, in some cases, decreased expression of secreted mucins (i.e. MUC2 and MUC5AC) is an indicator of more aggressive colorectal tumour, possibly because these cells are more dedifferentiated and thus more invasive (Luo et al., 2019; Kocer et al., 2002). Interestingly, inhibition of O-glycosylation renders pancreatic cancers overexpressing the transmembrane mucin MUC1 more sensitive to 5-FU (Kalra and Campbell, 2007). Transmembrane mucins contribute to chemoresistance by inhibiting apoptosis or promoting epithelial to mesenchymal transition (EMT) (van Putten and Strijbis, 2017; Jonckheere et al., 2014). But the role of secreted mucins in chemoresistance to CRC has not been explored. The chemicals and proteins employed here affect both MUC2 and MUC5AC as shown previously (Cantero-Recasens et al., 2019; Cantero-Recasens et al., 2018), but for the sake of simplicity we have monitored only the effects on MUC5AC secretion.\n\n### Cancer cells produce mucins as a protective response to chemotherapy\n\nOur data show that CRC cells produce mucins in response to 5-FU + iri., a first-choice chemotherapy for most CRC (Kamnerdsupaphon et al., 2007). Besides, 5-FU + iri. not only increases mucin production, but also increases mucin secretion (70\u201380% after 6 hr). This increase in secretion is completely blocked by SN-6 treatment (as described previously in Cantero-Recasens et al., 2019). This is extremely important because secreted mucins can create a physical barrier that could prevent drugs (for instance, chemotherapeutics) from reaching the tumour cells. Another possibility is that 5-FU + iri. is actively retained by mucin fibres. The availability of tagged versions of these chemicals will help to address this issue in the future.\n\nOur results in PDOs and cell lines show that cancer cells respond to chemotherapeutics by secreting copious amounts of mucin to form a barrier against the treatment. We suggest that this reaction (mucin secretion) of CRC cells to chemotherapy is similar to the programmed response of epithelial cells to toxics or pathogens. In this situation, which could resemble the treatment with 5-FU + iri., mucin-producing cells would release large quantities of mucins to isolate them from the insults (toxins, allergens, or pathogens) (Adler et al., 2013). An interesting question is how 5-FU + iri. triggers mucin secretion and whether there is a specific receptor involved in this response or an intracellular pathway that is activated by these chemicals. This finding is important in the application of chemotherapeutics and merits further investigation. Our results show that this increase in mucin production/secretion triggered by chemotherapeutics is independent of transcriptional effects on mucins, although we cannot completely discard the possibility that the levels of components necessary for mucin modification and secretion (e.g., glycosyltransferases) are altered.\n\n### KChIP3, a novel risk factor for mucinous CRC\n\nWe postulated that mucin levels could be used as prognostic biomarkers for CRC. Our gene-expression analyses of a public CRC cohort, however, revealed that mucin levels do not reflect the prognosis of CRC patients. Although surprising, this is not totally unexpected because mucin secretion is an extremely well-regulated process to prevent pathological situations. Therefore, high intracellular levels do not directly translate to increased extracellular levels. Our gene-expression data reveal that low level of KChIP3, which negatively regulates baseline secretion (Cantero-Recasens et al., 2018), is an important risk factor for untreated tumours with high MUC5AC expression levels. We have found that cells with low levels of KChIP3 (that corresponds to more mucin secretion) are more resistant to 5-FU + iri. To summarize, low levels of KChIP3 promote mucin secretion, which is even more dramatic in tumours with high expression of MUC5AC. Increased mucin secretion protects cancer cells from chemotherapy, which drastically reduce CRC patients\u2019 DFS. KChIP3 thus emerges as a good prognostic marker, although it may have low relevance as a therapeutic target because it necessitates the use of gene therapy to enhance its expression and block mucin secretion. An exciting option is to target factors that control KChIP3 activity, such as ryanodine receptors or quenchers of intracellular calcium (Cantero-Recasens et al., 2018).\n\n### Combined treatment with NCX inhibitors improves chemotherapy efficacy\n\nMucinous cancers present higher chemoresistance than other subtypes of CRC (Luo et al., 2019). As suggested by several authors and now shown by our experimental data, secreted mucins can act as a barrier to external insults including chemotherapeutic drugs. In fact, genetic regulation of this secretion by modulating KChIP3 levels renders cancer cells more sensitive to treatment. However, our results also demonstrate that 5-FU + iri. is a stimulus for mucin secretion, which may be an adaptive response of cancer cells for isolation from harmful environment. This unexpected effect can explain how some cancer cells become more resistant to treatment over time.\n\nStimulated mucin secretion, by colonic or airways cells, depends on extracellular calcium entry through the reverse mode of NCX (Mitrovic et al., 2013; Cantero-Recasens et al., 2019). Our data show that inhibition of stimulated mucin secretion reduces the resistance of tumour cells to anticancer treatments. Both NCX inhibitors (benzamil and SN-6) prevent the effect of 5-FU + iri. on mucin secretion. On the other hand, co-treatment with NCX inhibitors improves the apoptotic effect of 5-FU + iri. on cancer cells, even at low 5-FU + iri. concentrations (IC20). However, one of the main problems of NCX inhibitors is their low specificity and the effects on cardiac function. To avoid these problems, SN-6 was developed as a specific inhibitor of NCX reverse mode that at working concentration does not affect other receptors, transporters, or ion channels, and has less side effects than benzamil (Niu et al., 2007; Iwamoto et al., 2004). Our results reveal the potential therapeutic importance of SN-6. Finally, it is satisfying to note that the effect of SN-6 on the chemotherapy sensitivity of cancer cells is replicated in PDOs.\n\n### Conclusions\n\nIn conclusion, CRC cells produce mucins to create a protective environment against chemotherapy treatments. Blocking mucin secretion by genetic (altering KChIP3 levels) or chemical means (using NCX inhibitors) renders tumour cells more sensitive to anticancer therapies. In addition, we have identified the mucin secretion regulator KChIP3 as a novel risk factor for mucinous CRC, which could be used as a prognostic biomarker. We have provided potential new pharmacological strategies to control chemorefraction of mucinous CRCs, but this approach is likely to benefit patients with mucinous cancers in general.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>MUC5AC</td>\n      <td>Ensembl</td>\n      <td>ENSG00000215182</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>MUC2</td>\n      <td>Ensembl</td>\n      <td>ENSG00000198788</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>MUC6</td>\n      <td>Ensembl</td>\n      <td>ENSG00000184956</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>MUC5B</td>\n      <td>Ensembl</td>\n      <td>ENSG00000117983</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>MUC19</td>\n      <td>Ensembl</td>\n      <td>ENSG00000205592</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>KCNIP3</td>\n      <td>Ensembl</td>\n      <td>ENSG00000115041</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HT29-M6</td>\n      <td>ATCC</td>\n      <td>CVCL_G077</td>\n      <td>Mycoplasma free</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HT29-18N2</td>\n      <td>ATCC</td>\n      <td>CVCL_5942</td>\n      <td>Mycoplasma free</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MUC5AC (mouse monoclonal)</td>\n      <td>Neomarkers,Waltham, MA</td>\n      <td>Clone 45M1</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b3H2A.X (mouse monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>#2577</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CometAssay Trevigen Kit</td>\n      <td>Trevigen</td>\n      <td>250-050K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SN-6</td>\n      <td>Sigma-Aldrich</td>\n      <td>SML1937-5MG</td>\n      <td>(5 \u00b5M)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Benzamil</td>\n      <td>Sigma-Aldrich</td>\n      <td>B2417-10MG</td>\n      <td>5 \u00b5M</td>\n    </tr>\n  </tbody>\n</table>\n\n### Bioinformatics analysis\n\nTranscriptomic and available clinical data dataset from CRC was downloaded from the open-access resource CANCERTOOL. We used the Jorissen cohort (GSE14333), which includes expression and clinical data for 226 patients (Jorissen et al., 2009). Patients were classified according to the mean expression of either MUC5AC, MUC2, or KChIP3. The association with relapse was assessed using Kaplan\u2013Meier estimates and Cox proportional hazard models. A standard log-rank test was applied to assess significance between groups. This test was selected because it assumes the randomness of the possible censorship. All the survival analyses and graphs were performed with R using the survival (v.3.2-3) and survimer (v.0.4.8) packages, and a p-value<0.05 was considered statistically significant.\n\n### Reagents and antibodies\n\nAll chemicals were obtained from Sigma-Aldrich (St. Louis, MO) except anti-MUC5AC antibody clone 45M1 (Neomarkers, Waltham, MA). Secondary antibodies for immunofluorescence microscopy were from Life Technologies.\n\n### Cell lines\n\n#### HT29-M6\n\nHT29-M6 cells (obtained from ATCC; RRID: CVCL_G077) were grown in Dulbecco\u2019s modified Eagle\u2019s medium (Invitrogen) plus 10% foetal bovine serum (Biological Industries) and were maintained in 5% CO2 incubator at 37\u00b0C. All experiments were performed with cells at 6 days post-confluency when they form a well-polarized monolayer and present higher levels of mucins.\n\n#### HT29-18N2\n\nHT29-18N2 cells (obtained from ATCC) (RRID:CVCL_5942) were tested for mycoplasma contamination with the Lookout mycoplasma PCR detection kit (Sigma-Aldrich). Mycoplasma-negative HT29-18N2 cells were used for the experiments presented here. HT29-18N2 cells were differentiated to goblet cells as described previously (Mitrovic et al., 2013) Briefly, cells were seeded in complete growth medium (DMEM complemented with 10% FCS and 1% P/S), and the following day (day zero: D-0), the cells were placed in PFHMII protein-free medium (Gibco, Thermo Fisher Scientific, Waltham, MA). After 3 days (D-3), medium was replaced with fresh PFHMII medium and cells grown for three additional days. At day 6 (D-6), cells were trypsinized and seeded for the respective experiments in complete growth medium followed by incubation in PFHMII medium at day 7 (D-7). All experimental procedures were performed at day 9 (D-9).\n\n### Patient-derived organoid\n\nSamples from patients were kindly provided by MARBiobank and IdiPAZ Biobank, integrated in the Spanish Hospital Biobanks Network (RetBioH; http://www.redbiobancos.es/). Informed consent was obtained from all participants, and protocols were approved by institutional ethical committees. The project was approved by the ethical committee of the Hospital del Mar (Barcelona, Spain) (REF 2019/8595/I). For the PDO generation, primary tumour from was disaggregated in 1.5 mg/mL collagenase II (Sigma) and 20 \u03bcg/mL hyaluronidase (Sigma) after 40 min of incubation at 37\u00b0C, filtered in 100 \u03bcm cell strainer and seeded in 50 \u03bcL Matrigel in 24-well plates, as previously described (Sato et al., 2011). After polymerization, 450 \u03bcL of complete medium was added (DMEM/F12 plus penicillin [100 U/mL] and streptomycin [100 \u03bcg/mL], 100 \u03bcg/mL Primocin, 1X N2 and B27, 10 mM nicotinamide; 1.25 mM N-acetyl-L-cysteine, 100 ng/mL Noggin, and 100 ng/mL R-spondin-1, 10 \u03bcM Y-27632, 10 nM PGE2, 3 \u03bcM SB202190, 0.5 \u03bcM A-8301, 50 ng/mL EGF and 10 nM Gastrin I). Tumour spheres were collected and digested with an adequate amount of trypsin to single cells and re-plated in culture. Cultures were maintained at 37\u00b0C, 5% CO2 and medium changed every week. For dose\u2013response curves, 600 single PDO cells were plated in 96-well plates in 10 \u03bcL Matrigel with 100 \u03bcL of complete medium. After 6 days in culture, the growing PDO was treated with combinations of 5-FU + iri. plus SN-6 or 5-FU + iri. After 72 hr of treatment, we measured the cell viability using the CellTiter-Glo 3D Cell Viability Assay following the manufacturer\u2019s instructions in an Orion II multiplate luminometer. The mutation identified in the PDO used in this study was KRAS G12D (66.43%).\n\n### Survival curves\n\nHT29-18N2 cells (KD/OV) were seeded in 96-well plates with Dulbecco\u2019s modified Eagle\u2019s medium. Confluent cells were treated with combination of 5-FU + iri. for 72 hr at indicated concentrations. Cell viability was determined using the CellTiter-Glo 3D Cell Viability Assay (Promega) following the manufacturer\u2019s instructions in an Orion II multiplate luminometer (Berthold detection systems).\n\n### qRT-PCR analysis\n\nTotal RNA was extracted with the RNeasy Mini Kit (QIAGEN ref 74004), and the RT-First Strand cDNA Synthesis Kit (GE Healthcare Life Sciences ref 27-9261-01) was used to produce cDNA. qRT-PCR was performed in LightCycler 480 system using SYBR Green I Master Kit (Roche ref 04887352001). Primers for each gene (sequences shown in Table 1) were designed using Primer-BLAST (NCBI) (Ye et al., 2012), limiting the target size to 150 bp and the annealing temperature to 60\u00b0C.\n\n**Table 1.**\n Primer sequences used for detecting mRNA for the respective genes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Forward primer (5\u2032\u20133\u2032)</th>\n      <th>Reverse primer (5\u2032\u20133\u2032)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MUC5AC</td>\n      <td>CTGGTGCTGAAGAGGGTCAT</td>\n      <td>CAACCCCTCCTACTGCTACG</td>\n    </tr>\n    <tr>\n      <td>TBP</td>\n      <td>TGCCCGAAACGCCGAATATAATC</td>\n      <td>GTCTGGACTGTTCTTCACTCTTGG</td>\n    </tr>\n    <tr>\n      <td>GAPDH</td>\n      <td>GTCATCCCTGAGCTGAACG</td>\n      <td>CTCCTTGGAGGCCATGTG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Secretion assay and Western blot\n\nHT29 cells were grown to confluency and, 7 days post-confluency, cells were incubated with 5-FU + iri. (25 \u00b5g/mL 5-Fu + 10 \u00b5g/mL irinotecan in normal tissue culture medium) alone or in combination with mucin secretion inhibitor SN-6. At the same time, extracellular medium was collected for all time points and centrifuged for 5 min at 800 \u00d7 g at 4\u00b0C. Cells were washed and then lysed in 500 \u00b5L of PBS plus 0.5% Triton X-100, 1 mM EDTA, 100 mM Na-orthovanadate, 0.25 mM phenylmethylsulfonyl fluoride, and cOmplete Protease Inhibitor Cocktail (Roche) for 20 min at 4\u00b0C (scheme in Figure 1\u2014figure supplement 1A and Figure 4\u2014figure supplement 1A). Extracellular medium and lysates were analysed by WB using standard SDS-polyacrylamide gel electrophoresis (SDS-PAGE) techniques.\n\nBriefly, lysates were boiled in Laemmli buffer, run in polyacrylamide gels (8% for tubulin, 15% for histones), and transferred to polyvinylidene fluoride (PVDF) membranes (Millipore). To check mucin levels in the secreted medium, reducing buffer was added to collected medium and samples were boiled for 10 min. When testing MUC5AC levels, protein labels were prepared in a reducing buffer and run in 4% acrylamide gels. The membranes were incubated overnight at 4\u00b0C with the appropriate primary antibodies. After washing, the membranes were incubated with specific secondary horseradish peroxidase-conjugated antibodies (Dako, Denmark) and visualized using the enhanced chemiluminescence reagent from Amersham. Gel bands were quantified using the Measurement Log function from Adobe Photoshop CC.\n\nUncropped gels presented in Figures 1 and 4 are provided as source data (Figure 1\u2014source data 1 and Figure 4\u2014source data 1).\n\n### Comet assay\n\nHT29-M6 cells were plated in 12-well plates with Dulbecco\u2019s modified Eagle\u2019s medium. 4 days after arriving to 100% confluency, cells were treated with 5-FU + iri. (25 \u00b5g/mL 5-Fu + 10 \u00b5g/mL irinotecan) alone or in combination with secretion inhibitor benzamil 20 \u00b5M for 72 hr. Comet assays were performed using CometAssay Trevigen Kit (4250-050K) following the manufacturer\u2019s instructions. Pictures were taken using a Nikon Eclipse Ni-E epifluorescence microscope, and tail moment was calculated using the OPENCOMET plugin for ImageJ.\n\n### Cell viability assay\n\nHT29-M6 cells were plated in 6-well plates with Dulbecco\u2019s modified Eagle\u2019s medium. After 4 days in post-confluency, CRC cells were treated with 5-FU + iri. (10 \u00b5g/mL 5-Fu + 4 \u00b5g/mL irinotecan) alone or in combination with secretion inhibitor benzamil 20 \u00b5M. Cell viability was determined by flow cytometry 24 hr or 72 hr after treatment, staining cells with DAPI (5 \u03bcg/mL) and measuring alive cells in the LSR-Fortessa analyzer.\n\n### Microscopy and colocalization analysis\n\nHT29-M6 cells were plated in 6-well plates with Dulbecco\u2019s modified Eagle\u2019s medium. After being 7 days at post-confluency, cells were treated with 5-FU + iri. (50 \u00b5g/mL 5-Fu + 20 \u00b5g/mL irinotecan) alone or in combination with secretor inhibitor SN-6 10 \u00b5M for 24 hr. Then cells were directly fixed with 4% paraformaldehyde, permeabilized with 0.3% Triton X-100 (Pierce), washed and incubated overnight with the corresponding primary antibodies. The samples were developed with TSA Plus Cyanine 3/Fluorescein System (PerkinElmer) and mounted in ProLong Diamond Antifade Mountant plus DAPI (Thermo Scientific).\n\nImages were acquired using an inverted Leica SP8 or Leica SP5 confocal microscope with a \u00d763 Plan Apo NA 1.4 objective and analysed using ImageJ (Fiji, version 2.0.0-rc-43/1.51g) (Schindelin et al., 2012). For detection of the respective fluorescence emission, the following laser lines were applied: DAPI, 405 nm; and Alexa Fluor 555, 561 nm; Alexa Fluor 647, 647 nm. Two-channel colocalization analysis was performed using ImageJ, and the Manders\u2019 correlation coefficient was calculated using the plugin JaCop (Bolte and Cordeli\u00e8res, 2006).\n\n### Alcian blue staining\n\nPreviously PDOs de-paraffinized sections or 4% PFA-fixed HT29-M6 cells were incubated with 3% acetic acid in H2O for 3 min, immersed in Alcian blue (10 mg/mL pH 2.5) (Merck ref 101647) for 1 hr, and counterstained with Nuclear Fast Red solution (Sigma ref 6409-77-4) for 10 min. Samples were mounted in DPX mountant (Sigma ref 06522), and images were obtained with an Olympus BX61 microscope.\n\n### Statistical analysis\n\nAll data are means \u00b1 SEM of a minimum of three biological replicates (N \u2265 3). In all cases, a D\u2019Agostino\u2013Pearson omnibus normality test was performed before any hypothesis contrast test. Statistical analysis and graphics were performed using GraphPad Prism 6 (RRID:SCR_002798). For data that followed normal distributions, we applied either Student\u2019s t-test or one-way analysis of variance (ANOVA) followed by Tukey\u2019s post hoc test. For data that did not fit a normal distribution, we used Mann\u2013Whitney\u2019s unpaired t-test and nonparametric ANOVA (Kruskal\u2013Wallis) followed by Dunn\u2019s post hoc test. Criteria for a significant statistical difference were *p<0.05; **p< 0.01.\n",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "ef4425e2-c34d-4b16-96e8-fa4f57bacf4a",
+      "submission_id": "0b784f9b-80c9-492f-afe5-261b78a6559d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kelly G Ten Hagen, https://ror.org/01cwqze88 National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73926.sa0](https://doi.org/10.7554/eLife.73926.sa0)\n\nHypersecretion of mucins by colorectal cancer (CRC) cells confers resistance to immune surveillance, and this phenomenon has also been postulated to confer resistance to chemotherapy. This work describes studies aimed at investigating mucus secretion and proteins influencing mucus secretion and the impact on the efficacy of a commonly used chemotherapy treatment. These results shed light on the chemoresistance of mucinous tumors and point to a possible prognostic marker involved in mucus secretion.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kelly G Ten Hagen, https://ror.org/01cwqze88 National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73926.sa1](https://doi.org/10.7554/eLife.73926.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Reversing chemorefraction in colorectal cancer cells by controlling mucin secretion\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Suzanne Pfeffer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Benjamin S Glick (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another and essential points are listed below.\n\nEssential revisions:\n\n1. Additional data supporting mucus secretion as a mechanism for effects of chemotherapy would be necessary to support the main conclusions of the paper. To conclude an inhibitory effect of secreted mucus on the accessibility of the drugs, mucus secretion and reduced drug accessibility by mucus must be demonstrated by relevant analyses.\n\n2. Regarding chemotherapeutic drugs increasing mucin secretion: it is obvious why that response aids the tumor cells, but not obvious why tumor cells are programmed to respond in that way. Please address this question.\n\nReviewer #1 (Recommendations for the authors):\n\nSome suggestions mostly linked to the points raised in the public review that could improve the study.\n\nThe contribution from other mucins in the CRC survival analysis and in the cell expression and secretion studies would be of importance as the impact of them might influence the outcome. Complementing any staining of intracellular and secreted mucus with a general mucin staining approach (possibly by utilizing the glycans) would possibly give a more comprehensive view.\n\nThe mucus secretion in cell lines will be impacted by cell proliferation, survival and polarization that are all important factors to monitor and show or discuss to reveal how they were accounted for.\n\nTo conclude an inhibitory effect of secreted mucus on the accessibility of the drugs, mucus secretion and reduced drug accessibility by mucus must be demonstrated by relevant analyses. Mucus secretion is preferably assessed by complementary methods monitoring intracellular vesicles using microscopy and measuring secreted mucus using dotblot, a method previously performed by the group. As the FOLFIRI treatment induce cell death, contamination of mucus from dead or detached cells will contribute, but a relative comparison to the amount of any general intracellular protein in the samples could shed light on the size of this fraction. Another option is to separate the secreted reduced mucus on more porous gel-types to estimate the amount of the not fully glycosylated material compared to the fully glycosylated secreted mucins. The effect on transcript expression would add a nice complement to these studies deciphering the transcriptional element of mucus production. Assessment of mucus secretion upon modulation of the FOLFIRI effect by KChipP3 expression levels or Benzamil and SN-6 treatment would be required to provide a functional link to mucus.\n\nAssessing mucus release in the organoids would strengthen the argument substantially. Mucus staining of fixed samples could be explored.\n\nAs the overall basis of the study is the link between mucin secretion and CRC treatment efficacy it would be good if the patient material could be stratified by treatment with separation of groups based on mucin expression and the related genes.\n\nThe rationale for using two different HT-29 clones should be explained.\n\nReviewer #2 (Recommendations for the authors):\n\n1. In Figure 1 and other figures, the abbreviation \"FOLFIRI\" is apparently used in place of \"5-FU+iri\". The authors should choose one or the other and be consistent.\n\n2. In Figure 1C, it's hard to tell what we are looking at with albumin. Are endosomes being visualized in the washed cells? What are the labeled structures in the cells with mucin fibers? In Figure 1D, why would albumin overlap with DAPI?\n\n3. The abbreviation \"HR\" should be defined. \"DSF\" in the text should probably be \"DFS\" as defined in the subsequent sentence. And if \"CT\" stands for chemotherapy, this abbreviation should be either defined or avoided.\n\n4.In Figure 2C, is there truly no significant difference? By 100 months, the two populations look radically different. Either something is wrong with the statistics, or the analysis has a problem.\n\n5. The description of Figure 3B is confusing. The authors seem to say that the combination treatment is effective, then not effective, then effective again. Is the point that the effect becomes visible only after 72 h?\n\n6. Figure 4A and 4C seem to be contradictory, because Figure 4A shows no significant increase in (g)H2A.X with SN-6 whereas Figure 4C shows a strong increase. Please clarify.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Reversing chemorefraction in colorectal cancer cells by controlling mucin secretion\" for further consideration by eLife. Your revised article has been evaluated by Suzanne Pfeffer (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nIn light of the comments by Reviewer #1 below, the following revisions are requested:\n\n1. Given that the model is that 5FU+iri increases mucin secretion, direct demonstration of increased mucin secretion (as opposed to mucin vesicle production) upon 5FU+iri treatment vs. vehicle control should be shown. An experiment similar to what is shown in Figure 1C but with 5FU+iri treatment vs vehicle would address this. Also, westerns of Muc5AC from media and cell lysates of vehicle treated vs. 5FU+iri treated (similar to what is shown in Figure 4A) would allow quantitation of this increase and would strengthen the paper.\n\n2. There is still some confusion over the link between Kchip3 expression, mucin secretion, chemo treatment and CRC patient outcome. The authors presumably already have images showing increased and decreased mucin secretion in the cell lines where kchip3 has been mutated or overexpressed relative to controls-showing these data would greatly strengthen the paper. Additionally, if the authors could include some clarification/discussion that the patient data is based on gene expression rather than mucin secretion, and does not include information on chemotherapy treatment, this may resolve some of the confusion.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have addressed several of the concerns raised and show nicely that the secreted material does not contain dead or detached cells. They also provide important information on mucin expression upon treatment of cells although the effect of the inhibitor SN6 alone in reducing mucin expression is not discussed. The main issue with secretion is addressed in relation to 5-FU+Iri and SN6 treatment, but not to the most central component of the study, KChiP3, relevant data is however referred to. The secreted mucins are detected by WB at a size of above 450 kDa and as the theoretical size of the naked protein in the range of 580 kDa it indicates to be the secreted product, however with limited glycosylation (a gel stained by Alcian blue would show this). However, the discrepancy in the data on mucus secretion partly remains as the results in Figure 1B, 4A and 4B show enhanced intracellular MUC5AC upon 5-FU+Iri treatment (referred to as production as it is not dependent on expression), but the data in Figure 3C with reduced number and size of vesicles is not in line. Mucus secretion was further analyzed using general staining (Alcian blue) of treated cells and organoids. The data on cells is very hard to interpret while the stained organoid shows secreted mucus. In this context treatment of the organoid with 5-FU+Iri would have been a much better representation of enhanced secretion upon treatment compared to the fixed cells.\n\nThe link between enhanced mucin expression leading poor prognosis for CRC patients and reduced effects of treatment depending on mucus secretion is explained by differentiation, but this is a main concern in the concept and could benefit from even further discussion.Reviewer #2 (Recommendations for the authors):\n\nThe authors have done a satisfactory job of responding to my previous comments. I support publication of the revised manuscript.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Reversing chemorefraction in colorectal cancer cells by controlling mucin secretion\" for further consideration by eLife. Your revised article has been evaluated by Suzanne Pfeffer (Senior Editor) and a Reviewing Editor.\n\nWe are pleased to notify you that it is now acceptable for publication, provided that the authors include numbers of samples and replicates for all figures (as Figure 4A) and a brief explanation, as given in the response letter, why there is a variation observed in Figure 3C compared to other results presented.\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript is now improved by text alterations. It is unfortunate that no extra data is provided proving mucus secretion to affect CRC treatment, but the text now includes most of the information needed for proper evaluation by readers. In this context I would find it important to include numbers of samples and replicates for all figures (as Figure 4A) and to include a brief explanation, as given in the response letter, why there is a variation observed in Figure 3C compared to other results presented to be fully transparent. With these additions I do find it acceptable for publication.\n",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bdcb6e52-bb37-45ab-b5df-9acb62bd4010",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C1",
+      "claim": "Fifteen percent of colorectal cancer (CRC) cells exhibit a mucin hypersecretory phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifteen percent of colorectal cancer (CRC) cells exhibit a mucin hypersecretory phenotype, which is suggested to provide resistance to immune surveillance and chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known characteristic of CRC cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "4cebd1b4-7611-4f71-ab76-f1d818957564",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C2",
+      "claim": "Mucin hypersecretory phenotype is suggested to provide resistance to immune surveillance and chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifteen percent of colorectal cancer (CRC) cells exhibit a mucin hypersecretory phenotype, which is suggested to provide resistance to immune surveillance and chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what has been suggested in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "07cbfb60-a7b8-4488-8a55-fa96d73e162f",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C3",
+      "claim": "CRC cells build a barrier to chemotherapeutics by increasing mucins' secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "We now formally show that CRC cells build a barrier to chemotherapeutics by increasing mucins' secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "748de70b-a081-4b87-831e-074bbdce0076",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C4",
+      "claim": "KChIP3 is a negative regulator of mucin secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that low levels of KChIP3, a negative regulator of mucin secretion (Cantero-Recasens et al., 2018), is a risk factor for CRC patients' relapse in a subset of untreated tumours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work (Cantero-Recasens et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "5b63c28e-c227-4c25-b46e-a67d0820a505",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C5",
+      "claim": "Low levels of KChIP3 is a risk factor for CRC patients' relapse in a subset of untreated tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that low levels of KChIP3, a negative regulator of mucin secretion (Cantero-Recasens et al., 2018), is a risk factor for CRC patients' relapse in a subset of untreated tumours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "d5a7a9ae-0120-4146-b6c0-6e46e6107b12",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C6",
+      "claim": "Cells depleted of KChIP3 are four times more resistant to chemotherapeutics 5-fluorouracil + irinotecan compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also reveal that cells depleted of KChIP3 are four times more resistant (measured as cell viability and DNA damage) to chemotherapeutics 5-fluorouracil + irinotecan (5-FU+iri.) compared to control cells, whereas KChIP3-overexpressing cells are 10 times more sensitive to killing by chemotherapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments measuring cell viability and DNA damage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "ae8f035d-27aa-4233-8382-1b8249d67dff",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C7",
+      "claim": "KChIP3-overexpressing cells are 10 times more sensitive to killing by chemotherapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also reveal that cells depleted of KChIP3 are four times more resistant (measured as cell viability and DNA damage) to chemotherapeutics 5-fluorouracil + irinotecan (5-FU+iri.) compared to control cells, whereas KChIP3-overexpressing cells are 10 times more sensitive to killing by chemotherapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "6e5ab02f-bdc0-49a6-9671-53114eb028ac",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C8",
+      "claim": "Sodium/calcium exchanger (NCX) blockers increase tumour cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar increase in tumour cell death is observed upon chemical inhibition of mucin secretion by the sodium/calcium exchanger (NCX) blockers (Mitrovic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study, with reference to previous work on NCX blockers.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "91b3d250-a5dd-4ab1-a128-b5a28f728323",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C9",
+      "claim": "Sensitivity of CRC patient-derived organoids to 5-FU+iri. increases 40-fold upon mucin secretion inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, sensitivity of CRC patient-derived organoids to 5-FU+iri. increases 40-fold upon mucin secretion inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments with patient-derived organoids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "9106f485-18cc-4061-a7a2-d4395db680b0",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C10",
+      "claim": "Reducing mucin secretion provides a means to control chemoresistance of mucinous CRC cells and other mucinous tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing mucin secretion thus provides a means to control chemoresistance of mucinous CRC cells and other mucinous tumours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "8e6f05cf-075b-4377-a376-33bac48d5fa2",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C11",
+      "claim": "Secreted mucins are synthesized in the endoplasmic reticulum (ER) and transported to the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted mucins are synthesized in the endoplasmic reticulum (ER) and transported to the Golgi apparatus, where they receive extensive O-glycosylation that increases their molecular weight by about fivefold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mucin biosynthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "65346155-c736-426b-996d-1f20ffb1170b",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C12",
+      "claim": "Mucins receive extensive O-glycosylation in the Golgi apparatus that increases their molecular weight by about fivefold.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted mucins are synthesized in the endoplasmic reticulum (ER) and transported to the Golgi apparatus, where they receive extensive O-glycosylation that increases their molecular weight by about fivefold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mucin modification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "0dceebe5-999b-45d0-8de8-5146ff9d4be7",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C13",
+      "claim": "Heavily glycosylated mucins are packed into specialized micrometre-sized granules where they can reach molecular weights of up to 50 MDa.",
+      "claim_type": "EXPLICIT",
+      "source": "These heavily glycosylated mucins are then packed into specialized micrometre-sized granules where they can reach molecular weights of up to 50 MDa (Sheehan et al., 2004; Thornton et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "2fd24b14-1cc6-4f52-88e6-585ebe56ea17",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C14",
+      "claim": "Mucin granules mature by a process that involves mucin condensation.",
+      "claim_type": "EXPLICIT",
+      "source": "These granules mature by a process that involves mucin condensation, and, finally, a small number of granules fuse to plasma membrane in a calcium-dependent manner to release the required quantity of mucins in the extracellular space (Adler et al., 2013; Rossi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "40425fbb-1409-4e3e-bda5-2d945d681a3a",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C15",
+      "claim": "A small number of mucin granules fuse to plasma membrane in a calcium-dependent manner to release mucins in the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "These granules mature by a process that involves mucin condensation, and, finally, a small number of granules fuse to plasma membrane in a calcium-dependent manner to release the required quantity of mucins in the extracellular space (Adler et al., 2013; Rossi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "bc217d53-e59f-48b7-9d9a-321295dc9f43",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C16",
+      "claim": "Mucins are secreted by two main processes: extracellular calcium-dependent pathway called stimulated secretion and intracellular calcium-dependent release called baseline secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, mucins are secreted by two main processes: (1) extracellular calcium-dependent pathway called stimulated secretion, which is triggered by an exogenous agonist; and (2) intracellular calcium-dependent release, but independent of external agonists, called baseline secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mucin secretion mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "2163add6-4d76-4bc8-b699-0726a4b44410",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C17",
+      "claim": "Cooperation between TRPM4/5 sodium channels and the Na+/Ca2+ exchangers (NCX) controls stimulated secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been shown that cooperation between TRPM4/5 sodium channels and the Na+/Ca2+ exchangers (NCX) controls stimulated secretion (Mitrovic et al., 2013; Cantero-Recasens et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "1083828f-c1e6-444c-8b0d-beb16fb9dd4e",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C18",
+      "claim": "The calcium-binding protein KChIP3 regulates baseline secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "The calcium-binding protein KChIP3, on the other hand, regulates baseline secretion (Cantero-Recasens et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "b2839aef-ed5f-4998-9765-06613615f6fa",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C19",
+      "claim": "Secreted mucins compose the mucus that protects the underlying epithelium from toxins, pathogens, and allergens.",
+      "claim_type": "EXPLICIT",
+      "source": "The secreted mucins compose the mucus that protects the underlying epithelium from toxins, pathogens, and allergens (Kesimer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "ccb9d551-94d0-4043-988e-ab7c2901b4ce",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C20",
+      "claim": "Mucin hypersecretion in the airways is linked to chronic obstructive diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretion of the right quantity and quality of mucins is crucial because mucin hypersecretion in the airways is linked to chronic obstructive diseases and hyposecretion makes the underlying tissue more susceptible to damage by the immune cells and the foreign particles (Thornton et al., 2008; Pelaseyed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "915fa0fe-0a1c-4769-b7d0-16735c0b06ff",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C21",
+      "claim": "Mucin hyposecretion makes the underlying tissue more susceptible to damage by the immune cells and the foreign particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretion of the right quantity and quality of mucins is crucial because mucin hypersecretion in the airways is linked to chronic obstructive diseases and hyposecretion makes the underlying tissue more susceptible to damage by the immune cells and the foreign particles (Thornton et al., 2008; Pelaseyed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "1c847405-a227-4da7-8932-3087a497b169",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C22",
+      "claim": "Most cancer cells start expressing mucins.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cancer cells start expressing mucins, and it is widely thought that they isolate tumour cells from the immune system and also render them resistant to anticancer therapies (Kufe, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "4ab53d78-e4f8-4002-bf10-8e5a9532f93a",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C23",
+      "claim": "Mucins isolate tumour cells from the immune system and render them resistant to anticancer therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cancer cells start expressing mucins, and it is widely thought that they isolate tumour cells from the immune system and also render them resistant to anticancer therapies (Kufe, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a widely held view supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "fac0b847-db3c-4242-8d01-4e222fe700e6",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C24",
+      "claim": "Treatment with O-glycosylation inhibitors (benzyl-\u03b1-GalNAc) increases the effectiveness of chemotherapy on pancreatic cells overexpressing the transmembrane mucin MUC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, treatment with O-glycosylation inhibitors (benzyl-\u03b1-GalNAc) increases the effectiveness of chemotherapy on pancreatic cells overexpressing the transmembrane mucin MUC1 (Kalra and Campbell, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "6a7574dc-715f-454a-a6fd-e75e19439281",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C25",
+      "claim": "10\u201315% of colorectal cancer is mucinous colorectal adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with mucinous colorectal adenocarcinoma (10\u201315% of colorectal cancer [CRC]; Luo et al., 2019), however, present dysregulated mucin secretion that is long associated with high resistance to chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "caf43c66-8e56-444b-8224-66388cbb1410",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C26",
+      "claim": "Patients with mucinous colorectal adenocarcinoma present dysregulated mucin secretion that is long associated with high resistance to chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with mucinous colorectal adenocarcinoma (10\u201315% of colorectal cancer [CRC]; Luo et al., 2019), however, present dysregulated mucin secretion that is long associated with high resistance to chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "2121eeb6-5cee-41ee-9971-dc9ec0f835e8",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C27",
+      "claim": "Extracellular mucins account for at least 50% of the volume of mucinous colorectal adenocarcinoma tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, extracellular mucins account for at least 50% of the volume of these tumours (Hugen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "afeee12f-c0a7-4c06-a22d-a07311a18975",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C28",
+      "claim": "15\u201320% of CRCs develop a mucinous profile.",
+      "claim_type": "EXPLICIT",
+      "source": "15\u201320% of CRCs develop a mucinous profile (Luo et al., 2019), which renders cancer cells highly resistant to commonly used chemotherapies, such as 5-fluorouracil + irinotecan (5-FU+ iri.) (Van Cutsem et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "01137614-e836-4ed8-ae11-00e62249db38",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C29",
+      "claim": "Mucinous profile renders cancer cells highly resistant to commonly used chemotherapies, such as 5-fluorouracil + irinotecan.",
+      "claim_type": "EXPLICIT",
+      "source": "15\u201320% of CRCs develop a mucinous profile (Luo et al., 2019), which renders cancer cells highly resistant to commonly used chemotherapies, such as 5-fluorouracil + irinotecan (5-FU+ iri.) (Van Cutsem et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "8ddaf76f-3ca1-4730-bd39-6c869c41eed1",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C30",
+      "claim": "5-FU + iri. treatment strongly increases MUC5AC intracellular levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that 5-FU + iri. treatment strongly increases MUC5AC intracellular levels (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "fa2c0903-8a0c-4e54-a112-7cba808392b2",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C31",
+      "claim": "5-FU + iri.-treated cells present a clear increase in MUC5AC level compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that 5-FU + iri.-treated cells present a clear increase in MUC5AC level compared to control cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal immunofluorescence microscopy data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "506c70ef-5189-4fc4-a0c3-9d135bf7f86c",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C32",
+      "claim": "Increased production of mucins after 5-FU + iri. treatment could act as a barrier to chemical permeation, thus enhancing chemorefraction of mucosecretory cancer subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that increased production of mucins after 5-FU + iri. treatment could act as a barrier to chemical permeation, thus enhancing chemorefraction of mucosecretory cancer subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "e9b7d691-fc02-4b72-a136-977edc8af78c",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C33",
+      "claim": "In the presence of mucin fibres albumin colocalizes with MUC5AC.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the images using the Fiji software revealed that in the presence of mucin fibres albumin colocalizes with MUC5AC (Manders' coefficient albumin-MUC5AC: 0.16 vs. 0.01, p=0.01), whereas in cells without mucin barrier, albumin is found intracellularly (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of microscopy images shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "cd1a6136-cbba-4b0d-99c5-66d62b85fa1a",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C34",
+      "claim": "In cells without mucin barrier, albumin is found intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the images using the Fiji software revealed that in the presence of mucin fibres albumin colocalizes with MUC5AC (Manders' coefficient albumin-MUC5AC: 0.16 vs. 0.01, p=0.01), whereas in cells without mucin barrier, albumin is found intracellularly (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of microscopy images shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "35081797-f961-46ea-9424-043700b6a670",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C35",
+      "claim": "Colonic cancer cells produce higher levels of MUC5AC in response to chemotherapy treatment, which form a barrier that protects cells from incorporation of extracellular compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data demonstrate that colonic cancer cells produce higher levels of MUC5AC in response to chemotherapy treatment, which form a barrier that protects cells from incorporation of extracellular compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "fcbb5840-b6f2-494e-94d7-db93ca361e14",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C36",
+      "claim": "High and low MUC5AC-expressing tumours have radically different distribution among CMS subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of CRC subtypes, using the consensus molecular subgroup (CMS) classification from Guinney et al., 2015, indicated a radically different distribution of high and low MUC5AC-expressing tumours among subtypes: CMS1 (28% vs. 10%), CMS2 (15% vs. 41%), CMS3 (36% vs. 6%), and CMS4 (5% vs. 26%) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of CRC subtype data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "ec11e129-618a-4167-8f1a-3562f059836e",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C37",
+      "claim": "Both CMS1 (associated with immune evasion) and CMS3 (metabolic dysregulation and goblet cell markers enrichment) have worse prognosis than CMS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both CMS1 (associated with immune evasion) and CMS3 (metabolic dysregulation and goblet cell markers enrichment) have worse prognosis than CMS2 (Guinney et al., 2015), which include the majority of tumours with low MUC5AC expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "3ed93805-1b7e-4039-bdba-60e6d8d11aea",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C38",
+      "claim": "CMS2 includes the majority of tumours with low MUC5AC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both CMS1 (associated with immune evasion) and CMS3 (metabolic dysregulation and goblet cell markers enrichment) have worse prognosis than CMS2 (Guinney et al., 2015), which include the majority of tumours with low MUC5AC expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data presented in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "f4e0df27-a11f-4d0d-86e1-17664d0cedb7",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C39",
+      "claim": "DFS analysis revealed no significant differences between patients with high or low MUC5AC levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DFS analysis revealed no significant differences between patients with high or low MUC5AC levels (Figure 1F), strongly suggesting that factors controlling mucin secretion, and not only intracellular mucin levels, might be relevant biomarkers for CRC prognosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "e1017727-291b-49eb-9edb-7cd288d79010",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C40",
+      "claim": "Factors controlling mucin secretion, and not only intracellular mucin levels, might be relevant biomarkers for CRC prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DFS analysis revealed no significant differences between patients with high or low MUC5AC levels (Figure 1F), strongly suggesting that factors controlling mucin secretion, and not only intracellular mucin levels, might be relevant biomarkers for CRC prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the survival analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "24b68443-7979-491f-a36c-058a3c8d33b7",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C41",
+      "claim": "KChIP3 is a prognostic factor for CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of DFS of patients according to KChIP3 levels, encoded by the KCNIP3 gene, revealed that KChIP3 is, indeed, a prognostic factor (hazard ratio [HR] = 1.925, p=0.02) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "3275113a-baf8-45fe-a954-befefad6d6f3",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C42",
+      "claim": "Low levels of KChIP3 are a clear risk factor in patients with high MUC5AC levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis reveals that low levels of KChIP3 are a clear risk factor in those patients with high MUC5AC levels (HR = 3.29, p=0.04) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "bb4272f8-646e-424e-91c0-5a8aee6de184",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C43",
+      "claim": "There is no significant effect of KChIP3 on patients with low MUC5AC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no significant effect on patients with low MUC5AC expression (Figure 2C), although after 100 months there is a decrease in DFS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "ca331bd4-a9cf-48bb-babb-1c553d1292a9",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C44",
+      "claim": "Three patients (GSM358532, GSM358534, and GSM358438) with low levels of MUC5AC present increased levels of other secreted mucins (e.g., MUC2).",
+      "claim_type": "EXPLICIT",
+      "source": "We studied these patients in more detail, and interestingly, although they have low levels of MUC5AC, these patients present increased levels of other secreted mucins (e.g., MUC2) (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene expression data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "a3e17452-1656-4e7b-8c84-55442eb2a330",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C45",
+      "claim": "High MUC2 levels are protective while patients with low levels of MUC2 have a lower DFS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, similarly to previous studies (Kufe, 2009; Luo et al., 2019), analysis of the effect of MUC2 levels on DFS shows that high MUC2 levels are protective while patients with low levels of MUC2, which may reflect a more dedifferentiated state of cancer cells, have a lower DFS (HR = 2.54, p=0.023) (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis data shown in Figure 2\u2014figure supplement 1B and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "dce1629d-4677-4020-85a2-17e0e2400575",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C46",
+      "claim": "Low levels of MUC2 may reflect a more dedifferentiated state of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, similarly to previous studies (Kufe, 2009; Luo et al., 2019), analysis of the effect of MUC2 levels on DFS shows that high MUC2 levels are protective while patients with low levels of MUC2, which may reflect a more dedifferentiated state of cancer cells, have a lower DFS (HR = 2.54, p=0.023) (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "d6ef44bb-1b4b-4983-8b74-b61aaee898e2",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C47",
+      "claim": "When studying the effect of KChIP3 on the DFS of patients with high expression of MUC2, there is a clear tendency (p=0.08) to worse prognosis in patients with low levels of KChIP3.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when we studied the effect of KChIP3 on the DFS of patients with high expression of MUC2, we found a clear tendency (p=0.08) to worse prognosis in patients with low levels of KChIP3 (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "d9aba414-7b4b-4197-ab39-54f2ad20476d",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C48",
+      "claim": "Low levels of KChIP3 increase the quantity of mucins secreted and protect cancer cells from chemotherapeutic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest that low levels of KChIP3, which consequently increase the quantity of mucins secreted, protect cancer cells from chemotherapeutic drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and clinical data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "446534de-b4be-4823-b57f-77a00ec89495",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C49",
+      "claim": "Cells depleted of KChIP3 are fourfold more resistant to 5-FU + iri. than control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2D, cells depleted of KChIP3 are fourfold more resistant to 5-FU + iri. than control cells, whereas overexpression of KChIP3 renders cancer cells almost 10 times more sensitive to the chemotherapy (IC50 control cells = 2.9 \u00b5g/mL, KChIP3-KD cells = 13.4 \u00b5g/mL, KChIP3-OV = 0.3 \u00b5g/mL) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell viability assay data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "1544ca32-8d73-4c32-81cc-a3e6bd45f090",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C50",
+      "claim": "Overexpression of KChIP3 renders cancer cells almost 10 times more sensitive to the chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2D, cells depleted of KChIP3 are fourfold more resistant to 5-FU + iri. than control cells, whereas overexpression of KChIP3 renders cancer cells almost 10 times more sensitive to the chemotherapy (IC50 control cells = 2.9 \u00b5g/mL, KChIP3-KD cells = 13.4 \u00b5g/mL, KChIP3-OV = 0.3 \u00b5g/mL) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell viability assay data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "cf11dcd4-f521-4190-aeb6-12c322c16062",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C51",
+      "claim": "Low levels of KChIP3 increase mucin secretion, which protects CRC cells from chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, low levels of KChIP3 increase mucin secretion (Cantero-Recasens et al., 2018), which protects CRC cells from chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "4afb80b9-5b63-497d-ab05-eb5a51f9a7a4",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C52",
+      "claim": "High levels of KChIP3 inhibit baseline mucin release, thereby reducing the mucus barrier and rendering cancer cells more sensitive to 5-FU+ iri.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrarily, high levels of KChIP3 inhibit baseline mucin release, thereby reducing the mucus barrier and rendering cancer cells more sensitive to 5-FU+ iri.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "a1b4753c-7d53-4581-8615-0ed0a49541f0",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C53",
+      "claim": "Stimulated mucin secretion depends on extracellular calcium entry through TRPM4/5 \u2013 Na+/Ca2+ exchangers (NCX) cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it was previously described that stimulated mucin secretion depends on extracellular calcium entry through TRPM4/5 \u2013 Na+/Ca2+ exchangers (NCX) cooperation (Cantero-Recasens et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "0cf87767-f263-414a-aea4-053cb02feb98",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C54",
+      "claim": "Co-treatment with 5-FU + iri. and benzamil increased the levels of DNA breaks compared to 5-FU + iri. plus vehicle.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that co-treatment with 5-FU + iri. and benzamil increased the levels of DNA breaks compared to 5-FU + iri. plus vehicle (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comet assay data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "9d87f14c-2b33-48bd-9b87-0f0ab3c6c981",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C55",
+      "claim": "There was no significant effect of the combined benzamil and 5-FU + iri. treatment at 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant effect of the combined benzamil and 5-FU + iri. treatment at 24 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from cell viability experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "24ae22e6-8ce5-4543-97dc-9dbecbe04d12",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C56",
+      "claim": "At 72 hr, the therapeutic effect of low concentration of 5-FU + iri. (15% reduction on cell viability) was strongly enhanced when combined with 20 \u00b5M benzamil (40% reduction on cell viability compared with the control).",
+      "claim_type": "EXPLICIT",
+      "source": "At 72 hr, however, the therapeutic effect of low concentration of 5-FU + iri. (15% reduction on cell viability) was strongly enhanced when combined with 20 \u00b5M benzamil (40% reduction on cell viability compared with the control) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell viability assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "d848c1e0-5f7b-4fcf-bb02-85585c25e6d5",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C57",
+      "claim": "Treatment with the NCX inhibitor benzamil improves the effect of chemotherapy on tumour cell eradication.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that treatment with the NCX inhibitor benzamil improves the effect of chemotherapy on tumour cell eradication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "f737dd29-627a-4727-afc1-78adfbbba47d",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C58",
+      "claim": "Cells treated with 5-FU + iri. contained significantly fewer MUC5AC-containing particles than control cells (75.7 vs. 100.7 particles/field, p=0.002) with a reduced average size (1.12 \u00b5m3 vs. 2.48 \u00b5m3).",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of images using Fiji software (Schindelin et al., 2012) revealed that cells treated with 5-FU + iri. contained significantly fewer MUC5AC-containing particles than control cells (75.7 vs. 100.7 particles/field, p=0.002) with a reduced average size (1.12 \u00b5m3 vs. 2.48 \u00b5m3) (Figure 3C, quantification in Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of microscopy images shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "3aaba2f7-c327-46dc-9ea2-a0da643e501b",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C59",
+      "claim": "This decrease in the numbers (and size) of mucin granules is in accordance with enhanced mucin secretion by 5-FU + iri. treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this decrease in the numbers (and size) of mucin granules is in accordance with enhanced mucin secretion by 5-FU + iri. treatment as shown in Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data with reference to Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "5d9d64ec-d050-4e3e-9508-00a54f65a243",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C60",
+      "claim": "Co-treatment with benzamil or SN-6 reverted the effect of 5-FU + iri., causing a strong accumulation of mucin granules.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, co-treatment with benzamil or SN-6 reverted this effect, causing a strong accumulation of mucin granules, as shown by an increase in the number of MUC5AC-containing particles (benzamil: 1.88 particles/field, SN-6: 2.19 particles/field) and their size (benzamil: 134.3 \u00b5m3, SN-6: 120.5 \u00b5m3), compared to cells treated with 5-FU + iri. and vehicle (Figure 3C, quantification in Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of microscopy images shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "8f8518a8-4db4-4fdc-9b5d-79fe079a6c37",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C61",
+      "claim": "SN-6 had a stronger effect than benzamil on cells treated with 5-FU + iri.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SN-6 had a stronger effect than benzamil on cells treated with 5-FU + iri., further indicating that NCX inhibition enhanced sensitivity to chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "ea796b4b-d678-4562-93de-40af2c3d0833",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C62",
+      "claim": "NCX inhibition enhanced sensitivity to chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SN-6 had a stronger effect than benzamil on cells treated with 5-FU + iri., further indicating that NCX inhibition enhanced sensitivity to chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "06c9ffd4-672c-476a-a876-d5c6389409fd",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C63",
+      "claim": "SN-6 leads to MUC5AC intracellular accumulation over time in 5-FU + iri.-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirmed that SN-6 leads to MUC5AC intracellular accumulation over time in 5-FU + iri.-treated cells (Figure 4A, first lane), which correlated with a slight increase in \u03b3H2AX levels (Figure 4A, second lane).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "bf6c357d-8723-4049-91ce-f73462bb7eaa",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C64",
+      "claim": "SN-6 treatment correlated with a slight increase in \u03b3H2AX levels in 5-FU + iri.-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirmed that SN-6 leads to MUC5AC intracellular accumulation over time in 5-FU + iri.-treated cells (Figure 4A, first lane), which correlated with a slight increase in \u03b3H2AX levels (Figure 4A, second lane).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "6902048b-d1d3-421e-8810-4cbb4dc42780",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C65",
+      "claim": "5-FU + iri treatment caused an increase in mucin secretion (60\u201380% compared to time 0), which was blocked by SN-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results revealed that 5-FU + iri treatment caused an increase in mucin secretion (60\u201380% compared to time 0), which was blocked by SN-6 (relative levels: 1.8 vs. 1.0, respectively) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot analysis of secreted medium shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "8c82bce0-990c-4fb1-b1c3-340aa49e4e4a",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C66",
+      "claim": "Quantification of \u03b3H2AX-positive cells confirmed the increase on DNA damage in cells treated with 5-FU + iri. and SN-6 (control: 0.9%; SN-6: 0.4%; 5-FU + iri.: 8.0%; 5-FU + iri.+ SN-6: 24.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of \u03b3H2AX-positive cells confirmed the increase on DNA damage in cells treated with 5-FU + iri. and SN-6 (control: 0.9%; SN-6: 0.4%; 5-FU + iri.: 8.0%; 5-FU + iri.+ SN-6: 24.8%) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of immunofluorescence images shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "d8445090-1c53-4772-8fd4-bc7056b54be6",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C67",
+      "claim": "The increase in mucin production and secretion by 5-FU + iri. and the effect of SN-6 on 5-FU + iri. are independent of MUC5AC transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed that the increase in mucin production and secretion by 5-FU + iri. and the effect of SN-6 on 5-FU + iri. are independent of MUC5AC transcription (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "62f3cd07-7bf4-4cb1-8823-c5397ee5fc45",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C68",
+      "claim": "Mucin secretion inhibition with SN-6 increased up to 40 times the sensitivity of PDO cells to 5-FU + iri. compared with cells treated with vehicle (IC50 5-FU + iri. + vehicle = 0.90 \u00b5g/mL, IC50 5-FU + iri. + SN-6 = 0.02 \u00b5g/mL).",
+      "claim_type": "EXPLICIT",
+      "source": "Next, and consistent with our cellular studies, mucin secretion inhibition with SN-6 increased up to 40 times the sensitivity of PDO cells to 5-FU + iri. compared with cells treated with vehicle (IC50 5-FU + iri. + vehicle = 0.90 \u00b5g/mL, IC50 5-FU + iri. + SN-6 = 0.02 \u00b5g/mL) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell viability assay data from patient-derived organoids shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "fd6a0676-ce33-48b1-8e06-4d6b0075bf9e",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C69",
+      "claim": "Mucin secretion inhibitors alleviate the resistance to chemotherapeutics agents of cells that secrete mucins.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that mucin secretion inhibitors alleviate the resistance to chemotherapeutics agents of cells that secrete mucins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "72c5fca5-53f3-4b58-885b-5cc876f006d5",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C70",
+      "claim": "Mucins are high-molecular-weight O-glycosylated proteins produced by goblet cells that line the epithelium of several organs of the airway and the digestive tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Mucins are high-molecular-weight O-glycosylated proteins produced by goblet cells that line the epithelium of several organs of the airway and the digestive tract (Adler et al., 2013; Pelaseyed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "658845c4-70d8-4871-8ddb-2c0308dec644",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C71",
+      "claim": "Mucins are the major macrocomponents of the mucus layer, which is a physical barrier that protects the underlying tissue from external insults.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are the major macrocomponents of the mucus layer, which is a physical barrier that protects the underlying tissue from external insults (Cone, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "980f5f41-d355-4756-857e-36f542383116",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C72",
+      "claim": "The combination of different mucins and the type of secretion (baseline or stimulated) modulates the properties of the mucus layer to meet the tissue demands.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the combination of different mucins and the type of secretion (baseline or stimulated) modulates the properties of the mucus layer to meet the tissue demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mucin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "b651f933-e0bd-40c9-b5e6-1ed72e82de85",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C73",
+      "claim": "Baseline secretion is the prominent pathway that maintains the colonic mucus layer.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, baseline secretion is the prominent pathway that maintains the colonic mucus layer, while stimulated is the main pathway to rapidly protect the epithelium after allergen or toxic challenge in the airways (Zhu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "a7b2fe86-ab54-4d70-b5f2-6a7ef7ad44a6",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C74",
+      "claim": "Stimulated secretion is the main pathway to rapidly protect the epithelium after allergen or toxic challenge in the airways.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, baseline secretion is the prominent pathway that maintains the colonic mucus layer, while stimulated is the main pathway to rapidly protect the epithelium after allergen or toxic challenge in the airways (Zhu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "1665c5f2-a581-4e9b-93d1-2d9da16ac0c5",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C75",
+      "claim": "Tight regulation of mucin quantities and composition is essential for the correct functioning of the mucus.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, tight regulation of mucin quantities and composition is essential for the correct functioning of the mucus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mucin regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "cbb7d346-e4da-4319-ac23-0dc4c841399e",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C76",
+      "claim": "Alterations in mucin synthesis or release are hallmarks of several pathological situations like severe asthma or CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations in their synthesis or release are, therefore, hallmarks of several pathological situations like severe asthma or CRC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mucin-related diseases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "b7f37c29-2c7f-43cc-bd90-c6c60ee07893",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C77",
+      "claim": "Hyperproduction of mucin in some subtypes of CRC leads to enhanced chemoresistance of cancer cells, thereby reducing patients' survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperproduction of mucin in some subtypes of CRC leads to enhanced chemoresistance of cancer cells, thereby reducing patients' survival (Pothuraju et al., 2020; Jin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "2406f42f-606e-4aa3-91b1-6711f6606c4d",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C78",
+      "claim": "In some cases, decreased expression of secreted mucins (i.e. MUC2 and MUC5AC) is an indicator of more aggressive colorectal tumour, possibly because these cells are more dedifferentiated and thus more invasive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in some cases, decreased expression of secreted mucins (i.e. MUC2 and MUC5AC) is an indicator of more aggressive colorectal tumour, possibly because these cells are more dedifferentiated and thus more invasive (Luo et al., 2019; Kocer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and includes a speculative explanation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "6e38c758-0944-4e59-8334-31e238291283",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C79",
+      "claim": "Inhibition of O-glycosylation renders pancreatic cancers overexpressing the transmembrane mucin MUC1 more sensitive to 5-FU.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, inhibition of O-glycosylation renders pancreatic cancers overexpressing the transmembrane mucin MUC1 more sensitive to 5-FU (Kalra and Campbell, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "faee818f-51b7-43bd-896f-9793e1cce2de",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C80",
+      "claim": "Transmembrane mucins contribute to chemoresistance by inhibiting apoptosis or promoting epithelial to mesenchymal transition (EMT).",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane mucins contribute to chemoresistance by inhibiting apoptosis or promoting epithelial to mesenchymal transition (EMT) (van Putten and Strijbis, 2017; Jonckheere et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "739f2258-1c85-469e-9ba7-76a1f4b416da",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C81",
+      "claim": "The role of secreted mucins in chemoresistance to CRC has not been explored.",
+      "claim_type": "EXPLICIT",
+      "source": "But the role of secreted mucins in chemoresistance to CRC has not been explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "1de325e5-36e1-45ee-9572-a25d3dfff35d",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C82",
+      "claim": "CRC cells produce mucins in response to 5-FU + iri., a first-choice chemotherapy for most CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that CRC cells produce mucins in response to 5-FU + iri., a first-choice chemotherapy for most CRC (Kamnerdsupaphon et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by a citation about the chemotherapy.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "33b9943e-413a-4ebe-81c9-d2a1415d74b2",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C83",
+      "claim": "5-FU + iri. not only increases mucin production, but also increases mucin secretion (70\u201380% after 6 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, 5-FU + iri. not only increases mucin production, but also increases mucin secretion (70\u201380% after 6 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "14318ff8-ed47-4f0b-aaa4-a80006c8ad74",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C84",
+      "claim": "This increase in secretion is completely blocked by SN-6 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in secretion is completely blocked by SN-6 treatment (as described previously in Cantero-Recasens et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "19bec7fb-60c6-4a04-9b02-00c19862764e",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C85",
+      "claim": "Secreted mucins can create a physical barrier that could prevent drugs (for instance, chemotherapeutics) from reaching the tumour cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is extremely important because secreted mucins can create a physical barrier that could prevent drugs (for instance, chemotherapeutics) from reaching the tumour cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "c26cbb41-e1f3-4962-8800-4d1e10fbb8d0",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C86",
+      "claim": "Another possibility is that 5-FU + iri. is actively retained by mucin fibres.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that 5-FU + iri. is actively retained by mucin fibres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "bbb250c3-47c0-4eab-bfe5-f9ebd530bc74",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C87",
+      "claim": "Cancer cells respond to chemotherapeutics by secreting copious amounts of mucin to form a barrier against the treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results in PDOs and cell lines show that cancer cells respond to chemotherapeutics by secreting copious amounts of mucin to form a barrier against the treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "2af1617a-b8f1-4f92-a96f-66dfa41de3f5",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C88",
+      "claim": "This reaction (mucin secretion) of CRC cells to chemotherapy is similar to the programmed response of epithelial cells to toxics or pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that this reaction (mucin secretion) of CRC cells to chemotherapy is similar to the programmed response of epithelial cells to toxics or pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "87a1efab-059a-4823-82a4-13dc0f8b41df",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C89",
+      "claim": "Mucin-producing cells would release large quantities of mucins to isolate them from the insults (toxins, allergens, or pathogens).",
+      "claim_type": "EXPLICIT",
+      "source": "In this situation, which could resemble the treatment with 5-FU + iri., mucin-producing cells would release large quantities of mucins to isolate them from the insults (toxins, allergens, or pathogens) (Adler et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "dfe77182-281c-4727-bac3-731dcc1ad54e",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C90",
+      "claim": "This increase in mucin production/secretion triggered by chemotherapeutics is independent of transcriptional effects on mucins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that this increase in mucin production/secretion triggered by chemotherapeutics is independent of transcriptional effects on mucins, although we cannot completely discard the possibility that the levels of components necessary for mucin modification and secretion (e.g., glycosyltransferases) are altered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study with a caveat about other possible mechanisms.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "b9361767-cb11-46c8-ad9c-340f9fc3384d",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C91",
+      "claim": "Mucin levels do not reflect the prognosis of CRC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Our gene-expression analyses of a public CRC cohort, however, revealed that mucin levels do not reflect the prognosis of CRC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bioinformatics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "4e4be152-8c04-467b-b359-07a32ad599a6",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C92",
+      "claim": "High intracellular levels do not directly translate to increased extracellular levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although surprising, this is not totally unexpected because mucin secretion is an extremely well-regulated process to prevent pathological situations. Therefore, high intracellular levels do not directly translate to increased extracellular levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings based on knowledge of mucin biology.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "bcd1006f-25d3-431b-a60b-5e56b99db87b",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C93",
+      "claim": "Low level of KChIP3 is an important risk factor for untreated tumours with high MUC5AC expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our gene-expression data reveal that low level of KChIP3, which negatively regulates baseline secretion (Cantero-Recasens et al., 2018), is an important risk factor for untreated tumours with high MUC5AC expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bioinformatics analysis supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "6ce23ce8-b4a3-42df-bc13-3ffce62ac45f",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C94",
+      "claim": "Cells with low levels of KChIP3 (that corresponds to more mucin secretion) are more resistant to 5-FU + iri.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that cells with low levels of KChIP3 (that corresponds to more mucin secretion) are more resistant to 5-FU + iri.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "595dce7b-81db-4dc6-bd1d-deb1a4fe4dfc",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C95",
+      "claim": "Low levels of KChIP3 promote mucin secretion, which is even more dramatic in tumours with high expression of MUC5AC.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, low levels of KChIP3 promote mucin secretion, which is even more dramatic in tumours with high expression of MUC5AC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "249c2848-8cbd-4216-8973-bb0eb3c96953",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C96",
+      "claim": "Increased mucin secretion protects cancer cells from chemotherapy, which drastically reduce CRC patients' DFS.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased mucin secretion protects cancer cells from chemotherapy, which drastically reduce CRC patients' DFS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental and clinical data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "296a2bab-f527-44ac-aae7-55d86afdf32c",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C97",
+      "claim": "KChIP3 emerges as a good prognostic marker.",
+      "claim_type": "EXPLICIT",
+      "source": "KChIP3 thus emerges as a good prognostic marker, although it may have low relevance as a therapeutic target because it necessitates the use of gene therapy to enhance its expression and block mucin secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings with a caveat about therapeutic application.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "a8c09135-72cf-4dca-95e7-e4561eb6a6ea",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C98",
+      "claim": "KChIP3 may have low relevance as a therapeutic target because it necessitates the use of gene therapy to enhance its expression and block mucin secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "KChIP3 thus emerges as a good prognostic marker, although it may have low relevance as a therapeutic target because it necessitates the use of gene therapy to enhance its expression and block mucin secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about therapeutic limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "df1b0b95-adcb-4ace-82e0-b42dc9af819a",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C99",
+      "claim": "Mucinous cancers present higher chemoresistance than other subtypes of CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Mucinous cancers present higher chemoresistance than other subtypes of CRC (Luo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "e1e37b5b-eba9-4616-84e8-a3aca7f915ca",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C100",
+      "claim": "Secreted mucins can act as a barrier to external insults including chemotherapeutic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by several authors and now shown by our experimental data, secreted mucins can act as a barrier to external insults including chemotherapeutic drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the experimental data and previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "e95d3e38-4795-4fae-8367-af458dcdf0fa",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C101",
+      "claim": "Genetic regulation of mucin secretion by modulating KChIP3 levels renders cancer cells more sensitive to treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, genetic regulation of this secretion by modulating KChIP3 levels renders cancer cells more sensitive to treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "96a1b7cb-1a40-4abd-974a-186eba07a13e",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C102",
+      "claim": "5-FU + iri. is a stimulus for mucin secretion, which may be an adaptive response of cancer cells for isolation from harmful environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results also demonstrate that 5-FU + iri. is a stimulus for mucin secretion, which may be an adaptive response of cancer cells for isolation from harmful environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study with a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "ec26eaa8-0042-49d7-b0ff-1d056e03800d",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C103",
+      "claim": "This unexpected effect can explain how some cancer cells become more resistant to treatment over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This unexpected effect can explain how some cancer cells become more resistant to treatment over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation of clinical observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "cbb8a685-632a-4c84-b687-22e4c17ccb6f",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C104",
+      "claim": "Stimulated mucin secretion, by colonic or airways cells, depends on extracellular calcium entry through the reverse mode of NCX.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulated mucin secretion, by colonic or airways cells, depends on extracellular calcium entry through the reverse mode of NCX (Mitrovic et al., 2013; Cantero-Recasens et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "1c456651-c167-4e32-be14-b116f71642cf",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C105",
+      "claim": "Inhibition of stimulated mucin secretion reduces the resistance of tumour cells to anticancer treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that inhibition of stimulated mucin secretion reduces the resistance of tumour cells to anticancer treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "710df698-0a04-4cf9-b767-aab3ed9beb64",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C106",
+      "claim": "Both NCX inhibitors (benzamil and SN-6) prevent the effect of 5-FU + iri. on mucin secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NCX inhibitors (benzamil and SN-6) prevent the effect of 5-FU + iri. on mucin secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "455589b2-3200-43e7-89fb-afba8f5f39cc",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C107",
+      "claim": "Co-treatment with NCX inhibitors improves the apoptotic effect of 5-FU + iri. on cancer cells, even at low 5-FU + iri. concentrations (IC20).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, co-treatment with NCX inhibitors improves the apoptotic effect of 5-FU + iri. on cancer cells, even at low 5-FU + iri. concentrations (IC20).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "24509322-ad5e-4e97-ba46-6dc24ccb4052",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C108",
+      "claim": "One of the main problems of NCX inhibitors is their low specificity and the effects on cardiac function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one of the main problems of NCX inhibitors is their low specificity and the effects on cardiac function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about NCX inhibitors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "033370bd-0691-45f8-b4e0-f9faeb2f04ff",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C109",
+      "claim": "SN-6 was developed as a specific inhibitor of NCX reverse mode that at working concentration does not affect other receptors, transporters, or ion channels, and has less side effects than benzamil.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid these problems, SN-6 was developed as a specific inhibitor of NCX reverse mode that at working concentration does not affect other receptors, transporters, or ion channels, and has less side effects than benzamil (Niu et al., 2007; Iwamoto et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "8c4deac6-5f63-445d-b676-79830749e7f1",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C110",
+      "claim": "The effect of SN-6 on the chemotherapy sensitivity of cancer cells is replicated in PDOs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is satisfying to note that the effect of SN-6 on the chemotherapy sensitivity of cancer cells is replicated in PDOs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental studies with patient-derived organoids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "b6a5b259-798b-4615-a344-4aeebe779c1c",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C111",
+      "claim": "CRC cells produce mucins to create a protective environment against chemotherapy treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, CRC cells produce mucins to create a protective environment against chemotherapy treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "280cbefe-7213-4e8b-9f1f-35afcc853471",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C112",
+      "claim": "Blocking mucin secretion by genetic (altering KChIP3 levels) or chemical means (using NCX inhibitors) renders tumour cells more sensitive to anticancer therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking mucin secretion by genetic (altering KChIP3 levels) or chemical means (using NCX inhibitors) renders tumour cells more sensitive to anticancer therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "e28b8a45-ba4c-493d-83a2-6d3341808a3d",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C113",
+      "claim": "KChIP3 is a novel risk factor for mucinous CRC, which could be used as a prognostic biomarker.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we have identified the mucin secretion regulator KChIP3 as a novel risk factor for mucinous CRC, which could be used as a prognostic biomarker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the clinical data analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "84d09519-90cf-4221-b1d2-dac917c0d9d9",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C114",
+      "claim": "The study has provided potential new pharmacological strategies to control chemorefraction of mucinous CRCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We have provided potential new pharmacological strategies to control chemorefraction of mucinous CRCs, but this approach is likely to benefit patients with mucinous cancers in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "e10159db-fd36-40c1-a480-fcf86a89961e",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C115",
+      "claim": "This approach is likely to benefit patients with mucinous cancers in general.",
+      "claim_type": "EXPLICIT",
+      "source": "We have provided potential new pharmacological strategies to control chemorefraction of mucinous CRCs, but this approach is likely to benefit patients with mucinous cancers in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader applicability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "2b7b28ea-b65c-4999-965c-291c4985c0d7",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C116",
+      "claim": "ATP is a well-known secretagogue for mucins.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiated HT29-M6 cells were seeded in glass-bottom dishes and treated with 100 \u00b5M ATP, a well-known secretagogue for mucins (Abdullah et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "bd7c01af-1874-46b2-b498-34d9743aabe8",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C117",
+      "claim": "Mucins act as a barrier that prevents the endocytosis of albumin by HT29-M6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1C, mucins act as a barrier that prevents the endocytosis of albumin by HT29-M6 cells (Figure 1C, upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "97d9e205-e268-4888-b766-0f0d4554970f",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C118",
+      "claim": "Removal of mucin fibres allows the contact and uptake of albumin by cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrarily, removal of mucin fibres allows the contact and uptake of albumin by cells (Figure 1C, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "198b3d07-5273-4273-b5ba-3542ef1f048f",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C119",
+      "claim": "After maximum stimulated secretion mucin stores require 24 hr to be fully restored.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, it has been previously shown that after maximum stimulated secretion mucin stores require 24 hr to be fully restored (Zhu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "2f3f148d-e9ff-4f5d-9b01-bffbb1fe2239",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "claim_id": "C120",
+      "claim": "The anti-MUC5AC antibody mainly recognizes the mature mucin granules (close to the plasma membrane).",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that this anti-MUC5AC antibody mainly recognizes the mature mucin granules (close to the plasma membrane, as shown in Cantero-Recasens et al., 2018), which can explain the apparent contradiction with the effect of 5-FU + iri. treatment on mucin production (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study and explains an apparent discrepancy.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b811709d-5652-4132-a749-786cee82bc46",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "5-FU + irinotecan treatment increases intracellular MUC5AC levels in CRC cells, and secreted mucins form a barrier that prevents uptake of extracellular compounds like albumin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 and C117-C118 are supported by Western blot data (Figure 1A), immunofluorescence microscopy (Figure 1B), and colocalization analysis (Figure 1C-D) showing increased MUC5AC production and barrier function. The quantitative Manders' coefficient analysis (p=0.01) provides statistical support for the barrier effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "15aefa5a-d59a-4708-b05d-327bf6137e2e",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MUC5AC expression levels show different distributions across CRC molecular subtypes, but MUC5AC levels alone do not predict disease-free survival, suggesting that factors controlling mucin secretion may be more relevant biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by CMS subtype analysis (Figure 1E) and survival analysis (Figure 1F). The lack of significant DFS differences between high and low MUC5AC groups (p=0.31) is clearly demonstrated, supporting the inference that secretion control rather than production levels may be prognostically important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "df1ef3be-3453-4cda-afdf-ce1eabcae076",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Low KChIP3 levels are a prognostic risk factor for CRC, particularly in patients with high MUC5AC or MUC2 expression, with hazard ratios of 1.925 (overall), 3.29 (high MUC5AC), and a trend for high MUC2 (p=0.08).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43, C47, and C93 are supported by survival analysis data (Figure 2A-C, Figure 2\u2014figure supplement 1C) with appropriate statistical testing. The HR values and p-values are clearly reported. The trend for MUC2 (p=0.08) is appropriately described as non-significant but suggestive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "100bb931-6101-4230-b7e1-3b43a0990c42",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Genetic modulation of KChIP3 levels alters CRC cell chemoresistance: KChIP3 depletion increases resistance 4-fold while KChIP3 overexpression increases sensitivity 10-fold to 5-FU + irinotecan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C49-C52, C94, and C101 are supported by cell viability assay data (Figure 2D) with clear IC50 values reported (control: 2.9 \u00b5g/mL, KChIP3-KD: 13.4 \u00b5g/mL, KChIP3-OV: 0.3 \u00b5g/mL). The experimental design using stable cell lines is appropriate for testing this hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "9fac4442-af62-4ace-99be-f189ae664075",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Co-treatment with the NCX inhibitor benzamil enhances the effect of 5-FU + irinotecan on CRC cells, increasing DNA damage and reducing cell viability by 40% at 72 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by comet assay data (Figure 3A) and cell viability assays (Figure 3B). The time-dependent effect (no effect at 24h, significant at 72h) is clearly demonstrated with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "8cf4ed44-b9b3-4d25-bf21-cdb3df3384d9",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "5-FU + irinotecan treatment reduces the number and size of MUC5AC-containing granules, consistent with enhanced mucin secretion, and this effect is reversed by NCX inhibitors benzamil and SN-6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by quantitative confocal microscopy analysis (Figure 3C-D) with statistical significance (p=0.002). The interpretation that reduced granules indicates enhanced secretion is reasonable given the supporting data in Figure 4 and prior knowledge about mucin granule dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "c600babe-e1f6-4ccc-aa8b-301dc72ac7b4",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SN-6 treatment blocks 5-FU + irinotecan-induced mucin secretion (60-80% increase blocked), leading to intracellular MUC5AC accumulation and a 3-fold increase in DNA damage (\u03b3H2AX-positive cells: 8.0% to 24.8%), independent of MUC5AC transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 are supported by Western blot analysis (Figure 4A), immunofluorescence quantification (Figure 4B-C), and qRT-PCR data (Figure 4\u2014figure supplement 1C). The mechanistic link between secretion inhibition and increased DNA damage is well-demonstrated with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "14987f78-4df4-4d9e-a866-69c05b020ceb",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mucin secretion inhibition with SN-6 increases the sensitivity of CRC patient-derived organoids to 5-FU + irinotecan by 40-fold (IC50: 0.90 \u00b5g/mL to 0.02 \u00b5g/mL).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C68, and C110 are supported by dose-response curves in patient-derived organoids (Figure 4D). The dramatic 40-fold increase in sensitivity is clearly demonstrated. However, the result is based on a single PDO line, which limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "d8be697a-92e9-4bac-8d1b-40b8275f77f7",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CRC cells build a protective mucin barrier in response to chemotherapy, and blocking mucin secretion genetically or chemically renders tumor cells more sensitive to anticancer therapies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C10, C69, C87, C100, C111, and C112 represent the main conclusions of the study, which are well-supported by the collective experimental evidence from cell lines, genetic manipulation, chemical inhibition, and patient-derived organoids. The mechanistic link between mucin secretion and chemoresistance is convincingly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "a4805e51-17d6-479c-ac82-4809fa4b53bf",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "5-FU + irinotecan increases both mucin production and secretion (70-80% after 6 hours) in CRC cells, which is completely blocked by SN-6 treatment and is independent of transcriptional effects on mucins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84, C90, and C102 are supported by Western blot analysis of secreted medium and qRT-PCR data (Figure 4A, Figure 4\u2014figure supplement 1C). The independence from transcriptional regulation is an important mechanistic finding, though the authors acknowledge they cannot rule out effects on glycosylation machinery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "be9f29f6-b3eb-43ad-b313-c08a72bebaf6",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Low KChIP3 levels increase mucin secretion and protect cancer cells from chemotherapy, identifying KChIP3 as a novel prognostic biomarker for mucinous CRC, though it may have limited therapeutic utility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C48, C95-C97, and C113 integrate clinical and experimental findings to establish KChIP3 as a prognostic marker. The conclusion is well-supported by survival analysis and functional studies, though the caveat about therapeutic limitations (C97-C98) is appropriately speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "8deb43ac-5d74-4193-bc4a-fed1f9f8a32c",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "High MUC2 levels are protective in CRC patients, while low MUC2 levels (HR=2.54, p=0.023) are associated with worse disease-free survival, possibly reflecting a more dedifferentiated cancer cell state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by survival analysis (Figure 2\u2014figure supplement 1B) with appropriate statistical testing. However, the interpretation about dedifferentiation (C46) is speculative and not directly tested. The trend for KChIP3 effect in high MUC2 patients (p=0.08) is appropriately described as non-significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "83f930b8-c397-4146-82bc-5287f5d423a8",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Approximately 15-20% of CRC cases develop a mucinous profile characterized by mucin hypersecretion, which is associated with high resistance to chemotherapy and accounts for at least 50% of tumor volume.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C25-C29 represent established knowledge from the literature, appropriately cited. These claims provide important context for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "71485836-22d3-4a6f-96d2-6813de1a7aa0",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mucins are synthesized in the ER, glycosylated in the Golgi, packed into granules, and secreted via baseline or stimulated pathways controlled by KChIP3 and TRPM4/5-NCX cooperation, respectively, forming a protective mucus layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C21 and C70-C76 represent established knowledge about mucin biology, appropriately cited from the literature. These provide essential background but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cancer cells express mucins that isolate tumor cells from the immune system and confer chemoresistance, with evidence from pancreatic cancer showing that O-glycosylation inhibition increases chemotherapy effectiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24, C77-C81, and C99 represent established knowledge from the literature about mucins in cancer, appropriately cited. These provide important context for why studying secreted mucins in CRC chemoresistance is novel and important.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "dec7ef24-f23a-4ed7-8d80-490ddfb23c32",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "KChIP3 is a negative regulator of baseline mucin secretion, while stimulated mucin secretion depends on extracellular calcium entry through TRPM4/5-NCX cooperation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C53, and C104 are supported by citations to previous work by the same authors. These represent established findings that provide the mechanistic basis for the current study's interventions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "ec15dfd6-d519-42eb-b9ce-d1de53fdc708",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Inhibition of stimulated mucin secretion with NCX inhibitors (benzamil and SN-6) reduces tumor cell resistance to anticancer treatments and improves the apoptotic effect of 5-FU + irinotecan even at low concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C107 are supported by the experimental data presented in Figures 3 and 4. These findings demonstrate the therapeutic potential of NCX inhibitors in combination with chemotherapy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "7a54649b-1a75-4497-90b8-6297d575a796",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "SN-6 is a specific inhibitor of NCX reverse mode that has fewer side effects than benzamil and does not affect other receptors, transporters, or ion channels at working concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C109 are supported by citations to previous studies characterizing SN-6. This information justifies the choice of SN-6 over benzamil for the key experiments, though the specificity claims are based on prior literature rather than data generated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "19e4b5a7-cb8a-4ebf-9604-da7f5b279528",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Mucin levels do not reflect CRC patient prognosis because high intracellular levels do not directly translate to increased extracellular levels due to tight regulation of mucin secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are supported by the survival analysis (Figure 1F) showing no significant difference in DFS based on MUC5AC levels. The interpretation about secretion regulation (C92) is reasonable based on mucin biology knowledge, though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "db395587-e0fe-4770-a912-4b3bfc4308bf",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study provides potential new pharmacological strategies to control chemoresistance of mucinous CRCs that may benefit patients with mucinous cancers in general.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C114-C115 represent broad conclusions about therapeutic potential. While the experimental data support the concept, the generalizability to other mucinous cancers (C115) is speculative and would require additional validation. The therapeutic potential is promising but requires further preclinical and clinical development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "45ff4b44-3c06-4943-937a-8c0499e5a139",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The mucin secretion response to chemotherapy may be an adaptive response similar to epithelial cell responses to toxins or pathogens, and KChIP3 may have limited therapeutic utility due to requiring gene therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86, C88-C89, C98, and C103 are speculative interpretations not directly tested in the study. While these hypotheses are reasonable based on the data and mucin biology, they remain unproven and would require additional mechanistic studies to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    },
+    {
+      "id": "ab0352b3-bec1-4705-bc54-c64da4fa6fa4",
+      "content_id": "516a8e12-3077-427c-9163-fd524930a776",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "ATP is a well-known mucin secretagogue, mucin stores require 24 hours to be fully restored after maximum stimulated secretion, and the anti-MUC5AC antibody used mainly recognizes mature mucin granules near the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C116, C119, and C120 represent methodological details and established knowledge appropriately cited from the literature. C120 provides an important caveat for interpreting the apparent discrepancy between increased production and decreased granule numbers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:47:51.933030Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8ddaf76f-3ca1-4730-bd39-6c869c41eed1",
+      "result_id": "b811709d-5652-4132-a749-786cee82bc46"
+    },
+    {
+      "claim_id": "fa2c0903-8a0c-4e54-a112-7cba808392b2",
+      "result_id": "b811709d-5652-4132-a749-786cee82bc46"
+    },
+    {
+      "claim_id": "506c70ef-5189-4fc4-a0c3-9d135bf7f86c",
+      "result_id": "b811709d-5652-4132-a749-786cee82bc46"
+    },
+    {
+      "claim_id": "e9b7d691-fc02-4b72-a136-977edc8af78c",
+      "result_id": "b811709d-5652-4132-a749-786cee82bc46"
+    },
+    {
+      "claim_id": "cd1a6136-cbba-4b0d-99c5-66d62b85fa1a",
+      "result_id": "b811709d-5652-4132-a749-786cee82bc46"
+    },
+    {
+      "claim_id": "35081797-f961-46ea-9424-043700b6a670",
+      "result_id": "b811709d-5652-4132-a749-786cee82bc46"
+    },
+    {
+      "claim_id": "bd7c01af-1874-46b2-b498-34d9743aabe8",
+      "result_id": "b811709d-5652-4132-a749-786cee82bc46"
+    },
+    {
+      "claim_id": "97d9e205-e268-4888-b766-0f0d4554970f",
+      "result_id": "b811709d-5652-4132-a749-786cee82bc46"
+    },
+    {
+      "claim_id": "fcbb5840-b6f2-494e-94d7-db93ca361e14",
+      "result_id": "15aefa5a-d59a-4708-b05d-327bf6137e2e"
+    },
+    {
+      "claim_id": "ec11e129-618a-4167-8f1a-3562f059836e",
+      "result_id": "15aefa5a-d59a-4708-b05d-327bf6137e2e"
+    },
+    {
+      "claim_id": "3ed93805-1b7e-4039-bdba-60e6d8d11aea",
+      "result_id": "15aefa5a-d59a-4708-b05d-327bf6137e2e"
+    },
+    {
+      "claim_id": "f4e0df27-a11f-4d0d-86e1-17664d0cedb7",
+      "result_id": "15aefa5a-d59a-4708-b05d-327bf6137e2e"
+    },
+    {
+      "claim_id": "e1017727-291b-49eb-9edb-7cd288d79010",
+      "result_id": "15aefa5a-d59a-4708-b05d-327bf6137e2e"
+    },
+    {
+      "claim_id": "24b68443-7979-491f-a36c-058a3c8d33b7",
+      "result_id": "df1ef3be-3453-4cda-afdf-ce1eabcae076"
+    },
+    {
+      "claim_id": "3275113a-baf8-45fe-a954-befefad6d6f3",
+      "result_id": "df1ef3be-3453-4cda-afdf-ce1eabcae076"
+    },
+    {
+      "claim_id": "bb4272f8-646e-424e-91c0-5a8aee6de184",
+      "result_id": "df1ef3be-3453-4cda-afdf-ce1eabcae076"
+    },
+    {
+      "claim_id": "ca331bd4-a9cf-48bb-babb-1c553d1292a9",
+      "result_id": "df1ef3be-3453-4cda-afdf-ce1eabcae076"
+    },
+    {
+      "claim_id": "a3e17452-1656-4e7b-8c84-55442eb2a330",
+      "result_id": "df1ef3be-3453-4cda-afdf-ce1eabcae076"
+    },
+    {
+      "claim_id": "d6ef44bb-1b4b-4983-8b74-b61aaee898e2",
+      "result_id": "df1ef3be-3453-4cda-afdf-ce1eabcae076"
+    },
+    {
+      "claim_id": "bcd1006f-25d3-431b-a60b-5e56b99db87b",
+      "result_id": "df1ef3be-3453-4cda-afdf-ce1eabcae076"
+    },
+    {
+      "claim_id": "d5a7a9ae-0120-4146-b6c0-6e46e6107b12",
+      "result_id": "100bb931-6101-4230-b7e1-3b43a0990c42"
+    },
+    {
+      "claim_id": "ae8f035d-27aa-4233-8382-1b8249d67dff",
+      "result_id": "100bb931-6101-4230-b7e1-3b43a0990c42"
+    },
+    {
+      "claim_id": "446534de-b4be-4823-b57f-77a00ec89495",
+      "result_id": "100bb931-6101-4230-b7e1-3b43a0990c42"
+    },
+    {
+      "claim_id": "1544ca32-8d73-4c32-81cc-a3e6bd45f090",
+      "result_id": "100bb931-6101-4230-b7e1-3b43a0990c42"
+    },
+    {
+      "claim_id": "cf11dcd4-f521-4190-aeb6-12c322c16062",
+      "result_id": "100bb931-6101-4230-b7e1-3b43a0990c42"
+    },
+    {
+      "claim_id": "4afb80b9-5b63-497d-ab05-eb5a51f9a7a4",
+      "result_id": "100bb931-6101-4230-b7e1-3b43a0990c42"
+    },
+    {
+      "claim_id": "6ce23ce8-b4a3-42df-bc13-3ffce62ac45f",
+      "result_id": "100bb931-6101-4230-b7e1-3b43a0990c42"
+    },
+    {
+      "claim_id": "e95d3e38-4795-4fae-8367-af458dcdf0fa",
+      "result_id": "100bb931-6101-4230-b7e1-3b43a0990c42"
+    },
+    {
+      "claim_id": "0cf87767-f263-414a-aea4-053cb02feb98",
+      "result_id": "9fac4442-af62-4ace-99be-f189ae664075"
+    },
+    {
+      "claim_id": "9d87f14c-2b33-48bd-9b87-0f0ab3c6c981",
+      "result_id": "9fac4442-af62-4ace-99be-f189ae664075"
+    },
+    {
+      "claim_id": "24ae22e6-8ce5-4543-97dc-9dbecbe04d12",
+      "result_id": "9fac4442-af62-4ace-99be-f189ae664075"
+    },
+    {
+      "claim_id": "d848c1e0-5f7b-4fcf-bb02-85585c25e6d5",
+      "result_id": "9fac4442-af62-4ace-99be-f189ae664075"
+    },
+    {
+      "claim_id": "f737dd29-627a-4727-afc1-78adfbbba47d",
+      "result_id": "8cf4ed44-b9b3-4d25-bf21-cdb3df3384d9"
+    },
+    {
+      "claim_id": "3aaba2f7-c327-46dc-9ea2-a0da643e501b",
+      "result_id": "8cf4ed44-b9b3-4d25-bf21-cdb3df3384d9"
+    },
+    {
+      "claim_id": "5d9d64ec-d050-4e3e-9508-00a54f65a243",
+      "result_id": "8cf4ed44-b9b3-4d25-bf21-cdb3df3384d9"
+    },
+    {
+      "claim_id": "8f8518a8-4db4-4fdc-9b5d-79fe079a6c37",
+      "result_id": "8cf4ed44-b9b3-4d25-bf21-cdb3df3384d9"
+    },
+    {
+      "claim_id": "ea796b4b-d678-4562-93de-40af2c3d0833",
+      "result_id": "8cf4ed44-b9b3-4d25-bf21-cdb3df3384d9"
+    },
+    {
+      "claim_id": "06c9ffd4-672c-476a-a876-d5c6389409fd",
+      "result_id": "c600babe-e1f6-4ccc-aa8b-301dc72ac7b4"
+    },
+    {
+      "claim_id": "bf6c357d-8723-4049-91ce-f73462bb7eaa",
+      "result_id": "c600babe-e1f6-4ccc-aa8b-301dc72ac7b4"
+    },
+    {
+      "claim_id": "6902048b-d1d3-421e-8810-4cbb4dc42780",
+      "result_id": "c600babe-e1f6-4ccc-aa8b-301dc72ac7b4"
+    },
+    {
+      "claim_id": "8c82bce0-990c-4fb1-b1c3-340aa49e4e4a",
+      "result_id": "c600babe-e1f6-4ccc-aa8b-301dc72ac7b4"
+    },
+    {
+      "claim_id": "d8445090-1c53-4772-8fd4-bc7056b54be6",
+      "result_id": "c600babe-e1f6-4ccc-aa8b-301dc72ac7b4"
+    },
+    {
+      "claim_id": "91b3d250-a5dd-4ab1-a128-b5a28f728323",
+      "result_id": "14987f78-4df4-4d9e-a866-69c05b020ceb"
+    },
+    {
+      "claim_id": "62f3cd07-7bf4-4cb1-8823-c5397ee5fc45",
+      "result_id": "14987f78-4df4-4d9e-a866-69c05b020ceb"
+    },
+    {
+      "claim_id": "8c4deac6-5f63-445d-b676-79830749e7f1",
+      "result_id": "14987f78-4df4-4d9e-a866-69c05b020ceb"
+    },
+    {
+      "claim_id": "07cbfb60-a7b8-4488-8a55-fa96d73e162f",
+      "result_id": "d8be697a-92e9-4bac-8d1b-40b8275f77f7"
+    },
+    {
+      "claim_id": "9106f485-18cc-4061-a7a2-d4395db680b0",
+      "result_id": "d8be697a-92e9-4bac-8d1b-40b8275f77f7"
+    },
+    {
+      "claim_id": "fd6a0676-ce33-48b1-8e06-4d6b0075bf9e",
+      "result_id": "d8be697a-92e9-4bac-8d1b-40b8275f77f7"
+    },
+    {
+      "claim_id": "bbb250c3-47c0-4eab-bfe5-f9ebd530bc74",
+      "result_id": "d8be697a-92e9-4bac-8d1b-40b8275f77f7"
+    },
+    {
+      "claim_id": "e1e37b5b-eba9-4616-84e8-a3aca7f915ca",
+      "result_id": "d8be697a-92e9-4bac-8d1b-40b8275f77f7"
+    },
+    {
+      "claim_id": "b6a5b259-798b-4615-a344-4aeebe779c1c",
+      "result_id": "d8be697a-92e9-4bac-8d1b-40b8275f77f7"
+    },
+    {
+      "claim_id": "280cbefe-7213-4e8b-9f1f-35afcc853471",
+      "result_id": "d8be697a-92e9-4bac-8d1b-40b8275f77f7"
+    },
+    {
+      "claim_id": "1de325e5-36e1-45ee-9572-a25d3dfff35d",
+      "result_id": "a4805e51-17d6-479c-ac82-4809fa4b53bf"
+    },
+    {
+      "claim_id": "33b9943e-413a-4ebe-81c9-d2a1415d74b2",
+      "result_id": "a4805e51-17d6-479c-ac82-4809fa4b53bf"
+    },
+    {
+      "claim_id": "14318ff8-ed47-4f0b-aaa4-a80006c8ad74",
+      "result_id": "a4805e51-17d6-479c-ac82-4809fa4b53bf"
+    },
+    {
+      "claim_id": "dfe77182-281c-4727-bac3-731dcc1ad54e",
+      "result_id": "a4805e51-17d6-479c-ac82-4809fa4b53bf"
+    },
+    {
+      "claim_id": "96a1b7cb-1a40-4abd-974a-186eba07a13e",
+      "result_id": "a4805e51-17d6-479c-ac82-4809fa4b53bf"
+    },
+    {
+      "claim_id": "5b63c28e-c227-4c25-b46e-a67d0820a505",
+      "result_id": "be9f29f6-b3eb-43ad-b313-c08a72bebaf6"
+    },
+    {
+      "claim_id": "d9aba414-7b4b-4197-ab39-54f2ad20476d",
+      "result_id": "be9f29f6-b3eb-43ad-b313-c08a72bebaf6"
+    },
+    {
+      "claim_id": "595dce7b-81db-4dc6-bd1d-deb1a4fe4dfc",
+      "result_id": "be9f29f6-b3eb-43ad-b313-c08a72bebaf6"
+    },
+    {
+      "claim_id": "249c2848-8cbd-4216-8973-bb0eb3c96953",
+      "result_id": "be9f29f6-b3eb-43ad-b313-c08a72bebaf6"
+    },
+    {
+      "claim_id": "296a2bab-f527-44ac-aae7-55d86afdf32c",
+      "result_id": "be9f29f6-b3eb-43ad-b313-c08a72bebaf6"
+    },
+    {
+      "claim_id": "e28b8a45-ba4c-493d-83a2-6d3341808a3d",
+      "result_id": "be9f29f6-b3eb-43ad-b313-c08a72bebaf6"
+    },
+    {
+      "claim_id": "a3e17452-1656-4e7b-8c84-55442eb2a330",
+      "result_id": "8deb43ac-5d74-4193-bc4a-fed1f9f8a32c"
+    },
+    {
+      "claim_id": "dce1629d-4677-4020-85a2-17e0e2400575",
+      "result_id": "8deb43ac-5d74-4193-bc4a-fed1f9f8a32c"
+    },
+    {
+      "claim_id": "d6ef44bb-1b4b-4983-8b74-b61aaee898e2",
+      "result_id": "8deb43ac-5d74-4193-bc4a-fed1f9f8a32c"
+    },
+    {
+      "claim_id": "bdcb6e52-bb37-45ab-b5df-9acb62bd4010",
+      "result_id": "83f930b8-c397-4146-82bc-5287f5d423a8"
+    },
+    {
+      "claim_id": "4cebd1b4-7611-4f71-ab76-f1d818957564",
+      "result_id": "83f930b8-c397-4146-82bc-5287f5d423a8"
+    },
+    {
+      "claim_id": "6a7574dc-715f-454a-a6fd-e75e19439281",
+      "result_id": "83f930b8-c397-4146-82bc-5287f5d423a8"
+    },
+    {
+      "claim_id": "caf43c66-8e56-444b-8224-66388cbb1410",
+      "result_id": "83f930b8-c397-4146-82bc-5287f5d423a8"
+    },
+    {
+      "claim_id": "2121eeb6-5cee-41ee-9971-dc9ec0f835e8",
+      "result_id": "83f930b8-c397-4146-82bc-5287f5d423a8"
+    },
+    {
+      "claim_id": "afeee12f-c0a7-4c06-a22d-a07311a18975",
+      "result_id": "83f930b8-c397-4146-82bc-5287f5d423a8"
+    },
+    {
+      "claim_id": "01137614-e836-4ed8-ae11-00e62249db38",
+      "result_id": "83f930b8-c397-4146-82bc-5287f5d423a8"
+    },
+    {
+      "claim_id": "8e6f05cf-075b-4377-a376-33bac48d5fa2",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "65346155-c736-426b-996d-1f20ffb1170b",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "0dceebe5-999b-45d0-8de8-5146ff9d4be7",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "2fd24b14-1cc6-4f52-88e6-585ebe56ea17",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "40425fbb-1409-4e3e-bda5-2d945d681a3a",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "bc217d53-e59f-48b7-9d9a-321295dc9f43",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "2163add6-4d76-4bc8-b699-0726a4b44410",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "1083828f-c1e6-444c-8b0d-beb16fb9dd4e",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "b2839aef-ed5f-4998-9765-06613615f6fa",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "ccb9d551-94d0-4043-988e-ab7c2901b4ce",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "915fa0fe-0a1c-4769-b7d0-16735c0b06ff",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "72c5fca5-53f3-4b58-885b-5cc876f006d5",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "658845c4-70d8-4871-8ddb-2c0308dec644",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "980f5f41-d355-4756-857e-36f542383116",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "b651f933-e0bd-40c9-b5e6-1ed72e82de85",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "a7b2fe86-ab54-4d70-b5f2-6a7ef7ad44a6",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "1665c5f2-a581-4e9b-93d1-2d9da16ac0c5",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "cbb7d346-e4da-4319-ac23-0dc4c841399e",
+      "result_id": "71485836-22d3-4a6f-96d2-6813de1a7aa0"
+    },
+    {
+      "claim_id": "1c847405-a227-4da7-8932-3087a497b169",
+      "result_id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9"
+    },
+    {
+      "claim_id": "4ab53d78-e4f8-4002-bf10-8e5a9532f93a",
+      "result_id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9"
+    },
+    {
+      "claim_id": "fac0b847-db3c-4242-8d01-4e222fe700e6",
+      "result_id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9"
+    },
+    {
+      "claim_id": "b7f37c29-2c7f-43cc-bd90-c6c60ee07893",
+      "result_id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9"
+    },
+    {
+      "claim_id": "2406f42f-606e-4aa3-91b1-6711f6606c4d",
+      "result_id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9"
+    },
+    {
+      "claim_id": "6e38c758-0944-4e59-8334-31e238291283",
+      "result_id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9"
+    },
+    {
+      "claim_id": "faee818f-51b7-43bd-896f-9793e1cce2de",
+      "result_id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9"
+    },
+    {
+      "claim_id": "739f2258-1c85-469e-9ba7-76a1f4b416da",
+      "result_id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9"
+    },
+    {
+      "claim_id": "df1b0b95-adcb-4ace-82e0-b42dc9af819a",
+      "result_id": "1984f8d4-603f-4dfd-ae68-8ebc2e7d96d9"
+    },
+    {
+      "claim_id": "748de70b-a081-4b87-831e-074bbdce0076",
+      "result_id": "dec7ef24-f23a-4ed7-8d80-490ddfb23c32"
+    },
+    {
+      "claim_id": "a1b4753c-7d53-4581-8615-0ed0a49541f0",
+      "result_id": "dec7ef24-f23a-4ed7-8d80-490ddfb23c32"
+    },
+    {
+      "claim_id": "cbb8a685-632a-4c84-b687-22e4c17ccb6f",
+      "result_id": "dec7ef24-f23a-4ed7-8d80-490ddfb23c32"
+    },
+    {
+      "claim_id": "1c456651-c167-4e32-be14-b116f71642cf",
+      "result_id": "ec15dfd6-d519-42eb-b9ce-d1de53fdc708"
+    },
+    {
+      "claim_id": "710df698-0a04-4cf9-b767-aab3ed9beb64",
+      "result_id": "ec15dfd6-d519-42eb-b9ce-d1de53fdc708"
+    },
+    {
+      "claim_id": "455589b2-3200-43e7-89fb-afba8f5f39cc",
+      "result_id": "ec15dfd6-d519-42eb-b9ce-d1de53fdc708"
+    },
+    {
+      "claim_id": "24509322-ad5e-4e97-ba46-6dc24ccb4052",
+      "result_id": "7a54649b-1a75-4497-90b8-6297d575a796"
+    },
+    {
+      "claim_id": "033370bd-0691-45f8-b4e0-f9faeb2f04ff",
+      "result_id": "7a54649b-1a75-4497-90b8-6297d575a796"
+    },
+    {
+      "claim_id": "b9361767-cb11-46c8-ad9c-340f9fc3384d",
+      "result_id": "19e4b5a7-cb8a-4ebf-9604-da7f5b279528"
+    },
+    {
+      "claim_id": "4e4be152-8c04-467b-b359-07a32ad599a6",
+      "result_id": "19e4b5a7-cb8a-4ebf-9604-da7f5b279528"
+    },
+    {
+      "claim_id": "84d09519-90cf-4221-b1d2-dac917c0d9d9",
+      "result_id": "db395587-e0fe-4770-a912-4b3bfc4308bf"
+    },
+    {
+      "claim_id": "e10159db-fd36-40c1-a480-fcf86a89961e",
+      "result_id": "db395587-e0fe-4770-a912-4b3bfc4308bf"
+    },
+    {
+      "claim_id": "c26cbb41-e1f3-4962-8800-4d1e10fbb8d0",
+      "result_id": "45ff4b44-3c06-4943-937a-8c0499e5a139"
+    },
+    {
+      "claim_id": "2af1617a-b8f1-4f92-a96f-66dfa41de3f5",
+      "result_id": "45ff4b44-3c06-4943-937a-8c0499e5a139"
+    },
+    {
+      "claim_id": "87a1efab-059a-4823-82a4-13dc0f8b41df",
+      "result_id": "45ff4b44-3c06-4943-937a-8c0499e5a139"
+    },
+    {
+      "claim_id": "a8c09135-72cf-4dca-95e7-e4561eb6a6ea",
+      "result_id": "45ff4b44-3c06-4943-937a-8c0499e5a139"
+    },
+    {
+      "claim_id": "ec26eaa8-0042-49d7-b0ff-1d056e03800d",
+      "result_id": "45ff4b44-3c06-4943-937a-8c0499e5a139"
+    },
+    {
+      "claim_id": "2b7b28ea-b65c-4999-965c-291c4985c0d7",
+      "result_id": "ab0352b3-bec1-4705-bc54-c64da4fa6fa4"
+    },
+    {
+      "claim_id": "198b3d07-5273-4273-b5ba-3542ef1f048f",
+      "result_id": "ab0352b3-bec1-4705-bc54-c64da4fa6fa4"
+    },
+    {
+      "claim_id": "2f3f148d-e9ff-4f5d-9b01-bffbb1fe2239",
+      "result_id": "ab0352b3-bec1-4705-bc54-c64da4fa6fa4"
+    }
+  ],
+  "comparisons": []
+}

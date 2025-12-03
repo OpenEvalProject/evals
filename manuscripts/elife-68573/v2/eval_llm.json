@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Transposon expression, particularly of the roo element, shows a transient burst during early Drosophila embryogenesis. Transposon expression peaks at 4-6 hr AEL, reaching ~1.7% of the total transcriptome, with roo accounting for >1% and >70% of all TE-derived reads. RNA-FISH confirms roo transcripts are detected in somatic cells (yolk nuclei and mesoderm) from stage 6 (~3 hr AEL) to stage 11 (~5 hr AEL), but are undetectable in late-stage embryos (>10 hr AEL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 are well-supported by RNA-seq data (C25-C29), RNA-FISH imaging (C30-C32), and are consistent with prior reports. The quantitative measurements are precise, the spatial localization is directly visualized, and the temporal dynamics are clearly documented across multiple time points with biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Proteomic analysis reveals that roo encodes functional retrotransposition machinery that is expressed during embryogenesis. Mass spectrometry detected >6400 proteins in early embryos, with roo peptides (gag, pol, env) significantly accumulating at 5-7 hr AEL (p<0.01), indicating potential competence for retrotransposition. roo proteins remain detectable at 10-12 hr AEL despite diminished mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 are supported by quantitative TMT-MS data with statistical significance (p<0.01) and appropriate controls. The detection of gag, pol, and env peptides provides direct evidence for protein expression, though the inference of \"potential competence for retrotransposition\" (C41) is reasonable but not functionally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Components of the piRNA-guided co-transcriptional gene silencing (coTGS) machinery show distinct expression patterns during embryogenesis. With the exception of Piwi, coTGS factors (PICTS complex components: Panx, Nxf2, Nxt1, Ctp) are both maternally deposited and zygotically expressed during the first ~10 hr of embryogenesis. Piwi mRNA is primarily maternally deposited with low zygotic transcript levels throughout embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by RNA-seq and proteomic data showing expression patterns across developmental time points. The distinction between maternal deposition and zygotic expression is clearly documented, with Piwi showing a unique pattern compared to other coTGS components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Live imaging reveals dynamic localization patterns of Piwi and PICTS components during embryogenesis. Piwi localizes to the posterior pole in pre-blastoderm embryos, then to somatic and pole cell nuclei as development progresses, with signal intensity decreasing over time. Piwi is excluded from nuclei during mitosis, while Panx and Nxf2 are retained in the nucleoplasm during mitotic cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are well-supported by light-sheet fluorescence microscopy data with clear visualization of protein localization dynamics. The observations are consistent with prior reports (C46, C47, C48) and provide new insights into differential behavior during mitosis (C51, C52). The inference about retention/exclusion (C52) is directly supported by co-localization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C103"
+    ],
+    "result": "Reciprocal cross experiments demonstrate that Piwi-piRNA complexes in embryos are exclusively of maternal origin. Embryos from GFP-Piwi females show strong maternal deposition, while reciprocal crosses show no early GFP signal. Zygotically expressed Piwi localizes exclusively to the cytoplasm of germ cell progenitors, suggesting it is not relevant for nuclear coTGS until later development. Only maternally deposited piRNAs engage Piwi in the embryonic soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C103 are strongly supported by reciprocal cross experiments with clear immunofluorescence data and small RNA-seq analysis. The experimental design directly tests maternal vs. zygotic contribution, and the cytoplasmic localization of zygotic Piwi (C55) provides compelling evidence for the inference that it is not relevant for early coTGS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C104"
+    ],
+    "result": "Small RNA profiling reveals that maternally deposited Piwi carries piRNAs targeting embryonically expressed transposons. Piwi in embryos and ovaries complexes with 23-28 nt piRNAs with similar size profiles biased for antisense reads. However, embryonic Piwi shows high levels of antisense piRNAs targeting roo (~16% of TE-targeting reads) and 297 (~9%), while ovarian Piwi shows higher levels targeting mdg1 and 412.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 and C104 are well-supported by small RNA-seq data from Piwi immunoprecipitations. The quantitative measurements are precise, and the differences between embryonic and ovarian piRNA populations are clearly documented. The data directly support the hypothesis that maternal piRNAs provide instructions for recognizing embryonically expressed elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "H3K9me3 marks are dynamically deposited at roo insertions during embryogenesis in a pattern consistent with piRNA-guided heterochromatin formation. Early embryos (0-2 hr AEL) show low H3K9me3 at roo insertions, which increases to peak at 6-10 hr AEL, lagging ~2 hr behind the RNA expression peak. The marks trail transcription direction and are enriched downstream of insertions. H3K9me3 diminishes by 16-18 hr AEL and is absent in adult tissues despite functional piRNA pathway in ovaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are strongly supported by ChIP-seq data across multiple developmental time points with biological replicates. The temporal correlation with roo expression, the directional bias of H3K9me3 deposition, and the transient nature of the marks are all clearly documented. The inference that maternal piRNAs program this response (C65) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The 297 transposon shows similar but temporally distinct H3K9me3 dynamics compared to roo. Euchromatic 297 insertions (n=20) show dynamic H3K9me3 deposition with maximum signal at 2-8 hr AEL, earlier than roo (6-10 hr AEL). In contrast, transposons lacking substantial maternal piRNAs (mdg1, 412) retain low H3K9me3 throughout embryogenesis despite being expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by ChIP-seq data showing distinct temporal patterns for different transposon families. The correlation between maternal piRNA abundance and H3K9me3 deposition provides strong evidence for piRNA-dependent targeting. The negative control (mdg1, 412) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "H3K9me3 dynamics at transposon insertions are specific and not due to global changes in heterochromatin. H3K9me3 signal at constitutive heterochromatin remains stable throughout embryogenesis, while chromosome 4 shows steadily increasing H3K9me3 levels, demonstrating that the transient dynamics at roo/297 insertions are locus-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are well-supported by ChIP-seq data providing important negative and positive controls. The stable heterochromatin and increasing chromosome 4 signals demonstrate that the observed dynamics at transposon insertions are not artifacts of global chromatin changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The auxin-inducible degron (AID) system enables controlled depletion of Piwi in ovaries. Feeding flies with 5 mM auxin for 24 hr induces complete Piwi degradation in ovaries, resulting in transposon de-repression. After 1-day treatment, embryos from Piwi-depleted females develop normally with similar hatching rates, but longer treatments cause embryo deformation and reduced hatching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are well-supported by western blot, immunofluorescence, qRT-PCR, and hatching rate data. The system validation is thorough, demonstrating both protein depletion and functional consequences. The dose-response relationship (C73-C74) provides important context for interpreting embryonic experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The AID system enables rapid depletion of maternal Piwi from early embryos. In dechorionated embryos, 30 min auxin treatment of 0-30 min AEL embryos causes near-complete Piwi degradation. Live imaging shows GFP-AID-Piwi signal becomes undetectable after 25 min of 5 mM auxin treatment. Removal of maternal Piwi in this early window does not significantly affect embryo hatching rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are strongly supported by western blot, live imaging, and hatching rate data. The rapid kinetics of depletion (within 25-30 min) and the lack of developmental defects (C77) are clearly documented, enabling functional studies of maternal Piwi without confounding oogenesis defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Depletion of maternal Piwi in early embryos causes specific de-repression of roo and 297 transposons. RNA-seq of 2.5-3 hr AEL embryos shows that while most transposons show no significant expression change upon Piwi depletion, roo and 297 are significantly de-repressed (p<0.05) by more than twofold, indicating that Piwi impacts their expression during embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are well-supported by RNA-seq data with appropriate statistical analysis (DESeq2, p<0.05) and biological replicates (n=3). The specificity of the effect (only roo and 297) and the control experiment without OsTIR1 strengthen the conclusion. However, the magnitude of de-repression is modest (twofold), which is acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Piwi depletion specifically reduces H3K9me3 at roo and 297 insertions without affecting global heterochromatin. ChIP-seq shows severe reduction in H3K9me3 over roo and 297 consensus sequences, with 154 genomic bins showing significantly reduced H3K9me3 (p<0.05), of which 122 and 10 are within 5 kb of roo or 297 insertions, respectively. Individual euchromatic insertions (205 roo, 63 297) show strong H3K9me3 decrease, while constitutive heterochromatin and chromosome 4 are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are strongly supported by ChIP-seq data with appropriate statistical analysis and biological replicates (n=3). The specificity of the effect is demonstrated by both positive (roo/297) and negative (other TEs, heterochromatin, chr4) controls. The data directly link Piwi to H3K9me3 deposition at specific transposon insertions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The effect of Piwi depletion on transposon expression is transient, but the relationship between Piwi and H3K9me3 deposition is clear. While roo and 297 levels are elevated at 2.5-3 hr AEL upon auxin treatment, expression returns to baseline by 6-7 hr AEL. The combined RNA-seq and ChIP-seq data strongly indicate a relationship between maternally deposited Piwi-piRNA complexes and repressive H3K9me3 chromatin marks at transposon insertions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by qRT-PCR time course data and the integrated analysis of RNA-seq and ChIP-seq experiments. The transient nature of the expression effect (C85) is clearly documented, and the overall conclusion (C86) is well-supported by the convergence of multiple lines of evidence, though the modest magnitude of effects should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Piwi shows distinct localization dynamics during embryogenesis. Nuclear translocation of Piwi lags in germ cell precursor nuclei, correlating with delayed transcriptional activation compared to somatic nuclei. Dynamic imaging reveals that Piwi shuttles out of nuclei during mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by live imaging data and are consistent with prior observations (citations provided). The correlation with transcriptional timing (C92) is observational but well-documented. The mitotic exclusion (C93) is directly visualized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "roo is a highly successful transposon with unique expression patterns. It has the highest copy number in sequenced strains (9.4-9.9% of all TE insertions), shows extremely low expression in ovaries, and does not appear to be targeted by the ovarian piRNA pathway (no increase in expression or changes in HP1a/H3K9me3 in piRNA mutants). roo expression is activated by twist and snail in the embryonic mesoderm and expresses the full repertoire of proteins for virus-like particle formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by whole-genome sequencing (C98), RNA-seq (C99), ChIP-seq and mutant analysis (C100), prior literature (C101), and proteomic data (C102). The convergence of evidence supports the hypothesis that roo has evolved a unique lifestyle, though the mechanistic details remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "H3K9me3 deposition at roo insertions is transient and correlates with the presence of piRNA pathway components. H3K9me3 marks build at euchromatic roo insertions as embryos progress to stage 13 (10 hr AEL), with the peak lagging ~2 hr behind transcription. By 13 hr AEL, H3K9me3 peaks disappear without roo expression returning, correlating with the absence of critical piRNA pathway proteins in the soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are well-supported by integrated ChIP-seq, RNA-seq, and proteomic data. The temporal dynamics are clearly documented, and the correlation with piRNA pathway protein presence (C108) is supported by the data, though causality is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Despite piRNA pathway targeting, roo remains highly expressed in control embryos. Zygotic depletion of maternal Piwi produces a statistically significant but modest change in roo expression (roughly twofold), yet roo remains highly expressed, reaching up to 1% of the entire transcriptome in control animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are directly supported by RNA-seq data. The modest effect size despite statistical significance is clearly documented and honestly reported. This observation raises important questions about the biological significance of piRNA-mediated control, which the authors discuss thoughtfully.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "roo shows paradoxical features in ovaries: low expression without H3K9me3 marks despite abundant antisense piRNAs. Ovaries express roo at very low levels without H3K9me3 at euchromatic insertions, yet produce abundant roo piRNAs overwhelmingly in the antisense orientation. The uni-strand cluster 20A has collected roo insertions in the antisense orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by RNA-seq, ChIP-seq, and small RNA-seq data from ovaries. The paradox of abundant piRNAs without silencing marks is clearly documented and represents an important observation about tissue-specific piRNA pathway function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Recognition by the piRNA pathway does not necessarily create mitotically heritable epigenetic states. The transient nature of H3K9me3 marks at roo insertions demonstrates that piRNA pathway recognition does not impose mitotically heritable epigenetic states. This is consistent with observations in follicle cells where heterochromatin-mediated silencing requires continuous presence of piRNA machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are well-supported by the temporal dynamics of H3K9me3 marks observed in this study and are consistent with extensive prior literature (multiple citations). The inference (C114) is strongly supported by the data showing loss of H3K9me3 marks when piRNA pathway components are absent, despite prior targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Loss of transposon control in the embryonic soma does not cause overt morphological defects, but the piRNA pathway regulates somatic chromatin structure. Although Piwi depletion in early embryos does not result in overt morphological phenotypes, the ChIP-seq data showing H3K9me3 changes suggest the piRNA pathway plays a role in regulating somatic chromatin structure during early embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by hatching rate data (C116) and ChIP-seq data (C117). The lack of morphological phenotype is clearly documented, and the inference about chromatin regulation (C117) is well-supported by the H3K9me3 changes observed upon Piwi depletion, though the functional significance remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background knowledge claims about the piRNA pathway, transposable elements, and prior observations of maternal deposition. These claims establish the scientific context, including: piRNA pathway function in transposon control (C1, C13-C16), maternal inheritance of piRNAs (C2-C3), prior observations of maternal PIWI protein deposition (C21-C23), and various established functions of maternally inherited piRNAs (C87-C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C11-C24, C87-C91, C94-C97) are well-supported by extensive citations to prior literature and represent established knowledge in the field. They provide essential context for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Summary of the study's main findings and hypothesis. These claims summarize the key observations (maternal Piwi in somatic nuclei, rapid depletion system, role in attenuating transposon expression, transient heterochromatin at roo) and propose a hypothesis that roo may have evolved to express in embryonic soma to evade germline silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 accurately summarize findings that are supported by the detailed experimental data presented in the manuscript. Claim C10 is explicitly labeled as a hypothesis and represents reasonable speculation based on the observations, though it remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C33",
+      "C39"
+    ],
+    "result": "Structural characterization of the roo transposon. roo is an LTR retrotransposon encoding a single 272 kDa ORF containing gag, pol, env, two peptidase domains, and a zinc finger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C39 are supported by established knowledge (C33) and sequence analysis with protein domain prediction (C39). These are straightforward structural characterizations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C95",
+      "C96"
+    ],
+    "result": "The experimental system successfully distinguishes between copy-number and point mutations using a dual fluorescent reporter system where YFP reports galK expression changes and CFP specifically reports copy-number changes. The system shows linear correlations between fluorescence and copy number (R\u00b2=0.97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 describe the experimental design, which is validated by C95-C96 showing strong linear correlations (R\u00b2=0.97, p<0.0001) between fluorescence and copy number. The system design is sound and the validation data support its ability to distinguish mutation types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Different galactose concentrations create environments with different gene expression demands, with growth rate increasing with galK expression and saturating at levels dependent on galactose concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are directly supported by experimental data in Figure 1B showing dose-dependent saturation of growth rate with galK expression across different galactose concentrations. This establishes the experimental framework for testing adaptation under different selective pressures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "The IS+ and IS- strains differ solely by one IS1 element, and the IS- strain shows drastically reduced ability to undergo galK amplification compared to IS+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe the strain construction and its phenotypic consequence. The data in Figure 2A clearly show that IS- populations rarely evolved increased CFP (amplification marker) compared to IS+ strains, validating the experimental manipulation of duplication rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In IS+ strains, the number and magnitude of amplifications depend on galactose concentration, with more populations amplified in low (0.01%) galactose, and amplifications occurring rapidly (within 2 days) and remaining stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by quantitative data showing environment-dependent amplification patterns (68, 19, and 34 populations for low, intermediate, and high galactose). Statistical significance is reported (p<0.05) and the pattern is consistent with the expression-growth relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "IS- populations in 0.1% galactose evolved alternative amplifications that include galK-yfp but exclude cfp, representing a repeat-independent lower-frequency duplication mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe an unexpected finding confirmed by qPCR (C23). The interpretation (C24) logically follows from the inability of IS- strains to use the IS-mediated duplication mechanism, forcing alternative adaptive routes. This demonstrates the robustness of the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In intermediate (0.1%) and high (1%) galactose environments, copy-number and point mutations occur as combination mutations within single cells, as demonstrated by flow cytometry and sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by converging evidence from flow cytometry showing single-cell phenotypes with both elevated YFP and CFP (C25, C27) and Sanger sequencing confirming SNPs only in amplified clones (C26). The conclusion (C28) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In low (0.01%) galactose, copy-number and point mutations are mutually exclusive, with no combination mutants found. Populations with promoter mutations did not become amplified, and amplified populations did not gain promoter mutations within the experimental timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 present comprehensive evidence from multiple approaches (flow cytometry, colony imaging, sequencing, time-course analysis) showing mutual exclusivity of mutation types in low galactose. The single exception (population F6, C35) actually supports the claim as mutations remained exclusive even in this case. This is a key finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "In low galactose, IS- populations showed higher frequencies of adaptive promoter SNPs than IS+ populations, indicating that strains with high duplication rates diverge more slowly than those with low duplication rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by amplicon deep sequencing data showing higher fractions of adaptive SNPs in IS- versus IS+ populations. This provides direct experimental evidence for the amplification hindrance hypothesis, though the authors acknowledge the metric underestimates SNPs in amplified backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Only two of four random promoter sequences (P0 and P0-2) evolved increased galK expression after 10 days in 0.1% galactose, with P0-1 and P0-3 showing no amplifications, likely because their baseline expression was too low to benefit from duplication alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 report direct observations from the evolution experiment. Claim C41 is a reasonable hypothesis based on the expression-growth relationship data (Figure 1B), though it remains speculative. The interpretation is plausible but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "For promoter P0-2, which has higher baseline expression, almost all IS+ populations rapidly amplified, while few evolved promoter mutations. These mutations were diverse (SNPs, indels, IS insertions) and occurred exclusively in non-amplified populations, demonstrating that amplification hinders divergence through negative epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C53 present a comprehensive analysis of P0-2 evolution with multiple lines of evidence: rapid amplification dynamics (C42), sequencing of mutations (C46), validation of causality (C47), reconstitution experiments (C48), and demonstration of mutual exclusivity (C49, C52). The conclusion about negative epistasis (C53) is well-supported by the totality of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The evolutionary dynamics depend on gene expression demand: in high demand environments, amplification increases mutational target size and combination mutations occur; in low demand environments, single mutations suffice, adaptation is dominated by more frequent copy-number mutations, and amplification hinders divergence through negative epistasis and potentially clonal interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 synthesize the experimental findings into a coherent model. The claims are supported by the experimental data across different galactose concentrations and are consistent with the IAD model (C57). The mechanistic interpretation invoking negative epistasis is well-reasoned based on the fitness data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Clonal interference is unlikely to explain the absence of combination mutants in low galactose because mutation rates and population sizes are similar across environments. Instead, negative epistasis plays a major role, as amplified strains in low galactose achieve fitness comparable to promoter mutants, providing no additional benefit for combination mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 present a critical analysis distinguishing between clonal interference and negative epistasis. The reasoning is supported by population size data (C62, Figure 7\u2014figure supplement 1A) and growth/yield measurements (C63-C64, Figure 7\u2014figure supplement 1B-D) showing that amplifications are sufficient in low galactose.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The spectrum of adaptive mutations differs drastically between environments selecting for different expression levels of the same gene. Combination mutants evolved only under high expression demand, while low demand led to mutually exclusive mutations. Strains with high duplication rates diverged more slowly, and frequent gene amplification hinders fixation of adaptive point mutations due to negative epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 summarize the main findings of the study. These conclusions are well-supported by the comprehensive experimental data from multiple promoter sequences, environments, and analytical approaches. Claim C71 represents the central conclusion of the paper and is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C72"
+    ],
+    "result": "Copy-number and point mutations form the basis for evolutionary novelty through gene duplication and divergence. In bacteria, gene duplications occur orders of magnitude more frequently than point mutations (10\u207b\u2076 to 10\u207b\u00b2 vs point mutation rates) and are adaptive when rapid increases in gene expression are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C9, and C72 represent established knowledge in the field, supported by multiple citations to prior literature. These claims provide the scientific context for the study and are well-established facts rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Under high gene expression demand, copy-number and point mutations occur as a combination, while under low demand they are mutually exclusive. Copy-number mutations may constrain sequence divergence over evolutionary time scales due to high reversal rates and pleiotropic cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the core findings stated in the abstract. These are supported by the comprehensive experimental data presented throughout the manuscript. Claim C5 extends the findings to evolutionary time scales, which is a reasonable inference but goes beyond the 12-day experimental timeframe.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The large difference in mutation rates means competition between point and copy-number mutations is heavily skewed toward copy-number mutations. Negative epistasis slows divergence (not adaptation per se) and can be expected in any condition requiring modest increases in biological function. Amplification hindrance may be generally relevant for evolution of gene expression and promiscuous enzyme functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 present logical inferences from established mutation rate differences and the experimental findings. Claims C75-C76 generalize the findings to broader contexts, which is reasonable speculation supported by the data but extends beyond what was directly tested. The distinction between slowing divergence vs. adaptation (C74) is an important conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The literature consensus has been that copy-number mutations facilitate divergence, but prior studies did not directly test this hypothesis. Some studies showed indications of more complex dynamics, including clonal interference in yeast and dominance of copy-number mutations with surprising lack of promoter mutations in Bacillus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 provide a critical assessment of prior literature, supported by appropriate citations. Claim C79 makes an important point that previous studies showed temporal precedence but not causation. This contextualizes the novelty of the current study's direct experimental test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Transient gene amplification dynamics allow rapid adaptation but may have long-lasting effects by hindering divergence. Amplifications can act as a buffer against long-lasting point mutations and could repeatedly provide adaptation while constraining sequence divergence over evolutionary time scales. This may explain why gene duplication and divergence is not a dominant force in bacterial protein family expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C93 present theoretical extensions and speculations about long-term evolutionary implications. While these are reasonable inferences from the experimental data (C84-C87 are supported by citations), claims about effects over evolutionary time scales (C89-C90) and genome-wide implications (C91-C92) are speculative. The 12-day experiments cannot directly test these long-term predictions, though they are plausible hypotheses for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "After 12 days of evolution, cells with ancestral fluorescence were still present in every amplified population, and mutants did not reach complete fixation, indicating that experiments captured transient adaptive dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are directly supported by flow cytometry data showing persistent ancestral cells in evolved populations. This observation is important for interpreting the results as capturing early, transient dynamics rather than equilibrium states.",
+    "result_type": "MINOR"
+  }
+]

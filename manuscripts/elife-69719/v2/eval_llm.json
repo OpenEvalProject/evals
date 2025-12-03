@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The COVID-19 pandemic has caused over 4 million deaths worldwide. While effective vaccines have been developed, the emergence of mutated SARS-CoV-2 strains has challenged vaccine effectiveness and raised the urgency for identifying alternate therapeutic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by citations to peer-reviewed literature (Dong et al., 2020; Tegally, 2020; Erik et al., 2020; Collier et al., 2021). These claims provide appropriate context for the study's rationale and are consistent with the scientific consensus at the time of publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Mutated SARS-CoV-2 strains will likely continue to exploit the same vulnerable host biology to infect cells and evade immune defenses. Host protein mechanisms are independent of viral genomic mutations, making them crucial therapeutic targets that may be relevant beyond SARS-CoV-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are supported by citations (Gordon et al., 2020a; Perrin-Cocon et al., 2020) and represent logical inferences based on established biological principles. The reasoning that host-directed therapies are less susceptible to viral mutation is sound and well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study conducted proteome-wide pan- and cis-MR analyses using Sun et al. protein GWAS data and COVID-19 GWAS phenotypes from the October 2020 ICDA COVID-HGI release. The methodology employed GSMR with HEIDI-outlier detection, used UK Biobank genotype data for LD reference, applied FDR correction at 5%, and performed genetic colocalisation using the coloc R package with PP.H4 >0.8 threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C27-C39 describe the study's methodology comprehensively with appropriate citations (Sun et al., 2018; Huang et al., 2020; Zhu et al., 2018; Giambartolomei, 2014; Schmidt, 2020). The methods are well-established in the field and appropriately applied. The use of multiple proteomic datasets and rigorous statistical approaches strengthens the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Pan-MR analysis identified nine protein probes associated with four COVID-19 outcomes at FDR 5%. Three proteins (ABO, ICAM-1, IL-6R) were supported by both pan- and cis-MR. ABO showed strong genetic colocalisation (PP.H4 >0.9) and was associated with both COVID-19 susceptibility and severity. IL-6R showed weaker colocalisation (PP.H4 0.4) but was associated with hospitalized COVID-19. Most non-ABO/IL-6R probes had trans-acting SNPs assigned to the ABO gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 are supported by the study's data presented in Figures 1-2 and Table 1. The statistical analyses appear rigorous with appropriate multiple testing correction. The finding that many trans-acting associations map to ABO highlights the pervasive pleiotropy of this locus. Effect sizes and confidence intervals are reported appropriately. The distinction between pan-MR and cis-MR results adds robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C49"
+    ],
+    "result": "Genetically predicted circulating ABO protein was associated with COVID-19 susceptibility and severity. The ABO signal (rs8176719-insC) showed the strongest association with plasma concentrations of soluble CD209 across three independent proteomic datasets (p=6.03\u00d710\u207b\u00b2\u2075\u2078, p=1.00\u00d710\u207b\u00b3\u2070\u2077, p=1.27\u00d710\u207b\u2077\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C49 are strongly supported by MR analysis data and replicated across three independent proteomic datasets (Figure 3, Supplementary file 6). The extremely low p-values and replication across datasets provide robust evidence. The association between ABO and CD209 is a key finding linking genetic risk to a potential mechanistic target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C50",
+      "C51",
+      "C52",
+      "C109"
+    ],
+    "result": "CD209 directly interacts with the SARS-CoV-2 spike protein. Purified spike protein attached to human cells expressing CD209 but not control cells. In direct binding assays, soluble CD209 bound spike protein with specificity comparable to ACE2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C50-C52, C109 are supported by experimental data shown in Figure 4. The cell-based binding assay (Figure 4A) and plate-based binding assay (Figure 4B) provide complementary evidence for direct CD209-spike interaction. The comparison to ACE2 as a positive control strengthens the findings. However, the functional significance of this interaction for viral entry and infection requires further investigation as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Proteome-wide genetic colocalisation followed by single-SNP cis-MR identified four proteins (ABO, FAS, OAS1, THBS3) with PP.H4 >0.8. FAS and THBS3 are novel findings not previously reported. OAS1 showed colocalisation in two COVID-19 phenotypes, though the colocalising SNPs were missense variants potentially subject to aptamer binding artifacts. Genetically predicted higher OAS1 was associated with lower risk of severe COVID-19 (OR 0.52), hospitalized COVID-19 (OR 0.63), and COVID-19 susceptibility (OR 0.79). Elevated FAS was associated with higher risk of severe COVID-19 (OR 1.38), and elevated THBS3 with COVID-19 vs. negative controls (OR 1.70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C53-C63 are supported by colocalisation and single-SNP MR analyses (Figures 5-6). The 'coloc-first' approach is methodologically sound and identified targets that would have been missed by MR-first approaches. The authors appropriately flag OAS1 results due to potential aptamer binding artifacts (C57) but note that the variants also affect gene expression (C58), supporting causal inference. Effect sizes are substantial and statistically significant. FAS and THBS3 represent novel findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "PheWAS analysis revealed that the ABO signal was associated with monocyte count, deep vein thrombosis (DVT), and pulmonary embolism (PE). OAS1 and THBS3 variants were associated with platelet counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by PheWAS analysis using Open Targets Genetics portal data (Supplementary file 8). These associations provide biological context for understanding how the identified proteins may contribute to COVID-19 pathology, particularly regarding coagulation and immune cell function. The associations are consistent with known COVID-19 complications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Soluble Fas (sFas) acts as a decoy receptor competing with transmembrane Fas for FasL. Genetically predicted higher sFas likely represents lower Fas-FasL signaling and was associated with higher risk of severe COVID-19. Fas-mediated apoptosis plays central roles in T- and B-cell homeostasis and viral infection resolution. Excessive inflammation by hyperactive T-cells and autoantibodies underlies severe COVID-19. Delayed apoptosis is exploited by SARS-CoV-2 for replication. Fas is a target of lopinavir-ritonavir, which failed in COVID-19 trials, while dexamethasone, which downregulates sFas, showed beneficial effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C76 are well-supported by citations to relevant literature (Cheng, 1994; Hao, 2008; Butt, 2015; Khamsi, 2021; Thomson, 2001; Ivanisenko et al., 2020; Sorbera et al., 2020; Cao et al., 2020; RECOVERY Collaborative Group et al., 2021; Achuthan, 2018; Joashi et al., 2002). The biological reasoning connecting sFas to COVID-19 pathology is logical and coherent. The discussion of failed (lopinavir-ritonavir) and successful (dexamethasone) therapies in relation to Fas provides important clinical context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Observational studies reported differences in COVID-19 risk based on ABO blood groups, though with some conflicting reports. GWAS of COVID-19 have consistently reported a signal in the ABO locus. In meta-analysis, the ABO signal remained even when the potentially biased Ellinghaus et al. study was excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by citations (Zhao, 2020; Zietz et al., 2020; Bhattacharjee et al., 2020; Shelton, 2020; Ellinghaus et al., 2020) and provide important context regarding the robustness of the ABO association. The acknowledgment of potential selection bias in early studies and the persistence of the signal in meta-analysis strengthens confidence in the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "CD209 is a receptor on monocyte-derived dendritic cells that facilitates SARS-CoV-2 entry and switches off type I interferon signaling. Soluble CD209 isoforms correlate with membrane isoforms in expression levels. Soluble CD209 can modulate infection by promoting endocytosis as opsonins. CD209 gene expression is higher in immune cells from bronchoalveolar lavage fluid in severe COVID patients than healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by citations (Yang, 2020; Mummidi et al., 2001; Plazolles, 2011; Gao, 2020) and provide mechanistic context for the CD209 findings. The discussion appropriately notes that soluble and membrane isoforms correlate, making the plasma measurements relevant to cell-surface receptor function. The higher expression in severe COVID patients provides additional supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Non-O blood group individuals have higher risk of DVT and coagulation disorders than O blood group individuals. The ABO signal was associated with DVT, PE, and higher levels of vWF and F8. vWF binds and protects F8 from degradation. F8 is a key protein in the intrinsic coagulation pathway that activates Factor X and induces fibrin formation. DVT and PE affect almost a third of ICU-admitted COVID-19 patients. UK NICE guidelines suggest screening hospitalized COVID-19 patients for anticoagulant contraindications and offering prophylactic anticoagulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are well-supported by citations (Groot, 2020; Federici, 2003; Bhopale and Nanda, 2003; Malas, 2020; National Institute for Health and Care Excellence, 2020). The connection between ABO, coagulation factors, and COVID-19 complications is logical and clinically relevant. The discussion appropriately links genetic findings to clinical practice guidelines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "There was ambiguous evidence of genetic colocalisation for IL-6R (PP.H4: 0.46), though the H4/H3 ratio of 3.6 favored a shared genetic signal over independent signals. A previous trial showed neutral effects of tocilizumab in hospitalized COVID-19 patients, but two recent trials (REMAP-CAP and RECOVERY) with longer follow-up showed beneficial effects on 90-day survival, consistent with the protective effect predicted by the IL-6R genetic instrument.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by the study's colocalisation analysis and citations to clinical trials (Bovijn et al., 2021; Stone et al., 2020; REMAP-CAP; RECOVERY). The authors appropriately acknowledge the ambiguous colocalisation evidence while noting that the H4/H3 ratio still favors a shared signal. The concordance between genetic predictions and clinical trial results strengthens confidence in the IL-6R findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "A large clinical trial of systemically administered interferons failed to show substantial therapeutic benefits for severe COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by citation to WHO Solidarity Trial Consortium et al., 2021. This provides important context for interpreting the OAS1 findings and suggests that timing and route of interferon administration may be critical factors not addressed by current genetic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study discusses methodological considerations for MR analyses. Pan-genome instruments provide more power but risk horizontal pleiotropy. Cis-acting SNPs provide more specific estimates but may have lower power and can suffer from correlated instruments leading to numerical errors. Horizontal pleiotropy can affect cis-MR when variants represent different pathways. The GSMR method with HEIDI test excludes heterogeneous instruments. In this study, 96% of nominally significant protein probes also had effects on gene expression. MR associations can be confounded by LD between cis-pQTLs and disease SNPs, partially mitigated by colocalisation. The colocalisation tests assumed single causal variants per locus, potentially increasing false negatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 provide a thorough and balanced discussion of methodological strengths and limitations, supported by appropriate citations (Schmidt, 2020; Gkatzionis et al., 2021; Open Targets Genetics, 2019). The authors demonstrate awareness of potential biases and have taken appropriate steps to address them. The acknowledgment of limitations (e.g., single causal variant assumption in colocalisation) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Study designs with milder/asymptomatic cases as controls are useful for studying disease progression but are frequently underpowered and susceptible to collider-stratification bias. The study used all published COVID-19 phenotypes (October 2020 freeze) irrespective of controls used, and most signals were found in phenotypes with population-based controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by citation to Griffith, 2020 and the study's methodology. The authors appropriately acknowledge the trade-offs between different study designs and justify their inclusive approach. The observation that most signals were found with population-based controls is consistent with power considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study's findings strongly implicate dysregulated coagulation in COVID-19 for non-O blood group individuals, though whether pre-emptive anticoagulant use guided by blood groups can prevent severe COVID-19 requires clinical trials. The study integrated genetic investigation with functional assessments of CD209 and postulated this target may convey COVID-19 risk of the ABO signal. The study prioritized sFas for further investigation of its therapeutic relevance to severe COVID-19 based on proteome-wide genetic colocalisation and MR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 appropriately summarize the study's main conclusions and their implications. The authors appropriately note that clinical trials are needed to test therapeutic hypotheses (C110). The integration of genetic and experimental evidence for CD209 (C111) and the prioritization of sFas (C112) represent the study's major contributions. The conclusions are well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work has identified host proteins interacting with SARS-CoV-2 viral proteins, including the spike protein which mediates viral attachment and is the basis of most vaccines. Several groups have used genetic approaches including Mendelian randomization to identify therapeutically actionable host proteins. Previous MR studies identified proteins in type I interferon and IL-6 signaling pathways, with only OAS1 showing genetic colocalisation. ABO was supported by both MR and colocalisation and linked to coagulation factors, IL-6, and CD209. Previous studies used only cis-acting variants as instruments, which minimizes horizontal pleiotropy but may have lower power, and performed colocalisation only for MR-significant associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 provide appropriate context from prior work, supported by citations (Gordon et al., 2020a,b; Bouhaddou et al., 2020; Shang et al., 2020; Harvey et al., 2021; Pairo-Castineira et al., 2021; Zhou et al., 2021; Davies et al., 2018; Zheng et al., 2020; Karim et al., 2020). The authors accurately characterize the limitations of previous studies and justify their expanded approach. The description of MR methodology and trade-offs between pan- and cis-approaches is accurate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C58"
+    ],
+    "result": "Reference-free molecular speciation of mosquitoes using metatranscriptomic data achieved 95% concordance with visual identification, with discordant calls occurring in contexts known to challenge morphological speciation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C58 provide converging evidence: the kmer-based approach (C21) achieved 95% concordance (C22), discordant calls matched known challenging contexts (C23), and the method is validated by citations to prior work documenting these challenges. The 95% accuracy rate is quantitatively demonstrated and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C60"
+    ],
+    "result": "Comprehensive taxonomic profiling of 148 mosquitoes identified 70 viral taxa (46 novel), with 77% of non-host reads classified and viral sequences dominating the microbiome (10.9 of 13 million assembled non-host reads).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 provide specific quantitative data on taxonomic classification and viral diversity that are internally consistent. The detection of 46 novel viruses (C27, C60) is supported by the stated <85% amino acid identity threshold. However, the novelty threshold and completeness criteria for viral genomes could be more explicitly justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Non-viral microbiome analysis revealed Trypanosomatidae as the dominant eukaryotic taxon (0.45M reads, 8% prevalence), Wolbachia as the dominant prokaryote (0.22M reads), and low prevalence of Apicomplexa and Nematoda, with 4.7M reads remaining as unclassified 'dark matter'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 provide consistent quantitative data on microbial composition with specific read counts and prevalence percentages. The detection of known mosquito-associated taxa (Wolbachia in expected species, C30, C37) provides internal validation. The large 'dark matter' fraction (C31) is honestly reported and represents a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C59"
+    ],
+    "result": "Single-mosquito analysis revealed high viral co-infection rates (88% harboring \u22652 viruses, median 3) and demonstrated that viral abundance does not predict prevalence, with prevalence ranging from 1/148 to 36/36 mosquitoes depending on virus-host combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 provide specific quantitative evidence for co-infection patterns and the abundance-prevalence disconnect. The example in C36 (30% vs 90% prevalence despite similar abundance) directly demonstrates the value of individual sequencing. C59 provides the full range of prevalence values. This is a key advantage of the single-mosquito approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C63"
+    ],
+    "result": "Blood meal source identification succeeded in 45/60 blood-engorged mosquitoes, with taxonomic assignments to five broad categories and species-level identification in 10 cases. Statistical analysis revealed significant association between Pecora blood meals and Anaplasma detection (p=0.0005, Bonferroni corrected, 11/20 samples).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 provide clear quantitative results with appropriate statistical testing (Bonferroni correction for multiple comparisons). The 75% success rate (C63) is reasonable given RNA degradation challenges. The Anaplasma-Pecora association (C41-C42) is the only statistically significant finding and is biologically plausible given tick-borne transmission to deer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C56",
+      "C57"
+    ],
+    "result": "Co-occurrence analysis across individual mosquitoes identified 27 candidate complete genomes for segmented viruses, including 75 non-RdRp segments (60 with recognizable homology, 15 novel). This established that quaranjaviruses possess 8-segment genomes, with 2 additional segments identified for WMV6 and 5 for GMQV1, validated through external datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 describe a systematic co-occurrence approach with clear quantitative results. The validation using external datasets (C50) strengthens confidence in the novel segments. The 80% co-occurrence threshold is reasonable but somewhat arbitrary. The inference that quaranjaviruses have 8 segments (C56) is supported by phylogenetic evidence and comparison to influenza viruses. Recovery of 7% of 'dark matter' (C57) demonstrates method utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Co-occurrence analysis identified a novel second segment for Culex narnavirus 1, present in >40 mosquitoes, sharing the unusual ambigrammatic ORF structure with the RdRp segment. Lack of co-occurrence with non-mosquito eukaryotes suggests mosquitoes are direct hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide strong evidence for the novel segment through co-occurrence (>40 samples), shared structural features (ambigrammatic ORFs, C52), and validation in external datasets (C53). The inference that mosquitoes are direct hosts (C55) is supported by negative evidence (C54) but remains somewhat speculative without experimental validation of infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C13",
+      "C14"
+    ],
+    "result": "Wolbachia was detected in 32 mosquitoes of three species (Culex quinquefasciatus, Culex pipiens, Aedes albopictus), consistent with known natural infections and prior experimental demonstrations of viral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 provides specific detection data that aligns with established knowledge (C13-C14 cite prior work). However, the study does not establish new findings about Wolbachia's effects on viral composition due to limited sample structure (all or nearly all individuals infected within species), as acknowledged in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Known mosquito-borne human pathogens circulating in California (West Nile Virus, St. Louis Encephalitis Virus, Western Equine Encephalitis Virus) were not detected, while 10/24 previously described viruses matched those from recent California studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 accurately report negative and positive findings. The absence of major arboviruses (C61) is explained by low circulation during the sampling period (acknowledged in manuscript with reference to surveillance data). The overlap with prior California studies (C62) provides validation of the method's ability to detect known viruses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Mosquitoes are established vectors carrying >20 human-pathogenic agents, causing >500,000 deaths annually, with habitat expansion predicted over the next 2-3 decades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12 establish background context supported by appropriate citations (WHO 2017, GBD 2017 studies, Huestis et al. 2019, Kraemer et al. 2019). These are well-established facts from prior work, not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior bulk metagenomic studies have expanded understanding of mosquito viral diversity but lack key epidemiological information including viral prevalence, reservoir sources, and microbe interactions, which require single-mosquito analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 accurately characterize prior work (C15 cites multiple studies) and identify limitations (C16) that motivate the single-mosquito approach (C17). This represents a logical inference about methodological requirements rather than an empirical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C64"
+    ],
+    "result": "Single-mosquito metatranscriptomic sequencing provides a comprehensive approach to simultaneously identify mosquito species, quantify microbe prevalence, detect co-infections, associate pathogens with blood meal sources, and discover novel viral genome segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6-C8, and C64 represent the overarching conclusions of the study, supported by the specific results detailed in other claim groups. Each capability (speciation, prevalence, blood meal association, co-occurrence analysis) is demonstrated by the data. This is the primary methodological contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "148 mosquitoes representing Aedes, Culex, and Culiseta genera were collected from five California counties in late fall 2017, with sampling targeted across diverse habitats and enriched for female mosquitoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 describe the study design and sampling strategy, which is straightforward and well-documented. The focus on female mosquitoes (C20) is justified by their role in disease transmission. This represents standard methodological reporting.",
+    "result_type": "MINOR"
+  }
+]

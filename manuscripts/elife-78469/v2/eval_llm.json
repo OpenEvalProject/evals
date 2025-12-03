@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C129"
+    ],
+    "result": "The study analyzed a retrospective cohort of 123 patient-parent trios with suspected sporadic IEI who underwent trio-based WES. The cohort had a median age of 9 years, with two-thirds under 18, roughly equal sex distribution, and most cases presenting with autoinflammatory syndromes, immune dysregulation, or combined immunodeficiencies. The in silico IEI gene panel encompassed 456 genes, and sequencing achieved an average median coverage of 124x with 96% target coverage >20x.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C34, and C129 provide comprehensive cohort characteristics and methodology. The demographic data, inclusion criteria, sequencing quality metrics, and phenotypic distribution are clearly documented and internally consistent, supporting the validity of the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Routine diagnostic WES analysis identified potential disease-causing variants in 36 patients (29.3%), including 12 patients (9.8%) with (likely) pathogenic SNVs in known IEI genes and 3 patients with de novo CNVs. One patient with Muckle-Wells syndrome carried a pathogenic de novo NLRP3 variant (p.Thr350Met). Overall, 18 patients (14.6%) received a likely molecular diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C45 describe the diagnostic yield from routine WES analysis with specific numbers and classifications. The identification of the pathogenic NLRP3 variant is supported by prior literature (C43) and ACMG classification guidelines (C44), providing strong evidence for these diagnostic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C143",
+      "C144"
+    ],
+    "result": "Systematic DNV analysis identified 172 candidate DNVs (148 absent from GnomAD), of which 124 were non-synonymous. The average of 1.4 DNVs per patient in coding regions is comparable to other studies, indicating no enrichment or depletion in IEI patients. After systematic evaluation, 14 candidate DNVs in genes with immune function were selected, found in patients with different IEI phenotypes including antibody deficiency, autoinflammatory disorders, and bone marrow failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C54, C143-C144 describe the systematic DNV filtering and evaluation process with specific numbers and comparisons to literature. The rate of DNVs per patient is consistent with expected biological rates (C11-C12), and the filtering strategy is clearly documented in Figure 1, supporting the validity of the systematic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C130",
+      "C131",
+      "C141",
+      "C142"
+    ],
+    "result": "A DNV in RELA (NM_021975.3:c.959-1G>A) was identified in a patient with mucocutaneous ulceration. The variant affects the canonical splice acceptor site preceding exon 10, predicted to cause a frameshift and RelA haploinsufficiency. RELA encodes the NF-\u03baB subunit p65, and heterozygous loss-of-function mutations have been previously reported in chronic mucocutaneous ulceration. The variant was classified as pathogenic based on matching phenotype and similar mutational mechanism to prior cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C59, C130-C131, C141-C142 provide strong evidence for the RELA variant's pathogenicity through: (1) predicted splice site disruption (C56), (2) known protein function in NF-\u03baB signaling (C58), (3) prior reports of similar variants causing matching phenotypes (C141-C142), and (4) ACMG classification as pathogenic (C130). The convergence of computational prediction, functional knowledge, and literature support validates this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "A de novo missense variant in PSMB10 (p.Gly201Arg) was found in a patient with Omenn syndrome, SCID, and ectodermal dysplasia. The variant was predicted pathogenic and the genomic location was spanned by partial somatic UPD16. PSMB10 encodes the \u03b22i-subunit of the immuno- and thymoproteasome, and loss-of-function mutations have been associated with severe immunological defects in humans and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C65, C132-C136 present a candidate DNV with supporting evidence from in silico predictions (C62), known protein function (C64-C65), and literature on similar variants (C132-C136). However, the functional consequence remains unconfirmed (acknowledged in C122), and the presence of somatic UPD16 (C63) complicates interpretation. While the evidence is suggestive, definitive validation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A frameshift DNV in DDX1 was identified in a patient with CVID, B cell maturation defect, autoimmune cytopenia, and recurrent infections. The variant was predicted to cause loss of protein function. DDX1 encodes an RNA helicase involved in NF-\u03baB pathway activation, type I interferon responses, and hematopoietic stem cell homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C69 describe a candidate DNV with predicted loss-of-function (C67) in a gene with relevant immune functions (C68-C69). However, the causal genotype-phenotype relationship remains unclear (acknowledged in the manuscript), and no functional validation was performed (C122). The evidence is suggestive but insufficient for definitive pathogenicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C71",
+      "C137",
+      "C138"
+    ],
+    "result": "A frameshift DNV in KMT2C was identified in a patient with syndromal combined immunodeficiency, recurrent infections, developmental delay, and facial dysmorphism. The variant was predicted to cause loss-of-function of the histone methyltransferase KMT2C. Previous reports of KMT2C mutations in Kleefstra syndrome type 2 included patients with recurrent respiratory infections, and immunological symptoms are increasingly recognized in patients with chromatin-regulating gene mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C71, C137-C138 present a candidate DNV with predicted loss-of-function (C71) and partial phenotypic overlap with previously reported cases (C137). However, the connection between KMT2C mutations and immunodeficiency is not well-established, and no functional validation was performed (C122). The evidence suggests a possible association but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C139",
+      "C140",
+      "C126"
+    ],
+    "result": "A DNV in FBXW11 (NM_012300.2:c.1468-2A>G) was identified in a patient with autoinflammatory disorder characterized by recurrent fever and headaches. The variant affects the canonical splice acceptor site preceding exon 12, leading to confirmed exon skipping and a shortened transcript. Functional validation in patient PBMCs demonstrated increased NF-\u03baB p65 phosphorylation in monocytes and CD8+ T cells, and elevated IL-1\u03b2 production after stimulation with pathogens and TLR ligands. FBXW11 encodes TrCP2, a component of the SCF E3 ubiquitin ligase complex involved in NF-\u03baB regulation through I\u03baB\u03b1 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C10, C72-C82, C126, C139-C140 provide comprehensive evidence for FBXW11 pathogenicity through: (1) confirmed RNA splicing defect (C77), (2) demonstrated increased NF-\u03baB signaling (C7, C80-C81), (3) elevated IL-1\u03b2 production (C8, C81), and (4) known protein function in NF-\u03baB regulation (C73-C74). The functional validation experiments directly support the predicted molecular mechanism, though the n=1 comparison to a single control (acknowledged in the manuscript) limits generalizability. The convergence of molecular, cellular, and functional evidence strongly supports pathogenicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C100",
+      "C101",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors advocate for implementation of trio-based sequencing in routine diagnostics of patients with sporadic IEI, based on the findings of this study and evidence from other rare disease fields. They recommend exome-wide analysis for cases with negative diagnostic results but strong clinical suspicion. With decreasing sequencing costs, this approach could improve diagnostic rates and advance IEI gene discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C100-C101, C127-C128 present recommendations supported by: (1) the study's identification of pathogenic DNVs (C3-C5), (2) functional validation of FBXW11 (C6-C8), (3) comparison to other cohort studies (C85-C90), and (4) evidence from neurodevelopmental disorders (C19, C92). The recommendations are appropriately qualified and acknowledge the study's limitations (C115-C122).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Two previous cohort studies systematically performed trio-based sequencing in IEI patients. Stray-Pedersen et al. reported 44% diagnostic rate with trio-based sequencing vs 36% with single WES in 278 families including 39 trios. Simon et al. reported 70% diagnostic rate in 106 patients (26 trios) with consanguineous background, but concluded trio-based sequencing does not provide additional benefit in predominantly consanguineous cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 accurately summarize prior literature with appropriate citations. The critical interpretation of Simon et al.'s conclusion (C90) is reasonable given the consanguineous background (62.2%) which would favor autosomal recessive inheritance over de novo variants. This contextualizes the current study's findings appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on de novo variants: Humans develop 50-100 de novo SNVs per generation, with 1-2 affecting coding regions. DNVs are rare, have higher a priori pathogenicity than inherited variants, and are subjected to minimal evolutionary selection pressure. DNVs constitute up to 50% of disease-causing mutations in developmental disorders, but their contribution to IEI is less clear. DNVs are particularly relevant in early-onset, severe IEI phenotypes and autoinflammatory diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C24 provide well-supported background information with appropriate citations to established literature. The biological rates (C11-C12), properties of DNVs (C13-C16), and their role in developmental disorders (C19) are well-documented. The comparison to IEI (C20-C24) appropriately sets up the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Multiple studies support the benefits of trio-based sequencing in IEI patients, particularly for sporadic, severe phenotypes. Trio-based sequencing provides unbiased identification of rare DNVs, improves variant prioritization, enables detection of somatic variants, and provides direct segregation of inherited variants. In this study, no candidate DNVs with VAF <20% were found in established IEI genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 describe methodological advantages of trio-based sequencing supported by citations (C91-C92, C96) and logical reasoning (C93-C94, C99). The technical explanation of somatic variant detection (C95-C97) is sound, and the study's finding of no low-VAF DNVs in known IEI genes (C98) is clearly stated. These claims appropriately contextualize the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The proportion of DNVs among IEI patients (6-14%) is modest compared to neurodevelopmental disorders (>80%), but this may reflect less experience with DNV assessment in IEI. There is a bias toward autosomal recessive disease genes in IEI, though autosomal dominant genes are increasingly discovered. DNVs are most likely in early-onset, severe phenotypes (CIDs with syndromic features, autoinflammatory syndromes) where genes have high intolerance for loss-of-function mutations and act through haploinsufficiency, dominant-negative, or hemizygous mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C114 provide appropriate context for interpreting the study's findings, with citations supporting the comparison to neurodevelopmental disorders (C102, C104), the shift toward dominant inheritance (C105), and specific examples of DNV mechanisms (C110-C111, C113). The reasoning about which patient groups would benefit most from trio-based sequencing (C107) is logical and supported by the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Study limitations include: small sample size precluding reliable DNV prevalence estimation, relatively low diagnostic yield (17.9% with variants, 8.1% definitive diagnoses) compared to other studies (10-79%), patient selection including cases with limited a priori IEI probability, relatively high percentage of syndromal CIDs and autoinflammatory syndromes affecting generalizability, and lack of functional validation for most candidate DNVs. Candidate DNVs were shared on GeneMatcher to facilitate future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C124 provide transparent acknowledgment of study limitations. The explanations for low diagnostic yield (C119-C121) are reasonable, including patient selection criteria (C120) and focus on DNVs (C119). The recommendation for functional validation (C123) and use of GeneMatcher (C124) demonstrate appropriate scientific rigor. These limitations are important for interpreting the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C26"
+    ],
+    "result": "DNVs are currently not routinely evaluated as part of diagnostic WES analysis in patients with suspected IEI, and trio-based sequencing has not yet been implemented as part of routine diagnostic procedures for IEI patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C26 state the current practice gap that motivates the study. While these are assertions about clinical practice rather than research findings, they are consistent with the literature review (C21, C25-C26) and provide appropriate context for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "An international cohort study reported a diagnosis in 44% of cases after patient-parent trio sequencing, compared to 36% by single whole exome sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 accurately cites the Stray-Pedersen et al. study, which is further detailed in C85-C87. This provides important context for the potential value of trio-based sequencing in IEI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The exact mutational mechanism explaining the different phenotype of the FBXW11 variant (autoinflammatory vs neurodevelopmental) compared to previous cases remains unclear. The most likely explanation is a differential effect on specific SCF complex functions that could be cell-type dependent, since the DNV affects all three high-quality protein-coding transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 appropriately acknowledge uncertainty about the mechanism underlying phenotypic differences while providing a reasonable hypothesis. The speculation is appropriately qualified and supported by transcript data (C140). This demonstrates scientific rigor in distinguishing established findings from hypotheses.",
+    "result_type": "MINOR"
+  }
+]

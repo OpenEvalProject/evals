@@ -1,0 +1,2076 @@
+{
+  "submission": {
+    "id": "48946e4c-b3fb-4b83-a424-f7befddea721",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:05:14.890155Z",
+    "updated_at": "2025-12-03T17:05:14.890155Z"
+  },
+  "content": [
+    {
+      "id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "submission_id": "48946e4c-b3fb-4b83-a424-f7befddea721",
+      "content_type": "manuscript",
+      "content_text": "# T cell receptor convergence is an indicator of antigen-specific T cell response in cancer immunotherapies\n\n## Authors\n\n- Mingyao Pan<sup>1</sup> ([ORCID: 0000-0003-2912-9599](https://orcid.org/0000-0003-2912-9599))\n- Bo Li<sup>1</sup> ([ORCID: 0000-0002-8617-900X](https://orcid.org/0000-0002-8617-900X)) \u2020\n\n### Affiliations\n\n1. Lyda Hill Department of Bioinformatics, The University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))\n\n\u2020 Corresponding author\n\n## Abstract\n\nT cells are potent at eliminating pathogens and playing a crucial role in the adaptive immune response. T cell receptor (TCR) convergence describes T cells that share identical TCRs with the same amino acid sequences but have different DNA sequences due to codon degeneracy. We conducted a systematic investigation of TCR convergence using single-cell immune profiling and bulk TCR\u03b2-sequence (TCR-seq) data obtained from both mouse and human samples and uncovered a strong link between antigen-specificity and convergence. This association was stronger than T cell expansion, a putative indicator of antigen-specific T cells. By using flow-sorted tetramer+ single T cell data, we discovered that convergent T cells were enriched for a neoantigen-specific CD8+ effector phenotype in the tumor microenvironment. Moreover, TCR convergence demonstrated better prediction accuracy for immunotherapy response than the existing TCR repertoire indexes. In conclusion, convergent T cells are likely to be antigen-specific and might be a novel prognostic biomarker for anti-cancer immunotherapy.\n\n## Introduction\n\nT lymphocytes, or T cells, are one of the most important components of the adaptive immune system. T cell receptors (TCRs) are protein complexes found on the surface of T cells that can specifically recognize antigens (Marrack and Kappler, 1987; Davis and Bjorkman, 1988). Through the combinational somatic rearrangement of multiple variable (V), diversity (D) (only for \u03b2 chains), joining (J), and constant (C) gene segments, theoretically, the diversity of unique TCR \u03b1 and \u03b2 chains pairs can reach to 2\u00d71019 (Pai and Satpathy, 2021). Having such a wide variety of TCRs allows the recognition of numerous endogenous and exogenous antigens. However, due to codon degeneracy, which means multiple codons can encode the same amino acid (AA; Trainor et al., 1984), different V(D)J rearrangements can end up encoding the same TCR proteins, and this phenomenon is called TCR convergence (Looney et al., 2019). TCR convergence can be observed universally in almost every individual, but very few studies have been conducted to explain its biological significance.\n\nWhile little is known about the functional impact of TCR convergence, codon degeneracy has been widely studied (Gonzalez et al., 2019; McClellan, 2000). The fact that the number of three-nucleotides codons (64) exceeds the number of encoding AAs (20) provides the basis of codon degeneracy. The distribution of degeneracy among the 20 encoding AAs is uneven. Arginine, leucine, and serine are among the AAs with six corresponding codons, while others have one to four codons (Crick et al., 1961), and the origin of codon degeneracy remains the subject of debate. Some believe that codon degeneracy is the result of co-evolution in which codon assignment occurred by organisms inheriting parts of the codon set from precursor AAs (Wong, 1975). Some have tried to explain it through stereochemical interaction, where stereochemical specificity enables codons to selectively bind to assigned AAs (Copley et al., 2005). There are also other theories pertaining to this topic (Crick et al., 1961; Di Giulio, 2004; Koonin and Novozhilov, 2009). Apart from its elusive origins, the biological significance of codon degeneracy also varies in different scenarios. In the context of T cell immunity, the T cell repertoire not only results from somatic recombination but also is shaped by multiple selective pressures (Jameson and Bevan, 1998). Therefore, it is possible that TCR convergence is more than the mere consequence of codon degeneracy. It may provide unique insights into the antigen-driven TCR selection process.\n\nT cells can be activated by their cognate antigens through the binding of the TCR to the peptide/MHC complex (Smith-Garvin et al., 2009). Hence, antigen-specific T cells are crucial parts of the T cell \u2018army\u2019 and play dominant roles in eliminating pathogens or tumor cells. There is an increasing number of immunotherapies based on antigen-specific T cells, such as immune checkpoint blockade (ICB) or neoantigen vaccine therapies (Postow et al., 2015a; Peng et al., 2019), which further emphasize the necessity to study T cell antigen specificity. However, the enormous diversity of epitopes targeted by T cells and the highly polymorphic nature of MHC make it extremely challenging to identify the specificity of given T cells (Newell and Davis, 2014). Several studies have attempted to predict antigen-specific T cell responses by utilizing TCR characteristics such as diversity, clonality, or evenness scores. While there were cases where these signals were associated with the patient\u2019s survival (Riaz et al., 2017; Tumeh et al., 2014), in most cases these signals did not correlate with the outcomes (Johnson et al., 2016; Robert et al., 2014; Amaria et al., 2018; Kidman et al., 2020). This could be attributed to the weak correlation between these parameters and the antigen selection process. Here, we speculate that TCR convergence is a better indicator of antigen-driven selection. This is because, compared with a non-convergent TCR, a convergent TCR consumes more rearrangement resources, and the principle of parsimony (Stewart, 1993) implies a greater impact on the adaptive immune response for these convergent TCRs.\n\nTCRs with similar CDR3 sequences shared similar binding structures and antigen specificity (Dash et al., 2017). This idea has led to several TCR similarity-based clustering algorithms, such as ALICE (Pogorelyy et al., 2019), TCRdist (Dash et al., 2017), GLIPH2 (Huang et al., 2020), iSMART (Zhang et al., 2020), and GIANA (Zhang et al., 2021), for studying antigen-driven T cell expansion during viral infection or tumorigenesis. While TCR convergence seems like a special case of similarity-based TCR clustering, it is conceptually different. By default, around 90% of the resulting TCR clusters by most previous algorithms are antigen-specific, while the ratio of some, like GLIPH2, is substantially lower (around 35%) (Zhang et al., 2021). Nevertheless, the fact that T cells within each convergent cluster share identical CDR3\u03b2 AA sequence more likely represents shared antigen specificity compared to those with mismatches (Dash et al., 2017). The exploit of multiple nucleotide combinations for the same antigen specificity can potentially be a functional redundancy of adaptive immunity and reveal novel TCR selection process.\n\nOver the last few years, high-throughput bulk TCR\u03b2-sequencing (bulk TCR-seq) and single-cell immune profiling have become powerful tools for unraveling a variety of biological problems (Liu et al., 2022; Zheng et al., 2017). Previously generated datasets are excellent resources for re-analysis. Utilizing 3 single-cell immune profiling and 11 bulk TCR-seq datasets, we conducted a comprehensive analysis of TCR convergence. We began by investigating the basic features of convergent TCRs, including their degeneracies, publicity, and AA usage. Next, we explored the correlation between convergent and antigen-specific TCRs from different perspectives. Significant overlaps were found between convergent T cells and antigen-specific T cells across independent datasets. We proceeded to examine the phenotypes of convergent T cells in both mouse and human samples. As a result, convergent T cells exhibited gene signatures associated with cytotoxicity, memory, and exhaustion, related to antigen-specific T cells. Finally, we found that TCR convergence predicts improved clinical outcomes for cancer patients who received ICB therapies. Our work presents a new angle to study T cell repertoire and deepens our understanding of antigen-specific T cell selection.\n\n## Results\n\n### TCR convergence is different from publicity\n\nWe defined the convergent TCRs as above described (Figure 1A) and analyzed their basic characteristics, including the degeneracies of the TCRs, sequence lengths, variable gene usage, and AA components using a bulk TCR dataset containing 666 blood samples from healthy donors (Emerson et al., 2017). Before analysis, quality control (QC) was performed to exclude CDR3 reads that did not meet the following two standards: (1) between 8 and 23 AAs in length; and (2) starting with cysteine and ending with phenylalanine. We randomly selected 50 samples, with a total of 9,567,751 that passing QC unique TCR used in the following analysis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81952/elife-81952-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon illustration of TCR convergence, created with BioRender.com. T cells with different DNA sequences encode the same TCR due to codon degeneracy. (B) Log10-transformed counts of TCRs with different degrees of degeneracies. The x-axis indicates the number of distinct DNA sequences corresponding to the same TCR, or, the \u2018degree of degeneracy\u2019. \u2018D1\u2019 refers to the sequences without any degeneracy. (C) The proportion of 20 amino acids in TCRs with degeneracies from one to four. Each of the 20 natural amino acids is represented on the x-axis by a one-letter abbreviation. (D) Tumor mutation burden (TMB) and the proportion of public TCRs in convergent TCRs among different cancer types. The upper panel shows the TMB of ovary, kidney, lung, melanoma, and blood cancer types. Cancer types are ordered from the lowest median TMB (left) to the highest median TMB (right). Lower panel shows the ratio of public TCRs among convergent TCRs in the respective cancer types. The sample size of each group: recovered COVID-19 patients (n=38), healthy control (n=50), ovary (n=45), kidney (n=19), lung (n=50), melanomas (n=29), blood (n=53). The statistical significance was calculated by Welch\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81952/elife-81952-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The proportion of convergent TCRs among TCRs of a certain length. The x-axis represents the amino acid length of TCR CDR3. Each dot indicates one sample. (B) The length distribution of all unique TCR CDR3 reads. (C) The average degeneracy of convergent TCRs with different CDR3 lengths. (D) The proportion of convergent TCRs among TCRs with a certain variable gene. The x-axis refers to the TCR\u03b2 chain variable gene (TCRBV) superfamily. (E) The average degeneracy of convergent TCRs with different variable gene usages.\n\nWe defined the degeneracy of a TCR protein as the number of distinct clonotypes (defined by DNA sequences) encoding that TCR within one sample. In other words, a degeneracy equal to 1 means non-convergent TCRs, while greater than 1 indicates convergent TCRs. As expected, convergent TCRs only comprised a small proportion (5.40%) of the total T cell population (Figure 1B). As TCR degeneracy increased from two to four, the number of detected TCRs decreased approximately 10-fold with each unit increase in degeneracy. Most convergent TCRs had a degeneracy of two (90.65%) or three (7.16%), while larger degeneracies were rare.\n\nWe studied the length distribution of the convergent TCR CDR3 regions, which peaked at 11 AAs (Figure 1\u2014figure supplement 1A). While TCRs with 14\u201315 AA made up the greatest percentage of all the unique TCRs (Figure 1\u2014figure supplement 1B), the proportion of convergent TCRs continually decreased after reaching 11 AA or longer. This result suggested that shorter TCR sequences appeared to be more conducive to TCR convergence. In terms of the correlation between TCR degeneracy and CDR3 lengths, CDR3s of 9 AA long displayed the greatest degeneracy on average (~2.5) (Figure 1\u2014figure supplement 1C). From 11 AAs onward, the longer the sequences, the smaller the degeneracy. After reaching 17 AAs, the degeneracy remained constant. This is an unexpected observation, as the probability of the occurrence of codon degeneracy should increase with longer sequence lengths. We also analyzed the variable gene usage of convergent TCRs and observed that the usage of every TCR\u03b2 chain variable gene superfamily was relatively even (Figure 1\u2014figure supplement 1D). TCR degeneracy was not significantly impacted by variable gene usage either (Figure 1\u2014figure supplement 1E).\n\nWe further interrogated the average percentage of a given AA in TCRs with degeneracy from one to four. The first and last three AAs in the CDR3 sequences were not included since they are determined by the types of V or J genes. The result showed that, generally, convergent TCR favors polar neutral AAs and acidic AAs, particularly tyrosine (Y), serine (S), and glutamic acid (E), with alkaline AAs and nonpolar hydrophobic AA less favorable (Figure 1C). Arginine (R), leucine (L), and serine (S), each of which has six corresponding codons, have the largest codon degeneracy. However, leucine and arginine did not show the same level of relevance to TCR convergence as serine. While the ratio of leucine slightly increased in convergent TCR, the percentage of arginine even decreased as the TCR degeneracy increased. Tyrosine and glutamic acid, on the other hand, have only two codons each but were found in a higher percentage of convergent TCRs than non-convergent TCRs. The possibility of each above-mentioned AA (L, Y, S, E, R) in each degree of TCR degeneracy has been validated by two-sided binomial exact tests with p-values less than 2.2\u00d710\u201316 (except for the difference between \u2018D2\u2019 and \u2018D1\u2019 for leucine, whose p-value is 7.018\u00d710\u20137). These results indicate that the level of codon degeneracy is not a determinant of TCR degeneracy. Instead, the physiochemical properties of a given AA might have a greater impact on TCR convergence. Therefore, even though TCR convergence is the result of codon degeneracy, it exhibits an independent distribution and may carry a biological significance that is distinct from codon degeneracy.\n\nPublic TCRs are generated from VDJ recombination biases and are shared across different individuals, which might target common antigens, such as viral epitopes (Emerson et al., 2017). In contrast, TCRs targeting cancer neoantigens are mostly \u2018private\u2019 that are unique to each individual (Madi et al., 2014). Healthy individuals are expected to be exposed to common pathogens, which might induce public T cell responses. On the other hand, cancer patients have more neoantigens due to the accumulative mutation, which drives their antigen-specific T cells to recognize these \u2018private\u2019 antigens. This reduces the proportion of public TCRs in antigen-specific TCRs. A higher tumor mutation burden (TMB) would indicate a higher abundance of neoantigens, resulting in a lower ratio of public TCRs. Convergent recombination was claimed to be the mechanistic basis for public TCR response in many previous studies (Quigley et al., 2010; Venturi et al., 2006). As TCR convergence and publicity are conceptually similar, we next investigated the differences between the two by comparing the fractions of public TCRs within the convergent TCRs from healthy donors and patients with different cancers (Figure 1D). As expected, we observed a high overlap (47.92%) between the two in healthy donors as well as in another independent cohort consisting of patients who recovered from COVID-19 for more than 6 weeks (47.44%). Whereas for the cancer patients, the overlap between TCR convergence and publicity decreases for cancer types with higher TMB, which was estimated from previous studies (Yarchoan et al., 2019). The fraction of public TCRs within the convergence sequences dropped from 34.11% for the low mutation burden ovarian cancer to 21.34% for the highly mutated blood cancer samples. As the public TCRs in these cohorts are consistently defined by the Emerson 2017 cohort (Emerson et al., 2017), this difference is unlikely caused by unknown batch effects. Together, our results indicated that TCR convergence and publicity represent two different biological processes that diverge in cancer patients by tumor mutation load.\n\n### Convergent TCRs are more likely to be antigen-specific\n\nTo explore the relationship between convergent T cells and antigen-specific T cells, we began by examining datasets with known TCR antigen specificity. To be precise, since all the T cells are specific to some antigen(s) during positive thymic selection, the term \u2018antigen-specific\u2019 means T cells with an ongoing or memory antigen-specific immune response in this context. In 2020, 10\u00d7 Genomics detected the antigen specificity of T cells using highly multiplexed peptide-MHC multimers (10xGenomics, 2020) from peripheral blood mononuclear cells (PBMCs) samples of four healthy individuals. We picked out all convergent TCRs within each donor and examined their overlaps with antigen-specific multimer+ TCRs. Interestingly, while convergent TCRs only consisted of a small proportion of all unique clones, they were dominantly enriched for antigen-specific TCRs (Figure 2A). In these four donors, only 12.91, 33.32, 71.65, and 6.24% of the unique TCRs were multimer positive, respectively. However, 88.00, 88.28, 93.10, and 22.22% of convergent TCRs were antigen-specific, suggesting that convergent TCRs were much more likely to be antigen-specific than their non-convergent counterpart. We next estimated the statistical significance of this observation for each donor using Fisher\u2019s exact test (Blevins and McDonald, 1985 Figure 2B). The odds ratio for donor 1 reached 50.16, indicating that convergent TCRs are much more likely to be antigen-specific. Similar conclusions also held for donors 2 and 3, while the p-value (0.105) of donor 4 was less significant. Considering the small percentage of antigen-specific T cells detected in donor 4, it is possible that most antigens specific to donor 4\u2019s T cells did not fall within the spectrum of tested antigens in this experiment, which caused the lower overlap. Overall, the findings from this dataset supported the hypothesis that convergent T cells are more likely to be antigen-specific than other T cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81952/elife-81952-fig2-v2.jpg)\n\n**Figure 2.:** (A) The overlaps between all unique TCRs, viral antigen-specific TCRs, and convergent TCRs of four donors, respectively. (B) The results of Fisher\u2019s exact tests regarding the association of convergent TCRs and viral antigen-specific TCRs of four donors. (C) Log10-scaled odds ratio of TCR convergence and expansion with respect to antigen-specificity of each sample. The samples were sorted in order of TCR convergence odds ratio from small to large. The horizontal stripes on the left represent the density of samples, colored by the TCR signal. (D) The difference of log10-transformed odds ratio between TCR convergence and TCR expansion. The statistical significance was calculated by Welch\u2019s t-test.\n\nWe further tested this hypothesis using high-throughput bulk TCR\u03b2-seq data. TCR-seq data were downloaded from ImmuneAccess, containing TCR\u03b2 sequences from over 1400 subjects that had been exposed to or infected with the SARS-CoV-2 virus, along with over 160,000 SARS-CoV-2-specific TCRs (Snyder et al., 2020). Similarly, we calculated the odds ratio of convergent TCRs and SARS-CoV-2-specific TCRs using Fisher\u2019s exact test for each sample. In comparison, we also investigated the overlap between clonally expanded T cells and antigen-specific T cells in these datasets, as T cell clonal expansion is a commonly used criterion for antigen specificity in recent clinical studies (Kidman et al., 2020; Subudhi et al., 2016). In each sample, TCR sequences with the highest read numbers were selected as expanded TCRs, and their number was restricted to the same number as convergent TCRs. Overall, the odds ratio of convergent TCR was almost unanimously higher than that of the clonally expanded T cells (Figure 2C). The average odds ratio of TCR convergence was 8.94, significantly higher than TCR clonal expansion, which was only 1.74 (Figure 2D). These results confirmed that converged TCRs are more likely to be antigen-experienced, and indicated that TCR convergence is a better indicator of antigen specificity than clonal expansion.\n\n### Convergent T cells exhibit a CD8+ cytotoxic gene signature\n\nIn the next step, we studied the gene expression signatures of the convergent T cells using single-cell RNA sequencing (scRNA-seq) data in the tumor samples to test the hypothesis that convergence is associated with an antigen-experienced effector phenotype. In the tumor microenvironment, antigen-specific T cells typically express cytotoxicity, memory, and/or exhaustion gene signatures (Caushi et al., 2021; Oliveira et al., 2021). We, therefore, checked the phenotypes of convergent T cells using recent scRNA-seq data generated from cancer studies.\n\nThe first dataset we investigated contained tetramer-labeled neoantigen-specific T cells in the MC38 tumor mouse model treated with neoantigen vaccine and anti-PD-L1 (Liu et al., 2022). The CD4+ and CD8+ T cells were analyzed separately using the same cell cluster annotations as previously described (Liu et al., 2022). We then defined and analyzed the convergent TCRs using the scTCR-seq data of the same T cells. T cells collected at tumor sites exhibited a much higher level of convergence than T cells in lymph nodes and spleen. Therefore, in the following description, we specifically refer to tumoral T cells. Only 1.85% (n=90) of the 4878 passed-QC CD4+ cells had convergent TCRs (Figure 3\u2014figure supplement 1A), which were not enriched in any cluster. In contrast, 9143 CD8+ T cells passed the QC and 15.71% (n=1436) of them were convergent T cells (Figure 3A). Following this result, we noticed two interesting clusters: effector T cells with significant enrichment of convergent CD8+ T cells and na\u00efve T CD8+ cells with none of the T cells having a convergent TCR (Figure 3A). To further investigate these two clusters, we re-clustered the CD8+ cells with a higher resolution (0.3) and divided the T cells into five new clusters (Figure 3B). 87.5% (419 out of 479) of T cells from cluster 04 were convergent T cells, whereas none of the cluster 05 T cells (n=201) was convergent. Cluster 04 T cells expressed both effector and exhaustion markers, such as Tox (Bordon, 2019; Sekine et al., 2020), Tigit (Ostroumov et al., 2021), Eomes (Li et al., 2018), and inhibitory receptors like Il10ra (Al-Abbasi et al., 2018). On the other hand, cluster 05 mainly expressed na\u00efve T cell gene signatures (Al-Abbasi et al., 2018), such as Sell, Tcf7, and Ccr7 (Figure 3C), and down-regulated genes associated with effector function, like Gzmb, Lgals1 (Li et al., 2020), and T cell activation or exhaustion (Saleh et al., 2020), like Pdcd1 and Lag3 (Figure 3C). Finally, by comparing the TCRs of cluster 04, 05 T cells and tetramer-sorted T cells specific to tumor neoantigen Adpgk, we observed a significant enrichment of convergent TCRs for neoantigen specificity in cluster 04 (OR = 4.41, p<0.001), while no enrichment in cluster 05 (Figure 3\u2014figure supplement 1B). Based on these results, we concluded that convergent T cells are enriched for a neoantigen-activated effector phenotype in the tumor microenvironment.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81952/elife-81952-fig3-v2.jpg)\n\n**Figure 3.:** (A) t-Distributed stochastic neighbor embedding (t-SNE) plots showing cell type annotations and convergent T cell distribution of CD8+ T cells collected from mouse tumor tissues. (Each cell type corresponds to the following clusters in the original paper: T.na: CD8-04-Ccr7; T.eff: CD8-05-Fasl; T.rm: CD8-06-Xcl1; T.ex: CD8-08-Lag3; Liu et al., 2022) Each dot represents a T cell. The area within the red dashed line indicates enrichment of convergent T cells, and cells within the blue dashed line were naive T cells. (B) t-SNE displaying the re-cluster result of CD8+ T cells. The red dashed line and blue dashed line highlighted the same groups of cells as in A. (C) Volcano plots showing the differentially expressed genes of cluster 04 and cluster 05. The p-value was calculated by the Wilcoxon test. (D) t-SNE plots showing the cell clusters and convergent T cell distribution of CD8+ T cells collected from human tumors and normal adjacent tissues. An area within the red dashed line was enriched with convergent T cells, and the T cells within the blue dashed line were naive T cells. (E) The gene markers of cluster CD8-01-XCL1 and cluster CD8-05-FGFBP2 of human pan-cancer data. (Only the up-regulated genes of each cluster are shown).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81952/elife-81952-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Cell type annotations and convergent T cell distribution of CD4+ T cells collected from mouse tumor tissues. (Each cell type corresponds to the following clusters in the original paper: T.na: CD4-04-S1pr1; T.Treg: CD4-05-Ctla4; T.Th1: CD4-06-Bhlhe40; T.rTreg: CD4-07-Ccr5; Liu et al., 2022). (B) The results of Fisher\u2019s exact tests regarding the association of tetramer+ T cells with T cells from cluster 04 or cluster 05. (C) Cell clusters and convergent T cell distribution of CD4+ T cells collected from human tumors and normal adjacent tissues.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81952/elife-81952-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The different levels of convergent T cells in CD4+ and CD8+ T cells. The samples (n=17) were collected from baseline cHL patients. Each dot represents one sample. The statistical significance is calculated by Welch\u2019s t-test. (B) The different levels of convergent T cells in CD4+ and CD8+ T cells. The samples (n=16) were collected from cHL patients on day 1 of anti-PD1 treatment cycle 4. Each dot represents one sample. The statistical significance is calculated by Welch\u2019s t-test. (C) The proportion of convergent T cell clones among all CD4+ and CD8+ T cell clones of baseline cHL patients. Each dot represents one sample. The statistical significance is calculated by Welch\u2019s t-test. (D) The proportion of convergent T cell clones among all CD4+ and CD8+ T cell clones of anti-PD1 PreCycle4 cHL patients. Each dot represents one sample. The statistical significance is calculated by Welch\u2019s t-test.\n\nTo verify this observation in humans, we analyzed the second dataset of pan-cancer scRNA-seq data of nine cancer types (Zheng et al., 2021). There were samples collected from tumor tissues, normal adjacent tissues, and peripheral blood from human patients. 14 CD4+ clusters and 15 CD8+ clusters were defined using the Seurat R package, and the cluster annotations were assigned by the gene markers of each cluster shown in Supplementary file 2. Similar to the mouse data, convergent T cells were rare in CD4+ T cells (n=52,643), accounting for 0.22% (n=118) of the CD4+ population (Figure 3\u2014figure supplement 1C), whereas 10.15% (n=7,065) of the CD8+ T cells (n=69,618) were convergent (Figure 3D). Convergent T cells were enriched in clusters CD8-01-XCL1 and CD8-05-FGFBP2, yet remained at low levels in the na\u00efve clusters, CD8-09-IL7R and CD8-13-CCR7 (1.27 and 0.00%) (Table 1, the odds ratio and p-value were calculated by Fisher exact\u2019s test). CD8-01-XCL1 cluster expressed gene signatures of activated T cells, including Il7r (Seddiki et al., 2006), ZFP36L2 (Petkau et al., 2021), XCL1 (Ordway et al., 2007), and CXCR6 (Wang et al., 2021; Figure 3E), as well as proliferation and mobility markers LDLRAD4 (Liu et al., 2017) and CAPG (Wei et al., 2020). CD8-05-FGFBP2 cluster exhibited a CD8+ effector phenotype, upregulating genes involved in cytotoxicity and anti-tumor activity: FGFBP2, GNLY, FCGR3A (Zheng et al., 2017), GZMH, PRF1, TGFBR3, and GZMB (Figure 3E). In conclusion, the phenotypes of convergent T cells in human samples resembled those discovered in the mouse model. Convergent T cells were consistently enriched in the activated CD8+ T cell clusters with the gene signatures of cytotoxicity, memory, and exhaustion which demonstrated the phenotypes of antigen-specific T cells.\n\n**Table 1.**\n The Fisher\u2019s exact test result of CD8+ clusters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Clusters</th>\n      <th colspan=\"3\">Normal adjacent tissues</th>\n      <th colspan=\"3\">Tumor tissues</th>\n    </tr>\n    <tr>\n      <th>Convergence ratio</th>\n      <th>Odds ratio</th>\n      <th>p-Value</th>\n      <th>Convergence ratio</th>\n      <th>Odds ratio</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CD8-01-XCL1</td>\n      <td>22.95%</td>\n      <td>5.07</td>\n      <td>&lt;2.2e\u221216</td>\n      <td>15.03%</td>\n      <td>5.66</td>\n      <td>&lt;2.2e\u221216</td>\n    </tr>\n    <tr>\n      <td>CD8-02-GZMK</td>\n      <td>2.59%</td>\n      <td>0.24</td>\n      <td>1</td>\n      <td>3.48%</td>\n      <td>0.85</td>\n      <td>0.9949</td>\n    </tr>\n    <tr>\n      <td>CD8-03-TIGIT</td>\n      <td>3.69%</td>\n      <td>0.37</td>\n      <td>1</td>\n      <td>2.12%</td>\n      <td>0.49</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>CD8-04-ZNF683</td>\n      <td>7.43%</td>\n      <td>0.79</td>\n      <td>0.9984</td>\n      <td>3.72%</td>\n      <td>1.62</td>\n      <td>&lt;2.2e\u221216</td>\n    </tr>\n    <tr>\n      <td>CD8-05-FGFBP2</td>\n      <td>32.44%</td>\n      <td>6.19</td>\n      <td>&lt;2.2e\u221216</td>\n      <td>26.69%</td>\n      <td>12.25</td>\n      <td>&lt;2.2e\u221216</td>\n    </tr>\n    <tr>\n      <td>CD8-06-IFNG</td>\n      <td>5.80%</td>\n      <td>0.59</td>\n      <td>1</td>\n      <td>8.71%</td>\n      <td>2.34</td>\n      <td>9.725E\u221215</td>\n    </tr>\n    <tr>\n      <td>CD8-07-IHSPA6</td>\n      <td>22.75%</td>\n      <td>3.93</td>\n      <td>&lt;2.2e\u221216</td>\n      <td>4.99%</td>\n      <td>1.27</td>\n      <td>0.004411</td>\n    </tr>\n    <tr>\n      <td>CD8-08-PRF1</td>\n      <td>4.84%</td>\n      <td>0.5</td>\n      <td>1</td>\n      <td>3.11%</td>\n      <td>0.77</td>\n      <td>0.9404</td>\n    </tr>\n    <tr>\n      <td>CD8-09-IL7R</td>\n      <td>1.02%</td>\n      <td>0.1</td>\n      <td>1</td>\n      <td>1.44%</td>\n      <td>0.35</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>CD8-10-IFI6</td>\n      <td>11.11%</td>\n      <td>1.23</td>\n      <td>0.2523</td>\n      <td>5.54%</td>\n      <td>1.42</td>\n      <td>0.0003609</td>\n    </tr>\n    <tr>\n      <td>CD8-11-STMN1</td>\n      <td>6.07%</td>\n      <td>0.64</td>\n      <td>0.9603</td>\n      <td>3.93%</td>\n      <td>0.98</td>\n      <td>0.5834</td>\n    </tr>\n    <tr>\n      <td>CD8-12-KLRB1</td>\n      <td>0.48%</td>\n      <td>0.03</td>\n      <td>1</td>\n      <td>0.13%</td>\n      <td>0.03</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>CD8-13-CCR7</td>\n      <td>0.00%</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0.00%</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>CD8-14-CXCR6</td>\n      <td>0.45%</td>\n      <td>0.01</td>\n      <td>1</td>\n      <td>5.00%</td>\n      <td>1.26</td>\n      <td>0.4325</td>\n    </tr>\n    <tr>\n      <td>CD8-15-CTLA4</td>\n      <td>0.00%</td>\n      <td>0</td>\n      <td>1</td>\n      <td>1.68%</td>\n      <td>0.41</td>\n      <td>0.2</td>\n    </tr>\n  </tbody>\n</table>\n\nTo validate the conclusion that TCR convergence was more prevalent in CD8+ T cells than in CD4+ T cells, we used another bulk TCR\u03b2 data collected from patients with classical Hodgkin lymphomas (cHLs) (Cader et al., 2020). As a result, CD8+ T cells consistently exhibited a higher level of TCR convergence throughout different collection time points (Figure 3\u2014figure supplement 2A\u20132B). This may be explained by larger cell expansions of CD8+ T cells than CD4+ T cells. Therefore, we calculated the number of convergent clones within CD8+ T cells and CD4+ T cells from the above datasets to exclude the effects of cell expansion. As a result, in the scRNA-seq mouse data, while only 1.54% of the CD4+ clones were convergent, 3.76% of the CD8+ clones showed convergence. Likewise, 0.17% of convergent CD4+ T cell clones and 1.03% of convergent CD8+ T cell clones were found in human scRNA-seq data. In the bulk TCR-seq cHLs data, similar results were also observed, where the gap between the convergent levels of CD4+ and CD8+ T cells narrowed but remained significant (Figure 3\u2014figure supplement 2C\u20132D). In conclusion, these results suggest that CD8+ T cells show higher levels of convergence than CD4+ T cells, which substantiated our hypothesis that convergent T cells are more likely antigen-experienced. This observation has been tested using multiple datasets with diverse sequencing platforms and sequencing depth to minimize the impact of batch or other technical artifacts.\n\n### TCR convergence is associated with the clinical outcome of ICB treatment\n\nICB has seen great success in treating late-stage cancer patients (Bagchi et al., 2021; Jenkins et al., 2018). While ICB treatment is effective for some patients, a significant proportion of patients remain unresponsive, and the reason for this is not completely understood. The discovery of a biomarker that can assist in the prognosis of immunotherapy remains one of the top clinical priorities. Since antigen-specific T cells play a crucial role in fighting tumor cells, we next investigated whether TCR convergence is predictive of the immunotherapy outcomes. We used bulk TCR\u03b2-seq data generated by Snyder et al., 2017, which included PBMC samples from 29 urothelial cancer patients collected on the first day of the anti-PD1 treatment. We observed a significant association between TCR convergence level and both the overall survival (OS) (p=0.02) and progression-free survival (PFS) (p=0.00038) (Figure 4A-B). In the low TCR convergence group, over 90% of the patients suffered from disease progression within 75 days after initial treatment, whereas only 27% of the patients in the high TCR convergence group experienced disease progression at this time point (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81952/elife-81952-fig4-v2.jpg)\n\n**Figure 4.:** (A) Kaplan-Meier overall survival curves of urothelial cancer patients (n=29) with different levels of convergent T cells. The convergence levels were defined by the number of convergent T cell clones within each sample. High, above median; low, below the median. For TCR convergence, all the survival analyses in this study followed this definition. The p-values of all the Kaplan-Meier curves in this study were calculated by log-rank test. (B) Progression-free survival curve of urothelial cancer patients (n=29) with different levels of convergent T cells. The progression of the tumor was determined by mRECIST 1.1 test. (C) Overall survival curves of melanoma patients (n=30) with different levels of convergent T cells. (D) The differences in the TCR convergence levels among patients with the distinct best overall response toward anti-PD1 immunotherapy. The number of patients with each best overall response (BOR) is as follows: complete response = CR (n=1), partial response = PR (n=9), progressive disease = PD (n=18), stable disease = SD (n=2). The statistical significance was calculated by Welch\u2019s t-test. (E) Cox model multivariate analysis for the overall survival of melanomas cohort with covariate adjustments for other four variables: TCR clonality, TCR diversity, treatment method, and sequencing depth. The sequencing depth was determined by the total number of detected TCR clonotypes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81952/elife-81952-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Cox model multivariate analysis for the overall survival with covariate adjustments for other three variables: T cell receptor (TCR) clonality, TCR diversity, and sequencing depth. The sequencing depth was determined by the total number of detected TCR clonotypes. (B) Cox model multivariate analysis for the progression-free survival with covariate adjustments for other three variables: TCR clonality, TCR diversity, and sequencing depth. The sequencing depth was determined by the total number of detected TCR clonotypes.\n\nTo validate the result, we examined another independent melanoma dataset containing 30 samples collected from melanoma patients treated with sequential ICB reagents (Yusko et al., 2019). Patients were randomly divided into two arms with the flipped ordering of anti-PD1 or anti-CTLA4 treatments (Yusko et al., 2019). TCR convergence significantly predicted patient outcome (p<0.0001) (Figure 4C), with higher TCR convergence associated with longer survival. Responders of the ICB treatment have significantly higher levels of TCR convergence (Figure 4D). To determine whether this link is confounded by other signals, we also included four additional variables that might influence the clinical outcomes in the multivariate Cox regression model, including TCR clonality, TCR diversity, different sequential treatments, and sequencing depth. TCR convergence remained significant (p=0.011) while adjusted for the additional variables (Figure 4E). Similarly, Cox regression models were applied to the urothelial cancer dataset above to adjust for the effects of TCR clonality, TCR diversity, as well as sequencing depth. As a result, TCR convergence remained a significant predictor of OS (p=0.045) and PFS (p=0.002) (Figure 4\u2014figure supplement 1A\u20131B). Together, our results indicated that TCR convergence is an independent prognostic predictor for patients receiving ICB treatments.\n\n## Discussion\n\nFunctional redundancy in crucial molecular pathways, such as cell cycle, metabolism, apoptosis, etc., is one of the key mechanisms that keeps biological systems robust and stable against genetic variations and environmental changes (Duncan et al., 1999; Chambon, 1994). Redundancy may occur at both molecular and cellular levels, the latter being particularly exploited by the immune system (Dombrowski and Wright, 1992). In this study, we investigated the convergence of TCRs, which could be a potentially unreported mechanism of redundancy in the adaptive immunity. The selection of multiple clones of T cells with identical TCRs during antigen encounters might be a fail-safe mechanism to ensure the expansion of the antigen-specific T cells. This speculation is in line with our observations in this work: convergent TCRs are enriched for antigen-experienced receptors, and these T cells exhibited a neoantigen-specific, cytotoxic CD8+ phenotype in the tumor microenvironment.\n\nThere are conceptual overlaps between TCR publicity and convergence, as both describe the redundancy of TCRs. However, our data suggested that these two processes could be fundamentally different. Currently, the functional consequence of V(D)J recombination bias remains unclear, but it has been speculated that this conserved process is evolved to eliminate common foreign pathogens, such as viruses and bacteria, that are frequently encountered in the environment (Huisman et al., 2022; Li et al., 2012). This process is genetically encoded and arises intrinsically. In contrast, TCR convergence might reflect the magnitude of clonal selection, which is highly contingent on the antigen landscape. Our observation that convergent and public TCRs diverge in cancers with high neoantigen load (Figure 1D) strongly supports this speculation.\n\nPrevious studies have demonstrated that CD8+ and CD4+ T cells may possess distinct TCR\u03b2 repertoire (Wang et al., 2010; Emerson et al., 2013), which results in the difference in their capacity to generate high avidity T cells (Nakatsugawa et al., 2016). Based on our findings in this study, CD8+ T cells have a higher level of convergence than CD4+ T cells on both single-cell and cell clone levels. In general, CD8+ T cells play a direct role in killing abnormal cells (Dustin and Long, 2010; Halle et al., 2017), whereas most activated CD4+ T cells function as conventional helper T cells or T regulatory cells to facilitate and regulate the immune response (Wan, 2010; London et al., 1998). This may lead to a greater impact of antigen selection on CD8+ T cells than on CD4+ T cells and thus a higher convergence level in cytotoxic CD8+ T cells.\n\nThis indication of antigen-driven selection makes TCR convergence an attractive biomarker for disease diagnosis and/or prognosis. Many previous clinical studies have attempted to use the TCR repertoire to monitor the response of immunotherapies (Page et al., 2016; Postow et al., 2015b; Hopkins et al., 2018; Roh et al., 2017). TCR diversity indexes, such as Shannon\u2019s entropy, richness, clonality, etc. are routinely used in these studies, yet a strong association with the patient outcome is rarely observed. This is potentially because these indexes only reflect the overall dynamics of the repertoire, which cannot specifically capture the antigen-specific response. As a new summary statistic of the immune repertoire, TCR convergence hinges on the (neo)antigen-specific T cell responses in late-stage tumors and achieved better prediction accuracy compared to the diversity indexes. In addition, the potential prognostic value of TCR convergence and TCR similarity-based clustering was tested in previous studies (Looney et al., 2019; Pogorelyy et al., 2019). Awaiting further clinical validation, we anticipate that TCR convergence will be a powerful new biomarker to predict ICB therapy responses.\n\nThere are also limitations of this study. First, as TCR convergence is identified by small DNA changes, it relies heavily on sequencing accuracy. Improper handling of sequencing errors may result in the overestimation of TCR convergence (Looney et al., 2019). Second, since convergent T cells constitute only a small proportion of the total population of T cells, the study of TCR convergence requires a large number of sequenced T cells from each sample. Therefore, an accurate and deep sequencing approach is required for the study of TCR convergence. Third, although the phenotypic signatures of the convergent T cells were confirmed using both mouse and human scRNA-seq/scTCR-seq data, additional neoantigen-specific single T cell datasets would be necessary to consolidate our conclusions. Finally, our observation that TCR convergence is a favored prognostic predictor for ICB therapy was based on only three cohorts, due to the lack of qualified datasets. Future clinical studies with TCR repertoire profiles will be required to confirm TCR convergence as a new biomarker.\n\nAntigen-specific T cells are central to a T cell immune response and determine the efficacy of immunotherapy, but their identification is challenging. However, the detection of convergent T cells is an easier task that only requires the profiling of the immune repertoire. The insights regarding TCR convergence gained from this work might provide an alternative angle to study the dynamics of antigen-specific T cells and a better understanding of the TCR repertoire.\n\n## Materials and methods\n\n### Datasets preparation\n\nAll the scRNA-seq or TCR-seq datasets used were accessed from public resources. This study analyzed 3 single-cell immune profiling datasets and 11 bulk TCR\u03b2 sequencing datasets, which were subjected to different analyses based on the features of the datasets. All the TCR-seq samples were downloaded from the immuneACCESS online database (https://clients.adaptivebiotech.com/immuneaccess). The detailed information for all datasets is described in Supplementary file 1.\n\n### Definition of TCR convergence\n\nT cells with identical CDR3 AA sequences and variable genes, but different CDR3 nucleotide reads were defined as convergent T cells. Single-cell immune profiling data analysis included pairing the \u03b1-\u03b2 chain CDR3 sequences and variable genes of each T cell to form a complete TCR sequence. As for the bulk TCR-seq data, the \u03b2 chain CDR3 sequences and their variable genes were used to represent their TCR sequences.\n\n### Calculation of public TCRs proportion among convergent TCRs in different cohorts\n\nThe TCR sequences shared by at least 5% (n=34) of different individuals within the 666 samples from the Emerson cohort (Emerson et al., 2017) were defined as the public TCRs. The following datasets were constructed for each group. From immunoSEQ hsTCRB-V4b Control Data (Hamm, 2020), we selected 50 healthy samples with the deepest sequencing depths. 38 samples collected from whom have recovered from COVID-19 for more than 6 weeks were selected from the Nolan cohort (Nolan et al., 2020). The kidney cancer cohort (n=19) is a combination of data from our internal database and samples from the Chow cohort (Chow et al., 2020). Ovarian cancer data was also sourced from our in-house data (n=45). The immune sequencing data for blood cancer (n=53), lung cancer (n=50), and melanoma (n=29) came from the Cader cohort (Cader et al., 2020), Reuben cohort (Reuben et al., 2020), and Riaz cohort (Riaz et al., 2017), respectively. By dividing convergence-publicity overlap by the number of all convergent TCRs, we calculated the proportion of public TCRs among convergent TCRs in each sample.\n\n### Definition of TCR clonality and diversity\n\nTCR clonality was defined as 1-Pielou\u2019s evenness and was calculated as:\n\n$$\nTCRclonality=1+\\frac{\\suminp_{i}log_{2}(p_{i})}{log_{2}(n)},\n$$\n\nwhere pi is the proportional abundance of unique TCR clonotype I and n is the total number of TCR clonotypes within a given sample. TCR diversity was calculated as n/N, where n is the total number of TCR clonotypes and N is the total reproductive sequence reads.\n\n### Analysis of scRNA-seq data\n\nThe scRNA-seq data were analyzed primarily using R/4.1.1 and Seurat 4.0.6. Data were processed with the conventional scRNA-seq pipeline before the analysis of TCR convergence. In brief, all data first had to pass QC, where cells with a high ratio of mitochondria and ribosomes were excluded since they were likely to be dying cells. Cells with too many or too few RNA reads were also excluded from studies because they might be doublets (a single barcode identifies more than one cell) or background noise. Data scaling and normalization were then performed. We regressed out the cell-cycle associated genes in our scaled data. Principal component analysis and t-distributed stochastic neighbor embedding (t-SNE) algorithm were applied to reduce the dimensions and visualize the data. Based on the markers of the cells within a cluster, cells were grouped into an appropriate number of clusters and assigned T cell types. Combining the scTCR-seq data with the scRNA-seq data allowed us to study the distribution of convergent T cells and their phenotypes.\n\n### Statistical analysis\n\nThe two-tailed exact binomial tests were performed with the built-in function of R/4.1.1 to estimate the statistical differences in AA composition between convergent TCRs and non-convergent TCRs. Fisher\u2019s exact tests were employed to analyze the association between convergent TCRs and antigen-specific TCRs, as well as the relationship between clonally expanded TCRs and antigen-specific TCRs. Using ggstatsplot v.0.8.0, the Fisher\u2019s exact test results of the scTCR-seq data were visualized. Ggsignif v.0.6.3 was used to calculate the statistical difference between different groups in all boxplots using Welch\u2019s t-test. In the \u2018box\u2019 within every boxplot, the black liner refers to the median, and the red line indicates the mean value. All survival analyses were conducted using the R package survival v.3.2.13. Survival curves were derived using the Kaplan-Meier method and the p-value was calculated by log-rank test. Cox multivariate regressions were performed to assess the association between the patients' outcomes and other variables.\n",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "70e42812-4ea2-4740-8fdb-f34e1deaf2a8",
+      "submission_id": "48946e4c-b3fb-4b83-a424-f7befddea721",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kellie N Smith, https://ror.org/00za53h95 The Johns Hopkins University School of Medicine Baltimore United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81952.sa0](https://doi.org/10.7554/eLife.81952.sa0)\n\nIn this valuable and important study, the authors use cancer immunology datasets to study and discover a new biomarker for immune checkpoint blockade response. Not only does this work have the potential to be clinically impactful, but it also provides a deeper understanding of basic biology that can be applied to many different disease settings, and is supported by solid evidence.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kellie N Smith, https://ror.org/00za53h95 The Johns Hopkins University School of Medicine Baltimore United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81952.sa1](https://doi.org/10.7554/eLife.81952.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"T cell receptor convergence is an indicator of antigen-specific T cell response in cancer immunotherapies\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) In Figure 1D, use true healthy controls rather than COVID-19 subjects (I.e. the CMV dataset from Adaptive) unless there is good and substantial reason not to\n\n2) Make all suggested changes regarding clarity (including confirming cluster IDs), and better contextualize the findings in relation to prior work.\n\nReviewer #1 (Recommendations for the authors):\n\nThe analysis is straightforward, yet generated really interesting results. I would recommend minor revisions before accepting it.\n\nI have several questions that need the authors to clarify or provide more explanation.\n\n1. In Figure 1 \u2014figure supplement 1A, why after reaching 17 amino acids, did the degeneracy remain constant? The authors should discuss this in the Discussion section.\n\n2. The scRNA-seq-based analysis is interesting. However, in Figure 3B, the recluster of CD8 T cells is not that different from Figure 3A. However, the convergent cells are in a totally different cluster. Are there any mislabeled clusters?\n\n3. Why do CD4 T cells have very few degenerative clones? The authors should discuss this in the Discussion section.\n\nReviewer #2 (Recommendations for the authors):\n\nGiven the authors' track record of predicting cancer vs non-cancer using TCR repertoire, it will be interesting to investigate if and how TCR convergence can be used as an early-stage cancer biomarker.\n\nThere are a few suggestions to improve the scientific rigor and accessibility of this work:\n\n1. In figure 1D, the author used COVID-19 patients' samples to represent non-Cancer patients. However, the inflammatory responses between COVID-19 patients and healthy individuals are expectedly different. It will be necessary to have true healthy donors as control.\n\n2. In figure 3D, the author used a human dataset derived from multiple previous study cohorts. Convergent T cells were also sparsely distributed in cluster 01 and cluster 05. Since the cited dataset was a meta-analysis, it might be possible that some of these T cells may exhibit a 'tighter' distribution in a single cohort. It will be worthwhile to explore if the non-cluster-04 convergent T cells are enriched for other T cell phenotypes.\n\n3. This study will benefit from more human datasets with neoantigen-specific T cells, both to verify the antigen-specificity of the convergent TCRs and to find out the types of antigens (viral or tumor antigens) that convergent TCR can recognize.\n\n4. In the analysis of ICB response prediction (Figure 4), it will be interesting to investigate if there are similar or shared convergent TCRs across the responders. If so, these TCRs could be more direct predictors of immunotherapy outcome, although, given the large diversity of the antigen repertoire, this commonality might not be seen.\n\n5. The authors should distribute an open-source package or script for users to easily analyze convergent TCRs.\n\nReviewer #3 (Recommendations for the authors):\n\nFigure 1 typo: \"covergence\".\n\nI think this may be a typo: \"As antigen-specific T cells play a crucial role in defending tumor cells\".\n\nThe definition of public TCRs needs to be justified: \"Each of these cohorts was mixed with the 666 samples from the Emerson cohort(37) to form new cohorts with sample sizes of 716, 685, 711, 719, 716, and 695. The TCR sequences shared by at least 5% of different individuals within a cohort were defined as the public TCRs of that cohort.\" Assuming the \"cohort\" at the end of this sentence is the merged cohort, this seems like it could create artifacts due to the sizes/depths of the different cohorts, and therefore their contribution to their respective \"merged\" cohorts.\n\n\"starting with cysteine and ending with phenylalanine\" Note that there is a common allelic variant (TRBJ2-7*02) that ends with a V.\n\nThe zenodo dataset file is in.rar format. It would be nice if a more standard format like.zip or.tgz could be used, given that there doesn't seem to be a public compression utility that understands rar files.\n\nWhen contrasting convergent TCRs with sequence clustering approaches, the authors state \"Nevertheless, the fact that T cells within each TCR convergent cluster share the same TCR amino acid sequence guarantees perfect antigen-specificity\". For single-chain data, this isn't the case, since the paired chains could be different. So similarity and identity at the amino acid level are not really all that different.\n",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8ee4da8f-b4de-44d8-a738-3f5087711d18",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C1",
+      "claim": "T cell receptor (TCR) convergence describes T cells that share identical TCRs with the same amino acid sequences but have different DNA sequences due to codon degeneracy.",
+      "claim_type": "EXPLICIT",
+      "source": "T cell receptor (TCR) convergence describes T cells that share identical TCRs with the same amino acid sequences but have different DNA sequences due to codon degeneracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement provided in the abstract that establishes the meaning of TCR convergence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "ef580001-5144-4b2a-b81c-04e681fa2548",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C2",
+      "claim": "There is a strong link between antigen-specificity and TCR convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted a systematic investigation of TCR convergence using single-cell immune profiling and bulk TCR\u03b2-sequence (TCR-seq) data obtained from both mouse and human samples and uncovered a strong link between antigen-specificity and convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state they uncovered this link through systematic investigation of multiple datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "d95c7085-f4c2-42e7-b352-7db1179099ab",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C3",
+      "claim": "The association between TCR convergence and antigen-specificity is stronger than the association between T cell expansion and antigen-specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This association was stronger than T cell expansion, a putative indicator of antigen-specific T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct comparative statement in the abstract supported by data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "815dbd29-a30b-4c5c-9d1a-fb603112e601",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C4",
+      "claim": "Convergent T cells are enriched for a neoantigen-specific CD8+ effector phenotype in the tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "By using flow-sorted tetramer+ single T cell data, we discovered that convergent T cells were enriched for a neoantigen-specific CD8+ effector phenotype in the tumor microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on analysis of tetramer+ single T cell data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "93d21d4c-8bb4-45d4-b70b-acbb5efffd87",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C5",
+      "claim": "TCR convergence demonstrates better prediction accuracy for immunotherapy response than existing TCR repertoire indexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TCR convergence demonstrated better prediction accuracy for immunotherapy response than the existing TCR repertoire indexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative statement about predictive accuracy based on data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "725e5508-7d86-49d0-82b8-0a25c9edaf05",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C6",
+      "claim": "Convergent T cells are likely to be antigen-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, convergent T cells are likely to be antigen-specific and might be a novel prognostic biomarker for anti-cancer immunotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple lines of evidence presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "24168cc3-855a-435c-854a-67e2b34aa4d2",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C7",
+      "claim": "TCR convergence might be a novel prognostic biomarker for anti-cancer immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, convergent T cells are likely to be antigen-specific and might be a novel prognostic biomarker for anti-cancer immunotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conclusion based on the predictive accuracy findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "c9fe4c94-7402-444c-a62a-36e913e896b5",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C8",
+      "claim": "The diversity of unique TCR \u03b1 and \u03b2 chain pairs can theoretically reach 2\u00d710^19.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the combinational somatic rearrangement of multiple variable (V), diversity (D) (only for \u03b2 chains), joining (J), and constant (C) gene segments, theoretically, the diversity of unique TCR \u03b1 and \u03b2 chains pairs can reach to 2\u00d71019 (Pai and Satpathy, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical calculation cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "0d038091-4b5b-4dd8-9d6f-19950de8e75c",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C9",
+      "claim": "Different V(D)J rearrangements can encode the same TCR proteins due to codon degeneracy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to codon degeneracy, which means multiple codons can encode the same amino acid (AA; Trainor et al., 1984), different V(D)J rearrangements can end up encoding the same TCR proteins, and this phenomenon is called TCR convergence (Looney et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of the molecular basis for TCR convergence with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "56109afa-15c5-425e-b525-4ec6fdd464a1",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C10",
+      "claim": "TCR convergence can be observed universally in almost every individual.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR convergence can be observed universally in almost every individual, but very few studies have been conducted to explain its biological significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General observation about the prevalence of TCR convergence.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "9abfeae8-1229-4942-b93b-560fa08c3dca",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C11",
+      "claim": "The number of three-nucleotide codons (64) exceeds the number of encoding amino acids (20).",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the number of three-nucleotides codons (64) exceeds the number of encoding AAs (20) provides the basis of codon degeneracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established fact from molecular biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "cd221996-c649-4743-aedc-cbe073233de0",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C12",
+      "claim": "Arginine, leucine, and serine are among the amino acids with six corresponding codons.",
+      "claim_type": "EXPLICIT",
+      "source": "Arginine, leucine, and serine are among the AAs with six corresponding codons, while others have one to four codons (Crick et al., 1961), and the origin of codon degeneracy remains the subject of debate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established fact about codon degeneracy with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "588fe06e-9d1d-452f-addc-8cb210e86916",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C13",
+      "claim": "The T cell repertoire is shaped by multiple selective pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of T cell immunity, the T cell repertoire not only results from somatic recombination but also is shaped by multiple selective pressures (Jameson and Bevan, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about T cell repertoire formation with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "052e8b91-6cd3-4fe5-a9bc-de2f82d7a912",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C14",
+      "claim": "TCR convergence may provide unique insights into the antigen-driven TCR selection process.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that TCR convergence is more than the mere consequence of codon degeneracy. It may provide unique insights into the antigen-driven TCR selection process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about the potential significance of TCR convergence.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "cb404876-6e07-4a0b-9b75-784fbb19db53",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C15",
+      "claim": "T cells can be activated by their cognate antigens through the binding of the TCR to the peptide/MHC complex.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells can be activated by their cognate antigens through the binding of the TCR to the peptide/MHC complex (Smith-Garvin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established mechanism of T cell activation with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "a0bb6fc8-d4c7-4050-88b0-186c5217802c",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C16",
+      "claim": "Antigen-specific T cells play dominant roles in eliminating pathogens or tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, antigen-specific T cells are crucial parts of the T cell 'army' and play dominant roles in eliminating pathogens or tumor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about the role of antigen-specific T cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "0d28bdfb-fed5-4565-af13-33d5dc110c4b",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C17",
+      "claim": "The enormous diversity of epitopes and the highly polymorphic nature of MHC make it extremely challenging to identify the specificity of given T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the enormous diversity of epitopes targeted by T cells and the highly polymorphic nature of MHC make it extremely challenging to identify the specificity of given T cells (Newell and Davis, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about challenges in T cell research with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "f2b2ab3c-50dc-48bc-a212-c8867037d28f",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C18",
+      "claim": "TCR characteristics such as diversity, clonality, or evenness scores have been used to predict antigen-specific T cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have attempted to predict antigen-specific T cell responses by utilizing TCR characteristics such as diversity, clonality, or evenness scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of previous research approaches.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "2a060f44-1ef0-4731-b82d-366ff6c11e43",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C19",
+      "claim": "In some cases, TCR diversity signals were associated with patient survival.",
+      "claim_type": "EXPLICIT",
+      "source": "While there were cases where these signals were associated with the patient's survival (Riaz et al., 2017; Tumeh et al., 2014), in most cases these signals did not correlate with the outcomes (Johnson et al., 2016; Robert et al., 2014; Amaria et al., 2018; Kidman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of previous research findings with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "417592f8-06fb-4332-b400-7095a13ef11c",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C20",
+      "claim": "In most cases, TCR diversity signals did not correlate with patient outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While there were cases where these signals were associated with the patient's survival (Riaz et al., 2017; Tumeh et al., 2014), in most cases these signals did not correlate with the outcomes (Johnson et al., 2016; Robert et al., 2014; Amaria et al., 2018; Kidman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of previous research findings with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "7ec939d2-309e-4e4b-a9f6-04e851e598f7",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C21",
+      "claim": "TCR convergence is a better indicator of antigen-driven selection than other TCR parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we speculate that TCR convergence is a better indicator of antigen-driven selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis stated by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "36cd658d-d78b-4d6e-975c-495e1ca7f500",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C22",
+      "claim": "A convergent TCR consumes more rearrangement resources compared with a non-convergent TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because, compared with a non-convergent TCR, a convergent TCR consumes more rearrangement resources, and the principle of parsimony (Stewart, 1993) implies a greater impact on the adaptive immune response for these convergent TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reasoning for why convergent TCRs may be more significant, with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "ceca26ef-a89d-4447-939d-6a782aefd384",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C23",
+      "claim": "TCRs with similar CDR3 sequences share similar binding structures and antigen specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "TCRs with similar CDR3 sequences shared similar binding structures and antigen specificity (Dash et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about TCR similarity with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "11e613d3-a18d-4a92-9ed4-c09333968c98",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C24",
+      "claim": "Around 90% of the resulting TCR clusters by most previous algorithms are antigen-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "By default, around 90% of the resulting TCR clusters by most previous algorithms are antigen-specific, while the ratio of some, like GLIPH2, is substantially lower (around 35%) (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of different TCR clustering algorithms with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "bde8d697-cb5e-4789-a2b4-d8e59c570907",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C25",
+      "claim": "GLIPH2 produces TCR clusters where around 35% are antigen-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "By default, around 90% of the resulting TCR clusters by most previous algorithms are antigen-specific, while the ratio of some, like GLIPH2, is substantially lower (around 35%) (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific performance characteristic of GLIPH2 algorithm with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "2200743e-185f-4ff1-8b82-00da112cada9",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C26",
+      "claim": "T cells within each convergent cluster sharing identical CDR3\u03b2 amino acid sequence more likely represent shared antigen specificity compared to those with mismatches.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the fact that T cells within each convergent cluster share identical CDR3\u03b2 AA sequence more likely represents shared antigen specificity compared to those with mismatches (Dash et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reasoning about convergent TCRs with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "3a41aa09-ea6a-4fdc-9fc6-902a6308e865",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C27",
+      "claim": "The study analyzed 3 single-cell immune profiling and 11 bulk TCR-seq datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing 3 single-cell immune profiling and 11 bulk TCR-seq datasets, we conducted a comprehensive analysis of TCR convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the datasets used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "399a0920-2cce-4a7a-9bcf-6422db184c72",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C28",
+      "claim": "Convergent TCRs only comprised 5.40% of the total T cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, convergent TCRs only comprised a small proportion (5.40%) of the total T cell population (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from data analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "2bac2662-dde1-4cb6-9f21-38802580ee7f",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C29",
+      "claim": "As TCR degeneracy increased from two to four, the number of detected TCRs decreased approximately 10-fold with each unit increase in degeneracy.",
+      "claim_type": "EXPLICIT",
+      "source": "As TCR degeneracy increased from two to four, the number of detected TCRs decreased approximately 10-fold with each unit increase in degeneracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative observation from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "73d65c8a-5794-4a6f-9234-98b0de68b5f9",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C30",
+      "claim": "Most convergent TCRs had a degeneracy of two (90.65%) or three (7.16%).",
+      "claim_type": "EXPLICIT",
+      "source": "Most convergent TCRs had a degeneracy of two (90.65%) or three (7.16%), while larger degeneracies were rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "ffb3a749-1b80-4b33-a849-e266feab40e1",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C31",
+      "claim": "The length distribution of convergent TCR CDR3 regions peaked at 11 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied the length distribution of the convergent TCR CDR3 regions, which peaked at 11 AAs (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from data analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "d84a0c6c-29c5-42b2-83f0-7ee7fb589410",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C32",
+      "claim": "TCRs with 14-15 amino acids made up the greatest percentage of all unique TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "While TCRs with 14\u201315 AA made up the greatest percentage of all the unique TCRs (Figure 1\u2014figure supplement 1B), the proportion of convergent TCRs continually decreased after reaching 11 AA or longer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from data analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "7222ed83-71ed-44db-9599-263e80a5c2fd",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C33",
+      "claim": "Shorter TCR sequences appear to be more conducive to TCR convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggested that shorter TCR sequences appeared to be more conducive to TCR convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the length distribution data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "1c307038-0c18-4b8b-a417-dba5b114d9ed",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C34",
+      "claim": "CDR3s of 9 amino acids long displayed the greatest degeneracy on average (~2.5).",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of the correlation between TCR degeneracy and CDR3 lengths, CDR3s of 9 AA long displayed the greatest degeneracy on average (~2.5) (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from data analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "ddd585ef-19ba-4ff0-ba21-baf35a3e707e",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C35",
+      "claim": "The usage of every TCR\u03b2 chain variable gene superfamily was relatively even.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the variable gene usage of convergent TCRs and observed that the usage of every TCR\u03b2 chain variable gene superfamily was relatively even (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from data analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "cd47c7b0-7893-4ae0-8840-819ed962d591",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C36",
+      "claim": "TCR degeneracy was not significantly impacted by variable gene usage.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR degeneracy was not significantly impacted by variable gene usage either (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from data analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "5d22fc47-53a0-4837-b9ee-285eff6b073f",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C37",
+      "claim": "Convergent TCRs favor polar neutral amino acids and acidic amino acids, particularly tyrosine, serine, and glutamic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that, generally, convergent TCR favors polar neutral AAs and acidic AAs, particularly tyrosine (Y), serine (S), and glutamic acid (E), with alkaline AAs and nonpolar hydrophobic AA less favorable (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from amino acid composition analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "45c5e096-06fe-406f-bc27-5d7b3a87a198",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C38",
+      "claim": "The level of codon degeneracy is not a determinant of TCR degeneracy.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the level of codon degeneracy is not a determinant of TCR degeneracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from amino acid composition analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "0e33bf50-b657-4729-9d3d-11bf240697ae",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C39",
+      "claim": "The physiochemical properties of a given amino acid might have a greater impact on TCR convergence than codon degeneracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the physiochemical properties of a given AA might have a greater impact on TCR convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation that amino acids with high codon degeneracy don't necessarily show high TCR convergence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "3676ebb8-8756-4b82-a864-f116df7fa8e3",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C40",
+      "claim": "TCR convergence exhibits an independent distribution from codon degeneracy and may carry a distinct biological significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, even though TCR convergence is the result of codon degeneracy, it exhibits an independent distribution and may carry a biological significance that is distinct from codon degeneracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the amino acid composition analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "0fe02832-f258-4a4c-b5cb-ec21505fff09",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C41",
+      "claim": "Public TCRs are generated from VDJ recombination biases and are shared across different individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Public TCRs are generated from VDJ recombination biases and are shared across different individuals, which might target common antigens, such as viral epitopes (Emerson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about public TCRs with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "a83b7f90-6468-4bdf-a68b-458dce6c46fe",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C42",
+      "claim": "TCRs targeting cancer neoantigens are mostly 'private' and unique to each individual.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TCRs targeting cancer neoantigens are mostly 'private' that are unique to each individual (Madi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about private TCRs with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "8a6a72c6-85f6-4424-9dc1-03adc6f7e5c0",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C43",
+      "claim": "A high overlap (47.92%) was observed between convergent and public TCRs in healthy donors.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a high overlap (47.92%) between the two in healthy donors as well as in another independent cohort consisting of patients who recovered from COVID-19 for more than 6 weeks (47.44%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "bf8113ae-2371-43e0-b517-b6b601373a38",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C44",
+      "claim": "The overlap between TCR convergence and publicity decreases for cancer types with higher tumor mutation burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas for the cancer patients, the overlap between TCR convergence and publicity decreases for cancer types with higher TMB, which was estimated from previous studies (Yarchoan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from comparative analysis across cancer types with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "789aace4-b79f-4cdb-a253-fb03dc52ab6c",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C45",
+      "claim": "The fraction of public TCRs within convergent TCRs dropped from 34.11% for ovarian cancer to 21.34% for blood cancer samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of public TCRs within the convergence sequences dropped from 34.11% for the low mutation burden ovarian cancer to 21.34% for the highly mutated blood cancer samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "834373b3-6748-4387-885f-adc2082184dd",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C46",
+      "claim": "TCR convergence and publicity represent two different biological processes that diverge in cancer patients by tumor mutation load.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results indicated that TCR convergence and publicity represent two different biological processes that diverge in cancer patients by tumor mutation load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the analysis of convergence and publicity overlap across different cancer types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "f1758bb3-8f9e-4a16-babc-6a4bf1182db6",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C47",
+      "claim": "In four healthy donors, 12.91%, 33.32%, 71.65%, and 6.24% of unique TCRs were multimer positive, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In these four donors, only 12.91, 33.32, 71.65, and 6.24% of the unique TCRs were multimer positive, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from 10x Genomics dataset analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "c015df1c-a36e-4e7d-9793-8af72b368435",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C48",
+      "claim": "In four healthy donors, 88.00%, 88.28%, 93.10%, and 22.22% of convergent TCRs were antigen-specific, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 88.00, 88.28, 93.10, and 22.22% of convergent TCRs were antigen-specific, suggesting that convergent TCRs were much more likely to be antigen-specific than their non-convergent counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from 10x Genomics dataset analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "aa44d1ac-c59f-4536-aad5-bbfd7ee0aabd",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C49",
+      "claim": "The odds ratio for convergent TCRs being antigen-specific in donor 1 reached 50.16.",
+      "claim_type": "EXPLICIT",
+      "source": "The odds ratio for donor 1 reached 50.16, indicating that convergent TCRs are much more likely to be antigen-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical result from Fisher's exact test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "9d5a3c8f-a9e1-44dc-9d22-2a9493b1e749",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C50",
+      "claim": "The average odds ratio of TCR convergence for antigen-specificity was 8.94 in SARS-CoV-2 exposed subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The average odds ratio of TCR convergence was 8.94, significantly higher than TCR clonal expansion, which was only 1.74 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from bulk TCR-seq data analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "0cf69722-b55c-4cae-ba2f-b82a0e354fec",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C51",
+      "claim": "The average odds ratio of TCR clonal expansion for antigen-specificity was 1.74 in SARS-CoV-2 exposed subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The average odds ratio of TCR convergence was 8.94, significantly higher than TCR clonal expansion, which was only 1.74 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from bulk TCR-seq data analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "474073d4-6d26-4994-baf6-9c18869e8dd1",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C52",
+      "claim": "TCR convergence is a better indicator of antigen specificity than clonal expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed that converged TCRs are more likely to be antigen-experienced, and indicated that TCR convergence is a better indicator of antigen specificity than clonal expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparative analysis of convergence and expansion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "3f94237d-91f0-450e-9201-738d49ba8294",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C53",
+      "claim": "In the tumor microenvironment, antigen-specific T cells typically express cytotoxicity, memory, and/or exhaustion gene signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tumor microenvironment, antigen-specific T cells typically express cytotoxicity, memory, and/or exhaustion gene signatures (Caushi et al., 2021; Oliveira et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about antigen-specific T cell phenotypes with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "dd1405e1-ae02-41fe-baf0-de413cabbb2e",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C54",
+      "claim": "T cells collected at tumor sites exhibited a much higher level of convergence than T cells in lymph nodes and spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells collected at tumor sites exhibited a much higher level of convergence than T cells in lymph nodes and spleen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative finding from mouse model data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "59507e70-7113-47a9-a0a9-5431612910ec",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C55",
+      "claim": "Only 1.85% (n=90) of the 4878 passed-QC CD4+ cells had convergent TCRs in the mouse tumor model.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 1.85% (n=90) of the 4878 passed-QC CD4+ cells had convergent TCRs (Figure 3\u2014figure supplement 1A), which were not enriched in any cluster.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from mouse scRNA-seq data with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "7049db5c-a9c3-4579-9b72-9e21e1bbd255",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C56",
+      "claim": "15.71% (n=1436) of CD8+ T cells were convergent in the mouse tumor model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 9143 CD8+ T cells passed the QC and 15.71% (n=1436) of them were convergent T cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from mouse scRNA-seq data with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "406b93e7-808a-4588-894d-e199cfef3527",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C57",
+      "claim": "87.5% (419 out of 479) of T cells from cluster 04 were convergent T cells in the mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "87.5% (419 out of 479) of T cells from cluster 04 were convergent T cells, whereas none of the cluster 05 T cells (n=201) was convergent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from mouse scRNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "57bcddbe-e9f7-4582-916c-9044cd2d6aad",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C58",
+      "claim": "None of the cluster 05 T cells (n=201) was convergent in the mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "87.5% (419 out of 479) of T cells from cluster 04 were convergent T cells, whereas none of the cluster 05 T cells (n=201) was convergent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from mouse scRNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "a0a4986b-6f78-4c33-a0b8-33cd6fa7e7fb",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C59",
+      "claim": "Cluster 04 T cells expressed both effector and exhaustion markers such as Tox, Tigit, Eomes, and Il10ra.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 04 T cells expressed both effector and exhaustion markers, such as Tox (Bordon, 2019; Sekine et al., 2020), Tigit (Ostroumov et al., 2021), Eomes (Li et al., 2018), and inhibitory receptors like Il10ra (Al-Abbasi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from gene expression analysis with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "ae09b369-9042-40da-96d9-6fec9d053f9a",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C60",
+      "claim": "Cluster 05 mainly expressed na\u00efve T cell gene signatures such as Sell, Tcf7, and Ccr7.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, cluster 05 mainly expressed na\u00efve T cell gene signatures (Al-Abbasi et al., 2018), such as Sell, Tcf7, and Ccr7 (Figure 3C), and down-regulated genes associated with effector function, like Gzmb, Lgals1 (Li et al., 2020), and T cell activation or exhaustion (Saleh et al., 2020), like Pdcd1 and Lag3 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from gene expression analysis with citations and reference to figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "beb796aa-537f-4285-906c-e75784642c54",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C61",
+      "claim": "There was significant enrichment of convergent TCRs for neoantigen specificity in cluster 04 (OR = 4.41, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by comparing the TCRs of cluster 04, 05 T cells and tetramer-sorted T cells specific to tumor neoantigen Adpgk, we observed a significant enrichment of convergent TCRs for neoantigen specificity in cluster 04 (OR = 4.41, p<0.001), while no enrichment in cluster 05 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from comparison with tetramer data with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "1c05816d-d7ff-436d-97e0-a2ed46461c95",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C62",
+      "claim": "There was no enrichment of convergent TCRs for neoantigen specificity in cluster 05.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by comparing the TCRs of cluster 04, 05 T cells and tetramer-sorted T cells specific to tumor neoantigen Adpgk, we observed a significant enrichment of convergent TCRs for neoantigen specificity in cluster 04 (OR = 4.41, p<0.001), while no enrichment in cluster 05 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from comparison with tetramer data with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "d28ed008-6d47-45ba-9d92-44f305694346",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C63",
+      "claim": "Convergent T cells are enriched for a neoantigen-activated effector phenotype in the tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we concluded that convergent T cells are enriched for a neoantigen-activated effector phenotype in the tumor microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from mouse model scRNA-seq analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "bff3b68a-287b-4318-a3ca-a6dcf36c2401",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C64",
+      "claim": "Convergent T cells were rare in CD4+ T cells (0.22%, n=118 out of 52,643) in human pan-cancer samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the mouse data, convergent T cells were rare in CD4+ T cells (n=52,643), accounting for 0.22% (n=118) of the CD4+ population (Figure 3\u2014figure supplement 1C), whereas 10.15% (n=7,065) of the CD8+ T cells (n=69,618) were convergent (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from human scRNA-seq data with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "147ebea6-bdcb-4ee3-91b2-3f81b4659c85",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C65",
+      "claim": "10.15% (n=7,065) of CD8+ T cells (n=69,618) were convergent in human pan-cancer samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the mouse data, convergent T cells were rare in CD4+ T cells (n=52,643), accounting for 0.22% (n=118) of the CD4+ population (Figure 3\u2014figure supplement 1C), whereas 10.15% (n=7,065) of the CD8+ T cells (n=69,618) were convergent (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from human scRNA-seq data with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "f8c45199-ebaf-4ce1-b8c6-14bffb5b0e72",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C66",
+      "claim": "Convergent T cells were enriched in clusters CD8-01-XCL1 and CD8-05-FGFBP2 in human samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Convergent T cells were enriched in clusters CD8-01-XCL1 and CD8-05-FGFBP2, yet remained at low levels in the na\u00efve clusters, CD8-09-IL7R and CD8-13-CCR7 (1.27 and 0.00%) (Table 1, the odds ratio and p-value were calculated by Fisher exact's test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from human scRNA-seq data analysis with reference to table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "8c148a1c-7366-489a-b461-5b1558c74571",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C67",
+      "claim": "CD8-01-XCL1 cluster expressed gene signatures of activated T cells including Il7r, ZFP36L2, XCL1, and CXCR6.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8-01-XCL1 cluster expressed gene signatures of activated T cells, including Il7r (Seddiki et al., 2006), ZFP36L2 (Petkau et al., 2021), XCL1 (Ordway et al., 2007), and CXCR6 (Wang et al., 2021; Figure 3E), as well as proliferation and mobility markers LDLRAD4 (Liu et al., 2017) and CAPG (Wei et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from gene expression analysis with citations and reference to figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "5ec9204f-94a6-4eec-8beb-cdeeec8c06d4",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C68",
+      "claim": "CD8-05-FGFBP2 cluster exhibited a CD8+ effector phenotype, upregulating genes involved in cytotoxicity and anti-tumor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8-05-FGFBP2 cluster exhibited a CD8+ effector phenotype, upregulating genes involved in cytotoxicity and anti-tumor activity: FGFBP2, GNLY, FCGR3A (Zheng et al., 2017), GZMH, PRF1, TGFBR3, and GZMB (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from gene expression analysis with citations and reference to figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "c4de69b1-97fd-43a5-861e-432f459f6def",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C69",
+      "claim": "The phenotypes of convergent T cells in human samples resembled those discovered in the mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the phenotypes of convergent T cells in human samples resembled those discovered in the mouse model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative conclusion drawn from mouse and human data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "21cce1a8-f1e5-4af1-943f-75fc27d988df",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C70",
+      "claim": "CD8+ T cells consistently exhibited a higher level of TCR convergence than CD4+ T cells throughout different collection time points in cHL patients.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, CD8+ T cells consistently exhibited a higher level of TCR convergence throughout different collection time points (Figure 3\u2014figure supplement 2A\u20132B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from bulk TCR-seq data analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "d0181fc9-bb6f-49ac-9d3f-6afe69881059",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C71",
+      "claim": "In the mouse scRNA-seq data, 1.54% of CD4+ clones were convergent while 3.76% of CD8+ clones showed convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, in the scRNA-seq mouse data, while only 1.54% of the CD4+ clones were convergent, 3.76% of the CD8+ clones showed convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from mouse scRNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "bf54be00-3fe3-4d81-8400-8ff9db0e6d2e",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C72",
+      "claim": "In human scRNA-seq data, 0.17% of convergent CD4+ T cell clones and 1.03% of convergent CD8+ T cell clones were found.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, 0.17% of convergent CD4+ T cell clones and 1.03% of convergent CD8+ T cell clones were found in human scRNA-seq data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from human scRNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "f94f77f7-4b0c-4ef6-9b8b-8a91be9224b6",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C73",
+      "claim": "CD8+ T cells show higher levels of convergence than CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these results suggest that CD8+ T cells show higher levels of convergence than CD4+ T cells, which substantiated our hypothesis that convergent T cells are more likely antigen-experienced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "6ed8909e-bab6-4238-8bd2-7865a3871a81",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C74",
+      "claim": "TCR convergence level was significantly associated with overall survival (p=0.02) in urothelial cancer patients receiving anti-PD1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant association between TCR convergence level and both the overall survival (OS) (p=0.02) and progression-free survival (PFS) (p=0.00038) (Figure 4A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from survival analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "c975c37c-ed43-4eb3-9b84-ef615d64497a",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C75",
+      "claim": "TCR convergence level was significantly associated with progression-free survival (p=0.00038) in urothelial cancer patients receiving anti-PD1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant association between TCR convergence level and both the overall survival (OS) (p=0.02) and progression-free survival (PFS) (p=0.00038) (Figure 4A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from survival analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "1090cfb1-6241-4a2d-a50b-f299dc6096e0",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C76",
+      "claim": "In the low TCR convergence group, over 90% of urothelial cancer patients suffered from disease progression within 75 days after initial treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the low TCR convergence group, over 90% of the patients suffered from disease progression within 75 days after initial treatment, whereas only 27% of the patients in the high TCR convergence group experienced disease progression at this time point (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from survival analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "1a70107f-0994-4a3b-b663-82a14817f2e4",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C77",
+      "claim": "Only 27% of urothelial cancer patients in the high TCR convergence group experienced disease progression within 75 days after initial treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the low TCR convergence group, over 90% of the patients suffered from disease progression within 75 days after initial treatment, whereas only 27% of the patients in the high TCR convergence group experienced disease progression at this time point (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from survival analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "7888af02-b152-4399-9a16-571a156dd0df",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C78",
+      "claim": "TCR convergence significantly predicted patient outcome (p<0.0001) in melanoma patients treated with sequential ICB reagents.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR convergence significantly predicted patient outcome (p<0.0001) (Figure 4C), with higher TCR convergence associated with longer survival.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from survival analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "d66f28ad-1022-4bae-8756-71d3bfa09c8c",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C79",
+      "claim": "Higher TCR convergence was associated with longer survival in melanoma patients.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR convergence significantly predicted patient outcome (p<0.0001) (Figure 4C), with higher TCR convergence associated with longer survival.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from survival analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "cbed6a1b-1aff-4a03-91db-310c99b92080",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C80",
+      "claim": "Responders of ICB treatment have significantly higher levels of TCR convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Responders of the ICB treatment have significantly higher levels of TCR convergence (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from comparative analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "4bc3005f-6e19-49e0-9ca1-2e888d19e367",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C81",
+      "claim": "TCR convergence remained significant (p=0.011) in multivariate Cox regression model for melanoma patients when adjusted for TCR clonality, TCR diversity, treatment method, and sequencing depth.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether this link is confounded by other signals, we also included four additional variables that might influence the clinical outcomes in the multivariate Cox regression model, including TCR clonality, TCR diversity, different sequential treatments, and sequencing depth. TCR convergence remained significant (p=0.011) while adjusted for the additional variables (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from multivariate Cox regression with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "c87cff94-cdbd-4bdf-8c88-626e3e6446b7",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C82",
+      "claim": "TCR convergence remained a significant predictor of overall survival (p=0.045) in urothelial cancer patients when adjusted for TCR clonality, TCR diversity, and sequencing depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Cox regression models were applied to the urothelial cancer dataset above to adjust for the effects of TCR clonality, TCR diversity, as well as sequencing depth. As a result, TCR convergence remained a significant predictor of OS (p=0.045) and PFS (p=0.002) (Figure 4\u2014figure supplement 1A\u20131B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from multivariate Cox regression with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "903fd9b8-aabe-4359-b80a-4216c5b82b18",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C83",
+      "claim": "TCR convergence remained a significant predictor of progression-free survival (p=0.002) in urothelial cancer patients when adjusted for TCR clonality, TCR diversity, and sequencing depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Cox regression models were applied to the urothelial cancer dataset above to adjust for the effects of TCR clonality, TCR diversity, as well as sequencing depth. As a result, TCR convergence remained a significant predictor of OS (p=0.045) and PFS (p=0.002) (Figure 4\u2014figure supplement 1A\u20131B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from multivariate Cox regression with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "e25f34c3-ec7e-4c1d-b69e-f5ba5572a5a4",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C84",
+      "claim": "TCR convergence is an independent prognostic predictor for patients receiving ICB treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results indicated that TCR convergence is an independent prognostic predictor for patients receiving ICB treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from survival analyses in multiple cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "5b9c6f27-94f1-467f-8d6c-365bbd3148f7",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C85",
+      "claim": "Functional redundancy in crucial molecular pathways is one of the key mechanisms that keeps biological systems robust and stable against genetic variations and environmental changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional redundancy in crucial molecular pathways, such as cell cycle, metabolism, apoptosis, etc., is one of the key mechanisms that keeps biological systems robust and stable against genetic variations and environmental changes (Duncan et al., 1999; Chambon, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about biological systems with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "cca37f80-ab8f-4a23-90db-c3062aa4bbaf",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C86",
+      "claim": "TCR convergence could be a potentially unreported mechanism of redundancy in adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we investigated the convergence of TCRs, which could be a potentially unreported mechanism of redundancy in the adaptive immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about the significance of TCR convergence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "18db7991-720f-403c-9a9f-ac67383085b9",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C87",
+      "claim": "The selection of multiple clones of T cells with identical TCRs during antigen encounters might be a fail-safe mechanism to ensure the expansion of antigen-specific T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The selection of multiple clones of T cells with identical TCRs during antigen encounters might be a fail-safe mechanism to ensure the expansion of the antigen-specific T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the biological significance of TCR convergence.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "0a1075bc-47ab-440e-92cb-a51c235d6beb",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C88",
+      "claim": "V(D)J recombination bias is speculated to be evolved to eliminate common foreign pathogens that are frequently encountered in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the functional consequence of V(D)J recombination bias remains unclear, but it has been speculated that this conserved process is evolved to eliminate common foreign pathogens, such as viruses and bacteria, that are frequently encountered in the environment (Huisman et al., 2022; Li et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about V(D)J recombination bias with citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "37ff70d3-09f6-47ad-b47b-857e8c5e1306",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C89",
+      "claim": "TCR convergence might reflect the magnitude of clonal selection, which is highly contingent on the antigen landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TCR convergence might reflect the magnitude of clonal selection, which is highly contingent on the antigen landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of TCR convergence.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "28cdf523-a661-4f41-ac71-218843369757",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C90",
+      "claim": "CD8+ and CD4+ T cells may possess distinct TCR\u03b2 repertoires.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that CD8+ and CD4+ T cells may possess distinct TCR\u03b2 repertoire (Wang et al., 2010; Emerson et al., 2013), which results in the difference in their capacity to generate high avidity T cells (Nakatsugawa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about T cell repertoires with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "10460268-0164-40de-bf4d-3a3727fb2c6f",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C91",
+      "claim": "CD8+ T cells play a direct role in killing abnormal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, CD8+ T cells play a direct role in killing abnormal cells (Dustin and Long, 2010; Halle et al., 2017), whereas most activated CD4+ T cells function as conventional helper T cells or T regulatory cells to facilitate and regulate the immune response (Wan, 2010; London et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about T cell functions with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "543203e4-944f-4c00-80b7-d7aad59af36e",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C92",
+      "claim": "Most activated CD4+ T cells function as conventional helper T cells or T regulatory cells to facilitate and regulate the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, CD8+ T cells play a direct role in killing abnormal cells (Dustin and Long, 2010; Halle et al., 2017), whereas most activated CD4+ T cells function as conventional helper T cells or T regulatory cells to facilitate and regulate the immune response (Wan, 2010; London et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about T cell functions with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "f9f528f1-4fbd-4ea9-9693-86a5be7a0d95",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C93",
+      "claim": "Antigen selection may have a greater impact on CD8+ T cells than on CD4+ T cells, leading to higher convergence levels in cytotoxic CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This may lead to a greater impact of antigen selection on CD8+ T cells than on CD4+ T cells and thus a higher convergence level in cytotoxic CD8+ T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about why CD8+ T cells show higher convergence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "1970c17c-a5b7-434d-8e19-c1c5ce6b55bf",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C94",
+      "claim": "TCR diversity indexes such as Shannon's entropy, richness, and clonality are routinely used in clinical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR diversity indexes, such as Shannon's entropy, richness, clonality, etc. are routinely used in these studies, yet a strong association with the patient outcome is rarely observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current practices in clinical studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "9e7ac4c1-024b-4278-a02a-31895534e9a4",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C95",
+      "claim": "A strong association between TCR diversity indexes and patient outcome is rarely observed.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR diversity indexes, such as Shannon's entropy, richness, clonality, etc. are routinely used in these studies, yet a strong association with the patient outcome is rarely observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of current approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "fe1ec587-5e98-4755-b58d-9f65e1f1b840",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C96",
+      "claim": "TCR diversity indexes only reflect the overall dynamics of the repertoire and cannot specifically capture the antigen-specific response.",
+      "claim_type": "EXPLICIT",
+      "source": "This is potentially because these indexes only reflect the overall dynamics of the repertoire, which cannot specifically capture the antigen-specific response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation for why diversity indexes have limited predictive value.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "8351d9ee-59a6-4343-8be9-01fc61f7bc96",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C97",
+      "claim": "TCR convergence hinges on the (neo)antigen-specific T cell responses in late-stage tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "As a new summary statistic of the immune repertoire, TCR convergence hinges on the (neo)antigen-specific T cell responses in late-stage tumors and achieved better prediction accuracy compared to the diversity indexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the basis of TCR convergence as a biomarker.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "75526bb1-409b-4577-8707-5ee613eb0b03",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C98",
+      "claim": "TCR convergence achieved better prediction accuracy compared to diversity indexes.",
+      "claim_type": "EXPLICIT",
+      "source": "As a new summary statistic of the immune repertoire, TCR convergence hinges on the (neo)antigen-specific T cell responses in late-stage tumors and achieved better prediction accuracy compared to the diversity indexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative statement about predictive accuracy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "79060c83-7536-439e-b5c3-3942232968c5",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C99",
+      "claim": "TCR convergence is identified by small DNA changes and relies heavily on sequencing accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as TCR convergence is identified by small DNA changes, it relies heavily on sequencing accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about a limitation of the approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "4dfed3a5-d334-43b3-891c-71124cc774a4",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C100",
+      "claim": "Improper handling of sequencing errors may result in the overestimation of TCR convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Improper handling of sequencing errors may result in the overestimation of TCR convergence (Looney et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about a potential technical issue with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "ad4c273d-fd7a-490d-91ac-0a2eb935823a",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C101",
+      "claim": "The study of TCR convergence requires a large number of sequenced T cells from each sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, since convergent T cells constitute only a small proportion of the total population of T cells, the study of TCR convergence requires a large number of sequenced T cells from each sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about technical requirements for studying TCR convergence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "37760f8b-e550-491e-a19f-5b989d75452f",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C102",
+      "claim": "An accurate and deep sequencing approach is required for the study of TCR convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, an accurate and deep sequencing approach is required for the study of TCR convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about technical requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "c2a2fab1-e06f-48c0-bdfc-56e85247764d",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C103",
+      "claim": "Additional neoantigen-specific single T cell datasets would be necessary to consolidate the conclusions about convergent T cell phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, although the phenotypic signatures of the convergent T cells were confirmed using both mouse and human scRNA-seq/scTCR-seq data, additional neoantigen-specific single T cell datasets would be necessary to consolidate our conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations and future needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "f352a18c-30d2-4054-a6a8-5f3f8cf7655c",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C104",
+      "claim": "The observation that TCR convergence is a favored prognostic predictor for ICB therapy was based on only three cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our observation that TCR convergence is a favored prognostic predictor for ICB therapy was based on only three cohorts, due to the lack of qualified datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "5ab1db98-714f-4d4f-9269-6b608a9be340",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C105",
+      "claim": "Future clinical studies with TCR repertoire profiles will be required to confirm TCR convergence as a new biomarker.",
+      "claim_type": "EXPLICIT",
+      "source": "Future clinical studies with TCR repertoire profiles will be required to confirm TCR convergence as a new biomarker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "22aee662-1cf0-4283-85f8-39696f4e6afb",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "claim_id": "C106",
+      "claim": "The detection of convergent T cells only requires the profiling of the immune repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the detection of convergent T cells is an easier task that only requires the profiling of the immune repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the practical advantage of studying TCR convergence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ead2befe-4f71-4a38-88a9-200881801a40",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TCR convergence is rare (5.40% of T cells), decreases exponentially with increasing degeneracy, and shows a preference for shorter CDR3 sequences (peaking at 11 amino acids) without significant bias in variable gene usage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36 provide consistent quantitative characterization of TCR convergence from a large dataset (n=50 samples, ~9.6M unique TCRs). The findings are internally consistent and supported by referenced figures. The statistical patterns described (exponential decrease with degeneracy, length distribution) are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "fcacb91f-2e0a-41af-bb1b-2c68318817f4",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Convergent TCRs favor polar neutral and acidic amino acids (particularly tyrosine, serine, and glutamic acid) independent of codon degeneracy level, suggesting that physiochemical properties rather than codon degeneracy determine TCR convergence patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 present amino acid composition analysis with statistical validation (binomial exact tests, p<2.2\u00d710^-16). The observation that amino acids with high codon degeneracy (leucine, arginine) don't show proportionally high TCR convergence, while those with low degeneracy (tyrosine, glutamic acid) do, supports the conclusion that physiochemical properties matter more than codon degeneracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "3e845446-ced1-4fe1-a534-702e9786a654",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TCR convergence and publicity represent distinct biological processes that diverge in cancer patients based on tumor mutation burden, with convergence-publicity overlap decreasing from 47.92% in healthy donors to 21.34% in high-TMB blood cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 demonstrate a clear trend across multiple cancer types with varying TMB. The quantitative data show systematic decrease in overlap between convergent and public TCRs as TMB increases, supporting the conclusion that these represent different biological processes. The comparison across healthy donors, COVID-19 recovered patients, and multiple cancer types strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "05854cd7-b6d5-4f5a-ad6b-e9388328bbda",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Convergent TCRs are significantly enriched for antigen-specificity compared to non-convergent TCRs (88-93% vs 12-71% in single-cell data; OR=8.94 vs 1.74 for clonal expansion in bulk data), establishing convergence as a superior indicator of antigen-specificity than clonal expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 provide strong evidence from two independent datasets (10x Genomics single-cell and bulk TCR-seq from SARS-CoV-2 exposed subjects). The odds ratios are substantial (up to 50.16 in donor 1) and statistically significant. The comparative analysis with clonal expansion provides important context. However, donor 4 shows weaker association (p=0.105), which the authors acknowledge but attribute to limited antigen coverage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "d99eed11-2abc-40b7-920b-a6b9fd07e755",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In a mouse tumor model, convergent CD8+ T cells (15.71%) are highly enriched in cluster 04 (87.5% convergent) expressing effector/exhaustion markers (Tox, Tigit, Eomes) and show significant enrichment for neoantigen specificity (OR=4.41, p<0.001), while absent from naive cluster 05.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C63 present coherent findings from mouse scRNA-seq/scTCR-seq data with tetramer validation. The stark contrast between clusters 04 and 05 (87.5% vs 0% convergent) with corresponding gene expression profiles provides strong evidence. The tetramer comparison directly validates neoantigen specificity. Sample sizes are adequate (n=9143 CD8+ cells).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "8861ffe5-5e90-4463-a8a4-b06a980247c2",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In human pan-cancer samples, convergent CD8+ T cells (10.15%) are enriched in activated/effector clusters (CD8-01-XCL1, CD8-05-FGFBP2) expressing cytotoxicity markers, recapitulating the mouse model findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 analyze a large human dataset (n=69,618 CD8+ cells) and demonstrate consistent patterns with the mouse model. The enrichment in specific clusters with appropriate gene expression signatures (XCL1, CXCR6, FGFBP2, GZMH, PRF1) is well-documented. Fisher's exact tests confirm statistical significance. The cross-species validation strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "7f8f557b-0038-4e79-a293-8e1d21e9c54b",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CD8+ T cells consistently show higher TCR convergence than CD4+ T cells across multiple datasets (mouse, human, bulk TCR-seq), both at the cell level and clone level, supporting the hypothesis that convergent T cells are antigen-experienced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 demonstrate consistent patterns across three independent datasets with different platforms. The analysis controls for clonal expansion by examining clone-level convergence. Statistical significance is shown (p<10^-5 to 10^-6). The consistency across datasets and analytical approaches strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TCR convergence is an independent prognostic predictor for ICB therapy outcomes, significantly associated with overall survival and progression-free survival in urothelial cancer (p=0.02, p=0.00038) and melanoma (p<0.0001) patients, remaining significant after adjusting for TCR clonality, diversity, and sequencing depth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C84 present survival analysis from two independent cohorts with appropriate statistical methods (Kaplan-Meier, log-rank test, multivariate Cox regression). The associations are strong and remain significant after covariate adjustment. The dramatic difference in progression-free survival (>90% vs 27% at 75 days) is clinically meaningful. However, the authors acknowledge this is based on only three cohorts (C104), which is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "96ba705f-f190-4b84-aa40-e67801a870e0",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TCR convergence demonstrates a strong link with antigen-specificity that is superior to T cell expansion and existing TCR repertoire indexes, potentially serving as a novel prognostic biomarker for immunotherapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the main conclusions synthesized from multiple lines of evidence (C47-C52 for antigen-specificity, C74-C84 for clinical prediction). The comparative analyses with clonal expansion and diversity indexes are well-documented. The claim about being a 'novel prognostic biomarker' (C7) is appropriately hedged with 'might be' given the limited number of validation cohorts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "4e387f7e-4a34-457e-82f7-e4d7b860bba9",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study has several limitations: TCR convergence detection relies heavily on sequencing accuracy and depth, requires large sample sizes, needs additional neoantigen-specific datasets for validation, and was tested in only three clinical cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C105 represent the authors' honest assessment of study limitations. These are reasonable concerns: sequencing errors could inflate convergence estimates (C100), the rarity of convergent T cells necessitates deep sequencing (C101-C102), and the clinical validation is limited to three cohorts (C104). The acknowledgment of these limitations is appropriate and demonstrates scientific rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "6bf2039f-86ce-4c75-8461-281aeec81fcf",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TCR convergence is defined as T cells sharing identical amino acid sequences but different DNA sequences due to codon degeneracy, which arises from the fact that 64 codons encode 20 amino acids, and is universally observed across individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C12 provide definitional and background information that is well-established in the field. The definition of TCR convergence (C1) is clear and consistent with cited literature (Looney et al., 2019). The theoretical TCR diversity (C8) and codon degeneracy facts (C11-C12) are standard molecular biology knowledge with appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "871c29c4-c433-4359-a623-13cdfb66e8fc",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context on T cell biology, antigen recognition, and existing approaches to studying TCR repertoires, including the challenges of identifying antigen-specific T cells and limitations of current TCR diversity metrics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C26 provide literature context with appropriate citations. The statements about T cell repertoire shaping (C13), antigen recognition (C15), challenges in identifying specificity (C17), and limitations of diversity indexes (C18-C20) are well-supported by cited references. The comparison with TCR clustering algorithms (C23-C26) provides useful context for positioning the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "62b1a17f-b798-4d56-a388-002b62405662",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TCR convergence may represent a functional redundancy mechanism in adaptive immunity, potentially serving as a fail-safe to ensure antigen-specific T cell expansion, distinct from the genetically encoded V(D)J recombination bias underlying public TCRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C89 are largely speculative interpretations (marked as SPECULATION in evidence_type). While the speculation is reasonable and consistent with the data showing convergence enrichment in antigen-specific T cells, these represent hypotheses about biological mechanisms rather than demonstrated findings. The distinction from public TCRs (C88-C89) is supported by data (C41-C46), but the mechanistic interpretation remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "63d47350-4902-42c5-959f-ccbde754822e",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CD8+ and CD4+ T cells have distinct TCR repertoires and functional roles, with CD8+ cells directly killing abnormal cells while CD4+ cells function as helpers or regulatory cells, potentially explaining higher convergence in CD8+ T cells due to greater antigen selection pressure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 present established knowledge about T cell biology with appropriate citations. The inference about why CD8+ cells show higher convergence (C93) is reasonable given the data (C70-C73) and the known functional differences, though it remains an interpretation rather than a directly tested mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "337a336c-06a9-475d-8f2e-0430b3b7a578",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Existing TCR diversity indexes (Shannon's entropy, richness, clonality) are routinely used but rarely show strong associations with patient outcomes because they reflect overall repertoire dynamics rather than antigen-specific responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 summarize limitations of current approaches based on literature (C19-C20) and provide rationale for the current study. The statement that diversity indexes 'rarely' show strong associations is supported by the cited references, though 'rarely' may be somewhat overstated given that some studies (C19) did find associations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    },
+    {
+      "id": "4d23a7f8-6949-4805-bb44-5cbb62dae46e",
+      "content_id": "59112ed2-a0b0-4a66-a7e3-15c69d001bc4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methodological details: the study analyzed 3 single-cell and 11 bulk TCR-seq datasets; antigen-specific T cells in tumors express cytotoxicity/memory/exhaustion signatures; convergent T cell detection only requires immune repertoire profiling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C53, C106 provide methodological context. The dataset description (C27) is factual. The statement about antigen-specific T cell signatures (C53) is well-supported by citations. The practical advantage of convergence detection (C106) is a reasonable observation about the relative simplicity of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:05:14.890155Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "399a0920-2cce-4a7a-9bcf-6422db184c72",
+      "result_id": "ead2befe-4f71-4a38-88a9-200881801a40"
+    },
+    {
+      "claim_id": "2bac2662-dde1-4cb6-9f21-38802580ee7f",
+      "result_id": "ead2befe-4f71-4a38-88a9-200881801a40"
+    },
+    {
+      "claim_id": "73d65c8a-5794-4a6f-9234-98b0de68b5f9",
+      "result_id": "ead2befe-4f71-4a38-88a9-200881801a40"
+    },
+    {
+      "claim_id": "ffb3a749-1b80-4b33-a849-e266feab40e1",
+      "result_id": "ead2befe-4f71-4a38-88a9-200881801a40"
+    },
+    {
+      "claim_id": "d84a0c6c-29c5-42b2-83f0-7ee7fb589410",
+      "result_id": "ead2befe-4f71-4a38-88a9-200881801a40"
+    },
+    {
+      "claim_id": "7222ed83-71ed-44db-9599-263e80a5c2fd",
+      "result_id": "ead2befe-4f71-4a38-88a9-200881801a40"
+    },
+    {
+      "claim_id": "1c307038-0c18-4b8b-a417-dba5b114d9ed",
+      "result_id": "ead2befe-4f71-4a38-88a9-200881801a40"
+    },
+    {
+      "claim_id": "ddd585ef-19ba-4ff0-ba21-baf35a3e707e",
+      "result_id": "ead2befe-4f71-4a38-88a9-200881801a40"
+    },
+    {
+      "claim_id": "cd47c7b0-7893-4ae0-8840-819ed962d591",
+      "result_id": "ead2befe-4f71-4a38-88a9-200881801a40"
+    },
+    {
+      "claim_id": "5d22fc47-53a0-4837-b9ee-285eff6b073f",
+      "result_id": "fcacb91f-2e0a-41af-bb1b-2c68318817f4"
+    },
+    {
+      "claim_id": "45c5e096-06fe-406f-bc27-5d7b3a87a198",
+      "result_id": "fcacb91f-2e0a-41af-bb1b-2c68318817f4"
+    },
+    {
+      "claim_id": "0e33bf50-b657-4729-9d3d-11bf240697ae",
+      "result_id": "fcacb91f-2e0a-41af-bb1b-2c68318817f4"
+    },
+    {
+      "claim_id": "3676ebb8-8756-4b82-a864-f116df7fa8e3",
+      "result_id": "fcacb91f-2e0a-41af-bb1b-2c68318817f4"
+    },
+    {
+      "claim_id": "0fe02832-f258-4a4c-b5cb-ec21505fff09",
+      "result_id": "3e845446-ced1-4fe1-a534-702e9786a654"
+    },
+    {
+      "claim_id": "a83b7f90-6468-4bdf-a68b-458dce6c46fe",
+      "result_id": "3e845446-ced1-4fe1-a534-702e9786a654"
+    },
+    {
+      "claim_id": "8a6a72c6-85f6-4424-9dc1-03adc6f7e5c0",
+      "result_id": "3e845446-ced1-4fe1-a534-702e9786a654"
+    },
+    {
+      "claim_id": "bf8113ae-2371-43e0-b517-b6b601373a38",
+      "result_id": "3e845446-ced1-4fe1-a534-702e9786a654"
+    },
+    {
+      "claim_id": "789aace4-b79f-4cdb-a253-fb03dc52ab6c",
+      "result_id": "3e845446-ced1-4fe1-a534-702e9786a654"
+    },
+    {
+      "claim_id": "834373b3-6748-4387-885f-adc2082184dd",
+      "result_id": "3e845446-ced1-4fe1-a534-702e9786a654"
+    },
+    {
+      "claim_id": "f1758bb3-8f9e-4a16-babc-6a4bf1182db6",
+      "result_id": "05854cd7-b6d5-4f5a-ad6b-e9388328bbda"
+    },
+    {
+      "claim_id": "c015df1c-a36e-4e7d-9793-8af72b368435",
+      "result_id": "05854cd7-b6d5-4f5a-ad6b-e9388328bbda"
+    },
+    {
+      "claim_id": "aa44d1ac-c59f-4536-aad5-bbfd7ee0aabd",
+      "result_id": "05854cd7-b6d5-4f5a-ad6b-e9388328bbda"
+    },
+    {
+      "claim_id": "9d5a3c8f-a9e1-44dc-9d22-2a9493b1e749",
+      "result_id": "05854cd7-b6d5-4f5a-ad6b-e9388328bbda"
+    },
+    {
+      "claim_id": "0cf69722-b55c-4cae-ba2f-b82a0e354fec",
+      "result_id": "05854cd7-b6d5-4f5a-ad6b-e9388328bbda"
+    },
+    {
+      "claim_id": "474073d4-6d26-4994-baf6-9c18869e8dd1",
+      "result_id": "05854cd7-b6d5-4f5a-ad6b-e9388328bbda"
+    },
+    {
+      "claim_id": "dd1405e1-ae02-41fe-baf0-de413cabbb2e",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "59507e70-7113-47a9-a0a9-5431612910ec",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "7049db5c-a9c3-4579-9b72-9e21e1bbd255",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "406b93e7-808a-4588-894d-e199cfef3527",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "57bcddbe-e9f7-4582-916c-9044cd2d6aad",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "a0a4986b-6f78-4c33-a0b8-33cd6fa7e7fb",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "ae09b369-9042-40da-96d9-6fec9d053f9a",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "beb796aa-537f-4285-906c-e75784642c54",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "1c05816d-d7ff-436d-97e0-a2ed46461c95",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "d28ed008-6d47-45ba-9d92-44f305694346",
+      "result_id": "d99eed11-2abc-40b7-920b-a6b9fd07e755"
+    },
+    {
+      "claim_id": "bff3b68a-287b-4318-a3ca-a6dcf36c2401",
+      "result_id": "8861ffe5-5e90-4463-a8a4-b06a980247c2"
+    },
+    {
+      "claim_id": "147ebea6-bdcb-4ee3-91b2-3f81b4659c85",
+      "result_id": "8861ffe5-5e90-4463-a8a4-b06a980247c2"
+    },
+    {
+      "claim_id": "f8c45199-ebaf-4ce1-b8c6-14bffb5b0e72",
+      "result_id": "8861ffe5-5e90-4463-a8a4-b06a980247c2"
+    },
+    {
+      "claim_id": "8c148a1c-7366-489a-b461-5b1558c74571",
+      "result_id": "8861ffe5-5e90-4463-a8a4-b06a980247c2"
+    },
+    {
+      "claim_id": "5ec9204f-94a6-4eec-8beb-cdeeec8c06d4",
+      "result_id": "8861ffe5-5e90-4463-a8a4-b06a980247c2"
+    },
+    {
+      "claim_id": "c4de69b1-97fd-43a5-861e-432f459f6def",
+      "result_id": "8861ffe5-5e90-4463-a8a4-b06a980247c2"
+    },
+    {
+      "claim_id": "21cce1a8-f1e5-4af1-943f-75fc27d988df",
+      "result_id": "7f8f557b-0038-4e79-a293-8e1d21e9c54b"
+    },
+    {
+      "claim_id": "d0181fc9-bb6f-49ac-9d3f-6afe69881059",
+      "result_id": "7f8f557b-0038-4e79-a293-8e1d21e9c54b"
+    },
+    {
+      "claim_id": "bf54be00-3fe3-4d81-8400-8ff9db0e6d2e",
+      "result_id": "7f8f557b-0038-4e79-a293-8e1d21e9c54b"
+    },
+    {
+      "claim_id": "f94f77f7-4b0c-4ef6-9b8b-8a91be9224b6",
+      "result_id": "7f8f557b-0038-4e79-a293-8e1d21e9c54b"
+    },
+    {
+      "claim_id": "6ed8909e-bab6-4238-8bd2-7865a3871a81",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "c975c37c-ed43-4eb3-9b84-ef615d64497a",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "1090cfb1-6241-4a2d-a50b-f299dc6096e0",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "1a70107f-0994-4a3b-b663-82a14817f2e4",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "7888af02-b152-4399-9a16-571a156dd0df",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "d66f28ad-1022-4bae-8756-71d3bfa09c8c",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "cbed6a1b-1aff-4a03-91db-310c99b92080",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "4bc3005f-6e19-49e0-9ca1-2e888d19e367",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "c87cff94-cdbd-4bdf-8c88-626e3e6446b7",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "903fd9b8-aabe-4359-b80a-4216c5b82b18",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "e25f34c3-ec7e-4c1d-b69e-f5ba5572a5a4",
+      "result_id": "ee5fb7a1-4a50-40e4-a004-94c815c0cac0"
+    },
+    {
+      "claim_id": "ef580001-5144-4b2a-b81c-04e681fa2548",
+      "result_id": "96ba705f-f190-4b84-aa40-e67801a870e0"
+    },
+    {
+      "claim_id": "d95c7085-f4c2-42e7-b352-7db1179099ab",
+      "result_id": "96ba705f-f190-4b84-aa40-e67801a870e0"
+    },
+    {
+      "claim_id": "93d21d4c-8bb4-45d4-b70b-acbb5efffd87",
+      "result_id": "96ba705f-f190-4b84-aa40-e67801a870e0"
+    },
+    {
+      "claim_id": "725e5508-7d86-49d0-82b8-0a25c9edaf05",
+      "result_id": "96ba705f-f190-4b84-aa40-e67801a870e0"
+    },
+    {
+      "claim_id": "24168cc3-855a-435c-854a-67e2b34aa4d2",
+      "result_id": "96ba705f-f190-4b84-aa40-e67801a870e0"
+    },
+    {
+      "claim_id": "7ec939d2-309e-4e4b-a9f6-04e851e598f7",
+      "result_id": "96ba705f-f190-4b84-aa40-e67801a870e0"
+    },
+    {
+      "claim_id": "474073d4-6d26-4994-baf6-9c18869e8dd1",
+      "result_id": "96ba705f-f190-4b84-aa40-e67801a870e0"
+    },
+    {
+      "claim_id": "8351d9ee-59a6-4343-8be9-01fc61f7bc96",
+      "result_id": "96ba705f-f190-4b84-aa40-e67801a870e0"
+    },
+    {
+      "claim_id": "75526bb1-409b-4577-8707-5ee613eb0b03",
+      "result_id": "96ba705f-f190-4b84-aa40-e67801a870e0"
+    },
+    {
+      "claim_id": "79060c83-7536-439e-b5c3-3942232968c5",
+      "result_id": "4e387f7e-4a34-457e-82f7-e4d7b860bba9"
+    },
+    {
+      "claim_id": "4dfed3a5-d334-43b3-891c-71124cc774a4",
+      "result_id": "4e387f7e-4a34-457e-82f7-e4d7b860bba9"
+    },
+    {
+      "claim_id": "ad4c273d-fd7a-490d-91ac-0a2eb935823a",
+      "result_id": "4e387f7e-4a34-457e-82f7-e4d7b860bba9"
+    },
+    {
+      "claim_id": "37760f8b-e550-491e-a19f-5b989d75452f",
+      "result_id": "4e387f7e-4a34-457e-82f7-e4d7b860bba9"
+    },
+    {
+      "claim_id": "c2a2fab1-e06f-48c0-bdfc-56e85247764d",
+      "result_id": "4e387f7e-4a34-457e-82f7-e4d7b860bba9"
+    },
+    {
+      "claim_id": "f352a18c-30d2-4054-a6a8-5f3f8cf7655c",
+      "result_id": "4e387f7e-4a34-457e-82f7-e4d7b860bba9"
+    },
+    {
+      "claim_id": "5ab1db98-714f-4d4f-9269-6b608a9be340",
+      "result_id": "4e387f7e-4a34-457e-82f7-e4d7b860bba9"
+    },
+    {
+      "claim_id": "8ee4da8f-b4de-44d8-a738-3f5087711d18",
+      "result_id": "6bf2039f-86ce-4c75-8461-281aeec81fcf"
+    },
+    {
+      "claim_id": "c9fe4c94-7402-444c-a62a-36e913e896b5",
+      "result_id": "6bf2039f-86ce-4c75-8461-281aeec81fcf"
+    },
+    {
+      "claim_id": "0d038091-4b5b-4dd8-9d6f-19950de8e75c",
+      "result_id": "6bf2039f-86ce-4c75-8461-281aeec81fcf"
+    },
+    {
+      "claim_id": "56109afa-15c5-425e-b525-4ec6fdd464a1",
+      "result_id": "6bf2039f-86ce-4c75-8461-281aeec81fcf"
+    },
+    {
+      "claim_id": "9abfeae8-1229-4942-b93b-560fa08c3dca",
+      "result_id": "6bf2039f-86ce-4c75-8461-281aeec81fcf"
+    },
+    {
+      "claim_id": "cd221996-c649-4743-aedc-cbe073233de0",
+      "result_id": "6bf2039f-86ce-4c75-8461-281aeec81fcf"
+    },
+    {
+      "claim_id": "588fe06e-9d1d-452f-addc-8cb210e86916",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "052e8b91-6cd3-4fe5-a9bc-de2f82d7a912",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "cb404876-6e07-4a0b-9b75-784fbb19db53",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "a0bb6fc8-d4c7-4050-88b0-186c5217802c",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "0d28bdfb-fed5-4565-af13-33d5dc110c4b",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "f2b2ab3c-50dc-48bc-a212-c8867037d28f",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "2a060f44-1ef0-4731-b82d-366ff6c11e43",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "417592f8-06fb-4332-b400-7095a13ef11c",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "36cd658d-d78b-4d6e-975c-495e1ca7f500",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "ceca26ef-a89d-4447-939d-6a782aefd384",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "11e613d3-a18d-4a92-9ed4-c09333968c98",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "bde8d697-cb5e-4789-a2b4-d8e59c570907",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "2200743e-185f-4ff1-8b82-00da112cada9",
+      "result_id": "871c29c4-c433-4359-a623-13cdfb66e8fc"
+    },
+    {
+      "claim_id": "5b9c6f27-94f1-467f-8d6c-365bbd3148f7",
+      "result_id": "62b1a17f-b798-4d56-a388-002b62405662"
+    },
+    {
+      "claim_id": "cca37f80-ab8f-4a23-90db-c3062aa4bbaf",
+      "result_id": "62b1a17f-b798-4d56-a388-002b62405662"
+    },
+    {
+      "claim_id": "18db7991-720f-403c-9a9f-ac67383085b9",
+      "result_id": "62b1a17f-b798-4d56-a388-002b62405662"
+    },
+    {
+      "claim_id": "0a1075bc-47ab-440e-92cb-a51c235d6beb",
+      "result_id": "62b1a17f-b798-4d56-a388-002b62405662"
+    },
+    {
+      "claim_id": "37ff70d3-09f6-47ad-b47b-857e8c5e1306",
+      "result_id": "62b1a17f-b798-4d56-a388-002b62405662"
+    },
+    {
+      "claim_id": "28cdf523-a661-4f41-ac71-218843369757",
+      "result_id": "63d47350-4902-42c5-959f-ccbde754822e"
+    },
+    {
+      "claim_id": "10460268-0164-40de-bf4d-3a3727fb2c6f",
+      "result_id": "63d47350-4902-42c5-959f-ccbde754822e"
+    },
+    {
+      "claim_id": "543203e4-944f-4c00-80b7-d7aad59af36e",
+      "result_id": "63d47350-4902-42c5-959f-ccbde754822e"
+    },
+    {
+      "claim_id": "f9f528f1-4fbd-4ea9-9693-86a5be7a0d95",
+      "result_id": "63d47350-4902-42c5-959f-ccbde754822e"
+    },
+    {
+      "claim_id": "1970c17c-a5b7-434d-8e19-c1c5ce6b55bf",
+      "result_id": "337a336c-06a9-475d-8f2e-0430b3b7a578"
+    },
+    {
+      "claim_id": "9e7ac4c1-024b-4278-a02a-31895534e9a4",
+      "result_id": "337a336c-06a9-475d-8f2e-0430b3b7a578"
+    },
+    {
+      "claim_id": "fe1ec587-5e98-4755-b58d-9f65e1f1b840",
+      "result_id": "337a336c-06a9-475d-8f2e-0430b3b7a578"
+    },
+    {
+      "claim_id": "3a41aa09-ea6a-4fdc-9fc6-902a6308e865",
+      "result_id": "4d23a7f8-6949-4805-bb44-5cbb62dae46e"
+    },
+    {
+      "claim_id": "3f94237d-91f0-450e-9201-738d49ba8294",
+      "result_id": "4d23a7f8-6949-4805-bb44-5cbb62dae46e"
+    },
+    {
+      "claim_id": "22aee662-1cf0-4283-85f8-39696f4e6afb",
+      "result_id": "4d23a7f8-6949-4805-bb44-5cbb62dae46e"
+    }
+  ],
+  "comparisons": []
+}

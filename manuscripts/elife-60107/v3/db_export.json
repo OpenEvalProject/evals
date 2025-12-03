@@ -1,0 +1,1355 @@
+{
+  "submission": {
+    "id": "5973b552-0f3e-4a7f-908f-690454027bed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:08:36.431078Z",
+    "updated_at": "2025-12-03T01:08:36.431078Z"
+  },
+  "content": [
+    {
+      "id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "submission_id": "5973b552-0f3e-4a7f-908f-690454027bed",
+      "content_type": "manuscript",
+      "content_text": "# A variant-centric perspective on geographic patterns of human allele frequency variation\n\n## Authors\n\n- Arjun Biddanda<sup>1</sup> ([ORCID: 0000-0003-1861-1523](https://orcid.org/0000-0003-1861-1523))\n- Daniel P Rice<sup>1</sup> ([ORCID: 0000-0002-9509-2694](https://orcid.org/0000-0002-9509-2694))\n- John Novembre<sup>1</sup> ([ORCID: 0000-0001-5345-0214](https://orcid.org/0000-0001-5345-0214)) \u2020\n\n### Affiliations\n\n1. Department of Human Genetics, University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA key challenge in human genetics is to understand the geographic distribution of human genetic variation. Often genetic variation is described by showing relationships among populations or individuals, drawing inferences over many variants. Here, we introduce an alternative representation of genetic variation that reveals the relative abundance of different allele frequency patterns. This approach allows viewers to easily see several features of human genetic structure: (1) most variants are rare and geographically localized, (2) variants that are common in a single geographic region are more likely to be shared across the globe than to be private to that region, and (3) where two individuals differ, it is most often due to variants that are found globally, regardless of whether the individuals are from the same region or different regions. Our variant-centric visualization clarifies the geographic patterns of human variation and can help address misconceptions about genetic differentiation among populations.\n\n## Introduction\n\nUnderstanding human genetic variation, including its origins and its consequences, is one of the long-standing challenges of human biology. A first step is to learn the fundamental aspects of how human genomes vary within and between populations. For example, how often do variants have an allele at high frequency in one narrow region of the world that is absent everywhere else? For answering many applied questions, we need to know how many variants show any particular geographic pattern in their allele frequencies.\n\nIn order to answer such questions, one needs to measure the frequencies of many alleles around the world without the ascertainment biases that affect genotyping arrays and other probe-based technologies (International HapMap Consortium, 2005; Li et al., 2008). Recent whole-genome sequencing studies (Auton et al., 2015;\u00a0Mallick et al., 2016; Bergstr\u00f6m et al., 2019; Fairley et al., 2020) provide these data, and thus present an opportunity for new perspectives on human variation.\n\nHowever, large genetic data sets present a visualization challenge: how does one show the allele frequency patterns of millions of variants? Plotting a joint site frequency spectrum (SFS) is one approach that efficiently summarizes allele frequencies and can be carried out for data from two or three populations (Gutenkunst et al., 2009). For more than three populations, one must resort to showing multiple combinations of two or three-population SFSs. This representation becomes unwieldy to interpret for more than three populations and cannot represent information about the joint distribution of allele frequencies across all populations. Thus, we need visualizations that intuitively summarize allele frequency variation across several populations.\n\nNew visualization techniques also have the potential to improve population genetics education and research. Many commonly used analysis methods, such as principal components analysis (PCA) or admixture analysis, do a poor job of conveying absolute levels of differentiation (McVean, 2009; Lawson et al., 2018). Observing the genetic clustering of individuals into groups can give a misleading impression of \u2018deep\u2019 differentiation between populations, even when the signal comes from subtle allele frequency deviations at a large number of loci (Patterson et al., 2006; McVean, 2009; Novembre and Peter, 2016). Related misconceptions can arise from observing how direct-to-consumer genetic ancestry tests apportion ancestry to broad continental regions. One may mistakenly surmise from the output of these methods that most human alleles must be sharply divided among regional groups, such that each allele is common in one continental region and absent in all others. Similarly, one might mistakenly conclude that two humans from different regions of the world differ mainly due to alleles that are restricted to each region. Such misconceptions can impact researchers and the broader public alike. All these misconceptions potentially can be avoided with visualizations of population genetic data that make typical allele frequency patterns more transparent.\n\nHere, we develop a new representation of population genetic data and apply it to the New York Genome Center deep coverage sequencing data of the 1000 Genomes Project (1KGP) samples (Auton et al., 2015). In essence, our approach represents a multi-population joint SFS with coarsely binned allele frequencies. It trades precision in frequency for the ability to show several populations on the same plot. Overall, we aimed to create a visualization that is easily understandable and useful for pedagogy. As we will show, the visualizations reveal with relative ease many known important features of human genetic variation and evolutionary history.\n\nThis work follows in the spirit of Rosenberg, 2011 who used an earlier dataset of microsatellite variation to create an approachable demonstration of major features in the geographic distribution of human genetic variation (as well as earlier related papers such as Lewontin, 1972; Mountain and Ramakrishnan, 2005; Witherspoon et al., 2007). Our results complement several recent analyses of single-nucleotide variants\u00a0(SNVs) in whole-genome sequencing data from humans (Auton et al., 2015; Mallick et al., 2016; Bergstr\u00f6m et al., 2019). We label the approach taken here a variant-centric view of human genetic variation, in contrast to representations that focus on individuals or populations and their relative levels of similarity.\n\n## Materials and methods\n\nTo introduce the approach, we begin with considering 100 randomly chosen SNVs sampled from Chromosome 22 of the 1KGP high coverage data (Box 1, Fairley et al., 2020). Figure 1 shows the allele frequency of each variant (rows) in each of the 26 populations of the 1KGP (columns, see Supplementary file 1 for labels). As a convention throughout this paper, we use darker shades of blue to represent higher allele frequency, and we keep track of the globally minor allele, that\u00a0is, the rarer (<50% frequency) allele within the full sample. The figure shows that variants seem to fall into a few major descriptive categories: variants with alleles that are localized to single populations and rare within them, and variants with alleles that are found across all 26 populations and are common within them.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig1-v3.jpg)\n\n**Figure 1.:** Frequencies of the globally minor allele are shown across 26 populations (columns) from the 1KGP for 100 randomly chosen variants from Chromosome 22. Note that the allele frequency bin spacing is nonlinear to capture variation at low as well as high frequencies. Populations are ordered by broad geographic region (horizontal labels, see Figure 2A for legend). Definitions of abbreviations for the 26 1KGP populations are given in Supplementary file 1.\n\nTo investigate whether such patterns hold genome-wide, we devise a scheme that allows us to represent the\u00a0>90 million SNVs in the genome-wide data (Figure 2). First, we follow the 1KGP study in grouping the samples from the 26 populations into five geographical ancestry groups: African (AFR), European (EUR), South Asian (SAS), East Asian (EAS), and Admixed American (AMR) (Figure 2A, Box 1). For clarity, we modify the original 1KGP groupings slightly for this project (by including several samples from the Americas in the AMR grouping, see Box 1). While human population structure can be dissected at much finer scales than these groups (e.g. Leslie et al., 2015; Novembre and Peter, 2016), the regional groupings we use are a practical and instructive starting point\u2014as we will show, several key features of human evolutionary history become apparent, and many misconceptions about human differentiation can be addressed efficiently with this coarse approach (see Discussion). As any such groupings are necessarily arbitrary, we also show results without using regional groupings to calculate frequencies (see section \u2018Finer-scale resolution of variant distributions\u2019 below).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig2-v3.jpg)\n\n**Figure 2.:** (A) Regional groupings of the 26 populations in the 1KGP Project. (B) Legend for minor allele frequency bins. (C) Two examples of how a verbal description of an allele frequency map can be communicated equivalently with a five-letter code (yellow signifies the major allele frequency, blue signifies the minor allele frequency in the pie charts).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We have assumed that allele frequencies follow Hardy-Weinberg equilibrium, and the probability of no observations of an allele is calculated using the binomial distribution.\n\nTo represent the geographic distributions of alleles compactly, we give every variant a five-letter code according to its allele frequencies across regions (Figure 2A). More precisely, for each bi-allelic SNV, we identify the global rarer (minor) allele. Then for each region, we code the allele\u2019s frequency as \u2018u\u2019, \u2018R\u2019, or \u2018C\u2019, based on whether the allele is \u2018(u)ndetected,\u2019 \u2018(R)are,\u2019 or \u2018(C)ommon\u2019 (Figure 2B). To distinguish between \u2018rare\u2019 and \u2018common\u2019 alleles, we used a threshold of 5% frequency. Finally, we concatenate the allele\u2019s regional frequency codes in the fixed (and arbitrary) order: AFR, EUR, SAS, EAS, and AMR. This procedure generates a \u2018geographic distribution code\u2019 for each variant. For example, the code \u2018CCCCC\u2019 represents a variant that is common across every region, while \u2018uuRuu\u2019 represents a variant that is rare in South Asia and unobserved elsewhere (Figure 2C). To display the relative abundance of codes within a set of variants, we use a vertical stack from the most abundant code at the bottom to the least abundant at the top, with the height of each code proportional to its abundance, so that the cumulative proportions of the rank-ordered codes are easily readable (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig3-v3.jpg)\n\n**Figure 3.:** (A) We observe variants at\u00a0~3.1% of the measurable sites in the reference human genome (GRCh38). A measurable site is one at which it is possible to detect variation with current sequencing technologies (currently approximately 2.9 Gb out of 3.1 Gb in the human genome; ). (B and C) The relative abundance of different geographic distributions for 1KGP variants, (B) including singletons, and (C) excluding singletons. In panels B and C, the right-hand rectangles show the number and percentage of variants that fall within the corresponding geographic code on the left-hand side; distribution patterns are sorted by their abundance, from bottom-to-top. See Figure 2 for an explanation of the five-letter \u2018u\u2019,\u00a0\u2019R\u2019,\u00a0\u2019C\u2019 codes. The proportion of the genome with variants that have a given geographic distribution code can be calculated from the data above (for example, with the \u2018Ruuuu\u2019 code, as 17%\u00a0\u00d7\u00a03.1%\u00a0=\u00a00.53%). The gray box represents geographic distribution codes whose abundances are too rare to effectively display at the given figure resolution.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The relative abundance of geographic distribution codes within the\u00a0~92 million variants when using an MAF of 1% as the distinction between \u2018common\u2019 (\u2018C\u2019), and \u2018rare\u2019 (\u2018R\u2019). The right-hand panel shows the percentage of variants that fall within the geographic code represented on the left-hand side; distribution patterns are sorted by their abundance, from bottom-to-top. (B) The abundance of geographic distribution codes for ~44 million non-singleton variants using an MAF of 1% as the boundary between \u2018common\u2019 (\u2018C\u2019), and \u2018rare\u2019 (\u2018R\u2019). (C) Comparison for the abundance of geographic distribution codes when polarizing to the ancestral and derived allele (using build 38) versus major/minor allele. We only include positions where an ancestral allele is supported by at least two outgroups. At 96.6% of variants (80,068,013/82,919,198), the minor allele is also the derived allele.\u00a0Human ancestral allele calls for GRCh38 based on an\u00a0eight\u00a0primate EPO alignment from Ensembl (see key resources table), using only ancestral allele calls supported by at least two outgroup species.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Top 10 categories when conditioning on the variant being \u2018common\u2019 (MAF\u00a0>5%) in at least one\u00a0continental\u00a0group. Conditioned on a variant being common in a single g, 37.3% of variants are categorized as \u2018globally common\u2019 or \u2018CCCCC\u2019. (B) The proportion of variants that fall within the \u2018globally common\u2019 or \u2018CCCCC\u2019 geographic distribution code conditional on the variant being common (MAF\u00a0>5%) in the specific continental group.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) The proportion of variants that fall within a given geographic distribution code conditional on the variant being \u2018globally widespread\u2019, that\u00a0is, a category that has no unobserved ('u') codes. We note that 55.6% of variants conditioned on being globally widespread are also globally common (\u2018CCCCC\u2019). In terms of absolute numbers, variants that are common in at least one population (S\u00a0=\u00a09,958,838) that are also globally widespread (S\u00a0=\u00a06,322,767) comprise\u00a0~63% of the total when conditioning on being common in at least one population. When conditioning on variants common only in regions outside Africa (S\u00a0=\u00a07,544,648), the percentage of globally widespread variants (S\u00a0=\u00a06,179,781) increases to\u00a0~82%. (B) The proportion of variants that fall within a \u2018globally present\u2019 category, defined as categories that contain no unobserved (\u2018u\u2019) codes, conditional on the variant being common (MAF\u00a0>5%) in the specific continental group.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Gutenkunst et al., 2009, (B\u2013E) Tennessen et al., 2012. For each model, we used stdpopsim (Adrion et al., 2020) to simulate 10 replicates\u00a0of SNVs equivalent to 5% of Chromosome 22. For each model we simulated three different sample sizes per population, the first with 100 diploid samples, 500 diploid samples, and 1000 diploid samples. The panels with n\u00a0=\u00a0500 diploid samples per population most closely match the sampling within the 1KGP (nAFR\u00a0=\u00a0504, nEUR\u00a0=\u00a0503, nEAS\u00a0=\u00a0504). Both models replicate the qualitative prevalence of the \u2018localized rare\u2019 (\u2018RU\u2019) and \u2018globally common\u2019 (\u2018CC\u2019) patterns that we see in the 1KGP data. With higher sample sizes we find an increased proportion of localized rare (\u2018RU\u2019) patterns, due to increased detection power. Panels (C\u2013E) show specific pairwise comparisons of populations in the model of Gutenkunst et al., 2009 to compare against the two-population model of Tennessen et al., 2012. Panels (A) and (C) show that, when restricted to AFR/EUR comparisons, the two models predict very similar patterns. The prevalence of localized rare and globally common patterns is reproduced across all comparisons, as is the dependence on sample size. The EUR/EAS comparison (E) shows a larger number of \u2018RR\u2019 patterns, presumably reflecting the more recent divergence of those populations.\n\n## Results\n\nUsing the encoding scheme just described, we generated geographic distribution codes for all\u00a0~92 million biallelic SNVs in the 1000 Genomes dataset and display their relative proportions (Figure 3). The distribution of codes is heavily concentrated, with 85% of variants falling into just eight codes out of the 242 that are possible (35\u20131: three frequency categories in each of five regional groupings, subtracting the code \u2018UUUUU\u2019 as each variant has been observed by definition). Of the top eight codes, the top four codes represent rare variants that are localized in a single region. The fifth most abundant code, \u2018RuuuR\u2019, represents rare variants found in Africa and the Admixed Americas (which includes African American individuals, for example). The sixth code is another set of localized rare variants (\u2018uRuuu\u2019, i.e. variants rare in EUR). The seventh code is \u2018CCCCC\u2019 or \u2018globally common variants.\u2019 The eighth most abundant category, \u2018uRuuR\u2019, represents rare variants found in Europe and the Admixed Americas. Conspicuously infrequent in the distribution are variants that are common in only one region outside of Africa and absent in others (e.g. \u2018uCuuu\u2019, \u2018uuCuu\u2019, \u2018uuuCu\u2019, \u2018uuuuC\u2019). Instead, when a variant is found to be common (>5% allele frequency) in one population, the modal pattern (37.3%) is that it is common across the five regions (\u2018CCCCC\u2019). Further, 63% of variants common in at least one region are also globally widespread, in the sense of being found across all five regions. This number rises to 82% for variants common in at least one region outside of Africa (Figure 3\u2014figure supplements 1\u00a0and\u00a02).\n\nSingleton variants\u2014alleles found in a single individual\u2014are the most abundant type of variant in human genetic data and are necessarily found in just one geographic region. To focus on the distributions of non-singleton variants, we removed singletons and tallied again the relative abundance of patterns (Figure 3C). Removing singletons reduces the absolute number of variants observed by 48.2% (91,784,637 vs. 44,290,364). Without singletons, we see more clearly the abundance of patterns that have rare variants shared between two or more regions (codes with two \u2018R\u2019s and one \u2018u\u2019, such as \u2018uuRRu\u2019 or \u2018RRuuu\u2019).\n\nThe scheme for geographic distribution codes requires a few choices. For comparison, we show results using a 1% minor allele frequency threshold to define \u2018common\u2019 variants (Figure 3\u2014figure supplement 3A). We also produced results tracking the derived (younger) rather than the globally minor allele (Figure 3\u2014figure supplement 3C; for 96.6% of variants in the dataset with high-quality ancestral allele calls [Box 1], the globally minor allele is the derived allele). Neither changing the frequency threshold to 1% nor tracking the derived allele meaningfully affects the major patterns observed.\n\nThe patterns observed here are interpretable in light of some basic principles of population genetics. Rare variants are typically the result of recent mutations (Mathieson and McVean, 2014; Kiezun et al., 2013; Kimura and Ohta, 1973; Albers and McVean, 2020). Thus, we interpret the localized rare variants (such as \u2018Ruuuu\u2019 or \u2018uuuRu\u2019) as mostly young mutations that have not had time to spread geographically. The code \u2018CCCCC\u2019 (globally common variants), likely comprises mostly older variants that arose in Africa and were spread globally during the Out-of-Africa migration and other dispersal events (see Box 2). The appearance of rare variants shared between two or more regions (codes with two \u2018R\u2019s and three \u2018u\u2019s, such as \u2018uuRRu\u2019 or \u2018RRuuu\u2019) is likely the signature of recent gene flow between those regions (Box 2; Platt et al., 2019; Mathieson and McVean, 2014; Gutenkunst et al., 2009). In particular, the abundant \u2018RuuuR\u2019 and \u2018uRuuR\u2019 codes likely represent young variants that are shared between the Admixed Americas and Africa (\u2018RuuuR\u2019) or Europe (\u2018uRuuR\u2019) because of the population movements during the last 500 years that began with European colonization of the Americas and the subsequent slave trade from Africa. We interpret the 10th most abundant code (\u2018CuuuR\u2019, Figure 3B) as mostly variants that were lost in the Out-of-Africa bottleneck and subsequently carried to the Americas by African ancestors. There is a relative absence of variants that are common in only one region outside of Africa and absent across all others (e.g. \u2018uCuuu\u2019, \u2018uuCuu\u2019, \u2018uuuCu\u2019, \u2018uuuuC\u2019). These\u00a0patterns are consistent with human populations having not diverged deeply, in the sense that there has not been sufficient time for genetic drift to greatly shift allele frequencies among them (Box 2). To help make this clear, consider the alternative scenario\u2014a model with very ancient population splits (Coon, 1962). In such a model, one would expect many more variants to be common to one region and absent in others (\u2018Cuuuu\u2019 or \u2018uuuCu\u2019 for example, see Box 2). Overall, these results reflect a timescale of divergence consistent with the Recent-African-Origin model of human evolution as well as subsequent gene flow among regions (Cann et al., 1987; Stringer and Andrews, 1988; Thomson et al., 2000; Ramachandran et al., 2005; Pickrell and Reich, 2014).\n\n### The variants that differ between a pair of individuals\n\nWhile Figure 3 illustrates genetic variants found in a large, global sampling of human diversity, it does not show what to expect for the variants that differ between pairs of individuals. Are the variants that differ between two individuals more often geographically widespread or spatially localized?\n\nTo address this question, we considered the variants carried by pairs of individuals from the whole-genome sequencing data of the Simons Genome Diversity Project (SGDP) (Mallick et al., 2016; Figure 4). The SGDP sampled 300 individuals from 142 diverse populations. We use the SGDP data to avoid ascertainment biases that might arise from looking at individuals within the same dataset we use to measure allele frequencies. Figure 4 shows a representative subset with six pairs chosen from three populations (Figure 4\u2014figure supplement 1, shows a larger set of examples). For each pair, we see some variants that were undiscovered in the 1KGP data (denoted $S_{u}$\u00a0in the figure). These account for 17\u201320% of each set of pairwise SNVs and are likely rare variants. We see that the variants that differ between each pair of individuals are typically globally widespread (i.e. codes with no \u2018u\u2019s, with proportions out of the total S varying from 54%\u00a0to\u00a076% for the pairs in Figure 4). The observation of mostly globally common variants in pairwise comparisons may seem counterintuitive considering the abundance of rare, localized variants overall. However, precisely because rare variants are rare, they are not often carried by either individual in a pair. Instead, pairs of individuals mostly differ because one of them carries a common variant that the other does not; and as Figure 3 already showed, common variants in any single location are often common throughout the world (also see Figure 6 and Figure 3\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig4-v3.jpg)\n\n**Figure 4.:** (A) Definition of a pairwise SNV. (B) The abundance of geographic distribution codes for different pairs of individuals from the SGDP dataset. Above each plot, we show the total number of variants that differ between each individual (S) and the number that were unobserved completely in the 1KGP data (SU). Across the bottom, we show the proportion of variants with globally widespread alleles for each pair. We calculate this as the fraction of variants with no \u2018u\u2019 encodings over the total number of variants (S). (Note: by doing so, we make the assumption that if a variant is not found in the 1KGP data it is not globally widespread).\u00a0For this analysis, as in Mallick et al., 2016,\u00a0we include only autosomal biallelic SNVs for variants that pass\u00a0\u2018filter level 1\u2019.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig4-figsupp1-v3.jpg)\n\nFrom the example pairwise comparisons (Figure 4, and Figure 4\u2014figure supplement 1), one also observes evidence for higher diversity in Africa, which is typically interpreted in terms of founder effects reducing diversity outside of Africa (Cann et al., 1987; Harpending and Eller, 2000; Harpending and Rogers, 2000; Ramachandran et al., 2005; Prugnolle et al., 2005), although other models, especially ones including substantial subsequent admixture, can also produce this pattern (DeGiorgio et al., 2009; Pickrell and Reich, 2014). For example, the two Yoruba individuals have more pairwise SNVs (S\u00a0=\u00a04,897,091) than the French/French (S\u00a0=\u00a03,525,519) and Han/Han (S\u00a0=\u00a03,358,497) pairs. Pairs involving one or both of the sample Yoruba individuals have more variants with alleles common in Africa and rare or absent elsewhere (e.g. \u2018CuuuR\u2019,\u2019 RuuuR\u2019). Finally, a more subtle, but expected, impact of founder effects is that the sample Yoruba/Yoruba comparison is expected to have higher numbers of pairwise variants than the sample Yoruba/Han or Yoruba/French comparison, which we observe.\n\n### The geographic distributions of variants typed on genotyping arrays\n\nTargeted genotyping arrays are a cost-effective alternative to whole-genome sequencing. In contrast to whole-genome sequencing, genotyping arrays use targeted probes to measure an individual\u2019s genotype only at preselected variant sites. The process of discovering and selecting these target sites typically enriches the probe sets toward common variants (Clark et al., 2005), underrepresents geographically localized variants (Albrechtsen et al., 2010; Lachance and Tishkoff, 2013),\u00a0and\u00a0can affect genotype imputation and genetic risk prediction\u00a0(Howie et al., 2012; Martin et al., 2017).\n\nFigure 5 shows the geographic distributions of bi-allelic SNVs included on five popular array products. In stark contrast with the SNVs identified by whole-genome sequencing (Figure 3B), a large fraction of the variants on genotyping arrays are globally common. This is especially true for the Affy6, Human Origins, and OmniExpress arrays, which were designed using polymorphisms ascertained from a smaller number of sequenced individuals, and primarily capture more common variants due to this ascertainment. The Omni2.5Exome and MEGA arrays in contrast exhibit many more rare variants. In both these arrays, the second and third most abundant codes are \u2018CuuuR\u2019 and \u2018RuuuR\u2019 variants. The MEGA array was uniquely designed to capture rare variation in undersampled continental groups, including African ancestries (Bien et al., 2016; Bien et al., 2019). Wojcik et al., 2019 found that this design improved African and African American imputation accuracy, leading to greater power to map population-specific disease risk.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig5-v3.jpg)\n\n**Figure 5.:** (A) Genotyping arrays consist of probes for a fixed set of variants chosen during the design of the array product. (B) For each array product, we extracted the genomic position of variants found on the array and kept variants that are also found within the 1KGP to highlight their geographic distributions.\u00a0The arrays considered are the Affymetrix 6.0 (Affy6) genotyping array, the Affymetrix Human Origins array (HumanOrigins), the Illumina HumanOmniExpress (OmniExpress) array, the Illumina Omni2.5Exome, and the Illumina MEGA array.\u00a0This plot is analogous to Figure 3B but rather than calculating frequencies with the five regional groupings, we compute them within each of the 26 1KGP populations. The total number of variants represented is the same as in Figure 3B (S = 91,784,367). See Figure 2 for an explanation of the \u2018u\u2019,\u2019R\u2019,\u2019C\u2019 codes.\n\n### Finer-scale resolution of variant distributions\n\nWhile the use of five regional groupings above allows us to describe variant distributions compactly with a five-digit encoding, the basic principle of grouping allele frequencies can be extended to build a 26-digit encoding for the 1KGP variants (Figure 6, Figure 6\u2014figure supplements 1\u20133). Doing so with the set of ~92 million variants found in the 1KGP project (Figure 6), we find a consistent pattern with Figure 3B, in that the majority of variants are seen to be rare and geographically localized (1 \u2018R\u2019, and the remainder \u2018u\u2019s), and when a variant is common in any one population, it is typically common across the full set of populations (Figure 6, pattern with all \u2018C\u2019s). This view reveals that the five-digit encodings with 1 \u2018R\u2019 and 4 \u2018u\u2019s are often due to variants that are rare even within a single population. This is not unexpected given many of them are singletons. When we remove singletons (Figure 6\u2014figure supplement 1B), we again see more clearly rare allele sharing indicative of recent gene flow, although at finer-scale resolution.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig6-v3.jpg)\n\n**Figure 6.:** This plot is analogous to Figure 3B but rather than calculating frequencies with the five regional groupings, we compute them within each of the 26 1KGP populations. The total number of variants represented is the same as in Figure 3B (S = 91,784,367). See Figure 2 for an explanation of the \u2018u\u2019,\u2019R\u2019,\u2019C\u2019 codes.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Regional groupings are provided on the bottom to reflect our choices for population groupings throughout the main paper.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig6-figsupp2-v3.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig6-figsupp3-v3.jpg)\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/60107/elife-60107-fig6-figsupp4-v3.jpg)\n\n**Figure 6\u2014figure supplement 4.:** The variants were chosen at random from among those on Chromosome 22 that have MAF\u00a0>5% in all 26 populations. For example, the top row represents an allele that has higher frequency in several African and admixed American populations. Variants are ordered based on hierarchical clustering on the Euclidean distance between minor allele frequency profiles across all populations.\n\n## Discussion\n\nBy encoding the geographic distributions of the ~92 million biallelic SNVs in the 1KGP data and tallying their abundances, we have provided a new visualization of human genetic diversity. We term our figures \u2018GeoVar\u2019 plots as they help reveal the geographic distribution of sets of variants. GeoVar plots can complement other methods of visualizing population structure, including: plots of pairwise genetic distance, dimensionality-reduction approaches such as PCA, admixture proportion estimates such as STRUCTURE, and explicitly spatial methods that use the sampling locations of individuals (Guillot et al., 2009; Novembre and Peter, 2016; Bradburd and Ralph, 2019). These previously developed methods help reveal population structure, infer genetic ancestry, and measure historical migration patterns. However, they do a poor job of showing how alleles are distributed geographically. To minimize confusion about levels of differentiation among populations, researchers and educators can consider complementing PCA or STRUCTURE-like outputs with a variant-centric visualization like the ones presented here. To that end, we provide source code to replicate our figures and to generate similar plots for other datasets (the \u2018GeoVar\u2019 software package; see key resources table).\n\nA goal of our work was to build a visualization that can help correct common misconceptions about human genetic variation. First, because many existing methods to describe population structure emphasize between-group or between-individual differentiation, they can convey a misleading impression of \u2018deep\u2019 divergence between populations when it may not exist. Comparing Figure 1 to outputs of models with \u2018deep\u2019 or \u2018shallow\u2019 divergence can help teach how patterns of human variation are consistent with shallow divergence and the Recent African Origins model (Box 2). Second, because personal ancestry tests can identify ancestry to broad continental regions, it is possible to incorrectly conclude human alleles are typically found exclusively in a single region and at high frequency within that region (e.g. patterns such as \u2018uuCuu\u2019.) As our figures show, this is not the case. It should be kept in mind that most fine-scale personal ancestry tests use genotyping arrays and combine evidence from subtle fluctuations in the allele frequencies of many common variants (Novembre and Peter, 2016). Finally, another related misconception is that two humans from different regions of the world differ mainly due to alleles that are typical of each region. As we show in Figure 4, most of the variants that differ between two individuals are variants with alleles that are globally widespread. (Our awareness of these misconceptions comes from personal experiences in teaching and outreach. However, there is a growing body of formal research on misconceptions regarding human genetic variation, e.g., Bowling et al., 2008; Phelan et al., 2014; Hubbard, 2017; Roth et al., 2020).\n\nOur method requires computing allele frequencies within predefined groupings. Grouping and labeling strategies vary between genetic studies and are determined by the goals and constraints of a particular study (Race, Ethnicity, and Genetics Working Group, 2005; Panofsky and Bliss, 2017; Mathieson and Scally, 2020). While we chose deliberately coarse grouping schemes to address the misconceptions described above, the key facts we derive about human genetic variation are robust and appear in finer-grained 26-population versions of the plot (Figure 6). We recommend that any application of the GeoVar approach needs to be interpreted with the choice of groupings in mind.\n\nThe visualization method developed here is also useful for comparing the geographic distributions of different subsets of variants, (e.g. Figure 4, Figure 5). For example, when applied to the list of variants targeted by a genotyping array (Figure 5), the approach quickly reveals the relative balance of common versus rare variants and the geographical patterns of those variants.\n\nInterpreting the results of this visualization approach does have some caveats. First, we estimate the frequency of alleles from samples of local populations. We expect that as sample sizes increase many alleles called as unobserved \u2018u\u2019 will be reclassified as rare \u2018R\u2019. The average sample size across all of our geographic regions is approximately 500 individuals (AFR: 504, EUR: 404, SAS: 489, EAS: 504, AMR: 603). Assuming regions are internally well-mixed, we have\u00a0~80% power to detect alleles with a frequency of\u00a0~0.2% in a region (Figure 2\u2014figure supplement 1). For alleles with lower frequencies, we would require larger sample sizes to ensure similar detection power (Figure 2\u2014figure supplement 1). An implication is that in large samples, we should observe more rare variant sharing. Thus, we expect the figures here to underrepresent the levels of rare variant sharing between human populations. In general, one must keep in mind that the GeoVar plot is a visualization of the joint SFS for the sample, rather than for the complete population.\n\nA second caveat is that our encoding groups a wide range of variants into the \u2018(C)ommon\u2019 category (i.e. all variants where the frequency of the globally minor allele is greater than 5%). For some applications, such as population screening for carriers, it may be enough to know that a variant falls in the \u2018rare\u2019 or \u2018common\u2019 bins we have described, and more detail is inconsequential. For other applications, the detailed fluctuations in allele frequency across populations are relevant\u2014for example, differences in allele frequencies at common variants (Figure 6\u2014figure supplement 4) are regularly used to infer patterns of population structure and relatedness (Li et al., 2008; Pickrell and Pritchard, 2012; Patterson et al., 2012).\n\nThird, one must interpret our results with the sampling design of the 1KGP study design in mind. In particular, the 1KGP filtered for individuals of a single ethnicity within each locale. However, in our current cosmopolitan world, the genetic diversity in any location or broad-based sampling project will be considerably higher than implied by the geographic groupings above. For example, the UK Biobank, while predominantly of European ancestry, has representation of individuals with\u00a0ancestry\u00a0from each of the five regions used here (Bycroft et al., 2018). The 1KGP also sampled South Asian ancestry from multiple locations outside of South Asia, and whether those individuals show excess allele sharing due to recent admixture in those contexts is unclear. While we expect overall similar patterns to those seen here using emerging alternative datasets (Bergstr\u00f6m et al., 2019), there may be subtle differences due to sampling and study design considerations.\n\nPrior representations of human genetic variation data similar to the one presented here can be found in Zietkiewicz et al., 1998, who showed patterns of absence/presence/fixation at seven sites in the dys44 locus using a gray-scale, in a manner similar to Figure 1 here. Other previous examples depict the proportion of variants with different geographic distributions resolved at the level of presence/absence (e.g. Rosenberg et al., 2002, Supp Figure 1 [pie chart]; Szpiech et al., 2008, Table 1, [circular bar]; Rosenberg, 2011, Table 2, Figure 4 [pie chart] for microsatellites; and Jakobsson et al., 2008, Figure 1A [Venn diagram] for SNPs, haplotypes and copy number variants). Publications on recent whole-genome sequence data from humans have several related and relevant figures for understanding the geographic distribution of variants (e.g. 1000 Genomes 2012, Figure 2B; Auton et al., 2015, Figures 1A and 3A; Bergstr\u00f6m et al., 2019, Figure 3A and Visual Abstract). The GeoVar plots provide a complementary view to these previous figures. Specifically, they provide more fine-grained representation than dichotomizations into private vs. shared variants and assessments of sharing based on presence versus absence. The GeoVar plots also complement plots of doubleton sharing or alternative normalized metrics that lose interpretability in terms of absolute allele frequency patterns and the numbers of variants with particular patterns.\n\nThe visualizations provided here help reinforce the conclusions of a long history of empirical studies in human genetics (Lewontin, 1972; Ramachandran et al., 2005; Conrad et al., 2006; Li et al., 2008; Auton et al., 2015; Mallick et al., 2016; Bergstr\u00f6m et al., 2019). The results show how the human population has an abundance of localized rare variants and broadly shared common variants, with a paucity of private, locally common variants. Together these are footprints of the recent common ancestry of all human groups. As a consequence, human individuals most often differ from one another due to common variants that are found across the globe. Finally, although not examined explicitly above, the large abundance of rare variants observed here is another key feature of human variation and a consequence of recent human population growth (Slatkin and Hudson, 1991; Di Rienzo and Wilson, 1991; Keinan and Clark, 2012; Nelson et al., 2012; Tennessen et al., 2012).\n\nThe well-established introgression of archaic hominids (e.g. Neandertals, Denisovans) into modern human populations (Wolf and Akey, 2018) is not apparent in the GeoVar plots we produced. We believe that there are two broad reasons for this: (1) The clearest signal of archaic introgression will come from sites where archaic hominids differed from modern humans, and we expect that these sites are only a very small fraction of variants found in humans today. The average human\u2013Neandertal and human\u2013Denisovan sequence divergence are both less than 0.16% (using observations from Pr\u00fcfer et al., 2014), and a recent study estimates that there are fewer than 70 Mb (2.3% of the genome) of Neanderthal introgressed segments per individual for all individuals in the 1KGP (Chen et al., 2020). (2) We do not expect SNVs from archaic introgression to be concentrated in a single GeoVar category. For example, introgressed variants occupy a wide range of allele frequencies (Bergstr\u00f6m et al., 2019). Archaic introgression events are believed to be old:\u00a0>30,000 years ago, allowing time for substantial genetic drift and admixture among human populations (Chen et al., 2020). Negative selection (Harris and Nielsen, 2016; Juric et al., 2016) and, in some cases, strong positive selection Racimo et al., 2015 have also shaped the patterns of introgressed SNVs. For these reasons, we expect low levels of archaic introgression not to create a striking visual deviation in our GeoVar plots from the background patterns of a Recent African Origin model with subsequent migration (Box 2). To highlight the contributions of archaic hominids to human variation, more targeted approaches are needed (e.g. Green et al., 2010; Durand et al., 2011). Future work could also naturally extend the approach here to include archaic sequence data.\n\nThe geographic distributions of genetic variants visualized here are relevant for a number of applications, including studying geographically varying selection (Yi et al., 2010; Key et al., 2018), human demographic history (Gutenkunst et al., 2009), and the genetics of disease risk. For instance, due to ascertainment bias in arrays (Figure 5) and power considerations, common variants are often found in genome-wide association studies of disease traits (Manolio et al., 2009). The patterns shown above make it clear that most common variants are shared across geographic regions. Indeed, many common variant associations replicate across populations (Marigorta and Navarro, 2013; though see Martin et al., 2017; Mostafavi et al., 2020 for complications). More recently, due to increasing sample sizes and sequencing-based approaches, disease mapping studies are finding more associations with rare variants (Bomba et al., 2017). As our work here emphasizes, rare variants are likely to be geographically restricted, and so one can expect the rare variants found in one population will not be useful for explaining trait variation in other populations, although they may identify relevant biological pathways that are shared across populations.\n\nA future direction for the work here would be to apply our approach to other classes of genetic variants such as insertions, deletions, microsatellites, and structural variants. We note that in studies with sample sizes similar to or smaller than the 1KGP, nearly all SNVs arise from single mutation events. For other variants that arise from single mutation events (e.g. indels that arise from single mutations), we expect similar patterns to those observed for SNVs here. In contrast, for highly mutable loci we expect independently derived alleles will be distributed in disjoint regions of the world due to multiple mutational origins (Ralph and Coop, 2010).\n\nAnother future direction would be to shift from visualizing patterns of allele sharing to the patterns of sharing of ancestral lineages in coalescent genealogies. Recent advances in the inference of genome-wide tree sequences (Kelleher et al., 2019; Speidel et al., 2019) and allele ages (Albers and McVean, 2020) allow for quantitative summaries of ancestral lineage sharing. Such quantities have a close relationship to the multi-population SFS properties that are studied here, yet are more fundamental in a sense and less subject to the stochasticity of the mutation process. That said, the conceptual simplicity of visualizing allele frequency patterns may be an advantage in educational settings.\n\nMost importantly, future applications of the approach to humans will ideally use datasets that include a greater sampling of the world\u2019s genetic diversity (Bustamante et al., 2011; Popejoy and Fullerton, 2016; Martin et al., 2017; Peterson et al., 2019). A related point is that the application of our method to genotyping array variants (Figure 5) reinforces the importance of considering the ancestry of study populations in genotype array design and selection (Peterson et al., 2019).\n\nWhile we have focused here on human diversity at a global scale, GeoVar plots may be a useful tool for population geneticists working at other scales and with other species. The input to the visualization is simple: a table of allele frequencies in a set of populations. In the GeoVar software package, we provide python code for generating this table from a vcf file and a table of population labels, but the user could generate the input from other data instead. For studying population structure, it is best to use an unbiased estimate of allele frequencies from, for\u00a0example, whole-genome or reduced-representation sequencing.\n\nApplied to new data sets, GeoVar may be used for exploratory data analysis, allowing users to see some important features of population structure without fitting explicit models. For example, hierarchical structure (Figure 6, rare variants shared within regional groupings) and recent admixture (Figure 3, rare variants shared between AFR and AMR) show up as distinctive patterns in the plots. Box 2 shows that when the cutoff frequency separating Rare from Common mutations is close to the population split time (measured in units of 2N), an enrichment of \u2018RU\u2019 and \u2018CC\u2019 codes is expected. For example, in populations that split 0.1\u00a0\u00d7\u00a0N generations ago, mutations at local frequencies below 0.1 will tend to be private and those at higher frequencies will tend to be shared. In spatially distributed populations with limited dispersal, we expect that a similar relationship exists between cutoff frequencies, variant sharing patterns, and the geographic distance between populations. In an exploratory setting, users could generate plots with multiple cutoff frequencies to reveal varying levels of structure among populations. GeoVar plots may also serve as an informal goodness-of-fit check for parametric models of population history (as in Figure 3\u2014figure supplement 2). In such exploratory and model-checking applications, attention to sample sizes and their configuration across sampling units is important, as larger sample sizes will allow the detection of more rare variants (e.g. contrast Figure 3\u2014figure supplement 2, panel A and B). For the application to humans shown here, a preliminary approach to account for varying sample size did not substantially change the results (results not shown); that said, developing such an approach more fully or taking rarefaction approaches (Szpiech et al., 2008) may be essential for future applications with more uneven sample sizes.\n\nOverall, the visualizations produced here provide an interpretable way to depict geographic patterns of human genetic variation. With personal genomic technologies and ancestry testing becoming commonplace, there is increasing importance in fostering the understanding of human population genetics. To this end, human genetics researchers must develop interpretable materials on patterns of genetic variation for use in educational and outreach settings (Donovan et al., 2019). The variant-centric approach detailed here complements existing visualizations of population structure, facilitating a clearer understanding of the major patterns of human genetic diversity.\n",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "98f27902-d52d-45c4-affb-0fddde0e6ed8",
+      "submission_id": "5973b552-0f3e-4a7f-908f-690454027bed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Amy Goldberg, Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60107.sa1](https://doi.org/10.7554/eLife.60107.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper reframes traditional summaries of human genetic variation into an interpretable visual framework. This visualization emphasizes how variation is shared across geography, and links these patterns to the evolutionary processes generating variation. Importantly, the authors discuss the implications for public and scientific misconceptions about human evolution and genetic differentiation.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Geographic patterns of human allele frequency variation: a variant-centric perspective\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by George Perry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports an interesting perspective on the distribution of genetic variation in human populations through a new visualization. Focusing on the geographic distribution of single variants, the authors provide a framework that easily summarizes global patterns of variation in a way that is intuitive and perhaps less prone to certain visual biases. This is particularly important to broaden discussions of human genetic variation to non-specialists. The approach largely captures the information of joint SFS, allowing more populations. The context and discussion of implications is a real strength of this paper, which bridges a tool and a synthesis paper. With a clearer workflow from data to visualization and improved documentation, it will be a useful visualization tool. Overall it is well-written and easy to read, with care taken to consider details such as the role of singletons and data type.\n\nEssential revisions:\n\n1) Applicability and availability as a tool/resource. Would this approach be useful for non-humans? What types of relevant questions could you answer, and what datasets would be necessary? Similarly, how would this type of visualization be interpreted or used for, e.g. within-continent studies in humans? Sample size and sampling scheme is only briefly mentioned, though may be particularly impactful when attempting to apply this to other contexts.\n\nImportantly, the github repository should be set up in a way that would facilitate reuse in other datasets. It would be nice to see a tutorial running through using the software on a small example dataset on the github repo or supplement, or other attempts to make this more user-friendly.\n\n2) Connections to previous work. The idea is reminiscent of historical population genetic studies which often focused on single or only a few variants because of sequencing limitations. It may be useful to include more historical citations or perspectives. Similarly, there are other attempts to visualize this kind of information, for example Figure 1B of the 1000 Genomes 2012 paper, Figure 1A of the 2015 paper, Figure 4A of Bergstrom et al., 2020, and corresponding statements in those papers. These broadly show the same things as the present paper. It would help to be better to be more explicit about what this visualization adds in the context of previous work.\n\n3) Models of population history. A key point of the paper is connecting the visualized patterns to models of human history, yet the models considered are fairly simplistic. Specifically, in Figure 4, the models do not include features like bottlenecks, recent exponential growth, and extensive gene flow, all of which would be expected to change the patterns observed. It would help to either include simulations or discussion on how these common features may interact with the observations presented in the paper.\n\nNotably, it is a mischaracterization to equate the first model to the multiregional model (subsection \u201cBox 2: Theoretical Modeling\u201d). Wolpoff's multiregional model emphasized (1) extensive gene flow and (2) parallel adaptation, recognizing that these were necessary to explain the low Fst and phenotypic differentiation among regions. See, for example, Wolpoff et al. \"Multiregional Evolution: A World-Wide Source for Modern Human Populations\" in Origins of Anatomically Modern Humans\" eds. Nitecki and Nitecki, Springer 1994. Since the model doesn't include these it's really rejecting something like Coon's models from the 1950s, which even 30 years ago were widely recognized to be implausible. That said, simulating a more Wolpoff-like model seems unnecessary, since that debate is largely settled. Text (and perhaps figure) clarifications can improve accuracy and discussion for non-science audiences along these lines may better fit in the Discussion.\n",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3401404f-aee1-4e00-aa65-b4fd8b59cc05",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C1",
+      "claim": "Variants are observed at approximately 3.1% of the measurable sites in the reference human genome (GRCh38).",
+      "claim_type": "EXPLICIT",
+      "source": "We observe variants at ~3.1% of the measurable sites in the reference human genome (GRCh38).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3A which shows this percentage visually.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "938cae66-8392-4d5f-89c3-c92325e96489",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C2",
+      "claim": "A measurable site is one at which it is possible to detect variation with current sequencing technologies, currently approximately 2.9 Gb out of 3.1 Gb in the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "A measurable site is one at which it is possible to detect variation with current sequencing technologies (currently approximately 2.9 Gb out of 3.1 Gb in the human genome; ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim defines what constitutes a measurable site and provides specific measurements based on current sequencing technology capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "a870fbbe-77ce-43dd-9129-b036381bdc66",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C3",
+      "claim": "85% of variants fall into just eight codes out of the 242 that are possible.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of codes is heavily concentrated, with 85% of variants falling into just eight codes out of the 242 that are possible (35\u20131: three frequency categories in each of five regional groupings, subtracting the code 'UUUUU' as each variant has been observed by definition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is based on analysis of the 1000 Genomes dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "0372d12f-6b20-40a5-9498-5111fcf09fe8",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C4",
+      "claim": "The top four most abundant codes represent rare variants that are localized in a single region.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the top eight codes, the top four codes represent rare variants that are localized in a single region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by the data visualization in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "6b168fdc-9e46-45ec-a4c8-be5f78b114e5",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C5",
+      "claim": "The fifth most abundant code, 'RuuuR', represents rare variants found in Africa and the Admixed Americas.",
+      "claim_type": "EXPLICIT",
+      "source": "The fifth most abundant code, 'RuuuR', represents rare variants found in Africa and the Admixed Americas (which includes African American individuals, for example).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is based on the geographic distribution coding scheme applied to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "f988e8e4-5385-49e8-b610-2c6e1234c5a6",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C6",
+      "claim": "The seventh most abundant code is 'CCCCC' or 'globally common variants.'",
+      "claim_type": "EXPLICIT",
+      "source": "The seventh code is 'CCCCC' or 'globally common variants.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "0b8f4aa4-c3f6-432c-8069-f246238496a4",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C7",
+      "claim": "When a variant is found to be common (>5% allele frequency) in one population, the modal pattern (37.3%) is that it is common across the five regions ('CCCCC').",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, when a variant is found to be common (>5% allele frequency) in one population, the modal pattern (37.3%) is that it is common across the five regions ('CCCCC').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "2ef02def-bb5c-4c20-a07d-b521ad228633",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C8",
+      "claim": "63% of variants common in at least one region are also globally widespread, in the sense of being found across all five regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, 63% of variants common in at least one region are also globally widespread, in the sense of being found across all five regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by Figure 3\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "b1bfc00c-bd6c-45a1-9be7-c3612da20d74",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C9",
+      "claim": "This number rises to 82% for variants common in at least one region outside of Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "This number rises to 82% for variants common in at least one region outside of Africa (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by Figure 3\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "f0236783-3b34-43d9-b158-21c94eda3b5f",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C10",
+      "claim": "Removing singletons reduces the absolute number of variants observed by 48.2% (91,784,637 vs. 44,290,364).",
+      "claim_type": "EXPLICIT",
+      "source": "Removing singletons reduces the absolute number of variants observed by 48.2% (91,784,637 vs. 44,290,364).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by comparison of Figure 3B and Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "cb7c79d3-e144-47b6-a7e5-e4bd3a2f17d0",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C11",
+      "claim": "At 96.6% of variants (80,068,013/82,919,198), the minor allele is also the derived allele.",
+      "claim_type": "EXPLICIT",
+      "source": "At 96.6% of variants (80,068,013/82,919,198), the minor allele is also the derived allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by Figure 3\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "c96330ef-b7aa-40f4-8ab1-0edb4ffce299",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C12",
+      "claim": "Localized rare variants (such as 'Ruuuu' or 'uuuRu') are mostly young mutations that have not had time to spread geographically.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we interpret the localized rare variants (such as 'Ruuuu' or 'uuuRu') as mostly young mutations that have not had time to spread geographically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on population genetics principles and is supported by citations to relevant literature (Mathieson and McVean, 2014; Kiezun et al., 2013; Kimura and Ohta, 1973; Albers and McVean, 2020).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "bf16740f-0844-473c-b2f2-e0c9152e16e5",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C13",
+      "claim": "The code 'CCCCC' (globally common variants) likely comprises mostly older variants that arose in Africa and were spread globally during the Out-of-Africa migration and other dispersal events.",
+      "claim_type": "EXPLICIT",
+      "source": "The code 'CCCCC' (globally common variants), likely comprises mostly older variants that arose in Africa and were spread globally during the Out-of-Africa migration and other dispersal events (see Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on population genetics theory and human evolutionary history.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "7654c47e-8632-4b99-87d3-be33190e06b3",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C14",
+      "claim": "The appearance of rare variants shared between two or more regions (codes with two 'R's and three 'u's, such as 'uuRRu' or 'RRuuu') is likely the signature of recent gene flow between those regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of rare variants shared between two or more regions (codes with two 'R's and three 'u's, such as 'uuRRu' or 'RRuuu') is likely the signature of recent gene flow between those regions (Box 2; Platt et al., 2019; Mathieson and McVean, 2014; Gutenkunst et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation supported by citations to relevant literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "a2dd11b0-de69-41a5-8ce7-1c09a820e4e5",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C15",
+      "claim": "The abundant 'RuuuR' and 'uRuuR' codes likely represent young variants that are shared between the Admixed Americas and Africa ('RuuuR') or Europe ('uRuuR') because of the population movements during the last 500 years that began with European colonization of the Americas and the subsequent slave trade from Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the abundant 'RuuuR' and 'uRuuR' codes likely represent young variants that are shared between the Admixed Americas and Africa ('RuuuR') or Europe ('uRuuR') because of the population movements during the last 500 years that began with European colonization of the Americas and the subsequent slave trade from Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on known historical events and their genetic consequences.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "ad616ded-66dd-4676-9c6c-ee577e334514",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C16",
+      "claim": "The 10th most abundant code ('CuuuR') is interpreted as mostly variants that were lost in the Out-of-Africa bottleneck and subsequently carried to the Americas by African ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret the 10th most abundant code ('CuuuR', Figure 3B) as mostly variants that were lost in the Out-of-Africa bottleneck and subsequently carried to the Americas by African ancestors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on population genetics theory regarding bottleneck effects.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "8c6e4bc7-382e-4e2b-97f6-0038000abe1b",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C17",
+      "claim": "There is a relative absence of variants that are common in only one region outside of Africa and absent across all others (e.g. 'uCuuu', 'uuCuu', 'uuuCu', 'uuuuC').",
+      "claim_type": "EXPLICIT",
+      "source": "There is a relative absence of variants that are common in only one region outside of Africa and absent across all others (e.g. 'uCuuu', 'uuCuu', 'uuuCu', 'uuuuC').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by the data visualization in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "1fd8c16b-2da8-4e01-b1d9-1fe3d394e602",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C18",
+      "claim": "These patterns are consistent with human populations having not diverged deeply, in the sense that there has not been sufficient time for genetic drift to greatly shift allele frequencies among them.",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns are consistent with human populations having not diverged deeply, in the sense that there has not been sufficient time for genetic drift to greatly shift allele frequencies among them (Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on population genetics theory and is supported by Box 2.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "a709143c-86e7-400b-bc41-5c2da0478014",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C19",
+      "claim": "Overall, these results reflect a timescale of divergence consistent with the Recent-African-Origin model of human evolution as well as subsequent gene flow among regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results reflect a timescale of divergence consistent with the Recent-African-Origin model of human evolution as well as subsequent gene flow among regions (Cann et al., 1987; Stringer and Andrews, 1988; Thomson et al., 2000; Ramachandran et al., 2005; Pickrell and Reich, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation supported by citations to relevant literature on human evolution.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "1693038e-5bd4-4109-abc3-5ffcc3e4ba96",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C20",
+      "claim": "The variants that differ between pairs of individuals are typically globally widespread (i.e. codes with no 'u's, with proportions out of the total S varying from 54% to 76% for the pairs in Figure 4).",
+      "claim_type": "EXPLICIT",
+      "source": "We see that the variants that differ between each pair of individuals are typically globally widespread (i.e. codes with no 'u's, with proportions out of the total S varying from 54% to 76% for the pairs in Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "39123503-ab5a-4edf-a18e-c05bf8cbe6eb",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C21",
+      "claim": "Pairs of individuals mostly differ because one of them carries a common variant that the other does not; and common variants in any single location are often common throughout the world.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, pairs of individuals mostly differ because one of them carries a common variant that the other does not; and as Figure 3 already showed, common variants in any single location are often common throughout the world (also see Figure 6 and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the data presented in multiple figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "50abf1f0-f74d-4df0-bb3d-e7b4ebd68bf9",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C22",
+      "claim": "The two Yoruba individuals have more pairwise SNVs (S = 4,897,091) than the French/French (S = 3,525,519) and Han/Han (S = 3,358,497) pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the two Yoruba individuals have more pairwise SNVs (S = 4,897,091) than the French/French (S = 3,525,519) and Han/Han (S = 3,358,497) pairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "45a2a5b4-8342-4804-a633-acf0e86a29e7",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C23",
+      "claim": "Higher diversity in Africa is typically interpreted in terms of founder effects reducing diversity outside of Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "One also observes evidence for higher diversity in Africa, which is typically interpreted in terms of founder effects reducing diversity outside of Africa (Cann et al., 1987; Harpending and Eller, 2000; Harpending and Rogers, 2000; Ramachandran et al., 2005; Prugnolle et al., 2005), although other models, especially ones including substantial subsequent admixture, can also produce this pattern (DeGiorgio et al., 2009; Pickrell and Reich, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "16bb1e38-4cb0-41c5-a43c-e49135827af9",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C24",
+      "claim": "The process of discovering and selecting target sites for genotyping arrays typically enriches the probe sets toward common variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of discovering and selecting these target sites typically enriches the probe sets toward common variants (Clark et al., 2005), underrepresents geographically localized variants (Albrechtsen et al., 2010; Lachance and Tishkoff, 2013), and can affect genotype imputation and genetic risk prediction (Howie et al., 2012; Martin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "f710df6b-edf4-441b-beb8-16016c50ae5d",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C25",
+      "claim": "The process of discovering and selecting target sites for genotyping arrays underrepresents geographically localized variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of discovering and selecting these target sites typically enriches the probe sets toward common variants (Clark et al., 2005), underrepresents geographically localized variants (Albrechtsen et al., 2010; Lachance and Tishkoff, 2013), and can affect genotype imputation and genetic risk prediction (Howie et al., 2012; Martin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "5dd7b8c0-aa3d-4601-b224-bbda393920c3",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C26",
+      "claim": "A large fraction of the variants on genotyping arrays are globally common, in stark contrast with the SNVs identified by whole-genome sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast with the SNVs identified by whole-genome sequencing (Figure 3B), a large fraction of the variants on genotyping arrays are globally common.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and is supported by comparison of Figure 3B and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "64bdc617-b845-457d-acfe-8beebdfb1d51",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C27",
+      "claim": "The Affy6, Human Origins, and OmniExpress arrays were designed using polymorphisms ascertained from a smaller number of sequenced individuals, and primarily capture more common variants due to this ascertainment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially true for the Affy6, Human Origins, and OmniExpress arrays, which were designed using polymorphisms ascertained from a smaller number of sequenced individuals, and primarily capture more common variants due to this ascertainment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "e309ce78-7614-42b1-b2e8-3117dd60a3af",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C28",
+      "claim": "The MEGA array was uniquely designed to capture rare variation in undersampled continental groups, including African ancestries.",
+      "claim_type": "EXPLICIT",
+      "source": "The MEGA array was uniquely designed to capture rare variation in undersampled continental groups, including African ancestries (Bien et al., 2016; Bien et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "ffec0e00-a955-4dcf-b5f8-a7f73ac4a52b",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C29",
+      "claim": "The MEGA array design improved African and African American imputation accuracy, leading to greater power to map population-specific disease risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Wojcik et al., 2019 found that this design improved African and African American imputation accuracy, leading to greater power to map population-specific disease risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by a citation to Wojcik et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "bcd682bf-9dcd-4872-9ae4-5743c462a1b4",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C30",
+      "claim": "The majority of variants are seen to be rare and geographically localized (1 'R', and the remainder 'u's) when using a 26-digit encoding for the 1KGP variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Doing so with the set of ~92 million variants found in the 1KGP project (Figure 6), we find a consistent pattern with Figure 3B, in that the majority of variants are seen to be rare and geographically localized (1 'R', and the remainder 'u's), and when a variant is common in any one population, it is typically common across the full set of populations (Figure 6, pattern with all 'C's).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "cd7822a1-99d5-46f7-b8f7-0ae7dac2df65",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C31",
+      "claim": "When a variant is common in any one population, it is typically common across the full set of populations when using a 26-digit encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Doing so with the set of ~92 million variants found in the 1KGP project (Figure 6), we find a consistent pattern with Figure 3B, in that the majority of variants are seen to be rare and geographically localized (1 'R', and the remainder 'u's), and when a variant is common in any one population, it is typically common across the full set of populations (Figure 6, pattern with all 'C's).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "5d1439fe-aff8-413e-871d-e381db5f11e6",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C32",
+      "claim": "The average sample size across all geographic regions is approximately 500 individuals (AFR: 504, EUR: 404, SAS: 489, EAS: 504, AMR: 603).",
+      "claim_type": "EXPLICIT",
+      "source": "The average sample size across all of our geographic regions is approximately 500 individuals (AFR: 504, EUR: 404, SAS: 489, EAS: 504, AMR: 603).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and provides specific sample sizes for each region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "873ae27f-9e61-45a8-b2a0-1f0677bc7f95",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C33",
+      "claim": "Assuming regions are internally well-mixed, there is approximately 80% power to detect alleles with a frequency of approximately 0.2% in a region.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming regions are internally well-mixed, we have ~80% power to detect alleles with a frequency of ~0.2% in a region (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and is supported by Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "58f8a818-b252-44ac-9630-eb69a4cdc781",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C34",
+      "claim": "In large samples, we should observe more rare variant sharing.",
+      "claim_type": "EXPLICIT",
+      "source": "An implication is that in large samples, we should observe more rare variant sharing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on statistical power considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "bcf1c6a2-1a7f-4b41-8eec-06d0e174bdfd",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C35",
+      "claim": "The GeoVar plot is a visualization of the joint SFS for the sample, rather than for the complete population.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, one must keep in mind that the GeoVar plot is a visualization of the joint SFS for the sample, rather than for the complete population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a caveat about the interpretation of the visualization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "db67da8b-9726-4130-9304-6d74bb065805",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C36",
+      "claim": "The 1KGP filtered for individuals of a single ethnicity within each locale.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the 1KGP filtered for individuals of a single ethnicity within each locale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a description of the 1KGP study design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "daa34f29-e459-42a0-9857-bc63ebcd9744",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C37",
+      "claim": "In our current cosmopolitan world, the genetic diversity in any location or broad-based sampling project will be considerably higher than implied by the geographic groupings used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our current cosmopolitan world, the genetic diversity in any location or broad-based sampling project will be considerably higher than implied by the geographic groupings above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a caveat about the interpretation of the results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "84d4e864-6468-4546-b474-3f9a28a1514a",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C38",
+      "claim": "The UK Biobank, while predominantly of European ancestry, has representation of individuals with ancestry from each of the five regions used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the UK Biobank, while predominantly of European ancestry, has representation of individuals with ancestry from each of the five regions used here (Bycroft et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by a citation to Bycroft et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "ff3360e4-edc4-4128-bc5a-7d0448b2daa5",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C39",
+      "claim": "The well-established introgression of archaic hominids (e.g. Neandertals, Denisovans) into modern human populations is not apparent in the GeoVar plots produced.",
+      "claim_type": "EXPLICIT",
+      "source": "The well-established introgression of archaic hominids (e.g. Neandertals, Denisovans) into modern human populations (Wolf and Akey, 2018) is not apparent in the GeoVar plots we produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by a citation to Wolf and Akey, 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "a09ec3cf-4a63-47d3-9e74-feb5688353cc",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C40",
+      "claim": "The clearest signal of archaic introgression will come from sites where archaic hominids differed from modern humans, and these sites are only a very small fraction of variants found in humans today.",
+      "claim_type": "EXPLICIT",
+      "source": "The clearest signal of archaic introgression will come from sites where archaic hominids differed from modern humans, and we expect that these sites are only a very small fraction of variants found in humans today.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as an explanation for why archaic introgression is not apparent in the GeoVar plots.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "9152c608-c063-43d7-a965-55abf1f8b32a",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C41",
+      "claim": "The average human\u2013Neandertal and human\u2013Denisovan sequence divergence are both less than 0.16%.",
+      "claim_type": "EXPLICIT",
+      "source": "The average human\u2013Neandertal and human\u2013Denisovan sequence divergence are both less than 0.16% (using observations from Pr\u00fcfer et al., 2014), and a recent study estimates that there are fewer than 70 Mb (2.3% of the genome) of Neanderthal introgressed segments per individual for all individuals in the 1KGP (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by citations to Pr\u00fcfer et al., 2014 and Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "aafb534a-5438-4ed2-b5ca-1490c5d28ca5",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C42",
+      "claim": "There are fewer than 70 Mb (2.3% of the genome) of Neanderthal introgressed segments per individual for all individuals in the 1KGP.",
+      "claim_type": "EXPLICIT",
+      "source": "The average human\u2013Neandertal and human\u2013Denisovan sequence divergence are both less than 0.16% (using observations from Pr\u00fcfer et al., 2014), and a recent study estimates that there are fewer than 70 Mb (2.3% of the genome) of Neanderthal introgressed segments per individual for all individuals in the 1KGP (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by a citation to Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "e4c8488b-a287-4034-a972-21b4b3bbca79",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C43",
+      "claim": "Archaic introgression events are believed to be old: >30,000 years ago, allowing time for substantial genetic drift and admixture among human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaic introgression events are believed to be old: >30,000 years ago, allowing time for substantial genetic drift and admixture among human populations (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by a citation to Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "2d153dfa-576c-4f4e-8838-21846109fbef",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C44",
+      "claim": "Negative selection and, in some cases, strong positive selection have shaped the patterns of introgressed SNVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative selection (Harris and Nielsen, 2016; Juric et al., 2016) and, in some cases, strong positive selection Racimo et al., 2015 have also shaped the patterns of introgressed SNVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "726d01ed-31a8-4360-8532-59078f52ae26",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C45",
+      "claim": "Low levels of archaic introgression are not expected to create a striking visual deviation in GeoVar plots from the background patterns of a Recent African Origin model with subsequent migration.",
+      "claim_type": "EXPLICIT",
+      "source": "For these reasons, we expect low levels of archaic introgression not to create a striking visual deviation in our GeoVar plots from the background patterns of a Recent African Origin model with subsequent migration (Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as an inference based on the characteristics of archaic introgression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "d380c8c3-a988-4d48-bc83-fed6f816f67b",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C46",
+      "claim": "Many common variant associations replicate across populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many common variant associations replicate across populations (Marigorta and Navarro, 2013; though see Martin et al., 2017; Mostafavi et al., 2020 for complications).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "728af9d4-08cc-4c6e-af63-59ee3f571c17",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C47",
+      "claim": "Rare variants are likely to be geographically restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "As our work here emphasizes, rare variants are likely to be geographically restricted, and so one can expect the rare variants found in one population will not be useful for explaining trait variation in other populations, although they may identify relevant biological pathways that are shared across populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as an inference based on the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "007e777a-aeef-4255-acfe-777bfa1e5e93",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C48",
+      "claim": "Rare variants found in one population will not be useful for explaining trait variation in other populations, although they may identify relevant biological pathways that are shared across populations.",
+      "claim_type": "EXPLICIT",
+      "source": "As our work here emphasizes, rare variants are likely to be geographically restricted, and so one can expect the rare variants found in one population will not be useful for explaining trait variation in other populations, although they may identify relevant biological pathways that are shared across populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as an inference based on the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "ddadec1e-d581-49bf-8f21-512c98d8c4ef",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C49",
+      "claim": "In studies with sample sizes similar to or smaller than the 1KGP, nearly all SNVs arise from single mutation events.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in studies with sample sizes similar to or smaller than the 1KGP, nearly all SNVs arise from single mutation events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a general observation about SNVs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "f2c31c06-ac54-4e04-ad6d-17fff500b950",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C50",
+      "claim": "For highly mutable loci, independently derived alleles will be distributed in disjoint regions of the world due to multiple mutational origins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for highly mutable loci we expect independently derived alleles will be distributed in disjoint regions of the world due to multiple mutational origins (Ralph and Coop, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by a citation to Ralph and Coop, 2010.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "8b4afd1d-20d1-4cb7-a3a8-3b5f860432ba",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C51",
+      "claim": "Recent advances in the inference of genome-wide tree sequences and allele ages allow for quantitative summaries of ancestral lineage sharing.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in the inference of genome-wide tree sequences (Kelleher et al., 2019; Speidel et al., 2019) and allele ages (Albers and McVean, 2020) allow for quantitative summaries of ancestral lineage sharing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "04ccc9e2-bc48-45fb-881d-8fdced98f3f0",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C52",
+      "claim": "Ancestral lineage sharing quantities have a close relationship to the multi-population SFS properties studied in this work, yet are more fundamental in a sense and less subject to the stochasticity of the mutation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Such quantities have a close relationship to the multi-population SFS properties that are studied here, yet are more fundamental in a sense and less subject to the stochasticity of the mutation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a comparison between different approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "23985a07-71d1-4ba8-8684-33b7008fd7ec",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C53",
+      "claim": "The conceptual simplicity of visualizing allele frequency patterns may be an advantage in educational settings.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, the conceptual simplicity of visualizing allele frequency patterns may be an advantage in educational settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a consideration for the approach presented.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "0673d80f-b4ce-4ded-a672-cc5dfb19f155",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C54",
+      "claim": "The 1000 Genomes Project samples were grouped into five geographical ancestry groups: African (AFR), European (EUR), South Asian (SAS), East Asian (EAS), and Admixed American (AMR).",
+      "claim_type": "EXPLICIT",
+      "source": "First, we follow the 1KGP study in grouping the samples from the 26 populations into five geographical ancestry groups: African (AFR), European (EUR), South Asian (SAS), East Asian (EAS), and Admixed American (AMR) (Figure 2A, Box 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and is supported by Figure 2A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "5058c153-efef-443e-9066-a3693f5d7f3b",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C55",
+      "claim": "A threshold of 5% frequency was used to distinguish between 'rare' and 'common' alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish between 'rare' and 'common' alleles, we used a threshold of 5% frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as part of the methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "ca52e94d-3efe-48f2-9eff-0e25c12b8bda",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C56",
+      "claim": "The 1000 Genomes Project contains approximately 92 million biallelic SNVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the encoding scheme just described, we generated geographic distribution codes for all ~92 million biallelic SNVs in the 1000 Genomes dataset and display their relative proportions (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and is supported by Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "667de9d5-5aef-48b1-9d18-6909ce3eec2a",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C57",
+      "claim": "242 possible geographic distribution codes exist (3^5 - 1).",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of codes is heavily concentrated, with 85% of variants falling into just eight codes out of the 242 that are possible (35\u20131: three frequency categories in each of five regional groupings, subtracting the code 'UUUUU' as each variant has been observed by definition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text with an explanation of how the number is calculated.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "aace6254-ef2e-4342-8bab-18f2ff4d420f",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C58",
+      "claim": "Singleton variants are the most abundant type of variant in human genetic data.",
+      "claim_type": "EXPLICIT",
+      "source": "Singleton variants\u2014alleles found in a single individual\u2014are the most abundant type of variant in human genetic data and are necessarily found in just one geographic region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a general observation about human genetic data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "95df3bbc-5b74-47a9-8711-b4702b706480",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C59",
+      "claim": "Singleton variants are necessarily found in just one geographic region.",
+      "claim_type": "EXPLICIT",
+      "source": "Singleton variants\u2014alleles found in a single individual\u2014are the most abundant type of variant in human genetic data and are necessarily found in just one geographic region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a logical consequence of the definition of singleton variants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "fa46b9a2-8739-419d-a6bc-451b59237816",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C60",
+      "claim": "The SGDP sampled 300 individuals from 142 diverse populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The SGDP sampled 300 individuals from 142 diverse populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as a description of the SGDP dataset.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "8b7f318e-3a7c-4adb-b603-b1ce1ae14eae",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C63",
+      "claim": "Rare variants are not often carried by either individual in a pair precisely because rare variants are rare.",
+      "claim_type": "EXPLICIT",
+      "source": "However, precisely because rare variants are rare, they are not often carried by either individual in a pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text as an explanation for the observed patterns.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "0a9e34b9-3e63-49a3-a91d-caf510425f7d",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C69",
+      "claim": "The Omni2.5Exome and MEGA arrays exhibit many more rare variants compared to the Affy6, Human Origins, and OmniExpress arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "The Omni2.5Exome and MEGA arrays in contrast exhibit many more rare variants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "e724b0f5-a9e2-43e6-bc69-7170c5cc7c70",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "claim_id": "C70",
+      "claim": "In both the Omni2.5Exome and MEGA arrays, the second and third most abundant codes are 'CuuuR' and 'RuuuR' variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In both these arrays, the second and third most abundant codes are 'CuuuR' and 'RuuuR' variants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "61982b74-d971-48a3-830f-18ab6b07460b",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed ~92 million biallelic SNVs from the 1000 Genomes Project, finding that variants are observed at ~3.1% of measurable sites in the human genome. The distribution of geographic codes is heavily concentrated, with 85% of variants falling into just 8 out of 242 possible codes, with the top four codes representing rare variants localized to single regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6, C56-C57 provide consistent descriptive statistics about the dataset and the distribution of geographic codes. The data are directly stated and supported by Figure 3, with clear definitions of the encoding scheme. The mathematical calculation of 242 possible codes (3^5-1) is correct.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "6b96a6ce-f655-4533-8cc4-b1c3368e155e",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "When a variant is common (>5% frequency) in one population, the modal pattern (37.3%) is that it is common across all five regions ('CCCCC'). Overall, 63% of variants common in at least one region are globally widespread, rising to 82% for variants common in regions outside Africa. There is a relative absence of variants common in only one non-African region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 and C17 are directly stated with specific percentages and supported by Figure 3 and supplementary figures. The pattern of globally widespread common variants versus region-specific common variants is clearly documented in the data visualizations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "081f983f-4049-4258-ae75-ae27bc8d4cce",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Singleton variants (alleles found in a single individual) are the most abundant type of variant in human genetic data and are necessarily found in just one geographic region. Removing singletons reduces the absolute number of variants observed by 48.2%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C58, C59 are directly stated with specific numbers (91,784,637 vs. 44,290,364) and supported by comparison of Figure 3B and 3C. The logical necessity that singletons are region-specific is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "954bff96-1367-4733-bf9a-18936b341649",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "At 96.6% of variants with high-quality ancestral allele calls, the minor allele is also the derived allele.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C11 is directly stated with specific numbers (80,068,013/82,919,198) and supported by Figure 3\u2014figure supplement 3C. This validates the use of minor allele frequency as a proxy for derived allele frequency in most analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "7f3e14c4-a3c5-48f9-a1aa-052b8926acbf",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The geographic distribution patterns are interpreted as reflecting human evolutionary history: localized rare variants represent recent mutations, globally common variants ('CCCCC') represent older variants spread during Out-of-Africa migration, and rare variants shared between regions indicate recent gene flow. The patterns are consistent with the Recent-African-Origin model and shallow divergence among human populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16, C18-C19 provide evolutionary interpretations supported by population genetics theory and appropriate citations. The interpretations are consistent with established models and the observed data patterns. However, these are inferences rather than direct observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "acdf560d-704f-40d3-9cf9-4d0e22231ad4",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Variants that differ between pairs of individuals are typically globally widespread (54-76% of pairwise SNVs), rather than geographically localized. Pairs differ mainly because one carries a common variant the other does not, and common variants are often globally distributed. The two Yoruba individuals show more pairwise SNVs than French/French or Han/Han pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C63 are directly stated and supported by Figure 4 data from SGDP individuals. The logic that rare variants are infrequently carried by either individual in a pair is sound. The higher diversity in Yoruba pairs is consistent with African population genetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "e12c28ab-bd88-4ade-b6fa-ec8ffc4a232c",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Higher diversity in Africa is typically interpreted in terms of founder effects reducing diversity outside of Africa, though other models including substantial admixture can also produce this pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 accurately represents the standard interpretation in the field with appropriate citations, while also acknowledging alternative explanations. This is a well-established finding in human population genetics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "aaa4bed8-8ce5-44c6-8bcd-ebc430ceda9f",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genotyping arrays show ascertainment bias toward common variants and underrepresent geographically localized variants. Arrays like Affy6, Human Origins, and OmniExpress show a large fraction of globally common variants, while Omni2.5Exome and MEGA arrays exhibit more rare variants, with the latter specifically designed to capture rare variation in undersampled groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27, C69-C70 are directly stated and supported by Figure 5 comparisons with appropriate citations. The contrast between whole-genome sequencing and array-based genotyping is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "3e9925d8-87c1-4d27-9966-81ac9c97fce1",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The MEGA array was uniquely designed to capture rare variation in undersampled continental groups, including African ancestries, and this design improved African and African American imputation accuracy, leading to greater power to map population-specific disease risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are directly stated and supported by appropriate citations (Bien et al., 2016, 2019; Wojcik et al., 2019). This represents an application of the findings to array design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "b66959aa-ceb0-436c-a837-c76f7057a47c",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Using a 26-digit encoding for individual 1KGP populations, the majority of variants are rare and geographically localized (1 'R' and remainder 'u's), and when a variant is common in any one population, it is typically common across the full set of populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 are directly stated and supported by Figure 6. The finer-scale analysis confirms patterns observed with the 5-region grouping, demonstrating robustness of the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "9636ff8a-3f19-41f7-b567-0f3ea2ed13db",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The average sample size across geographic regions is ~500 individuals, providing ~80% power to detect alleles with frequency ~0.2% in a region. In larger samples, more rare variant sharing should be observed. The GeoVar plot visualizes the joint site frequency spectrum for the sample, not the complete population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 provide important methodological caveats about sample size, detection power, and interpretation. C33 is supported by Figure 2\u2014figure supplement 1. These are appropriate limitations to acknowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "350ca4da-1660-44e0-85f3-283a3135ee79",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The 1KGP filtered for individuals of a single ethnicity within each locale. In the current cosmopolitan world, genetic diversity in any location will be considerably higher than implied by these geographic groupings. For example, the UK Biobank has representation from all five regions despite being predominantly European.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 provide important context about study design and generalizability. C38 is supported by citation to Bycroft et al., 2018. These are appropriate caveats about the interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "d84759c5-dbfa-4f25-a099-5beca96ff267",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Archaic hominin introgression (Neanderthal, Denisovan) is not apparent in GeoVar plots because: (1) sites where archaic hominids differed from modern humans are a small fraction of variants (<0.16% sequence divergence, <70 Mb per individual), (2) introgression events are old (>30,000 years), allowing drift and admixture, and (3) selection has shaped introgressed SNV patterns. Low levels of archaic introgression are not expected to create striking visual deviations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 provide a well-reasoned explanation for why archaic introgression is not visible in the plots, supported by appropriate citations (Pr\u00fcfer et al., 2014; Chen et al., 2020; Harris and Nielsen, 2016; etc.). The logic is sound given the small proportion of the genome affected.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "9659180c-ecc3-4c1a-bbcb-8c5edae84fef",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Many common variant associations replicate across populations. Rare variants are likely geographically restricted, so rare variants found in one population will not be useful for explaining trait variation in other populations, though they may identify shared biological pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 discuss implications for disease mapping and GWAS. C46 is supported by citations. C47-C48 are logical inferences from the data showing geographic restriction of rare variants, though C48 includes some speculation about pathway identification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "d32a6a36-7fbe-47b1-9583-3d97643a0fe6",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In studies with sample sizes similar to or smaller than 1KGP, nearly all SNVs arise from single mutation events. For highly mutable loci, independently derived alleles will be distributed in disjoint regions due to multiple mutational origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 discuss recurrent mutation. C49 is a reasonable statement about typical SNVs. C50 is supported by citation to Ralph and Coop, 2010 and represents an important caveat about highly mutable sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "22a79169-db6b-4fe0-8555-5e6b64990f9b",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Recent advances in genome-wide tree sequence inference and allele age estimation allow for quantitative summaries of ancestral lineage sharing. These quantities have a close relationship to multi-population SFS properties but are more fundamental and less subject to mutation process stochasticity. The conceptual simplicity of visualizing allele frequency patterns may be advantageous in educational settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 discuss alternative and complementary approaches. C51 is supported by appropriate citations (Kelleher et al., 2019; Speidel et al., 2019; Albers and McVean, 2020). C52-C53 provide reasonable comparisons and considerations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    },
+    {
+      "id": "f35382b2-b6fa-4303-9f33-d9af6565528a",
+      "content_id": "57832d63-d46b-4705-8326-b6b99ed74174",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The 1000 Genomes Project samples were grouped into five geographical ancestry groups (AFR, EUR, SAS, EAS, AMR), and a threshold of 5% frequency was used to distinguish between 'rare' and 'common' alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 describe the core methodological choices for the encoding scheme. These are clearly stated and supported by Figure 2A. The 5% threshold is arbitrary but reasonable and sensitivity analyses are provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:08:36.431078Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3401404f-aee1-4e00-aa65-b4fd8b59cc05",
+      "result_id": "61982b74-d971-48a3-830f-18ab6b07460b"
+    },
+    {
+      "claim_id": "938cae66-8392-4d5f-89c3-c92325e96489",
+      "result_id": "61982b74-d971-48a3-830f-18ab6b07460b"
+    },
+    {
+      "claim_id": "a870fbbe-77ce-43dd-9129-b036381bdc66",
+      "result_id": "61982b74-d971-48a3-830f-18ab6b07460b"
+    },
+    {
+      "claim_id": "0372d12f-6b20-40a5-9498-5111fcf09fe8",
+      "result_id": "61982b74-d971-48a3-830f-18ab6b07460b"
+    },
+    {
+      "claim_id": "6b168fdc-9e46-45ec-a4c8-be5f78b114e5",
+      "result_id": "61982b74-d971-48a3-830f-18ab6b07460b"
+    },
+    {
+      "claim_id": "f988e8e4-5385-49e8-b610-2c6e1234c5a6",
+      "result_id": "61982b74-d971-48a3-830f-18ab6b07460b"
+    },
+    {
+      "claim_id": "ca52e94d-3efe-48f2-9eff-0e25c12b8bda",
+      "result_id": "61982b74-d971-48a3-830f-18ab6b07460b"
+    },
+    {
+      "claim_id": "667de9d5-5aef-48b1-9d18-6909ce3eec2a",
+      "result_id": "61982b74-d971-48a3-830f-18ab6b07460b"
+    },
+    {
+      "claim_id": "0b8f4aa4-c3f6-432c-8069-f246238496a4",
+      "result_id": "6b96a6ce-f655-4533-8cc4-b1c3368e155e"
+    },
+    {
+      "claim_id": "2ef02def-bb5c-4c20-a07d-b521ad228633",
+      "result_id": "6b96a6ce-f655-4533-8cc4-b1c3368e155e"
+    },
+    {
+      "claim_id": "b1bfc00c-bd6c-45a1-9be7-c3612da20d74",
+      "result_id": "6b96a6ce-f655-4533-8cc4-b1c3368e155e"
+    },
+    {
+      "claim_id": "8c6e4bc7-382e-4e2b-97f6-0038000abe1b",
+      "result_id": "6b96a6ce-f655-4533-8cc4-b1c3368e155e"
+    },
+    {
+      "claim_id": "f0236783-3b34-43d9-b158-21c94eda3b5f",
+      "result_id": "081f983f-4049-4258-ae75-ae27bc8d4cce"
+    },
+    {
+      "claim_id": "aace6254-ef2e-4342-8bab-18f2ff4d420f",
+      "result_id": "081f983f-4049-4258-ae75-ae27bc8d4cce"
+    },
+    {
+      "claim_id": "95df3bbc-5b74-47a9-8711-b4702b706480",
+      "result_id": "081f983f-4049-4258-ae75-ae27bc8d4cce"
+    },
+    {
+      "claim_id": "cb7c79d3-e144-47b6-a7e5-e4bd3a2f17d0",
+      "result_id": "954bff96-1367-4733-bf9a-18936b341649"
+    },
+    {
+      "claim_id": "c96330ef-b7aa-40f4-8ab1-0edb4ffce299",
+      "result_id": "7f3e14c4-a3c5-48f9-a1aa-052b8926acbf"
+    },
+    {
+      "claim_id": "bf16740f-0844-473c-b2f2-e0c9152e16e5",
+      "result_id": "7f3e14c4-a3c5-48f9-a1aa-052b8926acbf"
+    },
+    {
+      "claim_id": "7654c47e-8632-4b99-87d3-be33190e06b3",
+      "result_id": "7f3e14c4-a3c5-48f9-a1aa-052b8926acbf"
+    },
+    {
+      "claim_id": "a2dd11b0-de69-41a5-8ce7-1c09a820e4e5",
+      "result_id": "7f3e14c4-a3c5-48f9-a1aa-052b8926acbf"
+    },
+    {
+      "claim_id": "ad616ded-66dd-4676-9c6c-ee577e334514",
+      "result_id": "7f3e14c4-a3c5-48f9-a1aa-052b8926acbf"
+    },
+    {
+      "claim_id": "1fd8c16b-2da8-4e01-b1d9-1fe3d394e602",
+      "result_id": "7f3e14c4-a3c5-48f9-a1aa-052b8926acbf"
+    },
+    {
+      "claim_id": "a709143c-86e7-400b-bc41-5c2da0478014",
+      "result_id": "7f3e14c4-a3c5-48f9-a1aa-052b8926acbf"
+    },
+    {
+      "claim_id": "1693038e-5bd4-4109-abc3-5ffcc3e4ba96",
+      "result_id": "acdf560d-704f-40d3-9cf9-4d0e22231ad4"
+    },
+    {
+      "claim_id": "39123503-ab5a-4edf-a18e-c05bf8cbe6eb",
+      "result_id": "acdf560d-704f-40d3-9cf9-4d0e22231ad4"
+    },
+    {
+      "claim_id": "50abf1f0-f74d-4df0-bb3d-e7b4ebd68bf9",
+      "result_id": "acdf560d-704f-40d3-9cf9-4d0e22231ad4"
+    },
+    {
+      "claim_id": "8b7f318e-3a7c-4adb-b603-b1ce1ae14eae",
+      "result_id": "acdf560d-704f-40d3-9cf9-4d0e22231ad4"
+    },
+    {
+      "claim_id": "45a2a5b4-8342-4804-a633-acf0e86a29e7",
+      "result_id": "e12c28ab-bd88-4ade-b6fa-ec8ffc4a232c"
+    },
+    {
+      "claim_id": "16bb1e38-4cb0-41c5-a43c-e49135827af9",
+      "result_id": "aaa4bed8-8ce5-44c6-8bcd-ebc430ceda9f"
+    },
+    {
+      "claim_id": "f710df6b-edf4-441b-beb8-16016c50ae5d",
+      "result_id": "aaa4bed8-8ce5-44c6-8bcd-ebc430ceda9f"
+    },
+    {
+      "claim_id": "5dd7b8c0-aa3d-4601-b224-bbda393920c3",
+      "result_id": "aaa4bed8-8ce5-44c6-8bcd-ebc430ceda9f"
+    },
+    {
+      "claim_id": "64bdc617-b845-457d-acfe-8beebdfb1d51",
+      "result_id": "aaa4bed8-8ce5-44c6-8bcd-ebc430ceda9f"
+    },
+    {
+      "claim_id": "0a9e34b9-3e63-49a3-a91d-caf510425f7d",
+      "result_id": "aaa4bed8-8ce5-44c6-8bcd-ebc430ceda9f"
+    },
+    {
+      "claim_id": "e724b0f5-a9e2-43e6-bc69-7170c5cc7c70",
+      "result_id": "aaa4bed8-8ce5-44c6-8bcd-ebc430ceda9f"
+    },
+    {
+      "claim_id": "e309ce78-7614-42b1-b2e8-3117dd60a3af",
+      "result_id": "3e9925d8-87c1-4d27-9966-81ac9c97fce1"
+    },
+    {
+      "claim_id": "ffec0e00-a955-4dcf-b5f8-a7f73ac4a52b",
+      "result_id": "3e9925d8-87c1-4d27-9966-81ac9c97fce1"
+    },
+    {
+      "claim_id": "bcd682bf-9dcd-4872-9ae4-5743c462a1b4",
+      "result_id": "b66959aa-ceb0-436c-a837-c76f7057a47c"
+    },
+    {
+      "claim_id": "cd7822a1-99d5-46f7-b8f7-0ae7dac2df65",
+      "result_id": "b66959aa-ceb0-436c-a837-c76f7057a47c"
+    },
+    {
+      "claim_id": "5d1439fe-aff8-413e-871d-e381db5f11e6",
+      "result_id": "9636ff8a-3f19-41f7-b567-0f3ea2ed13db"
+    },
+    {
+      "claim_id": "873ae27f-9e61-45a8-b2a0-1f0677bc7f95",
+      "result_id": "9636ff8a-3f19-41f7-b567-0f3ea2ed13db"
+    },
+    {
+      "claim_id": "58f8a818-b252-44ac-9630-eb69a4cdc781",
+      "result_id": "9636ff8a-3f19-41f7-b567-0f3ea2ed13db"
+    },
+    {
+      "claim_id": "bcf1c6a2-1a7f-4b41-8eec-06d0e174bdfd",
+      "result_id": "9636ff8a-3f19-41f7-b567-0f3ea2ed13db"
+    },
+    {
+      "claim_id": "db67da8b-9726-4130-9304-6d74bb065805",
+      "result_id": "350ca4da-1660-44e0-85f3-283a3135ee79"
+    },
+    {
+      "claim_id": "daa34f29-e459-42a0-9857-bc63ebcd9744",
+      "result_id": "350ca4da-1660-44e0-85f3-283a3135ee79"
+    },
+    {
+      "claim_id": "84d4e864-6468-4546-b474-3f9a28a1514a",
+      "result_id": "350ca4da-1660-44e0-85f3-283a3135ee79"
+    },
+    {
+      "claim_id": "ff3360e4-edc4-4128-bc5a-7d0448b2daa5",
+      "result_id": "d84759c5-dbfa-4f25-a099-5beca96ff267"
+    },
+    {
+      "claim_id": "a09ec3cf-4a63-47d3-9e74-feb5688353cc",
+      "result_id": "d84759c5-dbfa-4f25-a099-5beca96ff267"
+    },
+    {
+      "claim_id": "9152c608-c063-43d7-a965-55abf1f8b32a",
+      "result_id": "d84759c5-dbfa-4f25-a099-5beca96ff267"
+    },
+    {
+      "claim_id": "aafb534a-5438-4ed2-b5ca-1490c5d28ca5",
+      "result_id": "d84759c5-dbfa-4f25-a099-5beca96ff267"
+    },
+    {
+      "claim_id": "e4c8488b-a287-4034-a972-21b4b3bbca79",
+      "result_id": "d84759c5-dbfa-4f25-a099-5beca96ff267"
+    },
+    {
+      "claim_id": "2d153dfa-576c-4f4e-8838-21846109fbef",
+      "result_id": "d84759c5-dbfa-4f25-a099-5beca96ff267"
+    },
+    {
+      "claim_id": "726d01ed-31a8-4360-8532-59078f52ae26",
+      "result_id": "d84759c5-dbfa-4f25-a099-5beca96ff267"
+    },
+    {
+      "claim_id": "d380c8c3-a988-4d48-bc83-fed6f816f67b",
+      "result_id": "9659180c-ecc3-4c1a-bbcb-8c5edae84fef"
+    },
+    {
+      "claim_id": "728af9d4-08cc-4c6e-af63-59ee3f571c17",
+      "result_id": "9659180c-ecc3-4c1a-bbcb-8c5edae84fef"
+    },
+    {
+      "claim_id": "007e777a-aeef-4255-acfe-777bfa1e5e93",
+      "result_id": "9659180c-ecc3-4c1a-bbcb-8c5edae84fef"
+    },
+    {
+      "claim_id": "ddadec1e-d581-49bf-8f21-512c98d8c4ef",
+      "result_id": "d32a6a36-7fbe-47b1-9583-3d97643a0fe6"
+    },
+    {
+      "claim_id": "f2c31c06-ac54-4e04-ad6d-17fff500b950",
+      "result_id": "d32a6a36-7fbe-47b1-9583-3d97643a0fe6"
+    },
+    {
+      "claim_id": "8b4afd1d-20d1-4cb7-a3a8-3b5f860432ba",
+      "result_id": "22a79169-db6b-4fe0-8555-5e6b64990f9b"
+    },
+    {
+      "claim_id": "04ccc9e2-bc48-45fb-881d-8fdced98f3f0",
+      "result_id": "22a79169-db6b-4fe0-8555-5e6b64990f9b"
+    },
+    {
+      "claim_id": "23985a07-71d1-4ba8-8684-33b7008fd7ec",
+      "result_id": "22a79169-db6b-4fe0-8555-5e6b64990f9b"
+    },
+    {
+      "claim_id": "0673d80f-b4ce-4ded-a672-cc5dfb19f155",
+      "result_id": "f35382b2-b6fa-4303-9f33-d9af6565528a"
+    },
+    {
+      "claim_id": "5058c153-efef-443e-9066-a3693f5d7f3b",
+      "result_id": "f35382b2-b6fa-4303-9f33-d9af6565528a"
+    }
+  ],
+  "comparisons": []
+}

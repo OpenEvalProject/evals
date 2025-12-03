@@ -1,0 +1,1920 @@
+{
+  "submission": {
+    "id": "9a457016-4d3c-40b6-8e37-e3a53db371cb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:52:42.554256Z",
+    "updated_at": "2025-12-03T16:52:42.554256Z"
+  },
+  "content": [
+    {
+      "id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "submission_id": "9a457016-4d3c-40b6-8e37-e3a53db371cb",
+      "content_type": "manuscript",
+      "content_text": "# Visual experience has opposing influences on the quality of stimulus representation in adult primary visual cortex\n\n## Authors\n\n- Brian B Jeon<sup>1</sup>\n- Thomas Fuchs<sup>2</sup>\n- Steven M Chase<sup>1</sup>\n- Sandra J Kuhlman<sup>1</sup> ([ORCID: 0000-0003-0450-7282](https://orcid.org/0000-0003-0450-7282)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))\n2. Center for the Neural Basis of Cognition, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))\n3. Neuroscience Institute, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))\n4. Department of Biological Sciences, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransient dark exposure, typically 7\u201310 days in duration, followed by light reintroduction is an emerging treatment for improving the restoration of vision in amblyopic subjects whose occlusion is removed in adulthood. Dark exposure initiates homeostatic mechanisms that together with light-induced changes in cellular signaling pathways result in the re-engagement of juvenile-like plasticity in the adult such that previously deprived inputs can gain cortical territory. It is possible that dark exposure itself degrades visual responses, and this could place constraints on the optimal duration of dark exposure treatment. To determine whether eight days of dark exposure has a lasting negative impact on responses to classic grating stimuli, neural activity was recorded before and after dark exposure in awake head-fixed mice using two-photon calcium imaging. Neural discriminability, assessed using classifiers, was transiently reduced following dark exposure; a decrease in response reliability across a broad range of spatial frequencies likely contributed to the disruption. Both discriminability and reliability recovered. Fixed classifiers were used to demonstrate that stimulus representation rebounded to the original, pre-deprivation state, thus dark exposure did not appear to have a lasting negative impact on visual processing. Unexpectedly, we found that dark exposure significantly stabilized orientation preference and signal correlation. Our results reveal that natural vision exerts a disrupting influence on the stability of stimulus preference for classic grating stimuli and, at the same time, improves neural discriminability for both low and high-spatial frequency stimuli.\n\n## Introduction\n\nSensory cortex is highly malleable early in life. During postnatal development, cortical territory rapidly expands and contracts to represent active and inactive inputs, respectively. These large-scale changes are mediated by age-restricted experience-dependent synaptic refinement at the level of individual postsynaptic neurons (Buonomano and Merzenich, 1998). Primary visual cortex (V1) is particularly sensitive to visual deprivation during this period. Classic experiments demonstrate that in order for sensory pathways to drive cortical responses in the adult, continuous binocular input is required during postnatal development (Reh et al., 2020; Hensch and Quinlan, 2018). Experimentally induced monocular deprivation in young animals results in a rapid decrease in the strength of deprived inputs, and with a delay, the response of intact inputs is potentiated. Depression of deprived inputs occurs at a synaptic level and outlasts the perturbation. On the other hand, the same peripheral perturbation in adults does not induce a rapid decrease in response strength, although potentiation of the intact input does proceed (Fong et al., 2021; Jenks et al., 2017). Furthermore, in the young, the impact of deprivation on excitatory neuron activity levels is compensated for by a decrease in evoked inhibitory neuron activity. This form of compensation is a direct consequence of deprivation and does not occur in adults (Feese et al., 2018). Delineating the molecular basis and cellular signaling pathways responsible for restricting plasticity in the adult is an active area of investigation. For example, consistent with the above observations, extracellular matrix perineuronal nets (PNNs), which preferentially surround parvalbumin inhibitory neurons and create a barrier for synaptic remodeling, are resistant to degradation in the adult. Interventions that target the break-down of PNNs in adult V1 are effective in restoring juvenile-like plasticity and allow previously unused inputs to regain the ability to drive cortical neurons (Reh et al., 2020; Murase et al., 2019; Faini et al., 2018; Jenks et al., 2021; Pizzorusso et al., 2006; Pizzorusso et al., 2002). Taken together, there is a general consensus that in the adult, the inputs that are established during postnatal development retain a limited amount of plasticity throughout life. However, in contrast to the young, established inputs are not lost following disuse, and in the absence of additional training or treatment, new input patterns from previously occluded sources are not readily integrated into the existing networks of adults (Hensch and Quinlan, 2018). As such, restoring vision to subjects that have matured without binocular input during early postnatal development is a recognized challenge (Hensch and Quinlan, 2018; Falcone et al., 2021; Rodr\u00edguez et al., 2018).\n\nTo successfully restore vision, the newly opened inputs must compete with non-deprived eye inputs to drive cortical responses. An emerging treatment for animals with experimentally induced amblyopia, across a diverse range of species, is to transiently expose subjects to darkness, followed by light reintroduction (LRx; Eaton et al., 2016; He et al., 2006; Montey and Quinlan, 2011; Murase et al., 2017; He et al., 2007; Erchova et al., 2017; Stodieck et al., 2014; Mitchell et al., 2019). Accumulating evidence indicates that dark exposure (DE) followed by LRx re-activates juvenile plasticity and is sufficient to restore deprived-eye input responses to grating stimuli. Notably, LRx effectively degrades PNNs (Murase et al., 2017). Thus, this critical form of juvenile plasticity is reactivated and likely contributes to the effectiveness of DE in restoring responsiveness of the deprived pathway (Murase et al., 2019).\n\nIdeally, treatments such as DE followed by LRx would not have a negative impact on on-going visual processing carried out by the intact pathway. In other words, effective treatments would facilitate the integration of new information without perturbing existing functionality. Based on the studies cited above, it is not expected that in the adult basic responsiveness to visual stimuli following transient DE would be lost. However, previous work demonstrated that closing one eye is sufficient to transiently disrupt stimulus representation in the adult. Although individual neurons remain responsive, the pattern of activity evoked in V1 is disturbed, including orientation preference and pairwise signal correlation among simultaneously recorded neurons (Rose et al., 2016). Furthermore, although mean firing rates are largely similar across daily light-dark transitions, pairwise correlations are significantly stronger during vision (Torrado Pacheco et al., 2019). This raises the possibility that deprivation such as DE could increase the rate of representational drift (Deitch et al., 2021), placing a burden on downstream areas to update the manner in which information is readout. Indeed, in the olfactory cortex, continuous experience is required for drift to remain low (Schoonover et al., 2021). Furthermore, higher-order relationships among neurons, beyond the basic responsiveness of individual neurons (Rupasinghe et al., 2021), could be altered by the interruption of continuous visual input.\n\nTo determine whether transient DE disrupts or otherwise influences stimulus representation beyond basic responsiveness, neural responses to grating stimuli that covered a broad range of spatial frequencies were recorded using two-photon calcium imaging in awake head-fixed mice before and after transient DE. Calcium imaging has the advantage that individual neurons can be readily longitudinally tracked (Margolis et al., 2012). Tuning stability and response reliability were assessed before and after DE. In addition, neural discriminability and the rate of representational drift were quantified using classifiers. We found that in contrast to monocular deprivation (Rose et al., 2016), DE did not degrade pairwise signal correlation when immediately assessed after DE and in fact stabilized orientation preference in neurons that remained tuned. Similarly, LRx did not degrade pairwise signal correlation of tuned neurons. These data indicate that changes in signal correlation induced by monocular deprivation in adulthood are likely a result of imbalanced input rather than reduced drive from the periphery.\n\nHowever, similar to olfactory cortex, an increase in the rate of representation drift was detected when visual input was interrupted by DE. A decrease in the trial-to-trial reliability of stimulus responsiveness accounted for the transient change. Reliability was restored within 8 days of LRx, and the representation rebounded to its original form. Thus when used for the treatment of amblyopia, neither DE nor LRx is expected to have a persistent negative impact on existing visual processing, although the effectiveness of perceptual training (McGuire et al., 2022) immediately following DE may be influenced by a transient increase in representational drift. Furthermore, our results establish that although natural vision, which includes complex scene statistics, has a disrupting influence on tuning stability to simple grating stimuli, natural vision as experienced in the home-cage environment improves neural discriminability in the adult.\n\n## Results and discussion\n\nTo assess the impact of 8 days of DE on tuning stability and neural discriminability, the activity of individual layer 2/3 excitatory V1 neurons in the binocular zone was imaged in response to randomized presentations of static grating stimuli using two-photon microscopy in head-fixed transgenic mice positioned atop a floating spherical treadmill, expressing the calcium indicator GCaMP6f driven by the EMX1 promoter. Our goal was to assess the stability of stimulus representation before and after DE. Therefore prior to DE, two baseline imaging sessions acquired 8\u00b11 days apart, referred to here as Baseline 1 (B1) and Baseline 2 (B2) were recorded. The acquisition of two baseline sessions allowed the stability of tuning to grating stimuli of varying orientation and spatial frequency (s.f.) to be assessed before DE was initiated. A third imaging session was recorded immediately after DE and is referred to as the post-DE (pDE) session. A final forth imaging session was acquired after 8\u00b11 days of LRx, referred to as the recovery (Rec) session. These four sessions were used to define three experimental conditions: control, DE, and LRx (Figure 1A and B). To facilitate interpretation of stability, the elapsed time in-between imaging sessions was held constant. A total of six mice was included in the study (see Table 1 for sex and age information). The fraction of visually responsive neurons, defined as those neurons whose activity was significantly modulated by stimulus feature (ANOVA, \u03b1=0.05; see Methods), is reported in Supplementary file 1A for the six mice in each of the imaging sessions. As expected, 30\u201350% of the segmented neurons were responsive to full-field static gratings (Ohki et al., 2005; Montijn et al., 2016; Ko et al., 2014; Jeon et al., 2018; de Vries et al., 2020). Locomotion and pupil diameter were monitored; trials in which locomotion or eye blinking was detected were removed from analysis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig1-v1.jpg)\n\n**Figure 1.:** (A) Experimental design; three conditions were studied: control, DE, and light reintroduction (LRx), bounded by four imaging sessions, as indicated. Imaging sessions were acquired, while static gratings were presented to awake, head-fixed mice, 8\u00b11 days apart. 12 orientations and 15 spatial frequencies, ranging from 0.02 to 0.3 cycles/\u00b0, were presented. (B) Example of longitudinal imaging across two sessions. (C) Example neuron tuning curve (left) and trial responses to 180 stimuli (right). Stimulus presentations were sorted post-hoc. (D) The change in four features, as indicated, is plotted for individual neurons and pooled across six animals. Orientation preference was significantly less stable in the control condition (Wilcoxon rank-sum test corrected for four multiple comparisons [z: 2.467], p=0.032; approximately 30% of the population is shifted leftward in the DE condition) in the control condition (n=249 neurons) compared to the DE condition (n=230 neurons). All neurons that were tracked and tuned to grating stimuli on both sessions were included in the analysis. The same set of neurons was used for a given condition but could differ across conditions to maximize the number of neurons tracked. Statistics for the other three parameters, left to right: Wilcoxon rank-sum test corrected for four multiple comparisons (z: 2.213, 1.478, and 0.5596, powere: 0.711, 0.317, and 0.255), p=0.0538, 0.186, and 0.576. (E) Response profiles of two example neurons (tuning curves, left, and trial responses cropped to 0.1 cycles/\u00b0, right) are shown for the Baseline 1 (B1), Baseline 2 (B2), and post-DE (pDE) imaging sessions. (F) Example of signal correlation matrices from one animal comparing the B1 and B2 imaging sessions, and the B2 and Post-DE imaging sessions. For visualization of correlation structure, neuron #1 was randomly selected, and the remaining neurons were sorted in descending order. The same sort-matrix was applied to both sessions. (G) Similarity of signal correlation matrices for a given animal (computed as the Pearson\u2019s correlation coefficient between the two signal correlation matrices) was significantly higher in the DE condition compared to the control condition (Wilcoxon rank-sum test [ranksum: 23], p=0.009, n=6 animals). All tracked and tuned neurons were included, as in \u2018D\u2019. * p<0.05 and **p<0.01.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quartile values of the change in orientation preference for the individual animals shown in Figure 1D. All animals except mouse #5 had a distribution similar to the pooled distribution. Age at the time the animals entered the dark, which was immediately after the \u2018Baseline 2\u2019 (B2) imaging session was acquired, is shown in parentheses. Paired t-test values from left to right corrected for three multiple comparisons (df: 5, t: 0.897, 1.484, and 5.63): p=0.411, 0.297, and 0.007. (B) There was not a systematic difference in the quality of fits across the two conditions in which a difference was detected (Figure 1D). Tuning curve fits were not different between baseline 1 (B1, n=601 neurons) and B2 (n=532 neurons) nor between B1 and post-DE (pDE, n=419 neurons) imaging sessions (Wilcoxon rank-sum test corrected for two multiple comparisons [z: \u20132.0304 and \u20131.3794, powere: 0.972 and 0.999], p=0.0846 and 0.1678, respectively). (C) The difference in the stability of orientation preference between baseline and DE conditions was detected in the case that the worst-fit neurons were removed from analysis. Goodness of fit R2 values was ranked for all neurons that were determined to be significantly tuned (e.g. included in Figure 1D), and the neurons in the bottom 10% were removed from analysis. Orientation preference was significantly less stable in the baseline condition (Wilcoxon rank-sum test [z: 2.0748], p=0.038; n=266 and n=205 neurons for baseline and DE conditions, respectively). (D) To determine whether the quality of tuning fits was related to the stability of orientation preference, the change in orientation preference for all neurons included in Figure 1D was sorted and divided into three equal groups (n=159 neurons, \u2018top,\u2019 \u2018middle,\u2019 and \u2018lower\u2019), and the two corresponding R square values generated from the two-dimentional Gaussian fits for each neuron were averaged to give one value per neuron. The mean and SD of the R square values are plotted; the values are largely overlapping. p Values are calculated using the Wilcoxon rank-sum test (z: 1.54, \u20135.83) and are not corrected for multiple comparisons. Importantly, the analysis presented in \u2018B\u2019 indicates that the distribution of R square values was similar across conditions, thus this association is unlikely to contribute to the differences observed in Figure 1D. (E) The difference in the stability of signal correlation between baseline and DE conditions was detected when tuning was not included as a criterion. All neurons that were tracked and responsive were included. Similarity of signal correlation matrices for a given animal (computed as the Pearson\u2019s correlation coefficient between the two signal correlation matrices) was significantly higher (Wilcoxon rank-sum test [ranksum: 24], p=0.015) in the DE condition compared to the control condition (n=6 animals). (F) All neurons that were tracked and tuned on sessions B1, B2, and pDE were analyzed by animal. The change in orientation preference was smaller in the DE condition compared to the control condition (paired t-test [df: 5, t:3.036], p=0.0289, n=6 animals). The number of neurons included, by animal: 28, 59, 45, 30, 27, and 30. (G) Same pool of neurons as in \u2018E\u2019. Left, neurons were sorted from maximum to minimum change in orientation preference across the two conditions, for all animals. Each row is a single neuron. The change in orientation preference was significantly lower in the DE condition compared to control (paired t-test [df: 218, t:2.751], p=0.00644, n=219 neurons from six animals). Note, qualitatively the fraction of neurons showing large changes in orientation preference was higher in the baseline condition compared to the DE condition. Right, the same data plotted as a cumulative distribution. *p<0.05 and ** <0.01.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Size and position of the binocular zone in V1 (purple) in the left hemisphere relative to the center of the chronic window (+). At the widest, the binocular zone is 737 microns (yellow line), calculated based on data from Wagor et al., 1980; Kalatsky and Stryker, 2003; Samonds et al., 2019. The distance of the window center from Bregma is indicated. Upper left, relative angle and scaled size of the imaging field of view (red). (B) Imaging field of view contains binocular neurons extending across the entire field. Neurons responsive to ipsilateral pathway stimulation (red) were identified in a pilot experiment (one animal). (C) Example ipsilateral-driven activity in response to full field drifting gratings (0.02 cycles/\u00b0, 1 Hz). Individual trials (gray) and the mean (black) are shown. Angle of the stimulus drift is indicated (arrows). Stimulus duration, 1.5 s, is indicated in blue. Calcium indicator was expressed using AAV virus (pAAV.Syn.GCaMP6f.WPRE.SV40) in this case. Scale bar: 100 microns.\n\n**Table 1.**\n Animal information including age at each imaging session.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Animal ID</th>\n      <th rowspan=\"2\">Animal label</th>\n      <th rowspan=\"2\">Sex</th>\n      <th colspan=\"4\">Age at time of imaging, days old(days in between sessions)</th>\n    </tr>\n    <tr>\n      <th>Baseline 1</th>\n      <th>Baseline 2</th>\n      <th>Post-DE</th>\n      <th>Recovery</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2452_1R</td>\n      <td>Mouse 1</td>\n      <td>M</td>\n      <td>83</td>\n      <td>90 (7)</td>\n      <td>98 (8)</td>\n      <td>106 (8)</td>\n    </tr>\n    <tr>\n      <td>2452_1R1L</td>\n      <td>Mouse 2</td>\n      <td>M</td>\n      <td>83</td>\n      <td>90 (7)</td>\n      <td>98 (8)</td>\n      <td>106 (8)</td>\n    </tr>\n    <tr>\n      <td>2454_1R</td>\n      <td>Mouse 3</td>\n      <td>M</td>\n      <td>86</td>\n      <td>94 (8)</td>\n      <td>102 (8)</td>\n      <td>110 (8)</td>\n    </tr>\n    <tr>\n      <td>2472_1L</td>\n      <td>Mouse 4</td>\n      <td>F</td>\n      <td>59</td>\n      <td>66 (7)</td>\n      <td>74 (8)</td>\n      <td>82 (8)</td>\n    </tr>\n    <tr>\n      <td>2473_1R</td>\n      <td>Mouse 5</td>\n      <td>M</td>\n      <td>45</td>\n      <td>54 (9)</td>\n      <td>62 (8)</td>\n      <td>70 (8)</td>\n    </tr>\n    <tr>\n      <td>2474_1R1L</td>\n      <td>Mouse 6</td>\n      <td>F</td>\n      <td>56</td>\n      <td>65 (9)</td>\n      <td>73 (8)</td>\n      <td>81 (8)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Orientation preference of well-tuned neurons is stabilized by DE\n\nTuning to visual stimuli was assessed by fitting deconvolved responses of visually responsive neurons to a two-dimensional Gaussian function, on a trial-by-trial basis (Jeon et al., 2018). This method takes into account trial-to-trial variability and ensures that the stimulus identities that elicit activity are more consistent across trials than expected by chance. The stimulus set consisted of 12 orientations and 15 spatial frequencies spanning a range of 0.02\u20130.30 cycles/\u00b0, resulting in a total of 180 stimuli (Figure 1C). Four parameters were computed from the two-dimensional fits: orientation preference and bandwidth, as well as s.f. preference and bandwidth. Stability of each of the four parameters was calculated by comparing the absolute change (\u0394) during the control and DE experimental conditions. We took a conservative approach and only considered neurons that were tracked and tuned (i.e. well-fit by the two-dimensional Gaussian function, see Methods for details) on both of the imaging sessions used to calculate the change. DE induced a significant shift in the stability of orientation preference (Wilcoxon rank-sum p=0.032, Figure 1D and E). Analysis at the level of individual animals revealed that five out of the six mice reflected the pooled population of neurons (Figure 1\u2014figure supplement 1A). The age at the time of the first imaging session ranged from p45 to p86. Notably, the atypical animal was the youngest, p45. Prior work establishes that some rejuvenating influences of DE do not occur until on or after p55 (Huang et al., 2010), therefore age might be a contributing factor as to why this animal was distinct.\n\nThe detected difference in orientation stability did not appear to be a result of a systematic difference in the quality of the two-dimensional Gaussian fits across the conditions, for the following reasons. First, goodness of fit values, calculated on a trial-by-trial basis for each neuron included in the analysis (see Methods), was not different within or across the two conditions (Figure 1\u2014figure supplement 1B; see also the associated file of all tuning curves for neurons scored as being significantly tuned). Second, further analysis in which the top 10% of the worst-fit neurons was removed also revealed an increase in orientation tuning stability in the DE condition (Figure 1\u2014figure supplement 1C). We did however note that there was an association between orientation stability and the goodness of fit values. This relationship could have a biological basis. For example, higher trial-to-trial variability could be predictive of a neuron being more likely to shift its orientation preference (Figure 1\u2014figure supplement 1D).\n\nThe other three parameters trended in the same direction as orientation preference, but the difference between conditions did not reach statistical significance. Given the trend across the four parameters, it is possible that if all four parameters were considered simultaneously, a clear difference would emerge. To address this possibility, we examined pairwise signal correlation among the neurons that were responsive and tuned (Figure 1F). The similarity of signal correlation in the control condition and in the DE condition was computed for each of the six animals. We found that the similarity was significantly higher in the DE condition (Wilcoxon rank-sum test, p=0.009; Figure 1G). As above, additional analysis was performed to assess whether the results were robust to issues related to the quality of the tuning fits. Signal correlation and the similarity of signal correlation matrices were computed using all responsive neurons, regardless of whether tuned or untuned. Similarity was also significantly higher in the DE condition when tuning was not part of the inclusion criteria (Wilcoxon rank-sum test, p=0. 015; Figure 1\u2014figure supplement 1E). Thus, in contrast to monocular deprivation (Rose et al., 2016), a lack of vision through both eyes did not perturb tuning and in fact resulted in a net stabilization.\n\nIn contrast to orientation tuning, deprivation-induced changes in s.f. were not readily detected. These results are consistent with prior work indicating that the stability of s.f. preference and orientation preference are independently regulated (Jeon et al., 2018). It would be of interest in future work to examine whether at the level of receptive field sub-structure, the axis of receptive field orientation is preferentially destabilized relative to the size of on-off sub-regions. Alternatively, larger sample sizes could reveal subtle changes in s.f.; this would be an indication that instability of s.f. contributes to the observed change in signal correlation.\n\nThe above analysis considered the two pools of neurons separately, those tracked and tuned on the B1 and B2 sessions, and those tracked and tuned on the B2 and pDE sessions. Therefore, it is possible that individual neurons themselves were not stabilized by DE, rather, initially unstable neurons became either unresponsive or untuned on the pDE session. To directly determine whether individual neurons became stabilized, we examined that the pool of neurons that were tracked and tuned across all three sessions, B1, B2, and pDE. The average shift in orientation preference across animals was significantly lower in DE compared to the control condition (paired t-test, p=0.029; Figure 1\u2014figure supplement 1F). The majority of neurons (58%) was more unstable in the control condition, and the fraction of neurons displaying large shifts (e.g. >50\u00b0) was larger in the control condition compared to the DE condition. Consistent with this qualitative description, when pooled across animals, the magnitude of the shift in orientation preference was significantly larger in the control condition compared to the DE condition (paired t-test, p=0.006; Figure 1\u2014figure supplement 1G).\n\nNext, we examined whether LRx, which is known to potently induce gene expression even in the adult (Mardinly et al., 2016), disturbed tuning stability of the four tuning parameters or pairwise signal correlation. The distribution of the change in orientation preference and bandwidth for the DE condition was indistinguishable from that of the LRx condition (Figure 2A). This was also the case for the other two tuning parameters (median \u0394 s.f. preference, DE: 5.3E-3 and LRx: 4.9E-3, Wilcoxon rank-sum corrected for four multiple comparisons, p=0.999; median \u0394 s.f. bandwidth, DE: 5.5E-3 and LRx: 5.2E-3, Wilcoxon rank-sum corrected for four multiple comparisons, p=0.999). Consistent with these results, no difference in the similarity of signal correlation was detected between the DE and LRx conditions (Figure 2B and C). Taken together, these data demonstrate that 8 days of DE stabilized tuning response curves to grating stimuli and LRx did not induce a shift in tuning stability when considering those neurons that remained tuned after DE.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig2-v1.jpg)\n\n**Figure 2.:** (A) Neither the change in orientation preference or bandwidth was different between dark exposure (DE) and LRx conditions (Wilcoxon rank-sum test corrected for two multiple comparisons [z:\u20130.3098 and 0.2599, powere: 0.110 and 0.100], p=0.795 and p=0.999, respectively; n=230 and n=216, respectively). All tracked and tuned neurons were included. (B) Example of signal correlation matrices from one animal comparing the post-DE (pDE) and recovery (Rec) imaging sessions. For visualization of correlation structure, neuron #1 was randomly selected, and the remaining neurons were sorted in descending order. The same sort-matrix was applied to both sessions. (C) Similarity of signal correlation matrices for a given animal (computed as the Pearson\u2019s correlation coefficient) was not different across the DE condition compared to the Rec condition (Wilcoxon rank-sum test [ranksum: 35, powere: 0.999], p=0.589, n=6 animals). All tracked and tuned neurons were included.\n\n### Stimulus representation rebounds within eight days of LRx\n\nNot all neurons are well tuned to grating stimuli, yet such neurons can contribute to visual processing (Levy et al., 2020). Therefore, we expanded our analysis to include all tracked neurons, regardless of their responsiveness or tuning characteristics to grating stimuli.\n\nWe used a k-nearest neighbor (KNN) classifier to decode stimulus identity, as a measure of neural discriminability. First, we designed the classifiers such that they were trained separately for each session type to estimate the amount of stimulus information contained within the network. The identity of the neurons used was the same for all three sessions, referred to as the \u2018tracked pool.\u2019 Three imaging sessions were examined, the baseline session that immediately preceded DE (B2), the session that immediately followed DE (pDE), and the last session which occurred 8 days after LRx was initiated (Rec). We found that accuracy significantly decreased by 15 \u00b1 3% ( \u00b1 SEM, across animals) on the pDE session compared to the B2 session (paired t-test, p=0.046) and recovered within 8 days (B2 versus Rec sessions, paired t-test p=0.16; Figure 3A). Visual inspection of the confusion matrices indicated that accuracy was degraded across all spatial frequencies (Figure 3B and C). To confirm and quantify this observation, two separate classifiers were constructed for all stimuli less than or equal to 0.1 cycles/\u00b0 (low s.f.) and all stimuli greater than 0.1 cycles/\u00b0 (high s.f.). In both cases, accuracy was significantly lower on the pDE imaging session (paired t-test, p=0.037 and p=0.028, respectively; Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig3-v1.jpg)\n\n**Figure 3.:** (A) Classification accuracy was significantly lower during the post dark exposure (pDE) imaging session compared to the Baseline 2 imaging session (B2), and recovered within 8 days of light reintroduction (LRx; paired t-test corrected for two multiple comparisons [df: 5, t: 3.234], p=0.046 and 0.16; n=6 animals). All neurons that were tracked across the B2, pDE and Recovery (Rec) sessions were included. See Methods for number of neurons and trials. Chance was 0.0056. (B) Example of a confusion matrix from one animal during the B2 imaging session. (C) Cumulative sum of classifier accuracy, same mouse as in \u2018B.\u2019 The classification accuracies of the 12 orientations for a given spatial frequency were averaged to produce 15 data points. (D) Classifiers using only low (\u22640.1 cycles/\u00b0, 60 stimuli) and high (>0.1 cycles/\u00b0, 120 stimuli) spatial frequency stimuli were decoded separately. In both cases, accuracy decreased during the pDE imaging session compared to the B2 session (paired t-test corrected for two multiple comparisons [df: 5, t: 3.434 and 3.687], p=0.037 and p=0.028, respectively), and recovered within 8 days of LRx (paired t-test corrected for two multiple comparisons [df: 5, t: 0.417 and \u20131.286, power: 0.063 and 0.188], p=0.69 and p=0.25, respectively). Chance was 0.0167 and 0.0083, respectively. (E) Fixed classifiers were used to quantify representational drift (n=6 animals, the mean \u00b1 SEM). The session used to train the classifier is indicated, as well as the specific sessions tested and the condition label. Note, the rate of drift between the Rec and B2 imaging sessions was comparable to \u00b11 STD of the baseline drift (gray). In contrast, the rate of drift was significantly higher during the DE and LRx conditions compared to the control condition (paired t-test, corrected for three multiple comparisons, values left to right [df: 5,t: 4.056, 1.086, and 3.280], p=0.0293, 0.327, and 0.0329). All neurons that were tracked for a given tested session pair were included. (F) The median reliability of responses to the preferred stimulus for a given animal was significantly lower during the pDE imaging session compared to the B2 imaging session (paired t-test corrected for two multiple comparisons [df: 5, t: 5.474 and \u20130.2081], p=0.006 and 0.843); n=6 animals. All tracked and tuned neurons for a given session were included. (G) Reliability of individual neuron responses to the preferred stimulus, pooled across animals, was significantly reduced during the pDE imaging session and recovered within 8 days of light reintroduction (Wilcoxon rank-sum corrected for two multiple comparisons [z: 4.670 and \u20130.9493], p=6.0E-06 and 0.343). All tuned neurons were included, n=532 B2, n=419 pDE, and n=450 Rec. (H) Decoding accuracy was not correlated with pupil radius (Pearson\u2019s correlation [r: \u20130.013], p=0.951). All imaging sessions from six animals were included. Least-squared line indicated. Neuron number (36) was set to the minimum number of tuned neurons among all animals and sessions; trial number (25) was set to the minimum number of trials among all animals and sessions. * p<0.05 and **<0.01.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The within-neuron change in reliability was lowest in the dark exposure (DE) condition (Wilcoxon rank-sum corrected for three multiple comparisons, control versus DE, and DE versus light reintroduction [LRx] [z: 10.832 and 5.4766], p=7.286E-27 and p=6.502E-8, n=249 neurons control, n=230 neurons DE, and n=117 neurons LRx). All neurons that were tracked and tuned for both of the imaging sessions comprising the condition were included. Furthermore, the change in reliability was skewed in the positive direction in the control and LRx conditions and negatively skewed in the DE condition (single-sample KS-test corrected for three multiple comparisons, control, DE, and LRx values: [k: 0.3638, 0.4242, and0.2350], p=2.993E-29, 2.138E-36, and 3.705E-6). (B) In the control and DE conditions, reliability was significantly correlated across sessions (Pearson\u2019s correlation [r: 0.598, 0.7430, and \u20130.0901], p=1.53e-25, 1.25e-41, and 0.334, n=249 neurons control, n=230 neurons DE, and n=117 neurons LRx). This correlation was not present in the LRx condition, as might be expected given reliability was higher in the recovery imaging session compared to the post-DE (pDE) imaging session. The least-squares fit (dashed red) and unity line (blue) are shown. (C) Neurons were categorized as either have high (\u22650.5) or low (<0.5) reliability in the first imaging session for a given condition (control, DE, or LRx) and then scored as either tuned or untuned in the second session. The fraction of previously tuned neurons that became untuned was significantly lower in the high reliability category for the control and DE condition (two-sample proportions Z-test corrected for three multiple comparisons [z: 2.907, 7.336, and 0.8224], p=0.0054, 6.6015e-13, and 0.4108, number of tracked neurons in each category that were tuned on the first session indicated in white). (D) Basal activity during gray screen presentation is not higher in the imaging session immediately following DE (t-test [df: 949, t: \u20131.4068, power: 0.311], p=0.1598, n=532 neurons BS2, n=419 neurons pDE). (E) Considering the three-session tracked pool of neurons, on average, there was a 11% decrease in the fraction of tuned neurons across the six mice on the pDE session compared to the BS2 session (paired t-test corrected for two multiple comparisons, [df: 5, t: 3.600 and \u20132.235], p=0.0311 and p=0.6867). (F) Neurons tracked for the three sessions were pooled and scored as either tuned or untuned. Each row is a single tracked neuron. The red box highlights the neurons that lost tuning on the pDE imaging session. Note, roughly half of those neurons re-gained tuning on the recovery imaging session. Additionally, some neurons that were not previously tuned became tuned (plotted immediately below the red box). *p<0.05 and ** p<0.01.\n\nA possible explanation for the decrease in decoding accuracy is that the response reliability (Sadeh and Clopath, 2022) of individual neurons or the number of tuned neurons decreased in the pDE session. Either scenario would be consistent with the observations reported in Figure 1D. To determine whether these factors contributed to the decrease in decoding accuracy, first the trial-to-trial response reliability of tuned neurons was compared between the B2 and pDE sessions. Within the tracked pool, a decrease in response reliability for the preferred stimulus was observed. The median reliability of tuned and tracked neurons for individual mice was significantly lower in the pDE session compared to the B2 session (paired-t test, p=6.0E-3; Figure 3F). Analysis of within-neuron comparisons corroborated this interpretation and in addition demonstrated that in control conditions, reliability on the initial imaging sessions was predictive of reliability on the subsequent session (Figure 3\u2014figure supplement 1A, B). Furthermore, low reliability was associated with loss of tuning on the subsequent session (Figure 3\u2014figure supplement 1C).\n\nSimilarly, when the reliability of all tuned neurons, regardless of whether tracked, was pooled across mice, the reliability was significantly lower in the pDE session (Wilcoxon rank-sum p=3E-6; Figure 3G). It was previously reported that basal firing rates transiently increase when animals are transitioned from prolonged DE to light; such an increase could impact our calculation of reliability. Consistent with the observation that the increase in basal firing rate was prominent within the first 10 min of the dark-to-light transition and returned to baseline within 30\u201360 min (Torrado Pacheco et al., 2019), we did not detect a difference in basal activity between the B2 and pDE imaging sessions (Figure 3\u2014figure supplement 1D).\n\nSecond, the tracked pool neurons depicted in Figure 3A\u2013D and F were scored as being tuned or not tuned across the three sessions. On average across the six mice, there was an 11 \u00b1 4% ( \u00b1 SEM) decrease in the fraction of tuned neurons from B2 to pDE. Of the 11% that were lost, approximately 6% were re-gained. We noted that approximately 5% of previously untuned neurons became tuned de novo during the LRx condition, as such the total number of tuned neurons was restored (Figure 3\u2014figure supplement 1E, F). Therefore, it is likely that both a decrease in reliability and loss of tuning contributed to lower decoding accuracy in the pDE session.\n\nA potential concern in interpreting these data would be if the pupil was more constricted in the pDE session relative the other sessions. If the pupil diameter was smaller in the pDE session, less light may reach the retina and lead to lower input drive. To determine if this was a factor, we examined pupil radius in relation to the imaging sessions. Rather than a decrease, we detected an increase in pupil radius in the pDE session (median radius in millimeters, B1, B2, pDE, and Rec sessions, respectively [ \u00b1 SEM]: 0.29\u00b10.01, 0.28\u00b10.02, 0.41\u00b10.03, and 0.29\u00b10.03). However, pupil diameter did not correlate with decoding accuracy (Figure 3H), therefore we can rule out the possibility that a lower amount of light reaching the retina accounts for the transient increase in representational drift. We noted that on average the mice ran a little more throughout the pDE session (fraction of session spent in locomotion, B1, B2, pDE, and Rec sessions, respectively [ \u00b1 SEM]: 0.18\u00b10.05, 0.10\u00b10.05, 0.27\u00b10.06, and 0.07\u00b10.03). Given that pupil diameter is positively correlated with locomotion (Reimer et al., 2014), it is likely that locomotion drove the increase in pupil diameter.\n\nIn our final analysis, to assess the rate of representational drift, fixed classifiers were employed, in which a single session was used to train the classifier. That same session (X1), as well as a second session (X2), was used for testing the accuracy of stimulus identify classification. The rate of drift was defined as the difference in accuracy between X2 and X1. The rate of drift was significantly higher during DE (sessions pDE and B2) compared to the control condition (sessions B2 and B1; paired t-test, p=9E-3; Figure 3E). These results are an indication that similar to the olfactory cortex (Schoonover et al., 2021), continuous sensory experience reduces representational drift.\n\nNotably, there was not a difference in the change in decoding accuracy across the control condition and between the Rec and the B2 sessions, even though the time span covered was 16 days (DE +LRx) rather than 8 days. These results demonstrate that the stimulus representation not only recovered after transient DE but that the representation rebounded to its original state. To confirm this interpretation, fixed classifiers were trained using the neural activity from the Rec session, and the difference in accuracy between the pDE (the \u2018second\u2019 test session in this case) and Rec sessions was computed. As expected, the rate of drift was higher than in the control condition (paired t-test, p=0.012; Figure 3E).\n\nIn summary, we found that in the adult, stimulus encoding is robust to transient deprivation and is capable of recovering not only in terms of the estimated amount of stimulus information contained in V1 but also that the stimulus representation rebounds to its original form. LRx, despite initiating a cascade of changes in gene expression (Torrado Pacheco et al., 2019; Mardinly et al., 2016), did not persistently disturb stimulus encoding. Thus, using DE as a treatment for amblyopia is not expected to have a negative impact on previously established visual function. Furthermore, our results establish that exposure to naturalistic statistics in the home-cage environment improves neural discriminability well into adulthood. It will be of interest in future studies to determine whether stimulus discrimination reaches a plateau and requires continuous experience to maintain the plateau or continues to improve past the classic critical period for ocular dominance plasticity.\n\n### Ideas and speculation\n\nOur DE experiments revealed that vision has a destabilizing influence on the persistence of orientation preference for approximately 30% of the population of imaged neurons. Similarly, the persistence of pairwise signal correlation among V1 neurons was lower in control conditions compared to the DE condition. Thus, it is possible that under normal natural viewing conditions in the adult, orientation preference is subjected to on-going Hebbian plasticity which has an observable net destabilizing effect on the preference of individual neurons in V1; these changes potentially occupy the null coding space such that they do not impact downstream readout in the visual hierarchy but are sufficient and necessary to maintain retinotopic and matched organization of receptive field structure. In this scenario, DE-induced stabilization would not be a direct consequence of mechanisms associated with deprivation-induced homeostasis (Bridi et al., 2018; Turrigiano, 2008) rather the removal of a disrupting influence.\n\nThe observations reported here are consistent with the theoretical proposal that there is a plastic substrate of neurons with preferentially higher recurrent connectivity that coexist with a stable \u2018backbone\u2019 formed by neurons that are resistant to sensory perturbations (Sweeney and Clopath, 2020). Such a functional architecture has the advantage that new information can be integrated into existing networks without perturbing on-going function and could contribute to stable perception while allowing for adaptive flexibility. In other words, the backbone is resistant to effects of homeostatic plasticity induced by DE. Also, consistent with the proposed functional architecture, we found that that the decoding accuracy of fixed classifiers rebounded to their original, pre-dark exposed state during LRx. The extent to which a stable backbone could be updated to integrate previously deprived input in the case of pathologies such as amblyopia is unclear. Prior work demonstrates that visual perceptual training is effective at improving spatial acuity specifically if the training immediately follows DE (Eaton et al., 2016) such that the rejuvenating effects of DE are still present. It would be of interest in future experiments to determine whether DE transiently allows for a stable backbone to be updated to reflect newly integrated input.\n\nNotably, the development of natural scene processing is protracted relative to grating stimulus encoding in V1 (Kowalewski et al., 2021). Specifically, a proportion of V1 neurons develops a strong preference for complex scenes relative to simple grating stimuli (de Vries et al., 2020; Kowalewski et al., 2021; Walker et al., 2020). It will be of future interest to determine whether the development of complex scene processing is facilitated by the presence of neurons that are functionally distinguishable from a stable \u2018backbone\u2019 and the extent to which complex-scene preferring neurons emerge from a potentially more plastic population within V1. Such an architecture may be reinforced by a spatial segregation of neuomodulatory input arising from subcortical brain regions associated with reward signals, such as the nucleus basalis (Pafundo et al., 2016; Hangya et al., 2015; Ji et al., 2015). In this scenario, a stable \u2018backbone\u2019 could serve the purpose of retaining spatial receptive field position and binocular alignment (Wang et al., 2010; Sarnaik et al., 2014; Chang et al., 2020) between the two eyes during the protracted development of complex scene processing.\n\n## Methods\n\n### Animal preparation and timeline of imaging\n\nAll experimental procedures were compliant with the guidelines established by the Institutional Animal Care and Use Committee of Carnegie Mellon University and the National Institutes of Health, and all experimental protocols were approved by the Institutional Animal Care and Use Committee of Carnegie Mellon University (protocol # PROTO201600014). To express the calcium indicator GCaMP6f selectively in excitatory neurons, homozygous Emx1cre mice (Jackson Laboratories, stock number 005628) were crossed with homozygous Ai93/heterozygous Camk2a-tTA mice (Jackson Laboratories, stock number 024108). Experimental mice were heterozygous for all three alleles. Mice were housed in groups of 2\u20133 per cage, in a 12 hr light/12 hr dark cycle; all imaging sessions started at Zeitgeber time (ZT) 14.5\u00b11, where ZT0 is lights on, and ZT12 is lights off. The same enrichment materials were provided in all cages including a Plexiglas hut and nesting material. Mice were housed in the barrier section of the animal facility until the time of surgery, luminance in this room was 240 lux. After surgery mice were maintained in a different location that also had a luminance of 240 lux. During animal set up and tracking prior to recording luminance was 60 lux. See Table 1 for information on animal sex and genotype. Males and females were randomly selected. None of the mice used in this study exhibited aberrant, interictal events (Kowalewski et al., 2021; Steinmetz et al., 2017) in V1 or adjacent regions.\n\nMice (29\u201331 days old) were anesthetized with isoflurane (3% induction, 1\u20132% maintenance). A 3 mm diameter craniotomy was made over the primary visual cortex in the left hemisphere, identified by coordinates and landmarks as described in Feese et al., 2018. A stainless-steel bar, used to immobilize the head for recordings, was glued to the right side of the skull and secured with dental cement. The craniotomy was then covered with a double glass assembly in which the diameter of the inner glass was fitted to the craniotomy and sealed with dental cement. To ensure correct targeting of recordings to the binocular zone of V1, in a pilot experiment, visual stimuli were presented to the ipsilateral pathway. The screen was placed directly in front of the animal, perpendicular to the midline. The contralateral eye was occluded by attaching an opaque shield to the microscope objective. Mice typically adapt to this irritant within 1\u20132 min. We confirmed that our imaging field of view could be placed such that the field of view did not extend past the boarders of binocular V1 (Figure 1\u2014figure supplement 2). In the pilot experiment, the calcium indicator GCaMP6f was expressed via a virus (Addgene #100837: pAAV.Syn.GCaMP6f.WPRE.SV40; titer \u22651 \u00d7 10\u00b9\u00b3 vg/mL). Two injections were targeted to the binocular zone of V1 in the left hemisphere (0.3 mm anterior to lambda; 3 and 3.25 mm lateral to the midline, respectively) using a glass micropipette and a PicoSprizer III Microinjector (20 psi, 10\u201380 ms pulses, 2 s pulse interval). Injections started at an initial depth of 400 \u03bcm. The pipette was then raised in 25 \u03bcm steps, and equal amounts of virus were injected up to a final depth of 100 \u03bcm below the dura for a total injected volume of ~300\u2013500 nl across layer 2/3.\n\nPrior to the first baseline recording session in the experimental mice, the location of binocular neurons in V1 was identified using the following search strategy: neural activity in response to ipsilateral pathway stimulation was visualized at low magnification using a field of view sized approximately 900\u00d7900 microns and moved until the location of the highest-intensity ipsilateral-driven activity was identified. This location was centered in the imaging field of view and the same location used in subsequent imaging sessions. The search area was restricted to an area 2.7 mm posterior of Bregma, thus ensuring extra striate regions anterior to V1 were avoided. Note, although the lateral medial area adjacent to the binocular zone contains binocular neurons (Wagor et al., 1980), the responses are weaker compared to V1 (Kalatsky and Stryker, 2003). After the initial screening described above, four imaging sessions were acquired, each session was separated by 8\u00b11 days (see Table 1 for the precise age of each animal on each imaging session). Animals were dark-exposed for 8 days. On the pDE imaging session, animals were removed from the dark and exposed to low-light conditions (60 lux) for 30\u201340 min during the animal mounting and neuron tracking procedure, prior to data collection.\n\n### Data acquisition, neuron segmentation, and neuron tracking\n\nTwo-photon calcium imaging was performed in awake head-fixed mice mounted atop a floating spherical treadmill using a resonant scanning microscope (Neurolabware) outfitted with a 16\u00d7 Nikon objective (0.80 NA) and 8 kHz resonant scanning mirror. Treadmill motion was recorded using a camera (Dalsa Genie M640-1/3) for off-line analysis of locomotion (Jeon et al., 2018), and eye blinks were captured using a second camera (Dalsa Genie M1280; Kowalewski et al., 2021). A laser excitation wavelength of 920 nm was used (Coherent, Inc); green emissions were filtered (Semrock 510/84\u201350), amplified (Edmund Optics 59\u2013179), and detected with a photomultiplier tube (PMT; Hamamatsu H1 0770B-40). The imaged field of view was 620\u00d7504 microns, pixel dimensions were 0.85\u00d70.98 \u00b5m, and the acquisition rate was 15.5 Hz. The acquired image time series were motion-corrected by computing the horizontal and vertical translation of each frame using phase correlation (Kowalewski et al., 2021) and individual neurons segmented using the Matlab version of Suite2p toolbox (Pachitariu et al., 2017), as described in Kowalewski et al., 2021.\n\nTo identify neurons that were tracked across imaging sessions, we registered repeat imaging sessions using the mean intensity image of each session. The mean intensity image for a session was computed by averaging the intensity of each pixel in the aligned calcium image series across time for the entire imaging session (roughly 50,000 frames). Then, the mean intensity images of the two sessions were registered using an affine transform with one-plus-one evolutionary optimizer. Once the sessions were registered, the percentage of pixel overlap between the neurons from two sessions was computed. Neurons were accepted to be the same neuron across sessions if the percentage of overlapping pixels across the two sessions was larger than 75%. On average, there were 160 pixels in a given neuron.\n\n### Visual stimulation\n\nStatic sinusoidal grating stimuli were generated using psychophysics toolbox (http://psychtoolbox.org/) in Matlab (Mathworks, Boston, MA, USA). Stimuli were presented at 100% contrast; the luminance output of the screen was 17 cd/m2. The stimulus was presented on a screen positioned 25 cm away from the right eye angled at 50\u00b0 with respect to the midline of the animal. The size of the screen was 64\u00d740 cm, thereby subtending 142\u00d796\u00b0 of visual angle. The s.f. range of the stimulus set was 0.02 cycles/\u00b0 to 0.3 cycles/\u00b0 at 0.02 cycles/\u00b0 interval. The orientations ranged from 0 to 180\u00b0 at 15\u00b0 spacing interval, yielding a total of 180 different sinusoidal gratings with 12 different orientations and 15 different spatial frequencies. Each grating was presented for 250 ms consecutively in a random order without interleaved gray screen; this was repeated four times, and data were saved to disk. This sequence was repeated a minimum of nine times, resulting in a total of at least 36 trials for a given stimulus. Taking into account trials removed due to locomotion or pupil tracking (see Quantification of visual responses), a minimum of 25 trials was used in analysis. 2 s of isolumant gray screen was presented at the onset of each sequence.\n\n### Quantification of visual responses\n\nReverse correlation was used to determine the response window of a given stimulus (Ringach et al., 1997). The peak in the stimulus-averaged events was observed 194\u2013320 ms after the stimulus was presented on the screen. Therefore, for each stimulus, the corresponding event activity was computed by averaging the number of events between 194 ms and 320 ms window. We defined this period as the response window for a given stimulus.\n\nA neuron was defined as responsive to visual stimuli when the number of events following a presentation of a visual stimulus was modulated by the stimuli presented. To test for modulation, we performed a one-way ANOVA(\u03b1=0.01) on the observed events during the response window using stimuli as the factor for each neuron.\n\nGCaMP6f expressed in neurons has a longer decay than the presentation rate of our stimuli (Chen et al., 2013). Therefore, we used deconvolution to remove the effects of decay in calcium fluorescence in quantifying responses of each neuron to our visual stimuli as in Jeon et al., 2018. The amplitude of calcium transients was expressed in units of inferred events. For each segment n, inferred events $s_{n}$ were estimated from fluorescence using the following model:\n\n$$\nf_{n}=s_{n}*k+ \\beta_{n}p_{n}+b_{n}\n$$\n\nwhere k is the temporal kernel, and $b_{n}$ is the baseline fluorescence. Neuropil fluorescence, which is a contamination of the fluorescence signal $f_{n}$ from out of focus cell bodies and nearby axons and dendrites, is modeled by $p_{n}$, the time course of the neuropil contamination, and, $\\beta_{n}$ the scaling coefficients * denotes convolution. Using this model, $s_{n}$, k, $\\beta_{n}$, and $b_{n}$ were estimated by a matching pursuit algorithm with L0 constraint, in which spikes were iteratively added and refined until the threshold determined by the variance of the signal was met.\n\nTrials containing locomotion or eye blinks were removed. Pupil location was estimated from eye-tracking videos using a circular Hough transform algorithm; the algorithm failed to find the pupil on frames during which the mice were blinking. These frames were marked as eye blink frames and removed from further analysis. Trials with locomotion were identified as in Jeon et al., 2018. Briefly, after applying a threshold on the luminance intensity of the treadmill motion images, phase correlation was computed between consecutive frames to estimate the translation between the frames. To define a motion threshold, the data were smoothed using a 1 s sliding window. Any continuous non-zero movement periods during which the animal\u2019s instantaneous running speed exceeded 10 cm/s threshold for at least one frame were marked as running epochs.\n\n#### Estimation of preferred stimulus and tuning bandwidth\n\nOrientation and s.f. preference were determined using a two-dimensional Gaussian model, fit to single trial responses. For neurons that were responsive to grating stimuli, a two-dimensional Gaussian model was fit using non-linear least-squared regression such that the number of events R as a function of the orientation \u03b8 and the s.f. \u03c6 of the stimulus was\n\n$$\nR(\\theta,\\phi)=\\frac{A}{2\\pi\\sigma_{\\theta}\\sigma_{\\phi}\\sqrt{1\u2212\u03c1^{2}}}e^{(\u2212\\frac{1}{2(1\u2212\u03c1)^{2}}[\\frac{(\\theta\u2212\\mu_{\\theta})^{2}}{\\sigma_{\\theta}^{2}}\u00a0+\u00a0\\frac{(\\phi\u2212\\mu_{\\phi})^{2}}{\\sigma_{\\phi}^{2}}\u00a0\u2212\u00a0\\frac{2\u03c1(\\theta\u2212\\mu_{\\theta})(\\phi\u2212\\mu_{\\phi})}{\\sigma_{\\theta}\\sigma_{\\phi}}])}+B\n$$\n\nwhere \u03bc\u03b8 was the preferred orientation, and \u03bc\u03c6 was the preferred s.f. of the stimulus, and the \u03c3\u03b8 and \u03c3\u03c6 described the widths of respective tuning. The covariance of responses for orientation and s.f. was captured by the correlation term \u03c1. A was a parameter accounting for the amplitude of the responses in number of events, while B was the baseline event activity of the cell. For fitting, the lower and the upper bound of allowed values for \u03bc\u03c6 were set by the range of the presented stimuli, which was 0.02\u20130.30 cycles/\u00b0. The lower bound for \u03c3\u03b8 and \u03c3\u03c6 was set at 1\u00b0 and 0.001 cycles/\u00b0, respectively, to prevent fits with zero or negative widths. Prior to fitting, the preferred orientation was initialized by estimating the preferred orientation by averaging the response, R across all spatial frequencies for a given stimulus orientation, \u03b8 and calculating half the complex phase of the value (Niell and Stryker, 2008; Kuhlman et al., 2011).\n\n$$\nS=\\frac{\\sumR\\thetae^{2i\\theta}}{\\sumR(\\theta)}\n$$\n\nThe preferred s.f. was initialized by selecting the s.f. that generated the maximal significant response at the estimated preferred orientation. For the model above, the goodness of fit (R2) was used to identify neurons with significant tuning. The chance distribution of R2 values was calculated from fitting the above model with permuted stimulus labels on individual trials 1000 times for each neuron. Neurons whose R2 exceeded the 95th percentile of the chance R2 distribution were accepted as significant and referred to as well tuned to grating stimuli. Fitting on individual trials ensures that only neurons with responses that are similar across trials are considered well tuned. The tuning curves of all such neurons are provided in an associated metadata file, \u2018Source data 1.\u2019 Note, the goodness of fit R2 values is calculated using individual trials, as such are lower than what is typically observed for fits using trial-averaged responses. The associated metadata demonstrates that the fits are an accurate representation of the data.\n\nThe bandwidths of the Gaussian tuning were described using half-width at half-maximum (HWHM). The HWHM bandwidths for both orientation and s.f. were calculated as\n\n$$\nBW=\\sqrt{2*ln\u2061(2)}*\\sigma\n$$\n\nwhere $\\sigma$ was the width parameter of the Gaussian fit.\n\n#### Computation of signal correlation (Figure 1F, G; Figure 2B)\n\nSignal correlation \u03c1sig between a pair of neurons is defined as Pearson\u2019s correlation between the average responses to stimuli (Averbeck et al., 2006). Therefore, we computed pairwise signal correlation between neuron i and neuron j as\n\n$$\n\u03c1_{i,j}^{sig}=corr(R\u00af_{i},R_{j}\u00af)\n$$\n\nwhere $R-$ is a vector of average response in number of spikes to 180 sinusoidal gratings for the respective neuron.\n\n#### Stimulus classification (Figure 3A-E)\n\nKNN classifiers were used to decode the presented stimuli from vectors of single trial population responses (de Vries et al., 2020; Kowalewski et al., 2021). In our case, the KNN classifier estimated the stimulus identity for a given response vector by identifying the most frequent stimulus identity of its k closest response vectors. To identify the nearest neighbors for a given response vector, we computed the Euclidean distance to the other response vectors. For each session, data were divided so that a single set of response vectors consisted of one trial of each stimulus. This resulted in the number of sets being equal to the number of trials that each stimulus was shown. When the number of trials available was larger than the minimum number of trials, trials were randomly subsampled from the available trials. During decoding, the possible neighbors for a test response vector consisted of all response vectors not belonging to the test set. This ensures an unbiased representation of possible nearest neighbors across stimuli. This process was repeated across each response vector and each set. We reported the performance of this decoding process as accuracy across all response vector tested. Previously, we found that a value of k=4 resulted in the best average rank across mice (Jeon et al., 2021), therefore we fixed the value of k to 4. Chance performance of the classifiers was 1 divided by the number of stimuli classified. The number of trials and neurons was matched to the minimum number of available trials and neurons across the three sessions, B2, pDE, and Rec. In the case, more trials or neurons were available; neurons and trials were randomly subsampled.\n\nTo quantify representation drift, we modified the KNN classifier described above. We trained a KNN classifier on the neuronal responses from a single session and decoded held-out responses from that given session and as well as responses from a second session acquired on a different day. Only the neurons that were tracked in both sessions were used to train and test the classification algorithm. The number of trials was matched to the minimum number of available trials across the two sessions.\n\nThe number of neurons and trials used were as follows: Figure 3A and D, for mouse # 1\u20136, the number of trials was 42, 31, 33, 27, 26, and 37 for each of the imaging sessions, and the number of neurons was 114, 98, 75, 64, 55, and 96, respectively; Figure 3E, the number of trials ranged between 25 and 44 and the number of neurons ranged between 68 and 167, depending on the animal and condition. Figure 3H, the number of trials was 25, and the number of neurons was 36.\n\n#### Reliability across trials (Figure 3F, G)\n\nReliability was computed as the proportion of trials in which the response amplitude was at least 2 SDs above baseline activity, where baseline activity was defined as the activity during presentation of the isolumant gray screen.\n\n### Two-sample proportions Z-test (Figure 1\u2014figure supplement 2C)\n\nWe computed the Z-statistic for the hypothesis that the fraction of untuned neurons came from two separate binomial distributions against the null hypothesis that they came from the same distribution. The Z-statistic for the difference in performance between the first session and the ith session was computed by the following equation.\n\n$$\nZ=\\frac{p_{1}-p_{i}}{SE}\n$$\n\nSE was the standard error of the sampling distribution difference between the two performances and p1 and pi were the performance of the first session and the ith session, respectively. SE of the first session and the ith session was computed by the equation below,\n\n$$\nSE=\\sqrt{p*1-p*(\\frac{1}{n_{1}}+\\frac{1}{n_{i}})}\n$$\n\nwhere p is the pooled performance between session 1 and session i, weighted by the number of trials, n, of the respective session.\n\n$$\np=\\frac{p_{1}*n_{1}+p_{i}*n_{i}}{n_{1}+n_{i}}\n$$\n\np Values were computed from the Z-statistic.\n\n### Statistics\n\nError is reported as SEM, unless noted. In the case data were not normally distributed, non-parametric tests were used. Alpha was set to 0.05 unless noted. In the case p values were corrected for multiple comparisons, the number of comparisons is noted in the figure legend; correction was computed using the false discovery rate Benjamini-Hochberg procedure. Degrees of freedom (df) and the test statistic are reported in italics in the figure legends. In the case of small sample sizes when using the Wilcoxon rank-sum test, the rank-sum statistic is reported when the approximate method is not used. The fraction of neurons (normalized to the total number of neurons segmented with a given imaging sessions) that were responsive is reported in Supplementary file 1A. Furthermore, the fraction of neurons that were included in each figure panel is listed in Supplementary file 1B-D; in the case the SEM was non-overlapping between the first imaging session and a given imaging sessions, the SD is included and paired t-test p values, adjusted for multiple comparisons as appropriate, are indicated. Prior to initiating the study, based on prior work (Jeon et al., 2021), it was estimated that a sample size of n=6 animals would be sufficient to detect differences if present. Reported power was computed using IBM SPSS in the case of t-tests, and a power estimate (powere) was computed in the case of Wilcoxon rank-sum tests using the Matlab function \u2018sampsizepwr\u2019 with alpha set to 0.01.\n\n### Materials availability statement\n\nNo new biological materials were created in this study.\n\n### Code availability\n\nThe code used for analysis is available on GitHub (https://github.com/bjjeon5111/BCI_V1, copy archived at swh:1:rev:e026800170840d001bd27632db2a2008798653a4; Jeon, 2022).\n",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "c1adf570-bf5d-4461-96b6-af5ec690a46f",
+      "submission_id": "9a457016-4d3c-40b6-8e37-e3a53db371cb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Krystel R Huxlin, https://ror.org/022kthw22 University of Rochester United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80361.sa0](https://doi.org/10.7554/eLife.80361.sa0)\n\nThe present manuscript examines cortical representations of basic visual attributes following a manipulation shown to enhance plasticity in the adult brain: binocular dark exposure for 8 days, followed by light re-introduction. Prior work did not rule out the possibility that prolonged dark exposure could negatively impact visual representations in V1. Using 2P calcium imaging in awake adult mice to quantify changes in stimulus selectivity, discriminability, and reliability of V1 neurons, Jeon and colleagues provide compelling evidence that dark exposure has opposing but transient effects at the single neuron versus population level, thus failing to permanently disrupt visual representations in V1.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Krystel R Huxlin, https://ror.org/022kthw22 University of Rochester United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80361.sa1](https://doi.org/10.7554/eLife.80361.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Visual experience has opposing influences on the quality of stimulus representation in adult primary visual cortex\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Joshua Gold as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Arbora Resulaj (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Included here is a brief summary and list of essential revisions the reviewers and review editor deem necessary for you to address.\n\nEssential revisions:\n\nAs you will be able to read below, reviewers appreciated the study and manuscript, which provides a unique and unexpected set of results for the field of adult visual plasticity, at the levels of both population and single cell responses in rodent V1. The writing was clear, the figures appropriate and importantly, the study design and analyses were deemed rigorous and generally appropriate. However, reviewers raised concerns with regard to some of the claims and data interpretation. Rather than additional experiments, they suggested additional information and analyses of the data already collected. The key points that need to be addressed can be summarized as follows:\n\n1. Several experimental parameters are missing or difficult to locate, and should be provided clearly and completely in the Methods/Results:\n\na. A clear experimental timeline.\n\nb. Mouse age and its impact/lack of impact on results.\n\nc. Cage environment parameters.\n\nd. Stimulus and screen parameters for behavioral assays.\n\ne. Imaging/recording locations within V1 (monocular versus binocular zone?).\n\n2. Reviewers raised several questions about the proportion (and properties) of untuned neurons in Figure 1 and loss of tuning in Figure 3, as well as change in tuning stability for spatial frequency (as opposed to orientation).\n\n3. Proper statistical reporting, sample size justification and alternative statistical tests are needed to address strength of findings with regard to increased stability of orientation preferences and generalizability of results to the level of single animals.\n\n4. Expanded discussion of results in view of: (1) the work of Schoonove et al., 2021 in olfactory cortex (esp. the impact of repeated stimulus presentations), (2) the role of decreased signal to noise ratio (and/or firing rates) in the observed changes in neuronal tuning after DE, and (3) how the notion that in the intact visual system, neural circuits that are easily perturbed by sensory fluctuations co-exist with more stable neurons that are resistant to them applies to abnormally-formed visual systems \u2013 such as those in amblyopes.Reviewer #1 (Recommendations for the authors):\n\nThere are a number of issues I would like to see addressed in this otherwise well-framed and clearly written manuscript:\n\nMethodological:\n\n\u2013 State the length of DE in the Methods and at the first mention of DE in Results. Currently, it is stated in the abstract, then on line 173 of the Results and Figure 1 legend.\n\n\u2013 Please provide information about cage environment luminance, as well as visual stimulus screen parameters such as luminance and luminance contrast of the stimuli utilized. Was the screen luminance calibrated for instance? Were all gratings high-contrast? I assume they were \u2013 but what contrast?\n\n\u2013 6 mice appears to be a low sample size \u2013 as such, there is a question as to whether sufficient power is present for some of the analyses performed. Please address. Related to this, please provide full statistical expression (degrees of freedom, t or F values as appropriate) every time stats are detailed in the text and figure legends.\n\n\u2013 Please indicate where in V1, imaging/recordings were done. Was it in the monocular section? The binocular section? Some whole brain reconstructions of the location of imaging sites would be useful in this context. Would you expect to see different effects in monocular versus binocular cells?\n\n\u2013 Please provide some evidence (anatomical or otherwise) that you were analyzing neurons in V1 and not extrastriate cortex.\n\nInterpretational:\n\n\u2013 While the single parameter (ori preference, ori bandwidth, SF preference, SF bandwidth) analysis reveals a change in tuning stability for orientation after DE, there is none for SF \u2013 please discuss why and what the functional implications might be.\n\n\u2013 Please discuss the question of why you were able to elicit relevant visual responses from only a small fraction of V1 neurons imaged for the comparisons made between B1-B2, B2-pDE, etc. What exactly caused this (loss of visual responsiveness, or ability to be fit with the 2D Gaussian model)? How does that impact interpretation of the effects of DE?\n\n\u2013 The last sentence of the Introduction (lines 104-105) comes out of no-where, stating that \"exposure to natural image statistics in the home-cage improves neural discriminability in the adult\". It is not clear how the authors arrive at this conclusion, especially here in the Introduction (before methods and results are detailed) and in view of the fact that there is next to no information about the visual environment of their experimental animals in their cages. Were natural image statistics measured? Manipulated? Have the authors established a causal relationship between statistics of natural cage environment and neural tuning or discriminability in their animals or is this speculation? Please clarify. What may additionally help the reader in this context, is for authors to introduce the notion of the natural visual environment earlier, as they describe their experimental manipulations. Light re-introduction is in fact not just re-introduction of light, but re-introduction to a high luminance state + the natural [cage] visual environment.\n\n\u2013 Please discuss the temporal requirements for the phenomena observed \u2013 or at the very least justify why 8 days were selected for both the DE and the light re-exposure. Would 1 day have sufficed? Would 3? This ties in with my next point \u2026.\n\n\u2013 It would be good to see the discussion of results include some mechanistic hypotheses about the phenomena described. Do the authors think the representational stabilization observed is the result of homeostatic plasticity induced by deprivation or a Hebbian mechanism? What about the effect of visual re-exposure?\n\n\u2013 Finally, the authors nicely present their work in the context of the theory proposed by Clopath and colleagues, about the co-existence of neural populations that are more easily perturbed by sensory stimuli and those which are more resistant \u2013 the more \"stable backbone\". While the present work may have confirmed such a scenario in the intact mouse visual cortex, it would be useful to see a discussion of the likelihood that this may also be true in pathological visual systems such as those of amblyopic subjects.\n\nReviewer #2 (Recommendations for the authors):\n\nDespite the significance of the work and the findings, there are a number of points that should be clarified in the manuscript:\n\n1. According to supplemental data file 1, 6 mice were recorded in these experiments, 3 aged postnatal day 45-59 and 3 aged postnatal day 83-86. It would be interesting to see if the response to dark exposure was different across the 2 age groups, as predicted by previous work. An experimental timeline would be useful, the above age at imaging initiation is only available in supplemental data.\n\n2. The representational drift demonstrated in Deitch et al., in visual cortex is not stabilized by the visual stimulation protocol, however Schoonove et al., 2021 show demonstrate that daily exposure to the same odorant stabilizes stimulus selectivity in the olfactory cortex. I'd like to see the authors expand their discussion of these interesting observation.\n\n(It would also be more precise for the authors to refer to Schoonove et al., as working in olfactory cortex not association cortex).\n\n3. In Figure 1B, \"tracked and tuned\" neurons were shown in red and \"segmented\" neurons were shown in yellow. How about \"tracked but not tuned\" neurons? Were they included in \"segmented\" group? Since not all visually responsive neurons are tuned, this group should be separated by \"segmented\".\n\n4. In Figure 3F and G, the nature of decrease in tuning should be further discussed. Pacheco et al., 2019 demonstrated, prolonged exposure to darkness increases the firing rates upon LRx. Is the decrease in reliability due to the decrease in SNR? Any difference in firing rate changes between \"neurons remained tuned\" vs \"neurons lost tuning\"?\n\n5. Unless those 30% of neurons that lost tuning after pDE are the ones regain tuning, visual representation after 8 d LRx is different from pre-DE condition (B1 and B2). It is not clear if the identity of 30% of neurons were tracked after 8 d LRx to prove this.Reviewer #3 (Recommendations for the authors):\n\nThe paper uses a combination of analysis methods that are both thoughtful and complementary. My main recommendations are for additional analyses to strengthen the findings.\n\n(1) Please mention whether the monocular zone of V1 or the binocular zone of V1 was imaged. This is relevant for comparison with monocular deprivation studies.\n\n(2) The finding that a fraction of neurons show more stable orientation preferences following dark exposure depends on the quality of the fits for the tuning curves. While the authors present a control where they remove 10% of neurons with the worst R2 from their analysis, and show that the conclusions still hold, other complementary analysis can be used. Does R2 depend on change in orientation preference? If neurons were to be ranked according to their change in orientation preference and split into three equal groups, is there a difference in R2 between the three groups?\n\n(3) The paper pools visual responses across six mice to show a smaller change in orientation preference following dark exposure compared to baseline. Is there an effect if you do Wilcoxon rank sum test on visual responses from each individual mouse (ie. Figure 1D statistical test performed on visual responses from individual mice)?\n\n(4) Additional analysis is needed to support the following sentence in the Abstract or this sentence should be softened: \"a decrease in response reliability across a broad range of spatial frequencies accounted for the disruption\". The paper shows that there is both decreased reliability and degraded classifier performance. However, to address whether decreased reliability indeed degrades classifier performance, the authors could remove the least reliable neurons and compare classifier performance (the comparison may have to be with a matched number of neurons).\n",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a70ba2b1-3833-4bcb-802c-9aed1cc74d72",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C1",
+      "claim": "Transient dark exposure, typically 7\u201310 days in duration, followed by light reintroduction is an emerging treatment for improving the restoration of vision in amblyopic subjects whose occlusion is removed in adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient dark exposure, typically 7\u201310 days in duration, followed by light reintroduction is an emerging treatment for improving the restoration of vision in amblyopic subjects whose occlusion is removed in adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to established literature on dark exposure as a treatment approach.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "13de1cdb-5e08-401c-9767-e2ba0210eb38",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C2",
+      "claim": "Dark exposure initiates homeostatic mechanisms that together with light-induced changes in cellular signaling pathways result in the re-engagement of juvenile-like plasticity in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "Dark exposure initiates homeostatic mechanisms that together with light-induced changes in cellular signaling pathways result in the re-engagement of juvenile-like plasticity in the adult such that previously deprived inputs can gain cortical territory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws from established understanding of homeostatic plasticity mechanisms and is supported by the broader literature context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "cfc0bed3-32e8-4afb-a71d-9575fc5eedf1",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C3",
+      "claim": "Neural discriminability was transiently reduced following dark exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural discriminability, assessed using classifiers, was transiently reduced following dark exposure",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from classifier analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "6bc4cfe7-ae01-4bed-ae5b-4190cd011bb2",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C4",
+      "claim": "A decrease in response reliability across a broad range of spatial frequencies likely contributed to the disruption in neural discriminability.",
+      "claim_type": "EXPLICIT",
+      "source": "a decrease in response reliability across a broad range of spatial frequencies likely contributed to the disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed correlation between reliability and discriminability in the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "fa73edf8-301b-4b35-90fb-8c53861be861",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C5",
+      "claim": "Both discriminability and reliability recovered within 8 days of light reintroduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Both discriminability and reliability recovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental measurements across imaging sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "2b74b633-2697-43fd-beeb-a18996bb7f22",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C6",
+      "claim": "Stimulus representation rebounded to the original, pre-deprivation state after dark exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Fixed classifiers were used to demonstrate that stimulus representation rebounded to the original, pre-deprivation state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fixed classifier analysis showing recovery to baseline levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "98181ac2-e65d-420d-bb15-e155667057b3",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C7",
+      "claim": "Dark exposure did not appear to have a lasting negative impact on visual processing.",
+      "claim_type": "EXPLICIT",
+      "source": "thus dark exposure did not appear to have a lasting negative impact on visual processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the recovery of discriminability and representation to baseline levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "24442227-9e86-460e-b51d-b94f628b2f82",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C8",
+      "claim": "Dark exposure significantly stabilized orientation preference.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that dark exposure significantly stabilized orientation preference and signal correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of orientation preference changes across conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "1db045e4-1344-4a60-bf17-3374ccdccd37",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C9",
+      "claim": "Dark exposure significantly stabilized signal correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that dark exposure significantly stabilized orientation preference and signal correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of pairwise signal correlations across experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "1b51219b-0eee-489e-82f2-3597084ba090",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C10",
+      "claim": "Natural vision exerts a disrupting influence on the stability of stimulus preference for classic grating stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that natural vision exerts a disrupting influence on the stability of stimulus preference for classic grating stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that orientation preference was less stable during normal vision compared to dark exposure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "0fc7bf41-28fc-47df-8d5c-c301aa7baf90",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C11",
+      "claim": "Natural vision improves neural discriminability for both low and high-spatial frequency stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "natural vision as experienced in the home-cage environment improves neural discriminability in the adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by classifier performance data showing higher accuracy during normal vision conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "faf384c6-7e32-485c-bc2d-fff3d0db63ec",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C12",
+      "claim": "Primary visual cortex (V1) is particularly sensitive to visual deprivation during postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary visual cortex (V1) is particularly sensitive to visual deprivation during this period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of visual neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "cb45a531-f95f-493c-adac-2b77412ee07d",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C13",
+      "claim": "Continuous binocular input is required during postnatal development for sensory pathways to drive cortical responses in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "Classic experiments demonstrate that in order for sensory pathways to drive cortical responses in the adult, continuous binocular input is required during postnatal development (Reh et al., 2020; Hensch and Quinlan, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cited classic experiments in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "e4fc16f6-6ad4-4c64-9b49-72755e40ea78",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C14",
+      "claim": "Experimentally induced monocular deprivation in young animals results in a rapid decrease in the strength of deprived inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally induced monocular deprivation in young animals results in a rapid decrease in the strength of deprived inputs, and with a delay, the response of intact inputs is potentiated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from classic deprivation experiments.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "a6b363dc-3fe8-4204-b549-600705415de5",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C15",
+      "claim": "Depression of deprived inputs occurs at a synaptic level and outlasts the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Depression of deprived inputs occurs at a synaptic level and outlasts the perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research on synaptic plasticity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "5b13e119-e3dc-4ba6-8698-8427cab09a0c",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C16",
+      "claim": "The same peripheral perturbation in adults does not induce a rapid decrease in response strength.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the same peripheral perturbation in adults does not induce a rapid decrease in response strength, although potentiation of the intact input does proceed (Fong et al., 2021; Jenks et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cited studies comparing juvenile and adult plasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "1d86167c-21ad-4897-99b9-cd1d72a6b7f3",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C17",
+      "claim": "In young animals, the impact of deprivation on excitatory neuron activity levels is compensated for by a decrease in evoked inhibitory neuron activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the young, the impact of deprivation on excitatory neuron activity levels is compensated for by a decrease in evoked inhibitory neuron activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cited research on excitatory-inhibitory balance during development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "66a8450f-71f6-4102-960e-8c3162c5cea5",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C18",
+      "claim": "This form of compensation is a direct consequence of deprivation and does not occur in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "This form of compensation is a direct consequence of deprivation and does not occur in adults (Feese et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a cited study comparing developmental and adult responses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "ab68ef4f-3a76-482e-8377-f2af1f0c362a",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C19",
+      "claim": "Extracellular matrix perineuronal nets (PNNs) preferentially surround parvalbumin inhibitory neurons and create a barrier for synaptic remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, consistent with the above observations, extracellular matrix perineuronal nets (PNNs), which preferentially surround parvalbumin inhibitory neurons and create a barrier for synaptic remodeling, are resistant to degradation in the adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the structure and function of PNNs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "86a57467-3a1a-4484-93e3-7c350d0602e6",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C20",
+      "claim": "PNNs are resistant to degradation in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "extracellular matrix perineuronal nets (PNNs), which preferentially surround parvalbumin inhibitory neurons and create a barrier for synaptic remodeling, are resistant to degradation in the adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about age-dependent changes in PNN stability.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "0a8f441f-ad6b-4d61-812f-2c0d11d81b07",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C21",
+      "claim": "Interventions that target the break-down of PNNs in adult V1 are effective in restoring juvenile-like plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interventions that target the break-down of PNNs in adult V1 are effective in restoring juvenile-like plasticity and allow previously unused inputs to regain the ability to drive cortical neurons (Reh et al., 2020; Murase et al., 2019; Faini et al., 2018; Jenks et al., 2021; Pizzorusso et al., 2006; Pizzorusso et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple cited studies on PNN degradation and plasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "86ac9c46-8e30-4524-bd0e-9f96ede02722",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C22",
+      "claim": "In the adult, established inputs are not lost following disuse.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to the young, established inputs are not lost following disuse",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about adult plasticity limitations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "f9482d98-5e31-4084-b0e4-b0a0fcb268d4",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C23",
+      "claim": "In the absence of additional training or treatment, new input patterns from previously occluded sources are not readily integrated into the existing networks of adults.",
+      "claim_type": "EXPLICIT",
+      "source": "and in the absence of additional training or treatment, new input patterns from previously occluded sources are not readily integrated into the existing networks of adults (Hensch and Quinlan, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cited research on adult plasticity constraints.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "803fdfd6-7f2e-46ef-b0d4-942837d33fb2",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C24",
+      "claim": "Restoring vision to subjects that have matured without binocular input during early postnatal development is a recognized challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, restoring vision to subjects that have matured without binocular input during early postnatal development is a recognized challenge (Hensch and Quinlan, 2018; Falcone et al., 2021; Rodr\u00edguez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cited literature on amblyopia treatment challenges.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "83363386-3693-458b-8c6a-7999147672d0",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C25",
+      "claim": "Dark exposure followed by light reintroduction re-activates juvenile plasticity and is sufficient to restore deprived-eye input responses to grating stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulating evidence indicates that dark exposure (DE) followed by LRx re-activates juvenile plasticity and is sufficient to restore deprived-eye input responses to grating stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cited studies on dark exposure treatments across species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "5ef67e6e-2758-484c-b601-71e1fc67ee2d",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C26",
+      "claim": "Light reintroduction effectively degrades PNNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, LRx effectively degrades PNNs (Murase et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a cited study on the effects of light reintroduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "89d9f9c7-ad9b-4d73-a79a-635c2f86fc60",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C27",
+      "claim": "Closing one eye is sufficient to transiently disrupt stimulus representation in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous work demonstrated that closing one eye is sufficient to transiently disrupt stimulus representation in the adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by prior research on monocular deprivation effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "e6a55a21-c653-4e93-bd67-7853f9bfcbe5",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C28",
+      "claim": "Monocular deprivation disturbs the pattern of activity evoked in V1, including orientation preference and pairwise signal correlation among simultaneously recorded neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual neurons remain responsive, the pattern of activity evoked in V1 is disturbed, including orientation preference and pairwise signal correlation among simultaneously recorded neurons (Rose et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a cited study on monocular deprivation effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "95b9f96a-c680-4aa5-9173-18c0c9281a6d",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C29",
+      "claim": "Mean firing rates are largely similar across daily light-dark transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although mean firing rates are largely similar across daily light-dark transitions, pairwise correlations are significantly stronger during vision (Torrado Pacheco et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a cited study on diurnal variations in neural activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "dff155fc-6cc4-4282-952d-e73308f25938",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C30",
+      "claim": "Pairwise correlations are significantly stronger during vision compared to dark periods.",
+      "claim_type": "EXPLICIT",
+      "source": "although mean firing rates are largely similar across daily light-dark transitions, pairwise correlations are significantly stronger during vision (Torrado Pacheco et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a cited study on activity correlations during vision.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "ebb7380a-09a4-4fa8-af2f-3d8334d6b7df",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C31",
+      "claim": "In the olfactory cortex, continuous experience is required for drift to remain low.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the olfactory cortex, continuous experience is required for drift to remain low (Schoonover et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a cited study on representational drift in olfactory cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "1fc02277-68f7-45ec-b20f-69892a3afc9c",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C32",
+      "claim": "Dark exposure did not degrade pairwise signal correlation when immediately assessed after dark exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in contrast to monocular deprivation (Rose et al., 2016), DE did not degrade pairwise signal correlation when immediately assessed after DE and in fact stabilized orientation preference in neurons that remained tuned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing signal correlations across conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "56e1ad07-36b6-4e27-964d-e97ac9ff1011",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C33",
+      "claim": "Light reintroduction did not degrade pairwise signal correlation of tuned neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, LRx did not degrade pairwise signal correlation of tuned neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data on signal correlations after light reintroduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "5f779e53-adbc-4331-8137-5d80f8b9319a",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C34",
+      "claim": "Changes in signal correlation induced by monocular deprivation in adulthood are likely a result of imbalanced input rather than reduced drive from the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that changes in signal correlation induced by monocular deprivation in adulthood are likely a result of imbalanced input rather than reduced drive from the periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the effects of monocular deprivation versus binocular dark exposure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "d3bcdc1e-f3fb-4c3d-9532-b6d9830657c5",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C35",
+      "claim": "An increase in the rate of representation drift was detected when visual input was interrupted by dark exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, similar to olfactory cortex, an increase in the rate of representation drift was detected when visual input was interrupted by DE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fixed classifier analysis showing increased drift during dark exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "c5e5a9f2-abb5-40f9-b9a2-261c81d671c8",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C36",
+      "claim": "A decrease in the trial-to-trial reliability of stimulus responsiveness accounted for the transient change in representational drift.",
+      "claim_type": "EXPLICIT",
+      "source": "A decrease in the trial-to-trial reliability of stimulus responsiveness accounted for the transient change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between reliability and drift measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "23282339-a1be-4548-8a6d-a804be517b6d",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C37",
+      "claim": "Reliability was restored within 8 days of light reintroduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliability was restored within 8 days of LRx, and the representation rebounded to its original form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements of reliability across sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "46d5bb79-c3f6-472e-9476-2d7dc42a81f0",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C38",
+      "claim": "Neither dark exposure nor light reintroduction is expected to have a persistent negative impact on existing visual processing when used for the treatment of amblyopia.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus when used for the treatment of amblyopia, neither DE nor LRx is expected to have a persistent negative impact on existing visual processing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the recovery of all measured parameters to baseline levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "8c807c9d-a801-4811-85c3-baa26d4ac8f2",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C39",
+      "claim": "The effectiveness of perceptual training immediately following dark exposure may be influenced by a transient increase in representational drift.",
+      "claim_type": "EXPLICIT",
+      "source": "although the effectiveness of perceptual training (McGuire et al., 2022) immediately following DE may be influenced by a transient increase in representational drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed transient increase in drift after dark exposure.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "4ee44dc9-baab-4f96-8a5f-6644a44f1da2",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C40",
+      "claim": "30\u201350% of segmented neurons were responsive to full-field static gratings.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, 30\u201350% of the segmented neurons were responsive to full-field static gratings (Ohki et al., 2005; Montijn et al., 2016; Ko et al., 2014; Jeon et al., 2018; de Vries et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and is consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "5c38b8d6-bcb1-4366-984f-19f20e0613a4",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C41",
+      "claim": "Orientation preference was significantly less stable in the control condition compared to the dark exposure condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Orientation preference was significantly less stable in the control condition (Wilcoxon rank-sum test corrected for four multiple comparisons [z: 2.467], p=0.032; approximately 30% of the population is shifted leftward in the DE condition) in the control condition (n=249 neurons) compared to the DE condition (n=230 neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of orientation preference changes shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "1ec4ba1a-5c76-4c4e-93a4-3dd285235deb",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C42",
+      "claim": "Approximately 30% of the population showed greater stability in orientation preference in the dark exposure condition.",
+      "claim_type": "EXPLICIT",
+      "source": "approximately 30% of the population is shifted leftward in the DE condition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the data distribution in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "b5a7b27e-c7c4-4adf-a9a8-b3ae79260af3",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C43",
+      "claim": "The similarity of signal correlation matrices was significantly higher in the dark exposure condition compared to the control condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarity of signal correlation matrices for a given animal (computed as the Pearson's correlation coefficient between the two signal correlation matrices) was significantly higher in the DE condition compared to the control condition (Wilcoxon rank-sum test [ranksum: 23], p=0.009, n=6 animals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of signal correlation similarity shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "0e9698c4-dd5e-4ca9-b15c-47cb6293ecda",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C44",
+      "claim": "Five out of six mice reflected the pooled population pattern of orientation preference stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis at the level of individual animals revealed that five out of the six mice reflected the pooled population of neurons (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by individual animal analysis shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "21815adb-8cbf-4955-b815-e00d37047311",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C45",
+      "claim": "The atypical animal was the youngest at p45.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the atypical animal was the youngest, p45.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the animal data in Table 1 and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "c97264f4-9058-4d22-bd0f-56159d804bd1",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C46",
+      "claim": "Some rejuvenating influences of dark exposure do not occur until on or after p55.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work establishes that some rejuvenating influences of DE do not occur until on or after p55 (Huang et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a cited study on age-dependent effects of dark exposure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "d7673368-5122-4bb6-9fc3-0547363eaacc",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C47",
+      "claim": "Age might be a contributing factor as to why the youngest animal was distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "therefore age might be a contributing factor as to why this animal was distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the cited age-dependent effects and the observed outlier.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "a5a7b6a8-06d3-4113-bc59-4fcec45c7631",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C48",
+      "claim": "The stability of spatial frequency preference and orientation preference are independently regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with prior work indicating that the stability of s.f. preference and orientation preference are independently regulated (Jeon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a cited prior study from the same laboratory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "919ea208-a6a8-4254-a550-5605e09ceeb0",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C49",
+      "claim": "The majority of neurons (58%) was more unstable in the control condition when tracked across three sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of neurons (58%) was more unstable in the control condition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the three-session tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "b47c97c4-bc3a-4c71-9f94-6fd3e807e43a",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C50",
+      "claim": "The fraction of neurons displaying large shifts (>50\u00b0) was larger in the control condition compared to the dark exposure condition.",
+      "claim_type": "EXPLICIT",
+      "source": "and the fraction of neurons displaying large shifts (e.g. >50\u00b0) was larger in the control condition compared to the DE condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a qualitative observation from the distribution shown in Figure 1\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "5e513304-2e5b-449f-babc-ff0a4d20b0f5",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C51",
+      "claim": "The magnitude of the shift in orientation preference was significantly larger in the control condition compared to the dark exposure condition when pooled across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this qualitative description, when pooled across animals, the magnitude of the shift in orientation preference was significantly larger in the control condition compared to the DE condition (paired t-test, p=0.006; Figure 1\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of pooled neuron data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "203d3e73-e444-4cb9-b17d-97bcf4e0be84",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C52",
+      "claim": "Light reintroduction did not induce a shift in tuning stability when considering neurons that remained tuned after dark exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, no difference in the similarity of signal correlation was detected between the DE and LRx conditions (Figure 2B and C). Taken together, these data demonstrate that 8 days of DE stabilized tuning response curves to grating stimuli and LRx did not induce a shift in tuning stability when considering those neurons that remained tuned after DE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical comparisons shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "3d96a110-97c1-4d29-b331-c9ce99a13b53",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C53",
+      "claim": "Classification accuracy significantly decreased by 15 \u00b1 3% on the post-dark exposure session compared to the Baseline 2 session.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that accuracy significantly decreased by 15 \u00b1 3% ( \u00b1 SEM, across animals) on the pDE session compared to the B2 session (paired t-test, p=0.046)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by classifier analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "7be0c718-3180-41e7-983f-2e579695481b",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C54",
+      "claim": "Classification accuracy recovered within 8 days of light reintroduction.",
+      "claim_type": "EXPLICIT",
+      "source": "and recovered within 8 days (B2 versus Rec sessions, paired t-test p=0.16; Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by classifier analysis comparing recovery to baseline sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "228be696-f1e9-4b09-b246-efb7826a3a03",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C55",
+      "claim": "Accuracy was degraded across all spatial frequencies after dark exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of the confusion matrices indicated that accuracy was degraded across all spatial frequencies (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by visual inspection of confusion matrices shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "8cf59630-d728-4c32-9e9b-0280dd782058",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C56",
+      "claim": "Classification accuracy for low spatial frequency stimuli was significantly lower on the post-dark exposure imaging session.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, accuracy was significantly lower on the pDE imaging session (paired t-test, p=0.037 and p=0.028, respectively; Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by separate classifier analysis for low spatial frequencies shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "77df8cad-d90a-4429-bec6-82343b2eed06",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C57",
+      "claim": "Classification accuracy for high spatial frequency stimuli was significantly lower on the post-dark exposure imaging session.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, accuracy was significantly lower on the pDE imaging session (paired t-test, p=0.037 and p=0.028, respectively; Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by separate classifier analysis for high spatial frequencies shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "079ac96f-dcaf-4c59-b3dc-4bb8e0f8ffa3",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C58",
+      "claim": "The median reliability of tuned and tracked neurons was significantly lower in the post-dark exposure session compared to the Baseline 2 session.",
+      "claim_type": "EXPLICIT",
+      "source": "The median reliability of tuned and tracked neurons for individual mice was significantly lower in the pDE session compared to the B2 session (paired-t test, p=6.0E-3; Figure 3F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reliability analysis shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "f50707e8-ffdb-4986-a48a-2d2fed082d08",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C59",
+      "claim": "When pooled across mice, the reliability of all tuned neurons was significantly lower in the post-dark exposure session.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when the reliability of all tuned neurons, regardless of whether tracked, was pooled across mice, the reliability was significantly lower in the pDE session (Wilcoxon rank-sum p=3E-6; Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pooled reliability analysis shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "b9f3e220-2eaf-465a-a696-6c4efcf00445",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C60",
+      "claim": "There was an 11 \u00b1 4% decrease in the fraction of tuned neurons from Baseline 2 to post-dark exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "On average across the six mice, there was an 11 \u00b1 4% ( \u00b1 SEM) decrease in the fraction of tuned neurons from B2 to pDE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of tuning status across sessions shown in Figure 3\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "4176fc38-66c5-4404-8989-d3d3b74e9048",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C61",
+      "claim": "Approximately 6% of the lost tuned neurons were re-gained after light reintroduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 11% that were lost, approximately 6% were re-gained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the tuning status analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "4676867d-f3f9-4a91-b07d-7258fda32b43",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C62",
+      "claim": "Approximately 5% of previously untuned neurons became tuned de novo during the light reintroduction condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that approximately 5% of previously untuned neurons became tuned de novo during the LRx condition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the tuning status analysis shown in Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "905dc928-306b-4967-80a6-764132298111",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C63",
+      "claim": "Both a decrease in reliability and loss of tuning likely contributed to lower decoding accuracy in the post-dark exposure session.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that both a decrease in reliability and loss of tuning contributed to lower decoding accuracy in the pDE session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed changes in reliability and tuning status.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "383d4e1e-e630-4847-9ce0-bd12f2761446",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C64",
+      "claim": "Pupil diameter did not correlate with decoding accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pupil diameter did not correlate with decoding accuracy (Figure 3H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "5a6316e5-32ec-4f90-83a0-ac1ef5aa6a10",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C65",
+      "claim": "The rate of drift was significantly higher during dark exposure compared to the control condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of drift was significantly higher during DE (sessions pDE and B2) compared to the control condition (sessions B2 and B1; paired t-test, p=9E-3; Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fixed classifier analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "07ab9c69-a7f7-4c98-875d-3c36f3aedae8",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C66",
+      "claim": "Similar to the olfactory cortex, continuous sensory experience reduces representational drift in visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are an indication that similar to the olfactory cortex (Schoonover et al., 2021), continuous sensory experience reduces representational drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed increase in drift during dark exposure and comparison to cited olfactory cortex findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "9fbea05f-fdd5-4b38-b60b-6ed3a7fa0742",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C67",
+      "claim": "There was not a difference in the change in decoding accuracy between the control condition and between the Recovery and Baseline 2 sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there was not a difference in the change in decoding accuracy across the control condition and between the Rec and the B2 sessions, even though the time span covered was 16 days (DE +LRx) rather than 8 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fixed classifier analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "2f0fc11d-de1f-4b83-b8ac-2ba9a0335cb6",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C68",
+      "claim": "The stimulus representation not only recovered after transient dark exposure but rebounded to its original state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the stimulus representation not only recovered after transient DE but that the representation rebounded to its original state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of difference between control and recovery-to-baseline comparisons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "4a40f6c1-8e38-43f4-b30a-0069d75d58ec",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C69",
+      "claim": "Stimulus encoding is robust to transient deprivation in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we found that in the adult, stimulus encoding is robust to transient deprivation and is capable of recovering not only in terms of the estimated amount of stimulus information contained in V1 but also that the stimulus representation rebounds to its original form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the recovery of discriminability and representation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "6a9a9894-9ef0-4a14-a201-7847e90d9ebd",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C70",
+      "claim": "Light reintroduction did not persistently disturb stimulus encoding despite initiating a cascade of changes in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "LRx, despite initiating a cascade of changes in gene expression (Torrado Pacheco et al., 2019; Mardinly et al., 2016), did not persistently disturb stimulus encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the recovery of encoding measures and cited literature on gene expression changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "d8a0dd47-cbbe-45d1-b2a3-5e8cc53c2691",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C71",
+      "claim": "Using dark exposure as a treatment for amblyopia is not expected to have a negative impact on previously established visual function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, using DE as a treatment for amblyopia is not expected to have a negative impact on previously established visual function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the complete recovery of all measured parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "46748e71-1225-4571-97f3-5bd7612ccf6f",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C72",
+      "claim": "Exposure to naturalistic statistics in the home-cage environment improves neural discriminability well into adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results establish that exposure to naturalistic statistics in the home-cage environment improves neural discriminability well into adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the higher discriminability during normal vision compared to after dark exposure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "a41ca31e-a28b-4ebc-8bc8-c5e12be23eb1",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C73",
+      "claim": "Vision has a destabilizing influence on the persistence of orientation preference for approximately 30% of the population of imaged neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our DE experiments revealed that vision has a destabilizing influence on the persistence of orientation preference for approximately 30% of the population of imaged neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings on orientation preference stability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "7112ad47-a588-4b53-8e6b-e6f67a74c298",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C74",
+      "claim": "The persistence of pairwise signal correlation among V1 neurons was lower in control conditions compared to the dark exposure condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the persistence of pairwise signal correlation among V1 neurons was lower in control conditions compared to the DE condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings on signal correlation stability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "221b87e6-5283-4e83-b48e-0d82984a8776",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C75",
+      "claim": "Under normal natural viewing conditions in the adult, orientation preference is subjected to on-going Hebbian plasticity which has an observable net destabilizing effect on the preference of individual neurons in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that under normal natural viewing conditions in the adult, orientation preference is subjected to on-going Hebbian plasticity which has an observable net destabilizing effect on the preference of individual neurons in V1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed destabilization during normal vision.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "b8d17694-dcd5-42d9-8343-fcdd33e8ff19",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C76",
+      "claim": "Dark exposure-induced stabilization would not be a direct consequence of mechanisms associated with deprivation-induced homeostasis but rather the removal of a disrupting influence.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, DE-induced stabilization would not be a direct consequence of mechanisms associated with deprivation-induced homeostasis (Bridi et al., 2018; Turrigiano, 2008) rather the removal of a disrupting influence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism underlying the observed stabilization.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "55437cbc-b7ec-489a-b47b-63eff16e353c",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C77",
+      "claim": "The observations are consistent with the theoretical proposal that there is a plastic substrate of neurons with preferentially higher recurrent connectivity that coexist with a stable 'backbone' formed by neurons that are resistant to sensory perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "The observations reported here are consistent with the theoretical proposal that there is a plastic substrate of neurons with preferentially higher recurrent connectivity that coexist with a stable 'backbone' formed by neurons that are resistant to sensory perturbations (Sweeney and Clopath, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of a cited theoretical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "8627e4f1-9533-4040-b359-975851f6eb63",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C78",
+      "claim": "The development of natural scene processing is protracted relative to grating stimulus encoding in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the development of natural scene processing is protracted relative to grating stimulus encoding in V1 (Kowalewski et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a cited study on developmental timelines.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "f01859d7-4b44-4e9b-ae96-95cc3409e345",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C79",
+      "claim": "A proportion of V1 neurons develops a strong preference for complex scenes relative to simple grating stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a proportion of V1 neurons develops a strong preference for complex scenes relative to simple grating stimuli (de Vries et al., 2020; Kowalewski et al., 2021; Walker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cited studies on scene preference in V1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "00b7e8d6-9a30-46bd-9f0e-9604537e974e",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C80",
+      "claim": "Mice were housed in groups of 2\u20133 per cage in a 12 hr light/12 hr dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were housed in groups of 2\u20133 per cage, in a 12 hr light/12 hr dark cycle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "6106ae2c-f8e9-4ccb-88f8-0495ad83d0da",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C81",
+      "claim": "All imaging sessions started at Zeitgeber time 14.5\u00b11.",
+      "claim_type": "EXPLICIT",
+      "source": "all imaging sessions started at Zeitgeber time (ZT) 14.5\u00b11, where ZT0 is lights on, and ZT12 is lights off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental timing protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "58b335cb-cfaf-432d-8291-698dff3e2519",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C82",
+      "claim": "Homozygous Emx1cre mice were crossed with homozygous Ai93/heterozygous Camk2a-tTA mice to express GCaMP6f selectively in excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To express the calcium indicator GCaMP6f selectively in excitatory neurons, homozygous Emx1cre mice (Jackson Laboratories, stock number 005628) were crossed with homozygous Ai93/heterozygous Camk2a-tTA mice (Jackson Laboratories, stock number 024108).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the genetic strategy used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "6fd3fbf1-6a59-4631-adeb-a4d03f2e3598",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C83",
+      "claim": "A 3 mm diameter craniotomy was made over the primary visual cortex in the left hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "A 3 mm diameter craniotomy was made over the primary visual cortex in the left hemisphere, identified by coordinates and landmarks as described in Feese et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "e2dca80d-333f-4524-86a7-a1a1526e76d1",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C84",
+      "claim": "The stimulus set consisted of 12 orientations and 15 spatial frequencies spanning a range of 0.02\u20130.30 cycles/\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulus set consisted of 12 orientations and 15 spatial frequencies spanning a range of 0.02\u20130.30 cycles/\u00b0, resulting in a total of 180 stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the stimulus parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "d95aac52-0a65-44be-a662-d8884b10fc45",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C85",
+      "claim": "Reverse correlation was used to determine the response window of a given stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Reverse correlation was used to determine the response window of a given stimulus (Ringach et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the analysis method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "248240d5-98f0-4fd7-a5e7-606b2e8fa82b",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C86",
+      "claim": "The peak in the stimulus-averaged events was observed 194\u2013320 ms after the stimulus was presented on the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak in the stimulus-averaged events was observed 194\u2013320 ms after the stimulus was presented on the screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the measured response timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "4ae33584-ca11-4cb7-ab1b-07f9b422fbaa",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C87",
+      "claim": "A neuron was defined as responsive to visual stimuli when the number of events following a presentation of a visual stimulus was modulated by the stimuli presented.",
+      "claim_type": "EXPLICIT",
+      "source": "A neuron was defined as responsive to visual stimuli when the number of events following a presentation of a visual stimulus was modulated by the stimuli presented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the criterion for responsiveness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "42a83104-a99b-4a18-9be4-4487ae493375",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C88",
+      "claim": "A one-way ANOVA (\u03b1=0.01) was performed to test for modulation by visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for modulation, we performed a one-way ANOVA(\u03b1=0.01) on the observed events during the response window using stimuli as the factor for each neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the statistical test used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "72caddd6-031b-4740-b25d-2a5530673b10",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C89",
+      "claim": "Deconvolution was used to remove the effects of decay in calcium fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we used deconvolution to remove the effects of decay in calcium fluorescence in quantifying responses of each neuron to our visual stimuli as in Jeon et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the signal processing method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "d5f271e0-1a9f-4633-8d9b-51c8590485a6",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C90",
+      "claim": "Trials containing locomotion or eye blinks were removed from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Trials containing locomotion or eye blinks were removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the data exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "993b429f-3368-4473-9590-c06c227e31de",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C91",
+      "claim": "Orientation and spatial frequency preference were determined using a two-dimensional Gaussian model fit to single trial responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Orientation and s.f. preference were determined using a two-dimensional Gaussian model, fit to single trial responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the tuning analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "f6073525-1923-4a78-ba49-111a2dc438a1",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C92",
+      "claim": "Neurons whose R2 exceeded the 95th percentile of the chance R2 distribution were accepted as significantly tuned.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons whose R2 exceeded the 95th percentile of the chance R2 distribution were accepted as significant and referred to as well tuned to grating stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the criterion for significant tuning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "cbf654da-592e-4774-b74d-e33f9c8b2db1",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C93",
+      "claim": "Signal correlation between a pair of neurons is defined as Pearson's correlation between the average responses to stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Signal correlation \u03c1sig between a pair of neurons is defined as Pearson's correlation between the average responses to stimuli (Averbeck et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the definition with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "7c6f77cd-9f2b-4e16-ac88-56cd1419dc0b",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C94",
+      "claim": "K-nearest neighbor classifiers were used to decode the presented stimuli from vectors of single trial population responses.",
+      "claim_type": "EXPLICIT",
+      "source": "KNN classifiers were used to decode the presented stimuli from vectors of single trial population responses (de Vries et al., 2020; Kowalewski et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the decoding method with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "9f2700f8-fed1-40aa-9fc4-361c09d86dca",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C95",
+      "claim": "A value of k=4 was used for the k-nearest neighbor classifier.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we found that a value of k=4 resulted in the best average rank across mice (Jeon et al., 2021), therefore we fixed the value of k to 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the parameter choice with citation justification.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "ba6caba2-75e1-42a4-8126-993ac0c81b47",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "claim_id": "C96",
+      "claim": "Reliability was computed as the proportion of trials in which the response amplitude was at least 2 SDs above baseline activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliability was computed as the proportion of trials in which the response amplitude was at least 2 SDs above baseline activity, where baseline activity was defined as the activity during presentation of the isolumant gray screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the reliability calculation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6dfbe130-e912-41ea-aee6-0d86ec66791d",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background literature on visual cortex plasticity, amblyopia, and dark exposure treatment. These claims describe established knowledge about developmental critical periods, age-dependent plasticity differences, perineuronal nets, and the emerging use of dark exposure followed by light reintroduction as a treatment for amblyopia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C26 are well-supported by extensive citations to established literature. These background claims accurately represent the current understanding of visual cortex plasticity, developmental critical periods, and the rationale for dark exposure treatment. The citations are appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "49c525cd-6bba-4eea-a522-12ec534381a3",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dark exposure significantly stabilized orientation preference and signal correlation in adult V1 neurons. Approximately 30% of neurons showed greater stability during dark exposure compared to control conditions, and signal correlation matrices were more similar across sessions during dark exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C41-C51, C73-C74 are well-supported by statistical analyses (Wilcoxon rank-sum tests with appropriate corrections, p=0.032 for orientation preference, p=0.009 for signal correlation). The data include appropriate controls, individual animal analyses, and multiple complementary measures. One animal (p45) was an outlier, which the authors appropriately note and explain based on age-dependent effects (C46-C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "e6d357a7-b7a9-4924-a6f9-e45f5c4ad590",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Light reintroduction did not induce shifts in tuning stability for neurons that remained tuned after dark exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by statistical comparisons showing no significant differences in orientation preference, bandwidth, or signal correlation between dark exposure and light reintroduction conditions (Figure 2). The analysis appropriately focuses on neurons that remained tuned across sessions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "7a050cef-3bac-4004-b66f-1e15bddf8bb5",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Neural discriminability, assessed using k-nearest neighbor classifiers, was transiently reduced by 15\u00b13% following dark exposure across all spatial frequencies, but recovered within 8 days of light reintroduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C53-C57 are supported by classifier analyses with appropriate statistical tests (paired t-tests, p=0.046 for overall decrease, p=0.037 and p=0.028 for low and high spatial frequencies). The recovery is demonstrated by non-significant differences between baseline and recovery sessions (p=0.16). Sample sizes (n=6 animals) and methods are clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "5308caa4-520d-45a3-a88e-dbb8d4e35125",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Decreased response reliability and loss of tuning contributed to reduced neural discriminability after dark exposure. Reliability was significantly lower post-dark exposure (p=6.0E-3 for tracked neurons, p=3E-6 for all tuned neurons), and there was an 11\u00b14% decrease in tuned neurons, with partial recovery after light reintroduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C58-C63 are well-supported by multiple analyses of reliability and tuning status. The inference that both factors contributed to discriminability changes (C4, C63) is reasonable given the correlational data. Statistical tests are appropriate and effect sizes are reported. The analysis appropriately distinguishes tracked versus all neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "a6421503-ac9b-46e2-980f-734a5916fc68",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both discriminability and reliability recovered within 8 days of light reintroduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C37, C54 are supported by statistical comparisons showing non-significant differences between baseline and recovery sessions for both discriminability (p=0.16) and reliability (p=0.843). The data demonstrate complete functional recovery of these measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "f20fd4f6-c9c6-4587-bdd5-62c5da4cb38c",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Representational drift increased during dark exposure but the stimulus representation rebounded to its original pre-deprivation state after recovery. Fixed classifier analysis showed significantly higher drift during dark exposure (p=9E-3) compared to control, but no difference between control and the recovery-to-baseline comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35, C65-C68 are supported by fixed classifier analyses with appropriate statistical tests. The rebound to original state (C6, C68) is demonstrated by the lack of difference between control drift and recovery-to-baseline drift despite the longer time span (16 vs 8 days). The comparison to olfactory cortex findings (C66) provides appropriate context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "1411e665-da56-4651-915b-93d57bf74c3c",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dark exposure and light reintroduction do not have lasting negative impacts on visual processing. All measured parameters recovered to baseline levels, indicating that the treatment is safe for amblyopia therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C38, C69-C71 are supported by the complete recovery of discriminability, reliability, and representation to baseline levels. These are reasonable inferences from the data showing transient disruptions followed by full recovery. The conclusion about safety for amblyopia treatment (C71) is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "ea0caab6-8025-4ee7-adfd-b7be5b697b31",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Natural vision has opposing influences on V1 responses: it destabilizes orientation preference for grating stimuli but improves neural discriminability for both low and high spatial frequency stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C72 are supported by the comparison between control (normal vision) and dark exposure conditions. The destabilizing effect is shown by greater orientation preference changes during control (C41), while improved discriminability is demonstrated by higher classifier accuracy during normal vision compared to post-dark exposure (C53). This represents a novel finding about the dual effects of natural vision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "9e79c1f1-65b9-4b01-9389-ae7093d15926",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dark exposure did not degrade pairwise signal correlation, in contrast to monocular deprivation. This indicates that changes in signal correlation from monocular deprivation result from imbalanced input rather than reduced peripheral drive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by the experimental data showing maintained signal correlation after dark exposure (C43) and the explicit comparison to prior monocular deprivation results (Rose et al., 2016). The inference about imbalanced input (C34) is reasonable given the differential effects of binocular versus monocular deprivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "5f241f43-2cd7-4fc4-9dc0-d0c61b7fb9eb",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Decreased trial-to-trial reliability of stimulus responsiveness accounted for the transient change in representational drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by the correlation between reliability decreases (C58-C59) and increased drift (C65). While this is an inference, the temporal correspondence and magnitude of effects support this mechanistic interpretation. The analysis appropriately distinguishes correlation from causation by using cautious language ('accounted for').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "2f584601-a7c6-4043-adf4-c8c7d252d126",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The effectiveness of perceptual training immediately following dark exposure may be influenced by the transient increase in representational drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C39 is explicitly speculative and not directly tested in this study. While the observation of increased drift (C65) is supported, the impact on perceptual training effectiveness is hypothetical. This represents a reasonable hypothesis for future work but lacks direct experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "9c7b4786-545a-49f6-a9b1-685c05bcb04c",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Pupil diameter did not correlate with decoding accuracy, ruling out reduced light input as an explanation for decreased discriminability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by correlation analysis (Pearson's r=-0.013, p=0.951) shown in Figure 3H. This control analysis appropriately addresses a potential confound, though the authors note pupil diameter was actually larger post-dark exposure, making this an even stronger control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "217a07e3-f45f-4cc4-a269-e3ef5437915a",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that natural vision subjects orientation preference to ongoing Hebbian plasticity with a destabilizing effect, and that dark exposure-induced stabilization results from removing this disrupting influence rather than from homeostatic mechanisms. The results are consistent with theoretical models of plastic and stable neuronal populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C77 are explicitly speculative interpretations ('it is possible,' 'in this scenario') of the experimental findings. While the speculation is reasonable and grounded in the data, these mechanistic explanations are not directly tested. The consistency with theoretical models (C77, Sweeney and Clopath, 2020) provides some support but does not constitute direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "848b3397-401d-448a-a351-3b41c8eb2b12",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has shown that monocular deprivation disrupts stimulus representation and that pairwise correlations vary with vision, providing context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 accurately represent cited prior work (Rose et al., 2016; Torrado Pacheco et al., 2019; Schoonover et al., 2021). These citations are appropriate and provide important context for interpreting the current findings, particularly the comparison between monocular and binocular deprivation effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "effe4563-006f-4c60-8c23-c7c93b4b689f",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The methods section describes the experimental procedures including animal housing, genetic strategies, surgical procedures, visual stimulation parameters, and analysis methods for responsiveness, tuning, signal correlation, classification, and reliability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C80-C96 provide detailed methodological information that is clearly stated and appropriately referenced. The methods are standard for the field (two-photon calcium imaging, k-nearest neighbor classification, Gaussian tuning fits) and are described with sufficient detail for replication. The fraction of responsive neurons (30-50%, C40) is consistent with cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    },
+    {
+      "id": "410e137a-194d-4f40-b020-1a6004005c8b",
+      "content_id": "4c12fd58-7904-408e-852b-b441f1b71d4c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work shows that natural scene processing develops later than grating stimulus encoding in V1, and some V1 neurons develop preferences for complex scenes over gratings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 accurately represent cited literature (Kowalewski et al., 2021; de Vries et al., 2020; Walker et al., 2020). These citations provide context for the discussion of potential functional architecture in V1, though they are not directly tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:42.554256Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a70ba2b1-3833-4bcb-802c-9aed1cc74d72",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "13de1cdb-5e08-401c-9767-e2ba0210eb38",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "faf384c6-7e32-485c-bc2d-fff3d0db63ec",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "cb45a531-f95f-493c-adac-2b77412ee07d",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "e4fc16f6-6ad4-4c64-9b49-72755e40ea78",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "a6b363dc-3fe8-4204-b549-600705415de5",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "5b13e119-e3dc-4ba6-8698-8427cab09a0c",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "1d86167c-21ad-4897-99b9-cd1d72a6b7f3",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "66a8450f-71f6-4102-960e-8c3162c5cea5",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "ab68ef4f-3a76-482e-8377-f2af1f0c362a",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "86a57467-3a1a-4484-93e3-7c350d0602e6",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "0a8f441f-ad6b-4d61-812f-2c0d11d81b07",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "86ac9c46-8e30-4524-bd0e-9f96ede02722",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "f9482d98-5e31-4084-b0e4-b0a0fcb268d4",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "803fdfd6-7f2e-46ef-b0d4-942837d33fb2",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "83363386-3693-458b-8c6a-7999147672d0",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "5ef67e6e-2758-484c-b601-71e1fc67ee2d",
+      "result_id": "6dfbe130-e912-41ea-aee6-0d86ec66791d"
+    },
+    {
+      "claim_id": "24442227-9e86-460e-b51d-b94f628b2f82",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "5c38b8d6-bcb1-4366-984f-19f20e0613a4",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "1ec4ba1a-5c76-4c4e-93a4-3dd285235deb",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "b5a7b27e-c7c4-4adf-a9a8-b3ae79260af3",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "0e9698c4-dd5e-4ca9-b15c-47cb6293ecda",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "21815adb-8cbf-4955-b815-e00d37047311",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "c97264f4-9058-4d22-bd0f-56159d804bd1",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "d7673368-5122-4bb6-9fc3-0547363eaacc",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "a5a7b6a8-06d3-4113-bc59-4fcec45c7631",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "919ea208-a6a8-4254-a550-5605e09ceeb0",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "b47c97c4-bc3a-4c71-9f94-6fd3e807e43a",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "5e513304-2e5b-449f-babc-ff0a4d20b0f5",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "a41ca31e-a28b-4ebc-8bc8-c5e12be23eb1",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "7112ad47-a588-4b53-8e6b-e6f67a74c298",
+      "result_id": "49c525cd-6bba-4eea-a522-12ec534381a3"
+    },
+    {
+      "claim_id": "203d3e73-e444-4cb9-b17d-97bcf4e0be84",
+      "result_id": "e6d357a7-b7a9-4924-a6f9-e45f5c4ad590"
+    },
+    {
+      "claim_id": "cfc0bed3-32e8-4afb-a71d-9575fc5eedf1",
+      "result_id": "7a050cef-3bac-4004-b66f-1e15bddf8bb5"
+    },
+    {
+      "claim_id": "3d96a110-97c1-4d29-b331-c9ce99a13b53",
+      "result_id": "7a050cef-3bac-4004-b66f-1e15bddf8bb5"
+    },
+    {
+      "claim_id": "7be0c718-3180-41e7-983f-2e579695481b",
+      "result_id": "7a050cef-3bac-4004-b66f-1e15bddf8bb5"
+    },
+    {
+      "claim_id": "228be696-f1e9-4b09-b246-efb7826a3a03",
+      "result_id": "7a050cef-3bac-4004-b66f-1e15bddf8bb5"
+    },
+    {
+      "claim_id": "8cf59630-d728-4c32-9e9b-0280dd782058",
+      "result_id": "7a050cef-3bac-4004-b66f-1e15bddf8bb5"
+    },
+    {
+      "claim_id": "77df8cad-d90a-4429-bec6-82343b2eed06",
+      "result_id": "7a050cef-3bac-4004-b66f-1e15bddf8bb5"
+    },
+    {
+      "claim_id": "6bc4cfe7-ae01-4bed-ae5b-4190cd011bb2",
+      "result_id": "5308caa4-520d-45a3-a88e-dbb8d4e35125"
+    },
+    {
+      "claim_id": "079ac96f-dcaf-4c59-b3dc-4bb8e0f8ffa3",
+      "result_id": "5308caa4-520d-45a3-a88e-dbb8d4e35125"
+    },
+    {
+      "claim_id": "f50707e8-ffdb-4986-a48a-2d2fed082d08",
+      "result_id": "5308caa4-520d-45a3-a88e-dbb8d4e35125"
+    },
+    {
+      "claim_id": "b9f3e220-2eaf-465a-a696-6c4efcf00445",
+      "result_id": "5308caa4-520d-45a3-a88e-dbb8d4e35125"
+    },
+    {
+      "claim_id": "4176fc38-66c5-4404-8989-d3d3b74e9048",
+      "result_id": "5308caa4-520d-45a3-a88e-dbb8d4e35125"
+    },
+    {
+      "claim_id": "4676867d-f3f9-4a91-b07d-7258fda32b43",
+      "result_id": "5308caa4-520d-45a3-a88e-dbb8d4e35125"
+    },
+    {
+      "claim_id": "905dc928-306b-4967-80a6-764132298111",
+      "result_id": "5308caa4-520d-45a3-a88e-dbb8d4e35125"
+    },
+    {
+      "claim_id": "fa73edf8-301b-4b35-90fb-8c53861be861",
+      "result_id": "a6421503-ac9b-46e2-980f-734a5916fc68"
+    },
+    {
+      "claim_id": "23282339-a1be-4548-8a6d-a804be517b6d",
+      "result_id": "a6421503-ac9b-46e2-980f-734a5916fc68"
+    },
+    {
+      "claim_id": "7be0c718-3180-41e7-983f-2e579695481b",
+      "result_id": "a6421503-ac9b-46e2-980f-734a5916fc68"
+    },
+    {
+      "claim_id": "2b74b633-2697-43fd-beeb-a18996bb7f22",
+      "result_id": "f20fd4f6-c9c6-4587-bdd5-62c5da4cb38c"
+    },
+    {
+      "claim_id": "d3bcdc1e-f3fb-4c3d-9532-b6d9830657c5",
+      "result_id": "f20fd4f6-c9c6-4587-bdd5-62c5da4cb38c"
+    },
+    {
+      "claim_id": "5a6316e5-32ec-4f90-83a0-ac1ef5aa6a10",
+      "result_id": "f20fd4f6-c9c6-4587-bdd5-62c5da4cb38c"
+    },
+    {
+      "claim_id": "07ab9c69-a7f7-4c98-875d-3c36f3aedae8",
+      "result_id": "f20fd4f6-c9c6-4587-bdd5-62c5da4cb38c"
+    },
+    {
+      "claim_id": "9fbea05f-fdd5-4b38-b60b-6ed3a7fa0742",
+      "result_id": "f20fd4f6-c9c6-4587-bdd5-62c5da4cb38c"
+    },
+    {
+      "claim_id": "2f0fc11d-de1f-4b83-b8ac-2ba9a0335cb6",
+      "result_id": "f20fd4f6-c9c6-4587-bdd5-62c5da4cb38c"
+    },
+    {
+      "claim_id": "98181ac2-e65d-420d-bb15-e155667057b3",
+      "result_id": "1411e665-da56-4651-915b-93d57bf74c3c"
+    },
+    {
+      "claim_id": "46d5bb79-c3f6-472e-9476-2d7dc42a81f0",
+      "result_id": "1411e665-da56-4651-915b-93d57bf74c3c"
+    },
+    {
+      "claim_id": "4a40f6c1-8e38-43f4-b30a-0069d75d58ec",
+      "result_id": "1411e665-da56-4651-915b-93d57bf74c3c"
+    },
+    {
+      "claim_id": "6a9a9894-9ef0-4a14-a201-7847e90d9ebd",
+      "result_id": "1411e665-da56-4651-915b-93d57bf74c3c"
+    },
+    {
+      "claim_id": "d8a0dd47-cbbe-45d1-b2a3-5e8cc53c2691",
+      "result_id": "1411e665-da56-4651-915b-93d57bf74c3c"
+    },
+    {
+      "claim_id": "1b51219b-0eee-489e-82f2-3597084ba090",
+      "result_id": "ea0caab6-8025-4ee7-adfd-b7be5b697b31"
+    },
+    {
+      "claim_id": "0fc7bf41-28fc-47df-8d5c-c301aa7baf90",
+      "result_id": "ea0caab6-8025-4ee7-adfd-b7be5b697b31"
+    },
+    {
+      "claim_id": "46748e71-1225-4571-97f3-5bd7612ccf6f",
+      "result_id": "ea0caab6-8025-4ee7-adfd-b7be5b697b31"
+    },
+    {
+      "claim_id": "1fc02277-68f7-45ec-b20f-69892a3afc9c",
+      "result_id": "9e79c1f1-65b9-4b01-9389-ae7093d15926"
+    },
+    {
+      "claim_id": "56e1ad07-36b6-4e27-964d-e97ac9ff1011",
+      "result_id": "9e79c1f1-65b9-4b01-9389-ae7093d15926"
+    },
+    {
+      "claim_id": "5f779e53-adbc-4331-8137-5d80f8b9319a",
+      "result_id": "9e79c1f1-65b9-4b01-9389-ae7093d15926"
+    },
+    {
+      "claim_id": "c5e5a9f2-abb5-40f9-b9a2-261c81d671c8",
+      "result_id": "5f241f43-2cd7-4fc4-9dc0-d0c61b7fb9eb"
+    },
+    {
+      "claim_id": "8c807c9d-a801-4811-85c3-baa26d4ac8f2",
+      "result_id": "2f584601-a7c6-4043-adf4-c8c7d252d126"
+    },
+    {
+      "claim_id": "383d4e1e-e630-4847-9ce0-bd12f2761446",
+      "result_id": "9c7b4786-545a-49f6-a9b1-685c05bcb04c"
+    },
+    {
+      "claim_id": "221b87e6-5283-4e83-b48e-0d82984a8776",
+      "result_id": "217a07e3-f45f-4cc4-a269-e3ef5437915a"
+    },
+    {
+      "claim_id": "b8d17694-dcd5-42d9-8343-fcdd33e8ff19",
+      "result_id": "217a07e3-f45f-4cc4-a269-e3ef5437915a"
+    },
+    {
+      "claim_id": "55437cbc-b7ec-489a-b47b-63eff16e353c",
+      "result_id": "217a07e3-f45f-4cc4-a269-e3ef5437915a"
+    },
+    {
+      "claim_id": "89d9f9c7-ad9b-4d73-a79a-635c2f86fc60",
+      "result_id": "848b3397-401d-448a-a351-3b41c8eb2b12"
+    },
+    {
+      "claim_id": "e6a55a21-c653-4e93-bd67-7853f9bfcbe5",
+      "result_id": "848b3397-401d-448a-a351-3b41c8eb2b12"
+    },
+    {
+      "claim_id": "95b9f96a-c680-4aa5-9173-18c0c9281a6d",
+      "result_id": "848b3397-401d-448a-a351-3b41c8eb2b12"
+    },
+    {
+      "claim_id": "dff155fc-6cc4-4282-952d-e73308f25938",
+      "result_id": "848b3397-401d-448a-a351-3b41c8eb2b12"
+    },
+    {
+      "claim_id": "ebb7380a-09a4-4fa8-af2f-3d8334d6b7df",
+      "result_id": "848b3397-401d-448a-a351-3b41c8eb2b12"
+    },
+    {
+      "claim_id": "4ee44dc9-baab-4f96-8a5f-6644a44f1da2",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "00b7e8d6-9a30-46bd-9f0e-9604537e974e",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "6106ae2c-f8e9-4ccb-88f8-0495ad83d0da",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "58b335cb-cfaf-432d-8291-698dff3e2519",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "6fd3fbf1-6a59-4631-adeb-a4d03f2e3598",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "e2dca80d-333f-4524-86a7-a1a1526e76d1",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "d95aac52-0a65-44be-a662-d8884b10fc45",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "248240d5-98f0-4fd7-a5e7-606b2e8fa82b",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "4ae33584-ca11-4cb7-ab1b-07f9b422fbaa",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "42a83104-a99b-4a18-9be4-4487ae493375",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "72caddd6-031b-4740-b25d-2a5530673b10",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "d5f271e0-1a9f-4633-8d9b-51c8590485a6",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "993b429f-3368-4473-9590-c06c227e31de",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "f6073525-1923-4a78-ba49-111a2dc438a1",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "cbf654da-592e-4774-b74d-e33f9c8b2db1",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "7c6f77cd-9f2b-4e16-ac88-56cd1419dc0b",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "9f2700f8-fed1-40aa-9fc4-361c09d86dca",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "ba6caba2-75e1-42a4-8126-993ac0c81b47",
+      "result_id": "effe4563-006f-4c60-8c23-c7c93b4b689f"
+    },
+    {
+      "claim_id": "8627e4f1-9533-4040-b359-975851f6eb63",
+      "result_id": "410e137a-194d-4f40-b020-1a6004005c8b"
+    },
+    {
+      "claim_id": "f01859d7-4b44-4e9b-ae96-95cc3409e345",
+      "result_id": "410e137a-194d-4f40-b020-1a6004005c8b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1755 @@
+{
+  "submission": {
+    "id": "811f0dba-6cb9-4409-961b-dbd8e68eab5e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:19:13.538410Z",
+    "updated_at": "2025-12-03T15:19:13.538410Z"
+  },
+  "content": [
+    {
+      "id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "submission_id": "811f0dba-6cb9-4409-961b-dbd8e68eab5e",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic molecular evolution of a supergene with suppressed recombination in white-throated sparrows\n\n## Authors\n\n- Hyeonsoo Jeong<sup>1</sup> ([ORCID: 0000-0002-5565-2685](https://orcid.org/0000-0002-5565-2685))\n- Nicole M Baran<sup>1</sup> ([ORCID: 0000-0001-6270-0625](https://orcid.org/0000-0001-6270-0625))\n- Dan Sun<sup>1</sup>\n- Paramita Chatterjee<sup>1</sup>\n- Thomas S Layman<sup>1</sup>\n- Christopher N Balakrishnan<sup>5</sup> ([ORCID: 0000-0002-0788-0659](https://orcid.org/0000-0002-0788-0659))\n- Donna L Maney<sup>2</sup> ([ORCID: 0000-0002-1006-2358](https://orcid.org/0000-0002-1006-2358)) \u2020\n- Soojin V Yi<sup>1</sup> ([ORCID: 0000-0003-1497-1871](https://orcid.org/0000-0003-1497-1871)) \u2020\n\n### Affiliations\n\n1. School of Biological Sciences, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))\n2. Department of Psychology, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))\n3. Department of Ecology, Evolution, Marine Biology, University of California, Santa Barbara Santa Barbara United States ([ROR:02t274463](https://ror.org/02t274463))\n4. Department of Medicine Huddinge, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n5. Department of Biology, East Carolina University Greenville United States ([ROR:01vx35703](https://ror.org/01vx35703))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn white-throated sparrows, two alternative morphs differing in plumage and behavior segregate with a large chromosomal rearrangement. As with sex chromosomes such as the mammalian Y, the rearranged version of chromosome two (ZAL2m) is in a near-constant state of heterozygosity, offering opportunities to investigate both degenerative and selective processes during the early evolutionary stages of \u2018supergenes.\u2019 Here, we generated, synthesized, and analyzed extensive genome-scale data to better understand the forces shaping the evolution of the ZAL2 and ZAL2m chromosomes in this species. We found that features of ZAL2m are consistent with substantially reduced recombination and low levels of degeneration. We also found evidence that selective sweeps took place both on ZAL2m and its standard counterpart, ZAL2, after the rearrangement event. Signatures of positive selection were associated with allelic bias in gene expression, suggesting that antagonistic selection has operated on gene regulation. Finally, we discovered a region exhibiting long-range haplotypes inside the rearrangement on ZAL2m. These haplotypes appear to have been maintained by balancing selection, retaining genetic diversity within the supergene. Together, our analyses illuminate mechanisms contributing to the evolution of a young chromosomal polymorphism, revealing complex selective processes acting concurrently with genetic degeneration to drive the evolution of supergenes.\n\n## Introduction\n\nSupergenes comprise closely linked genetic variants that are maintained due to suppressed recombination (Charlesworth, 2016; Thompson and Jiggins, 2014). Their evolution presents an interesting paradox, in that the suppression of recombination that occurs inside supergenes reduces the efficacy of natural selection, leading to genetic degeneration. At the same time, supergenes are associated with dramatically divergent, adaptive phenotypes. These divergent phenotypes, which include classic examples of Batesian mimicry and self-incompatibility in flowering plants (Charlesworth, 2016; Thompson and Jiggins, 2014; Otto and Lenormand, 2002) and striking polymorphisms in social behavior (Wang et al., 2013; Huang et al., 2018; Yan et al., 2020; Martinez-Ruiz et al., 2020; Farrell et al., 2013; K\u00fcpper et al., 2016; Lamichhaney et al., 2016), have long inspired both theoretical and empirical studies of their evolution. Recent genome-scale studies have illuminated wide-ranging impacts of supergene evolution on complex phenotypes across diverse taxa (e.g. Schwander et al., 2014; Pearse et al., 2019; Hager et al., 2022; Joron et al., 2011; Kunte et al., 2014; Kess et al., 2019; Lundberg et al., 2017; Roberts et al., 2009; Sanchez-Donoso et al., 2022; Funk et al., 2021). Currently, the mechanisms by which functionally divergent supergene haplotypes evolve in the face of multiple evolutionary forces remain poorly understood, presenting a critical gap in knowledge.\n\nOne notable example of a supergene associated with social behavior is found in white-throated sparrows (Zonotrichia albicollis), in which a large supergene co-segregates with parental behavior and aggression (Tuttle, 2003; Maney et al., 2015; Horton et al., 2013; Tuttle et al., 2016; Sun et al., 2018; Merritt et al., 2020). White-throated sparrows occur in two alternative plumage morphs, white- and tan-striped (Lowther, 1961). These morphs differ not only in their plumage coloration, but also in their social behavior, with white-striped birds exhibiting increased aggression and more frequent extra-pair copulations, and tan-striped birds engaging in more parental care compared with birds of the white-striped morph (Tuttle, 2003; Maney et al., 2015; Maney, 2008; Horton et al., 2012). These alternative morphs are linked to a large (~100 Mbp, >1 k genes) rearrangement on the second largest chromosome, called ZAL2m, so named because the rearranged chromosome is metacentric. White-striped birds are heterozygous for ZAL2m and the sub-metacentric chromosomal arrangement, ZAL2, whereas tan-striped birds are homozygous for ZAL2 (30, 31).\n\nIn addition to highly divergent social behavior, this relatively young supergene (estimated to have arisen 2\u20133 million years ago Tuttle et al., 2016; Thomas et al., 2008; Huynh et al., 2010), is also associated with a remarkable disassortative mating system that maintains the \u2018balanced\u2019 morph frequencies in the population. Almost all breeding pairs consist of one bird of each morph, earning the species the moniker \u2018the bird with four sexes\u2019 (Campagna, 2016). Breeding pairs consisting of two individuals of the same morph are estimated to occur less than 1% of the time (Tuttle et al., 2016; Thorneycroft, 1966) and only six ZAL2m homozygotes (i.e. \u2018super-white\u2019 birds) have ever been identified (Horton et al., 2013; Tuttle et al., 2016; Thorneycroft, 1975; Falls and Kopachena, 2020) out of thousands of birds karyotyped or genotyped. Given that ZAL2m exists in a near-constant state of heterozygosity, it is in a state of suppressed recombination, similar to the Y and W sex chromosomes in mammals and birds, respectively. The suppression of recombination on ZAL2m is expected to reduce the efficacy of natural selection, leading to reduced genetic diversity and the degeneration of the chromosome (Barton and Charlesworth, 1998; Charlesworth, 2012). On the other hand, the tight linkage of alleles within the ZAL2m supergene may contribute to adaptive phenotypes (Tuttle et al., 2016; Sun et al., 2018; Maney et al., 2020). Therefore, this system provides a unique opportunity to investigate the evolution of a supergene underlying social and mating behavior (Tuttle et al., 2016; Sun et al., 2018; Merritt et al., 2020; Sun et al., 2021).\n\nHere we aim to better understand the evolutionary forces shaping the ZAL2 and ZAL2m chromosomes. Our goal was to address two unanswered questions. First, to what extent has ZAL2m degenerated? Early analyses of the rearrangement (Davis et al., 2011) did not show signals of degeneration, such as pseudogenization or the accumulation of repetitive sequences. However, Tuttle et al., 2016 found a weak signal of excess non-synonymous polymorphism for genes inside the rearranged region on ZAL2m and reduced allelic expression for ZAL2m genes, which could be consistent with functional degradation of ZAL2m (Tuttle et al., 2016). (Sun et al., 2018) similarly found a slightly higher number of non-synonymous substitutions and an increased ratio of non-synonymous to synonymous substitution rates (dN/dS) on ZAL2m compared with ZAL2. (Sun et al., 2018) also found reduced expression of ZAL2m alleles in brain tissue, perhaps suggesting that the accumulation of deleterious mutations has led to reduced expression of genes from ZAL2m. Their additional finding of reduced accumulation of mutations in functional regions suggested that ZAL2m has, in fact, experienced purifying selection to remove deleterious alleles. Thus, while there is some evidence that ZAL2m has degenerated, these results have been inconsistent and somewhat inconclusive.\n\nSecond, what are the selective forces shaping the genomic landscapes of both ZAL2 and the ZAL2m supergene? The signals of both purifying and positive selection have been relatively weak in previous genomic analyses of ZAL2 and ZAL2m (Tuttle et al., 2016; Sun et al., 2018). Yet, by definition, ZAL2m must contain variation that underlies the differences between the white- and tan-striped morphs (Fisher, 1931; Bull, 1983; Charlesworth and Charlesworth, 1980; Rice, 1987b; Rice, 1987a). There is already some evidence that this variation affects behavior; allelic differences in the promoter region of the gene encoding estrogen-receptor alpha (ESR1) are likely to alter expression (Merritt et al., 2020), and the expression of this gene was shown to be necessary for aggressive behavior typical of the white-striped morph (Merritt et al., 2020). ZAL2m is also associated with differential expression of a key neuromodulator, vasoactive intestinal peptide (Horton et al., 2020), known to be causal for aggression in songbirds (Goodson et al., 2012).\n\nInvestigations of young heteromorphic sex chromosomes suggest that the accumulation of sexually antagonistic genes (i.e. genes that are beneficial to one sex and harmful to the other) may in fact drive the evolution of sex chromosomes (Bachtrog, 2004; Bachtrog, 2006; Zhou and Bachtrog, 2012). For example, positive selection at a small number of antagonistic alleles was shown to be a potent force shaping evolution of the young Y chromosomes in Drosophila miranda (Bachtrog, 2004) even in the face of degeneration of other genes elsewhere on the chromosome. In white-throated sparrows, evidence of positive selection on both ZAL2 and ZAL2m has been quite limited (Tuttle et al., 2016; Sun et al., 2018). Nonetheless, the discovery of ZAL2- and ZAL2m-specific alleles that benefit the tan- and white-striped morphs, respectively (Merritt et al., 2020; Horton et al., 2020), suggests that antagonistic selection likewise contributes to the evolution of both ZAL2 and ZAL2m.\n\nIn addition to antagonistic selection, balancing selection may be implicated in the evolution of ZAL2m. The negative assortative mating system in white-throated sparrows, which maintains the chromosomal polymorphism, is a canonical example of balancing selection (Huynh et al., 2010). However, balancing selection is also a way of maintaining advantageous genetic diversity in populations, which may be especially critical in the context of a non-recombining chromosome. Indeed, balancing selection appears to be more common in self-fertilizing (selfing) vs non-selfing species, which are likewise characterized by reduced genetic diversity, increased linkage disequilibrium, and reduced efficacy of selection (Gl\u00e9min, 2021; Gl\u00e9min et al., 2019; Delph and Kelly, 2014; Gaut et al., 2015). Therefore, balancing selection may maintain multiple alleles inside non-recombining regions of chromosomes like ZAL2m.\n\nPrevious studies have been limited in the extent to which they could test directly for degeneration, adaptive changes on ZAL2m, and selection at the genome level. These limitations stemmed from low sample sizes of sequencing data, the reduced intraspecies variability, and a low-quality ZAL2m assembly that prevented detection of long-range haplotypes (Tuttle et al., 2016; Sun et al., 2018; Thomas et al., 2008). Here, we overcome these challenges by analyzing extensive genomic, transcriptomic, and population data, providing insight into the evolution of young supergenes.\n\n## Results\n\n### Novel and extensive genomic and population data from white-throated sparrows\n\nTo better understand the evolutionary history of the ZAL2m chromosomal rearrangement, we generated additional sequence data from a rare, \u2018super-white\u2019 (ZAL2m homozygote) bird (Horton et al., 2013; Sun et al., 2018). We generated variable fragment size libraries consisting of 150 bp paired-end reads (insert size of 300 bp and 500 bp) and 125 bp mate pair reads (insert size of 1 kb, 4\u20137 kb, 7\u201310 kb, and 10\u201315 kb). We performed whole-genome sequencing of an additional 62 birds (49 white-striped birds and 13 tan-striped birds sampled from a variety of locations around the U.S.) (Materials and methods, Supplementary file 1). White-striped birds, which are heterozygous for the rearrangement (ZAL2/2m), were sequenced at higher coverage than tan-striped birds (ZAL2 homozygotes) so that we could obtain sufficient reads to separate ZAL2 and ZAL2m alleles in white-striped individuals (average mean depth coverages were 41.5 \u00d7 vs 28.4 \u00d7 for white- and tan-striped birds, respectively, Supplementary file 2). Genomic variants were called according to the guidelines of Genome Analysis Toolkit (GATK) (ver. 4.1) (Materials and methods), leading to the discovery of a total of 11,382,994 single nucleotide polymorphisms (SNPs). None of the samples showed evidence of family relationships when we computed relatedness estimates between individuals. Consequently, we used all samples in the subsequent analyses. We found a significantly higher number of polymorphic sites within white-striped birds than tan-striped birds exclusively for ZAL2/2m chromosomal regions (Figure 1\u2014figure supplement 1). Nucleotide diversity of the rearranged region of the ZAL2/2m chromosomes was elevated in white-striped birds compared with tan-striped birds, suggesting distinctive patterns between the two plumage morphs (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig1-v1.jpg)\n\n**Figure 1.:** (A) Nucleotide diversity of macro-chromosomes for tan-striped (TS) and white-striped (WS) birds. White-striped birds (ZAL2/2m) show elevated nucleotide diversity for the ZAL2/2m inverted (INV, i.e. rearranged) regions (ZAL2/2m inv), while TS birds (ZAL2/2) show overall reduced nucleotide diversity for the inverted regions compared with other chromosomes. Note that panel (A) shows the comparison across morph. The comparison across the ZAL2 and ZAL2m alleles is shown in Figure 2a. (B) Scatterplots of eigenvector 1 (PC1) and eigenvector 2 (PC2) from principal component analysis of all single-nucleotide variants (left panel). (C) Principal component analysis (PCA) excluding single nucleotide polymorphisms (SNPs) on the ZAL2 chromosomes (right panel). The sex chromosomes and the ZAL3 chromosome (which includes an additional chromosomal inversion) were excluded from both PCA analyses. Note that \u2018location\u2019 here refers to the site of collection or capture of the bird: Georgia (GA), Illinois (IL), or Maine (ME). Breeding locations for GA and IL birds are unknown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The number of informative sites in tan- vs white-striped birds is shown for the four largest chromosomes (macrochromosomes), computed using the same number of samples from tan-striped (TS) and white-striped (WS) birds (=13 each). ZAL2 inv = inverted region in ZAL2 or ZAL2m; ZAL2 non-inv = non-inverted region in ZAL2 or ZAL2m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Inferred ancestral population fractions are shown for each bird as estimated by ADMIXTURE (K=2 to K=6 possible populations) for birds of each genotype and from different sampling locations. ADMIXTURE was run using all single nucleotide polymorphisms (SNPs) in the genome, excluding SNPs that met any of the following criteria: MAF <0.01, missing >20%, located inside the additional chromosomal polymorphism on ZAL3, or located in sex chromosomes. Note that \u2018geographic location\u2019 here refers to the site of collection or capture of the bird. Breeding locations for the GA and IL birds were unknown.\n\nAmong the total SNPs identified, 12.6% (N=1,439,991) resided on scaffolds we have previously assigned to the ZAL2/2m chromosome (Sun et al., 2018). Principal component analysis (PCA) of these ZAL2/2m SNPs revealed distinct clusters corresponding to the morphs (Figure 1b). The first principal component (PC1), which explained 6.7% of the variation in the data, clearly separated tan- and white-striped birds, with the lone super-white individual (ZAL2m/2m homozygote) as a clear outlier. In contrast, other available phenotypic information, including sex and geographic origin of samples, did not show meaningful variation with the principal components, and other PCs had little explanatory power (Figure 1b). Tests for admixture also failed to identify significant population substructures by geographical origin of samples (Figure 1\u2014figure supplement 2). This lack of population structure is unsurprising, as 35 of the 63 samples (56%) were from birds that were migrating, and, thus, the breeding location of these birds is unknown.\n\n### Features of the ZAL2m chromosome consistent with reduced efficacy of natural selection and low levels of recombination\n\nWe examined several genomic features of the ZAL2m chromosome using the additional genomic resources we generated. We first performed a de novo genome assembly of the super-white bird, employing newly generated sequence data, to study the ZAL2m chromosome with an assembly derived entirely from a bird homozygous for the ZAL2m chromosome. The total assembly size was 1058 Mbp (N50 length of 3.1 Mbp, longest scaffold 27 Mbps), comparable to that of the ZAL2/2 reference assembly (1052 Mbp, N50 scaffold length of 4.86 Mbp, longest scaffold 45 Mbp) (see Supplementary file 3 for more details). There were 160 putatively ZAL2m-linked scaffolds (Materials and methods), with a total length (110.99 Mbp) comparable with that of ZAL2-linked scaffolds from the reference assembly (108.5 Mbp Tuttle et al., 2016). Despite this similarity in total length, however, the average length of the individual ZAL2m-linked scaffolds was significantly shorter than scaffolds on other chromosomes in the super-white assembly (p<0.001, Mann-Whitney U-test). It was also shorter than the average scaffold length on the ZAL2 chromosome in the ZAL2/2 reference assembly (Figure 2a). We did not observe such a pattern in the other chromosomes of similar size when comparing between the two assemblies (Figure 2a). This result was consistent with the presence of repetitive DNA sequences on ZAL2m causing more assembly breaks compared with the ZAL2/2 reference genome. We found evidence that the ZAL2m chromosome contained more repeat elements and was especially enriched for long terminal repeat elements (2.4 Mbp vs 2.1 Mbp) and interspersed repeats (5.8 Mbp vs 5.5 Mbp), compared with the ZAL2 chromosome. The number of these repeat elements is likely to be underestimated, given that the ZAL2m assembly is highly fragmented. Additionally, we found that ZAL2 and ZAL2m had accumulated a higher proportion of structural variants (insertions and deletions) compared with other chromosomes (Figure 2b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig2-v1.jpg)\n\n**Figure 2.:** (A) The scaffolds for the ZAL2m chromosome in the super-white (SWS) assembly tend to be fragmented compared with those for the ZAL2 chromosome in the tan-striped (TS) assembly. ** p<0.001 (Mann-Whitney U-test); ns, not significant (B) Fraction of structural variants (SV), both insertion and deletion events, for the 4 largest chromosomes, using the tan-striped assembly as a reference. The fraction of SV is computed as a total base affected by variants divided by the length of the chromosome. (C) Number of fixed mutations derived in ZAL2 and ZAL2m in protein-coding regions (D) Sliding window (window size of 20 genes with step size of 5 genes) analysis of the ratio of nonsynonymous to synonymous nucleotide diversity (\u03c0N/\u03c0S) within the ZAL2 and ZAL2m chromosomes. The ZAL2m outlier region is highlighted (colored background). (E) Site frequency spectrum of polymorphic sites. (F) Decay of linkage disequilibrium. (G) Proportion of the ZAL2m alleles expressed for each tissue set. The proportion of the ZAL2m alleles expressed is less than the null hypothesis of 0.5 for all tissues except nestling AMV using false discovery rate (FDR) correction. Hyp, hypothalamus; AMV, ventromedial arcopallium.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Allelic bias in expression for each gene, averaged across sequencing batch and tissue (see Table 1, Materials and methods), is plotted by (A) the rate of fixed differences per-base that are non-synonymous, (B) the rate of fixed differences per-base that are synonymous, or (C) the number of fixed differences within 1 kb upstream of the transcription start site. Only the rate of non-synonymous fixed differences was associated with allelic bias in gene expression (X2(1)=9.97, p=0.00159).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig3-v1.jpg)\n\n**Figure 3.:** (A) Tajima\u2019s D and nucleotide diversity across the ZAL2 and ZAL2m chromosomes. The ZAL2m outlier region is highlighted (colored background). (B) Phylogenetic tree of randomly selected regions (left panel) and the ZAL2m outlier region (right panel). The ZAL2m chromosome shows multiple haplotype structures and has longer branch lengths within the population compared with ZAL2 chromosomes. (C) Single nucleotide polymorphism (SNP) genotype plot of a scaffold inside the ZAL2m outlier region (Scaffold NW_005189516.1, 1900001\u20131950001). The plot shows two haplogroups. Major allele SNPs (A, same genotype as the super-white ZAL2m/2m genome) are represented in purple, and minor allele SNPs (a, different from the super-white genome) in red. Tan indicates that there were no fixed SNPs to differentiate ZAL2 vs ZAL2m reads, resulting in missing data. (D) Genetic divergence (dXY) for a portion of the rearrangement. dXY between the ZAL2 chromosome and haplogroup 1 (H1) is plotted in light blue, between ZAL2 and haplogroup 2 (H2) in dark blue, and between H1 and H2 in light green.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Phylogenetic tree of ZAL2m outlier region using only the exons of single-copy orthologous genes.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** 50 kb sliding window estimates of the D-statistic resulting from ABBA-BABA tests using as ingroup genomes the ZAL2 chromosome, the Harris' sparrow chromosome 2, and the ZAL2m chromosome (P1, P2, and P3, respectively). We used the medium ground finch as the outgroup species (P4). Data from the ZAL2m outlier region are plotted for four individual birds.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Boxplot of the average sequencing depth for individuals of haplotype 1 (H1) and haplotype 2 (H2).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Site frequency spectra of polymorphic sites inside the ZAL2m outlier region are shown for both the ZAL2 and ZAL2m chromosomes. (A) shows all ZAL2/ZAL2m-linked single nucleotide polymorphisms (SNPs) and (B) excludes singleton SNPs.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Scatterplots of eigenvector 1 (PC1) and eigenvector 2 (PC2) from principal component analysis of all single-nucleotide variants outside the ZAL2/2m inversion are shown. Colors show the haplogroup of the sample. In the left panel, shape indicates the sex of the sample and in the right panel, shape indicates the geographic sampling location. Note that the GA and IL birds were captured during migration, so their breeding location was unknown. SNP: single nucleotide polymorphisms.\n\nNext, using the large amount of newly generated population genomic data, we examined patterns of SNPs on ZAL2m alleles separately from those on ZAL2 via haplotype phasing using fixed differences between the two chromosome types (Materials and methods). We found that the total number of genetic variants was approximately 12-fold reduced on the ZAL2m alleles compared with ZAL2 alleles (29,420 vs 367,466 SNPs and 3,921 vs 32,479 indels on ZAL2m and ZAL2, respectively, after excluding singleton variants). The mean nucleotide diversity was similarly reduced on the ZAL2m chromosome compared with the ZAL2 chromosome (0.0104% vs 0.1141% for ZAL2m vs ZAL2, respectively).\n\nAnalyses of the genetic variants on the ZAL2 and ZAL2m alleles showed evidence of only weak genetic degeneration. The ratio of non-synonymous to synonymous fixed differences inside the rearranged region was slightly, but significantly, elevated for ZAL2m-derived compared with ZAL2-derived fixed differences (Figure 2c), which is consistent with either positive selection or inefficient purifying selection on ZAL2m. We found that the ratio of non-synonymous to synonymous nucleotide diversity (\u03c0N/\u03c0S) was significantly increased on ZAL2m compared with ZAL2 (p=1.3 \u00d7 10\u201313, Mann-Whitney U-test, Figure 2d). The minor allele site frequency spectrum (SFS) for the ZAL2m synonymous and non-synonymous sites showed a large proportion of singleton variants and an irregular decay of allele frequency as the minor allele count increases (Figure 2e), also suggesting reduced efficacy of purifying selection on ZAL2m.\n\nAssuming the mutation rates of the two chromosomes are similar, the ratio of effective population size (Ne) between the ZAL2m and ZAL2 can be approximated by the ratio of nucleotide diversity of synonymous sites between the ZAL2 and ZAL2m. The proportion of Ne between ZAL2m and ZAL2 is 0.12 (\u00b10.01), which is threefold lower than the expected ratio of 0.33 (because the ZAL2m chromosome is 1/3 as frequent as the ZAL2, given \u2018balanced\u2019 morph frequencies observed in the wild). This lower proportion suggests that Ne of ZAL2m has undergone further reduction than expected from the census size in the population, consistent with the effects of reduced recombination. We noted that the linkage disequilibrium between variants on ZAL2m exhibited the classic decay with distance (Figure 2f), indicating at least some level of recombination. Taken together, these results are consistent with reduced, but not entirely eliminated, recombination on the ZAL2m chromosome.\n\nWe next examined whether degeneration inside the rearranged region on ZAL2m has resulted in globally reduced expression of the alleles carried by the ZAL2m supergene variant. To do so, we used multiple large RNAseq datasets from a variety of tissues in birds sampled from different geographic locations and times of year (see Materials and methods, Table 1). As predicted and consistent with what was previously reported (Sun et al., 2018), we found evidence of consistently reduced expression of the ZAL2m alleles in 8/10 types of tissue (Figure 2g). We next tested for an association between the number of accumulated mutations (non-synonymous, synonymous, and in the promoter region) on ZAL2m and allelic bias (AB) in expression of the ZAL2m alleles within each tissue, which would link genetic degeneration within or near genes to reduced expression of ZAL2m. We found evidence that allelic bias in gene expression was associated with the rate of non-synonymous fixed differences (X2(1)=9.97, p=0.00159), although the effect size was exceedingly small (marginal r2=0.0020) (Figure 2\u2014figure supplement 1a). Neither the rate of synonymous fixed differences (X2(1)=1.0098, p=0.315, Figure 2\u2014figure supplement 1b) nor the number of fixed differences within 1 kb upstream of the transcription start site (X2(1)=0.8992, p=0.343, Figure 2\u2014figure supplement 1c) were associated with allelic bias. Thus, the overall reduction in expression of the alleles carried by the ZAL2m supergene is weakly associated with an increased number of non-synonymous fixed nucleotide changes within genes. The limited and weak nature of the effect suggests, however, that the pattern of gene expression may have been affected also by other factors, for example ongoing selection (thus manifested as nucleotide polymorphism), selection at more distal sites, and/or epigenomic mechanisms, such as differences between ZAL2 and ZAL2m in DNA methylation or histone modification (see Sun et al., 2021).\n\n**Table 1.**\n List of RNA sequencing data sets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Tissue</th>\n      <th>Sample size (WS/total)</th>\n      <th>Collection details</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Adult males</td>\n      <td rowspan=\"2\">Brain (Hyp, AMV)</td>\n      <td rowspan=\"2\">9/20</td>\n      <td rowspan=\"2\">Collected early in the breeding season</td>\n      <td>Zinzow-Kramer et al., 2015;\u2009Sun et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Accession: GSE77186</td>\n    </tr>\n    <tr>\n      <td>Adult females</td>\n      <td>Brain (Hyp, AMV)</td>\n      <td>6/11</td>\n      <td>Collected early in the breeding season</td>\n      <td>Accession: PRJNA657006</td>\n    </tr>\n    <tr>\n      <td>Nestlings (both sexes)</td>\n      <td>Brain (Hyp, AMV)</td>\n      <td>16/32</td>\n      <td>Collected from nests during the breeding season</td>\n      <td>Accession: PRJNA657006</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Adult males (all white-striped)</td>\n      <td rowspan=\"2\">Heart and Liver</td>\n      <td rowspan=\"2\">20/20</td>\n      <td rowspan=\"2\">Collected during fall migration, then housed in captivity on either long or short days to simulate breeding vs non-breeding; collected at two time points during the day</td>\n      <td>Horton et al., 2019</td>\n    </tr>\n    <tr>\n      <td>Accession: GSE116989</td>\n    </tr>\n  </tbody>\n</table>\n\n### Evidence of regional balancing selection on the ZAL2m chromosome\n\nAlthough the level of genetic diversity was overall reduced on ZAL2m, it was exceptionally elevated in one region corresponding to ~3 Mbps spanning 5 scaffolds. This region, henceforth referred to as the ZAL2m outlier region (Figures 2 and 3), includes at least 15 protein-coding genes that are well conserved as single copy genes across 13 avian species (Table 2). On average, nucleotide diversity in ZAL2m across this region was 0.001, which is tenfold higher than the mean nucleotide diversity of ZAL2m and even exceeds the nucleotide diversity in the corresponding region within ZAL2 by 3.15-fold.\n\n**Table 2.**\n List of protein-coding genes inside the ZAL2m outlier region.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Scaffold</th>\n      <th>Start</th>\n      <th>End</th>\n      <th>\u03c0 ZAL2</th>\n      <th>\u03c0 ZAL2m</th>\n      <th>TaDZAL2</th>\n      <th>TaD ZAL2m</th>\n      <th>DXY</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>KCNS3</td>\n      <td>NW_005081621.1</td>\n      <td>97089</td>\n      <td>110512</td>\n      <td>2.75E-04</td>\n      <td>8.43E-04</td>\n      <td>\u20131.2953</td>\n      <td>\u20130.8658</td>\n      <td>0.011281</td>\n    </tr>\n    <tr>\n      <td>MSGN1</td>\n      <td>NW_005081621.1</td>\n      <td>160375</td>\n      <td>160897</td>\n      <td>NA</td>\n      <td>6.10E-04</td>\n      <td>NA</td>\n      <td>\u20130.1138</td>\n      <td>0.003056</td>\n    </tr>\n    <tr>\n      <td>GEN1</td>\n      <td>NW_005081621.1</td>\n      <td>175791</td>\n      <td>198245</td>\n      <td>3.52E-04</td>\n      <td>2.22E-03</td>\n      <td>\u20131.1302</td>\n      <td>1.1728</td>\n      <td>0.011647</td>\n    </tr>\n    <tr>\n      <td>SMC6</td>\n      <td>NW_005081621.1</td>\n      <td>198452</td>\n      <td>244136</td>\n      <td>3.94E-04</td>\n      <td>2.27E-03</td>\n      <td>\u20131.0088</td>\n      <td>0.8548</td>\n      <td>0.011901</td>\n    </tr>\n    <tr>\n      <td>MYCN</td>\n      <td>NW_005081621.1</td>\n      <td>1179492</td>\n      <td>1184761</td>\n      <td>2.59E-04</td>\n      <td>6.18E-04</td>\n      <td>\u20130.5898</td>\n      <td>0.2116</td>\n      <td>0.005173</td>\n    </tr>\n    <tr>\n      <td>DDX1</td>\n      <td>NW_005081621.1</td>\n      <td>1432697</td>\n      <td>1452535</td>\n      <td>3.41E-04</td>\n      <td>2.42E-03</td>\n      <td>\u20131.5819</td>\n      <td>0.8752</td>\n      <td>0.014699</td>\n    </tr>\n    <tr>\n      <td>NBAS</td>\n      <td>NW_005081621.1</td>\n      <td>1454601</td>\n      <td>1615580</td>\n      <td>2.93E-04</td>\n      <td>2.17E-03</td>\n      <td>\u20131.6271</td>\n      <td>2.2291</td>\n      <td>0.012296</td>\n    </tr>\n    <tr>\n      <td>TRIB2</td>\n      <td>NW_005081621.1</td>\n      <td>2596178</td>\n      <td>2616950</td>\n      <td>3.45E-04</td>\n      <td>1.89E-04</td>\n      <td>\u20131.0009</td>\n      <td>\u20130.8376</td>\n      <td>0.011498</td>\n    </tr>\n    <tr>\n      <td>LPIN1</td>\n      <td>NW_005081621.1</td>\n      <td>3012153</td>\n      <td>3061203</td>\n      <td>2.73E-04</td>\n      <td>3.27E-04</td>\n      <td>\u20131.7799</td>\n      <td>\u20130.7252</td>\n      <td>0.015295</td>\n    </tr>\n    <tr>\n      <td>GREB1</td>\n      <td>NW_005081621.1</td>\n      <td>3100814</td>\n      <td>3165186</td>\n      <td>2.25E-04</td>\n      <td>1.72E-04</td>\n      <td>\u20131.8299</td>\n      <td>\u20130.7351</td>\n      <td>0.01458</td>\n    </tr>\n    <tr>\n      <td>E2F6</td>\n      <td>NW_005081582.1</td>\n      <td>24475</td>\n      <td>46577</td>\n      <td>1.90E-04</td>\n      <td>1.59E-04</td>\n      <td>\u20131.5978</td>\n      <td>\u20131.0219</td>\n      <td>1.4E-02</td>\n    </tr>\n    <tr>\n      <td>ROCK2</td>\n      <td>NW_005081582.1</td>\n      <td>50993</td>\n      <td>155170</td>\n      <td>2.62E-04</td>\n      <td>6.34E-04</td>\n      <td>\u20131.46</td>\n      <td>\u20130.2362</td>\n      <td>1.4E-02</td>\n    </tr>\n    <tr>\n      <td>KCNF1</td>\n      <td>NW_005081582.1</td>\n      <td>331424</td>\n      <td>333991</td>\n      <td>9.85E-05</td>\n      <td>2.41E-04</td>\n      <td>\u20130.2519</td>\n      <td>\u20130.8641</td>\n      <td>5.9E-03</td>\n    </tr>\n    <tr>\n      <td>PDIA6</td>\n      <td>NW_005081582.1</td>\n      <td>415853</td>\n      <td>431919</td>\n      <td>3.74E-04</td>\n      <td>1.49E-04</td>\n      <td>\u20131.1579</td>\n      <td>\u20131.2521</td>\n      <td>1.2E-02</td>\n    </tr>\n    <tr>\n      <td>ATP6V1C2</td>\n      <td>NW_005081582.1</td>\n      <td>431766</td>\n      <td>454886</td>\n      <td>2.56E-04</td>\n      <td>6.94E-04</td>\n      <td>\u20131.7535</td>\n      <td>\u20130.2391</td>\n      <td>1.4E-02</td>\n    </tr>\n  </tbody>\n</table>\n\nTo first examine whether this region has recently experienced an introgression event that could have caused the observed patterns, we constructed a phylogenetic tree of this region. The resulting tree exhibited the same topology as those from other regions of the ZAL2m, thus providing no support for introgression (Figure 3b). We have not yet resolved the distribution of repetitive elements in the two chromosomes. Thus, to avoid errors in the phylogenetic analysis resulting from the rapid turnover of repetitive elements, we also performed the analysis using only the exons of single-copy orthologous genes, similar to analyses done by Stolle et al., 2022. The results (Figure 3\u2014figure supplement 1) did not provide support for an introgression event and therefore did not change our conclusions. In addition, we calculated the D-statistic (ABBA-BABA test, which tests for genomic regions that are discordant with the species tree Martin et al., 2015) to test for evidence of gene flow from another species from the same genus, Harris\u2019 sparrow (Zonotrichia querula). Sliding window estimates of the D-statistic did not show any differences in patterns between haplotypes (Figure 3\u2014figure supplement 2), suggesting that the multiple haplotype structures in ZAL2m were not introduced by gene flow from this closely related species or from the ZAL2 chromosome. Nonetheless, the ZAL2m outlier region showed longer branch lengths than did both the corresponding region on the ZAL2 chromosome and a randomly selected region of ZAL2m, reflecting the high genetic diversity within this region (Figure 3b). Tajima\u2019s D was significantly higher throughout the ZAL2m outlier region compared with the genomic background (p<0.001, permutation test) (Figure 3a).\n\nThe increase of nucleotide diversity, high Tajima\u2019s D, and long branch length all suggest that balancing selection has impacted the ZAL2m outlier region. Concordantly, we identified a signature of balancing selection in the ZAL2m outlier region on the basis of allele frequency spectrum (\u03b2 statistics) computed using BetaScan, which detects signatures of balancing selection by looking for an excess of genomically proximate SNPs with a similar allele frequency (Siewert and Voight, 2020). Visual examinations of the ZAL2m outlier region also revealed the presence of potential long-range haplotypes that likely reflect long-term balancing selection and several recombination events within the haplotypes (Figure 3c). Notably, we identified two major putative haplotypes, which we refer to here as 1 and 2, consisting of 17 and 30 ZAL2m chromosomes, respectively. A possible third haplogroup was also identified, although the sample size (n=2) was too small to warrant further analyses. The genetic differentiation between the two ZAL2m outlier haplogroups was lower than the differentiation between either haplogroup and ZAL2 (Figure 3d), indicating that the haplogroups have evolved since the split between ZAL2 and ZAL2m. This interpretation is also consistent with the inferred phylogeny (Figure 3b). Note that the sequencing depth for the two haplogroups did not differ significantly (p=0.78, Figure 3\u2014figure supplement 3). The ZAL2m outlier regions exhibited an excess of non-synonymous SNPs compared with synonymous SNPs (Figure 2d), as well as an excess of intermediate frequency minor alleles (Figure 3\u2014figure supplement 4). Neither geographic location of collection nor sex was associated with any distinct patterns by haplogroups in a PCA analysis using genetic variants in the region (Figure 3\u2014figure supplement 5; although note the breeding location of the birds from two of the locations was unknown). Together, these results solidly implicate balancing selection in the evolution of the ZAL2m outlier region. In other words, multiple haplotypes of the ZAL2m chromosome are maintained within the population of white-striped birds via balancing selection.\n\nWe looked for phenotypic consequences of the putative ZAL2m haplogroups using the subset of white-striped birds from the sequencing samples for which we had phenotypic data (n=6 for haplogroup 1, n=12 for haplogroup 2, see Zinzow-Kramer et al., 2015; Horton et al., 2014 for details). White-striped birds with the H1 vs the H2 versions did not differ significantly in aggressive behavior (measured during simulated territorial intrusions), gonad size, tarsus length, cloacal protuberance volume, or any other measure when using the Benjamini-Hochberg correction for multiple testing to avoid false positives (more than 50 tests were performed).\n\nWe next tested for effects of haplogroup on the expression of genes inside the ZAL2m outlier region. In the subset of white-striped birds for which we had haplogroup information, we examined RNAseq data from two brain regions, the hypothalamus (Hyp) and the ventromedial arcopallium (AMV, the functional homolog of the medial amygdala, formally named the nucleus taeniae of the amygdala) (see Materials and methods and Supplementary file 4 for details). We found that the gene GREB1 (growth regulating estrogen receptor binding 1) was more highly expressed in haplogroup 2 (unadjusted p=0.0195) in AMV. Additionally, there was a trend for the gene KCNS3 to be more highly expressed in both Hyp (unadjusted p=0.0511) and AMV (unadjusted p = 0.1567). This gene encodes a voltage-gated channel subunit that in humans and mice is specific to fast-spiking parvalbumin (inhibitory) neurons (Georgiev et al., 2014; Miyamae et al., 2021). Although no genes were significantly differentially expressed at the genome-wide level, our current findings provide potentially interesting candidates to explore further in the context of behavioral differences between the morphs.\n\n### Candidates for positive selection in ZAL2 and ZAL2m\n\nOur work has provided a refined map of genetic differentiation between the ZAL2 and ZAL2m chromosomes (Figure 4\u2014figure supplement 1). Interestingly, three scaffolds near the chromosomal end (i.e. at the beginning of the p-arm, as well as at the end of the q-arm in the genomic coordinate of the ZAL2 chromosome), exhibited both decreased FST values and a reduced rate of fixed genetic differences (Df). One possible explanation for these findings is that these regions represent a younger evolutionary stratum, which is possible because ZAL2m contains a series of nested inversions that occurred at different times (Lahn and Page, 1999; Xu et al., 2019; Bergero et al., 2007). Another possibility is that the inflated within-ZAL2 nucleotide diversity (see Figure 3a) within the sampled population reduced the FST estimate.\n\nBy leveraging our resource of a haplotype map of both the ZAL2 and ZAL2m chromosomes, we investigated signatures of positive selection in each chromosome. We identified 216 20 kB regions on ZAL2 exhibiting a significantly elevated H-statistic (empirical p-values <0.05), which is a measure of the average length of the stretches of linkage disequilibrium between the haplotypes (Schlamp et al., 2016; Messer Lab \u2014 Resources, 2014, Materials and methods). One notable stretch, which included four top candidate 20 kB regions (Scaffold NW_005081582.1, 480\u2013520 kb and 920\u2013960 kb) showed evidence of positive selection on both the ZAL2 and ZAL2m chromosomes (blue shaded area in Figure 4\u2014figure supplement 2). On the basis of previous literature (Thomas et al., 2008), this region on ZAL2m may be placed on the end of that chromosome. The elevated H-statistic in this region cannot be explained by the recombination rate, as recombination is low across the entire length of ZAL2m (Figure 4\u2014figure supplement 3). On the ZAL2 chromosome, in contrast, recombination on the chromosome ends is increased (Figure 4\u2014figure supplement 3), as has been reported in other species (Nachman and Churchill, 1996; Barton et al., 2008). We did not, however, observe an elevated H-statistic in these regions (Figure 4\u2014figure supplement 2a). Note that a structurally resolved chromosome-level assembly does not yet exist for the white-throated sparrow. Thus, the precise location of these regions on the ZAL2m chromosome still need confirmation.\n\nWe also identified a long stretch (~6 Mbp) showing an overall elevated H-statistic in another region of ZAL2 (red shaded area in Figure 4\u2014figure supplement 3a, Supplementary file 5). This region exhibited the lowest estimates of nucleotide diversity within ZAL2 and the highest estimates of FST between the two chromosome types. Overall, there were 68 genes located in regions with a significant (p<0.05) H-statistic for ZAL2m and 109 genes in regions with a significant H-statistic for ZAL2 (Supplementary file 5), meaning that these genes are inside regions showing evidence of a selective sweep. These observations suggest that selective sweeps took place on both ZAL2 and ZAL2m chromosomes after the rearrangement events.\n\n### Antagonistic selection influences ZAL2m gene expression\n\nSome of the behaviors that differ between morphs, namely aggression, are predicted by the expression of several genes located inside the ZAL2/2m rearrangement, such as ESR1 and VIP (Merritt et al., 2020; Maney et al., 2020; Horton et al., 2020; Zinzow-Kramer et al., 2015; Horton et al., 2014). We hypothesize that the ZAL2m supergene region is enriched for alleles that have been shaped by antagonistic selection. Specifically, we predict alleles within the ZAL2m supergene region that are beneficial for birds of the white-striped morph, but disadvantageous for birds of the tan-striped morph. Similarly, we predict that the ZAL2 chromosome is enriched for genes with alleles that benefit birds of the tan-striped morph (Maney et al., 2020).\n\nTo test this hypothesis, we examined whether allelic bias in the expression of genes inside the rearrangement was associated with differential expression of the same genes between the tan- and white-striped morphs (lists of genes showing differential expression or allelic bias can be found in Supplementary file 6). Here, allelic bias is defined as the differential expression of the ZAL2 versus ZAL2m alleles in white-striped birds. Allelic bias in expression would indicate a role of cis-regulatory variants\u2014i.e., variants in non-coding promotor, enhancer, or silencer regions regulating a gene\u2014in functionally altering the expression of that gene. For these tests, we used data on gene expression in the brain only, as heart and liver tissue samples were limited to white-striped birds.\n\nFirst, we found that among the genes that were differentially expressed between morphs, more of these genes are located inside the rearranged region on ZAL2/2m than expected by chance, pointing toward cis- (as opposed to trans-) regulatory differences underlying morph differences in expression (X2 tests showed highly significant effects for both brain regions in adults and nestlings of both sexes, with false discovery rate, FDR, correction to account for the multiple statistical comparisons performed using the Benjamini-Hochberg correction) (Figure 4a). To explore this further, we next tested whether the differentially expressed genes showed greater allelic bias than genes without differential expression. Consistent with what we previously reported using only males (Sun et al., 2018), we found that differential expression significantly predicted the degree of allelic bias in expression of that gene (X2(2)=664.16, p<2.2 \u00d7 10\u201316, controlling for sequencing batch and brain region, see Materials and methods). In addition, tan-biased genes showed greater ZAL2 allelic bias and white-biased genes showed greater ZAL2m allelic bias than did genes that were not differentially expressed between morphs (post-hoc T>W vs T=W: z=\u201316.87; post-hoc W>T vs T=W: z=19.63, p<2.2 \u00d7 10\u201316; post-hoc W>T vs T>W: z=26.35, p<2.2 \u00d7 10\u201316) (Figure 4b). These findings suggest that gene expression differences between the morphs are driven, in part, by evolutionary changes in the regulatory regions of genes captured by the rearrangement.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig4-v1.jpg)\n\n**Figure 4.:** (A) shows the percentage of differentially expressed genes that reside inside the rearranged region on ZAL2, vs elsewhere in the genome. The percentage of differentially expressed genes inside vs outside the rearranged region of ZAL2 is higher than expected by chance (padj <2.2 \u00d7 10\u201316 for all comparisons). (B) shows log2 ZAL2m expression ratios for genes that were more highly expressed in white-striped birds (W>T), genes more highly expressed in tan-striped birds (T>W) and those that that do not significantly differ between morphs (T=W). (C) Log2 ZAL2m expression ratios are plotted vs the Log2 ZAL2m H-statistic for each category of sample. Hypothalamus (Hyp), Ventromedial arcopallium (AMV). (D) Log2 ZAL2m expression ratio are plotted vs the Log2 ZAL2 H-statistic.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Plots show the population differentiation in allele frequency (FST) between tan and white birds, the number of nucleotide substitutions per site (dXY) between ZAL2 and ZAL2m, and density of fixed differences (df) between ZAL2 and ZAL2m inside the rearranged region.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The imputed p-values of the H-statistic (a measure of homozygosity, computed in 20 kb windows) are plotted along the position on ZAL2 inside the inversion for (A) ZAL2 and (B) ZAL2m. Colors refer to alternating scaffolds. A candidate region showing elevated H-statistics in four 20 kB windows on both ZAL2 and ZAL2m (Scaffold NW_005081582.1, 480\u2013520 kb and 920\u2013960 kb) is highlighted in blue. A~6 Mbp region showing a long stretch of elevated H-statistics on ZAL2 is highlighted in red.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79387/elife-79387-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** FastEprr was used to estimate the population recombination parameter, rho, for each genome assembly contig (50 kbp non-overlapping sliding window).\n\nWe also looked for a relationship between gene expression and signatures of positive selection on both the ZAL2 and ZAL2m chromosomes. We predicted that positive selection on cis-regulatory alleles on ZAL2m would, on average, increase the expression of the ZAL2m alleles and that positive selection on ZAL2 would increase the expression of ZAL2. We therefore asked whether genes located in regions with evidence for a selective sweep on either ZAL2 or ZAL2m (as indicated by the H-statistics for 50 kb windows) were also likely to exhibit bias in gene expression in the brain. For the ZAL2m chromosome, we found that the ZAL2m H-statistic was a significant, positive predictor of bias in brain gene expression toward the ZAL2m allele, controlling for sequencing batch and brain region (X2(2)=40.17, p=1.893 \u00d7 10\u20139; t=5.114, p=3.24 \u00d7 10\u20137) (see Materials and methods) (Figure 4c). Likewise, we found that genes that exhibited evidence of positive selection on ZAL2 showed allelic bias toward the ZAL2 allele (X2(2)=24.231, p=5.475 \u00d7 10\u20136; t=\u20133.151, p=0.00164) (Figure 4d). Taken together, these results suggest that gene expression on ZAL2 and ZAL2m is driven by selection for cis-regulatory alleles that benefit each morph.\n\n### Candidate genes of interest\n\nOur analyses uncovered many candidate genes that may contribute to the phenotypic differences between the tan- and white-striped morphs. To identify candidates, we performed gene ontology analysis on the set of genes that were either (1) within a region that exhibited evidence of positive selection on either ZAL2 (n=109 genes) or ZAL2m (n=68 genes) (See Supplementary file 7), (2) exhibited allelic bias in six or more tissues (of the eight total brain tissue analyses) (n=249 genes), or (3) exhibited consistent allelic bias across all samples from either one brain region, sex, or age group (i.e. tissue-, sex-, or age-specific expression) (See Supplementary file 7, n=117 genes). The rationale for the inclusion of this final group is that genes that show a tissue-specific pattern of allelic bias are strong candidates for genes with adaptive significance, as changes in gene regulation have long been shown to play a role in adaptive evolution (Wray, 2007).\n\nUsing this set of 409 unique genes, we found the strongest enrichment for genes in the categories \u2018behavior\u2019 (pFDR = 0.0252) and \u2018metabolic process\u2019 (pFDR = 0.0252). The behavior category included genes such as GRIK2 (glutamate receptor ionotropic, kainate 2), GRM1 (metabotropic glutamate receptor 1), NRXN1 (Neurexin-1), OPRM1 (\u00b5-opioid receptor), HTR1B (5-hydroxytryptamine receptor 1B, i.e. serotonin receptor), MEIS1 (Meis homeobox 1), and PAK5 (serine/threonine-protein kinase PAK 5). Additionally, there was enrichment for several gene ontology categories related to metabolism, with 205/409 (50.1%) of these candidate genes involved in the broad category \u2018metabolic processes\u2019 (pFDR = 0.0210). We also found significant enrichment in the category \u2018regulation of multicellular organismal process\u2019 (pFDR = 0.0342). This category included several additional interesting candidate genes, including ESR1 (estrogen receptor alpha), NR2E1 (nuclear receptor subfamily 2 group E member 1), HCRTR2 (orexin receptor type 2), SYNDIG1 (synapse differentiation-inducing gene 1), DISC1 (disrupted in schizophrenia 1), and ESRRG (estrogen-related receptor gamma).\n\nAllelic bias toward the ZAL2 allele could result from decreased expression of the ZAL2m allele due to degeneration. Allelic bias in the other direction, toward ZAL2m, is more consistent with adaptation (Martinez-Ruiz et al., 2020). We therefore examined relationships between allelic bias and positive selection. We found that 97/359 (27.8%) genes exhibiting a signal of allelic bias showed a bias toward the ZAL2m allele. Four of those 97 genes also overlapped regions exhibiting a significant H-statistic on ZAL2m: PDSS2 (all trans-polyprenyl-diphosphate synthase), XRN2 (5'\u20133' exoribonuclease 2), RPS27A (Ubiquitin-40S ribosomal protein S27a), and TCTE1 (T-complex-associated-testis-expressed 1).This result implicates these four genes in adaptive ZAL2m phenotypes, providing novel candidate genes for further exploration.\n\nLooking at our results from a different perspective, of the 409 genes that exhibited evidence either of allelic bias or positive selection (by the H-statistic), 55 exhibited evidences of both. These genes are especially interesting candidates for mediating phenotypic differences between the morphs. Three of these genes were located in areas of elevated H-statistic on both the ZAL2 and ZAL2m chromosomes: PDSS2, ATP6V1C2 (ATPase H+Transporting V1 Subunit C2), and GHRL1 (Grainyhead Like Transcription Factor 1). Both ATP6V1C2 and GHRL1 were in the shared region highlighted in blue in Figure 4\u2014figure supplement 2, suggesting that this region may be an especially important evolutionary hotspot in the divergence between the morphs. Overall, our analysis revealed a number of candidate genes for which positive selection appears to have affected the regulation of genes on both chromosomes.\n\n## Discussion\n\nUnderstanding evolutionary processes that contribute to the origin and maintenance of supergenes can elucidate the links between genes and complex phenotypes such as behavior. One of the most critical processes in the evolution of supergenes is the suppression of recombination (Charlesworth, 2016), a consequence of which is genetic degeneration. Such processes have been extensively studied in the case of non-recombining sex chromosomes (Barton and Charlesworth, 1998; Charlesworth, 2012; Charlesworth and Charlesworth, 2000), but their role in the early evolution of non-recombining autosomes is not well understood. The ZAL2m supergene captures a snapshot of an early stage of supergene evolution. We and others have previously observed weak signatures of degeneration on the ZAL2m chromosome (Tuttle et al., 2016; Sun et al., 2018). In this study, using a large, newly generated genomic sequencing and population genomic data set, we demonstrate pervasive signatures of genetic degeneration at multiple levels, from genomic contigs to SNP density. Regardless, the degeneration is weak at most, and it appears that recombination has not entirely ceased on ZAL2m. It is likely that this low level of recombination occurs in rare ZAL2m homozygotes (Horton et al., 2013). Therefore, the case of the ZAL2m supergene illustrates that complex phenotypes including alternative plumage morphs and life history strategies, can evolve prior to the cessation of recombination and despite substantial genetic degeneration.\n\nAs is evident from research on non-recombining sex chromosomes, both positive and antagonistic selection can further the differentiation between those chromosomes (Bachtrog, 2004; Bachtrog and Charlesworth, 2002; Singh et al., 2014; Rice, 1984; Vicoso and Charlesworth, 2006; Mank, 2012). Previous studies of the ZAL2m supergene revealed no or only weak evidence of positive selection at the molecular level (Tuttle et al., 2016; Sun et al., 2018), despite evidence that allelic biases in expression may contribute causally to phenotypic differences between white- and tan-striped morphs (Merritt et al., 2020). Here, using extensive molecular data, we detected a strong signature of antagonistic selection based on gene expression profiles and identified several regions of positive selection on both ZAL2 and ZAL2m. We also found that allele-specific gene expression in the brain was associated with these signatures of positive selection on both the ZAL2 and ZAL2m chromosomes, suggesting that this selection has acted on regulatory regions of genes. The finding that genes within non-recombining chromosomes experience either positive or antagonistic selection has been reported for Drosophila sex chromosomes, as well as for the social supergene of fire ants (Solenopsis invicta) (Martinez-Ruiz et al., 2020; Chang et al., 2022; Pracana et al., 2017). This phenomenon is not universal, however, signatures of antagonistic selection were not found in the mating-type chromosomes of the anther-smut fungus (Microbotryum lychnidis-dioicae) (Bazzicalupo et al., 2019).\n\nOur analyses identified several candidate genes that merit further exploration. For example, several genes that in other species interact with the actions of estrogen receptor alpha (ER\u03b1), an important player in the behavioral differences between white-throated sparrow morphs (Merritt et al., 2020), also emerged as candidate genes in our analyses. These genes included NCOA7 (Nuclear Receptor Coactivator 7), a transcriptional coactivator of ESR1, and ESRRG, a nuclear receptor that interacts with estrogen-responsive elements in the genome (Festuccia et al., 2018; Lazennec et al., 1997). NR2E1, a recently de-orphanized nuclear receptor that binds oleic acid to regulate neurogenesis (Kandel et al., 2022), is another exciting candidate gene. Additionally, we identified several genes\u2013PDSS2, XRN2, RPS27A, TCTE1, ATP6V1C2, and GRHL1\u2013that have not previously been linked to the morph differences, but convergent lines of evidence suggest that they may play a role in the evolution of the ZAL2m supergene. GHRL1, for example, is a transcription factor necessary for the development of epithelial tissues and is enriched in the neonatal ventromedial hypothalamus of mice (Kurrasch et al., 2007). Its function in the brain, however, remains unknown. Interestingly, the ZAL2m breakpoint has been mapped to ~12 kB downstream of GRHL1 (40), perhaps accounting for the observed patterns of divergence.\n\nIndeed, we found evidence of selective sweeps in several regions near the predicted breakpoint on ZAL2m. Positive selection near inversion breakpoints has been found in other species including Drosophila (Evans et al., 2007). Furthermore, we observed signatures of positive selection on large regions of ZAL2, which was reminiscent of the finding that the X chromosome of primates has been targeted by strong positive selection (Nam et al., 2015). This positive selection on ZAL2 could indicate that recessive alleles on that chromosome experience increased selection in birds of the white-striped morph, and are thus in direct conflict with genes on ZAL2m. It is worth noting, however, that allelic bias is not necessarily indicative of selection; bias in expression toward the tan-allele could be caused by degeneration on ZAL2m, for example. Bias toward the ZAL2m allele could be caused by a transposable element in the promoter region, driving aberrant expression. Convergent lines of evidence point toward a role for positive selection throughout the ZAL2m supergene variant, but the mechanisms underlying allelic bias may vary for each individual gene.\n\nRemarkably, we also discovered clear signatures of balancing selection maintaining two long-range haplotypes within the ZAL2m supergene. We were surprised by this finding, as similar long-range haplotypes have not, to our knowledge, been previously reported for non-recombining chromosomal polymorphisms. It has been speculated that balancing selection is less common in sexually reproducing species than in self-fertilizing species (Gl\u00e9min, 2021), in which the effective recombination rate is lowered due to the extreme degree of inbreeding. Our results suggest that balancing selection may function to maintain genetic variability in the face of reduced recombination, and we might expect to see other instances of balancing selection within supergenes.\n\nThe phenotypic effects of these balanced haplotypes remain unknown. Two out of the fifteen genes inside the balanced ZAL2m outlier region showed signatures of differential gene expression between the haplogroups. One of these genes is GREB1, which in mammals is a downstream target of ER\u03b1 (Gegenhuber et al., 2022). This finding is notable because, in white-throated sparrows, ER\u03b1 is causally related to the behavioral differences between morphs (Merritt et al., 2020; Horton et al., 2014). Thus, the ZAL2m haplogroup may interact in important ways with ER\u03b1-mediated phenotypes in white-striped birds, although further research is needed to test this hypothesis.\n\nTaken together, our results demonstrate that the ZAL2m supergene is far from a degenerating counterpart of a \u2018normal\u2019 autosome. Rather, it is an active arena of multiple evolutionary forces. Although most studies of the consequences of suppressed recombination have focused on genetic degeneration, the resulting supergenes also give rise to opportunities for evolutionary innovation (Charlesworth, 2016; Thompson and Jiggins, 2014; Schwander et al., 2014). Our results show that although degeneration is operating on ZAL2m, dynamic selective forces are occurring simultaneously, producing divergent complex phenotypes. These results emphasize that supergenes are an important force in adaptive evolution (Charlesworth, 2016; Schwander et al., 2014; Wellenreuther and Bernatchez, 2018) and open the door for future studies to demonstrate and investigate the functional consequences of dynamic natural selection acting inside recombination-suppressed supergenes.\n\n## Materials and methods\n\n### Whole genome sequencing and population genetics\n\nWe performed whole genome sequencing of 63 samples (WS: N=49, TS: N=13, and SW: N=1), which included 28 birds captured during the breeding season near Argyle, Maine (ME), USA, 25 birds captured in Atlanta, Georgia (GA), USA during fall migration (November and December), and 10 postmortem samples opportunistically collected from birds who died from building strikes in Chicago, Illinois (IL), USA (see Balakrishnan et al., 2014) during the spring or fall migrations. Sequencing reads from these samples, as well as reads from three previously described samples, were mapped to the reference genome assembly (GCF_000385455.1) using Bowtie2 (ver. 2.3.5) with the very-sensitive-local option. Possible PCR duplicates were removed using Picard tools (ver. 2.19). SNP and INDEL calling were conducted using GATK Haplotypecaller (ver. 4.1.2) with the ERC GVCF option and joint genotyping of all samples were performed with Genotype GVCF option. We filtered out SNPs with any missing information, MAF <0.05, meanDP <5, or meanDP >80. Raw sequencing reads are available on NCBI SRA (BioProject PRJNA818012).\n\n### Sequencing and genome assembly of super-white bird\n\nTo complement the available short-read sequencing data from the female super-white bird (Sun et al., 2018), we generated additional paired-end reads from the same individual (150 \u00d7; insert size of 300 bp and 500 bp) to improve the assembly quality. Genomic DNA was extracted from a 200 mg liver sample from the super-white bird using the Qiagen DNEasy Blood and Tissue DNA kit. Additionally, mate-pair libraries of different insert sizes (insert size of 1 kb, 4\u20137 kb, 7\u201310 kb, and 10\u201315 kb) were prepared and sequenced by the Brigham Young University Genome Sequencing Center. Raw sequencing reads are available on NCBI SRA (BioProject PRJNA818012).\n\nUsing these data, we constructed a whole genome de novo assembly of Z. albicollis, including the ZAL2m chromosome. Paired-end sequencing reads were trimmed by Trimmomatic v.0.32 (Bolger et al., 2014), and error correction of the trimmed sequencing reads was conducted by Lighter v.1.1.2 (Song et al., 2014). Initial contig assembly and scaffolding was conducted by ABySS v.2.1.5 (Jackman et al., 2017). We used Gapcloser (Xie et al., 2014) to fill the gaps emerging from scaffolding process. The total assembly size was 1058 Mbp (N50 length of 3.1 Mbp), consisting of 160 scaffolds (111.76 Mbp) belonging to the ZAL2m chromosome with the longest scaffold length of 5.1 Mbp (Supplementary file 3).\n\n### Identification of ZAL2/2m scaffolds\n\nTo discriminate scaffolds that originate from the ZAL2 vs the ZAL2m chromosome, we mapped the super-white assembly against the genome of the House sparrow (Passer domesticus), which is the most closely related species with chromosome level assembly using LASTZ v1.03. Scaffolds uniquely mapped to the homologous House sparrow chromosomes with >30% coverage and >85% identity were retained. In the case of multi-mapping scaffolds, we used more stringent criteria with >70% coverage and >85% identity. We conducted the same procedure using the tan-striped reference assembly. The list of matched scaffolds was highly consistent with our previous study, with the addition of several new scaffolds (n=15, sum of scaffold lengths = 129.1 kb). To distinguish sequences inside vs outside of the rearranged (i.e. inverted) regions, we computed the average frequency of heterozygous SNPs in sliding windows of 25 kb size with 1 kb step.\n\n### Genetic differentiation between the ZAL2 and ZAL2m chromosomes\n\nUtilizing the large amount of newly generated whole genome sequence data, here we identified putatively fixed genetic differences between the ZAL2 and ZAL2m chromosomes. Briefly, we identified positions at which the genomes of the tan-striped (ZAL2/2) and super-white (ZAL2m/2m) birds are homozygous for different alleles while the white-striped (ZAL2/2m) birds are heterozygous. Note that the probability of this allelic pattern occurring by random chance is 2.6x10\u201323 given the sample size, according to a binomial test. Following this procedure, we obtained a total of 931,424 SNPs and 97,375 insertions and deletions (InDels) between ZAL2 and ZAL2m chromosomes, increasing the number of putatively fixed SNPs between the two chromosomes beyond previous publications (Tuttle et al., 2016; Sun et al., 2018). Variant call format files of fixed differences (both SNPs and InDels) are available at DOI: 10.6084 /m9.figshare.19395146. As we expected, a vast majority (N=930,588; 99.91%) of the fixed differences reside in the scaffolds that we previously predicted to be inside the rearrangement (Sun et al., 2018). The remaining fixed differences were found in scaffolds that were either too short or that mapped ambiguously to multiple chromosomes. FastEprr was used to estimate the recombination rate for non-overlapping 50 kbp sliding window with default setting (Gao et al., 2016).\n\n### Haplotype phasing of whole genome and RNA sequencing data\n\nWe performed read-based haplotype phasing of the sequencing data using reads from white-striped individuals (ZAL2/2m heterozygotes). Briefly, using the 931,424 single nucleotide fixed differences between ZAL2/2m, we assigned sequence reads from the heterozygous birds to the corresponding chromosome of origin (i.e. either ZAL2 or ZAL2m) if the paired-end reads were mapped to a region that overlapped at least one fixed difference. Reads from white-striped birds were mapped to N-masked (masking the putative fixed differences between ZAL2 and ZAL2m) reference assembly to avoid mapping bias and assigned to their chromosome of origin using SNPsplit v.0.3.2 (Krueger and Andrews, 2016). Because the two supergene variants differ in the amount of genetic diversity they carry, and because read mapping algorithms are sensitive to the number of differences between the reference sequence and the read, our approach risks a slight mapping bias. We believe that this slight bias is unlikely to have fundamentally changed our results.\n\nOn an average, 8.5% of all reads from white-striped birds were assigned to either the ZAL2 or ZAL2m chromosomes. In comparison, the size of the chromosomal inversion is estimated to be approximately 9.5% of the total genome (Thomas et al., 2008). The ZAL2 and ZAL2m assigned reads were extracted respectively using Bedtools bamtofastq. To call variants for both ZAL2 and ZAL2m chromosomes, the reads were remapped to the reference genome assembly using Bowtie2 v. 2.3.5. Variant calling was conducted using GATK Haplotypecaller v.4.1.2 with the ERC GVCF option. Vcftools was used to filter out SNPs with any missing information, MAF <0.05, meanDP <5, or meanDP >80. Accession information for all raw RNA sequencing data used is available in Table 1.\n\n### Population genomic analysis\n\nEstimates for nucleotide diversity (\u03c0), between population divergence (dXY), density of fixed differences (df), between population difference in allele frequency (FST), and Tajima\u2019s D were computed in non-overlapping sliding windows sized 10 kb, 25 kb, and 50 kb, respectively. If a data set has substantial missing points, the estimation of nucleotide diversity is often biased (Korunes and Samuk, 2021). Thus, calculation of nucleotide diversity and dXY from the variant call format (VCF) file can be over-estimated since missing sites are not distinguished from invariant (monomorphic) positions in variants-only VCFs. To account for potential inflation of population summary statistics, we considered an average breadth of coverage across samples for each window when we computed nucleotide diversity, dXY, and df. Nucleotide diversity of protein coding sequence was computed using SNPGenie (Nelson et al., 2015).\n\nFor phylogenetic reconstruction of ZAL2m outlier windows, we used RaxML v.8.0.2 for 200 kb windows. The targeted window was selected based on the Tajima\u2019s D values and haplogroup assignments were determined by manually inspecting genotype plots. For the control region, we concatenated 10 randomly selected regions of 20 kb windows (200 kb). The evolutionary model was set to GTRGAMMA with acquisition bias correction using conditional likelihood method (-m ASC_GTRGAMMA \u2013asc-corr=lewis). The medium ground finch (Geospiza fortis) was used as an outgroup species. We conducted bootstrap with 100 replicates.\n\nTo examine whether introgression from other species could account for the ZAL2m outlier window, we computed the D-statistic (Martin et al., 2015) using as ingroup genomes the ZAL2 chromosome, the Harris' sparrow chromosome 2, and the ZAL2m chromosome (P1, P2, and P3, respectively). We used the medium ground finch as the outgroup species (P4). The D-statistic was computed for four individual white-striped birds with high sequencing coverage.\n\nThe analysis of linkage disequilibrium (LD) decay was performed across the entire chromosomal rearrangement. We calculated pairwise r2 values between variant sites using PopLDdecay (Zhang et al., 2019).\n\nWe performed H-scan (Schlamp et al., 2016; Messer Lab \u2014 Resources, 2014) to identify soft and hard sweeps, inferred by extended tracts of homozygosity, using phased haplotypes of ZAL2 and ZAL2m. H-scan outputs were separated into 25 kb non-overlapping windows. As a representative summary statistic, we chose the maximum H-statistic value for each window. To calculate the empirical p-value, we first binned genomic windows into 50 SNP increments based on the number of SNPs. When a window included more than 100 SNPs, all the windows were merged into one bin. On the basis of the ranking of summary statistics in each bin, we calculated an empirical p-value for each window. Candidate regions of positive selection were defined as those with an empirical p-value less than 0.05.\n\n### Gene expression analyses\n\nWe examined both gene expression divergence and allele-specific expression using three RNAseq data sets from white-throated sparrows (four types of tissue from four separate samples of birds, see Table 1). The first data set consisted of gene expression in male white-throated sparrows collected during the breeding season. In those birds, the samples comprised two brain regions, the Hyp and the AMV (Sun et al., 2018; Zinzow-Kramer et al., 2015), a functional homolog of the medial amygdala (Mello et al., 2019). The second data set consisted of gene expression in the same two brain regions (Hyp and AMV) in adult females collected during the breeding season as well as male and female nestlings (see Sun et al., 2021 for details). The third data set consisted of gene expression in heart and liver tissue in white-striped males collected during migration, then housed in captivity under two lighting conditions (long days and short days) and sampled at two time points during the day (ZT6 and ZT18) (Horton et al., 2019). In statistical analyses, the females and nestlings of each sex were treated as separate \u2018batches\u2019 of RNAseq such that there were five total batches: brain samples from adult males, adult females, nestling males, nestling females, and liver/heart samples from adult males. Each tissue was nested within batch to account for repeated sampling from the same individuals.\n\nRNAseq reads were aligned to a reference genome N-masked for putative fixed differences for both chromosomal polymorphisms present in this species (i.e. ZAL2/2, ZAL3a/3a,) using HiSat2 (Kim et al., 2015). To examine allele-specific expression, we used SNPsplit v.0.3.2 to assign mapped reads to ZAL2 or ZAL2m for the white-striped samples. Transcripts were quantified using StringTie (Pertea et al., 2016) and differential expression and allelic-specific expression analyses were performed using DESeq2 (Love et al., 2014). To test for differential expression between the morphs, we used the following model in DESeq2: \u2018design = ~morph\u2019. To test for allelic bias (AB), we used the size factors generated for each sample in the previous step, and then used the following model: \u2018design = ~individual + allele\u2019. To perform hypothesis testing, we used linear mixed models with tissue nested in sequencing batch as random effects using the R package lme4. To test for the effect of interest, we then performed a likelihood ratio test to compare a full model to a reduced model with the factor of interest removed using the anova function. Where applicable, we used the summary function to perform post-hoc comparisons between multiple groups.\n\nTo test for significant allelic bias in expression within each sample type, we used a Wilcoxon rank sum test to test whether the ratio of ZAL2m to ZAL2 expression differed significantly from 0.5, applying an FDR correction for multiple testing. To test for an association between allelic bias and the number of mutations within a gene, we computed the per-base number of mutations by dividing the number of mutations by the gene length and then sorted the genes into deciles. We also computed the number of fixed mutations within 1 kB upstream of the transcription start site (TSS). We then tested whether there was an association between allelic bias and the decile rank or number of mutations within 1 kB upstream of the TSS using the following linear model: Log2 AB ~Variable + (1|Batch:Tissue). To test for overrepresentation of morph-biased genes located inside the rearrangement, we performed a two-sample test for equality of proportions for each brain sample type only. For this test, we compared the proportion of differentially expressed genes, out of the 1007 genes inside the rearranged region on ZAL2, to the proportion out of the 13,369 genes located elsewhere in the genome. For this comparison, we used the prop.test function in R to perform a two-proportions Z-test, applying an FDR correction for multiple testing. To test whether the morph bias in expression of a gene significantly predicted allelic bias for that gene, we grouped genes into three categories: those that were more highly expressed in the white-striped morph (W>T), those more highly expressed in the tan-striped morph (T>W) and those that that did not differ significantly between morphs (T=W). Using the allelic bias for each gene, we then tested whether allelic bias differed among these categories using the following linear mixed model: Log2 AB ~MorphBias_Category + (1|Batch:Tissue), followed by Bonferroni-corrected pairwise post-hoc tests using the \u2018ghlt\u2019 function in multcomp package. Note that heart and liver tissue samples were obtained from white-striped birds; because we did not have data on differential expression by morph for these tissues, they were excluded from this analysis, as well as the tests for overrepresentation described above.\n\nTo test whether haplogroup affects gene expression, we merged the gene count matrices for the male (H1: n=7, H2: n=3) and female (H1: n=3, H2: n=3) white-striped birds that were also included in the whole genome sequencing dataset and tested for an effect of haplogroup using the following model: design ~sex + haplogroup. Only one gene in Hyp (Geranylgeranyl Diphosphate Synthase 1, GGPS1) and one gene in AMV (RUN And FYVE Domain Containing 4, RUFY4) were differentially expressed at the genome-wide level. Neither of these genes are located in the ZAL2m outlier region and only GGPS1 is located on ZAL2. Thus, we report only unadjusted p-values for genes inside the ZAL2m outlier region that were differentially expressed (both unadjusted and adjusted p-values for all genes in the ZAL2m outlier region are reported in Supplementary file 4).\n\nTo examine the relationship between the H-statistic and allelic bias in expression, we computed the average H-statistic for each gene. Each gene was assigned the H-statistic value of the 20 kb bin overlapping the gene (or the average of multiple 20 kb bins, if a gene overlapped two bins). We then used a multiple linear regression model to examine the relationship between the Log2ASE and the log2H-statistic of a gene for both ZAL2 and ZAL2m separately, using the following model: Log2 AB ~ Log2H-statistic + (1|Batch:Tissue). Additionally, we performed functional enrichment analyses for the genes in regions with a significant H-statistic using ToppFun with human homolog HGNC gene names (Chen et al., 2009).\n",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "05be5ee8-7d1e-4694-90b5-478be2113a05",
+      "submission_id": "811f0dba-6cb9-4409-961b-dbd8e68eab5e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- George H Perry, https://ror.org/04p491231 Pennsylvania State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79387.sa0](https://doi.org/10.7554/eLife.79387.sa0)\n\nIn this important paper, the authors generate and analyze new genome and gene expression data to understand better the evolution of the white-throated sparrow supergene region, which contains 1000 genes and determines whether a bird has a tan or a white stripe. The study convincingly illustrates how the cessation of recombination that results from a chromosomal inversion can become a source of evolutionary novelty. The lack of recombination can result in the accumulation of deleterious variation leading to degeneration, but it can also (as here) facilitate genomic diversification and adaptation. The results will be of interest to a broad array of researchers studying genome architecture and phenotypic diversity and evolution.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- George H Perry, https://ror.org/04p491231 Pennsylvania State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79387.sa1](https://doi.org/10.7554/eLife.79387.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dynamic molecular evolution of a supergene with suppressed recombination in white-throated sparrows\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and George Perry as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Yannick Wurm (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers are largely positive about your paper, as am I. They have multiple excellent suggestions for your consideration below; please address each comment in your point-by-point response to accompany your revised manuscript. Essential revisions include expanded analytical consideration and discussion concerning the many genes being evaluated here and consideration of the potential role of repetitive element variation in the phenotypic outcomes. I'm personally not one to advocate for the strict use of \u03b1=0.05 cutoff for determining statistical 'significance', but I share reviewer #1s view that the breadth of multiple testing corrections should be carefully considered. (And given the breadth of the audience for this paper, you could briefly explain false discovery rate estimation and use it in the main text when it is initially used).\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 Add a few words describing tests and the meaning of the statistics for people less habituated to their use (H-statistics, D-statistic, \u2026). The results of the ABBA-BABA and, particularly, Supplemental Figure 4 are difficult to understand and additional explanations are needed.\n\nRegarding the study of balancing selection:\n\n\u2013 lines 311-312. Looking at the figure it would be more reasonable to consider 3 haplogroups within the outlier region (one of them with just very few samples) or even more. The use of just two haplogroups should be justified.\n\n\u2013 Is this outlier region heterozygous for all individuals? The text does not offer information about this\n\n\u2013 l. 322-327. When looking for phenotype changes associated with the haplogroups, how is it possible to study the phenotypic effect of the haplogroups if they are expected to be in the heterozygous state as a result of balancing selection? Info needed.\n\n\u2013 If the test if Supp Figure 7 was not significant after correcting for multiple testing, it does not seem correct to infer that the differences are significant. Remove. (Also, explain FDR testing. I do not know what this means).\n\n\u2013 l. 332-338. Corrections for multiple testing, have they been applied? Differences for KCNS3 can not be considered significant for either tissue if p=0.0511 and p = 0.1567 (especially if no correction for multiple testing is applied).\n\nRegarding the study of positive selection:\n\n\u2013 l. 345-347. The possible explanations for the reduced differentiation toward the end of the inversion need further explanation\n\na) Represents a younger evolutionary stratum? If it is part of the same inversion, how would a younger date be possible?\n\nb) How would genetic diversity be increased in this area?\n\nCould it just be the result of an event of recombination in the past, introducing diversity from one lineage into the other? Or the result of the selective sweep (Supp Figure 9)?\n\n\u2013 Regions with evidence of positive selection: The text reads (l.352), \"four top candidate regions (NW_005081582.1, 480-520kb and 920-960kb)\". The legend of the Supplemental Figure 9 reads \"A candidate region showing a positive selection on both ZAL2 and ZAL2m (NW_005081582.1, 480-520kb, and 920-960kb)\". Is it one region or four regions? What are the terms in parenthesis?\n\n\u2013 The text mentions different regions with evidence of selective sweeps, but it is difficult to relate those regions to results: l. 354, peaks in chromosome end in ZAL2; which ones are those?; l. 357 the long stretch of elevated H-statistics in ZAL2, could this be associated with low nucleotide diversity and high Fst? In general, this paragraph is quite confusing.\n\n\u2013 I miss some info about the content of the regions with evidence for a selective sweep. It would be nice to know what genes are inside the region where selective sweeps have taken place for both chromosomes. The authors search for ontological or functional enrichment, but it is not clear if differences should be expected at this level and I would like to see info about specific candidate genes that could have been proposed considering previous studies and phenotypic analyses\n\n\u2013 Antagonistic selection implies that changes in one chromosome counteract changes in the other one. Not clear how the approach used allows the investigation of the existence of counteracting changes. The text in this section is hard to follow. For example, in line 379 it is difficult to understand what allelic bias means. Or, in line 383, it seems that tan-biased genes can only show greater ZAL2 allelic bias because ZAL2m is not present in those individuals. Please, revise this entire section (starting in l. 364).\n\nOther comments:\n\n\u2013 l. 243 Sentence hard to follow \"We found evidence that allelic bias in gene expression was associated with the decile rank of the per-base number of non-synonymous fixed differences\". Could this be assessed without using deciles: bias in gene expression vs. per-base number of non-synonymous fixed differences.\n\n\u2013 l. 288. Please, provide an intuitive explanation of the D-statistic and what it means here. Difficult to see anything in Figure 3a.\n\n\u2013 l. 425 Reference 63 corresponds to a web page with software. It is not clear what this reference means here. Please, check references to make sure that there are no errors (for example, see author list in reference 64).\n\nReviewer #2 (Recommendations for the authors):\n\nLine 235: \"whether degeneration \u2026 resulted in \u2026 reduced expression of the ZAL2m allele. \" \u2013 ZAL2m is a whole supergene (or chromosome) variant. It is not an allele. Probably the following is better: \"reduced expression of ZAL2m alleles\". Throughout the manuscript, I don't think the authors should say \"ZAL2m allele\" when referring to the supergene variant. \"Alleles carried by the Zal2m supergene variant\" could be appropriate.\n\nFigure 4b: How many genes were there with the different types of bias? For genes with a higher expression in Tan than white, the authors suggest that the allelic bias towards the tan allele is a sign of adaptation. But it could simply be that the bias is the result of the ZAL2m allele having degenerated (similar to https://elifesciences.org/articles/55862 ). Conversely, while some higher expression of Zal2m alleles in white birds could be adaptive, some of it can also be that a transposon jumped in front of the promoter and leads to maladaptive high gene expression. We need to be careful with adaptationist interpretations.\n\nLine 354 \u2013 finding extended homozygosity runs near the end of the chromosome arm could be expected from lower recombination in this region?\n\nLine 295-298: the authors check for introgression by building a tree from the region of Zal2m that is putatively balancing selection. A large amount of collapsed repetitive DNA in Zal2 can create misleading patterns in phylogenetic reconstruction attempts. This is due to the rapid turnover and jumping of repetitive elements (e.g., what looks like it is here in the reference genome may actually be from somewhere else, or could represent a hybrid genotype of several divergent repeat copies). Focusing on single-copy loci, such as exons of intact single-copy genes, should be preferred (see Stolle Nat Com2022 for one approach).\n\nExamination of allelic expression bias involves mapping to a genome where fixed differences between supergene variants have been masked. This is ok, but because the 2 supergene variants differ in the amount of genetic diversity they carry, and read mapping algorithms are sensitive to the number of differences between the reference sequence and the read, this would lead to a slight mapping bias. That creates a risk here. A more balanced control could have involved masking any genetic variation. However, I think that it is unlikely that doing so would fundamentally change the picture.\n\nFigure 1A shows that ZAL2m has higher overall genetic diversity than ZAL2, yet the text describing genetic diversity also consistently suggests the alternate pattern. For example, Ne derived from synonymous genic diversity is 10x lower in ZAL2m than ZAL2 (from line 222).\n\nAlternatively, the apparent conundrum could come from the use of different filtering criteria and the use of a linear reference sequence where repetitive regions are collapsed. The ZAL2m's genome sequence contains more difficult-to-assemble repetitive DNA, as evidenced by finding smaller scaffolds in Zal2m. This is in line with what is seen in the young fire ant Sb chromosomes (Pracana 2017 Mol Eco finding lower genetic diversity, Stolle 2018 finding more repetitive elements, and more variation in repetitive element content), as well as in some labile young Y chromosomes.\n",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "32fc005f-1f5b-4c90-904a-48aa69d19c6d",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C1",
+      "claim": "White-throated sparrows occur in two alternative plumage morphs: white-striped and tan-striped.",
+      "claim_type": "EXPLICIT",
+      "source": "White-throated sparrows occur in two alternative plumage morphs, white- and tan-striped (Lowther, 1961).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lowther, 1961.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "b306980a-60fa-4a31-81ac-2750564f1924",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C2",
+      "claim": "White-striped birds exhibit increased aggression compared with tan-striped birds.",
+      "claim_type": "EXPLICIT",
+      "source": "These morphs differ not only in their plumage coloration, but also in their social behavior, with white-striped birds exhibiting increased aggression and more frequent extra-pair copulations, and tan-striped birds engaging in more parental care compared with birds of the white-striped morph (Tuttle, 2003; Maney et al., 2015; Maney, 2008; Horton et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "a746a5e6-8eca-446d-bd29-e0032ee6d910",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C3",
+      "claim": "White-striped birds engage in more frequent extra-pair copulations compared with tan-striped birds.",
+      "claim_type": "EXPLICIT",
+      "source": "These morphs differ not only in their plumage coloration, but also in their social behavior, with white-striped birds exhibiting increased aggression and more frequent extra-pair copulations, and tan-striped birds engaging in more parental care compared with birds of the white-striped morph (Tuttle, 2003; Maney et al., 2015; Maney, 2008; Horton et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "f87d4aaa-f484-422c-ac85-d5fa7eb3475a",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C4",
+      "claim": "Tan-striped birds engage in more parental care compared with white-striped birds.",
+      "claim_type": "EXPLICIT",
+      "source": "These morphs differ not only in their plumage coloration, but also in their social behavior, with white-striped birds exhibiting increased aggression and more frequent extra-pair copulations, and tan-striped birds engaging in more parental care compared with birds of the white-striped morph (Tuttle, 2003; Maney et al., 2015; Maney, 2008; Horton et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "40464946-4d96-4f1a-899a-78290888ebb5",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C5",
+      "claim": "The alternative morphs are linked to a large (~100 Mbp, >1 k genes) rearrangement on the second largest chromosome, called ZAL2m.",
+      "claim_type": "EXPLICIT",
+      "source": "These alternative morphs are linked to a large (~100 Mbp, >1 k genes) rearrangement on the second largest chromosome, called ZAL2m, so named because the rearranged chromosome is metacentric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the manuscript text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "87f8a984-f480-4502-8486-9a7d87e44677",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C6",
+      "claim": "White-striped birds are heterozygous for ZAL2m and ZAL2.",
+      "claim_type": "EXPLICIT",
+      "source": "White-striped birds are heterozygous for ZAL2m and the sub-metacentric chromosomal arrangement, ZAL2, whereas tan-striped birds are homozygous for ZAL2 (30, 31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations (30, 31).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "aac89029-73f3-4a17-b9d4-1d4bd09f5431",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C7",
+      "claim": "Tan-striped birds are homozygous for ZAL2.",
+      "claim_type": "EXPLICIT",
+      "source": "White-striped birds are heterozygous for ZAL2m and the sub-metacentric chromosomal arrangement, ZAL2, whereas tan-striped birds are homozygous for ZAL2 (30, 31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations (30, 31).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "d0195147-fe7f-4ca6-a33a-5905ed84f5d5",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C8",
+      "claim": "The supergene is estimated to have arisen 2\u20133 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to highly divergent social behavior, this relatively young supergene (estimated to have arisen 2\u20133 million years ago Tuttle et al., 2016; Thomas et al., 2008; Huynh et al., 2010), is also associated with a remarkable disassortative mating system that maintains the 'balanced' morph frequencies in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tuttle et al., 2016; Thomas et al., 2008; Huynh et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "3e20241c-875d-41a2-93c6-f494e72537ec",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C9",
+      "claim": "Almost all breeding pairs consist of one bird of each morph.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all breeding pairs consist of one bird of each morph, earning the species the moniker 'the bird with four sexes' (Campagna, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Campagna, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "f78a5570-7746-488b-96ed-125495e9438e",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C10",
+      "claim": "Breeding pairs consisting of two individuals of the same morph are estimated to occur less than 1% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Breeding pairs consisting of two individuals of the same morph are estimated to occur less than 1% of the time (Tuttle et al., 2016; Thorneycroft, 1966) and only six ZAL2m homozygotes (i.e. 'super-white' birds) have ever been identified (Horton et al., 2013; Tuttle et al., 2016; Thorneycroft, 1975; Falls and Kopachena, 2020) out of thousands of birds karyotyped or genotyped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tuttle et al., 2016; Thorneycroft, 1966.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "b0053b43-1ef6-4b96-b63d-f02ded57276e",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C11",
+      "claim": "Only six ZAL2m homozygotes have ever been identified out of thousands of birds karyotyped or genotyped.",
+      "claim_type": "EXPLICIT",
+      "source": "Breeding pairs consisting of two individuals of the same morph are estimated to occur less than 1% of the time (Tuttle et al., 2016; Thorneycroft, 1966) and only six ZAL2m homozygotes (i.e. 'super-white' birds) have ever been identified (Horton et al., 2013; Tuttle et al., 2016; Thorneycroft, 1975; Falls and Kopachena, 2020) out of thousands of birds karyotyped or genotyped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Horton et al., 2013; Tuttle et al., 2016; Thorneycroft, 1975; Falls and Kopachena, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "00ab0ca3-dfeb-40b4-b1df-b0c89e684091",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C12",
+      "claim": "ZAL2m exists in a near-constant state of heterozygosity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ZAL2m exists in a near-constant state of heterozygosity, it is in a state of suppressed recombination, similar to the Y and W sex chromosomes in mammals and birds, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the rarity of ZAL2m homozygotes and the disassortative mating system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "6c21a6c7-582e-4360-add9-ae62ea213acd",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C13",
+      "claim": "The suppression of recombination on ZAL2m is expected to reduce the efficacy of natural selection, leading to reduced genetic diversity and the degeneration of the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of recombination on ZAL2m is expected to reduce the efficacy of natural selection, leading to reduced genetic diversity and the degeneration of the chromosome (Barton and Charlesworth, 1998; Charlesworth, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Barton and Charlesworth, 1998; Charlesworth, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "efd84c82-d03d-4e27-86cf-dfa77c21d0a0",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C14",
+      "claim": "Tuttle et al., 2016 found a weak signal of excess non-synonymous polymorphism for genes inside the rearranged region on ZAL2m.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Tuttle et al., 2016 found a weak signal of excess non-synonymous polymorphism for genes inside the rearranged region on ZAL2m and reduced allelic expression for ZAL2m genes, which could be consistent with functional degradation of ZAL2m (Tuttle et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tuttle et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "7fedf9fe-a2d5-4d8d-b316-a59cbaa30c57",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C15",
+      "claim": "Sun et al., 2018 found a slightly higher number of non-synonymous substitutions on ZAL2m compared with ZAL2.",
+      "claim_type": "EXPLICIT",
+      "source": "(Sun et al., 2018) similarly found a slightly higher number of non-synonymous substitutions and an increased ratio of non-synonymous to synonymous substitution rates (dN/dS) on ZAL2m compared with ZAL2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sun et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "ab8ec5bf-8cfd-43f1-af47-f5271bd8d85c",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C16",
+      "claim": "Sun et al., 2018 found reduced expression of ZAL2m alleles in brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "(Sun et al., 2018) also found reduced expression of ZAL2m alleles in brain tissue, perhaps suggesting that the accumulation of deleterious mutations has led to reduced expression of genes from ZAL2m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sun et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "6ca5ac11-e8ee-416a-8f3b-81f361207d11",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C17",
+      "claim": "Allelic differences in the promoter region of ESR1 are likely to alter expression.",
+      "claim_type": "EXPLICIT",
+      "source": "There is already some evidence that this variation affects behavior; allelic differences in the promoter region of the gene encoding estrogen-receptor alpha (ESR1) are likely to alter expression (Merritt et al., 2020), and the expression of this gene was shown to be necessary for aggressive behavior typical of the white-striped morph (Merritt et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Merritt et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "18f7015f-9cd6-4474-965a-ee17cfdf5598",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C18",
+      "claim": "The expression of ESR1 is necessary for aggressive behavior typical of the white-striped morph.",
+      "claim_type": "EXPLICIT",
+      "source": "There is already some evidence that this variation affects behavior; allelic differences in the promoter region of the gene encoding estrogen-receptor alpha (ESR1) are likely to alter expression (Merritt et al., 2020), and the expression of this gene was shown to be necessary for aggressive behavior typical of the white-striped morph (Merritt et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Merritt et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "bdff5ad6-6168-4433-b4c0-840e8c797bc9",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C19",
+      "claim": "ZAL2m is associated with differential expression of vasoactive intestinal peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAL2m is also associated with differential expression of a key neuromodulator, vasoactive intestinal peptide (Horton et al., 2020), known to be causal for aggression in songbirds (Goodson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Horton et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "1e9835ce-bb06-43e7-a902-c589c01842c5",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C20",
+      "claim": "Vasoactive intestinal peptide is known to be causal for aggression in songbirds.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAL2m is also associated with differential expression of a key neuromodulator, vasoactive intestinal peptide (Horton et al., 2020), known to be causal for aggression in songbirds (Goodson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Goodson et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "c1b352bc-18b2-4c69-ba25-55892f79c18e",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C22",
+      "claim": "White-striped birds were sequenced at higher coverage than tan-striped birds (average mean depth coverages were 41.5 \u00d7 vs 28.4 \u00d7).",
+      "claim_type": "EXPLICIT",
+      "source": "White-striped birds, which are heterozygous for the rearrangement (ZAL2/2m), were sequenced at higher coverage than tan-striped birds (ZAL2 homozygotes) so that we could obtain sufficient reads to separate ZAL2 and ZAL2m alleles in white-striped individuals (average mean depth coverages were 41.5 \u00d7 vs 28.4 \u00d7 for white- and tan-striped birds, respectively, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "8227e3d2-573c-4815-98ae-63dbe62a106f",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C23",
+      "claim": "A total of 11,382,994 single nucleotide polymorphisms (SNPs) were discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic variants were called according to the guidelines of Genome Analysis Toolkit (GATK) (ver. 4.1) (Materials and methods), leading to the discovery of a total of 11,382,994 single nucleotide polymorphisms (SNPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data generated in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "3f2cd51e-a95d-43d4-8d3c-c253ef461b25",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C24",
+      "claim": "A significantly higher number of polymorphic sites were found within white-striped birds than tan-striped birds exclusively for ZAL2/2m chromosomal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significantly higher number of polymorphic sites within white-striped birds than tan-striped birds exclusively for ZAL2/2m chromosomal regions (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "9964fe8e-f4da-42ea-bd8a-1fe2095be420",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C25",
+      "claim": "Nucleotide diversity of the rearranged region of the ZAL2/2m chromosomes was elevated in white-striped birds compared with tan-striped birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleotide diversity of the rearranged region of the ZAL2/2m chromosomes was elevated in white-striped birds compared with tan-striped birds, suggesting distinctive patterns between the two plumage morphs (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "7308ef68-5e0a-4397-bfa6-41bb8c513808",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C26",
+      "claim": "The first principal component (PC1) explained 6.7% of the variation in the data and clearly separated tan- and white-striped birds.",
+      "claim_type": "EXPLICIT",
+      "source": "The first principal component (PC1), which explained 6.7% of the variation in the data, clearly separated tan- and white-striped birds, with the lone super-white individual (ZAL2m/2m homozygote) as a clear outlier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from principal component analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "06208e4a-ed5e-4e12-b573-da4df3f9d32b",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C27",
+      "claim": "The super-white individual was a clear outlier in the principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The first principal component (PC1), which explained 6.7% of the variation in the data, clearly separated tan- and white-striped birds, with the lone super-white individual (ZAL2m/2m homozygote) as a clear outlier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from principal component analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "f9b1c31f-f9d6-4c80-9e88-bea68c311eba",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C28",
+      "claim": "Tests for admixture failed to identify significant population substructures by geographical origin of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Tests for admixture also failed to identify significant population substructures by geographical origin of samples (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "28a733ba-d769-41d6-8439-ed02fe6031e3",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C29",
+      "claim": "The total assembly size of the super-white bird genome was 1058 Mbp with an N50 length of 3.1 Mbp.",
+      "claim_type": "EXPLICIT",
+      "source": "The total assembly size was 1058 Mbp (N50 length of 3.1 Mbp, longest scaffold 27 Mbps), comparable to that of the ZAL2/2 reference assembly (1052 Mbp, N50 scaffold length of 4.86 Mbp, longest scaffold 45 Mbp) (see Supplementary file 3 for more details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the genome assembly presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "3a6cb795-538d-444e-abd1-b9ccbc4cb66b",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C30",
+      "claim": "There were 160 putatively ZAL2m-linked scaffolds with a total length of 110.99 Mbp.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 160 putatively ZAL2m-linked scaffolds (Materials and methods), with a total length (110.99 Mbp) comparable with that of ZAL2-linked scaffolds from the reference assembly (108.5 Mbp Tuttle et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the genome assembly presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "359d840c-5d0e-48fc-9b08-5cfae6c96bc8",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C31",
+      "claim": "The average length of the individual ZAL2m-linked scaffolds was significantly shorter than scaffolds on other chromosomes in the super-white assembly (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this similarity in total length, however, the average length of the individual ZAL2m-linked scaffolds was significantly shorter than scaffolds on other chromosomes in the super-white assembly (p<0.001, Mann-Whitney U-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the genome assembly data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "e512e518-15de-4444-a88b-659c13f7027a",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C32",
+      "claim": "The ZAL2m chromosome contained more repeat elements and was especially enriched for long terminal repeat elements (2.4 Mbp vs 2.1 Mbp) and interspersed repeats (5.8 Mbp vs 5.5 Mbp), compared with the ZAL2 chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence that the ZAL2m chromosome contained more repeat elements and was especially enriched for long terminal repeat elements (2.4 Mbp vs 2.1 Mbp) and interspersed repeats (5.8 Mbp vs 5.5 Mbp), compared with the ZAL2 chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from repeat element analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "bfd82bdc-e1e9-473e-a3dd-08e970146bae",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C33",
+      "claim": "ZAL2 and ZAL2m had accumulated a higher proportion of structural variants (insertions and deletions) compared with other chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that ZAL2 and ZAL2m had accumulated a higher proportion of structural variants (insertions and deletions) compared with other chromosomes (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "6a48f45e-d2f5-4ec3-8ba9-47ee2eaeaf94",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C34",
+      "claim": "The total number of genetic variants was approximately 12-fold reduced on the ZAL2m alleles compared with ZAL2 alleles (29,420 vs 367,466 SNPs and 3,921 vs 32,479 indels).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the total number of genetic variants was approximately 12-fold reduced on the ZAL2m alleles compared with ZAL2 alleles (29,420 vs 367,466 SNPs and 3,921 vs 32,479 indels on ZAL2m and ZAL2, respectively, after excluding singleton variants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from variant calling analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "e1cb89d2-5ac9-4d9e-ba28-0dc3c6f62583",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C35",
+      "claim": "The mean nucleotide diversity was reduced on the ZAL2m chromosome compared with the ZAL2 chromosome (0.0104% vs 0.1141%).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean nucleotide diversity was similarly reduced on the ZAL2m chromosome compared with the ZAL2 chromosome (0.0104% vs 0.1141% for ZAL2m vs ZAL2, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from nucleotide diversity analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "bf8e71ab-987a-4f0b-8ac1-5aa3ea3785e2",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C36",
+      "claim": "The ratio of non-synonymous to synonymous fixed differences inside the rearranged region was slightly, but significantly, elevated for ZAL2m-derived compared with ZAL2-derived fixed differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of non-synonymous to synonymous fixed differences inside the rearranged region was slightly, but significantly, elevated for ZAL2m-derived compared with ZAL2-derived fixed differences (Figure 2c), which is consistent with either positive selection or inefficient purifying selection on ZAL2m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "19ddf22d-ef71-4308-a78e-8257de82c4dd",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C37",
+      "claim": "The ratio of non-synonymous to synonymous nucleotide diversity (\u03c0N/\u03c0S) was significantly increased on ZAL2m compared with ZAL2 (p=1.3 \u00d7 10\u201313).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the ratio of non-synonymous to synonymous nucleotide diversity (\u03c0N/\u03c0S) was significantly increased on ZAL2m compared with ZAL2 (p=1.3 \u00d7 10\u201313, Mann-Whitney U-test, Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "577013ea-4794-49dc-b439-0f1c94967fb6",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C38",
+      "claim": "The proportion of Ne between ZAL2m and ZAL2 is 0.12 (\u00b10.01), which is threefold lower than the expected ratio of 0.33.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of Ne between ZAL2m and ZAL2 is 0.12 (\u00b10.01), which is threefold lower than the expected ratio of 0.33 (because the ZAL2m chromosome is 1/3 as frequent as the ZAL2, given 'balanced' morph frequencies observed in the wild).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis and inference from nucleotide diversity ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "92fa5e81-f7c1-45f2-a285-213c9012bec0",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C39",
+      "claim": "Reduced expression of the ZAL2m alleles was found in 8/10 types of tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted and consistent with what was previously reported (Sun et al., 2018), we found evidence of consistently reduced expression of the ZAL2m alleles in 8/10 types of tissue (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2g and is consistent with previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "4d1c0a76-faaa-4e5a-8770-adff969acfa5",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C40",
+      "claim": "Allelic bias in gene expression was associated with the rate of non-synonymous fixed differences (X2(1)=9.97, p=0.00159).",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence that allelic bias in gene expression was associated with the rate of non-synonymous fixed differences (X2(1)=9.97, p=0.00159), although the effect size was exceedingly small (marginal r2=0.0020) (Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "6f703479-b6f8-4cdc-b488-e07f49eb4474",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C41",
+      "claim": "Neither the rate of synonymous fixed differences nor the number of fixed differences within 1 kb upstream of the transcription start site were associated with allelic bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the rate of synonymous fixed differences (X2(1)=1.0098, p=0.315, Figure 2\u2014figure supplement 1b) nor the number of fixed differences within 1 kb upstream of the transcription start site (X2(1)=0.8992, p=0.343, Figure 2\u2014figure supplement 1c) were associated with allelic bias.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 2\u2014figure supplement 1b and 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "d663fb6e-2961-4250-8389-b5d542167a18",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C42",
+      "claim": "Nucleotide diversity in ZAL2m across the outlier region was 0.001, which is tenfold higher than the mean nucleotide diversity of ZAL2m and exceeds the nucleotide diversity in the corresponding region within ZAL2 by 3.15-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, nucleotide diversity in ZAL2m across this region was 0.001, which is tenfold higher than the mean nucleotide diversity of ZAL2m and even exceeds the nucleotide diversity in the corresponding region within ZAL2 by 3.15-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from nucleotide diversity analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "6106b278-7124-4e12-9102-e768753ac97d",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C43",
+      "claim": "The ZAL2m outlier region includes at least 15 protein-coding genes that are well conserved as single copy genes across 13 avian species.",
+      "claim_type": "EXPLICIT",
+      "source": "This region, henceforth referred to as the ZAL2m outlier region (Figures 2 and 3), includes at least 15 protein-coding genes that are well conserved as single copy genes across 13 avian species (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 2 and Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "5a286505-8153-412c-8ee5-44107604efb0",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C44",
+      "claim": "The phylogenetic tree of the ZAL2m outlier region exhibited the same topology as those from other regions of the ZAL2m, providing no support for introgression.",
+      "claim_type": "EXPLICIT",
+      "source": "To first examine whether this region has recently experienced an introgression event that could have caused the observed patterns, we constructed a phylogenetic tree of this region. The resulting tree exhibited the same topology as those from other regions of the ZAL2m, thus providing no support for introgression (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phylogenetic analysis shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "46c73094-57d4-45bc-a315-fd7f24ed6808",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C45",
+      "claim": "Sliding window estimates of the D-statistic did not show any differences in patterns between haplotypes, suggesting that the multiple haplotype structures in ZAL2m were not introduced by gene flow from Harris' sparrow or from the ZAL2 chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Sliding window estimates of the D-statistic did not show any differences in patterns between haplotypes (Figure 3\u2014figure supplement 2), suggesting that the multiple haplotype structures in ZAL2m were not introduced by gene flow from this closely related species or from the ZAL2 chromosome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "983e181f-06bb-4d93-bad6-7ce75fcf3652",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C46",
+      "claim": "Tajima's D was significantly higher throughout the ZAL2m outlier region compared with the genomic background (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Tajima's D was significantly higher throughout the ZAL2m outlier region compared with the genomic background (p<0.001, permutation test) (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "9fef9b17-4689-4933-8628-ed2fd6c93a4b",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C47",
+      "claim": "Two major putative haplotypes were identified in the ZAL2m outlier region, consisting of 17 and 30 ZAL2m chromosomes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we identified two major putative haplotypes, which we refer to here as 1 and 2, consisting of 17 and 30 ZAL2m chromosomes, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from haplotype analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "789be301-f5d5-4114-a009-537d075b63f8",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C48",
+      "claim": "The genetic differentiation between the two ZAL2m outlier haplogroups was lower than the differentiation between either haplogroup and ZAL2.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic differentiation between the two ZAL2m outlier haplogroups was lower than the differentiation between either haplogroup and ZAL2 (Figure 3d), indicating that the haplogroups have evolved since the split between ZAL2 and ZAL2m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "4d46c82e-551d-454b-8f3a-286a3e643c91",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C49",
+      "claim": "The sequencing depth for the two haplogroups did not differ significantly (p=0.78).",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the sequencing depth for the two haplogroups did not differ significantly (p=0.78, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "c2e01707-77ad-4096-9fbb-55ee35bbdd56",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C50",
+      "claim": "The ZAL2m outlier regions exhibited an excess of non-synonymous SNPs compared with synonymous SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The ZAL2m outlier regions exhibited an excess of non-synonymous SNPs compared with synonymous SNPs (Figure 2d), as well as an excess of intermediate frequency minor alleles (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "d080019d-34fb-46cd-a198-14488ca9507e",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C51",
+      "claim": "Neither geographic location of collection nor sex was associated with any distinct patterns by haplogroups in a PCA analysis using genetic variants in the region.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither geographic location of collection nor sex was associated with any distinct patterns by haplogroups in a PCA analysis using genetic variants in the region (Figure 3\u2014figure supplement 5; although note the breeding location of the birds from two of the locations was unknown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "d068e0ee-2f15-4775-ac87-d4b69836b198",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C52",
+      "claim": "White-striped birds with the H1 vs the H2 versions did not differ significantly in aggressive behavior, gonad size, tarsus length, cloacal protuberance volume, or any other measure when using the Benjamini-Hochberg correction for multiple testing.",
+      "claim_type": "EXPLICIT",
+      "source": "White-striped birds with the H1 vs the H2 versions did not differ significantly in aggressive behavior (measured during simulated territorial intrusions), gonad size, tarsus length, cloacal protuberance volume, or any other measure when using the Benjamini-Hochberg correction for multiple testing to avoid false positives (more than 50 tests were performed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of phenotypic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "67ea7e3b-d953-46ae-a2b4-be6dab002afa",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C53",
+      "claim": "The gene GREB1 was more highly expressed in haplogroup 2 (unadjusted p=0.0195) in AMV.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the gene GREB1 (growth regulating estrogen receptor binding 1) was more highly expressed in haplogroup 2 (unadjusted p=0.0195) in AMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene expression data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "d2fd8d92-60d7-4ee2-8b9a-4ad5794c05fb",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C54",
+      "claim": "There was a trend for the gene KCNS3 to be more highly expressed in both Hyp (unadjusted p=0.0511) and AMV (unadjusted p = 0.1567).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there was a trend for the gene KCNS3 to be more highly expressed in both Hyp (unadjusted p=0.0511) and AMV (unadjusted p = 0.1567).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene expression data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "cecc3a9a-47e6-4b9f-a6db-6eccb2bcf009",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C55",
+      "claim": "KCNS3 encodes a voltage-gated channel subunit that in humans and mice is specific to fast-spiking parvalbumin (inhibitory) neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This gene encodes a voltage-gated channel subunit that in humans and mice is specific to fast-spiking parvalbumin (inhibitory) neurons (Georgiev et al., 2014; Miyamae et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Georgiev et al., 2014; Miyamae et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "d6dd3fa3-d890-4bb7-8569-149399623311",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C56",
+      "claim": "216 20 kB regions on ZAL2 exhibited a significantly elevated H-statistic (empirical p-values <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 216 20 kB regions on ZAL2 exhibiting a significantly elevated H-statistic (empirical p-values <0.05), which is a measure of the average length of the stretches of linkage disequilibrium between the haplotypes (Schlamp et al., 2016; Messer Lab \u2014 Resources, 2014, Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from H-scan analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "0c13dd4b-10cc-4727-aa90-d81a3b87d025",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C57",
+      "claim": "There were 68 genes located in regions with a significant (p<0.05) H-statistic for ZAL2m and 109 genes in regions with a significant H-statistic for ZAL2.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, there were 68 genes located in regions with a significant (p<0.05) H-statistic for ZAL2m and 109 genes in regions with a significant H-statistic for ZAL2 (Supplementary file 5), meaning that these genes are inside regions showing evidence of a selective sweep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from H-scan analysis presented in the manuscript and Supplementary file 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "5cddf11c-099b-4f3a-afc7-385b73645ef7",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C58",
+      "claim": "Among the genes that were differentially expressed between morphs, more of these genes are located inside the rearranged region on ZAL2/2m than expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that among the genes that were differentially expressed between morphs, more of these genes are located inside the rearranged region on ZAL2/2m than expected by chance, pointing toward cis- (as opposed to trans-) regulatory differences underlying morph differences in expression (X2 tests showed highly significant effects for both brain regions in adults and nestlings of both sexes, with false discovery rate, FDR, correction to account for the multiple statistical comparisons performed using the Benjamini-Hochberg correction) (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "a42e77ac-f2c0-445f-ab90-35dfeda9793f",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C59",
+      "claim": "Differential expression significantly predicted the degree of allelic bias in expression of that gene (X2(2)=664.16, p<2.2 \u00d7 10\u201316).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with what we previously reported using only males (Sun et al., 2018), we found that differential expression significantly predicted the degree of allelic bias in expression of that gene (X2(2)=664.16, p<2.2 \u00d7 10\u201316, controlling for sequencing batch and brain region, see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "8d3a9c7c-4b5b-45e9-8b91-02100bda1113",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C60",
+      "claim": "Tan-biased genes showed greater ZAL2 allelic bias and white-biased genes showed greater ZAL2m allelic bias than did genes that were not differentially expressed between morphs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, tan-biased genes showed greater ZAL2 allelic bias and white-biased genes showed greater ZAL2m allelic bias than did genes that were not differentially expressed between morphs (post-hoc T>W vs T=W: z=\u201316.87; post-hoc W>T vs T=W: z=19.63, p<2.2 \u00d7 10\u201316; post-hoc W>T vs T>W: z=26.35, p<2.2 \u00d7 10\u201316) (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "798382e7-4633-4c9d-a477-b9417ebb04e3",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C61",
+      "claim": "The ZAL2m H-statistic was a significant, positive predictor of bias in brain gene expression toward the ZAL2m allele (X2(2)=40.17, p=1.893 \u00d7 10\u20139; t=5.114, p=3.24 \u00d7 10\u20137).",
+      "claim_type": "EXPLICIT",
+      "source": "For the ZAL2m chromosome, we found that the ZAL2m H-statistic was a significant, positive predictor of bias in brain gene expression toward the ZAL2m allele, controlling for sequencing batch and brain region (X2(2)=40.17, p=1.893 \u00d7 10\u20139; t=5.114, p=3.24 \u00d7 10\u20137) (see Materials and methods) (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "caa63968-d72a-4a50-9437-82feef7533b1",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C62",
+      "claim": "Genes that exhibited evidence of positive selection on ZAL2 showed allelic bias toward the ZAL2 allele (X2(2)=24.231, p=5.475 \u00d7 10\u20136; t=\u20133.151, p=0.00164).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we found that genes that exhibited evidence of positive selection on ZAL2 showed allelic bias toward the ZAL2 allele (X2(2)=24.231, p=5.475 \u00d7 10\u20136; t=\u20133.151, p=0.00164) (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "4174abed-b8de-4dd9-a291-8d8515da4e31",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C63",
+      "claim": "The strongest enrichment for genes was found in the categories 'behavior' (pFDR = 0.0252) and 'metabolic process' (pFDR = 0.0252).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this set of 409 unique genes, we found the strongest enrichment for genes in the categories 'behavior' (pFDR = 0.0252) and 'metabolic process' (pFDR = 0.0252).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene ontology analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "99ee18f8-777a-4109-914c-d2835e668f22",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C64",
+      "claim": "205/409 (50.1%) of candidate genes were involved in the broad category 'metabolic processes' (pFDR = 0.0210).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there was enrichment for several gene ontology categories related to metabolism, with 205/409 (50.1%) of these candidate genes involved in the broad category 'metabolic processes' (pFDR = 0.0210).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene ontology analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "3fbe53cc-4330-4857-aa12-ee8c391ee883",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C65",
+      "claim": "Significant enrichment was found in the category 'regulation of multicellular organismal process' (pFDR = 0.0342).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found significant enrichment in the category 'regulation of multicellular organismal process' (pFDR = 0.0342).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene ontology analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "9ae91844-5cff-4e59-b01e-f35ac3de88aa",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C66",
+      "claim": "97/359 (27.8%) genes exhibiting a signal of allelic bias showed a bias toward the ZAL2m allele.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 97/359 (27.8%) genes exhibiting a signal of allelic bias showed a bias toward the ZAL2m allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "01ba6d89-3547-475d-8db4-fb5ff99dd111",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C67",
+      "claim": "Four genes showing allelic bias toward ZAL2m also overlapped regions exhibiting a significant H-statistic on ZAL2m: PDSS2, XRN2, RPS27A, and TCTE1.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of those 97 genes also overlapped regions exhibiting a significant H-statistic on ZAL2m: PDSS2 (all trans-polyprenyl-diphosphate synthase), XRN2 (5'\u20133' exoribonuclease 2), RPS27A (Ubiquitin-40S ribosomal protein S27a), and TCTE1 (T-complex-associated-testis-expressed 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "3e437fb7-6554-421e-83e5-93fe9321d57a",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C68",
+      "claim": "Of the 409 genes that exhibited evidence either of allelic bias or positive selection, 55 exhibited evidences of both.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at our results from a different perspective, of the 409 genes that exhibited evidence either of allelic bias or positive selection (by the H-statistic), 55 exhibited evidences of both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "bf48db05-46a5-4eef-bd30-c6eaced77044",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C69",
+      "claim": "Three genes were located in areas of elevated H-statistic on both the ZAL2 and ZAL2m chromosomes: PDSS2, ATP6V1C2, and GHRL1.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of these genes were located in areas of elevated H-statistic on both the ZAL2 and ZAL2m chromosomes: PDSS2, ATP6V1C2 (ATPase H+Transporting V1 Subunit C2), and GHRL1 (Grainyhead Like Transcription Factor 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "e941222b-9d5f-464f-bc8a-b9c941ffd024",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C70",
+      "claim": "Recombination has not entirely ceased on ZAL2m.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, the degeneration is weak at most, and it appears that recombination has not entirely ceased on ZAL2m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the linkage disequilibrium decay pattern shown in Figure 2f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "ac3be196-3bf4-48c1-979e-a8985abb6ba8",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C71",
+      "claim": "Low level of recombination on ZAL2m likely occurs in rare ZAL2m homozygotes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that this low level of recombination occurs in rare ZAL2m homozygotes (Horton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference and supported by a citation to Horton et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "eacfed2a-4d51-4ce3-bab9-258056a61090",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C72",
+      "claim": "Complex phenotypes including alternative plumage morphs and life history strategies can evolve prior to the cessation of recombination and despite substantial genetic degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the case of the ZAL2m supergene illustrates that complex phenotypes including alternative plumage morphs and life history strategies, can evolve prior to the cessation of recombination and despite substantial genetic degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "8d3d6ebd-e6ff-432a-b70f-12e5fabc6b0c",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C73",
+      "claim": "Allele-specific gene expression in the brain was associated with signatures of positive selection on both the ZAL2 and ZAL2m chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that allele-specific gene expression in the brain was associated with these signatures of positive selection on both the ZAL2 and ZAL2m chromosomes, suggesting that this selection has acted on regulatory regions of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "77e7dea9-3f4a-42a7-a6cf-8ce9a312a0dd",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C74",
+      "claim": "Signatures of balancing selection were discovered maintaining two long-range haplotypes within the ZAL2m supergene.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we also discovered clear signatures of balancing selection maintaining two long-range haplotypes within the ZAL2m supergene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "9590255e-e516-4ff7-93fa-bed9b398548c",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C75",
+      "claim": "Similar long-range haplotypes have not been previously reported for non-recombining chromosomal polymorphisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We were surprised by this finding, as similar long-range haplotypes have not, to our knowledge, been previously reported for non-recombining chromosomal polymorphisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "583d0540-27d7-4c4c-a1e1-35c8df61c4be",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C76",
+      "claim": "Balancing selection may function to maintain genetic variability in the face of reduced recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that balancing selection may function to maintain genetic variability in the face of reduced recombination, and we might expect to see other instances of balancing selection within supergenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "f38aaeb3-daea-48cc-b191-3b4835cef008",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C77",
+      "claim": "GREB1 in mammals is a downstream target of ER\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these genes is GREB1, which in mammals is a downstream target of ER\u03b1 (Gegenhuber et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gegenhuber et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "9d48087e-e90f-4cda-a0fc-dd1ab007038d",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C78",
+      "claim": "ER\u03b1 is causally related to the behavioral differences between morphs in white-throated sparrows.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is notable because, in white-throated sparrows, ER\u03b1 is causally related to the behavioral differences between morphs (Merritt et al., 2020; Horton et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Merritt et al., 2020; Horton et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "abdc544c-3550-43d2-8040-f0ea3f78a333",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C79",
+      "claim": "The ZAL2m supergene is an active arena of multiple evolutionary forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results demonstrate that the ZAL2m supergene is far from a degenerating counterpart of a 'normal' autosome. Rather, it is an active arena of multiple evolutionary forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "dfa06ed7-e8e3-4d15-821b-30c7dbe09011",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C80",
+      "claim": "Although degeneration is operating on ZAL2m, dynamic selective forces are occurring simultaneously, producing divergent complex phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that although degeneration is operating on ZAL2m, dynamic selective forces are occurring simultaneously, producing divergent complex phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "03ceaba9-8fdf-4d62-927e-c482284d8ff7",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C81",
+      "claim": "A total of 931,424 SNPs and 97,375 insertions and deletions (InDels) were obtained between ZAL2 and ZAL2m chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this procedure, we obtained a total of 931,424 SNPs and 97,375 insertions and deletions (InDels) between ZAL2 and ZAL2m chromosomes, increasing the number of putatively fixed SNPs between the two chromosomes beyond previous publications (Tuttle et al., 2016; Sun et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from variant calling analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "351a3ef0-6fa6-47f7-ba1d-6c97f1ebf658",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C82",
+      "claim": "A vast majority (N=930,588; 99.91%) of the fixed differences reside in the scaffolds predicted to be inside the rearrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "As we expected, a vast majority (N=930,588; 99.91%) of the fixed differences reside in the scaffolds that we previously predicted to be inside the rearrangement (Sun et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "8af0ebb0-67d2-4d51-9551-4c17e69ada37",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C83",
+      "claim": "On average, 8.5% of all reads from white-striped birds were assigned to either the ZAL2 or ZAL2m chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "On an average, 8.5% of all reads from white-striped birds were assigned to either the ZAL2 or ZAL2m chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from haplotype phasing analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "e982d61b-a2a8-49dd-a34e-16033915d911",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "claim_id": "C84",
+      "claim": "The size of the chromosomal inversion is estimated to be approximately 9.5% of the total genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the size of the chromosomal inversion is estimated to be approximately 9.5% of the total genome (Thomas et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Thomas et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7e09db66-be29-49ec-9c3b-52f584b784ce",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "White-throated sparrows exhibit two plumage morphs (white-striped and tan-striped) that differ in behavior and are linked to a chromosomal rearrangement (ZAL2m). White-striped birds are heterozygous (ZAL2/2m) and show increased aggression and extra-pair copulations, while tan-striped birds are homozygous (ZAL2/2) and engage in more parental care.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are all supported by citations to prior published work. These claims establish the foundational biological system under study and are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "ec36a9e9-4b34-46c5-a692-b674c603ed23",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The ZAL2m supergene arose 2-3 million years ago and is maintained by a disassortative mating system where almost all breeding pairs consist of one bird of each morph. ZAL2m homozygotes are extremely rare (only six ever identified), resulting in ZAL2m existing in near-constant heterozygosity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 are supported by multiple citations to prior work. The rarity of ZAL2m homozygotes and the disassortative mating pattern are well-established, supporting the inference that ZAL2m exists in near-constant heterozygosity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "0c606770-c834-4b50-80d8-b860ba3d43a2",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Suppressed recombination on ZAL2m is expected to reduce the efficacy of natural selection, leading to genetic degeneration. Previous studies found weak signals of excess non-synonymous polymorphism and reduced expression of ZAL2m alleles, suggesting possible functional degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 are supported by citations to theoretical work and prior empirical studies. These claims establish the theoretical framework and prior evidence for degeneration, providing context for the current study's investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "496d35aa-4b5b-4659-88fb-aa31e917f968",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Specific genes within the ZAL2m region have been linked to behavioral differences between morphs. ESR1 shows allelic differences in its promoter that likely alter expression, and its expression is necessary for aggressive behavior in white-striped birds. ZAL2m is also associated with differential expression of vasoactive intestinal peptide, which is causal for aggression in songbirds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 are supported by citations to prior work. These claims establish that specific genes within the supergene region have functional consequences for behavior, providing biological context for the evolutionary analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "8c8c7063-8cf0-4b14-a314-8c15a4ef4c9e",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Whole genome sequencing of 63 birds (with white-striped birds sequenced at higher coverage) identified 11,382,994 SNPs. White-striped birds showed significantly higher polymorphic sites and elevated nucleotide diversity in the ZAL2/2m rearranged region. PCA clearly separated morphs based on ZAL2/2m SNPs, with no significant population structure by geography.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 are supported by data presented in the manuscript and figures. The sequencing strategy is appropriate for separating ZAL2 and ZAL2m alleles, and the population genetic patterns are consistent with the known biology of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "ed2e8fc9-9113-441b-8948-d966e6906b1a",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "De novo assembly of a super-white (ZAL2m/2m) bird genome revealed that ZAL2m-linked scaffolds are significantly more fragmented than other chromosomes and contain more repeat elements (especially long terminal repeats and interspersed repeats). Both ZAL2 and ZAL2m accumulated higher proportions of structural variants compared to other chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 are supported by genome assembly data and statistical tests. The increased fragmentation and repeat content are consistent with reduced recombination and provide evidence for genomic degeneration on ZAL2m.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "d6c5c945-d782-4c5c-b6b7-247e91674ae6",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Haplotype phasing revealed that ZAL2m has approximately 12-fold fewer genetic variants and 11-fold lower nucleotide diversity compared to ZAL2. The ratio of non-synonymous to synonymous diversity (\u03c0N/\u03c0S) was significantly elevated on ZAL2m, and the effective population size of ZAL2m is threefold lower than expected from census size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by extensive population genomic data and statistical analyses. The reduced diversity and elevated \u03c0N/\u03c0S ratio are consistent with reduced efficacy of purifying selection on ZAL2m due to suppressed recombination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "5660b167-292a-4616-a9a2-f229bc764b08",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ZAL2m alleles showed consistently reduced expression in 8/10 tissue types. Allelic bias in expression was weakly associated with the rate of non-synonymous fixed differences but not with synonymous differences or promoter mutations, suggesting that overall reduced ZAL2m expression is only weakly linked to accumulated mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by RNAseq data from multiple tissues and statistical analyses. The weak association between mutations and expression bias suggests that other factors (e.g., selection, epigenetic mechanisms) may also contribute to expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A ~3 Mbp region on ZAL2m (the 'outlier region') exhibits exceptionally high nucleotide diversity (tenfold higher than the ZAL2m mean and 3.15-fold higher than the corresponding ZAL2 region), significantly elevated Tajima's D, and contains two major haplotypes. Phylogenetic and D-statistic analyses rule out introgression as the source of this diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C50 are supported by extensive population genetic analyses, phylogenetic reconstructions, and statistical tests. The convergent evidence from multiple analyses strongly supports the presence of long-range haplotypes maintained by balancing selection within ZAL2m.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "6e519643-0b73-4f0a-9c91-4d00ddede2d3",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The two ZAL2m haplotypes (H1 and H2) show no association with geography or sex, and white-striped birds carrying different haplotypes do not differ significantly in phenotypic traits after multiple testing correction. However, GREB1 showed higher expression in H2 in AMV (unadjusted p=0.0195), and KCNS3 showed trends toward higher expression in H2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C52 are supported by statistical analyses with appropriate multiple testing correction. However, claims C53-C54 report only unadjusted p-values that do not survive correction, making the evidence for differential gene expression between haplotypes uncertain. The biological significance of the haplotypes remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "15df092a-f7a5-4dbd-ad8f-a24c2c2f1129",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "H-scan analysis identified 216 regions on ZAL2 and regions on ZAL2m with significantly elevated H-statistics, indicating selective sweeps. These regions contain 109 genes on ZAL2 and 68 genes on ZAL2m showing evidence of positive selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by H-scan analysis with empirical p-values. The identification of selective sweeps on both chromosomes provides evidence for ongoing positive selection in this system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "da976325-c992-439d-ae00-92c26722b840",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Differentially expressed genes between morphs are enriched within the rearranged region beyond chance expectation. Differential expression significantly predicts allelic bias, with tan-biased genes showing greater ZAL2 allelic bias and white-biased genes showing greater ZAL2m allelic bias, suggesting cis-regulatory differences underlie morph differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by statistical analyses of RNAseq data with appropriate corrections for multiple testing. The association between differential expression and allelic bias provides strong evidence for cis-regulatory evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "b0a6b682-b516-40de-9aa4-00f62b4ca59d",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Genes in regions showing evidence of positive selection (elevated H-statistic) on ZAL2m show allelic bias toward the ZAL2m allele, and genes under selection on ZAL2 show bias toward the ZAL2 allele, suggesting that positive selection has acted on cis-regulatory variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by statistical analyses linking H-statistics to allelic bias in expression. This provides evidence that positive selection has shaped gene regulation on both chromosomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "008bb88b-2844-4c5e-bf7b-2bfdbe2c4954",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Gene ontology analysis of 409 candidate genes (showing allelic bias or positive selection) revealed significant enrichment for 'behavior' and 'metabolic process' categories, with 50.1% involved in metabolic processes and enrichment for 'regulation of multicellular organismal process.'",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by gene ontology analysis with FDR correction. The enrichment for behavior-related genes is consistent with the known behavioral differences between morphs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "6bea881c-a235-444e-ad0f-41b79f100ce0",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Among genes showing allelic bias, 27.8% showed bias toward ZAL2m. Four genes (PDSS2, XRN2, RPS27A, TCTE1) showed both ZAL2m-biased expression and evidence of positive selection on ZAL2m. Of 409 candidate genes, 55 showed evidence of both allelic bias and positive selection, with three genes (PDSS2, ATP6V1C2, GHRL1) showing elevated H-statistics on both chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 are supported by integration of expression and selection data. These genes represent strong candidates for adaptive evolution, though functional validation would strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "9863bdf8-edfc-4d6d-b587-3e2b484cfe62",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Recombination has not entirely ceased on ZAL2m, as evidenced by linkage disequilibrium decay patterns. This low level of recombination likely occurs in rare ZAL2m homozygotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is supported by linkage disequilibrium data showing decay with distance. Claim C71 is a reasonable inference supported by a citation, though direct evidence from ZAL2m homozygotes is limited given their rarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "c1d04823-119a-4516-b84b-ceb37066ff82",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The ZAL2m supergene demonstrates that complex phenotypes can evolve prior to complete cessation of recombination and despite genetic degeneration. The supergene is an active arena of multiple evolutionary forces, with degeneration and dynamic selective forces operating simultaneously to produce divergent phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C79, and C80 are interpretive conclusions supported by the convergent evidence from multiple analyses presented in the manuscript. The data demonstrate both degeneration and ongoing selection, supporting these synthetic conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "e0aa876a-b243-4753-844f-ffbaf2cd35f6",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Allele-specific gene expression is associated with signatures of positive selection on both chromosomes. Remarkably, balancing selection maintains two long-range haplotypes within ZAL2m, a pattern not previously reported for non-recombining chromosomal polymorphisms. This suggests balancing selection may maintain genetic variability in the face of reduced recombination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are supported by the data analyses presented. Claim C76 is a reasonable inference from the findings, though it remains speculative without additional examples from other systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "6541ac8d-7eab-4420-9518-f632c19b6476",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Similar long-range haplotypes have not been previously reported for non-recombining chromosomal polymorphisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 is based on the authors' knowledge of the literature. While the authors state this is novel, comprehensive verification of this claim would require systematic review of all non-recombining chromosomal polymorphisms, which is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "b018e494-0e9c-41ef-99d0-6b26cbf43142",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "GREB1, which shows differential expression between ZAL2m haplogroups, is a downstream target of ER\u03b1 in mammals. This is notable because ER\u03b1 is causally related to behavioral differences between morphs in white-throated sparrows.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 are supported by citations to prior work. This connection between GREB1 and ER\u03b1 provides a potential mechanistic link between the balanced haplotypes and behavior, though functional validation in sparrows would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    },
+    {
+      "id": "6ec74390-06c7-4352-b7ad-e189c6b1c8e0",
+      "content_id": "9cd37620-839e-4d58-90a4-345bda4daab9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Haplotype phasing using fixed differences between ZAL2 and ZAL2m identified 931,424 SNPs and 97,375 indels, with 99.91% residing in the predicted rearranged region. On average, 8.5% of reads from white-striped birds were assigned to ZAL2 or ZAL2m, consistent with the estimated 9.5% genome size of the inversion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 are supported by variant calling data and haplotype phasing results. The consistency between read assignment and estimated inversion size validates the phasing approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:19:13.538410Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32fc005f-1f5b-4c90-904a-48aa69d19c6d",
+      "result_id": "7e09db66-be29-49ec-9c3b-52f584b784ce"
+    },
+    {
+      "claim_id": "b306980a-60fa-4a31-81ac-2750564f1924",
+      "result_id": "7e09db66-be29-49ec-9c3b-52f584b784ce"
+    },
+    {
+      "claim_id": "a746a5e6-8eca-446d-bd29-e0032ee6d910",
+      "result_id": "7e09db66-be29-49ec-9c3b-52f584b784ce"
+    },
+    {
+      "claim_id": "f87d4aaa-f484-422c-ac85-d5fa7eb3475a",
+      "result_id": "7e09db66-be29-49ec-9c3b-52f584b784ce"
+    },
+    {
+      "claim_id": "40464946-4d96-4f1a-899a-78290888ebb5",
+      "result_id": "7e09db66-be29-49ec-9c3b-52f584b784ce"
+    },
+    {
+      "claim_id": "87f8a984-f480-4502-8486-9a7d87e44677",
+      "result_id": "7e09db66-be29-49ec-9c3b-52f584b784ce"
+    },
+    {
+      "claim_id": "aac89029-73f3-4a17-b9d4-1d4bd09f5431",
+      "result_id": "7e09db66-be29-49ec-9c3b-52f584b784ce"
+    },
+    {
+      "claim_id": "d0195147-fe7f-4ca6-a33a-5905ed84f5d5",
+      "result_id": "ec36a9e9-4b34-46c5-a692-b674c603ed23"
+    },
+    {
+      "claim_id": "3e20241c-875d-41a2-93c6-f494e72537ec",
+      "result_id": "ec36a9e9-4b34-46c5-a692-b674c603ed23"
+    },
+    {
+      "claim_id": "f78a5570-7746-488b-96ed-125495e9438e",
+      "result_id": "ec36a9e9-4b34-46c5-a692-b674c603ed23"
+    },
+    {
+      "claim_id": "b0053b43-1ef6-4b96-b63d-f02ded57276e",
+      "result_id": "ec36a9e9-4b34-46c5-a692-b674c603ed23"
+    },
+    {
+      "claim_id": "00ab0ca3-dfeb-40b4-b1df-b0c89e684091",
+      "result_id": "ec36a9e9-4b34-46c5-a692-b674c603ed23"
+    },
+    {
+      "claim_id": "6c21a6c7-582e-4360-add9-ae62ea213acd",
+      "result_id": "0c606770-c834-4b50-80d8-b860ba3d43a2"
+    },
+    {
+      "claim_id": "efd84c82-d03d-4e27-86cf-dfa77c21d0a0",
+      "result_id": "0c606770-c834-4b50-80d8-b860ba3d43a2"
+    },
+    {
+      "claim_id": "7fedf9fe-a2d5-4d8d-b316-a59cbaa30c57",
+      "result_id": "0c606770-c834-4b50-80d8-b860ba3d43a2"
+    },
+    {
+      "claim_id": "ab8ec5bf-8cfd-43f1-af47-f5271bd8d85c",
+      "result_id": "0c606770-c834-4b50-80d8-b860ba3d43a2"
+    },
+    {
+      "claim_id": "6ca5ac11-e8ee-416a-8f3b-81f361207d11",
+      "result_id": "496d35aa-4b5b-4659-88fb-aa31e917f968"
+    },
+    {
+      "claim_id": "18f7015f-9cd6-4474-965a-ee17cfdf5598",
+      "result_id": "496d35aa-4b5b-4659-88fb-aa31e917f968"
+    },
+    {
+      "claim_id": "bdff5ad6-6168-4433-b4c0-840e8c797bc9",
+      "result_id": "496d35aa-4b5b-4659-88fb-aa31e917f968"
+    },
+    {
+      "claim_id": "1e9835ce-bb06-43e7-a902-c589c01842c5",
+      "result_id": "496d35aa-4b5b-4659-88fb-aa31e917f968"
+    },
+    {
+      "claim_id": "c1b352bc-18b2-4c69-ba25-55892f79c18e",
+      "result_id": "8c8c7063-8cf0-4b14-a314-8c15a4ef4c9e"
+    },
+    {
+      "claim_id": "8227e3d2-573c-4815-98ae-63dbe62a106f",
+      "result_id": "8c8c7063-8cf0-4b14-a314-8c15a4ef4c9e"
+    },
+    {
+      "claim_id": "3f2cd51e-a95d-43d4-8d3c-c253ef461b25",
+      "result_id": "8c8c7063-8cf0-4b14-a314-8c15a4ef4c9e"
+    },
+    {
+      "claim_id": "9964fe8e-f4da-42ea-bd8a-1fe2095be420",
+      "result_id": "8c8c7063-8cf0-4b14-a314-8c15a4ef4c9e"
+    },
+    {
+      "claim_id": "7308ef68-5e0a-4397-bfa6-41bb8c513808",
+      "result_id": "8c8c7063-8cf0-4b14-a314-8c15a4ef4c9e"
+    },
+    {
+      "claim_id": "06208e4a-ed5e-4e12-b573-da4df3f9d32b",
+      "result_id": "8c8c7063-8cf0-4b14-a314-8c15a4ef4c9e"
+    },
+    {
+      "claim_id": "f9b1c31f-f9d6-4c80-9e88-bea68c311eba",
+      "result_id": "8c8c7063-8cf0-4b14-a314-8c15a4ef4c9e"
+    },
+    {
+      "claim_id": "28a733ba-d769-41d6-8439-ed02fe6031e3",
+      "result_id": "ed2e8fc9-9113-441b-8948-d966e6906b1a"
+    },
+    {
+      "claim_id": "3a6cb795-538d-444e-abd1-b9ccbc4cb66b",
+      "result_id": "ed2e8fc9-9113-441b-8948-d966e6906b1a"
+    },
+    {
+      "claim_id": "359d840c-5d0e-48fc-9b08-5cfae6c96bc8",
+      "result_id": "ed2e8fc9-9113-441b-8948-d966e6906b1a"
+    },
+    {
+      "claim_id": "e512e518-15de-4444-a88b-659c13f7027a",
+      "result_id": "ed2e8fc9-9113-441b-8948-d966e6906b1a"
+    },
+    {
+      "claim_id": "bfd82bdc-e1e9-473e-a3dd-08e970146bae",
+      "result_id": "ed2e8fc9-9113-441b-8948-d966e6906b1a"
+    },
+    {
+      "claim_id": "6a48f45e-d2f5-4ec3-8ba9-47ee2eaeaf94",
+      "result_id": "d6c5c945-d782-4c5c-b6b7-247e91674ae6"
+    },
+    {
+      "claim_id": "e1cb89d2-5ac9-4d9e-ba28-0dc3c6f62583",
+      "result_id": "d6c5c945-d782-4c5c-b6b7-247e91674ae6"
+    },
+    {
+      "claim_id": "bf8e71ab-987a-4f0b-8ac1-5aa3ea3785e2",
+      "result_id": "d6c5c945-d782-4c5c-b6b7-247e91674ae6"
+    },
+    {
+      "claim_id": "19ddf22d-ef71-4308-a78e-8257de82c4dd",
+      "result_id": "d6c5c945-d782-4c5c-b6b7-247e91674ae6"
+    },
+    {
+      "claim_id": "577013ea-4794-49dc-b439-0f1c94967fb6",
+      "result_id": "d6c5c945-d782-4c5c-b6b7-247e91674ae6"
+    },
+    {
+      "claim_id": "92fa5e81-f7c1-45f2-a285-213c9012bec0",
+      "result_id": "5660b167-292a-4616-a9a2-f229bc764b08"
+    },
+    {
+      "claim_id": "4d1c0a76-faaa-4e5a-8770-adff969acfa5",
+      "result_id": "5660b167-292a-4616-a9a2-f229bc764b08"
+    },
+    {
+      "claim_id": "6f703479-b6f8-4cdc-b488-e07f49eb4474",
+      "result_id": "5660b167-292a-4616-a9a2-f229bc764b08"
+    },
+    {
+      "claim_id": "d663fb6e-2961-4250-8389-b5d542167a18",
+      "result_id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5"
+    },
+    {
+      "claim_id": "6106b278-7124-4e12-9102-e768753ac97d",
+      "result_id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5"
+    },
+    {
+      "claim_id": "5a286505-8153-412c-8ee5-44107604efb0",
+      "result_id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5"
+    },
+    {
+      "claim_id": "46c73094-57d4-45bc-a315-fd7f24ed6808",
+      "result_id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5"
+    },
+    {
+      "claim_id": "983e181f-06bb-4d93-bad6-7ce75fcf3652",
+      "result_id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5"
+    },
+    {
+      "claim_id": "9fef9b17-4689-4933-8628-ed2fd6c93a4b",
+      "result_id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5"
+    },
+    {
+      "claim_id": "789be301-f5d5-4114-a009-537d075b63f8",
+      "result_id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5"
+    },
+    {
+      "claim_id": "4d46c82e-551d-454b-8f3a-286a3e643c91",
+      "result_id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5"
+    },
+    {
+      "claim_id": "c2e01707-77ad-4096-9fbb-55ee35bbdd56",
+      "result_id": "d58b94a1-2e27-4167-b4f0-0509eac3b1c5"
+    },
+    {
+      "claim_id": "d080019d-34fb-46cd-a198-14488ca9507e",
+      "result_id": "6e519643-0b73-4f0a-9c91-4d00ddede2d3"
+    },
+    {
+      "claim_id": "d068e0ee-2f15-4775-ac87-d4b69836b198",
+      "result_id": "6e519643-0b73-4f0a-9c91-4d00ddede2d3"
+    },
+    {
+      "claim_id": "67ea7e3b-d953-46ae-a2b4-be6dab002afa",
+      "result_id": "6e519643-0b73-4f0a-9c91-4d00ddede2d3"
+    },
+    {
+      "claim_id": "d2fd8d92-60d7-4ee2-8b9a-4ad5794c05fb",
+      "result_id": "6e519643-0b73-4f0a-9c91-4d00ddede2d3"
+    },
+    {
+      "claim_id": "cecc3a9a-47e6-4b9f-a6db-6eccb2bcf009",
+      "result_id": "6e519643-0b73-4f0a-9c91-4d00ddede2d3"
+    },
+    {
+      "claim_id": "d6dd3fa3-d890-4bb7-8569-149399623311",
+      "result_id": "15df092a-f7a5-4dbd-ad8f-a24c2c2f1129"
+    },
+    {
+      "claim_id": "0c13dd4b-10cc-4727-aa90-d81a3b87d025",
+      "result_id": "15df092a-f7a5-4dbd-ad8f-a24c2c2f1129"
+    },
+    {
+      "claim_id": "5cddf11c-099b-4f3a-afc7-385b73645ef7",
+      "result_id": "da976325-c992-439d-ae00-92c26722b840"
+    },
+    {
+      "claim_id": "a42e77ac-f2c0-445f-ab90-35dfeda9793f",
+      "result_id": "da976325-c992-439d-ae00-92c26722b840"
+    },
+    {
+      "claim_id": "8d3a9c7c-4b5b-45e9-8b91-02100bda1113",
+      "result_id": "da976325-c992-439d-ae00-92c26722b840"
+    },
+    {
+      "claim_id": "798382e7-4633-4c9d-a477-b9417ebb04e3",
+      "result_id": "b0a6b682-b516-40de-9aa4-00f62b4ca59d"
+    },
+    {
+      "claim_id": "caa63968-d72a-4a50-9437-82feef7533b1",
+      "result_id": "b0a6b682-b516-40de-9aa4-00f62b4ca59d"
+    },
+    {
+      "claim_id": "4174abed-b8de-4dd9-a291-8d8515da4e31",
+      "result_id": "008bb88b-2844-4c5e-bf7b-2bfdbe2c4954"
+    },
+    {
+      "claim_id": "99ee18f8-777a-4109-914c-d2835e668f22",
+      "result_id": "008bb88b-2844-4c5e-bf7b-2bfdbe2c4954"
+    },
+    {
+      "claim_id": "3fbe53cc-4330-4857-aa12-ee8c391ee883",
+      "result_id": "008bb88b-2844-4c5e-bf7b-2bfdbe2c4954"
+    },
+    {
+      "claim_id": "9ae91844-5cff-4e59-b01e-f35ac3de88aa",
+      "result_id": "6bea881c-a235-444e-ad0f-41b79f100ce0"
+    },
+    {
+      "claim_id": "01ba6d89-3547-475d-8db4-fb5ff99dd111",
+      "result_id": "6bea881c-a235-444e-ad0f-41b79f100ce0"
+    },
+    {
+      "claim_id": "3e437fb7-6554-421e-83e5-93fe9321d57a",
+      "result_id": "6bea881c-a235-444e-ad0f-41b79f100ce0"
+    },
+    {
+      "claim_id": "bf48db05-46a5-4eef-bd30-c6eaced77044",
+      "result_id": "6bea881c-a235-444e-ad0f-41b79f100ce0"
+    },
+    {
+      "claim_id": "e941222b-9d5f-464f-bc8a-b9c941ffd024",
+      "result_id": "9863bdf8-edfc-4d6d-b587-3e2b484cfe62"
+    },
+    {
+      "claim_id": "ac3be196-3bf4-48c1-979e-a8985abb6ba8",
+      "result_id": "9863bdf8-edfc-4d6d-b587-3e2b484cfe62"
+    },
+    {
+      "claim_id": "eacfed2a-4d51-4ce3-bab9-258056a61090",
+      "result_id": "c1d04823-119a-4516-b84b-ceb37066ff82"
+    },
+    {
+      "claim_id": "abdc544c-3550-43d2-8040-f0ea3f78a333",
+      "result_id": "c1d04823-119a-4516-b84b-ceb37066ff82"
+    },
+    {
+      "claim_id": "dfa06ed7-e8e3-4d15-821b-30c7dbe09011",
+      "result_id": "c1d04823-119a-4516-b84b-ceb37066ff82"
+    },
+    {
+      "claim_id": "8d3d6ebd-e6ff-432a-b70f-12e5fabc6b0c",
+      "result_id": "e0aa876a-b243-4753-844f-ffbaf2cd35f6"
+    },
+    {
+      "claim_id": "77e7dea9-3f4a-42a7-a6cf-8ce9a312a0dd",
+      "result_id": "e0aa876a-b243-4753-844f-ffbaf2cd35f6"
+    },
+    {
+      "claim_id": "583d0540-27d7-4c4c-a1e1-35c8df61c4be",
+      "result_id": "e0aa876a-b243-4753-844f-ffbaf2cd35f6"
+    },
+    {
+      "claim_id": "9590255e-e516-4ff7-93fa-bed9b398548c",
+      "result_id": "6541ac8d-7eab-4420-9518-f632c19b6476"
+    },
+    {
+      "claim_id": "f38aaeb3-daea-48cc-b191-3b4835cef008",
+      "result_id": "b018e494-0e9c-41ef-99d0-6b26cbf43142"
+    },
+    {
+      "claim_id": "9d48087e-e90f-4cda-a0fc-dd1ab007038d",
+      "result_id": "b018e494-0e9c-41ef-99d0-6b26cbf43142"
+    },
+    {
+      "claim_id": "03ceaba9-8fdf-4d62-927e-c482284d8ff7",
+      "result_id": "6ec74390-06c7-4352-b7ad-e189c6b1c8e0"
+    },
+    {
+      "claim_id": "351a3ef0-6fa6-47f7-ba1d-6c97f1ebf658",
+      "result_id": "6ec74390-06c7-4352-b7ad-e189c6b1c8e0"
+    },
+    {
+      "claim_id": "8af0ebb0-67d2-4d51-9551-4c17e69ada37",
+      "result_id": "6ec74390-06c7-4352-b7ad-e189c6b1c8e0"
+    },
+    {
+      "claim_id": "e982d61b-a2a8-49dd-a34e-16033915d911",
+      "result_id": "6ec74390-06c7-4352-b7ad-e189c6b1c8e0"
+    }
+  ],
+  "comparisons": []
+}

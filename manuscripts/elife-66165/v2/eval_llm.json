@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "SAXS analysis reveals that R12C and L68P mutations alter SHANK3 protein folding and complex topology in solution. The L68P mutant shows non-linear concentration dependence of Rg suggesting partial unfolding, while both mutants exhibit changes in domain positioning relative to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple SAXS-derived parameters (Rg, Dmax, Kratky plots, CORAL modeling) consistently demonstrate structural perturbations in both mutants (C33-C47). The data are internally consistent across different concentrations and analysis methods, though the concentration-dependent effects complicate interpretation of the monomeric state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The L68P mutation, but not R12C, reduces tertiary structure stability as demonstrated by nano-differential scanning fluorimetry and fluorescence spectroscopy. L68P shows pronounced shifts in thermal transition temperatures upon urea titration and increased surface hydrophobicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal fluorescence-based techniques (nDSF, intrinsic tryptophan fluorescence, ANS binding) converge on the conclusion that L68P destabilizes tertiary structure (C48-C55). The R12C mutant shows distinct behavior, supporting mutation-specific effects. However, thermal unfolding is noted as irreversible, limiting quantitative interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Both R12C and L68P mutations alter secondary structure stability with reduced chemical unfolding cooperativity. CD spectroscopy reveals R12C increases thermal stability by ~6\u00b0C while L68P does not, despite both showing similar secondary structure content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Chemical and thermal unfolding experiments using CD spectroscopy provide complementary evidence for altered secondary structure stability (C56-C64). The differential effects of the two mutations are well-documented, though the large discrepancy between CD and nDSF melting temperatures (~30\u00b0C difference) raises questions about what structural transitions each method reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Molecular dynamics simulations identify the SPN domain as a hotspot of conformational flexibility with increased fluctuations in both mutants. However, both mutations reduce overall backbone dynamics and eliminate discrete conformational transitions observed in wild-type protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RMSF and RMSD analyses from 1000 ns MD trajectories consistently show mutation-induced changes in conformational dynamics (C65-C74). The simulations reveal both local (SPN domain) and distal (ARR domain) effects. However, the simulations are limited to a single 1000 ns trajectory per variant without replicates, and the biological significance of the observed conformational switches is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "SHANK3 mutants form increased numbers of dendritic shaft clusters compared to wild-type, with approximately 48-54% co-localizing with bassoon and 32-34% with homer. The L68P mutant shows significantly more dendritic clusters than wild-type, while spine density remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunocytochemistry and co-localization analyses demonstrate altered subcellular distribution of mutant SHANK3 (C75-C83). Statistical significance is reported for L68P (p=0.04), though the effect is modest. The short expression time (<24 hr) appropriately controls for dosage effects, but the functional significance of shaft synapses is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Mutant SHANK3 variants show no significant changes in binding to cortactin, homer, or SAPAP1 in co-immunoprecipitation assays from HEK293 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP experiments with appropriate controls show no differences in binding affinity for three tested interaction partners (C84). However, the use of HEK293 cells rather than neurons and the lack of quantitative binding affinity measurements limit interpretation. The result is clearly stated but represents a negative finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "FRAP experiments reveal that R12C mutation increases SHANK3 synaptic turnover (reduced residing time), while L68P does not affect SHANK3 turnover but reduces cortactin mobile fraction. These effects are not due to altered protein synthesis and show activity-dependence with bicuculline treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "FRAP data from multiple independent cultures demonstrate mutation-specific effects on protein dynamics (C85-C94). Statistical significance is reported (p<0.0001 for R12C SHANK3; p=0.0002-0.0007 for L68P cortactin). FUNCAT controls rule out synthesis effects. However, the mechanistic link between structural changes and altered dynamics is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors conclude that missense mutation-induced structural impairments of SHANK3 serve as molecular starting points for ASD-associated pathogenic processes, with structural changes directly translating to cellular alterations in synaptic turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While structural perturbations (Results 1-4) and cellular phenotypes (Results 5-7) are well-documented, the causal link between them is correlative rather than mechanistic (C97-C99). The study demonstrates association but does not establish that structural changes cause the cellular phenotypes. Additional experiments (e.g., structure-rescuing mutations, domain swaps) would be needed to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors propose that both mutations cause local structural disturbances in the SPN domain and distal effects in the ARR domain, potentially explaining functional changes not directly related to the mutation site through altered 3D protein structure and intra/intermolecular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MD simulations (C100-C101) and SAXS modeling (C43-C46) provide convergent evidence for both local and distal structural effects (C102-C103). The interpretation that point mutations affect overall 3D structure is well-supported by the data, though the specific molecular mechanisms remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Despite both mutations being located in the SPN domain, they have distinct effects on SHANK3 folding, residing time, and synaptic localization, suggesting different pathogenic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The manuscript consistently demonstrates mutation-specific effects across multiple experimental approaches: L68P shows partial unfolding and increased dendritic clusters, while R12C shows increased stability and turnover (C105). The inference of different mechanisms (C106) is reasonable given the distinct phenotypes, though the actual mechanisms are not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The authors propose that decreased synaptic residing time of R12C mutant could destabilize the synaptic SHANK3 pool, potentially causing a haploinsufficiency-like phenotype and altering binding partner localization and dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the FRAP data clearly show increased R12C turnover (C85), the proposed consequences for synaptic SHANK3 pool stability and haploinsufficiency (C108-C109) are speculative. The heterozygous patient context is mentioned (C107), but no experiments test the haploinsufficiency hypothesis or measure total synaptic SHANK3 levels in the presence of mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The authors conclude that SHANK3-induced deviations in cortactin turnover are likely to have consequences for dendritic spine organization and function, based on cortactin's known role in F-actin stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While cortactin's role in actin dynamics is well-established (C110-C111) and altered cortactin turnover is demonstrated (C89-C90, C92, C94), the functional consequences for spine organization are not tested (C112). The inference is reasonable but remains speculative without direct measurements of spine morphology, stability, or actin dynamics.",
+    "result_type": "MINOR"
+  }
+]

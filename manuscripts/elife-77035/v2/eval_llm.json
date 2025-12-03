@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Vrl1 contains a predicted PX-BAR module in its C-terminal region (aa 737-1089) that is not present in its human ortholog VARP, making it the first VPS9 domain-containing protein with predicted structural homology to the SNX-BAR family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by computational predictions from Phyre2 (98.6% confidence, C3) and AlphaFold2/ColabFold (C4), along with sequence analysis (C2, C5) and domain architecture comparisons (C1). The novelty claim (C6) is appropriately qualified as being based on the authors' knowledge of the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Vrl1 constitutively localizes to endosomes, colocalizing with the endosomal marker Did2-mRuby2 (56%) but not with the Golgi marker Sec7-dsRed (2%), which distinguishes it from other yeast VPS9-domain GEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are supported by quantitative colocalization microscopy data with statistical significance (p<0.0001, Figure 1C, D). The comparison to other VPS9-domain GEFs (C9) is appropriately cited to prior literature (Paulsel et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "A DHFR proximity screen identified multiple endosomal proteins as Vrl1 interactors, including Rab GTPases (Vps21, Ypt52), retromer subunit Vps35, hydrolase receptors (Vps10, Mrl1), and CORVET complex components (Vps11, Vps18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by DHFR screen data with Z-scores provided for each interactor (Figure 1F) and functional enrichment analysis (Figure 1G). The methodology is clearly described and the statistical approach (Z-score calculation) is appropriate for proximity screening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Vrl1 and Vin1 (Ykr078w, the Vps5 paralog) exhibit highly interdependent localization: Vin1 redistributes from cytosol to puncta upon VRL1 expression (p<0.0001), and Vrl1 requires Vin1 for punctate localization (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C24 are well-supported by microscopy data showing mutual dependence for localization (Figure 2B, C) with appropriate statistical tests. The characterization of Vin1 as a Vps5 paralog (C16) is properly cited, and the surprising cytosolic distribution of Vin1 (C17-C19) is supported by prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Vrl1 and Vin1 are mutually dependent for protein stability and form a stable complex, as shown by western blot analysis (17-18% of WT levels when partner is deleted), co-immunoprecipitation (64% recovery), and high colocalization (88%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by multiple complementary approaches: western blot densitometry (Figure 2D, E), CoIP (Figure 2F), and colocalization microscopy (Figure 2G), all with appropriate statistical analysis. The convergence of evidence from different methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The Vrl1-Vin1 complex (named VINE) localizes to endosomes in a PI3P-dependent manner, with Vin1's PX domain mediating PI3P binding and Vrl1's GEF activity promoting its own membrane recruitment through a positive feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are supported by genetic and microscopy data showing PI3P dependence (vps34\u0394, C29), GEF activity dependence (Vrl1D373A, C32), and appropriate citations to recent work on Vin1's unconventional PI3P binding (C31). The positive feedback model (C33) is appropriately presented as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ColabFold predicts that Vrl1 and Vin1 form a canonical SNX-BAR dimer through their PX-like/BAR domains (pTMscore=0.75), and that Vrl1 could pair with both Vin1 and Vps5, though Vrl1-Vps17 pairing is not predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by computational structure predictions with confidence scores provided (Figure 3A, B). The validation of ColabFold accuracy using known interactions (Mvp1 homodimerization, Vps5/Vps17 heterodimerization, C37-C38) strengthens confidence in the predictions, though these remain computational predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Vrl1 specifically interacts with Vin1 but not with other yeast SNX-BARs or retromer subunits, and cannot functionally replace retromer SNX-BARs (Vps5/Vps17) in promoting endosomal localization of Vps10 or Vps35.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by CoIP experiments (Figure 3C, D) and functional assays (Figure 3\u2014figure supplement 3B-D) with appropriate statistical analysis. The specificity for Vin1 over Vps5 is demonstrated even when VIN1 is deleted (C43), and the inability to rescue retromer functions provides strong evidence against a retromer-like function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The VINE complex assembles primarily through an interaction between Vin1 and the Vrl1 AnkRD, with BAR-BAR interactions being dispensable for initial recruitment, as shown by domain deletion and chimeric protein experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 are supported by systematic domain deletion experiments (Figure 3F, G) and CoIP validation (Figure 3I). The key finding that Vrl1(1-703)YPE (lacking BAR domain) strongly recruits Vin1 (C54, p<0.0001) while Vrl1(1-465)YPE (lacking AnkRD) does not (C56) provides strong evidence for the AnkRD as the primary binding interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The N-terminal regions of Vin1 and Vps5 dictate specificity for Vrl1, with the Vrl1(1-703)YPE chimera recruiting the Vin1 N-terminus (p<0.0001) but not the Vps5 N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by structural analysis showing unstructured N-termini (Figure 4A, Figure 4\u2014figure supplement 1) and recruitment assays (Figure 4C, D) with appropriate statistical tests. The differential recruitment provides clear evidence for N-terminal specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The Vin1 PX and BAR domains contribute to VINE assembly and membrane recruitment beyond the N-terminal interaction, as the Vin1 N-terminus alone cannot support WT Vrl1 localization in a vin1\u0394 strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by microscopy data (Figure 4C, Figure 4\u2014figure supplement 2A, B). The observation that WT Vrl1 fails to localize when only the Vin1 N-terminus is present (C68) provides strong evidence that additional domains are required for full complex assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "A minimal 20-amino acid region of the Vin1 N-terminus (aa 76-95) is necessary and sufficient for Vrl1 AnkRD binding, as demonstrated by recruitment assays (p<0.05) and validated by ColabFold predictions showing this exact region binding at the VPS9-AnkRD interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by systematic fragment mapping (Figure 4F, G) and computational predictions (Figure 5A-C, Figure 5\u2014figure supplement 1B, C). The convergence of experimental mapping and computational prediction on the same 20-amino acid region provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Vrl1 binds the Vin1 N-terminus through electrostatic interactions between basic residues in Vin1(76-95) and conserved acidic/polar residues in the Vrl1 AnkRD, as demonstrated by charge-swap mutagenesis abolishing recruitment (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by sequence analysis (Figure 5D), conservation analysis, and mutagenesis experiments (Figure 5E, F) with appropriate statistical tests. The complete loss of recruitment with EEDNE-5A mutation (C77) and charge-swap mutations (C78-C79) provides strong evidence for electrostatic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Vin1 regulates Vrl1 GEF activity by promoting its localization to endosomes, as deletion of VIN1 prevents Vrl1 from rescuing temperature sensitivity and endosomal PI3P production, but artificial endosomal targeting of Vrl1 bypasses the Vin1 requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by growth assays (Figure 6A), PI3P biosensor localization (Figure 6B, C), and rescue experiments with YPE-tagged constructs (Figure 6F, G). The key experiment showing that Vrl1-YPE chimeras rescue in vin1\u0394 (C85, p<0.001) provides strong evidence that Vin1's primary role is localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "VINE occupies endosomal tubules that undergo scission, as shown by time-lapse microscopy of GFP-Vin1 on tubular structures separating from Did2-mRuby2-labeled endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by time-lapse microscopy data (Figure 7A, B) showing tubule formation and scission events. This is consistent with SNX-BAR coat complex behavior, though the temporal resolution (100ms intervals) may limit detection of rapid events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "VRL1 expression specifically redistributes Mrl1 from endosomes (61% decrease in puncta, p<0.05) without affecting retromer cargo Vps10 or Snx4 cargo Atg27, with Mrl1 puncta in vrl1 cells colocalizing with endosomal markers (69% Did2, 48% Vps21) but not vacuolar marker Ypt7 (9.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by quantitative microscopy comparing multiple cargo proteins (Figure 7C, D) and colocalization analysis (Figure 7\u2014figure supplement 1A, B). The specificity for Mrl1 over other cargoes and the endosomal localization of accumulated Mrl1 in vrl1 cells provide strong evidence for VINE-mediated Mrl1 sorting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Vrl1 redistributes Mrl1 independently of its GEF activity, as the GEF-deficient Vrl1D373A mutant retains the ability to redistribute Mrl1 (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by microscopy data comparing WT and D373A mutant (Figure 7E, F). This finding distinguishes the cargo sorting function from the GEF function and suggests VINE acts as a coat complex independent of Rab activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "CRISPR-Cas9 correction of the vrl1 frameshift mutation in BY4741 restores Vin1 punctate localization and causes redistribution of Mrl1 (p<0.01), confirming that the observed effects are due to functional VINE complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by microscopy data from CRISPR-corrected strains (Figure 7\u2014figure supplement 1C-E). This genetic complementation experiment provides important validation that the observed phenotypes are specifically due to the vrl1 mutation rather than off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The Mrl1 cytoplasmic tail is sufficient to confer VINE-mediated redistribution, as shown by transplanting it onto Vps10\u0394Ct, which results in a small but significant decrease in punctate localization upon VRL1 expression (14% decrease, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by chimeric protein experiments (Figure 7G-I) with appropriate controls. The modest effect size (14% decrease) suggests the Mrl1 tail contains VINE-dependent sorting signals, though the presence of VINE-independent signals (C101) complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Mrl1 follows a recycling pathway involving Snx4-mediated transport from vacuole to endosome (loss of endosomal Mrl1 in snx4\u0394, p<0.001) and VINE-mediated endosome-to-Golgi transport, similar to the Atg27 recycling loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by microscopy data in snx4\u0394 strains (Figure 7J, K). However, the endosome-to-Golgi transport step (C107) is presented as a hypothesis rather than demonstrated experimentally. The model (C108) is reasonable but requires additional validation, particularly direct evidence for Golgi targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Vrl1 is a member of the SNX-BAR protein family that specifically binds Vin1 to form the VINE complex, which functions as both a VPS9-domain GEF and a SNX-BAR coat complex operating alongside retromer, Mvp1, and Snx4 pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 represent the main conclusions of the manuscript and are well-supported by the comprehensive structural, biochemical, and functional characterization presented throughout. The dual GEF and coat complex function is demonstrated by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The human Vrl1 homolog VARP associates with retromer to drive endosome-to-plasma membrane sorting, and common laboratory S. cerevisiae strains carry a non-functional vrl1 allele, though Vrl1 can function as the sole VPS9-domain GEF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are appropriately cited to prior literature (Hesketh et al., 2014; Bean et al., 2015). These claims provide important context for the study but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Vin1 and Vps5 arose from a whole-genome duplication event, and in pre-WGD species, the ancestral Vps5 must partner with both Vrl1 and Vps17, suggesting that N-terminal diversification of SNX1/Vps5/Vin1 family proteins enables participation in different sorting complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by appropriate citations to evolutionary studies (Byrne and Wolfe, 2005; Wolfe and Shields, 1997) and represent reasonable evolutionary inferences based on the observed specificity. However, C116 is speculative and would require analysis of pre-WGD species to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "VINE is the first described SNX-BAR coat with a VPS9 domain-containing subunit, though retromer also associates with VPS9-domain GEFs (Vps9, Muk1), and the human VARP similarly contains a VPS9 domain and associates with retromer through a distinct motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 are appropriately cited to prior literature and provide important context for the novelty of VINE. The comparison to retromer-GEF associations and VARP function helps position the findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "VINE may be a novel sorting complex acting in a pathway-specific manner, with Mrl1 working jointly with Vps10 to enhance vacuolar protease transport/maturation, and other SNX-BAR complexes likely redundantly regulating Mrl1 sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are appropriately cited and represent reasonable speculation based on the data. The redundancy claim (C126) is inferred from Mrl1 function in vrl1 mutants but is not directly tested. These claims appropriately acknowledge uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "VARP has additional domains not found in Vrl1, TORC1 machinery localizes to endosomes, Vin1 regulates TORC1 in vrl1 mutant strains, and almost all prior endosomal trafficking studies used strains lacking functional VINE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 are supported by domain architecture comparison (C128, Figure 1A) and appropriate citations (C129-C130). The claim about prevalence of vrl1 mutation in laboratory strains (C131) is based on the authors' knowledge and prior work (Bean et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Mutations in VPS35 have been linked to Parkinson's disease and Alzheimer's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is appropriately cited to multiple studies on VPS35 and neurodegeneration. This provides important biomedical context for studying retromer-related complexes but is not a finding of this manuscript.",
+    "result_type": "MINOR"
+  }
+]

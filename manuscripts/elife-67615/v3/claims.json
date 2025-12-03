@@ -1,0 +1,1225 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Long-read sequencing data from 15 individuals from five continents was reanalyzed to discover a set of 107,866 SVs.",
+    "claim_type": "EXPLICIT",
+    "source": "To this end, we reanalyzed long-read sequencing data of 15 individuals from five continents (Audano et al., 2019) to discover a set of 107,866 SVs (Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of SVs discovered and cites the source of the long-read sequencing data.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "89,979 (83.4%) of the long-read-discovered variants are not represented in sets of SVs discovered with short-read sequencing by 1KGP or HGDP.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that 89,979 (83.4%) of the long-read-discovered variants, including 30,229 (72.3%) common SVs (allele frequency [AF] \u2265 0.05), are not represented in sets of SVs discovered with short-read sequencing by 1KGP or the Human Genome Diversity Project (HGDP) (Almarri et al., 2020; Sudmant et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and percentages of variants not found in short-read datasets, with citations to the comparison datasets.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "66.0% and 17.7% of common SVs found with short reads in the 1KGP and HGDP datasets, respectively, were rediscovered in the long-read dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the much smaller size of the long-read sample set, we were also able to rediscover 66.0% and 17.7% of common SVs found with short reads in the 1KGP and HGDP datasets, respectively, in agreement with results reported in previous studies (Zhao et al., 2021; Figure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3; see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific percentages of rediscovered SVs and cites previous studies supporting these findings.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The long-read dataset discovered 2.3\u00d7 and 3.5\u00d7 more insertions than 1KGP and HGDP, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "We additionally discovered 2.3\u00d7 and 3.5\u00d7 more insertions than 1KGP and HGDP, respectively, with an improved insertion-to-deletion ratio (1.46 in the long-read dataset; 0.40 in 1KGP; 0.37 in HGDP).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific fold-change values and insertion-to-deletion ratios comparing the datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The dearth of insertions in the short-read SV sets reflects the challenge of insertion calling with short reads.",
+    "claim_type": "EXPLICIT",
+    "source": "The dearth of insertions in the short-read SV sets reflects the challenge of insertion calling with short reads, which have difficulty mapping sequences not present in the reference genome (Aganezov et al., 2020), while the excess of insertions among long-read SVs reflects a known variant calling bias caused by missing sequences (e.g., collapsed tandem repeats) in the GRCh38 reference (Aganezov et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explains the technical reasons for the observed differences and cites relevant literature.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Paragraph was used to genotype long-read discovered SVs in 2504 high-coverage (30\u00d7) short-read-sequenced samples from 1KGP.",
+    "claim_type": "EXPLICIT",
+    "source": "We then used the graph genotyping software Paragraph (Chen et al., 2019) to genotype this set of long-read discovered SVs in 2504 high-coverage (30\u00d7) short-read-sequenced samples from 1KGP (Byrska-Bishop et al., 2021; Figure 1A; see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the method used and the sample size, with citations to the software and data source.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Paragraph averages precision and recall rates of 0.72 and 0.70, respectively, across all SV types and genomic regions.",
+    "claim_type": "EXPLICIT",
+    "source": "Paragraph averages precision and recall rates of 0.72 and 0.70, respectively, across all SV types and genomic regions, and an average precision and recall of 0.86 and 0.79 when repeat regions are excluded (Hickey et al., 2020), underscoring its effectiveness for SV genotyping.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific performance metrics for Paragraph with citation to benchmarking study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "15,580 SVs were removed by filtering based on genotyping rates and Hardy-Weinberg equilibrium, leaving 92,286 variants for downstream analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "These filtering steps removed 15,580 SVs, leaving 92,286 variants for downstream analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of variants removed and retained after quality control filtering.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "25,201 (27.3%) alternative SV alleles were absent from all 1KGP samples.",
+    "claim_type": "EXPLICIT",
+    "source": "A total of 25,201 (27.3%) alternative SV alleles were absent from all 1KGP samples, likely reflecting ultra-rare variation within the panel of long-read sequenced genomes, as well as the imperfect recall (i.e., true positive rate) of SV genotyping (Chen et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and percentages with interpretation and citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "1139 (1.2%) alternative SV alleles were observed to be fixed in the 1KGP sample.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, a total of 1139 (1.2%) alternative SV alleles were observed to be fixed in the 1KGP sample and likely reflect a combination of assembly errors and rare variation in the reference genome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and percentages with interpretation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Among SVs that were polymorphic within the 1KGP sample, there is a negative correlation between SV length and minor allele frequency (Kendall's \u03c4 = \u20130.140, p-value < 1 \u00d7 10\u201310).",
+    "claim_type": "EXPLICIT",
+    "source": "Among SVs that were polymorphic within the 1KGP sample, we observed a negative correlation between SV length and minor allele frequency (Kendall's \u03c4 = \u20130.140, p-value < 1 \u00d7 10\u201310), consistent with selection against longer SVs (Figure 1\u2014figure supplement 6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific statistical test results and interpretation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Deletions segregated at lower average minor allele frequencies than insertions (\u03b2 = \u20130.555, p-value < 1 \u00d710\u201310).",
+    "claim_type": "EXPLICIT",
+    "source": "We similarly observed that deletions segregated at lower average minor allele frequencies than insertions (\u03b2 = \u20130.555, p-value < 1 \u00d710\u201310).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific statistical test results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "36\u201341% of segregating SVs were in strong LD (r2 > 0.8) with any known SNP or short indel, depending on the population.",
+    "claim_type": "EXPLICIT",
+    "source": "Depending on the population subject to measurement, 36\u201341% of segregating SVs were in strong LD (r2 > 0.8) with any known SNP or short indel, and 52\u201357% were in moderate LD (r2 > 0.5) with one of these variants (Figure 1\u2014figure supplement 7).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific percentages of SVs in LD with known variants.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "52\u201357% of segregating SVs were in moderate LD (r2 > 0.5) with known SNPs or short indels.",
+    "claim_type": "EXPLICIT",
+    "source": "Depending on the population subject to measurement, 36\u201341% of segregating SVs were in strong LD (r2 > 0.8) with any known SNP or short indel, and 52\u201357% were in moderate LD (r2 > 0.5) with one of these variants (Figure 1\u2014figure supplement 7).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific percentages of SVs in LD with known variants.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Levels of LD were lowest for African populations.",
+    "claim_type": "EXPLICIT",
+    "source": "Levels of LD were lowest for African populations, in accordance with known patterns of haplotype structure (Conrad et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states the observation and cites literature on known haplotype structure patterns.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "50,917 of all SVs (47.2%) intersect at least partially with one or more genomic intervals deemed inaccessible based on the 1KGP pilot mask.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, 50,917 of all SVs (47.2%) intersect at least partially with one or more genomic intervals deemed inaccessible based on the 1KGP pilot mask, and 5214 SVs (4.8%) occur within regions of the genome identified as problematic by the ENCODE Consortium (Amemiya et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and percentages with citation to the ENCODE Consortium.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "5214 SVs (4.8%) occur within regions of the genome identified as problematic by the ENCODE Consortium.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, 50,917 of all SVs (47.2%) intersect at least partially with one or more genomic intervals deemed inaccessible based on the 1KGP pilot mask, and 5214 SVs (4.8%) occur within regions of the genome identified as problematic by the ENCODE Consortium (Amemiya et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and percentages with citation to the ENCODE Consortium.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "1121 SV-gene pairs with significant gene expression associations were identified at a 10% false discovery rate.",
+    "claim_type": "EXPLICIT",
+    "source": "After filtering the data on genotyping call rate, minor allele frequency, and gene expression level (see Materials and methods), we identified a total of 1121 SV-gene pairs with significant gene expression associations at a 10% false discovery rate (FDR; Figure 2A), broadly consistent with expectations from previous eQTL studies when scaled to the number of tested SVs (Chiang et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides the specific number of significant associations and cites a previous eQTL study for comparison.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "62% of significant SV eQTLs occurred within 100 kb of the corresponding transcription start site.",
+    "claim_type": "EXPLICIT",
+    "source": "SVs with significant impacts on expression tended to occur near the genes that they regulate, with 62% of significant SV eQTLs occurring within 100 kb of the corresponding TSS (Figure 2B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides a specific percentage of eQTLs within a defined distance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Top gene expression associations include several genes in the HLA complex (HLA-DQB2, HLA-DQA2, HLA-DRB6, and HLA-P), as well as ERAP2.",
+    "claim_type": "EXPLICIT",
+    "source": "Top gene expression associations include several genes in the HLA complex (HLA-DQB2, HLA-DQA2, HLA-DRB6, and HLA-P), as well as ERAP2, which encodes an endoplasmic reticulum aminopeptidase that processes HLA ligands to lengths suitable for their binding (Figure 2C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly lists the top associated genes and provides functional context for ERAP2.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "ERAP2 encodes an endoplasmic reticulum aminopeptidase that processes HLA ligands to lengths suitable for their binding.",
+    "claim_type": "EXPLICIT",
+    "source": "Top gene expression associations include several genes in the HLA complex (HLA-DQB2, HLA-DQA2, HLA-DRB6, and HLA-P), as well as ERAP2, which encodes an endoplasmic reticulum aminopeptidase that processes HLA ligands to lengths suitable for their binding (Figure 2C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides functional information about ERAP2.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "SVs that intersect annotated enhancer elements show a strong enrichment for significant gene expression associations.",
+    "claim_type": "EXPLICIT",
+    "source": "Using epigenetic state annotations generated by the Roadmap Epigenetics Consortium (Roadmap Epigenomics Consortium et al., 2015), we found a strong enrichment of significant gene expression associations for SVs that intersect annotated enhancer elements, as well as a strong depletion of expression associations for SVs that intersect 'quiescent' sequences that are devoid of important epigenetic marks (Figure 2D).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes enrichment analysis results with citation to the data source.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "SVs that intersect 'quiescent' sequences show a strong depletion of expression associations.",
+    "claim_type": "EXPLICIT",
+    "source": "Using epigenetic state annotations generated by the Roadmap Epigenetics Consortium (Roadmap Epigenomics Consortium et al., 2015), we found a strong enrichment of significant gene expression associations for SVs that intersect annotated enhancer elements, as well as a strong depletion of expression associations for SVs that intersect 'quiescent' sequences that are devoid of important epigenetic marks (Figure 2D).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes enrichment analysis results with citation to the data source.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Of nine exon-intersecting deletions, 8 exhibited associations consistent with direct dosage effects on expression.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the nine such deletions, 8 exhibited associations consistent with direct dosage effects on expression (i.e., a linear association between expression and deletion copy number; Figure 2\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and describes the pattern observed.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Of 1121 loci with a significant SV eQTL, 345 (30.8%) contained the SV within the 90% credible causal set.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 1121 loci with a significant SV eQTL, 345 (30.8%) contained the SV within the 90% credible causal set.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and percentages from fine-mapping analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "15 loci were identified where an SV occurred among a credible causal set of five or fewer variants.",
+    "claim_type": "EXPLICIT",
+    "source": "While the median size of the credible causal sets was 19 variants, we identified 15 loci where an SV occurred among a credible causal set of five or fewer variants (Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts from fine-mapping analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "A 37 Kb deletion (27005_CHM13_del) is among just two variants in a credible causal set for expression effects on MIF-AS1.",
+    "claim_type": "EXPLICIT",
+    "source": "These include a 37 Kb deletion (27005_CHM13_del) that is among just two variants in a credible causal set for expression effects on MIF-AS1, a lncRNA partially encompassed by the deletion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific details about a fine-mapped locus.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The expression of MIF-AS1 has been previously associated with breast and gastric cancer proliferation.",
+    "claim_type": "EXPLICIT",
+    "source": "The expression of this lncRNA has been previously associated with breast and gastric cancer proliferation (Ding et al., 2019; Li et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous studies linking MIF-AS1 expression to cancer.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "A 3 kb insertion (20290_HX1_ins) is among two variants in a credible causal set for expression effects on CSF2RB.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, a 3 kb insertion (20290_HX1_ins) is among two variants in a credible causal set for expression effects on CSF2RB, the dysfunction of which has been associated with pulmonary disease (Suzuki et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific details about a fine-mapped locus with citation to disease association.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Individual genomes were modeled as combinations of eight ancestry components using Ohana.",
+    "claim_type": "EXPLICIT",
+    "source": "Following the precedent set by 1KGP (The 1000 Genomes Project Consortium, 2015), we modeled individual genomes as combinations of eight ancestry components, replicating known patterns of population structure at continental scales as well as prominent signatures of admixture within a subset of populations (e.g., African ancestry in Southwest US [ASW] and admixed American populations [AMR]; Figure 3A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of ancestry components used and cites the precedent.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "220 unique SVs were identified exhibiting significant deviation from genome-wide patterns of allele frequency differentiation (99.9th percentile of matched distribution for SNPs and short indels).",
+    "claim_type": "EXPLICIT",
+    "source": "Across all ancestry components, we identified 220 unique SVs exhibiting significant deviation from genome-wide patterns of allele frequency differentiation (99.9th percentile of matched distribution for SNPs and short indels; see Materials and methods; Figure 3B; Supplementary file 1; Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides the specific number of outlier SVs and the threshold used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "139 of the 220 highly differentiated SVs have coordinates overlapping with annotated genes.",
+    "claim_type": "EXPLICIT",
+    "source": "These included 139 SVs with coordinates overlapping with annotated genes, of which 13 intersected with annotated exons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts of SVs overlapping genes and exons.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "13 of the 220 highly differentiated SVs intersected with annotated exons.",
+    "claim_type": "EXPLICIT",
+    "source": "These included 139 SVs with coordinates overlapping with annotated genes, of which 13 intersected with annotated exons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts of SVs overlapping genes and exons.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Seven SVs at frequency-differentiated loci were also significant eQTLs based on analysis of Geuvadis LCL data.",
+    "claim_type": "EXPLICIT",
+    "source": "Seven SVs at these frequency-differentiated loci were also significant eQTLs based on our previous analysis of the Geuvadis LCL data (Supplementary file 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides the specific number of SVs that are both frequency-differentiated and eQTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "88 of the outlier SVs were among the top 10 most frequency-differentiated variants within a 1 Mb window.",
+    "claim_type": "EXPLICIT",
+    "source": "Through comparison to results for SNPs and indels, we found that 88 of the outlier SVs we identified were among the top 10 most frequency-differentiated variants within a 1 Mb window, suggesting that these represent examples where SVs may be causal targets of selection at adaptive loci.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides a specific count and interpretation of the finding.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The CCR5-\u039432 deletion polymorphism is the 14th most frequency-differentiated SV with respect to ancestry component 3.",
+    "claim_type": "EXPLICIT",
+    "source": "Among our results, this deletion polymorphism is the 14th most frequency-differentiated SV with respect to ancestry component 3, which is highly represented in Europe.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides the specific ranking of the CCR5-\u039432 variant.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The CCR5-\u039432 allele segregates at moderate frequencies in European populations (MAF = 10.9%) and achieves its highest frequency of 15.6% in the Finnish population.",
+    "claim_type": "EXPLICIT",
+    "source": "The CCR5-\u039432 allele segregates at moderate frequencies in European populations (MAF = 10.9%) and achieves its highest frequency of 15.6% in the Finnish population, but segregates at low frequencies elsewhere.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific allele frequencies for the CCR5-\u039432 variant.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "A 309 bp intronic insertion in TMEM131 segregates at a frequency of 63% in Finnish populations, but at a mean frequency of 24% in non-European populations.",
+    "claim_type": "EXPLICIT",
+    "source": "Our study also identified numerous novel hits, such as a 309 bp intronic insertion in TMEM131 (ancestry component 3), which segregates at a frequency of 63% in Finnish populations, but at a mean frequency of 24% in non-European populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific allele frequencies for the TMEM131 insertion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "TMEM131 encodes proteins involved in collagen cargo trafficking from the endoplasmic reticulum to the Golgi.",
+    "claim_type": "EXPLICIT",
+    "source": "This gene encodes proteins involved in collagen cargo trafficking from the endoplasmic reticulum to the Golgi (Zhang et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides functional information about TMEM131 with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "A 2.8 kb insertion in an intron of CLEC16A occurs at frequencies of 52.4%, 38.3%, and 15.4% in PEL, MXL, and CLM populations, respectively, but is rare in others (AF < 0.04).",
+    "claim_type": "EXPLICIT",
+    "source": "The insertion, which is among the strongest frequency-differentiated variants at its respective locus and segregates in LD with several SNPs and short indels (maximum r2 = 0.81; Figure 3\u2014figure supplement 3), occurs at frequencies of 52.4%, 38.3%, and 15.4%, respectively, in these three populations, but is rare in others (AF < 0.04).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific allele frequencies for the CLEC16A insertion across populations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "CLEC16A is thought to impact susceptibility to autoimmune disorders, and SNPs in this gene have been associated with diseases such as type I diabetes, multiple sclerosis, and rheumatoid arthritis.",
+    "claim_type": "EXPLICIT",
+    "source": "CLEC16A is thought to impact susceptibility to autoimmune disorders, and SNPs in this gene have been associated with diseases such as type I diabetes, multiple sclerosis, and rheumatoid arthritis (Pandey et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides functional context for CLEC16A with citation to disease associations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The CLEC16A insertion was also identified in a recent study of structural variation, which reported that it achieves high frequency in Peruvian populations.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, this same SV was also identified in a recent study of structural variation, which similarly reported that it achieves high frequency in Peruvian populations (Ebert et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a recent study that independently identified the same variant.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "A linked intronic insertion and deletion in CSNK1G1 showed frequency differentiation in South Asian populations (ancestry component 5).",
+    "claim_type": "EXPLICIT",
+    "source": "One such example from South Asian populations (ancestry component 5) involved a linked intronic insertion and deletion in the cellular growth and morphogenesis related gene CSNK1G1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a specific example of linked SVs showing frequency differentiation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The SV with the strongest evidence of local adaptation across all populations was an insertion polymorphism in an intron of IGHG4.",
+    "claim_type": "EXPLICIT",
+    "source": "The SV with the strongest evidence of local adaptation across all populations was an insertion polymorphism in an intron of IGHG4, which codes for a constant domain of the immunoglobulin heavy chain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly identifies the top hit from the selection scan.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "IGHG4 codes for a constant domain of the immunoglobulin heavy chain.",
+    "claim_type": "EXPLICIT",
+    "source": "The SV with the strongest evidence of local adaptation across all populations was an insertion polymorphism in an intron of IGHG4, which codes for a constant domain of the immunoglobulin heavy chain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides functional information about IGHG4.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The IGHG4 insertion polymorphism exhibits frequencies of 88% and 65% in CDX and KHV populations, respectively, while remaining at much lower allele frequencies in other global populations.",
+    "claim_type": "EXPLICIT",
+    "source": "This insertion polymorphism identified by our scan exhibits strong allele frequency differentiation in ancestry component 2, which is highly represented in the Chinese Dai in Xishuangbanna, China (CDX) and Kinh in Ho Chi Minh City, Vietnam (KHV) populations, where it achieves frequencies of 88% and 65%, respectively, while remaining at much lower allele frequencies in other global populations (Figure 4A,B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific allele frequencies for the IGHG4 insertion across populations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The IGHG4 insertion was originally reported as a 34 bp insertion based on long-read sequencing of the genome of a Vietnamese individual (HG02059).",
+    "claim_type": "EXPLICIT",
+    "source": "The SV was originally reported as a 34 bp insertion based on long-read sequencing of the genome of a Vietnamese individual (HG02059) (Audano et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites the original report of the variant.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Based on realignment to a modified version of the reference genome, the IGHG4 insertion sequence was revised to 33 bp.",
+    "claim_type": "EXPLICIT",
+    "source": "Based on realignment to a modified version of the reference genome that includes the alternative allele, we revised the sequence of this insertion to 33 bp, but found that it is well supported by patterns of coverage, split reads, and soft clipped alignments at the SV breakpoints (Figure 4\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the revision of the insertion size with supporting evidence.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The sequence of the IGHG4 insertion is repetitive within the human reference genome, with two identical copies occurring ~44 and ~117 kb downstream.",
+    "claim_type": "EXPLICIT",
+    "source": "The sequence of the insertion itself is repetitive within the human reference genome, with two identical copies of the sequence occurring ~44 and ~117 kb downstream, respectively, also within the IGH gene cluster.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the repetitive nature of the insertion sequence.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The second strongest signature of adaptation across all populations traced to a nearby 135 bp deletion, which overlaps with two transcription factor binding sites for IGHE.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the second strongest signature of adaptation across all populations traced to a nearby 135 bp deletion, which overlaps with two transcription factor binding sites for IGHE, another component of the constant region of immunoglobulin heavy chains.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript identifies the second strongest selection signal and provides functional context.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The 135 bp deletion lies only 33 kb upstream of the IGHG4 insertion.",
+    "claim_type": "EXPLICIT",
+    "source": "This deletion, which lies only 33 kb upstream of the IGHG4 insertion (Figure 4A), again achieves high frequencies in the CDX and KHV populations (70% and 54%, respectively) but segregates at low frequencies in most other global populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides the specific distance between the two SVs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The 135 bp deletion achieves high frequencies in the CDX and KHV populations (70% and 54%, respectively) but segregates at low frequencies in most other global populations.",
+    "claim_type": "EXPLICIT",
+    "source": "This deletion, which lies only 33 kb upstream of the IGHG4 insertion (Figure 4A), again achieves high frequencies in the CDX and KHV populations (70% and 54%, respectively) but segregates at low frequencies in most other global populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific allele frequencies for the deletion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The IGHG4 insertion and nearby deletion exhibit only modest levels of LD (r2 = 0.17).",
+    "claim_type": "EXPLICIT",
+    "source": "Despite their genomic proximity and similar patterns of frequency differentiation, these two SVs exhibit only modest levels of LD (r2 = 0.17), likely reflecting recombination occurring during or after the episode of selection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides the specific LD value and interpretation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Approximately 2% of the genome of all non-African individuals traces to admixture with Neanderthals between 47 and 65 kya.",
+    "claim_type": "EXPLICIT",
+    "source": "Approximately 2% of the genome of all non-African individuals traces to admixture with Neanderthals between 47 and 65 kya, while Oceanian populations (and Asian populations to a lesser extent) also possess sequences introgressed from Denisovans (Green et al., 2010; Sankararaman et al., 2012; Sankararaman et al., 2016; Vernot et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites established knowledge about Neanderthal introgression with multiple citations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Oceanian populations (and Asian populations to a lesser extent) possess sequences introgressed from Denisovans.",
+    "claim_type": "EXPLICIT",
+    "source": "Approximately 2% of the genome of all non-African individuals traces to admixture with Neanderthals between 47 and 65 kya, while Oceanian populations (and Asian populations to a lesser extent) also possess sequences introgressed from Denisovans (Green et al., 2010; Sankararaman et al., 2012; Sankararaman et al., 2016; Vernot et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites established knowledge about Denisovan introgression with multiple citations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Of the 220 highly differentiated SVs, 26 (12%) exhibited moderate LD (r2 > 0.5) with putative introgressed haplotypes, while simultaneously exhibiting low allele frequencies (AF < 0.01) within African populations of 1KGP.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 220 highly differentiated SVs, 26 (12%) exhibited moderate LD (r2 > 0.5) with putative introgressed haplotypes, while simultaneously exhibiting low allele frequencies (AF < 0.01) within African populations of 1KGP (Figure 4\u2014figure supplement 2; Supplementary file 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and percentages of candidate introgressed SVs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The IGHG4 insertion and nearby deletion each tag multiple putative introgressed SNPs within the CDX population.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, this set of candidate introgressed SVs included the IGHG4 insertion and nearby deletion, which, despite their low LD with one another, each tag multiple putative introgressed SNPs within the CDX population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the relationship between the SVs and introgressed SNPs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "80.7% of the sequence in the broader IGH locus was filtered out by Browning et al., 2018 through strict masking of aDNA genotypes.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, 80.7% of the sequence in the broader IGH locus was filtered out by Browning et al., 2018 through strict masking of aDNA genotypes to remove low-coverage, poorly mapping, or repeat-associated reads (Figure 4\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides a specific percentage of filtered sequence with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "A 48 bp diagnostic sequence unique to individuals with the IGHG4 insertion was identified.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we identified a 48 bp sequence that is unique to individuals with the insertion, but not observed in the reference genome (see Materials and methods), thereby facilitating rapid searches for the insertion allele in any sequencing dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the identification of a diagnostic sequence.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The diagnostic sequence for the IGHG4 insertion was absent from the Denisovan genome.",
+    "claim_type": "EXPLICIT",
+    "source": "While the diagnostic sequence was absent from the Denisovan genome, we observed one or more perfect matches in the sequences of each of three Neanderthals, which we found notable given its absence among African populations (Figure 4\u2014figure supplement 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the absence of the diagnostic sequence in the Denisovan genome.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "One or more perfect matches to the IGHG4 insertion diagnostic sequence were observed in the sequences of each of three Neanderthals.",
+    "claim_type": "EXPLICIT",
+    "source": "While the diagnostic sequence was absent from the Denisovan genome, we observed one or more perfect matches in the sequences of each of three Neanderthals, which we found notable given its absence among African populations (Figure 4\u2014figure supplement 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the presence of the diagnostic sequence in Neanderthal genomes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The Denisovan genome exhibited a modest degree of matching (39 shared alleles [42%]) with the highly differentiated SNPs at the IGH locus.",
+    "claim_type": "EXPLICIT",
+    "source": "Focusing on the 93 SNPs where archaic alleles are easily compared, we observed that the Denisovan genome exhibited a modest degree of matching (39 shared alleles [42%]), while the Altai, Vindija, and Chagyrskaya Neanderthal genomes exhibited near perfect matching over the entirety of the differentiated region (77 [83%], 88 [95%], and 89 [96%] shared alleles, respectively) (Figure 4B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and percentages of shared alleles.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The Altai, Vindija, and Chagyrskaya Neanderthal genomes exhibited near perfect matching (77 [83%], 88 [95%], and 89 [96%] shared alleles, respectively) with the highly differentiated SNPs at the IGH locus.",
+    "claim_type": "EXPLICIT",
+    "source": "Focusing on the 93 SNPs where archaic alleles are easily compared, we observed that the Denisovan genome exhibited a modest degree of matching (39 shared alleles [42%]), while the Altai, Vindija, and Chagyrskaya Neanderthal genomes exhibited near perfect matching over the entirety of the differentiated region (77 [83%], 88 [95%], and 89 [96%] shared alleles, respectively) (Figure 4B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts and percentages of shared alleles.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Of 93 highly differentiated SNPs at the IGH locus, 64 were called as introgressed in CDX by Sprime.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, of these 93 highly differentiated SNPs, 64 were called as introgressed in CDX by Sprime (Figure 4\u2014figure supplement 6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific counts of SNPs called as introgressed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The sequence at the IGH locus originated via ancient introgression from a Neanderthal population related to the Chagyrskaya and Vindija Neanderthals.",
+    "claim_type": "EXPLICIT",
+    "source": "Combined with the near absence of these alleles from other global populations and the length of the differentiated haplotype, our observations strongly support the conclusion that this sequence originated via ancient introgression from a Neanderthal population related to the Chagyrskaya and Vindija Neanderthals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript draws a conclusion based on multiple lines of evidence.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Four discrete blocks of LD were observed within the highly differentiated region at the IGH locus.",
+    "claim_type": "EXPLICIT",
+    "source": "Examination of the haplotype structure at the IGH locus revealed four discrete blocks of LD within the highly differentiated region (Figure 4\u2014figure supplement 7), consistent with substantial recombination after the original haplotype achieved high frequency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the LD structure with interpretation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The tag SNP rs150526114 at the IGH locus segregates at 91% frequency in CDX, 73% frequency in KHV, and 59% frequency in CHS, but is rare or absent in most other populations from 1KGP.",
+    "claim_type": "EXPLICIT",
+    "source": "The latter block includes the tag SNP rs150526114, where the global minor allele matches the Neanderthal genomes and segregates at 91% frequency in CDX, 73% frequency in KHV, and 59% frequency in CHS, but is rare or absent in most other populations from 1KGP.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific allele frequencies for the tag SNP across populations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The putative Neanderthal-introgressed allele at rs150526114 is absent from the HGDP populations from the Americas.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the allele is absent from the HGDP populations from the Americas, which are thought to have split from East Asian populations approximately 26 kya (Moreno-Mayar et al., 2018), further supporting the recency and geographically restricted nature of this positive selection event.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the absence of the allele in American populations with citation to divergence time.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Pairwise divergence times among East Asian populations inferred by Wang et al., 2018 constrain the plausible timing of selection at the IGH locus between approximately 60 generations (1740 years) and 400 generations (11,600 years) ago.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, pairwise divergence times among East Asian populations inferred by Wang et al., 2018 constrain the plausible timing of selection at the IGH locus between approximately 60 generations (1740 years) and 400 generations (11,600 years) ago (assuming a 29-year generation time Tremblay and V\u00e9zina, 2000): after the divergence of the Chinese Dai and Vietnamese populations from the Japanese (JPT) population, but before the divergence of CDX and KHV.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides a time range for selection based on cited divergence times and generation time.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "A strong correlation was observed between estimates of the selection coefficient and timing of selection.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed a strong correlation between estimates of the selection coefficient and timing of selection. Specifically, older, weaker selection could produce the same frequency differences as stronger and more recent selection (Figure 5G), though even the lower bound on our estimate of s places it among the strongest episodes of positive selection documented in humans.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a correlation observed in the simulation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The human IGH locus is highly polymorphic, with examples of SNPs and copy number variants exhibiting frequency differences between populations.",
+    "claim_type": "EXPLICIT",
+    "source": "The human IGH locus is highly polymorphic (Mikocziova et al., 2020), with examples of SNPs and copy number variants exhibiting frequency differences between populations (Watson et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites literature on the polymorphic nature of the IGH locus.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "In developing lymphocytes, the IGH locus undergoes somatic V(D)J recombination and hypermutation to produce antibodies that drive the immune response.",
+    "claim_type": "EXPLICIT",
+    "source": "In developing lymphocytes, this locus undergoes somatic V(D)J recombination and hypermutation to produce antibodies that drive the immune response\u2014processes that may be influenced by nearby germline variation (Watson et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the biological processes at the IGH locus with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "1KGP previously reported SNPs in several immunoglobulin genes as allele frequency outliers with respect to the CDX population.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, 1KGP previously reported SNPs in several immunoglobulin genes as allele frequency outliers with respect to the CDX population (The 1000 Genomes Project Consortium, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous findings from 1KGP.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Browning et al., 2018 noted that a Neanderthal-introgressed haplotype at the IGH locus achieves high frequencies in Eurasian populations.",
+    "claim_type": "EXPLICIT",
+    "source": "Browning et al., 2018 later noted that a Neanderthal-introgressed haplotype at the IGH locus achieves high frequencies in Eurasian populations, although they focused on a separate haplotype in the region, split by recombination, that is not specific to southeast Asia.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous findings from Browning et al., 2018.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Introgression from Neanderthals into the ancestors of Eurasian modern human populations dates to 47\u201365 kya.",
+    "claim_type": "EXPLICIT",
+    "source": "This recent onset of selection is intriguing given that introgression from Neanderthals into the ancestors of Eurasian modern human populations dates to 47\u201365 kya (Sankararaman et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites established knowledge about the timing of Neanderthal introgression.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Persisting archaic introgressed haplotypes provided a reservoir of functional variation to the ancestors of CDX and KHV that proved adaptive during a period of environmental change.",
+    "claim_type": "EXPLICIT",
+    "source": "Our findings thus suggest that persisting archaic introgressed haplotypes provided a reservoir of functional variation to the ancestors of CDX and KHV that proved adaptive during a period of environmental change, for example in response to local pathogens (Rasmussen et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes an interpretation of the findings with citation to a relevant study.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Neanderthal-introgressed sequences mediate individual outcomes of SARS-CoV-2 infections.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent reports that Neanderthal-introgressed sequences mediate individual outcomes of SARS-CoV-2 infections to this day lend plausibility to this hypothesis (Zeberg and P\u00e4\u00e4bo, 2021; Zeberg and P\u00e4\u00e4bo, 2020; Zhou et al., 2021), as does polygenic evidence of adaptation in response to ancient viral epidemics, including in East Asia (Souilmi et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites recent studies on Neanderthal introgression and COVID-19.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The delayed onset of selection inferred in this study is consistent with recent evidence of time lags between introgression and adaptation favoring other Neanderthal-introgressed alleles.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the delayed onset of selection inferred in our study is consistent with recent evidence of time lags between introgression and adaptation favoring other Neanderthal-introgressed alleles (Yair et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites recent evidence supporting the interpretation of delayed selection.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The selection coefficient for the IGH haplotype (0.02\u20130.12) is comparable to other episodes of strong selection in humans, including lactase persistence mutations near LCT (0.01\u20130.15) and malaria resistance mutations affecting DARC (0.08) and HBB (0.1).",
+    "claim_type": "EXPLICIT",
+    "source": "Our simulations additionally demonstrated that a selection coefficient between 0.02 and 0.12 best explains the observed frequency differences, comparable to other episodes of strong selection in humans. These include examples such as lactase persistence mutations near LCT (0.01\u20130.15) (Bersaglieri et al., 2004) and malaria resistance mutations affecting DARC (0.08) (Hamid et al., 2021) and HBB (0.1) (Elguero et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript compares the inferred selection coefficient to other known examples with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "SVs impact more total sequence per genome than SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "SVs impact more total sequence per genome than SNPs and may severely disrupt genes and regulatory elements to confer large effects on gene expression (Chiang et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a general property of SVs with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "SVs may severely disrupt genes and regulatory elements to confer large effects on gene expression.",
+    "claim_type": "EXPLICIT",
+    "source": "SVs impact more total sequence per genome than SNPs and may severely disrupt genes and regulatory elements to confer large effects on gene expression (Chiang et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a general property of SVs with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Short-read approaches to SV discovery achieve sensitivity of only 10\u201350%.",
+    "claim_type": "EXPLICIT",
+    "source": "Short-read approaches to SV discovery depend on abnormalities in depth of coverage or other characteristics of read alignments (Kosugi et al., 2019) but achieve sensitivity of only 10\u201350% (Chaisson et al., 2019; Jakubosky et al., 2020b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites literature on the limitations of short-read SV discovery.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Long-read sequencing achieves high sensitivity and specificity for SV discovery by spanning SV sequences and their unique flanking regions.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the recent development of long-read sequencing methods has revolutionized SV discovery, achieving high sensitivity and specificity by spanning SV sequences and their unique flanking regions (Sedlazeck et al., 2018a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the advantages of long-read sequencing with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Rapid global dispersal and cultural evolution have exposed modern humans to a striking diversity of environments, to which they have developed numerous genetic adaptations.",
+    "claim_type": "EXPLICIT",
+    "source": "Rapid global dispersal and cultural evolution have exposed modern humans to a striking diversity of environments, to which they have developed numerous genetic adaptations (Fan et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states established knowledge about human adaptation with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The vast majority of genomic research on human adaptation has focused on single-nucleotide polymorphisms (SNPs) and short insertions and deletions (indels).",
+    "claim_type": "EXPLICIT",
+    "source": "The vast majority of genomic research on human adaptation has focused on single-nucleotide polymorphisms (SNPs) and short insertions and deletions (indels) due to their ease of discovery by high-throughput short-read DNA sequencing (e.g., The 1000 Genomes Project Consortium, 2015; The International HapMap Consortium, 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the historical focus of adaptation research with citations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Paragraph consistently attains the best balance of precision and recall for both insertions and deletions among both graph-based and non-graph-based SV genotyping tools.",
+    "claim_type": "EXPLICIT",
+    "source": "Results from benchmarking, using ground truth SV data from the Genome in a Bottle Consortium (Zook et al., 2020), show that among both graph-based and non-graph-based SV genotyping tools, Paragraph consistently attains the best balance of precision and recall for both insertions and deletions (Chen et al., 2019; Hickey et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites benchmarking studies comparing SV genotyping tools.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Paragraph achieves an average precision and recall of 0.86 and 0.79 when repeat regions are excluded.",
+    "claim_type": "EXPLICIT",
+    "source": "Paragraph averages precision and recall rates of 0.72 and 0.70, respectively, across all SV types and genomic regions, and an average precision and recall of 0.86 and 0.79 when repeat regions are excluded (Hickey et al., 2020), underscoring its effectiveness for SV genotyping.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific performance metrics for Paragraph with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Immune-related genes are common targets of local adaptation in human populations.",
+    "claim_type": "EXPLICIT",
+    "source": "While the precise phenotypic impacts of these variants remain unknown (Figure 5\u2014figure supplement 2), their potential effects on adaptive immunity is intriguing given the established role of immune-related genes as common targets of local adaptation in human populations (Barreiro and Quintana-Murci, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites established knowledge about immune genes and adaptation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Collagen is the most abundant protein in the human body and the major component of human skin.",
+    "claim_type": "EXPLICIT",
+    "source": "Collagen is the most abundant protein in the human body and the major component of human skin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states general biological knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Recurrent positive selection shaping skin pigmentation and other phenotypes is one of the best described examples of local adaptation across human populations.",
+    "claim_type": "EXPLICIT",
+    "source": "Recurrent positive selection shaping skin pigmentation and other phenotypes is one of the best described examples of local adaptation across human populations (Crawford et al., 2017; Jablonski, 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites established knowledge about skin pigmentation adaptation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  }
+]

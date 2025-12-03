@@ -1,0 +1,607 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The vast majority (~94%) of public protein-ligand crystal structures in the PDB were determined at cryogenic temperature (\u2264200 K), while only ~6% were determined at elevated temperatures (>200 K). Of ~150,000 total structures, ~122,000 (~81%) contain a non-polymer ligand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide specific statistics about the PDB that are verifiable and cited (C1 cites Berman et al., 2000). The percentages are internally consistent and establish the context for why RT crystallography is underexplored. These are descriptive statistics that can be independently verified from the PDB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C132"
+    ],
+    "result": "Cryo crystallography distorts protein conformational ensembles, while room-temperature crystallography reveals distinct conformational heterogeneity that better aligns with solution data and is more relevant to biological function in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C132 are well-supported by multiple citations to prior work (Keedy et al., 2014; Fraser et al., 2009, 2011; Fenwick et al., 2014; Keedy et al., 2015). This establishes the scientific rationale for the current study. The claims accurately represent findings from the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Previous studies on individual compounds or small sets showed that RT crystallography can result in shifted binding poses, binding at different sites, changes in crystal symmetry, and degraded utility for computational docking and binding free energy calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are supported by appropriate citations to prior work (Maeki et al., 2020; Bradford et al., 2021; Gildea et al., 2021; Milano et al., 2022; Fischer et al., 2015). These claims accurately summarize the state of the field and provide context for the current study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "PTP1B is a highly validated therapeutic target for diabetes, cancer, and neurological disorders, but has been deemed 'undruggable'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by appropriate citations (Elchebly et al., 1999; Krishnan et al., 2014, 2015; Zhang, 2017; Mullard, 2018). These claims establish the biological and therapeutic importance of the protein studied and are consistent with the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "A previous cryo fragment screen of PTP1B identified 110 fragments at 12 binding sites from 1627 datasets. Two of the top three hotspots were validated with allosteric inhibitors, highlighting fragment screening as valuable for discovering allosteric sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 accurately describe prior work (Keedy et al., 2018; Wiesmann et al., 2004; Krojer et al., 2020) and provide essential context for the current study. The specific numbers and validation examples are verifiable from the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "All previously reported crystallographic fragment screens were conducted at cryo temperature. This study uses 143 unique ligands (4-5\u00d7 more than previous RT studies) in two complementary RT screens with different data collection approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 establish the novelty and scope of the current work. C20 provides specific numbers (143 ligands, 4-5\u00d7 comparison) that are verifiable from the manuscript. C21 describes the experimental design, which is detailed in the methods. The claim about all previous screens being at cryo (C19) is a strong statement but appears to be based on thorough literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Both RT screens achieved high resolution (2.30 \u00c5 for 1-xtal, 1.99 \u00c5 for in situ) comparable to the previous cryo screen (2.10 \u00c5). The slightly lower resolution of 1-xtal data may be due to radiation damage, which was largely avoided by the in situ strategy. Results were broadly similar between screens, suggesting radiation damage was not a major factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 are supported by specific data (resolution values, Figure 1) and logical reasoning. The comparison between screens (C37-C39) and visual inspection for radiation damage (C40) provide evidence that data quality is sufficient. The speculation about radiation damage (C35) is appropriately qualified and supported by the in situ comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Initial automated PanDDA hit rates were low (32% for 1-xtal, 15% for in situ). Manual generation of RT event maps identified 5 additional hits. Pre-clustering of in situ wedges using cluster4x identified 5 more hits, bringing final hit rates to 39% for 1-xtal and 29% for in situ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 provide specific hit rates and describe the computational analysis pipeline. The numbers are internally consistent and the methods are described in detail. The use of multiple approaches (automated, manual, pre-clustering) to identify hits is methodologically sound and increases confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C49",
+      "C50",
+      "C117",
+      "C122"
+    ],
+    "result": "In both RT fragment screens, fewer fragments bind compared to cryo (29-39% of cryo-hits), and fragments bind on average more weakly with lower occupancy at RT. This trend holds for fragments binding with the same or new poses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C49-C50, C117, and C122 are supported by specific data (hit rates, Figure 2) and are consistent across both RT screens. The lower occupancy trend is quantified using 1-BDC values as a proxy. This is a major finding that challenges the assumption that cryo structures accurately represent physiological binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Between the two RT screens, there are 29 RT binding events distributed throughout PTP1B, including the active site and all three allosteric sites (197, BB, L16). Many sites have hits in both screens, and in all four key sites, one or more fragments bind differently from cryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by specific counts (29 events) and visual evidence (Figure 3, Figure 3\u2014figure supplement 1). The distribution across multiple sites and consistency between screens strengthens the conclusions. This demonstrates that temperature effects are widespread, not isolated to specific sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Most cryo-hits that bind at RT do so with a similar pose (9 cases for 1-xtal, 7 for in situ). All three fragments with binding events in both RT screens bind similarly in both, suggesting RT results are reproducible and reliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by specific counts and visual evidence (Figure 4, Table 2, Figure 4\u2014figure supplement 4). The reproducibility across screens (C56-C57) is important for establishing confidence in the RT data. However, the inference of reliability (C57) is based on only 3 overlapping fragments, which is a small sample.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In some cases, clear event map density is present for water molecules at RT but not at cryo, or vice versa. Even when ligand binding is similar, the solvation layer around the ligand can change between cryo and RT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by visual evidence from electron density maps (Figure 4C, Figure 4\u2014figure supplement 5). The observation that solvation differs even when ligand poses are similar (C60) is an important finding for understanding protein-ligand interactions and drug design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A fragment binds in the allosteric L16 site with the central ring in the same position at RT vs. cryo, but with substantially different positions for the two substituent groups. The RT and cryo densities are incompatible with each other's models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by clear visual evidence (Figure 5) showing distinct electron density for different substituent positions. This is a striking example of temperature-dependent conformational changes within the same binding site. The L16 site was previously highlighted as promising for drug design (C63, citing Keedy et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A fragment exhibits alternate ligand conformations that coexist in the same site, but only at one temperature. At RT, the carbonyl points toward Arg238, while at cryo, both this conformation and a 180\u00b0 flipped conformation are present. This demonstrates temperature-dependent ligand conformational heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by visual evidence (Figure 6) showing different conformations in RT vs. cryo event maps. The observation of temperature-dependent conformational heterogeneity (C69) is well-supported and represents an important finding for understanding ligand binding and for improving structural modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "For two related fragments, the RT event density shows the longer substituent well-ordered and pointed underneath the closed WPD loop. At cryo, the loop still closes but the longer substituent protrudes toward solution, and in one case a new water molecule displaces the RT ligand pose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by visual evidence (Figure 7A and B) showing distinct binding modes at RT vs. cryo. The observation that the WPD loop closes in both cases but accommodates different ligand conformations is important for understanding protein flexibility and ligand binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Temperature can modulate what protein site a ligand binds to. A fragment binds to the allosteric BB site at cryo but ~40 \u00c5 away at RT. The RT protein conformation supports the new binding site but would clash with the cryo pose at the BB site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by visual evidence (Figure 8A-C) showing binding at completely different sites. The large distance (~40 \u00c5) and structural analysis of protein conformations (C75-C76) provide strong evidence for temperature-dependent site selection. This is a dramatic example of temperature effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "At cryo, a fragment binds with an artifactual stacking arrangement of three copies, but at RT there is no density for this stacking. Instead, new density appears at a distal site >45 \u00c5 away. This is the only case where a fragment binds at RT to a new site not previously thought to bind fragments at cryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are supported by visual evidence (Figure 8D-F) and citations (Ginn, 2020; PDB ID 4y14). The disappearance of artifactual stacking at RT (C77-C78) and appearance of binding at a new site (C79-C82) demonstrate that temperature can reveal more physiologically relevant binding modes. The uniqueness of this case (C82) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A fragment bound at cryo with a two-copy stacking arrangement. At RT, one copy remains bound (the more ordered one at cryo), while the more weakly bound copy is displaced. This demonstrates that elevated temperature can selectively displace weaker binding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by visual evidence (Figure 8\u2014figure supplement 1) and logical reasoning about relative binding strengths. This example illustrates how RT crystallography can help distinguish stronger from weaker binding events, which is valuable for drug design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A fragment that bound at three distal sites at cryo binds to only one of these sites at RT (in a nearly identical pose), plus an additional new site >40 \u00c5 away from any cryo site. No binding was detectable at the new site at cryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by visual evidence (Figure 8\u2014figure supplement 2) showing complex temperature-dependent binding patterns. This example demonstrates that temperature can both eliminate some binding sites and reveal new ones, highlighting the complexity of protein-ligand energy landscapes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "An isatin-based fragment binds covalently to lysines at both the allosteric 197 site (Lys197) and L16 site (Lys237) only at RT, not at cryo. At the 197 site, the pose is strikingly similar to a previously reported K197C-tethered inhibitor, and the P loop adopts new conformations similar to those seen with Cys215 oxidation. This fragment is the only cryo-non-hit to bind in either RT screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C104 are supported by visual evidence (Figure 9) and citations (Keedy et al., 2018; van Montfort et al., 2003). The covalent binding to lysines is clearly shown in electron density maps (C92). The similarity to the K197C inhibitor (C94) and the unique status as a cryo-non-hit (C98-C99) make this a particularly important finding. The speculation about insufficient soaking or chemical changes (C101-C102) is appropriately qualified. The potential for drug development (C104) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Temperature affects not only fragment binding but also the protein's conformational response. Protein conformational responses are preferentially localized to key allosteric sites. At RT, two fragments in the L16 site affect \u03b16 helix position similarly to cryo, even when one fragment exhibits a 180\u00b0 pose flip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are supported by visual evidence (Figure 10\u2014video 1, Figure 5) and citations to prior work (Keedy et al., 2018). The observation that protein responses are similar despite ligand pose changes (C109) is surprising and important for understanding allostery. This demonstrates that temperature effects extend beyond ligand binding to protein conformational dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "In the allosteric BB site, although a fragment binds in the same pose at RT and cryo, an entire additional helical turn of \u03b16 is ordered at RT. This illustrates that temperature can modulate not only positions but also relative order vs. disorder of protein structural elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by visual evidence (Figure 10) showing differential ordering of the \u03b16 helix. This is an important observation that temperature affects not just static structures but also the balance between order and disorder, which is relevant for understanding protein dynamics and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C138"
+    ],
+    "result": "A fragment binds in the 197 site with a similar pose at cryo and RT. At cryo, the protein remains in its default open state, but at RT, the L16 site closes completely and the WPD loop partially closes (~50%). This demonstrates distinct protein conformational redistributions at RT and contrasts with the previous paradigm of precise conformational coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 and C138 are supported by visual evidence (Figure 11) and citations (Keedy et al., 2018). The observation of partial WPD loop closing (C114, C138) is particularly important as it challenges the previous model of precise coupling between allosteric sites and the active site. This adds nuance to understanding of allosteric mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The difference in binding rates between cryo and RT (29-39% of cryo-hits bind at RT) is predominantly due to temperature, not experimental variability. Evidence includes: similar hit rates between the two RT screens performed differently; monitoring of soaking logs; fragments binding at different sites confirming proper soaking; and lower occupancies at RT even when fragments bind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 provide multiple lines of evidence that the observed differences are due to temperature rather than experimental artifacts. The logic is sound and the evidence is compelling. This is important for establishing that the RT data represent genuine temperature effects rather than technical issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Recent studies showed that 0 of 9 and 5 of 30 cryo-hit ligands bound at RT, and lower occupancies were seen at RT than at cryo for <10 ligands. These findings are in accord with the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 accurately cite prior work (Guven et al., 2021; Gildea et al., 2021; Bradford et al., 2021) showing similar trends. This places the current findings in the context of emerging literature on temperature effects in crystallography.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "After crystal soaking at ambient temperature, all cryo-hit fragments are initially bound but many only loosely with high B-factors that render them invisible at RT. During cryocooling, ligand B-factors drop rapidly, making many fragments observable in cryo density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C128 are explicitly speculative (\"We speculate...\") and propose a mechanism for the observed temperature effects. While the speculation is reasonable and cites relevant work (Halle, 2004), it is not directly tested in this study. Additional experiments would be needed to confirm this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "Fragments that bind at both cryo and RT but with different poses or sites have similar molecular weights and rotatable bonds, yet are more hydrophobic and have more interactions with the binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 is supported by data analysis (Table 2\u2014source data 2) comparing chemical properties of fragments in different categories. This provides insight into what chemical features may be associated with temperature-dependent binding differences, though the sample size is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Additional experiments are planned using mechanically controlled variable cryocooling rate and variable crystal size to interrogate the relationship between temperature, cooling kinetics, and protein-ligand conformational ensembles. Future studies can explore whether conclusions for fragments extrapolate to larger ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C131 describe planned future work and acknowledge limitations of the current study. These are appropriate statements about future directions but do not represent results from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "No work has examined replicates of many fragment-soaked cryo structures to establish the impact of crystal variability on fragment binding details. One study with different crystal forms showed most fragments did not bind in both forms. The PanDDA algorithm seeks to overcome dataset variability by averaging. Future studies on fragment reproducibility at cryo would be useful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 accurately describe gaps in the literature (C133) and cite relevant work (Schuller et al., 2021; Cole et al., 2014). The discussion of PanDDA (C136) is accurate. The recommendation for future work (C137) is reasonable. This provides important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Similar decoupling of the WPD loop and allosteric sites was seen with serial synchrotron crystallography of apo PTP1B. RT crystallography can add important nuance to understanding of allosteric mechanisms in PTPs and other proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 cite recent supporting work (Sharma et al., 2023) and related studies on PTPs (Choy et al., 2017; Cui et al., 2017; Hjortness et al., 2018). The inference about adding nuance (C140) is well-supported by the data presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "New fragment conformations in the L16 site offer unique footholds for allosteric inhibitor design. A new RT fragment-binding site corresponds to an allosteric site in SHP2 that has been successfully targeted. The covalent binding to Lys197 opens doors to design covalent allosteric inhibitors for WT PTP1B. These findings have implications for drug design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C147 draw reasonable inferences from the structural data for drug design applications. The citations to successful inhibitors in related systems (Wiesmann et al., 2004; Chen et al., 2016; LaRochelle et al., 2018; Miller et al., 2013; Resnick et al., 2019) support the potential for translation. However, these are prospective applications that would require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "RT fragments are bound in all three previously reported allosteric sites (BB, 197, L16) and the active site. In all four sites, fragments adopt different poses at RT vs. cryo or bind only at RT. These novel poses offer promising routes for fragment-based drug design through growing or de novo design strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C155 summarize the distribution of RT hits and their implications for drug design. The data support the presence of fragments in all key sites (C148-C151) with appropriate citations. The drug design strategies (C153-C155) are reasonable applications of the findings, though speculative about future success.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "A fragment binds at RT to the N-terminal \u03b11'-\u03b12' helical bundle, corresponding to an allosteric site in SHP2. This site was not bound by fragments in the previous cryo screen, making it a potentially valuable starting point for exploring allosteric capabilities of this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 are supported by the data and appropriate citations (Chen et al., 2016; LaRochelle et al., 2018; Keedy et al., 2018). The identification of a new binding site at RT that was not detected at cryo is an important finding. The potential value for drug design (C158) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "AI/ML methods for protein structure prediction and drug design rely on training data from the PDB, which is predominantly cryo structures. This likely introduces biases favoring well-packed states and overweighting enthalpic considerations. RT structures could ameliorate these limitations, but the current study is insufficient to explore this, and it remains unclear how useful fragments are for training AI/ML methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C166 raise important questions about AI/ML training data biases. The observation that PDB is predominantly cryo structures (C159) is accurate. The inferences about potential biases (C160-C161) are reasonable. The acknowledgment of limitations (C164-C165) and the statement that findings prompt important questions (C166) are appropriate. This is thoughtful discussion of broader implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "This work highlights the value and accessibility of RT crystallographic ligand screening for providing unique insights into protein-ligand interactions, particularly for allosteric sites. It speaks to the potential of multitemperature crystallography for elucidating connections between structure, heterogeneity, and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 are well-supported by the extensive data presented in the manuscript. The work demonstrates the feasibility and value of RT fragment screening at scale. The citations to related work on multitemperature crystallography (Doukov et al., 2020; Otten et al., 2020; Ebrahim et al., 2022; Keedy, 2019) place this in a broader context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The vast body of existing cryo-temperature protein-ligand structures may provide an incomplete picture. RT crystallography has the potential to reveal distinct conformational modes of protein-ligand systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are well-supported by the extensive evidence of temperature-dependent differences in binding poses, sites, occupancies, and protein conformational responses presented throughout the manuscript. This is a major conclusion of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "A fragment binds covalently to a key lysine (Lys197) in the allosteric 197 site, providing an intriguing new foothold for allosteric inhibitor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by the structural data (Figure 9) showing covalent binding. The significance for drug development (C29) is a reasonable inference given the prior validation of this site with a K197C-tethered inhibitor. This is covered in more detail in the result for claims C91-C104.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The study used the same PTP1B construct as previously (residues 1-321, WT* with C32S/C92V mutations). Fragments were selected from multiple libraries (Maybridge, Edelris, DSPL/DSiP) including 59/48 cryo-hits and 51/50 cryo-non-hits for the two screens. Similarity was assessed using Tanimoto scores from RDKit topological fingerprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C176 describe the experimental design and materials. These are straightforward methodological details that are verifiable and appropriately cited (Keedy et al., 2018; Cox et al., 2016). The use of the same construct ensures comparability with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Predicted radiation doses were ~0.03-0.04 MGy for in situ (well below the RT limit of ~0.4 MGy) and ~3.2-7.4 MGy for 1-xtal (above the RT limit but below the cryo limit of ~20-30 MGy). Radiation damage in 1-xtal data was ameliorated by cutting later frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C180 provide specific dose calculations from RADDOSE-3D and compare them to published limits (Fischer, 2021; Owen et al., 2006). The acknowledgment that 1-xtal data exceed the RT limit (C180) is important for transparency. The mitigation strategy of cutting frames is described. Combined with the evidence that results are similar between screens (claims C37-C40), this suggests radiation damage did not significantly affect conclusions.",
+    "result_type": "MINOR"
+  }
+]

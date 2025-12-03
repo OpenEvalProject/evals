@@ -1,0 +1,680 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "At E50, marmoset primordial germ cells (cjPGCs) are predominantly localized in the ventral hindgut endoderm, exhibit characteristic morphology (round nuclei with lower DAPI intensity), are mostly non-proliferative (MKI67-), express pluripotency markers (POU5F1, NANOG) but not SOX2, and lack late germ cell markers (DDX4, DAZL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by immunofluorescence imaging data (Figures 1B-E) showing marker expression patterns, localization, and quantification. The morphological and molecular characterization is consistent across multiple markers and provides converging evidence for the pre-migratory state of these cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "E50 cjPGCs show epigenetic reprogramming characteristic of germline development, with increased H3K27me3 and reduced H3K9me2 levels, consistent with patterns observed in mice, cynomolgus monkeys, and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by quantitative immunofluorescence data (Figure 1F) showing statistically significant differences in histone modification levels between cjPGCs and surrounding somatic cells. The comparison to other species is appropriately supported by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Single-cell RNA-sequencing of E50 embryos identified a cjPGC cluster (34,458 cells total) expressing germ cell specifier genes (DND1, KIT, PRDM1, SOX15, SOX17, TFAP2C), pluripotency genes (DPPA3, KLF4, NANOG, POU5F1, TFCP2L1, UTF1, ZFP42), and mesoderm/endoderm genes (GATA4, TBXT), with enrichment for 'germ cell development' GO terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 are supported by comprehensive scRNA-seq analysis with appropriate quality control (Figure 1\u2014figure supplement 1D-I), UMAP clustering (Figure 2A), and differential gene expression analysis (Figure 2B-E). The identification of the cjPGC cluster is validated by multiple known markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "E50 cjPGCs lack SOX2 expression and show only weak PRDM14 expression, a feature conserved with other primates (humans and cynomolgus monkeys) but distinct from mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by both immunofluorescence (Figure 1\u2014figure supplement 1B) and scRNA-seq data (Figure 2E), with appropriate citations to prior studies in humans and cynomolgus monkeys establishing this as a primate-specific feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "E50 cjPGCs are largely quiescent, as evidenced by low expression of proliferation markers and low MKI67 labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by converging evidence from immunofluorescence (Figure 1D showing 2/33 MKI67+ cells) and scRNA-seq data (Figure 1\u2014figure supplement 1J). The inference of quiescence is reasonable given the low proliferation marker expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "E50 cjPGCs do not express gonadal stage markers (DAZL, DDX4, RNF17), consistent with their pre-migratory state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by both immunofluorescence (Figure 1E) and scRNA-seq data (Figure 2E) showing absence of these markers. The interpretation as pre-migratory is appropriately supported by citations to prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "E50 cjPGCs express low levels of H3K9me2 deposition enzymes (EHMT2, SUV39H1, SUV39H2) but express H3K9 demethylases (KDM1A/3A/3B/4A), and express H3K27me3 deposition enzymes (EED, EZH2, SUZ12) with low EZH1, consistent with patterns in human and cynomolgus monkey PGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are supported by scRNA-seq expression data (Figure 2E) and appropriately contextualized with citations to prior studies. The expression patterns are consistent with the observed histone modification levels (C9-C10).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "E50 cjPGCs show high TET1 expression with low TET2/TET3, modest DNMT1/DNMT3A expression, and markedly lower UHRF1/DNMT3L/DNMT3B expression, suggesting passive demethylation may be operative due to diminished UHRF1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C33 are supported by scRNA-seq data (Figure 2E), but C34 is speculative. While the expression pattern is consistent with passive demethylation, direct evidence of demethylation dynamics is not provided. The inference relies on prior studies in other species, but functional validation in marmoset is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Three cjiPSC lines were established from PBMCs, with whole-exome sequencing confirming origin from the intended donor despite frequent hematological chimerism in marmosets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by exome sequencing data (Figure 3\u2014figure supplement 1A-B) showing high identity (98.6%) between stem cell lines and parental DNA, with no evidence of chimerism. The quality control is appropriate and addresses a known concern in marmoset biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Feeder-free (FF) cjiPSCs can be stably maintained for >20 passages with characteristic primed-state morphology, normal 46,XY karyotypes, are mycoplasma-free, and uniformly express pluripotency markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by multiple quality control assays including morphological assessment (Figure 3\u2014figure supplement 1C), mycoplasma testing (Figure 3\u2014figure supplement 1D), karyotyping (Figure 3\u2014figure supplement 1E), and immunofluorescence/qPCR for pluripotency markers (Figure 3\u2014figure supplement 1F-G). The characterization is thorough and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "On-feeder (OF) cjiPSCs tend to differentiate 4-5 days after passaging, require clump passaging (single-cell passaging decreases colony formation), and show modest upregulation of mesodermal and endodermal genes compared to FF cjiPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by morphological assessment (Figure 3\u2014figure supplement 2A-B), colony formation efficiency data (Figure 3\u2014figure supplement 2C), and qPCR data (Figure 3\u2014figure supplement 2D). The evidence demonstrates clear differences between culture conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "WNT inhibition with IWR1 in OF culture (OF/IWR1) maintains undifferentiated morphology, suppresses mesoderm/endoderm genes, allows efficient single-cell passaging, and increases SSEA3/SSEA4 expression, with PluriSTEM medium showing greater effects than conventional medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by morphological data (Figure 3\u2014figure supplement 2E), qPCR (Figure 3\u2014figure supplement 2F), colony formation efficiency (Figure 3\u2014figure supplement 2C), and flow cytometry (Figure 3\u2014figure supplement 2G-H). The comparison between media conditions is appropriate, though the proprietary nature of PluriSTEM limits mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "A trilineage differentiation assay confirmed cjiPSCs can differentiate into all three germ layers regardless of culture condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by embryoid body formation (Figure 3\u2014figure supplement 2I) and qPCR showing expression of markers for all three germ layers (Figure 3\u2014figure supplement 2J). This is a standard validation assay for pluripotency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "FF cjiPSCs treated with PGCLC induction cocktail formed cystic aggregates and did not generate SOX17+TFAP2C+ cjPGCLCs, suggesting they may lack germline competency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by morphological and immunofluorescence data (Figure 3\u2014figure supplement 3A-B). However, C55 is somewhat speculative\u2014the failure to generate PGCLCs under one set of conditions doesn't definitively prove lack of germline competency, as alternative protocols might succeed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "OF cjiPSCs generated ~3-4% PDPN+ITGA6weak+ cells starting at d4 of PGCLC induction (declining thereafter), with small clusters expressing cjPGC markers (TFAP2C, SOX17, PRDM1, NANOG, POU5F1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by FACS analysis (Figure 3\u2014figure supplement 3C-D), immunofluorescence (Figure 3\u2014figure supplement 3E), and qPCR (Figure 3\u2014figure supplement 3F). The data demonstrate modest PGCLC induction efficiency from OF cjiPSCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "OF/IWR1 cjiPSCs formed tighter, more uniform aggregates and showed significantly improved PGCLC induction efficiency (~15-40% PDPN+ITGA6weak+ at d4/d6, ~600 cells/aggregate), with large clusters uniformly expressing early germ cell markers, suggesting PDPN is a highly specific surface marker for cjPGCLC isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are well-supported by morphological data (Figure 3B), FACS analysis (Figure 3C, Figure 3\u2014figure supplement 3G-H), and immunofluorescence (Figure 3D). The improvement in efficiency is substantial and reproducible. C63 is a reasonable inference given the uniform co-expression of PDPN with other germ cell markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Isolated PDPN+ cjPGCLCs express pluripotency genes (POU5F1, NANOG), PGC specifier genes (SOX17, TFAP2C, PRDM1, NANOS3), lack SOX2 and late germ cell markers (DDX4, DAZL), with features similar to pre-migratory PGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by qPCR data (Figure 3E) showing appropriate gene expression patterns. The comparison to pre-migratory PGCs (C66) is appropriately supported by reference to earlier characterization (Figures 1D, 2E) and prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Sorted d6 PDPN+ cjPGCLCs cultured on STO feeders formed loosely arranged clusters that became confluent by c10, expressed early cjPGC markers but not late markers (DDX4, DAZL), suggesting they retain the cjPGCLC state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by morphological data (Figure 4B), FACS (Figure 4C), immunofluorescence (Figure 4D), and qPCR (Figure 4E). The inference that cells retain the PGCLC state (C70) is reasonable given the marker expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Expansion cultured cjPGCLCs can be passaged every ~10 days by FACS of PDPN+ cells and exhibit exponential growth for at least 30 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by FACS data (Figure 4F) and growth curve analysis (Figure 4G) showing exponential increase in cell numbers. This demonstrates scalability of the culture system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "During 30 days of expansion culture, DPPA3 and ITGA6 showed modest upregulation, with DPPA3 upregulation similar to human PGCLCs under expansion culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by qPCR data (Figure 4H) showing temporal expression changes. The comparison to human PGCLCs is appropriate, though the citation could be more explicit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In xenogeneic reconstituted testis (xrTestis) culture, cjPGCLCs formed tight aggregates by day 2, developed testicular cords with NR2F2+ interstitial cells by day 15 with TFAP2C+POU5F1+NANOG+ cjPGCLCs peripheral to SOX9+ Sertoli cells, and showed prominent TFAP2C+ germ cell proliferation by day 30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by morphological data (Figure 5B) and immunofluorescence (Figure 5C) showing progressive organization and proliferation. The data demonstrate integration into a testicular niche.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "At day 30 of xrTestis culture, a few scattered DAZL+DDX4+SOX17+POU5F1+TFAP2C+SOX2- cells (3.3% DDX4+TFAP2C+, 0.86% DAZL+TFAP2C+) were found, suggesting progression to early prospermatogonia and demonstrating that cjPGCLCs can integrate in the testicular niche and undergo further expansion and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by immunofluorescence data (Figure 5D) with quantification. However, the low frequency of differentiated cells (3.3% and 0.86%) suggests limited progression. The inference of early prospermatogonia (C79) is reasonable given the marker expression pattern and citation to prior work, though functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Bulk RNA-seq unsupervised hierarchical clustering classified cells into two main clusters (FF/FF/IWR1/OF cjiPSCs vs. cjPGCLCs/OF/IWR1 cjiPSCs), with no significant gene expression differences between FF and FF/IWR1 cjiPSCs, suggesting IWR1 does not significantly alter FF cjiPSC properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by hierarchical clustering (Figure 6A), Pearson correlation (Figure 6B), PCA (Figure 6C), and scatter plot analysis (Figure 6\u2014figure supplement 1B). The inference that IWR1 doesn't alter FF cjiPSCs is reasonable given the high correlation (r\u00b2=0.9981) and lack of DEGs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "OF and OF/IWR1 cjiPSCs positioned closer to cjPGCLCs in PC space, with OF/IWR1 closest to d2 cjPGCLCs, consistent with their higher germline competency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by PCA analysis (Figure 6C). The correlation between transcriptomic similarity and differentiation competency (C85) is a reasonable inference, though the causal relationship is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "OF/IWR1 cjiPSCs show primed-state pluripotency gene expression signatures similar to FF/OF cjiPSCs, with modest upregulation of TFAP2C and PRDM14 that might contribute to high germline competency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by heatmap analysis (Figure 6\u2014figure supplement 1C) and citation to prior work defining primed-state markers. However, C87 is speculative\u2014the modest upregulation of TFAP2C/PRDM14 is observed, but the causal link to germline competency is not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Genes upregulated in the transition from FF to OF/OF/IWR1 cjiPSCs were enriched for 'protein destabilization' and 'ubiquitin-dependent protein catabolic process' GO terms, with sustained expression until d2 cjPGCLCs, suggesting UPS-mediated protein turnover might confer a permissive environment for cjPGCLC specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 are supported by differential expression analysis and GO enrichment (Figure 6\u2014figure supplement 1D-F). However, C89 is speculative\u2014while the correlation between UPS gene expression and germline competency is observed, causality is not established. Functional validation (e.g., UPS inhibition experiments) would be needed to support this mechanistic claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Gene clustering analysis identified four major patterns during cjPGCLC differentiation: cluster 1 (pluripotency genes downregulated, enriched for 'stem cell maintenance'), cluster 2 (germ cell genes upregulated, enriched for 'germ cell development' and epigenetic remodeling terms), cluster 3 (expansion culture-specific, enriched for 'oxidative stress response'), and cluster 4 (transiently upregulated mesoderm/endoderm genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by clustering analysis and GO enrichment (Figure 6D). The interpretation of cluster 2 GO terms as reflecting epigenetic remodeling (C92) is reasonable given established knowledge of PGC development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Cluster 3 genes upregulated in expansion culture were enriched for 'response to oxidative stress', which might suggest culture adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is speculative. While the GO enrichment is observed, the interpretation as culture adaptation is not validated. Alternative explanations (e.g., developmental progression, metabolic changes) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Cluster 4 genes transiently upregulated at d2 included mesoderm/endoderm markers (EOMES, HAND1, MESP1, MIXL1, NODAL, SNAL1) enriched for 'mesoderm formation' and 'BMP response' GO terms, suggesting cjPGCLC induction is transiently accompanied by somatic programs as observed in other primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by clustering analysis, GO enrichment (Figure 6D), and expression plots (Figure 6E-F). The comparison to other primates is appropriately supported by citations to prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "During cjPGCLC induction, key germ cell specifier genes (SOX17, TFAP2C, PRDM1, NANOS3) increase and SOX2 is downregulated at d2; TBXT continues expression after d2 (similar to humans, unlike mice); DDX4 and DAZL are not expressed, consistent with pre-migratory cjPGCs at E50.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by expression dynamics plots (Figure 6G, Figure 6\u2014figure supplement 2) and comparison to prior characterization. The species comparisons are appropriately supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Single-cell RNA-seq of OF/IWR1 cjiPSCs, d2 and d6 cjPGCLCs (9,098 cells after QC) yielded six clusters including off-target cells and a pluripotent/germ cell cluster expressing NANOG, POU5F1, SOX17, TFAP2C (enriched for 'germ cell development' and 'stem cell maintenance'), which further subdivided into six subclusters (cjiPSCs, d2 cjPGCLCs, d6 cjPGCLCs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by comprehensive scRNA-seq analysis with appropriate QC (Figure 7\u2014figure supplement 1A), clustering (Figure 7\u2014figure supplement 1B-D), marker expression (Figure 7\u2014figure supplement 1E), and GO enrichment (Figure 7\u2014figure supplement 1F). The subsetting analysis is well-documented (Figure 7A-B, Figure 7\u2014figure supplement 1G-H).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PHATE embedding and pseudotime analysis showed subclusters aligned along developmental trajectory with RNA velocity support; stem cell maintenance genes were downregulated while early germ cell markers (KIT, NANOS3, DND1, SOX17, TFAP2C) and chromatin remodeling genes were upregulated, indicating germ cell specification and epigenetic remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by PHATE embedding (Figure 7C-D), pseudotime analysis, RNA velocity (Figure 7E), and expression analysis (Figure 7F-H). The integration of multiple trajectory inference methods strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Mesodermal genes (EOMES, HAND1, MIXL1) were transiently upregulated in clusters 1/4/6 (enriched for 'mesoderm formation'), while pluripotency genes (NANOG, UTF1) were transiently downregulated during cjiPSC to cjPGCLC transition, similar to mouse but not human PGCLC specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by PHATE embedding (Figure 7F), GO enrichment (Figure 7G), and expression dynamics (Figure 7H). The species comparisons are appropriately supported by citations to prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "E50 cjPGCs (cluster 7) juxtaposed with d6 cjPGCLCs (clusters 2/5) in PHATE embedding and showed high Pearson correlation, with many key germ cell markers/specifier genes equally upregulated in both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by PHATE embedding (Figure 7I-K), Pearson correlation analysis (Figure 7L), and pairwise comparison (Figure 7M). This provides strong evidence for similarity between in vitro-derived cjPGCLCs and endogenous cjPGCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "d6 cjPGCLCs were more proliferative/apoptotic while E50 cjPGCs upregulated genes enriched for 'regulation of transcription from RNA polymerase II promoter'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by differential expression and GO enrichment analysis (Figure 7M). These differences likely reflect culture conditions vs. in vivo environment, as noted by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Cross-species comparison showed a large fraction of PGCLC genes (upregulated in PGCLCs vs. iPSCs) were conserved between marmoset and humans (including transcriptional regulation and protein ubiquitination genes), while species-specific genes were enriched for 'fatty acid homeostasis' (human) or 'carbohydrate metabolic process' (marmoset), potentially indicating species-specific metabolic requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by comparative analysis (Figure 7\u2014figure supplement 2A-C). However, C116 is somewhat speculative\u2014the metabolic GO enrichment is observed, but functional validation of species-specific metabolic requirements is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Whole-genome bisulfite sequencing showed d4 cjPGCLCs had slightly reduced 5mC levels (~63%) compared to OF/IWR1 cjiPSCs (~75%), with further reduction in expansion culture (~50% at c30), similar to human PGCLC dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by WGBS data (Figure 8A-C) showing progressive DNA demethylation. The comparison to humans is appropriately supported by citations. The statistical significance is demonstrated for the cjiPSC vs. d4 PGCLC comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Expression analysis of DNA methylation-related genes showed DNMT3B was highly expressed in cjiPSCs but sharply downregulated upon PGCLC induction; DNMT3A showed modest downregulation; DNMT3L was low in all cells; DNMT1 was expressed at significant levels; UHRF1 (responsible for DNMT1 recruitment to replication foci) showed marked reduction upon induction but slightly higher expression in expansion culture; TET1 was highly expressed while TET2/TET3 were very low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 are supported by expression dynamics analysis (Figure 8D). The functional role of UHRF1 (C125) is appropriately supported by citations to prior mechanistic studies. The expression patterns are consistent with the observed DNA methylation dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Reduced but detectable levels of DNMT3B and UHRF1 in d6 and expansion culture cjPGCLCs might serve as the basis for modest reduction of global DNA methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 is speculative. While the correlation between reduced DNMT3B/UHRF1 expression and reduced DNA methylation is observed, causality is not established. The mechanism could involve other factors not examined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Similar to human PGCLCs, cjPGCs/cjPGCLCs show marked downregulation of EHMT2 and EHMT1, which might explain low global H3K9me2 levels observed in mice where these enzymes are downregulated in PGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C130 are partially supported. C129 is based on established knowledge of mouse PGC development. C130 is speculative\u2014while the correlation between EHMT2/EHMT1 downregulation and low H3K9me2 is observed, causality is not established in marmoset. The comparison to human PGCLCs needs explicit data support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "The expression pattern of epigenetic modifiers in cjPGCLCs is similar to endogenous cjPGCs at E50, supporting that cjPGCLCs derived by this protocol accurately resemble endogenous pre-migratory cjPGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are supported by comparison of expression patterns between cjPGCLCs (Figure 8D) and endogenous cjPGCs (Figure 2E). This conclusion is further supported by the comprehensive immunophenotypic, transcriptomic, and epigenetic characterization throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "cjPGCs display immunophenotypic and transcriptomic features characteristic of primate PGCs (expressing SOX17, SOX15, TFAP2C, PRDM1, low PRDM14, lacking SOX2), distinct from mice (which express SOX2 and transiently express SOX17). E50 cjPGCs are pre-migratory and lack DDX4/DAZL, unlike human/cynomolgus PGCs at the same chronologic age, likely due to delayed marmoset embryo development, suggesting germ cell development is synchronized with overall embryo development rather than chronologic age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C140 provide a comprehensive summary of the characterization and comparative analysis. The claims are well-supported by the data presented throughout the manuscript and appropriately contextualized with citations to prior work. The inference about developmental synchronization (C139-C140) is reasonable given the observed differences and supported by citation to prior work on marmoset development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "WNT inhibition by IWR1 stabilized undifferentiated state of cjiPSCs on MEF (consistent with prior cynomolgus ESC studies), while the newly established PluriSTEM-based FF culture facilitated stable maintenance regardless of IWR1 presence, possibly due to proprietary factors in PluriSTEM medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 are supported by data presented in Figure 3\u2014figure supplement 2 and appropriate citations. C143 is speculative but reasonable given the observed stability. The proprietary nature of PluriSTEM limits mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Despite all being pluripotent and maintainable across passages, cjiPSCs cultured under different conditions showed distinct germline competency (FF: none; OF: modest; OF/IWR1: high), suggesting pluripotency state per se is not the primary determinant. Upregulation of UPS protein catabolism genes, particularly SCF complex components (UBE3A, FBXW7), correlated with increased germline competency, consistent with prior studies showing critical roles of UPS and FBXW7 in pluripotency and germ cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C146 are well-supported by the comprehensive characterization and differentiation experiments. However, C147 is correlative\u2014while the association between UPS gene expression and germline competency is observed, causality is not established. C148 provides appropriate context from prior studies, but functional validation in the marmoset system (e.g., UPS inhibition or FBXW7 knockdown experiments) would be needed to support the mechanistic claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "cjPGCLCs can be derived from OF/IWR1 cjiPSCs through direct floating culture with PGCLC induction cocktail (without iMeLC step required for humans), highlighting differential WNT/NODAL/ACTIVIN signaling requirements between species. Lineage trajectory analysis revealed transient mesodermal program upregulation (EOMES, MIXL1) at d2, similar to cynomolgus PGCLCs and human iMeLCs, suggesting conserved germline developmental programs across primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 are well-supported by the PGCLC induction data (Figure 3) and trajectory analysis (Figures 6-7). The comparison to other primate species is appropriately supported by citations. The inference of conserved developmental programs (C154) is reasonable given the observed similarities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R46",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "A previous study by Okano et al. failed to produce cjPGCLCs by floating culture (possibly due to poor germline competency of OF-cultured cells without IWR1) and instead used transcription factor overexpression (PRDM1, SOX17) with variable efficiency (30-40% in ESCs, 1.7% in iPSCs) and premature DDX4 upregulation at d9-10. Since DDX4 is not expressed in pre-migratory PGCs in vivo and human PGCLCs only upregulate DDX4 after prolonged xrTestis/xrOvary culture, that induction method might not fully recapitulate physiological germ cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C161 provide appropriate critical analysis of prior work. C155-C158 are supported by citation to the Okano study. C156 is speculative but reasonable given the current study's findings. C159-C160 are supported by data from the current study and appropriate citations. C161 is a reasonable inference based on the developmental timing mismatch.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R47",
+    "claim_ids": [
+      "C162",
+      "C163"
+    ],
+    "result": "The in vitro platform enables efficient cjPGCLC induction from cjiPSCs, providing a foundation for analyzing PGC specification mechanisms in marmosets. Efforts to develop IVG in marmosets with functional validation by fertilization and offspring creation may ultimately provide a suitable preclinical model of human IVG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C162 is a reasonable summary of the study's achievements. C163 is appropriately cautious about future prospects, acknowledging the long road ahead while highlighting the potential value of the marmoset model for preclinical validation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "UBQLN24XALS exhibits heat stress-dependent toxicity in Drosophila eyes. At 29\u00b0C, GMR>UBQLN24XALS flies show a rough eye phenotype with depigmentation and loss of ommatidial facets, while no overt phenotype is observed at 22\u00b0C. UBQLN24XALS is significantly less soluble than UBQLN2WT and UBQLN2P497H at both temperatures, but the relative proportion of insoluble protein is comparable, suggesting aggregation alone does not fully explain enhanced toxicity. Protein expression levels are similar across genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42-C50 provide converging evidence from eye morphology (Figure 1B), protein solubility assays (Figure 1\u2014figure supplement 1A,B), and mass spectrometry (Figure 1\u2014figure supplement 1C) demonstrating heat stress-dependent toxicity of UBQLN24XALS. The data show clear phenotypic differences at 29\u00b0C versus 22\u00b0C, with appropriate controls and quantification. The inference that aggregation alone cannot explain toxicity (C46) is supported by the observation that insoluble fractions are proportionally similar at both temperatures despite different phenotypic outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "GMR>UBQLN24XALS flies exhibit distinct transcriptomic changes compared to UBQLN2WT and UBQLN2P497H flies. RNA-Seq analysis revealed 629 genes uniquely changed in UBQLN24XALS flies at 29\u00b0C (402 upregulated, 227 downregulated). Downregulated genes include those involved in eye development and phototransduction, while upregulated genes include innate immunity genes and heat shock proteins. This distinct gene expression signature correlates with the severe eye phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C63 are supported by RNA-Seq data (Figure 1\u2014figure supplement 2) with appropriate statistical thresholds (FDR <0.05) and biological replicates. The transcriptomic analysis provides molecular context for the observed phenotypes, with GO analysis supporting functional interpretations. The inference that UBQLN2 overexpression impacts cellular regulation (C52) is reasonable given the hundreds of gene expression changes observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C148"
+    ],
+    "result": "A genetic deficiency screen in Drosophila identified 35 modifier loci for UBQLN2ALS toxicity. The UBQLN24XALS screen identified 7 suppressors and 23 enhancers (including 15 lethal enhancers), while the UBQLN2P497H screen identified 6 enhancers, two of which overlapped with the UBQLN24XALS screen. All enhancers of UBQLN2P497H also enhanced UBQLN2WT phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68, C148 describe the genetic screen methodology and results shown in Figure 2A-D. The screen design is appropriate with adequate coverage (194 lines spanning 85% of chromosome 2), and results are presented with clear phenotypic scoring. Secondary validation screens were performed to confirm modifiers. The observation that P497H enhancers also affect wild-type (C68) suggests these may represent general UBQLN2 modifiers rather than mutation-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C151",
+      "C152"
+    ],
+    "result": "Rab5 is a mutation-independent modulator of UBQLN2 toxicity. Rab5 knockdown causes hyperpigmented eye phenotypes in flies expressing UBQLN2WT, UBQLN2P497H, and UBQLN24XALS at 29\u00b0C, with temperature-dependent effects. Rab5 overexpression partially rescues eye phenotypes without affecting UBQLN2 expression levels. These findings suggest UBQLN2 overexpression interferes with endolysosomal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77, C151-C152 are supported by genetic interaction data (Figure 2\u2014figure supplement 1) showing consistent effects of Rab5 manipulation across multiple UBQLN2 alleles. The bidirectional effects (knockdown enhances, overexpression rescues) strengthen the conclusion. Controls showing no effect on UBQLN2 expression (C75) rule out indirect effects through protein levels. The inference about endolysosomal dysfunction (C77, C151) is reasonable and supported by citation to congruent work (C152).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The transcriptional elongation factor lilli suppresses UBQLN24XALS toxicity. A lilli LOF allele diminishes UBQLN24XALS eye toxicity to a similar extent as lilli-spanning deficiencies, without affecting UBQLN2 protein levels. lilli was previously shown to suppress TDP-43 and C9ORF72 DPR toxicity in Drosophila, suggesting it may be a general suppressor of neurodegeneration-associated protein toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81, C153-C156 are supported by genetic mapping data (Figure 2\u2014figure supplement 2) and appropriate controls showing no effect on UBQLN2 expression (C155). The convergence with prior studies on TDP-43 and C9ORF72 (C79, C154) strengthens the conclusion about general suppressor function. However, the mechanism remains speculative (C156), as transcriptional suppression is ruled out but alternative mechanisms are not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Unc-5 and its coreceptor frazzled/DCC modulate UBQLN24XALS toxicity in Drosophila eyes. Two Unc-5 LOF alleles and three RNAi lines diminish the rough eye phenotype without affecting UBQLN2 expression. Frazzled/DCC silencing similarly rescues the phenotype. The genetic interaction appears specific to UBQLN2, as Unc-5 knockdown does not affect FUS-associated eye phenotypes. These findings suggest signaling through Unc-5/Frazzled potentiates UBQLN24XALS toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88, C157-C161 are supported by genetic interaction data (Figure 3) using multiple independent alleles and RNAi lines, strengthening confidence in the results. The specificity control with FUS (C84) is important for ruling out general effects on eye degeneration. The inference about Unc-5/Frazzled signaling (C88) is reasonable given the rescue by both components. However, the mechanism remains speculative (C159-C161), as the relative contributions of axon guidance versus apoptosis functions are not distinguished.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Unc-5 silencing rescues motor and lifespan phenotypes in UBQLN24XALS flies. Unc-5 knockdown partially reverses climbing defects in D42>UBQLN24XALS flies (with sex-specific effects for one RNAi line), corrects NMJ abnormalities including satellite bouton numbers, and significantly increases lifespan of Elav>UBQLN24XALS flies, particularly in females. These findings suggest aberrant Unc-5 signaling contributes to neuronal phenotypes beyond the eye.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 are supported by multiple functional assays (Figure 4) including climbing behavior, NMJ morphology, and lifespan analysis. The use of multiple Unc-5 RNAi lines and appropriate controls strengthens the conclusions. Sex-specific effects (C90, C93-C95) are noted but not fully explained. The convergence of rescue effects across multiple phenotypic readouts (eye, motor, NMJ, lifespan) strongly supports the inference that Unc-5 signaling contributes to UBQLN2 toxicity (C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The axon guidance gene beat-1b suppresses UBQLN24XALS toxicity. Beat-1b knockdown and a p-element insertion in beat-1b reduce eye degeneration in UBQLN24XALS flies, while beat-1c knockdown has no effect. Beat proteins regulate motor axon guidance through interactions with Sidestep ligands. These findings further implicate axonal guidance defects as a pathomechanism in UBQLN2-associated neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102, C162-C164 are supported by genetic mapping and RNAi data (Figure 5) with appropriate specificity controls (beat-1c, luciferase, mCherry). The convergence with Unc-5/frazzled findings strengthens the conclusion about axon guidance defects (C102). However, the relevance to human disease is uncertain (C164) given weak homology to mammalian proteins (C163). The result would be strengthened by functional validation of axon guidance defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "CRISPR-generated iPSC lines with endogenous UBQLN2 mutations show normal expression and localization under basal conditions. UBQLN2P497H, UBQLN22XALS, and UBQLN24XALS exhibit comparable expression and RIPA solubility to UBQLN2WT in undifferentiated iPSCs, with no detectable cytosolic aggregates. UBQLN2I498X is undetectable by Western blot, suggesting it is a null allele. These findings indicate endogenous ALS mutations are insufficient to promote UBQLN2 aggregation in undifferentiated iPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 are supported by Western blot and immunostaining data (Figure 6A-B) from CRISPR-edited iPSC lines. The methodology is appropriate and controls (UBQLN2I498X as null) are included. The inference that endogenous mutations are insufficient for aggregation in iPSCs (C109) is supported by the data, though this may reflect the undifferentiated state rather than a general property. The conclusion would be strengthened by validation in multiple clones for each genotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Endogenous UBQLN24XALS exhibits altered protein folding in iPSCs. Limited proteolysis with chymotrypsin reveals a unique fragmentation pattern for UBQLN24XALS compared to UBQLN2WT and UBQLN2P497H, suggesting the endogenous 4XALS mutant protein is misfolded, consistent with prior findings using purified protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by limited proteolysis data (Figure 6C) and citation to prior work. The assay is appropriate for detecting conformational differences. However, the interpretation that the unique fragmentation pattern indicates misfolding (C112) is an inference that could be strengthened by additional biophysical characterization. The result is consistent with the aggregation propensity of UBQLN24XALS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C165",
+      "C166"
+    ],
+    "result": "UBQLN2ALS iPSCs exhibit lysosomal defects that are unmasked by autophagy inhibition. BafA1 treatment decreases solubility of all UBQLN2 proteins, with the strongest effect on UBQLN24XALS, which remains insoluble after washout. UBQLN2 partially colocalizes with LAMP1 but not Rab5. UBQLN2P497H and UBQLN24XALS iPSCs show significantly elevated lysosome abundance and size compared to wild-type, with UBQLN24XALS exhibiting the most severe enlargement. LC3 lipidation is comparable across genotypes, suggesting similar autophagic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121, C165-C166 are supported by biochemical fractionation (Figure 6D-E), colocalization studies (Figure 6\u2014figure supplement 1A-B), and LysoTracker analysis (Figure 6\u2014figure supplement 1C-D). The use of BafA1 to unmask aggregation propensity is appropriate. The lysosomal enlargement phenotype is quantified with statistical analysis. However, the interpretation of LC3 levels as indicating similar autophagic flux (C116) is indirect and could be confounded by other factors affecting LC3 lipidation. The convergence of multiple assays supports endolysosomal dysfunction (C121).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "UBQLN24XALS forms discrete aggregates in differentiated motor neurons. In iMNs, UBQLN2WT and UBQLN2P497H show diffuse localization, while UBQLN24XALS forms discrete aggregates distributed throughout cell bodies, axons, and growth cones. Aggregation is observed in two independent UBQLN24XALS clones. UBQLN2WT and UBQLN2P497H are evenly distributed in growth cone lamellipodia and filopodia, while UBQLN24XALS shows weaker lamellipodial staining with occasional bright aggregates in ~50% of growth cones. DCC localization to filopodial spikes is not affected by the UBQLN24XALS mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 are supported by immunostaining data (Figure 7A-B, Figure 7\u2014figure supplement 1A, Figure 7\u2014figure supplement 2) from differentiated iMNs. The observation of aggregates in two independent clones (C124) strengthens confidence that this is not a clonal artifact. The quantification of aggregate frequency in growth cones (C126) provides rigor. The finding that DCC localization is unaffected (C127) is an important control suggesting the mutation does not globally disrupt growth cone structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "UBQLN24XALS iMNs exhibit reduced neurite complexity. Sholl analysis reveals UBQLN24XALS iMNs have significantly reduced total neurite length, primary neurite length, and branch length compared to UBQLN2WT, manifesting as increased Sholl decay. In contrast, UBQLN2P497H iMNs show neurite length and complexity comparable to wild-type, indicating the clinical P497H mutation alone is insufficient to disrupt neurite growth dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 are supported by quantitative Sholl analysis (Figure 7D) with large sample sizes (>100 neurons) and appropriate statistical testing. The methodology is well-described and appropriate for assessing neurite complexity. The finding that P497H does not affect neurite growth (C130-C131) is important for distinguishing mutation-specific effects and suggests the 4XALS mutation has more severe consequences than single clinical mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Autophagy inhibition increases UBQLN24XALS aggregation in iMNs. BafA1 treatment strongly increases the size and number of UBQLN24XALS aggregates in two independent clones, with minimal effects on UBQLN2WT or UBQLN2P497H. BafA1-induced aggregates strongly colocalize with p62 and often colocalize with or are adjacent to LAMP1-positive lysosomes, but show weak colocalization with Rab5 or LC3. These findings suggest the autophagy pathway suppresses endogenous UBQLN24XALS aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 are supported by immunostaining and colocalization analysis (Figure 8) with quantification and statistical testing. The use of two independent clones strengthens confidence. The colocalization analysis with multiple markers (p62, LAMP1, Rab5, LC3) provides mechanistic insight. However, the inference that autophagy suppresses aggregation (C136) is based on pharmacological inhibition and could be strengthened by genetic manipulation of autophagy components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "UNC5B and DCC knockdown rescues neurite defects in UBQLN24XALS iMNs without affecting aggregation. shRNA-mediated knockdown of UNC5B or DCC (40-60% reduction confirmed by qPCR) significantly increases total neurite length, primary neurite length, and branch length in UBQLN24XALS iMNs compared to non-targeting control. Neither knockdown affects the size or number of UBQLN24XALS aggregates, suggesting they influence toxicity pathways downstream of aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are supported by qPCR validation of knockdown (Figure 9\u2014figure supplement 1A-B), neurite analysis (Figure 9A), and aggregate quantification (Figure 9\u2014figure supplement 2). The finding that rescue occurs without affecting aggregates (C140-C141) is important for distinguishing aggregation-dependent and aggregation-independent toxicity mechanisms. The convergence with Drosophila findings strengthens the conclusion about conserved mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "UBQLN24XALS iMNs exhibit growth cone defects that are rescued by UNC5B/DCC knockdown. UBQLN24XALS iMNs show a high proportion of blunt-end termini versus growth cones, observed in two independent clones, suggesting defective growth cone elaboration. UNC5B or DCC knockdown in UBQLN24XALS iMNs results in supernumerary growth cones along neurites and increased growth cone size and abundance. These findings suggest aberrant DCC-UNC5 signaling suppresses growth cone elaboration and that axon guidance defects contribute to toxicity in both fly and iMN models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 are supported by growth cone morphology analysis (Figure 9B-D) with quantification and statistical testing. The observation in two independent clones (C143) strengthens confidence. The rescue of growth cone defects by UNC5B/DCC knockdown (C144) provides strong evidence for the proposed mechanism. The inference about conserved mechanisms across flies and human cells (C146) is well-supported by the convergence of results across model systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C39",
+      "C147",
+      "C171",
+      "C186"
+    ],
+    "result": "Altered growth cone dynamics and endolysosomal dysfunction are conserved pathomechanisms in UBQLN2-associated ALS/FTD. The combined findings from Drosophila genetic screens and human iPSC/iMN studies support roles for endolysosomal dysfunction (via Rab5) and axon guidance defects (via Unc-5/DCC) as disease drivers. The UBQLN24XALS toxicity mechanism is at least partially conserved between flies and humans, as demonstrated by rescue of phenotypes in both systems through manipulation of orthologous genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C39, C147, C171, C186 represent the main conclusions synthesizing results across model systems. The conclusions are well-supported by converging evidence from multiple experimental approaches: genetic screens in flies identifying Rab5 and Unc-5 as modifiers, functional validation in fly motor neurons and lifespan assays, and rescue of neurite and growth cone defects in human iMNs by UNC5B/DCC knockdown. The conservation across species strengthens confidence in the relevance to human disease. However, the mechanisms linking UBQLN2 aggregation to aberrant UNC5/DCC signaling remain incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C168",
+      "C169",
+      "C170",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Study limitations and alternative interpretations. The authors acknowledge several limitations: (1) UBQLN24XALS is not a bona fide disease allele and may elicit toxicities unrelated to clinical mutations; (2) overexpression may cause disease-nonspecific toxicities affecting genetic screens; (3) axon guidance genes may be most relevant during development; (4) iPSC/iMN models may not capture age-dependent abnormalities. The enhanced toxicity of UBQLN24XALS may be due to overwhelming proteostasis machinery, and soluble forms of mutant UBQLN2 may also contribute to toxicity, particularly through endolysosomal dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150, C168-C170, C187-C190 represent appropriate acknowledgment of study limitations and alternative interpretations. The authors correctly note that UBQLN24XALS is an artificial construct (C188) and that overexpression models have inherent limitations (C187). The speculation about mechanisms (C149, C168-C170) is reasonable given the data. These limitations do not invalidate the main findings but appropriately contextualize the conclusions and suggest directions for future work.",
+    "result_type": "MINOR"
+  }
+]

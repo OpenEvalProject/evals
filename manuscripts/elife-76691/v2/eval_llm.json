@@ -1,0 +1,219 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "GCaMP-X was designed to eliminate unwanted interactions between conventional GCaMP and endogenous apoCaM-binding proteins. The design was validated by showing that jGCaMP7-X neurons were indistinguishable from GFP controls in neurite morphology, while jGCaMP7b significantly impaired neurite length and complexity and altered CaV1.3 channel gating. Coimmunoprecipitation experiments confirmed that GCaMP-X does not bind to CaV1.3 or neurogranin, unlike conventional GCaMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 provide converging evidence from multiple experimental approaches (morphology, electrophysiology, expression level controls, and coimmunoprecipitation) that GCaMP-X successfully eliminates the toxic interactions of conventional GCaMP with endogenous proteins. The design principle (C3, C22) is well-validated by the functional and molecular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In vivo two-photon imaging in adult mice demonstrated that GCaMP-X outperformed conventional GCaMP in chronic imaging of sensory responses. GCaMP6m showed progressive nuclear accumulation and reduced responsiveness to whisker stimulation both within (4-6 weeks) and beyond (8-13 weeks) the optimal time window, while GCaMP6m-XC maintained cytosolic localization and robust responses throughout the extended imaging period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 provide quantitative data on nuclear accumulation (N/C ratio), response amplitude, success rate, and SNR that consistently show GCaMP-X superiority over GCaMP. The temporal progression of toxicity is well-documented, and the comparison includes appropriate controls at multiple timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Chronic Ca2+ imaging of cultured cortical neurons expressing GCaMP-X for one month or longer revealed that spontaneous Ca2+ transients progressively developed into autonomous oscillations. GCaMP6m-XC showed frequency declining from ~150 mHz to ~20 mHz with increasing amplitude and synchronization, while GCaMP6m exhibited drastically altered oscillation patterns after DIV 17, with aberrantly wider FWHM and eventual cessation by DIV 28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 provide detailed temporal profiles of multiple oscillation parameters (frequency, amplitude, synchronization, FWHM, spectral components) across developmental stages. The data are internally consistent and validated against Fluo-4 AM controls (C52), demonstrating that GCaMP-X faithfully reports Ca2+ dynamics while GCaMP causes progressive perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Dysregulations of neuritogenesis and Ca2+ oscillations became discernible around 2-3 weeks after GCaMP expression in cultured neurons, exacerbated by stronger or prolonged expression. GCaMP6m-XC neurons followed typical developmental processes with neurite elongation and soma enlargement, while GCaMP6m severely impaired these processes after DIV 14. Strong correlations were found between oscillation parameters and neurite length, with the 10-100 mHz frequency band playing a crucial role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 provide comprehensive morphological and functional data showing tight correlations between Ca2+ oscillations and neuronal development. The temporal profiles, correlation analyses (R\u00b2 values of 0.84-0.99), and dose-dependent effects are well-documented. The bell-shaped growth rate curves (C61) provide mechanistic insights into developmental stage-dependent relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Expression level controls demonstrated that GCaMP-X toxicity reduction is not due to lower expression levels. High-dose jGCaMP7b-XC (3 \u03bcl at 1.0\u00d710\u00b9\u00b2 v.g./ml) showed similar whole-cell expression to jGCaMP7b (1 \u03bcl at 1.0\u00d710\u00b9\u00b2 v.g./ml) but was much less toxic. Similar side-effects of jGCaMP7b were observed when viruses were added to mature neurons (DIV 21), demonstrating toxicity in both developing and mature neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 provide critical controls ruling out expression level as a confounding variable. Western blot data (C62) and functional comparisons (C63) at matched expression levels support the conclusion that the design modifications, not expression levels, account for reduced toxicity. The mature neuron experiments (C64) extend the findings beyond developmental contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In vivo imaging of spontaneous Ca2+ activities in adult mouse cortex showed that GCaMP6m-XC maintained robust and stable activities with normal characteristics across the full experimental term (up to 11 weeks postinjection), while GCaMP6m exhibited significantly lower frequency and amplitude, aberrantly wider FWHM, and slower on/off rates, especially beyond the optimal time window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 provide comprehensive characterization of spontaneous Ca2+ activities in vivo, with multiple parameters consistently showing GCaMP-X superiority. The data parallel the in vitro findings and demonstrate that the benefits extend to spontaneous activities in living animals. The improved SNR (C70) is particularly important for practical applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Dose-response experiments in vivo demonstrated that high-level GCaMP expression (1\u00d710\u00b9\u00b2 v.g./ml) enhanced image contrast but caused severe nuclear accumulation and reduced soma size, while ultrahigh-dose GCaMP6m-XC (1\u00d710\u00b9\u00b3 v.g./ml, 10-fold higher) maintained low N/C ratios and normal soma size up to 92 days postinjection. Immunofluorescence confirmed that GCaMP6m-XC at higher concentrations resulted in higher expression levels than GCaMP6m, excluding expression level as the cause of reduced damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 provide dose-response data demonstrating that GCaMP-X can be expressed at much higher levels than GCaMP without toxicity. The temporal profiles (C75-C76) and immunofluorescence controls (C77-C78) are rigorous. This result has important practical implications for achieving high SNR in chronic imaging applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Transgenic GCaMP6f mice (Rasgrf2-2A-dCre;Ai148) exhibited nuclear accumulation, reduced neurite complexity and length, and lower amplitude Ca2+ waveforms in nucleus-filled neurons. The temporal profiles showed neurite outgrowth significantly slowed or halted on DIV 14, with N/C ratio gradually increasing over one month, demonstrating that transgenic GCaMP expression is also subject to toxicity similar to viral delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide morphological and functional data from transgenic mice that parallel the viral infection results. The temporal profiles and nucleus-filled versus nucleus-excluded comparisons are internally consistent. Claims C84-C85 appropriately conclude that the findings extend to transgenic systems, though additional transgenic lines would strengthen this generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Chronic Ca2+ imaging is challenged by the cytotoxicity of CaM-based GCaMP. jGCaMP7b accumulated in nuclei of cortical neurons (hallmark of side-effects) and significantly reduced neurite length and complexity, with jGCaMP7b showing even more severe nuclear accumulation than other GCaMP variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 provide direct experimental evidence of jGCaMP7b toxicity through nuclear accumulation and morphological impairments. The characterization of nuclear accumulation as a hallmark (C24) is supported by consistent observations throughout the manuscript. Claims C2 and C21 are well-supported by both the current data and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background and motivation claims establishing the importance of Ca2+ signaling in the brain, the roles of GECIs, and the need for chronic Ca2+ imaging. These claims provide context for the study by citing established knowledge about Ca2+ in membrane excitability, neural development, disease, and the advantages of GECIs over electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C20 are well-supported by appropriate citations to established literature. These provide necessary background and motivation for the study. The claims accurately represent the current state of knowledge in the field and appropriately cite primary sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Background claims about oscillatory Ca2+ signals in neurons, including their observation in various cell types, their roles in gene expression efficiency and specificity, and their importance in neuronal functions, development, and morphology. Spontaneous electrical activities are initiated early in neural development and become more synchronized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by appropriate citations to published literature and provide important context for interpreting the chronic imaging results. These claims establish the biological significance of the Ca2+ oscillations observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "GCaMP-X provides a viable solution for Ca2+ imaging applications involving long-time and/or high-level expression of Ca2+ probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C86) is well-supported by the comprehensive experimental data from multiple experimental systems (transfection, viral infection in vitro and in vivo, transgenic mice) and multiple readouts (morphology, Ca2+ dynamics, molecular interactions). The claim appropriately summarizes the main contribution of the work.",
+    "result_type": "MAJOR"
+  }
+]

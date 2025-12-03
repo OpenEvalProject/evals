@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors developed a multifield computational model coupling cell proliferation, migration at the cell scale with growth and cortical folding at the organ scale. The model combines advection-diffusion equations with finite growth theory, uses neo-Hookean material properties, and was validated against histologically stained human fetal brain sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C57-C65 collectively describe the model development and validation. The theoretical framework (finite growth theory, neo-Hookean model) is well-established and appropriately cited. The validation against histological data (C6, Figure 3-4) provides empirical support. The model formulation is mathematically coherent with appropriate coupling between cellular and mechanical processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C73",
+      "C74",
+      "C76",
+      "C78",
+      "C103",
+      "C104"
+    ],
+    "result": "Simulations demonstrate that OSVZ proliferation enhances cortical folding complexity by triggering secondary mechanical instabilities leading to period doubling patterns. The effect is more pronounced with varying cortical stiffness than constant stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 describe the mechanical instability mechanism with clear observational data from simulations (Figure 5). Claims C76, C78, C103-C104 show that OSVZ proliferation increases folding complexity through secondary instabilities. The results are internally consistent across multiple simulation conditions (Figures 7-8) and the period doubling phenomenon is well-documented in the authors' prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C105"
+    ],
+    "result": "OSVZ proliferation accelerates cortical folding by reducing the time required to reach mechanical instability. The OSVZ has a disproportionately strong effect on brain development compared to the VZ, attributed to its larger volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C84-C86, and C105 are supported by simulation data in Figures 9-10 showing temporal evolution of cell density and folding. The comparison between different VZ/OSVZ division rate combinations (C84-C86) provides clear evidence for the disproportionate effect. However, the mechanistic explanation (C86) is speculative and would benefit from additional analysis to rule out alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Increasing the MST (mitotic small translocation) factor leads to exponential increases in maximum cell density in the domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is directly supported by simulation results shown in Figure 11. The exponential relationship is clearly demonstrated across multiple MST factor values. This result is consistent with the biological mechanism of OSVZ expansion through ORGC translocation behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C106",
+      "C107"
+    ],
+    "result": "Cortical folding mechanically induces spatial variations in OSVZ thickness, with the OSVZ becoming thicker beneath gyri and thinner beneath sulci. This mechanics-driven process is sufficient to explain experimentally observed OSVZ variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 and C106-C107 describe a key bidirectional finding: folding affects OSVZ structure. The simulation results (Figure 12) clearly show this pattern, and C89 confirms consistency with experimental observations (Kostovi\u0107 et al., 2002). The conclusion (C90, C107) that mechanics alone is sufficient is well-supported by the model results, though the authors appropriately note (C90) that causality in actual development remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Inhomogeneous OSVZ proliferation controls the initial location of gyri and sulci but does not affect the characteristic wavelength or overall complexity of the folding pattern. This finding is consistent with prior work on cortical growth patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 describe simulation results with heterogeneous proliferation patterns (Figures 13-14). The key finding (C100) that spatial heterogeneity affects location but not wavelength is clearly demonstrated and consistent with the authors' previous work (C101). The comparison with experimental observations (C93-C95, C102) provides additional validation. The result is logically sound given the mechanical instability mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The OSVZ plays a significant role in determining human cortex size and complexity, and mechanical forces link cellular processes to cortical folding, but the exact mechanisms remain insufficiently understood. A combined biological-mechanical approach is necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C15-C21 establish the scientific context and knowledge gaps. These are well-supported by appropriate citations and represent accurate characterizations of the field. The identification of the knowledge gap (C3, C19) appropriately motivates the study. The necessity of combined approaches (C21) is well-justified by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The manuscript provides a comprehensive review of cellular processes during human brain development, including the roles of radial glial cells, intermediate progenitor cells, ORGCs, neuronal migration, and the unique features of the human OSVZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C56 constitute a detailed literature review of brain development. Each claim is supported by appropriate citations to established work. The review accurately represents current understanding of cellular mechanisms, developmental timelines, and species differences. This provides essential biological context for the computational model but does not constitute a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The computational framework can be used for understanding both physiological and pathological brain development, can identify controlling parameters, but can only complement, not substitute, experimental approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C110 are speculative statements about future applications and limitations. While C110 appropriately acknowledges model limitations, C108-C109 make claims about future utility that are not demonstrated in the current work. These represent reasonable expectations but lack empirical validation for pathological processes or parameter identification beyond what was shown.",
+    "result_type": "MINOR"
+  }
+]

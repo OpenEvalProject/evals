@@ -1,0 +1,1975 @@
+{
+  "submission": {
+    "id": "6dcb5242-918e-496f-a803-51d1917d3096",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:11:00.667248Z",
+    "updated_at": "2025-12-03T03:11:00.667248Z"
+  },
+  "content": [
+    {
+      "id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "submission_id": "6dcb5242-918e-496f-a803-51d1917d3096",
+      "content_type": "manuscript",
+      "content_text": "# Genomic and healthcare dynamics of nosocomial SARS-CoV-2 transmission\n\n## Authors\n\n- Jamie M Ellingford<sup>1</sup> ([ORCID: 0000-0003-1137-9768](https://orcid.org/0000-0003-1137-9768)) \u2020\n- Ryan George<sup>3</sup>\n- John H McDermott<sup>1</sup>\n- Shazaad Ahmad<sup>4</sup>\n- Jonathan J Edgerley<sup>1</sup>\n- David Gokhale<sup>1</sup>\n- William G Newman<sup>1</sup>\n- Stephen Ball<sup>5</sup>\n- Nicholas Machin<sup>4</sup>\n- Graeme CM Black<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Manchester Centre for Genomic Medicine, St Mary's Hospital, Manchester University NHS Foundation Trust Manchester United Kingdom\n2. Division of Evolution and Genomic Sciences, School of Biological Sciences, University of Manchester Manchester United Kingdom\n3. Department of Infection Prevention & Control, Manchester University NHS Foundation Trust Manchester United Kingdom\n4. Department of Virology, Manchester Medical Microbiology Partnership, Manchester University NHS Foundation Trust, Manchester Academic Health Sciences Centre Manchester United Kingdom\n5. Division of Diabetes, Endocrinology & Gastroenterology, School of Medical Sciences, University of Manchester Manchester United Kingdom\n6. Department of Clinical Endocrinology, Manchester University NHS Foundation Trust, Manchester Academic Health Sciences Centre Manchester United Kingdom\n7. Manchester Medical Microbiology Partnership, Public Health England and Manchester University NHS Foundation Trust Manchester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding the effectiveness of infection control methods in reducing and preventing SARS-CoV-2 transmission in healthcare settings is of high importance. We sequenced SARS-CoV-2 genomes for patients and healthcare workers (HCWs) across multiple geographically distinct UK hospitals, obtaining 173 high-quality SARS-CoV-2 genomes. We integrated patient movement and staff location data into the analysis of viral genome data to understand spatial and temporal dynamics of SARS-CoV-2 transmission. We identified eight patient contact clusters (PCC) with significantly increased similarity in genomic variants compared to non-clustered samples. Incorporation of HCW location further increased the number of individuals within PCCs and identified additional links in SARS-CoV-2 transmission pathways. Patients within PCCs carried viruses more genetically identical to HCWs in the same ward location. SARS-CoV-2 genome sequencing integrated with patient and HCW movement data increases identification of outbreak clusters. This dynamic approach can support infection control management strategies within the healthcare setting.\n\n## Introduction\n\nThe severe\u00a0acute respiratory syndrome coronavirus-2 (SARS-CoV-2) pandemic continues to place a significant burden on healthcare services worldwide (Miller et al., 2020; Propper et al., 2020; Maringe et al., 2020). Reducing the spread and outbreak of SARS-CoV-2 infections is particularly important in hospitals and care homes where individuals at high risk of developing severe responses to infection are vulnerable to transmission due to close and regular contact between patients and healthcare workers (HCWs) (Clark et al., 2020; Nguyen et al., 2020; Rivett et al., 2020). Whilst the recent development of promising SARS-CoV-2 vaccines may reduce risk to individuals in hospitals who receive the vaccine (Walsh et al., 2020; Anderson et al., 2020; Keech et al., 2020; Lodge, 2020), risk of infection will not be completely mitigated. Standard methods of infection control will continue to be required to ensure patient and HCW safety. Regular and iterative testing for SARS-CoV-2, in both patients and HCWs, underpins approaches that quantify and control nosocomial transmission (Black et al., 2020) but will not provide insights into how the virus may have spread throughout an institution, alone. Since the degree to which different groups (patients, HCW) propagate SARS-CoV-2 transmission remains uncertain, the utility of screening approaches to prospectively prevent nosocomial spread is difficult to evaluate. It is well established that HCWs are an important component in pathogen outbreak investigations (Peacock et al., 2018; Wenger et al., 1995; de Swart et al., 2000). Here, we have integrated viral genome sequencing with patient admissions records and staff workplace information to investigate SARS-CoV-2 nosocomial outbreaks. We demonstrate that such an approach can be used to identify highly\u00a0likely nosocomial transmission events of SARS-CoV-2 between HCWs and the patients in their care.\n\n## Results\n\n### Sample demographics\n\nWe generated high-quality sequencing datasets for 173 samples that had been collected from inpatient wards, accident and emergency departments (A and E) and from HCWs across geographically\u00a0distinct hospitals. All samples were collected between calendar week 11 (commencing 8 March 2020) and calendar week 23 (ending 6 June 2020). Of the 173 high-quality sequenced samples, 39 (23%) were HCW samples. The remaining 134 samples were collected from patients admitted to a total of 31 wards and units situated across the five hospitals. Forty-four\u00a0(25%) of the 173 high-quality samples were from three hospital locations, which had seen sudden rises in SARS-CoV-2-positive cases; an additional 35 samples from these locations failed to meet our quality criteria for sequencing quality (Figure 1\u2014figure supplement 1). Forty-seven (35%) of 134 patient samples were from A and E departments. The median age of the 134 patients with sequenced samples was 81 years (mean\u00a0=\u00a075 years; range\u00a0=\u00a06 weeks\u2013100 years).\n\n### Sequencing metrics\n\nComparison of SARS-CoV-2 amplicon yield versus target coverage found that samples consistently met 10\u00d7 minimum coverage thresholds when a total yield of\u00a0>400 ng was obtained (median\u00a0= 846; range\u00a0= 86\u20133667; Figure 1\u2014figure supplement 1). Where RT-qPCR cycle threshold (Ct) values were provided, we found samples with Ct values of 31 or more resulted in lower amplicon yield and frequently failed to meet sequencing coverage thresholds (Figure 1\u2014figure supplement 1). In the 173 high-quality samples, we identified 268 genomic variants in comparison to MN908947.3, of which 86 were recurrent variants across samples (range\u00a0=\u00a02\u2013126 samples) and 182 were unique to single samples.\n\n### Global lineage assignment\n\nWe utilised Pangolin for placement of the 173 high-quality viral genome sequences within the global SARS-CoV-2 phylogenetic tree. Eight-seven percent (151/173) of sequenced genomes were confidently assigned to an existing lineage (SH-alrt\u00a0>\u00a080%, UFbootstrap\u00a0>\u00a090%). We identified 11 distinct lineages in our cohort, with a bias towards viral genomes assigned to lineage B.1.1 (71%, 122/173; Figure 1\u2014figure supplement 2). There were no samples assigned to lineage A. Incorporating the calendar week of sample collection into this analysis suggested a constant relative frequency of viral lineage B.1.1 over time (Figure 1\u2014figure supplement 2). Viral lineage B.1.1 was present in samples collected from 29 different wards, including A and E, and in HCWs, and was present in our cohort between calendar weeks 12\u201323 (Figure 1\u2014figure supplement 2).\n\n### Local phylogenetic networks implicate nosocomial transmission within hospital wards\n\nTo understand how the viral genomes collected from different areas across hospital sites related to one another we created a local phylogenetic tree rooted to a SARS-CoV-2 genome originally sequenced in Wuhan, China (MN908947.3) (Minh et al., 2020; Wu et al., 2020). We overlaid locational origins of the samples (i.e. ward and units from which samples were collected) onto the phylogenetic tree (Figure 1\u2014figure supplement 3). We observed clusters within the phylogenetic tree that were formed predominantly from viral genome sequences taken in individual wards (Figure 1\u2014figure supplement 3). For example, 19/31 of the samples in one of these identified clusters were collected from a single hospital ward (H2_W7, Figure 1\u2014figure supplement 3). The phylogenetic clusters were supported by maximum-likelihood and consensus (10,000 ultrafast bootstraps) approaches for tree creation.\n\n### Incorporating staff and patient movement enhances identification of nosocomial transmissions\n\n#### Patient contact clusters\n\nUtilising patient admissions data over the period of the pandemic, we first created a network of potential direct or indirect patient\u2013patient contacts, inferred through the\u00a0presence of two individuals on the same ward on the same calendar day. We adopted national guidelines for definition of nosocomial infection to identify contacts between individuals relative to the date of sample collection for a positive SARS-CoV-2 test. Using a contact window of 3\u20137 days prior to a positive SARS-CoV-2 test (termed herein as likely period of infection), we developed a network of patient\u2013patient contacts (Figure 1). We identified eight significant clusters of individuals (patient contact clusters\u00a0[PCCs]), defined by multiple potential contacts between two or more individuals within the likely period of infection for each individual (A\u2013H, Figure 1). We assessed the pairwise similarity of viral genomes in identified clusters, demonstrating significantly higher viral genetic similarity within clusters compared to non-clustered samples (Figure 2, p<0.001). This trend was further supported by overlaying the PCCs onto the local phylogenetic tree (Figure 1\u2014figure supplement 4). We identified areas of the phylogeny where there was a 20-fold increase, than expected by chance, in potential contacts between a patient and six or more patients with the most closest genetically related viral genome samples. Consecutive windows of increased (20-fold) patient\u2013patient contacts were merged to identify seven distinct clusters of individuals defined by high level of genetic relatedness of the viral genome sequence and a high degree of potential patient\u2013patient contacts during the likely period of infection (Figure 1\u2014figure supplement 4).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65453/elife-65453-fig1-v2.jpg)\n\n**Figure 1.:** (a) Network of direct and indirect potential patient\u2013patient contacts within the window of likely infection (3\u20137 days prior to positive SARS-CoV-2 test) defines eight significant patient contact clusters (PCCs, overlaid boxes); (b) network including HCW interactions one week prior to positive SARS-CoV-2 test and patient infection classification. Nodes represent individual patients or HCWs, with ordinal numbers representing their position in the constructed local phylogenetic tree. Edges indicate presence on the same hospital ward on the same calendar day. Inclusion of HCWs brings together originally disparate PCCs (b) and (c) increases the number of individuals within viral clusters (VCs) \u2013 defined as clusters of identical viral samples or derived viral samples which differ by a single genomic variant. We identified 44 individuals within VCs in the newly defined HCW contact clusters (HCW_A, HCW_B, HCW_C), 21 of whom were not identified within VCs using PCCs alone. The shape of symbols within the enlarged boxes displays the classification of SARS-CoV-2 infection in patients: community, community-acquired infection (positive test within 2 days of hospital admission); possible, possible hospital-acquired infection (positive test 3\u20137 days after hospital admission); probable, probable hospital-acquired infection (positive test 8\u201314 days after hospital admission); definite, definite hospital-acquired infection (positive test\u00a0>14 days after hospital admission). The presence of several patients with definite and probable hospital-acquired infections within the PCC and HCW interaction clusters further reinforces the risk of SARS-CoV-2 transmission events between patients and HCWs on the same hospital wards.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65453/elife-65453-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Green dots represent samples above the 75% threshold set for high-quality sequencing datasets in this study. Bottom. Where available the cycle threshold (CT) value from RT-PCR tests for viral presence is a good indicator of the amount of the SARS-CoV-2 genome covered by at least 10 sequencing reads. Green dots represent samples above the 75% threshold set for high-quality sequencing datasets in this study, demonstrating that most samples which passed this criteria have a CT value less than 31.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65453/elife-65453-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** All lineage assignments were determined through Pangolin. Eight-one\u00a0percent\u00a0of the samples were confidently assigned to an existing lineage (SH-alrt\u00a0>\u00a080%, UFbootstrap\u00a0>\u00a090%). We observed that 71% of samples are assigned to lineage B.1.1 and these are present in patients across 29 different hospital locations, and present in healthcare workers.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65453/elife-65453-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The tree is rooted to the MN908947.3 SARS-CoV-2 genome and shows three clusters of genome sequences that are predominantly composed of viral samples taken from the same hospital wards. A zoomed in version of the tree is shown for the cluster predominantly composed of samples from a single ward (Hospital_2, Ward_7), showing 20 samples from this ward that all contain the same novel genomic variant MN908947.3\u20133228 T-G, and share significant genetic similarity to one another. The numbers indicated on nodes in Figure 1 refer to the order of sample placements in the presented phylogenetic tree, with samples ordered incrementally from MN908947.3.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/65453/elife-65453-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Left. Potential patient\u2013patient contacts within the window of likely infection (3\u20137 days) are mapped onto the constructed local phylogenetic tree. Each solid dot indicates a potential direct or indirect contact between a patient of interest (y-axis) and all other patients in the high-quality sequenced cohort (x-axis). Overlaid boxes highlight areas of significant viral genetic similarity where there is a 20-fold increase in potential patient\u2013patient contacts than expected by chance, and reflect the patient contact clusters (PCCs) highlighted in Figure 1. Right. Potential patient\u2013HCW contacts (in the 1\u00a0week prior to patient positive SARS-CoV-2 test) are incorporated into the contacts mapped onto the constructed local phylogenetic tree, increasing density of contacts within several hotspots.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65453/elife-65453-fig2-v2.jpg)\n\n**Figure 2.:** (a) Pairwise genomic variant similarity comparisons of SARS-CoV-2 genomes by the status within patient contact clusters (PCCs) demonstrates increased genetic similarity when patients have been in direct or indirect contact with one another 3\u20137 days prior to positive SARS-CoV-2 test. Pairwise comparisons within PCCs (n\u00a0=\u00a0544) were tested against all pairwise comparisons that were not defined within the PCCs (n\u00a0=\u00a029,212). (b) Pairwise genomic variant similarity comparisons of SARS-CoV-2 genomes by patient\u2013HCW interactions in the week prior to positive SARS-CoV-2 test (n, yes\u00a0=\u00a098, no\u00a0=\u00a011,836). (c) Pairwise genomic variant similarity comparisons of SARS-CoV-2 genomes by presence within PCCs including interactions with HCWs. Pairwise comparisons within HCW clusters (n\u00a0=\u00a0846) were tested against pairwise comparisons that were not defined within the PCCs including HCW interactions (n\u00a0=\u00a028,168). Colours of boxplots reflect the PCCs identified in Figure 1,\u00a0and asterisks indicate significance level determined through a two-sided Wilcoxon rank-sum\u00a0test (*<0.05; **<0.01; ***<0.001 after Bonferroni correction for multiple testing).\n\n#### Contact clusters including patients and HCWs\n\nNext, we created networks of potential interactions between HCWs and patients (Figure 1). This was inferred through the presence of patients in the direct workplace of staff members for at least one calendar day in the 7 days prior to a patient testing positive for SARS-CoV-2. We identified 49 potential contacts between HCWs and patients, including 10 HCWs and 18 patients. Incorporating this information onto the local phylogeny expanded the density of contacts within hotspots (Figure 1\u2014figure supplement 4) and altered the structure of the PCCs within the likely period of infection (Figure 1). Overall, we identified significantly increased genetic similarity in viral samples between patients and HCWs in the same ward locations in comparison to patients and HCWs from different wards (Figure 2, p<0.001). Moreover, we observed greater genetic similarity within each of the PCCs with HCW interactions incorporated (Figure 2, p<0.001). For example, HCW_A illustrates that the addition of HCWs created a previously hidden link between PCC_A and PCC_C (Figure 1); these newly identified connections increased the number of individuals within viral clusters (VCs), defined as clusters of identical viral samples or viral samples that differed by just a single genomic variant (Figure 1). Within the newly defined contact clusters including HCWs and patients, we identified six genetically identical VCs\u00a0including 18 individuals, and 24 individuals with viral sequences differing by a single genomic variant. The number of individuals in VCs was expanded by including patient\u2013HCW contact networks, over and above those identified using patients alone (Figure 1).\n\n### Temporal patterns within identified patient and HCW contact clusters\n\nIn order to establish the most likely SARS-CoV-2 transmission pathways, we examined temporal patterns within proposed nosocomial outbreaks. We created a median joining network for each of the patient and HCW contact networks and incorporated time of sample collection. As multiple entry points into the outbreaks may complicate inference, we cleaned the data to create median joining networks for the 10 most genetically related viral samples within each cluster (inferred from position in local phylogeny, Figure 1\u2014figure supplement 3). This identified trends in the datasets that further reinforced the likelihood of nosocomial infection (Figure 3). We observed that all identified contact clusters could be rooted back to potential \u2018founder\u2019 viral samples that occurred early during the suspected outbreak. For example, in PCC_B and PCC_D (Figure 3), which occurred on the same hospital ward at different time points, the original \u2018founder\u2019 viral samples contained the novel (at time of sample collection) genomic variant MN908947.3\u20133228-T-G. Eighteen\u00a0(95%) of 19 viral samples subsequently collected from this hospital ward also contained the same novel variant, at least 16 of these cases were probable or definite hospital-acquired infections. Reducing the quality threshold for sequencing datasets (\u226550% coverage at\u00a0\u226510\u00d7\u00a0coverage) identified the MN908947.3\u20133228-T-G variant in an additional five samples collected from this hospital location (83%, n\u00a0=\u00a06 additional samples included with modified criteria). These data highlight that samples excluded from our analyses due to sequencing quality criteria may be missing links within SARS-CoV-2 transmission pathways.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65453/elife-65453-fig3-v2.jpg)\n\n**Figure 3.:** For each of the highlighted contact clusters, a median joining network is presented with size of nodes representing number of samples and numbers indicating day of nasal or throat swab collection. The presented network suggests a possible path of viral transmission within each contact cluster, hatches represent single genomic variants that differ between viral clusters. The top scatterplot shows that the number of genomic variants identified against the MN908947.3 reference genome increases over time. The bottom scatterplot shows the number of other samples within the contact cluster that are identical or expected to be derived from samples collected at specific calendar days \u2013 these are defined as other samples that are identical but with the presence of additional genomic variants. The observed trends show that samples collected early during the suspected outbreaks have a greater number of derived or identical samples than those collected at a later day. These data support that the samples collected early during the highlighted contact clusters are early founder events during a nosocomial outbreak.\n\nWe observed further trends indicative of nosocomial outbreaks, including the number of genomic variants identified against the MN908947.3 reference genome increasing over time within each of the contact networks, and consistently observed that samples collected early during the suspected outbreaks had a greater number of derived or identical samples within the outbreak than those collected at a later day (Figure 3). Both of these trends would be expected if single ancestral SARS-CoV-2 sequences were original founders of an outbreak.\n\n## Discussion\n\nIn this study, we obtained high-quality SARS-CoV-2 genomic sequences for 173 individuals across five hospitals in the North West of the UK, including both patients and HCWs. We incorporated potential contacts between the two groups into a phylogenetic analysis and comparison of pairwise genetic similarity. Overall, this demonstrated that inclusion of contact data increased confidence in the characterisation of nosocomial outbreaks.\n\nThis work was undertaken across multiple, geographically separate hospitals in the UK with responsibility for the care of large numbers of SARS-CoV-2-positive patients. At the time of analysis, there was no routine SARS-CoV-2 screening of asymptomatic HCWs. Similar to other UK hospitals, the different locations within the hospitals were assigned as either green (SARS-CoV-2-negative) or red (SARS-CoV-2-positive) zones. This strategy, in combination with additional infection control measures such as staff bubbles, is widespread as a method to reduce nosocomial infection. However, as patients tested positive after spending prolonged periods of time in green areas, it became apparent that there were unrecognised transmission events between the two areas or from the community into green zones.\n\nViral genome sequencing offers a realistic possibility to track and identify root\u00a0causes of nosocomial transmissions (Lucey et al., 2020; Meredith et al., 2020). Here, we applied genome sequencing to throat and nasal swabs obtained from HCWs and patients. We identified 268 unique genomic variants in the 173 high-quality samples\u00a0and placed our samples within recognised global lineages (Figure 1\u2014figure supplement 2). The predominance of a single SARS-CoV-2 lineage meant that precise differentiation of viral samples from individual hospital wards was not possible at this level (Figure 1\u2014figure supplement 2). We therefore created a local phylogeny for our sequenced genomes rooted to MN908947.3 (Figure 1\u2014figure supplement 3) and calculated pairwise similarity in the genomic variants identified in each of the SARS-CoV-2 genomes. It has been previously noted that the low genetic diversity of SARS-CoV-2 causes complexity in the identification of nosocomial outbreaks, as samples may be genetically identical by chance rather than through transmission between individuals (Meredith et al., 2020; Gudbjartsson et al., 2020). Our data reemphasise this low genetic diversity of SARS-CoV-2, with a median number of 11 (range\u00a0=\u00a02\u201316) variants identified per sample, and an average pairwise similarity of 61.5% (Figure 2). Integrating our analyses with patient admissions record (available for 104/134 patients for at least one day prior to SARS-CoV-2-positive test) and location of staff workplaces (available for 31/39 HCWs) identified clusters of individuals who had interacted during their most likely periods of infection. These analyses confirmed that individuals who had been in contact during this period were more likely to have genetically more similar viral samples than individuals who had not been in contact (Figure 2).\n\nWhile we cannot exclude that viral samples are genetically identical or similar by chance due to the low genetic diversity of SARS-CoV-2, the spatial and temporal patterns of viral genetic relatedness that we observe provide strong evidence for nosocomial transmission amongst both patients and HCWs. These trends are observed in at least five distinct clusters, across three geographically\u00a0distinct hospitals. These are further reinforced by the presence of novel genomic variants (at the time of analysis) transmitting through identified clusters (Figure 1\u2014figure supplement 3). We suggest these data support the widespread adoption of iterative screening strategies for HCWs who may be pre-symptomatic or asymptomatic shedders of SARS-CoV-2 (Black et al., 2020; Arons et al., 2020; Buitrago-Garcia et al., 2020). Pre-symptomatic or asymptomatic individuals have been demonstrated to be important contributors to SARS-CoV-2 outbreaks (Rivett et al., 2020; Kasper et al., 2020; Letizia et al., 2020).\n\nOthers have shown that comprehensive characterisation of outbreak clusters can be hindered by the existence of hidden links between individuals, even where all individuals within clusters are known and completely isolated from external contacts (Sekizuka et al., 2020). In our data, we observed the presence of cohort-specific genomic variants shared between individuals but without a known connection between the sampled individuals. Here, it is likely that missing individuals or connections between surveyed individuals are adding complexity to our analyses. While the use of digital contact tracing is difficult in hospital environments, track and tracing smartphone software could be useful to extend the characterisation of contacts between individuals and to understand the accuracy of the assumptions enforced in this study (Firth et al., 2020; Ferretti et al., 2020). Here, we infer contacts between individuals through their presence on the same hospital ward on the same calendar day. This approach identifies individuals within our cohort that are likely to have been in face-to-face contact. We note that this approach has imperfect assumptions but is likely to dilute rather than inflate the statistical significance of the investigations reported in this study (Figures 1\u20133).\n\nFuture work may enable additional co-factors to be considered in models for network creation such as infection control measures in place on hospital wards (e.g. personal protective equipment utilised), symptomatic status of individuals, and the length, type, and the proximity of physical contacts between individuals. These approaches are supported by recent data demonstrating that over half of SARS-CoV-2 transmissions occur when individuals are pre-symptomatic and that transmission likelihood increases with the duration and proximity of contact (Sun et al., 2021). Collecting data to incorporate these factors into network models in the healthcare setting may enable the generation of more precise binary contact clusters according to specified parameters or the development of weighted networks biased by the relative importance placed on co-factors (Firth et al., 2020). Understanding the concordance of empirical datasets of SARS-CoV-2 transmission, as reported here, and computational models of transmission is an important avenue for future work to identify the most influential factors to decrease the likelihood of SARS-CoV-2 transmission in both healthcare and community settings.\n\nOur data demonstrate that SARS-CoV-2 genome sequencing alongside patient admission and staff workplace information can identify transmission events within the healthcare setting. Looking forward, we expect that the adoption of genomic approaches in real\u00a0time, for\u00a0example\u00a0within 48 hr, alongside consideration of patient movement datasets will enable rapid identification of linked hospital-acquired SARS-CoV-2 infections. Such approaches could optimise infection control management strategies, lead to targeted interventions, reduce nosocomial transmission, and ultimately prevent avoidable harm to vulnerable individuals who acquire COVID-19 whilst in the healthcare setting.\n\n## Materials and methods\n\n### Sample selection\n\nThroat and nasal swab samples were collected from patients and healthcare professionals based at MFT hospital sites. Diagnostic SARS-CoV-2 RT-qPCR assays were performed by the Clinical Virology Department of the Manchester Medical Microbiology Partnership (MMMP; Manchester, UK). RT-qPCR-positive samples were selected for SARS-CoV-2 whole-genome analyses at the Manchester Centre for Genomic Medicine (MCGM; Manchester, UK). We attempted to sequence all available SARS-CoV-2-positive samples from hospital wards highlighted by infection control surveillance officers as potential outbreaks within our sample collection period due to sudden rises in positive cases. Demographic, hospital location, and laboratory data were included with each referral. All ward names have been anonymised for publication.\n\n### Sample and NGS library preparation\n\nNucleic acid re-extraction was performed using the chemagic Viral DNA/RNA 300 Kit on the chemagic 360 instrument (PerkinElmer Inc, Waltham, MA). All extracted RNA samples underwent cDNA synthesis using either LunaScript RT SuperMix kit (New England Biolabs, Ipswich, MA) or SuperScriptIV (Thermo Fisher Scientific, Waltham, MA), in accordance with manufacturers protocols. SARS-CoV-2 whole-genome libraries were prepared using SureSelectXT Low Input kit CoVHuman6X enrichment capture-based method (Agilent Technologies, Santa Clara, CA) or the ARTIC tiled amplicon multiplex PCR protocol (version three primer set) with NEBNext Ultra II DNA Library Prep Kit (New England Biolabs). PCR and library preparation quality validations were obtained using TapeStation D1000 and HSD1000 (Agilent Technologies). Final libraries were sequenced using MinION flow cells version 9.4.1 (Oxford Nanopore Technologies, Oxford, UK) or MiSeq (Illumina, San Diego, CA) using reagent kits for 600 cycles (for tiled PCR SARS-CoV-2 amplification) or 300 cycles (for Agilent SureSelectXT enrichments) for paired end sequencing.\n\n### Bioinformatics and analysis\n\nSequencing reads were deduplicated on instrument for Illumina MiSeq datasets or using Guppy for Oxford Nanopore datasets. Reads were aligned to the SARS-CoV-2 reference genome (MN908947.3) using BWA-MEM (Li, 2013) for Illumina MiSeq datasets and using Minimap2 (Li, 2018) for Oxford Nanopore MinIon datasets. Reads were filtered and variants identified using iVar v1.2.2 (Grubaugh et al., 2019). Samples with\u00a0\u226575% of the MN908947.3 reference genome covered by\u00a0\u226510 high-quality reads with at least 50 aligning nucleotides were included for downstream analysis. Variants with an allele fraction of at least 0.6 in high-quality mapped reads were identified in comparison to MN908947.3, and a consensus FASTA built using iVar. Multi-way alignments were performed using MAFFT v7.407 (Katoh et al., 2002), and maximum-likelihood trees rooted to MN908947.3 using 1000 bootstraps were generated with IQ-TREE v1.6.12 (Minh et al., 2020). Trees were visualised in Geneious Prime software v2020.1.2 (https://www.geneious.com). Pangolin v2.0 (Rambaut et al., 2020) was utilised for positioning of sequences within the global phylogenetic tree (lineages v2020-05-19). Median joining networks were created in Pop-ART (http://popart.otago.ac.nz/). Pairwise similarity analyses were performed using a bespoke script and calculated the number of exact matches in genomic variants between samples after adjusting for regions masked by low coverage. All high-quality genome sequences were shared with COG-UK (COVID-19 Genomics UK (COG-UK), 2020).\n\n### Patient admissions and movement\n\nWe collected hospital admission data for all patients with high-quality sequenced genomes. For each patient, we identified other individuals within the cohort who were present on the same hospital wards on the same calendar day, leading to potential indirect or direct contacts between patients. This method for defining contacts assumes that close face-to-face contact is the most likely method for SARS-CoV-2 transmission between individuals and aims to identify individuals within our cohort who are most likely to have had such interactions. This assumption is supported through recent meta-analyses concluding that physical distancing of less than 1\u00a0m increases likelihood of SARS-CoV-2 transmission between individuals (Chu et al., 2020). We assessed all potential contacts for each patient in relation to the calendar day that the positive SARS-CoV-2 nasal or throat sample was collected from the patient. The windows of contacts are defined in accordance with national guidelines for SARS-CoV-2 nosocomial outbreak: community-acquired infection (positive test within 2 days of hospital admission); possible hospital-acquired infection (positive test 3\u20137 days after hospital admission); probable hospital-acquired infection (positive test 8\u201314 days after hospital admission); and\u00a0definite hospital-acquired infection (positive test\u00a0>14 days after hospital admission). For patient\u2013patient contacts, we identified any potential contacts within the possible hospital-acquired infection period (3\u20137 days) and developed a binary matrix. We made additional assumptions for including HCWs in the contact networks, specifically, we assumed that HCWs had direct or indirect contacts with all patients who had been present in their workplace (hospital ward) and assumed interaction between HCWs and patients were constant up to the day of positive SARS-CoV-2 tests for patients \u2013 this extended the contact window incorporated into the binary matrix to include any interactions between patients and HCWs in the 1\u20137 days prior to a patient testing positive for SARS-CoV-2. Networks of potential patient\u2013patient and HCW contacts were constructed using the ggnet and ggplot packages in R. PCCs were identified as discrete areas of the contact networks that included three or more interconnected nodes where the density of edges outnumbers the number of nodes. Outliers connected to the PCCs were also included if they were not connected to any other PCC. Nodes acting as connecting hubs between distinct clusters were assigned to one of the otherwise mutually exclusive PCCs. Pairwise viral similarity was compared between clusters of the network using a two-sided Wilcoxon rank-sum test.\n",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "84494156-444e-4c6a-b0ef-396dde98ed08",
+      "submission_id": "6dcb5242-918e-496f-a803-51d1917d3096",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Niel Hens, Hasselt University & University of Antwerp Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65453.sa1](https://doi.org/10.7554/eLife.65453.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work describes how contextual information can be used together with genomic sequencing data to better understand nosocomial SARS-CoV-2 transmission in healthcare settings. This work is of importance to health professionals in charge of tracking nosocomial infections and monitoring infection control strategies.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Genomic sequencing and healthcare dynamics track nosocomial SARS-CoV-2 transmission\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Niel Hens as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Josh Firth (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1) In their study the authors analyse data from 173 high-quality SARS-CoV-2 genomes. They identified eight patient contact clusters based on these 173 SARS-CoV-2 genomes and compare their results with an analysis taking into account patient and HCW movement data which impacts the identification of individuals belonging to the contact clusters. It is based on these differences that the authors conclude that the patient and HCW movement data improve the understanding of the role of patient-HCW interactions. I believe the authors should provide a more thorough assessment of this claim. I would like to note that their endeavour is, as such, not that novel and that researchers have looked into identifying transmission paths based on genomic surveillance with or without contextual information (see references included in the manuscript) also highlighting the importance of issues related to gathering the data needed for doing so.\n\n2) It is not clear from the manuscript whether truly all patients had samples that were subject to genomic sequencing. How (un)likely is the exclusion of data on patients and HCW that were not sequenced and what impact might be expected from their omission?\n\n3) The authors indicate that their work can lead to better tracking and infection control which I believe to be true but they do not provide any specific guidance on how this can be done. This final paragraph of the Discussion may be a useful place to flesh out some ideas about how this empirical data on COVID19 spread within a real-world setting may also be useful of parameterising models aimed at predicting COVID19 spread and control efforts.\n\n4) Subsection \u201cPatient Admissions and Movement\u201d. Some additional mention of the assumptions made here (in terms of inferring contacts in this way) would be useful. Specifically, as other studies have shown that this disease is most likely to spread by short-range face-to-face contacts, it would be interesting to hear how these inferred contacts here might align to types of contact we would expect to be relevant to transmission.\n\n5) The text reads \"Pairwise viral similarity was compared between clusters of the network\" but there is no mention of how \u201cclusters\u201d within the network were defined/found. Subsection \u201cPatient contact clusters\u201d, again, difficult to interpret how these \u201cclusters\u201d were quantified from the network data. Subsection \u201cContact clusters including patients and healthcare workers (HCWs)\u201d, the text currently is a bit unclear about the timeframes used for defining a \u201ccontact\u201d between individuals over each of the different \u201ccontact\u201d types specified throughout the text. It'd be good to have a general outline of what timeframes were used for defining a \u201ccontact\u201d in each case, and if different timeframes are used it'd be helpful to outline why.\n\nReviewer #1 (Recommendations for the authors):\n\nI believe that the current impact statement originating from this work is not completely supported by the data analysis as is. The authors should more clearly demonstrate the novelty of their work.\n\nHow sure are we, based on the provided results, that their claim is supported?\n\n\u2013 I found it particularly difficult to understand whether all patients and HCW in the different hospital wards were sampled and sequenced when positive.\n\n\u2013 The authors did not include any sensitivity analysis with regards to the definition of patient-patient contacts; which in my experience is not free of interpretation and therefore can have an impact on the analysis.\n",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a6ce5c1a-97ba-462f-8f01-3533212ea58d",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C1",
+      "claim": "173 high-quality SARS-CoV-2 genomes were obtained from patients and healthcare workers across multiple geographically distinct UK hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced SARS-CoV-2 genomes for patients and healthcare workers (HCWs) across multiple geographically distinct UK hospitals, obtaining 173 high-quality SARS-CoV-2 genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of genomes obtained and their sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "61adf4a6-e9aa-4cb9-827c-83c5a17f0e59",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C2",
+      "claim": "Eight patient contact clusters (PCCs) were identified with significantly increased similarity in genomic variants compared to non-clustered samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified eight patient contact clusters (PCC) with significantly increased similarity in genomic variants compared to non-clustered samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the identification of eight PCCs with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "7954f76e-ebdb-4f52-a2bd-e407a8b3a733",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C3",
+      "claim": "Incorporation of HCW location data increased the number of individuals within PCCs and identified additional links in SARS-CoV-2 transmission pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of HCW location further increased the number of individuals within PCCs and identified additional links in SARS-CoV-2 transmission pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the effect of incorporating HCW location data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "bcc050bc-7fd2-42c1-99e7-205e7dbd7790",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C4",
+      "claim": "Patients within PCCs carried viruses more genetically identical to HCWs in the same ward location.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients within PCCs carried viruses more genetically identical to HCWs in the same ward location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding about genetic similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "6d638b83-7959-45b0-9586-e2f221b9466b",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C5",
+      "claim": "The SARS-CoV-2 pandemic continues to place a significant burden on healthcare services worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "The severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) pandemic continues to place a significant burden on healthcare services worldwide (Miller et al., 2020; Propper et al., 2020; Maringe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "ba6dbf2b-17f6-4fa0-ae62-546c79e58fbf",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C6",
+      "claim": "Individuals at high risk of developing severe responses to SARS-CoV-2 infection are vulnerable to transmission in hospitals and care homes due to close and regular contact between patients and healthcare workers.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the spread and outbreak of SARS-CoV-2 infections is particularly important in hospitals and care homes where individuals at high risk of developing severe responses to infection are vulnerable to transmission due to close and regular contact between patients and healthcare workers (HCWs) (Clark et al., 2020; Nguyen et al., 2020; Rivett et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "00087add-4e9f-4f1c-b198-21211b7cdf8d",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C7",
+      "claim": "SARS-CoV-2 vaccines may reduce risk to individuals in hospitals who receive the vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the recent development of promising SARS-CoV-2 vaccines may reduce risk to individuals in hospitals who receive the vaccine (Walsh et al., 2020; Anderson et al., 2020; Keech et al., 2020; Lodge, 2020), risk of infection will not be completely mitigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to four studies on vaccines.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "0a6e5e04-69f4-4803-a837-27276ff29039",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C8",
+      "claim": "Risk of SARS-CoV-2 infection will not be completely mitigated by vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the recent development of promising SARS-CoV-2 vaccines may reduce risk to individuals in hospitals who receive the vaccine (Walsh et al., 2020; Anderson et al., 2020; Keech et al., 2020; Lodge, 2020), risk of infection will not be completely mitigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the limitations of vaccines.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "70b6de6b-a764-406c-9cd6-2e36fdddde7d",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C9",
+      "claim": "Standard methods of infection control will continue to be required to ensure patient and HCW safety.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard methods of infection control will continue to be required to ensure patient and HCW safety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the statement that vaccines will not completely mitigate risk.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "98cb26d2-dfb9-4847-ab18-2b433882e856",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C10",
+      "claim": "Regular and iterative testing for SARS-CoV-2 in both patients and HCWs underpins approaches that quantify and control nosocomial transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Regular and iterative testing for SARS-CoV-2, in both patients and HCWs, underpins approaches that quantify and control nosocomial transmission (Black et al., 2020) but will not provide insights into how the virus may have spread throughout an institution, alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Black et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "f0a66bff-ea55-40ab-a80a-e701727f75ce",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C11",
+      "claim": "Testing alone will not provide insights into how SARS-CoV-2 may have spread throughout an institution.",
+      "claim_type": "EXPLICIT",
+      "source": "Regular and iterative testing for SARS-CoV-2, in both patients and HCWs, underpins approaches that quantify and control nosocomial transmission (Black et al., 2020) but will not provide insights into how the virus may have spread throughout an institution, alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of testing without additional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "1977d30f-e072-4c06-a2e3-1b57f398525d",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C12",
+      "claim": "The degree to which different groups (patients, HCW) propagate SARS-CoV-2 transmission remains uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the degree to which different groups (patients, HCW) propagate SARS-CoV-2 transmission remains uncertain, the utility of screening approaches to prospectively prevent nosocomial spread is difficult to evaluate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "456de62f-e56e-4ac1-83b7-a012d473b052",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C13",
+      "claim": "HCWs are an important component in pathogen outbreak investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that HCWs are an important component in pathogen outbreak investigations (Peacock et al., 2018; Wenger et al., 1995; de Swart et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three studies and described as well established.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "973f7032-930a-45ee-ad88-cd2c839edd14",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C14",
+      "claim": "39 (23%) of the 173 high-quality sequenced samples were from HCWs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 173 high-quality sequenced samples, 39 (23%) were HCW samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts and percentages from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "95214676-d1d8-414a-858c-86ad068e0002",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C15",
+      "claim": "134 samples were collected from patients admitted to a total of 31 wards and units situated across five hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 134 samples were collected from patients admitted to a total of 31 wards and units situated across the five hospitals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "d74c836f-f14a-49b8-8f43-3c64507bfeba",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C16",
+      "claim": "All samples were collected between calendar week 11 (commencing 8 March 2020) and calendar week 23 (ending 6 June 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "All samples were collected between calendar week 11 (commencing 8 March 2020) and calendar week 23 (ending 6 June 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific dates for sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "9327a70e-abc0-4cda-a4b2-d92fb6308dd0",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C17",
+      "claim": "44 (25%) of the 173 high-quality samples were from three hospital locations which had seen sudden rises in SARS-CoV-2-positive cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-four (25%) of the 173 high-quality samples were from three hospital locations, which had seen sudden rises in SARS-CoV-2-positive cases; an additional 35 samples from these locations failed to meet our quality criteria for sequencing quality (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts and percentages from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "64f1a799-ab02-44f8-a58f-d93985b0424a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C18",
+      "claim": "An additional 35 samples from outbreak locations failed to meet quality criteria for sequencing quality.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-four (25%) of the 173 high-quality samples were from three hospital locations, which had seen sudden rises in SARS-CoV-2-positive cases; an additional 35 samples from these locations failed to meet our quality criteria for sequencing quality (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of samples that failed quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "a6af7e07-5fd5-4b77-8f88-c148e604c920",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C19",
+      "claim": "47 (35%) of 134 patient samples were from A and E departments.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-seven (35%) of 134 patient samples were from A and E departments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts and percentages from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "3757d2e5-ab55-466f-a785-7300a0a797a9",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C20",
+      "claim": "The median age of the 134 patients with sequenced samples was 81 years (mean = 75 years; range = 6 weeks\u2013100 years).",
+      "claim_type": "EXPLICIT",
+      "source": "The median age of the 134 patients with sequenced samples was 81 years (mean = 75 years; range = 6 weeks\u2013100 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific demographic statistics from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "efbff6b7-df22-4c1f-9129-9601eab5f616",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C21",
+      "claim": "Samples consistently met 10\u00d7 minimum coverage thresholds when a total yield of >400 ng was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of SARS-CoV-2 amplicon yield versus target coverage found that samples consistently met 10\u00d7 minimum coverage thresholds when a total yield of >400 ng was obtained (median = 846; range = 86\u20133667; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific threshold values and references Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "557b8b9d-7c4f-405d-b926-38b8b2cef860",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C22",
+      "claim": "Samples with Ct values of 31 or more resulted in lower amplicon yield and frequently failed to meet sequencing coverage thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Where RT-qPCR cycle threshold (Ct) values were provided, we found samples with Ct values of 31 or more resulted in lower amplicon yield and frequently failed to meet sequencing coverage thresholds (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific Ct value thresholds and references Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "2e1e1c22-64ab-4656-8544-0c53f66f2280",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C23",
+      "claim": "268 genomic variants were identified in the 173 high-quality samples in comparison to MN908947.3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 173 high-quality samples, we identified 268 genomic variants in comparison to MN908947.3, of which 86 were recurrent variants across samples (range = 2\u2013126 samples) and 182 were unique to single samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of genomic variants identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "95ab4312-897b-4250-8bad-824f10bc7ea5",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C24",
+      "claim": "86 of the 268 genomic variants were recurrent variants across samples (range = 2\u2013126 samples).",
+      "claim_type": "EXPLICIT",
+      "source": "In the 173 high-quality samples, we identified 268 genomic variants in comparison to MN908947.3, of which 86 were recurrent variants across samples (range = 2\u2013126 samples) and 182 were unique to single samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of recurrent variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "78b953fb-87b9-4d65-8c13-e774af14c489",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C25",
+      "claim": "182 of the 268 genomic variants were unique to single samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 173 high-quality samples, we identified 268 genomic variants in comparison to MN908947.3, of which 86 were recurrent variants across samples (range = 2\u2013126 samples) and 182 were unique to single samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of unique variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "782c8698-2ea7-401f-b75c-84d322ad4d3c",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C26",
+      "claim": "87% (151/173) of sequenced genomes were confidently assigned to an existing lineage (SH-alrt > 80%, UFbootstrap > 90%).",
+      "claim_type": "EXPLICIT",
+      "source": "Eight-seven percent (151/173) of sequenced genomes were confidently assigned to an existing lineage (SH-alrt > 80%, UFbootstrap > 90%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages and statistical thresholds for lineage assignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "9a54b276-70e5-4527-9231-a3621cd03d1d",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C27",
+      "claim": "11 distinct lineages were identified in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 11 distinct lineages in our cohort, with a bias towards viral genomes assigned to lineage B.1.1 (71%, 122/173; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific counts of lineages and references Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "44b813f4-201c-4c77-bc86-c3babb3ac860",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C28",
+      "claim": "71% (122/173) of viral genomes were assigned to lineage B.1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 11 distinct lineages in our cohort, with a bias towards viral genomes assigned to lineage B.1.1 (71%, 122/173; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific percentages and counts for lineage B.1.1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "c2f7f2f9-f5a3-4396-ac6e-a8fee01a0d7a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C29",
+      "claim": "There were no samples assigned to lineage A.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no samples assigned to lineage A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the absence of lineage A samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "d120d491-8914-4f1a-adca-a37789546607",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C30",
+      "claim": "Viral lineage B.1.1 showed a constant relative frequency over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating the calendar week of sample collection into this analysis suggested a constant relative frequency of viral lineage B.1.1 over time (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes temporal analysis results and references Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "94f05d56-8aa7-4f3e-a93b-6d23c10d4c2a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C31",
+      "claim": "Viral lineage B.1.1 was present in samples collected from 29 different wards, including A and E, and in HCWs.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral lineage B.1.1 was present in samples collected from 29 different wards, including A and E, and in HCWs, and was present in our cohort between calendar weeks 12\u201323 (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific counts of wards and references Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "f7c3d6d8-dca5-47bd-8314-99d309108f3a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C32",
+      "claim": "Viral lineage B.1.1 was present in the cohort between calendar weeks 12\u201323.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral lineage B.1.1 was present in samples collected from 29 different wards, including A and E, and in HCWs, and was present in our cohort between calendar weeks 12\u201323 (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific temporal information and references Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "37128604-692b-471f-b2f1-26a74fed0394",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C33",
+      "claim": "Clusters within the phylogenetic tree were formed predominantly from viral genome sequences taken in individual wards.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed clusters within the phylogenetic tree that were formed predominantly from viral genome sequences taken in individual wards (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes observations from phylogenetic analysis and references Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "d641d692-5211-4607-8318-d39d9d7a5526",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C34",
+      "claim": "19/31 of the samples in one identified cluster were collected from a single hospital ward (H2_W7).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 19/31 of the samples in one of these identified clusters were collected from a single hospital ward (H2_W7, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific counts for a cluster and references Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "2a6680e7-c5d7-440e-b5b4-b1a3114abe03",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C35",
+      "claim": "The phylogenetic clusters were supported by maximum-likelihood and consensus (10,000 ultrafast bootstraps) approaches for tree creation.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenetic clusters were supported by maximum-likelihood and consensus (10,000 ultrafast bootstraps) approaches for tree creation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the statistical methods used to support cluster identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "5761d383-15b3-49c9-a1b7-dbb1b99bcd84",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C36",
+      "claim": "Pairwise similarity of viral genomes in identified clusters was significantly higher within clusters compared to non-clustered samples (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the pairwise similarity of viral genomes in identified clusters, demonstrating significantly higher viral genetic similarity within clusters compared to non-clustered samples (Figure 2, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical significance values and references Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "b478bdec-f4ea-404c-9d4d-9444e49123e5",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C37",
+      "claim": "There was a 20-fold increase in potential contacts between a patient and six or more patients with the most closely genetically related viral genome samples in certain areas of the phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified areas of the phylogeny where there was a 20-fold increase, than expected by chance, in potential contacts between a patient and six or more patients with the most closest genetically related viral genome samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific fold-change values from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "01d38d18-293a-45eb-99f2-8f399e4897fc",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C38",
+      "claim": "Seven distinct clusters of individuals were identified defined by high level of genetic relatedness of the viral genome sequence and a high degree of potential patient\u2013patient contacts during the likely period of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Consecutive windows of increased (20-fold) patient\u2013patient contacts were merged to identify seven distinct clusters of individuals defined by high level of genetic relatedness of the viral genome sequence and a high degree of potential patient\u2013patient contacts during the likely period of infection (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the identification of clusters and references Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "6ca3e02a-2640-4f85-b599-2eea3f513be4",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C39",
+      "claim": "49 potential contacts were identified between HCWs and patients, including 10 HCWs and 18 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 49 potential contacts between HCWs and patients, including 10 HCWs and 18 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of contacts between HCWs and patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "918b0798-5248-4f63-87ba-250e809838af",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C40",
+      "claim": "Incorporating HCW information onto the local phylogeny expanded the density of contacts within hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating this information onto the local phylogeny expanded the density of contacts within hotspots (Figure 1\u2014figure supplement 4) and altered the structure of the PCCs within the likely period of infection (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the effect of incorporating HCW data and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "778e3ac2-f6a2-48c7-bfeb-b88d7786f1c3",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C41",
+      "claim": "Significantly increased genetic similarity was identified in viral samples between patients and HCWs in the same ward locations in comparison to patients and HCWs from different wards (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we identified significantly increased genetic similarity in viral samples between patients and HCWs in the same ward locations in comparison to patients and HCWs from different wards (Figure 2, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical significance values and references Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "c9d230c1-a7d0-4052-b1a6-8d74a7683e58",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C42",
+      "claim": "Greater genetic similarity was observed within each of the PCCs with HCW interactions incorporated (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed greater genetic similarity within each of the PCCs with HCW interactions incorporated (Figure 2, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical significance values and references Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "e9d9828e-1f6b-493b-ba59-968ab839332f",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C44",
+      "claim": "44 individuals were identified within VCs in the newly defined HCW contact clusters (HCW_A, HCW_B, HCW_C), 21 of whom were not identified within VCs using PCCs alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 44 individuals within VCs in the newly defined HCW contact clusters (HCW_A, HCW_B, HCW_C), 21 of whom were not identified within VCs using PCCs alone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific counts from the analysis and references Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "208461f2-0252-4d0d-b3e0-de9cadba036f",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C45",
+      "claim": "Six genetically identical VCs including 18 individuals were identified within the newly defined contact clusters including HCWs and patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the newly defined contact clusters including HCWs and patients, we identified six genetically identical VCs including 18 individuals, and 24 individuals with viral sequences differing by a single genomic variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of viral clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "b2a754bf-cd05-406f-99e5-7c8082df997a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C46",
+      "claim": "24 individuals with viral sequences differing by a single genomic variant were identified within the newly defined contact clusters including HCWs and patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the newly defined contact clusters including HCWs and patients, we identified six genetically identical VCs including 18 individuals, and 24 individuals with viral sequences differing by a single genomic variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of individuals with similar viral sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "3396596d-0f76-4f9f-9b99-8d78f4ad9cfe",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C47",
+      "claim": "All identified contact clusters could be rooted back to potential 'founder' viral samples that occurred early during the suspected outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that all identified contact clusters could be rooted back to potential 'founder' viral samples that occurred early during the suspected outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes temporal patterns observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "d0243552-2d16-4121-b055-68c96a29df4b",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C48",
+      "claim": "In PCC_B and PCC_D, which occurred on the same hospital ward at different time points, the original 'founder' viral samples contained the novel genomic variant MN908947.3\u20133228-T-G.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in PCC_B and PCC_D (Figure 3), which occurred on the same hospital ward at different time points, the original 'founder' viral samples contained the novel (at time of sample collection) genomic variant MN908947.3\u20133228-T-G.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific variant information and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "339aa102-caf0-42e5-9a81-7b535626d8e4",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C49",
+      "claim": "18 (95%) of 19 viral samples subsequently collected from hospital ward H2_W7 contained the novel variant MN908947.3\u20133228-T-G.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighteen (95%) of 19 viral samples subsequently collected from this hospital ward also contained the same novel variant, at least 16 of these cases were probable or definite hospital-acquired infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts and percentages of samples with the variant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "46292eed-4f8d-4d3e-860c-1b17b1d8fd9e",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C50",
+      "claim": "At least 16 of the 18 cases with the MN908947.3\u20133228-T-G variant were probable or definite hospital-acquired infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighteen (95%) of 19 viral samples subsequently collected from this hospital ward also contained the same novel variant, at least 16 of these cases were probable or definite hospital-acquired infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of hospital-acquired infections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "3a95a6d6-c3a1-4460-99a5-8084b13f5bf3",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C51",
+      "claim": "Reducing the quality threshold for sequencing datasets (\u226550% coverage at \u226510\u00d7 coverage) identified the MN908947.3\u20133228-T-G variant in an additional five samples collected from hospital ward H2_W7.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the quality threshold for sequencing datasets (\u226550% coverage at \u226510\u00d7 coverage) identified the MN908947.3\u20133228-T-G variant in an additional five samples collected from this hospital location (83%, n = 6 additional samples included with modified criteria).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of additional samples identified with modified criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "9b49abd2-fc47-44e7-9336-bd069eea2fe4",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C52",
+      "claim": "Samples excluded due to sequencing quality criteria may be missing links within SARS-CoV-2 transmission pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "These data highlight that samples excluded from our analyses due to sequencing quality criteria may be missing links within SARS-CoV-2 transmission pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that lower quality samples contained relevant variants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "167921c7-fb4b-46eb-a84c-76e5d4b063e8",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C53",
+      "claim": "The number of genomic variants identified against the MN908947.3 reference genome increases over time within each of the contact networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed further trends indicative of nosocomial outbreaks, including the number of genomic variants identified against the MN908947.3 reference genome increasing over time within each of the contact networks, and consistently observed that samples collected early during the suspected outbreaks had a greater number of derived or identical samples within the outbreak than those collected at a later day (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes temporal trends observed in the data and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "ff5f4c78-75d9-44d5-8158-476eeb99c0ec",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C54",
+      "claim": "Samples collected early during the suspected outbreaks had a greater number of derived or identical samples within the outbreak than those collected at a later day.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed further trends indicative of nosocomial outbreaks, including the number of genomic variants identified against the MN908947.3 reference genome increasing over time within each of the contact networks, and consistently observed that samples collected early during the suspected outbreaks had a greater number of derived or identical samples within the outbreak than those collected at a later day (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes temporal trends observed in the data and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "c351ddb3-04dc-4103-a907-2354048d2d20",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C55",
+      "claim": "The observed temporal trends would be expected if single ancestral SARS-CoV-2 sequences were original founders of an outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these trends would be expected if single ancestral SARS-CoV-2 sequences were original founders of an outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed temporal patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "d11e60ef-72e2-4dd9-be8d-55a73e4f86fe",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C56",
+      "claim": "Inclusion of contact data increased confidence in the characterisation of nosocomial outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We incorporated potential contacts between the two groups into a phylogenetic analysis and comparison of pairwise genetic similarity. Overall, this demonstrated that inclusion of contact data increased confidence in the characterisation of nosocomial outbreaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the analyses performed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "80aaf660-23ee-4a55-9f9f-69a5cb95853f",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C57",
+      "claim": "At the time of analysis, there was no routine SARS-CoV-2 screening of asymptomatic HCWs.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of analysis, there was no routine SARS-CoV-2 screening of asymptomatic HCWs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the screening practices at the time of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "9b115337-db6d-4a29-b833-11b0a7202164",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C58",
+      "claim": "Different locations within the hospitals were assigned as either green (SARS-CoV-2-negative) or red (SARS-CoV-2-positive) zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other UK hospitals, the different locations within the hospitals were assigned as either green (SARS-CoV-2-negative) or red (SARS-CoV-2-positive) zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the infection control strategy used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "c9e6ba0d-b7ef-4475-9750-922ec9427ffc",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C59",
+      "claim": "The green/red zone strategy, in combination with additional infection control measures such as staff bubbles, is widespread as a method to reduce nosocomial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy, in combination with additional infection control measures such as staff bubbles, is widespread as a method to reduce nosocomial infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practices in UK hospitals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "2298e84f-722b-4632-8eab-2fc92422daa5",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C60",
+      "claim": "Patients tested positive after spending prolonged periods of time in green areas, indicating unrecognised transmission events between the two areas or from the community into green zones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as patients tested positive after spending prolonged periods of time in green areas, it became apparent that there were unrecognised transmission events between the two areas or from the community into green zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of positive tests in green zones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "d4cb633a-220d-4e1a-873d-d401d4ba25ae",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C61",
+      "claim": "Viral genome sequencing offers a realistic possibility to track and identify root causes of nosocomial transmissions.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral genome sequencing offers a realistic possibility to track and identify root causes of nosocomial transmissions (Lucey et al., 2020; Meredith et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "787de81e-c4f3-4ed4-9f2d-f9e700507b9f",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C62",
+      "claim": "The predominance of a single SARS-CoV-2 lineage meant that precise differentiation of viral samples from individual hospital wards was not possible at the lineage level.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominance of a single SARS-CoV-2 lineage meant that precise differentiation of viral samples from individual hospital wards was not possible at this level (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the lineage analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "dedde5e6-e3f8-4c15-ba30-456a001754a6",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C63",
+      "claim": "The low genetic diversity of SARS-CoV-2 causes complexity in the identification of nosocomial outbreaks, as samples may be genetically identical by chance rather than through transmission between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously noted that the low genetic diversity of SARS-CoV-2 causes complexity in the identification of nosocomial outbreaks, as samples may be genetically identical by chance rather than through transmission between individuals (Meredith et al., 2020; Gudbjartsson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "40df341d-42dc-4cfa-8973-6f6be3b827c2",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C64",
+      "claim": "The data reemphasize the low genetic diversity of SARS-CoV-2, with a median number of 11 (range = 2\u201316) variants identified per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reemphasise this low genetic diversity of SARS-CoV-2, with a median number of 11 (range = 2\u201316) variants identified per sample, and an average pairwise similarity of 61.5% (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific statistics from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "ff33e518-9e53-41a1-afc2-97ed91d67b8d",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C65",
+      "claim": "The average pairwise similarity of viral samples was 61.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reemphasise this low genetic diversity of SARS-CoV-2, with a median number of 11 (range = 2\u201316) variants identified per sample, and an average pairwise similarity of 61.5% (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific statistics from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "cf9813b9-b6d6-4378-9056-739406ba1a71",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C66",
+      "claim": "Patient admissions records were available for 104/134 patients for at least one day prior to SARS-CoV-2-positive test.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating our analyses with patient admissions record (available for 104/134 patients for at least one day prior to SARS-CoV-2-positive test) and location of staff workplaces (available for 31/39 HCWs) identified clusters of individuals who had interacted during their most likely periods of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of available data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "47a77d26-9ec0-4d82-a50e-95875f7016b4",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C67",
+      "claim": "Location of staff workplaces was available for 31/39 HCWs.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating our analyses with patient admissions record (available for 104/134 patients for at least one day prior to SARS-CoV-2-positive test) and location of staff workplaces (available for 31/39 HCWs) identified clusters of individuals who had interacted during their most likely periods of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of available data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "55bc06fa-46fc-4b36-8219-a6071d12fd4a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C68",
+      "claim": "Individuals who had been in contact during the likely period of infection were more likely to have genetically more similar viral samples than individuals who had not been in contact.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses confirmed that individuals who had been in contact during this period were more likely to have genetically more similar viral samples than individuals who had not been in contact (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the results of statistical analyses and references Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "2e7b1aeb-506c-4047-90b6-d1c5a579e1eb",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C69",
+      "claim": "Viral samples may be genetically identical or similar by chance due to the low genetic diversity of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot exclude that viral samples are genetically identical or similar by chance due to the low genetic diversity of SARS-CoV-2, the spatial and temporal patterns of viral genetic relatedness that we observe provide strong evidence for nosocomial transmission amongst both patients and HCWs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation based on known properties of SARS-CoV-2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "1fa88172-790c-4123-9a3a-7b61a6a09a3c",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C70",
+      "claim": "The spatial and temporal patterns of viral genetic relatedness provide strong evidence for nosocomial transmission amongst both patients and HCWs.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot exclude that viral samples are genetically identical or similar by chance due to the low genetic diversity of SARS-CoV-2, the spatial and temporal patterns of viral genetic relatedness that we observe provide strong evidence for nosocomial transmission amongst both patients and HCWs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed patterns in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "fe0d5d0a-aa5c-447f-9861-5139fea2e4e6",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C71",
+      "claim": "Spatial and temporal patterns of viral genetic relatedness are observed in at least five distinct clusters, across three geographically distinct hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "These trends are observed in at least five distinct clusters, across three geographically distinct hospitals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of clusters and hospitals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "f97bdac4-94fd-4406-94ad-bf2ece9d1c3a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C72",
+      "claim": "The presence of novel genomic variants (at the time of analysis) transmitting through identified clusters further reinforces evidence for nosocomial transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "These are further reinforced by the presence of novel genomic variants (at the time of analysis) transmitting through identified clusters (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation of novel variants in clusters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "173934ef-e22b-41cb-b159-98ccd0ccc72a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C73",
+      "claim": "The data support the widespread adoption of iterative screening strategies for HCWs who may be pre-symptomatic or asymptomatic shedders of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest these data support the widespread adoption of iterative screening strategies for HCWs who may be pre-symptomatic or asymptomatic shedders of SARS-CoV-2 (Black et al., 2020; Arons et al., 2020; Buitrago-Garcia et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "08da46d5-3595-449d-92fc-60975ac7cf6b",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C74",
+      "claim": "Pre-symptomatic or asymptomatic individuals have been demonstrated to be important contributors to SARS-CoV-2 outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-symptomatic or asymptomatic individuals have been demonstrated to be important contributors to SARS-CoV-2 outbreaks (Rivett et al., 2020; Kasper et al., 2020; Letizia et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "d3702382-31f3-4d15-9333-b1c53ee26f45",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C75",
+      "claim": "Comprehensive characterisation of outbreak clusters can be hindered by the existence of hidden links between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have shown that comprehensive characterisation of outbreak clusters can be hindered by the existence of hidden links between individuals, even where all individuals within clusters are known and completely isolated from external contacts (Sekizuka et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sekizuka et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "78dcc2ff-da18-48ce-96b9-a22e676175ae",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C76",
+      "claim": "The presence of cohort-specific genomic variants shared between individuals without a known connection suggests missing individuals or connections are adding complexity to the analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "In our data, we observed the presence of cohort-specific genomic variants shared between individuals but without a known connection between the sampled individuals. Here, it is likely that missing individuals or connections between surveyed individuals are adding complexity to our analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of shared variants without known connections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "f078b5fe-8445-49e3-a82f-a53149f71126",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C77",
+      "claim": "Track and tracing smartphone software could be useful to extend the characterisation of contacts between individuals and to understand the accuracy of the assumptions enforced in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "While the use of digital contact tracing is difficult in hospital environments, track and tracing smartphone software could be useful to extend the characterisation of contacts between individuals and to understand the accuracy of the assumptions enforced in this study (Firth et al., 2020; Ferretti et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "a2522320-557d-4ab5-8003-3077bb5e1bac",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C79",
+      "claim": "Physical distancing of less than 1 m increases likelihood of SARS-CoV-2 transmission between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is supported through recent meta-analyses concluding that physical distancing of less than 1 m increases likelihood of SARS-CoV-2 transmission between individuals (Chu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "c43c6b40-68c0-4178-8cf9-c1441d2ff234",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C80",
+      "claim": "The approach of inferring contacts has imperfect assumptions but is likely to dilute rather than inflate the statistical significance of the investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that this approach has imperfect assumptions but is likely to dilute rather than inflate the statistical significance of the investigations reported in this study (Figures 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about the impact of methodological limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "b50ff993-8d70-477b-a5fd-97fdd752de64",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C81",
+      "claim": "Over half of SARS-CoV-2 transmissions occur when individuals are pre-symptomatic.",
+      "claim_type": "EXPLICIT",
+      "source": "These approaches are supported by recent data demonstrating that over half of SARS-CoV-2 transmissions occur when individuals are pre-symptomatic and that transmission likelihood increases with the duration and proximity of contact (Sun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sun et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "025d6baa-7bb4-4f2b-8853-dc0c7e381d4c",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C82",
+      "claim": "SARS-CoV-2 transmission likelihood increases with the duration and proximity of contact.",
+      "claim_type": "EXPLICIT",
+      "source": "These approaches are supported by recent data demonstrating that over half of SARS-CoV-2 transmissions occur when individuals are pre-symptomatic and that transmission likelihood increases with the duration and proximity of contact (Sun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sun et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "8b4a6b1d-cfa8-49f1-b4b8-23044f2e7ff3",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C83",
+      "claim": "SARS-CoV-2 genome sequencing alongside patient admission and staff workplace information can identify transmission events within the healthcare setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that SARS-CoV-2 genome sequencing alongside patient admission and staff workplace information can identify transmission events within the healthcare setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "0e258b79-1843-46ad-9553-65bbe7d92df6",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C84",
+      "claim": "Adoption of genomic approaches in real time (within 48 hr) alongside consideration of patient movement datasets will enable rapid identification of linked hospital-acquired SARS-CoV-2 infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking forward, we expect that the adoption of genomic approaches in real time, for example within 48 hr, alongside consideration of patient movement datasets will enable rapid identification of linked hospital-acquired SARS-CoV-2 infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "d83c7cef-b8b5-4b63-9bd0-a4f4dd369c4e",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C85",
+      "claim": "Real-time genomic approaches could optimise infection control management strategies, lead to targeted interventions, reduce nosocomial transmission, and ultimately prevent avoidable harm to vulnerable individuals who acquire COVID-19 whilst in the healthcare setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Such approaches could optimise infection control management strategies, lead to targeted interventions, reduce nosocomial transmission, and ultimately prevent avoidable harm to vulnerable individuals who acquire COVID-19 whilst in the healthcare setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential benefits of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "b74e452e-654e-44f7-a029-1c1fde415855",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C86",
+      "claim": "Throat and nasal swab samples were collected from patients and healthcare professionals based at MFT hospital sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Throat and nasal swab samples were collected from patients and healthcare professionals based at MFT hospital sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the sample collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "7882c42d-189f-43a5-a826-8a259551dde4",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C87",
+      "claim": "Diagnostic SARS-CoV-2 RT-qPCR assays were performed by the Clinical Virology Department of the Manchester Medical Microbiology Partnership (MMMP; Manchester, UK).",
+      "claim_type": "EXPLICIT",
+      "source": "Diagnostic SARS-CoV-2 RT-qPCR assays were performed by the Clinical Virology Department of the Manchester Medical Microbiology Partnership (MMMP; Manchester, UK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the diagnostic testing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "4858a0b1-5ab6-476a-8184-a2f51a783fd8",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C88",
+      "claim": "RT-qPCR-positive samples were selected for SARS-CoV-2 whole-genome analyses at the Manchester Centre for Genomic Medicine (MCGM; Manchester, UK).",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR-positive samples were selected for SARS-CoV-2 whole-genome analyses at the Manchester Centre for Genomic Medicine (MCGM; Manchester, UK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the sample selection and analysis location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "5f82d6fc-fa2f-4aee-845a-91c19cf8bf56",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C89",
+      "claim": "All available SARS-CoV-2-positive samples from hospital wards highlighted by infection control surveillance officers as potential outbreaks were attempted to be sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "We attempted to sequence all available SARS-CoV-2-positive samples from hospital wards highlighted by infection control surveillance officers as potential outbreaks within our sample collection period due to sudden rises in positive cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the sample selection strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "cc0aa931-9baa-4984-9ba0-eb5f50505561",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C90",
+      "claim": "Samples with \u226575% of the MN908947.3 reference genome covered by \u226510 high-quality reads with at least 50 aligning nucleotides were included for downstream analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples with \u226575% of the MN908947.3 reference genome covered by \u226510 high-quality reads with at least 50 aligning nucleotides were included for downstream analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the quality control criteria for sample inclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "fd3561f1-e37e-4ec7-b557-2d51b5da6c9c",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C91",
+      "claim": "Variants with an allele fraction of at least 0.6 in high-quality mapped reads were identified in comparison to MN908947.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants with an allele fraction of at least 0.6 in high-quality mapped reads were identified in comparison to MN908947.3, and a consensus FASTA built using iVar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the variant calling methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "e7747094-94c8-4cd9-bd83-e30a488cbe09",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C92",
+      "claim": "Maximum-likelihood trees rooted to MN908947.3 using 1000 bootstraps were generated with IQ-TREE v1.6.12.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-way alignments were performed using MAFFT v7.407 (Katoh et al., 2002), and maximum-likelihood trees rooted to MN908947.3 using 1000 bootstraps were generated with IQ-TREE v1.6.12 (Minh et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the phylogenetic analysis methodology with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "62a5348b-0a4e-4f66-9c51-b781e4073861",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C93",
+      "claim": "Pangolin v2.0 was utilised for positioning of sequences within the global phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Pangolin v2.0 (Rambaut et al., 2020) was utilised for positioning of sequences within the global phylogenetic tree (lineages v2020-05-19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the lineage assignment methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "3fba244d-55a7-4d3f-a746-039ad85a3e5e",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C94",
+      "claim": "All high-quality genome sequences were shared with COG-UK.",
+      "claim_type": "EXPLICIT",
+      "source": "All high-quality genome sequences were shared with COG-UK (COVID-19 Genomics UK (COG-UK), 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes data sharing practices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "fb486771-d418-4d88-af47-b27d00d2c888",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C95",
+      "claim": "Hospital admission data were collected for all patients with high-quality sequenced genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected hospital admission data for all patients with high-quality sequenced genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "06a4dc37-c6dc-4617-a3c4-cc2b1fe7b8ab",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C96",
+      "claim": "Close face-to-face contact is assumed to be the most likely method for SARS-CoV-2 transmission between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This method for defining contacts assumes that close face-to-face contact is the most likely method for SARS-CoV-2 transmission between individuals and aims to identify individuals within our cohort who are most likely to have had such interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption made in the methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "7cfcc8f2-a587-4ede-af23-e66afeb461f7",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C97",
+      "claim": "Contact windows are defined in accordance with national guidelines for SARS-CoV-2 nosocomial outbreak: community-acquired infection (positive test within 2 days of hospital admission); possible hospital-acquired infection (positive test 3\u20137 days after hospital admission); probable hospital-acquired infection (positive test 8\u201314 days after hospital admission); and definite hospital-acquired infection (positive test >14 days after hospital admission).",
+      "claim_type": "EXPLICIT",
+      "source": "The windows of contacts are defined in accordance with national guidelines for SARS-CoV-2 nosocomial outbreak: community-acquired infection (positive test within 2 days of hospital admission); possible hospital-acquired infection (positive test 3\u20137 days after hospital admission); probable hospital-acquired infection (positive test 8\u201314 days after hospital admission); and definite hospital-acquired infection (positive test >14 days after hospital admission).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the classification system used based on national guidelines.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "496de991-78ba-4c6d-82d0-da3981ddcd02",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C98",
+      "claim": "HCWs are assumed to have had direct or indirect contacts with all patients who had been present in their workplace (hospital ward).",
+      "claim_type": "EXPLICIT",
+      "source": "We made additional assumptions for including HCWs in the contact networks, specifically, we assumed that HCWs had direct or indirect contacts with all patients who had been present in their workplace (hospital ward) and assumed interaction between HCWs and patients were constant up to the day of positive SARS-CoV-2 tests for patients \u2013 this extended the contact window incorporated into the binary matrix to include any interactions between patients and HCWs in the 1\u20137 days prior to a patient testing positive for SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption made in the methodology for HCW contacts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "e77a5a4e-489a-43f1-819d-249aeef47f35",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C99",
+      "claim": "Interaction between HCWs and patients is assumed to be constant up to the day of positive SARS-CoV-2 tests for patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We made additional assumptions for including HCWs in the contact networks, specifically, we assumed that HCWs had direct or indirect contacts with all patients who had been present in their workplace (hospital ward) and assumed interaction between HCWs and patients were constant up to the day of positive SARS-CoV-2 tests for patients \u2013 this extended the contact window incorporated into the binary matrix to include any interactions between patients and HCWs in the 1\u20137 days prior to a patient testing positive for SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption made in the methodology for HCW-patient interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "3e76947f-c8fb-45cf-8517-7f8e06b1748d",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C100",
+      "claim": "PCCs were identified as discrete areas of the contact networks that included three or more interconnected nodes where the density of edges outnumbers the number of nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "PCCs were identified as discrete areas of the contact networks that included three or more interconnected nodes where the density of edges outnumbers the number of nodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the criteria for defining PCCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "adfce1a1-bd60-4d20-bbcc-2b6de87617b5",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "claim_id": "C101",
+      "claim": "Pairwise viral similarity was compared between clusters of the network using a two-sided Wilcoxon rank-sum test.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairwise viral similarity was compared between clusters of the network using a two-sided Wilcoxon rank-sum test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the statistical test used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "edcbe172-bea7-4bfc-b94a-c87fd046d47a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study obtained 173 high-quality SARS-CoV-2 genomes from 134 patients across 31 wards in 5 UK hospitals and 39 healthcare workers (23% of samples), collected between March 8 and June 6, 2020. 44 samples (25%) were from three hospital locations experiencing outbreak conditions, with an additional 35 samples from these locations failing quality control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C14-C20 provide consistent, specific demographic and sampling data with exact counts, percentages, dates, and locations. The data are internally consistent and represent straightforward descriptive statistics of the cohort. No contradictions or methodological concerns are evident in these basic descriptive claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "3c3d9e97-29f4-477a-b42f-279908917d39",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sequencing quality control established that samples with >400 ng total yield consistently met 10\u00d7 minimum coverage thresholds, while samples with Ct values \u226531 frequently failed to meet coverage requirements. The study included only samples with \u226575% genome coverage at \u226510\u00d7 depth for downstream analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 and C90 describe quality control metrics with specific thresholds supported by Figure 1\u2014figure supplement 1. The relationship between Ct values, amplicon yield, and coverage is a well-established technical consideration in viral sequencing. The quality criteria are clearly defined and appropriate for the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "b7b35b5c-5aa9-447b-9418-0c65813c0f34",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Variant analysis identified 268 genomic variants compared to reference MN908947.3, with 86 recurrent variants (range 2-126 samples) and 182 unique to single samples. The median number of variants per sample was 11 (range 2-16), with an average pairwise similarity of 61.5%, confirming the low genetic diversity of SARS-CoV-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25, C64-C65 provide specific quantitative data on variant identification that are internally consistent (268 = 86 + 182). The low genetic diversity observation aligns with established knowledge about SARS-CoV-2 (C63) and is supported by the cited literature. The statistics are straightforward descriptive measures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "f01de281-360d-4490-bed0-a39655d7225a",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Phylogenetic lineage assignment using Pangolin identified 11 distinct lineages, with 87% (151/173) of genomes confidently assigned (SH-alrt >80%, UFbootstrap >90%). Lineage B.1.1 dominated the cohort (71%, 122/173), was present across 29 different wards including A&E and HCWs, showed constant relative frequency over calendar weeks 12-23, and no lineage A samples were detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 describe lineage assignment results with specific statistical thresholds and are supported by Figure 1\u2014figure supplement 2. The dominance of B.1.1 is clearly documented with exact counts. The use of established phylogenetic support metrics (SH-alrt, UFbootstrap) is appropriate. The temporal and spatial distribution data are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "284bbb92-8a81-470a-8b31-9168cf243796",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Local phylogenetic analysis revealed clusters formed predominantly from viral genomes from individual wards (e.g., 19/31 samples in one cluster from ward H2_W7), supported by both maximum-likelihood and consensus bootstrap approaches. However, the predominance of lineage B.1.1 prevented precise differentiation of samples at the lineage level alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 describe phylogenetic clustering patterns supported by Figure 1\u2014figure supplement 3 with specific examples and appropriate statistical methods (10,000 bootstraps). Claim C62 acknowledges a limitation that is consistent with the observed lineage distribution (C27-C28). The need for finer-scale analysis beyond lineage assignment is a logical inference from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "56cc194c-7ccd-4af6-a872-7fbc4933a483",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Integration of patient admission records (available for 104/134 patients) with genomic data identified eight patient contact clusters (PCCs) showing significantly higher viral genetic similarity within clusters compared to non-clustered samples (p<0.001). Seven distinct clusters were defined by 20-fold enrichment of patient-patient contacts among genetically related samples during the likely infection period (3-7 days pre-test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C36-C38, C66, C68, C100-C101 describe the core patient-only clustering analysis with specific statistical significance (p<0.001, Wilcoxon rank-sum test) and enrichment metrics (20-fold). The methodology is clearly described with appropriate statistical testing. Figure 2 supports the genetic similarity findings. The discrepancy between 8 PCCs (C2) and 7 clusters (C38) likely reflects different clustering criteria but both are explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "89f8b641-5bf3-49c3-9089-32937132d61e",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Incorporating HCW workplace location data (available for 31/39 HCWs) identified 49 potential HCW-patient contacts involving 10 HCWs and 18 patients, which expanded contact density within clusters and identified 44 individuals in viral clusters (21 not identified by patient-only analysis). Patients and HCWs in the same ward showed significantly increased viral genetic similarity (p<0.001), and genetic similarity within PCCs increased when HCW interactions were incorporated (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C39-C42, C44-C46, C67 describe the enhanced clustering with HCW data, supported by specific counts and statistical significance (p<0.001). Figure 1 and Figure 2 provide visual and quantitative support. The finding that 21 additional individuals were identified in viral clusters demonstrates added value of HCW data. The statistical comparisons use appropriate methods (C101).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Temporal analysis revealed that all contact clusters could be traced to early 'founder' viral samples, with the number of genomic variants increasing over time and early samples having more derived/identical descendants. In ward H2_W7, 18/19 (95%) samples contained the novel variant MN908947.3\u20133228-T-G, with at least 16 being probable/definite hospital-acquired infections. Lowering quality thresholds identified this variant in 5 additional samples, suggesting excluded samples may represent missing transmission links.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 describe temporal patterns supported by Figure 3, with specific examples (H2_W7 cluster) and quantitative data (95% variant prevalence, 16 hospital-acquired cases). The temporal trends (increasing variants over time, early samples as founders) are consistent with outbreak dynamics. The observation about quality thresholds (C51-C52) is a reasonable inference supported by the additional variant detections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "d5f4f1c5-972f-46bd-89b6-6fb0f484054d",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study demonstrates that SARS-CoV-2 genome sequencing combined with patient admission and staff workplace data can identify nosocomial transmission events. Spatial and temporal patterns of viral genetic relatedness across at least five distinct clusters in three hospitals, reinforced by novel genomic variants transmitting through clusters, provide strong evidence for nosocomial transmission among patients and HCWs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C70-C72, C83 represent the main conclusions, supported by the convergence of genetic, spatial, and temporal data across multiple independent clusters (C71). The presence of novel variants in clusters (C72) strengthens the inference beyond chance genetic similarity. However, the authors appropriately acknowledge the limitation that genetic similarity could occur by chance (C69), making this a well-qualified conclusion rather than definitive proof of transmission directionality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "1c78b0ec-fc65-4ae0-9be9-5e42d6ed973f",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study acknowledges key limitations: SARS-CoV-2's low genetic diversity means samples may be genetically identical by chance rather than through transmission; hidden links between individuals can hinder comprehensive outbreak characterization; shared variants without known connections suggest missing individuals or connections; and the contact inference approach has imperfect assumptions that likely dilute rather than inflate statistical significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C69, C75-C76, C80 appropriately acknowledge methodological limitations supported by citations (C63, C75). The acknowledgment that imperfect assumptions likely dilute significance (C80) is a conservative interpretation. These limitations are important context for interpreting the main findings and demonstrate appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "f9a6d707-3e1f-465d-9531-f6fc27aef11b",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The contact network methodology assumes close face-to-face contact as the primary SARS-CoV-2 transmission route and defines contact windows according to national nosocomial infection guidelines (community-acquired: \u22642 days; possible: 3-7 days; probable: 8-14 days; definite: >14 days post-admission). HCWs were assumed to have contacts with all patients in their workplace ward, with constant interaction up to the day of patient positive tests, extending the contact window to 1-7 days pre-test.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C99 describe methodological assumptions that are reasonable but unvalidated. The assumption of face-to-face contact as primary transmission is supported by meta-analysis (C79), and the national guidelines provide standardization (C97). However, the HCW assumptions (C98-C99) are simplifications that may not reflect actual contact patterns\u2014HCWs may not contact all patients equally, and interaction intensity likely varies. While C80 suggests these assumptions dilute significance, the actual impact on false positive rates is uncertain without validation data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "86cc6f34-4e10-4fc7-a3ad-c6e7abae8fa6",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The data support widespread adoption of iterative screening strategies for HCWs who may be pre-symptomatic or asymptomatic SARS-CoV-2 shedders, as such individuals are important contributors to outbreaks and over half of transmissions occur pre-symptomatically, with transmission likelihood increasing with contact duration and proximity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is a policy recommendation supported by the study's findings of HCW involvement in transmission clusters (C3-C4, C39-C42) and by citations to relevant literature (C74, C81-C82). The recommendation is appropriately qualified as a suggestion rather than a definitive conclusion. The supporting evidence from prior work (C74, C81-C82) strengthens the rationale, though the current study does not directly test screening interventions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "38e3a761-1b2b-45ca-bfe3-938243cdcec5",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that future adoption of real-time genomic approaches (within 48 hours) alongside patient movement data could enable rapid identification of hospital-acquired infections, optimize infection control strategies, enable targeted interventions, reduce nosocomial transmission, and prevent harm to vulnerable individuals. Track-and-trace smartphone software could extend contact characterization and validate study assumptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77, C84-C85 are speculative proposals about future applications (C77, C84-C85 are explicitly marked as speculation). While the current study demonstrates feasibility of retrospective genomic epidemiology, real-time implementation within 48 hours faces practical challenges not addressed (turnaround time, cost, infrastructure, interpretation speed). The proposed benefits (C85) are plausible but undemonstrated. These represent reasonable future directions but lack empirical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "638808a8-743e-4883-81ed-507286182bb7",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes context: SARS-CoV-2 places significant burden on healthcare worldwide; high-risk individuals in hospitals/care homes are vulnerable due to close patient-HCW contact; vaccines may reduce but not eliminate risk, necessitating continued infection control; testing alone cannot reveal transmission pathways; the degree of transmission by different groups remains uncertain; and HCWs are established as important in outbreak investigations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C13 provide background context supported by appropriate citations. These are general knowledge claims (C5-C6, C10, C13) or reasonable inferences (C8-C9, C11-C12) that frame the study rationale. The statement that vaccines won't completely mitigate risk (C8) was speculative at the time (early pandemic) but has proven accurate. These contextual claims appropriately motivate the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "a00956f7-0e88-4da2-bf1b-8c8e7ecd1110",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study context included no routine screening of asymptomatic HCWs and implementation of green (SARS-CoV-2-negative) and red (positive) zones with staff bubbles\u2014a widespread infection control strategy. However, patients testing positive after prolonged time in green areas indicated unrecognized transmission events. Viral genome sequencing offers realistic possibility to track nosocomial transmission root causes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 describe the healthcare setting and rationale for genomic approaches. The green/red zone strategy (C58-C59) is documented practice, and the observation of positive tests in green zones (C60) is a data-driven inference that motivated the study. The statement about sequencing potential (C61) is supported by citations and validated by the study's own findings. These claims provide important context for interpreting results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "c11175b2-9c27-4d07-851a-8954233b3402",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methods included collection of throat/nasal swabs from patients and HCWs at MFT hospitals, RT-qPCR testing by MMMP, whole-genome sequencing at MCGM targeting outbreak wards, variant calling with \u22650.6 allele fraction threshold, phylogenetic analysis using MAFFT and IQ-TREE with 1000 bootstraps, lineage assignment with Pangolin v2.0, data sharing with COG-UK, and collection of hospital admission data for all patients with high-quality genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C95 describe standard methodological procedures with appropriate tools and parameters. The sequencing and bioinformatics pipeline uses established, peer-reviewed methods (MAFFT, IQ-TREE, Pangolin) with appropriate citations (C92-C93). The variant calling threshold (0.6 allele fraction, C91) is reasonable for consensus calling. Data sharing with COG-UK (C94) demonstrates good practice. These methods are adequately described for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    },
+    {
+      "id": "c65a8bb3-562e-4c06-82be-42eb33c3fbb4",
+      "content_id": "102e1267-c2ca-4ab2-8d20-fc4396ad1063",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The contact inference assumption is supported by meta-analyses showing that physical distancing of less than 1 m increases likelihood of SARS-CoV-2 transmission between individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 cites meta-analysis evidence (Chu et al., 2020) supporting the face-to-face contact assumption used in the methodology (C96). This provides empirical justification for the contact definition, though it doesn't validate the specific implementation in hospital settings where contact patterns may differ from general populations studied in meta-analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:00.667248Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a6ce5c1a-97ba-462f-8f01-3533212ea58d",
+      "result_id": "edcbe172-bea7-4bfc-b94a-c87fd046d47a"
+    },
+    {
+      "claim_id": "973f7032-930a-45ee-ad88-cd2c839edd14",
+      "result_id": "edcbe172-bea7-4bfc-b94a-c87fd046d47a"
+    },
+    {
+      "claim_id": "95214676-d1d8-414a-858c-86ad068e0002",
+      "result_id": "edcbe172-bea7-4bfc-b94a-c87fd046d47a"
+    },
+    {
+      "claim_id": "d74c836f-f14a-49b8-8f43-3c64507bfeba",
+      "result_id": "edcbe172-bea7-4bfc-b94a-c87fd046d47a"
+    },
+    {
+      "claim_id": "9327a70e-abc0-4cda-a4b2-d92fb6308dd0",
+      "result_id": "edcbe172-bea7-4bfc-b94a-c87fd046d47a"
+    },
+    {
+      "claim_id": "64f1a799-ab02-44f8-a58f-d93985b0424a",
+      "result_id": "edcbe172-bea7-4bfc-b94a-c87fd046d47a"
+    },
+    {
+      "claim_id": "a6af7e07-5fd5-4b77-8f88-c148e604c920",
+      "result_id": "edcbe172-bea7-4bfc-b94a-c87fd046d47a"
+    },
+    {
+      "claim_id": "3757d2e5-ab55-466f-a785-7300a0a797a9",
+      "result_id": "edcbe172-bea7-4bfc-b94a-c87fd046d47a"
+    },
+    {
+      "claim_id": "efbff6b7-df22-4c1f-9129-9601eab5f616",
+      "result_id": "3c3d9e97-29f4-477a-b42f-279908917d39"
+    },
+    {
+      "claim_id": "557b8b9d-7c4f-405d-b926-38b8b2cef860",
+      "result_id": "3c3d9e97-29f4-477a-b42f-279908917d39"
+    },
+    {
+      "claim_id": "cc0aa931-9baa-4984-9ba0-eb5f50505561",
+      "result_id": "3c3d9e97-29f4-477a-b42f-279908917d39"
+    },
+    {
+      "claim_id": "2e1e1c22-64ab-4656-8544-0c53f66f2280",
+      "result_id": "b7b35b5c-5aa9-447b-9418-0c65813c0f34"
+    },
+    {
+      "claim_id": "95ab4312-897b-4250-8bad-824f10bc7ea5",
+      "result_id": "b7b35b5c-5aa9-447b-9418-0c65813c0f34"
+    },
+    {
+      "claim_id": "78b953fb-87b9-4d65-8c13-e774af14c489",
+      "result_id": "b7b35b5c-5aa9-447b-9418-0c65813c0f34"
+    },
+    {
+      "claim_id": "40df341d-42dc-4cfa-8973-6f6be3b827c2",
+      "result_id": "b7b35b5c-5aa9-447b-9418-0c65813c0f34"
+    },
+    {
+      "claim_id": "ff33e518-9e53-41a1-afc2-97ed91d67b8d",
+      "result_id": "b7b35b5c-5aa9-447b-9418-0c65813c0f34"
+    },
+    {
+      "claim_id": "782c8698-2ea7-401f-b75c-84d322ad4d3c",
+      "result_id": "f01de281-360d-4490-bed0-a39655d7225a"
+    },
+    {
+      "claim_id": "9a54b276-70e5-4527-9231-a3621cd03d1d",
+      "result_id": "f01de281-360d-4490-bed0-a39655d7225a"
+    },
+    {
+      "claim_id": "44b813f4-201c-4c77-bc86-c3babb3ac860",
+      "result_id": "f01de281-360d-4490-bed0-a39655d7225a"
+    },
+    {
+      "claim_id": "c2f7f2f9-f5a3-4396-ac6e-a8fee01a0d7a",
+      "result_id": "f01de281-360d-4490-bed0-a39655d7225a"
+    },
+    {
+      "claim_id": "d120d491-8914-4f1a-adca-a37789546607",
+      "result_id": "f01de281-360d-4490-bed0-a39655d7225a"
+    },
+    {
+      "claim_id": "94f05d56-8aa7-4f3e-a93b-6d23c10d4c2a",
+      "result_id": "f01de281-360d-4490-bed0-a39655d7225a"
+    },
+    {
+      "claim_id": "f7c3d6d8-dca5-47bd-8314-99d309108f3a",
+      "result_id": "f01de281-360d-4490-bed0-a39655d7225a"
+    },
+    {
+      "claim_id": "37128604-692b-471f-b2f1-26a74fed0394",
+      "result_id": "284bbb92-8a81-470a-8b31-9168cf243796"
+    },
+    {
+      "claim_id": "d641d692-5211-4607-8318-d39d9d7a5526",
+      "result_id": "284bbb92-8a81-470a-8b31-9168cf243796"
+    },
+    {
+      "claim_id": "2a6680e7-c5d7-440e-b5b4-b1a3114abe03",
+      "result_id": "284bbb92-8a81-470a-8b31-9168cf243796"
+    },
+    {
+      "claim_id": "787de81e-c4f3-4ed4-9f2d-f9e700507b9f",
+      "result_id": "284bbb92-8a81-470a-8b31-9168cf243796"
+    },
+    {
+      "claim_id": "61adf4a6-e9aa-4cb9-827c-83c5a17f0e59",
+      "result_id": "56cc194c-7ccd-4af6-a872-7fbc4933a483"
+    },
+    {
+      "claim_id": "5761d383-15b3-49c9-a1b7-dbb1b99bcd84",
+      "result_id": "56cc194c-7ccd-4af6-a872-7fbc4933a483"
+    },
+    {
+      "claim_id": "b478bdec-f4ea-404c-9d4d-9444e49123e5",
+      "result_id": "56cc194c-7ccd-4af6-a872-7fbc4933a483"
+    },
+    {
+      "claim_id": "01d38d18-293a-45eb-99f2-8f399e4897fc",
+      "result_id": "56cc194c-7ccd-4af6-a872-7fbc4933a483"
+    },
+    {
+      "claim_id": "cf9813b9-b6d6-4378-9056-739406ba1a71",
+      "result_id": "56cc194c-7ccd-4af6-a872-7fbc4933a483"
+    },
+    {
+      "claim_id": "47a77d26-9ec0-4d82-a50e-95875f7016b4",
+      "result_id": "56cc194c-7ccd-4af6-a872-7fbc4933a483"
+    },
+    {
+      "claim_id": "55bc06fa-46fc-4b36-8219-a6071d12fd4a",
+      "result_id": "56cc194c-7ccd-4af6-a872-7fbc4933a483"
+    },
+    {
+      "claim_id": "3e76947f-c8fb-45cf-8517-7f8e06b1748d",
+      "result_id": "56cc194c-7ccd-4af6-a872-7fbc4933a483"
+    },
+    {
+      "claim_id": "adfce1a1-bd60-4d20-bbcc-2b6de87617b5",
+      "result_id": "56cc194c-7ccd-4af6-a872-7fbc4933a483"
+    },
+    {
+      "claim_id": "7954f76e-ebdb-4f52-a2bd-e407a8b3a733",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "bcc050bc-7fd2-42c1-99e7-205e7dbd7790",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "6ca3e02a-2640-4f85-b599-2eea3f513be4",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "918b0798-5248-4f63-87ba-250e809838af",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "778e3ac2-f6a2-48c7-bfeb-b88d7786f1c3",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "c9d230c1-a7d0-4052-b1a6-8d74a7683e58",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "e9d9828e-1f6b-493b-ba59-968ab839332f",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "208461f2-0252-4d0d-b3e0-de9cadba036f",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "b2a754bf-cd05-406f-99e5-7c8082df997a",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "47a77d26-9ec0-4d82-a50e-95875f7016b4",
+      "result_id": "89f8b641-5bf3-49c3-9089-32937132d61e"
+    },
+    {
+      "claim_id": "3396596d-0f76-4f9f-9b99-8d78f4ad9cfe",
+      "result_id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da"
+    },
+    {
+      "claim_id": "d0243552-2d16-4121-b055-68c96a29df4b",
+      "result_id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da"
+    },
+    {
+      "claim_id": "339aa102-caf0-42e5-9a81-7b535626d8e4",
+      "result_id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da"
+    },
+    {
+      "claim_id": "46292eed-4f8d-4d3e-860c-1b17b1d8fd9e",
+      "result_id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da"
+    },
+    {
+      "claim_id": "3a95a6d6-c3a1-4460-99a5-8084b13f5bf3",
+      "result_id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da"
+    },
+    {
+      "claim_id": "9b49abd2-fc47-44e7-9336-bd069eea2fe4",
+      "result_id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da"
+    },
+    {
+      "claim_id": "167921c7-fb4b-46eb-a84c-76e5d4b063e8",
+      "result_id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da"
+    },
+    {
+      "claim_id": "ff5f4c78-75d9-44d5-8158-476eeb99c0ec",
+      "result_id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da"
+    },
+    {
+      "claim_id": "c351ddb3-04dc-4103-a907-2354048d2d20",
+      "result_id": "698b4e2b-5101-43b2-9cdf-ec37da3d39da"
+    },
+    {
+      "claim_id": "d11e60ef-72e2-4dd9-be8d-55a73e4f86fe",
+      "result_id": "d5f4f1c5-972f-46bd-89b6-6fb0f484054d"
+    },
+    {
+      "claim_id": "1fa88172-790c-4123-9a3a-7b61a6a09a3c",
+      "result_id": "d5f4f1c5-972f-46bd-89b6-6fb0f484054d"
+    },
+    {
+      "claim_id": "fe0d5d0a-aa5c-447f-9861-5139fea2e4e6",
+      "result_id": "d5f4f1c5-972f-46bd-89b6-6fb0f484054d"
+    },
+    {
+      "claim_id": "f97bdac4-94fd-4406-94ad-bf2ece9d1c3a",
+      "result_id": "d5f4f1c5-972f-46bd-89b6-6fb0f484054d"
+    },
+    {
+      "claim_id": "8b4a6b1d-cfa8-49f1-b4b8-23044f2e7ff3",
+      "result_id": "d5f4f1c5-972f-46bd-89b6-6fb0f484054d"
+    },
+    {
+      "claim_id": "dedde5e6-e3f8-4c15-ba30-456a001754a6",
+      "result_id": "1c78b0ec-fc65-4ae0-9be9-5e42d6ed973f"
+    },
+    {
+      "claim_id": "2e7b1aeb-506c-4047-90b6-d1c5a579e1eb",
+      "result_id": "1c78b0ec-fc65-4ae0-9be9-5e42d6ed973f"
+    },
+    {
+      "claim_id": "d3702382-31f3-4d15-9333-b1c53ee26f45",
+      "result_id": "1c78b0ec-fc65-4ae0-9be9-5e42d6ed973f"
+    },
+    {
+      "claim_id": "78dcc2ff-da18-48ce-96b9-a22e676175ae",
+      "result_id": "1c78b0ec-fc65-4ae0-9be9-5e42d6ed973f"
+    },
+    {
+      "claim_id": "c43c6b40-68c0-4178-8cf9-c1441d2ff234",
+      "result_id": "1c78b0ec-fc65-4ae0-9be9-5e42d6ed973f"
+    },
+    {
+      "claim_id": "06a4dc37-c6dc-4617-a3c4-cc2b1fe7b8ab",
+      "result_id": "f9a6d707-3e1f-465d-9531-f6fc27aef11b"
+    },
+    {
+      "claim_id": "7cfcc8f2-a587-4ede-af23-e66afeb461f7",
+      "result_id": "f9a6d707-3e1f-465d-9531-f6fc27aef11b"
+    },
+    {
+      "claim_id": "496de991-78ba-4c6d-82d0-da3981ddcd02",
+      "result_id": "f9a6d707-3e1f-465d-9531-f6fc27aef11b"
+    },
+    {
+      "claim_id": "e77a5a4e-489a-43f1-819d-249aeef47f35",
+      "result_id": "f9a6d707-3e1f-465d-9531-f6fc27aef11b"
+    },
+    {
+      "claim_id": "173934ef-e22b-41cb-b159-98ccd0ccc72a",
+      "result_id": "86cc6f34-4e10-4fc7-a3ad-c6e7abae8fa6"
+    },
+    {
+      "claim_id": "08da46d5-3595-449d-92fc-60975ac7cf6b",
+      "result_id": "86cc6f34-4e10-4fc7-a3ad-c6e7abae8fa6"
+    },
+    {
+      "claim_id": "b50ff993-8d70-477b-a5fd-97fdd752de64",
+      "result_id": "86cc6f34-4e10-4fc7-a3ad-c6e7abae8fa6"
+    },
+    {
+      "claim_id": "025d6baa-7bb4-4f2b-8853-dc0c7e381d4c",
+      "result_id": "86cc6f34-4e10-4fc7-a3ad-c6e7abae8fa6"
+    },
+    {
+      "claim_id": "f078b5fe-8445-49e3-a82f-a53149f71126",
+      "result_id": "38e3a761-1b2b-45ca-bfe3-938243cdcec5"
+    },
+    {
+      "claim_id": "0e258b79-1843-46ad-9553-65bbe7d92df6",
+      "result_id": "38e3a761-1b2b-45ca-bfe3-938243cdcec5"
+    },
+    {
+      "claim_id": "d83c7cef-b8b5-4b63-9bd0-a4f4dd369c4e",
+      "result_id": "38e3a761-1b2b-45ca-bfe3-938243cdcec5"
+    },
+    {
+      "claim_id": "6d638b83-7959-45b0-9586-e2f221b9466b",
+      "result_id": "638808a8-743e-4883-81ed-507286182bb7"
+    },
+    {
+      "claim_id": "ba6dbf2b-17f6-4fa0-ae62-546c79e58fbf",
+      "result_id": "638808a8-743e-4883-81ed-507286182bb7"
+    },
+    {
+      "claim_id": "00087add-4e9f-4f1c-b198-21211b7cdf8d",
+      "result_id": "638808a8-743e-4883-81ed-507286182bb7"
+    },
+    {
+      "claim_id": "0a6e5e04-69f4-4803-a837-27276ff29039",
+      "result_id": "638808a8-743e-4883-81ed-507286182bb7"
+    },
+    {
+      "claim_id": "70b6de6b-a764-406c-9cd6-2e36fdddde7d",
+      "result_id": "638808a8-743e-4883-81ed-507286182bb7"
+    },
+    {
+      "claim_id": "98cb26d2-dfb9-4847-ab18-2b433882e856",
+      "result_id": "638808a8-743e-4883-81ed-507286182bb7"
+    },
+    {
+      "claim_id": "f0a66bff-ea55-40ab-a80a-e701727f75ce",
+      "result_id": "638808a8-743e-4883-81ed-507286182bb7"
+    },
+    {
+      "claim_id": "1977d30f-e072-4c06-a2e3-1b57f398525d",
+      "result_id": "638808a8-743e-4883-81ed-507286182bb7"
+    },
+    {
+      "claim_id": "456de62f-e56e-4ac1-83b7-a012d473b052",
+      "result_id": "638808a8-743e-4883-81ed-507286182bb7"
+    },
+    {
+      "claim_id": "80aaf660-23ee-4a55-9f9f-69a5cb95853f",
+      "result_id": "a00956f7-0e88-4da2-bf1b-8c8e7ecd1110"
+    },
+    {
+      "claim_id": "9b115337-db6d-4a29-b833-11b0a7202164",
+      "result_id": "a00956f7-0e88-4da2-bf1b-8c8e7ecd1110"
+    },
+    {
+      "claim_id": "c9e6ba0d-b7ef-4475-9750-922ec9427ffc",
+      "result_id": "a00956f7-0e88-4da2-bf1b-8c8e7ecd1110"
+    },
+    {
+      "claim_id": "2298e84f-722b-4632-8eab-2fc92422daa5",
+      "result_id": "a00956f7-0e88-4da2-bf1b-8c8e7ecd1110"
+    },
+    {
+      "claim_id": "d4cb633a-220d-4e1a-873d-d401d4ba25ae",
+      "result_id": "a00956f7-0e88-4da2-bf1b-8c8e7ecd1110"
+    },
+    {
+      "claim_id": "b74e452e-654e-44f7-a029-1c1fde415855",
+      "result_id": "c11175b2-9c27-4d07-851a-8954233b3402"
+    },
+    {
+      "claim_id": "7882c42d-189f-43a5-a826-8a259551dde4",
+      "result_id": "c11175b2-9c27-4d07-851a-8954233b3402"
+    },
+    {
+      "claim_id": "4858a0b1-5ab6-476a-8184-a2f51a783fd8",
+      "result_id": "c11175b2-9c27-4d07-851a-8954233b3402"
+    },
+    {
+      "claim_id": "5f82d6fc-fa2f-4aee-845a-91c19cf8bf56",
+      "result_id": "c11175b2-9c27-4d07-851a-8954233b3402"
+    },
+    {
+      "claim_id": "fd3561f1-e37e-4ec7-b557-2d51b5da6c9c",
+      "result_id": "c11175b2-9c27-4d07-851a-8954233b3402"
+    },
+    {
+      "claim_id": "e7747094-94c8-4cd9-bd83-e30a488cbe09",
+      "result_id": "c11175b2-9c27-4d07-851a-8954233b3402"
+    },
+    {
+      "claim_id": "62a5348b-0a4e-4f66-9c51-b781e4073861",
+      "result_id": "c11175b2-9c27-4d07-851a-8954233b3402"
+    },
+    {
+      "claim_id": "3fba244d-55a7-4d3f-a746-039ad85a3e5e",
+      "result_id": "c11175b2-9c27-4d07-851a-8954233b3402"
+    },
+    {
+      "claim_id": "fb486771-d418-4d88-af47-b27d00d2c888",
+      "result_id": "c11175b2-9c27-4d07-851a-8954233b3402"
+    },
+    {
+      "claim_id": "a2522320-557d-4ab5-8003-3077bb5e1bac",
+      "result_id": "c65a8bb3-562e-4c06-82be-42eb33c3fbb4"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1645 @@
+{
+  "submission": {
+    "id": "dd9edab2-eda6-42b1-9520-25e1a9330855",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:34:52.541136Z",
+    "updated_at": "2025-12-03T18:34:52.541136Z"
+  },
+  "content": [
+    {
+      "id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "submission_id": "dd9edab2-eda6-42b1-9520-25e1a9330855",
+      "content_type": "manuscript",
+      "content_text": "# Initiation of HIV-1 Gag lattice assembly is required for recognition of the viral genome packaging signal\n\n## Authors\n\n- Xiao Lei<sup>1</sup> ([ORCID: 0000-0001-8641-7824](https://orcid.org/0000-0001-8641-7824))\n- Daniel Gon\u00e7alves-Carneiro<sup>1</sup> ([ORCID: 0000-0002-9333-1540](https://orcid.org/0000-0002-9333-1540))\n- Trinity M Zang<sup>1</sup>\n- Paul D Bieniasz<sup>1</sup> ([ORCID: 0000-0002-2368-3719](https://orcid.org/0000-0002-2368-3719)) \u2020\n\n### Affiliations\n\n1. Laboratory of Retrovirology, Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))\n2. Howard Hughes Medical Institute, The Rockefeller University New York, New York United States ([ROR:006w34k90](https://ror.org/006w34k90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe encapsidation of HIV-1 gRNA into virions is enabled by the binding of the nucleocapsid (NC) domain of the HIV-1 Gag polyprotein to the structured viral RNA packaging signal (\u03a8) at the 5\u2019 end of the viral genome. However, the subcellular location and oligomeric status of Gag during the initial Gag-\u03a8 encounter remain uncertain. Domains other than NC, such as capsid (CA), may therefore indirectly affect RNA recognition. To investigate the contribution of Gag domains to \u03a8 recognition in a cellular environment, we performed protein-protein crosslinking and protein-RNA crosslinking immunoprecipitation coupled with sequencing (CLIP-seq) experiments. We demonstrate that NC alone does not bind specifically to \u03a8 in living cells, whereas full-length Gag and a CANC subdomain bind to \u03a8 with high specificity. Perturbation of the \u03a8 RNA structure or NC zinc fingers affected CANC:\u03a8 binding specificity. Notably, CANC variants with substitutions that disrupt CA:CA dimer, trimer, or hexamer interfaces in the immature Gag lattice also affected RNA binding, and mutants that were unable to assemble a nascent Gag lattice were unable to specifically bind to \u03a8. Artificially multimerized NC domains did not specifically bind \u03a8. CA variants with substitutions in inositol phosphate coordinating residues that prevent CA hexamerization were also deficient in \u03a8 binding and second-site revertant mutants that restored CA assembly also restored specific binding to \u03a8. Overall, these data indicate that the correct assembly of a nascent immature CA lattice is required for the specific interaction between Gag and \u03a8 in cells.\n\n## Introduction\n\nThe generation of infectious HIV-1 virions depends on the encapsidation of two copies of HIV-1 gRNA into virions. HIV-1 gRNA is present among a vast excess of host RNAs in the cytosol of infected cells, yet it is the dominant RNA species in virions (Rulli et al., 2007). The specific encapsidation of HIV-1 gRNA into virions is attributed to the specific interaction between HIV-1 Gag and the viral packaging signal \u2018\u03a8\u2019 (Aldovini and Young, 1990; Berkowitz et al., 1996; Clavel and Orenstein, 1990; Clever et al., 1995; Clever et al., 2000; Darlix et al., 1990; D\u2019Souza and Summers, 2005; Lever et al., 1989). The Gag protein consists of three major domains: matrix (MA), capsid (CA), and nucleocapsid (NC). The NC domain binds directly to RNA, and point mutations or deletions disrupting the zinc fingers of NC interfere with the specific packaging of gRNA (Aldovini and Young, 1990; Gorelick et al., 1990). Nevertheless, since the NC domain is present in the context of Gag precursor when initiating interactions with \u03a8, other domains of Gag may also contribute to \u03a8 binding specificity. Indeed, RNase protection assays, yeast-three hybrid assays, and in vitro binding assays suggest that full-length Gag or CANC has different RNA binding specificity compared to NC, and some studies indicate binding to \u03a8 with higher specificity than NC (Bacharach and Goff, 1998; Damgaard et al., 1998; Guo et al., 2020; Kroupa et al., 2020; Webb et al., 2013). Moreover, Gag mutants with CA mutations exhibited reduced gRNA selectivity in an in vitro reconstituted HIV-1 \u03a8 packaging system (Carlson et al., 2016), while Gag mutants with CA assembly deficits cannot initiate gRNA packaging (Duchon et al., 2021; Kutluay et al., 2014; Kutluay and Bieniasz, 2010).\n\nNevertheless, there remains significant uncertainty as to the location, stoichiometry, and the overall nature of the protein RNA complex that initiates HIV-1 assembly. To probe the potential role of CA and early assembly events in the specific interaction between Gag and \u03a8 in biologically relevant settings, we performed crosslinking immunoprecipitation (CLIP) experiments to determine whether full-length Gag, a CANC subdomain, or NC alone could specifically bind to \u03a8 within HIV-1 gRNA in cells. We found that full-length Gag and CANC both bind to \u03a8 with high specificity in the cytosol, whereas an isolated NC domain does not. Through further studies of CA mutants, we demonstrate that manipulations which perturb any of the CA:CA interfaces required for the formation of an immature Gag lattice also perturb the specific interaction between Gag/CANC and \u03a8. Our findings suggest that assembly of a nascent immature Gag lattice is required for the initial recognition of \u03a8 and the initiation of viral RNA packaging in the infected cell cytoplasm.\n\n## Results\n\n### CLIP method for assessing Gag-RNA interaction in cells\n\nWe used a modified CLIP method based on published protocols (Kutluay et al., 2014; Shema Mugisha et al., 2020) to measure HIV-1 Gag-RNA binding interactions in living cells. In this CLIP procedure, an infrared-dye-conjugated 3\u2019 adaptor (Zarnegar et al., 2016) is used in place of a conventional radioactive labeled 3\u2019 adaptor. Protein-RNA crosslinking is driven by metabolic 4-thiouridine incorporation into target RNA (Hafner et al., 2010), and the labeled adaptor is ligated to protein/RNA crosslinked species directly on antibody-conjugated Dynabeads (Figure 1\u2014figure supplement 1). These methodological adjustments cut the experimental time by half without loss of sensitivity, enabling higher throughput in CLIP assays.\n\nFor CLIP experiments, we used derivatives of an HIV-1 NL4-3 based proviral construct, referred to as HIV-1 NL4-3 (MA-3xHA/PR\u2212) that carries a 3xHA epitope tag, between the MA and CA domains of Gag and encodes an inactivated protease (Kutluay et al., 2014; Figure 1A). As we intended to study the initial Gag:gRNA interaction in the cytosol and MA is not involved in this process (Bou-Nader et al., 2021; Kutluay et al., 2014), we also generated a proviral construct (referred to as pCANC) in which the start codon of MA (ATG) was mutated to abolish MA expression; instead, an N-terminally 3xHA CANC Gag fragment, along with the C-terminal SP2-p6 extension is expressed (Figure 1A). Crucially, the RNA binding profile of the CANC protein to the HIV-1 genome was similar to that of the full-length Gag protein, with a marginally higher fraction of reads mapping to \u03a8. We speculate that this apparently enhanced preference of CANC for \u03a8 is because the membrane bound Gag, that exhibits more promiscuous binding to the viral genome (Kutluay et al., 2014), is not present when CANC is used.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the pCANC construct. Asterisk indicates the mutation introduced at the matrix (MA) start codon (ATG to ACG). (B) Read density distribution on viral RNA from CLIP experiments in which constructs encoding Gag, CANC, or CANC with mutant \u03a8 elements (CANC DIS-GAGA and CANC InsGGAA) were used. The y-axis represents the decimal fraction of all reads that mapped to the viral genome in which a given nucleotide was present. The x-axis indicates the nucleotide position on the viral genome. A colinear schematic HIV-1 genome is presented above each set of charts. (C) Expanded view of read densities for the 400 nucleotides at the 5\u2019 end of the viral genome. For (B) and (C), CLIP assays for each construct were repeated in at least two independent experiments, and the average read density is plotted.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Schematic flow diagram depiction of the CLIP procedure used in this study.\n\nBoth the full-length Gag protein and CANC exhibited characteristic binding to \u03a8 involving three \u2018peaks\u2019 of read intensity corresponding to U5, SL1, and SL3/4 that are brought into proximity in the folded minimal packaging structure (Bieniasz and Telesnitsky, 2018; Lu et al., 2011; Figure 1B and C). To investigate the effects of RNA perturbation on CANC recognition, we prepared two \u03a8 mutants. In one mutant, the GC-rich \u2018kissing\u2019 loop (GCGCGC) in the dimerization initiation site (DIS) was substituted with a GAGA tetraloop (CANC DIS-GAGA) to prevent RNA dimerization (Lu et al., 2011). In a second mutant, four bases \u2018GGAA\u2019 were appended at the 5\u2019 end of the gRNA, immediately 5\u2019 to three guanosines at the transcription start site of HIV-1 viral genome (CANC InsGGAA). These nucleotides, along with the 5\u2019 cap affect the structure of the entire 5\u2019 leader (Ding et al., 2021). While CANC bound to the unmanipulated \u03a8 sequence with high specificity, the CANC InsGGAA \u03a8 mutant was bound comparatively poorly by CANC, with failure of the 3\u2019 portion of \u03a8 to bind CANC (Figure 1B and C). This finding is consistent with previous studies showing that the exposure of the 5\u2019-cap of gRNA to the translational machinery due to \u2018GGAA\u2019 insertion inhibits gRNA packaging (Ding et al., 2021). The CANC DIS-GAGA \u03a8 mutant, which presumably favors the retention of a monomeric RNA, was bound by CANC specifically within the \u03a8 element, but with the exclusion of the SL1 stem-loop (Figure 1B and C). This finding is consistent with previous findings that other \u03a8 elements are retained in the DIS-GAGA structure as in native dimer (Keane et al., 2015) and suggests that the dimerized RNA elements are part of the structure recognized by Gag. Overall, these results validate the utility of the CLIP method used herein and are consistent with the finding that the tertiary, and to some extent the quaternary, structure of the \u03a8 element is important for accurate recognition by Gag.\n\n### HIV-1 CA is required for specific binding to \u03a8\n\nWe next compared the ability of various manipulated CANC proteins to bind to the gRNA in CLIP assays (Figure 2A). For each protein, the specificity of \u03a8 binding was represented quantitatively by plotting the number of Gag-bound gRNA-derived reads derived from the \u03a8 region in CLIP experiments as a fraction of all gRNA-derived reads (Figure 2\u2014figure supplement 1). First, we performed CLIP experiments with CANC mutants with deletions introduced into the NC domain, whereby the N-terminal zinc finger (CANC dZF1), the C-terminal zinc finger (CANC dZF2), or both zinc fingers (CANC dZF) were deleted (Figure 2A). The deletion of either zinc finger in the NC domain caused a marked reduction in specific \u03a8 binding, while the deletion of both zinc fingers nearly completely abolished specific \u03a8 binding, despite the presence of similar levels of protein for each of the mutant CANC proteins (Figure 2B, Figure 2\u2014figure supplements 1\u20132). This observation is consistent with earlier findings that NC is required for the specific interaction between Gag and \u03a8 (Aldovini and Young, 1990; Didierlaurent et al., 2011; Dorfman et al., 1993; Gorelick et al., 1990).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of the constructs used. Shaded regions indicate NC zinc fingers. (B) Read density distribution on viral RNA from crosslinking immunoprecipitation (CLIP) experiments in which constructs encoding CANC, and mutant derivatives with deletions of the zinc finger 1 (CANC dZF1), zinc finger 2 (CANC dZF2), or both zinc fingers (CANC dZF) were used. Alternatively, a construct (NC) in which capsid (CA) was deleted was used. Each chart represents at least two independent experiments, and the average read density is plotted. (C) Western blot analysis of Gag-derived proteins following chemical crosslinking in living cells using 1,6-Bismaleimidohexane (BMH) prior to cell lysis. Proteins were detected with an anti-NC antibody. (D) Read density distribution on viral RNA from CLIP experiments in which constructs encoding chimeric NC proteins with artificial multimerizing domains were used. Each chart represents at least two independent experiments, and the average read density is plotted.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The decimal fraction of reads, calculated by dividing the number of reads that mapped in the \u03a8 region of the genome (coordinates: 101\u2013356) by the total number of reads mapped to the viral genome, is plotted. Each dot represented data from one independent experiment; error bars indicate SD.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Western blot analysis of the CANC and chimeric fusion proteins used in CLIP experiments. Serial dilution of lysates containing CANC and Hsp90 was used to generate standard curves for quantification. Relative protein levels for each construct (numbers below each lane of the top panel) were first calculated relative to CANC (set at 100) and then further normalized based on the levels of Hsp90 for each construct. The Odyssey Image Studio (LI-COR Biosciences) was used to quantify protein bands.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Quantitative analysis of 1,6-Bismaleimidohexane (BMH) crosslinked artifically multimerized NC proteins in the western blot in Figure 2C. The x-axis shows the pixel location, and the y-axis indicates the average pixel intensity in the lane that was analyzed. The presumed stoichiometry of CANC multimerization based on migration in the gel is marked above each peak. The Odyssey Image Studio Suite (LI-COR Biosciences) was used to quantify protein bands.\n\nNext, to test whether an isolated NC domain was sufficient for specific binding to \u03a8, we deleted the region encoding the CA domain from the CANC construct, thereby generating a construct that encodes NC (along with the SP2-p6 C-terminal extension) with an N-terminal 3xHA tag. CLIP experiments using this construct revealed that NC was well expressed but was not sufficient to bind specifically to \u03a8. Instead, low read counts, distributed across the entire HIV-1 genome, were obtained (Figure 2B, Figure 2\u2014figure supplements 1 and 2). Indeed, the deficit in specific \u03a8 binding associated with CA deletion was as profound as the deficit associated with deletion of both NC zinc fingers (Figure 2B).\n\nSince CANC may form multimers, we considered the possibility that multimerized NC may be sufficient to enable \u03a8-specific RNA binding. Thus, to test whether CA-induced multimerization could be recapitulated by fusion to heterologous protein-protein interaction domains that can drive hexamerization, we substituted the CA domain in the CANC constructs. The C terminal residues of CA and SP1 important for CASP1 6-helix bundle formation (Accola et al., 1998; Datta et al., 2011; Schur et al., 2016; Wagner et al., 2016) were kept intact, and we placed GCN4pII (GCN4pII-SP1-NC) or GCN4pAA (GCN4pAA-SP1-NC) leucine zippers (Harbury et al., 1994; Liu et al., 2006), or ccHex2 synthetic peptide (ccHex2-SP1-NC) between the 3xHA tag and the CASP1 helix (Figure 2A). The ccHex2 synthetic peptide forms hexameric parallel a-helical barrel coil-coils (Thomson et al., 2014). To test for multimerization in cells, we treated HEK293T cells transfected with plasmids expressing CANC and derivatives thereof with 1,6-Bismaleimidohexane (BMH), a cell-permeable maleimide crosslinker that mediates irreversible conjugation between sulfhydryl groups (Dewson, 2015). Protein multimerization was then assessed by western blot analysis of cell lysates with an anti-NC antibody. The chimeric proteins were expressed at level similar to CANC and were able to form multimers, up to and including hexamers, as indicated by the appearance of BMH crosslinked species (Figure 2C, Figure 2\u2014figure supplements 2 and 3). Nevertheless, the chimeric, multimeric NC fusion proteins did not bind specifically to \u03a8 (Figure 2D, Figure 2\u2014figure supplement 1); instead, they exhibited low-level indiscriminate binding across the gRNA, similar to the isolated monomeric NC domain (Figure 2B, Figure 2\u2014figure supplement 1). These results suggest that CA is required for the specific interaction between CANC and \u03a8 and that CA provides some function beyond simple multimerization.\n\n### CA driven assembly of a nascent immature Gag lattice is required for specific \u03a8 recognition\n\nTo investigate how CA drives the specific interaction between CANC and \u03a8, we designed 21 CA substitution mutants. These substitution mutants were selected based on the structures of HIV-1 immature Gag lattice and mutagenesis studies that revealed residues important for mature or immature CA assembly (Forshey et al., 2002; Ganser-Pornillos et al., 2004; Schur et al., 2016; von Schwedler et al., 2003; Wagner et al., 2016). 10 substitution mutants targeted the CA N-terminal domain (NTD): R18A/N21A, A22D, E28A/E29A, P38A, A42D, E45A, D51A, R100A/S102A, T107A/T108A, and T110A/Q112A, and 11 substitution mutants targeted the CA C-terminal domain (CTD) and SP1 region: K158A, W184A/M185A, D197A, Q219A, G222A, P224A, K227A, R229A, SP1 M4A, SP1 T8I, and SP1 T12A (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig3-v2.jpg)\n\n**Figure 3.:** (A) Amino acids selected for substitution are depicted onto a CA monomer component of the immature HIV-1 Gag lattice (adapted from PDB 7ASH). Residues subjected to substitution are shown in ball and stick presentation. (B) A schematic of the immature hexagonal CA lattice showing twofold, threefold, and sixfold symmetry contacts. (C\u2013E) Depiction of substitutions targeting the twofold (C), threefold (D) , and sixfold (E) CA-CA interaction interfaces. One monomer of CASP1 is labeled, and the residues at the respective CA-CA interaction interfaces are colored in red. Other monomers are shown in gray surface presentation.\n\nThese substitutions targeted interfaces at either the twofold, threefold, or sixfold axes of symmetry, where interactions required for the formation of the complete immature Gag lattice occur (Figure 3B\u2013E). Each mutant was subjected to three types of experiment: first, in vivo chemical crosslinking was performed to test propensity of mutant CANC proteins to multimerize. Second, virus particle production experiments were done in which the CA substitutions were introduced to full-length HIV-1 NL4-3 and Gag processing/extracellular virion formation tested. Finally, the panel of CANC mutants was subjected to CLIP experiments to test for specific binding to \u03a8.\n\nIn the in vivo CANC chemical crosslinking experiments, we observed a ladder-like pattern of bands indicating the cytoplasmic formation of higher-order multimers for the unmanipulated CANC, as well as certain CANC mutants (Figure 4A, Figure 4\u2014figure supplement 1). Indeed, the SDS PAGE/western blot approach permitted the detection of crosslinked species containing up to ~8\u201310 CANC subunits. Based on these results, the CA mutants could be divided into three categories: (i) mutants with no deficits in the formation of higher-order multimers, specifically R18A/N21A, P38A, E45A, Q219A, SP1 T8I, and SP1 T12A; (ii) mutants with moderate deficits in multimerization, characterized by reduced abundance of higher order crosslinked species; these mutants included E28A/E29A, D51A, R100A/S102A, T107A/T108A, T110A/Q112A, and R229A; and (iii) mutants with severe defects in multimerization, characterized by the appearance of CANC monomers as the major species even after crosslinking; these mutants included A22D, A42D, W184A/M185A, D197A, G222A, P224A, and SP1 M4A (Figure 4A, Figure 4\u2014figure supplement 1). The phenotype of some mutants in the in vivo chemical crosslinking experiment was expected based on the HIV Gag/CANC immature lattice structures and previous in vitro assembly studies (Schur et al., 2016; von Schwedler et al., 2003; Wagner et al., 2016). The effect of the mutations varied, and substitution of residues with more bulky residues (e.g. A22D and A42D) in the CA NTD was sometimes more disruptive to CA multimerization than the substitution of residues with less bulky residues (e.g. R18A/N21A, E28A/E29A, and T110A/Q112A). Nevertheless, substitutions that selectively targeted the twofold interface (W184A/M185A), the threefold interface (A22D and A42D), or the sixfold interface (R100A/S102A, T110A/Q112A, T107A/T108A, D197A, G222A, P224A, and SP1 M4A) each caused defects in CANC multimerization, consistent with previous studies showing that these interfaces are required for the immature lattice assembly (Accola et al., 1998; Datta et al., 2011; Dick et al., 2018; Liang et al., 2002; Mallery et al., 2021; Schur et al., 2016; von Schwedler et al., 2003; Wagner et al., 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig4-v2.jpg)\n\n**Figure 4.:** (A) Western blot analysis of CANC proteins following chemical crosslinking in living cells using BMH prior to cell lysis. Proteins were detected with anti-nucleocaspid (NC) antibody. (B) Typical results of crosslinking immunoprecipitation (CLIP) experiments of using CANC mutants. The left panel indicates the specific \u03a8 binding by CANC and certain mutants thereof. Mutants in this category include: R18A/N21A, P38A, E45A, Q219A, SP1 T8I, and SP1 T12A. The right panel indicates lack of specific \u03a8 binding; mutants in this category include: A22D, E28A/E29A, A42D, D51A, R100A/S102A, T107A/T108A, T110A/Q112A, W184A/M185A, D197A, G222A, P224A, R229A, and SP1 M4A. CLIP results for each mutant are shown in Figure 4\u2014figure supplement 3. (C) Quantification of \u03a8 binding specificity of CANC mutants. The decimal fraction of reads, calculated by dividing the number of reads that mapped in the \u03a8 region of the genome (coordinates: 101\u2013356) by the total number of reads that mapped to the viral genome, is plotted. Each dot represents data from an independent experiment. Error bars indicate the SD of all independent experiments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Quantitative analysis of BMH crosslinked CANC proteins and mutants thereof from the western blot in Figure 4A. The x-axis shows the pixel location, and the y-axis indicates the average pixel intensity in the lane that was analyzed. The presumed stoichiometry of CANC multimerization based on migration in the gel is marked above each peak. The Odyssey Image Studio Suite (LI-COR Biosciences) was used to quantify protein bands.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Lysates of 293T cells transfected with the indicated HIV-1 NL4-3 proviral plasmids were subjected to western blotting with anti-CA and anti-Hsp90 antibodies. Lysates of virions pelleted from the corresponding culture supernatants were similarly analyzed using the anti-CA antibody. Relative intensity of total cellular Gag and virion p24 bands is listed below each lane. HIV-1 NL4-3 (wild type) cellular Gag and virion p24 levels were arbitrarily set to 100 for comparison. The Odyssey Image Studio Suite (LI-COR Biosciences) was used to quantify protein bands.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Read density distribution on viral RNA from CLIP experiments in which constructs encoding CANC mutants were used. Each chart represents at least two independent experiments, and the average read density is plotted.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Virion p24 CA protein quantification of HIV-1 NL4-3 and CA mutants thereof that were able to generate extracellular virions. Serial dilutions of HIV-1 NL4-3 virions were used to generate a standard curve for quantification. The relative intensity of each CA mutant band is shown below each lane, and the HIV-1 NL4-3 virion p24 CA level was arbitrarily set to 100 for comparison. (B) Relative gRNA packaging efficiency for HIV-1 NL4-3 and mutants, derived by dividing the copies of gRNA in virion pellets by the p24 CA levels as measured in (A). HIV-1 NL4-3 packaging efficiency was arbitrarily set to 100 for comparison. Error bar indicates SEM of three technical replicates for each sample. Experiment was repeated twice, and the results of one representative experiment are shown.\n\nTo test whether the CA mutants could support lattice assembly that would lead to the generation of extracellular virions, we introduced the same set of CA substitutions into a full-length infectious HIV-1 NL4-3 proviral construct and assessed virion production by proviral plasmid transfected HEK293T cells. This analysis revealed that mutants such as R18A/N21A, P38A, E45A, Q219A, SP1 T8I, and SP1 T12A generated virions at, or close to, wild-type levels, while other mutants either generated reduced levels of virions or failed to generate virions (Figure 4\u2014figure supplement 2). These results are consistent with previous studies (von Schwedler et al., 1998; von Schwedler et al., 2003). Results from the in vivo CANC chemical crosslinking experiments and virion production experiments showed a correlation between the ability of a given CA mutant to affect CANC multimerization and virion production: mutants that formed high-order CANC multimers produced more virions than mutants in which CANC multimerization was impaired (Figure 4A, Figure 4\u2014figure supplements 1\u20132).\n\nWhen CANC proteins encoding the same panel of mutants were subjected to CLIP experiments, the mutants could be divided into two categories. One group of mutants bound to \u03a8 with high specificity; this group included R18A/N21A, P38A, E45A, Q219A, SP1 T8I, and SP1 T12A. A second group included all mutants other than the aforementioned group of six; this group of CANC mutants fail to bind to \u03a8 specifically (Figure 4B and C and Figure 4\u2014figure supplement 3). Comparison of the behaviors of the CANC mutants in CLIP experiments and in vivo cytoplasmic chemical crosslinking experiments revealed a correlation between CA multimerization and \u03a8-specific binding: CANC mutants that were readily able to form high-order multimers in the cytoplasm bound to \u03a8 with high specificity, similar to the wild-type CANC (in the cases of R18A/N21A, P38A, E45A, Q219A, SP1 T8I, and SP1 T12A). Conversely, mutants that had deficits in cytoplasmic multimerization failed to bind specifically to \u03a8. Notably, impairment of \u03a8 binding imposed by CA substitutions occurred irrespective of which interface (twofold, threefold, or sixfold) was targeted. Overall, these experiments suggest that the ability of CANC to form a nascent immature lattice is important for specific recognition of \u03a8.\n\nTo examine the relationship between cytosolic CANC binding to \u03a8 and packaging of vRNA into extracellular virions, we measured the vRNA:Gag ratio for all the CA mutants that generated some level of extracellular particles. This included some mutants that, in the context of CANC, exhibited impaired cytoplasmic multimerization and specific \u03a8 binding in the cytoplasm (A22D, E28A/E29A, and D51A) or for which \u03a8 binding appeared marginally impaired (Q219A and R229A). Nevertheless, these mutants were able to generate extracellular particles in the context of full-length HIV-1 NL4-3. There were only minor variations in the vRNA:Gag ratios for these mutants, suggesting that they are able to package vRNA (Figure 4\u2014figure supplement 4). However, given that these mutants generated extracellular virions, they must, by definition, have been able to assemble. An essential step in assembly is the generation of an immature Gag lattice. Thus, these mutant full-length Gag proteins must have assembled an immature Gag lattice, despite the fact that the CANC proteins do not appear to assemble into higher-order multimers in the cytoplasm. We posit that the CA mutants that generate virions in the context of full-length virus but do not generate high-order CANC multimers in the cytosol, harbor partial defects in immature lattice formation that are evident in the context of CANC in the cytosol but are at least partly suppressed when Gag is targeted to membrane in the context of a full-length Gag protein. This idea is consistent with a notion proposed by O\u2019Carroll et al., 2012, who invoke functional redundancy between membrane binding, CA-CA interaction, and RNA binding in driving HIV-1 particle assembly. Notably, these results do not alter the interpretation that immature lattice assembly is required for \u03a8 binding but do suggest that immature lattice assembly can occur either in the cytosol or at the plasma membrane to enable \u03a8 recognition.\n\n### Deficits in \u03a8 recognition are exhibited by inositol hexakisphosphate binding-deficient mutants but are restored in second-site revertants\n\nThe abundant intracellular small molecule inositol hexakisphosphate (IP6) coordinates two rings of positively charged lysine residues formed by K158 and K227 at the base of the CA hexamer (Dick et al., 2018). As such, it is required for the assembly of the immature Gag lattice in cells. To corroborate the above findings that the formation of a nascent immature lattice is required for specific \u03a8 binding, we performed CLIP experiments using two mutants (CANC K158A and CANC K227A) that are impaired for IP6 coordination and are thus incapable of particle assembly. Both CANC K158A and CANC K227A mutants exhibited deficits in \u03a8 binding (Figure 5A). A second-site revertant of K158A and K227A, specifically a lattice stabilizing substitution in SP1(SP1 T8I), restores virion assembly and viral infectivity (Mallery et al., 2021; Poston et al., 2021). Notably, introduction of this second-site substitution (in CANC K158A/SP1 T8I and CANC K227A/SP1 T8I) enabled otherwise \u03a8-binding defective CANC proteins to bind \u03a8 with high specificity (Figure 5B and C, and Figure 5\u2014figure supplement 1). Thus, these results reinforce the conclusion that the specific binding to \u03a8 requires the correct assembly of the nascent viral immature CA lattice.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig5-v2.jpg)\n\n**Figure 5.:** (A) Western blot analysis of mutants CANC K158A, CANC K227A, and the corresponding second-site revertants CANC K158A/SP1 T8I and CANC K227A/SP1 T8I following chemical crosslinking in living cells using BMH prior to cell lysis. Proteins were detected with anti-NC antibody. (B) Read density distribution on viral RNA from crosslinking immunoprecipitation (CLIP) experiments in which constructs encoding CANC, CANC K158A, CANC K158A/SP1 T8I, CANC K227A, and CANC K227A/SP1 T8I were used. Each chart represents at least two independent experiments, and the average read density is plotted. (C) Quantification of \u03a8 binding specificity of the mutants in panel (B). The decimal fraction of reads, calculated by dividing the number of reads that mapped in the \u03a8 region of the genome (coordinates: 101\u2013356) by the total number of reads mapped to the viral genome, is plotted.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83548/elife-83548-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Quantitative analysis of BMH crosslinked CANC proteins and mutants of the western blot in Figure 5A. x-axis shows the pixel location and y-axis indicates the average pixel intensity in the lane that was analyzed. Degree of CANC and mutants multimerization is marked above each peak. The Odyssey Image Studio Suite (LI-COR Biosciences) was used to quantify protein bands.\n\n## Discussion\n\nWe conclude that the initiation of the assembly of the immature HIV-1 Gag lattice in infected cells is required for the maintenance of the interaction between Gag/CANC and the \u03a8 element of the gRNA. Nevertheless, questions remain about the precise number of Gag/CANC monomers that are required to assemble to enable specific \u03a8 binding. Imaging studies of the HIV-1 virion assembly process suggest that a small number of Gag molecules (below the limit of detection by fluorescent microscopy) is involved in initial Gag/gRNA complex formation (Hendrix et al., 2015; Jouvenet et al., 2009; Kutluay and Bieniasz, 2010). However, the ability of CANC to multimerize into higher-order multimers (such as 10-mers or greater) in our in vivo chemical crosslinking experiments predicted specific \u03a8 binding, and the twofold, threefold, and sixfold CA interaction interfaces are all required. These findings suggest that perhaps high-order multimers of CANC may be needed to recognize \u03a8. The artificially multimerized cytoplasmic NC domains were able to generate hexamers, but unable to bind \u03a8, consistent with the notion that higher order multimerization is required for \u03a8 binding. Alternatively, it is also possible that CA is required to precisely position NC domains within a hexamer to permit specific \u03a8 binding.\n\nSeveral lines of evidence from previously published work are consistent with the proposition that high-order Gag multimers bind to \u03a8: (1) SHAPE and XL-SHAPE experiments identified at least 10 potential Gag/NC interaction sites in gRNA which are important for packaging (Kenyon et al., 2015; Wilkinson et al., 2008); (2) electrophoretic mobility shift experiments suggest that at least 20 Gag molecules were needed to form a complete Gag/leader gRNA dimer complex (D\u2019Souza et al., 2021); (3) studies of NC and \u03a8 interactions with nuclear magnetic resonance (NMR) and isothermal titration calorimetry (ITC) suggest that there are at least two dozen high-affinity NC-binding sites in a dimerization competent form gRNA (Ding et al., 2020). Further studies are thus needed to determine the precise stoichiometry between Gag and \u03a8 interaction at the initiation of \u03a8 binding and particle assembly.\n\nThere were some unexpected findings from our chemical crosslinking experiments. For example, the W184A/M185A mutant was mainly monomeric under the crosslinking conditions in our assay, despite the fact that W184/M185 are located at an inter-hexamer interface rather than an intra-hexamer interface. In a previous report, a CA quadruple mutant A14C/E45C/W184A/M185A was able to form a hexamer under reducing conditions (Pornillos et al., 2009). Possible explanations for this discrepancy include: (i) the A14C/E45C/W184A/M185A CA mutant was purified and crosslinked in vitro, while in our study, W184A/M185A crosslinking was attempted in cells; (ii) the A14C/E45C/W184A/M185A CA mutant assembled through mature lattice interactions, whereas herein the W184A/M185A mutant was constrained by N- and C-terminal extensions to form the immature lattice, which involves different interfaces. Another unexpected finding from our in vivo chemical crosslinking studies was that certain mutants, such as A22D and A42D, were mainly monomeric under in vivo crosslinking conditions even though A22D and A42D might be expected to form dimers or hexamers because these substitutions disrupt the three-fold CA-CA interaction interface rather than the twofold or the sixfold CA-CA interaction interfaces (Schur et al., 2016; Wagner et al., 2016). This result, along with the fact that the dimer interface mutants E28A/E29A and W184A/M185A mutants were also mainly monomeric in cells, suggests that both dimer and trimer CA interfaces contribute to the formation of early lattice assembly intermediates. Moreover, mutants that failed to form crosslinkable dimers via inter-hexamer contacts also failed to form hexamers, suggesting that inter-hexamer contacts are important for hexamer assembly. Thus, previous models (Grime and Voth, 2012; Tomasini et al., 2018; Tsiang et al., 2012) which proposed that trimer-of-dimers of CA are basic building block of the HIV-1 immature lattice are not consistent with our crosslinking results. Overall, the results of the crosslinking experiments suggest that all the three CA-CA interaction interfaces (twofold, threefold, and sixfold interaction interfaces) contribute simultaneously to immature lattice formation since disruptions of either twofold (W184A/M185A), threefold (A22D and A42D), or sixfold (D197A, G222A, P224A, and SP1 M4A) CA-CA interaction interfaces lead to overall defects rather than the formation of discrete low-order multimeric species.\n\nRecently, Duchon et al. used complementation approaches with Gag proteins whose multimerization was driven by leucine-zippers to show that membrane anchoring can increase the efficiency of RNA packaging, whether driven by interactions between NC and \u03a8 or by an artificial RNA binding protein:RNA target pair (Duchon et al., 2021). Nevertheless, our study shows that membrane binding is not required for CANC-\u03a8 interaction in the cytoplasm of cells. Given that the localization of Gag can change with its concentration in cells, it is possible that the actual site of Gag-\u03a8 interaction could also change as Gag accumulates in infected cells. Notably, we found that certain CA mutations that conferred multimerization and \u03a8 binding deficits that were evident in the context of cytosolic CANC could generate some level of extracellular particles. In these cases, the vRNA:Gag ratio in extracellular virions was close to that of WT. This finding suggests that membrane binding can suppress both the Gag multimerization and \u03a8 binding deficits exhibited by some CA mutants and, thus, that \u03a8 binding can, in principle, occur at the plasma membrane or in the cytosol, provided that higher order multimerization occurs.\n\nOverall, our study shows that CA is essential for the specific interaction between HIV-1 Gag and \u03a8. CA is therefore key, not only for controlling the morphology of HIV-1 particle assembly but also for selective viral genome packaging. Based on the evidence that HIV-1, HIV-2, and SIV Gag can co-assemble and package each other\u2019s genome (Al Shamsi et al., 2011; Franke et al., 1994; Motomura et al., 2008; Rizvi and Panganiban, 1993) and the conservation of primary and tertiary Gag structures between these viruses, the insights gained from this study are likely applicable across primate lentiviruses. Whether the findings described herein constitute a more generalized principle, and that formation of nascent CA or NC lattices enables specific interactions between virion proteins and genomes in the assembly of other viruses with RNA genomes, remains to be determined.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>293T</td>\n      <td>ATCC</td>\n      <td>CRL-3216</td>\n      <td>Periodically checked for mycoplasma and retrovirus contamination not authenticated since purchased directly from ATCC</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (HIV-1)</td>\n      <td>pNL4-3 and CA mutants introduced in pNL4-3</td>\n      <td>This paper</td>\n      <td></td>\n      <td>For viral production assay and RT-qPCR gRNA quantification assay</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (HIV-1)</td>\n      <td>NL4-3 (MA-3xHA/PR-) and its derivatives</td>\n      <td>This paper</td>\n      <td></td>\n      <td>For CLIP experiments and BMH crosslink experiments</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-HIV-1 p24CA</td>\n      <td>NIH AIDS Reagent Program</td>\n      <td>183-H12-5C</td>\n      <td>WB (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-HIV-1 Nucleocapsid</td>\n      <td>This paper</td>\n      <td></td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Power SYBR Green RNA-to-CT 1-Step Kit</td>\n      <td>ThermoFisher</td>\n      <td>Cat# 4389986</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound and drug</td>\n      <td>BMH (bismaleimidohexane)</td>\n      <td>ThermoFisher</td>\n      <td>Cat# 22330</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>Prism</td>\n      <td>Graphpad</td>\n      <td></td>\n      <td>For CLIP data analysis graphing</td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>Image Studio</td>\n      <td>LI-COR Biosciences</td>\n      <td></td>\n      <td>For western blot band quantification</td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>Cutadapt</td>\n      <td>https://doi.org/10.14806/ej.17.1.200</td>\n      <td></td>\n      <td>For CLIP data processing</td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>FASTX toolkit</td>\n      <td>http://hannonlab.cshl.edu/fastx_toolkit</td>\n      <td></td>\n      <td>For CLIP data processing</td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>Bowtie</td>\n      <td>https://doi.org/10.1186/gb-2009-10-3-r25</td>\n      <td></td>\n      <td>For CLIP data processing</td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>SAMTools</td>\n      <td>https://doi.org/10.1093/bioinformatics/btp352</td>\n      <td></td>\n      <td>For CLIP data processing</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids and cells\n\nConstructs for CLIP experiments were generated based on a previously described HIV-1 NL4-3 (MA-3xHA/PR-) proviral construct, which contains a 3xHA tag within the stalk region of MA (between residues 127 and 128) and an inactivating mutation (D81A) in the viral protease (Kutluay et al., 2014). The CANC constructs were generated by changing the start codon (ATG) of the MA domain of NL4-3 (MA-3xHA/PR-) to ACG to abrogate the expression of MA, thus translation begins at an AUG codon at the amino terminus of the 3xHA tag. CANC variants were generated by overlapping PCR to introduce substitutions in the CA domain. The NC construct was generated by overlapping PCR to delete the CA domain in the CANC construct. GCN4pII, GCN4pAA, and ccHex2 chimeric constructs were generated by overlapping PCR to replace the CA domain in the CANC construct (but retaining the CA C-terminal residues \u2018223GPGHKARVL231\u2019 intact for CASP1 helix formation) with GCN4pII or GCN4pAA leucine zippers or with ccHex2 synthetic peptide. For GCN4pII-SP1-NC constructs, the amino-acid sequence and junctions are as follows: RMKQIEDKIEEILSKIYHIENEIARIKKLIGERTSGPGHKARVL, where the GCN4pII is in bold, the CA C-terminal residues in italic, and a two amino acids \u2018TS\u2019 linker in between. For GCN4pAA-SP1-NC constructs, the amino-acid sequence and junctions are as follows: MKVKQLADAVEELASANYHLANAVARLAKAVGERGSGPGHKARVL, where the GCN4pAA is in bold, the CA C-terminal residues in italic, and a two amino acids \u2018GS\u2019 linker in between. For ccHex2-SP1-NC constructs, the amino-acid sequence and junctions are as follows: GEIAKSLKEIAKSLKEIAWSLKEIAKSLKGSGPGHKARVL, where the ccHex2 is in bold, the CA C-terminal residues in italic, and a single amino acid \u2018S\u2019 in between. In the virion production assay, substitution mutations were introduced into the CA domain of the HIV-1 NL4-3 wild-type proviral plasmid. HEK293T cells were transfected with these constructs for CLIP experiments, in-cell chemical crosslinking experiments, and virion production experiments.\n\n### Crosslinking immunoprecipitation coupled with sequencing\n\nHEK293T cells at 90% confluency in a 15 cm dish were transfected with 25 \u00b5g proviral plasmids using polyethylenimine (PEI). Cell culture media was replaced with fresh media 10\u201314 hr after transfection. Ribonucleoside analog 4-thiouridine (4SU) was added to the media 12\u201314 hr before UV crosslinking at a final concentration of 100 \u03bcM. On the day of crosslinking, cells were rinsed with PBS once and crosslinked with 500 mJ/cm2 UV (\u03bb=365 nm) in a Boekel UV crosslinker. After UV crosslinking, cells were resuspended in 15 ml PBS, and cell pellets were collected at 500 \u00d7 g for 5 min of centrifugation. Cell pellets were stored at \u201380\u00b0C until use. The CLIP procedure was modified based on previously published protocols (Kutluay et al., 2014; Shema Mugisha et al., 2020). Modifications are in two areas: (i) a 3\u2019 adapter containing an infrared dye (Zarnegar et al., 2016) was used instead of a 3\u2019 adapter labeled with 32P; (ii) the 3\u2019 adapter was ligated to protein/RNA complexes on antibody-conjugated Dynabeads (ThermoFisher 10004D) instead of ligating to purified RNAs. Rnase A/T1 mix (ThermoFisher EN0551) was used at a dilution of 1:100 to digest RNAs in the cell lysate before immunoprecipitation. For immunoprecipitation of CLIP constructs, we used anti-HA mouse IgG (BioLegend, 901503). Alternatively, in experiments with artificially multimerized NC proteins, we used a custom rabbit polyclonal IgG antibody raised against the NC domain of the HIV-1 NL4-3.\n\n### Bioinformatic analysis\n\nThe CLIP library was sequenced with Illumina Nextseq 500 platform. Raw fastq reads were processed with Cutadapt (Martin, 2011), and reads that were fewer than 20 nt, did not contain the 3\u2019 adapter, or contained ambiguous nucleotides were excluded. Barcodes were collapsed and trimmed with the FASTX toolkit (http://hannonlab.cshl.edu/fastx_toolkit) prior to mapping. Reads were mapped using Bowtie (Langmead et al., 2009) to the corresponding viral genomes in CLIP experiments. SAMtools (Li et al., 2009) and in-house scripts (Kutluay et al., 2014) were used to generate counts of each base in the viral genomes. Read density was calculated from the counts of each base divided by the total counts of bases mapped to the corresponding viral genome. Read density graphs were generated with GraphPad Prism 9 (https://www.graphpad.com/). The \u03a8 binding specificity was quantified by dividing the number of reads mapped in the \u03a8 region by the total number of reads that mapped to the viral genome.\n\n### In vivo BMH crosslinking\n\nThe use of cysteine-specific crosslinker BMH to study CANC interactions in cells was based on earlier studies of CANC assembly in vitro (Hansen and Barklis, 1995; McDermott et al., 1996). In our study, the BMH crosslinking method was modified to study CANC interactions in cells. Specifically, 1 \u00d7 106 HEK293T cells were seeded in each well of a six-well plate 1 day prior to transfection. Then 2 \u03bcg of pCANC and variants thereof were transfected with PEI, and culture media was replaced with fresh media 7\u201310 hr after transfection. Cells were washed once with PBS 20\u201324 hr post-transfection and suspended with 1 ml PBS/EDTA (5 mM; cell density was around 2.5\u20133 \u00d7 106/ml). Next, 200 \u03bcl cell suspension was used for BMH crosslinking whereby 5 \u03bcl of freshly dissolved BMH (40 mM stock in Dimethyl sulfoxide (DMSO), ThermoFisher 22330) was added to 200 \u00b5l cell suspension (final BMH concentration 1 mM) to start the crosslinking reaction. DMSO mock-treated reactions were simultaneously performed. The reactions were incubated in the dark at room temperature for 1 hr. Then, 7 \u03bcl 1 M Dithiothreitol (DTT) was added to the reactions for 15 min of incubation to stop the reactions. Next, 72 \u03bcl 4xNuPAGE LDS Sample Buffer (ThermoFisher NP0008) was added to the reaction followed by 15 min incubation. The samples were sonicated and heated at 72\u00b0C for 10 min before loading 20 \u03bcl/well on NuPAGE 3\u20138% Tris-Acetate gels (ThermoFisher, EA03785BOX) alongside high-molecular weight markers (ThermoFisher LC5699). The gel was run at 150 Volts for 60 min. Gels were transferred in the transfer buffer (ThermoFisher NP0006) with 20% ethanol at 35 Volts for 90 min to nitrocellulose membranes (Cytiva 10600002). After transfer, membranes were probed using a BlotCycler (Precision Biosystem) with mouse monoclonal anti-HIV-1 p24CA (183-H12-5C, NIH AIDS Reagent Program) primary antibody and custom rabbit polyclonal anti-HIV-1 NC primary antibody. IRDye 680RD Donkey anti-Mouse IgG Secondary Antibody (Licor P/N: 926\u201368072) and IRDye 800CW Donkey anti-Rabbit IgG Secondary Antibody (Licor P/N: 926\u201332213) were used for detection. Membranes were imaged at the Licor Odyssey imaging system.\n\n### Virion production assay\n\nHEK293T cells (3 \u00d7 105) were seeded in each well of a 24-well plate. Proviral plasmids (1 \u03bcg HIV-1 NL4-3 wild type or CA mutant) were transfected with PEI the next day. Culture media was replaced with fresh media 1 day after transfection. At 40\u201348 hr after transfection, 600 \u00b5l virion supernatant from each sample was filtered with a 0.2 \u03bcm filter and gently placed above an equal volume of 20% sucrose/PBS cushion in a 1.5 ml Eppendorf tube. Virions were pelleted by centrifugation at 14,000 rpm for 1.5 hr at 4\u00b0C. Supernatant was removed and 50 \u03bcl 1\u00d7 NuPAGE LDS Sample Buffer was added to lyse pelleted virions. Virion samples were heated 72\u00b0C for 10 min, and 15 \u03bcl virion lysate was loaded into each well of a NuPAGE 4\u201312% Bis-Tris gels (ThermoFisher NP0329BOX). For cell lysates, 200 \u03bcl 1\u00d7 NuPAGE LDS Sample Buffer (ThermoFisher NP0008) were added to each well, sonicated, and heated at 72\u00b0C for 10 min before loading into the NuPAGE 4\u201312% Bis-Tris gels. Blotted membranes were probed with mouse monoclonal anti-HIV-1 p24CA (183-H12-5C, NIH AIDS Reagent Program) and rabbit anti-HSP90 Polyclonal antibody (Proteintech 13171\u20131-AP).\n\n### Virion unspliced viral gRNA extraction and quantification\n\nHEK293T cells (8 \u00d7 105) were transfected with 2 \u03bcg HIV-1 NL4-3 proviral constructs or CA mutants thereof in six-well plates. Cells were washed with PBS once the following day, and culture media was replaced with fresh media. After around 40 hr, culture supernatants were filtered through a 0.45 \u03bcm filter and digested with 4 U Turbo Dnase I (ThermoFisher AM2238) for 40 min at 37\u00b0C. Then 900 \u00b5l filtered virion supernatant was pelleted through a sucrose cushion and resuspended in 120 \u03bcl PBS. Viral RNA was extracted from 60 \u03bcl of resuspended virions using the NucleoSpin Virus Kit (Macherey-Nagel 740983.50). Viral RNA from each sample was diluted 30-fold, and 3 \u03bcl was used in RT-quantitative PCR (RT-qPCR) reactions (0.1 \u03bcl total for each reaction). RNA levels were determined with Power SYBR Green RNA-to-CT 1-Step Kit (ThermoFisher 4389986) using a StepOne Plus Real-Time PCR system (Applied Biosystems). Serial 10-fold dilutions of known copy numbers of HIV-1 NL4-3 plasmid was used to generate a standard curve for quantification. The RT-qPCR primers for amplification of unspliced viral gRNA were GAGCTAGAACGATTCGCAGTTA (forward) and CTGTCTGAAGGGATGGTTGTAG (reverse).\n\n### Materials availability statement\n\nAll novel materials generated herein are available on request from the authors.\n",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "bcd10968-4e57-42ae-964c-a74cef4bb493",
+      "submission_id": "dd9edab2-eda6-42b1-9520-25e1a9330855",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Guangxia Gao, https://ror.org/01tyv8576 Institute of Biophysics, Chinese Academy of Sciences China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83548.sa0](https://doi.org/10.7554/eLife.83548.sa0)\n\nThis work presents valuable findings that advance our understanding of the roles of the CA domain in specific binding of HIV-1 Gag to the viral genomic RNA. The compelling evidence obtained using the modified CLIP-seq and chemical crosslinking approaches support the authors' conclusion that the initial Gag lattice formation mediated by CA is essential for Gag recognition of the 5' \u03a8 sequence. This work will be of interest to virologists working on gRNA packaging of not only HIV-1 but also other RNA viruses.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Guangxia Gao, https://ror.org/01tyv8576 Institute of Biophysics, Chinese Academy of Sciences China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83548.sa1](https://doi.org/10.7554/eLife.83548.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Initiation of HIV-1 Gag lattice assembly is required for cytoplasmic recognition of the viral genome packaging signal\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Sara Sawyer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Julia C Kenyon (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Figure 2. Considering that Gag concentration within the cytosol may affect its binding kinetics, both with itself and with the RNA and that the mutations may affect the stability of the proteins, the expression levels of these proteins need to be measured.\n\n2) Figure 4. Some CA mutants, such as E28A/E29A, Q219A and R229A, produced measurable amounts of virion particles, but their Psi binding ability was reduced. The RNA/Gag ratios of these mutants should be measured to address the concern whether the initial Gag binding to Psi dictates RNA packaging and thus strengthen the paper.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Figure 2B. Since the mutations may affect the stability of the proteins, the expression levels of these proteins should be measured. Different levels of the proteins may affect the binding specificity of the proteins to target RNA.\n\n2. Figure 4. Some CA mutants, such as E28A/E29A, Q219A and R229A, produced measurable amounts of virion particles, but their Psi binding ability was reduced. Measuring the RNA/Gag ratios of these mutants would help to address the concern whether the initial Gag binding to Psi of these mutants dictates RNA packaging and thus strengthen the paper.\n\n3. The manuscript should be double checked for typos (for example, \"lost the ability to specific bind to \u03a8\" in the Summary).\n\nReviewer #2 (Recommendations for the authors):\n\n1. Please provide a quantitative analysis of the crosslinking data shown in Figures 2C, 4A, and 5A (e.g., the band intensity of monomer, dimer, 3-6x, and 8/10x). Please see the comment #3 below.\n\n2. Please provide a quantitative analysis of the virus particle production experiment shown in Figure 4 supplement 1. The Gag amounts in cell lysates vary substantially between Gag mutants, which may contribute to the difference in the virion release. In that case, the virion release defect observed with some CA mutants may be due to the Gag instability rather than disruption of CA-CA interfaces.\n\n3. Figure 2C and Figure 4A. Chimeric Gag proteins, e.g., ccHex2-SP1-NC, formed up to hexamer, but CANC formed higher order multimers (i.e., 8x and 10x). Therefore, it is possible that the chimeric NC proteins failed to bind the \u03a8 element due to the lack of higher order multimers. Consistent with this possibility, some CANC mutants, which appear to this reviewer to show a defect in higher order multimerization but not dimer formation, e.g., R100A/S102A, T107A/T108A, and T110A/Q112A, fail to bind the \u03a8 element.\n\n4. Discussion, second paragraph: The authors suggest that the basic building block of a Gag lattice is a Gag dimer, not a Gag hexamer. This is not consistent with the crosslinking data that appear to show no accumulation of Gag dimer when the CA trimer or hexamer interface is disrupted. It also contradicts the last sentence in the same paragraph.\n\n5. Duchon et al. (2021) reported that in addition to the CA-CA dimer interface, the ability to bind membrane is necessary for a Gag molecule to recruit viral RNA to assembling particles (i.e., packaging). In this regard, it is interesting that the current study, which focuses on an earlier step, showed that specific recognition of viral RNA does not require membrane binding of Gag but still requires CA-CA interactions. It would be helpful for readers if the authors discuss the difference between this study and the study by Duchon et al. and suggest an integrated model about the sequence of the events.\n\n6. Discussion, first sentence: The authors concluded that \"the initiation of the assembly of the immature HIV-1 Gag lattice in the cytosol of infected cells is required for the specific initial interaction between Gag/CANC and the \u03a8 element of the gRNA\". This statement may be misconstrued as suggesting that a small-scale lattice must pre-exist for the Gag-gRNA interaction. Strictly speaking, the data showed the need for the ability of Gag to form a Gag lattice, which may occur upon the initial (and otherwise transient) NC-\u03a8 element interaction.\n",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4421330b-ff0d-4b3f-b9ee-5463a73a4cff",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C1",
+      "claim": "The encapsidation of HIV-1 gRNA into virions is enabled by the binding of the nucleocapsid (NC) domain of the HIV-1 Gag polyprotein to the structured viral RNA packaging signal (\u03a8) at the 5' end of the viral genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The encapsidation of HIV-1 gRNA into virions is enabled by the binding of the nucleocapsid (NC) domain of the HIV-1 Gag polyprotein to the structured viral RNA packaging signal (\u03a8) at the 5' end of the viral genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding in the field, supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "c93dd945-3e33-4c04-af1f-37fdfac62985",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C2",
+      "claim": "NC alone does not bind specifically to \u03a8 in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that NC alone does not bind specifically to \u03a8 in living cells, whereas full-length Gag and a CANC subdomain bind to \u03a8 with high specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through CLIP-seq experiments showing NC exhibits low-level indiscriminate binding across gRNA rather than specific \u03a8 binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "b43848df-d9b0-44e1-b567-3f0763e66e3e",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C3",
+      "claim": "Full-length Gag binds to \u03a8 with high specificity in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that NC alone does not bind specifically to \u03a8 in living cells, whereas full-length Gag and a CANC subdomain bind to \u03a8 with high specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through CLIP-seq experiments showing characteristic binding peaks at U5, SL1, and SL3/4 regions of \u03a8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "d6d49250-9861-47d1-9ba3-a9e2ded889b0",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C4",
+      "claim": "CANC subdomain binds to \u03a8 with high specificity in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that NC alone does not bind specifically to \u03a8 in living cells, whereas full-length Gag and a CANC subdomain bind to \u03a8 with high specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through CLIP-seq experiments showing characteristic binding peaks at U5, SL1, and SL3/4 regions of \u03a8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "5ad3d4c8-d882-4afe-ba34-6d67d5f4a17e",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C5",
+      "claim": "Perturbation of the \u03a8 RNA structure affects CANC:\u03a8 binding specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbation of the \u03a8 RNA structure or NC zinc fingers affected CANC:\u03a8 binding specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "CLIP experiments with \u03a8 mutants (DIS-GAGA and InsGGAA) showed altered binding patterns compared to wild-type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "046578d5-584d-455b-addd-09a703d93201",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C6",
+      "claim": "Perturbation of NC zinc fingers affects CANC:\u03a8 binding specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbation of the \u03a8 RNA structure or NC zinc fingers affected CANC:\u03a8 binding specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "CLIP experiments with zinc finger deletion mutants (dZF1, dZF2, dZF) showed marked reduction or abolishment of specific \u03a8 binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "db4e023a-3a2b-4cff-9bd3-d9bb89103c03",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C7",
+      "claim": "CANC variants with substitutions that disrupt CA:CA dimer, trimer, or hexamer interfaces in the immature Gag lattice affect RNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CANC variants with substitutions that disrupt CA:CA dimer, trimer, or hexamer interfaces in the immature Gag lattice also affected RNA binding, and mutants that were unable to assemble a nascent Gag lattice were unable to specifically bind to \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple CA substitution mutants targeting different interfaces showed impaired \u03a8 binding in CLIP experiments and reduced multimerization in BMH crosslinking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "99b9e652-464e-4883-8627-291501f9a240",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C8",
+      "claim": "Mutants that are unable to assemble a nascent Gag lattice are unable to specifically bind to \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CANC variants with substitutions that disrupt CA:CA dimer, trimer, or hexamer interfaces in the immature Gag lattice also affected RNA binding, and mutants that were unable to assemble a nascent Gag lattice were unable to specifically bind to \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "CANC mutants with severe multimerization defects (e.g., A22D, A42D, W184A/M185A) failed to bind specifically to \u03a8 in CLIP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "00f29d65-b7d2-43ca-9f08-6e79335d74c1",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C9",
+      "claim": "Artificially multimerized NC domains do not specifically bind \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificially multimerized NC domains did not specifically bind \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Chimeric NC fusion proteins with GCN4pII, GCN4pAA, or ccHex2 multimerization domains exhibited low-level indiscriminate binding across gRNA in CLIP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "e6c4ab31-a9e7-463c-a6a2-146fe6f0f372",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C10",
+      "claim": "CA variants with substitutions in inositol phosphate coordinating residues that prevent CA hexamerization are deficient in \u03a8 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "CA variants with substitutions in inositol phosphate coordinating residues that prevent CA hexamerization were also deficient in \u03a8 binding and second-site revertant mutants that restored CA assembly also restored specific binding to \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "CANC K158A and CANC K227A mutants exhibited deficits in \u03a8 binding in CLIP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "9a31a8b7-7210-4597-82ba-03f56a907cdc",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C11",
+      "claim": "Second-site revertant mutants that restore CA assembly also restore specific binding to \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "CA variants with substitutions in inositol phosphate coordinating residues that prevent CA hexamerization were also deficient in \u03a8 binding and second-site revertant mutants that restored CA assembly also restored specific binding to \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "CANC K158A/SP1 T8I and CANC K227A/SP1 T8I double mutants restored specific \u03a8 binding in CLIP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "23fbe0e7-a252-4ead-9fb7-6e9acc390e9f",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C12",
+      "claim": "The correct assembly of a nascent immature CA lattice is required for the specific interaction between Gag and \u03a8 in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data indicate that the correct assembly of a nascent immature CA lattice is required for the specific interaction between Gag and \u03a8 in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple lines of evidence from CLIP and crosslinking experiments with various CA mutants support this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "5056974e-e3bd-45cc-b450-adff605fa20d",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C13",
+      "claim": "HIV-1 gRNA is the dominant RNA species in virions despite being present among a vast excess of host RNAs in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 gRNA is present among a vast excess of host RNAs in the cytosol of infected cells, yet it is the dominant RNA species in virions (Rulli et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rulli et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "37e2e161-3ac9-45b3-b918-1760960225dc",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C14",
+      "claim": "The specific encapsidation of HIV-1 gRNA into virions is attributed to the specific interaction between HIV-1 Gag and the viral packaging signal '\u03a8'.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific encapsidation of HIV-1 gRNA into virions is attributed to the specific interaction between HIV-1 Gag and the viral packaging signal '\u03a8' (Aldovini and Young, 1990; Berkowitz et al., 1996; Clavel and Orenstein, 1990; Clever et al., 1995; Clever et al., 2000; Darlix et al., 1990; D'Souza and Summers, 2005; Lever et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to foundational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "692e17f5-dddb-435c-a8da-6df40d511bfa",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C15",
+      "claim": "Point mutations or deletions disrupting the zinc fingers of NC interfere with the specific packaging of gRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The NC domain binds directly to RNA, and point mutations or deletions disrupting the zinc fingers of NC interfere with the specific packaging of gRNA (Aldovini and Young, 1990; Gorelick et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and confirmed by data in this study showing zinc finger deletions reduce \u03a8 binding.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "ea4c9891-f170-467a-ae24-5849a556dd2e",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C16",
+      "claim": "Full-length Gag or CANC has different RNA binding specificity compared to NC.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RNase protection assays, yeast-three hybrid assays, and in vitro binding assays suggest that full-length Gag or CANC has different RNA binding specificity compared to NC, and some studies indicate binding to \u03a8 with higher specificity than NC (Bacharach and Goff, 1998; Damgaard et al., 1998; Guo et al., 2020; Kroupa et al., 2020; Webb et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "4e3bd0c2-5b46-45c1-b66d-4bdae6f44331",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C17",
+      "claim": "Gag mutants with CA mutations exhibited reduced gRNA selectivity in an in vitro reconstituted HIV-1 \u03a8 packaging system.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Gag mutants with CA mutations exhibited reduced gRNA selectivity in an in vitro reconstituted HIV-1 \u03a8 packaging system (Carlson et al., 2016), while Gag mutants with CA assembly deficits cannot initiate gRNA packaging (Duchon et al., 2021; Kutluay et al., 2014; Kutluay and Bieniasz, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Carlson et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "1c4fb52e-c3bf-43a7-8791-d74348b7bcb3",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C18",
+      "claim": "Gag mutants with CA assembly deficits cannot initiate gRNA packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Gag mutants with CA mutations exhibited reduced gRNA selectivity in an in vitro reconstituted HIV-1 \u03a8 packaging system (Carlson et al., 2016), while Gag mutants with CA assembly deficits cannot initiate gRNA packaging (Duchon et al., 2021; Kutluay et al., 2014; Kutluay and Bieniasz, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Duchon et al., 2021; Kutluay et al., 2014; Kutluay and Bieniasz, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "7c7a7c78-ac4d-48f5-915b-f467930b9325",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C19",
+      "claim": "The RNA binding profile of the CANC protein to the HIV-1 genome is similar to that of the full-length Gag protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the RNA binding profile of the CANC protein to the HIV-1 genome was similar to that of the full-length Gag protein, with a marginally higher fraction of reads mapping to \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by CLIP-seq data comparing Gag and CANC binding profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "e607389f-cf79-464e-981e-5e58eea0cf10",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C20",
+      "claim": "CANC exhibits a marginally higher fraction of reads mapping to \u03a8 compared to full-length Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the RNA binding profile of the CANC protein to the HIV-1 genome was similar to that of the full-length Gag protein, with a marginally higher fraction of reads mapping to \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in CLIP-seq data comparing Gag and CANC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "4c34ebb9-aaef-4b79-b110-55a1a2a95fc4",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C21",
+      "claim": "The apparently enhanced preference of CANC for \u03a8 is because membrane-bound Gag, which exhibits more promiscuous binding to the viral genome, is not present when CANC is used.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this apparently enhanced preference of CANC for \u03a8 is because the membrane bound Gag, that exhibits more promiscuous binding to the viral genome (Kutluay et al., 2014), is not present when CANC is used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed data, supported by citation to Kutluay et al., 2014.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "c4d434f5-ee5d-42d5-9f8d-cf1d23a64595",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C22",
+      "claim": "Both full-length Gag and CANC exhibit characteristic binding to \u03a8 involving three 'peaks' of read intensity corresponding to U5, SL1, and SL3/4.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the full-length Gag protein and CANC exhibited characteristic binding to \u03a8 involving three 'peaks' of read intensity corresponding to U5, SL1, and SL3/4 that are brought into proximity in the folded minimal packaging structure (Bieniasz and Telesnitsky, 2018; Lu et al., 2011; Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CLIP-seq data shown in Figure 1B and C, consistent with known \u03a8 structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "256da302-a4a4-40fa-92b5-f49237d322ab",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C23",
+      "claim": "The CANC InsGGAA \u03a8 mutant is bound comparatively poorly by CANC, with failure of the 3' portion of \u03a8 to bind CANC.",
+      "claim_type": "EXPLICIT",
+      "source": "While CANC bound to the unmanipulated \u03a8 sequence with high specificity, the CANC InsGGAA \u03a8 mutant was bound comparatively poorly by CANC, with failure of the 3' portion of \u03a8 to bind CANC (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CLIP-seq data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "66b85d19-db8e-4842-8e45-2ef76fcc44c7",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C24",
+      "claim": "The exposure of the 5'-cap of gRNA to the translational machinery due to 'GGAA' insertion inhibits gRNA packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with previous studies showing that the exposure of the 5'-cap of gRNA to the translational machinery due to 'GGAA' insertion inhibits gRNA packaging (Ding et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ding et al., 2021 and consistent with observed CLIP data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "9c6421dd-fccd-421e-bbc4-6e650e214e56",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C25",
+      "claim": "The CANC DIS-GAGA \u03a8 mutant is bound by CANC specifically within the \u03a8 element, but with the exclusion of the SL1 stem-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The CANC DIS-GAGA \u03a8 mutant, which presumably favors the retention of a monomeric RNA, was bound by CANC specifically within the \u03a8 element, but with the exclusion of the SL1 stem-loop (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CLIP-seq data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "bddce487-2241-4312-bd37-8a7339323037",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C26",
+      "claim": "Other \u03a8 elements are retained in the DIS-GAGA structure as in native dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with previous findings that other \u03a8 elements are retained in the DIS-GAGA structure as in native dimer (Keane et al., 2015) and suggests that the dimerized RNA elements are part of the structure recognized by Gag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Keane et al., 2015 and consistent with CLIP data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "1f455cd7-acba-44e5-b796-f904846d2faa",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C27",
+      "claim": "The dimerized RNA elements are part of the structure recognized by Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with previous findings that other \u03a8 elements are retained in the DIS-GAGA structure as in native dimer (Keane et al., 2015) and suggests that the dimerized RNA elements are part of the structure recognized by Gag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that DIS-GAGA mutant shows altered binding pattern, specifically loss of SL1 binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "555d4080-29d1-4839-94bb-6d5ac76119ce",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C28",
+      "claim": "The tertiary structure of the \u03a8 element is important for accurate recognition by Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results validate the utility of the CLIP method used herein and are consistent with the finding that the tertiary, and to some extent the quaternary, structure of the \u03a8 element is important for accurate recognition by Gag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from CLIP data showing that \u03a8 structure perturbations affect CANC binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "24ea57e9-5095-4622-b1fd-b9e53cea623c",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C29",
+      "claim": "The quaternary structure of the \u03a8 element is important for accurate recognition by Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results validate the utility of the CLIP method used herein and are consistent with the finding that the tertiary, and to some extent the quaternary, structure of the \u03a8 element is important for accurate recognition by Gag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from CLIP data showing that dimerization-defective mutants affect CANC binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "ba8e467f-9352-4e54-a286-290b5cc53ed9",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C30",
+      "claim": "The deletion of either zinc finger in the NC domain causes a marked reduction in specific \u03a8 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of either zinc finger in the NC domain caused a marked reduction in specific \u03a8 binding, while the deletion of both zinc fingers nearly completely abolished specific \u03a8 binding, despite the presence of similar levels of protein for each of the mutant CANC proteins (Figure 2B, Figure 2\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CLIP-seq data shown in Figure 2B and quantified in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "99d79294-af8c-4f69-8142-3f1be34ad2e4",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C31",
+      "claim": "The deletion of both zinc fingers nearly completely abolishes specific \u03a8 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of either zinc finger in the NC domain caused a marked reduction in specific \u03a8 binding, while the deletion of both zinc fingers nearly completely abolished specific \u03a8 binding, despite the presence of similar levels of protein for each of the mutant CANC proteins (Figure 2B, Figure 2\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CLIP-seq data shown in Figure 2B and quantified in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "e660d510-b5f2-43a3-a139-cfe847e7880c",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C32",
+      "claim": "NC is required for the specific interaction between Gag and \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with earlier findings that NC is required for the specific interaction between Gag and \u03a8 (Aldovini and Young, 1990; Didierlaurent et al., 2011; Dorfman et al., 1993; Gorelick et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations and confirmed by zinc finger deletion data in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "f1254165-0b1c-430c-9133-0a49a4489dc2",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C33",
+      "claim": "NC alone is not sufficient to bind specifically to \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "CLIP experiments using this construct revealed that NC was well expressed but was not sufficient to bind specifically to \u03a8. Instead, low read counts, distributed across the entire HIV-1 genome, were obtained (Figure 2B, Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CLIP-seq data showing NC exhibits non-specific binding across the genome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "4b6a5140-fcf2-46ae-a092-3dbf123bc180",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C34",
+      "claim": "The deficit in specific \u03a8 binding associated with CA deletion is as profound as the deficit associated with deletion of both NC zinc fingers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the deficit in specific \u03a8 binding associated with CA deletion was as profound as the deficit associated with deletion of both NC zinc fingers (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing CLIP-seq data for NC construct and CANC dZF construct in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "39a637b1-173c-44fe-92d7-d9ca5a152a4c",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C35",
+      "claim": "The chimeric proteins GCN4pII-SP1-NC, GCN4pAA-SP1-NC, and ccHex2-SP1-NC are able to form multimers, up to and including hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "The chimeric proteins were expressed at level similar to CANC and were able to form multimers, up to and including hexamers, as indicated by the appearance of BMH crosslinked species (Figure 2C, Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by BMH crosslinking western blot data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "29846f37-91c2-4ae7-947e-d9430bfb4c6f",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C36",
+      "claim": "The chimeric, multimeric NC fusion proteins do not bind specifically to \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the chimeric, multimeric NC fusion proteins did not bind specifically to \u03a8 (Figure 2D, Figure 2\u2014figure supplement 1); instead, they exhibited low-level indiscriminate binding across the gRNA, similar to the isolated monomeric NC domain (Figure 2B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CLIP-seq data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "79e0bf6a-555f-4d6b-949f-761fc5a06db7",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C37",
+      "claim": "CA is required for the specific interaction between CANC and \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that CA is required for the specific interaction between CANC and \u03a8 and that CA provides some function beyond simple multimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that artificially multimerized NC does not bind \u03a8 specifically, while CANC does.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "1d3878cb-f918-4da1-af76-a0e6e556309d",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C38",
+      "claim": "CA provides some function beyond simple multimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that CA is required for the specific interaction between CANC and \u03a8 and that CA provides some function beyond simple multimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that artificially multimerized NC does not bind \u03a8 specifically, while CANC does.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "70564232-b6ff-422f-b593-c7e43d5d889e",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C39",
+      "claim": "CANC mutants that readily form high-order multimers in the cytoplasm bind to \u03a8 with high specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the behaviors of the CANC mutants in CLIP experiments and in vivo cytoplasmic chemical crosslinking experiments revealed a correlation between CA multimerization and \u03a8-specific binding: CANC mutants that were readily able to form high-order multimers in the cytoplasm bound to \u03a8 with high specificity, similar to the wild-type CANC (in the cases of R18A/N21A, P38A, E45A, Q219A, SP1 T8I, and SP1 T12A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing BMH crosslinking data (Figure 4A) with CLIP data (Figure 4B-C) for multiple mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "6e4e8e15-a7d8-43a8-99cf-7a839a3e58bc",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C40",
+      "claim": "CANC mutants with deficits in cytoplasmic multimerization fail to bind specifically to \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mutants that had deficits in cytoplasmic multimerization failed to bind specifically to \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing BMH crosslinking data (Figure 4A) with CLIP data (Figure 4B-C) for multiple mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "132c4fc3-3a23-415e-b78e-9e9e68cd81e8",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C41",
+      "claim": "Impairment of \u03a8 binding imposed by CA substitutions occurs irrespective of which interface (twofold, threefold, or sixfold) is targeted.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, impairment of \u03a8 binding imposed by CA substitutions occurred irrespective of which interface (twofold, threefold, or sixfold) was targeted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by CLIP data showing that mutants targeting different interfaces all show \u03a8 binding defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "79e86365-aa7a-4372-970a-616d861d8c9b",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C42",
+      "claim": "The ability of CANC to form a nascent immature lattice is important for specific recognition of \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these experiments suggest that the ability of CANC to form a nascent immature lattice is important for specific recognition of \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between multimerization ability and \u03a8 binding specificity across multiple CA mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "d55f672c-9692-4cb5-97c7-d3e744391d6f",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C43",
+      "claim": "CA mutants that generate extracellular virions in the context of full-length HIV-1 NL4-3 show only minor variations in vRNA:Gag ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these mutants were able to generate extracellular particles in the context of full-length HIV-1 NL4-3. There were only minor variations in the vRNA:Gag ratios for these mutants, suggesting that they are able to package vRNA (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RT-qPCR quantification of vRNA and p24 levels shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "e104e92f-3927-4f1c-8fa2-77367f588504",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C44",
+      "claim": "CA mutants that generate virions must have assembled an immature Gag lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that these mutants generated extracellular virions, they must, by definition, have been able to assemble. An essential step in assembly is the generation of an immature Gag lattice. Thus, these mutant full-length Gag proteins must have assembled an immature Gag lattice, despite the fact that the CANC proteins do not appear to assemble into higher-order multimers in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference based on the requirement for lattice assembly to produce virions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "045e0ca1-8c4f-41e7-a410-2a6c9cd9aef7",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C45",
+      "claim": "Membrane binding can suppress both the Gag multimerization and \u03a8 binding deficits exhibited by some CA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that the CA mutants that generate virions in the context of full-length virus but do not generate high-order CANC multimers in the cytosol, harbor partial defects in immature lattice formation that are evident in the context of CANC in the cytosol but are at least partly suppressed when Gag is targeted to membrane in the context of a full-length Gag protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that some mutants defective in cytosolic CANC multimerization can still produce virions with normal vRNA:Gag ratios.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "5dd94208-c6db-485a-bb52-0df7a00f000d",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C46",
+      "claim": "Immature lattice assembly can occur either in the cytosol or at the plasma membrane to enable \u03a8 recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these results do not alter the interpretation that immature lattice assembly is required for \u03a8 binding but do suggest that immature lattice assembly can occur either in the cytosol or at the plasma membrane to enable \u03a8 recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that membrane-targeted full-length Gag can overcome some assembly defects seen with cytosolic CANC.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "8dd891ad-5f9e-425c-bc5b-a8065a1764fd",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C47",
+      "claim": "IP6 is required for the assembly of the immature Gag lattice in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundant intracellular small molecule inositol hexakisphosphate (IP6) coordinates two rings of positively charged lysine residues formed by K158 and K227 at the base of the CA hexamer (Dick et al., 2018). As such, it is required for the assembly of the immature Gag lattice in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dick et al., 2018 and established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "28644bb6-b42a-407a-a9a9-53dda017a999",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C48",
+      "claim": "CANC K158A and CANC K227A mutants exhibit deficits in \u03a8 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CANC K158A and CANC K227A mutants exhibited deficits in \u03a8 binding (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CLIP-seq data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "c1e4d135-dc66-4b04-85fa-cd98b69e24af",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C49",
+      "claim": "A lattice stabilizing substitution in SP1 (SP1 T8I) restores virion assembly and viral infectivity in K158A and K227A mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "A second-site revertant of K158A and K227A, specifically a lattice stabilizing substitution in SP1(SP1 T8I), restores virion assembly and viral infectivity (Mallery et al., 2021; Poston et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mallery et al., 2021 and Poston et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "99709bd0-3959-4c4c-a543-0aaf13a21803",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C50",
+      "claim": "Introduction of SP1 T8I substitution enables otherwise \u03a8-binding defective CANC proteins (K158A and K227A) to bind \u03a8 with high specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, introduction of this second-site substitution (in CANC K158A/SP1 T8I and CANC K227A/SP1 T8I) enabled otherwise \u03a8-binding defective CANC proteins to bind \u03a8 with high specificity (Figure 5B and C, and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CLIP-seq data shown in Figure 5B and quantified in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "6e9c9c41-b01b-4ad5-b8be-36b84fca0d86",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C51",
+      "claim": "The specific binding to \u03a8 requires the correct assembly of the nascent viral immature CA lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these results reinforce the conclusion that the specific binding to \u03a8 requires the correct assembly of the nascent viral immature CA lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that second-site revertants that restore lattice assembly also restore \u03a8 binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "73e3e081-0553-4c4c-98f7-3db5c29d6eb0",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C52",
+      "claim": "The initiation of the assembly of the immature HIV-1 Gag lattice in infected cells is required for the maintenance of the interaction between Gag/CANC and the \u03a8 element of the gRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the initiation of the assembly of the immature HIV-1 Gag lattice in infected cells is required for the maintenance of the interaction between Gag/CANC and the \u03a8 element of the gRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overall conclusion based on multiple lines of experimental evidence from CLIP and crosslinking experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "1b23a28e-8af3-4f6a-8da0-bcc955999002",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C53",
+      "claim": "A small number of Gag molecules (below the limit of detection by fluorescent microscopy) is involved in initial Gag/gRNA complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging studies of the HIV-1 virion assembly process suggest that a small number of Gag molecules (below the limit of detection by fluorescent microscopy) is involved in initial Gag/gRNA complex formation (Hendrix et al., 2015; Jouvenet et al., 2009; Kutluay and Bieniasz, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to imaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "00c1786a-09de-4b39-ba23-5a5f0676b6f2",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C54",
+      "claim": "The ability of CANC to multimerize into higher-order multimers (such as 10-mers or greater) in in vivo chemical crosslinking experiments predicts specific \u03a8 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ability of CANC to multimerize into higher-order multimers (such as 10-mers or greater) in our in vivo chemical crosslinking experiments predicted specific \u03a8 binding, and the twofold, threefold, and sixfold CA interaction interfaces are all required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed correlation between BMH crosslinking patterns and CLIP results across multiple mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "7b56c9ee-82dd-463b-b875-02b14d8324d4",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C55",
+      "claim": "The twofold, threefold, and sixfold CA interaction interfaces are all required for specific \u03a8 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ability of CANC to multimerize into higher-order multimers (such as 10-mers or greater) in our in vivo chemical crosslinking experiments predicted specific \u03a8 binding, and the twofold, threefold, and sixfold CA interaction interfaces are all required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the fact that mutants targeting any of these interfaces show \u03a8 binding defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "10376ccd-9367-4f4d-8643-49ea4ceb83a8",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C56",
+      "claim": "High-order multimers of CANC may be needed to recognize \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that perhaps high-order multimers of CANC may be needed to recognize \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on crosslinking and CLIP data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "29b63076-2849-4c2b-b261-c686de706903",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C57",
+      "claim": "CA may be required to precisely position NC domains within a hexamer to permit specific \u03a8 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it is also possible that CA is required to precisely position NC domains within a hexamer to permit specific \u03a8 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Alternative speculative interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "4ff16c7f-bc4f-4152-a093-0b2aca8c8915",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C58",
+      "claim": "There are at least 10 potential Gag/NC interaction sites in gRNA which are important for packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Several lines of evidence from previously published work are consistent with the proposition that high-order Gag multimers bind to \u03a8: (1) SHAPE and XL-SHAPE experiments identified at least 10 potential Gag/NC interaction sites in gRNA which are important for packaging (Kenyon et al., 2015; Wilkinson et al., 2008);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kenyon et al., 2015 and Wilkinson et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "be79ba04-c2b4-4f8d-9111-d58e19a276d8",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C59",
+      "claim": "At least 20 Gag molecules are needed to form a complete Gag/leader gRNA dimer complex.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) electrophoretic mobility shift experiments suggest that at least 20 Gag molecules were needed to form a complete Gag/leader gRNA dimer complex (D'Souza et al., 2021);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to D'Souza et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "edd40d13-b3ba-47f6-bd14-1282b0de0d43",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C60",
+      "claim": "There are at least two dozen high-affinity NC-binding sites in a dimerization competent form gRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) studies of NC and \u03a8 interactions with nuclear magnetic resonance (NMR) and isothermal titration calorimetry (ITC) suggest that there are at least two dozen high-affinity NC-binding sites in a dimerization competent form gRNA (Ding et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ding et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "b99e9ef5-dc4c-44eb-8b32-0ab755a5e94b",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C61",
+      "claim": "The W184A/M185A mutant is mainly monomeric under crosslinking conditions despite W184/M185 being located at an inter-hexamer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "There were some unexpected findings from our chemical crosslinking experiments. For example, the W184A/M185A mutant was mainly monomeric under the crosslinking conditions in our assay, despite the fact that W184/M185 are located at an inter-hexamer interface rather than an intra-hexamer interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in BMH crosslinking data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "3cf57cab-a894-4fc7-ac50-b6afa405a167",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C62",
+      "claim": "A CA quadruple mutant A14C/E45C/W184A/M185A was able to form a hexamer under reducing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous report, a CA quadruple mutant A14C/E45C/W184A/M185A was able to form a hexamer under reducing conditions (Pornillos et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pornillos et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "2a21e670-1e36-480b-b3ec-312b5ee7601e",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C63",
+      "claim": "Both dimer and trimer CA interfaces contribute to the formation of early lattice assembly intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "This result, along with the fact that the dimer interface mutants E28A/E29A and W184A/M185A mutants were also mainly monomeric in cells, suggests that both dimer and trimer CA interfaces contribute to the formation of early lattice assembly intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from BMH crosslinking data showing multiple interface mutants fail to form dimers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "b5f265f7-36a3-483b-be65-bb035bbd3603",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C64",
+      "claim": "Inter-hexamer contacts are important for hexamer assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mutants that failed to form crosslinkable dimers via inter-hexamer contacts also failed to form hexamers, suggesting that inter-hexamer contacts are important for hexamer assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from BMH crosslinking data showing dimer interface mutants also fail to form hexamers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "526d747d-f278-4890-8abf-1373bbdc4762",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C65",
+      "claim": "Previous models which proposed that trimer-of-dimers of CA are basic building block of the HIV-1 immature lattice are not consistent with the crosslinking results.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, previous models (Grime and Voth, 2012; Tomasini et al., 2018; Tsiang et al., 2012) which proposed that trimer-of-dimers of CA are basic building block of the HIV-1 immature lattice are not consistent with our crosslinking results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking data showing that disruption of any interface prevents higher-order assembly.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "4a7ee9fe-04a6-493c-948e-4c5c2b774c6a",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C66",
+      "claim": "All three CA-CA interaction interfaces (twofold, threefold, and sixfold) contribute simultaneously to immature lattice formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results of the crosslinking experiments suggest that all the three CA-CA interaction interfaces (twofold, threefold, and sixfold interaction interfaces) contribute simultaneously to immature lattice formation since disruptions of either twofold (W184A/M185A), threefold (A22D and A42D), or sixfold (D197A, G222A, P224A, and SP1 M4A) CA-CA interaction interfaces lead to overall defects rather than the formation of discrete low-order multimeric species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from BMH crosslinking data showing that disruption of any interface leads to overall assembly defects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "8505abb0-9796-4461-b412-8dada4f9ea92",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C67",
+      "claim": "Membrane anchoring can increase the efficiency of RNA packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Duchon et al. used complementation approaches with Gag proteins whose multimerization was driven by leucine-zippers to show that membrane anchoring can increase the efficiency of RNA packaging, whether driven by interactions between NC and \u03a8 or by an artificial RNA binding protein:RNA target pair (Duchon et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duchon et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "a5adc9ea-4d9d-48ac-9642-56b4fad9dd8d",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C68",
+      "claim": "Membrane binding is not required for CANC-\u03a8 interaction in the cytoplasm of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our study shows that membrane binding is not required for CANC-\u03a8 interaction in the cytoplasm of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by CLIP experiments showing CANC (which lacks membrane-targeting MA domain) binds \u03a8 specifically.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "b4a11b7f-d011-4461-8fa3-beb04176912e",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C69",
+      "claim": "The actual site of Gag-\u03a8 interaction could change as Gag accumulates in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the localization of Gag can change with its concentration in cells, it is possible that the actual site of Gag-\u03a8 interaction could also change as Gag accumulates in infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on known Gag localization dynamics.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "9d7dc2c5-eced-4c87-a0df-fe39f56b6f93",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C70",
+      "claim": "Membrane binding can suppress both the Gag multimerization and \u03a8 binding deficits exhibited by some CA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that membrane binding can suppress both the Gag multimerization and \u03a8 binding deficits exhibited by some CA mutants and, thus, that \u03a8 binding can, in principle, occur at the plasma membrane or in the cytosol, provided that higher order multimerization occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that some mutants defective in cytosolic CANC assembly can still package RNA when expressed as full-length Gag.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "a0cf5eab-e316-41bb-b39e-9bf37ecd8072",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C71",
+      "claim": "\u03a8 binding can occur at the plasma membrane or in the cytosol, provided that higher order multimerization occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that membrane binding can suppress both the Gag multimerization and \u03a8 binding deficits exhibited by some CA mutants and, thus, that \u03a8 binding can, in principle, occur at the plasma membrane or in the cytosol, provided that higher order multimerization occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing both cytosolic CANC and membrane-bound Gag can bind \u03a8.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "4df6a906-d1f1-4966-8b9c-b50571b2e380",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C72",
+      "claim": "CA is essential for the specific interaction between HIV-1 Gag and \u03a8.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our study shows that CA is essential for the specific interaction between HIV-1 Gag and \u03a8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overall conclusion based on multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "4140b343-d46e-4455-a985-ba238d4bdfcd",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C73",
+      "claim": "CA is key for controlling the morphology of HIV-1 particle assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "CA is therefore key, not only for controlling the morphology of HIV-1 particle assembly but also for selective viral genome packaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "f3734b8f-6f3b-4a27-aafb-5f3cc5afdd9d",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C74",
+      "claim": "CA is key for selective viral genome packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "CA is therefore key, not only for controlling the morphology of HIV-1 particle assembly but also for selective viral genome packaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by data in this study showing CA is required for specific \u03a8 binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "275ccee8-ab62-4ab1-90cd-02836a1b1792",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C75",
+      "claim": "HIV-1, HIV-2, and SIV Gag can co-assemble and package each other's genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the evidence that HIV-1, HIV-2, and SIV Gag can co-assemble and package each other's genome (Al Shamsi et al., 2011; Franke et al., 1994; Motomura et al., 2008; Rizvi and Panganiban, 1993) and the conservation of primary and tertiary Gag structures between these viruses, the insights gained from this study are likely applicable across primate lentiviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies showing cross-packaging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "fb456eda-c3b3-48f0-a730-34152c5e2b1d",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C76",
+      "claim": "The insights gained from this study are likely applicable across primate lentiviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the evidence that HIV-1, HIV-2, and SIV Gag can co-assemble and package each other's genome (Al Shamsi et al., 2011; Franke et al., 1994; Motomura et al., 2008; Rizvi and Panganiban, 1993) and the conservation of primary and tertiary Gag structures between these viruses, the insights gained from this study are likely applicable across primate lentiviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from conservation of Gag structures and cross-packaging ability.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "99b79fde-75aa-4829-aebf-380372df3bb8",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C77",
+      "claim": "The CLIP procedure uses an infrared-dye-conjugated 3' adaptor in place of a conventional radioactive labeled 3' adaptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In this CLIP procedure, an infrared-dye-conjugated 3' adaptor (Zarnegar et al., 2016) is used in place of a conventional radioactive labeled 3' adaptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological description of the CLIP procedure used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "bc82fc35-a3f3-4319-b8e8-3eb0102796f3",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C78",
+      "claim": "Protein-RNA crosslinking is driven by metabolic 4-thiouridine incorporation into target RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-RNA crosslinking is driven by metabolic 4-thiouridine incorporation into target RNA (Hafner et al., 2010), and the labeled adaptor is ligated to protein/RNA crosslinked species directly on antibody-conjugated Dynabeads (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological description supported by citation to Hafner et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "14cdd0eb-2fec-4df2-bcd6-2ed7a0cbdf9d",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C79",
+      "claim": "The labeled adaptor is ligated to protein/RNA crosslinked species directly on antibody-conjugated Dynabeads.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-RNA crosslinking is driven by metabolic 4-thiouridine incorporation into target RNA (Hafner et al., 2010), and the labeled adaptor is ligated to protein/RNA crosslinked species directly on antibody-conjugated Dynabeads (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Methodological description of the modified CLIP procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "d656e6b7-25da-459d-ade7-0b06491c18b6",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C80",
+      "claim": "The methodological adjustments cut the experimental time by half without loss of sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These methodological adjustments cut the experimental time by half without loss of sensitivity, enabling higher throughput in CLIP assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claimed benefit of the modified CLIP method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "61fa2947-bc34-4a18-bc75-f6d3dd633000",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "claim_id": "C81",
+      "claim": "MA is not involved in the initial Gag:gRNA interaction in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "As we intended to study the initial Gag:gRNA interaction in the cytosol and MA is not involved in this process (Bou-Nader et al., 2021; Kutluay et al., 2014), we also generated a proviral construct (referred to as pCANC) in which the start codon of MA (ATG) was mutated to abolish MA expression;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bou-Nader et al., 2021 and Kutluay et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7f90e4bf-5432-41d9-beac-00f66616a602",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Full-length Gag and CANC bind specifically to the \u03a8 packaging signal in living cells, whereas NC alone does not. Both Gag and CANC exhibit characteristic binding peaks at U5, SL1, and SL3/4 regions of \u03a8, with CANC showing marginally higher \u03a8-specific binding than full-length Gag. In contrast, NC alone exhibits low-level indiscriminate binding across the entire HIV-1 genome rather than specific \u03a8 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C19-C20, C22, C33-C34 are supported by CLIP-seq data shown in Figures 1 and 2, demonstrating clear differences in binding specificity between Gag/CANC and NC alone. The characteristic three-peak binding pattern at \u03a8 for Gag/CANC versus non-specific binding for NC provides strong evidence for this core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "037ec04a-b177-4f4c-b1b1-b297afe73867",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Perturbations of \u03a8 RNA structure or NC zinc fingers affect CANC:\u03a8 binding specificity. \u03a8 mutants (InsGGAA and DIS-GAGA) show altered binding patterns, and deletion of either or both NC zinc fingers markedly reduces or abolishes specific \u03a8 binding. These results indicate that both the tertiary/quaternary structure of \u03a8 and intact NC zinc fingers are required for specific Gag-\u03a8 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C23, C25, C28-C32 are well-supported by CLIP-seq data in Figures 1 and 2 showing altered binding patterns for \u03a8 mutants and zinc finger deletion mutants. The data demonstrate that both RNA structure and NC zinc fingers are necessary for specific binding, consistent with established knowledge in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CA is required for specific CANC-\u03a8 interaction and provides function beyond simple multimerization. CANC mutants with substitutions disrupting CA:CA dimer, trimer, or hexamer interfaces show impaired \u03a8 binding. Mutants that form high-order multimers (\u226510-mers) in crosslinking experiments bind \u03a8 specifically, while those with multimerization defects fail to bind \u03a8 specifically. All three CA-CA interaction interfaces (twofold, threefold, and sixfold) are required for specific \u03a8 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C37-C42, C54-C55 are strongly supported by the correlation between BMH crosslinking data (Figure 4A) and CLIP-seq data (Figure 4B-C) across 21 CA mutants. The systematic analysis of mutants targeting different interfaces provides compelling evidence that CA-mediated lattice assembly is required for specific \u03a8 recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "8ef25982-a3b0-4efb-aeab-f11eb26f4894",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Artificially multimerized NC domains using heterologous multimerization domains (GCN4pII, GCN4pAA, or ccHex2) do not bind specifically to \u03a8. Despite forming multimers up to hexamers as shown by BMH crosslinking, these chimeric NC fusion proteins exhibit low-level indiscriminate binding across gRNA similar to monomeric NC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C35-C36 are supported by BMH crosslinking data (Figure 2C) showing hexamer formation and CLIP-seq data (Figure 2D) showing lack of specific \u03a8 binding. This negative result strengthens the conclusion that CA provides specific structural requirements beyond simple multimerization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "f8b4faa4-b2d0-47b4-b4cd-28e808b245b7",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IP6-coordinating residues K158 and K227 are required for \u03a8 binding, and second-site revertant mutations that restore lattice assembly also restore \u03a8 binding. CANC K158A and K227A mutants exhibit deficits in \u03a8 binding, but introduction of the lattice-stabilizing SP1 T8I substitution restores specific \u03a8 binding in both mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C47-C48, C50-C51 are supported by CLIP-seq data (Figure 5B-C) and crosslinking data (Figure 5A) showing that mutations affecting IP6 coordination impair \u03a8 binding, and that compensatory mutations restoring lattice assembly restore \u03a8 binding. This genetic suppression analysis provides strong evidence for the lattice assembly requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "ebd7c81e-f748-42d0-a44f-08ca210881c8",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The correct assembly of a nascent immature CA lattice is required for the specific interaction between Gag and \u03a8 in cells. CA is essential for specific Gag-\u03a8 interaction and for selective viral genome packaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C42, C51-C52, C72, C74 represent the main conclusion of the study, supported by multiple converging lines of evidence from CLIP experiments with CA mutants, crosslinking experiments, and revertant analysis. The systematic demonstration across different experimental approaches provides strong support for this central finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "b742cd3c-15d0-4f86-8824-8eee94578801",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Some CA mutants that show deficits in cytosolic CANC multimerization and \u03a8 binding can still generate virions with normal vRNA:Gag ratios when expressed as full-length Gag. This suggests that membrane binding can suppress multimerization and \u03a8 binding deficits exhibited by some CA mutants, and that \u03a8 binding can occur either in the cytosol or at the plasma membrane provided that higher-order multimerization occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46, C70-C71 are supported by RT-qPCR data (Figure 4\u2014figure supplement 4) showing normal vRNA:Gag ratios for some mutants defective in cytosolic CANC assembly. The interpretation that membrane binding can compensate for partial assembly defects is reasonable and consistent with the data, though the mechanism remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "3db9111c-e5bb-45b4-bf05-3a4f3f323a38",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Crosslinking experiments reveal unexpected findings about early lattice assembly intermediates. The W184A/M185A mutant is mainly monomeric despite targeting an inter-hexamer interface. Both dimer and trimer CA interfaces contribute to early lattice assembly intermediates, and inter-hexamer contacts are important for hexamer assembly. All three CA-CA interaction interfaces contribute simultaneously to immature lattice formation rather than forming discrete low-order multimeric species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C63-C66 are supported by BMH crosslinking data (Figure 4A) showing that disruption of any interface prevents higher-order assembly. The interpretation challenges previous models proposing trimer-of-dimers as building blocks. While unexpected, the data support the conclusion that all interfaces contribute simultaneously to lattice formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "bd8bc981-2e56-4d0c-a011-f1f1c6fbc3be",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "High-order multimers of CANC may be needed to recognize \u03a8, or alternatively, CA may be required to precisely position NC domains within a hexamer to permit specific \u03a8 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C57 are explicitly speculative interpretations of the data. While the crosslinking and CLIP data support a requirement for higher-order assembly, the precise stoichiometry and structural arrangement required for \u03a8 recognition remain uncertain. Additional structural and biochemical studies would be needed to distinguish between these mechanistic hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "3d117557-e29d-467c-bb71-c228ab9434cb",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Membrane binding is not required for CANC-\u03a8 interaction in the cytoplasm, though the site of Gag-\u03a8 interaction could change as Gag accumulates in cells. The enhanced \u03a8 preference of CANC compared to full-length Gag may be because membrane-bound Gag exhibits more promiscuous binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C68-C69 are supported by CLIP data showing CANC (lacking MA) binds \u03a8 specifically in the cytoplasm. The interpretation about membrane-bound Gag promiscuity is supported by citation to prior work (Kutluay et al., 2014). The speculation about changing interaction sites (C69) is reasonable but remains to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "9773b5e6-f1a8-49ad-9060-5e633790650c",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior studies support the proposition that high-order Gag multimers bind to \u03a8: SHAPE experiments identified \u226510 potential Gag/NC interaction sites, electrophoretic mobility shift experiments suggest \u226520 Gag molecules are needed for complete Gag/leader gRNA dimer complex formation, and NMR/ITC studies suggest \u226524 high-affinity NC-binding sites in dimerization-competent gRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 accurately cite prior published work (Kenyon et al., 2015; Wilkinson et al., 2008; D'Souza et al., 2021; Ding et al., 2020) that is consistent with the current study's findings. These citations provide appropriate context for interpreting the stoichiometry requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "57ac3ee7-97eb-4e19-b2f8-8dd514b12cd0",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A modified CLIP method was developed using an infrared-dye-conjugated 3' adaptor instead of radioactive labeling, with adaptor ligation performed directly on antibody-conjugated Dynabeads. These modifications reduce experimental time by half without loss of sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 describe methodological modifications that are clearly documented in the methods section and Figure 1\u2014figure supplement 1. The claim of reduced time and maintained sensitivity (C80) is stated but not rigorously validated with comparative data. Nevertheless, the successful application of the method throughout the study supports its utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "48a25fa3-4367-468b-b0f3-2a311abb9807",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establishing the role of NC in gRNA packaging, the specificity of Gag-\u03a8 interaction, and the conservation of packaging mechanisms across primate lentiviruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C13-C18, C32, C73, C75-C76, C81 represent established knowledge in the field supported by appropriate citations. These claims provide necessary context for the current study and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "d15983ed-650f-41e3-a5fe-e664485867ec",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The InsGGAA mutation exposes the 5'-cap to the translational machinery and inhibits gRNA packaging, while the DIS-GAGA mutation retains other \u03a8 elements as in native dimer. The dimerized RNA elements are part of the structure recognized by Gag.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C26-C27 are supported by CLIP data (Figure 1B-C) showing altered binding patterns for these mutants, and are consistent with cited prior work (Ding et al., 2021; Keane et al., 2015). The inference that dimerized elements are recognized by Gag is reasonable based on the loss of SL1 binding in the DIS-GAGA mutant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    },
+    {
+      "id": "c7c07864-0448-4a0d-97ce-307e6fcc1f14",
+      "content_id": "92d746f8-bcab-4650-9288-0d9b0580eb97",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior imaging and biochemical studies provide context for interpreting the current findings: imaging studies suggest a small number of Gag molecules are involved in initial complex formation, a previous CA mutant study showed hexamer formation under different conditions, and membrane anchoring can increase RNA packaging efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C62, C67 accurately cite prior published work that provides relevant context. These citations are appropriately used to discuss the current findings in light of previous studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:52.541136Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c93dd945-3e33-4c04-af1f-37fdfac62985",
+      "result_id": "7f90e4bf-5432-41d9-beac-00f66616a602"
+    },
+    {
+      "claim_id": "b43848df-d9b0-44e1-b567-3f0763e66e3e",
+      "result_id": "7f90e4bf-5432-41d9-beac-00f66616a602"
+    },
+    {
+      "claim_id": "d6d49250-9861-47d1-9ba3-a9e2ded889b0",
+      "result_id": "7f90e4bf-5432-41d9-beac-00f66616a602"
+    },
+    {
+      "claim_id": "7c7a7c78-ac4d-48f5-915b-f467930b9325",
+      "result_id": "7f90e4bf-5432-41d9-beac-00f66616a602"
+    },
+    {
+      "claim_id": "e607389f-cf79-464e-981e-5e58eea0cf10",
+      "result_id": "7f90e4bf-5432-41d9-beac-00f66616a602"
+    },
+    {
+      "claim_id": "c4d434f5-ee5d-42d5-9f8d-cf1d23a64595",
+      "result_id": "7f90e4bf-5432-41d9-beac-00f66616a602"
+    },
+    {
+      "claim_id": "f1254165-0b1c-430c-9133-0a49a4489dc2",
+      "result_id": "7f90e4bf-5432-41d9-beac-00f66616a602"
+    },
+    {
+      "claim_id": "4b6a5140-fcf2-46ae-a092-3dbf123bc180",
+      "result_id": "7f90e4bf-5432-41d9-beac-00f66616a602"
+    },
+    {
+      "claim_id": "5ad3d4c8-d882-4afe-ba34-6d67d5f4a17e",
+      "result_id": "037ec04a-b177-4f4c-b1b1-b297afe73867"
+    },
+    {
+      "claim_id": "046578d5-584d-455b-addd-09a703d93201",
+      "result_id": "037ec04a-b177-4f4c-b1b1-b297afe73867"
+    },
+    {
+      "claim_id": "256da302-a4a4-40fa-92b5-f49237d322ab",
+      "result_id": "037ec04a-b177-4f4c-b1b1-b297afe73867"
+    },
+    {
+      "claim_id": "9c6421dd-fccd-421e-bbc4-6e650e214e56",
+      "result_id": "037ec04a-b177-4f4c-b1b1-b297afe73867"
+    },
+    {
+      "claim_id": "555d4080-29d1-4839-94bb-6d5ac76119ce",
+      "result_id": "037ec04a-b177-4f4c-b1b1-b297afe73867"
+    },
+    {
+      "claim_id": "24ea57e9-5095-4622-b1fd-b9e53cea623c",
+      "result_id": "037ec04a-b177-4f4c-b1b1-b297afe73867"
+    },
+    {
+      "claim_id": "ba8e467f-9352-4e54-a286-290b5cc53ed9",
+      "result_id": "037ec04a-b177-4f4c-b1b1-b297afe73867"
+    },
+    {
+      "claim_id": "99d79294-af8c-4f69-8142-3f1be34ad2e4",
+      "result_id": "037ec04a-b177-4f4c-b1b1-b297afe73867"
+    },
+    {
+      "claim_id": "e660d510-b5f2-43a3-a139-cfe847e7880c",
+      "result_id": "037ec04a-b177-4f4c-b1b1-b297afe73867"
+    },
+    {
+      "claim_id": "db4e023a-3a2b-4cff-9bd3-d9bb89103c03",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "99b9e652-464e-4883-8627-291501f9a240",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "79e0bf6a-555f-4d6b-949f-761fc5a06db7",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "1d3878cb-f918-4da1-af76-a0e6e556309d",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "70564232-b6ff-422f-b593-c7e43d5d889e",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "6e4e8e15-a7d8-43a8-99cf-7a839a3e58bc",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "132c4fc3-3a23-415e-b78e-9e9e68cd81e8",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "79e86365-aa7a-4372-970a-616d861d8c9b",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "00c1786a-09de-4b39-ba23-5a5f0676b6f2",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "7b56c9ee-82dd-463b-b875-02b14d8324d4",
+      "result_id": "3b94a8ef-560f-47f1-8d3d-31e53836a1ae"
+    },
+    {
+      "claim_id": "00f29d65-b7d2-43ca-9f08-6e79335d74c1",
+      "result_id": "8ef25982-a3b0-4efb-aeab-f11eb26f4894"
+    },
+    {
+      "claim_id": "39a637b1-173c-44fe-92d7-d9ca5a152a4c",
+      "result_id": "8ef25982-a3b0-4efb-aeab-f11eb26f4894"
+    },
+    {
+      "claim_id": "29846f37-91c2-4ae7-947e-d9430bfb4c6f",
+      "result_id": "8ef25982-a3b0-4efb-aeab-f11eb26f4894"
+    },
+    {
+      "claim_id": "e6c4ab31-a9e7-463c-a6a2-146fe6f0f372",
+      "result_id": "f8b4faa4-b2d0-47b4-b4cd-28e808b245b7"
+    },
+    {
+      "claim_id": "9a31a8b7-7210-4597-82ba-03f56a907cdc",
+      "result_id": "f8b4faa4-b2d0-47b4-b4cd-28e808b245b7"
+    },
+    {
+      "claim_id": "8dd891ad-5f9e-425c-bc5b-a8065a1764fd",
+      "result_id": "f8b4faa4-b2d0-47b4-b4cd-28e808b245b7"
+    },
+    {
+      "claim_id": "28644bb6-b42a-407a-a9a9-53dda017a999",
+      "result_id": "f8b4faa4-b2d0-47b4-b4cd-28e808b245b7"
+    },
+    {
+      "claim_id": "99709bd0-3959-4c4c-a543-0aaf13a21803",
+      "result_id": "f8b4faa4-b2d0-47b4-b4cd-28e808b245b7"
+    },
+    {
+      "claim_id": "6e9c9c41-b01b-4ad5-b8be-36b84fca0d86",
+      "result_id": "f8b4faa4-b2d0-47b4-b4cd-28e808b245b7"
+    },
+    {
+      "claim_id": "23fbe0e7-a252-4ead-9fb7-6e9acc390e9f",
+      "result_id": "ebd7c81e-f748-42d0-a44f-08ca210881c8"
+    },
+    {
+      "claim_id": "79e86365-aa7a-4372-970a-616d861d8c9b",
+      "result_id": "ebd7c81e-f748-42d0-a44f-08ca210881c8"
+    },
+    {
+      "claim_id": "6e9c9c41-b01b-4ad5-b8be-36b84fca0d86",
+      "result_id": "ebd7c81e-f748-42d0-a44f-08ca210881c8"
+    },
+    {
+      "claim_id": "73e3e081-0553-4c4c-98f7-3db5c29d6eb0",
+      "result_id": "ebd7c81e-f748-42d0-a44f-08ca210881c8"
+    },
+    {
+      "claim_id": "4df6a906-d1f1-4966-8b9c-b50571b2e380",
+      "result_id": "ebd7c81e-f748-42d0-a44f-08ca210881c8"
+    },
+    {
+      "claim_id": "f3734b8f-6f3b-4a27-aafb-5f3cc5afdd9d",
+      "result_id": "ebd7c81e-f748-42d0-a44f-08ca210881c8"
+    },
+    {
+      "claim_id": "d55f672c-9692-4cb5-97c7-d3e744391d6f",
+      "result_id": "b742cd3c-15d0-4f86-8824-8eee94578801"
+    },
+    {
+      "claim_id": "e104e92f-3927-4f1c-8fa2-77367f588504",
+      "result_id": "b742cd3c-15d0-4f86-8824-8eee94578801"
+    },
+    {
+      "claim_id": "045e0ca1-8c4f-41e7-a410-2a6c9cd9aef7",
+      "result_id": "b742cd3c-15d0-4f86-8824-8eee94578801"
+    },
+    {
+      "claim_id": "5dd94208-c6db-485a-bb52-0df7a00f000d",
+      "result_id": "b742cd3c-15d0-4f86-8824-8eee94578801"
+    },
+    {
+      "claim_id": "9d7dc2c5-eced-4c87-a0df-fe39f56b6f93",
+      "result_id": "b742cd3c-15d0-4f86-8824-8eee94578801"
+    },
+    {
+      "claim_id": "a0cf5eab-e316-41bb-b39e-9bf37ecd8072",
+      "result_id": "b742cd3c-15d0-4f86-8824-8eee94578801"
+    },
+    {
+      "claim_id": "b99e9ef5-dc4c-44eb-8b32-0ab755a5e94b",
+      "result_id": "3db9111c-e5bb-45b4-bf05-3a4f3f323a38"
+    },
+    {
+      "claim_id": "2a21e670-1e36-480b-b3ec-312b5ee7601e",
+      "result_id": "3db9111c-e5bb-45b4-bf05-3a4f3f323a38"
+    },
+    {
+      "claim_id": "b5f265f7-36a3-483b-be65-bb035bbd3603",
+      "result_id": "3db9111c-e5bb-45b4-bf05-3a4f3f323a38"
+    },
+    {
+      "claim_id": "526d747d-f278-4890-8abf-1373bbdc4762",
+      "result_id": "3db9111c-e5bb-45b4-bf05-3a4f3f323a38"
+    },
+    {
+      "claim_id": "4a7ee9fe-04a6-493c-948e-4c5c2b774c6a",
+      "result_id": "3db9111c-e5bb-45b4-bf05-3a4f3f323a38"
+    },
+    {
+      "claim_id": "10376ccd-9367-4f4d-8643-49ea4ceb83a8",
+      "result_id": "bd8bc981-2e56-4d0c-a011-f1f1c6fbc3be"
+    },
+    {
+      "claim_id": "29b63076-2849-4c2b-b261-c686de706903",
+      "result_id": "bd8bc981-2e56-4d0c-a011-f1f1c6fbc3be"
+    },
+    {
+      "claim_id": "4c34ebb9-aaef-4b79-b110-55a1a2a95fc4",
+      "result_id": "3d117557-e29d-467c-bb71-c228ab9434cb"
+    },
+    {
+      "claim_id": "a5adc9ea-4d9d-48ac-9642-56b4fad9dd8d",
+      "result_id": "3d117557-e29d-467c-bb71-c228ab9434cb"
+    },
+    {
+      "claim_id": "b4a11b7f-d011-4461-8fa3-beb04176912e",
+      "result_id": "3d117557-e29d-467c-bb71-c228ab9434cb"
+    },
+    {
+      "claim_id": "4ff16c7f-bc4f-4152-a093-0b2aca8c8915",
+      "result_id": "9773b5e6-f1a8-49ad-9060-5e633790650c"
+    },
+    {
+      "claim_id": "be79ba04-c2b4-4f8d-9111-d58e19a276d8",
+      "result_id": "9773b5e6-f1a8-49ad-9060-5e633790650c"
+    },
+    {
+      "claim_id": "edd40d13-b3ba-47f6-bd14-1282b0de0d43",
+      "result_id": "9773b5e6-f1a8-49ad-9060-5e633790650c"
+    },
+    {
+      "claim_id": "99b79fde-75aa-4829-aebf-380372df3bb8",
+      "result_id": "57ac3ee7-97eb-4e19-b2f8-8dd514b12cd0"
+    },
+    {
+      "claim_id": "bc82fc35-a3f3-4319-b8e8-3eb0102796f3",
+      "result_id": "57ac3ee7-97eb-4e19-b2f8-8dd514b12cd0"
+    },
+    {
+      "claim_id": "14cdd0eb-2fec-4df2-bcd6-2ed7a0cbdf9d",
+      "result_id": "57ac3ee7-97eb-4e19-b2f8-8dd514b12cd0"
+    },
+    {
+      "claim_id": "d656e6b7-25da-459d-ade7-0b06491c18b6",
+      "result_id": "57ac3ee7-97eb-4e19-b2f8-8dd514b12cd0"
+    },
+    {
+      "claim_id": "4421330b-ff0d-4b3f-b9ee-5463a73a4cff",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "5056974e-e3bd-45cc-b450-adff605fa20d",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "37e2e161-3ac9-45b3-b918-1760960225dc",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "692e17f5-dddb-435c-a8da-6df40d511bfa",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "ea4c9891-f170-467a-ae24-5849a556dd2e",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "4e3bd0c2-5b46-45c1-b66d-4bdae6f44331",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "1c4fb52e-c3bf-43a7-8791-d74348b7bcb3",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "e660d510-b5f2-43a3-a139-cfe847e7880c",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "4140b343-d46e-4455-a985-ba238d4bdfcd",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "275ccee8-ab62-4ab1-90cd-02836a1b1792",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "fb456eda-c3b3-48f0-a730-34152c5e2b1d",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "61fa2947-bc34-4a18-bc75-f6d3dd633000",
+      "result_id": "48a25fa3-4367-468b-b0f3-2a311abb9807"
+    },
+    {
+      "claim_id": "66b85d19-db8e-4842-8e45-2ef76fcc44c7",
+      "result_id": "d15983ed-650f-41e3-a5fe-e664485867ec"
+    },
+    {
+      "claim_id": "bddce487-2241-4312-bd37-8a7339323037",
+      "result_id": "d15983ed-650f-41e3-a5fe-e664485867ec"
+    },
+    {
+      "claim_id": "1f455cd7-acba-44e5-b796-f904846d2faa",
+      "result_id": "d15983ed-650f-41e3-a5fe-e664485867ec"
+    },
+    {
+      "claim_id": "1b23a28e-8af3-4f6a-8da0-bcc955999002",
+      "result_id": "c7c07864-0448-4a0d-97ce-307e6fcc1f14"
+    },
+    {
+      "claim_id": "3cf57cab-a894-4fc7-ac50-b6afa405a167",
+      "result_id": "c7c07864-0448-4a0d-97ce-307e6fcc1f14"
+    },
+    {
+      "claim_id": "8505abb0-9796-4461-b412-8dada4f9ea92",
+      "result_id": "c7c07864-0448-4a0d-97ce-307e6fcc1f14"
+    }
+  ],
+  "comparisons": []
+}

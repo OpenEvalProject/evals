@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C115",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C124"
+    ],
+    "result": "Direct numerical simulations (DNS) of turbulent odor transport show that odor in the air is intense but intermittent, while odor near the ground is smoother but less intense. The simulations use fully resolved Navier-Stokes equations with total adsorption boundary conditions at the ground.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 describe the DNS setup and key observations about odor distribution. The computational methods (C115, C118, C120-C122, C124) are well-specified with appropriate boundary conditions, resolution (81.9M grid points), and validation references. The physical observations about airborne vs. ground odor characteristics are directly supported by the simulation data shown in Figures 1-2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C22"
+    ],
+    "result": "The agent can sense larger plumes and detect odor across a more extended area in the air than on the ground, with ground odors only detectable near the source due to surface adsorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are directly supported by simulation data referenced in Figure 2 and Figure 2\u2014figure supplement 1, showing quantitative differences in detection ranges. Claim C22 provides the physical explanation (total/partial depletion) that is consistent with the boundary conditions specified in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C93",
+      "C94",
+      "C95",
+      "C125",
+      "C127",
+      "C131"
+    ],
+    "result": "The POMDP model is designed with six action choices (four movement directions while sniffing ground, stay and sniff ground, stay and sniff air), uses discretized binary observations with a Poissonian detection model, and optimizes for minimizing search time through Bellman optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 specify the POMDP design parameters clearly. Claims C93-C95, C125, C127, C131 describe the mathematical framework with appropriate citations. The acknowledgment that the Poissonian model is \"partially inaccurate\" (C30) due to lacking spatiotemporal correlations is an important limitation that is explicitly stated and later tested for robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The trained POMDP agent exhibits alternation between sniffing on the ground and in the air, along with cast-and-surge behavior. Training reduces search time considerably, and alternation emerges despite the cost of reward discounting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C32-C36 describe the primary behavioral findings from the POMDP training, supported by Figure 3 and Figure 3\u2014figure supplement 1. The emergence of alternation is well-documented through trajectory analysis. The claim that this occurs \"despite the cost\" (C36) is supported by the model design where pausing incurs temporal discounting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C81"
+    ],
+    "result": "Alternation occurs more frequently far downwind from the source where airborne cues are more detectable, and sniffing in the air speeds up source localization despite slowing locomotion. This effect is particularly pronounced at large distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C39, C81 are supported by quantitative analysis shown in Figure 4(a-b). The distance-dependent pattern is consistent with the detection probability maps (Figure 2c) showing wider airborne plume extent at greater distances. Statistical analysis across multiple training realizations confirms significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "Alternation is tightly linked to casting behavior, with agents sniffing in the air once every 5 steps during casts versus once every 60 steps during surges\u2014an order of magnitude difference. Sniffing in the air serves as an alternative exploration mode that complements casting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C45 are supported by quantitative analysis in Figure 4(c) showing the strong correlation between casting and air-sniffing. The specific frequencies (5 vs 60 steps) provide concrete evidence. The interpretation that air-sniffing complements casting (C45) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C62",
+      "C63",
+      "C85"
+    ],
+    "result": "The search can be divided into two phases: (1) an initial exploration phase dominated by casting and alternation to localize the plume, where odor detection scarcity is the bottleneck, and (2) an odor-guided phase using ground cues to locate the source within the plume. The transition occurs after a handful of detections and the first phase dominates search time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C48-C50, C62-C63, C85 describe the two-phase structure supported by entropy and value analysis in Figure 4(d) and Figure 5. The identification of the first detection as the transition point (C62) is clearly marked in Figure 4(d). The claim that phase 1 dominates search time (C63) is supported by the same figure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C106",
+      "C107"
+    ],
+    "result": "The learned strategy is robust to model inaccuracies and different flow conditions. Agents trained with a Poissonian model successfully navigate realistic plumes, and static detection rate maps are sufficient for navigation. The strategy performs well even when tested with different plume statistics than used for training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C55, C106-C107 are supported by robustness testing shown in Figure 3\u2014video 1 and Figure 4\u2014figure supplement 2. The tests include variations in plume size and meandering, demonstrating that the strategy doesn't require exact parameter matching. This is important validation of the approach's practical applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "During search, the agent's belief narrows through Bayesian updates based on detections and non-detections. Non-detections during cast-and-sniff sequences reduce the likelihood of being near the source, triggering upwind surges. Entropy steadily declines while value increases until detection shrinks the posterior dramatically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 describe the belief dynamics illustrated in Figure 5 and quantified in Figure 4(d). The Bayesian update process is a core feature of the POMDP framework and is well-documented. The entropy/value trajectories provide quantitative support for the qualitative description of belief narrowing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C68",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "A simplified analytical model based on marginal value theory predicts that agents should stop casting when the value of continuing equals the value of moving to the next patch. The optimized strategy is an expanding zigzag, with casting time increasing as search progresses. Simulations confirm surge length equals detection range and cast width equals prior width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C68, C70, C74-C77 describe the analytical model and its predictions, supported by Figure 6. The marginality condition (C68) is derived from optimization. Predictions about surge length, cast width, and increasing casting time (C75-C76) are confirmed by both simplified and full POMDP simulations (Figure 6e-g), demonstrating consistency between theory and computation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C84"
+    ],
+    "result": "Alternation involves a trade-off: pausing to sniff in the air halts progression but provides access to larger turbulent plumes that reach greater distances. At large distances, turbulent mixing eliminates gradients, making orientation difficult. Slowing progression is the price for gaining orientation under uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C82, C84 articulate the fundamental trade-off underlying alternation behavior. The physical basis (turbulent plumes reach farther, C79) is supported by DNS results. The lack of gradients at large distances (C82) is supported by citation and consistent with turbulence physics. The interpretation as a cost-benefit trade-off (C84) is a reasonable inference from the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors predict that alternation should be more frequent in early stages of odor release in non-steady conditions, and that the benefits of air vs. ground sniffing will hold even with modified adsorption chemistry, though quantitative details may vary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C90 are predictions and speculations about generalizability. While C86 is based on sound physical reasoning (boundary layer effects exist even without adsorption), claims C87-C90 are untested predictions. The reasoning is plausible but lacks empirical validation. These represent testable hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose a general principle: when combining sensory cues has costs and conflicts exist, alternation will emerge as a strategy. Without conflicts, combining cues is advantageous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 attempt to generalize beyond olfaction to other sensory modalities. While the logic is sound and follows from the results, this generalization is speculative. The claim is presented as an inference from the olfactory results rather than demonstrated across multiple sensory systems. This represents a hypothesis rather than an established finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Experimental observations in aquatic organisms (lobsters, blue crabs, Nautilus pompilius) show behaviors consistent with alternation between different heights, with sampling at higher elevations more common at larger distances from the source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 cite experimental observations from prior literature (Moore et al. 1991, Weissburg and Zimmer-Faust 2002, Basil and Atema 2000). The citations appear appropriate and the interpretation that these behaviors are consistent with the model predictions (C113) is reasonable. However, these are observations from prior work, not new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Marginal value theory (MVT) describes optimal foraging in spatially separated resource patches. In the olfactory search context, patches correspond to belief regions explored via casting and air-sniffing, and MVT determines when to stop exploring and surge to the next patch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 correctly describe MVT and its application to the olfactory search problem. The connection between MVT and the POMDP optimization is conceptually sound and supported by the analytical model derivation. This provides theoretical grounding for understanding the emergence of the cast-surge-alternation pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The normative POMDP approach provides understanding and performance limits, can inspire less resource-demanding strategies, and applies to robots. This contrasts with reactive strategies that enforce strong constraints. Simplified strategies with reduced memory requirements are expected to be inspired by these algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 describe the methodological approach and its goals, with appropriate citations (C102-C103). The distinction between normative and reactive approaches (C104) is standard in the field. The expectation of inspiring simplified strategies (C105) is reasonable based on prior work cited, though it remains a prediction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Dogs and rodents display alternation behavior between sniffing in air and on ground during odor tracking. Rodents may rear for reasons including novelty detection, information gathering, anxiety, and fear. Despite familiarity with these behaviors, the underlying reasons for alternation are largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 summarize prior knowledge from the literature with appropriate citations (Thesen et al. 1993, Khan et al. 2012, Gire et al. 2016, Lever et al. 2006, Reddy et al. 2022). These establish the empirical motivation for the study. The claim that reasons are \"largely unknown\" (C7) is supported by citation and provides justification for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Airborne odors are transported rapidly over long distances by turbulent flows but are broken into discrete pockets detectable only sparsely, with randomized gradients preventing gradient-ascent navigation. Ground odors are smoother and more continuous due to boundary layer effects from viscous flow near surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 describe established fluid dynamics and turbulent transport principles, supported by multiple citations (Murlis and Jones 1981, Vergassola et al. 2007, Fackrell and Robins 1982, Anderson 2005). These provide the physical foundation for why air and ground odors differ, motivating the multi-modal sensing strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Rodents spontaneously alternate in the presence of airflow, suggesting alternation serves an important role during plume-tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C1 is stated in the abstract without specific citation or data. While consistent with the cited literature on rodent behavior (C6, C9), the specific claim about \"spontaneous\" alternation \"in the presence of airflow\" lacks direct empirical support in the manuscript. This appears to be an inference from prior work rather than a demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45"
+    ],
+    "result": "Casting and alternation emerge as complementary tools for effective exploration with sparse cues. Casting has been classically interpreted as a strategy for efficient exploration in intermittent environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44-C45 synthesize the main conceptual finding. C44 correctly characterizes prior understanding of casting. The claim that casting and alternation are \"complementary\" (C4, C45) is supported by the quantitative analysis showing their correlation (Figure 4c) and the analytical model showing they serve different exploration functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The fundamental requirement for alternation is the presence of wider detection rate maps in the air than on the ground, and this property should hold across different odor transport models and surface adsorption chemistries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 identifies what the authors consider the key condition for alternation. While this is a reasonable inference from the model structure and robustness tests, it has not been systematically tested across different transport models or adsorption chemistries. This is more of a hypothesis about generalizability than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The task of locating the source within the plume is much easier than approaching the source enough for a continuous odor plume to be present, as most laboratory experiments have focused on the former regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 makes a comparative statement about task difficulty supported by the observation that detection rates are higher close to the source (from simulations) and cites Reddy et al. 2022 regarding laboratory experiment focus. The interpretation is reasonable given the two-phase structure demonstrated in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "Other species beyond dogs and rodents can sense chemical cues both in bulk and on surfaces and may feature similar alternation phenomenology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 is speculative about generalization to other species. While the subsequent claims (C109-C114) provide some supporting evidence from aquatic organisms, C108 itself is a broad speculation. The word \"may\" appropriately indicates uncertainty, but this remains a hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

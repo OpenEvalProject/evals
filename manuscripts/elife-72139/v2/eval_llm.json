@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C16"
+    ],
+    "result": "Macaque monkeys produce homologues of attention-associated EEG signals (N2pc and Pd) that reliably index selective attention, similar to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C14, and C16 establish that attention-associated ERP components like N2pc and Pd are observed in both humans and macaque monkeys, supported by multiple citations to published research. This provides the foundational rationale for using macaques as a model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C9",
+      "C17"
+    ],
+    "result": "The neural generators of attention-associated extracortical electric fields remain poorly understood, particularly the laminar origins of ERPs in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C9, and C17 collectively establish the knowledge gap motivating this study. The authors cite published work and assess the state of the field to argue that despite extensive use of EEG/ERP measures, the underlying neural circuitry generating these signals is not well characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Four macaque monkeys successfully performed visual search tasks with above-chance accuracy, providing behavioral validation for the experimental paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 describe the behavioral methods and performance. The reported accuracy levels (66-88%) are well above chance (12.5-16.6%), demonstrating that the animals could perform the task. This is essential validation for interpreting the neural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C31"
+    ],
+    "result": "Inverse modeling of EEG data localized the N2pc to visual cortical area V4, though the solution also implicated V1 which is inconsistent with known attentional modulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26-C27 show significant N2pc and localization to V4 using sLORETA. However, C31 acknowledges that the inverse solution also identifies V1 as a strong contributor, which contradicts prior knowledge about attentional modulation. This uncertainty about the specificity of the inverse solution limits confidence in V4 as the sole or primary generator, though it provides sufficient justification for targeted laminar recordings in V4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Laminar recordings in V4 revealed attentional modulation of spiking activity and LFP across cortical layers, with the strongest effects in middle layers, consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 describe the laminar recording methods and demonstrate statistically significant attentional modulation across layers (C37-C38: p<0.05), with the largest MUA effects in middle layers (C39), consistent with cited prior work. This validates the recording approach and confirms V4 shows attention-related activity during the task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "During the N2pc interval, all cortical layers showed significant information transmission about target location to the extracortical signal, but L2/3 and L5/6 transmitted significantly more information than L4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 present the core CSD and information theoretic findings. Statistical tests show L2/3 and L5/6 transmitted significantly more information than L4 (C42: p=0.040 and p=0.036), with no difference between L2/3 and L5/6 (C43: p=0.84). The pattern was consistent across monkeys (C44) and absent in baseline periods (C45), supporting the specificity of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "A later time interval (200-250 ms) showed polarization reversal possibly corresponding to the Pd component, but no statistically significant information theoretic relationship was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C48 describe observations during a later interval. While CSD differences persist (C47), the lack of significant information theoretic relationship (C48) prevents strong conclusions. The authors acknowledge this could reflect either no actual association or insufficient trial counts, making the result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Control analyses demonstrated that the information theoretic relationship between V4 CSD and EEG was not confounded by color specificity or microsaccade production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 show that significant information transmission persisted when controlling for stimulus color and microsaccades, ruling out these potential confounds. C51 synthesizes these controls to strengthen confidence in the main finding that L2/3 and L5/6 CSD contributes to the N2pc.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Columnar color selectivity influenced contribution to the N2pc: columns with preferred color in their receptive field transmitted more information, with significant correlations in L2/3 and L5/6 but not L4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 establish that >50% of V4 columns showed color selectivity (C56), and that information transmission was greater for preferred vs. non-preferred colors (C58-C59: p<0.05 in L2/3 and L5/6). Correlations between color selectivity index and information transmission were significant for L2/3 (R=0.50, p=0.005) and L5/6 (R=0.51, p=0.004) but not L4 (C60-C61). Feature-selective columns transmitted more information than non-selective columns (C62: p<0.05 in all layers).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Non-selective columns also showed attentional modulation, and the N2pc amplitude did not differ between sessions with or without color-selective columns, consistent with spatial integration of signals across multiple columns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 show that non-selective columns exhibited significant attentional modulation in CSD (L2/3 and L5/6: p<1e-6) and spiking activity (all layers: p<1e-10). C66 shows no difference in N2pc amplitude between sessions (p=0.46), which C67 explains is expected due to spatial integration across columns. This supports the interpretation that the N2pc reflects contributions from multiple columns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The summed potential calculated from V4 CSD (ERPcal) differentiated attention conditions with timing matching the observed N2pc, despite expected differences in waveform shape due to volume conduction and contributions from other areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe the ERPcal calculation and its relationship to the observed ERP. C68 shows ERPcal distinguished target from distractor throughout the N2pc. C69-C71 acknowledge expected differences in shape due to volume conduction, tissue filtering, and contributions from other areas. C72 notes the remarkable agreement in timing despite these limitations. This provides converging evidence that V4 laminar currents contribute to the N2pc.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Visual cortex generates dipoles through layer-specific transsynaptic currents in extragranular layers that give rise to attention-associated electric fields, with functional architecture (feature columns) influencing individual column contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C73-C75 present the primary conclusions of the study. The findings are supported by converging evidence from inverse modeling (C27), laminar CSD patterns (C40), information theoretic analyses (C41-C42), feature selectivity effects (C58-C61), and ERPcal calculations (C68). The extragranular layer specificity (C19, C74) is supported by significantly greater information transmission in L2/3 and L5/6 vs. L4 (C42). The novelty claim (C22) is reasonable given the comprehensive approach combining multiple methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The N2pc may arise from multiple cortical areas with relative contributions depending on attended features, potentially reconciling conflicting interpretations and involving top-down signals from frontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C82 are speculative interpretations (explicitly marked as such in evidence_type) about broader implications. While grounded in the current findings and supported by citations to relevant literature, these claims extend beyond what the data directly demonstrate. They represent reasonable hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Several questions remain unanswered, including the specific attentional mechanisms in cortical microcircuits, whether spatial shifts in voltage distribution can be resolved on human scalp, and whether findings generalize to other areas and ERP components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 acknowledge limitations and open questions. These are appropriately identified as areas requiring future work. C98-C99 note an important implication: ERPs can arise from different neural circuit configurations, limiting mechanistic inferences from ERP measures alone. This is a well-supported conceptual conclusion from the feature selectivity findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Information theoretic analyses yielded smaller magnitude values than previous studies, but this is not concerning given the novel application to intracortical-extracortical relationships and the different spatial scales being compared.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 address a potential concern about the magnitude of information theoretic results. The authors provide reasonable explanations: no prior work has examined this specific relationship (C101), and previous studies typically compared single units rather than mesoscopic-macroscopic signals (C102). The justification is logical and the results were statistically significant despite smaller magnitudes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The N2pc polarity was inverted relative to previous reports, likely due to differences in referencing arrangements, but this does not affect the main findings about V4 laminar substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 acknowledge and address the polarity inversion. C104 provides a plausible explanation (referencing differences), and C105 correctly notes that the association between V4 laminar activity and the N2pc does not depend on polarity. The information theoretic and CSD analyses would be valid regardless of polarity direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11"
+    ],
+    "result": "EEG signals are theorized to be generated by interlaminar interactions in cortical columns, which have ubiquitous, well-defined anatomical structure and consistent physiological patterns, but measuring the generating dipoles requires sampling across all cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C10-C11 establish the theoretical framework for the study, supported by citations to published research. These claims about cortical organization and EEG generation are well-established in the field and provide the conceptual foundation for the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

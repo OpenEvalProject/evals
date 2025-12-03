@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The PA-Cre optogenetic system successfully enables light-inducible deletion of the mcherry-cat resistance gene in E. coli. 30-min blue-light exposure induced gene deletion in 25% of cells without affecting growth, with fluorescence decay consistent with dilution over 4-5 generations. Longer illumination (4 hr) achieved 100% deletion efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 collectively demonstrate successful implementation of the PA-Cre system adapted from mammalian cells for bacterial use. The data show dose-dependent deletion efficiency (C20, C23), proper fluorescence decay kinetics (C21), and no growth effects from the procedure itself (C22), all supported by quantitative measurements and imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Approximately 37-40% of resistance-gene-deleted cells restore growth under continuous chloramphenicol exposure. Following gene deletion, all deleted cells initially show growth decline with fluorescence decay over 4-5 generations, but 37.3% eventually restore growth with generation times recovering from 6.3 hr to 3.0 hr over 30 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C33 provide converging evidence for fractional growth restoration. The consistency between abstract (~40%, C2) and detailed results (37.3%, C32) strengthens the finding. Quantitative kinetics of fluorescence decay (C30) and generation time recovery (C33) are well-documented with specific timeframes and measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Growth restoration is not due to retention of cat gene or additional resistance mutations. Colony PCR confirmed all non-fluorescent cells lack the cat gene, whole-genome sequencing found no additional mutations in 4/5 populations tested, and one detected mutation did not affect MIC. The probability that sequenced populations derived from growth-halted lineages is only 5.5%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 systematically exclude genetic explanations for growth restoration through multiple complementary approaches: PCR verification (C34), population dynamics (C35), whole-genome sequencing (C36-C37), and recovery kinetics after drug removal (C38-C39). The 5.5% probability calculation (C40) appropriately accounts for multiple experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The timing of gene deletion relative to antibiotic exposure is critical for growth restoration. When deletion occurs \u226510 hr before Cp exposure, no growth restoration occurs (0/195 cells). Growth restoration frequency remains high when Tc=0-3 hr, decreases to 18.5% at Tc=6 hr, and is eliminated at Tc=10 hr, while deletion efficiency remains constant (24-28%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C47-C55 demonstrate a clear temporal window for physiological adaptation. The systematic variation of Tc with consistent deletion efficiency (C50) but dramatically different restoration outcomes (C51-C54) provides strong evidence for history-dependence. The pre-deleted control (C47) effectively excludes microfluidic artifacts (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Residual mCherry-CAT protein levels at Cp exposure onset influence growth restoration probability. Gene deletion before Cp exposure causes protein dilution by growth. At Tc=6 hr, cells with higher residual fluorescence (top 50%) produced 2.4-fold more growth-restored cells than bottom 50%. At Tc=10 hr, fluorescence was barely detectable and no restoration occurred. However, high protein levels don't guarantee restoration in all cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 establish that residual protein is necessary but not sufficient for adaptation. The quantitative relationship between fluorescence and restoration at Tc=6 hr (C57) and complete loss at Tc=10 hr (C58) support this threshold model. The observation that high levels don't ensure restoration (C59) and eventual dilution below detection (C62) indicate residual protein enables but doesn't directly mediate long-term survival.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Resistance gene deletion under Cp exposure disrupts ribosomal subunit stoichiometry (RplS/RpsB ratio increases ~3-fold), but this balance gradually recovers in growth-restored cell lineages while remaining disrupted in growth-halted lineages. Initial disruption kinetics are similar between both groups, but divergence becomes evident ~37 hr after deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C70-C76 demonstrate a clear correlation between ribosomal balance recovery and growth restoration using dual fluorescent reporters. The similar initial disruption (C73) followed by divergent trajectories (C74) with specific timing (C75) provides strong evidence for a mechanistic link rather than mere correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Ribosomal subunit balance (RplS-mCherry/RpsB-mVenus ratio) strongly correlates with growth rate under Cp exposure (Spearman \u03c1=-0.58). The ratio is tightly maintained within 0.84-1.18 in fast-growing non-deleted cells, and disruption beyond this range is linked to growth suppression. The relationship between ratio and elongation rate is similar across all cell types, but growth-restored cells shift toward the original ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 establish a quantitative relationship between ribosomal balance and growth with appropriate statistical analysis (C82). The narrow maintenance range in healthy cells (C83) and universal relationship across cell types (C85) support a fundamental physiological constraint, while the shift in growth-restored cells (C86) suggests active rebalancing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Pre-deleted susceptible cells (YK0138) show different ribosomal protein responses to Cp compared to cells deleted under Cp exposure. RplS-mCherry increases similarly in both, but RpsB-mVenus decreases in YK0138 cells (consistent with prior reports), leading to more rapid ratio disruption and faster growth decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 effectively contrast the responses of pre-deleted vs. simultaneously-deleted cells. The differential RpsB response (C79) supported by prior literature and resulting in faster disruption (C80) and growth decline (C81) provides mechanistic insight into why timing matters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C77"
+    ],
+    "result": "Pre-deletion phenotypic states do not predict post-deletion outcomes. No significant differences in mCherry-CAT fluorescence intensity or elongation rates were detected before blue-light illumination between growth-restored, growth-halted, and non-deleted cell lineages. Similarly, pre-illumination ribosomal protein levels and ratios did not affect deletion likelihood or fate determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C77 systematically exclude pre-existing phenotypic heterogeneity as an explanation for differential outcomes. The analysis of multiple potential predictors (fluorescence, elongation rate, ribosomal protein levels) with appropriate statistical testing finding no significant differences strengthens the conclusion that adaptation is not predetermined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Deleting the resistance gene at higher Cp concentration (30 \u00b5g/mL, 2-fold MIC) eliminates growth restoration. While 33.1% of cells lost the resistance gene, none restored growth, suggesting that sufficiently high antibiotic concentrations can prevent physiological adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 demonstrate dose-dependence of the adaptation phenomenon. The complete absence of restoration at higher drug concentration despite successful gene deletion provides clear evidence for limits to physiological adaptation and supports the interpretation that stress intensity matters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The experimental Cp concentration (15 \u00b5g/mL) was calibrated to be 1.5-fold above the MIC of non-resistant strain YK0085 (10 \u00b5g/mL) but significantly below the MIC of resistant YK0083 cells (100 \u00b5g/mL), and did not affect elongation rates of resistant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 establish appropriate experimental conditions for testing adaptation. The concentration is high enough to inhibit non-resistant cells but low enough to allow resistant cell growth, providing a suitable window for observing adaptation dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The ribosome reporter strain YK0136 shows equivalent behavior to YK0083: similar MIC values, comparable gene deletion frequency (28.6% vs 24.5%), and similar growth restoration frequency (45.9%). Pre-deleted strain YK0138 shows no growth restoration (0/1138 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 validate that the ribosome reporter system doesn't alter the core phenotype. The consistency of deletion and restoration frequencies between strains (C67-C68) and the control behavior of pre-deleted cells (C69) support the reliability of mechanistic insights from the reporter strain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "E. coli can adapt to lethal genetic modification (cat deletion under Cp) through physiological mechanisms. This adaptation depends on timing and environmental history, involves disruption and recovery of ribosomal protein stoichiometry, and correlates with growth rate. The ribosomal balance is tightly regulated in fast-growing cells and its recovery may contribute to growth restoration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 synthesize the main findings into coherent conclusions. These summary claims are well-supported by the detailed experimental results described in other claim groups. The cautious language regarding mechanism (\"might contribute,\" C95) appropriately reflects the correlative nature of the ribosomal balance observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Bacterial cells can adapt to lethal genetic modifications by plastically gaining physiological resistance, but access to resistance states is limited by environmental histories and timing of genetic modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 represent the central thesis supported by the entire body of experimental work. The demonstration of physiological adaptation (C6) and its history-dependence (C7) are substantiated by multiple independent lines of evidence including timing experiments, genetic controls, and mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The mechanism of ribosomal balance recovery remains unclear, but may involve innate homeostatic feedback mechanisms where ribosomal proteins bind their own mRNAs and regulate translation through competition between rRNA and mRNA. Since ribosomal operons include genes for RNA polymerase subunits and other factors, this feedback could mediate global expression changes enabling growth-permissive states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C103 present plausible mechanistic speculation supported by literature (C97-C100, C102) but acknowledge the lack of direct evidence (C96). The proposed mechanism is reasonable given known ribosomal regulation, but remains speculative (\"might,\" \"could\") without experimental validation in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The observed physiological adaptation may relate to adaptive resistance phenomena and persister cell formation. The necessity for near-critical states (residual protein) and slow stress intensification parallels adaptive resistance, where populations enhance resistance physiologically under gradual antibiotic increases. However, whether internal (gene deletion) and external (drug increase) stress intensification are equivalent remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C113 draw connections to related phenomena but appropriately acknowledge uncertainties (C111, C113). The parallels are plausible (C105, C110) and adaptive resistance is well-documented (C107-C108, C112), but the mechanistic relationship to the current findings remains speculative without direct comparative experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C118",
+      "C119"
+    ],
+    "result": "The mother machine microfluidic approach enables quantification of growth restoration frequencies and their dependence on historical conditions at single-cell resolution. This approach reveals phenomena that would be missed in batch culture where slow-growing adapted cells are outcompeted, confirming the advantage of microfluidic time-lapse microscopy for studying long-term adaptation in slow-growing lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115, C118-C119 highlight methodological contributions. The observation that adapted cells decrease in batch culture (C118, supported by data) validates the necessity of single-cell tracking and demonstrates why this phenomenon hasn't been previously reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C120"
+    ],
+    "result": "The experimental strategy combining optogenetic recombination and single-cell tracking is potentially applicable to other genes and cell types including mammalian cells, and may offer insights into drug-resistant bacterial and cancer cells. A comprehensive understanding of resistance evolution could inform new treatment strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C117, C120 discuss potential future applications and broader impact. While the technical approach is sound and the PA-Cre system has been used in mammalian cells, the actual applicability to other systems and translational impact remain speculative without experimental demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Background knowledge claims establish the context: bacteria adapt to external stresses through mechanisms like RpoS-mediated stress response and SOS response; biological systems can buffer genetic changes through mechanisms like molecular chaperones and expression compensation; chloramphenicol targets the 50S ribosomal subunit; and fluorescent ribosomal protein reporters can probe subunit balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C15, C17, C63-C65 represent established knowledge supported by appropriate citations. These provide necessary context for interpreting the novel findings but are not themselves results of this study.",
+    "result_type": "MINOR"
+  }
+]

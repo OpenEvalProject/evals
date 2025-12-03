@@ -1,0 +1,1871 @@
+{
+  "submission": {
+    "id": "afe04230-5bd0-445b-ba07-f000365c142d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:23:19.348859Z",
+    "updated_at": "2025-12-03T17:23:19.348859Z"
+  },
+  "content": [
+    {
+      "id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "submission_id": "afe04230-5bd0-445b-ba07-f000365c142d",
+      "content_type": "manuscript",
+      "content_text": "# Phenotyping single-cell motility in microfluidic confinement\n\n## Authors\n\n- Samuel A Bentley<sup>1</sup> ([ORCID: 0000-0001-8315-2349](https://orcid.org/0000-0001-8315-2349))\n- Hannah Laeverenz-Schlogelhofer<sup>1</sup> ([ORCID: 0000-0003-2958-5711](https://orcid.org/0000-0003-2958-5711))\n- Vasileios Anagnostidis<sup>1</sup>\n- Jan Cammann<sup>5</sup> ([ORCID: 0000-0003-3245-8078](https://orcid.org/0000-0003-3245-8078))\n- Marco G Mazza<sup>5</sup> ([ORCID: 0000-0002-5625-9121](https://orcid.org/0000-0002-5625-9121))\n- Fabrice Gielen<sup>1</sup> ([ORCID: 0000-0003-0604-7224](https://orcid.org/0000-0003-0604-7224)) \u2020\n- Kirsty Y Wan<sup>1</sup> ([ORCID: 0000-0002-0291-328X](https://orcid.org/0000-0002-0291-328X)) \u2020\n\n### Affiliations\n\n1. Living Systems Institute, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))\n2. Mathematics and Statistics, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))\n3. Biosciences, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))\n4. Physics and Astronomy, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))\n5. Interdisciplinary Centre for Mathematical Modelling and Department of Mathematical Sciences, Loughborough University Loughborough United Kingdom ([ROR:04vg4w365](https://ror.org/04vg4w365))\n6. Max Planck Institute for Dynamics and Self-Organization (MPIDS) G\u00f6ttingen Germany ([ROR:0087djs12](https://ror.org/0087djs12))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe movement trajectories of organisms serve as dynamic read-outs of their behaviour and physiology. For microorganisms this can be difficult to resolve due to their small size and fast movement. Here, we devise a novel droplet microfluidics assay to encapsulate single micron-sized algae inside closed arenas, enabling ultralong high-speed tracking of the same cell. Comparing two model species - Chlamydomonas reinhardtii (freshwater, 2 cilia), and Pyramimonas octopus (marine, 8 cilia), we detail their highly-stereotyped yet contrasting swimming behaviours and environmental interactions. By measuring the rates and probabilities with which cells transition between a trio of motility states (smooth-forward swimming, quiescence, tumbling or excitable backward swimming), we reconstruct the control network that underlies this gait switching dynamics. A simplified model of cell-roaming in circular confinement reproduces the observed long-term behaviours and spatial fluxes, including novel boundary circulation behaviour. Finally, we establish an assay in which pairs of droplets are fused on demand, one containing a trapped cell with another containing a chemical that perturbs cellular excitability, to reveal how aneural microorganisms adapt their locomotor patterns in real-time.\n\n## Introduction\n\nAll lifeforms are environmentally intelligent; even single cells sense and respond to their environment (Jennings, 1901). How living systems interact with the external world is a fundamental question that has fascinated researchers for centuries. The exploratory behaviours of living beings can be extraordinarily complex and context-dependent, and yet also stereotyped. Digitally-assisted and non-invasive tracking methods have revolutionised the study of behaving animals (Berman, 2018; Mathis et al., 2018). Algorithms for pose and gait-estimation based on computer vision and machine learning have bolstered the utility of animal models for neuroscience, providing a highly quantitative and objective framework for measuring behaviour. These nascent approaches are now being used in combination with genetic manipulation, to resolve how an organism\u2019s sensory architecture (neural pathways, nervous systems) may be coupled to motor actuators (e.g. muscles) to drive motor actions (Brown et al., 2013).\n\nSurprisingly, nervous systems are not necessary for the emergence of complex search patterns or behavioural motifs (Coyle et al., 2019; Wan, 2020). Micoorganisms also adopt highly stereotyped locomotion strategies, often employing motile appendages: bacterial flagella for swimming, pili for twitching and swarming, and in many eukaryotes, cilia for self-propulsion. Microbial motility is strongly influenced by boundaries, interfaces, and other obstacles (Ostapenko et al., 2018; Kantsler et al., 2013). Microorganisms naturally encounter heterogeneous environments, such as soil, sea ice, or porous materials that constitute complex networks of confining tubes, spaces, or interstices. By replicating such microenvironments in the laboratory, realistic situations can be created for tracking and understanding the mechanisms of movement and behavioural adaptation (Th\u00e9ry et al., 2021; Bhattacharjee and Datta, 2019).\n\nDespite their small size, microswimmers self-propel at speeds of several tens (even hundreds) of body lengths per second, posing a formidable challenge for live-cell microscopy and tracking. Typically, the same individual can only be observed for relatively short periods, and motility statistics are then coarse-grained across entire populations. Across different species, even across different individuals of the same clonal population, microbes exhibit significantly divergent behaviours. This single-cell heterogeneity may be hidden if only population averages are considered. However, long-term tracking of the same individual was not possible until very recently (Hageman et al., 2019; Ostapenko et al., 2018; Codutti et al., 2022).\n\nWhat are the behavioural signatures that distinguish one microswimmer from another? To address this, we phenotype two species of motile algae, and decode their responses to diverse environmental cues. The first, Chlamydomonas reinhardtii (hereafter CR) is a freshwater biflagellate and a model organism for motility studies and cilia biology (Sasso et al., 2018). The second, Pyramimonas octopus (hereafter PO), is a marine octoflagellate, which has a unique tripartite run-stop-shock motility pattern (Wan and Goldstein, 2018). Harnessing modern microfluidics technology to access long-term behaviour (Br\u00fcckner et al., 2019; Tweedy et al., 2020), we developed a platform to stably encapsulate algae inside droplets contained in shallow microwells. Here, cells can explore and interact with their local environment over much longer timescales than previously possible. Single-cell responses were evaluated against physical confinement, light, and chemical stimulation. For the latter, this is achieved by fabricating a tailored device to directly perturb the chemical environment of a trapped cell, by droplet pairing and fusion controlled by surfactant-induced interface destabilization (Niu et al., 2009; Frenz et al., 2008; Fradet et al., 2011).\n\nFrom these long-time recordings, we then explore universal metrics of microbial motility, including speed, gait switching probabilities, and emergent spatial probability fluxes in the time-averaged motion of single cells. We show how these behaviours are effectively captured by a model of a roaming cell in a circular corral. Taken together, our approach integrates experimental and computational techniques to provide an exciting opportunity to understand how individual living cells interact with local environmental cues at the microscopic scale.\n\n## Results\n\n### Microfluidic trapping of single motile algae\n\nWe encapsulated CR or PO cells in droplet microwells of four different diameters (\u00d8 = 40, 60, 120, 200 \u03bcm). To study the cells\u2019 baseline motility (in the absence of stimulation), we imaged in red light to prevent phototactic effects (long-pass IR filter). According to the absorption spectra of CR photoreceptors (ChR1 and ChR2), cells are insensitive to wavelengths of > $600nm$ (Harz and Hegemann, 1991). The identity of the photoreceptor in PO has not yet been confirmed, but is likely to be similar to CR, since green algal eyespots are highly conserved (Kreimer, 2009).\n\nOnly wells containing precisely one cell were imaged (see Materials and methods). These water-in-oil droplets were stably trapped and retained their shape and volume for more than 1 hr. The trapping procedure was sufficiently gentle and did not damage the cilia or cause spontaneous deciliation. Compared to the cell-scale, the arenas are shallow (\u223c 30 \u03bcm deep in total) and quasi-2D, so that swimming motion is largely restricted to the plane (Figure 1A and B). We trapped each cell for a total of 1 hr, recording at 5-min intervals ($N=5$ cells per trap size, 6 time points each) at 500 frames per second. High-speed imaging was necessary to resolve rapid motility changes. Cell-centroids were tracked with Trackmate in ImageJ and analysed with custom scripts (see Materials and methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig1-v1.jpg)\n\n**Figure 1.:** (A) A two-layer microfluidic device with embedded single-cell traps, and syringes used for perfusion of the carrier oil phase and an aqueous suspension containing live motile cells. (B) 3D rendering of a single trap in which a cell can be stably trapped and imaged for hours. To demonstrate variability in swimming behaviour, we studied two species of motile algae, images show respectively: (C) a single Chlamydomonas reinhardtii (CR) cell, and (D) a single Pyramimonas octopus (PO) cell, in each case trapped within a 120 \u03bcm-diameter circular well. (Cilia positions are highlighted by manual tracings.).\n\nThe two species display very different swimming behaviours. Typical trajectories and speeds are displayed in Figure 2. Both species have front-mounted cilia (Figure 1C and D). CR executes a breaststroke gait where the two cilia alternate between long-periods of in-phase synchrony, and phase slips when one cilium transiently undergoes altered beating (Wan et al., 2014). This leads to noisy trajectories with straight runs whenever the cilia are synchronised, and turns whenever synchrony is lost. Asynchronous cilia dynamics are associated with reduced swimming speed (Polin et al., 2009). Meanwhile PO swims forward using a rotary breaststroke with frequent episodes of ultrafast backward swimming (called \u2019shocks\u2019), where all eight cilia undulate synchronously in front of the cell for up to $20ms$ (Wan and Goldstein, 2018). During shocks cell speed can exceed $1mms^{-1}$.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig2-v1.jpg)\n\n**Figure 2.:** (A) High-speed trajectories of single C. reinhardtii cells in circular traps of varying sizes (illustrating coverage over 5 min), overlaid with a 5-second representative trajectory (colour-coded by speed). (B) Instantaneous swimming speeds for the sample trajectories shown in (A). Inset: speed fluctuations over short timescales. (C) Heatmaps of cell swimming speed over time indexed by cell number N (rows), and ordered by trap size, using data from all experimental runs. (D\u2013F) Similar, but for PO. All trajectories viewed from above the sample in the lab frame.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Note that the scaling of the probability density function is linear for CR and logarithmic for PO.\n\nBoth species displayed stochastic transitions between different swimming modes (Figure 2). However, CR swims largely continuously albeit with noisy fluctuations in speed (fractal timeseries), PO exhibits excitable dynamics reminiscent of neuronal spiking, where bursts of high-speed movement are followed by periods of quiescence. This more episodic motility repertoire of PO is associated with more sparse trap coverage over time (Figure 2A and D) (Videos 1 and 2). The distinction persists in the long-time single-cell heatmaps (Figure 2C and F). In the smallest traps, PO cells showed bursting dynamics - with clusters of shocks in quick succession (Figure 2E). Over 1 hr, CR motility remained largely unchanged, in PO a slight reduction in activity was observed in the smallest traps (Figure 2\u2014figure supplement 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/76519/elife-76519-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/76519/elife-76519-video2.mp4.jpg)\n\n### Effect of physical confinement\n\nWe assayed four trap sizes (\u00d8 = 40, 60, 120, 200 \u03bcm), varying from strong confinement where the cell is never more than 1.5 body lengths away from the boundary, to weak confinement where cells are free to roam along tight helices. Population-level trends and stereotyped behaviours were evident when we averaged trajectory statistics over all cells, across all timepoints.\n\nOur findings are twofold. First, confinement affects cell swimming speed. As trap size is decreased, CR speeds are shifted towards lower values (Figure 3A, whereas in PO the characteristic speed and likelihood of runs are reduced (Figure 3B), compare location and width of the violin plot \u2019waist\u2019). See also bivariate histograms of linear $v$ and angular speed $\u03a9$ (Figure 3\u2014figure supplement 2). Second, increasing confinement changes the nature of how cells explore the circular traps. To see this, we partition the arena (scaled by trap size) and compute the relative probability density of occupancy in each box. Averaging over all trajectories, we find that cells preferentially move within an annulus of the solid boundary (Figure 3C, D - shaded blue regions). To account for the \u2018arrow of time\u2019 in the movement history of a single individual (Battle et al., 2016; Cammann et al., 2021), we also compute for each trap size a time-averaged probability flux at each position (see Appendix 1). These steady-state fluxes have a heading and strength according to the most probable trajectory direction starting from the current position. Unexpectedly, single-cell trajectories display non-equilibrium flux loops resulting from persistent circling behaviour inside the traps (Figure 3C, D). Circulation is predominantly counter-clockwise (CCW), viewed from above in the lab frame.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig3-v1.jpg)\n\n**Figure 3.:** (A,B) Violin plots of pdfs of speed ($v$) across all cells, and all time points, for CR and PO. (Note the scaling of the pdfs is linear for CR, but logarithmic for PO.) (C,D) Time-averaged heatmaps of the cells\u2019 centroid positions, for each of the four different trap sizes, overlaid with arrows showing the direction and strength of steady-state non-equilibrium fluxes computed from trajectory statistics, for CR and PO. (E) Traced cilia waveforms for CR showing the asymmetric beat pattern of the two cilia under red light. (F) The asymmetric dumbbell model used for CR with a smaller circle (radius a2) for the cell body and a larger circle (radius a1) representing the area covered by the cilia beat, which is offset from the swimming direction $e^$ by angle $\\theta$. Comparison of the experimental mean and standard error ($N=5$) of the radial probability densities $P(r)$ (G), mean-squared displacement curves (H) and mean tangential flux (I) with the simulation results for each trap size. The inset in (I) shows the time-averaged heatmap of centroid position overlaid with arrows showing the probability flux results for the simulation of the 40 \u03bcm diameter trap.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The experimental mean and standard error (N = 5) of the radial probability densities $P(r)$ (A) and mean-squared displacement curves (B) for each of the trap sizes, for PO.Compared with CR, the $P(r)$ curves are more irregular and the MSD curves show a more gradual increase toward the maximum.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Bivariate histograms of linear and angular speed ($v,\u03a9$) across all cells, and all time points for CR (A), and PO (B).Bivariate histograms of speed and radial position ($v,r$) across all cells, and all time points, for CR (C), and PO (D).\n\nTo explain why the cell not only follows the trap boundary, but also how a preferred circling direction can emerge from a perfectly symmetrical trap, we turn to a minimal computational model (Cammann et al., 2021). For brevity, we consider here the case of a CR-like microswimmer only. Briefly, the swimmer is modelled as an active dumbbell with unequal-sized spheres, whose dynamics obey overdamped Langevin equations, with a forcing term to account for steric interactions with the solid boundary (see Appendix 1). We further assume cells swim with a constant speed of $v=80\u00b5\u2062ms^{-1}$ 80 \u03bcms-1 in all traps. This results in boundary circulation behaviour without recourse to change the cell\u2019s internal motility state (Ostapenko et al., 2018). In domains with constant curvature (e.g. circular), however, macroscopic flux loops should not arise, due to equal probabilities of circling clockwise or counter-clockwise. A further source of asymmetry must be present to account for the experimental observations. Closer inspection of high-magnification videos of single CR cells revealed that the two flagella often lose synchrony, one flagellum consistently beating faster than the other leading to bilateral asymmetry (Figure 3E). Motivated by this, we modify the dumbbell model so that the two spheres are misaligned with an offset angle $\\theta$ (Figure 3F). For a small offset $\\theta=1.5^{\u2218}$ (where $\\theta>0$ is the CCW direction), we simulated single-swimmer trajectories for the four trap sizes and evaluated the long-time behaviour. Radial probability densities, mean-squared displacement (MSD) profiles, and mean tangential fluxes of the simulated tracks agree rather well with measured data (Figure 3G-I). In the simulations, chiral fluxes became more prominent with increasing confinement, consistent with the data (Figure 3I).\n\n### Effect of white light stimulation\n\nNext we explore the effect of an orthogonal parameter on motility - illumination wavelength. We imaged the samples with broad-spectrum white light (WL) instead of red light (RL), at an intensity expected to influence phototaxis in CR, but not sufficient for photoshock. For two trap sizes, $\u2205=$ 120 \u03bcm and 60 \u03bcm (again $N=5$ per trap size), we again recorded motility over 1 hour (Videos 3 and 4).\n\n![Video 3.](https://cdn.elifesciences.org/articles/76519/elife-76519-video3.mp4.jpg)\n\n**Video 3.:** Videos show different timepoints for the same individual.\n\n![Video 4.](https://cdn.elifesciences.org/articles/76519/elife-76519-video4.mp4.jpg)\n\n**Video 4.:** Videos show different timepoints for the same individual.\n\nSome single-cell heterogeneity is evident (Figure 4). At early times CR cells swim faster in WL compared to RL in the same trap sizes at equivalent times, suggesting a photokinetic response (Figure 4A, Figure 4\u2014figure supplement 1A). A decline in motility is observed across all sampled cells after $\u223c45$ min, especially in the smallest 60 \u03bcm traps (note wide \u2019waists\u2019 at zero speed). All cells in the 60 \u03bcm traps were completely immotile after $\u223c50$ min. Similarly, PO became increasingly quiescent and immotile over time. By 1 hr, all cells stopped moving (Figure 4B), and in some cases deformation of cell shape and even deciliation was noted at the final time point. This was not seen in RL (Figure 2, Figure 2\u2014figure supplement 1). Comparing PO speeds in WL and RL at early times, maximum speeds during ciliary reversals or shocks are unchanged, but their distributions are skewed toward higher speeds due to increased likelihood of forward runs ($300-400\u00b5\u2062ms^{-1}$ \u03bcms-1) (Figure 4\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig4-v1.jpg)\n\n**Figure 4.:** (A,B) Heatmaps of cell swimming speed over time, for CR and PO. (C) Time-averaged heatmaps of the cells\u2019 centroid position overlaid with arrows showing the direction and strength of the probability flux computed from trajectory statistics for both trap sizes under white light conditions. Comparison of the experimental mean and standard error ($N=5$) of the radial probability densities $P(r)$ (D) and mean-squared displacement curves (E) with the simulation results for each trap size. (F) An illustration of the different dumbbell model parameters used for RL and WL conditions together with semi-circles showing the time-averaged heatmaps of the centroid position overlaid with probability flux arrows for the 60 \u03bcm diameter trap size. A change in the direction of the offset angle $\\theta$ changes the direction of the non-equilibrium flux. (G) Comparison of the simulations results with the experimental mean and standard error ($N=5$) of the mean tangential flux as a function of radial displacement for each trap size.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Note that the pdfs are scaled linearly for CR and logarithmically for PO.\n\nAs before, we compute the spatial occupancy of single-cell tracks and their associated steady-state (time-averaged) fluxes (Figure 4C). Again, directed flux loops emerged, due to circling behaviour, most prominently for CR. For both species, the flux strengths are larger and the circulation patterns more ordered in WL than in RL. The predominant sense of circulation also switched from CCW to clockwise (CW).\n\nTo explain this, we return to our minimal model, and again consider a CR-like swimmer for simplicity. We first increase the swimming speed from $v_{0}=80\u00b5\u2062ms^{-1}$ 80 \u03bcms-1 to $v_{0}=100\u00b5\u2062ms^{-1}$ 100 \u03bcms-1, to reflect the increase in speed in WL at early times compared to RL. As before, we hypothesize that biflagellar synchrony may be key. High-magnification imaging of CR swimming in WL revealed a dramatic improvement in flagellar synchrony, consistent with previous observations (Wan et al., 2014). Accordingly, we update the offset angle from $\\theta=+1.5^{\u2218}$ in RL to $\\theta=-1^{\u2218}$ in WL. These values are illustrative, as there is no clear mapping between flagellar synchrony and shape offset. With these two simple modifications, the model reproduces both the increase in flux strength and reversal in flux direction in WL (Figure 4F and G). The simulations can be extended to account for more complex motility patterns (e.g. episodic swimming in PO), or a variable swimming speed.\n\n### Behaviour is compressed into three motility macrostates\n\nHow must the dynamics of individual locomotor appendages change, to explain the above whole-cell behaviours? How does this depend on the species? To answer these questions, we use long-time statistics to provide a robust measure of behaviour that is independent of a cell\u2019s physical environment. We first observe that the motility space is low-dimensional, comprising only a trio of movement states (Figure 5 and Appendix 1). Both species exhibit a quiescent or \u2018stop\u2019 state in which the cell body and cilia exhibits minimal movement, a \u2018run\u2019 state associated with constant speed and smooth forward swimming, and a \u2019transitional\u2019 state for re-orientations. This is analogous to prokaryotic strategies such as run-and-tumble in E. coli (Berg, 2003; Perez Ipi\u00f1a et al., 2019), or the run-reverse-flick in V. alginolyticus (Son et al., 2015).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013G) For CR, distinct ciliary beat patterns and coordination states (A) produce different swimming trajectories (B), and a discrete sequence (C) of states (run, stop, tumble). For cells in 120 \u03bcm traps, RL, the states occupy distinct regions in $(v,\u03a9)$-space (D), and a time-averaged reaction network with characteristic transition parameters (E). Network parameters are different in WL for the same trap size, as evidenced in (F): survival probability of run states, and (G): mean and standard error (N = 5) for selected state probabilities and transition rates. (H\u2013N) Similarly for PO.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Error bars correspond to the standard errors (N = 5).\n\nWe can decompose long-time tracks into discrete timeseries of these states (labelled $i=0,1,2$) according to a heuristic approach based on direct observations of ciliary beat patterns and associated trajectory parameters such as linear $v$ or angular velocity $\u03a9$. At time $t$, the cell is in state $S\u2062(t)$. For CR, we define \u2019runs\u2019 ($S=1$) to be when the two cilia engage in synchronous breaststrokes (high $v$, low $\u03a9$), \u2018tumbles\u2019 ($S=2$) when the cilia lose synchrony (low v, high $\u03a9$), and \u2019stops\u2019 ($S=0$) where $v<v_{c}$ for a threshold speed $v_{c}$ (Figure 5A\u2013D). Similarly, the behaviour of PO can also be mapped to a tripartite run-stop-shock repertoire (Wan and Goldstein, 2018), where PO \u2019shocks\u2019 are analogous with CR \u2019tumbles\u2019. \u2019Runs\u2019 ($S=1$) result from coordinated breaststrokes involving 8-cilia (Wan, 2020), corresponding to moderate $v$ and low $\u03a9$. \u2019Shocks\u2019 ($S=2$) occur when all eight cilia switch to a symmetric beat and undulate in front of cell, producing rapid backward swimming followed by reorientation (high $v$ and high $d\u2062\u03a9/d\u2062t$). Finally, \u2019stops\u2019 ($S=0$) are where $v<v_{c}$ for a threshold speed $v_{c}$ (Figure 5H\u2013K). We note that for both species while coordinated strokes produce straight swimming across the trap interior (\u2019runs\u2019), curvature-guided interactions with the wall lead to circling behaviour (\u2019runs\u2019 along the boundary); both are considered \u2019runs\u2019 here (Figure 5B and I).\n\nThis discrete state representation allows us to quantify how sub-cellular dynamics change over time or in response to environmental cues. We can estimate for each cell and for each assayed condition (see Appendix 1) the expected probability of being in state $i$ (pi), the list of sojourn times in state $i$ ($T_{i}$), survival probabilities $P(T_{i}>\\tau)$ and expected residence times $\u27e8T_{i}\u27e9$ in state $i$, as well as the pairwise state transition probability ($p_{i\u2062j}$) and the transition rate (number of transitions per unit time) $q_{i\u2062j}$ from state $i$ to $j$. Together, these rate constants specify a unique network akin to a chemical reaction network. An example from the 120 \u03bcm traps is shown (Figure 5E and L). See Figure 5\u2014figure supplement 1 for results in the 60 \u03bcm traps.\n\nIn terms of state probabilities for CR in the 120 \u03bcm traps (Figure 5G): $p_{1}^{WL}>p_{1}^{RL}$ (runs more likely in WL), $p_{2}^{WL}<p_{2}^{RL}$ (tumbles less likely in WL), but $p_{0}^{R\u2062L}\u2248p_{0}^{W\u2062L}$ (both equally likely to stop swimming by 1 hr). WL also increased the tumble\u2192run transition rate (q21) and decreased the run\u2192tumble transition rate (q12) (Figure 5G), Empirically, this means that CR performs more frequent and longer runs in WL compared to RL. For PO, the difference between RL and WL is more obvious, see for example the run-state survival probability $P(T_{1}>\\tau)$ (Figure 5M). State probabilities $p_{0,1,2}^{RL}$ remained largely constant over 1 hr, but $p_{1,2}^{W\u2062L}$ decreased over time (runs and shocks became less likely) while $p_{0}^{W\u2062L}$ increased (stop more likely) (Figure 5N). Initially $p_{1}^{WL}>p_{1}^{RL}$, but after the 4th timepoint (about 40 min) this drops to below the corresponding RL value. We see that $q_{12}^{WL}<q_{12}^{RL}$ (run to shock transitions are much less likely in WL), and $q_{10}^{W\u2062L}$ increased over time so that run\u2192stop transitions became more likely. This means that in WL, PO runs are longer and more likely than in RL, but cells gradually lost motility over time.\n\n### Algal cell motility is light-switchable\n\nNext we perform a dynamic assay to see how the same individual responds to photostimulation, and if such responses are reversible. Single CR or PO cells were trapped in 120 \u03bcm wells (again $N=5$ per trap size) and imaged continuously for 20 minutes in the following sequence: (1) 5 minutes in RL (RL1), (2) 5 min photostimulation in WL (WL1), (3) 10 min back in RL (RL2). For both species, motility patterns in RL1 and WL1 are similar to previous results under constant RL or WL illumination. As before, single-cell heterogeneity is observed (Figure 6A and B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig6-v1.jpg)\n\n**Figure 6.:** (A) Heatmaps of CR swimming speed over the course of a 20-min photoresponse assay, insets show short, representative timeseries in each phase. (B) The same for PO. (C) Population-averaged swimming speed, over time. (D) Population-averaged rates of transitions between motility states, over time. (Shaded regions are standard errors.) (E) Mean speed of \u2018runs\u2019 in CR, over time. (F) Probability of \u2018shocks\u2019 in PO, over time. Violin plots of the most prominent frequencies extracted from helical trajectories (inset), for CR (G) and for PO (H). For CR, this corresponds to the ciliary beat frequency.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig6-figsupp1-v1.jpg)\n\nBoth species display a reversible but asymmetric photokinetic response to WL1. Response to RL \u2192 WL (step-up) is fast and occurs within seconds, but recovery after WL \u2192 RL (step-down) is slow and persists for several minutes into the RL2 phase (Figure 6C and D). Most cells swim faster with longer runs in WL1 period than in the preceding RL1 period. In CR this is primarily by increasing the speed of prospective runs (Figure 6E), but in PO this is by reducing the likelihood of state transitions, particularly of shocks immediately in response to step-up (Figure 6D and F). The suppression of shocks in PO is consistent with previous results in constant WL. Cells gradually adapt by increasing the transition frequency over the remainder of WL1, and well into RL2.\n\nThus, algal swimming motility is light-switchable in the presence of short-lived stimuli, which induce perturbations to the cell\u2019s internal motility state network. Cells retained a memory of the stimulation (WL1) for longer than the stimulus duration itself. Analysing \u2018run\u2019 phases exclusively to extract the most prominent frequencies from the helical trajectories (see Appendix 1), we further deduce that CR swims faster by increasing the frequency and synchronicity of ciliary beating (from $52\\pm4$ to $62\\pm3$ Hz), in response to step-up from RL1 to WL1 (Figure 6G). A similar analysis of PO trajectories yielded significant cell-to-cell variability but no clear frequency signatures that could be correlated with ciliary beating (Figure 6H). This is likely due to the unique coordination of the 8 cilia that suppresses the helicity of trajectories (Wan, 2020).\n\n### Effect of chemical stimulation\n\nIn many protists, ciliary motility is modulated by chemical sigalling, including Ca2+-influx through ion channels, suggesting a conserved Ca-dependent mechanism (Inaba, 2015; Wan and J\u00e9kely, 2021). Ionic fluxes elicit transitions in cilia beating, waveform and swimming behaviour (Beck and Uhl, 1994; Kung and Naito, 1973; Brette, 2021; Geyer et al., 2022). In Paramecium, Ca2+, and K+ ions are major regulators of motility, including transitions between forward and backward swimming (Kunita et al., 2014). We hypothesize that motile algae also possess a behavioural response to changes in external ion concentrations, and confirmed this in PO with a bulk motility assay (see Materials and methods). The introduction of a droplet pre-loaded with 50 mM KCl to a suspension of PO cells produces perturbed swimming (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig7-v1.jpg)\n\n**Figure 7.:** (A) Example tracks from a bulk motility assay (see Materials and methods), immediately before (\u2019normal motility phenotype\u2019) and after addition of 50 mM KCl to the medium (\u2018chemically perturbed phenotype\u2019). (B) Schematic of the serpentine microfluidic device for generation and pairing of droplets - one containing the trapped cell, and the other loaded with 10 mM KCl (inset, red circles). Fluorescein was added to the KCl phase to identify paired droplets. Fusion was then induced by replacing the 0.5% surfactant in HFE with 40% 1 H,1H,2H,2H-Perfluoro-1-octanol (PFO) in HFE. Two such droplets merge within 1 or 2 ms (inset). (C) Heatmaps of single-cell swimming speed, before and after the moment of fusion to a droplet containing KCl, compared to a control pair where KCl was replaced with inert culture medium. An example single-cell trajectory $50s$ before (grey) and $50s$ after (pink) droplet fusion, for a control (D) and a KCl pair (E).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig7-figsupp1-v1.jpg)\n\nTraditional, bulk assays do not allow path-sampling of single-cell trajectories, nor do they have the ability to track in real-time how a single cell responds to chemical perturbations. We solve this by designing a microfluidic device to deliver controlled fusion of two droplets (Figure 7B). Using a cross-junction microfluidic chip, we generated droplets in alternation that contain either a 10 mM KCl solution or cell suspension. Pairs of droplets were then trapped in downstream doublet wells. We then identified droplet pairs comprising one with a trapped PO cell, and another containing the 10 mM KCl solution spiked with 1 \u00b5M of fluorescein which acted as a reporter. Fusion is triggered by starting the flow of 40% perfluoro-1-octanol (PFO) in HFE (a competing surfactant); see Materials and methods. Two such droplets fuse within 1 or 2 ms. Note that trap-occupancy is stochastic: not all droplet pairs have the target composition, since droplet generation does not alternate perfectly between the two channels. Doublet wells with both droplets containing KCl, or both droplets containing cell suspension, were not imaged (Figure 7B, inset).\n\nWe compare the motility of cells in these doublet traps in the presence or absence of the chemical perturbation. Control experiments were performed by substituting the KCl medium with normal culture medium (without cells). Prior to fusion, cell motility was similar in both cases (Figure 7C). After fusion, cells paired with a KCl droplet immediately showed erratic swimming, followed by gradual decay in motility over time (see Video 5), which is likely a combined effect of an increase in K+ and decrease in Ca2+ concentration (Table 1). Significant changes in the morphology and tortuosity of swimming trajectories are also observed after fusion (Figure 7D and E). Further examples of this response are presented in Figure 7\u2014figure supplement 1.\n\n![Video 5.](https://cdn.elifesciences.org/articles/76519/elife-76519-video5.mp4.jpg)\n\n**Table 1.**\n A comparison of the concentrations of key ions (in mM), before and after paired droplet fusion.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Ion</th>\n      <th>Pre-fusion</th>\n      <th>Post-fusion (with 10 mM KCl solution)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Na+</td>\n      <td>395</td>\n      <td>197</td>\n    </tr>\n    <tr>\n      <td>K+</td>\n      <td>8.33</td>\n      <td>9.17</td>\n    </tr>\n    <tr>\n      <td>Ca2+</td>\n      <td>8.75</td>\n      <td>4.38</td>\n    </tr>\n    <tr>\n      <td>Mg2+</td>\n      <td>44.5</td>\n      <td>22.3</td>\n    </tr>\n    <tr>\n      <td>Cl-</td>\n      <td>459</td>\n      <td>230</td>\n    </tr>\n    <tr>\n      <td>SO42-</td>\n      <td>23.6</td>\n      <td>11.8</td>\n    </tr>\n    <tr>\n      <td>NO3-</td>\n      <td>1.1</td>\n      <td>0.6</td>\n    </tr>\n    <tr>\n      <td>HPO42-</td>\n      <td>0.1</td>\n      <td>negligible</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\n### Stereotypy and the \u2018arrow of time\u2019 in long-term single cell behaviour\n\nThe emerging field of computational ethology seeks to track and annotate the complex behaviours of organisms (Han et al., 2018; Yaski et al., 2011; Yemini et al., 2013; Stephens et al., 2011). Due to their small size, variable morphology, and high-speed movement, detailed analysis of the behavioural patterns of microorganisms is technically challenging. Here, we leveraged droplet microfluidics to track the swimming trajectories of microbes for long periods of time. Comparing a freshwater biflagellate with a marine octoflagellate, we quantified how single-cells respond to a number of controlled environmental stimuli (including mechanical, light and chemical).\n\nWe showed that the behavioural space of roaming microbes comprise highly stereotyped movements, and proposed a new paradigm for phenotyping microbial motility in terms of a minimal set of three motility macrostates (runs, stops, tumbles/shocks). This inherent low-dimensionality has been observed in other organisms (Larson et al., 2022; Jordan et al., 2013; Tsang et al., 2018) and artificial microswimmers (Leoni et al., 2020; Hokmabad et al., 2021). Over long times, CR swimming is fairly continuous, yet PO transitions between bursts of fast swimming and lengthy periods of quiescence, reminiscent of \u2019wakeful\u2019 versus \u2019sleep states\u2019 observed in animals (Lawler et al., 2021).\n\nImportantly, our long-term behavioural recordings retained the \u2019arrow of time\u2019 (Gnesotto et al., 2018). This gives us access to key information that may be hidden by traditional, bulk-averaged measurements, such as chiral movements in confined spaces (see next section). From these ultralong timeseries, we quantified how behaviour changes at the sub-cellular level. Transition rates and probabilities between states were shown to not only change in time but also in response to environmental stimuli. Such timeseries can also be mined to infer non-equilibrium entropy production (Skinner and Dunkel, 2021; Wan and Goldstein, 2018). These species-specific movement signatures reflect different intracellular processes for controlling the algal motility apparatus (Guo et al., 2021), and could be key to the emergence of cognition and environmental responsiveness (Kunita et al., 2016; Wan and J\u00e9kely, 2021). Microbes inhabiting different ecological niches (e.g. freshwater or marine) likely evolved divergent strategies for sensorimotor control, despite all relying on the same organelle for motility. Future work should seek to map the space of ciliary waveforms, itself low-dimensional (Geyer et al., 2022), to whole-cell swimming behaviours.\n\n### Flux loops without curvature gradients\n\nMicrobes often interact with their physical environment, particularly with interfaces and boundaries. Interactions are commonplace in natural settings with exposed surface features or other heterogeneous structures, for example soil, foam, or particulate matter (Th\u00e9ry et al., 2021; Kantsler et al., 2013; Souzy et al., 2022). Here, we engineered PDMS chambers with precise shapes to explore how confinement affects cell motility. In red light, cells tolerated long-periods of confinement with little change to their overall motility. We also discovered a chiral circling behaviour, confirmed by flux representations of the time-averaged trajectories. While confinement has been shown previously to stabilise macroscopic chiral movement in swimmer suspensions (Wioland et al., 2013; Beppu et al., 2021), here chirality has emerged in the travel history of a single cell. This implicates a distinct route towards a chiral non-equilibrium steady-state that has not been reported previously.\n\nThat the sense of chirality also depends on light is strong indication that it arises from a mechanism under cellular control. We outlined a model for how this can occur, based on a minimal representation of a CR-like cell as a dumbbell with fore-aft asymmetry (Cammann et al., 2021). Such a swimmer will align with solid boundaries in a curvature-dependent manner, as shown previously (Ostapenko et al., 2018). In a circular trap (constant curvature), it should not produce flux loops on average (Cammann et al., 2021). We find that breaking of the dumbbell swimmer\u2019s left-right symmetry was sufficient to produce trajectories with CW or CCW bias, depending on the sign of the offset $\\theta$. This is supported by data showing the bilateral flagellar dominance (asymmetry between cis and trans flagella) to be tunable by light. This is also important for helical swimming and klinotaxis (Cortese and Wan, 2021; Leptos et al., 2022). Thus, even minor cell-internal asymmetries (here represented by a very small $|\\theta|$) are sufficient to break macroscopic symmetry. Further particulars of cell shape (Lushi et al., 2017; Zaferani et al., 2021), wall interactions (Lauga et al., 2006; Spagnolie et al., 2017), or cilia mechanosensitivity (Wan and Goldstein, 2018) may be needed to account for the more complex swimming repertoire of PO.\n\n### Light-dependent algal motility and phototoxicity\n\nWe also found that motility parameters in RL are more stable than in WL, for both species. Short periods of WL exposure increases the average run-speed of CR by increasing ciliary beat frequency, as found previously in micropipette-immobilised cells (R\u00fcffer and Nultsch, 1990). In contrast, WL decreases the frequency of gait transitions in PO, producing longer stops, longer runs, and fewer shocks. Prolonged or excessive exposure (> 40 minutes) to WL eventually led to reduced or cessation of motility in both species. In CR this is likely due to WL-induced adhesion (Kreis et al., 2018). In PO, there is more evidence of irreversible photodamage. Increasing confinement (smaller traps) decreased the time taken to reach this state, suggesting that motility deterioration may be due to buildup of some metabolite or excretion from the trapped cell over time (Boedicker et al., 2009).\n\nShorter periods ($\u223c5$ min) of WL-stimulation produced reversible changes in motility in the algae (Figure 6), again with species-dependent photokinetic responses occurring at the single cell level. While CR responded largely by modulating run speed, PO modulated the balance of motility macrostates (e.g. suppressed shocks). These distinct behaviours offer intriguing prospects for synthetic biology and bioengineering, such as light-guided patterning of microbes (Frangipane et al., 2018; Bittermann et al., 2021). It will be interesting to combine our assay with genetic perturbations (particularly in CR) to reveal the regulatory pathways responsible for photosynthesis, phototransduction, and phototaxis.\n\n### Future prospects of droplet microfluidics for assaying cell motility\n\nMicro-encapsulation provides unique functionalities that enable controlled, on-demand creation and manipulation of a cell\u2019s local environment (Son et al., 2015). A microfluidics-based pipeline allows us to stably trap motile cells, to establish their unique behavioural signatures. We use multilayer devices and static droplet trapping wells (Fradet et al., 2011) to keep droplets stable for hours, and isolated from possible fluctuations in the continuous phase (Han et al., 2020). This allows us to achieve long-time imaging, and reliable control over trap size, shape, and geometry. The trapping arrays we used maximise the probability of obtaining multiple singly-trapped cells in a single experiment (only limited by Poisson statistics), thus increasing analytical throughput. Our current design focuses on imaging a small number of traps at a time. Simultaneous, high-throughput imaging of multiple cells in multiple wells is also possible, but at the detriment of spatial resolution and thus may not be sufficient for identifying motility state or behavioural transitions.\n\nOur work paves the way for new applications and opportunities for designing diagnostic tools in the absence of molecular tests. Microfluidics-based assays enable the detection of single-cell motility signatures and any heterogeneity in microbial behaviour. Phenotypic diversity is critical in microbial ecosystems, where they may give rise to distinct selection pressures and antimicrobial resistance (Dhar and McKinney, 2007). Our droplet fusion device represents a highly novel solution for assaying fast cell-environment interactions and responses to chemical perturbations (Figure 7). Contrary to traditional assays that use flow channels to deliver concentration gradients, our design applies real-time control and localised perturbations to single microbes. Further developments and extensions are on the way, including augmentation of on-demand single cell encapsulation with active cell sorting (Anagnostidis et al., 2020; Howell et al., 2022). The integration of lab-on-chip technologies, high-speed microscopy and computer vision has significant potential for reconstructing the species-specific sensorimotor pathways of microorganisms, and revealing their response thresholds to dynamic environmental perturbations.\n\n## Materials and methods\n\n### Cell culturing and maintenance\n\nC. reinhardtii cultures were prepared from axenic plates of the CC125 WT strain (Chlamydomonas Center). Individual colonies were transferred to $25cm^{3}$ volumes of Tris-minimal media. Liquid cultures were grown under a 14/10 light-dark cycle at 21\u00b0C and 40% humidity, with constant shaking at $110rpm$. Liquid cultures were sub-cultured when they approached the end of the exponential phase. For motility experiments, second- or third- generation cultures were harvested in late-exponential phase (6-9 days after inoculation). Cell density was measured as \u223c1 \u00d7 106 cells per mL. Cells were centrifuged at 100 g for 10 min, and then concentrated 10-fold. The cells were then left in darkness for a minimum of 30 min to dark-adapt them before each experimental run.\n\nWe prepared our PO cultures from axenic liquid cultures of the WT of the species P. octopus (NIVA/NORCCA). 200 \u00b5L of axenic culture was transferred to $25cm^{3}$ of TL30 media. Cells were grown under continuous illumination at 21\u00b0C and 40% humidity, without shaking. For motility experiments, cultures were harvested during the latter half of the exponential phase (20-30 days after inoculation). Cell density was measured at \u223c3 \u00d7 103 cells per mL. Cells were centrifuged at 100 g for 10 min, and then concentrated 10-fold. The cells were then left in darkness for a minimum of 30 min to dark-adapt them before each experimental run.\n\n### Microfluidic chip fabrication\n\nThe devices were designed with CAD software (DraftSight, Dassault Systems) and fabricated following classical soft-lithography procedures by using a high-resolution acetate mask (Microlithography Services Ltd.). Negative photoresist SU-8 3025 (MicroChem, Newton, MA) was spin-coated onto clean silicon wafers to a thickness of 10 \u03bcm, patterned by exposure to UV light through the photomask and hard bake at 95\u00baC for \u223c7 minutes (Xia and Whitesides, 1998). Prior to development through immersion in propylene glycol monomethyl ether acetate (PGMEA, Sigma-Aldrich), a second layer of SU-8 3025 at 20 \u03bcm in height was spin-coated, UV exposed and hard baked (95\u00baC, \u223c7 minutes) for the development of the trapping arrays. Uncured polydimethylsiloxane (PDMS) consisting of a 10:1 polymer to cross-linker mixture (Sylgard 184) was poured onto the master, degassed, and baked at 70\u00baC for 4 hours. The PDMS mould was then cut and peeled from the master, punched with a $1.5mm$ biopsy punch (Kai Medical) to create inlet ports for tubing insertion. A total of three holes were punched; two inlets for the continuous and aqueous phase and an outlet for waste collection. The PDMS mould was plasma bonded to thin cover slips ($22\\times50mm$ mm, $0.13-0.17mm$ mm thick). Hydrophobic surface treatment was performed immediately after bonding by flushing with 1% (v/v) Trichloro (1 H, 1 H, 2 H, 2H-perfluorooctyl) silane (Aldrich) in HFE-7500, and placed in a 65\u00baC oven for 30 min.\n\n### Flow-focusing droplet generation\n\nMicrofluidic device fabrication was done using classical soft lithography techniques. A total of 4 devices were developed. All devices consisted of a flow-focusing junction for droplet generation (height, 10 \u03bcm), and a second layer with a trapping array made up of circular wells (height, 20 \u03bcm)(Figure 1A). The trap diameters were 40, 60, 120 and 200 \u03bcm. The dimensions of the flow-focusing junction varied depending on trap size. We designed a range of dimensions for the flow focusing junctions and matching trap sizes (i.e. circle diameter). Depending on the trapping size, the total number of traps was between 78 (\u2205 = 200 \u03bcm) and 840 (\u2205 = 40 \u03bcm).\n\nDroplets were typically generated at rates approx \u223c 50 s-1. The flow rates were controlled using syringe pumps (Nemesys, Cetoni), 1 ML plastic syringes (BD PlastipakTM; sterile needles, 25G x 1\u201d \u2013 NR. 18, 0.5 \u00d7 25 mm, BD MicrolanceTM 3), and portex tubing PE (Scientific Laboratory Supplies, 0.38 \u00d7 0.355 mm). The flow rates for oil and cell suspension were varied depending the size dimensions of each device. A 1:3 ratio was aimed for the continuous and aqueous phase, respectively.\n\nThe carrier oil phase was prepared using fluorinated oil HFE-7500 (Fluorochem Ltd) containing 0.25% (w/v) 008-Fluorosurfactant (RAN Biotechnologies, Inc). The aqueous phase consisted of liquid cell cultures (see Cell culturing and maintenance). The droplets were generated at the flow-focusing junction creating water-in-oil emulsions. A dilute suspension of algae was injected through the inlet. Following trapping, droplets were stably confined to the microwell during imaging acquisition. Once all the traps were filled, the aqueous phase flow was halted and the continuous phase flow ratewas reduced approximately 5-fold to flush away excess droplets.\n\n### Live-cell high-speed imaging\n\nBrightfield imaging was conducted with an inverted microscope (Leica Microsystems, DMi8), with a high-speed camera (Phantom Vision Research, V1212). We first scanned the array of trapped cells to locate traps matching our criteria (droplet fitting exactly into the trap, droplet containing only one cell). For the 40 \u03bcm, 60 \u03bcm and 120 \u03bcm trap sizes, as well as the cell fusion experiments, we used a 20 x long-working distance objective (HC PL/0.40). For the largest 200 \u03bcm traps, we lowered the magnification to 5 x (NPLAN/0.12) equipped with a 1.6 x tube lens, to reduce file size. All traps were imaged with the same intensity and aperture settings, and at 500 fps. For the 1 hour confinement experiments, cells were imaged continuously but 5-min recordings taken at 5 min intervals, to obtain a total of 6 timepoints per cell. Data from droplets that were disrupted at any point during imaging was discarded.\n\n### Light-modulation experiments\n\nFor brightfield imaging in WL, we used a standard broad-spectrum LED source to illuminate the specimen. Red light (RL) imaging was accomplished by insertion of an IR long-pass filter (610 nm, Chroma) to the light path. Spectra corresponding to the two possible illumination options are compared in Figure 8. For light-switching experiments, the red filter was removed or inserted manually.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/76519/elife-76519-fig8-v1.jpg)\n\n### Bulk cell motility assay\n\nWe assayed the effect of KCl on P. octopus behaviour via a simple open-air method. We first added 1 \u00b5L of a concentrated suspension of cells to a glass coverslip under red light in a dark room. We waited $5s$ for flows from the placement of the droplet to subside, before imaging for $25s$ (at 10 x, 100 fps). We then added either a 1 \u00b5L droplet of culture media (for the control) or a 1 \u00b5L drop of $50mM$ KCl (for the KCl test), and after waiting another $5s$ for flows to subside we imaged for another $25s$.\n\n### Paired-droplet fusion assay\n\nDroplet pairs were generated using a cross junction microfluidic device in which cells and KCl solutions flowing in separate channels are encapsulated in alternation. We used a 25 degrees taper angle previously reported to produce the most stable alternation function (Saqib et al., 2018). When stable alternation was achieved, droplets were suddenly halted by removal of the inlet tubings of KCl and cell solutions followed by gentle removal of excess droplets by flowing oil at 3 \u00b5L/min for \u223c1 min. We subsequently identified droplet pairs of expected volumes with one containing a single cell. To ensure fusion with KCl and the absence of mixing prior to fusion, the $10mM$ KCl solution was spiked with 1 \u00b5M fluorescein (Merck) which was imaged before triggering of fusion. A 15-min video of the cells was acquired displaying the entrapped droplets 7.5 min prior and 7.5 min post fusion. Fusion was induced by surfactant replacement with 1 H,1H,2H,2H-Perfluoro-1-octanol (Merck) (PFO). A solution of 40% PFO in HFE was flown at 5 \u00b5L/min and run until fusion was achieved (\u223c 4 minutes). PFO competes with the other surfactant which destabilizes the droplet interface to induce rapid, reproducible fusion. The change in ion concentrations in the solution containing the cell pre- and post-fusion can be found in (Table 1). Control experiments where the KCl solution substituted with normal culture medium were performed to confirm the absence of confounding factors.\n\nFor the fusion experiments, the identification process consisted of two steps. Firstly we located a trap that had two equal droplets in place, one containing a cell. Secondly, we took a fluorescence image to verify that the droplet without the cell contained KCl. The fluorescence image was taken in the LASX software, using a broad-spectrum LED source (CoolLED-pE300) equipped with a triple-band filter set (including FITC, Ex: $475nm$, Em: $530nm$). The fluorescence intensity was set to 60%, the exposure time was $600ms$, and the gain was 2.0. The presence of fluorescence covering the whole of the empty droplet was sufficient to prove the presence of KCl.\n\n### Image processing and cell tracking\n\nRaw video data was exported to 8-bit grayscale and enhanced by subtracting an average image in MATLAB (Mathworks). Trap boundaries were identified manually to increase the fidelity of 2D cell tracking, which was performed automatically using the TrackMate plugin in ImageJ (Tinevez et al., 2017). A Laplace of Gaussian detector was used for spot identification, with slightly different blob diameters for CR and for PO (14 \u03bcm and 21 \u03bcm respectively). Single continuous tracks were obtained for each experimental run ($N=5$ individuals per condition), and exported for further processing and extraction of detailed track features/other statistics (see Appendix 1). Video frames from the bulk motility assays were processed and analysed similarly.\n",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "743e3577-97ad-488f-a577-72aea0753bf8",
+      "submission_id": "afe04230-5bd0-445b-ba07-f000365c142d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76519.sa0](https://doi.org/10.7554/eLife.76519.sa0)\n\nThis paper reports on the development of an impressive microfluidic platform for the study of motility, and motility transitions, exhibited by single algal cells in circular confinement. Building on previous work that showed a three-state motility repertoire for certain green algae, the present work uses extremely long time series and a variety of physical perturbations to show how those dynamics can be altered by environmental conditions. The work will be of interest to a wide range of scientists studying motility and non-equilibrium dynamics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76519.sa1](https://doi.org/10.7554/eLife.76519.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Phenotyping single-cell motility in microfluidic confinement\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The reviewers have opted to remain anonymous. We regret the lengthy delay in furnishing this decision letter.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. As you will see from the comments below, the reviewers are in agreement about the impressive data sets that have been obtained and the overall methodology, but they both find that a major weakness is the lack of physical/biological insight in the paper in its present form, suggesting that a major revision is necessary.\n\nEssential revisions:\n\n1) The main suggestion to the authors is to take at least some of their detailed observations and analyze them with appropriate theory (as in the confinement problem) to see if agreement can be found (or perhaps to do the theory themselves). Otherwise, in its present form, the paper does not really reach significant conclusions, but instead only holds out the promise of those in the future through the voluminous data that has been acquired.\n\n2) Secondarily, the abstract and indeed a fair amount of the paper is not written in a form that will be easily understood by biologists with only limited background in dynamical systems ideas and the kind of technical jargon that has been used [e.g. words like 'microhabitat' and 'deterministic fusion].\n",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "259b4a9b-cc82-4191-913c-ea03848ad28a",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C1",
+      "claim": "Chlamydomonas reinhardtii is a freshwater biflagellate.",
+      "claim_type": "EXPLICIT",
+      "source": "The first, Chlamydomonas reinhardtii (hereafter CR) is a freshwater biflagellate and a model organism for motility studies and cilia biology (Sasso et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with a citation to support the characterization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "987140e8-6796-4e60-aac1-14cafd9549d0",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C2",
+      "claim": "Chlamydomonas reinhardtii is a model organism for motility studies and cilia biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The first, Chlamydomonas reinhardtii (hereafter CR) is a freshwater biflagellate and a model organism for motility studies and cilia biology (Sasso et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "da2d8da5-6223-4fbc-9cba-a0f70f52d1a3",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C3",
+      "claim": "Pyramimonas octopus is a marine octoflagellate.",
+      "claim_type": "EXPLICIT",
+      "source": "The second, Pyramimonas octopus (hereafter PO), is a marine octoflagellate, which has a unique tripartite run-stop-shock motility pattern (Wan and Goldstein, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "57425a59-e992-4703-90fe-5296cc8e3048",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C4",
+      "claim": "Pyramimonas octopus has a unique tripartite run-stop-shock motility pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The second, Pyramimonas octopus (hereafter PO), is a marine octoflagellate, which has a unique tripartite run-stop-shock motility pattern (Wan and Goldstein, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "d828d34e-492d-498f-9df7-3149cb0f7fc7",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C5",
+      "claim": "Water-in-oil droplets were stably trapped and retained their shape and volume for more than 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "These water-in-oil droplets were stably trapped and retained their shape and volume for more than 1 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experiments described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "db959253-68bc-4486-8cdc-0bdff0770ca4",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C6",
+      "claim": "The trapping procedure did not damage the cilia or cause spontaneous deciliation.",
+      "claim_type": "EXPLICIT",
+      "source": "The trapping procedure was sufficiently gentle and did not damage the cilia or cause spontaneous deciliation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "038c33e5-57b4-49ed-aa43-dc73ec97aeab",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C7",
+      "claim": "The arenas are shallow (\u223c 30 \u03bcm deep in total) and quasi-2D.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the cell-scale, the arenas are shallow (\u223c 30 \u03bcm deep in total) and quasi-2D, so that swimming motion is largely restricted to the plane (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "e068f5a8-9c63-4446-a5eb-b7a32dc66a5c",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C8",
+      "claim": "Swimming motion is largely restricted to the plane in the shallow arenas.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the cell-scale, the arenas are shallow (\u223c 30 \u03bcm deep in total) and quasi-2D, so that swimming motion is largely restricted to the plane (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a consequence of the arena geometry and supported by figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "b94d5bdd-e978-43fb-b08f-31894ef761f7",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C10",
+      "claim": "High-speed imaging was necessary to resolve rapid motility changes.",
+      "claim_type": "EXPLICIT",
+      "source": "High-speed imaging was necessary to resolve rapid motility changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a justification for the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "c3386549-8a62-4e7f-8a81-7ad72f82ad4b",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C11",
+      "claim": "Chlamydomonas reinhardtii has front-mounted cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Both species have front-mounted cilia (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "b5625d04-08d9-4ec0-af6d-3e99af562262",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C12",
+      "claim": "Pyramimonas octopus has front-mounted cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Both species have front-mounted cilia (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "7d779b95-bf7b-4e86-85b6-04087c12e144",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C13",
+      "claim": "CR executes a breaststroke gait where the two cilia alternate between long-periods of in-phase synchrony, and phase slips when one cilium transiently undergoes altered beating.",
+      "claim_type": "EXPLICIT",
+      "source": "CR executes a breaststroke gait where the two cilia alternate between long-periods of in-phase synchrony, and phase slips when one cilium transiently undergoes altered beating (Wan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "13ebd1de-7786-4bfe-9951-f35e05542d0c",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C14",
+      "claim": "CR swimming leads to noisy trajectories with straight runs whenever the cilia are synchronised, and turns whenever synchrony is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to noisy trajectories with straight runs whenever the cilia are synchronised, and turns whenever synchrony is lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the ciliary beating pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "01c9fe09-de61-4252-85ca-ce7ebe1cbc59",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C15",
+      "claim": "Asynchronous cilia dynamics in CR are associated with reduced swimming speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Asynchronous cilia dynamics are associated with reduced swimming speed (Polin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "0e9fa16d-b76b-4586-b565-89406a6c8f95",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C19",
+      "claim": "Both CR and PO displayed stochastic transitions between different swimming modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both species displayed stochastic transitions between different swimming modes (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "96c08200-e9f1-49bc-982b-95fc93dd0e0f",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C20",
+      "claim": "CR swims largely continuously albeit with noisy fluctuations in speed (fractal timeseries).",
+      "claim_type": "EXPLICIT",
+      "source": "However, CR swims largely continuously albeit with noisy fluctuations in speed (fractal timeseries), PO exhibits excitable dynamics reminiscent of neuronal spiking, where bursts of high-speed movement are followed by periods of quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct characterization of the observed swimming behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "e4ed1223-81fc-4f52-8f95-0d335d64e353",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C21",
+      "claim": "PO exhibits excitable dynamics reminiscent of neuronal spiking, where bursts of high-speed movement are followed by periods of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CR swims largely continuously albeit with noisy fluctuations in speed (fractal timeseries), PO exhibits excitable dynamics reminiscent of neuronal spiking, where bursts of high-speed movement are followed by periods of quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct characterization of the observed swimming behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "d90b6eee-0225-49d5-931b-bf1fa8d994a0",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C22",
+      "claim": "The episodic motility repertoire of PO is associated with more sparse trap coverage over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This more episodic motility repertoire of PO is associated with more sparse trap coverage over time (Figure 2A and D) (Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "53749427-782b-49a9-9c8d-2102c5af7872",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C23",
+      "claim": "Over 1 hr, CR motility remained largely unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 1 hr, CR motility remained largely unchanged, in PO a slight reduction in activity was observed in the smallest traps (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "c72514cc-d526-4ddb-9e33-cba2640a08b5",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C24",
+      "claim": "In PO, a slight reduction in activity was observed in the smallest traps over 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 1 hr, CR motility remained largely unchanged, in PO a slight reduction in activity was observed in the smallest traps (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "b0382ed6-1880-416f-9ea0-586754c46b0b",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C25",
+      "claim": "In the smallest traps, PO cells showed bursting dynamics - with clusters of shocks in quick succession.",
+      "claim_type": "EXPLICIT",
+      "source": "In the smallest traps, PO cells showed bursting dynamics - with clusters of shocks in quick succession (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "f365382a-604e-4e35-9647-8697a69da456",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C26",
+      "claim": "As trap size is decreased, CR speeds are shifted towards lower values.",
+      "claim_type": "EXPLICIT",
+      "source": "As trap size is decreased, CR speeds are shifted towards lower values (Figure 3A, whereas in PO the characteristic speed and likelihood of runs are reduced (Figure 3B), compare location and width of the violin plot 'waist').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "d2bc578c-4eb3-4f26-9759-1febc9788155",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C27",
+      "claim": "In PO, the characteristic speed and likelihood of runs are reduced as trap size is decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "As trap size is decreased, CR speeds are shifted towards lower values (Figure 3A, whereas in PO the characteristic speed and likelihood of runs are reduced (Figure 3B), compare location and width of the violin plot 'waist').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "a594bec3-b276-4277-b173-7cb648148c3a",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C28",
+      "claim": "Cells preferentially move within an annulus of the solid boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging over all trajectories, we find that cells preferentially move within an annulus of the solid boundary (Figure 3C, D - shaded blue regions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "4fe3ae8c-aa49-496c-8425-7df8b35ac028",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C29",
+      "claim": "Single-cell trajectories display non-equilibrium flux loops resulting from persistent circling behaviour inside the traps.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, single-cell trajectories display non-equilibrium flux loops resulting from persistent circling behaviour inside the traps (Figure 3C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "76009092-3d9d-4947-b62a-8de08f5b800e",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C30",
+      "claim": "Circulation is predominantly counter-clockwise (CCW), viewed from above in the lab frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Circulation is predominantly counter-clockwise (CCW), viewed from above in the lab frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "60057056-fadd-4cfa-adee-96efe7b86818",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C31",
+      "claim": "The two flagella of CR often lose synchrony, one flagellum consistently beating faster than the other leading to bilateral asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection of high-magnification videos of single CR cells revealed that the two flagella often lose synchrony, one flagellum consistently beating faster than the other leading to bilateral asymmetry (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from high-magnification videos and supported by Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "c1e8d41c-c5f9-4433-90aa-a51d31f4e316",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C33",
+      "claim": "In the simulations, chiral fluxes became more prominent with increasing confinement, consistent with the data.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations, chiral fluxes became more prominent with increasing confinement, consistent with the data (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "90ec1459-7f3a-4d94-adca-87642f9e9d02",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C34",
+      "claim": "At early times CR cells swim faster in WL compared to RL in the same trap sizes at equivalent times, suggesting a photokinetic response.",
+      "claim_type": "EXPLICIT",
+      "source": "At early times CR cells swim faster in WL compared to RL in the same trap sizes at equivalent times, suggesting a photokinetic response (Figure 4A, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by figures showing speed differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "5c4ab49a-10f4-4eb3-a1fa-dc3b883a5090",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C37",
+      "claim": "PO became increasingly quiescent and immotile over time in white light.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, PO became increasingly quiescent and immotile over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "c08db1bf-fbc1-415f-ac40-482ba7a1583e",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C38",
+      "claim": "By 1 hr in white light, all PO cells stopped moving.",
+      "claim_type": "EXPLICIT",
+      "source": "By 1 hr, all cells stopped moving (Figure 4B), and in some cases deformation of cell shape and even deciliation was noted at the final time point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "9e661629-b44b-484c-bfb0-bce3bd0e6309",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C39",
+      "claim": "In some PO cases, deformation of cell shape and even deciliation was noted at the final time point in white light.",
+      "claim_type": "EXPLICIT",
+      "source": "By 1 hr, all cells stopped moving (Figure 4B), and in some cases deformation of cell shape and even deciliation was noted at the final time point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "d5be66c0-5d9a-4c5a-9101-0e21ad77e066",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C40",
+      "claim": "Cell damage in white light was not seen in red light.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not seen in RL (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated by comparison to red light conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "49ceb8f9-cd92-44dc-a4e9-ad11716353ca",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C43",
+      "claim": "For both species, directed flux loops emerged due to circling behaviour, most prominently for CR.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, directed flux loops emerged, due to circling behaviour, most prominently for CR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the flux analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "ced92732-d894-4cb4-b69f-95512db6c44d",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C44",
+      "claim": "For both species, the flux strengths are larger and the circulation patterns more ordered in WL than in RL.",
+      "claim_type": "EXPLICIT",
+      "source": "For both species, the flux strengths are larger and the circulation patterns more ordered in WL than in RL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison of the flux data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "bb87fe4e-70b9-40a8-b9af-99e0079e30fd",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C45",
+      "claim": "The predominant sense of circulation switched from CCW to clockwise (CW) in white light.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominant sense of circulation also switched from CCW to clockwise (CW).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the flux analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "04b26d7b-32c0-4423-b54f-b3b31fd4d173",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C46",
+      "claim": "High-magnification imaging of CR swimming in WL revealed a dramatic improvement in flagellar synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "High-magnification imaging of CR swimming in WL revealed a dramatic improvement in flagellar synchrony, consistent with previous observations (Wan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "98eed7e1-83b3-4a02-be1c-08b269f1bd33",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C47",
+      "claim": "The motility space comprises only a trio of movement states.",
+      "claim_type": "EXPLICIT",
+      "source": "We first observe that the motility space is low-dimensional, comprising only a trio of movement states (Figure 5 and Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "7692e556-724d-4a56-9ab7-241f770fc861",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C48",
+      "claim": "Both species exhibit a quiescent or 'stop' state in which the cell body and cilia exhibits minimal movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Both species exhibit a quiescent or 'stop' state in which the cell body and cilia exhibits minimal movement, a 'run' state associated with constant speed and smooth forward swimming, and a 'transitional' state for re-orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct characterization of the observed states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "cf8eaa02-3c3c-427d-9db6-1a8b5c806341",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C49",
+      "claim": "Both species exhibit a 'run' state associated with constant speed and smooth forward swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "Both species exhibit a quiescent or 'stop' state in which the cell body and cilia exhibits minimal movement, a 'run' state associated with constant speed and smooth forward swimming, and a 'transitional' state for re-orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct characterization of the observed states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "334310dd-c357-4c55-9da2-1feea12a2664",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C50",
+      "claim": "Both species exhibit a 'transitional' state for re-orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Both species exhibit a quiescent or 'stop' state in which the cell body and cilia exhibits minimal movement, a 'run' state associated with constant speed and smooth forward swimming, and a 'transitional' state for re-orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct characterization of the observed states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "3dc9d3a7-fb33-42cd-bdeb-731fb9a470dd",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C51",
+      "claim": "The tripartite motility pattern is analogous to prokaryotic strategies such as run-and-tumble in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "This is analogous to prokaryotic strategies such as run-and-tumble in E. coli (Berg, 2003; Perez Ipi\u00f1a et al., 2019), or the run-reverse-flick in V. alginolyticus (Son et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "7a3d94d6-6b3b-4e3c-b008-4642c5bc3efb",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C52",
+      "claim": "The tripartite motility pattern is analogous to the run-reverse-flick in V. alginolyticus.",
+      "claim_type": "EXPLICIT",
+      "source": "This is analogous to prokaryotic strategies such as run-and-tumble in E. coli (Berg, 2003; Perez Ipi\u00f1a et al., 2019), or the run-reverse-flick in V. alginolyticus (Son et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "8a243b26-93c0-4eb6-b7ff-f39f84d50d83",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C62",
+      "claim": "WL increased the tumble\u2192run transition rate (q21) in CR.",
+      "claim_type": "EXPLICIT",
+      "source": "WL also increased the tumble\u2192run transition rate (q21) and decreased the run\u2192tumble transition rate (q12) (Figure 5G), Empirically, this means that CR performs more frequent and longer runs in WL compared to RL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "cca4d8b3-be13-4ce3-bede-922ab1677755",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C63",
+      "claim": "WL decreased the run\u2192tumble transition rate (q12) in CR.",
+      "claim_type": "EXPLICIT",
+      "source": "WL also increased the tumble\u2192run transition rate (q21) and decreased the run\u2192tumble transition rate (q12) (Figure 5G), Empirically, this means that CR performs more frequent and longer runs in WL compared to RL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "755be6f8-dcf3-4987-b5c3-4b9ae8cf751d",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C64",
+      "claim": "CR performs more frequent and longer runs in WL compared to RL.",
+      "claim_type": "EXPLICIT",
+      "source": "WL also increased the tumble\u2192run transition rate (q21) and decreased the run\u2192tumble transition rate (q12) (Figure 5G), Empirically, this means that CR performs more frequent and longer runs in WL compared to RL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the transition rate data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "018e7b60-a9a4-458b-b407-8e64b44ce627",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C71",
+      "claim": "In WL, PO runs are longer and more likely than in RL, but cells gradually lost motility over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that in WL, PO runs are longer and more likely than in RL, but cells gradually lost motility over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the state probability and transition rate data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "c0ffcd65-35ed-4f9c-a518-fc3173917f3b",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C72",
+      "claim": "Both species display a reversible but asymmetric photokinetic response to WL.",
+      "claim_type": "EXPLICIT",
+      "source": "Both species display a reversible but asymmetric photokinetic response to WL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the photoresponse assay results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "6d87b994-602e-4c25-8cb7-7daf41b98cfd",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C73",
+      "claim": "Response to RL \u2192 WL (step-up) is fast and occurs within seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Response to RL \u2192 WL (step-up) is fast and occurs within seconds, but recovery after WL \u2192 RL (step-down) is slow and persists for several minutes into the RL2 phase (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figures 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "e7acf8e9-4f0a-48c0-850b-f5a82ed80393",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C74",
+      "claim": "Recovery after WL \u2192 RL (step-down) is slow and persists for several minutes into the RL2 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Response to RL \u2192 WL (step-up) is fast and occurs within seconds, but recovery after WL \u2192 RL (step-down) is slow and persists for several minutes into the RL2 phase (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figures 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "8ff868af-87ed-4b1b-a7e8-cb3965a3594f",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C75",
+      "claim": "Most cells swim faster with longer runs in WL1 period than in the preceding RL1 period.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cells swim faster with longer runs in WL1 period than in the preceding RL1 period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "61d3ce7c-8e1d-44b5-83b7-b6c88de8235a",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C76",
+      "claim": "In CR, increased swimming speed in WL is primarily by increasing the speed of prospective runs.",
+      "claim_type": "EXPLICIT",
+      "source": "In CR this is primarily by increasing the speed of prospective runs (Figure 6E), but in PO this is by reducing the likelihood of state transitions, particularly of shocks immediately in response to step-up (Figure 6D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "eade9558-4685-4aa5-a9d2-070cadcf57a8",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C77",
+      "claim": "In PO, increased swimming speed in WL is by reducing the likelihood of state transitions, particularly of shocks immediately in response to step-up.",
+      "claim_type": "EXPLICIT",
+      "source": "In CR this is primarily by increasing the speed of prospective runs (Figure 6E), but in PO this is by reducing the likelihood of state transitions, particularly of shocks immediately in response to step-up (Figure 6D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figures 6D and 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "6df11a6f-0edd-43c1-bcf6-b97e8b6b091e",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C78",
+      "claim": "The suppression of shocks in PO is consistent with previous results in constant WL.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of shocks in PO is consistent with previous results in constant WL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to earlier results in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "cd527dc6-d967-463a-99f3-f6ea62e31d6a",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C79",
+      "claim": "PO cells gradually adapt by increasing the transition frequency over the remainder of WL1, and well into RL2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells gradually adapt by increasing the transition frequency over the remainder of WL1, and well into RL2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "99a1d0e2-4529-4fae-991c-b7dbe1a19bca",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C80",
+      "claim": "Algal swimming motility is light-switchable in the presence of short-lived stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, algal swimming motility is light-switchable in the presence of short-lived stimuli, which induce perturbations to the cell's internal motility state network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the photoresponse assay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "3c6d3f84-57d4-4bbc-b793-50bdc3cc62ec",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C81",
+      "claim": "Cells retained a memory of the stimulation (WL1) for longer than the stimulus duration itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells retained a memory of the stimulation (WL1) for longer than the stimulus duration itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the slow recovery observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "648276a8-6b33-4767-9834-e33a2ceb66b0",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C83",
+      "claim": "A similar analysis of PO trajectories yielded significant cell-to-cell variability but no clear frequency signatures that could be correlated with ciliary beating.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar analysis of PO trajectories yielded significant cell-to-cell variability but no clear frequency signatures that could be correlated with ciliary beating (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "ba41cacc-f0ce-4c2a-b3d1-371b6cdf0d52",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C84",
+      "claim": "The lack of clear frequency signatures in PO is likely due to the unique coordination of the 8 cilia that suppresses the helicity of trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to the unique coordination of the 8 cilia that suppresses the helicity of trajectories (Wan, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "9552aae9-ec45-4c9d-9fbf-561d7624be99",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C85",
+      "claim": "In many protists, ciliary motility is modulated by chemical signalling, including Ca2+-influx through ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In many protists, ciliary motility is modulated by chemical sigalling, including Ca2+-influx through ion channels, suggesting a conserved Ca-dependent mechanism (Inaba, 2015; Wan and J\u00e9kely, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "d0adfa21-9d1c-4600-a5af-09fbad48747e",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C86",
+      "claim": "Ionic fluxes elicit transitions in cilia beating, waveform and swimming behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Ionic fluxes elicit transitions in cilia beating, waveform and swimming behaviour (Beck and Uhl, 1994; Kung and Naito, 1973; Brette, 2021; Geyer et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "75bd8655-f039-4f4d-af31-15c1404a18de",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C87",
+      "claim": "In Paramecium, Ca2+, and K+ ions are major regulators of motility, including transitions between forward and backward swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "In Paramecium, Ca2+, and K+ ions are major regulators of motility, including transitions between forward and backward swimming (Kunita et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "0486a244-54f2-4074-bdc6-517be09df40e",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C88",
+      "claim": "The introduction of a droplet pre-loaded with 50 mM KCl to a suspension of PO cells produces perturbed swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of a droplet pre-loaded with 50 mM KCl to a suspension of PO cells produces perturbed swimming (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "38f7c928-36fd-4ab3-9629-516551710085",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C89",
+      "claim": "After fusion with KCl droplet, PO cells immediately showed erratic swimming, followed by gradual decay in motility over time.",
+      "claim_type": "EXPLICIT",
+      "source": "After fusion, cells paired with a KCl droplet immediately showed erratic swimming, followed by gradual decay in motility over time (see Video 5), which is likely a combined effect of an increase in K+ and decrease in Ca2+ concentration (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Video 5 and Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "705ba2b9-1269-488c-988a-f8651e50b84d",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C90",
+      "claim": "The decay in motility after KCl fusion is likely a combined effect of an increase in K+ and decrease in Ca2+ concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "After fusion, cells paired with a KCl droplet immediately showed erratic swimming, followed by gradual decay in motility over time (see Video 5), which is likely a combined effect of an increase in K+ and decrease in Ca2+ concentration (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation with reference to Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "c30eb005-7d21-4d36-bc54-432fb0b595a4",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C91",
+      "claim": "Significant changes in the morphology and tortuosity of swimming trajectories are observed after fusion with KCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant changes in the morphology and tortuosity of swimming trajectories are also observed after fusion (Figure 7D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figures 7D and 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "77fc9a80-37b2-4ef7-a846-f9ab80ce86ac",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C93",
+      "claim": "The identity of the photoreceptor in PO has not yet been confirmed, but is likely to be similar to CR, since green algal eyespots are highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of the photoreceptor in PO has not yet been confirmed, but is likely to be similar to CR, since green algal eyespots are highly conserved (Kreimer, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "28687b17-47ea-4c32-a632-4fe92098dc65",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C94",
+      "claim": "Microbes often interact with their physical environment, particularly with interfaces and boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbes often interact with their physical environment, particularly with interfaces and boundaries. Interactions are commonplace in natural settings with exposed surface features or other heterogeneous structures, for example soil, foam, or particulate matter (Th\u00e9ry et al., 2021; Kantsler et al., 2013; Souzy et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "5806a189-0f5d-4f9d-9de5-b0d7cf3351cc",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C95",
+      "claim": "In red light, cells tolerated long-periods of confinement with little change to their overall motility.",
+      "claim_type": "EXPLICIT",
+      "source": "In red light, cells tolerated long-periods of confinement with little change to their overall motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "f7161b67-871e-46ca-a0e3-4b009429be03",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C97",
+      "claim": "CR responded to light largely by modulating run speed.",
+      "claim_type": "EXPLICIT",
+      "source": "While CR responded largely by modulating run speed, PO modulated the balance of motility macrostates (e.g. suppressed shocks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the photoresponse results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "3d175fd3-caf2-47d8-82df-4db87c30cb69",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C98",
+      "claim": "PO modulated the balance of motility macrostates (e.g. suppressed shocks) in response to light.",
+      "claim_type": "EXPLICIT",
+      "source": "While CR responded largely by modulating run speed, PO modulated the balance of motility macrostates (e.g. suppressed shocks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the photoresponse results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "113c4dd0-2e88-42cf-b792-e2a65468d3f5",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C99",
+      "claim": "Motility parameters in RL are more stable than in WL, for both species.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that motility parameters in RL are more stable than in WL, for both species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the light-modulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "a5acf9de-a1aa-435f-b15c-1dd860e95ead",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C100",
+      "claim": "Short periods of WL exposure increases the average run-speed of CR by increasing ciliary beat frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Short periods of WL exposure increases the average run-speed of CR by increasing ciliary beat frequency, as found previously in micropipette-immobilised cells (R\u00fcffer and Nultsch, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "a2b24643-161e-4386-a12f-529ca37f309e",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C101",
+      "claim": "WL decreases the frequency of gait transitions in PO, producing longer stops, longer runs, and fewer shocks.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, WL decreases the frequency of gait transitions in PO, producing longer stops, longer runs, and fewer shocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "1bd3ef15-1954-4e60-aa95-b56c9bb3151a",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C102",
+      "claim": "Prolonged or excessive exposure (> 40 minutes) to WL eventually led to reduced or cessation of motility in both species.",
+      "claim_type": "EXPLICIT",
+      "source": "Prolonged or excessive exposure (> 40 minutes) to WL eventually led to reduced or cessation of motility in both species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "69f1313b-a173-499f-84be-799444d17986",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C103",
+      "claim": "In CR, prolonged WL exposure is likely due to WL-induced adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "In CR this is likely due to WL-induced adhesion (Kreis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "fe6ff210-ad02-466d-9320-7e8c946d12d1",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C104",
+      "claim": "In PO, there is more evidence of irreversible photodamage from prolonged WL exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In PO, there is more evidence of irreversible photodamage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "7d32ca85-6c76-471b-a07c-cb968596b3ee",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C105",
+      "claim": "Increasing confinement (smaller traps) decreased the time taken to reach immotility in WL.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing confinement (smaller traps) decreased the time taken to reach this state, suggesting that motility deterioration may be due to buildup of some metabolite or excretion from the trapped cell over time (Boedicker et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "22ff40db-b3c1-4f84-a0fb-fd1b830af66f",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C106",
+      "claim": "Motility deterioration in smaller traps may be due to buildup of some metabolite or excretion from the trapped cell over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing confinement (smaller traps) decreased the time taken to reach this state, suggesting that motility deterioration may be due to buildup of some metabolite or excretion from the trapped cell over time (Boedicker et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "ee5ab6a5-eb8b-4dcf-8543-db5bb6e27e20",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C107",
+      "claim": "The behavioural space of roaming microbes comprise highly stereotyped movements.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the behavioural space of roaming microbes comprise highly stereotyped movements, and proposed a new paradigm for phenotyping microbial motility in terms of a minimal set of three motility macrostates (runs, stops, tumbles/shocks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "298af3e4-14c4-4944-92b3-0cf1b2f73fa2",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C108",
+      "claim": "Over long times, CR swimming is fairly continuous, yet PO transitions between bursts of fast swimming and lengthy periods of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Over long times, CR swimming is fairly continuous, yet PO transitions between bursts of fast swimming and lengthy periods of quiescence, reminiscent of 'wakeful' versus 'sleep states' observed in animals (Lawler et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "0410b801-5d6f-478f-9baa-b60b20f3eb8d",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C109",
+      "claim": "Confinement has been shown previously to stabilise macroscopic chiral movement in swimmer suspensions.",
+      "claim_type": "EXPLICIT",
+      "source": "While confinement has been shown previously to stabilise macroscopic chiral movement in swimmer suspensions (Wioland et al., 2013; Beppu et al., 2021), here chirality has emerged in the travel history of a single cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "5a957974-9391-4d8b-9d4e-5fd20b83ed21",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C110",
+      "claim": "Chirality in this study has emerged in the travel history of a single cell.",
+      "claim_type": "EXPLICIT",
+      "source": "While confinement has been shown previously to stabilise macroscopic chiral movement in swimmer suspensions (Wioland et al., 2013; Beppu et al., 2021), here chirality has emerged in the travel history of a single cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "edb4b899-d07a-4408-a6fb-4c9dd8f7c61f",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C113",
+      "claim": "Micro-encapsulation provides unique functionalities that enable controlled, on-demand creation and manipulation of a cell's local environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Micro-encapsulation provides unique functionalities that enable controlled, on-demand creation and manipulation of a cell's local environment (Son et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "6d8805e6-4ea5-430d-b8fe-6727cb96e556",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C114",
+      "claim": "Multilayer devices and static droplet trapping wells allow stable trapping of droplets for hours, isolated from possible fluctuations in the continuous phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We use multilayer devices and static droplet trapping wells (Fradet et al., 2011) to keep droplets stable for hours, and isolated from possible fluctuations in the continuous phase (Han et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "4722fe1c-49d9-47d9-8aca-e97035909adb",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C115",
+      "claim": "The trapping arrays maximize the probability of obtaining multiple singly-trapped cells in a single experiment (only limited by Poisson statistics).",
+      "claim_type": "EXPLICIT",
+      "source": "The trapping arrays we used maximise the probability of obtaining multiple singly-trapped cells in a single experiment (only limited by Poisson statistics), thus increasing analytical throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design feature of the device.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "6bb935ad-6b0e-40af-b301-01f1f7c35748",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C116",
+      "claim": "Phenotypic diversity is critical in microbial ecosystems, where they may give rise to distinct selection pressures and antimicrobial resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic diversity is critical in microbial ecosystems, where they may give rise to distinct selection pressures and antimicrobial resistance (Dhar and McKinney, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "b55e41d6-523a-4ce3-a654-eff2f1a73d47",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C117",
+      "claim": "The droplet fusion device represents a highly novel solution for assaying fast cell-environment interactions and responses to chemical perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our droplet fusion device represents a highly novel solution for assaying fast cell-environment interactions and responses to chemical perturbations (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a contribution of the work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "b1f1fd8d-24af-4292-be90-1083b676a48e",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "claim_id": "C118",
+      "claim": "The droplet fusion design applies real-time control and localised perturbations to single microbes, contrary to traditional assays that use flow channels to deliver concentration gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to traditional assays that use flow channels to deliver concentration gradients, our design applies real-time control and localised perturbations to single microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a distinguishing feature of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b821cda1-fc38-4a98-bd70-ca80aff9d806",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The microfluidic droplet trapping system successfully confined single algal cells in stable, quasi-2D arenas for extended periods. Water-in-oil droplets retained their shape and volume for over 1 hour without damaging the cilia, and the shallow arena geometry (~30 \u03bcm deep) restricted swimming motion largely to the plane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 provide converging evidence that the microfluidic platform successfully trapped cells in stable, shallow arenas suitable for long-term imaging. The observations are directly supported by experimental data and figures, with appropriate characterization of trap geometry and cell viability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "8e30c0c6-a633-47ea-834c-a885010d5836",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two model algal species were characterized: Chlamydomonas reinhardtii (CR), a freshwater biflagellate model organism, and Pyramimonas octopus (PO), a marine octoflagellate with a unique tripartite motility pattern. Both species have front-mounted cilia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C11-C12 establish the biological models used in the study. These are well-supported by citations and direct observations from imaging (Figure 1C-D). The characterizations are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "99eacea2-f8e4-4357-8878-8e106d2d7f80",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CR and PO exhibit distinct swimming behaviors: CR swims largely continuously with noisy speed fluctuations and transitions between synchronous (straight runs) and asynchronous (turns) ciliary beating, while PO displays excitable dynamics with bursts of high-speed movement followed by quiescence, resulting in more sparse trap coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15, C19-C22 describe species-specific swimming patterns supported by trajectory data, speed measurements, and video evidence (Figure 2, Videos 1-2). The characterizations are consistent with cited prior work and directly observable in the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "7c4fac76-1395-48dd-8f9e-f19acf309c6d",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Over 1 hour of confinement in red light, CR motility remained largely unchanged, while PO showed a slight reduction in activity in the smallest traps, with bursting dynamics (clusters of shocks in quick succession) observed in the smallest traps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are supported by long-term tracking data presented in Figure 2 and supplementary figures. The observations are quantified across multiple cells and timepoints, providing robust evidence for the temporal stability of motility patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "109aed9a-a37a-46dd-bae2-38a24f592c44",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Physical confinement affects cell motility in a species-specific manner: decreasing trap size shifts CR speeds toward lower values and reduces characteristic speed and run likelihood in PO. Cells preferentially move within an annulus near the boundary and display non-equilibrium flux loops with predominantly counter-clockwise circulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 are well-supported by quantitative trajectory analysis across multiple trap sizes (Figure 3A-D). The spatial probability distributions and flux calculations provide robust evidence for boundary preference and chiral circulation patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "00098cc4-1605-49b1-a1e4-a10646c89ae8",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "High-magnification imaging revealed bilateral asymmetry in CR flagellar beating (one flagellum beating faster than the other), and computational simulations incorporating this asymmetry reproduced the observed chiral flux patterns with increasing confinement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C33 connect subcellular observations (flagellar asymmetry) to emergent behavior (chiral circulation). The computational model successfully reproduces experimental observations (Figure 3E-I), providing mechanistic support for the proposed explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "f4f5ed05-d617-4981-afb0-09bc41657872",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "White light exposure produced photokinetic responses in both species: CR cells initially swam faster in WL compared to RL, while PO became increasingly quiescent and immotile over time, with all cells stopping by 1 hour and some showing cell deformation and deciliation not observed in red light.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C37-C40 document light-dependent effects on motility supported by speed measurements and visual observations (Figure 4A-B, supplementary figures). The comparison between WL and RL conditions provides clear evidence for photokinetic responses and potential phototoxicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "2bb5eaa1-b56a-46d8-bff9-554d06ee7195",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In white light, both species exhibited directed flux loops from circling behavior (most prominent in CR), with larger flux strengths and more ordered circulation patterns than in red light. The predominant circulation direction switched from counter-clockwise to clockwise, coinciding with dramatically improved flagellar synchrony in CR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by flux analysis and high-magnification imaging showing light-dependent changes in circulation patterns and flagellar coordination. The observations are consistent with prior work (cited) and provide mechanistic insight into the behavioral changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "7dcc5fd5-5c2b-45af-9cbf-729cc26c6c0a",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The motility space of both species is low-dimensional, comprising only three movement states: a quiescent 'stop' state, a 'run' state with constant speed and smooth forward swimming, and a 'transitional' state for reorientations (tumbles in CR, shocks in PO). This tripartite pattern is analogous to prokaryotic strategies like run-and-tumble in E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 establish a unifying framework for describing microbial motility. The three-state model is well-supported by trajectory analysis (Figure 5) and provides a quantitative basis for comparing different species and conditions. The analogy to prokaryotic strategies is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "bb16a5c2-c8b8-4246-93fb-249f87100667",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "White light increased the tumble\u2192run transition rate and decreased the run\u2192tumble transition rate in CR, resulting in more frequent and longer runs compared to red light.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 quantify light-dependent changes in state transition dynamics for CR, supported by transition rate analysis (Figure 5G). The interpretation that CR performs more frequent and longer runs in WL follows logically from the measured transition rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "14d35b0a-2755-4ba6-8d5b-eea5e013b1e3",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In white light, PO runs are longer and more likely than in red light, but cells gradually lost motility over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 summarizes the light-dependent changes in PO motility state dynamics, supported by state probability and transition rate measurements. The gradual loss of motility is consistent with earlier observations of phototoxicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "fd2b3b91-159a-4f10-8366-4aae3d851645",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Both species display a reversible but asymmetric photokinetic response to white light: the response to RL\u2192WL step-up is fast (seconds), while recovery after WL\u2192RL step-down is slow (several minutes). CR increases swimming speed primarily by increasing run speed, while PO reduces the likelihood of state transitions, particularly shocks. Cells retained a memory of WL stimulation longer than the stimulus duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C81 describe dynamic photoresponse experiments with detailed temporal resolution (Figure 6). The asymmetric response kinetics and species-specific mechanisms are well-documented. The concept of cellular 'memory' is supported by the slow recovery dynamics observed in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "369aa01b-0707-4457-a296-4bb9f37363c0",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Analysis of PO trajectories yielded significant cell-to-cell variability but no clear frequency signatures correlating with ciliary beating, likely due to the unique coordination of the 8 cilia that suppresses trajectory helicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 acknowledge a negative result (lack of clear frequency signatures in PO) and provide a plausible mechanistic explanation supported by citation. The contrast with CR (where ciliary beat frequency was extracted) strengthens the interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "ec89a226-48c6-4944-9e4f-3be7d63605c7",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Chemical perturbation experiments using KCl demonstrated that PO motility is modulated by ionic composition. Introduction of 50 mM KCl produced perturbed swimming, and after droplet fusion with 10 mM KCl, cells showed immediate erratic swimming followed by gradual motility decay, likely due to combined effects of increased K+ and decreased Ca2+ concentrations. Significant changes in trajectory morphology and tortuosity were observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C91 establish ionic modulation of motility through bulk assays and novel droplet fusion experiments (Figure 7). The observations are supported by video evidence and trajectory analysis. The interpretation regarding K+ and Ca2+ effects is reasonable given the ion concentration changes (Table 1) and cited prior work on other protists.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "c2f25508-9a03-40f0-95fe-0087d5389e2a",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The identity of the photoreceptor in PO has not been confirmed but is likely similar to CR, since green algal eyespots are highly conserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 appropriately acknowledges uncertainty while providing a reasonable hypothesis based on evolutionary conservation. The claim is properly qualified and supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "9f17defd-968e-40c6-ae20-1c285168e096",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Microbes often interact with their physical environment, particularly boundaries, which are commonplace in natural settings. In red light, cells tolerated long periods of confinement with little change to their overall motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C95 provide context for the confinement experiments and summarize the baseline stability of motility in red light. The general statement about microbe-environment interactions is well-supported by citations, and the red light stability is documented throughout the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Light modulation experiments revealed species-specific responses: CR modulated run speed while PO modulated the balance of motility macrostates. Motility parameters were more stable in red light than white light for both species. Short WL exposure increased CR run-speed by increasing ciliary beat frequency, while decreasing gait transition frequency in PO. Prolonged WL exposure (>40 min) led to reduced or cessation of motility, likely due to WL-induced adhesion in CR and irreversible photodamage in PO. Increasing confinement decreased the time to immotility, possibly due to metabolite buildup.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C106 synthesize multiple observations about light-dependent motility changes. The species-specific mechanisms are well-documented, and the interpretations regarding adhesion, photodamage, and metabolite buildup are reasonable given the data and supporting citations. The confinement-dependent effects provide additional mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "3164be3f-7706-4258-a437-7cbc9a3a5025",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The behavioral space of roaming microbes comprises highly stereotyped movements. Over long times, CR swimming is fairly continuous while PO transitions between bursts of fast swimming and lengthy quiescence, reminiscent of 'wakeful' versus 'sleep states' observed in animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C108 provide high-level conclusions about microbial behavior supported by the extensive trajectory analysis throughout the study. The analogy to animal sleep states is appropriately cited and provides an interesting conceptual framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "a9cd3c0c-4c4e-4296-8636-d9a21c942d17",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "While confinement has been shown previously to stabilize macroscopic chiral movement in swimmer suspensions, this study demonstrates that chirality has emerged in the travel history of a single cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C110 appropriately distinguish the current findings from prior work on collective behavior. The single-cell chiral circulation is a novel observation well-supported by the flux analysis and computational modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "cb915b89-02af-41e4-86c2-12d022ea5bb9",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The microfluidic platform provides unique functionalities for controlled manipulation of cellular environments. Multilayer devices with static droplet trapping wells enable stable trapping for hours, isolated from fluctuations in the continuous phase. The trapping arrays maximize the probability of obtaining multiple singly-trapped cells in a single experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C115 describe the technical capabilities of the microfluidic platform, supported by citations and the demonstrated experimental results. The design features are well-justified for the experimental goals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "9d94886b-178b-4922-8eaa-c5fb59d76e1b",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The droplet fusion device represents a novel solution for assaying fast cell-environment interactions and responses to chemical perturbations, applying real-time control and localized perturbations to single microbes, contrary to traditional flow channel assays. Phenotypic diversity is critical in microbial ecosystems for selection pressures and antimicrobial resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C116-C118 highlight the technological innovation and broader significance of the droplet fusion approach. The novelty is supported by the successful demonstration of on-demand chemical perturbation experiments (Figure 7), and the broader context is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    },
+    {
+      "id": "9cde79e1-b834-4532-a6dd-4f9225a88b39",
+      "content_id": "f5644dbc-b5df-4242-8c79-173154e95bb5",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "High-speed imaging was necessary to resolve rapid motility changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 justifies the methodological choice of 500 fps imaging, which is appropriate given the rapid ciliary beating and shock responses documented in the study, particularly for PO which exhibits ultrafast backward swimming.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:19.348859Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d828d34e-492d-498f-9df7-3149cb0f7fc7",
+      "result_id": "b821cda1-fc38-4a98-bd70-ca80aff9d806"
+    },
+    {
+      "claim_id": "db959253-68bc-4486-8cdc-0bdff0770ca4",
+      "result_id": "b821cda1-fc38-4a98-bd70-ca80aff9d806"
+    },
+    {
+      "claim_id": "038c33e5-57b4-49ed-aa43-dc73ec97aeab",
+      "result_id": "b821cda1-fc38-4a98-bd70-ca80aff9d806"
+    },
+    {
+      "claim_id": "e068f5a8-9c63-4446-a5eb-b7a32dc66a5c",
+      "result_id": "b821cda1-fc38-4a98-bd70-ca80aff9d806"
+    },
+    {
+      "claim_id": "259b4a9b-cc82-4191-913c-ea03848ad28a",
+      "result_id": "8e30c0c6-a633-47ea-834c-a885010d5836"
+    },
+    {
+      "claim_id": "987140e8-6796-4e60-aac1-14cafd9549d0",
+      "result_id": "8e30c0c6-a633-47ea-834c-a885010d5836"
+    },
+    {
+      "claim_id": "da2d8da5-6223-4fbc-9cba-a0f70f52d1a3",
+      "result_id": "8e30c0c6-a633-47ea-834c-a885010d5836"
+    },
+    {
+      "claim_id": "57425a59-e992-4703-90fe-5296cc8e3048",
+      "result_id": "8e30c0c6-a633-47ea-834c-a885010d5836"
+    },
+    {
+      "claim_id": "c3386549-8a62-4e7f-8a81-7ad72f82ad4b",
+      "result_id": "8e30c0c6-a633-47ea-834c-a885010d5836"
+    },
+    {
+      "claim_id": "b5625d04-08d9-4ec0-af6d-3e99af562262",
+      "result_id": "8e30c0c6-a633-47ea-834c-a885010d5836"
+    },
+    {
+      "claim_id": "7d779b95-bf7b-4e86-85b6-04087c12e144",
+      "result_id": "99eacea2-f8e4-4357-8878-8e106d2d7f80"
+    },
+    {
+      "claim_id": "13ebd1de-7786-4bfe-9951-f35e05542d0c",
+      "result_id": "99eacea2-f8e4-4357-8878-8e106d2d7f80"
+    },
+    {
+      "claim_id": "01c9fe09-de61-4252-85ca-ce7ebe1cbc59",
+      "result_id": "99eacea2-f8e4-4357-8878-8e106d2d7f80"
+    },
+    {
+      "claim_id": "0e9fa16d-b76b-4586-b565-89406a6c8f95",
+      "result_id": "99eacea2-f8e4-4357-8878-8e106d2d7f80"
+    },
+    {
+      "claim_id": "96c08200-e9f1-49bc-982b-95fc93dd0e0f",
+      "result_id": "99eacea2-f8e4-4357-8878-8e106d2d7f80"
+    },
+    {
+      "claim_id": "e4ed1223-81fc-4f52-8f95-0d335d64e353",
+      "result_id": "99eacea2-f8e4-4357-8878-8e106d2d7f80"
+    },
+    {
+      "claim_id": "d90b6eee-0225-49d5-931b-bf1fa8d994a0",
+      "result_id": "99eacea2-f8e4-4357-8878-8e106d2d7f80"
+    },
+    {
+      "claim_id": "53749427-782b-49a9-9c8d-2102c5af7872",
+      "result_id": "7c4fac76-1395-48dd-8f9e-f19acf309c6d"
+    },
+    {
+      "claim_id": "c72514cc-d526-4ddb-9e33-cba2640a08b5",
+      "result_id": "7c4fac76-1395-48dd-8f9e-f19acf309c6d"
+    },
+    {
+      "claim_id": "b0382ed6-1880-416f-9ea0-586754c46b0b",
+      "result_id": "7c4fac76-1395-48dd-8f9e-f19acf309c6d"
+    },
+    {
+      "claim_id": "f365382a-604e-4e35-9647-8697a69da456",
+      "result_id": "109aed9a-a37a-46dd-bae2-38a24f592c44"
+    },
+    {
+      "claim_id": "d2bc578c-4eb3-4f26-9759-1febc9788155",
+      "result_id": "109aed9a-a37a-46dd-bae2-38a24f592c44"
+    },
+    {
+      "claim_id": "a594bec3-b276-4277-b173-7cb648148c3a",
+      "result_id": "109aed9a-a37a-46dd-bae2-38a24f592c44"
+    },
+    {
+      "claim_id": "4fe3ae8c-aa49-496c-8425-7df8b35ac028",
+      "result_id": "109aed9a-a37a-46dd-bae2-38a24f592c44"
+    },
+    {
+      "claim_id": "76009092-3d9d-4947-b62a-8de08f5b800e",
+      "result_id": "109aed9a-a37a-46dd-bae2-38a24f592c44"
+    },
+    {
+      "claim_id": "60057056-fadd-4cfa-adee-96efe7b86818",
+      "result_id": "00098cc4-1605-49b1-a1e4-a10646c89ae8"
+    },
+    {
+      "claim_id": "c1e8d41c-c5f9-4433-90aa-a51d31f4e316",
+      "result_id": "00098cc4-1605-49b1-a1e4-a10646c89ae8"
+    },
+    {
+      "claim_id": "90ec1459-7f3a-4d94-adca-87642f9e9d02",
+      "result_id": "f4f5ed05-d617-4981-afb0-09bc41657872"
+    },
+    {
+      "claim_id": "5c4ab49a-10f4-4eb3-a1fa-dc3b883a5090",
+      "result_id": "f4f5ed05-d617-4981-afb0-09bc41657872"
+    },
+    {
+      "claim_id": "c08db1bf-fbc1-415f-ac40-482ba7a1583e",
+      "result_id": "f4f5ed05-d617-4981-afb0-09bc41657872"
+    },
+    {
+      "claim_id": "9e661629-b44b-484c-bfb0-bce3bd0e6309",
+      "result_id": "f4f5ed05-d617-4981-afb0-09bc41657872"
+    },
+    {
+      "claim_id": "d5be66c0-5d9a-4c5a-9101-0e21ad77e066",
+      "result_id": "f4f5ed05-d617-4981-afb0-09bc41657872"
+    },
+    {
+      "claim_id": "49ceb8f9-cd92-44dc-a4e9-ad11716353ca",
+      "result_id": "2bb5eaa1-b56a-46d8-bff9-554d06ee7195"
+    },
+    {
+      "claim_id": "ced92732-d894-4cb4-b69f-95512db6c44d",
+      "result_id": "2bb5eaa1-b56a-46d8-bff9-554d06ee7195"
+    },
+    {
+      "claim_id": "bb87fe4e-70b9-40a8-b9af-99e0079e30fd",
+      "result_id": "2bb5eaa1-b56a-46d8-bff9-554d06ee7195"
+    },
+    {
+      "claim_id": "04b26d7b-32c0-4423-b54f-b3b31fd4d173",
+      "result_id": "2bb5eaa1-b56a-46d8-bff9-554d06ee7195"
+    },
+    {
+      "claim_id": "98eed7e1-83b3-4a02-be1c-08b269f1bd33",
+      "result_id": "7dcc5fd5-5c2b-45af-9cbf-729cc26c6c0a"
+    },
+    {
+      "claim_id": "7692e556-724d-4a56-9ab7-241f770fc861",
+      "result_id": "7dcc5fd5-5c2b-45af-9cbf-729cc26c6c0a"
+    },
+    {
+      "claim_id": "cf8eaa02-3c3c-427d-9db6-1a8b5c806341",
+      "result_id": "7dcc5fd5-5c2b-45af-9cbf-729cc26c6c0a"
+    },
+    {
+      "claim_id": "334310dd-c357-4c55-9da2-1feea12a2664",
+      "result_id": "7dcc5fd5-5c2b-45af-9cbf-729cc26c6c0a"
+    },
+    {
+      "claim_id": "3dc9d3a7-fb33-42cd-bdeb-731fb9a470dd",
+      "result_id": "7dcc5fd5-5c2b-45af-9cbf-729cc26c6c0a"
+    },
+    {
+      "claim_id": "7a3d94d6-6b3b-4e3c-b008-4642c5bc3efb",
+      "result_id": "7dcc5fd5-5c2b-45af-9cbf-729cc26c6c0a"
+    },
+    {
+      "claim_id": "8a243b26-93c0-4eb6-b7ff-f39f84d50d83",
+      "result_id": "bb16a5c2-c8b8-4246-93fb-249f87100667"
+    },
+    {
+      "claim_id": "cca4d8b3-be13-4ce3-bede-922ab1677755",
+      "result_id": "bb16a5c2-c8b8-4246-93fb-249f87100667"
+    },
+    {
+      "claim_id": "755be6f8-dcf3-4987-b5c3-4b9ae8cf751d",
+      "result_id": "bb16a5c2-c8b8-4246-93fb-249f87100667"
+    },
+    {
+      "claim_id": "018e7b60-a9a4-458b-b407-8e64b44ce627",
+      "result_id": "14d35b0a-2755-4ba6-8d5b-eea5e013b1e3"
+    },
+    {
+      "claim_id": "c0ffcd65-35ed-4f9c-a518-fc3173917f3b",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "6d87b994-602e-4c25-8cb7-7daf41b98cfd",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "e7acf8e9-4f0a-48c0-850b-f5a82ed80393",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "8ff868af-87ed-4b1b-a7e8-cb3965a3594f",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "61d3ce7c-8e1d-44b5-83b7-b6c88de8235a",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "eade9558-4685-4aa5-a9d2-070cadcf57a8",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "6df11a6f-0edd-43c1-bcf6-b97e8b6b091e",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "cd527dc6-d967-463a-99f3-f6ea62e31d6a",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "99a1d0e2-4529-4fae-991c-b7dbe1a19bca",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "3c6d3f84-57d4-4bbc-b793-50bdc3cc62ec",
+      "result_id": "fd2b3b91-159a-4f10-8366-4aae3d851645"
+    },
+    {
+      "claim_id": "648276a8-6b33-4767-9834-e33a2ceb66b0",
+      "result_id": "369aa01b-0707-4457-a296-4bb9f37363c0"
+    },
+    {
+      "claim_id": "ba41cacc-f0ce-4c2a-b3d1-371b6cdf0d52",
+      "result_id": "369aa01b-0707-4457-a296-4bb9f37363c0"
+    },
+    {
+      "claim_id": "9552aae9-ec45-4c9d-9fbf-561d7624be99",
+      "result_id": "ec89a226-48c6-4944-9e4f-3be7d63605c7"
+    },
+    {
+      "claim_id": "d0adfa21-9d1c-4600-a5af-09fbad48747e",
+      "result_id": "ec89a226-48c6-4944-9e4f-3be7d63605c7"
+    },
+    {
+      "claim_id": "75bd8655-f039-4f4d-af31-15c1404a18de",
+      "result_id": "ec89a226-48c6-4944-9e4f-3be7d63605c7"
+    },
+    {
+      "claim_id": "0486a244-54f2-4074-bdc6-517be09df40e",
+      "result_id": "ec89a226-48c6-4944-9e4f-3be7d63605c7"
+    },
+    {
+      "claim_id": "38f7c928-36fd-4ab3-9629-516551710085",
+      "result_id": "ec89a226-48c6-4944-9e4f-3be7d63605c7"
+    },
+    {
+      "claim_id": "705ba2b9-1269-488c-988a-f8651e50b84d",
+      "result_id": "ec89a226-48c6-4944-9e4f-3be7d63605c7"
+    },
+    {
+      "claim_id": "c30eb005-7d21-4d36-bc54-432fb0b595a4",
+      "result_id": "ec89a226-48c6-4944-9e4f-3be7d63605c7"
+    },
+    {
+      "claim_id": "77fc9a80-37b2-4ef7-a846-f9ab80ce86ac",
+      "result_id": "c2f25508-9a03-40f0-95fe-0087d5389e2a"
+    },
+    {
+      "claim_id": "28687b17-47ea-4c32-a632-4fe92098dc65",
+      "result_id": "9f17defd-968e-40c6-ae20-1c285168e096"
+    },
+    {
+      "claim_id": "5806a189-0f5d-4f9d-9de5-b0d7cf3351cc",
+      "result_id": "9f17defd-968e-40c6-ae20-1c285168e096"
+    },
+    {
+      "claim_id": "f7161b67-871e-46ca-a0e3-4b009429be03",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "3d175fd3-caf2-47d8-82df-4db87c30cb69",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "113c4dd0-2e88-42cf-b792-e2a65468d3f5",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "a5acf9de-a1aa-435f-b15c-1dd860e95ead",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "a2b24643-161e-4386-a12f-529ca37f309e",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "1bd3ef15-1954-4e60-aa95-b56c9bb3151a",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "69f1313b-a173-499f-84be-799444d17986",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "fe6ff210-ad02-466d-9320-7e8c946d12d1",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "7d32ca85-6c76-471b-a07c-cb968596b3ee",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "22ff40db-b3c1-4f84-a0fb-fd1b830af66f",
+      "result_id": "44458c6e-aa13-48aa-a8cd-38d0a5fd228c"
+    },
+    {
+      "claim_id": "ee5ab6a5-eb8b-4dcf-8543-db5bb6e27e20",
+      "result_id": "3164be3f-7706-4258-a437-7cbc9a3a5025"
+    },
+    {
+      "claim_id": "298af3e4-14c4-4944-92b3-0cf1b2f73fa2",
+      "result_id": "3164be3f-7706-4258-a437-7cbc9a3a5025"
+    },
+    {
+      "claim_id": "0410b801-5d6f-478f-9baa-b60b20f3eb8d",
+      "result_id": "a9cd3c0c-4c4e-4296-8636-d9a21c942d17"
+    },
+    {
+      "claim_id": "5a957974-9391-4d8b-9d4e-5fd20b83ed21",
+      "result_id": "a9cd3c0c-4c4e-4296-8636-d9a21c942d17"
+    },
+    {
+      "claim_id": "edb4b899-d07a-4408-a6fb-4c9dd8f7c61f",
+      "result_id": "cb915b89-02af-41e4-86c2-12d022ea5bb9"
+    },
+    {
+      "claim_id": "6d8805e6-4ea5-430d-b8fe-6727cb96e556",
+      "result_id": "cb915b89-02af-41e4-86c2-12d022ea5bb9"
+    },
+    {
+      "claim_id": "4722fe1c-49d9-47d9-8aca-e97035909adb",
+      "result_id": "cb915b89-02af-41e4-86c2-12d022ea5bb9"
+    },
+    {
+      "claim_id": "6bb935ad-6b0e-40af-b301-01f1f7c35748",
+      "result_id": "9d94886b-178b-4922-8eaa-c5fb59d76e1b"
+    },
+    {
+      "claim_id": "b55e41d6-523a-4ce3-a654-eff2f1a73d47",
+      "result_id": "9d94886b-178b-4922-8eaa-c5fb59d76e1b"
+    },
+    {
+      "claim_id": "b1f1fd8d-24af-4292-be90-1083b676a48e",
+      "result_id": "9d94886b-178b-4922-8eaa-c5fb59d76e1b"
+    },
+    {
+      "claim_id": "b94d5bdd-e978-43fb-b08f-31894ef761f7",
+      "result_id": "9cde79e1-b834-4532-a6dd-4f9225a88b39"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2076 @@
+{
+  "submission": {
+    "id": "24600bfe-af9d-45ab-9b60-e6bd2240dc4a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:18:57.491730Z",
+    "updated_at": "2025-12-03T17:18:57.491730Z"
+  },
+  "content": [
+    {
+      "id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "submission_id": "24600bfe-af9d-45ab-9b60-e6bd2240dc4a",
+      "content_type": "manuscript",
+      "content_text": "# SARS-CoV-2-specific CD4+ and CD8+ T cell responses can originate from cross-reactive CMV-specific T cells\n\n## Authors\n\n- Cilia R Pothast<sup>1</sup> ([ORCID: 0000-0002-9761-3123](https://orcid.org/0000-0002-9761-3123)) \u2020\n- Romy C Dijkland<sup>1</sup> ([ORCID: 0000-0002-3479-9303](https://orcid.org/0000-0002-3479-9303))\n- Melissa Thaler<sup>2</sup> ([ORCID: 0000-0002-5590-4918](https://orcid.org/0000-0002-5590-4918))\n- Renate S Hagedoorn<sup>1</sup>\n- Michel GD Kester<sup>1</sup> ([ORCID: 0000-0002-8960-7348](https://orcid.org/0000-0002-8960-7348))\n- Anne K Wouters<sup>1</sup>\n- Pieter S Hiemstra<sup>3</sup>\n- Martijn J van Hemert<sup>2</sup> ([ORCID: 0000-0002-2617-9243](https://orcid.org/0000-0002-2617-9243))\n- Stephanie Gras<sup>4</sup>\n- JH Frederik Falkenburg<sup>1</sup>\n- Mirjam HM Heemskerk<sup>1</sup> ([ORCID: 0000-0001-6320-9133](https://orcid.org/0000-0001-6320-9133))\n\n### Affiliations\n\n1. Department of Hematology, Leiden University Medical Center Leiden Netherlands ([ROR:05xvt9f17](https://ror.org/05xvt9f17))\n2. Department of Medical Microbiology, Leiden University Medical Center Leiden Netherlands ([ROR:05xvt9f17](https://ror.org/05xvt9f17))\n3. Department of Pulmonology, Leiden University Medical Center Leiden Netherlands ([ROR:05xvt9f17](https://ror.org/05xvt9f17))\n4. Department of Biochemistry and Chemistry, La Trobe Institute for Molecular Science, La Trobe University Victoria Australia ([ROR:01rxfrp27](https://ror.org/01rxfrp27))\n5. Department of Biochemistry and Molecular Biology, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDetection of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) specific CD4+ and CD8+ T cells in SARS-CoV-2-unexposed donors has been explained by the presence of T cells primed by other coronaviruses. However, based on the relatively high frequency and prevalence of cross-reactive T cells, we hypothesized cytomegalovirus (CMV) may induce these cross-reactive T cells. Stimulation of pre-pandemic cryo-preserved peripheral blood mononuclear cells (PBMCs) with SARS-CoV-2 peptides revealed that frequencies of SARS-CoV-2-specific T cells were higher in CMV-seropositive donors. Characterization of these T cells demonstrated that membrane-specific CD4+ and spike-specific CD8+ T cells originate from cross-reactive CMV-specific T cells. Spike-specific CD8+ T cells recognize SARS-CoV-2 spike peptide FVSNGTHWF (FVS) and dissimilar CMV pp65 peptide IPSINVHHY (IPS) presented by HLA-B*35:01. These dual IPS/FVS-reactive CD8+ T cells were found in multiple donors as well as severe COVID-19 patients and shared a common T cell receptor (TCR), illustrating that IPS/FVS-cross-reactivity is caused by a public TCR. In conclusion, CMV-specific T cells cross-react with SARS-CoV-2, despite low sequence homology between the two viruses, and may contribute to the pre-existing immunity against SARS-CoV-2.\n\n## Introduction\n\nThe effectiveness of the innate and adaptive immune system is an important factor for disease outcome during infection with severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2; Brodin, 2021). CD4+ and CD8+ T cells are important components of the adaptive immune system as CD4+ T cells promote antibody production by B cells and help cytotoxic CD8+ T cells to mediate cytotoxic lysis of SARS-CoV-2 infected cells (Sette and Crotty, 2021). Whilst immunity is commonly measured solely based on antibody titers, research into coronavirus disease 2019 (COVID-19) pathophysiology and vaccination effectiveness has associated an effective T cell response with less severe COVID-19 (Bange et al., 2021; Bertoletti et al., 2021; Liao et al., 2020; Rydyznski Moderbacher et al., 2020; Sekine et al., 2020; Sette and Crotty, 2021; Tan et al., 2021a). Additionally, SARS-CoV-2-specific T cell responses have been shown to be present in most individuals 6 months after infection or vaccination and remain largely unaffected by emerging variants of concern, illustrating their importance in generating durable immune responses (Chiuppesi et al., 2022; Choi et al., 2022; Gao et al., 2022; GeurtsvanKessel et al., 2022; Jung et al., 2022; Keeton et al., 2022; Liu et al., 2022; Redd et al., 2022; Tarke et al., 2022).\n\nBesides de novo SARS-CoV-2-specific T cell responses in infected individuals, SARS-CoV-2-specific T cells have also been identified in unexposed individuals (Grifoni et al., 2020; Le Bert et al., 2020; Mateus et al., 2020; Nelde et al., 2021; Weiskopf et al., 2020). This finding indicates that T cells which were initially primed against other pathogens are able to cross-recognize SARS-CoV-2 antigen. This phenomenon is called heterologous immunity and can often be explained by genomic sequence homology between pathogens. Highly homologous DNA sequences are translated into similar proteins which can be processed and presented as epitopes with high sequence similarity in human leukocyte antigen (HLA). For this reason, most research has focused on cross-reactive T cells that are potentially primed by other human coronaviruses (HCoVs) since they share around 30% amino acid sequence homology with SARS-CoV-2 (Bacher et al., 2020; Braun et al., 2020; Johansson et al., 2021; Kundu et al., 2022; Le Bert et al., 2020; Loyal et al., 2021; Mateus et al., 2020). However, it has been postulated that SARS-CoV-2-specific T cells in unexposed individuals could also conceivably be primed by other, non-HCoVs (Le Bert et al., 2020; Peng et al., 2020; Stervbo et al., 2020; Tan et al., 2021b). Furthermore, previous studies, although limited, have demonstrated the occurrence of cross-reactivity between two epitopes with relatively low sequence homology (Bijen et al., 2018; Cameron et al., 2013; Clute et al., 2005; Cornberg et al., 2010; Riley et al., 2018; Su and Davis, 2013). This form of heterologous immunity is poorly understood, and therefore, predicting such cross-reactivity remains a challenge (Lee et al., 2020).\n\nPre-pandemic SARS-CoV-2-specific T cells are reportedly present in a relatively high proportion of the population, independent of geographical location, indicating that a highly prevalent pathogen could be the initial trigger of these cross-reactive T cells (Braun et al., 2020; Grifoni et al., 2020; Le Bert et al., 2020; Mateus et al., 2020; Meckiff et al., 2020; Nelde et al., 2021; Sekine et al., 2020; Weiskopf et al., 2020). Furthermore, these cross-reactive T cells should be present in relatively high frequencies, as they are detectable in antigen-induced stimulation assays without additional amplification steps (Braun et al., 2020; Grifoni et al., 2020; Le Bert et al., 2020; Sekine et al., 2020; Weiskopf et al., 2020). Cytomegalovirus (CMV) is a highly prevalent pathogen and usually induces high T cell frequencies, making CMV a potential trigger for cross-reactive SARS-CoV-2-specific T cells (Sylwester et al., 2005; Zuhair et al., 2019). This is supported by the finding that SARS-CoV-2 cross-reactive CD8+ T cells were increased in CMV-seropositive (CMV+) donors and that previous CMV infection has been associated with severe COVID-19 (Alanio et al., 2022; Jo et al., 2021; Weber et al., 2022). Studies so far indicate that cross-reactive T cells can play a role in COVID-19 immunity, but whether they are protective or pathogenic is unclear (Bacher et al., 2020; Kundu et al., 2022). Taken together, we hypothesized that cross-reactive SARS-CoV-2-specific T cells might originate from the CMV-specific memory population.\n\nIn the present study, we aimed to identify SARS-CoV-2-specific cross-reactive CD4+ and CD8+ T cells in SARS-CoV-2-unexposed individuals. We found an increased presence of cross-reactive T cells in CMV+ donors, and upon isolation and clonal expansion of the spike-reactive CD8+ and membrane-reactive CD4+ T cells, we confirmed that these T cells were reactive against both SARS-CoV-2 and CMV. Interestingly, isolated CD8+ T cells recognizing a previously described CMV epitope IPSINVHHY presented by HLA-B*35:01 were cross-reactive with dissimilar SARS-CoV-2 spike peptide FVSNGTHWF presented by HLA-B*35:01, demonstrating that cross-reactivity does not solely depend on peptide sequence homology. The T cell receptor (TCR) isolated from these CD8+ T cells was found in multiple donors showing that pre-pandemic spike-reactive CD8+ T cells can be caused by a public CMV-specific TCR. Based on the reduced activation status compared to other SARS-CoV-2-specific T cells in severe COVID-19 patients, we hypothesize that these cross-reactive T cells are not important for clearing the virus at this late stage of the disease. However, these cross-reactive CD8+ T cells were shown to reduce spreading of SARS-CoV-2 infection in vitro, and in two out of two CMV+ severe COVID-19 patients, these cross-reactive T cells were detected. This indicates that early in infection at the stage that no SARS-CoV-2-specific T cells are present yet, and these cross-reactive T cells may play a role in preventing SARS-CoV-2 infection or reducing the severity of COVID-19.\n\n## Results\n\n### SARS-CoV-2-specific T cell responses in SARS-CoV-2-unexposed PBMCs correlate with CMV seropositivity\n\nTo investigate whether SARS-CoV-2-specific CD4+ and CD8+ T cell responses in SARS-CoV-2-unexposed donors correlate with previous CMV infection, pre-pandemic cryopreserved PBMCs from CMV seropositive (CMV+, N=28) and CMV seronegative (CMV\u2212, N=39) healthy individuals were stimulated overnight using SARS-CoV-2 15-mer peptide pools. These pools included three spike peptide pools that together overlap the entire spike gene (S, S1, and S+), membrane (M), and nucleocapsid (N) antigens from SARS-CoV-2. To confirm that CMV+ individuals have CMV-specific T cells, reactivity against the most immunogenic CMV antigen, pp65, was also tested. Memory SARS-CoV-2-specific CD4+ T cells were characterized as CD154+CD137+, and memory SARS-CoV-2-specific CD8+ T cells were identified based on expression of CD137 and IFN-\u03b3 (Figure 1A\u2013B and Figure 1\u2014figure supplement 1). As expected, all CMV+ donors displayed a CD4+ and/or CD8+ T cell response upon stimulation with pp65 (Figure 1C\u2013E). No marked increase of CD4+ T cell responses was observed after SARS-CoV-2 spike and nucleocapsid stimulation in the CMV+ group compared to CMV\u2212. However, six donors in the CMV+ group displayed a CD4+ T cell response against the membrane peptide pool which was not observed in the CMV\u2212 group (Figure 1C). Furthermore, CD4+ T cell response against the membrane pool was accompanied by a CD4+ T cell response against pp65 (Figure 1D). In addition, CD8+ T cell responses were detected against spike peptides in two CMV+ donors which were not detected in CMV\u2212 donors (Figure 1E). Interestingly, donors with a high CD8+ T cell response against SARS-CoV-2 spike peptides additionally displayed strong reactivity against pp65 (Figure 1F). Taken together, these results show that SARS-CoV-2-unexposed CMV+, but not CMV\u2212, individuals had detectable CD4+ T cell responses against membrane peptides and CD8+ T cells targeting spike peptides. These SARS-CoV-2 responses were accompanied by T cell responses against pp65 and thus may indicate that SARS-CoV-2 T cell responses in pre-pandemic samples potentially are memory T cells targeting pp65.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig1-v2.jpg)\n\n**Figure 1.:** Pre-pandemic cryo-preserved PBMCs were stimulated using SARS-CoV-2 spike (S, S1, and S+), membrane (M), nucleocapsid (N), and CMV pp65 peptide pools or not stimulated (dimethylsulfoxide; DMSO). (A) A representative flow cytometry example of a CD4+ T cell response in a SARS-CoV-2-unexposed donor. Numbers in plot represent frequencies of CD137+CD154+ cells of total CD4+ T cells. (B) A representative flow cytometry example of a CD8+ T cell response in a SARS-CoV-2-unexposed donor. Numbers in plot represent frequencies of CD137+IFN-\u03b3+ cells of total CD8+ T cells. (C) Scatter plot showing frequencies of CD137+CD154+ cells of total CD4+ T cells of CMV+ (green, N=28) and CMV\u2212 (gray, N=39) donors. (D) Frequencies of CD137+CD154+ cells of total CD4+ T cells in the membrane-stimulated condition (membrane response) plotted against pp65-stimulated condition (pp65 response). Three letter codes are anonymized codes of CMV+ (green) and CMV\u2212 (gray) donors. (E) Scatter plot showing frequencies of CD137+ IFN-\u03b3+ cells of total CD8+ T cells of CMV+ (green, N=28) and CMV\u2212 (gray, N=39) donors. (F) Frequencies of CD137+IFN-\u03b3+ cells of total CD8+ T cells in the spike-stimulated condition (spike response) plotted against pp65-stimulated condition (pp65 response).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Representative example of flow cytometry gating strategy for peptide-reactive CD4+ and CD8+ T cells. All events were gated on lymphocytes, single cells, viable cells, CD14 and CD19 negative, and either CD4 or CD8 positive. For CD4+ T cells, activation was measured by upregulation of CD137 and CD154 compared to DMSO. For CD8+ T cells, activation was measured by upregulation of CD137 and IFN-\u03b3 production compared to DMSO.\n\n### Pre-pandemic SARS-CoV-2-specific CD4+ and CD8+ T cells recognize pp65 peptides from CMV\n\nTo confirm that pre-pandemic SARS-CoV-2-specific T cells are able to recognize peptides from pp65, these SARS-CoV-2-specific T cells were isolated and clonally expanded. SARS-CoV-2-unexposed (pre-pandemic cryopreserved) PBMCs from a CMV+ individual showing a CD4+ T cell response against SARS-CoV-2 membrane protein (donor UGT) were stimulated with the membrane peptide pool and single cell sorted based on CD137 upregulation (Figure 2\u2014figure supplement 1). After clonal expansion, 20 out of 27 screened T cell clones produced IFN-\u03b3 when stimulated with membrane peptide pool compared to no peptide stimulation (data not shown). T cell clones 4UGT5, 4UGT8, and 4UGT17, all three expressing a different TCR, were used for further experiments (Figure 2\u2014figure supplement 2A). As hypothesized, the T cell clones were reactive against both SARS-CoV-2 membrane antigen and CMV pp65 when loaded on HLA-matched EBV-lymphoblastoid cell lines (EBV-LCLs; Figure 2A). Interestingly, IFN-\u03b3 production by the T cell clones was significantly increased when stimulated with pp65 peptides compared to membrane peptides, indicating higher avidity for CMV compared to SARS-CoV-2 (Figure 2B). To identify which peptide in pp65 is recognized, reactivity of T cell clone 4UGT8 against a pp65 library was measured which resulted in recognition of three sub pools which contained peptide AGILARNLVPM (Figure 2\u2014figure supplement 2B\u2013C). HLA-mismatched EBV-LCLs were retrovirally transduced with HLA Class II molecules that were commonly shared between donors that had a detectable CD4+ T cell response against the membrane and pp65 peptide pool (Figure 1D). T cell clone 4UGT8 recognized both peptide pools and the AGI peptide only when presented in HLA-DRB3*02:02 (Figure 2C and Figure 2\u2014figure supplement 2D). The SARS-CoV-2 membrane protein epitope recognized by these cross-reactive T cells remains unidentified as in vitro experiments and in silico prediction methods failed to identify the epitope. A similar approach was applied for CD8+ T cells in which T cell clones were generated after SARS-CoV-2 spike peptide pool stimulation of PBMCs from CMV+ donor UTT (Figure 2\u2014figure supplement 1). The isolated CD8+ T cell clones were screened for their reactivity with SARS-CoV-2 spike which showed that 23 out of the 28 T cell clones produced IFN-\u03b3 upon spike peptide pool stimulation (data not shown). TCR sequencing revealed that all 23T cell clones expressed the same TCR (Figure 2\u2014figure supplement 3A). T cell clone 8UTT6 was selected for further testing and analyzed for its cross reactivity toward SARS-CoV-2 spike and CMV pp65 peptide pools. Additionally, the HLA restriction of T cell clone 8UTT6 was hypothesized to be HLA-B*35:01 as the unexposed donors with a CD8+ T cell response against SARS-CoV-2 spike (UTT and UBV) both expressed HLA-B*35:01. The results confirmed that T cell clone 8UTT6 recognized spike as well as pp65 peptide pool presented by K562 cells transduced with HLA-B*35:01 but not transduced with HLA-A*11:01 (Figure 2D). To identify the spike epitope, reactivity of clone 8UTT6 against the 15-mer spike peptide library was measured. For the identification of the CMV epitope, an unbiased approach was performed using the nonamer combinatorial peptide library (CPL) assay. Recognition patterns were analyzed using netMHC 4.0 analysis for predicted binding to HLA-B*35:01, which revealed SARS-CoV-2 spike peptide FVSNGTHWF (FVS, S1094\u20131103) and CMV pp65 IPSINVHHY (IPS, pp65112-121) as the most likely epitopes (Figure 2\u2014figure supplement 3B\u2013E). The FVS and IPS peptides were indeed recognized by clone 8UTT6 (Figure 2E). Importantly, the IPS peptide was recognized with higher avidity compared to the FVS peptide by clone 8UTT6 (Figure 2F). Supporting these findings, the same TCR\u03b2 chain was already described and demonstrated to be specific for IPS in HLA-B*35:01 (Klarenbeek et al., 2012). Taken together, SARS-CoV-2 reactive CD4+ and CD8+ T cells in pre-pandemic samples cross reacted with CMV and SARS-CoV-2 peptides.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig2-v2.jpg)\n\n**Figure 2.:** Clonally expanded CD4+ T cells from donor UGT and CD8+ T cells from donor UTT were overnight co-cultured with peptide-pulsed stimulator cells. (A\u2013B) Percentages of CD154+, CD137+, and/or IFN-\u03b3+ cells of cross-reactive CD4+ T cell clones after overnight culture (T only) or after overnight co-culture with HLA-matched EBV-lymphoblastoid cell lines (EBV-LCLs) that were not peptide pulsed (x) or loaded with membrane (M) or pp65 peptide pool, measured by flow cytometry. Dots represent the mean of experimental repeats of 4UGT5 (square, one repeat), 4UGT8 (circles, four repeats), and 4UGT17 (triangle, two repeats). Significance was tested by a paired t-test. (C) Bar graphs showing ELISA measurement of secreted IFN-\u03b3 after co-culturing of a representative clone, 4UGT8 clone, with HLA-matched or HLA-mismatched EBV-LCLs. HLA-mismatched EBV-LCLs were retrovirally transduced with HLA class II molecule as depicted in figure. Stimulator cells were peptide-pulsed with membrane (M) peptide pool, pp65 peptide pool, or AGILARNLVPM (AGI) peptide. Data points are experimental duplicates. Black arrows indicate that values were above plateau value of the ELISA calibration curve. (D\u2013E) Bar graphs showing ELISA measurement of secreted IFN-\u03b3 after co-culturing of a representative clone, 8UTT6 clone, with HLA-matched EBV-LCLs or K562s transduced with HLA-B*35:01 or HLA-A*11:01. Stimulator cells were peptide-pulsed with spike (S) peptide pool, pp65 peptide pool, IPSINVHHY (IPS) peptide, or FVSNGTHWF (FVS) peptide. Data points are technical triplicates. (F) Peptide titration of IPS peptide (blue) and FVS peptide (purple) in a co-culture assay with 8UTT6 clone.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative example of fluorescent-activated cell sorting for peptide-reactive CD4+ and CD8+ T cells. All events were gated on lymphocytes, single cells, and subsequently selected for CD4 positive or CD8 positive cells. Activated CD4+ or CD8+ T cells were sorted based on increased expression of CD137 compared to DMSO.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Figure showing TCR sequencing of three cross-reactive CD4+ T cell clones. (B) Heatmap showing reactivity of 4UGT8 clone after co-culturing with HLA-matched EBV-lymphoblastoid cell lines (EBV-LCLs) and cytomegalovirus (CMV) pp65 peptide library which consisted of 12 horizontal (H1\u2013H12) and 12 vertical sub pools (V1\u2013V12). Reactivity was measured by IFN-\u03b3 ELISA of the supernatant, depicted as OD-value. Peptides that were present in the sub pools with highest reactivity are shown below the figure. (C) Bar graphs showing IFN-\u03b3 secretion after co-culturing 4UGT8 clone with single peptides. Peptide sequences are depicted next to the figure with amino acid overlap between the peptides in bold. Data points are technical duplicates. (D) Bar graphs showing ELISA measurement of secreted IFN-\u03b3 after co-culturing of 4UGT8 clone with HLA-matched EBV-LCLs, or HLA-mismatched EBV-LCLs transduced with HLA-DPB1*04:02 or DRB1*11:01. Stimulator cells were peptide-pulsed with membrane (M) peptide pool, pp65 peptide pool, or AGILARNLVPM (AGI) peptide. Data points are experimental duplicates. Black arrows indicate that values were above plateau value of the ELISA calibration curve.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Figure showing TCR sequencing result of UTT clones (N=23). (B) Heatmap showing reactivity of a representative clone, 8UTT6 clone, against sub pools of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) spike peptide library loaded on K562s transduced with HLA-B*35:01. Reactivity was measured by IFN-\u03b3 ELISA. Peptides that induced highest IFN-\u03b3 production were depicted under the figure with amino acid overlap between the peptides in black. (C) Figure showing NetMHC 4.0-predicted binding to HLA-B*35:01 of peptides that were recognized in the spike peptide library. The 10 peptides with highest binding to HLA-B*35:01 are shown, and strong binders are indicated by an arrow. (D) Heatmap demonstrating peptide recognition signature of 8UTT6 clone using the combinatorial peptide library (CPL) assay. 8UTT6 clone was co-cultured with peptide-loaded K562 cells transduced HLA-B*35:01. Secreted IFN-\u03b3 was measured by ELISA and corrected per row. Y-axis shows peptide position, and x-axis shows the fixed amino acid. (E) Figure showing the 10 peptides with highest CPL score, their binding affinity to HLA-B*35:01 and strong binders are indicated by an arrow, as predicted by netMHC 4.0.\n\n### Similarity at the C-terminal part of the peptides could drive T cell cross reactivity\n\nTo understand the molecular basis of T cell cross reactivity between dissimilar peptides FVS and IPS, we modeled the FVS structure based on the solved structure of the IPS peptide bound to HLA-B*35:01 (Figure 3; Pellicci et al., 2014). The two peptides share two residues (P3-S and P7-H) and have two similar residues (P6-T/V and P9-F/Y) based on similar biochemical properties and size. Residue substitutions from the IPS to FVS peptide were possible without major steric clashes with the HLA or peptide residues. The lack of secondary anchor residue at position 5 in the FVS peptide (P5-N/G) might change the conformation of the central part of the peptide that could be similar to the one observed in the spike-derived peptide IPF (S896-904) in complex with HLA-B*35:01 (Figure 3\u2014figure supplement 1; Nguyen et al., 2021). The primary anchor in the FVS peptide is P2-V and P9-F, both within the favored residues at those positions for HLA-B35-restricted peptide (Escobar et al., 2008). Overall, the FVS peptide might adopt a similar backbone conformation compared to the IPS peptide, which would place in both peptides a small hydrophobic residue at position 6 (P6-T/V), a histidine at position 7, and a residue with a large side-chain at position 8 (P8-W/H).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig3-v2.jpg)\n\n**Figure 3.:** (A) Crystal structure of the HLA-B*35:01-IPS complex with the HLA in white cartoon and the IPS peptide in clear orange cartoon and stick. (B) Model of the HLA-B*35:01-FVS complex with the HLA in white cartoon and the FVS peptide in blue cartoon and stick. The sphere represents the C\u03b1 atom of the FVS peptide P5-G residue.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Top view of the HLA-B*35:01-IPF (peptide in chartreuse) and HLA-B*35:01-FVS (peptide in blue) aligned on the HLA cleft (white cartoon). (B) Side view of the same structural overlay as panel A, with the same color scheme. The sphere represents the C\u03b1 atom of the FVS peptide P5-G residue.\n\n### IPS/FVS-specific cross-reactive CD8+ T cells are detectable in multiple individuals\n\nTo investigate the prevalence and phenotype of IPS/FVS cross-reactive T cells, HLA-B*35:01+ CMV+ healthy donors were screened for IPS/FVS-specific T cells using tetramers consisting of HLA-B*35:01-FVS (B*35/FVS-tetramer) and HLA-B*35:01-IPS (B*35/IPS-tetramer; Figure 4\u2014figure supplement 1). Tetramer staining of PBMCs from donor UTT demonstrated that not all T cells that bound to B*35/IPS-tetramer were able to bind to the B*35/FVS-tetramer as well. However, all T cells that bound to B*35/FVS-tetramer were also binding to the B*35/IPS-tetramer (Figure 4A). This observation indicates that IPS/FVS cross-reactivity is dictated by specific TCR sequences which were further supported by the lack of binding to B*35/FVS-tetramer by an IPS-specific T cell clone with a different TCR (Figure 4B). Screening of SARS-CoV-2-unexposed, CMV+, and HLA-B*35(:01) donors (N=37) showed that nearly all CMV+ donors had IPS-specific T cells with frequencies above background level, and interestingly, three of the analyzed donors (UTT, UBV, and SFW) presented with clearly detectable IPS/FVS-specific T cells (Figure 4C). Furthermore, IPS/FVS-specific T cells displayed an effector memory phenotype (CCR7\u2212CD45RA\u2212), confirming a memory repertoire origin and, interestingly, a less differentiated phenotype compared to IPS-specific T cells (Figure 4D). In summary, IPS/FVS cross reactivity is dependent on the TCR clonotype, and these cross-reactive T cells are detected in multiple donors.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig4-v2.jpg)\n\n**Figure 4.:** Flow cytometry measurement of PBMCs or T cell clones that are binding to B*35/IPS-tetramer (blue), B*35/FVS-tetramer (purple), or to neither (gray). (A) Flow cytometry dot plot showing percentages of tetramer-binding cells of total CD8+ T cells in PBMCs from donor UTT. (B) Dot plot showing percentages of tetramer-binding of 8UTT6 clone and an IPS-specific clone with their international immunogenetics information system (IMGT) variable region of T cell receptor \u03b2-chain (TRBV) depicted. As a negative control (neg. ctrl.), a T cell clone recognizing a non-relevant peptide in HLA-B*35:01 was included. (C) Bar graph showing frequencies of tetramer-binding of total CD8+ from PBMCs of healthy CMV+ and HLA-B*35(:01)+ donors. Error bars represent SD of experimental duplicates. Dotted line represents background level which was based on HLA-B*35:01\u2212 donors (neg.). (D) Dot plot showing expression of CCR7 and CD45RA by total CD8+ T cells and tetramer-binding T cells in PBMCs from UTT, UBV, and SFW. Quadrants separate differentiation subsets into na\u00efve (N), central memory (CM), effector memory (EM), and terminally differentiated effector memory (TEMRA).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Representative example of flow cytometry gating strategy for tetramer positive CD8+ T cells. All events were gated on lymphocytes, single cells, viable cells, CD8 positive, and subsequently separated for binding to tetramer consisting of HLA-B*35:01 with IPS peptide or FVS peptide.\n\n### IPS/FVS cross reactivity is underpinned by a public TCR\n\nTo investigate whether the IPS/FVS-specific CD8+ T cells found in multiple donors expressed a similar TCR, B*35/FVS-tetramer-binding T cells were isolated and the TCR \u03b1 and \u03b2 chains sequenced (Figure 5\u2014figure supplement 1). Sequencing was performed for samples with clear detection of IPS/FVS-specific T cells (UTT, UBV, and SFW) and one donor with detectable, but below the limit of accurate detection of B*35/FVS-tetramer+ T cells (JZX; Figure 4C). Interestingly, B*35/FVS-isolated T cells from all donors displayed amino acid identical dominant complementary-determining region 3 (CDR3) of the \u03b1-chain, CAGNQGGKLIF (CDR3\u03b1CAGNQG), and \u03b2-chain, CASSLALDEQFF (CDR3\u03b2CASSLA; Figure 5A). This observation thereby shows that IPS/FVS cross reactivity is caused by a public TCR. These identical CDR3s were not a result of sequencing artifact as nucleotide alignment revealed minor differences between samples (Figure 5\u2014figure supplement 2). In addition to B*35/FVS-isolated T cells, T cells that bound B*35/IPS-tetramer were isolated and sequenced in parallel. Both CDR3\u03b1CAGNQG and CDR3\u03b2CASSLA were identified in all samples and shown to be among the most dominant TCRs. Remarkably, this was also observed in donor JZX which showed IPS/FVS-tetramer+ T cells below background level, indicating that in more than 3 out of 37 donors, this public TCR is present. (Figure 5C). Taken together, IPS/FVS-specific T cells express an identical TCR, found in multiple donors, indicating that public TCRs can exhibit cross-reactive properties.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig5-v2.jpg)\n\n**Figure 5.:** PBMCs from healthy CMV+ and HLA-B*35:01+ donors were sorted on B*35/IPS- or B*35/FVS-tetramer binding and directly sequenced for their TCR alpha and beta chain. Unique CDR3 sequences are depicted in two-sided bar graphs in which the left side shows abundance of CDR3 sequences from the TCR \u03b1-chain (CDR3\u03b1), and the right side shows abundance of CDR3 sequences from the TCR \u03b2-chain (CDR3\u03b2). Bar graphs are purple if the CDR3\u03b1 has the CAGNQGGKLIF sequence, or the CDR3\u03b2 has the CASSLALDEQFF sequence; all other found sequences are depicted in blue. CDR3s with less than 1% abundance were excluded from the analysis. (A) Two-sided bar graphs showing abundances of unique CDR3 sequences of samples sorted on binding to B*35/FVS-tetramer. (B) Two-sided bar graphs showing abundances of unique CDR3 sequences of samples sorted on binding to B*35/IPS-tetramer.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative example of fluorescent-activated cell sorting for tetramer positive CD8+ T cells. All events were gated on lymphocytes, single cells, CD4\u2212, and subsequently on CD8+tetramer+.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Nucleotide alignment of the CDR3 \u03b1 and \u03b2 sequence of PBMCs sorted on B*35/FVS-tetramer binding. Segment numbering is depicted according to the international immunogenetics information system (IMGT) nomenclature. (A) Nucleotide alignment of the CDR3\u03b1 sequences. (B) Nucleotide alignment of the CDR3\u03b2 sequences.\n\n### IPS/FVS cross-reactive CD8+ T cells are able to recognize SARS-CoV-2-infected cells but do not show an activated phenotype during acute disease\n\nTo investigate whether IPS/FVS-specific CD8+ T cells can play a role during SARS-CoV-2 infection, the function of IPS/FVS-specific T cells in an in vitro model and the activation state of these T cells during acute SARS-CoV-2 infection in severe COVID-19 patients was assessed. Firstly, the reactivity of IPS/FVS-specific T cells against K562 transduced with the spike gene was measured which showed that the T cells were able to recognize endogenously processed and presented peptide (Figure 6A). To investigate whether the IPS/FVS-specific T cells can recognize SARS-CoV-2-infected cells and thereby limit viral spread, Calu-3 airway epithelial cells were infected with live SARS-CoV-2 virus (wildtype) and incubated for 6 hr before co-culturing with CD8+ T cells. SARS-CoV-2 spike-specific CD8+ T cells from a SARS-CoV-2 vaccinated donor were able to reduce intracellular SARS-CoV-2 RNA copies at both 0.05 and 0.5 multiplicity of infection (MOI) 24 hr post infection (Figure 6B\u2013C). Interestingly, IPS/FVS-specific CD8+ T cells were able to reduce SARS-CoV-2 intracellular RNA copies in Calu-3 cells infected with 0.05 MOI (MOI Figure 6B). Incubating with 10-fold more virus (0.5 MOI) resulted in no difference in RNA copies compared to the no T cell control (Figure 6C). To further investigate the function of IPS/FVS-specific CD8+ T cells ex vivo, the activation state of these T cells was evaluated during severe COVID-19 disease in two CMV+ HLA-B*35:01+ patients. The activation state was measured by expression of activation markers CD38 and HLA-DR as these markers are highly expressed on SARS-CoV-2-specific CD8+ T cells during severe COVID-19 (Figure 6D; Sekine et al., 2020). Interestingly, IPS/FVS-cross-reactive T cells were detected in two out of two CMV+ HLA-B*35:01+ patients suffering from severe COVID-19, whereas the cross-reactive T cells were detected in 3 out of 37 healthy CMV+ HLA-B*35:01+ donors (Figures 4C and 6E). The expression of CD38 and HLA-DR was lower compared to the SARS-CoV-2-specific CD8+ T cells and not considerably increased compared to IPS-specific T cells that were not cross-reactive with FVS (Figure 6D\u2013E). These results indicate that IPS/FVS-specific CD8+ T cells recognize SARS-CoV-2-infected cells and are able to limit SARS-CoV-2 replication at low virus titers. However, IPS/FVS-specific T cells did not show an activated phenotype during acute severe SARS-CoV-2 infection.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82050/elife-82050-fig6-v2.jpg)\n\n**Figure 6.:** (A) IFN-\u03b3 release of IPS/FVS-specific CD8+ T cells after co-incubation with K562 that were untransduced (x), loaded with spike peptide pool (S pep), or transduced with nucleotide 1\u20132082 (S1 gene) or nucleotide 2052\u20133,822 (S2 gene) of the spike gene. (B\u2013C) Calu-3 cells were transduced to express HLA-B*35:01 and infected with the wildtype severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) virus. 6 hr post infection (hpi), IPS/FVS-specific CD8+ T cells were added in a 10:1 effector to target ratio. SARS-CoV-2 spike-specific T cells, isolated from coronavirus disease 2019 (COVID-19) vaccinated individuals, that recognize VASQSIIAY presented in HLA-B*35:01 or YLQPRTFLL presented in HLA-A*02:01 functioned as a positive control (pos.) or negative control (neg.), respectively. Cells were harvested 24 hpi to measure intracellular viral RNA. Bar graphs show the means of percentage reduction in SARS-CoV-2 intracellular RNA copies compared to the no T cell condition (no T) as measured by reverse transcription quantitative PCR (RT-qPCR), at 24 hpi using a multiplicity of infection (MOI) of 0.05 or 0.5. One-way ANOVA was applied to test statistical differences between conditions and only comparisons with p<0.05 are shown. (D\u2013E) Flow cytometry analysis of CD38 and HLA-DR expression on CD8+ T cells in PBMCs from severe COVID-19 patients who were CD137+IFN-\u03b3+ after SARS-CoV-2 nucleocapsid peptide stimulation (red), only bound to B*35/IPS-tetramer (blue) or bound to both B*35/IPS- and B*35/FVS-tetramer (purple). All other CD8+ T cells are gray. Two patients were HLA-B*35:01+CMV+ (KDH and CHZ), and as a control, one patient was HLA-B*35:01+CMV\u2212 (CLS). Detection of B*35/IPS- and B*35/FVS-specific T cells and expression of the activation markers were measured and compared within the same sample.\n\n## Discussion\n\nSARS-CoV-2-specific T cells in pre-pandemic cryo-preserved samples have been reported in several studies. The majority of these studies describe T cell immunity against other HCoVs as the main source of these T cells (Bacher et al., 2020; Braun et al., 2020; Johansson et al., 2021; Kundu et al., 2022; Le Bert et al., 2020; Loyal et al., 2021; Mateus et al., 2020). However, some studies have postulated that pre-pandemic SARS-CoV-2-specific T cells could be derived from other sources (Le Bert et al., 2020; Peng et al., 2020; Stervbo et al., 2020; Tan et al., 2021b). Our findings demonstrate that CMV pp65-specific CD4+ T cells cross react with the membrane protein from SARS-CoV-2, and CMV pp65-specific CD8+ T cells are able to cross react with SARS-CoV-2 spike protein. The cross-reactive CD8+ T cells recognized known CMV epitope IPSINVHHY in HLA-B*35:01 and cross reacted with the SARS-CoV-2 epitope FVSNGTHWF in HLA-B*35:01. These IPS/FVS-specific CD8+ T cells were detected in multiple donors all expressing an identical TCR, indicating that cross-reactivity with SARS-CoV-2 can be caused by a CMV-specific public TCR. Functional and phenotypic assessment of the IPS/FVS-specific CD8+ T cells indicated their capacity to reduce low concentrations of SARS-CoV-2 in vitro, but these cross-reactive T cells detected in two severe COVID-19 patients were not activated based on phenotypic characterization.\n\nTo our knowledge this is the first study to identify CMV-specific T cells that are cross reactive with SARS-CoV-2. The cross-reactive CD4+ T cells recognized CMV pp65 epitope AGILARNLVPM in HLA-DRB3*02:02 and were able to cross react with an as of yet unidentified, SARS-CoV-2 membrane epitope in HLA-DRB3*02:02 (Weber et al., 2022). Previous studies have reported the presence of membrane-specific CD4+ T cell responses in SARS-CoV-2-unexposed donors utilizing the same commercially available membrane peptide pool, yet these studies did not aim to identify the peptide-HLA restriction (Bacher et al., 2020; Sekine et al., 2020). AGI-specific CD4+ T cells have been described to be cross reactive toward SARS-CoV-2 spike which is in contrast to our finding (Weber et al., 2022). The cross-reactive CD8+ T cells recognize the CMV epitope IPSINVHHY and SARS-CoV-2 epitope FVSNGTHWF presented in HLA-B*35:01. IPS/FVS-specific T cells were possibly detected previously but never further investigated or characterized (Shomuradova et al., 2020; Tarke et al., 2021). Both cross-reactive CD4+ and CD8+ T cells displayed a higher avidity for the CMV epitope compared to the epitope derived from SARS-CoV-2. In contrast, other studies have reported an equal or even higher avidity for the SARS-CoV-2 epitope compared to the epitopes derived from the HCoV for which the T cells were hypothesized to be primed against (Braun et al., 2020; Johansson et al., 2021; Lineburg et al., 2021; Mateus et al., 2020). This appears to be contradictive since it has been shown that repeated exposure results in the selection of high avidity T cell clonotypes which are able to clear viral infection and protect against reinfection (Abdel-Hakeem et al., 2017; Hombrink et al., 2013; Price et al., 2005; Schober et al., 2018). Cross-reactive T cells would therefore most likely display a higher avidity for the source pathogen compared to the avidity for SARS-CoV-2, as reported in this study. This discrepancy could be caused by the fact that previous studies focused on other HCoVs since they share high sequence homology with SARS-CoV-2, thereby potentially missing the true source of these particular T cells (Bacher et al., 2020; Braun et al., 2020; Johansson et al., 2021; Kundu et al., 2022; Le Bert et al., 2020; Loyal et al., 2021; Mateus et al., 2020). Alternatively, samples frozen down during the pandemic were considered unexposed if the donors displayed neither SARS-CoV-2-specific antibodies nor a history of COVID-19-like symptoms (Bacher et al., 2020; Braun et al., 2020; Lineburg et al., 2021). However, SARS-CoV-2 infection does not necessarily lead to symptoms or a detectable antibody response (Gao et al., 2021; Steiner et al., 2021). The described reduced avidity for HCoV therefore could imply that these cross-reactive T cells were derived from the SARS-CoV-2-induced repertoire. Taken together, whereas cross-reactive T cells recognizing SARS-CoV-2 have been primarily described to be derived from other HCoVs, the contribution of these other HCoVs as initial primers of the T cell response may have been over-estimated due to experimental design. Further studies are required to identify other potential sources of cross reactivity with low sequence homology yet high prevalences such as CMV, EBV, influenza, or non-viral pathogens.\n\nThe identified cross-reactive CD8+ T cells appeared to recognize CMV peptide IPSINVHHY and a dissimilar peptide FVSNGTHWF derived from SARS-CoV-2. Ex vivo detected heterologous CD8+ T cell immunity against two pathogens caused by dissimilar epitopes presented in the same HLA is rarely reported (Clute et al., 2005; Cornberg et al., 2010). Nevertheless, ample studies have investigated the underlying mechanisms of such T cell-mediated cross reactivity. Heterologous immunity can be caused by the expression of a dual TCR which means that two TCR \u03b1- or \u03b2-chains are expressed simultaneously, resulting in two distinctive TCRs within one T cell (Cusick et al., 2012). However, here, we identified a single TCR in cross-reactive T cells excluding this hypothesis. Recognition of two distinct epitopes by a single TCR can be explained by shape similarity once the peptides are bound to the HLA molecule, and this shape similarity, or molecular mimicry can underpin T cell cross reactivity (Macdonald et al., 2009). Possible other underlying mechanisms are reduced footprint of the TCR with peptide (Birnbaum et al., 2014; Cole et al., 2016), an altered TCR-docking angle (Adams et al., 2011), or plasticity of the peptide-MHC complex (Adams et al., 2011; Riley et al., 2018) or TCR (Piepenbrink et al., 2013). Here, similarity between the IPS and FVS peptides in backbone conformation and the C-terminal part might underpin the T cell cross reactivity observed, as the majority of TCR docks preferentially toward the C-terminal of the peptide (Szeto et al., 2020). Solving the crystal structure of the IPS/FVS-TCR binding to HLA-B*35:01-FVS and -IPS would be necessary to provide insight in the binding properties of the public TCR.\n\nIPS/FVS-specific CD8+ T cells were able to reduce SARS-CoV-2 spread in vitro when exposed to a low virus concentration, which is supported by our finding that two out of two tested severe COVID-19 patients had clearly detectable IPS/FVS-specific CD8+ T cells, while the prevalence in healthy donors was 3 out of 37. The presence of these cross-reactive memory T cells in circulation may be an advantage during initial SARS-CoV-2 infection as rapid T cell responses were associated with less severe COVID-19 (Loyal et al., 2021; Sette and Crotty, 2021; Tan et al., 2021a). However, the cross-reactive CD8+ T cells were less efficient compared to SARS-CoV-2-specific, vaccination-primed T cells in limiting viral spread in vitro which can be explained by the reduced avidity of the cross-reactive T cells for the spike protein compared to CMV. This study also demonstrated that IPS/FVS-specific CD8+ T cells did not display the same degree of activation as observed for the SARS-CoV-2-specific T cells during severe COVID-19. Additionally, despite the presence of the cross-reactive CD8+ T cells, these individuals developed severe disease. These observations together indicate that IPS/FVS-specific CD8+ T cells might be able to reduce SARS-CoV-2 spread at initial infection but likely do not play a significant role in the pathogenesis of severe COVID-19. One limitation is that our study focused on circulating T cells, and we cannot exclude the possibility that cross-reactive CD8+ T cells present in lung tissue did display an activated phenotype. Another limitation of this study is the small severe COVID-19 cohort that was investigated, and literature describing the role of cross-reactive T cells is scarce (Bacher et al., 2020; Kundu et al., 2022). In summary, additional studies using larger cohorts are required to fully elucidate the potential role of cross-reactive CD8+ T cells in disease.\n\nIn conclusion, pre-pandemic SARS-CoV-2-specific T cells can derive from non-homologous pathogens such as CMV. This expands the potential origin of these pre-pandemic SARS-CoV-2-specific CD4+ and CD8+ T cell beyond other HCoVs. The cross-reactive CD8+ T cells were reactive toward dissimilar epitopes, and this cross reactivity was caused by a public TCR, which has been rarely observed so far. Our data points toward a role of the cross-reactive T cells in reducing SARS-CoV-2 viral load in the early stages of infection, prior to priming of SARS-CoV-2 specific T cells. Altogether, these results aid in further understanding heterologous T cell immunity beyond common cold coronaviruses and facilitate the investigation into the potential role of cross-reactive T cells in COVID-19.\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) Spike (S), 15-mers, 11aa overlapping peptide pool</td>\n      <td>Miltenyi</td>\n      <td>130-126-701</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 Spike (S1), 15-mers, 11aa overlapping peptide pool</td>\n      <td>Miltenyi</td>\n      <td>130-127-041</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 Spike (S+), 15-mers, 11aa overlapping peptide pool</td>\n      <td>Miltenyi</td>\n      <td>130-127-312</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 Membrane (M), 15-mers, 11aa overlapping peptide pool</td>\n      <td>Miltenyi</td>\n      <td>130-126-703</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 Nucleocapsid (N), 15-mers, 11aa overlapping peptide pool</td>\n      <td>Miltenyi</td>\n      <td>130-126-699</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Cytomegalovirus (CMV) pp65, 15-mers, 11aa overlapping peptide pool</td>\n      <td>JPT</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV pp65 peptide library, 15-mers, 11aa overlapping</td>\n      <td>JPT</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 Spike peptide library, 15-mers, 11aa overlapping</td>\n      <td>SB Peptides</td>\n      <td>SB043</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV, VFTWPPWQAGILARN</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV, PPWQAGILARNLVPM</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV, AGILARNLVPMVATV</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV, ARNLVPMVATVQGQN</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV, VPMVATVQGQNLKYQ</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV, AQGDDDVWTSGSDSD</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV, SSATACTSGVMTRGR</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV, PKRRRHRQDALPGPC</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2, FVSNGTHWF</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CMV, IPSINVHHY</td>\n      <td>LUMC</td>\n      <td>Custom-made</td>\n      <td>1 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti-human CCR7 (BV711)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#563712 RRID:AB_2738386</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD137 (APC)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#550890 RRID:AB_398477</td>\n      <td>FC (1:75)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD14 (FITC)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#555397 RRID:AB_395798</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD154 (Pacific Blue)</td>\n      <td>Biolegend</td>\n      <td>Cat.#310820 RRID:AB_830699</td>\n      <td>FC (1:300)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD19 (FITC)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#555412 RRID:AB_395812</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD4 (PE-Cy7)</td>\n      <td>Beckham Coulter</td>\n      <td>Cat.#737660 RRID:AB_2922769</td>\n      <td>FC (1:300)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD4 (FITC)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#555346 RRID:AB_395751</td>\n      <td>FC (1:30)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD4 (BV510)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#562970 RRID:AB_2744424</td>\n      <td>FC (1:300)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD45RA (PE-Texas-Red)</td>\n      <td>Invitrogen</td>\n      <td>Cat.#MHCD45RA17 RRID:AB_10372222</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD8 (APC-H7)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#560179 RRID:AB_1645481</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD8 (PE-Cy7)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#557746 RRID:AB_396852</td>\n      <td>FC (1:320)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD8 (Pacific Blue)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#558207 RRID:AB_397058</td>\n      <td>FC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human IFN-\u03b3 (Alexa-Fluor 700)</td>\n      <td>Sony</td>\n      <td>Cat.#3112600 RRID:AB_2922770</td>\n      <td>FC (1:120)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human IFN-\u03b3 (BV711)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#564039 RRID:AB_2738557</td>\n      <td>FC (1:300)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human HLA-DR (Alexa-Fluor 700)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#560743 RRID:AB_1727526</td>\n      <td>FC (1:150)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-human CD38 (BV605)</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#740401 RRID:AB_2740131</td>\n      <td>FC (1:120)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti-mouse CD19 (Mouse)</td>\n      <td>Biolegend</td>\n      <td>Cat.#557399 RRID:AB_396682</td>\n      <td>FC (1:250)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Zombie-Red</td>\n      <td>Biolegend</td>\n      <td>Cat.#423109</td>\n      <td>FC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Zombie-Aqua</td>\n      <td>BD Biosciences</td>\n      <td>Cat.#423101</td>\n      <td>FC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Brilliant Violet Staining Buffer Plus</td>\n      <td>Beckham Coulter</td>\n      <td>Cat.#566385</td>\n      <td>FC (1:10)</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>K-562</td>\n      <td>ATCC</td>\n      <td>CCL-342</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Calu-3</td>\n      <td>ATCC</td>\n      <td>HTB-55</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>PBMCs from 67 healthy donors</td>\n      <td>LUMC Biobank</td>\n      <td></td>\n      <td>Cryo-preserved before May 2019</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>PBMCs from critical COVID-19 patient (KDH)</td>\n      <td>LUMC BEAT-COVID consortium</td>\n      <td>Clinical trial #: NL8589</td>\n      <td>Male, 61 years, 31 days ICU</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>PBMCs from critical COVID-19 patient (CHZ)</td>\n      <td>LUMC BEAT-COVID consortium</td>\n      <td>Clinical trial #: NL8589</td>\n      <td>Male, 76 years, 40 days ICU</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>PBMCs from critical COVID-19 patient (CLS)</td>\n      <td>LUMC BEAT-COVID consortium</td>\n      <td>Clinical trial #: NL8589</td>\n      <td>Male, 71 years, 107 days ICU</td>\n    </tr>\n  </tbody>\n</table>\n\n### Study samples and cell lines\n\nBio-banked PBMCs were cryopreserved after informed consent from the respective donors in accordance with the declaration of Helsinki. The samples from COVID-19 patients were part of a trial (NL8589) registered in the Dutch Trial Registry and approved by Medical Ethical Committee Leiden-Den Haag-Delft (NL73740.058.20). All three patients suffered from critical COVID-19 as categorized according to WHO guidelines (WHO ref#: WHO/2019-nCoV/clinical/2020.4; see Supplementary file 1 for patient details). Bio-banked PBMCs from CMV-seropositive (N=28) and CMV-seronegative (N=39) donors that were frozen down before May 2019 were randomly selected to assure that the samples are SARS-CoV-2 na\u00efve and represent the European population (Supplementary file 2). Prior to cryopreservation, PBMCs were isolated from fresh whole blood using Ficoll-Isopaque. PBMCs were thawed in culture medium consisting of Iscove Modified Dulbecco Medium (IMDM; Lonza, Basel, Switzerland) supplemented with 10% heat-inactivated fetal bovine serum (FBS; Sigma-Aldrich, Saint Louis, MO, USA), 2.7 mM L-glutamine (Lonza), 100 U/mL penicillin (Lonza), and 100 \u00b5g/mL streptomycin (Lonza; 1% p/s), and subsequently treated with 1.33 mg/mL DNAse to minimize cell clumping. K562 cells (CCL-243; American Type Culture Collection [ATCC]) and Calu-3 lung carcinoma cells (HTB-55; ATCC) were regularly checked for the presence of mycoplasma. K562s were regularly checked to ensure (lack of) HLA expression, and calu-3 cells were authenticated by STR sequencing.\n\n### Intracellular cytokine staining assay\n\nThawed PBMCs were stimulated in culture medium supplemented with 1 \u00b5g/mL SARS-CoV-2 peptides pools covering the entire spike (Miltenyi, Keulen, Germany), membrane (Miltenyi), or nucleocapsid (Miltenyi) proteins for 1 hr at 37\u00b0C + 5% CO2. The peptides of the spike gene were by the manufacturer divided over an \u2018S,\u2019 \u2018S1,\u2019 and \u2018S+\u2019 pool, wherein \u2018S\u2019 covers the most immunogenic parts of the gene, \u2018S1\u2019 mostly covers S1 domain, and \u2018S+\u2019 mostly covers S2 domain. An additional peptide pool containing 11 amino acid overlapping 15-mer peptides covering the pp65 antigen from CMV (JPT Peptide Technologies) was included (see Supplementary file 3 for peptide details). After 1 hr stimulation, 5 \u00b5g/mL Brefeldin A (Sigma-Aldrich) was added, and the samples were incubated for an additional 15 hr at 37\u00b0C + 5% CO2. The samples were subsequently stained with the viability dye Zombie-Red (Biolegend, San Diego, CA, USA) for 25 min at room temperature (RT) after which the cells were washed in PBS containing 0.8 mg/mL albumin (fluorescent activated cell sorting [FACS] buffer) and stained with antibodies against CD4 and CD8 in FACS buffer for 30 min at 4\u00b0C. Cells were washed in PBS and fixed in 1% paraformaldehyde for 8 min at RT followed by a wash and a permeabilization step for 30 min at 4\u00b0C in FACS buffer supplemented with 1% p/s and 0.1% saponin (permeabilization buffer). After permeabilization, the cells were stained using an antibody cocktail directed against CD14, CD19, CD137, CD154, and IFN-\u03b3 in permeabilization buffer (see Supplementary file 4 for antibody details) for 30 min at 4\u00b0C. After staining, the samples were washed, resuspended in permeabilization buffer, and measured on a 3-laser aurora (Cytek Biosciences, Fremont, CA, USA).\n\n### Isolation of SARS-CoV-2-specific T cells\n\nThawed PBMCs were stimulated for 16 hr at 37\u00b0C + 5% CO2 using 1 \u00b5g/mL of spike (Miltenyi) or membrane (Miltenyi) peptide pool in culture medium (see Supplementary file 3 for peptide details). After stimulation, the cells were washed and stained with antibodies directed against CD4, CD8, and CD137 in phenol-red free IMDM (Gibco, Waltham, MA, USA) containing 2% FBS (Sigma-Aldrich), 1% p/s (Lonza; sort medium; see Supplementary file 4 for antibody details) for 30 min at 4\u00b0C. The cells were subsequently washed and resuspended in sort medium. CD4+ or CD8+ and CD137+ cells were single-cell sorted using an Aria III cell sorter (BD Biosciences, Franklin Lakes, NJ, USA) into a 96-well round-bottom plate containing 1\u00d7105 35-Gy-irradiated PBMCs, 50-Gy-irradiated EBV-LCL-JYs, and 0.8 \u00b5g/mL phytohemagglutinin (PHA) (Thermo Fisher, Waltham, MA, USA) in 100 \u00b5L T cell medium (TCM) consisting of IMDM (Lonza) supplemented with 2.7 mM L-glutamine (Lonza), 100 U/mL penicillin (Lonza), 100 \u00b5g/mL streptomycin (Lonza), 5% FBS (Sigma-Aldrich), 5% human serum (Sanquin, Amsterdam, The Netherlands), and 100 IU/mL recombinant human IL-2 (Novartis, Basel, Switzerland). Sorted T cells were clonally expanded to generate T cell clones. T cell clones were restimulated between day 14 and day 20 post stimulation using PHA, PBMCs, and EBV-LCL-JYs as described above and used for assays between day 7 and day 20 post stimulation.\n\n### Co-culture assays\n\nTo test peptide and HLA restriction, T cell clones were washed and co-cultured with stimulator cells in a 1:6 effector to stimulator ratio. Stimulator cells consisted of either autologous or HLA-matched EBV-LCLs or retrovirally transduced K562s. K562 were transduced with a pZLRS or MP71 vector containing a HLA gene of interested linked to a marker gene, and transduction was performed as previously described (Jahn et al., 2015). Cells were enriched for marker gene expression using magnetic activated cell sorting (MACS; Miltenyi) or FACS on an Aria III cell sorter (BD Biosciences). Stimulator cells were loaded with peptides through pre-incubation for 30 min at 37\u00b0C with 0.01\u20131 \u00b5M peptide (Supplementary file 3 for peptide details). To identify the pp65 epitope of the CD4+ T cell clones, a co-culture assay was performed using a pp65 peptide library. The pp65 library consisted of 15-mere peptides with 11 amino acid overlap, spanning the whole pp65 gene. The peptides are divided into matrix pools with horizontal and vertical sub pools so that each pool has an unique peptide combination, and each peptide is in one horizontal and one vertical sub pool. To identify the HLA-restriction of the CD4+ T cell clones, the peptides were not washed away during the co-culture incubation period, and HLA class II was knocked out in the T cell clones as previously described (Morton et al., 2020). However, the protocol was adapted to knock-out Class II Major histocompatibility complex transactivator (CIITA) by designing two reverse guide RNAs: 5\u2019-AGTCGCTCACTGGTCCCACTAGG-3\u2019 and 5\u2019-CCGTGGACAGTGAATCCACTGGG-3\u2019 (Integrated DNA technologies Inc, Coralville, IA, USA). Co-culture assays were incubated overnight, and secreted IFN-\u03b3 was measured as an indicator of T cell activity by ELISA (Diaclone, Besan\u00e7on, France) as described by the manufacturer.\n\nTo identify the peptide recognition signature of the CD8 T cell clones, a co-culture assay was performed using a nonamer CPL (Bijen et al., 2018). The 9-mer CPL scan contains 180 peptide pools with each pool consisting of a mixture of peptides with one naturally-occurring amino acid fixed at one position (Wooldridge et al., 2010). Co-culture assay was performed as described above with small changes; 2\u00d7104 K562 transduced with HLA-B*35:01 was pre-incubated with 100 \u00b5M CPL peptides for 1 hr at 37\u00b0C before 5\u00d7103 T cell clones were added. After overnight incubation, secreted IFN-\u03b3 was measured by an IFN-\u03b3-ELISA (Diaclone), and results were analyzed using WSBC PI CPL for viruses (Szomolay et al., 2016; Wooldridge, 2013). Identified peptides following peptide libraries or CPL were analyzed for predicted binding to HLA-B*35:01 using netMHC 4.0 (Andreatta and Nielsen, 2016). Alternatively, peptide recognition by T cell clones was measured using intracellular cytokine staining (ICS) assay as described above.\n\n### Peptide-HLA modeling\n\nThe binding of FVS in HLA-B*35:01 was modeled based on the solved crystal structure of the HLA-B*35:01-IPS (Pellicci et al., 2014). Each residue of the IPS peptide was mutated to their corresponding residues in the FVS peptide using the mutagenesis wizard in PyMOL, 2015. The residues were mutated into the most favorable rotamer to avoid steric clashes. No major steric clashes with the peptide or HLA were observed.\n\n### Tetramer staining\n\n1\u20132\u00d7106 PBMCs or 5\u00d7104 T cell clones were incubated with in-house generated, PE- or APC-conjugated tetramers for 30 min at RT (Hombrink et al., 2013). After tetramer incubation, the cells were washed and incubated with an antibody mix targeting CD4, CD8, CD45RA, CCR7, CD38, and/or HLA-DR. After incubation, cells were washed and resuspended in FACS buffer and immediately measured on a 3-laser Aurora (Cytek Biosciences).\n\n### TCR sequencing\n\nPBMCs were thawed and 10\u201350\u00d7106 cells directly stained with PE-conjugated HLA-B*35:01-FVS or HLA-B*35:01-IPS tetramers. Tetramers were labeled to beads using anti-PE MicroBeads (Miltenyi) and enriched through magnetic-activated cell sorting (Miltenyi). The tetramer-enriched cells were washed and incubated with an antibody cocktail targeting CD4 and CD8 (see Supplementary file 4 for antibody details) in sort medium. Stained samples were washed in sort medium and bulk-sorted on an Aria III cell sorter (BD Biosciences; see Figure 5\u2014figure supplement 1 for a gating example). RNA isolation and TCR sequencing were performed as previously described (Roukens et al., 2022). In short, cells were directly collected in lysis buffer for RNA isolation using the ReliaPrep RNA cell Miniprep system (Promega, Madison, WI, USA). The total RNA yield of each sample was converted to cDNA using a template-switch oligo primer (Eurogentec, Seraing, Belgium), RNAsin (Promega), and SMARTScribe reverse transcriptase (Takara Bio, Kusatsu, Japan; Koning et al., 2017). cDNA was pre-amplified via an IS region in the Oligo dT primer prior to barcoding on samples containing cDNA from 500 or fewer cells (Picelli et al., 2013). Barcoded TCR PCR product was generated in two rounds of PCR: in the first PCR reaction, TRA and TRB product was generated in separate PCR reactions using Phusion Flash (Thermo Fisher Scientific), Smartseq2modified PCR primer (Eurogentec), and TRAC or TRBC1/2-specific primers (Eurogentec; see Supplementary file 5 for primer list). The PCR product was then purified using the Wizard SV 96 PCR Clean-Up System (Promega) and barcoded in a second PCR using two-sided six-nucleotide barcoded primers to discriminate between TCRs of different T cell populations. PCR products of different T cell populations were pooled, after which TCR sequences were identified by NovaSeq (GenomeScan, Leiden, The Netherlands).\n\n### SARS-CoV-2 infection assay\n\nCalu-3 lung carcinoma cells (HTB-55; ATCC) were cultured in Eagle\u2019s minimum essential medium (Lonza), supplemented with 9% fetal calf serum (CapriCorn Scientific, USA), 1% NEAA (Sigma-Aldrich), 2 mM L-glutamine (Sigma-Aldrich), 1 mM sodium pyruvate (Sigma-Aldrich), and 100 U/ml of penicillin/streptomycin (P/S; Sigma-Aldrich). Calu-3 cells were retrovirally transduced with a pLZRS vector containing the HLA-B*35:01 molecule linked via an internal ribosome entry site sequence to mouse CD19, and transduction was performed as previously described (Jahn et al., 2015). Mouse CD19 was used as a marker gene to enrich for successfully transduced cells by adding antibodies directed against mouse CD19 and enriching for stained cells by MACS (Miltenyi) followed by FACS on an Aria III cell sorter (BD Biosciences; see Supplementary file 4 for antibody details). For the infection assay, Calu-3 cells were seeded in 96-well cell culture plates at a density of 3\u00d7104 cells per well in 100 \u03bcL culture medium. Infections were done with clinical isolate SARS-CoV-2/Leiden-0008, which was isolated from a nasopharyngeal sample collected at the LUMC during the first wave of the Corona pandemic in March 2020 (GenBack: MT705206.1). Cells were infected with SARS-CoV-2 at a MOI of 0.05 or 0.5 in 50 \u03bcL infection medium. After 1.5 hr, cells were washed three times with medium, and 100 \u03bcL of medium was added. At 6 hr post infection (hpi), medium was removed again, and 100 \u03bcL of TCM with 3\u00d7105 T cells per well was added. At 24 hpi, cells were harvested to collect intracellular RNA by lysing the cells in 100 \u03bcL GITC reagent (3 M GITC, 2% sarkosyl, 20 mM Tris, and 20 mM EDTA) per well. Intracellular RNA was isolated using magnetic beads, and viral RNA was quantified by internally controlled multiplex TaqMan RT-quantitative PCR as described previously (Salgado-Benvindo et al., 2020).\n\n### Statistics\n\nFlow cytometry data was unmixed using Spectroflo (Cytek Biosciences) and analyzed using FlowJo v10.7.1. (BD Biosciences) to set gates on the samples based on the DMSO negative control in ICS assays or adapted to positive control for tetramer staining (see Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1, Figure 4\u2014figure supplement 1 and Figure 5\u2014figure supplement 1 for a gating example). Samples were excluded from the analysis if less than 10,000 events in CD4+ or CD8+ gate were measured or if after further testing they appeared not to be \u03b1\u03b2 T cells. For the SARS-CoV-2 infection assays, experiments were excluded from the analysis if the positive control had higher SARS-CoV-2 intracellular RNA copies compared to no T cell condition. Statistical analysis and generation of figures were conducted using GraphPad Prism 9.0.1 (GraphPad Software). Data was tested for significance using an one-way ANOVA with p-values below 0.05 considered as significant. p-Values are categorized in the figures as: ns = not significant; *p<0.05; **p<0.01; or ***p<0.001.\n\nTCR sequence data was analysed using MiXCR software (v3.0.13) to determine the V\u03b1 and V\u03b2 family and CDR3 regions using annotation of the IMGT library (http://www.imgt.org; v6) (Bolotin et al., 2015). CDR3 regions were analysed in RStudio and CDR3 sequences that were non-functional or had \u226450 reads that were excluded from the analysis.\n",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "17620383-18a1-4ec9-a9e9-31afbeac69fc",
+      "submission_id": "24600bfe-af9d-45ab-9b60-e6bd2240dc4a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gabrielle T Belz, https://ror.org/00rqy9422 University of Queensland Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82050.sa0](https://doi.org/10.7554/eLife.82050.sa0)\n\nThis study examines the possibility that high incidence of SARS-CoV2 reactive T cells occur in apparently COVID 19 naive individuals. The study sheds new light on how unrelated virus-specific T cells might be involved in generating immunity to SARS-CoV-2 and is an elegantly performed study.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Gabrielle T Belz, https://ror.org/00rqy9422 University of Queensland Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82050.sa1](https://doi.org/10.7554/eLife.82050.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"SARS-CoV-2-specific CD4+ and CD8+ T cell responses can originate from cross-reactive CMV-specific T cells\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Satyajit Rath as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Clarification of experimental explanations as guided by the reviewers (esp related to Reviewer 3).\n\n2) Improvement of clarity of language/expression (esp related to Reviewer 2).\n\nReviewer #1 (Recommendations for the authors):\n\nThis is a very nice story.\n\nMultiple potential epitopes were examined in SARS-COV2 while in CMV, only the most immunogenic antigen, pp65, was examined. The rationale for this selection is not entirely clear.\n\nThe presence of IPS/FVS cross-reactive T cells were examined in severe COVID patients. The patient cohort is very small and while 2/2 patients showed evidence of these cells, it is difficult to interpret given the limited dataset. Has this feature been examined in a larger cohort of patients?\n\nFigures: The data in a number of the flow cytometry plots is almost impossible to read given the very small font size. The figures would be enhanced by increasing the font size of all percentages of the populations of interest.\n\nReviewer #2 (Recommendations for the authors):\n\nAbstract: it should be made clear that the crossreactive T cells reduced viral spreading at lower MOIs.\n\nIntroduction, line 55: there are now some papers showing that mutations can result in T-cell escape so it would be good to reference these for completion.\n\nIntroduction, line 60: it may read better if this sentence read as follows: 'This finding indicates that T cells which were initially primed against other pathogens are able to cross-recognize SARS-CoV-2 antigen'.\n\nIntroduction, line 63: The sentence which starts 'Highly homologous\u2026..' would benefit from editing as it is confusing to use the word 'sequences' twice without specifying whether this refers to DNA, RNA, peptides etc\u2026\n\nIntroduction, line 78: suggest changing 'a potential trigger' to 'the initial trigger'.\n\nIntroduction, line 84: suggest using 'trigger' instead of 'potential source'.\n\nIntroduction, line 88: can you clarify the previously proposed role for these cross-reactive T cells?\n\nIntroduction, line 89: change 'indicated' into 'indicate', change 'COVID-19' into 'COVID-19 immunity'.\n\nIntroduction, line 91: change 'Taking' into 'Taken'.\n\nIntroduction, line 91-92: suggest deleting 'a memory response against CMV' and replacing with 'the CMV specific memory population'.\n\nIntroduction, line 98: suggest changing 'in' to 'presented by'.\n\nIntroduction, line 108: suggest changing the end of the sentence to 'preventing SARS-CoV-2 infection or reducing the severity of COVID-19'.\n\nResults, line 123: the text states that no marked increase in CD4 T cell responses were observed after stimulation with spike in CMV+ donors. However, Figure 1C shows 3 circles depicting a CD4 T cell response to S in CMV+ donors. Please check if this is correct and alter either the text or figure accordingly.\n\nResults, line 124: the text states that 7 CMV+ donors showed CD4 T cell responses to M. However, only three circles are visible in Figure 1C depicting CD4 T cell responses against M in CMV+ donors. Please check is this correct and if necessary correct figure or text accordingly.\n\nResults, line: 174: need to provide an explanation for how the pp65 mapping described in Figure S2B was performed e.g. what do the H and V peptide pools refer to?\n\nResults, line 180: why does the membrane protein epitope identity remain unidentified?\n\nResults, general comment: it would be good to clarify why a different approach to CMV epitope mapping was taken for CD4 versus CD8 T cells?\n\nResults, line 229: clarify how these two residues are similar.\n\nResults, line 278: clarify how it is possible to tetramer sort cells if they are below the background level.\n\nResults, line 321: need to state 'MOI of 0.05' at the end of this sentence.\n\nData generated using acute infection samples: more details need to be provided for these samples (e.g. some basic information such as age, gender, time post PCR+ test, symptoms etc.). The text states that IPS/FVS specific T cells showed lower expression of CD38 and HLA-DR than IPS specific T cells. This seems to be true for donor CHZ but not for donor KDH \u2013 please check and edit as necessary. As only two samples were studied then these data should not be overinterpreted e.g. unless more donors are added to this analysis then I would not suggest referring to these data in the abstract. I would also consider deleting or editing the end of the sentence at the end of the first paragraph in the Discussion section.\n\nMethods\n\nLine 472: include more details of the S, S1 and S+ pools used in this study.\n\nFigures\n\nFigure 1A: would be good to label this so that it is clear that it refers to CD4 T cells.\n\nFigure 1B: would be good to label this so that it is clear that it refers to CD8 T cells.\n\nFigure 1C and 1E: some stats comparing CMV+ versus CMV- donors might be useful here (either in the figure or in the legend).\n\nFigure 2A and B: please check stats here as I would usually expect this test to be used for multiple repeats using the same clone (rather than differing numbers of repeats with different clones).\n\nFigure 5, legend, line 344: was does 'were taken along' mean?\n\nFigure 5, legend, line 344: insert 'at' before '24'.\n\nFigure 5, legend, line 349: which peptide pool was used here?\n\nSupp Figures\n\nSupp Figure 3: change label showing the CPL data to panel 'D'.\n\nSupp Figure 3E: why are there different affinity values shown for peptides IPSINVHHY and LEQIKTHWL?\n\nSupp Figure 4: make it clear in the title of this figure that this is structural modelling.\n",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7a9fe16c-bba0-43f4-b228-c7ae0229c06a",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C1",
+      "claim": "Detection of SARS-CoV-2 specific CD4+ and CD8+ T cells in SARS-CoV-2-unexposed donors has been explained by the presence of T cells primed by other coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) specific CD4+ and CD8+ T cells in SARS-CoV-2-unexposed donors has been explained by the presence of T cells primed by other coronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to existing literature in the introduction section discussing pre-existing SARS-CoV-2-specific T cells.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "99555a8e-2215-44e8-97f4-8cf77ee2a880",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C2",
+      "claim": "Frequencies of SARS-CoV-2-specific T cells were higher in CMV-seropositive donors compared to CMV-seronegative donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of pre-pandemic cryo-preserved peripheral blood mononuclear cells (PBMCs) with SARS-CoV-2 peptides revealed that frequencies of SARS-CoV-2-specific T cells were higher in CMV-seropositive donors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from peptide stimulation assays shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "8a29ad46-6551-4953-a35e-dcf91ddd6820",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C3",
+      "claim": "Membrane-specific CD4+ T cells originate from cross-reactive CMV-specific T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of these T cells demonstrated that membrane-specific CD4+ and spike-specific CD8+ T cells originate from cross-reactive CMV-specific T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing T cell clones reactive to both SARS-CoV-2 membrane and CMV pp65 peptides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "4c8b1cfc-792d-4ac1-a27a-425841384908",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C4",
+      "claim": "Spike-specific CD8+ T cells originate from cross-reactive CMV-specific T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of these T cells demonstrated that membrane-specific CD4+ and spike-specific CD8+ T cells originate from cross-reactive CMV-specific T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing T cell clones reactive to both SARS-CoV-2 spike and CMV pp65 peptides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "4889d5ea-e32c-4ec5-ac85-d8f9fe3dc628",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C5",
+      "claim": "Spike-specific CD8+ T cells recognize SARS-CoV-2 spike peptide FVSNGTHWF (FVS) presented by HLA-B*35:01.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike-specific CD8+ T cells recognize SARS-CoV-2 spike peptide FVSNGTHWF (FVS) and dissimilar CMV pp65 peptide IPSINVHHY (IPS) presented by HLA-B*35:01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from peptide library screening and functional assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "f77ad053-2370-4473-adc4-1cea77cb17b0",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C6",
+      "claim": "Spike-specific CD8+ T cells recognize CMV pp65 peptide IPSINVHHY (IPS) presented by HLA-B*35:01.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike-specific CD8+ T cells recognize SARS-CoV-2 spike peptide FVSNGTHWF (FVS) and dissimilar CMV pp65 peptide IPSINVHHY (IPS) presented by HLA-B*35:01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from CPL assays and functional assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "11e729b8-ac3b-42dc-8ee3-603f8bcbeaa6",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C7",
+      "claim": "Dual IPS/FVS-reactive CD8+ T cells were found in multiple donors.",
+      "claim_type": "EXPLICIT",
+      "source": "These dual IPS/FVS-reactive CD8+ T cells were found in multiple donors as well as severe COVID-19 patients and shared a common T cell receptor (TCR), illustrating that IPS/FVS-cross-reactivity is caused by a public TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by tetramer staining data from multiple donors shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "5ce3a738-b3e5-4d46-bd38-353635d87202",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C8",
+      "claim": "Dual IPS/FVS-reactive CD8+ T cells were found in severe COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "These dual IPS/FVS-reactive CD8+ T cells were found in multiple donors as well as severe COVID-19 patients and shared a common T cell receptor (TCR), illustrating that IPS/FVS-cross-reactivity is caused by a public TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by tetramer staining data from COVID-19 patients shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "83fccd21-7c47-4389-be28-ec6d0704d292",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C9",
+      "claim": "IPS/FVS-reactive CD8+ T cells share a common T cell receptor (TCR).",
+      "claim_type": "EXPLICIT",
+      "source": "These dual IPS/FVS-reactive CD8+ T cells were found in multiple donors as well as severe COVID-19 patients and shared a common T cell receptor (TCR), illustrating that IPS/FVS-cross-reactivity is caused by a public TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TCR sequencing data showing identical CDR3 sequences across multiple donors in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "3d69df14-ddd2-4d64-832a-a0df26d5712b",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C10",
+      "claim": "IPS/FVS-cross-reactivity is caused by a public TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "These dual IPS/FVS-reactive CD8+ T cells were found in multiple donors as well as severe COVID-19 patients and shared a common T cell receptor (TCR), illustrating that IPS/FVS-cross-reactivity is caused by a public TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TCR sequencing data showing identical CDR3 sequences across multiple donors in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "85d0c82c-e5e4-4067-be98-494301f789f8",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C11",
+      "claim": "CMV-specific T cells cross-react with SARS-CoV-2, despite low sequence homology between the two viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, CMV-specific T cells cross-react with SARS-CoV-2, despite low sequence homology between the two viruses, and may contribute to the pre-existing immunity against SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing cross-reactivity between dissimilar peptides IPS and FVS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "8f8cd12d-33d5-4a43-811a-3e9a7d9719cc",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C12",
+      "claim": "CMV-specific T cells may contribute to the pre-existing immunity against SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, CMV-specific T cells cross-react with SARS-CoV-2, despite low sequence homology between the two viruses, and may contribute to the pre-existing immunity against SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the detection of cross-reactive T cells in unexposed donors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "566231c2-a51a-4bb0-b68b-f5a5e694cb57",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C13",
+      "claim": "CD4+ and CD8+ T cells are important components of the adaptive immune system during SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4+ and CD8+ T cells are important components of the adaptive immune system as CD4+ T cells promote antibody production by B cells and help cytotoxic CD8+ T cells to mediate cytotoxic lysis of SARS-CoV-2 infected cells (Sette and Crotty, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Sette and Crotty, 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "fd2af754-599a-4542-a347-64c4ed0143a3",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C14",
+      "claim": "An effective T cell response has been associated with less severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst immunity is commonly measured solely based on antibody titers, research into coronavirus disease 2019 (COVID-19) pathophysiology and vaccination effectiveness has associated an effective T cell response with less severe COVID-19 (Bange et al., 2021; Bertoletti et al., 2021; Liao et al., 2020; Rydyznski Moderbacher et al., 2020; Sekine et al., 2020; Sette and Crotty, 2021; Tan et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "4d78435b-8e07-4dc5-a09a-1c1cdde7050e",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C15",
+      "claim": "SARS-CoV-2-specific T cell responses have been shown to be present in most individuals 6 months after infection or vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, SARS-CoV-2-specific T cell responses have been shown to be present in most individuals 6 months after infection or vaccination and remain largely unaffected by emerging variants of concern, illustrating their importance in generating durable immune responses (Chiuppesi et al., 2022; Choi et al., 2022; Gao et al., 2022; GeurtsvanKessel et al., 2022; Jung et al., 2022; Keeton et al., 2022; Liu et al., 2022; Redd et al., 2022; Tarke et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "ea501902-e2eb-4660-884f-34b330b475f3",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C16",
+      "claim": "SARS-CoV-2-specific T cell responses remain largely unaffected by emerging variants of concern.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, SARS-CoV-2-specific T cell responses have been shown to be present in most individuals 6 months after infection or vaccination and remain largely unaffected by emerging variants of concern, illustrating their importance in generating durable immune responses (Chiuppesi et al., 2022; Choi et al., 2022; Gao et al., 2022; GeurtsvanKessel et al., 2022; Jung et al., 2022; Keeton et al., 2022; Liu et al., 2022; Redd et al., 2022; Tarke et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "97b48069-e862-4350-903e-c79be2929577",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C17",
+      "claim": "SARS-CoV-2-specific T cells have been identified in unexposed individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides de novo SARS-CoV-2-specific T cell responses in infected individuals, SARS-CoV-2-specific T cells have also been identified in unexposed individuals (Grifoni et al., 2020; Le Bert et al., 2020; Mateus et al., 2020; Nelde et al., 2021; Weiskopf et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "8cf77782-3046-4197-b8d5-d0d8c9e4cacb",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C18",
+      "claim": "Most research on pre-existing SARS-CoV-2-specific T cells has focused on cross-reactive T cells potentially primed by other human coronaviruses (HCoVs).",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, most research has focused on cross-reactive T cells that are potentially primed by other human coronaviruses (HCoVs) since they share around 30% amino acid sequence homology with SARS-CoV-2 (Bacher et al., 2020; Braun et al., 2020; Johansson et al., 2021; Kundu et al., 2022; Le Bert et al., 2020; Loyal et al., 2021; Mateus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "e1318b40-de0e-4cf4-9858-e8d05c3a994b",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C19",
+      "claim": "Other human coronaviruses share around 30% amino acid sequence homology with SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, most research has focused on cross-reactive T cells that are potentially primed by other human coronaviruses (HCoVs) since they share around 30% amino acid sequence homology with SARS-CoV-2 (Bacher et al., 2020; Braun et al., 2020; Johansson et al., 2021; Kundu et al., 2022; Le Bert et al., 2020; Loyal et al., 2021; Mateus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "ebf2a55a-9e4c-4718-a975-7be7e0da997d",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C20",
+      "claim": "It has been postulated that SARS-CoV-2-specific T cells in unexposed individuals could be primed by non-HCoVs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has been postulated that SARS-CoV-2-specific T cells in unexposed individuals could also conceivably be primed by other, non-HCoVs (Le Bert et al., 2020; Peng et al., 2020; Stervbo et al., 2020; Tan et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "5a9b797b-c51d-49f1-99c6-43958eb2a19c",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C21",
+      "claim": "Cross-reactivity between two epitopes with relatively low sequence homology has been demonstrated in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, previous studies, although limited, have demonstrated the occurrence of cross-reactivity between two epitopes with relatively low sequence homology (Bijen et al., 2018; Cameron et al., 2013; Clute et al., 2005; Cornberg et al., 2010; Riley et al., 2018; Su and Davis, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "87f7da8e-a5da-462d-bd7b-65bb12066469",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C22",
+      "claim": "Heterologous immunity with low sequence homology is poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "This form of heterologous immunity is poorly understood, and therefore, predicting such cross-reactivity remains a challenge (Lee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lee et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "8c118f2e-32eb-4fbe-8f7c-e0891ca57ecc",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C23",
+      "claim": "Pre-pandemic SARS-CoV-2-specific T cells are present in a relatively high proportion of the population, independent of geographical location.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-pandemic SARS-CoV-2-specific T cells are reportedly present in a relatively high proportion of the population, independent of geographical location, indicating that a highly prevalent pathogen could be the initial trigger of these cross-reactive T cells (Braun et al., 2020; Grifoni et al., 2020; Le Bert et al., 2020; Mateus et al., 2020; Meckiff et al., 2020; Nelde et al., 2021; Sekine et al., 2020; Weiskopf et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "35e40162-3b5d-47a9-be81-c84359042238",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C24",
+      "claim": "CMV is a highly prevalent pathogen that usually induces high T cell frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytomegalovirus (CMV) is a highly prevalent pathogen and usually induces high T cell frequencies, making CMV a potential trigger for cross-reactive SARS-CoV-2-specific T cells (Sylwester et al., 2005; Zuhair et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Sylwester et al., 2005 and Zuhair et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "4821a339-156f-4337-b5a2-c55a664c0f8b",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C25",
+      "claim": "SARS-CoV-2 cross-reactive CD8+ T cells were increased in CMV-seropositive donors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the finding that SARS-CoV-2 cross-reactive CD8+ T cells were increased in CMV-seropositive (CMV+) donors and that previous CMV infection has been associated with severe COVID-19 (Alanio et al., 2022; Jo et al., 2021; Weber et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "a8d6cdfa-4764-44d9-9093-85437a0556cc",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C26",
+      "claim": "Previous CMV infection has been associated with severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the finding that SARS-CoV-2 cross-reactive CD8+ T cells were increased in CMV-seropositive (CMV+) donors and that previous CMV infection has been associated with severe COVID-19 (Alanio et al., 2022; Jo et al., 2021; Weber et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "698a3600-2d62-4c01-b7e6-f9f0f03973ff",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C27",
+      "claim": "All CMV+ donors displayed a CD4+ and/or CD8+ T cell response upon stimulation with pp65.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, all CMV+ donors displayed a CD4+ and/or CD8+ T cell response upon stimulation with pp65 (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "1a2eb3c4-315a-4eb2-aad0-fcbfebc3e23b",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C28",
+      "claim": "Six donors in the CMV+ group displayed a CD4+ T cell response against the membrane peptide pool which was not observed in the CMV\u2212 group.",
+      "claim_type": "EXPLICIT",
+      "source": "However, six donors in the CMV+ group displayed a CD4+ T cell response against the membrane peptide pool which was not observed in the CMV\u2212 group (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "93a1daee-7971-496f-a2b7-ba0e8212c56e",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C29",
+      "claim": "CD4+ T cell response against the membrane pool was accompanied by a CD4+ T cell response against pp65.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CD4+ T cell response against the membrane pool was accompanied by a CD4+ T cell response against pp65 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "595e80c8-6715-4c28-b19a-ff3b38676af8",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C30",
+      "claim": "CD8+ T cell responses were detected against spike peptides in two CMV+ donors which were not detected in CMV\u2212 donors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CD8+ T cell responses were detected against spike peptides in two CMV+ donors which were not detected in CMV\u2212 donors (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "6e91bee9-72c3-4c85-9354-e1f79e71a119",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C31",
+      "claim": "Donors with a high CD8+ T cell response against SARS-CoV-2 spike peptides additionally displayed strong reactivity against pp65.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, donors with a high CD8+ T cell response against SARS-CoV-2 spike peptides additionally displayed strong reactivity against pp65 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "ae54435a-6449-490a-b312-50566b19182c",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C32",
+      "claim": "20 out of 27 screened T cell clones produced IFN-\u03b3 when stimulated with membrane peptide pool.",
+      "claim_type": "EXPLICIT",
+      "source": "After clonal expansion, 20 out of 27 screened T cell clones produced IFN-\u03b3 when stimulated with membrane peptide pool compared to no peptide stimulation (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as experimental data, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "38960d7c-7430-45d7-8ce4-e6966cca3d6a",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C33",
+      "claim": "T cell clones 4UGT5, 4UGT8, and 4UGT17 all express different TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "T cell clones 4UGT5, 4UGT8, and 4UGT17, all three expressing a different TCR, were used for further experiments (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCR sequencing data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "f67e71f4-a8d8-4453-92cc-193dbd796fb4",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C34",
+      "claim": "The CD4+ T cell clones were reactive against both SARS-CoV-2 membrane antigen and CMV pp65 when loaded on HLA-matched EBV-LCLs.",
+      "claim_type": "EXPLICIT",
+      "source": "As hypothesized, the T cell clones were reactive against both SARS-CoV-2 membrane antigen and CMV pp65 when loaded on HLA-matched EBV-lymphoblastoid cell lines (EBV-LCLs; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "546f0a90-4a28-4394-a407-d384a11fa5d3",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C35",
+      "claim": "IFN-\u03b3 production by the CD4+ T cell clones was significantly increased when stimulated with pp65 peptides compared to membrane peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IFN-\u03b3 production by the T cell clones was significantly increased when stimulated with pp65 peptides compared to membrane peptides, indicating higher avidity for CMV compared to SARS-CoV-2 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "a71c254f-34ae-40ff-adbe-95776477d08b",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C36",
+      "claim": "T cell clone 4UGT8 recognizes pp65 peptide AGILARNLVPM.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify which peptide in pp65 is recognized, reactivity of T cell clone 4UGT8 against a pp65 library was measured which resulted in recognition of three sub pools which contained peptide AGILARNLVPM (Figure 2\u2014figure supplement 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "f360d6f4-595d-47dc-be67-516bed901553",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C37",
+      "claim": "T cell clone 4UGT8 recognized both peptide pools and the AGI peptide only when presented in HLA-DRB3*02:02.",
+      "claim_type": "EXPLICIT",
+      "source": "T cell clone 4UGT8 recognized both peptide pools and the AGI peptide only when presented in HLA-DRB3*02:02 (Figure 2C and Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "77c6f1b9-a684-4979-9de9-b636cdcbd717",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C38",
+      "claim": "23 out of 28 CD8+ T cell clones produced IFN-\u03b3 upon spike peptide pool stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolated CD8+ T cell clones were screened for their reactivity with SARS-CoV-2 spike which showed that 23 out of the 28 T cell clones produced IFN-\u03b3 upon spike peptide pool stimulation (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as experimental data, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "f2dd7bba-d0f6-488e-8ed6-2505c4920490",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C39",
+      "claim": "All 23 spike-reactive CD8+ T cell clones expressed the same TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR sequencing revealed that all 23T cell clones expressed the same TCR (Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCR sequencing data shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "63dd8424-4132-44bf-b914-8cd348e4e4b0",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C40",
+      "claim": "T cell clone 8UTT6 recognized spike as well as pp65 peptide pool presented by K562 cells transduced with HLA-B*35:01.",
+      "claim_type": "EXPLICIT",
+      "source": "The results confirmed that T cell clone 8UTT6 recognized spike as well as pp65 peptide pool presented by K562 cells transduced with HLA-B*35:01 but not transduced with HLA-A*11:01 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "4400af41-91a2-4025-b2c2-79ce38110689",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C41",
+      "claim": "T cell clone 8UTT6 did not recognize spike or pp65 peptide pools when presented by K562 cells transduced with HLA-A*11:01.",
+      "claim_type": "EXPLICIT",
+      "source": "The results confirmed that T cell clone 8UTT6 recognized spike as well as pp65 peptide pool presented by K562 cells transduced with HLA-B*35:01 but not transduced with HLA-A*11:01 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "c1be7212-9a5b-4cb1-bd0e-be68e28d8156",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C42",
+      "claim": "The FVS and IPS peptides were recognized by clone 8UTT6.",
+      "claim_type": "EXPLICIT",
+      "source": "The FVS and IPS peptides were indeed recognized by clone 8UTT6 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "bcd18bed-37c7-4e00-85c8-8060bb1fc5d9",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C43",
+      "claim": "The IPS peptide was recognized with higher avidity compared to the FVS peptide by clone 8UTT6.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the IPS peptide was recognized with higher avidity compared to the FVS peptide by clone 8UTT6 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by peptide titration data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "847d267a-7a55-4842-bc75-24e166cbcab1",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C44",
+      "claim": "The same TCR\u03b2 chain was already described and demonstrated to be specific for IPS in HLA-B*35:01.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting these findings, the same TCR\u03b2 chain was already described and demonstrated to be specific for IPS in HLA-B*35:01 (Klarenbeek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Klarenbeek et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "deaec909-6b0e-4bae-8f7b-46fbb108502c",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C45",
+      "claim": "The two peptides IPS and FVS share two residues (P3-S and P7-H).",
+      "claim_type": "EXPLICIT",
+      "source": "The two peptides share two residues (P3-S and P7-H) and have two similar residues (P6-T/V and P9-F/Y) based on similar biochemical properties and size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural modeling analysis described in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "3aab914d-64b0-49d7-8d90-d3a7cdee466a",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C46",
+      "claim": "The two peptides IPS and FVS have two similar residues (P6-T/V and P9-F/Y) based on similar biochemical properties and size.",
+      "claim_type": "EXPLICIT",
+      "source": "The two peptides share two residues (P3-S and P7-H) and have two similar residues (P6-T/V and P9-F/Y) based on similar biochemical properties and size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural modeling analysis described in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "bd6c1082-c3c4-4e0c-9ae9-3de6d3b64b34",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C47",
+      "claim": "Not all T cells that bound to B*35/IPS-tetramer were able to bind to the B*35/FVS-tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Tetramer staining of PBMCs from donor UTT demonstrated that not all T cells that bound to B*35/IPS-tetramer were able to bind to the B*35/FVS-tetramer as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by tetramer staining data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "d237190d-e7c4-4acc-a214-fc1dbf20a356",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C48",
+      "claim": "All T cells that bound to B*35/FVS-tetramer were also binding to the B*35/IPS-tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all T cells that bound to B*35/FVS-tetramer were also binding to the B*35/IPS-tetramer (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tetramer staining data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "576d378c-bba8-487f-938a-a84b9bbd6053",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C49",
+      "claim": "IPS/FVS cross-reactivity is dictated by specific TCR sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that IPS/FVS cross-reactivity is dictated by specific TCR sequences which were further supported by the lack of binding to B*35/FVS-tetramer by an IPS-specific T cell clone with a different TCR (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tetramer staining data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "93de47df-2f06-484a-abae-b5e5d4a86d02",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C50",
+      "claim": "Nearly all CMV+ donors had IPS-specific T cells with frequencies above background level.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening of SARS-CoV-2-unexposed, CMV+, and HLA-B*35(:01) donors (N=37) showed that nearly all CMV+ donors had IPS-specific T cells with frequencies above background level, and interestingly, three of the analyzed donors (UTT, UBV, and SFW) presented with clearly detectable IPS/FVS-specific T cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tetramer staining data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "0bd2ad69-a7f3-4b32-97f3-9637e915c069",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C51",
+      "claim": "Three donors (UTT, UBV, and SFW) presented with clearly detectable IPS/FVS-specific T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening of SARS-CoV-2-unexposed, CMV+, and HLA-B*35(:01) donors (N=37) showed that nearly all CMV+ donors had IPS-specific T cells with frequencies above background level, and interestingly, three of the analyzed donors (UTT, UBV, and SFW) presented with clearly detectable IPS/FVS-specific T cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tetramer staining data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "3aaad878-4894-4ca0-b349-4962ff6c272d",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C52",
+      "claim": "IPS/FVS-specific T cells displayed an effector memory phenotype (CCR7\u2212CD45RA\u2212).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, IPS/FVS-specific T cells displayed an effector memory phenotype (CCR7\u2212CD45RA\u2212), confirming a memory repertoire origin and, interestingly, a less differentiated phenotype compared to IPS-specific T cells (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "032ee5c7-e3d9-4650-826d-ad12359dae5f",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C53",
+      "claim": "IPS/FVS-specific T cells have a less differentiated phenotype compared to IPS-specific T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, IPS/FVS-specific T cells displayed an effector memory phenotype (CCR7\u2212CD45RA\u2212), confirming a memory repertoire origin and, interestingly, a less differentiated phenotype compared to IPS-specific T cells (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "f09918a3-c401-44e9-be80-7dfee3a2a934",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C54",
+      "claim": "B*35/FVS-isolated T cells from all donors displayed amino acid identical dominant CDR3 of the \u03b1-chain, CAGNQGGKLIF.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, B*35/FVS-isolated T cells from all donors displayed amino acid identical dominant complementary-determining region 3 (CDR3) of the \u03b1-chain, CAGNQGGKLIF (CDR3\u03b1CAGNQG), and \u03b2-chain, CASSLALDEQFF (CDR3\u03b2CASSLA; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCR sequencing data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "68ff8d82-9aad-4c4a-9a7f-559b3ae32334",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C55",
+      "claim": "B*35/FVS-isolated T cells from all donors displayed amino acid identical dominant CDR3 of the \u03b2-chain, CASSLALDEQFF.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, B*35/FVS-isolated T cells from all donors displayed amino acid identical dominant complementary-determining region 3 (CDR3) of the \u03b1-chain, CAGNQGGKLIF (CDR3\u03b1CAGNQG), and \u03b2-chain, CASSLALDEQFF (CDR3\u03b2CASSLA; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCR sequencing data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "dbc4ac9f-f2a2-44c6-8a82-c1ca0f6292cb",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C56",
+      "claim": "Both CDR3\u03b1CAGNQG and CDR3\u03b2CASSLA were identified in all samples sorted on B*35/IPS-tetramer binding and shown to be among the most dominant TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CDR3\u03b1CAGNQG and CDR3\u03b2CASSLA were identified in all samples and shown to be among the most dominant TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TCR sequencing data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "78c7b32e-76e9-4d7d-9fae-416486b1188e",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C57",
+      "claim": "The public TCR was present in donor JZX which showed IPS/FVS-tetramer+ T cells below background level.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this was also observed in donor JZX which showed IPS/FVS-tetramer+ T cells below background level, indicating that in more than 3 out of 37 donors, this public TCR is present. (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCR sequencing data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "bc3c3bfb-df0e-4ed7-8fa6-4ab007acf52c",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C58",
+      "claim": "In more than 3 out of 37 donors, the public TCR is present.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this was also observed in donor JZX which showed IPS/FVS-tetramer+ T cells below background level, indicating that in more than 3 out of 37 donors, this public TCR is present. (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the detection of the public TCR in donor JZX.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "bdc0e05c-1310-4f20-b353-2d994b4b3b5e",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C59",
+      "claim": "IPS/FVS-specific T cells were able to recognize endogenously processed and presented peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, the reactivity of IPS/FVS-specific T cells against K562 transduced with the spike gene was measured which showed that the T cells were able to recognize endogenously processed and presented peptide (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "ab9258dc-9bf6-4fa8-ad49-80ba693b92c8",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C60",
+      "claim": "SARS-CoV-2 spike-specific CD8+ T cells from a SARS-CoV-2 vaccinated donor were able to reduce intracellular SARS-CoV-2 RNA copies at both 0.05 and 0.5 MOI 24 hr post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 spike-specific CD8+ T cells from a SARS-CoV-2 vaccinated donor were able to reduce intracellular SARS-CoV-2 RNA copies at both 0.05 and 0.5 multiplicity of infection (MOI) 24 hr post infection (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "7cbe99de-d910-4b54-907b-c4fee3565917",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C61",
+      "claim": "IPS/FVS-specific CD8+ T cells were able to reduce SARS-CoV-2 intracellular RNA copies in Calu-3 cells infected with 0.05 MOI.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IPS/FVS-specific CD8+ T cells were able to reduce SARS-CoV-2 intracellular RNA copies in Calu-3 cells infected with 0.05 MOI (MOI Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "ba481ed1-7bae-49b6-8b2d-23104cf69d04",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C62",
+      "claim": "Incubating IPS/FVS-specific CD8+ T cells with 0.5 MOI resulted in no difference in RNA copies compared to the no T cell control.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubating with 10-fold more virus (0.5 MOI) resulted in no difference in RNA copies compared to the no T cell control (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "66811357-d1db-4b72-b3c9-e77eb6920c36",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C63",
+      "claim": "IPS/FVS-cross-reactive T cells were detected in two out of two CMV+ HLA-B*35:01+ patients suffering from severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IPS/FVS-cross-reactive T cells were detected in two out of two CMV+ HLA-B*35:01+ patients suffering from severe COVID-19, whereas the cross-reactive T cells were detected in 3 out of 37 healthy CMV+ HLA-B*35:01+ donors (Figures 4C and 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tetramer staining data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "4851d4ae-57f5-4503-94db-2c276962a27a",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C64",
+      "claim": "The expression of CD38 and HLA-DR on IPS/FVS-specific T cells was lower compared to the SARS-CoV-2-specific CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of CD38 and HLA-DR was lower compared to the SARS-CoV-2-specific CD8+ T cells and not considerably increased compared to IPS-specific T cells that were not cross-reactive with FVS (Figure 6D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 6D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "81467d9f-65d5-49cc-bae0-0feb6813cf51",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C65",
+      "claim": "The expression of CD38 and HLA-DR on IPS/FVS-specific T cells was not considerably increased compared to IPS-specific T cells that were not cross-reactive with FVS.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of CD38 and HLA-DR was lower compared to the SARS-CoV-2-specific CD8+ T cells and not considerably increased compared to IPS-specific T cells that were not cross-reactive with FVS (Figure 6D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 6D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "f3a9a7d1-e91d-4ec0-b74f-ade476e6f85d",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C66",
+      "claim": "IPS/FVS-specific CD8+ T cells recognize SARS-CoV-2-infected cells and are able to limit SARS-CoV-2 replication at low virus titers.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that IPS/FVS-specific CD8+ T cells recognize SARS-CoV-2-infected cells and are able to limit SARS-CoV-2 replication at low virus titers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data from the infection assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "2667053c-d49b-4bf0-81f9-9f3a84de0ef0",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C67",
+      "claim": "IPS/FVS-specific T cells did not show an activated phenotype during acute severe SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, IPS/FVS-specific T cells did not show an activated phenotype during acute severe SARS-CoV-2 infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the flow cytometry data showing low expression of activation markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "9d974f85-bb93-4016-ae76-3dbf96362827",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C68",
+      "claim": "This is the first study to identify CMV-specific T cells that are cross reactive with SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge this is the first study to identify CMV-specific T cells that are cross reactive with SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "66481a9f-06cd-4c25-ab2d-af6097fe30eb",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C69",
+      "claim": "The cross-reactive CD4+ T cells recognized CMV pp65 epitope AGILARNLVPM in HLA-DRB3*02:02.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-reactive CD4+ T cells recognized CMV pp65 epitope AGILARNLVPM in HLA-DRB3*02:02 and were able to cross react with an as of yet unidentified, SARS-CoV-2 membrane epitope in HLA-DRB3*02:02 (Weber et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from co-culture assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "6b8a764c-28ee-4984-87d3-9208d1483b32",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C70",
+      "claim": "The cross-reactive CD4+ T cells were able to cross react with an as of yet unidentified, SARS-CoV-2 membrane epitope in HLA-DRB3*02:02.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-reactive CD4+ T cells recognized CMV pp65 epitope AGILARNLVPM in HLA-DRB3*02:02 and were able to cross react with an as of yet unidentified, SARS-CoV-2 membrane epitope in HLA-DRB3*02:02 (Weber et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from co-culture assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "cd126f6b-82db-4b44-8a07-7a7c8f7b9ad7",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C71",
+      "claim": "Previous studies have reported the presence of membrane-specific CD4+ T cell responses in SARS-CoV-2-unexposed donors utilizing the same commercially available membrane peptide pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have reported the presence of membrane-specific CD4+ T cell responses in SARS-CoV-2-unexposed donors utilizing the same commercially available membrane peptide pool, yet these studies did not aim to identify the peptide-HLA restriction (Bacher et al., 2020; Sekine et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bacher et al., 2020 and Sekine et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "cb3b6929-3ab5-4fa7-94f9-295a695d29dc",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C72",
+      "claim": "AGI-specific CD4+ T cells have been described to be cross reactive toward SARS-CoV-2 spike.",
+      "claim_type": "EXPLICIT",
+      "source": "AGI-specific CD4+ T cells have been described to be cross reactive toward SARS-CoV-2 spike which is in contrast to our finding (Weber et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Weber et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "ddec5457-753a-404c-8cbe-8d43dc50fd2c",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C73",
+      "claim": "The cross-reactive CD8+ T cells recognize the CMV epitope IPSINVHHY and SARS-CoV-2 epitope FVSNGTHWF presented in HLA-B*35:01.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-reactive CD8+ T cells recognize the CMV epitope IPSINVHHY and SARS-CoV-2 epitope FVSNGTHWF presented in HLA-B*35:01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from peptide identification assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "ee61235c-1c2e-458c-9574-186ded0a47e7",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C74",
+      "claim": "IPS/FVS-specific T cells were possibly detected previously but never further investigated or characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "IPS/FVS-specific T cells were possibly detected previously but never further investigated or characterized (Shomuradova et al., 2020; Tarke et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Shomuradova et al., 2020 and Tarke et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "e0d0a5a6-c3a5-4639-8978-ef4baad56877",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C75",
+      "claim": "Both cross-reactive CD4+ and CD8+ T cells displayed a higher avidity for the CMV epitope compared to the epitope derived from SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cross-reactive CD4+ and CD8+ T cells displayed a higher avidity for the CMV epitope compared to the epitope derived from SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by peptide titration data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "5c60c0aa-5556-43f1-a0ef-17685e05a4e4",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C76",
+      "claim": "Other studies have reported an equal or even higher avidity for the SARS-CoV-2 epitope compared to the epitopes derived from the HCoV for which the T cells were hypothesized to be primed against.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, other studies have reported an equal or even higher avidity for the SARS-CoV-2 epitope compared to the epitopes derived from the HCoV for which the T cells were hypothesized to be primed against (Braun et al., 2020; Johansson et al., 2021; Lineburg et al., 2021; Mateus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "c0aaa022-afdc-4a79-89c4-92c4039f7e0f",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C77",
+      "claim": "Repeated exposure results in the selection of high avidity T cell clonotypes which are able to clear viral infection and protect against reinfection.",
+      "claim_type": "EXPLICIT",
+      "source": "This appears to be contradictive since it has been shown that repeated exposure results in the selection of high avidity T cell clonotypes which are able to clear viral infection and protect against reinfection (Abdel-Hakeem et al., 2017; Hombrink et al., 2013; Price et al., 2005; Schober et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "0b068d52-181b-4dcc-bfb2-ef264bd6bb50",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C78",
+      "claim": "Cross-reactive T cells would most likely display a higher avidity for the source pathogen compared to the avidity for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-reactive T cells would therefore most likely display a higher avidity for the source pathogen compared to the avidity for SARS-CoV-2, as reported in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge about T cell avidity and repeated exposure.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "2286ae2a-c2f9-4912-8dc4-670e25624269",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C79",
+      "claim": "The contribution of other HCoVs as initial primers of the T cell response may have been over-estimated due to experimental design.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, whereas cross-reactive T cells recognizing SARS-CoV-2 have been primarily described to be derived from other HCoVs, the contribution of these other HCoVs as initial primers of the T cell response may have been over-estimated due to experimental design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the discussion of avidity and experimental design issues.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "74894417-ae61-47a8-be2b-e664659bb0a5",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C80",
+      "claim": "Further studies are required to identify other potential sources of cross reactivity with low sequence homology yet high prevalences such as CMV, EBV, influenza, or non-viral pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies are required to identify other potential sources of cross reactivity with low sequence homology yet high prevalences such as CMV, EBV, influenza, or non-viral pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "7e0efd5a-085a-4a90-abf1-a575a09c4650",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C81",
+      "claim": "Ex vivo detected heterologous CD8+ T cell immunity against two pathogens caused by dissimilar epitopes presented in the same HLA is rarely reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Ex vivo detected heterologous CD8+ T cell immunity against two pathogens caused by dissimilar epitopes presented in the same HLA is rarely reported (Clute et al., 2005; Cornberg et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Clute et al., 2005 and Cornberg et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "8f00575e-6906-4f46-8e13-cca306da5f98",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C82",
+      "claim": "Heterologous immunity can be caused by the expression of a dual TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterologous immunity can be caused by the expression of a dual TCR which means that two TCR \u03b1- or \u03b2-chains are expressed simultaneously, resulting in two distinctive TCRs within one T cell (Cusick et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Cusick et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "3634783a-0886-465d-8dac-881b005de7d3",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C83",
+      "claim": "A single TCR was identified in cross-reactive T cells, excluding the dual TCR hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, here, we identified a single TCR in cross-reactive T cells excluding this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TCR sequencing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "9439e6e2-2720-4fa4-8b82-8a9b97011bb5",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C84",
+      "claim": "Recognition of two distinct epitopes by a single TCR can be explained by shape similarity once the peptides are bound to the HLA molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognition of two distinct epitopes by a single TCR can be explained by shape similarity once the peptides are bound to the HLA molecule, and this shape similarity, or molecular mimicry can underpin T cell cross reactivity (Macdonald et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Macdonald et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "550add34-18d4-48d0-8808-ef14cb034d74",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C85",
+      "claim": "Similarity between the IPS and FVS peptides in backbone conformation and the C-terminal part might underpin the T cell cross reactivity observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, similarity between the IPS and FVS peptides in backbone conformation and the C-terminal part might underpin the T cell cross reactivity observed, as the majority of TCR docks preferentially toward the C-terminal of the peptide (Szeto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural modeling and supported by a citation to Szeto et al., 2020.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "3edc07eb-7e84-4958-8c0e-30e5945c9ffb",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C86",
+      "claim": "The majority of TCR docks preferentially toward the C-terminal of the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, similarity between the IPS and FVS peptides in backbone conformation and the C-terminal part might underpin the T cell cross reactivity observed, as the majority of TCR docks preferentially toward the C-terminal of the peptide (Szeto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Szeto et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "315e44c1-4515-4d8f-afd6-64f90ba05bd6",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C87",
+      "claim": "The presence of cross-reactive memory T cells in circulation may be an advantage during initial SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of these cross-reactive memory T cells in circulation may be an advantage during initial SARS-CoV-2 infection as rapid T cell responses were associated with less severe COVID-19 (Loyal et al., 2021; Sette and Crotty, 2021; Tan et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations to published studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "bffb892a-4434-40ae-a207-0b402fed0a38",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C88",
+      "claim": "Rapid T cell responses were associated with less severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of these cross-reactive memory T cells in circulation may be an advantage during initial SARS-CoV-2 infection as rapid T cell responses were associated with less severe COVID-19 (Loyal et al., 2021; Sette and Crotty, 2021; Tan et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "06775e8e-08a5-448b-aa1a-f8ef563f4821",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C89",
+      "claim": "The cross-reactive CD8+ T cells were less efficient compared to SARS-CoV-2-specific, vaccination-primed T cells in limiting viral spread in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the cross-reactive CD8+ T cells were less efficient compared to SARS-CoV-2-specific, vaccination-primed T cells in limiting viral spread in vitro which can be explained by the reduced avidity of the cross-reactive T cells for the spike protein compared to CMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the infection assays shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "464c2dab-8c17-484d-98b0-f3a506b4b577",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C90",
+      "claim": "IPS/FVS-specific CD8+ T cells might be able to reduce SARS-CoV-2 spread at initial infection but likely do not play a significant role in the pathogenesis of severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations together indicate that IPS/FVS-specific CD8+ T cells might be able to reduce SARS-CoV-2 spread at initial infection but likely do not play a significant role in the pathogenesis of severe COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the activation state and functional data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "15039c76-e742-4c86-ad23-e56a300bde1c",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C91",
+      "claim": "The study focused on circulating T cells, and it cannot be excluded that cross-reactive CD8+ T cells present in lung tissue displayed an activated phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation is that our study focused on circulating T cells, and we cannot exclude the possibility that cross-reactive CD8+ T cells present in lung tissue did display an activated phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "1c79c6f6-9957-42e8-8458-9542dbed8100",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C92",
+      "claim": "Additional studies using larger cohorts are required to fully elucidate the potential role of cross-reactive CD8+ T cells in disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, additional studies using larger cohorts are required to fully elucidate the potential role of cross-reactive CD8+ T cells in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "502a2ece-66a7-4a47-9c4c-519e9e5aceb6",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C93",
+      "claim": "Pre-pandemic SARS-CoV-2-specific T cells can derive from non-homologous pathogens such as CMV.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, pre-pandemic SARS-CoV-2-specific T cells can derive from non-homologous pathogens such as CMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "6ad1a2e5-f540-470c-a5f2-c3e38690bb77",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C94",
+      "claim": "This expands the potential origin of pre-pandemic SARS-CoV-2-specific CD4+ and CD8+ T cell beyond other HCoVs.",
+      "claim_type": "EXPLICIT",
+      "source": "This expands the potential origin of these pre-pandemic SARS-CoV-2-specific CD4+ and CD8+ T cell beyond other HCoVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "1af6f2bb-20e9-479d-8ed4-fcc929d1b250",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C95",
+      "claim": "The cross-reactive CD8+ T cells were reactive toward dissimilar epitopes, and this cross reactivity was caused by a public TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-reactive CD8+ T cells were reactive toward dissimilar epitopes, and this cross reactivity was caused by a public TCR, which has been rarely observed so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "a8187c8a-7941-4be3-809f-a04bc3f4ff35",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C96",
+      "claim": "Cross-reactivity caused by a public TCR toward dissimilar epitopes has been rarely observed.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-reactive CD8+ T cells were reactive toward dissimilar epitopes, and this cross reactivity was caused by a public TCR, which has been rarely observed so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the rarity of this phenomenon in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "39c4f423-4914-4bda-9550-be45b91c8982",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C97",
+      "claim": "The data points toward a role of the cross-reactive T cells in reducing SARS-CoV-2 viral load in the early stages of infection, prior to priming of SARS-CoV-2 specific T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data points toward a role of the cross-reactive T cells in reducing SARS-CoV-2 viral load in the early stages of infection, prior to priming of SARS-CoV-2 specific T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the functional data from the infection assays.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "f6d2fd45-507e-4ac6-a4b5-d94cb47c8a5a",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C98",
+      "claim": "These results aid in further understanding heterologous T cell immunity beyond common cold coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results aid in further understanding heterologous T cell immunity beyond common cold coronaviruses and facilitate the investigation into the potential role of cross-reactive T cells in COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the significance of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "f46ea917-2f6f-4a7f-b25f-d8bf168d19cb",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C99",
+      "claim": "Memory SARS-CoV-2-specific CD4+ T cells were characterized as CD154+CD137+.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory SARS-CoV-2-specific CD4+ T cells were characterized as CD154+CD137+, and memory SARS-CoV-2-specific CD8+ T cells were identified based on expression of CD137 and IFN-\u03b3 (Figure 1A\u2013B and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological description supported by flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "336e3c89-fbe0-4f4b-90da-7d304caad7ad",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C100",
+      "claim": "Memory SARS-CoV-2-specific CD8+ T cells were identified based on expression of CD137 and IFN-\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory SARS-CoV-2-specific CD4+ T cells were characterized as CD154+CD137+, and memory SARS-CoV-2-specific CD8+ T cells were identified based on expression of CD137 and IFN-\u03b3 (Figure 1A\u2013B and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological description supported by flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "68c10f09-2606-44ec-95bd-838b64a28df6",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C101",
+      "claim": "The FVS peptide might adopt a similar backbone conformation compared to the IPS peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the FVS peptide might adopt a similar backbone conformation compared to the IPS peptide, which would place in both peptides a small hydrophobic residue at position 6 (P6-T/V), a histidine at position 7, and a residue with a large side-chain at position 8 (P8-W/H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural modeling analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "aae9ed17-bf5c-4ef5-85f6-f9565fb6e389",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C102",
+      "claim": "The primary anchor in the FVS peptide is P2-V and P9-F.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary anchor in the FVS peptide is P2-V and P9-F, both within the favored residues at those positions for HLA-B35-restricted peptide (Escobar et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural modeling and supported by a citation to Escobar et al., 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "68eaa28f-10d5-46b7-ae33-043b17367837",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C103",
+      "claim": "The lack of secondary anchor residue at position 5 in the FVS peptide (P5-N/G) might change the conformation of the central part of the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of secondary anchor residue at position 5 in the FVS peptide (P5-N/G) might change the conformation of the central part of the peptide that could be similar to the one observed in the spike-derived peptide IPF (S896-904) in complex with HLA-B*35:01 (Figure 3\u2014figure supplement 1; Nguyen et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural modeling and supported by a citation to Nguyen et al., 2021.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "59cc79e1-fe63-4995-8589-ec18c5d01e3d",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C104",
+      "claim": "Residue substitutions from the IPS to FVS peptide were possible without major steric clashes with the HLA or peptide residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Residue substitutions from the IPS to FVS peptide were possible without major steric clashes with the HLA or peptide residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "bae9ef3d-e066-4a3f-a7c4-61715ade203b",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C105",
+      "claim": "CD38 and HLA-DR are highly expressed on SARS-CoV-2-specific CD8+ T cells during severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation state was measured by expression of activation markers CD38 and HLA-DR as these markers are highly expressed on SARS-CoV-2-specific CD8+ T cells during severe COVID-19 (Figure 6D; Sekine et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by a citation to Sekine et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "17f72487-0999-4357-8278-907899e93ecd",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "claim_id": "C106",
+      "claim": "The prevalence of IPS/FVS-specific T cells in severe COVID-19 patients (2 out of 2) was higher than in healthy donors (3 out of 37).",
+      "claim_type": "IMPLICIT",
+      "source": "Interestingly, IPS/FVS-cross-reactive T cells were detected in two out of two CMV+ HLA-B*35:01+ patients suffering from severe COVID-19, whereas the cross-reactive T cells were detected in 3 out of 37 healthy CMV+ HLA-B*35:01+ donors (Figures 4C and 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on comparing the prevalence data between patient and donor cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aad1f809-3345-4925-b442-0526de2d3df2",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SARS-CoV-2-specific T cell responses in pre-pandemic samples correlate with CMV seropositivity. CMV+ donors showed higher frequencies of SARS-CoV-2-specific T cells, particularly CD4+ responses to membrane peptides and CD8+ responses to spike peptides, which were accompanied by strong pp65 reactivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C27-C31 provide converging experimental evidence from flow cytometry showing that CMV+ donors (N=28) had detectable SARS-CoV-2-specific T cell responses not observed in CMV\u2212 donors (N=39), with statistical support from Figure 1. The correlation between membrane/spike responses and pp65 reactivity (C29, C31) strengthens the association.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "40ded930-06de-4add-8981-c241290c1fc8",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pre-pandemic SARS-CoV-2-specific CD4+ T cells originate from cross-reactive CMV-specific T cells. Clonally expanded CD4+ T cell clones recognized both SARS-CoV-2 membrane and CMV pp65 peptides, with higher avidity for CMV pp65 epitope AGILARNLVPM presented in HLA-DRB3*02:02.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C32-C37, C69-C70 provide experimental evidence from T cell cloning, peptide library screening, and HLA restriction assays (Figure 2). The demonstration that 20/27 clones responded to membrane peptides, and that specific clones recognized both antigens with higher avidity for CMV (C35) supports cross-reactivity. However, the SARS-CoV-2 membrane epitope remains unidentified (C70), which is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "a7618576-b942-4b91-af45-8b9e1988a600",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pre-pandemic SARS-CoV-2 spike-specific CD8+ T cells originate from cross-reactive CMV-specific T cells. CD8+ T cell clones recognized both SARS-CoV-2 spike peptide FVSNGTHWF and CMV pp65 peptide IPSINVHHY, both presented by HLA-B*35:01, with higher avidity for the CMV peptide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C38-C43, C73 provide strong experimental evidence from T cell cloning (23/28 clones reactive, all expressing same TCR), peptide identification via CPL assay, HLA restriction experiments, and peptide titration showing higher avidity for IPS (Figure 2). The convergence of multiple experimental approaches supports this cross-reactivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IPS/FVS cross-reactive CD8+ T cells are mediated by a public TCR found in multiple donors. Tetramer staining identified IPS/FVS-specific T cells in 3/37 healthy donors and 2/2 severe COVID-19 patients, all expressing identical CDR3\u03b1 (CAGNQGGKLIF) and CDR3\u03b2 (CASSLALDEQFF) sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10, C47-C51, C54-C58 provide strong evidence from tetramer staining (Figure 4) and TCR sequencing (Figure 5). The demonstration that all FVS-binding T cells also bind IPS (C48), the identical TCR sequences across donors (C54-C55), and detection in both healthy donors and COVID-19 patients (C7-C8, C51, C63) support the public TCR conclusion. The finding in donor JZX (C57-C58) extends the prevalence estimate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "777d429a-0451-446e-8a35-71d8985c0e3f",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Structural modeling suggests that IPS/FVS cross-reactivity is mediated by similarity in peptide backbone conformation and C-terminal residues. The peptides share limited sequence homology but have similar residues at key positions (P3-S, P6-T/V, P7-H, P9-F/Y) that may enable TCR recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C85, C101-C104 present structural modeling based on the solved IPS-HLA-B*35:01 structure (Figure 3). The analysis identifies shared and similar residues and proposes a mechanism for cross-reactivity. However, this is computational modeling without experimental validation (e.g., crystal structure of TCR-pMHC complex), which limits certainty. The modeling is consistent with the functional data but requires experimental confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "0abae322-71be-43e1-b3e5-90e7e03e5eab",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IPS/FVS-specific T cells display an effector memory phenotype with less differentiation compared to IPS-only specific T cells. Flow cytometry showed CCR7\u2212CD45RA\u2212 phenotype in IPS/FVS-specific T cells from three donors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by flow cytometry data in Figure 4D showing phenotypic characterization of tetramer-positive cells. The effector memory phenotype is clearly demonstrated, and the comparison with IPS-specific T cells shows reduced differentiation. Sample size is limited (N=3 donors) but the data are consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "81debc67-ffe1-4249-a42a-af94b62e5d0b",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IPS/FVS-specific CD8+ T cells can recognize SARS-CoV-2-infected cells and reduce viral replication at low viral titers. In vitro infection assays showed that IPS/FVS-specific T cells reduced intracellular SARS-CoV-2 RNA at 0.05 MOI but not at 0.5 MOI, and were less efficient than vaccination-primed T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62, C66, C89 are supported by experimental data from K562 transduction experiments (C59, Figure 6A) and Calu-3 infection assays (C60-C62, Figure 6B-C). The dose-dependent effect (effective at low MOI but not high MOI) is clearly demonstrated with statistical significance. The comparison with vaccination-primed T cells (C89) provides important context about relative efficacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "be918f89-aa92-45cd-a96a-00036d6c78b1",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "IPS/FVS-specific T cells are present in severe COVID-19 patients but do not show an activated phenotype during acute infection. These cells were detected in 2/2 CMV+ HLA-B*35:01+ severe COVID-19 patients but showed lower CD38/HLA-DR expression compared to SARS-CoV-2-specific T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65, C67, C90, C106 are supported by tetramer staining and activation marker analysis in COVID-19 patients (Figure 6D-E). The detection in 2/2 patients versus 3/37 healthy donors (C106) suggests enrichment, but the small patient cohort (N=2) limits statistical power. The lack of activation (C64-C65, C67) is clearly demonstrated but interpretation is complicated by the limitation to circulating T cells (C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "3373e98f-44f8-4179-8e39-c52a004c924e",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CMV-specific T cells can cross-react with SARS-CoV-2 despite low sequence homology and may contribute to pre-existing immunity. This expands the potential origin of pre-pandemic SARS-CoV-2-specific T cells beyond other human coronaviruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C93-C95 are well-supported by the collective experimental evidence demonstrating cross-reactivity between dissimilar CMV and SARS-CoV-2 peptides. However, C12 and C97 regarding contribution to pre-existing immunity are speculative inferences based on the presence of these cells and their in vitro function, without direct evidence of protective effects in vivo. The conclusion is reasonable but requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "d400101a-28ab-432a-95b8-e8299c0ff8b8",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cross-reactive T cells display higher avidity for CMV epitopes compared to SARS-CoV-2 epitopes, consistent with repeated CMV exposure. This pattern differs from some prior studies of HCoV cross-reactivity and suggests potential overestimation of HCoV contribution to pre-existing immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is directly supported by peptide titration data (Figure 2B, 2F). Claims C76-C78 provide context from literature and immunological principles. Claim C79 is a speculative inference about prior work, but is logically supported by the avidity data and discussion of experimental design issues in prior studies. The reasoning is sound but the conclusion about overestimation requires validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "758d0cb9-0b52-4184-9203-27f68fc07e98",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background and context from prior literature on SARS-CoV-2 T cell immunity, pre-existing T cells, and heterologous immunity. These claims establish the scientific rationale for investigating CMV as a source of cross-reactive T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C13-C26 are background claims supported by citations to published literature. These provide context for the study but are not novel findings. The citations appear appropriate and the claims accurately represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "59e907bd-ffdf-4448-bc1b-5635ea2be330",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Discussion of novelty and mechanistic context. The study is the first to identify CMV-SARS-CoV-2 cross-reactive T cells, and cross-reactivity via a public TCR toward dissimilar epitopes is rarely observed. Dual TCR expression is excluded as a mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C81, C96 regarding novelty and rarity are supported by literature context (C71-C72, C74, C81). Claim C83 excluding dual TCR is supported by TCR sequencing showing single TCR. Claims C82, C84, C86 provide mechanistic context from literature. These are appropriate contextual claims that frame the significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "61733070-de02-4fb5-a567-882b534b33de",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Limitations and future directions. The study acknowledges limitations including focus on circulating T cells, small COVID-19 cohort, and need for larger studies. Speculative discussion of potential protective role of cross-reactive T cells in early infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80, C91-C92 appropriately acknowledge study limitations and call for future work. Claims C87-C88 are speculative about potential protective effects, supported by citations but not directly tested. These are appropriate caveats and future directions but do not constitute supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "b87db1c6-dece-4f65-845d-cfe44ab5b2e2",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological approach for identifying SARS-CoV-2-specific T cells. CD4+ T cells were characterized as CD154+CD137+ and CD8+ T cells as CD137+IFN-\u03b3+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 describe the methodological approach supported by flow cytometry gating strategies (Figure 1A-B, Figure 1\u2014figure supplement 1). This is standard methodology appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "cbab14c0-316f-4411-8c8c-fcbdc8b3beb4",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The TCR\u03b2 chain identified in IPS/FVS-specific T cells was previously described as IPS-specific in HLA-B*35:01.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by citation to Klarenbeek et al., 2012, providing independent validation of the TCR identification. This strengthens confidence in the peptide identification and TCR characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    },
+    {
+      "id": "7adfe675-19b6-48eb-8782-b88980ffc05e",
+      "content_id": "950361b5-2387-4821-9bb7-f213932c3082",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CD38 and HLA-DR are established markers of T cell activation during severe COVID-19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 is a methodological justification supported by citation to Sekine et al., 2020. This is appropriate use of established markers for the phenotypic analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:18:57.491730Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "99555a8e-2215-44e8-97f4-8cf77ee2a880",
+      "result_id": "aad1f809-3345-4925-b442-0526de2d3df2"
+    },
+    {
+      "claim_id": "698a3600-2d62-4c01-b7e6-f9f0f03973ff",
+      "result_id": "aad1f809-3345-4925-b442-0526de2d3df2"
+    },
+    {
+      "claim_id": "1a2eb3c4-315a-4eb2-aad0-fcbfebc3e23b",
+      "result_id": "aad1f809-3345-4925-b442-0526de2d3df2"
+    },
+    {
+      "claim_id": "93a1daee-7971-496f-a2b7-ba0e8212c56e",
+      "result_id": "aad1f809-3345-4925-b442-0526de2d3df2"
+    },
+    {
+      "claim_id": "595e80c8-6715-4c28-b19a-ff3b38676af8",
+      "result_id": "aad1f809-3345-4925-b442-0526de2d3df2"
+    },
+    {
+      "claim_id": "6e91bee9-72c3-4c85-9354-e1f79e71a119",
+      "result_id": "aad1f809-3345-4925-b442-0526de2d3df2"
+    },
+    {
+      "claim_id": "8a29ad46-6551-4953-a35e-dcf91ddd6820",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "4c8b1cfc-792d-4ac1-a27a-425841384908",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "ae54435a-6449-490a-b312-50566b19182c",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "38960d7c-7430-45d7-8ce4-e6966cca3d6a",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "f67e71f4-a8d8-4453-92cc-193dbd796fb4",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "546f0a90-4a28-4394-a407-d384a11fa5d3",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "a71c254f-34ae-40ff-adbe-95776477d08b",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "f360d6f4-595d-47dc-be67-516bed901553",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "66481a9f-06cd-4c25-ab2d-af6097fe30eb",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "6b8a764c-28ee-4984-87d3-9208d1483b32",
+      "result_id": "40ded930-06de-4add-8981-c241290c1fc8"
+    },
+    {
+      "claim_id": "4c8b1cfc-792d-4ac1-a27a-425841384908",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "4889d5ea-e32c-4ec5-ac85-d8f9fe3dc628",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "f77ad053-2370-4473-adc4-1cea77cb17b0",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "77c6f1b9-a684-4979-9de9-b636cdcbd717",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "f2dd7bba-d0f6-488e-8ed6-2505c4920490",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "63dd8424-4132-44bf-b914-8cd348e4e4b0",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "4400af41-91a2-4025-b2c2-79ce38110689",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "c1be7212-9a5b-4cb1-bd0e-be68e28d8156",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "bcd18bed-37c7-4e00-85c8-8060bb1fc5d9",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "ddec5457-753a-404c-8cbe-8d43dc50fd2c",
+      "result_id": "a7618576-b942-4b91-af45-8b9e1988a600"
+    },
+    {
+      "claim_id": "11e729b8-ac3b-42dc-8ee3-603f8bcbeaa6",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "5ce3a738-b3e5-4d46-bd38-353635d87202",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "83fccd21-7c47-4389-be28-ec6d0704d292",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "3d69df14-ddd2-4d64-832a-a0df26d5712b",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "bd6c1082-c3c4-4e0c-9ae9-3de6d3b64b34",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "d237190d-e7c4-4acc-a214-fc1dbf20a356",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "576d378c-bba8-487f-938a-a84b9bbd6053",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "93de47df-2f06-484a-abae-b5e5d4a86d02",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "0bd2ad69-a7f3-4b32-97f3-9637e915c069",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "f09918a3-c401-44e9-be80-7dfee3a2a934",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "68ff8d82-9aad-4c4a-9a7f-559b3ae32334",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "dbc4ac9f-f2a2-44c6-8a82-c1ca0f6292cb",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "78c7b32e-76e9-4d7d-9fae-416486b1188e",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "bc3c3bfb-df0e-4ed7-8fa6-4ab007acf52c",
+      "result_id": "4ea8e6b5-a2ee-4e04-8861-f29589d3baf5"
+    },
+    {
+      "claim_id": "deaec909-6b0e-4bae-8f7b-46fbb108502c",
+      "result_id": "777d429a-0451-446e-8a35-71d8985c0e3f"
+    },
+    {
+      "claim_id": "3aab914d-64b0-49d7-8d90-d3a7cdee466a",
+      "result_id": "777d429a-0451-446e-8a35-71d8985c0e3f"
+    },
+    {
+      "claim_id": "550add34-18d4-48d0-8808-ef14cb034d74",
+      "result_id": "777d429a-0451-446e-8a35-71d8985c0e3f"
+    },
+    {
+      "claim_id": "68c10f09-2606-44ec-95bd-838b64a28df6",
+      "result_id": "777d429a-0451-446e-8a35-71d8985c0e3f"
+    },
+    {
+      "claim_id": "aae9ed17-bf5c-4ef5-85f6-f9565fb6e389",
+      "result_id": "777d429a-0451-446e-8a35-71d8985c0e3f"
+    },
+    {
+      "claim_id": "68eaa28f-10d5-46b7-ae33-043b17367837",
+      "result_id": "777d429a-0451-446e-8a35-71d8985c0e3f"
+    },
+    {
+      "claim_id": "59cc79e1-fe63-4995-8589-ec18c5d01e3d",
+      "result_id": "777d429a-0451-446e-8a35-71d8985c0e3f"
+    },
+    {
+      "claim_id": "3aaad878-4894-4ca0-b349-4962ff6c272d",
+      "result_id": "0abae322-71be-43e1-b3e5-90e7e03e5eab"
+    },
+    {
+      "claim_id": "032ee5c7-e3d9-4650-826d-ad12359dae5f",
+      "result_id": "0abae322-71be-43e1-b3e5-90e7e03e5eab"
+    },
+    {
+      "claim_id": "bdc0e05c-1310-4f20-b353-2d994b4b3b5e",
+      "result_id": "81debc67-ffe1-4249-a42a-af94b62e5d0b"
+    },
+    {
+      "claim_id": "ab9258dc-9bf6-4fa8-ad49-80ba693b92c8",
+      "result_id": "81debc67-ffe1-4249-a42a-af94b62e5d0b"
+    },
+    {
+      "claim_id": "7cbe99de-d910-4b54-907b-c4fee3565917",
+      "result_id": "81debc67-ffe1-4249-a42a-af94b62e5d0b"
+    },
+    {
+      "claim_id": "ba481ed1-7bae-49b6-8b2d-23104cf69d04",
+      "result_id": "81debc67-ffe1-4249-a42a-af94b62e5d0b"
+    },
+    {
+      "claim_id": "f3a9a7d1-e91d-4ec0-b74f-ade476e6f85d",
+      "result_id": "81debc67-ffe1-4249-a42a-af94b62e5d0b"
+    },
+    {
+      "claim_id": "06775e8e-08a5-448b-aa1a-f8ef563f4821",
+      "result_id": "81debc67-ffe1-4249-a42a-af94b62e5d0b"
+    },
+    {
+      "claim_id": "66811357-d1db-4b72-b3c9-e77eb6920c36",
+      "result_id": "be918f89-aa92-45cd-a96a-00036d6c78b1"
+    },
+    {
+      "claim_id": "4851d4ae-57f5-4503-94db-2c276962a27a",
+      "result_id": "be918f89-aa92-45cd-a96a-00036d6c78b1"
+    },
+    {
+      "claim_id": "81467d9f-65d5-49cc-bae0-0feb6813cf51",
+      "result_id": "be918f89-aa92-45cd-a96a-00036d6c78b1"
+    },
+    {
+      "claim_id": "2667053c-d49b-4bf0-81f9-9f3a84de0ef0",
+      "result_id": "be918f89-aa92-45cd-a96a-00036d6c78b1"
+    },
+    {
+      "claim_id": "464c2dab-8c17-484d-98b0-f3a506b4b577",
+      "result_id": "be918f89-aa92-45cd-a96a-00036d6c78b1"
+    },
+    {
+      "claim_id": "17f72487-0999-4357-8278-907899e93ecd",
+      "result_id": "be918f89-aa92-45cd-a96a-00036d6c78b1"
+    },
+    {
+      "claim_id": "85d0c82c-e5e4-4067-be98-494301f789f8",
+      "result_id": "3373e98f-44f8-4179-8e39-c52a004c924e"
+    },
+    {
+      "claim_id": "8f8cd12d-33d5-4a43-811a-3e9a7d9719cc",
+      "result_id": "3373e98f-44f8-4179-8e39-c52a004c924e"
+    },
+    {
+      "claim_id": "502a2ece-66a7-4a47-9c4c-519e9e5aceb6",
+      "result_id": "3373e98f-44f8-4179-8e39-c52a004c924e"
+    },
+    {
+      "claim_id": "6ad1a2e5-f540-470c-a5f2-c3e38690bb77",
+      "result_id": "3373e98f-44f8-4179-8e39-c52a004c924e"
+    },
+    {
+      "claim_id": "1af6f2bb-20e9-479d-8ed4-fcc929d1b250",
+      "result_id": "3373e98f-44f8-4179-8e39-c52a004c924e"
+    },
+    {
+      "claim_id": "39c4f423-4914-4bda-9550-be45b91c8982",
+      "result_id": "3373e98f-44f8-4179-8e39-c52a004c924e"
+    },
+    {
+      "claim_id": "e0d0a5a6-c3a5-4639-8978-ef4baad56877",
+      "result_id": "d400101a-28ab-432a-95b8-e8299c0ff8b8"
+    },
+    {
+      "claim_id": "5c60c0aa-5556-43f1-a0ef-17685e05a4e4",
+      "result_id": "d400101a-28ab-432a-95b8-e8299c0ff8b8"
+    },
+    {
+      "claim_id": "c0aaa022-afdc-4a79-89c4-92c4039f7e0f",
+      "result_id": "d400101a-28ab-432a-95b8-e8299c0ff8b8"
+    },
+    {
+      "claim_id": "0b068d52-181b-4dcc-bfb2-ef264bd6bb50",
+      "result_id": "d400101a-28ab-432a-95b8-e8299c0ff8b8"
+    },
+    {
+      "claim_id": "2286ae2a-c2f9-4912-8dc4-670e25624269",
+      "result_id": "d400101a-28ab-432a-95b8-e8299c0ff8b8"
+    },
+    {
+      "claim_id": "7a9fe16c-bba0-43f4-b228-c7ae0229c06a",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "566231c2-a51a-4bb0-b68b-f5a5e694cb57",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "fd2af754-599a-4542-a347-64c4ed0143a3",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "4d78435b-8e07-4dc5-a09a-1c1cdde7050e",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "ea501902-e2eb-4660-884f-34b330b475f3",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "97b48069-e862-4350-903e-c79be2929577",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "8cf77782-3046-4197-b8d5-d0d8c9e4cacb",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "e1318b40-de0e-4cf4-9858-e8d05c3a994b",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "ebf2a55a-9e4c-4718-a975-7be7e0da997d",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "5a9b797b-c51d-49f1-99c6-43958eb2a19c",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "87f7da8e-a5da-462d-bd7b-65bb12066469",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "8c118f2e-32eb-4fbe-8f7c-e0891ca57ecc",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "35e40162-3b5d-47a9-be81-c84359042238",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "4821a339-156f-4337-b5a2-c55a664c0f8b",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "a8d6cdfa-4764-44d9-9093-85437a0556cc",
+      "result_id": "758d0cb9-0b52-4184-9203-27f68fc07e98"
+    },
+    {
+      "claim_id": "9d974f85-bb93-4016-ae76-3dbf96362827",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "cd126f6b-82db-4b44-8a07-7a7c8f7b9ad7",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "cb3b6929-3ab5-4fa7-94f9-295a695d29dc",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "ee61235c-1c2e-458c-9574-186ded0a47e7",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "7e0efd5a-085a-4a90-abf1-a575a09c4650",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "8f00575e-6906-4f46-8e13-cca306da5f98",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "3634783a-0886-465d-8dac-881b005de7d3",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "9439e6e2-2720-4fa4-8b82-8a9b97011bb5",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "3edc07eb-7e84-4958-8c0e-30e5945c9ffb",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "a8187c8a-7941-4be3-809f-a04bc3f4ff35",
+      "result_id": "59e907bd-ffdf-4448-bc1b-5635ea2be330"
+    },
+    {
+      "claim_id": "74894417-ae61-47a8-be2b-e664659bb0a5",
+      "result_id": "61733070-de02-4fb5-a567-882b534b33de"
+    },
+    {
+      "claim_id": "315e44c1-4515-4d8f-afd6-64f90ba05bd6",
+      "result_id": "61733070-de02-4fb5-a567-882b534b33de"
+    },
+    {
+      "claim_id": "bffb892a-4434-40ae-a207-0b402fed0a38",
+      "result_id": "61733070-de02-4fb5-a567-882b534b33de"
+    },
+    {
+      "claim_id": "15039c76-e742-4c86-ad23-e56a300bde1c",
+      "result_id": "61733070-de02-4fb5-a567-882b534b33de"
+    },
+    {
+      "claim_id": "1c79c6f6-9957-42e8-8458-9542dbed8100",
+      "result_id": "61733070-de02-4fb5-a567-882b534b33de"
+    },
+    {
+      "claim_id": "f46ea917-2f6f-4a7f-b25f-d8bf168d19cb",
+      "result_id": "b87db1c6-dece-4f65-845d-cfe44ab5b2e2"
+    },
+    {
+      "claim_id": "336e3c89-fbe0-4f4b-90da-7d304caad7ad",
+      "result_id": "b87db1c6-dece-4f65-845d-cfe44ab5b2e2"
+    },
+    {
+      "claim_id": "847d267a-7a55-4842-bc75-24e166cbcab1",
+      "result_id": "cbab14c0-316f-4411-8c8c-fcbdc8b3beb4"
+    },
+    {
+      "claim_id": "bae9ef3d-e066-4a3f-a7c4-61715ade203b",
+      "result_id": "7adfe675-19b6-48eb-8782-b88980ffc05e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study employed a well-defined experimental design with 12 participants viewing static flashes (252 repetitions per position) and smoothly moving stimuli (108 repetitions per motion vector) on a hexagonal grid. EEG data were recorded at 2048 Hz, downsampled to 128 Hz, and analyzed using linear discriminant analysis classifiers trained on pairwise combinations of stimulus positions (666 classifiers at 90 timepoints).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims (C12-C14, C99-C108) are internally consistent and provide sufficient detail for reproducibility. The experimental design is appropriate for investigating neural position representations, with adequate trial numbers and proper controls. The preprocessing steps and classification approach are standard and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Static stimulus positions were successfully decoded from EEG signals starting at 58 ms post-onset, with signals primarily from occipital electrodes suggesting visual cortex sources. Eye movement analysis confirmed that classifiers did not exploit systematic eye movements for position discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 demonstrate successful decoding of static stimulus position with appropriate statistical testing (permutation testing with cluster-based correction). The eye movement control analysis (C17-C18) strengthens the interpretation that position decoding reflects genuine neural representations rather than motor artifacts. The occipital localization (C19-C20) is consistent with expected visual cortex involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Moving stimulus positions were decodable from 102-180 ms post-onset, with lower magnitude likelihood than static stimuli. The neural response showed a characteristic pattern of gradual increase as the stimulus approached a position and decrease as it moved away, similar to patterns observed in cat V1. Gaussian fits provided good characterization (R\u00b2 > 0.5) for training times after ~80 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 describe successful cross-classification between static and moving stimuli with appropriate statistical validation. The comparison to cat V1 (C24) provides biological plausibility. The Gaussian fitting approach (C25) is methodologically sound for characterizing temporal dynamics. The lower decoding accuracy for motion (C22) is acknowledged and explained by differences in neural populations encoding static vs. moving stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The time to peak likelihood showed a complex non-monotonic relationship with training time: increasing up to ~150 ms (consistent with feedforward processing), reversing between 150-200 ms, then stabilizing at ~50 ms from ~250 ms onward. Piecewise regression identified an inflection point at 158 ms, interpreted as the end of the initial feedforward sweep. This pattern may reflect feedforward and feedback sweeps of activity through visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 describe a complex temporal pattern supported by data analysis (piecewise regression) and convergent evidence from prior neuroimaging studies (C33). The interpretation of the 158 ms inflection point (C34-C35) as marking the end of feedforward processing is reasonable given cited literature. The speculation about feedback mechanisms (C31) is appropriately tentative and supported by comparison to prior work (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Linear regression analysis of the feedforward period revealed that static and motion trials had similar slopes (gradient difference not significant, t=-1.58, p=0.13) but significantly different intercepts (t=5.32, p=3.32\u00d710\u207b\u2075). This indicates that successive cortical representations were activated along the same time-course for both stimulus types, suggesting delays accumulating during cortical processing were not compensated for motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C39-C42 present rigorous statistical comparisons with appropriate tests and clear reporting of effect sizes and p-values. The interpretation that similar slopes indicate lack of further delay compensation during cortical processing (C41-C42) follows logically from the data. The statistical evidence is strong and the conclusion is appropriately constrained to the feedforward period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The position of moving objects was represented with approximately 70 ms shorter latency than static objects in the same position. For early neural representations (training times 70-80 ms, likely originating in V1-3), the latency was approximately 0 ms, meaning these representations were activated when the moving object was physically centered on the corresponding position. This indicates the early visual system almost completely compensated for neural delays accumulated during processing up to that point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 present the core finding of the study with clear quantification (73 ms mean distance between regression lines, ~0 ms latency for early representations). The inference that early representations originate in V1-3 (C47) is reasonable based on timing and established visual processing hierarchies. The conclusion of near-complete early compensation (C48) is well-supported by the convergence of multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C60",
+      "C61",
+      "C72",
+      "C73",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study demonstrates that during early stimulus-evoked activity, position representations of moving objects were activated substantially earlier (~75 ms) than for static flashes, aligning early representations with real-time positions. This compensation is achieved primarily before information reaches visual cortex, with delays still accumulating during later cortical processing. The findings provide direct neural evidence that predictive mechanisms enable accurate real-time representation of moving objects in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C51-C54, C60-C61, C72-C73, C95-C98 represent the main conclusions of the study. These are well-supported by the convergent evidence from multiple analyses: cross-classification success, regression analysis showing similar slopes but different intercepts, and near-zero latency for early representations. The conclusion that compensation occurs primarily pre-cortically (C53, C72) is appropriately constrained by the data. The speculation about mechanisms (C96) is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "This is the first study to demonstrate cross-classification between stationary and smoothly moving stimuli with EEG, showing that population neural codes for location are at least partially shared between the two stimulus types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 assert novelty and are supported by the successful cross-classification demonstrated in the results. The qualification that codes are 'at least partially' shared (C50) is appropriately cautious given the lower decoding accuracy for motion. The novelty claim appears reasonable given the literature review, though comprehensive verification would require exhaustive literature search.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The results are consistent with previous findings of RF shifts against the direction of motion throughout visual cortex. However, unlike Harvey and Dumoulin (2016) who found RF shifts scale with RF size across the hierarchy, the current results suggest later visual areas show RF shifts of the same magnitude as earlier areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C59 compare current findings to prior work. While the consistency with RF shift literature (C56-C57) is well-supported, the contrast with Harvey and Dumoulin (C58-C59) requires careful interpretation. The inference that later areas show similar magnitude shifts (C59) is based on similar regression slopes, but this may not be directly comparable to fMRI-measured RF shifts due to different measurement modalities and temporal scales. The authors acknowledge this uncertainty in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Multiple mechanisms may contribute to delay compensation: retinal ganglion cells responding to leading edges, latency advantages in LGN, feedback from MT+ to earlier visual areas, and within-layer horizontal connections. However, pre-cortical mechanisms alone appear insufficient given the stimulus speed (10.36 dva/s) exceeds the range where retinal compensation operates (~5 dva/s), suggesting cortical mechanisms also play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 synthesize evidence from prior literature to propose mechanisms. The inference that pre-cortical mechanisms are insufficient (C65-C67) is well-reasoned given the speed comparison (C66). The discussion of potential cortical mechanisms (C68-C71) appropriately cites relevant literature and is presented as speculative (C69). The logic connecting stimulus parameters to mechanism requirements is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The findings suggest that feedforward cortical delays are not compensated, supporting the proposition that if prediction errors are to be minimized, extrapolation might be implemented only in feedback connections rather than in both feedforward and feedback pathways as proposed by Hogendoorn and Burkitt (2019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 relate findings to theoretical predictions. The conclusion that feedforward delays are not compensated (C75) is well-supported by the similar slopes in regression analysis. The support for feedback-only extrapolation (C76) is appropriately presented as speculative and contingent on the prediction error minimization framework. The reasoning is logically sound given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Comparison with apparent motion studies reveals substantially greater compensation for smooth motion (~70 ms) than apparent motion (15-20 ms). This difference is likely due to continuous stimulation in smooth motion enabling retinal gain control mechanisms and triggering traveling waves of activity, which differ from the non-linear activity patterns in apparent motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 provide important context by comparing to apparent motion paradigms. The quantitative comparison (C78-C79) is well-supported by citations. The mechanistic explanations for differences (C80-C82) are reasonable and grounded in cited literature. This comparison strengthens the interpretation of the main findings by highlighting the importance of continuous stimulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Study limitations include lower localization accuracy for moving vs. static stimuli due to non-overlapping neural populations and decreasing signal-to-noise over motion trials. The earliest flash-evoked signals (~60 ms, likely V1) were not informative about moving stimuli, which were only decodable from ~100 ms onward, possibly due to different early processing pathways or signal-to-noise issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 appropriately acknowledge limitations. The explanation for lower motion decoding accuracy (C85-C86) is supported by citations. The observation about earliest signals (C87-C89) is honestly reported and alternative explanations are considered (C90). These limitations do not undermine the main conclusions but appropriately constrain their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The results relate to the flash-lag effect, where moving objects are perceived ahead of physically aligned flashes. The findings are congruent only with spatial explanations of the FLE; temporal models cannot explain latency shifts greater than the unshifted response latency. The visual system encodes moving objects at positions that afferent sensory information could not yet indicate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 connect findings to an important perceptual phenomenon. The description of the FLE (C91-C92) is accurate. The argument against temporal models (C93) is logically sound: if early representations show ~0 ms latency, this cannot be explained by faster processing alone. The conclusion about predictive encoding (C94) follows from the data showing representations ahead of retinal input timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The study is motivated by the fundamental problem that the brain receives outdated sensory information due to neural transmission delays. Prior research suggests the brain compensates through prediction, with evidence for motion extrapolation mechanisms from retina through visual cortex, though it remains unclear whether compensation occurs throughout the cortical hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11 establish the theoretical background and prior work. These are well-supported by appropriate citations to established literature. The framing of the research question (whether compensation occurs throughout cortical processing) is clear and well-motivated by gaps in prior work (C11). This provides solid foundation for the study.",
+    "result_type": "MINOR"
+  }
+]

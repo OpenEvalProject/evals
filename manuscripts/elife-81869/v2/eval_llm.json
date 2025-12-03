@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C26",
+      "C27",
+      "C43",
+      "C44",
+      "C82",
+      "C83"
+    ],
+    "result": "Three machine learning models (FC, structural MRI, and multimodal S+FC) were trained to predict age from MRI data in 390 amyloid-negative cognitively normal participants. The multimodal model (R\u00b2=0.86-0.87, MAE=5.25-5.34 years) significantly outperformed both the FC model (R\u00b2=0.68-0.73, MAE=8.25-8.67 years) and structural model (R\u00b2=0.81-0.82, MAE=5.97-6.26 years). FC-BAG and S-BAG showed only modest positive correlation (r=0.095-0.134), suggesting complementary signals. Bootstrap analysis confirmed the multimodal improvement was due to meaningful FC signal rather than noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 provide comprehensive performance metrics with appropriate statistical comparisons (Williams's t-tests). The modest correlation between FC-BAG and S-BAG (C43-C44) supports complementarity. The bootstrap validation (C82-C83) addresses potential concerns about overfitting from increased feature dimensionality. All models were evaluated on held-out test sets, demonstrating generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C98"
+    ],
+    "result": "All three BAG estimates (FC-BAG, S-BAG, and S+FC-BAG) were significantly elevated in cognitively impaired (CI) participants compared to cognitively normal controls. FC-BAG was elevated by 2.17 years (p=0.030), S-BAG by 5.10 years (p<0.001), and S+FC-BAG by 4.31 years (p<0.001) in CI participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C46, C51, and C55 provide consistent evidence with appropriate statistical tests (ANOVA followed by post-hoc t-tests with FDR correction). Effect sizes are reported (\u03b7p\u00b2). The structural and multimodal models show larger effects than FC, which is consistent with the literature cited. Statistical methods appropriately control for age and other covariates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C48",
+      "C49",
+      "C53",
+      "C57",
+      "C87"
+    ],
+    "result": "FC-BAG was significantly reduced by 1.64 years in cognitively normal amyloid-positive (CN/A+) participants compared to amyloid-negative controls (p=0.035), while structural and multimodal BAG estimates did not differ significantly between these groups. This finding replicates prior work showing reduced FC-BAG in presymptomatic AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C48, and C49 provide consistent evidence with appropriate statistics. The lack of structural differences (C53, C57) is also clearly stated. This pattern is replicated from prior work (C87, citing Millar et al., 2022), strengthening confidence. However, the interpretation of this finding remains uncertain (see claims C89-C95), which the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Greater S-BAG and S+FC-BAG were associated with greater amyloid PET burden (S-BAG: \u03b2=0.79, p=0.004; S+FC-BAG: \u03b2=0.81, p=0.015). In the multimodal model, this relationship was characterized by a non-significant interaction (p=0.087), with the association being significant in CI participants (\u03b2=1.53, p=0.029) but not in CN/A+ participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 provide detailed statistical evidence including effect sizes. The main effects are significant, though the interaction in the multimodal model is marginal (p=0.087). The pattern suggests stage-specific relationships, which is biologically plausible. Sample sizes for amyloid PET are adequate (N=355 total, though only 57 CI participants).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Greater S-BAG and S+FC-BAG were associated with greater tau burden (tau PET and CSF pTau/A\u03b240) specifically in CI participants, with significant interactions indicating these relationships were not observed in cognitively normal groups. For tau PET: S-BAG \u03b2=0.02, p<0.001, interaction \u03b2=0.04, p<0.001; S+FC-BAG \u03b2=0.02, p=0.001, interaction \u03b2=0.07, p<0.001.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide comprehensive evidence with appropriate statistical tests and effect sizes. The interactions are highly significant and consistent across both tau PET and CSF measures. However, the tau PET sample is small (N=99 total, only 17 CI), which limits power. The consistency with CSF measures (N=300) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C96",
+      "C97"
+    ],
+    "result": "Greater S-BAG and S+FC-BAG were associated with lower cognitive performance specifically in CI participants (S-BAG: \u03b2=-0.03, p<0.001, interaction \u03b2=-0.03, p<0.001; S+FC-BAG: \u03b2=-0.03, p<0.001, interaction \u03b2=-0.04, p<0.001). FC-BAG showed a main effect across all groups (\u03b2=-0.01, p=0.006) but no within-group relationships, suggesting this was driven by group differences rather than individual variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 provide strong evidence with significant interactions and appropriate effect sizes. The lack of FC-BAG relationships within groups (C70) is clearly stated and appropriately interpreted. The findings are consistent with prior literature (C96). Sample size for cognitive data is adequate (N=445). The stage-specific relationships align with the tau findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C100"
+    ],
+    "result": "The combined reduction of FC-BAG in the presymptomatic stage and elevation in the symptomatic stage suggests a biphasic functional response to AD progression, with FC-BAG potentially capturing unique presymptomatic changes while S-BAG captures symptomatic progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is an inference from the pattern of results (C29, C46) and is supported by citations to prior work suggesting biphasic responses. However, the interpretation remains speculative. The authors appropriately acknowledge multiple alternative explanations (C89-C95) and note that the compensatory hypothesis is not supported by their cognitive data (C91). Longitudinal data would be needed to definitively establish a biphasic trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C102",
+      "C103"
+    ],
+    "result": "FC and structural MRI capture complementary signals related to age and AD. A multimodal age-prediction model improves sensitivity to healthy age differences and may be useful in maximizing sensitivity to AD across the spectrum of disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The complementarity is supported by the modest correlation between FC-BAG and S-BAG (C43-C44), the superior performance of the multimodal model (C27, C39-C42), and the differential patterns of association with AD biomarkers and cognition. The bootstrap analysis (C82-C83) confirms meaningful contribution of FC. However, the claim about maximizing sensitivity across the disease spectrum (C103) is somewhat overstated given that the multimodal model did not show clear advantages over structural alone for AD biomarker associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "CN/A+ participants were significantly older and more likely to be APOE \u03b54 carriers than CN/A- controls. CI participants were significantly older, more likely male, more likely to be APOE \u03b54 carriers, had fewer years of education, and lower MMSE scores than CN/A- controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 provide comprehensive demographic comparisons with appropriate statistical tests (t-tests for continuous variables, \u03c7\u00b2 for categorical). All p-values are highly significant. These demographic differences are expected given the study design and are appropriately controlled for in subsequent analyses. The differences highlight the importance of covariate adjustment in the main analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior literature establishes that: (1) AD involves structural and functional brain disruptions observable via MRI; (2) BAG is elevated in various neurological/psychiatric disorders including symptomatic AD, and predicts mortality; (3) brain age can be modeled from multiple MRI modalities; (4) structural MRI and FC capture complementary age-related signals; (5) FC-BAG shows complex patterns in presymptomatic AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 are all supported by appropriate citations to prior work. These claims establish the scientific context and rationale for the current study. The citations appear appropriate and the claims accurately represent the cited work based on the descriptions provided. These are standard literature review claims that frame the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The observed BAG elevations in CI participants (S-BAG: 5.10 years; FC-BAG: 2.17 years) are comparable to prior structural age prediction models and consistent with previous reports of relationships between BAG and AD biomarkers/cognition in CI participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 appropriately contextualize the current findings within prior literature. The magnitudes of BAG elevation are consistent with cited prior work (Cole and Franke, 2017b; Franke and Gaser, 2019; Millar et al., 2022; Lee et al., 2022). This provides validation that the models are performing as expected and replicating established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Multiple potential interpretations exist for the reduced FC-BAG in CN/A+ participants, including: compensatory response (not supported by cognitive data), orthogonal pathological processes, hyper-excitability, preserved aerobic glycolysis, or statistical artifacts. The interpretation remains uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C95 appropriately present multiple speculative interpretations with supporting citations. The authors correctly note that the compensatory hypothesis is not supported by their data (C91). This represents appropriate scientific caution in interpretation. However, these remain speculative hypotheses that require future testing. The acknowledgment of potential statistical artifacts (C95) is particularly important given concerns about regression dilution correction.",
+    "result_type": "MINOR"
+  }
+]

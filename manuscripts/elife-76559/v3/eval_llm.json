@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The gender gap in publication productivity widened significantly from 2019 to 2020. Using difference-in-differences analysis on 431,207 authors, the average marginal gender difference increased from -0.26 (17% lower output for women) to -0.35 (24% lower output for women) in full-count publications, with similar patterns in fractional counts. The gender difference remained relatively stable from 2017-2019 before increasing in 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by the difference-in-differences analysis with appropriate statistical methods and large sample size (C3, C28). The parallel trends assumption is reasonably satisfied for 2018-2019 (C39), though some pre-existing trend exists (C87). The consistency across both full and fractional counting methods strengthens the finding. However, the inability to fully separate attrition from reduced productivity (C86-C88) and publication lag issues (C99-C100) introduce some uncertainty about the magnitude of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The widening gender gap was observed for both early-career and mid-career scientists, with differential impacts. For early-career scientists, women's disadvantage increased from -0.133 (11% lower) to -0.20 (18% lower), representing a 61% relative increase. For mid-career scientists, the disadvantage increased from -0.452 (21% lower) to -0.592 (27% lower), representing a 29% relative increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The career-stage stratified analysis is well-executed and shows clear differential effects (C43-C50). The larger relative increase for early-career scientists (61% vs 29%) is particularly notable. However, the counterfactual analysis (C87, C118) shows that some widening of the gender gap occurs naturally over career progression, suggesting the 2020 effect may be partially confounded with normal career dynamics, especially for the early-career cohort. The absolute changes are still substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C70",
+      "C71"
+    ],
+    "result": "The widening gender gap was most pronounced among highly productive authors (top 10%), with minimal changes below the 80th percentile. At the highest decile, the gender difference increased from -1.35 (23% lower for women) to -1.74 (31% lower), a 22.3% relative change. Highly prolific men maintained publication rates while highly prolific women did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The productivity-stratified analysis (C51-C56) provides compelling evidence that the pandemic's impact was concentrated among the most productive researchers. The finding that changes were marginal below the 80th percentile (C52) is important for understanding the mechanism. However, the manuscript does not adequately address potential selection effects\u2014highly productive authors may differ systematically in ways that affect their pandemic response. The proposed mechanisms (C72-C75) are speculative and lack direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The widening gender gap was persistent across all four disciplines but most pronounced in clinical medicine (average marginal difference = -0.117) and biology (-0.089) compared to basic medicine (-0.058) and chemistry (-0.062). Clinical medicine has an over-representation of highly productive authors, which may partially explain the larger effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discipline-specific analysis is well-documented (C62-C64) with clear quantitative differences. The observation about over-representation of highly productive authors in clinical medicine (C65) provides a plausible partial explanation (C66), though this is somewhat circular given the productivity-stratified findings. The proposed mechanism about dual research/clinical roles (C76) is speculative. The confidence intervals for discipline-specific effects overlap considerably, suggesting the differences may not be as pronounced as stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C69",
+      "C92",
+      "C93"
+    ],
+    "result": "Country-level variation in the gender gap change was substantial, with smallest changes in Denmark, Australia, Pakistan, and Belgium, and largest in Russia, Italy, Austria, and Iran. However, these effects were only weakly and inconsistently correlated with COVID-19 restriction severity and did not vary systematically with gender equality, welfare models, or infection rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The country-level analysis reveals substantial heterogeneity (C57-C59), but the lack of correlation with lockdown severity (C61) and other country characteristics (C69) is puzzling and undermines causal interpretation. The authors acknowledge aggregation issues (C92) and temporal mismatch between annual publication data and daily lockdown measures. The US dominance in the sample (C60) means most of the overall effect is driven by US patterns. The weak correlations suggest unmeasured confounders or that the mechanisms are more complex than lockdown severity alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The widening gender gap represents a genuine decline in publication productivity rather than a shift in author roles, as women continued to first-author publications at similar rates as in prior years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of first-authorship rates (C68) provides important validation that the observed effects reflect actual productivity changes rather than changes in authorship position. Figure 7B shows stable first-authorship ratios across years. This addresses a potential alternative explanation and strengthens the interpretation of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C87",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The parallel trends assumption required for difference-in-differences analysis is partially satisfied. The gender gap remained relatively stable 2017-2019 for the main sample, though a counterfactual analysis shows some natural widening over career progression (53% of the observed 2020 effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The parallel trends assumption is critical for causal inference but is only partially met. While 2018-2019 trends are relatively stable (C39), the counterfactual analysis (C87, C118) reveals that gender gaps naturally widen over early career stages, accounting for 53% of the observed 2020 effect. This substantially undermines the causal attribution to COVID-19, particularly for the early-career cohort. The authors acknowledge this (C87) but do not adequately adjust their conclusions. The difference-in-differences estimates may overstate the COVID-19 effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study has important methodological limitations including author disambiguation errors (more likely for East Asian names), exclusion of 20% of authors due to gender inference limitations (majority from China and South Korea), and reduction of gender to a binary category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors transparently acknowledge significant methodological limitations (C94-C98). The 20% exclusion rate (C96, C110) with geographic concentration (C111) introduces substantial sampling bias that could affect generalizability. The binary gender classification (C98) is a known limitation of algorithmic approaches. The >90% confidence threshold for gender inference (C109) is reasonable but conservative. These limitations are honestly reported but their impact on the main findings is not quantitatively assessed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C86",
+      "C88"
+    ],
+    "result": "Publication lag creates temporal ambiguity\u2014some 2020 publications reflect 2019 research and some 2020 research will appear later. Additionally, the analysis cannot fully distinguish between reduced productivity and increased attrition of women from academia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are important acknowledged limitations (C99-C100, C86). Publication lag is a fundamental challenge for studying immediate pandemic impacts and could bias results in either direction. The inability to separate attrition from productivity decline (C86, C88) is particularly problematic\u2014both mechanisms lead to the same observed outcome but have different policy implications. The authors note both lead to enlarged disparities (C88) but this doesn't resolve the interpretive ambiguity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C113",
+      "C114"
+    ],
+    "result": "The study analyzed 431,207 authors linked to 2,113,108 publications from Web of Science using high-quality author disambiguation and gender inference algorithms with >90% confidence thresholds. A counterfactual sample of 276,793 authors was used for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data sources and methods are clearly described (C105-C108) and represent state-of-the-art approaches. The sample size is substantial (C3, C28, C113). The use of CWTS disambiguation (C106-C107) is appropriate given its high precision and recall. The inclusion of a counterfactual cohort (C114) for validation is a strength. However, the restriction to four disciplines and >2 publications may limit generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior research establishes that COVID-19 amplified existing gender disparities in publishing, with women taking on disproportionate childcare and domestic responsibilities during lockdowns, facing increased teaching burdens, and experiencing notable productivity decreases, especially those with young dependents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about prior work are well-supported by multiple citations (C10-C26) and provide important context. The literature review appropriately establishes the background for the study. However, most cited evidence comes from surveys and self-reports rather than objective publication data, which is why the current study's contribution is valuable. The mechanisms proposed (childcare, teaching, clinical demands) are plausible but the current study does not directly test them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Proposed mechanisms for the differential impact on highly productive women include: men receiving more institutional support and protection from teaching/clinical demands due to unconscious bias, women's partners' careers taking priority, and dual research/clinical roles in clinical medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "These mechanistic explanations (C72-C76) are entirely speculative and not tested in the current study. While they cite some prior research, the claims about pandemic-specific mechanisms are conjectures. The authors appropriately use hedging language ('may have,' 'it is possible'), but these remain unsupported hypotheses that require direct empirical testing. They belong in the discussion as potential explanations requiring future research, not as established findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1556 @@
+{
+  "submission": {
+    "id": "9af1048b-2002-439f-95b7-358332587f95",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:04:41.422826Z",
+    "updated_at": "2025-12-03T09:04:41.422826Z"
+  },
+  "content": [
+    {
+      "id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "submission_id": "9af1048b-2002-439f-95b7-358332587f95",
+      "content_type": "manuscript",
+      "content_text": "# Data mining methodology for response to hypertension symptomology\u2014application to COVID-19-related pharmacovigilance\n\n## Authors\n\n- Xuan Xu<sup>1</sup> ([ORCID: 0000-0003-3349-7183](https://orcid.org/0000-0003-3349-7183))\n- Jessica Kawakami<sup>1</sup> ([ORCID: 0000-0002-7141-5698](https://orcid.org/0000-0002-7141-5698))\n- Nuwan Indika Millagaha Gedara<sup>1</sup>\n- Jim E Riviere<sup>1</sup>\n- Emma Meyer<sup>1</sup>\n- Gerald J Wyckoff<sup>1</sup>\n- Majid Jaberi-Douraki<sup>1</sup> ([ORCID: 0000-0002-8505-6550](https://orcid.org/0000-0002-8505-6550)) \u2020\n\n### Affiliations\n\n1. 1DATA Consortium, www.1DATA.life Olathe United States\n2. Department of Mathematics, Kansas State University Kansas City United States\n3. Kansas State University Olathe Olathe United States\n4. School of Pharmacy, Division of Pharmacology and Pharmaceutical Sciences, University of Missouri-Kansas City Kansas City United States\n5. Molecular Biology and Biochemistry, School of Biological and Chemical Sciences, University of Missouri-Kansas City Kansas City United States\n6. Department of Business Economics, University of Colombo Colombo Sri Lanka\n7. Kansas State University and North Carolina State University Kansas city United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Potential therapy and confounding factors including typical co\u2010administered medications, patient\u2019s disease states, disease prevalence, patient demographics, medical histories, and reasons for prescribing a drug often are incomplete, conflicting, missing, or uncharacterized in spontaneous adverse drug event (ADE) reporting systems. These missing or incomplete features can affect and limit the application of quantitative methods in pharmacovigilance for meta-analyses of data during randomized clinical trials.Methods:Data from patients with hypertension were retrieved and integrated from the FDA Adverse Event Reporting System; 134 antihypertensive drugs out of 1131 drugs were filtered and then evaluated using the empirical Bayes geometric mean (EBGM) of the posterior distribution to build ADE-drug profiles with an emphasis on the pulmonary ADEs. Afterward, the graphical least absolute shrinkage and selection operator (GLASSO) captured drug associations based on pulmonary ADEs by correcting hidden factors and confounder misclassification. Selected drugs were then compared using the Friedman test in drug classes and clusters obtained from GLASSO.Results:Following multiple filtering stages to exclude insignificant and noise-driven reports, we found that drugs from antihypertensives agents, urologicals, and antithrombotic agents (macitentan, bosentan, epoprostenol, selexipag, sildenafil, tadalafil, and beraprost) form a similar class with a significantly higher incidence of pulmonary ADEs. Macitentan and bosentan were associated with 64% and 56% of pulmonary ADEs, respectively. Because these two medications are prescribed in diseases affecting pulmonary function and may be likely to emerge among the highest reported pulmonary ADEs, in fact, they serve to validate the methods utilized here. Conversely, doxazosin and rilmenidine were found to have the least pulmonary ADEs in selected drugs from hypertension patients. Nifedipine and candesartan were also found by signal detection methods to form a drug cluster, shown by several studies an effective combination of these drugs on lowering blood pressure and appeared an improved side effect profile in comparison with single-agent monotherapy.Conclusions:We consider pulmonary ADE profiles in multiple long-standing groups of therapeutics including antihypertensive agents, antithrombotic agents, beta-blocking agents, calcium channel blockers, or agents acting on the renin-angiotensin system, in patients with hypertension associated with high risk for coronavirus disease 2019 (COVID-19). We found that several individual drugs have significant differences between their drug classes and compared to other drug classes. For instance, macitentan and bosentan from endothelin receptor antagonists show major concern while doxazosin and rilmenidine exhibited the least pulmonary ADEs compared to the outcomes of other drugs. Using techniques in this study, we assessed and confirmed the hypothesis that drugs from the same drug class could have very different pulmonary ADE profiles affecting outcomes in acute respiratory illness.Funding:GJW and MJD accepted funding from BioNexus KC for funding on this project, but BioNexus KC had no direct role in this article.\n\n## Introduction\n\nThe coronavirus disease 2019 (COVID-19) pandemic continues with 115,094,614 confirmed cases and over 2.6 million deaths as of March 5, 2021 (WHO, 2020; WHO, 2021). Surprisingly, it is estimated that as high as 45% of infected individuals may remain asymptomatic, contributing to disease transmission and underlying the disparity in symptomology (Oran and Topol, 2020). A commonality of severe clinical course and mortality is comorbid conditions such as diabetes, heart disease, obesity, and hypertension (CDC, 2019). Hypertension was recognized early on as being a prevalent risk factor (Zhou et al., 2020), possibly due to its pervasiveness. Hypertension affects 23% of adults in China, where the original study was conducted, but affects 45% of US adults. Moreover, specific antihypertensive medications, namely angiotensin-converting enzyme inhibitors (ACEIs) and angiotensin-II receptor blockers (ARBs), target proteins of the renin-angiotensin system (RAS) (James et al., 2014). The RAS is intricately linked to initial infection and possibly the progression of COVID-19 through a RAS receptor, angiotensin-converting enzyme 2 (ACE2), which acts as the viral entry point of coronavirus SARS-CoV-2 (Wiese et al., 2020; Li et al., 2003).\n\nIn recent years, data science has emerged as a new and important discipline in medicine and healthcare. Different quantitative therapeutic efforts in drug repurposing or repositioning combined with adverse drug event (ADE) identification have led to more efficient therapies while improving the clinical course, lowering fatality, and decreasing cost burden (Smith and Smith, 2021). The previous work focused on the incidence of pulmonary ADEs associated with ACEI and ARB use in patients with hypertension and other comorbidities (Stafford et al., 2020; Jaberi-Douraki et al., 2021). The findings indicate that specific drugs\u2014rather than entire classes\u2014have higher incidences of pulmonary ADEs, which may have implications for treating patients diagnosed with COVID-19. Most epidemiological studies are not this granular as they do not analyze drug effects at the individual drug level but rather compare pharmacological classes. The current study examines additional drugs that more broadly target hypertension, including pulmonary hypertension, to describe methods used to identify clinically important patterns of ADE data. We utilized the Anatomical Therapeutic Chemical (ATC) classification system from the World Health Organization (WHO) Collaborating Center for Drug Statistics Methodology (https://www.whocc.no/). The ATC system classifies drugs based on site of action in addition to chemical, pharmacological, and therapeutic properties (R\u00f8nning, 2001). Here, we identify a clear signal distinct from different drugs in patients with hypertension as an underlying medical condition which helps to quantify the anomaly and unexpectedness of an ADE reported for a drug through disproportionality analysis. For this purpose, we proceeded with a specific pairwise analysis of individual drugs compared to the drug classes using a modified empirical Bayes method to identify any distinctions between drugs within a class and compared to other classes.\n\nIn our previous work, 13 different pulmonary ADEs were selected based on clinical importance, and as they were prevalent among the top reported symptoms in patients with COVID-19, to assess the related variation due to adverse event differences (Stafford et al., 2020; Jaberi-Douraki et al., 2021). In the present work, we include 25 pulmonary, infectious diseases, or cardiac-associated ADEs. Our novel method identifies extraneous causes of differential reporting including sampling variance and selection biases by reducing the effect of covariates. This method is both adaptive (it removes different covariates for different drugs) and appropriate for the systematic application and routine analysis (Tatonetti et al., 2012). We hypothesize that drugs from the same class based on the ATC classification system could have different ADE profiles. For this purpose, penalized regression method will be used to detect clusters of drugs, may differ from the ATC classification, and will be validated by the Friedman test (Evans et al., 2001; van Puijenbroek et al., 2002; Zorych et al., 2013). Safety signals for a specific drug and associated adverse events are then identified and evaluated through different methods, such as the proportional reporting ratio (PRR) (Evans et al., 2001), the relative reporting ratio (RR) (DuMouchel, 1999), the information component (IC) (Bate and Evans, 2009), and the (EBGM) (DuMouchel, 1999). These methods are utilized to calculate the ratio of an ADE compared to the same event occurring with other drugs, however, PRR or RR is more liberal when an event incidence is small (Duggirala et al., 2019).\n\n## Materials and methods\n\nTo derive the desired information from datasets, there are a few main methodological steps in this study. In the following, procedures are briefly illustrated in the workflow integrated by machine learning where some preprocessing points are first presented in Figure 1. This figure summarizes the steps in the preparation and analysis of the ADE database to make a decision and interpret the results; each step is detailed in the following subsections:\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig1-v2.jpg)\n\n**Figure 1.:** As a part of data cleaning, we were also challenged by multiple technical issues when combining drugs: (i) there were many drugs\u2019 names that did not track a specific standard. (ii) Formulations of the same active ingredient with different generic or brand names for different routes of administration created confusion in collecting data (for instance, Revatio, Viagra, sildenafil, sildenafil citrate, APO sildenafil, sildenafil film-coated tablet, sildenafil citrate Aurobindo pharma, sildenafil Amneal Pharmaceuticals, Teva sildenafil, sildenafil Pfizer, sildenafil Greenstone, sildenafil Hormosan Filmtabletten, Revathio, sildenafil SUP, etc.). For this purpose, we combined drugs with or without salt, alcohol, etc. from different generic names and brand names.\n\n### Data integration\n\nThe data were integrated into the 1DATA databank (www.1DATA.life) (Xu et al., 2019) from multiple sources, including the Food and Drug Administration (FDA) Adverse Drug Events Reporting System (FAERS), the Medical Dictionary for Regulatory Activities (MedDRA), and the ATC classification system. The FAERS database consists of voluntarily or mandatorily reported ADEs from healthcare professionals, manufacturers, and consumers; encompassing drug-related adverse occurrences pertaining to standard use, medical error, overdose, or product quality (FDA Adverse Event Reporting System, 2014). ADE reports from FAERS are typically coded in accordance with the preferred term (PT) level of MedDRA. The MedDRA provides an internationally recognized hierarchical terminology (system organ class [SOC], high-level group term (HLGT), HLT, PT, and lowest level term [LLT]) for coding ADE reports (Mozzicato, 2012). This study aggregates raw ADE reports to terms from the HLT and SOC levels. ATC classification is likewise an internationally applied hierarchical system for active drug substances based on site of action (organ or system) and mechanistic properties (therapeutic, pharmacological, and chemical). Drugs in this study were grouped according to ATC classification. Data integration into 1DATA occurred through the PostgreSQL 13.2 version (PostgreSQL Global Development Group), which allows concatenation of drug and ADE information (Xu et al., 2019; PostgreSQL, 1996).\n\n### Adverse drug event\n\nADEs cause approximately 30 billion dollars a year of added healthcare expenses, along with negative\u2014including fatal\u2014health outcomes (Xu et al., 2019). The practice of prescribing drugs based on information from drug preapproval labeling may misrepresent or deprecate the incidence and prevalence of specific ADEs. The FDA defines the term \u2018adverse event\u2019 as: \u201cany untoward medical occurrence associated with the use of a drug in humans, whether or not considered drug related, including the following: an adverse event occurring in the course of the use of a drug product in professional practice; an adverse event occurring from drug overdose whether accidental or intentional; an adverse event occurring from drug abuse; an adverse event occurring from drug withdrawal; and any failure of expected pharmacological action\u201d (FDA, 2020a; FDA, 2020b).\n\n### Relative risk\n\nThe main method used in this study, Bayesian shrinkage, is based on a baseline frequency, which is the relative risk or relative reporting ratio\n\n$$\nRR_{ij}=\\frac{N_{ij}}{E_{ij}}\n$$\n\nIt compares a drug-ADE count, N, to its expected count, E. For instance, when Nij/Eij is equal to 100, then drugi and ADEj occurred 100 times as frequently as the baseline frequency represents. A huge difference of occurrences between two drug-ADE pairs might lead to similar RR due to E in the denominator, even statistically the same, but the frequency illustrates sampling variation. When more events of ADEj are caused by drugi higher than the same ADE in the database, RRij >1. Drug-ADE surveillance should be triggered when large RR scores show up for specific drug-ADE pairs. However, the variability of RR for small counts drug-ADE pairs is unreliable, the high value of RR might be accidental.\n\n### Principal component analysis\n\nPrincipal component analysis (PCA) was obtained based on the log expected value of RR, log(E), to analyze ADEs for different drugs, to reduce the features from the drug-ADE matrix. The distinct clusters from PCA plots were used to compare the similarities of drugs based on $E$. PCA was conducted using built-in function PCA in R (R 3.6.3 version, R Core Team, GNU GPL v2), and PCA biplots were produced using the R package factoextra, and 3D PC plots were produced using R package plotly.\n\n### Gamma-Poisson shrinker\n\nDuMouchel, 1999, proposed an empirical Bayes approach based on the Gamma-Poisson shrinker (GPS) algorithm to bring down the inflated value of $RR$ due to small counts without impacting $RR$ associated with large counts. Thus, the drug profile based on ADE could be reconstructed with reduced variation in $RR$. GPS redefines RRij as \u03bbij=\u03bcij/Eij drawn from a prior distribution with a mixture of two gamma distributions, \u03bcij is the mean of the Poisson distribution of counts for drugi and ADEj:\n\n$$\nprior:\u03a0\\lambda\u2228\\alpha_{1},\\beta_{1},\\alpha_{2},\\beta_{2},P=P\\timesgamma\\lambda\u2228\\alpha_{1},\\beta_{1}+1-P\\timesgamma\\lambda\\alpha_{2},\\beta_{2}\n$$\n\nwhich then gives the posterior probability from the components of the mixture model:\n\n$$\nposterior:\\lambda\u2228N=n \u03a0\\lambda\u2228\\alpha_{1}+n,\\beta_{1}+E,\\alpha_{2}+n,\\beta_{2}+E,Q_{n}\n$$\n\nGPS shrinks RR scores by using EBGM from\n\n$$\nEBGM=e^{Elog\\lambda}\n$$\n\nThe shrinkage abates vagueness by reducing RR scores to a conservative level, which helps to alleviate false-positive signals, avoiding arbitrary drug-ADE assessment. The R package openEBGM was used to implement the GPS method (Canida and Ihrie, 2017).\n\n### Correlation matrix and GLASSO\n\nThe profile of each drug comprises EBGM of all ADEs. The Pearson correlation matrix was constructed based on the EBGM between pairs of drugs. The vector\n\n$$\nEB_{i}=EB_{i1},EB_{i2},\u2026,EB_{ip}\n$$\n\nfor i\u2208{1, 2, \u2026, n} denotes the EBGM corresponding to drugi. The Pearson correlation method determines the associations between pairwise vectors of reported drugs, which are the elements in the correlation matrix. This adjacency matrix was highly dense (n \u00d7 n), and it is difficult to graph the network when too many drugs (1131) are present. A penalized regression method, graphical least absolute shrinkage and selection operator (GLASSO), was then introduced to encourage sparsity in the adjacency matrix, in order to plot high-dimensional graphs from the correlation matrix (Tibshirani, 1996). An R package called huge was utilized to perform GLASSO (Zhao et al., 2012).\n\n### Drug-ADE correlation diagram\n\nThe MedDRA hierarchy is multi-axial, for example, \u2018influenza\u2019 is from the PT level and is encompassed within two SOC levels \u2018respiratory, thoracic, and mediastinal disorders\u2019 and \u2018infections and infestations\u2019. Therefore, the columns of EBGM calculations in the drug-ADE matrix involve HLTs from the \u2018respiratory, thoracic, and mediastinal disorders\u2019 and \u2018infections and infestations\u2019 levels. For better visualization, ADE columns of one drug were put in a block with other rows being zeros. The dimension of a drug-ADE matrix was expanded from (m \u00d7 q) to (m \u00d7 mq) where m(< n), and m = 22 denotes the number of drugs selected by GLASSO from original n = 44 drugs, and q = 17 denotes selected ADEs described above.\n\n### Reverse Cuthill-Mckee algorithm\n\nReverse Cuthill-McKee (RCM) is a bandwidth and profile reduction method, which permutes a sparse matrix into a band matrix with vertices reordered close to the diagonal (Gibbs et al., 1976). RCM in this study implemented in MATLAB R2019b (version 9.7; MathWorks Inc, Natick, MA; RRID:SCR_001622) was applied to arrange the connections between drugs and ADEs to encourage fewer crossings in Circos plots and arc diagrams. Circos plots and arc diagrams were generated using the R packages edgebundleR, igraph, and ggraph (Bostock et al., 2016).\n\n### Friedman test\n\nUsing SAS (SAS University Edition version 9.4, Chapel Hill, NC), sample differences among antihypertensive drug groups according to therapeutic main group ATC (ACEIs, ARBs, BBAs, CCBs, and TDs) were evaluated for a pairwise comparison analysis with the assumption that data were not normally distributed using the non-parametric Friedman test for two independent unequal-sized data. The Friedman test was also applied to perform multiple comparison tests (p-value for statistical significance <0.05). The p-values in Table 4, Figures 4 and 5, when they are less than 0.05, indicate significant differences across ATC classes or GL Clusters. In addition, pairwise comparison analysis was completed in SAS in order to estimate how any two ATC classes differ as well as GL Clusters. The significance level of comparing drugs in ATC classes/GL Clusters against each other was adjusted using a rigorous paired Wilcoxon signed-rank test with Bonferroni correction to control family-wise type I error (Eisinga et al., 2017).\n\n## Results\n\n### Preprocessing and data cleaning\n\nHere, we briefly explain the data preprocessing and cleansing that will be used in different subsections. The focus of each subsection is given by the amount of data that will be used. A total of 480,236 spontaneous ADE reports for patients with hypertension were retrieved from the 1DATA databank of the FAERS database from the first quarter of 2004 until the first quarter of 2020. Alternatively, ADEs can be categorized by drug for a total of 612,733 reports (Table 1) arising from patients taking more than one drug. For example, a single ADE reported for a patient taking two different drugs, will generate one ADE report for each drug. This hypertension dataset was aggregated to 1520 ADEs in HLT codes corresponding to 1131 drugs with unique active substances. Next, drugs were excluded when the number of ADEs due to the fact that each drug was reported less than 500 times, accounting for approximately less than 0.1% of the data. Furthermore, 98.8% of the data corresponded to 134 of the 1131 drugs (Table 1 with the column header: # Drugs after initial filtering; this dataset will be exploited to calculate the relative risk for the disproportionality measures of a drug-ADE occurrence). This study focused on the 98.8% of the data remaining after the elimination of insignificant and noise-driven reports. The 134 drugs were grouped according to the following ATC drug classes (Table 1): ACEIs, ARBs, other RAS agents, other antihypertensives agents (AHAs), antithrombotic agents (ATAs), beta-blocking agents (BBAs), calcium channel blockers (CCBs), diuretics, lipid-modifying agents, urologicals (UAs), vasoprotectives, and combinations of antihypertensives (COMBs).\n\n**Table 1.**\n Drug class after applying first the two filtering rules to obtain 44 drugs and then the elimination process from the penalized regression graphical least absolute shrinkage and selection operator (GLASSO) to obtain 22 drugs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Drug class</th>\n      <th># Reports(Total 612,733)</th>\n      <th># Drugs after initial filtering(total 134)</th>\n      <th># Drugs correspond to \u22652 ADEs in HLT codes when EB05 &gt; 1 (total 44)</th>\n      <th>Drugs using GLASSO (total 22)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ACEIs</td>\n      <td>69,327</td>\n      <td>13</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>ARBs</td>\n      <td>87,415</td>\n      <td>8</td>\n      <td>5</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Other RAS agents</td>\n      <td>3,471</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Other antihypertensive</td>\n      <td>120,425</td>\n      <td>14</td>\n      <td>7</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Antithrombotic agents</td>\n      <td>67,767</td>\n      <td>10</td>\n      <td>7</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Beta blocking agents</td>\n      <td>74,574</td>\n      <td>13</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Calcium channel blockers</td>\n      <td>86,399</td>\n      <td>18</td>\n      <td>10</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Diuretics</td>\n      <td>29,394</td>\n      <td>14</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Lipid modifying agents</td>\n      <td>2,634</td>\n      <td>4</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Urologicals</td>\n      <td>18,186</td>\n      <td>4</td>\n      <td>2</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Vasoprotectives</td>\n      <td>909</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Combinations</td>\n      <td>52,232</td>\n      <td>34</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\nSince there were five unrelated pulmonary ADEs in the database (coronavirus infections, conditions associated with abnormal gas exchange, neonatal hypoxic conditions, newborn respiratory disorders NEC, pulmonary hypertensions), the hypertension dataset was further reduced to reports corresponding to the following 30 pulmonary ADEs, see Supplementary file 1. Of the 30 pulmonary ADEs, 5 ADEs were additionally excluded from the analysis since there were no reports regarding these ADEs (Supplementary file 1).\n\n### Relative risk\n\nOne of the frequentist methods, the RR, based on the disproportionality measures of a drug-ADE occurrence compared to other drug-event combinations was applied to evaluate the weighting of drugs. To start the first analysis, a large contingency table was constructed for the entire data from 134 selected drugs based on their frequencies with respect to all 1520 reported ADEs in HLT codes from MedDRA. An assumption was imposed that an ADE is selected when RR >2 for a specific drug to assess the drug disproportionality in pharmacovigilance data by observed-expected ratios prior to the EBGM analysis, a more conservative and accurate way of disproportionality evaluation. It is worth mentioning that several studies have reported RR >1.5 or 2, or a particular threshold larger than 1 to justify the association with more confidence, especially in the presence of additive noise with the unidentified distribution (Curtis et al., 1992; Balkau et al., 1999; Richardson et al., 2004). Taking into account only 25 pulmonary ADEs in HLT codes when RR >2, the top 22 drugs with their corresponding number of pulmonary ADEs were obtained (Table 2). The order from the number of pulmonary ADEs is arranged based on the EBGM results after GLASSO elimination and the clustering given in Table 1 that will be explained below. RR is also utilized to calculate the baseline frequency for EBGM and to construct the PCA as explained below.\n\n**Table 2.**\n The number of pulmonary adverse drug events (ADEs) when relative reporting ratio (RR) larger than two or the fifth quantile of empirical Bayes geometric mean (EBGM), EB05, larger than two after graphical least absolute shrinkage and selection operator (GLASSO) filtering process implemented in Table 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Drug</th>\n      <th># Pulmonary ADEs</th>\n      <th>Order by EBGM</th>\n      <th># Pulmonary ADEs</th>\n      <th>Order by RR</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Macitentan</td>\n      <td>16</td>\n      <td>1</td>\n      <td>10</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Bosentan</td>\n      <td>14</td>\n      <td>2</td>\n      <td>5</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Epoprostenol</td>\n      <td>11</td>\n      <td>4</td>\n      <td>9</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Selexipag</td>\n      <td>10</td>\n      <td>5</td>\n      <td>10</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Sildenafil</td>\n      <td>10</td>\n      <td>6</td>\n      <td>7</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Tadalafil</td>\n      <td>10</td>\n      <td>7</td>\n      <td>3</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>Beraprost</td>\n      <td>7</td>\n      <td>10</td>\n      <td>13</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Nifedipine</td>\n      <td>5</td>\n      <td>13</td>\n      <td>5</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Candesartan</td>\n      <td>4</td>\n      <td>16</td>\n      <td>3</td>\n      <td>34</td>\n    </tr>\n    <tr>\n      <td>Althiazide/Spironolactone</td>\n      <td>3</td>\n      <td>20</td>\n      <td>4</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>Bisoprolol</td>\n      <td>3</td>\n      <td>21</td>\n      <td>#N/A</td>\n      <td>#N/A</td>\n    </tr>\n    <tr>\n      <td>Imidapril</td>\n      <td>3</td>\n      <td>24</td>\n      <td>5</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Azelnidipine</td>\n      <td>2</td>\n      <td>30</td>\n      <td>4</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>Azilsartan Kamedoxomil</td>\n      <td>2</td>\n      <td>31</td>\n      <td>3</td>\n      <td>32</td>\n    </tr>\n    <tr>\n      <td>Bendroflumethiazide</td>\n      <td>2</td>\n      <td>32</td>\n      <td>3</td>\n      <td>33</td>\n    </tr>\n    <tr>\n      <td>Benidipine</td>\n      <td>2</td>\n      <td>33</td>\n      <td>5</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Cilnidipine</td>\n      <td>2</td>\n      <td>34</td>\n      <td>5</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Doxazosin</td>\n      <td>2</td>\n      <td>36</td>\n      <td>3</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>Lercanidipine</td>\n      <td>2</td>\n      <td>39</td>\n      <td>1</td>\n      <td>90</td>\n    </tr>\n    <tr>\n      <td>Nicardipine</td>\n      <td>2</td>\n      <td>40</td>\n      <td>5</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Rilmenidine</td>\n      <td>2</td>\n      <td>42</td>\n      <td>#N/A</td>\n      <td>#N/A</td>\n    </tr>\n    <tr>\n      <td>Telmisartan</td>\n      <td>2</td>\n      <td>43</td>\n      <td>4</td>\n      <td>30</td>\n    </tr>\n  </tbody>\n</table>\n\n### Principle component analysis\n\nRR calculated for the expected frequency of 25 pulmonary ADEs associated with 134 drugs prescribed to patients with hypertension was used to generate the matrix for the PCA plot. This helped illustrate how the loadings of pulmonary features could separate drugs in a 2D or 3D space (Supplementary file 2). Figure 2A shows 134 drugs in a 2D PCA panel following a V shape scatter plot, no clear separation can be intuitively observed. ADEs (blue text) are also superimposed on the graph to obtain the corresponding loadings, direction, and weights with regard to the drugs (square shape). Generally, two clusters of pulmonary issues, one in the direction of the X-axis and another in the Y-axis, played an important role in separating these drugs in the space of PC1 and PC2. Twelve different pulmonary ADEs in HLTS codes (breathing abnormalities, bronchospasm and obstruction, coughing and associated symptoms, lower respiratory tract infections NEC, lower respiratory tract inflammatory and immunologic conditions, lower respiratory tract signs and symptoms, parenchymal lung disorders NEC, pneumothorax, and pleural effusions NEC, pulmonary oedemas, pulmonary thrombotic and embolic conditions, respiratory failures (excl neonatal), and respiratory tract disorders NEC) exhibited similar impact by differentiating these drugs when projected to PC1 (X-axis), and seven pulmonary ADEs in HLTs codes (bronchial conditions NEC, fungal lower respiratory tract infections, pleural conditions NEC, pleural infections and inflammations, respiratory signs and symptoms NEC, respiratory syncytial viral infections, and vascular pulmonary disorders NEC) contributed the most when projected to PC2 (Y-axis). A detailed contribution of all pulmonary variables is given in Supplementary file 2 and will be reviewed in the Discussion.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig2-v2.jpg)\n\n**Figure 2.:** Principal component analysis of the expected count for 134 drugs (from 12 Anatomical Therapeutic Chemical [ATC] drug classes) in 2D (A) and 3D (B) spaces using the log expected value of RR, $logE$.In Panel B, individual drugs are (significantly) separated on the extreme edges are marked by (1), amlodipine, (2) quinapril, (3) trandolapril, (4) nilvadipine, (5) azosemide, (6) azelnidipine, and (7) treprostinil. An interactive figure can be found on the 1DATA home page. Click the following URL to see the figure: https://1data.life/pages/publication/figure1B.html.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** In Panel B, individual drugs are (significantly) separated on the extreme edges are marked by (1) amlodipine, (2) quinapril, (3) trandolapril, (4) nilvadipine, (5) azosemide, (6) azelnidipine, and (7) treprostinil.\n\nFigure 2B illustrates how the pulmonary ADEs are separated in a 3D space. The first, second, and third principal components, PC1, PC2, and PC3, explain more than 90% of the variation. Drugs from different branches in the 3D plot represent distinctive effects of pulmonary ADEs on the separation. This figure shows the optimal representation of three active variables in biplots acquired by PCA by diminishing the effect of supplementary variables that have no or little influence on the pulmonary ADEs. Consistent with the previous finding, quinapril and trandolapril in hypertensive patients have a notably higher incidence of pulmonary ADEs compared with its drug class as well as other classes, Figure 2B (see also Figure 2\u2014figure supplement 1).\n\n### Empirical Bayesian geometric mean\n\nWhile the RR method is widely utilized due to its simplicity and user-friendly processing, it is difficult to dismiss high variability for infrequent occurrences. The assessment of drugs or ADEs based on RR is variable because of information that the RR methodology does not include, including underreported or overreported events. To assess the effect that the RR methodology has when a small number of ADE occurrences are compared to the whole database, the fifth percentiles from the lower confidence interval of EBGM (EB05) were used as a very conservative alternative, and the results are compared to RR. This assessment was performed using EBGM, is reported similar to the prevalence evaluation using RR values from above. The frequencies of a single drug having multiple ADEs in HLT groups or a single HLT ADE occurrence in multiple drugs were calculated. It was then found that the top 10 drugs with pulmonary ADEs consisted of AHAs, ATAs, and UAs. Bosentan, tadalafil, treprostinil, and beraprost based on EBGM were ranked substantially higher than their corresponding ranks when using RR, with respect to pulmonary ADEs. This suggests that the conservative, EBGM method with a fifth percentile cut-off will allow for the examination of large datasets of ADEs when high variability is present in the number of ADEs across drugs or drug classes, and still allow for a robust reporting methodology as compared to the RR methodology. This allows analysis of very large sets of drugs and ADEs (such as approximately 500,000\u00d7134 matrix here) without loss of sensitivity or imparting an over-emphasis on ADEs from infrequently prescribed drugs.\n\n### GLASSO\n\nThe total number of distinct drugs used by patients with hypertension was 134 after filtering out drugs with very low frequency (<0.001) in the Principle component analysis section. EBGM data were used to construct the new feature matrix for different drug classes. Then 44 drugs were selected based on two conditions: (1) the lower confidence interval of EBGM, EB05, of drugs was larger than 1, and (2) a minimum of two different pulmonary ADEs is associated with each drug, (Table 1) . It was found that few drugs in ACEIs, diuretics, and combinations tended to cause pulmonary issues. More than half of the drugs were in ARBs, AHAs, ATAs, and CCBs when considering two different pulmonary ADEs at the HLT level. After two filtering steps, 44 drugs were set as the input for the penalized regression GLASSO. To have an adequate number of correlated drugs, the tuning parameter $\\lambda$ of GLASSO was adjusted to shrink the less associated drugs to 0, which accounted for 50% of the selected drugs. The remaining 22 drugs selected by the GLASSO method based on Pearson correlation were classified using the therapeutic group Cardiovascular System (C01: Cardiac Therapy, C02: Antihypertensives, C03: Diuretics, C04: Peripheral Vasodilators, C05: Vasoprotectives, C07: Beta Blocking Agents, C08: Calcium Channel Blockers, and C10: Lipid Modifying Agents), except for agents acting on RAS, which are the pharmacological subgroup C09 (C09A: ACE Inhibitors, C09B: ACE Inhibitors, Combinations, C09C: Angiotensin II Receptor Blockers (ARBS), and C09X: Other Agents Acting on the RAS), the third level was applied to classify the RAS drugs since RAS drugs are the frontline agents in hypertension, Table 1 and Supplementary file 3.\n\n### Circos plot\n\nThe drug-drug correlation matrix with shrinkage is displayed in a circular layout, depicting drug class and associations between drugs from different classes (Figure 3). For drugs in ACEIs, ARBs, AHAs, and BBAs, no association was observed between drugs within the same class. More within-class associations were depicted in AHAs, CCBs, and combinations. Figure 3A shows the association between the remaining 22 drugs after then the elimination process from the penalized regression GLASSO. It means that the clustering was done after applying the GLASSO method which is a dimensionality reduction method. After these stringent filtering methods, drug classes exhibit very low significant correlations between drugs from the same class. This result is observed in Figure 3A by very few associations between drugs in the same class. Therefore, drug clustering using the RCM reordering method was employed in Figure 3B, with bridges connecting associated drugs. Without a doubt, this analysis corroborates the hypothesis that drugs from the same ATC class may have different pulmonary ADE profiles.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig3-v2.jpg)\n\n**Figure 3.:** Circos plots of drugs were obtained based on the empirical Bayes geometric mean (EBGM) matrix after applying GLASSO. Edge bundling linkages for better visualization and drugs were selected by GLASSO with edge bundling. Grouped drugs based on their classes were assigned the same color based on their classes (A). Applying reverse Cuthill-McKee (RCM) reordering and edge bundling for grouping drugs based on the Anatomical Therapeutic Chemical (ATC) class and edge bundling (B).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Circos plots of drugs were obtained based on the empirical Bayes geometric mean (EBGM) matrix after applying GLASSO. Edge bundling linkages for better visualization and drugs were selected by GLASSO with edge bundling. Grouped drugs in high-level terms were assigned the same color based on their classes (A). Applying reverse Cuthill-McKee (RCM) reordering and edge bundling for grouping drugs based on the Anatomical Therapeutic Chemical (ATC) class and edge bundling (B).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Three inset maps as examples of highly correlated and complex interactions are shown. Large-filled circles show drugs and small circles are used for ADEs.\n\nGiven the 22 drugs selected by GLASSO, Table 2 shows the assessment of drugs exclusively with respect to their pulmonary events. In the second column, # pulmonary ADEs defines the number of drug-ADE pairs from EBGM, which are depicted in the following section. Similarly, # pulmonary ADEs in the fourth column denote the results when RR is larger than 2. The order of drugs listed in Table 2 is calculated based on the original 44 drugs from the EBGM scores and only the arrangement for the remaining 22 drugs out of 44 drugs is shown here. Beraprost showed 13 pulmonary ADE profiles reported more commonly than other drugs used for patients with hypertension based on the estimated RR. Macitentan and Selexipag were equally located in the second most commonly reported drugs, each of which with 10 pulmonary ADEs. In contrast, beraprost was corrected from being the top drug with most pulmonary issues and then ranked down to the tenth location by EBGM. The assessment for bosentan and tadalafil also changed radically when the comparative analysis was done using RR or EBGM.\n\nFrom GLASSO and Table 2, the ADE profiles can be obtained in HLT groups for each drug in the newly identified group class, which we call GLASSO (GL) Clusters. The ADEs together with the drug classes from ATC and GL Clusters based on EB05 > 1 are arranged in Table 3 and depicted by an arc diagram in Figure 3\u2014figure supplement 2 and Supplementary file 4. It is apparent from Figure 3, Figure 3\u2014figure supplement 1, and Table 3 that GL Cluster 1 consists of most associated drugs with most pulmonary ADEs assessed by EBGM (see also Supplementary file 5).\n\n**Table 3.**\n Comparative analysis of each drug and associated pulmonary adverse drug events (ADEs) based on the new classification from different graphical least absolute shrinkage and selection operator (GLASSO) (GL) Clusters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Drug</th>\n      <th>Drug class</th>\n      <th>ADEs for EB05 &gt; 1 (n) *</th>\n      <th>GL Cluster</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Macitentan</td>\n      <td>AHAs</td>\n      <td>1\u201315,17 (16)</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Bosentan</td>\n      <td>AHAs</td>\n      <td>1,2,4\u201315 (14)</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Epoprostenol</td>\n      <td>ATAs</td>\n      <td>1,2,4\u20139,11,12,15 (11)</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Selexipag</td>\n      <td>ATAs</td>\n      <td>2,4\u201312 (10)</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Sildenafil</td>\n      <td>UAs</td>\n      <td>1,2,4\u201312 (10)</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Tadalafil</td>\n      <td>UAs</td>\n      <td>1,2,4\u201312 (10)</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Beraprost</td>\n      <td>ATAs</td>\n      <td>1,2,5\u20139 (7)</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Nifedipine</td>\n      <td>CCBs</td>\n      <td>1\u20133,15,16 (5)</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Candesartan</td>\n      <td>ARBs</td>\n      <td>1,3,14,16 (4)</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Althiazide\\Spironolactone</td>\n      <td>COMBs</td>\n      <td>4,10,11 (3)</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Rilmenidine</td>\n      <td>AHAs</td>\n      <td>4,10 (2)</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Bisoprolol</td>\n      <td>BBAs</td>\n      <td>1,2,14 (3)</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Lercanidipine</td>\n      <td>CCBs</td>\n      <td>1,14 (2)</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Imidapril</td>\n      <td>ACEs</td>\n      <td>1\u20133 (3)</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Azelnidipine</td>\n      <td>CCBs</td>\n      <td>1,3 (2)</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Azilsartan Kamedoxomil</td>\n      <td>ARBs</td>\n      <td>1,3 (2)</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Benidipine</td>\n      <td>CCBs</td>\n      <td>1,2 (2)</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Cilnidipine</td>\n      <td>CCBs</td>\n      <td>1,2 (2)</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Telmisartan</td>\n      <td>ARBs</td>\n      <td>1,3 (2)</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Bendroflumethiazide</td>\n      <td>TDAs</td>\n      <td>3,13 (2)</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Doxazosin</td>\n      <td>AHAs</td>\n      <td>3,13 (2)</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Nicardipine</td>\n      <td>CCBs</td>\n      <td>3,13 (2)</td>\n      <td>6</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Below ADEs can be found corresponding to each drug:1. Parenchymal lung disorders NEC.2. Pneumothorax and pleural effusions NEC.3. Lower respiratory tract inflammatory and immunologic conditions.4. Respiratory tract disorders NEC.5. Breathing abnormalities.6. Lower respiratory tract signs and symptoms.7. Pulmonary oedemas.8. Respiratory failures (Excl Neonatal).9. Vascular pulmonary disorders NEC.10. Bronchospasm and obstruction.11. Coughing and associated symptoms.12. Respiratory syncytial viral infections.13. Bronchial conditions NEC.14. Pulmonary thrombotic and embolic conditions.15. Lower respiratory tract infections NEC.16. Fungal lower respiratory tract infections.17. Pleural infections and inflammations._\n\n### Friedman test and multiple pairwise comparisons\n\nTo test the significant difference between drugs grouped by the original ATC classes and the GL Clusters, which were from a shrinkage correlation matrix, a non-parametric Friedman test was applied to compare separately the magnitude of difference when drugs in the same group for the ATC classes or the GL Clusters. Table 4 summarizes the results of the p-value for different comparative analyses in the ATC classes or the GL Clusters. A p-value of 0.199 indicates that no differences in EBGM of pulmonary ADEs for different drugs in GL Cluster 1 when excluding tadalafil. Similarly, GL Clusters 2, 3, 4, 5, and 6 showed no significant differences in EBGM, respectively (Table 4 and Supplementary file 6). However, given the original ATC class drugs belonging to, the Friedman test did show significant differences in six of the ATC classes before GLASSO. The same test was applied to 22 drugs selected from GLASSO, only drugs in UAs showed no significant differences in EBGM of pulmonary ADEs. This shows that instead of grouping drugs from the same ATC class, isolated groups from GLASSO showed homogeneity.\n\n**Table 4.**\n The Friedman test for drugs in Anatomical Therapeutic Chemical (ATC) class and graphical least absolute shrinkage and selection operator (GLASSO) class.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>ATC class</th>\n      <th>p-value (44 drugs)</th>\n      <th>p-value (22 drugs)</th>\n      <th>GL Cluster</th>\n      <th>The p-value for 22 drugs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ACEIs</td>\n      <td>0.271</td>\n      <td>\u2013</td>\n      <td>1</td>\n      <td>&lt;0.001 (0.199, when excluding tadalafil)</td>\n    </tr>\n    <tr>\n      <td>ARBs</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n      <td>2</td>\n      <td>0.110</td>\n    </tr>\n    <tr>\n      <td>AHAs</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n      <td>3</td>\n      <td>0.884</td>\n    </tr>\n    <tr>\n      <td>ATAs</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n      <td>4</td>\n      <td>0.346</td>\n    </tr>\n    <tr>\n      <td>BBAs</td>\n      <td>0.0232</td>\n      <td>\u2013</td>\n      <td>5</td>\n      <td>0.127</td>\n    </tr>\n    <tr>\n      <td>CCBs</td>\n      <td>0.001</td>\n      <td>0.001</td>\n      <td>6</td>\n      <td>0.0522</td>\n    </tr>\n    <tr>\n      <td>COMBs</td>\n      <td>0.236</td>\n      <td>\u2013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TDAs</td>\n      <td>0.0329</td>\n      <td>\u2013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UAs</td>\n      <td>0.127</td>\n      <td>0.127</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_The p-value for statistical significance is <0.05._\n\nPairwise drug class comparisons based on ATC class are shown for all the pairs (nine drug classes: ACEIs, ARBs, AHAs, ATAs, BBAs, CCBs, COMBs, TDAs, and UAs) in Supplementary file 7. The EBGM scores from the pulmonary ADE profiles were statistically significant for the nine ATC classes using the Friedman test (p-value = 0.0072, Figure 4 and Figure 4\u2014figure supplement 1). Pairwise comparisons showed no significant differences among any two ATC classes from the adjusted p-value (Supplementary file 7). However, using drug class determined by GLASSO, Wilcoxon signed-rank test between groups revealed significant differences in EBGM of pulmonary ADEs between GL Cluster 1 and GL Clusters 3, 4, and 5, respectively, compared to the pairwise comparisons between ATC groups, Supplementary file 8, Figure 5, and Figure 5\u2014figure supplement 1. Drugs in GL group 1 showed significantly higher EBGM regarding pulmonary events. Friedman test confirming EBGM profile of selected drugs from GLASSO could be used for comparative analysis of drugs regarding certain indications.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig4-v2.jpg)\n\n**Figure 4.:** No pairwise significant comparison was found similar to Supplementary file 7. But the group comparison was highly significant, p-value = 0.00072.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** No pairwise significant comparison was found similar to Supplementary file 7. But the group comparison was very significant, p-value = 0.044.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig5-v2.jpg)\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70734/elife-70734-fig5-figsupp1-v2.jpg)\n\n## Discussion\n\nThe future of large-scale biomedical science is data-driven decision-making and AI knowledge-based development and validation. AI-enabled technologies can help in better understanding disease indication occurrence and disease determinants or patterns. Quantitative methods have countlessly been applied in various medical fields of study, for example, measurement of disease frequency, prevalence or incidence; evaluation of source of bias and variation of observational studies; multivariate data analysis of risk factors such as applied logistic regression analysis; machine learning for survival analysis or analysis of time at risk (survival) data; boosting power for clinical trials using AI-assisted analysis, etc. In this study, we aimed to apply AI-driven methodologies involving EBGM and GLASSO techniques in predicting SARS-Cov-2 comorbidity for high-risk populations with hypertension.\n\nQuantitative methods, that is, PPR, RR, ROR, EBGM have been used to detect signals for spontaneously reported data. After filtering data by quantitative methods, we proposed that selected drug-ADE based on drug association mechanism would be a valuable procedure for clinical review and comparison of similar drugs with similar ADE profiles. In this study, we demonstrated a systematic way of filtering and selecting data that addresses the noise inherent to such data. None of these methods are free from including false-positive and false-negative signals, however, EBGM and the IC are recommended over other quantitative methods when evaluating by mean average precision (Zorych et al., 2013). This helped the workflow to build a model to understand the bias-variance tradeoff to achieve a balance between the two desirable but incompatible features. Given the absence of a gold standard, no available method is overwhelmingly better than the others (Bate and Evans, 2009). The confirmatory methods proposed in this study (GLASSO and Friedman test) for assessing quantitative methods could reveal the strengths and drawbacks of the methods.\n\nDrugs from different branches in the 3D plot represent distinctive effects of pulmonary ADEs on the separation. For example, PC3 is dominated by fungal, PC2 by more pleural and vascular, and PC1 by respiratory tract effects (see Supplementary file 2). PCs were constructed using the expected counts of a drug and a pulmonary ADE through a linear combination. The spatial separation of drugs indicated that drugs at the perimeter of each branch (numbered) performed disparately regarding pulmonary ADE profiles, suggesting they may not best be managed as having ADE profiles defined by their class. This figure shows the optimal representation of three active variables in biplots acquired by PCA by diminishing the effect of supplementary variables that have no or little influence on the pulmonary ADEs. Using the Friedman test, these separated drugs have significant differences between their drug classes and compared to other drug classes.\n\nThe consistency of the Friedman test and GLASSO to capture EBGM signals of drugs used in small and large populations could be a beneficial tool for drug comparative analysis. Xu et al., 2019, and Stafford et al., 2020, have already applied two methods in pharmacovigilance to animal and human data separately. This study proposed and successfully combined penalized regression together with the non-parametric Friedman test in considering to a better visualization of drug-drug and drug-ADE associations. The RR method is widely utilized due to its simplicity and user-friendly processing. RR, however, may be highly variable for small occurrences of an event. The assessment of drugs or ADEs based on RR showed unstable performance, especially for hidden information. The estimates of small occurrences compared to the whole database were also inflated for events. To correct these issues, the fifth percentiles from the lower confidence interval of EBGM (EB05) was introduced to use as a conservative alternative compared to RR.\n\nEBGM detected that 16 out of 25 pulmonary ADEs in MedDRA databases were associated with macitentan, followed by bosentan with 14 pulmonary ADEs. Both of these drugs belong to the endothelin receptor antagonist class of drugs and are utilized in pulmonary arterial hypertension to prevent vasoconstriction, fibrosis, and inflammation on vascular endothelium and smooth muscle (Lexicomp, 2016). Both drugs are proposed to curb the pulmonary vascular resistance to prevent right heart failure and death, however, pulmonary ADEs of both drugs can be of major concern compared to the outcomes of several other AHAs utilized in this study. At the same time, because these two medications are used in a disease affecting pulmonary function and commonly reported ADEs to include therapeutic failure, these drugs were not surprising to emerge among the highest with reported pulmonary ADEs and, in fact, they serve to validate the methods utilized in this paper. Conversely, doxazosin and rilmenidine were found to have the least pulmonary ADEs in selected drugs from hypertension patients since only two ADE signals were detected based on EBGM. Although it can be used in hypertension, doxazosin is primarily utilized for men with benign prostatic hyperplasia and works by blocking alpha-adrenergic receptors in the vascular smooth muscle, resulting in vasodilation (Lepor et al., 1997). Additionally, studies in countries outside of the US suggest that rilmenidine, a sympatholytic, has a favorable ADE profile for patients with hypertension and diabetes, it is not approved in the US (Meredith and Reid, 2004). After excluding GL Cluster 1, almost the same results can be observed for the remaining GL Clusters. It is also worth mentioning here that the results are shown in Supplementary files 3; 5\u20138, as well as Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1.\n\nThe second group found by EBGM and GL clustering consisted of two drugs from CCBs (nifedipine) and ARBs (candesartan) grouped in combination (Figure 3) and showed four similar pulmonary ADEs: parenchymal lung disorders NEC, pneumothorax and pleural effusions NEC, lower respiratory tract inflammatory and immunologic conditions, and fungal lower respiratory tract infections. Several studies based on these drugs showed effective combination and blood pressure lowering effects in patients with hypertension and appeared an improved side effect profile in comparison with single-agent monotherapy (Hasebe et al., 2005; Kjeldsen et al., 2014; Mancia et al., 2017; Fujikawa et al., 2005). This is undoubtedly an interesting finding resulted from the EBGM analysis and demonstrated how these two drugs can be combined and investigated for pharmacokinetic assessment in drug development including bioavailability and bioequivalence, drug safety pharmacovigilance, and efficacy and comparative tolerability of the combination of nifedipine and candesartan (Patterson and Jones, 2017; Midha and McKay, 2009).\n\nOur previous work showed that quinapril and trandolapril were significantly different from other ACEI and ARB drug classes (Jaberi-Douraki et al., 2021). Separating from its drug class was initially observed in Figure 2 when the PCA biplot was performed. However, these two drugs will not be present when more precautionary methods are applied for several reasons: (1) The dataset is no longer the same as before which contain only ACEIs or ARB. (2) The methods are very differen. (3) Several other drugs and ADEs are added to the study, 134 as opposed to only 16 drug.(4) In the previous work, the focus was on analyzing 13 pulmonary ADEs at the PT level; however, in the current study, we obtained and compare 25 ADEs in HLT groups and each HLT contains several PT ADEs. To be more accurate, ADEs for the 25 ADEs in HLT groups contain approximately 200 different PT vs. only 13 ADEs. (5) The whole purpose of this study was to use EBGM as a much more accurate method compared to RR and RR estimation is also better than the PRR method used before. (6) The implementation of the filtering process of penalized regression GLASSO helps eliminate the insignificant and noise-driven reports.\n\nTwo drugs, tadalafil and sildenafil, are also used for the modulation of dopaminergic pathways and modifying risk factors to prevent and treat erectile dysfunction. Using the 1DATA database when curating the data for the medicinal products of these drugs and checking their active ingredients of tadalafil and sildenafil, the top products are found to be Adcirca (n = 32446) and Revatio (n = 21,358) marketed for the treatment of pulmonary arterial hypertension, respectively, and Cialis (n = 15,623) and Viagra (n = 20820) marketed to treat erectile dysfunction, respectively. We also assessed whether these drugs only show up at high doses or not. This also confirmed that the dose has an insignificant effect on the outcome of ADEs, data are given in Supplementary file 9.\n\nAs part of the future work, it is worth mentioning that this study aimed to reveal the potential risk of patients using hypertensive drugs in terms of pulmonary issues. The 1DATA database will be updated with MedDRA 24.0 that contains the new COVID-19 terms due to its outbreak. It has encouraged the authors to involve terms related to viral infections that facilitate the capture of ADEs caused by COVID-19 in patients with hypertension in the near future. In addition, the pulmonary ADEs of HLT codes in this study were filtered by setting the highest level, SOC, with the focus on respiratory, thoracic, and mediastinal disorders (n = 28), and infection class containing viral infection (n = 2). The plan is to include ADEs from the class of blood and lymphatic system disorders such as thrombosis, coagulation, or platelet disorders. In the big data era, as the spontaneous reports from different data sources including the FDA FAERS database (FDA Adverse Event Reporting System, 2014), the Vaccine Adverse Event Reporting System (VAERS) (Chen et al., 1994; Shimabukuro et al., 2015), and the WHO International Database are increasing in size; drug profiles-based ADEs can be established based on quantitative methods, retrieving the signals, or detecting new signals in large numbers of reports by different methods with the combination of clinical review is needed for pharmacovigilance.\n",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "9411a48d-054b-4bd2-b6b5-95eb461740df",
+      "submission_id": "9af1048b-2002-439f-95b7-358332587f95",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arduino A Mangoni, Flinders Medical Centre Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70734.sa0](https://doi.org/10.7554/eLife.70734.sa0)\n\nThe authors provide a comprehensive statistical analysis of anti hypertensive drug usage, including those use for pulmonary hypertension, in COVID-19 patients. Given the possible association between hypertension, use of blood pressure lowering medications, and COVID-19 risk, such data-driven analyses are important for drawing associative conclusions that could lead to future etiological experiments to identify specific causal mechanisms.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Arduino A Mangoni, Flinders Medical Centre Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70734.sa1](https://doi.org/10.7554/eLife.70734.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Data-driven methodology for discovery and response to pulmonary symptomology in hypertension through AI and machine learning: Application to COVID-19 related pharmacovigilance\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Paul Noble as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Where possible, please elaborate on thresholds used for analysis in data processing and filtering.\n\n2. Be sure to carefully state where multiple comparison corrections to the p-value were made and how. This is done in some parts but could be clearer in others.\n\n3. Please clarify if clustering was done following dimensionality reduction or whether these were separate steps.\n\n4. The use of buzz words like \"machine learning\" and \"AI\" is over done given the preponderance of work is based in traditional statistics. I would advise removing machine learning and AI from the title as it sort builds up an appearance that does not hold when read by a machine learning audience. A \"data driven approach\" is appropriate and best represents the work.\n\n5. Where possible, remove first person in Results and Discussion.\n\n6. Title: \"discovery and response to pulmonary symptomology in hypertension\". It is confusing (at least) to me what the authors want to say. For example, does \"discovery\" here refer to \"diagnosis\"?\n\n7. Abstract: The one sentence in Methods is not clear and specific enough. In addition, it is hard to follow how the results derive to the conclusions.\n\n8. Line 51: typo: indidvual -> individual\n\n9. Lines 130-168: I would suggest to move the lists of the ADEs names (e.g., lines 152-165) into a table or a supplementary material.\n\n10 Line 176: Please add a reference supporting the cut-off criterion (RR >2).\n\n11. Figure 1: It is hard to follow how to interpret the results. Also, please increase the font size in the figure.\n\nJoint Review:\n\nThe work presented uses a comprehensive, traditional statistical approach combined with some sub-elements of machine learning to identify associative patterns of anti-hypertensive drug usage among COVID-19 patients. The goal was to assess SARS-CoV-2 comorbidity among high-risk populations with hypertension. The statistical approach is fundamentally rigorous, although it does contain a series of subjective thresholding decisions (no domain context or specific statistical reason for the decision), particularly in in data processing and filter, that could potentially alter results, particularly for the lower use drug cases. The inability to justify each decision point is not uncommon in big data analysis. Nonetheless, the technical analysis and interpretation of results for the more frequently occurring drugs is robust, supported by statistical analysis, and provides important insights for the planning of future experiments further assessing the etiological mechanisms by which hypertension and/or anti-hypertensive treatment alters the risk and outcome of patients with SARS-CoV-2.\n",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "962fb2af-9abd-45bc-b0db-7ad711be07b7",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C1",
+      "claim": "The COVID-19 pandemic had 115,094,614 confirmed cases and over 2.6 million deaths as of March 5, 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "The coronavirus disease 2019 (COVID-19) pandemic continues with 115,094,614 confirmed cases and over 2.6 million deaths as of March 5, 2021 (WHO, 2020; WHO, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to WHO reports from 2020 and 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "d32a33ab-8281-4bf2-8d02-8d2cd39cb7d4",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C2",
+      "claim": "As high as 45% of COVID-19 infected individuals may remain asymptomatic.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, it is estimated that as high as 45% of infected individuals may remain asymptomatic, contributing to disease transmission and underlying the disparity in symptomology (Oran and Topol, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Oran and Topol, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "fac693d1-7785-4115-8c38-dcabeb1236f0",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C3",
+      "claim": "Comorbid conditions such as diabetes, heart disease, obesity, and hypertension are associated with severe clinical course and mortality in COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "A commonality of severe clinical course and mortality is comorbid conditions such as diabetes, heart disease, obesity, and hypertension (CDC, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to CDC, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "2103f56f-7d86-40db-9d95-4fe53fe55345",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C4",
+      "claim": "Hypertension was recognized early on as being a prevalent risk factor for COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypertension was recognized early on as being a prevalent risk factor (Zhou et al., 2020), possibly due to its pervasiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhou et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "3c90d0e1-23c2-4083-b87a-ebbbeb425023",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C5",
+      "claim": "Hypertension affects 23% of adults in China.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypertension affects 23% of adults in China, where the original study was conducted, but affects 45% of US adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact in the context of comparing prevalence rates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "a7e96dbb-de94-4e6c-81c7-3a132fc7e331",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C6",
+      "claim": "Hypertension affects 45% of US adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypertension affects 23% of adults in China, where the original study was conducted, but affects 45% of US adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact in the context of comparing prevalence rates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "12c6063e-ac41-451c-8ebd-7462891652bd",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C7",
+      "claim": "Angiotensin-converting enzyme inhibitors (ACEIs) and angiotensin-II receptor blockers (ARBs) target proteins of the renin-angiotensin system (RAS).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, specific antihypertensive medications, namely angiotensin-converting enzyme inhibitors (ACEIs) and angiotensin-II receptor blockers (ARBs), target proteins of the renin-angiotensin system (RAS) (James et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to James et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "86a20e55-b8e5-4e7b-908e-1a230566ae25",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C8",
+      "claim": "The RAS is intricately linked to initial infection and possibly the progression of COVID-19 through angiotensin-converting enzyme 2 (ACE2), which acts as the viral entry point of coronavirus SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The RAS is intricately linked to initial infection and possibly the progression of COVID-19 through a RAS receptor, angiotensin-converting enzyme 2 (ACE2), which acts as the viral entry point of coronavirus SARS-CoV-2 (Wiese et al., 2020; Li et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wiese et al., 2020 and Li et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "5d970faf-dca0-4c68-85af-4881a7d872ef",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C9",
+      "claim": "Previous work focused on the incidence of pulmonary ADEs associated with ACEI and ARB use in patients with hypertension and other comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "The previous work focused on the incidence of pulmonary ADEs associated with ACEI and ARB use in patients with hypertension and other comorbidities (Stafford et al., 2020; Jaberi-Douraki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Stafford et al., 2020 and Jaberi-Douraki et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "2e2b1f0f-9b9a-4203-a094-7836581bc708",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C10",
+      "claim": "Specific drugs\u2014rather than entire classes\u2014have higher incidences of pulmonary ADEs, which may have implications for treating patients diagnosed with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings indicate that specific drugs\u2014rather than entire classes\u2014have higher incidences of pulmonary ADEs, which may have implications for treating patients diagnosed with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on findings from previous work and represents an inference about clinical implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "1671e099-d029-4381-bb11-6dc11fef95ad",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C11",
+      "claim": "Most epidemiological studies do not analyze drug effects at the individual drug level but rather compare pharmacological classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most epidemiological studies are not this granular as they do not analyze drug effects at the individual drug level but rather compare pharmacological classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a general observation about epidemiological study practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "8399f6a8-f126-4add-be86-eb31783b7fd8",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C12",
+      "claim": "EBGM and the IC are recommended over other quantitative methods when evaluating by mean average precision.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these methods are free from including false-positive and false-negative signals, however, EBGM and the IC are recommended over other quantitative methods when evaluating by mean average precision (Zorych et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zorych et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "a388a689-f655-463f-830a-a5276e74822d",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C13",
+      "claim": "A total of 480,236 spontaneous ADE reports for patients with hypertension were retrieved from the 1DATA databank of the FAERS database from the first quarter of 2004 until the first quarter of 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 480,236 spontaneous ADE reports for patients with hypertension were retrieved from the 1DATA databank of the FAERS database from the first quarter of 2004 until the first quarter of 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data collection process and is supported by the study's methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "a6655995-2373-41fd-8b63-0709c3aba7f1",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C14",
+      "claim": "The hypertension dataset was aggregated to 1520 ADEs in HLT codes corresponding to 1131 drugs with unique active substances.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypertension dataset was aggregated to 1520 ADEs in HLT codes corresponding to 1131 drugs with unique active substances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes data aggregation results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "c130c554-1d94-487c-82e2-25db23a953d7",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C15",
+      "claim": "98.8% of the data corresponded to 134 of the 1131 drugs after filtering.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 98.8% of the data corresponded to 134 of the 1131 drugs (Table 1 with the column header: # Drugs after initial filtering; this dataset will be exploited to calculate the relative risk for the disproportionality measures of a drug-ADE occurrence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the result of data filtering and is supported by the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "48d0489d-fc14-4b83-8b7b-23d0bbc585e7",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C16",
+      "claim": "Drugs were excluded when the number of ADEs due to each drug was reported less than 500 times, accounting for approximately less than 0.1% of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, drugs were excluded when the number of ADEs due to the fact that each drug was reported less than 500 times, accounting for approximately less than 0.1% of the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the filtering criteria applied in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "1e6cddd8-9339-45fe-9271-bedd8f48e3cb",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C17",
+      "claim": "Macitentan was associated with 64% of pulmonary ADEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Macitentan and bosentan were associated with 64% and 56% of pulmonary ADEs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "db38e6a2-9c06-4d2e-80b6-b539303d0c91",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C18",
+      "claim": "Bosentan was associated with 56% of pulmonary ADEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Macitentan and bosentan were associated with 64% and 56% of pulmonary ADEs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "61ea0a69-16e7-42ce-a85c-7b0e506bde0a",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C19",
+      "claim": "Macitentan and bosentan are prescribed in diseases affecting pulmonary function and may be likely to emerge among the highest reported pulmonary ADEs, serving to validate the methods utilized.",
+      "claim_type": "EXPLICIT",
+      "source": "Because these two medications are prescribed in diseases affecting pulmonary function and may be likely to emerge among the highest reported pulmonary ADEs, in fact, they serve to validate the methods utilized here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the validation of methods based on the expected association between drug indication and ADEs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "697249d5-ead6-4c87-997e-4696ad2f017e",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C20",
+      "claim": "Doxazosin and rilmenidine were found to have the least pulmonary ADEs in selected drugs from hypertension patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, doxazosin and rilmenidine were found to have the least pulmonary ADEs in selected drugs from hypertension patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "6a7cfde7-a005-49a1-8857-9428b1972755",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C21",
+      "claim": "Nifedipine and candesartan were found by signal detection methods to form a drug cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Nifedipine and candesartan were also found by signal detection methods to form a drug cluster, shown by several studies an effective combination of these drugs on lowering blood pressure and appeared an improved side effect profile in comparison with single-agent monotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on signal detection analysis in the study and supported by references to other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "7ad534f8-11fb-4451-937f-55ae9b670a01",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C22",
+      "claim": "Several studies have shown that the combination of nifedipine and candesartan is effective on lowering blood pressure and appeared to have an improved side effect profile in comparison with single-agent monotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Nifedipine and candesartan were also found by signal detection methods to form a drug cluster, shown by several studies an effective combination of these drugs on lowering blood pressure and appeared an improved side effect profile in comparison with single-agent monotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to several studies mentioned in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "1c76193d-5916-40ac-8652-e99d2ac117e4",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C23",
+      "claim": "Drugs from antihypertensives agents, urologicals, and antithrombotic agents (macitentan, bosentan, epoprostenol, selexipag, sildenafil, tadalafil, and beraprost) form a similar class with a significantly higher incidence of pulmonary ADEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Following multiple filtering stages to exclude insignificant and noise-driven reports, we found that drugs from antihypertensives agents, urologicals, and antithrombotic agents (macitentan, bosentan, epoprostenol, selexipag, sildenafil, tadalafil, and beraprost) form a similar class with a significantly higher incidence of pulmonary ADEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis results from the study after multiple filtering stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "31ebaa1f-f332-47fa-8b6c-d65c4b33fa90",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C24",
+      "claim": "Several individual drugs have significant differences between their drug classes and compared to other drug classes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that several individual drugs have significant differences between their drug classes and compared to other drug classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "85a5e4e4-c872-4316-a479-bdf1683b7de9",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C25",
+      "claim": "Macitentan and bosentan from endothelin receptor antagonists show major concern while doxazosin and rilmenidine exhibited the least pulmonary ADEs compared to the outcomes of other drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, macitentan and bosentan from endothelin receptor antagonists show major concern while doxazosin and rilmenidine exhibited the least pulmonary ADEs compared to the outcomes of other drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "ed035db7-1045-42a9-9dc0-58b330fcee30",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C26",
+      "claim": "Drugs from the same drug class could have very different pulmonary ADE profiles affecting outcomes in acute respiratory illness.",
+      "claim_type": "EXPLICIT",
+      "source": "Using techniques in this study, we assessed and confirmed the hypothesis that drugs from the same drug class could have very different pulmonary ADE profiles affecting outcomes in acute respiratory illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a hypothesis that was tested and confirmed using the study's techniques.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "78d9b80c-3dce-4f5b-92ed-33671c188820",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C27",
+      "claim": "ADEs cause approximately 30 billion dollars a year of added healthcare expenses.",
+      "claim_type": "EXPLICIT",
+      "source": "ADEs cause approximately 30 billion dollars a year of added healthcare expenses, along with negative\u2014including fatal\u2014health outcomes (Xu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Xu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "3725f4c5-51c0-4cd0-8ff1-418ccb3d3e58",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C28",
+      "claim": "EBGM detected that 16 out of 25 pulmonary ADEs in MedDRA databases were associated with macitentan.",
+      "claim_type": "EXPLICIT",
+      "source": "EBGM detected that 16 out of 25 pulmonary ADEs in MedDRA databases were associated with macitentan, followed by bosentan with 14 pulmonary ADEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on EBGM analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "296be018-7a85-47d8-82f3-905b52c72cc8",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C29",
+      "claim": "Bosentan was associated with 14 pulmonary ADEs according to EBGM detection.",
+      "claim_type": "EXPLICIT",
+      "source": "EBGM detected that 16 out of 25 pulmonary ADEs in MedDRA databases were associated with macitentan, followed by bosentan with 14 pulmonary ADEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on EBGM analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "2391a181-20a8-4607-b665-d131f14b6412",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C30",
+      "claim": "Macitentan and bosentan belong to the endothelin receptor antagonist class of drugs and are utilized in pulmonary arterial hypertension to prevent vasoconstriction, fibrosis, and inflammation on vascular endothelium and smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these drugs belong to the endothelin receptor antagonist class of drugs and are utilized in pulmonary arterial hypertension to prevent vasoconstriction, fibrosis, and inflammation on vascular endothelium and smooth muscle (Lexicomp, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lexicomp, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "f8608889-10df-4852-a28c-dc0d79680d02",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C31",
+      "claim": "Both macitentan and bosentan are proposed to curb the pulmonary vascular resistance to prevent right heart failure and death.",
+      "claim_type": "EXPLICIT",
+      "source": "Both drugs are proposed to curb the pulmonary vascular resistance to prevent right heart failure and death, however, pulmonary ADEs of both drugs can be of major concern compared to the outcomes of several other AHAs utilized in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the therapeutic purpose of these drugs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "ea60f13e-2ed4-4dab-ab32-667ef2256434",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C32",
+      "claim": "Doxazosin is primarily utilized for men with benign prostatic hyperplasia and works by blocking alpha-adrenergic receptors in the vascular smooth muscle, resulting in vasodilation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it can be used in hypertension, doxazosin is primarily utilized for men with benign prostatic hyperplasia and works by blocking alpha-adrenergic receptors in the vascular smooth muscle, resulting in vasodilation (Lepor et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lepor et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "d22d7465-ba0f-4157-a29c-18955a8c34d2",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C33",
+      "claim": "Studies in countries outside of the US suggest that rilmenidine has a favorable ADE profile for patients with hypertension and diabetes, but it is not approved in the US.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, studies in countries outside of the US suggest that rilmenidine, a sympatholytic, has a favorable ADE profile for patients with hypertension and diabetes, it is not approved in the US (Meredith and Reid, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Meredith and Reid, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "698eb6cd-f007-42ec-b482-c98508b2ba94",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C34",
+      "claim": "Nifedipine and candesartan showed four similar pulmonary ADEs: parenchymal lung disorders NEC, pneumothorax and pleural effusions NEC, lower respiratory tract inflammatory and immunologic conditions, and fungal lower respiratory tract infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The second group found by EBGM and GL clustering consisted of two drugs from CCBs (nifedipine) and ARBs (candesartan) grouped in combination (Figure 3) and showed four similar pulmonary ADEs: parenchymal lung disorders NEC, pneumothorax and pleural effusions NEC, lower respiratory tract inflammatory and immunologic conditions, and fungal lower respiratory tract infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on EBGM and GL clustering analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "dd04a8d7-f516-41a8-8cca-aad70e858928",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C35",
+      "claim": "Several studies based on nifedipine and candesartan showed effective combination and blood pressure lowering effects in patients with hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies based on these drugs showed effective combination and blood pressure lowering effects in patients with hypertension and appeared an improved side effect profile in comparison with single-agent monotherapy (Hasebe et al., 2005; Kjeldsen et al., 2014; Mancia et al., 2017; Fujikawa et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hasebe et al., 2005; Kjeldsen et al., 2014; Mancia et al., 2017; Fujikawa et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "dc3d6609-5d3f-406e-969e-fbff67d58942",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C36",
+      "claim": "The combination of nifedipine and candesartan can be investigated for pharmacokinetic assessment in drug development including bioavailability and bioequivalence, drug safety pharmacovigilance, and efficacy and comparative tolerability.",
+      "claim_type": "EXPLICIT",
+      "source": "This is undoubtedly an interesting finding resulted from the EBGM analysis and demonstrated how these two drugs can be combined and investigated for pharmacokinetic assessment in drug development including bioavailability and bioequivalence, drug safety pharmacovigilance, and efficacy and comparative tolerability of the combination of nifedipine and candesartan (Patterson and Jones, 2017; Midha and McKay, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the study's findings and supported by citations to Patterson and Jones, 2017; Midha and McKay, 2009.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "780a439a-0138-4aa6-af5f-d2fc8275dffd",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C37",
+      "claim": "Previous work showed that quinapril and trandolapril were significantly different from other ACEI and ARB drug classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work showed that quinapril and trandolapril were significantly different from other ACEI and ARB drug classes (Jaberi-Douraki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jaberi-Douraki et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "1121059d-9f59-4364-b88e-dcc5b8212f9e",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C38",
+      "claim": "Tadalafil and sildenafil are used for the modulation of dopaminergic pathways and modifying risk factors to prevent and treat erectile dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Two drugs, tadalafil and sildenafil, are also used for the modulation of dopaminergic pathways and modifying risk factors to prevent and treat erectile dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the therapeutic uses of these drugs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "45b9f358-69ed-4c15-8d62-0b9cbc2c7528",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C39",
+      "claim": "The top products for tadalafil are Adcirca (n = 32446) marketed for the treatment of pulmonary arterial hypertension and Cialis (n = 15,623) marketed to treat erectile dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the 1DATA database when curating the data for the medicinal products of these drugs and checking their active ingredients of tadalafil and sildenafil, the top products are found to be Adcirca (n = 32446) and Revatio (n = 21,358) marketed for the treatment of pulmonary arterial hypertension, respectively, and Cialis (n = 15,623) and Viagra (n = 20820) marketed to treat erectile dysfunction, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data from the 1DATA database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "44a093b7-bd87-4889-9a1e-bd644fd25b82",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C40",
+      "claim": "The top products for sildenafil are Revatio (n = 21,358) marketed for the treatment of pulmonary arterial hypertension and Viagra (n = 20820) marketed to treat erectile dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the 1DATA database when curating the data for the medicinal products of these drugs and checking their active ingredients of tadalafil and sildenafil, the top products are found to be Adcirca (n = 32446) and Revatio (n = 21,358) marketed for the treatment of pulmonary arterial hypertension, respectively, and Cialis (n = 15,623) and Viagra (n = 20820) marketed to treat erectile dysfunction, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data from the 1DATA database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "6ee26d94-369a-4a3f-85ee-6ac783310857",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C41",
+      "claim": "The dose has an insignificant effect on the outcome of ADEs for tadalafil and sildenafil.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed whether these drugs only show up at high doses or not. This also confirmed that the dose has an insignificant effect on the outcome of ADEs, data are given in Supplementary file 9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis results presented in Supplementary file 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "a17dfc8d-1ed4-4f2c-958b-e09431b78b58",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C42",
+      "claim": "The 1DATA database will be updated with MedDRA 24.0 that contains the new COVID-19 terms due to its outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1DATA database will be updated with MedDRA 24.0 that contains the new COVID-19 terms due to its outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a planned future update to the database.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "34174ce9-43e5-49cf-9da4-9c54804ce291",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C43",
+      "claim": "The RR method may be highly variable for small occurrences of an event.",
+      "claim_type": "EXPLICIT",
+      "source": "RR, however, may be highly variable for small occurrences of an event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the limitations of the RR method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "17aa2c45-3967-4bbc-bae0-b6a83bc2b882",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C44",
+      "claim": "The fifth percentiles from the lower confidence interval of EBGM (EB05) was introduced to use as a conservative alternative compared to RR.",
+      "claim_type": "EXPLICIT",
+      "source": "To correct these issues, the fifth percentiles from the lower confidence interval of EBGM (EB05) was introduced to use as a conservative alternative compared to RR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "02e8256f-0c25-416a-a4d1-042976272fc0",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C45",
+      "claim": "Doxazosin and rilmenidine were found to have the least pulmonary ADEs in selected drugs from hypertension patients since only two ADE signals were detected based on EBGM.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, doxazosin and rilmenidine were found to have the least pulmonary ADEs in selected drugs from hypertension patients since only two ADE signals were detected based on EBGM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on EBGM analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "4bcca001-9a31-4ea1-bbec-0963275edc5f",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C46",
+      "claim": "No differences in EBGM of pulmonary ADEs for different drugs in GL Cluster 1 when excluding tadalafil (p-value of 0.199).",
+      "claim_type": "EXPLICIT",
+      "source": "A p-value of 0.199 indicates that no differences in EBGM of pulmonary ADEs for different drugs in GL Cluster 1 when excluding tadalafil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "dd0747d0-9539-4a08-8229-cb1478f45409",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C47",
+      "claim": "GL Clusters 2, 3, 4, 5, and 6 showed no significant differences in EBGM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GL Clusters 2, 3, 4, 5, and 6 showed no significant differences in EBGM, respectively (Table 4 and Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "2bd76016-4aa8-4908-aa1d-fba4054b8d17",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C48",
+      "claim": "The Friedman test showed significant differences in six of the ATC classes before GLASSO.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the original ATC class drugs belonging to, the Friedman test did show significant differences in six of the ATC classes before GLASSO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "3861a67f-a08c-4b46-a405-ff6fe6859b4d",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C49",
+      "claim": "Only drugs in UAs showed no significant differences in EBGM of pulmonary ADEs after applying the Friedman test to 22 drugs selected from GLASSO.",
+      "claim_type": "EXPLICIT",
+      "source": "The same test was applied to 22 drugs selected from GLASSO, only drugs in UAs showed no significant differences in EBGM of pulmonary ADEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "b29aef80-5e8b-4b28-9808-8ef943c40585",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C50",
+      "claim": "Isolated groups from GLASSO showed homogeneity instead of grouping drugs from the same ATC class.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that instead of grouping drugs from the same ATC class, isolated groups from GLASSO showed homogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the statistical analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "f10fea73-be18-4530-8e7a-55fd13b5e73d",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C51",
+      "claim": "The EBGM profile of selected drugs from GLASSO could be used for comparative analysis of drugs regarding certain indications, as confirmed by the Friedman test.",
+      "claim_type": "EXPLICIT",
+      "source": "Friedman test confirming EBGM profile of selected drugs from GLASSO could be used for comparative analysis of drugs regarding certain indications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "afabc54f-10ab-4d8e-accc-ce8aac5431b3",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C52",
+      "claim": "Wilcoxon signed-rank test between groups revealed significant differences in EBGM of pulmonary ADEs between GL Cluster 1 and GL Clusters 3, 4, and 5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using drug class determined by GLASSO, Wilcoxon signed-rank test between groups revealed significant differences in EBGM of pulmonary ADEs between GL Cluster 1 and GL Clusters 3, 4, and 5, respectively, compared to the pairwise comparisons between ATC groups, Supplementary file 8, Figure 5, and Figure 5\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "f434d8dd-3e57-4e8a-bd29-8f8fc04eea00",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C53",
+      "claim": "Drugs in GL group 1 showed significantly higher EBGM regarding pulmonary events.",
+      "claim_type": "EXPLICIT",
+      "source": "Drugs in GL group 1 showed significantly higher EBGM regarding pulmonary events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "6c287421-62a3-4c38-ab58-e924cbcb2cd2",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C54",
+      "claim": "The EBGM scores from the pulmonary ADE profiles were statistically significant for the nine ATC classes using the Friedman test (p-value = 0.0072).",
+      "claim_type": "EXPLICIT",
+      "source": "The EBGM scores from the pulmonary ADE profiles were statistically significant for the nine ATC classes using the Friedman test (p-value = 0.0072, Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "32a204e0-0dec-4cc6-9624-686c74897947",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C55",
+      "claim": "Pairwise comparisons showed no significant differences among any two ATC classes from the adjusted p-value.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairwise comparisons showed no significant differences among any two ATC classes from the adjusted p-value (Supplementary file 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "9d6fc243-1b6e-41e0-9932-c98e5f3f7b14",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C56",
+      "claim": "PC3 is dominated by fungal effects, PC2 by more pleural and vascular effects, and PC1 by respiratory tract effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PC3 is dominated by fungal, PC2 by more pleural and vascular, and PC1 by respiratory tract effects (see Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on PCA analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "b66fed06-62a1-4364-bec8-107b07066600",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C57",
+      "claim": "Drugs at the perimeter of each branch in the 3D PCA plot performed disparately regarding pulmonary ADE profiles, suggesting they may not best be managed as having ADE profiles defined by their class.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial separation of drugs indicated that drugs at the perimeter of each branch (numbered) performed disparately regarding pulmonary ADE profiles, suggesting they may not best be managed as having ADE profiles defined by their class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on PCA analysis results from the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "be42153c-2a86-4536-83c5-e7a026a0c211",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C58",
+      "claim": "The consistency of the Friedman test and GLASSO to capture EBGM signals of drugs used in small and large populations could be a beneficial tool for drug comparative analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The consistency of the Friedman test and GLASSO to capture EBGM signals of drugs used in small and large populations could be a beneficial tool for drug comparative analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the utility of the methods based on the study's results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "bc366ec0-9369-427e-8ffa-e62962f847da",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C59",
+      "claim": "Twelve different pulmonary ADEs in HLTS codes exhibited similar impact by differentiating drugs when projected to PC1 (X-axis).",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve different pulmonary ADEs in HLTS codes (breathing abnormalities, bronchospasm and obstruction, coughing and associated symptoms, lower respiratory tract infections NEC, lower respiratory tract inflammatory and immunologic conditions, lower respiratory tract signs and symptoms, parenchymal lung disorders NEC, pneumothorax, and pleural effusions NEC, pulmonary oedemas, pulmonary thrombotic and embolic conditions, respiratory failures (excl neonatal), and respiratory tract disorders NEC) exhibited similar impact by differentiating these drugs when projected to PC1 (X-axis)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on PCA analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "bb5d18ed-9b4f-4700-a8d8-88925e16f57e",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C60",
+      "claim": "Seven pulmonary ADEs in HLTs codes contributed the most when projected to PC2 (Y-axis).",
+      "claim_type": "EXPLICIT",
+      "source": "and seven pulmonary ADEs in HLTs codes (bronchial conditions NEC, fungal lower respiratory tract infections, pleural conditions NEC, pleural infections and inflammations, respiratory signs and symptoms NEC, respiratory syncytial viral infections, and vascular pulmonary disorders NEC) contributed the most when projected to PC2 (Y-axis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on PCA analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "137ae10c-51aa-41f1-86bf-eddf3c6586a2",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C61",
+      "claim": "Drug classes exhibit very low significant correlations between drugs from the same class after stringent filtering methods.",
+      "claim_type": "EXPLICIT",
+      "source": "After these stringent filtering methods, drug classes exhibit very low significant correlations between drugs from the same class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "06820edd-dc27-46b1-8789-01a69afdd77f",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C62",
+      "claim": "This analysis corroborates the hypothesis that drugs from the same ATC class may have different pulmonary ADE profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Without a doubt, this analysis corroborates the hypothesis that drugs from the same ATC class may have different pulmonary ADE profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the study's analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "88ad6af8-519f-481f-a779-b2f7969b5a11",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C63",
+      "claim": "GL Cluster 1 consists of most associated drugs with most pulmonary ADEs assessed by EBGM.",
+      "claim_type": "EXPLICIT",
+      "source": "It is apparent from Figure 3, Figure 3\u2014figure supplement 1, and Table 3 that GL Cluster 1 consists of most associated drugs with most pulmonary ADEs assessed by EBGM (see also Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on EBGM analysis results presented in figures and tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "475a0edf-f3d2-4bf9-b8bf-7a6b462eec86",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C64",
+      "claim": "Beraprost showed 13 pulmonary ADE profiles reported more commonly than other drugs used for patients with hypertension based on the estimated RR.",
+      "claim_type": "EXPLICIT",
+      "source": "Beraprost showed 13 pulmonary ADE profiles reported more commonly than other drugs used for patients with hypertension based on the estimated RR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RR analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "ef6a2301-3d51-4ae8-984c-a4b1ab680ad9",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C65",
+      "claim": "Macitentan and Selexipag were equally located in the second most commonly reported drugs, each with 10 pulmonary ADEs based on RR.",
+      "claim_type": "EXPLICIT",
+      "source": "Macitentan and Selexipag were equally located in the second most commonly reported drugs, each of which with 10 pulmonary ADEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RR analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "10418b66-cd6e-47ad-a8d0-b763729d0048",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C66",
+      "claim": "Beraprost was corrected from being the top drug with most pulmonary issues and then ranked down to the tenth location by EBGM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, beraprost was corrected from being the top drug with most pulmonary issues and then ranked down to the tenth location by EBGM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparing RR and EBGM analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "c0ccf626-4485-4900-960a-3c0317745461",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C67",
+      "claim": "The assessment for bosentan and tadalafil changed radically when the comparative analysis was done using RR or EBGM.",
+      "claim_type": "EXPLICIT",
+      "source": "The assessment for bosentan and tadalafil also changed radically when the comparative analysis was done using RR or EBGM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparing RR and EBGM analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "21c1c0fb-875c-4742-987e-7576c9411229",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C68",
+      "claim": "44 drugs were selected based on two conditions: (1) the lower confidence interval of EBGM, EB05, of drugs was larger than 1, and (2) a minimum of two different pulmonary ADEs is associated with each drug.",
+      "claim_type": "EXPLICIT",
+      "source": "Then 44 drugs were selected based on two conditions: (1) the lower confidence interval of EBGM, EB05, of drugs was larger than 1, and (2) a minimum of two different pulmonary ADEs is associated with each drug, (Table 1) .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the selection criteria used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "2a56b033-ef9c-4397-b28a-5e5d134335c7",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C69",
+      "claim": "More than half of the drugs were in ARBs, AHAs, ATAs, and CCBs when considering two different pulmonary ADEs at the HLT level.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that few drugs in ACEIs, diuretics, and combinations tended to cause pulmonary issues. More than half of the drugs were in ARBs, AHAs, ATAs, and CCBs when considering two different pulmonary ADEs at the HLT level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "9a983d4c-f2d0-4813-96cc-e2b84891dd2b",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C70",
+      "claim": "Few drugs in ACEIs, diuretics, and combinations tended to cause pulmonary issues.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that few drugs in ACEIs, diuretics, and combinations tended to cause pulmonary issues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "ada645bf-5577-4e30-8327-617981ff1e51",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C72",
+      "claim": "The remaining 22 drugs selected by the GLASSO method based on Pearson correlation were classified using the therapeutic group Cardiovascular System.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 22 drugs selected by the GLASSO method based on Pearson correlation were classified using the therapeutic group Cardiovascular System (C01: Cardiac Therapy, C02: Antihypertensives, C03: Diuretics, C04: Peripheral Vasodilators, C05: Vasoprotectives, C07: Beta Blocking Agents, C08: Calcium Channel Blockers, and C10: Lipid Modifying Agents), except for agents acting on RAS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the classification approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "5d5693bb-de43-4f4f-bd91-bc32f0932d59",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C73",
+      "claim": "For drugs in ACEIs, ARBs, AHAs, and BBAs, no association was observed between drugs within the same class.",
+      "claim_type": "EXPLICIT",
+      "source": "For drugs in ACEIs, ARBs, AHAs, and BBAs, no association was observed between drugs within the same class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "35af41ee-6e20-4f34-ac33-56d6432168c9",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C74",
+      "claim": "More within-class associations were depicted in AHAs, CCBs, and combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "More within-class associations were depicted in AHAs, CCBs, and combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "2a422f5d-4b6b-4877-b48d-bee798dc17e1",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C75",
+      "claim": "Bosentan, tadalafil, treprostinil, and beraprost based on EBGM were ranked substantially higher than their corresponding ranks when using RR, with respect to pulmonary ADEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Bosentan, tadalafil, treprostinil, and beraprost based on EBGM were ranked substantially higher than their corresponding ranks when using RR, with respect to pulmonary ADEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparing RR and EBGM analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "7536ff44-b53f-42bb-b244-6c3decbd6a38",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C76",
+      "claim": "The conservative EBGM method with a fifth percentile cut-off allows for the examination of large datasets of ADEs when high variability is present in the number of ADEs across drugs or drug classes, and still allows for a robust reporting methodology as compared to the RR methodology.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the conservative, EBGM method with a fifth percentile cut-off will allow for the examination of large datasets of ADEs when high variability is present in the number of ADEs across drugs or drug classes, and still allow for a robust reporting methodology as compared to the RR methodology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the methodological advantages of EBGM based on the study's results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "7912ffdb-0b66-4855-ba06-8a1236acbaf6",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "claim_id": "C77",
+      "claim": "The EBGM method allows analysis of very large sets of drugs and ADEs (such as approximately 500,000\u00d7134 matrix) without loss of sensitivity or imparting an over-emphasis on ADEs from infrequently prescribed drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows analysis of very large sets of drugs and ADEs (such as approximately 500,000\u00d7134 matrix here) without loss of sensitivity or imparting an over-emphasis on ADEs from infrequently prescribed drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the methodological advantages of EBGM based on the study's results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "40c07f31-b288-481a-b6e8-3ac1d28b59dc",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study retrieved 480,236 ADE reports from FAERS for hypertensive patients (2004-2020), aggregated to 1520 ADEs and 1131 drugs. After filtering drugs with <500 reports, 98.8% of data corresponded to 134 drugs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 describe the data collection and initial filtering process with specific numbers and clear criteria. The filtering threshold (500 reports, <0.1% of data) is explicitly stated and the resulting dataset (134 drugs, 98.8% of data) is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "ee676ab7-21bc-49ac-b826-26b1fcf1a913",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Macitentan and bosentan, both endothelin receptor antagonists used for pulmonary arterial hypertension, were associated with the highest pulmonary ADEs (64% and 56% respectively, or 16 and 14 out of 25 ADEs by EBGM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 and C28-C29 provide consistent quantitative findings from the analysis. Claims C30-C31 provide mechanistic context from cited literature. The high ADE rates are expected given these drugs' indication for pulmonary disease, which the authors acknowledge as validation of their methods (C19).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "2f51ed3f-3335-4a08-9d4a-81bb4c0f9504",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Doxazosin and rilmenidine exhibited the least pulmonary ADEs among selected drugs, with only 2 ADE signals detected by EBGM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C45 consistently report the finding using EBGM analysis. Claims C32-C33 provide mechanistic context from literature about these drugs' primary uses and favorable ADE profiles, supporting why they might have fewer pulmonary ADEs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "09c64264-36db-451f-88b9-87505c1d9236",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Nifedipine (CCB) and candesartan (ARB) formed a drug cluster by signal detection methods, showing four similar pulmonary ADEs. Prior studies support this combination's effectiveness for blood pressure lowering with improved side effect profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C34 report the clustering finding with specific ADEs identified. Claims C22 and C35 cite multiple studies supporting the combination's efficacy and safety. Claim C36 appropriately suggests future pharmacokinetic investigation rather than claiming established benefit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "66225b53-b672-4aca-8b40-1765b61aa0ed",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Drugs from antihypertensives, urologicals, and antithrombotic agents formed a class with significantly higher pulmonary ADEs. Individual drugs showed significant differences within and between drug classes, confirming that drugs from the same ATC class can have very different pulmonary ADE profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 report specific findings from the filtering and analysis. Claim C26 states the hypothesis was confirmed, and C62 reinforces this conclusion. The statistical analyses (Friedman test, GLASSO clustering) support heterogeneity within drug classes, though the strength of evidence varies by class.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "69c123ad-64ff-4acc-91c4-6e65ea75c878",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EBGM with EB05>1 threshold provided more conservative and robust ADE assessment than RR, particularly for drugs with variable reporting frequencies. Rankings changed substantially between methods (e.g., beraprost ranked 1st by RR but 10th by EBGM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 establish the methodological rationale. Claims C64-C67 and C75 provide specific examples of ranking changes between RR and EBGM. Claims C76-C77 appropriately characterize EBGM's advantages for large, heterogeneous datasets. The comparison validates the conservative approach, though the authors acknowledge no method is free from false positives/negatives (C12).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Friedman test showed GL Clusters (from GLASSO) exhibited homogeneity within clusters, while original ATC classes showed significant heterogeneity. GL Cluster 1 showed significantly higher EBGM for pulmonary events compared to GL Clusters 3, 4, and 5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 report specific p-values from Friedman tests showing no significant differences within GL Clusters but significant differences within ATC classes. Claims C50-C51 interpret this as validation of GLASSO clustering. Claims C52-C55 report between-cluster comparisons with appropriate statistical tests (Wilcoxon with Bonferroni correction). The statistical approach is sound, though the biological interpretation requires caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "c4eb4dde-cc71-47ae-b490-3f144f82e547",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PCA revealed that PC1 was dominated by 12 respiratory tract-related ADEs, PC2 by 7 pleural/vascular ADEs, and PC3 by fungal effects. Drugs at the perimeter of branches showed disparate pulmonary ADE profiles, suggesting they may not be best managed by class-based profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C59-C60 provide specific ADE loadings for each principal component with reference to supplementary data. Claim C57 makes an appropriate inference from the spatial separation observed in PCA. The interpretation is consistent with the study's main hypothesis about within-class heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "4b3b8a78-61ce-4898-81b9-817d3a30085a",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "After stringent filtering, drug classes exhibited very low correlations between drugs from the same class. GL Cluster 1 contained most drugs with most pulmonary ADEs. Within-class associations were minimal for ACEIs, ARBs, AHAs, and BBAs, but more evident in CCBs and combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C73-C74 report correlation patterns from the analysis. Claim C62 appropriately interprets this as supporting the hypothesis. Claim C63 identifies GL Cluster 1 characteristics with reference to figures and tables. The findings are internally consistent and support the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "270e34f9-c3ab-42b5-8d80-7862375ff830",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "44 drugs were selected based on EB05>1 and \u22652 pulmonary ADEs, with most in ARBs, AHAs, ATAs, and CCBs. GLASSO further reduced this to 22 drugs classified by cardiovascular therapeutic groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 clearly describe the selection criteria and resulting drug distribution. Claim C72 describes the classification approach for the 22 drugs retained after GLASSO. The filtering process is well-documented and appropriate for reducing noise in the dataset.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "ea433da4-4dd7-47e2-9d13-e2b64bd78f29",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tadalafil and sildenafil are used for erectile dysfunction and pulmonary arterial hypertension. Top products were Adcirca/Cialis (tadalafil) and Revatio/Viagra (sildenafil). Dose had insignificant effect on ADE outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 provide product information from the 1DATA database with specific report counts. Claim C41 reports a dose-response analysis (referenced in Supplementary file 9). The finding that dose is insignificant is important for interpretation but lacks detail on the analysis method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "24aa75aa-233e-4ec2-bb56-b7f3e203fe93",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "EBGM and IC are recommended over other quantitative methods for mean average precision. The consistency of Friedman test and GLASSO in capturing EBGM signals across population sizes could be beneficial for drug comparative analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 cites prior work (Zorych et al., 2013) supporting EBGM/IC superiority. Claims C58, C76-C77 make appropriate inferences about the utility of the combined methodological approach based on the study's results. The claims are appropriately cautious (\"could be beneficial\") rather than definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "caa7b3c8-b612-4648-bb1a-a327d50e07e8",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "COVID-19 context: As of March 2021, there were 115M cases and 2.6M deaths. Up to 45% of infections may be asymptomatic. Hypertension is a prevalent risk factor, affecting 23% of Chinese and 45% of US adults. ACEIs/ARBs target RAS, which is linked to COVID-19 through ACE2 viral entry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide background context from cited sources (WHO, CDC, published literature). These establish the rationale for studying pulmonary ADEs in hypertensive patients during COVID-19. All claims are appropriately cited and provide relevant context, though they are not primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "a3450e01-bef9-49eb-89e1-f1d57e3cc037",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work focused on pulmonary ADEs with ACEIs/ARBs in hypertensive patients, finding specific drugs rather than entire classes have higher ADE incidences. Most epidemiological studies compare drug classes rather than individual drugs. Previous work showed quinapril and trandolapril differed from other ACEIs/ARBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C37 cite the authors' previous work establishing the foundation for this study. Claim C11 provides context about typical epidemiological approaches. These appropriately position the current work as extending prior findings to a broader drug set with refined methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    },
+    {
+      "id": "bf9b8da9-8c51-4032-a321-69fd8b8d6442",
+      "content_id": "40f60fcf-d926-401f-b385-075dd4cdce6c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The 1DATA database will be updated with MedDRA 24.0 containing new COVID-19 terms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 describes a planned future update. This is speculation about future work rather than a current finding. While it indicates the authors' intentions, it cannot be evaluated as a result of the present study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:04:41.422826Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a388a689-f655-463f-830a-a5276e74822d",
+      "result_id": "40c07f31-b288-481a-b6e8-3ac1d28b59dc"
+    },
+    {
+      "claim_id": "a6655995-2373-41fd-8b63-0709c3aba7f1",
+      "result_id": "40c07f31-b288-481a-b6e8-3ac1d28b59dc"
+    },
+    {
+      "claim_id": "c130c554-1d94-487c-82e2-25db23a953d7",
+      "result_id": "40c07f31-b288-481a-b6e8-3ac1d28b59dc"
+    },
+    {
+      "claim_id": "48d0489d-fc14-4b83-8b7b-23d0bbc585e7",
+      "result_id": "40c07f31-b288-481a-b6e8-3ac1d28b59dc"
+    },
+    {
+      "claim_id": "1e6cddd8-9339-45fe-9271-bedd8f48e3cb",
+      "result_id": "ee676ab7-21bc-49ac-b826-26b1fcf1a913"
+    },
+    {
+      "claim_id": "db38e6a2-9c06-4d2e-80b6-b539303d0c91",
+      "result_id": "ee676ab7-21bc-49ac-b826-26b1fcf1a913"
+    },
+    {
+      "claim_id": "3725f4c5-51c0-4cd0-8ff1-418ccb3d3e58",
+      "result_id": "ee676ab7-21bc-49ac-b826-26b1fcf1a913"
+    },
+    {
+      "claim_id": "296be018-7a85-47d8-82f3-905b52c72cc8",
+      "result_id": "ee676ab7-21bc-49ac-b826-26b1fcf1a913"
+    },
+    {
+      "claim_id": "2391a181-20a8-4607-b665-d131f14b6412",
+      "result_id": "ee676ab7-21bc-49ac-b826-26b1fcf1a913"
+    },
+    {
+      "claim_id": "f8608889-10df-4852-a28c-dc0d79680d02",
+      "result_id": "ee676ab7-21bc-49ac-b826-26b1fcf1a913"
+    },
+    {
+      "claim_id": "697249d5-ead6-4c87-997e-4696ad2f017e",
+      "result_id": "2f51ed3f-3335-4a08-9d4a-81bb4c0f9504"
+    },
+    {
+      "claim_id": "ea60f13e-2ed4-4dab-ab32-667ef2256434",
+      "result_id": "2f51ed3f-3335-4a08-9d4a-81bb4c0f9504"
+    },
+    {
+      "claim_id": "d22d7465-ba0f-4157-a29c-18955a8c34d2",
+      "result_id": "2f51ed3f-3335-4a08-9d4a-81bb4c0f9504"
+    },
+    {
+      "claim_id": "02e8256f-0c25-416a-a4d1-042976272fc0",
+      "result_id": "2f51ed3f-3335-4a08-9d4a-81bb4c0f9504"
+    },
+    {
+      "claim_id": "6a7cfde7-a005-49a1-8857-9428b1972755",
+      "result_id": "09c64264-36db-451f-88b9-87505c1d9236"
+    },
+    {
+      "claim_id": "7ad534f8-11fb-4451-937f-55ae9b670a01",
+      "result_id": "09c64264-36db-451f-88b9-87505c1d9236"
+    },
+    {
+      "claim_id": "698eb6cd-f007-42ec-b482-c98508b2ba94",
+      "result_id": "09c64264-36db-451f-88b9-87505c1d9236"
+    },
+    {
+      "claim_id": "dd04a8d7-f516-41a8-8cca-aad70e858928",
+      "result_id": "09c64264-36db-451f-88b9-87505c1d9236"
+    },
+    {
+      "claim_id": "dc3d6609-5d3f-406e-969e-fbff67d58942",
+      "result_id": "09c64264-36db-451f-88b9-87505c1d9236"
+    },
+    {
+      "claim_id": "1c76193d-5916-40ac-8652-e99d2ac117e4",
+      "result_id": "66225b53-b672-4aca-8b40-1765b61aa0ed"
+    },
+    {
+      "claim_id": "31ebaa1f-f332-47fa-8b6c-d65c4b33fa90",
+      "result_id": "66225b53-b672-4aca-8b40-1765b61aa0ed"
+    },
+    {
+      "claim_id": "85a5e4e4-c872-4316-a479-bdf1683b7de9",
+      "result_id": "66225b53-b672-4aca-8b40-1765b61aa0ed"
+    },
+    {
+      "claim_id": "ed035db7-1045-42a9-9dc0-58b330fcee30",
+      "result_id": "66225b53-b672-4aca-8b40-1765b61aa0ed"
+    },
+    {
+      "claim_id": "06820edd-dc27-46b1-8789-01a69afdd77f",
+      "result_id": "66225b53-b672-4aca-8b40-1765b61aa0ed"
+    },
+    {
+      "claim_id": "34174ce9-43e5-49cf-9da4-9c54804ce291",
+      "result_id": "69c123ad-64ff-4acc-91c4-6e65ea75c878"
+    },
+    {
+      "claim_id": "17aa2c45-3967-4bbc-bae0-b6a83bc2b882",
+      "result_id": "69c123ad-64ff-4acc-91c4-6e65ea75c878"
+    },
+    {
+      "claim_id": "475a0edf-f3d2-4bf9-b8bf-7a6b462eec86",
+      "result_id": "69c123ad-64ff-4acc-91c4-6e65ea75c878"
+    },
+    {
+      "claim_id": "ef6a2301-3d51-4ae8-984c-a4b1ab680ad9",
+      "result_id": "69c123ad-64ff-4acc-91c4-6e65ea75c878"
+    },
+    {
+      "claim_id": "10418b66-cd6e-47ad-a8d0-b763729d0048",
+      "result_id": "69c123ad-64ff-4acc-91c4-6e65ea75c878"
+    },
+    {
+      "claim_id": "c0ccf626-4485-4900-960a-3c0317745461",
+      "result_id": "69c123ad-64ff-4acc-91c4-6e65ea75c878"
+    },
+    {
+      "claim_id": "2a422f5d-4b6b-4877-b48d-bee798dc17e1",
+      "result_id": "69c123ad-64ff-4acc-91c4-6e65ea75c878"
+    },
+    {
+      "claim_id": "7536ff44-b53f-42bb-b244-6c3decbd6a38",
+      "result_id": "69c123ad-64ff-4acc-91c4-6e65ea75c878"
+    },
+    {
+      "claim_id": "7912ffdb-0b66-4855-ba06-8a1236acbaf6",
+      "result_id": "69c123ad-64ff-4acc-91c4-6e65ea75c878"
+    },
+    {
+      "claim_id": "4bcca001-9a31-4ea1-bbec-0963275edc5f",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "dd0747d0-9539-4a08-8229-cb1478f45409",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "2bd76016-4aa8-4908-aa1d-fba4054b8d17",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "3861a67f-a08c-4b46-a405-ff6fe6859b4d",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "b29aef80-5e8b-4b28-9808-8ef943c40585",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "f10fea73-be18-4530-8e7a-55fd13b5e73d",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "afabc54f-10ab-4d8e-accc-ce8aac5431b3",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "f434d8dd-3e57-4e8a-bd29-8f8fc04eea00",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "6c287421-62a3-4c38-ab58-e924cbcb2cd2",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "32a204e0-0dec-4cc6-9624-686c74897947",
+      "result_id": "3f05c12a-9f80-448a-b5ea-9a6c3511130f"
+    },
+    {
+      "claim_id": "9d6fc243-1b6e-41e0-9932-c98e5f3f7b14",
+      "result_id": "c4eb4dde-cc71-47ae-b490-3f144f82e547"
+    },
+    {
+      "claim_id": "b66fed06-62a1-4364-bec8-107b07066600",
+      "result_id": "c4eb4dde-cc71-47ae-b490-3f144f82e547"
+    },
+    {
+      "claim_id": "bc366ec0-9369-427e-8ffa-e62962f847da",
+      "result_id": "c4eb4dde-cc71-47ae-b490-3f144f82e547"
+    },
+    {
+      "claim_id": "bb5d18ed-9b4f-4700-a8d8-88925e16f57e",
+      "result_id": "c4eb4dde-cc71-47ae-b490-3f144f82e547"
+    },
+    {
+      "claim_id": "137ae10c-51aa-41f1-86bf-eddf3c6586a2",
+      "result_id": "4b3b8a78-61ce-4898-81b9-817d3a30085a"
+    },
+    {
+      "claim_id": "06820edd-dc27-46b1-8789-01a69afdd77f",
+      "result_id": "4b3b8a78-61ce-4898-81b9-817d3a30085a"
+    },
+    {
+      "claim_id": "88ad6af8-519f-481f-a779-b2f7969b5a11",
+      "result_id": "4b3b8a78-61ce-4898-81b9-817d3a30085a"
+    },
+    {
+      "claim_id": "5d5693bb-de43-4f4f-bd91-bc32f0932d59",
+      "result_id": "4b3b8a78-61ce-4898-81b9-817d3a30085a"
+    },
+    {
+      "claim_id": "35af41ee-6e20-4f34-ac33-56d6432168c9",
+      "result_id": "4b3b8a78-61ce-4898-81b9-817d3a30085a"
+    },
+    {
+      "claim_id": "21c1c0fb-875c-4742-987e-7576c9411229",
+      "result_id": "270e34f9-c3ab-42b5-8d80-7862375ff830"
+    },
+    {
+      "claim_id": "2a56b033-ef9c-4397-b28a-5e5d134335c7",
+      "result_id": "270e34f9-c3ab-42b5-8d80-7862375ff830"
+    },
+    {
+      "claim_id": "9a983d4c-f2d0-4813-96cc-e2b84891dd2b",
+      "result_id": "270e34f9-c3ab-42b5-8d80-7862375ff830"
+    },
+    {
+      "claim_id": "ada645bf-5577-4e30-8327-617981ff1e51",
+      "result_id": "270e34f9-c3ab-42b5-8d80-7862375ff830"
+    },
+    {
+      "claim_id": "1121059d-9f59-4364-b88e-dcc5b8212f9e",
+      "result_id": "ea433da4-4dd7-47e2-9d13-e2b64bd78f29"
+    },
+    {
+      "claim_id": "45b9f358-69ed-4c15-8d62-0b9cbc2c7528",
+      "result_id": "ea433da4-4dd7-47e2-9d13-e2b64bd78f29"
+    },
+    {
+      "claim_id": "44a093b7-bd87-4889-9a1e-bd644fd25b82",
+      "result_id": "ea433da4-4dd7-47e2-9d13-e2b64bd78f29"
+    },
+    {
+      "claim_id": "6ee26d94-369a-4a3f-85ee-6ac783310857",
+      "result_id": "ea433da4-4dd7-47e2-9d13-e2b64bd78f29"
+    },
+    {
+      "claim_id": "8399f6a8-f126-4add-be86-eb31783b7fd8",
+      "result_id": "24aa75aa-233e-4ec2-bb56-b7f3e203fe93"
+    },
+    {
+      "claim_id": "be42153c-2a86-4536-83c5-e7a026a0c211",
+      "result_id": "24aa75aa-233e-4ec2-bb56-b7f3e203fe93"
+    },
+    {
+      "claim_id": "7536ff44-b53f-42bb-b244-6c3decbd6a38",
+      "result_id": "24aa75aa-233e-4ec2-bb56-b7f3e203fe93"
+    },
+    {
+      "claim_id": "7912ffdb-0b66-4855-ba06-8a1236acbaf6",
+      "result_id": "24aa75aa-233e-4ec2-bb56-b7f3e203fe93"
+    },
+    {
+      "claim_id": "962fb2af-9abd-45bc-b0db-7ad711be07b7",
+      "result_id": "caa7b3c8-b612-4648-bb1a-a327d50e07e8"
+    },
+    {
+      "claim_id": "d32a33ab-8281-4bf2-8d02-8d2cd39cb7d4",
+      "result_id": "caa7b3c8-b612-4648-bb1a-a327d50e07e8"
+    },
+    {
+      "claim_id": "fac693d1-7785-4115-8c38-dcabeb1236f0",
+      "result_id": "caa7b3c8-b612-4648-bb1a-a327d50e07e8"
+    },
+    {
+      "claim_id": "2103f56f-7d86-40db-9d95-4fe53fe55345",
+      "result_id": "caa7b3c8-b612-4648-bb1a-a327d50e07e8"
+    },
+    {
+      "claim_id": "3c90d0e1-23c2-4083-b87a-ebbbeb425023",
+      "result_id": "caa7b3c8-b612-4648-bb1a-a327d50e07e8"
+    },
+    {
+      "claim_id": "a7e96dbb-de94-4e6c-81c7-3a132fc7e331",
+      "result_id": "caa7b3c8-b612-4648-bb1a-a327d50e07e8"
+    },
+    {
+      "claim_id": "12c6063e-ac41-451c-8ebd-7462891652bd",
+      "result_id": "caa7b3c8-b612-4648-bb1a-a327d50e07e8"
+    },
+    {
+      "claim_id": "86a20e55-b8e5-4e7b-908e-1a230566ae25",
+      "result_id": "caa7b3c8-b612-4648-bb1a-a327d50e07e8"
+    },
+    {
+      "claim_id": "5d970faf-dca0-4c68-85af-4881a7d872ef",
+      "result_id": "a3450e01-bef9-49eb-89e1-f1d57e3cc037"
+    },
+    {
+      "claim_id": "2e2b1f0f-9b9a-4203-a094-7836581bc708",
+      "result_id": "a3450e01-bef9-49eb-89e1-f1d57e3cc037"
+    },
+    {
+      "claim_id": "1671e099-d029-4381-bb11-6dc11fef95ad",
+      "result_id": "a3450e01-bef9-49eb-89e1-f1d57e3cc037"
+    },
+    {
+      "claim_id": "780a439a-0138-4aa6-af5f-d2fc8275dffd",
+      "result_id": "a3450e01-bef9-49eb-89e1-f1d57e3cc037"
+    },
+    {
+      "claim_id": "a17dfc8d-1ed4-4f2c-958b-e09431b78b58",
+      "result_id": "bf9b8da9-8c51-4032-a321-69fd8b8d6442"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1406 @@
+{
+  "submission": {
+    "id": "047fa86f-518e-4c50-833d-6a8cad41be91",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:11:14.671748Z",
+    "updated_at": "2025-12-03T09:11:14.671748Z"
+  },
+  "content": [
+    {
+      "id": "bf597787-3aae-4236-a585-189366424279",
+      "submission_id": "047fa86f-518e-4c50-833d-6a8cad41be91",
+      "content_type": "manuscript",
+      "content_text": "# Single-nucleus transcriptomic analysis of human dorsal root ganglion neurons\n\n## Authors\n\n- Minh Q Nguyen<sup>1</sup>\n- Lars J von Buchholtz<sup>1</sup>\n- Ashlie N Reker<sup>2</sup>\n- Nicholas JP Ryba<sup>1</sup> ([ORCID: 0000-0002-2060-8393](https://orcid.org/0000-0002-2060-8393)) \u2020\n- Steve Davidson<sup>2</sup> ([ORCID: 0000-0003-2944-1144](https://orcid.org/0000-0003-2944-1144)) \u2020\n\n### Affiliations\n\n1. National Institute of Dental and Craniofacial Research, National Institutes of Health Bethesda United States\n2. Department of Anesthesiology, College of Medicine, University of Cincinnati Cincinnati United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSomatosensory neurons with cell bodies in the dorsal root ganglia (DRG) project to the skin, muscles, bones, and viscera to detect touch and temperature as well as to mediate proprioception and many types of interoception. In addition, the somatosensory system conveys the clinically relevant noxious sensations of pain and itch. Here, we used single nuclear transcriptomics to characterize transcriptomic classes of human DRG neurons that detect these diverse types of stimuli. Notably, multiple types of human DRG neurons have transcriptomic features that resemble their mouse counterparts although expression of genes considered important for sensory function often differed between species. More unexpectedly, we identified several transcriptomic classes with no clear equivalent in the other species. This dataset should serve as a valuable resource for the community, for example as means of focusing translational efforts on molecules with conserved expression across species.\n\n## Introduction\n\nThe somatosensory system responds to a wide range of mechanical, thermal, and chemical stimuli to provide animals with critical information about their environment and internal state. For example, our sense of touch is mediated by mechanosensory neurons with soma located in the dorsal root and trigeminal ganglia that innervate the skin (Abraira and Ginty, 2013). In addition to the skin, somatosensory neurons target specialized sensory environments like the cornea and conjunctiva or meninges (von Buchholtz et al., 2020; Huang et al., 2018), the internal organs (Hockley et al., 2019) as well as bones and muscles to provide rich perceptual experiences and trigger appropriate behavioral, reflex, and autonomic responses (Gatto et al., 2019). Among their many roles, somatosensory neurons provide input for the conscious perception of pain and itch (Basbaum et al., 2009; Mishra and Hoon, 2013) and the subconscious coordination of muscles and limbs known as proprioception (Chesler et al., 2016). Peripheral neurites of somatosensory receptor cells must adapt to growth, reinnervate targets after injury and are also affected by inflammation (Pongratz and Straub, 2013).\n\nStudies in model organisms have characterized a range of sensory and growth factor receptors and ion channels that contribute to the properties and selectivity of somatosensory neurons (Le Pichon and Chesler, 2014; Coste et al., 2010; Ranade et al., 2014). Some of these, like the cooling and menthol sensing receptor (Trpm8) appear to define functional classes of cells (Bautista et al., 2007). By contrast, the sense of touch appears to use a complex distributed code involving several different types of cells (von Buchholtz et al., 2021b) to achieve its remarkable discriminatory power. For the most part, the human somatosensory system expresses the same range of functional genes as rodents (Ray et al., 2018) and exhibits similar responses to many types of stimulus (Adriaensen et al., 1983; Basbaum et al., 2009; Chesler et al., 2016; Le Pichon and Chesler, 2014; Ranade et al., 2014; Bautista et al., 2014; Davidson et al., 2016). Moreover, rare individuals with loss of function variants of several of these genes have deficits that recapitulate key effects of knocking out that gene in mice (Chesler et al., 2016; Murthy et al., 2018; Szczot et al., 2018; Drenth and Waxman, 2007; Chen et al., 2015). However, despite the identified similarities between mice and humans, the success of translating new therapeutic strategies that are effective for treating pain in mice has often been disappointing when tested in human subjects (Mogil, 2019; Yezierski and Hansson, 2018).\n\nRecently, various directed genetic strategies have been used in mice to characterize the response properties and anatomical features of a variety of interesting classes of large diameter, fast conducting A\u03b2 and A\u03b4 subtypes (Abraira and Ginty, 2013). Interestingly, these neurons generally have complex peripheral endings that often target hair follicles. Human skin hairs are quite different from those in mice, suggesting that there may be significant differences between the large diameter neurons in mice and humans. By contrast, most types of small diameter, slow conducting c-fibers terminate as free nerve endings both in mice and humans (Basbaum et al., 2009). Single-cell sequencing approaches have produced a transcriptomic classification for mouse somatosensory neurons that corresponds well with their anatomy and function (Gatto et al., 2019; von Buchholtz et al., 2021b; Sharma et al., 2020; Nguyen et al., 2019). In mice, at least two classes of small diameter neurons are best defined by different members of the Mrgpr family of GPCRs (Sharma et al., 2020; Nguyen et al., 2019). However, Mrgprs have undergone massive genetic expansion in rodents, not seen in other animals, often making it difficult to identify true orthologs in humans (Dong et al., 2001; Liu et al., 2009) and raising questions as to whether similar cells would have distinct molecular markers in the two species. A map of human somatosensory neuron transcriptomic classes would help uncover selective differences between the sensory neurons in mice and humans and provide clues as to how similar somatosensory input is in the two species. Finally, such analysis may provide important new targets to consider for translational approaches to treat both pain and itch. Here, we used nuclei-based single-cell transcriptomics to generate an initial description of human cell types, highlight similarities and surprising differences between somatosensory neuron classes in humans and mice that are reflected not only in terms of individual genes but can be discerned in co-clustering. We used multigene in situ hybridization (ISH) to help confirm these conclusions and present evidence for anatomic organization of functionally distinct neuronal classes in the human dorsal root ganglion.\n\n## Results\n\n### Generating a representative transcriptomic map of human somatosensory cell types\n\nSingle lumbar L4 and L5 human dorsal root ganglia (DRG) were rapidly recovered from transplant donors within 90 min of cross-clamp and were immediately stored in RNAlater. Nuclei from individual ganglia were isolated and samples were enriched for neuronal nuclei by selection using an antibody to NeuN (see Figure 1\u2014figure supplement 1). Five ganglia from one male and four female donors with ages ranging from 34 to 55 were subjected to droplet based single nucleus (sn) capture, barcoding, and reverse transcription (\u00d710 Genomics). Combinatorial clustering methods (Stuart et al., 2019) allowed co-clustering of neuronal nuclei into a well-defined set of distinct transcriptomic groups that are well separated from their non-neuronal counterparts (Figure 1A, Figure 1\u2014figure supplement 2). After removal of non-neuronal nuclei from the dataset, reclustering the DRG-neuron data from 1837 cells identified a range of about a dozen diverse transcriptomic classes of human somatosensory neurons (Figure 1B, Figure 1\u2014figure supplements 2 and 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig1-v1.jpg)\n\n**Figure 1.:** (A) Universal manifold (UMAP) representation of graph-based co-clustered snRNA sequences from human DRG nuclei reveal two well separated groups corresponding to sensory neurons (colored) and non-neuronal cells (gray). To the right, a dotplot highlights the expression of markers that help distinguish these groups of cells (see also Figure 1\u2014figure supplement 2A for more information about preliminary analysis). (B) Reanalyzing 1837 neuronal nuclei clusters human DRG neurons into transcriptomically distinct groups that have been differentially colored. (C) Similarity in expression of differentially expressed genes between human and mouse neuronal types may help functional classification of neuronal types: UMAP representation of human DRG neurons showing relative expression level (blue) of diagnostic markers. For comparison UMAP representation of mouse neurons (Renthal et al., 2020) showing the relative expression patterns of the same markers. In combination, the expression patterns of these and other genes (Figure 1\u2014figure supplements 2 and 4, Figure 1\u2014figure supplement 5) were used to tentatively match several human and mouse transcriptomic classes (Figure 1\u2014figure supplement 4).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Confocal image showing section of a DRG ganglion stained using NeuN histochemistry (red) and neurotrace (green). Note that the large diameter neurons are strongly NeuN positive whereas neurotrace also detects non-neuronal structures (scale bar = 0.5 mm). Inset shows magnified view of the boxed region. (B) Immunohistochemistry (IHC) double staining using anti NeuN (red) anti-\u03b23 tubulin (TUBB3, green) further demonstrates NeuN staining of both small and large diameter DRG soma; the tubulin staining primarily highlights neuronal processes rich in microtubules. Also shown is 4\u2032,6-diamidino-2-phenylindole (DAPI) staining emphasizing the need to enrich for neuronal nuclei prior to sequencing since the number of non-neuronal nuclei greatly exceeds those of neurons (scale bar = 100 \u00b5m).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Universal manifold (UMAP) representation showing relative expression levels of the neuronal marker SNAP25 (blue) and the non-neuronal gene APOE (red) in the initial clustering of sn-RNA sequencing data. It should be noted that the majority of the non-neuronal cells came from a single nuclear isolation where it is likely that neuronal nuclear purification was not effective. Sequence analysis indicated that most of the non-neuronal cells were satellite microglia although other cell types were also seen. (B) UMAP representation showing other markers that help distinguish non-neuronal nuclei from DRG neurons. (C) UMAP representation of the clustering of human DRG neurons highlighting the contributions of the six different preparations to the dataset. Note that clusters were populated with data from multiple different preparations. (D) UMAP representation of the number of genes identified per DRG neuron. (E) UMAP representation of 30 doublets predicted using DoubletFinder (see Methods).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Universal manifold (UMAP) representations showing analysis of human DRG neurons using different parameters in Seurat. The choice of principal components (PCs) used for UMAP display and clustering is indicated to the left and for the left column the resolution of the clustering is shown above the UMAP. Note that the number of clusters detected varies with the resolution chosen. The right column shows the same UMAP as the left column but now the original identity of neurons from Figure 1 has been mapped onto the clustering. Note that the 15 clusters map to relatively contiguous populations of neurons over a wide range of PC choices indicating that there are very robust transcriptomic differences between about a dozen different classes of DRG neurons in our dataset.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Universal manifold (UMAP) representations: upper panels, human sn-RNA sequencing; lower panels, mouse sn-RNA sequencing. To the left, identity of the different neuronal types is differentially colored. For the mouse, the identities of all clusters are indicated, for the human data, the position of names indicate the clusters with shared markers indicating a match to mouse neuronal types. The expression pattern of several such marker genes (blue) is shown to the right (see also Figure 1 and Figure 1\u2014figure supplement 5). In the human dataset, A\u03b4 nociceptors account for 26% of sequenced neurons; c-peptidergic nociceptors, 23% (including H5, 4%); A\u03b2 neurons, 7%; proprioceptors, 2%; A\u03b4-LTMRs, 3%; and cool sensors, 3% (totaling 64% of all neurons). Other classes not identified as potential counterparts to mouse neurons based on preliminary analysis of marker expression were H4, 4%; H9, 2%; H10, 13%; H11, 10%; and H12, 7%.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Dotplots displaying information about the fractional expression and relative expression level of marker genes in the different identity classes of mouse (left, gray-green scale) and human (right, gray-blue scale). Marker genes were chosen based on their expression (or lack of expression) in particular classes of mouse neurons. Red boxes highlight the relationship between a particular mouse class and human neurons; fainter red boxes indicate human classes that share some characteristics with the highlighted mouse neurons. Left panel top to bottom: c-peptidergic nociceptors (c-PepNoc); A\u03b4-peptidergic nociceptors (Ad-PepNoc); cool sensing cells (Cool). Right panel top to bottom: A\u03b4LTMRs (Ad-LTMRs); A\u03b2 neurons (Abeta); proprioceptors (Proprioc). The cyan box highlights H9 a human-specific cell type that expresses TRPM8 but also nociceptor markers and the mechanosensitive channel PIEZO2 unlike the putative cool sensing cells in human (H8) and in mice.\n\nOne of the best studied groups of somatosensory receptors in mice are nociceptive peptidergic neurons that coexpress a variety of neuropeptides including substance P, calcitonin gene-related peptide (CGRP), and pituitary adenylate-cyclase-activating polypeptide (PACAP). These neurons are typically small soma diameter, nonmyelinated, slow conducting c-fibers, but also include faster conducting lightly myelinated A\u03b4 neurons (Sharma et al., 2020; Nguyen et al., 2019). In the human DRG dataset, TAC1 (substance P), CALCA and CALCB (CGRP), and ADCYAP1 (PACAP), are expressed in several transcriptomic classes (H1, H2, H3, H5, and H6, Figure 1C, Figure 1\u2014figure supplements 4 and 5). For comparison the expression of the same genes in mouse DRG neurons is shown (Figure 1C, Figure 1\u2014figure supplements 4 and 5) using data from single nuclei sequencing (Renthal et al., 2020). Just as in mice, the putative human peptidergic nociceptors express the high affinity nerve growth factor receptor NTRK1, the capsaicin and mustard oil-gated ion channels TRPV1 and TRPA1 but generally only low levels of the stretch-gated ion channel PIEZO2 (Figure 1C, Figure 1\u2014figure supplements 4 and 5).\n\nAlthough previous localization studies have suggested that in humans the neurofilament protein NEFH is expressed in all sensory neurons (Rostock et al., 2018), this gene showed graded expression in our data (Figure 1C) and marks several classes of cells just as in mice (Figure 1\u2014figure supplement 5). Some of these (including H3 and H6) also express peptidergic markers and the pain-related voltage-gated sodium channel SCN10A (Figure 1\u2014figure supplement 5) and thus have molecular hallmarks of A\u03b4 nociceptors (von Buchholtz et al., 2020). However, the neuronal classes H14 and H15 expressing the highest levels of NEFH are distinct from the peptidergic neurons (Figure 1C, Figure 1\u2014figure supplements 4 and 5), likely representing different types of large diameter, fast conducting myelinated A\u03b2 neurons. These cell types are neurotrophin three receptor NTRK3 positive, some also contain the brain derived neurotrophic factor receptor NTRK2 but exhibit little expression of NTRK1 (Figure 1\u2014figure supplements 4 and 5). In mice, proprioceptors are a subtype of A\u03b2 neurons marked by the calcium binding protein parvalbumin, the transcription factor Etv1 and the voltage-gated sodium channel subunits Scn1a and Scn1b (Sharma et al., 2020; Renthal et al., 2020). In the human data, the small H15 group of NTRK3-positive cells had this expression pattern (Figure 1C, Figure 1\u2014figure supplement 5) implying that proprioceptors have conserved transcriptomic markers in humans and mice. Similarly, small groups of both A\u03b4-low threshold mechanosensors (H13) and cool responsive neurons (H8) were identified by their characteristic expression profiles of functionally important transcripts (Figure 1\u2014figure supplement 5). Thus, large groups of human and mouse DRG neurons appear to share basic transcriptomic signatures and functional potential, supporting our data as informative about neuronal diversity among human somatosensory neurons.\n\nDespite these broad similarities between the putative peptidergic, proprioceptive, cooling sensitive, A\u03b2 and A\u03b4 classes of DRG neurons in mice and humans there were differences in expression of many genes. These include molecules that modulate cellular responses to internal signals (e.g., growth factor receptors), sensory stimuli and also the mediators they may release. For example, in humans, the H8 putative cool responsive neurons expressing TRPM8 were strongly positive for the BDNF-receptor NTRK2 but hardly expressed the neuropeptide TAC1 whereas in rodents the converse was true (Figure 1\u2014figure supplement 5). Other genes that have been shown to control sensory responses in mice exhibit a different expression pattern in human DRG neurons. For instance, Tmem100 encodes a protein that in mice has been implicated as playing an important role in functional interactions between Trpv1 and Trpa1 and contributing to persistent pain (Weng et al., 2015). By contrast it was almost undetectable in the human sequencing data (Figure 2A). Similarly, we did not detect marked expression of the sphingosine-1-phosphate receptor S1PR3 (Figure 2A) that has been suggested as a target for treating both pain and itch based on mouse work (Hill et al., 2018). More strikingly, a small group of human neurons, H5, expressing TRPA1 were resolved in our clustering (Figure 2B), whereas in mouse nuclear sequencing data no direct counterpart was detected (Figure 1\u2014figure supplement 4). Whole cell-based sequencing (Sharma et al., 2020) of mouse DRG neurons does identify a group of peptidergic nociceptors (called CGRP-gamma) with abundant Trpa1 expression, highlighting the caution needed when interpreting differences across species and the value of alternative approaches. Nonetheless, whereas mouse CGRP-gamma neurons strongly express Calca and Ntrk1, H5 cells are essentially CALCA (CGRP) and NTRK1 negative and instead are strongly NTRK2 positive (Figure 1, Figure 1\u2014figure supplements 4 and 5) suggesting that they may respond differently to external stimuli as well as in their signaling properties and therefore may not be a direct equivalent of mouse CGRP-gamma neurons. Thus, the availability of human transcriptomic data should help focus translational work in model organisms on promising targets with conserved expression patterns in humans.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig2-v1.jpg)\n\n**Figure 2.:** (A) Universal manifold (UMAP) representation of mouse and human dorsal root ganglia (DRG) neurons showing relative expression level (blue) of two genes that have been linked to pain sensation in mice. Note that both TMEM100 and S1PR3 are more sporadically expressed by the human somatosensory neurons. (B) Classes of DRG neurons that are selectively detected in humans are highlighted together with their expression of key genes. H9 neurons coexpress the cool and mechanosensory ion channels; for comparison cool sensitive neurons (H8) that correspond more closely with their rodent counterparts are also highlighted. (C) Expression profiles of several itch-related genes in the mouse and human DRG transcriptome. (D) Confocal image of a region from a human DRG that was labeled using multiplexed in situ hybridization (ISH) for OSMR, TAC1, and NEFH as indicated in the key. Almost all neurons were OSMR, TAC1, or NEFH positive (Figure 2\u2014figure supplement 1). However, few neurons were strongly positive for more than one of these markers (see Figure 2\u2014figure supplement 2 for individual channels). Note that autofluorescence in all channels from lipofuscin associated with many human neurons should not be confused with real signal (see Figure 2\u2014figure supplement 2 for more detail). Also note that NEFH is typically expressed in larger diameter neurons than the other two markers. Scale bar = 100 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The extensive autofluorescence in ISH of human dorsal root ganglia (DRG) section prevents automated signal detection. Thus, quantitation of ISH data involves manually scoring positive and negative cells. Therefore, we only quantitated the highest intensity signals with the most clear-cut expression patterns. In total we scored 1101 total cells in sections from a 35-year-old female and an 18-year-old male donor. The proportion of positively scored cells for five probes where signal strength, consistency in expression level and frequency of positives allow confidence in the accuracy of scoring and the representative nature of the quantitation were: NEFH, 54%; SCN10A, 58%; OSMR, 29%; TAC1, 25%; and SST, 12%. (A) Bar graphs displaying the 10 pairs of combinations of these five probes (overlap, gray) represents cells expressing both markers in that bar; where overlap is extensive the identity of the second gene has been added above the bar. (B) Bar graph displaying expression of the three probes shown in Figure 2D; NEFH, blue; OSMR, red; TAC1, green; overlap between NEFH and TAC1, cyan; NEFH and OSMR, magenta; OSMR and TAC1, yellow; only about 5% of cells were not positive for any of these three probes. (C) Bar graph displaying expression of the five probes; all populations that make up more than 5% of cells are colored and labeled. Rare combinations include cells positive for NEFH, SCN10A, and OSMR, 3%; NEFH, SCN10A, SST, and OSMR, 2%; SCN10A only, 2%; SST and OSMR, 2%; and SCN10A, TAC1, SST, and OSMR, 1%. None represents 3% of cells that were not positive for expression of these genes but were detected by other probes TRPM8, NTRK2, PIEZO2, and TRPV1 used for hybridization of these sections.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Dotplots displaying information about the fractional expression and relative expression level of marker genes in the different identity classes of mouse (left, gray-green scale) and human (right, gray-blue scale). Left panel, a selection of genes with relatively similar expression in H10 and H11 cells includes functionally relevant genes that tune mouse NP3 cells to respond to itch. Right panel shows genes that distinguish H10 and H11; some of these are also markers for mouse NP3 cells, others are more highly expressed in the other classes of mouse small diameter nonpeptidergic neurons. Red boxes highlight H10 and H11 and the four classes of mouse small diameter nonpeptidergic neurons. (B) Left three panels show individual channels for the in situ hybridization (ISH) shown in Figure 2D highlight NEFH as a marker for large diameter neurons and further emphasize the relatively limited overlap between these three probes. Strong autofluorescence signals that are present in all channels have been masked in white; four examples of autofluorescence (where there is also signal for one probe in that cell) are highlighted by stars. Right panel: the merged channels with brightness and contrast adjusted to help show that areas devoid of neurons are occupied with nerve fibers.\n\n### Human DRG neurons without clear transcriptomic equivalents in mice\n\nAnalysis of the gene expression patterns of the different classes of human somatosensory neurons revealed several groups for which we could not discern direct counterparts in the mouse. One small but prominent group of human DRG neurons (H9) expresses TRPM8, PIEZO2, SCN10A, and SCN11A (Figure 1\u2014figure supplements 4 and 5, Figure 2B) and clearly segregates from the putative cool sensing cells (H8) that express TRPM8, GPR26, NTM, and FOXP2 but are devoid of both the light touch receptor and the pain-related sodium channels (Figure 2B, Figure 1\u2014figure supplement 5). In mice, Trpm8 expression is simpler with the cool sensing, menthol responsive ion channel just expressed in cells with this latter gene expression pattern (Figure 1\u2014figure supplement 5). Interestingly, single fiber recordings have identified human neurons that respond to both cooling and gentle touch as might be expected for cells expressing both TRPM8 and PIEZO2 (33). Moreover, recent single-cell sequencing of macaque DRG neurons also identified two populations of cells that match H8 and H9 neurons (Kupari et al., 2021). Finally, H9 neurons resemble (but also have differences from) human mechanosensory neurons that were recently engineered by transcriptional programming of stem cells (Nickolls et al., 2020).\n\nA second larger group of human neurons H12 is marked by NTRK3 and the voltage-gated ion channel SCN1A, but is only weakly positive for NEFH, expresses moderate levels of PIEZO2 (Figure 2B, Figure 1\u2014figure supplement 5) and appears distinct from any potential mouse counterpart. The H12 gene expression pattern is most consistent with these cells functioning as a type of mechanosensor that has no direct equivalent in mice. Similarly, we designated H4 as c-nociceptors because of their expression of nociception-related SCN10A and NTRK1 and low level of NEFH (Figure 2B, Figure 1\u2014figure supplement 5). These neurons expressed low levels of neuropeptides, but their overall gene expression patterns did not resemble any mouse counterparts including the nonpeptidergic nociceptors (see below).\n\nThe two remaining large groups of neurons in the human dataset H10 and H11 that have no clear mouse counterpart exhibit most similarity with mouse c-type nonpeptidergic neurons (Figure 2\u2014figure supplement 2A). At a functional level both H10 and H11 express receptors that in mice have roles in detecting pruritogens. For example, these clusters were positive for the two subunits (IL31RA and OSMR) of the interleukin 31 receptor and the histamine receptor HRH1 (Figure 2C) that mediate mast cell-related scratching in mice (Solinski et al., 2019). They also express the itch-related neuropeptide NPPB (Figure 2C), nociception-related sodium channels SCN10A and SCN11A as well as TRPV1 (Figure 2\u2014figure supplement 2A) but not appreciable NEFH or TAC1 (Figure 1C). Therefore, it is likely that these are groups of putative unmyelinated, nonpeptidergic nociceptors with potential for triggering human itch responses. H10 and H11 characterization is revisited later in its own section of the results.\n\nThe peptidergic nociceptors, myelinated A\u03b2 and A\u03b4 neurons, rarer human-specific cells, and the two nonpeptidergic nociceptor clusters H10 and H11 account for all the neurons in our analysis with H10 and H11 totaling approx. 20% of the neurons. In marked contrast, mouse nonpeptidergic, small diameter neurons are far more numerous than H10 and H11 accounting for 40% of the sensory neurons in mouse DRGs (Renthal et al., 2020) and divide into four highly stereotyped transcriptional groups (Figure 1\u2014figure supplement 4). Two of these classes of mouse neurons (NP2 and NP3) trigger itch (Mishra and Hoon, 2013; Han et al., 2013), one (NP1, expressing Mrgprd) responds to noxious mechanical stimulation (von Buchholtz et al., 2021b). NP1 neurons may have a role in mechanonociception (Gatto et al., 2019) and have recently been associated with suppression of skin inflammation (Zhang et al., 2021), which was hypothesized as relevant for human health. The fourth class corresponds with low threshold mechanosensors (cLTMRs) that are thought to mediate affective touch (Gatto et al., 2019; McGlone et al., 2014). Given this difference between the transcriptomic map of human DRG neurons and their rodent counterparts, we next used independent ISH-based analysis to test basic predictions of the sequencing. If transcriptomic characterization of human DRG neurons is accurate then one clear expectation is that TAC1, NEFH, and OSMR should be expressed by distinct and only partially overlapping populations of human DRG neurons. If it is also comprehensive, that is, not missing equivalent classes to mouse neurons NP1, NP2, and cLTMRs that constitute almost a third of mouse DRG neurons and do not significantly express Nefh, Tac1, or Osmr, then we would anticipate that the same three markers should label the vast majority of neurons. Multigene ISH demonstrates that both these predictions are true for human DRG neurons (Figure 2D, Figure 2\u2014figure supplements 1B and 2B) with essentially every cell labeled by one of these probes but with very few exhibiting strong coexpression. Although NEFH expression could be detected in some of the cells positive for the other markers (Figure 2D, Figure 2\u2014figure supplement 1B), many TAC1- or OSMR-positive small diameter neurons were negative for this neurofilament subunit. Moreover, TAC1 and OSMR labeled almost completely separate sets of cells (Figure 2\u2014figure supplement 1). Notably, in keeping with our assignments based on transcriptomic data, the largest diameter neurons were strongly positive for NEFH whereas TAC1 and OSMR primarily labeled smaller cells (Figure 2D). Finally, these three markers each labeled a large group of neurons (Figure 2\u2014figure supplement 1).\n\n### Co-clustering human and mouse DRG-neuron snRNAseq data\n\nAs detailed above, the expression of genes that are thought to be important for functional and morphological features of somatosensory neurons reveal similarities between groups of human and mouse neurons. They also expose differences that likely reflect distinct somatosensory adaptations in the two species. We next used co-clustering methods to test whether the wider transcriptome could reveal additional information about the relationships between classes of human and rodent DRG neurons using the same mouse dataset (Renthal et al., 2020) that we analyzed above (Figure 1, Figure 1\u2014figure supplement 4). We used the well-established approach developed by the Satija lab (Stuart et al., 2019) as it has been shown to perform well without forcing false matches. As predicted, several classes of human neurons grouped with corresponding mouse counterparts including H15 \u2013 proprioceptors, H14 \u2013 A\u03b2 cells, H13 \u2013 A\u03b4LTMRs, H11 \u2013 NP3 (Nppb) neurons, and H3/H6 \u2013 A\u03b4 nociceptors (Figure 3A). This analysis suggested that H10 the other cluster that gene expression indicated are also itch related most closely resembled NP1 (Mrgprd) neurons rather than any other human or mouse class of sensory neurons. The H12 cluster, which is human specific, grouped close to larger diameter mouse neurons, whereas other clusters of human cells appeared better aligned with smaller diameter nociceptors. However, all types of peptidergic small diameter nociceptors were less organized in the co-clustering and separated from their potential mouse counterparts despite their qualitatively similar expression of some of the best-known functional markers (Figure 1\u2014figure supplement 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig3-v1.jpg)\n\n**Figure 3.:** (A) Universal manifold (UMAP) representation of the co-clustering of mouse and human neurons. Upper panel shows the mouse neurons colored by their identity when analyzed alone (Figure 1\u2014figure supplement 1); lower panel shows human neurons colored by their identity when analyzed alone (Figure 1). Note that large diameter human neurons match their expected mouse counterparts reasonably well and that the two classes of neurons expressing itch-related transcripts H10 and H11 best match NP1 and NP3 neurons, respectively. (B) Heatmap showing the natural logarithm (see scale bar) of Kullback\u2013Leibler divergences for the various human neuron classes when compared to each class of mouse cells as a reference distribution; potentially human-specific classes based on functional markers are marked by *; see also Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Universal manifold (UMAP) representation of clustered mouse neurons using parameters that identify 19 different groups of cells and (B) their distribution in the co-clustering with human neurons. (C) Heatmap showing the natural logarithm (see scale bar) of Kullback\u2013Leibler divergences for the various human neuron classes when compared to each class of mouse cells as a reference distribution; potentially human-specific classes based on functional markers are marked by *. Note that despite the increased granularity of clustering results were highly consistent with those in Figure 3.\n\nUMAP plots (Figure 3A) provide a visual representation of similarity between cells with related transcriptomic properties. However, co-clustering methods do not provide a quantitative measure of the similarity between individual cells or clusters of cells. A given cell cluster can be viewed as a multivariate probability distribution in gene expression space. While not commonly employed in gene expression analysis, in probability and information theory, the similarity/dissimilarity between two probability distributions is most commonly measured by calculating their Kullback\u2013Leibler (KL) divergence. Recent advances have allowed KL divergence to be estimated between two samples in continuous multivariate space (Perez-Cruz, 2008) as is observed in dimensionality reduced gene expression data of cell populations. Therefore, we made use of KL divergence estimation to quantitate the similarity between human DRG-neuron clusters and all their potential mouse counterparts (Figure 3B). As expected, clusters that co-segregate in the UMAP analysis showed greatest similarity but additional relationships not apparent from the visual representation of the co-clustering were also seen. For example, the small cluster of human \u2018cool\u2019 responsive neurons H8 showed greatest similarity to mouse Trpm8 cells and several groups of human cells (H1, H2, and H5) that gene expression predicted should be c-type peptidergic nociceptors, indeed best matched these cells (Figure 3B). Interestingly, no class of human neurons showed appreciable similarity to mouse cLTMRs. Among the groups of cells that had human-specific gene expression patterns, H5 best matched c-peptidergic nociceptors, H9 (the putative cool and mechanical responsive cells) showed only weak similarity to any mouse neuron class. H12, which we considered likely to be mechanosensors best matched mouse proprioceptors and H4 neurons appeared distantly related to several classes of nociceptor but without a clear match in mice. We also extended this analysis to mouse clustering where similar cell populations had not been combined (Figure 3\u2014figure supplement 1). Although 19 clusters of mouse neurons were now analyzed, neither mouse cLTMRs nor the potentially human-specific classes H4, H9, or H12 better matched a cell types of the other species. One important caveat to this type of analysis remains that any functional conclusions based on shared transcriptomic features still need to be verified experimentally.\n\n### Transcriptomically related neurons are spatially grouped in the human dorsal root ganglion\n\nFrom sequence analysis, we identified a range of potential markers to better explore the diversity of human DRG neurons using ISH. To maximize information, we chose a multiplexed approach that allows localization of up to 12 probes (Figure 4) revealing the different classes of sensory neurons identified in the transcriptomic data. For example, TRPM8 expressing neurons clearly segregate into two distinct types (Figure 4A, Figure 4\u2014figure supplement 1). One set of cells (H8) share other transcriptomic properties with mouse cooling responsive cells: TRPM8, the cool and menthol receptor is not coexpressed with the ion channels SCN10A or PIEZO2 (Figure 4A), but unlike in mice these cells are NTRK2 positive (Figure 4\u2014figure supplement 1). By contrast, other cells (H9) coexpress the pain and light touch related ion channels (SCN10A and PIEZO2) with TRPM8 (Figure 4A, Figure 4\u2014figure supplement 1). Similarly, putative proprioceptive neurons (H15) were distinguished by their expression of NEFH, PIEZO2, and PVALB and lack of NTRK2 (Figure 4B, Figure 4\u2014figure supplement 1). One surprise (Figure 4A, B) was that in small fields of view, several examples of all three of these rare neuron types could be identified in human DRGs. However, much of the rest of the ganglion was devoid of these cell types and instead the neurons there had distinct sets of markers. Therefore, it appears that transcriptomic classes of human DRG sensory neurons may not be stochastically distributed in the ganglion. Indeed, when we examined the distribution of nociceptors and myelinated neurons at lower magnification (using strong selective probes), broad clustering of similar types of neurons was apparent, quantifiable, and statistically significant (Figure 4C, D). We carried out a similar analysis in mouse DRG neurons using Nefh and Scn10a probes and found that there too, cells expressing these markers are not uniformly distributed (Figure 4\u2014figure supplement 2) suggesting spatial clustering of related DRG neurons may be a common feature across species.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig4-v1.jpg)\n\n**Figure 4.:** Confocal images of sections through a human DRG probed for expression of key markers using multiplexed in situ hybridization (ISH); see Figure 4\u2014figure supplement 1 for the individual panels and additional probes. (A) Left panel shows a group of four H8-neurons (yellow arrows) that express TRPM8 (green) but not PIEZO2 (red) or SCN10A (blue). By contrast, right panel shows a different region of the ganglion where three H9-neurons coexpress these three transcripts (double arrowheads). (B) Other regions of the ganglia were dominated by larger diameter neurons. Putative proprioceptors, highlighted by double arrowheads, expressing PIEZO2 (green) and PVALB (red), but not NTRK2 (blue) were typically highly clustered in the ganglion. (C) Lower magnification images of complete sections stained for NEFH (green) and SCN10A (red) highlight the extensive co-clustering of large and small diameter neurons in different individuals. Scale bars = 100 \u00b5m in (A and B); 500 \u00b5m in (C). (D) The nearest n neighbors of NEFH and SCN10A single positive neurons in (C) were identified (for n = 1\u201340): green lines represent proportion (mean, solid line \u00b1 standard error of mean [SEM], shaded) of cells surrounding NEFH-positive neurons; red lines, proportion (mean, solid line \u00b1 SEM, shaded) of cells surrounding SCN10A-positive neurons. Left panel: proportion of surrounding cells that were NEFH positive. Right panel: proportion of surrounding cells that were SCN10A positive. Dashed black lines are the proportions expected for randomly distributed cells. Insets schematically show a central cell (highlighted by a star) and the surrounding neurons. Neighboring NEFH-positive cells are colored green and SCN10A-positive cells are colored red when these are being scored in the associated graph; gray cells are positive for the other marker. Clustering was statistically significant across the complete range (1\u201340 neighbors), p \u2264 6.96 \u00d7 10\u221242 (one-tailed Mann\u2013Whitney U-test); n = 803 single positive cells confirming both short and long-range grouping of similar classes of human DRG neurons.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Individual channels for the in situ hybridization (ISH) images in Figure 4 are shown to highlight the expression patterns described in the text. Strong autofluorescence signals that are present in all channels have been masked in white. Additional combinations of gene expression data in these regions of the ganglion are shown to identify neurons and reveal extra transcriptomic information. (A) Spatial clusters containing H8 putative cool sensing neurons (left) and H9 cool/mechanosensory nociceptors (right) are shown and identified as in Figure 4A. H8 neurons are generally NTRK2 positive but are only weakly positive for NEFH. By contrast, H9 cells are NEFH positive but do not express significant NTRK2, in keeping with transcriptomic data. Note that clusters of these neurons segregate in distinct fields of the ganglion. (B) H15 (presumptive proprioceptors) form a subcluster of NEFH-positive cells that are essentially devoid of nociceptors (marked by SCN10A) including nonpeptidergic neurons expressing OSMR. Many of the PVALB-negative large diameter neurons in this region of the ganglion were NTRK2 positive; by contrast this gene was not detectable in H15 cells in keeping with the transcriptomic data. Scale bars = 100 \u00b5m; arrows and arrowheads are as in Figure 4.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Confocal images of mouse lumbar dorsal root ganglia (DRG) in situ hybridization (ISH) showing Nefh (green) and Scn10a (red); scale bars = 100 \u00b5m. (B) The nearest n neighbors of Nefh and Scn10a single positive neurons were identified (for n = 1\u201340): green lines represent proportion (mean, solid line \u00b1 standard error of mean [SEM], shaded) of cells surrounding Nefh-positive neurons; red lines, proportion (mean, solid line \u00b1 SEM, shaded) of cells surrounding Scn10a-positive neurons. Left panel: proportion of surrounding cells that were Nefh positive. Right panel: proportion of surrounding cells that were Scn10a positive. Dashed black lines are the proportions expected for randomly distributed cells. Insets schematically show a central cell (highlighted by a star) and the surrounding neurons. Neighboring Nefh-positive cells are colored green and Scn10a-positive cells are colored red when these are being scored in the associated graph; gray cells are positive for the other marker. Clustering was statistically significant across the complete range (1\u201340 neighbors), p \u2264 3.98 \u00d7 10\u221215 (one-tailed Mann\u2013Whitney U-test); n = 1117 single positive cells confirming both short- and long-range grouping of similar classes of mouse DRG neurons.\n\n### H10 and H11 are distinct but related types of human nonpeptidergic neurons\n\nPerhaps the most intriguing classes of human somatosensory neurons revealed by our transcriptomic approach are the H10 and H11 classes that primarily share features with the mouse nonpeptidergic nociceptors NP1\u20133 (Figures 2 and 3, Figure 2\u2014figure supplement 2, Figure 5\u2014figure supplement 1). ISH showed that the H10 and H11 classes of neurons, identified by their expression of OSMR were small diameter neurons comparable in size to the TAC1-expressing peptidergic nociceptors (Figure 5A). Two qualitatively different ratios of SCN10A and OSMR were apparent in these cells (Figure 5A) hinting at their distinct identities. Our data (Figure 2, Figure 2\u2014figure supplement 2, Figure 5\u2014figure supplement 1A) show that H10 and H11 neurons express a number of genes that are known markers of mouse NP3 cells and functionally important for triggering pruritic responses (Gatto et al., 2019; Solinski et al., 2019). They are also distinguished from each other by expression of genes that likely play roles in itch and other aspects of somatosensation (Figure 5B, Figure 2\u2014figure supplement 2, Figure 5\u2014figure supplement 2). For example, although not prominently expressed, the human chloroquine responsive receptor MRGPRX1 (27) localized selectively to H10 neurons (Figure 5B) perhaps suggesting a relationship to mouse NP2 cells. By contrast, Janus kinase 1 (JAK1), a mediator of itch through various types of cytokine signaling, including through OSMR (Oetjen et al., 2017), and the neuropeptide SST are particularly strongly expressed in H11 cells (Figure 5B). Both these genes are prominent markers of NP3 pruriceptors in mouse (Figure 5B). However, not all known itch-related transcripts are expressed in H10 and H11 neurons and both classes of cells express genes that better define NP1 neurons in mice as well as other cell types (Figure 5B, Figure 2\u2014figure supplement 2, Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig5-v1.jpg)\n\n**Figure 5.:** (A) Confocal image of a section through a human dorsal root ganglia (DRG) probed for nociception-related genes using multiplexed in situ hybridization (ISH). In this view, many neurons expressing the itch-related transcript, OSMR (red), are grouped together (arrowheads); cyan arrowheads point to cells that express relatively higher levels of OSMR than SCN10A (green). Peptidergic nociceptors marked by expression of TAC1 (blue) and additional SCN10A-positive cells are also present in this region of the ganglion. (B) Universal manifold (UMAP) representation of mouse and human DRG neurons showing relative expression level (blue) of genes that distinguish H10 and H11 and mark-specific sets of mouse NP1\u20133 neurons. MRGPRX1 is the human chloroquine receptor and the functional equivalent of Mrgpra3, which in mice marks NP2 cells. Note that coexpression patterns of SST and JAK1 in H11 neurons resembles their expression in mouse NP3 pruriceptors but the ion channel TRPC3 which also marks these cells is primarily expressed in mouse NP1 neurons; see Figure 5\u2014figure supplement 1 for additional breakdown of similarities and differences between nonpeptidergic neurons in mice and humans. (C) Confocal image of the group of candidate pruriceptors shown in (A) probed for expression of genes that distinguish H11 (SST, blue) from H10 cells (PIEZO2, green); note that neurons highlighted with cyan arrowheads have gene expression expected for H11 cells, whereas some H10 cells express lower levels of SST and also exhibit variation in the level of PIEZO2 expression. Scale bars = 100 \u00b5m; see Figure 5\u2014figure supplement 1B for individual channels and for expression of additional markers.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Confocal in situ hybridization (ISH) images illustrating weak expression of itch-related transcripts HRH1 (upper panels, red) and NPPB (lower panels, red) in H10 and H11 neurons. Left image shows multiplex ISH of a region of a DRG section where H10 and H11 cells can be recognized by expression of OSMR (green); H11 cells also express SST (blue). To the right, individual channels demonstrating low-level expression of HRH1 and NPPB (punctate red signal) in H10 and H11 neurons. (B) Individual channels for the ISH images in Figure 5 are shown to highlight the expression patterns described in the text. Strong autofluorescence signals that are present in all channels have been masked in white. In addition, ISH reveals that H10 and H11 neurons also express TRPV1 but as expected from the transcriptomic data at most express very low levels of NEFH. Scale bars = 100 \u00b5m; arrowheads are as in Figure 5; to further highlight the relevant cells, OSMR-positive cells are highlighted by dotted outlines that match the coloring of arrowheads.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71752/elife-71752-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Dotplots displaying information about the fractional expression and relative expression level of marker genes in the different identity classes of mouse (left, gray-green scale) and human (right, gray-blue scale). From top to bottom, markers of NP1, NP2, and cLTMRs in mice generally show only limited expression in the presumptive human nonpeptidergic nociceptors H10 and H11. NP1-selective genes confirm greater similarity of H10 neurons to this type of mechanonociceptor. Right panels: Universal manifold (UMAP) representation of mouse and human DRG neurons showing relative expression level (blue) of several genes that highlight differences between H10 and H11 neurons and potential mouse counterparts. (B) UMAP representation of mouse and human DRG neurons showing relative expression level (blue) of several genes highlighting differences between H10 and H11 neurons and potential mouse counterparts.\n\nH10 cells are also distinguished from H11 and mouse pruriceptors by their prominent expression of the stretch-gated ion channel PIEZO2 (Figure 1C, Figure 2\u2014figure supplement 2). The coexpression of itch-related transcripts and this low threshold mechanosensor hint that H10 neurons may be responsible for the familiar human sensation known as mechanical itch. However, their relationship to NP1-neurons revealed by co-clustering mouse and human data (Figure 3) and their expression of markers for various other cell types (Figure 2\u2014figure supplement 2, Figure 5\u2014figure supplement 2) possibly including nonpeptidergic cLTMRs suggest that their role in somatosensation may not be limited to itch alone.\n\nA problem with single-cell sequencing approaches is the sparse nature of the data making it difficult to disentangle expression level from proportional representation in any cluster. This means that except for the most highly expressed genes, there is inherent ambiguity in interpreting the expression patterns. ISH provides an independent and more analog assessment of expression level that can help resolve this issue. Multiplexed ISH showed that SST divides the OSMR-positive cells into two intermingled types (Figure 5C) in keeping with the sequence data (Figure 5B) and the relative expression patterns of SCN10A and OSMR (Figure 5A). Moreover, the prediction that PIEZO2-OSMR coexpression should mark SST-negative neurons was also largely borne out by ISH (Figure 5C, Figure 5\u2014figure supplement 1). However, ISH also shows that some neurons expressing lower levels of SST are PIEZO2-positive and that some OSMR-positive H10 cells, contain only a very low level of the mechanosensory channel (Figure 5C, Figure 5\u2014figure supplement 1). Therefore, H10 and H11 are by no means homogeneous populations and may not be as functionally distinct as snRNA clustering suggests.\n\n## Discussion\n\nTranscriptomic analysis of DRG neurons confirms that mouse and human somatosensory neurons express many of the same genes (Ray et al., 2018). However, although gross similarity in the transcriptomic classification of these cells can be discerned in single-cell analyses (peptidergic versus nonpeptidergic; neurofilament rich, myelinated versus nonmyelinated), the patterns of coordinated gene expression across species are not well conserved and both species exhibit unique specializations. Recently, available transcriptomic data from the macaque further highlights the individuality of somatosensory neurons across species (Kupari et al., 2021). Surprisingly, in that study, despite major differences in gene expression between the monkey and mouse cell types, co-clustering approaches found an apparently close relationship between them including identification of large and distinct groups of NP1, NP2, and NP3 cells and putative cLTMRs (Kupari et al., 2021). However, perhaps because of fragility of large diameter neurons in cell-based droplet sequencing approaches, no candidate A\u03b2 neurons and only very few A\u03b4 cells were recovered (Kupari et al., 2021). By contrast our transcriptomic data and analysis combined with multiplexed ISH provide strong evidence for similarities between large diameter neurons between humans and mice but major differences in small diameter nonpeptidergic neurons as well as the existence of other human-specific cell types. Since in humans all nonpeptidergic neurons express TRPV1 whereas mouse NP1, NP2, and cLTMRs do not prominently express this gene, this fits well with recent data showing much broader expression of TRPV1 in humans than mice (Shiers et al., 2020).\n\nAt one level, this type of interspecies variation was unexpected given that there is similarity between the neuronal classes that comprise the mouse lumbar DRGs and trigeminal ganglia despite their very different types of innervation targets (Sharma et al., 2020; Nguyen et al., 2019). However, large changes in the receptive repertoire of other sensory systems have been observed and are thought to play a role in adaptation to specific ecological niches (Yarmolinsky et al., 2009). Thus, the evolution of DRG receptor cell diversity further highlights the importance of appropriate sensory input for fitness and survival of a species. What is unusual relative to other senses is that transcriptomic differences are not limited to just the receptor repertoire for sensing environmental stimuli but instead extend to genes involved in the development and maintenance of defined neuronal subtypes. It is possible that this reflects major differences between mouse and human skin including fur covering. From a translational viewpoint, these differences could explain some of the problems in replicating results from mouse-based therapies (Mogil, 2019; Yezierski and Hansson, 2018) in humans and the availability of the human data may help direct research toward new targets and even suggest precision medicine strategies (e.g., to treat cold pain).\n\nOur analysis identified particularly surprising differences between small diameter nonpeptidergic neurons in mice and humans (H10 and H11 cell types). In mice, one distinctive subset of these cells are the cLTMRs that innervate hairy skin and are thought to be responsible for affective touch (McGlone et al., 2014). At a transcriptomic level, humans do not have a clearly identifiable correlate for these cells (Figure 3B) although careful microneurography has revealed human c-fibers that respond to stroking (Wessberg et al., 2003). We suspect that some of these stroking responsive cells may be the nonpeptidergic H10 neurons that express itch-related genes as well as high levels of PIEZO2. In keeping with this suggestion, a recent preprint of a spatial transcriptomic analysis of human somatosensory gene expression (Tavares-Ferreira et al., 2021) designates cLTMRs as a subset of cells resembling H10 neurons that appear to have lower expression of some pruriceptive markers. However, it is also possible that human cLTMRs are other PIEZO2-expressing neurons that are unique to humans (Figure 2B, Figure 1\u2014figure supplement 3). H10 and H11 neuron classes have more clear similarity to the mouse NP1\u20133 neurons but also exhibit major differences to all three types of cells. For example, in mice NP1 cells express a large combination of diagnostic markers (Figure 5\u2014figure supplement 2) including Mrgprd that we did not find in our sequencing of human ganglion neurons. Bulk sequencing studies have identified MRGPRD expression in human DRG (Price et al., 2016), but recent ISH localization studies suggest only very low-level expression of this transcript together with MRGPRX1 in somatosensory neurons (Klein et al., 2021). This would fit with our co-clustering that identifies the MRGPRX1-expressing H10 neurons as related to NP1 cells. However, many of the other NP1 markers have potential roles in signal detection and transduction but are not H10 selective (Figure 5\u2014figure supplement 2). Moreover, in mice, Mrgpra3 (the functional equivalent of MRGPRX1) marks the distinct NP2 neurons.\n\nTaken together, our results and analysis suggest that experiments in mice are likely to illustrate general principles that are important for sensory detection and perception in humans but also imply that specific details related both to genes and cell-type responses may differ. In future studies, the central projections and targets of human somatosensory neuron subtypes might provide independent approaches for inferring function. Similarly, using immunohistochemistry (IHC) to understand how these cell classes innervate the skin and other tissues may allow correlation of arborization patterns with microneurography results. Since microneurography can be complemented by microstimulation this could ultimately reveal the role of specific neuronal classes in sensory perception (Ackerley and Watkins, 2018).\n\nOur data provide a searchable database for gene expression in human DRG neurons. However, there are some limitations to the data and interpretation. For example, neither the number of neurons sequenced, nor the depth of sequencing is as comprehensive as for mice (Sharma et al., 2020; Nguyen et al., 2019). This means that rare neuronal subtypes and the expression patterns of even some moderately expressed genes may not be clear therefore it is likely that future studies and larger samples will be needed to refine these issues. Nonetheless, highly multiplexed ISH (Figures 2 and 5) confirm the major findings both about cell types and also gene expression and therefore substantiate the overall value of the data. The nuclear-based sequencing approach used here has advantages in preventing gene expression changes during single-cell isolation and is also likely to be less biased than cell-based approaches in terms of representation of the different cell types (von Buchholtz et al., 2020). However, sn-RNA sequencing provides a somewhat distorted view of cellular gene expression, as has been described for sensory neurons in mice (Nguyen et al., 2019). Therefore, it will be important to confirm expression levels of specific genes using complementary approaches. Finally, any functional roles for neuronal classes identified here have been extrapolated from expression of markers and distant similarity to mouse counterparts. Given the extensive differences that we report, some of these conclusions may need to be revised once cell class can be linked to neuronal function in human subjects and/or using physiological tools in vitro with human tissues.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>C57BL/6NCrl</td>\n      <td>Charles River</td>\n      <td>Strain code: 027</td>\n      <td>Male and female</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-NeuN (rabbit polyclonal)</td>\n      <td>Millipore</td>\n      <td>Cat#ABN78</td>\n      <td>(1:4000 for nuclei isolation)(1:1000 for IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Tubb3 (mouse monoclonal)</td>\n      <td>Proteintech</td>\n      <td>Cat#66375-1-Ig</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-rabbit Cy3-conjugated(donkey polyclonal)</td>\n      <td>JacksonImmunoResearch</td>\n      <td>Cat#711-166-152</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse FITC-conjugated(donkey polyclonal)</td>\n      <td>JacksonImmunoResearch</td>\n      <td>cat#715-096-150</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Chromium Next GEM Single Cell 3\u2032 GEM, Library &amp; Gel Bead Kit v3.1</td>\n      <td>\u00d710 Genomics</td>\n      <td>Cat#1000128</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Chromium Next GEM Chip G Single Cell Kit</td>\n      <td>\u00d710 Genomics</td>\n      <td>Cat#1000127</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAscope HiPlex8 Detection reagents</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#324110</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAscope HiPlex12 Ancillary reagents</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#324120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Human RNAscope probes (HiPlex 12)</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>NEFH (cat# 448141); TRPM8 (cat# 543121); PIEZO2 (cat# 449951); SCN10A (cat# 406291); NTRK2 (cat# 402621); TAC1 (cat# 310711); OSMR (cat# 537121); SST (cat# 310591); TRPV1 (cat# 415381); PVALB (cat# 422181)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAscope Fluorescent Multiplex assay</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat #320851</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Mouse RNAscope probes(MultiPlex)</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Scn10a (cat#426011); Nefh (cat#443671)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Human RNAscope probes(MultiPlex)</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>OSMR (cat#537121); SST (cat# 310591); HRH1 (cat#416501); NPPB (cat#448511);</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NeuroTrace Green</td>\n      <td>Fisher Scientific</td>\n      <td>Cat#N21480</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CellRanger</td>\n      <td>\u00d710 Genomics</td>\n      <td>Version 2.1.1</td>\n      <td>GRCh38.v25.premRNA</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Seurat</td>\n      <td>Satija lab</td>\n      <td>Versions 3-4.04</td>\n      <td>https://satijalab.org/seurat/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Python</td>\n      <td>python.org</td>\n      <td>Version 3.7.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>scipy.stats</td>\n      <td>scipy.org</td>\n      <td>Version 1.5.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>scikit-learn</td>\n      <td>scikit-learn.org</td>\n      <td>Version 0.23.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RStudio</td>\n      <td>https://www.rstudio.com/</td>\n      <td>Version 1.4.1106</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>https://www.r-project.org/</td>\n      <td>R version 4.1.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DoubletFinder</td>\n      <td>https://github.com/chris-mcginnis-ucsf/DoubletFinder</td>\n      <td></td>\n      <td>McGinnis lab (McGinnis, 2021)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>http://imagej.nih.gov/ij</td>\n      <td>ImageJ 1.53 c</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop</td>\n      <td>https://www.adobe.com/</td>\n      <td>25.5.1 release</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>kl_divergence</td>\n      <td>https://gist.github.com/lars-von-buchholtz/636f542ce8d93d5a14ae52a6c538ced5636f542ce8d93d5a14ae52a6c538ced5</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RNA-later</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# AM7021</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Spectrum Bessman tissue pulverizer</td>\n      <td>Fisher Scientific</td>\n      <td>Cat# 08-418-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Dounce homogenizer</td>\n      <td>Fisher Scientific</td>\n      <td>Cat# 357538</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>40 \u03bcm cell strainer</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# 08-771-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Low bind microfuge tubes</td>\n      <td>Sorenson BioScience</td>\n      <td>Cat# 11,700</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>SUPERaseIn RNase inhibitor</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# AM2696</td>\n      <td>0.2 U/\u03bcl</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>anti-rabbit IgG microbeads</td>\n      <td>Miltenyi biotec</td>\n      <td>Cat# 130-048-602</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>LS column</td>\n      <td>Miltenyi biotec</td>\n      <td>Cat# 130-042-401</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Mouse DRG dataset</td>\n      <td>Woolf lab</td>\n      <td>GSE154659</td>\n      <td>Renthal et al., 2020, Neuron</td>\n    </tr>\n  </tbody>\n</table>\n\n### Study design\n\nTranscriptomic analysis of human DRG neurons was carried out to establish similarities and differences between human somatosensory neurons and their counterparts in model organisms and to provide a resource. We chose a nuclear-based strategy because of its simplicity and quantitative nature relative to isolation of cells (Nguyen et al., 2019). All tissue was obtained from de-identified organ donors and was not preselected or otherwise restricted according to health conditions. We used DRGs from both male and female donors for the sequencing and ISH localization experiments. Randomization and blinding were not used because of the nature of our experiments. Similarly, before starting this study, we had no relevant information for setting sample size for snRNA sequencing from human DRG neurons. Therefore, we stopped data collection when we empirically determined that the cost of adding extra data outweighed the benefit of additional sequencing. In essence, numbers of sn-transcriptomes analyzed were limited by the availability of material and the difficulty of isolating human DRG nuclei with preservation of their transcriptome. We considered that the dataset would serve as a valuable and relatively comprehensive resource once including additional material from an individual preparation made only minor differences to the pattern of clustering we observed. Criteria for data exclusion followed standards in the field (see below) and sample sizes and numbers of replicates are also typical for this type of study and are described in the relevant experimental sections. Apart from the exclusions described for sn experiments, all data obtained were included in our study.\n\n### Isolation of human DRG nuclei\n\nDRG recovery was reviewed by the University of Cincinnati IRB #00003152; Study ID: 2015-5302, title Human dorsal root ganglia and was exempted. Lumbar L4 and L5 DRGs were recovered from donors withing 90 min of cross-clamp (Valtcheva et al., 2016). For ISH and IHC, DRGs were immersion fixed in 4% paraformaldehyde in phosphate-buffered saline (PBS) overnight, cryoprotected in 30% sucrose and were frozen in Optimal Cutting Temperature compound (Tissue Tek). For RNA sequencing, human DRGs immediately were cut into 1\u20132 mm pieces and stored in RNA-later (Thermo Fisher, Cat# AM7021). Excess RNA-later was removed and the tissue was frozen on dry ice and stored at \u221280\u00b0C. Nuclei were isolated from each donor separately as described previously (Nguyen et al., 2019) with minor modification. Briefly, the tissues were homogenized with a Spectrum Bessman tissue pulverizer (Fisher Scientific, CAT# 08-418-3) in liquid nitrogen. The sample was then transferred to a Dounce homogenizer (Fisher Scientific, Cat# 357538) in 1 ml of freshly prepared ice-cold homogenization buffer (250 mM sucrose, 25 mM KCl, 5 mM MgCl2, 10 mM Tris, pH 8.0, 1 \u00b5M DTT, 0.1% Triton X-100 [vol/vol]). To lyse cells and preserve nuclei homogenization used 5 strokes with the \u2018loose\u2019 pestle (A) and 15 strokes with the \u2018tight\u2019 pestle (B). The homogenate was filtered through a 40 \u00b5m cell strainer (Thermo Fisher, cat# 08-771-1), was transferred to low bind microfuge tubes (Sorenson BioScience, cat# 11700) and centrifuged at 800 g for 8 min at 4\u00b0C. The supernatant was removed, the pellet gently resuspended in 1 ml of PBS with 1% bovine serum Albumin (BSA) and SUPERaseIn RNase Inhibitor (0.2 U/\u00b5l; Thermo Fisher, Cat#AM2696) and incubated on ice for 10 min.\n\nNeuronal nuclei selection was performed by incubating the sample with a rabbit polyclonal anti-NeuN antibody (Millipore, cat#ABN78) at 1:4000 dilution with rotation at 4\u00b0C for 30 min. The sample was then washed with 1 ml of PBS with 1% BSA and SUPERaseIn RNase Inhibitor and centrifuged at 800 \u00d7 g for 8 min at 4\u00b0C. The resulting pellet was resuspended in 80 \u00b5l of PBS, 0.5% BSA, and 2 mM EDTA. 20 \u00b5l of anti-rabbit IgG microbeads (Miltenyi biotec, cat# 130-048-602) were added to the sample followed by a 20-min incubation at 4\u00b0C. Nuclei with attached microbeads were isolated using an LS column (Miltenyi Biotec, cat# 130-042-401) according to the manufacturer\u2019s instruction. The neuronal nuclei enriched eluate was centrifuged at 500 \u00d7 g for 10 min, 4\u00b0C. The supernatant was discarded, and the pellet was resuspended in 1.5 ml of PBS with 1% BSA. To disrupt any clumped nuclei, the sample was homogenized on ice with an Ultra-Turrax homogenizer (setting 1) for 30 s. An aliquot was then stained with trypan blue and the nuclei were counted using a hemocytometer. The nuclei were pelleted at 800 \u00d7 g, 8 min at 4\u00b0C and resuspended in an appropriate volume for \u00d710 chromium capture. A second count was performed to confirm nuclei concentration and for visual inspection of nuclei quality. Note that prior to sequencing no check was made that this selection procedure was unbiased but we have previously used the approach to purify mouse trigeminal ganglion neuron nuclei (Nguyen et al., 2019) and have demonstrated highly quantitative recovery of all neuronal types (von Buchholtz et al., 2020). IHC analysis (Figure 1\u2014figure supplement 1) supports the use of NeuN enrichment as a means to purify human DRG neurons and together with ISH quantitation (Figure 2\u2014figure supplement 1) substantiates the relatively unbiased purification of various classes of neuronal nuclei using this method.\n\n### Single nuclear capture, sequencing, and data analysis\n\n10x-chromium capture and library generation were performed according to the manufacturer\u2019s instructions using v3 chemistry kits. Next generation sequencing was performed using Illumina sequencers. 10x chromium data were mapped using CellRanger to a pre-mRNA modified human genome (GRCh38.v25.premRNA). Data analysis used the Seurat V3 packages developed by the Satija lab and followed standard procedures for co-clustering (Stuart et al., 2019). For sn-RNA sequencing experiments cell filtering was performed as follows: outliers were identified and removed based on the number of expressed genes (500\u201310,000 retained) and mitochondrial proportion (<10% retained). Normalization and variance stabilization used regularized negative binomial regression (sctransform). After initial co-clustering of data from the different preparations, non-neuronal cell clusters were identified by their gene expression profiles. Clusters not expressing high levels of neuronal or somatosensory genes like SNAP25, SCN9A, SCN10A, PIEZO2, NEFH, etc. but instead expressing elevated levels of markers of non-neuronal cells including PRP1, MBP, QKI, LPAR1, and APOE were tagged as non-neuronal and were removed to allow reclustering of \u2018purified\u2019 human DRG neurons. A total of 1837 human DRG neuronal nuclei were included in the analysis (Table 1). The mean number of genes detected per nucleus was 2839 (range 501\u20139652), with a standard deviation of 1917. Doublet detection was performed on the individual datasets using DoubletFinder (McGinnis et al., 2019). For the clustering shown in the main figures the small number of potential doublets (Figure 1\u2014figure supplement 2E) were not removed; principal components (PCs) were determined from integrated assay data and PCs 1\u201316 were used both for UMAP display of the data and for determining clusters. The resolution for clustering used relatively low stringency (2.0) and closely related clusters without distinguishing markers were merged. Changes in display clustering parameters and in the cutoffs for data inclusion/exclusion as well as leaving out nuclei from any single preparation made differences in how the data were represented graphically and the number of clusters identified but not to the main conclusions (Figure 1\u2014figure supplement 3). All the different transcriptomically related neuron types described here could still be readily discerned in UMAP analysis of expression data. Identification of markers used the FindMarkers and FindAllMarkers functions of Seurat using default settings and with markers limited by a minimal level of expression in the positive cluster set using (min.pct = 0\u20130.3) and the difference in expression between positive and negative clusters set using (min.dif.pct = 0\u20130.3).\n\n**Table 1.**\n Sequencing data for the five individual DRG nuclear preparations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Preparation#</th>\n      <th>DRG1-F36</th>\n      <th>DRG2-M36</th>\n      <th>DRG3a-F34</th>\n      <th>DRG3b-F34</th>\n      <th>DRG4-F35</th>\n      <th>DRG5-F55</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of reads</td>\n      <td>273,123,313</td>\n      <td>121,333,026</td>\n      <td>105,113,253</td>\n      <td>101,427,234</td>\n      <td>90,306,793</td>\n      <td>94,069,716</td>\n    </tr>\n    <tr>\n      <td>Valid barcodes</td>\n      <td>97.50%</td>\n      <td>97.60%</td>\n      <td>98.20%</td>\n      <td>96.10%</td>\n      <td>93.60%</td>\n      <td>97.90%</td>\n    </tr>\n    <tr>\n      <td>Sequencing saturation</td>\n      <td>93.20%</td>\n      <td>93.10%</td>\n      <td>39.70%</td>\n      <td>82.10%</td>\n      <td>38.70%</td>\n      <td>55.90%</td>\n    </tr>\n    <tr>\n      <td>Q30 bases in barcode</td>\n      <td>96.30%</td>\n      <td>97.40%</td>\n      <td>97.80%</td>\n      <td>97.50%</td>\n      <td>97.70%</td>\n      <td>96.80%</td>\n    </tr>\n    <tr>\n      <td>Q30 bases in RNA read</td>\n      <td>88.30%</td>\n      <td>85.90%</td>\n      <td>87.40%</td>\n      <td>91.50%</td>\n      <td>93.40%</td>\n      <td>92.20%</td>\n    </tr>\n    <tr>\n      <td>Q30 bases in sample index</td>\n      <td>96.00%</td>\n      <td>96.80%</td>\n      <td>97.40%</td>\n      <td>96.60%</td>\n      <td>96.60%</td>\n      <td>94.80%</td>\n    </tr>\n    <tr>\n      <td>Q30 bases in UMI</td>\n      <td>95.50%</td>\n      <td>97.00%</td>\n      <td>97.60%</td>\n      <td>97.00%</td>\n      <td>97.20%</td>\n      <td>96.10%</td>\n    </tr>\n    <tr>\n      <td>Reads mapped confidently to genome</td>\n      <td>86.50%</td>\n      <td>81.20%</td>\n      <td>71.20%</td>\n      <td>16.90%</td>\n      <td>10.80%</td>\n      <td>18.10%</td>\n    </tr>\n    <tr>\n      <td>Reads mapped confidently to intergenic regions</td>\n      <td>4.10%</td>\n      <td>4.20%</td>\n      <td>4.00%</td>\n      <td>1.30%</td>\n      <td>0.90%</td>\n      <td>1.20%</td>\n    </tr>\n    <tr>\n      <td>Estimated number of cells</td>\n      <td>584</td>\n      <td>273</td>\n      <td>6,180</td>\n      <td>223</td>\n      <td>872</td>\n      <td>999</td>\n    </tr>\n    <tr>\n      <td>Mean reads per cell</td>\n      <td>467,676</td>\n      <td>444,443</td>\n      <td>17,008</td>\n      <td>454,830</td>\n      <td>135,189</td>\n      <td>94,163</td>\n    </tr>\n    <tr>\n      <td>Median genes per cell</td>\n      <td>1917</td>\n      <td>709</td>\n      <td>786</td>\n      <td>481</td>\n      <td>872</td>\n      <td>812</td>\n    </tr>\n    <tr>\n      <td>Total genes detected</td>\n      <td>24,646</td>\n      <td>17,559</td>\n      <td>28,759</td>\n      <td>17,338</td>\n      <td>24,798</td>\n      <td>25,027</td>\n    </tr>\n    <tr>\n      <td>Median UMI counts per cell</td>\n      <td>2929</td>\n      <td>862</td>\n      <td>965</td>\n      <td>663</td>\n      <td>1,293</td>\n      <td>988</td>\n    </tr>\n    <tr>\n      <td>DRG cells in final object</td>\n      <td>212</td>\n      <td>152</td>\n      <td>770</td>\n      <td>80</td>\n      <td>281</td>\n      <td>342</td>\n    </tr>\n  </tbody>\n</table>\n\nFor analysis of the mouse, a random subset of data from sn-RNA sequencing of DRGs from wild type mice were extracted from data deposited by the Woolf lab (Renthal et al., 2020) using the R-function: sample. The data were filtered according to gene count (400\u201312,000 retained) and mitochondrial DNA (<1% retained) leaving 6895 DRG nuclei that were clustered using standard methods (Stuart et al., 2019). For the data that are displayed in most figures, PCs 1\u201320 were used for UMAP display with resolution for clustering set at 3.5; closely related clusters were merged. For Figure 3\u2014figure supplement 1, PCs 1\u201330 were used for UMAP display with resolution for clustering set at 1.6; related clusters were not merged. The expression patterns that are described for genes in mice can also be checked in the outstanding and easy to search single-cell analysis provided by Sharma et al., 2020.\n\nCo-clustering of mouse and human data used methods described by the Satija lab (Stuart et al., 2019). Briefly, we capitalized gene names in both mouse and human DRG-neuron data and then limited the datasets to genes that were shared between them. Mouse and human data were individually normalized and subjected to variance stabilization (sctransform) and were then combined using default parameters for integration (dims = 15). After integration, data were scaled and 30 PCs were calculated, used for UMAP display and clustering. Clustering resolution was set at 0.5 and cells were color coded by transferring their identity in the original clustering of human or mouse data. We experimented using different numbers of mouse neurons and found broadly similar results when approx. 1800, 3500, or 7000 mouse nuclei were used. However, although the relationships shown in Figure 3 could be discerned using the lower numbers of mouse nuclei the mouse neurons were less organized (with some of the mouse clusters splitting). When we used substantially greater numbers of mouse neurons from the full Renthal dataset (Renthal et al., 2020), the mouse neurons dominated the clustering and only co-clustering of large diameter neurons across species was observed with the other human and mouse nuclei clustering separately from each other. In order to quantify the similarity/dissimilarity between a given mouse cluster and any human cluster, the KL divergence between their distributions in 30-dimensional continuous space (PCs 1\u201330 from the co-clustering) was estimated as described previously (Perez-Cruz, 2008) using R (https://gist.github.com/lars-von-buchholtz/636f542ce8d93d5a14ae52a6c538ced5; von Buchholtz, 2021a). The natural logarithm of the KL divergences for each mouse/human pairing was plotted as a heatmap in R.\n\n### ISH and IHC\n\nCryosections from human DRGs (from different donors than those used for sequencing) were cut at 20 \u00b5m and used for ISH with the RNAscope HiPlex Assay (Advanced Cell Diagnostics) following the manufacturer\u2019s instructions. The following probes were used: NEFH (cat# 448141); TRPM8 (cat# 543121); PIEZO2 (cat# 449951); SCN10A (cat# 406291); NTRK2 (cat# 402621); TAC1 (cat# 310711); OSMR (cat# 537121); SST (cat# 310591); TRPV1 (cat# 415381); and PVALB (cat# 422181). We also used RNAscope Multiplex Fluorescent Assay (Advanced Cell Diagnostics) for localization of OSMR (cat# 537121); NPPB (cat# 448511); HRH1 (cat# 416501); and SST (cat# 310591).\n\nConfocal microscopy (5 \u00b5m spaced optical sections for HiPlex and 1 \u00b5m spaced optical sections for Multiplex Assays) was performed with a Nikon C2 Eclipse Ti (Nikon) using a \u00d740 objective. All confocal images shown are collapsed (maximum projection) stacks. HiPlex images were aligned and adjusted for brightness and contrast in ImageJ as previously described (von Buchholtz et al., 2020). Diagnostic probe combinations were used on at least three sections from at least two different individuals with qualitatively similar results. Overall, we used sections from ganglia from five different donors, however, the signal intensity of all probes varied between the individual ganglia making identification of positive signal risky in some cases. Strongest signals were observed for sections from an 18-year-old male donor and 23- and 35-year-old female donors. All images displayed here, and our analysis including cell counts were only from sections of ganglia isolated from these three individuals. When individual channels are displayed in the supplements, the strongest autofluorescence signals have been selected and superimposed using photoshop to help focus attention on ISH signal.\n\nIHC was carried out using 20 \u00b5m sections of human DRGs using standard procedures. Primary antibodies to NeuN (Millipore) and \u03b23 tubulin (Proteintech) were used at 1:1000 and 1:500 dilution, respectively, and were visualized using appropriate secondary antibodies conjugated to fluorescent reporters (Jackson Immuno Research, 1:1000). Sections were counterstained with 4\u2032,6-diamidino-2-phenylindole (DAPI) and/or green NeuroTrace (Fisher Scientific). Confocal images were acquired with a Nikon C2 Eclipse Ti (Nikon) using a \u00d740 objective with optical sections 5 \u00b5m apart. Images are maximum projection (collapsed) stacks of individual optical sections; consistency of NeuN staining was assessed using sections from two individuals; images were processed using Adobe Photoshop CC to adjust brightness, contrast, and set channel color for display.\n\nAnimal experiments were carried out in strict accordance with the US National Institutes of Health (NIH) guidelines for the care and use of laboratory animals and were approved by the National Institute of Dental and Craniofacial Research animal care and use committee (protocol #20-1041). Male and female mice were used for all experiments but were not analyzed separately. Mice were C57BL/6NCrl and were 6 weeks or older. Cryosections from fresh frozen mouse lumbar DRGs in OCT (Tissue-Tek) were cut at 10 \u00b5m and used for ISH with RNAscope Multiplex Fluorescent Assay (Advanced Cell Diagnostics) according to the manufacturer\u2019s instructions. Confocal images were acquired with a Nikon C2 Eclipse Ti (Nikon) using a \u00d710 objective at 1 \u00b5m optical section. Images are maximum projection (collapsed) stacks of 10 individual optical sections; consistency of staining was assessed using multiple sections from at least three mice as is considered standard; images were processed using Adobe Photoshop CC to adjust brightness, contrast, and set channel color for display.\n\n### Spatial analysis of cell clusters\n\nIn order to quantify spatial clustering of cell types, neurons in ISH images (for humans, one male, one female and for mice several sections from different DRGs and animals) were manually outlined and annotated as NEFH-only or SCN10A-only; cells expressing both genes were not counted. Centroid coordinates of these cells and their distances were analyzed in Python 3.7. The nearest neighbors were identified based on Euclidean distance (Scikit-Learn package) and the percentage of NEFH and SCN10A cells in each neighborhood of size 1\u201340 cells was calculated. Statistical significance between NEFH- and SCN10A-surrounding neighborhoods was determined using a one-tailed Mann\u2013Whitney U-test (Scipy Stats package).\n",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "2e704462-cd32-4d4a-8b5f-5a1b37077e2c",
+      "submission_id": "047fa86f-518e-4c50-833d-6a8cad41be91",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rebecca Seal, University of Pittsburgh School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71752.sa0](https://doi.org/10.7554/eLife.71752.sa0)\n\nThe manuscript by Nguyen et al. describes the assignment of neuronal cell types to human lumbar dorsal root ganglion (DRG) neurons based on the sequencing of individual nuclei. Bioinformatic comparison of these data to single nucleus sequencing results previously reported for mouse lumbar DRG is also described. The findings begin to close a gap in our understanding of how neuronal cell types and the expression of key genes differs between human and mouse. This kind of information is critical for targeted therapeutic efforts.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Rebecca Seal, University of Pittsburgh School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71752.sa1](https://doi.org/10.7554/eLife.71752.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single nucleus transcriptomic analysis of human dorsal root ganglion neurons\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Catherine Dulac as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThis is clearly an important and timely study of the gene expression profiles of individual human primary sensory neurons. The authors have acute access to quickly harvest tissue from donors which is extremely beneficial. While the number of neurons and depth of sequencing is on the low side, the authors provide new insights into the molecular organization as well as a comparison to mouse which will be valuable for the field. To be suitable for publication in eLife, the reviewers request that the manuscript is first strengthened by providing additional data, analysis and clarifications as outlined below.\n\nEssential revisions:\n\n1. There is concern that additional evidence is needed to support two major claims of the paper: that there are mouse-specific and human-specific neuron subtypes. These are issues stemming from the bioinformatics and from comparing datasets that were not generated in parallel. The in situ hybridization experiments provide some support for species specificity, but expression of individual marker genes may evolve while the overall cell population remains consistent. To address these issues, the authors should:\n\na) Add doublet detection;\n\nb) Attempt different levels of clustering (number of clusters) and show the results are robust;\n\nc) Try different methods and parameters of co-clustering across species;\n\nd) Try a method of comparing across species that doesn't depend on the exact clusters same clusters found in the analysis. For example, this might involve training a classifier in mouse to predict cell type from gene expression. Then, applying it to human and showing that clearly conserved cell types show up, but that none of the species-specific populations are correctly labeled.\n\n2. The reviewers had concern about the NeuN method of isolation. Was the technique in any way validated given the large number of non-neuronal cells and could there also have been bias in neurons that were selected by using this method, as it was pointed out that the levels of NeuN can vary across neuronal subtypes? Evidence validating the sorting and evidence against bias should be included, including plotting the distribution of UMIs and genes as well as using more than one glial marker.\n\n3. The number of nuclei that were sequenced and the depth of sequencing are low. Can the authors make a short statement indicating that although this work enables a better understanding of the subsets of human sensory neurons, the readers should keep in mind that this classification will be further refined as more studies or larger samples are added\n\n4. The authors should perform in situ for NPPB and also quantify all of the in situ data.\n\n5. The execution of the experiment looking at organization of NEHF and SCN10A positive cells in the human DRG is not entirely compelling based on the few images shown but the quantification is potentially better. Depending on how strongly the authors want to claim the \"spatial clustering\" model, the authors should perform additional quantification/modeling and also similar analysis with mouse DRG neurons.\n\nReviewer #3 (Recommendations for the authors):\n\nThe most obvious factor to strengthen this paper would be to increase the number of nuclei used in the clustering analysis. This may be complicated by experimental issues, such as the need to run samples in parallel. They can perhaps make a short statement indicating that although this work enables a better understanding of the subsets of human sensory neurons, that the readers should keep in mind that this classification will be further refined as more studies or larger samples are added.\n\nOne other note is that there is less interest in the multiple comparisons to the mouse classification, but more on defining the sensory profiles in human. Just describing how one class of sensory neurons has the possibility to be polymodal based on its expression of different receptors, and build on that in the Results section. The part about adaptation to ecological niches in the discussion is exactly what this paper can bring that is unique and exciting.\n\nFor instance, I find this very interesting that sensory neurons innervating hairy vs. non-hairy skin neurons get prioritized for human somatosensation compared to the mouse.\n\nOn another note: do the authors know whether they aren't biasing their analysis for neurons of large or small diameter, they shouldn't be (since there isn't really a size filtration step) but maybe it would be worthwhile for them to do a sort of population study where they look at the overall diameters of neurons and generate ratios of large to medium to small diameter neurons in the human DRG and compare it to mouse. Then maybe comparing the markers used for a FISH to generate ratios of how much those cells occur in their snRNASeq data to confirm that they aren't accidentally biasing their analysis.\n\nFigure 1: they need to state the number of nuclei analyzed in the text, not just the figure legend.\n\nFigure 1: they should show a table with the number of nuclei from each donor.\n\nLines 379-381: they acknowledge that they have higher neuron recovery, but the tradeoff is lower read depth \u2013 wouldn't read depth be of the utmost priority when making claims about new classes of sensory neurons in humans?\n\nFigure 2D: The authors claim that most neurons are labelled, yet from the image it seems like there are major gaps (that look like places where we'd find large diameter neurons based on the size). Did they use DAPI or any other counterstain at all to illustrate what the number of neurons actually was?\n\nThe authors claim they do not detect Mrgprd. Can they comment on the accuracy of snRNAseq at detecting low level transcripts? Is it that other low-level transcripts are undetectable? Can they comment on whether this could be a limitation of the technique?\n\nCan the authors discuss the Shiers study published in Bioarchives from the lab of Ted Price, where they found that TRPV1 was broadly expressed?\n\nOverall, I find this manuscript to be very important for the field of pain research and will be accessed frequently by pain scientists.\n\nReviewer #4 (Recommendations for the authors):\n\nThe number of cells and the depth of the sequencing are on the low end. One potential consequence is that populations such as c-LTRMs, which were reported by mouse studies and by the macaque and other human study are missing. Thus, it likely that there are not enough data to generate a comprehensive representation of all of the cell types. A bioinformatic comparison to the macaque would help to clarify some issues with what is different between these two important studies. In any case, a table that compares the cell types identified in the macaque and the other human study with this one would be very helpful. Information about the number of nuclei and \"depth of sequencing\" comparison across studies within this table or figure would also be helpful. The number of neuronal nuclei and genes per nuclei need to be stated upfront in the results.\n\nThe absence of C-LTMRs in the data is surprising. In mouse, C-LTMRs share features and genes with non-peptidergic neurons, are cooling sensitive and mechanically sensitive though the cooling sensitivity in mice is not likely mediated by Trpm8. How does the macaque c-LTMR cluster compare to the human data? How do the C-LTMRs assigned by the Price lab study compare?\n\nFor the comparison to mouse, the authors state that a random subset of Renthal data was used. Perhaps a better description of this would be helpful particularly what was in the subset? It is unclear why the full set would enrich for larger neurons.\n\nAuthors list genes that are not found in human data but are in mouse as well as a population that is in human that may not be in mouse. Page 8. The authors should use RT-PCR to see if the gene isn't expressed or if there is efficient nuclear export issue or annotation issue.\n\nThe authors should quantify the in situ data.\n\nConfusing about how H5 has a mouse counterpart with a few different genes (single cell comparison) but then H9 doesn't have a mouse counterpart. Were computational methods used to compare to the single cell mouse data?\n\nThe logic of sentence on lines 217-220 escapes me. If the snRNA.Seq representation was not comprehensive I assume that you could get the same result \u2013 all cells have one of these genes and they are generally non-overlapping.\n\nOrganization to the DRG would make sense as it is a common theme for sensory systems and for the somatosensory system. The data are in the supplementary where the images are not entirely convincing (3-D reconstruction of 3 or 4 DRG would be more convincing) but the analysis seems to suggest this could be true. The authors suggest this organization is present in human but not mouse. The distribution of myelinated and unmyelinated should be shown for mouse using the same approach.\n\nReviewer #5 (Recommendations for the authors):\n\n\u2013 It's a bit odd that quality of the NeuN sorting wasn't experimentally validated, especially given the large numbers of non-neuronal nuclei for a sorted experiment. The lack of structure in the non-neuronal cells could indicate that these droplets were empty or contained highly damaged cells. Plotting the distribution of UMIs and genes, as well as more than one glial marker could help resolve this.\n\n\u2013 Levels of NeuN itself can vary across neurons subtypes (https://celltypes.brain-map.org/rnaseq/human_m1_10x). Could these be responsible for the differences in cell type across species?\n\n\u2013 Seurat has different options for clustering included, each of them with a number of parameter options. There is not enough detail in the methods to identify if it was appropriate. In particular, how were the number of clusters identified? Do they really reflect distinct cell types or are there continuous signals? Similarly, the parameters outlier removal aren't described. These are especially critical for post-mortem experiments that can contain damaged cells.\n\n\u2013 The length of time between subject death and sample collection should be included.\n\n\u2013 There should be computation procedure for identifying/removing doublets.\n\n\u2013 The number of and distribution of UMIs per nucleus in the human dataset should be reported.\n\n\u2013 What parameters and function were used for the co-clustering between human and mouse?\n\n\u2013 The KL divergence calculated identifies similarities for cell classes and seems to perform reasonably. However, I am not aware of that test being commonly used to link cell populations across species. What is the justification for using it.\n\n\u2013 The procedure for identifying markers within and across species is not well-described. In particular, differences in the representation of different cell types across species could lead to artifacts in which markers are identified. Furthermore, since much of manuscript is devoted to differences between mouse and human expression, a statistical procedure should be used to verify the ability of particular genes to label a population in one species versus another.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Single nucleus transcriptomic analysis of human dorsal root ganglion neurons\" for further consideration by eLife. Your revised article has been reviewed by 3 peer reviewers and the evaluation has been overseen by Catherine Dulac as the Senior Editor, and a Reviewing Editor.\n\nThe manuscript has been significantly improved. There is one remaining issue that still needs to be further clarified or the claim tempered; namely there is concern that the authors have not convincingly proven that species specific cell types exist. Although the authors have argued the limitations of the bioinformatic approaches, it is suggested that they try generating substantially smaller clusters of cells in mouse (~twice the number of clusters). In this case, if none of these mouse sub-populations have a match to the human clusters based on KL divergence, that would substantially strengthen the argument that the human population is not conserved in mouse.\n",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "af4d2c28-399c-4e8f-b094-9b2d0c8f5667",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C1",
+      "claim": "Single lumbar L4 and L5 human dorsal root ganglia (DRG) were rapidly recovered from transplant donors within 90 min of cross-clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Single lumbar L4 and L5 human dorsal root ganglia (DRG) were rapidly recovered from transplant donors within 90 min of cross-clamp and were immediately stored in RNAlater.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct methodological statement describing the tissue collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "02e79cc9-f937-4826-bfbb-8f0cda29e4fd",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C2",
+      "claim": "Five ganglia from one male and four female donors with ages ranging from 34 to 55 were subjected to droplet based single nucleus (sn) capture, barcoding, and reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Five ganglia from one male and four female donors with ages ranging from 34 to 55 were subjected to droplet based single nucleus (sn) capture, barcoding, and reverse transcription (\u00d710 Genomics).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample composition and methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "41e9094f-d57b-4e11-b06f-5ec32c789761",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C3",
+      "claim": "Combinatorial clustering methods allowed co-clustering of neuronal nuclei into a well-defined set of distinct transcriptomic groups that are well separated from their non-neuronal counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Combinatorial clustering methods (Stuart et al., 2019) allowed co-clustering of neuronal nuclei into a well-defined set of distinct transcriptomic groups that are well separated from their non-neuronal counterparts (Figure 1A, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the clustering analysis methodology and referenced figures showing the separation of cell types.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "996c1bcc-1d29-4d52-9fae-85941828ea14",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C4",
+      "claim": "Reclustering the DRG-neuron data from 1837 cells identified a range of about a dozen diverse transcriptomic classes of human somatosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of non-neuronal nuclei from the dataset, reclustering the DRG-neuron data from 1837 cells identified a range of about a dozen diverse transcriptomic classes of human somatosensory neurons (Figure 1B, Figure 1\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the data analysis, supported by the number of cells analyzed and referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "c8c2a78b-7d2f-4908-b630-c30bc161528e",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C5",
+      "claim": "Multiple types of human DRG neurons have transcriptomic features that resemble their mouse counterparts although expression of genes considered important for sensory function often differed between species.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, multiple types of human DRG neurons have transcriptomic features that resemble their mouse counterparts although expression of genes considered important for sensory function often differed between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the comparative analysis between human and mouse data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "37af85d2-da03-41dc-aed7-b09adabab633",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C6",
+      "claim": "Several transcriptomic classes were identified with no clear equivalent in the other species.",
+      "claim_type": "EXPLICIT",
+      "source": "More unexpectedly, we identified several transcriptomic classes with no clear equivalent in the other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the comparative analysis between human and mouse DRG neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "aac56a6c-171d-41e9-9f5e-7f10a2bee52c",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C7",
+      "claim": "TAC1 (substance P), CALCA and CALCB (CGRP), and ADCYAP1 (PACAP) are expressed in several transcriptomic classes (H1, H2, H3, H5, and H6).",
+      "claim_type": "EXPLICIT",
+      "source": "In the human DRG dataset, TAC1 (substance P), CALCA and CALCB (CGRP), and ADCYAP1 (PACAP), are expressed in several transcriptomic classes (H1, H2, H3, H5, and H6, Figure 1C, Figure 1\u2014figure supplements 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the transcriptomic data analysis, supported by referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "ebcf52d6-78f9-4cfe-b170-8e9c97adea5f",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C8",
+      "claim": "Putative human peptidergic nociceptors express the high affinity nerve growth factor receptor NTRK1, the capsaicin and mustard oil-gated ion channels TRPV1 and TRPA1 but generally only low levels of the stretch-gated ion channel PIEZO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Just as in mice, the putative human peptidergic nociceptors express the high affinity nerve growth factor receptor NTRK1, the capsaicin and mustard oil-gated ion channels TRPV1 and TRPA1 but generally only low levels of the stretch-gated ion channel PIEZO2 (Figure 1C, Figure 1\u2014figure supplements 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the transcriptomic data, comparing human and mouse expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "a67967cf-1ce9-41c8-bfb5-1421702bc48d",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C9",
+      "claim": "In humans the neurofilament protein NEFH showed graded expression in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Although previous localization studies have suggested that in humans the neurofilament protein NEFH is expressed in all sensory neurons (Rostock et al., 2018), this gene showed graded expression in our data (Figure 1C) and marks several classes of cells just as in mice (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the data that contradicts previous studies, supported by citation and figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "6669ea4c-c253-456a-89f4-41a60bf228e7",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C10",
+      "claim": "The neuronal classes H14 and H15 expressing the highest levels of NEFH are distinct from the peptidergic neurons and likely represent different types of large diameter, fast conducting myelinated A\u03b2 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the neuronal classes H14 and H15 expressing the highest levels of NEFH are distinct from the peptidergic neurons (Figure 1C, Figure 1\u2014figure supplements 4 and 5), likely representing different types of large diameter, fast conducting myelinated A\u03b2 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on gene expression patterns and comparison with known cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "825cdc80-66f0-4ca2-9abe-01a87c2bdfc4",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C11",
+      "claim": "The small H15 group of NTRK3-positive cells had expression patterns characteristic of proprioceptors (parvalbumin, Etv1, Scn1a and Scn1b).",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, proprioceptors are a subtype of A\u03b2 neurons marked by the calcium binding protein parvalbumin, the transcription factor Etv1 and the voltage-gated sodium channel subunits Scn1a and Scn1b (Sharma et al., 2020; Renthal et al., 2020). In the human data, the small H15 group of NTRK3-positive cells had this expression pattern (Figure 1C, Figure 1\u2014figure supplement 5) implying that proprioceptors have conserved transcriptomic markers in humans and mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of gene expression patterns between human and mouse data, with citations to mouse studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "2d9c53e5-ac37-4d5a-9f35-1a427e0b8a47",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C12",
+      "claim": "Small groups of both A\u03b4-low threshold mechanosensors (H13) and cool responsive neurons (H8) were identified by their characteristic expression profiles of functionally important transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, small groups of both A\u03b4-low threshold mechanosensors (H13) and cool responsive neurons (H8) were identified by their characteristic expression profiles of functionally important transcripts (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the transcriptomic analysis based on expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "57d1b91f-2979-443a-887e-86e9e5050e91",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C13",
+      "claim": "The H8 putative cool responsive neurons expressing TRPM8 were strongly positive for the BDNF-receptor NTRK2 but hardly expressed the neuropeptide TAC1 whereas in rodents the converse was true.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in humans, the H8 putative cool responsive neurons expressing TRPM8 were strongly positive for the BDNF-receptor NTRK2 but hardly expressed the neuropeptide TAC1 whereas in rodents the converse was true (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of gene expression patterns between human and mouse data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "d2a9cb20-a4cd-4b22-92c0-012fd115f7b9",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C14",
+      "claim": "Tmem100 was almost undetectable in the human sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Tmem100 encodes a protein that in mice has been implicated as playing an important role in functional interactions between Trpv1 and Trpa1 and contributing to persistent pain (Weng et al., 2015). By contrast it was almost undetectable in the human sequencing data (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data, contrasting with mouse studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "85432aef-e830-469d-bde9-f89eb616ef59",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C15",
+      "claim": "Marked expression of the sphingosine-1-phosphate receptor S1PR3 was not detected in the human data.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we did not detect marked expression of the sphingosine-1-phosphate receptor S1PR3 (Figure 2A) that has been suggested as a target for treating both pain and itch based on mouse work (Hill et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data, contrasting with mouse studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "c3c7b0c3-bae4-4723-b102-c6c3d1c34329",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C16",
+      "claim": "A small group of human neurons, H5, expressing TRPA1 were resolved in the clustering, whereas in mouse nuclear sequencing data no direct counterpart was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "More strikingly, a small group of human neurons, H5, expressing TRPA1 were resolved in our clustering (Figure 2B), whereas in mouse nuclear sequencing data no direct counterpart was detected (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the clustering analysis comparing human and mouse data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "5b002ddb-b64d-4a6b-b628-1878d5edc74c",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C17",
+      "claim": "H5 cells are essentially CALCA (CGRP) and NTRK1 negative and instead are strongly NTRK2 positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, whereas mouse CGRP-gamma neurons strongly express Calca and Ntrk1, H5 cells are essentially CALCA (CGRP) and NTRK1 negative and instead are strongly NTRK2 positive (Figure 1, Figure 1\u2014figure supplements 4 and 5) suggesting that they may respond differently to external stimuli as well as in their signaling properties and therefore may not be a direct equivalent of mouse CGRP-gamma neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the transcriptomic data comparing human H5 cells with mouse CGRP-gamma neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "5b784889-c057-4551-8ba2-b93de2bf93bf",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C18",
+      "claim": "One small but prominent group of human DRG neurons (H9) expresses TRPM8, PIEZO2, SCN10A, and SCN11A.",
+      "claim_type": "EXPLICIT",
+      "source": "One small but prominent group of human DRG neurons (H9) expresses TRPM8, PIEZO2, SCN10A, and SCN11A (Figure 1\u2014figure supplements 4 and 5, Figure 2B) and clearly segregates from the putative cool sensing cells (H8) that express TRPM8, GPR26, NTM, and FOXP2 but are devoid of both the light touch receptor and the pain-related sodium channels (Figure 2B, Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the transcriptomic data describing the gene expression profile of H9 neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "e45d9739-a483-4489-b262-e76a05425e7b",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C19",
+      "claim": "In mice, Trpm8 expression is simpler with the cool sensing, menthol responsive ion channel just expressed in cells with the H8-like gene expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, Trpm8 expression is simpler with the cool sensing, menthol responsive ion channel just expressed in cells with this latter gene expression pattern (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the mouse transcriptomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "3d8eaa5b-6799-4409-b54e-48b31a231da4",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C20",
+      "claim": "Single fiber recordings have identified human neurons that respond to both cooling and gentle touch as might be expected for cells expressing both TRPM8 and PIEZO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, single fiber recordings have identified human neurons that respond to both cooling and gentle touch as might be expected for cells expressing both TRPM8 and PIEZO2 (33).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to physiological studies that align with the transcriptomic findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "fb1ec5ef-3e83-4eb9-ac58-89b057de7390",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C21",
+      "claim": "Recent single-cell sequencing of macaque DRG neurons also identified two populations of cells that match H8 and H9 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent single-cell sequencing of macaque DRG neurons also identified two populations of cells that match H8 and H9 neurons (Kupari et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a comparative study in another primate species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "64644db0-eba2-46d4-9263-2890e5bfee87",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C22",
+      "claim": "H9 neurons resemble (but also have differences from) human mechanosensory neurons that were recently engineered by transcriptional programming of stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, H9 neurons resemble (but also have differences from) human mechanosensory neurons that were recently engineered by transcriptional programming of stem cells (Nickolls et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on engineered neurons.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "0fb253c6-4af3-4650-b887-35614f1a7793",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C23",
+      "claim": "A second larger group of human neurons H12 is marked by NTRK3 and the voltage-gated ion channel SCN1A, but is only weakly positive for NEFH, expresses moderate levels of PIEZO2 and appears distinct from any potential mouse counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "A second larger group of human neurons H12 is marked by NTRK3 and the voltage-gated ion channel SCN1A, but is only weakly positive for NEFH, expresses moderate levels of PIEZO2 (Figure 2B, Figure 1\u2014figure supplement 5) and appears distinct from any potential mouse counterpart.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the transcriptomic data describing a human-specific cell type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "f9ef2e22-d239-46d3-8c9b-97ea991bc45c",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C24",
+      "claim": "The H12 gene expression pattern is most consistent with these cells functioning as a type of mechanosensor that has no direct equivalent in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The H12 gene expression pattern is most consistent with these cells functioning as a type of mechanosensor that has no direct equivalent in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the gene expression pattern of H12 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "a3d9ba71-6b90-4b8d-9d10-33181ae3c4d4",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C25",
+      "claim": "H4 was designated as c-nociceptors because of their expression of nociception-related SCN10A and NTRK1 and low level of NEFH.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we designated H4 as c-nociceptors because of their expression of nociception-related SCN10A and NTRK1 and low level of NEFH (Figure 2B, Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a classification based on gene expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "52275ff3-b106-41fb-a430-e5da5c4f5c34",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C26",
+      "claim": "H10 and H11 express receptors that in mice have roles in detecting pruritogens, including the two subunits (IL31RA and OSMR) of the interleukin 31 receptor and the histamine receptor HRH1.",
+      "claim_type": "EXPLICIT",
+      "source": "At a functional level both H10 and H11 express receptors that in mice have roles in detecting pruritogens. For example, these clusters were positive for the two subunits (IL31RA and OSMR) of the interleukin 31 receptor and the histamine receptor HRH1 (Figure 2C) that mediate mast cell-related scratching in mice (Solinski et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression data and comparison with mouse functional studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "f8a4bc81-39bb-4e1e-bf1b-164d76c7c0e4",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C27",
+      "claim": "H10 and H11 also express the itch-related neuropeptide NPPB, nociception-related sodium channels SCN10A and SCN11A as well as TRPV1 but not appreciable NEFH or TAC1.",
+      "claim_type": "EXPLICIT",
+      "source": "They also express the itch-related neuropeptide NPPB (Figure 2C), nociception-related sodium channels SCN10A and SCN11A as well as TRPV1 (Figure 2\u2014figure supplement 2A) but not appreciable NEFH or TAC1 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the transcriptomic data describing the gene expression profile of H10 and H11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "8c44664a-b20c-45f5-bf16-d1f6d7576d2e",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C28",
+      "claim": "H10 and H11 are likely groups of putative unmyelinated, nonpeptidergic nociceptors with potential for triggering human itch responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that these are groups of putative unmyelinated, nonpeptidergic nociceptors with potential for triggering human itch responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the gene expression patterns of H10 and H11.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "899ca531-b3fc-47d7-9ce5-2210f44983a3",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C29",
+      "claim": "Mouse nonpeptidergic, small diameter neurons account for 40% of the sensory neurons in mouse DRGs and divide into four highly stereotyped transcriptional groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In marked contrast, mouse nonpeptidergic, small diameter neurons are far more numerous than H10 and H11 accounting for 40% of the sensory neurons in mouse DRGs (Renthal et al., 2020) and divide into four highly stereotyped transcriptional groups (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of mouse data with citation to the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "534be6c6-19c3-44aa-b5f7-503a918e3f08",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C30",
+      "claim": "Two classes of mouse neurons (NP2 and NP3) trigger itch.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of these classes of mouse neurons (NP2 and NP3) trigger itch (Mishra and Hoon, 2013; Han et al., 2013), one (NP1, expressing Mrgprd) responds to noxious mechanical stimulation (von Buchholtz et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to functional studies in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "f2b2fa70-52b4-4d49-924e-eefa2d32148d",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C31",
+      "claim": "NP1 neurons may have a role in mechanonociception and have recently been associated with suppression of skin inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "NP1 neurons may have a role in mechanonociception (Gatto et al., 2019) and have recently been associated with suppression of skin inflammation (Zhang et al., 2021), which was hypothesized as relevant for human health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to functional studies in mice.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "6e7fec41-e875-4024-b27e-6708049e3946",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C32",
+      "claim": "The fourth class of mouse nonpeptidergic neurons corresponds with low threshold mechanosensors (cLTMRs) that are thought to mediate affective touch.",
+      "claim_type": "EXPLICIT",
+      "source": "The fourth class corresponds with low threshold mechanosensors (cLTMRs) that are thought to mediate affective touch (Gatto et al., 2019; McGlone et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to functional studies in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "e7f2530f-9d01-4dbf-948e-e866edfa235d",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C33",
+      "claim": "Multigene ISH demonstrates that TAC1, NEFH, and OSMR label distinct and only partially overlapping populations of human DRG neurons with essentially every cell labeled by one of these probes but with very few exhibiting strong coexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Multigene ISH demonstrates that both these predictions are true for human DRG neurons (Figure 2D, Figure 2\u2014figure supplements 1B and 2B) with essentially every cell labeled by one of these probes but with very few exhibiting strong coexpression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the ISH experiments validating the transcriptomic findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "657eb90e-50a4-41b6-88a0-6e77edfb2252",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C34",
+      "claim": "The largest diameter neurons were strongly positive for NEFH whereas TAC1 and OSMR primarily labeled smaller cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in keeping with our assignments based on transcriptomic data, the largest diameter neurons were strongly positive for NEFH whereas TAC1 and OSMR primarily labeled smaller cells (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the ISH experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "e24fc534-39de-49e9-a9f5-331f7babab89",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C35",
+      "claim": "Several classes of human neurons grouped with corresponding mouse counterparts including H15 \u2013 proprioceptors, H14 \u2013 A\u03b2 cells, H13 \u2013 A\u03b4LTMRs, H11 \u2013 NP3 (Nppb) neurons, and H3/H6 \u2013 A\u03b4 nociceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, several classes of human neurons grouped with corresponding mouse counterparts including H15 \u2013 proprioceptors, H14 \u2013 A\u03b2 cells, H13 \u2013 A\u03b4LTMRs, H11 \u2013 NP3 (Nppb) neurons, and H3/H6 \u2013 A\u03b4 nociceptors (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the co-clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "b08e907a-2188-4c50-b052-b782aef6d172",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C36",
+      "claim": "Co-clustering analysis suggested that H10 most closely resembled NP1 (Mrgprd) neurons rather than any other human or mouse class of sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis suggested that H10 the other cluster that gene expression indicated are also itch related most closely resembled NP1 (Mrgprd) neurons rather than any other human or mouse class of sensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the co-clustering analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "8ae479a6-2b43-4f6f-9740-8e6b556899e1",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C37",
+      "claim": "All types of peptidergic small diameter nociceptors were less organized in the co-clustering and separated from their potential mouse counterparts despite their qualitatively similar expression of some of the best-known functional markers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all types of peptidergic small diameter nociceptors were less organized in the co-clustering and separated from their potential mouse counterparts despite their qualitatively similar expression of some of the best-known functional markers (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the co-clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "08344aad-06f3-473e-ad89-6bf9f0ab7521",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C38",
+      "claim": "The small cluster of human 'cool' responsive neurons H8 showed greatest similarity to mouse Trpm8 cells based on KL divergence analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, clusters that co-segregate in the UMAP analysis showed greatest similarity but additional relationships not apparent from the visual representation of the co-clustering were also seen. For example, the small cluster of human 'cool' responsive neurons H8 showed greatest similarity to mouse Trpm8 cells and several groups of human cells (H1, H2, and H5) that gene expression predicted should be c-type peptidergic nociceptors, indeed best matched these cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the KL divergence quantitative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "4a4ed2f0-9423-421f-a753-5edccc0879f4",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C39",
+      "claim": "No class of human neurons showed appreciable similarity to mouse cLTMRs based on KL divergence analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, no class of human neurons showed appreciable similarity to mouse cLTMRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the KL divergence quantitative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "fa460861-589b-47bf-b098-8d813b7cd803",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C40",
+      "claim": "TRPM8 expressing neurons clearly segregate into two distinct types in human DRG.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TRPM8 expressing neurons clearly segregate into two distinct types (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the ISH experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "f968a085-e571-4103-8300-bc3f26efee5d",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C41",
+      "claim": "One set of TRPM8-expressing cells (H8) share other transcriptomic properties with mouse cooling responsive cells: TRPM8 is not coexpressed with the ion channels SCN10A or PIEZO2, but unlike in mice these cells are NTRK2 positive.",
+      "claim_type": "EXPLICIT",
+      "source": "One set of cells (H8) share other transcriptomic properties with mouse cooling responsive cells: TRPM8, the cool and menthol receptor is not coexpressed with the ion channels SCN10A or PIEZO2 (Figure 4A), but unlike in mice these cells are NTRK2 positive (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the ISH experiments comparing human and mouse expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "c16e0be7-699c-4bd0-8563-082472bfac1b",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C42",
+      "claim": "Other TRPM8-expressing cells (H9) coexpress the pain and light touch related ion channels (SCN10A and PIEZO2) with TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, other cells (H9) coexpress the pain and light touch related ion channels (SCN10A and PIEZO2) with TRPM8 (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the ISH experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "f3b2b479-b1b6-49af-8381-70cc4e22c612",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C43",
+      "claim": "Putative proprioceptive neurons (H15) were distinguished by their expression of NEFH, PIEZO2, and PVALB and lack of NTRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, putative proprioceptive neurons (H15) were distinguished by their expression of NEFH, PIEZO2, and PVALB and lack of NTRK2 (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the ISH experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "5f9bb5df-5009-49a0-8f71-6f8fb7ef0d9d",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C44",
+      "claim": "Transcriptomic classes of human DRG sensory neurons are not stochastically distributed in the ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it appears that transcriptomic classes of human DRG sensory neurons may not be stochastically distributed in the ganglion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the spatial distribution patterns observed in ISH.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "8a037fc9-d849-4f9a-b428-0dee07091d84",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C45",
+      "claim": "Broad clustering of similar types of neurons was apparent, quantifiable, and statistically significant when examining the distribution of nociceptors and myelinated neurons at lower magnification.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we examined the distribution of nociceptors and myelinated neurons at lower magnification (using strong selective probes), broad clustering of similar types of neurons was apparent, quantifiable, and statistically significant (Figure 4C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the spatial analysis of ISH data with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "775bc47e-bcde-423e-a80b-97674a761b4c",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C46",
+      "claim": "In mouse DRG neurons, cells expressing Nefh and Scn10a markers are not uniformly distributed, suggesting spatial clustering of related DRG neurons may be a common feature across species.",
+      "claim_type": "EXPLICIT",
+      "source": "We carried out a similar analysis in mouse DRG neurons using Nefh and Scn10a probes and found that there too, cells expressing these markers are not uniformly distributed (Figure 4\u2014figure supplement 2) suggesting spatial clustering of related DRG neurons may be a common feature across species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the spatial analysis of mouse ISH data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "5f9cbaa4-e20a-4346-9daf-02f6df0f3593",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C47",
+      "claim": "H10 and H11 neurons express a number of genes that are known markers of mouse NP3 cells and functionally important for triggering pruritic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data (Figure 2, Figure 2\u2014figure supplement 2, Figure 5\u2014figure supplement 1A) show that H10 and H11 neurons express a number of genes that are known markers of mouse NP3 cells and functionally important for triggering pruritic responses (Gatto et al., 2019; Solinski et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression data and comparison with mouse functional studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "79f382d6-d2f8-4093-9ad0-52b817318362",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C48",
+      "claim": "The human chloroquine responsive receptor MRGPRX1 localized selectively to H10 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, although not prominently expressed, the human chloroquine responsive receptor MRGPRX1 (27) localized selectively to H10 neurons (Figure 5B) perhaps suggesting a relationship to mouse NP2 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the transcriptomic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "05c2d363-b7ef-4a9e-895e-a496e1a1f279",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C49",
+      "claim": "Janus kinase 1 (JAK1), a mediator of itch through various types of cytokine signaling, including through OSMR, and the neuropeptide SST are particularly strongly expressed in H11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Janus kinase 1 (JAK1), a mediator of itch through various types of cytokine signaling, including through OSMR (Oetjen et al., 2017), and the neuropeptide SST are particularly strongly expressed in H11 cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the transcriptomic data with citation to functional studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "ca9cd5f9-0d1b-45b8-98c2-950a12e0b388",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C50",
+      "claim": "Both JAK1 and SST are prominent markers of NP3 pruriceptors in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Both these genes are prominent markers of NP3 pruriceptors in mouse (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the mouse transcriptomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "8e9fea13-4e60-4d3a-b883-9ae8d82fca87",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C51",
+      "claim": "H10 cells are distinguished from H11 and mouse pruriceptors by their prominent expression of the stretch-gated ion channel PIEZO2.",
+      "claim_type": "EXPLICIT",
+      "source": "H10 cells are also distinguished from H11 and mouse pruriceptors by their prominent expression of the stretch-gated ion channel PIEZO2 (Figure 1C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the transcriptomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "3074c25e-eba2-4b88-9e28-d5357f6bcd47",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C52",
+      "claim": "The coexpression of itch-related transcripts and PIEZO2 in H10 neurons hint that H10 neurons may be responsible for the familiar human sensation known as mechanical itch.",
+      "claim_type": "EXPLICIT",
+      "source": "The coexpression of itch-related transcripts and this low threshold mechanosensor hint that H10 neurons may be responsible for the familiar human sensation known as mechanical itch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the gene expression pattern of H10 neurons.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "b177debb-aa91-4532-93c3-f083f0e23b3a",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C53",
+      "claim": "Multiplexed ISH showed that SST divides the OSMR-positive cells into two intermingled types in keeping with the sequence data.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiplexed ISH showed that SST divides the OSMR-positive cells into two intermingled types (Figure 5C) in keeping with the sequence data (Figure 5B) and the relative expression patterns of SCN10A and OSMR (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the ISH experiments validating the transcriptomic findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "5f28660a-2242-4295-bfcc-36c7b4b14eab",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C54",
+      "claim": "The prediction that PIEZO2-OSMR coexpression should mark SST-negative neurons was largely borne out by ISH.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the prediction that PIEZO2-OSMR coexpression should mark SST-negative neurons was also largely borne out by ISH (Figure 5C, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the ISH experiments validating the transcriptomic predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "ace076ff-8eff-4a0e-a5cd-ffefec54354c",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C55",
+      "claim": "ISH shows that some neurons expressing lower levels of SST are PIEZO2-positive and that some OSMR-positive H10 cells contain only a very low level of the mechanosensory channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ISH also shows that some neurons expressing lower levels of SST are PIEZO2-positive and that some OSMR-positive H10 cells, contain only a very low level of the mechanosensory channel (Figure 5C, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the ISH experiments showing heterogeneity within clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "bbd35339-b087-4dfc-9b56-127734b09596",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C56",
+      "claim": "H10 and H11 are by no means homogeneous populations and may not be as functionally distinct as snRNA clustering suggests.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, H10 and H11 are by no means homogeneous populations and may not be as functionally distinct as snRNA clustering suggests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ISH observations showing heterogeneity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "f0d52f43-11e9-49df-899a-e6f477affa79",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C57",
+      "claim": "Mouse and human somatosensory neurons express many of the same genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptomic analysis of DRG neurons confirms that mouse and human somatosensory neurons express many of the same genes (Ray et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a comparative study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "fa1c4561-2464-45aa-9c2b-b569f54b386f",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C58",
+      "claim": "Although gross similarity in the transcriptomic classification of mouse and human somatosensory cells can be discerned, the patterns of coordinated gene expression across species are not well conserved and both species exhibit unique specializations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although gross similarity in the transcriptomic classification of these cells can be discerned in single-cell analyses (peptidergic versus nonpeptidergic; neurofilament rich, myelinated versus nonmyelinated), the patterns of coordinated gene expression across species are not well conserved and both species exhibit unique specializations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the comparative analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "8462206d-438d-4451-a433-0243c686c43e",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C59",
+      "claim": "In humans all nonpeptidergic neurons express TRPV1 whereas mouse NP1, NP2, and cLTMRs do not prominently express this gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in humans all nonpeptidergic neurons express TRPV1 whereas mouse NP1, NP2, and cLTMRs do not prominently express this gene, this fits well with recent data showing much broader expression of TRPV1 in humans than mice (Shiers et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transcriptomic data and supported by citation to a comparative expression study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "ce450b1b-21ec-4be8-8a69-33a5965f6754",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C60",
+      "claim": "At a transcriptomic level, humans do not have a clearly identifiable correlate for mouse cLTMRs.",
+      "claim_type": "EXPLICIT",
+      "source": "At a transcriptomic level, humans do not have a clearly identifiable correlate for these cells (Figure 3B) although careful microneurography has revealed human c-fibers that respond to stroking (Wessberg et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the co-clustering and KL divergence analysis, with citation to physiological studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "73e4d133-7f70-440a-9680-b3f77d236e7c",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C61",
+      "claim": "Some stroking responsive human c-fibers may be the nonpeptidergic H10 neurons that express itch-related genes as well as high levels of PIEZO2.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that some of these stroking responsive cells may be the nonpeptidergic H10 neurons that express itch-related genes as well as high levels of PIEZO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the gene expression pattern of H10 neurons and physiological data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "ded360bb-5035-4da4-baa5-f5722f9b38d3",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C62",
+      "claim": "Bulk sequencing studies have identified MRGPRD expression in human DRG.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk sequencing studies have identified MRGPRD expression in human DRG (Price et al., 2016), but recent ISH localization studies suggest only very low-level expression of this transcript together with MRGPRX1 in somatosensory neurons (Klein et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to bulk sequencing and ISH studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "b1b0e387-3d46-439e-95ec-feec468b12b5",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C63",
+      "claim": "The mean number of genes detected per nucleus was 2839 (range 501\u20139652), with a standard deviation of 1917.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of genes detected per nucleus was 2839 (range 501\u20139652), with a standard deviation of 1917.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the sequencing data quality metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "3288f857-30a8-41f1-80eb-76c00ed37230",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C64",
+      "claim": "A total of 1837 human DRG neuronal nuclei were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1837 human DRG neuronal nuclei were included in the analysis (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "4bfcd1eb-acc0-4b4d-ae98-edb4b0aed6c9",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C65",
+      "claim": "Clustering was statistically significant across the complete range (1\u201340 neighbors) for spatial analysis of human DRG neurons, p \u2264 6.96 \u00d7 10\u221242.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering was statistically significant across the complete range (1\u201340 neighbors), p \u2264 6.96 \u00d7 10\u221242 (one-tailed Mann\u2013Whitney U-test); n = 803 single positive cells confirming both short and long-range grouping of similar classes of human DRG neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the statistical analysis results for spatial clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "cf72d0f0-9faa-4581-b93f-6cf980b7fe53",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C66",
+      "claim": "Clustering was statistically significant across the complete range (1\u201340 neighbors) for spatial analysis of mouse DRG neurons, p \u2264 3.98 \u00d7 10\u221215.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering was statistically significant across the complete range (1\u201340 neighbors), p \u2264 3.98 \u00d7 10\u221215 (one-tailed Mann\u2013Whitney U-test); n = 1117 single positive cells confirming both short- and long-range grouping of similar classes of mouse DRG neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the statistical analysis results for spatial clustering in mouse.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "e55a57ad-38a1-4a8a-b533-bc0a50b0eddb",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C67",
+      "claim": "Nuclei were isolated from each donor separately using a modified protocol from previous work.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclei were isolated from each donor separately as described previously (Nguyen et al., 2019) with minor modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement with citation to the original protocol.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "6cfb067b-a51c-4664-8975-c2fccb67d9f2",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C68",
+      "claim": "Neuronal nuclei selection was performed by incubating the sample with a rabbit polyclonal anti-NeuN antibody at 1:4000 dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal nuclei selection was performed by incubating the sample with a rabbit polyclonal anti-NeuN antibody (Millipore, cat#ABN78) at 1:4000 dilution with rotation at 4\u00b0C for 30 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "ec288b87-f2d6-425d-a4bc-41cb335346bd",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C69",
+      "claim": "10x-chromium capture and library generation were performed according to the manufacturer's instructions using v3 chemistry kits.",
+      "claim_type": "EXPLICIT",
+      "source": "10x-chromium capture and library generation were performed according to the manufacturer's instructions using v3 chemistry kits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "07d46007-d34d-4916-b4a8-8203d13feeb2",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C70",
+      "claim": "10x chromium data were mapped using CellRanger to a pre-mRNA modified human genome (GRCh38.v25.premRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "10x chromium data were mapped using CellRanger to a pre-mRNA modified human genome (GRCh38.v25.premRNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "7e9eb1bd-b166-4fb7-9612-52480ad7ec25",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C71",
+      "claim": "Data analysis used the Seurat V3 packages developed by the Satija lab and followed standard procedures for co-clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Data analysis used the Seurat V3 packages developed by the Satija lab and followed standard procedures for co-clustering (Stuart et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement with citation to the analysis package.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "fa33f352-0250-42c4-861d-f7952bc375f0",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C72",
+      "claim": "For sn-RNA sequencing experiments cell filtering was performed with outliers identified and removed based on the number of expressed genes (500\u201310,000 retained) and mitochondrial proportion (<10% retained).",
+      "claim_type": "EXPLICIT",
+      "source": "For sn-RNA sequencing experiments cell filtering was performed as follows: outliers were identified and removed based on the number of expressed genes (500\u201310,000 retained) and mitochondrial proportion (<10% retained).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct methodological statement describing quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "ca1e58cb-13e0-4c08-9c78-f3c89ea1f972",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C73",
+      "claim": "Normalization and variance stabilization used regularized negative binomial regression (sctransform).",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization and variance stabilization used regularized negative binomial regression (sctransform).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "743f8b4a-07e3-4b40-8663-1f771861a48d",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "claim_id": "C74",
+      "claim": "Doublet detection was performed on the individual datasets using DoubletFinder.",
+      "claim_type": "EXPLICIT",
+      "source": "Doublet detection was performed on the individual datasets using DoubletFinder (McGinnis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement with citation to the tool used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors performed single-nucleus RNA sequencing on human L4/L5 DRG from 5 donors (1 male, 4 female, ages 34-55), isolating 1837 neuronal nuclei using NeuN antibody enrichment. Clustering analysis identified approximately a dozen distinct transcriptomic classes of human somatosensory neurons, well-separated from non-neuronal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims are well-documented with appropriate sample sizes, quality control metrics (mean 2839 genes/nucleus, doublet detection), and standard bioinformatic pipelines (Seurat V3, sctransform normalization). The clustering is supported by multiple figures and appears robust across different parameter choices (Figure 1\u2014figure supplement 3). However, the study acknowledges limitations in sequencing depth compared to mouse studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "9aeef8d8-2113-4115-9010-575cffed0f00",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Multiple human DRG neuron types show conserved transcriptomic features with mouse counterparts, including peptidergic nociceptors (H1-H3, H6), proprioceptors (H15), A\u03b2 neurons (H14), A\u03b4-LTMRs (H13), and cool-sensing neurons (H8). These express characteristic markers like TAC1, CALCA, NTRK1, TRPV1, TRPA1 for nociceptors; PVALB, ETV1, SCN1A/B for proprioceptors; and TRPM8 for cool sensors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of conserved cell types is well-supported by gene expression patterns (C7-C8, C11-C12), co-clustering analysis (C35), and KL divergence quantification (C38). The expression of functionally important markers is consistent with known mouse biology and validated by ISH. However, the functional assignments remain inferential based on marker expression rather than direct physiological testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "97acfc57-9fee-4e2e-ba86-27a6164d456e",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Despite overall similarity, human and mouse DRG neurons show substantial differences in gene expression patterns. NEFH shows graded rather than uniform expression in humans (C9), contradicting previous studies. H8 cool-sensing neurons are NTRK2+ but TAC1- in humans versus the opposite in mice (C13). Genes like TMEM100 and S1PR3 show minimal expression in humans despite functional importance in mice (C14-C15). Peptidergic nociceptors separate in co-clustering despite similar marker expression (C37), and TRPV1 is broadly expressed in human nonpeptidergic neurons unlike in mice (C59).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The species differences are well-documented through direct comparison of expression patterns in parallel analyses of human and mouse data. The claims are supported by multiple lines of evidence including UMAPs, dot plots, and co-clustering results. The contradiction with previous NEFH studies (C9) is appropriately cited and explained by the higher resolution of snRNA-seq. The functional implications remain speculative but the transcriptomic differences are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Several human neuronal populations lack clear mouse equivalents. H5 neurons express TRPA1 but are CALCA-/NTRK1- and NTRK2+ (C16-C17). H9 neurons uniquely co-express TRPM8 with PIEZO2 and SCN10A (C18), unlike mouse cool sensors (C19), and correlate with human neurons responding to both cooling and touch (C20-C22). H12 neurons express NTRK3/SCN1A with moderate PIEZO2, suggesting a mechanosensor type absent in mice (C23-C24). H4 represents c-nociceptors without clear mouse counterparts (C25). Humans lack a clear transcriptomic correlate to mouse cLTMRs (C39, C60), though H10 neurons may serve similar functions (C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The identification of human-specific populations is based on co-clustering analysis and KL divergence showing poor matches to mouse cell types. However, the functional interpretations are largely speculative. The correlation with physiological data (C20) is cited but not directly tested. The suggestion that H10 may represent cLTMR equivalents (C61) is explicitly stated as speculation. The macaque data (C21) and engineered neuron comparison (C22) provide some cross-validation but differences are noted. Without functional validation, these remain candidate human-specific populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "dd90cc25-783c-447f-8008-0f8dca3736de",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "H10 and H11 represent ~20% of human DRG neurons and express itch-related genes (IL31RA, OSMR, HRH1, NPPB) along with nociceptive markers (SCN10A, SCN11A, TRPV1) but lack NEFH and TAC1 (C26-C27). They are putative nonpeptidergic nociceptors with pruriceptive potential (C28). H11 strongly expresses JAK1 and SST, matching mouse NP3 markers (C49-C50). H10 expresses MRGPRX1 and high PIEZO2 (C48, C51), potentially mediating mechanical itch (C52). These populations contrast with the four mouse nonpeptidergic types (NP1-3, cLTMRs) that comprise 40% of mouse DRG (C29-C32). ISH reveals heterogeneity within H10/H11, suggesting they may not be as functionally distinct as clustering implies (C56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The characterization of H10/H11 is well-supported by transcriptomic data (C26-C27, C47-C51), co-clustering with mouse NP types (C36, C47), and ISH validation (C53-C55). The expression of itch-related genes is clearly demonstrated. However, the functional interpretations (C28, C52) remain speculative without physiological validation. The important caveat about heterogeneity (C56) is appropriately noted based on ISH showing variable expression levels. The comparison to mouse nonpeptidergic neurons is well-documented with appropriate citations (C29-C32).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multiplexed ISH validates key transcriptomic predictions. TAC1, NEFH, and OSMR label distinct, largely non-overlapping populations covering essentially all neurons (C33), with NEFH marking large-diameter cells and TAC1/OSMR marking smaller neurons (C34). TRPM8+ neurons segregate into two types: H8 (TRPM8+/SCN10A-/PIEZO2-/NTRK2+) and H9 (TRPM8+/SCN10A+/PIEZO2+) (C40-C42). Proprioceptors (H15) express NEFH/PIEZO2/PVALB without NTRK2 (C43). SST divides OSMR+ cells into H10 and H11 (C53), with PIEZO2-OSMR coexpression marking SST- neurons (C54), though some heterogeneity exists (C55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ISH validation provides strong orthogonal support for the transcriptomic findings. The claims are based on direct visualization with appropriate quantification (Figure 2\u2014figure supplement 1: 1101 cells scored). The predictions from sequencing data are largely confirmed, though important caveats about heterogeneity are noted (C55). The ISH addresses a key concern about the sparse nature of snRNA-seq data by providing analog expression measurements. The consistency between sequencing and ISH strengthens confidence in the cell type classifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    },
+    {
+      "id": "ca6c92e8-79d0-4e46-9332-5d2b0117304a",
+      "content_id": "bf597787-3aae-4236-a585-189366424279",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Transcriptomic classes of DRG neurons show non-random spatial organization in the ganglion. In humans, NEFH+ and SCN10A+ neurons cluster significantly (p \u2264 6.96\u00d710\u207b\u2074\u00b2, n=803 cells, 1-40 neighbors analyzed) (C45, C65). Similar spatial clustering is observed in mouse DRG (p \u2264 3.98\u00d710\u207b\u00b9\u2075, n=1117 cells) (C46, C66), suggesting this is a conserved feature across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The spatial clustering is well-supported by quantitative analysis with strong statistical significance and appropriate sample sizes. The Mann-Whitney U-test is suitable for this type of spatial analysis. The finding is validated across species (human and mouse) and across multiple neighborhood sizes (1-40 neighbors), demonstrating both short- and long-range organization. The visual evidence (Figure 4C) supports the quantitative findings. This represents a novel observation about DRG organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:14.671748Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "af4d2c28-399c-4e8f-b094-9b2d0c8f5667",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "02e79cc9-f937-4826-bfbb-8f0cda29e4fd",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "41e9094f-d57b-4e11-b06f-5ec32c789761",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "996c1bcc-1d29-4d52-9fae-85941828ea14",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "b1b0e387-3d46-439e-95ec-feec468b12b5",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "3288f857-30a8-41f1-80eb-76c00ed37230",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "e55a57ad-38a1-4a8a-b533-bc0a50b0eddb",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "6cfb067b-a51c-4664-8975-c2fccb67d9f2",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "ec288b87-f2d6-425d-a4bc-41cb335346bd",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "07d46007-d34d-4916-b4a8-8203d13feeb2",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "7e9eb1bd-b166-4fb7-9612-52480ad7ec25",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "fa33f352-0250-42c4-861d-f7952bc375f0",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "ca1e58cb-13e0-4c08-9c78-f3c89ea1f972",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "743f8b4a-07e3-4b40-8663-1f771861a48d",
+      "result_id": "21b5bd26-65b5-4ddd-950f-fe73ed9ea73b"
+    },
+    {
+      "claim_id": "c8c2a78b-7d2f-4908-b630-c30bc161528e",
+      "result_id": "9aeef8d8-2113-4115-9010-575cffed0f00"
+    },
+    {
+      "claim_id": "aac56a6c-171d-41e9-9f5e-7f10a2bee52c",
+      "result_id": "9aeef8d8-2113-4115-9010-575cffed0f00"
+    },
+    {
+      "claim_id": "ebcf52d6-78f9-4cfe-b170-8e9c97adea5f",
+      "result_id": "9aeef8d8-2113-4115-9010-575cffed0f00"
+    },
+    {
+      "claim_id": "6669ea4c-c253-456a-89f4-41a60bf228e7",
+      "result_id": "9aeef8d8-2113-4115-9010-575cffed0f00"
+    },
+    {
+      "claim_id": "825cdc80-66f0-4ca2-9abe-01a87c2bdfc4",
+      "result_id": "9aeef8d8-2113-4115-9010-575cffed0f00"
+    },
+    {
+      "claim_id": "2d9c53e5-ac37-4d5a-9f35-1a427e0b8a47",
+      "result_id": "9aeef8d8-2113-4115-9010-575cffed0f00"
+    },
+    {
+      "claim_id": "e24fc534-39de-49e9-a9f5-331f7babab89",
+      "result_id": "9aeef8d8-2113-4115-9010-575cffed0f00"
+    },
+    {
+      "claim_id": "08344aad-06f3-473e-ad89-6bf9f0ab7521",
+      "result_id": "9aeef8d8-2113-4115-9010-575cffed0f00"
+    },
+    {
+      "claim_id": "a67967cf-1ce9-41c8-bfb5-1421702bc48d",
+      "result_id": "97acfc57-9fee-4e2e-ba86-27a6164d456e"
+    },
+    {
+      "claim_id": "57d1b91f-2979-443a-887e-86e9e5050e91",
+      "result_id": "97acfc57-9fee-4e2e-ba86-27a6164d456e"
+    },
+    {
+      "claim_id": "d2a9cb20-a4cd-4b22-92c0-012fd115f7b9",
+      "result_id": "97acfc57-9fee-4e2e-ba86-27a6164d456e"
+    },
+    {
+      "claim_id": "85432aef-e830-469d-bde9-f89eb616ef59",
+      "result_id": "97acfc57-9fee-4e2e-ba86-27a6164d456e"
+    },
+    {
+      "claim_id": "8ae479a6-2b43-4f6f-9740-8e6b556899e1",
+      "result_id": "97acfc57-9fee-4e2e-ba86-27a6164d456e"
+    },
+    {
+      "claim_id": "f0d52f43-11e9-49df-899a-e6f477affa79",
+      "result_id": "97acfc57-9fee-4e2e-ba86-27a6164d456e"
+    },
+    {
+      "claim_id": "fa1c4561-2464-45aa-9c2b-b569f54b386f",
+      "result_id": "97acfc57-9fee-4e2e-ba86-27a6164d456e"
+    },
+    {
+      "claim_id": "8462206d-438d-4451-a433-0243c686c43e",
+      "result_id": "97acfc57-9fee-4e2e-ba86-27a6164d456e"
+    },
+    {
+      "claim_id": "37af85d2-da03-41dc-aed7-b09adabab633",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "c3c7b0c3-bae4-4723-b102-c6c3d1c34329",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "5b002ddb-b64d-4a6b-b628-1878d5edc74c",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "5b784889-c057-4551-8ba2-b93de2bf93bf",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "e45d9739-a483-4489-b262-e76a05425e7b",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "3d8eaa5b-6799-4409-b54e-48b31a231da4",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "fb1ec5ef-3e83-4eb9-ac58-89b057de7390",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "64644db0-eba2-46d4-9263-2890e5bfee87",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "0fb253c6-4af3-4650-b887-35614f1a7793",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "f9ef2e22-d239-46d3-8c9b-97ea991bc45c",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "a3d9ba71-6b90-4b8d-9d10-33181ae3c4d4",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "b08e907a-2188-4c50-b052-b782aef6d172",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "4a4ed2f0-9423-421f-a753-5edccc0879f4",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "ce450b1b-21ec-4be8-8a69-33a5965f6754",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "73e4d133-7f70-440a-9680-b3f77d236e7c",
+      "result_id": "5306f534-8ea1-49c6-ac92-bfc6a02f91e2"
+    },
+    {
+      "claim_id": "52275ff3-b106-41fb-a430-e5da5c4f5c34",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "f8a4bc81-39bb-4e1e-bf1b-164d76c7c0e4",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "8c44664a-b20c-45f5-bf16-d1f6d7576d2e",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "899ca531-b3fc-47d7-9ce5-2210f44983a3",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "534be6c6-19c3-44aa-b5f7-503a918e3f08",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "f2b2fa70-52b4-4d49-924e-eefa2d32148d",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "6e7fec41-e875-4024-b27e-6708049e3946",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "5f9cbaa4-e20a-4346-9daf-02f6df0f3593",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "79f382d6-d2f8-4093-9ad0-52b817318362",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "05c2d363-b7ef-4a9e-895e-a496e1a1f279",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "ca9cd5f9-0d1b-45b8-98c2-950a12e0b388",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "8e9fea13-4e60-4d3a-b883-9ae8d82fca87",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "3074c25e-eba2-4b88-9e28-d5357f6bcd47",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "bbd35339-b087-4dfc-9b56-127734b09596",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "ded360bb-5035-4da4-baa5-f5722f9b38d3",
+      "result_id": "dd90cc25-783c-447f-8008-0f8dca3736de"
+    },
+    {
+      "claim_id": "e7f2530f-9d01-4dbf-948e-e866edfa235d",
+      "result_id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d"
+    },
+    {
+      "claim_id": "657eb90e-50a4-41b6-88a0-6e77edfb2252",
+      "result_id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d"
+    },
+    {
+      "claim_id": "fa460861-589b-47bf-b098-8d813b7cd803",
+      "result_id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d"
+    },
+    {
+      "claim_id": "f968a085-e571-4103-8300-bc3f26efee5d",
+      "result_id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d"
+    },
+    {
+      "claim_id": "c16e0be7-699c-4bd0-8563-082472bfac1b",
+      "result_id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d"
+    },
+    {
+      "claim_id": "f3b2b479-b1b6-49af-8381-70cc4e22c612",
+      "result_id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d"
+    },
+    {
+      "claim_id": "b177debb-aa91-4532-93c3-f083f0e23b3a",
+      "result_id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d"
+    },
+    {
+      "claim_id": "5f28660a-2242-4295-bfcc-36c7b4b14eab",
+      "result_id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d"
+    },
+    {
+      "claim_id": "ace076ff-8eff-4a0e-a5cd-ffefec54354c",
+      "result_id": "37f62dd7-811b-4a4a-bcea-556cd380cf3d"
+    },
+    {
+      "claim_id": "5f9bb5df-5009-49a0-8f71-6f8fb7ef0d9d",
+      "result_id": "ca6c92e8-79d0-4e46-9332-5d2b0117304a"
+    },
+    {
+      "claim_id": "8a037fc9-d849-4f9a-b428-0dee07091d84",
+      "result_id": "ca6c92e8-79d0-4e46-9332-5d2b0117304a"
+    },
+    {
+      "claim_id": "775bc47e-bcde-423e-a80b-97674a761b4c",
+      "result_id": "ca6c92e8-79d0-4e46-9332-5d2b0117304a"
+    },
+    {
+      "claim_id": "4bfcd1eb-acc0-4b4d-ae98-edb4b0aed6c9",
+      "result_id": "ca6c92e8-79d0-4e46-9332-5d2b0117304a"
+    },
+    {
+      "claim_id": "cf72d0f0-9faa-4581-b93f-6cf980b7fe53",
+      "result_id": "ca6c92e8-79d0-4e46-9332-5d2b0117304a"
+    }
+  ],
+  "comparisons": []
+}

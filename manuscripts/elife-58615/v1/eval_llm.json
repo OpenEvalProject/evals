@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "GWAS of urate in UK Biobank identified 222 independent genome-wide significant signals, with six of the ten most significant signals located near urate solute transport genes. Eight out of ten annotated urate transporters have genome-wide significant signals within 100 kb. Serum urate SNP-based heritability is most highly enriched in kidney regulatory regions (29-fold, p=1.9e-13), and most serum urate heritability is driven by kidney regulatory variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide converging evidence from GWAS results (C1-C4), pathway enrichment (C2-C3), and tissue-specific heritability analysis (C8-C10). The statistical significance is strong (p=1.9e-13 for kidney enrichment), and the findings are internally consistent. The conclusion that kidney regulatory variation drives urate heritability is well-supported by the data showing enrichment disappears in other tissues when kidney regions are removed (C9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Genes in the urate metabolic pathway show modest enrichment for GWAS hits (2.1-fold, p=0.017), with XDH (catalyzing the last step of urate synthesis) having an adjacent GWAS hit. However, the overall signal in the synthesis pathway is modest compared to kidney urate transporters, suggesting synthesis plays a secondary role to secretion in common variation of urate levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 demonstrate modest but statistically significant enrichment in the synthesis pathway (p=0.017), with appropriate comparison to the much stronger transporter signals. The conclusion that synthesis is secondary to secretion is supported by the comparative strength of signals, though the statistical test for this comparison is not explicitly provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "GWAS of serum IGF-1 levels in 317,000 individuals identified 354 distinct genome-wide significant signals. Eight of the most significant signals are key parts of the IGF-1 pathway, including the top hit near IGFBP3 (p=1e-837), which encodes the main transport protein for IGF-1 and IGF-2. Other lead hits include IGFALS, PAPPA2, GHSR, FOXO3, and RIN2, all with established roles in the IGF-1 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 are well-supported by GWAS data with extremely strong statistical significance (p=1e-837 for top hit). The biological interpretation relies on cited literature (C17-C21) describing gene functions, which is appropriate. The convergence of multiple pathway components among top hits strengthens the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Multiple pathways in the IGF-1 axis show strong enrichment of GWAS signals: growth hormone secretion (14/32 genes, 7.3-fold, p=5.4e-7), IGF-1 secretion (10/14 genes, 23-fold, p=4.9e-8), serum balance of IGF (10/18 genes, 11.7-fold, p=1.5e-6), and the AKT signaling branch (9/31 genes, 3.8-fold, p=0.002). The RAB/MAPK/RAS pathway was not enriched overall (p=0.59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 provide strong statistical evidence for pathway enrichment using Fisher's exact tests with highly significant p-values. The differential enrichment across pathways (strong for some, absent for RAB/MAPK/RAS) adds credibility. The statistical approach is appropriate for testing enrichment, though multiple testing correction across pathways is not explicitly mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "No signal of epistasis was found among the 77 most significant lead SNPs for IGF-1, and IGF-1 lead SNPs showed weak global inflation of test statistics for departures from additivity. For urate, the two most significant hits (SLC2A9 and ABCG2) showed significant but small non-additive effects. These results indicate that non-linear genotype effects are substantially weaker than additive components, even when effects are concentrated in the same biological pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by systematic testing for epistasis and non-additivity, with appropriate statistical methods described in Materials and Methods. The conclusion is strengthened by citation of previous studies (Wei et al., 2014; Zaitlen et al., 2013) finding similar results. The finding that even pathway-concentrated effects show minimal epistasis is particularly informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Sex-stratified GWAS of testosterone identified 79 independent signals in females and 127 in males. In females, six of the most significant signals are close to genes involved in testosterone biosynthesis, including the top hit at CYP3A4/5/7 locus. The lead hits in males are largely non-overlapping with those from females, consistent with recent studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 present clear GWAS results with appropriate sample sizes (>140,000 per sex). The sex-specific architecture is supported by both the current data and cited recent studies (Flynn et al., 2021; Ruth et al., 2020). The biological interpretation of female hits clustering in biosynthesis genes is supported by cited functional studies (C41-C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Male testosterone hits affect multiple processes including steroid biosynthesis (SRD5A2, UGT2B15, AKR1C), with the largest category being eight variants affecting SHBG levels. Nearly all major steps of the steroid hormone biosynthesis pathway (31/61 genes) are within 100 kb of a genome-wide significant signal in either sex. The KEGG steroid hormone pathway shows strong enrichment in both sexes (26-fold in females, p=2.5e-8; 11-fold in males, p=1.2e-4), but male and female hits occur in different parts of the pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 demonstrate comprehensive pathway coverage with strong statistical enrichment. The sex-specific localization of hits within the pathway (C48) is a key biological insight supported by the data. The enrichment statistics are highly significant and the pathway annotation appears thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "There is no correlation in effect sizes among lead SNPs for testosterone between females and males, and the global genetic correlation is approximately zero. The HPG axis plays a more significant role in regulating testosterone production in males than females, and SHBG mediates negative feedback in the HPG axis in males but not females. Male GWAS hits throughout the HPG signaling cascade show more significant effects on CBAT than total testosterone, and these hits do not show signals in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 present a coherent model of sex-specific testosterone regulation supported by genetic correlation analysis (C49-C50), pathway hits (C53), and differential effects on CBAT vs. total testosterone (C54). The inference about HPG axis importance (C51-C52) is supported by the pattern of hits, though direct experimental validation is not provided. The model is biologically plausible and consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The adrenal gland produces ~50% of serum testosterone in females. Female testosterone GWAS hits cluster in steroid hormone pathways involving progestagen and corticosteroid synthesis and are enriched for high expression in the adrenal gland. The pituitary secretes FSH, which in females stimulates aromatization of androgens into estrogens, while in males FSH is required for sperm production. A GWAS hit at FSHB shows suggestive association with testosterone in females but not males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 integrate established biological knowledge (C58, C61-C62) with GWAS findings (C59-C60, C63). The adrenal enrichment (C60) is supported by expression analysis. The FSHB association (C63) is described as 'suggestive' rather than genome-wide significant, which is appropriately cautious. The biological model explaining sex differences is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "High positive genetic correlation exists between female and male SHBG, and between SHBG and total testosterone in males but not females. There is significant negative genetic correlation between SHBG and CBAT in both sexes, but of larger magnitude in females. The authors propose that increased SHBG leads to decreased bioavailable testosterone in both sexes, and in males this relieves negative feedback on the hypothalamus and pituitary, allowing increased testosterone production. The lack of SHBG-mediated feedback in females is attributed to weaker HPG axis action and low testosterone levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 present a mechanistic model supported by genetic correlation patterns (C64-C66) and experimental evidence from the literature (C69). The proposed feedback mechanism (C67) is a reasonable inference from the genetic correlations, though it represents a model rather than direct demonstration. The explanation for sex differences (C68) is biologically plausible and supported by cited experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C81",
+      "C85"
+    ],
+    "result": "The SLC2A9 locus is responsible for 20% of SNP-based heritability for urate, while other core pathways contribute 1-11% of heritability. For the molecular traits studied, around 10-15% of SNP-based heritability is due to variants in core pathways. Aside from one major-effect variant for urate, the lead pathways explain ~10% of SNP-based heritability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C81, C85 are supported by HESS analysis of SNP-based heritability across genomic regions. The SLC2A9 locus is identified as a major outlier (20%), while other pathways contribute modestly (1-11%). The estimates are internally consistent across claims. The methods for heritability partitioning are appropriate, though confidence intervals are not always reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Around 45-50% of SNPs are linked to a non-zero effect variant for urate, IGF-1, and male testosterone, and 30% for female testosterone. The estimates of causal variant fractions range from 0.1% (female and male testosterone, ~4000 causal sites) to 0.3% (urate, ~12,000 causal sites), compared to 2% for height (~80,000 causal sites). Several factors suggest these may be underestimates: causal variants may be clumped rather than uniformly distributed, the effect size distribution may have fatter tails than normal, and stratified LD Score analysis suggests some apparent test statistic inflation may be due to causal variants in lower LD Score bins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 present estimates from ashR analysis and simulation-matching, with appropriate sensitivity analyses (C76-C77). The estimates are conservative and the authors acknowledge multiple sources of potential underestimation. The stratified LD Score analysis (C78) provides additional validation. The methodology is sophisticated and the caveats are appropriately discussed. However, the wide range of estimates depending on assumptions (C76-C77) indicates substantial uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "GENESIS estimates for molecular traits assuming a single normal distribution were: male testosterone 0.1%, female testosterone 0.2%, urate 0.3%, IGF-1 0.4%. GENESIS estimates assuming a mixture of two normal distributions were roughly threefold higher: male testosterone 0.6%, female testosterone 0.7%, urate 1.1%, IGF-1 1.1%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 present alternative estimates using GENESIS software. The single-distribution estimates (C79) are very similar to the authors' simulation-matching results, providing validation. The two-distribution estimates (C80) are higher but still indicate high polygenicity. The manuscript notes the two-distribution model has higher likelihood, suggesting it may be more appropriate, though this increases uncertainty about the true number of causal variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C86"
+    ],
+    "result": "Most of the SNP-based heritability for these molecular traits is due to a much larger number of variants spread widely across the genome, conservatively estimated at 4000-12,000 common variants for the biomarkers and 80,000 for height. Most SNP-based heritability is due to a highly polygenic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C86 summarize the main finding on polygenicity, supported by the detailed analyses in C72-C80. The estimates are described as conservative, which is appropriate given the sensitivity analyses showing potential underestimation. The conclusion that most heritability is due to a polygenic background rather than core pathways is well-supported by the heritability partitioning results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "For urate, IGF-1, and testosterone, the top hits are generally close to genes with known biological relevance to the trait in question, and all three molecular traits show strong enrichment in relevant gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 summarize the key finding that these molecular traits show interpretable GWAS hits, supported by the detailed pathway enrichment analyses in earlier claims (C11, C22-C26, C47). This represents a synthesis of the pathway-level results and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Testosterone shows minimal genetic correlation between the sexes, in contrast to other biomarkers including urate and IGF-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by genetic correlation analysis referenced in Figure 7\u2014figure supplement 1. This finding motivated the sex-stratified GWAS approach and is consistent with the subsequent findings of non-overlapping hits between sexes. The comparison to other biomarkers provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The final sample sizes for the GWAS were 318,526 for urate, 317,114 for IGF-1, 142,778 for female testosterone, and 146,339 for male testosterone. A gene was considered 'close' to a genome-wide significant signal if it was within 100 kb of at least one lead SNP with p<5e-8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 describe methodological details that are clearly stated and appropriate. The sample sizes are large and well-powered for GWAS. The 100 kb window and p<5e-8 threshold are standard in the field. These are straightforward methodological claims that are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Random sets of SNPs matched to GWAS hits showed far lower overlap with core pathways than true hits, and an alternative approach (MAGMA) showed highly similar gene-set enrichments to those observed with Fisher's exact test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 provide important validation of the pathway enrichment findings using two complementary approaches: matched random SNPs and an alternative statistical method (MAGMA). Both support the main enrichment findings, strengthening confidence in the results. The use of multiple validation approaches is a strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "Background biological knowledge about testosterone: it is synthesized from cholesterol via the steroid biosynthesis pathway, primarily in the testis (males) and ovary/adrenal glands (females). Production is stimulated by the HPG axis with negative feedback. Approximately 40-60% is bound to SHBG and considered non-bioavailable. Breakdown occurs primarily in the liver. The adrenal produces ~50% of female testosterone. FSH stimulates androgen aromatization in females but is required for sperm production in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36, C58, C61-C62 present established biological knowledge about testosterone biology, appropriately cited from the literature (C34, C35, C61). This background information is accurate and provides necessary context for interpreting the GWAS findings. These are not novel findings but rather established knowledge used to frame the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Previous GWAS for IGF-1 (up to 31,000 individuals) identified around six genome-wide significant loci. Previous GWAS for testosterone (up to 9000 males) found three loci, with SHBG being most significant. Two recent studies reported large-scale GWAS of testosterone in UKBB with sex-specific effects. Previous twin studies found minimal correlation of testosterone between opposite-sex dizygotic twins. A recent paper reported larger numbers of independent signals (245 and 231 in females and males), likely due to broader ancestry inclusion and less stringent independence criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 accurately summarize prior work with appropriate citations. The comparison to previous studies (C89-C90) provides context for the current findings. The discussion of differences with Ruth et al. (C93) is appropriately nuanced, explaining methodological differences rather than claiming error. These claims demonstrate appropriate engagement with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Background on IGF-1: it is a major effect locus for body size in dogs and is positively associated with height in UK Biobank. Both low and high IGF-1 levels have been associated with increased mortality from cancer and cardiovascular disease. The growth hormone-IGF axis is a conserved regulator of longevity. Circulating testosterone levels range from 0.3-2 nmol/L in females and 8-33 nmol/L in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 present background information on IGF-1 and testosterone with appropriate citations. The information is accurate and provides biological context. C94 includes both cited literature (dogs) and data from the current study (UK Biobank height association), which is appropriate. These are contextual claims rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

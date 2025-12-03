@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Tumor-conditioned medium (T-cM) induces a rapid, reversible morphological transformation of wildtype (WT) organoids from budding to cystic phenotype within 6-48 hours through paracrine signaling. This effect is reproducible across different tumor lines and is mediated by secreted factors rather than cell contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 provide strong experimental evidence for the morphological transformation including time-lapse imaging, conditioned medium experiments, and demonstration of reversibility. The paracrine mechanism is well-established through conditioned medium experiments (C13). The rapid kinetics and reversibility (C16) rule out genetic changes, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "T-cM-induced cystic organoids exhibit increased proliferation and defective differentiation without canonical Wnt pathway activation. Proliferative cells are distributed throughout cysts rather than restricted to crypts, and show reduced expression of differentiation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 collectively demonstrate that the phenotype is Wnt-independent (C17, C18) but involves hyperproliferation (C19) with altered spatial distribution (C20) and impaired differentiation (C21). Multiple complementary assays (Wnt reporter, Lgr5 quantification, EdU incorporation, Ki67, Keratin 20) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "THBS1 is the essential secreted protein mediating the morphological transformation of WT organoids. Neutralization with three different antibodies targeting distinct epitopes completely abolishes the cystic phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of THBS1 is supported by proteinase K treatment (C22), mass spectrometry with GO analysis (C23), and rigorous antibody neutralization experiments using three independent antibodies (C24, C25). The use of multiple antibodies targeting different epitopes strengthens the specificity of the finding and rules out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "THBS1 is both necessary and sufficient for the cystic phenotype. Neutralization restores normal proliferation patterns without toxicity, while overexpression induces cyst formation. Recombinant THBS1 is ineffective, suggesting requirement for post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 establish necessity (antibody neutralization) and sufficiency (lentiviral overexpression) through complementary gain- and loss-of-function experiments. The lack of toxicity (C28) is important for therapeutic implications. The observation about recombinant protein (C30) is appropriately presented as speculation about mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "THBS1 is exclusively expressed by tumor cells and is essential for tumoroid growth and proliferation. Neutralization or genetic deletion specifically reduces tumoroid survival and growth without affecting normal organoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 demonstrate tumor-specific expression (C31) and function (C32) through both antibody neutralization (C33) and CRISPR-Cas9 knockout (C34). The differential effect on tumoroids versus normal organoids (C35) is well-documented with proliferation assays, suggesting therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "T-cM induces a transcriptional switch in WT organoids from Wnt-dependent homeostatic to Wnt-independent, YAP-dependent regenerative/fetal-like gene expression programs. RNA-seq shows enrichment for cancer-associated genes, YAP/Hippo pathway genes, and fetal intestinal signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by comprehensive RNA-sequencing analysis with pathway enrichment and GSEA comparing to published signatures (C38, C39). The conclusion about transcriptional switching (C40) integrates multiple lines of evidence including Wnt reporter data, differentiation marker analysis, and YAP signature enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "YAP pathway activation mediates the THBS1-induced morphological and transcriptional changes. Pharmacological inhibition or genetic deletion of YAP/TEAD reduces cystic transformation, while THBS1 neutralization blocks YAP nuclear translocation. YAP activation is necessary but not sufficient for the cystic phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 establish the THBS1-YAP mechanistic link through multiple approaches: pharmacological inhibition (C41), CRISPR knockout (C42), immunofluorescence quantification (C43), and rescue experiments (C45, C46). The observation that YAP activation occurs in both cystic and budding organoids (C44) appropriately distinguishes necessity from sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The THBS1-YAP axis is conserved in colon organoids, with T-cM inducing YAP activation and proliferation similar to small intestinal organoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 extends the findings to colon organoids with experimental data showing similar YAP activation and proliferation effects, strengthening the relevance to colorectal cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In mouse intestinal tumors, Thbs1 is expressed by Wnt-activated (Apc mutant) cells that co-express Lgr5 and Axin2, while YAP-activated cells (expressing Ctgf, Cyr61, Sca1) are spatially distinct but adjacent. These two populations show significant mutual exclusion at the cellular level but correlation at the whole-tumor level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 provide strong in vivo validation through multiple complementary approaches: acute Apc deletion (C48), immunofluorescence showing spatial relationships (C49), RNA FISH demonstrating co-localization with Wnt targets (C50), quantitative analysis of mutual exclusion (C51), and whole-tumor correlation (C52). The statistical significance of mutual exclusion strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In human colorectal cancer, THBS1, CTGF, and CYR61 are highly correlated in bulk transcriptomics. THBS1 and LGR5 co-expression with nuclear YAP is prominent in early-stage adenomas but not in advanced carcinomas, suggesting stage-specific roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 demonstrate conservation of the THBS1-YAP axis in human tumors through TCGA analysis (C53) and RNA FISH/immunofluorescence of staged human samples (C54, C55). The stage-specific pattern provides important context for the mechanism's role in tumor initiation versus progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background context establishing that tumor-stroma interactions are well-studied, but epithelial-epithelial communication in tumors is poorly understood. Organoid culture systems provide appropriate models to study these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 provide appropriate background context supported by citations to established literature. These claims frame the knowledge gap and justify the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "THBS1 has complex and context-dependent roles in cancer. Previous studies show contradictory results regarding its pro- or anti-tumorigenic functions, with evidence for anti-angiogenic effects, promotion of cell adhesion and migration, and involvement in YAP activation through integrin-focal adhesion signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 appropriately summarize prior literature on THBS1's controversial roles in cancer, supported by multiple citations. This contextualizes the current findings and explains apparent contradictions in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The mechanism of THBS1 neutralization by antibodies may involve steric interference with protein trimerization rather than blocking specific receptor interactions, as three antibodies targeting different epitopes all show similar effects. Multiple THBS1 domains may be involved in YAP activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is well-supported experimentally, but C65 and C66 are explicitly speculative about the mechanism. While the speculation is reasonable and appropriately qualified, the actual mechanism of antibody neutralization and THBS1-mediated YAP activation remains to be definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors propose that WT cell recruitment by cancer cells via THBS1-YAP signaling occurs early in tumorigenesis, while cell competition and elimination of WT cells occurs later. This temporal model reconciles apparently contradictory findings in recent literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69 and C70 are supported by the stage-specific analysis of human tumors showing loss of THBS1/YAP co-expression in advanced cancers. However, C71 and C72 are explicitly speculative about kinetics and cell fate. The temporal model is plausible but requires direct experimental validation through longitudinal studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors propose a model where mutant cells 'corrupt' WT epithelial cells via THBS1-mediated YAP activation, enabling WT cells to thrive in nascent tumors. This suggests YAP activation as a diagnostic marker and THBS1 as a therapeutic target with tumor-specific toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The model (C73, C74) is well-supported by the experimental data. The tumor-specific toxicity of THBS1 neutralization (C76) is clearly demonstrated. However, the clinical applications (C75, C77) are appropriately presented as proposals requiring further validation. The therapeutic potential is promising but needs in vivo efficacy and safety studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "THBS1 is associated with poor prognosis in several human cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is stated in the abstract but specific supporting data are not provided in the manuscript sections reviewed. While C58 provides some supporting evidence for colorectal cancer, the broader claim about 'several human cancers' requires additional documentation or should be qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "The THBS1-YAP axis is the mechanistic link mediating paracrine interactions between epithelial cells in intestinal tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the collective evidence from organoid experiments (neutralization, overexpression, YAP knockout), transcriptional profiling, and in vivo validation in both mouse and human tumors. Multiple independent lines of evidence converge on this mechanism.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1852 @@
+{
+  "submission": {
+    "id": "dc9bfa56-11c6-4efc-80a7-9ae8ead16c13",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:30:41.541204Z",
+    "updated_at": "2025-12-03T04:30:41.541204Z"
+  },
+  "content": [
+    {
+      "id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "submission_id": "dc9bfa56-11c6-4efc-80a7-9ae8ead16c13",
+      "content_type": "manuscript",
+      "content_text": "# A subcellular map of the human kinome\n\n## Authors\n\n- Haitao Zhang<sup>1</sup>\n- Xiaolei Cao<sup>1</sup>\n- Mei Tang<sup>1</sup>\n- Guoxuan Zhong<sup>1</sup>\n- Yuan Si<sup>1</sup>\n- Haidong Li<sup>3</sup> ([ORCID: 0000-0002-4427-7920](https://orcid.org/0000-0002-4427-7920))\n- Feifeng Zhu<sup>1</sup>\n- Qinghua Liao<sup>1</sup>\n- Liuju Li<sup>4</sup>\n- Jianhui Zhao<sup>5</sup>\n- Jia Feng<sup>6</sup> ([ORCID: 0000-0002-6742-484X](https://orcid.org/0000-0002-6742-484X))\n- Shuaifeng Li<sup>1</sup>\n- Chenliang Wang<sup>1</sup>\n- Manuel Kaulich<sup>7</sup> ([ORCID: 0000-0002-9528-8822](https://orcid.org/0000-0002-9528-8822))\n- Fangwei Wang<sup>1</sup> ([ORCID: 0000-0001-5617-282X](https://orcid.org/0000-0001-5617-282X))\n- Liangyi Chen<sup>4</sup> ([ORCID: 0000-0003-1270-7321](https://orcid.org/0000-0003-1270-7321))\n- Li Li<sup>8</sup>\n- Zongping Xia<sup>1</sup>\n- Tingbo Liang<sup>2</sup>\n- Huasong Lu<sup>1</sup>\n- Xin-Hua Feng<sup>1</sup>\n- Bin Zhao<sup>1</sup> ([ORCID: 0000-0002-1690-646X](https://orcid.org/0000-0002-1690-646X)) \u2020\n\n### Affiliations\n\n1. The MOE Key Laboratory of Biosystems Homeostasis & Protection, Zhejiang Provincial Key Laboratory for Cancer Molecular Cell Biology, and Innovation Center for Cell Signaling Network, Life Sciences Institute, Zhejiang University Hangzhou China\n2. Cancer Center, Zhejiang University Hangzhou China\n3. College of Biology and Pharmacy, Yulin Normal University Yulin China\n4. State Key Laboratory of Membrane Biology, Beijing Key Laboratory of Cardiometabolic Molecular Medicine, Institute of Molecular Medicine, Peking University Beijing China\n5. Department of Hepatobiliary and Pancreatic Surgery, Zhejiang Provincial Key Laboratory of Pancreatic Disease, The First Affiliated Hospital, School of Medicine, Zhejiang University Hangzhou China\n6. Department of Ophthalmology, The Children\u2019s Hospital, School of Medicine, and National Clinical Research Center for Child Health, Zhejiang University Hangzhou China\n7. Institute of Biochemistry II, Goethe University Frankfurt-Medical Faculty, University Hospital Frankfurt Germany\n8. Institute of Aging Research, Hangzhou Normal University Hangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe human kinome comprises 538 kinases playing essential functions by catalyzing protein phosphorylation. Annotation of subcellular distribution of the kinome greatly facilitates investigation of normal and disease mechanisms. Here, we present Kinome Atlas (KA), an image-based map of the kinome annotated to 10 cellular compartments. 456 epitope-tagged kinases, representing 85% of the human kinome, were expressed in HeLa cells and imaged by immunofluorescent microscopy under a similar condition. KA revealed kinase family-enriched subcellular localizations and discovered a collection of new kinase localizations at mitochondria, plasma membrane, extracellular space, and other structures. Furthermore, KA demonstrated the role of liquid-liquid phase separation in formation of kinase condensates. Identification of MOK as a mitochondrial kinase revealed its function in cristae dynamics, respiration, and oxidative stress response. Although limited by possible mislocalization due to overexpression or epitope tagging, this subcellular map of the kinome can be used to refine regulatory mechanisms involving protein phosphorylation.\n\n## Introduction\n\nThe kinome, encoded by about 2% of the human genome, is one of the largest superfamilies of homologous proteins consisting of 538 kinases (Manning et al., 2002b). These enzymes catalyze the transfer of \u03b3-phosphate of ATP to the alcohol groups (on Ser and Thr) or phenolic groups (on Tyr) of proteins to generate phosphate monoesters. As a consequence, the substrate protein could be altered in many ways, such as activity, subcellular localization, and interacting proteins (Cohen, 2002; Manning et al., 2002a). Therefore, protein phosphorylations function as molecular switches in essentially every aspect of cellular activities. Mutation and dysregulation of protein kinases are causal to many diseases such as cancer (Greenman et al., 2007; Lahiry et al., 2010). Kinases are also among the most important targets for precision medicine (Klaeger et al., 2017; Zhang et al., 2009).\n\nSpatial partitioning of molecules into functional compartments is a basic principle for the organization of a cell (Bauer et al., 2015). Compartmentation determines the chemical environment, and thus profoundly affects kinase activity and substrate selectivity. Kinases were found in most organelles, and study of subcellular localization on the proteome level facilitated mapping of the kinome (Thul et al., 2017). In imaging-based approaches, antibodies were used to label proteins for visualization. For instance, Cell Atlas of the Human Protein Atlas (HPA) project mapped more than 12,000 proteins to 13 major organelles using antibodies against endogenous proteins (Thul et al., 2017). However, reliability was limited by antibody specificity in such one antibody one protein approaches (Baker, 2015). Alternatively, organelle proteome could be identified by mass spectrometry after fractionation (Calvo et al., 2016; Orre et al., 2019). Although empowered by proximity-labeling technologies (Branon et al., 2018; L\u00f6nn and Landegren, 2017), compartments accurately analyzed this way are still limited. Furthermore, curation of subcellular localization data from UniProt, literatures, and open resources has resulted in comprehensive databases such as COMPARTMENTS (Binder et al., 2014). However, accuracy is often affected by complex data source. As a result, understanding of subcellular localizations of the kinome is still fragmented.\n\nHere, we report a subcellular map of the kinome generated by immunofluorescent (IF) imaging of ectopically expressed epitope-tagged kinases in HeLa cells. This dataset, the Kinome Atlas (KA), annotated 456 kinases to 10 compartments of the cell. Although mislocalization was possible due to overexpression or epitope tagging, KA technically complements previous approaches in presenting a whole picture of the kinome. Experiments done in the same cell line transfected and cultured in a similar condition allowed comparison within the dataset, revealing localization features of kinase families and a broader role of liquid-liquid phase separation (LLPS) in formation of both nuclear and cytosolic kinase condensates. This study not only discovered a collection of new kinase localizations, but also demonstrated the role of MOK in mitochondrial structure and functions. This resource lays a foundation for further investigation of kinases and protein phosphorylation in terms of regulation and functions.\n\n## Results\n\n### Mapping subcellular localizations of the kinome\n\nWe constructed an expression plasmid library of the kinome using gateway cloning as described in the Materials\u00a0and\u00a0methods section. 464 protein kinase-encoding plasmids were got (Supplementary file 1), representing 86.2% of the human kinome, and covering each family similarly (Figure 1A, Figure 1\u2014figure supplement 1A). 95.1% of genes in the library are of human origin, and the rest are of mouse or rat origins (Figure 1B). All clones are epitope-tagged, with 46.8% in Flag tag, 46.5% in tandem HA/Flag tags, 3.4% in HA tag, 2.4% in Myc tag, and 0.9% in GFP tag. 54.7% of the clones have epitope tags on the amino (N)-terminal, and 45.3% of clones are tagged on the carboxyl (C)-terminal (Figure 1B). The protein kinase-like\u00a0(PKL) family is overrepresented with N-terminal tag, while the nucleoside diphosphate kinases\u00a0(NDK) and tyrosine kinases\u00a0(TK) families have higher ratio of C-terminal tag (Figure 1\u2014figure supplement 1B). We evaluated expression of the library by transient transfection using about half of the library. By western blotting, 37% of plasmids showed high level of expression, 58.5% had medium or low expression, and 4.5% could not be detected (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig1-v2.jpg)\n\n**Figure 1.:** (A) Coverage of the kinome (pie graph) and kinase families (bar graph) by the plasmid library. (B) Composition of the kinome library. Species origins (left), epitope tags (middle), and tag positions (right) were summarized. (C) Expression levels of kinase plasmids. HeLa cells were transfected and expression levels were determined by western blotting. (D) Ten cellular compartments with organelle markers (top) and representative kinases (bottom). SEC61B was visualized by GFP tag. TOM20, GM130, Catalase, microtubule, and pericentrin were stained by specific antibodies. F-actin was marked by phalloidin. Other proteins were transfected and stained for epitope tags. (E) Subcellular distribution of the kinome. (F) Kinome tree with localization information. Each dot represents a kinase. Color denotes compartment and size reflects localization score. (G) Family-enriched distributions for kinases. Kinase families were clustered by the ratio of localization to different compartments (Figure 1\u2014figure supplement 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Distribution of the kinome plasmid library on the kinome tree. Each red dot represents a kinase in the library. (B) Ratio of N-terminal- and C-terminal-tagged kinases in each kinase family. (C) Flowchart of kinome subcellular localization mapping. (D) Distribution of 10 subcellular compartments in each kinase family (left panel) and in kinases with different tag positions (right panel).\n\nTo determine kinase subcellular localizations at the kinome level, we transfected each plasmid into HeLa cells and stained for the epitope tag (Figure 1\u2014figure supplement 1C). According to Cell Atlas of the HPA project (Thul et al., 2017), 10 subcellular compartments were annotated, including cytosol (C), nucleus (N), plasma membrane (PM), mitochondrion (MI), endoplasmic reticulum (ER), Golgi apparatus (GL), vesicle (V), cytoskeleton (CS), centrosome (CT), and aggresome (AG). Two representative fields were captured for each kinase and the images were deposited to the Cell Image Library database (http://cellimagelibrary.org/pages/kinome_atlas). Annotation was based on patterns of kinase localization similar to that of an organelle marker protein as demonstrated in a similar condition (Figure 1D). A sum of 10 points were assigned to each kinase to reflect their distribution across the 10 compartments (Supplementary file 2). A total of 456 kinases were annotated, while the other 8 kinases were not detected. We defined specific localization to a compartment as a localization score of 5 or more. When the score was 5/5 between cytosol and another compartment, it was defined specific to the non-cytosolic compartment. A kinase was called multilocalizing if its localization scores at any localization were less than 5. Representative kinases with specific localizations are shown in Figure 1D. This collected resource was referred to as the KA.\n\nIn the initial screen, about 50.2% of the kinome mainly localized in the cytosol, followed by 16.4% in nucleus, and 10.3% on plasma membrane (Figure 1E). Each of mitochondria, ER, Golgi, and vesicle structures held less than 5% of the kinome. Three kinases DCLK2, MAP4K3, and ABL2 exhibited specific localization to cytoskeleton-like structures, but 12 other kinases exhibited some level of cytoskeletal localization (Supplementary file 2). Only two kinases PLK4 and PLK1 had centrosomal localization. Aggresomes were distinguished from vesicles mainly by an irregular shape or aberrant distribution pattern, and were adopted only by WNK4, TSSK3, and STYK1 as specific localization (Supplementary file 2). Interestingly, plotting of subcellular localizations onto the kinome tree using KinMap (Eid et al., 2017) revealed a family-centered enrichment of cellular compartments (Figure 1F), which was confirmed by clustering analysis (Figure 1G). 77.5% of the STE (homologues of yeast Ste7, Ste11, and Ste20 kinases) family were in cytosol, significantly higher than other families (Figure 1\u2014figure supplement 1D). On the other hand, CMGC (CDK, MAPK, GSK3, and CLK kinases), atypical, and calcium/calmodulin-dependent protein kinases\u00a0(CAMK) families were more enriched for nuclear kinases, 39.0, 34.5, and 30.2%, respectively. The TK family was enriched for kinases on the plasma membrane, largely due to the receptor tyrosine kinase\u00a0(RTK) subfamily. The AGC (family of protein kinases A, G, and C) family was also overrepresented on the plasma membrane reflecting their functions in relaying extracellular signals. Most mitochondrial kinases were in the atypical kinase family. Finally, the receptor guanylate cyclase\u00a0(RGC) and PKL families were largely formed by ER- and Golgi-localized kinases. Shared localization by the same family is likely due to common evolutionary ancestor and structural similarities, and suggests related functions.\n\n### KA complements current databases for kinome localization\n\nWe compared KA with protein subcellular localization databases for coverage of the kinome. COMPARTMENTS has four evidence channels: knowledge, experiments, text-mining, and predictions (Binder et al., 2014). Information from the knowledge channel is based on annotations from UniProtKB and other resources, with a confidence score from one star (lowest confidence) to five stars (highest confidence). We considered only high-confidence localizations with at least four stars, resulting in 429 kinases with an average of\u00a02.3 localizations per kinase. Less reliable information from text-mining and predictions was not included. The experiments channel holds data from the HPA project and was thus separately compared to KA. There are 438 kinases with an average of 1.3 \u2018main\u2019 localizations in HPA. 6 kinases were not covered by any of the three resources, and KA annotated 18 kinases on top of COMPARTMENTS and HPA (Figure 2A and Supplementary file 3). Manual literature search eliminated 12 kinases with at least one report, resulting in 6 kinases annotated for the first time, including STK32C, SBK2, STKLD1, TSSK1B, NME8, and SRPK3, which were all cytosolic in KA (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig2-v2.jpg)\n\n**Figure 2.:** (A) Coverage of the kinome by COPARTMENTS, Human Protein Atlas\u00a0(HPA), and KA in Venn diagram. (B) Subcellular localization of six kinases first annotated by KA. (C,\u00a0D) Comparison of annotations in revised KA and high-confidence localizations in COMPARTMENTS. Distributions of matched and unmatched localizations are shown by bar graph. The heatmap demonstrates kinases (column) with color-coded localizations or position of epitope tag (row). Top two localizations in COMPARTMENTS are shown. (E,\u00a0F) Comparison of annotations in HPA and KA. Analyses were similar to (C,\u00a0D). (G) KA provides unique kinase localizations different from databases. Kinases showing different annotations in KA-COMPARTMENTS or KA-HPA comparisons were further consolidated. (H) Prediction of KA-unique kinase localizations. Localizations of unique kinases in (G) were predicted by WoLF PSORT (left panel) or YLoc (right panel). Distribution of predicted or unpredicted kinases is shown by bar graph (Figure 2\u2014figure supplement 1).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Comparison of specific localizations in KA with high-confidence localizations in COMPARTMENTS. Distributions of matched and unmatched localizations are shown by bar graph. (B) The heatmap demonstrates kinases (column) with color-coded localizations or position of epitope tag (row). Top two localizations in COMPARTMENTS are shown. (C) Revised kinome tree with localization information. Each dot represents a kinase. Color denotes compartment and size reflects localization score. (D,\u00a0E) Comparison of KA with \u2018enhanced\u2019 or \u2018supported\u2019 localizations in Human Protein Atlas\u00a0(HPA). Analyses were similar to (A,\u00a0B).\n\nAmong 337 kinases documented by both KA and COMPARTMENTS, 71.2% matched with one of the high-confidence localizations in COMPARTMENTS (Figure 2\u2014figure supplement 1A). These matched localizations were mainly cytosol, nucleus, and plasma membrane. However, 97 kinases did not match with COMPARTMENTS. 27 among them were cytosolic in KA, but mainly plasma membrane, Golgi, extracellular space, and mitochondria-localized in COMPARTMENTS (Figure 2\u2014figure supplement 1B). The ratio of N-terminal tag (70.4%) in these 27 kinases was higher than that in the whole library (54.7%) suggesting that for some kinases the N-terminal tag had interfered with localizations requiring N-terminal signal peptide. However, among 187 N-tagged kinases with high-confidence localizations in COMPARTMENTS, 131 were consistent with that found in KA. Among the 56 differential kinases, 34 had membrane-related localizations in COMPARTMENTS. An additional four N-tagged kinases had transmembrane regions and predicted signal peptides. Thus, we designed C-tagged version plasmids for these 38 plasmids (Supplementary file 1). Following a similar imaging procedure, we found 9 kinases could not be detected and 8 kinases were not affected by tag position, but 21 kinases had different subcellular localization pattern. The KA was therefore revised (Supplementary file 2). To further validate specific ER, GL, CS, and CT localizations with a score\u00a0\u22655, we carried out co-staining with respective markers. 36 out of 42 kinases were validated, and 6 kinases were revised in Supplementary file 2. The kinome tree plot of kinase subcellular localizations was also revised (Figure 2\u2014figure supplement 1C). Various intracellular vesicles were not further validated by co-staining, and new MI and PM localization was validated below by co-staining and fractionation, respectively.\n\nComparison between revised KA and COMPARTMENTS revealed 74.8% localizations were consistent (Figure 2C and Supplementary file 4). 29 differential kinases were cytosolic in KA, among which 17 had nuclear localization in COMPARTMENTS (Figure 2D). It is possible that these kinases shuttle between cytosol and the nucleus. Indeed, half of them had low levels of nuclear localization in KA. When compared with HPA, a higher ratio of kinases exhibited different localizations (Figure 2E and Supplementary file 5). An important reason was antibody specificity in HPA because if only 229 kinases with more reliable \u2018enhanced\u2019 or \u2018supported\u2019 localizations were included, the ratio of matched localizations increased by 10% (Figure 2\u2014figure supplement 1D). Different from KA-COMPARTMENTS comparison, KA-HPA unmatched localizations were higher in cytosol (51.5%), and more than half of these kinases were mainly nuclear in HPA (Figure 2F, Figure 2\u2014figure supplement 1E). This observation is consistent with the finding that the number of nuclear proteins in HPA Cell Atlas considerably exceeds previous reports (Thul et al., 2017), suggesting a tendency of nuclear background for antibodies in the HPA collection.\n\nFor some kinases, COMPARTMENTS and HPA annotated different localizations. Among them, KA confirmed 20 HPA-documented localization and 90 COMPARTMENTS-documented localization (Figure 2G and Supplementary file 6). Furthermore, KA uniquely annotated 103 kinase localizations different from other databases (Supplementary file 6). Importantly, these localization were largely unpredictable by main stream subcellular localization prediction tools such as WoLF PSORT and YLoc (Briesemeister et al., 2010; Horton et al., 2007; Figure 2H and Supplementary file 6), suggesting new localization mechanisms. Taken together, KA complements current databases for subcellular localization of the kinome in the same cell line transfected and cultured in a similar condition.\n\n### KA identified a collection of unknown kinase localizations\n\nWe further screened the 103 kinase localizations uniquely annotated by KA. 58 kinases were subtracted for any previous reports escaped database curation. Selected kinases from the remaining 45 were further validated. Seven kinases exhibited novel plasma membrane localization in KA (Figure 3A). Cellular fraction confirmed that RPS6KA2, BRSK2, NIM1K, CSNK1G3, and NLK were mainly membranous, while MAPK11 and FRK were partially in membrane fractions (Figure 3B). POMK has an ER-related function in phosphorylating glycosylation-specific O-mannose and is mutated in a neuromuscular disorder dystroglycanopathies (Di Costanzo et al., 2014; Yoshida-Moriguchi et al., 2013). By co-expression with GFP-tagged SEC61B, an ER resident protein, we confirmed the ER localization of POMK (Figure 3C). SGK3 was enriched in vesicles around the Golgi, with lower expression in the Golgi itself (Figure 3D). In addition, SGK3 colocalized with endosomal marker EEA1 as previously reported (Xu et al., 2001; Figure 3D, Figure 3\u2014figure supplement 1A). We speculated that SGK3 and other Golgi-localized kinases might also be secreted to the extracellular space. Cell lysates and culture mediums were collected from transfected cells, and were further concentrated by immunoprecipitation. FAM20C but not NLK could readily be detected in medium before and after immunoprecipitation, serving as positive and negative controls (Zhang et al., 2018; Figure 3E). Interestingly, SGK3, but not other kinases examined, could be immunoprecipitated from culture medium (Figure 3E, Figure 3\u2014figure supplement 1B), indicating it was secreted, although at a much lower level than FAM20C. Furthermore, C-terminal-tagged SGK3 was also secreted (Figure 3\u2014figure supplement 1C). SGK3 lacks a signal peptide, but instead has a PX domain, suggesting it may be secreted unconventionally in exosomes, which was supported by two experiments. First, treatment of cells with brefeldin A (BFA), an inhibitor of ER/Golgi\u2010trafficking (Misumi et al., 1986), blocked secretion of FAM20C, but not SGK3 (Figure 3E). Second, when exosomes were sedimented from medium by ultracentrifugation, SGK3 but not FAM20C was enriched in the pellet fraction (Figure 3\u2014figure supplement 1D). Thus, SGK3 is a new exosomal kinase, which may mediate cellular communication with the microenvironment.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig3-v2.jpg)\n\n**Figure 3.:** (A,\u00a0B) New plasma membrane-localized kinases identified by KA. Original mapping data (A) and confirmation by cellular fractionation (B). W: whole cell lysate; M: membrane; C: cytosol. Equal loading was achieved by normalizing to the same number of cells. (C) Confirmation of endoplasmic reticulum\u00a0(ER)-localized kinases. HeLa cells were co-transfected with kinase and GFP-SEC61B. VRK2 was used as a positive control of ER protein. Squared areas were enlarged on the right. (D) Confirmation of SGK3 localization in transfected HeLa cells. (E) SGK3 was secreted to culture medium. HEK293T cells were transfected and brefeldin A\u00a0(BFA) (0.5 \u03bcg/ml) treated for 24 hr as indicated. Both culture medium and cell lysates were collected. Medium was further immunoprecipitated by anti-Flag antibody. Loading was normalized by the number of input cells, and IP samples were loaded at 5\u00d7\u00a0of input. (F) MAP4K3 colocalizes with microtubule and ER in HeLa cells. Arrowheads indicate colocalization. (G) MAP4K3 colocalizes with SEC61B as captured by Zeiss Airyscan high-resolution microscopy. (H) Cell-type-dependent localization of MAP4K3. Indicated cells were transfected with Flag-MAP4K3 and stained by anti-Flag antibody. (I) LKB1 inhibits tubule-like localization of MAP4K3. Control and LKB1-expressing H460 cells were transfected with Flag-MAP4K3 and were stained by anti-Flag antibody. Cells with different localization patterns were quantified. Data was represented as mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a03 independent experiments, two-tailed Student\u2019s t test; n\u00a0=\u00a0100 cells were analyzed in each experiment (Figure 3\u2014figure supplement 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) C-terminal tagged SGK3 colocalizes with EEA1 in HeLa cells. (B) PRKD3, STK16, MAP3K12, and MAP3K13 are not secreted. HEK293T cells were transfected. Both culture medium and cell lysates were collected and immunoprecipitated by anti-Flag M2 resin. Loading was normalized by the number of input cells, and IP samples were loaded at 5\u00d7\u00a0of input. (C) C-terminal tagged SGK3 was secreted to culture medium. Experiments were similar to (B). (D) Presence of SGK3 in exosomes. Culture mediums were ultracentrifuged, and fractions were examined by western blotting. Loading was normalized by the number of input cells, and EV fractions were loaded at 5\u00d7\u00a0of input. ALIX is a marker of exosome. (E) MAP4K3 does not colocalize with lysosome. HeLa cells were transfected with Flag-MAP4K3. Cells were starved in Hanks\u2019 Balanced Salt Solution containing 10% dialyzed FBS and 4.5 g/L glucose for 6 hr or treated with 200 nM vacuolin-1 for 1.5 hr. Cells were stained with anti-Flag and anti-LAMP1 antibodies. (F) N-terminal tagged full-length MAP4K3 exhibits tubule-like structures colocalizing with microtubule and endoplasmic reticulum\u00a0(ER) in HeLa cells. (G) C-terminal tagged full-length MAP4K3 exhibits tubule-like structures in HeLa cells. (H) Subcellular localization of inactive kinases. Wildtype kinases and kinase inactive mutants (KR) were transfected into HeLa cells. Cells were then fixed and stained.\n\nMAP4K3 has been shown regulated by amino acids and play a role in nutrient regulation of mTOR signaling (Yan et al., 2010). We found MAP4K3 in tubule-like structures in KA. Co-staining indicated that MAP4K3 structures were colocalizing with a small\u00a0fraction of microtubules (Figure 3F). These tubules were also non-overlapping with lysosomes even in amino acid starvation condition or in cells treated with vacuolin-1, a chemical that cause lysosome fusion and enlargement (Figure 3\u2014figure supplement 1E). However, MAP4K3 tubules were overlapping with ER (Figure 3F), which was confirmed by super-resolution microscopy (Figure 3G). Interestingly, MAP4K3 tubules were also obvious in A549, Du 145, and H460 cells, all of which, as well as HeLa cells, have mutation of the LKB1 gene, an upstream regulator of mTOR (Corradetti et al., 2004; Figure 3H). Surprisingly, MAP4K3 were mainly cytoplasmic with some small puncta in LKB1-wildtype COS-7, U-2 OS, and MCF10A cells. Furthermore, restoration of LKB1 expression in H460 cells markedly inhibited MAP4K3 tubules (Figure 3I). We noticed that the MAP4K3 cDNA in the library was the same as originally reported (Diener et al., 1997), which lacks N-terminal 12 amino acids compared with reference sequence. We therefore cloned the full-length MAP4K3 with N- and C-terminal tags, and confirmed their tubule-like localization in HeLa cells (Figure 3\u2014figure supplement 1F, G). Taken together, KA identified many kinases with previous unknown subcellular localizations, suggesting new functions and regulatory mechanisms.\n\nWe further examined the impact of kinase activity on localization for a few kinases with specific localizations. Seven kinases with PM, MI, tubule-like, and puncta patterns were inactivated by point mutations. Except HIPK2, all other inactive kinases showed localization patterns similar to their wildtype counterparts (Figure 3\u2014figure supplement 1H). While wildtype HIPK2 were mostly in nuclear puncta, inactive HIPK2 was diffusive in cytoplasm in more than 50% of cells. Thus, subcellular localization of kinases could be regulated by their activity and should be systematically investigated in the future.\n\n### Phase separation assembles kinase condensates\n\nDistinct sub-nuclear patterns were observed for kinases. For instance, TRIB1, CDK10, CDK7, HASPIN, and STK17A were evenly distributed in nucleoplasm, while VRK3, BRD3, CDK8, CDKL3, TRIM24, and RPS6KA4 were enriched in periphery regions of the nucleus (Figure 4A). By high-resolution microscopy, all six nuclear peripheral kinases were found within the nuclear boundary (Figure 4\u2014figure supplement 1A). Interestingly, it was reported that VRK3 phosphorylated nuclear envelope protein barrier-to-autointegration factor (BAF), thus played a role in cell cycle regulation (Park et al., 2015). Other kinases enriched in nuclear periphery regions may therefore also have sub-compartment-specific functions. Two kinases CDK13 and STK19 were found in structures reminiscent of nucleoli (Figure 4A), which was confirmed by co-staining with a nucleolar protein UTP25 (Figure 4\u2014figure supplement 1B), suggesting their potential roles in ribosome biogenesis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig4-v2.jpg)\n\n**Figure 4.:** (A) Sub-nuclear patterns of kinases in Kinome Atlas\u00a0(KA). (B) Hex disrupts puncta localization of kinases. Transfected HeLa cells were treated with 10% 1,6-hexanediol (Hex) for 1 min as indicated. Cells were then fixed and stained. (C) Fusion of kinase puncta in live cells. HeLa cells expressing GFP-tagged kinases were examined by time-lapse microscopy. Fusion events were indicated by arrowheads. (D) Sequence analysis identified intrinsically disordered regions\u00a0(IDRs) in kinases. Domain organizations were illustrated in scale. KD: kinase domain. Disorder tendency was predicted by IUPred2A. Prion-like regions and fold index were predicted by PLAAC. (E) Deletion of IDR impairs puncta localization. Wildtype or mutants with GFP tag were expressed and visualized in HeLa cells. For HIPK2, both IDRs were deleted in \u0394IDR. (F) Puncta formed by endogenous BMP2K in HeLa cells. BMP2K 3xHA tag knock-in HeLa cells were treated with 10% Hex for 1 min as indicated. Cells were then fixed and stained (Figure 4\u2014figure supplement 1).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Nuclear peripheral kinases visualized by Airyscan high-resolution microscopy. Transfected HeLa cells were stained with anti-HA for the kinase and anti-Lamin A/C for nuclear envelope. (B) Confirmation of CDK13 and STK19 in nucleoli. HeLa cells were transfected and stained by anti-Flag and anti-UTP25 antibodies. (C) Cytoplasmic puncta formed by kinases. (D) Hex-resistant puncta formed by kinases. Transfected HeLa cells were treated with 10% Hex for 1 min as indicated. Cells were then fixed and stained. (E) GFP tag did not affect puncta localization of examined kinases. GFP-tagged kinases were expressed and imaged in HeLa cells. (F,\u00a0G) Sequence analysis of randomly selected nuclear (F) and cytosolic (G) kinases with even distribution. Domain organizations were illustrated in scale. KD: kinase domain. Blue bars represent low complexity domains. Disorder tendency was predicted by IUPred2A. Prion-like regions and fold index were predicted by PLAAC. (H) Subcellular localization of HIPK2 intrinsically disordered region\u00a0(IDR)1. HIPK2 IDR1 with GFP tag was expressed and visualized in HeLa cells. (I) Knock-in of epitope tags with CRISPR/Cas9 technology. L/RHA: left/right homologous arm. (J) Confirmation of BMP2K knock-in cells by western blotting. Arrowhead denotes BMP2K in predicted molecular weight.\n\nRemarkably, we also noticed several nuclear kinases unevenly distributed in puncta of varying size or even in bubble-like structures (Figure 4A). Furthermore, similar structures were also found in cytosol (Figure 4\u2014figure supplement 1C). Puncta were more abundant in cells with high expression levels, suggesting concentration-dependent LLPS as an underlying mechanism. Protein kinases such as DYRK1A were reported to function in structures formed by LLPS (Lu et al., 2018). We tested the role of LLPS in formation of kinase condensates first using 1,6-hexanediol (Hex), a compound perturbing weak hydrophobic interactions to disassemble structures that exhibit liquid-like properties. Nuclear puncta formed by TRIB3 and HIPK2, as well as cytoplasmic puncta of BMP2K and CIT were largely eliminated by Hex (Figure 4B). However, Hex did not eliminate puncta formed by other kinases examined (Figure 4\u2014figure supplement 1D). Although structures formed by LLPS may not be sensitive to Hex treatment due to possibilities such as liquid-to-solid transition, we chose Hex-sensitive structures for further analysis to avoid complex interpretations. We confirmed similar localization pattern using GFP-tagged kinases (Figure 4\u2014figure supplement 1E). Time-lapse live-cell imaging revealed frequent puncta movements and fusion events for TRIB3, HIPK2, and BMP2K, demonstrating their dynamic and liquid-like properties (Figure 4C). LLPS of proteins are mainly mediated by multivalent interactions through multiple folded domains or intrinsically disordered regions (IDRs) (Boeynaems et al., 2018). All three kinases lack multiple protein-protein interaction domains, but have IDRs predicted by IUPred2A and PLAAC (Figure 4D). However, IDRs were also frequently predicted when analyzing randomly selected five nuclear kinases and five cytosolic kinases with even distribution pattern (Figure 4\u2014figure supplement 1F, G), suggesting that predicted IDR is not sufficient for LLPS. Importantly, among all kinases analyzed, HIPK2, and BMP2K uniquely have prion-like regions overlapping with IDRs, which are largely devoid of charged residues, but enriched for polar residues, and are frequently involved in LLPS (Figure 4D, Figure 4\u2014figure supplement 1F, G). Furthermore, deletion of IDRs eliminated puncta of TRIB3 and BMP2K, supporting IDR-mediated LLPS (Figure 4E). However, deletion of both IDRs in HIPK2 interrupted nuclear but not puncta localization, suggesting the involvement of other unpredicted region. In addition, the IDR of BMP2K, but not other kinases, formed puncta similar to the full-length protein (Figure 4E, Figure 4\u2014figure supplement 1H). To determine whether BMP2K could form puncta through LLPS on endogenous expression level, we generated BMP2K 3xHA tag knock-in HeLa cells through CRISPR/Cas9-mediated recombination (Figure 4\u2014figure supplement 1I). Successful knock-in was confirmed by western blotting (Figure 4\u2014figure supplement 1J). Two types of BMP2K patterns were found, in cytoplasmic puncta or both in cytoplasmic puncta and nuclei (Figure 4F). Nuclear BMP2K was not observed in overexpression expression experiments and could be due to a different isoform. Importantly, cytoplasmic puncta of endogenous BMP2K were also eliminated by Hex treatment (Figure 4F). Taken together, LLPS may have a broader role in kinase subcellular localization and functions.\n\n### KA identified novel mitochondrial kinases\n\nMitochondria generate ATP and play multiple regulatory roles in cells. KA recorded 22 kinases with some level of mitochondrial localization (Figure 5A and Supplementary file 2). 14 of them have been documented in mitochondrial proteome database MitoCarta2.0 (Calvo et al., 2016; Figure 5A), among which 6 were confirmed by co-staining with mitochondrial marker translocase of outer membrane 20 (TOM20) (Figure 5\u2014figure supplement 1A). ADCK5 and OBSCN were absent from the library, and mitochondrial localization of FASTK and PAK5 has not been observed in KA. We confirmed that FASTK and PAK5 tagged on either end were non-mitochondrial (Figure 5B). It was reported that FASTK transcribed from an alternative start codon missing N-terminal 34 amino acids was mitochondrial (Jourdain et al., 2015), which we could confirm (Figure 5\u2014figure supplement 1B). The functional significance of these two isoforms worth further investigation. Remarkably, we found eight new mitochondrial kinases, which were confirmed by co-staining with TOM20 (Figure 5A, C, Figure 5\u2014figure supplement 1C). The mitochondrial localization of MOK and TNK1 was further enhanced by moving epitope tags to the C-terminal (Figure 5\u2014figure supplement 1D). We further searched HPA and found 11 mitochondrial kinases not recorded by MitoCarta2.0 (Figure 5\u2014figure supplement 1E). Among them, AATK and SGK110 were not in the kinome library, while GRK6 and RPS6KA6 were confirmed by KA. Seven kinases were confirmed non-mitochondrial (Figure 5\u2014figure supplement 1F). Although not in the above databases, MAP3K11 have been reported as a cell cycle-regulated kinase with mitochondria-like localization (Swenson et al., 2003). Taken together, KA revealed five new mitochondrial kinases, MOK, LIMK2, PKN3, PRKCH, and TNK1. We confirmed the mitochondrial localization of endogenous RPS6KA6 in HeLa cells using the HPA antibody (Figure 5\u2014figure supplement 1G). However, tested antibodies for other kinases could not detect the endogenous proteins. Nevertheless, anti-MOK antibody confirmed ectopically expressed tagless MOK in mitochondria (Figure 5D). We further generated a MOK C-terminal 3x\u00a0Flag knock-in HeLa strain (Figure 5\u2014figure supplement 1H). siRNAs confirmed that a full-length 50 kDa band and a 20 kDa band were specific to MOK in western blotting (Figure 5\u2014figure supplement 1H, I). By cellular fractionation, we confirmed that both isoforms were enriched in mitochondrial fractions with some presence in nucleus and cytosol (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig5-v2.jpg)\n\n**Figure 5.:** (A) Comparison of MitoCarta2.0 and KA. (B) FASTK and PAK5 are not mitochondrial. N- and C-terminal tagged kinases were expressed in HeLa cells and stained. (C) Mitochondrial kinases identified by KA. Experiments are similar to (B). (D) Overexpressed tagless MOK localized to mitochondria. Transfected HeLa cells were fixed and stained with anti-MOK antibody. (E) Endogenous MOK was present in mitochondria. MOK 3x\u00a0Flag knock-in HeLa cells were fractionated and examined by western blotting. W: whole cell lysate; N: nucleus; MI: mitochondria; C: cytosol. Lamin A/C, MT-CO2, and Actin are nuclear, mitochondrial, and cytosolic markers, respectively. Equal loading was achieved by normalizing to the same number of cells. Arrowheads indicate MOK (Figure 5\u2014figure supplement 1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Confirmation of mitochondrial kinases by co-staining with TOM20. (B) N-terminal truncated isoform of FASTK exhibited mitochondrial localization. FASTK-M35 was transfected in HeLa cells and stained with anti-Myc antibody. (C) Confirmation of mitochondrial kinases in MCF10A cells. C-terminal-tagged kinases were expressed in MCF10A cells and stained. (D) Effect of tag position on MOK and TNK1 mitochondrial localization. MOK and TNK1 tagged on either end were expressed in HeLa cells, and 100 cells in random views were quantified for mitochondrial localization. Data is represented as mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a03 independent experiments, two-tailed Student\u2019s t test. (E) Comparison of mitochondrial kinases in MitoCarta2.0 and Human Protein Atlas\u00a0(HPA). Kinases only in HPA and confirmed by KA were labeled in green. (F) Kinases were tagged on the C-terminal, transfected, and stained in HeLa cells. (G) Endogenous RPS6KA6 of HeLa cells was stained by a specific antibody. (H) MOK 3x\u00a0Flag knock-in HeLa cells were transfected with non-targeting or specific siRNAs, and cell lysates were examined by western blotting. (I) MOK siRNA knockdown efficiency as determined by quantitative RT-PCR.\n\n### MOK is a mitochondrial intermembrane space-localized kinase\n\nMitochondria have four sub-compartments with distinct functions, outer membrane (OMM), inner membrane (IMM), intermembrane space (IMS), and matrix (Shimizu, 2019). Using 3D structured illumination microscopy (3D-SIM), we found that signals of MOK, TNK1, and RPS6KA6 were wrapped around by TOM20, an OMM protein (Figure 6A), indicating transportation into mitochondria. In contrast, LIMK2 was in puncta partially colocalizing with TOM20, indicating that LIMK2 decorated the outer surface of mitochondria. LIMK2 has three splicing isoforms, 2a, 2b, and v1 (Figure 6\u2014figure supplement 1A). LIMK2v1 in the kinome library lacks the classical function in inducing ectopic F-actin bundle (Amano et al., 2001; Figure 6\u2014figure supplement 1B). Nevertheless, the F-actin-promoting LIMK2b also partially colocalized with mitochondria (Figure 6\u2014figure supplement 1B). Therefore, LIMK2 may serve as a link between F-actin and mitochondrial function.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig6-v2.jpg)\n\n**Figure 6.:** (A) Sub-mitochondrial localizations of new mitochondrial kinases. Transfected HeLa cells were stained and imaged by 3D\u00a0structured illumination microscopy\u00a0(3D-SIM). (B) MOK2 is imported into mitochondria. Transfected HeLa cells were fixed and permeabilized with digitonin or Triton X-100 before staining. (C) MOK is not a mitochondrial membrane protein. Mitochondria purified from transfected HeLa cells were incubated in indicated buffers, and then centrifuged. Supernatants (S) and pellets (P) were analyzed by western blotting. Equal loading was achieved by normalizing to the same number of cells. (D) MOK is an IMS protein. COS-7 cells transfected with MOK2-GFP were imaged by Hessian SIM. MitoTracker Red marked inner membrane\u00a0(IMM) and co-transfected HSP60-mCherry marked matrix. (E) MOK2 has better mitochondrial localization than MOK1. HeLa cells were transfected with full-length (FL) or kinase domain (KD) of MOK1 and MOK2. Cells with mitochondrial MOK were quantified. Data is represented as mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a03 independent experiments, two-tailed Student\u2019s t test; n\u00a0=\u00a0100 cells were analyzed in each experiment. (F) Mitochondrial localization of MOK mutants. Transfected HeLa cells were stained with anti-Myc and anti-TOM20 antibodies. (G) TOM20-TIM23 complex is required for mitochondrial importing of MOK. HeLa cells expressing specific shRNAs were transfected with MOK2-Myc and stained (Figure 6\u2014figure supplement 1).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Domain organization of LIMK2 isoforms. (B) Subcellular localization of LIMK2 isoforms. HeLa cells transfected with LIMK2 isoforms were stained with anti-Flag and anti-TOM20 antibodies. F-actin was marked by phalloidin staining. (C) Domain organization of MOK1 and MOK2. NLS: nuclear localization signal. Sequences responsible for mitochondrial localization are marked by green boxes. (D) Subcellular localization of MOK mutants. Transfected HeLa cells were stained with anti-Myc and anti-TOM20 antibodies. (E) Knockdown efficiency of shRNAs were determined by quantitative RT-PCR. NT: non-targeting control. Data is represented as mean\u00a0\u00b1\u00a0SD from three technical repeats. (F) Knockdown of OXA1L and BCS1L did not affect MOK2 sub-mitochondrial localization. HeLa cells expressing indicated shRNAs were transfected with MOK2-GFP and HSP60-mCherry. (G) MOK2 interacts with TOM20 and TIM23. HEK293T cells were transfected and lysed for immunoprecipitation by anti-Flag resin. FL: full-length; KD: kinase domain; CT: C-terminus.\n\nSeveral pieces of evidence identified MOK as an IMS protein. First, while mitochondrial MOK was visualized after cell permeabilization by Triton X-100, which breached both PM and OMM, it was not detected after cell permeabilization by digitonin, a detergent that penetrates PM but leaves OMM intact at limited concentration (Vercesi et al., 1991; Figure 6B). Thus, MOK was inside mitochondria. Second, extraction of isolated mitochondria using high pH hypotonic buffer released MOK as well as IMS protein EndoG, matrix protein HSP60, but not membrane components (Figure 6C). Thus, excluded MOK as a mitochondrial membrane protein. In addition, Hessian SIM super-resolution live-cell imaging (Huang et al., 2018) found that MOK-GFP wrapped around both IMM as marked by Mitotracker and matrix as marked by HSP60-mCherry (Figure 6D). The above data revealed MOK as an IMS protein. Noteworthy, the signal of MOK was discontinuous and enriched in puncta reminiscent of the Mitochondrial Contact Site and Cristae Organizing System (Jakobs and Wurm, 2014; Figure 6D), suggesting roles of MOK in mitochondrial structure.\n\nWe next determined the sequence basis for MOK mitochondrial localization. We confirmed that MOK isoform 1, longer than the isoform 2 as in the library (Figure 6\u2014figure supplement 1C), was also present in mitochondria, although at a lower ratio (Figure 6E). Surprisingly, both an N-terminal fragment of MOK containing the kinase domain and a C-terminal fragment exhibited mitochondrial localizations similar to the wildtype protein (Figure 6F), suggesting at least two sequences mediating mitochondrial importing. Deletion of amino acids 53\u2013103, but not other N-terminal fragments, largely eliminated the mitochondrial localization (Figure 6F, Figure 6\u2014figure supplement 1D). In the C-terminal fragment, further truncating 30 or 60 amino acids (331\u2013389, 361\u2013389) eliminated mitochondria localization, and a peptide comprising only amino acids 301\u2013360 had weak mitochondrial localization (Figure 6F). Therefore, two peptides 53\u2013103 and 301\u2013330 of MOK2 mediated the mitochondrial localization of MOK (Figure 6\u2014figure supplement 1C). However, by sequence comparison to other new mitochondrial kinases, no new linear motif for mitochondrial localization was found.\n\nClassically, mitochondrial importing of nuclear-encoded proteins relies on multi-protein translocator complexes such as the TOM complex, which imports precursors containing mitochondrial targeting sequences across OMM, and translocase of inner membrane (TIM) complex, which sorts precursors into matrix or IMM (Schmidt et al., 2010). shRNA-mediated knockdown of precursor receptor TOM20 but not TOM70 blocked mitochondrial localization of MOK, suggesting TOM20 as a receptor for MOK importing (Figure 6G, Figure 6\u2014figure supplement 1E). Furthermore, knockdown of TIM23, TIM17A, and TIM50 in the same complex, but not TIM22 and TIM9, eliminated mitochondrial MOK (Figure 6G). Knockdown of HSPA9, which is responsible for translocation of matrix protein downstream of the TIM23 complex, also suppressed MOK mitochondrial localization (Figure 6G). These observations suggest a mechanism involving coupled TOM20 OMM receptor and TIM23 IMM channel under facilitation by HSPA9. In this case, MOK must be reversely transported to IMS or be cleaved by\u00a0proteases\u00a0before entry into the matrix. Since mitochondrial MOK had a similar molecular weight as cytoplasmic MOK (Figure 5E), a cleavage is unlikely. We therefore examined the role of OXA1L and BCS1L, which are responsible for export of matrix proteins in yeast (Stiller et al., 2016; Wagener et al., 2011). However, knockdown of OXA1L or BCS1L did not affect mitochondrial or sub-mitochondrial localizations of MOK (Figure 6G, Figure 6\u2014figure supplement 1F). Furthermore, mitochondrial MOK was also insensitive to knockdown of MIA40 (Figure 6G), which facilitates import of proteins into IMS through an oxidation-dependent mechanism (Chacinska et al., 2004). Nevertheless, by co-immunoprecipitation, we confirmed that MOK and its kinase domain physically interacted with TOM20 and TIM23 (Figure 6\u2014figure supplement 1G). Taken together, MOK is an IMS protein imported by a TOM20-TIM23-dependent mechanism independent of classical mitochondrial importing signal.\n\n### MOK regulates mitochondria structure and functions\n\nTo determine functions of MOK, we generated MOK knockout cells using CRISPR/Cas9 (Figure 7\u2014figure supplement 1A). Electron microscopy revealed that while mitochondria length remained normal, the number of cristae markedly reduced in MOK KO cells (Figure 7A, B). This defect could be rescued by re-expression of MOK1 or MOK2. In Caki-1 cells, knockdown of MOK by shRNAs also resulted in loss of cristae (Figure 7\u2014figure supplement 1B\u2013D). Cristae have a pivotal role in generating ATP (Cogliati et al., 2013). Indeed, oxygen consumption rates (OCRs) for both basal respiration and ATP production were reduced in MOK KO cells (Figure 7C, D). Re-expression of MOK2 rescued mitochondrial respiration, while rescue by MOK1 was statistically insignificant. Consistently, knockout of MOK reduced cellular ATP level, which could be rescued by MOK2, but not MOK1 (Figure 7E). In Caki-1 cells, knockdown of MOK also reduced cellular ATP level (Figure 7\u2014figure supplement 1E). Mitochondria are also a major origin of cellular reactive oxygen species (ROS). Under basal condition, ROS level was higher in MOK KO cells, but was rescued by expression of MOK1 and MOK2 (Figure 7F). Furthermore, oxidative stress induced by diamide caused more apoptosis in MOK KO cells (Figure 7G). Deregulated oxidative stress response was also observed in MOK KO MCF10A cells (Figure 7\u2014figure supplement 1F\u2013H).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig7-v2.jpg)\n\n**Figure 7.:** (A,\u00a0B) MOK KO reduced mitochondria cristae. Indicated A375 cells were examined by electron microscopy (A). The length and cristae number of mitochondria (n\u00a0=\u00a030) were quantified (B). (C,\u00a0D) MOK KO impairs mitochondrial respiration. Cells sequentially exposed to mitochondrial inhibitors were analyzed on a Seahorse Analyzer. Oxygen consumption rate\u00a0(OCR) was measured and normalized to protein concentration (C). Respiratory parameters were calculated from OCR data as described in the Materials\u00a0and\u00a0methods section (D). Data is representative and represented as mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03, two-tailed Student\u2019s t test. (E) MOK KO reduced cellular ATP level. Data is representative and represented as mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03, two-tailed Student\u2019s t test. (F) MOK KO increased cellular reactive oxygen species\u00a0(ROS) level. Cells were stained with CM-H2DCFDA followed by flow cytometry. (G) MOK KO promoted apoptosis in response to oxidative stress. Indicated A375 cells were treated with 200 nM diamide for 20 hr, and cell lysates were analyzed by western blotting. (H) TAP identified MOK2 interacting proteins in mitochondria. MOK2-Flag-SBP was expressed in MCF10A cells, purified, and analyzed by silver staining after electrophoresis (left). Arrowhead denotes MOK. Top hits from mass spectrometry are shown (right). (I) MOK interacts with ATAD3A. HEK293T cells were transfected and cell lysates were immunoprecipitated with anti-Myc antibody. (J,\u00a0K) Knockdown of ATAD3A reduced mitochondrial cristae number. Experiments were similar to these in (A,\u00a0B). Data is representative and represented as mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a030, two-tailed Student\u2019s t test (Figure 7\u2014figure supplement 1).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64943/elife-64943-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Confirmation of MOK knockout in A375 cells by genomic DNA sequencing. Indels are labeled in red. Arrowhead indicates predicted Cas9 cutting site. (B) MOK knockdown efficiency in Caki-1 cells as determined by quantitative RT-PCR. (C,\u00a0D) Knockdown of MOK reduced mitochondria cristae in Caki-1 cells. The length and cristae number of mitochondria (n\u00a0=\u00a050) were quantified. Data is represented as mean\u00a0\u00b1\u00a0SD, two-tailed Student\u2019s t test. (E) Knockdown of MOK in Caki-1 cells reduced cellular ATP level. Data is represented as mean\u00a0\u00b1\u00a0SD. n\u00a0=\u00a03 repeats, two-tailed Student\u2019s t test. (F) Confirmation of MOK knockout in MCF10A cells by genomic DNA sequencing. (G) Knockout of MOK increased cellular reactive oxygen species\u00a0(ROS) level. Cells were treated with 150 mM H2O2 for 15 min and analyzed by flow cytometry. (H) Knockout of MOK promoted apoptosis in response to oxidative stress. Indicated cells were treated with 200 nM diamide for 20 hr, and cell lysates were analyzed by western blotting. (I) MOK2 lacks kinase activity. MOK was immunoprecipitated from transfected HEK293T cells and subjected to in vitro kinase activity assay. Phosphorylation was detected by anti-thiophosphate-ester antibody. Arrowhead denotes MOK autophosphorylation. To activate MAPK signaling, cells were treated with 100 ng/ml tetradecanoyl phorbol acetate (TPA) for 30 min. Flag-MST2 was used as a positive control. KR denotes a kinase inactive mutant generated by mutating the ATP binding Lys to Arg. (J) Distribution of MOK-interacting proteins identified from TAP purification. (K) MOK interacts with SLC25A13 and SLC25A11. HEK293T cells were transfected and cell lysates were immunoprecipitated by anti-Myc antibody. (L) ATAD3A knockdown efficiency in A375 cells as determined by quantitative RT-PCR. (M) Knockdown of ATAD3A did not promote A375 apoptosis in response to oxidative stress. Indicated cells were treated with 200 nM diamide for 20 hr, and cell lysates were analyzed by western blotting.\n\nWe further determined the underlying mechanism of mitochondria regulation by MOK. Using in vitro autophosphorylation as an assay, we confirmed that MOK2 was kinase inactive (Figure 7\u2014figure supplement 1I), consistent with its incomplete kinase domain. Nevertheless, MOK2 not only had better mitochondrial localization than MOK1, but also rescued mitochondrial structure and functions in KO cells. Thus, MOK played a functional role in mitochondria in an activity-independent manner. We next identified MOK-interacting proteins by tandem affinity purification (TAP) from MCF10A cells (Figure 7H). Mass spectrometry revealed that about 20% of proteins co-purified with MOK were mitochondrial proteins, including mitochondrial ribosomal proteins, solute carriers, oxidative phosphorylation-related proteins, and chaperones (Figure 7\u2014figure supplement 1J). Immunoprecipitation confirmed interactions of MOK with IMM protein ATAD3A and solute carriers SLC25A13 and SLC25A11 (Figure 7I, Figure 7\u2014figure supplement 1K). ATAD3A spans OMM and IMM with two transmembrane regions (Gilquin et al., 2010), and has important functions in mitochondrial structure dynamics (Cooper et al., 2017; He et al., 2012; Zhao et al., 2019). Indeed, ATAD3A knockdown cells also exhibited reduced cristae number (Figure 7J, K, Figure 7\u2014figure supplement 1L). However, knockdown of ATAD3A did not worsen oxidative stress, suggesting that this function was mediated by other effectors (Figure 7\u2014figure supplement 1M).\n\n## Discussion\n\nHere, we present Kinome Atlas (KA), a consolidated image database of the kinome on subcellular level with compartment annotations (http://cellimagelibrary.org/pages/kinome_atlas, Supplementary file 2). Experiments in the same cell line transfected and cultured in a similar condition allowed comparison of individual kinases and kinase families. 19.1% (87/456) of kinases had only one localization, 72.4% (330/456) had a specific major localization (score\u00a0\u22655), and 8.5% (39/456) were multi-localizing. While classical signal transduction pathways begin from signaling sensing at the plasma membrane, followed by signal transduction in the cytosol, and further to transcriptional regulation in the nucleus, we found enrichment of TK and AGC families on the plasma membrane, STE family in the cytosol, and CMGC, atypical, as well as CAMK families in the nucleus, suggesting division of roles between families. Consistently, small families are also enriched in organelles with more distinct functions, such as the enrichment of atypical kinase family in mitochondria, and overrepresentation of the RGC and PKL families in ER/Golgi. This distribution reflects the spatial dynamics of kinases as key molecules in signal transduction. It should be noted that due to the use of epitope tags and overexpression mislocalization is possible. However, KA will direct further validation of kinase subcellular localizations at the endogenous level in their physiologically relevant contexts. In relation to that, it should also be noticed that many kinases exhibit multiple subcellular localizations at different ratios, and other physiologically relevant localizations are also possible under a different context. It would be important to further investigate translocations of the kinome in response to various stimuli.\n\nKA revealed kinases with previously unknown localizations to major or sub-compartments. Identification of SGK3 as an exosomal kinase suggests a role in intercellular communication. KA also found MAP4K3 in tubule structures overlapping with ER and microtubules, which is different from previous reports (Hsu et al., 2018). While the nature of this structure is not entirely clear, it is specifically regulated by LKB1, an upstream component of the mTOR pathway. It is possible that LKB1 regulates the structure itself or the localization of MAP4K3 to this structure. Intriguingly, MAP4K3 was reported to mediate the regulation of mTOR activity by amino acid sufficiency. Consistently, studies in Drosophila and mice indicated a role of MAP4K3 in regulation of body size (Bryk et al., 2010), immune response (Chuang et al., 2011), and longevity (Chuang et al., 2019), although the mechanism of action is not clear. Further elucidation of this LKB1-regulated localization of MAP4K3 may help solve the mystery. KA has also identified kinases enriched at nuclear peripheral regions, which may play a role in the maintenance and functions of this domain featured by gene-poor and compact chromatin with gene silencing markers (Lieberman-Aiden et al., 2009; Stevens et al., 2017). KA has also documented a collection of new kinases on plasma membrane, in ER, and in nucleolus, which all worth further studies. Except for cytosolic and nuclear localizations, prediction of these new localizations were largely ineffective, suggesting novel sorting mechanisms such as signal patches.\n\nLLPS of proteins was recently recognized to play physiological roles in various contexts. Many protein kinases such as DYRK3, DYRK1A, PLK4, and\u00a0FYN (Amaya et al., 2018; Lu et al., 2018; Park et al., 2019; Wippich et al., 2013), were reported to function in condensates formed by LLPS. In KA, we found that 38.2% of specific nuclear kinases had uneven localizations with puncta in varying size under overexpression condition. Furthermore, similar condensates were also found for cytoplasmic kinases. We did not rule out the possibility that overexpression was a reason for the frequent observation of kinase condensates in KA since LLPS is highly dependent on protein concentration (Alberti et al., 2019). Nevertheless, the fact that a high ratio of these kinases contains prion-like regions, and the deletion of which abolished condensate formation, suggests regulation with specificity. Importantly, at least for BMP2K, condensate formation was observed on the endogenous level. Kinase condensates formed by LLPS could regulate kinase activity. For instance, the yeast kinase Atg1 was found to form condensates through LLPS, which was important for autophagy initiation (Fujioka et al., 2020). Furthermore, LLPS could also organize multi-component condensates for phosphorylation of substrates, for example, in the case of DYRK1A, in regulation of RNA polymerase II (Lu et al., 2018). Interestingly, BMP2K was mutated in the IDR in developmental dysplasia of the hip (DDH) and high myopia diseases (Liu et al., 2009; Zhao et al., 2017), suggesting functional roles of LLPS in BMP2K regulation and functions.\n\nMitochondrial kinases regulate mitochondria structure and functions. For example, PINK accumulates on dysfunctional mitochondria and recruits Parkin in a kinase-dependent manner to mediate autophagic removal of damaged organelles (Chen and Dorn, 2013). In this report, KA systematically identified new mitochondrial kinases, including MOK, LIMK2, PKN3, PRKCH, and TNK1, and confirmed less well-studied RPS6KA6, MAP3K11, and GRK6. All these new mitochondrial kinases lack classical mitochondrial importing signal peptide. However, at least for MOK, the importing still depends on the TOM-TIM complex. Although we did not exclude the possibility of an indirect mechanism, physical interaction between MOK and the TOM-TIM complex suggests unrecognized importing functions. Compared with other tissues, the mRNA level of MOK is much higher in spermatocytes and round spermatids. Thus, it is interesting to speculate MOK may function in spermatogenesis, during which mitochondria are dramatically remodeled for efficient energy production to support sperm movements (Moraes and Meyers, 2018; Otani et al., 1988). In addition, elevated expression of MOK in cancer, such as in cholangiocarcinoma, and skin cutaneous melanoma (http://firebrowse.org/), also suggests a functional role in tumorigenesis.\n\nTaken together, the kinome of a single cell is partitioned with family-based features. Although limited to a snapshot of the live cell, KA compared 456 kinases under a similar experimental condition, thus resolved spatial distribution of one of the largest protein superfamilies. This resource, coupled with phospho-proteome analysis of cellular organelles, could broadly facilitate dissection of regulatory mechanisms for various cellular activities in normal and disease states.\n\n## Materials and methods\n\n### Construction of the kinome plasmid library and other plasmids\n\nThe majority of clones were made by gateway technology using human open reading frame (ORF) entry clones from two sources, Center for Cancer Systems Biology (CCSB) of Harvard University (hORFeome v3.1), or Thermo Fisher (Ultimate ORF Clone LITE Collection). Clones from CCSB were recombined into lentiviral vectors pXC-C-Flag or pLX304-C-Flag with C-terminal Flag tag, and clones from Thermo Fisher were recombined into a lentiviral vector pXN-N-HA/Flag with N-terminal HA and Flag tags due to the intact stop codon in entry clones. In addition, we got 79 clones by individual cloning or request from other investigators to supplement the collection. Kinase identities were confirmed by sequencing from the two ends. Kinase plasmids are available for request from the core facility of the Life Sciences Institute of Zhejiang University by emailing to lsicf@zju.edu.cn.\n\nKinase cDNAs were sub-cloned into pEGFP-C1 vector for live-cell imaging or into pcDNA-C-Myc and pcDNA-N-HA vectors to change epitope tag position. MOK was sub-cloned into pcDNA-C-Myc, pLVX-C-Flag-SBP, pcDNA-C-GFP, and pQCXIH vectors. HSP60 was sub-cloned from Ultimate ORF Clone LITE Collection into pcDNA-C-mCherry and pcDNA-C-GFP vectors. TOM20, TIM23, SLC25A11, SLC25A13, and ATAD3A were sub-cloned from Ultimate ORF Clone LITE Collection into pcDNA-C-GFP and pLVX-C-HA vectors. SEC61B was sub-cloned from Ultimate ORF Clone LITE Collection into pLVX-N-GFP vector. Point mutations were generated using QuikChange Site-Directed Mutagenesis Kit (Agilent Technologies). Kinase inactive mutants were generated by mutating the ATP binding Lys to Arg.\n\n### Tissue culture, transfection, and viral infection\n\nA375, COS-7, HEK293T, A549, DU 145, and HeLa cells were cultured in Dulbecco's Modified Eagle Medium (Thermo Fisher) containing 10% FBS (Thermo Fisher) and 50 \u03bcg/ml penicillin/streptomycin (P/S) (Thermo Fisher). U-2 OS, H460, and Caki-1 cells were cultured in RPMI-1640 (Thermo Fisher) containing 10% FBS and 50 \u03bcg/ml P/S. MCF10A cells were cultured in DMEM/F12 (Thermo Fisher) supplemented with 5% horse serum (Thermo Fisher), 20 ng/ml EGF, 0.5 \u03bcg/ml hydrocortisone, 10 \u03bcg/ml insulin, 100 ng/ml cholera toxin, and 50 \u03bcg/ml P/S. All cells were cultured in a 37\u00b0C humidified incubator with 5% CO2. Caki-1 cells were from Dr. Liping Xie, and other cell lines were purchased from ATCC. Cell lines were authenticated using Short Tandem Repeat profiling at the Genetic Testing Biotechnology (Suzhou). Mycoplasma test for cell culture was done in a monthly basis using MycoPlasma Detection Kit (Vazyme Biotech). Cells used in experiments were within 10 passages from thawing.\n\nTransfection of plasmids was performed using Lipofectamine (Thermo Fisher), and transfection of siRNA was performed using Lipofectamine RNAiMAX (Thermo Fisher) according to the manufacturer\u2019s instructions. Lentiviral or retroviral infection was used to generate stable cells. Briefly, HEK293T cells were co-transfected with viral vectors and packaging plasmids. 48 hr post-transfection, virus-containing medium was collected, filtered through a 0.45 \u03bcm filter, and used to infect target cells in the presence of 5 \u00b5g/ml polybrene. Puromycin (Thermo Fisher) or Hygromycin B (Roche) at appropriate concentrations was used for selection.\n\n### Immunofluorescent staining and imaging\n\nCells were seeded and transfected on glass coverslips. 24 hr post-transfection, cells were fixed with 4% paraformaldehyde in PBS for 15 min, permeabilized by 0.1% Triton X-100 (or 5 \u03bcg/ml digitonin as indicated) for 5 min, blocked in PBS containing 2% goat serum and 2% BSA for 30 min, and incubated with primary antibodies in blocking solution for 2 hr at room temperature. After washes, cells were stained with fluorophore-conjugated secondary antibodies (Thermo Fisher) for 1 hr at room temperature, and then further washed. Coverslips were mounted on glass slides in ProLong Gold antifade mounting media with DAPI (Thermo Fisher) and sealed. Pictures were taken by an LSM 710 confocal microscope (ZEISS). Super-resolution images were taken by 3D-SIM using Deltavision OMX (GE Healthcare) or Airyscan using LSM 880 confocal microscope (ZEISS). To determine sub-mitochondrial localization of MOK2, transfected COS-7 cells were stained with 500 nM MitoTracker Red CMXRos and monitored with Hessian SIM microscopy as previously described (Huang et al., 2018). Time-lapse live-cell imaging was performed with a DeltaVision Elite Cell Imaging System (GE Healthcare).\n\n### Presentation on kinome tree\n\nKA were presented on kinome tree using a web-based tool KinMap (Eid et al., 2017). Briefly, the localization and enrichment levels were reflected by colors and sizes of circles.\n\n### CRISPR/Cas9-mediated gene knockout and knock-in\n\nTo generate MOK knockout cells, sgRNAs were cloned into PEP-KO vector. Transfected A375 and MCF10A cells were selected by puromycin for 48 hr. The remaining cells were suspended and re-seeded into single clones. After culture for 10 days, individual clones were picked into 24-well plate and amplified. MOK knockout clones were characterized by genomic DNA sequencing.\n\nTo perform epitope tag knock-in, a pair of sgRNAs targeting stop codon flanking regions were cloned into PEP-KI vector (derived from PEP-KO vector by replacing wild-type Cas9 with a D10A mutant). Then genomic regions flanking the stop codon were amplified by PCR to generate right and left homology arms. The homology arms were cloned into pSEPT vector using AgeI/NheI and EcoRI/SalI sites, respectively, and spaced by a 3x\u00a0Flag coding sequence, a T2A element, and a neomycin resistance gene. One guanine in the protospacer adjacent motif (NGG) on one homology arm was mutated without altering amino acid coding to avoid cleavage. Cells transfected with all three plasmids were seeded as single clones and selected with G418 (Sangon Biotech). Knock-in clones were characterized by genotyping and western blotting.\n\n### siRNA, shRNA, RNA extraction, and qPCR\n\nFor siRNA knockdown experiments, 30% confluent cells in 6-well plates were transfected with 20 nM siRNAs using Lipofectamine RNAiMAX (Thermo Fisher) following the manufacturer\u2019s protocol. siRNAs against target genes were synthesized by RiboBio.\n\npLKO.1 vector was used to construct shRNA-expressing lentiviral plasmids by integrating oligonucleotides between AgeI and EcoRI sites. Lentiviral infection was described above.\n\nTo determine knockdown efficiency, total RNA was extracted using RNAiso Plus (TaKaRa Bio). RNA was reverse-transcribed using random hexamers (TaKaRa Bio) and the resulting cDNA was analyzed by qPCR with gene-specific primers in the presence of SYBR Green (Thermo Fisher). Relative expression of mRNAs was normalized to the expression of \u03b2-actin.\n\n### Cellular fractionation\n\nHeLa cells were scrapped down in low salt buffer (10 mM HEPES pH 7.9, 10 mM KCl, 0.1 mM EDTA, 0.1 mM EGTA) with protease and phosphatase inhibitors, incubated on ice for 2 min, and pushed through a 25 G needle 10 times. Unbroken cells and nucleus were removed by centrifugation at 1000 g for 5 min at 4\u00b0C, and membrane fraction was pelleted by centrifuging at 100,000 g for 30 min with an Optima Max-XP ultracentrifuge (Beckman Coulter Life Sciences).\n\nTo isolate mitochondria, cells were homogenized in the starting buffer (225 mM mannitol, 75 mM sucrose, and 30 mM Tris-HCl pH7.4) and the homogenate was centrifugated at 600 g for 5 min at 4\u00b0C to separate nuclear fraction. Supernatant was collected and centrifugated at 7000 g for 10 min at 4\u00b0C to isolate mitochondrial and cytosolic fractions. Nuclear and mitochondrial fractions were washed once and re-pelleted.\n\n### Western blotting and immunoprecipitation\n\nWestern blotting was performed following standard protocol. Briefly, protein samples were loaded, separated by SDS-PAGE, and transferred onto PVDF membranes. After incubation with primary antibodies overnight at 4\u00b0C, membranes were washed and incubated with HRP-conjugated secondary antibodies for 1.5 hr at room temperature. Proteins were detected using an ECL Detection Reagent (Thermo Fisher).\n\nFor immunoprecipitation, cells were lysed in ice-cold mild lysis buffer (100 mM NaCl, 10 mM EDTA, 1% NP40, 10 mM Tris pH 7.5, 50 mM NaF, 1 mM Na3VO4, 0.1 mM DTT) supplemented with EDTA-free Complete Protease Inhibitor. Cell lysate was centrifugated at 12,000 g for 15 min at 4\u00b0C to collect supernatant fraction. After incubation with desired antibodies with rotation for 2 hr at 4\u00b0C, protein G-Sepharose (GE Healthcare) was added for an additional 1.5 hr. Then samples were centrifugated, washed with mild lysis buffer four times, and boiled with SDS loading buffer.\n\n### Detection of SGK3 in culture medium\n\nTransfected HEK293T cells were cultured in medium supplemented with exosome-deprived FBS prepared by centrifugation at 100,000 g for 2 hr. BFA was added to medium as indicated 24 hr before harvest. Culture medium was collected, volume recorded, and then centrifugated at 500 g for 10 min, 2000 g for 10 min, and 12,000 g for 15 min in sequence to remove cell debris. Resulted supernatant was supplemented with protease inhibitor cocktail. To immunoprecipitate SGK3, 1% NP-40 was added, and anti-Flag M2 resin (Sigma-Aldrich) was incubated with supernatant for 2 hr at 4\u00b0C. To separate extracellular vesicles, supernatant was further centrifugated at 100,000 g for 2 hr. Pellets were washed in PBS and dissolved in SDS loading buffer.\n\n### In vitro kinase activity assay\n\nKinases were immunoprecipitated from transfected HEK293T cells. After washed in wash buffer (200 mM NaCl, 40 mM HEPES pH 7.5) and kinase assay buffer (50 mM potassium acetate, 30 mM HEPES, 5 mM MgCl2), purified kinases were incubated in 45 \u03bcl kinase assay buffer in the presence of 200 \u03bcM ATP-\u03b3-S and 20 \u03bcM ATP at 30\u00b0C for 1 hr with vortex. 2 \u03bcl EDTA (0.5 M) was used to stop reaction followed by additional 2 \u03bcl PNBM (50 mM) to start alkylation for 30 min at room temperature. Assay was completed by boiling reaction mixture at 95\u00b0C for 5 min with SDS loading buffer.\n\n### Alkaline carbonate extraction of mitochondria\n\nFreshly isolated mitochondria were resuspended in isotonic buffer (250 mM sucrose, 10 mM KCl, 2 mM MgCl2, 1 mM EDTA, 10 mM Tirs-HCl pH 7.4). Three groups were separately added with equal volume of isotonic buffer, 0.1 M sodium carbonate (pH 11.5), or 0.1 M sodium carbonate with 0.5% TritonX-100, respectively. After an incubation on ice for 30 min, samples were centrifugated at 13,000 g for 20 min at 4\u00b0C. Pellets were resuspended in isotonic buffer. All samples were analyzed by western blotting.\n\n### Seahorse analysis\n\nOCR was monitored using the Seahorse Analyzer XF96 (Agilent Technologies) according to the manufacturer\u2019s instructions. Briefly, 10,000 cells were seeded in each well and cultured in the XF96 culture plate while the XF cartridge was incubated overnight at 37\u00b0C without CO2. To begin analysis, cells were washed twice and incubated in XF assay medium at 37\u00b0C for 1 hr. 5 \u03bcM oligomycin A, 10 \u03bcM FCCP, and 5 \u03bcM rotenone/antimycin were used in OCR detection. After analysis, protein concentration was determined for normalization using a BCA Assay Kit (Thermo Fisher). Calculation of normalized OCR was performed following the\u00a0manufacturer\u2019s instructions (basal respiration\u00a0=\u00a0last rate measurement before the first injection \u2013 minimum rate measurement after rotenone/antimycin A injection, ATP production\u00a0=\u00a0last rate measurement before oligomycin injection \u2013 minimum rate measurement after oligomycin injection).\n\n### Measurement of cellular ATP level\n\nATP was measured using an ATP Assay Kit (Beyotime Biotechnology) according to the manufacturer\u2019s instructions. Briefly, cells were homogenized in ice-cold ATP-releasing buffer. After centrifugation, supernatants were added to substrate solution. A standard curve of ATP concentration (50 nM\u00a0to\u00a010 \u00b5M) was prepared from measurement of standard solutions. Luminescence was recorded by a microplate reader (POLARstar Omega). Protein concentration was determined for normalization using a BCA Assay Kit.\n\n### Transmission electron microscopy\n\nCells growing on coverslips were washed in PBS, fixed with 2.5% glutaraldehyde for 2 hr at room temperature, followed by an overnight incubation in 2.5% glutaraldehyde at 4\u00b0C. After washes and fixation in 1% osmic acid for 1 hr, samples were washed in PBS, dehydrated in a series of gradient ethanol (50, 70, 80, 90, 95, and 100%), embedded in Epon Resin, and then cut into 60 nm ultrathin sections. After uranyl acetate and lead citrate staining, samples were observed with a Hitachi HT7700 electron microscope. Representative views were pictured and analyzed by an Image-Pro Plus 6.0 software.\n\n### Measurement of cellular ROS level\n\nCells were trypsinized, washed, and re-suspended in PBS. After incubation with 5 \u03bcM CM-H2DCFDA for 10 min, cellular ROS level was detected by a flow cytometer (Beckman Coulter).\n\n### Tandem affinity purification\n\nMCF10A cells stably expressing MOK2-Flag-SBP were trypsinized and lysed in lysis buffer (10 mM Tris pH 7.5, 2 mM EDTA, 150 mM NaCl, 0.3% CHAPS, 2.5 mM NaF, 1 mM Na3VO4, 0.1 mM DTT, 0.5 mM PMSF) supplemented with EDTA-free Complete Protease Inhibitor. Lysate was cleared by centrifugation at 12,000 g for 15 min at 4\u00b0C, and then incubated with anti-Flag M2 resin (Sigma-Aldrich) for 2 hr at 4\u00b0C and washed three times with lysis buffer. Bound proteins were eluted with lysis buffer containing 200 ng/\u03bcl 3x\u00a0Flag peptide (Sigma-Aldrich). Eluate was further incubated with streptavidin-conjugated resin (Agilent Technologies) for 2 hr at 4\u00b0C. Resins were washed and then eluted with elution buffer (Tris, pH 7.5, 150 mM NaCl, 0.05% RapiGest, 10 mM 2-mercaptoethanol) containing 4 mM biotin. Samples were then processed for MS/MS analysis.\n\n### Protein sequence analysis for IDR\n\nDomain architecture of each kinase was analyzed by SMART (http://smart.embl.de/). Intrinsic disorder tendency was predicted by IUPred2A (https://iupred2a.elte.hu/) with scores assigned between 0 and 1. A score above 0.5 indicates disorder. Predicted IDRs and their boundaries were marked on domain architecture. Prion-like domains (PrD.like, red) of each kinase were predicted by PLAAC (http://plaac.wi.mit.edu/) with scores assigned between 0 and 1. A score above 0.5 indicates prion-like region. FoldIndex (gray), -PLACC (red), and \u22124*PAPA (green) were also produced by PLAAC (http://plaac.wi.mit.edu/). FoldIndex (gray) predicts whether a given protein sequence is intrinsically unfolded with scores assigned between \u22121 and 1. A score above 0 indicates folded region, while a score below 0 indicates unfolded region. Sliding averages of per-residue log-likelihood ratios for the prion-like versus background state were scaled by using base \u22124 logarithms and reversed in sign, thereby producing -PLACC (red). A prion aggregation prediction algorithm (PAPA) focusing on amino acid composition of proteins predicts prion propensity of Q/N-rich proteins. In order to be more comparable to the other tracks, PAPA multiplied by \u22124 produces 4*PAPA (green), so that lower scores are more predictive of prion propensity. \u22124*PAPA below the dashed green line (\u22120.2) indicates prion propensity.\n\n### Alignment and prediction of kinase localization in databases\n\nKinases with specific localization in KA were analyzed by comparing localization information with that from COMPARTMENTS and HPA. To perform localization alignment with COMAPRTMENTS, localization information with confidence scores more than three stars (localization information adopted from HPA was omitted) from knowledge channel was extracted and aligned with one localization in KA. The localization-matched kinases were those sharing the specific localization with KA. Localization alignment with HPA was performed in a similar manner except main localization in HPA was used.\n\nThe predictions channel in COMPARTMENTS contains predicted results from WoLF PSORT and YLoc. To perform kinase localization prediction, top three predicted localizations were extracted and aligned with KA as described above.\n\n### Quantification and statistical analysis\n\nNo statistical methods were used to estimate sample size. A standard two-tailed unpaired Student\u2019s t test was used for statistical analysis of two groups. p values lower than 0.05 were considered statistically significant. We performed statistical analyses using GraphPad Prism. Heatmaps were drawn using R package. Venn diagrams were drawn using web-based VENNY2.1.\n",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "d2723eb8-648f-4930-8536-61cd66cbebc5",
+      "submission_id": "dc9bfa56-11c6-4efc-80a7-9ae8ead16c13",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan A Cooper, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64943.sa1](https://doi.org/10.7554/eLife.64943.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"A subcellular map of the human kinome\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Jonathan Cooper as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Tony Hunter (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nSummary:\n\nThis paper presents the a large survey of the subcellular localizations of over 80% of the human kinome, as determined by appending an epitope or fluorescent tag at the N or C terminus. The results are catalogued in the Kinase Atlas (KA). A subset of the localizations were investigated further, including those of a putative secreted kinase SGK3 and a mitochondrial kinase, MOK1. The KA will be a useful resource, but it has limitations owing to the use of transient over-expression and possible mislocalization caused by the tagging. These limitations need to be more explicitly stated, and some of the conclusions should be moderated.\n\nEssential revisions:\n\nThe original reviews are at the end of this email for your consideration. The reviewers have discussed their reviews with the editor and we consider the following revisions to be essential.\n\n1. The main concern is that some localizations in the KA may be artifactual. This has been an issue with previous large scale tagging surveys in other organisms. Over-expression and the position of the tag could affect subcellular localization. This is more of a concern because the position of the tag (at N or C terminus) seems to be somewhat arbitrary, based on availability of the construct in the library. We therefore recommend softening the claims in the paper, including modifying the Abstract to explicitly state that, for some kinases, either over-expression or the epitope tag may alter localization, so the KA may not in all cases represent the localization of the endogenous protein.\n\n2. It is not clear whether subcellular localization was assessed by the co-staining with specific markers or recognizing specific patterns. This should be clarified. Also, the authors should explain how they loaded subcellular fractions for the blots (equalized for ug protein or for cell number).\n\n3. Conclusions regarding MOK localization and function should be modified (reviewer 1, points 2-3), but we are not requiring additional experiments as they are beyond the scope of this paper.\n\n4. More experiments are needed to understand whether SGK3 is secreted (reviewer 1 point 5). The SGK3 in the media could be soluble or in extracellular vesicles (microvesicles or exosomes). SGK3 has a PX domain for binding endosomes, so it may enter MVBs. The authors should perform high-speed centrifugation and confirm whether SGK3 is in the soluble fraction or pellet. In addition, the text should be modified to clarify that, if secreted, release would be through an unconventional secretion pathway.\n\nReviewer #1:\n\nHere, the authors have carried out a systematic survey of the subcellular localizations of a large fraction of the protein kinases in the human kinome, which they have catalogued in a Kinase Atlas (KA). To do this they tagged 464 out of the 538 human protein kinases with Flag, HA, HA-Flag, Myc or GFP at either the N- or C-terminus, and transiently expressed them by transfection in HeLa cells. ~95% of the tagged kinases could be detected, with about half being expressed at high level. Staining for the pertinent tags and comparison with cells stained for organellar marker proteins allowed the authors to assign each protein kinase to one of 10 subcellular compartments: cytosol (C), nucleus (N), plasma membrane (PM), mitochondrion (MI), endoplasmic reticulum (ER), Golgi apparatus (GL), vesicle (V), cytoskeleton (CS), centrosome (CT), and aggresome (AG). Half the kinases were localized to the cytosol, 15% to the nucleus, and 10% to the plasma membrane, and the rest were divided among other compartments, with several kinases having more than one location. Families of kinases tended to have preferred locations; for instance, as expected the tyrosine kinase family was enriched on the plasma membrane, largely due to the large number of RTKs. Most of the assigned mitochondrial kinases were atypical protein kinases, whereas the RGC and PKL subfamilies were ER/Golgi localized. They found about 70% overlap between their KA localizations and other databases, such as COMPARTMENTS and the Human Proteome Atlas. Some of the discrepancies may depend on whether the tags were N- or C-terminal and the nature of the tag. They found 104 kinase localizations that were uniquely annotated by KA, with 7 localized to the plasma membrane, as confirmed by cell fractionation studies. POMK, the protein-O-mannose kinase, was confirmed to be ER localized, as expected. SGK3 was annotated as specific for the Golgi compartment, but could also be detected in conditioned medium. MAP4K3/MEKK3 was found to decorate tubular structures that were shown to overlap with the ER. Several nuclear kinases were unevenly distributed in puncta of varying size, Including TRIB3 and HIPK2, whereas BMP2K formed puncta in the cytoplasm. Treatment with hexanediol disrupted puncta formed by several of these protein kinases but not puncta formed by other protein kinases, suggesting that the hexanediol-sensitive puncta might form as a result of liquid-liquid phase separation (LLPS). Deletion of predicted IDRs in TRIB3 and BMP2K eliminated their puncta formation. To determine if endogenous BMP2K formed LLPS puncta, they generated BMP2K-HA tag knock-in HeLa cells, and observed BMP2K present in cytoplasmic and/or nuclear puncta, which were abolished by hexanediol treatment. They also found four previously unidentified mitochondrial kinases not annotated in MitoCarta2: MOK, LIMK2, PKN3 and the TNK1 tyrosine kinase. They confirmed the mitochondrial localization of MOK by generating a MOK-Flag knock-in HeLa cell line, and showing that both a full-length 50 kDa form and shorter 20 kDa form were enriched in a mitochondrial fraction. Fractionation and IF analysis indicated that MOK and TNK1 were localized to the mitochondrial intermembrane space, whereas LIMK2 was on the outer mitochondrial membrane. They mapped two short regions in MOK (aa53-103 and aa301-330), required for mitochondrial import. To explore a possible mitochondrial function of MOK, the authors generated MOK knockout A375 melanoma cells and stable MOK knockdown Caki-1 cells, and found that MOK KO/KD cell mitochondria had fewer cristae based on EM analysis, and that both respiration rate and ATP level were reduced, and could be rescued by expression of the MOK2 splice variant but less well by full length MOK1. They showed that the MOK2 splice variant, missing 30 residues near the N terminus of the catalytic domain, lacked in vitro kinase activity, and yet was able to rescue the mitochondrial phenotype of the MOK KO A375 cells. Finally, in investigating possible mechanisms of MOK mitochondrial import, they showed that depletion HSPA9, which is responsible for inward translocation of matrix proteins downstream of the TIM23 complex, reduced MOK import, and that MOK was associated with the IMM protein ATAD3A, which spans between the IMM and OMM, and the SLC25A13 and SLC25A11 solute carriers.\n\nThe authors' efforts to carry out a nearly complete (464/538) kinome-wide subcellular localization assessment of the human protein kinases has led to some new findings with regard to protein kinase localization and function, and the resultant Kinome Atlas should be a useful resource for people working in the phosphorylation field. However, this analysis has largely relied on transient expression of tagged protein kinases, and the resultant overexpression and/or the added tag may have led to artifactual subcellular localization, meaning that some fraction of the reported kinase localizations may not be correct. Although many of the analyzed protein kinases appear to have the expected subcellular localization, only the new localizations of two protein kinases, BMPK2 and MOK, were validated at the endogenous level by knocking in a tag, and very few of the other protein kinase localizations were checked by staining for the endogenous proteins. The observation that some protein kinases form hexanediol-sensitive liquid-liquid phase separated (LLPS) puncta could imply previously unsuspected new regulatory biology, but only BMPK2 was shown to form puncta at endogenous levels, and it is possible that transient overexpression might have driven LLPS formation for other protein kinases. In consequence, it would be reassuring to check whether the endogenous protein kinases in question can form hexanediol-sensitive puncta. The new finding that the MOK protein kinase localizes to the mitochondrial intermembrane space is interesting, although more needs to be done to understand how MOK is targeted to this location and how it functions to regulate mitochondrial morphology and activity in a kinase-independent manner.\n\n1. It is unclear to what extent the observed protein kinase localizations require intrinsic protein kinase activity (apart from MOK). This could be checked by expressing kinase-dead mutants of a subset of the protein kinases with interesting localizations. Such studies may be beyond the scope of this paper, but this issue should be discussed.\n\n2. We do not learn anything (new) about subcellular localization signals for protein kinases that have exclusive localizations; for instance, were any new localization motifs found by sequence analysis. Even in the case of MOK, where two short motifs required for mitochondrial import were mapped, it remains unclear how these MOK motifs trigger mitochondrial import, despite the significant number of knockdown and IP/MS experiments carried out to define a possible mechanism of mitochondrial import.\n\n3. MOK was the single understudied protein kinase they examined in depth, and the data demonstrating MOK localization to the mitochondrial intermembrane space in A375 melanoma cells seem quite convincing. However, MOK is expressed at very low levels in most tissues (except testes), and since MOK mitochondrial function was shown to be kinase-independent, its mechanism of action in regulating cristae morphology remains unclear. Also, the effects of MOK KO/KD on mitochondrial function in cells other than A375 cells were not so striking, casting some doubt on whether MOK is likely to be of general importance MOK in mitochondrial morphology and function.\n\n4. Based on Figure 1D, it appears that the authors did not co-stain for a protein kinase of interest and a compartment specific marker to localize the protein kinase, but rather relied on patterns of kinase localization similar to that of an organelle marker protein. If this was what was done, it needs to be explained.\n\n5. Figure 3: Despite these data, it is not clear that SGK3 is secreted in the usual sense of the word, since lacking a signal peptide, one would not expect SGK3 to enter the conventional secretory pathway. For this reason, the authors need to establish whether the SGK3 protein that they identified in the medium is soluble or rather is in or associated with membrane vesicles of some sort, which seems more likely. The authors provide no information in the Materials and methods on how they immunoprecipitated Flag-SGK3 from the culture medium. For instance, was detergent used, in which case SGK3 would have been released from vesicles. The authors could test SGK3 association with vesicles by centrifuging the medium at 100,000 g, which would sediment vesicles, and see whether or not the SGK3 protein remains n the supernatant. Also, as is the case for the other fractionation experiments (see point 6 below), an aliquot of medium corresponding to the fraction of the cell lysate that was analyzed in parallel should be immunoprecipitated to provide the reader a sense of what percentage of the SGK3 population is \"secreted\". In this regard, it is clear from the figure that the efficiency of SGK3 \"secretion\" was a lot lower than that of FAM20C, which is a well authenticated secreted protein kinase.\n\n6. For the cell fractionation experiments shown in Figures 3 and 5, and elsewhere, it needs to be made clear in the Materials and methods whether the different fractions represent samples from the same number of cells or rather the same amount of protein. For a fair comparison, the proper way to do this is to normalize to the same number of cells.\n\n7. Figure 4A: Are the protein kinases with prominent IF signals at the nuclear periphery localized inside or outside the nucleus?\n\n8. Figure 5E: The MOK1 and MOK2 alternatively spliced isoforms should generate two proteins separated by ~3 kDa. However, only a single MOK band from the MOK-KI cells is arrowed here and in Figure S5H, and yet one would have expected two bands if MOK2 is expressed in these cells.\n\n9. Figures 6 and 7: It is not clear how the 20 kDa MOK isoform is generated, but since the 3X Flag tag was at the C-terminus, this form must contain the C-terminus of MOK1/2. Can the 20 kDa form be detected in the MOK-KI cells?\n\n10. Figure S7: MOK1 and MOK2 KR mutants were used in panel I, but these mutants are not described in the legend or in the Materials and methods. One assumes that these were designed as kinase-dead mutants -which Lys was mutated to Arg?\n\nReviewer #3:\n\nIn this manuscript, Zhang et al. describe the Kinome Atlas (KA), a map of the subcellular localization of 456 kinases representing 85% of the human kinome. The KA is based on experimentally acquired imaging data; the authors have assessed the localization of these kinases using immunofluorescence of overexpressed tagged cDNAs. Importantly, the authors define 10 subcellular compartments that are used to catalog each kinase based on their localization.\n\nUsing KA, the authors define the subcellular localization of a collection of kinases that had not been previously studied. In addition, they further report a particular subcellular pattern in some kinases, which the authors attribute to molecular condensates.\n\nAmong the novel kinases identified to localize in mitochondria, the authors decided to further characterize MOK. This kinase localized in the intermembrane space, due to the presence of two localization peptides and through a TOM20/TIM23-dependent mechanism. Moreover, knocking out MOK in cells resulted in decreased mitochondrial cristae, reduced oxygen consumption and ATP levels, and increased reactive oxygen species. The authors conclude that MOK plays an important role in mitochondrial function.\n\nOverall, this work is an important resource for many scientists interested in kinase biology because it represents a unique catalog assessing the subcellular localization of virtually all the kinome. The conclusions are well-supported by the data and the authors discover novel insights of poorly characterized kinases. Moreover, it is likely the KA will catalyze novel discoveries based on the unexpected subcellular localization of many kinases.\n\nThese are some of the concerns that I have found that require some additional clarification:\n\n1. Although the authors claim that KA has been obtained by a unified experimental approach, this does not seem to be the case. There is a significant number of cDNAs that have been expressed with either N or C-terminal tags, with different affinity tags, or are from different species. A more systematic approach to curate, tag, and express these kinases would yield a much more robust dataset. Along these lines, it would have been extraordinary to have curated the whole human kinome.\n\n2. When looking at the different kinases used in this work and their tags (Sup Table 1), it appears that the authors did not take into consideration the biology of each kinase when deciding whether to use an N- or C-terminal tag. Instead, it was decided based on the availability of Gateway entry clones (which some contain Stop codon, while others don't). For instance, several RTK are tagged at the N-terminal side (KIT, FGFR4, IGFR1, Tie2, and others), which is known to affect their localization, cleavage into the mature form, and interaction to ligands. This limitation has been addressed in some specific cases, where the authors have performed both N- and C-terminal tagging. However, in my opinion, because it is not possible to anticipate how tagging would affect the localization or biology of many kinases that contain regulatory motifs at the N/C terminal regions, the results from KA have to be interpreted with caution, since in some cases could be artifactual.\n\n3. While the authors have not really elucidated the mechanism and/or function of MOK in mitochondria, I believe that it is beyond the scope of this manuscript.\n\n4. Given how valuable these reagents could be for the scientific community, I would recommend that the library is deposited in a public repository (i.e. Addgene).\n\n5. I would recommend the authors to carefully review the list of kinases and their domain architecture and assess whether some of these should be repeated using a different tagging approach. If possible, including some of the protein kinases that are missing would make this resource even more important and useful to the scientific community.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"A subcellular map of the human kinome\" for consideration by eLife. I have read over your revised article and agree that you have addressed essentially all of the reviewers' concerns, including adding more experiments that were not requested. The paper is much improved and I am ready to accept it.\n\nI noticed a couple of points that you may wish to address before acceptance.\n\nFirst, regarding MAP4K3, you say the localization is overlapping with microtubules and ER (line 277, Figure 3F). This is not at all obvious from 3F, although the super resolution image in 3G shows excellent co-localization with Sec61. I wonder whether increasing the intensity of the red channel in the merge, and zooming in on region of apparent co-localization, would be helpful.\n\nSecond, regarding MOK, line 410, I think you mean that 0.5% digitonin does not permeabilize the IMM. Is there a citation to digitonin permeabilization, and what is the purpose of 0.1% Triton in the figure (it must permeabilize both membranes to allow antibody access but does not allow MOK to leak out). Please explain.\n\nThird, please double check grammar. I will ask staff to proof read carefully upon acceptance, but it will help if you make corrections yourself.\n\nCongratulations on the research. This paper will be a valuable resource for cell biology.\n",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "785f98f6-3e72-4807-9039-7925ad468af2",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C1",
+      "claim": "The human kinome comprises 538 kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "The human kinome comprises 538 kinases playing essential functions by catalyzing protein phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is a well-established fact in the field, supported by citation to Manning et al., 2002b in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "b0b22a23-e06c-4552-b8e6-49d0c5496131",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C2",
+      "claim": "456 epitope-tagged kinases, representing 85% of the human kinome, were expressed in HeLa cells and imaged by immunofluorescent microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "456 epitope-tagged kinases, representing 85% of the human kinome, were expressed in HeLa cells and imaged by immunofluorescent microscopy under a similar condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary methodological claim directly stated in the abstract and supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "f04ceec5-86cc-421e-95c0-de9099e13576",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C3",
+      "claim": "KA revealed kinase family-enriched subcellular localizations.",
+      "claim_type": "EXPLICIT",
+      "source": "KA revealed kinase family-enriched subcellular localizations and discovered a collection of new kinase localizations at mitochondria, plasma membrane, extracellular space, and other structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in Figure 1F and 1G showing family-based enrichment patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "22572e31-82e3-4382-8633-6a75895c5604",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C4",
+      "claim": "KA discovered a collection of new kinase localizations at mitochondria, plasma membrane, extracellular space, and other structures.",
+      "claim_type": "EXPLICIT",
+      "source": "KA revealed kinase family-enriched subcellular localizations and discovered a collection of new kinase localizations at mitochondria, plasma membrane, extracellular space, and other structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3 and 5, demonstrating novel localizations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "abd0ae3e-f5c1-415f-8f72-bbc1300f29f9",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C5",
+      "claim": "KA demonstrated the role of liquid-liquid phase separation in formation of kinase condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, KA demonstrated the role of liquid-liquid phase separation in formation of kinase condensates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 4 showing hexanediol sensitivity and fusion events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "39f940e7-7809-4672-976b-020e1434c380",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C6",
+      "claim": "MOK is a mitochondrial kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of MOK as a mitochondrial kinase revealed its function in cristae dynamics, respiration, and oxidative stress response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experiments including co-staining, fractionation, and functional assays shown in Figures 5, 6, and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "ff283e6e-0115-44c5-8f2c-268d6edf15c2",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C7",
+      "claim": "MOK functions in cristae dynamics, respiration, and oxidative stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of MOK as a mitochondrial kinase revealed its function in cristae dynamics, respiration, and oxidative stress response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electron microscopy, Seahorse analysis, and ROS measurements in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "310baff0-da8d-45d5-a16d-cb8d2bde569d",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C8",
+      "claim": "The kinome is encoded by about 2% of the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinome, encoded by about 2% of the human genome, is one of the largest superfamilies of homologous proteins consisting of 538 kinases (Manning et al., 2002b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Manning et al., 2002b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "3466caac-0e79-4637-9b42-164a80319d4d",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C9",
+      "claim": "Kinases catalyze the transfer of \u03b3-phosphate of ATP to the alcohol groups (on Ser and Thr) or phenolic groups (on Tyr) of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes catalyze the transfer of \u03b3-phosphate of ATP to the alcohol groups (on Ser and Thr) or phenolic groups (on Tyr) of proteins to generate phosphate monoesters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about kinase function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "9c52d900-f768-4f63-8505-8ef22f53cad2",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C10",
+      "claim": "Protein phosphorylation can alter substrate protein activity, subcellular localization, and interacting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the substrate protein could be altered in many ways, such as activity, subcellular localization, and interacting proteins (Cohen, 2002; Manning et al., 2002a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cohen, 2002 and Manning et al., 2002a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "84095bb3-53a7-4a17-b8c8-2c847d222ab5",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C11",
+      "claim": "Mutation and dysregulation of protein kinases are causal to many diseases such as cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation and dysregulation of protein kinases are causal to many diseases such as cancer (Greenman et al., 2007; Lahiry et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Greenman et al., 2007 and Lahiry et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "15eb4b59-a6a6-49d7-862a-0bafb49e355e",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C12",
+      "claim": "Kinases are among the most important targets for precision medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinases are also among the most important targets for precision medicine (Klaeger et al., 2017; Zhang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Klaeger et al., 2017 and Zhang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "d16e45e8-03d8-455b-be11-fae9ec57d8ec",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C13",
+      "claim": "464 protein kinase-encoding plasmids were constructed, representing 86.2% of the human kinome.",
+      "claim_type": "EXPLICIT",
+      "source": "464 protein kinase-encoding plasmids were got (Supplementary file 1), representing 86.2% of the human kinome, and covering each family similarly (Figure 1A, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim supported by the data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "30d85af1-18b6-4e48-a7fa-6a7e9868777f",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C14",
+      "claim": "95.1% of genes in the library are of human origin, and the rest are of mouse or rat origins.",
+      "claim_type": "EXPLICIT",
+      "source": "95.1% of genes in the library are of human origin, and the rest are of mouse or rat origins (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "b4441e71-7a9b-4047-8cb8-918bf9caba9d",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C15",
+      "claim": "46.8% of clones have Flag tag, 46.5% have tandem HA/Flag tags, 3.4% have HA tag, 2.4% have Myc tag, and 0.9% have GFP tag.",
+      "claim_type": "EXPLICIT",
+      "source": "All clones are epitope-tagged, with 46.8% in Flag tag, 46.5% in tandem HA/Flag tags, 3.4% in HA tag, 2.4% in Myc tag, and 0.9% in GFP tag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "19e06065-fa13-4539-a032-aa7387725d32",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C16",
+      "claim": "54.7% of the clones have epitope tags on the N-terminal, and 45.3% of clones are tagged on the C-terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "54.7% of the clones have epitope tags on the amino (N)-terminal, and 45.3% of clones are tagged on the carboxyl (C)-terminal (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "1c66156b-ad33-4e1f-aeb5-e084011d58c9",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C17",
+      "claim": "37% of plasmids showed high level of expression, 58.5% had medium or low expression, and 4.5% could not be detected.",
+      "claim_type": "EXPLICIT",
+      "source": "By western blotting, 37% of plasmids showed high level of expression, 58.5% had medium or low expression, and 4.5% could not be detected (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the western blotting data summarized in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "2cd6db79-d6af-4168-9c76-7a8e5ef82cc1",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C18",
+      "claim": "A total of 456 kinases were annotated, while the other 8 kinases were not detected.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 456 kinases were annotated, while the other 8 kinases were not detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental results from the imaging screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "6b5fe049-c164-4216-a1a8-fa0a08974683",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C19",
+      "claim": "About 50.2% of the kinome mainly localized in the cytosol, followed by 16.4% in nucleus, and 10.3% on plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initial screen, about 50.2% of the kinome mainly localized in the cytosol, followed by 16.4% in nucleus, and 10.3% on plasma membrane (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "03c34c20-799c-4a4c-9ed6-953c0c4c8341",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C20",
+      "claim": "77.5% of the STE family were in cytosol, significantly higher than other families.",
+      "claim_type": "EXPLICIT",
+      "source": "77.5% of the STE (homologues of yeast Ste7, Ste11, and Ste20 kinases) family were in cytosol, significantly higher than other families (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "96fec01a-7332-4225-b602-79ee113bc187",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C21",
+      "claim": "CMGC, atypical, and CAMK families were more enriched for nuclear kinases, 39.0, 34.5, and 30.2%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, CMGC (CDK, MAPK, GSK3, and CLK kinases), atypical, and calcium/calmodulin-dependent protein kinases (CAMK) families were more enriched for nuclear kinases, 39.0, 34.5, and 30.2%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis of family distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "71bb1016-6485-47f4-8e24-4cf29c1429bc",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C22",
+      "claim": "The TK family was enriched for kinases on the plasma membrane, largely due to the receptor tyrosine kinase (RTK) subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "The TK family was enriched for kinases on the plasma membrane, largely due to the receptor tyrosine kinase (RTK) subfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis and is consistent with known biology of RTKs.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "6046fd3b-32c8-4787-be7a-a8ec662bcbc9",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C23",
+      "claim": "The AGC family was overrepresented on the plasma membrane reflecting their functions in relaying extracellular signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The AGC (family of protein kinases A, G, and C) family was also overrepresented on the plasma membrane reflecting their functions in relaying extracellular signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data and known functions of AGC kinases.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "00bae6ec-e34d-4d06-9649-a3783322310c",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C24",
+      "claim": "Most mitochondrial kinases were in the atypical kinase family.",
+      "claim_type": "EXPLICIT",
+      "source": "Most mitochondrial kinases were in the atypical kinase family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis of family distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "90874893-f3a3-4b03-a639-3a1c83e1f978",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C25",
+      "claim": "The RGC and PKL families were largely formed by ER- and Golgi-localized kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the receptor guanylate cyclase (RGC) and PKL families were largely formed by ER- and Golgi-localized kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis of family distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "4110cf41-fda8-4235-9224-fd000e84c8e5",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C26",
+      "claim": "KA annotated 18 kinases on top of COMPARTMENTS and HPA.",
+      "claim_type": "EXPLICIT",
+      "source": "6 kinases were not covered by any of the three resources, and KA annotated 18 kinases on top of COMPARTMENTS and HPA (Figure 2A and Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "f706794c-81ee-4724-89d3-d18d80f1d394",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C27",
+      "claim": "Six kinases were annotated for the first time: STK32C, SBK2, STKLD1, TSSK1B, NME8, and SRPK3, which were all cytosolic in KA.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual literature search eliminated 12 kinases with at least one report, resulting in 6 kinases annotated for the first time, including STK32C, SBK2, STKLD1, TSSK1B, NME8, and SRPK3, which were all cytosolic in KA (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by literature search and the imaging data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "77563beb-bf5c-495e-96ed-915714fb8ebe",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C28",
+      "claim": "71.2% of kinases documented by both KA and COMPARTMENTS matched with one of the high-confidence localizations in COMPARTMENTS.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 337 kinases documented by both KA and COMPARTMENTS, 71.2% matched with one of the high-confidence localizations in COMPARTMENTS (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison analysis shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "fc19bbdd-c19d-4167-a629-0e9e75c161d4",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C29",
+      "claim": "74.8% of localizations were consistent between revised KA and COMPARTMENTS.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison between revised KA and COMPARTMENTS revealed 74.8% localizations were consistent (Figure 2C and Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "ff4060f2-4ccd-4ebe-a83d-41e6fc518dc3",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C30",
+      "claim": "KA uniquely annotated 103 kinase localizations different from other databases.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, KA uniquely annotated 103 kinase localizations different from other databases (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "bdccc7cc-57e7-4f99-9b2d-6bbca240fea7",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C31",
+      "claim": "These unique localizations were largely unpredictable by mainstream subcellular localization prediction tools such as WoLF PSORT and YLoc.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these localization were largely unpredictable by main stream subcellular localization prediction tools such as WoLF PSORT and YLoc (Briesemeister et al., 2010; Horton et al., 2007; Figure 2H and Supplementary file 6), suggesting new localization mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the prediction analysis shown in Figure 2H and citations to the prediction tools.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "7886f0de-a1b7-4fec-8769-cb8f6dc90b56",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C32",
+      "claim": "Seven kinases exhibited novel plasma membrane localization in KA: RPS6KA2, BRSK2, NIM1K, CSNK1G3, NLK, MAPK11, and FRK.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven kinases exhibited novel plasma membrane localization in KA (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data in Figure 3A and fractionation data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "f02f9495-4ce6-4c80-97df-914ca2984c64",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C33",
+      "claim": "RPS6KA2, BRSK2, NIM1K, CSNK1G3, and NLK were mainly membranous, while MAPK11 and FRK were partially in membrane fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular fraction confirmed that RPS6KA2, BRSK2, NIM1K, CSNK1G3, and NLK were mainly membranous, while MAPK11 and FRK were partially in membrane fractions (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the fractionation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "e3bf5605-3492-4e46-8779-ca504a2c14f2",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C34",
+      "claim": "POMK has an ER-related function in phosphorylating glycosylation-specific O-mannose and is mutated in dystroglycanopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "POMK has an ER-related function in phosphorylating glycosylation-specific O-mannose and is mutated in a neuromuscular disorder dystroglycanopathies (Di Costanzo et al., 2014; Yoshida-Moriguchi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Di Costanzo et al., 2014 and Yoshida-Moriguchi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "83096ae8-b5bf-4d96-8beb-1df5e7de8447",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C35",
+      "claim": "POMK localizes to the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "By co-expression with GFP-tagged SEC61B, an ER resident protein, we confirmed the ER localization of POMK (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the co-localization data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "422667eb-b2fc-4b57-aa0f-7217355d8ad2",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C36",
+      "claim": "SGK3 was enriched in vesicles around the Golgi, with lower expression in the Golgi itself.",
+      "claim_type": "EXPLICIT",
+      "source": "SGK3 was enriched in vesicles around the Golgi, with lower expression in the Golgi itself (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "e7017e47-12ef-4d2c-864c-d59f9ffe37c3",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C37",
+      "claim": "SGK3 colocalized with endosomal marker EEA1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SGK3 colocalized with endosomal marker EEA1 as previously reported (Xu et al., 2001; Figure 3D, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the co-localization data shown in Figure 3D and Figure 3\u2014figure supplement 1A, and citation to Xu et al., 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "d123fe6b-222f-470d-8791-418911ab0853",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C38",
+      "claim": "SGK3 is secreted to the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SGK3, but not other kinases examined, could be immunoprecipitated from culture medium (Figure 3E, Figure 3\u2014figure supplement 1B), indicating it was secreted, although at a much lower level than FAM20C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the immunoprecipitation data from culture medium shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "d4d7ec7e-fd06-494e-8d8d-d7ff3dabcee8",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C39",
+      "claim": "SGK3 secretion is not blocked by brefeldin A.",
+      "claim_type": "EXPLICIT",
+      "source": "First, treatment of cells with brefeldin A (BFA), an inhibitor of ER/Golgi\u2010trafficking (Misumi et al., 1986), blocked secretion of FAM20C, but not SGK3 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the BFA treatment data shown in Figure 3E and citation to Misumi et al., 1986.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "e25dc9ee-e2b0-4640-a743-7457c18521bb",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C40",
+      "claim": "SGK3 is enriched in exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, when exosomes were sedimented from medium by ultracentrifugation, SGK3 but not FAM20C was enriched in the pellet fraction (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ultracentrifugation data shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "b21280ef-352f-4815-86af-f9d4ea905dd4",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C41",
+      "claim": "SGK3 is a new exosomal kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SGK3 is a new exosomal kinase, which may mediate cellular communication with the microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing SGK3 in exosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "1ae93513-9eff-47e7-a607-6b108fc7b80a",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C42",
+      "claim": "MAP4K3 localizes to tubule-like structures that colocalize with microtubules and ER.",
+      "claim_type": "EXPLICIT",
+      "source": "We found MAP4K3 in tubule-like structures in KA. Co-staining indicated that MAP4K3 structures were colocalizing with a small fraction of microtubules (Figure 3F). These tubules were also non-overlapping with lysosomes even in amino acid starvation condition or in cells treated with vacuolin-1, a chemical that cause lysosome fusion and enlargement (Figure 3\u2014figure supplement 1E). However, MAP4K3 tubules were overlapping with ER (Figure 3F), which was confirmed by super-resolution microscopy (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the co-staining data shown in Figure 3F and 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "95ccb797-392c-418b-83c5-4d8e6fddee9a",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C43",
+      "claim": "MAP4K3 tubules are obvious in A549, Du 145, and H460 cells, all of which have mutation of the LKB1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MAP4K3 tubules were also obvious in A549, Du 145, and H460 cells, all of which, as well as HeLa cells, have mutation of the LKB1 gene, an upstream regulator of mTOR (Corradetti et al., 2004; Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 3H and citation to Corradetti et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "390f9b68-8137-480c-9e5e-b7e27317b517",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C44",
+      "claim": "MAP4K3 is mainly cytoplasmic with some small puncta in LKB1-wildtype COS-7, U-2 OS, and MCF10A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, MAP4K3 were mainly cytoplasmic with some small puncta in LKB1-wildtype COS-7, U-2 OS, and MCF10A cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "9f45bc2e-af18-47e5-aaf9-dec6296d8b7b",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C45",
+      "claim": "Restoration of LKB1 expression in H460 cells markedly inhibited MAP4K3 tubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, restoration of LKB1 expression in H460 cells markedly inhibited MAP4K3 tubules (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "1577e15f-2073-4259-9f3a-7fbe2339ae1a",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C46",
+      "claim": "VRK3, BRD3, CDK8, CDKL3, TRIM24, and RPS6KA4 were enriched in periphery regions of the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, TRIB1, CDK10, CDK7, HASPIN, and STK17A were evenly distributed in nucleoplasm, while VRK3, BRD3, CDK8, CDKL3, TRIM24, and RPS6KA4 were enriched in periphery regions of the nucleus (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "a24592f2-1d3a-4429-8824-6816ba6fd91a",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C47",
+      "claim": "All six nuclear peripheral kinases were found within the nuclear boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "By high-resolution microscopy, all six nuclear peripheral kinases were found within the nuclear boundary (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the high-resolution microscopy data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "014e7c34-eea4-41d7-a950-c6d6e1aa1d75",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C48",
+      "claim": "VRK3 phosphorylated nuclear envelope protein barrier-to-autointegration factor (BAF), thus played a role in cell cycle regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it was reported that VRK3 phosphorylated nuclear envelope protein barrier-to-autointegration factor (BAF), thus played a role in cell cycle regulation (Park et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Park et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "14c8cc33-b67c-4703-8238-376b792796f9",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C49",
+      "claim": "CDK13 and STK19 were found in structures reminiscent of nucleoli.",
+      "claim_type": "EXPLICIT",
+      "source": "Two kinases CDK13 and STK19 were found in structures reminiscent of nucleoli (Figure 4A), which was confirmed by co-staining with a nucleolar protein UTP25 (Figure 4\u2014figure supplement 1B), suggesting their potential roles in ribosome biogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 4A and co-staining data in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "081f8118-142e-4532-8c8b-bd67da689515",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C50",
+      "claim": "Nuclear puncta formed by TRIB3 and HIPK2, as well as cytoplasmic puncta of BMP2K and CIT were largely eliminated by 1,6-hexanediol.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear puncta formed by TRIB3 and HIPK2, as well as cytoplasmic puncta of BMP2K and CIT were largely eliminated by Hex (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the hexanediol treatment data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "90cd1867-dcd9-48ae-98c9-79f5fd476faf",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C51",
+      "claim": "Time-lapse live-cell imaging revealed frequent puncta movements and fusion events for TRIB3, HIPK2, and BMP2K.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse live-cell imaging revealed frequent puncta movements and fusion events for TRIB3, HIPK2, and BMP2K, demonstrating their dynamic and liquid-like properties (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the time-lapse imaging data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "7bc3fa47-2ee2-41d3-a11e-0ad19eeab0ca",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C52",
+      "claim": "HIPK2 and BMP2K have prion-like regions overlapping with IDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, among all kinases analyzed, HIPK2, and BMP2K uniquely have prion-like regions overlapping with IDRs, which are largely devoid of charged residues, but enriched for polar residues, and are frequently involved in LLPS (Figure 4D, Figure 4\u2014figure supplement 1F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the sequence analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "ba2caccc-abf6-4bc8-914d-482e56fbeade",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C53",
+      "claim": "Deletion of IDRs eliminated puncta of TRIB3 and BMP2K.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, deletion of IDRs eliminated puncta of TRIB3 and BMP2K, supporting IDR-mediated LLPS (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the deletion mutant data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "8c5b2111-d7ba-442f-b4e6-173f8c9799b8",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C54",
+      "claim": "Endogenous BMP2K forms cytoplasmic puncta that are eliminated by hexanediol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether BMP2K could form puncta through LLPS on endogenous expression level, we generated BMP2K 3xHA tag knock-in HeLa cells through CRISPR/Cas9-mediated recombination (Figure 4\u2014figure supplement 1I). Successful knock-in was confirmed by western blotting (Figure 4\u2014figure supplement 1J). Two types of BMP2K patterns were found, in cytoplasmic puncta or both in cytoplasmic puncta and nuclei (Figure 4F). Nuclear BMP2K was not observed in overexpression expression experiments and could be due to a different isoform. Importantly, cytoplasmic puncta of endogenous BMP2K were also eliminated by Hex treatment (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the knock-in cell data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "cedf8f0f-0b00-4098-91d7-575dbc30da67",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C55",
+      "claim": "KA recorded 22 kinases with some level of mitochondrial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "KA recorded 22 kinases with some level of mitochondrial localization (Figure 5A and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "fc2469f2-b354-499c-a938-03b6ca0c93cf",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C56",
+      "claim": "14 of the 22 mitochondrial kinases have been documented in mitochondrial proteome database MitoCarta2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "14 of them have been documented in mitochondrial proteome database MitoCarta2.0 (Calvo et al., 2016; Figure 5A), among which 6 were confirmed by co-staining with mitochondrial marker translocase of outer membrane 20 (TOM20) (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with MitoCarta2.0 database and citation to Calvo et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "f7e05cde-2ac2-402e-a76a-a4c63d84fa85",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C57",
+      "claim": "FASTK transcribed from an alternative start codon missing N-terminal 34 amino acids was mitochondrial.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that FASTK transcribed from an alternative start codon missing N-terminal 34 amino acids was mitochondrial (Jourdain et al., 2015), which we could confirm (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5\u2014figure supplement 1B and citation to Jourdain et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "7dabe631-876a-4c70-8cb9-fe1c2f124e6c",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C58",
+      "claim": "KA found eight new mitochondrial kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found eight new mitochondrial kinases, which were confirmed by co-staining with TOM20 (Figure 5A, C, Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the co-staining data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "21568c95-1de8-44fe-838a-7afb51938ef0",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C59",
+      "claim": "KA revealed five new mitochondrial kinases: MOK, LIMK2, PKN3, PRKCH, and TNK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, KA revealed five new mitochondrial kinases, MOK, LIMK2, PKN3, PRKCH, and TNK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings after comparison with databases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "2c81f53a-8aa1-4e24-804a-38e47e827a92",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C60",
+      "claim": "Endogenous MOK is present in mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous MOK was present in mitochondria. MOK 3x Flag knock-in HeLa cells were fractionated and examined by western blotting. W: whole cell lysate; N: nucleus; MI: mitochondria; C: cytosol. Lamin A/C, MT-CO2, and Actin are nuclear, mitochondrial, and cytosolic markers, respectively. Equal loading was achieved by normalizing to the same number of cells. Arrowheads indicate MOK (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the fractionation data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "cb72ee66-2ef1-4892-8336-f954ad08f000",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C61",
+      "claim": "MOK, TNK1, and RPS6KA6 signals were wrapped around by TOM20, indicating transportation into mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 3D structured illumination microscopy (3D-SIM), we found that signals of MOK, TNK1, and RPS6KA6 were wrapped around by TOM20, an OMM protein (Figure 6A), indicating transportation into mitochondria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the 3D-SIM data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "be1512c7-489e-4ed4-a55e-f46d2004122c",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C62",
+      "claim": "LIMK2 was in puncta partially colocalizing with TOM20, indicating that LIMK2 decorated the outer surface of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, LIMK2 was in puncta partially colocalizing with TOM20, indicating that LIMK2 decorated the outer surface of mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the 3D-SIM data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "beacf1b7-ac35-4b8e-9371-de4e83b87523",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C63",
+      "claim": "MOK2 is imported into mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "MOK2 is imported into mitochondria. Transfected HeLa cells were fixed and permeabilized with digitonin or Triton X-100 before staining.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the differential permeabilization data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "4a28847e-c389-498b-86a5-a580502d53a6",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C64",
+      "claim": "MOK is not a mitochondrial membrane protein.",
+      "claim_type": "EXPLICIT",
+      "source": "MOK is not a mitochondrial membrane protein. Mitochondria purified from transfected HeLa cells were incubated in indicated buffers, and then centrifuged. Supernatants (S) and pellets (P) were analyzed by western blotting. Equal loading was achieved by normalizing to the same number of cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the extraction data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "b5567551-82f4-4f7b-8009-ec1f126f9c8f",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C65",
+      "claim": "MOK is an IMS protein.",
+      "claim_type": "EXPLICIT",
+      "source": "MOK is an IMS protein. COS-7 cells transfected with MOK2-GFP were imaged by Hessian SIM. MitoTracker Red marked inner membrane (IMM) and co-transfected HSP60-mCherry marked matrix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple lines of evidence including permeabilization, extraction, and super-resolution imaging shown in Figures 6B, 6C, and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "3fe6c6dd-de58-45c7-b61f-2e9798f8465f",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C66",
+      "claim": "MOK2 has better mitochondrial localization than MOK1.",
+      "claim_type": "EXPLICIT",
+      "source": "MOK2 has better mitochondrial localization than MOK1. HeLa cells were transfected with full-length (FL) or kinase domain (KD) of MOK1 and MOK2. Cells with mitochondrial MOK were quantified. Data is represented as mean \u00b1 SD; n = 3 independent experiments, two-tailed Student's t test; n = 100 cells were analyzed in each experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the quantification data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "216d6e57-823f-44c0-b11a-868ab9566b95",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C67",
+      "claim": "Two peptides 53\u2013103 and 301\u2013330 of MOK2 mediated the mitochondrial localization of MOK.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, two peptides 53\u2013103 and 301\u2013330 of MOK2 mediated the mitochondrial localization of MOK (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the deletion mutant analysis shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "03fadcba-caa3-4fe5-bd78-a23c91b7725a",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C68",
+      "claim": "shRNA-mediated knockdown of TOM20 but not TOM70 blocked mitochondrial localization of MOK.",
+      "claim_type": "EXPLICIT",
+      "source": "shRNA-mediated knockdown of precursor receptor TOM20 but not TOM70 blocked mitochondrial localization of MOK, suggesting TOM20 as a receptor for MOK importing (Figure 6G, Figure 6\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the knockdown data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "e377dfc5-8eef-4687-a805-25aed55c58bc",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C69",
+      "claim": "Knockdown of TIM23, TIM17A, and TIM50 eliminated mitochondrial MOK.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, knockdown of TIM23, TIM17A, and TIM50 in the same complex, but not TIM22 and TIM9, eliminated mitochondrial MOK (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the knockdown data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "796fa148-134a-444a-8f12-a0901f524690",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C70",
+      "claim": "Knockdown of HSPA9 suppressed MOK mitochondrial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of HSPA9, which is responsible for translocation of matrix protein downstream of the TIM23 complex, also suppressed MOK mitochondrial localization (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the knockdown data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "9e97061a-7081-43b2-8298-8434a97802e1",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C71",
+      "claim": "MOK and its kinase domain physically interacted with TOM20 and TIM23.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, by co-immunoprecipitation, we confirmed that MOK and its kinase domain physically interacted with TOM20 and TIM23 (Figure 6\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the co-immunoprecipitation data shown in Figure 6\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "198473bf-c12e-4dae-b5eb-2dac044af6ea",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C72",
+      "claim": "MOK is an IMS protein imported by a TOM20-TIM23-dependent mechanism independent of classical mitochondrial importing signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, MOK is an IMS protein imported by a TOM20-TIM23-dependent mechanism independent of classical mitochondrial importing signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "d32a69bc-11d0-4780-b4f3-eb884e1fbcc4",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C73",
+      "claim": "The number of cristae markedly reduced in MOK KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron microscopy revealed that while mitochondria length remained normal, the number of cristae markedly reduced in MOK KO cells (Figure 7A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the electron microscopy data shown in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "6cdc1d88-659f-44cc-96d8-42a3fe74f5ff",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C74",
+      "claim": "The cristae defect in MOK KO cells could be rescued by re-expression of MOK1 or MOK2.",
+      "claim_type": "EXPLICIT",
+      "source": "This defect could be rescued by re-expression of MOK1 or MOK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the rescue experiment data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "62d631a2-4633-49db-9777-6a38eca9e384",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C75",
+      "claim": "Oxygen consumption rates for both basal respiration and ATP production were reduced in MOK KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cristae have a pivotal role in generating ATP (Cogliati et al., 2013). Indeed, oxygen consumption rates (OCRs) for both basal respiration and ATP production were reduced in MOK KO cells (Figure 7C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Seahorse analysis data shown in Figure 7C and 7D, and citation to Cogliati et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "cbff9425-7976-47c6-840d-b81a9fc13f1c",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C76",
+      "claim": "Re-expression of MOK2 rescued mitochondrial respiration in MOK KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-expression of MOK2 rescued mitochondrial respiration, while rescue by MOK1 was statistically insignificant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the rescue experiment data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "71f8f4d7-83d0-4bcb-b805-27b4e774eb0b",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C77",
+      "claim": "Knockout of MOK reduced cellular ATP level.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, knockout of MOK reduced cellular ATP level, which could be rescued by MOK2, but not MOK1 (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ATP measurement data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "fe142f89-12fc-4e33-b668-1baec706f9f7",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C78",
+      "claim": "ROS level was higher in MOK KO cells under basal condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Under basal condition, ROS level was higher in MOK KO cells, but was rescued by expression of MOK1 and MOK2 (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ROS measurement data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "ead28013-7ed1-4a44-8be0-3d26a58623a4",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C79",
+      "claim": "Oxidative stress induced by diamide caused more apoptosis in MOK KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, oxidative stress induced by diamide caused more apoptosis in MOK KO cells (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the apoptosis assay data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "5ae90164-d1ab-4a86-80f2-2c30fa0410d6",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C80",
+      "claim": "MOK2 was kinase inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Using in vitro autophosphorylation as an assay, we confirmed that MOK2 was kinase inactive (Figure 7\u2014figure supplement 1I), consistent with its incomplete kinase domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the in vitro kinase assay data shown in Figure 7\u2014figure supplement 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "9ec349a3-54b0-43c6-a43f-87d9561d5779",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C81",
+      "claim": "MOK played a functional role in mitochondria in an activity-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, MOK2 not only had better mitochondrial localization than MOK1, but also rescued mitochondrial structure and functions in KO cells. Thus, MOK played a functional role in mitochondria in an activity-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that kinase-inactive MOK2 rescued mitochondrial defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "f1896b8c-5812-4b07-bb29-0b80d895df58",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C82",
+      "claim": "About 20% of proteins co-purified with MOK were mitochondrial proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry revealed that about 20% of proteins co-purified with MOK were mitochondrial proteins, including mitochondrial ribosomal proteins, solute carriers, oxidative phosphorylation-related proteins, and chaperones (Figure 7\u2014figure supplement 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TAP-MS data shown in Figure 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "4a0425da-1fdf-4f13-9fe8-f9b5b80f0cd6",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C83",
+      "claim": "MOK interacts with ATAD3A, SLC25A13, and SLC25A11.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation confirmed interactions of MOK with IMM protein ATAD3A and solute carriers SLC25A13 and SLC25A11 (Figure 7I, Figure 7\u2014figure supplement 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the co-immunoprecipitation data shown in Figure 7I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "800d7c11-1b80-4b14-a91a-c3588d568359",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C84",
+      "claim": "ATAD3A has important functions in mitochondrial structure dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "ATAD3A spans OMM and IMM with two transmembrane regions (Gilquin et al., 2010), and has important functions in mitochondrial structure dynamics (Cooper et al., 2017; He et al., 2012; Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gilquin et al., 2010; Cooper et al., 2017; He et al., 2012; Zhao et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "2227831c-9d6f-4d64-9f82-20d8737c882b",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C85",
+      "claim": "ATAD3A knockdown cells exhibited reduced cristae number.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ATAD3A knockdown cells also exhibited reduced cristae number (Figure 7J, K, Figure 7\u2014figure supplement 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the electron microscopy data shown in Figure 7J and 7K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "929cd7a7-b65d-4aa1-844b-0cb7d6735724",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C86",
+      "claim": "19.1% (87/456) of kinases had only one localization.",
+      "claim_type": "EXPLICIT",
+      "source": "19.1% (87/456) of kinases had only one localization, 72.4% (330/456) had a specific major localization (score \u22655), and 8.5% (39/456) were multi-localizing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the localization data from KA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "79ae74c6-87e6-4e05-9124-f6f8b4d57ed5",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C87",
+      "claim": "72.4% (330/456) of kinases had a specific major localization (score \u22655).",
+      "claim_type": "EXPLICIT",
+      "source": "19.1% (87/456) of kinases had only one localization, 72.4% (330/456) had a specific major localization (score \u22655), and 8.5% (39/456) were multi-localizing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the localization data from KA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "59e7aee6-73de-4c5c-8f6d-b8d13de8c317",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C88",
+      "claim": "8.5% (39/456) of kinases were multi-localizing.",
+      "claim_type": "EXPLICIT",
+      "source": "19.1% (87/456) of kinases had only one localization, 72.4% (330/456) had a specific major localization (score \u22655), and 8.5% (39/456) were multi-localizing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the localization data from KA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "26606d4f-6b4f-47ad-9f38-84f0ae9ff6cf",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C89",
+      "claim": "38.2% of specific nuclear kinases had uneven localizations with puncta in varying size under overexpression condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In KA, we found that 38.2% of specific nuclear kinases had uneven localizations with puncta in varying size under overexpression condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observation from KA imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "a273fc9d-81e8-4e15-a986-ab124dcabf4f",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C90",
+      "claim": "BMP2K was mutated in the IDR in developmental dysplasia of the hip (DDH) and high myopia diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, BMP2K was mutated in the IDR in developmental dysplasia of the hip (DDH) and high myopia diseases (Liu et al., 2009; Zhao et al., 2017), suggesting functional roles of LLPS in BMP2K regulation and functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Liu et al., 2009 and Zhao et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "14bcfbbe-37dc-4a87-b744-462eaef16a21",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C91",
+      "claim": "The mRNA level of MOK is much higher in spermatocytes and round spermatids compared with other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with other tissues, the mRNA level of MOK is much higher in spermatocytes and round spermatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion but the source of this data is not explicitly cited.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "c160462f-af0a-4b27-8a76-70e184c479f2",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "claim_id": "C92",
+      "claim": "MOK expression is elevated in cancer, such as in cholangiocarcinoma and skin cutaneous melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, elevated expression of MOK in cancer, such as in cholangiocarcinoma, and skin cutaneous melanoma (http://firebrowse.org/), also suggests a functional role in tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to the firebrowse.org database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f681aadb-ea66-43d3-b4f0-7b88157ffff5",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the human kinome, establishing that it comprises 538 kinases encoded by ~2% of the genome, catalyzes protein phosphorylation, and is important for disease and precision medicine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C12 are well-established facts in the field, supported by appropriate citations to Manning et al., Cohen, Greenman et al., Lahiry et al., Klaeger et al., and Zhang et al. These represent accepted knowledge rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "48df1698-cc5b-4c63-afb1-792150eed179",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors constructed a kinome plasmid library of 464 kinases (86.2% coverage) with various epitope tags and positions, expressed them in HeLa cells, and successfully annotated 456 kinases to subcellular compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C13-C18 describe the core methodology and are supported by data in Figures 1A-C and Supplementary files. The library composition, expression levels, and annotation success are clearly documented. This represents a substantial technical achievement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "3ecab781-3f86-4807-b8d9-6e6724b7ed0b",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "KA revealed family-enriched subcellular localizations, with 50.2% of kinases in cytosol, 16.4% in nucleus, and 10.3% on plasma membrane, and specific enrichment patterns for kinase families (e.g., STE in cytosol, CMGC/atypical/CAMK in nucleus, TK/AGC on plasma membrane).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19-C25 are supported by data in Figures 1E-G and Figure 1\u2014figure supplement 1D. The family-based enrichment patterns are clearly demonstrated through clustering analysis and kinome tree visualization. This represents a novel systematic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "d0ef81a3-948d-448e-9029-6260e52ef06f",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KA complements existing databases (COMPARTMENTS and HPA) by annotating 18 additional kinases, including 6 first-time annotations, with 74.8% consistency with COMPARTMENTS and 103 unique localizations that are largely unpredictable by computational tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 are supported by comparison analyses in Figures 2A-H. The Venn diagrams, heatmaps, and prediction analyses clearly demonstrate KA's complementary value. However, the authors acknowledge potential mislocalization due to overexpression/tagging, which is an important caveat.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "7dfb050a-83a4-4c5f-8bc1-f1fdf2c39837",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "KA identified seven kinases with novel plasma membrane localization (RPS6KA2, BRSK2, NIM1K, CSNK1G3, NLK, MAPK11, FRK) and confirmed POMK localization to the ER.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C33, C35 are supported by imaging data in Figure 3A and fractionation data in Figure 3B-C. The plasma membrane localizations were validated by cellular fractionation, and ER localization was confirmed by co-staining with SEC61B. These represent novel findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "964396cd-7236-4a70-a9bc-0392809f3123",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SGK3 was identified as a new exosomal kinase that is secreted via a brefeldin A-insensitive, unconventional pathway and enriched in exosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 are supported by imaging (Figure 3D), immunoprecipitation from culture medium (Figure 3E), BFA treatment, and ultracentrifugation data (Figure 3\u2014figure supplement 1D). The evidence converges to support SGK3 as an exosomal kinase, though the functional significance remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "b053bace-14e5-404e-b956-2107e22656c9",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MAP4K3 localizes to tubule-like structures that colocalize with microtubules and ER in LKB1-mutant cells, and this localization is inhibited by LKB1 restoration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by co-staining data (Figures 3F-G), cell-type comparison (Figure 3H), and LKB1 rescue experiments (Figure 3I). The super-resolution microscopy confirms ER colocalization. The LKB1-dependent regulation is clearly demonstrated, though the mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "46b0359d-4058-43f3-8484-c9a93f80865e",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "KA identified kinases with distinct sub-nuclear patterns, including six kinases enriched at the nuclear periphery and two kinases (CDK13, STK19) localized to nucleoli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C47, C49 are supported by imaging data in Figure 4A, high-resolution microscopy (Figure 4\u2014figure supplement 1A), and co-staining with nucleolar marker UTP25 (Figure 4\u2014figure supplement 1B). These represent novel sub-compartment localizations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "dbb55741-cc38-4d31-aefc-0132128814b8",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TRIB3, HIPK2, BMP2K, and CIT form liquid-like condensates that are sensitive to hexanediol, exhibit fusion events, and depend on intrinsically disordered regions (IDRs) with prion-like domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by hexanediol treatment (Figure 4B), time-lapse imaging showing fusion (Figure 4C), sequence analysis (Figure 4D), deletion mutant experiments (Figure 4E), and endogenous BMP2K knock-in validation (Figure 4F). The evidence strongly supports LLPS-mediated condensate formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "beac8757-6683-43b0-8c99-af3c69b41e50",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "KA identified five new mitochondrial kinases (MOK, LIMK2, PKN3, PRKCH, TNK1) beyond the 14 documented in MitoCarta2.0, with validation by co-staining and fractionation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C56, C58-C60 are supported by imaging data (Figures 5A, C), comparison with MitoCarta2.0, co-staining with TOM20, and fractionation of endogenous MOK from knock-in cells (Figure 5E). The identification of new mitochondrial kinases is a significant finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "07e050b4-1c7b-40f1-bcf5-2266230e69b0",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MOK is localized to the mitochondrial intermembrane space (IMS), as demonstrated by 3D-SIM showing wrapping by TOM20, differential permeabilization, alkaline extraction, and super-resolution imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by multiple complementary techniques: 3D-SIM (Figure 6A), digitonin/Triton permeabilization (Figure 6B), alkaline carbonate extraction (Figure 6C), and Hessian SIM (Figure 6D). The convergent evidence strongly supports IMS localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "2c3ef09f-b832-449a-8843-8058232b608b",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MOK is imported into mitochondria via a TOM20-TIM23-dependent mechanism involving two peptide sequences (53-103 and 301-330) but independent of classical mitochondrial targeting signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72 are supported by isoform comparison (Figure 6E), deletion mapping (Figure 6F), shRNA knockdown of import machinery components (Figure 6G), and co-immunoprecipitation with TOM20/TIM23 (Figure 6\u2014figure supplement 1G). The evidence demonstrates a novel import mechanism, though some mechanistic details remain unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "d916e44e-4f37-48b5-ab0e-4c5ccb31495f",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MOK knockout reduces mitochondrial cristae number and impairs mitochondrial respiration and ATP production, with rescue by MOK2 re-expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 are supported by electron microscopy (Figures 7A-B), Seahorse analysis (Figures 7C-D), and ATP measurements (Figure 7E). The rescue experiments demonstrate specificity. Statistical significance is reported for key comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "74cb61f2-1898-48eb-bce4-baa65d3dcd54",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MOK knockout increases basal ROS levels and sensitizes cells to oxidative stress-induced apoptosis, with rescue by MOK1 and MOK2 re-expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are supported by ROS measurements (Figure 7F) and apoptosis assays (Figure 7G). The rescue experiments demonstrate specificity. This extends the functional characterization of MOK beyond cristae and respiration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "64050c96-9cd6-4f8c-8dc0-1ce9b5c0c91f",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "MOK2 is kinase-inactive but rescues mitochondrial defects better than MOK1, indicating that MOK functions in mitochondria in an activity-independent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 are supported by in vitro kinase assays (Figure 7\u2014figure supplement 1I) and rescue experiments showing MOK2 rescues cristae, respiration, and ATP levels despite lacking kinase activity. This is a surprising and important mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "052533b6-1d95-441d-badb-3bb81eeaaf06",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "MOK interacts with mitochondrial proteins including ATAD3A, SLC25A13, and SLC25A11, and ATAD3A knockdown phenocopies MOK knockout in reducing cristae number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 are supported by TAP-MS (Figure 7H), co-immunoprecipitation (Figure 7I), and ATAD3A knockdown experiments (Figures 7J-K). The ATAD3A phenocopy supports a functional connection, though the precise mechanism remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "db4be37b-6ea9-49fc-a7bf-8ff57b06f09c",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The KA dataset shows that 19.1% of kinases have single localization, 72.4% have a specific major localization, and 8.5% are multi-localizing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 summarize the overall distribution patterns in KA and are supported by the complete dataset in Supplementary file 2. This provides a quantitative overview of kinome localization diversity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "c597925c-29a4-454f-a9af-ea6a87b09f61",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "38.2% of specific nuclear kinases exhibit uneven localization with puncta of varying sizes under overexpression conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is a summary observation from the KA imaging data. While supported by the dataset, the authors acknowledge that overexpression may contribute to puncta formation, which is an important caveat for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    },
+    {
+      "id": "5a800e11-cfba-49fb-bdc9-f3d13f9b9b96",
+      "content_id": "b291cc78-6db9-4df7-945e-5e7eda72ad5d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "KA discovered 103 kinase localizations different from existing databases that are largely unpredictable by computational tools, suggesting novel localization mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C30, C31 are supported by database comparisons (Figure 2G) and prediction analyses (Figure 2H). The unpredictability by WoLF PSORT and YLoc suggests these localizations involve non-canonical mechanisms. However, validation at endogenous levels is needed for many of these.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:41.541204Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "785f98f6-3e72-4807-9039-7925ad468af2",
+      "result_id": "f681aadb-ea66-43d3-b4f0-7b88157ffff5"
+    },
+    {
+      "claim_id": "310baff0-da8d-45d5-a16d-cb8d2bde569d",
+      "result_id": "f681aadb-ea66-43d3-b4f0-7b88157ffff5"
+    },
+    {
+      "claim_id": "3466caac-0e79-4637-9b42-164a80319d4d",
+      "result_id": "f681aadb-ea66-43d3-b4f0-7b88157ffff5"
+    },
+    {
+      "claim_id": "9c52d900-f768-4f63-8505-8ef22f53cad2",
+      "result_id": "f681aadb-ea66-43d3-b4f0-7b88157ffff5"
+    },
+    {
+      "claim_id": "84095bb3-53a7-4a17-b8c8-2c847d222ab5",
+      "result_id": "f681aadb-ea66-43d3-b4f0-7b88157ffff5"
+    },
+    {
+      "claim_id": "15eb4b59-a6a6-49d7-862a-0bafb49e355e",
+      "result_id": "f681aadb-ea66-43d3-b4f0-7b88157ffff5"
+    },
+    {
+      "claim_id": "b0b22a23-e06c-4552-b8e6-49d0c5496131",
+      "result_id": "48df1698-cc5b-4c63-afb1-792150eed179"
+    },
+    {
+      "claim_id": "d16e45e8-03d8-455b-be11-fae9ec57d8ec",
+      "result_id": "48df1698-cc5b-4c63-afb1-792150eed179"
+    },
+    {
+      "claim_id": "30d85af1-18b6-4e48-a7fa-6a7e9868777f",
+      "result_id": "48df1698-cc5b-4c63-afb1-792150eed179"
+    },
+    {
+      "claim_id": "b4441e71-7a9b-4047-8cb8-918bf9caba9d",
+      "result_id": "48df1698-cc5b-4c63-afb1-792150eed179"
+    },
+    {
+      "claim_id": "19e06065-fa13-4539-a032-aa7387725d32",
+      "result_id": "48df1698-cc5b-4c63-afb1-792150eed179"
+    },
+    {
+      "claim_id": "1c66156b-ad33-4e1f-aeb5-e084011d58c9",
+      "result_id": "48df1698-cc5b-4c63-afb1-792150eed179"
+    },
+    {
+      "claim_id": "2cd6db79-d6af-4168-9c76-7a8e5ef82cc1",
+      "result_id": "48df1698-cc5b-4c63-afb1-792150eed179"
+    },
+    {
+      "claim_id": "f04ceec5-86cc-421e-95c0-de9099e13576",
+      "result_id": "3ecab781-3f86-4807-b8d9-6e6724b7ed0b"
+    },
+    {
+      "claim_id": "6b5fe049-c164-4216-a1a8-fa0a08974683",
+      "result_id": "3ecab781-3f86-4807-b8d9-6e6724b7ed0b"
+    },
+    {
+      "claim_id": "03c34c20-799c-4a4c-9ed6-953c0c4c8341",
+      "result_id": "3ecab781-3f86-4807-b8d9-6e6724b7ed0b"
+    },
+    {
+      "claim_id": "96fec01a-7332-4225-b602-79ee113bc187",
+      "result_id": "3ecab781-3f86-4807-b8d9-6e6724b7ed0b"
+    },
+    {
+      "claim_id": "71bb1016-6485-47f4-8e24-4cf29c1429bc",
+      "result_id": "3ecab781-3f86-4807-b8d9-6e6724b7ed0b"
+    },
+    {
+      "claim_id": "6046fd3b-32c8-4787-be7a-a8ec662bcbc9",
+      "result_id": "3ecab781-3f86-4807-b8d9-6e6724b7ed0b"
+    },
+    {
+      "claim_id": "00bae6ec-e34d-4d06-9649-a3783322310c",
+      "result_id": "3ecab781-3f86-4807-b8d9-6e6724b7ed0b"
+    },
+    {
+      "claim_id": "90874893-f3a3-4b03-a639-3a1c83e1f978",
+      "result_id": "3ecab781-3f86-4807-b8d9-6e6724b7ed0b"
+    },
+    {
+      "claim_id": "4110cf41-fda8-4235-9224-fd000e84c8e5",
+      "result_id": "d0ef81a3-948d-448e-9029-6260e52ef06f"
+    },
+    {
+      "claim_id": "f706794c-81ee-4724-89d3-d18d80f1d394",
+      "result_id": "d0ef81a3-948d-448e-9029-6260e52ef06f"
+    },
+    {
+      "claim_id": "77563beb-bf5c-495e-96ed-915714fb8ebe",
+      "result_id": "d0ef81a3-948d-448e-9029-6260e52ef06f"
+    },
+    {
+      "claim_id": "fc19bbdd-c19d-4167-a629-0e9e75c161d4",
+      "result_id": "d0ef81a3-948d-448e-9029-6260e52ef06f"
+    },
+    {
+      "claim_id": "ff4060f2-4ccd-4ebe-a83d-41e6fc518dc3",
+      "result_id": "d0ef81a3-948d-448e-9029-6260e52ef06f"
+    },
+    {
+      "claim_id": "bdccc7cc-57e7-4f99-9b2d-6bbca240fea7",
+      "result_id": "d0ef81a3-948d-448e-9029-6260e52ef06f"
+    },
+    {
+      "claim_id": "7886f0de-a1b7-4fec-8769-cb8f6dc90b56",
+      "result_id": "7dfb050a-83a4-4c5f-8bc1-f1fdf2c39837"
+    },
+    {
+      "claim_id": "f02f9495-4ce6-4c80-97df-914ca2984c64",
+      "result_id": "7dfb050a-83a4-4c5f-8bc1-f1fdf2c39837"
+    },
+    {
+      "claim_id": "83096ae8-b5bf-4d96-8beb-1df5e7de8447",
+      "result_id": "7dfb050a-83a4-4c5f-8bc1-f1fdf2c39837"
+    },
+    {
+      "claim_id": "422667eb-b2fc-4b57-aa0f-7217355d8ad2",
+      "result_id": "964396cd-7236-4a70-a9bc-0392809f3123"
+    },
+    {
+      "claim_id": "e7017e47-12ef-4d2c-864c-d59f9ffe37c3",
+      "result_id": "964396cd-7236-4a70-a9bc-0392809f3123"
+    },
+    {
+      "claim_id": "d123fe6b-222f-470d-8791-418911ab0853",
+      "result_id": "964396cd-7236-4a70-a9bc-0392809f3123"
+    },
+    {
+      "claim_id": "d4d7ec7e-fd06-494e-8d8d-d7ff3dabcee8",
+      "result_id": "964396cd-7236-4a70-a9bc-0392809f3123"
+    },
+    {
+      "claim_id": "e25dc9ee-e2b0-4640-a743-7457c18521bb",
+      "result_id": "964396cd-7236-4a70-a9bc-0392809f3123"
+    },
+    {
+      "claim_id": "b21280ef-352f-4815-86af-f9d4ea905dd4",
+      "result_id": "964396cd-7236-4a70-a9bc-0392809f3123"
+    },
+    {
+      "claim_id": "1ae93513-9eff-47e7-a607-6b108fc7b80a",
+      "result_id": "b053bace-14e5-404e-b956-2107e22656c9"
+    },
+    {
+      "claim_id": "95ccb797-392c-418b-83c5-4d8e6fddee9a",
+      "result_id": "b053bace-14e5-404e-b956-2107e22656c9"
+    },
+    {
+      "claim_id": "390f9b68-8137-480c-9e5e-b7e27317b517",
+      "result_id": "b053bace-14e5-404e-b956-2107e22656c9"
+    },
+    {
+      "claim_id": "9f45bc2e-af18-47e5-aaf9-dec6296d8b7b",
+      "result_id": "b053bace-14e5-404e-b956-2107e22656c9"
+    },
+    {
+      "claim_id": "1577e15f-2073-4259-9f3a-7fbe2339ae1a",
+      "result_id": "46b0359d-4058-43f3-8484-c9a93f80865e"
+    },
+    {
+      "claim_id": "a24592f2-1d3a-4429-8824-6816ba6fd91a",
+      "result_id": "46b0359d-4058-43f3-8484-c9a93f80865e"
+    },
+    {
+      "claim_id": "14c8cc33-b67c-4703-8238-376b792796f9",
+      "result_id": "46b0359d-4058-43f3-8484-c9a93f80865e"
+    },
+    {
+      "claim_id": "081f8118-142e-4532-8c8b-bd67da689515",
+      "result_id": "dbb55741-cc38-4d31-aefc-0132128814b8"
+    },
+    {
+      "claim_id": "90cd1867-dcd9-48ae-98c9-79f5fd476faf",
+      "result_id": "dbb55741-cc38-4d31-aefc-0132128814b8"
+    },
+    {
+      "claim_id": "7bc3fa47-2ee2-41d3-a11e-0ad19eeab0ca",
+      "result_id": "dbb55741-cc38-4d31-aefc-0132128814b8"
+    },
+    {
+      "claim_id": "ba2caccc-abf6-4bc8-914d-482e56fbeade",
+      "result_id": "dbb55741-cc38-4d31-aefc-0132128814b8"
+    },
+    {
+      "claim_id": "8c5b2111-d7ba-442f-b4e6-173f8c9799b8",
+      "result_id": "dbb55741-cc38-4d31-aefc-0132128814b8"
+    },
+    {
+      "claim_id": "cedf8f0f-0b00-4098-91d7-575dbc30da67",
+      "result_id": "beac8757-6683-43b0-8c99-af3c69b41e50"
+    },
+    {
+      "claim_id": "fc2469f2-b354-499c-a938-03b6ca0c93cf",
+      "result_id": "beac8757-6683-43b0-8c99-af3c69b41e50"
+    },
+    {
+      "claim_id": "7dabe631-876a-4c70-8cb9-fe1c2f124e6c",
+      "result_id": "beac8757-6683-43b0-8c99-af3c69b41e50"
+    },
+    {
+      "claim_id": "21568c95-1de8-44fe-838a-7afb51938ef0",
+      "result_id": "beac8757-6683-43b0-8c99-af3c69b41e50"
+    },
+    {
+      "claim_id": "2c81f53a-8aa1-4e24-804a-38e47e827a92",
+      "result_id": "beac8757-6683-43b0-8c99-af3c69b41e50"
+    },
+    {
+      "claim_id": "cb72ee66-2ef1-4892-8336-f954ad08f000",
+      "result_id": "07e050b4-1c7b-40f1-bcf5-2266230e69b0"
+    },
+    {
+      "claim_id": "be1512c7-489e-4ed4-a55e-f46d2004122c",
+      "result_id": "07e050b4-1c7b-40f1-bcf5-2266230e69b0"
+    },
+    {
+      "claim_id": "beacf1b7-ac35-4b8e-9371-de4e83b87523",
+      "result_id": "07e050b4-1c7b-40f1-bcf5-2266230e69b0"
+    },
+    {
+      "claim_id": "4a28847e-c389-498b-86a5-a580502d53a6",
+      "result_id": "07e050b4-1c7b-40f1-bcf5-2266230e69b0"
+    },
+    {
+      "claim_id": "b5567551-82f4-4f7b-8009-ec1f126f9c8f",
+      "result_id": "07e050b4-1c7b-40f1-bcf5-2266230e69b0"
+    },
+    {
+      "claim_id": "3fe6c6dd-de58-45c7-b61f-2e9798f8465f",
+      "result_id": "2c3ef09f-b832-449a-8843-8058232b608b"
+    },
+    {
+      "claim_id": "216d6e57-823f-44c0-b11a-868ab9566b95",
+      "result_id": "2c3ef09f-b832-449a-8843-8058232b608b"
+    },
+    {
+      "claim_id": "03fadcba-caa3-4fe5-bd78-a23c91b7725a",
+      "result_id": "2c3ef09f-b832-449a-8843-8058232b608b"
+    },
+    {
+      "claim_id": "e377dfc5-8eef-4687-a805-25aed55c58bc",
+      "result_id": "2c3ef09f-b832-449a-8843-8058232b608b"
+    },
+    {
+      "claim_id": "796fa148-134a-444a-8f12-a0901f524690",
+      "result_id": "2c3ef09f-b832-449a-8843-8058232b608b"
+    },
+    {
+      "claim_id": "9e97061a-7081-43b2-8298-8434a97802e1",
+      "result_id": "2c3ef09f-b832-449a-8843-8058232b608b"
+    },
+    {
+      "claim_id": "198473bf-c12e-4dae-b5eb-2dac044af6ea",
+      "result_id": "2c3ef09f-b832-449a-8843-8058232b608b"
+    },
+    {
+      "claim_id": "d32a69bc-11d0-4780-b4f3-eb884e1fbcc4",
+      "result_id": "d916e44e-4f37-48b5-ab0e-4c5ccb31495f"
+    },
+    {
+      "claim_id": "6cdc1d88-659f-44cc-96d8-42a3fe74f5ff",
+      "result_id": "d916e44e-4f37-48b5-ab0e-4c5ccb31495f"
+    },
+    {
+      "claim_id": "62d631a2-4633-49db-9777-6a38eca9e384",
+      "result_id": "d916e44e-4f37-48b5-ab0e-4c5ccb31495f"
+    },
+    {
+      "claim_id": "cbff9425-7976-47c6-840d-b81a9fc13f1c",
+      "result_id": "d916e44e-4f37-48b5-ab0e-4c5ccb31495f"
+    },
+    {
+      "claim_id": "71f8f4d7-83d0-4bcb-b805-27b4e774eb0b",
+      "result_id": "d916e44e-4f37-48b5-ab0e-4c5ccb31495f"
+    },
+    {
+      "claim_id": "fe142f89-12fc-4e33-b668-1baec706f9f7",
+      "result_id": "74cb61f2-1898-48eb-bce4-baa65d3dcd54"
+    },
+    {
+      "claim_id": "ead28013-7ed1-4a44-8be0-3d26a58623a4",
+      "result_id": "74cb61f2-1898-48eb-bce4-baa65d3dcd54"
+    },
+    {
+      "claim_id": "5ae90164-d1ab-4a86-80f2-2c30fa0410d6",
+      "result_id": "64050c96-9cd6-4f8c-8dc0-1ce9b5c0c91f"
+    },
+    {
+      "claim_id": "9ec349a3-54b0-43c6-a43f-87d9561d5779",
+      "result_id": "64050c96-9cd6-4f8c-8dc0-1ce9b5c0c91f"
+    },
+    {
+      "claim_id": "f1896b8c-5812-4b07-bb29-0b80d895df58",
+      "result_id": "052533b6-1d95-441d-badb-3bb81eeaaf06"
+    },
+    {
+      "claim_id": "4a0425da-1fdf-4f13-9fe8-f9b5b80f0cd6",
+      "result_id": "052533b6-1d95-441d-badb-3bb81eeaaf06"
+    },
+    {
+      "claim_id": "800d7c11-1b80-4b14-a91a-c3588d568359",
+      "result_id": "052533b6-1d95-441d-badb-3bb81eeaaf06"
+    },
+    {
+      "claim_id": "2227831c-9d6f-4d64-9f82-20d8737c882b",
+      "result_id": "052533b6-1d95-441d-badb-3bb81eeaaf06"
+    },
+    {
+      "claim_id": "929cd7a7-b65d-4aa1-844b-0cb7d6735724",
+      "result_id": "db4be37b-6ea9-49fc-a7bf-8ff57b06f09c"
+    },
+    {
+      "claim_id": "79ae74c6-87e6-4e05-9124-f6f8b4d57ed5",
+      "result_id": "db4be37b-6ea9-49fc-a7bf-8ff57b06f09c"
+    },
+    {
+      "claim_id": "59e7aee6-73de-4c5c-8f6d-b8d13de8c317",
+      "result_id": "db4be37b-6ea9-49fc-a7bf-8ff57b06f09c"
+    },
+    {
+      "claim_id": "26606d4f-6b4f-47ad-9f38-84f0ae9ff6cf",
+      "result_id": "c597925c-29a4-454f-a9af-ea6a87b09f61"
+    },
+    {
+      "claim_id": "22572e31-82e3-4382-8633-6a75895c5604",
+      "result_id": "5a800e11-cfba-49fb-bdc9-f3d13f9b9b96"
+    },
+    {
+      "claim_id": "ff4060f2-4ccd-4ebe-a83d-41e6fc518dc3",
+      "result_id": "5a800e11-cfba-49fb-bdc9-f3d13f9b9b96"
+    },
+    {
+      "claim_id": "bdccc7cc-57e7-4f99-9b2d-6bbca240fea7",
+      "result_id": "5a800e11-cfba-49fb-bdc9-f3d13f9b9b96"
+    }
+  ],
+  "comparisons": []
+}

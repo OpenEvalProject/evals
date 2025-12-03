@@ -1,0 +1,773 @@
+{
+  "submission": {
+    "id": "19f2df15-e35d-4f3e-9775-85c392d51121",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:50:50.953000Z",
+    "updated_at": "2025-12-03T09:50:50.953000Z"
+  },
+  "content": [
+    {
+      "id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "submission_id": "19f2df15-e35d-4f3e-9775-85c392d51121",
+      "content_type": "manuscript",
+      "content_text": "# Learning developmental mode dynamics from single-cell trajectories\n\n## Authors\n\n- Nicolas Romeo<sup>1</sup> ([ORCID: 0000-0001-6926-5371](https://orcid.org/0000-0001-6926-5371))\n- Alasdair Hastewell<sup>1</sup> ([ORCID: 0000-0003-2633-380X](https://orcid.org/0000-0003-2633-380X))\n- Alexander Mietke<sup>1</sup> ([ORCID: 0000-0003-1170-2406](https://orcid.org/0000-0003-1170-2406)) \u2020\n- J\u00f6rn Dunkel<sup>1</sup> ([ORCID: 0000-0001-8865-2369](https://orcid.org/0000-0001-8865-2369)) \u2020\n\n### Affiliations\n\n1. Department of Mathematics, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n2. Department of Physics, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEmbryogenesis is a multiscale process during which developmental symmetry breaking transitions give rise to complex multicellular organisms. Recent advances in high-resolution live-cell microscopy provide unprecedented insights into the collective cell dynamics at various stages of embryonic development. This rapid experimental progress poses the theoretical challenge of translating high-dimensional imaging data into predictive low-dimensional models that capture the essential ordering principles governing developmental cell migration in complex geometries. Here, we combine mode decomposition ideas that have proved successful in condensed matter physics and turbulence theory with recent advances in sparse dynamical systems inference to realize a computational framework for learning quantitative continuum models from single-cell imaging data. Considering pan-embryo cell migration during early gastrulation in zebrafish as a widely studied example, we show how cell trajectory data on a curved surface can be coarse-grained and compressed with suitable harmonic basis functions. The resulting low-dimensional representation of the collective cell dynamics enables a compact characterization of developmental symmetry breaking and the direct inference of an interpretable hydrodynamic model, which reveals similarities between pan-embryo cell migration and active Brownian particle dynamics on curved surfaces. Due to its generic conceptual foundation, we expect that mode-based model learning can help advance the quantitative biophysical understanding of a wide range of developmental structure formation processes.\n\n## Introduction\n\nEmbryogenesis, the development of a multicellular organism from a single fertilized egg cell, requires coordinated collective motions of thousands of cells across a wide range of length and time scales (Gilbert and Barresi, 2016; Solnica-Krezel, 2005). Understanding how a highly reproducible and robust tissue organization arises from the dynamics and interactions of individual cells presents a major interdisciplinary challenge (Collinet and Lecuit, 2021). Recent advances in high-resolution live imaging make it possible to track the internal biological states and physical movements of many individual cells on pan-embryonic scales throughout various stages of development (Stelzer, 2015; Power and Huisken, 2017; Hartmann et al., 2019; Shah et al., 2019). This unprecedented wealth of data poses two intertwined compression problems of equal practical and conceptual importance. The first concerns the efficient reduction of high-dimensional tracking data without loss of relevant information; the second relates to inferring predictive low-dimensional models for the developmental dynamics. Mathematical solutions to the first problem are aided by taking into account the geometry and symmetries of the developing embryo, which suggest suitable basis functions for a coarse-grained and sparse mode representation of raw data (Levy, 2006). Efficient algorithmic approaches tackling the second problem appear within reach thanks to recent advances in the direct inference of dynamical systems equations from data (Brunton et al., 2016; Rackauckas et al., 2021). Building on these ideas, we construct and demonstrate here a computational framework that translates developmental single-cell trajectory data on curved surfaces into quantitative models for the dominant hydrodynamic modes.\n\nWidely applied in physics (Kac, 1966; Goldenfeld and Woese, 2011; Kantsler and Goldstein, 2012; Bhaduri et al., 2020), engineering (Soong and Grigoriu, 1993; Heydari et al., 2021), and spectral computing (Driscoll et al., 2014; Burns et al., 2020; Fortunato et al., 2021), mode representations (Schmid, 2010; Tu et al., 2014) provide a powerful tool to decompose and study system dynamics at and across different energetic, spatial and temporal scales. In quantum systems, for example, mode representations in the form of carefully constructed eigenstates are used to characterize essential energetic system properties (Slater and Koster, 1954; Jaynes and Cummings, 1963). Similarly, turbulence theory has seen significant progress by studying the coupling between Fourier modes that represent dynamics at different length scales. This approach enabled a better understanding of energy cascades (Kolmogorov, 1941; Wang et al., 2021) and provided insights into the nature of turbulence in non-living (Kraichnan and Montgomery, 1980; Pope, 2000) and in living (Dunkel et al., 2013; Bratanov et al., 2015; Ramaswamy and J\u00fclicher, 2016; Alert et al., 2020) systems. Additionally, the multi-scale nature of many biological processes make them particularly amenable to a representation in terms of spatial and temporal modes (Marchetti et al., 2013). Despite this fact, however, mode representations are not yet widely used to characterize and compress cell tracking data, or to infer dynamic models from such data.\n\nTo demonstrate the practical potential of mode representations for the description of multicellular developmental processes, we develop here a computational framework that takes cell tracking data as inputs, translates these data into a sparse mode representation by exploiting symmetries of the biological system, and utilizes recently developed ODE inference techniques (Rackauckas et al., 2021) to infer a predictive dynamical model. The model will be specified in terms of a learned Green\u2019s function that propagates initial cell density and flux data forward in time. To validate the approach, we demonstrate that it correctly recovers the hydrodynamic equations for active Brownian particle (ABP) dynamics on curved surfaces. Subsequently, as a first example application to experimental single-cell tracking data, we consider the pan-embryonic cell migration during early gastrulation in zebrafish (Shah et al., 2019), an important vertebrate model system for studying various morphogenetic events (Solnica-Krezel, 2005; Krieg et al., 2008; Morita et al., 2017). During gastrulation, complex migratory cell movements organize several thousand initially undifferentiated cells into different germlayers that lay out the primary body plan (Rohde and Heisenberg, 2007). The underlying high-dimensional single-cell data make this process a prototypical test problem for illustrating how spatio-temporal information can be efficiently compressed to analyze and model biological structure formation.\n\n## Results\n\nBroadly, our goal is to translate experimentally measured single-cell trajectories on a curved surface into a quantitative model of collective cell migration dynamics. As a specific example, we consider recently published lightsheet microscopy data that captures the individual movements of thousands of cells during early zebrafish development from epiboly onset at 4 hours post-fertilization (hpf) to about 18 hpf (Shah et al., 2019). This developmental period is characterized by a collective symmetry breaking event during which cells collectively migrate over the yolk cell surface (Rohde and Heisenberg, 2007). Namely, they rearrange from an initial localization around the animal pole (AP) (Figure 1A, left) into a more elongated configuration that already indicates the basic geometry of the fully developed zebrafish larva (Figure 1A, right). Working with a two-dimensional (2D) sphere projection of the experimental data, we first describe a coarse-graining approach that faithfully captures cell-mass transport on a curved surface. We then construct a sparse mode representation of the resulting hydrodynamic fields in terms of scalar and vector spherical harmonic basis functions, discuss mode signatures of morphogenetic symmetry breaking events, and connect them to the dynamics of topological defects in the cellular flux. We validate this mode representation framework and the subsequent model inference using synthetic data of ABPs on a sphere, for which coarse-grained fields and learned models can be directly compared against analytical predictions. Finally, we infer a linear model for the mode dynamics of the experimental zebrafish data, which enables us to study the characteristics of cell interactions through kernels that couple cell density and flux and compare their features with the hydrodynamic mean-field signatures of ABPs on a sphere.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig1-v2.jpg)\n\n**Figure 1.:** (A) Microscopic imaging data of early zebrafish development (adapted from Figure 1b in Kobitski et al., 2015) shows cell migration from an initially homogeneous pole of cells (left) toward an elongated structure that indicates the head-tail axis of the fully developed organism. Scale bar, $100\\mum$. (B) Experimental single-cell tracking data from Shah et al., 2019 (blue dots) during similar developmental time points (\u00b120 min) as in A. $t=0$ min for the indicated time points in B corresponds to a developmental time of 4 hours post fertilization. The $z$-axis points from the ventral pole (VP) to the animal pole (AP). (C) Coarse-grained relative cell density $\u03c1\u2062(r,t)$ (color) and associated coarse-grained flux $J\u2062(r,t)$ (streamlines) determined from single cell positions and velocities from data in B via Equation 2a. Thickness of streamlines is proportional to the logarithm of the spatial average of $|J|$ (see Video 1). (D) Dynamic harmonic mode representation of the relative density $\u03c1\u2062(r,t)$ (Equation 4, left panel) and of the flux $J\u2062(r,t)$ (Equation 5, middle and right panel) for fields shown in C. The modes $j_{l\u2062m}^{(1)}$ correspond to compressible, divergent cell motion, the modes $j_{l\u2062m}^{(2)}$ describe incompressible, rotational cell motion. Mode amplitudes become negligible for $l\\geq5$ (Video 2). For all panels, horizontal black lines delineate blocks of constant harmonic mode number $l$ and black triangles denote the end of epiboly phase.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Decay of power spectra for coarse-grained experimental density and flux fields. Rotationally invariant spatial power spectra as a function of the mode $l$ index were computed for the density field $\u03c1$ as $P_{\u03c1,l}=\\summ=\u2212ll\u03c1_{lm}^{2}$ and for modes contributing to cell fluxes ($j^{(1)}$ and $j^{(2)}$) as $P_{jk,l}=\\summ=\u2212ll[j_{lm}^{(k)}]^{2}$ for $k=1,2$. Spectra were computed at representative timepoints $t=40,240,400,830$ min and normalized by their maximum value. The observed decay indicates that a spectral representations of the coarse-grained fields is meaningful, and shows that the mode cut-off chosen for the learning ($l\\leq4$) amounts to discarding approximately 1% of spectral power in each field.\n\n### Coarse-graining of cellular dynamics on a spherical surface\n\nThe experimentally observed cell motions are approximately two-dimensional (2D): The radius of the yolk cell surface on which the dynamics takes place is much larger than the average height changes of the evolving cell mass (Shah et al., 2019). We therefore adopt a thin film approximation, in which the cellular motion is represented on an effective spherical mid-surface (gray surface in Figure 1B); refined future models should aim to account for the full 3D dynamics. Focusing here on the in-plane dynamics, we project all cell positions and velocities onto a spherical mid-surface $S$ of radius $R_{s}=300\\mum$. On this spherical surface, each cell $\\alpha=1,2,\u2026,N$ has a position $r_{\\alpha}\u2062(t)$ and in-plane velocity $v_{\\alpha}\u2062(t)=d\u2062r_{\\alpha}/d\u2062t$.\n\nAs a second processing step, a coarse-grained representation of the single-cell dynamics on a spherical surface is determined. To facilitate the applicability of our framework to a wide range of experimental inputs, we propose a coarse-graining approach that can flexibly integrate cell number variations stemming from cell divisions, but also those from experimental uncertainties in cell imaging and tracking. Consequently, we first consider an idealized scenario in which the total cell number is approximately constant. In this case, mass conservation informs the construction of self-consistent coarse-graining kernels on a spherical surface. In a second step, we describe how this approach generalizes when there are variations in the total cell number.\n\n#### Consistent coarse-graining of idealized microscopic data\n\nOur specific aim is to translate microscopic cell positions $r_{\\alpha}\u2062(t)$ and velocities $v_{\\alpha}\u2062(t)$ into a continuous cell surface density $\u03c1\u2062(r,t)$ and an associated flux $J\u2062(r,t)$ at any point $r$ of the spherical mid-surface. For an approximately constant total number of cells, the fields $\u03c1$ and $J$ are related by the mass conservation equation\n\n$$\n\\frac{\\partial\u2061\u03c1}{\\partial\u2061t}+\\nabla_{S}\u22c5J=0.\n$$\n\nHere, $\\nabla_{S}\u22c5J$ denotes the in-plane divergence of the cell number flux. To convert cell position $r_{\\alpha}\u2062(t)$ and velocities $v_{\\alpha}\u2062(t)$ into a normalized cell surface density $\u03c1\u2062(r,t)$ and an associated normalized flux $J\u2062(r,t)$, we consider a kernel coarse-graining of the form (Appendix 1)\n\n$$\n\u03c1\u2062(r,t)=\\frac{1}{N}\u2062\\sum\\alpha=1NK\u2062[r,r_{\\alpha}\u2062(t)]\n$$\n\n\n\n$$\nJ\u2062(r,t)=\\frac{1}{N}\u2062\\sum\\alpha=1NK\u2062[r,r_{\\alpha}\u2062(t)]\u22c5v\u00af_{\\alpha},\n$$\n\nwhere $N$ is the total number of cells and $v\u00af_{\\alpha}=v_{\\alpha}/|r_{\\alpha}|$ is the angular velocity of a given cell on a reference unit sphere (Appendix 1). The kernels $K\u2062(r,r^{\u2032})$ and $K\u2062(r,r^{\u2032})$ are given by a scalar and a matrix-valued function, respectively. The matrix kernel $K\u2062(r,r^{\u2032})$ takes into account contributions of a particle with velocity $v_{\\alpha}$ at $r^{\u2032}=r_{\\alpha}$ to nearby points $r$ on the sphere, which involves an additional projection to ensure that $J\u2062(r,t)$ is everywhere tangent to the spherical surface (Appendix 1). Importantly, the mass conservation Equation 1 implies a non-trivial consistency relation between the kernels $K\u2062(r,r^{\u2032})$ and $K\u2062(r,r^{\u2032})$ in Equation 2a, Equation 2b. The kernels that obey this condition represent different coarse-graining length scales (Appendix 1\u2014figure 2). Throughout, we fix an intermediate coarse-graining length scale to enable a sparse representation of the experimental data, while ensuring that spatial details of the dynamics remain sufficiently well resolved. The final surface density $\u03c1\u2062(r,t)$ and the associated normalized flux $J\u2062(r,t)$, computed from Equation 2a and Equation 2b using a kernel with an effective great-circle coarse-graining width of $\u223c70\u2062\\mu\u2062m$, are shown in Figure 1C (see also Video 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/68679/elife-68679-video1.mp4.jpg)\n\n**Video 1.:** Time evolution of the pre-processed cell tracking data (point cloud, see Materials and methods), and of the density field $\u03c1(r,t)$ (colormap) and associated flux $J(r,t)$ (streamlines) corresponding to the harmonic modes ${\u03c1_{lm},j_{lm}^{(1)},j_{lm}^{(2)}}$ shown in Figure 1D.This mode representation was determined by the coarse-graining and projection procedure described in the main text. Streamline thickness is proportional to the logarithm of the average flux amplitude $\u27e8|J|\u27e9_{s}$. For visualization purposes, cell distances to the origin were rescaled by a factor of $1.2\u2062R_{s}/\u27e8R\u2062(t)\u27e9$, where $\u27e8R\u2062(t)\u27e9$ is the average cell distance from center at time $t$ and $R_{s}=300\\mum$ is the mid-surface radius.\n\n#### Consequences of cell number variations in experimental data\n\nBecause cell divisions are essential to most developmental processes, total cell numbers will in many cases \u2013 including early zebrafish gastrulation (Kobitski et al., 2015) \u2013 vary over time. True cell numbers and cell number changes are often difficult to measure due to experimental uncertainties arising from single-cell imaging and tracking within dense cellular aggregates. We therefore merely assume here that single cells are tracked in a representative fashion so that local relative surface densities found from Equation 2a reflect the probability that cells are present at a given point $r$. In the absence of further information on cell deaths and cell divisions, we additionally make the more restrictive assumption that cell appearances or disappearances are everywhere proportional to the local cell density. With these assumptions, we can define a cell number surface density $\u03c1~\u2062(r,t)=N\u2062(t)\u2062\u03c1\u2062(r,t)$, where $N\u2062(t)$ is the cell number at time $t$ and $\u03c1\u2062(r,t)$ is the normalized surface density given in Equation 2a. Similarly, a cell number flux is given by $J~\u2062(r,t)=N\u2062(t)\u2062J\u2062(r,t)$, where the flux $J\u2062(r,t)$ is computed from the data as described by Equation 2b. Using these definitions in Equation 1, we find that the fields $\u03c1~\u2062(r,t)$ and $J~\u2062(r,t)$ obey a continuity equation\n\n$$\n\\frac{\\partial\u2061\u03c1~}{\\partial\u2061t}+\\nabla_{S}\u22c5J~=k\u2062(t)\u2062\u03c1~,\n$$\n\nwhere $k\u2062(t)=N\u02d9\u2062(t)/N\u2062(t)$ denotes a time-dependent effective growth rate. Importantly, under the two above assumptions, Equation 3 encodes for any time-dependent total cell number $N\u2062(t)\u00a7gt;0$ the same information as Equation 1 for coarse-grained normalized surface density $\u03c1\u2062(r,t)$ and associated flux $J\u2062(r,t)$ given by Equation 2a and Equation 2b, respectively. In the following analysis, we hence focus on these normalized fields.\n\n### Spatial mode representation on a spherical surface\n\nTo obtain a sparse mode representation of the hydrodynamic fields $\u03c1\u2062(r,t)$ and $J\u2062(r,t)$ on the spherical surface, we expand them in terms of scalar and vector spherical harmonics (SHs) (Arfken et al., 2013; Sandberg, 1978) (Appendix 2.A). SHs are defined on points $r^=r/R_{s}$ of the unit sphere, where $R_{s}=300$ \u03bcm is the mid-surface radius. In this basis, the scalar density field is represented as\n\n$$\n\u03c1(r,t)=\\suml=0l_{max}\\summ=\u22121l\u03c1_{lm}(t)Y_{lm}(r^),\n$$\n\nwhich conveniently separates the time- and space-dependence of $\u03c1\u2062(r,t)$ into mode amplitudes $\u03c1_{l\u2062m}\u2062(t)$ and scalar harmonic functions $Y_{l\u2062m}\u2062(r^)$, respectively. The maximal mode number $l_{max}$ is a proxy for the maximal spatial resolution at which $\u03c1\u2062(r,t)$ is faithfully represented. Similarly, the vector-valued flux $J\u2062(r,t)$ can be decomposed into time-dependent mode amplitudes $j_{l\u2062m}^{(1)}\u2062(t)$ and $j_{l\u2062m}^{(2)}\u2062(t)$, while its spatial dependence is described by vector SHs $\u03a8_{lm}(r^)$ and $\u03a6_{lm}(r^)$ (Sandberg, 1978) (Appendix 2, Video 2).\n\n$$\nJ(r,t)=\\suml=1l_{max}\\summ=\u2212ll(j_{lm}^{(1)}(t)\u03a8_{lm}(r^)+j_{lm}^{(2)}(t)\u03a6_{lm}(r^)).\n$$\n\n![Video 2.](https://cdn.elifesciences.org/articles/68679/elife-68679-video2.mp4.jpg)\n\n**Video 2.:** Reconstruction of the hydrodynamics fields in real space by adding consecutive scalar and vector spherical harmonic modes of progressively higher order $l$.Surface coloring depicts the density field $\u03c1\u2062(r,t)$, the associated flux $J(r,t)$ is indicated by streamlines. Streamline thickness is proportional to the logarithm of the average flux amplitude $\u27e8|J|\u27e9_{s}$. The shown fields correspond to the time point $t=420$ min in Video 1.\n\nBesides the in-plane divergence $\\nabla_{S}\u22c5J$ that leads to local density changes (see Equation 1), the cell number flux $J\u2062(r,t)$ also contains an in-plane curl component $\\nabla_{S}\\timesJ$ that is associated with locally rotational cell flux. The two sets of vector SHs ${\u03a8_{lm}}$ and ${\u03a6_{lm}}$ conveniently decompose the flux into these contributions: Because $\u2207_{S}\u22c5\u03a6_{lm}=\u2207_{S}\\times\u03a8_{lm}=0$, and $r^\u22c5(\u2207_{S}\\times\u03a6_{lm})=\u2207_{S}\u22c5\u03a8_{lm}=\u2212l(l+1)Y_{lm}/R_{s}$ (Sandberg, 1978), we see from Equation 5 that $j_{l\u2062m}^{(1)}\u2062(t)$ corresponds to modes that drive density changes and $j_{l\u2062m}^{(2)}\u2062(t)$ represents modes of local rotational cell motion that change relative cell positions but do not change local density. Indeed, using harmonic mode representations of the cell number density Equation 4 and the cell number flux Equation 5 directly in the continuity Equation 1, we find a set of ordinary differential equation in mode space\n\n$$\n\\frac{d}{d\u2062t}\u2062\u03c1_{l\u2062m}\u2062(t)=\\frac{l\u2062(l+1)}{R_{s}}\u2062j_{l\u2062m}^{(1)}\u2062(t),\n$$\n\nwhere $l=0,1,\u2026,l_{max}$ and for each value of $l$, $m=-l,-l+1,\u2026,l-1,l$. Equation 6 offers an alternative way of determining the modes $j_{l\u2062m}^{(1)}\u2062(t)$ directly from the modes $\u03c1_{l\u2062m}\u2062(t)$ of the coarse-grained cell number density (see Equation 4 and Equation 2a), while ensuring that the resulting fields obey mass conservation exactly. In practice, the modes $j_{l\u2062m}^{(1)}\u2062(t)$ found from a vector harmonic representation of the coarse-grained cell number flux (Equation 2b) will often deviate from modes $j_{l\u2062m}^{(1)}\u2062(t)$ determined from Equation 6, even if cell numbers are expected to be conserved. This can be, for example, due to limited accuracy in determining velocities $v_{\\alpha}\u2062(t)$ from noisy single-cell trajectories $r_{\\alpha}\u2062(t)$, or due to spatially inhomogeneous appearances and disappearances of cells in tracking data. Consistent with our simplifying assumption that cell number changes in the data can be sufficiently well approximated by a globally homogeneous growth rate (compare Equation 1 with Equation 3), the subsequent analysis uses the modes $j_{l\u2062m}^{(1)}\u2062(t)$ as determined from the density modes $\u03c1_{l\u2062m}\u2062(t)$ via Equation 6, together with modes $j_{l\u2062m}^{(2)}\u2062(t)$ from the explicit velocity coarse-graining Equation 2b. The complete construction is detailed in Appendix 2 and the full coarse-grained dynamics is shown in Video 1.\n\nThe representation of $\u03c1\u2062(r,t)$ and $J\u2062(r,t)$ in terms of spherical harmonic modes with $l\\leql_{max}$ leads in total to $3\u2062(l_{max}+1)^{2}$ mode amplitude trajectories, displaying only a few dominant contributions (Figure 1D) with almost no signal remaining for $l\\geq5$ (Figure 1\u2014figure supplement 1, Video 2). This demonstrates that the underlying coarse-grained experimental data is sufficiently smooth and implies that a spectral representations is indeed meaningful. Thus, the coarse-graining approach outlined above provides a sparse spectral representation of high-dimensional microscopic single-cell data. The associated harmonic basis functions and vectors have an intuitive physical meaning, convenient algebraic properties and, as we will see, encode information about the length scales and symmetries of the collective dynamics.\n\n### Temporal mode representation\n\nWe further compress the dynamical information by representing the time series of the modes in terms of Chebyshev polynomial basis functions $T_{n}\u2062(t)$ (Driscoll et al., 2014; Mason and Handscomb, 2002). To simplify notation, we define a dynamic mode vector $a\u2062(t)=[\u03c1_{l\u2062m}\u2062(t),j_{l\u2062m}^{(1)}\u2062(t),j_{l\u2062m}^{(2)}\u2062(t)]^{\u22a4}$ that collects all the modes up to $l=l_{max}$ determined in the previous section and consider an expansion\n\n$$\na(t)=\\sumn=0n_{max}T_{n}(t)a^_{n}\n$$\n\nin terms of the spatio-temporal mode coefficients $a^_{n}$ with temporal mode number $n$ (Appendix 2). This compression allows us to accurately evaluate time derivatives of the mode amplitudes (Supekar et al., 2021), an important step when using Equation 6 to determine flux modes $j_{l\u2062m}^{(1)}\u2062(t)$ directly from density modes $\u03c1_{l\u2062m}$. Fixing $l_{max}=4$ and $n_{max}=30$ in the remainder, the initial single-cell data set of about 1.4 million recorded cell position entries, or 4.2 million degrees of freedom, has thus been reduced to 2250 mode coefficients, corresponding to a compression ratio $\u22731800$.\n\n### Characterization of the developmental mode dynamics\n\nA harmonic mode decomposition naturally integrates the geometry of the underlying domain and simultaneously provides useful insights into spatial scales and symmetries of the dynamics. For each mode $(l\u2062m)$ in the sets of SHs ${Y_{l\u2062m}}$, ${\u03a8_{lm}}$ and ${\u03a6_{lm}}$, the integer index $l$ indicates the spatial scale of the harmonic, with $l=0$ being a constant and larger $l$ indicating progressively finer spatial scales. The second index $m\\in{-l,-l+1,\u2026,l}$ provides additional information about the orientation of the harmonic scalar function or vector field. The modes $l=1$ and $l=2$ are particularly useful for characterizing the symmetry of spatial patterns on a spherical surface (Mietke et al., 2019; Scholich et al., 2020): Modes with $l=1$ indicate patterns with a global polar symmetry, whereas modes with $l=2$ represent spatial patterns with a global nematic symmetry. We now exploit these features for a detailed characterization of the symmetry breaking that takes place during cellular rearrangements and to study the properties of the cellular flux in more detail. To this end, we discuss spatial averages\n\n$$\n\u27e8O\u27e9_{s}(t)=\\frac{1}{A_{s}}\\int_{S}dA_{s}O(r,t)\n$$\n\nof different real-space observables $O(r,t)$ over the mid-surface $S$.\n\n#### Mode signatures of developmental symmetry breaking\n\nTo study how different developmental stages and their associated symmetry breaking events are reflected in the mode representation, we first consider the average cell surface density fluctuations\n\n$$\n\u27e8(\u03c1\u2212\u27e8\u03c1\u27e9_{s})^{2}\u27e9_{s}=\\suml=1l_{max}\\summ=\u2212ll\u03c1_{lm}^{2}(t).\n$$\n\nFor each mode $l$, the power spectrum $P_{\u03c1,l}\u2062(t)=\\sum_{m=-l}^{l}\u03c1_{l\u2062m}^{2}\u2062(t)$ in Equation 9 provides a rotationally invariant quantity (\u00c7eting\u00fcl et al., 2012; Schwab et al., 2013) that can effectively serve as an order parameter to characterize the symmetry of cell density patterns on the spherical surface. The dynamics of the density fluctuations given in Equation 9 broken down into contributions $P_{\u03c1,l}\u2062(t)$ from each mode $l\\leql_{max}=4$ is shown in Figure 2B. Several features of this representation are particularly striking and can be directly related to specific developmental stages. First, patterns of cell surface density fluctuations evolve from a dominantly polar symmetry ($l=1$) into density patterns with a prominent nematic symmetry ($l=2$). These mode signatures intuitively reflect the essential symmetry breaking that takes place when cells collectively reorganize from an initially localized cell dome (Figure 1B, 52 min) into an elongated shape that wraps in an open ring-like pattern around the yolk cell (Figure 1B, 760 min). Second, during this transition at around 300 \u2009min (9 hpf) (black triangle in Figure 2B), the cell surface density is most homogeneous as fluctuations become minimal for all modes $l$. Interestingly, this time point approximately marks the completion of epiboly, when the different cell layers have fully engulfed the yolk. Finally, although in a less pronounced manner, the power spectrum of the mode $l=4$ also exhibits an increased amplitude towards later times, indicating the formation of structures at finer spatial scales as development progresses. We find that mode signatures of the symmetry breaking and progression through developmental stages are robust (Figure 2\u2014figure supplement 1B, D), illustrating that mode-based analysis can provide a systematic and meaningful characterization of developmental symmetry breaking events.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig2-v2.jpg)\n\n**Figure 2.:** (A) Two-dimensional Mollweide projection of the compressed coarse-grained density field $\u03c1\u2062(r,t)$ (colormap) and of the coarse-grained cell flux $J\u2062(r,t)$ (streamlines) at different time points of zebrafish gastrulation.White circles depict topological defects of charge +1 in the flux vector field, red circles depict defects with charge -1. The total defect charge is 2 at all times. Defects are seen to \u2018lead\u2019 the large-scale motion of cells and later localize mostly along the curve defined by the forming spine. Animal pole (AP) and ventral pole (VP) are located at top and bottom, respectively. (B) Density fluctuations as a function of developmental time (see Equation 9), broken down in contributions from different harmonic modes $l$. The underlying symmetry breaking is highlighted prominently by this representation: During the first 75% of epiboly (0\u2013280 \u2009min) cells migrate away from, but are still mostly located near the animal pole, presenting a density pattern with polar symmetry ($l=1$). During the following convergent extension phase cells converge towards a confined elongated region that is \u2018wrapped\u2019 around the yolk, corresponding to a density pattern with nematic symmetry ($l=2$). Black triangles indicate transition from epiboly to convergent extension. (C) Comparison of surface averaged divergence $\\nabla_{S}\u22c5J$ and curl $\\nabla_{S}\\timesJ$ of the cellular flux computed via Equation 10a and Equation 10b, respectively (top). A relative curl amplitude $S_{c\u2062u\u2062r\u2062l}$ computed from these quantities via Equation 11 correlates with the appearance of an increased number of topological defects in the cell flux (bottom), suggesting that incompressible, rotational cell flux is associated with the formation of defects.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Analysis presented in Figure 2A\u2013C of the main text performed on a second cell-tracking dataset (\u2018Sample 2\u2019). In C, solid lines indicate results for Sample 2, dashed lines correspond to the results for the dataset discussed in the main text (\u2018Sample 1\u2019). (D) Contributions to density fluctuations from both samples, broken down into contributions from different modes with harmonic mode number $l$ and normalized at each time point by the total fluctuation intensity. Black triangles indicate the completion of epiboly.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Demonstration of the defect tracking on two example tangential vector fields on a spherical surface. (A) Vector field defined by $J=\u03a6_{(2,2)}$. (B) Vector field defined by $J=\u03a8_{(2,-1)}+0.1\u2062\u03a6_{(2,2)}$. Black lines depict the streamlines defined by these vector fields. White circles depict topological defects of charge +1, red circles depict defects with charge -1. For further details of the tracking approach see Materials and Methods.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Analysis shown in Figure 2C performed on data that was coarse-grained with different coarse-graining length scales, represented by the parameter $k$ (see Appendix 1\u2014figure 2). Choosing larger ($k=5$) or smaller ($k=7$) coarse-graining length scales than used in Figure 2C ($k=6$), key signatures extracted from the data (dominant phases of divergent and rotary flows and a correlation between increased defect dynamics and cellular fluxes with curl) can still be robustly recovered.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Analysis shown in Figure 2\u2014figure supplement 1C (solid lines) performed on data that was coarse-grained with different coarse-graining length scales, represented by the parameter $k$ (see Appendix 1\u2014figure 2). Choosing larger ($k=5$) or smaller ($k=7$) coarse-graining length scales than used in Figure 2\u2014figure supplement 1C ($k=6$), key signatures extracted from the data (dominant phases of divergent and rotary flows and a correlation between increased defect dynamics and cellular fluxes with curl) can still be robustly recovered.\n\n#### Mode signatures of emergent topological defects in cellular flux\n\nThe vectorial nature of the cell number flux $J\u2062(r,t)$ on a spherical surface implies the presence of topological defects (colored circles in Figure 2A, see Materials and methods) (Kamien, 2002). Several recent experimental results pertaining to the self-organization of multicellular systems suggest an important role of such topological defects in organizing morphogenetic events (Doostmohammadi et al., 2016; Saw et al., 2017; Guillamat et al., 2020; Copenhagen et al., 2020; Meacock et al., 2020; Maroudas-Sacks et al., 2020). We therefore analyze how defects within the cell number flux $J\u2062(r,t)$ are dynamically organized during early zebrafish gastrulation and if signatures of defect formation and annihilation are present in the mode representation Equation 5. We first consider the average squared divergence and curl of the cell number flux given by\n\n$$\n\u27e8(\\nabla_{S}\u22c5J)^{2}\u27e9_{s}=\\suml=1l_{max}\\summ=-lm[\\frac{l\u2062(l+1)}{R_{s}}\u2062j_{l\u2062m}^{(1)}\u2062(t)]^{2},\n$$\n\n\n\n$$\n\u27e8(\\nabla_{S}\\timesJ)^{2}\u27e9_{s}=\\suml=1l_{max}\\summ=-lm[\\frac{l\u2062(l+1)}{R_{s}}\u2062j_{l\u2062m}^{(2)}\u2062(t)]^{2},\n$$\n\nwhich are shown in Figure 2C (top). The two contributions to the collective cellular dynamics \u2013 locally compressible, divergent flux quantified by the divergence $\\nabla_{S}\u22c5J$ and locally incompressible, rotational cell motion characterized by the curl $\\nabla_{S}\\timesJ$ \u2013 are independently determined by the modes $j_{l\u2062m}^{(1)}\u2062(t)$ and $j_{l\u2062m}^{(2)}\u2062(t)$. Therefore, each contribution can be evaluated conveniently and with high accuracy from a representation of $J\u2062(r,t)$ in terms of vector SHs. From Figure 2C (top), we see that the most significant divergent flux (blue curve) occurs around 300 \u2009min at the transition from epiboly towards the convergence and extension stage. A quantification of the incompressible rotational flux relative to the total cell number flux is shown in Figure 2C (bottom), where we plotted the relative curl amplitude\n\n$$\nS_{curl}\u2062(t)=\\frac{\\sum_{l,m}[j_{l\u2062m}^{(2)}\u2062(t)]^{2}}{\\sum_{l,m}[j_{l,m}^{(1)}\u2062(t)]^{2}+\\sum_{l,m}[j_{l,m}^{(2)}\u2062(t)]^{2}}.\n$$\n\nThis measure suggests a correlation between incompressible rotational cell motion and the occurrence of topological defects (circles in Figure 2A) in the cell flux $J\u2062(r,t)$. The total number of topological defects present at any time point is depicted in Figure 2C (bottom, blue curve). Because the vector-valued flux is defined on a sphere, we observe that the total topological charge always sums to +2 (Kamien, 2002), while additional defect pairs with opposite charge (red +1 and white -1 circles in Figure 2A) can be created, resulting in total defect numbers greater than two (see Figure 2C, bottom). Interestingly, the relative curl amplitude $S_{curl}$ defined in Equation 11 indicates that increased contributions from incompressible rotational flux are associated with the formation of topological defects in the cell number flux, a feature that is robustly identified by our framework (Figure 2\u2014figure supplement 1A, C, Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4). The appearance of additional defects at the end of epiboly, when the developing embryo begins to extrude more significantly in the radial direction, suggests that topological defects in the 2D projected cellular flux fields could signal the start of the formation of more complex structures in three dimensions.\n\n### Learning a linear hydrodynamic model of the developmental mode dynamics\n\nThe results in Figure 2 confirm that a low-dimensional mode representation can capture essential characteristics of developmental symmetry breaking processes. The mode representation therefore provides a natural starting point for the inference of hydrodynamic models from coarse-grained cell-tracking data. For a given time-dependent mode vector $a\u2062(t)=[\u03c1_{l\u2062m}\u2062(t),j_{l\u2062m}^{(1)}\u2062(t),j_{l\u2062m}^{(2)}\u2062(t)]^{\u22a4}$ that contains all modes up to $l=l_{max}$, the simplest hydrodynamic model corresponds to the linear dynamical equation\n\n$$\n\\frac{d\u2062a\u2062(t)}{d\u2062t}=M\u22c5a\u2062(t),\n$$\n\nwhere the constant coefficient matrix $M$ encodes the couplings between different modes. Intuitively, Equation 12 aims to describe an experimentally observed density and flux dynamics in terms of a relaxation process, starting from inhomogeneous initial conditions represented by $a\u2062(0)$. The mathematical learning problem is then to find a coefficient matrix $M$ such that the linear model Equation 12 holds for the mode vector time series $a\u2062(t)$ that was determined from the coarse-graining procedure described in the previous sections.\n\n#### Validation of the learning framework using active Brownian particle dynamics\n\nBefore applying the combined coarse-graining and inference framework to experimental data, we illustrate and validate the learning approach on synthetic data for which coarse-graining results and hydrodynamic mean-field equations are analytically tractable. To this end, we consider the stochastic dynamics of non-interacting active Brownian particles (ABPs) on the unit sphere of radius $R_{0}=1$ (Sknepnek and Henkes, 2015; Fily et al., 2016; Castro-Villarreal and Sevilla, 2018). Similar to a migrating cell, an ABP at position $x\u2062(t)$ moves across the unit sphere at constant speed v0 in the direction of its fluctuating orientation unit vector $u\u2062(t)$. The strength of the orientational Gaussian white noise is characterized by a rotational diffusion constant $D_{r}$ (Figure 3A, Appendix 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig3-v2.jpg)\n\n**Figure 3.:** (A) ABPs move on a unit sphere (radius $R_{0}=1$) with angular speed $v_{0}=1$ along a tangential unit vector $u\u2062(t)$ that is subject to stochastic in-plane fluctuations (see Appendix 3 for further details). Example single-particle trajectories are shown in the high-noise (orange, $D_{r}=10$ in units of $R_{0}\u2062v_{0}$) and in the low-noise regime (blue, $D_{r}=0.5$). Time $t$ is measured in units of $R_{0}/v_{0}$ in all panels. (B) Position correlation function $\u27e8x\u2062(t)\u22c5x\u2062(0)\u27e9$ averaged over $3\\times10^{4}$ independent ABP trajectories show distinct oscillations of period $\u22482\u2062\\pi$ in the low-noise regime, as ABPs orbit the spherical surface more persistently (see Video 3). Standard error of the mean is smaller than symbol size. (C) Analytically predicted (left) and inferred (right) dynamical matrices $M$ (see Equation 12) describing the mean-field dynamics of a large collection of non-interacting ABPs (see Equation 13a, Equation 13b, Equation 13c and Appendix 3) show good quantitative agreement. (D) Mollweide projections of coarse-grained ABP simulations with $v_{0}=1$ and $D_{r}=0.5$ using cell positions from the first time point in the zebrafish data (Figure 1) as the initial condition: At each position 60 particles with random orientation were generated and their ABP dynamics simulated, amounting to approximately $1.2\\times10^{5}$ particles in total. The density fields homogenize over time, where the maximum density at $t=12.3$ has decayed to about 5% of the maximum density at $t=1.02$. Blue lines and arrows indicate streamlines of the cell flux $J\u2062(r,t)$. (E) Simulation of the learned linear model, Equation 12 with $M$ shown in (C) (right), for the same initial condition as in D. Marked time points indicate intervals of learning, validation and prediction phases of the model inference (see Appendix 4).\n\n![Video 3.](https://cdn.elifesciences.org/articles/68679/elife-68679-video3.mp4.jpg)\n\n**Video 3.:** Coarse-grained dynamics of active Brownian particles on the unit sphere in the low-noise ($D_{r}=0.5$) and high-noise ($D_{r}=10$) regime.Data from $N=3\\times10^{4}$ independent ABP simulations was coarse-grained using the kernels $f_{k}\u2062(\\omega)$ and $g_{k}\u2062(\\omega)$ ($k=6$) described in Appendix 1. Initial ABP positions were sampled from an axisymmetric distribution with $p\u2062(\\theta)\u221dcos\u2061\\theta\u2062\u20091_{{\\theta\u00a7lt;\\pi/2}}$. Mollweide projections in the left and right column are color-coded for density and flux magnitude $|J\u2062(r,t)|$, respectively. Colormaps are normalized by the maximum values of density and flux magnitude fields across all time points.\n\nCompared with conventional passive Brownian motion, self-propulsion of an ABP along its orientation direction $u$ introduces a persistence to the particle\u2019s motion that is reduced as rotational noise $D_{r}$ is increased. Additionally, the topology of the spherical surface implies that in the low-noise regime, $R_{0}\u2062D_{r}/v_{0}\u00a7lt;1$, particles are expected to return to the vicinity of their starting points after a duration $\u0394\u2062t\u22482\u2062\\pi\u2062R_{0}/v_{0}$. The conjunction of persistent motion and topology then leads to oscillatory dynamics in the positional correlation $\u27e8x\u2062(t)\u22c5x\u2062(0)\u27e9$ (blue dots in Figure 3B, Appendix 3). Comparing correlations from stochastic ABP simulations in different noise regimes with theoretical predictions (solid lines in Figure 3B) validates our numerical ABP simulation scheme.\n\nTo generate a test data set for our coarse-graining and inference framework, we simulated non-interacting ABPs in both the low-noise ($R_{0}\u2062D_{r}/v_{0}\u00a7lt;1$) and the high-noise ($R_{0}\u2062D_{r}/v_{0}\u00a7gt;1$) regime with initial positions drawn from the experimental data shown in Figure 1. Specifically, at each cell position present in the data, we generated 60 particles with random orientation, amounting to approximately $1.2\\times10^{5}$ particles in total, and simulated their dynamics on a unit sphere. The resulting trajectory data were coarse-grained following the procedure outlined in the previous sections, yielding dynamic density fields $\u03c1\u2062(r,t)$ and fluxes $J\u2062(r,t)$ (Video 3), together with their mode representations $\u03c1_{l\u2062m}\u2062(t),j_{l\u2062m}^{(1)}\u2062(t)$ and $j_{l\u2062m}^{(2)}\u2062(t)$.\n\nIn the second \u2018learning\u2019 step, we infer a sparse mode coupling matrix $M$ that approximates the dynamics Equation 12 for the dynamical mode vectors $a\u2062(t)=[\u03c1_{l\u2062m},j_{l\u2062m}^{(1)},j_{l\u2062m}^{(2)}]^{\u22a4}$ obtained from the coarse-grained simulated ABP data. Our inference algorithm combines adjoint techniques (Rackauckas et al., 2021) and a multi-step sequential thresholding approach inspired by the Sparse Identification of Nonlinear Dynamics (SINDy) algorithm introduced by Brunton et al., 2016. The full algorithm is detailed in Appendix 4 and illustrated in the summary flowchart Appendix 4\u2014figure 1. Importantly, we perform the sparse regression using dynamical mode vectors $a\u2062(t)$ rescaled by their median absolute deviation (MAD) to compensate for substantial scale variations between different modes. The final output matrix $M$ of this learning algorithm is shown in the right panel of Figure 3C and can be compared against the analytically coarse-grained dynamics of ABPs on curved surfaces (Fily et al., 2016; Castro-Villarreal and Sevilla, 2018). Under suitable closure assumptions (Appendix 3), the mean-field dynamics of ABPs on a unit sphere is given in harmonic mode space by\n\n$$\n\\frac{d\u2062j_{l\u2062m}^{(2)}}{d\u2062t}=-D_{r}\u2062j_{l\u2062m}^{(2)},\n$$\n\n\n\n$$\n\\frac{dj_{lm}^{(1)}}{dt}=\u2212\\frac{v_{0}^{2}}{2R_{0}}\u03c1_{lm}\u2212D_{r}j_{lm}^{(1)}\n$$\n\n\n\n$$\n\\frac{dj_{lm}^{(2)}}{dt}=\u2212D_{r}j_{lm}^{(2)}\n$$\n\nfrom which we can read off the mode coupling matrix $M$ shown in the left panel of Figure 3C. A direct comparison between the theoretical and the inferred matrices shows that our framework recovers both the structure and the quantitative values of $M$ with good accuracy. Due to the finite number of ABPs used to determine the coarse-grained fields, we do not expect that the theoretically predicted coupling matrix is recovered perfectly from the data. Instead, some mode couplings suggested by Equation 13a may not be present or modified in the particular realization of the ABP dynamics that was coarse-grained. Indeed, direct simulation of the learned model projected in real space (Figure 3E) reveals a density and flux dynamics that agrees very well with the dynamics of the the coarse-grained input data (Figure 3D). Altogether, these results demonstrate that the proposed inference framework enables us to to faithfully recover expected mean-field dynamics from coarse-grained fields of noisy particle-based data.\n\n#### Learning developmental mode dynamics from experimental data\n\nThe same inference framework can now be directly applied to the coarse-grained experimental zebrafish embryo data shown in Figure 1C and D, yielding a sparse coefficient matrix $M$ (Figure 4A and B) that encodes the dynamics of the developmental mode vector $a\u2062(t)=[\u03c1_{l\u2062m}\u2062(t),j_{l\u2062m}^{(1)}\u2062(t),j_{l\u2062m}^{(2)}\u2062(t)]^{\u22a4}$ according to Equation 12. The inferred coupling between the time derivative of density modes $\u03c1_{l\u2062m}$ and flux modes $j_{l\u2062m}^{(1)}$ faithfully recovers mass conservation (Figure 4C; see Equation 6). Overall, the learned matrix $M$ has 395 non-zero elements, effectively providing further compression of the experimental data, which required 2,250 spatio-temporal mode coefficients collected in $a^_{n}$ (see Equation 7) for its representation. Using the mode vector $a(t=0)$ of the first experimental time point as the initial condition, the inferred minimal model Equation 12 with $M$ shown in (Figure 4A and B) faithfully recovers both the mode and real-space dynamics seen in the coarse-grained fields of the experimental input data (Figure 4E\u2013G, Video 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig4-v2.jpg)\n\n**Figure 4.:** (A) Visualization of the constant mode coupling matrix $M$ that was learned from experimental data (see Appendix 4) and describes the dynamics of the mode vector $a=[\u03c1_{l\u2062m}\u2062(t),j_{l\u2062m}^{(1)}\u2062(t),j_{l\u2062m}^{(2)}\u2062(t)]^{T}$ via Equation 12. Dimensionless fields are defined by $\u03c1^_{l\u2062m}=R_{s}^{2}\u2062\u03c1_{l\u2062m}$ and $j^_{l\u2062m}^{(i)}=R_{s}\u2062\u0394\u2062t\u2062j_{l\u2062m}^{(i)}$ ($i=1,2$) with $R_{s}=300\\mum$ and $\u0394\u2062t=2$ min. (B) Scaling the learned matrix $M$ by the Mean Absolute Deviation (MAD) of the modes (see Appendix 4) reveals structures reminiscent of the mode coupling matrix learned for ABPs (Figure 3C). (C) The learned model recovers mass conservation in mode space (Equation 6). (D) Comparison of theoretical and inferred real-space kernels (see Equation 14 and Appendix 4) for the ABP dynamics and for the experimental data of collective cell motion. The trace of the non-dimensional kernel $M^^{J}\u2062(r,r^{\u2032})$ (the only non-zero eigenvalue, Appendix 4\u2014figure 2) indicates a localized flux-flux coupling with a similar profile among both systems. The oscillating magnitude of the non-dimensionalized density-flux kernel $|m^^{\u03c1}\u2062(r,r^{\u2032})|$ (insets) in the ABP system indicates a gradient-like coupling and is consequence of the persistent ABP motion. In the experimental data, a first peak around $\\omega=\\pi/4$ is also visible, but less pronounced. All kernel properties were computed by averaging over pairs of positions $r,r^{\u2032}$ that are separated by the same angular distance $\\omega=arccos\u2061(r\u22c5r^{\u2032})\\in[0,\\pi]$. Solid lines indicate mean, shaded areas indicate standard deviation. (E) Comparison of experimental mode dynamics (circles) with numerical solution (solid line) of the minimal model Equation 12 for learned matrix $M$ visualized in A. For clarity, the comparison is shown for the two dominant modes of each set of harmonic modes $\u03c1_{l\u2062m},j_{l\u2062m}^{(1)}$ and $j_{l\u2062m}^{(2)}$. (F, G) Mollweide projections of the experimental data (F) and of the numerical solution of the learned model (G) show very good agreement (Video 4). Blue lines and arrows illustrate streamlines defined by the cell flux $J\u2062(r,t)$, circles depict defects with topological charge +1 (white) and -1 (red).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68679/elife-68679-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Mollweide projections from simulations of the model Equation 12 with $M$ depicted in Figure 4B that was learned for experimental data from sample 1, but using different initial conditions (from top to bottom): initial condition from experimental data set sample 2 (Figure 2\u2014figure supplement 1); initial condition from sample 1 rotated by 10\u00b0 away from the animal pole; initial condition from sample one with $\u03f5=10$ % of the density at the animal pole removed. For the latter, the initial density field of sample one is multiplied by a factor $1\u2212\u03f5f_{6}(\\theta)$, where $f_{6}(\\theta)$ denotes the $k=6$ density coarse-graining kernel (see Appendix 1) evaluated at polar angle $\\theta$. Blue lines and arrows illustrate streamlines defined by the cell flux $J\u2062(r,t)$, circles depict defects with topological charge +1 (white) and -1 (red).\n\n![Video 4.](https://cdn.elifesciences.org/articles/68679/elife-68679-video4.mp4.jpg)\n\n**Video 4.:** Comparison of dynamics of the experimental and learned density $\u03c1\u2062(r,t)$ (colormap) and flux fields $J(r,t)$ (streamlines) represented in a Mollweide projection.White circles depict topological defects of charge +1 in the vector field $J(r,t)$, red circles depict defects with charge -1. The total defect charge is 2 at all times. Top row depicts the coarse-grained (see Equation 2a) and projected (see Equations 4\u20137) experimental data, snapshots in the bottom row are obtained by reintegrating the ordinary differential equation model Equation 12 using the learned matrix $M$ (see Figure 4A). The colorbar is at each time point scaled to the interval [0, $max_{r}\u2062\u03c1\u2062(r,t)$].\n\nIt is instructive to analyze the inferred matrix $M$ and the linear model it encodes in more detail. Comparing the MAD-rescaled matrix (see Appendix 4) learned for the experimental zebrafish data (Figure 4B) with the non-dimensionalized matrix learned for the active Brownian particle dynamics (Figure 3C), we find similar patterns of prominent diagonal and block-diagonal couplings. Consistent with the analysis of single cell trajectories (Shah et al., 2019), this suggests that a random, but persistent movement of cells akin to ABPs moving on a sphere partially contributes to the early gastrulation process in zebrafish. This is complemented in the minimal model of the experimental dynamics by significant off-diagonal contributions (Figure 4B), which are absent in the non-interacting ABP model. Such off-diagonal contributions represent effective linear approximations of cell-cell interactions, environmental influences or other external stimuli reflected in the experimental time-series data. Ultimately, such contributions to the mode coupling matrix $M$ help realize the symmetry breaking process observed in the underlying experimental data (Figure 2).\n\nThe inferred mode coupling matrix $M$ shown in Figure 4B together with Equation 12 provides a highly robust minimal model. Specifically, despite being linear, it is numerically stable over a period approximately four times as long as the input data from which the matrix $M$ was learned. Furthermore, simulations with modified initial conditions (see Figure 4\u2014figure supplement 1) still exhibit a characteristic symmetry breaking and lead to the emergence of density and flux patterns similar to those seen in Figure 4F and G. For example, simulating Equation 12 using the initial condition of a different experimental data set (Figure 2\u2014figure supplement 1) leads to final patterns with the same symmetry as in the original training data, further corroborating that the observed symmetry breaking is directly encoded in the interactions represented by the matrix $M$. A similar robustness is observed under moderate perturbations of the initial condition, such as a rotation of initial cell density patterns relative to the coordinate system in which $M$ was inferred, or a local depletion of the initial density, emulating a partial removal of cells as experimentally realized in Morita et al., 2017. Taken together, these numerical experiments demonstrate that the inferred mode coupling matrix $M$ meaningfully captures the dynamics and interactions of cells that facilitate the symmetry breaking observed during early zebrafish development.\n\n#### Green\u2019s function representation of learned models in real space\n\nTo characterize the inferred spatial interactions in more detail, we can analyze the real-space representation of the learned mode coupling matrix $M$. While the density dynamics represented by $M$ (the first row in Figure 4AB) simply reflects mass conservation Equation 1 in real space, the dynamics of the flux (the second and third row in Figure 4A and B) corresponds in real space to the integral equation (Appendix 4)\n\n$$\n\\frac{\\partial}{\\partial\u2061t}J(r,t)=\\intd\u03a9^{\u2032}[m^{\u03c1}(r,r^{\u2032})\u03c1(r^{\u2032},t)+M(r,r^{\u2032})J\u22c5J(r^{\u2032},t)],\n$$\n\nwhere $d\u2062\u03a9^{\u2032}=sin\u2061\\theta^{\u2032}\u2062d\u2062\\theta^{\u2032}\u2062d\u2062\u03d5^{\u2032}$ is the spherical surface area element. The vector-valued kernel $m^{\u03c1}\u2062(r,r^{\u2032})$ in Equation 14 connects the distribution of cell density $\u03c1$ across the surface to dynamic changes of the flux $J$ at a given point $r$. Similarly, the matrix-valued kernel $M^{J}\u2062(r,r^{\u2032})$ describes how the distribution of cell fluxes at $r^{\u2032}$ affects temporal changes of the flux at $r$.\n\nTo analyze the spatial range of interactions between points $r$ and $r^{\u2032}$, we use the fact that the matrix-valued kernel $M^{J}\u2062(r,r^{\u2032})$ has only one non-zero eigenvalue (Appendix 4\u2014figure 2). Consequently, the trace $tr\u2062(M^{J})$ serves as a proxy for the distance-dependent interaction strength mediated by $M^{J}$. Averages of $tr\u2062(M^{J})$ over point-pairs with the same angular distance $\\omega=acos\u2062(r\u22c5r^{\u2032})$ are shown for the ABP dynamics and for the minimal model inferred from experimental data in Figure 4D. Note that to make the models amenable to comparison, we compute $M^{J}\u2062(r,r^{\u2032})$ from the known mean-field model of ABPs (Equation 13a) using the same finite number of modes as used to represent the ABP and the zebrafish data ($l_{max}=4$). In theory, one expects for the ABP dynamics a highly localized, homogeneous kernel $tr\u2062(M^{J})\u223c\\delta\u2062(r-r^{\u2032})$, so that an exact spectral representation would require an infinite number of modes (see Appendix 4). In practice, using a finite number of modes leads to a wider kernel range (Figure 4D \u2019ABP theory\u2019) and introduces an apparent spatial inhomogeneity, as indicated by the non-zero standard deviation of $tr\u2062(M^{J})$ at fixed distance $\\omega$ (blue shades). Both the quantitative profile of $tr\u2062(M^{J})$ and its variation are successfully recovered by applying the inference framework to stochastic simulations of ABPs (Figure 4D \u2019ABP simulation\u2019) where $M^{J}\u2062(r,r^{\u2032})$ was computed from the learned mode coupling matrix $M$ shown in Figure 3C. For the inferred minimal model of the cell dynamics (Figure 4D \u2019Zebrafish experiment\u2019), we find a similar short-ranged flux-flux coupling mediated by $M^{J}$. However, the increased variability of $tr\u2062(M^{J})$ at fixed distances $\\omega$ indicates more substantial spatial inhomogeneities of the corresponding interactions. These inhomogeneities are absent in a non-interacting system of ABPs and represent an interpretable real-space signature of the symmetry-breaking mechanisms built into the underlying mode coupling matrix $M$.\n\nA similar analysis can be performed for the kernel $m^{\u03c1}\u2062(r,r^{\u2032})$ that couples the density at position $r^{\u2032}$ to dynamics of fluxes at position $r$ (see Equation 14), where we average the magnitude $|m^{\u03c1}\u2062(r,r^{\u2032})|$ over pairs ($r$, $r^{\u2032}$) with the same angular distance $\\omega$ (Figure 4D insets). Using a finite number of modes to compute this kernel in the different scenarios again introduces apparent spatial inhomogeneities in all cases. Additionally, all kernel profiles exhibit a distinct maximum at short range, indicating a coupling between density gradients and the flux dynamics that emerges microscopically from a persistent ABP and cell motion (see Appendix 3 and 4) \u2013 an observations that is consistent with the similar block-diagonal structure of both inferred matrices $M$ (compare Figures 3C and 4B).\n\nIn conclusion, the real-space analysis and comparison of inferred interaction kernels further highlights potential ABP-like contributions to the collective cellular organization during early zebrafish development and reveals an effectively non-local coupling between density and flux dynamics. The latter could result, for example, from unresolved fast-evolving morphogens (Hannezo and Heisenberg, 2019), through mechanical interactions with the surrounding material (M\u00fcnster et al., 2019) or due to other relevant degrees of freedom that are not explicitly captured in this linear hydrodynamic model. More generally, a real-space representation of kernels provides an alternative interpretable way to study the interactions and symmetry-breaking mechanisms encoded by models directly learned in mode space.\n\n## Discussion\n\nLeveraging a sparse mode representation of collective cellular dynamics on a curved surface, we have presented a learning framework that translates single-cell trajectories into quantitative hydrodynamic models. This work complements traditional approaches to find quantitative continuum models of complex multicellular processes (Etournay et al., 2015; Hannezo et al., 2015; Morita et al., 2017; Streichan et al., 2018; M\u00fcnster et al., 2019) that match problem-specific constitutive relations of active materials in real-space with experimental observations. We have demonstrated here that length scales and symmetries associated with a mode representation can directly inform about the character of symmetry breaking transitions and topological features of collective cellular motion even before a model is specified. The successful applications to synthetic ABP simulation data and experimental zebrafish embryo data show that model learning in mode space provides a promising and computationally feasible approach to infer quantitative interpretable models in complex geometries.\n\nThe learned linear minimal model for cell migration during early zebrafish morphogenesis quantitatively recapitulates the spatiotemporal dynamics of a complex developmental process (Figure 4F and G), and highlights similarities between collective cell migration and analytically tractable ABP dynamics on a curved surface. An extension to nonlinear mode-coupling models or an integration of additional, experimentally measured degrees of freedom, such as concentration fields of morphogens involved in mechanochemical feedbacks (Hannezo and Heisenberg, 2019), is in principle straightforward by including nonlinear terms in Equation 12. Furthermore, the above framework could be generalized to describe the dynamics within a spherical shell of finite height by complementing the surface vector SHs used in this work by their radial counterpart (Barrera et al., 1985).\n\nTo provide a concrete example, we focused here on applying the model learning framework to single-cell tracking data of early zebrafish morphogenesis. However, the essentially spherical organization of cells during gastrulation observed in zebrafish is shared by many species whose early development occurs through a similar discoidal cleavage (Gilbert and Barresi, 2016), and the framework introduced here is directly applicable once tracking data becomes available for these systems. More generally, as novel imaging technologies are being developed (Keller et al., 2010; Royer et al., 2016; Shah et al., 2019), we expect that even larger and more detailed imaging data will further facilitate the exploration of finer scales and length-scale bridging processes (Lenne et al., 2021) through learning approaches that directly built on mode-based data representations.\n\n## Materials and methods\n\n### Data pre-processing\n\nWe obtained two single-cell tracking data sets from the experiments described in Shah et al., 2019. These data consist of the Cartesian coordinates of each cell together with a tracking ID. Some of the data is accessible at https://idr.openmicroscopy.org with ID number idr0068. We first denoised each cell trajectory using MATLAB\u2019s (Matlab, 2019) wavelet denoiser function wdenoise, and centered the cloud of cells by least-squares fitting a spherical surface through it and shifting the origin at each time to coincide with the center of this sphere. We then computed the velocity of each cell by using Tikhonov-regularized differentiation as described in Knowles and Renka, 2014 and implemented in the MATLAB third-party module rdiff (Wagner, 2020). After examination of the cells\u2019 velocity distribution, we further removed outlier cells whose speed is in the 95th percentile or above and verified that this operation only removes aberrant cells. Finally, we rotated the data to align the animal pole of the embryo with the $z$-axis, as determined by the direction of the center of mass of the initial cell distribution. The resulting single cell data are shown as point clouds in Figure 1B and in Video 1.\n\n### Topological defect tracking\n\nWe have developed a defect tracker that identifies topological defects in vector fields tangent to a spherical surface via integration along suitable Burger circuits. The corresponding software is available at (https://github.com/NicoRomeo/surf-vec-defects; Romeo, 2022, copy archived at swh:1:rev:6dc742c376b0d085e19ece65f932ac6935342aba).\n",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "d6a5be12-3bd2-49ec-9b64-cf9434c9cc5a",
+      "submission_id": "19f2df15-e35d-4f3e-9775-85c392d51121",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68679.sa0](https://doi.org/10.7554/eLife.68679.sa0)\n\nThis work proposes a method to obtain a reduced description of the collective dynamics of thousands of cells moving together during zebrafish gastrulation as a few fundamental modes, and to derive effective dynamics for these modes. This well-written work enables a simplified picture of the key features of cellular collective motion, that will be useful to physicists and biologists looking for a quantitative understanding of morphogenesis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68679.sa1](https://doi.org/10.7554/eLife.68679.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Learning developmental mode dynamics from single-cell trajectories\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Sebastian F\u00fcrthauer (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) How good is the mode decomposition?\n\n\u2013 It is not a priori clear that the mode decomposition suggested is a good representation of the data. It would be helpful if the authors quantified and discussed the error between the continuous low dimensional representation of the data and the raw data.\n\n\u2013 Along the same lines, are there a conditions under which mode decomposition is expected to fail? The authors should give a clear idea on when the ideas presented here are applicable and when not.\n\n2) How trustworthy are the inferred summary statistics?\n\nThe summary statistic ( defect numbers / fluctuations ) need to be tested against some ground truth. If this is not possible from the data used here it would be illuminating if the authors could test against artificial data.\n\n3) How predictive is the inferred forward model?\n\n\u2013 In Figure 3 the authors compare the inferred dynamics and the real data. This is very appealing and the strong point of the paper. We are, however, confused whether the matrix M is inferred using the full time course of the experiment, or just parts of the time course. In other words is M just a way of rewriting the coefficients in Equation 7?\n\n\u2013 As it stands we are unclear of what is being learned in M since there is no clear separation between a 'training' and a 'test' set of samples.\n\n4) The paper could greatly benefit if the authors used their method to infer the known dynamics of some artificial data. Then they could validate the inferred model against time courses generated from different initial conditions and against unseen data.\n\n5) We understand that the integral of the field \u03c1 on the surface is 1? We would suggest to mention this already in Equation 1. We also assume that with this definition, J is not actually a cell number flux, but a normalised cell number flux?\n\n6) Because the effective Equations 2a and 2b are written for normalised densities, we understand that cell division and death are effectively absorbed in a flux. So if cells were undergoing cell division in some region of space, and cell apoptosis in another region, this would be interpreted as a net flux between the two regions. Isn't that a potential issue of the method? Can the authors further comment on this?\n\n7) We would argue that one central conclusion of the manuscript is in Figure S6, showing that local rules of interaction cannot explain the dynamics of the system. That is also one potential weakness of the approach: what is exactly learned by the effective dynamics? There is a complex set of interactions between modes suggested by Figure 3D but what is their meaning, given that Figure S6 also indicates, as the authors also point out, that there are missing unresolved players in the equations? The whole approach would be more convincing if the authors could show that the effective learned model have some predictive value. For instance, would changing the initial condition in the integration of the effective system, gives a result that makes sense in regard to the developmental dynamics; indicating that the effective dynamics is not tied to one particular realisation of the biological system?\n\nReviewer #1:\n\nThe authors present ideas for obtaining a low dimensional representations of the complex and rich data obtained in cell tracking experiments on zebra fish gastrulation. They argue that such a low dimensional representation can be used to infer a dynamical model from the data. These ideas are potentially very important. However, the methods presented here need to be more explicitly validated.\n\nReviewer #2:\n\nRomeo et al. describe a method for the analysis of the collective flow of cells and its decomposition into modes of motion. The authors start by defining a local density and a local flux by coarse-graining the discrete data in a consistent way. The density and flux fields are then projected onto scalar and vectorial spherical harmonics, and the authors show that a relatively small number of modes is sufficient to account for the flow field; the evolution of some of these modes with lower symmetry reflects major changes in the cell density pattern in the embryo. The authors then look for a linear mode coupling, first order dynamics model for the modes of lowest order they have kept in their analysis. This procedure defines an effective model for the dynamics of the system. Looking in real space at the spatial couplings shows that these effective couplings do not decay spatially, but are long-ranged; indicating that local rules for fluxes cannot capture the dynamics of the system.\n\nThe authors presents an elegant and solid work which is done with a very high level of care and rigour. The excellent level of clarity of the manuscript, which presents its concepts in a well-structured manner, makes it really nice to read. The method described by the authors, notably, gives a way to analyse cellular trajectories in a reduced dimensional space which is helpful to characterise the complex cellular flows.\n",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "93d27482-7e31-44ba-838c-b969d13b6cf5",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C1",
+      "claim": "Embryogenesis is a multiscale process during which developmental symmetry breaking transitions give rise to complex multicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryogenesis is a multiscale process during which developmental symmetry breaking transitions give rise to complex multicellular organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about embryogenesis that draws from established scientific understanding of developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "9b0fba4b-5a2c-46ad-96b1-3b02be250848",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C2",
+      "claim": "Recent advances in high-resolution live-cell microscopy provide unprecedented insights into the collective cell dynamics at various stages of embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in high-resolution live-cell microscopy provide unprecedented insights into the collective cell dynamics at various stages of embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent literature on imaging technologies in the Introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "76ba4e79-d326-43ce-9299-bb3b79d2ef87",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C3",
+      "claim": "The mode-based model learning framework can translate single-cell trajectory data on curved surfaces into quantitative models for the dominant hydrodynamic modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on these ideas, we construct and demonstrate here a computational framework that translates developmental single-cell trajectory data on curved surfaces into quantitative models for the dominant hydrodynamic modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main methodological contribution demonstrated through the manuscript's results with both synthetic and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "18779820-f18e-4b9f-8fa7-7b3f4b507b4e",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C4",
+      "claim": "Mode representations provide a powerful tool to decompose and study system dynamics at and across different energetic, spatial and temporal scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Widely applied in physics (Kac, 1966; Goldenfeld and Woese, 2011; Kantsler and Goldstein, 2012; Bhaduri et al., 2020), engineering (Soong and Grigoriu, 1993; Heydari et al., 2021), and spectral computing (Driscoll et al., 2014; Burns et al., 2020; Fortunato et al., 2021), mode representations (Schmid, 2010; Tu et al., 2014) provide a powerful tool to decompose and study system dynamics at and across different energetic, spatial and temporal scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work in physics, engineering, and spectral computing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "a91faa60-3dc0-429e-a6ae-d4fea3343b89",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C5",
+      "claim": "Mode representations are not yet widely used to characterize and compress cell tracking data, or to infer dynamic models from such data.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this fact, however, mode representations are not yet widely used to characterize and compress cell tracking data, or to infer dynamic models from such data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the current state of the field, based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "be88254d-58a6-4466-b96e-ec86f17b9bd8",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C6",
+      "claim": "The experimentally observed cell motions during early zebrafish gastrulation are approximately two-dimensional.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimentally observed cell motions are approximately two-dimensional (2D): The radius of the yolk cell surface on which the dynamics takes place is much larger than the average height changes of the evolving cell mass (Shah et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Shah et al., 2019 and is used to justify the 2D approximation in the model.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "d10dfc78-8ba8-4bd7-9131-2fbb32a29204",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C7",
+      "claim": "A thin film approximation is adopted where cellular motion is represented on an effective spherical mid-surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore adopt a thin film approximation, in which the cellular motion is represented on an effective spherical mid-surface (gray surface in Figure 1B); refined future models should aim to account for the full 3D dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice made by the authors, justified by the 2D nature of the observed cell motions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "8870fa5c-a04a-45b0-85eb-708f63d67249",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C11",
+      "claim": "Cell divisions are essential to most developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because cell divisions are essential to most developmental processes, total cell numbers will in many cases \u2013 including early zebrafish gastrulation (Kobitski et al., 2015) \u2013 vary over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general biological fact supported by citation to Kobitski et al., 2015 for the specific case of zebrafish gastrulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "179f62d5-8af1-4704-9e61-9932a2104c0c",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C12",
+      "claim": "Total cell numbers vary over time during early zebrafish gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because cell divisions are essential to most developmental processes, total cell numbers will in many cases \u2013 including early zebrafish gastrulation (Kobitski et al., 2015) \u2013 vary over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kobitski et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "a958b9e7-2801-429c-bc9f-528c9b3dd98b",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C22",
+      "claim": "The time point at around 300 min approximately marks the completion of epiboly.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this time point approximately marks the completion of epiboly, when the different cell layers have fully engulfed the yolk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data in relation to known developmental stages.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "6e122626-e582-4d98-a287-0c3a55bf6836",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C23",
+      "claim": "Mode signatures of the symmetry breaking and progression through developmental stages are robust.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that mode signatures of the symmetry breaking and progression through developmental stages are robust (Figure 2\u2014figure supplement 1B, D), illustrating that mode-based analysis can provide a systematic and meaningful characterization of developmental symmetry breaking events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by analyzing a second experimental dataset, shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "9d849039-32e9-44de-914f-8b908fb3c1af",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C24",
+      "claim": "The total topological charge of defects in the cell flux on a sphere always sums to +2.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the vector-valued flux is defined on a sphere, we observe that the total topological charge always sums to +2 (Kamien, 2002), while additional defect pairs with opposite charge (red +1 and white -1 circles in Figure 2A) can be created, resulting in total defect numbers greater than two (see Figure 2C, bottom).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a topological constraint for vector fields on a sphere, supported by citation to Kamien, 2002, and verified in the data.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "6ad2e345-c8bd-4516-851b-c1fa838ceb5a",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C26",
+      "claim": "Topological defects in the 2D projected cellular flux fields could signal the start of the formation of more complex structures in three dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of additional defects at the end of epiboly, when the developing embryo begins to extrude more significantly in the radial direction, suggests that topological defects in the 2D projected cellular flux fields could signal the start of the formation of more complex structures in three dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed correlation between defect formation and developmental stage.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "6671a87b-8ebd-400d-8213-43216c8bc5c7",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C27",
+      "claim": "The inference framework correctly recovers the hydrodynamic equations for active Brownian particle (ABP) dynamics on curved surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate the approach, we demonstrate that it correctly recovers the hydrodynamic equations for active Brownian particle (ABP) dynamics on curved surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing the learned matrix M with the analytically predicted matrix for ABP dynamics, shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "8fdfa139-57ec-4434-aa37-56043a973700",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C31",
+      "claim": "Direct simulation of the learned model for ABP dynamics agrees very well with the dynamics of the coarse-grained input data.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, direct simulation of the learned model projected in real space (Figure 3E) reveals a density and flux dynamics that agrees very well with the dynamics of the the coarse-grained input data (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by visual comparison of Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "d7a455b7-36f3-4ede-a966-b621f89a600a",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C35",
+      "claim": "The MAD-rescaled matrix learned for the experimental zebrafish data shows similar patterns of prominent diagonal and block-diagonal couplings as the matrix learned for ABP dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the MAD-rescaled matrix (see Appendix 4) learned for the experimental zebrafish data (Figure 4B) with the non-dimensionalized matrix learned for the active Brownian particle dynamics (Figure 3C), we find similar patterns of prominent diagonal and block-diagonal couplings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by visual comparison of Figure 4B and Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "04bff1a2-d8a1-48de-b6ab-9c21662a8f3d",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C36",
+      "claim": "A random, but persistent movement of cells akin to ABPs moving on a sphere partially contributes to the early gastrulation process in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the analysis of single cell trajectories (Shah et al., 2019), this suggests that a random, but persistent movement of cells akin to ABPs moving on a sphere partially contributes to the early gastrulation process in zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity between the learned matrices for zebrafish and ABP dynamics, and is consistent with prior analysis by Shah et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "36c89ea7-3daa-40f5-91d0-bf63c82b0583",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C38",
+      "claim": "Simulations with modified initial conditions still exhibit a characteristic symmetry breaking and lead to the emergence of density and flux patterns similar to those seen in the original data.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, simulations with modified initial conditions (see Figure 4\u2014figure supplement 1) still exhibit a characteristic symmetry breaking and lead to the emergence of density and flux patterns similar to those seen in Figure 4F and G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the simulations shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "2bf1b0d7-9e61-4194-8c17-979a0faaa0e7",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C44",
+      "claim": "The real-space analysis reveals an effectively non-local coupling between density and flux dynamics in the zebrafish data.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the real-space analysis and comparison of inferred interaction kernels further highlights potential ABP-like contributions to the collective cellular organization during early zebrafish development and reveals an effectively non-local coupling between density and flux dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of the kernel m^\u03c1(r,r') shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "fcd32a35-b66a-4926-bc99-240744bd0a18",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C45",
+      "claim": "The non-local coupling between density and flux could result from unresolved fast-evolving morphogens, mechanical interactions with the surrounding material, or other relevant degrees of freedom not explicitly captured in the linear hydrodynamic model.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter could result, for example, from unresolved fast-evolving morphogens (Hannezo and Heisenberg, 2019), through mechanical interactions with the surrounding material (M\u00fcnster et al., 2019) or due to other relevant degrees of freedom that are not explicitly captured in this linear hydrodynamic model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed non-local coupling, supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "9bb113dc-e14b-4885-bb12-27c304466eb7",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C46",
+      "claim": "The learned linear minimal model for cell migration during early zebrafish morphogenesis quantitatively recapitulates the spatiotemporal dynamics of the developmental process.",
+      "claim_type": "EXPLICIT",
+      "source": "The learned linear minimal model for cell migration during early zebrafish morphogenesis quantitatively recapitulates the spatiotemporal dynamics of a complex developmental process (Figure 4F and G), and highlights similarities between collective cell migration and analytically tractable ABP dynamics on a curved surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing the model predictions with experimental data in Figure 4F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "346e8a75-77d7-479b-99a4-a72982ec5ddc",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C47",
+      "claim": "The learned model highlights similarities between collective cell migration during early zebrafish morphogenesis and analytically tractable ABP dynamics on a curved surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The learned linear minimal model for cell migration during early zebrafish morphogenesis quantitatively recapitulates the spatiotemporal dynamics of a complex developmental process (Figure 4F and G), and highlights similarities between collective cell migration and analytically tractable ABP dynamics on a curved surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of the learned matrices and kernels for zebrafish and ABP dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "616fd467-e455-44d1-8408-2f66ba2c0dd4",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C48",
+      "claim": "An extension to nonlinear mode-coupling models or an integration of additional experimentally measured degrees of freedom is in principle straightforward by including nonlinear terms in Equation 12.",
+      "claim_type": "EXPLICIT",
+      "source": "An extension to nonlinear mode-coupling models or an integration of additional, experimentally measured degrees of freedom, such as concentration fields of morphogens involved in mechanochemical feedbacks (Hannezo and Heisenberg, 2019), is in principle straightforward by including nonlinear terms in Equation 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future extensions of the framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "d8d64a04-4ceb-4f6a-811b-5b2759dba55d",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C49",
+      "claim": "The framework could be generalized to describe the dynamics within a spherical shell of finite height by complementing the surface vector SHs with their radial counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the above framework could be generalized to describe the dynamics within a spherical shell of finite height by complementing the surface vector SHs used in this work by their radial counterpart (Barrera et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future extensions of the framework, supported by citation to Barrera et al., 1985.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "5f562603-a53e-4f61-b21f-ab58b1ff8341",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C50",
+      "claim": "The essentially spherical organization of cells during gastrulation observed in zebrafish is shared by many species whose early development occurs through discoidal cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the essentially spherical organization of cells during gastrulation observed in zebrafish is shared by many species whose early development occurs through a similar discoidal cleavage (Gilbert and Barresi, 2016), and the framework introduced here is directly applicable once tracking data becomes available for these systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the approach, supported by citation to Gilbert and Barresi, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "6b4867b9-bf66-43c6-ba80-c34b31f1f3ae",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C51",
+      "claim": "The framework is directly applicable to other species with similar spherical organization of cells during gastrulation once tracking data becomes available.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the essentially spherical organization of cells during gastrulation observed in zebrafish is shared by many species whose early development occurs through a similar discoidal cleavage (Gilbert and Barresi, 2016), and the framework introduced here is directly applicable once tracking data becomes available for these systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the applicability of the framework to other biological systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "1d0007cb-6f79-4de6-bd71-00ccbfc316eb",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C53",
+      "claim": "Two single-cell tracking data sets were obtained from the experiments described in Shah et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained two single-cell tracking data sets from the experiments described in Shah et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the experimental data used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "5e31aab4-1efb-48ca-ac86-cb61e26d4a58",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C54",
+      "claim": "Some of the data is accessible at https://idr.openmicroscopy.org with ID number idr0068.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the data is accessible at https://idr.openmicroscopy.org with ID number idr0068.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "f77aeaf2-ecc5-4bcd-b638-d814fcdcf20f",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C55",
+      "claim": "Cell trajectories were denoised using MATLAB's wavelet denoiser function wdenoise.",
+      "claim_type": "EXPLICIT",
+      "source": "We first denoised each cell trajectory using MATLAB's (Matlab, 2019) wavelet denoiser function wdenoise, and centered the cloud of cells by least-squares fitting a spherical surface through it and shifting the origin at each time to coincide with the center of this sphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific data processing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "55f4ee7e-59dd-40e4-9442-db92b8f23667",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C56",
+      "claim": "Cell velocities were computed using Tikhonov-regularized differentiation as described in Knowles and Renka, 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "We then computed the velocity of each cell by using Tikhonov-regularized differentiation as described in Knowles and Renka, 2014 and implemented in the MATLAB third-party module rdiff (Wagner, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific data processing step, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "abc95a49-0d00-4cbd-a6b5-62fca09bac93",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "claim_id": "C57",
+      "claim": "Outlier cells whose speed is in the 95th percentile or above were removed.",
+      "claim_type": "EXPLICIT",
+      "source": "After examination of the cells' velocity distribution, we further removed outlier cells whose speed is in the 95th percentile or above and verified that this operation only removes aberrant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific data filtering step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ad798437-dfba-456b-86ce-721a33a4cc1c",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors develop a mode-based computational framework that translates single-cell trajectory data on curved surfaces into quantitative hydrodynamic models. This framework leverages mode representations (spherical harmonics) that are powerful tools in physics and engineering but have not been widely applied to cell tracking data or dynamic model inference in developmental biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 establish the novelty and utility of the approach. The framework is demonstrated on both synthetic ABP data (C27, C31) and experimental zebrafish data (C46), showing it can successfully compress high-dimensional data and infer predictive models. The citations in C4 support the utility of mode representations in other fields, while C5 correctly identifies the gap this work fills.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "1c158085-5cbc-49be-806c-b2c035d3c0ab",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors adopt a thin film approximation where cellular motion during early zebrafish gastrulation is represented on an effective spherical mid-surface, justified by the approximately two-dimensional nature of the observed cell motions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 describe a key modeling assumption. C6 is supported by citation to Shah et al., 2019 and the observation that the yolk cell radius is much larger than average height changes. The authors acknowledge in C7 that this is an approximation and that future models should account for full 3D dynamics, demonstrating appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "582fce3b-799c-401e-91f4-1ef9cc3b9de5",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cell divisions cause total cell numbers to vary over time during early zebrafish gastrulation, which is essential to most developmental processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 state established biological facts supported by citation to Kobitski et al., 2015. These claims provide biological context for the methodological choices made in handling cell number variations in the coarse-graining approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "181e3a78-e1bd-4940-a297-b37a4b62ca81",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mode-based analysis provides robust signatures of developmental symmetry breaking, with the time point around 300 min marking the completion of epiboly when density fluctuations become minimal across all modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by data shown in Figure 2B and Figure 2\u2014figure supplement 1B,D. The robustness is demonstrated by analyzing a second experimental dataset. The correlation between mode signatures and known developmental stages (epiboly completion) provides biological validation of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "ad1fb80a-5550-4e92-bed7-49a38b26800b",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The total topological charge of defects in the cell flux on a sphere always sums to +2, and the appearance of additional defects at the end of epiboly may signal the start of formation of more complex 3D structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is a well-established topological constraint (supported by Kamien, 2002) that is verified in the data. Claim C26 is appropriately presented as speculative (\"could signal\") and represents a reasonable interpretation of the correlation between defect formation and the developmental transition to 3D extrusion. The speculation is clearly marked and supported by the observed data patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "6995152e-ff47-4699-bfc8-16c35da2c28d",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The inference framework correctly recovers the hydrodynamic equations for active Brownian particle (ABP) dynamics on curved surfaces, with direct simulation of the learned model agreeing very well with coarse-grained input data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C31 describe validation of the framework using synthetic ABP data where analytical predictions are available. Figure 3C shows good quantitative agreement between analytically predicted and inferred matrices M. Figure 3D-E demonstrates that simulations of the learned model match the coarse-grained input data, providing strong validation of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "97c0aaa4-80e1-455b-abd3-c2579c866fa7",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The learned model for zebrafish gastrulation shows similar patterns to ABP dynamics, suggesting that random but persistent cell movement akin to ABPs on a sphere partially contributes to early zebrafish gastrulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 and C47 are supported by visual comparison of learned matrices (Figures 3C and 4B) and analysis of interaction kernels (Figure 4D). The similarity is consistent with prior single-cell trajectory analysis (Shah et al., 2019). The authors appropriately state this as a partial contribution, acknowledging that off-diagonal terms in the zebrafish matrix represent additional interactions not present in non-interacting ABPs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "56dd78d4-8393-4434-b56c-aa29915d85a9",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Simulations with modified initial conditions still exhibit characteristic symmetry breaking and lead to emergence of density and flux patterns similar to those in the original data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is demonstrated in Figure 4\u2014figure supplement 1, which shows simulations with different initial conditions (different experimental sample, rotated initial condition, locally depleted density) all producing similar symmetry-breaking patterns. This demonstrates robustness of the learned model and suggests the symmetry breaking is encoded in the interaction matrix M.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "0a5245cd-3724-4705-8740-76339530ef49",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Real-space analysis reveals effectively non-local coupling between density and flux dynamics in zebrafish data, which could result from unresolved morphogens, mechanical interactions, or other degrees of freedom not captured in the linear model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by analysis of the kernel m^\u03c1(r,r') shown in Figure 4D. Claim C45 appropriately presents speculative interpretations with supporting citations (Hannezo and Heisenberg, 2019; M\u00fcnster et al., 2019). The non-local coupling is a data-driven observation, while the mechanistic explanations are clearly marked as possibilities requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "62b55cd5-93dd-4c44-9b23-42be03cbce8f",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The learned linear minimal model for cell migration during early zebrafish morphogenesis quantitatively recapitulates the spatiotemporal dynamics of the developmental process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is demonstrated by comparing model predictions with experimental data in Figure 4F-G and Video 4. The model successfully reproduces density patterns, flux dynamics, and topological defect formation over the entire developmental period. The quantitative agreement validates that the linear model captures essential features of the collective cell dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "45439cda-421b-471c-9c32-573bbc930e0f",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The framework can be extended to nonlinear models, generalized to spherical shells of finite height, and is directly applicable to other species with similar spherical cell organization during gastrulation once tracking data becomes available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C49 and C51 describe potential future extensions and applications. While the statements are reasonable based on the demonstrated framework, they represent untested possibilities rather than demonstrated results. C49 is supported by citation to Barrera et al., 1985 for the mathematical basis, and C51 is supported by citation to Gilbert and Barresi, 2016 regarding similar developmental patterns in other species, but actual implementation and validation remain future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "3d965d51-ff1b-4cb2-bcd1-70a720a7a233",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The experimental data from Shah et al., 2019 was preprocessed using wavelet denoising, Tikhonov-regularized differentiation for velocity computation, and outlier removal of cells in the 95th percentile or above for speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 describe the data preprocessing pipeline with appropriate citations and methodological details. The steps are standard and well-justified: denoising addresses measurement noise, regularized differentiation handles numerical differentiation of noisy trajectories, and outlier removal eliminates aberrant tracking. The authors verified that outlier removal only removes aberrant cells (C57).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "76e814b8-2a19-48ef-9152-240cec7d97c0",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Embryogenesis is a multiscale process involving developmental symmetry breaking, and recent advances in high-resolution live-cell microscopy provide unprecedented insights into collective cell dynamics during embryonic development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 provide general background context supported by established knowledge and citations in the Introduction. These are well-accepted statements in developmental biology that motivate the study but do not represent novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    },
+    {
+      "id": "d01a3921-a57b-4bee-a61e-1e28037e9d68",
+      "content_id": "ffcf4216-fb1f-4bf6-b592-2722f75fcd7c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The essentially spherical organization of cells during gastrulation observed in zebrafish is shared by many species whose early development occurs through discoidal cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by citation to Gilbert and Barresi, 2016, a standard developmental biology textbook. This establishes the broader applicability of the spherical geometry framework beyond zebrafish, though actual application to other species remains future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:50:50.953000Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "76ba4e79-d326-43ce-9299-bb3b79d2ef87",
+      "result_id": "ad798437-dfba-456b-86ce-721a33a4cc1c"
+    },
+    {
+      "claim_id": "18779820-f18e-4b9f-8fa7-7b3f4b507b4e",
+      "result_id": "ad798437-dfba-456b-86ce-721a33a4cc1c"
+    },
+    {
+      "claim_id": "a91faa60-3dc0-429e-a6ae-d4fea3343b89",
+      "result_id": "ad798437-dfba-456b-86ce-721a33a4cc1c"
+    },
+    {
+      "claim_id": "be88254d-58a6-4466-b96e-ec86f17b9bd8",
+      "result_id": "1c158085-5cbc-49be-806c-b2c035d3c0ab"
+    },
+    {
+      "claim_id": "d10dfc78-8ba8-4bd7-9131-2fbb32a29204",
+      "result_id": "1c158085-5cbc-49be-806c-b2c035d3c0ab"
+    },
+    {
+      "claim_id": "8870fa5c-a04a-45b0-85eb-708f63d67249",
+      "result_id": "582fce3b-799c-401e-91f4-1ef9cc3b9de5"
+    },
+    {
+      "claim_id": "179f62d5-8af1-4704-9e61-9932a2104c0c",
+      "result_id": "582fce3b-799c-401e-91f4-1ef9cc3b9de5"
+    },
+    {
+      "claim_id": "a958b9e7-2801-429c-bc9f-528c9b3dd98b",
+      "result_id": "181e3a78-e1bd-4940-a297-b37a4b62ca81"
+    },
+    {
+      "claim_id": "6e122626-e582-4d98-a287-0c3a55bf6836",
+      "result_id": "181e3a78-e1bd-4940-a297-b37a4b62ca81"
+    },
+    {
+      "claim_id": "9d849039-32e9-44de-914f-8b908fb3c1af",
+      "result_id": "ad1fb80a-5550-4e92-bed7-49a38b26800b"
+    },
+    {
+      "claim_id": "6ad2e345-c8bd-4516-851b-c1fa838ceb5a",
+      "result_id": "ad1fb80a-5550-4e92-bed7-49a38b26800b"
+    },
+    {
+      "claim_id": "6671a87b-8ebd-400d-8213-43216c8bc5c7",
+      "result_id": "6995152e-ff47-4699-bfc8-16c35da2c28d"
+    },
+    {
+      "claim_id": "8fdfa139-57ec-4434-aa37-56043a973700",
+      "result_id": "6995152e-ff47-4699-bfc8-16c35da2c28d"
+    },
+    {
+      "claim_id": "d7a455b7-36f3-4ede-a966-b621f89a600a",
+      "result_id": "97c0aaa4-80e1-455b-abd3-c2579c866fa7"
+    },
+    {
+      "claim_id": "04bff1a2-d8a1-48de-b6ab-9c21662a8f3d",
+      "result_id": "97c0aaa4-80e1-455b-abd3-c2579c866fa7"
+    },
+    {
+      "claim_id": "346e8a75-77d7-479b-99a4-a72982ec5ddc",
+      "result_id": "97c0aaa4-80e1-455b-abd3-c2579c866fa7"
+    },
+    {
+      "claim_id": "36c89ea7-3daa-40f5-91d0-bf63c82b0583",
+      "result_id": "56dd78d4-8393-4434-b56c-aa29915d85a9"
+    },
+    {
+      "claim_id": "2bf1b0d7-9e61-4194-8c17-979a0faaa0e7",
+      "result_id": "0a5245cd-3724-4705-8740-76339530ef49"
+    },
+    {
+      "claim_id": "fcd32a35-b66a-4926-bc99-240744bd0a18",
+      "result_id": "0a5245cd-3724-4705-8740-76339530ef49"
+    },
+    {
+      "claim_id": "9bb113dc-e14b-4885-bb12-27c304466eb7",
+      "result_id": "62b55cd5-93dd-4c44-9b23-42be03cbce8f"
+    },
+    {
+      "claim_id": "616fd467-e455-44d1-8408-2f66ba2c0dd4",
+      "result_id": "45439cda-421b-471c-9c32-573bbc930e0f"
+    },
+    {
+      "claim_id": "d8d64a04-4ceb-4f6a-811b-5b2759dba55d",
+      "result_id": "45439cda-421b-471c-9c32-573bbc930e0f"
+    },
+    {
+      "claim_id": "6b4867b9-bf66-43c6-ba80-c34b31f1f3ae",
+      "result_id": "45439cda-421b-471c-9c32-573bbc930e0f"
+    },
+    {
+      "claim_id": "1d0007cb-6f79-4de6-bd71-00ccbfc316eb",
+      "result_id": "3d965d51-ff1b-4cb2-bcd1-70a720a7a233"
+    },
+    {
+      "claim_id": "5e31aab4-1efb-48ca-ac86-cb61e26d4a58",
+      "result_id": "3d965d51-ff1b-4cb2-bcd1-70a720a7a233"
+    },
+    {
+      "claim_id": "f77aeaf2-ecc5-4bcd-b638-d814fcdcf20f",
+      "result_id": "3d965d51-ff1b-4cb2-bcd1-70a720a7a233"
+    },
+    {
+      "claim_id": "55f4ee7e-59dd-40e4-9442-db92b8f23667",
+      "result_id": "3d965d51-ff1b-4cb2-bcd1-70a720a7a233"
+    },
+    {
+      "claim_id": "abc95a49-0d00-4cbd-a6b5-62fca09bac93",
+      "result_id": "3d965d51-ff1b-4cb2-bcd1-70a720a7a233"
+    },
+    {
+      "claim_id": "93d27482-7e31-44ba-838c-b969d13b6cf5",
+      "result_id": "76e814b8-2a19-48ef-9152-240cec7d97c0"
+    },
+    {
+      "claim_id": "9b0fba4b-5a2c-46ad-96b1-3b02be250848",
+      "result_id": "76e814b8-2a19-48ef-9152-240cec7d97c0"
+    },
+    {
+      "claim_id": "5f562603-a53e-4f61-b21f-ab58b1ff8341",
+      "result_id": "d01a3921-a57b-4bee-a61e-1e28037e9d68"
+    }
+  ],
+  "comparisons": []
+}

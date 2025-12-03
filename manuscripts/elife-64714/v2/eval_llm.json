@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors developed GLT1-SEP, a pH-sensitive fluorescent variant of the glutamate transporter GLT1, by inserting SEP into the second intracellular loop and expressing it under the gfaABC1D promoter. GLT1-SEP exhibits similar glutamate transport properties to wild-type GLT1 in HEK cells, with indistinguishable normalized current-voltage dependencies, though absolute currents and expression levels are approximately 50% lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 collectively demonstrate successful development of a functional GLT1-SEP construct. The electrophysiological data (C6, C7) show preserved transport function, while expression analyses (C8, C13-C15) document lower but proportional expression. The matched reduction in expression and current (C16) supports functional equivalence per molecule.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Using pH-sensitive properties of GLT1-SEP, the authors determined that 70-75% (R = 0.72 \u00b1 0.18) of GLT1-SEP in astroglial processes is exposed to the extracellular space. Acidification to pH 5.5 suppresses surface fluorescence while NH4Cl permeation reveals both intracellular and extracellular fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 and C17-C19 provide converging evidence for the membrane/intracellular distribution using independent pH manipulation methods. The quantitative estimate (C11) is well-supported by the experimental approach shown in Figure 1D-F, with appropriate controls demonstrating reversibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C56",
+      "C57"
+    ],
+    "result": "FRAP experiments reveal that GLT1-SEP has a membrane lifetime of approximately 22 seconds (k1 = 0.045 \u00b1 0.003 s\u207b\u00b9, k-1 = 0.020 \u00b1 0.001 s\u207b\u00b9, Cin = 0.30 \u00b1 0.01). The intracellular fraction measured by FRAP (Cin = 0.30) matches the value obtained independently by proton permeation (1-R = 0.28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 present kinetic parameters derived from FRAP analysis with appropriate mathematical modeling (Figure 2, Figure 1\u2014figure supplement 1). The concordance between two independent methods (C22) provides strong validation. The rapid turnover rate represents a key finding about GLT1 dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C58"
+    ],
+    "result": "Deletion of the C-terminus (GLT1\u0394C-SEP) moderately increases the intracellular fraction (Cin = 0.35 \u00b1 0.01) but substantially reduces membrane lifetime by nearly half (to ~14 seconds), suggesting the C-terminus plays an important role in retaining GLT1 in the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 demonstrate a clear functional role for the C-terminus using the deletion mutant. The FRAP data (Figure 2C) show statistically significant changes in turnover kinetics while the steady-state distribution remains relatively stable, supporting the interpretation in C25.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The membrane distribution of GLT1-SEP does not necessarily predict the intracellular pattern, with the latter displaying prominent clustering features in some cases, suggesting region-specific membrane dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe heterogeneous subcellular distribution patterns observed in Figure 2D. While the observation is qualitative, the imaging data clearly show differential clustering of intracellular versus membrane fractions, supporting the conclusion of spatial heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C59"
+    ],
+    "result": "SMLM analysis reveals that wild-type GLT1 and GLT1-SEP show closer spatial association with PSD95 clusters than expected by random distribution and form short-distance clusters (up to 50 nm) among themselves. In contrast, GLT1\u0394C-SEP shows spatial dissociation from PSD95 and dense self-clustering, indicating the C-terminus is critical for proper surface expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 present super-resolution microscopy data (Figure 3) with appropriate nearest-neighbor analysis comparing experimental distributions to theoretical random distributions. The contrasting patterns between wild-type/GLT1-SEP and GLT1\u0394C-SEP provide strong evidence for C-terminus involvement in spatial organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "GLT1-SEP exhibits baseline lateral mobility with Cmob = 0.76 \u00b1 0.01, D = 0.152 \u03bcm\u00b2/s, and average diffusivity D* = 0.114 \u03bcm\u00b2/s. Brief glutamate application increases the mobile fraction (Cmob = 0.88 \u00b1 0.003) without affecting diffusivity of the mobile fraction, resulting in an ~18% increase in average mobility, suggesting glutamatergic activity boosts overall membrane mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 present FRAP-based mobility measurements using the Soumpasis method (Figure 4D). The data show statistically significant changes in mobile fraction upon glutamate application. The comparison with previous QD studies (C37) provides context, though different methods yield somewhat different values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C61",
+      "C62"
+    ],
+    "result": "The glutamate-induced increase in GLT1-SEP mobility requires both the C-terminus and metabotropic glutamate receptors. Deletion of the C-terminus or pharmacological blockade of mGluRs eliminates the mobility-boosting effect of glutamate while not affecting baseline mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 demonstrate that both genetic (C-terminus deletion) and pharmacological (mGluR blockade) manipulations abolish the activity-dependent mobility increase (Figure 4E-F). The specificity of the effect (no change in baseline) strengthens the conclusion about the signaling pathway involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "ATP application has no effect on GLT1-SEP mobility, distinguishing the glutamate-mediated pathway from purinergic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 provides an important negative control (Figure 4G) showing specificity of the glutamate effect. While purinergic receptors are important in astroglia, they do not affect GLT1 mobility under these conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Cross-linking surface GLT1-SEP with antibodies reduces FRAP-measured mobility fivefold, validating the sensitivity and dynamic range of the FRAP method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 presents a positive control (Figure 4H) demonstrating that the FRAP method can detect substantial reductions in mobility. This validates the technical approach and establishes the dynamic range of the assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In hippocampal slices, GLT1-SEP diffusivity is similar to cultures, and elevated excitatory activity (bicuculline + 4-AP) increases mobility in a TTX-reversible manner. Control experiments with a sham-protein probe and DMSO vehicle confirm the specificity of the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 extend the culture findings to organotypic slices (Figure 5C, Figure 5\u2014figure supplement 1), a more physiologically relevant preparation. The inclusion of appropriate controls (sham protein, vehicle) strengthens confidence that the observed effects are specific to GLT1 and neuronal activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In hippocampal slices, the activity-dependent increase in GLT1-SEP mobility requires the C-terminus, metabotropic glutamate receptors, intracellular Ca\u00b2\u207a, and calcineurin phosphatase activity, but not broad-range kinase activity (staurosporine-insensitive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 systematically dissect the signaling pathway in slices (Figure 5D-H) using genetic and pharmacological approaches. The convergent results from multiple manipulations (C-terminus deletion, mGluR blockade, BAPTA, FK506) identify key pathway components, while the staurosporine result (C55) narrows the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "The characteristic lateral diffusion time of GLT1-SEP (~1.75 s) is much shorter than its membrane lifetime (~22 s), suggesting that membrane turnover, rather than lateral diffusion, is the main redeployment route for the immobile fraction (20-30%) of surface-expressed GLT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C83-C84, and C86 present a key interpretive conclusion comparing two measured timescales. The logic is sound: if diffusion is fast relative to turnover, then turnover becomes the rate-limiting step for repositioning immobile transporters. This represents an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "GLT1a accounts for 90% of total GLT1 expression in rat brain astrocytes, with GLT1b and GLT1c accounting for ~6% and ~1%, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 cite Holmseth et al., 2009 for the relative expression levels of GLT1 variants. This provides rationale for focusing on GLT1a. The claims rely on prior published work and are appropriately attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In transfected astrocytes, total GLT1 levels (including endogenous and transfected) are elevated compared to non-transfected cells, while endogenous GLT1 expression remains stable. Both transfected and non-transfected cells show dense, relatively uniform membrane packing of GLT1 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 address potential concerns about overexpression artifacts using immunostaining (Figure 1\u2014figure supplement 3). The data show that while transfection increases total GLT1, the distribution remains physiologically relevant (dense and uniform), and endogenous expression is unaffected in neighboring cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C82",
+      "C85",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C95",
+      "C96",
+      "C102"
+    ],
+    "result": "The manuscript provides extensive background on glutamate transport, GLT1 function, and prior studies of GLT1 trafficking and mobility, establishing the context and rationale for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77, C81-C82, C85, C87, C89-C91, C93, C95-C96, and C102 present background information supported by appropriate citations. These claims establish the biological importance of GLT1, summarize prior work on trafficking mechanisms and mobility studies, and provide context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C88",
+      "C92",
+      "C94",
+      "C103"
+    ],
+    "result": "The authors discuss limitations of quantum dot labeling approaches and speculate about functional implications of their findings, including potential roles of lateral mobility in glutamate uptake and the relationship between transporter numbers and neuronal connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80, C88, C92, C94, and C103 represent speculative interpretations or discussions of limitations. While these are reasonable inferences, they are not directly tested experimentally. C78-C80 discuss QD limitations, C88 and C92 speculate about functional consequences, and C94 and C103 suggest mechanistic interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C101"
+    ],
+    "result": "The authors emphasize that excitatory activity boosts GLT1-SEP surface mobility and that the rapid turnover of glutamate transporters (several times per minute) is an intriguing discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C101 represent summary statements of major findings. C60 is supported by the extensive experimental data on activity-dependent mobility (C38-C55), while C101 reflects the significance of the turnover rate measurements (C20-C22). These are appropriate interpretive statements of the results.",
+    "result_type": "MAJOR"
+  }
+]

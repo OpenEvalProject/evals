@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study sequenced 28 BALF samples and characterized 202 viral plaques, identifying 54 reassortant viruses grouped into 17 single and 16 mixed genotypes. Reassortants were detected in 6 out of 13 pigs, with 83.3% originating from only three pigs. No reassortants between LAIV and challenge viruses were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25\u2013C41 provide clear experimental data on sample collection, plaque characterization, and reassortant identification. The methods are explicitly described, and the results are quantified with specific percentages and counts. The finding that no LAIV-derived reassortants were detected is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C85",
+      "C89",
+      "C91",
+      "C116"
+    ],
+    "result": "Prime-boost vaccinated pigs had significantly fewer reassortant viruses than nonvaccinated pigs (5.3% vs 50.0%, p=0.020), likely due to reduced duration of co-infection. A strong positive correlation (R=0.73, p=0.0046) was observed between co-infection duration and proportion of reassortants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28\u2013C48 and C85\u2013C116 collectively demonstrate that vaccination reduces reassortment through decreased co-infection duration. The statistical analysis appropriately accounts for unequal sample sizes using binomial logistic regression, and the correlation analysis provides mechanistic insight. The p-values and effect sizes support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Sequenced samples had high viral loads (mean Ct=23.62) and adequate genome coverage (H1N1: 8306 reads, H3N2: 11281 reads) with no significant differences between treatment groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49\u2013C52 establish that sample quality and sequencing depth were adequate and comparable across groups, which is essential for valid SNV identification. The statistical tests (Kruskal-Wallis) appropriately compare groups, and the lack of significant differences validates cross-group comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "For H1N1, 380 SNVs were identified (207 nonsynonymous, 165 synonymous, 8 stop-gained), dominated by low-frequency variants (<10% frequency: 81.8%). The quantity, frequency, and antigenic variation of SNVs did not differ significantly between treatment groups, and H1 nucleotide divergence did not correlate with immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53\u2013C63 comprehensively characterize H1N1 within-host diversity. Multiple statistical tests (Kruskal-Wallis, Spearman correlation, chi-square) consistently show no significant differences between vaccinated and unvaccinated groups. The finding of limited antigenic variation is supported by specific mutation counts and locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "For H3N2, 364 SNVs were identified (205 nonsynonymous, 153 synonymous, 6 stop-gained), also dominated by low-frequency variants. SNV quantity and frequency were similar between groups except for N2 SNVs (PRIME BOOST < SINGLE LAIV, p=0.046). Minimal antigenic variation was observed, with no correlation between H3 divergence and immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64\u2013C74 parallel the H1N1 analysis and show consistent patterns. The single significant difference in N2 SNV frequency is appropriately identified with correction for multiple testing. The lack of correlation with immune responses is supported by Spearman correlation tests with non-significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C106"
+    ],
+    "result": "Shared polymorphisms between pigs from different rooms were no more than expected by chance for both viruses (except weak H3N2 convergence in NO VAC pigs, p=0.035), indicating vaccination did not drive genome convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75\u2013C76 and C106 use permutation testing to assess convergent evolution. The methodology appropriately tests whether shared variants exceed random expectation. The single exception (H3N2 in NO VAC pigs) is noted with appropriate statistical significance, strengthening the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Nucleotide diversity (Pi) and evolutionary rates were similar across treatment groups for both viruses, with only two exceptions: higher H1N1 NP diversity in PRIME BOOST vs SINGLE LAIV (p=0.049) and different N1 stop-gained mutation rates between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77\u2013C80 systematically compare evolutionary metrics across groups. The statistical approach (Kruskal-Wallis with Dunn's post-hoc tests and Benjamini-Hochberg correction) is appropriate for multiple comparisons. The identification of only two significant differences among many comparisons supports the overall conclusion of minimal vaccination effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C104",
+      "C105"
+    ],
+    "result": "Both H1N1 and H3N2 viruses exhibited significant piN < piS (purifying selection) in most groups, with viral populations dominated by low-frequency variants. No evidence of positive selection was found in any coding region, suggesting purifying selection and genetic drift shape viral populations regardless of vaccination status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81\u2013C82 and C104\u2013C105 use piN/piS ratios to infer selection pressures. The paired t-tests appropriately compare synonymous and nonsynonymous diversity. The consistent finding of piN < piS across groups and the absence of positive selection support the interpretation of purifying selection as the dominant force.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C107"
+    ],
+    "result": "Only a weak negative association was found between H3-specific IFN-\u03b3 cell counts and H3 PiN values (R=-0.512, p=0.043). No other correlations were detected between immune responses (HI titers or IFN-\u03b3 counts) and HA nucleotide divergence or diversity metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83\u2013C84 and C107 systematically test correlations between immune responses and viral diversity using Spearman correlation. The single weak correlation identified is appropriately qualified, and the multiple non-significant results support the conclusion that vaccination-induced immunity has limited impact on viral genetic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C87",
+      "C110",
+      "C117"
+    ],
+    "result": "Direct sequencing revealed limited impact of vaccination on viral variant frequency, evolutionary rates, and nucleotide diversity in any IAV coding regions. No major effect of vaccination on IAV within-host diversity was detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C87, C110, and C117 synthesize the findings from multiple analyses (SNV frequency, evolutionary rates, nucleotide diversity, selection pressure). The conclusion is supported by consistent non-significant results across multiple statistical tests and viral genes, providing strong evidence for the limited effect of vaccination on genetic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "WIV administrations significantly decreased virus shedding compared to NO VAC controls, with differences in Ct values and virus titers at most time points. LAIV/COM provided better protection than LAIV alone. More pigs were infected with H3 than H1 subtype in most groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31\u2013C35 reference findings from Li et al., 2020, which is appropriately cited. These claims establish the vaccination efficacy context for the current study. While the detailed data are in the cited paper, the summary statements are consistent with typical vaccine efficacy results and provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "IAV internal genes were exchanged more easily between challenge viruses than antigenic genes. Internal gene nucleotide homology was >90% compared to ~53% for antigenic genes, consistent with the principle that reassortment is facilitated between similar strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97\u2013C99 present observed reassortment patterns and provide mechanistic interpretation supported by citations (Lowen 2017, 2018; Richard et al. 2018). The nucleotide homology data (C98) are directly measured, and the interpretation (C99) is consistent with established principles of viral reassortment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "PRIME BOOST pigs had significantly higher H1 and H3-specific antibody titers than SINGLE LAIV or NO VAC pigs, addressing potential sample selection bias. The findings agree with similar studies in pigs and other hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112\u2013C113 address an important limitation regarding sample selection bias. C112 provides data showing that sequenced samples from vaccinated pigs had high antibody titers, validating that results reflect true vaccination effects rather than vaccine failures. C113 contextualizes findings with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The three super-reassortant pigs came from different rooms, indicating no 'room effect' on reassortment. Pigs in different vaccine groups had similar HA-specific immune responses and comparable protective efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114\u2013C115 address potential confounders. C114 demonstrates that the concentration of reassortants in three pigs was not due to room-specific factors. C115 (citing Li et al. 2020) establishes that different vaccine combinations produced comparable immune responses, justifying the grouping strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C86"
+    ],
+    "result": "Within 7 days, a large number of IAV reassortants with multiple distinct genotypes were identified. A significant number of mutations with functional relevant amino acid changes were present in both viral populations regardless of vaccination status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C86 summarize key findings on reassortment and mutation. The 7-day timeframe is explicitly stated in methods, and the identification of multiple genotypes is quantified in earlier claims. The presence of functional mutations is supported by database annotation (C58, C70).",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2148 @@
+{
+  "submission": {
+    "id": "0a3e4ffb-61b6-4d74-9bd6-0959a6a10fe8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:22:35.466082Z",
+    "updated_at": "2025-12-03T11:22:35.466082Z"
+  },
+  "content": [
+    {
+      "id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "submission_id": "0a3e4ffb-61b6-4d74-9bd6-0959a6a10fe8",
+      "content_type": "manuscript",
+      "content_text": "# Apelin signaling dependent endocardial protrusions promote cardiac trabeculation in zebrafish\n\n## Authors\n\n- Jialing Qi<sup>1</sup>\n- Annegret Rittershaus<sup>1</sup>\n- Rashmi Priya<sup>1</sup> ([ORCID: 0000-0002-0510-7515](https://orcid.org/0000-0002-0510-7515))\n- Shivani Mansingh<sup>1</sup>\n- Didier YR Stainier<sup>1</sup> ([ORCID: 0000-0002-0382-0026](https://orcid.org/0000-0002-0382-0026)) \u2020\n- Christian SM Helker<sup>1</sup> ([ORCID: 0000-0003-0427-5338](https://orcid.org/0000-0003-0427-5338)) \u2020\n\n### Affiliations\n\n1. Department of Developmental Genetics, Max Planck Institute for Heart and Lung Research Bad Nauheim Germany ([ROR:0165r2y73](https://ror.org/0165r2y73))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring cardiac development, endocardial cells (EdCs) produce growth factors to promote myocardial morphogenesis and growth. In particular, EdCs produce neuregulin which is required for ventricular cardiomyocytes (CMs) to seed the multicellular ridges known as trabeculae. Defects in neuregulin signaling, or in endocardial sprouting toward CMs, cause hypotrabeculation. However, the mechanisms underlying endocardial sprouting remain largely unknown. Here, we first show by live imaging in zebrafish embryos that EdCs interact with CMs via dynamic membrane protrusions. After touching CMs, these protrusions remain in close contact with their target despite the vigorous cardiac contractions. Loss of the CM-derived peptide Apelin, or of the Apelin receptor, which is expressed in EdCs, leads to reduced endocardial sprouting and hypotrabeculation. Mechanistically, neuregulin signaling requires endocardial protrusions to induce extracellular signal-regulated kinase (Erk) activity in CMs and trigger their delamination. Altogether, these data show that Apelin signaling-dependent endocardial protrusions modulate CM behavior during trabeculation.\n\n## Introduction\n\nTo meet the needs of the growing embryo, the vertebrate heart has to undergo a series of complex morphogenetic events to transform from a linear tube into a mature organ. During cardiac trabeculation, CMs in the outer curvature of the ventricles delaminate toward the lumen to form multicellular sponge-like projections, called trabeculae (Sedmera and Thomas, 1996; Sedmera et al., 2000; Stankunas et al., 2008; Liu et al., 2010; Peshkovsky et al., 2011; Staudt et al., 2014). Cardiac trabeculae are crucial to achieve increased contractility as well as for the formation of the conduction system. Trabeculation defects are often associated with left ventricular noncompaction (Oechslin et al., 2000; St\u00f6llberger and Finsterer, 2004), embryonic heart failure, and lethality (Gassmann et al., 1995; Lee et al., 1995; Lai et al., 2010; Liu et al., 2010; Rasouli and Stainier, 2017).\n\nIn zebrafish, as in other vertebrates, the early embryonic heart consists of two cell layers, the myocardium and the endocardium, separated by a specialized extracellular matrix called the cardiac jelly (CJ) (Stainier and Fishman, 1992; Brutsaert et al., 1996). Recently, it has been shown that endocardial cells (EdCs), similar to blood endothelial cells (ECs), form sprouts, and that these sprouts are mostly oriented toward the myocardium (Del Monte-Nieto et al., 2018). During sprouting angiogenesis, ECs first extend filopodia to sense the microenvironment for growth factors, then they migrate into avascular areas and form new blood vessels (Gerhardt et al., 2003). Due to its similarity to sprouting angiogenesis, the sprouting of EdCs has been termed endocardial sprouting. However, whether endocardial sprouting is regulated by the same signaling pathways as sprouting angiogenesis is not known.\n\nMultiple signaling pathways have been implicated in cardiac trabeculation, including neuregulin (Nrg)/ErbB signaling. Mouse and zebrafish embryos lacking the endocardium-derived ligand Nrg or the ErbB receptor, which is expressed by the myocardium, fail to form trabeculae (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995; Lai et al., 2010; Liu et al., 2010; Rasouli and Stainier, 2017). Furthermore, endocardial Notch signaling (Grego-Bessa et al., 2007; D\u2019Amato et al., 2016; Del Monte-Nieto et al., 2018), angiopoietin 1/Tie2 signaling (Suri et al., 1996; Tachibana et al., 2005; Qu et al., 2019), and semaphorin 3E/plexinD1 signaling (Sandireddy et al., 2019) are required for cardiac trabeculation in mouse. Of note, genetic deletion of the relevant receptors in the endocardium results in attenuated endocardial sprouting (Qu et al., 2019) and trabeculation defects (Grego-Bessa et al., 2007; D\u2019Amato et al., 2016; Del Monte-Nieto et al., 2018; Qu et al., 2019; Sandireddy et al., 2019).\n\nCells communicate by a variety of mechanisms including paracrine and contact-dependent signaling. More recently, a novel mechanism of cell communication by active transport of signaling molecules through filopodia-like actin-rich membrane protrusions, also known as cytonemes, has been shown in different models including Drosophila (Ram\u00edrez-Weber and Kornberg, 1999; Roy et al., 2011; Huang et al., 2019), chick (Sanders et al., 2013), zebrafish (Stanganello et al., 2015), and mouse (Fierro-Gonz\u00e1lez et al., 2013). Like filopodia, cytonemes depend on actin polymerization by various effector proteins including formins, profilin, and IRSp53, a substrate for the insulin receptor (Rottner et al., 2017).\n\nIn this study, we take advantage of the zebrafish model, as its transparency allows single-cell resolution and high-speed imaging of the beating heart, to analyze endocardial-myocardial communication during embryogenesis. By investigating apelin (apln) mutants, we found that endocardial protrusion formation is controlled by Apln signaling. We also observed by in vivo imaging that endocardial protrusions promote cardiac trabeculation by modulating Nrg/ErbB/Erk signaling. Altogether, our results provide new insights into the role of endocardial protrusions during cardiac trabeculation.\n\n## Results\n\n### Endocardial-myocardial interactions in zebrafish\n\nThe early embryonic heart in vertebrates is composed of two cell types: EdCs and myocardial cells (Figure 1A\u2013D). In order to analyze possible interactions between the endocardial and myocardial cells in zebrafish, we genetically labeled the actin cytoskeleton of the EdCs using the TgBAC(cdh5:Gal4ff) and Tg(UAS:LIFEACT-GFP) lines, and the membrane of myocardial cells with mCherry using the Tg(myl7:mCherry-CAAX) line. We observed endocardial protrusions extending toward the myocardium at 24 (Figure 1A\u2013A\u2019\u2019) and 48 (Figure 1B\u2013B\u2019\u2019, Figure 1\u2014figure supplement 1A) hours post-fertilization (hpf). Of note, we observed more endocardial protrusions in the ventricle than in the atrium at 48, 60, and 72 hpf (Figure 1\u2014figure supplement 1B). Subsequently, these ventricular endocardial protrusions formed anchor points with the myocardium, and to be consistent with similar observations in mouse (Del Monte-Nieto et al., 2018) we will refer to them as touchdowns (Figure 1B\u2013B\u2019\u2019). Notably, these touchdowns are stable even during cardiac contractions (Figure 1E\u2013H, Figure 1\u2014video 1). Starting at around 60 hpf, cardiomyocytes (CMs) delaminate from the compact layer toward the lumen to seed the trabecular layer (Figure 1C, C\u2019 and C\u2019\u2019\u2019\u2019), as reported before (Liu et al., 2010; Peshkovsky et al., 2011; Staudt et al., 2014; Priya et al., 2020). At this stage, we observed that endocardial protrusions appear to extend along, and sometimes around, the delaminating CMs (Figure 1C\u2019\u2019 and C\u2019\u2019\u2019, Figure 1\u2014video 2). Next, trabecular CMs start to assemble into trabeculae, \u2018finger-like\u2019 multicellular projections, starting at 72 hpf (Figure 1D, D\u2019 and D\u2019\u2019\u2019\u2019). At this stage, we observed that endocardial protrusions can also be detected in close proximity to trabecular CMs (Figure 1D\u2019\u2019 and D\u2019\u2019\u2019, Figure 1\u2014video 3). Cardiac trabeculae are mostly present in the outer curvature of the ventricle at early developmental stages in zebrafish (Liu et al., 2010). Interestingly, we observed a spatial correlation between endocardial protrusions and trabeculation. At 48 hpf, endocardial protrusions are mostly located in the outer curvature of the ventricle (Figure 1\u2014figure supplement 1C, F). At 60 and 72 hpf, respectively, 79% and 83% of all endocardial protrusions in the ventricle are located in the outer curvature (Figure 1\u2014figure supplement 1D-F); 69% of all endocardial protrusions in the outer curvature are close to delaminating CMs at 60 hpf, and 91% of all endocardial protrusions in the outer curvature are close to trabecular CMs at 72 hpf (Figure 1\u2014figure supplement 1D, E, G). Moreover, 98% of delaminating CMs and 93% of trabecular CMs are in close proximity to endocardial protrusions at 60 and 72 hpf, respectively (Figure 1\u2014figure supplement 1D, E, H). Together these data lead us to speculate that endocardial protrusions play a role during endocardium-myocardium interactions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig1-v2.jpg)\n\n**Figure 1.:** (A-D) Confocal projection images of the heart of Tg(myl7:mCherry-CAAX); Tg(cdh5:Gal4ff); Tg(UAS:LIFEACT-GFP) zebrafish at 24 (A), 48 (B), 60 (C) and 72 (D) hpf. (A-A\u2019\u2019) Endocardial protrusions (arrows) towards the myocardium at 24 hpf. (B-B\u2019\u2019) Endocardial protrusions (arrows) and touchdowns (asterisks) with the myocardium at 48 hpf. (C-C\u2019\u2019\u2019) Endocardial protrusions (arrows) during CM delamination (arrowheads) at 60 hpf. (C\u2019\u2019\u2019) 3D surface rendering of the area in the yellow box in C\u2019. (D-D\u2019\u2019\u2019) Endocardial protrusions (arrows) during trabecular assembly and expansion (arrowheads) at 72 hpf. (D\u2019\u2019\u2019) 3D surface rendering of the area in the yellow box in D\u2019. (A\u2019\u2019\u2019\u2019-D\u2019\u2019\u2019\u2019) Schematics of endocardial protrusions, endocardial touchdowns, CM delamination, and trabecular expansion. Black asterisks indicate delaminating CMs; purple asterisks indicate trabeculae. (E-H) Still images from a spinning disc time-lapse movie of a 48 hpf Tg(myl7:mCherry-CAAX); Tg(cdh5:Gal4ff); Tg(UAS:LIFEACT-GFP) heart; white asterisks indicate endocardial touchdowns; numbers in the bottom right corner refer to seconds. All images are ventral views, anterior to the top. V, ventricle; A, atrium.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quantification of the direction of endocardial protrusions; most endocardial protrusions extend toward the myocardium. (B) Quantification of the average number of endocardial protrusions in the ventricle and atrium. (C\u2013D) Confocal projection images of the heart of Tg(myl7:mCherry-CAAX); Tg(cdh5:Gal4ff); Tg(UAS:LIFEACT-GFP) zebrafish at 60 (C) and 72 (D) hours post-fertilization (hpf). Arrows point to endocardial protrusions; arrowheads point to delaminating CMs and trabecular CMs close to endocardial protrusions. (E) Quantification of the percentage of endocardial protrusions in the outer curvature of the ventricle. (F) Quantification of the percentage of endocardial protrusions in close proximity to delaminating CMs or trabecular CMs. (G) Quantification of the percentage of delaminating CMs or trabecular CMs in close proximity to endocardial protrusions. de CM, delaminating CM; TL CM, trabecular layer CM.\n\n### Genetically blocking endocardial protrusion formation reduces myocardial trabeculation\n\nSince we observed a correlation between the presence of endocardial protrusions and myocardial trabeculation, we next aimed to examine the function of endocardial protrusions during cardiac morphogenesis. To this aim, we generated a transgenic line, Tg(UAS: irsp53dn-p2a-RFP), to specifically block protrusion formation in the endothelium. IRSp53 regulates the actin cytoskeleton to enable cells to form different types of membrane extensions (Nakagawa et al., 2003; Millard et al., 2005; Scita et al., 2008). By crossing the Tg(UAS: irsp53dn-p2a-RFP) line to the TgBAC(cdh5:Gal4ff) line to overexpress Irsp53dn specifically in ECs, we observed a 70% reduction in the number of endocardial protrusions at 48 hpf (Figure 2A, B and E), while their distribution appeared mostly unaffected (Figure 2A, B and F). To test the hypothesis that endocardial protrusions modulate myocardial trabeculation, we analyzed embryos overexpressing irsp53dn in their ECs in a CM membrane line (Tg(myl7:BFP-CAAX)). Upon irsp53dn overexpression in ECs, we detected fewer endocardial touchdowns (Figure 2A and B), as well as a reduction in cardiac trabeculation (Figure 2C, D, G and G\u2019). In order to identify a possible effect of endocardial protrusions on CM proliferation, we overexpressed irsp53dn in the endothelium in the context of the Tg(myl7:mVenus-gmnn) reporter to visualize cycling CMs. Compared with controls, endothelial overexpression of irsp53dn led to significantly fewer mVenus-Gmnn+ CMs in the ventricle (Figure 2H and I).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013D) Confocal projection images of the heart of Tg(myl7:BFP-CAAX); Tg(cdh5:Gal4ff); Tg(UAS:LIFEACT-GFP);\u00b1Tg(UAS:irsp53dn-p2a-tagRFP) zebrafish at 48 (A\u2013B) and 72 (C\u2013D) hours post-fertilization (hpf). (A\u2013B) Endocardial protrusions (white arrows) and touchdowns (white asterisks) are reduced in embryos with endothelial overexpression of irsp53dn. (C\u2013D) Cardiac trabeculation (arrowheads) is reduced in larvae with endothelial overexpression of irsp53dn; (C\u2019\u2013D) 3D rendering. (E) Quantification of the number of endocardial protrusions in wild-type and in embryos with endothelial overexpression of irsp53dn at 48 hpf. (F-F\u2019) Illustration of the division of the 48 hpf ventricle into four regions (F). Distribution and average number of endocardial protrusions in different regions of mid-sagittal sections of the ventricle from 48 hpf wild-type and irsp53dn embryos (F\u2019). (G\u2013G\u2019) Illustration of the division of the 72 hpf ventricle into the outer and inner curvature (G). Quantification of the percentage of trabecular cardiomyocytes (CMs) in the outer curvature of wild-type and irsp53dn larvae at 72 hpf (G\u2019). (H\u2013H\u2019) 72 hpf larvae with endothelial overexpression of irsp53dn display a reduced number of myl7:mVenus-Gmnn+ CMs (yellow arrows) in their ventricle. (I) Quantification of the number of mVenus-Gmnn+ CMs in the ventricle of wild-type and irsp53dn larvae at 72 hpf. All images are ventral views, anterior to the top. V, ventricle; A, atrium. Data in graphs expressed as mean \u00b1 SEM.\n\n### Apelin signaling positively regulates endocardial protrusion formation and myocardial trabeculation\n\nWe have recently found that Apelin signaling regulates endothelial filopodia formation during angiogenesis in the zebrafish trunk (Helker et al., 2020). Therefore, we hypothesized that Apelin signaling also regulates endocardial protrusion formation. In order to visualize the expression of apln and aplnrb at single-cell resolution in the heart, we examined the TgBAC(apln:EGFP) reporter line (Helker et al., 2020) and generated a novel Tg(aplnrb:VenusPEST) reporter line. We detected apln:EGFP expression in the myocardium at 48 and 72 hpf (Figure 3A and B). Furthermore, we detected aplnrb:VenusPEST expression in the endocardium at 48 and 72 hpf (Figure 3C and D). These results suggest that apln is expressed in the myocardium while aplnrb is expressed in EdCs. Based on these results, we hypothesized that Apelin signaling plays a role during endocardium-myocardium interactions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013D) Confocal projection images of the heart of TgBAC(apln:EGFP); Tg(myl7:MKATE-CAAX) (A, B) and TgBAC(aplnrb:VenusPEST); Tg(kdrl:HsHRAS-mCherry) (C, D) zebrafish at 48 (A, C) and 72 (B, D) hours post-fertilization (hpf). (A\u2019\u2013\u2019D\u2019) Maximum intensity projections. (A\u2013B) TgBAC(apln:EGFP) expression is detectable in the myocardium at 48 (A) and 72 (B) hpf. (C\u2013D) TgBAC(aplnrb:VenusPEST) expression is detectable in the endocardium with higher expression in the ventricular endocardium at 48 (C) and 72 (D) hpf. All images are ventral views, anterior to the top. V, ventricle; A, atrium.\n\nTo test this hypothesis, we used mutants for aplnra (Helker et al., 2015), aplnrb (Helker et al., 2015), apln (Helker et al., 2015), and apela (Chng et al., 2013). Since apela mutants fail to form a heart (Chng et al., 2013), we did not analyze them. While most aplnrb mutants fail to form a heart (D\u2019Amico et al., 2007; Zeng et al., 2007), a low number of them do. By analyzing aplnrb mutants that do form a heart, we observed that they exhibit a reduced number of endocardial protrusions at 48 hpf (Figure 4\u2014figure supplement 1A, B) and a reduced number of trabeculae at 72 hpf (Figure 4\u2014figure supplement 1C, D). In wild-type embryos, the CJ between the endocardium and myocardium in the outer curvature of the ventricle appears to be mostly degraded at 72 hpf (Figure 4\u2014figure supplement 1C); however, the CJ in aplnrb mutants appears to be thicker at this stage (Figure 4\u2014figure supplement 1D). In addition, aplnra mutants also exhibit a reduced number of trabeculae at 72 hpf (Figure 4\u2014figure supplement 1E and F). We further observed that apln mutants exhibit a significantly lower number of endocardial protrusions at 24 and 48 hpf (Figure 4A\u2013D\u2013). In line with fewer endocardial protrusions, apln mutants also exhibit a reduced number of endocardial touchdowns at 48 hpf (Figure 4C and D), and a reduced number of trabeculae at 72 hpf (Figure 4E, F and J). Altogether, these results indicate that Apelin signaling regulates endocardial protrusion formation and myocardial trabeculation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013F) Confocal projection images of the heart of Tg(cdh5:Gal4ff); Tg(UAS:LIFEACT-GFP) zebrafish at 24 hours post-fertilization (hpf) (A\u2013B) and of the heart of Tg(myl7:mCherry-CAAX); Tg (cdh5:Gal4ff); Tg(UAS:LIFEACT-GFP) (C\u2013F) zebrafish at 48 (C\u2013D) and 72 (E\u2013F) hpf. Maximum intensity projections (A\u2013B) and mid-sagittal sections (C\u2013F). (A) Endocardial protrusions (arrows) in apln+/+ embryos at 24 hpf. (B) The number of endocardial protrusions (arrows) is reduced in apln-/- siblings at 24 hpf. (C\u2013D) The numbers of endocardial protrusions (arrows) and touchdowns (white asterisks) are reduced in apln-/- embryos (D) at 48 hpf compared with apln+/+ siblings (C). (E\u2013F) apln-/- larvae (F) exhibit reduced trabeculation (arrowheads) and thicker cardiac jelly (CJ) (yellow asterisks) at 72 hpf compared with apln+/+ siblings (E). (G\u2013H) Quantification of the number of endocardial protrusions in the ventricle of apln+/+ and apln-/- siblings at 24 (G) and 48 (H) hpf. (I) Distribution and average number of endocardial protrusions in different regions of mid-sagittal sections of the ventricle from 48 hpf apln+/+ and apln-/- siblings. (J) Quantification of the percentage of trabecular cardiomyocytes (CMs) in the outer curvature of apln+/+ and apln-/- siblings at 72 hpf. (K\u2013K\u2019) Maximum intensity projections. apln-/- larvae (K\u2019) exhibit a thicker CJ at 72 hpf compared with apln+/+ siblings (K). (L) Quantification of the CJ volume in the outer curvature of apln+/+ and apln-/- siblings at 72 hpf. All images are ventral views, anterior to the top. V, ventricle; A, atrium; +/+, apln+/+; -/-, apln-/-. Data in graphs expressed as mean \u00b1 SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013F) Confocal projection images of the heart of Tg(kdrl:HsHRAS-mCherry) (A\u2013B) and Tg(myl7:HsHRAS-EGFP); Tg(kdrl:HsHRAS-mCherry) (C\u2013F) zebrafish at 48 (A\u2013B) and 72 (C\u2013F) hours post-fertilization (hpf). (A\u2013B) aplnrb-/- embryos exhibit fewer endocardial protrusions (arrows) compared with aplnrb+/+ siblings (A) at 48 hpf. (C\u2013D) aplnrb-/- larvae (D) exhibit reduced trabeculation (arrowheads) and thicker cardiac jelly (CJ) (asterisk) compared with aplnrb+/+ siblings (C) at 72 hpf. (E\u2013F) aplnra-/- larvae (F) exhibit a mild reduction in trabeculation compared with aplnra+/+ siblings (E) at 72 hpf. V, ventricle.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013D) Confocal projection images of the heart of Tg(myl7:HsHRAS-EGFP) larvae at 72 hours post-fertilization (hpf). (A\u2013B) Maximum intensity projections of confocal images. (C\u2013D) Mid-sagittal sections of A and B, respectively. apln-/- larvae (D) exhibit fewer EdU+ CMs (arrows) in their ventricle compared with apln+/+ siblings (C). (E) Quantification of the percentage of EdU+ CMs in the ventricle of apln+/+ and apln-/- siblings. V, ventricle. Data in graphs expressed as mean \u00b1 SEM.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013B) Confocal projection images. Maximum intensity projections of confocal images of the heart of 72 hours post-fertilization (hpf) larvae stained with Phalloidin. Sarcomere formation does not appear to be affected in apln-/- larvae (B) compared with apln+/+ siblings (A) (apln+/+, n = 5; apln-/-, n = 4). (C\u2013D) Quantification of heart rate (C) and ejection fraction (D) of apln+/+ and apln-/- siblings. V, ventricle.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A\u2013D) Confocal projection images of the heart of Tg(myl7:mCherry-CAAX); Tg(tp1-MmHbb:EGFP) (A\u2013B) and Tg(cdh5:Gal4ff); Tg(UAS:LIFEACT-GFP) (C\u2013D) embryos at 48 hours post-fertilization (hpf). (A\u2013B) Treatment with 1 \u00b5M of the Notch inhibitor RO4929097 from 24 to 48 hpf blocks the expression of the Tg(tp1-MmHbb:EGFP) Notch reporter in the endocardium. (C\u2013D) Embryos treated with the Notch inhibitor exhibit fewer endocardial touchdowns (asterisks). (E\u2013F) Embryos treated with the Notch inhibitor exhibit more endocardial protrusions (arrows). (G) Quantification of the number of endocardial touchdowns in the ventricle of DMSO and Notch inhibitor treated embryos at 48 hpf. (H) Quantification of the number of endocardial protrusions in the ventricle of DMSO and RO4929097 treated embryos at 48 hpf. All images are ventral views, anterior to the top. V, ventricle; A, atrium. Data in graphs expressed as mean \u00b1 SEM.\n\nTo further examine the function of Apelin-dependent endocardial protrusions during cardiac trabeculation, we next analyzed CM proliferation in apln mutants using EdU labeling. Homozygous apln mutants exhibit a significantly decreased number of EdU+ CMs in their ventricle compared with apln+/+ siblings (Figure 4\u2014figure supplement 2). In addition, apln mutants also display a significantly thicker CJ compared with apln+/+ siblings at 72 hpf (Figure 4C\u2013F, K and L). However, we did not observe any obvious defects in sarcomere formation (Figure 4\u2014figure supplement 3A and B), heart rate, ejection fraction, or blood circulation in apln mutants (Figure 4\u2014figure supplement 3C and D; Figure 4\u2014videos 1\u20132), indicating that the myocardial trabeculation phenotype is caused by the endocardial protrusion defect and is not secondary to cardiac dysfunction.\n\nNotch signaling negatively regulates endothelial sprouting and protrusion formation in several vascular beds (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007). In order to determine whether Notch signaling also regulates endocardial protrusion formation, we treated embryos with the \u03b3-secretase inhibitor RO4929097 and observed a decrease in Notch reporter expression in the endocardium (Figure 4\u2014figure supplement 4A and B) as well as an increased number of endocardial protrusions in the ventricle (Figure 4\u2014figure supplement 4E, F, and H). However, and in line with the touchdown reduction phenotype in Notch-deficient mice, we observed a reduction in endocardial touchdowns in Notch inhibitor treated zebrafish larvae at 48 hpf (Figure 4\u2014figure supplement 4C, D, and G).\n\nAltogether, these results indicate that myocardial derived Apelin promotes endocardial protrusion formation while Notch signaling inhibits it. Furthermore, Apelin signaling is required for cardiac trabeculation, possibly via the formation of endocardial protrusions.\n\n### The function of endocardial Nrg2a in trabeculation requires endocardial protrusions\n\nNrg-ErbB signaling is indispensable for cardiac trabeculation in mouse and zebrafish (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995; Lai et al., 2010; Liu et al., 2010; Peshkovsky et al., 2011; Rasouli and Stainier, 2017). To determine whether endocardial protrusions are required for Nrg-ErbB signaling, we first overexpressed nrg2a in the endothelium using the Tg(fli1a:nrg2a-p2a-tdTomato) line (Rasouli and Stainier, 2017). Overexpression of nrg2a in the endothelium results in hypertrabeculation as well as a multilayered myocardium (Figure 5A, B and E\u2013G; Figure 5\u2014figure supplement 1A and B). Strikingly, overexpressing nrg2a in the endothelium while blocking endocardial protrusion formation by endothelial overexpression of irsp53dn is not sufficient to restore cardiac trabeculation or induce CM multilayering (Figure 5C-C' and E-G). In line with these results, overexpressing nrg2a in the endothelium of homozygous apln mutants is not sufficient to restore cardiac trabeculation or induce CM multilayering (Figure 5D-D' and E-G). Importantly, we did not detect a change in the expression levels of nrg2a in apln mutant hearts at 48 hpf (Figure 5\u2014figure supplement 1C). Taken together, these data indicate that endocardial protrusions are required for Nrg-ErbB signaling during cardiac trabeculation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013D) Confocal projection images of the heart of Tg(myl7:HsHRAS-EGFP) larvae at 72 hours post-fertilization (hpf). (A\u2013B) Overexpression of nrg2a in the endothelium (B) leads to an increased number of trabeculae (arrowheads) and the multilayering of cardiomyocytes (CMs) (brackets) compared with wild-type (A). (C) Larvae with endothelial overexpression of nrg2a and irsp53dn exhibit a reduced number of trabeculae (arrowheads) and of multilayered CMs (brackets) compared with larvae with endothelial overexpression of nrg2a alone (B). (D) apln mutant larvae with endothelial overexpression of nrg2a exhibit a reduced number of trabeculae (arrowheads) and of multilayered CMs (brackets) compared with wild-type larvae with endothelial overexpression of nrg2a (B). (E) Quantification of the number of trabeculae. (F) Quantification of the number of trabecular CMs. (G) Quantification of the number of multilayered CMs in the ventricle. Brackets indicate multilayered CMs. All images are ventral views, anterior to the top. V, ventricle. Data in graphs expressed as mean \u00b1 SEM.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B) Schematic illustration showing delaminating cardiomyocytes (CMs) and trabecular CMs vs. multilayered CMs. (C) nrg2a mRNA levels in extracted hearts from wild types and apln mutants at 48 hours post-fertilization (hpf) (from RNA-seq data). Data in graphs expressed as mean \u00b1 SEM.\n\n### Genetically blocking endocardial protrusion formation attenuates Erk signaling in cardiomyocytes\n\nAn important molecule in the Nrg/ErbB signaling pathway is the extracellular signal-regulated kinase Erk (Lai et al., 2010). In order to visualize Erk activity in CMs in living zebrafish, as a readout of ErbB signaling, we generated novel reporter lines (Tg(myl7:ERK-KTR-Clover-p2a-H2B-tagBFP) and Tg(myl7:ERK-KTR-Clover-p2a-H2B-mScarlet)) that use the kinase translocation reporter (KTR) technology (Regot et al., 2014; de la Cova et al., 2017). When Erk is inactive, the KTR is unphosphorylated and Clover can be detected in the nucleus; in contrast, when Erk is active, the KTR is phosphorylated and Clover can be detected in the cytoplasm (de la Cova et al., 2017). We observed that most ventricular CMs in wild-type larvae display active Erk signaling with cytoplasmic Clover expression (Figure 6A). Treating embryos expressing the reporter with a MEK inhibitor led to an increased number of ventricular CMs with nuclear Clover expression (i.e., inactive Erk signaling) indicating that the reporter is functional (Figure 6\u2014figure supplement 1). Next, we treated embryos expressing the reporter with an ErbB2 inhibitor and found an increased number of ventricular CMs with nuclear Clover expression (Figure 6B). To determine whether endocardial protrusions modulate myocardial Erk signaling activity, we genetically blocked endocardial protrusion formation via endothelial overexpression of irsp53dn and observed more ventricular CMs with nuclear Clover expression (Figure 6C and E) compared with control (Figure 6A and E), indicating more ventricular CMs with inactive Erk signaling. In line with these results, we observed more ventricular CMs with inactive Erk signaling in homozygous apln mutants (Figure 6D and E) compared with apln+/+ siblings (Figure 6A and E). Altogether, these observations indicate that Apelin signaling-dependent endocardial protrusions promote Nrg/ErbB/Erk signaling in CMs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013D) Maximum intensity projections of confocal images of the heart of Tg(myl7:ERK-KTR-Clover-p2a-H2B-tagBFP/mScarlet) larvae at 72 hours post-fertilization (hpf). (A) Visualization of Erk activity by a cardiomyocyte (CM)-specific ERK-kinase translocation reporter (KTR) reporter. Nuclear Clover expression (arrows) indicates CMs with inactive Erk signaling. (B) Larvae treated with an ErbB2 inhibitor exhibit an increased number of CMs with inactive Erk signaling (arrows) compared with control larvae (A). (C) Larvae with endothelial overexpression of irsp53dn exhibit an increased number of CMs with inactive Erk signaling (arrows) compared with control larvae (A). (D) apln mutant larvae exhibit an increased number of CMs with inactive Erk signaling (arrows) compared with apln+/+ siblings. (E) Quantification of the percentage of ventricular CMs with nuclear Clover expression. All images are ventral views, anterior to the top. V, ventricle. Data in graphs expressed as mean \u00b1 SEM.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013B) Confocal projection images. Maximum intensity projections of the heart of Tg(myl7:ERK-KTR-Clover-p2a-H2B-mScarlet) larvae at 72 hours post-fertilization (hpf). (B) Larvae treated with the MEK inhibitor PD 0325901 from 56 to 72 hpf exhibit an increased number of cardiomyocytes (CMs) with inactive Erk signaling (arrows) compared with larvae treated with DMSO (A). (C) Quantification of the percentage of ventricular CMs with nuclear Clover. All images are ventral views, anterior to the top. V, ventricle. Data in graphs expressed as mean \u00b1 SEM.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73231/elife-73231-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Schematic model depicts that inhibiting the formation of endocardial protrusions results in cardiac trabeculation defects via affecting neuregulin (Nrg)/ErbB signaling.\n\n## Discussion\n\n### Endocardial protrusions are required for trabeculation\n\nCardiac trabeculation is initiated, at least in zebrafish, by individual CMs delaminating from the myocardial monolayer and protruding into the lumen (Liu et al., 2010; Peshkovsky et al., 2011; Staudt et al., 2014; Jim\u00e9nez-Amilburu et al., 2016; Priya et al., 2020). In contrast, the myocardium in mouse is multilayered at the onset of trabeculation. Several studies have reported that the endocardium plays an important role during cardiac trabeculation (Grego-Bessa et al., 2007; Lai et al., 2010; D\u2019Amato et al., 2016; Rasouli and Stainier, 2017; Del Monte-Nieto et al., 2018; Qu et al., 2019). Furthermore, it has recently been shown that EdCs, similar to ECs, undergo sprouting (Del Monte-Nieto et al., 2018). However, in comparison with endothelial sprouting, little is known about the morphogenetic events underlying endocardial sprouting and their effect on cardiac morphogenesis including trabeculation.\n\nIn mouse, endocardial sprouting and touchdown formation occur early during cardiac trabeculation (Del Monte-Nieto et al., 2018). These observations are in line with our data in zebrafish, suggesting that the morphogenetic events of cardiac trabeculation are evolutionarily conserved. However, endocardial sprouts in mouse appear to be cellular (Del Monte-Nieto et al., 2018), whereas endocardial protrusions in zebrafish appear more similar to filopodia, although these differences may be due to the fact that fixed tissue was used for the mouse work compared with live tissue for the zebrafish work. CM delamination and trabeculation occur in the outer curvature of the ventricle (Liu et al., 2010; Jim\u00e9nez-Amilburu et al., 2016; Rasouli and Stainier, 2017). Consistent with these observations, we find that endocardial protrusions are mostly located in the outer curvature of the ventricle and extend along delaminating CMs as well as trabecular CMs. The temporal and spatial correlation between the emergence and location of endocardial protrusions and CM delamination therefore suggests a role for endocardial protrusions in cardiac trabeculation.\n\n### Molecular regulators of endocardial sprouting\n\nDuring sprouting angiogenesis, so-called tip cells lead the new sprouts (Gerhardt, 2008). Tip cells dynamically extend filopodia to identify growth factors in their environment (Gerhardt, 2008). Apelin and Notch signaling have been previously identified as regulators of endothelial filopodia formation (Hellstr\u00f6m et al., 2007; Suchting et al., 2007; Helker et al., 2020). In contrast, the pathways regulating endocardial sprouting are largely unknown. Only Tie2 signaling has been identified to date as a regulator of endocardial sprouting, and Tie2-deficient mice exhibit fewer endocardial touchdowns (Qu et al., 2019). We have recently shown that Apelin signaling regulates filopodia formation during sprouting angiogenesis in the trunk (Helker et al., 2020). In line with these published observations, we now show that Apelin regulates endocardial filopodia formation and endocardial sprouting (Figure 6\u2014figure supplement 2), revealing a conserved role for Apelin signaling during endothelial and endocardial sprouting.\n\nConsistent with the negative regulation of sprouting angiogenesis by Notch signaling in ECs (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007), we found that Notch signaling also negatively regulates endocardial protrusion formation. Interestingly, inhibition of Notch signaling also leads to an increased number of delaminated CMs and trabeculae, although Notch signaling may also affect CM behavior cell autonomously (Han et al., 2016; Priya et al., 2020).\n\n### Endocardium-myocardium communication is essential for trabeculation\n\nCell communication between the endocardial and myocardial cells is required for cardiac trabeculation (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995; Lai et al., 2010; Liu et al., 2010; Rasouli and Stainier, 2017; Gunawan et al., 2021). Several studies have shown that endocardial-derived Nrg is required to activate ErbB receptor complexes on CMs (Gassmann et al., 1995; Meyer and Birchmeier, 1995; Grego-Bessa et al., 2007; Rasouli and Stainier, 2017). In zebrafish, nrg2a, which is expressed in the developing endocardium, is required for trabeculation (Rasouli and Stainier, 2017), and nrg2a overexpression in the endothelium results in an increased number of trabeculae and trabecular CMs (Figure 5), indicating that endocardial nrg2a is necessary and sufficient for trabeculation. Notably, blocking endocardial protrusion formation compromises the function of endocardial nrg2a during trabeculation, suggesting that endocardial protrusions are required for nrg2a function during trabeculation. The membrane-bound form of Nrg2a has a molecular weight of 55 kD, and after cleavage, the presumed secreted form has a molecular weight of 22 kD. In contrast, the most active form of Apelin is 13 amino acids long, with a molecular weight of 1.52 kD. Therefore, it is possible that due to its small size, Apelin is able to diffuse through the CJ, while Nrg2a needs to be transported by endocardial protrusions toward the myocardium.\n\nLike other receptor tyrosine kinases, ErbB receptors activate multiple signaling cascades, including the MAPK cascade, upon ligand stimulation, leading to the phosphorylation of ERK1/2 (Sweeney et al., 2001; Wee and Wang, 2017). Accordingly, attenuated ERK phosphorylation is observed in CMs in Nrg1/ErbB signaling-deficient mice (Lai et al., 2010). By analyzing a novel reporter of Erk activity in CMs, we observed that the inhibition of endocardial protrusion formation, as well as the genetic inactivation of Apelin signaling, leads to attenuated Erk phosphorylation in CMs. Altogether, these data suggest that Apelin signaling-dependent endocardial protrusions modulate ErbB signaling in CMs (Figure 6\u2014figure supplement 2).\n\nIt has recently been shown that EC filopodia modulate neurogenesis by affecting progenitor cell proliferation in the developing brain of mice and zebrafish (Di Marco et al., 2020; Taberner et al., 2020). Of interest, ErbB signaling is also known for its function within the nervous system (Buonanno and Fischbach, 2001). Thus, one might speculate that Nrg/ErbB signaling also plays a role during the modulation of neurogenesis by endothelial filopodia. Several studies have reported cell-to-cell communication by cytonemes in different animal models (Ram\u00edrez-Weber and Kornberg, 1999; Holzer et al., 2012; Luz et al., 2014; Pr\u00f6ls et al., 2015). Whether endocardial protrusions qualify as cytonemes needs further analysis. However, our data indicate that Apelin-dependent endocardial protrusions are required for the communication between endocardial and myocardial cells via Nrg/ErbB signaling (Figure 6\u2014figure supplement 2).\n\nIn summary, our work describes how endocardial sprouting is required for Nrg/ErbB signaling during cardiac trabeculation. Furthermore, we identify Apelin signaling as a positive regulator of endocardial sprouting.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>TgBAC(apln:EGFP)bns157</td>\n      <td>Helker et al., 2020</td>\n      <td>ZFIN: bns157</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>TgBAC(cdh5:Gal4ff)mu101</td>\n      <td>Bussmann et al., 2011</td>\n      <td>ZFIN: mu101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(UAS:LIFEACT-GFP)mu271</td>\n      <td>Helker et al., 2013</td>\n      <td>ZFIN: mu271</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(fli1a:nrg2a-p2a-tdTomato)bns199</td>\n      <td>Rasouli and Stainier, 2017</td>\n      <td>ZFIN: bns199</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(myl7:mCherry-CAAX)bns7</td>\n      <td>Uribe et al., 2018</td>\n      <td>ZFIN: bns7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(myl7:BFP-CAAX)bns193</td>\n      <td>Guerra et al., 2018</td>\n      <td>ZFIN: bns193</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(myl7:MKATE-CAAX)sd11</td>\n      <td>Lin et al., 2012</td>\n      <td>ZFIN: sd11</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(kdrl:HsHRAS-mCherry)s896</td>\n      <td>Chi et al., 2008</td>\n      <td>ZFIN: s896</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(myl7:HRAS-EGFP)s883</td>\n      <td>D\u2019Amico et al., 2007</td>\n      <td>ZFIN: s883</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(tp1-MmHbb:EGFP)um14</td>\n      <td>Parsons et al., 2009</td>\n      <td>ZFIN: um14</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(myl7:mVenus-gmnn)ncv43Tg</td>\n      <td>Jim\u00e9nez-Amilburu et al., 2016</td>\n      <td>ZFIN: ncv43Tg</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(UAS: irsp53dn-p2a-tagRFP)bns440</td>\n      <td>This paper</td>\n      <td>bns440</td>\n      <td>See Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>TgBAC(aplnrb:VenusPEST)mr13</td>\n      <td>This paper</td>\n      <td>mr13</td>\n      <td>See Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(\u20130.8myl7:ERK-KTR-Clover-p2a-Hsa.H2B-tagBFP)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(\u20130.8myl7:ERK-KTR-Clover-p2a-Hsa.H2B-mScarlet)bns565</td>\n      <td>This paper</td>\n      <td>bns565</td>\n      <td>See Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>aplnmu267 mutant</td>\n      <td>Helker et al., 2015</td>\n      <td>ZFIN: mu267</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>aplnrbmu281 mutant</td>\n      <td>Helker et al., 2015</td>\n      <td>ZFIN: mu281</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>aplnramu296 mutant</td>\n      <td>Helker et al., 2015</td>\n      <td>ZFIN: mu296</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488 anti-Chicken IgG (H + L) (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A-11039</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 568 anti-Mouse IgG (H + L) (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A-11004</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 647 anti-Rabbit IgG (H + L) (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A-21244</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (chicken polyclonal)</td>\n      <td>AvesLab</td>\n      <td>Cat#: GFP-1020</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mCherry (mouse monoclonal)</td>\n      <td>Takara Bio Clontech</td>\n      <td>Cat# 632,543</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Agarose, low gelling temperature</td>\n      <td>Sigma</td>\n      <td>A9414-25g</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EdU</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A10044</td>\n      <td>(1 mM)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ErbB2 inhibitor PD168393</td>\n      <td>Sigma</td>\n      <td>Cat# PZ0285</td>\n      <td>(10 \u00b5M)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MEK inhibitor PD0325901</td>\n      <td>Sigma</td>\n      <td>Cat# PZ0162</td>\n      <td>(1 \u00b5M)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RO 4929097</td>\n      <td>MedChemExpress</td>\n      <td>Cat# HY-11102</td>\n      <td>(1 \u00b5M)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI</td>\n      <td>Sigma</td>\n      <td>Cat# D9542</td>\n      <td>(1 \u03bcg/ml)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Alexa Fluor 568 Phalloidin</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A12380</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT EdU Cell Proliferation Kit for Imaging, Alexa Fluor 647 dye</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# C10340</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DyNAmo ColorFlash SYBR Green qPCR Mix</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# F416S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>In-Fusion HD Cloning Plus</td>\n      <td>Takara Bio</td>\n      <td>Cat# 638,910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Maxima First Strand cDNA kit</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# K1641</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNA clean and concentrator-5</td>\n      <td>Zymo Research</td>\n      <td>R1016</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji Image J</td>\n      <td>Schindelin et al., 2012</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 8</td>\n      <td>GraphPad Software</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris \u2013 version 9.6.0</td>\n      <td>Bitplane</td>\n      <td>RRID:SCR_007370</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ZEN Digital Imaging</td>\n      <td>Zeiss</td>\n      <td>RRID:SCR_013672</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish lines\n\nAll zebrafish housing and husbandry were performed under standard conditions in accordance with institutional (Max Planck Society) and national ethical and animal welfare guidelines approved by the ethics committee for animal experiments at the Regierungspr\u00e4sidium Darmstadt, Germany, as well as the FELASA guidelines (Alestr\u00f6m et al., 2020). Embryos were staged by hpf at 28.5\u00b0C (Kimmel et al., 1995).\n\nTransgenic lines used in the study: TgBAC(apln:EGFP)bns157 (Helker et al., 2020), TgBAC(cdh5:Gal4ff)mu101 (Bussmann et al., 2011), Tg(UAS:LIFEACT-GFP)mu271 (Helker et al., 2013), Tg(fli1a:nrg2a-p2a-tdTomato)bns199 (Rasouli and Stainier, 2017), Tg(myl7:mCherry-CAAX)bns7 (Uribe et al., 2018), Tg(myl7:BFP-CAAX)bns193 (Guerra et al., 2018), Tg(myl7:MKATE-CAAX)sd11 (Lin et al., 2012), Tg(kdrl:HsHRAS-mCherry)s896 (Chi et al., 2008), Tg(myl7:HRAS-EGFP)s883 (D\u2019Amico et al., 2007), Tg(tp1-MmHbb:EGFP)um14 (Parsons et al., 2009), Tg(myl7:mVenus-gmnn)ncv43Tg (Jim\u00e9nez-Amilburu et al., 2016), Tg(UAS:irsp53dn-p2a-tagRFP)bns440 (this study), TgBAC(aplnrb:VenusPEST)mr13 (this study), Tg(\u20130.8myl7:ERK-KTR-Clover-p2a-Hsa.H2B-tagBFP) (this study, abbreviated as Tg(myl7:ERK-KTR-Clover-p2a-H2B-tagBFP)) and Tg(\u20130.8myl7:ERK-KTR-Clover-p2a-Hsa.H2B-mScarlet)bns565 (this study, abbreviated as Tg(myl7:ERK-KTR-Clover-p2a-H2B-mScarlet)).\n\nMutant lines used in the study: aplnmu267 (Helker et al., 2015), aplnrbmu281 (Helker et al., 2015), aplnramu296 (Helker et al., 2015).\n\n### Generation of transgenic lines\n\nTo generate the Tg(UAS:irsp53dn-p2a-tagRFP) line, a dominant negative form of irsp53 (Millard et al., 2005; Meyen et al., 2015) was amplified by PCR using the primers: forward, 5\u2019- TTCGAATTAGATCTGTCGACCGCCACCATGTCTCGCACCGACGAGGT-3\u2019; reverse, 5\u2019- GTAGCTCCGCTTCCACGCGTCTGTGCAAAGCCTGCCATGC-3\u2019. The amplification was cloned into a 5xUAS-p2a vector upstream of tagRFP.\n\nTo generate the aplnrb bacterial artificial chromosome (BAC) construct, we used the BAC clone CH211-102K containing the aplnrb locus. All recombineering steps were performed as described in Bussmann and Schulte-Merker, 2011, with the modifications as described in Helker et al., 2019. The following homology arms were used to generate the targeting PCR product of the Venus-pest_Kan cassette: aplnrb_HA1_GFP_fw: GAGCACATGACAAACAACTTCTCTGTGATCACTTCAAAGATTTTCTTGAAACCATGGTGAGCAAGGGCGAGGAG and aplnrb_HA2_kanR_rev: TCGTCGAAGTAATCTGGGCTATAGTCAGCAGTCATGTTGTCCATGGCATTTTCCAGAAGTAGTGAGGAG. The Kanamycin cassette was removed with a flippase.\n\nTo generate the Tg(\u20130.8myl7:ERK-KTR-Clover-p2a-Hsa.H2B-tagBFP) and Tg(\u20130.8myl7:ERK-KTR-Clover-p2a-Hsa.H2B-mScarlet) lines, ERK-KTR-Clover was amplified from addgene plasmid #59150 using forward primer: GCAAAGCAGACAGTGAACAAGCTTGCTAGCCCACCATGAAGGGCCGAAAGCCTCGGG and reverse primer: GTTAGTAGCTCCGCTTCCGTCGACGGCGGCGGTCACGAACTCCAGCAGG. The PCR product was cloned into a Tol2 enabled vector containing p2a and H2B. Of note, no F1 adults were recovered for the Tg(\u20130.8myl7:ERK-KTR-Clover-p2a-Hsa.H2B-tagBFP) line.\n\nAll constructs were injected into AB embryos at the one-cell stage (30 pg/embryo) together with Tol2 mRNA (25 pg/embryo) to establish the line.\n\n### Live imaging of stopped hearts\n\nZebrafish embryos and larvae were mounted in 1.4% low-melt agarose containing 1.6 mg/ml tricaine, to stop the heartbeat, on glass-bottom dishes. The samples were imaged with a Zeiss LSM800 confocal microscope using a 40\u00d7/1.1 W objective or a Zeiss LSM880 confocal microscope using a 20\u00d7/1.1 W objective.\n\n### Live imaging of beating hearts\n\nZebrafish embryos were mounted in 0.8% low-melt agarose containing 0.2 mg/ml tricaine on glass-bottom dishes and kept in water containing 0.2 mg/ml tricaine through the experiment. Videos were acquired at 100 frames per second with a Hamamatsu ORCA flash 4.0 sCMOS camera and the image was binned 4 \u00d7 4 to achieve a calculated pixel resolution of 0.7 \u00b5m (40\u00d7 objective).\n\n### Inhibitor treatments\n\nZebrafish embryos were treated with 1 \u00b5M Notch inhibitor RO 4929097 for 24 hr (from 24 to 48 hpf), washed twice with egg water containing 0.1% (w/v) 1-phenyl-2-thiourea (PTU) and mounted in 1.4% low-melt agarose with 1.6 mg/ml tricaine for imaging.\n\nZebrafish embryos were treated with 1 \u00b5M MEK inhibitor PD 0325901 or 10 \u00b5M ErbB2 inhibitor PD 168393 from 56 to 72 hpf, washed twice with egg water containing 0.1% (w/v) PTU and mounted in 1.4% low-melt agarose with 1.6 mg/ml tricaine for imaging.\n\n### EdU staining\n\nZebrafish embryos were treated with 1 mM EdU dissolved in 1% DMSO for 24 hr (from 48 to 72 hpf) or 44 hr (from 28 to 72 hpf) in egg water containing 0.1% (w/v) PTU. After treatment, embryos and larvae were washed twice with egg water containing 0.1% (w/v) PTU, anesthetized with 0.2% (w/v) tricaine for 5 min and fixed in 4% PFA at room temperature for 2 hr. The CLICK-IT reaction for EdU labeling was performed as per manufacturer\u2019s protocol (Invitrogen). Samples were processed for immunostaining with anti-GFP, anti-mCherry, and DAPI using the procedure described below.\n\n### Immunostaining\n\nZebrafish embryos and larvae were collected at different stages and fixed in 4% FPA at room temperature for 2 hr. Next, animals were washed with PBS/1% BSA/1%DMSO/0.5% Triton X-100 (PBDT) and blocked with PBDT/10% goat serum for 1 hr before incubating in primary antibody at 4\u00b0C overnight. Samples were washed in PBDT for 30 min \u00d7 four times and incubated in secondary antibody for 2 hr at room temperature and then incubated with 1 \u03bcg/ml DAPI for 10 min and washed with PBS/0.1% Tween.\n\nPrimary antibodies used were GFP and mCherry. Phalloidin Alexa Fluor 568 was used to mark F-actin. Secondary antibodies were goat anti-chicken Alexa Fluor 488, goat anti-mouse Alexa Fluor 568, and goat anti-rabbit Alexa Fluor 647.\n\n### Image processing\n\nConfocal data were processed on Imaris x64. Images were prepared using Adobe Photoshop.\n\n### Quantification and statistical analysis\n\nThe number of endocardial protrusions at 24 hpf was quantified from maximum intensity projections of the ventricle. The number of endocardial protrusions at 48 hpf was quantified from the mid-sagittal plane of the ventricle. The ratio of trabecular CMs was quantified as previously described (Jim\u00e9nez-Amilburu et al., 2016). The number of trabeculae in the outer curvature of the ventricle was quantified from the mid-sagittal plane, and delaminating CMs were also counted as trabeculae. The number of trabecular CMs in the outer curvature of the ventricle was quantified from the mid-sagittal plane. The number of multilayered CMs in the outer curvature of the ventricle was also quantified from the mid-sagittal plane. EdU+ and Gmnn+ CMs were quantified in the entire ventricle. To quantify the volume of the CJ, the drawing tool paintbrush in Fiji was used to mark the space between the endocardium and myocardium in the outer curvature of the ventricle, followed by a 3D surface reconstruction by Imaris. Systolic and diastolic ventricular areas were measured to calculate ejection fractions. Sample sizes are indicated in each figure, one dot representing one sample. All quantifications were analyzed by the Student\u2019s t-test (two tailed) and considered significant at p < 0.05. p-Values are indicated in the figures.\n",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "006ca2aa-311c-46e8-96c6-224e4ccb7690",
+      "submission_id": "0a3e4ffb-61b6-4d74-9bd6-0959a6a10fe8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Victoria L Bautch, https://ror.org/0130frc33 University of North Carolina, Chapel Hill United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73231.sa0](https://doi.org/10.7554/eLife.73231.sa0)\n\nThis first formal dissection of endocardial protrusions in zebrafish hearts describes how they anchor to cardiomyocytes, and how they participate in signaling pathways involved in trabeculation. The work combines elegant zebrafish reporters and high-quality imaging, as well as mutant lines and pathway inhibitors to provide key findings of how mutual regulation between the myocardium and the endocardium contribute to understanding of mechanisms underlying organ development. This manuscript is of broad interest to readers who study cardiogenesis and developmental biology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Victoria L Bautch, https://ror.org/0130frc33 University of North Carolina, Chapel Hill United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73231.sa1](https://doi.org/10.7554/eLife.73231.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Apelin signaling dependent endocardial protrusions promote cardiac trabeculation in zebrafish\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Edward Morrisey as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Naoki Mochizuki (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nNote: The recommendations for the authors from reviewers are also provided in full, as several specific corrections and clarifications are requested. Here we summarize the \"essential revisions\" to be addressed in a revised manuscript:\n\n1) Provide numbers/additional numbers to buttress some of the data (for example: Nrg-OE, quantitative data that protrusions form at the outer curvature of the looped heart to align with chamber specification and trabeculation).\n\n2) Describe exactly how the graphs were assembled, especially the graphs in Figure 5E-G; they appear to have been extensively manipulated manually.\n\n3) Define terms and stages better: distinguish multi-layering from trabeculation clearly and use the terms accordingly; clearly define the steps of trabeculation early on and then interpret the data in light of the step(s) affected.\n\n4) Modify conclusions where data does not strongly support the conclusions, especially in terms of spatial concordance between protrusions and extruding CMs, and modify the Discussion appropriately.\n\n5) Better description of the mutants used and their overall phenotype.\n\n6) Better discussion of Notch which is dealt with superficially, and better discussion of differences between mouse and fish trabeculation.\n\nReviewer #1 (Recommendations for the authors):\n\nStrengths:\n\nThe authors used the transgenic zebrafish lines to show clear images of protrusions from the EdCs and spatiotemporally analyzed them in the transgenic lines: Apln-/-. The importance of protrusions from the EdCs was confirmed by endothelial cell-specific overexpression of dominant-negative form of IRSp53. In addition, to clarify Apln-dependent signaling, the localization of Aplnrb was monitored by the TgBAC(aplnrb:VenusPEST) embryos. Erk activation that might be required for trabeculation was demonstrated in the Tg (myl7:ERK-KTR-Clover-p2a-H2B-tagBFP/mScarlet) larvae. Clear in vivo images followed by statistical analyses support the authors claims well in this paper.\n\nPotential improvements:\n\n1. One might feel difficulty to understand why Nrg2 overexpressed in the endocardium is not enough to activate ErbB on the myocardium and require protrusions that forms anchor points. What do protrusion do for the myocardium? This should be discussed for helping the readers, although the requirement of protrusions is obviously proved by the data. Apln released from the myocardium layer can reach the endocardial layer through cardiac jelly, suggesting that Nrg2a can also reach the myocardium. One thing that might puzzle the readers is how the protrusions modulate Nrg2/ErbB signaling by touching to cardiomyocytes.\n\n2. Are the cardiomyocytes of outer curvature responsive to Apln? According to the data shown in Figure 2F and 2F', distribution of protrusion is dominant in the outer curvature over inner curvature (48 hpf). However, the expression of aplnrb is clearly observed in the inner curvature (Figure 3D', 72 hpf). Therefore, considering the authors' hypothesis, the presence of protrusions might vary during embryogenesis. The protrusion at 72 hpf should be counted as Figure 2F and 2F' to more convincingly demonstrate the relevance of Apln-Aplnrb signaling to protrusions.\n\nPlease reconsider the discussion (line 281-288).\n\n3. Similar inconsistency is found in Figure 4I. The number of arrows at region i is more that region ii or region iii in Figure 4C'. This should be reanalyzed to show exact number of protrusions at 48 hpf and 72 hpf.\n\n4. In relation to 1, how are the contacts (touchdowns) kept between protrusions and cardiomyocytes? Are cell-cell adhesion molecules involved in this attachment? How are cytonemes maintained during attachment? This might be interesting to readers because the protrusions are very interesting findings and never detached during contraction.\n\nReviewer #2 (Recommendations for the authors):\n\n1. I do not think that the authors show quantitative data that protrusions form at the outer curvature of the looped heart to align with chamber specification and trabeculation. I think it would be helpful to show this.\n\n2. Page 3. I think that the claim that endocardial protrusions can be detected in \"close proximity\" to trabecular CMs is not evident from the data. There is perhaps an issue here that might confuse readers \u2013 that is, how trabeculae versus multilayering is defined. I understand from previous literature that the first EMT-like events that lead to extrusion of CMs from the outer layer are considered the first step of trabeculation in the fish heart. Trabecular is more traditionally defined as the formation of CM clusters that assemble and protrude towards the lumen. How then should we distinguish between trabeculation as above and multilayering. I think this is unclear in this manuscript and the terms such as \"# of trabecular CMs\", \"# of trabeculae\" and \"# of multilayered CMs\", as used in the various figures, are not properly defined in the paper. Getting back to the point on page 3, the segmentation and rendering of surfaces in video 2 does not allow clear visualization of individual CMs and I do not think there is sufficient evidence that protrusions track more specifically along the side of delaminating or trabecular CMs. This would need further support.\n\n3. Page 3 bottom: I am not sure that 54% of EdU+ CMs being in close proximity to endocardial protrusions can be interpreted in any other way than random distribution of protrusions among CMs (dividing or otherwise). Please modify.\n\n4. Given the points made above, I am unclear by the first sentence of paragraph 2 on page 5 stating \"Since we observed a correlation between endocardial protrusions and myocardial trabeculation\u2026\"\n\n5. Page 5: experiments to overexpress Irsp53dn in endocardial cells. Experiments were performed at 48 hrs when the interaction between protrusions is complex. If possible, it would be helpful to see data at 24 hrs before endocardial:CM interactions as in Figure 1A and as for Apln mutants in Figure 4.\n\n6. The expression of aplnrb in wholemount embryos shown in Figure 3- figure suppl 1 apparently show higher expression in specific regions at 48hrs. This seems at odds with the expression pattern shown in Figure 3 at 48 hrs. Are the wholemounts useful? Aplnra also shows focal expression in the heart region yet is claimed not to be expressed in heart. For clarity, these sites could be identified?\n\n7. Figure 4 -suppl 1C is not particularly useful since the heart is hardly visible.\n\n8. Page 9: analysis of Aplnrb mutants. More details are needed here about these mutants and whether the general demise of the majority mutants might relate to the cardiac phenotype in the few survivors. Might embryos be delayed, for example? What is the impact of mutation on other vascular beds and how might that impact the cardiac phenotype? Same question applies to Apln mutations and inhibitor treatments. These are global not conditional mutants.\n\n9. The notch reporter does not seem to detect notch expression in CMs as previous reported, which plays a key role in selection of trabeculae and the range of neuregulin signaling.\n\n10. Page 11 and Figure 5 relating to nrg2 over-expression. The phenotype seems marginal in the figure panels B, B' and this is complicated by the lack of clarity around definitions of trabeculation, multilayering etc as noted above. The statistics in Figure 5E for # of trabeculae are marginal and are driven by 3 outliers. Even if there were more multicellular trabecular protrusions, multilayering is proceeding just fine. Is multilayering in over-expressors distinct from the normal trabeculation process? Some clarity needed here. High sample numbers may be needed. Likewise, in nrg2 overexpressing apln mutants, multilayering is advanced, unlike in irsp53 over-expressors. This important section is overall rather weak and the conclusions need better justification. The text refers to Figure 5C-C' and Figure 5D-D' \u2013 there are no C', C', D' or D' panels.\n\n11. Discussion. There appear to be key differences between mouse and zebrafish. In particular, endocardial sprouts and touchdowns in mice are cellular, whereas protrusions in zebrafish appear to akin to filopodia. Furthermore, in the early looping heart, the myocardium is multi-layered as sprouting begins. Thus on page 15 it is technically incorrect to say that \"In mouse, endocardial sprouting and touchdown formation occur early during cardiac trabeculation..\" if we are to consider generally that multilayering is part of trabeculation. I think it would help the reader to be aware of these differences and some considered comments made might be helpful.\n\n12. Likewise, the complexities of notch signaling in zebrafish are relevant and not addressed. If notch function in CMs is important in selecting individual CMs for extrusion from the outer layer, how might endocardial protrusions interact with this process?\n\n13. Schematic model: I think the idea that protrusions have a preferred interaction with extruding CMs does not have strong enough experimental support and it is premature for the figure to reflect that.\n\n14. In graphical figures, such as those in Figure 5 E-G, the graphs appear to have been assembled manually. When blown up, the building blocks of the graph \u2013 e.g single or multiple dots \u2013 seem to be visible. There are inconsistencies in the shape of dots, the symmetrical or non-symmetrical arrangement of dots, and the thickness and texture of lines showing means and error bars. The authors should assure the reviewers and journal that these are authentic representations of the data and that the statistics have been done appropriately.\n",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "193ab49f-6891-4229-8eb6-14b2cf80bb22",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C1",
+      "claim": "Endocardial cells produce growth factors to promote myocardial morphogenesis and growth during cardiac development.",
+      "claim_type": "EXPLICIT",
+      "source": "During cardiac development, endocardial cells (EdCs) produce growth factors to promote myocardial morphogenesis and growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general statement about cardiac development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "01555000-85ef-48f3-80d0-9aa84762ff77",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C2",
+      "claim": "Endocardial cells produce neuregulin which is required for ventricular cardiomyocytes to seed trabeculae.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, EdCs produce neuregulin which is required for ventricular cardiomyocytes (CMs) to seed the multicellular ridges known as trabeculae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "d79a9867-d472-4e4b-ba63-b705bc5e1772",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C3",
+      "claim": "Defects in neuregulin signaling cause hypotrabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in neuregulin signaling, or in endocardial sprouting toward CMs, cause hypotrabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "2f91468d-82ad-47be-8321-7212dc9f5247",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C4",
+      "claim": "Defects in endocardial sprouting toward cardiomyocytes cause hypotrabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in neuregulin signaling, or in endocardial sprouting toward CMs, cause hypotrabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "6d4572fe-cf9a-41a9-8da2-10b4c5d3c77b",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C5",
+      "claim": "Endocardial cells interact with cardiomyocytes via dynamic membrane protrusions in zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we first show by live imaging in zebrafish embryos that EdCs interact with CMs via dynamic membrane protrusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated through live imaging data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "548da1f2-6d05-4d1b-845b-82c4e936d36e",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C6",
+      "claim": "Endocardial protrusions remain in close contact with cardiomyocytes despite vigorous cardiac contractions after touching them.",
+      "claim_type": "EXPLICIT",
+      "source": "After touching CMs, these protrusions remain in close contact with their target despite the vigorous cardiac contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 1E-H and Figure 1\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "a3f0eff0-c53e-48cc-a378-79a1e14b7d1a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C7",
+      "claim": "Loss of Apelin leads to reduced endocardial sprouting and hypotrabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of the CM-derived peptide Apelin, or of the Apelin receptor, which is expressed in EdCs, leads to reduced endocardial sprouting and hypotrabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "b361b35b-f656-48f2-ab63-f0a63ac1afbd",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C8",
+      "claim": "Loss of the Apelin receptor leads to reduced endocardial sprouting and hypotrabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of the CM-derived peptide Apelin, or of the Apelin receptor, which is expressed in EdCs, leads to reduced endocardial sprouting and hypotrabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "3c1c570c-9548-4d8a-b4d1-1efcac84368b",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C9",
+      "claim": "The Apelin receptor is expressed in endocardial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of the CM-derived peptide Apelin, or of the Apelin receptor, which is expressed in EdCs, leads to reduced endocardial sprouting and hypotrabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "085a6555-5351-41bd-8762-67c7d2273f70",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C10",
+      "claim": "Apelin is a cardiomyocyte-derived peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of the CM-derived peptide Apelin, or of the Apelin receptor, which is expressed in EdCs, leads to reduced endocardial sprouting and hypotrabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "2256f6d1-e9b1-4595-9196-ed2cb749c808",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C11",
+      "claim": "Neuregulin signaling requires endocardial protrusions to induce Erk activity in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, neuregulin signaling requires endocardial protrusions to induce extracellular signal-regulated kinase (Erk) activity in CMs and trigger their delamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "453551d6-f644-4f72-a805-effbbadb806d",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C12",
+      "claim": "Neuregulin signaling requires endocardial protrusions to trigger cardiomyocyte delamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, neuregulin signaling requires endocardial protrusions to induce extracellular signal-regulated kinase (Erk) activity in CMs and trigger their delamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "65c4b3ce-1441-444e-b277-a4a0e4d9be17",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C13",
+      "claim": "Apelin signaling-dependent endocardial protrusions modulate cardiomyocyte behavior during trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data show that Apelin signaling-dependent endocardial protrusions modulate CM behavior during trabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract and supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "7cf1f772-6b26-4654-a6ac-2161bdc9d2d6",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C14",
+      "claim": "During cardiac trabeculation, cardiomyocytes in the outer curvature of the ventricles delaminate toward the lumen to form trabeculae.",
+      "claim_type": "EXPLICIT",
+      "source": "During cardiac trabeculation, CMs in the outer curvature of the ventricles delaminate toward the lumen to form multicellular sponge-like projections, called trabeculae (Sedmera and Thomas, 1996; Sedmera et al., 2000; Stankunas et al., 2008; Liu et al., 2010; Peshkovsky et al., 2011; Staudt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "297ca110-3cb0-4b82-b561-0a85cb8acc13",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C15",
+      "claim": "Cardiac trabeculae are crucial for achieving increased contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac trabeculae are crucial to achieve increased contractility as well as for the formation of the conduction system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "bbd95850-c37a-4348-b6e7-03d8a12d9860",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C16",
+      "claim": "Cardiac trabeculae are crucial for the formation of the conduction system.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac trabeculae are crucial to achieve increased contractility as well as for the formation of the conduction system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "ff1b1a81-8316-4daf-9827-d45d09b62b35",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C17",
+      "claim": "Trabeculation defects are often associated with left ventricular noncompaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Trabeculation defects are often associated with left ventricular noncompaction (Oechslin et al., 2000; St\u00f6llberger and Finsterer, 2004), embryonic heart failure, and lethality (Gassmann et al., 1995; Lee et al., 1995; Lai et al., 2010; Liu et al., 2010; Rasouli and Stainier, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "0084ad53-3ee6-49f6-9492-75f41fdfe482",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C18",
+      "claim": "Trabeculation defects are associated with embryonic heart failure and lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Trabeculation defects are often associated with left ventricular noncompaction (Oechslin et al., 2000; St\u00f6llberger and Finsterer, 2004), embryonic heart failure, and lethality (Gassmann et al., 1995; Lee et al., 1995; Lai et al., 2010; Liu et al., 2010; Rasouli and Stainier, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "6e4b7fbe-0450-478d-8547-69daacb06f19",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C19",
+      "claim": "The early embryonic heart in zebrafish consists of two cell layers, the myocardium and the endocardium, separated by cardiac jelly.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, as in other vertebrates, the early embryonic heart consists of two cell layers, the myocardium and the endocardium, separated by a specialized extracellular matrix called the cardiac jelly (CJ) (Stainier and Fishman, 1992; Brutsaert et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "98dc40ed-3df7-4d21-a3c6-fd60f6abc59a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C20",
+      "claim": "Endocardial cells form sprouts that are mostly oriented toward the myocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been shown that endocardial cells (EdCs), similar to blood endothelial cells (ECs), form sprouts, and that these sprouts are mostly oriented toward the myocardium (Del Monte-Nieto et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "b7f99048-c26b-4739-aea3-3fa9b1cb9ac6",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C21",
+      "claim": "During sprouting angiogenesis, endothelial cells extend filopodia to sense the microenvironment for growth factors.",
+      "claim_type": "EXPLICIT",
+      "source": "During sprouting angiogenesis, ECs first extend filopodia to sense the microenvironment for growth factors, then they migrate into avascular areas and form new blood vessels (Gerhardt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "cb61db54-a171-4975-b12d-6c2becd4c6bb",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C22",
+      "claim": "Mouse and zebrafish embryos lacking endocardium-derived neuregulin fail to form trabeculae.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse and zebrafish embryos lacking the endocardium-derived ligand Nrg or the ErbB receptor, which is expressed by the myocardium, fail to form trabeculae (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995; Lai et al., 2010; Liu et al., 2010; Rasouli and Stainier, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "173a3eb0-407a-4ed3-ba85-ebee35602aff",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C23",
+      "claim": "Mouse and zebrafish embryos lacking the ErbB receptor fail to form trabeculae.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse and zebrafish embryos lacking the endocardium-derived ligand Nrg or the ErbB receptor, which is expressed by the myocardium, fail to form trabeculae (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995; Lai et al., 2010; Liu et al., 2010; Rasouli and Stainier, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "6281fc29-a037-42f4-b21b-a70e89395a2d",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C24",
+      "claim": "The ErbB receptor is expressed by the myocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse and zebrafish embryos lacking the endocardium-derived ligand Nrg or the ErbB receptor, which is expressed by the myocardium, fail to form trabeculae (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995; Lai et al., 2010; Liu et al., 2010; Rasouli and Stainier, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "ed9505d6-7cd6-4f8d-b94e-50e2a5894a96",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C25",
+      "claim": "Endocardial Notch signaling is required for cardiac trabeculation in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, endocardial Notch signaling (Grego-Bessa et al., 2007; D'Amato et al., 2016; Del Monte-Nieto et al., 2018), angiopoietin 1/Tie2 signaling (Suri et al., 1996; Tachibana et al., 2005; Qu et al., 2019), and semaphorin 3E/plexinD1 signaling (Sandireddy et al., 2019) are required for cardiac trabeculation in mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "ad7b6076-3ab7-47b0-a6e0-65cebf3fd2e1",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C26",
+      "claim": "Angiopoietin 1/Tie2 signaling is required for cardiac trabeculation in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, endocardial Notch signaling (Grego-Bessa et al., 2007; D'Amato et al., 2016; Del Monte-Nieto et al., 2018), angiopoietin 1/Tie2 signaling (Suri et al., 1996; Tachibana et al., 2005; Qu et al., 2019), and semaphorin 3E/plexinD1 signaling (Sandireddy et al., 2019) are required for cardiac trabeculation in mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "6c9a32aa-e2e2-4b9a-be98-22affc6b8ebb",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C27",
+      "claim": "Semaphorin 3E/plexinD1 signaling is required for cardiac trabeculation in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, endocardial Notch signaling (Grego-Bessa et al., 2007; D'Amato et al., 2016; Del Monte-Nieto et al., 2018), angiopoietin 1/Tie2 signaling (Suri et al., 1996; Tachibana et al., 2005; Qu et al., 2019), and semaphorin 3E/plexinD1 signaling (Sandireddy et al., 2019) are required for cardiac trabeculation in mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "7f6d3470-34e3-47b5-b58e-7ba2a481af8f",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C28",
+      "claim": "Genetic deletion of relevant receptors in the endocardium results in attenuated endocardial sprouting.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, genetic deletion of the relevant receptors in the endocardium results in attenuated endocardial sprouting (Qu et al., 2019) and trabeculation defects (Grego-Bessa et al., 2007; D'Amato et al., 2016; Del Monte-Nieto et al., 2018; Qu et al., 2019; Sandireddy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "d9e81700-adfd-419c-b8fe-c091c3b2766b",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C29",
+      "claim": "Genetic deletion of relevant receptors in the endocardium results in trabeculation defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, genetic deletion of the relevant receptors in the endocardium results in attenuated endocardial sprouting (Qu et al., 2019) and trabeculation defects (Grego-Bessa et al., 2007; D'Amato et al., 2016; Del Monte-Nieto et al., 2018; Qu et al., 2019; Sandireddy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "7f5cf161-b2b8-4663-9014-bb5f37b2e6f6",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C30",
+      "claim": "Cytonemes are filopodia-like actin-rich membrane protrusions that transport signaling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, a novel mechanism of cell communication by active transport of signaling molecules through filopodia-like actin-rich membrane protrusions, also known as cytonemes, has been shown in different models including Drosophila (Ram\u00edrez-Weber and Kornberg, 1999; Roy et al., 2011; Huang et al., 2019), chick (Sanders et al., 2013), zebrafish (Stanganello et al., 2015), and mouse (Fierro-Gonz\u00e1lez et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "f91f6993-d683-40f9-b968-b3d7c2505fa8",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C31",
+      "claim": "Cytonemes depend on actin polymerization by effector proteins including formins, profilin, and IRSp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Like filopodia, cytonemes depend on actin polymerization by various effector proteins including formins, profilin, and IRSp53, a substrate for the insulin receptor (Rottner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "c64e85b9-db1d-4b0d-bffc-db427109c768",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C32",
+      "claim": "Endocardial protrusions extend toward the myocardium at 24 hours post-fertilization in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed endocardial protrusions extending toward the myocardium at 24 (Figure 1A\u2013A'') and 48 (Figure 1B\u2013B'', Figure 1\u2014figure supplement 1A) hours post-fertilization (hpf).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1A-A''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "82f02133-9c58-469a-ba62-08e1b0ddbfb7",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C33",
+      "claim": "Endocardial protrusions extend toward the myocardium at 48 hours post-fertilization in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed endocardial protrusions extending toward the myocardium at 24 (Figure 1A\u2013A'') and 48 (Figure 1B\u2013B'', Figure 1\u2014figure supplement 1A) hours post-fertilization (hpf).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1B-B''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "247d912e-28fe-41ea-8157-a9dc9f11c199",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C34",
+      "claim": "More endocardial protrusions are observed in the ventricle than in the atrium at 48, 60, and 72 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we observed more endocardial protrusions in the ventricle than in the atrium at 48, 60, and 72 hpf (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "4707338b-0a9b-425e-a162-f084e38cabb4",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C35",
+      "claim": "Ventricular endocardial protrusions form touchdowns with the myocardium that are stable during cardiac contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, these ventricular endocardial protrusions formed anchor points with the myocardium, and to be consistent with similar observations in mouse (Del Monte-Nieto et al., 2018) we will refer to them as touchdowns (Figure 1B\u2013B''). Notably, these touchdowns are stable even during cardiac contractions (Figure 1E\u2013H, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1B-B'', E-H and Figure 1\u2014video 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "cd8c8f49-02af-4b51-b949-3d86b21c3154",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C36",
+      "claim": "Cardiomyocytes delaminate from the compact layer toward the lumen starting at around 60 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting at around 60 hpf, cardiomyocytes (CMs) delaminate from the compact layer toward the lumen to seed the trabecular layer (Figure 1C, C' and C''''), as reported before (Liu et al., 2010; Peshkovsky et al., 2011; Staudt et al., 2014; Priya et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with supporting citations and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "695da5cc-a594-450c-ae98-1d7097231a79",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C37",
+      "claim": "Endocardial protrusions extend along and sometimes around delaminating cardiomyocytes at 60 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage, we observed that endocardial protrusions appear to extend along, and sometimes around, the delaminating CMs (Figure 1C'' and C''', Figure 1\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C'' and C'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "0fd6af9f-dc89-4480-9b49-17bc7405d6ae",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C38",
+      "claim": "Trabecular cardiomyocytes start to assemble into trabeculae starting at 72 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, trabecular CMs start to assemble into trabeculae, 'finger-like' multicellular projections, starting at 72 hpf (Figure 1D, D' and D'''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "0430903f-b9ce-4f6d-bccb-7102e1e46247",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C39",
+      "claim": "Endocardial protrusions are in close proximity to trabecular cardiomyocytes at 72 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage, we observed that endocardial protrusions can also be detected in close proximity to trabecular CMs (Figure 1D'' and D''', Figure 1\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1D'' and D'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "f37ef891-275f-4f60-9da8-6ca334cffce4",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C40",
+      "claim": "Cardiac trabeculae are mostly present in the outer curvature of the ventricle at early developmental stages in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac trabeculae are mostly present in the outer curvature of the ventricle at early developmental stages in zebrafish (Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "fb169d7a-5bc3-4aff-a71d-1b877f99e3b1",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C41",
+      "claim": "At 48 hours post-fertilization, endocardial protrusions are mostly located in the outer curvature of the ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "At 48 hpf, endocardial protrusions are mostly located in the outer curvature of the ventricle (Figure 1\u2014figure supplement 1C, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1C, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "9b898f67-da0c-42e6-9110-63754380e734",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C42",
+      "claim": "At 60 hours post-fertilization, 79% of all endocardial protrusions in the ventricle are located in the outer curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "At 60 and 72 hpf, respectively, 79% and 83% of all endocardial protrusions in the ventricle are located in the outer curvature (Figure 1\u2014figure supplement 1D-F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "62cc576a-9647-4cc0-a376-c2ea8fa4c839",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C43",
+      "claim": "At 72 hours post-fertilization, 83% of all endocardial protrusions in the ventricle are located in the outer curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "At 60 and 72 hpf, respectively, 79% and 83% of all endocardial protrusions in the ventricle are located in the outer curvature (Figure 1\u2014figure supplement 1D-F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "3f4895e5-236f-47f0-88e4-63b2a9857c5b",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C44",
+      "claim": "At 60 hours post-fertilization, 69% of all endocardial protrusions in the outer curvature are close to delaminating cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "69% of all endocardial protrusions in the outer curvature are close to delaminating CMs at 60 hpf, and 91% of all endocardial protrusions in the outer curvature are close to trabecular CMs at 72 hpf (Figure 1\u2014figure supplement 1D, E, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1D, E, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "6e50ea3e-955d-4b49-9c86-d88493bc144c",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C45",
+      "claim": "At 72 hours post-fertilization, 91% of all endocardial protrusions in the outer curvature are close to trabecular cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "69% of all endocardial protrusions in the outer curvature are close to delaminating CMs at 60 hpf, and 91% of all endocardial protrusions in the outer curvature are close to trabecular CMs at 72 hpf (Figure 1\u2014figure supplement 1D, E, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1D, E, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "5b617c1b-3ded-49fa-9924-51798d40ab80",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C46",
+      "claim": "At 60 hours post-fertilization, 98% of delaminating cardiomyocytes are in close proximity to endocardial protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 98% of delaminating CMs and 93% of trabecular CMs are in close proximity to endocardial protrusions at 60 and 72 hpf, respectively (Figure 1\u2014figure supplement 1D, E, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1D, E, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "274b7e77-caca-4494-a01e-4df1fbac7f1e",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C47",
+      "claim": "At 72 hours post-fertilization, 93% of trabecular cardiomyocytes are in close proximity to endocardial protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 98% of delaminating CMs and 93% of trabecular CMs are in close proximity to endocardial protrusions at 60 and 72 hpf, respectively (Figure 1\u2014figure supplement 1D, E, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1D, E, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "64a1f84b-a5ee-4998-b787-f88076d1328f",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C48",
+      "claim": "Endothelial overexpression of irsp53dn leads to a 70% reduction in the number of endocardial protrusions at 48 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "By crossing the Tg(UAS: irsp53dn-p2a-RFP) line to the TgBAC(cdh5:Gal4ff) line to overexpress Irsp53dn specifically in ECs, we observed a 70% reduction in the number of endocardial protrusions at 48 hpf (Figure 2A, B and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A, B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "90114522-5979-4d60-b550-7eb02c57dcd3",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C49",
+      "claim": "Endothelial overexpression of irsp53dn leads to fewer endocardial touchdowns.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon irsp53dn overexpression in ECs, we detected fewer endocardial touchdowns (Figure 2A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "bb584fec-b22c-47ea-9b80-ab3c225b0b7a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C50",
+      "claim": "Endothelial overexpression of irsp53dn leads to a reduction in cardiac trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon irsp53dn overexpression in ECs, we detected fewer endocardial touchdowns (Figure 2A and B), as well as a reduction in cardiac trabeculation (Figure 2C, D, G and G').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2C, D, G and G'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "a2d304c8-fa3c-4b0c-a332-9f6d8f5f4159",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C51",
+      "claim": "Endothelial overexpression of irsp53dn leads to significantly fewer cycling cardiomyocytes in the ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with controls, endothelial overexpression of irsp53dn led to significantly fewer mVenus-Gmnn+ CMs in the ventricle (Figure 2H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "bc762bce-182b-450d-aa0b-a58e3bd8fa0f",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C52",
+      "claim": "apln is expressed in the myocardium at 48 and 72 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected apln:EGFP expression in the myocardium at 48 and 72 hpf (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "70f1c45b-9692-42f8-a85c-783f3e2cf225",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C53",
+      "claim": "aplnrb is expressed in the endocardium at 48 and 72 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we detected aplnrb:VenusPEST expression in the endocardium at 48 and 72 hpf (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "83b1a675-b597-40fe-95de-20a2b0286963",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C54",
+      "claim": "aplnrb mutants that form a heart exhibit a reduced number of endocardial protrusions at 48 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing aplnrb mutants that do form a heart, we observed that they exhibit a reduced number of endocardial protrusions at 48 hpf (Figure 4\u2014figure supplement 1A, B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "548430b0-a1fd-4f5d-9559-0d96d2db0a35",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C55",
+      "claim": "aplnrb mutants that form a heart exhibit a reduced number of trabeculae at 72 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing aplnrb mutants that do form a heart, we observed that they exhibit a reduced number of endocardial protrusions at 48 hpf (Figure 4\u2014figure supplement 1A, B) and a reduced number of trabeculae at 72 hpf (Figure 4\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 1C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "3cedf047-afd7-4f14-b927-9e1d2a8e6b27",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C56",
+      "claim": "The cardiac jelly in aplnrb mutants appears thicker at 72 hours post-fertilization compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type embryos, the CJ between the endocardium and myocardium in the outer curvature of the ventricle appears to be mostly degraded at 72 hpf (Figure 4\u2014figure supplement 1C); however, the CJ in aplnrb mutants appears to be thicker at this stage (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 1C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "f4f9e692-d9ba-4b79-8d60-f11fdee9ed61",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C57",
+      "claim": "aplnra mutants exhibit a reduced number of trabeculae at 72 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, aplnra mutants also exhibit a reduced number of trabeculae at 72 hpf (Figure 4\u2014figure supplement 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "19c61bc2-b568-428e-a810-8bec62e7b384",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C58",
+      "claim": "apln mutants exhibit a significantly lower number of endocardial protrusions at 24 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "We further observed that apln mutants exhibit a significantly lower number of endocardial protrusions at 24 and 48 hpf (Figure 4A\u2013D\u2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "784a8e1f-49a4-48c2-b048-471280e3cda5",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C59",
+      "claim": "apln mutants exhibit a significantly lower number of endocardial protrusions at 48 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "We further observed that apln mutants exhibit a significantly lower number of endocardial protrusions at 24 and 48 hpf (Figure 4A\u2013D\u2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "c6b8eac7-5e92-413f-a5f9-73366d084bcb",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C60",
+      "claim": "apln mutants exhibit a reduced number of endocardial touchdowns at 48 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with fewer endocardial protrusions, apln mutants also exhibit a reduced number of endocardial touchdowns at 48 hpf (Figure 4C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "114f556e-91f5-4a7d-a06e-45f30be6b62c",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C61",
+      "claim": "apln mutants exhibit a reduced number of trabeculae at 72 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with fewer endocardial protrusions, apln mutants also exhibit a reduced number of endocardial touchdowns at 48 hpf (Figure 4C and D), and a reduced number of trabeculae at 72 hpf (Figure 4E, F and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4E, F and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "de8c2d63-1da1-4db6-b907-d05fae562332",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C62",
+      "claim": "Homozygous apln mutants exhibit a significantly decreased number of EdU+ cardiomyocytes in their ventricle compared with apln+/+ siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous apln mutants exhibit a significantly decreased number of EdU+ CMs in their ventricle compared with apln+/+ siblings (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "d97a0a76-a304-41be-94fd-53c9344a9ca4",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C63",
+      "claim": "apln mutants display a significantly thicker cardiac jelly compared with apln+/+ siblings at 72 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, apln mutants also display a significantly thicker CJ compared with apln+/+ siblings at 72 hpf (Figure 4C\u2013F, K and L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4C-F, K and L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "d71e465f-2b00-4fa6-8dc8-2400e75f753a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C64",
+      "claim": "apln mutants do not exhibit obvious defects in sarcomere formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any obvious defects in sarcomere formation (Figure 4\u2014figure supplement 3A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "ad74cd36-d5e2-4af8-b85f-d8e272aa3573",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C65",
+      "claim": "apln mutants do not exhibit defects in heart rate or ejection fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any obvious defects in sarcomere formation (Figure 4\u2014figure supplement 3A and B), heart rate, ejection fraction, or blood circulation in apln mutants (Figure 4\u2014figure supplement 3C and D; Figure 4\u2014videos 1\u20132)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "4a046d64-2033-475b-af12-b3a2199e1a8a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C66",
+      "claim": "Treatment with the \u03b3-secretase inhibitor RO4929097 leads to a decrease in Notch reporter expression in the endocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to determine whether Notch signaling also regulates endocardial protrusion formation, we treated embryos with the \u03b3-secretase inhibitor RO4929097 and observed a decrease in Notch reporter expression in the endocardium (Figure 4\u2014figure supplement 4A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "b9973368-d4f6-47e6-b332-c6b05ac8244a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C67",
+      "claim": "Treatment with the \u03b3-secretase inhibitor RO4929097 leads to an increased number of endocardial protrusions in the ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to determine whether Notch signaling also regulates endocardial protrusion formation, we treated embryos with the \u03b3-secretase inhibitor RO4929097 and observed a decrease in Notch reporter expression in the endocardium (Figure 4\u2014figure supplement 4A and B) as well as an increased number of endocardial protrusions in the ventricle (Figure 4\u2014figure supplement 4E, F, and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 4E, F, and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "85da2f08-2fcf-44f5-92cd-a431da4a7bd6",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C68",
+      "claim": "Treatment with Notch inhibitor leads to a reduction in endocardial touchdowns at 48 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, and in line with the touchdown reduction phenotype in Notch-deficient mice, we observed a reduction in endocardial touchdowns in Notch inhibitor treated zebrafish larvae at 48 hpf (Figure 4\u2014figure supplement 4C, D, and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 4C, D, and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "7bac475a-fb0c-4f51-9475-e2c1076d09a6",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C69",
+      "claim": "Overexpression of nrg2a in the endothelium results in hypertrabeculation and a multilayered myocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of nrg2a in the endothelium results in hypertrabeculation as well as a multilayered myocardium (Figure 5A, B and E\u2013G; Figure 5\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5A, B and E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "183d30b6-9426-4766-93c9-e9c43560fc12",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C70",
+      "claim": "Overexpressing nrg2a in the endothelium while blocking endocardial protrusion formation by endothelial overexpression of irsp53dn is not sufficient to restore cardiac trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, overexpressing nrg2a in the endothelium while blocking endocardial protrusion formation by endothelial overexpression of irsp53dn is not sufficient to restore cardiac trabeculation or induce CM multilayering (Figure 5C-C' and E-G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5C-C' and E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "b9894dcd-e8a6-49ba-b525-0f65d90271e0",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C71",
+      "claim": "Overexpressing nrg2a in the endothelium of homozygous apln mutants is not sufficient to restore cardiac trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these results, overexpressing nrg2a in the endothelium of homozygous apln mutants is not sufficient to restore cardiac trabeculation or induce CM multilayering (Figure 5D-D' and E-G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5D-D' and E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "fbebc60f-cfc3-4eac-bdf8-53731ce2de97",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C72",
+      "claim": "The expression levels of nrg2a in apln mutant hearts at 48 hours post-fertilization are not changed compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we did not detect a change in the expression levels of nrg2a in apln mutant hearts at 48 hpf (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "89a01715-bcaf-44d6-b14e-9dfa1b9b0b68",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C73",
+      "claim": "Most ventricular cardiomyocytes in wild-type larvae display active Erk signaling with cytoplasmic Clover expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that most ventricular CMs in wild-type larvae display active Erk signaling with cytoplasmic Clover expression (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "0f07f478-e8f7-4a0e-b7c3-29219b1be1df",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C74",
+      "claim": "Treating embryos expressing the ERK-KTR reporter with a MEK inhibitor leads to an increased number of ventricular cardiomyocytes with nuclear Clover expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Treating embryos expressing the reporter with a MEK inhibitor led to an increased number of ventricular CMs with nuclear Clover expression (i.e., inactive Erk signaling) indicating that the reporter is functional (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "1f5d0ec3-78b4-420c-ab9d-01c3a349f21d",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C75",
+      "claim": "Treating embryos expressing the ERK-KTR reporter with an ErbB2 inhibitor leads to an increased number of ventricular cardiomyocytes with nuclear Clover expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we treated embryos expressing the reporter with an ErbB2 inhibitor and found an increased number of ventricular CMs with nuclear Clover expression (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "75d56f2f-ce6d-4277-bcd4-1567c6e6703c",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C76",
+      "claim": "Genetically blocking endocardial protrusion formation via endothelial overexpression of irsp53dn leads to more ventricular cardiomyocytes with inactive Erk signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether endocardial protrusions modulate myocardial Erk signaling activity, we genetically blocked endocardial protrusion formation via endothelial overexpression of irsp53dn and observed more ventricular CMs with nuclear Clover expression (Figure 6C and E) compared with control (Figure 6A and E), indicating more ventricular CMs with inactive Erk signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "516af43d-3a2e-4c2f-84e5-cb3293d3f742",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C77",
+      "claim": "Homozygous apln mutants exhibit more ventricular cardiomyocytes with inactive Erk signaling compared with apln+/+ siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these results, we observed more ventricular CMs with inactive Erk signaling in homozygous apln mutants (Figure 6D and E) compared with apln+/+ siblings (Figure 6A and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "c54ee643-a363-4df8-a837-3a26aa08bcf8",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C78",
+      "claim": "Endocardial sprouting and touchdown formation occur early during cardiac trabeculation in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse, endocardial sprouting and touchdown formation occur early during cardiac trabeculation (Del Monte-Nieto et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "764b9547-5b11-4d81-8069-ad5bb38cb925",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C79",
+      "claim": "The morphogenetic events of cardiac trabeculation are evolutionarily conserved between mouse and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are in line with our data in zebrafish, suggesting that the morphogenetic events of cardiac trabeculation are evolutionarily conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the comparison of mouse and zebrafish data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "232f8e96-ae83-4d7e-bf53-e53ceef95570",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C80",
+      "claim": "Endocardial sprouts in mouse appear to be cellular.",
+      "claim_type": "EXPLICIT",
+      "source": "However, endocardial sprouts in mouse appear to be cellular (Del Monte-Nieto et al., 2018), whereas endocardial protrusions in zebrafish appear more similar to filopodia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "7b4f2f6c-6bca-4125-92e0-a6195753abc9",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C81",
+      "claim": "Endocardial protrusions in zebrafish appear more similar to filopodia than cellular sprouts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, endocardial sprouts in mouse appear to be cellular (Del Monte-Nieto et al., 2018), whereas endocardial protrusions in zebrafish appear more similar to filopodia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on observations from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "4f253f20-7f78-42e5-84ad-734610422539",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C82",
+      "claim": "Cardiomyocyte delamination and trabeculation occur in the outer curvature of the ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "CM delamination and trabeculation occur in the outer curvature of the ventricle (Liu et al., 2010; Jim\u00e9nez-Amilburu et al., 2016; Rasouli and Stainier, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "a86719c3-118b-479c-9396-12600959ba2a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C83",
+      "claim": "Apelin signaling regulates filopodia formation during sprouting angiogenesis in the zebrafish trunk.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently shown that Apelin signaling regulates filopodia formation during sprouting angiogenesis in the trunk (Helker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "794b83c0-2941-47d9-bcfa-89fa356185eb",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C84",
+      "claim": "Apelin signaling has a conserved role during endothelial and endocardial sprouting.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these published observations, we now show that Apelin regulates endocardial filopodia formation and endocardial sprouting (Figure 6\u2014figure supplement 2), revealing a conserved role for Apelin signaling during endothelial and endocardial sprouting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "0c38ae31-fe84-40f8-8210-8eb81d32a4c5",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C85",
+      "claim": "Notch signaling negatively regulates sprouting angiogenesis in endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the negative regulation of sprouting angiogenesis by Notch signaling in ECs (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007), we found that Notch signaling also negatively regulates endocardial protrusion formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "cfc1fc24-25ae-423a-ba9c-5592d5311938",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C86",
+      "claim": "Notch signaling negatively regulates endocardial protrusion formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the negative regulation of sprouting angiogenesis by Notch signaling in ECs (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007), we found that Notch signaling also negatively regulates endocardial protrusion formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "5468b604-3e71-48ed-b9fc-e8e802629cd9",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C87",
+      "claim": "Inhibition of Notch signaling leads to an increased number of delaminated cardiomyocytes and trabeculae.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, inhibition of Notch signaling also leads to an increased number of delaminated CMs and trabeculae, although Notch signaling may also affect CM behavior cell autonomously (Han et al., 2016; Priya et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "318e5244-a8ef-4f76-9c9a-b63d0d86844c",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C88",
+      "claim": "Cell communication between endocardial and myocardial cells is required for cardiac trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell communication between the endocardial and myocardial cells is required for cardiac trabeculation (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995; Lai et al., 2010; Liu et al., 2010; Rasouli and Stainier, 2017; Gunawan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "b3bf05ec-f520-4759-b74f-15f6d2767ef3",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C89",
+      "claim": "Endocardial-derived neuregulin is required to activate ErbB receptor complexes on cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have shown that endocardial-derived Nrg is required to activate ErbB receptor complexes on CMs (Gassmann et al., 1995; Meyer and Birchmeier, 1995; Grego-Bessa et al., 2007; Rasouli and Stainier, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "e919d3aa-a660-4b31-b55e-ea53b7036eac",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C90",
+      "claim": "nrg2a is expressed in the developing endocardium and is required for trabeculation in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, nrg2a, which is expressed in the developing endocardium, is required for trabeculation (Rasouli and Stainier, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "ea389b1d-ff55-423d-8cab-d3286422d9f7",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C91",
+      "claim": "nrg2a overexpression in the endothelium is sufficient to increase the number of trabeculae and trabecular cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, nrg2a, which is expressed in the developing endocardium, is required for trabeculation (Rasouli and Stainier, 2017), and nrg2a overexpression in the endothelium results in an increased number of trabeculae and trabecular CMs (Figure 5), indicating that endocardial nrg2a is necessary and sufficient for trabeculation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion based on the study's findings shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "88724c09-ffde-4268-be56-66c7496ec0d5",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C92",
+      "claim": "Blocking endocardial protrusion formation compromises the function of endocardial nrg2a during trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, blocking endocardial protrusion formation compromises the function of endocardial nrg2a during trabeculation, suggesting that endocardial protrusions are required for nrg2a function during trabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "c275446a-aeef-464f-8ca2-9c5dbbe41758",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C93",
+      "claim": "The membrane-bound form of Nrg2a has a molecular weight of 55 kD.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane-bound form of Nrg2a has a molecular weight of 55 kD, and after cleavage, the presumed secreted form has a molecular weight of 22 kD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as factual information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "fd4cc3ee-3a8b-4e0a-ba90-55807d24a3c1",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C94",
+      "claim": "The presumed secreted form of Nrg2a has a molecular weight of 22 kD after cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane-bound form of Nrg2a has a molecular weight of 55 kD, and after cleavage, the presumed secreted form has a molecular weight of 22 kD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as factual information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "e9c5edc2-8b69-437c-be0a-8a20ee6792da",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C95",
+      "claim": "The most active form of Apelin is 13 amino acids long with a molecular weight of 1.52 kD.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the most active form of Apelin is 13 amino acids long, with a molecular weight of 1.52 kD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as factual information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "0ee62a90-6d68-4c0a-99a3-bfc44e481482",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C96",
+      "claim": "Due to its small size, Apelin is able to diffuse through the cardiac jelly, while Nrg2a needs to be transported by endocardial protrusions toward the myocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that due to its small size, Apelin is able to diffuse through the CJ, while Nrg2a needs to be transported by endocardial protrusions toward the myocardium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a speculation based on molecular weight differences.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "122b15e6-d023-4b9e-a8df-9055a43a8b4a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C97",
+      "claim": "ErbB receptors activate the MAPK cascade upon ligand stimulation, leading to the phosphorylation of ERK1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other receptor tyrosine kinases, ErbB receptors activate multiple signaling cascades, including the MAPK cascade, upon ligand stimulation, leading to the phosphorylation of ERK1/2 (Sweeney et al., 2001; Wee and Wang, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "b41e09c1-097e-4d67-8a65-55fbbaab2a35",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C98",
+      "claim": "Attenuated ERK phosphorylation is observed in cardiomyocytes in Nrg1/ErbB signaling-deficient mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, attenuated ERK phosphorylation is observed in CMs in Nrg1/ErbB signaling-deficient mice (Lai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "c673e1f3-a1ca-4cbf-8d3f-9a26d938532e",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C99",
+      "claim": "The inhibition of endocardial protrusion formation leads to attenuated Erk phosphorylation in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing a novel reporter of Erk activity in CMs, we observed that the inhibition of endocardial protrusion formation, as well as the genetic inactivation of Apelin signaling, leads to attenuated Erk phosphorylation in CMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "cd81777b-4538-43f7-b6d4-659466ee7632",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C100",
+      "claim": "The genetic inactivation of Apelin signaling leads to attenuated Erk phosphorylation in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing a novel reporter of Erk activity in CMs, we observed that the inhibition of endocardial protrusion formation, as well as the genetic inactivation of Apelin signaling, leads to attenuated Erk phosphorylation in CMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "1a97325b-2236-4947-9177-e47942626e61",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C101",
+      "claim": "Apelin signaling-dependent endocardial protrusions modulate ErbB signaling in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data suggest that Apelin signaling-dependent endocardial protrusions modulate ErbB signaling in CMs (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "70467465-b023-4bbf-9250-a719a68461bf",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C102",
+      "claim": "Endothelial filopodia modulate neurogenesis by affecting progenitor cell proliferation in the developing brain of mice and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been shown that EC filopodia modulate neurogenesis by affecting progenitor cell proliferation in the developing brain of mice and zebrafish (Di Marco et al., 2020; Taberner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "761b4461-89dc-44f2-8560-82f9f8c99d47",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C103",
+      "claim": "ErbB signaling is known for its function within the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest, ErbB signaling is also known for its function within the nervous system (Buonanno and Fischbach, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "37d31ec2-c0ab-4ffd-9d74-961a1255750a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C104",
+      "claim": "Nrg/ErbB signaling may play a role during the modulation of neurogenesis by endothelial filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, one might speculate that Nrg/ErbB signaling also plays a role during the modulation of neurogenesis by endothelial filopodia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "1fe87276-0f23-4313-88bd-a9438c4584be",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C105",
+      "claim": "Cell-to-cell communication by cytonemes has been reported in different animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have reported cell-to-cell communication by cytonemes in different animal models (Ram\u00edrez-Weber and Kornberg, 1999; Holzer et al., 2012; Luz et al., 2014; Pr\u00f6ls et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "073d92f6-b9fc-42ce-aa3e-449d2f4aac02",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C106",
+      "claim": "Apelin-dependent endocardial protrusions are required for communication between endocardial and myocardial cells via Nrg/ErbB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data indicate that Apelin-dependent endocardial protrusions are required for the communication between endocardial and myocardial cells via Nrg/ErbB signaling (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "ac169a97-df4b-45f5-a72e-5bbc9e9c8787",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C107",
+      "claim": "Most aplnrb mutants fail to form a heart.",
+      "claim_type": "EXPLICIT",
+      "source": "While most aplnrb mutants fail to form a heart (D'Amico et al., 2007; Zeng et al., 2007), a low number of them do.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "07d0bbfd-244f-4676-a037-c9c519be8fc7",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C108",
+      "claim": "apela mutants fail to form a heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Since apela mutants fail to form a heart (Chng et al., 2013), we did not analyze them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "c05a2fda-4516-4630-90f2-3d75a9bb171c",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C109",
+      "claim": "IRSp53 regulates the actin cytoskeleton to enable cells to form different types of membrane extensions.",
+      "claim_type": "EXPLICIT",
+      "source": "IRSp53 regulates the actin cytoskeleton to enable cells to form different types of membrane extensions (Nakagawa et al., 2003; Millard et al., 2005; Scita et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "332d11a7-2adf-4a4a-a3ec-2a8a031f45a3",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C111",
+      "claim": "The distribution of endocardial protrusions is mostly unaffected by endothelial overexpression of irsp53dn.",
+      "claim_type": "EXPLICIT",
+      "source": "By crossing the Tg(UAS: irsp53dn-p2a-RFP) line to the TgBAC(cdh5:Gal4ff) line to overexpress Irsp53dn specifically in ECs, we observed a 70% reduction in the number of endocardial protrusions at 48 hpf (Figure 2A, B and E), while their distribution appeared mostly unaffected (Figure 2A, B and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A, B and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "02bb8bf5-40ec-446c-8cb7-41acaaa9525e",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C112",
+      "claim": "The myocardial trabeculation phenotype in apln mutants is not secondary to cardiac dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any obvious defects in sarcomere formation (Figure 4\u2014figure supplement 3A and B), heart rate, ejection fraction, or blood circulation in apln mutants (Figure 4\u2014figure supplement 3C and D; Figure 4\u2014videos 1\u20132), indicating that the myocardial trabeculation phenotype is caused by the endocardial protrusion defect and is not secondary to cardiac dysfunction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results as an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "a8d85483-dfb2-4efa-ade4-a972727cabb3",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "claim_id": "C113",
+      "claim": "Endocardial protrusions play a role during endocardium-myocardium interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data lead us to speculate that endocardial protrusions play a role during endocardium-myocardium interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as speculation based on the spatial and temporal correlation data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Endocardial cells extend dynamic membrane protrusions toward cardiomyocytes that form stable touchdowns during cardiac contractions. These protrusions are spatially and temporally correlated with cardiomyocyte delamination and trabeculation, being predominantly located in the outer curvature of the ventricle where trabeculation occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C32-C47 provide converging evidence from live imaging (Figure 1) showing endocardial protrusions at multiple developmental timepoints (24, 48, 60, 72 hpf), their stability during contractions, and quantitative spatial correlation with delaminating and trabecular cardiomyocytes (98% and 93% proximity at 60 and 72 hpf respectively). The temporal progression and spatial localization data strongly support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "aac1681d-c6ae-4430-b95a-185b732c196f",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genetic blockade of endocardial protrusion formation through endothelial overexpression of dominant-negative IRSp53 reduces endocardial protrusions by 70%, decreases endocardial touchdowns, impairs cardiac trabeculation, and reduces cardiomyocyte proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 demonstrate a clear functional requirement for endocardial protrusions in trabeculation using a genetic loss-of-function approach (Figure 2). The quantitative reduction in protrusions (70%), touchdowns, trabeculation, and cycling cardiomyocytes provides strong evidence. However, the specificity of the irsp53dn construct and potential off-target effects on other cellular processes are not fully addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "fb19e1b9-7826-4684-b37a-52d8ecbc6e6a",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Apelin is expressed in the myocardium while its receptor aplnrb is expressed in the endocardium at 48 and 72 hours post-fertilization, establishing a potential signaling axis between these two cell layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C52, C9, and C53 are supported by reporter line expression data (Figure 3A-D) showing complementary expression patterns. The use of BAC transgenic reporters provides reliable spatial expression information, though the claims would be strengthened by additional validation methods such as in situ hybridization or antibody staining.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "b9922fa7-a69f-4150-a334-8d17f3acf106",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loss of Apelin signaling through mutations in apln, aplnra, or aplnrb leads to reduced endocardial protrusions, fewer endocardial touchdowns, hypotrabeculation, decreased cardiomyocyte proliferation, and thicker cardiac jelly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C54-C63 provide consistent genetic evidence across multiple mutant alleles (Figure 4 and supplements). The phenotypes are quantified and statistically significant. However, C107-C108 note that most aplnrb and all apela mutants fail to form hearts, limiting analysis to escapers for aplnrb, which may introduce selection bias. Claims C64-C65 and C112 appropriately rule out secondary cardiac dysfunction effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "b4254245-ad61-4a4c-920a-690781397953",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Notch signaling negatively regulates endocardial protrusion formation, as Notch inhibition increases protrusion number but reduces touchdowns, consistent with its known role in regulating endothelial sprouting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 and C86-C87 demonstrate Notch's regulatory role using pharmacological inhibition (Figure 4\u2014figure supplement 4). The bidirectional effects on protrusions (increased) versus touchdowns (decreased) are interesting but somewhat paradoxical and not fully explained. The result is supported but the mechanism requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "94b221a0-08eb-4e06-8b3b-019bb8bb6391",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Endocardial nrg2a overexpression is sufficient to induce hypertrabeculation and cardiomyocyte multilayering, but this effect requires endocardial protrusions, as blocking protrusion formation through irsp53dn overexpression or apln mutation prevents nrg2a-induced trabeculation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 and C91-C92 provide strong genetic epistasis evidence (Figure 5) showing that endocardial protrusions are required for neuregulin function. The rescue experiments are well-controlled, and C72 confirms that nrg2a expression levels are unchanged in apln mutants, ruling out transcriptional effects. This establishes a clear mechanistic hierarchy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "25a06fd0-f35d-4b6b-bc11-6d5ae4ce8aa8",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Endocardial protrusions are required for Erk signaling activation in cardiomyocytes, as blocking protrusion formation through irsp53dn overexpression or apln mutation leads to increased numbers of cardiomyocytes with inactive Erk signaling, as measured by a novel ERK-KTR reporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 and C99-C101 demonstrate the mechanistic link between endocardial protrusions and cardiomyocyte Erk signaling using a novel reporter (Figure 6). The reporter is validated with MEK and ErbB2 inhibitors (C74-C75). The genetic manipulations show consistent effects on Erk activity. This provides strong mechanistic insight, though the reporter is new and would benefit from additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "f790b589-c4e1-4177-99fd-e70addfa4324",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Neuregulin signaling requires endocardial protrusions to induce Erk activity in cardiomyocytes and trigger their delamination, with Apelin signaling-dependent endocardial protrusions modulating cardiomyocyte behavior during trabeculation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 and C106 represent the main conclusions synthesized from multiple experimental approaches. The evidence from genetic manipulations (Figures 2, 4, 5, 6) converges to support this model. However, the direct demonstration that protrusions 'trigger' delamination (C12) is somewhat inferential rather than directly demonstrated through temporal imaging of individual cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "0970454e-2839-4db1-aef5-3204bf976109",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The morphogenetic events of cardiac trabeculation, including endocardial sprouting and touchdown formation, are evolutionarily conserved between mouse and zebrafish, though endocardial protrusions in zebrafish appear more filopodia-like compared to cellular sprouts in mouse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 appropriately contextualize the findings within the broader literature (Discussion section). The comparison to mouse data is supported by citations (C78, C80), and the authors acknowledge potential technical differences (fixed vs. live imaging) that may explain morphological differences (C81). This represents appropriate interpretation of comparative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "7bc3b060-f624-44e6-a81a-dc6ac7502114",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Apelin signaling has a conserved role in regulating filopodia formation during both endothelial sprouting angiogenesis and endocardial sprouting, while Notch signaling negatively regulates both processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 connect the current findings to prior work on angiogenesis. C83 cites previous work, C84 synthesizes current and prior findings, and C85 is supported by both literature and current data (C66-C68, C86). This establishes Apelin and Notch as general regulators of endothelial/endocardial cell behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "6e16410f-7d66-48c8-9803-e6f85a209e55",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Due to size differences between Nrg2a (22 kD secreted form) and Apelin (1.52 kD), Apelin may diffuse through cardiac jelly while Nrg2a requires transport by endocardial protrusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C96 present a speculative model based on molecular weight differences. While C93-C95 state factual molecular weights, C96 is explicitly speculative ('it is possible that'). No direct evidence is provided for differential diffusion or active transport of Nrg2a on protrusions. This hypothesis requires experimental validation through localization studies or functional transport assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "74d8d466-e2f5-42c2-a056-fa80621271b0",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge establishing that endocardial-myocardial signaling, particularly through neuregulin/ErbB and other pathways, is essential for cardiac trabeculation, and that defects in these pathways cause hypotrabeculation and cardiac dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C14-C31, C88-C90, C97-C98 represent established knowledge from the literature, appropriately cited throughout the introduction and discussion. These provide the necessary context for the current study and are well-supported by the cited references. This is standard background material.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "89eea82d-5be6-45dd-af55-3d4f8182b60c",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Endothelial filopodia modulate neurogenesis in the developing brain, and Nrg/ErbB signaling may play a role in this process given its known function in the nervous system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C103 cite recent literature on endothelial filopodia in neurogenesis and ErbB signaling in the nervous system. However, C104 is explicitly speculative ('one might speculate') about whether Nrg/ErbB signaling mediates the neurogenesis effects. No experimental evidence is provided to test this hypothesis. This represents interesting speculation for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "79075519-c258-4e57-8835-c4349d1f7553",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cell-to-cell communication by cytonemes has been reported in different animal models including Drosophila, chick, zebrafish, and mouse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 is a factual statement about the literature, appropriately supported by multiple citations. This provides context for considering whether endocardial protrusions might function as cytonemes, though the authors note this requires further analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    },
+    {
+      "id": "9ca4281b-5059-4e6c-a968-4af64b283a1b",
+      "content_id": "375d300c-fdcd-49ea-9202-60009a90c19d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Most aplnrb mutants and all apela mutants fail to form hearts, and IRSp53 regulates the actin cytoskeleton to enable membrane extension formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 are factual statements supported by citations (C107-C108) or represent established knowledge about IRSp53 function (C109). These provide important context for the experimental design and interpretation, particularly explaining why certain mutants could not be analyzed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:22:35.466082Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6d4572fe-cf9a-41a9-8da2-10b4c5d3c77b",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "548da1f2-6d05-4d1b-845b-82c4e936d36e",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "c64e85b9-db1d-4b0d-bffc-db427109c768",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "82f02133-9c58-469a-ba62-08e1b0ddbfb7",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "247d912e-28fe-41ea-8157-a9dc9f11c199",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "4707338b-0a9b-425e-a162-f084e38cabb4",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "cd8c8f49-02af-4b51-b949-3d86b21c3154",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "695da5cc-a594-450c-ae98-1d7097231a79",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "0fd6af9f-dc89-4480-9b49-17bc7405d6ae",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "0430903f-b9ce-4f6d-bccb-7102e1e46247",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "fb169d7a-5bc3-4aff-a71d-1b877f99e3b1",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "9b898f67-da0c-42e6-9110-63754380e734",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "62cc576a-9647-4cc0-a376-c2ea8fa4c839",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "3f4895e5-236f-47f0-88e4-63b2a9857c5b",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "6e50ea3e-955d-4b49-9c86-d88493bc144c",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "5b617c1b-3ded-49fa-9924-51798d40ab80",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "274b7e77-caca-4494-a01e-4df1fbac7f1e",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "a8d85483-dfb2-4efa-ade4-a972727cabb3",
+      "result_id": "d2ff1111-eedb-4f1f-819e-6538aab7fa39"
+    },
+    {
+      "claim_id": "64a1f84b-a5ee-4998-b787-f88076d1328f",
+      "result_id": "aac1681d-c6ae-4430-b95a-185b732c196f"
+    },
+    {
+      "claim_id": "90114522-5979-4d60-b550-7eb02c57dcd3",
+      "result_id": "aac1681d-c6ae-4430-b95a-185b732c196f"
+    },
+    {
+      "claim_id": "bb584fec-b22c-47ea-9b80-ab3c225b0b7a",
+      "result_id": "aac1681d-c6ae-4430-b95a-185b732c196f"
+    },
+    {
+      "claim_id": "a2d304c8-fa3c-4b0c-a332-9f6d8f5f4159",
+      "result_id": "aac1681d-c6ae-4430-b95a-185b732c196f"
+    },
+    {
+      "claim_id": "332d11a7-2adf-4a4a-a3ec-2a8a031f45a3",
+      "result_id": "aac1681d-c6ae-4430-b95a-185b732c196f"
+    },
+    {
+      "claim_id": "085a6555-5351-41bd-8762-67c7d2273f70",
+      "result_id": "fb19e1b9-7826-4684-b37a-52d8ecbc6e6a"
+    },
+    {
+      "claim_id": "bc762bce-182b-450d-aa0b-a58e3bd8fa0f",
+      "result_id": "fb19e1b9-7826-4684-b37a-52d8ecbc6e6a"
+    },
+    {
+      "claim_id": "3c1c570c-9548-4d8a-b4d1-1efcac84368b",
+      "result_id": "fb19e1b9-7826-4684-b37a-52d8ecbc6e6a"
+    },
+    {
+      "claim_id": "70f1c45b-9692-42f8-a85c-783f3e2cf225",
+      "result_id": "fb19e1b9-7826-4684-b37a-52d8ecbc6e6a"
+    },
+    {
+      "claim_id": "a3f0eff0-c53e-48cc-a378-79a1e14b7d1a",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "b361b35b-f656-48f2-ab63-f0a63ac1afbd",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "83b1a675-b597-40fe-95de-20a2b0286963",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "548430b0-a1fd-4f5d-9559-0d96d2db0a35",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "3cedf047-afd7-4f14-b927-9e1d2a8e6b27",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "f4f9e692-d9ba-4b79-8d60-f11fdee9ed61",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "19c61bc2-b568-428e-a810-8bec62e7b384",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "784a8e1f-49a4-48c2-b048-471280e3cda5",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "c6b8eac7-5e92-413f-a5f9-73366d084bcb",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "114f556e-91f5-4a7d-a06e-45f30be6b62c",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "de8c2d63-1da1-4db6-b907-d05fae562332",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "d97a0a76-a304-41be-94fd-53c9344a9ca4",
+      "result_id": "b9922fa7-a69f-4150-a334-8d17f3acf106"
+    },
+    {
+      "claim_id": "4a046d64-2033-475b-af12-b3a2199e1a8a",
+      "result_id": "b4254245-ad61-4a4c-920a-690781397953"
+    },
+    {
+      "claim_id": "b9973368-d4f6-47e6-b332-c6b05ac8244a",
+      "result_id": "b4254245-ad61-4a4c-920a-690781397953"
+    },
+    {
+      "claim_id": "85da2f08-2fcf-44f5-92cd-a431da4a7bd6",
+      "result_id": "b4254245-ad61-4a4c-920a-690781397953"
+    },
+    {
+      "claim_id": "cfc1fc24-25ae-423a-ba9c-5592d5311938",
+      "result_id": "b4254245-ad61-4a4c-920a-690781397953"
+    },
+    {
+      "claim_id": "5468b604-3e71-48ed-b9fc-e8e802629cd9",
+      "result_id": "b4254245-ad61-4a4c-920a-690781397953"
+    },
+    {
+      "claim_id": "7bac475a-fb0c-4f51-9475-e2c1076d09a6",
+      "result_id": "94b221a0-08eb-4e06-8b3b-019bb8bb6391"
+    },
+    {
+      "claim_id": "183d30b6-9426-4766-93c9-e9c43560fc12",
+      "result_id": "94b221a0-08eb-4e06-8b3b-019bb8bb6391"
+    },
+    {
+      "claim_id": "b9894dcd-e8a6-49ba-b525-0f65d90271e0",
+      "result_id": "94b221a0-08eb-4e06-8b3b-019bb8bb6391"
+    },
+    {
+      "claim_id": "fbebc60f-cfc3-4eac-bdf8-53731ce2de97",
+      "result_id": "94b221a0-08eb-4e06-8b3b-019bb8bb6391"
+    },
+    {
+      "claim_id": "ea389b1d-ff55-423d-8cab-d3286422d9f7",
+      "result_id": "94b221a0-08eb-4e06-8b3b-019bb8bb6391"
+    },
+    {
+      "claim_id": "88724c09-ffde-4268-be56-66c7496ec0d5",
+      "result_id": "94b221a0-08eb-4e06-8b3b-019bb8bb6391"
+    },
+    {
+      "claim_id": "89a01715-bcaf-44d6-b14e-9dfa1b9b0b68",
+      "result_id": "25a06fd0-f35d-4b6b-bc11-6d5ae4ce8aa8"
+    },
+    {
+      "claim_id": "0f07f478-e8f7-4a0e-b7c3-29219b1be1df",
+      "result_id": "25a06fd0-f35d-4b6b-bc11-6d5ae4ce8aa8"
+    },
+    {
+      "claim_id": "1f5d0ec3-78b4-420c-ab9d-01c3a349f21d",
+      "result_id": "25a06fd0-f35d-4b6b-bc11-6d5ae4ce8aa8"
+    },
+    {
+      "claim_id": "75d56f2f-ce6d-4277-bcd4-1567c6e6703c",
+      "result_id": "25a06fd0-f35d-4b6b-bc11-6d5ae4ce8aa8"
+    },
+    {
+      "claim_id": "516af43d-3a2e-4c2f-84e5-cb3293d3f742",
+      "result_id": "25a06fd0-f35d-4b6b-bc11-6d5ae4ce8aa8"
+    },
+    {
+      "claim_id": "c673e1f3-a1ca-4cbf-8d3f-9a26d938532e",
+      "result_id": "25a06fd0-f35d-4b6b-bc11-6d5ae4ce8aa8"
+    },
+    {
+      "claim_id": "cd81777b-4538-43f7-b6d4-659466ee7632",
+      "result_id": "25a06fd0-f35d-4b6b-bc11-6d5ae4ce8aa8"
+    },
+    {
+      "claim_id": "1a97325b-2236-4947-9177-e47942626e61",
+      "result_id": "25a06fd0-f35d-4b6b-bc11-6d5ae4ce8aa8"
+    },
+    {
+      "claim_id": "2256f6d1-e9b1-4595-9196-ed2cb749c808",
+      "result_id": "f790b589-c4e1-4177-99fd-e70addfa4324"
+    },
+    {
+      "claim_id": "453551d6-f644-4f72-a805-effbbadb806d",
+      "result_id": "f790b589-c4e1-4177-99fd-e70addfa4324"
+    },
+    {
+      "claim_id": "65c4b3ce-1441-444e-b277-a4a0e4d9be17",
+      "result_id": "f790b589-c4e1-4177-99fd-e70addfa4324"
+    },
+    {
+      "claim_id": "073d92f6-b9fc-42ce-aa3e-449d2f4aac02",
+      "result_id": "f790b589-c4e1-4177-99fd-e70addfa4324"
+    },
+    {
+      "claim_id": "c54ee643-a363-4df8-a837-3a26aa08bcf8",
+      "result_id": "0970454e-2839-4db1-aef5-3204bf976109"
+    },
+    {
+      "claim_id": "764b9547-5b11-4d81-8069-ad5bb38cb925",
+      "result_id": "0970454e-2839-4db1-aef5-3204bf976109"
+    },
+    {
+      "claim_id": "232f8e96-ae83-4d7e-bf53-e53ceef95570",
+      "result_id": "0970454e-2839-4db1-aef5-3204bf976109"
+    },
+    {
+      "claim_id": "7b4f2f6c-6bca-4125-92e0-a6195753abc9",
+      "result_id": "0970454e-2839-4db1-aef5-3204bf976109"
+    },
+    {
+      "claim_id": "4f253f20-7f78-42e5-84ad-734610422539",
+      "result_id": "0970454e-2839-4db1-aef5-3204bf976109"
+    },
+    {
+      "claim_id": "a86719c3-118b-479c-9396-12600959ba2a",
+      "result_id": "7bc3b060-f624-44e6-a81a-dc6ac7502114"
+    },
+    {
+      "claim_id": "794b83c0-2941-47d9-bcfa-89fa356185eb",
+      "result_id": "7bc3b060-f624-44e6-a81a-dc6ac7502114"
+    },
+    {
+      "claim_id": "0c38ae31-fe84-40f8-8210-8eb81d32a4c5",
+      "result_id": "7bc3b060-f624-44e6-a81a-dc6ac7502114"
+    },
+    {
+      "claim_id": "c275446a-aeef-464f-8ca2-9c5dbbe41758",
+      "result_id": "6e16410f-7d66-48c8-9803-e6f85a209e55"
+    },
+    {
+      "claim_id": "fd4cc3ee-3a8b-4e0a-ba90-55807d24a3c1",
+      "result_id": "6e16410f-7d66-48c8-9803-e6f85a209e55"
+    },
+    {
+      "claim_id": "e9c5edc2-8b69-437c-be0a-8a20ee6792da",
+      "result_id": "6e16410f-7d66-48c8-9803-e6f85a209e55"
+    },
+    {
+      "claim_id": "0ee62a90-6d68-4c0a-99a3-bfc44e481482",
+      "result_id": "6e16410f-7d66-48c8-9803-e6f85a209e55"
+    },
+    {
+      "claim_id": "193ab49f-6891-4229-8eb6-14b2cf80bb22",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "01555000-85ef-48f3-80d0-9aa84762ff77",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "d79a9867-d472-4e4b-ba63-b705bc5e1772",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "2f91468d-82ad-47be-8321-7212dc9f5247",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "7cf1f772-6b26-4654-a6ac-2161bdc9d2d6",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "297ca110-3cb0-4b82-b561-0a85cb8acc13",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "bbd95850-c37a-4348-b6e7-03d8a12d9860",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "ff1b1a81-8316-4daf-9827-d45d09b62b35",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "0084ad53-3ee6-49f6-9492-75f41fdfe482",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "6e4b7fbe-0450-478d-8547-69daacb06f19",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "98dc40ed-3df7-4d21-a3c6-fd60f6abc59a",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "b7f99048-c26b-4739-aea3-3fa9b1cb9ac6",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "cb61db54-a171-4975-b12d-6c2becd4c6bb",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "173a3eb0-407a-4ed3-ba85-ebee35602aff",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "6281fc29-a037-42f4-b21b-a70e89395a2d",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "ed9505d6-7cd6-4f8d-b94e-50e2a5894a96",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "ad7b6076-3ab7-47b0-a6e0-65cebf3fd2e1",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "6c9a32aa-e2e2-4b9a-be98-22affc6b8ebb",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "7f6d3470-34e3-47b5-b58e-7ba2a481af8f",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "d9e81700-adfd-419c-b8fe-c091c3b2766b",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "7f5cf161-b2b8-4663-9014-bb5f37b2e6f6",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "f91f6993-d683-40f9-b968-b3d7c2505fa8",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "318e5244-a8ef-4f76-9c9a-b63d0d86844c",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "b3bf05ec-f520-4759-b74f-15f6d2767ef3",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "e919d3aa-a660-4b31-b55e-ea53b7036eac",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "122b15e6-d023-4b9e-a8df-9055a43a8b4a",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "b41e09c1-097e-4d67-8a65-55fbbaab2a35",
+      "result_id": "74d8d466-e2f5-42c2-a056-fa80621271b0"
+    },
+    {
+      "claim_id": "70467465-b023-4bbf-9250-a719a68461bf",
+      "result_id": "89eea82d-5be6-45dd-af55-3d4f8182b60c"
+    },
+    {
+      "claim_id": "761b4461-89dc-44f2-8560-82f9f8c99d47",
+      "result_id": "89eea82d-5be6-45dd-af55-3d4f8182b60c"
+    },
+    {
+      "claim_id": "37d31ec2-c0ab-4ffd-9d74-961a1255750a",
+      "result_id": "89eea82d-5be6-45dd-af55-3d4f8182b60c"
+    },
+    {
+      "claim_id": "1fe87276-0f23-4313-88bd-a9438c4584be",
+      "result_id": "79075519-c258-4e57-8835-c4349d1f7553"
+    },
+    {
+      "claim_id": "ac169a97-df4b-45f5-a72e-5bbc9e9c8787",
+      "result_id": "9ca4281b-5059-4e6c-a968-4af64b283a1b"
+    },
+    {
+      "claim_id": "07d0bbfd-244f-4676-a037-c9c519be8fc7",
+      "result_id": "9ca4281b-5059-4e6c-a968-4af64b283a1b"
+    },
+    {
+      "claim_id": "c05a2fda-4516-4630-90f2-3d75a9bb171c",
+      "result_id": "9ca4281b-5059-4e6c-a968-4af64b283a1b"
+    }
+  ],
+  "comparisons": []
+}

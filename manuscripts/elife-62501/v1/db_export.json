@@ -1,0 +1,1472 @@
+{
+  "submission": {
+    "id": "e42dda93-c2e5-456e-9b12-ee0738d4efb5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:59:11.170352Z",
+    "updated_at": "2025-12-03T01:59:11.170352Z"
+  },
+  "content": [
+    {
+      "id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "submission_id": "e42dda93-c2e5-456e-9b12-ee0738d4efb5",
+      "content_type": "manuscript",
+      "content_text": "# Nanoscopic anatomy of dynamic multi-protein complexes at membranes resolved by graphene-induced energy transfer\n\n## Authors\n\n- Nadia F\u00fcllbrunn<sup>1</sup>\n- Zehao Li<sup>1</sup>\n- Lara Jorde<sup>4</sup>\n- Christian P Richter<sup>1</sup>\n- Rainer Kurre<sup>1</sup>\n- Lars Langemeyer<sup>1</sup> ([ORCID: 0000-0002-4309-0910](https://orcid.org/0000-0002-4309-0910))\n- Changyuan Yu<sup>3</sup>\n- Carola Meyer<sup>2</sup> ([ORCID: 0000-0003-0851-2767](https://orcid.org/0000-0003-0851-2767))\n- J\u00f6rg Enderlein<sup>5</sup> ([ORCID: 0000-0001-5091-7157](https://orcid.org/0000-0001-5091-7157))\n- Christian Ungermann<sup>1</sup> ([ORCID: 0000-0003-4331-8695](https://orcid.org/0000-0003-4331-8695)) \u2020\n- Jacob Piehler<sup>1</sup> ([ORCID: 0000-0002-2143-2270](https://orcid.org/0000-0002-2143-2270)) \u2020\n- Changjiang You<sup>1</sup> ([ORCID: 0000-0002-7839-6397](https://orcid.org/0000-0002-7839-6397)) \u2020\n\n### Affiliations\n\n1. Department of Biology/Chemistry, University of Osnabr\u00fcck Osnabr\u00fcck Germany\n2. Center of Cellular Nanoanalytics (CellNanOs), University of Osnabr\u00fcck Osnabr\u00fcck Germany\n3. College of Life Sciences, Beijing University of Chemical Technology Beijing China\n4. Department of Physics, University of Osnabr\u00fcck Osnabr\u00fcck Germany\n5. 3rd Institute of Physics - Biophysics, Georg August University G\u00f6ttingen Germany\n6. Cluster of Excellence \u201cMultiscale Bioimaging: from Molecular Machines to Networks of Excitable Cells\u201d (MBExC), Georg August University G\u00f6ttingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nInsights into the conformational organization and dynamics of proteins complexes at membranes is essential for our mechanistic understanding of numerous key biological processes. Here, we introduce graphene-induced energy transfer (GIET) to probe axial orientation of arrested macromolecules at lipid monolayers. Based on a calibrated distance-dependent efficiency within a dynamic range of 25 nm, we analyzed the conformational organization of proteins and complexes involved in tethering and fusion at the lysosome-like yeast vacuole. We observed that the membrane-anchored Rab7-like GTPase Ypt7 shows conformational reorganization upon interactions with effector proteins. Ensemble and time-resolved single-molecule GIET experiments revealed that the HOPS tethering complex, when recruited via Ypt7 to membranes, is dynamically alternating between a \u2018closed\u2019 and an \u2018open\u2019 conformation, with the latter possibly interacting with incoming vesicles. Our work highlights GIET as a unique spectroscopic ruler to reveal the axial orientation and dynamics of macromolecular complexes at biological membranes with sub-nanometer resolution.\n\n## Introduction\n\nNumerous fundamental cellular processes such as energy conversion, signal transduction, and transport occur in the context of lipid membranes. In animals, approximately one-third of the proteome is localized at the various membranes of the cell, while more than 50% of the currently available pharmaceuticals target membrane proteins (Santos et al., 2017). The mechanistic understanding of these proteins has been mainly addressed by techniques that arrest them in particular conformations, and take them out of their biological membrane context (Fernandez-Leiro and Scheres, 2016; Kosol et al., 2013). Even more critical, we largely lack techniques to address the orientation and organization of large and highly flexible protein complexes at membranes involved in signaling or interorganellar communication and fusion.\n\nThe structurally highly heterogeneous and dynamic systems are extremely difficult to tackle by traditional structural techniques that average ensembles. Single-molecule F\u00f6rster resonance energy transfer (smFRET) has been used successfully to shed light on the structural heterogeneity of proteins lacking structural definition (Roy et al., 2008; Yang et al., 2018; Zhu et al., 2017). However, with its limited dynamic range covering\u00a0<10 nm as well as the need to introduce both donor and acceptor dyes with high fidelity and efficiency often obstructs its application. Membrane protein complexes, which often involve intrinsically disordered proteins or phase separation causing large-scale spatial re-arrangement, are therefore not amenable to smFRET. Single-molecule localization microscopy in turn is limited by axial localization precision of\u00a0~10 nm (Gwosch et al., 2020; Schmidt et al., 2008; Shtengel et al., 2009). Thus, single-molecule-based techniques providing sufficient spatiotemporal resolution in the 10\u201320 nm regime, which is relevant for multi-protein complexes, are currently not available.\n\nHere, we introduce a novel approach for quantifying the axial organization and dynamics of large membrane protein complexes based on distance-dependent fluorescence quenching by graphene. This phenomenon is caused by radiation-less electromagnetic coupling of the excited fluorophore with graphene plasmons, which decays with the axial distance d by $d^{\u22124}$ (Swathi and Sebastian, 2009). The atomic thickness of graphene ensures high optical transparency and an extremely high confinement of plasmons (106 times the diffraction limit) (Koppens et al., 2011). Compared to metal-induced energy transfer (MIET) (Chizhik et al., 2014), with a dynamic range that extends over a distance of\u00a0~150 nm, graphene-induced energy transfer (GIET) occurs within a dynamic range of\u00a0~30 nm, thus covering the dimensions of large membrane protein complexes (Ghosh et al., 2019). For exploiting GIET to probe axial organization of proteins in the context of membranes, we here developed a lipid monolayer assembly on graphene for site-specific protein capturing. We confirmed the theoretical distance-dependence of GIET within a dynamic range of 25 nm on graphene-supported lipid monolayers using DNA oligonucleotides as a nanoscale ruler. We successfully applied this approach for unraveling the axial organization and dynamics of large multi-protein complexes involved in vesicular transport and fusion, which is critically required for delivery of proteins and lipids in organellar homeostasis (Br\u00f6cker et al., 2010; Yu and Hughson, 2010). We reconstituted the entire protein machinery required for tethering late endosomal vesicles, autophagosomes, and AP-3 vesicles to the vacuolar target membrane (Br\u00f6cker et al., 2010; Nickerson et al., 2009), including the Rab7-like Ypt7, its guanine nucleotide exchange factor (GEF) Mon1-Ccz1 and the homotypic fusion and vacuole protein sorting (HOPS) complex (Brett et al., 2008; Nordmann et al., 2010; Ostrowicz et al., 2010). In animal cells, HOPS is responsible for autophagy, the infectivity of Ebola virus, and linked to multiple diseases (van der Beek et al., 2019). Based on ensemble and single-molecule GIET, we quantitatively unraveled the axial organization and dynamics of Ypt7 and its interacting HOPS complex. Our data reveal that HOPS adopts an upright orientation on membranes with characteristic axial dynamics. We thus introduce GIET as a powerful novel technique to uncover the nanoscale spatiotemporal architecture of extended multi-protein complexes at membranes.\n\n## Results\n\n### Functional protein capturing onto graphene-supported lipid monolayers\n\nTo apply GIET to explore the structural and functional organization of protein complexes at membranes, we established lipid monolayer coating of graphene. Solid-supported graphene monolayers were prepared by transferring commercially available graphene sheets onto glass substrates. Coating of lipid on graphene was carried out by either liposome fusion or solution-assisted lipid deposition as reported previously (Blaschke et al., 2018; Lima et al., 2016; Tabaei et al., 2016). For site-specific capturing of His-tagged proteins, tris-nitrilotriacetic acid (trisNTA) moieties were incorporated into the lipid monolayer. For this purpose, vesicles made from 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC) containing 5% trisNTA conjugated with dioctadecyl amine (trisNTA-DODA) (Beutel et al., 2014; Lata et al., 2005) were fused on freshly prepared graphene slides (Figure 1A). Lipid monolayer formation, protein immobilization, and interactions were monitored in real-time using simultaneous total internal reflection fluorescence spectroscopy and reflectance interference (TIRFS-RIF) detection (Gavutis et al., 2005). A mass signal of lipid deposition on graphene of 2.5 ng/mm\u00b2 was observed after washing out excess vesicles (Figure 1B). For trisNTA-functionalized lipid bilayer formation by vesicle fusion on a silica surface, which has been previously established for protein interaction analysis at membranes (Beutel et al., 2014; Gavutis et al., 2005; Lata et al., 2006), a lipid deposition of 5 ng/mm\u00b2 was observed (Figure 1\u2014figure supplement 1). These results confirmed formation of a lipid monolayer on the hydrophobic graphene surface. Stable, Ni(II) ion specific immobilization of an anti-GFP nanobody fused to a C-terminal His-tag (NB-H6) was observed on the graphene-supported lipid monolayer. Upon injection of monomeric enhanced green fluorescence protein (mEGFP), we detected fast binding to the immobilized NB (Figure 1B). The same binding assays were carried out with silica-supported lipid bilayers, yielding very similar binding kinetics for NB-H6 and mEGFP (Figure 1\u2014figure supplement 1). Furthermore, quantitative removal of immobilized protein by imidazole was observed (Figure 1B), which enabled for repeated immobilization. These experiments verified the functional integrity of His-tagged proteins captured onto graphene-supported lipid monolayers. The interaction with mEGFP was simultaneously quantified by TIRFS detection (Figure 1C). Comparing the mEGFP fluorescence signal observed on graphene (IG) to that on the silica substrate (I0) confirmed strong quenching by GIET with an efficiency of 83.6% for mEGFP bound to NB-H6. Direct immobilization of H6-tagged mEGFP on graphene resulted into even stronger GIET (Figure 1D) with an efficiency of 92.4%. As the size of NB is\u00a0~2 nm based on the crystal structure (Kirchhofer et al., 2010), these results highlight that GIET can reveal nanoscale distances of proteins immobilized on a graphene-supported lipid monolayer.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig1-v1.jpg)\n\n**Figure 1.:** (A) Scheme of the graphene-supported lipid monolayer doped with trisNTA-DODA for site-specific capturing of His-tagged proteins. (B, C) Label-free detection of protein binding on graphene monitored by reflectance interference (RIF): (I) lipid coating; (II) conditioning of tris-NTA chelator by EDTA, Ni2+, imidazole; (III) binding of anti-GFP nanobody fused with H6 tag (NB-H6); (IV) binding of tagless mEGFP; (V) imidazole wash. (C) Zoom-up showing immobilization of NB-H6 and interaction with tagless mEGFP. (D) Fluorescence quenching by GIET quantified in real-time by simultaneous TIRFS-RIF detection for mEGFP using trisNTA-functionalized lipid monolayer on graphene (red) or lipid bilayer on silica (blue), respectively. Upper panel: normalized fluorescence intensities for tagless mEGFP binding to immobilized NB-H6 (as in panels\u00a0A\u2013C). Lower panel: Fluorescence intensities of H6-mEGFP directly bound to trisNTA-DODA. Normalized fluorescence intensities were calculated according to Equation (1) taking the mass signals into account.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schemes of lipid layer formation, trisNTA-DODA conditioning and protein binding on silica (top) and graphene (bottom), respectively. SALD: solution-assisted lipid deposition. (B) Mass signal detected by reflectance interference (RIF) for lipid coating (I), Ni2+ conditioning (II), His-tagged NB immobilization (III), and tagless mEGFP binding (IV). $m_{0}$ and\u00a0$\u00a0m_{G}$ mark the mass signals of tagless mEGFP immobilized on silica (blue) and graphene (red), respectively. Normalized fluorescence intensities according to Equation (1) are shown in (C). (D) Mass signal of lipid coating (i), Ni2+ conditioning (ii), and His-tagged mEGFP immobilization (iii). $m_{0}$ and\u00a0$\u00a0m_{G}$ mark the mass signals of H6-mEGFP immobilized on silica (blue) and graphene (red), respectively. Normalized fluorescence intensities according to Equation (1) are shown in (E).\n\n### DNA nanoruler calibration confirms distance-dependent GIET efficiency\n\nTo determine axial distances from the membrane, we calibrated the distance-dependent GIET efficiencies by using fluorescent-labeled DNA strands attached to the lipid monolayer. Four single strand DNA (ssDNA) with 20mer, 25mer, 35mer, and 50mer nucleotides were designed as the scaffold of nanorulers (Figure 2A, DNA sequences in Supplementary file 1A). These ssDNAs share a common 20mer sequence at the 5\u00b4-end and cholesterol modification at the 3\u00b4-end for anchoring into the lipid monolayer (Johnson-Buck et al., 2014) (anchor strand). To promote, by electrostatic repulsion, perpendicular orientation of oligonucleotides with respect to lipid layer, 5% negatively charged 1,2-di-(9Z-octadecenoyl)-sn-glycero-3-phospho-L-serine (DOPS) was incorporated into the DOPC matrix. The probe strands have a common 20mer ssDNA sequence complementary to the anchor strand and were conjugated with 6-carboxyfluorescein (FAM) at either 3\u00b4- or 5\u00b4- end, respectively, for fluorescence read-out. By hybridization of the probe and anchor strands, eight distinct fluorophore distances from the monolayer surface were obtained, which are denoted as anchor strand-3\u00b4F or 5\u00b4F. For the 35mer and 50mer anchor strands, additional complementary 15mer and 30mer ssDNA were used as blockers, respectively, to obtain the fully length double strand DNA nanorulers (Figure 2A). For the 25mer anchor strand, a 5mer unpaired region remained after hybridization with the probe strands, which may enhance the flexibility of this system.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig2-v1.jpg)\n\n**Figure 2.:** (A) Architecture and theoretical distances of membrane-anchored DNA nanorulers. Anchor strands (black) are modified with a 3\u00b4-end cholesterol. Probe strands (blue) are conjugated with fluorescein at either 3\u00b4- or 5\u00b4- end. Blocker strand (orange) for complementing the unpaired regions. Nomenclature is based on combinations of anchor and probe strands. (B) Calibration obtained from intensity ratios (black squares, black axis) and from lifetime ratios (red dots, red axis) as a function of distance from the fluorophore to graphene. Calibration at 2.5 nm by lifetime is not available due to detection limitation. The inset illustrates the model used for calculating the vertical distance d with a globally fitted tilting angle \u03b1 = (43\u00a0\u00b1\u00a01)\u00b0. Values are mean\u00a0\u00b1s.d. from three independent measurements. The simulated distance-dependent relation for FAM dye is shown in cyan. (C) Schematic illustration of the 35mer ssDNA anchor strand\u2019s conformational changes on graphene. (D) Fluorescence lifetime histogram of the probe strand bound to the 35mer anchor DNA strand in the absence (black) and presence (red) of the 15mer blocker strand. For comparison, the experiment on a glass-supported lipid bilayer is shown (blue).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Left row: Schemes of rulers used for calibrating distance-dependent GIET efficiency. For OG488-DHPE, gray bars mark injection of the lipids. For DNA rulers, the \u2018anchor strands\u2019 modified with a 3\u00b4-end cholesterol (black) were hybridized with a \u2018probe strand\u2019 (blue) conjugated with fluorescein at 3\u00b4end (3\u00b4F) or 5\u00b4end (5\u00b4F), respectively. Blocker strands (orange) were used for complementing the unpaired region. Middle row: Mass signal of the RIF channel. Gray bars mark lipid coating (i), docking of anchor strands (ii), and binding of probe strands (iii), respectively. Right row: Fluorescence intensities detected simultaneously. $I_{0\u2212raw}$ and $I_{G\u2212raw}$\u00a0are raw intensities detected on silica (blue) and graphene (red), respectively. They were used for calculating the normalized fluorescence intensity ratio IG/I0 according to Equation (1).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Scheme of the geometry used in the simulations. Random orientation of dyes was assumed. (B) Calculated fluorescence lifetime (\u03c4G) of FAM as function of the vertical distance d on graphene. Yellow region marks the variations of d within\u00a0\u00b10.05\u00b7\u03c4G. (C) Dependence of relative fluorescence lifetime (\u03c4G/\u03c40) on d for different fluorophores. (D) Derivative of FAM\u2019s lifetime on graphene as a function of d.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Schemes of DNA rulers used for calibrating distance-dependent GIET efficiency. The \u2018anchor strands\u2019 (black) were hybridized with the \u2018probe strand\u2019 (blue). Blocker strands (orange) were used for complementing the unpaired region. (B\u2013H) Normalized counts of TCSPC for DNA rulers on glass (blue) or graphene (red), respectively. DNA rulers were denoted as \u2018anchor strand \u22123\u00b4F or 5\u00b4F\u2019.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** DNA rulers labeled by the probe strand with 5\u00b4-end or 3\u00b4-end modification are shown in dashed and solid lines, respectively.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Time-lapse fluorescence images of \u201820\u20133\u00b4F\u2019 on the lipid bilayer on glass (upper row) or lipid monolayer on graphene (lower row), respectively, before and after photobleaching at different times. Scale bars: 10 \u00b5m. (B) Time-lapse FRAP curves on glass or graphene substrates, respectively. Data are mean\u00a0\u00b1s.d. of intensities from three sub-regions inside the ROI.\n\nUsing real-time, surface sensitive detection of TIRFS-RIF, we monitored formation of the\u00a0lipid monolayer on graphene, integration of anchor strands, and hybridization with probe strands (Figure 2\u2014figure supplement 1). For all probe-anchor hybridizations, detection of combination 20\u20135\u00b4F was not feasible, probably due to the steric hindrance upon inserting a FAM dye proximal to the lipid head groups. Instead, we used 2\u2032,7\u2032-difluorofluorescein-1,2-dihexadecanoyl-sn-glycero-3-phosphoethanolamine (OG488-DHPE), in which the dye molecule is directly linked to the lipid head group. In parallel, the same experiments were performed using silica-supported lipid bilayers. Simultaneous quantification of mass deposition and fluorescence intensity on both substrates ensured reliable quantification of GIET efficiencies (Supplementary file 1B). Significantly reduced fluorescence intensities on graphene (IG) were observed compared to those on silica (I0). The IG/I0 ratios increased with the end-to-end distances of the seven different FAM positions on DNA nanorulers. However, the increase was significantly lower than the theoretical prediction from electromagnetic simulations, which assumed fully perpendicular orientation on top of the lipid monolayer coating (Materials and methods: Electromagnetic simulation of GIET, and Figure 2\u2014figure supplement 2 for sensitivity analysis). Since we have previously validated our simulations using well-defined silica adlayers on the graphene surface (Ghosh et al., 2019), we wondered whether tilting of DNA strands on surface was the reason for the discrepancy (Kabel\u00e1\u010d et al., 2012; Wong and Pettitt, 2004). By assuming a tilting angle \u03b1 between DNA and graphene, we calculated the vertical distance d by taking the 2.5 nm thickness of the lipid monolayer into account (Attwood et al., 2013; Blaschke et al., 2018) (Materials and methods: Validation of distance-dependent GIET by DNA nanorulers). Strikingly, the obtained correlation of IG/I0 vs d matches the predicted GIET curve well with a globally fitted tilting angle of (43\u00a0\u00b1\u00a01)\u00b0 (Figure 2B), confirming the distance-dependent GIET on graphene-supported lipid monolayer. We also observed systematic deviations to higher experimental intensities at very short distances including OG488-DHPE, which may be ascribed to the fluorophores being attached via flexible linkers take a more distant position from the surface due repulsion from the negatively charged membrane surface.\n\n### Axial distances can be reliably quantified via fluorescence lifetimes\n\nGIET efficiencies were furthermore quantified by time-correlated single photon counting (TCSPC) using confocal laser-scanning microscopy (cLSM, Figure 2\u2014figure supplement 3). Lifetime histograms could be nicely fitted with mono-exponential decay functions in all cases (Figure 2\u2014figure supplement 4), indicating a homogenous structural organization of the DNA rulers. On glass surfaces, constant fluorescence lifetimes of FAM were observed for DNA nanorulers, either 2.8 ns for 3\u00b4 labeling or 3.3 ns for 5\u00b4 labeling (Figure 2\u2014figure supplement 4). The shorter lifetime at 3\u00b4-end could be attributed to quenching by the adjacent G-C base pair as reported previously (Nazarenko et al., 2002). Ratios of fluorescence lifetimes on graphene (\u03c4G) to those on glass (\u03c40) closely matched the corresponding intensity ratios, which further corroborated the simulated distance-dependent GIET efficiency (Figure 2B, Supplementary file 1C). Results of both intensity and lifetime measurements showed a\u00a0dynamic range within 3\u201325 nm corresponding to changes in GIET efficiency from 93\u201315%. A significant difference was detected for nanorulers between 35\u20135\u00b4F and 35\u20133\u00b4F, confirming that GIET is robust for detecting distance changes of\u00a0~1.2 nm between 6 nm and 11 nm.\n\nThese consistent calibrations via fluorescent intensities and lifetime measurements corroborated the validity of our GIET model, with systematic deviations likely to be related to positional uncertainty caused by inherent flexibility of the nanoruler system. We therefore applied the theoretical GIET curve for subsequent quantification of distances from experimental IG/I0. For the axial organization of mEGFP and mEGFP:NB complex tethered to the DOPC monolayer surface via trisNTA-DODA, distances 1.3 nm for H6-mEGFP directly tethered to the membrane (IG/I0: 7.6%) and 3.0 nm for mEGFP captured via NB-H6 (IG/I0: 16.4%) were estimated. The distance of 1.7 nm induced by the nanobody is in good agreement with the crystal structure of the GFP-NB complex (Kirchhofer et al., 2010), highlighting the nanometer sensitivity of quantifying the axial position of proteins onto lipid monolayers by GIET.\n\n### Axial reorganization at the lipid monolayer surface can be quantified by GIET\n\nWe next asked whether GIET is capable to measure distance changes larger than 10 nm. For this purpose, we chose the 35mer anchor strand with a fully extended length of 11.9 nm from 3\u00b4-end to 5\u00b4-end (Figure 2C). Upon hybridizing with the 20mer 3\u00b4 FAM probe strand, a fluorescence lifetime \u03c4G of 0.24\u00a0\u00b1\u00a00.02 ns was detected (Figure 2D). Comparing to \u03c40 of 3.04 ns on glass, the obtained \u03c4G/\u03c40 ratio of 8.0 \u00b1 0.6% corresponds to a distance of 4.4\u00a0\u00b1\u00a00.2 nm from the graphene (1.9 nm from the lipid headgroups), suggesting that the hybridized probe-anchor DNA strand collapses onto the surface of the lipid monolayer due to the flexible, unpaired 15mer gap. To test the hypothesis, a\u00a015mer ssDNA blocker strand was added, resulting into a\u00a0~\u00a0sixfold increase of the fluorescence lifetime (1.50\u00a0\u00b1\u00a00.03 ns, Figure 2D). The \u03c4G/\u03c40 ratio of 49 \u00b1 1.0% corresponds to a distance of 10.9\u00a0\u00b1\u00a00.2 nm, that\u00a0is a\u00a0height of 8.4 nm above the lipid layer. Compared to the length of the 35mer DNA nanoruler (11.9 nm), the height corresponds to a tilting angle \u03b1\u00a0=\u00a045\u00b0, which is in good agreement with the tilting angle \u03b1 obtained for the calibration. This observation not only supports the validation of the calibration, but also suggests loss in flexibility upon hybridization with the 15mer blocker strand forces the full duplex strand into an upstanding position (Figure 2C). These results demonstrate the potential of GIET to quantify large-scale conformational rearrangements of biomolecules on membrane surfaces with nanometer precision. However, we did not observe lateral diffusion dynamics of anchored DNA strands as explored by fluorescence recovery after photobleaching (FRAP, Figure 2\u2014figure supplement 5), thus ensuring that changes in fluorescence lifetime are not related to changes in the lateral organization within the lipid monolayer.\n\n### Reconstitution of the HOPS tethering axis for structural analysis by GIET\n\nWe applied our new method to unravel the orientation and organization of proteins involved in vesicle tethering and fusion at the yeast vacuole. This process is initiated by the Rab7-like GTPase Ypt7 as a functional marker of the late endosomal membrane (Figure 3A). Upon activation by its guanine nucleotide exchange factor (GEF) Mon1-Ccz1 on endosomes and vacuoles (Nordmann et al., 2010), Ypt7-GTP recruits the 650 kDa heterohexameric HOPS tethering complex (Brett et al., 2008; Ostrowicz et al., 2010). This complex then tethers Ypt7-bearing membranes (Hickey and Wickner, 2010; Ho and Stroupe, 2015; L\u00fcrick et al., 2017; Orr et al., 2015), and catalyzes fusion of vacuoles or SNARE-carrying proteoliposomes (Stroupe et al., 2009; Wickner and Haas, 2000). Our structural studies revealed that HOPS adopts a flexible tadpole-like conformation (Br\u00f6cker et al., 2012; L\u00fcrick et al., 2017). HOPS has four central subunits Vps11, Vps18, Vps16, and Vps33 (Rieder and Emr, 1997), which are flanked by Vps39 and Vps41 as Rab-specific subunits at its tail and head, respectively (Brett et al., 2008; Br\u00f6cker et al., 2012; Ostrowicz et al., 2010). However, the overall architecture and thus function of HOPS is controversial as two different structures have been observed by negative-stain electron microscopy (Br\u00f6cker et al., 2012; Chou et al., 2016). In its compact form, HOPS is about 30 nm in length and 10 nm in width (Br\u00f6cker et al., 2012), whereas the more open conformation of a second study suggests an even longer particle (Chou et al., 2016). Importantly, both structures were obtained from purified complexes in solution, bearing the question, how the functional complex is organized on membranes. To tackle this question by GIET, we reconstituted the entire tethering machinery on graphene-supported lipid monolayers using recombinantly expressed and purified components (Figure 3B,C). Like all Rabs, Ypt7 has an N-terminal GTPase domain, followed by a hypervariable domain (HVD), and a C-terminal prenyl group (Goody et al., 2017). The HVD varies in length between different Rab proteins and is critical for functionality (Li et al., 2014). Due to its composition, it has been assumed that the HVD adopts an extended conformation and would position the N-terminal GTPase domain of the Rab away from the membrane (Burguete et al., 2008). However, this assumption has not been tested, neither alone nor in the presence of GEFs or effectors.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic overview of delivery, activation, and function of Ypt7. GDI delivers prenylated GDP-bound Ypt7 to membranes of the late endosome/multivesicular body (MVB). Once Ypt7 is activated by its specific GEF Mon1-Ccz1 through GDP to GTP exchange, it stably associates with membranes. Activated Ypt7 recruits effector proteins, for\u00a0example the HOPS tethering complex at the vacuolar membrane. (B) In vitro prenylation of Ypt7 (pYpt7) and mNeon-fused Ypt7 (mNeon-pYpt7) analyzed by SDS-PAGE and Coomassie staining (5 \u00b5g). (C) Tandem affinity purification of Mon1-Ccz1 and HOPS analyzed by SDS-PAGE and Coomassie staining (5 \u00b5g). (D) Membrane association of prenylated mNeon-Ypt7 with (middle bar) and without (left bar) GTP-loading. Fraction of membrane-bound mNeon-pYpt7 based on the fluorescent signal in the supernatant before and after sedimentation (n\u00a0=\u00a03). As a negative control, liposomes were incubated with unprenylated mNeon-Ypt7 in the presence of GTP (left bar). (E) Interaction of HOPS (350 nM) with pYpt7-GTP-loaded liposomes (dark gray bars) or pYpt7-free liposomes (light gray bars), respectively. The fraction of clustered liposomes in the pellet was calculated on the basis of fluorescent signal in the supernatant before and after sedimentation (n\u00a0=\u00a03). (F) Putative architecture of membrane-associated mNeon-pYpt7-GTP, and its complexes with Mon1-Ccz1 and HOPS, respectively. The flexible HVD domain is highlighted by an\u00a0orange strand. (G) Box chart of fluorescence lifetime ratios of mNeon-pYpt7-GTP (black) on graphene-coated glass coverslip to glass (\u03c4G/\u03c40), and its complexes with Mon1-Ccz1 (red) and HOPS (blue), respectively. Significance: ***p<0.001 (two t-test, n\u00a0>\u00a017).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) SDS-PAGE and Coomassie staining of the mNeon-pYpt7-GDI complex. 10 \u00b5M mNeon-Ypt7 was incubated with 9 \u00b5M Gdi1, 1 \u00b5M REP (Mrs6), 1 \u00b5M geranylgeranyltransferase (Bet2-Bet4) and geranylgeranyl pyrophosphate (GGPP) at 37\u00b0C for 1 hr. An unprenylated sample (left) and prenylated samples before (middle) and after size exclusion chromatography (right) were loaded on the SDS-PAGE gel. (B) Size exclusion chromatogram of the reaction mixture in (A).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Pellet fraction of liposomes loaded with His-fused Ypt7-GDP (light gray bars) or Ypt7-GTP (dark gray bars). 170 \u00b5M liposomes were incubated with increasing amounts of HOPS complex or HOPS purification buffer for 10 min at 27\u00b0C. Liposomal clusters were sedimented at 1000 g for 5 min, and the pellet fraction was determined by the fluorescent signal of liposomes in the supernatant before and after sedimentation. (B) Pellet fraction of liposomes incubated with (dark gray bars) or without (light gray bars) pYpt7-GDI in the presence of GTP for 30 min at 27\u00b0C. HOPS-mediated tethering was analyzed as described in (A). Error bars indicate three independent experiments (n\u00a0=\u00a03).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** 200 nM mNeon-pYpt7 complexed with GDI was incubated with glass-supported lipid bilayers and graphene-supported lipid monolayers in the presence of GTP at 30\u00b0C for 30 min. After extensive washing, mNeon-pYpt7 was imaged by cLSM under the same conditions (top). Fluorescence lifetime images were acquired for 90 s (FLIM, bottom). Scale bars: 50 \u00b5m.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Surface sensitive TIRFS-RIF detection of Mon1-Ccz1 binding to lipid mono- and bilayers. Mass signal for lipid coating (I), conditioning of the membrane (II), binding of Mon1-Ccz1 (III) and washing with imidazole (IV). Blue: silica. Red: graphene. (B) Fluorescence lifetimes of mNeon-pYpt7-GTP, and its complex with Mon1-Ccz1 or HOPS on glass and graphene, respectively. 200 nM mNeon-pYpt7 complexed with GDI was incubated with the supported lipid monolayer/bilayer in the presence of GTP for 30 min at 30\u00b0C. Where indicated, 100 nM Mon1-Ccz1 or HOPS complex was added followed by incubation for 5 min. Fluorescence lifetimes of mNeon-pYpt7 on glass and graphene were determined by FLIM. The mean values of fluorescence lifetimes were used for calculating the ratios.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Time-lapse cLSM images of mNeon-pYpt7-GTP alone and in the presence of Mon1-Ccz1 or HOPS complex on glass-supported lipid bilayers or graphene-supported lipid monolayers (mNeon-pYpt7-GTP + HOPS). 200 nM mNeon-pYpt7-GTP, 100 nM Mon1-Ccz1, and 100 nM HOPS were used. Time stamp in s. Scale bars: 10 \u00b5m. (B) Time-dependent fluorescence recovery of mNeon-pYpt7-GTP and in interaction with effectors on glass-supported lipid bilayers. mNeon-pYpt7-GTP (black), mNeon-pYpt7-GTP with Mon1-Ccz1 (red) or HOPS complex (blue). mNeon-pYpt7-GTP with HOPS complex on graphene-supported lipid monolayer (magenta) did not show recovery after photobleaching. Error bars indicate s.d. of the average intensity from three experiments.\n\n### GIET reveals an extended HVD of Ypt7 on membranes\n\nTo analyze the conformational organization of Ypt7 on membranes, we produced this protein N-terminally fused to mNeonGreen (mNeon-Ypt7). The purified protein was prenylated in vitro (mNeon-pYpt7) in the presence of the chaperone GDI (mNeon-pYpt7:GDI), and the complex was used for reconstitution into lipid layers (Langemeyer et al., 2018; Thomas and Fromme, 2016; Figure 3B, Figure 3\u2014figure supplement 1). In parallel, we generated a strain with mNeon-pYpt7 in vivo and observed full complementation (Langemeyer et al., 2020). Full-length complexes of Mon1-Ccz1 and HOPS were purified to homogeneity and monodispersity (Figure 3C), and we have previously shown that both function together with prenylated Ypt7 to promote fusion of proteoliposomes (Langemeyer et al., 2018). To test membrane binding, we incubated mNeon-pYpt7:GDI with liposomes by destabilizing the interaction with GDI, and observed that Ypt7 recruitment required the prenyl anchor and GTP to prevent GDI-mediated extraction (Figure 3D). We further analyzed the ability of activated pYpt7 to interact with HOPS, and thus incubated pYpt7-GTP carrying liposomes with purified HOPS (Figure 3E). In agreement with previous work (L\u00fcrick et al., 2017; Orr et al., 2015), HOPS triggered liposome clustering in a pYpt7 and concentration-dependent manner (Figure 3\u2014figure supplement 2).\n\nEfficient transfer of prenylated mNeon-pYpt7 to lipid monolayers (on\u00a0graphene) and bilayers (on glass) and homogeneous distribution were confirmed by cLSM imaging (Figure 3\u2014figure supplement 3). Binding of Mon1-Ccz1 to lipid mono- and bilayers (Cabrera et al., 2014; Poteryaev et al., 2010) was confirmed by label-free RIF detection (Figure 3\u2014figure supplement 4A). Recruitment of HOPS to membrane-anchored mNeon-pYpt7-GTP resulted into significant changes of its mobility and the organization into dot-like structures (Figure 3\u2014figure supplement 5, Video 1, Video 2). Such lateral heterogeneity of mNeon-pYpt7-GTP:HOPS was not observed for graphene-supported monolayers, in line with the lack of lateral mobility of this architecture. By quantifying the fluorescence lifetime of mNeonGreen on graphene and glass (Figure 3\u2014figure supplement 4B), the axial distances of active mNeon-pYpt7 from the membrane surface were determined based on the \u03c4G/\u03c40 ratio in the absence of additional effector proteins and in the presence of Mon1-Ccz1 and HOPS (Figure 3G). pYpt7 was located surprisingly distal from the membrane in the absence of effector proteins with the mNeon fluorophore being located 4.5\u00a0\u00b1\u00a00.3 nm above the lipid monolayer surface. The site of mNeon fusion on Ypt7 is only\u00a0~1 nm away from the N-terminus of the HVD (Wiegandt et al., 2015) and therefore this observation suggests a rather extended conformation of the HVD. Upon interaction with Mon1-Ccz1 the distance of\u00a0mNeon-pYpt7 decreased by 0.7 nm, while a further increase in the axial distance by 0.7 nm was observed in the presence of HOPS (Figure 3F). The total of 30% distance difference suggests the large conformational changes of the HVD are functionally relevant for the interaction of Ypt7 with each complex.\n\n![Video 1.](https://cdn.elifesciences.org/articles/62501/elife-62501-video1.mp4.jpg)\n\n**Video 1.:** Scale bar: 10 \u00b5m.\n\n![Video 2.](https://cdn.elifesciences.org/articles/62501/elife-62501-video2.mp4.jpg)\n\n**Video 2.:** Scale bar: 10 \u00b5m.\n\n### The HOPS complex adopts an upright orientation upon binding Ypt7 on membranes\n\nThe HOPS complex binds Ypt7-GTP via its subunits Vps39 and Vps41 (Brett et al., 2008; Ostrowicz et al., 2010). Since these subunits have been mapped to opposite ends of the HOPS complex (Br\u00f6cker et al., 2012), HOPS may be oriented differently on membranes, depending whether it binds Ypt7 via one or both sites. We therefore systematically mapped the axial arrangement of the HOPS complex bound to membrane-inserted pYpt7-GTP by GIET. Thus, we used HOPS variants with C-terminal yeast-enhanced GFP (yEGFP) on Vps39, Vps11, Vps18, Vps16, and Vps33, respectively, and overexpressed and purified the complexes from yeast. Uncompromised complex assembly was verified by SDS-PAGE (Figure 4A). yEGFP-tagged HOPS was specifically captured to lipid mono- and bilayers only after anchoring pYpt7-GTP (Figure 4B). Significantly heterogeneous intensity distribution of yEGFP-tagged HOPS was observed on lipid bilayers but not on lipid monolayers on graphene (Figure 4B, Figure 4\u2014figure supplement 1). These results suggest that HOPS clusters upon binding to diffusive membrane-anchored pYpt7-GTP, in line with the above-mentioned clustering and loss in mobility of mNeon-pYpt7-GTP upon binding to untagged HOPS (Figure 3\u2014figure supplement 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig4-v1.jpg)\n\n**Figure 4.:** (A) Integrity of HOPS complexes containing different yEGFP-fused subunits analyzed by SDS-PAGE and Coomassie staining. (B) Confocal laser-scanning microscopy image of HOPS Vps16-yEGFP bound to pYpt7-GTP-loaded membrane on glass. Scale bar: 50 \u00b5m. Fluorescence intensity profile along the yellow line in the image is shown aside (black). As a negative control, fluorescence intensity profile of HOPS (Vps16-yEGFP) in the absence of pYpt7-GTP is shown (red). (C) Fluorescence lifetime imaging of HOPS (Vps16-yEGFP) bound to pYpt7-GTP-loaded membranes on glass and graphene, respectively. Scale bar: 50 \u00b5m. (D) Normalized fluorescence lifetime histograms of FLIM images shown in panel C. (E) Fluorescence lifetime ratios of different yEGFP-fused subunits in HOPS complex. The HOPS complexes were bound to pYpt7-GTP-loaded membranes on glass and graphene, respectively. Significance: ***p<0.001 (two t-test, n\u00a0>\u00a09), *p<0.05 (two t-test, n\u00a0>\u00a09). (F) Axial distances of yEGFP-fused HOPS subunits above membrane determined according to the GIET-distance correlation for EGFP (green). The range of distance is shown by mean\u00a0\u00b1s.d of the lifetime ratio. Axial distances of Ypt7 and Ypt7 bound to complexes are shown for reference (magenta, correlation curve of mNeon). (G) Putative orientation of pYpt7-GTP bound HOPS complex on membranes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** 50 nM HOPS Vps16-yEGFP complex was added to glass-supported lipid bilayers (middle row) and graphene-supported lipid monolayers (right row) loaded with 150 nM pYpt7-GTP, respectively. As a control, HOPS was incubated with the glass-supported lipid bilayer in the absence of pYpt7-GTP (left row). cLSM images were acquired under the same conditions. FLIM was not applicable to the negative control due to negligible binding of HOPS complex in this condition. Scale bars: 50 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) 50 nM HOPS complex with Vps39, Vps11, Vps16, Vps18, or Vps33 C-terminally fused to yEGFP was added to solid-supported lipid layers preloaded with 150 nM mNeon-pYpt7-GTP, respectively. (B) Identification of the height of protein component in the complexes according to the calibration curve.\n\nTo determine the axial orientation of Ypt7-bound HOPS on membranes, GIET efficiencies were quantified by measuring fluorescence lifetimes on graphene (\u03c4G) and glass support (\u03c40). FLIM images of yEGFP-tagged HOPS bound to pYpt7-GTP showed homogeneous distribution on graphene, yielding a Gaussian-like distribution of fluorescence lifetimes (Figure 4C,D). Interestingly, \u03c4G showed a broader distribution than \u03c40, in line with some heterogeneity of the axial arrangement. The mean fluorescence lifetimes were used to estimate the average distance from the lipid head groups. For all yEGFP-fused subunits of HOPS, a significant decrease of \u03c4G compared to \u03c40 was found. The axial distances calculated for the different HOPS subunits are in line with an upright position of the complex bound to Ypt7 (Figure 4E,F, Figure 4\u2014figure supplement 2): The two subunits at the putative HOPS tail, Vps39 (9.5 nm) and Vps11 (8.5 nm), were found to be much closer to the membrane than those of the previously annotated head (Vps16 at 12.0 nm, Vps18 at 11.4 nm, and Vps33 at 11.5 nm) (Figure 4G). These results suggest membrane anchoring of HOPS with membrane-anchored Ypt7-GTP occurs exclusively via interaction of Vps39, in line with its higher affinity as compared to Vps41 (L\u00fcrick et al., 2017; Plemel et al., 2011). The\u00a0~8 nm distance of the head subunits Vps33 and Vps16 from Ypt7-GTP found by GIET analyses, however, is significantly lower than the\u00a0~20 nm head-to-tail distance (between Vps33/16 and Vps39) observed in the EM structure of isolated HOPS (Br\u00f6cker et al., 2012). These findings suggest that the HOPS complex adopts a more compact structure upon docking to membrane-anchored Ypt7-GTP.\n\n### Structural dynamics of HOPS complex at the membrane\n\nNegative-stain EM studies revealed that the HOPS complex can adopt different conformations in solution (Br\u00f6cker et al., 2012; Chou et al., 2016), which is in line with the broad distribution of GIET efficiencies observed in fluorescence lifetime histograms (Figure 4D). To resolve such potential conformational heterogeneity of HOPS when bound to Ypt7 on membranes and possible transitions between these conformations, we turned to single-molecule imaging. The 97.7% transparency of graphene monolayer for visible light (Nair et al., 2008) allows single-molecule imaging on graphene by total internal reflection fluorescence (TIRF) microscopy with minimum loss of photons. For robust single-molecule GIET (smGIET) analysis, we used an anti-GFP nanobody site-specifically coupled to a photostable fluorophore (Dy647NB) at very low concentration (50 pM) to sub-stochiometrically label yEGFP-tagged subunits in the HOPS complex at the head (Vps33) and the tail (Vps11), respectively. Under these conditions, signals from specifically labeled individual HOPS complexes were detected by TIRF microscopy, as confirmed by photobleaching analyses on glass and graphene (Figure 5A,B, Figure 5\u2014figure supplement 1A). Analysis of\u00a0~100 single step bleaching fluorescence traces yielded IG/I0 of 0.76\u00a0\u00b1\u00a00.20 for HOPS Vps33 and 0.53\u00a0\u00b1\u00a00.14 for HOPS Vps11 (Figure 5\u2014figure supplement 1B,C). These mean values were in a good agreement with the ensemble lifetime measurements (Supplementary file 2). However, the large standard deviations corroborated significant structural heterogeneity in HOPS complexes that was already suggested by the broad fluorescence lifetime distribution observed in the ensemble experiments (Figure 4D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig5-v1.jpg)\n\n**Figure 5.:** (A, B) Representative time-lapse single-molecule intensity traces of Dy647NB-labeled HOPS Vps33-yEGFP (A) and HOPS Vps11-yEGFP (B) on glass (blue) and graphene (red). (C) Enlarged representation of the smGIET intensity fluctuations and fit by an HMM using a three-state segmentation. (D, E) Pooled single-molecule intensity distribution of Dy647NB-labeled HOPS Vps33-yEGFP (D, n\u00a0=\u00a0101615) and HOPS Vps33-yEGFP (E, n\u00a0=\u00a084218) immobilized on graphene-supported monolayers via Ypt7-GTP. Intensities were classified by Gaussian fits as states of low (L, blue), medium (M, orange), and high (H, yellow), respectively. (F) Model schematically depicting possible conformational changes of HOPS in the L, M, and H state. State occupancies and distance changes of Vps11 and Vps33 are indicated. (G, H) Transition density plots of HOPS Vps33-yEGFP (G) and Vps11-yEGFP (H). The crosslines on M state are guide for the eye. (I) Conformational transition kinetics obtained from HMM. Diameters of the circles and sizes of the arrows are proportional to the averaged state occupancy and transition rates from results of HOPS Vps33 and Vps11, respectively.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Single-molecule images of NB-labeled HOPS Vps33-yEGFP. White dots are individual HOPS complexes bound to the lipid bilayer on glass via prenylated Ypt7-GTP. In the absence of Ypt7 and HOPS, negligible single-molecule events were detected. Scale bars: 2 \u00b5m. (B) Percentage of photobleaching steps obtained by analyzing the intensity traces of\u00a0~100 individual molecules per sample conditions. (C) Intensity differences before and after photobleaching determined from single-molecule intensity traces. Each symbol represents the intensity of an individual molecule. In total,\u00a0~100 molecules were analyzed for each sample species. (D) Single-molecule intensity ratios of HOPS Vps11- and Vps33-yEGFP. Significance: ***p<0.001 (two t-test, n\u00a0=\u00a0101).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The means\u00a0\u00b1\u00a0s.d. of histograms in A and B are 576\u00a0\u00b1\u00a096 photons, and 495\u00a0\u00b1\u00a090 photons, respectively.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62501/elife-62501-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** From the RMSD and mean intensity, a relative error of 7.6% for single-molecule detection was obtained. Of note, the relative error at single-molecule level was\u00a0~2 times smaller than s.d. of the pooled single-molecule intensity analysis on glass (Figure 5\u2014figure supplement 2), which can be explained by signal inhomogeneity due to the not fully uniform TIRF illumination profile.\n\nStrikingly, single-molecule fluorescence of the HOPS complex bound to graphene-supported lipid monolayers showed pronounced fluctuations, which was not observed on glass (Figure 5A,B, Video 3). These fluctuations therefore indicate axial conformational dynamics of pYpt7-GTP bound HOPS on the membrane, which is monitored faithfully by distance sensitive smGIET. To quantify the conformational dynamics of the HOPS complex, we recorded time-lapse intensity traces of individual HOPS complexes on graphene and glass (Figure 5C). HOPS Vps33-yEGFP was chosen based on its pronounced two lifetime populations observed on graphene in the ensemble experiments (Figure 4E, Figure 4\u2014figure supplement 2). For pooled single-molecule intensities from traces of HOPS Vps33-yEGFP and HOPS Vps11-yEGFP, broad distributions were observed on graphene (Figure 5D,E) but not on glass (Figure 5\u2014figure supplement 2). Analysis by Hidden Markov Modeling (HMM) (McKinney et al., 2006) identified three distinct states with \u2018low\u2019 (L), \u2018medium\u2019 (M), and \u2018high\u2019 (H) intensity, respectively, for both HOPS variants on graphene. The characteristic IG/I0 ratios, axial distances, and occupancies for each state are summarized in Table 1. The similar changes of mean axial distance from L to M state (~2 nm) in both HOPS Vps33-yEGFP and HOPS Vps11-yEGFP suggest a largely concerted axial movement of the entire HOPS complex. By contrast, the high discrepancy of distance changes during transitions from M to H (Vps33: 4.4 nm; Vps11: 2 nm) indicate a conformational re-organization of the HOPS complex itself, thus adopting an elongated conformation (Figure 5F). In total, the conformational dynamic distance range on the membrane was\u00a0~7 nm for HOPS Vps33-yEGFP and 4 nm for HOPS Vps11-yEGFP, respectively. Furthermore, we obtained rate constants of the transition between L, M, and H states from HMM analysis for HOPS Vps33-yEGFP and HOPS Vps11-yEGFP (Supplementary file 4). Striking similarity of the transition probability densities were obtained for both labeled subunits, with the dominant transitions between L-M and M-H states (Figure 5G,H). This observation supports correlated conformational dynamics of the L, M, and H states observed for HOPS Vps33-yEGFP and HOPS Vps11-yEGFP. Together, the time-resolved smGIET experiments reveal a 2-step conformational transition of the Ypt7-anchored HOPS complex from the \u2018closed\u2019 state L to the \u2018open\u2019 state H via an intermediate state M (Figure 5I).\n\n**Table 1.**\n Conformational states characterized by HMM analysis of smGIET.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein</th>\n      <th colspan=\"3\">HOPS Vps33-yEGFP</th>\n      <th colspan=\"3\">HOPS Vps11-yEGFP</th>\n    </tr>\n    <tr>\n      <th>State</th>\n      <th>L</th>\n      <th>M</th>\n      <th>H</th>\n      <th>L</th>\n      <th>M</th>\n      <th>H</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IG/I0a</td>\n      <td>0.25\u00a0\u00b1\u00a00.06</td>\n      <td>0.41\u00a0\u00b1\u00a00.08</td>\n      <td>0.69\u00a0\u00b1\u00a00.13</td>\n      <td>0.22\u00a0\u00b1\u00a00.05</td>\n      <td>0.36\u00a0\u00b1\u00a00.06</td>\n      <td>0.51\u00a0\u00b1\u00a00.08</td>\n    </tr>\n    <tr>\n      <td>h (nm) b</td>\n      <td>4.7 (3.9\u20135.5)</td>\n      <td>6.8 (5.7\u20137.9)</td>\n      <td>11.2 (8.9\u201314.9)</td>\n      <td>4.3 (3.6\u20135.0)</td>\n      <td>6.1 (5.3\u20136.9)</td>\n      <td>8.1 (7.0\u20139.3)</td>\n    </tr>\n    <tr>\n      <td>Occup.\u00a0(%)c</td>\n      <td>30.9\u00a0\u00b1\u00a00.1</td>\n      <td>35.7\u00a0\u00b1\u00a00.2</td>\n      <td>33.5\u00a0\u00b1\u00a00.1</td>\n      <td>40.4\u00a0\u00b1\u00a00.2</td>\n      <td>38.0\u00a0\u00b1\u00a00.2</td>\n      <td>21.6\u00a0\u00b1\u00a00.1</td>\n    </tr>\n  </tbody>\n</table>\n\n_*: mean\u00a0\u00b1s.d. based on IG of the Gaussian fits in single-molecule intensity distribution on graphene. I0 is the mean value of Gaussian fit on glass. b: h is the average height of NB-labeled HOPS on the membrane. Values in brackets are the range of h determined by mean\u00a0\u00b1s.d of IG/I0. c: mean\u00a0\u00b1\u00a0s.e.m. of state occupancy._\n\n![Video 3.](https://cdn.elifesciences.org/articles/62501/elife-62501-video3.mp4.jpg)\n\n**Video 3.:** Scale bar: 2 \u00b5m.\n\n## Discussion\n\nQuantitative insights into the structural organization and dynamics of protein complexes and large machineries at membranes is important to understand their function. Methods based on fluorescence-interference-contrast (FLIC) microscopy (Braun and Fromherz, 1998) have been successfully employed to determine the axial organization of membrane proteins at ensemble level with at\u00a0~1 nm resolution (Kiessling and Tamm, 2003; Kiessling et al., 2018). Resolving the axial conformational dynamics that involved in many membrane-associated processes, however, requires methods that provide sub-nanometer resolution with single-molecule sensitivity at sub-second timescale. To tackle this challenge, we have here introduced fluorescence quenching by GIET using graphene-supported lipid monolayer as a membrane model. Detailed calibration with DNA rulers confirmed excellent correlation of simulated and measured distance-GIET relationships between 3\u00a0nm\u00a0and\u00a015 nm, promising very good sensitivity up to a distance of\u00a0~25 nm from the graphene surface, thus substantially exceeding the\u00a0~10 nm limit of FRET. Next to rapid and robust ensemble measurements, we demonstrate highly sensitive single-molecule GIET detection yielding relative axial localization precision of 10% at video rate temporal resolution (Materials and methods: Axial localization precision of smGIET). Thus, the spatial regime covered by GIET ideally fills the gap left by FRET and localization microscopy.\n\nProof-of-concept experiments demonstrate the feasibility to reconstitute complex membrane-anchored multi-protein machineries onto graphene-supported lipid monolayers and to quantify their axial architecture and dynamics. We show that the HVD domain of Ypt7 adopts a strongly extended conformation, locating Ypt7 at a 4.5 nm distance above the membrane surface. This surprising observation could be explained by electrostatic repulsion of the negatively charged HVD. Significant changes in the axial positioning of Ypt7 were observed upon interaction with Mon1-Ccz1 and HOPS. Since Mon1-Ccz1 directly binds to the membrane (Cabrera et al., 2014), its Ypt7 binding site appears to be located distally to the membrane and the HVD allows unhindered access. Importantly, ensemble and single-molecule GIET furthermore revealed the nanoscale organization and dynamics of the HOPS tethering complex upon recruitment to the membrane surface. While ensemble GIET measurements clearly identified the HOPS subunit Vps39 as the primary binding site to lipid-anchored Ypt7, single-molecule GIET revealed rapid transition between three different conformational states with kinetics in the second to sub-second regime. Quantitative analysis of the kinetics suggests a 2-step transition from a \u2018closed\u2019 into an \u2018open\u2019 state involving concerted axial movement and conformational changes. Given the impaired diffusion in the graphene-supported lipid monolayer, however, the conformationally highly dynamic HOPS complex observed in our studies may represent an intermediate state prior to lateral HOPS clustering, which in turn could increase the efficiency of HOPS to tether incoming vesicles. By developing freely diffusive lipid architectures for graphene support, GIET will allow to dissect conformational organization and rearrangement of large protein complexes on membranes. Since GIET has negligible variation between spectrally different fluorophores (Figure 2\u2014figure supplement 2), concerted conformational changes and axial movement can be potentially resolved by multicolor GIET. With graphene emerging as a routine support for transmission electron microscopy, correlative approaches using the same surface architecture can be envisioned.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>mNeon-Ypt7</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>BY4732</td>\n      <td>Euroscarf library</td>\n      <td></td>\n      <td>MATa his3\u2206200 leu2\u22060 met15\u22060 trp1\u220663 ura3\u22060</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>BY4727</td>\n      <td>Euroscarf library</td>\n      <td></td>\n      <td>MATalpha his3\u2206200 leu2\u22060 lys2\u22060 met15\u22060 trp1\u220663 ura3\u22060</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>CUY2470</td>\n      <td>doi: 10.1016/j.cub.2010.08.002</td>\n      <td></td>\n      <td>BY4732; CCZ1::TRP1-GAL1pr MON1::HIS3M \u00d7 6-GAL1pr  CCZ1::TAP-URA3</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>CUY2675</td>\n      <td>doi:10.1111/j.1600-0854.2010.01097.x</td>\n      <td></td>\n      <td>BY4732xBY4727 VPS41::TRP1-GAL1pr VPS41::TAP-URA3 VPS39::KanMX-GAL1pr VPS33::HIS3-GAL1pr  VPS11::HIS3-GAL1pr VPS16::natNT2-GAL1pr VPS18::kanMX-GAL1pr-3HA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>CUY4391</td>\n      <td>doi: 10.1073/pnas.1117797109</td>\n      <td></td>\n      <td>BY4732xBY4727 VPS41::TRP1-GAL1pr VPS41::TAP-URA3 VPS39::KanMX-GAL1pr VPS39::yEGFP-hphNT1 VPS33::HIS3-GAL1pr VPS11::HIS3-GAL1pr  VPS16::natNT2-GAL1pr VPS18::kanMX-GAL1pr-3HA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>CUY4392</td>\n      <td>doi: 10.1073/pnas.1117797109</td>\n      <td></td>\n      <td>BY4732xBY4727 VPS41::TRP1-GAL1pr VPS41::TAP-URA3 VPS39::KanMX-GAL1pr VPS33::HIS3-GAL1pr VPS11::HIS3-GAL1pr VPS11::yEGFP-hphNT1 VPS16::natNT2-GAL1pr VPS18::kanMX-GAL1pr-3HA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>CUY4393</td>\n      <td>doi: 10.1073/pnas.1117797109</td>\n      <td></td>\n      <td>BY4732xBY4727 VPS41::TRP1-GAL1pr VPS41::TAP-URA3 VPS39::KanMX-GAL1pr VPS33::HIS3-GAL1pr VPS11::HIS3-GAL1pr VPS16::natNT2-GAL1pr VPS16::yEGFP-hphNT1 VPS18::kanMX-GAL1pr-3HA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>CUY4394</td>\n      <td>doi: 10.1073/pnas.1117797109</td>\n      <td></td>\n      <td>BY4732xBY4727 VPS41::TRP1-GAL1pr VPS41::TAP-URA3 VPS39::KanMX-GAL1pr VPS33::HIS3-GAL1pr  VPS11::HIS3-GAL1pr VPS16::natNT2-GAL1pr VPS18::kanMX-GAL1pr-3HA VPS18::yEGFP-hphNT1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>CUY4395</td>\n      <td>doi: 10.1073/pnas.1117797109</td>\n      <td></td>\n      <td>BY4732xBY4727 VPS41::TRP1-GAL1pr VPS41::TAP-URA3 VPS39::KanMX-GAL1pr VPS33::HIS3-GAL1pr  VPS33::yEGFP-hphNT1 VPS11::HIS3-GAL1pr VPS16::natNT2-GAL1pr VPS18::kanMX-GAL1pr-3HA</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET21a-EGFP</td>\n      <td>Novagen</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET21a-NB-H6</td>\n      <td>Novagen</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET24b-Ypt7</td>\n      <td>doi: 10.1242/jcs.140921</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET24d-GST-TEV-Ypt7</td>\n      <td>doi: 10.1091/mbc.e11-12-1030</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET24d-GST-TEV-mNeon-Ypt7</td>\n      <td>this paper</td>\n      <td></td>\n      <td>mNeon-Ypt7 gene was synthesized by Thermo Fisher Scientific, provided in a pMA-T backbone and subcloned into a pET24d vector.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEX-6P-Gdi1</td>\n      <td>doi: 10.1083/jcb.201608123</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCDF-DUET-1-Bet2-Bet4</td>\n      <td>doi: 10.1083/jcb.201608123</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET30-Mrs6</td>\n      <td>other</td>\n      <td></td>\n      <td>Gift from K. Alexandrov laboratory, Institute for Molecular Bioscience, The University of Queensland, Australia</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>20mer anchor DNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019- GATGAATGGTGGGTGAGAGG-3\u00b4-TEG-Cholesterol</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>25mer anchor DNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019- GATGAATGGTGGGTGAGAGGTGAGG-3\u00b4-TEG-Cholesterol</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>35mer anchor DNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019- GATGAATGGTGGGTGAGAGGTGAGGAGTAAGAGGA-3\u00b4-TEG-Cholesterol</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>50mer anchor DNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019- GATGAATGGTGGGTGAGAGGTGAGGAGTAAGA GGATGTGTTAGAGGGATG-3\u00b4-TEG-Cholesterol</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>3\u00b4-FAM probe DNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019-CCTCTCACCCACCATTCATC-3\u00b4-FAM</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>5\u00b4-FAM probe DNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019- FAM-CCTCTCACCCACCATTCATC-3\u00b4</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>15mer blocker DNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019-TCCTCTTACTCCTCA-3\u00b4</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>30mer blocker DNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019-CATCCCTCTAACACATCCTCTTACTCCTCA-3\u00b4</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>H6-mEGFP</td>\n      <td>doi: 10.1021/acs.nanolett.5b01153</td>\n      <td></td>\n      <td>purified from E. coli BL21- DE3 cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>GPF NB \u2018enhancer\u2019</td>\n      <td>doi: 10.1002/smll.201502132</td>\n      <td></td>\n      <td>purified from E. coli BL21- DE3 cells</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Origin8</td>\n      <td>OriginLab</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH</td>\n      <td>1.53e</td>\n      <td>Time Series Analyzer plugin for extracting single-molecule intensity traces, Author: Balaji J http://rsb.info.nih.gov/ij/plugins/time-series.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td>R2019b</td>\n      <td>Code availability for calculating the GIET efficiency was documented in Nature Photonics 2019, 13: 860\u2013865. doi: 10.1038/s41566-019-0510-7.</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HMM</td>\n      <td>other</td>\n      <td></td>\n      <td>Hidden Markov Model (HMM) Toolbox for Matlab written by Kevin Murphy https://www.cs.ubc.ca/~murphyk/Software/HMM/hmm.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STaSI</td>\n      <td>doi: 10.1021/jz501435p</td>\n      <td></td>\n      <td>Algorithm of step transition and state identification for single-molecule data analysis.</td>\n    </tr>\n  </tbody>\n</table>\n\n### Materials\n\nGraphene monolayer was purchased from Graphenea, Spain (Easy Transfer Monolayer, G/P-25\u201325). Glass microscopy coverslips with thickness #1.5 and diameter of 24 mm were purchased from Carl Roth (PK26.1). 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC), 1,2-dioleoyl-sn-glycero-3-phosphoserine (DOPS), 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC), 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphatidylethanolamine (POPE), diacylglycerol (DAG) and DOGS-NTA were purchased from Avanti Polar Lipids, Alabama, USA. Phosphatidylinositol 3-phosphate (PI-3-P) was purchased from Echelon Biosciences Inc, Utah, USA. 2\u2032,7\u2032-difluoro-fluorescein conjugated with 1,2-dihexadecanoyl-sn-glycero-3-phosphoethanolamine (OG488-DHPE) was purchased from Thermo Fisher Scientific. ATTO488-1,2-dipalmitoyl-sn-glycero-3-phosphoethanolamine (ATTO488-DPPE) was obtained from ATTO-TEC GmbH, Siegen, Germany. DY647P1 maleimide was purchased from Dyomics GmbH, Jena, Germany. TrisNTA-DODA was synthesized as previously reported (Beutel et al., 2014). DNA oligonucleotides were ordered from Integrated DNA Technologies, Inc The sequences and modifications are listed in Supplementary file 1A. Acetone was purchased from Merck (Uvasol for spectroscopy, 100022). Other reagents were purchased from Sigma Aldrich.\n\nProtein expression, purification and labeling mEGFP with an N-terminal hexahistidine tag (H6-mEGFP) was cloned in the plasmid pET21a. The protein was expressed in Escherichia coli BL21 (DE 3) Rosetta cells, followed by purification of immobilized metal affinity chromatography (IMAC) and size exclusion chromatography (SEC) (Wedeking et al., 2015b). mEGFP without oligohistidine tag (tagless mEGFP) was expressed in E. coli. Lysed cells were heated to 80\u00b0C, centrifuged and the supernatant was purified by anion exchange column and SEC. Anti-GPF nanobody \u2018enhancer\u2019 (Kirchhofer et al., 2010) with a C-terminal hexahistidine tag (NB-H6) was expressed in E. coli Rosetta as described previously (Wedeking et al., 2015a). For fluorescence labeling, a C-terminal cysteine was appended to the NB for conjugating with Dy647P1-malemide. The anti-GFP nanobody \u2018enhancer\u2019 fused to a C-terminal hexahistidine tag was cloned into pET21a (pET21a-NB-H6) and expressed in E. coli BL21 (DE 3) Rosetta cells. After cell lyses by sonication, NB-H6 was purified by immobilized metal affinity chromatography (IMAC) and size exclusion chromatography (SEC). For fluorescence labeling, a short linker including an additional cysteine residue followed by an ybbR-tag, a PAS repeat sequence and a terminal hexahistidine tag (a.a.: GSCGSGSKLDSLEFIASKLAPASPASPASPASPASLEHHHHHH) was C-terminally fused to the NB. Expression and purification was performed as described for NB-H6. The purified proteins were reacted with a twofold molar ratio of DY647P1 maleimide for 30 min and then purified by size exclusion chromatography. A degree of labeling close to 1.0 was obtained as quantified by UV-Vis spectroscopy.\n\nEndocytic proteins and protein complexes: (1) Rab GTPases and Gdi1. pET24b-Ypt7 (Cabrera et al., 2014), pET24d-GST-TEV-Ypt7 (Lachmann et al., 2012), pET24d-GST-TEV-mNeon-Ypt7 and pGEX-6P-Gdi1 (Thomas and Fromme, 2016) were transformed into competent E. coli BL21 (DE 3) Rosetta cells. Rab GTPases and Gdi1 were purified as previously described with slight modifications (Langemeyer et al., 2018; L\u00fcrick et al., 2017; Nordmann et al., 2010). The pET24b-Ypt7, pET24d-GST-TEV-Ypt7, pET24d-GST-TEV-mNeon-Ypt7 (mNeon fused to Ypt7 via a GGSGx3 linker) and pGEX-6P-Gdi1 were expressed in E. coli BL21 (DE 3) Rosetta cells. Cells were grown in Luria broth (LB) medium containing the specific antibiotics until an OD600 of around 0.8, before they were induced with 0.25 mM isopropyl-\u03b2-D-thiogalactoside (IPTG) for 18 hr at 16\u00b0C. For purification of the Rab GTPases, harvested cells were lysed by a Microfluidizer, Model M-110L (Microfluidics, Newton, MA) in 50 mM HEPES, pH 7.5, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 1 mM phenylmethylsulfonyl fluoride (PMSF), and 0.05-fold protease inhibitor cocktail. For purification of Gdi1, lysis was performed in PBS supplemented with 5 mM \u03b2-mercaptoethanol and 1 mM PMSF. The lysate was centrifuged at 40,000 g for 30 min at 4\u00b0C, and the supernatant was incubated for 2 hr at 4\u00b0C with pre-equilibrated Ni-NTA agarose (Macherey-Nagel, Germany) for His-fused proteins or Glutathione Sepharose (GSH) 4B beads (GE Healthcare) for GST-fused proteins. Ni-NTA beads were washed with 50 ml lysis buffer lacking PMSF and protease inhibitor but supplemented with 10 mM imidazole. For elution, the imidazole concentration was increased to 300 mM. After elution, the buffer was exchanged via a PD10 column (GE Healthcare) containing no imidazole. GSH beads were extensively washed with 120 ml lysis buffer lacking PMSF and protease inhibitor cocktail, and proteins were eluted by cleaving the affinity-tag with TEV- or Precision-protease, respectively, for 2 hr at 16\u00b0C.\n\n(2)Rab GGTase and Rab Escort Protein. pET30-Mrs6 (Pylypenko et al., 2003) and pCDF-Duet-1-Bet2-Bet4 (Thomas and Fromme, 2016) were transformed into E.\u00a0coli BL21 (DE 3) Rosetta cells. The Rab GGTase and the Rab escort protein were expressed and induced as Rab GTPases and Gdi1. The Rab GGTase (pCDF-Duet-1-Bet2-Bet4) and the Rab escort protein (pET-Mrs6) were expressed and induced as described in 1.2. Harvested cells were lysed in 50 mM Tris, pH 8.0, 300 mM NaCl, 2 mM \u03b2-mercaptoethanol and 1 mM PMSF and centrifuged as described above. The supernatant was loaded on a pre-equilibrated Hi-Trap Ni-Sepharose column (GE Healthcare). After extensive washing of the column with lysis buffer containing 30 mM imidazole but lacking PMSF, bound protein was eluted in a linear 30\u2013300 mM imidazole gradient over 30 column volumes. Protein-containing fractions were pooled and dialyzed against buffer containing 50 mM HEPES, pH 7.5, 150 mM NaCl, and 1 mM MgCl2. The buffer was exchanged twice.\n\n(3) HOPS, yEGFP-fused HOPS and Mon1-Ccz1. HOPS, yEGFP-fused HOPS and Mon1-Ccz1 were expressed in Saccharomyces cerevisiae and purified essentially as described before (L\u00fcrick et al., 2017). For yEGFP-fused HOPS, yEGFP was fused to the C-terminus of Vps proteins via a linker of RTLNVDGSGAGAGAGAGAIL. yEGFP-fused HOPS and Mon1-Ccz1 complexes were expressed in S. cerevisiae. In short, cells were grown until an OD600 of around 8. Harvested cells were resuspended in 50 mM HEPES, pH 7.4, 300 mM NaCl, 1.5 mM MgCl2, 1 mM DTT, 0.5 mM PMSF, 1x FY protease inhibitor mix (Serva, Germany), and 10% glycerol. For purification of Mon1-Ccz1, the salt concentration was decreased to 150 mM NaCl. Cell lysis in the presence of glass beads was conducted in a FastPrep-24 5G (MP, Germany). After removal of the glass beads, the supernatant was centrifuged at 120,000 g for 1 hr at 4\u00b0C. Centrifuged lysate was incubated with pre-equilibrated immunoglobulin G (IgG) Sepharose (GE Healthcare) for 2 hr at 4\u00b0C. IgG beads were washed with 15 ml lysis buffer lacking PMSF and FY, and bound proteins were eluted by cleavage with TEV protease for 1 hr at 16\u00b0C.\n\nStrains and plasmids used in this study are listed in Supplementary file 3.\n\n### In vitro prenylation of Rab GTPases\n\nRab\u2013GDI complexes were obtained from prenylation reactions (Thomas and Fromme, 2016). 10 \u03bcM Rab GTPase pre-loaded with GDP was incubated with 9 \u03bcM GDI, 1 \u03bcM Rab escort protein (REP) Mrs6, 1 \u03bcM geranylgeranyl transferase (Bet2-Bet4), and a sixfold excess of geranylgeranyl pyrophosphate in assay buffer (50 mM HEPES, pH 7.5, 150 mM NaCl, 2 mM MgCl2, 1 mM DTT) for 1 hr at 37\u00b0C. Mrs6 and Bet2-Bet4 fused to a His6 tag were removed by subsequent incubation of the reaction with Ni-NTA Agarose (Macherey-Nagel, Germany) for 1 hr at 4\u00b0C. The stoichiometric complex containing the prenylated Rab and GDI was isolated from the supernatant by size exclusion chromatography. The functionality of prenylated Rabs was tested in membrane association and tethering assays as described before with modifications (L\u00fcrick et al., 2017).\n\nFor membrane association and tethering assays, lipid films were evaporated by a SpeedVac (CHRIST, Germany) and resuspended in HEPES-KOAc (HK) buffer (50 mM HEPES, pH 7.4, and 120 mM KOAc). Liposomes as unilamellar vesicles were obtained by five freeze and thaw cycles in liquid nitrogen. For tethering assays, the 2 mM liposome suspension was extruded through polycarbonate filters (400\u00a0nm, 200\u00a0nm, and 100 nm pore size) using a hand extruder (Avanti Polar Lipids, Inc). To analyze the membrane association of mNeon-Ypt7, 50 pmole mNeon-Ypt7 complexed with GDI was incubated with 50 nmole liposomes (62 mol % POPC, 18 mol % POPE, 10 mol % POPS, 8 mol % ergosterol, 1 mol % DAG, and 1 mol % PI-3-P) in the presence or absence of GTP for 30 min at 27\u00b0C. Liposomes were sedimented by centrifugation for 20 min at 20,000 g. The fraction of membrane-bound mNeon-Ypt7 was determined by the fluorescent signal of the supernatant before and after sedimentation, which was quantified in a SpectraMax M3 fluorescence plate reader (Molecular Devices, Germany).\n\nFor analysis of HOPS-mediated tethering, liposomes containing 69 mol % POPC, 18 mol % POPE, 8 mol % ergosterol, 1 mol % DAG, 1 mol % ATTO488-DPPE, and 3 mol % DOGS-NTA or compensatory amounts of POPC were used. Ypt7 C-terminally fused to a His6 tag was loaded with GDP or GTP and afterwards targeted to liposomes via the lipid analogue DOGS-NTA (L\u00fcrick et al., 2017). Liposomes lacking DOGS-NTA were directly loaded with prenylated Ypt7. In this case, 50 pmole pYpt7:GDI complex was incubated with 50 nmole liposomes in the presence of GTP for 30 min at 27\u00b0C. For tethering reactions, 0.170 mM Ypt7-loaded liposomes were incubated with 50\u2013350 nM HOPS complex or buffer, respectively, for 10 min at 27\u00b0C. Liposomal clusters were sedimented for 5 min at 1,000 g. The fraction of tethered liposomes in the pellet was determined on the basis of the ATTO488 fluorescent signal in the supernatant before and after sedimentation, using a SpectraMax M3 fluorescence plate reader.\n\n### Coating graphene monolayer on substrates\n\nSilica-type substrates were used for coating with graphene monolayer. These include 1 \u00d7 1 cm2 silica-coated transducers for TIRFS-RIF detection and glass coverslips for microscopy imaging. Before coating, the substrates were cleaned by plasma cleaner (Femto plasma system, Diener electronic GmbH/Germany). Coating of graphene monolayer on substrate was based on the manufacturer\u2019s instruction. Briefly, the Easy Transfer Monolayer containing graphene monolayer with a thin protecting polymer film was cut into 0.5\u00a0\u00d7\u00a00.5 cm2 pieces. The obtained piece was slowly emerged into MilliQ water to float on top of water. The polymer-protected graphene monolayer was fished out by a clean glass coverslip or TIRFS-RIF transducer from below, resulting in face-to-face contact of graphene monolayer with the substrate. The obtained substrate was left drying at room temperature for 30 min, followed by heating in a 150\u00b0C oven for 2 hr. The hot substrate was taken out and immediately stored under vacuum for 24 hr for cooling down. With the protecting polymer film, the obtained graphene-coated substrate could be stored at ambient conditions for weeks. Immediately before the experiments, the graphene-coated substrate was incubated in acetone for 1 hr, sequentially in isopropanol for another 1 hr, to remove the protecting polymer film on graphene. By blow-drying with N2 stream, the graphene monolayer-coated substrate was ready for use.\n\n### Preparation of liposomes and formation of solid-supported membranes\n\nFor preparation of DOPC liposomes, 2.5 \u00b5mol DOPC was dissolved in chloroform in a 50 ml round bottom flask. For preparation of liposomes containing DOPC:DOPS (95:5 molar ratio), 2.4 \u00b5mol DOPC and 0.12 \u00b5mol DOPS dissolved in chloroform were mixed in a 50 ml round bottom flask. Similarly, a lipid mixture of 2.4 \u00b5mol DOPC and 0.125 \u00b5mol trisNTA-DODA was used for preparing liposomes of DOPC:trisNTA-DODA (95:5 molar ratio). Liposomes were prepared as small unilamellar vesicles (SUVs) by probe sonication as described before (Beutel et al., 2014). To form solid-supported membranes on glass coverslips, 800 \u00b5l of liposome solution was added on top of a freshly cleaned coverslip. After incubation at room temperature for 20 min, the coverslip was rinsed with excess HBS to remove free vesicles. For binding His-tagged proteins on solid-supported membranes of DOPC:trisNTA-DODA, conditioning of trisNTA-DODA was carried out by loading with Ni2+ ions. The coverslip was rinsed with 250 mM EDTA and 200 mM imidazole, sequentially. After incubation with 10 mM NiCl2 for 10 min, the coverslip was washed by HBS buffer and 200 mM imidazole to remove possible non-specifically bound Ni2+ ions.\n\n### Surface sensitive TIRFS-RIF detection\n\nA home-built set-up for simultaneous total internal reflection fluorescence spectroscopy (TIRFS) (Gavutis et al., 2006) and reflectance interference (RIF) detection (Piehler and Schreiber, 2001; Schmitt et al., 1997) has been described in detail before. For TIRFS-RIF detection of His-tagged protein binding, DOPC/trisNTA-DODA (95:5 molar ratio) was injected into the flow chamber to form lipid bilayers on silica substrate, or lipid monolayer on graphene. Alternatively, solution-assisted lipid deposition (SALD) was used for forming lipid monolayer on graphene, in which ethanol was added to HBS to obtain a final mixture of HBS:EtOH (90:10 v/v). Conditioning of trisNTA-DODA by Ni2+ ion loading follows the same protocol as in vitro by using the flow-through system in the TIRFS-RIF setup. On the Ni2+-loaded trisNTA-DODA/DOPC lipid mono-/bilayers, 1 \u00b5M NB-H6 was injected, followed by injections of 100 nM tagless mEGFP, HBS buffer rinsing and imidazole washing for surface regeneration. For direct immobilization of H6-mEGFP, 1 \u00b5M H6-mEGFP was injected followed by imidazole washing. Mass signals of protein binding and fluorescence signals were recorded simultaneously in RIF channel and TIRFS channel, respectively. The ratio of fluorescence intensity IG/I0 was normalized to the amount of immobilized mEGFP according to Equation (1).\n\n$$\n\\frac{I_{G}}{I_{0}\u00a0}=\u00a0(\\frac{m_{0}}{m_{G}\u00a0})(\\frac{I_{G_raw}}{I_{0_raw}\u00a0})\n$$\n\nwhere $m_{0}$ and\u00a0$\u00a0m_{G}$ are the mass signals of mEGFP immobilized on silica and graphene, respectively, and $I_{0_raw}$ and $I_{G_raw}\u00a0$\u00a0are the fluorescence intensities of mEGFP immobilized on silica and graphene, respectively.\n\nFor DNA hybridization, liposomes with 250 \u00b5M DOPC/DOPS (95:5 molar ratio) was injected to the surface of TIRFS-RIF transducer to form lipid layers on the solid support. Anchor strands with cholesterol\u00a0modification were injected for immobilization on the surface. Sequentially, probe strand labeled with FAM was injected for hybridization with the anchor strand. All DNA concentrations were 1 \u00b5M. The running buffer was HBS buffer containing 5 mM Mg2+ for DNA hybridization (HBS-Mg buffer, 20 mM HEPES, 150 mM NaCl, and 5 mM MgCl2, pH 7.5). Fluorescence ratio of IG/I0 was normalized to the amount of immobilized DNA according to Equation (1). For calibration experiments using OG488-DHPE, liposomes containing 250 \u00b5M DOPC mixed with 0.1% molar ratio OG488-DHPE was used. IG/I0 was obtained by normalizing to the mass signals according to Equation (1).\n\nBinding of Mon1-Ccz1 to lipid layers was probed as described before (Cabrera et al., 2014). 250 \u00b5M DOPC was injected to the substrates for formation of lipid monolayers on graphene or lipid bilayers on silica, respectively, followed by injection of 100 nM Mon1-Ccz1.\n\n### Electromagnetic simulation of GIET\n\nFor simulating the electrodynamic coupling of the excited fluorophore to graphene, the excited fluorophore was treated as an ideal electric dipole emitter and the graphene as a layer of matter with specific thickness and (complex-valued) bulk refractive index as described before (Ghosh et al., 2019). Solving Maxwell\u2019s equations of such a system leads to an expression for the emission power, S(\u03b8, d), of the electric dipole emitter as a function of dipole distance d and orientation (described by the angle \u03b8 between the dipole axis and the vertical axis) to the substrate. Considering the flexible linker and rapid rotation of the fluorophore in biomolecules, S(\u03b8, d) was averaged over random orientations as a simplified S(d). The relative fluorescence lifetime (\u03c4G/\u03c40) was calculated as:\n\n$$\n\\frac{\\tau_{G}}{\\tau_{0}\u00a0}=\\frac{S_{0}}{\u27ee1\u2212\u03d5\u27efS_{0}+\u03d5S\u27eed\u27ef}\n$$\n\nwhere \u03d5 is the quantum yield (QY), \u03c40 is the free-space lifetime in the absence of GIET, S0 is the free-space emission power of an ideal electric dipole emitter,\u00a0$S_{0}=cnk_{0}^{4}p^{2}/3$,\u00a0with c being the vacuum speed of light, k0is\u00a0the wave vector in vacuum, n is\u00a0the refractive index of water (n\u00a0=\u00a01.33), and p is\u00a0the amplitude of the dipole moment vector.\n\nThe \u03c4G/\u03c40 as a function of distance d was calculated for the following geometry: glass substrate (n\u00a0=\u00a01.52) covered with single sheet graphene (thickness\u00a0=\u00a00.34 nm, n\u00a0=\u00a02.76 + 1.40i for emission at 670 nm, or n\u00a0=\u00a02.68 + 1.21i for emission at 520 nm) coated with lipid monolayer (n\u00a0=\u00a01.44, thickness\u00a0=\u00a02.5 nm), topped with water (n\u00a0=\u00a01.33). The emission maximum, QY, and \u03c40 of the fluorophores were: FAM (518 nm, 0.75, 3.0 ns), EGFP (507 nm, 0.60, 2.1 ns), mNeonGreen (517 nm, 0.80, 2.8 ns), and Dy647P1 (667 nm, 0.27, 1.3 ns). The emission maximum and QY were taken from the literature (Mujumdar et al., 1993; Shaner et al., 2013; Zhang et al., 2014), values of \u03c40 were measured on glass-supported lipid bilayer in this work. Results of distance dependency and sensitivity analysis are summarized in Figure 2\u2014figure supplement 2. In the absence of static quenching, fluorescence intensity of fluorophore is proportional to its lifetime. Thus the relative fluorescence intensity follows the same theoretical prediction based on Equation (2).\n\n### Validation of distance-dependent GIET by DNA nanorulers\n\nTo calibrate the distance-dependent GIET, the measured intensity ratios and lifetime ratios of DNA nanorulers need to be plotted vs the vertical distance of the FAM dye above graphene. The vertical distance d was calculated by considering tilting of the DNA strands on surface (Wong and Pettitt, 2004):\n\n$$\nd=l_{DNA}*sin\\alpha+l_{ML}\n$$\n\nwhere $l_{DNA}$ is the end-to-end length of FAM dye on the hybridized probe strand to the 3\u00b4 end of the anchor strand. $l_{DNA}$ = 1.7, 5.1, 6.8, 8.5, 10.2, 11.9, and 17.0 nm. It is set as 0 nm for OG488-DHPE. $\\alpha$ is the tilting angle between DNA and graphene surface. $l_{ML}$ = 2.5 nm, is the thickness of lipid monolayer on graphene. The anchor DNA strands were modified with a cholesterol at 3\u00b4 end via a tri-ethylene glycol phosphate linker (\u2018Spacer 9\u2019 of Integrated DNA Technologies, Inc). A full integration of the anchoring group into the phospholipid monolayer was assumed. Using the \u2018lsqcurvefit\u2019 function in Matlab, a global fitting of the intensity or lifetime ratios vs d to the simulated GIET curve of FAM yielded $\\alpha$ of 42\u00b0 (intensity) or 44\u00b0 (lifetime).\n\n### Confocal laser-scanning microscopy and lifetime measurements\n\nLifetime measurements were carried out on a confocal laser-scanning microscope (FluoView 1000, Olympus) equipped with a FLIM/FCS upgrade kit from PicoQuant using a 60\u00d7 (NA 1.2) water-immersion objective (UPLSAPO, Olympus). EGFP/mNeonGreen was excited either by the 488 nm line of an argon laser (Olympus) for cLSM/FRAP or by a picosecond pulsed 485 nm laser diode at 40 MHz repetition rate (LDH-D-C-485, Picoquant). Time-correlated single photon counting (TCSPC) was performed using the TCSPC module PicoHarp 300 (PicoQuant together with a picosecond laser driver Sepia II (PicoQuant) and a single photon avalanche detector (PicoQuant)). Emission photons were filtered by a 500\u2013550 nm bandpass filter (BrightLine HC 525/50, Semrock). TCSPC was acquired using point measurement or image mode (i.e. FLIM mode). Acquisition time was more than 90 s to obtain\u00a0>105 counts per sample for robust lifetime analyses. If not mentioned elsewhere, the TCSPC histograms were tail-fit with mono-exponential decay function using SymPhoTime64 integrated in the PicoQuant system. Only for mNeon-Ypt7 on graphene, the TCSPC histograms were fit with bi-exponential decay functions by fixing one component to the obtained average lifetime of mNeon-Ypt7 on glass (<15%).\n\n### Fluorescence lifetime and FRAP of DNA strands\n\n800 \u00b5l 250 \u00b5M DOPC/DOPS (95:5 molar ratio) was added on top of graphene-coated glass coverslips. After incubation at room temperature for 5 min, the coverslips were washed for 5 times with 1 ml HBS-Mg buffer. The cholesterol-modified ssDNA anchor strands were added in the solution with a final concentration of 200 nM. After 5 min incubation, excess anchor strands were removed by washing\u00a0for\u00a05 times with HBS-Mg buffer. Probe strands of FAM-labeled ssDNA were added with a final concentration of 200 nM. After 5 min incubation, excess probe strands were removed by washing\u00a0for\u00a010 times with HBS buffer. For fluorescence lifetime measurements, a final concentration of 10 \u00b5M EDTA was added to the solution for preventing possible metal ion-mediated fluorescence quenching. TCSPC was acquired by point measurement mode. Lifetimes were obtained by monoexponential fitting of TCSPC curves. For FRAP experiments of DNA strands, a region of interest (ROI) was placed in areas with and without graphene, respectively.\n\nIn FRAP experiments of DNA strands, a circular region of interest (ROI) with a radius of 10 \u03bcm was selected. Five pre-bleach images were recorded before the ROI was illuminated by 405 nm in 10 s. A background signal $I_{BG}$ was recorded from the center of the ROI immediately after photobleaching. Fluorescence recovery was monitored at a time resolution of 0.8 s for glass or 3.2 s for graphene. The fluorescence intensity in the ROI ($I_{ROI}$) was obtained by subtracting the background. A reference region outside the photobleached ROI was processed in the same way to obtain $I_{REF}$. ROI intensity was normalized to the reference ($I_{ROI}/I_{REF}$) for each time interval using Equation (4):\n\n$$\n\\frac{I_{ROI}}{I_{REF}}=\u00a0\\frac{I_{ROI_inside}\u2212I_{BG}}{I_{ROI_outside}\u2212I_{BG}}\n$$\n\nwhere $I_{BG}$ is the background signal, $I_{ROI_inside}$ is the fluorescence intensity within the ROI, and $I_{ROI_outside}$ is the intensity outside the photobleaching ROI. Plotting $I_{ROI}/I_{REF}$ vs time yields the time-lapse FRAP curve.\n\n### FLIM and FRAP of mNeon-pYpt7 and yEGFP-fused HOPS\n\nGraphene-coated glass coverslips were incubated with 800 \u00b5l DOPC and washed as described above. Membrane association of 200 nM prenylated mNeon-Ypt7 or 150 nM prenylated Ypt7 complexed with GDI was conducted in the presence of 20 mM EDTA, pH 8.0 and 1 mM GTP for 30 min at 30\u00b0C. The loading reaction was stopped by addition of 25 mM MgCl2 and incubation for 10 min at room temperature. The coverslip was washed extensively with HBS (>15 times) to remove excess EDTA and Mg2+ ions. Where indicated, 100 nM Mon1-Ccz1 or HOPS were added to mNeon-pYpt7-GTP-loaded membranes for 5 min at room temperature. Before fluorescence lifetime determination, the unbound complexes in solution were removed by washing\u00a0for\u00a08 times with HBS. For loading of HOPS complexes containing yEGFP-fused subunits on membranes, 50 nM HOPS carrying one subunit (Vps39, Vps11, Vps18, Vps33 or Vps16) fused to yEGFP was added to pYpt7-GTP-loaded membranes for 5 min at room temperature. Before fluorescence lifetime determination, the coverslip was washed 5 times with HBS to remove unbound HOPS in solution. Fluorescent lifetimes of mNeon and yEGFP, respectively, were determined by TCSPC acquired in image mode (FLIM). Fluorescence lifetime ratios were determined based on lifetimes obtained on graphene and glass, respectively, and the distance from the graphene surface d were calculated based on the calibration curve (Supplementary file 2). The distances from the monolayer surface h were calculated from d by subtracting the thickness of lipid monolayer (2.5 nm).\n\nFor FRAP experiments of mNeon-pYpt7-GTP and mNeon-pYpt7-GTP in complex with Mon1-Ccz1 and HOPS, respectively, a ROI with a radius of 7.5 \u00b5m was illuminated with a 405 nm laser for 8.2 s. The fluorescence recovery was monitored for 72 s at a time resolution of 1.8 s (excitation: 488 nm). The $I_{ROI}/I_{REF}\u00a0$\u00a0for each time interval was obtained using Equation (4) as described above. All FRAP experiments were carried out at room temperature.\n\n### Single-molecule fluorescence microscopy\n\nSingle-molecule imaging experiments were conducted by total internal reflection fluorescence (TIRF) microscopy with an inverted microscope (Olympus IX71) equipped with a triple-line total internal reflection (TIR) illumination condenser (Olympus) and a back-illuminated electron multiplying (EM) CCD camera (iXon DU897D, Andor Technology) as described before (Wilmes et al., 2020). A 150\u00a0\u00d7\u00a0magnification objective (UAPO 150\u00d7/NA 1.45 TIRFM, Olympus) was used for TIR illumination resulting in an image pixel size of 107 nm. Image acquisition was performed at 30 frames per second using an exposure time of 32 ms per frame. All experiments were carried out at room temperature in presence of oxygen scavenger, that\u00a0is 0.5 mg/ml glucose oxidase, 0.04 mg/ml catalase, 5% w/v glucose. 150 nM pYpt7-GTP was loaded onto glass-supported lipid bilayers and graphene-supported lipid monolayers for 30 min at 30\u00b0C. 50 nM HOPS with Vps33 or Vps11 fused to yEGFP was added in solution, respectively, followed by 10 times buffer washing. To ensure reliable single-molecule detection, 50 pM of dye-labeled NB was used to label the yEGFP-fused HOPS complex. The typical density of NB-labeled HOPS was\u00a0~0.2\u20131 molecule/\u00b5m2.\n\n### Single-molecule photobleaching\n\nPhotobleaching steps were counted manually from time-lapse single-molecule intensity traces as before\u00a0(Wedeking et al., 2015b). The single-molecule intensity traces were obtained by using ImageJ software, in which a 5\u00a0\u00d7\u00a05 pixel region of interest (sROI) was used for cropping individual molecules. More than 100 intensity traces were screened for counting the discrete steps for each sample (Figure 5\u2014figure supplement 1).\n\n### Single-molecule intensity analysis and hidden Markov modeling\n\nSingle emitters in time-lapse TIRFM images were localized via a 2D Gaussian mask (Arnauld et al., 2008; Thompson et al., 2002). Intensity-time traces were built by grouping localizations within a 150 nm search radius of each other with a minimum observation time of 100 frames as described before (Niewidok et al., 2018). In order to exclude crosstalk between traces only identified immobilization events with a minimum center-to-center distance of 500 nm apart were selected for further analysis. Individual traces were initially analyzed and evaluated for goodness-of-fit using the step transition and state identification (STaSI) algorithm (Shuang et al., 2014; Wedeking et al., 2015b). The best fitting 33% of these traces were used to estimate optimal initial values (initial state distribution, transition matrix and state emission functions) for subsequent training of a Hidden Markov Model (HMM) with Gaussian state emissions (Rabiner, 1989). To the end, the most probable state sequence (Viterbi path) was calculated for each trace by assigning a state to each single-molecule localization. The relative state occupations were calculated as the number of localizations classified into the specific state with respect to all observations. State transition rates were calculated by estimating the dwell time of each state using a mono-exponential fit of identified state segments as well as the number of observed state transitions according to the method described before (Yang et al., 2018). The state definition, occupancy and transition rates were summarized in Supplementary file 4.\n\n### Axial localization precision of smGIET\n\nThe axial localization precision of smGIET was determined by comparing the root mean square deviation (RMSD) with the mean intensity of individual molecules. To avoid intensity fluctuations on graphene due to GIET, RMSD and mean intensities were quantified based on single-molecule detections on glass coverslips (Figure 5\u2014figure supplement 3). For intensities in the range of 300\u2013700 a.u., the obtained ratios of RMSD to mean were very similar (Supplementary file 5). Based on the ratios, a relative error of 7.5 \u00b1 0.5% was obtained for single-molecule detections. The axial localization precision depends on IG/I0, which has a propagated relative error of $\\sqrt{2}$ \u00d7 7.5%\u00a0=\u00a010.6%. Thus, the relative single-molecule axial localization precision was 10.6% of the corresponding distance. Given the sensitive range of GIET in 3\u201330 nm, the corresponding axial precision is in the range of 0.3\u20133 nm.\n\n### Data and materials availability\n\nAll data needed to evaluate the conclusions in the paper are present in the paper and/or the Supplementary Materials. Additional data related to this paper may be requested from the authors.\n",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "01c6e46f-ad17-48e5-9862-53a15698076c",
+      "submission_id": "e42dda93-c2e5-456e-9b12-ee0738d4efb5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Felix Campelo, The Barcelona Institute of Science and Technology Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62501.sa1](https://doi.org/10.7554/eLife.62501.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors use graphene-induced energy transfer as a unique spectroscopic ruler to reveal the axial orientation and dynamics of macromolecular complexes in biological membranes with sub-nanometer resolution. This development is a very significant contribution that can help in future mechanistic studies of numerous key biological processes. To illustrate this approach, the authors determine the orientation of the Rab7-like GTPase Ypt7 and of the multi-protein HOPS tethering complex at a lipid monolayer surface.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Nanoscopic anatomy of dynamic multi-protein complexes at membranes resolved by graphene induced energy transfer\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Felix Campelo as Reviewing Editor and Jos\u00e9 Faraldo-G\u00f3mez as Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Volker Kiessling (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and with the Reviewing Editor. Based on these discussions, we have concluded that a revised version of your manuscript might be suitable for publication in eLife. The Editors has drafted this decision letter to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either (a) include the new data, if this is possible; otherwise, (b) limit claims to those supported by data in hand; or (c) explicitly state that the relevant conclusions require additional supporting data. In the latter case, our expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary\n\nThe authors use GIET as a unique spectroscopic ruler to reveal the axial orientation and dynamics of macromolecular complexes at biological membranes with sub nanometer resolution, which is a very significant contribution that can help in the future mechanistic understanding of numerous key biological processes. GIET is based on the fluorescence quenching in close proximity to a graphene surface. The system is calibrated by utilizing \"DNA nanorulers\" of different length and with fluorescent labels at different specific positions. Measuring the fluorescence intensities and fluorescence lifetimes relative to unquenched samples. The calibrated system was then used to determine the orientation of the Rab7-like GTPase Ypt7 and of the multiprotein HOPS tethering complex at a lipid monolayer surface. The normal distances of specific residues to the monolayer surface are determined in ensemble measurements and the transition between three distinguishable conformations are measured in single molecule imaging experiments.\n\nAll three reviewers highlighted the importance and the quality of the research presented in this manuscript. However, the reviewers also raised important questions and concerns, detailed below, which must be satisfactorily addressed before the manuscript can be accepted for publication. Given that this manuscript is being considered for a \"Tools and Resources\" article, it will be crucial for the authors to carefully address the reviewers' comments to further establish the validity and scope of the methodology and the clarity of the manuscript.\n\nIn particular, it will be important to fully clarify the results shown in Figure 2 (distance calibration with the nanorulers), in the context of reviewer #2 comments. It will also be important that the authors discuss in more detail the limitations of their technique and the expected errors in the measurements. The authors are also very strongly encouraged to perform the additional control experiments suggested by the reviewers, which appear relatively straightforward and not very time-consuming, as they would greatly strengthen the significance and impact of the study.\n\nEssential revisions\n\nReviewer #1:\n\nNadia Fuellbrunn and co-workers present their work about a new fluorescence method to determine the conformation and its dynamic of protein complexes by measuring the normal distance of site-specific fluorophores relative to a lipid monolayer. The graphene induced energy transfer (GIET) assay is based on the fluorescence quenching in close proximity to a graphene surface. The system is calibrated by utilizing \"DNA nanorulers\" of different length and with fluorescent labels at different specific positions. Measuring the fluorescence intensities and fluorescence lifetimes relative to unquenched samples. The calibrated system was then used to determine the orientation of the Rab7-like GTPase Ypt7 and of the multiprotein HOPS tethering complex at a lipid monolayer surface. Both proteins are part of the yeast vacuolar fusion and tethering machinery. The normal distances of specific residues to the monolayer surface are determined in ensemble measurements and the transition between three distinguishable conformations are measured in single molecule imaging experiments.\n\nThe authors present a very nice and useful new method with a lot of potential in particular if it could be used to follow conformational changes of membrane proteins. The approach of measuring the normal distance of site-specific labeled residues is very similar to the method of site-specific fluorescence interference microscopy (sdFLIC, e.g. Nature structural and molecular biology 25 (10), 911), where the conformation of SNARE proteins reconstituted in supported membranes had been investigated. Although the overall strategy seems very similar, sdFLIC hasn't been mentioned in the Introduction where the authors discuss several methods by which protein conformations in membranes can be investigated.\n\nThe authors clearly show the usefulness of this new method especially in the dynamic measurements on single molecules. However, there are a couple of open questions and issues that should be addressed and clarified:\n\nA lipid monolayer is not a membrane and the authors should be clear and consistent in their writing in the whole manuscript (e.g. \u201c\u2026nanometer sensitivity of quantifying the axial position of membrane-bound proteins by GIET, 215.how the functional complex is organized on membranes,\u2026\u201d). Proteins are not reconstituted into a membrane on graphene. The fact that the HOPS complex clusters in a diffusible membrane shows that this situation (and potentially the conformation) is very different from the one at the monolayer. This raises another question. Is it justifiable to use the membrane system to measure the unquenched intensities/lifetimes to normalize the monolayer data? Shouldn't this be done on a monolayer too?\n\nA thorough and extensive error discussion is missing. Since this work is presented as a first application of this method, a detailed discussion and quantification of all error sources (statistical and systematic) is necessary. One would expect these errors to be different for distance changes of one fluorophore compared to the errors of absolute distances.\n\nThe data points in the calibration Figure 2B are already deviating from the fit curve especially in the range between 3 and 8 nm. This should be quantified and reported. Wouldn't this be a minimum systematic error? The deviation looks systematic, so there might be something missing in the theory? Could a fluorescein labeled lipid be used to determine the 0 nm (2.5 nm from graphene) point in the calibration curve?\n\nRelated to the previous point. Without error discussion can the absolute distances really be reported with \u00c5 accuracy as in Figures 3 and 4.\n\nCould some of the observed distance changes be due to orientation changes of the dipole? The theoretical curve assumes isotropic orientation. Is this justified under all conditions (different conformations, binding of HOPS to Ypt7)?\n\nIn ensemble experiments where a distance change upon binding of a ligand is observed like in Figure 2D or in Figure 3G, the authors should show the specificity and concentration dependence of the result. Titrating the ligand should confirm that the reaction and with that the observed distance changes are in saturation. A comparison with a non-specific membrane binding protein or protein domain should confirm the specificity of the observed distance change on pYpt7.\n\nRelated to this issue: How reproducible are the pYpt7 densities in the monolayer or membrane? If ligand binding is in saturation small density differences might not matter, but the authors should show that.\n\nFigure 3\u2014figure supplement 4 shows that the measured lifetimes of mNeon-pYpt7 in membranes on glass are split into two populations. This is not discussed, and it looks like the mean value of the two components was used to normalize the graphene data. The graphene data either doesn't show or resolve different populations on a monolayer.\n\nSimilar to the glass data above, the graphene data of Vps33-yEGFP in Figure 4\u2014figure supplement 2 shows two populations (possibly even Vps39). The mean of the two doesn't seem to represent any data points but it was used for the result. Please comment and discuss.\n\nThe statistics of the results are not clear. How many measurements were performed per sample, how many independently prepared samples were used?\n\nReviewer #2:\n\nThis is a well-written and comprehensive manuscript describing a novel methodological approach to probe axial organization of proteins labeled with fluorescence dyes in the nanometer range and in the context of membranes. For this, the authors developed a lipid monolayer assembly on graphene for site-specific protein capturing. Graphene-induced energy transfer (GIET) was adapted by replacing metal with graphene, an optical transparent material. GIET has advantages analogous to FRET as well as TIRF, such as a strong distance dependence and the ability to measure nanometer-range distances. The specific properties of graphene lead to a ~30 nm axial resolution, according to the author's calculations. The authors first validated GIET's ability to measure distance within a dynamic range of 25 nm on graphene-supported lipid monolayers using DNA oligonucleotides as a nanoscale ruler. The authors applied this approach to dissecting the axial organization and dynamics of HOPS-mediated large multi-protein complex regulated by Rab7-like Ypt7, involved in vesicular transport and fusion.\n\nStrengths of this manuscript are the comprehensive nature of the methodological approach described. The authors provide validation of GMIET distance-based measurements. The authors indicate that HOPS complex adopts an upright orientation on membranes with interesting axial dynamics. Their results introduce GIET to significant biological problems as a powerful technique to characterize nanoscale spatiotemporal organization of multi protein complexes at membranes. Another strength of this paper is the ability to use GIET distance measurements to monitor conformational transitions dynamics, e.g. \"breathing\" of the HOPS complex.\n\nWeaknesses are inherent to the probing of higher-order complexes at membranes using a complex methodology like GMIET, which requires taking those complexes out of their biological membrane background for the analysis. In fact, that contradiction reveals itself in the Introduction, where the authors first mention that \"mechanistic understanding of large membrane protein complexes has been addressed by techniques [\u2026] that [\u2026] take them out of their biological membrane context\". Later the authors similarly propose to use distance dependent fluorescence quenching by graphene as a novel technique to quantify the axial organization and dynamics of large membrane protein complexes upon taking them out of their native membrane context. It would be good for the authors to accept that their methodology does indeed provide an improvement in the ability to provide spatiotemporal solution in the 20-30nm but still works within a reconstructed system framework that as some of the other experimental approaches that the authors criticize, attempts to reconstruct large membrane complexes in an artificial lipid monolayer and thus out of their native environment and thus out of context.\n\nNevertheless, this is a tour de force by the authors to completely reconstruct the HOPS-complex regulated by Rab7-like Ypt7, to highlight the value of the GIET technique to measure distances between fluorophore and graphene layer.\n\nA few comments should be addressed:\n\n\u2013 Figure 2 is the core of the paper and the ability to validate the distances of the ssDNA designed as nanorulers sustains all the remaining results. If the results in Figure 2 are questionable, then all other results would be problematic. So, it is important to question why the authors need to include undefined parameters to match their results to the ground truth distance measurements provided by the DNA nanoruler system. The consideration of the tilting parameter is unfortunate and would be important to find a system in which ground truth can be measured without data processing and calculation to match model to experimental data.\n\n\u2013 Also is not clear why the authors rely on the ratio between the measurements generated from graphene vs silica layers?\n\nThere should be a theoretical explanation for these statements:\n\n\u2013 \"Strikingly, the obtained correlation of IG/I0 vs d matches the predicted GIET curve well with a globally fitted tilting angle of (43 \u00b11)o (Figure 2B), confirming the distance-dependent GIET on graphene-supported lipid monolayer.\"\n\n\u2013 \"Ratios of fluorescence lifetimes on graphene (\u03c4G) to those on glass (\u03c40) closely matched the corresponding intensity ratios, which also confirmed the simulated distance dependent GIET efficiency (Figure 2B, Supplementary file 1C)\".\n\n\u2013 Similarly, for longer distances >10nm it would be important to have a DNA ruler than could directly be measured as ground truth using GIET on graphene-supported lipid monolayer without needing comparison with silica substrate measurements.\n\n\u2013 Also it is interesting that a similar angle of 45o is found for calibration curve as well as for the measurements of 35mer DNA nanoruler: \"Comparing to the length of the 35mer DNA nanoruler (11.9 nm), the height corresponds to a tilting angle \u03b1 = 45{degree sign}, which is in good agreement with the tilting angle \u03b1 obtained for the calibration.\" Is there an explanation for this finding/coincidence?\n\nReviewer #3:\n\nIn brief, this work highlights GIET as a unique spectroscopic ruler to reveal the axial orientation and dynamics of macromolecular complexes at biological membranes with sub nanometer resolution, which is a very significant contribution to the mechanistic understanding of numerous key biological processes.\n\nSurface plasmon enhancement of electromagnetic field on metals, semiconductors and graphene has been implemented in various biosensing applications, covering a spectral region from UV-visible to IR. Comparing to the broad applications of surface enhancement, the nearfield radiationless electromagnetic coupling between the surface plasmon and excited fluorephores is less harnessed for biosensing. The situation is changing. Metal induced energy transfer (MIET) and graphene-based MIET (equivalent to \u201cGIET\u201d of graphene induced energy transfer) have emerged recently. In this manuscript, Fullbrunn et al. have set up the first step of using GIET in the field of protein structural biology. In contrast of detecting the structures of DNA origami or likely robust antibody-based biomolecular analysis, the current work draws a high standard by using lipidated membrane association protein and a tricky multiprotein complex. The authors' strategy is straightforward which achieved their goals efficiently: biofunctionalizing graphene on glass, validating the distance dependent GIET, and determining the structure of protein complexes. With the interdisciplinary expertise, the authors successfully used GIET as a spectroscopic ruler mapping the axial distance of the ~20 nm long HOPS complex on graphene. Very impressively, the structural dynamics of HOPS complexes was quantified by single molecule GIET on graphene-coated microscopy coverslips. I found this research was very well designed and carried out carefully. The manuscript was written in a good logical flow. The conclusions were supported by sufficient figures, tables and their supplementary.\n\nThe longer sensitive range of GIET than FRET is indeed very suitable to obtain the structural overview of many extended proteins. As demonstrated in this work, GIET could be a powerful tool for determining the structure of membrane proteins. However, being a surface plasmon-based method, GIET is limited by immobilizing target proteins on the surface. From this aspect, one must point out GIET is not as feasible as FRET for applications in solution. Another disadvantage of the current method is that the coating on graphene is a non-fluidic lipid monolayer (See FRAP experiments in subsection \u201cAxial reorganization at the lipid monolayer surface can be quantified by GIET\u201d and Figure 2\u2014figure supplement 5, Figure 3\u2014figure supplement 4). The authors has noticed in the conclusions \u201cGIET will allow to dissect.\u2026 large protein complexes on membranes upon interaction with membrane-bound ligands, and thus test molecular hypotheses in real time\u201d. Actually, instead of considering \u201cinteraction of membrane-bound ligands\u201d, surface architectures of fluidic lipid bilayer will be urgently needed for the applications of a large number of biologically important transmembrane proteins.\n",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2e394ea9-8193-4176-938d-07ec8cf4eb77",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C1",
+      "claim": "Approximately one-third of the proteome in animals is localized at the various membranes of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals, approximately one-third of the proteome is localized at the various membranes of the cell, while more than 50% of the currently available pharmaceuticals target membrane proteins (Santos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Santos et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "722059ec-830d-40e4-a97b-cd18c69f86db",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C2",
+      "claim": "More than 50% of currently available pharmaceuticals target membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals, approximately one-third of the proteome is localized at the various membranes of the cell, while more than 50% of the currently available pharmaceuticals target membrane proteins (Santos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Santos et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "01e6145f-df42-46b4-b26a-d154cae01f26",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C3",
+      "claim": "Single-molecule FRET has a limited dynamic range covering less than 10 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with its limited dynamic range covering <10 nm as well as the need to introduce both donor and acceptor dyes with high fidelity and efficiency often obstructs its application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about FRET limitations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "bec3dd1c-bc7a-4657-afb6-d7dbc15061d2",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C4",
+      "claim": "Single-molecule localization microscopy is limited by axial localization precision of approximately 10 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule localization microscopy in turn is limited by axial localization precision of ~10 nm (Gwosch et al., 2020; Schmidt et al., 2008; Shtengel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gwosch et al., 2020; Schmidt et al., 2008; Shtengel et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "d0df23f9-24df-470e-affb-25428e579fe8",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C6",
+      "claim": "Graphene has an atomic thickness that ensures high optical transparency.",
+      "claim_type": "EXPLICIT",
+      "source": "The atomic thickness of graphene ensures high optical transparency and an extremely high confinement of plasmons (106 times the diffraction limit) (Koppens et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koppens et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "24c5179d-c7ba-4301-92ed-3745e30b5723",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C7",
+      "claim": "Graphene provides an extremely high confinement of plasmons (10^6 times the diffraction limit).",
+      "claim_type": "EXPLICIT",
+      "source": "The atomic thickness of graphene ensures high optical transparency and an extremely high confinement of plasmons (106 times the diffraction limit) (Koppens et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koppens et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "e1f44298-e0f7-4bde-b43b-3fbbda0c88d6",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C8",
+      "claim": "Metal-induced energy transfer (MIET) has a dynamic range that extends over a distance of approximately 150 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to metal-induced energy transfer (MIET) (Chizhik et al., 2014), with a dynamic range that extends over a distance of ~150 nm, graphene-induced energy transfer (GIET) occurs within a dynamic range of ~30 nm, thus covering the dimensions of large membrane protein complexes (Ghosh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chizhik et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "2acf475c-6666-4ef6-a3b0-a7676d8d070e",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C9",
+      "claim": "Graphene-induced energy transfer (GIET) occurs within a dynamic range of approximately 30 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to metal-induced energy transfer (MIET) (Chizhik et al., 2014), with a dynamic range that extends over a distance of ~150 nm, graphene-induced energy transfer (GIET) occurs within a dynamic range of ~30 nm, thus covering the dimensions of large membrane protein complexes (Ghosh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ghosh et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "e554b581-2c54-4ec2-9d98-a823e9d70cde",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C10",
+      "claim": "A mass signal of lipid deposition on graphene of 2.5 ng/mm\u00b2 was observed after washing out excess vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "A mass signal of lipid deposition on graphene of 2.5 ng/mm\u00b2 was observed after washing out excess vesicles (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by TIRFS-RIF detection as shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "11628bd9-e364-41fc-b445-f5816fec2a4f",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C11",
+      "claim": "For trisNTA-functionalized lipid bilayer formation by vesicle fusion on a silica surface, a lipid deposition of 5 ng/mm\u00b2 was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "For trisNTA-functionalized lipid bilayer formation by vesicle fusion on a silica surface, which has been previously established for protein interaction analysis at membranes (Beutel et al., 2014; Gavutis et al., 2005; Lata et al., 2006), a lipid deposition of 5 ng/mm\u00b2 was observed (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by TIRFS-RIF detection as shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "4387a34d-c0c5-4ad1-87eb-79a9e18eee85",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C12",
+      "claim": "The lipid deposition measurements confirmed formation of a lipid monolayer on the hydrophobic graphene surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed formation of a lipid monolayer on the hydrophobic graphene surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of lipid deposition on graphene (2.5 ng/mm\u00b2) versus silica (5 ng/mm\u00b2)",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "a618aa25-d57a-4193-b69c-0d97dcef26c7",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C13",
+      "claim": "GIET efficiency for mEGFP bound to NB-H6 on graphene was 83.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the mEGFP fluorescence signal observed on graphene (IG) to that on the silica substrate (I0) confirmed strong quenching by GIET with an efficiency of 83.6% for mEGFP bound to NB-H6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from fluorescence intensity measurements on graphene versus silica",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "21b3f5c7-796b-4bf2-9e8c-d3c726a70f79",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C14",
+      "claim": "Direct immobilization of H6-tagged mEGFP on graphene resulted in GIET efficiency of 92.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct immobilization of H6-tagged mEGFP on graphene resulted into even stronger GIET (Figure 1D) with an efficiency of 92.4%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from fluorescence intensity measurements shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "281068d4-5c34-4e67-813d-877bc2917510",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C15",
+      "claim": "The size of the anti-GFP nanobody is approximately 2 nm based on the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "As the size of NB is ~2 nm based on the crystal structure (Kirchhofer et al., 2010), these results highlight that GIET can reveal nanoscale distances of proteins immobilized on a graphene-supported lipid monolayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on crystal structure from Kirchhofer et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "dcaa22f8-969a-4308-b188-da5967f7be4f",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C16",
+      "claim": "GIET can reveal nanoscale distances of proteins immobilized on a graphene-supported lipid monolayer.",
+      "claim_type": "EXPLICIT",
+      "source": "As the size of NB is ~2 nm based on the crystal structure (Kirchhofer et al., 2010), these results highlight that GIET can reveal nanoscale distances of proteins immobilized on a graphene-supported lipid monolayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the ability to detect the ~2 nm difference between direct and NB-mediated mEGFP binding",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "9a395348-261d-4806-9a55-73b5ecfe7195",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C17",
+      "claim": "DNA nanorulers with 20mer, 25mer, 35mer, and 50mer nucleotides were designed as scaffolds for calibration.",
+      "claim_type": "EXPLICIT",
+      "source": "Four single strand DNA (ssDNA) with 20mer, 25mer, 35mer, and 50mer nucleotides were designed as the scaffold of nanorulers (Figure 2A, DNA sequences in Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental design described in text and shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "59421a30-aa4f-42f5-842c-ef53eea8b6b1",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C18",
+      "claim": "The DNA nanorulers share a common 20mer sequence at the 5\u00b4-end and cholesterol modification at the 3\u00b4-end for anchoring into the lipid monolayer.",
+      "claim_type": "EXPLICIT",
+      "source": "These ssDNAs share a common 20mer sequence at the 5\u00b4-end and cholesterol modification at the 3\u00b4-end for anchoring into the lipid monolayer (Johnson-Buck et al., 2014) (anchor strand).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Design based on approach from Johnson-Buck et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "5406c52f-7ef3-4379-9163-bb542641388e",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C19",
+      "claim": "5% negatively charged DOPS was incorporated into the DOPC matrix to promote perpendicular orientation of oligonucleotides by electrostatic repulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "To promote, by electrostatic repulsion, perpendicular orientation of oligonucleotides with respect to lipid layer, 5% negatively charged 1,2-di-(9Z-octadecenoyl)-sn-glycero-3-phospho-L-serine (DOPS) was incorporated into the DOPC matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental design to control DNA orientation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "f9bb7a25-3980-48a0-8329-1b4f24ba6b54",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C20",
+      "claim": "The obtained correlation of IG/I0 vs d matches the predicted GIET curve well with a globally fitted tilting angle of (43 \u00b1 1)\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the obtained correlation of IG/I0 vs d matches the predicted GIET curve well with a globally fitted tilting angle of (43 \u00b1 1)\u00b0 (Figure 2B), confirming the distance-dependent GIET on graphene-supported lipid monolayer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Obtained from fitting experimental data to theoretical model as shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "b63bf9ce-c0da-4b02-b13b-511840ca284d",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C21",
+      "claim": "GIET has a dynamic range within 3\u201325 nm corresponding to changes in GIET efficiency from 93\u201315%.",
+      "claim_type": "EXPLICIT",
+      "source": "Results of both intensity and lifetime measurements showed a dynamic range within 3\u201325 nm corresponding to changes in GIET efficiency from 93\u201315%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined from DNA nanoruler calibration experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "ddc5956e-bb10-44ee-9746-d5510f1e6af6",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C22",
+      "claim": "A significant difference was detected for nanorulers between 35\u20135\u00b4F and 35\u20133\u00b4F, confirming that GIET is robust for detecting distance changes of approximately 1.2 nm between 6 nm and 11 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant difference was detected for nanorulers between 35\u20135\u00b4F and 35\u20133\u00b4F, confirming that GIET is robust for detecting distance changes of ~1.2 nm between 6 nm and 11 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing two DNA nanoruler configurations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "7c59be89-e7a0-480d-8c8a-3ea5c14b6176",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C23",
+      "claim": "Ratios of fluorescence lifetimes on graphene (\u03c4G) to those on glass (\u03c40) closely matched the corresponding intensity ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "Ratios of fluorescence lifetimes on graphene (\u03c4G) to those on glass (\u03c40) closely matched the corresponding intensity ratios, which further corroborated the simulated distance-dependent GIET efficiency (Figure 2B, Supplementary file 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of lifetime and intensity measurements shown in Figure 2B and Supplementary file 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "3a56026b-b08a-4a1c-bfbe-52915d6cf749",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C24",
+      "claim": "For H6-mEGFP directly tethered to the membrane, the axial distance was estimated to be 1.3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "For the axial organization of mEGFP and mEGFP:NB complex tethered to the DOPC monolayer surface via trisNTA-DODA, distances 1.3 nm for H6-mEGFP directly tethered to the membrane (IG/I0: 7.6%) and 3.0 nm for mEGFP captured via NB-H6 (IG/I0: 16.4%) were estimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from GIET efficiency measurements using calibration curve",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "471eb90e-585a-47d2-9888-0b9f2ea867f9",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C25",
+      "claim": "For mEGFP captured via NB-H6, the axial distance was estimated to be 3.0 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "For the axial organization of mEGFP and mEGFP:NB complex tethered to the DOPC monolayer surface via trisNTA-DODA, distances 1.3 nm for H6-mEGFP directly tethered to the membrane (IG/I0: 7.6%) and 3.0 nm for mEGFP captured via NB-H6 (IG/I0: 16.4%) were estimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from GIET efficiency measurements using calibration curve",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "8d0222d9-c41b-4086-bffe-0a829b3e9bbf",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C26",
+      "claim": "The distance of 1.7 nm induced by the nanobody is in good agreement with the crystal structure of the GFP-NB complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance of 1.7 nm induced by the nanobody is in good agreement with the crystal structure of the GFP-NB complex (Kirchhofer et al., 2010), highlighting the nanometer sensitivity of quantifying the axial position of proteins onto lipid monolayers by GIET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with crystal structure from Kirchhofer et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "6235cd59-38bd-409a-84d5-bb711c2b08eb",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C27",
+      "claim": "Upon hybridizing the 35mer anchor strand with the 20mer 3\u00b4 FAM probe strand, a fluorescence lifetime \u03c4G of 0.24 \u00b1 0.02 ns was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon hybridizing with the 20mer 3\u00b4 FAM probe strand, a fluorescence lifetime \u03c4G of 0.24 \u00b1 0.02 ns was detected (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by TCSPC as shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "ee9c0098-beb9-467b-ad52-dd2fc1841896",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C28",
+      "claim": "The \u03c4G/\u03c40 ratio of 8.0 \u00b1 0.6% for the 35mer anchor strand with 20mer probe corresponds to a distance of 4.4 \u00b1 0.2 nm from the graphene.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing to \u03c40 of 3.04 ns on glass, the obtained \u03c4G/\u03c40 ratio of 8.0 \u00b1 0.6% corresponds to a distance of 4.4 \u00b1 0.2 nm from the graphene (1.9 nm from the lipid headgroups), suggesting that the hybridized probe-anchor DNA strand collapses onto the surface of the lipid monolayer due to the flexible, unpaired 15mer gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from lifetime measurements using calibration curve",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "be72a5a6-fffd-4263-a82f-5bcda6770551",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C29",
+      "claim": "Addition of a 15mer ssDNA blocker strand resulted in approximately sixfold increase of the fluorescence lifetime to 1.50 \u00b1 0.03 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the hypothesis, a 15mer ssDNA blocker strand was added, resulting into a ~ sixfold increase of the fluorescence lifetime (1.50 \u00b1 0.03 ns, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by TCSPC as shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "39c412a9-b6ef-4130-85c5-a47b62196c89",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C30",
+      "claim": "The \u03c4G/\u03c40 ratio of 49 \u00b1 1.0% after adding the blocker corresponds to a distance of 10.9 \u00b1 0.2 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03c4G/\u03c40 ratio of 49 \u00b1 1.0% corresponds to a distance of 10.9 \u00b1 0.2 nm, that is a height of 8.4 nm above the lipid layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from lifetime measurements using calibration curve",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "f33bc9f5-b799-45af-8576-9115a6190fae",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C31",
+      "claim": "The height of 8.4 nm above the lipid layer corresponds to a tilting angle \u03b1 = 45\u00b0 for the 35mer DNA nanoruler.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the length of the 35mer DNA nanoruler (11.9 nm), the height corresponds to a tilting angle \u03b1 = 45\u00b0, which is in good agreement with the tilting angle \u03b1 obtained for the calibration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from geometric relationship between measured height and DNA length",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "c8c900ab-4549-4da4-94fb-13989d2cfccc",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C32",
+      "claim": "Lateral diffusion dynamics of anchored DNA strands were not observed in FRAP experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe lateral diffusion dynamics of anchored DNA strands as explored by fluorescence recovery after photobleaching (FRAP, Figure 2\u2014figure supplement 5), thus ensuring that changes in fluorescence lifetime are not related to changes in the lateral organization within the lipid monolayer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRAP experiments shown in Figure 2\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "e2785558-3912-4a08-8c9e-cc2bd34b10e9",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C33",
+      "claim": "Ypt7 is a Rab7-like GTPase that functions as a functional marker of the late endosomal membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is initiated by the Rab7-like GTPase Ypt7 as a functional marker of the late endosomal membrane (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on established knowledge of Ypt7 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "e795105a-fa67-4b6d-a50c-09092265a79d",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C34",
+      "claim": "Mon1-Ccz1 is the guanine nucleotide exchange factor (GEF) for Ypt7 on endosomes and vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation by its guanine nucleotide exchange factor (GEF) Mon1-Ccz1 on endosomes and vacuoles (Nordmann et al., 2010), Ypt7-GTP recruits the 650 kDa heterohexameric HOPS tethering complex (Brett et al., 2008; Ostrowicz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nordmann et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "3d70e8b5-a34a-4da1-8a86-b33dd9147f82",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C35",
+      "claim": "The HOPS tethering complex is a 650 kDa heterohexameric complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation by its guanine nucleotide exchange factor (GEF) Mon1-Ccz1 on endosomes and vacuoles (Nordmann et al., 2010), Ypt7-GTP recruits the 650 kDa heterohexameric HOPS tethering complex (Brett et al., 2008; Ostrowicz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brett et al., 2008; Ostrowicz et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "0b12d2b1-54f8-4e20-9b0e-65ac8fd1135a",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C36",
+      "claim": "HOPS has four central subunits: Vps11, Vps18, Vps16, and Vps33.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS has four central subunits Vps11, Vps18, Vps16, and Vps33 (Rieder and Emr, 1997), which are flanked by Vps39 and Vps41 as Rab-specific subunits at its tail and head, respectively (Brett et al., 2008; Br\u00f6cker et al., 2012; Ostrowicz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rieder and Emr, 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "e33f752d-6122-4183-90bc-3ccb6d8555b3",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C37",
+      "claim": "Vps39 and Vps41 are Rab-specific subunits located at the tail and head of HOPS, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS has four central subunits Vps11, Vps18, Vps16, and Vps33 (Rieder and Emr, 1997), which are flanked by Vps39 and Vps41 as Rab-specific subunits at its tail and head, respectively (Brett et al., 2008; Br\u00f6cker et al., 2012; Ostrowicz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brett et al., 2008; Br\u00f6cker et al., 2012; Ostrowicz et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "cee04381-4b54-4895-a2d1-f570bbb8144f",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C38",
+      "claim": "In its compact form, HOPS is about 30 nm in length and 10 nm in width.",
+      "claim_type": "EXPLICIT",
+      "source": "In its compact form, HOPS is about 30 nm in length and 10 nm in width (Br\u00f6cker et al., 2012), whereas the more open conformation of a second study suggests an even longer particle (Chou et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Br\u00f6cker et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "0294fce0-a2ca-49c7-9de3-d06c7125801e",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C39",
+      "claim": "Ypt7 has an N-terminal GTPase domain, followed by a hypervariable domain (HVD), and a C-terminal prenyl group.",
+      "claim_type": "EXPLICIT",
+      "source": "Like all Rabs, Ypt7 has an N-terminal GTPase domain, followed by a hypervariable domain (HVD), and a C-terminal prenyl group (Goody et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goody et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "c2470fd4-d2e3-42a9-beb7-c3a8e63e7b3b",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C40",
+      "claim": "The HVD varies in length between different Rab proteins and is critical for functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "The HVD varies in length between different Rab proteins and is critical for functionality (Li et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "7f92a156-c544-4c62-a824-b60c4da0b35d",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C41",
+      "claim": "Ypt7 recruitment to membranes required the prenyl anchor and GTP to prevent GDI-mediated extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "To test membrane binding, we incubated mNeon-pYpt7:GDI with liposomes by destabilizing the interaction with GDI, and observed that Ypt7 recruitment required the prenyl anchor and GTP to prevent GDI-mediated extraction (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by membrane binding assays shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "06868396-7c49-4955-b020-2de7ec5d80b5",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C42",
+      "claim": "HOPS triggered liposome clustering in a pYpt7 and concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous work (L\u00fcrick et al., 2017; Orr et al., 2015), HOPS triggered liposome clustering in a pYpt7 and concentration-dependent manner (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by liposome clustering assays shown in Figure 3\u2014figure supplement 2, consistent with previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "7cdb463f-133f-41ba-bf86-b12d48a95619",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C43",
+      "claim": "Active mNeon-pYpt7 was located 4.5 \u00b1 0.3 nm above the lipid monolayer surface in the absence of effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "pYpt7 was located surprisingly distal from the membrane in the absence of effector proteins with the mNeon fluorophore being located 4.5 \u00b1 0.3 nm above the lipid monolayer surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from fluorescence lifetime measurements using GIET calibration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "928afabd-e425-41d2-911e-2b25cd3803df",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C44",
+      "claim": "The site of mNeon fusion on Ypt7 is only approximately 1 nm away from the N-terminus of the HVD.",
+      "claim_type": "EXPLICIT",
+      "source": "The site of mNeon fusion on Ypt7 is only ~1 nm away from the N-terminus of the HVD (Wiegandt et al., 2015) and therefore this observation suggests a rather extended conformation of the HVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural information from Wiegandt et al., 2015",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "ea291f68-eaf2-4f6c-aad4-4a2602681e11",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C45",
+      "claim": "Upon interaction with Mon1-Ccz1, the distance of mNeon-pYpt7 decreased by 0.7 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon interaction with Mon1-Ccz1 the distance of mNeon-pYpt7 decreased by 0.7 nm, while a further increase in the axial distance by 0.7 nm was observed in the presence of HOPS (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by GIET as shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "ee93bba9-494f-4b0c-82da-e5e3e4827713",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C46",
+      "claim": "In the presence of HOPS, the axial distance of mNeon-pYpt7 increased by 0.7 nm compared to the Mon1-Ccz1 condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon interaction with Mon1-Ccz1 the distance of mNeon-pYpt7 decreased by 0.7 nm, while a further increase in the axial distance by 0.7 nm was observed in the presence of HOPS (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by GIET as shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "8711f8c7-47cf-431a-b99e-cef8e2a84906",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C47",
+      "claim": "The HOPS complex binds Ypt7-GTP via its subunits Vps39 and Vps41.",
+      "claim_type": "EXPLICIT",
+      "source": "The HOPS complex binds Ypt7-GTP via its subunits Vps39 and Vps41 (Brett et al., 2008; Ostrowicz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brett et al., 2008; Ostrowicz et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "116dcd41-eb29-42f1-9bb1-e1dd913a8cc0",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C48",
+      "claim": "Vps39 and Vps41 have been mapped to opposite ends of the HOPS complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these subunits have been mapped to opposite ends of the HOPS complex (Br\u00f6cker et al., 2012), HOPS may be oriented differently on membranes, depending whether it binds Ypt7 via one or both sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Br\u00f6cker et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "3abb964b-6601-49e7-ab30-0d16bdd5e41a",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C49",
+      "claim": "HOPS clusters upon binding to diffusive membrane-anchored pYpt7-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly heterogeneous intensity distribution of yEGFP-tagged HOPS was observed on lipid bilayers but not on lipid monolayers on graphene (Figure 4B, Figure 4\u2014figure supplement 1). These results suggest that HOPS clusters upon binding to diffusive membrane-anchored pYpt7-GTP, in line with the above-mentioned clustering and loss in mobility of mNeon-pYpt7-GTP upon binding to untagged HOPS (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from heterogeneous distribution on bilayers but not monolayers, shown in Figure 4B and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "20c9af92-bfc3-4472-80d6-e4f3decf9742",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C50",
+      "claim": "The two subunits at the putative HOPS tail, Vps39 (9.5 nm) and Vps11 (8.5 nm), were found to be much closer to the membrane than those of the head (Vps16 at 12.0 nm, Vps18 at 11.4 nm, and Vps33 at 11.5 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "The two subunits at the putative HOPS tail, Vps39 (9.5 nm) and Vps11 (8.5 nm), were found to be much closer to the membrane than those of the previously annotated head (Vps16 at 12.0 nm, Vps18 at 11.4 nm, and Vps33 at 11.5 nm) (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by GIET for different yEGFP-tagged HOPS subunits as shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "f3fc1dc0-7aee-4313-a4c9-e87f49924233",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C51",
+      "claim": "Membrane anchoring of HOPS with membrane-anchored Ypt7-GTP occurs exclusively via interaction of Vps39.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest membrane anchoring of HOPS with membrane-anchored Ypt7-GTP occurs exclusively via interaction of Vps39, in line with its higher affinity as compared to Vps41 (L\u00fcrick et al., 2017; Plemel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from axial distance measurements and supported by citations to L\u00fcrick et al., 2017; Plemel et al., 2011",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "e6736004-6a1d-4d60-9de0-bfce5e92dc4f",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C52",
+      "claim": "The approximately 8 nm distance of the head subunits Vps33 and Vps16 from Ypt7-GTP is significantly lower than the approximately 20 nm head-to-tail distance observed in the EM structure of isolated HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "The ~8 nm distance of the head subunits Vps33 and Vps16 from Ypt7-GTP found by GIET analyses, however, is significantly lower than the ~20 nm head-to-tail distance (between Vps33/16 and Vps39) observed in the EM structure of isolated HOPS (Br\u00f6cker et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of GIET measurements with EM structure from Br\u00f6cker et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "bdea9382-7ef5-4a8f-84fa-734c8f27766a",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C53",
+      "claim": "The HOPS complex adopts a more compact structure upon docking to membrane-anchored Ypt7-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the HOPS complex adopts a more compact structure upon docking to membrane-anchored Ypt7-GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of measured distances with EM structure",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "dab808b2-0a35-41ea-b1ff-6bda842b8520",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C54",
+      "claim": "The 97.7% transparency of graphene monolayer for visible light allows single-molecule imaging on graphene by TIRF microscopy with minimum loss of photons.",
+      "claim_type": "EXPLICIT",
+      "source": "The 97.7% transparency of graphene monolayer for visible light (Nair et al., 2008) allows single-molecule imaging on graphene by total internal reflection fluorescence (TIRF) microscopy with minimum loss of photons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nair et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "d8ecae5e-fd23-4fdd-a82a-9c3022ebcecc",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C55",
+      "claim": "Analysis of approximately 100 single step bleaching fluorescence traces yielded IG/I0 of 0.76 \u00b1 0.20 for HOPS Vps33 and 0.53 \u00b1 0.14 for HOPS Vps11.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of ~100 single step bleaching fluorescence traces yielded IG/I0 of 0.76 \u00b1 0.20 for HOPS Vps33 and 0.53 \u00b1 0.14 for HOPS Vps11 (Figure 5\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from single-molecule photobleaching analysis shown in Figure 5\u2014figure supplement 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "40054e68-eb26-4230-b81e-f7d84019bdea",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C57",
+      "claim": "Single-molecule fluorescence of the HOPS complex bound to graphene-supported lipid monolayers showed pronounced fluctuations, which was not observed on glass.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, single-molecule fluorescence of the HOPS complex bound to graphene-supported lipid monolayers showed pronounced fluctuations, which was not observed on glass (Figure 5A,B, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in single-molecule imaging shown in Figure 5A,B and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "ab221e51-0319-466d-939d-88a8b0f87231",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C58",
+      "claim": "HMM analysis identified three distinct states with 'low' (L), 'medium' (M), and 'high' (H) intensity for both HOPS variants on graphene.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis by Hidden Markov Modeling (HMM) (McKinney et al., 2006) identified three distinct states with 'low' (L), 'medium' (M), and 'high' (H) intensity, respectively, for both HOPS variants on graphene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by HMM analysis of single-molecule intensity traces",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "93325d84-4482-427c-8c90-755431aff56f",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C59",
+      "claim": "The similar changes of mean axial distance from L to M state (approximately 2 nm) in both HOPS Vps33-yEGFP and HOPS Vps11-yEGFP suggest a largely concerted axial movement of the entire HOPS complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar changes of mean axial distance from L to M state (~2 nm) in both HOPS Vps33-yEGFP and HOPS Vps11-yEGFP suggest a largely concerted axial movement of the entire HOPS complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from similar distance changes observed for both labeled subunits",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "2bede02a-1797-44dd-a1a3-e6c0fc6511b5",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C60",
+      "claim": "The high discrepancy of distance changes during transitions from M to H (Vps33: 4.4 nm; Vps11: 2 nm) indicate a conformational re-organization of the HOPS complex itself, thus adopting an elongated conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the high discrepancy of distance changes during transitions from M to H (Vps33: 4.4 nm; Vps11: 2 nm) indicate a conformational re-organization of the HOPS complex itself, thus adopting an elongated conformation (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from differential distance changes between the two labeled subunits",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "12faa62d-5a38-4a0c-a6bf-7047c6c32700",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C61",
+      "claim": "The conformational dynamic distance range on the membrane was approximately 7 nm for HOPS Vps33-yEGFP and 4 nm for HOPS Vps11-yEGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, the conformational dynamic distance range on the membrane was ~7 nm for HOPS Vps33-yEGFP and 4 nm for HOPS Vps11-yEGFP, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the range of distances observed across the three states",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "0fc2a089-f610-48f1-a8c9-e9d7168d5f34",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C62",
+      "claim": "The time-resolved smGIET experiments reveal a 2-step conformational transition of the Ypt7-anchored HOPS complex from the 'closed' state L to the 'open' state H via an intermediate state M.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the time-resolved smGIET experiments reveal a 2-step conformational transition of the Ypt7-anchored HOPS complex from the 'closed' state L to the 'open' state H via an intermediate state M (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from HMM analysis of state transitions shown in Figure 5I",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "684a27a9-a6e6-4268-92ba-79f968f45e0f",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C63",
+      "claim": "The axial localization precision of smGIET is 10.6% of the corresponding distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the relative single-molecule axial localization precision was 10.6% of the corresponding distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from error propagation analysis described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "34c05ca6-b375-4a68-b319-eccc01b97148",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C64",
+      "claim": "Given the sensitive range of GIET in 3\u201330 nm, the corresponding axial precision is in the range of 0.3\u20133 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the sensitive range of GIET in 3\u201330 nm, the corresponding axial precision is in the range of 0.3\u20133 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the relative precision and the dynamic range",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "02533573-250c-45a7-a23f-09a1fc687e03",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C65",
+      "claim": "GIET ideally fills the gap left by FRET and localization microscopy in the spatial regime of 10-20 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the spatial regime covered by GIET ideally fills the gap left by FRET and localization microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of GIET dynamic range with limitations of FRET and localization microscopy",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "521f32ed-bc71-425e-a0d8-243a87fd0782",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C66",
+      "claim": "The HVD of Ypt7 adopts a strongly extended conformation, locating Ypt7 at a 4.5 nm distance above the membrane surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the HVD domain of Ypt7 adopts a strongly extended conformation, locating Ypt7 at a 4.5 nm distance above the membrane surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by GIET and inferred from the position of the mNeon tag",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "85157848-1473-410c-9536-c696891512fb",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C67",
+      "claim": "The extended conformation of the HVD could be explained by electrostatic repulsion of the negatively charged HVD.",
+      "claim_type": "EXPLICIT",
+      "source": "This surprising observation could be explained by electrostatic repulsion of the negatively charged HVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for the observed extended conformation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "a1c5ba3c-77e4-4538-aba5-b139ef8b2c04",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C68",
+      "claim": "Mon1-Ccz1 directly binds to the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Mon1-Ccz1 directly binds to the membrane (Cabrera et al., 2014), its Ypt7 binding site appears to be located distally to the membrane and the HVD allows unhindered access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cabrera et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "cf142a93-7fcd-44d6-9c7f-df9dd6f90d31",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C69",
+      "claim": "The conformationally highly dynamic HOPS complex observed may represent an intermediate state prior to lateral HOPS clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the impaired diffusion in the graphene-supported lipid monolayer, however, the conformationally highly dynamic HOPS complex observed in our studies may represent an intermediate state prior to lateral HOPS clustering, which in turn could increase the efficiency of HOPS to tether incoming vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the observed dynamics",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "5ecaed77-d50f-475d-920f-d09a61914f9a",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "claim_id": "C70",
+      "claim": "GIET has negligible variation between spectrally different fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "Since GIET has negligible variation between spectrally different fluorophores (Figure 2\u2014figure supplement 2), concerted conformational changes and axial movement can be potentially resolved by multicolor GIET.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in simulations in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "93bf8384-bd66-4fa3-877d-801b8f77614f",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background context on the prevalence of membrane proteins in animal proteomes and their pharmaceutical relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are both supported by citation to Santos et al., 2017, providing appropriate background context for the study. These are established facts from prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "964d478e-3fbd-45b5-9adf-5aabd2b35203",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript establishes the limitations of existing single-molecule techniques (FRET and localization microscopy) for studying membrane protein complexes in the 10-20 nm range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C4 are well-supported by established knowledge and appropriate citations. These limitations provide clear motivation for developing GIET as an alternative technique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "cd06affa-5317-4122-ae46-13180b5c0662",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript establishes the theoretical basis for GIET by comparing graphene properties with metal-induced energy transfer (MIET), showing that GIET has a dynamic range of ~30 nm suitable for membrane protein complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 are supported by appropriate citations to prior work. The comparison between MIET (~150 nm range) and GIET (~30 nm range) establishes the theoretical advantage of GIET for the target application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "56799def-57ca-4b6a-ac52-4b6bb890ef5a",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Lipid deposition measurements confirm formation of a lipid monolayer on graphene (2.5 ng/mm\u00b2) versus bilayer on silica (5 ng/mm\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 are supported by TIRFS-RIF measurements shown in Figure 1B and Figure 1\u2014figure supplement 1. The 2:1 ratio of lipid deposition is consistent with monolayer versus bilayer formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "efec931c-92e5-4c12-bf1a-5ecf6309474d",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GIET can detect nanoscale distance differences between direct protein binding (92.4% efficiency) and nanobody-mediated binding (83.6% efficiency) on graphene-supported lipid monolayers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 are supported by fluorescence intensity measurements and comparison with the known ~2 nm size of the nanobody from crystal structure. The ability to distinguish these configurations demonstrates nanometer sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "dc571ca9-a39c-4d24-a88b-7151e012b323",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DNA nanorulers with defined lengths (20-50mer) were used to calibrate distance-dependent GIET efficiency, yielding a dynamic range of 3-25 nm with a fitted DNA tilting angle of 43\u00b11\u00b0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 are supported by systematic experimental measurements using DNA nanorulers with both intensity and lifetime measurements. The agreement between intensity ratios and lifetime ratios, and the match with theoretical predictions after accounting for tilting angle, provides strong validation of the GIET calibration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "5b9fcea1-3ecc-43d1-a6e7-074db8e363f3",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using the GIET calibration, axial distances of 1.3 nm for directly tethered mEGFP and 3.0 nm for nanobody-captured mEGFP were determined, with the 1.7 nm difference agreeing with crystal structure data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 demonstrate successful application of the GIET calibration to measure protein distances. The agreement with crystal structure data (C26) validates the accuracy of the distance measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "42762d39-c098-4181-ab8f-b9fd20615b82",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GIET can detect large-scale conformational changes in DNA nanorulers, as demonstrated by a ~6-fold lifetime increase upon adding a blocker strand that forces the DNA into an upright position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 demonstrate that GIET can detect conformational rearrangements. The measured distances and calculated tilting angles are internally consistent. The lack of lateral diffusion (C32) confirms that observed changes are due to axial reorganization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "5cb21378-74dd-45d2-b061-af56fc58eab1",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the Ypt7-HOPS tethering system, including protein composition, structure, and function based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 are all supported by appropriate citations to prior work. These provide necessary biological context for the GIET experiments on this system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "0ab1eba6-ee17-4d97-8265-1698af16cfe9",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Functional reconstitution of the Ypt7-HOPS system was validated by membrane binding assays and liposome clustering experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by experimental data showing GTP- and prenyl-dependent membrane binding, and concentration-dependent HOPS-mediated liposome clustering consistent with prior studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "b2d93e91-bffb-41e1-a447-99222525bb99",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The HVD of Ypt7 adopts an extended conformation, positioning the mNeon fluorophore 4.5\u00b10.3 nm above the membrane, possibly due to electrostatic repulsion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C44, and C66 are supported by GIET measurements. The extended conformation is inferred from the measured distance and known position of the mNeon tag. However, C67 (electrostatic repulsion explanation) is speculative and not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "a73c887b-431d-4df3-ae30-6171481fb283",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ypt7 undergoes conformational changes upon interaction with effector proteins: a 0.7 nm decrease with Mon1-Ccz1 and a 0.7 nm increase with HOPS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by GIET measurements shown in Figure 3F. These conformational changes suggest functional reorganization of the HVD during effector interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "a878cda9-776e-41cc-9770-6a362568008b",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "HOPS binds Ypt7 via subunits Vps39 and Vps41 at opposite ends, and clusters upon binding to diffusive membrane-anchored Ypt7-GTP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by citations to prior structural work. Claim C49 is inferred from heterogeneous distribution on bilayers but not monolayers, which is reasonable evidence for clustering dependent on lateral mobility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "1eb13756-eda1-4522-8046-08a49da502e6",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "HOPS adopts an upright, compact orientation on membranes when bound to Ypt7-GTP, with tail subunits (Vps39, Vps11) closer to the membrane than head subunits (Vps16, Vps18, Vps33), and binding occurs exclusively via Vps39.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by systematic GIET measurements of different yEGFP-tagged HOPS subunits. The measured distances indicate upright orientation and are more compact than EM structures of isolated HOPS, suggesting membrane-induced conformational changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "d0c65731-d75c-418f-8967-496f3e51a20f",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Single-molecule GIET reveals that membrane-bound HOPS undergoes dynamic conformational transitions between three states (L, M, H) with a 2-step transition from closed to open conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62 are supported by single-molecule TIRF imaging and HMM analysis. The identification of three states with distinct distances and the differential behavior of Vps33 vs Vps11 provide strong evidence for conformational dynamics. The interpretation of L\u2192M\u2192H as closed\u2192intermediate\u2192open is reasonable based on the distance changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "8509df94-7079-48bd-bd1c-a9e0053813d4",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The axial localization precision of smGIET is 10.6% of the measured distance, corresponding to 0.3-3 nm precision over the 3-30 nm dynamic range, filling the gap between FRET and localization microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by error propagation analysis from single-molecule measurements on glass. Claim C65 is a reasonable inference given the established limitations of FRET (<10 nm) and localization microscopy (~10 nm precision).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "c72fa28c-3838-4e95-9e8a-aed9bacb4ac8",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mon1-Ccz1 directly binds to membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by citation to Cabrera et al., 2014 and confirmed by RIF detection in Figure 3\u2014figure supplement 4A.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "b1bc0949-8c83-4362-a992-851175c866e5",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The conformationally dynamic HOPS observed may represent an intermediate state prior to lateral clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is explicitly speculative. While the impaired diffusion in graphene-supported monolayers is acknowledged, this interpretation cannot be tested with the current experimental setup and remains a hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    },
+    {
+      "id": "570223a5-549a-45a8-9451-c06b65028fc1",
+      "content_id": "9a604b58-ef4c-4450-a7ba-f2b14e472181",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "GIET has negligible variation between spectrally different fluorophores, enabling potential multicolor applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is supported by simulations shown in Figure 2\u2014figure supplement 2, demonstrating similar distance-dependent behavior for different fluorophores.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:59:11.170352Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2e394ea9-8193-4176-938d-07ec8cf4eb77",
+      "result_id": "93bf8384-bd66-4fa3-877d-801b8f77614f"
+    },
+    {
+      "claim_id": "722059ec-830d-40e4-a97b-cd18c69f86db",
+      "result_id": "93bf8384-bd66-4fa3-877d-801b8f77614f"
+    },
+    {
+      "claim_id": "01e6145f-df42-46b4-b26a-d154cae01f26",
+      "result_id": "964d478e-3fbd-45b5-9adf-5aabd2b35203"
+    },
+    {
+      "claim_id": "bec3dd1c-bc7a-4657-afb6-d7dbc15061d2",
+      "result_id": "964d478e-3fbd-45b5-9adf-5aabd2b35203"
+    },
+    {
+      "claim_id": "d0df23f9-24df-470e-affb-25428e579fe8",
+      "result_id": "cd06affa-5317-4122-ae46-13180b5c0662"
+    },
+    {
+      "claim_id": "24c5179d-c7ba-4301-92ed-3745e30b5723",
+      "result_id": "cd06affa-5317-4122-ae46-13180b5c0662"
+    },
+    {
+      "claim_id": "e1f44298-e0f7-4bde-b43b-3fbbda0c88d6",
+      "result_id": "cd06affa-5317-4122-ae46-13180b5c0662"
+    },
+    {
+      "claim_id": "2acf475c-6666-4ef6-a3b0-a7676d8d070e",
+      "result_id": "cd06affa-5317-4122-ae46-13180b5c0662"
+    },
+    {
+      "claim_id": "e554b581-2c54-4ec2-9d98-a823e9d70cde",
+      "result_id": "56799def-57ca-4b6a-ac52-4b6bb890ef5a"
+    },
+    {
+      "claim_id": "11628bd9-e364-41fc-b445-f5816fec2a4f",
+      "result_id": "56799def-57ca-4b6a-ac52-4b6bb890ef5a"
+    },
+    {
+      "claim_id": "4387a34d-c0c5-4ad1-87eb-79a9e18eee85",
+      "result_id": "56799def-57ca-4b6a-ac52-4b6bb890ef5a"
+    },
+    {
+      "claim_id": "a618aa25-d57a-4193-b69c-0d97dcef26c7",
+      "result_id": "efec931c-92e5-4c12-bf1a-5ecf6309474d"
+    },
+    {
+      "claim_id": "21b3f5c7-796b-4bf2-9e8c-d3c726a70f79",
+      "result_id": "efec931c-92e5-4c12-bf1a-5ecf6309474d"
+    },
+    {
+      "claim_id": "281068d4-5c34-4e67-813d-877bc2917510",
+      "result_id": "efec931c-92e5-4c12-bf1a-5ecf6309474d"
+    },
+    {
+      "claim_id": "dcaa22f8-969a-4308-b188-da5967f7be4f",
+      "result_id": "efec931c-92e5-4c12-bf1a-5ecf6309474d"
+    },
+    {
+      "claim_id": "9a395348-261d-4806-9a55-73b5ecfe7195",
+      "result_id": "dc571ca9-a39c-4d24-a88b-7151e012b323"
+    },
+    {
+      "claim_id": "59421a30-aa4f-42f5-842c-ef53eea8b6b1",
+      "result_id": "dc571ca9-a39c-4d24-a88b-7151e012b323"
+    },
+    {
+      "claim_id": "5406c52f-7ef3-4379-9163-bb542641388e",
+      "result_id": "dc571ca9-a39c-4d24-a88b-7151e012b323"
+    },
+    {
+      "claim_id": "f9bb7a25-3980-48a0-8329-1b4f24ba6b54",
+      "result_id": "dc571ca9-a39c-4d24-a88b-7151e012b323"
+    },
+    {
+      "claim_id": "b63bf9ce-c0da-4b02-b13b-511840ca284d",
+      "result_id": "dc571ca9-a39c-4d24-a88b-7151e012b323"
+    },
+    {
+      "claim_id": "ddc5956e-bb10-44ee-9746-d5510f1e6af6",
+      "result_id": "dc571ca9-a39c-4d24-a88b-7151e012b323"
+    },
+    {
+      "claim_id": "7c59be89-e7a0-480d-8c8a-3ea5c14b6176",
+      "result_id": "dc571ca9-a39c-4d24-a88b-7151e012b323"
+    },
+    {
+      "claim_id": "3a56026b-b08a-4a1c-bfbe-52915d6cf749",
+      "result_id": "5b9fcea1-3ecc-43d1-a6e7-074db8e363f3"
+    },
+    {
+      "claim_id": "471eb90e-585a-47d2-9888-0b9f2ea867f9",
+      "result_id": "5b9fcea1-3ecc-43d1-a6e7-074db8e363f3"
+    },
+    {
+      "claim_id": "8d0222d9-c41b-4086-bffe-0a829b3e9bbf",
+      "result_id": "5b9fcea1-3ecc-43d1-a6e7-074db8e363f3"
+    },
+    {
+      "claim_id": "6235cd59-38bd-409a-84d5-bb711c2b08eb",
+      "result_id": "42762d39-c098-4181-ab8f-b9fd20615b82"
+    },
+    {
+      "claim_id": "ee9c0098-beb9-467b-ad52-dd2fc1841896",
+      "result_id": "42762d39-c098-4181-ab8f-b9fd20615b82"
+    },
+    {
+      "claim_id": "be72a5a6-fffd-4263-a82f-5bcda6770551",
+      "result_id": "42762d39-c098-4181-ab8f-b9fd20615b82"
+    },
+    {
+      "claim_id": "39c412a9-b6ef-4130-85c5-a47b62196c89",
+      "result_id": "42762d39-c098-4181-ab8f-b9fd20615b82"
+    },
+    {
+      "claim_id": "f33bc9f5-b799-45af-8576-9115a6190fae",
+      "result_id": "42762d39-c098-4181-ab8f-b9fd20615b82"
+    },
+    {
+      "claim_id": "c8c900ab-4549-4da4-94fb-13989d2cfccc",
+      "result_id": "42762d39-c098-4181-ab8f-b9fd20615b82"
+    },
+    {
+      "claim_id": "e2785558-3912-4a08-8c9e-cc2bd34b10e9",
+      "result_id": "5cb21378-74dd-45d2-b061-af56fc58eab1"
+    },
+    {
+      "claim_id": "e795105a-fa67-4b6d-a50c-09092265a79d",
+      "result_id": "5cb21378-74dd-45d2-b061-af56fc58eab1"
+    },
+    {
+      "claim_id": "3d70e8b5-a34a-4da1-8a86-b33dd9147f82",
+      "result_id": "5cb21378-74dd-45d2-b061-af56fc58eab1"
+    },
+    {
+      "claim_id": "0b12d2b1-54f8-4e20-9b0e-65ac8fd1135a",
+      "result_id": "5cb21378-74dd-45d2-b061-af56fc58eab1"
+    },
+    {
+      "claim_id": "e33f752d-6122-4183-90bc-3ccb6d8555b3",
+      "result_id": "5cb21378-74dd-45d2-b061-af56fc58eab1"
+    },
+    {
+      "claim_id": "cee04381-4b54-4895-a2d1-f570bbb8144f",
+      "result_id": "5cb21378-74dd-45d2-b061-af56fc58eab1"
+    },
+    {
+      "claim_id": "0294fce0-a2ca-49c7-9de3-d06c7125801e",
+      "result_id": "5cb21378-74dd-45d2-b061-af56fc58eab1"
+    },
+    {
+      "claim_id": "c2470fd4-d2e3-42a9-beb7-c3a8e63e7b3b",
+      "result_id": "5cb21378-74dd-45d2-b061-af56fc58eab1"
+    },
+    {
+      "claim_id": "7f92a156-c544-4c62-a824-b60c4da0b35d",
+      "result_id": "0ab1eba6-ee17-4d97-8265-1698af16cfe9"
+    },
+    {
+      "claim_id": "06868396-7c49-4955-b020-2de7ec5d80b5",
+      "result_id": "0ab1eba6-ee17-4d97-8265-1698af16cfe9"
+    },
+    {
+      "claim_id": "7cdb463f-133f-41ba-bf86-b12d48a95619",
+      "result_id": "b2d93e91-bffb-41e1-a447-99222525bb99"
+    },
+    {
+      "claim_id": "928afabd-e425-41d2-911e-2b25cd3803df",
+      "result_id": "b2d93e91-bffb-41e1-a447-99222525bb99"
+    },
+    {
+      "claim_id": "521f32ed-bc71-425e-a0d8-243a87fd0782",
+      "result_id": "b2d93e91-bffb-41e1-a447-99222525bb99"
+    },
+    {
+      "claim_id": "85157848-1473-410c-9536-c696891512fb",
+      "result_id": "b2d93e91-bffb-41e1-a447-99222525bb99"
+    },
+    {
+      "claim_id": "ea291f68-eaf2-4f6c-aad4-4a2602681e11",
+      "result_id": "a73c887b-431d-4df3-ae30-6171481fb283"
+    },
+    {
+      "claim_id": "ee93bba9-494f-4b0c-82da-e5e3e4827713",
+      "result_id": "a73c887b-431d-4df3-ae30-6171481fb283"
+    },
+    {
+      "claim_id": "8711f8c7-47cf-431a-b99e-cef8e2a84906",
+      "result_id": "a878cda9-776e-41cc-9770-6a362568008b"
+    },
+    {
+      "claim_id": "116dcd41-eb29-42f1-9bb1-e1dd913a8cc0",
+      "result_id": "a878cda9-776e-41cc-9770-6a362568008b"
+    },
+    {
+      "claim_id": "3abb964b-6601-49e7-ab30-0d16bdd5e41a",
+      "result_id": "a878cda9-776e-41cc-9770-6a362568008b"
+    },
+    {
+      "claim_id": "20c9af92-bfc3-4472-80d6-e4f3decf9742",
+      "result_id": "1eb13756-eda1-4522-8046-08a49da502e6"
+    },
+    {
+      "claim_id": "f3fc1dc0-7aee-4313-a4c9-e87f49924233",
+      "result_id": "1eb13756-eda1-4522-8046-08a49da502e6"
+    },
+    {
+      "claim_id": "e6736004-6a1d-4d60-9de0-bfce5e92dc4f",
+      "result_id": "1eb13756-eda1-4522-8046-08a49da502e6"
+    },
+    {
+      "claim_id": "bdea9382-7ef5-4a8f-84fa-734c8f27766a",
+      "result_id": "1eb13756-eda1-4522-8046-08a49da502e6"
+    },
+    {
+      "claim_id": "dab808b2-0a35-41ea-b1ff-6bda842b8520",
+      "result_id": "d0c65731-d75c-418f-8967-496f3e51a20f"
+    },
+    {
+      "claim_id": "d8ecae5e-fd23-4fdd-a82a-9c3022ebcecc",
+      "result_id": "d0c65731-d75c-418f-8967-496f3e51a20f"
+    },
+    {
+      "claim_id": "40054e68-eb26-4230-b81e-f7d84019bdea",
+      "result_id": "d0c65731-d75c-418f-8967-496f3e51a20f"
+    },
+    {
+      "claim_id": "ab221e51-0319-466d-939d-88a8b0f87231",
+      "result_id": "d0c65731-d75c-418f-8967-496f3e51a20f"
+    },
+    {
+      "claim_id": "93325d84-4482-427c-8c90-755431aff56f",
+      "result_id": "d0c65731-d75c-418f-8967-496f3e51a20f"
+    },
+    {
+      "claim_id": "2bede02a-1797-44dd-a1a3-e6c0fc6511b5",
+      "result_id": "d0c65731-d75c-418f-8967-496f3e51a20f"
+    },
+    {
+      "claim_id": "12faa62d-5a38-4a0c-a6bf-7047c6c32700",
+      "result_id": "d0c65731-d75c-418f-8967-496f3e51a20f"
+    },
+    {
+      "claim_id": "0fc2a089-f610-48f1-a8c9-e9d7168d5f34",
+      "result_id": "d0c65731-d75c-418f-8967-496f3e51a20f"
+    },
+    {
+      "claim_id": "684a27a9-a6e6-4268-92ba-79f968f45e0f",
+      "result_id": "8509df94-7079-48bd-bd1c-a9e0053813d4"
+    },
+    {
+      "claim_id": "34c05ca6-b375-4a68-b319-eccc01b97148",
+      "result_id": "8509df94-7079-48bd-bd1c-a9e0053813d4"
+    },
+    {
+      "claim_id": "02533573-250c-45a7-a23f-09a1fc687e03",
+      "result_id": "8509df94-7079-48bd-bd1c-a9e0053813d4"
+    },
+    {
+      "claim_id": "a1c5ba3c-77e4-4538-aba5-b139ef8b2c04",
+      "result_id": "c72fa28c-3838-4e95-9e8a-aed9bacb4ac8"
+    },
+    {
+      "claim_id": "cf142a93-7fcd-44d6-9c7f-df9dd6f90d31",
+      "result_id": "b1bc0949-8c83-4362-a992-851175c866e5"
+    },
+    {
+      "claim_id": "5ecaed77-d50f-475d-920f-d09a61914f9a",
+      "result_id": "570223a5-549a-45a8-9451-c06b65028fc1"
+    }
+  ],
+  "comparisons": []
+}

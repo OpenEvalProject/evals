@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study employed a multi-layered RNA sequencing approach combining bulk RNA-seq of developing sciatic nerves, FACS-sorted bulk and single-cell RNA-seq of Schwann cells using Smart-Seq2, and 10x Genomics single-cell RNA-seq of all nerve cell types across developmental stages from embryonic to adult. All datasets were integrated into the publicly accessible SNAT database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 and C28-C34 collectively describe a comprehensive experimental design with multiple complementary sequencing approaches. The methodology is clearly stated with appropriate technical details (FACS sorting, Smart-Seq2, 10x Genomics), biological replicates (C34), and data integration (C10). The multi-modal approach is well-justified and technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study analyzed sciatic nerves at specific developmental stages: E13.5 (Schwann cell precursors), E17.5-P5 (immature SCs performing radial sorting and onset of myelination), P14-P24 (myelin growth and Remak SC maturation), and P60 (completed developmental myelination with mature Remak bundles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 describe well-established developmental stages supported by appropriate citations (C38). Claim C39 appropriately acknowledges the temporal asynchrony of developmental processes. These stages are standard in the field and provide appropriate temporal coverage for developmental analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Bulk RNA sequencing of endoneurium-enriched sciatic nerves across developmental stages revealed expected temporal expression patterns of key markers: proliferation markers (Mki67, Top2a) peaked at E17.5-P5, immature SC markers (Ngfr, Ncam1, L1cam) peaked at E17.5, pro-myelinating markers (Pou3f1, Cdkn1c) peaked at P1, and myelin genes (Mpz, Mbp, Ncmap) increased strongly after birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 present validation data showing that bulk RNA-seq recapitulates known developmental expression patterns with appropriate citations. The hierarchical clustering (C41) and heat maps (C42) demonstrate technical quality and biological consistency. The marker expression patterns align with established knowledge, validating the dataset (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "FACS analysis of P5 sciatic nerves from P0Cre:ReYFP:\u03b2Act-DsRed mice revealed two semi-distinct Schwann cell populations distinguishable by granularity (SSC-A), with the less granular population enriched in proliferation and immature SC markers, and the more granular population enriched in myelin gene expression, enabling separation of myelinating and not-myelinating SCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C65 describe a novel FACS strategy validated by marker gene expression (C60-C64). The approach is technically sound with appropriate genetic reporters (C54-C56), biological replicates showing consistency (C59), and marker expression patterns that align with the hypothesis (C58). The validation is comprehensive and supports the claimed enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Separating myelinating and not-myelinating Schwann cells is important because these populations have major transcriptional differences, and without separation, bulk RNA-seq yields a convoluted average signal that obscures SC transcription dynamics around myelination onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are well-supported by citations and logical reasoning about the limitations of bulk analysis of heterogeneous populations. Claim C68 is a reasonable speculation about future applications supported by relevant citations. The rationale for the methodological development is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Smart-Seq2 single-cell RNA sequencing of FACS-sorted Schwann cells at P1, P5, P14, and P60 identified distinct clusters corresponding to proliferating SCs, immature SCs, pro-myelinating SCs, myelinating SCs, and non-myelinating (Remak) SCs, with marker expression patterns consistent with known SC differentiation stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80 describe single-cell clustering results with appropriate batch correction (C71) and marker validation. The cluster assignments are supported by established marker genes with citations. The detection of expected cell types at appropriate developmental stages validates the approach. Technical quality metrics are provided in supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Integration of Smart-Seq2 single-cell data from all time points revealed a chronological gradient of SC differentiation, with cells from younger animals corresponding to earlier differentiation stages, and suggested temporal snapshots of both myelinating and non-myelinating SC maturation trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 describe data integration results supported by figures showing clear temporal organization. Claims C85-C86 appropriately present interpretations as tentative ('may reflect', 'potentially reflecting'), acknowledging uncertainty while providing reasonable biological interpretations of the clustering patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Supervised Slingshot trajectory analysis revealed bifurcated SC differentiation paths after the immature SC stage, with distinct gene expression dynamics: Ncam1 decreased along the myelinating trajectory but remained high in non-myelinating cells, Pou3f1 and Cdkn1c showed transient enrichment in the myelinating trajectory, and myelin genes (Mpz, Ncmap) accumulated specifically along the myelinating trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 describe pseudotime trajectory analysis with appropriate methodology (C87, with citation). The bifurcated trajectory (C88) aligns with known SC biology. Gene expression dynamics (C89-C92) show expected patterns that validate both the trajectory inference and the biological interpretation. The supervised approach is appropriately disclosed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The Smart-Seq2 single-cell RNA sequencing dataset provides a connected collection of clusters along key stages of SC postnatal differentiation, enabling direct comparison of differential transcriptome changes throughout SC maturation with single-cell resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are summary statements appropriately supported by the preceding experimental results (C69-C92). The dataset demonstrably covers key developmental stages with validated cell type identification and enables the stated comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "10x Genomics technology was used for single-cell RNA-seq of all nerve cell types (rather than Smart-Seq2) to achieve higher cell throughput, with approximately 4000 cells per run, three independent biological replicates per time point (1:1 male:female ratio), and no major batch effects detected across runs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 describe appropriate methodological choices with clear justification (C99). The experimental design includes adequate replication (C101-C102) and quality control showing no batch effects (C103). The approach is technically sound for characterizing cellular heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "10x Genomics single-cell RNA-seq of P60 sciatic nerves identified nine clusters including a Schwann cell cluster (414 cells, 3.3% of total) that showed remarkable regional distribution with myelinating SCs enriched in myelin genes (Mpz, Mbp, Ncmap) on one side and non-myelinating Remak SCs enriched in Ngfr and Ncam1 on the opposite side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 describe clustering results with clear marker-based validation. The regional distribution within the SC cluster (C106-C107) is a notable finding supported by marker expression data. The low SC percentage (C105) is appropriately noted as affected by extraction efficiency rather than reflecting true proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "10x Genomics analysis at P60 identified distinct clusters of Pdgfra-expressing fibroblast-like cells (epineurial, perineurial, and endoneurial) with cluster-specific marker expression: epineurial cells (Pcolce2, Ly6c1), perineurial cells (Itgb4, Slc2a1), and endoneurial cells (Col2a1, Sox9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 describe identification of fibroblast-like cell populations with appropriate marker validation supported by citations (primarily Carr et al., 2019). The cluster assignments are consistent with known markers for these cell types in peripheral nerves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "10x Genomics analysis at P60 identified vascular-associated cell clusters including immune cells (Ptprc+, Cd68+), two endothelial cell clusters (Pecam1+, Pdgfrb-) distinguished by Cldn5/Slc2a1 (EC1) versus Cd300lg (EC2) expression, and pericytes/vascular smooth muscle cells (Acta2+, Pdgfrb+), potentially representing functionally distinct vessel types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 describe identification of vascular and immune cell populations with appropriate marker validation and citations. The distinction between two endothelial clusters (C115-C116) is data-driven, and the speculation about functional differences (C117) is appropriately tentative. The classifications are well-supported by established markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "A cluster expressing both Pecam1 and Pdgfrb (Per/EC*) was identified but is likely a technical artifact representing cell doublets between endothelial cells and pericytes rather than a distinct cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 appropriately identify a potential technical artifact and provide reasonable interpretation. The authors correctly maintain the cluster in the dataset while clearly marking it as tentative (asterisk notation) and explaining the likely technical origin. This represents good scientific practice in handling ambiguous data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "10x Genomics analysis of P1 sciatic nerves identified 11 clusters including three Schwann cell clusters (28% of cells, higher than P60) representing pro-myelinating, immature, and proliferating SCs, plus proliferating fibroblast-like cells and other nerve cell types, though cluster assignments at P1 are tentative due to different marker expression levels compared to P60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 describe P1 clustering results with appropriate marker validation. Claim C128 appropriately acknowledges limitations in cluster assignment due to developmental differences in marker expression. The higher SC recovery at P1 (C122) is reasonably attributed to extraction efficiency. The cautious interpretation is scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "A fibroblast-related cluster (FbRel*) at P1 contains cells expressing Pdgfra along with markers from other clusters and even some SC lineage genes (Mbp, Mpz, Sox10), requiring further investigation to determine its origins and validate its identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C130 describe an unusual cluster with mixed marker expression that the authors appropriately flag as requiring further investigation. The data are presented honestly, but the biological interpretation remains unclear. This represents appropriate scientific caution when encountering unexpected results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "10x Genomics single-cell RNA-seq provided transcriptome profiles for most major cell types in sciatic nerves at P1 and P60, though epineurial adipocytes were not detected as a separate cluster, and lymphatic endothelial cells were present but not allocated as a separate cluster, likely due to their scarcity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 provide an honest assessment of the dataset's coverage, acknowledging limitations. The failure to detect certain rare cell types (C132-C134) is appropriately explained by technical limitations and cell scarcity. The authors provide evidence for the presence of these cells within other clusters, demonstrating thorough analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The FACS-based cell isolation approach has limitations including potential subsampling of cell subsets, particularly for SCs from extensively myelinated nerves, with low extraction efficiency potentially reflecting different sensitivities of distinct SC populations to experimental procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 appropriately acknowledge methodological limitations. This honest assessment of potential biases in cell recovery is important for data interpretation. The speculation about differential sensitivity (C137) is reasonable and appropriately presented as interpretation rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The validated datasets serve as a reference for gene expression in peripheral nerves, with a multilayered approach covering SCs and other resident cells during postnatal development, integrated into a freely accessible web interface (SNAT), and anticipated to enable expanding efforts in peripheral nerve biology research including cellular, injury, aging, and disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are supported by the comprehensive experimental work presented. Claim C141 is appropriate speculation about future research directions supported by citations to complementary recent work. The creation of an accessible database (C140) represents a significant contribution to the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C95"
+    ],
+    "result": "Peripheral nerves are organ-like structures containing diverse cell types including predominantly axon-associated Schwann cells, plus endothelial cells, immune cells, barrier-forming perineurial cells, connective tissue-resident cells, Pdgfra-expressing fibroblast-like cells, vascular cells, and epineurial adipocytes, all contributing to optimal nerve function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C11-C16, and C95 describe the cellular composition of peripheral nerves, representing established knowledge appropriately supported by citations. These claims provide essential background context for the study and are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Current knowledge about gene expression in nerve-resident cell types is fragmentary with limited cellular resolution. Previous bulk transcriptome studies cannot distinguish between myelinating and non-myelinating Schwann cells, and existing single-cell studies have been restricted to early embryonic development or adult injury contexts, limiting universal data utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C27 provide appropriate background establishing the knowledge gap and rationale for the study. The limitations of existing approaches are accurately described with appropriate citations (C19-C20, C24-C25). The assessment of the field (C18, C26) justifies the need for the comprehensive approach taken in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The bulk RNA sequencing approach has the advantage that Schwann cells and other endoneurium components remain in their native context until immediately before RNA extraction, minimizing potentially disturbing impacts of experimental procedures and optimizing that RNA-seq signatures closely track genuine in vivo transcriptomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 present a valid technical advantage of the bulk RNA-seq approach. Maintaining cells in native context does minimize artifacts from dissociation procedures, which is a recognized advantage of bulk tissue analysis. This represents appropriate methodological reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Understanding of individual roles of different cell types in nerve development and homeostasis is limited, though some knowledge exists about interplay between macrophages, endoneurial fibroblast-like cells, and SCs in axonal regeneration after injury, and Pdgfra-expressing cells serving as cellular reservoirs during regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 provide appropriate background on non-Schwann cell functions in peripheral nerves, supported by citations (C97-C98). This establishes the rationale for comprehensive single-cell analysis of all nerve cell types beyond just Schwann cells.",
+    "result_type": "MINOR"
+  }
+]

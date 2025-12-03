@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed a conditional m1G37 deficiency system in E. coli using a degron-tagged TrmD protein. Upon induction of ClpXP protease, TrmD protein levels decreased drastically within 30 minutes in the trmD-deg strain, while remaining stable in the control strain. This led to a reduction in m1G37 levels to below 25% by 4 hours in the trmD-deg strain, while control cells maintained 100% m1G37 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are well-supported by multiple complementary experimental approaches including spot dilution assays (Figure 1A), growth curves (Figure 1B), Western blots (Figure 1C), and primer extension analysis (Figure 1D). The data consistently demonstrate successful conditional depletion of TrmD and m1G37 in the degron system, with appropriate controls showing stable protein and modification levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "m1G37 deficiency induces codon-specific ribosome stalling at the A site. Ribosome profiling revealed dramatic increases in pause scores at Pro codons (from 1.4 to 3.5 in trmD-deg cells), at the Arg CGG codon (from 1.0 to 3.0), and modest increases at the Leu CUA codon (to 1.4). Pausing occurs primarily when affected codons are positioned in the ribosomal A site, with evidence of ribosome collisions approximately 25 nucleotides upstream of stalled ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C34 are strongly supported by ribosome profiling data from two independent strain systems (trmD-deg/cont and trmD-KO/WT) shown in Figure 2. The use of high Mg2+ lysis buffer in the trmD-KO samples provides higher resolution data confirming A-site pausing. The observation of ribosome collisions is consistent with prolonged stalling and is supported by the ~25 nt spacing matching ribosome footprint size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C117"
+    ],
+    "result": "m1G37 deficiency reduces aminoacylation efficiency for all three isoacceptors of tRNAPro and tRNAArg(CCG) in vitro. For tRNAPro isoacceptors, kcat/Km decreased 3- to 10-fold from the m1G37-state to the G37-state, driven primarily by increases in Km. For tRNAArg(CCG), kcat/Km decreased 5.6-fold, driven primarily by loss in kcat, indicating different mechanistic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35-C37, C40-C41, and C117 are well-supported by systematic in vitro aminoacylation kinetic assays with purified components (Figure 3A and source data). The experiments appropriately isolated the effect of m1G37 by comparing transcript tRNAs in G37-state versus m1G37-state. The kinetic parameters (Km, kcat, kcat/Km) were properly determined under steady-state conditions with multiple replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C118",
+      "C119"
+    ],
+    "result": "m1G37 deficiency selectively reduces peptide-bond formation for specific tRNA-codon pairs. Loss of m1G37 decreased kobs by 14.4-fold for tRNAPro(UGG) at the CCC codon and by 14.3-fold for tRNAArg(CCG) at the CGG codon, but had minimal effects on other tRNAPro isoacceptor-codon pairs tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42-C43, C118-C119 are supported by in vitro peptide-bond formation assays using reconstituted E. coli translation systems (Figure 3B and source data). The assays were performed under substrate-limiting conditions to obtain linear kinetics, allowing proper determination of kobs values. The selective effects on specific tRNA-codon pairs are clearly demonstrated, though the mechanistic basis for this selectivity is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C120",
+      "C122"
+    ],
+    "result": "m1G37 deficiency reduces aminoacylation levels of tRNAPro(UGG) and tRNAArg(CCG) in vivo. Acid-urea gel analysis showed aa-tRNA levels decreased from 84% to 68% for tRNAPro(UGG) and from 74% to 62% for tRNAArg(CCG) in m1G37-deficient cells. A control tRNA not methylated by TrmD (tRNATyr) showed similar aminoacylation levels (78% vs 81%) in both conditions, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46, C120, C122 are well-supported by acid-urea gel Northern blot analysis (Figure 4A) with appropriate controls. The use of acidic extraction conditions to preserve aa-tRNA levels is methodologically sound. The inclusion of tRNATyr as a negative control strengthens the conclusion that the effects are specific to m1G37-dependent tRNAs. Three biological replicates were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C87"
+    ],
+    "result": "The loss of aminoacylation in m1G37 deficiency is not due to reduced expression or activity of ProRS or ArgRS. RNA-seq and ribosome profiling showed unchanged expression levels of proS and argS (Figure 4B), and cell lysates from m1G37-abundant and m1G37-deficient conditions exhibited similar aminoacylation activity when assayed with methylated tRNAs (Figure 4C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C87 are supported by complementary approaches: transcriptomics data (Figure 4B) and functional enzyme activity assays on cell lysates (Figure 4C). The lysate assays appropriately used m1G37-containing tRNAs as substrates to test enzyme activity independent of tRNA modification status. This effectively rules out changes in enzyme levels or activity as the cause of reduced aminoacylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C88",
+      "C121",
+      "C123"
+    ],
+    "result": "Over-expression of proS or argS rescues aminoacylation and partially restores cell viability in m1G37 deficiency. Over-expression of proS nearly fully restored viability approaching control levels, while argS over-expression had a much weaker effect. This indicates that loss of tRNAPro aminoacylation is the primary driver limiting cell growth under m1G37 deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C88, C121, C123 are supported by acid-urea gel analysis showing restored aminoacylation (Figure 4A) and spot dilution viability assays (Figure 4D). The differential rescue effects of proS versus argS over-expression provide strong evidence that tRNAPro aminoacylation is the major determinant of viability. However, the incomplete rescue by proS suggests additional factors may contribute to the growth defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "m1G37 deficiency causes widespread transcriptional changes affecting 220 up-regulated and 166 down-regulated genes (>2-fold, p<0.01). Many up-regulated genes are involved in amino acid biosynthesis and transport, with particularly strong induction (~16-fold) of the Leu operon (leuABCD). Translational changes were also observed, with 71 genes showing increased ribosome occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by RNA-seq data analyzed with DESeq and ribosome profiling data analyzed with Xtail (Figure 5A-C). The statistical thresholds (>2-fold change, p<0.01) are appropriate, and gene ontology enrichment analysis properly identifies affected pathways. Two biological replicates were used. The magnitude of transcriptional changes exceeding translational changes is noted and appropriately considered in the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C64",
+      "C65",
+      "C126",
+      "C129"
+    ],
+    "result": "Ribosome stalling at Leu CUA codons in the leuL leader sequence prevents transcriptional termination and activates the downstream leu operon in m1G37 deficiency. RNA-seq density decreased only 4-fold from leuL to leuA in trmD-deg cells versus 29-fold in controls. A reporter assay showed 11.5-fold activation with wild-type CUA codons but only 2.7-fold activation when CUA codons were changed to UUA codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C64-C65, C126, C129 are well-supported by multiple lines of evidence: ribosome profiling showing pausing at CUA codons (Figure 5D), RNA-seq showing reduced transcriptional termination (Figure 5D), and a reporter assay demonstrating codon-specific effects (Figure 5F). The reporter experiment with codon substitution provides strong evidence for the mechanistic model. Three biological replicates were performed for the reporter assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C127",
+      "C130",
+      "C131"
+    ],
+    "result": "Ribosome stalling at Pro codons (CCA-CCG) in the ilvL leader sequence activates expression of the downstream ilvG gene in m1G37 deficiency. RNA-seq density decreased only 9-fold from ilvL to ilvG in trmD-deg cells versus 45-fold in controls. qPCR analysis showed 3.1-fold up-regulation of ilvG with wild-type Pro codons but no increase when Pro codons were mutated to Ala codons. Over-expression of proS reduced ilvG activation from 3.1-fold to 1.5-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C66-C68, C127, C130-C131 are supported by ribosome profiling (Figure 5E), RNA-seq (Figure 5E), CRISPR-edited genomic mutations (Figure 5G), and qPCR analysis (Figure 5G). The use of chromosomal codon substitutions rather than plasmid reporters strengthens the physiological relevance. The rescue by proS over-expression provides additional mechanistic support. Three biological replicates were used for qPCR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C134",
+      "C135"
+    ],
+    "result": "Gene expression changes in m1G37 deficiency are similar to those in the bacterial stringent response. Genes down-regulated upon RelA over-expression were also down-regulated in m1G37 deficiency (log2(median)=-0.36, p=8.9\u00d710\u207b\u00b9\u2075), and genes up-regulated in RelA over-expression were also up-regulated in m1G37 deficiency (log2(median)=0.29, p=2.3\u00d710\u207b\u00b9\u00b9). Amino acid biosynthesis genes (n=89) and ribosomal protein genes (n=47) showed similar patterns of regulation in both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70-C75, C134-C135 are supported by systematic comparison of RNA-seq data from m1G37 deficiency with published stringent response data (Figure 6A-B). The statistical analysis is appropriate, using gene sets defined by prior work and applying t-tests and Mann-Whitney tests. The parallel changes in key pathways (amino acid biosynthesis up, ribosomal proteins down) provide strong evidence for similarity to the stringent response, though the magnitude of changes is somewhat smaller in m1G37 deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "m1G37 deficiency induces major metabolic reprogramming, with up-regulation of the TCA cycle (10 genes), glyoxylate cycle, and fatty acid oxidation pathways, while glycolysis genes are strongly repressed. This suggests a metabolic shift away from glucose consumption toward fatty acid consumption, prioritizing metabolic intermediates for amino acid biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by gene ontology enrichment analysis and pathway mapping of RNA-seq data (Figure 5C). The TCA cycle was the most enriched pathway in GO terms. The interpretation that cells shift metabolism to support amino acid biosynthesis is reasonable given the coordinated changes, though direct metabolite measurements would strengthen this conclusion. The inference about metabolic priorities is logical but remains somewhat speculative without metabolomics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C103",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "This work demonstrates that m1G37 is required for ribosomal activity at the A site, establishing its involvement throughout the entire elongation cycle of protein synthesis. Combined with prior work showing m1G37's role in maintaining reading-frame fidelity during and after translocation, this sustained involvement underscores m1G37's indispensable role in bacterial viability and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33, C103, C137-C140 represent the major conclusions of the work. The conclusion that m1G37 is required at the A site is well-supported by the ribosome profiling data showing A-site pausing (Figure 2), aminoacylation defects (Figures 3-4), and reduced peptide-bond formation (Figure 3B). The integration with prior work on frameshifting during/after translocation is appropriate and well-cited. The claim of a 'previously unrecognized function' is justified as prior work focused on frameshifting rather than A-site decoding defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors provide extensive background on m1G37 function based on prior literature, including its essentiality for life, conservation in specific tRNA isoacceptors (all tRNAPro, tRNAArg(CCG), and certain tRNALeu), established role in maintaining translational reading-frame, and known mechanisms of +1 frameshifting that occur after the A site during translocation or in the P site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C22 are background claims supported by appropriate citations to prior work. These establish the context for the current study. The citations appear accurate and relevant, covering the essential prior knowledge about m1G37 function, conservation, essentiality, and frameshifting mechanisms. These claims are properly attributed to prior work and provide necessary context for understanding the novelty of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The UGG isoacceptor of tRNAPro is uniquely critical for cell viability and shows the largest aminoacylation defect (10-fold decrease in kcat/Km) upon m1G37 loss. The m1G37-state tRNAPro(UGG) has the same kcat/Km as native-state tRNA, indicating m1G37 alone is sufficient for efficient aminoacylation. The reduction in kcat/Km is driven by increased Km, suggesting m1G37 is important for tRNA binding to ProRS, consistent with m1G37's position adjacent to the G35-G36 anticodon determinants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C111-C116 are supported by in vitro kinetic data (Figure 3A and source data) and structural reasoning based on cited literature. The methylation efficiency data (Figure 3\u2014figure supplement 1A) confirms high m1G37 levels in the modified tRNA preparations. The comparison of m1G37-state to native-state tRNA for the UGG isoacceptor is particularly informative. The structural interpretation linking m1G37 position to ProRS recognition is reasonable and supported by citations to structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors discuss therapeutic implications, noting that TrmD is a high-priority antibacterial target due to its unique structure, essentiality, and ability to disrupt bacterial cell envelopes. They speculate that targeting TrmD in combination with antibiotics affecting different stages of translation elongation may produce synergistic bactericidal effects to combat multi-drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 are supported by citations to prior work establishing TrmD as an antibacterial target and its effects on cell envelope structure. However, claims C105-C106 about combinatorial therapeutic approaches are explicitly speculative and not tested in this study. While the speculation is reasonable given the findings about m1G37's role throughout the elongation cycle, these remain hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose a mechanistic model where m1G37 deficiency causes ribosome stalling at the A site due to reduced aminoacylation and accumulation of uncharged tRNAs, which can trigger the stringent response through RelA sensing of deacylated tRNAs. Prolonged stalling can lead to ribosome collisions and increased frameshifting, and even tRNAs that enter the A site may undergo +1 frameshifting during translocation and destabilize P-site interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C89-C90 represent the authors' mechanistic model integrating their findings with prior work. The model is well-supported by the data presented: ribosome stalling (Figure 2), reduced aminoacylation (Figures 3-4), ribosome collisions (Figure 2C-D), and gene expression changes resembling stringent response (Figure 6). The connection to RelA and ppGpp synthesis is based on established knowledge of the stringent response mechanism, though direct testing of RelA involvement was not performed (appropriately acknowledged by the authors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors place their findings in evolutionary context by citing parallel stress responses in eukaryotes triggered by loss of other tRNA modifications (mcm5s2U34, t6A37, I34), which activate amino acid biosynthesis pathways (GCN4 in yeast, TOR in Drosophila, CPC-1 in Neurospora). They note their prior work showing that loss of s2 from cmnm5s2U34 in E. coli tRNAGln also reduced aminoacylation and A-site binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are background claims supported by appropriate citations establishing parallels between the bacterial response to m1G37 deficiency and eukaryotic stress responses to other tRNA modification deficiencies. These citations appear accurate and relevant. The comparison strengthens the significance of the findings by showing conservation of cellular responses to tRNA modification deficiencies across evolution, though the specific mechanisms differ between bacteria and eukaryotes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors note that over-expression of proS most effectively rescues viability, indicating tRNAPro aminoacylation is a major determinant of cell viability. They observe that loss of tRNAPro aminoacylation is uniformly manifested at the Km step, suggesting m1G37's proximity to the G36 anticodon determinant is important for bacterial ProRS. They speculate that human ProRS, which recognizes G35 instead, may better accommodate m1G37-deficient tRNAs, and that eukaryotic responses to m1G37 deficiency may occur at steps other than aminoacylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 are supported by the rescue data (Figure 4D) and kinetic analysis (Figure 3 source data). The structural reasoning about m1G37's position relative to ProRS recognition determinants is sound and supported by citations. However, claims C101-C102 about human ProRS and eukaryotic responses are explicitly speculative and not tested. While the speculation is reasonable based on known differences in tRNA recognition between bacterial and human ProRS, these remain hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The genes responsible for m1G37 biosynthesis differ between domains of life (trmD in bacteria, trm5 in archaea/eukaryotes), with fundamentally different protein structures and mechanisms. The authors exploited this difference to create conditional m1G37-deficient strains by expressing human trm5 under arabinose control in trmD-KO E. coli, where trm5 expression can be turned on with arabinose or turned off with glucose, leading to enzyme degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by appropriate citations to prior work establishing the distinct evolutionary origins of TrmD and Trm5, and by citations to the authors' own prior work developing the conditional system. This background is essential for understanding the experimental design. The trmD-KO (trm5+/-) system is one of two conditional systems used in the study and is well-validated by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C128",
+      "C132",
+      "C133",
+      "C136"
+    ],
+    "result": "The authors note that transcriptional changes were larger than translational changes, leading them to focus on transcriptional analysis. They provide mechanistic context for transcriptional attenuation systems (leuL, ilvL) that sense aa-tRNA levels. They note that the ilvG gene in their E. coli K12 MG1655-derived strain contains a frameshift mutation suggesting it may be a pseudogene. They infer that up-regulation of amino acid biosynthesis pathways results from genome-wide responses to ribosome stalling, and that metabolic changes may build up intermediates for amino acid biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125, C128, C132-C133, C136 represent methodological notes and interpretive context. C124 appropriately justifies the analytical focus on transcriptional changes. C125 provides necessary background on transcriptional attenuation mechanisms, supported by citations. C128 is an important caveat about the specific strain used. C132-C133 and C136 are reasonable inferences from the gene expression data, though they represent interpretations rather than direct experimental findings. The inference about metabolic reprogramming to support amino acid biosynthesis is logical given the coordinated pathway changes.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C13",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prior experimental work has successfully developed and tested several Anopheles gambiae homing gene drives targeting female fertility genes, including drives using vasa, zpg, and nos promoters, with zpg-based drives demonstrating cage population elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C5, C13, C24-C29 collectively describe prior experimental work on Anopheles gene drives, all supported by citations to published studies (Kyrou et al., 2018; Simoni et al., 2020; Hammond et al., 2016, 2017, 2021). The claims accurately represent established experimental results from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C35",
+      "C37",
+      "C40",
+      "C45",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors parameterized eight different gene drive variants (zpg, zpg2, zpgX, zpg2X, nos, nosF, nosF2, nosF3) with specific values for HDR cut rates, Cas9 deposition rates, and somatic fitness costs extracted from experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30, C35, C37, C40, C45, C47-C49 present specific parameter values extracted from experimental data analysis. However, the manuscript acknowledges substantial uncertainty in these parameterizations due to 'small sample sizes causing high error' and 'diverging interpretations of existing experimental data.' The authors present multiple alternative interpretations (zpg vs zpg2, nos vs nosF/nosF2/nosF3) precisely because the data does not unambiguously support a single parameterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In panmictic simulations, nos drives showed higher genetic load than zpg drives, but the standard nos drive spread slowly due to high fitness costs, while X-shredder addition improved zpg drive spread speed but reduced zpg2 genetic load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 describe simulation results from the panmictic discrete-generation model, supported by data shown in Figure 2. The genetic load measurements and spread rate observations are directly derived from the simulation outputs. The mechanistic explanation in C53 (X-shredder mostly in males avoiding female fitness costs) is a reasonable inference from the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In spatial discrete-generation simulations with low-density growth rate of 10, zpg and zpgX drives resulted in 100% long-term chasing, zpg2 achieved 28% suppression, zpg2X achieved 12% suppression, standard nos resulted in ~100% chasing, nosF achieved 54% suppression, and nosF2/nosF3 achieved near-guaranteed suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C65 report specific simulation outcomes from the spatial discrete-generation model shown in Figure 3A, with 200 replicates per drive. The quantitative suppression rates are directly extracted from simulation data. The claim that performance improved when growth rate was reduced to 6 (C57, C60, C64) is also supported by data in Appendix 1\u2014figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Across varied migration and growth rate parameters in the discrete-generation spatial model, suppression was more likely at higher migration values and lower growth rates, drive loss occurred only at very low values of both parameters, and chasing duration and female numbers decreased under favorable conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 describe general trends across parameter space shown in Figure 4 and Appendix 1\u2014figures 3-8, based on systematic variation of migration (0.01-0.06) and growth rate (2-12) parameters. Claim C70 is a reasonable inference about disease transmission given the relationship between female mosquito density and malaria transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The Anopheles-specific model showed substantially more frequent long-term chasing outcomes than the discrete-generation model, with most drives performing more poorly (e.g., zpg2 suppression dropped from 28% to 0.5%, nosF from 54% to 0.5%), and only nosF3 reliably suppressing populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 compare simulation outcomes between the two models, with specific quantitative differences reported (Figure 3B vs 3A). The data clearly shows reduced suppression rates in the Anopheles model. Claim C77 is labeled as speculation by the authors themselves, appropriately acknowledging uncertainty about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In the Anopheles-specific spatial model across varied parameters, chasing outcomes dominated the parameter space, drive-loss was extremely uncommon, and only nosF2 and nosF3 performed consistently well at moderate to high migration values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe results from systematic parameter variation in the Anopheles-specific model (Figure 5, Appendix 1\u2014figures 9-14), directly comparing outcomes to the discrete-generation model. The trends are clearly visible in the presented figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C81",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The combined homing/X-shredder drive (zpg2X) is less effective at population suppression than the zpg2 drive alone, with lower genetic load (0.79 vs 0.95) and poor performance in spatial simulations due to fundamental limitations of X-shredders and spatial dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C81, C85-C88 present a major conclusion of the study. The reduced effectiveness is supported by simulation data (Figures 2-3), showing lower genetic load (C51, C86) and reduced suppression rates in spatial models. The mechanistic explanations (C87: X-shredders have fundamentally lower genetic load; C88: poor spatial performance) are supported by both current simulation results and citations to prior work (Champer et al., 2021a).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C82",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Drives based on the nos promoter may be more promising than originally thought, particularly when somatic fitness costs are reduced (nosF, nosF2, nosF3), because reduced fitness costs increase drive spread rate in spatial scenarios, allowing faster conversion of wild-type alleles and reducing chasing opportunities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C82, C92-C97 present the second major conclusion. The superior performance of nos variants with reduced fitness costs is supported by simulation data (Figures 2-3). The mechanistic explanation (C95-C97) linking reduced fitness costs to faster spread and reduced chasing is a reasonable inference from the spatial model dynamics. However, C82 appropriately qualifies this conclusion as dependent on 'which interpretation of the experimental data proves to be the most accurate,' acknowledging parameter uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The Anopheles-specific model mirrors the discrete-generation model but with substantially greater difficulty eliminating populations, likely due to competition affecting offspring viability rather than female fecundity, single mating reducing drive migration, and higher larval numbers reducing stochastic elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 accurately describe the comparison between models (supported by Figures 3-5). Claims C100-C103 propose mechanistic explanations for the differences, appropriately labeled as speculation (C100) or inference (C102-C103). These explanations are plausible given the model design differences and are supported by citation to prior work (Liu et al., 2022) for C103.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior modeling work established that homing suppression drives can eliminate panmictic populations if genetic load is sufficient, but spatial models show that population structure can prevent suppression through 'chasing' dynamics, and modest efficiency differences between drives can have large effects on outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 accurately summarize prior modeling literature, all supported by appropriate citations (Deredec et al., 2011; Champer et al., 2021a,b; North et al., 2019, 2020; Bull et al., 2019; and others). These claims establish the scientific context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Combined X-shredder systems have potential advantages including continued suppression in the presence of functional resistance alleles and faster reduction of biting females, though female dsx homozygotes also cannot bite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 acknowledge potential advantages of X-shredder systems despite their overall inferior performance. C89 and C90 are supported by citations and theoretical understanding, while C91 is supported by experimental citation (Kyrou et al., 2018). These claims provide balanced discussion of the trade-offs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The Anopheles model represents increased realism compared to discrete-generation models, but has limitations including unitless distances, lack of long-distance migration, and exclusion of functional resistance evolution during chasing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 appropriately acknowledge model limitations. C104 is a fair assessment of the model design. C105 is a factual statement about the model. C106 is appropriately labeled as speculation. C107 describes an acknowledged limitation. C108 is supported by citation (Champer et al., 2021a).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Many current gene drive designs may be close to the boundary between success and failure due to chasing, making small parameter differences critical, and a standard homing suppression drive using the nos promoter targeting dsx with multiplexed gRNAs may be optimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are reasonable inferences from the simulation results showing that several drives (zpg2, zpg2X, nosF) had intermediate performance highly sensitive to ecological parameters. Claim C112 represents the authors' final recommendation, appropriately supported by simulation results and citations to relevant experimental work, though qualified with 'may be' acknowledging remaining uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Future experimental work could resolve parameter uncertainties through split-drive systems, sequencing, or fertility assessments, and batch effects could substantially impact fertility measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 suggest future experimental directions. C83 is supported by citation to established methods (Champer et al., 2019). C84 is supported by citations to multiple studies showing batch effect impacts (Hammond et al., 2021; Champer et al., 2020a,c; Metzloff et al., 2022; Yang et al., 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The modeled gene drives target haplosufficient female fertility genes, with drive heterozygotes fertile but homozygotes sterile, resistance alleles mostly nonfunctional (r2), and X-shredders biasing sex ratios by cleaving X-chromosomes while relying on linked homing elements for inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C126 describe the fundamental mechanisms and assumptions of the modeled gene drives. These are based on established knowledge of gene drive biology (C113-C118, C121-C124), supported by citations where appropriate (C119-C120), and clearly stated as model assumptions (C125-C126). Figure 1 provides visual support for these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C145",
+      "C146"
+    ],
+    "result": "The discrete-generation model simulates 50,000 diploids in SLiM with 1% drive release after 10 generations, implementing density-dependent fecundity, spatial mating restrictions, and offspring dispersal, with Green's coefficient tracking spatial clustering dynamics during chasing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C142, C145-C146 describe the discrete-generation model implementation. These are factual descriptions of model design and implementation, appropriately citing the software used (SLiM, Haller and Messer, 2019) and prior work (Champer et al., 2021a). The description of Green's coefficient dynamics (C145-C146) is supported by simulation observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The Anopheles-specific model implements weekly time-steps with overlapping generations, single mating with 5% weekly re-mating, age-structured survival, density-dependent larval competition, and spatial dynamics calibrated to field data suggesting ~3.3 km simulation area and reasonable population density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C173 describe the Anopheles-specific model implementation. These are factual descriptions of model design, appropriately citing biological data sources (Degner and Harrington, 2016; Richardson et al., 2015; Tripet et al., 2003; Gomulski, 1990; Yaro et al., 2006; Christiansen-Jucht et al., 2014; Yao et al., 2022; Gonz\u00e1lez Jim\u00e9nez et al., 2019; Matthews et al., 2020; Arifin et al., 2014). The calibration to field data (C170-C173) involves reasonable calculations and appropriately acknowledges uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Malaria kills over 400,000 and infects over 200 million people annually, such that modest improvements in gene drive efficiency could substantially reduce disease burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 cite WHO statistics (World Health Organization, 2019) for malaria burden. Claim C12 is a reasonable inference about the potential impact of improved gene drives given the large disease burden.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Homing gene drives disrupting female fertility genes can induce population collapse and may be highly effective tools to combat malaria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is supported by experimental citations showing population collapse in cage studies. Claim C3 is appropriately speculative ('may be') about the potential application, representing a reasonable inference from the experimental and modeling evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "X-shredder elements bias inheritance towards male offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 describes established knowledge about X-shredder mechanisms, consistent with the detailed mechanistic description in C121-C122.",
+    "result_type": "MINOR"
+  }
+]

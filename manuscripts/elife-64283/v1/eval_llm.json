@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The manuscript provides extensive background on eukaryotic translation initiation, ribosome recycling, and translational control mechanisms, drawing on established knowledge and prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 represent established knowledge about translation initiation, ribosome recycling, and translational control, all supported by appropriate citations to prior work. These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Previous work by the authors established that yeast mutants lacking Tma64 and either Tma20 or Tma22 exhibit broad defects in 40S recycling, including ribosome queuing upstream of stop codons and increased 3'UTR reinitiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C41 summarize prior findings from the authors' previous publication (Young et al., 2018), providing essential context for the current study. These are appropriately cited and form the basis for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The tma\u2206\u2206 mutant exhibits hallmarks of impaired 40S recycling: ribosome queuing ~30 nt upstream of stop codons, elevated 80S occupancy in 3'UTRs, reduced polysome/monosome ratio, and accumulation of halfmer polysomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are directly supported by ribosome profiling data (Figure 1A-B) and polysome profiles (Figure 1C, Figure 1\u2014figure supplement 2). These findings reproduce and extend previous observations, confirming the recycling defect in the tma\u2206\u2206 mutant under the experimental conditions used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In the tma\u2206\u2206 mutant, 378 mRNAs show increased relative translation efficiency (TE) and 175 mRNAs show decreased TE (FDR < 0.05), with these changes largely independent of mRNA abundance changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by DESeq2 analysis of ribosome profiling data (Figure 1D-E). The statistical analysis is appropriate, with clear FDR thresholds and demonstration that TE changes are independent of transcriptional changes, strengthening the conclusion of translational reprogramming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "mRNAs with increased TE in the tma\u2206\u2206 mutant (\u0394TEtma\u2206\u2206_up) are enriched for features of 'strong' mRNAs (high basal TE, short CDS/5'UTR, good Kozak context, high abundance/stability), while mRNAs with decreased TE show opposite 'weak' mRNA features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 are comprehensively supported by multiple analyses (Figure 2A-F, Figure 2\u2014figure supplement 1-2) examining mRNA features and their correlations with TE changes. The statistical tests are appropriate (Kolmogorov-Smirnov, Mann-Whitney U, Spearman correlation), and the pattern is consistent across multiple independent features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The tma64\u2206 single mutant lacks the recycling defect phenotypes of the tma\u2206\u2206 double mutant and shows no significant genome-wide TE changes, suggesting MCT-1/DENR is more important than eIF2D for 40S recycling or that they are fully redundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are supported by polysome profiles (Figure 3A) and ribosome profiling data (Figure 3B-E). The absence of recycling phenotypes and minimal TE changes in tma64\u2206 contrasts sharply with the tma\u2206\u2206 mutant, supporting the interpretation about relative importance of the factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SM treatment of WT cells induces eIF2\u03b1 phosphorylation, reduces bulk translation initiation, strongly induces GCN4 translation (~30-fold), but does not impair 40S recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by polysome profiles (Figure 1C) and ribosome profiling data (Figure 4A, Figure 1A-B). The GCN4 induction serves as a positive control for eIF2\u03b1 phosphorylation, and the absence of recycling defects distinguishes this condition from the tma\u2206\u2206 mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SM treatment causes widespread TE reprogramming (889 up, 846 down at FDR < 0.05), with upregulated mRNAs enriched for 'strong' mRNA features and downregulated mRNAs enriched for 'weak' features, similar to the tma\u2206\u2206 mutant pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 are supported by comprehensive analysis of ribosome profiling data (Figure 4B-D, Figure 4\u2014figure supplement 1, Figure 2\u2014figure supplement 1-2). The pattern mirrors that seen in the tma\u2206\u2206 mutant, supporting the hypothesis that limiting 43S PICs drives similar TE reprogramming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "There is substantial overlap in mRNAs showing TE changes between tma\u2206\u2206 mutations and SM treatment, with shared enrichment for translation/ribosome biogenesis genes among upregulated mRNAs and similar functional categories among downregulated mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are supported by hierarchical clustering (Figure 4E), Venn diagram analysis (Figure 4F), and GO analysis (Figure 4\u2014figure supplement 3, 4). The significant overlaps and shared functional enrichments strengthen the conclusion of common mechanisms underlying TE reprogramming in both conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "SM treatment of the gcn4\u2206 mutant produces TE reprogramming similar to SM-treated WT and the tma\u2206\u2206 mutant, indicating the reprogramming occurs independently of Gcn4-mediated transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by correlation analysis (Figure 2\u2014figure supplement 2D) showing similar patterns of TE changes with mRNA features in the gcn4\u2206 mutant as in other conditions. This control experiment strengthens the conclusion that translational reprogramming is not secondary to transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The rps26\u2206\u2206 mutant shows increased 60S/40S ratio and reduced polysome/monosome ratio indicative of 40S depletion and reduced translation initiation, but lacks recycling defect phenotypes and shows reduced (not increased) GCN4 TE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by polysome profiles (Figure 5A) and ribosome profiling data (Figure 5\u2014figure supplement 2A-C). The distinct phenotypic profile confirms that 40S depletion affects translation differently than recycling defects or eIF2\u03b1 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Depleting 40S subunits in the rps26\u2206\u2206 mutant causes TE changes (293 up, 195 down at FDR < 0.05) with similar patterns to tma\u2206\u2206 and SM treatment: upregulated mRNAs show 'strong' features and downregulated mRNAs show 'weak' features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by comprehensive analysis (Figure 5B-C, Figure 5\u2014figure supplement 3, Figure 2\u2014figure supplement 1-2). The similar pattern of TE reprogramming across three mechanistically distinct ways of limiting 43S PICs strongly supports the central hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "There is substantial coherence in TE changes across all three conditions (tma\u2206\u2206, SM treatment, rps26\u2206\u2206), with mRNAs showing similar directional changes and shared GO enrichments for ribosome/translation genes among upregulated mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by hierarchical clustering (Figure 5D), comparative box plots (Figure 5E-F), and GO analysis (Figure 4\u2014figure supplement 3A, 4G-I). The convergent evidence across three independent perturbations strongly supports the model of competition for limiting 43S PICs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The biochemically defined group of 'Strong Closed-Loop' (SCL) mRNAs, characterized by features of highly translated mRNAs, shows significantly elevated TEs but reduced abundance in all three conditions (tma\u2206\u2206, SM treatment, rps26\u2206\u2206).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by analysis of the SCL mRNA group (Figure 6A-F, Figure 6\u2014figure supplement 1). This provides an independent validation using a biochemically defined set of mRNAs, strengthening the generality of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The tma\u2206\u2206 mutations preferentially reduce expression of luciferase reporters with cap-proximal stem-loops (especially the more stable one) but not cap-distal stem-loops, supporting the idea that limiting 43S PICs preferentially affects mRNAs with impaired PIC attachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by luciferase reporter assays (Figure 6\u2014figure supplement 2). The differential effects on cap-proximal vs. cap-distal structures provide mechanistic insight, though the experiment uses only one mutant condition and a limited set of reporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Single or double deletions of TMA genes do not significantly reduce GCN4-lacZ expression in SM-treated cells, suggesting the Tma proteins are not required for reinitiation at GCN4 following uORF1 translation when TC levels are reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by \u03b2-galactosidase assays (Figure 7A). The lack of effect on GCN4 translational control argues against a role for Tma proteins in reinitiation on this well-characterized uORF-containing mRNA, though this is a negative result for a single mRNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "mRNAs containing AUG uORFs show reduced CDS TEs in the tma\u2206\u2206 mutant and also in SM treatment and rps26\u2206\u2206 conditions, but these mRNAs also have lower than average basal TE in WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are supported by analysis of uORF-containing mRNAs (Figure 7B-D). The observation that these mRNAs are inherently 'weak' provides an alternative explanation for their TE reductions beyond impaired reinitiation, though this does not definitively rule out reinitiation defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Analysis of relative ribosome occupancy (RRO) for uORFs shows no significant changes in the tma\u2206\u2206 mutant (even at FDR 0.5), but the same uORF-containing mRNAs show increased 3'UTR/CDS ratios, indicating increased reinitiation at main CDS stop codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by RRO analysis (Figure 7E-F, Figure 7\u2014figure supplement 1). The lack of RRO changes argues against impaired reinitiation after uORF translation, though the authors acknowledge potential confounding from ribosome queuing at uORF stop codons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C120",
+      "C121"
+    ],
+    "result": "Reducing 43S PICs by three different mechanisms (impaired recycling, eIF2\u03b1 phosphorylation, 40S depletion) causes similar TE reprogramming favoring 'strong' over 'weak' mRNAs, consistent with the Lodish model of competition for limiting initiation factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C120-C121 represent the central conclusion of the study, supported by convergent evidence from multiple experimental approaches and comprehensive bioinformatic analyses. The consistency across three mechanistically distinct perturbations, the coherent patterns of mRNA features, and agreement with theoretical predictions provide strong support for this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "It remains unknown whether Tma64 or Tma20/Tma22 can substitute for eIF2 in Met-tRNAi recruitment during primary initiation on native yeast mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 identifies a knowledge gap that the study does not definitively resolve. While the tma64\u2206 single mutant shows minimal TE changes, the authors acknowledge this could reflect redundancy with MCT-1/DENR rather than absence of eIF2-independent initiation activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "A tma20\u2206 single mutant exhibits an abnormally high 40S/60S ratio consistent with a 60S biogenesis defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 cites a previous finding (Fleischer et al., 2006) that is relevant for interpreting the halfmer polysomes observed in the tma\u2206\u2206 mutant. This is appropriately cited prior work used to contextualize the current findings.",
+    "result_type": "MINOR"
+  }
+]

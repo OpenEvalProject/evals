@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes YB-1 as a relevant therapeutic target based on prior literature. YB-1 is an RNA-binding protein involved in cancer progression, chemotherapy resistance, and viral replication, with the human genome encoding over 1000 RBPs that provide diverse RNA interaction targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by multiple citations to prior work (Van Nostrand et al., 2020; Castello et al., 2012; Wu et al., 2015; Kang et al., 2013; Yang et al., 2010; El-Naggar et al., 2019; Jung et al., 2018; Poudyal et al., 2019; Schmidt et al., 2021; Kosti et al., 2016). The claims establish the biological rationale for targeting YB-1 and are appropriately attributed to published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Molecular dynamics simulations identified a druggable pocket (the 'Quercetin-pocket') on the outside surface of the YB-1 CSD \u03b2-barrel. This pocket is located at the third \u03b2-hairpin, monitored by K118 and F85 side chains, with opening controlled by a cation-\u03c0 interaction between K118 and F85. Key RNA-binding residues (W65, Y72, F74, F85, H87, K118, E121) are located in this pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by MD simulation data (Figure 1\u2014figure supplement 1) and NMR data (Figure 1\u2014figure supplement 2). The structural characterization of the pocket, including the cation-\u03c0 interaction mechanism and identification of key residues, is demonstrated through computational and experimental approaches. The convergence of MD and NMR results strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "A large-scale computational screening approach was implemented to identify potential YB-1 inhibitors. The approach screened 208 million pharmacophores representing ~7.3 million commercially available molecules from MolPort, ultimately retaining 78 molecules after filtering. In parallel, 62 FDA-approved drugs were selected through automated blind docking of 4700 FDA-approved drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 describe the computational methodology and are supported by the detailed methods section and results. The numbers are specific and the filtering process is described. However, the success of this approach must be evaluated based on subsequent validation (addressed in other results).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The MT bench assay was validated as a robust method for detecting RNA-protein interactions in cells. The assay achieved a SSMD value of 8.1, indicating high sensitivity and efficiency. DNA-binding proteins (TOP1, APE1, LIG1) failed to bring mRNA onto microtubules, demonstrating specificity for RNA-binding proteins. mRNA enrichment profiles were similar between MT co-sedimentation and classical mRNA IP methods for the same RBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are well-supported by experimental data in Figure 3 and supplementary figures. The SSMD value of 8.1 is appropriately interpreted using the cited reference (Bray and Carpenter, 2017). The negative controls with DNA-binding proteins (Figure 3\u2014figure supplement 3) and comparison with classical IP methods (Figure 3d, Figure 3\u2014figure supplement 4) provide strong validation of the assay's specificity and reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The integrative approach identified 22 hits validated by MD simulations and NMR spectroscopy, of which 11 significantly interfered with mRNA:YB-1 binding in cells at 10 \u03bcM. These 11 hits include 2 flavonols (F2, F3), 7 chalcones (C1, C2, C3, C6, C8, C11, C12), 1 flavonoid analog (A3), and 1 FDA-approved PARP-1 inhibitor (P1/Niraparib). Five selected hits (F2, C3, C8, A3, P1) specifically targeted YB-1 without affecting HuR or FUS interactions with mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C24 represent the primary findings and are supported by MT bench data (Figure 4a, 4b), NMR data (Figure 2\u2014source data 1), and MD simulations (Figure 2). The specificity testing against HuR and FUS (C24) strengthens the conclusion. The 50% success rate in cells (11/22) and 88% in vitro (15/17) demonstrates the effectiveness of the computational approach, though the discrepancy suggests cellular factors affect compound activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C62"
+    ],
+    "result": "The computational approach achieved an 88% success rate in vitro, with 15 of 17 predicted hits confirmed to bind YB-1 in the targeted pocket by NMR spectroscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 and C62 are supported by NMR data described in the results section and Figure 2\u2014source data 1. The high success rate (88%) validates the computational screening approach for in vitro binding. However, the manuscript notes that 15 of 40 molecules tested had solubility issues preventing NMR analysis, which should be considered when interpreting the success rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C64",
+      "C65"
+    ],
+    "result": "PCA analysis revealed that all selected molecules are multi-aromatic ring systems sandwiched in the Quercetin-pocket with F85 and K118 as common anchoring residues. P1 shows the highest selectivity by interacting with both central (F85, K118, G119) and peripheral (D83, E117) residues of the pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C64, and C65 are supported by PCA analysis (Figure 5) and MD simulation data. The PCA identifies P1 as an outlier with unique binding characteristics, and the structural analysis confirms interactions with multiple pocket residues. The inference about P1's higher selectivity (C27) is reasonably drawn from the data, though it is explicitly noted as an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C31",
+      "C34",
+      "C35"
+    ],
+    "result": "P1 binds YB-1 with a single binding mode (as shown by NMR titration) with a Kd of ~6 \u03bcM (by ITC and ABFE simulations). The highest contributing residues are F85 (\u221225.5 kJ/mol) and K118 (\u221219.8 kJ/mol), with P1 retained by a hydrophobic sandwich. The F85A mutant no longer interacts with P1, and the binding pocket collapses due to this mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C31, C34, and C35 are well-supported by multiple complementary techniques: NMR titration (Figure 6\u2014figure supplement 1a), STD NMR (Figure 6\u2014figure supplement 1b), MD simulations (Figure 6a), ITC measurements (Appendix 5\u2014table 1), and mutagenesis studies (Figure 6\u2014figure supplement 2). The convergence of computational (ABFE: \u22127.24 kcal/mol) and experimental (ITC: \u22127.14 kcal/mol) binding free energies is particularly strong evidence. The F85A mutant data provides critical validation of the binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C68"
+    ],
+    "result": "P1 shows specificity for YB-1(CSD) compared to other RNA-binding proteins. P1 exhibits weak and nonspecific binding to LIN28(CSD) and no relevant interaction with HuR(RRM2) by NMR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C68 are supported by NMR data (Figure 6\u2014figure supplement 3a, 3b). The CSPs in LIN28(CSD) are significantly lower than in YB-1(CSD) and located outside the Quercetin-pocket, supporting weak/nonspecific binding. No significant CSPs were detected for HuR(RRM2). This specificity is important for therapeutic potential, though testing against only two other RBPs is somewhat limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42"
+    ],
+    "result": "P1 and C8 can interfere with RNA:YB-1 binding in vitro as demonstrated by competitive NMR analysis, while P2 (Olaparib, another PARP inhibitor) showed no effect. The scalar product analysis of chemical shift vectors indicates competition between P1/C8 and RNA for YB-1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41, and C42 are supported by NMR competition experiments (Figure 7a, Figure 7\u2014figure supplement 1). The scalar product analysis provides a quantitative measure of competition versus additivity. The negative control P2 showing no effect strengthens the conclusion that the observed effects are specific to P1 and C8, not a general property of PARP inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C63"
+    ],
+    "result": "The computational approach achieved a 50% success rate in cells, with 11 of 22 predicted hits found to inhibit RNA:YB-1 interactions. No significant CSPs were detected for P2, P3, or P4 (other PARP inhibitors) in vitro, demonstrating specificity of P1 among PARP inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C63 are supported by MT bench data (Figure 4a) and NMR data (Figure 2\u2014source data 1). The 50% success rate in cells is lower than the 88% in vitro success rate, which the authors appropriately attribute to cellular factors (permeability, off-targets, half-life). The lack of binding by other PARP inhibitors (P2, P3, P4) supports the specificity of P1's interaction with YB-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "At high concentrations (100 \u03bcM), P1 induces the formation of YB-1-rich granules in HeLa cells that are distinct from arsenite-induced stress granules. These granules are poorly enriched in mRNA compared to stress granules. YB-3 (which shares an identical CSD with YB-1) is significantly recruited to these granules, while HuR is recruited to a lesser extent. No other PARP-1 inhibitors induced YB-1-rich granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by immunofluorescence data (Figure 8a, Figure 8\u2014figure supplement 1). The distinction from arsenite-induced stress granules is demonstrated by differential mRNA enrichment (scatter plots in Figure 8a). The recruitment of YB-3 but not other PARP inhibitors supports specificity. However, the high concentration required (100 \u03bcM) raises concerns about specificity, which the authors acknowledge. The result is supported but the biological relevance at such high concentrations is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "P1 treatment (10 \u03bcM, 2 hr) significantly decreased mRNA translation in control cells (siNEG) but not in YB-1-depleted cells (siRNA), as measured by puromycin incorporation. P2 had no measurable impact on mRNA translation in either condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C55 are supported by puromycin incorporation data (Figure 8b, Figure 8\u2014figure supplement 2, 3). The YB-1 dependence of the P1 effect (no effect in siRNA-treated cells) is critical evidence that P1's effect on translation is mediated through YB-1 rather than PARP inhibition. The negative control P2 strengthens this conclusion. However, the mechanism by which P1 affects translation through YB-1 is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "All PARP-1 inhibitors decrease cell number after 48 hr treatment, with P3 showing the strongest effect. P2 and P3 further decrease cell number in YB-1-depleted cells (siRNA) compared to control cells (siNEG), while P1 shows the opposite trend (further decreasing cell number in siNEG-treated cells). Cell separation distance decreases significantly in YB-1-poor cells treated with P1 compared to siNEG-treated cells, in contrast to P2 and P3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C59 are supported by cell number data (Figure 8\u2014figure supplement 5) and cell separation distance data (Figure 8\u2014figure supplement 4). However, the interpretation is complex and the authors acknowledge that the differences for P1 are non-significant (C58). The opposite trends for P1 versus P2/P3 in siRNA vs siNEG cells are intriguing but require further investigation. The authors speculate about mechanisms (gain of toxic function, decreased translation) but do not provide definitive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "The integrative approach combining computational screening, NMR validation, and the MT bench assay successfully identified potent YB-1 inhibitors. P1 (an FDA-approved PARP-1 inhibitor) displays the highest selectivity by targeting key residues via mostly van der Waals interactions. Functional assays show P1 treatment leads to decreased YB-1-related mRNA translation, cell proliferation, and appearance of YB-1-rich granules, consistent with interference of mRNA:YB-1 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, C66, C67, and C69 represent the overall conclusions of the study. These are well-supported by the convergence of multiple lines of evidence: computational predictions, NMR binding studies, MT bench cellular assays, and functional assays. The MT bench assay (C61) successfully bridges the gap between in vitro and functional assays. The identification of P1 as a lead compound with multiple validation approaches represents a significant achievement. However, the high concentrations required for some cellular effects and the complexity of interpreting functional assays with a general RBP like YB-1 are acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The pronounced hematological adverse effects of P1 (particularly thrombocytopenia) may be explained by YB-1's role in megakaryocyte versus erythroid differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is speculative and supported only by citations to prior work (LaFargue et al., 2019; Bhullar and Sollars, 2011) without experimental validation in this study. While the hypothesis is plausible given P1's interaction with YB-1, no data are presented to test this connection. This represents a reasonable speculation for future investigation but is not a supported result of the current work.",
+    "result_type": "MINOR"
+  }
+]

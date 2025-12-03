@@ -1,0 +1,204 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41"
+    ],
+    "result": "C. elegans head oscillation during forward locomotion constitutes a stable, nonsinusoidal limit cycle. Transient optogenetic inhibition of head muscles produces a biphasic, sawtooth-shaped phase response curve (PRC) with sharp transitions from phase delay to advance. The system returns to its normal oscillation after perturbation regardless of initial deviation, demonstrating stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C41 collectively demonstrate the stable oscillator properties through multiple lines of evidence: experimental PRCs showing sawtooth shape (C26, C36), recovery dynamics after perturbation (C29, C30), control experiments (C37), robustness across different pulse durations and body locations (C38, C39), and bimodality analysis (C41). The data from Figure 3 and supplements provide strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The sawtooth-shaped PRC is maintained when inhibiting cholinergic neurons or B-type motor neurons instead of muscles, and persists in unc-49(e407) mutants lacking functional D-type motor neurons. This suggests that transient muscle and neuron inhibition interrupt motor circuit dynamics similarly, and that D-type motor neurons are not necessary for the sawtooth PRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by experimental data from multiple transgenic strains (Figure 3 supplements 6-8). The consistency of sawtooth PRCs across different perturbation targets (muscles, all cholinergic neurons, B-type neurons) and genetic backgrounds (unc-49 mutants) provides strong evidence for the robustness of the underlying mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A relaxation oscillator model based on proprioceptive thresholds that switch active muscle moment reproduces experimental observations including the sawtooth PRC, nonsinusoidal phase portraits, asymmetric bending dynamics, and gait adaptation to external load. The model explains PRC features through a threshold-switch mechanism where perturbation timing relative to switch points determines phase shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C63 describe the model and its agreement with experiments. The model successfully reproduces multiple independent experimental observations (Figures 4-5): free-moving dynamics (C55-C56), PRCs (C51, C58), and load adaptation (C53). The mechanistic explanations (C59-C63) are logically consistent with the model structure. However, the model has 5 parameters fitted to data, which somewhat limits its predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The relaxation oscillator model quantitatively predicts how undulatory frequency and amplitude depend on external viscosity, matching previous experimental results. Model simulations predict that PRCs shift to later phases as viscosity increases, which is confirmed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C102-C104 demonstrate the model's ability to predict gait adaptation to environmental changes. The quantitative agreement between model predictions and experimental data for both frequency/amplitude dependence (Figure 7C,D) and PRC shifts (Figure 7F,G) across three viscosities provides strong validation. The model successfully accounts for prior published findings (C103-C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Comparison of four oscillator models (threshold-switch, van der Pol, Rayleigh, Stuart-Landau) shows that relaxation oscillators (threshold-switch, van der Pol, Rayleigh) can reproduce nonsinusoidal dynamics and sawtooth PRCs, while the Stuart-Landau oscillator cannot. The threshold-switch model shows the best overall agreement with experiments, supporting a relaxation oscillation mechanism for C. elegans motor rhythm generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C78 systematically compare alternative models (Figure 5 supplement 1). The analysis shows that relaxation oscillator properties (nonsinusoidal waveforms, sawtooth PRCs) are necessary but not sufficient - the threshold-switch model has the lowest MSE (C75). The conclusion that relaxation oscillation underlies rhythm generation (C78) is well-supported by the comparative analysis, though it remains a model-based inference rather than direct experimental proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Single-side optogenetic inhibition (dorsal or ventral muscles only) produces PRCs with peaks during the phase when the illuminated side is bending, consistent with model predictions. Dorsal-side illumination shows smaller paralytic response than ventral-side, possibly due to differences in opsin expression or localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 describe single-side perturbation experiments (Figure 6). The qualitative agreement with model predictions (C99) supports the model framework. However, the quantitative discrepancy between dorsal and ventral responses (C100) is explained speculatively (C101) rather than definitively. The experiments provide additional validation of the model but with some unexplained asymmetry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The model mechanism involves a relaxation oscillation process with proprioceptive feedback based on curvature and its time derivative. Previous studies suggest that B-type and SMDD motor neurons have proprioceptive capabilities and may be involved in rhythm generation. Mechanosensors sensitive to strain rate have been observed in C. elegans and other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 describes the model mechanism, while C87-C96 cite prior work suggesting biological substrates for proprioception. However, these claims do not provide direct experimental evidence linking specific neurons to the threshold-switch mechanism proposed in the model. The biological implementation remains speculative, though plausible based on prior literature. Further experiments are needed to identify the actual neural substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims about motor rhythms in animals: CPGs generate rhythms through reciprocal inhibition, sensory feedback modulates motor patterns, and biomechanical properties (elasticity) contribute to locomotion efficiency across various animal systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are well-established background knowledge supported by extensive prior literature citations. These provide context for the C. elegans work but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims about C. elegans locomotion: forward movement involves dorsoventral undulations mediated by a neuromuscular circuit including B-type cholinergic and D-type GABAergic motor neurons. Multiple oscillators exist in the ventral nerve cord. Various neurons (B-type, SMDD, DVA, PVD) have been implicated in proprioception and rhythm generation, though mechanisms remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C25 summarize established knowledge about C. elegans motor circuits from prior literature. These are well-supported by citations but represent background rather than novel findings. Claim C19 acknowledges that mechanisms are poorly understood, motivating the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Sawtooth-shaped PRCs are observed in various oscillatory systems including the van der Pol oscillator. Relaxation oscillators have been described in multiple biological systems including barnacle muscles, human heart, and stick insect locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C83-C86 provide context from prior literature on relaxation oscillators in other systems. These are well-supported by citations and help interpret the C. elegans findings but are not novel results of this study.",
+    "result_type": "MINOR"
+  }
+]

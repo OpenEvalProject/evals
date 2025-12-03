@@ -1,0 +1,465 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The fecal fluid proteome of Acromyrmex echinatior consists of 101 core proteins (present in at least 3 of 4 colonies), of which 91 (90%) were annotated. The proteome is dominated by degradation enzymes in five functional categories (oxidoreductases, proteolytic enzymes, CAZymes, phosphate-liberating enzymes, and lipidolytic enzymes), with 86 proteins originating from the fungal symbiont and only 15 from the ant genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 provide a clear characterization of the fecal fluid proteome based on mass spectrometry data from four colonies. The identification of 174 total proteins, filtering to 101 core proteins, successful annotation of 91 proteins, functional categorization, and determination of origin (86 fungal, 15 ant) are all directly supported by the proteomics data presented in Table 1 and Figure 1. The methodology is appropriate and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C47",
+      "C68"
+    ],
+    "result": "Two proteins, alkaline phosphatase (Protein ID 75) and laccase LgLcc1 (Protein ID 97), were exceptionally abundant, jointly comprising almost 25% of total fecal protein mass. Together with three other highly abundant proteins (1,3-beta-glucanase, Metallopeptidase M35, and Serine protease S53), the five most abundant proteins contributed over 40% of total fecal protein mass. Glucose dehydrogenase (Protein ID 145) was the most abundant ant-encoded protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, C47, and C68 are directly supported by the LFQ intensity measurements from the proteome analysis (Table 1, Supplementary file 1). The quantification of relative protein abundances is a standard output of MaxQuant analysis, and the specific percentages and rankings are clearly stated and consistent with the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C48",
+      "C88"
+    ],
+    "result": "Five fungal GMC oxidoreductases were identified in the fecal fluid and phylogenetic analysis confirmed they cluster within the aryl alcohol oxidases, which are known to produce hydrogen peroxide from aromatic alcohols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C48, and C88 are supported by the proteome annotation (C38), phylogenetic tree analysis shown in Figure 3 (C48), and established biochemical knowledge about aryl alcohol oxidases (C88). The phylogenetic analysis used appropriate methods (M-coffee alignment, PhyML with Smart Model Selection) and the clustering pattern is clearly demonstrated in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C89"
+    ],
+    "result": "Fecal fluid contains substantial amounts of hydrogen peroxide, which increases upon addition of veratryl alcohol (substrate for aryl alcohol oxidases) or glyoxal (substrate for glyoxal oxidases), but not glucose or methanol. Catalase completely removes the hydrogen peroxide signal, confirming its presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C54, and C89 are supported by the hydrogen peroxide assay data shown in Figure 4A. The experimental design includes appropriate controls (catalase, different substrates) and statistical analysis (ANOVA with post-hoc tests, n=6 colonies). The substrate specificity (veratryl alcohol and glyoxal increase H2O2, glucose and methanol do not) is consistent with the presence of aryl alcohol oxidases and glyoxal oxidases identified in the proteome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C90"
+    ],
+    "result": "The iron concentration in fecal fluid averages 370 \u00b1 110 \u00b5M across six colonies, which is sufficient for Fenton chemistry to occur and corresponds to levels in natural wood-degrading systems, though lower than typical in vitro bioconversion experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C90 are supported by the iron measurement assay data (C55) and citations to relevant literature (C56-C57). The measured iron concentration is appropriate for Fenton chemistry based on cited studies (Hegnar et al., 2019; Elias and Waterhouse, 2010). The comparison to in vitro systems (C58) provides useful context. The methodology for iron measurement is described and appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C92"
+    ],
+    "result": "Fecal fluid produces hydroxyl radicals as measured by the deoxyribose assay. Addition of the iron chelator 1,10-phenanthroline significantly reduces hydroxyl radical production, consistent with Fenton chemistry, while the solvent control (methanol) has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 and C92 are supported by the deoxyribose assay data shown in Figure 4B. The assay is a standard method for detecting hydroxyl radicals (cited to Halliwell et al., 1988). The use of phenanthroline as an iron chelator and the appropriate solvent control strengthen the conclusion that hydroxyl radicals are produced via Fenton chemistry. Statistical analysis (paired t-tests, n=6 colonies) supports the significance of the phenanthroline effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C96",
+      "C97"
+    ],
+    "result": "Fecal fluid has measurable capacity to reduce Fe3+ to Fe2+, which is enhanced by glucose addition. This is consistent with the ant-encoded glucose dehydrogenase mediating iron reduction using glucose as an electron donor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C96-C97 are supported by the Ferrozine assay data shown in Figure 4C. The assay is appropriate for measuring Fe3+ reduction (cited to Goodell et al., 2006). The glucose-dependent enhancement of Fe3+ reduction is consistent with glucose dehydrogenase activity. The abundance of glucose dehydrogenase in the proteome (C47) and its ant origin (C35) support this interpretation. Statistical analysis confirms the significance of glucose addition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C98"
+    ],
+    "result": "Preliminary experiments showed that adding laccase substrates did not change the rate of Fe3+ reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64 and C98 report preliminary experimental results without detailed methodology, statistical analysis, or figures. While the authors acknowledge these are preliminary findings, the lack of supporting data makes it difficult to fully evaluate this result. The authors appropriately note that \"more elaborate experimentation will be needed in order to rule out\" laccase involvement in Fe3+ reduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C104",
+      "C122",
+      "C125"
+    ],
+    "result": "The symbiotic partnership manages a combination of oxidative (Fenton) and enzymatic biomass degradation through synergistic cooperation between fungal and ant-derived components. The Fenton pellets function as spatially isolated bioconversion reactors that avoid collateral damage to living tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C104, C122, C125 integrate the proteomics and biochemical assay results to support the conclusion that Fenton chemistry occurs in specialized substrate pellets. The evidence includes: (1) presence of all necessary Fenton components (H2O2-producing oxidoreductases, iron, Fe3+ reduction capacity), (2) detection of hydroxyl radicals, (3) spatial compartmentalization in pellets (C29, C46, C105-C106), and (4) complementary contributions from both fungal (oxidoreductases) and ant (glucose dehydrogenase) partners. The inference of synergistic cooperation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C46",
+      "C105",
+      "C106"
+    ],
+    "result": "Acromyrmex colonies concentrate chewed leaf fragments in pellets (~3 mm diameter) at the top of fungus gardens, which turn black within hours. Ants do not continue adding fecal fluid to existing pellets but dismantle them after they turn black to distribute the pre-treated material over the garden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C46, C105-C106 describe behavioral and observational data about pellet formation and processing. These observations are presented as direct data from colony observations and are consistent with the proposed Fenton chemistry mechanism. The behavioral pattern (pellet formation, blackening, dismantling) provides the spatial and temporal framework for understanding how Fenton chemistry is controlled in the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The fecal fluid proteome contains very limited cellulose-degrading enzymes (only one 1,4-beta-glucanase in low quantities in 3/4 colonies, one 1,4-beta-glucosidase that also targets hemicellulose, and cellobiohydrolase in only one colony at very low levels). This is consistent with cellulose degradation not being a primary function of fecal fluid, and supports previous findings that cellulose is largely discarded as waste rather than degraded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 are supported by the proteome data (Table 1, Supplementary file 1) showing low abundance and limited presence of cellulose-degrading enzymes. The interpretation is consistent with previous work (cited to Grell et al., 2013; Moller et al., 2011). The inference that Fenton chemistry provides sufficient cell wall disruption to access intracellular nutrients without complete cellulose degradation (C135) is reasonable given the data, though direct evidence for this mechanism would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Fecal fluid proteins consistently show the same banding pattern on SDS-PAGE gels, rejecting the null hypothesis that they are a random collection of proteins that escape digestion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by previous experimental observations (cited to Schi\u00f8tt et al., 2010) and the current proteome data showing consistent protein profiles across colonies (Figure 1A). The consistent banding pattern and high overlap of proteins across colonies (82 proteins in all 4 colonies, Figure 1A) support the inference that the fecal fluid proteome is specifically selected rather than random.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Alkaline phosphatase is the most abundant fecal protein, suggesting the importance of phosphorus mineralization. While phytin (a phosphorus storage compound) occurs in plant seeds, pollen, and vegetative tissues, leaf-cutting ants do not significantly forage on seeds but do harvest flowers whose pollen may be a phytin source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by the proteome data. Claim C69 is a reasonable inference from the high abundance. Claims C70-C72 provide context from the literature and natural history observations. The logic connecting high alkaline phosphatase abundance to phosphorus mineralization importance is sound, though the specific role of phytin from pollen (C72) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Lipidolytic enzymes have low overall abundance in fecal fluid. These enzymes may function in degrading cell membranes to liberate cytosolic compounds or interfere with plant defense signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by the LFQ intensity data (Figure 1B, Table 1). Claims C74-C75 are speculative interpretations supported by citations to relevant literature (Ghannoum, 2000; Wu and Li, 2015). The authors appropriately present these as possible functions (\"may\") rather than demonstrated functions. The speculation is reasonable but would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C110",
+      "C111"
+    ],
+    "result": "Glucose liberated from plant polysaccharides is primarily used to maintain the Fenton reaction via glucose dehydrogenase-mediated Fe3+ reduction in the pellets. This glucose dependence may provide a feedback loop for controlling Fenton chemistry. After pellet dispersal, NADH-quinone oxidoreductases in the fungus garden may take over iron reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is an inference based on the lack of effect of laccase substrates on Fe3+ reduction (C98), but C98 itself is based on preliminary experiments. Claims C100, C110-C111 are speculative inferences about the functional significance and spatial organization of iron reduction mechanisms. While the speculation is logical and consistent with the data, it lacks direct experimental support. The role of NADH-quinone oxidoreductase (C108-C111) is inferred from a previous study (Grell et al., 2013) but not directly tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Veratryl alcohol (or a derivative) may be produced in fungal gongylidia and pass through the ant gut to function in fecal fluid for substrate degradation. Hydrogen peroxide may also be produced by glyoxal oxidases using aldehydes from either aryl alcohol oxidation or direct plant cell wall degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 are speculative hypotheses based on: (1) the upregulation of the phenylalanine/tyrosine pathway in gongylidia (C114, cited to De Fine Licht et al., 2014), (2) the identification of glyoxal oxidases in the proteome (C52), and (3) the response to glyoxal addition (C54). While these speculations are logical and consistent with the data, they lack direct experimental evidence for veratryl alcohol production in gongylidia or its passage through the ant gut. The authors appropriately present these as possibilities (\"may\", \"might suggest\") rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "High laccase concentrations suggest a mechanism for Fe3+ to Fe2+ conversion similar to brown-rot fungi, but the ant-derived glucose dehydrogenase may allow laccases to be used specifically for decomposing secondary plant compounds. Positive selection on LgLcc1 in leaf-cutting ant ancestors would be consistent with laccase becoming redundant for iron reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is an inference based on laccase abundance and known mechanisms in brown-rot fungi. However, the preliminary experiments (C98) suggest laccase substrates don't affect Fe3+ reduction rate, which somewhat contradicts this interpretation. Claims C101-C103 are speculative interpretations connecting the glucose dehydrogenase alternative to laccase function and evolutionary history. The positive selection on LgLcc1 (C102) is from a previous study (De Fine Licht et al., 2013), but the functional interpretation (C103) is speculative. The uncertainty arises from conflicting lines of evidence about laccase's role in iron reduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Multiple parallel pathways for Fenton chemistry suggest robust functionality under various conditions. The toxicity of hydroxyl radicals constrains their use in free-living fungi, but the leaf-cutting ant symbiosis has resolved this by compartmentalizing Fenton chemistry in pellets. Low oxygen in ant guts prevents H2O2 production until fecal fluid is deposited on pellets exposed to atmospheric oxygen, spatially isolating the reaction from living tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 present a logical synthesis of the experimental findings with known biology of hydroxyl radicals and insect gut physiology. The inference about spatial compartmentalization (C122, C125) is well-supported by the behavioral observations (C29, C46, C105-C106) and the presence of all Fenton components in fecal fluid. The reasoning about oxygen limitation in guts (C123-C124) is based on established knowledge about insect gut physiology and is a reasonable explanation for how the system avoids self-damage. The overall argument is coherent and well-supported, though some elements are inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "A. echinatior has more glutathione S-transferase genes than other ants despite having fewer detoxification genes overall. Since glutathione S-transferase breaks down oxidized lipids, this suggests physiological mechanisms may exist to ameliorate inadvertent hydroxyl radical damage in the ant gut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is supported by a previous genome study (cited to Nygaard et al., 2011). Claim C127 is established biochemical knowledge. Claim C128 is a reasonable inference connecting the genomic observation to the potential for hydroxyl radical damage. However, this remains speculative as there is no direct evidence that these genes are actually protecting against Fenton-related damage. The inference is logical but would benefit from experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Fenton pellets have never been observed in Atta colonies maintained in the lab for ~25 years, suggesting this genus has evolved alternative mechanisms for efficient herbivory. Both Acromyrmex and Atta produce cellulose-rich waste and rear closely related L. gongylophorus cultivars.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 is a direct observational statement from long-term colony maintenance. Claim C139 is a reasonable inference from this observation, though it is speculative about what alternative mechanisms might exist. Claims C140-C141 provide context supported by observations and citations (Kooij et al., 2015b; Silva-Pinhati et al., 2004). The absence of Fenton pellets in Atta is an interesting observation that raises questions for future research, but the interpretation about alternative mechanisms (C139) is necessarily speculative without further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Most proteins in Acromyrmex fecal fluid function as biomass degrading enzymes, with approximately 85% produced by the fungus and ingested but not digested by the ants. Hydrogen peroxide-producing oxidoreductases are remarkably common in the proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are high-level summary statements of the proteome results. C1 is supported by the functional categorization showing most proteins are degradation enzymes (C34). C2 is supported by the finding that 86 of 101 core proteins are fungal (C35), which is approximately 85%. C3 is supported by the identification of 15 oxidoreductases in the core proteome (Table 1). These summary claims accurately reflect the detailed findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The symbiotic biomass degradation achievement surpasses current human bioconversion technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C6 is a broad comparative statement that is not adequately supported by the data presented. While the authors cite studies showing human Fenton chemistry applications achieve up to 5-fold increases in sugar production (C142) and face challenges with enzyme degradation (C143), they do not provide quantitative comparisons of efficiency, throughput, or other metrics that would justify the claim of \"surpassing\" human technology. The claim is speculative and represents the authors' interpretation rather than a demonstrated result. A more appropriate claim would be that the ant-fungus system has evolved solutions to challenges that human bioconversion technology still faces.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "Background information on attine ant phylogeny, ecology, evolution, and previous findings on fecal fluid enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C28 and C30 provide background context from the literature, all supported by appropriate citations. These claims establish the evolutionary and ecological context for the current study and summarize previous findings on fungal enzymes in fecal fluid. All citations appear appropriate and the claims accurately represent prior work. This background is essential for understanding the significance of the current findings but does not constitute new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C93",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Background information on brown-rot fungi, white-rot fungi, Fenton chemistry, and related biochemical mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45, C76-C86, C93, C112-C114 provide essential background on fungal lignin degradation mechanisms, Fenton chemistry, and related biochemistry. All claims are supported by appropriate citations to the literature. This background establishes the conceptual framework for interpreting the fecal fluid proteome and biochemical assays in the context of known fungal degradation mechanisms. The information is accurately presented and well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Two fecal fluid oxidoreductases were annotated as copper radical oxidases similar to glyoxal oxidases, which produce hydrogen peroxide from aldehydes. Addition of glyoxal to fecal fluid increased hydrogen peroxide levels, confirming glyoxal oxidase presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by the proteome annotation. Claim C53 is supported by citation to Daou and Faulds, 2017. Claim C54 is supported by the hydrogen peroxide assay data in Figure 4A showing significant increase with glyoxal addition. The identification of glyoxal oxidases and their functional confirmation through substrate addition strengthens the evidence for multiple H2O2-producing pathways in fecal fluid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The processing efficiency and behavioral control by ants suggest refined co-adaptation at the molecular level. An earlier study found high expression of NADH-quinone oxidoreductase in fungus gardens, an enzyme that converts quinones to hydroquinones for iron reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is an inference based on the observed efficiency and behavioral control (C29, C46, C105-C106). Claims C108-C109 cite a previous study (Grell et al., 2013) and provide established knowledge about the enzyme's function. The inference about co-adaptation (C107) is reasonable given the complementary contributions from ant and fungus, though \"refined co-adaptation\" is somewhat subjective. The connection to NADH-quinone oxidoreductase provides additional context for understanding iron cycling in the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Complete cellulose degradation would release excess sugars without providing nitrogen or phosphorus (the limiting nutrients for herbivores), and such sugars could burden the symbiosis by allowing inadvertent microorganisms to thrive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 is a logical inference supported by citation to Elser et al., 2007 regarding nutrient limitation in herbivores. Claim C137 is speculation supported by citation to Grell et al., 2013. The reasoning provides a plausible explanation for why the symbiosis does not invest in complete cellulose degradation despite having Fenton chemistry that could facilitate it. The argument is logical and consistent with ecological principles, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Human in vitro Fenton chemistry experiments have achieved up to 5-fold increases in sugar production from feedstock, but efficiency depends on plant material. A major challenge is that Fenton-generated reactive oxygen species degrade the enzymes needed for sustainable conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C142 is supported by citations to Kato et al., 2014; Jung et al., 2015; Hegnar et al., 2019. Claim C143 is presented as established knowledge about challenges in bioconversion technology. These claims provide important context for understanding the significance of the ant-fungus system's apparent solution to enzyme protection during Fenton chemistry. The comparison to human technology helps frame the biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Colonies of Acromyrmex echinatior were collected in Gamboa, Panama between 2001-2010 and maintained at ~25\u00b0C and ~70% humidity on a diet of bramble leaves, occasional dry rice, and apple pieces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 describe the biological materials and colony maintenance conditions. These are straightforward methodological details supported by citation to Bot and Boomsma, 1996 for the maintenance protocol. The information is clearly presented and appropriate for the Materials and Methods section.",
+    "result_type": "MINOR"
+  }
+]

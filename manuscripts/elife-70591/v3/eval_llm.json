@@ -1,0 +1,468 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9"
+    ],
+    "result": "The authors established a mouse model (Pdgfrb-CreERT2 x Rosa26<LSL-GCaMP6s>) to study calcium dynamics in mural cells in vivo (anesthetized and awake) and ex vivo. Mural cells were classified based on vessel branch order and diameter into SMCs (0th branch), EPs (1st-4th branch), CPs (>4th branch), and VPs at postcapillary venules. Some GCaMP6s-expressing astrocytes were detected and regions with ambiguous signals were excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 describe the experimental model and classification scheme. The mouse model is well-established (C1), experimental conditions are clearly stated (C2), and the classification scheme is based on prior work (C3-C5). The exclusion criteria for astrocyte overlap (C8-C9) demonstrate appropriate experimental rigor. The methodology is sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Vessel diameters were measured for different mural cell types: SMCs on arteries/arterioles (18.0 \u00b1 7.3 \u03bcm), EPs on 1st-4th branch vessels (7.3 \u00b1 1.7 \u03bcm), and CPs on capillaries (4.1 \u00b1 0.7 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 provide quantitative vessel diameter measurements consistent with prior literature (C10 cites previous reports). The measurements are presented with appropriate statistical descriptors (mean \u00b1 SD) and are consistent with the classification scheme. Sample sizes appear adequate based on referenced figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "In anesthetized mice, all mural cells exhibited basal calcium fluctuations. SMCs and EPs showed synchronous calcium signals inversely correlated with vessel diameter (rFisher z = 1.20 \u00b1 0.37 for SMCs, 1.06 \u00b1 0.22 for EPs), with a 0.1 Hz frequency peak and 300 ms delay between calcium transients and diameter changes. CPs and VPs exhibited asynchronous calcium signals in microdomains with no correlation to capillary diameter (rFisher z = -0.005 \u00b1 0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 describe distinct calcium dynamics across mural cell types with appropriate statistical analysis. The inverse correlation between calcium and diameter in SMCs/EPs (C16-C17) is supported by prior work. The 0.1 Hz frequency (C18) and 300 ms delay (C19) are consistent with known vasomotion. The lack of correlation in CPs (C20) is appropriately quantified. However, the temporal resolution of two-photon imaging may limit detection of rapid diameter changes (acknowledged in C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "In anesthetized animals, calcium signal frequency was higher in EPs than SMCs (8.3 \u00b1 2.8 vs. 7.1 \u00b1 1.6 signals/min). CPs showed more pronounced differences from EPs: process signals were 2\u00d7 more frequent and 30% shorter in duration, while soma signals were 2\u00d7 larger in amplitude and 20% shorter in duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 provide quantitative comparisons of calcium dynamics between mural cell types with appropriate statistical measures. The data are presented with mean \u00b1 SD and referenced to figures and tables. The differences are substantial and statistically significant, supporting functional distinctions between cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Due to known effects of prolonged isoflurane anesthesia on cerebral vasculature, only measurements from SMCs and EPs within 25 minutes post-anesthesia were included. Longer anesthesia (>30 min) led to stark reduction in calcium activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe appropriate experimental controls based on prior literature (C24 cites relevant work). The 25-minute cutoff (C25) is a reasonable precaution, though the specific timing is somewhat arbitrary. The observation of reduced activity with longer anesthesia (C26) supports this decision, though data are not shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Differences in calcium dynamics were observed between awake and anesthetized mice. SMC calcium signals were more frequent in awake mice, while EP and CP frequencies were not significantly affected. CP calcium amplitudes were 2-3\u00d7 lower in awake animals. Despite these differences, the overall pattern of distinctions between mural cell types was preserved across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 demonstrate appropriate experimental rigor by comparing awake and anesthetized conditions. The finding that relative differences between cell types persist across conditions (C30) strengthens the main conclusions. Statistical comparisons are provided with appropriate references to figures and tables. The lower amplitudes in awake CPs (C29) may reflect physiological differences or technical factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "EPs and CPs have distinct basal calcium dynamics that can be used to differentiate these mural cell subtypes. Despite transcriptional similarities between EPs and SMCs, subdomain calcium activity in EPs distinguishes them from SMCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 present key conclusions about mural cell classification based on calcium dynamics. The conclusion is well-supported by the quantitative data presented in prior claims (C21-C31). The distinction between EPs and SMCs based on subdomain activity (C33) adds a functional criterion to existing morphological and molecular classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CPs in acute brain slices retained highly frequent calcium transients in somata and processes with frequencies not significantly different from in vivo conditions. However, signal amplitudes were larger in slices compared to in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 demonstrate that CP calcium dynamics persist ex vivo, supporting their intrinsic nature. The preservation of frequency (C35) with increased amplitude (C36) suggests the signals are not dependent on blood flow but may be modulated by the slice environment. Statistical comparisons are provided with appropriate references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Calcium activity of SMCs and EPs was greatly reduced ex vivo (>4-fold reduction in frequency). Bath application of U46619 (100 nM) restored calcium activity, increasing signal frequency more than fourfold in both SMCs and EPs. Similar effects were reported in retinal preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 demonstrate that SMC/EP calcium activity depends on vascular tone, which is lost in slices. The rescue by U46619 (C40) supports this interpretation and is consistent with prior work (C41). The quantitative data (C38-C39) show substantial reductions. This contrasts with CPs (C34-C36), highlighting functional differences between mural cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Short pulses of U46619 (100 nM, 1 min) elicited strong calcium responses in CPs accompanied by morphological changes (membrane ruffling, cytoplasmic blebbings). These changes recovered after washout (>30 min), suggesting the response was not toxic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe an aberrant response of CPs to U46619 distinct from SMCs/EPs. The morphological changes (C43) and recovery (C44) are documented with figures and videos. The interpretation that the response is non-toxic (C44) is supported by recovery data, though the mechanism remains unclear. This finding has important implications for ex vivo studies using U46619.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Venular pericytes (VPs) retained their calcium dynamics ex vivo with no evident change in somata and processes in the absence of U46619.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 demonstrates that VPs, like CPs, maintain calcium activity ex vivo without U46619. This is supported by reference to a supplementary figure and strengthens the conclusion that different mural cell types have distinct calcium signaling properties. The observation also confirms slice viability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "All tested GPCR agonists (Endothelin-1, UDP-Glucose, ATP) triggered cytosolic calcium increases in CPs, indicating functional GPCR expression and responsiveness to factors released by endothelial cells or astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 demonstrates CP responsiveness to multiple vasoactive agents with appropriate citations to prior work on these signaling pathways. The data are presented with figures showing calcium responses. This supports the conclusion that CPs express functional GPCRs, though receptor subtypes are not identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Nimodipine (100 \u03bcM, L-type VGCC blocker) moderately reduced basal calcium activity in CP somata but not processes. SKF96365 (100 \u03bcM, TRPC blocker) reduced calcium frequency more than threefold in both somata and processes. DMSO vehicle control showed no changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide pharmacological characterization of calcium channels in CPs. The differential effects of Nimodipine (C47) vs. SKF96365 (C48) suggest TRPC channels are more important for basal activity. The DMSO control (C49) is appropriate. However, SKF96365 lacks complete specificity for TRPC channels, and the interpretation should be cautious. The endstimulus with U46619 confirms cell viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Chemogenetic activation of neurons completely diminished calcium activity in CPs in both somata and processes, accompanied by an 8% increase in capillary diameter. CPs outside the DREADD-expressing area retained spontaneous calcium dynamics, ruling out non-specific clozapine effects. Similar calcium drops were reported in olfactory bulb pericytes upon odorant stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate that neuronal activation suppresses CP calcium activity with concurrent vasodilation. The spatial control (C51) rules out drug artifacts. The diameter increase (C53) is modest but consistent with vasodilation. The finding is consistent with prior work (C52). However, the mechanism linking neuronal activation to calcium suppression requires further investigation (addressed in later claims).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Chemogenetic neuronal activation led to calcium signal drops in EPs (with 22% arteriole dilation) and SMCs (with 19% arterial dilation) along the same vascular tree. Complete recovery of calcium activity occurred one day after clozapine treatment, ruling out toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 demonstrate coordinated responses across the vascular tree from capillaries to arteries. The diameter increases (C55, C57) are substantial and physiologically significant. The recovery data (C58) rule out toxicity and strengthen the interpretation. However, the DREADD expression was primarily in the capillary bed, so upstream effects may involve conducted signals or low-level DREADD expression (acknowledged in text).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Neurons release potassium upon stimulation, which is sensed by SMCs to suppress calcium oscillations. CPs showed pronounced drops in calcium activity in response to 10 mM extracellular potassium elevation in the presence of TTX. TTX alone did not influence CP calcium dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 establish potassium as a mediator of neuronal effects on CP calcium. The prior knowledge (C60-C61) is well-cited. The experimental data (C62) with TTX control (C63) demonstrate direct potassium effects independent of neuronal firing. This provides a mechanistic link between neuronal activation (C50) and CP calcium suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Kir2 channels are main drivers of potassium sensing in SMCs and ECs. Single-cell transcriptomics revealed high Kir2.2 (Kcnj12) abundance in pericytes. Antagonizing Kir2 channels with BaCl2 (100 \u03bcM) resulted in less pronounced decreases in CP calcium frequency in response to potassium stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 provide evidence for Kir2 channel involvement in CP potassium sensing. The prior knowledge (C64-C65) is well-cited. The pharmacological data (C66) show partial rescue, supporting Kir2 involvement. However, BaCl2 is not completely specific, and the partial rescue suggests additional mechanisms (addressed in C67-C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "KATP channels (Kir6.1/SUR2) are highly abundant in CPs and involved in CP hyperpolarization. Combined application of PNU-37883A (100 \u03bcM, Kir6.1 antagonist) and BaCl2 abolished the potassium-induced decrease in CP calcium signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 demonstrate that both Kir2 and KATP channels contribute to potassium sensing in CPs. The prior knowledge (C67) is well-cited. The complete rescue with combined blockers (C68) strongly supports the involvement of both channel types. However, pharmacological specificity limitations remain, and genetic approaches would provide stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CP calcium signals decreased strongly in response to NaN3 (5 mM, mitochondrial inhibitor) and transient hypoxia in vivo, with complete cessation during hypoxia and resumption upon oxygen restoration. The hypoxia-induced calcium drop was specific to mural cells (astrocytes showed increased calcium). Capillary diameters dilated 11% during hypoxia and returned to baseline upon recovery, coinciding with CP calcium changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 demonstrate that metabolic stress suppresses CP calcium activity, likely via KATP channel activation. The NaN3 (C69) and hypoxia (C70-C71) data are consistent. The astrocyte control (C72) confirms specificity. The diameter changes (C73-C75) correlate with calcium changes, supporting a functional link. However, hypoxia has multiple effects beyond ATP depletion, and the mechanism may be more complex than KATP activation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study identifies distinct calcium signatures of different mural cells in the somatosensory cortex. Mural cells at terminal arterioles (1st-4th branch) have unclear nomenclature in the literature (precapillary/terminal SMCs, contractile mural cells, contractile pericytes, or EPs). Whether these cells are SMC or pericyte subtypes remains to be elucidated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 summarize the main finding and acknowledge nomenclature issues. The distinct calcium signatures (C76) are well-supported by the data. The nomenclature discussion (C77-C78) appropriately acknowledges ongoing debates in the field with relevant citations. The uncertainty about EP classification (C78) is honest and reflects current knowledge gaps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Prior work reported frequent calcium transients in CPs and rhythmic pulsations in SMCs based on ultra-slow neuronal activity fluctuations (0.1 Hz). \u03b1-smooth muscle actin expression in mural cells up to 4th branch order and the role of these segments in blood flow regulation have been established. Previous studies implicating pericytes in blood flow control likely focused on EPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide context from prior literature with appropriate citations. The interpretation that previous pericyte studies may have focused on EPs (C83) is reasonable given the current findings but remains speculative. This discussion appropriately places the current work in the context of prior studies and helps resolve apparent contradictions in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Two-photon imaging is not suitable for detecting minute, fast diameter changes (1-3%) in capillaries. In acute brain slices, arteries and arterioles lose basal tone due to lack of intraluminal pressure, likely leading to cessation of basal calcium oscillations in SMCs and EPs ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 acknowledge important technical limitations. The imaging limitation (C84) is appropriately cited and explains why CP diameter correlations may not be detected. The explanation for loss of SMC/EP activity ex vivo (C85-C86) is well-supported by prior work and consistent with the U46619 rescue experiments (C40).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "U46619 caused CPs to form membranous blebs and cellular extrusions with large calcium increases and vessel constriction, as reported earlier. CPs likely can exert force on vessels in pathological conditions via cytoskeletal rearrangements, similar to A\u03b2-induced constriction in Alzheimer's disease and high-power optogenetic stimulation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91 describe pathological CP responses and speculate about mechanisms. The observations (C87-C88) are well-documented. However, the interpretation that CPs can exert force in pathological conditions (C89) is speculative, and the comparisons to Alzheimer's disease (C90) and optogenetics (C91) are suggestive but not definitive. The lack of smooth muscle actin in CPs (addressed in C99) raises questions about the contractile mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Calcium is involved in diverse cellular processes including force generation. The oscillatory nature of CP calcium dynamics could reduce activation thresholds for calcium-related pathways. Elevations of calcium in CPs were associated with constriction while drops were associated with dilations, suggesting CPs may exert calcium-related forces on capillaries. Optogenetic stimulation of CPs can induce capillary constriction preventable by fasudil (rho-kinase inhibitor). The type of contractile machinery in CPs remains unclear given absent/low smooth muscle actin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C100 discuss potential functional roles of CP calcium dynamics. The general principles (C92-C93) are well-cited. The associations between calcium and diameter (C94-C95) are observed but correlative. The suggestion that CPs may regulate blood flow (C96) is speculative and requires more direct evidence. The optogenetic data (C97-C98) from other work support contractile capacity. The acknowledgment that the contractile mechanism is unknown (C99-C100) is appropriate given the lack of smooth muscle actin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Potassium is released during action potential repolarization and acts as a vasomodulator. Potassium sensing by SMCs and capillary ECs via Kir2 channels increases cerebral blood flow. Previous studies showed correlations between CP loss and dysregulated neurovascular coupling, and junctional pericytes may direct blood flow via branch-specific dilation. The threshold of neuronal excitation to cause CP calcium responses needs further determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 provide context from prior literature with appropriate citations. The discussion integrates the current findings with previous work on potassium-mediated neurovascular coupling. The acknowledgment that the threshold for CP responses needs determination (C107) is appropriate and cites contradictory findings from other studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Pharmacological inhibition of Kir2 and KATP channels inhibited potassium-evoked calcium drops in CPs. Both in vivo hypoxia and ex vivo mitochondrial respiration blockade resulted in cessation of CP calcium signals, possibly via Kir2 and KATP channel activation. High abundance of Kir2 and KATP channel transcripts and KATP-mediated hyperpolarization in CPs have been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 synthesize the pharmacological and metabolic data with prior transcriptomic and electrophysiological findings. The integration is logical and well-supported by citations. However, the interpretation that hypoxia/metabolic inhibition act via these channels (C109) is somewhat speculative given the multiple effects of these manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Kir2 and KATP channels are also expressed in capillary ECs and mediate hyperpolarization in response to potassium. Evidence exists for EC-CP gap-junctional coupling in retinal vasculature. The observed potassium-evoked calcium drop in CPs could be secondary to changes in capillary ECs. Little is known about how capillary ECs and CPs interact and modulate each other's functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 appropriately acknowledge alternative interpretations and limitations. The possibility that CP responses are secondary to EC changes (C114) is an important caveat given the lack of cell-type-specific manipulations. The acknowledgment of knowledge gaps (C115) is appropriate and honest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Gap-junction coupling of capillary ECs and CPs would allow electrical interconnection forming a vascular relay. Activation of Kir2 and KATP channels likely induces hyperpolarization in the EC-CP unit, which could be transmitted through gap junctions. Potassium sensing by CPs and ECs could potentiate hyperpolarization propagation to upstream arterioles. CPs are optimally positioned to sense the microenvironment and amplify vascular responses. Future studies with concurrent EC-CP calcium imaging and cell-specific knockouts are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C120 present a mechanistic model for CP function in neurovascular coupling. The model is logical and integrates the current findings with prior work on gap junctions and conducted vasodilation. However, the model is largely speculative (C117-C119) and requires direct testing. The call for future studies (C120) appropriately acknowledges that the current data cannot definitively establish the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The abstract summarizes that pericytes are implicated in neuropathologies but little is known about their function in health. SMCs and EPs showed similar calcium dynamics in vivo, while CPs showed irregular, higher frequency signals in microdomains. In slices without U46619, SMCs and EPs had sparse signals while CPs retained activity. Chemogenetic neuronal activation and potassium elevation decreased CP calcium activity, likely mediated by Kir2.2 and KATP channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 accurately summarize the main findings of the study. The abstract appropriately highlights the key observations and proposed mechanism. The conclusions are supported by the data presented in the manuscript, though some mechanistic details remain speculative (as acknowledged in the discussion).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The introduction establishes that pericytes regulate vascular development, blood-brain barrier maintenance, and vascular tone, with dysfunction implicated in various pathologies. The neurovascular unit controls blood flow through mechanisms including functional hyperemia and vasomotion. While SMC calcium relates to vasomotion, pericyte participation is debated. Recent studies suggest pericytes at postarteriole transitions regulate capillary blood flow, and optogenetic CP stimulation can induce slow constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C138 provide appropriate background from prior literature with relevant citations. The introduction establishes the context for the current study and identifies key knowledge gaps and controversies in the field. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  }
+]

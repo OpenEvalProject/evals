@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "IRSp53 knockdown reduces HIV-1 particle release and arrests viral bud assembly at an early stage. Partial IRSp53 knockdown (~50% protein depletion) reduced particle release 2-3 fold in both Jurkat T cells and HEK293T cells with high statistical significance (p<0.001). Electron microscopy revealed that IRSp53 knockdown cells displayed arrested buds at a specific curvature (48\u00b122 nm height vs 85\u00b153 nm in controls, p<10^-28), while bud widths remained unchanged. In contrast, IRTKS knockdown had no significant effect on particle release (p=0.0924), indicating non-redundant functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The knockdown experiments (C1, C8-C11) are well-controlled with appropriate siRNA controls, statistical analysis, and independent replicates (n=3). The electron microscopy data (C13-C15) provides quantitative morphological evidence with large sample sizes (n=145 buds from 14 cells) and highly significant statistical differences. The specificity is demonstrated by the lack of effect with IRTKS knockdown (C11-C12), ruling out off-target effects on related I-BAR proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "HIV-1 Gag and IRSp53 form an intracellular complex that is independent of the p6 domain and ESCRT recruitment. Co-immunoprecipitation experiments demonstrated that endogenous IRSp53 and ectopic IRSp53-GFP both co-precipitate with Gag. Importantly, Gag lacking the p6 domain (Gag\u0394p6) still co-precipitates with IRSp53, and the addition of internal mEos2 tag does not affect this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-IP experiments (C18-C19) include appropriate controls (mock, antibody-only, protein-only conditions). The demonstration that Gag\u0394p6 still interacts with IRSp53 (C24, C26) is critical evidence that this interaction occurs independently of ESCRT machinery, which requires the p6 domain. The validation that mEos2-tagged Gag behaves similarly to wild-type (C25) strengthens confidence in subsequent super-resolution imaging experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "HIV-1 Gag expression increases IRSp53 membrane binding twofold. Membrane flotation assays showed that IRSp53 membrane binding increased from 19\u00b18% to 44\u00b15% upon Gag expression (p=0.000129, n=5). This effect was comparable to the twofold increase observed for Tsg101 (36\u00b110% to 79\u00b18%, p=0.00517), a known Gag-interacting ESCRT protein, but was not observed for IRTKS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The membrane flotation assays (C20-C23) are well-controlled with appropriate membrane (Lamp2) and cytosolic (S6) markers to validate fractionation. The experiments include adequate replicates (n=5) with statistically significant results. The comparison to Tsg101 provides a positive control for Gag-dependent membrane recruitment, while the lack of effect on IRTKS demonstrates specificity for IRSp53.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Super-resolution microscopy reveals IRSp53 specifically localizes in a restricted ring pattern around HIV-1 Gag assembly sites, while IRTKS shows diffuse localization. Coordinate-based colocalization (CBC) analysis showed 27% of IRSp53 localizations are highly correlated with Gag (CBC>0.5) in both HEK293T and Jurkat T cells, compared to only 14% for IRTKS. Computational simulations indicate IRSp53 forms a ring at 80 nm from the assembly site center with 80 nm width, while IRTKS is diffusely located at 140 nm with 200 nm width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PALM/STORM imaging (C27-C29) achieves appropriate localization precision (20\u00b15 nm for PALM, 27\u00b19 nm for STORM) as documented in C118-C119. The CBC analysis provides quantitative single-molecule colocalization data (C30), and the computational simulations (C31-C32) using RMSE comparison provide strong support for the spatial organization model. The consistency across two cell types (HEK293T and Jurkat T cells) strengthens the findings. However, the simulation approach involves multiple parameters and assumptions about the spatial distribution that could influence the precise distance estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "IRSp53 is specifically incorporated into HIV-1 particles in a Gag-dependent manner. Mander's coefficient analysis showed high correlation (0.95-1) between IRSp53-GFP and Gag-mCherry VLPs, with the I-BAR domain alone showing ~0.8 correlation. In contrast, IRTKS-GFP showed no significant correlation (0.4-0.5). Immunoblot analysis confirmed endogenous IRSp53 is present in both infectious HIV-1 and Gag-only VLPs, and co-fractionates with ESCRT proteins (Tsg101, ALIX) and tetraspanins (CD81, CD63) in purified viral particles. IRTKS was not detected in viral particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The VLP incorporation experiments (C34-C37) use appropriate fluorescence colocalization methods with Mander's coefficients, including proper controls (PH-PLC\u03b4, IRTKS). The 0.5 threshold for random incorporation is clearly defined. The immunoblot data (C39-C42) demonstrates endogenous IRSp53 incorporation using two independent purification methods (sucrose cushion and iodixanol gradient), with appropriate positive controls (Tsg101, ALIX) and negative control (IRTKS). The observation that Gag alone is sufficient for IRSp53 recruitment (C40) is well-supported by comparing full HIV-1 vs Gag-only VLPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "IRSp53 I-BAR domain enhances HIV-1 Gag membrane binding on model membranes, and Gag reciprocally enhances I-BAR membrane binding. On GUVs, pre-incubation with I-BAR domain increased Gag binding ~7-fold compared to Gag alone (p<0.0001), while adding I-BAR after Gag increased binding only ~3-fold. Reciprocally, Gag presence increased I-BAR membrane binding ~1.5-fold, consistent with cellular membrane flotation results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GUV binding assays (C44-C46) include appropriate controls and statistical analysis with adequate sample sizes (N=67-104 GUVs from n=4 preparations). The order-of-addition experiments provide mechanistic insight into the cooperative binding. The reciprocal enhancement of I-BAR binding by Gag (C48) is consistent with the cellular data (C22), strengthening the conclusion of mutual enhancement. However, the high I-BAR concentration (0.5 \u03bcM) used to prevent tubulation may not fully reflect physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "HIV-1 Gag preferentially localizes to the tips of membrane tubes generated by IRSp53 I-BAR domain and interferes with tube elongation. In GUV experiments with low I-BAR concentrations that induce tubulation, Gag was exclusively located at tube tips in all analyzed tubes (17/17 tubes). Addition of Gag resulted in shorter I-BAR tubules compared to I-BAR alone, suggesting Gag usurps the IRSp53 tubulation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GUV tubulation experiments (C49-C50) provide direct visualization of Gag sorting to curved membrane regions. The observation is consistent across all analyzed tubes (17/17), though this represents a limited sample size and only includes tubes that were not moving too rapidly for imaging. The shortened tubule length upon Gag addition (C51) provides functional evidence for Gag interference with I-BAR function. However, the authors acknowledge that most tubes were moving too fast for high-resolution imaging, which limits the quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C114"
+    ],
+    "result": "Gag-IRSp53 association occurs at an earlier stage of virus assembly than ESCRT recruitment and is ESCRT-independent. This conclusion is based on the observation that Gag\u0394p6 (lacking the ESCRT-recruiting p6 domain) still co-precipitates with IRSp53, and the phenotype of IRSp53 knockdown (arrested buds at mid-assembly) differs from ESCRT perturbation (late-stage bulb-shaped arrest).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evidence for ESCRT-independence (C94) is well-supported by the Gag\u0394p6 co-IP data (C24, C26). The temporal ordering (C95, C114) is supported by comparing the IRSp53 knockdown phenotype (arrested at ~50 nm height, early stage) with the known late-stage ESCRT phenotype from literature (C93). However, the temporal ordering is largely inferential based on phenotypic differences rather than direct temporal measurements of protein recruitment during assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors propose a model where IRSp53 functions at two stages: (1) inducing local membrane curvature upon Rac1/Cdc42 activation to promote Gag recruitment and assembly initiation, and (2) stabilizing bud curvature to overcome the free energy barrier for progression beyond half-sphere geometry. This model is consistent with the observation that 60% of assembling particles pause at the midway point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a proposed mechanistic model (C110-C112) that integrates the experimental findings with prior literature. While the model is consistent with the data (arrested buds at ~50% completion, IRSp53 localization around assembly sites, membrane curvature induction), it remains speculative. The proposed mechanisms (direct mechanical constriction vs. indirect actin-mediated effects, C112) are not directly tested. The connection to the 60% pause observation (C113) from prior literature is correlative rather than causative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The authors speculate that Gag could activate IRSp53 either through Rac1 activation or by releasing IRSp53 auto-inhibition, based on the observed increase in IRSp53 membrane binding upon Gag expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative mechanisms (C105-C106) proposed to explain the observed increase in IRSp53 membrane binding upon Gag expression (C22). While the Rac1 activation mechanism is supported by prior work from the same group (C81), neither mechanism is directly tested in this study. The authors appropriately acknowledge these remain to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The authors speculate about potential additional roles for IRSp53 and related proteins. They suggest angiomotin (another BAR domain protein) may function at the viral bud neck to facilitate ESCRT recruitment, and that IRSp53 could play a role in generating local cortical actin density near the viral bud.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative proposals (C115-C116) about additional functions not directly tested in the study. The angiomotin speculation is based on literature showing it functions before ESCRT-I recruitment (C96) and contains a BAR domain (C97), but with opposite curvature preference (C98). The actin density speculation is based on IRSp53's known scaffolding function (C99-C100) but is not experimentally addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Technical validation of super-resolution microscopy methods. The study achieved localization precision of 20\u00b15 nm for PALM and 27\u00b19 nm for STORM. VLP size was correctly estimated at 114\u00b137 nm using DBSCAN clustering, and Gag cluster sizes were consistent across cell types and conditions (96-116 nm median values).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These technical validations (C118-C122) are well-documented and appropriate for super-resolution microscopy. The localization precision is adequate for the ~100 nm scale structures being studied. The VLP size calibration (C120) using purified particles provides validation of the cluster detection methods. The consistency of cluster sizes across conditions (C121-C122) supports the reliability of the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "An unexpected observation that increasing I-BAR concentrations from 0.1 to 1 \u03bcM decreased the number of GUVs with tubes, contrary to expectations from prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This observation (C103) is noted but not explained. The authors acknowledge it is surprising and state that future work is required to investigate this phenomenon. Without further investigation, the reliability and significance of this observation cannot be assessed. It could represent a genuine concentration-dependent effect, experimental artifact, or limitation of the in vitro system.",
+    "result_type": "MINOR"
+  }
+]

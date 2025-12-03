@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The SD-Mal supergene structure was characterized through sequencing of nine driving SD-Mal haplotypes from Zambia. All SD-Mal chromosomes have the Sd-RanGAP duplication on 2L and a complete deletion of the primary Rsp locus (Rsp-proximal and Rsp-major), retaining only minor Rsp loci on 2R and 3L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 provide converging evidence from Illumina and Nanopore sequencing, read mapping, and assembly data. The deletion of the primary Rsp locus is inferred from read depth analysis showing very few reads mapping to Rsp-major (C42), which is consistent with the known ~20 copies of Rsp in SD flies (C41) being located at minor loci (C43). The data and inference are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The In(2R)Mal arrangement consists of two sequential paracentric inversions: In(2R)Mal-d (4.18 Mb, distal, occurred first) and In(2R)Mal-p (6.76 Mb, proximal, occurred second) with 1.02 Mb overlap. Three of four breakpoints disrupt genes (sns, CG10931, Mctp), with CG10931 being a testis-expressed histone methyltransferase whose CDS is disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 are supported by assembly data from long-read sequencing (C36) and synteny block analysis. The temporal order of inversions is inferred from the arrangement of sequence blocks (C44-C45), which is the only scenario consistent with the observed structure. Gene disruption analysis is based on assembly coordinates and expression data from FlyBase citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "SD-Mal drive requires both Sd and In(2R)Mal components. Genetic crosses demonstrate that In(2R)Mal suppresses recombination (54.6% reduction in b-c distance, 92.4% in c-px distance) and that all recombinants with both Sd and In(2R)Mal show strong drive, while recombinants lacking either component do not drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by genetic crossing experiments with appropriate controls (Table 1 and Table 2). The requirement for both components is demonstrated experimentally (C57-C58), and the inference that an essential co-driver is located within or distal to In(2R)Mal (C60) follows logically from the genetic data. The experimental design is sound with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The essential co-driver for SD-Mal drive resides inside or within 100 kb of the In(2R)Mal arrangement. All 71 recombinants between the distal breakpoint of In(2R)Mal and px showed strong drive, and two recombinants within 100 kb of the distal breakpoint both had strong drive (k > 0.99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by genetic crosses and molecular marker analysis. The statistical calculation (C62) showing p < 0.014 for failing to separate an essential enhancer among 71 recombinants is appropriate, assuming uniform recombination. The molecular marker data (C63) further narrows the location. The inference about co-driver location (C64) is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Sd and In(2R)Mal show strong linkage disequilibrium (r\u00b2 = 0.493, p = 1.4 \u00d7 10\u207b\u2075) despite low individual frequencies (0.0294 and 0.0147) in Zambian populations. Theoretical calculations show this LD would decay to negligible levels in <100 generations without selection, indicating the SD-Mal supergene haplotype is maintained by strong epistatic selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by population genomic analysis of 204 haploid genomes and theoretical calculations using the Hill and Robertson (1968) model. The statistical test for LD is appropriate (C69), and the theoretical decay calculations (C70-C71) use reasonable assumptions (Ne = 10\u2076, recombination frequency ~2.5 cM). The conclusion about epistatic selection (C72) is well-justified given the observed LD would decay rapidly without selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Nucleotide diversity (\u03c0) is significantly reduced on SD-Mal haplotypes across a 25.8 Mb region (53% of chromosome 2) spanning from Sd-RanGAP on 2L to ~2.9 Mb beyond the distal breakpoint of In(2R)Mal. This reduction is significantly lower than expected even when scaled by SD-Mal frequency (1.47%), suggesting factors beyond low population frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by population genomic analysis in 10-kb windows (Table 3, Figure 2A). The statistical comparisons are appropriate with paired t-tests, and the scaling by frequency (C78) provides a proper control for expected diversity under mutation-drift equilibrium. The inference that low frequency alone cannot explain reduced diversity is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "SD-Mal shows strongly negative Tajima's D indicating excess rare alleles, unusually high FST differentiation from SD+ chromosomes, but comparable dXY values to other inversions. These patterns are consistent with a rapid, recent increase in frequency of the SD-Mal haplotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by population genomic analyses (Figures 2B, 3A). The interpretation that negative Tajima's D indicates recent frequency increase (C80) is standard population genetics inference. The comparison of FST and dXY values (C81-C83) appropriately distinguishes recent differentiation from ancient divergence. The overall conclusion (C84) is well-supported by multiple converging lines of evidence and appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Approximate Bayesian computation estimates the SD-Mal expansion began ~1261-1644 years ago (0.0679-0.0884 \u00d7 4Ne generations). Simulations reject models of long-term stable frequency or exponential growth, supporting a recent selective sweep model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by ABC simulations with appropriate methodology. The analysis considers both all SNPs and private SNPs only to account for gene conversion (C85-C86). The model comparison uses posterior probabilities from 100,000 simulations (C87-C89), with the selective sweep model showing much higher posterior probabilities (p > 0.35) than alternative models (p < 0.10). The methodology is sound and conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The sweep signal extends ~3 Mb beyond the distal boundary of In(2R)Mal. In(2R)Mal strongly reduces recombination beyond its distal boundary (87.3% reduction in genetic distance between distal breakpoint and px). Recombinants with In(2R)Mal-distal material removed show modestly but significantly lower drive strength (k = 0.96 vs. 0.98), suggesting weak distal enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 are supported by population genomic data and genetic crosses (Table 1, Table 2). The recombination suppression beyond inversion boundaries is well-documented in the literature (C92), and the measured 87.3% reduction (C94) is based on appropriate genetic crosses with controls. The modest reduction in drive strength (C96) is statistically significant and the inference about weak distal enhancers (C97) is reasonable, though the effect is small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "SD-Mal chromosomes can recombine with each other via crossing over. Mean pairwise r\u00b2 declines with physical distance within In(2R)Mal, with a minimum of 15 recombination events (Rm) detected, corresponding to approximately one recombination event every ~1096 generations. Crossover events are relatively rare due to low SD-Mal frequency and possibly reduced fitness of SDi/SDj genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 are supported by linkage disequilibrium analysis and RecMin calculations (Figure 5A, 5C). The decline of r\u00b2 with distance is a well-established signature of recombination (C107), supported by appropriate citations. The Rm calculation (C109) uses standard methodology (Hudson and Kaplan, 1985), and the frequency estimate (C110) is calculated from the estimated age of SD-Mal. The inference about rarity (C111) is reasonable given the low frequency of SD-Mal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Gene conversion between SD-Mal and SD+ chromosomes is evidenced by runs of shared SNPs with 5-fold higher density (0.63 SNPs/kb) than private SNPs (0.12 SNPs/kb). Most shared SNP runs are short (62.2% <1 kb, 80.4% <10 kb), consistent with gene conversion tract lengths rather than double crossovers. Gene conversion events are unevenly distributed, being more frequent in In(2R)Mal-p than In(2R)Mal-d.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 are supported by analysis of SNP run lengths (Figure 5B). The 5-fold difference in SNP density (C112) is consistent with gene conversion from higher-diversity SD+ chromosomes. The size distribution of shared SNP runs (C113-C115) is more consistent with gene conversion tract lengths than double crossovers, as supported by appropriate citations (C116). The uneven distribution (C117) is an interesting observation, though the mechanism is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "SD-Mal haplotypes evolve as a semi-isolated subpopulation with nearly 100-fold smaller Ne and limited gene flow from SD+ via gene conversion events. This distinguishes SD-Mal from completely genetically isolated supergenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by the recombination and gene conversion analyses (C106-C117). The inference about semi-isolation (C119) follows logically from the lack of crossing over with SD+ but presence of gene conversion. The ~100-fold smaller Ne is calculated from the frequency difference (1.47% vs. ~100%). The distinction from completely isolated supergenes (C118) is appropriate and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The N/S ratio in In(2R)Mal is 2.3-fold higher overall and 3.1-fold higher for private SNPs compared to SD+ chromosomes, while shared SNPs show no significant difference. This suggests gene conversion from SD+ ameliorates the accumulation of potentially deleterious non-synonymous mutations on SD-Mal chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by SNP annotation analysis (Table 4). The statistical tests (\u03c7\u00b2 tests) are appropriate for comparing N/S ratios. The key observation is the difference between private and shared SNPs (C121-C122), which provides strong evidence for the gene conversion hypothesis (C123). The inference is well-supported by the data and consistent with theoretical expectations, with appropriate supporting citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "TE densities are significantly higher in SD-Mal, particularly within In(2R)Mal, compared to SD+ chromosomes. The most overrepresented TE families (M4DM, MDG1, ROO_I, LINE) are currently or recently active, consistent with the recent origin of SD-Mal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129 are supported by TE calling analysis using McClintock pipeline (Figure 6A, 6B). The general principle that TEs accumulate in low-recombination regions is well-established (C124). The observation that TE enrichment is specific to In(2R)Mal (C126) is important for ruling out technical artifacts. The identification of overrepresented families (C127-C128) and their activity status is supported by appropriate citations, and the inference about recent origin (C129) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Gene conversion from SD+ chromosomes may slow the accumulation of deleterious point mutations but not TEs. Despite occasional recombination, the small Ne of SD-Mal haplotypes has incurred a higher genetic load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 synthesize findings from N/S ratio analysis (C120-C123) and TE analysis (C124-C129). The inference that gene conversion cannot rescue TE insertions due to size differences (C130) is reasonable, though not directly tested. The conclusion about higher genetic load (C131) is well-supported by both elevated N/S ratios and TE accumulation. This represents a logical synthesis of multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The SD-Mal supergene extends across ~25.8 Mb comprising Sd-RanGAP, Rspi deletion, and In(2R)Mal. Experimental evidence demonstrates epistasis between Sd-RanGAP and In(2R)Mal. Population genomics evidence indicates epistatic selection drove a recent chromosome-scale selective sweep. Despite rare recombination and gene conversion, SD-Mal accumulates deleterious mutations and evolves as a small, semi-isolated subpopulation subject to strong selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C138 represent the main conclusions synthesizing all major findings. Each component is supported by specific results: structure (C132) by sequencing data, epistasis (C134) by genetic crosses, selective sweep (C135) by population genomics and ABC analysis, and genetic load (C137) by N/S ratios and TE analysis. The overall synthesis (C138) is well-supported by converging evidence from multiple independent approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on supergenes and meiotic drive complexes: Supergenes are clusters of linked loci controlling complex phenotypes, maintained by various selective mechanisms. Meiotic drive complexes achieve selfish transmission through driver-target interactions, with epistatic selection favoring reduced recombination through chromosomal inversions. Reduced recombination compromises selection efficacy, leading to accumulation of deleterious mutations, though gene conversion may ameliorate genetic load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide background knowledge supported by extensive citations to established literature. These are well-accepted principles in evolutionary genetics and provide appropriate context for the study. All claims are supported by appropriate citations to primary literature and reviews.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on Segregation Distorter (SD): SD is an autosomal meiotic drive system in D. melanogaster with two main components (Sd-RanGAP driver on 2L and Rsp target on 2R) plus unknown modifiers. SD-Mal, the predominant African variant, has overlapping paracentric inversions In(2R)Mal and shows ~100% transmission. Previous work showed In(2R)Mal is essential for SD-Mal drive, as recombinants lacking inversions do not drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C33 provide specific background on SD and SD-Mal, all supported by appropriate citations to prior work. The key observation that recombinants lacking In(2R)Mal do not drive (C32-C33) is from Presgraves et al., 2009 and provides the motivation for the current study. All background claims are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Speculation about the functional roles of the two inversions: In(2R)Mal-d may have captured the co-driver and reduced recombination with Sd, while In(2R)Mal-p may have tightened linkage between centromere-proximal components and In(2R)Mal-d.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 are explicitly labeled as speculation in the source text. While the speculation is reasonable given the temporal order of inversions and their effects on recombination, it is not directly tested. The functional roles of the two inversions remain hypothetical and would require additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Recombination occurs readily between Sd and the proximal break of In(2R)Mal despite the recruitment of inversions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by genetic crosses (Table 2) and citations to prior work (Presgraves et al., 2009; Brand et al., 2015). This observation is important for understanding the limits of recombination suppression by the inversions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Discussion of supergene evolutionary patterns: Most supergenes show long-range LD, reduced diversity, and differentiation. Meiotic drive supergenes show variable signatures of selection. The relatively recent origin of SD (~38.5 kya) might explain constant turnover compared to older systems like the t-haplotype (first inversion 3 mya).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 provide comparative context supported by appropriate citations. The speculation about SD's recent origin explaining turnover (C102) is reasonable but not directly tested. The comparison to the t-haplotype (C103) is supported by citation to Hammer and Silver, 1993.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Nearly all SD-Mal haplotypes are individually homozygous lethal, but ~90% of pairwise combinations (SDi/SDj) are viable and fertile in complementation tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by citations to Presgraves et al., 2009 and Brand et al., 2015. This observation is important for understanding the potential for recombination between SD-Mal haplotypes and is used to interpret the recombination analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Discussion of supergene degeneration: Non-recombining supergenes in heterozygous state tend to degenerate, but not all supergenes necessarily degenerate. Evidence from mouse t-haplotype shows occasional recombination and gene conversion. Ultimate evolutionary fates depend on system-specific factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 provide broader evolutionary context supported by appropriate citations. The comparison to the t-haplotype (C141) is relevant and well-supported. The general conclusion (C142) appropriately acknowledges the complexity of supergene evolution.",
+    "result_type": "MINOR"
+  }
+]

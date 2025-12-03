@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "A phenome-wide Mendelian randomization screen of 4591 traits identified 44 putatively causal traits for early AMD, including 29 serum lipoprotein measures, 5 immune cell phenotypes, 6 serum proteins, and 4 disease phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C18 collectively describe the scope and main findings of the univariable MR screen. The numbers are internally consistent and represent the primary output of the phenome-wide analysis. The conservative quality control criteria applied (FDR correction, multiple robust measures, leave-one-out analysis) support the reliability of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C126",
+      "C127",
+      "C65"
+    ],
+    "result": "Multiple serum lipoprotein measures, particularly IDL-related traits and linoleic acid, show protective effects for AMD with odds ratios ranging from 0.79-0.84 and highly significant p-values (10^-7 to 10^-9 range). These findings replicated in advanced AMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 and C126-C127 present consistent statistical evidence for protective effects of VLDL/IDL lipoproteins. The effect sizes are modest but highly significant, pass FDR correction, and replicate across early and advanced AMD datasets. The consistency across multiple related lipid measures strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C66"
+    ],
+    "result": "MR-BMA analysis identified sphingomyelins as the most likely causal lipid trait (MIP=0.76, MACE=0.30), followed by phospholipids in very small VLDL (MIP=0.63, MACE=-0.31), triglycerides in IDL (MIP=0.32, MACE=-0.16), and free cholesterol (MIP=0.20, MACE=0.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37-C40, C133-C136, and C66 describe MR-BMA results that appropriately account for correlation among lipid traits. The analysis removed outlier SNPs (C36, C129-C132) before final analysis. The sphingomyelin finding has the highest MIP and is supported by biological plausibility (C67-C71). However, the authors appropriately note limitations in definitively identifying the single causal trait (C137-C138).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C123",
+      "C124"
+    ],
+    "result": "Serine palmitoyltransferase 2 shows a protective effect for early AMD (OR=0.86, p=1.00E-03), with serine palmitoyltransferase 1 showing similar protective trends. These enzymes were not significantly related to advanced AMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C43 present consistent evidence for protective effects of serine palmitoyltransferases in early AMD. The lack of significance in advanced AMD (C43) is appropriately noted. The biological interpretation (C123) regarding sphingolipid balance is reasonable given the known role of these enzymes in sphingolipid biosynthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C114",
+      "C120"
+    ],
+    "result": "S100-A5 protein shows a causal relationship with early AMD (OR=1.07, p=6.80E-06). S100-A13 was also significant but did not pass leave-one-out analysis. No S100 proteins were significant for advanced AMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C61-C64 present consistent evidence for S100-A5 as a causal factor. The authors appropriately note that S100-A13 may be driven by influential variants (C63) and that findings did not replicate in advanced AMD (C64). The biological interpretation (C114, C120) acknowledges limited knowledge about S100-A5 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C83"
+    ],
+    "result": "Cathepsin F shows a causal relationship with early AMD (OR=1.10, p=7.16E-05). No other cathepsin family members were robustly significant for early AMD, and none were robustly significant for advanced AMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C58-C60 present consistent evidence for cathepsin F. The specificity to this family member and lack of replication in advanced AMD are appropriately noted. The biological context (C78-C83) provides plausibility for cathepsin involvement in AMD, though the authors acknowledge this area lacks mechanistic exploration (C119).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C164",
+      "C165",
+      "C72"
+    ],
+    "result": "Complement proteins CD59 glycoprotein (OR=1.10, p=2.04E-05) and complement factor H-related protein 5 (OR=1.10, p=7.70E-07) show causal relationships with early AMD. CD59 replicated in advanced AMD. MR-BMA analysis was limited by outlier variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C44-C48 present consistent evidence for complement involvement. The MR-BMA analysis encountered methodological limitations (C139-C142) due to the critical rs2274700 variant being an outlier yet the only strong instrument for complement factor H. The authors appropriately acknowledge they cannot precisely identify the specific causal complement molecule (C143-C144). The finding reinforces established knowledge about complement in AMD (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Five immune cell phenotypes show causal relationships with early AMD, with dendritic cell traits dominating. Multiple immune traits also associated with advanced AMD. MR-BMA was not feasible due to insufficient genetic instruments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C23, C50-C54, C145-C150 present evidence for immune cell involvement, but there is an internal inconsistency: C21 reports OR=1.08 for effector memory CD8+ T cells while C52 reports OR=0.95 for the same trait. This discrepancy raises concerns about data accuracy. Additionally, the high correlation among immune traits (C146-C147) and inability to perform MR-BMA (C148) means the specific causal immune cell types cannot be confidently identified (C149). The findings suggest immune involvement but lack specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C55",
+      "C56",
+      "C151",
+      "C155",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Rheumatoid arthritis shows a causal relationship with early AMD (beta=0.08, p=9.86E-09), but multivariable MR suggests this effect is either mediated by immune cells or reflects correlated pleiotropy. The association did not replicate in advanced AMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C55-C56, C151, C158-C160 present consistent evidence and appropriate follow-up analysis. The multivariable MR analysis (C56, C158-C159) appropriately addresses the correlation between rheumatoid arthritis and immune cell traits. The lack of replication in advanced AMD (C155) and the confidence intervals overlapping zero for rheumatoid arthritis in multivariable analysis (C158) suggest the univariable finding may reflect pleiotropy rather than direct causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C161",
+      "C162",
+      "C163",
+      "C122"
+    ],
+    "result": "Psychiatric diseases, benign skin neoplasms, and myotonic disorders showed significant associations with early AMD but did not replicate in advanced AMD. The broad trait definitions and lack of biological plausibility suggest these may be false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C152-C154 report significant associations, but C155-C163 and C122 provide multiple lines of evidence suggesting these are likely false positives: lack of replication in advanced AMD, no significant associations with more specific psychiatric traits, no reverse causation detected, broad/non-specific trait definitions, and lack of biological plausibility. The authors appropriately conclude psychiatric disease is likely a false positive (C122).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C121"
+    ],
+    "result": "Smoking (cigarettes per day) showed only nominal significance (p=0.009) and did not pass FDR correction or other robust measures, likely reflecting the low statistical power of MR rather than absence of a true effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 appropriately interpret the null finding for smoking in the context of MR's known limitations. The authors correctly note (C121) that null results should not be interpreted as evidence of no relationship given the hypothesis-free design and low power of MR. This is a methodologically sound interpretation of a negative result for a known AMD risk factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C128",
+      "C36",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Genetic instruments for serum lipoprotein and fatty acid measures were highly correlated. Two SNPs (rs11065987/BRAP and rs10455872/LPAL2) were identified as outliers in MR-BMA analysis and removed, after which no further outliers were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C128-C132 describe appropriate quality control procedures for MR-BMA. The correlation among lipid trait instruments (C35, C128, supported by Figure 1) justifies the use of MR-BMA. The identification and removal of outlier SNPs (C36, C129-C132, supported by Figure 2) follows established methodology and is transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study used appropriate MR methodology including multiplicative random effects IVW as the primary method, multiple robust measures for sensitivity analysis, F-statistics >10 for instrument strength, and FDR correction for multiple testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C95-C103 describe methodological choices that are appropriate for phenome-wide MR. The use of MRE-IVW (C98-C99) is justified for heterogeneous instruments. The quality control measures (C100-C102) follow established guidelines. The acknowledgment of MR's low power (C103) appropriately informs the multiple testing approach. The data sources are clearly described (C12-C13).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C125"
+    ],
+    "result": "The sphingomyelin findings are consistent with prior knowledge that sphingolipids play key roles in retinal physiology and emerging evidence for their role in AMD pathogenesis, including previous metabolomic studies and known roles of ceramide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 appropriately contextualize the sphingomyelin findings within existing literature. The citations support the biological plausibility of the findings. The recommendation for future research (C125) is reasonable given the novel identification of sphingomyelin as a likely causal factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The CD59 finding appears inconsistent with previous studies showing therapeutic benefit of high CD59 levels in AMD models, potentially reflecting complex relationships between systemic and local complement activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C115-C117 appropriately acknowledge an apparent contradiction with prior work and offer a reasonable speculative explanation. The authors correctly note that the relationship between systemic and local complement is poorly understood (C115-C116) and that studies have produced conflicting results. The speculation (C117) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C118"
+    ],
+    "result": "A connection between complement and lipid accumulation has been proposed in AMD, with metabolomic evidence linking decreased VLDL to increased complement activation. The relationship warrants further study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 cite prior work establishing a potential link between complement and lipid metabolism. The recommendation for further study (C118) is appropriate given the current study's findings of both complement and VLDL/IDL involvement in AMD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C119"
+    ],
+    "result": "Cathepsins are lysosomal proteases involved in cellular homeostasis, susceptible to age-related alterations, and implicated in retinal function. Dysregulation may contribute to AMD pathophysiology, though specific cathepsin roles have not been mechanistically explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide appropriate biological context for the cathepsin F finding, supported by citations. The acknowledgment that specific cathepsin roles in AMD lack mechanistic exploration (C119) appropriately qualifies the interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "S100 proteins function as intracellular regulators and extracellular signaling molecules with roles in immunity and inflammation. S100B-RAGE binding has been linked to AMD development, and S100-A5 is known to activate RAGE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide appropriate biological context for the S100-A5 finding, supported by citations. The connection to RAGE activation (C88) and prior work on S100B (C87) provide biological plausibility for the S100-A5 finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C1"
+    ],
+    "result": "AMD is a major cause of blindness projected to affect >280 million people by 2040. GWAS have identified variants in \u226569 loci including CFH and ARMS2/HTRA1. Known risk factors include age, smoking, alcohol, and low antioxidant intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11 provide appropriate background context supported by citations. These represent established knowledge in the field and appropriately frame the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C104"
+    ],
+    "result": "Mendelian randomization uses genetic variation to infer causal relationships and can address unmeasured confounding. Its use in AMD has been limited but has successfully explored relationships with lipids, thyroid function, CRP, and complement factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94, C104 provide appropriate methodological background and context for the study, supported by citations. These establish the rationale for applying MR to AMD and position the current work within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "A previous MR-BMA study by Zuber et al. (2020) demonstrated causal roles for lipid traits in AMD but had limitations including downweighting fatty acid traits and excluding numerous potentially relevant lipid traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 appropriately critique prior work and justify the current study's approach. The identified limitations (C107-C108) provide rationale for the more comprehensive lipid analysis conducted in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C137",
+      "C138"
+    ],
+    "result": "MR-BMA provides model-averaged causal estimates (MACE) and is designed to identify the most likely causal trait among candidates, though definitive certainty is often not achievable. MACE can indicate direction but not necessarily magnitude of effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111, C137-C138 appropriately describe the capabilities and limitations of MR-BMA methodology. The authors correctly note that definitive statements of causality for individual traits cannot be obtained (C138), which is an important methodological caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The study identified a set of traits robustly associated with genetic liability to AMD, including previously undescribed causal factors and reinforcing established AMD contributors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 provide appropriate summary statements of the study's overall contribution. These are supported by the collective evidence from the specific findings described in other claim groups.",
+    "result_type": "MINOR"
+  }
+]

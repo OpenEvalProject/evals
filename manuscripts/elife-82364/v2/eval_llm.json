@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The eyeAge model achieved mean absolute errors (MAE) of 2.86 years on EyePACS and 3.30 years on UK Biobank datasets, with strong correlations between predicted and chronological age (0.95 and 0.87 respectively), performing favorably compared to previous aging clock studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C32, C33, and C34 provide consistent evidence of model performance with specific MAE values and correlation coefficients. The comparison to previous studies (C34) is supported by citations. The reported metrics are appropriate for evaluating age prediction models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "A deep learning model with Inception-v3 architecture was trained on 217,289 images from 100,692 EyePACS patients, tuned on 54,292 images from 25,238 patients, and applied to 119,532 UK Biobank images with distinct demographic distributions, using averaged predictions from left and right eyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 and C114-C116 provide detailed methodological information about model architecture, training data, and prediction methodology. The specific numbers and procedures are clearly documented, though reproducibility depends on access to proprietary datasets and complete hyperparameter specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The model demonstrated longitudinal tracking capability without using longitudinal training data, correctly ordering 71% of visits within a year with MAE <2 years, though correlation between observed and predicted age differences was low (\u03c1=0.17). Age-matched control experiments showed reduced performance (55% PPR, 3.6 years MAE), suggesting an individual-specific eyeAge component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C37 show contradictory results: low correlation (\u03c1=0.17) between predicted and observed age differences, yet 71% correct ordering. The interpretation of 'individual-specific component' (C41) from the control experiment (C39-C40) is inferential and may reflect model noise rather than biological signal. The low correlation raises questions about the model's ability to track aging longitudinally despite the 71% ordering accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C3",
+      "C98",
+      "C99"
+    ],
+    "result": "eyeAge and phenoAge showed correlations with chronological age of 0.87 and 0.82 respectively, but their mutual correlation was lower (0.72), approximately equal to the product of individual correlations, suggesting conditional independence. Little correlation was observed between eyeAgeAccel and phenoAgeAccel, indicating eyeAge captures biological aging information distinct from blood markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide consistent statistical evidence for independence between eyeAge and phenoAge. The mathematical reasoning that correlation \u2248 product of individual correlations (C46) supports conditional independence. However, the biological interpretation (C99) is inferential. The statistical evidence is sound, though the claim of measuring 'different layers' of aging requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "eyeAge showed statistically significant associations with all-cause mortality across multiple adjustment models: HR=1.09 (sex-adjusted), HR=1.04 (sex/age-adjusted), and HR=1.03 (sex/age/phenoAge-adjusted), with slightly higher hazard ratios for women (1.035) versus men (1.026) though confidence intervals overlapped.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 report consistent hazard ratios with confidence intervals and p-values from Cox proportional hazards regression. The progressive adjustment strategy is appropriate. However, the modest effect sizes (HR~1.03-1.09) and overlapping confidence intervals for sex stratification (C51) suggest limited clinical utility. The statistical significance is clear but effect sizes are small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "eyeAgeAccel showed nominally significant associations with COPD (p=0.0048) and myocardial infarction (p=0.049), significantly increased systolic blood pressure (p=1.025e-7), decreased deprivation (p=2.26e-5), and paradoxically increased fluid intelligence scores (p=5.34e-27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C56 report associations without multiple testing correction despite testing numerous outcomes. The 'nominally significant' qualifier (C52-C53) acknowledges this limitation. The paradoxical positive association with fluid intelligence (C56) contradicts expected aging patterns and requires explanation. Without correction for multiple comparisons, these associations may represent false positives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "eyeAge showed slightly higher correlation with visual acuity (\u03c1=0.221) compared to chronological age (\u03c1=0.218), and chronological age remained significant after regressing out eyeAge influence (p=1.6e-13), suggesting both measures contribute to visual acuity decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide appropriate statistical analysis of the relationship between age measures and visual acuity. The minimal difference in correlations (0.221 vs 0.218) and the residual significance of chronological age suggest both measures capture overlapping but distinct aspects of visual aging. The analysis is sound though the practical significance of the small correlation difference is questionable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "GWAS analysis on 45,444 European ancestry individuals identified 38 independent suggestive hits (p\u22641\u00d710\u207b\u2076) at 28 loci, with 12 reaching genome-wide significance (p\u22645\u00d710\u207b\u2078). Genomic inflation was low (1.05), LD score regression intercept was 1.02, indicating polygenicity rather than population structure, and SNP-based heritability was 0.11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 and C128-C131 provide comprehensive GWAS quality control metrics and results. The low genomic inflation, appropriate LD score regression intercept, and restriction to European ancestry demonstrate methodological rigor. The SNP-based heritability of 0.11 is reasonable for a complex trait. The statistical evidence is robust and follows standard GWAS practices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "GWAS hits were associated with eye function and age-related diseases. The top locus spanned 650kb including SH3YL1, ACP1, and ALKAL2. Gene enrichment analysis identified associations with macular thickness, cataract formation, and non-eye pathways including bone mineralization and tumor suppression. GO term analysis revealed enrichment for protein tyrosine kinase activity and gap junction channel activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C85 provide consistent evidence from GWAS, enrichment analysis, and GO term analysis. The functional annotations are supported by appropriate citations. However, the interpretation that eyeAge captures 'general aging signatures' (C105) versus eye-specific aging requires caution, as some enrichments may be artifactual (C106-C107). The biological interpretation is plausible but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C6"
+    ],
+    "result": "The deletion variant rs56350804 (PIP=0.9998) was identified as the putative causal variant in the top locus, intronic to SH3YL1 but showing eQTL effects on ALKAL2 expression in spinal cord tissue (p=3.0\u00d710\u207b\u00b9\u2076). Drosophila experiments showed that knockdown of Alk (fly homolog of ALKAL2) using both RNAi and dominant-negative approaches significantly improved visual performance with age compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 provide strong convergent evidence from fine-mapping, eQTL analysis, and experimental validation. The high PIP (0.9998) supports rs56350804 as causal, eQTL data links it to ALKAL2, and Drosophila experiments with two independent genetic interventions show consistent phenotypic effects. The experimental design includes appropriate controls (C93). This represents robust validation of a GWAS finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "An independent study identified the same top GWAS locus, and combined with previous ALK lifespan studies and experimental validation, this provides compelling evidence of a true biological signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 cite independent replication (Goallec et al., 2021) and integrate multiple lines of evidence. Independent replication strengthens confidence in the GWAS finding. The convergence of human genetics, prior functional studies, and experimental validation provides strong support for ALK's role in visual aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Compared to other aging clocks with MAE of 4-8 years (blood, saliva, skin, muscle, liver) or 2-4 years (proteins, metabolites), eyeAge predicted aging changes at a granularity of less than a year.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 states eyeAge can predict changes 'at a granularity of less than a year,' but this contradicts the longitudinal analysis showing low correlation (\u03c1=0.17) between predicted and observed age differences (C36) and MAE of ~2 years for visits within a year (C37). The claim of sub-year granularity is not well-supported by the longitudinal data presented. The comparison to other clocks (C95-C96) is valid but doesn't validate the sub-year claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "eyeAge underperforms phenotypic age in mortality prediction, likely because phenoAge biomarkers were explicitly selected for mortality prediction. Future algorithms combining blood markers and retinal clocks may improve prediction, though it remains unclear whether eyeAgeAccel reflects interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 acknowledge a key limitation with appropriate reasoning. The speculation about future improvements (C103) and uncertainty about intervention response (C104) are appropriately qualified. This represents honest assessment of current limitations and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A separate image quality model was trained and used to filter UK Biobank images, reducing the dataset from 85,645 patients (174,049 images) to 66,533 patients (120,362 images). Data was restricted to first assessment visits to reduce quality-related bias, resulting in 55,267 final data points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 describe appropriate quality control procedures with specific numbers at each filtering step. The rationale for restricting to first visits (C119) is sound. However, the substantial data reduction (35% of patients excluded) may introduce selection bias, and the quality model's criteria are not fully specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "eyeAgeAcceleration was calculated as residuals from regressing chronological age on eyeAge. PhenoAge was computed from blood markers. Cox regression and linear regression analyses were performed using standard packages with appropriate exclusion criteria and transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 provide clear methodological details for statistical analyses. The residual-based acceleration calculation (C121) follows established methods (Liu et al., 2018). The mathematical equivalence noted in C125 is correct. Exclusion criteria and transformations are appropriate, though the 1% outlier exclusion (C127) is somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Lead SNPs were identified using PLINK clumping, and putative causal variants were identified using susieR fine-mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 describe standard GWAS post-processing methods. The use of susieR for fine-mapping is appropriate and state-of-the-art. The methods are adequately described for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Drosophila experiments used standard husbandry conditions, RU486-inducible Gal4 system, and phototaxis assays with 100 flies per replicate across three biological replicates. Pathway enrichment used Enrichr, and statistical significance was assessed by unpaired t-test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 provide detailed experimental methods with appropriate sample sizes (100 flies per replicate, 3 biological replicates). The use of RU486-inducible system allows temporal control. The phototaxis assay is an established method for assessing visual function in flies. Statistical methods are appropriate for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establish that aging causes tissue-wide changes, individuals age uniquely based on genetic and environmental factors, existing aging clocks often require blood draws, retinal microvasculature may indicate systemic health, eyes show changes with aging and disease, and deep learning has been successfully applied to retinal imaging for disease prediction including age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C26 provide appropriate background context supported by citations to established literature. These claims set up the rationale for developing a retinal aging clock. The citations appear appropriate and the general knowledge claims are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Different genes were associated with eyeAgeAccel versus phenoAgeAccel, suggesting eyeAge may identify general aging signatures rather than purely eye-related traits. However, some pathway enrichments may be artifactual, such as melanin biosynthesis which could reflect image quality effects related to eye color.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C105 are supported by GWAS data showing distinct genetic associations. The acknowledgment of potential artifacts (C106-C108) demonstrates appropriate scientific caution. The eye color confounding issue (C107) is a valid concern that could affect interpretation of some genetic associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "eyeAge has potential applications in aging research, therapeutics tracking, lifestyle assessment, and clinical trials due to its ease of use, low cost, and non-invasive nature, enabling measurement of aging improvements over short periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C113 are speculative about future applications. While the practical advantages (non-invasive, low-cost) are valid, the utility for tracking interventions is unproven (acknowledged in C104). The claim of measuring improvements 'over short periods' conflicts with the uncertain longitudinal tracking capability shown in the data. These are aspirational rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  }
+]

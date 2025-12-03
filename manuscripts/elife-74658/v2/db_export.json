@@ -1,0 +1,1917 @@
+{
+  "submission": {
+    "id": "1e855d39-12ea-4770-8846-4bc64acfd883",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:04:46.373511Z",
+    "updated_at": "2025-12-03T11:04:46.373511Z"
+  },
+  "content": [
+    {
+      "id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "submission_id": "1e855d39-12ea-4770-8846-4bc64acfd883",
+      "content_type": "manuscript",
+      "content_text": "# Discovery of coordinately regulated pathways that provide innate protection against interbacterial antagonism\n\n## Authors\n\n- See-Yeun Ting<sup>1</sup>\n- Kaitlyn D LaCourse<sup>1</sup>\n- Hannah E Ledvina<sup>1</sup>\n- Rutan Zhang<sup>2</sup>\n- Matthew C Radey<sup>1</sup>\n- Hemantha D Kulasekara<sup>1</sup>\n- Rahul Somavanshi<sup>1</sup>\n- Savannah K Bertolli<sup>1</sup>\n- Larry A Gallagher<sup>1</sup>\n- Jennifer Kim<sup>1</sup>\n- Kelsi M Penewit<sup>3</sup>\n- Stephen J Salipante<sup>3</sup>\n- Libin Xu<sup>2</sup> ([ORCID: 0000-0003-1021-5200](https://orcid.org/0000-0003-1021-5200))\n- S Brook Peterson<sup>1</sup> ([ORCID: 0000-0003-2648-0965](https://orcid.org/0000-0003-2648-0965))\n- Joseph D Mougous<sup>1</sup> ([ORCID: 0000-0002-5417-4861](https://orcid.org/0000-0002-5417-4861)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology, University of Washington School of Medicine Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n2. Department of Medicinal Chemistry, University of Washington School of Pharmacy Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n3. Department of Laboratory Medicine and Pathology, University of Washington School of Medicine Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n4. Department of Biochemistry, University of Washington School of Medicine Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n5. Howard Hughes Medical Institute, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacterial survival is fraught with antagonism, including that deriving from viruses and competing bacterial cells. It is now appreciated that bacteria mount complex antiviral responses; however, whether a coordinated defense against bacterial threats is undertaken is not well understood. Previously, we showed that Pseudomonas aeruginosa possess a danger-sensing pathway that is a critical fitness determinant during competition against other bacteria. Here, we conducted genome-wide screens in P. aeruginosa that reveal three conserved and widespread interbacterial antagonism resistance clusters (arc1-3). We find that although arc1-3 are coordinately activated by the Gac/Rsm danger-sensing system, they function independently and provide idiosyncratic defense capabilities, distinguishing them from general stress response pathways. Our findings demonstrate that Arc3 family proteins provide specific protection against phospholipase toxins by preventing the accumulation of lysophospholipids in a manner distinct from previously characterized membrane repair systems. These findings liken the response of P. aeruginosa to bacterial threats to that of eukaryotic innate immunity, wherein threat detection leads to the activation of specialized defense systems.\n\n## Introduction\n\nAntagonism from other organisms is a threat faced nearly universally by bacteria living in mixed populations, yet we are only beginning to understand the mechanisms employed in defense against these assaults (Hersch et al., 2020a; Peterson et al., 2020; Robitaille et al., 2021). One defense mechanism that is common in the gut microbiome and potentially other habitats is the production of immunity proteins that grant protection against specific toxins delivered by the type VI secretion system (T6SS) (Ross et al., 2019). These \u2018orphan\u2019 immunity proteins share homology with and are likely evolved from cognate immunity proteins that protect bacteria from undergoing self-intoxication, which is inherent to the indiscriminate nature of the T6SS delivery mechanism. Core cellular structures have also been implicated in promoting survival during interbacterial antagonism. Extracellular polysaccharide capsules protect Vibrio cholerae and Escherichia coli from T6SS-based attack of other species (Hersch et al., 2020b; Toska et al., 2018), and in Acinetobacter baumannii, lysine modification at peptidoglycan crosslinks was suggested to render the cell wall resistant to degradation by amidase toxins (Le et al., 2020). Finally, characterized stress response pathways also appear to contribute to antagonism defense. Indeed, it has been suggested that bacterial stress responses evolved in part as a means of detecting and responding to antagonistic competitors (Cornforth and Foster, 2013; Lories et al., 2020). A candidate-based approach applied to E. coli and P. aeruginosa found that stress response genes involved in envelope integrity and acid stress, among others, can contribute to resistance against a V. cholerae phospholipase toxin (Kamal et al., 2020). While the P. aeruginosa genes identified impacted survival when the toxin was produced heterologously within the organism, they did not influence the fitness of the bacterium during interbacterial competition with V. cholerae.\n\nWe previously discovered that P. aeruginosa mounts an effective but largely undefined defense upon exposure to an antagonistic competitor, which we named the P. aeruginosa response to antagonism (PARA) (LeRoux et al., 2015a). The response is activated when a subpopulation of P. aeruginosa cells are lysed, releasing intracellular contents that trigger the response in neighboring survivors (LeRoux et al., 2015b). PARA is coordinated by the Gac/Rsm global regulatory pathway, which post-transcriptionally controls the expression of nearly 400 genes (Goodman et al., 2004; Lapouge et al., 2008). This regulon includes the Hcp secretion island I-encoded type VI secretion system (H1-T6SS), the activity of which enables P. aeruginosa to kill or disable competing bacteria through the delivery of a cocktail of toxic effector proteins (Hood et al., 2010). While an important component of PARA, data suggest that the H1-T6SS is just one feature of the response; P. aeruginosa strains lacking functionality of the two-component system required to initiate Gac/Rsm signaling are severely crippled in interbacterial antagonism defense relative to those lacking only the H1-T6SS (LeRoux et al., 2015a). The majority of the genes under Gac/Rsm control encode proteins of unknown function, and we hypothesized that these could represent uncharacterized, novel mechanisms by which P. aeruginosa defends against interbacterial antagonism.\n\n## Results\n\n### Discovery of coordinately regulated P. aeruginosa interbacterial toxin defense pathways\n\nPrior work by our laboratory has shown that Burkholderia thailandensis (B. thai) fiercely antagonizes P. aeruginosa using its antibacterial T6SS (LeRoux et al., 2015a). Thus, to identify its interbacterial defense factors, we subjected a transposon library of P. aeruginosa to antagonism by B. thai or a derivative lacking antibacterial T6SS activity (\u0394T6S) and used high-throughput sequencing to measure gene-level fitness changes. Duplicate screening of this library revealed 34 genes critical for the survival of P. aeruginosa specifically while undergoing antagonism by B. thai (Figure 1A, Figure 1\u2014figure supplement 1A and B , Figure 1\u2014source data 1). Strikingly, 25 of these belong to the Gac/Rsm regulon and three additional hits included genes directly involved in the Gac/Rsm signaling system (Goodman et al., 2004; Lapouge et al., 2008). Indeed, disruption of genes encoding GacS and GacA, the central sensor kinase and response regulator required for activation of the pathway, respectively, elicited the strongest interbacterial defense defect among all genes in the P. aeruginosa genome (Figure 1A and B). On the contrary, inactivating insertions in retS, encoding a hybrid sensor kinase that negatively regulates GacS, increased interbacterial competitiveness.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig1-v2.jpg)\n\n**Figure 1.:** (A) Transposon library sequencing-based comparison of the fitness contribution of individual P. aeruginosa genes during growth competition with wild-type B. thai versus B. thai \u2206T6S. Genes under Gac/Rsm control (blue) and those encoding core Gac/Rsm regulatory factors (purple, labeled) are indicated. (B) Overview of the Gac/Rsm pathway (SD, Shine\u2013Dalgarno). The rsmY and rsmZ genes encode small RNA molecules that sequester the translational regulator RsmA. Hybrid sensor kinase PA1611 is here renamed RetS-regulating sensor kinase A (RskA). (C) Left: P. aeruginosa gene clusters hit (greater than threefold in replicate screens; Figure 1\u2014source data 1) in this study. Numbers below genes indicate transposon insertion ratio (B. thai \u2206T6S/wild-type) for screen in (A) followed by the replicate screen (Figure 1\u2014figure supplement 1); light toned genes were hit in only one replicate. Asterisk indicates genes for which insertion was undetected in libraries obtained from B. thai wild-type competition. Right: zoom-in of boxed region of (A) with genes colored corresponding to clusters at left. (D, E) Recovery of P. aeruginosa cells with the indicated genotypes following growth competition against B. thai wild-type (D) or \u2206T6S (E). For interbacterial competition assays, the mean \u00b1 SD of biological duplicates and associated technical duplicates is shown: *p<0.05 using unpaired two-tailed Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Growth of wild-type P. aeruginosa in co-culture with the indicated B. thai strains. (B) Transposon library sequencing-based comparison of the fitness contribution of individual P. aeruginosa genes during growth competition with wild-type B. thai versus B. thai \u2206T6S. Genes under Gac/Rsm control (blue) and those encoding core Gac/Rsm regulatory factors (purple, labeled) are indicated. This experiment is a biological replicate of that in Figure 1A. (C) P. aeruginosa gene clusters hit (Figure 1\u2014source data 1) in this study. (D) Zoom-in of boxed region of (B) with genes colored corresponding to clusters at left. The interbacterial competition assay represents two biological replicates with two associated technical replicates.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic depicting the arc1 gene cluster of P. aeruginosa. Predicted enzymatic activity of Arc1A, B, D, F is indicated (right) and placed onto a phospholipid biosynthesis pathway (bottom). (B) Depiction of arc2 genes from the indicated species. Genes encoding the predicted MoxR-like ATPase and von Willebrand factor (VWF) domain protein are indicated below the respective genes. Orthologs are colored to highlight synteny. (C) Depiction of arc3 genes from the indicated species. S. dynata exemplifies an instance of translational fusion of arc3A,B. Domains of unknown function constituting the two proteins are indicated below.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Recovery of P. aeruginosa strains bearing the indicated single or double deletions within arc1-3 following growth competition against wild-type B. thai. (B) Recovery of P. aeruginosa cells with the indicated genotypes following growth competition against wild-type B. thai. The mean \u00b1 SD of biological duplicates and associated technical duplicates is shown: n.s. corresponds to p>0.05 by unpaired two-tailed Student\u2019s t-test. The fold difference in growth yield between mutants and the parental strain is indicated above.\n\nOur screens identified previously uncharacterized genes belonging to three operons under Gac/Rsm control (Goodman et al., 2004), several genes within two operons of the HSI-I-encoded T6SS (H1-T6SS) (Hood et al., 2010), and two genes within an operon not subject to Gac/Rsm regulation (Figure 1C, Figure 1\u2014figure supplement 1C, Figure 1\u2014source data 1). Given that false positives are less common among multiple gene hits within an operon, we focused on these genes for subsequent validation in pairwise competition assays. Strains bearing in-frame deletions of the genes most strongly hit in each operon showed substantially reduced fitness in competition with wild-type B. thai, and in each instance this could be partially restored by genetic complementation (Figure 1D). Further consistent with our screening results, each of the single-gene deletion mutants grew similarly to the wild-type in competition with B. thai unable to antagonize P. aeruginosa (B. thai \u0394T6S) (Figure 1E).\n\n### Arc1-3 operate independently and defend in a manner distinct from general stress responses\n\nThe P. aeruginosa Gac/Rsm pathway has been implicated in a process we termed danger sensing (LeRoux et al., 2015a; LeRoux et al., 2015b). We previously showed that the lysis of neighboring kin cells triggers the pathway, leading to T6SS activation. However, the Gac/Rsm pathway post-transcriptionally activates hundreds of genes whose function has largely remained cryptic (Figure 1B). Bioinformatic analyses suggested that each of the uncharacterized Gac/Rsm-regulated operons hit in our screen likely constitute a discrete pathway. Five of the six genes within the PA2536-41 cluster are predicted to encode proteins related to phospholipid biosynthesis or metabolism, including four genes encoding products with significant homology to enzymes required for phosphatidylglycerol synthesis (Figure 1\u2014figure supplement 2A). Orthologs of core bacterial phospholipid biosynthetic machinery are encoded elsewhere in the genome, indicating likely specialization of this putative pathway. The PA4317-23 genes co-occur across many species within the Xanthomonadaceae and Pseudomonadaceae (Figure 1\u2014figure supplement 2B). While none of the proteins encoded by this gene cluster have been characterized, they include a predicted MoxR-like AAA+-ATPase and a protein with a von Willebrand factor (VWF) domain. Related protein pairs co-occur widely and are known to cooperate in a chaperone-like function that releases protein inhibition or stimulates metal cofactor insertion (Snider and Houry, 2006; Tsai et al., 2020). Finally, PA5113 and PA5114 also co-occur widely, and several organisms encode single polypeptides that represent a fusion of the two proteins (Figure 1\u2014figure supplement 2C).\n\nNext, we sought to obtain experimental support for our hypothesis that the Gac/Rsm-regulated operons hit in our screen constitute independent functional units. First, we compared the fitness of our single-deletion strains to those bearing in-frame deletions in the two genes most strongly hit within each operon. In each operon, the second deletion did not impact competitiveness with B. thai, suggesting that the pairs of genes encode components of the same pathway (Figure 1\u2014figure supplement 3A). On the contrary, additive effects on interbacterial competitiveness were observed when genes from each of the three operons were inactivated in a single strain. Indeed, the fitness deficiency of this triple mutant strain approaches that of the \u2206gacS strain, which lacks Gac/Rsm function entirely (Figure 1\u2014figure supplement 3B). Together, these data reveal that the Gac/Rsm pathway and discrete functional units under its control are critical for P. aeruginosa survival when antagonized by the T6SS of B. thai. Based on these data, we named the genes with the three Gac/Rsm-regulated operons hit in our screen arc1A-F (antagonism resistance cluster 1, PA2541-36), arc2A-G (PA4317-23), and arc3A,B (PA5114-13) (Figure 1C).\n\nAs a first step toward understanding how Arc1-3 influence the competitiveness of P. aeruginosa, we asked whether they serve defensive or offensive roles. In our initial screen, B. thai dramatically outnumbered P. aeruginosa (~50:1); therefore, the diminished P. aeruginosa viability observed under these conditions suggested each pathway can function defensively. However, these conditions do not exclusively isolate the defensive contribution of the pathways. For example, we observed that killing competitor cells via the H1-T6SS indirectly contributes to P. aeruginosa viability under these conditions, likely by expanding the available growth niche. To probe the capacity of Arc1-3 to antagonize B. thai, we initiated co-culture growth competition assays with an excess of P. aeruginosa. We previously demonstrated that in co-cultures initially dominated by P. aeruginosa, antagonism by B. thai has a negligible impact on P. aeruginosa growth (Schwarz et al., 2010). Under these conditions, inactivating Arc2 and Arc3 had no impact on B. thai survival. Arc1 inactivation led to an increase in B. thai survival; however, this effect was modest relative to its impact on P. aeruginosa defense (Figure 2A). In contrast, inactivation of the H1-T6SS increased B. thai survival by approximately four orders of magnitude, eclipsing its impact on P. aeruginosa defense by ~100-fold. Together, these finding indicate that the contributions of Arc1-3 to P. aeruginosa competitiveness during antagonism arise predominately from defensive mechanisms.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig2-v2.jpg)\n\n**Figure 2.:** (A) Recovery of B. thai cells following growth competition against a relative abundance of P. aeruginosa containing the indicated gene deletions, colored according to Figure 1C. (B) Relative survival of P. aeruginosa Arc1-3-inactivated mutants following growth in competition with an excess of the indicated B. thai strains (mutant CFU/parental CFU \u00d7 100 for each B. thai competitor). The loss of ColA or Tle3 activity in B. thai increases the relative survival of P. aeruginosa lacking Arc2 or Arc3 activity, respectively. (C, D) Transposon library sequencing-based comparison of the fitness contribution of individual P. aeruginosa genes during growth competition with wild-type B. thai versus B. thai lacking Tle3 (C) or ColA (D) activity, colored according to Figure 1C. Values in parentheses correspond to the number of genes hit (greater than threefold change in transposon insertion frequency) within each cluster compared to the number within each cluster hit in the initial screens (B. thai wild-type versus B. thai \u2206T6S) followed by the average transposon insertion frequency ratio (B. thai mutant/B. thai wild-type) of the genes in the depicted screen. (E) Fitness contribution of each P. aeruginosa Arc pathway and the H1-T6SS to defense against Tle3 versus ColA. For interbacterial competition assays, the mean \u00b1 SD of biological duplicates and two technical replicates is shown: *p<0.05 using unpaired two-tailed Student\u2019s t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Survival of the indicated P. aeruginosa strains during exposure to hydrogen peroxide (50 mM, 30 min) (A), high salinity (3 M NaCl, 20 hr) (B), high temperature (55\u00b0C, 30 min) (C), or detergent (0.5% [w/v] SDS) (D). The mean \u00b1 SD of a representative biological replicate with three technical replicates is shown.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Anti-VSV-G immunoblot analysis was used to probe the levels of the indicated VSV\u2013G-tagged (\u2013V) Arc proteins encoded at their respective native genomic loci in P. aeruginosa wild-type, \u2206retS, or \u2206gacS backgrounds. The asterisk denotes a nonspecific VSV-G antibody-reactive band. The arrow highlights the position of Arc2G\u2013V. Blot images are representative of at least two biological replicates. See Figure 2\u2014figure supplement 2\u2014source data 1\u20136.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Schematic depicting the tle1/tli1 (top) and tle3/tli3 (bottom) loci in the genome B. thai E264 strain. Predicted catalytic serine residues mutagenized in this study are indicated by red asterisks. (B) Recovery of B. thai strain sensitized to Tle3 intoxication (\u2206tle3\u2206tli3) following growth competition against B. thai wild-type or a strain in which both orthologs of Tle3 contain an inactivating point mutation. The mean \u00b1 SD of two biological replicates with two technical replicates is shown.\n\nOur results suggested that the Gac/Rsm system functions analogously to innate immune sensors of eukaryotic organisms, wherein danger sensing activates the expression of independently functioning downstream effectors that defend the cell against specific threats (Paludan et al., 2021). By extension, this response should be distinct from that provoked by general stressors. To test this, we measured the contribution of Arc1-3 to P. aeruginosa survival in conditions known to induce general stress response systems, including heat shock, exposure to H2O2, and propagation in high-salinity media or media containing detergent (J\u00f8rgensen et al., 1999; Munguia et al., 2017). Unlike previously established stress-intolerant control strains (\u2206rpoS and \u2206vacJ), the survival of strains lacking Arc1-3 function was equivalent to wild-type P. aeruginosa in these assays, suggesting that their function is distinct from those involved in general stress resistance (Figure 2\u2014figure supplement 1). This is also in line with the regulatory profile of Arc1-3; immunoblotting showed that basal expression of each is exceedingly low, yet highly inducible through stimulation of the antagonism-responsive Gac/Rsm pathway (Figure 2\u2014figure supplement 2).\n\n### Arc1-3 provide defense against distinct threats\n\nThe specific involvement of Arc1-3 in defense against antagonism led us to hypothesize that the pathways could grant protection against mechanistically distinct threats. Notably, B. thai delivers a cocktail of toxins to target cells including two predicted phospholipases (Tle1 and Tle3) (Russell et al., 2013), a peptidoglycan-degrading amidase (Tae2) and a colicin-like toxin predicted to form inner membrane pores (ColA) (Russell et al., 2012; Salomon et al., 2014). To determine the role of Arc1-3 in defense against insults caused by toxins with biochemically diverse modes of action, we subjected strains with individual Arc pathways inactivated to pairwise competition against B. thai strains lacking single toxins in its arsenal. For Tle1 and Tle3, which are duplicated in the B. thai genome and required for basal T6SS function, strains bearing mutated codons corresponding to predicted catalytic residues of the proteins were utilized (Figure 2\u2014figure supplement 3). Strikingly, we found that Tle3 inactivation abrogated the antagonism defense defect of P. aeruginosa lacking Arc3 function (Figure 2B), whereas its defense defect was maintained in competition experiments against other toxin-inactivated strains of B. thai. In contrast, the survival of P. aeruginosa lacking Arc2 function was significantly restored by deletion of colA in B. thai, while none of the single-effector mutations within B. thai impacted the defense defect of P. aeruginosa lacking Arc1 function. These results support the hypothesis that Arc pathways can afford protection in a manner specific to the damage arising from mechanistically distinct threats (Arc2, Arc3) or play a more general role in defense (Arc1). However, B. thai delivers toxins beyond those we inactivated in this study; therefore, we cannot rule out that Arc1 \u2013 like Arc2 and Arc3 \u2013 provides effector-specific defense.\n\nWe found that Arc2 and Arc3 are major defense factors against insults caused by ColA and Tle3, respectively, suggesting that these toxins may damage cells by a mechanism not efficiently countered by other cellular pathways. To evaluate the relative defensive contribution of Arc2 and Arc3 genome-wide, we performed additional transposon-based screening in which a mutant library of P. aeruginosa was grown in competition with B. thai strains lacking ColA or Tle3 activity. Remarkably, this experiment defined arc3A as the gene most critical for P. aeruginosa survival during intoxication by Tle3 (Figure 2C, Figure 2\u2014source data 1). Insertions in the second Arc3 gene, arc3B, also crippled P. aeruginosa defense against Tle3, though to a lesser degree. Arc2 genes were dispensable for Tle3 defense, and only one gene within Arc1 contributed to Tle3 defense beyond the threefold insertion frequency ratio cutoff we employed. Inactivation of ColA had a relative minor impact on the fitness of most P. aeruginosa transposon mutants (Figure 2D, Figure 2\u2014source data 2). However, four of the six Arc2 genes hit in our initial screen provided defense against ColA that exceeded our threefold cutoff. Additionally, one Arc1 gene met these criteria, whereas Arc3 genes were wholly dispensable for defense against ColA. These results support the model that Arc3 provides specific defense against Tle3, Arc2 provides a degree of specific protection against ColA, and Arc1 serves a broader role in antagonism defense. A comparison of the fitness contributions of each Arc pathway and the H1-T6SS to P. aeruginosa undergoing intoxication by Tle3, ColA or Tle1 highlights the degree of their specificity (Figure 2E).\n\n### Arc3 is a broadly conserved pathway that prevents lysophospholipid accumulation\n\nThe highly specific defense afforded by Arc3 against the predicted phospholipase Tle3 prompted us to further interrogate its function. Arc3A is a large protein containing 35 predicted transmembrane domains and lacking residues strongly indicative of enzymatic activity (Figure 3A). With predicted outer-membrane-anchored N-terminal lipidation and a C-terminal inner-membrane transmembrane helix, Arc3A is expected to span the periplasm. Neither Arc3A nor Arc3B share significant homology with characterized proteins; however, apparent orthologs of each are encoded by neighboring open-reading frames across an exceptionally wide distribution of bacteria (Figure 3B). Arc3A-related proteins are composed of domain of unknown function 2339 (DUF2339), possess large, yet varying numbers of transmembrane segments, and are found in bacteria belonging to most Gram-negative and Gram-positive phyla. Consistent with the predicted N-terminal localization of Arc3B to the outer membrane, its related proteins are restricted to Gram-negative phyla. Co-immunoprecipitation studies using epitope-tagged variants of Arc3A and Arc3B encoded at their native chromosomal loci provided evidence that the two proteins stably associate (Appendix 1\u2014table 1). The arc3A and arc3B genes abut a third gene encoded in the same orientation, estA, and there is evidence that transcripts containing all three genes are generated by P. aeruginosa (Gebhardt et al., 2020). Although estA encodes an esterase (Wilhelm et al., 1999), which could have relevance for phospholipase defense, estA was not detected in our co-immunoprecipitation analyses, it did not exhibit differential insertion frequency in our screens, and in-frame deletion of estA did not impact P. aeruginosa survival during intoxication by Tle3 (Figure 1\u2014source data 1, Figure 2\u2014source data 1 and 2, Figure 3\u2014figure supplement 1A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic depiction of Arc3A and Arc3B based on bioinformatic predictions. (B) Phylogeny of bacterial phyla with representative arc genes depicted and colored as in (A). Membrane-associated regions (grayed) and the number of predicted transmembrane segments are indicated. (C) Recovery of P. aeruginosa strains bearing the indicated mutations and containing a control chromosomal insertion (\u2013) or insertion constructs expressing Arc3B proteins derived from assorted bacteria (P. aer, P. aeruginosa; P. pro, P. protegens; B. cen, B. cenocepacia; P. syr, P. syringae; C. rod, Citrobacter rodentium) following growth competition against B. thai wild-type. (D) Recovery of the indicated P. protegens strains following growth competition against B. thai wild-type or a strain lacking Tle3 activity. For interbacterial competition assays, the mean \u00b1 SD of biological duplicates and two or three associated technical replicates is shown: *p<0.05 using unpaired two-tailed Student\u2019s t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Recovery of the indicated P. aeruginosa strains following growth in competition with B. thai wild-type or a strain lacking Tle3 activity (tle3S264A). Means \u00b1 SD of biological duplicates with three technical replicates s shown.\n\nThe observation that Arc3A proteins are found in bacteria lacking an Arc3B homolog, combined with our finding that Arc3B contributes relatively little to Tle3 defense, led us to speculate that Arc3A plays an intrinsic role in defense, independent of its interaction Arc3B. We tested this by examining the ability of Arc3A-related proteins from other species to complement the defense defect of P. aeruginosa \u0394arc3A. Despite high-sequence divergence that would likely preclude specific interactions with Arc3B or other P. aeruginosa factors, four of these proteins restored Tle3 defense to a statistically significant degree and two provided protection equivalent to that of P. aeruginosa arc3A expressed in the same manner (Figure 3C). We also examined one of these proteins in its native context. Inactivation of arc3A in Pseudomonas protegens conferred a strong interbacterial antagonism defense defect specific to B. thai Tle3 (Figure 3D). In total, these data strongly suggest that proteins in the Arc3A family possess the intrinsic capacity to protect bacteria against Tle3-like toxins, and potentially phospholipase toxins more broadly.\n\nWhile the ability of heterologously expressed Arc3A homologs to contribute to P. aeruginosa defense demonstrates that these proteins can function independently, this finding does not rule out the possibility that in P. aeruginosa Arc3B enhances the defensive function of Arc3A. In two of our Tn-seq screens (Figure 1A and C, Figure 2C), we observed a significant difference in arc3B insertion frequency during competition with wild-type B. thai compared to the T6SS- or Tle3-inactivated mutants. However, in pairwise competition experiments with B. thai, we were unable to detect a significant fitness defect associated with arc3B inactivation in either the wild-type or the \u0394arc3A background (Figure 3\u2014figure supplement 1). These results suggest that Arc3B may play an auxiliary role in defense that is only detectable under the more stringent conditions of the Tn-seq screens, where P. aeruginosa strains compete with each other as well as B. thai.\n\nEnzymes with PLA activity cleave glycerophospholipids at the sn1 or sn2 position, generating fatty acid and detergent-like lysophospholipid products (Filkin et al., 2020). For toxins like Tle3, which are delivered to target cells in exceedingly low quantities (Fridman et al., 2020; Hernandez et al., 2020), it is likely toxic products, rather than phospholipid depletion per se, that most immediately contribute to cell death. Based on the intrinsic capacity of Arc3A to grant protection against Tle3, a predicted PLA, we hypothesized that it directly mitigates damage caused by the toxic products of Tle3. To test this, we measured phospholipid content within extracts derived from competing P. aeruginosa and B. thai strains at a time point immediately prior to detectable changes in P. aeruginosa viability. Strikingly, relative to mixtures containing the wild-type organisms, those containing P. aeruginosa \u2206arc3A possessed highly elevated levels of lysophosphatidylethanolamine (LPE) and monolysocardiolipin (MLCL) in a manner dependent on the activity of Tle3 in B. thai (Figure 4A). Lysophosphatidylglycerol, free fatty acid, and corresponding parent phospholipid levels were not measurably altered by Tle3 (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013D) Mass spectrometric (A) and radiographic thin layer chromatography (TLC) (B) analysis of major phospholipid and lysophospholipid species within lipid extracts derived from the indicated mixtures of P. aeruginosa and B. thai strains. P. aeruginosa were grown in 32PO42- prior to incubation with B. thai. Strains were allowed to interact for 1 hr before phospholipids were harvested. Radiolabeled molecules of interest within biological triplicate experiments resolved by TLC were quantified by densitometry (C, D) (E) Mass spectrometric analysis of major phospholipid and lysophospholipid species within lipid extracts derived from mixtures containing B. thai lacking Tle3-specific immunity factors competing with the indicated B. thai strains. (F) Recovery of the indicated P. aeruginosa strains following growth competition against B. thai wild-type or a strain lacking Tle3 activity. (G) Radiographic TLC analysis of products extracted after incubation of P. aeruginosa-derived spheroplasts with purified radiolabeled lysophosphatidylethanolamine (LPE). For interbacterial competition assays, the mean \u00b1 SD of biological replicates and associated technical replicates is shown: *p<0.05 using unpaired two-tailed Student\u2019s t-test. TLC images shown are representative of at least two biological replicates. See also Figure 4\u2014source data 1\u20133.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Mass spectrometric analysis of free fatty acid (A) and parent phospholipid species (B) within lipid extracts derived from the indicated mixtures. Data represent the mean \u00b1 SD of biological duplicates with two technical replicates.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Schematic depicting arc3B and aas loci in the indicated bacterial species.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74658/elife-74658-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Recovery of the indicated P. aeruginosa strains carrying empty pPSV39 (control) or pPSV39-aas grown in competition with an excess of B. thai with Isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) for induction of expression from the plasmid. Data represent mean and standard deviation from technical duplicates from one biological replicate representative of two conducted.\n\nThe accumulated lysophospholipids we observed could derive from P. aeruginosa or they could result from retaliatory activity against B. thai. To distinguish these possibilities, we subjected P. aeruginosa strains with radiolabeled phospholipids to Tle3 intoxication by unlabeled B. thai strains. Radiographic TLC analysis of the phospholipids generated in these strain competition mixtures confirmed that P. aeruginosa lacking Arc3B accumulates LPE and MLCL during Tle3 intoxication (Figure 4B\u2013D). Tle3 belongs to a family of effectors for which there remains no definitively characterized member. We were unable to measure the activity of the enzyme in vitro; thus, to determine whether the accumulation of LPE and MLCL were a direct result of Tle3 activity, we quantified phospholipids in extracts derived from B. thai strains undergoing Tle3-based self-intoxication (Figure 2\u2014figure supplement 3). Samples derived from mixtures composed of a B. thai strain with Tle3 and a derivative strain sensitized to Tle3 intoxication through cognate immunity gene inactivation accumulated LPE and MLCL, mirroring our interspecies competition findings (Figure 4E).\n\nIn E. coli, lysophospholipids are transported across the inner membrane by the dedicated transporter LplT, after which they are reacylated by Aas (Zheng et al., 2017). Both LplT and Aas have been shown to play a critical role in defending E. coli cells from phospholipase attack (Lin et al., 2018). In P. aeruginosa, LplT and the acylation domain of Aas are found in a single predicted polypeptide, encoded by PA3267 (aas). Interestingly, the aas gene was illuminated as a potential P. aeruginosa antagonism defense factor in two of the transposon mutant screens we performed and aas genes neighbor arc3 genes in many bacteria (Figure 2C, Figure 1\u2014figure supplement 1B, Figure 4\u2014figure supplement 2, Figure 1\u2014source data 1, Figure 2\u2014source data 1). In pairwise interbacterial competition assays, we were unable to detect the impact of aas inactivation on P. aeruginosa fitness; however, we found that P. aeruginosa strains lacking both aas and arc3A exhibited a Tle3 defense defect substantially greater than that associated with Arc3A inactivation alone (Figure 4F). Aas overexpression complements the \u0394aas-dependent defect in this strain, but it does not compensate for the inactivation of Arc3A (Figure 4\u2014figure supplement 3). Additionally, we found that Aas is required for PE regeneration from LPE, whereas Arc3A neither contributed to this process, nor could we detect changes in LPE stability upon Arc3A inactivation in the absence of antagonism (Figure 4G). These findings indicate that arc3 encodes a previously undescribed, widespread and independent pathway that prohibits lysophospholipid accumulation by an interbacterial phospholipase toxin.\n\n## Discussion\n\nEvidence suggests that the existence of bacteria is characterized by an onslaught of challenges to their integrity (Granato et al., 2019; Peterson et al., 2020). This is borne out in part by recent work in the phage arena, which has highlighted a vast number of dedicated bacterial defense systems against these parasites (Bernheim and Sorek, 2020; Hampton et al., 2020). It is now appreciated that the amalgam of these systems constitutes a bacterial immune system, with both innate and adaptive arms that are functionally analogous, and even evolutionarily related to those of eukaryotic organisms (Morehouse et al., 2020). Our work shows that bacteria also possess a multitude of coordinately regulated pathways that provide defense against the threats posed by other bacteria. This further cements the analogy between the immune systems of bacterial and eukaryotic cells, the latter of which also rely on the coordinated production of factors specialized for countering threats of viral or bacterial origin.\n\nWe found that Arc3A is the single cellular factor of P. aeruginosa most critical for defense against a PLA toxin. Whether Arc3A, perhaps in concert with Arc3B, offers a wider breadth of defensive activity is not known. However, it is notable that phospholipase toxins are ancient and among the most prevalent bacterial toxins known. Even in the absence of direct antagonism by a PLA toxin, environmental lysophospholipids and those generated during normal cellular processes may represent ongoing threats to bacterial viability (Flores-D\u00edaz et al., 2016). We observed low Arc3A expression in the absence of Gac/Rsm activation, arguing that its role in PARA serves an adaptive purpose.\n\nThe precise mechanism by which Arc3 proteins defend against intoxication by phospholipase toxins remains unknown. Although we found that Arc3 grants specific protection against Tle3, the relatively low levels of P. aeruginosa intoxication achieved by Tle1 do not permit us to rule out that it might also provide broader phospholipase defense. The number and density of transmembrane helices in Arc3A family proteins is unusual, and we postulate that these anomalous features of the protein are intimately connected to its mechanism of action. These segments may sequester lysophospholipids and facilitate their turnover or it is conceivable that they directly recruit and interfere with phospholipase enzymes.\n\nWe have found that several previously uncharacterized gene clusters under Gac/Rsm control contribute critically to PARA. Our bioinformatic analyses show that the arc clusters are widely conserved among Bacteria, yet the Gac/Rsm pathway is restricted to \u03b3-Proteobacteria. If arc genes play similar roles in these diverse bacteria, which our data suggest, their expression is also likely subject to induction by antagonism. It will be of interest in future studies to probe the generality of coordinated interbacterial defenses by identifying additional signaling systems responsive to antagonism. Collectively, our findings provide new insight into the diversity of mechanisms bacteria have evolved to defend against interbacterial attack and suggest that many more cryptic specialized defense pathways await discovery.\n\n## Materials and methods\n\n### Bacterial strains and culture conditions\n\nA detailed list of all strains and plasmids used in this study can be found in Appendix 2\u2014key resources table. Bacterial strains under investigation in this study were derived from P. aeruginosa PAO1, B. thai E264, and P.protegens pf-5 (Paulsen et al., 2005; Stover et al., 2000; Yu et al., 2006). All strains were grown in Luria-Bertani (LB) broth and incubated either at 37\u00b0C (P. aeruginosa and B. thai) or 30\u00b0C (P. protegens). For Pseudomonas strains, the media was supplemented with 25 \u03bcg/ml irgasan, 15 \u03bcg/ml gentamicin, 5% (w/v) sucrose, and 0.2% (w/v) arabinose as needed. B. thai was cultured with 15 \u03bcg/ml gentamicin and 200 \u03bcg/ml trimethoprim as necessary, and counterselection for allelic exchange was performed on M9 minimal medium agar plate containing 0.4% (w/v) glucose and 0.2% (w/v) p-chlorophenylalanine. E. coli strains used in this study included DH5\u03b1 for plasmid maintenance, SM10 for conjugal transfer of plasmids into P. aeruginosa, P. protegens, and B. thai, and UE54 for radiolabeled phosphatidylethanolamine (PE) synthesis. E. coli strains were grown in LB supplemented with 15 \u03bcg/ml gentamicin, 150 \u03bcg/ml carbenicillin, and 200 \u03bcg/ml trimethoprim as needed.\n\n### Plasmid construction\n\nAll primers used in plasmid construction and generation of mutant strains are listed in Appendix 3\u2014table 1. In-frame chromosomal deletions and point mutations were created using the suicide vector pEXG2 for P. aeruginosa and P. protegens, and pJRC115 for B. thai (Chandler et al., 2009; Rietsch et al., 2005). For the generation of chromosomal mutation constructs, 750 bp regions flanking the mutation site were PCR amplified and inserted stitched together into the appropriate vector via Gibson assembly (Gibson et al., 2009). Site-specific chromosomal insertions in P. aeruginosa were generated using pUC18-Tn7t-pBAD-araE as previously described (Hoang et al., 2000). Our trimethoprim-resistant B. thai strain was generated using pUC18T-mini-Tn7-Tp-PS12-mCherry via the mini-Tn7 system (LeRoux et al., 2012).\n\n### Generation of mutant strains\n\nFor P. aeruginosa and P. protegens strain generation, pEXG2 mutation constructs were transformed into E. coli SM10, and SM10 donors were subsequently mixed and incubated together with Pseudomonas recipients on a nitrocellulose membrane on top of an LB agar plate at a ratio of 10:1 donor\u2013recipient. The cell mixtures were incubated for 6 hr at 37\u00b0C to allow for conjugation. These cell mixtures were then scraped up, resuspended into 200 \u03bcl LB, and plated on LB agar plates containing irgasan and gentamicin to select for cells containing the mutant construct inserted into the chromosome. Pseudomonas merodiploid strains were then grown overnight in nonselective LB media, followed by counterselection on LB no-salt agar plates supplemented with sucrose. Gentamicin-sensitive, sucrose-resistant colonies were screened for allelic replacement by colony PCR, and mutations were confirmed via Sanger sequencing of PCR products.\n\nFor B. thai strain generation, pJRC115 mutation constructs were transformed into E. coli SM10. Conjugation to enable plasmid transfer was performed as described above and plated on LB agar containing gentamicin and trimethoprim to select for B. thai with the chromosomally integrated plasmid. Merodiploids were grown overnight in LB media at 37\u00b0C, then plated on M9 minimal medium containing p-chlorophenylalanine for counterselection. Trimethoprim-sensitive, p-chlorophenylalanine-resistant colonies were screened for allelic replacement by colony PCR, and mutations were confirmed via Sanger sequencing of PCR products.\n\nFor expression of Arc1F, Arc2G, Arc3A, and Arc3A-homologs in P. aeruginosa, pUC18-Tn7t-pBAD-araE containing the gene of interest and the helper plasmid pTNS3 were co-transformed into P. aeruginosa strains by electroporation (Choi et al., 2008). After 6 hr of outgrowth in LB at 37\u00b0C, transformants were plated on an LB agar plate with gentamicin to select for cells with mini-Tn7 integration.\n\n### Bacterial competition assay\n\nFor each co-culture competition experiment, donor and recipient strains were first grown for 20 hr in LB medium. Cultures were spun for 1 min at 20,000 \u00d7 g to pellet cells, the supernatant removed, and cells were washed once with fresh LB medium. Cell pellets were resuspended in LB and normalized to OD600 = 20. Mixtures of donor and recipient strains were then established at 20:1 (B. thai vs. P. aeruginosa, P. protegens, or B. thai) or 10:1 (P. aeruginosa vs. B. thai) v/v ratios. The initial ratios of donor and recipient strains in these mixtures were measured by performing 10-fold serial dilutions and plating on appropriate selective media to evaluate by colony-forming unit (CFU) analysis. The co-culture competitions were initiated by spotting 5 \u00b5l of each mixture onto nitrocellulose filters placed on 3% (w/v) agar LB no-salt plates supplemented with L-arabinose for induction of gene expression as necessary. Competitions were incubated for 6 hr at 37\u00b0C between B. thai and P. aeruginosa, or 6 hr at 30\u00b0C for competition between B. thai and P. protegens. For B. thai self-intoxication, competitions were incubated at 37\u00b0C for 3 hr. Cells were harvested by scraping individual spots from excised sections of the nitrocellulose filter into LB medium. Suspensions were serially diluted and plated on selective media for CFU quantification.\n\n### Immunoblotting analysis\n\nTo analyze the expression of Arc1F-VSV-G, Arc2G-VSV-G, and Arc3A-VSV-G, P. aeruginosa strains were grown in LB broth at 37\u00b0C to log phase. Cells were pelleted and resuspended in lysis buffer (20 mM Tris-HCl, pH 7.5, 300 mM NaCl, 10% [v/v] glycerol) and then mixed 1:1 with 2X SDS-PAGE sample loading buffer. Samples were then boiled at 100\u00b0C for 10 min and loaded at equal volumes to resolve using SDS-PAGE, then transferred to nitrocellulose membranes. Membranes were blocked in TBST (10 mM Tris-HCl pH 7.5, 150 mM NaCl, and 0.1% [w/v] Tween-20) with 5% (w/v) non-fat milk for 30 min at room temperature, followed by incubation with anti-VSV-G or with anti-ribosome polymerase \u03b2 subunit primary antibodies diluted in TBST for 1 hr at room temperature on an orbital shaker. Blots were then washed with TBST, followed by incubation with secondary antibody (goat anti-rabbit or anti-mouse HRP conjugated) diluted in TBST for 30 min at room temperature. Finally, blots were washed with TBST again and developed using Radiance HRP substrate and visualized using iBright imager.\n\n### Lipidomic analysis\n\nTo analyze lipid content after intra- and inter-species intoxication, overnight cultures of donor and recipient cells were harvested and mixed at 1:1 (v/v) ratio in LB medium. These mixtures were spotted onto a 3% (w/v) agar LB no-salt plate and incubated for 1 hr at 37\u00b0C to allow for intoxication. Cells were then collected, and the lipids were extracted using the Bligh\u2013Dyer method (Bligh and Dyer, 1959). Briefly, bacterial pellets were resuspended in 0.5 ml of solution containing 0.5 M NaCl in 0.5 N HCl, followed by adding 1.5 ml of chloroform/methanol mixture (1:2, v/v). Suspensions were vortexed at room temperature for 15 min, 1.5 ml of 0.5 M NaCl in 0.5 N HCl solution was added to each sample, and vortexed for an additional 5 min. Lipid and aqueous layers were separated by centrifugation at 2000 \u00d7 g for 5 min. The lower lipid phase was collected, and these dried lipid samples were analyzed for PE, PG, CL, LPE, LPG, and MLCL content by the Kansas State Lipidomics Research Center.\n\nLipid samples were analyzed by electrospray ionization triple quadrupole mass spectrometry in direct infusion mode, and data were processed as described by with slight modifications (Shiva et al., 2013), which include use of a Waters Xevo TQS mass spectrometer (Milford, MA). Internal standards used to normalize data are shown in Appendix 1\u2014table 2. For PE and LPE, SPLASH standards were used for normalization (Avanti Polar Lipids, Alabaster, AL). Mass spectrometry global parameters, scan modes, and data processing parameters are shown in Appendix 1\u2014table 2.\n\n### Proteomic analysis\n\nP. aeruginosa strains containing VSV-G-tagged proteins were grown in 50 ml to mid-log phase, centrifuged at 2500 \u00d7 g for 15 min, and the pellets harvested by resuspension in lysis buffer (20 mM Tris-HCl pH 7.5, 300 mM NaCl, 5% [w/v] glycerol, 0.5% [v/v] Triton X-100). Cell lysates were prepared by sonication, and tagged proteins were enriched by incubating cell lysates with 30 \u03bcl of anti-VSV-G agarose beads at 4\u00b0C for 4 hr with constant rotation. Agarose beads were then pelleted by centrifugation at 100 \u00d7 g for 2 min and washed three times with 20 mM ammonium bicarbonate. VSV-G agarose beads and bound proteins were then treated with 10 \u03bcl of 10 ng/\u03bcl (100 ng total per sample) sequencing grade trypsin for 16 hr at 37\u00b0C. After digestion, 40 \u03bcl of 20 mM ammonium bicarbonate was added to the agarose beads and peptide mixture and lightly mixed. Beads were centrifuged at 300 \u00d7 g for 3 min, and the supernatant collected as the peptide fraction. This peptide mixture was reduced with 5 mM Tris(2-carboxyethyl) phosphine hydrochloride for 1 hr, followed by alkylation using 14 mM iodoacetamide for 30 min in the dark at room temperature. Alkylation reactions were quenched using 5 mM 1,4-dithiothreitol. Samples were then diluted with 100% acetonitrile (ACN) and 10% (w/v) trifluoroacetic acid (TFA) to a final concentration of 5% ACN (v/v) and 0.5% TFA (w/v) and applied to MacroSpin C18 columns (30 \u03bcg capacity) that had been charged with 100% ACN and ddH2O. Bound peptides were then washed twice in 5% (v/v) ACN and 0.5% (w/v) TFA, before elution with 70% (v/v) ACN and 0.1% (v/v) formic acid (FA).\n\nPeptides were analyzed by LC-MS/MS using a Dionex UltiMate 3000 Rapid Separation nanoLC and a Q Exactive HF Hybrid Quadrupole-Orbitrap Mass Spectrometer (Thermo Fisher Scientific Inc, San Jose, CA). Approximately 1 \u03bcg of peptide samples was loaded onto the trap column, which was 150 \u03bcm \u00d7 3 cm in-house packed with 3 \u03bcm C18 beads. The analytical column was a 75 \u03bcm \u00d7 10.5 cm PicoChip column packed with 3 \u03bcm C18 beads (New Objective, Inc, Woburn, MA). The flow rate was kept at 300 nl/min. Solvent A was 0.1% FA in water and Solvent B was 0.1% FA in ACN. The peptide was separated on a 120 min analytical gradient from 5% ACN/0.1% FA to 40% ACN/0.1% FA. The mass spectrometer was operated in data-dependent mode. The source voltage was 2.10 kV, and the capillary temperature was 320\u00b0C. MS 1 scans were acquired from 300 to 2000 m/z at 60,000 resolving power and automatic gain control (AGC) set to 3 \u00d7 106. The top 15 most abundant precursor ions in each MS 1 scan were selected for fragmentation. Precursors were selected with an isolation width of 2 Da and fragmented by higher-energy collisional dissociation (HCD) at 30% normalized collision energy in the HCD cell. Previously selected ions were dynamically excluded from re-selection for 20 s. The MS 2 AGC was set to 1 \u00d7 105.\n\nProteins were identified from the tandem mass spectra extracted by Xcalibur version 4.0. MS/MS spectra were searched against the Uniprot P. aeruginosa PAO1 strain database using Mascot search engine (Matrix Science, London, UK; version 2.5.1). The MS 1 precursor mass tolerance was set to 10 ppm, and the MS 2 tolerance was set to 0.05 Da. A 1% false discovery rate cutoff was applied at the peptide level. Only proteins with a minimum of two unique peptides above the cutoff were considered for further study. The search result was visualized by Scaffold (version 4.8.3, Proteome Software, Inc, Portland, OR).\n\n### Transposon mutant library construction\n\nA P. aeruginosa PAO1 transposon mutant library of ~80,000 unique Himar1 insertions was prepared using established protocols (Lee et al., 2017). Briefly, P. aeruginosa were mutagenized by delivery of the transposon- and transposase-bearing suicide vector pBT20 from E. coli SM10 \u03bbpir (Kulasekara et al., 2005). Insertion mutants were selected on LB agar containing irgasan and gentamycin and pooled. The library was harvested and transposon insertion sites of the complete pool were defined by transposon insertion sequencing as described below.\n\n### Transposon mutant library screen in bacterial competition\n\nThe P. aeruginosa transposon mutant library was grown at 37\u00b0C to mid-log phase. Cell suspensions were then normalized to OD600 = 1 and incubated with 100 OD600 of B. thai donor strains (wild-type, \u2206icmF, tle3S264A, or \u2206colA). Competitions were performed on 3% (w/v) agar LB no-salt plates at 37\u00b0C for 7 hr. Cells were washed once with PBS, diluted, and plated on LB agar plates supplemented with irgasan to select for viable P. aeruginosa cells. After overnight incubation, cells were harvested, and genomic DNA was directly extracted from pellets using QIAGEN Blood and Tissue Midi gDNA prep kit. Transposon insertion sequencing libraries were generated from 3 \u00b5g gDNA per sample using the C-tailing method as described (Gallagher, 2019) with the transposon-specific primers listed in Appendix 3\u2014table 1. For PCR round 1, PCR_1A and PCR_1B were used. For PCR round 2, PCR_2A, PCR_2B, and PCR_2C were used. For sequencing, Seq_primer was used. Libraries were pooled and sequenced in multiplex using an Illumina MiSeq with a 5% PhiX spike-in.\n\n### Tn-seq data analysis\n\nSeqmagick was used to trim the first six bases from each read (https://github.com/fhcrc/seqmagick; Matsen Group, 2020). Reads were then aligned, and counts were enumerated using TRANSIT TPP (https://transit.readthedocs.io/en/latest/tpp.html). An annotation GFF was created from the original P. aeruginosa PAO1 GFF file (GCF_000006765.1) and was translated to TRANSIT portable format using the TRANSIT 'convert gff_to_prot_table' command (https://transit.readthedocs.io/en/latest/transit_running.html#prot-tables-annotations). Finally, the TRANSIT 'export combined_wig' command was used to combine and annotate the counts. Appendix 1\u2014table 3 provides summary data of the sequencing runs and their processing by TRANSIT.\n\n### Bioinformatic analysis of Arc3 gene distribution\n\nThe phylogenetic profiler tool in IMG (Chen et al., 2021) was used to determine the distribution of Arc3A homologs (identified as proteins classified under the Pfam 10101) across bacterial phyla. The number and location of predicted transmembrane domains present in representative Arc3A homologs from each phylum were calculated using CCTOP and TMpred (https://embnet.vital-it.ch/software/TMPRED_form.html) (Dobson et al., 2015). Homologs of Arc3B encoded adjacent to Arc3A-like genes were identified on the basis of their classification in the Pfam 13,163.\n\n### Bacterial stress assays\n\nP. aeruginosa cultures were assayed for the ability to survive oxidative stress (50 mM H2O2), heat stress (55\u00b0C), osmotic stress (3 M NaCl), and detergent stress (0.5% [w/v] SDS and 0.25 mM EDTA) in LB media as previously described with modifications (J\u00f8rgensen et al., 1999). After incubation with the oxidative, heat, and osmotic stress conditions, cultures were serially diluted 10-fold in LB medium and plated on LB agar for subsequent analysis of remaining viable cells by CFU determination. For oxidative stress, stationary-phase cultures were diluted to OD600 = 0.1 and incubated in LB media containing 50 mM H2O2 for 30 min at 37\u00b0C with continuous shaking. For heat stress, stationary-phase cultures were diluted in pre-warmed LB media to OD600 = 0.1 and incubated at 55\u00b0C for 30 min with continuous shaking. For osmotic stress, overnight cultures were diluted in LB media containing 3 M NaCl to OD600 = 0.1. Cultures were incubated at 37\u00b0C for 20 hr with shaking. For detergent stress, cultures were serially diluted in LB media and directly plated on LB agar plates containing 0.5% (w/v) SDS and 0.25 mM EDTA for CFU quantification.\n\n### Phospholipid analysis\n\nTo prepare [32P]-labeled bacteria, P. aeruginosa strains were grown in LB media supplemented with 5 \u03bcCi/ml [32P]-orthophosphoric acid. Tle3 intoxication was performed by mixing 200 OD600 of B. thai and [32P]-P. aeruginosa at a 10:1 ratio (v/v) and incubating this mixture at 37\u00b0C for 1 hr on 3% (w/v) agar LB no-salt plates containing L-arabinose as necessary. After 1 hr of intoxication, cells were collected, and the lipids were extracted using the Bligh\u2013Dyer method as described above. Purified lipid samples were loaded onto a silica gel thin-layer plate and developed with chloroform/methanol/acetic acid/ddH2O (85:15:10:3.5, v/v/v/v) solvent system (Lopalco et al., 2017). The air-dried plate was exposed to a storage phosphor screen. Individual phospholipid was visualized and quantified using phosphorimaging to calculate phospholipid content expressed as mol% of the total phospholipid pool.\n\n### PE regeneration assay\n\nTo generate [32P]-labeled PE, E. coli UE54 strain was grown in LB media supplemented with 5 \u03bcCi/ml [32P]-orthophosphate overnight at 37\u00b0C (Harvat et al., 2005). Cells were collected and the lipids were extracted using the Bligh\u2013Dyer method as described above. The extracted lipids were dried and resuspended in buffer containing 100 mM HEPES-NaOH, pH = 7.5, 100 mM KCl, 10 mM CaCl2, and 1% (w/v) n-Dodecyl-\u03b2-d-maltoside. 10 units of pancreas phospholipase A2 were added to digest PE to LPE at 37\u00b0C overnight with shaking. After incubation, lipids were extracted and loaded onto a silica gel thin-layer plate and developed with chloroform/methanol/acetic acid/ddH2O (85:15:10:3.5, v/v/v/v) solvent system. The dried plate was exposed to an x-ray film for 2 hr. The phospholipid bands were visualized by developing the film, and bands corresponding to [32P]-LPE on the TLC plate were scraped, extracted, and resuspended in 100% ethanol.\n\nP. aeruginosa spheroplasts were generated by resuspending log-phase culture in 25 mM Tris-HCl, pH 8, 450 mM sucrose, and 1.4 mM EDTA. After addition of 20 \u03bcg/ml lysozyme, cells were incubated on ice for 30 min. Intact spheroplasts were collected by centrifugation (3000 \u00d7 g for 5 min) at 4\u00b0C and gently resuspended in 25 mM Tris-HCl, pH 8, and 450 mM sucrose. To examine PE regeneration, [32P]-LPE was added into spheroplast solutions and incubated at 37\u00b0C. The reactions were terminated at the indicated time by adding chloroform-methanol mixture (1:2, v/v). The lipids were extracted, separated by TLC, and analyzed using phosphorimaging as described above (Lin et al., 2019).\n\n### Statistical analyses\n\nGraphPad Prism 7 software (San Diego, CA) was used for statistical analysis. We used an unpaired two-tailed Student\u2019s t-test for pairwise comparisons. In all cases, p<0.05 was considered statistically significant.\n",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "2f847062-5ac2-447a-9e82-93bd7cfb0db7",
+      "submission_id": "1e855d39-12ea-4770-8846-4bc64acfd883",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- T\u00e2m Mignot, https://ror.org/02feahw73 CNRS-Aix Marseille University France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74658.sa0](https://doi.org/10.7554/eLife.74658.sa0)\n\nThis study identifies novel (Arc) pathways that mediate resistance of bacteria to attacks by other bacteria. The identified genes appear to specifically protect host cells from the action of bacterial toxins. In particular, one system (Arc3) is shown to protect Pseudomonas aeruginosa from Type-6 secretion phospholipase effectors. Thus, while it is growing increasingly clear that bacteria have evolved numerous protection mechanisms against phages, the study expands this concept to bacteria.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- T\u00e2m Mignot, https://ror.org/02feahw73 CNRS-Aix Marseille University France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74658.sa1](https://doi.org/10.7554/eLife.74658.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Coordinately regulated interbacterial antagonism defense pathways constitute a bacterial innate immune system\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Wendy Garrett as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Lotte Sogaard-Andersen (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor with input from the senior editor. Consensus was that the manuscript is of significant import and interest but will require revision. We have drafted this document to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The authors define the arc1-arc3 genes as part of a \"bacterial innate immune system\". This should be toned down, because it is not proven that they allow self- vs non-self-discrimination. In fact, the heterologous expression of Arc3B protects as well in Pa (presumably even Arc3B encoded in a B. thai) which argues against true self -vs non-self-discrimination.\n\n2) The protective function of Arc3B could be further clarified: does it act directly on Tle3 or indirectly via a converging pathway that removes LPE or MLCL or acts on them? While it is understood that defining the exact molecular function of Arc3B is beyond the immediate scope of this manuscript, it should be possible to discriminate, testing for example if Arc3B can can protect against another phospholipase or whether LPE/MCL levels can be affected by Arc3B independently of Tle3. And last, does Arc3B require Arc3A for activity?\n\n3) The manuscript is densely written and should be edited to make it an easier read for a broad audience.\n\nReviewer #1 (Recommendations for the authors):\n\n1. line 126: Arc1 inactivation is described as resulting in a modest reduction in B. thai survival. My reading of the figure is that Arc1 inactivation results in a modest increase in B. thai survival. Please clarify.\n\n2. line 126-127: I do not understand these comparisons. Maybe explain in a bit more detail.\n\n3. Figure 2B: What is plotted on the Y-axis?\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors define the arc1-arc3 genes as part of a \"bacterial innate immune system\". I found this choice questionable since it is not proven that they allow self- vs non-self-discrimination. In fact, since heterologous expression of Arc3B can protect as well in Pa (presumably even Arc3B encoded in a B. thai), it's not a true self -vs non-self-discrimination. Would referring to it as an antitoxin not be suitable instead?\n\nThe underpinnings protective (antitoxin) effect of Arc3B remain murky: does it fulfill a structural role, perhaps sequestering Tle3 or interfering with its activity, stability or translocation? Or does it act via a converging pathway that removes LPE or MLCL or acts on them, in parallel to Aas? In the latter case, Arc3B should be possible to protect against phospholipid cleavage caused in other ways than Tle3-mediated intoxication. Can this be tested with another phospholipase for example (expressed in Pa for self-intoxication)? The authors have not shown that LPE and MLCL levels can be modulated by Arc3B (with or without Arc3A) in the absence of Tle3, begging the question whether Arc3B acts specifically on Tle3 or phospholipase-mediated damage in general. Conversely can Aas overexpression compensate for loss of Arc3B and/or Arc3A in response to Tle3 intoxication?\n\nWere the Arc3B orthologs that were chosen for complementation only from species that encode Arc3A or also from those that encode a solitary Arc3B? This could be discussed.\n\nArc3B interacts with Arc3A, but it does not appear to have enzymatic activity. It would be useful to know if Arc3B requires Arc3A for activity (assessed by epistasis experiments using Arc3B/A single and double mutants). One would predict that Arc3B can act independently of Arc3A since Arc3A is not always co-conserved with Arc3B, in which case the association between Arc3A and Arc3B should not be important to protect against Tle3.\n\nLine 111 and panel A with B of Figure1\u2014figure supplement 3: I don't see the cumulative effect claimed when compared the triple mutant \u0394arc123 (panel A) to single deletions (panel B).\n\nFigure 1\u2014figure supplement 3A: the names of the deleted strains seem incorrect: \u0394arc1D\u0394arc1G should be \u0394arc2D\u0394arc2G; as well \u0394arc1A\u0394arc1B is \u0394arc3A\u0394arc3B.\n\nLine 218: Protection by Arc3A is valid for Tle3 and not against Tle1 (that is also a phospholipase). Change \"against interbacterial phospholipase toxins\" to \"against Tle3 interbacterial phospholipase toxin\".\n",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "51b57c75-b197-4e0f-b557-c03e33295b5a",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C1",
+      "claim": "Pseudomonas aeruginosa possess a danger-sensing pathway that is a critical fitness determinant during competition against other bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that Pseudomonas aeruginosa possess a danger-sensing pathway that is a critical fitness determinant during competition against other bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a previously established finding from the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "934c5397-439c-4dcb-9555-5d8e5e7eb729",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C2",
+      "claim": "Genome-wide screens in P. aeruginosa reveal three conserved and widespread interbacterial antagonism resistance clusters (arc1-3).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we conducted genome-wide screens in P. aeruginosa that reveal three conserved and widespread interbacterial antagonism resistance clusters (arc1-3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by the transposon library screening data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "66081e29-94e0-4475-b6da-71b2b73bde27",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C3",
+      "claim": "Arc1-3 are coordinately activated by the Gac/Rsm danger-sensing system.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that although arc1-3 are coordinately activated by the Gac/Rsm danger-sensing system, they function independently and provide idiosyncratic defense capabilities, distinguishing them from general stress response pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the transposon screening data showing that arc1-3 genes are under Gac/Rsm control (Figure 1) and immunoblotting showing inducible expression through the Gac/Rsm pathway (Figure 2\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "d5635608-607e-4cf1-9419-d5dc72509895",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C4",
+      "claim": "Arc1-3 function independently and provide idiosyncratic defense capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that although arc1-3 are coordinately activated by the Gac/Rsm danger-sensing system, they function independently and provide idiosyncratic defense capabilities, distinguishing them from general stress response pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing additive effects when genes from different arc operons are inactivated (Figure 1\u2014figure supplement 3B) and differential protection against specific toxins (Figure 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "40e84641-e98b-4342-9099-f9a72ee0ad82",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C5",
+      "claim": "Arc1-3 are distinguished from general stress response pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that although arc1-3 are coordinately activated by the Gac/Rsm danger-sensing system, they function independently and provide idiosyncratic defense capabilities, distinguishing them from general stress response pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that Arc1-3 mutants survive similarly to wild-type under general stress conditions (Figure 2\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "50cc56ce-e7a6-464f-8661-13e3fbf3a651",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C6",
+      "claim": "Arc3 family proteins provide specific protection against phospholipase toxins by preventing the accumulation of lysophospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that Arc3 family proteins provide specific protection against phospholipase toxins by preventing the accumulation of lysophospholipids in a manner distinct from previously characterized membrane repair systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing Arc3A is critical for defense against Tle3 (Figure 2C), and that P. aeruginosa lacking Arc3A accumulates lysophospholipids during Tle3 intoxication (Figure 4A-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "9a735e7d-70de-48af-8603-cc98874eb30b",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C7",
+      "claim": "Arc3 prevents lysophospholipid accumulation in a manner distinct from previously characterized membrane repair systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that Arc3 family proteins provide specific protection against phospholipase toxins by preventing the accumulation of lysophospholipids in a manner distinct from previously characterized membrane repair systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing Arc3A does not contribute to PE regeneration from LPE (Figure 4G) and functions independently of the Aas reacylation pathway (Figure 4F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "9e89000a-2c08-484d-bb49-0b6651f9d2b0",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C8",
+      "claim": "The response of P. aeruginosa to bacterial threats is analogous to eukaryotic innate immunity, wherein threat detection leads to the activation of specialized defense systems.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings liken the response of P. aeruginosa to bacterial threats to that of eukaryotic innate immunity, wherein threat detection leads to the activation of specialized defense systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the coordinated activation of specialized defense pathways (arc1-3) by a danger-sensing system (Gac/Rsm).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "3acc34c0-3728-4a25-a2d4-46104bdcbcdc",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C9",
+      "claim": "Burkholderia thailandensis fiercely antagonizes P. aeruginosa using its antibacterial T6SS.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work by our laboratory has shown that Burkholderia thailandensis (B. thai) fiercely antagonizes P. aeruginosa using its antibacterial T6SS (LeRoux et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previously established finding from prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "c338c588-1a05-4865-a4de-5ca6f3347a9f",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C10",
+      "claim": "34 genes are critical for the survival of P. aeruginosa specifically while undergoing antagonism by B. thai.",
+      "claim_type": "EXPLICIT",
+      "source": "Duplicate screening of this library revealed 34 genes critical for the survival of P. aeruginosa specifically while undergoing antagonism by B. thai (Figure 1A, Figure 1\u2014figure supplement 1A and B , Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the transposon library screening experiments shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "b493d51d-a421-46d3-a444-c61d6f7c3814",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C11",
+      "claim": "25 of the 34 genes critical for P. aeruginosa survival during B. thai antagonism belong to the Gac/Rsm regulon.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 25 of these belong to the Gac/Rsm regulon and three additional hits included genes directly involved in the Gac/Rsm signaling system (Goodman et al., 2004; Lapouge et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data (Figure 1A) and comparison with known Gac/Rsm-regulated genes from prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "d601a4bc-e3eb-4176-afc7-7811c2a6fdbd",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C12",
+      "claim": "Disruption of genes encoding GacS and GacA elicited the strongest interbacterial defense defect among all genes in the P. aeruginosa genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, disruption of genes encoding GacS and GacA, the central sensor kinase and response regulator required for activation of the pathway, respectively, elicited the strongest interbacterial defense defect among all genes in the P. aeruginosa genome (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the transposon screening data in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "f3fb24da-078f-486f-b04d-f67dad5439b9",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C13",
+      "claim": "Inactivating insertions in retS increased interbacterial competitiveness of P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, inactivating insertions in retS, encoding a hybrid sensor kinase that negatively regulates GacS, increased interbacterial competitiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the transposon screening data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "729d5f68-59c8-487b-ba9e-4bd7225a5ec6",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C14",
+      "claim": "Five of the six genes within the PA2536-41 cluster are predicted to encode proteins related to phospholipid biosynthesis or metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Five of the six genes within the PA2536-41 cluster are predicted to encode proteins related to phospholipid biosynthesis or metabolism, including four genes encoding products with significant homology to enzymes required for phosphatidylglycerol synthesis (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis of the gene cluster shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "c92f6971-fa39-4766-93f5-a5d50fa5707f",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C15",
+      "claim": "The PA4317-23 genes co-occur across many species within the Xanthomonadaceae and Pseudomonadaceae.",
+      "claim_type": "EXPLICIT",
+      "source": "The PA4317-23 genes co-occur across many species within the Xanthomonadaceae and Pseudomonadaceae (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "6d6943f4-7c6a-400a-aa91-b96be46fe01c",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C16",
+      "claim": "PA4317-23 genes include a predicted MoxR-like AAA+-ATPase and a protein with a von Willebrand factor (VWF) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "While none of the proteins encoded by this gene cluster have been characterized, they include a predicted MoxR-like AAA+-ATPase and a protein with a von Willebrand factor (VWF) domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic predictions of protein domains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "d12be0fd-5cbb-4812-b178-1a9ce376e5cd",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C17",
+      "claim": "PA5113 and PA5114 co-occur widely across bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, PA5113 and PA5114 also co-occur widely, and several organisms encode single polypeptides that represent a fusion of the two proteins (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "7f43b7df-687b-425a-a4c3-33d3624ef984",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C18",
+      "claim": "Several organisms encode single polypeptides that represent a fusion of PA5113 and PA5114.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, PA5113 and PA5114 also co-occur widely, and several organisms encode single polypeptides that represent a fusion of the two proteins (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "28299894-e40b-4a1a-bd01-e2faba3fdd76",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C19",
+      "claim": "The fitness deficiency of the triple arc mutant strain approaches that of the \u0394gacS strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the fitness deficiency of this triple mutant strain approaches that of the \u2206gacS strain, which lacks Gac/Rsm function entirely (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the competition assay data in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "f7dce569-8e5c-43e3-8217-f9aba0c309ec",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C20",
+      "claim": "The Gac/Rsm pathway and discrete functional units under its control are critical for P. aeruginosa survival when antagonized by the T6SS of B. thai.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data reveal that the Gac/Rsm pathway and discrete functional units under its control are critical for P. aeruginosa survival when antagonized by the T6SS of B. thai.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the transposon screening and competition assay data presented in Figure 1 and supplements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "ffa2d589-9d88-4d70-b36a-8a6355c636fa",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C21",
+      "claim": "Inactivating Arc2 and Arc3 had no impact on B. thai survival when P. aeruginosa was in excess.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, inactivating Arc2 and Arc3 had no impact on B. thai survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the competition assay data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "ee07ee6e-707f-45bc-9e00-bbf2227f20f9",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C22",
+      "claim": "Arc1 inactivation led to a modest increase in B. thai survival relative to its impact on P. aeruginosa defense.",
+      "claim_type": "EXPLICIT",
+      "source": "Arc1 inactivation led to an increase in B. thai survival; however, this effect was modest relative to its impact on P. aeruginosa defense (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the competition assay data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "c313c994-660d-468b-b165-0d4d96227a97",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C23",
+      "claim": "Inactivation of the H1-T6SS increased B. thai survival by approximately four orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, inactivation of the H1-T6SS increased B. thai survival by approximately four orders of magnitude, eclipsing its impact on P. aeruginosa defense by ~100-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the competition assay data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "69b731f2-a6d2-4752-b610-460ca101cdc7",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C24",
+      "claim": "The contributions of Arc1-3 to P. aeruginosa competitiveness during antagonism arise predominately from defensive mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these finding indicate that the contributions of Arc1-3 to P. aeruginosa competitiveness during antagonism arise predominately from defensive mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the competition assay data showing minimal offensive contribution (Figure 2A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "fb295dde-03f3-43ea-9f97-a799ccb8e30d",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C25",
+      "claim": "Tle3 inactivation abrogated the antagonism defense defect of P. aeruginosa lacking Arc3 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that Tle3 inactivation abrogated the antagonism defense defect of P. aeruginosa lacking Arc3 function (Figure 2B), whereas its defense defect was maintained in competition experiments against other toxin-inactivated strains of B. thai.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the competition assay data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "6eb32f8e-ad11-4bef-a0f3-cf18eb7a6d70",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C26",
+      "claim": "The survival of P. aeruginosa lacking Arc2 function was significantly restored by deletion of colA in B. thai.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the survival of P. aeruginosa lacking Arc2 function was significantly restored by deletion of colA in B. thai, while none of the single-effector mutations within B. thai impacted the defense defect of P. aeruginosa lacking Arc1 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the competition assay data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "382c44e8-fced-496d-b50b-101d00ad52f3",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C27",
+      "claim": "Arc3A is the gene most critical for P. aeruginosa survival during intoxication by Tle3.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this experiment defined arc3A as the gene most critical for P. aeruginosa survival during intoxication by Tle3 (Figure 2C, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the transposon screening data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "52eb4098-b84d-46e4-9687-19cfdf804116",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C28",
+      "claim": "Arc3A is a large protein containing 35 predicted transmembrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Arc3A is a large protein containing 35 predicted transmembrane domains and lacking residues strongly indicative of enzymatic activity (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis of the Arc3A protein sequence shown in Figure 3A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "d862c269-ecf5-40eb-9b83-f22a04515a3f",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C29",
+      "claim": "Arc3A lacks residues strongly indicative of enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Arc3A is a large protein containing 35 predicted transmembrane domains and lacking residues strongly indicative of enzymatic activity (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis of the Arc3A protein sequence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "42697981-5b8d-4ecf-a027-9743395aac9b",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C30",
+      "claim": "Arc3A is expected to span the periplasm with predicted outer-membrane-anchored N-terminal lipidation and a C-terminal inner-membrane transmembrane helix.",
+      "claim_type": "EXPLICIT",
+      "source": "With predicted outer-membrane-anchored N-terminal lipidation and a C-terminal inner-membrane transmembrane helix, Arc3A is expected to span the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic predictions of protein localization and topology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "de42b8da-3124-445d-9230-1624ce933dec",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C31",
+      "claim": "Apparent orthologs of Arc3A and Arc3B are encoded by neighboring open-reading frames across an exceptionally wide distribution of bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither Arc3A nor Arc3B share significant homology with characterized proteins; however, apparent orthologs of each are encoded by neighboring open-reading frames across an exceptionally wide distribution of bacteria (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "8b3dae9c-d621-4592-9708-a495db5b80bc",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C32",
+      "claim": "Arc3A-related proteins are composed of domain of unknown function 2339 (DUF2339).",
+      "claim_type": "EXPLICIT",
+      "source": "Arc3A-related proteins are composed of domain of unknown function 2339 (DUF2339), possess large, yet varying numbers of transmembrane segments, and are found in bacteria belonging to most Gram-negative and Gram-positive phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis of Arc3A homologs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "d3024df2-d1ed-4058-aa6a-427a6d552518",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C33",
+      "claim": "Arc3A-related proteins are found in bacteria belonging to most Gram-negative and Gram-positive phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "Arc3A-related proteins are composed of domain of unknown function 2339 (DUF2339), possess large, yet varying numbers of transmembrane segments, and are found in bacteria belonging to most Gram-negative and Gram-positive phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "cc284f7b-e9d8-4dc1-9696-0580833536c1",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C34",
+      "claim": "Arc3B-related proteins are restricted to Gram-negative phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the predicted N-terminal localization of Arc3B to the outer membrane, its related proteins are restricted to Gram-negative phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 3B and the requirement for an outer membrane.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "6411b119-e5c2-46ac-9c74-2d042997b0a9",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C35",
+      "claim": "Arc3A and Arc3B stably associate.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-immunoprecipitation studies using epitope-tagged variants of Arc3A and Arc3B encoded at their native chromosomal loci provided evidence that the two proteins stably associate (Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on co-immunoprecipitation experiments with results shown in Appendix 1\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "3649d024-deeb-49a2-84f6-b0d3881dc2b9",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C36",
+      "claim": "EstA did not impact P. aeruginosa survival during intoxication by Tle3.",
+      "claim_type": "EXPLICIT",
+      "source": "Although estA encodes an esterase (Wilhelm et al., 1999), which could have relevance for phospholipase defense, estA was not detected in our co-immunoprecipitation analyses, it did not exhibit differential insertion frequency in our screens, and in-frame deletion of estA did not impact P. aeruginosa survival during intoxication by Tle3 (Figure 1\u2014source data 1, Figure 2\u2014source data 1 and 2, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on multiple lines of evidence including co-IP, Tn-seq, and competition assays shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "26bb3c65-9c3f-4561-a30e-a2859f665185",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C37",
+      "claim": "Four Arc3A-related proteins from other species restored Tle3 defense to a statistically significant degree when expressed in P. aeruginosa \u0394arc3A.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite high-sequence divergence that would likely preclude specific interactions with Arc3B or other P. aeruginosa factors, four of these proteins restored Tle3 defense to a statistically significant degree and two provided protection equivalent to that of P. aeruginosa arc3A expressed in the same manner (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the competition assay data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "b0959ed8-6ee1-4139-be31-bc20a53c359f",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C38",
+      "claim": "Inactivation of arc3A in Pseudomonas protegens conferred a strong interbacterial antagonism defense defect specific to B. thai Tle3.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined one of these proteins in its native context. Inactivation of arc3A in Pseudomonas protegens conferred a strong interbacterial antagonism defense defect specific to B. thai Tle3 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the competition assay data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "fcfc3e02-9a14-45e9-a8e0-a46c72a4d614",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C39",
+      "claim": "Proteins in the Arc3A family possess the intrinsic capacity to protect bacteria against Tle3-like toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, these data strongly suggest that proteins in the Arc3A family possess the intrinsic capacity to protect bacteria against Tle3-like toxins, and potentially phospholipase toxins more broadly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the heterologous complementation data (Figure 3C) and native context data (Figure 3D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "17f93197-6dd2-4abd-ad8e-d3170301f86d",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C40",
+      "claim": "P. aeruginosa lacking Arc3A possessed highly elevated levels of lysophosphatidylethanolamine (LPE) and monolysocardiolipin (MLCL) in a manner dependent on the activity of Tle3 in B. thai.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, relative to mixtures containing the wild-type organisms, those containing P. aeruginosa \u2206arc3A possessed highly elevated levels of lysophosphatidylethanolamine (LPE) and monolysocardiolipin (MLCL) in a manner dependent on the activity of Tle3 in B. thai (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the mass spectrometry data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "68a91643-ec37-4631-8108-4208a08cd228",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C41",
+      "claim": "Lysophosphatidylglycerol, free fatty acid, and corresponding parent phospholipid levels were not measurably altered by Tle3.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysophosphatidylglycerol, free fatty acid, and corresponding parent phospholipid levels were not measurably altered by Tle3 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the mass spectrometry data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "93992e00-f667-4693-b702-1856914929dc",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C42",
+      "claim": "P. aeruginosa lacking Arc3B accumulates LPE and MLCL during Tle3 intoxication.",
+      "claim_type": "EXPLICIT",
+      "source": "Radiographic TLC analysis of the phospholipids generated in these strain competition mixtures confirmed that P. aeruginosa lacking Arc3B accumulates LPE and MLCL during Tle3 intoxication (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the radiographic TLC data in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "7cca7f0b-a796-4c3f-a276-5d8f3f710f25",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C43",
+      "claim": "B. thai strains undergoing Tle3-based self-intoxication accumulated LPE and MLCL.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples derived from mixtures composed of a B. thai strain with Tle3 and a derivative strain sensitized to Tle3 intoxication through cognate immunity gene inactivation accumulated LPE and MLCL, mirroring our interspecies competition findings (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the mass spectrometry data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "a630e2d7-8558-42e8-8463-fb4703dec6f7",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C44",
+      "claim": "In E. coli, lysophospholipids are transported across the inner membrane by the dedicated transporter LplT, after which they are reacylated by Aas.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, lysophospholipids are transported across the inner membrane by the dedicated transporter LplT, after which they are reacylated by Aas (Zheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "462fdd85-e18b-48eb-a2c7-e4bfcae6aeb8",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C45",
+      "claim": "Both LplT and Aas have been shown to play a critical role in defending E. coli cells from phospholipase attack.",
+      "claim_type": "EXPLICIT",
+      "source": "Both LplT and Aas have been shown to play a critical role in defending E. coli cells from phospholipase attack (Lin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "a558a6cd-1c8b-4a42-8b2d-f6439a507137",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C46",
+      "claim": "In P. aeruginosa, LplT and the acylation domain of Aas are found in a single predicted polypeptide, encoded by PA3267 (aas).",
+      "claim_type": "EXPLICIT",
+      "source": "In P. aeruginosa, LplT and the acylation domain of Aas are found in a single predicted polypeptide, encoded by PA3267 (aas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis of the P. aeruginosa genome.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "8913ab0e-87bd-4778-a8b3-886847494ea5",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C47",
+      "claim": "P. aeruginosa strains lacking both aas and arc3A exhibited a Tle3 defense defect substantially greater than that associated with Arc3A inactivation alone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that P. aeruginosa strains lacking both aas and arc3A exhibited a Tle3 defense defect substantially greater than that associated with Arc3A inactivation alone (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the competition assay data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "4cbba654-b70e-4f90-a3b1-d402b554f921",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C48",
+      "claim": "Aas is required for PE regeneration from LPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that Aas is required for PE regeneration from LPE, whereas Arc3A neither contributed to this process, nor could we detect changes in LPE stability upon Arc3A inactivation in the absence of antagonism (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the PE regeneration assay data in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "1abdba19-939e-4db7-ac3b-6abba8b819d4",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C49",
+      "claim": "Arc3A neither contributed to PE regeneration from LPE, nor could changes in LPE stability be detected upon Arc3A inactivation in the absence of antagonism.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that Aas is required for PE regeneration from LPE, whereas Arc3A neither contributed to this process, nor could we detect changes in LPE stability upon Arc3A inactivation in the absence of antagonism (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the PE regeneration assay data in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "566dbf7a-bd83-48bb-8de3-edf2e8d990c0",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C50",
+      "claim": "Arc3 encodes a previously undescribed, widespread and independent pathway that prohibits lysophospholipid accumulation by an interbacterial phospholipase toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that arc3 encodes a previously undescribed, widespread and independent pathway that prohibits lysophospholipid accumulation by an interbacterial phospholipase toxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the combined data showing Arc3's role in preventing lysophospholipid accumulation (Figure 4), its widespread distribution (Figure 3B), and its independence from Aas (Figure 4F-G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "496abee4-d55b-42f6-9d8b-b00246952ac1",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C51",
+      "claim": "Bacteria possess a multitude of coordinately regulated pathways that provide defense against the threats posed by other bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that bacteria also possess a multitude of coordinately regulated pathways that provide defense against the threats posed by other bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the discovery of arc1-3 pathways that are coordinately regulated by Gac/Rsm and provide defense against bacterial threats.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "7753efc4-fc0c-44cd-aaf8-0786a33cc50c",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C52",
+      "claim": "Arc3A is the single cellular factor of P. aeruginosa most critical for defense against a PLA toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Arc3A is the single cellular factor of P. aeruginosa most critical for defense against a PLA toxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data showing arc3A as the most critical gene for Tle3 defense (Figure 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "8ff07ec8-60d5-40cc-91d5-eae2af675b0a",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C53",
+      "claim": "Phospholipase toxins are ancient and among the most prevalent bacterial toxins known.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is notable that phospholipase toxins are ancient and among the most prevalent bacterial toxins known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about bacterial toxins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "03203090-b522-47d5-86a5-fd3e42d0dbf3",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C54",
+      "claim": "Low Arc3A expression was observed in the absence of Gac/Rsm activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed low Arc3A expression in the absence of Gac/Rsm activation, arguing that its role in PARA serves an adaptive purpose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the immunoblotting data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "1d74e5cf-837f-4f90-8ba4-0a8263182bd6",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C55",
+      "claim": "The arc clusters are widely conserved among Bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Our bioinformatic analyses show that the arc clusters are widely conserved among Bacteria, yet the Gac/Rsm pathway is restricted to \u03b3-Proteobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analyses shown in Figure 1\u2014figure supplement 2 and Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "2b9620b9-5a82-41f9-ba6b-f5b98974421d",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C56",
+      "claim": "The Gac/Rsm pathway is restricted to \u03b3-Proteobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Our bioinformatic analyses show that the arc clusters are widely conserved among Bacteria, yet the Gac/Rsm pathway is restricted to \u03b3-Proteobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the distribution of the Gac/Rsm pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "cbabc306-0b06-4c31-8c53-f3dbab66734a",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C57",
+      "claim": "The Gac/Rsm pathway post-transcriptionally controls the expression of nearly 400 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "PARA is coordinated by the Gac/Rsm global regulatory pathway, which post-transcriptionally controls the expression of nearly 400 genes (Goodman et al., 2004; Lapouge et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "25fc10c4-61dd-402a-8486-6dbdb61640f4",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C58",
+      "claim": "The H1-T6SS enables P. aeruginosa to kill or disable competing bacteria through the delivery of a cocktail of toxic effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This regulon includes the Hcp secretion island I-encoded type VI secretion system (H1-T6SS), the activity of which enables P. aeruginosa to kill or disable competing bacteria through the delivery of a cocktail of toxic effector proteins (Hood et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "e31df74d-aa40-4463-9805-fbdda1ed5f39",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C59",
+      "claim": "P. aeruginosa strains lacking functionality of the two-component system required to initiate Gac/Rsm signaling are severely crippled in interbacterial antagonism defense relative to those lacking only the H1-T6SS.",
+      "claim_type": "EXPLICIT",
+      "source": "While an important component of PARA, data suggest that the H1-T6SS is just one feature of the response; P. aeruginosa strains lacking functionality of the two-component system required to initiate Gac/Rsm signaling are severely crippled in interbacterial antagonism defense relative to those lacking only the H1-T6SS (LeRoux et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previously established finding from a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "db426266-dc52-4c33-93a3-f42ad2d84066",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C60",
+      "claim": "The majority of the genes under Gac/Rsm control encode proteins of unknown function.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the genes under Gac/Rsm control encode proteins of unknown function, and we hypothesized that these could represent uncharacterized, novel mechanisms by which P. aeruginosa defends against interbacterial antagonism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a motivation for the study based on prior knowledge of the Gac/Rsm regulon.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "0d8cd159-54e9-4102-8a81-8539bb3561fe",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C61",
+      "claim": "A subpopulation of P. aeruginosa cells are lysed during antagonism, releasing intracellular contents that trigger the response in neighboring survivors.",
+      "claim_type": "EXPLICIT",
+      "source": "The response is activated when a subpopulation of P. aeruginosa cells are lysed, releasing intracellular contents that trigger the response in neighboring survivors (LeRoux et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previously established finding from a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "47487007-a3be-46a5-9e9b-ad75b6bb8437",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C62",
+      "claim": "Orphan immunity proteins share homology with and are likely evolved from cognate immunity proteins that protect bacteria from undergoing self-intoxication.",
+      "claim_type": "EXPLICIT",
+      "source": "These 'orphan' immunity proteins share homology with and are likely evolved from cognate immunity proteins that protect bacteria from undergoing self-intoxication, which is inherent to the indiscriminate nature of the T6SS delivery mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about orphan immunity proteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "24e3c1a6-6c6e-449c-a4c5-65de854aad79",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C63",
+      "claim": "Extracellular polysaccharide capsules protect Vibrio cholerae and Escherichia coli from T6SS-based attack of other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular polysaccharide capsules protect Vibrio cholerae and Escherichia coli from T6SS-based attack of other species (Hersch et al., 2020b; Toska et al., 2018), and in Acinetobacter baumannii, lysine modification at peptidoglycan crosslinks was suggested to render the cell wall resistant to degradation by amidase toxins (Le et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "aedb016b-ec77-40a5-afec-1897a3c34ba8",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C64",
+      "claim": "In Acinetobacter baumannii, lysine modification at peptidoglycan crosslinks was suggested to render the cell wall resistant to degradation by amidase toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular polysaccharide capsules protect Vibrio cholerae and Escherichia coli from T6SS-based attack of other species (Hersch et al., 2020b; Toska et al., 2018), and in Acinetobacter baumannii, lysine modification at peptidoglycan crosslinks was suggested to render the cell wall resistant to degradation by amidase toxins (Le et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "60c74fea-5c67-4e3c-8cef-ad6b94e4b0f5",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C65",
+      "claim": "Bacterial stress responses evolved in part as a means of detecting and responding to antagonistic competitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been suggested that bacterial stress responses evolved in part as a means of detecting and responding to antagonistic competitors (Cornforth and Foster, 2013; Lories et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis from cited references.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "f890c95f-0e0b-42f7-8fec-53fc1a4e5ef2",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C66",
+      "claim": "Stress response genes involved in envelope integrity and acid stress can contribute to resistance against a V. cholerae phospholipase toxin in E. coli and P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "A candidate-based approach applied to E. coli and P. aeruginosa found that stress response genes involved in envelope integrity and acid stress, among others, can contribute to resistance against a V. cholerae phospholipase toxin (Kamal et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "7673c706-e627-442b-ae46-4a8650fcb06a",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C67",
+      "claim": "P. aeruginosa genes that impacted survival when the V. cholerae toxin was produced heterologously did not influence the fitness of the bacterium during interbacterial competition with V. cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "While the P. aeruginosa genes identified impacted survival when the toxin was produced heterologously within the organism, they did not influence the fitness of the bacterium during interbacterial competition with V. cholerae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a cited reference (Kamal et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "dd5b1d0e-3b7c-4e78-92ca-b6794d780bc2",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C68",
+      "claim": "B. thai delivers a cocktail of toxins to target cells including two predicted phospholipases (Tle1 and Tle3), a peptidoglycan-degrading amidase (Tae2) and a colicin-like toxin predicted to form inner membrane pores (ColA).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, B. thai delivers a cocktail of toxins to target cells including two predicted phospholipases (Tle1 and Tle3) (Russell et al., 2013), a peptidoglycan-degrading amidase (Tae2) and a colicin-like toxin predicted to form inner membrane pores (ColA) (Russell et al., 2012; Salomon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "459858ca-8acd-4226-aa7c-2ba4389088cf",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C69",
+      "claim": "Enzymes with PLA activity cleave glycerophospholipids at the sn1 or sn2 position, generating fatty acid and detergent-like lysophospholipid products.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymes with PLA activity cleave glycerophospholipids at the sn1 or sn2 position, generating fatty acid and detergent-like lysophospholipid products (Filkin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "f957d80b-a437-4652-95b2-29c56d61541a",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C70",
+      "claim": "For toxins like Tle3, which are delivered to target cells in exceedingly low quantities, it is likely toxic products, rather than phospholipid depletion per se, that most immediately contribute to cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "For toxins like Tle3, which are delivered to target cells in exceedingly low quantities (Fridman et al., 2020; Hernandez et al., 2020), it is likely toxic products, rather than phospholipid depletion per se, that most immediately contribute to cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited references about T6SS toxin delivery quantities.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "5ce62a54-e7fc-4962-a9e0-85297ce57291",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C71",
+      "claim": "Aas genes neighbor arc3 genes in many bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the aas gene was illuminated as a potential P. aeruginosa antagonism defense factor in two of the transposon mutant screens we performed and aas genes neighbor arc3 genes in many bacteria (Figure 2C, Figure 1\u2014figure supplement 1B, Figure 4\u2014figure supplement 2, Figure 1\u2014source data 1, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "743fc91c-94f6-4167-bb97-008f9f81dfa8",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C72",
+      "claim": "Aas overexpression complements the \u0394aas-dependent defect in the \u0394arc3A \u0394aas strain, but it does not compensate for the inactivation of Arc3A.",
+      "claim_type": "EXPLICIT",
+      "source": "Aas overexpression complements the \u0394aas-dependent defect in this strain, but it does not compensate for the inactivation of Arc3A (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the competition assay data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "b0d515a0-1f85-4f43-9b8d-4ff0e5f7462c",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C73",
+      "claim": "The number and density of transmembrane helices in Arc3A family proteins is unusual.",
+      "claim_type": "EXPLICIT",
+      "source": "The number and density of transmembrane helices in Arc3A family proteins is unusual, and we postulate that these anomalous features of the protein are intimately connected to its mechanism of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis of Arc3A protein structure (Figure 3A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "dfe4c635-3bd0-4434-a4fa-7790054f75da",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C74",
+      "claim": "The transmembrane segments of Arc3A may sequester lysophospholipids and facilitate their turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "These segments may sequester lysophospholipids and facilitate their turnover or it is conceivable that they directly recruit and interfere with phospholipase enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about Arc3A's mechanism of action.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "4597548f-b411-4a2d-a5a2-a7cf7e46c34f",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C75",
+      "claim": "The transmembrane segments of Arc3A may directly recruit and interfere with phospholipase enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "These segments may sequester lysophospholipids and facilitate their turnover or it is conceivable that they directly recruit and interfere with phospholipase enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about Arc3A's mechanism of action.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "5a8c8cae-1d1f-4f97-aca0-ae118e7dbafe",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C76",
+      "claim": "The survival of strains lacking Arc1-3 function was equivalent to wild-type P. aeruginosa in general stress assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike previously established stress-intolerant control strains (\u2206rpoS and \u2206vacJ), the survival of strains lacking Arc1-3 function was equivalent to wild-type P. aeruginosa in these assays, suggesting that their function is distinct from those involved in general stress resistance (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the stress assay data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "eb99ee93-501a-4855-805b-77262ef44abf",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C77",
+      "claim": "Basal expression of Arc1-3 is exceedingly low, yet highly inducible through stimulation of the antagonism-responsive Gac/Rsm pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also in line with the regulatory profile of Arc1-3; immunoblotting showed that basal expression of each is exceedingly low, yet highly inducible through stimulation of the antagonism-responsive Gac/Rsm pathway (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the immunoblotting data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "197b61ee-56c0-45b8-90d7-b09f34195f92",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C78",
+      "claim": "Arc2 and Arc3 are major defense factors against insults caused by ColA and Tle3, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Arc2 and Arc3 are major defense factors against insults caused by ColA and Tle3, respectively, suggesting that these toxins may damage cells by a mechanism not efficiently countered by other cellular pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the competition assay data showing specific defense against these toxins (Figure 2B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "4d73ef50-d42d-4e76-bed4-1a4bbff39510",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C79",
+      "claim": "Tle3 and ColA may damage cells by a mechanism not efficiently countered by other cellular pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Arc2 and Arc3 are major defense factors against insults caused by ColA and Tle3, respectively, suggesting that these toxins may damage cells by a mechanism not efficiently countered by other cellular pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that Arc2 and Arc3 are major defense factors against these specific toxins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "6e1490d9-059f-47dc-9c27-d8643eed6ea3",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C80",
+      "claim": "Arc3 provides specific defense against Tle3.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the model that Arc3 provides specific defense against Tle3, Arc2 provides a degree of specific protection against ColA, and Arc1 serves a broader role in antagonism defense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data showing arc3 genes are critical for Tle3 defense but not ColA defense (Figure 2C, D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "b2931609-02dc-4807-a3e0-51815cfae7fa",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C81",
+      "claim": "Arc2 provides a degree of specific protection against ColA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the model that Arc3 provides specific defense against Tle3, Arc2 provides a degree of specific protection against ColA, and Arc1 serves a broader role in antagonism defense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data showing arc2 genes contribute to ColA defense (Figure 2D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "34bdb187-3451-4ca8-9a32-2ff0742f1fb1",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C82",
+      "claim": "Arc1 serves a broader role in antagonism defense.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the model that Arc3 provides specific defense against Tle3, Arc2 provides a degree of specific protection against ColA, and Arc1 serves a broader role in antagonism defense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the observation that Arc1 contributes to defense but not in a toxin-specific manner (Figure 2B-D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "327a6be7-efe1-4f53-ab92-5527eed5e11c",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C83",
+      "claim": "Insertions in arc3B crippled P. aeruginosa defense against Tle3, though to a lesser degree than arc3A.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertions in the second Arc3 gene, arc3B, also crippled P. aeruginosa defense against Tle3, though to a lesser degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "87f18077-c8f3-4707-84a3-859dbc20b12a",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C84",
+      "claim": "Only one gene within Arc1 contributed to Tle3 defense beyond the threefold insertion frequency ratio cutoff.",
+      "claim_type": "EXPLICIT",
+      "source": "Arc2 genes were dispensable for Tle3 defense, and only one gene within Arc1 contributed to Tle3 defense beyond the threefold insertion frequency ratio cutoff we employed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "faf3bdd0-86f0-449a-8fe4-68a014f78b71",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C85",
+      "claim": "Four of the six Arc2 genes hit in the initial screen provided defense against ColA that exceeded the threefold cutoff.",
+      "claim_type": "EXPLICIT",
+      "source": "However, four of the six Arc2 genes hit in our initial screen provided defense against ColA that exceeded our threefold cutoff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "97131e67-9d66-4c7c-be40-96ec104e95b0",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C86",
+      "claim": "Arc3 genes were wholly dispensable for defense against ColA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, one Arc1 gene met these criteria, whereas Arc3 genes were wholly dispensable for defense against ColA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "3961919e-be59-4432-ba2c-d73110ed8cff",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C87",
+      "claim": "There is evidence that transcripts containing arc3A, arc3B, and estA are generated by P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "The arc3A and arc3B genes abut a third gene encoded in the same orientation, estA, and there is evidence that transcripts containing all three genes are generated by P. aeruginosa (Gebhardt et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "34ae5112-c48f-4b9a-8dc0-7b866242c7a5",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C88",
+      "claim": "EstA was not detected in co-immunoprecipitation analyses with Arc3A and Arc3B.",
+      "claim_type": "EXPLICIT",
+      "source": "Although estA encodes an esterase (Wilhelm et al., 1999), which could have relevance for phospholipase defense, estA was not detected in our co-immunoprecipitation analyses, it did not exhibit differential insertion frequency in our screens, and in-frame deletion of estA did not impact P. aeruginosa survival during intoxication by Tle3 (Figure 1\u2014source data 1, Figure 2\u2014source data 1 and 2, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the co-immunoprecipitation data shown in Appendix 1\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "ccc728e5-fc09-444d-aecb-1c255fbc3ab1",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C89",
+      "claim": "EstA did not exhibit differential insertion frequency in the transposon screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Although estA encodes an esterase (Wilhelm et al., 1999), which could have relevance for phospholipase defense, estA was not detected in our co-immunoprecipitation analyses, it did not exhibit differential insertion frequency in our screens, and in-frame deletion of estA did not impact P. aeruginosa survival during intoxication by Tle3 (Figure 1\u2014source data 1, Figure 2\u2014source data 1 and 2, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data in Figure 1\u2014source data 1 and Figure 2\u2014source data 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "af42401c-dcb6-48d3-856c-dfd8fc5622bd",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C90",
+      "claim": "Arc3A proteins are found in bacteria lacking an Arc3B homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that Arc3A proteins are found in bacteria lacking an Arc3B homolog, combined with our finding that Arc3B contributes relatively little to Tle3 defense, led us to speculate that Arc3A plays an intrinsic role in defense, independent of its interaction Arc3B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "ad6128b3-8a44-44a5-a796-9d4e619cf0af",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C91",
+      "claim": "Arc3B contributes relatively little to Tle3 defense.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that Arc3A proteins are found in bacteria lacking an Arc3B homolog, combined with our finding that Arc3B contributes relatively little to Tle3 defense, led us to speculate that Arc3A plays an intrinsic role in defense, independent of its interaction Arc3B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transposon screening data (Figure 2C) and competition assays (Figure 3\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "1254c022-0dcb-49ad-a98e-89f6d9363611",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C92",
+      "claim": "Two Arc3A-related proteins from other species provided protection equivalent to that of P. aeruginosa arc3A when expressed in P. aeruginosa \u0394arc3A.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite high-sequence divergence that would likely preclude specific interactions with Arc3B or other P. aeruginosa factors, four of these proteins restored Tle3 defense to a statistically significant degree and two provided protection equivalent to that of P. aeruginosa arc3A expressed in the same manner (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the competition assay data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "1bc7cc2a-d097-4812-a7ef-a67185076217",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C93",
+      "claim": "Arc3B may play an auxiliary role in defense that is only detectable under the more stringent conditions of the Tn-seq screens.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Arc3B may play an auxiliary role in defense that is only detectable under the more stringent conditions of the Tn-seq screens, where P. aeruginosa strains compete with each other as well as B. thai.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discrepancy between Tn-seq results (showing arc3B contribution) and pairwise competition results (not showing arc3B contribution).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "547c0cea-1bed-46c1-9cf6-dcd854553791",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C94",
+      "claim": "In two Tn-seq screens, a significant difference in arc3B insertion frequency was observed during competition with wild-type B. thai compared to the T6SS- or Tle3-inactivated mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In two of our Tn-seq screens (Figure 1A and C, Figure 2C), we observed a significant difference in arc3B insertion frequency during competition with wild-type B. thai compared to the T6SS- or Tle3-inactivated mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the transposon screening data in Figure 1A, C and Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "dd23b2db-afc6-49e7-88b8-39416a6cc963",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "claim_id": "C95",
+      "claim": "In pairwise competition experiments with B. thai, no significant fitness defect was detected associated with arc3B inactivation in either the wild-type or the \u0394arc3A background.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in pairwise competition experiments with B. thai, we were unable to detect a significant fitness defect associated with arc3B inactivation in either the wild-type or the \u0394arc3A background (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the competition assay data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "467f42ab-64d0-4b38-83f5-86aa8fa8a7b3",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Genome-wide transposon screening in P. aeruginosa identified 34 genes critical for survival during B. thai antagonism, with 25 belonging to the Gac/Rsm regulon. GacS and GacA disruption caused the strongest defense defect genome-wide, while retS inactivation increased competitiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C10-C13 are well-supported by the transposon screening data in Figure 1A and supplements. The screening methodology is appropriate, with duplicate screens and proper controls (B. thai \u0394T6S). The identification of 34 genes and their enrichment in the Gac/Rsm regulon is clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "d203e250-62ae-4673-a9c4-573dee3d1312",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bioinformatic analysis revealed that the three identified gene clusters (arc1-3) encode proteins with predicted functions: arc1 genes relate to phospholipid biosynthesis, arc2 genes include a MoxR-like ATPase and VWF domain protein that co-occur across Xanthomonadaceae and Pseudomonadaceae, and arc3 genes (PA5113-PA5114) co-occur widely with some organisms encoding fusion proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 are supported by bioinformatic analyses shown in Figure 1\u2014figure supplement 2. The predictions are based on standard domain analysis and phylogenetic distribution studies. However, these are computational predictions that require experimental validation for functional confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "fed393b5-573e-4e2d-a66d-ff1e320f877c",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Arc1-3 are coordinately activated by the Gac/Rsm danger-sensing system but function independently. The triple arc mutant fitness deficiency approaches that of the \u0394gacS strain, demonstrating that these pathways are critical for P. aeruginosa survival during T6SS antagonism by B. thai.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C19, C20 are supported by multiple lines of evidence: transposon screening showing Gac/Rsm regulation (Figure 1), immunoblotting showing inducible expression (Figure 2\u2014figure supplement 2), and additive effects in competition assays (Figure 1\u2014figure supplement 3B). The data consistently demonstrate coordinate regulation and independent function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "a6297ee9-81a4-4592-990d-0a856f5df7ac",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Arc1-3 are distinguished from general stress response pathways. Strains lacking Arc1-3 function survived equivalently to wild-type under general stress conditions (H2O2, heat, high salinity, detergent), while basal expression is exceedingly low but highly inducible through Gac/Rsm activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C76, C77 are well-supported by stress assay data (Figure 2\u2014figure supplement 1) and immunoblotting data (Figure 2\u2014figure supplement 2). The use of established stress-intolerant control strains (\u0394rpoS and \u0394vacJ) strengthens the conclusion. The regulatory profile is consistent with specialized defense rather than general stress response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "11325e48-bc9d-4804-b307-cb478a726649",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Arc1-3 contributions to P. aeruginosa competitiveness arise predominantly from defensive mechanisms. When P. aeruginosa was in excess, Arc2 and Arc3 inactivation had no impact on B. thai survival, Arc1 had modest effects, while H1-T6SS inactivation increased B. thai survival by ~10,000-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by competition assay data in Figure 2A. The experimental design appropriately distinguishes offensive from defensive contributions by reversing the ratio of competing bacteria. The ~100-fold difference between H1-T6SS and Arc effects on B. thai survival clearly demonstrates the predominantly defensive role of Arc pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "fbccb638-3987-4120-8d35-9b64da32ae4b",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Arc pathways provide toxin-specific defense: Arc3 provides specific defense against Tle3 (with arc3A being the most critical gene genome-wide), Arc2 provides specific protection against ColA, and Arc1 serves a broader role in antagonism defense. This specificity was demonstrated through competition assays with single-toxin mutants and toxin-specific transposon screens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27, C80-C86 are strongly supported by multiple complementary experiments: competition assays with single-toxin B. thai mutants (Figure 2B), toxin-specific transposon screens (Figure 2C, D), and quantitative analysis of gene contributions. The data consistently demonstrate toxin-specific defense, with Arc3A showing the strongest genome-wide effect for Tle3 defense.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "89e74144-3745-47ef-9bfa-a6d28fe3382a",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Arc3A is a large protein with 35 predicted transmembrane domains, lacking residues indicative of enzymatic activity, and expected to span the periplasm. Arc3A-related proteins (DUF2339) are found across most bacterial phyla, while Arc3B-related proteins are restricted to Gram-negative bacteria. Orthologs are encoded by neighboring genes across exceptionally wide bacterial distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 are supported by bioinformatic analyses shown in Figure 3A-B. The structural predictions are based on standard computational tools, and the phylogenetic distribution is well-documented. The restriction of Arc3B to Gram-negative bacteria is logically consistent with its predicted outer membrane localization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "424de6da-b1b1-46fe-9640-2e41f34ca436",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Arc3A and Arc3B stably associate based on co-immunoprecipitation studies. EstA, despite being co-transcribed with arc3A and arc3B, was not detected in co-IP analyses, did not show differential insertion frequency in screens, and its deletion did not impact Tle3 defense.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C36, C87-C89 are supported by multiple lines of evidence: co-IP data (Appendix 1\u2014table 1), transposon screening data, and competition assays (Figure 3\u2014figure supplement 1A). The convergence of negative results for EstA across multiple experimental approaches strengthens the conclusion that it is not functionally involved in Arc3-mediated defense.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "16505ee6-3744-4efb-b485-13beb2de7ea5",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Arc3A family proteins possess intrinsic capacity to protect bacteria against Tle3-like toxins. Four heterologous Arc3A proteins from other species restored Tle3 defense when expressed in P. aeruginosa \u0394arc3A, with two providing protection equivalent to native Arc3A. Arc3A inactivation in P. protegens conferred a strong Tle3-specific defense defect. Arc3A proteins are found in bacteria lacking Arc3B homologs, and Arc3B contributes relatively little to Tle3 defense.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39, C90-C92 are well-supported by heterologous complementation data (Figure 3C) and native context experiments in P. protegens (Figure 3D). The ability of divergent Arc3A homologs to function in P. aeruginosa despite sequence divergence strongly supports intrinsic defensive capacity. The data on Arc3B's minor contribution is consistent across multiple experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "df66a31e-d48c-4a9b-ac80-5a1aee52d7c8",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Arc3B may play an auxiliary role in defense detectable only under stringent Tn-seq conditions. Significant differences in arc3B insertion frequency were observed in Tn-seq screens during competition with wild-type versus Tle3-inactivated B. thai, but no significant fitness defect was detected in pairwise competition experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 are supported by the discrepancy between Tn-seq results (Figure 1A, C, Figure 2C) and pairwise competition results (Figure 3\u2014figure supplement 1). The interpretation that Arc3B has an auxiliary role is reasonable given the data, though the mechanism remains unclear. The difference between competitive conditions (Tn-seq with intraspecies competition) and pairwise assays could explain the discrepancy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "4a8b3bbd-966d-4880-9bf2-40f04a4bece5",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Arc3 family proteins provide specific protection against phospholipase toxins by preventing lysophospholipid accumulation. P. aeruginosa lacking Arc3A accumulated highly elevated levels of LPE and MLCL during Tle3 intoxication, while other lysophospholipids and free fatty acids were not altered. This accumulation was confirmed in both interspecies competition and B. thai self-intoxication experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C40-C43 are strongly supported by mass spectrometry (Figure 4A, E) and radiographic TLC data (Figure 4B-D). The use of radiolabeled P. aeruginosa phospholipids elegantly demonstrates that accumulated lysophospholipids derive from the target organism. The specificity for LPE and MLCL, with no changes in other lipid species, supports a specific mechanism rather than general membrane damage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "65219bc7-b2ff-4e56-b74c-7b0904738b8a",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Arc3 prevents lysophospholipid accumulation in a manner distinct from the Aas reacylation pathway. While Aas is required for PE regeneration from LPE, Arc3A neither contributed to this process nor affected LPE stability in the absence of antagonism. The \u0394arc3A \u0394aas double mutant showed substantially greater Tle3 defense defect than \u0394arc3A alone, and Aas overexpression could not compensate for Arc3A loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C44-C50 are well-supported by PE regeneration assays (Figure 4G), competition assays with double mutants (Figure 4F), and overexpression experiments (Figure 4\u2014figure supplement 3). The independence of Arc3 from the established Aas pathway is demonstrated through multiple complementary approaches. The additive effect of the double mutant clearly indicates independent pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "15b28cdf-a99e-459d-b75e-f72ad7677818",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The response of P. aeruginosa to bacterial threats is analogous to eukaryotic innate immunity, wherein threat detection (Gac/Rsm danger sensing) leads to activation of specialized defense systems (arc1-3). Bacteria possess a multitude of coordinately regulated pathways that provide defense against threats posed by other bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C51 are interpretive conclusions supported by the collective data showing: (1) coordinated activation of multiple pathways by a danger-sensing system, (2) specialized defense capabilities of individual pathways, and (3) distinction from general stress responses. The analogy to eukaryotic innate immunity is conceptually appropriate given the demonstrated features of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "f52749da-2bff-415e-860d-a161a170702b",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Arc3A is the single most critical cellular factor for defense against Tle3 PLA toxin in P. aeruginosa. Phospholipase toxins are ancient and prevalent. Low Arc3A expression in the absence of Gac/Rsm activation suggests its role in PARA serves an adaptive purpose. Arc clusters are widely conserved among Bacteria, while the Gac/Rsm pathway is restricted to \u03b3-Proteobacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by transposon screening data (Figure 2C), immunoblotting data (Figure 2\u2014figure supplement 2), and bioinformatic analyses (Figure 1\u2014figure supplement 2, Figure 3B). C53 is general knowledge appropriately cited. The disconnect between arc conservation and Gac/Rsm restriction suggests arc genes may be regulated by different systems in other bacteria.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "2e25c5f9-0ea7-49fd-9bd8-cc3d756ec5f8",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Aas genes neighbor arc3 genes in many bacteria. Aas overexpression complements the \u0394aas-dependent defect in the \u0394arc3A \u0394aas strain but does not compensate for Arc3A inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 are supported by bioinformatic analysis (Figure 4\u2014figure supplement 2) and overexpression experiments (Figure 4\u2014figure supplement 3). The genomic proximity suggests potential functional relationship, while the overexpression data confirm pathway independence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "a07012c3-68d7-416e-9023-7d7f5e2112ea",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The unusual number and density of transmembrane helices in Arc3A family proteins may be intimately connected to its mechanism of action. These segments may sequester lysophospholipids and facilitate their turnover, or they may directly recruit and interfere with phospholipase enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C75 are speculative hypotheses about Arc3A's mechanism. While C73 is supported by bioinformatic analysis (Figure 3A), C74 and C75 are explicitly stated as speculation without experimental evidence. The unusual structural features are documented, but the mechanistic proposals require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "c47121fd-ad18-4472-a103-6538ce854651",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Arc2 and Arc3 are major defense factors against ColA and Tle3, respectively, suggesting these toxins may damage cells by mechanisms not efficiently countered by other cellular pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are supported by competition assay data (Figure 2B) and transposon screening data (Figure 2C, D). The inference that these toxins use mechanisms not efficiently countered by other pathways is reasonable given that Arc2 and Arc3 are the major defense factors, though this remains somewhat speculative without direct mechanistic evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    },
+    {
+      "id": "625683ca-25f0-4ecd-b799-c359dad8ff3f",
+      "content_id": "7d1daf2d-71cd-44c8-9f90-16885d5c38d5",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background and prior work establishing the context for the current study, including: P. aeruginosa's danger-sensing pathway (C1, C61), B. thai antagonism via T6SS (C9, C68), Gac/Rsm regulation (C57, C58, C59), and established knowledge about bacterial defense mechanisms (C62-C67, C69, C70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9, C57-C70 represent prior work and established knowledge appropriately cited from the literature. These provide necessary context but are not novel findings of the current study. The citations appear appropriate and the knowledge claims are consistent with the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:46.373511Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "934c5397-439c-4dcb-9555-5d8e5e7eb729",
+      "result_id": "467f42ab-64d0-4b38-83f5-86aa8fa8a7b3"
+    },
+    {
+      "claim_id": "c338c588-1a05-4865-a4de-5ca6f3347a9f",
+      "result_id": "467f42ab-64d0-4b38-83f5-86aa8fa8a7b3"
+    },
+    {
+      "claim_id": "b493d51d-a421-46d3-a444-c61d6f7c3814",
+      "result_id": "467f42ab-64d0-4b38-83f5-86aa8fa8a7b3"
+    },
+    {
+      "claim_id": "d601a4bc-e3eb-4176-afc7-7811c2a6fdbd",
+      "result_id": "467f42ab-64d0-4b38-83f5-86aa8fa8a7b3"
+    },
+    {
+      "claim_id": "f3fb24da-078f-486f-b04d-f67dad5439b9",
+      "result_id": "467f42ab-64d0-4b38-83f5-86aa8fa8a7b3"
+    },
+    {
+      "claim_id": "729d5f68-59c8-487b-ba9e-4bd7225a5ec6",
+      "result_id": "d203e250-62ae-4673-a9c4-573dee3d1312"
+    },
+    {
+      "claim_id": "c92f6971-fa39-4766-93f5-a5d50fa5707f",
+      "result_id": "d203e250-62ae-4673-a9c4-573dee3d1312"
+    },
+    {
+      "claim_id": "6d6943f4-7c6a-400a-aa91-b96be46fe01c",
+      "result_id": "d203e250-62ae-4673-a9c4-573dee3d1312"
+    },
+    {
+      "claim_id": "d12be0fd-5cbb-4812-b178-1a9ce376e5cd",
+      "result_id": "d203e250-62ae-4673-a9c4-573dee3d1312"
+    },
+    {
+      "claim_id": "7f43b7df-687b-425a-a4c3-33d3624ef984",
+      "result_id": "d203e250-62ae-4673-a9c4-573dee3d1312"
+    },
+    {
+      "claim_id": "66081e29-94e0-4475-b6da-71b2b73bde27",
+      "result_id": "fed393b5-573e-4e2d-a66d-ff1e320f877c"
+    },
+    {
+      "claim_id": "d5635608-607e-4cf1-9419-d5dc72509895",
+      "result_id": "fed393b5-573e-4e2d-a66d-ff1e320f877c"
+    },
+    {
+      "claim_id": "28299894-e40b-4a1a-bd01-e2faba3fdd76",
+      "result_id": "fed393b5-573e-4e2d-a66d-ff1e320f877c"
+    },
+    {
+      "claim_id": "f7dce569-8e5c-43e3-8217-f9aba0c309ec",
+      "result_id": "fed393b5-573e-4e2d-a66d-ff1e320f877c"
+    },
+    {
+      "claim_id": "40e84641-e98b-4342-9099-f9a72ee0ad82",
+      "result_id": "a6297ee9-81a4-4592-990d-0a856f5df7ac"
+    },
+    {
+      "claim_id": "5a8c8cae-1d1f-4f97-aca0-ae118e7dbafe",
+      "result_id": "a6297ee9-81a4-4592-990d-0a856f5df7ac"
+    },
+    {
+      "claim_id": "eb99ee93-501a-4855-805b-77262ef44abf",
+      "result_id": "a6297ee9-81a4-4592-990d-0a856f5df7ac"
+    },
+    {
+      "claim_id": "ffa2d589-9d88-4d70-b36a-8a6355c636fa",
+      "result_id": "11325e48-bc9d-4804-b307-cb478a726649"
+    },
+    {
+      "claim_id": "ee07ee6e-707f-45bc-9e00-bbf2227f20f9",
+      "result_id": "11325e48-bc9d-4804-b307-cb478a726649"
+    },
+    {
+      "claim_id": "c313c994-660d-468b-b165-0d4d96227a97",
+      "result_id": "11325e48-bc9d-4804-b307-cb478a726649"
+    },
+    {
+      "claim_id": "69b731f2-a6d2-4752-b610-460ca101cdc7",
+      "result_id": "11325e48-bc9d-4804-b307-cb478a726649"
+    },
+    {
+      "claim_id": "fb295dde-03f3-43ea-9f97-a799ccb8e30d",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "6eb32f8e-ad11-4bef-a0f3-cf18eb7a6d70",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "382c44e8-fced-496d-b50b-101d00ad52f3",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "6e1490d9-059f-47dc-9c27-d8643eed6ea3",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "b2931609-02dc-4807-a3e0-51815cfae7fa",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "34bdb187-3451-4ca8-9a32-2ff0742f1fb1",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "327a6be7-efe1-4f53-ab92-5527eed5e11c",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "87f18077-c8f3-4707-84a3-859dbc20b12a",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "faf3bdd0-86f0-449a-8fe4-68a014f78b71",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "97131e67-9d66-4c7c-be40-96ec104e95b0",
+      "result_id": "fbccb638-3987-4120-8d35-9b64da32ae4b"
+    },
+    {
+      "claim_id": "52eb4098-b84d-46e4-9687-19cfdf804116",
+      "result_id": "89e74144-3745-47ef-9bfa-a6d28fe3382a"
+    },
+    {
+      "claim_id": "d862c269-ecf5-40eb-9b83-f22a04515a3f",
+      "result_id": "89e74144-3745-47ef-9bfa-a6d28fe3382a"
+    },
+    {
+      "claim_id": "42697981-5b8d-4ecf-a027-9743395aac9b",
+      "result_id": "89e74144-3745-47ef-9bfa-a6d28fe3382a"
+    },
+    {
+      "claim_id": "de42b8da-3124-445d-9230-1624ce933dec",
+      "result_id": "89e74144-3745-47ef-9bfa-a6d28fe3382a"
+    },
+    {
+      "claim_id": "8b3dae9c-d621-4592-9708-a495db5b80bc",
+      "result_id": "89e74144-3745-47ef-9bfa-a6d28fe3382a"
+    },
+    {
+      "claim_id": "d3024df2-d1ed-4058-aa6a-427a6d552518",
+      "result_id": "89e74144-3745-47ef-9bfa-a6d28fe3382a"
+    },
+    {
+      "claim_id": "cc284f7b-e9d8-4dc1-9696-0580833536c1",
+      "result_id": "89e74144-3745-47ef-9bfa-a6d28fe3382a"
+    },
+    {
+      "claim_id": "6411b119-e5c2-46ac-9c74-2d042997b0a9",
+      "result_id": "424de6da-b1b1-46fe-9640-2e41f34ca436"
+    },
+    {
+      "claim_id": "3649d024-deeb-49a2-84f6-b0d3881dc2b9",
+      "result_id": "424de6da-b1b1-46fe-9640-2e41f34ca436"
+    },
+    {
+      "claim_id": "3961919e-be59-4432-ba2c-d73110ed8cff",
+      "result_id": "424de6da-b1b1-46fe-9640-2e41f34ca436"
+    },
+    {
+      "claim_id": "34ae5112-c48f-4b9a-8dc0-7b866242c7a5",
+      "result_id": "424de6da-b1b1-46fe-9640-2e41f34ca436"
+    },
+    {
+      "claim_id": "ccc728e5-fc09-444d-aecb-1c255fbc3ab1",
+      "result_id": "424de6da-b1b1-46fe-9640-2e41f34ca436"
+    },
+    {
+      "claim_id": "26bb3c65-9c3f-4561-a30e-a2859f665185",
+      "result_id": "16505ee6-3744-4efb-b485-13beb2de7ea5"
+    },
+    {
+      "claim_id": "b0959ed8-6ee1-4139-be31-bc20a53c359f",
+      "result_id": "16505ee6-3744-4efb-b485-13beb2de7ea5"
+    },
+    {
+      "claim_id": "fcfc3e02-9a14-45e9-a8e0-a46c72a4d614",
+      "result_id": "16505ee6-3744-4efb-b485-13beb2de7ea5"
+    },
+    {
+      "claim_id": "af42401c-dcb6-48d3-856c-dfd8fc5622bd",
+      "result_id": "16505ee6-3744-4efb-b485-13beb2de7ea5"
+    },
+    {
+      "claim_id": "ad6128b3-8a44-44a5-a796-9d4e619cf0af",
+      "result_id": "16505ee6-3744-4efb-b485-13beb2de7ea5"
+    },
+    {
+      "claim_id": "1254c022-0dcb-49ad-a98e-89f6d9363611",
+      "result_id": "16505ee6-3744-4efb-b485-13beb2de7ea5"
+    },
+    {
+      "claim_id": "1bc7cc2a-d097-4812-a7ef-a67185076217",
+      "result_id": "df66a31e-d48c-4a9b-ac80-5a1aee52d7c8"
+    },
+    {
+      "claim_id": "547c0cea-1bed-46c1-9cf6-dcd854553791",
+      "result_id": "df66a31e-d48c-4a9b-ac80-5a1aee52d7c8"
+    },
+    {
+      "claim_id": "dd23b2db-afc6-49e7-88b8-39416a6cc963",
+      "result_id": "df66a31e-d48c-4a9b-ac80-5a1aee52d7c8"
+    },
+    {
+      "claim_id": "50cc56ce-e7a6-464f-8661-13e3fbf3a651",
+      "result_id": "4a8b3bbd-966d-4880-9bf2-40f04a4bece5"
+    },
+    {
+      "claim_id": "17f93197-6dd2-4abd-ad8e-d3170301f86d",
+      "result_id": "4a8b3bbd-966d-4880-9bf2-40f04a4bece5"
+    },
+    {
+      "claim_id": "68a91643-ec37-4631-8108-4208a08cd228",
+      "result_id": "4a8b3bbd-966d-4880-9bf2-40f04a4bece5"
+    },
+    {
+      "claim_id": "93992e00-f667-4693-b702-1856914929dc",
+      "result_id": "4a8b3bbd-966d-4880-9bf2-40f04a4bece5"
+    },
+    {
+      "claim_id": "7cca7f0b-a796-4c3f-a276-5d8f3f710f25",
+      "result_id": "4a8b3bbd-966d-4880-9bf2-40f04a4bece5"
+    },
+    {
+      "claim_id": "9a735e7d-70de-48af-8603-cc98874eb30b",
+      "result_id": "65219bc7-b2ff-4e56-b74c-7b0904738b8a"
+    },
+    {
+      "claim_id": "a630e2d7-8558-42e8-8463-fb4703dec6f7",
+      "result_id": "65219bc7-b2ff-4e56-b74c-7b0904738b8a"
+    },
+    {
+      "claim_id": "462fdd85-e18b-48eb-a2c7-e4bfcae6aeb8",
+      "result_id": "65219bc7-b2ff-4e56-b74c-7b0904738b8a"
+    },
+    {
+      "claim_id": "a558a6cd-1c8b-4a42-8b2d-f6439a507137",
+      "result_id": "65219bc7-b2ff-4e56-b74c-7b0904738b8a"
+    },
+    {
+      "claim_id": "8913ab0e-87bd-4778-a8b3-886847494ea5",
+      "result_id": "65219bc7-b2ff-4e56-b74c-7b0904738b8a"
+    },
+    {
+      "claim_id": "4cbba654-b70e-4f90-a3b1-d402b554f921",
+      "result_id": "65219bc7-b2ff-4e56-b74c-7b0904738b8a"
+    },
+    {
+      "claim_id": "1abdba19-939e-4db7-ac3b-6abba8b819d4",
+      "result_id": "65219bc7-b2ff-4e56-b74c-7b0904738b8a"
+    },
+    {
+      "claim_id": "566dbf7a-bd83-48bb-8de3-edf2e8d990c0",
+      "result_id": "65219bc7-b2ff-4e56-b74c-7b0904738b8a"
+    },
+    {
+      "claim_id": "9e89000a-2c08-484d-bb49-0b6651f9d2b0",
+      "result_id": "15b28cdf-a99e-459d-b75e-f72ad7677818"
+    },
+    {
+      "claim_id": "496abee4-d55b-42f6-9d8b-b00246952ac1",
+      "result_id": "15b28cdf-a99e-459d-b75e-f72ad7677818"
+    },
+    {
+      "claim_id": "7753efc4-fc0c-44cd-aaf8-0786a33cc50c",
+      "result_id": "f52749da-2bff-415e-860d-a161a170702b"
+    },
+    {
+      "claim_id": "8ff07ec8-60d5-40cc-91d5-eae2af675b0a",
+      "result_id": "f52749da-2bff-415e-860d-a161a170702b"
+    },
+    {
+      "claim_id": "03203090-b522-47d5-86a5-fd3e42d0dbf3",
+      "result_id": "f52749da-2bff-415e-860d-a161a170702b"
+    },
+    {
+      "claim_id": "1d74e5cf-837f-4f90-8ba4-0a8263182bd6",
+      "result_id": "f52749da-2bff-415e-860d-a161a170702b"
+    },
+    {
+      "claim_id": "2b9620b9-5a82-41f9-ba6b-f5b98974421d",
+      "result_id": "f52749da-2bff-415e-860d-a161a170702b"
+    },
+    {
+      "claim_id": "5ce62a54-e7fc-4962-a9e0-85297ce57291",
+      "result_id": "2e25c5f9-0ea7-49fd-9bd8-cc3d756ec5f8"
+    },
+    {
+      "claim_id": "743fc91c-94f6-4167-bb97-008f9f81dfa8",
+      "result_id": "2e25c5f9-0ea7-49fd-9bd8-cc3d756ec5f8"
+    },
+    {
+      "claim_id": "b0d515a0-1f85-4f43-9b8d-4ff0e5f7462c",
+      "result_id": "a07012c3-68d7-416e-9023-7d7f5e2112ea"
+    },
+    {
+      "claim_id": "dfe4c635-3bd0-4434-a4fa-7790054f75da",
+      "result_id": "a07012c3-68d7-416e-9023-7d7f5e2112ea"
+    },
+    {
+      "claim_id": "4597548f-b411-4a2d-a5a2-a7cf7e46c34f",
+      "result_id": "a07012c3-68d7-416e-9023-7d7f5e2112ea"
+    },
+    {
+      "claim_id": "197b61ee-56c0-45b8-90d7-b09f34195f92",
+      "result_id": "c47121fd-ad18-4472-a103-6538ce854651"
+    },
+    {
+      "claim_id": "4d73ef50-d42d-4e76-bed4-1a4bbff39510",
+      "result_id": "c47121fd-ad18-4472-a103-6538ce854651"
+    },
+    {
+      "claim_id": "51b57c75-b197-4e0f-b557-c03e33295b5a",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "3acc34c0-3728-4a25-a2d4-46104bdcbcdc",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "cbabc306-0b06-4c31-8c53-f3dbab66734a",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "25fc10c4-61dd-402a-8486-6dbdb61640f4",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "e31df74d-aa40-4463-9805-fbdda1ed5f39",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "db426266-dc52-4c33-93a3-f42ad2d84066",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "0d8cd159-54e9-4102-8a81-8539bb3561fe",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "47487007-a3be-46a5-9e9b-ad75b6bb8437",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "24e3c1a6-6c6e-449c-a4c5-65de854aad79",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "aedb016b-ec77-40a5-afec-1897a3c34ba8",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "60c74fea-5c67-4e3c-8cef-ad6b94e4b0f5",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "f890c95f-0e0b-42f7-8fec-53fc1a4e5ef2",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "7673c706-e627-442b-ae46-4a8650fcb06a",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "dd5b1d0e-3b7c-4e78-92ca-b6794d780bc2",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "459858ca-8acd-4226-aa7c-2ba4389088cf",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    },
+    {
+      "claim_id": "f957d80b-a437-4652-95b2-29c56d61541a",
+      "result_id": "625683ca-25f0-4ecd-b799-c359dad8ff3f"
+    }
+  ],
+  "comparisons": []
+}

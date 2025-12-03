@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "ORACLE successfully creates large, unbiased phage variant libraries through a four-step process involving acceptor phage creation, optimized recombination, accumulation, and library expression. The method achieved a recombination rate of ~7.19\u00d710\u207b\u2074, enriched recombined phages over 1000-fold using CRISPR-Cas9 selection, and retained 99.8% library coverage with 1660 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 collectively demonstrate ORACLE's technical capabilities with quantitative experimental data. The recombination rate (C6), enrichment efficiency (C7), and library coverage (C8) are all supported by experimental measurements shown in Figure 1. The acceptor phage validation (C4, C5) confirms the system works as designed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C76"
+    ],
+    "result": "Deep mutational scanning of 1660 T7 tip domain variants across three E. coli hosts revealed host-specific adaptation patterns. Wildtype T7 showed poorest performance on 10G (F=0.77\u00b10.05) but better performance on BL21 (F=2.92\u00b10.2) and BW25113 (F=2.26\u00b10.1), with the best 10G variants showing 10-fold enrichment over wildtype. No variant performed exceptionally well (FN>2) on all three hosts, though 406 variants were tolerated across all hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 and C76 are well-supported by experimental data with biological triplicates showing excellent correlation (Figure 2\u2014figure supplement 1). The C-terminal validation (C9) confirms functional relevance of the screen. Statistical significance is reported (p<0.05) for host-specific differences, and the tradeoff between activity and host range is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C79"
+    ],
+    "result": "Host-specific physicochemical enrichment patterns were observed: 10G enriched for larger, hydrophilic amino acids and depleted hydrophobic residues (p<0.001, r>0.12); BW25113 modestly enriched hydrophobic residues (p<0.034, r>0.07); BL21 showed no significant enrichment. Enriched substitutions concentrated in exterior loops BC, DE, FG, and HI, suggesting directional phage-bacterial interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C79 are supported by statistical analysis with reported p-values and effect sizes. The physicochemical trends are visualized in Figure 2\u2014figure supplement 2F-H, and structural mapping (Figure 2\u2014figure supplement 2E) confirms topological patterns. The inference about directionality (C79) is reasonable given the spatial concentration of functional substitutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cross-host comparison identified over 30 residues with contrasting substitution patterns, revealing host-specific molecular determinants. Key positions include N501 and R542 (tolerating only positive charges on 10G/BL21 but diverse substitutions on BW25113), D540 (critical for BW25113 recognition), and D520 (important for BL21). R542Q was the best BW25113 variant (FN=3.31) but depleted on other hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 and C83-C88 are supported by experimental functional scores shown in Figure 3A and structural analysis in Figure 3C. The hypothesis about D540 (C21) is reasonable given supporting data from S541D enrichment (C22). The structural proximity argument for G479-D540 interaction (C88) is supported by distance measurements (6\u00c5) and experimental depletion patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C89",
+      "C90"
+    ],
+    "result": "Functional mapping identified intolerant positions essential for stability (hydrophobic core: W474, I495, W496, I497, Y515, W523, L524, F526, I528, F535, I548; salt bridge network: D489, R491, R493, R508, D512; critical glycines: G476, G510, G522, G532) and functional positions concentrated in exterior loops and \u03b2-sheet residues (I514, Q527, K536), suggesting the phage can use the 'side' of the tip domain for receptor engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 and C89-C90 are supported by experimental DMS data mapped onto crystal structure (Figure 3B-C). The classification of intolerant vs. functional positions is based on systematic analysis across all three hosts. The inference about alternative binding modes (C90) is reasonable given the unexpected functional positions outside canonical exterior loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C91"
+    ],
+    "result": "Rosetta computational predictions of thermodynamic stability correlated well with experimental data: over 93% of tolerated or functional positions had at least one predicted stabilizing substitution. Substitutions predicted stable but experimentally intolerant may indicate residues necessary for all three hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C91 are supported by computational analysis compared to experimental DMS results (Figure 3\u2014figure supplement 1 and 3). The 93% concordance is a strong correlation, though the interpretation of the remaining 7% (C91) is speculative but reasonable. The analysis appropriately acknowledges limitations of computational predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C94"
+    ],
+    "result": "LPS deletion strains BW25113\u0394rfaG (lacking outer core) and BW25113\u0394rfaD (lacking inner core) showed severely reduced T7 infection (several orders of magnitude by EOP). Wildtype T7 functional scores were significantly lower on deletion strains (F=0.09\u00b10.3 for \u0394rfaG, F=0.03\u00b10.2 for \u0394rfaD) compared to wildtype BW25113 (F=2.26\u00b10.1, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C94 are supported by experimental EOP data (Figure 4F) and functional scores with statistical significance. The LPS structure information (C29, C30) is properly cited to previous research. The dramatic reduction in wildtype T7 performance on deletion strains establishes these as resistant hosts suitable for gain-of-function screening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "DMS on LPS deletion strains identified gain-of-function variants: 55 variants (3.3%) enriched on \u0394rfaG and 68 variants (4.1%) on \u0394rfaD (vs. 16 variants/1% on wildtype BW25113), with top variants showing >100-fold enrichment. Biological replicates showed good correlation for \u0394rfaG (R=0.99, 0.93, 0.93) but only adequate for \u0394rfaD (R=0.51, 0.68, 0.39), though the same substitutions were enriched across replicates. Single infection cycle improved \u0394rfaD correlation (R=0.89, 0.90, 0.89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 and C95-C97 are supported by experimental data with appropriate statistical analysis. The authors acknowledge and address the correlation issues with \u0394rfaD (C95-C97), demonstrating scientific rigor. The single-cycle experiment (C97) provides important methodological insight for future work with resistant hosts. Enrichment patterns are consistent with physicochemical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C101",
+      "C102"
+    ],
+    "result": "Variant D540S showed 1-2 orders of magnitude better performance on BW25113\u0394rfaG compared to wildtype BW25113, while variants A539R, G521H, and D540S showed significant gain of function on deletion strains by EOP. These results support the conclusion that D540 is critical for wildtype BW25113 infection, likely through interaction with outer core LPS, and substitution at this position enables adsorption to truncated LPS or alternative receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C101-C102 are supported by EOP validation experiments (Figure 4F) confirming pooled selection results. The conclusion about D540's role (C39, C102) is well-supported by convergent evidence: depletion of D540 substitutions on wildtype BW25113, enrichment of D540S on \u0394rfaG, and the gain-of-function phenotype. The mechanistic interpretation is reasonable given the LPS structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C103",
+      "C104",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Deep sequencing detected truncated tip domain variants (including some with FN\u226510 on \u0394rfaG) that were viable but unable to form visible plaques. Variant R525* (best truncated variant: \u0394rfaG FN=9.55, \u0394rfaD FN=75.7) showed no plaquing ability without helper plasmid. These variants may represent slowly replicating phages requiring only single mutations to regain full activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C103-C104 are supported by deep sequencing data and EOP validation. The detection of non-plaquing but viable variants (C126-C128) demonstrates the power of deep sequencing over traditional plaque assays. However, the evolutionary speculation (C103) about obligate lytic phages becoming less active is interesting but not directly tested. The conclusion about viability (C104) is reasonable given detection requires replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C105",
+      "C106"
+    ],
+    "result": "T7 variants showed therapeutic potential against pathogenic E. coli UTI473. While wildtype T7 showed rapid insensitivity onset (1-2 hr after lysis) and no visible lysis at MOI=1, the variant library cleared cultures and isolated variants (N501H, D520A, G521R) delayed insensitivity onset to 11-13 hr. N501H showed faster lysis and lower post-lysis bacterial load than wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 and C105-C106 are supported by time course experiments (Figure 5A) and growth assays. The comparison between wildtype and variants is clear and statistically significant. The therapeutic context (C105-C106) is properly cited. However, the authors appropriately note that in vivo efficacy testing is still required, preventing a stronger conclusion about clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "MOI-dependent analysis showed N501H lysed UTI473 significantly faster than wildtype at all MOIs (p<0.05), with time to lysis half that of wildtype at lower MOI. Between MOI 10\u207b\u00b9-10\u207b\u2075, N501H reduced insensitivity over 10 hr while wildtype showed rapid insensitivity onset. This suggests engineered variants can overcome bacterial resistance at clinically relevant low MOI where wildtype fails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C107-C110 are supported by systematic MOI experiments (Figure 5B-C) with statistical significance. The hypothesis about MOI-dependent mechanisms (C109) is reasonable given the data. The conclusion about therapeutic potential (C110) is appropriately cautious, noting these are starting points for further engineering. The clinical relevance argument (C108) is properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Pairwise host comparison using functional difference (FD) metric identified 118 host-constricting variants (|FD|\u22651): 53 favoring BW25113 over BL21, 98 favoring BW25113 over 10G, and 15 favoring BL21 over 10G (none favoring 10G). The FD-based classification correctly placed previously reported host-specific variants D520Q and V544A, validating the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C112-C115 are supported by systematic analysis of functional scores across hosts. The validation against published data (C112) strengthens confidence in the FD metric. However, the authors appropriately note that FD is an approximate measure of host specificity, not absolute, and requires experimental validation. The conclusion about relative ease of finding specific variants (C113) is reasonable given the data distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C116",
+      "C117"
+    ],
+    "result": "EOP validation confirmed host-constricting properties: R542Q showed ~100-fold decreased plaquing on BL21 vs. BW25113 with atypically small plaques on 10G indicating severe growth defect, while D540S showed ~100-fold decreased plaquing on BW25113 vs. BL21 and 10G. These results validate pairwise comparison as a tool for mapping host range constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C116-C117 are supported by EOP experiments (Figure 6D) that validate the computational predictions from pooled screening. The ~100-fold differences are substantial and statistically significant. The conclusion about pairwise comparison utility (C117) is justified by the successful validation of predicted host-constricting variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The study demonstrates that single amino acid substitutions generate broad functional diversity and can enhance activity even on well-adapted hosts, with host-specific enrichment patterns showing both broad trends and position-specific nuance. Substitutions on 10G mirrored those recovering function on BW25113 LPS deletion mutants, showing convergent selection. Function-enhancing substitutions concentrated in exterior loops but also appeared on other surface residues, suggesting multiple binding modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C123 represent major conclusions synthesizing multiple experimental results. These are well-supported by the comprehensive DMS data across multiple hosts and conditions. The convergent evolution observation (C121) is particularly strong evidence. The conclusions appropriately acknowledge complexity (C82) while identifying clear patterns (C122). These represent the key biological insights from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C93",
+      "C111",
+      "C134",
+      "C135"
+    ],
+    "result": "The manuscript provides extensive background on phage biology, RBP function, and limitations of existing engineering approaches. This includes established knowledge about phage diversity, T7 structure, and the role of RBPs in host range determination, as well as critiques of directed evolution, random mutagenesis, and RBP swapping approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C58-C74, C93, C111, C134-C135 are background claims properly supported by citations to previous research. These establish the scientific context and motivation for developing ORACLE. The characterization of existing methods' limitations (C67-C69) is appropriately cited and provides clear rationale for the new approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C78",
+      "C98",
+      "C99",
+      "C100",
+      "C124",
+      "C125"
+    ],
+    "result": "The DMS library spans residues 472-554 with all non-synonymous substitutions. Analysis revealed that BL21 may have adapted to T7 over time through laboratory propagation, enriched variants on deletion strains likely have broad affinity for truncated LPS, and results are consistent with a recent continuous evolution study. Several intolerant residues were located in exterior loops, and functional profile comparison reveals ideal engineering targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C78, C98-C100, C124-C125 are supported by experimental design documentation and data analysis. The inference about BL21 adaptation (C78) is reasonable speculation given the propagation history. The comparison to continuous evolution results (C100) provides external validation. The conclusions about engineering targets (C125) appropriately synthesize the functional mapping data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C136"
+    ],
+    "result": "ORACLE is proposed as a foundational technology for elucidating sequence-function relationships in phage genes, with potential applications to other T7 genes, scalability to multiple hosts, and generalizability to any phage with a sequenced genome and transformable host. The technology could enable discovery of new phage 'parts' from metagenomic sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C133 and C136 represent forward-looking statements about ORACLE's potential applications. While the successful demonstration on the T7 tip domain (C129) is supported, the broader applications (C130, C133, C136) are speculative. The generalizability claim (C132) is reasonable given the design principles but lacks experimental validation on other phage systems. The scalability argument (C131) is logical but not experimentally demonstrated beyond three hosts.",
+    "result_type": "MINOR"
+  }
+]

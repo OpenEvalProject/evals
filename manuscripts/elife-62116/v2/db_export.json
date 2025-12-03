@@ -1,0 +1,2018 @@
+{
+  "submission": {
+    "id": "888ef08b-7a84-4efb-868f-240c1cddad81",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:05:23.961663Z",
+    "updated_at": "2025-12-03T01:05:23.961663Z"
+  },
+  "content": [
+    {
+      "id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "submission_id": "888ef08b-7a84-4efb-868f-240c1cddad81",
+      "content_type": "manuscript",
+      "content_text": "# Topographic gradients of intrinsic dynamics across neocortex\n\n## Authors\n\n- Golia Shafiei<sup>1</sup> ([ORCID: 0000-0002-2036-5571](https://orcid.org/0000-0002-2036-5571)) \u2020\n- Ross D Markello<sup>1</sup> ([ORCID: 0000-0003-1057-1336](https://orcid.org/0000-0003-1057-1336))\n- Reinder Vos de Wael<sup>1</sup>\n- Boris C Bernhardt<sup>1</sup>\n- Ben D Fulcher<sup>2</sup> ([ORCID: 0000-0002-3003-4055](https://orcid.org/0000-0002-3003-4055))\n- Bratislav Misic<sup>1</sup> ([ORCID: 0000-0003-0307-2862](https://orcid.org/0000-0003-0307-2862)) \u2020\n\n### Affiliations\n\n1. McConnell Brain Imaging Centre, Montr\u00e9al Neurological Institute, McGill University Montr\u00e9al Canada\n2. School of Physics, The University of Sydney Sydney Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe intrinsic dynamics of neuronal populations are shaped by both microscale attributes and macroscale connectome architecture. Here we comprehensively characterize the rich temporal patterns of neural activity throughout the human brain. Applying massive temporal feature extraction to regional haemodynamic activity, we systematically estimate over 6000 statistical properties of individual brain regions\u2019 time-series across the neocortex. We identify two robust spatial gradients of intrinsic dynamics, one spanning a ventromedial-dorsolateral axis and dominated by measures of signal autocorrelation, and the other spanning a unimodal-transmodal axis and dominated by measures of dynamic range. These gradients reflect spatial patterns of gene expression, intracortical myelin and cortical thickness, as well as structural and functional network embedding. Importantly, these gradients are correlated with patterns of meta-analytic functional activation, differentiating cognitive versus affective processing and sensory versus higher-order cognitive processing. Altogether, these findings demonstrate a link between microscale and macroscale architecture, intrinsic dynamics, and cognition.\n\n## Introduction\n\nThe brain is a complex network of anatomically connected and perpetually interacting neuronal populations (Sporns et al., 2005). Inter-regional connectivity promotes signaling via electrical impulses, generating patterned electrophysiological and haemodynamic activity (Avena-Koenigsberger et al., 2017; Su\u00e1rez et al., 2020). Neuronal populations are organized into a hierarchy of increasingly polyfunctional neural circuits (Jones and Powell, 1970; Mesulam, 1998; Hilgetag and Goulas, 2020; Bazinet et al., 2020), manifesting as topographic gradients of molecular and cellular properties that smoothly vary between unimodal and transmodal cortices (Huntenburg et al., 2018). Recent studies have demonstrated cortical gradients of gene transcription (Fulcher et al., 2019; Burt et al., 2018), intracortical myelin (Huntenburg et al., 2017), cortical thickness (Wagstyl et al., 2015) and laminar profiles (Paquola et al., 2019).\n\nThe topological and physical embedding of neural circuits in macroscale networks and microscale gradients influence their dynamics (Kiebel et al., 2008; Gollo et al., 2015; Wang, 2020). For a neuronal population, the confluence of local micro-architectural properties and global connectivity shapes both the generation of local rhythms, as well as its propensity to communicate with other populations. Specifically, cell type composition, their morphology and their configuration in local circuits determine how signals are generated, transmitted and integrated (Payeur et al., 2019). These micro-architectural properties \u2013 increasingly measured directly from histology or inferred from other measurements, such as microarray gene expression \u2013 provide a unique opportunity to relate circuit architecture to temporal dynamics and computation. Indeed, multiple studies have focused on how intrinsic timescales vary in relation to microscale and macroscale attributes (Murray et al., 2014; Mahjoory et al., 2019; Shine et al., 2019; Gao et al., 2020; Ito et al., 2020; Raut et al., 2020). The primary functional consequence of this hierarchy of timescales is thought to be a hierarchy of temporal receptive windows: time windows in which a newly arriving stimulus will modify processing of previously presented (i.e. contextual) information (Hasson et al., 2008; Honey et al., 2012; Baldassano et al., 2017; Huntenburg et al., 2018; Chaudhuri et al., 2015; Chien and Honey, 2020). Thus, areas at the bottom of the hierarchy preferentially respond to immediate changes in the sensory environment, while responses in areas at the top of the hierarchy are modulated by prior context. Altogether, previous work highlights a hierarchy of a small number of manually selected time-series features, but it is possible that different types of local computations manifest as different organizational gradients.\n\nThe relationship between structure and dynamics is also observed at the network level (Su\u00e1rez et al., 2020). Intrinsic or \u2018resting state\u2019 networks possess unique spectral fingerprints (Keitel and Gross, 2016). The signal variability of brain areas, measured in terms of standard deviations or temporal entropy, is closely related to their structural and functional connectivity profiles (i.e. network embedding) (Mi\u0161i\u0107 et al., 2011; Burzynska et al., 2013; Garrett et al., 2017; Shafiei et al., 2019). More generally, the autocorrelation of blood oxygenation level-dependent (BOLD) signal is correlated with topological characteristics of structural brain networks, such that areas with greater connectivity generate signals with greater autocorrelation (Sethi et al., 2017; Fallon et al., 2020). Finally, in computational models of structurally coupled neuronal populations (neural mass and neural field models [Breakspear, 2017]), highly interconnected hubs exhibit slower dynamic fluctuations, while sensory areas exhibit fast fluctuating neural activity (Gollo et al., 2015). Indeed, these models offer better fits to empirical functional connectivity if they assume heterogeneous local dynamics (Cocchi et al., 2016; Demirta\u015f et al., 2019; Wang et al., 2019; Deco et al., 2020).\n\nAltogether, multiple lines of evidence suggest that local computations may reflect systematic variation in microscale properties and macroscale network embedding, manifesting as diverse time-series features of regional neural activity. How molecular, cellular and connectomic architecture precisely shapes temporal dynamics, and ultimately, cortical patterns of functional specialization, is poorly understood. A significant limitation is that conventional computational analysis is based on specific, manually selected time-series features, such as the decay of the autocorrelation function, bands of the Fourier power spectrum, or signal variance. Yet the time-series analysis literature is vast and interdisciplinary; how do other metrics of temporal structure vary across the brain and what can they tell us about cortical organization?\n\nHere we comprehensively chart summary features of spontaneous BOLD signals across the cerebral cortex (hereafter referred to as \u2018intrinsic dynamics\u2019), mapping temporal organization to structural organization. We apply massive temporal feature extraction to resting state BOLD signals to derive a near-exhaustive time-series profile for each brain region. We then systematically investigate the relationship between local time-series features and gene expression, microstructure, morphology, structural connectivity and functional connectivity. Finally, we map time-series features to a meta-analytic atlas of cognitive ontologies to investigate how temporal dynamics shape regional functional specialization. We show that intrinsic dynamics reflect molecular and cytoarchitectonic gradients, as well as patterns of structural and functional connectivity. These spatial variations in intrinsic dynamics ultimately manifest as patterns of distinct psychological functions.\n\n## Results\n\nAll analyses were performed on four resting state fMRI runs from the Human Connectome Project (Van Essen et al., 2013). The data were pseudorandomly divided into two samples of unrelated participants to form Discovery and Validation samples with $n=201$ and $n=127$, respectively (Vos de Wael et al., 2018). External replication was then performed using data from the Midnight Scan Club (Gordon et al., 2017). Massive temporal feature extraction was performed using highly comparative time-series analysis, hctsa (Fulcher et al., 2013; Fulcher and Jones, 2017), yielding 6441 features per regional time-series, including measures of frequency composition, variance, autocorrelation, fractal scaling and entropy (Figure 1). The results are organized as follows. We first investigate whether regions that are structurally and functionally connected display similar intrinsic dynamics. We then characterize the topographic organization of time-series features in relation to microstructural attributes and cognitive ontologies.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig1-v2.jpg)\n\n**Figure 1.:** The highly comparative time-series analysis toolbox, hctsa (Fulcher et al., 2013; Fulcher and Jones, 2017), was used to extract 6441 time-series features of the parcellated time-series for each brain region and participant, including measures of autocorrelation, variance, spectral power, entropy, etc. Regional time-series profiles were then entered into two types of analyses. In the first analysis, pairs of regional time-series feature vectors were correlated to generate a region \u00d7 region temporal profile similarity network. In the second analysis, principal component analysis (PCA) was performed to identify orthogonal linear combinations of time-series features that vary maximally across the cortex.\n\n### Inter-regional temporal profile similarity reflects network geometry and topology\n\nWe first assessed the extent to which intrinsic dynamics depend on inter-regional physical distance, anatomical connectivity and functional connectivity. We estimated similarity between inter-regional dynamics by computing Pearson correlation coefficients between regional time-series feature vectors (Figure 1). Two regional time-series are judged to be similar if they have similar temporal profiles, estimated across a comprehensive and diverse set of time-series features (e.g. similar entropy, stationarity, linear correlation properties) (Fulcher, 2018). This measure of similarity identifies pairs of regions that have similar dynamical features, but not necessarily coherent or synchronous dynamics (Figure 2a). We refer to correlations between regional time-series feature profiles as \u2018temporal profile similarity\u2019.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig2-v2.jpg)\n\n**Figure 2.:** (a) Temporal profile similarity networks are constructed by correlating pairs of regional time-series feature vectors. Brain regions are ordered based on their intrinsic functional network assignments (Yeo et al., 2011; Schaefer et al., 2018). (b) Temporal profile similarity between regions significantly decreases as a function of Euclidean distance between them. The black line represents an exponential fit as $y=0.37\u2062e^{-0.03\u2062x}+0.01$, where y is temporal profile similarity and x is Euclidean distance. (c, d) Regional time-series features are compared between pairs of cortical areas using their structural and functional connectivity profiles. Pairwise temporal profile similarity is significantly higher among structurally-connected areas (c), and among regions that belong to the same intrinsic functional networks (d). Asterisks denote a statistically significant difference of the means (two-tailed t-test; $p\u22480$). For structural networks, statistical significance of the difference of the mean temporal profile similarity of connected and unconnected node pairs is also assessed against a null distribution of differences generated from a population degree- and edge length-preserving rewired networks (Betzel and Bassett, 2018)\u00a0(c, right-most panel). For functional networks, statistical significance of the difference of the mean temporal profile similarity of within and between intrinsic networks is also assessed against a null distribution of differences generated by spatial autocorrelation-preserving label permutation (\u2018spin tests\u2019; Alexander-Bloch et al., 2018) (d, right-most panel). (e) Temporal profile similarity is positively correlated with functional connectivity. This relationship remains after partialling out Euclidean distance between regions from both measures using exponential trends. $r_{s}$ denotes the Spearman rank correlation coefficient; linear regression lines are added to the scatter plots for visualization purposes only. Connections are color-coded based on the intrinsic network assignments (Yeo et al., 2011; Schaefer et al., 2018). VIS\u00a0=\u00a0visual, SM\u00a0=\u00a0somatomotor, DA\u00a0=\u00a0dorsal attention, VA\u00a0=\u00a0ventral attention, LIM\u00a0=\u00a0limbic, FP\u00a0=\u00a0fronto parietal, DMN\u00a0=\u00a0default mode.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Regional time-series features are compared between pairs of cortical areas using their functional connectivity profiles. Cortical areas are ordered based on their intrinsic network assignments (17-network partition) (Yeo et al., 2011; Schaefer et al., 2018). (b) Pairwise temporal profile similarity is significantly higher among regions that belong to the same intrinsic functional networks. Asterisk denotes a statistically significant difference of the mean temporal profile similarity (two-tailed t-test; $t(79,798)=31.151$; $p\u22480$). The results are consistent when the distance effect is regressed out from temporal profile similarity using the exponential trend identified in Figure 2b (two-tailed t-test; $t(79,798)=21.193$; $p\u22480$). Statistical significance of the difference of the mean temporal profile similarity of within and between intrinsic networks is also assessed against a null distribution of differences generated by spatial autocorrelation-preserving label permutation (\u2018spin tests\u2019; Alexander-Bloch et al., 2018) (10,000 spatial permutations; right-most panel).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** For completeness, all functional connectivity analyses were repeated using partial correlations, as implemented in Nilearn (Abraham et al., 2014). Temporal profile similarity is positively correlated with functional connectivity estimated using partial correlations. This relationship remains after partialling out Euclidean distance between regions from both measures using exponential trends. $r_{s}$ denotes Spearman rank correlation coefficients; linear regression lines are added to the scatter plots for visualization purposes only. Connections are color-coded based on the intrinsic network assignments (Yeo et al., 2011; Schaefer et al., 2018). VIS\u00a0=\u00a0visual, SM\u00a0=\u00a0somatomotor, DA\u00a0=\u00a0dorsal attention, VA\u00a0=\u00a0ventral attention, LIM\u00a0=\u00a0limbic, FP\u00a0=\u00a0fronto parietal, DMN\u00a0=\u00a0default mode.\n\nFigure 2b shows a negative exponential relationship between spatial proximity and temporal profile similarity, meaning that regions that are spatially close exhibit similar intrinsic dynamics. Interestingly, regions that share an anatomical projection have greater temporal profile similarity than those that do not (Figure 2c; two-tailed t-test; $t\u2062(79,798)=40.234$, $p\u22480$). To test whether this anatomically-mediated similarity of time-series features is not due to spatial proximity, we performed two additional comparisons. First, we regressed out the exponential trend identified above from the temporal profile similarity matrix, and repeated the analysis on the residuals, yielding a significant difference in temporal profile similarity between connected and non-connected regions (two-tailed t-test; $t\u2062(79,798)=9.916$, $p\u22480$). Second, we generated an ensemble of 10,000 degree- and edge length-preserving surrogate networks (Betzel and Bassett, 2018), and compared the difference of the means between connected and non-connected pairs in the empirical and surrogate networks. Again, we observe a significant difference in temporal profile similarity between connected and non-connected regions (two-tailed; $p_{rewired}=0.0001$; Figure 2c).\n\nLikewise, regions belonging to the same intrinsic functional network have greater temporal profile similarity compared to regions in different networks (Figure 2d; two-tailed t-test; $t\u2062(79,798)=61.093$, $p\u22480$). To confirm this finding is not driven by spatial proximity, we repeated the analysis with distance-residualized values (Mi\u0161i\u0107 et al., 2014), finding a significant difference (two-tailed t-test; $t\u2062(79,798)=47.112$, $p\u22480$). We also repeated the analysis using a nonparametric label-permutation null model with preserved spatial autocorrelation (10,000 repetitions) (Alexander-Bloch et al., 2018; Markello and Misic, 2020), again finding significantly greater within- compared to between-network temporal profile similarity (two-tailed; $p_{spin}=0.006$; Figure 2d). These results are consistent when applying the 17 network partition of intrinsic networks (Yeo et al., 2011; Schaefer et al., 2018; Figure 2\u2014figure supplement 1).\n\nMore generally, we find a weak positive correlation between temporal profile similarity and functional connectivity (original: Spearman rank $r_{s}=0.23$, $p\u22480$; distance-corrected: $r_{s}=0.18$, $p\u22480$; Figure 2e), suggesting that areas with similar time-series features exhibit coherent spontaneous fluctuations, but that the two are only weakly correlated. Figure 2e shows the correlation between temporal profile similarity and functional connectivity; points represent node pairs and are colored by their membership in intrinsic networks (Yeo et al., 2011; Schaefer et al., 2018). The results are consistent when functional connectivity is estimated using partial correlations (Figure 2\u2014figure supplement 2). In other words, two regions could display similar time-series features, but they do not necessarily fluctuate coherently. Thus, representing time-series using sets of features provides a fundamentally different perspective compared to representing them as the raw set of ordered BOLD measurements.\n\nAs a final step, we sought to assess the distinct contributions of Euclidean\u00a0distance, structural connectivity and functional connectivity to temporal profile similarity. Dominance analysis revealed the relative importance of each predictor (collective $R^{2}$ = 0.28; distance\u00a0=\u00a056%, structural connectivity\u00a0=\u00a020.4%, functional connectivity\u00a0=\u00a023.6%; Supplementary file 1), suggesting that distance contributes the most to temporal profile similarity, while structural and functional connectivity make distinct but approximately even contributions (Budescu, 1993; Azen and Budescu, 2003) (https://github.com/dominance-analysis/dominance-analysis). Altogether, we find that the organization of intrinsic dynamics is closely related to both the geometric and topological embedding of brain regions in macroscale networks.\n\n### Two distinct spatial gradients of intrinsic dynamics\n\nWe next investigate the topographic organization of time-series features. The hctsa library generates 6\u2009441 time-series features, with the aim of being comprehensive in coverage across scientific time-series analysis algorithms and, as a result, contains groups of features with correlated outputs (Fulcher et al., 2013). We therefore sought to identify groups of correlated features that explain maximal variance and that span different conceptual types of time-series properties. Applying principal component analysis (PCA; Scikit-learn [Pedregosa et al., 2011]) to the region \u00d7 feature matrix yielded mutually orthogonal patterns of intrinsic dynamics (Figure 1), with the top two components collectively accounting for more than 70% of the variance in time-series features (Figure 3a). Figure 3a shows the spatial distribution of the top two components. The first component (PC1) mainly captures differential intrinsic dynamics along a ventromedial-dorsolateral gradient, separating occipital-parietal cortex and anterior temporal cortex. The second component (PC2) captures a unimodal-transmodal gradient, reminiscent of recently reported miscrostructural and functional gradients (Huntenburg et al., 2018). Both components show considerable hemispheric symmetry. In the following sections, we focus on these two components because of their (a) effect size (percent variance accounted for), (b) close resemblance to previously reported topographic gradients, and (c) reproducibility (only the first two components were reproducible in both the HCP and MSC datasets; see Sensitivity and replication analyses below). Note that neither spatial maps were significantly correlated with temporal signal-to-noise ratio map, computed as the ratio of the time-series mean to standard deviation (tSNR; PC1: $r_{s}=0.28$, $p_{spin}=0.19$; PC2: $r_{s}=0.21$, $p_{spin}=0.16$).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig3-v2.jpg)\n\n**Figure 3.:** (a) PCA analysis identified linear combinations of hctsa time-series features with maximum variance across the cortex. Collectively, the first two components (PC1 and PC2) account for 75% of the total variance in time-series features of BOLD dynamics. To estimate the extent to which cortical regions display the patterns of intrinsic dynamics captured by each component, hctsa matrices were projected back onto the PC weights (eigenvectors), yielding spatial maps of brain scores for each component. Spatial maps are depicted based on the standard deviation $\\sigma$ of their respective brain score distributions. (b) To understand the feature composition of the intrinsic dynamic patterns captured by PC1 and PC2, feature loadings were computed by correlating individual hctsa feature vectors with the PC score maps. PC loadings thus estimate the shared spatial variance between an individual time-series feature and the composite intrinsic dynamic map captured by a PC. time-series features are ordered by their individual loadings. Grey indicates non-significance based on 10,000 spatial permutation tests (FDR correction, $\\alpha=0.001$). Features corresponding to the top and bottom 5% of PC1 and PC2 are visualized using word clouds. The complete list of features (ranked by loading), their definitions, correlations and p-values for both components is presented in machine-readable format in Supplementary files 3 and 4. Feature nomenclature in hctsa is organized such that the term prefix indicates the broad class of measures (e.g. AC\u00a0=\u00a0autocorrelation, DN\u00a0=\u00a0distribution) and the term suffix indicates the specific measure (for a complete list, see https://hctsa-users.gitbook.io/hctsa-manual/list-of-included-code-files). (c) The spatial distributions of two high-loading representative time-series features are depicted for each component, including lag-1 linear autocorrelation (AC_1) and lag-[0,2,3] nonlinear autocorrelation (AC_nl_023, estimated as average $<xt2\u2062x_{t-2}\u2062x_{t-3}>$ across time-series x) for PC1; and kurtosis (DN_Moments_4) and entropy (EN_DistributionEntropy_ks__02) of the time-series points distribution for PC2. To build intuition about what each component reflects about regional signals, three regional time-series from one participant are selected based on their lag-1 autocorrelation and kurtosis (circles on the brain surface: pink = 5th percentile, green = 50th percentile, purple = 95th percentile). Going from low-ranked to high-ranked regions results in a slowing down of BOLD fluctuations for the former and increasingly heavier symmetric tails of the signal amplitude distributions for the latter. Note that normalized feature values are shown in the first row, whereas the raw feature values are shown in the second row.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Linear autocorrelation function is depicted on the brain surface at varying time lags. The autocorrelation values are normalized between 0 and 1 using an outlier-robust sigmoidal transform and spatial maps are depicted based on the standard deviation \u03c3 of their respective distributions. Short-lag autocorrelation measures load positively on PC1, while long-lag autocorrelation measures load negatively, consistent with the notion that autocorrelation decays with increasing time lag (Figure 3).\n\nWhich time-series features contribute most to these topographic gradients of intrinsic dynamics? To address this question, we systematically assess the feature composition of PC1 and PC2. We compute univariate correlations (i.e. loadings) between individual time-series feature vectors and PC scores (Figure 3b). Each loading is assessed against 10\u2009000 spin tests and the results are corrected for multiple comparisons by controlling the false discovery rate (FDR [Benjamini and Hochberg, 1995]; $\\alpha=0.001$). The top 5% positively and negatively correlated features are shown in word clouds. The complete list of features (ranked by loading), their definitions, loadings and p-values for both components is presented in machine-readable format in Supplementary files 3 and 4. Altogether, we find that PC1 is sensitive to temporal dependencies in BOLD signals, while PC2 is sensitive to the distribution shape of time-series amplitudes. For PC1, in line with previous reports, we observe strong contributions from multiple measures of autocorrelation (e.g. linear autocorrelation; nonlinear autocorrelation; automutual information). Short-lag autocorrelation measures load positively, while long-lag autocorrelation measures load negatively, consistent with the notion that autocorrelation decays with increasing time lag (Murray et al., 2014; Gao et al., 2020; Raut et al., 2020; Figure 3\u2014figure supplement 1). For PC2, we observe strong contributions from measures of distribution shape, captured by measures of distributional entropy (e.g. entropy of kernel-smoothed distribution; kurtosis; distribution balance about the mean). In other words, PC2 captures the spread of time-series amplitudes away from the mean. Interestingly, none of the odd moments (distribution asymmetry) are high in the PC2 loading list, just even moments, suggesting that PC2 captures the shape of the deviations of time-series data points in both directions from the mean. Thus, PC2 indexes the range or diversity of values that a regional time-series can realize. Hereafter, we refer to the time-series profile of PC1 as \u2018autocorrelation\u2019 and PC2 as \u2018dynamic range\u2019.\n\nTo illustrate the spatial organization and time-series attributes of these components, Figure 3c shows the spatial distributions of two high-loading representative time-series features for each component. Ventromedial areas (lower in the PC1 gradient) have lower linear and nonlinear autocorrelation, while doroslateral areas (higher in the PC1 gradient) have greater autocorrelation. Sensory areas (lower in the PC2 gradient) have greater distributional entropy and kurtosis, while transmodal areas (higher in the PC2 gradient) have lower distributional entropy and kurtosis. Finally, to build intuition about what each component reflects about regional signals, we select three regional time-series from one participant based on their lag-1 autocorrelation and kurtosis (Figure 3c; pink = 5th percentile, green = 50th percentile, purple = 95th percentile). For the former, going from low-ranked to high-ranked regions results in a slowing down of BOLD fluctuations. For the latter, going from low-ranked to high-ranked regions results in increasingly heavier symmetric tails of the signal amplitude distributions.\n\n### Intrinsic dynamics reflect microscale and macroscale hierarchies\n\nTo assess whether the dominant variation in time-series features of BOLD dynamics varies spatially with structural and functional gradients, we next quantify the concordance between PC1/PC2 and multiple microstructural and functional attributes (Figure 4). Specifically, we compare PC1 and PC2 with the following microscale and macroscale features: (1) the first component of microarray gene expression computed from the Allen Institute Human Brain Atlas (Hawrylycz et al., 2012; Burt et al., 2018) using PCA analysis, (2) the principal gradient of functional connectivity estimated using diffusion map embedding (Margulies et al., 2016; Coifman et al., 2005; Langs et al., 2015) (https://github.com/satra/mapalign), (3) T1w/T2w ratio, a putative proxy for intracortical myelin (Huntenburg et al., 2017), (4) cortical thickness (Wagstyl et al., 2015). We use Spearman rank correlations ($r_{s}$) throughout, as they do not assume a linear relationship among variables. Given the spatially autocorrelated nature of both hctsa features and other imaging features, we assess statistical significance with respect to nonparametric spatial autocorrelation-preserving null models (Alexander-Bloch et al., 2018; Markello and Misic, 2020).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig4-v2.jpg)\n\n**Figure 4.:** PC1 and PC2 brain score patterns are compared with four molecular, microstructural and functional maps. These maps include the first principal component of microarray gene expression data from the Allen Human Brain Atlas (Hawrylycz et al., 2012; Burt et al., 2018), the first (principal) gradient of functional connectivity estimated using diffusion map embedding (Margulies et al., 2016; Coifman et al., 2005; Langs et al., 2015), group-average T1w/T2w ratio, and group-average cortical thickness. The three latter indices were computed from the HCP dataset (Van Essen et al., 2013). Statistical significance of the reported Spearman rank correlation $r_{s}$ is assessed using 10,000 spatial permutations tests, preserving the spatial autocorrelation in the data (\u2018spin tests\u2019; Alexander-Bloch et al., 2018). Linear regression lines are added to the scatter plots for visualization purposes only.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Mean PC1 and PC2 scores were computed for the constituent classes in three commonly used anatomical and functional partitions of the brain: (a) intrinsic fMRI networks (Yeo et al., 2011; Schaefer et al., 2018), (b) cytoarchitectonic classes (von Economo and Koskinas, 1925; von Economo et al., 2008; V\u00e9rtes et al., 2016), laminar differentiation levels (Mesulam, 2000). Intrinsic networks: VIS\u00a0=\u00a0visual, SM\u00a0=\u00a0somatomotor, DA\u00a0=\u00a0dorsal attention, VA\u00a0=\u00a0ventral attention, LIM\u00a0=\u00a0limbic, FP\u00a0=\u00a0fronto parietal, DMN\u00a0=\u00a0default mode. Cytoarchitectonic classes: PM\u00a0=\u00a0primary motor cortex, AC1\u00a0=\u00a0association cortex, AC2\u00a0=\u00a0association cortex, PSS\u00a0=\u00a0primary/secondary sensory, PS\u00a0=\u00a0primary sensory cortex, LB\u00a0=\u00a0limbic regions, IC\u00a0=\u00a0insular cortex.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The evolutionary expansion map (Hill et al., 2010; Baum et al., 2020) was obtained through https://github.com/PennLINC/Brain_Organization and parcellated into 400 cortical areas using the Schaefer parcellation (Schaefer et al., 2018). Regional weighted participation coefficients (Brain Connectivity Toolbox [Rubinov and Sporns, 2010]) were estimated from functional connectivity graphs with respect to the 7-network partition of intrinsic networks (Yeo et al., 2011; Schaefer et al., 2018). We then compared the maps to the PC1 and PC2 brain score patterns. The evolutionary expansion map was significantly correlated with PC2 topography, but not PC1 topography. The regional participation coefficient map was not significantly correlated with either PC1 or PC2 topography. Statistical significance of the reported Spearman rank correlation $r_{s}$ is assessed using 10,000 spatial permutations tests, preserving the spatial autocorrelation in the data (\u2018spin tests\u2019; Alexander-Bloch et al., 2018). Linear regression lines are added to the scatter plots for visualization purposes only.\n\nPC1 topography is correlated with the first principal component of gene expression ($r_{s}=0.57$, $p_{spin}=0.03$), but no other attributes. PC2 topography is significantly correlated with the first principal component of gene expression ($r_{s}=-0.45$, $p_{spin}=0.0008$), with the principal gradient of functional connectivity ($r_{s}=0.77$, $p_{spin}=0.0001$), with T1w/T2w ratio ($r_{s}=-0.57$, $p_{spin}=0.0001$), and with cortical thickness ($r_{s}=0.43$, $p_{spin}=0.008$). Altogether, the two topographic gradients of intrinsic dynamics closely mirror molecular and microstructural gradients, suggesting a link between regional structural properties and regional dynamical properties. Figure 4\u2014figure supplement 1 further confirms this intuition, showing the mean score of each component for three well-known cortical partitions, including intrinsic functional networks (Yeo et al., 2011; Schaefer et al., 2018), cytoarchitectonic classes (von Economo and Koskinas, 1925; von Economo et al., 2008; V\u00e9rtes et al., 2016) and laminar differentiation levels (Mesulam, 2000).\n\nFor completeness, we also tested associations with two maps that were previously related to cortical hierarchies: evolutionary expansion (indexing enlargement of cortical areas in the human relative to the macaque) (Hill et al., 2010; Baum et al., 2020) and node-wise functional participation coefficient (indexing the diversity of a node\u2019s links) (Bertolero et al., 2017; Baum et al., 2020). PC2 is significantly correlated with evolutionary expansion ($r_{s}=0.52$, $p_{spin}=0.0002$), but neither component is correlated with participation coefficient (Figure 4\u2014figure supplement 2).\n\n### Spatial gradients of intrinsic dynamics support distinct functional activations\n\nGiven that topographic patterns of intrinsic dynamics run parallel to microstructural and functional gradients, and are marked by specific time-series features, we next asked whether these topographic patterns of intrinsic dynamics are related to patterns of functional activation and psychological processes. To address this question, we used Neurosynth to derive probability maps for multiple psychological terms (Yarkoni et al., 2011). The term set was restricted to those in the intersection of terms reported in Neurosynth and in the Cognitive Atlas (Poldrack et al., 2011), yielding a total of 123 terms (Supplementary file 2). Each term map was correlated with the PC1 and PC2 score maps to identify topographic distributions of psychological terms that most closely correspond to patterns of intrinsic dynamics (Bonferroni corrected, $\\alpha=0.05$; Figure 5). Consistent with the intuition developed from comparisons with intrinsic networks, PC1 intrinsic dynamics mainly defined a cognitive-affective axis (e.g. \u2018attention\u2019 versus \u2018stress\u2019, \u2018fear\u2019, \u2018loss\u2019, \u2018emotion\u2019; Figure 5a), while PC2 dynamics defined a sensory-cognitive axis (e.g. \u2018perception\u2019, \u2018multisensory\u2019, \u2018facial expression\u2019 versus \u2018cognitive control\u2019, \u2018memory retrieval\u2019, \u2018reasoning\u2019; Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig5-v2.jpg)\n\n**Figure 5.:** We used Neurosynth to derive probability maps for multiple psychological terms (Yarkoni et al., 2011). The term set was restricted to those in the intersection of terms reported in Neurosynth and in the Cognitive Atlas (Poldrack et al., 2011), yielding a total of 123 terms (Supplementary file 2). Each term map was correlated with the PC1 (a) and PC2 (b) score maps to identify topographic distributions of psychological terms that most closely correspond to patterns of intrinsic dynamics. Grey indicates non-significance based on 10,000 spatial permutation tests (Bonferroni correction, $\\alpha=0.05$). Statistically significant terms are shown on the right.\n\n### Sensitivity and replication analyses\n\nAs a final step, we sought to assess the extent to which the present findings are replicable under alternative processing choices and in other samples (Figure 6). For all comparisons, we correlated PC1 and PC2 scores and weights obtained in the original analysis and in each new analysis. Significance was assessed using spatial autocorrelation preserving nulls as before. We first replicated the results in individual subjects in the Discovery sample by applying PCA to individual region \u00d7 feature matrices and aligning PCA results through an iterative process using Procrustes rotations (https://github.com/satra/mapalign [Langs et al., 2015]). The mean individual-level PC scores and weights were then compared to the original findings (Figure 6a). We next replicated the results by repeating the analysis after grey-matter signal regression (similar to global signal regression as the global signal is shown to be a grey-matter specific signal following sICA+FIX) (Glasser et al., 2018; Glasser et al., 2016), with near identical results (Figure 6b). To assess the extent to which results are influenced by choice of parcellation, we repeated the analysis using the 68-region Desikan-Killiany anatomical atlas (Desikan et al., 2006), which were then further divided into 200 approximately equally-sized cortical areas. Again, we find near-identical results (Figure 6c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62116/elife-62116-fig6-v2.jpg)\n\n**Figure 6.:** For all comparisons, we correlated PC1 and PC2 scores and weights obtained in the original analysis and in each new analysis. Significance was assessed using spatial autocorrelation preserving nulls. Specific analyses include: (a) comparing group-level and individual subject-level results, (b) comparing data with and without grey-matter signal regression, (c) comparing functional (Schaefer) and anatomical parcellations (Desikan-Killiany), (d) comparing HCP Discovery and Validation datasets, (e) comparing HCP Discovery and Midnight Scan Club datasets.\n\nIn the last two analyses, we focused on out-of-sample validation. We first repeated the analysis on the held-out Validation sample of $n=127$ unrelated HCP subjects, with similar results (Figure 6d). Finally, we repeated the analysis using data from the independently collected Midnight Scan Club (MSC) dataset, again finding highly consistent results (Figure 6e).\n\n## Discussion\n\nIn the present report, we comprehensively characterize intrinsic dynamics across the cortex, identifying two robust spatial patterns of time-series features. The patterns, capturing spatial variation in signal autocorrelation and dynamic range, follow microscale gradients and macroscale network architecture. Importantly, the two patterns underlie distinct psychological axes, demonstrating a link between brain architecture, intrinsic dynamics, and cognition. These findings are robust against a wide range of methodological choices and were validated in two held-out samples.\n\nOur results demonstrate that regional haemodynamic activity, often overlooked in favour of electrophysiological measurements with greater temporal resolution, possesses a rich dynamic signature (Garrett et al., 2013; Uddin, 2020; Preti et al., 2017; Lurie et al., 2020; Li et al., 2019; Bolt et al., 2018). While multiple reports have suggested the existence of a timescale or temporal receptive window hierarchy (Kiebel et al., 2008; Murray et al., 2014; Honey et al., 2012; Hasson et al., 2008; Watanabe et al., 2019; Golesorkhi et al., 2020; Ito et al., 2020), these investigations typically involved (a) incomplete spatial coverage, making it difficult to quantitatively assess correspondence with other microscale and macroscale maps, and (b) a priori measures of interest, such as spectral power or temporal autocorrelation, potentially obscuring other important dynamical features. Here we comprehensively benchmark the entire dynamic profile of the brain, by near-exhaustively estimating 6000+ features from the wider time-series literature. We identify a much broader spectrum of time-series features that relate to microstructure, connectivity and behavior. As we discuss below, feature-based time-series phenotyping offers a powerful, fundamentally new and entirely data-driven method to quantify and articulate neural dynamics.\n\nApplying a data-driven feature extraction method to high-resolution BOLD fMRI, we decompose regional signals into two intrinsic modes, with distinct topographic organization and time-series features. One pattern, characterized by variation in signal autocorrelation, follows a ventromedial-dorsolateral gradient, separating the limbic and paralimibic systems from posterior parietal cortex. Another pattern, characterized by dynamic range, follows a unimodal-transmodal gradient, separating primary sensory-motor cortices from association cortex. The first is closely associated with gene expression PC1 (itself closely related to cell type composition, synaptic physiology and cortical cytoarchitecture [Burt et al., 2018]), suggesting a molecular and cellular basis for regional differences in temporal autocorrelation. The second is closely associated with the principal functional gradient, as well as with intracortical myelin and cortical thickness, suggesting that the dynamic range of BOLD signals is related to regional variation in macroscale circuit organization. Taken together, we find evidence that molecular and cellular properties (gene expression PC1) relate to regional autocorrelation, while micro-circuit properties (T1w/T2w, cortical thickness) and macroscale network embedding (principal functional gradient) relate to regional dynamic range.\n\nAn emerging literature emphasizes the hierarchical organization of neural systems, whereby systematic variation in laminar architecture across the cortical sheet is mirrored by multiple cytological properties, including neuron density, spine count, branching and neurotransmitter receptor profiles (Mesulam, 1998; Margulies et al., 2016; Hilgetag and Goulas, 2020). These variations manifest as spatially ordered gradients of structural and functional attributes (Huntenburg et al., 2018), including gene expression (Burt et al., 2018; Fulcher et al., 2019; Hansen et al., 2020), cortical thickness (Wagstyl et al., 2015), intracortical myelin (Huntenburg et al., 2017), laminar differentiation (Paquola et al., 2019; Wagstyl et al., 2020) and excitability (Demirta\u015f et al., 2019; Wang, 2020; Markicevic et al., 2020; Straub et al., 2020). Indeed, we find that the two patterns of intrinsic dynamics are closely related to gene expression, intracortical myelin and cortical thickness. Our results build on this literature, demonstrating that microscale and connectional hierarchies leave an indelible mark on intrinsic dynamics (Lurie and D\u2019Esposito, 2020), perhaps through variation in local excitability (Demirta\u015f et al., 2019; Wang et al., 2019; Wang, 2020; Deco et al., 2020). How these patterns are related to underlying cell types and subcortical afferent input \u2013 in particular, thalamocortical feedback \u2013 is an important ongoing question (Abeysuriya et al., 2015; Garrett et al., 2018; Shine et al., 2019; Wang et al., 2019; Muller et al., 2020; Paquola et al., 2020).\n\nImportantly, the two patterns are related to two dominant axes of meta-analytic functional activation. We show that topographic variations in microcircuitry and connectomic embedding yield variations in intrinsic dynamics and may explain regional differences in functional specialization. The ventromedial-dorsolateral autocorrelation pattern differentiates affective versus cognitive activation (mainly visual cognition and visuo-spatial attention), whereas the unimodal-transmodal dynamic range pattern differentiates primary sensory versus higher-order cognitive processing. Collectively, these results provide evidence that local computations reflect systematic variation in multiple anatomical circuit properties, and can be measured as unique temporal signatures in regional activity and patterns of functional specialization.\n\nMore generally, the present findings are part of a larger trend in the field to understand structure-function relationships by considering molecular (Richiardi et al., 2015; Fulcher and Fornito, 2016; Anderson et al., 2018; Zheng et al., 2019), cellular (Scholtens et al., 2014; Anderson et al., 2020; Shafiei et al., 2020; Muller et al., 2020) and physiological (Sethi et al., 2017; Fallon et al., 2020) attributes of network nodes, thereby conceptually linking local and global brain organization (Khambhati et al., 2018; Su\u00e1rez et al., 2020). In such \u2018annotated networks\u2019, macroscale network architecture is thought to reflect similarity in local properties, and vice versa, such that areas with similar properties are more likely to be anatomically connected and to functionally interact with one another (Beul et al., 2017; Goulas et al., 2019; Wei et al., 2019; Hilgetag et al., 2019). Indeed, we find that two regions are more likely to display similar intrinsic dynamics if they are anatomically connected and if they are part of the same functional community, suggesting that network organization and local intrinsic dynamics are intertwined (Gollo et al., 2015; Cocchi et al., 2016). A significant corollary of the present work is that functional connectivity \u2013 presently conceptualized as coherent fluctuations in neural activity and operationalized as correlated BOLD values over time \u2013 misses out on an important set of inter-regional relationships. Namely, two regions may display identical time-series profiles, suggesting common circuit dynamics and function, but unless they also display time-locked activity, current methods would miss out on this potentially biologically meaningful inter-regional relationship.\n\nThe present results are consistent with contemporary theories linking brain structure and function, but they must be interpreted with respect to several methodological caveats. First, all analyses were performed on BOLD time-series with lower sampling rate compared to electromagnetic recordings, potentially obscuring more subtle dynamics occurring on faster timescales. To mitigate this concern, all analyses were performed in high-resolution multiband HCP data with multiple runs, and replicated in MSC data, but in principle, these analyses could be repeated and validated in magnetoencephalographic recordings (Watanabe et al., 2019). Second, all analyses were performed on haemodynamic time courses that may not completely reflect the underlying neuronal population dynamics. Despite this caveat, we observe a close correspondence between the isolated patterns of intrinsic dynamics and molecular, structural, functional, and psychological gradients. Third, the pattern of temporal signal-to-noise ratio in the BOLD is known to be non-uniform, but it is not correlated with the intrinsic dynamics patterns observed in the present report. Fourth, the analysis included all features from hctsa, potentially biasing results towards specific properties of BOLD signals. We attempted to mitigate this challenge by applying PCA to directly examine correlation patterns among features, but PCA components may still lend greater weight to over-represented feature classes (Fulcher et al., 2013). This may obscure the contribution of under-represented feature classes, and should be investigated further in future work.\n\nAltogether, the present results point towards highly patterned intrinsic dynamics across the neocortex. These patterns reflect prominent molecular and microstructural gradients, as well as macroscale structural and functional organization. Importantly, spatial variation of intrinsic dynamics parallels spatial variation of meta-analytic cognitive functional activation. These findings demonstrate that structural organization of the brain shapes patterns of intrinsic dynamics, ultimately manifesting as distinct axes of psychological processes.\n\n## Materials and methods\n\n### Dataset: human connectome project (HCP)\n\nFollowing the procedure described in Vos de Wael et al., 2018, we obtained structural and functional magnetic resonance imaging (MRI) data of two sets of healthy young adults (age range 22\u201335 years) with no familial relationships (neither within nor between sets) as Discovery ($n=201$) and Validation ($n=127$) sets from Human Connectome Project (HCP; S900 release [Van Essen et al., 2013]). All four resting state fMRI scans (two scans (R/L and L/R phase encoding directions) on day 1 and two scans (R/L and L/R phase encoding directions) on day 2, each about 15 min long; $T\u2062R=720$ ms), as well as structural MRI and diffusion weighted imaging (DWI) data were available for all participants.\n\n### HCP data processing\n\nAll the structural and functional MRI data were pre-processed using HCP minimal pre-processing pipelines (Van Essen et al., 2013; Glasser et al., 2013). We provide a brief description of data pre-processing below, while detailed information regarding data acquisition and pre-processing is available elsewhere (Van Essen et al., 2013; Glasser et al., 2013). The procedure was separately repeated for Discovery and Validation sets.\n\n#### Structural MRI\n\nT1- and T2- weighted MR images were corrected for gradient nonlinearity, and when available, the images were co-registered and averaged across repeated scans for each individual. The corrected T1w and T2w images were co-registered and cortical surfaces were extracted using FreeSurfer 5.3.0-HCP (Vos de Wael et al., 2018; Dale et al., 1999; Fischl et al., 1999). For each individual, cortical thickness was estimated as the difference between pial and white matter surfaces and T1w/T2w ratio was calculated as a putative proxy for intracortical myelin content. The pre-processed data were parcellated into 400 cortical areas using Schaefer parcellation (Schaefer et al., 2018).\n\n#### Resting state functional MRI\n\nAll 3T functional MRI time-series were corrected for gradient nonlinearity, head motion using a rigid body transformation, and geometric distortions using scan pairs with opposite phase encoding directions (R/L, L/R) (Vos de Wael et al., 2018). Further pre-processing steps include co-registration of the corrected images to the T1w structural MR images, brain extraction, normalization of whole brain intensity, high-pass filtering (>2000s FWHM; to correct for scanner drifts), and removing additional noise using the ICA-FIX process (Vos de Wael et al., 2018; Salimi-Khorshidi et al., 2014). The pre-processed time-series were then parcellated into 400 areas as described above. The parcellated time-series were used to construct functional connectivity matrices as a Pearson correlation coefficient between pairs of regional time-series for each of the four scans of each participant. A group-average functional connectivity matrix was constructed as the mean functional connectivity across all individuals and scans.\n\n#### Diffusion weighted imaging (DWI)\n\nDWI data was pre-processed using the MRtrix3 package (Tournier et al., 2019) (https://www.mrtrix.org/). More specifically, fiber orientation distributions were generated using the multi-shell multi-tissue constrained spherical deconvolution algorithm from MRtrix (Dhollander et al., 2016; Jeurissen et al., 2014). White matter edges were then reconstructed using probabilistic streamline tractography based on the generated fiber orientation distributions (Tournier et al., 2010). The tract weights were then optimized by estimating an appropriate cross-section multiplier for each streamline following the procedure proposed by Smith and colleagues (Smith et al., 2015) and a connectivity matrix was built for each participant using the same parcellation as described above. Finally, we used a consensus approach to construct a binary group-level structural connectivity matrix, preserving the edge length distribution in individual participants (Mi\u0161i\u0107 et al., 2015; Betzel et al., 2019; Shafiei et al., 2020; Mi\u0161ic et al., 2018).\n\n### Replication dataset: Midnight Scan Club (MSC)\n\nWe used resting state fMRI data of $n=10$ healthy young adults, each with 10 scan sessions of about 30 min long, from Midnight Scan Club (MSC Gordon et al., 2017) dataset as an independent replication dataset. Details about the participants, MRI acquisition, and data pre-processing are provided by Gordon and colleagues elsewhere (Gordon et al., 2017). We obtained the surface-based, pre-processed resting state fMRI time courses in CIFTI format through OpenNeuro (https://openneuro.org/datasets/ds000224/versions/1.0.0). The pre-processing steps include motion correction and global signal regression (Gordon et al., 2017). Following the pre-processing methods suggested by Gordon et al., 2017, we smoothed the surface-level time-series data with geodesic 2D Gaussian kernels ($\\sigma=2.55$ mm) using the Connectome Workbench (Marcus et al., 2011). Finally, we censored the motion-contaminated frames of time-series for each participant separately, using the temporal masks provided with the dataset. The pre-processed data were parcellated into 400 cortical regions using Schaefer parcellation (Schaefer et al., 2018). One participant (MSC08) was excluded from subsequent analysis due to low data reliability and self-reported sleep as described in Gordon et al., 2017. The parcellated time-series were then subjected to the same analyses that were performed on the HCP Discovery and Validation datasets.\n\n### Microarray expression data: Allen Human Brain Atlas (AHBA)\n\nRegional microarray expression data were obtained from six post-mortem brains provided by the Allen Human Brain Atlas (AHBA; http://human.brain-map.org/) (Hawrylycz et al., 2012). We used the abagen (https://github.com/netneurolab/abagen; Markello et al., 2020) toolbox to process and map the data to 400 parcellated brain regions from Schaefer parcellation (Schaefer et al., 2018).\n\nBriefly, genetic probes were reannotated using information provided by Arnatkeviciute et al., 2019 instead of the default probe information from the AHBA dataset. Using reannotated information discards probes that cannot be reliably matched to genes. The reannotated probes were filtered based on their intensity relative to background noise levels (Quackenbush, 2002); probes with intensity less than background in $\\geq50%$ of samples were discarded. A single probe with the highest differential stability, $\u0394_{S}\u2062(p)$, was selected to represent each gene (Hawrylycz et al., 2015), where differential stability was calculated as:\n\n$$\n\u0394_{S}(p)=\\frac{1}{(N2)}\\sumi=1N\u22121\\sumj=i+1N\u03c1[B_{i}(p),B_{j}(p)]\n$$\n\nHere, $\u03c1$ is Spearman\u2019s rank correlation of the expression of a single probe p across regions in two donor brains, $B_{i}$ and $B_{j}$, and N is the total number of donor brains. This procedure retained 15,656 probes, each representing a unique gene.\n\nNext, tissue samples were mirrored across left and right hemispheres (Romero-Garcia et al., 2018) and then assigned to brain regions using their corrected MNI coordinates (https://github.com/chrisfilo/alleninf) by finding the nearest region, up to 2 mm away. To reduce the potential for misassignment, sample-to-region matching was constrained by hemisphere and cortical/subcortical divisions (Arnatkeviciute et al., 2019). If a brain region was not assigned any sample based on the above procedure, the sample closest to the centroid of that region was selected in order to ensure that all brain regions were assigned a value. Samples assigned to the same brain region were averaged separately for each donor. Gene expression values were then normalized separately for each donor across regions using a robust sigmoid function and rescaled to the unit interval (Fulcher and Fornito, 2016). Scaled expression profiles were finally averaged across donors, resulting in a single matrix with rows corresponding to brain regions and columns corresponding to the retained 15,656 genes. The expression values of 1906 brain-specific genes were used for further analysis (Burt et al., 2018).\n\n### Massive temporal feature extraction using hctsa\n\nWe used the highly comparative time-series analysis toolbox, hctsa (Fulcher et al., 2013; Fulcher and Jones, 2017), to perform a massive feature extraction of the time-series of each brain area for each participant. The hctsa package extracted over 7000 local time-series features using a wide range of operations based on time-series analysis (Fulcher et al., 2013; Fulcher and Jones, 2017). The extracted features include, but are not limited to, distributional properties, entropy and variability, autocorrelation, time-delay embeddings, and nonlinear properties of a given time-series (Fulcher et al., 2013; Fulcher, 2018).\n\nThe hctsa feature extraction analysis was performed on the parcellated fMRI time-series of each run and each participant separately (Figure 1). Following the feature extraction procedure, the outputs of the operations that produced errors were removed and the remaining features (6441 features) were normalized across nodes using an outlier-robust sigmoidal transform. We used Pearson correlation coefficients to measure the pairwise similarity between the time-series features of all possible combinations of brain areas. As a result, a temporal profile similarity network was constructed for each individual and each run, representing the strength of the similarity of the local temporal fingerprints of brain areas (Figure 1). The resulting similarity matrices were then compared to the underlying functional and structural brain networks.\n\n### Neurosynth\n\nFunctional activation probability maps were obtained for multiple psychological terms using Neurosynth (Yarkoni et al., 2011) (https://github.com/neurosynth/neurosynth). Probability maps were restricted to those for terms present in both Neurosynth and the Cognitive Atlas (Poldrack et al., 2011), yielding a total of 123 maps (Supplementary file 2). We used the volumetric \u2018association test\u2019 (i.e. reverse inference) maps, which were projected to the FreeSurfer fsaverage5 mid-grey surface with nearest neighbor interpolation using Freesurfer\u2019s mri_vol2surf function (v6.0.0; http://surfer.nmr.mgh.harvard.edu/). The resulting surface maps were then parcellated to 400 cortical regions using the Schaefer parcellation (Schaefer et al., 2018).\n\n### Null model\n\nA consistent question in the present work is the topographic correlation between time-series features and other features of interest. To make inferences about these links, we implement a null model that systematically disrupts the relationship between two topographic maps but preserves their spatial autocorrelation (Alexander-Bloch et al., 2018; Markello and Misic, 2020) (see also Burt et al., 2018; Burt et al., 2020 for an alternative approach). We first created a surface-based representation of the Cammoun atlas on the FreeSurfer fsaverage surface using the Connectome Mapper toolkit (https://github.com/LTS5/cmp; Daducci et al., 2012). We used the spherical projection of the fsaverage surface to define spatial coordinates for each parcel by selecting the vertex closest to the center-of-mass of each parcel (V\u00e1zquez-Rodr\u00edguez et al., 2019; Shafiei et al., 2020; V\u00e9zquez-Rodr\u00edguez et al., 2020). The resulting spatial coordinates were used to generate null models by applying randomly-sampled rotations and reassigning node values based on the closest resulting parcel (10,000 repetitions). The rotation was applied to one hemisphere and then mirrored to the other hemisphere.\n",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "5eb2d4fa-2d32-48da-b1fd-12372b235760",
+      "submission_id": "888ef08b-7a84-4efb-868f-240c1cddad81",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lucina Q Uddin, University of Miami United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62116.sa1](https://doi.org/10.7554/eLife.62116.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe believe that your work contributes novel insights into functional brain organization.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Topographic gradients of intrinsic dynamics across neocortex\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Lucina Q Uddin as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Chris Baker as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Maxwell Bertolero (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript describes a study that examines topographic gradients of intrinsic dynamics in the human brain. The authors identify two gradients with distinct temporal compositions and gene expression, myelin, cortical thickness, network embedding, and functional activation properties. The reviewers agreed that the reproducibility analyses (replication on independent datasets, use of two different parcellation schemes), and comparisons of data with and without (grey-matter signal regression) are particularly compelling. The similarities in temporal features between distinct brain regions revealed a ventromedial-dorsolateral (PC1) and a unimodal-transmodal (PC2) topographic gradients. Interestingly, analyses suggest a weak correlation between \"temporal profile similarities\" and functional connectivity. Broadly, these initial set of results suggest that the organization of spontaneous BOLD signal fluctuations link to both the geometrical and topological embedding of regions in macroscopic networks. The second set of analyses suggest that various measures of signal autocorrelations link to PC1 while measures of distribution shape (dynamic range) link to PC2. Moreover, the detected gradients are correlated with the spatial distribution of gene expression, cortical thickness, T1w/T2w, and functional hierarchy in an opposite fashion. The third set of analyses focus on linking topographic patterns in spontaneous fMRI signals with probability maps of task-based fMRI signals. The output of this analysis reveals that PC1 recapitulates a cognitive-affective axis, whereas the PC2 link to a sensory-cognitive axis. Overall, the reviewers were all in agreement regarding the execution, significance and approach of the study.\n\nEssential revisions:\n\n1) The overall narrative and rationale for the approach is missing. Some additional comments and suggestions regarding conceptual framing are below:\n\na) The Introduction as it is written includes a great deal of jargon that should be unpacked. In particular, the terms \"contextual information\", \"network embedding\", \"spectral power\", and \"nonlinear dynamic models\" should be defined clearly as they are introduced.\n\nb) Cognitive ontologies come out of the blue in the Results, and are not mentioned at all in the Introduction. Similarly, the significance of gene expression and its relationship to network structure is not at all discussed in the Introduction. Again in the Discussion, the rationale, significance, and relevance of the gene expression findings are missing.\n\nc) The paper provides numerous \"confirmatory\" findings, but after reading the paper a few times, I am left wondering what new fundamental knowledge the study provides. We know that fluctuations in spontaneous fMRI signal are patterned across the cortex, and that such patterns link to genetics, microstructural gradients and macroscopic functional and structural patterns. Perhaps the most novel/unexpected result is that biologically meaningful time-series features are not associated with functional connectivity. However, this result is only superficially discussed. The authors should make an extra effort to highlight better how the paper confirms (still a vital endeavour) and extends existing knowledge.\n\nd) I am confused about the use of the term \"dynamic\". The adopted measures have little to do with dynamic measures of neural synchronization per se; they are more summary measure of these dynamics. The authors should be careful in their terminology and discuss the results for what they are (i.e., summary measures of spontaneous changes in fMRI signal).\n\n2) Points of clarification and queries regarding analyses are below:\n\na) It seems that temporal features (autocorrelation, variance, spectral power, etc) are all considered together in the hctsa analysis. How do the authors account for the fact that these features are not necessarily independent? In other words, does the analysis consider the inter-relationships between these individual features?\n\nb) Perhaps consider including a comparison evolutionary expansion or the participation coefficient (PC2 is likely anti-correlated with these).\n\nc) The statistics reporting needs work. Please report all degrees of freedom. Also, please either report the results in the figure that shows the data, or in the text. In many places, the statistics are divided up, and that makes it hard to read. Also, there seem to be many points where a t-test was done, but only a p-value, not a t-value, is reported. Just saying p is close to zero is not informative if I don't know the DoF and the t value. For each finding, report the test type, the test value, the p value (with DoF), and then reference the panel. Or just reference the panel and put those stats in it. Or both! Also, don't put a * if you are not going to explain what it means.\n\nd) Several temporal features do not seem orthogonal (e.g., power spectrum and autocorrelations). I may have missed this information but, were redundant features removed to obtain a balanced set of features describing the resting-state fMRI signal? If similar features were not removed, results might have been biased towards aspects of rest fMRI signals that are over-represented. The Results section suggests that this may be the case.\n\ne) Patterns of structural connectivity are known to be linked to spontaneous fluctuations in functional connectivity. I suggest extending these results by providing a quantification of the shared/distinct contributions of functional network topology and anatomical factors to temporal profile similarity.\n\nf) Could the authors consider using an estimate of functional connectivity that accounts for shared signal (e.g., partial correlation, multiple regression)? I think this would shed light on the relationships identified in the paper and how much can be related to likely false positives found in correlation FC.\n\ng) There is little discussion regarding why the variables (e.g., Figure 4) should (or should not) be related to each other (see also reviewer comment a). Given that many of these measures are inter-related, it is not entirely clear to me if they are meaningful. An example of this is the positive/negative relationships observed in Figure 4: Is this bound to happen because of the relationship between PC1 and PC2? Is this an interesting relationship, or just a statistical consequence of PCA?\n",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "87a2aebb-795d-458c-947b-a96ec4f79d3c",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C1",
+      "claim": "The intrinsic dynamics of neuronal populations are shaped by both microscale attributes and macroscale connectome architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsic dynamics of neuronal populations are shaped by both microscale attributes and macroscale connectome architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that frames the study's premise, supported by the subsequent findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "fb9551d1-707e-4bfd-9bd5-35567070a88e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C2",
+      "claim": "Over 6000 statistical properties of individual brain regions' time-series were systematically estimated across the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying massive temporal feature extraction to regional haemodynamic activity, we systematically estimate over 6000 statistical properties of individual brain regions' time-series across the neocortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology of extracting 6441 features using hctsa.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "fbfd35a5-1444-442d-be22-6422ca14f400",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C3",
+      "claim": "Two robust spatial gradients of intrinsic dynamics were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify two robust spatial gradients of intrinsic dynamics, one spanning a ventromedial-dorsolateral axis and dominated by measures of signal autocorrelation, and the other spanning a unimodal-transmodal axis and dominated by measures of dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents PCA results showing two principal components with distinct spatial patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "2906fd10-3b16-4fa8-90f4-6517fe67fc9f",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C4",
+      "claim": "One gradient spans a ventromedial-dorsolateral axis and is dominated by measures of signal autocorrelation.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify two robust spatial gradients of intrinsic dynamics, one spanning a ventromedial-dorsolateral axis and dominated by measures of signal autocorrelation, and the other spanning a unimodal-transmodal axis and dominated by measures of dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "PC1 analysis shows spatial distribution along ventromedial-dorsolateral axis with autocorrelation features loading highly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "bf995261-0df5-4e51-a409-dd85b82439ce",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C5",
+      "claim": "One gradient spans a unimodal-transmodal axis and is dominated by measures of dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify two robust spatial gradients of intrinsic dynamics, one spanning a ventromedial-dorsolateral axis and dominated by measures of signal autocorrelation, and the other spanning a unimodal-transmodal axis and dominated by measures of dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "PC2 analysis shows spatial distribution along unimodal-transmodal axis with dynamic range features loading highly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "785133e0-a3bb-4278-9b0f-7ea7a8ee9214",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C6",
+      "claim": "The intrinsic dynamics gradients reflect spatial patterns of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These gradients reflect spatial patterns of gene expression, intracortical myelin and cortical thickness, as well as structural and functional network embedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 shows significant correlations between PC1/PC2 and gene expression PC1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "723f499d-9c9c-4144-86e6-201742180b51",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C7",
+      "claim": "The intrinsic dynamics gradients reflect spatial patterns of intracortical myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "These gradients reflect spatial patterns of gene expression, intracortical myelin and cortical thickness, as well as structural and functional network embedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 shows significant correlation between PC2 and T1w/T2w ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "fcdc4dad-eb3d-4ebd-9931-10680f1fd3bd",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C8",
+      "claim": "The intrinsic dynamics gradients reflect spatial patterns of cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "These gradients reflect spatial patterns of gene expression, intracortical myelin and cortical thickness, as well as structural and functional network embedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 shows significant correlation between PC2 and cortical thickness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "152619d6-7831-4597-b373-3a2580518119",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C9",
+      "claim": "The intrinsic dynamics gradients reflect structural and functional network embedding.",
+      "claim_type": "EXPLICIT",
+      "source": "These gradients reflect spatial patterns of gene expression, intracortical myelin and cortical thickness, as well as structural and functional network embedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2 shows relationships between temporal profile similarity and structural/functional connectivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "51bfa889-6bd2-48f5-96ab-cbcc4fc02305",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C10",
+      "claim": "The gradients are correlated with patterns of meta-analytic functional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these gradients are correlated with patterns of meta-analytic functional activation, differentiating cognitive versus affective processing and sensory versus higher-order cognitive processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5 shows correlations between PC1/PC2 and Neurosynth activation maps for psychological terms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "c58b2b24-e279-4657-975e-2527bf751f14",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C11",
+      "claim": "The gradients differentiate cognitive versus affective processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these gradients are correlated with patterns of meta-analytic functional activation, differentiating cognitive versus affective processing and sensory versus higher-order cognitive processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5a shows PC1 correlates with cognitive terms (attention) versus affective terms (stress, fear, emotion).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "8c6bd1b7-f3d8-43e3-90ee-605fae23fa8d",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C12",
+      "claim": "The gradients differentiate sensory versus higher-order cognitive processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these gradients are correlated with patterns of meta-analytic functional activation, differentiating cognitive versus affective processing and sensory versus higher-order cognitive processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5b shows PC2 correlates with sensory terms (perception, multisensory) versus cognitive terms (cognitive control, memory retrieval).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "fcffb488-6f44-41c7-bb38-7df18a479678",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C13",
+      "claim": "The findings demonstrate a link between microscale and macroscale architecture, intrinsic dynamics, and cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these findings demonstrate a link between microscale and macroscale architecture, intrinsic dynamics, and cognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents multiple correlations between structural features, dynamics patterns, and cognitive activation maps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "421b5b53-cee4-4849-a544-efc735b6bf4e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C14",
+      "claim": "The brain is a complex network of anatomically connected and perpetually interacting neuronal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain is a complex network of anatomically connected and perpetually interacting neuronal populations (Sporns et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "091183a8-f60e-47fb-b2cf-e84f0c91e3c9",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C15",
+      "claim": "Inter-regional connectivity promotes signaling via electrical impulses, generating patterned electrophysiological and haemodynamic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Inter-regional connectivity promotes signaling via electrical impulses, generating patterned electrophysiological and haemodynamic activity (Avena-Koenigsberger et al., 2017; Su\u00e1rez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "77506bb1-0ede-4706-b20e-086d5ee6a99e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C16",
+      "claim": "Neuronal populations are organized into a hierarchy of increasingly polyfunctional neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal populations are organized into a hierarchy of increasingly polyfunctional neural circuits (Jones and Powell, 1970; Mesulam, 1998; Hilgetag and Goulas, 2020; Bazinet et al., 2020), manifesting as topographic gradients of molecular and cellular properties that smoothly vary between unimodal and transmodal cortices (Huntenburg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "a5e78f2f-9a76-4fa7-8c0c-fc8adb36d782",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C17",
+      "claim": "Hierarchical organization manifests as topographic gradients of molecular and cellular properties that smoothly vary between unimodal and transmodal cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal populations are organized into a hierarchy of increasingly polyfunctional neural circuits (Jones and Powell, 1970; Mesulam, 1998; Hilgetag and Goulas, 2020; Bazinet et al., 2020), manifesting as topographic gradients of molecular and cellular properties that smoothly vary between unimodal and transmodal cortices (Huntenburg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "a1e6c6bb-f207-4b7c-9b59-2e125ae41039",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C18",
+      "claim": "Recent studies have demonstrated cortical gradients of gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have demonstrated cortical gradients of gene transcription (Fulcher et al., 2019; Burt et al., 2018), intracortical myelin (Huntenburg et al., 2017), cortical thickness (Wagstyl et al., 2015) and laminar profiles (Paquola et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "0e43b46e-d71d-49d6-b34e-66f4f74b408e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C19",
+      "claim": "Recent studies have demonstrated cortical gradients of intracortical myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have demonstrated cortical gradients of gene transcription (Fulcher et al., 2019; Burt et al., 2018), intracortical myelin (Huntenburg et al., 2017), cortical thickness (Wagstyl et al., 2015) and laminar profiles (Paquola et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "dbc6dfb0-6bb1-4069-87b4-c167b76446bc",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C20",
+      "claim": "Recent studies have demonstrated cortical gradients of cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have demonstrated cortical gradients of gene transcription (Fulcher et al., 2019; Burt et al., 2018), intracortical myelin (Huntenburg et al., 2017), cortical thickness (Wagstyl et al., 2015) and laminar profiles (Paquola et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "be7bf866-d4fc-47f1-83cd-b6dfa735771f",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C21",
+      "claim": "Recent studies have demonstrated cortical gradients of laminar profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have demonstrated cortical gradients of gene transcription (Fulcher et al., 2019; Burt et al., 2018), intracortical myelin (Huntenburg et al., 2017), cortical thickness (Wagstyl et al., 2015) and laminar profiles (Paquola et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "e46d205b-b5aa-4723-9593-522f22130307",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C22",
+      "claim": "The topological and physical embedding of neural circuits in macroscale networks and microscale gradients influence their dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The topological and physical embedding of neural circuits in macroscale networks and microscale gradients influence their dynamics (Kiebel et al., 2008; Gollo et al., 2015; Wang, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "4b783477-94ba-4419-8965-bbdf2b16b68d",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C23",
+      "claim": "The confluence of local micro-architectural properties and global connectivity shapes both the generation of local rhythms and propensity to communicate with other populations.",
+      "claim_type": "EXPLICIT",
+      "source": "For a neuronal population, the confluence of local micro-architectural properties and global connectivity shapes both the generation of local rhythms, as well as its propensity to communicate with other populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement supported by the broader context of the introduction and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "781eec54-2095-49fe-8bfa-ccb7fb09ad2a",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C24",
+      "claim": "Cell type composition, morphology, and configuration in local circuits determine how signals are generated, transmitted and integrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, cell type composition, their morphology and their configuration in local circuits determine how signals are generated, transmitted and integrated (Payeur et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "6438c09b-967f-4ec9-bf8c-4b538763af51",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C25",
+      "claim": "Multiple studies have focused on how intrinsic timescales vary in relation to microscale and macroscale attributes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, multiple studies have focused on how intrinsic timescales vary in relation to microscale and macroscale attributes (Murray et al., 2014; Mahjoory et al., 2019; Shine et al., 2019; Gao et al., 2020; Ito et al., 2020; Raut et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "a3269b1e-6f9c-425a-bb68-8e5dd32740f2",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C26",
+      "claim": "The primary functional consequence of the hierarchy of timescales is thought to be a hierarchy of temporal receptive windows.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary functional consequence of this hierarchy of timescales is thought to be a hierarchy of temporal receptive windows: time windows in which a newly arriving stimulus will modify processing of previously presented (i.e. contextual) information (Hasson et al., 2008; Honey et al., 2012; Baldassano et al., 2017; Huntenburg et al., 2018; Chaudhuri et al., 2015; Chien and Honey, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "63ecd133-fe7c-4706-b3d3-fa6c1833c844",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C27",
+      "claim": "Areas at the bottom of the hierarchy preferentially respond to immediate changes in the sensory environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, areas at the bottom of the hierarchy preferentially respond to immediate changes in the sensory environment, while responses in areas at the top of the hierarchy are modulated by prior context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement follows from the temporal receptive window concept and is supported by the cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "f2428e51-6b2a-43d3-bac4-369d53837c3b",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C28",
+      "claim": "Responses in areas at the top of the hierarchy are modulated by prior context.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, areas at the bottom of the hierarchy preferentially respond to immediate changes in the sensory environment, while responses in areas at the top of the hierarchy are modulated by prior context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement follows from the temporal receptive window concept and is supported by the cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "671c91c2-8c2f-409b-bcdf-92dd678899d7",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C29",
+      "claim": "Previous work highlights a hierarchy of a small number of manually selected time-series features.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, previous work highlights a hierarchy of a small number of manually selected time-series features, but it is possible that different types of local computations manifest as different organizational gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about prior literature, supported by the preceding citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "ae34b2bb-b4c0-4f13-a280-ec5a7911dfa0",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C30",
+      "claim": "Different types of local computations may manifest as different organizational gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, previous work highlights a hierarchy of a small number of manually selected time-series features, but it is possible that different types of local computations manifest as different organizational gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that motivates the current study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "a3b492ea-d540-4a15-b671-7cea4861196f",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C31",
+      "claim": "Intrinsic or 'resting state' networks possess unique spectral fingerprints.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsic or 'resting state' networks possess unique spectral fingerprints (Keitel and Gross, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "c4cf69c9-81cf-495e-aea3-5bbf1d27abed",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C32",
+      "claim": "The signal variability of brain areas is closely related to their structural and functional connectivity profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The signal variability of brain areas, measured in terms of standard deviations or temporal entropy, is closely related to their structural and functional connectivity profiles (i.e. network embedding) (Mi\u0161i\u0107 et al., 2011; Burzynska et al., 2013; Garrett et al., 2017; Shafiei et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "84266534-ec04-45fd-bb49-b0a539c8d455",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C33",
+      "claim": "The autocorrelation of BOLD signal is correlated with topological characteristics of structural brain networks.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the autocorrelation of blood oxygenation level-dependent (BOLD) signal is correlated with topological characteristics of structural brain networks, such that areas with greater connectivity generate signals with greater autocorrelation (Sethi et al., 2017; Fallon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "fada6403-2e86-4ffc-849d-639f24b87ac6",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C34",
+      "claim": "Areas with greater connectivity generate signals with greater autocorrelation.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the autocorrelation of blood oxygenation level-dependent (BOLD) signal is correlated with topological characteristics of structural brain networks, such that areas with greater connectivity generate signals with greater autocorrelation (Sethi et al., 2017; Fallon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "f9dde15e-794e-4553-a3c8-cb650d3fc512",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C35",
+      "claim": "In computational models, highly interconnected hubs exhibit slower dynamic fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in computational models of structurally coupled neuronal populations (neural mass and neural field models [Breakspear, 2017]), highly interconnected hubs exhibit slower dynamic fluctuations, while sensory areas exhibit fast fluctuating neural activity (Gollo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to computational modeling literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "a97fbb8d-e0d6-4bb2-887e-7243357065e3",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C36",
+      "claim": "In computational models, sensory areas exhibit fast fluctuating neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in computational models of structurally coupled neuronal populations (neural mass and neural field models [Breakspear, 2017]), highly interconnected hubs exhibit slower dynamic fluctuations, while sensory areas exhibit fast fluctuating neural activity (Gollo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to computational modeling literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "74328809-a2b0-41a6-bdcb-be3d982915c2",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C37",
+      "claim": "Computational models offer better fits to empirical functional connectivity if they assume heterogeneous local dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, these models offer better fits to empirical functional connectivity if they assume heterogeneous local dynamics (Cocchi et al., 2016; Demirta\u015f et al., 2019; Wang et al., 2019; Deco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to computational modeling literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "4d6fbd62-e877-43db-9fa2-cbccfe275eb0",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C38",
+      "claim": "Local computations may reflect systematic variation in microscale properties and macroscale network embedding, manifesting as diverse time-series features of regional neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, multiple lines of evidence suggest that local computations may reflect systematic variation in microscale properties and macroscale network embedding, manifesting as diverse time-series features of regional neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement synthesizing prior literature to motivate the study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "b5dc38dd-1e36-4b1f-8042-0f8eaeda7eeb",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C39",
+      "claim": "Conventional computational analysis is based on specific, manually selected time-series features.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant limitation is that conventional computational analysis is based on specific, manually selected time-series features, such as the decay of the autocorrelation function, bands of the Fourier power spectrum, or signal variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of prior approaches, supported by the broader literature context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "51bb2cab-1c1e-48d8-8e1a-eee6ace86e96",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C40",
+      "claim": "All analyses were performed on four resting state fMRI runs from the Human Connectome Project.",
+      "claim_type": "EXPLICIT",
+      "source": "All analyses were performed on four resting state fMRI runs from the Human Connectome Project (Van Essen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "e6d9028e-617e-4232-af23-c60e74838465",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C42",
+      "claim": "External replication was performed using data from the Midnight Scan Club.",
+      "claim_type": "EXPLICIT",
+      "source": "External replication was then performed using data from the Midnight Scan Club (Gordon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the replication dataset used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "66ae5bda-7bf8-4f52-aa73-6fb7cf4accbc",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C43",
+      "claim": "Massive temporal feature extraction yielded 6441 features per regional time-series.",
+      "claim_type": "EXPLICIT",
+      "source": "Massive temporal feature extraction was performed using highly comparative time-series analysis, hctsa (Fulcher et al., 2013; Fulcher and Jones, 2017), yielding 6441 features per regional time-series, including measures of frequency composition, variance, autocorrelation, fractal scaling and entropy (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feature extraction methodology and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "0d2d9449-cf27-4690-82cf-ba680243d4b2",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C44",
+      "claim": "The extracted features include measures of frequency composition, variance, autocorrelation, fractal scaling and entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Massive temporal feature extraction was performed using highly comparative time-series analysis, hctsa (Fulcher et al., 2013; Fulcher and Jones, 2017), yielding 6441 features per regional time-series, including measures of frequency composition, variance, autocorrelation, fractal scaling and entropy (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the types of features extracted.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "4688caba-f8c3-4721-97dd-8acd5b6c9d7a",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C45",
+      "claim": "Temporal profile similarity between regions significantly decreases as a function of Euclidean distance between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2b shows a negative exponential relationship between spatial proximity and temporal profile similarity, meaning that regions that are spatially close exhibit similar intrinsic dynamics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2b shows the exponential decay relationship between distance and temporal profile similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "11457978-9af9-4438-ba63-30236f320a8a",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C53",
+      "claim": "Two regions could display similar time-series features but not necessarily fluctuate coherently.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, two regions could display similar time-series features, but they do not necessarily fluctuate coherently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the weak correlation between temporal profile similarity and functional connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "755050c7-00cf-44d3-8372-e7e2869c4a5a",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C57",
+      "claim": "The top two principal components collectively account for more than 70% of the variance in time-series features.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying principal component analysis (PCA; Scikit-learn [Pedregosa et al., 2011]) to the region \u00d7 feature matrix yielded mutually orthogonal patterns of intrinsic dynamics (Figure 1), with the top two components collectively accounting for more than 70% of the variance in time-series features (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3a shows the variance explained by the principal components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "11f2ab13-151c-4c6c-906f-f8e32bcc3d1e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C58",
+      "claim": "PC1 mainly captures differential intrinsic dynamics along a ventromedial-dorsolateral gradient, separating occipital-parietal cortex and anterior temporal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The first component (PC1) mainly captures differential intrinsic dynamics along a ventromedial-dorsolateral gradient, separating occipital-parietal cortex and anterior temporal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3a shows the spatial distribution of PC1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "642538c5-54ee-43e2-a507-77b176a721a8",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C59",
+      "claim": "PC2 captures a unimodal-transmodal gradient, reminiscent of recently reported microstructural and functional gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "The second component (PC2) captures a unimodal-transmodal gradient, reminiscent of recently reported miscrostructural and functional gradients (Huntenburg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3a shows the spatial distribution of PC2, and comparison is made to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "98c1fa73-f63a-4978-b9c0-58aaced32902",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C60",
+      "claim": "Both PC1 and PC2 show considerable hemispheric symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Both components show considerable hemispheric symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3a visually shows symmetric patterns across hemispheres.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "406d5e97-7c4d-4666-a799-b055863df0a8",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C62",
+      "claim": "PC1 is sensitive to temporal dependencies in BOLD signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we find that PC1 is sensitive to temporal dependencies in BOLD signals, while PC2 is sensitive to the distribution shape of time-series amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3b shows that autocorrelation features load highly on PC1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "23df1175-5b48-4fdd-b66e-a42d02660a3d",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C63",
+      "claim": "PC2 is sensitive to the distribution shape of time-series amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we find that PC1 is sensitive to temporal dependencies in BOLD signals, while PC2 is sensitive to the distribution shape of time-series amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3b shows that distributional features load highly on PC2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "5495178b-c514-4339-9585-892599a75db9",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C64",
+      "claim": "For PC1, short-lag autocorrelation measures load positively, while long-lag autocorrelation measures load negatively.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-lag autocorrelation measures load positively, while long-lag autocorrelation measures load negatively, consistent with the notion that autocorrelation decays with increasing time lag (Murray et al., 2014; Gao et al., 2020; Raut et al., 2020; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3b and Figure 3\u2014figure supplement 1 show the loading patterns of autocorrelation features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "663960aa-feef-4f7f-a17c-a91631d4d097",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C65",
+      "claim": "PC2 captures the spread of time-series amplitudes away from the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, PC2 captures the spread of time-series amplitudes away from the mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high loading of distributional entropy and kurtosis features on PC2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "656dcd6e-ba76-4822-85e1-057a291f7652",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C66",
+      "claim": "PC2 captures the shape of the deviations of time-series data points in both directions from the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, none of the odd moments (distribution asymmetry) are high in the PC2 loading list, just even moments, suggesting that PC2 captures the shape of the deviations of time-series data points in both directions from the mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of feature loadings shows even moments but not odd moments load highly on PC2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "716fccf5-2fea-4ab5-b069-671c9c41cca5",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C67",
+      "claim": "PC2 indexes the range or diversity of values that a regional time-series can realize.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PC2 indexes the range or diversity of values that a regional time-series can realize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distributional features that load on PC2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "e25eef07-f92e-44e7-8407-cec9c16092a3",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C68",
+      "claim": "Ventromedial areas (lower in the PC1 gradient) have lower linear and nonlinear autocorrelation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventromedial areas (lower in the PC1 gradient) have lower linear and nonlinear autocorrelation, while doroslateral areas (higher in the PC1 gradient) have greater autocorrelation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3c shows the spatial distribution of autocorrelation features.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "1392e117-c7b1-4eed-863c-65f1720df86e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C69",
+      "claim": "Dorsolateral areas (higher in the PC1 gradient) have greater autocorrelation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventromedial areas (lower in the PC1 gradient) have lower linear and nonlinear autocorrelation, while doroslateral areas (higher in the PC1 gradient) have greater autocorrelation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3c shows the spatial distribution of autocorrelation features.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "23514ec6-c57b-4965-bca8-5a09582b2d96",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C70",
+      "claim": "Sensory areas (lower in the PC2 gradient) have greater distributional entropy and kurtosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory areas (lower in the PC2 gradient) have greater distributional entropy and kurtosis, while transmodal areas (higher in the PC2 gradient) have lower distributional entropy and kurtosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3c shows the spatial distribution of distributional features.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "795319f1-30a4-40fe-9cbe-cbcac9eb47e9",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C71",
+      "claim": "Transmodal areas (higher in the PC2 gradient) have lower distributional entropy and kurtosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory areas (lower in the PC2 gradient) have greater distributional entropy and kurtosis, while transmodal areas (higher in the PC2 gradient) have lower distributional entropy and kurtosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3c shows the spatial distribution of distributional features.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "a6c3a876-a2c5-4af4-b1c2-00edfd59efd9",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C79",
+      "claim": "PC1 intrinsic dynamics mainly defined a cognitive-affective axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the intuition developed from comparisons with intrinsic networks, PC1 intrinsic dynamics mainly defined a cognitive-affective axis (e.g. 'attention' versus 'stress', 'fear', 'loss', 'emotion'; Figure 5a), while PC2 dynamics defined a sensory-cognitive axis (e.g. 'perception', 'multisensory', 'facial expression' versus 'cognitive control', 'memory retrieval', 'reasoning'; Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5a shows correlations between PC1 and Neurosynth terms representing cognitive versus affective processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "06d48a7e-3c9d-4660-b5b6-68c27eb318df",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C80",
+      "claim": "PC2 dynamics defined a sensory-cognitive axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the intuition developed from comparisons with intrinsic networks, PC1 intrinsic dynamics mainly defined a cognitive-affective axis (e.g. 'attention' versus 'stress', 'fear', 'loss', 'emotion'; Figure 5a), while PC2 dynamics defined a sensory-cognitive axis (e.g. 'perception', 'multisensory', 'facial expression' versus 'cognitive control', 'memory retrieval', 'reasoning'; Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5b shows correlations between PC2 and Neurosynth terms representing sensory versus cognitive processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "3bcce95e-e704-475b-b007-35ea9ed2f8dc",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C81",
+      "claim": "The findings are robust against a wide range of methodological choices.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are robust against a wide range of methodological choices and were validated in two held-out samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 6 shows replication across multiple methodological variations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "046757d8-ba11-4323-886e-4b4b1b9fd939",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C82",
+      "claim": "The findings were validated in two held-out samples.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are robust against a wide range of methodological choices and were validated in two held-out samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 6 shows validation in HCP Validation dataset and MSC dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "f9c17eab-1aff-43b3-b015-c87bc4b097b3",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C83",
+      "claim": "Regional haemodynamic activity possesses a rich dynamic signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that regional haemodynamic activity, often overlooked in favour of electrophysiological measurements with greater temporal resolution, possesses a rich dynamic signature (Garrett et al., 2013; Uddin, 2020; Preti et al., 2017; Lurie et al., 2020; Li et al., 2019; Bolt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comprehensive feature extraction results and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "98d8def0-3561-4e37-a55d-da818df63463",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C84",
+      "claim": "Feature-based time-series phenotyping offers a powerful, fundamentally new and entirely data-driven method to quantify and articulate neural dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "As we discuss below, feature-based time-series phenotyping offers a powerful, fundamentally new and entirely data-driven method to quantify and articulate neural dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim supported by the comprehensive analysis approach used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "216cf0a6-cd7a-4a36-a49d-1526fa858ef0",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C85",
+      "claim": "One pattern, characterized by variation in signal autocorrelation, follows a ventromedial-dorsolateral gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying a data-driven feature extraction method to high-resolution BOLD fMRI, we decompose regional signals into two intrinsic modes, with distinct topographic organization and time-series features. One pattern, characterized by variation in signal autocorrelation, follows a ventromedial-dorsolateral gradient, separating the limbic and paralimibic systems from posterior parietal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the PC1 findings presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "03e9ccf7-1e3b-45d6-a2b2-7e2d52b5d1e2",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C86",
+      "claim": "The autocorrelation pattern separates the limbic and paralimbic systems from posterior parietal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "One pattern, characterized by variation in signal autocorrelation, follows a ventromedial-dorsolateral gradient, separating the limbic and paralimibic systems from posterior parietal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial organization of PC1 shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "e20db142-439b-405f-b917-8130ad171042",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C87",
+      "claim": "Another pattern, characterized by dynamic range, follows a unimodal-transmodal gradient, separating primary sensory-motor cortices from association cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Another pattern, characterized by dynamic range, follows a unimodal-transmodal gradient, separating primary sensory-motor cortices from association cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the PC2 findings presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "955a6f3e-2e5d-4ede-be82-8dec98ce7975",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C88",
+      "claim": "The first pattern is closely associated with gene expression PC1.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is closely associated with gene expression PC1 (itself closely related to cell type composition, synaptic physiology and cortical cytoarchitecture [Burt et al., 2018]), suggesting a molecular and cellular basis for regional differences in temporal autocorrelation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 shows significant correlation between PC1 and gene expression PC1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "fe25d8c3-11a3-43a0-89fd-e19190152973",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C89",
+      "claim": "Gene expression PC1 is closely related to cell type composition, synaptic physiology and cortical cytoarchitecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is closely associated with gene expression PC1 (itself closely related to cell type composition, synaptic physiology and cortical cytoarchitecture [Burt et al., 2018]), suggesting a molecular and cellular basis for regional differences in temporal autocorrelation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "be564ca8-cf16-4f8b-ab0f-e2723d11ab71",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C90",
+      "claim": "There is a molecular and cellular basis for regional differences in temporal autocorrelation.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is closely associated with gene expression PC1 (itself closely related to cell type composition, synaptic physiology and cortical cytoarchitecture [Burt et al., 2018]), suggesting a molecular and cellular basis for regional differences in temporal autocorrelation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between PC1 and gene expression PC1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "11839633-a54e-4fec-a89c-c18b5a57e016",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C91",
+      "claim": "The second pattern is closely associated with the principal functional gradient, intracortical myelin, and cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "The second is closely associated with the principal functional gradient, as well as with intracortical myelin and cortical thickness, suggesting that the dynamic range of BOLD signals is related to regional variation in macroscale circuit organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 shows significant correlations between PC2 and these structural features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "466e65f6-c5ce-444e-a003-4731bda1e5f3",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C92",
+      "claim": "The dynamic range of BOLD signals is related to regional variation in macroscale circuit organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The second is closely associated with the principal functional gradient, as well as with intracortical myelin and cortical thickness, suggesting that the dynamic range of BOLD signals is related to regional variation in macroscale circuit organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlations between PC2 and structural/functional features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "d16df63b-273a-4173-a3a0-e789af479d1e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C93",
+      "claim": "Molecular and cellular properties (gene expression PC1) relate to regional autocorrelation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we find evidence that molecular and cellular properties (gene expression PC1) relate to regional autocorrelation, while micro-circuit properties (T1w/T2w, cortical thickness) and macroscale network embedding (principal functional gradient) relate to regional dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This synthesizes the correlation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "6a2cc85e-f7ce-4576-af93-a844e2238998",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C94",
+      "claim": "Micro-circuit properties (T1w/T2w, cortical thickness) and macroscale network embedding (principal functional gradient) relate to regional dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we find evidence that molecular and cellular properties (gene expression PC1) relate to regional autocorrelation, while micro-circuit properties (T1w/T2w, cortical thickness) and macroscale network embedding (principal functional gradient) relate to regional dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This synthesizes the correlation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "ad2ba8d7-ba14-4230-ad87-51b04721db84",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C95",
+      "claim": "Systematic variation in laminar architecture across the cortical sheet is mirrored by multiple cytological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "An emerging literature emphasizes the hierarchical organization of neural systems, whereby systematic variation in laminar architecture across the cortical sheet is mirrored by multiple cytological properties, including neuron density, spine count, branching and neurotransmitter receptor profiles (Mesulam, 1998; Margulies et al., 2016; Hilgetag and Goulas, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "ab0a28ad-ddef-4bd9-b821-e8bae5970c2d",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C96",
+      "claim": "Cytological properties include neuron density, spine count, branching and neurotransmitter receptor profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "An emerging literature emphasizes the hierarchical organization of neural systems, whereby systematic variation in laminar architecture across the cortical sheet is mirrored by multiple cytological properties, including neuron density, spine count, branching and neurotransmitter receptor profiles (Mesulam, 1998; Margulies et al., 2016; Hilgetag and Goulas, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "84825f48-74a3-4204-b425-e6cc7d4f5fd6",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C97",
+      "claim": "Cytological variations manifest as spatially ordered gradients of structural and functional attributes.",
+      "claim_type": "EXPLICIT",
+      "source": "These variations manifest as spatially ordered gradients of structural and functional attributes (Huntenburg et al., 2018), including gene expression (Burt et al., 2018; Fulcher et al., 2019; Hansen et al., 2020), cortical thickness (Wagstyl et al., 2015), intracortical myelin (Huntenburg et al., 2017), laminar differentiation (Paquola et al., 2019; Wagstyl et al., 2020) and excitability (Demirta\u015f et al., 2019; Wang, 2020; Markicevic et al., 2020; Straub et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "48efe043-0987-4bd5-82ae-2bbd62a9aada",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C98",
+      "claim": "The two patterns of intrinsic dynamics are closely related to gene expression, intracortical myelin and cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that the two patterns of intrinsic dynamics are closely related to gene expression, intracortical myelin and cortical thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 shows these correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "62f822f3-f9b2-4557-8726-75b5d463c9fc",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C99",
+      "claim": "Microscale and connectional hierarchies leave an indelible mark on intrinsic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results build on this literature, demonstrating that microscale and connectional hierarchies leave an indelible mark on intrinsic dynamics (Lurie and D'Esposito, 2020), perhaps through variation in local excitability (Demirta\u015f et al., 2019; Wang et al., 2019; Wang, 2020; Deco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the correlations shown in Figures 2 and 4, and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "f3c32496-4165-467c-903d-738427b109fc",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C100",
+      "claim": "Microscale and connectional hierarchies may influence intrinsic dynamics through variation in local excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results build on this literature, demonstrating that microscale and connectional hierarchies leave an indelible mark on intrinsic dynamics (Lurie and D'Esposito, 2020), perhaps through variation in local excitability (Demirta\u015f et al., 2019; Wang et al., 2019; Wang, 2020; Deco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism supported by citations to computational modeling literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "7de0206b-98c3-4488-8690-985994b5ad70",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C101",
+      "claim": "The two patterns are related to two dominant axes of meta-analytic functional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the two patterns are related to two dominant axes of meta-analytic functional activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5 shows correlations between PC1/PC2 and Neurosynth activation maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "8000c962-0e19-498d-9549-f9543203ffeb",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C102",
+      "claim": "Topographic variations in microcircuitry and connectomic embedding yield variations in intrinsic dynamics and may explain regional differences in functional specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that topographic variations in microcircuitry and connectomic embedding yield variations in intrinsic dynamics and may explain regional differences in functional specialization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This synthesizes the findings from Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "b4953ea0-be14-459e-8980-5940e872c352",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C103",
+      "claim": "The ventromedial-dorsolateral autocorrelation pattern differentiates affective versus cognitive activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ventromedial-dorsolateral autocorrelation pattern differentiates affective versus cognitive activation (mainly visual cognition and visuo-spatial attention), whereas the unimodal-transmodal dynamic range pattern differentiates primary sensory versus higher-order cognitive processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5a shows PC1 correlations with affective and cognitive terms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "bb51ff90-ea34-4684-bb2d-d4a14b097705",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C104",
+      "claim": "The unimodal-transmodal dynamic range pattern differentiates primary sensory versus higher-order cognitive processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The ventromedial-dorsolateral autocorrelation pattern differentiates affective versus cognitive activation (mainly visual cognition and visuo-spatial attention), whereas the unimodal-transmodal dynamic range pattern differentiates primary sensory versus higher-order cognitive processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5b shows PC2 correlations with sensory and cognitive terms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "52515247-d12c-4f2d-905c-73cd45b99d18",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C105",
+      "claim": "Local computations reflect systematic variation in multiple anatomical circuit properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results provide evidence that local computations reflect systematic variation in multiple anatomical circuit properties, and can be measured as unique temporal signatures in regional activity and patterns of functional specialization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This synthesizes the findings from the entire study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "cf16b636-0ecb-4fdc-9b2f-1e20519b01e7",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C106",
+      "claim": "Local computations can be measured as unique temporal signatures in regional activity and patterns of functional specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results provide evidence that local computations reflect systematic variation in multiple anatomical circuit properties, and can be measured as unique temporal signatures in regional activity and patterns of functional specialization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comprehensive feature extraction and correlation analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "3c8f0948-dacd-435d-a098-6ce51e7a91a3",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C107",
+      "claim": "The present findings are part of a larger trend to understand structure-function relationships by considering molecular, cellular and physiological attributes of network nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the present findings are part of a larger trend in the field to understand structure-function relationships by considering molecular (Richiardi et al., 2015; Fulcher and Fornito, 2016; Anderson et al., 2018; Zheng et al., 2019), cellular (Scholtens et al., 2014; Anderson et al., 2020; Shafiei et al., 2020; Muller et al., 2020) and physiological (Sethi et al., 2017; Fallon et al., 2020) attributes of network nodes, thereby conceptually linking local and global brain organization (Khambhati et al., 2018; Su\u00e1rez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "8b7370f3-e744-443b-a231-b3990110e752",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C108",
+      "claim": "In annotated networks, macroscale network architecture is thought to reflect similarity in local properties.",
+      "claim_type": "EXPLICIT",
+      "source": "In such 'annotated networks', macroscale network architecture is thought to reflect similarity in local properties, and vice versa, such that areas with similar properties are more likely to be anatomically connected and to functionally interact with one another (Beul et al., 2017; Goulas et al., 2019; Wei et al., 2019; Hilgetag et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "8b932461-a2dc-459b-9dc3-d4d726859f9b",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C109",
+      "claim": "Areas with similar properties are more likely to be anatomically connected and to functionally interact with one another.",
+      "claim_type": "EXPLICIT",
+      "source": "In such 'annotated networks', macroscale network architecture is thought to reflect similarity in local properties, and vice versa, such that areas with similar properties are more likely to be anatomically connected and to functionally interact with one another (Beul et al., 2017; Goulas et al., 2019; Wei et al., 2019; Hilgetag et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical literature and confirmed by the findings in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "d3e6105a-74d7-4c95-9f13-d47a5358aa71",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C110",
+      "claim": "Two regions are more likely to display similar intrinsic dynamics if they are anatomically connected.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that two regions are more likely to display similar intrinsic dynamics if they are anatomically connected and if they are part of the same functional community, suggesting that network organization and local intrinsic dynamics are intertwined (Gollo et al., 2015; Cocchi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2c shows significantly higher temporal profile similarity for structurally connected regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "0bcd5210-4ef6-40f3-a1e5-5399806aac88",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C111",
+      "claim": "Two regions are more likely to display similar intrinsic dynamics if they are part of the same functional community.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that two regions are more likely to display similar intrinsic dynamics if they are anatomically connected and if they are part of the same functional community, suggesting that network organization and local intrinsic dynamics are intertwined (Gollo et al., 2015; Cocchi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2d shows significantly higher temporal profile similarity for within-network regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "ad690c76-2a1f-491c-bf5f-8a190b178bdc",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C112",
+      "claim": "Network organization and local intrinsic dynamics are intertwined.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that two regions are more likely to display similar intrinsic dynamics if they are anatomically connected and if they are part of the same functional community, suggesting that network organization and local intrinsic dynamics are intertwined (Gollo et al., 2015; Cocchi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings in Figure 2 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "28becc18-13b9-4764-8df4-55edea8d560c",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C113",
+      "claim": "Functional connectivity misses out on an important set of inter-regional relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant corollary of the present work is that functional connectivity \u2013 presently conceptualized as coherent fluctuations in neural activity and operationalized as correlated BOLD values over time \u2013 misses out on an important set of inter-regional relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the weak correlation between temporal profile similarity and functional connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "236031c2-5615-4023-adcb-e4b59802f215",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C114",
+      "claim": "Two regions may display identical time-series profiles but not time-locked activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, two regions may display identical time-series profiles, suggesting common circuit dynamics and function, but unless they also display time-locked activity, current methods would miss out on this potentially biologically meaningful inter-regional relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distinction between temporal profile similarity and functional connectivity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "d62fd295-85e9-4dd6-af9c-91a36f0588f0",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C115",
+      "claim": "All analyses were performed on BOLD time-series with lower sampling rate compared to electromagnetic recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "First, all analyses were performed on BOLD time-series with lower sampling rate compared to electromagnetic recordings, potentially obscuring more subtle dynamics occurring on faster timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological limitation acknowledged by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "fd5977f0-961d-4000-80b3-57944cd1c1c4",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C116",
+      "claim": "All analyses were performed on haemodynamic time courses that may not completely reflect the underlying neuronal population dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, all analyses were performed on haemodynamic time courses that may not completely reflect the underlying neuronal population dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological limitation acknowledged by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "d02b5989-dfac-4dd3-bf28-59faed54b6ad",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C117",
+      "claim": "The pattern of temporal signal-to-noise ratio in the BOLD is non-uniform but not correlated with the intrinsic dynamics patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the pattern of temporal signal-to-noise ratio in the BOLD is known to be non-uniform, but it is not correlated with the intrinsic dynamics patterns observed in the present report.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This addresses a potential confound with statistical evidence provided earlier in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "c8f60edc-8e2b-44bf-8142-dc75acfebd52",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C118",
+      "claim": "Spatial variation of intrinsic dynamics parallels spatial variation of meta-analytic cognitive functional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, spatial variation of intrinsic dynamics parallels spatial variation of meta-analytic cognitive functional activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5 shows correlations between PC1/PC2 and Neurosynth activation maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "f81a98ab-d4db-4f3c-b66e-09b17c2663a1",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "claim_id": "C119",
+      "claim": "Structural organization of the brain shapes patterns of intrinsic dynamics, ultimately manifesting as distinct axes of psychological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that structural organization of the brain shapes patterns of intrinsic dynamics, ultimately manifesting as distinct axes of psychological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This synthesizes the main findings from Figures 2, 4, and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "839e83be-ef42-4e81-bff4-81018f0ea953",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study applied highly comparative time-series analysis (hctsa) to extract 6441 temporal features from regional BOLD fMRI time-series, including measures of frequency composition, variance, autocorrelation, fractal scaling, and entropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C43, and C44 describe the comprehensive feature extraction methodology. The manuscript provides clear methodological details and the hctsa toolbox is well-established. The number of features (6441) and feature types are explicitly stated and consistent throughout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "b226072c-3892-462a-b40f-ce38f0e6c96f",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two robust spatial gradients of intrinsic dynamics were identified via PCA: PC1 spans a ventromedial-dorsolateral axis separating occipital-parietal and anterior temporal cortex, while PC2 spans a unimodal-transmodal gradient. Together they account for >70% of variance in time-series features and show hemispheric symmetry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C57-C60 collectively describe the two principal components. Figure 3a provides clear visual evidence of the spatial distributions, variance explained (>70%), and hemispheric symmetry. The PCA methodology is standard and appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "77dd187d-a954-4d55-ba2e-22bc697d4b19",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PC1 is dominated by autocorrelation features (short-lag loading positively, long-lag negatively), while PC2 is dominated by distributional features (entropy, kurtosis) capturing dynamic range. Ventromedial areas show lower autocorrelation; sensory areas show greater distributional entropy and kurtosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C71 describe the feature composition of the two PCs. Figure 3b-c provides feature loading analyses and spatial distributions. The interpretation that PC1 captures temporal dependencies and PC2 captures amplitude distribution shape is well-supported by the loading patterns and representative features shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "79bacf5d-42dd-4477-a6be-9eb830ceb6ab",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Temporal profile similarity between brain regions decreases exponentially with Euclidean distance and is significantly higher for structurally connected regions and regions within the same functional network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C110, C111 describe relationships between temporal profile similarity and network organization. Figure 2b-d provides statistical evidence including exponential fits, t-tests (p\u22480), and validation against null models (rewired networks and spin tests). The findings are robust to distance correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "9930d9c9-3d21-4c8f-9381-0e1caacc11c8",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Temporal profile similarity and functional connectivity are only weakly correlated (rs=0.23, distance-corrected rs=0.18), indicating that regions can have similar time-series features without coherent fluctuations, representing a distinct type of inter-regional relationship.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C113, C114 describe the weak relationship between temporal profile similarity and functional connectivity. Figure 2e provides quantitative evidence (Spearman correlations with p<0.05). The interpretation that this represents a distinct relationship is logical and well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "c416f023-883d-4ce3-99b2-1999e9b1371e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PC1 is significantly correlated with gene expression PC1 (rs=0.57, pspin=0.03), suggesting a molecular and cellular basis for regional differences in temporal autocorrelation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C88, C90, C93 link PC1 to gene expression. Figure 4 shows significant correlation with appropriate spatial permutation testing. The inference about molecular/cellular basis is reasonable given the established relationship between gene expression PC1 and cell type composition (C89, supported by citation).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "4e6228b6-b5f5-45aa-9f22-1836878b85ed",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PC2 is significantly correlated with the principal functional gradient (rs=0.77, pspin=0.0001), T1w/T2w ratio (rs=-0.57, pspin=0.0001), and cortical thickness (rs=0.43, pspin=0.008), suggesting that dynamic range relates to macroscale circuit organization and microstructural properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C91, C92, C94 link PC2 to multiple structural features. Figure 4 provides strong statistical evidence with spatial permutation testing for all correlations. The interpretation linking dynamic range to macroscale organization is well-supported by the convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "51d2c6c7-0b73-46de-b078-5cd12e4f3129",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The two gradients correlate with distinct axes of meta-analytic functional activation: PC1 differentiates cognitive versus affective processing (e.g., attention vs. stress/fear/emotion), while PC2 differentiates sensory versus higher-order cognitive processing (e.g., perception/multisensory vs. cognitive control/memory retrieval).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12, C79-C80, C101, C103-C104 describe relationships with functional activation. Figure 5 shows correlations with 123 Neurosynth terms with Bonferroni correction (\u03b1=0.05). The cognitive-affective and sensory-cognitive axes are clearly demonstrated with specific examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "97168942-c7cb-4add-9471-7da57854c01b",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings are robust across methodological variations (individual-level analysis, grey-matter signal regression, alternative parcellations) and validated in two independent held-out samples (HCP Validation n=127, Midnight Scan Club n=9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 describe robustness and replication. Figure 6 systematically shows high correlations (rs>0.5-0.99) between original and alternative analyses across multiple conditions. The replication in independent datasets with different acquisition parameters strengthens confidence in the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "743e6c32-7579-4670-a5df-f7f474e1bdf8",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates that intrinsic dynamics are shaped by both microscale attributes (gene expression, myelin, thickness) and macroscale connectome architecture (structural/functional connectivity), linking brain architecture to intrinsic dynamics and ultimately to patterns of functional specialization and cognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C13, C102, C105, C106, C119 represent the overarching conclusions. These are well-supported by the convergent evidence from multiple analyses showing relationships between dynamics gradients and structural features (Figures 2, 4) and functional activation (Figure 5). The logical chain from structure\u2192dynamics\u2192function is demonstrated empirically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "ccdf59c0-30fc-44b8-860c-3624bdc429af",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The intrinsic dynamics gradients reflect structural and functional network embedding, with network organization and local intrinsic dynamics being intertwined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C112 describe the relationship between dynamics and network embedding. Figure 2 provides evidence that temporal profile similarity relates to both structural connectivity and functional network membership. The interpretation that these are intertwined is supported by the data and citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "09e02c4d-0506-43d0-8142-92a087233e51",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Regional haemodynamic activity possesses a rich dynamic signature, and feature-based time-series phenotyping offers a powerful, data-driven method to quantify neural dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 represent methodological conclusions. The comprehensive feature extraction (6441 features) and identification of meaningful spatial gradients support the claim about rich dynamics. The methodological innovation is demonstrated through the novel application of hctsa to fMRI data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "09beaf3f-f6a8-4fbf-ba35-2b84ea271699",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study acknowledges methodological limitations including lower temporal resolution of BOLD compared to electrophysiology, potential mismatch between hemodynamic and neuronal dynamics, and non-uniform temporal SNR (though tSNR is not correlated with the identified patterns).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C117 describe acknowledged limitations. These are explicitly stated in the Discussion. The tSNR analysis (C117) provides evidence that signal quality does not confound the main findings (PC1: rs=0.28, pspin=0.19; PC2: rs=0.21, pspin=0.16).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "0b759333-3004-4722-bc2e-25368fa9452e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study used resting-state fMRI data from the Human Connectome Project (n=201 discovery, n=127 validation) and the Midnight Scan Club (n=9) for external replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C42 describe the datasets. These are clearly documented in the Methods section with appropriate citations. The sample sizes and data sources are explicitly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "31746ace-602e-4ad5-8808-379d34210674",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction establishes prior knowledge about brain organization, including hierarchical organization of neural circuits, cortical gradients of molecular/cellular properties, relationships between structure and dynamics, and limitations of conventional time-series analysis approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C39 represent background knowledge and motivation. These are appropriately supported by citations to established literature throughout the introduction. The claims accurately represent prior work and provide context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "baa764a2-0d94-4425-815b-1daf3e70cf6c",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within the emerging literature on hierarchical organization, showing that systematic variation in laminar architecture and cytological properties (neuron density, spine count, branching, receptor profiles) manifests as gradients that are reflected in the observed intrinsic dynamics patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C99 synthesize findings with prior literature. These are supported by appropriate citations and by the empirical correlations shown in Figure 4. The interpretation builds logically on established knowledge and the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "36f23ce2-e9ff-47a6-9f09-62aea472583e",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings contribute to the trend of understanding structure-function relationships through 'annotated networks' where macroscale architecture reflects similarity in local properties, with similar regions being more likely to be connected and functionally interact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 place findings in broader context. These are supported by citations to recent literature and confirmed by the empirical findings in Figure 2 showing relationships between temporal profile similarity and connectivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "20b0a7a7-ec70-4813-8b08-01cd7bea709f",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study was motivated by the hypothesis that different types of local computations may manifest as different organizational gradients, potentially through variation in local excitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C30 is explicitly speculative (evidence_type: SPECULATION) and C100 proposes a mechanism supported only by citations to computational models. While the hypothesis motivated the study and the mechanism is plausible, direct evidence for the excitability mechanism is not provided in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "3618c2b0-7ff0-4bc9-8d95-e248b3efe2f7",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Spatial variation of intrinsic dynamics parallels spatial variation of meta-analytic cognitive functional activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C118 summarizes the relationship between dynamics and activation. This is directly supported by Figure 5 showing significant correlations between PC1/PC2 and Neurosynth activation maps for multiple psychological terms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    },
+    {
+      "id": "15bb68d9-b019-4380-ab44-153636e85111",
+      "content_id": "2e35aca7-799d-49ce-b8de-28fce986ccb6",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Gene expression PC1 is closely related to cell type composition, synaptic physiology and cortical cytoarchitecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is supported by citation to Burt et al., 2018. This prior work characterization is important for interpreting the correlation between PC1 and gene expression PC1, but the claim itself relies on external literature rather than data from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:05:23.961663Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fb9551d1-707e-4bfd-9bd5-35567070a88e",
+      "result_id": "839e83be-ef42-4e81-bff4-81018f0ea953"
+    },
+    {
+      "claim_id": "66ae5bda-7bf8-4f52-aa73-6fb7cf4accbc",
+      "result_id": "839e83be-ef42-4e81-bff4-81018f0ea953"
+    },
+    {
+      "claim_id": "0d2d9449-cf27-4690-82cf-ba680243d4b2",
+      "result_id": "839e83be-ef42-4e81-bff4-81018f0ea953"
+    },
+    {
+      "claim_id": "fbfd35a5-1444-442d-be22-6422ca14f400",
+      "result_id": "b226072c-3892-462a-b40f-ce38f0e6c96f"
+    },
+    {
+      "claim_id": "2906fd10-3b16-4fa8-90f4-6517fe67fc9f",
+      "result_id": "b226072c-3892-462a-b40f-ce38f0e6c96f"
+    },
+    {
+      "claim_id": "bf995261-0df5-4e51-a409-dd85b82439ce",
+      "result_id": "b226072c-3892-462a-b40f-ce38f0e6c96f"
+    },
+    {
+      "claim_id": "755050c7-00cf-44d3-8372-e7e2869c4a5a",
+      "result_id": "b226072c-3892-462a-b40f-ce38f0e6c96f"
+    },
+    {
+      "claim_id": "11f2ab13-151c-4c6c-906f-f8e32bcc3d1e",
+      "result_id": "b226072c-3892-462a-b40f-ce38f0e6c96f"
+    },
+    {
+      "claim_id": "642538c5-54ee-43e2-a507-77b176a721a8",
+      "result_id": "b226072c-3892-462a-b40f-ce38f0e6c96f"
+    },
+    {
+      "claim_id": "98c1fa73-f63a-4978-b9c0-58aaced32902",
+      "result_id": "b226072c-3892-462a-b40f-ce38f0e6c96f"
+    },
+    {
+      "claim_id": "406d5e97-7c4d-4666-a799-b055863df0a8",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "23df1175-5b48-4fdd-b66e-a42d02660a3d",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "5495178b-c514-4339-9585-892599a75db9",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "663960aa-feef-4f7f-a17c-a91631d4d097",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "656dcd6e-ba76-4822-85e1-057a291f7652",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "716fccf5-2fea-4ab5-b069-671c9c41cca5",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "e25eef07-f92e-44e7-8407-cec9c16092a3",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "1392e117-c7b1-4eed-863c-65f1720df86e",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "23514ec6-c57b-4965-bca8-5a09582b2d96",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "795319f1-30a4-40fe-9cbe-cbcac9eb47e9",
+      "result_id": "77dd187d-a954-4d55-ba2e-22bc697d4b19"
+    },
+    {
+      "claim_id": "4688caba-f8c3-4721-97dd-8acd5b6c9d7a",
+      "result_id": "79bacf5d-42dd-4477-a6be-9eb830ceb6ab"
+    },
+    {
+      "claim_id": "d3e6105a-74d7-4c95-9f13-d47a5358aa71",
+      "result_id": "79bacf5d-42dd-4477-a6be-9eb830ceb6ab"
+    },
+    {
+      "claim_id": "0bcd5210-4ef6-40f3-a1e5-5399806aac88",
+      "result_id": "79bacf5d-42dd-4477-a6be-9eb830ceb6ab"
+    },
+    {
+      "claim_id": "11457978-9af9-4438-ba63-30236f320a8a",
+      "result_id": "9930d9c9-3d21-4c8f-9381-0e1caacc11c8"
+    },
+    {
+      "claim_id": "28becc18-13b9-4764-8df4-55edea8d560c",
+      "result_id": "9930d9c9-3d21-4c8f-9381-0e1caacc11c8"
+    },
+    {
+      "claim_id": "236031c2-5615-4023-adcb-e4b59802f215",
+      "result_id": "9930d9c9-3d21-4c8f-9381-0e1caacc11c8"
+    },
+    {
+      "claim_id": "785133e0-a3bb-4278-9b0f-7ea7a8ee9214",
+      "result_id": "c416f023-883d-4ce3-99b2-1999e9b1371e"
+    },
+    {
+      "claim_id": "955a6f3e-2e5d-4ede-be82-8dec98ce7975",
+      "result_id": "c416f023-883d-4ce3-99b2-1999e9b1371e"
+    },
+    {
+      "claim_id": "be564ca8-cf16-4f8b-ab0f-e2723d11ab71",
+      "result_id": "c416f023-883d-4ce3-99b2-1999e9b1371e"
+    },
+    {
+      "claim_id": "d16df63b-273a-4173-a3a0-e789af479d1e",
+      "result_id": "c416f023-883d-4ce3-99b2-1999e9b1371e"
+    },
+    {
+      "claim_id": "723f499d-9c9c-4144-86e6-201742180b51",
+      "result_id": "4e6228b6-b5f5-45aa-9f22-1836878b85ed"
+    },
+    {
+      "claim_id": "fcdc4dad-eb3d-4ebd-9931-10680f1fd3bd",
+      "result_id": "4e6228b6-b5f5-45aa-9f22-1836878b85ed"
+    },
+    {
+      "claim_id": "11839633-a54e-4fec-a89c-c18b5a57e016",
+      "result_id": "4e6228b6-b5f5-45aa-9f22-1836878b85ed"
+    },
+    {
+      "claim_id": "466e65f6-c5ce-444e-a003-4731bda1e5f3",
+      "result_id": "4e6228b6-b5f5-45aa-9f22-1836878b85ed"
+    },
+    {
+      "claim_id": "6a2cc85e-f7ce-4576-af93-a844e2238998",
+      "result_id": "4e6228b6-b5f5-45aa-9f22-1836878b85ed"
+    },
+    {
+      "claim_id": "51bfa889-6bd2-48f5-96ab-cbcc4fc02305",
+      "result_id": "51d2c6c7-0b73-46de-b078-5cd12e4f3129"
+    },
+    {
+      "claim_id": "c58b2b24-e279-4657-975e-2527bf751f14",
+      "result_id": "51d2c6c7-0b73-46de-b078-5cd12e4f3129"
+    },
+    {
+      "claim_id": "8c6bd1b7-f3d8-43e3-90ee-605fae23fa8d",
+      "result_id": "51d2c6c7-0b73-46de-b078-5cd12e4f3129"
+    },
+    {
+      "claim_id": "a6c3a876-a2c5-4af4-b1c2-00edfd59efd9",
+      "result_id": "51d2c6c7-0b73-46de-b078-5cd12e4f3129"
+    },
+    {
+      "claim_id": "06d48a7e-3c9d-4660-b5b6-68c27eb318df",
+      "result_id": "51d2c6c7-0b73-46de-b078-5cd12e4f3129"
+    },
+    {
+      "claim_id": "7de0206b-98c3-4488-8690-985994b5ad70",
+      "result_id": "51d2c6c7-0b73-46de-b078-5cd12e4f3129"
+    },
+    {
+      "claim_id": "b4953ea0-be14-459e-8980-5940e872c352",
+      "result_id": "51d2c6c7-0b73-46de-b078-5cd12e4f3129"
+    },
+    {
+      "claim_id": "bb51ff90-ea34-4684-bb2d-d4a14b097705",
+      "result_id": "51d2c6c7-0b73-46de-b078-5cd12e4f3129"
+    },
+    {
+      "claim_id": "3bcce95e-e704-475b-b007-35ea9ed2f8dc",
+      "result_id": "97168942-c7cb-4add-9471-7da57854c01b"
+    },
+    {
+      "claim_id": "046757d8-ba11-4323-886e-4b4b1b9fd939",
+      "result_id": "97168942-c7cb-4add-9471-7da57854c01b"
+    },
+    {
+      "claim_id": "87a2aebb-795d-458c-947b-a96ec4f79d3c",
+      "result_id": "743e6c32-7579-4670-a5df-f7f474e1bdf8"
+    },
+    {
+      "claim_id": "fcffb488-6f44-41c7-bb38-7df18a479678",
+      "result_id": "743e6c32-7579-4670-a5df-f7f474e1bdf8"
+    },
+    {
+      "claim_id": "8000c962-0e19-498d-9549-f9543203ffeb",
+      "result_id": "743e6c32-7579-4670-a5df-f7f474e1bdf8"
+    },
+    {
+      "claim_id": "52515247-d12c-4f2d-905c-73cd45b99d18",
+      "result_id": "743e6c32-7579-4670-a5df-f7f474e1bdf8"
+    },
+    {
+      "claim_id": "cf16b636-0ecb-4fdc-9b2f-1e20519b01e7",
+      "result_id": "743e6c32-7579-4670-a5df-f7f474e1bdf8"
+    },
+    {
+      "claim_id": "f81a98ab-d4db-4f3c-b66e-09b17c2663a1",
+      "result_id": "743e6c32-7579-4670-a5df-f7f474e1bdf8"
+    },
+    {
+      "claim_id": "152619d6-7831-4597-b373-3a2580518119",
+      "result_id": "ccdf59c0-30fc-44b8-860c-3624bdc429af"
+    },
+    {
+      "claim_id": "ad690c76-2a1f-491c-bf5f-8a190b178bdc",
+      "result_id": "ccdf59c0-30fc-44b8-860c-3624bdc429af"
+    },
+    {
+      "claim_id": "f9c17eab-1aff-43b3-b015-c87bc4b097b3",
+      "result_id": "09e02c4d-0506-43d0-8142-92a087233e51"
+    },
+    {
+      "claim_id": "98d8def0-3561-4e37-a55d-da818df63463",
+      "result_id": "09e02c4d-0506-43d0-8142-92a087233e51"
+    },
+    {
+      "claim_id": "d62fd295-85e9-4dd6-af9c-91a36f0588f0",
+      "result_id": "09beaf3f-f6a8-4fbf-ba35-2b84ea271699"
+    },
+    {
+      "claim_id": "fd5977f0-961d-4000-80b3-57944cd1c1c4",
+      "result_id": "09beaf3f-f6a8-4fbf-ba35-2b84ea271699"
+    },
+    {
+      "claim_id": "d02b5989-dfac-4dd3-bf28-59faed54b6ad",
+      "result_id": "09beaf3f-f6a8-4fbf-ba35-2b84ea271699"
+    },
+    {
+      "claim_id": "51bb2cab-1c1e-48d8-8e1a-eee6ace86e96",
+      "result_id": "0b759333-3004-4722-bc2e-25368fa9452e"
+    },
+    {
+      "claim_id": "e6d9028e-617e-4232-af23-c60e74838465",
+      "result_id": "0b759333-3004-4722-bc2e-25368fa9452e"
+    },
+    {
+      "claim_id": "421b5b53-cee4-4849-a544-efc735b6bf4e",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "091183a8-f60e-47fb-b2cf-e84f0c91e3c9",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "77506bb1-0ede-4706-b20e-086d5ee6a99e",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "a5e78f2f-9a76-4fa7-8c0c-fc8adb36d782",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "a1e6c6bb-f207-4b7c-9b59-2e125ae41039",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "0e43b46e-d71d-49d6-b34e-66f4f74b408e",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "dbc6dfb0-6bb1-4069-87b4-c167b76446bc",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "be7bf866-d4fc-47f1-83cd-b6dfa735771f",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "e46d205b-b5aa-4723-9593-522f22130307",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "4b783477-94ba-4419-8965-bbdf2b16b68d",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "781eec54-2095-49fe-8bfa-ccb7fb09ad2a",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "6438c09b-967f-4ec9-bf8c-4b538763af51",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "a3269b1e-6f9c-425a-bb68-8e5dd32740f2",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "63ecd133-fe7c-4706-b3d3-fa6c1833c844",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "f2428e51-6b2a-43d3-bac4-369d53837c3b",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "671c91c2-8c2f-409b-bcdf-92dd678899d7",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "a3b492ea-d540-4a15-b671-7cea4861196f",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "c4cf69c9-81cf-495e-aea3-5bbf1d27abed",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "84266534-ec04-45fd-bb49-b0a539c8d455",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "fada6403-2e86-4ffc-849d-639f24b87ac6",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "f9dde15e-794e-4553-a3c8-cb650d3fc512",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "a97fbb8d-e0d6-4bb2-887e-7243357065e3",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "74328809-a2b0-41a6-bdcb-be3d982915c2",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "4d6fbd62-e877-43db-9fa2-cbccfe275eb0",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "b5dc38dd-1e36-4b1f-8042-0f8eaeda7eeb",
+      "result_id": "31746ace-602e-4ad5-8808-379d34210674"
+    },
+    {
+      "claim_id": "ad2ba8d7-ba14-4230-ad87-51b04721db84",
+      "result_id": "baa764a2-0d94-4425-815b-1daf3e70cf6c"
+    },
+    {
+      "claim_id": "ab0a28ad-ddef-4bd9-b821-e8bae5970c2d",
+      "result_id": "baa764a2-0d94-4425-815b-1daf3e70cf6c"
+    },
+    {
+      "claim_id": "84825f48-74a3-4204-b425-e6cc7d4f5fd6",
+      "result_id": "baa764a2-0d94-4425-815b-1daf3e70cf6c"
+    },
+    {
+      "claim_id": "48efe043-0987-4bd5-82ae-2bbd62a9aada",
+      "result_id": "baa764a2-0d94-4425-815b-1daf3e70cf6c"
+    },
+    {
+      "claim_id": "62f822f3-f9b2-4557-8726-75b5d463c9fc",
+      "result_id": "baa764a2-0d94-4425-815b-1daf3e70cf6c"
+    },
+    {
+      "claim_id": "3c8f0948-dacd-435d-a098-6ce51e7a91a3",
+      "result_id": "36f23ce2-e9ff-47a6-9f09-62aea472583e"
+    },
+    {
+      "claim_id": "8b7370f3-e744-443b-a231-b3990110e752",
+      "result_id": "36f23ce2-e9ff-47a6-9f09-62aea472583e"
+    },
+    {
+      "claim_id": "8b932461-a2dc-459b-9dc3-d4d726859f9b",
+      "result_id": "36f23ce2-e9ff-47a6-9f09-62aea472583e"
+    },
+    {
+      "claim_id": "ae34b2bb-b4c0-4f13-a280-ec5a7911dfa0",
+      "result_id": "20b0a7a7-ec70-4813-8b08-01cd7bea709f"
+    },
+    {
+      "claim_id": "f3c32496-4165-467c-903d-738427b109fc",
+      "result_id": "20b0a7a7-ec70-4813-8b08-01cd7bea709f"
+    },
+    {
+      "claim_id": "c8f60edc-8e2b-44bf-8142-dc75acfebd52",
+      "result_id": "3618c2b0-7ff0-4bc9-8d95-e248b3efe2f7"
+    },
+    {
+      "claim_id": "fe25d8c3-11a3-43a0-89fd-e19190152973",
+      "result_id": "15bb68d9-b019-4380-ab44-153636e85111"
+    }
+  ],
+  "comparisons": []
+}

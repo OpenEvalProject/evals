@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript presents theoretical background on constitutive vs. induced immunity, stating that constitutive immunity enables rapid response but carries costs, and that theoretical models predict constitutive defenses are favored when infection rates are high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C16-C18 establish well-accepted theoretical framework from immunology and evolutionary biology, supported by appropriate citations (Boots and Best 2018; Shudo and Iwasa 2001). These are established principles rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Experimental evolution under high parasitism led to increased resistance in D. melanogaster populations, with 76% survival after 33 generations compared to 10% in controls. Selected populations evolved a more reactive cellular immune response, as demonstrated by increased encapsulation of oil droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C36-C40 are well-supported by experimental data with appropriate statistical analysis (\u03c72 tests with highly significant p-values). The oil injection assay provides independent validation that the evolved response is constitutive rather than parasite-specific. Sample sizes and replication appear adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Bulk RNA-seq analysis revealed that populations adapted to high parasitism showed constitutive upregulation of genes normally induced by infection. All 173 genes with >50% expression change showed the same directional change in both infection and selection, with enrichment for cytoskeletal organization and cell adhesion functions. The increase in constitutive expression was matched by decreased induced expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 are supported by bulk RNA-seq data with qPCR validation (C45). The finding that all 173 genes changed in the same direction (C43) is striking and well-documented in Figure 2B. The compensatory relationship between constitutive and induced expression (C48-C49) is a key mechanistic insight supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Single-cell RNA-seq identified nine hemocyte clusters from 19,344 cells, including cycling plasmatocytes (PLASM1), metabolic plasmatocytes (PLASM2), AMP-expressing cells, metabolic cells (MET), crystal cells, and three lamellocyte clusters (LAM1-3). Neither infection nor selection created new cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 describe the scRNA-seq clustering results with appropriate characterization based on marker gene expression. The clustering methodology is standard (Seurat), and the identification of cell types is validated by comparison with published datasets (C59-C60, C71-C72). The finding that no new cell states emerge (C51) is important for interpreting the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C73",
+      "C74"
+    ],
+    "result": "In populations evolved under high parasitism, the inducible production of immature lamellocytes (LAM1 and LAM2) became constitutive, with uninfected larvae having 3-5 fold more cells in these clusters. However, this was matched by reduced induced response, so final cell numbers after infection were similar between selection regimes. Production of mature lamellocytes (LAM3) remained largely inducible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C73-C74 represent the central finding of the paper, supported by quantitative scRNA-seq data (Figure 3C). The compensatory relationship between constitutive and induced responses is well-documented. The distinction between immature (constitutive) and mature (inducible) lamellocytes is a key mechanistic insight. Results hold across replicates (Figure 3\u2014figure supplement 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75"
+    ],
+    "result": "Pseudotime trajectory analysis revealed a single differentiation lineage from cycling plasmatocytes (PLASM1) to mature lamellocytes (LAM3), with decreased cell replication and upregulation of actin-filament and adhesion genes. 168 of 173 genes with >50% expression change in bulk RNA-seq also changed during this differentiation trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 and C75 are supported by trajectory inference using Slingshot and gene ontology analysis. The cell cycle regression analysis (C67) validates that clustering is not driven by cell cycle effects. The connection between bulk and single-cell data (C75) strengthens the interpretation that differentiation state changes explain the transcriptional shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Morphological analysis showed that while infection increased lamellocyte proportions, there was little difference between selection regimes in morphologically identifiable lamellocytes. However, immunohistochemistry revealed increased atilla-positive cells in selected populations, with infection having larger effects on cell size than selection. This suggests transcriptional activation became constitutive while morphological differentiation remained inducible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by morphological analysis and immunohistochemistry with appropriate statistics. The apparent discrepancy between transcriptional (scRNA-seq) and morphological data is resolved by showing that cells are transcriptionally activated but not fully differentiated morphologically. This is an important mechanistic distinction supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Populations under high parasitism evolved constitutive increases in circulating hemocyte numbers, increased lamellocyte precursors in lymph glands, and increased lymph gland disruption (up to 60% at late L3 stage). Crystal cell numbers in the sessile compartment were unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by hemocyte counting and lymph gland immunostaining with statistical analysis. The finding that total hemocyte numbers increased rather than redistribution from sessile compartments (C85) is important for understanding the mechanism. The lymph gland data provide additional evidence for constitutive priming of the immune response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Time-course analysis showed that populations selected under high parasitism produced more hemocytes and lamellocytes overall, with faster dynamics. At 12 hours post-infection, lamellocyte concentration was 8-fold higher and total hemocytes 2.5-fold higher in selected populations, supporting the hypothesis that constitutive activation enables more rapid immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by time-course hemocyte counting with statistical analysis. The 8-fold difference in lamellocytes at 12 hours (C91) provides strong evidence for accelerated response kinetics. This directly tests and supports the functional hypothesis that constitutive priming enables faster responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study demonstrates that natural selection favors constitutive defenses when infection is common, with inducible immune responses becoming constitutive when populations frequently encounter parasites. Drosophila populations evolved to constitutively produce immature lamellocytes under high infection pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 represent the main conclusions of the study, well-supported by the experimental evolution design and multiple lines of evidence (transcriptional, cellular, morphological, functional). This provides the first direct experimental test of a key theoretical prediction in immunity evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The results contrast with previous studies using Asobara tabida where no overlap of differentially expressed genes was found between selection and infection, possibly due to different genetic basis of resistance or methodological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 appropriately contextualize the findings relative to prior work, with reasonable speculation about potential explanations for differences. The comparison is fair and acknowledges methodological limitations of the prior study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Populations adapted to high parasitism have cellular immune defenses in a state of readiness, with final morphological differentiation remaining inducible. Cytoskeleton genes like \u03b2Tub60D and shot show greatest increases during differentiation and may be required for final shape changes. Late-stage immune responses were similar between selection regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide mechanistic interpretation supported by gene expression data and comparison with prior studies. The distinction between transcriptional priming and morphological differentiation is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Metabolic genes (Trehalase, Tret1-1) are upregulated after infection and also constitutively upregulated in adapted populations, suggesting metabolic costs of immunity may be borne by uninfected flies in resistant populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by RNA-seq data confirming prior findings and extending them to the evolved populations. The interpretation about costs (C105) is appropriately speculative and acknowledges this is a potential mechanism requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Parasitoid survival depends on a race between parasite development and capsule formation. Parasitoid wasps inject venom and VLPs to suppress immunity, and the L. boulardi strain used affects lamellocyte differentiation. Constitutive activation may circumvent these suppressive effects by killing parasites before immunity is suppressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 provide context from prior literature (appropriately cited) and reasonable speculation about how constitutive immunity provides resistance. The speculation (C109) is clearly identified as such and is mechanistically plausible given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Populations adapted to high parasitism evolved two key phenotypes explaining higher resistance: producing more hemocytes in homeostasis and producing lamellocytes more rapidly upon infection. Increased constitutive PPO3 expression may make cytotoxic molecules more readily available. The constitutive activation of cellular immunity likely explains the greatly increased resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 synthesize the main findings into a coherent mechanistic model. The two-phenotype explanation (C110) is well-supported by the hemocyte counting and time-course data. The PPO3 finding (C111-C112) adds additional mechanistic detail. The overall conclusion (C113) is justified by the totality of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on Drosophila cellular immunity: uninfected larvae have plasmatocytes and crystal cells; infection triggers lamellocyte differentiation from plasmatocytes and lymph gland cells; lamellocytes form capsules around parasitoid eggs that are melanized by phenoloxidases. Genetic variation in resistance is associated with increased hemocyte numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C35 provide established background information appropriately cited from prior literature. These are not novel findings but necessary context for understanding the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C71",
+      "C72"
+    ],
+    "result": "Comparison with two published scRNA-seq datasets showed strong correspondence for crystal cells, lamellocytes, and AMP-expressing plasmatocytes, with less correspondence for other plasmatocyte clusters. The mature lamellocyte cluster (LAM3) and immature clusters (LAM1-2) matched corresponding clusters in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C71-C72 validate the clustering approach by comparison with independent datasets. The strong correspondence for key cell types (crystal cells, lamellocytes) and weaker correspondence for plasmatocyte subtypes is appropriately documented and discussed.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2093 @@
+{
+  "submission": {
+    "id": "a749f94e-92c0-4c13-876c-d7a25ddce474",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:48:47.318462Z",
+    "updated_at": "2025-12-03T05:48:47.318462Z"
+  },
+  "content": [
+    {
+      "id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "submission_id": "a749f94e-92c0-4c13-876c-d7a25ddce474",
+      "content_type": "manuscript",
+      "content_text": "# The structural connectome constrains fast brain dynamics\n\n## Authors\n\n- Pierpaolo Sorrentino<sup>1</sup> ([ORCID: 0000-0002-9556-9800](https://orcid.org/0000-0002-9556-9800)) \u2020\n- Caio Seguin<sup>5</sup>\n- Rosaria Rucco<sup>2</sup> ([ORCID: 0000-0003-0943-131X](https://orcid.org/0000-0003-0943-131X))\n- Marianna Liparoti<sup>2</sup> ([ORCID: 0000-0003-2192-6841](https://orcid.org/0000-0003-2192-6841))\n- Emahnuel Troisi Lopez<sup>2</sup> ([ORCID: 0000-0002-0220-2672](https://orcid.org/0000-0002-0220-2672))\n- Simona Bonavita<sup>6</sup>\n- Mario Quarantelli<sup>7</sup> ([ORCID: 0000-0001-7836-454X](https://orcid.org/0000-0001-7836-454X))\n- Giuseppe Sorrentino<sup>4</sup> ([ORCID: 0000-0003-0800-2433](https://orcid.org/0000-0003-0800-2433))\n- Viktor Jirsa<sup>1</sup> ([ORCID: 0000-0002-8251-8860](https://orcid.org/0000-0002-8251-8860))\n- Andrew Zalesky<sup>5</sup>\n\n### Affiliations\n\n1. Aix-Marseille University, Inserm, INS, Institut de Neurosciences des Syst\u00e8mes Marseille France\n2. Department of Motor Sciences and Wellness, Parthenope University of Naples Naples Italy\n3. Institute for Diagnosis and Cure Hermitage Capodimonte Naples Italy\n4. Institute of Applied Sciences and Intelligent Systems, National Research Council Pozzuoli Italy\n5. University of Melbourne Melbourne Australia\n6. University of Campania Luigi Vanvitelli Caserta Italy\n7. Biostructure and Bioimaging Institute, National Research Council Naples Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nBrain activity during rest displays complex, rapidly evolving patterns in space and time. Structural connections comprising the human connectome are hypothesized to impose constraints on the dynamics of this activity. Here, we use magnetoencephalography (MEG) to quantify the extent to which fast neural dynamics in the human brain are constrained by structural connections inferred from diffusion MRI tractography. We characterize the spatio-temporal unfolding of whole-brain activity at the millisecond scale from source-reconstructed MEG data, estimating the probability that any two brain regions will significantly deviate from baseline activity in consecutive time epochs. We find that the structural connectome relates to, and likely affects, the rapid spreading of neuronal avalanches, evidenced by a significant association between these transition probabilities and structural connectivity strengths (r = 0.37, p<0.0001). This finding opens new avenues to study the relationship between brain structure and neural dynamics.\n\n## Introduction\n\nThe structural scaffolding of the human connectome (Sporns et al., 2005) constrains the unfolding of large-scale coordinated neural activity towards a restricted functional repertoire (Deco et al., 2011). While functional magnetic resonance imaging (fMRI) can elucidate this phenomenon at relatively slow timescales (Honey et al., 2007; Go\u00f1i et al., 2014; Zalesky et al., 2014), brain activity shows rich dynamic behaviour across multiple time\u00a0scales, with faster activity nested within slower scales. Here, in healthy young adults, we exploit the high temporal resolution of resting-state magnetoencephalography (MEG) data to study the spatial spread of perturbations of local activations representative of neuronal avalanches. We aim to establish whether the structural connectome constrains the spread of avalanches among regions (Beggs and Plenz, 2004; Shriki et al., 2013). We find that avalanche spread is significantly more likely between pairs of grey matter regions that are structurally connected, as inferred from diffusion MRI tractography. This result provides cross-modal empirical evidence suggesting that connectome topology constrains fast-scale transmission of neural information, linking brain structure to brain dynamics.\n\n## Results\n\nStructural connectomes were mapped for 58 healthy adults (26 females, mean age \u00b1 SD: 30.72 \u00b1 11.58) using diffusion MRI tractography and regions defined based on the Automated Anatomical Labeling (AAL) and the Desikan\u2013Killiany\u2013Tourville (DKT) atlases. Interregional streamline counts derived from whole-brain deterministic tractography quantified the strength of structural connectivity between pairs of regions. Streamline counts were normalized by regional volume. Group-level connectomes were computed by averaging connectivity matrices across participants.\n\nMEG signals were pre-processed and source reconstructed for both the AAL and DKT atlases. All analyses were conducted on source-reconstructed signal amplitudes. Each signal amplitude was z-scored and binarized such that, at any time point, a z-score exceeding a given threshold was set to 1 (active); all other time\u00a0points were set to 0 (inactive). An avalanche was defined as starting when any region exceeded this threshold, and finished when no region was active. An avalanche-specific transition matrix (TM) was calculated, where element (i, j) represented the probability that region j was active at time t\u00a0+\u00a0\u03b4, given that region i was active at time t, where \u03b4~3 ms. The TMs were averaged per participant, and then per group, and finally symmetrized. Figure 1 provides an overview of the pipeline.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67400/elife-67400-fig1-v3.jpg)\n\n**Figure 1.:** (A)\u00a0Rendering of streamlines reconstructed using diffusion magnetic resonance imaging and tractography for an individual.\u00a0(B) Structural connectivity matrix. Row/columns represent regions comprising a brain atlas. Matrix entries store the number of streamlines interconnecting each pair of regions. (C) Source-reconstructed magnetoencephalography series. Each blue line represents the z-scored activity of a region, and the red lines denote the threshold (z-score\u00a0= \u00b13). The inset represents a magnified version of a time\u00a0series exceeding the threshold. (D) Raster plot of an avalanche. For each region, the moments in time when the activity is above threshold are represented in black, while the other moments are indicated in white. The particular avalanche that is represented involved three regions. (E) Estimation of the transition matrix of a toy avalanche. Region i is active three times during the avalanche. In two instances, denoted by the green arrows, region j was active after region i. In one instance, denoted by the red arrow, region i is active but region j does not activate at the following time step. This situation would result, in the transition matrix, as a 2/3 probability. (F) Average structural matrix and average transition matrix (log scale).\n\nWe found striking evidence of an association between avalanche transition probabilities and structural connectivity strengths (Figure 2), suggesting that regional propagation of fast-scale neural avalanches is partly shaped by the axonal fibres forming the structural connectome (r\u00a0=\u00a00.40, p<0.0001). Specifically, the association was evident for different activation thresholds and both the AAL and DKT connectomes (AAL atlas: for threshold z\u00a0=\u00a02.5, r\u00a0=\u00a00.41; for threshold z\u00a0=\u00a03.0, r\u00a0=\u00a00.40; for threshold z\u00a0=\u00a03.5, r\u00a0=\u00a00.39; DKT atlas: for threshold z\u00a0=\u00a02.5, r\u00a0=\u00a00.38; for threshold z\u00a0=\u00a03.0, r\u00a0=\u00a00.37; for threshold z\u00a0=\u00a03.5, r\u00a0=\u00a00.35; in all cases, p<0.0001), as well as for individual- and group-level connectomes, although associations were stronger for group-level analyses (see Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67400/elife-67400-fig2-v3.jpg)\n\n**Figure 2.:** (A)\u00a0Distribution of the r\u2019s of the Spearman\u2019s correlation between the subject-specific transition matrices and structural connectomes.\u00a0The black diamond represent the r\u2019s of the group-averaged matrices. On the left, the results for the Automated Anatomical Labeling\u00a0(AAL) atlas; on the right, the results for the Desikan\u2013Killiany\u2013Tourville\u00a0(DKT) atlas. Green, purple, and orange dots represent results obtained with a z-score threshold of 2.5, 3, and 3.5, respectively. (B, C) Data referring to the AAL atlas in (B)\u00a0and DKT atlas in (C). On the top\u00a0left, the average structural matrix; on the bottom left, the average transition matrix. The scatterplot shows the correlation between the values of the structural edges and the transition probabilities for the corresponding edge. The black line represents the best fit line in the least-square sense. On the right, the distribution shows the r\u2019s derived from the null distribution. The dotted blue line represents the observed r. Please note that, for visualization purposes, the connectivity weights and the transition probabilities were resampled to normal distributions. Figure 2\u2014figure supplement 1 shows the comparison between the structural connectome and the transition matrix computed by taking into account longer delays. In Supplementary file 1, we report a table with an overview of the results of the frequency-specific analysis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67400/elife-67400-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** On the right, the average transition matrix.\n\nWe also investigated this phenomenon within specific frequency bands. Associations were evident in all the classical frequency bands: delta (0.5\u20134 Hz; r\u00a0=\u00a00.39), theta (4\u20138 Hz; r\u00a0=\u00a00.29), alpha (8\u201313 Hz; r\u00a0=\u00a00.32), beta (13\u201330 Hz; r\u00a0=\u00a00.32), and gamma (30\u201348 Hz; r\u00a0=\u00a00.32), with p<0.0001 for all bands (see Supplementary file 1). Supplementary analyses suggested that these results could not be attributable to volume conduction confounds (see section\u00a0Field spread analysis).\n\nNext, we sought to test whether the associations were weaker for randomized TMs computed after randomizing the times of each avalanche while keeping the spatial structure unchanged. Randomized TMs resulted in markedly weaker associations with structural connectivity compared to the actual TMs (AAL atlas, z-score\u00a0=\u00a03: mean r = 0.26, observed r\u00a0= 0.40, p<0.001). Note that the mean correlation coefficient was greater than zeros for the randomized data because the randomization process preserved basic spatial attributes in the data. We also found that the findings remained significant after excluding subcortical regions (with lower signal-to-noise ratios). Finally, we replicated these findings for a group-level connectome derived using diffusion MRI acquired from 200 healthy adults in the Human Connectome Project (r\u00a0=\u00a00.11, p<0.001, z-score\u00a0=\u00a03; see Materials\u00a0and\u00a0methods). Our results were thus robust to multiple connectome mapping pipelines and parcellation atlases, significant for both group-averaged and individual connectomes, and could not be explained by chance transitions and/or volume conduction effects. Collectively, these results suggest that connectome organization significantly shapes the propagation of neural activity.\n\n## Discussion\n\nOur results provide new insight into the propagation of fast-evolving brain activity in the human connectome. We show that the spatial unfolding of neural dynamics at the millisecond scale relates to the network of large-scale axonal projections comprising the connectome, likely constraining the exploration of the brain\u2019s putative functional repertoire. The short time scale of several milliseconds biases the constraint to direct connections, which is the focus of this paper. Longer delays may impose constraints upon larger-scale motifs of the network and further characterize the sub-spaces, in which brain dynamics unfold.\n\nPrevious functional MRI studies provide evidence of coupling between structural connectivity and slow activations (Honey et al., 2007; Honey et al., 2010; Honey et al., 2009). However, intrinsic neural dynamics evolve quickly and are nested within slow activity (Saggio et al., 2017). Our findings suggest that long-term structure-function coupling occurs against a backdrop of faster fluctuations, which are also constrained by the connectome and may enable individuals to rapidly respond to changing environments and new cognitive demands (McIntosh and Jirsa, 2019).\n\nConsistent with our findings, two recent M/EEG studies showed that functional connectivity, as estimated using amplitude-envelope coupling (AEC), relates to structural connectivity (Glomb et al., 2020; Tewarie et al., 2019). However, in contrast to AEC, we conducted time-resolved analyses, characterizing avalanche dynamics at high temporal resolution. Further work is needed to determine the extent to which structure-function coupling is dynamic. To this regard, our results suggest that coupling is strongest during avalanche events, consistent with established theories (Dehaene et al., 1998). Finally, our results might explain how the large-scale activity unfolding in time might lead to the previous observation that average resting-state functional connectivity displays topological features that mirror those of the structural connectome (Bullmore and Sporns, 2009). Our proposed framework links the large-scale spreading of aperiodic, locally generated perturbations to the structural connectome and might be further exploited to investigate polysynaptic models of network communication, which aim to describe patterns of signalling between anatomically unconnected regions (Seguin et al., 2018; Seguin et al., 2019). In fact, our results show that transitions of activations are observed across regions that do not appear to be directly linked in the structural connectome. This provides evidence for polysynaptic communication.\n\nNeuronal avalanches have been previously observed in MEG data (Shriki et al., 2013), and their statistical properties, such as a size distribution that obeys a power-law with an exponent of \u22123/2, reported. These features are compatible with those that would be predicted starting from a process operating at criticality with a branching ratio equal to 1. While beyond the scope of this paper, our framework might contribute to elucidating the role of the structural scaffolding (and its topological properties) to the emergence of the observed large-scale, scale-free critical dynamics. In turn, this might be exploited to predict the effects of structural lesions on behaviour and/or clinical phenotypes.\n\nWhile our findings were replicated across multiple frequency bands, structural connectivity can potentially impose frequency-dependent constraints on avalanche spread. Future work should investigate frequency-specific data to understand what leads to the emergence of avalanches and, most importantly, to the specific spatio-temporal patterns of recruited regions that defines individual (or at least groups of) avalanches in each specific frequency\u00a0band.\n\nFor the present application, we reconstructed the structural connectome using a deterministic tractography algorithm. While probabilistic algorithms can provide advantages in some applications, they are prone to reconstruction of spurious connections (false positives), compared to deterministic methods, reducing connectome specificity (Sarwar et al., 2019; Zalesky et al., 2016). We used deterministic tractography because previous functional MRI studies report that structure-functional coupling is greater for connectivity matrices inferred from deterministic tractography compared to probabilistic methods (Abeyasinghe et al., 2021). Nonetheless, additional studies are needed to clarify if and to what extent the present results are influenced by the structural connectome reconstruction method. While we replicated our findings using alternative datasets (i.e., Human Connectome Project\u00a0[HCP]) and parcellations, further replication using alternative connectome mapping pipelines is warranted.\n\nIn conclusion, using MEG to study fast neuronal dynamics and diffusion MRI tractography to map connectomes, we found that the connectome significantly constrains the spatial spread of neuronal avalanches to axonal connections. Our results suggest that large-scale structure-function coupling is dynamic and peaks during avalanche events.\n\n## Materials and methods\n\n### Participants\n\nWe recruited 58 young adults (males 32/females 26, mean age \u00b1 SD was 30.72 \u00b1 11.58) from the general community. All participants were right-handed and native Italian speakers. The inclusion criteria were (1) no major internal, neurological, or psychiatric illnesses; and\u00a0(2) no use of drugs or medication that could interfere with MEG/MRI signals. The study complied with the Declaration of Helsinki and was approved by the local Ethics Committee. All participants gave written informed consent.\n\n### MRI acquisition\n\n3D T1-weighted brain volumes were acquired at 1.5 Tesla (Signa, GE Healthcare) using a 3D Magnetization-Prepared Gradient-Echo BRAVO sequence (TR/TE/TI 8.2/3.1/450 ms, voxel 1 \u00d7 1 \u00d7 1 mm3, 50% partition overlap, 324 sagittal slices covering the whole brain), and diffusion MRI data for individual connectome reconstruction were obtained using the following parameters: Echo-Planar Imaging, TR/TE 12,000/95.5 ms, voxel 0.94\u00a0\u00d7\u00a00.94\u00a0\u00d7\u00a02.5\u00a0mm3, 32 diffusion-sensitizing directions (5 B0 volumes). The MRI scan was performed after the MEG recording. Pre-processing of the diffusion MRI data was carried out using the software modules provided in the FMRIB Software Library (FSL, http://fsl.fmrib.ox.ac.uk/fsl). All diffusion MRI datasets were corrected for head movements and eddy currents distortions using the \u2018eddy_correct\u2019 routine, rotating diffusion sensitizing gradient directions accordingly, and a brain mask was obtained from the B0 images using the Brain Extraction Tool routine. A diffusion-tensor model was fitted at each voxel, and streamlines were generated over the whole brain by deterministic tractography using Diffusion Toolkit (FACT propagation algorithm, angle threshold 45\u00b0, spline-filtered, masking by the Fractional\u00a0Anisotropy\u00a0(FA) maps thresholded at 0.2). For tractographic analysis, the regions of interest\u00a0(ROIs) of the AAL atlas and of an MNI space-defined volumetric version of the DKT ROI atlas were used, both masked by the\u00a0gray\u00a0matter (GM) tissue probability map available in Statistical Parametric Mapping Software - SPM (thresholded at 0.2). To this end, for each participant, FA volumes were normalized to the MNI space using the FA template provided by FSL, using the spatial normalization routine available in SPM12, and the resulting normalization matrices were inverted and applied to the ROIs, to apply them onto each subject. The quality of the normalization was assessed visually. From each subject's whole-brain tractography and corresponding GM ROI set, the number of streamlines connecting each couple of GM ROIs and the corresponding mean tract length was calculated using an in-house software written in Interactive Data Language (IDL, Harris Geospatial Solutions, Inc, Broomfield, CO).\n\nConnectomes in the replication dataset were constructed using an alternative mapping pipeline and diffusion MRI data from the HCP. Deterministic tractography was performed using MRtrix3 (Tournier et al., 2019) under the following parameters: FACT algorithm, 5 million streamlines, 0.5 mm propagation step size, 400 mm maximum propagation length, and 0.1 FA threshold for the termination of streamlines (Seguin et al., 2019). The number of streamlines connecting any couple of regions was normalized by the combined volume of the two regions. Structural matrices were constructed for 200 HCP participants using the AAL atlas and averaged to derive a group-level connectome.\n\n### MEG pre-processing\n\nMEG pre-processing and source reconstruction were performed as in Sorrentino et al., 2021. The MEG system was equipped with 163 magnetometers and was developed by the National Research Council of Italy at the Institute of Applied Sciences and Intelligent Systems (ISASI). All technical details regarding the MEG device are reported in Rombetto et al., 2014. In short, the MEG registration was divided into two eyes-closed segments of 3:30 min each. To identify the position of the head, four anatomical points and four position coils were digitized. Electrocardiogram (ECG) and electro-oculogram (EOG) signals were also recorded. The MEG signals, after an anti-aliasing filter, were acquired at 1024 Hz, then a fourth-order Butterworth IIR band-pass filter in the 0.5\u201348 Hz band was applied. To remove environmental noise, measured by reference magnetometers, we used principal component analysis. We adopted supervised independent component analysis to clean the data from physiological artefacts, such as eye blinking (if present) and heart activity (generally one component). Noisy channels were identified and removed manually by an expert rater (136 \u00b1 4 sensors were kept). 47 subjects were selected for further analysis.\n\n### Source reconstruction\n\nThe time series of neuronal activity were reconstructed in 116 ROIs based on the AAL atlas (Tzourio-Mazoyer et al., 2002; Hillebrand et al., 2016); and in 84 regions of interest based on the DKT atlas. To do this, we used the volume conduction model proposed by Nolte, 2003 applying the linearly constrained minimum variance (LCMV) beamformer algorithm (Van Veen et al., 1997) based on the native structural MRIs. Sources were reconstructed for the centroid of each ROI. Finally, we considered a total of 90 ROIs for the AAL atlas since we have excluded 26 ROIs corresponding to the cerebellum because of their low reliability in MEG (Lardone et al., 2018). All the pre-processing steps and the source reconstruction were made using the Fieldtrip toolbox (Oostenveld et al., 2011).\n\n### Neuronal avalanches and branching parameter\n\nTo study the dynamics of brain activity, we estimated \u2018neuronal avalanches\u2019. Firstly, the time series of each ROI was discretized calculating the z-score, then positive and negative excursions beyond a threshold were identified. The value of the threshold was set to three standard deviations (|z| = 3), but we tested the robustness of the results changing this threshold from 2.5 to 3.5. A neuronal avalanche begins when, in a sequence of contiguous time bins, at least one ROI is active (|z| >3) and ends when all ROIs are inactive (Beggs and Plenz, 2003; Shriki et al., 2013). The total number of active ROIs in an avalanche corresponds to its size.\n\nThese analyses require the time series to be binned. This is done to ensure that one is capturing critical dynamics, if present. To estimate the suitable time bin length, for each subject, each neuronal avalanches, and each time bin duration, the branching parameter \u03c3 was estimated (Haldeman and Beggs, 2005; Harris, 1964). In fact, systems operating at criticality typically display a branching ratio ~1. The branching ratio is calculated as the geometrically averaged (over all the time bins) ratio of the number of events (activations) between the subsequent time bin (descendants) and that in the current time bin (ancestors) and then averaging it over all the avalanches (Bak et al., 1987). More specifically:\n\n$$\n\\sigma_{i}=\\frac{1}{N_{bin}-1}\\prodj=1N_{bin}-1\\frac{n_{events}j+1}{n_{events}j}^{\\frac{1}{N_{bin}-1}}\n$$\n\n\n\n$$\n\\sigma=\\frac{1}{N_{aval}}\\prodi=1N_{aval}\\sigma_{i}^{\\frac{1}{N_{aval}}}\n$$\n\nwhere $\\sigma_{i}$ is the branching parameter of the ith avalanche in the dataset, $N_{bin}$\u00a0is the total amount of bins in the ith avalanche, $n_{events}(j)$\u00a0is the total number of events active in the jth bin, and\u00a0$N_{aval}$\u00a0is the total number of avalanche in the dataset. We tested bins from 1 to 5, and picked 3 for further analyses, given that the branching ratio was 1 for bin =\u00a03. However, results are unchanged for other bin durations, and the branching ratio remains equal to 1 or differences were minimal (range: 0.999\u20131.010 \u2013 data not shown). Bins of longer duration would violate the Nyquist criterion and were thus not considered. The results shown are derived when taking into account avalanches longer than 10 time bins. However, we repeated the analysis taking into account avalanches longer than 30 time bins, as well as taking all avalanches into account, and the results were unchanged.\n\n### Transition matrices\n\nThe amplitude of each binned, z-scored source-reconstructed signal was binarized, such that, at any time bin, a z-score exceeding \u00b13 was set to 1 (active); all other time bins were set to 0 (inactive). Alternative z-score thresholds (i.e., 2.5 and 3.5) were tested. An avalanche was defined as starting when any region is above threshold and finishing when no region is active, as in Sorrentino et al., 2021. Avalanches shorter than 10 time bins (~30 ms) were excluded. However, the analyses were repeated including only avalanches longer than 30 time bins (~90 ms) to focus on rarer events (sizes of the neuronal avalanches have a fat-tailed distribution) that are highly unlikely to be noise, and including all avalanches, and the results were unchanged. An avalanche-specific TM was calculated, where element (i, j) represented the probability that region j was active at time t\u00a0+\u00a0\u03b4, given that region i was active at time t, where \u03b4~3 ms. The TMs were averaged per participant, and then per group, and finally symmetrized. The introduction of a time\u00a0lag makes it unlikely that our results can be explained trivially by volume conduction (i.e., the fact that multiple sources are detected simultaneously by multiple sensors, generating spurious zero\u00a0lag correlations in the recorded signals). For instance, for a binning of 3, as the avalanches proceed in time, the successive regions that are recruited do so after roughly 3 ms (and 5 ms for the binning of 5). Hence, activations occurring simultaneously do not contribute to the estimate of the TM. See below for further analyses addressing the volume conduction issue. Finally, we explored TMs estimated using frequency-specific signals. To this end, we filtered the source-reconstructed signal in the classical frequency bands (delta, 0.5\u20134 Hz; theta 4\u20138 Hz; alpha 8\u201313 Hz; beta 13\u201330 Hz; gamma 30\u201348 Hz), before computing neuronal avalanches and the TM, by applying a fourth-order Butterworth pass-band filter to the source-reconstructed data, before proceeding to the further analysis as previously described. The results remained significant in all the explored frequency bands. This analysis was carried out for the DKT atlas, binning = 3, z-score threshold = \u00b1 3.\n\n### Field spread analysis\n\nVolume conduction alone is an unlikely explanation of our results, given that simultaneous activations do not contribute to the TM, due to the time lags introduced. To confirm that volume conduction effects were negligible, the TMs were re-computed using longer delays. In short, we identified the regions that were recruited in an avalanche after the first perturbation (i.e., the initial time\u00a0bin of an avalanche). Since we did not scroll through the avalanche in time, as previously described, we considered time delays as long as the avalanche itself, while minimizing the influence of short delays. This means that the avalanche-specific TM is now binary, and the ijth element is equal to 1 if region i started the avalanche (i.e., it was active at the first time\u00a0bin) and region j was recruited in the avalanche at any subsequent time\u00a0point, and 0 otherwise. This alternative procedure for the estimation of the TMs was carried out for the AAL atlas, in the case of binning =\u00a03, z-score threshold = \u00b1 3. In this case, a significant association remained between transition probabilities and structural connectivity (r\u00a0=\u00a00.36; p<0.0001). Figure 2\u2014figure supplement 1 provides further details.\n\nTo further rule out the possibility that field spread might introduce spurious correlations that might drive the relationship between the TM and the structural connectivity matrix, we conducted further analyses involving surrogate data. We generated n white Gaussian processes, with n = 66, that\u00a0is, the number of cortical regions, and we smoothed them using a zero-phase polynomial filter. Then, we added 100 perturbations, where each perturbation was assigned to a randomly chosen regions and random time point, subject to the following constraints. Perturbations were separated by at least 200 samples (no overlap was allowed, i.e., the perturbations could only occur in one region at a time), their length was randomly selected among 5, 10, or 100 samples, their amplitude between 50 and 400. This procedure was carried out 47 times to obtain an independent surrogate dataset for each one of the 47 participants, which will be referred to as the \u2018uncoupled\u2019 dataset. The uncoupled dataset was then transformed using the subject-specific leadfield matrix, yielding new surrogate sensor-level time\u00a0series, where each sensor is a weighted sum of all the sources, according to the same leadfield matrix that was used to reconstruct the real data. Noise, correlated as 1/distance among sensors, was then added to the sensor-level time series, with an SNR = 4. Then, new source-reconstructed time series were computed for each subject. Based on these new time series, we performed the same procedure to compute the TM as described above. Specifically, we z-scored the time series, thresholded them (threshold z\u00a0=\u00a0\u00b13), retrieved the avalanche-specific TMs, averaged these within each subject and then across the group, and finally symmetrized the matrix. We then investigated the extent of the\u00a0correlation between the new TM and the structural connectivity matrix. We repeated the entire procedure reported above 100 times and show that is unlikely that linear mixing alone can explain the significant association between transition probabilities and structural connectivity (p<0.001).\n\n### Statistical analysis\n\nThe Spearman rank correlation coefficient was used to assess the association between transition probabilities and structural connectivity. A correlation coefficient was computed separately for each individual across all pairs of regions. TMs were symmetrized before this computation. Randomized TMs were generated to ensure that associations between transition probabilities and structural connectivity could not be attributed to chance. Avalanches were randomized across time, without changing the order of active regions at each time step. We generated a total of 1000 randomized TMs and the Spearman rank correlation coefficient was computed between each randomized matrix and structural connectivity. This yielded a distribution of correlation coefficients under randomization. The proportion of correlation coefficients that were greater than, or equal to, the observed correlation coefficient provided a p-value for the null hypothesis that structure-function coupling was attributable to random transition events.\n",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "294650f3-6a54-480d-ac08-a2c807d329e0",
+      "submission_id": "a749f94e-92c0-4c13-876c-d7a25ddce474",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Diego Vidaurre, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67400.sa1](https://doi.org/10.7554/eLife.67400.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis paper addresses the relationship between the electrophysiological and the anatomical connectomes, utilising a method to describe avalanches of activity. In these rapid events brain activity cascades across cortex. The current paper shows that these avalanches follow the routes of anatomical connections. The result also implies more spatial precision that most would assume possible, which makes the manuscript particularly interesting to M/EEG researchers. The reviewers therefore agree that the paper has broad interest.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The structural connectome constrains fast brain dynamics\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Diego Vidaurre as a Reviewing Editor and Timothy Behrens as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andrew J Quinn (Reviewer #1); George O'Neill (Reviewer #2).\n\nEssential Revisions:\n\n1. Resolve if the results are fundamentally driven by leakage\n\n2. Determine the influence of the region size and SNR on the results.\n\n3. Clarify the description of the method\n\n4. Frame the work into the current literature\n\nReviewer #1 (Recommendations for the authors):\n\n1) The following matlab code illustrates my concern with volume conduction (written in version R2019a). This generates a simple aperiodic signal and linearly weights it into 20 regions before computing an approximation of the avalanches analysis.\n\n%%\n\nrng(42);\n\na = poly(0.98);\n\nx = filtfilt(1,a,randn(5000,1));\n\nx = x(500:4500); % trim filter edges\n\n% Add two larger pertubations\n\nx(1000:2000) = x(1000:2000) + 400*sin(2*pi*linspace(0,0.5,1001)');\n\nx(2500:3000) = x(2500:3000) + 1000*sin(2*pi*linspace(0,0.5,501)');\n\n% Create + apply linear weights vector\n\nweights = [linspace(0,1,10), linspace(1,0,10)].^3;\n\ny = x * weights;\n\n% Add noise, z-transform and smooth\n\ny = y + randn(4001,1)*60;\n\ny = zscore(y);\n\ny = movmean(y,41,1);\n\n% Illustrate\n\nthreshold = 1; % bit low but for illustration\n\nfigure;\n\nsubplot(211);hold on\n\nplot(y);\n\nplot([0 4001],[threshold threshold],'k:')\n\nplot([0 4001],[-threshold -threshold],'k:')\n\naxis('tight')\n\ntitle('Linearly mixed signals')\n\nsubplot(212)\n\nimagesc(abs(y)'>threshold)\n\ncolormap('bone')\n\ntitle('Avalanches');\n\n%%\n\nNote that in panel 2 on the bottom the onset of the 'active' periods is temporally lagged across regions \u2013 sometimes by up to 10s or 100s of samples. The combination of amplitude weighting, noise and z-transforming can therefore induce apparent time-lagged interactions. I don't know how much of the main effect in the paper is driven by this effect but it absolutely must be explored and accounted for. It is not sufficient to say that \"The introduction of a time-lag makes it unlikely that our results can be explained trivially by volume conduction\"\n\n2) A lot of discussion about the results uses quite forceful causal language.\n\nline 25 \"We find that the structural connectome profoundly shapes rapid spreading of neuronal avalanches\"\n\nline 100 \"We show that the spatial unfolding of neural dynamics at the millisecond scale is shaped by the network of large-scale axonal projections comprising the connectome, thereby constraining exploration of the brain's putative functional repertoire.\"\n\nWhilst I agree that a structure->function relationship is perhaps the more likely interpretation, this is a correlational study which does not assess whether structure shapes function or vice versa \u2013 simply that there is an association. The writing would be improved by acknowledging this and adopting a more cautious interpretation.\n\n3) Some parts of the methods writing is unclear, perhaps as the whole manuscript is so short. For example, I do not understand the second method for estimating transition probabilities outlined here:\n\n\"After the initial time-bin of an avalanche, we kept track of what other regions were recruited after the first perturbation. Importantly, we did not scroll through the avalanche in time, as previously described, so as to include time delays as long as the avalanche itself.\"\n\n4) I am unsure how to interpret the finding that the results are almost completely unchanged by band-pass filtering the data \u2013 \u03b1, \u03b2 and \u03b3 even have identical R-values. On one hand this could indicate that the results rest completely on wide broadband effects but given the large and well established functional and topographical differences between these oscillations it seems likely that we would expect at least some difference. Particularly as similar past papers do show different structure-function relationships between different MEG frequency bands (https://www.sciencedirect.com/science/article/abs/pii/S1053811918320603). It would be useful for the authors to discuss this point and its potential meaning in more detail.\n\n5) It would be good to see full use of the large datasets presented here. For instance, do the results have test-retest reliability across the two scans analysed per participant? Why only reproduce the finding using the HCP DWI data but not the HCP MEG data?\n\n6) The data appears to be available from the authors 'upon request and conditional on ethics approval' but the analysis code does not appear to be available online.\n\nReviewer #2 (Recommendations for the authors):\n\nI think you are definitely onto something here, but I am not quite sure if this is necessarily the full picture \u2013 yet. It's not too difficult to remedy I imagine, but I think on a technical level I'd like to query two main points on this.\n\nI realise that this is a short communication, but it does appear to assume that no work in the M/EEG field on relating structure and function exists, any previous work been done using fMRI. I think it might be important to just give a bit more context where in the literature this might sit? Just looking around for a couple of quick examples of relating white matter tractography data to functional connectivity, there's a study relating EEG connectivity to structural connectivity (Glomb et al., 2020, Network Neurosci. 4 (3): 761-787) And plenty of modelling papers which trying to look at how structure would generate observable M/EEG connectomes (eg. Tewarie et al., 2019 NeuroImage 186). I think a slightly wider look at the literature on this would be really helpful. Crucially, it's not that I don't think that this isn't novel, but rather it seems to currently seems to not acknowledge the exitance of previous work in the M/EEG field?\n\nThe use of neuronal avalanches method, is it as invariant to leakage as you initially think it is? Leakage is a product of signal variance (c.f. O'Neill et al., 2015 Phys. Med. Biol R217). So if a signal is stronger in amplitude, the leakage increases and can propagate further. So in principle, if a seed area reaches over a threshold z-score, it could continue to raise in amplitude such that a test area might also then reach a threshold? Could other (i guess more established) connectivity metrics be able to resolve this also? I was wondering even if you assume stationary variance in your signal, you might be able to analytically estimate 'leakage' between two areas (see the O'neill paper above for an analytic expression). Could you then (potentially) have a leakage connectome and see how well that predicts your avalanches perhaps? If its considerably less than the structural, I'd be a lot more confident in what I am seeing.\n\nReviewer #3 (Recommendations for the authors):\n\nIs the in-house software written in Interactive Data Language (used for calculating the number of streamlines connecting each pair of ROIs and the corresponding mean tract length) publicly available? If so, please provide a web link to it.\n\nA bit of extra information about the MEG scanner would also be useful, in addition to reporting the actual number of channels that were manually removed.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The structural connectome constrains fast brain dynamics\" for further consideration by eLife. Your revised article has been evaluated by Timothy Behrens (Senior Editor) and Diego Vidaurre (Reviewing Editor).\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nAs you can see, all Reviewers are satisfied with the responses, but Reviewer #1 requests some further clarifications on the simulations, and a possible improvement. Since this seems very relevant to the contents of the manuscript, we would like to ask you to go through one more revision.\n\nReviewer #1 (Recommendations for the authors):\n\nMany thanks to the authors for a clear and thorough response to my queries. Overall, the revised manuscript is greatly improved and the changes largely address my concerns.\n\nI must ask for one final clarification, and possible addition, to the simulation scheme looking at leakage. The revision doesn't state whether any noise is added at the sensor level between projection through the leadfields and subsequent beamforming \u2013 is any noise added here? If so, please in include any details (and my apologies if I missed this detail somewhere)\n\nIf not, then this additional step should be added to the pipeline. As it stands, the simulation without sensor noise creates unusually favourable conditions for the beamformer. Environmental and sensor noise have their own dynamics and can be correlated in time and across sensors, these correlations mask neuronal signals and can be tricky for the beamformer to completely remove.\n\nA gold standard would be to add sensor noise from an empty room recording, or if this is impractical then some modestly scaled noise whose sensor x sensor covariance matrix an example empty room recording.\n\nThe correlations of both the 'coupled' and 'uncoupled' simulations are substantially lower than the observed value in the 'correlation of lineally mixed surrogates' figure. I suspect this is partially due to favourable beamforming from missing sensor noise, as it stands the beamformer is able to remove nearly all spurious events. Including the sensor noise would likely induce some more spurious connections in both the coupled and uncoupled cases, it would be a very strong validation of the method to demonstrate that these are still distinguishable from the observed effects.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have met my initial concerns with the submission. Assuming other reviewers feel the same I am happy with this being published.\n\nReviewer #3 (Recommendations for the authors):\n\nThank you very much for your revisions. My comments have been addressed satisfactorily.\n",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d13c3dd0-9451-4afc-8b82-f54fa0977034",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C1",
+      "claim": "The study recruited 58 young adults (32 males, 26 females) with a mean age of 30.72 \u00b1 11.58 years from the general community.",
+      "claim_type": "EXPLICIT",
+      "source": "We recruited 58 young adults (males 32/females 26, mean age \u00b1 SD was 30.72 \u00b1 11.58) from the general community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the Methods section describing participant demographics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "bf9b30f1-c6c1-40f2-9b6b-dbc00e550ba5",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C2",
+      "claim": "All participants were right-handed and native Italian speakers.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants were right-handed and native Italian speakers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing participant characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "370317e0-0507-4a7b-803a-52df5114582a",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C3",
+      "claim": "The structural connectome constrains the dynamics of brain activity during rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural connections comprising the human connectome are hypothesized to impose constraints on the dynamics of this activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central hypothesis being tested in the study",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "dd81a82e-c7b9-4c37-8ea0-3df362998436",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C4",
+      "claim": "There is a significant association between transition probabilities and structural connectivity strengths (r = 0.37, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the structural connectome relates to, and likely affects, the rapid spreading of neuronal avalanches, evidenced by a significant association between these transition probabilities and structural connectivity strengths (r = 0.37, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation reported with p-value from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "ef94b8c2-a0b3-48b7-a83f-70e3d59aa0d5",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C5",
+      "claim": "Brain activity shows rich dynamic behaviour across multiple time scales, with faster activity nested within slower scales.",
+      "claim_type": "EXPLICIT",
+      "source": "brain activity shows rich dynamic behaviour across multiple time scales, with faster activity nested within slower scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about general properties of brain activity based on established understanding",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "9101afae-8f3a-41d3-b5fd-2cde7952d1f3",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C6",
+      "claim": "Avalanche spread is significantly more likely between pairs of grey matter regions that are structurally connected.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that avalanche spread is significantly more likely between pairs of grey matter regions that are structurally connected, as inferred from diffusion MRI tractography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding from the study's empirical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "6c2a8799-8c8e-4616-9452-7a4204b85ddc",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C7",
+      "claim": "For the AAL atlas with threshold z = 2.5, the correlation between transition probabilities and structural connectivity is r = 0.41.",
+      "claim_type": "EXPLICIT",
+      "source": "AAL atlas: for threshold z = 2.5, r = 0.41",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific statistical result reported from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "767e9f45-2ea8-44ec-893f-d7dc7be4e8f6",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C8",
+      "claim": "For the AAL atlas with threshold z = 3.0, the correlation between transition probabilities and structural connectivity is r = 0.40.",
+      "claim_type": "EXPLICIT",
+      "source": "for threshold z = 3.0, r = 0.40",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific statistical result reported from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "877fbb65-b9b5-413e-b06f-fd4b9ebcd566",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C9",
+      "claim": "For the AAL atlas with threshold z = 3.5, the correlation between transition probabilities and structural connectivity is r = 0.39.",
+      "claim_type": "EXPLICIT",
+      "source": "for threshold z = 3.5, r = 0.39",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific statistical result reported from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "054b3607-2af6-478e-b1ab-dd573f33b268",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C10",
+      "claim": "For the DKT atlas with threshold z = 2.5, the correlation between transition probabilities and structural connectivity is r = 0.38.",
+      "claim_type": "EXPLICIT",
+      "source": "DKT atlas: for threshold z = 2.5, r = 0.38",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific statistical result reported from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "1063b53a-2138-43b0-80a1-4483e1597c30",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C11",
+      "claim": "For the DKT atlas with threshold z = 3.0, the correlation between transition probabilities and structural connectivity is r = 0.37.",
+      "claim_type": "EXPLICIT",
+      "source": "for threshold z = 3.0, r = 0.37",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific statistical result reported from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "fb8ff346-7bad-4af5-9782-7e2310cadf5d",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C12",
+      "claim": "For the DKT atlas with threshold z = 3.5, the correlation between transition probabilities and structural connectivity is r = 0.35.",
+      "claim_type": "EXPLICIT",
+      "source": "for threshold z = 3.5, r = 0.35",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific statistical result reported from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "563dcab7-2054-4d04-9760-d46af77075e8",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C13",
+      "claim": "All correlations between transition probabilities and structural connectivity were significant with p<0.0001.",
+      "claim_type": "EXPLICIT",
+      "source": "in all cases, p<0.0001",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical significance reported for all tested conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "2a06e727-7888-4bbc-a186-5a9c844596d1",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C14",
+      "claim": "Associations between transition probabilities and structural connectivity were stronger for group-level analyses compared to individual-level analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as for individual- and group-level connectomes, although associations were stronger for group-level analyses (see Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of results between individual and group-level analyses with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "fddd6b1d-9491-41ef-a6cb-3959a55ba67f",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C15",
+      "claim": "Associations between transition probabilities and structural connectivity were evident in the delta frequency band (0.5\u20134 Hz; r = 0.39, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "delta (0.5\u20134 Hz; r = 0.39)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Frequency-specific analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "c67b8939-f229-466c-a15c-9b978b39f87e",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C16",
+      "claim": "Associations between transition probabilities and structural connectivity were evident in the theta frequency band (4\u20138 Hz; r = 0.29, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "theta (4\u20138 Hz; r = 0.29)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Frequency-specific analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "0a8f3991-e0cf-4302-9c09-ec1953c46684",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C17",
+      "claim": "Associations between transition probabilities and structural connectivity were evident in the alpha frequency band (8\u201313 Hz; r = 0.32, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "alpha (8\u201313 Hz; r = 0.32)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Frequency-specific analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "8590fee4-c5a0-43f6-81e6-ace1630ed16f",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C18",
+      "claim": "Associations between transition probabilities and structural connectivity were evident in the beta frequency band (13\u201330 Hz; r = 0.32, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "beta (13\u201330 Hz; r = 0.32)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Frequency-specific analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "dcd569b6-263d-46b5-ad3e-8c75b264de19",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C19",
+      "claim": "Associations between transition probabilities and structural connectivity were evident in the gamma frequency band (30\u201348 Hz; r = 0.32, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "gamma (30\u201348 Hz; r = 0.32)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Frequency-specific analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "e22a18c5-4b75-482d-a7a5-a59ad3390ea2",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C20",
+      "claim": "Randomized transition matrices resulted in markedly weaker associations with structural connectivity compared to actual transition matrices.",
+      "claim_type": "EXPLICIT",
+      "source": "Randomized TMs resulted in markedly weaker associations with structural connectivity compared to the actual TMs (AAL atlas, z-score = 3: mean r = 0.26, observed r = 0.40, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison between randomized and actual data showing statistical difference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "cbd7fc76-b568-49a3-a148-551a91750f17",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C21",
+      "claim": "The findings remained significant after excluding subcortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the findings remained significant after excluding subcortical regions (with lower signal-to-noise ratios).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "64e66499-1ac1-48c6-9d62-4dbf05a1805d",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C22",
+      "claim": "The findings were replicated using a group-level connectome derived from 200 healthy adults in the Human Connectome Project (r = 0.11, p<0.001, z-score = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we replicated these findings for a group-level connectome derived using diffusion MRI acquired from 200 healthy adults in the Human Connectome Project (r = 0.11, p<0.001, z-score = 3; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Replication analysis using independent dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "398d1579-fe98-4899-af2b-99e454235620",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C23",
+      "claim": "The results were robust to multiple connectome mapping pipelines and parcellation atlases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results were thus robust to multiple connectome mapping pipelines and parcellation atlases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement about robustness across different methodological approaches",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "eb8e6f0e-c5a2-4ceb-a4bb-4dc1001bfda0",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C24",
+      "claim": "The results were significant for both group-averaged and individual connectomes.",
+      "claim_type": "EXPLICIT",
+      "source": "significant for both group-averaged and individual connectomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings across different levels of analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "904284b6-832a-47ec-b6d7-54aa4fc3bb88",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C25",
+      "claim": "The results could not be explained by chance transitions and/or volume conduction effects.",
+      "claim_type": "EXPLICIT",
+      "source": "and could not be explained by chance transitions and/or volume conduction effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from control analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "2d945293-4e02-4601-ac80-1a30200bf3ad",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C26",
+      "claim": "Connectome organization significantly shapes the propagation of neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that connectome organization significantly shapes the propagation of neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretive conclusion drawn from the empirical findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "1ddf859d-ad30-471f-b31f-86c3a844372f",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C27",
+      "claim": "The spatial unfolding of neural dynamics at the millisecond scale relates to the network of large-scale axonal projections comprising the connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the spatial unfolding of neural dynamics at the millisecond scale relates to the network of large-scale axonal projections comprising the connectome, likely constraining the exploration of the brain's putative functional repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "2b102e8a-4206-4120-b5a9-138fe45e9156",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C28",
+      "claim": "The short time scale of several milliseconds biases the constraint to direct connections.",
+      "claim_type": "EXPLICIT",
+      "source": "The short time scale of several milliseconds biases the constraint to direct connections, which is the focus of this paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the temporal scale of the observed effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "8c76d0f3-b530-4a57-8eb2-0517435a5dcf",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C29",
+      "claim": "Longer delays may impose constraints upon larger-scale motifs of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Longer delays may impose constraints upon larger-scale motifs of the network and further characterize the sub-spaces, in which brain dynamics unfold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential effects at different time scales",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "69cfa790-30cf-4b51-a23e-bbaf9b49961a",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C30",
+      "claim": "Previous functional MRI studies provide evidence of coupling between structural connectivity and slow activations.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous functional MRI studies provide evidence of coupling between structural connectivity and slow activations (Honey et al., 2007; Honey et al., 2010; Honey et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior literature with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "1194e7ad-4e0e-4848-b119-28621892992d",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C31",
+      "claim": "Intrinsic neural dynamics evolve quickly and are nested within slow activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, intrinsic neural dynamics evolve quickly and are nested within slow activity (Saggio et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to prior work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "856a16b2-9976-4ee2-99d1-cd8fa4ffddca",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C32",
+      "claim": "Long-term structure-function coupling occurs against a backdrop of faster fluctuations, which are also constrained by the connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that long-term structure-function coupling occurs against a backdrop of faster fluctuations, which are also constrained by the connectome and may enable individuals to rapidly respond to changing environments and new cognitive demands (McIntosh and Jirsa, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings in context of prior theory",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "f385ba0c-acbe-4f5b-9d7d-7116d8970e69",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C33",
+      "claim": "Two recent M/EEG studies showed that functional connectivity, as estimated using amplitude-envelope coupling (AEC), relates to structural connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our findings, two recent M/EEG studies showed that functional connectivity, as estimated using amplitude-envelope coupling (AEC), relates to structural connectivity (Glomb et al., 2020; Tewarie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior studies with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "f2d37f3a-45b4-4101-888b-89d815f17fd9",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C34",
+      "claim": "The study conducted time-resolved analyses, characterizing avalanche dynamics at high temporal resolution, in contrast to amplitude-envelope coupling approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to AEC, we conducted time-resolved analyses, characterizing avalanche dynamics at high temporal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological difference from prior work",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "efb486e2-1413-474b-8393-69761f580fd7",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C35",
+      "claim": "Coupling between structure and function is strongest during avalanche events.",
+      "claim_type": "EXPLICIT",
+      "source": "To this regard, our results suggest that coupling is strongest during avalanche events, consistent with established theories (Dehaene et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings supported by citation to theory",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "d908fa89-cc81-4fee-bea6-bbeede1b42c7",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C36",
+      "claim": "Average resting-state functional connectivity displays topological features that mirror those of the structural connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our results might explain how the large-scale activity unfolding in time might lead to the previous observation that average resting-state functional connectivity displays topological features that mirror those of the structural connectome (Bullmore and Sporns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior observation with citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "da0e6aca-0215-49f9-88a9-d7ee99c59de8",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C37",
+      "claim": "Transitions of activations are observed across regions that do not appear to be directly linked in the structural connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, our results show that transitions of activations are observed across regions that do not appear to be directly linked in the structural connectome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the study's data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "e45b8cb8-e41a-4ea7-81bd-8f247307ca55",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C38",
+      "claim": "The observation of transitions across non-directly connected regions provides evidence for polysynaptic communication.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides evidence for polysynaptic communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the observation about indirect connections",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "bb3a81aa-28f7-4d3e-b7dd-03e8643732d5",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C39",
+      "claim": "Neuronal avalanches have been previously observed in MEG data.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal avalanches have been previously observed in MEG data (Shriki et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior work with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "c1667bf5-00ff-4e96-ab80-25256b084a1f",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C40",
+      "claim": "Neuronal avalanches show a size distribution that obeys a power-law with an exponent of \u22123/2.",
+      "claim_type": "EXPLICIT",
+      "source": "and their statistical properties, such as a size distribution that obeys a power-law with an exponent of \u22123/2, reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to known statistical properties from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "d9893a65-d266-4c97-9571-a3b489fd5a0e",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C41",
+      "claim": "Power-law size distributions with exponent \u22123/2 are compatible with processes operating at criticality with a branching ratio equal to 1.",
+      "claim_type": "EXPLICIT",
+      "source": "These features are compatible with those that would be predicted starting from a process operating at criticality with a branching ratio equal to 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about theoretical expectations from critical dynamics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "f2cf967c-cf57-42ad-8c0f-c25f4e0214e3",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C42",
+      "claim": "Structural connectivity can potentially impose frequency-dependent constraints on avalanche spread.",
+      "claim_type": "EXPLICIT",
+      "source": "While our findings were replicated across multiple frequency bands, structural connectivity can potentially impose frequency-dependent constraints on avalanche spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential frequency-specific effects",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "26e8eacb-8ee0-4965-b8e7-f36d9da51fdc",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C43",
+      "claim": "The study used deterministic tractography to reconstruct the structural connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "For the present application, we reconstructed the structural connectome using a deterministic tractography algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "e6934d52-0a94-4965-954b-809e39df8842",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C44",
+      "claim": "Probabilistic tractography algorithms are prone to reconstruction of spurious connections (false positives) compared to deterministic methods, reducing connectome specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "While probabilistic algorithms can provide advantages in some applications, they are prone to reconstruction of spurious connections (false positives), compared to deterministic methods, reducing connectome specificity (Sarwar et al., 2019; Zalesky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological properties supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "35b41e27-2e8a-4cfe-8632-8b94b2f49d05",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C45",
+      "claim": "Previous functional MRI studies report that structure-functional coupling is greater for connectivity matrices inferred from deterministic tractography compared to probabilistic methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We used deterministic tractography because previous functional MRI studies report that structure-functional coupling is greater for connectivity matrices inferred from deterministic tractography compared to probabilistic methods (Abeyasinghe et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Justification for methodological choice based on cited prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "c94e2f05-f9e7-4529-b6cf-4413f9942c4e",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C46",
+      "claim": "The connectome significantly constrains the spatial spread of neuronal avalanches to axonal connections.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, using MEG to study fast neuronal dynamics and diffusion MRI tractography to map connectomes, we found that the connectome significantly constrains the spatial spread of neuronal avalanches to axonal connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion summarizing the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "66da60e5-f797-4fdf-a843-dab3c9a5d94e",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C47",
+      "claim": "Large-scale structure-function coupling is dynamic and peaks during avalanche events.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that large-scale structure-function coupling is dynamic and peaks during avalanche events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretive conclusion from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "e4254b44-66dc-4503-a5d8-b94a5381fe24",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C48",
+      "claim": "Structural connectomes were mapped for 58 healthy adults using diffusion MRI tractography and regions defined based on the AAL and DKT atlases.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural connectomes were mapped for 58 healthy adults (26 females, mean age \u00b1 SD: 30.72 \u00b1 11.58) using diffusion MRI tractography and regions defined based on the Automated Anatomical Labeling (AAL) and the Desikan\u2013Killiany\u2013Tourville (DKT) atlases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods and sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "1572e26e-0bea-4f62-8bc4-cc4e8ac246ad",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C49",
+      "claim": "Interregional streamline counts derived from whole-brain deterministic tractography quantified the strength of structural connectivity between pairs of regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interregional streamline counts derived from whole-brain deterministic tractography quantified the strength of structural connectivity between pairs of regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of how structural connectivity was quantified",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "f53d453f-481d-4b53-91e4-0086b9967be1",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C50",
+      "claim": "Streamline counts were normalized by regional volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Streamline counts were normalized by regional volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing step",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "f5022a14-8864-45ea-806b-8450f5318862",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C51",
+      "claim": "Group-level connectomes were computed by averaging connectivity matrices across participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Group-level connectomes were computed by averaging connectivity matrices across participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of how group-level data was derived",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "486a61ce-748a-4bca-97ae-05346da9e640",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C52",
+      "claim": "An avalanche was defined as starting when any region exceeded the threshold, and finished when no region was active.",
+      "claim_type": "EXPLICIT",
+      "source": "An avalanche was defined as starting when any region exceeded this threshold, and finished when no region was active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of key analytical construct",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "41e78621-88d7-4ee7-ab2e-f144e240950d",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C53",
+      "claim": "An avalanche-specific transition matrix element (i, j) represented the probability that region j was active at time t + \u03b4, given that region i was active at time t, where \u03b4~3 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "An avalanche-specific transition matrix (TM) was calculated, where element (i, j) represented the probability that region j was active at time t + \u03b4, given that region i was active at time t, where \u03b4~3 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of how transition matrices were computed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "deb48f31-bfb1-4573-a52b-6b44f41dcab1",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C54",
+      "claim": "The transition matrices were averaged per participant, then per group, and finally symmetrized.",
+      "claim_type": "EXPLICIT",
+      "source": "The TMs were averaged per participant, and then per group, and finally symmetrized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing steps",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "849244a0-16c3-47ce-af74-0caa2707f474",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C55",
+      "claim": "3D T1-weighted brain volumes were acquired at 1.5 Tesla using a 3D Magnetization-Prepared Gradient-Echo BRAVO sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "3D T1-weighted brain volumes were acquired at 1.5 Tesla (Signa, GE Healthcare) using a 3D Magnetization-Prepared Gradient-Echo BRAVO sequence (TR/TE/TI 8.2/3.1/450 ms, voxel 1 \u00d7 1 \u00d7 1 mm3, 50% partition overlap, 324 sagittal slices covering the whole brain)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of MRI acquisition parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "f22ace40-4917-4579-b406-4350d80e3789",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C56",
+      "claim": "Diffusion MRI data were obtained using Echo-Planar Imaging with TR/TE 12,000/95.5 ms, voxel 0.94 \u00d7 0.94 \u00d7 2.5 mm3, and 32 diffusion-sensitizing directions.",
+      "claim_type": "EXPLICIT",
+      "source": "diffusion MRI data for individual connectome reconstruction were obtained using the following parameters: Echo-Planar Imaging, TR/TE 12,000/95.5 ms, voxel 0.94 \u00d7 0.94 \u00d7 2.5 mm3, 32 diffusion-sensitizing directions (5 B0 volumes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of diffusion MRI acquisition parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "6bf02d44-82df-4673-a426-6eef274ab5f6",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C57",
+      "claim": "The MRI scan was performed after the MEG recording.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRI scan was performed after the MEG recording.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure order",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "2a9d995b-337e-492f-9cb9-b5bac3b9ac2e",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C58",
+      "claim": "Pre-processing of the diffusion MRI data was carried out using the software modules provided in the FMRIB Software Library (FSL).",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-processing of the diffusion MRI data was carried out using the software modules provided in the FMRIB Software Library (FSL, http://fsl.fmrib.ox.ac.uk/fsl).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of software used for data processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "8a5c6bc0-de01-4a7a-92af-796906511bca",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C59",
+      "claim": "All diffusion MRI datasets were corrected for head movements and eddy currents distortions using the 'eddy_correct' routine.",
+      "claim_type": "EXPLICIT",
+      "source": "All diffusion MRI datasets were corrected for head movements and eddy currents distortions using the 'eddy_correct' routine, rotating diffusion sensitizing gradient directions accordingly",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data correction procedures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "e270224e-c9db-4d66-b2dc-f4a8d3f68bbd",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C60",
+      "claim": "Streamlines were generated over the whole brain by deterministic tractography using Diffusion Toolkit with FACT propagation algorithm, angle threshold 45\u00b0, spline-filtered, masking by FA maps thresholded at 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "streamlines were generated over the whole brain by deterministic tractography using Diffusion Toolkit (FACT propagation algorithm, angle threshold 45\u00b0, spline-filtered, masking by the Fractional Anisotropy (FA) maps thresholded at 0.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of tractography parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "b011252b-036d-4676-a81e-4107ea5560ee",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C61",
+      "claim": "The MEG system was equipped with 163 magnetometers and was developed by the National Research Council of Italy at the Institute of Applied Sciences and Intelligent Systems (ISASI).",
+      "claim_type": "EXPLICIT",
+      "source": "The MEG system was equipped with 163 magnetometers and was developed by the National Research Council of Italy at the Institute of Applied Sciences and Intelligent Systems (ISASI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of MEG equipment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "c9ab40e0-066c-4147-9e3e-08be70bbb3b8",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C62",
+      "claim": "The MEG registration was divided into two eyes-closed segments of 3:30 min each.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, the MEG registration was divided into two eyes-closed segments of 3:30 min each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of MEG recording protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "67ad2c9c-2b98-4b13-a9dc-65128a224d2f",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C63",
+      "claim": "The MEG signals were acquired at 1024 Hz after an anti-aliasing filter.",
+      "claim_type": "EXPLICIT",
+      "source": "The MEG signals, after an anti-aliasing filter, were acquired at 1024 Hz",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of MEG acquisition parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "28a861f6-0fc5-4d7a-b8db-f55ef3868b14",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C64",
+      "claim": "A fourth-order Butterworth IIR band-pass filter in the 0.5\u201348 Hz band was applied to the MEG signals.",
+      "claim_type": "EXPLICIT",
+      "source": "then a fourth-order Butterworth IIR band-pass filter in the 0.5\u201348 Hz band was applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of signal filtering",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "f298d461-d4f5-48f3-96e9-ec2c5e3ee966",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C65",
+      "claim": "Principal component analysis was used to remove environmental noise measured by reference magnetometers.",
+      "claim_type": "EXPLICIT",
+      "source": "To remove environmental noise, measured by reference magnetometers, we used principal component analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of noise removal method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "a2c11a0d-b5e1-4730-8739-5780195b96de",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C66",
+      "claim": "Supervised independent component analysis was adopted to clean the data from physiological artefacts such as eye blinking and heart activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We adopted supervised independent component analysis to clean the data from physiological artefacts, such as eye blinking (if present) and heart activity (generally one component).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of artifact removal method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "c4b59b90-8126-46c3-8cb8-b1147dafe2e2",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C67",
+      "claim": "An average of 136 \u00b1 4 sensors were kept after removing noisy channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Noisy channels were identified and removed manually by an expert rater (136 \u00b1 4 sensors were kept).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data quality control outcome",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "69f7afec-f1f3-4d16-a4b8-a011f394ddca",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C68",
+      "claim": "47 subjects were selected for further analysis after MEG preprocessing.",
+      "claim_type": "EXPLICIT",
+      "source": "47 subjects were selected for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about final sample size for analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "b4b1db92-0676-4388-ad9f-acfd5e6c0f7f",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C69",
+      "claim": "The time series of neuronal activity were reconstructed in 116 ROIs based on the AAL atlas and in 84 regions based on the DKT atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "The time series of neuronal activity were reconstructed in 116 ROIs based on the AAL atlas (Tzourio-Mazoyer et al., 2002; Hillebrand et al., 2016); and in 84 regions of interest based on the DKT atlas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of source reconstruction approach with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "f0dd3fe2-b04a-4e06-8151-fdeff80ce4a5",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C70",
+      "claim": "The linearly constrained minimum variance (LCMV) beamformer algorithm was used for source reconstruction based on native structural MRIs.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we used the volume conduction model proposed by Nolte, 2003 applying the linearly constrained minimum variance (LCMV) beamformer algorithm (Van Veen et al., 1997) based on the native structural MRIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of source reconstruction method with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "241e8764-253f-4f5b-a27a-307eb260bdac",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C71",
+      "claim": "Sources were reconstructed for the centroid of each ROI.",
+      "claim_type": "EXPLICIT",
+      "source": "Sources were reconstructed for the centroid of each ROI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of source localization approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "8969d43f-e1b1-4055-85f8-72c95fc4ac29",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C72",
+      "claim": "26 ROIs corresponding to the cerebellum were excluded because of their low reliability in MEG.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we considered a total of 90 ROIs for the AAL atlas since we have excluded 26 ROIs corresponding to the cerebellum because of their low reliability in MEG (Lardone et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of ROI exclusion with citation justifying the decision",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "eff3219b-8a05-49c1-891c-dceee3141672",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C73",
+      "claim": "The branching parameter \u03c3 was estimated for each subject, each neuronal avalanche, and each time bin duration.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate the suitable time bin length, for each subject, each neuronal avalanches, and each time bin duration, the branching parameter \u03c3 was estimated (Haldeman and Beggs, 2005; Harris, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of analytical procedure with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "91c5aac7-45d1-4756-b635-46a45f32efe7",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C74",
+      "claim": "Systems operating at criticality typically display a branching ratio ~1.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, systems operating at criticality typically display a branching ratio ~1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about theoretical property of critical systems",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "8bc727a9-3a00-41dc-ada0-b0eb7a8a3fc9",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C75",
+      "claim": "Bins from 1 to 5 were tested, and bin = 3 was picked for further analyses because the branching ratio was 1 for bin = 3.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested bins from 1 to 5, and picked 3 for further analyses, given that the branching ratio was 1 for bin = 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of parameter selection based on empirical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "a24de728-237f-47dd-bf25-0b8caf2377be",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C76",
+      "claim": "Results are unchanged for other bin durations, and the branching ratio remains equal to 1 or differences were minimal (range: 0.999\u20131.010).",
+      "claim_type": "EXPLICIT",
+      "source": "However, results are unchanged for other bin durations, and the branching ratio remains equal to 1 or differences were minimal (range: 0.999\u20131.010 \u2013 data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about robustness of results to parameter variation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "bb288fee-d1ee-4961-8e07-1c3a63c05a75",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C77",
+      "claim": "The results shown are derived when taking into account avalanches longer than 10 time bins.",
+      "claim_type": "EXPLICIT",
+      "source": "The results shown are derived when taking into account avalanches longer than 10 time bins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data inclusion criterion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "9f1137d0-aa2b-4fec-92f2-fc4a4dbb868c",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C78",
+      "claim": "The analysis was repeated taking into account avalanches longer than 30 time bins and taking all avalanches into account, and the results were unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we repeated the analysis taking into account avalanches longer than 30 time bins, as well as taking all avalanches into account, and the results were unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of sensitivity analysis showing robustness",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "b133b487-3583-4c51-a8c4-e1a8cc4420e3",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C79",
+      "claim": "Avalanches shorter than 10 time bins (~30 ms) were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Avalanches shorter than 10 time bins (~30 ms) were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data exclusion criterion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "98a895ce-d0fb-4a22-98fd-e9c96e1feecc",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C80",
+      "claim": "The introduction of a time lag makes it unlikely that results can be explained trivially by volume conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of a time lag makes it unlikely that our results can be explained trivially by volume conduction (i.e., the fact that multiple sources are detected simultaneously by multiple sensors, generating spurious zero lag correlations in the recorded signals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reasoning about why volume conduction is unlikely to explain findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "498493a8-dcad-4b85-b595-19d3c815acb3",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C81",
+      "claim": "For a binning of 3, successive regions recruited in avalanches do so after roughly 3 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, for a binning of 3, as the avalanches proceed in time, the successive regions that are recruited do so after roughly 3 ms (and 5 ms for the binning of 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of temporal characteristics of the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "8bf79518-4f8e-4a55-98fd-d18a40c0d21d",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C82",
+      "claim": "Activations occurring simultaneously do not contribute to the estimate of the transition matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, activations occurring simultaneously do not contribute to the estimate of the TM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical consequence of the temporal lag in the analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "e0850886-a6e4-4be4-9a32-41774d199a39",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C83",
+      "claim": "When using longer delays in transition matrix estimation, a significant association remained between transition probabilities and structural connectivity (r = 0.36; p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, a significant association remained between transition probabilities and structural connectivity (r = 0.36; p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from sensitivity analysis using alternative temporal parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "a7205e4e-8315-4e8e-8c7e-bd62236e3b54",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C84",
+      "claim": "Surrogate data analysis showed it is unlikely that linear mixing alone can explain the significant association between transition probabilities and structural connectivity (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We repeated the entire procedure reported above 100 times and show that is unlikely that linear mixing alone can explain the significant association between transition probabilities and structural connectivity (p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from control analysis using surrogate data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "08c5fe91-965d-40a2-9c7e-e828fa66c800",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C85",
+      "claim": "The Spearman rank correlation coefficient was used to assess the association between transition probabilities and structural connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The Spearman rank correlation coefficient was used to assess the association between transition probabilities and structural connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "f678cd6c-afbc-4e9b-b3ec-6a202cf417ca",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C86",
+      "claim": "A correlation coefficient was computed separately for each individual across all pairs of regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A correlation coefficient was computed separately for each individual across all pairs of regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical analysis approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "0212d0fe-950d-4e73-b05a-0c3d62e9eb89",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C87",
+      "claim": "Transition matrices were symmetrized before computing correlation coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "TMs were symmetrized before this computation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing step",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "1153a877-b304-4667-a3d6-ced63514a3b2",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C88",
+      "claim": "Avalanches were randomized across time without changing the order of active regions at each time step to generate randomized transition matrices.",
+      "claim_type": "EXPLICIT",
+      "source": "Avalanches were randomized across time, without changing the order of active regions at each time step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of randomization procedure for null model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "14abf724-6079-460a-abc1-015b532bd9b9",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C89",
+      "claim": "A total of 1000 randomized transition matrices were generated.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a total of 1000 randomized TMs and the Spearman rank correlation coefficient was computed between each randomized matrix and structural connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of number of permutations in null model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "b3d983e8-a47d-46d6-8a13-7c5bec8476c5",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C90",
+      "claim": "The proportion of correlation coefficients that were greater than or equal to the observed correlation coefficient provided a p-value for the null hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of correlation coefficients that were greater than, or equal to, the observed correlation coefficient provided a p-value for the null hypothesis that structure-function coupling was attributable to random transition events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical testing procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "709980ad-26c3-4700-ab44-461c723734e3",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C91",
+      "claim": "The study complied with the Declaration of Helsinki and was approved by the local Ethics Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "The study complied with the Declaration of Helsinki and was approved by the local Ethics Committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ethical compliance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "552c3036-e93e-4912-8620-2581b7514220",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C92",
+      "claim": "All participants gave written informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants gave written informed consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ethical procedures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "a82a6777-b89b-455c-a5b7-6d0256fff961",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C93",
+      "claim": "Inclusion criteria were (1) no major internal, neurological, or psychiatric illnesses; and (2) no use of drugs or medication that could interfere with MEG/MRI signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The inclusion criteria were (1) no major internal, neurological, or psychiatric illnesses; and (2) no use of drugs or medication that could interfere with MEG/MRI signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of participant selection criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "ff301785-d3df-4e86-9ac4-4b31cbe142cb",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C94",
+      "claim": "Connectomes in the replication dataset were constructed using deterministic tractography with the FACT algorithm, 5 million streamlines, 0.5 mm propagation step size, 400 mm maximum propagation length, and 0.1 FA threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Deterministic tractography was performed using MRtrix3 (Tournier et al., 2019) under the following parameters: FACT algorithm, 5 million streamlines, 0.5 mm propagation step size, 400 mm maximum propagation length, and 0.1 FA threshold for the termination of streamlines (Seguin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of tractography parameters for replication analysis with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "81d8aef0-584f-46ed-813b-5034c595cdf0",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C95",
+      "claim": "The number of streamlines connecting any couple of regions was normalized by the combined volume of the two regions in the HCP replication analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of streamlines connecting any couple of regions was normalized by the combined volume of the two regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of normalization procedure in replication analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "894172d6-fec9-4125-9cec-14c85461e093",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C96",
+      "claim": "Structural matrices were constructed for 200 HCP participants using the AAL atlas and averaged to derive a group-level connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural matrices were constructed for 200 HCP participants using the AAL atlas and averaged to derive a group-level connectome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of replication dataset processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "c810ce64-5d66-4ee9-81fd-366c9b0b5ff5",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C97",
+      "claim": "All pre-processing steps and source reconstruction were made using the Fieldtrip toolbox.",
+      "claim_type": "EXPLICIT",
+      "source": "All the pre-processing steps and the source reconstruction were made using the Fieldtrip toolbox (Oostenveld et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of software used with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "79477168-3ac0-4af3-9996-2f3b3bbc8f42",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C98",
+      "claim": "Figure 1 provides an overview of the analysis pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 provides an overview of the pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to figure showing methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "4d457635-c050-4659-9880-e9e4afe1d10e",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C99",
+      "claim": "There is striking evidence of an association between avalanche transition probabilities and structural connectivity strengths.",
+      "claim_type": "EXPLICIT",
+      "source": "We found striking evidence of an association between avalanche transition probabilities and structural connectivity strengths (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary statement of main finding with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "106e6ab7-cbb9-4ba6-9198-1c0231f23e06",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C100",
+      "claim": "Regional propagation of fast-scale neural avalanches is partly shaped by the axonal fibres forming the structural connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that regional propagation of fast-scale neural avalanches is partly shaped by the axonal fibres forming the structural connectome (r = 0.40, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of correlation result",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "47eb988f-aac7-4439-8838-e4d65e55ba28",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "claim_id": "C101",
+      "claim": "The mean correlation coefficient for randomized data was greater than zero because the randomization process preserved basic spatial attributes in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the mean correlation coefficient was greater than zeros for the randomized data because the randomization process preserved basic spatial attributes in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation for non-zero null distribution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d1bfda12-b6b0-406f-a12d-7aceea24fdf8",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recruited 58 healthy young adults (32 males, 26 females, mean age 30.72\u00b111.58 years) who were right-handed native Italian speakers with no major illnesses or interfering medications. After MEG preprocessing, 47 subjects were selected for final analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C48, C68, C91-C93 provide consistent demographic and methodological information about participant recruitment and selection. The reduction from 58 to 47 subjects after preprocessing is explicitly stated and represents standard quality control. Ethical compliance is documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "There is a significant positive correlation between neuronal avalanche transition probabilities and structural connectivity strengths across multiple thresholds and atlases (r=0.35-0.41, all p<0.0001), suggesting that structural connections constrain the spatial spread of fast-scale neural avalanches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6-C13, C99-C100 consistently report significant correlations across different z-score thresholds (2.5, 3.0, 3.5) and two atlases (AAL, DKT). The correlations are moderate (r~0.35-0.41) and highly significant (p<0.0001), with appropriate statistical testing. The consistency across conditions strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "974a7f12-9eed-485d-8040-a7e1322582ea",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Structure-function coupling was significant for both individual and group-level connectomes, with stronger associations observed at the group level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C24 report that associations were found at both individual and group levels, with explicit statement that group-level analyses showed stronger effects. This is supported by Figure 2A showing the distribution of individual correlations and group-level results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "4ba26fcd-8681-4c8a-95af-06054286c8f2",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The association between transition probabilities and structural connectivity was evident across all classical frequency bands (delta: r=0.39, theta: r=0.29, alpha: r=0.32, beta: r=0.32, gamma: r=0.32, all p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 report frequency-specific analyses showing significant correlations across all tested bands. The correlations are moderate and consistent, with delta showing the strongest effect. Statistical significance is reported for all bands (p<0.0001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "70208843-aeee-4fa0-8626-7f0d93048a71",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Randomized transition matrices showed significantly weaker associations with structural connectivity (mean r=0.26) compared to observed data (r=0.40, p<0.001), demonstrating that the structure-function coupling cannot be explained by chance transitions alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C88-C90, C101 describe a rigorous permutation test with 1000 randomizations that preserves spatial structure while randomizing temporal order. The observed correlation significantly exceeds the null distribution, providing strong evidence against chance. The explanation for non-zero null values (C101) is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "abcfcc69-f2fc-4c41-89ef-7dbed843dd1b",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The findings remained significant after excluding subcortical regions with lower signal-to-noise ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 reports a sensitivity analysis excluding subcortical regions, which is appropriate given potential MEG signal quality issues in deeper structures. The persistence of findings strengthens the main result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "5572b08b-64d9-4f60-a8ac-66880bdd57e1",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The findings were replicated using an independent Human Connectome Project dataset of 200 adults with different tractography parameters (r=0.11, p<0.001, z-score=3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C22, C94-C96 report replication with HCP data, but the correlation (r=0.11) is substantially weaker than the primary analysis (r~0.37-0.40). While statistically significant, this large discrepancy raises questions about generalizability. The HCP analysis used only structural data without corresponding MEG, which is not clearly explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "c95ebfd8-d467-49ab-91c0-a9056b248f7a",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The structural connectome significantly constrains the propagation of neural activity at millisecond timescales, with results robust to multiple methodological variations and not explained by confounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C25-C27, C46 synthesize the main findings with appropriate caveats. The robustness across atlases, thresholds, and control analyses supports these conclusions. However, the moderate correlation values (r~0.35-0.40) indicate structural connectivity explains only ~12-16% of variance in transition probabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "d5a4a4af-0106-4283-b0b8-7aeb2b27d19d",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Volume conduction effects are unlikely to explain the findings, as demonstrated by temporal lag analysis (\u03b4~3ms), alternative delay analysis (r=0.36, p<0.0001), and surrogate data testing (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 address a critical confound in MEG analysis. The temporal lag approach, sensitivity analysis with longer delays, and surrogate data with simulated field spread provide converging evidence against volume conduction as the primary explanation. The 100 surrogate iterations provide adequate statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "4200fdd9-b816-409b-b3bf-b9e784ea2703",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The optimal time bin duration was determined to be 3ms based on branching parameter analysis, yielding a branching ratio of ~1 consistent with critical dynamics, with results robust to alternative bin durations (range: 0.999-1.010).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 describe a principled approach to parameter selection based on criticality theory. The branching ratio of ~1 is theoretically motivated (C74) and empirically validated. Robustness testing across bin durations (1-5) strengthens confidence in the choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "abe2f8fb-abdc-4b00-837a-70a964053a66",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Results were robust to different avalanche duration thresholds, with primary analyses using avalanches >10 time bins (~30ms) and sensitivity analyses confirming unchanged results for >30 time bins or all avalanches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 demonstrate appropriate sensitivity testing of inclusion criteria. The exclusion of very short avalanches (<30ms) is reasonable to avoid noise, and robustness to this choice strengthens the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Structural connectomes were constructed using deterministic tractography on diffusion MRI data (1.5T, 32 directions) with standard preprocessing, streamline counting normalized by regional volume, and group averaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51, C55-C60 provide detailed methodological information about structural connectome construction. The methods are standard for the field, though the diffusion MRI parameters (32 directions, 1.5T) are modest by current standards. Normalization by volume is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "91cdcc4a-9dde-4bde-80a4-cfb77bd5e051",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MEG data were acquired using a 163-channel system with standard preprocessing including filtering (0.5-48 Hz), artifact removal via PCA and ICA, and manual channel rejection, retaining 136\u00b14 sensors on average.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67, C97 describe standard MEG acquisition and preprocessing procedures. The methods are appropriate, though manual channel rejection introduces potential subjectivity. The use of Fieldtrip toolbox is standard in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "fce5a9cc-1f9f-437b-9287-0ebd3c9403f1",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Source reconstruction was performed using LCMV beamformer for 116 AAL regions and 84 DKT regions at regional centroids, excluding 26 cerebellar regions due to low MEG reliability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 describe appropriate source reconstruction methods with proper citations. The exclusion of cerebellar regions is justified by cited literature (C72). Reconstruction at regional centroids is a standard simplification, though it may miss within-region heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "75b2d88e-5db6-4354-b926-9638627af473",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Transition matrices were computed by calculating the probability that region j activates at t+\u03b4 given region i was active at time t, then averaged across avalanches, participants, and symmetrized before correlation analysis with structural connectivity using Spearman's rank correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54, C85-C87 clearly define the transition matrix computation and statistical approach. The use of Spearman correlation is appropriate for potentially non-normal data. Symmetrization is reasonable but may obscure directional effects. The methodology is clearly described and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "b0609073-376f-4419-a221-9769dae937cb",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The millisecond timescale biases constraints toward direct connections, with structure-function coupling being dynamic and peaking during avalanche events, occurring against a backdrop of faster fluctuations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C32, C35, C47 provide interpretations of the temporal dynamics findings. The reasoning about direct vs. polysynaptic connections at different timescales is logical. The interpretation that coupling peaks during avalanches is supported by the methodology focusing on threshold-crossing events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "bd772561-f66b-475a-9ab2-01270a48b788",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Transitions occur between regions not directly connected in the structural connectome, providing evidence for polysynaptic communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 note that not all transitions correspond to direct structural connections, which is evident from the moderate correlations (r~0.35-0.40). This observation supports polysynaptic communication, though alternative explanations (measurement error, false negatives in tractography) are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "9be833c7-7e43-475a-9b0b-479cbbb8aa8c",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Deterministic tractography was chosen over probabilistic methods because it provides higher specificity (fewer false positives) and prior fMRI studies show stronger structure-function coupling with deterministic approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 justify the methodological choice with appropriate citations. The reasoning is sound, though the choice involves tradeoffs (deterministic methods may have lower sensitivity). The justification based on prior fMRI work (C45) is relevant but may not fully generalize to MEG.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "0e56c3e5-075b-4674-a536-623fafe41691",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work has established structure-function coupling at slow timescales (fMRI), nested fast-slow dynamics, amplitude-envelope coupling relationships, and neuronal avalanche properties including power-law distributions consistent with criticality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31, C33, C36, C39-C41 accurately cite and summarize relevant prior literature with appropriate references. These claims provide context for the current work and are supported by the cited studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "370d60f2-ed65-4d3e-845d-4842c0fc26de",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The current study differs from prior amplitude-envelope coupling approaches by conducting time-resolved analyses characterizing avalanche dynamics at high temporal resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 accurately distinguishes the current approach from prior MEG/EEG work. The focus on event-based dynamics rather than continuous coupling measures represents a methodological advance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "52cdff37-43cb-4f6f-b1c8-da04303e4b3e",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Longer delays may impose constraints on larger-scale network motifs, and structural connectivity may impose frequency-dependent constraints on avalanche spread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29 and C42 are speculative statements about potential future findings. While reasonable hypotheses, they are not tested in the current work and represent suggestions for future research rather than supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "0da8c0c7-0e23-4643-86af-c383f2c1ce45",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The structural connectome is hypothesized to constrain brain dynamics, which show rich multi-scale temporal behavior with nested fast and slow activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C5 state the central hypothesis and established background knowledge. These are appropriate framing statements supported by prior literature, though C3 is explicitly labeled as a hypothesis to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    },
+    {
+      "id": "a4caffe8-2699-4713-aff1-f788b09a015f",
+      "content_id": "bdbbef99-709c-4bbc-bbbf-425901764b59",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Figure 1 provides an overview of the analysis pipeline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 accurately describes Figure 1, which shows the workflow from structural imaging through tractography, MEG acquisition, source reconstruction, avalanche detection, and transition matrix computation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:47.318462Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d13c3dd0-9451-4afc-8b82-f54fa0977034",
+      "result_id": "d1bfda12-b6b0-406f-a12d-7aceea24fdf8"
+    },
+    {
+      "claim_id": "bf9b30f1-c6c1-40f2-9b6b-dbc00e550ba5",
+      "result_id": "d1bfda12-b6b0-406f-a12d-7aceea24fdf8"
+    },
+    {
+      "claim_id": "e4254b44-66dc-4503-a5d8-b94a5381fe24",
+      "result_id": "d1bfda12-b6b0-406f-a12d-7aceea24fdf8"
+    },
+    {
+      "claim_id": "69f7afec-f1f3-4d16-a4b8-a011f394ddca",
+      "result_id": "d1bfda12-b6b0-406f-a12d-7aceea24fdf8"
+    },
+    {
+      "claim_id": "709980ad-26c3-4700-ab44-461c723734e3",
+      "result_id": "d1bfda12-b6b0-406f-a12d-7aceea24fdf8"
+    },
+    {
+      "claim_id": "552c3036-e93e-4912-8620-2581b7514220",
+      "result_id": "d1bfda12-b6b0-406f-a12d-7aceea24fdf8"
+    },
+    {
+      "claim_id": "a82a6777-b89b-455c-a5b7-6d0256fff961",
+      "result_id": "d1bfda12-b6b0-406f-a12d-7aceea24fdf8"
+    },
+    {
+      "claim_id": "dd81a82e-c7b9-4c37-8ea0-3df362998436",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "9101afae-8f3a-41d3-b5fd-2cde7952d1f3",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "6c2a8799-8c8e-4616-9452-7a4204b85ddc",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "767e9f45-2ea8-44ec-893f-d7dc7be4e8f6",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "877fbb65-b9b5-413e-b06f-fd4b9ebcd566",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "054b3607-2af6-478e-b1ab-dd573f33b268",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "1063b53a-2138-43b0-80a1-4483e1597c30",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "fb8ff346-7bad-4af5-9782-7e2310cadf5d",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "563dcab7-2054-4d04-9760-d46af77075e8",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "4d457635-c050-4659-9880-e9e4afe1d10e",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "106e6ab7-cbb9-4ba6-9198-1c0231f23e06",
+      "result_id": "c8cf0dfd-ba44-4252-8c2e-16176dea6bbc"
+    },
+    {
+      "claim_id": "2a06e727-7888-4bbc-a186-5a9c844596d1",
+      "result_id": "974a7f12-9eed-485d-8040-a7e1322582ea"
+    },
+    {
+      "claim_id": "eb8e6f0e-c5a2-4ceb-a4bb-4dc1001bfda0",
+      "result_id": "974a7f12-9eed-485d-8040-a7e1322582ea"
+    },
+    {
+      "claim_id": "fddd6b1d-9491-41ef-a6cb-3959a55ba67f",
+      "result_id": "4ba26fcd-8681-4c8a-95af-06054286c8f2"
+    },
+    {
+      "claim_id": "c67b8939-f229-466c-a15c-9b978b39f87e",
+      "result_id": "4ba26fcd-8681-4c8a-95af-06054286c8f2"
+    },
+    {
+      "claim_id": "0a8f3991-e0cf-4302-9c09-ec1953c46684",
+      "result_id": "4ba26fcd-8681-4c8a-95af-06054286c8f2"
+    },
+    {
+      "claim_id": "8590fee4-c5a0-43f6-81e6-ace1630ed16f",
+      "result_id": "4ba26fcd-8681-4c8a-95af-06054286c8f2"
+    },
+    {
+      "claim_id": "dcd569b6-263d-46b5-ad3e-8c75b264de19",
+      "result_id": "4ba26fcd-8681-4c8a-95af-06054286c8f2"
+    },
+    {
+      "claim_id": "e22a18c5-4b75-482d-a7a5-a59ad3390ea2",
+      "result_id": "70208843-aeee-4fa0-8626-7f0d93048a71"
+    },
+    {
+      "claim_id": "1153a877-b304-4667-a3d6-ced63514a3b2",
+      "result_id": "70208843-aeee-4fa0-8626-7f0d93048a71"
+    },
+    {
+      "claim_id": "14abf724-6079-460a-abc1-015b532bd9b9",
+      "result_id": "70208843-aeee-4fa0-8626-7f0d93048a71"
+    },
+    {
+      "claim_id": "b3d983e8-a47d-46d6-8a13-7c5bec8476c5",
+      "result_id": "70208843-aeee-4fa0-8626-7f0d93048a71"
+    },
+    {
+      "claim_id": "47eb988f-aac7-4439-8838-e4d65e55ba28",
+      "result_id": "70208843-aeee-4fa0-8626-7f0d93048a71"
+    },
+    {
+      "claim_id": "cbd7fc76-b568-49a3-a148-551a91750f17",
+      "result_id": "abcfcc69-f2fc-4c41-89ef-7dbed843dd1b"
+    },
+    {
+      "claim_id": "64e66499-1ac1-48c6-9d62-4dbf05a1805d",
+      "result_id": "5572b08b-64d9-4f60-a8ac-66880bdd57e1"
+    },
+    {
+      "claim_id": "ff301785-d3df-4e86-9ac4-4b31cbe142cb",
+      "result_id": "5572b08b-64d9-4f60-a8ac-66880bdd57e1"
+    },
+    {
+      "claim_id": "81d8aef0-584f-46ed-813b-5034c595cdf0",
+      "result_id": "5572b08b-64d9-4f60-a8ac-66880bdd57e1"
+    },
+    {
+      "claim_id": "894172d6-fec9-4125-9cec-14c85461e093",
+      "result_id": "5572b08b-64d9-4f60-a8ac-66880bdd57e1"
+    },
+    {
+      "claim_id": "398d1579-fe98-4899-af2b-99e454235620",
+      "result_id": "c95ebfd8-d467-49ab-91c0-a9056b248f7a"
+    },
+    {
+      "claim_id": "904284b6-832a-47ec-b6d7-54aa4fc3bb88",
+      "result_id": "c95ebfd8-d467-49ab-91c0-a9056b248f7a"
+    },
+    {
+      "claim_id": "2d945293-4e02-4601-ac80-1a30200bf3ad",
+      "result_id": "c95ebfd8-d467-49ab-91c0-a9056b248f7a"
+    },
+    {
+      "claim_id": "1ddf859d-ad30-471f-b31f-86c3a844372f",
+      "result_id": "c95ebfd8-d467-49ab-91c0-a9056b248f7a"
+    },
+    {
+      "claim_id": "c94e2f05-f9e7-4529-b6cf-4413f9942c4e",
+      "result_id": "c95ebfd8-d467-49ab-91c0-a9056b248f7a"
+    },
+    {
+      "claim_id": "98a895ce-d0fb-4a22-98fd-e9c96e1feecc",
+      "result_id": "d5a4a4af-0106-4283-b0b8-7aeb2b27d19d"
+    },
+    {
+      "claim_id": "498493a8-dcad-4b85-b595-19d3c815acb3",
+      "result_id": "d5a4a4af-0106-4283-b0b8-7aeb2b27d19d"
+    },
+    {
+      "claim_id": "8bf79518-4f8e-4a55-98fd-d18a40c0d21d",
+      "result_id": "d5a4a4af-0106-4283-b0b8-7aeb2b27d19d"
+    },
+    {
+      "claim_id": "e0850886-a6e4-4be4-9a32-41774d199a39",
+      "result_id": "d5a4a4af-0106-4283-b0b8-7aeb2b27d19d"
+    },
+    {
+      "claim_id": "a7205e4e-8315-4e8e-8c7e-bd62236e3b54",
+      "result_id": "d5a4a4af-0106-4283-b0b8-7aeb2b27d19d"
+    },
+    {
+      "claim_id": "eff3219b-8a05-49c1-891c-dceee3141672",
+      "result_id": "4200fdd9-b816-409b-b3bf-b9e784ea2703"
+    },
+    {
+      "claim_id": "91c5aac7-45d1-4756-b635-46a45f32efe7",
+      "result_id": "4200fdd9-b816-409b-b3bf-b9e784ea2703"
+    },
+    {
+      "claim_id": "8bc727a9-3a00-41dc-ada0-b0eb7a8a3fc9",
+      "result_id": "4200fdd9-b816-409b-b3bf-b9e784ea2703"
+    },
+    {
+      "claim_id": "a24de728-237f-47dd-bf25-0b8caf2377be",
+      "result_id": "4200fdd9-b816-409b-b3bf-b9e784ea2703"
+    },
+    {
+      "claim_id": "bb288fee-d1ee-4961-8e07-1c3a63c05a75",
+      "result_id": "abe2f8fb-abdc-4b00-837a-70a964053a66"
+    },
+    {
+      "claim_id": "9f1137d0-aa2b-4fec-92f2-fc4a4dbb868c",
+      "result_id": "abe2f8fb-abdc-4b00-837a-70a964053a66"
+    },
+    {
+      "claim_id": "b133b487-3583-4c51-a8c4-e1a8cc4420e3",
+      "result_id": "abe2f8fb-abdc-4b00-837a-70a964053a66"
+    },
+    {
+      "claim_id": "e4254b44-66dc-4503-a5d8-b94a5381fe24",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "1572e26e-0bea-4f62-8bc4-cc4e8ac246ad",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "f53d453f-481d-4b53-91e4-0086b9967be1",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "f5022a14-8864-45ea-806b-8450f5318862",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "849244a0-16c3-47ce-af74-0caa2707f474",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "f22ace40-4917-4579-b406-4350d80e3789",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "6bf02d44-82df-4673-a426-6eef274ab5f6",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "2a9d995b-337e-492f-9cb9-b5bac3b9ac2e",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "8a5c6bc0-de01-4a7a-92af-796906511bca",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "e270224e-c9db-4d66-b2dc-f4a8d3f68bbd",
+      "result_id": "3d36a41a-f8b3-43d9-b0a5-0bb8fdbde42a"
+    },
+    {
+      "claim_id": "b011252b-036d-4676-a81e-4107ea5560ee",
+      "result_id": "91cdcc4a-9dde-4bde-80a4-cfb77bd5e051"
+    },
+    {
+      "claim_id": "c9ab40e0-066c-4147-9e3e-08be70bbb3b8",
+      "result_id": "91cdcc4a-9dde-4bde-80a4-cfb77bd5e051"
+    },
+    {
+      "claim_id": "67ad2c9c-2b98-4b13-a9dc-65128a224d2f",
+      "result_id": "91cdcc4a-9dde-4bde-80a4-cfb77bd5e051"
+    },
+    {
+      "claim_id": "28a861f6-0fc5-4d7a-b8db-f55ef3868b14",
+      "result_id": "91cdcc4a-9dde-4bde-80a4-cfb77bd5e051"
+    },
+    {
+      "claim_id": "f298d461-d4f5-48f3-96e9-ec2c5e3ee966",
+      "result_id": "91cdcc4a-9dde-4bde-80a4-cfb77bd5e051"
+    },
+    {
+      "claim_id": "a2c11a0d-b5e1-4730-8739-5780195b96de",
+      "result_id": "91cdcc4a-9dde-4bde-80a4-cfb77bd5e051"
+    },
+    {
+      "claim_id": "c4b59b90-8126-46c3-8cb8-b1147dafe2e2",
+      "result_id": "91cdcc4a-9dde-4bde-80a4-cfb77bd5e051"
+    },
+    {
+      "claim_id": "c810ce64-5d66-4ee9-81fd-366c9b0b5ff5",
+      "result_id": "91cdcc4a-9dde-4bde-80a4-cfb77bd5e051"
+    },
+    {
+      "claim_id": "b4b1db92-0676-4388-ad9f-acfd5e6c0f7f",
+      "result_id": "fce5a9cc-1f9f-437b-9287-0ebd3c9403f1"
+    },
+    {
+      "claim_id": "f0dd3fe2-b04a-4e06-8151-fdeff80ce4a5",
+      "result_id": "fce5a9cc-1f9f-437b-9287-0ebd3c9403f1"
+    },
+    {
+      "claim_id": "241e8764-253f-4f5b-a27a-307eb260bdac",
+      "result_id": "fce5a9cc-1f9f-437b-9287-0ebd3c9403f1"
+    },
+    {
+      "claim_id": "8969d43f-e1b1-4055-85f8-72c95fc4ac29",
+      "result_id": "fce5a9cc-1f9f-437b-9287-0ebd3c9403f1"
+    },
+    {
+      "claim_id": "486a61ce-748a-4bca-97ae-05346da9e640",
+      "result_id": "75b2d88e-5db6-4354-b926-9638627af473"
+    },
+    {
+      "claim_id": "41e78621-88d7-4ee7-ab2e-f144e240950d",
+      "result_id": "75b2d88e-5db6-4354-b926-9638627af473"
+    },
+    {
+      "claim_id": "deb48f31-bfb1-4573-a52b-6b44f41dcab1",
+      "result_id": "75b2d88e-5db6-4354-b926-9638627af473"
+    },
+    {
+      "claim_id": "08c5fe91-965d-40a2-9c7e-e828fa66c800",
+      "result_id": "75b2d88e-5db6-4354-b926-9638627af473"
+    },
+    {
+      "claim_id": "f678cd6c-afbc-4e9b-b3ec-6a202cf417ca",
+      "result_id": "75b2d88e-5db6-4354-b926-9638627af473"
+    },
+    {
+      "claim_id": "0212d0fe-950d-4e73-b05a-0c3d62e9eb89",
+      "result_id": "75b2d88e-5db6-4354-b926-9638627af473"
+    },
+    {
+      "claim_id": "2b102e8a-4206-4120-b5a9-138fe45e9156",
+      "result_id": "b0609073-376f-4419-a221-9769dae937cb"
+    },
+    {
+      "claim_id": "856a16b2-9976-4ee2-99d1-cd8fa4ffddca",
+      "result_id": "b0609073-376f-4419-a221-9769dae937cb"
+    },
+    {
+      "claim_id": "efb486e2-1413-474b-8393-69761f580fd7",
+      "result_id": "b0609073-376f-4419-a221-9769dae937cb"
+    },
+    {
+      "claim_id": "66da60e5-f797-4fdf-a843-dab3c9a5d94e",
+      "result_id": "b0609073-376f-4419-a221-9769dae937cb"
+    },
+    {
+      "claim_id": "da0e6aca-0215-49f9-88a9-d7ee99c59de8",
+      "result_id": "bd772561-f66b-475a-9ab2-01270a48b788"
+    },
+    {
+      "claim_id": "e45b8cb8-e41a-4ea7-81bd-8f247307ca55",
+      "result_id": "bd772561-f66b-475a-9ab2-01270a48b788"
+    },
+    {
+      "claim_id": "26e8eacb-8ee0-4965-b8e7-f36d9da51fdc",
+      "result_id": "9be833c7-7e43-475a-9b0b-479cbbb8aa8c"
+    },
+    {
+      "claim_id": "e6934d52-0a94-4965-954b-809e39df8842",
+      "result_id": "9be833c7-7e43-475a-9b0b-479cbbb8aa8c"
+    },
+    {
+      "claim_id": "35b41e27-2e8a-4cfe-8632-8b94b2f49d05",
+      "result_id": "9be833c7-7e43-475a-9b0b-479cbbb8aa8c"
+    },
+    {
+      "claim_id": "69cfa790-30cf-4b51-a23e-bbaf9b49961a",
+      "result_id": "0e56c3e5-075b-4674-a536-623fafe41691"
+    },
+    {
+      "claim_id": "1194e7ad-4e0e-4848-b119-28621892992d",
+      "result_id": "0e56c3e5-075b-4674-a536-623fafe41691"
+    },
+    {
+      "claim_id": "f385ba0c-acbe-4f5b-9d7d-7116d8970e69",
+      "result_id": "0e56c3e5-075b-4674-a536-623fafe41691"
+    },
+    {
+      "claim_id": "d908fa89-cc81-4fee-bea6-bbeede1b42c7",
+      "result_id": "0e56c3e5-075b-4674-a536-623fafe41691"
+    },
+    {
+      "claim_id": "bb3a81aa-28f7-4d3e-b7dd-03e8643732d5",
+      "result_id": "0e56c3e5-075b-4674-a536-623fafe41691"
+    },
+    {
+      "claim_id": "c1667bf5-00ff-4e96-ab80-25256b084a1f",
+      "result_id": "0e56c3e5-075b-4674-a536-623fafe41691"
+    },
+    {
+      "claim_id": "d9893a65-d266-4c97-9571-a3b489fd5a0e",
+      "result_id": "0e56c3e5-075b-4674-a536-623fafe41691"
+    },
+    {
+      "claim_id": "f2d37f3a-45b4-4101-888b-89d815f17fd9",
+      "result_id": "370d60f2-ed65-4d3e-845d-4842c0fc26de"
+    },
+    {
+      "claim_id": "8c76d0f3-b530-4a57-8eb2-0517435a5dcf",
+      "result_id": "52cdff37-43cb-4f6f-b1c8-da04303e4b3e"
+    },
+    {
+      "claim_id": "f2cf967c-cf57-42ad-8c0f-c25f4e0214e3",
+      "result_id": "52cdff37-43cb-4f6f-b1c8-da04303e4b3e"
+    },
+    {
+      "claim_id": "370317e0-0507-4a7b-803a-52df5114582a",
+      "result_id": "0da8c0c7-0e23-4643-86af-c383f2c1ce45"
+    },
+    {
+      "claim_id": "ef94b8c2-a0b3-48b7-a83f-70e3d59aa0d5",
+      "result_id": "0da8c0c7-0e23-4643-86af-c383f2c1ce45"
+    },
+    {
+      "claim_id": "79477168-3ac0-4af3-9996-2f3b3bbc8f42",
+      "result_id": "a4caffe8-2699-4713-aff1-f788b09a015f"
+    }
+  ],
+  "comparisons": []
+}

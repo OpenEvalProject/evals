@@ -1,0 +1,190 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C50"
+    ],
+    "result": "Mer2 and Spp1 form a stable complex with high affinity (KD ~24 nM for Mer2FL and ~137 nM for Mer2Core) that does not require post-translational modifications or additional cofactors. The interaction is primarily mediated by the core region of Mer2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 and C50 are well-supported by multiple complementary biochemical techniques including co-purification (C14), MST binding assays (C16, C17), and pulldown experiments. The A260/A280 ratio provides evidence for lack of nucleic acid contamination (C14), and the binding affinities are quantified with error estimates (C16, C17). The conclusion that PTMs are not required (C15) is reasonably inferred from successful purification in bacterial systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Mer2 forms a tetramer through its core region (residues 140-256) and binds two copies of Spp1, establishing a 4:2 stoichiometry. This represents a novel function for Mer2 in mediating Spp1 dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by SEC-MALS data showing molecular masses consistent with tetrameric Mer2 and 4:2 Mer2:Spp1 complexes (C19, C20). The conclusion is corroborated by multiple constructs and is consistent with prior work (Claeys Bouuaert et al., 2021). The inference that Mer2 mediates Spp1 dimerization (C21) logically follows from the stoichiometry data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C51"
+    ],
+    "result": "The Mer2-Spp1 complex binds nucleosomes more tightly than monomeric Spp1 alone, with GST-Spp1 showing intermediate affinity. This suggests Mer2 both dimerizes Spp1 and directly contributes to nucleosome binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 and C51 are supported by EMSA and pulldown data (Figure 2A, B) showing differential binding affinities. The observation that GST-Spp1 (which dimerizes Spp1) shows intermediate binding between monomeric Spp1 and Mer2-Spp1 complex provides evidence for Mer2's direct contribution to nucleosome binding (C24). The inference is logical and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Cross-linking mass spectrometry reveals that most cross-links between the Mer2-Spp1 complex and nucleosomes are via Mer2 regions, clustering around histone H3 and the DNA entry/exit site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 are supported by XL-MS data (Figure 2D, E) showing cross-links mapped onto nucleosome structure. The data clearly demonstrate that Mer2, rather than Spp1, makes the majority of contacts with nucleosomes, particularly near the DNA entry/exit site. The visualization on the nucleosome structure (Figure 2E) provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C52",
+      "C53"
+    ],
+    "result": "Mer2 directly binds nucleosomes with high affinity (apparent KD ~5 nM) in a 4:1 stoichiometry, with the main binding region in the C-terminal 58 amino acids. Mer2 binds nucleosomal DNA with 6-fold higher affinity than free DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31, C52-C53 are supported by multiple complementary techniques: SEC (C27), mass photometry (C28), SEC-MALS, EMSA (C29), and pulldown assays (C30). The stoichiometry is well-characterized (C28), and domain mapping identifies the C-terminus as critical (C30). The inference that Mer2 binds nucleosomal DNA (C53) is supported by binding to NCPs with no DNA overhangs and lack of effect from acidic patch or tail mutations. However, the KD values vary between techniques (5 nM by EMSA vs ~40 nM by other methods), which the authors acknowledge is due to non-equilibrium conditions in EMSA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Mer2 binding to Hop1 is enhanced ~6-fold when Hop1 is co-expressed with Red1, but Mer2 does not bind Red1 directly. The interaction is driven by HORMA domain-mediated interactions and is promoted when Hop1 is in an 'unlocked' state (Hop1K593A shows ~2-fold stronger binding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by quantitative pulldown experiments (Figure 4A-D). The lack of Mer2-Red1 interaction (C36) is demonstrated by negative pulldown results. The enhanced binding with 'unlocked' Hop1K593A (C37) supports the model that the intramolecular CM interferes with Mer2 binding (C38). The inference about HORMA domain involvement is supported by the observation that Hop1\u0394HORMA does not bind Mer2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Mer23A and Mer24A mutants fail to restore spore viability in mer2\u0394 and prevent phosphorylation of histone H3-T11 and Hop1, indicating defective DSB formation and Mec1/Tel1-Mek1 signaling. However, Mer2 recruitment to chromosomal foci is not disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by spore viability assays (C39, Figure 5C), Western blot analysis showing loss of phospho-H3-T11 and phospho-Hop1 (C40, C41, Figure 5B), and chromosome spread immunofluorescence (C42, Figure 5D). The data consistently show that the mutants are defective in DSB signaling but still localize to chromosomes, suggesting a specific functional defect rather than mislocalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Quantitative IP-MS analysis reveals that Mer24A shows reduced binding to histone H3 (~2-fold) compared to Mer2WT, while interaction with Hop1, Spp1, and Red1 remains largely unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 are supported by quantitative IP-MS data (Figure 5F, G, Figure 5\u2014figure supplement 2). The volcano plot clearly shows reduced histone H3 binding (C43), while Hop1 binding is maintained (C44). This is consistent with in vitro data showing Mer24A can still bind Hop1 (Figure 4E). The analysis was performed in spo11-Y135F background to control for DSB-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C54",
+      "C56"
+    ],
+    "result": "Mer2 directly interacts with Mre11 via conserved N-terminal residues (Mer23A shows 2-fold reduction, Mer24A shows 10-fold reduction in binding). This interaction is critical for meiotic DSB formation, as mer2-3a and mer2-4a mutants show DSB defects comparable to mer2\u0394. The conserved residues suggest this is a universal feature of meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49, C54, C56 are supported by Y2H analysis (C45, Figure 6A), in vitro pulldowns with purified proteins (C46-C48, Figure 6B-C), and Southern blot analysis of DSB formation (C49, Figure 6E). The conservation analysis (Figure 5\u2014figure supplement 1) supports the universality claim (C54). XL-MS data (Figure 6D) provides structural insight. The convergence of genetic and biochemical evidence strongly supports the functional importance of the Mer2-Mre11 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Mer2 forms the keystone of meiotic recombination by binding directly to the chromosome axis via Hop1 and to chromatin loops via nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a summary conclusion supported by the collective evidence from multiple results above: direct Mer2-Hop1 interaction (C35-C38), direct Mer2-nucleosome binding (C27-C31), and the functional importance of both interactions. This integrative model is well-supported by the comprehensive biochemical and genetic data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background information on meiotic DSB machinery: Spo11 initiates DSB formation with at least 10 additional factors; Mer2 is essential for meiosis, is phosphorylated by S-Cdk and DDK, forms complexes with Rec114-Mei4 and Spp1, and interacts with HORMA proteins in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 represent established background knowledge supported by appropriate citations to prior literature. These claims provide context for the current work and are appropriately referenced. They are not novel findings of this study but rather establish the scientific foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background on Hop1 HORMA domain: Hop1 exists in 'open/unbuckled' or 'closed' states, contains a C-terminal closure motif (CM), and Red1's CM binds Hop1 with higher affinity than Hop1's own CM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 represent established knowledge about HORMA domain proteins, appropriately cited to West et al., 2018. This background information is essential for understanding the Mer2-Hop1 interaction mechanism but is not a novel finding of this study.",
+    "result_type": "MINOR"
+  }
+]

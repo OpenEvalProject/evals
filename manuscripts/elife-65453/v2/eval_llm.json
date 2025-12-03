@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study obtained 173 high-quality SARS-CoV-2 genomes from 134 patients across 31 wards in 5 UK hospitals and 39 healthcare workers (23% of samples), collected between March 8 and June 6, 2020. 44 samples (25%) were from three hospital locations experiencing outbreak conditions, with an additional 35 samples from these locations failing quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C20 provide consistent, specific demographic and sampling data with exact counts, percentages, dates, and locations. The data are internally consistent and represent straightforward descriptive statistics of the cohort. No contradictions or methodological concerns are evident in these basic descriptive claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C90"
+    ],
+    "result": "Sequencing quality control established that samples with >400 ng total yield consistently met 10\u00d7 minimum coverage thresholds, while samples with Ct values \u226531 frequently failed to meet coverage requirements. The study included only samples with \u226575% genome coverage at \u226510\u00d7 depth for downstream analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C90 describe quality control metrics with specific thresholds supported by Figure 1\u2014figure supplement 1. The relationship between Ct values, amplicon yield, and coverage is a well-established technical consideration in viral sequencing. The quality criteria are clearly defined and appropriate for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C64",
+      "C65"
+    ],
+    "result": "Variant analysis identified 268 genomic variants compared to reference MN908947.3, with 86 recurrent variants (range 2-126 samples) and 182 unique to single samples. The median number of variants per sample was 11 (range 2-16), with an average pairwise similarity of 61.5%, confirming the low genetic diversity of SARS-CoV-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C64-C65 provide specific quantitative data on variant identification that are internally consistent (268 = 86 + 182). The low genetic diversity observation aligns with established knowledge about SARS-CoV-2 (C63) and is supported by the cited literature. The statistics are straightforward descriptive measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Phylogenetic lineage assignment using Pangolin identified 11 distinct lineages, with 87% (151/173) of genomes confidently assigned (SH-alrt >80%, UFbootstrap >90%). Lineage B.1.1 dominated the cohort (71%, 122/173), was present across 29 different wards including A&E and HCWs, showed constant relative frequency over calendar weeks 12-23, and no lineage A samples were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 describe lineage assignment results with specific statistical thresholds and are supported by Figure 1\u2014figure supplement 2. The dominance of B.1.1 is clearly documented with exact counts. The use of established phylogenetic support metrics (SH-alrt, UFbootstrap) is appropriate. The temporal and spatial distribution data are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C62"
+    ],
+    "result": "Local phylogenetic analysis revealed clusters formed predominantly from viral genomes from individual wards (e.g., 19/31 samples in one cluster from ward H2_W7), supported by both maximum-likelihood and consensus bootstrap approaches. However, the predominance of lineage B.1.1 prevented precise differentiation of samples at the lineage level alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe phylogenetic clustering patterns supported by Figure 1\u2014figure supplement 3 with specific examples and appropriate statistical methods (10,000 bootstraps). Claim C62 acknowledges a limitation that is consistent with the observed lineage distribution (C27-C28). The need for finer-scale analysis beyond lineage assignment is a logical inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C66",
+      "C67",
+      "C68",
+      "C100",
+      "C101"
+    ],
+    "result": "Integration of patient admission records (available for 104/134 patients) with genomic data identified eight patient contact clusters (PCCs) showing significantly higher viral genetic similarity within clusters compared to non-clustered samples (p<0.001). Seven distinct clusters were defined by 20-fold enrichment of patient-patient contacts among genetically related samples during the likely infection period (3-7 days pre-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36-C38, C66, C68, C100-C101 describe the core patient-only clustering analysis with specific statistical significance (p<0.001, Wilcoxon rank-sum test) and enrichment metrics (20-fold). The methodology is clearly described with appropriate statistical testing. Figure 2 supports the genetic similarity findings. The discrepancy between 8 PCCs (C2) and 7 clusters (C38) likely reflects different clustering criteria but both are explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C67"
+    ],
+    "result": "Incorporating HCW workplace location data (available for 31/39 HCWs) identified 49 potential HCW-patient contacts involving 10 HCWs and 18 patients, which expanded contact density within clusters and identified 44 individuals in viral clusters (21 not identified by patient-only analysis). Patients and HCWs in the same ward showed significantly increased viral genetic similarity (p<0.001), and genetic similarity within PCCs increased when HCW interactions were incorporated (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C39-C42, C44-C46, C67 describe the enhanced clustering with HCW data, supported by specific counts and statistical significance (p<0.001). Figure 1 and Figure 2 provide visual and quantitative support. The finding that 21 additional individuals were identified in viral clusters demonstrates added value of HCW data. The statistical comparisons use appropriate methods (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Temporal analysis revealed that all contact clusters could be traced to early 'founder' viral samples, with the number of genomic variants increasing over time and early samples having more derived/identical descendants. In ward H2_W7, 18/19 (95%) samples contained the novel variant MN908947.3\u20133228-T-G, with at least 16 being probable/definite hospital-acquired infections. Lowering quality thresholds identified this variant in 5 additional samples, suggesting excluded samples may represent missing transmission links.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 describe temporal patterns supported by Figure 3, with specific examples (H2_W7 cluster) and quantitative data (95% variant prevalence, 16 hospital-acquired cases). The temporal trends (increasing variants over time, early samples as founders) are consistent with outbreak dynamics. The observation about quality thresholds (C51-C52) is a reasonable inference supported by the additional variant detections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C70",
+      "C71",
+      "C72",
+      "C83"
+    ],
+    "result": "The study demonstrates that SARS-CoV-2 genome sequencing combined with patient admission and staff workplace data can identify nosocomial transmission events. Spatial and temporal patterns of viral genetic relatedness across at least five distinct clusters in three hospitals, reinforced by novel genomic variants transmitting through clusters, provide strong evidence for nosocomial transmission among patients and HCWs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C70-C72, C83 represent the main conclusions, supported by the convergence of genetic, spatial, and temporal data across multiple independent clusters (C71). The presence of novel variants in clusters (C72) strengthens the inference beyond chance genetic similarity. However, the authors appropriately acknowledge the limitation that genetic similarity could occur by chance (C69), making this a well-qualified conclusion rather than definitive proof of transmission directionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C69",
+      "C75",
+      "C76",
+      "C80"
+    ],
+    "result": "The study acknowledges key limitations: SARS-CoV-2's low genetic diversity means samples may be genetically identical by chance rather than through transmission; hidden links between individuals can hinder comprehensive outbreak characterization; shared variants without known connections suggest missing individuals or connections; and the contact inference approach has imperfect assumptions that likely dilute rather than inflate statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C69, C75-C76, C80 appropriately acknowledge methodological limitations supported by citations (C63, C75). The acknowledgment that imperfect assumptions likely dilute significance (C80) is a conservative interpretation. These limitations are important context for interpreting the main findings and demonstrate appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The contact network methodology assumes close face-to-face contact as the primary SARS-CoV-2 transmission route and defines contact windows according to national nosocomial infection guidelines (community-acquired: \u22642 days; possible: 3-7 days; probable: 8-14 days; definite: >14 days post-admission). HCWs were assumed to have contacts with all patients in their workplace ward, with constant interaction up to the day of patient positive tests, extending the contact window to 1-7 days pre-test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C99 describe methodological assumptions that are reasonable but unvalidated. The assumption of face-to-face contact as primary transmission is supported by meta-analysis (C79), and the national guidelines provide standardization (C97). However, the HCW assumptions (C98-C99) are simplifications that may not reflect actual contact patterns\u2014HCWs may not contact all patients equally, and interaction intensity likely varies. While C80 suggests these assumptions dilute significance, the actual impact on false positive rates is uncertain without validation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C81",
+      "C82"
+    ],
+    "result": "The data support widespread adoption of iterative screening strategies for HCWs who may be pre-symptomatic or asymptomatic SARS-CoV-2 shedders, as such individuals are important contributors to outbreaks and over half of transmissions occur pre-symptomatically, with transmission likelihood increasing with contact duration and proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is a policy recommendation supported by the study's findings of HCW involvement in transmission clusters (C3-C4, C39-C42) and by citations to relevant literature (C74, C81-C82). The recommendation is appropriately qualified as a suggestion rather than a definitive conclusion. The supporting evidence from prior work (C74, C81-C82) strengthens the rationale, though the current study does not directly test screening interventions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose that future adoption of real-time genomic approaches (within 48 hours) alongside patient movement data could enable rapid identification of hospital-acquired infections, optimize infection control strategies, enable targeted interventions, reduce nosocomial transmission, and prevent harm to vulnerable individuals. Track-and-trace smartphone software could extend contact characterization and validate study assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77, C84-C85 are speculative proposals about future applications (C77, C84-C85 are explicitly marked as speculation). While the current study demonstrates feasibility of retrospective genomic epidemiology, real-time implementation within 48 hours faces practical challenges not addressed (turnaround time, cost, infrastructure, interpretation speed). The proposed benefits (C85) are plausible but undemonstrated. These represent reasonable future directions but lack empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The introduction establishes context: SARS-CoV-2 places significant burden on healthcare worldwide; high-risk individuals in hospitals/care homes are vulnerable due to close patient-HCW contact; vaccines may reduce but not eliminate risk, necessitating continued infection control; testing alone cannot reveal transmission pathways; the degree of transmission by different groups remains uncertain; and HCWs are established as important in outbreak investigations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 provide background context supported by appropriate citations. These are general knowledge claims (C5-C6, C10, C13) or reasonable inferences (C8-C9, C11-C12) that frame the study rationale. The statement that vaccines won't completely mitigate risk (C8) was speculative at the time (early pandemic) but has proven accurate. These contextual claims appropriately motivate the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study context included no routine screening of asymptomatic HCWs and implementation of green (SARS-CoV-2-negative) and red (positive) zones with staff bubbles\u2014a widespread infection control strategy. However, patients testing positive after prolonged time in green areas indicated unrecognized transmission events. Viral genome sequencing offers realistic possibility to track nosocomial transmission root causes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe the healthcare setting and rationale for genomic approaches. The green/red zone strategy (C58-C59) is documented practice, and the observation of positive tests in green zones (C60) is a data-driven inference that motivated the study. The statement about sequencing potential (C61) is supported by citations and validated by the study's own findings. These claims provide important context for interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Methods included collection of throat/nasal swabs from patients and HCWs at MFT hospitals, RT-qPCR testing by MMMP, whole-genome sequencing at MCGM targeting outbreak wards, variant calling with \u22650.6 allele fraction threshold, phylogenetic analysis using MAFFT and IQ-TREE with 1000 bootstraps, lineage assignment with Pangolin v2.0, data sharing with COG-UK, and collection of hospital admission data for all patients with high-quality genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 describe standard methodological procedures with appropriate tools and parameters. The sequencing and bioinformatics pipeline uses established, peer-reviewed methods (MAFFT, IQ-TREE, Pangolin) with appropriate citations (C92-C93). The variant calling threshold (0.6 allele fraction, C91) is reasonable for consensus calling. Data sharing with COG-UK (C94) demonstrates good practice. These methods are adequately described for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The contact inference assumption is supported by meta-analyses showing that physical distancing of less than 1 m increases likelihood of SARS-CoV-2 transmission between individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 cites meta-analysis evidence (Chu et al., 2020) supporting the face-to-face contact assumption used in the methodology (C96). This provides empirical justification for the contact definition, though it doesn't validate the specific implementation in hospital settings where contact patterns may differ from general populations studied in meta-analyses.",
+    "result_type": "MINOR"
+  }
+]

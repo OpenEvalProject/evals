@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "AVAL and AVAR neurons were labeled with BFP and their calcium activity during movement exhibited expected transients during backward locomotion, with activities similar to each other and consistent with prior literature reports. Signal-to-noise differences between AVAL and AVAR were attributed to their relative positions to the imaging objective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30-32 are well-supported by Figure 2 showing AVA activity traces aligned to velocity, with clear transients during reversals matching prior work. The explanation for signal quality differences (C33) is reasonable given the imaging geometry. This validation strengthens confidence in the recording system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C41",
+      "C42",
+      "C52",
+      "C99"
+    ],
+    "result": "A linear population decoder significantly outperformed the best single neuron at decoding both velocity and curvature from held-out test data across 11 moving animals (p < 0.05, two-sided Wilcoxon rank test), demonstrating that population activity more accurately decodes locomotion than any single neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C41-42, C52 are strongly supported by Figure 3 showing systematic comparisons with appropriate statistical tests and held-out validation. The use of cross-validation and test sets mitigates overfitting concerns. Performance metrics (R\u00b2) are clearly reported and the population advantage is consistent across animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Multiple neurons exhibited calcium activity significantly tuned to velocity or curvature, with diverse tuning properties including neurons active during forward vs backward locomotion, dorsal vs ventral bends, and in some cases the temporal derivative of activity also correlated with locomotion features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-29 are supported by Figure 1 and supplements showing tuning curves with statistical significance testing using shuffling procedures and Bonferroni correction. The diversity of tuning (C2) is demonstrated across multiple neurons. However, the specific threshold (\u03c1 > 0.4) for significance appears somewhat arbitrary beyond the statistical test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "AVA's activity alone is insufficient to robustly decode velocity across the full range of locomotion, being informative during backward locomotion but containing little information about velocity during forward locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-36 are supported by Figure 2c showing AVA's tuning curve with strong correlation to negative velocities but poor correlation to positive velocities. This motivates the need for population-level decoding and is consistent with prior literature on AVA function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C45"
+    ],
+    "result": "Decoder performance across recordings correlated with the maximal Fano factor of raw GCaMP fluorescence intensity, suggesting that variability in decoder performance may be due in part to variability in the amount of neural signal in the recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C45 are supported by Figure 3\u2014figure supplement 1 showing correlation between Fano factor and performance. However, the correlation is modest (\u03c1 \u2248 0.46-0.49) and the Fano factor is only one metric of signal quality. Other factors likely contribute to performance variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "In recording AML32_A, the best single neuron captured velocity dynamics for negative velocities but saturated at positive velocities, while the population decoder captured velocity dynamics during both forward and backward locomotion in the held-out test set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-47 are clearly demonstrated in Figure 4 showing the saturation behavior of the best single neuron versus the population decoder's ability to capture the full velocity range. This provides a concrete example of how population coding extends the dynamic range beyond single neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C51",
+      "C53"
+    ],
+    "result": "Motion correction using RFP as a control and validation with GFP control animals lacking calcium indicators demonstrated that the decoder's performance relies on neural signals rather than primarily on motion artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C51, C53 are supported by the motion correction methodology and Figure 3e-f showing significantly worse performance on GFP controls (p < 0.05). The assumption that motion artifacts affect both fluorophores similarly (C48) is reasonable. This control is critical for validating that decoded signals are neural.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In the exemplar recording, the distribution of decoder weights for both velocity and curvature were well-approximated by Gaussian distributions centered at zero, and the decoder relied roughly equally on neurons positively and negatively tuned to velocity and curvature, suggesting the decoder does not need to deviate significantly from the ridge regression prior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-57 are supported by Figure 5a,b showing weight distributions. The observation that weights follow the prior distribution is interesting and suggests the regularization is appropriate. However, the interpretation (C55) that the decoder doesn't need to deviate from the prior is somewhat circular given that ridge regression enforces this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Inspection of highly weighted neurons revealed that the decoder is not primarily averaging over duplicate signals, but instead sums together different types of neural signals including those that capture only certain features of behavior or only certain instances of the same behavior motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-62, C64-66 are supported by Figure 5c,d showing diverse activity patterns among highly weighted neurons. The qualitative assessment is reasonable, though the conclusion (C65-66) relies on visual inspection of a limited number of neurons. More systematic quantification of signal diversity would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C127",
+      "C128"
+    ],
+    "result": "Only a fraction of neurons (median N90 of 27 for velocity, 31 for curvature out of median 121 total neurons, roughly a quarter) are necessary for the decoder to achieve 90% of full model performance, with largely distinct subpopulations contributing to velocity versus curvature decoding (median 7 neurons in intersection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C67-72, C127-128 are supported by Figure 6 and Table 1 with clear quantification of N90 values. The methodology of sequentially adding neurons by weight magnitude is sound. The small overlap between velocity and curvature populations (C3) is well-demonstrated, though the biological interpretation requires caution since neuron identities are unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C117"
+    ],
+    "result": "Different neurons' activities contribute features relevant for different aspects of behavior, with some neurons having peaks corresponding only to ventral or dorsal turns, consistent with known neurons like RIVL/R and SMD that are active during specific turn directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C117 are supported by Figure 5 showing neurons with activity specific to dorsal or ventral turns. The consistency with prior literature on RIVL/R and SMD neurons (C118-120) strengthens this finding. However, without neuron identification, the specific neuron assignments remain uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Largely distinct sub-populations of neurons in the brain contain the majority of information important for decoding velocity and curvature, based on minimal overlap between N90 populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by Figure 6 showing small intersection between velocity and curvature N90 populations (median 7 neurons). This is consistent with prior literature (C73-74, C129) suggesting functional segregation. However, the conclusion is limited by unknown neuron identities and the possibility that some neurons contribute to both but below the N90 threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The decoder uses a mix of neural activity signals and their temporal derivatives, with weights distributed roughly equally between F and dF/dt features at the population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by Figure 5a,b and the model description. The use of temporal derivatives is consistent with prior work (C113-114) showing that different neurons encode locomotion through activity or its derivative. This is a reasonable feature engineering choice for capturing temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C97"
+    ],
+    "result": "Immobilization significantly altered the correlation structure of neural activity, with clusters of neurons that were correlated during movement becoming uncorrelated during immobilization, and many weakly or negatively correlated neurons becoming strongly positively correlated (p = 0.012, Welch's t-test comparing dissimilarity to moving-only controls).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C82-84, C86, C97 are supported by Figure 7e,f showing clear changes in correlation matrices with statistical validation. The dissimilarity metric is appropriate and the comparison to moving-only controls (C86) is a critical control. However, the sample size for moving-to-immobile recordings is small (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C87",
+      "C88",
+      "C89",
+      "C135"
+    ],
+    "result": "Immobilization altered the dynamics of neural activity, with neural state space trajectories during immobilization being more structured and stereotyped than during movement. The emergence of structured dynamics is consistent with the significant change in correlation structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C87-89, C135 are supported by Figure 7c,d showing different trajectory structures. The connection between correlation structure changes and dynamics (C88) is logical since PCA depends on correlations. However, the assessment of trajectories being 'more structured' is somewhat qualitative and could benefit from quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C98"
+    ],
+    "result": "Immobilization induced many neurons to change the sign of their correlations with AVA, with some neurons switching from negative to positive correlation and vice versa. On average, neurons became significantly more positively correlated to AVA upon immobilization (p = 0.019, Wilcoxon ranked test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C93-96, C98 are supported by Figure 8 showing specific examples and statistical analysis. The sign changes in correlations are striking and well-documented. However, this is from a single recording (AML310_E), limiting generalizability. The biological interpretation of these changes remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "During movement, AVA exhibited sharp rises in response to most instances of backward locomotion as expected, while during immobilization, AVA exhibited slow cycles of activity captured in one of the first three principal components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-91 are supported by Figure 7b,c showing AVA activity during movement and immobilization. The movement activity is consistent with prior work, and the cyclic activity during immobilization is clearly visible. This provides a concrete example of how individual neuron dynamics change with immobilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C136"
+    ],
+    "result": "C. elegans neural dynamics exhibit different correlation structure during movement than during immobilization, with implications for interpreting neural representations of locomotion. The correlation structure and consequently the relevant principal components change upon immobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C136 are supported by the data in Figures 7-8. The implication for PCA-based analyses (C132-134) is important since PCA is widely used in the field. However, the recommendation (C134) for studying moving animals is somewhat obvious and the specific implications for prior immobilized studies are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The success of linear decoding suggests that linear combination of activity from different neurons is one plausible mechanism the brain may employ to represent behavior, though the measurements do not distinguish between motor command signals and proprioceptive feedback signals, and the decoder likely uses a mix of both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-102 are reasonable interpretations of the findings. The limitation (C101) that the study cannot distinguish motor commands from sensory feedback is important and honestly stated. The inference (C100) about brain mechanisms is appropriately cautious ('one plausible mechanism'). However, this remains speculative without perturbation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The finding that a linear decoder performs well could reflect either that C. elegans is a non-linear system encoding information linearly (like the vertebrate retina) or that the linear representation reflects genuinely linear circuitry in the brain, as some C. elegans connections appear linear over physiologically relevant ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-108 present two alternative interpretations of the linear decoding success. Both are plausible and supported by citations (C105, C107), but the current data cannot distinguish between them. The discussion appropriately acknowledges this uncertainty. Additional experiments (perturbations, circuit mapping) would be needed to resolve this question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "While several non-linear models were tested, it is possible that a different non-linear model would perform better than the linear model. Complex models are prone to overfitting with limited data, and future work with longer recordings is needed to better evaluate whether more complex models would outperform the linear decoder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-111 appropriately acknowledge limitations in the exploration of non-linear models. Figure 3\u2014figure supplement 4 shows several alternatives were tested. The point about overfitting (C110) is valid and the suggestion for future work (C111) is reasonable. This honest assessment of limitations strengthens the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The informativeness of temporal derivatives suggests that the nervous system cares not only about activity at the current instant but also about preceding moments, as temporal derivatives are one way to incorporate temporal information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-116 are reasonable interpretations of why temporal derivatives improve decoding. This is consistent with prior work (C113-114) showing different neurons encode locomotion through activity or derivatives. However, the interpretation is somewhat speculative and alternative explanations (e.g., derivatives simply capture different aspects of neural dynamics) are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The observation that some neurons are active only for specific instances of behavioral motifs could be explained by superficially similar behaviors actually consisting of different underlying behaviors, or by neural representations depending on behavioral context including preceding or following behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-124 present plausible explanations for instance-specific neural activity, supported by citations (C122, C124). However, these remain speculative interpretations without direct experimental validation. Alternative explanations (noise, incomplete sampling, measurement artifacts) are not fully ruled out. Additional experiments would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Previous work has shown that different sets of head interneurons (AVA/AVE/AVD or AIB/RIM) can independently induce reversals, and different sensory pathways (nociceptive via ASH, mechanosensory via ALM/AVM) activate reversals through shared circuitry including AVA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-126 accurately cite prior work (Piggott et al., 2011; Mellem et al., 2002; Wicks and Rankin, 1995) on reversal circuits and sensory pathways. These are used to provide context for interpreting the observation of neurons active for only some behavioral instances. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Changes in neural dynamics upon immobilization may be due to proprioception or to different internal states associated with fictive versus actual locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-138 present plausible explanations for immobilization effects, with C137 supported by citation to prior work on proprioception (Wen et al., 2012). However, these remain speculative without direct experimental tests. The current data cannot distinguish between these or other potential mechanisms (e.g., stress responses, drug effects).",
+    "result_type": "MINOR"
+  }
+]

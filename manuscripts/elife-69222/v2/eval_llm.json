@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Enzymatic pathways, particularly translation factors, exhibit conserved protein expression stoichiometry across evolution. This conservation is observed even when transcription and translation rates diverge across species, and extends to convergently evolved proteins with the same function, suggesting modular determinants independent of detailed biochemical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C5, and C6 collectively establish the evolutionary conservation of protein stoichiometry in enzymatic pathways. The claims are supported by citations to prior work (C4, C5) and provide a logical inference (C6) about the modular nature of stoichiometry determinants. The observation in Figure 1B (C21) provides additional visual evidence of this conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C62",
+      "C63"
+    ],
+    "result": "A first-principles model based on maximizing ribosome usage under proteome allocation constraints predicts translation factor stoichiometry that agrees with observed conserved ratios. The model provides analytical solutions explaining the expression hierarchy based on biophysical properties like diffusion constants and protein sizes, with elongation factors predicted to be more abundant than initiation/termination factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C62 demonstrate agreement between model predictions and observed data (Figure 4), while C3 and C63 describe the interpretable framework and hierarchy that emerges. The model's predictions show concordance with measurements across multiple species, supporting the validity of the optimization approach. The analytical nature of the solutions without free parameters strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C21"
+    ],
+    "result": "Translation-related proteins show characteristic abundance patterns: total translation protein mass increases linearly with growth rate, individual factor abundances vary 100-fold, but their ratios are maintained across growth conditions and species. This expression hierarchy is conserved evolutionarily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are well-supported by multiple citations to prior experimental work. C21 provides direct visual evidence in Figure 1B showing the conserved hierarchy across three bacterial species. The consistency between cited literature and presented data strengthens this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C34",
+      "C36",
+      "C37",
+      "C86"
+    ],
+    "result": "The model framework establishes that at steady-state exponential growth, all ribosome fluxes through translation cycle steps are matched and proportional to cell growth rate. Active ribosomes (>95% of total in fast growth) cycle through initiation, elongation, and termination with equal flux through each step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C34, and C86 establish fundamental steady-state principles that are well-established in the field (supported by citations). C36 provides a clear definition, and C37 is supported by citations quantifying inactive ribosomes. These form a coherent theoretical foundation for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C43",
+      "C44",
+      "C45",
+      "C69"
+    ],
+    "result": "The optimization principle balances biochemical efficiency (higher translation factor expression improves ribosome usage) against systems-level constraints (translation factor expression reduces space for ribosomes). Optimality occurs at 'equipartition' where the proteome fraction of free factors equals that of waiting ribosomes at each step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C43-C45, and C69 present a coherent conceptual framework for the optimization. The equipartition principle (C45, C69) is illustrated in Figure 2B and provides an intuitive interpretation. The derivation showing equivalence between the optimization condition and minimizing effective proteome fraction (C43) strengthens the theoretical foundation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Translation termination involves two sequential steps: (1) stop codon recognition and peptidyl-tRNA hydrolysis by RF1/RF2, which recognize different stop codons (RF1: UAA/UAG; RF2: UAA/UGA), and (2) ribosome recycling by RF4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, and C29-C32 describe the termination mechanism with consistent citations to established literature (Bertram et al., 2001; Scolnick et al., 1968). This provides the biological foundation for the termination model. The claims are mutually consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Translation elongation involves multiple interlocked cycles: charged tRNAs are delivered to ribosomes via ternary complexes (tRNA-EF-Tu), EF-Ts recycles EF-Tu after GTP hydrolysis, EF-G catalyzes translocation, and aminoacyl-tRNA synthetases charge tRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 and C25-C28 describe the elongation mechanism with supporting citations from established literature. These provide the biological foundation for the elongation model presented in Figure 3A. The mechanistic description is consistent with current understanding of translation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The elongation model was coarse-grained to a single effective codon, revealing two distinct regimes separated by a sharp transition line: one where charged tRNAs are limiting (low aaRS) and another where EF-Tu is limiting (low EF-Tu). The transition line represents conditions where EF-Tu and aaRS are co-limiting for ternary complex concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C52-C54 describe the coarse-graining approach and resulting regime structure shown in Figure 3B. The sharp separation between regimes is demonstrated visually and explained mechanistically. The model simplification is justified and the resulting predictions are testable. Figure 3\u2014figure supplement 1 provides additional geometric interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The cellular tRNA to ribosome ratio is barely sufficient for the model requirements, estimated at 6-7 tRNAs per ribosome at fast growth, just meeting the minimum needed to accommodate ribosome-bound tRNAs (~2) and EF-Tu-bound tRNAs (~4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by citation to Dong et al., 1996 for the tRNA/ribosome ratio measurement. The calculation showing this is barely sufficient is straightforward and the agreement between the measured ratio and model requirement is striking, though the model treats total tRNA as a measured parameter rather than optimizing it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In the binding-limited regime, optimal translation factor stoichiometry ratios are independent of growth rate (except aaRS) and depend only on biophysical parameters like protein sizes and diffusion constants. This prediction is consistent with observed conservation of relative factor expression across growth conditions (E. coli: 20-120 min doubling times) and across phylogenetically distant species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C72, and C75 present the theoretical prediction, while C73 and C74 provide experimental support from citations and Figure 4\u2014figure supplement 2A. The growth-rate independence is a key prediction that is testable and appears to be supported by data. The dependence on conserved biophysical parameters explains cross-species conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Diffusion constants for translation factors were obtained from experimental measurements where available, and estimated for uncharacterized factors using cubic-root scaling with protein size from the Stokes-Einstein relation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C61 describe the parameter estimation approach with appropriate citations. The use of measured values where available (C60) and physics-based scaling for estimates (C61) is reasonable. However, the authors acknowledge in C78-C79 that this approach has limitations and makes simplifying assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Most translation factors are simultaneously co-limiting for cell growth regardless of their expression level. At optimality, there are just enough factors to support required flux such that any reduction below optimal makes that factor limiting. This is supported by experimental evidence that knockdowns of individual RFs and aaRSs are detrimental to growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 present the co-limiting conclusion as an implication of the model, while C71 provides experimental support from citations (Parker et al., 2020; Lalanne et al., 2021). The equipartition principle (C69) provides the mechanistic basis. The experimental validation strengthens this important conclusion about the vulnerability of the translation system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The model has limitations in parameter estimation: coarse-grained association rate constants are difficult to estimate and may neglect important features; simplifying assumptions about molecular properties may need modification; in vitro catalytic rates (e.g., aaRS ~3 s\u207b\u00b9) are inconsistent with in vivo requirements (~15 s\u207b\u00b9). Some factors (EF-Ts, RF4, IF1) show 2-5 fold higher observed expression than predicted, possibly due to catalytic sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 honestly acknowledge model limitations and discrepancies. C80 provides specific quantitative evidence of in vitro/in vivo discrepancy. C81 provides supporting evidence for EF-Tu being mostly free (consistent with diffusion-limited prediction). The acknowledgment of limitations and discussion of potential explanations for deviations demonstrates appropriate scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior optimization models predicted expression of highly abundant elongation factors (EF-Tu, EF-Ts, tRNA, mRNA) by maximizing flux or minimizing mass, but selective pressure on lowly expressed initiation and termination factors remained undetermined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 accurately summarize prior work with appropriate citations (Klumpp et al., 2013; Ehrenberg and Kurland, 1984; Hu et al., 2020) and identify the gap that motivates the current study. This provides proper context for the contribution of the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Translation factor expression may be set at optimal levels by first-principles as the model suggests, but entrenched by regulatory network connections. Small changes in RF levels can trigger idiosyncratic stress responses (e.g., in B. subtilis via an ultrasensitive stop codon), complicating experimental testing of growth predictions near optimality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by citation to recent work (Lalanne et al., 2021) demonstrating regulatory complications. C77 proposes a reasonable hypothesis reconciling optimization with regulatory entrenchment. This explains why direct experimental testing of the fitness landscape may be difficult and acknowledges complexity beyond the first-principles model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Translation initiation factors have distinct roles: IF1 binds 30S subunits to facilitate initiator tRNA binding, IF2 is a ribosome-dependent GTPase ensuring correct initiator tRNA binding, and IF3 prevents premature 50S subunit docking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe initiation factor functions with consistent citations to established literature (Laursen et al., 2005; Gualerzi and Pon, 2015). This provides the biological foundation for the initiation model. The descriptions are standard and well-documented.",
+    "result_type": "MINOR"
+  }
+]

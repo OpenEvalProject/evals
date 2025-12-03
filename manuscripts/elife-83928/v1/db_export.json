@@ -1,0 +1,2307 @@
+{
+  "submission": {
+    "id": "be8d8b2d-695e-4f1d-888a-fe4bc9b75cc6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:23:18.454825Z",
+    "updated_at": "2025-12-03T19:23:18.454825Z"
+  },
+  "content": [
+    {
+      "id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "submission_id": "be8d8b2d-695e-4f1d-888a-fe4bc9b75cc6",
+      "content_type": "manuscript",
+      "content_text": "# Gating interactions steer loop conformational changes in the active site of the L1 metallo-\u03b2-lactamase\n\n## Authors\n\n- Zhuoran Zhao<sup>1</sup>\n- Xiayu Shen<sup>1</sup>\n- Shuang Chen<sup>1</sup>\n- Jing Gu<sup>1</sup>\n- Haun Wang<sup>1</sup>\n- Maria F Mojica<sup>2</sup> ([ORCID: 0000-0002-1380-9824](https://orcid.org/0000-0002-1380-9824))\n- Moumita Samanta<sup>5</sup>\n- Debsindhu Bhowmik<sup>6</sup> ([ORCID: 0000-0001-7770-9091](https://orcid.org/0000-0001-7770-9091))\n- Alejandro J Vila<sup>4</sup> ([ORCID: 0000-0002-7978-3233](https://orcid.org/0000-0002-7978-3233))\n- Robert A Bonomo<sup>2</sup>\n- Shozeb Haider<sup>1</sup> ([ORCID: 0000-0003-2650-2925](https://orcid.org/0000-0003-2650-2925)) \u2020\n\n### Affiliations\n\n1. Department of Pharmaceutical and Biological Chemistry, School of Pharmacy, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n2. Department of Molecular Biology and Microbiology, Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))\n3. Louis Stokes Cleveland Department of Veterans Affairs Medical Center Cleveland United States ([ROR:01vrybr67](https://ror.org/01vrybr67))\n4. CWRU-Cleveland VAMC Center for Antimicrobial Resistance and Epidemiology (Case VA CARES) Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))\n5. College of Computing, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))\n6. Computer Science and Engineering Division, Oak Ridge National Laboratories Oak Ridge United States ([ROR:01qz5mb56](https://ror.org/01qz5mb56))\n7. Laboratorio de Metaloprote\u00ednas, Instituto de Biolog\u00eda Molecular y Celular de Rosario (IBR, CONICET-UNR) Rosario Argentina ([ROR:02tphfq59](https://ror.org/02tphfq59))\n8. Area Biof\u00edsica, Facultad de Ciencias Bioqu\u00edmicas y Farmac\u00e9uticas, Universidad Nacional de Rosario Rosario Argentina ([ROR:02tphfq59](https://ror.org/02tphfq59))\n9. Departments of Medicine, Biochemistry, Pharmacology, and Proteomics and Bioinformatics, Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))\n10. UCL Centre for Advanced Research Computing, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n\n\u2020 Corresponding author\n\n## Abstract\n\n\u03b2-Lactam antibiotics are the most important and widely used antibacterial agents across the world. However, the widespread dissemination of \u03b2-lactamases among pathogenic bacteria limits the efficacy of \u03b2-lactam antibiotics. This has created a major public health crisis. The use of \u03b2-lactamase inhibitors has proven useful in restoring the activity of \u03b2-lactam antibiotics, yet, effective clinically approved inhibitors against class B metallo-\u03b2-lactamases are not available. L1, a class B3 enzyme expressed by Stenotrophomonas maltophilia, is a significant contributor to the \u03b2-lactam resistance displayed by this opportunistic pathogen. Structurally, L1 is a tetramer with two elongated loops, \u03b13-\u03b27 and \u03b212-\u03b15, present around the active site of each monomer. Residues in these two loops influence substrate/inhibitor binding. To study how the conformational changes of the elongated loops affect the active site in each monomer, enhanced sampling molecular dynamics simulations were performed, Markov State Models were built, and convolutional variational autoencoder-based deep learning was applied. The key identified residues (D150a, H151, P225, Y227, and R236) were mutated and the activity of the generated L1 variants was evaluated in cell-based experiments. The results demonstrate that there are extremely significant gating interactions between \u03b13-\u03b27 and \u03b212-\u03b15 loops. Taken together, the gating interactions with the conformational changes of the key residues play an important role in the structural remodeling of the active site. These observations offer insights into the potential for novel drug development exploiting these gating interactions.\n\n## Introduction\n\n\u03b2-Lactam antibiotics are the most important and widely used class of antibiotics for treating bacterial infections (Bush and Bradford, 2016). They exhibit high efficacy and minimal side effects. Penicillins, carbapenems, cephalosporins, and monobactams are typical \u03b2-lactam antibiotics on the market and, accounted for 65% of all antibiotics prescriptions in the United States (Bush and Bradford, 2016). A common structural feature in this exceptionally large class of antibiotics is the presence of a \u03b2-lactam ring, which acts as a false substrate for the transpeptidases (also called Penicillin-binding proteins, PBPs) and inhibits peptidoglycan cross-linking, thereby impairing the synthesis of the bacterial cell wall (Palzkill, 2018). While all \u03b2-lactam antibiotics share a common mode of action, they however, exhibit distinct properties in terms of spectrum of action, pharmacokinetics and, to some extent, activity against resistant strains (Van Bambeke et al., 2017).\n\nRecognizing that \u03b2-lactams have shown great benefits in clinical treatments, the overuse and misuse of \u03b2-lactams have favored the emergence of \u03b2-lactam resistance, raising public concerns (Tooke et al., 2019). As the resistance has progressed, \u03b2-lactams have experienced a rapid potency loss against various bacteria (Tooke et al., 2019). The World Health Organization projected in 2019 that such drug resistance could cause up to 10 million deaths annually by 2050 (\u2018No time to Wait\u2019, n.d.). Therefore, dealing with \u03b2-lactam antibiotics resistance is an urgent global public health challenge.\n\nThree established mechanisms through which bacteria develops resistance against \u03b2-lactam antibiotics are previously known (Mora-Ochomogo and Lohans, 2021). These include but not limited to the production of \u03b2-lactamase enzymes, modification of the target protein \u2013 PBPs, or preventing \u03b2-lactam antibiotics from reaching the target. Among these, the expression of \u03b2-lactamases is the most common mechanism found in various bacteria resistant to \u03b2-lactams (Lingzhi et al., 2018). \u03b2-Lactamases inactivate \u03b2-lactam antibiotics by hydrolyzing the amide bond in the \u03b2-lactam ring.\n\nFour classes of \u03b2-lactamases are established. While classes A, C, and D are serine \u03b2-lactamases, class B groups the zinc-dependent metallo-\u03b2-lactamases (MBLs). MBLs employ one or two zinc ions at the active site as catalytic cofactors (Palzkill, 2013; Tooke et al., 2019). MBLs are further subdivided into three subclasses (B1, B2, and B3) based on their sequence, metal content, and different active site features (Bahr et al., 2022; Bahr et al., 2021). All MBLs adopt the \u03b1\u03b2/\u03b2\u03b1 sandwich motif and have mono- (class B2) or binucleated zinc (classes B1 and B3) at the active site. The B1 and B3 subclasses have a broad-spectrum substrate profile that includes penicillins, cephalosporins, and carbapenems, while the B2 enzymes exhibit a narrow profile that includes carbapenems (Palzkill, 2013; Tooke et al., 2019). Such distinctive ability to hydrolyze the new generation of carbapenem antibiotics, the rapid emergence of new clinical variants, the potential for interspecies transfer in the presence of mobile genetic elements, isolation from nosocomial and environment sources, coupled with the unavailability of any clinically useful MBL inhibitors makes MBLs of significant clinical interest and concern (Bush and Bradford, 2020; Mojica et al., 2022; Tooke et al., 2019).\n\nStenotrophomonas maltophilia is a non-fermenting, Gram-negative bacillus that has emerged as an opportunistic pathogen. This organism mainly affects patients with cancer, cystic fibrosis, and other conditions leading to an immunosuppressed state, where it can cause a variety of clinical syndromes, mainly pulmonary and blood stream infections (Mojica et al., 2019). Crude mortality rates range from 14% to 69% in patients with bloodstream infection due to S. maltophilia (Adegoke et al., 2017; Brooke et al., 2017; Crisp et al., 2007). \u03b2-Lactams resistance in S. maltophilia is mediated by the coordinated expression of L1 metallo-\u03b2-lactamase (class B3 MBL) together with L2 \u03b2-lactamase (class A \u03b2-lactamase) (Okazaki and Avison, 2008). L1 MBL can hydrolyze almost all \u03b2-lactam antibiotics with the exception of monobactams such as aztreonam and is resistant to all clinically available \u03b2-lactamase inhibitors (Brooke, 2012; Mojica et al., 2019; Okazaki and Avison, 2008).\n\nL1 MBL is unique among all known \u03b2-lactamases as it is the only known \u03b2-lactamase that functions as a tetramer (Figure 1A). In each subunit, there are two zinc ions bound at the active site (Figure 1B, Ullah et al., 1998). The first Zinc (Zn1) is in a tetrahedral coordination with a water molecule and three histidine residues. The second Zinc (Zn2) is coordinated by two histidine, one aspartic acid and a water molecule in a trigonal bipyramidal geometry. Another water molecule, which acts like a nucleophile for the catalytic reaction bridges the two zinc ions (Figure 1\u2014figure supplement 1). Studies have revealed that both zinc ions are relevant for hydrolysis and protein folding in L1 (Crisp et al., 2007; Hu et al., 2008; Ullah et al., 1998).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig1-v1.jpg)\n\n**Figure 1.:** (A) The homo-tetrameric conformation of L1 MBL (PDB entry 1SML). Three monomers are illustrated in surface representation; the fourth monomer is shown in green cartoon. (B) A close up of the zinc-binding site and the elongated \u03b13-\u03b27 and \u03b212-\u03b15 loops (red). Two zinc ions are present at the binding site. Zn1 coordinates with residues H116, H118, H196, and a water molecule forming a tetrahedral geometry. Zn2 is trigonal bipyramidal and coordinates with residues D120, H121, and H263. Zn1 and Zn2 are bridged by a water molecule. The position of D150c, H151, P225, Y227, and R236 are shown as yellow sticks. (C) L1 monomer illustrated as cartoon (green); the position of the two elongated loops (red) that forms a part of the active site in each monomer are highlighted in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Proposed mechanism of \u03b2-lactam hydrolysis by S. maltophilia L1 MBL.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Conserved secondary structure elements for the three subclasses are indicated above the sequences: \u03b1-helix, \u03b2-sheets, and L-loop. Amino acid insertions in the newly sequences enzymes are represented by lowercase letters. The zinc ligands in at least one subclass are shaded in cyan. L(\u03b13-\u03b27) and L(\u03b212-5) sequences are highlighted in red represent largely variable regions. The 14 sequence fragments off structurally conserved position, which cover the entirety of all sequences, are shown in boldface. (B) The variable numbering around L(\u03b212-\u03b15). Figure 1\u2014figure supplement 2 is adapted from Figure 1 of Garau et al., 2004.\n\nThe L1 MBL tetramer is held tightly by three discrete sets of hydrophobic interactions, which allows each monomer to make contacts with the other three subunits (Crisp et al., 2007; Sevaille et al., 2017; Ullah et al., 1998). All these interactions are primarily hydrophobic and lead to each monomer burying 1300 \u00c52 of non-polar side-chain surface area on the formation of the tetramer. A two-fold inverted symmetry of the subunit arrangement positions some important residues and interactions at the subunit interfaces in close proximity (Figure 1A). The key interactions made by the side chain of M175 penetrating a shallow pocket formed by E141, L150d, P198, and Y236 (Figure 1\u2014figure supplement 2; after the standard BBL numbering Garau et al., 2004) on the surface of the adjacent subunit, has been shown to be essential for stabilizing the tetramer (Simm et al., 2002). A substitution of this M175 results in failure of tetramerization and a reduced activity against most \u03b2-lactams of ca. two orders of magnitude (Simm et al., 2002). How does the formation of a tetramer benefits L1 MBL to confer resistance remains unknown.\n\nOne distinct feature of L1 MBL is the presence of two elongated loops (\u03b13-\u03b27 and \u03b212-\u03b15 loops; Table 1) surrounding the metal center (Figure 1B, C). The \u03b13-\u03b27 loop at the N-terminal extension has 20 residues (G149-D171) and extends over the active site (Garrity et al., 2004). These residues are considered to be involved in determining the spectrum of the enzyme by forming hydrophobic interactions with large hydrophobic motifs at C2 or C6 of \u03b2-lactam substrates (Sevaille et al., 2017; Spencer et al., 2005; Spencer et al., 2001; Ullah et al., 1998). Two novel substitutions were identified in vitro, on the \u03b13-\u03b27 loop: G159A and (G/E)161D. The role of G159 in substrate binding and catalysis has been determined by the substitution of G159A. This substitution disrupts the positioning of F156, another significant residue involved in the function of L1, by decreasing the flexibility of the loop. Similarly, the G161D substitution can also affect the efficiency of the enzyme catalytic activity (Carenbauer et al., 2002; Nauton et al., 2008; Spencer et al., 2005; Ullah et al., 1998).\n\n**Table 1.**\n Elongated loops.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>\u03b13-\u03b27</td>\n      <td>GGSDDLHFGDGITYPPANAD Residues 149\u2013171</td>\n    </tr>\n    <tr>\n      <td>\u03b212-\u03b15</td>\n      <td>ADSLSAPGYQLQGNPRYPH Residues 219\u2013239</td>\n    </tr>\n  </tbody>\n</table>\n\nThe \u03b212-\u03b15 loop consists of 19 residues (A219-H239) and lies adjacent to the active site. S221 in this loop makes indirect interaction with Zn2, while S223 serves as a second-shell residue of H196 (Crisp et al., 2007; Mojica et al., 2019; Ullah et al., 1998). S221 coordinates a Zn2-bound apical water, whereas S223 directly interacts with the substrate C4 carboxylate group (Spencer et al., 2005). In a recent crystal structure, S221 and S223 have been found to directly interact with substrates (Twidale et al., 2021). Besides, novel substitutions have been identified in the loop, namely Q230R, (K/Q)232R, G233D, and (P/A)235V (Mojica et al., 2019). Although none of these residues seems to directly interact with the substrate, it is likely that these substitutions will affect the catalytic activity either by strengthening or weakening the H-bonding network that maintains the loop in place or by changing its electrostatic characteristics (Tooke et al., 2019). The apical points of \u03b13-\u03b27 and \u03b212-\u03b15 loops are positioned at the interface between monomers, and direct interaction with residues that affects the catalytic activity of the L1 MBL has been confirmed (Ullah et al., 1998).\n\nThe crystal structure of L1 MBL has been determined in apo state and in complex with inhibitors and final reaction products (Nauton et al., 2008; Sevaille et al., 2017; Twidale et al., 2021; Ullah et al., 1998). In all structures, the substrate/inhibitor-binding site (active site from here onwards) is well defined. In the apo state, the \u03b212-\u03b15 loop is collapsed on the active site. In complex structures, the \u03b212-\u03b15 loop wraps around to enclose the substrate/inhibitor within the active site. It is worth noting that the conformation of the \u03b13-\u03b27 and \u03b212-\u03b15 loops are identical in all structures, be it in the apo state or in complex with substrate/inhibitors. In this collapsed, closed conformation, residues R236 (\u03b212-\u03b15) and D150c (\u03b13-\u03b27) form a salt bridge interaction; Y227 (\u03b212-\u03b15) forms a \u03c0\u2013\u03c0 stacking interaction with H151 (\u03b13-\u03b27) and P225 (\u03b212-\u03b15) adopts an \u2018in\u2019 conformation, where the C\u03b3 atom in the cyclic side chain of P225 is 6.5 \u00c5 from the centroid of the two Zinc ions (Figure 1B). An additional interaction between the side chain of the Q310 (\u03b16 helix) and the backbone carbonyl oxygen of A224 (\u03b212-\u03b15) stabilizes the loops in the closed conformation (Figure 1C). Previous studies have shown that the inter-subunit interactions are the major contributors that affect the flexibility of \u03b13-\u03b27 and \u03b212-\u03b15 loops, and the dynamics of these loops can directly influence \u03b2-lactam binding and catalysis (Spencer et al., 2005). These findings have indicated the importance of inter-subunit interactions in inhibitor design. While the catalytic mechanism of \u03b2-lactam hydrolysis in MBLs is well established, the mechanistic insights into how the dynamics of these flexible loops affect the structural rearrangements of the enzyme active site remains unknown.\n\nTo sample the conformational landscape explored by L1 MBL, we performed adaptive sampling simulations (cumulative sampling over 100 \u03bcs) and investigated the metastability of the \u03b13-\u03b27 and \u03b212-\u03b15 loops via Markov State Models (MSMs). To visualize the major metastable conformations of the loops alone, unsupervised low-dimensional embeddings were created using a convolutional variational autoencoder (CVAE). Observations from MSMs and CVAE-based deep learning identified important conformational changes in the \u03b13-\u03b27 and \u03b212-\u03b15 loops, which have significant effects on the dynamic architecture of the enzyme active site and may directly affect the catalytic activity of L1 MBL. Five residues, D150c, H151 (\u03b13-\u03b27 loop) and P225, Y227 and R236 (\u03b212-\u03b15 loop) were substituted and the activity of the engineered L1 variants was evaluated in cell-based experiments. Our results provide strong evidence that the dynamics of \u03b13-\u03b27 and \u03b212-\u03b15 loops are extremely critical for the proper biological function of L1 MBL.\n\n## Results and discussion\n\n### Markov state models\n\nA converged MSM with seven metastable states was successfully built using the backbone torsions and the C\u03b1-RMSD of the \u03b13-\u03b27 and \u03b212-\u03b15 loops, at a lag time of 5 ns (Figure 2A). The selected features resolved the Markovian model and enabled the analysis of the representative conformational changes that occur when transitioning between different states (Figure 2\u2014figure supplement 1). Furthermore, the chosen features permitted us to make valid links between the free energy (FE) landscape and the dynamics of the \u03b13-\u03b27 and \u03b212-\u03b15 loops. From the MSM results, significant structural differences can be observed by comparing the conformations obtained from different metastable states.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig2-v1.jpg)\n\n**Figure 2.:** (A) Implied timescales (ITS) plot. The ITS plot describes the convergence behavior of the implied timescales associated with the processes at the lag time of 5 ns. (B) Net flux pathways plot highlights the transition pathways in the relevant directions, between the highest energy state 1, and all other states. The thickness of the arrows between states suggests the possibility of each transition. The thicker the arrow, the greater the possibility. (C) Mean first passage times between metastable states. (D) Free energy landscape. The sampled free energy projected onto the first two time-lagged independent components (ICs) at lag time \u03c4 = 5.0 ns. (E) The distribution of cluster centers highlighting the presence of the metastable states. Macrostate distributions of conformations projected onto the first two ICs identified seven macrostates. The population of each state (\u03c0) and its free energy estimation is listed.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The CK test plot, along with the ITS plot (Figure 2A) was used to assess the Markovian behavior of the constructed model.\n\n### The \u03b13-\u03b27 and \u03b212-\u03b15 loops exist in open, intermediate, and closed states\n\nThe dynamics of the two loops (\u03b13-\u03b27 and \u03b212-\u03b15) can be described by closed, intermediate, and open conformations (Figure 3\u2014figure supplement 1). The \u2018closed\u2019 conformations of the loop is defined by the collective formation of a salt bridge between D150c-R236 (\u03b13-\u03b27 and \u03b212-\u03b15), H151-Y227 \u03c0\u2013\u03c0 stacking interaction and P225 adopting an \u2018in\u2019 conformation (Figure 3A; Figure 3\u2014figure supplements 2\u20134). The \u2018in\u2019 conformation is defined as when the C\u03b3 atom of P225 is oriented toward the zinc atoms in the active site. The distance between the C\u03b3 atom and the centroid of the two zinc atoms is calculated to be 6.5 \u00c5 in the 1SML crystal structure (Ullah et al., 1998). There is an additional interaction between the side chain of Q310 (\u03b16 helix) and the backbone of A224 (\u03b212-\u03b15). This interaction tethers the terminal \u03b16 helix to the rest of subunit and stabilizes the \u03b212-\u03b15 loop (Figure 3\u2014figure supplement 5). The loops are collapsed on the active site resulting in an occluded 420.4 \u00b1 94.8 \u00c53 cavity (Figure 3A). The structure of the active site is analogous to the crystalline conformation, thereby highlighting it as a relevant functional state. State 7 defines the closed conformation of L1 MBL, with the C\u03b1-RMSD comparison with the apo state crystal structure (PDB id 1SML) to be 0.79 \u00c5 and with inhibitor complex (PDB id 5DPX) is 0.77 \u00c5 (Figure 3\u2014figure supplement 6). State 7 is the most populated, with 80% of all conformations falling within this cluster. State 7 is also the lowest energy state. These observations allow us to conclude that the closed state dominates the dynamics and also explains why this conformation is always resolved in crystallographic experiments. States 3, 5, and 6 are sub-states of the closed conformation. In addition to the slight differences in the conformations of \u03b13-\u03b27 and \u03b212-\u03b15 loops, minor changes are also observed in the conformations of the adjacent loops, at the distal end of the active site.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-v1.jpg)\n\n**Figure 3.:** Structures exist in the closed, intermediate, and open states defined by a salt bridge between D150c-R236, \u03c0\u2013\u03c0 stacking interaction between H151-Y227 and the conformation of the cyclic side chain of P225. (A) In the closed state, the salt bridge and the \u03c0\u2013\u03c0 stacking interaction is formed and P225 adopts the \u2018in\u2019 conformation. The \u03b212-\u03b15 loop is collapsed occluding the active site (purple). (B) In the intermediate open state, the interactions are lost and P225 adopts the \u2018out\u2019 conformation. However, the \u03b212-\u03b15 loop is not completely in the open conformation. A small cavity between \u03b16 helix and \u03b212-\u03b15 is formed that merges with the active site (pink). (C) In the fully open state, the salt bridge and the \u03c0\u2013\u03c0 stacking interaction is lost. P225 adopt \u2018the out\u2019 conformation. The \u03b212-\u03b15 loop moves outwards, opening a large cavity that merges with the active site (teal). (D) The calculated volume of the active site in different states.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The distances between the D150c-R236 salt bridge (blue), H151-Y227 \u03c0\u2013\u03c0 stacking (orange), A224-Q310 (red), and P225-Zn (green) have been illustrated.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Violin plots highlighting the calculated D150c-R236 salt bridge interaction in each of the four subunits in different metastable states.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Violin plots highlighting the calculated H151-Y227 \u03c0\u2013\u03c0 stacking interaction in each of the four subunits in different metastable states.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Violin plots highlighting the calculated P225-Zn distance in each of the four subunits in different metastable states.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Violin plots highlighting the calculated A224(bb)-Q310(sc) distance in each of the four subunits in different metastable states.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** A C\u03b1-RMSD superimposition of state 7 (green) with a monomer from apo state crystal structure (PDB id 1SML; orange; 0.79 \u00c5) and with inhibitor complex (PDB id 5DPX; purple; 0.77 \u00c5) structure of L1 \u03b2-lactamase. The black balls represent the position of zinc ions.\n\nState 2 is an intermediate closed state where the H151-Y227 \u03c0\u2013\u03c0 stacking interaction is formed and P225 adopts an \u2018in\u2019 conformation. However, the D150c-R236 salt bridge is not fully formed. State 4 is an intermediate open conformation (Figure 3B), where two or more interactions including the D150c-R236 salt bridge, H151-Y227 \u03c0\u2013\u03c0 stacking, are lost and P225 adopts the \u2018out\u2019 conformation. The outward movement of the \u03b212-\u03b15 loop results in the interaction between the side chain of Q310 (\u03b16 helix) and the backbone carbonyl oxygen of A224 (\u03b212-\u03b15) to break, causing the \u03b16 helix to tilt away from the binding site. This generates a small cavity between \u03b16 helix and the \u03b212-\u03b15 loop, which merges with the active site. The average volume calculated in the intermediate state is 608.3 \u00b1 137.25 \u00c53.\n\nIn the open conformation (state 1), the D150c-R236 salt bridge interaction is broken, the H151-Y227 \u03c0\u2013\u03c0 stacking interaction is lost and the cyclic side chain of P225 orients away from the active site and adopts an \u2018out\u2019 conformation. A loss of these interactions allows the \u03b212-\u03b15 loop to move away from the active site. Additionally, this structural rearrangement leads to a complete loss of the tethering interaction between the side chain of Q310, positioned on the C-terminal \u03b16 helix and the backbone of A224, causing the \u03b16 helix to tilt by 12.5o away from the active site. The loss of constraints around the loop allows the side chain of Y227 to rotate, with the hydroxyl group orienting toward R236 and away from the active site. The loss of the H151-Y227 \u03c0\u2013\u03c0 stacking interactions and the rotation of the Y227 side chain exposes an additional cavity that merges with the pocket identified in the intermediate open state. The total volume of the merged cavity is 1027.17 \u00b1 191.04 \u00c53 and is large enough for the substrates to access the zinc metal center.\n\nThe net flux pathways between states and the probabilities of each pathway have been estimated (Figure 2B). The shortest mean first passage time in the flux pathways is between states 1 \u2192 4 \u2192 7, which indicates that the free energy (FE) barrier along this path is low (Figure 2C). This can explain why this flux pathway shows predominant prevalence (89.7%) at equilibrium. This flux pathway is followed by 1 \u2192 7 (9.1%) and 1 \u2192 4 \u2192 2 \u2192 7 (1.2%). The long mean first passage times to visit states 3, 6 from 1 indicate that the FE barrier is high (Figure 2C, D).\n\nBased on the results, the conformational changes that occurred between state 1, 4, and 7 supports the best explanation to the dynamics of the L1 MBL, as over 89% of the conformations transit from state 1 to state 7 via state 4 (Figure 2B), and any important conformational changes occurring around the active site could be related to the conformations of the two loops (\u03b13-\u03b27 and \u03b212-\u03b15 loops) identified in these states.\n\n### Deep learning analysis of \u03b13-\u03b27 and \u03b212-\u03b15 interactions\n\nL1 MBL, like all other \u03b2-lactamases, comprises of a hydrophobic core, that is stabilized by packing interactions that prevent long distance motions during simulations (Galdadas et al., 2021; Galdadas et al., 2018; Olehnovics et al., 2021). This indicates that thermal vibrations at fast timescales may significantly obscure potentially important slow dynamics. Furthermore, differentiating important interactions and correlations with classified sub-states in a 1064 residue homotetrameric L1 MBL proved non-trivial. This was additionally compounded by >1 million data points representing sampled conformations.\n\nTo resolve this, an unsupervised CVAE-based deep learning was performed (Bhowmik et al., 2018; Romero et al., 2019). The CVAE provides biophysically relevant information related to conformational transitions induced by changes in interactions. More specifically, CVAE was used to identify dynamic changes in the \u03b13-\u03b27 and \u03b212-\u03b15 loops resulting from changes in D150c-R236 salt bridge, H151-Y227 \u03c0\u2013\u03c0 stacking interaction and the \u2018in/out\u2019 conformation of P225.\n\nA 39 \u00d7 39 residue symmetric distance matrix, representing the C\u03b1 residues of \u03b13-\u03b27 (G149-D171) and \u03b212-\u03b15 loops (A219-H239), was used to featurize the dynamics of the loops. A previously tested protocol comprising of 64 filters in each of the 4 convolutional layers, and no pooling layers maintained a deep representational space of trainable parameters in each hidden layer (Olehnovics et al., 2021).\n\nTo enhance the learning quality of the CVAE model, conformations from each state were mixed together followed by the evaluation of the training and validation loss of the combined dataset. The CVAE model was implemented and tested from dimensions 3 to 30. As the dimension size increases, the model compresses less and exhibits more representation capability. When the latent dimension becomes too large, the model may overfit local features and introduce extra noise. The optimal value of the overall loss is somewhere between these two extremes. For the current dataset, the CVAE model is quite stable and robust, as highlighted by the low deviation of validation loss across different latent dimensions (Figure 4\u2014figure supplement 1).\n\nThe reconstruction loss was calculated and the final latent dimension of 14, representing the lowest dimension loss value was selected. Following this, the t-distributed stochastic neighbor embedding (tSNE) was performed on the compressed reduced dimension data for visualization in two dimensions (Maaten and Hinton, 2008). The combined deep learning is able to cluster individual subunits in the tetramer based on their local and global conformational dynamics (Figure 4\u2014figure supplement 2).\n\nThe overall dynamics representing various conformations sampled by each monomer can be identified using the tSNE visualization of the CVAE latent space. These conformations are resolved based on the dynamics generated by the distance matrix of the \u03b13-\u03b27 and \u03b212-\u03b15 loops. While all subunits sample similar motions, the conformations are clustered based on comparable dynamics. Subunits A and C share similar dynamics, while subunits B and D are clustered in the same tSNE space (Figure 4A). The salt bridge, \u03c0\u2013\u03c0 stacking interactions and P225 \u2018in/out\u2019 conformations are all observed, although the closed and intermediate conformations dominate the states. Subunit B displays low flexibility, with most conformations unable to form a complete salt bridge interaction. In spite of this, a complete \u03c0\u2013\u03c0 stacking interaction and the P225 \u2018in\u2019 conformation is observed in a low population of B-subunits. The most flexible subunit is D, where all three, \u2018open\u2013intermediate\u2013closed\u2019 states are observed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig4-v1.jpg)\n\n**Figure 4.:** CVAE-learned features of high-dimensional data represented in 2D following t-distributed stochastic neighbor embedding (tSNE) treatment. (A) The results show that A and C subunits show similar dynamics, while B and D subunits cluster together. The (B) salt bridge interactions between D150c-R236, (C) H151-Y227 \u03c0\u2013\u03c0 stacking interaction, and (D) distance between P225 and the centroid of Zn atoms have been plotted. The red box highlights a region where closed confromations are found, while the green box highlights a region of open conformation. The other conformations are open intermediate (two or more features are lost) or closed intermediate (two or more features are present).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The training and validation loss plotted as assessed simultaneously over consecutive epochs at various reduced dimensions. Dimension 14 was selected for further analysis as it displayed the lowest loss. (B) The validation loss during CVAE implementation is plotted at different latent dimension for determining optimum values of the low dimension. The loss was calculated over 100 epochs from dimensions 3 to 30. (C) The convergence of training and validation loss from dimension 14, as assessed over 100 epochs. (D) Comparison between original input data and reconstructed data (decoded) are illustrated to ensure no loss of essential information during the compression and reconstruction process.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Individual subunits are plotted on the tSNE space after clustering of states 1\u20137. A comparison with Figure 4 highlights the open (state 1), intermediate open (state 4), intermediate closed (state 2), and closed conformations (state 7). Subunits A and C display similar dynamics while subunits B and D cluster together. The open state is best represented by subunit D of state 1, where D150c-R236 salt bridge is broken, H151-Y227 \u03c0\u2013\u03c0 stacking is lost and P225 adopts an out conformation. The closed state is best represented by subunit C in state 7. Subunit A in state 4 represents the intermediate open conformation, while subunit B in state 2 best describes the intermediate closed conformation.\n\nTo confirm that the states indeed describe the \u2018open\u2019 and \u2018closed\u2019 conformations of the \u03b13-\u03b27 and \u03b212-\u03b15 loops, three features were measured \u2013 the D150c-R236 salt bridge interaction (Figure 4B); H151-Y227 \u03c0\u2013\u03c0 stacking interaction (Figure 4C) and the distance between P225 and the centroid of Zn atoms (Figure 4D). The features were then compared by projecting 1000 conformations extracted from MSM-derived metastable states, on to the tSNE space (Figure 4\u2014figure supplement 2). This permitted visualization of exemplar conformations that best represented open\u2013intermediate\u2013closed states. The conformations sampled in metastable states 1 and 4 are similar. While the dynamics can be described by more than one representation, subunit D in state 1 describes the open state, subunit A in state 4 represents the intermediate open conformation, subunit B in state 2 describes intermediate closed conformation, and subunit C in state 7 was chosen to represent the closed conformation of L1 MBL.\n\n### The conformational dynamics of the \u03b13-\u03b27 and \u03b212-\u03b15 loops\n\nThe salt bridge formation between D150c-R236 (\u03b13-\u03b27 and \u03b212-\u03b15) is crucial for the function of L1 MBL (Simm et al., 2002). This salt bridge acts as a gate, and the formation/loss of the salt bridge regulates the highly mobile \u03b212-\u03b15 loop to adopt an open/closed conformation. This configuration of the loop is driven by the conformation of the R236 side chain in the \u03b212-\u03b15 loop as it changes considerably while that of \u03b13-\u03b27, where D150c is positioned, remains rigid (Figure 3). Previous experiments on TEM-1, a class A \u03b2-lactamase, offered evidence for the significance of salt bridge formation between important loops (Vakulenko et al., 1995). Disruption of the salt bridge between R164 and D179 would in turn alter the structure of the substrate-binding site by restructuring the conformation of the \u03a9-loop, decreasing the antibiotic resistance (Vakulenko et al., 1995). Therefore, similarly for L1 MBL, it can be inferred that the formation of the salt bridge observed in the \u2018closed\u2019 conformation of the loops is critical in stabilizing the topology of the active site and enhancing the antibiotic resistance.\n\nThe \u03c0\u2013\u03c0 stacking interaction between H151 and Y227 is another important interaction that stabilizes the loops. In the closed state (loop \u2018closed\u2019), the \u03c0\u2013\u03c0 stacking interaction is stable. However, the loss of the D150c-R236 salt bridge interaction generates enough space to permit the rotation of the side chain of Y227 from pointing to the zinc atoms in the active site to orienting toward R236, resulting in the loss of the \u03c0\u2013\u03c0 stacking interaction (Figure 3). This formation and loss of \u03c0\u2013\u03c0 stacking might be influenced by the formation of the salt bridge at the apical tips of the \u03b13-\u03b27 and \u03b212-\u03b15 loops. Such \u03c0\u2013\u03c0 stacking interaction is considered a very important interaction in protein folding and molecular recognition (Brylinski, 2018). Studies on other \u03b2-lactamases have revealed that the \u03c0\u2013\u03c0 stacking near the substrate-binding site can help stabilize the binding site topology and contribute to the recognition of the antibiotics (Hargis et al., 2014; Langan et al., 2016).\n\nThe side chain of P225 exists in trans configuration in L1 MBL, which is very unusual among the \u03b2-lactamases. Proline exists in two configurations in nature \u2013 cis and trans. Such configurations are defined by the \u03c9 torsion angle of proline (cis: close to 0\u00b0, trans: nearly 180\u00b0). Usually, in \u03b2-lactamases, the proline is found in the cis configuration. Studies on TEM-1 \u03b2-lactamase have already revealed the importance of the proline cis configuration in the protein folding and correct orientation of residues involved in the catalytic reaction (Vanhove et al., 1996; Vanhove et al., 1995). Mutations at this proline, near the binding site prevents the enzyme from functioning properly (Vanhove et al., 1996). However, in L1 MBL, P225 is found in trans configuration. To confirm this, the \u03c9 torsion angle was calculated throughout the course of the simulation (Figure 5). The angle is stable at ca. \u2212180\u00b0 in all four monomers, while also often transitioning to ca. 180\u00b0; thus, confirming the trans configuration of P225. The \u2018in\u2019 and \u2018out\u2019 conformations of P225 identified in different states are regulated by the coupled coordination of \u03c0\u2013\u03c0 stacking (H151-Y227) and the salt bridge (D150c-R236) interactions. These interactions may be the major contributor for stabilizing the trans conformation of P225. Moreover, the transitionary \u2018in\u2019 and \u2018out\u2019 conformational changes of P225 may also be important in for substrate binding.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig5-v1.jpg)\n\n**Figure 5.:** The cis/trans conformation of a peptide bond is determined by the torsion of the \u03c9 angle. The \u03c9 torsion angle is close to 0\u00b0 in the cis configuration, or ca. 180\u00b0 in the trans configuration. The \u03c9 angle of P225 in each subunit transitions between 180\u00b0 and \u2212180\u00b0. The stride is 100 frames.\n\nThe side chain of F156 also plays an important role in the ligand-binding process (Sevaille et al., 2017; Spencer et al., 2005). In fact, all the ligand/substrate-bound forms of L1 MBL structures adopt a closed conformation, presumably due to the tight packing interactions of the side chains in the binding site (Drawz and Bonomo, 2010; Sevaille et al., 2017; Spencer et al., 2005). As observed in each state, the side chain of F156 (Figure 3) rotates when transitioning between metastable states. In comparison with the crystal structure, there is an obvious difference in the F156 side-chain dihedral angles in the open, intermediate, and the closed states, suggesting the side-chain rotation of F156 may affect the ligand binding. The functional role of F156 in L1 MBL merits further study.\n\nSeveral major conformational changes, including the formation and loss of the salt bridge (D150c-R236) and \u03c0\u2013\u03c0 stacking (H151-Y227) interactions, the \u2018in\u2019 and \u2018out\u2019 conformations of P225 existing in trans configuration, the side-chain rotation of F156, have been identified that explain the dynamics of the \u03b13-\u03b27 and \u03b212-\u03b15 loops. These conformational changes of the loops would have significant impact on the topology of the active site, which may further affect the catalytic activity of the L1 MBL. Our findings suggest a plausible two state conformation where \u03b212-\u03b15 loop acts like a lid on the active site. In the open state, the D150c-R236 salt bridge is broken and the \u03c0\u2013\u03c0 stacking interaction between H151 and Y227 is lost. This allows P225 to adopt an \u2018out\u2019 conformation resulting in the loop to move away from the active site. The rearrangement of the residues in the loops increases the volume, which permits the access of the substrate into the active site. Since this is a high energy conformation, the loop is drawn back to a more stable closed conformation, where P225 adopts the \u2018in\u2019 conformation, the \u03c0\u2013\u03c0 stacking and the salt bridge interaction is reformed. The closed conformation is an extremely stable state that is observed in all crystallized conformations of L1 MBL including those with inhibitors (Crisp et al., 2007; Sevaille et al., 2017; Spencer et al., 2005; Ullah et al., 1998). These findings in L1 MBL are further supported by experimental studies on two active site loops in NDM-1, IMP-1, and VIM-2 MBLs, which identified the loops to behave like mobile flaps and a direct link exists between the conformation of the loops and the changes in the substrate recognition profile (Oelschlaeger and Pleiss, 2007; Palacios et al., 2019). Moreover, the flexibility of the loops may also lead to a better positioning of the zinc ion, resulting in an enhanced catalytic profile of the enzyme (Tomatis et al., 2008).\n\n### Experimental validation by L1 MBL engineered variants\n\nTo study the role of each of the key residues identified in the coordinated dynamics of loops \u03b13-\u03b27 and \u03b212-\u03b15, we engineered the H151V, D150cV, P225A, R236A, and Y227A variants in L1 for susceptibility determinations. The susceptibility of the variants expressed in an isogenic Escherichia coli DH10B background was tested against a panel of representative cephalosporins and carbapenems (Table 2). We also included a well-studied experimental L1 inhibitor to test the effect of these substitutions in inhibitor binding, L-CS319 (Hinchliffe et al., 2016). The H151V substitution had the biggest detrimental effect on the catalytic activity of L1 of all substrates tested, decreasing the minimal inhibitory concentration (MIC) in >6 doubling dilutions. In the case of the P225A and Y227A variants, the effect on the MICs depended upon the substrate. Compared to L1, the MICs for ceftazidime of these variants decreased two-fold dilutions, in contrast to the six-fold dilutions observed for the MIC for imipenem. Lastly, the D150cV and R236A substitution had a minimal effect on the hydrolytic activity of L1, as their MICs values for all substrates were comparable. Addition of the MBL inhibitor L-CS319 further decreased the MIC values, indicating that this compound is able to bind the active site, a fact that is consistent with its small size and the lack of substituents such as those present in the \u03b2-lactam antibiotics. The effect of the inhibitor also supports that the enzyme is active in the bacterial periplasm, and that these mutations are not disrupting the protein fold.\n\n**Table 2.**\n Susceptibility results of various \u03b2-lactams against L1 variants expressed in the pBC SK (+) vector in E. coli DH10B cells.The reported values are the mode of at least three biological replicates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Strain</th>\n      <th colspan=\"6\">MIC value (mg/l)*</th>\n    </tr>\n    <tr>\n      <th>CAZ</th>\n      <th>FEP</th>\n      <th>IMI</th>\n      <th>MER</th>\n      <th>TEB</th>\n      <th>TEB + CS319\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DH10B pBC SK blaL1a</td>\n      <td>256</td>\n      <td>2</td>\n      <td>16</td>\n      <td>16</td>\n      <td>32</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>DH10B pBC SK blaL1a_H151V</td>\n      <td>2</td>\n      <td>0.03</td>\n      <td>0.125</td>\n      <td>0.03</td>\n      <td>\u22640.03</td>\n      <td>\u22640.03</td>\n    </tr>\n    <tr>\n      <td>DH10B pBC SK blaL1a_D150cV</td>\n      <td>256</td>\n      <td>1</td>\n      <td>8</td>\n      <td>8</td>\n      <td>4</td>\n      <td>0.25</td>\n    </tr>\n    <tr>\n      <td>DH10B pBC SK blaL1a_P225A</td>\n      <td>64</td>\n      <td>0.125</td>\n      <td>0.25</td>\n      <td>2</td>\n      <td>0.125</td>\n      <td>\u22640.03</td>\n    </tr>\n    <tr>\n      <td>DH10B pBC SK blaL1a_R236A</td>\n      <td>256</td>\n      <td>2</td>\n      <td>8</td>\n      <td>8</td>\n      <td>4</td>\n      <td>0.25</td>\n    </tr>\n    <tr>\n      <td>DH10B pBC SK blaL1a_Y227A</td>\n      <td>64</td>\n      <td>0.25</td>\n      <td>0.25</td>\n      <td>2</td>\n      <td>0.5</td>\n      <td>\u22640.03</td>\n    </tr>\n  </tbody>\n</table>\n\n_*CAZ, ceftazidime; FEP, cefepime; IMI, imipenem; MER, meropenem; TEB, tebipenem.\u2020CS319 was added to a final concentration of 100 mg/l._\n\n### Conclusions\n\nIn this report, we have performed enhanced sampling molecular dynamics simulations and built MSM to analyze and understand the dynamics of two flexible loops (\u03b13-\u03b27 and \u03b212-\u03b15 loops) in the L1 enzyme. The deep learning analysis of the MSM cluster centers further resolved the role of individual subunits in the global dynamics of the L1 MBL.\n\nThe main focus of this work is to understand the relationship between the loop dynamics and the structural remodeling of the active site. The results presented here suggest that the dynamic properties of the \u03b13-\u03b27 and \u03b212-\u03b15 loops can affect the architecture of the active site. Interactions between key residues in the loops are primarily responsible for the distinct conformational changes observed. The \u03b212-\u03b15 loop is highly flexible, while the \u03b13-\u03b27 loop is quite stable, due to the direct proximity to the zinc coordination in the active site. The loops adopt \u2018open\u2019 or \u2018closed\u2019 conformations gated by a salt bridge interaction between D150c and R236. The \u03c0\u2013\u03c0 stacking between H151 and Y227 is also crucial. The formation of the stacking interaction together with the salt bridge interaction stabilizes P225 in an \u2018in\u2019 conformation. These conformational changes influence the architecture of the active site and may affect the catalytic activity of L1 MBL. A coordination between the residues in the \u03b13-\u03b27 and \u03b212-\u03b15 loops, leading to the structural remodeling of the active site would be crucial in understanding the conformational changes resulting in the entrance of the substrate and egress of the product from the binding site. It is worth emphasizing that the loop movements occur on the same timescale as the formation of the reaction intermediate (Carenbauer et al., 2002, Gonz\u00e1lez et al., 2016). Therefore, the analyses presented here serve as a starting point for more strategic drug design that capitalizes on these dynamic interactions present in the tetramer. Moreover, our analyses offer the opportunity to search for novel compounds that not only modulate inhibition but will overcome standard approaches that have continued to lead to resistance.\n\n## Materials and methods\n\n### System preparation\n\nThe biological functional unit of L1 MBL is a tetramer. The coordinates of the L1 MBL deposited as the PDB entry 1SML are monomeric. The symmetry operators required to generate the tetrameric twofold inverted symmetry are present in the PDB headers. The protein quaternary server (Henrick and Thornton, 1998) uses these operators to generate the multimeric biological functional unit of the enzyme, that is a tetramer. The overall structure is shown in (Figure 1A), each subunit is in different colors. The PDB file was then protonated at pH 7.0 using proteinprepare module implemented in playmolecule (Mart\u00ednez-Rosell et al., 2017). Since L1 MBL contains zinc ions, the protonated PDB file was adapted to the Zinc Amber force field (ZAFF) format (Peters et al., 2010). The system was hydrated using TIP3P water in a cubic waterbox, whose dimension extended to 12 \u00c5 from the closest protein atom.\n\n### Adaptive simulations\n\nThe ZAFF was used to parameterize the system with electrostatic interactions distances set to 9 \u00c5. Long-range electrostatic interactions were computed using the particle mesh Ewald summation method (Cerutti et al., 2009). The system was energy minimized for 1000 iterations of steepest descent and then equilibrated for 5 ns at 1 atmospheric pressure using Berendsen barostat (Feenstra et al., 1999). Initial velocities within each simulation were sampled from Boltzmann distribution at temperature of 300 K. Isothermic\u2013isobaric NVT ensemble using a Langevin thermostat with a damping of 0.1 ps\u22121 and hydrogen mass repartitioning scheme to achieve time steps of 4 fs. Multiple short MSM-based adaptively sampled simulations were run using the ACEMD molecular dynamics engine (Doerr et al., 2016; Harvey et al., 2009). The standard adaptive sampling algorithm performs several rounds of short parallel simulations. To avoid any redundant sampling, the algorithm generates an MSM discretized conformational space and uses the stationary distribution of each state to obtain an estimate of their free energy. It then selects any sampled conformation from a low free energy stable state and respawns a new round of simulations. In this context, the MetricSelfDistance function was set to consider the number of native C\u03b1 contacts formed for all residues, which were then used to build the MSMs. The exploration value was 0.01 and goal-scoring function was set to 0.3. For each round, 4 simulations of 50 ns were run in parallel until the cumulative time exceeded 100 \u03bcs. The trajectory frames were saved every 0.1 ns. 2090 trajectories were collected with each trajectory counting 500 frames.\n\n### Markov state modeling\n\nPyEMMA v2.5.7 was used to build the MSM (Scherer et al., 2015) and carry out kinetic modeling of the tetramer. All 2090 trajectories were loaded into the software. The RMSD and backbone torsions of all residues in \u03b13-\u03b27 (G149-D171) and \u03b212-\u03b15 (A219-H239) loops from all four subunits were selected the input features. Next, the featurized trajectories were read in with a stride of 5 and were projected onto three independent components (ICs) using TICA. The produced projections can show the maximal autocorrelation for a given lag time (5 ns). The chosen ICs were then clustered into 200 clusters using k-means. In this way, each IC was assigned to the nearest cluster center. A lag time of 5 ns was chosen to build an MSM with seven metastable states according to the implied timescales (ITS) plot (Figure 2A). After passing the Chapman\u2013Kolmogorov test within confidence intervals (Figure 2\u2014figure supplement 1), the MSM was defined as good. This indicates the model highly agrees with the input data, and it is statistically significant for use. Bayesian MSM was used to build the final model in the system. The net flux pathways between macrostates, starting from state 1, were calculated using Transition Path Theory (TPT) function. These pathways all originate from state 1, as it shows the lowest stationary probability (the highest free energy) in the system. This is why state 1 is a reasonable starting point to illustrate all the relevant kinetic transitions through the full FE landscape. The structural results were selected from each PCCA distribution.\n\n### CVAE-based deep learning\n\nA CVAE-based unsupervised deep learning was implemented to resolve the dynamics of the individual subunits L1 MBL. The CVAE model has been previously used successfully to study many multiple cases including protein folding (Bhowmik et al., 2018), enzyme dynamics (Akere et al., 2020; Romero et al., 2019), COVID-19-related molecular mechanisms (Cho et al., 2021), and more specifically \u03b2-lactamases (Olehnovics et al., 2021). The CVAE can identify subtle differences in conformations of 3D structures influenced by various local and global dynamics and is able to cluster them in different microstates (Yoginath et al., 2019). The main objective of the CVAE-based deep learning was to cluster the conformations of the \u03b13-\u03b27 and \u03b212-\u03b15 loops sampled in all four subunits independently.\n\nA typical CVAE architecture is a specific deep learning algorithm, built on top of a traditional autoencoder with an added variational approach. In general, an autoencoder has an hourglass-like architecture, where high-dimensional data are fed on one end. As the high-dimensional data passes through the autoencoder, only the essential information is captured. The essential information is then used to reconstruct the high-dimensional data to ensure that there is no loss of information during the compression mechanism of the encoder. The reduced dimension data that is captured is optimized by the variational approach, and is distributed normally, thereby ensuring the efficient utilization of the latent space. The convolutional layers are introduced so that the local and global information is captured in an efficient way from the multilayered complex biomolecular structures.\n\nThe distance maps for each monomer were built separately to deconstruct the dynamics of individual subunits. The pairwise distance maps were built for each C\u03b1 atom in the \u03b13-\u03b27 and \u03b212-\u03b15 loops with a cutoff <8 \u00c5. The distance matrices (39 \u00d7 39) were stacked in a 3D array. Prior to the training step, the four arrays were concatenated followed by a randomized reordering of the frames. A validation split of 80:20 was defined. A batch size of 300 was used, and the data were reshuffled after each completed epoch. The training was performed for 100 epochs and was assessed by a converged gradient descent. The embeddings were labeled based on P225-Zn distance (6.5 \u00c5), H151-Y227 \u03c0\u2013\u03c0 stacking interaction (4 \u00c5) and D150c-R236 salt bridge interaction (4.5 \u00c5). Identical procedure was followed for all four subunits. The python code for the model implemented in the current study was adopted from Bhowmik et al., 2018.\n\n### Structural analysis\n\nAll trajectories were aligned to their crystal structure conformation using Moleculekit implemented in HTMD tools (Doerr et al., 2016). To visualize the structures representing each state, the structures collected from the PCCA distributions were loaded and superimposed in Pymol-mdanalysis (https://github.com/bieniekmateusz/pymol-mdanalysis; Bieniek, 2022). The structural analysis was performed using mdtraj (McGibbon et al., 2015) and MDAnalysis (Michaud-Agrawal et al., 2011). Figures capturing major conformational changes were generated using the Protein Imager (Tomasello et al., 2020). All plots were made using the matplotlib libraries (Hunter, 2007).\n\n### Susceptibility testing\n\nVariant genes were synthesized into the pBC SK (+) vector by GenScript USA Inc (Piscataway, NJ, USA). Mueller-Hinton (MH) broth microdilution MIC measurements were performed against isogenic transformants producing L1a and five variants of L1a in pBC SK (+) according to the Clinical and Laboratory Standards Institute (CLSI) protocol (Wayne, 2020). L-CS319 was tested at a constant 100 \u00b5g/ml in combination with various concentrations of tebipenem. The MICs are reported as the concentrations at which bacterial growth was no longer observed. All MIC measurements were performed at least three times and the mode value has been reported.\n",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "e99f25d4-1aff-435c-861e-5608d30d2f52",
+      "submission_id": "be8d8b2d-695e-4f1d-888a-fe4bc9b75cc6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yogesh K Gupta, https://ror.org/02f6dcw23 The University of Texas Health Science Center at San Antonio United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83928.sa0](https://doi.org/10.7554/eLife.83928.sa0)\n\nIn this useful study, the authors utilize state-of-the-art computational methods complemented with some experimental validation to investigate the dynamics of flexible loops of the L1 Metallo-\u03b2-lactamase enzyme, resulting in a better understanding of the various conformational states useful for the rational design of superior \u03b2-lactamase inhibitors/antibiotics. The evidence supporting the claims is solid, and the work will be of interest to computational, experimental biologists, and drug designers working on antibiotic resistance.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Yogesh K Gupta, https://ror.org/02f6dcw23 The University of Texas Health Science Center at San Antonio United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83928.sa1](https://doi.org/10.7554/eLife.83928.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Gating interactions steer loop conformational changes in the active site of the L1 metallo \u03b2-lactamase\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Volker D\u00f6tsch as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Davide Provasi (Reviewer #2).\n\nEssential revisions:\n\nPlease address the concerns of three reviewers, which are appended below.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Authors mention \"D150c\" in several parts of the paper and in figure labels. Authors should clarify this nomenclature for a broader audience.\n\n2. Figure 2A needs a legend.\n\n3. On line 237, the authors state residue 150 is S, whereas throughout the rest of the paper they discuss it as D150. Please clarify and correct.\n\n4. Lines 303-308 have 39 mentioned in the text -please correct.\n\n5. In the experimental testing step \u2013 a larger diversity of residues being tested would enable a broader understanding of the active site. This study would be further enhanced by double mutant variants to enable the authors to understand whether the bond type is important for the active site or if different bond types can exist to stabilize these loops (H-Bonding instead of pi-pi stacking as an example). This enhances the claim of the paper being useful for drug design. Further, there are several amino acids mentioned as being important at the beginning of the manuscript, yet we do not see their trajectories later in the manuscript. These would enhance the authors' claims as well.\n\n6. How were the 22 residues identified and which are they? Understanding this is important for manuscript flow and would improve the narrative of the study. Further, data split results, and reducing input data matrix below 22 residues are all factors that should be tested for the validity of study results.\n\nReviewer #2 (Recommendations for the authors):\n\nAs outlined in the public review, I think that the combination of CVAE and dihedral featurisation is confusing. If sophisticated CVAE embedding is necessary to resolve the relevant dynamical features, then it should be used instead of the dihedrals+tICA to build the MSM. Microstates for the MSM analysis could be easily defined based on k-means clustering of the 14-dimensional CVAE latent space, providing a unified description of the dynamics. If, on the other hand, the dihedral+tICA featurisation is enough to obtain a descriptive and converged model, what is the additional insight offered by the deep learning approach?\n\nAnother concern is that presently, all results from the CVAE are analysed and presented after a further projection with tSNE. What is the effect of the compression to 2 dimensions from the original dimensions of the VAE latent space?\n\nThe description of the methods is unclear or insufficient on several points:\n\n1) System preparation. The system preparation strategies should be justified better. The authors simulate a homo-tetramer, building the complex from the monomer crystal structure. This choice should be justified, and the result of the tetramer modeling validated. Why should we trust the complex structure if there are no experimental structures of the tetramer?\n\n2) Adaptive Simulations. the adaptive simulation strategy is not described. The authors just mention that \"Multiple short Markov State Model (MSM)-based adaptively sampled simulations were run\". How? What were the criteria to build the MSM used to re-spawn adaptively the simulations? Was it the same as the one used for the analysis?\n\n3) MSM. It should be made more clear in the methods that the dynamics of each of the four tetrameric units are used by considering the four units to be independent and featuring the dynamics of each unit, and not of the full tetramer. This is a good strategy to increase the available data for kinetic modeling, but it means that no conclusions can be extracted from cooperative effects across subunits. The CK test results should probably be reported as figure supplements.\n\nFor the results and discussions section:\n\n1) confidence intervals should be reported for timescales (Figure 2A), mean first-passage times (Figure 2C), probabilities, and free-energies (Figure 2D). Error bars should be reported for the experimental data too (the authors mention triplicate experiments but only report one value per condition).\n\n2) The description of the MSM results can be greatly improved and streamlined. For instance, the description of the structural features of the 7 macrostates (paragraph \"The \u03b13-\u03b27 and \u03b212-\u03b15 loops exist in open, intermediate and closed states\") should come before the description of the most probable paths connecting the different states. Furthermore, to clarify and facilitate the identification of the structural features of the 7 macrostates, the distributions (or averages and percentiles) of the key distances mentioned in the results (e.g., D150c-R236, H151-Y227), etc. should be reported for each state, similar to what has been done in Figure 3D.\n\n3) \"States 3, 5, and 6 are sub-states of the closed conformation, with differences in the conformations of loops joining \u03b2-sheets 10 and 11, far away from the active site\". It's unclear how the macrostates, which were defined based on features describing only the \u03b13-\u03b27 and \u03b212-\u03b15 loops, could resolve structural features unrelated to these two regions.\n\nReviewer #3 (Recommendations for the authors):\n\nAlthough a very thoughtful and detailed MD study, several additional inputs would further strengthen the study. They are described below:\n\n1) Using orthologs, it will be good to provide the percentage of MBLs (e.g., say at 85% sequence identity) that have elongated alpha3-beta7 and beta12-alpha5 types of loops. AlphaFold2 structures of such sequences can further facilitate loop content estimation. This will enhance the relevance of the study, i.e., applicable to not just one (Stenotrophomonas maltophilia MBL L1) but to MBLs of other pathogens. If the percent of MBLs with elongated loops is say < 10%, should this study be carried out? In that case (i.e., if the elongated loops in MBLs are uncommon.), the threat from Stenotrophomonas maltophilia will need to be emphasized further for the significance of the study.\n\n2) As a nonpolar surface patch is responsible for MBL L1 multimerization, can alphafold2 also help in estimating the number of multimeric MBLs that are possible based on the non-polar surface patches of alphafold2 modeled MBL proteins? That is, an estimate of the proportion of expected multimeric MBLs with elongated loops would help enhance the relevance of the study to a wider collection of MBLs.\n\n3) In describing the conformational landscape of the loops, is mutagenesis the right experiment to capture the essence of the interacting loop residues? To illustrate this point, let there be two situations: (a) only one conformation for a loop which is held in place by a salt bridge, (b) two conformations for the loop, (1/3rd time in conformation-i and 2/3rd time in conformation-j) where conformation-i is held in place by the salt bridge. Can mutagenesis of the salt bridge residues distinguish scenario (a) from that of (b)?\n\n4) Alternatively, let us say the following scenarios: (a) only one conformation for a loop (i.e., an open conformation) with no specific interaction, (b) two conformations for the loop (1/3rd time in conformation-i and 2/3rd time in conformation-j) where conformation-i is held in place by the salt bridge. Can mutagenesis of the salt bridge residues distinguish scenario (a) from that of (b)? It is better to describe the scenarios as in (3) or (4) or some others that are being probed and how mutagenesis captures or distinguishes the different scenarios. From Figure 1B, the impression is that scenarios (in (3) above) are likely the case and it is obvious that mutagenesis of the salt bridge residues will have an impact even if the conformational states were not identified by the current study. [In Figure 1, label '(C)' should be in place of label '(B)' in the legend]\n\n5) As the ultimate goal of such a study is to identify better inhibitors, would the following investigation be a better way to utilize the conformational states of the loops? For example, let us say there are 3 loop conformations, i, j, and k that are captured by the enhanced MD sampling and MSM methods. Can each conformation (i.e., i, j, and k) be utilized separately for virtual screening of small molecules (e.g., using Schrodinger such as in ) to demonstrate that searching with each conformation independently (i.e., as three pocket volumes were observed in Figure 3D) provides higher success in the virtual screen than that of the single conformation of the experimental structure?\n\n6) Authors mention specific interactions of the closed state (e.g., salt bridge R236-D150c, pi-pi stacking Y227-H151, and Q310 sidechain-mainchain hydrogen bond). These interactions are lost in the open state. How does the loss of the 3 interaction energies of the closed state get compensated in the open state? What is the population density of each of the open, intermediate, and closed states? Can the difference (i.e., loss or gain) in the energies due to the 3 interactions (R236-D150c, Y227-H151, and Q310) help explain the population densities of each state?\n\n7) The authors mention Y227-H151 pi-pi stacking. The surface-exposed H151 residue can be protonated as well. That is, Y227-H151 could be a cation-pi too. Can the protonation status of H151 further influence the observed outcome?\n",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ff0048dd-c459-48df-81b6-fdd49c9ce341",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C1",
+      "claim": "\u03b2-Lactam antibiotics are the most important and widely used antibacterial agents across the world.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Lactam antibiotics are the most important and widely used antibacterial agents across the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about \u03b2-lactam antibiotics that is commonly accepted in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "b88f5e5f-34bd-46fd-b648-32dfa14d9204",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C2",
+      "claim": "The widespread dissemination of \u03b2-lactamases among pathogenic bacteria limits the efficacy of \u03b2-lactam antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the widespread dissemination of \u03b2-lactamases among pathogenic bacteria limits the efficacy of \u03b2-lactam antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about antibiotic resistance mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "4e242f8f-d609-4a4d-8d30-8192e3a4af73",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C3",
+      "claim": "Effective clinically approved inhibitors against class B metallo-\u03b2-lactamases are not available.",
+      "claim_type": "EXPLICIT",
+      "source": "yet, effective clinically approved inhibitors against class B metallo-\u03b2-lactamases are not available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of clinical therapeutics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "409bad7f-b39b-475b-8655-f2771c4f2c81",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C4",
+      "claim": "L1 is a class B3 enzyme expressed by Stenotrophomonas maltophilia.",
+      "claim_type": "EXPLICIT",
+      "source": "L1, a class B3 enzyme expressed by Stenotrophomonas maltophilia, is a significant contributor to the \u03b2-lactam resistance displayed by this opportunistic pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification statement supported by established literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "df52c802-e304-40ef-a2b6-06d6c2ebddc3",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C5",
+      "claim": "L1 is a tetramer with two elongated loops (\u03b13-\u03b27 and \u03b212-\u03b15) present around the active site of each monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, L1 is a tetramer with two elongated loops, \u03b13-\u03b27 and \u03b212-\u03b15, present around the active site of each monomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural description is supported by crystallographic data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "aed5217b-940d-453d-b6fd-f0067bf7c394",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C6",
+      "claim": "Residues in the \u03b13-\u03b27 and \u03b212-\u03b15 loops influence substrate/inhibitor binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues in these two loops influence substrate/inhibitor binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural and functional studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "e9d920f2-fce4-4be3-81e8-b205b504fec9",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C7",
+      "claim": "Enhanced sampling molecular dynamics simulations were performed to study conformational changes of the elongated loops.",
+      "claim_type": "EXPLICIT",
+      "source": "To study how the conformational changes of the elongated loops affect the active site in each monomer, enhanced sampling molecular dynamics simulations were performed, Markov State Models were built, and convolutional variational autoencoder-based deep learning was applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "01a3c367-d9bb-4e5e-8538-6fdcb15dfb71",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C8",
+      "claim": "Key residues D150a, H151, P225, Y227, and R236 were mutated and the activity of the generated L1 variants was evaluated in cell-based experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The key identified residues (D150a, H151, P225, Y227, and R236) were mutated and the activity of the generated L1 variants was evaluated in cell-based experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental validation performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "0a854c28-dc20-4388-b3a6-bd205ffcdff6",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C9",
+      "claim": "There are extremely significant gating interactions between \u03b13-\u03b27 and \u03b212-\u03b15 loops.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrate that there are extremely significant gating interactions between \u03b13-\u03b27 and \u03b212-\u03b15 loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "018d3f2c-bae3-4098-a852-b1aecb7a3265",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C10",
+      "claim": "The gating interactions with the conformational changes of the key residues play an important role in the structural remodeling of the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the gating interactions with the conformational changes of the key residues play an important role in the structural remodeling of the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "e1f009bd-f79a-41b8-bbea-46dabb334901",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C11",
+      "claim": "\u03b2-lactam antibiotics accounted for 65% of all antibiotics prescriptions in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Penicillins, carbapenems, cephalosporins, and monobactams are typical \u03b2-lactam antibiotics on the market and, accounted for 65% of all antibiotics prescriptions in the United States (Bush and Bradford, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statistic is cited from Bush and Bradford, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "09a77825-4005-4190-9cc7-b0233bdfcdb6",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C12",
+      "claim": "The \u03b2-lactam ring acts as a false substrate for transpeptidases and inhibits peptidoglycan cross-linking.",
+      "claim_type": "EXPLICIT",
+      "source": "A common structural feature in this exceptionally large class of antibiotics is the presence of a \u03b2-lactam ring, which acts as a false substrate for the transpeptidases (also called Penicillin-binding proteins, PBPs) and inhibits peptidoglycan cross-linking, thereby impairing the synthesis of the bacterial cell wall (Palzkill, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of action of \u03b2-lactam antibiotics, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "59c4db21-ef04-4054-9aab-17bc4222fd7b",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C13",
+      "claim": "The World Health Organization projected in 2019 that drug resistance could cause up to 10 million deaths annually by 2050.",
+      "claim_type": "EXPLICIT",
+      "source": "The World Health Organization projected in 2019 that such drug resistance could cause up to 10 million deaths annually by 2050 ('No time to Wait', n.d.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection cited from a WHO report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "fe98f73a-e78e-430e-b216-632accadbc2d",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C14",
+      "claim": "The expression of \u03b2-lactamases is the most common mechanism found in various bacteria resistant to \u03b2-lactams.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the expression of \u03b2-lactamases is the most common mechanism found in various bacteria resistant to \u03b2-lactams (Lingzhi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Lingzhi et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "225503b0-52c0-43a7-82c6-922a9bfc8852",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C15",
+      "claim": "\u03b2-Lactamases inactivate \u03b2-lactam antibiotics by hydrolyzing the amide bond in the \u03b2-lactam ring.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Lactamases inactivate \u03b2-lactam antibiotics by hydrolyzing the amide bond in the \u03b2-lactam ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of \u03b2-lactamase action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "25591c91-95eb-4f54-a6a6-98224724d096",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C16",
+      "claim": "Classes A, C, and D are serine \u03b2-lactamases, while class B groups the zinc-dependent metallo-\u03b2-lactamases (MBLs).",
+      "claim_type": "EXPLICIT",
+      "source": "While classes A, C, and D are serine \u03b2-lactamases, class B groups the zinc-dependent metallo-\u03b2-lactamases (MBLs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification of \u03b2-lactamases based on established nomenclature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "2d4f5ff8-de7e-4315-b9b9-0844b919058b",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C17",
+      "claim": "MBLs employ one or two zinc ions at the active site as catalytic cofactors.",
+      "claim_type": "EXPLICIT",
+      "source": "MBLs employ one or two zinc ions at the active site as catalytic cofactors (Palzkill, 2013; Tooke et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural feature is cited from literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "bc419499-14ca-4da4-afba-1e29736268e3",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C18",
+      "claim": "MBLs are subdivided into three subclasses (B1, B2, and B3) based on their sequence, metal content, and different active site features.",
+      "claim_type": "EXPLICIT",
+      "source": "MBLs are further subdivided into three subclasses (B1, B2, and B3) based on their sequence, metal content, and different active site features (Bahr et al., 2022; Bahr et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "3bf5ea23-a233-4a66-b925-e594db9f8502",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C19",
+      "claim": "All MBLs adopt the \u03b1\u03b2/\u03b2\u03b1 sandwich motif.",
+      "claim_type": "EXPLICIT",
+      "source": "All MBLs adopt the \u03b1\u03b2/\u03b2\u03b1 sandwich motif and have mono- (class B2) or binucleated zinc (classes B1 and B3) at the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural characteristic of MBLs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "9fe740a8-02b4-473d-b2ad-2c33309b0a0d",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C20",
+      "claim": "B1 and B3 subclasses have a broad-spectrum substrate profile that includes penicillins, cephalosporins, and carbapenems.",
+      "claim_type": "EXPLICIT",
+      "source": "The B1 and B3 subclasses have a broad-spectrum substrate profile that includes penicillins, cephalosporins, and carbapenems, while the B2 enzymes exhibit a narrow profile that includes carbapenems (Palzkill, 2013; Tooke et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the substrate specificity of MBL subclasses, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f9b9f257-680d-401b-9d4f-52b6ee820568",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C21",
+      "claim": "B2 enzymes exhibit a narrow profile that includes carbapenems.",
+      "claim_type": "EXPLICIT",
+      "source": "The B1 and B3 subclasses have a broad-spectrum substrate profile that includes penicillins, cephalosporins, and carbapenems, while the B2 enzymes exhibit a narrow profile that includes carbapenems (Palzkill, 2013; Tooke et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the substrate specificity of B2 MBLs, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "43956423-efff-4391-8a89-adcf3b0518a8",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C22",
+      "claim": "Stenotrophomonas maltophilia is a non-fermenting, Gram-negative bacillus that has emerged as an opportunistic pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Stenotrophomonas maltophilia is a non-fermenting, Gram-negative bacillus that has emerged as an opportunistic pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a microbiological description of the organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "68c87a8e-fce0-4870-8675-5a7f995719a9",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C23",
+      "claim": "S. maltophilia mainly affects patients with cancer, cystic fibrosis, and other conditions leading to an immunosuppressed state.",
+      "claim_type": "EXPLICIT",
+      "source": "This organism mainly affects patients with cancer, cystic fibrosis, and other conditions leading to an immunosuppressed state, where it can cause a variety of clinical syndromes, mainly pulmonary and blood stream infections (Mojica et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clinical information is supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "ad9b0650-bd87-4dd7-8ecd-5f2c8e07cb62",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C24",
+      "claim": "Crude mortality rates range from 14% to 69% in patients with bloodstream infection due to S. maltophilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Crude mortality rates range from 14% to 69% in patients with bloodstream infection due to S. maltophilia (Adegoke et al., 2017; Brooke et al., 2017; Crisp et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mortality statistic is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "3908cdf1-a5c0-4d38-a25a-e1981efe885e",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C25",
+      "claim": "\u03b2-Lactams resistance in S. maltophilia is mediated by the coordinated expression of L1 metallo-\u03b2-lactamase together with L2 \u03b2-lactamase.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Lactams resistance in S. maltophilia is mediated by the coordinated expression of L1 metallo-\u03b2-lactamase (class B3 MBL) together with L2 \u03b2-lactamase (class A \u03b2-lactamase) (Okazaki and Avison, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism of resistance is cited from Okazaki and Avison, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "40c34fe5-0505-429f-a59a-71de98651113",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C26",
+      "claim": "L1 MBL can hydrolyze almost all \u03b2-lactam antibiotics with the exception of monobactams such as aztreonam.",
+      "claim_type": "EXPLICIT",
+      "source": "L1 MBL can hydrolyze almost all \u03b2-lactam antibiotics with the exception of monobactams such as aztreonam and is resistant to all clinically available \u03b2-lactamase inhibitors (Brooke, 2012; Mojica et al., 2019; Okazaki and Avison, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the substrate profile of L1 MBL, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f71ce04d-a41f-4b1b-97c3-bf5d8cda9b90",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C27",
+      "claim": "L1 MBL is resistant to all clinically available \u03b2-lactamase inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "L1 MBL can hydrolyze almost all \u03b2-lactam antibiotics with the exception of monobactams such as aztreonam and is resistant to all clinically available \u03b2-lactamase inhibitors (Brooke, 2012; Mojica et al., 2019; Okazaki and Avison, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about inhibitor resistance is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f2169920-c639-482a-b4d7-b908f0ed2819",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C28",
+      "claim": "L1 MBL is the only known \u03b2-lactamase that functions as a tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "L1 MBL is unique among all known \u03b2-lactamases as it is the only known \u03b2-lactamase that functions as a tetramer (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural uniqueness is stated and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "2285bcae-f106-4ba3-8e5f-f688ecfcb010",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C29",
+      "claim": "In each subunit of L1 MBL, there are two zinc ions bound at the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "In each subunit, there are two zinc ions bound at the active site (Figure 1B, Ullah et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and cited from Ullah et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "50b259b2-1ff8-493e-b4a3-3e79366a47e6",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C30",
+      "claim": "The first Zinc (Zn1) is in a tetrahedral coordination with a water molecule and three histidine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The first Zinc (Zn1) is in a tetrahedral coordination with a water molecule and three histidine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the coordination geometry of Zn1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "ad665100-9235-40c0-9bbc-74f922dcf510",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C31",
+      "claim": "The second Zinc (Zn2) is coordinated by two histidine, one aspartic acid and a water molecule in a trigonal bipyramidal geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The second Zinc (Zn2) is coordinated by two histidine, one aspartic acid and a water molecule in a trigonal bipyramidal geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the coordination geometry of Zn2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "1282a149-0399-4447-ab94-9dd5b7c1928c",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C32",
+      "claim": "A water molecule that acts like a nucleophile for the catalytic reaction bridges the two zinc ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Another water molecule, which acts like a nucleophile for the catalytic reaction bridges the two zinc ions (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the catalytic mechanism, illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "d631e832-47f6-4f07-9896-75deefa0ef66",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C33",
+      "claim": "Both zinc ions are relevant for hydrolysis and protein folding in L1.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have revealed that both zinc ions are relevant for hydrolysis and protein folding in L1 (Crisp et al., 2007; Hu et al., 2008; Ullah et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "3408bf6b-011b-4332-958b-5af2003dc37a",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C34",
+      "claim": "The L1 MBL tetramer is held tightly by three discrete sets of hydrophobic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The L1 MBL tetramer is held tightly by three discrete sets of hydrophobic interactions, which allows each monomer to make contacts with the other three subunits (Crisp et al., 2007; Sevaille et al., 2017; Ullah et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural feature is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "31d33b8e-cdaa-4d68-86ac-25c3e2f29345",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C35",
+      "claim": "Each monomer buries 1300 \u00c52 of non-polar side-chain surface area on the formation of the tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "All these interactions are primarily hydrophobic and lead to each monomer burying 1300 \u00c52 of non-polar side-chain surface area on the formation of the tetramer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantifies the buried surface area in tetramer formation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "a3b7a8f2-9e95-43d3-be41-0f4138ce78ea",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C36",
+      "claim": "The side chain of M175 penetrates a shallow pocket formed by E141, L150d, P198, and Y236 on the surface of the adjacent subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The key interactions made by the side chain of M175 penetrating a shallow pocket formed by E141, L150d, P198, and Y236 (Figure 1\u2014figure supplement 2; after the standard BBL numbering Garau et al., 2004) on the surface of the adjacent subunit, has been shown to be essential for stabilizing the tetramer (Simm et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interaction is described and referenced to Figure 1\u2014figure supplement 2 and cited from Simm et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "d428806b-a9bd-4704-a6ef-4e4dd8d5d0b9",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C37",
+      "claim": "A substitution of M175 results in failure of tetramerization and a reduced activity against most \u03b2-lactams of ca. two orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "A substitution of this M175 results in failure of tetramerization and a reduced activity against most \u03b2-lactams of ca. two orders of magnitude (Simm et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental result is cited from Simm et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "b49d51dd-5275-4493-9daa-9b31986eaaff",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C38",
+      "claim": "The \u03b13-\u03b27 loop at the N-terminal extension has 20 residues (G149-D171) and extends over the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b13-\u03b27 loop at the N-terminal extension has 20 residues (G149-D171) and extends over the active site (Garrity et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural description is cited from Garrity et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "891fc50b-d9d4-43a2-94a8-cfd7f1e5dc1b",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C39",
+      "claim": "Residues in the \u03b13-\u03b27 loop are considered to be involved in determining the spectrum of the enzyme by forming hydrophobic interactions with large hydrophobic motifs at C2 or C6 of \u03b2-lactam substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues are considered to be involved in determining the spectrum of the enzyme by forming hydrophobic interactions with large hydrophobic motifs at C2 or C6 of \u03b2-lactam substrates (Sevaille et al., 2017; Spencer et al., 2005; Spencer et al., 2001; Ullah et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "d088acf4-9eaf-41e1-8a2d-d987b476aee2",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C40",
+      "claim": "The G159A substitution disrupts the positioning of F156 by decreasing the flexibility of the loop.",
+      "claim_type": "EXPLICIT",
+      "source": "This substitution disrupts the positioning of F156, another significant residue involved in the function of L1, by decreasing the flexibility of the loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the effect of the G159A mutation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "5f67762c-fa7f-47e6-8a22-73ee639f9011",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C41",
+      "claim": "The G161D substitution can affect the efficiency of the enzyme catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the G161D substitution can also affect the efficiency of the enzyme catalytic activity (Carenbauer et al., 2002; Nauton et al., 2008; Spencer et al., 2005; Ullah et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This effect is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "8dcaae12-d439-43b4-a7df-0667e3e20f7a",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C42",
+      "claim": "The \u03b212-\u03b15 loop consists of 19 residues (A219-H239) and lies adjacent to the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b212-\u03b15 loop consists of 19 residues (A219-H239) and lies adjacent to the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of the \u03b212-\u03b15 loop.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "c73322c9-ae98-4eaa-905c-b7848b72738e",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C43",
+      "claim": "S221 in the \u03b212-\u03b15 loop makes indirect interaction with Zn2.",
+      "claim_type": "EXPLICIT",
+      "source": "S221 in this loop makes indirect interaction with Zn2, while S223 serves as a second-shell residue of H196 (Crisp et al., 2007; Mojica et al., 2019; Ullah et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interaction is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "c89861be-8d97-4c2d-9689-4054b03eada1",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C44",
+      "claim": "S223 serves as a second-shell residue of H196.",
+      "claim_type": "EXPLICIT",
+      "source": "S221 in this loop makes indirect interaction with Zn2, while S223 serves as a second-shell residue of H196 (Crisp et al., 2007; Mojica et al., 2019; Ullah et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural relationship is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "1723cff9-29ec-4921-b977-08cbf3e27a5e",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C45",
+      "claim": "S221 coordinates a Zn2-bound apical water.",
+      "claim_type": "EXPLICIT",
+      "source": "S221 coordinates a Zn2-bound apical water, whereas S223 directly interacts with the substrate C4 carboxylate group (Spencer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interaction is cited from Spencer et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "0343ad05-e9b4-4392-b8ec-4d393f87ced6",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C46",
+      "claim": "S223 directly interacts with the substrate C4 carboxylate group.",
+      "claim_type": "EXPLICIT",
+      "source": "S221 coordinates a Zn2-bound apical water, whereas S223 directly interacts with the substrate C4 carboxylate group (Spencer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interaction is cited from Spencer et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "ba886cf4-8d51-43fe-a47a-c250f1206c0a",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C47",
+      "claim": "In a recent crystal structure, S221 and S223 have been found to directly interact with substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent crystal structure, S221 and S223 have been found to directly interact with substrates (Twidale et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is cited from Twidale et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "6aaaf0ad-0e27-4704-9be8-8ba69ed5dc79",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C48",
+      "claim": "Novel substitutions Q230R, (K/Q)232R, G233D, and (P/A)235V have been identified in the \u03b212-\u03b15 loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, novel substitutions have been identified in the loop, namely Q230R, (K/Q)232R, G233D, and (P/A)235V (Mojica et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These substitutions are cited from Mojica et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "95f26c36-b04c-4dfa-a0a7-b739d3cba6d0",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C49",
+      "claim": "The apical points of \u03b13-\u03b27 and \u03b212-\u03b15 loops are positioned at the interface between monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The apical points of \u03b13-\u03b27 and \u03b212-\u03b15 loops are positioned at the interface between monomers, and direct interaction with residues that affects the catalytic activity of the L1 MBL has been confirmed (Ullah et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation is cited from Ullah et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "8e1227f2-2621-4d24-bc3e-654384afbca2",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C50",
+      "claim": "The crystal structure of L1 MBL has been determined in apo state and in complex with inhibitors and final reaction products.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of L1 MBL has been determined in apo state and in complex with inhibitors and final reaction products (Nauton et al., 2008; Sevaille et al., 2017; Twidale et al., 2021; Ullah et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple crystallographic studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "a08fa9ae-c6ca-4f0a-9433-27b21a86ce8c",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C51",
+      "claim": "In the apo state, the \u03b212-\u03b15 loop is collapsed on the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "In the apo state, the \u03b212-\u03b15 loop is collapsed on the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the conformation observed in crystal structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "1779e681-5845-445a-b391-e73f6e0c6565",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C52",
+      "claim": "In complex structures, the \u03b212-\u03b15 loop wraps around to enclose the substrate/inhibitor within the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "In complex structures, the \u03b212-\u03b15 loop wraps around to enclose the substrate/inhibitor within the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the conformation observed in complex crystal structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "ec95e49c-924b-409f-a906-22b720a14500",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C53",
+      "claim": "The conformation of the \u03b13-\u03b27 and \u03b212-\u03b15 loops are identical in all structures, be it in the apo state or in complex with substrate/inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the conformation of the \u03b13-\u03b27 and \u03b212-\u03b15 loops are identical in all structures, be it in the apo state or in complex with substrate/inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on comparison of crystal structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "45c9d2eb-fa44-454c-bc20-fa7f91499b43",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C54",
+      "claim": "In the collapsed, closed conformation, residues R236 (\u03b212-\u03b15) and D150c (\u03b13-\u03b27) form a salt bridge interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In this collapsed, closed conformation, residues R236 (\u03b212-\u03b15) and D150c (\u03b13-\u03b27) form a salt bridge interaction; Y227 (\u03b212-\u03b15) forms a \u03c0\u2013\u03c0 stacking interaction with H151 (\u03b13-\u03b27) and P225 (\u03b212-\u03b15) adopts an 'in' conformation, where the C\u03b3 atom in the cyclic side chain of P225 is 6.5 \u00c5 from the centroid of the two Zinc ions (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interaction is described and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "9a26fd59-b89a-439d-918e-f4e96338d947",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C55",
+      "claim": "Y227 (\u03b212-\u03b15) forms a \u03c0\u2013\u03c0 stacking interaction with H151 (\u03b13-\u03b27).",
+      "claim_type": "EXPLICIT",
+      "source": "In this collapsed, closed conformation, residues R236 (\u03b212-\u03b15) and D150c (\u03b13-\u03b27) form a salt bridge interaction; Y227 (\u03b212-\u03b15) forms a \u03c0\u2013\u03c0 stacking interaction with H151 (\u03b13-\u03b27) and P225 (\u03b212-\u03b15) adopts an 'in' conformation, where the C\u03b3 atom in the cyclic side chain of P225 is 6.5 \u00c5 from the centroid of the two Zinc ions (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interaction is described and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "046aa36a-621d-4728-b474-d958d6e69ad2",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C56",
+      "claim": "P225 (\u03b212-\u03b15) adopts an 'in' conformation, where the C\u03b3 atom in the cyclic side chain of P225 is 6.5 \u00c5 from the centroid of the two Zinc ions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this collapsed, closed conformation, residues R236 (\u03b212-\u03b15) and D150c (\u03b13-\u03b27) form a salt bridge interaction; Y227 (\u03b212-\u03b15) forms a \u03c0\u2013\u03c0 stacking interaction with H151 (\u03b13-\u03b27) and P225 (\u03b212-\u03b15) adopts an 'in' conformation, where the C\u03b3 atom in the cyclic side chain of P225 is 6.5 \u00c5 from the centroid of the two Zinc ions (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conformation is described and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "3735dd9b-2aa4-4cfd-99bd-78a7634f8d4a",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C57",
+      "claim": "An additional interaction between the side chain of Q310 (\u03b16 helix) and the backbone carbonyl oxygen of A224 (\u03b212-\u03b15) stabilizes the loops in the closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional interaction between the side chain of the Q310 (\u03b16 helix) and the backbone carbonyl oxygen of A224 (\u03b212-\u03b15) stabilizes the loops in the closed conformation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This stabilizing interaction is described and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "4371faae-7a4b-4f59-9c44-1fe89e5c75ee",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C58",
+      "claim": "Inter-subunit interactions are the major contributors that affect the flexibility of \u03b13-\u03b27 and \u03b212-\u03b15 loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the inter-subunit interactions are the major contributors that affect the flexibility of \u03b13-\u03b27 and \u03b212-\u03b15 loops, and the dynamics of these loops can directly influence \u03b2-lactam binding and catalysis (Spencer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Spencer et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "c09771a4-85ab-4510-8049-519c17b66912",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C59",
+      "claim": "The dynamics of \u03b13-\u03b27 and \u03b212-\u03b15 loops can directly influence \u03b2-lactam binding and catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the inter-subunit interactions are the major contributors that affect the flexibility of \u03b13-\u03b27 and \u03b212-\u03b15 loops, and the dynamics of these loops can directly influence \u03b2-lactam binding and catalysis (Spencer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Spencer et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "4487c5d6-2a5a-4783-8474-6073a1d7aef8",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C60",
+      "claim": "A converged MSM with seven metastable states was successfully built using the backbone torsions and the C\u03b1-RMSD of the \u03b13-\u03b27 and \u03b212-\u03b15 loops, at a lag time of 5 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "A converged MSM with seven metastable states was successfully built using the backbone torsions and the C\u03b1-RMSD of the \u03b13-\u03b27 and \u03b212-\u03b15 loops, at a lag time of 5 ns (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the MSM construction, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "b30d4662-beb8-4ce6-85b8-52836a3ff654",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C61",
+      "claim": "The dynamics of the two loops (\u03b13-\u03b27 and \u03b212-\u03b15) can be described by closed, intermediate, and open conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of the two loops (\u03b13-\u03b27 and \u03b212-\u03b15) can be described by closed, intermediate, and open conformations (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This classification is based on the simulation data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "53ce7112-f9b9-444c-b2d9-f221fd797179",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C62",
+      "claim": "The 'closed' conformations of the loop is defined by the collective formation of a salt bridge between D150c-R236 (\u03b13-\u03b27 and \u03b212-\u03b15), H151-Y227 \u03c0\u2013\u03c0 stacking interaction and P225 adopting an 'in' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'closed' conformations of the loop is defined by the collective formation of a salt bridge between D150c-R236 (\u03b13-\u03b27 and \u03b212-\u03b15), H151-Y227 \u03c0\u2013\u03c0 stacking interaction and P225 adopting an 'in' conformation (Figure 3A; Figure 3\u2014figure supplements 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This definition is based on simulation data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "2379963f-e369-4688-93fa-289b797751ab",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C63",
+      "claim": "The loops are collapsed on the active site resulting in an occluded 420.4 \u00b1 94.8 \u00c53 cavity in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "The loops are collapsed on the active site resulting in an occluded 420.4 \u00b1 94.8 \u00c53 cavity (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This volume calculation is from simulation data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "7636ae05-28b8-4c64-a6a7-b575f7fcd547",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C64",
+      "claim": "State 7 defines the closed conformation of L1 MBL, with the C\u03b1-RMSD comparison with the apo state crystal structure (PDB id 1SML) to be 0.79 \u00c5 and with inhibitor complex (PDB id 5DPX) is 0.77 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "State 7 defines the closed conformation of L1 MBL, with the C\u03b1-RMSD comparison with the apo state crystal structure (PDB id 1SML) to be 0.79 \u00c5 and with inhibitor complex (PDB id 5DPX) is 0.77 \u00c5 (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This RMSD comparison is shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "b61fd675-7099-470d-aca0-a40398e8b1e2",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C65",
+      "claim": "State 7 is the most populated, with 80% of all conformations falling within this cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "State 7 is the most populated, with 80% of all conformations falling within this cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This population statistic is from the MSM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "03d1b363-5747-450a-9480-7e1140d12bd9",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C66",
+      "claim": "State 7 is the lowest energy state.",
+      "claim_type": "EXPLICIT",
+      "source": "State 7 is also the lowest energy state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from the MSM free energy calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "7151fea6-589f-4027-bab6-fb6d07aa5113",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C67",
+      "claim": "The closed state dominates the dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations allow us to conclude that the closed state dominates the dynamics and also explains why this conformation is always resolved in crystallographic experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the MSM population analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "4ea48ff8-f838-4a26-aadb-d98f2f024db8",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C68",
+      "claim": "State 4 is an intermediate open conformation where two or more interactions including the D150c-R236 salt bridge, H151-Y227 \u03c0\u2013\u03c0 stacking, are lost and P225 adopts the 'out' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "State 4 is an intermediate open conformation (Figure 3B), where two or more interactions including the D150c-R236 salt bridge, H151-Y227 \u03c0\u2013\u03c0 stacking, are lost and P225 adopts the 'out' conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes state 4 based on simulation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "437ffbee-6575-4a96-81c8-e029561c4baa",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C69",
+      "claim": "The average volume calculated in the intermediate state is 608.3 \u00b1 137.25 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "The average volume calculated in the intermediate state is 608.3 \u00b1 137.25 \u00c53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This volume calculation is from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "2b8f32b0-ed74-4904-971e-30baedd43193",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C70",
+      "claim": "In the open conformation (state 1), the D150c-R236 salt bridge interaction is broken, the H151-Y227 \u03c0\u2013\u03c0 stacking interaction is lost and the cyclic side chain of P225 orients away from the active site and adopts an 'out' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open conformation (state 1), the D150c-R236 salt bridge interaction is broken, the H151-Y227 \u03c0\u2013\u03c0 stacking interaction is lost and the cyclic side chain of P225 orients away from the active site and adopts an 'out' conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes state 1 based on simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "62923cce-7c5c-4503-b1de-4d7cfe27f1a6",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C71",
+      "claim": "The loss of constraints around the loop allows the side chain of Y227 to rotate, with the hydroxyl group orienting toward R236 and away from the active site in the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of constraints around the loop allows the side chain of Y227 to rotate, with the hydroxyl group orienting toward R236 and away from the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conformational change is observed in simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "8216b6b7-ba2a-4d27-b325-45d235857bfa",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C72",
+      "claim": "The total volume of the merged cavity in the open state is 1027.17 \u00b1 191.04 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "The total volume of the merged cavity is 1027.17 \u00b1 191.04 \u00c53 and is large enough for the substrates to access the zinc metal center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This volume calculation is from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "c75ff941-6605-45a8-9849-aca307fc5af5",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C73",
+      "claim": "The shortest mean first passage time in the flux pathways is between states 1 \u2192 4 \u2192 7.",
+      "claim_type": "EXPLICIT",
+      "source": "The shortest mean first passage time in the flux pathways is between states 1 \u2192 4 \u2192 7, which indicates that the free energy (FE) barrier along this path is low (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the MSM and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "9c448fa8-c462-46d1-a207-bcc133e72fa0",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C74",
+      "claim": "The flux pathway 1 \u2192 4 \u2192 7 shows predominant prevalence (89.7%) at equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "This can explain why this flux pathway shows predominant prevalence (89.7%) at equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This percentage is calculated from the MSM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "6e8f48a8-2516-441a-bb3f-f894eec01075",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C75",
+      "claim": "An unsupervised CVAE-based deep learning was performed to identify dynamic changes in the \u03b13-\u03b27 and \u03b212-\u03b15 loops.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve this, an unsupervised CVAE-based deep learning was performed (Bhowmik et al., 2018; Romero et al., 2019). The CVAE provides biophysically relevant information related to conformational transitions induced by changes in interactions. More specifically, CVAE was used to identify dynamic changes in the \u03b13-\u03b27 and \u03b212-\u03b15 loops resulting from changes in D150c-R236 salt bridge, H151-Y227 \u03c0\u2013\u03c0 stacking interaction and the 'in/out' conformation of P225.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the deep learning methodology applied, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "21132a82-25df-4c01-b7b6-a9232c764135",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C76",
+      "claim": "The deep learning is able to cluster individual subunits in the tetramer based on their local and global conformational dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined deep learning is able to cluster individual subunits in the tetramer based on their local and global conformational dynamics (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "6f2790c5-20a0-4d4c-a28f-4b2216cc3abd",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C77",
+      "claim": "Subunits A and C share similar dynamics, while subunits B and D are clustered in the same tSNE space.",
+      "claim_type": "EXPLICIT",
+      "source": "Subunits A and C share similar dynamics, while subunits B and D are clustered in the same tSNE space (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This clustering result is shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "30c37088-d20c-40d6-8a1b-528d1699d200",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C78",
+      "claim": "The most flexible subunit is D, where all three, 'open\u2013intermediate\u2013closed' states are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "The most flexible subunit is D, where all three, 'open\u2013intermediate\u2013closed' states are observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the CVAE analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "dd23170b-7c17-4553-a930-687aebd6734f",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C79",
+      "claim": "The salt bridge formation between D150c-R236 (\u03b13-\u03b27 and \u03b212-\u03b15) is crucial for the function of L1 MBL.",
+      "claim_type": "EXPLICIT",
+      "source": "The salt bridge formation between D150c-R236 (\u03b13-\u03b27 and \u03b212-\u03b15) is crucial for the function of L1 MBL (Simm et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This importance is cited from Simm et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "165c4049-622f-4a9f-a0fa-202bd0dadfd6",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C80",
+      "claim": "The salt bridge acts as a gate, and the formation/loss of the salt bridge regulates the highly mobile \u03b212-\u03b15 loop to adopt an open/closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This salt bridge acts as a gate, and the formation/loss of the salt bridge regulates the highly mobile \u03b212-\u03b15 loop to adopt an open/closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This gating mechanism is inferred from the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "a0dd4d05-86fd-4392-a1c1-6b8b919585cf",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C81",
+      "claim": "Disruption of the salt bridge between R164 and D179 in TEM-1 would alter the structure of the substrate-binding site by restructuring the conformation of the \u03a9-loop, decreasing the antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experiments on TEM-1, a class A \u03b2-lactamase, offered evidence for the significance of salt bridge formation between important loops (Vakulenko et al., 1995). Disruption of the salt bridge between R164 and D179 would in turn alter the structure of the substrate-binding site by restructuring the conformation of the \u03a9-loop, decreasing the antibiotic resistance (Vakulenko et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from experimental work on TEM-1 by Vakulenko et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "9d71d1a1-cda3-408d-ad21-4ffcc004138b",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C82",
+      "claim": "The \u03c0\u2013\u03c0 stacking interaction between H151 and Y227 is another important interaction that stabilizes the loops.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03c0\u2013\u03c0 stacking interaction between H151 and Y227 is another important interaction that stabilizes the loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "663887b7-edcb-447a-8708-a27aa5587d0b",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C83",
+      "claim": "\u03c0\u2013\u03c0 stacking interaction is considered a very important interaction in protein folding and molecular recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Such \u03c0\u2013\u03c0 stacking interaction is considered a very important interaction in protein folding and molecular recognition (Brylinski, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Brylinski, 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "bedfed61-fabb-4503-ad92-f37726a0042f",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C84",
+      "claim": "Studies on other \u03b2-lactamases have revealed that the \u03c0\u2013\u03c0 stacking near the substrate-binding site can help stabilize the binding site topology and contribute to the recognition of the antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies on other \u03b2-lactamases have revealed that the \u03c0\u2013\u03c0 stacking near the substrate-binding site can help stabilize the binding site topology and contribute to the recognition of the antibiotics (Hargis et al., 2014; Langan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from studies on other \u03b2-lactamases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "5fe8945c-7cae-45c4-b1eb-a471de44c2cd",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C85",
+      "claim": "The side chain of P225 exists in trans configuration in L1 MBL, which is very unusual among the \u03b2-lactamases.",
+      "claim_type": "EXPLICIT",
+      "source": "The side chain of P225 exists in trans configuration in L1 MBL, which is very unusual among the \u03b2-lactamases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from structural analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "3ced0da9-d2cc-494b-947d-521eceb231d8",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C86",
+      "claim": "Usually, in \u03b2-lactamases, the proline is found in the cis configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Usually, in \u03b2-lactamases, the proline is found in the cis configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about \u03b2-lactamases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "17fee952-7416-4dc8-bfd9-586c0ddca874",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C87",
+      "claim": "Studies on TEM-1 \u03b2-lactamase have revealed the importance of the proline cis configuration in the protein folding and correct orientation of residues involved in the catalytic reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies on TEM-1 \u03b2-lactamase have already revealed the importance of the proline cis configuration in the protein folding and correct orientation of residues involved in the catalytic reaction (Vanhove et al., 1996; Vanhove et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from studies on TEM-1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "7408ccfd-9fb8-4dd8-940f-77fdfb33284b",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C88",
+      "claim": "The \u03c9 torsion angle of P225 is stable at ca. \u2212180\u00b0 in all four monomers, while also often transitioning to ca. 180\u00b0, confirming the trans configuration of P225.",
+      "claim_type": "EXPLICIT",
+      "source": "The angle is stable at ca. \u2212180\u00b0 in all four monomers, while also often transitioning to ca. 180\u00b0; thus, confirming the trans configuration of P225.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "0b90e095-22ae-4330-98c4-8c7d99a3181f",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C89",
+      "claim": "The 'in' and 'out' conformations of P225 identified in different states are regulated by the coupled coordination of \u03c0\u2013\u03c0 stacking (H151-Y227) and the salt bridge (D150c-R236) interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'in' and 'out' conformations of P225 identified in different states are regulated by the coupled coordination of \u03c0\u2013\u03c0 stacking (H151-Y227) and the salt bridge (D150c-R236) interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "4a3e8f64-5c70-4819-9db8-82fbb8c0f0c9",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C90",
+      "claim": "The side chain of F156 rotates when transitioning between metastable states.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in each state, the side chain of F156 (Figure 3) rotates when transitioning between metastable states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the simulation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f0b9aed3-d2fa-4f5a-bc39-7923a2d03cd7",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C91",
+      "claim": "There is an obvious difference in the F156 side-chain dihedral angles in the open, intermediate, and the closed states.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison with the crystal structure, there is an obvious difference in the F156 side-chain dihedral angles in the open, intermediate, and the closed states, suggesting the side-chain rotation of F156 may affect the ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from comparison of simulation data with crystal structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "bb94517e-a30d-4a3c-9d4b-34a007080305",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C92",
+      "claim": "The H151V substitution had the biggest detrimental effect on the catalytic activity of L1 of all substrates tested, decreasing the minimal inhibitory concentration (MIC) in >6 doubling dilutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The H151V substitution had the biggest detrimental effect on the catalytic activity of L1 of all substrates tested, decreasing the minimal inhibitory concentration (MIC) in >6 doubling dilutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from susceptibility testing shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f6167149-f2a9-470a-afe1-358235bdd625",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C93",
+      "claim": "For the P225A and Y227A variants, the MICs for ceftazidime decreased two-fold dilutions, in contrast to the six-fold dilutions observed for the MIC for imipenem.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the P225A and Y227A variants, the effect on the MICs depended upon the substrate. Compared to L1, the MICs for ceftazidime of these variants decreased two-fold dilutions, in contrast to the six-fold dilutions observed for the MIC for imipenem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from susceptibility testing shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "249b20c2-8039-4bca-bdef-648f85b9974a",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C94",
+      "claim": "The D150cV and R236A substitution had a minimal effect on the hydrolytic activity of L1, as their MICs values for all substrates were comparable.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the D150cV and R236A substitution had a minimal effect on the hydrolytic activity of L1, as their MICs values for all substrates were comparable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from susceptibility testing shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "241ce359-e2d3-4e6d-bf67-fa949791a571",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C95",
+      "claim": "Addition of the MBL inhibitor L-CS319 further decreased the MIC values.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of the MBL inhibitor L-CS319 further decreased the MIC values, indicating that this compound is able to bind the active site, a fact that is consistent with its small size and the lack of substituents such as those present in the \u03b2-lactam antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from susceptibility testing shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "3e4a4b0d-49e5-4bba-b680-1388c8d85638",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C96",
+      "claim": "The effect of the inhibitor supports that the enzyme is active in the bacterial periplasm, and that these mutations are not disrupting the protein fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of the inhibitor also supports that the enzyme is active in the bacterial periplasm, and that these mutations are not disrupting the protein fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inhibitor susceptibility data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "ea870ba2-436f-4729-8a40-a0d2f2cf566f",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C97",
+      "claim": "The \u03b212-\u03b15 loop is highly flexible, while the \u03b13-\u03b27 loop is quite stable, due to the direct proximity to the zinc coordination in the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b212-\u03b15 loop is highly flexible, while the \u03b13-\u03b27 loop is quite stable, due to the direct proximity to the zinc coordination in the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f5ba71ed-87d2-48f6-b588-8d270b610e9f",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C98",
+      "claim": "The loops adopt 'open' or 'closed' conformations gated by a salt bridge interaction between D150c and R236.",
+      "claim_type": "EXPLICIT",
+      "source": "The loops adopt 'open' or 'closed' conformations gated by a salt bridge interaction between D150c and R236.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "1bfcf839-3e1a-4958-bfde-9be55547bd92",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C99",
+      "claim": "The formation of the stacking interaction together with the salt bridge interaction stabilizes P225 in an 'in' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of the stacking interaction together with the salt bridge interaction stabilizes P225 in an 'in' conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "78ff2b26-6647-48b7-80f6-7c7aaf76cd8f",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C100",
+      "claim": "These conformational changes influence the architecture of the active site and may affect the catalytic activity of L1 MBL.",
+      "claim_type": "EXPLICIT",
+      "source": "These conformational changes influence the architecture of the active site and may affect the catalytic activity of L1 MBL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the simulation and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f1cbb257-bd59-489f-ba36-dd4ec804bb9a",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C101",
+      "claim": "The loop movements occur on the same timescale as the formation of the reaction intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth emphasizing that the loop movements occur on the same timescale as the formation of the reaction intermediate (Carenbauer et al., 2002, Gonz\u00e1lez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Carenbauer et al., 2002 and Gonz\u00e1lez et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "4316c1c4-a46e-42ba-b81a-f5cfe544f3b1",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C102",
+      "claim": "Experimental studies on two active site loops in NDM-1, IMP-1, and VIM-2 MBLs identified the loops to behave like mobile flaps.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings in L1 MBL are further supported by experimental studies on two active site loops in NDM-1, IMP-1, and VIM-2 MBLs, which identified the loops to behave like mobile flaps and a direct link exists between the conformation of the loops and the changes in the substrate recognition profile (Oelschlaeger and Pleiss, 2007; Palacios et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from studies on other MBLs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "05f1ef17-a708-493e-93d3-d7f29bcc937b",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C103",
+      "claim": "A direct link exists between the conformation of the loops and the changes in the substrate recognition profile in NDM-1, IMP-1, and VIM-2 MBLs.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings in L1 MBL are further supported by experimental studies on two active site loops in NDM-1, IMP-1, and VIM-2 MBLs, which identified the loops to behave like mobile flaps and a direct link exists between the conformation of the loops and the changes in the substrate recognition profile (Oelschlaeger and Pleiss, 2007; Palacios et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from studies on other MBLs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f316e977-233c-45ca-be34-c7fb8e5c6f28",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C104",
+      "claim": "The flexibility of the loops may lead to a better positioning of the zinc ion, resulting in an enhanced catalytic profile of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the flexibility of the loops may also lead to a better positioning of the zinc ion, resulting in an enhanced catalytic profile of the enzyme (Tomatis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Tomatis et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "da243b65-4319-4648-842e-57da8a21db43",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C105",
+      "claim": "The biological functional unit of L1 MBL is a tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological functional unit of L1 MBL is a tetramer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "779f0a7d-5b01-44f6-a136-07778b85dad2",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C106",
+      "claim": "The coordinates of the L1 MBL deposited as the PDB entry 1SML are monomeric.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordinates of the L1 MBL deposited as the PDB entry 1SML are monomeric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the PDB entry used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "9738c3be-453a-4e90-a979-37d71c22a78e",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C107",
+      "claim": "Multiple short MSM-based adaptively sampled simulations were run using the ACEMD molecular dynamics engine.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple short MSM-based adaptively sampled simulations were run using the ACEMD molecular dynamics engine (Doerr et al., 2016; Harvey et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "256ce27a-58cf-47e8-bfca-f304077f127d",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C108",
+      "claim": "For each round, 4 simulations of 50 ns were run in parallel until the cumulative time exceeded 100 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "For each round, 4 simulations of 50 ns were run in parallel until the cumulative time exceeded 100 \u03bcs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "2c1b215f-1bd6-4d80-bc36-43057824d677",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C109",
+      "claim": "2090 trajectories were collected with each trajectory counting 500 frames.",
+      "claim_type": "EXPLICIT",
+      "source": "2090 trajectories were collected with each trajectory counting 500 frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the amount of simulation data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "bf0d8199-19f5-4b95-a574-074dd5344cba",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C110",
+      "claim": "PyEMMA v2.5.7 was used to build the MSM and carry out kinetic modeling of the tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "PyEMMA v2.5.7 was used to build the MSM (Scherer et al., 2015) and carry out kinetic modeling of the tetramer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software used for MSM construction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "afab9b32-bcf9-4df3-88bc-0dea7d72b072",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C111",
+      "claim": "A lag time of 5 ns was chosen to build an MSM with seven metastable states according to the implied timescales (ITS) plot.",
+      "claim_type": "EXPLICIT",
+      "source": "A lag time of 5 ns was chosen to build an MSM with seven metastable states according to the implied timescales (ITS) plot (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the MSM construction parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "5050e032-da35-407d-b043-5433988af8e7",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C112",
+      "claim": "The MSM passed the Chapman\u2013Kolmogorov test within confidence intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "After passing the Chapman\u2013Kolmogorov test within confidence intervals (Figure 2\u2014figure supplement 1), the MSM was defined as good.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validates the MSM, shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "e2e80877-87de-492e-aceb-f32ab3fc2a1f",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C113",
+      "claim": "A CVAE-based unsupervised deep learning was implemented to resolve the dynamics of the individual subunits L1 MBL.",
+      "claim_type": "EXPLICIT",
+      "source": "A CVAE-based unsupervised deep learning was implemented to resolve the dynamics of the individual subunits L1 MBL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the deep learning methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "02f07065-272c-48cc-8de9-657f480ae7f6",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C114",
+      "claim": "The CVAE model has been previously used successfully to study many multiple cases including protein folding, enzyme dynamics, COVID-19-related molecular mechanisms, and \u03b2-lactamases.",
+      "claim_type": "EXPLICIT",
+      "source": "The CVAE model has been previously used successfully to study many multiple cases including protein folding (Bhowmik et al., 2018), enzyme dynamics (Akere et al., 2020; Romero et al., 2019), COVID-19-related molecular mechanisms (Cho et al., 2021), and more specifically \u03b2-lactamases (Olehnovics et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous applications of CVAE.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "7cabbe17-5634-4a3f-9a22-2adf0956bea6",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C115",
+      "claim": "The CVAE can identify subtle differences in conformations of 3D structures influenced by various local and global dynamics and is able to cluster them in different microstates.",
+      "claim_type": "EXPLICIT",
+      "source": "The CVAE can identify subtle differences in conformations of 3D structures influenced by various local and global dynamics and is able to cluster them in different microstates (Yoginath et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capability of CVAE, cited from Yoginath et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "52b077fb-1627-42f1-bbee-51ff08c1c89e",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C116",
+      "claim": "Variant genes were synthesized into the pBC SK (+) vector by GenScript USA Inc.",
+      "claim_type": "EXPLICIT",
+      "source": "Variant genes were synthesized into the pBC SK (+) vector by GenScript USA Inc (Piscataway, NJ, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for generating variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "0ffe05a6-9d9a-409a-9479-536a77517323",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C117",
+      "claim": "Mueller-Hinton (MH) broth microdilution MIC measurements were performed according to the Clinical and Laboratory Standards Institute (CLSI) protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Mueller-Hinton (MH) broth microdilution MIC measurements were performed against isogenic transformants producing L1a and five variants of L1a in pBC SK (+) according to the Clinical and Laboratory Standards Institute (CLSI) protocol (Wayne, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for susceptibility testing.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "ac58fa1e-262d-49b1-ba07-364f9c19977c",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C118",
+      "claim": "L-CS319 was tested at a constant 100 \u00b5g/ml in combination with various concentrations of tebipenem.",
+      "claim_type": "EXPLICIT",
+      "source": "L-CS319 was tested at a constant 100 \u00b5g/ml in combination with various concentrations of tebipenem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions for inhibitor testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "4c790f65-b851-4920-8d02-029a58f9fa39",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "claim_id": "C119",
+      "claim": "All MIC measurements were performed at least three times and the mode value has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "All MIC measurements were performed at least three times and the mode value has been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental replication and data reporting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c19e9982-808c-4d88-94f6-26160aee5dcf",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "\u03b2-Lactam antibiotics are widely used but their efficacy is limited by \u03b2-lactamases, particularly metallo-\u03b2-lactamases (MBLs), for which no clinically approved inhibitors exist. MBLs are classified into subclasses B1, B2, and B3 based on structural and functional features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 provide well-established background on \u03b2-lactam antibiotics, resistance mechanisms, and MBL classification. These claims are supported by multiple citations and represent accepted knowledge in the field. The statistics and classifications are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "24df6693-c88c-40f5-9e6e-f6d5f783e369",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "L1 is a unique class B3 metallo-\u03b2-lactamase from Stenotrophomonas maltophilia that functions as a tetramer with two elongated loops (\u03b13-\u03b27 and \u03b212-\u03b15) around each active site. L1 hydrolyzes nearly all \u03b2-lactams except monobactams and is resistant to all clinically available inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C28 describe the structural and functional characteristics of L1 MBL, supported by crystallographic data and multiple citations. The unique tetrameric structure is well-documented (C28), and the substrate profile is established in the literature (C26-C27). The clinical significance is supported by mortality statistics (C24).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Each L1 MBL subunit contains two zinc ions (Zn1 in tetrahedral coordination, Zn2 in trigonal bipyramidal geometry) bridged by a nucleophilic water molecule. The tetramer is stabilized by hydrophobic interactions, with M175 playing a critical role; its substitution disrupts tetramerization and reduces activity by ~100-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C37 describe the zinc coordination geometry and tetramer stabilization, supported by crystallographic data (Figure 1B, C29) and experimental evidence (C37). The quantitative measurements of buried surface area (C35) and activity reduction (C37) are cited from established literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The \u03b13-\u03b27 loop (20 residues) and \u03b212-\u03b15 loop (19 residues) surround the active site and influence substrate binding through hydrophobic interactions and direct contacts with zinc-coordinated residues. Mutations in these loops affect catalytic efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C49 describe the structural features and functional roles of the two loops, supported by multiple crystallographic studies and mutagenesis experiments cited in the text. The specific residue interactions (C43-C47) and novel substitutions (C48) are appropriately referenced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "b723a249-e808-4725-845b-fd49301d92aa",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Crystal structures show that the \u03b212-\u03b15 loop adopts a collapsed conformation in both apo and complex states, with key interactions including a D150c-R236 salt bridge, H151-Y227 \u03c0-\u03c0 stacking, and P225 in an 'in' conformation. These interactions are stabilized by Q310-A224 hydrogen bonding and affect substrate binding and catalysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C59 describe crystallographic observations supported by multiple PDB structures (1SML, 5DPX) and are illustrated in Figure 1B-C. The specific interactions (C54-C57) are measured and documented. The functional importance (C58-C59) is cited from Spencer et al., 2005.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f98b917d-7f3c-4589-9a59-5e8b37c65f9d",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Enhanced sampling molecular dynamics simulations totaling >100 \u03bcs were performed using adaptive sampling with ACEMD. A converged Markov State Model with seven metastable states was built using PyEMMA at a 5 ns lag time, validated by the Chapman-Kolmogorov test.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C60, C107-C112 describe the computational methodology with appropriate technical details. The MSM construction is validated (C112, Figure 2\u2014figure supplement 1), and the simulation parameters are clearly specified (C108-C109). The methodology follows established protocols with proper software citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "3014189c-771a-4da6-9e25-cd4dc43e81bb",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MSM analysis reveals that the loops adopt closed, intermediate, and open conformations. The closed state (State 7) is most populated (80%), lowest in energy, and closely matches crystal structures (RMSD 0.77-0.79 \u00c5), with an occluded cavity of 420.4 \u00b1 94.8 \u00c5\u00b3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 present MSM results with quantitative data from simulations. The population statistics (C65), energy calculations (C66), and structural comparisons (C64) are derived from validated computational analysis. The cavity volume measurements (C63) are calculated from simulation trajectories and shown in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "181cf357-dcfc-446e-95d8-c2f053c0daab",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The intermediate state (State 4) shows partial loss of stabilizing interactions with a cavity volume of 608.3 \u00b1 137.25 \u00c5\u00b3. The open state (State 1) exhibits complete loss of the salt bridge and \u03c0-\u03c0 stacking, P225 'out' conformation, Y227 rotation, and a merged cavity of 1027.17 \u00b1 191.04 \u00c5\u00b3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 describe intermediate and open conformations with quantitative volume measurements from simulation data. The structural changes are illustrated in Figure 3B-C and supported by distance calculations shown in supplementary figures. The cavity volumes are calculated using established methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "2b80cfb1-2f99-46db-97d9-c0b4320b691b",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The predominant transition pathway (89.7% prevalence) follows states 1\u21924\u21927, representing the lowest free energy barrier between open, intermediate, and closed conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 present kinetic analysis from the MSM, shown in Figure 2B-C. The mean first passage times and flux pathway probabilities are calculated using Transition Path Theory, a standard MSM analysis method. The percentages are derived from validated computational analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "92a37ebe-6dd6-4d0a-bfb5-d68b9a44e239",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CVAE-based deep learning analysis with a latent dimension of 14 successfully clustered individual subunits based on loop dynamics. Subunits A and C share similar dynamics, while B and D cluster together, with subunit D being most flexible and sampling all three conformational states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78, C113-C115 describe the deep learning methodology and results. The CVAE approach is validated by prior applications (C114) and appropriate loss convergence (Figure 4\u2014figure supplement 1). The clustering results are visualized in Figure 4A and supported by distance measurements in Figure 4B-D.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "e302cf84-14f4-4e0c-8a6d-3b005193ba90",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The D150c-R236 salt bridge acts as a gate regulating loop conformation, while the H151-Y227 \u03c0-\u03c0 stacking interaction stabilizes the loops. These interactions are critical for enzyme function, analogous to salt bridge roles in other \u03b2-lactamases like TEM-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 present mechanistic interpretations supported by simulation data and literature comparisons. The gating mechanism (C80) is inferred from simulation observations of salt bridge formation/loss. The comparison to TEM-1 (C81) and general importance of \u03c0-\u03c0 stacking (C83-C84) are appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "966b87b7-7217-45b3-ad9a-bc85aaf2940e",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "P225 exists in an unusual trans configuration (\u03c9 angle stable at \u00b1180\u00b0) in L1 MBL, unlike the typical cis configuration in other \u03b2-lactamases. The 'in' and 'out' conformations of P225 are regulated by coupled coordination of the \u03c0-\u03c0 stacking and salt bridge interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C89 describe the proline configuration with quantitative torsion angle measurements from simulations (C88, Figure 5). The unusual trans configuration is documented, and its regulation by coupled interactions (C89) is inferred from simulation data showing correlated changes in multiple features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "6e3ccbde-74fe-435c-ad2f-c9ec3b5b1dd7",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The side chain of F156 rotates during transitions between metastable states, with obvious differences in dihedral angles between open, intermediate, and closed states, suggesting it may affect ligand binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 describe F156 dynamics observed in simulations (Figure 3). The rotation is documented across states, and the suggestion about ligand binding effects (C91) is appropriately tentative ('may affect'), based on comparison with crystal structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Experimental validation using L1 variants shows H151V has the largest detrimental effect (>6-fold MIC decrease), P225A and Y227A show substrate-dependent effects (2-6 fold decreases), while D150cV and R236A have minimal effects. The MBL inhibitor L-CS319 further decreases MICs, confirming enzyme activity and proper folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C92-C96, C116-C119 present experimental validation with appropriate methodology (CLSI protocol, C117) and replication (\u22653 replicates, C119). The MIC data in Table 2 support the differential effects of mutations. The inhibitor control (C95-C96) validates enzyme activity and proper folding of variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "f46467c5-0bb9-4310-9742-0d3b999d38d7",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The \u03b212-\u03b15 loop is highly flexible while the \u03b13-\u03b27 loop is stable due to proximity to zinc coordination. Gating interactions between the loops, involving salt bridge and \u03c0-\u03c0 stacking formation coupled with P225 conformation changes, play an important role in active site remodeling and may affect catalytic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C97-C100 present the main conclusions integrating computational and experimental results. The differential flexibility (C97) is observed in simulations, the gating mechanism (C98-C99) is supported by MSM and CVAE analysis, and the functional implications (C100) are validated by mutagenesis experiments showing activity changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "2d34f568-1be6-4634-9fcc-967b95aeb7b2",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Loop movements occur on the same timescale as reaction intermediate formation. Similar mobile flap behavior and links between loop conformation and substrate recognition have been observed in other MBLs (NDM-1, IMP-1, VIM-2), and loop flexibility may enhance catalytic activity through better zinc positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C104 place the findings in broader context with appropriate citations. The timescale comparison (C101) and observations in other MBLs (C102-C103) are properly referenced. The speculation about zinc positioning (C104) is appropriately tentative ('may lead to') and cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    },
+    {
+      "id": "99fd725d-7c87-40db-b6f1-95147135733c",
+      "content_id": "3145eca7-78c0-4b80-ad59-c3ea304479b2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The biological functional unit of L1 MBL is a tetramer, though the PDB entry 1SML contains monomeric coordinates that were used to generate the tetrameric structure using symmetry operators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106 describe the system preparation methodology. The tetrameric nature of L1 is well-established (also stated in C28), and the use of symmetry operators to generate the biological assembly from monomeric PDB coordinates is a standard crystallographic practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:23:18.454825Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ff0048dd-c459-48df-81b6-fdd49c9ce341",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "b88f5e5f-34bd-46fd-b648-32dfa14d9204",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "4e242f8f-d609-4a4d-8d30-8192e3a4af73",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "e1f009bd-f79a-41b8-bbea-46dabb334901",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "09a77825-4005-4190-9cc7-b0233bdfcdb6",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "59c4db21-ef04-4054-9aab-17bc4222fd7b",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "fe98f73a-e78e-430e-b216-632accadbc2d",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "225503b0-52c0-43a7-82c6-922a9bfc8852",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "25591c91-95eb-4f54-a6a6-98224724d096",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "2d4f5ff8-de7e-4315-b9b9-0844b919058b",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "bc419499-14ca-4da4-afba-1e29736268e3",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "3bf5ea23-a233-4a66-b925-e594db9f8502",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "9fe740a8-02b4-473d-b2ad-2c33309b0a0d",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "f9b9f257-680d-401b-9d4f-52b6ee820568",
+      "result_id": "c19e9982-808c-4d88-94f6-26160aee5dcf"
+    },
+    {
+      "claim_id": "409bad7f-b39b-475b-8655-f2771c4f2c81",
+      "result_id": "24df6693-c88c-40f5-9e6e-f6d5f783e369"
+    },
+    {
+      "claim_id": "df52c802-e304-40ef-a2b6-06d6c2ebddc3",
+      "result_id": "24df6693-c88c-40f5-9e6e-f6d5f783e369"
+    },
+    {
+      "claim_id": "43956423-efff-4391-8a89-adcf3b0518a8",
+      "result_id": "24df6693-c88c-40f5-9e6e-f6d5f783e369"
+    },
+    {
+      "claim_id": "68c87a8e-fce0-4870-8675-5a7f995719a9",
+      "result_id": "24df6693-c88c-40f5-9e6e-f6d5f783e369"
+    },
+    {
+      "claim_id": "ad9b0650-bd87-4dd7-8ecd-5f2c8e07cb62",
+      "result_id": "24df6693-c88c-40f5-9e6e-f6d5f783e369"
+    },
+    {
+      "claim_id": "3908cdf1-a5c0-4d38-a25a-e1981efe885e",
+      "result_id": "24df6693-c88c-40f5-9e6e-f6d5f783e369"
+    },
+    {
+      "claim_id": "40c34fe5-0505-429f-a59a-71de98651113",
+      "result_id": "24df6693-c88c-40f5-9e6e-f6d5f783e369"
+    },
+    {
+      "claim_id": "f71ce04d-a41f-4b1b-97c3-bf5d8cda9b90",
+      "result_id": "24df6693-c88c-40f5-9e6e-f6d5f783e369"
+    },
+    {
+      "claim_id": "f2169920-c639-482a-b4d7-b908f0ed2819",
+      "result_id": "24df6693-c88c-40f5-9e6e-f6d5f783e369"
+    },
+    {
+      "claim_id": "2285bcae-f106-4ba3-8e5f-f688ecfcb010",
+      "result_id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7"
+    },
+    {
+      "claim_id": "50b259b2-1ff8-493e-b4a3-3e79366a47e6",
+      "result_id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7"
+    },
+    {
+      "claim_id": "ad665100-9235-40c0-9bbc-74f922dcf510",
+      "result_id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7"
+    },
+    {
+      "claim_id": "1282a149-0399-4447-ab94-9dd5b7c1928c",
+      "result_id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7"
+    },
+    {
+      "claim_id": "d631e832-47f6-4f07-9896-75deefa0ef66",
+      "result_id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7"
+    },
+    {
+      "claim_id": "3408bf6b-011b-4332-958b-5af2003dc37a",
+      "result_id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7"
+    },
+    {
+      "claim_id": "31d33b8e-cdaa-4d68-86ac-25c3e2f29345",
+      "result_id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7"
+    },
+    {
+      "claim_id": "a3b7a8f2-9e95-43d3-be41-0f4138ce78ea",
+      "result_id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7"
+    },
+    {
+      "claim_id": "d428806b-a9bd-4704-a6ef-4e4dd8d5d0b9",
+      "result_id": "2a289182-8fe6-426d-ba7b-5c1f3af7e3f7"
+    },
+    {
+      "claim_id": "b49d51dd-5275-4493-9daa-9b31986eaaff",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "891fc50b-d9d4-43a2-94a8-cfd7f1e5dc1b",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "d088acf4-9eaf-41e1-8a2d-d987b476aee2",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "5f67762c-fa7f-47e6-8a22-73ee639f9011",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "8dcaae12-d439-43b4-a7df-0667e3e20f7a",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "c73322c9-ae98-4eaa-905c-b7848b72738e",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "c89861be-8d97-4c2d-9689-4054b03eada1",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "1723cff9-29ec-4921-b977-08cbf3e27a5e",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "0343ad05-e9b4-4392-b8ec-4d393f87ced6",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "ba886cf4-8d51-43fe-a47a-c250f1206c0a",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "6aaaf0ad-0e27-4704-9be8-8ba69ed5dc79",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "95f26c36-b04c-4dfa-a0a7-b739d3cba6d0",
+      "result_id": "fb3bf96d-1050-4a9d-b776-e2d4c9759545"
+    },
+    {
+      "claim_id": "8e1227f2-2621-4d24-bc3e-654384afbca2",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "a08fa9ae-c6ca-4f0a-9433-27b21a86ce8c",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "1779e681-5845-445a-b391-e73f6e0c6565",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "ec95e49c-924b-409f-a906-22b720a14500",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "45c9d2eb-fa44-454c-bc20-fa7f91499b43",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "9a26fd59-b89a-439d-918e-f4e96338d947",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "046aa36a-621d-4728-b474-d958d6e69ad2",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "3735dd9b-2aa4-4cfd-99bd-78a7634f8d4a",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "4371faae-7a4b-4f59-9c44-1fe89e5c75ee",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "c09771a4-85ab-4510-8049-519c17b66912",
+      "result_id": "b723a249-e808-4725-845b-fd49301d92aa"
+    },
+    {
+      "claim_id": "e9d920f2-fce4-4be3-81e8-b205b504fec9",
+      "result_id": "f98b917d-7f3c-4589-9a59-5e8b37c65f9d"
+    },
+    {
+      "claim_id": "4487c5d6-2a5a-4783-8474-6073a1d7aef8",
+      "result_id": "f98b917d-7f3c-4589-9a59-5e8b37c65f9d"
+    },
+    {
+      "claim_id": "9738c3be-453a-4e90-a979-37d71c22a78e",
+      "result_id": "f98b917d-7f3c-4589-9a59-5e8b37c65f9d"
+    },
+    {
+      "claim_id": "256ce27a-58cf-47e8-bfca-f304077f127d",
+      "result_id": "f98b917d-7f3c-4589-9a59-5e8b37c65f9d"
+    },
+    {
+      "claim_id": "2c1b215f-1bd6-4d80-bc36-43057824d677",
+      "result_id": "f98b917d-7f3c-4589-9a59-5e8b37c65f9d"
+    },
+    {
+      "claim_id": "bf0d8199-19f5-4b95-a574-074dd5344cba",
+      "result_id": "f98b917d-7f3c-4589-9a59-5e8b37c65f9d"
+    },
+    {
+      "claim_id": "afab9b32-bcf9-4df3-88bc-0dea7d72b072",
+      "result_id": "f98b917d-7f3c-4589-9a59-5e8b37c65f9d"
+    },
+    {
+      "claim_id": "5050e032-da35-407d-b043-5433988af8e7",
+      "result_id": "f98b917d-7f3c-4589-9a59-5e8b37c65f9d"
+    },
+    {
+      "claim_id": "b30d4662-beb8-4ce6-85b8-52836a3ff654",
+      "result_id": "3014189c-771a-4da6-9e25-cd4dc43e81bb"
+    },
+    {
+      "claim_id": "53ce7112-f9b9-444c-b2d9-f221fd797179",
+      "result_id": "3014189c-771a-4da6-9e25-cd4dc43e81bb"
+    },
+    {
+      "claim_id": "2379963f-e369-4688-93fa-289b797751ab",
+      "result_id": "3014189c-771a-4da6-9e25-cd4dc43e81bb"
+    },
+    {
+      "claim_id": "7636ae05-28b8-4c64-a6a7-b575f7fcd547",
+      "result_id": "3014189c-771a-4da6-9e25-cd4dc43e81bb"
+    },
+    {
+      "claim_id": "b61fd675-7099-470d-aca0-a40398e8b1e2",
+      "result_id": "3014189c-771a-4da6-9e25-cd4dc43e81bb"
+    },
+    {
+      "claim_id": "03d1b363-5747-450a-9480-7e1140d12bd9",
+      "result_id": "3014189c-771a-4da6-9e25-cd4dc43e81bb"
+    },
+    {
+      "claim_id": "7151fea6-589f-4027-bab6-fb6d07aa5113",
+      "result_id": "3014189c-771a-4da6-9e25-cd4dc43e81bb"
+    },
+    {
+      "claim_id": "4ea48ff8-f838-4a26-aadb-d98f2f024db8",
+      "result_id": "181cf357-dcfc-446e-95d8-c2f053c0daab"
+    },
+    {
+      "claim_id": "437ffbee-6575-4a96-81c8-e029561c4baa",
+      "result_id": "181cf357-dcfc-446e-95d8-c2f053c0daab"
+    },
+    {
+      "claim_id": "2b8f32b0-ed74-4904-971e-30baedd43193",
+      "result_id": "181cf357-dcfc-446e-95d8-c2f053c0daab"
+    },
+    {
+      "claim_id": "62923cce-7c5c-4503-b1de-4d7cfe27f1a6",
+      "result_id": "181cf357-dcfc-446e-95d8-c2f053c0daab"
+    },
+    {
+      "claim_id": "8216b6b7-ba2a-4d27-b325-45d235857bfa",
+      "result_id": "181cf357-dcfc-446e-95d8-c2f053c0daab"
+    },
+    {
+      "claim_id": "c75ff941-6605-45a8-9849-aca307fc5af5",
+      "result_id": "2b80cfb1-2f99-46db-97d9-c0b4320b691b"
+    },
+    {
+      "claim_id": "9c448fa8-c462-46d1-a207-bcc133e72fa0",
+      "result_id": "2b80cfb1-2f99-46db-97d9-c0b4320b691b"
+    },
+    {
+      "claim_id": "6e8f48a8-2516-441a-bb3f-f894eec01075",
+      "result_id": "92a37ebe-6dd6-4d0a-bfb5-d68b9a44e239"
+    },
+    {
+      "claim_id": "21132a82-25df-4c01-b7b6-a9232c764135",
+      "result_id": "92a37ebe-6dd6-4d0a-bfb5-d68b9a44e239"
+    },
+    {
+      "claim_id": "6f2790c5-20a0-4d4c-a28f-4b2216cc3abd",
+      "result_id": "92a37ebe-6dd6-4d0a-bfb5-d68b9a44e239"
+    },
+    {
+      "claim_id": "30c37088-d20c-40d6-8a1b-528d1699d200",
+      "result_id": "92a37ebe-6dd6-4d0a-bfb5-d68b9a44e239"
+    },
+    {
+      "claim_id": "e2e80877-87de-492e-aceb-f32ab3fc2a1f",
+      "result_id": "92a37ebe-6dd6-4d0a-bfb5-d68b9a44e239"
+    },
+    {
+      "claim_id": "02f07065-272c-48cc-8de9-657f480ae7f6",
+      "result_id": "92a37ebe-6dd6-4d0a-bfb5-d68b9a44e239"
+    },
+    {
+      "claim_id": "7cabbe17-5634-4a3f-9a22-2adf0956bea6",
+      "result_id": "92a37ebe-6dd6-4d0a-bfb5-d68b9a44e239"
+    },
+    {
+      "claim_id": "dd23170b-7c17-4553-a930-687aebd6734f",
+      "result_id": "e302cf84-14f4-4e0c-8a6d-3b005193ba90"
+    },
+    {
+      "claim_id": "165c4049-622f-4a9f-a0fa-202bd0dadfd6",
+      "result_id": "e302cf84-14f4-4e0c-8a6d-3b005193ba90"
+    },
+    {
+      "claim_id": "a0dd4d05-86fd-4392-a1c1-6b8b919585cf",
+      "result_id": "e302cf84-14f4-4e0c-8a6d-3b005193ba90"
+    },
+    {
+      "claim_id": "9d71d1a1-cda3-408d-ad21-4ffcc004138b",
+      "result_id": "e302cf84-14f4-4e0c-8a6d-3b005193ba90"
+    },
+    {
+      "claim_id": "663887b7-edcb-447a-8708-a27aa5587d0b",
+      "result_id": "e302cf84-14f4-4e0c-8a6d-3b005193ba90"
+    },
+    {
+      "claim_id": "bedfed61-fabb-4503-ad92-f37726a0042f",
+      "result_id": "e302cf84-14f4-4e0c-8a6d-3b005193ba90"
+    },
+    {
+      "claim_id": "5fe8945c-7cae-45c4-b1eb-a471de44c2cd",
+      "result_id": "966b87b7-7217-45b3-ad9a-bc85aaf2940e"
+    },
+    {
+      "claim_id": "3ced0da9-d2cc-494b-947d-521eceb231d8",
+      "result_id": "966b87b7-7217-45b3-ad9a-bc85aaf2940e"
+    },
+    {
+      "claim_id": "17fee952-7416-4dc8-bfd9-586c0ddca874",
+      "result_id": "966b87b7-7217-45b3-ad9a-bc85aaf2940e"
+    },
+    {
+      "claim_id": "7408ccfd-9fb8-4dd8-940f-77fdfb33284b",
+      "result_id": "966b87b7-7217-45b3-ad9a-bc85aaf2940e"
+    },
+    {
+      "claim_id": "0b90e095-22ae-4330-98c4-8c7d99a3181f",
+      "result_id": "966b87b7-7217-45b3-ad9a-bc85aaf2940e"
+    },
+    {
+      "claim_id": "4a3e8f64-5c70-4819-9db8-82fbb8c0f0c9",
+      "result_id": "6e3ccbde-74fe-435c-ad2f-c9ec3b5b1dd7"
+    },
+    {
+      "claim_id": "f0b9aed3-d2fa-4f5a-bc39-7923a2d03cd7",
+      "result_id": "6e3ccbde-74fe-435c-ad2f-c9ec3b5b1dd7"
+    },
+    {
+      "claim_id": "01a3c367-d9bb-4e5e-8538-6fdcb15dfb71",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "bb94517e-a30d-4a3c-9d4b-34a007080305",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "f6167149-f2a9-470a-afe1-358235bdd625",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "249b20c2-8039-4bca-bdef-648f85b9974a",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "241ce359-e2d3-4e6d-bf67-fa949791a571",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "3e4a4b0d-49e5-4bba-b680-1388c8d85638",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "52b077fb-1627-42f1-bbee-51ff08c1c89e",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "0ffe05a6-9d9a-409a-9479-536a77517323",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "ac58fa1e-262d-49b1-ba07-364f9c19977c",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "4c790f65-b851-4920-8d02-029a58f9fa39",
+      "result_id": "b09e3c2a-d518-4a3a-9cd1-1065611977ab"
+    },
+    {
+      "claim_id": "0a854c28-dc20-4388-b3a6-bd205ffcdff6",
+      "result_id": "f46467c5-0bb9-4310-9742-0d3b999d38d7"
+    },
+    {
+      "claim_id": "018d3f2c-bae3-4098-a852-b1aecb7a3265",
+      "result_id": "f46467c5-0bb9-4310-9742-0d3b999d38d7"
+    },
+    {
+      "claim_id": "ea870ba2-436f-4729-8a40-a0d2f2cf566f",
+      "result_id": "f46467c5-0bb9-4310-9742-0d3b999d38d7"
+    },
+    {
+      "claim_id": "f5ba71ed-87d2-48f6-b588-8d270b610e9f",
+      "result_id": "f46467c5-0bb9-4310-9742-0d3b999d38d7"
+    },
+    {
+      "claim_id": "1bfcf839-3e1a-4958-bfde-9be55547bd92",
+      "result_id": "f46467c5-0bb9-4310-9742-0d3b999d38d7"
+    },
+    {
+      "claim_id": "78ff2b26-6647-48b7-80f6-7c7aaf76cd8f",
+      "result_id": "f46467c5-0bb9-4310-9742-0d3b999d38d7"
+    },
+    {
+      "claim_id": "f1cbb257-bd59-489f-ba36-dd4ec804bb9a",
+      "result_id": "2d34f568-1be6-4634-9fcc-967b95aeb7b2"
+    },
+    {
+      "claim_id": "4316c1c4-a46e-42ba-b81a-f5cfe544f3b1",
+      "result_id": "2d34f568-1be6-4634-9fcc-967b95aeb7b2"
+    },
+    {
+      "claim_id": "05f1ef17-a708-493e-93d3-d7f29bcc937b",
+      "result_id": "2d34f568-1be6-4634-9fcc-967b95aeb7b2"
+    },
+    {
+      "claim_id": "f316e977-233c-45ca-be34-c7fb8e5c6f28",
+      "result_id": "2d34f568-1be6-4634-9fcc-967b95aeb7b2"
+    },
+    {
+      "claim_id": "da243b65-4319-4648-842e-57da8a21db43",
+      "result_id": "99fd725d-7c87-40db-b6f1-95147135733c"
+    },
+    {
+      "claim_id": "779f0a7d-5b01-44f6-a136-07778b85dad2",
+      "result_id": "99fd725d-7c87-40db-b6f1-95147135733c"
+    }
+  ],
+  "comparisons": []
+}

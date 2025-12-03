@@ -1,0 +1,1906 @@
+{
+  "submission": {
+    "id": "d54949a2-1130-40ed-bb46-d9ab1fd5160e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T00:57:51.209972Z",
+    "updated_at": "2025-12-03T00:57:51.209972Z"
+  },
+  "content": [
+    {
+      "id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "submission_id": "d54949a2-1130-40ed-bb46-d9ab1fd5160e",
+      "content_type": "manuscript",
+      "content_text": "# A genome engineering resource to uncover principles of cellular organization and tissue architecture by lipid signaling\n\n## Authors\n\n- Deepti Trivedi<sup>1</sup> ([ORCID: 0000-0001-8105-0728](https://orcid.org/0000-0001-8105-0728))\n- Vinitha CM<sup>1</sup>\n- Karishma Bisht<sup>1</sup> ([ORCID: 0000-0002-9088-1141](https://orcid.org/0000-0002-9088-1141))\n- Vishnu Janardan<sup>1</sup>\n- Awadhesh Pandit<sup>1</sup>\n- Bishal Basak<sup>1</sup>\n- Shwetha H<sup>1</sup>\n- Navyashree Ramesh<sup>1</sup>\n- Padinjat Raghu<sup>1</sup> ([ORCID: 0000-0003-3578-6413](https://orcid.org/0000-0003-3578-6413)) \u2020\n\n### Affiliations\n\n1. National Centre for Biological Sciences-TIFR, GKVK Campus Bangalore India\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhosphoinositides (PI) are key regulators of cellular organization in eukaryotes and genes that tune PI signaling are implicated in human disease mechanisms. Biochemical analyses and studies in cultured cells have identified a large number of proteins that can mediate PI signaling. However, the role of such proteins in regulating cellular processes in vivo and development in metazoans remains to be understood. Here, we describe a set of CRISPR-based genome engineering tools that allow the manipulation of each of these proteins with spatial and temporal control during metazoan development. We demonstrate the use of these reagents to deplete a set of 103 proteins individually in the Drosophila eye and identify several new molecules that control eye development. Our work demonstrates the power of this resource in uncovering the molecular basis of tissue homeostasis during normal development and in human disease biology.\n\n## Introduction\n\nPhosphoinositides (PI) are low-abundance phospholipids implicated in the regulation of many important biological processes including cell polarity, cell migration, aging, growth, and development (Balla, 2013).\u00a0The head group of the parent lipid phosphatidylinositol can be phosphorylated combinatorially at positions 3, 4, and 5 to generate a set of seven PIs. These PIs are key regulators of subcellular processes; for example, phosphatidylinositol 4,5 bisphosphate [PI(4,5)P2] plays a key role in the regulation of membrane transport and the cytoskeleton (Janmey et al., 2018), whereas phosphatidylinositol three phosphate (PI3P) is an important regulator of endocytosis and autophagy (Schink et al., 2016). PIs have also been implicated in the regulation of nuclear function (Fiume et al., 2015). PIs also play a key role in regulating developmental processes in metazoans. For example, phosphatidylinositol 3,4,5 trisphosphate (PIP3) is an essential regulator of growth factor signaling and plays a conserved role in developmental control in C. elegans, Drosophila, and mammals (Engelman et al., 2006). Phosphatidylinositol four phosphate (PI4P) levels play a key role during cellular development in gametogenesis in Drosophila (Brill et al., 2000; Tan et al., 2014) and a conserved role for PI(4,5)P2 is proposed in apico-basal polarity (Devergne et al., 2014; Martin-Belmonte et al., 2007; Rousso et al., 2013; Yan et al., 2011). Dysregulation in PI signaling has also been linked to several human diseases; these include developmental disorders such as Lowe syndrome (Staiano et al., 2015) and PIK3CA-related overgrowth spectrum (PROS)(Madsen et al., 2018); mutations in PTEN, a key regulator of PIP3 levels are the second most frequent mutations seen in human cancers (Worby and Dixon, 2014). Mutations in genes regulating PI signaling are seen in a large number of genetic disorders of the human nervous system (Raghu et al., 2019). Thus, the PI signaling pathway is a key regulator of cell function and tissue architecture both during normal development and also in disease mechanisms and understanding their role in such processes is of fundamental importance.\n\nGiven their importance in a large number of important subcellular processes, PI signaling is tightly regulated. The seven PIs are generated in cells by the activity of a set of evolutionarily conserved lipid kinases that are specific for the substrate they will use, as well as the position on the inositol at which they will phosphorylate (Sasaki et al., 2009). In turn, once generated, PIs exert their cellular effects by binding to and modulating the activity of a large number of PI-binding proteins whose functions are key to the control of subcellular processes by these lipids. For example, many proteins contain domains that bind PI3P (PX and FYVE) and PI4P (FAPP and OSBP) and numerous PH domains that bind various PIs with differing degrees of affinity and selectivity have been reported (Hammond and Balla, 2015). Indeed, a recent biochemical study has identified a large number of proteins that bind a range of PIs with varying degrees of specificity (Jungmichel et al., 2014). However, the biological function of many of these proteins remains to be discovered.\n\nAlthough PI signaling is broadly a conserved feature of all eukaryotic cells, some aspects of this pathway are found uniquely in metazoa and play important roles in animal development and tissue architecture. However, there remain key challenges in the analysis of PI signaling in metazoan development. For example, PIs may regulate the same subcellular process (e.g endocytosis) but may be co-opted to control the trafficking of unique cargoes in different tissues. Second, through their ability to control the secretion of intercellular signaling morphogens and hormones that mediate intercellular signaling, PIs can regulate tissue development in a non-cell autonomous manner. Third, given their key functions in cell biology, whole body knockouts of these genes often result in organismal lethality. Finally, in many cases, a given biochemical activity is underpinned by multiple genes in mammalian genomes and gene redundancy usually makes analysis of in vivo function challenging.\n\nAnalysis in Drosophila offers a powerful alternative to overcome the challenges of studying PI function in cell and developmental processes. Many developmental mechanisms are conserved between Drosophila and other metazoan models. A detailed annotation of the PI signaling genes in the Drosophila genome (Balakrishnan et al., 2015) led to the identification of 103 genes which are part of the PI signaling toolkit (Figure 1) and conserved between flies and other organisms important for the study of developmental processes and disease biology. Further the availability of binary gene expression control systems such as the GAL4/UAS system allow for tight spatial and temporal gene modulation in turn allowing sophisticated analysis of both cell autonomous and non-cell autonomous modes of developmental control by PI signaling (Colombani et al., 2005).\u00a0Thus, Drosophila offers a model where one can analyze the control of cellular and developmental processes by PI signaling in a metazoan context.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55793/elife-55793-fig1-v2.jpg)\n\n**Figure 1.:** The metabolic pathway by which the different phosphorylated forms of phosphatidylinositol are interconverted is\u00a0represented. The kinase and phosphatase reactions are indicated by green and black arrows, respectively. The Drosophila gene encoding each of the enzymes responsible for these reactions are also indicated. Dotted lines indicate reactions that are yet to be established. The number of binding proteins (BPs) capable of binding each of the phosphoinositides are indicated in purple boxes.\n\nIn the recent years, CRISPR/Cas9 has emerged as a powerful tool for genome editing in multiple organisms including flies (Gratz et al., 2013; Wang et al., 2016; Wu et al., 2018). However, unlike transgenic fly lines expressing RNAi constructs that are available against almost the entire fly genome (Dietzl et al., 2007; Perkins et al., 2015), efforts to make guide RNA (gRNA) expressing transgenic flies are still underway (Meltzer et al., 2019; Port et al., 2020). In this study, we have generated a genome editing system that can be used for Cas9 mediated editing to delete the open-reading frame of each of the 103 annotated genes that could regulate PI signaling (Balakrishnan et al., 2015;\u00a0Supplementary file 1). We demonstrate the use of this resource both in cultured Drosophila cells as well as in intact Drosophila tissues in vivo during development. Importantly, we use these guides to generate both whole body knock outs as well as tissue specific, developmentally timed depletion of individual genes with high efficiency. Further, using these reagents we present the results of a genetic screen in the developing Drosophila eye and identify key roles for PI signaling in this influential model of tissue development and patterning. Our reagent set will be a powerful and versatile tool for the discovery of novel regulation by PI signaling of development, tissue homeostasis, and human disease biology (Supplementary file 1).\n\n## Results\n\n### Design of gRNAs for editing PI signaling genes\n\nIn designing the gRNAs to target each PI signaling gene, we considered a few important factors: Firstly, CRISPR-Cas9-based genome editing is highly robust and specific; a single mismatch in the target sequence may highly reduce the efficiency of CRISPR (Pattanayak et al., 2013), especially if the mismatches are present in the core 12 bp protospacer region most proximal to the protospacer adjacent motif (PAM) site. Second, a large number of users may find the library of these dual guide RNA (dgRNA) transgenic flies useful to study PI signaling in their own research contexts. This would mean that the dgRNA lines may be used in flies of different genetic backgrounds. Third, the same dgRNA constructs should be able to target the genes in S2R+ cells for editing prior to biochemical experiments. Considering these points, we decided not to directly use the reference genome sequence to design the gRNAs. The entire genome of S2R+ cells as well as the isogenized attP40 parent fly stock (BDSC 25709: y1 v1 P{y[+t7.7]=nos-phiC31\\int.NLS}X; P{y[+t7.7]=CaryP}attP40) that was to be used to generate dgRNA transgenic flies were sequenced (sequencing data is available for S2R+ cells on hyperlink and for isogenized attP40 stock on hyperlink). Sequences thus obtained were aligned against the reference genome and also against each other. When aligned against the reference genome, both the isogenized parent fly stock and the S2R+ cell genome sequences showed more than 600,000 single-nucleotide polymorphisms (SNPs) (Supplementary file 3, 4). When compared to each other, these genome sequences had\u00a0~1.3 million mismatches (SNP, insertions, and deletions) suggesting that, as expected, almost all the sequence differences in the two genomes were independent of each other (Supplementary file 3, 4). While designing the single gRNA (sgRNA), we only chose those targets that did not have sequence mismatches in any of the three genomes (reference genome and the two genomes sequenced) thus ensuring that the dgRNAs could be used in flies of diverse genetic backgrounds and also in S2R+ cells. Finally, the designed gRNAs were matched to recently added genomic sequences of reference genome r_6, vasa-Cas9 (BDSC 51324: w1118; PBac{vas-Cas9}VK00027), nos-Cas9 II (BDSC 78781: y1 sc* v1 sev21; P{nos-Cas9.R}attP40) and nos-Cas9 III (BDSC 78782: y1 sc* v1 sev21; P{nos-Cas9.R}attP2). Only 1 gRNA target (targeting CG10426), out of the 206 generated, seemed to have one base mismatch marked in red (Supplementary file 1), while the other 205 targets matched between all the genomes. These gRNA can hence be used in many genetic backgrounds. This allowed for a relatively simple way to test the designed dgRNAs in S2R+ cells for their ability to target specific genes prior to generating transgenic fly lines.\n\nFor each gene, two regions were identified wherein an sgRNA would be designed to target each region. The first sgRNA would be designed to target the first coding exon and the second sgRNA to target the exon with the stop codon (Figure 2). In case of genes with alternate spliced forms, regions around the most 5\u2019 start codon and the most 3\u2019 stop codon were chosen (For example, CG3682 has upto six splice variants with four putative start sites). In cases where two or more putative genes are annotated on the same locus, sgRNA target regions were chosen such that the coding sequences of neighboring genes are not disrupted (for example, there are six different putative ORFs in the first few introns of plc21c and hence the first sgRNA is designed on exon 8). Once a set of two\u00a0~\u00a0100 bp regions were identified for each gene keeping in mind the above-mentioned criteria, we designed the sgRNAs using an online tool (http://targetfinder.flycrispr.neuro.brown.edu) with zero predicted off-targets. During the course of this study, an additional online tool (https://www.flyrnai.org/evaluateCrispr/) became available. Thereafter, this tool was used to obtain a predicted efficiency score. The most efficient sgRNAs in the region were then checked in our sequence database for presence of any mismatches in either S2R+ cells or injection fly stocks compared to the reference genome sequence. The best sgRNA sequences predicted to efficiently target specific genes with no predicted off-targets and absence of any mismatches were chosen for synthesis. Any sgRNA sequences that did not qualify these criteria were discarded and new sgRNAs designed to fit all the above criteria. A full list of genes for which dgRNAs were designed is listed in Supplementary file 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55793/elife-55793-fig2-v2.jpg)\n\n**Figure 2.:** (A) Workflow for the generation of dgRNA transgenic flies.\u00a0For each of the 103 PI signaling genes in the Drosophila genome, two gRNAs were designed using flyCRISPR and verified using the CRISPR Efficiency Prediction Tool (DRSC). The first gRNA (gRNA 1; indicated in blue) was designed to target the first coding exon and the second gRNA (gRNA 2; indicated in green) was designed to target the last coding exon. It was ensured that these designed gRNAs did not have any mismatches when compared against any of the three genomes (the genomes of Drosophila BL25709 line used for microinjection, S2R+ cells and the reference genome). The two gRNAs (gRNA one and gRNA 2) for each gene were cloned into pBFv6.2 and pBFv6.2B, respectively, and tested in S2R+ cells for their ability to delete the target genes in the presence of Cas9. Following this, both the gRNAs for each gene were cloned into a single plasmid to generate the dgRNA constructs. These were microinjected into Drosophila embryos to generate dgRNA transgenic flies against each of the PI-signaling genes. (B) Western blot from protein lysates of 3rd instar larvae from wild type and ocrlKO. The OCRL polypeptide of the expected Mr of ca. 100 kDa is completely absent in ocrlKO lysates. Protein levels of Actin are used as the loading control. OCRL antibody used here has been described in Del Signore et al., 2017. (C) Immunolabeling of pericardial nephrocytes from 3rd instar larvae to examine the distribution of the OCRL protein. As expected, the OCRL protein (magenta) is seen in punctate structures throughout the cell body. This staining is completely absent in ocrlKO animals. The experiment was repeated three times and multiple animals examined in each case. A single nephrocyte is shown for illustrative purposes. (D) PCR analysis demonstrating the 555 bp band detected when ocrl is edited by these dgRNAs is shown. For nephrocyte-specific deletion, third instar larvae were dissected and the body wall (including heart tube and nephrocytes) was used for the DNA preparation. As a positive control,\u00a0the germ line ocrlKO larval lysates were used. CG7004(fwd) is used as a control gene for the quality and quantity of the DNA prep. The 555 bp diagnostic band is seen in the ocrl KO and nephrocyte-specific knockout DNA but not in wild-type flies and in NTC (no template control). (E) Immunostaining of nephrocytes in nephrocyte-specific knockout of ocrl. A single nephrocyte is shown. Green channel shows the GFP generated from the Cas9-eGFP transgene. Magneta channel shows immunolabeling with the OCRL antibody. Nucleus is stained with DAPI. There is no detectable signal for OCRL in the nephrocytes of nephrocyte specific knockout animals; the experiment was repeated twice and 24 individual nephrocytes images from multiple animals.\n\n### Generation of gRNA expression constructs\n\nThe first sgRNAs targeting a region close to the start codon for each gene were cloned into the pBFv6.2 vector and the second sgRNAs targeting a region close to the stop codon into the pBFv6.2B vector (see Materials and methods for details). Both these vectors ubiquitously express the gRNAs under the U6.2 promoter (Kondo and Ueda, 2013). The two sgRNA constructs targeting a given gene along with hsp70-Cas9 were co-transfected into S2R+ cells. The sgRNA pairs that led to the deletion of the gene, as tested by PCR and sequencing of the target gene loci, were chosen for dual-gRNA (dgRNA) construction. In case a particular pair of sgRNAs failed to delete the target gene, a new set of sgRNAs were designed for both the first and the last coding exon and different combinations of sgRNAs were tested until the most optimal pair capable of deleting the target gene was identified.\n\nOnce a functional pair of sgRNAs capable of deleting a target gene was identified, the first sgRNA was cloned into the pBFv6.2B vector containing the second sgRNA to generate the dgRNA construct (See Materials and methods for details). These constructs were then microinjected to generate dgRNA transgenic flies for each of the 103 PI signaling genes (Figure 2A). This dgRNA construct can also be transfected in S2R+ cells to generate gene deletions for cell culture-based experiments. For genes that are present on the second chromosome, the dgRNA construct was inserted on the third chromosome (Supplementary file 1). For all the other genes, the dgRNA was inserted on the second chromosome (See Materials and methods). This design offers the advantage that when used to generate whole fly knockouts, the dgRNA transgenes can subsequently be readily out-crossed given that the gRNA and the target gene are on two different chromosomes. Once generated, all the dgRNA transgenics were crossed to Act5c-Cas9 (BDSC 54590: y1 M{Act5C-Cas9.P}ZH-2A w*) flies and larval progeny were tested for deletions by PCR and sequencing. Out of 103 genes, 102 gave the desired deletion product, while one did not give a band of the expected length (Supplementary file 1). This could be either because this gRNA pair is not functional in flies, or the PCR or deletions were of low efficiency.\n\nTo test whether protein levels were reduced significantly when the target locus was removed, we stained larval nephrocytes with an antibody to the OCRL protein (Del Signore et al., 2017). To test the specificity of the antibody, we used a null germline mutant of ocrl (ocrlKO) generated in this study (see sections below) that removes the open-reading frame of ocrl. In western blots from wild-type animals, a band of 97 kDa was detected that was absent in ocrlKO (Figure 2B). Immunocytochemistry of larval nephrocytes revealed punctate staining throughout the cell body that was completely absent in nephrocytes of ocrlKO (Figure 2C). We used transgenic flies expressing the guides used to generate ocrlKO but the Cas9, was expressed only in nephrocytes using Dot Gal4. The expression of Cas9 protein was verified by visualizing GFP fluorescence (described in section below) in nephrocytes (Figure 2E) and the deletion of ocrl was verified using primers that specifically detect the deletion product. We obtained an amplicon of 555 bp confirming the deletion of ocrl in nephrocytes (Figure 2D); no deletion band was found in control animals, confirming nephrocyte-specific deletion of ocrl. Immunolabeling with an antibody to OCRL confirmed the absence of staining for this protein in the nephrocytes of these larvae with nephrocyte-specific deletion of ocrl (Figure 2E).\n\n### Generation of UAS-Cas9 -T2A-eGFP transgenic lines\n\nAt the core of CRISPR/Cas9 technology is the endonuclease Cas9 which utilizes gRNAs to target specific genomic sequences and generate a double-stranded break. Transgenic flies expressing Cas9 under UAS control are already available (Port et al., 2020). However, these lack a reporter and therefore it is difficult to readily identify cells or tissues expressing Cas9, which would be of great advantage when targeting genes in a tissue-specific manner. In order to satisfy this requirement, we designed and generated transgenic UAS-Cas9 flies with a fluorescence reporter eGFP. Given that the human codon optimized Cas9 (Cas9.P2) expresses at lower levels thereby reducing the cytotoxic effects of the otherwise highly expressing Cas9.C (Meltzer et al., 2019), we have used Cas9.P2 to generate our construct. In order to ensure that the presence of an eGFP tag does not hinder the activity of Cas9, we introduced a self-cleaving peptide T2A sequence in between Cas9 and eGFP (Figure 3A). This ensured that while the Cas9 and eGFP are expressed from the same mRNA, they are made as two independent proteins. Presence of the eGFP coding sequence downstream of Cas9 ensured that every cell positive for eGFP fluorescence would definitely also express Cas9. In addition, we tagged the Cas9 with a nuclear localization signal (NLS) at both the N- and the C-terminal to facilitate its translocation into the nucleus for better access of the genomic DNA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55793/elife-55793-fig3-v2.jpg)\n\n**Figure 3.:** (A) A schematic of the Cas9-T2A-eGFP transgene indicating the presence of a nuclear localization signal (NLS-blue box) at the N and C termini of Cas9; Cas9 is shaded in pink. An eGFP sequence (green) is present downstream of the Cas9 sequence and these two are separated by the T2A sequence (T2A white box). (B) Western blot of S2R+ cells expressing Cas9-T2A-eGFP. S2R+ cells constitutively expressing Tubulin Gal4 were transiently transfected with the indicated plasmids. Cells were harvested 48 hr after transfection and one half of the cells were subjected to western blot analysis to verify that the T2A sequence was efficient and therefore resulted in expression of Cas9 and eGFP as independent proteins. The expected molecular size of Cas9 is 158 kD (the band of highest intensity indicated with a \u2018*\u2019). Note that the Cas9 antibody cross-reacts with a protein from S2R+ cells (\u2018#\u2019) thereby precluding immunocytochemical detection of Cas9 in S2R+ cells. (C) Genomic PCR was performed on the other half of the cells to test for the ability of Cas9 to target CG5734. The presence of a 358 bp band in cells expressing Cas9 compared to the 1739 bp band in untransfected cells suggests the successful deletion of CG5734. (D) UAS-Cas9-T2A-eGFP transgenic flies generated were crossed to AB1-Gal4 flies and the salivary glands of the progeny dissected and stained using Cas9 antibody (1:200). Cas9 (grayscale) was predominantly localized in the nucleus suggesting efficient nuclear localization by the NLS. Cells expressing Cas9 were marked by eGFP. Scale bar is 50 \u03bcm.\n\nThe UAS-Cas9-T2A-eGFP construct thus generated was tested for its genome editing efficiency and the usefulness of eGFP as a reporter. To test the Cas9, the UAS-Cas9-T2A-eGFP construct was transfected along with the dgRNA against CG5734 (a gene predicted to have a PH domain that may bind to PI3P) into S2R+ cells constitutively expressing Tubulin-Gal4. As a control, the cells were parallelly co-transfected with the pBS-hsp70-Cas9 plasmid (Addgene Plasmid #46294) and the dgRNA against CG5734. Forty-eight hours post-transfection the cells were harvested. Half the cells were used for protein extraction and western blotting. Western blotting showed that Cas9 was being expressed from the UAS-Cas9-T2A-eGFP construct. The molecular size of Cas9 from this construct was similar to Cas9 expressed from pBS-hsp70-Cas9. Detection of a band corresponding to the molecular weight of free eGFP in cells transfected with UAS-Cas9-T2A-eGFP suggested that the T2A sequence was working efficiently to generate Cas9 and eGFP as two independent proteins from a single mRNA (Figure 3B). From the other half of the cells, genomic DNA was isolated and PCR performed to detect deletions in CG5734. We found the predicted deletion fragment generated by both the Cas9 from the newly generated UAS-Cas9-T2A-eGFP plasmid and the Cas9 expressed from the pBS-hsp70-Cas9 control plasmid (Figure 3C) thus verifying that Cas9 expressed from the UAS-Cas9-T2A-eGFP construct was capable of deleting target genes in the presence of appropriate gRNAs.\n\nAfter verification in S2R+ cells, the UAS-Cas9-T2A-eGFP construct was microinjected into fly embryos along with a helper plasmid expressing transposase to facilitate random P-element-based insertion and obtain transgenic flies. In order to verify that the fly line obtained expresses Cas9, we crossed these lines to salivary-gland-specific Gal4 (AB1-Gal4) flies. The progeny flies were dissected, salivary glands stained for Cas9 and imaged. All salivary gland cells expressed eGFP and were also stained positive for Cas9 thus demonstrating that the UAS-Cas9-T2A-eGFP construct can be used as expected to drive Cas9 expression and to mark the Cas9-expressing cells with eGFP (Figure 3D). The eGFP localization was predominantly nuclear although some cytosolic localization could be observed. Cas9 did not have the same intracellular localization thus suggesting that the T2A sequence was functional and that the two proteins, Cas9 and eGFP were being expressed as independent proteins. Owing to the NLSs attached to the Cas9, its expression was limited to the nucleus. The UAS-Cas9-T2A-eGFP flies showed Cas9 expression similar to the already existing Cas9 transgenic flies (BDSC 54592: P{ry[+t7.2]=hsFLP}1, y1 w1118; P{y[+t7.7] w[+mC]=UAS-Cas9.P}attP2/TM6B, Tb1) with the added advantage of eGFP expression to mark Cas9-expressing cells. These UAS-Cas9-T2A-eGFP flies were used for all experiments described further.\n\n### Investigating the role of PI signaling in eye development using the dgRNA toolkit\n\nThe Drosophila eye serves as an excellent model to perform genetic screens as it is not essential for viability and offers a phenotype that can be easily scored. Previously, influential studies have used Drosophila eyes to screen for genes regulating cell growth and proliferation [reviewed in Tseng and Hariharan, 2002]. The Drosophila eye is composed of\u00a0~800 regularly arranged ommatidia, each containing eight photoreceptor neurons making the Drosophila eye an attractive tissue to study neurodegenerative diseases like Huntington\u2019s disease (Krench and Littleton, 2013) and screen for genes and genetic modifiers involved in neural development (Ma et al., 2009). Moreover, photoreceptor neurons are an excellent model for phototransduction which in flies is largely dependent on PI signaling (Raghu et al., 2012) and dysregulation of PI signaling leads to defects in the development, cellular structure and functions of the eye.\n\nTo test the use of our dgRNA transgenic library, we studied the effect of deletion of PI signaling genes in the eye disc during development by expressing Cas9-T2A-eGFP using eyeless-Gal4 (eyGal4). eyeless (ey) is expressed very early on in the eye primordia in the embryo and before the formation of the morphogenetic furrow at the time of photoreceptor determination in the third instar larva (Halder et al., 1995). In addition, ey is also expressed in neurons (Callaerts et al., 2001). To delete target genes in a tissue specific manner we generated ey-Gal4; UAS-Cas9-T2A-eGFP flies and crossed them individually to each of the 103 dgRNA transgenic lines. Although we know that these gRNAs are functional in flies (as seen by PCR and sequencing in gRNAs crossed to Act5c-Cas9- Supplementary file 1), we wanted to confirm whether the gRNAs were functional in the eye specific context. Hence, prior to analyzing the phenotypes obtained in the progeny of these crosses, we tested whether the gene under study was being edited in a tissue-specific manner. For this, we isolated genomic DNA from the head and the body of a few representative ey\u00a0>GAL4; UAS- Cas9-T2A-eGFP; dgRNA flies and performed a PCR to detect the expected genomic deletion. Expected genomic deletions were identified in DNA obtained from fly heads but not in DNA obtained from the fly body suggesting tissue (eye)-specific gene deletion using our newly generated reagents (Figure 4A). This suggested that the UAS-Cas9-T2A-eGFP was indeed under the control of eyGal4 and had minimal or no influence from other genetic elements despite being generated by random P-element insertion. In most cases, no wild-type band was obtained where gRNA was used (Figure 4A), either because the mutation was highly efficient, or more likely because the smaller PCR products are more likely to be amplified. This is consistent with absence of WT bands seen in the mosaic F1 progeny from cross between Act5c-Cas9 and Dp110dgRNA (Figure 4\u2014figure supplement 1). However, we did get a small amount of wild-type products in some cases (Figure 4\u2014figure supplement 1 - clc).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55793/elife-55793-fig4-v2.jpg)\n\n**Figure 4.:** (A) Genomic PCR of CG5734 as a representative example to show that tissue specific gene deletion can be obtained by driving UAS-Cas9-T2A-eGFP specifically in the eyes using eyGal4 in the presence of ubiquitously expressing dgRNAs. An amplicon corresponding to CG5734 deletion (See Supplementary file 1) was obtained in DNA extracted from fly heads (\u2018H\u2019) of the appropriate genotype indicated but not in DNA extracted from the bodies (\u2018B\u2019) of the fly. (B) Representative images of phenotypes observed upon eye specific CRISPR mediated deletion of a few PI kinases \u2013 Dp110, Vps34 and sktl. (C)\u00a0Representative images of phenotypes observed upon eye-specific CRISPR-mediated deletion of two PI phosphatases \u2013 Pten and Sac1. (D) Representative images of phenotypes observed upon eye-specific CRISPR-mediated deletion of PI binding proteins Abl and Clc. (E) Nub-Gal4;UAS-Cas9 flies (BDSC 67086: w*; P{GawB}nubbin-AC-62; P{UAS-Cas9.P2}attP2) were crossed to different genotypes and clipped wings of the progeny were imaged. Number of flies inspected per genotype is given in parenthesis: Nub-Gal4/+;UAS-Cas9/+ (17), PtendgRNA/Nub-Gal4;UAS-Cas9/+ (15), Dp110dgRNA/Nub-Gal4;UAS-Cas9/+ (6) and aktdgRNA/Nub-Gal4;UAS-Cas9/+ (12).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55793/elife-55793-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Genomic PCR of Pi3K92E (Dp110) as an example to show that when comparatively larger genomic regions are deleted (in this case\u00a0~4 Kb- See Supplementary file 1), only the mutant band is amplified by the genomic PCR. Position of the expected wild-type band shown in green and mutant band in magenta. (B) When a similar experiment is done for clc gene, where the expected WT PCR product is smaller (~1 kb- see Supplementary file 1), it is amplified by PCR along with the deletion product. Position of the expected wild type band shown in green and mutant band in magenta. In both the cases, deletion was obtained by crossing Act5c-Cas9 with transgenic lines ubiquitously expressing dgRNAs.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55793/elife-55793-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Genomic PCR is done using heads of the flies from appropriate genotypes as indicated. dgRNA targeting synj and rdgB were chosen as examples of genes that did not show expected phenotypes, while dgRNA targeting Pten and Pi3K92E (Dp110) were chosen as examples of genes that showed phenotypes when expressed in tissue-specific manner using ey-Gal4;UAS-Cas9-T2A-eGFP. Expected deletion band size are seen in heads of deletion genotype as indicated in parenthesis. Expected larger sized wild-type bands are missing in controls because of large size of the genomic region (Primers used are listed in Supplementary file 2).\n\nThe eyes of progeny flies from each of the crosses between ey-Gal4; UAS-Cas9-T2A-eGFP and the 103 dgRNA transgenic lines were imaged with appropriate controls. A spectrum of phenotypes was obtained ranging from smaller eyes as in the case of Dp110 [Figure 4B (i)], presence of necrotic patches like with Vps34 [Figure 4B (ii)] and larger eyes when Pten was knocked out [Figure 4C (i)]. Sac1 knockout led to smaller eyes that were crumbled [Figure 4C (ii)]. CRISPR-mediated knockout of PI binding proteins Abl [Figure 4D (i)] and Clc [Figure 4D (ii)] resulted in an irregular arrangement of ommatidia giving a rough appearance to the eyes. This suggested possible different roles for these proteins during eye development. In some cases, For\u00a0example skittles [Figure 4B (iii)], eye morphology was comparable to the control flies with no visible morphological differences. To confirm that the lack of phenotype was not due to lower efficiency of deletion at the target locus, we performed deletion PCR for representative target loci where either a phenotype was observed or not observed (Figure 4\u2014figure supplement 2). It was observed that target locus deletion was seen irrespective of presence or absence of phenotype. Thus, the absence of a phenotype when some genes are deleted is not a consequence of the lack of a deletion; rather these may be examples where the protein pre-existing in the precursor cells perdures despite the gene being subsequently deleted. The details of all the 103 genes and phenotypes obtained have been listed in Supplementary file 1. In addition to studies in the developing eye, we also deleted a subset of genes that gave strong phenotypes in the eye in the developing wing disc using the domain-specific nub-GAL4. Deletions of Pten, Dp110 and akt all resulted in the changes in wing size and morphology that were consistent with the known role of these genes (Figure 4E). Thus, deletion of Pten resulted in a wing blade larger than that of controls while deletion of Dp110 and akt both resulted in a reduction in the size of the wing blade.\n\nDeletion of Class I PI3K (Dp110), that converts PI(4,5)P2 to PI(3,4,5)P3 resulted in smaller eyes compared to controls. This is in agreement with a number of studies that have established the importance of PI3K for cell growth (Goberdhan et al., 1999; Weinkove et al., 1999). In order to compare the efficiency of using CRISPR-based knockout versus RNAi-mediated knockdown when studying tissue-specific phenotypes, we expressed the Dp110dgRNA and two different Dp110RNAi lines in the Drosophila eye using eyGal4. All three of these resulted in reduced size of the eye. While the RNAi-mediated knockdown resulted in\u00a0~40% reduction [Figure 5A (ii) and (iii) and C] compared to controls [Figure 5A (i)], dgRNA mediated Dp110 knockout showed a stronger phenotype with eyes\u00a0~\u00a075% smaller [Figure 5B (ii) and C] than appropriate controls [Figure 5B (i)] thus demonstrating that these dgRNAs serve as efficient tools to study tissue-specific roles of genes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55793/elife-55793-fig5-v2.jpg)\n\n**Figure 5.:** (A) Knockdown of Dp110 results in smaller eyes compared to control eyes as seen with two different RNAi lines (Dp110RNAi #1: BDSC 61182 and Dp110RNAi #2: BDSC 27690). (B) CRISPR mediated Dp110 knockout phenocopies RNAi mediated Dp110 knockdown and results in smaller eyes compared to control eyes. However, the phenotype observed with the use of CRISPR to target Dp110 is more severe compared to the phenotype seen with either of the RNAi lines. CRISPR-mediated Pten deletion results in eyes larger than control eyes. When both Dp110 and Pten are targeted simultaneously, the size of the eyes are intermediate between the small eyes seen with Dp110 deletion and the large eyes seen with Pten deletion. (C) Quantifications of the phenotypes shown in A and B. Each data point is an individual eye. Each point on Y-axis represents area of eye\u00a0\u00b1\u00a0s.e.m. (p values are indicated on the graph, ns\u00a0=\u00a0not significant; one-way ANOVA with Tukey\u2019s multiple comparison test).\n\n### Targeting multiple genes using dgRNAs to study genetic interaction in specific tissues\n\nUnderstanding genetic interactions is an important approach to establish the molecular pathways underpinning any given biological process. In order to demonstrate that the dgRNA library can be used to target multiple genes simultaneously in a tissue-specific manner, we took advantage of the reversible nature of the PIP2 to PIP3 conversion by enzymes Dp110 and Pten. Class I PI3K (encoded by Dp110) phosphorylates PIP2 to generate PIP3 while the lipid phosphatase PTEN (encoded by Pten) dephosphorylates PIP3 to generate PIP2. We generated a strain containing both Dp110dgRNA and PtendgRNA and crossed it to ey-Gal4; UAS-Cas9-T2A-eGFP flies. Disruption of Pten was able to rescue the phenotype of the disruption of Dp110 and vice versa. The eyes of the Dp110, Pten double knockout flies were intermediate in size [Figure 5B (iv) and C] compared to the small eyes of the Dp110 knockout [Figure 5B (ii)] and the large eyes of the Pten knockout flies (Figure 5B (iii) and C). However, the eyes of these double mutant flies were smaller compared to control flies possibly because the Dp110dgRNA was more efficient than the PtendgRNA resulting in a greater reduction of PIP3 levels.\n\nThe fact that multiple genes can be targeted simultaneously in a tissue-specific manner using CRISPR/Cas9 technology is of great advantage. Traditionally, genetic interactions have been studied by generation of double mutants through meiotic recombination. However, this may not be a viable option in many cases wherein the genes being studied lead to organismal lethality when disrupted or when the genetic loci of the two genes being studied are very close thereby drastically reducing the recombination efficiency between these genes. In fact, several genes involved in the PI signaling cascade are clustered together on different chromosomes. Our dgRNA transgenic fly library offers an opportunity to generate tissue-specific double knockouts independent of the proximity of these genes.\n\n### Generation of whole fly knockouts using dgRNA transgenics\n\nRDGB (retinal degeneration B) is a PI transfer protein (encoded by rdgB), depletion of which leads to light-dependent phototransduction defects (Yadav et al., 2015). Whole body mutants of rdgB are viable with no morphological defects in the eye (Yadav et al., 2015), although electrical recordings (ERG) from the eye of rdgB mutants show reduced amplitude. In order to rule out the possibility that the rdgBdgRNA was non-functional in developing eye discs, we crossed the same rdgBdgRNA transgenic flies to nanos-Cas9 to generate a complete germline knockout of rdgB (Figure 6A). ERG recordings from this germline knockout of rdgB generated using CRISPR/Cas9 was comparable to rdgB2 (Figure 6B), an amorphic allele generated by chemical mutagenesis in the Benzer lab (Harris and Stark, 1977). In a similar manner, using the dgRNA transgenic flies, we generated germline knockouts of several additional genes (total 48 genes) by crossing them to either nanos, vasa or Act5c-Cas9 flies (Supplementary file 1). Several gRNAs when crossed to Act5c-Cas9 or vasa-Cas9 flies showed pupal lethality and hence were then crossed to nanos-Cas9 flies. The deletions obtained in this manner are highly efficient between 4\u00a0and\u00a0100% efficiency in F1 flies and between 3\u201370% efficiency in F2 flies (absolute values provided in Supplementary file 1) in generating germline knockouts with deletions ranging in size between 400 bp and 38 kb. For a few genes (13 genes), we were unable to generate germline deletions despite repeated attempts in some cases possibly due to their essential roles in gametogenesis or embryogenesis.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55793/elife-55793-fig6-v2.jpg)\n\n**Figure 6.:** The PI transfer protein RDGB (retinal degeneration B) is a good example to demonstrate the need for whole fly knockouts. (A) Western blot analysis showed that eye-specific Cas9 expression was not sufficient to knockout rdgB and detectable levels of RDGB protein was still present. (B) The mean amplitude from ERG recordings of these flies was the same as control flies. Each data point on the graph is recording from an individual eye. Each point on Y-axis represents mean amplitude\u00a0\u00b1\u00a0s.e.m. (*** - p<0.001, ns\u00a0=\u00a0not significant; two tailed unpaired t-test). (C) The same dgRNA flies were used to generate a whole fly rdgB deletion (rdgBCRISPR KO) and western blot analysis showed a complete loss of RDGB similar to the rdgB2 null mutant flies. (D) Both rdgB2 and rdgBCRISPR KO flies showed complete loss of ERG amplitudes as expected. Each point on Y-axis represents mean amplitude\u00a0\u00b1\u00a0s.e.m. (*** - p<0.001, ns\u00a0=\u00a0not significant; two tailed unpaired t-test).\n\n### Anomalous behavior of the Cas9 deletion system\n\nWe crossed the rdgBdgRNA flies with ey-Gal4;UAS-Cas9-T2A-eGFP flies. The progeny were collected and their ERG recorded. In contrast to the rdgB2 allele and the germline rdgB knockout generated in this study (see previous section), we observed no reduction in ERG amplitude compared to wild-type flies (Figure 6D). Although PCR analysis of these eyes confirmed the occurrence of deletion events, western blot analysis from heads of rdgBdgRNA, ey-Gal4;UAS-Cas9-T2A-eGFP flies revealed that the RDGB protein was still present in these eyes (Figure 6C), thus explaining the normal ERG amplitude observed. This finding implies that although rdgBdgRNA worked efficiently to generate germline deletions, it was not effective in tissue-specific depletion of RDGB protein levels. The reasons for this are not entirely clear. We speculate that RDGB is a protein with a long half-life and therefore despite efficient targeting of rdgB locus by the dgRNA in the eyes, the protein levels are not affected. However, it is also possible that the deletion of rdgB was not homogeneous in all eye precursor cells where Cas9 was expressed using ey-Gal4; residual photoreceptors with normal rdgB might be sufficient to generate a normal light response.\n\nskittles (sktl) is a PI4P 5-kinase known to have a role during larval development (Hassan et al., 1998). Mutations in sktl are organismal lethal as well as cell lethal. Hence, we expected a strong phenotype when the sktl locus was deleted in eye discs using ey-Gal4. However, when sgRNA or dgRNA targeting sktl was used, we did not see any morphological phenotype in the eye [Figure 4B (iii)]. One possible reason for this could be that the sktl gRNAs was non-functional in eye discs, although they had worked well, being able to delete sktl in S2R+ cells. In order to test this, we crossed sktl sgRNA to nanos-Cas9 flies. From this cross, heterozygous F2 progeny were collected and their skittles genomic locus sequenced. Out of the 141 F2 flies sequenced, 132 showed in-frame indels with an intact kinase domain, with the largest deletion being 24 bp. This suggests that the sktl sgRNA were highly efficient at targeting sktl but only cells with at least a partially functional protein managed to survive during eye development and therefore appeared morphologically normal.\n\n## Discussion\n\nPatterning tissue architecture during metazoan development or the systemic control of animal physiology are complex processes and typically involves the function of genes acting in both cell-autonomous and non-cell autonomous modes. Identifying novel genes regulating these processes and uncovering their mode of action is facilitated by the ability to inactivate genes in specific cell types, tissue domains or organs with spatial and temporal precision. Such controlled inactivation can be achieved through the use of gene manipulation systems expressed with spatial and temporal precision using the GAL4/UAS system (Brand and Perrimon, 1993) and this approach has been coupled previously with methods to deplete specific RNAs to study their role in development and physiology (Reim et al., 2014). In this study, we present the use of the GAL4/UAS module for gene inactivation by using the CRISPR/Cas9 gene editing system. By expressing Cas9 with spatial and temporal precision using the GAL4/UAS system we were able to selectively inactivate genes in early precursor cells of the eye imaginal disc and thus uncover functions of the PI signaling system in the growth and patterning of the Drosophila eye. Using this method, we uncovered the function of 30 PI signaling genes in eye development and nine genes previously not implicated in this process. Our study identified phenotypes for genes such as Dp110 and Pten that are previously described using either classical mutant alleles or using RNAi mediated depletion. However, the tool kit presented here includes reagents for editing ca. 72 PI binding proteins. While these have been described by in vitro protein biochemistry studies or predicted from structural bioinformatics, their function in vivo and their role in cell and developmental biology remains to be explored. Indeed, this resource can be used in almost any tissue or cell type in Drosophila that can be chosen for analysis, perhaps on the basis of their expression pattern or other relevant criteria. With this mind, we tested the ability of the dgRNAs in various tissues and found that any given dgRNA was able to generate deletions in diverse tissues such as the eye, wing and the germ line. Other groups have also recognized the potential of CRISPR-based mutagenesis to perform tissue specific screens in Drosophila and are generating gRNA transgenic fly libraries. While some studies have focussed on transcription factors, protein kinases, protein phosphatases and genes implicated in human pathologies (Port et al., 2020), others have embarked on generating large-scale libraries with no special focus on any particular group of genes (Meltzer et al., 2019). Our study, however, represents the first comprehensive resource of editing tools that will allow a systems level analysis of PI signaling, a pathway of fundamental importance for cellular organization, tissue development, and architecture.\n\nThe system we have developed includes a number of innovative features. In the study of cell-cell interactions in development, it is desirable and indeed essential to mark the cell types in which gene manipulation is being performed. To facilitate this, we have designed an UAS-Cas9-T2A-eGFP construct which provides many advantages: (i) All cells expressing Cas9 also express eGFP thus marking cells guaranteed to express Cas9. The expression of eGFP from this construct is a definite readout of Cas9 expression unlike the expression of eGFP from an independent UAS-eGFP transgene. (ii) Since Cas9 and eGFP are expressed as independent proteins, the possibility of a Cas9 fusion protein with reduced function is eliminated. (iii) The UAS-Cas9-T2A-eGFP presented here avoids the need for two independent genetic elements to express both Cas9 and eGFP thus reducing the complexity of strain construction. (iv) The use of Cas9 with an NLS ensures that the protein is nuclear localized maximizing the probability of gene editing activity. Thus, our system offers the ability to generate groups of gene-edited cells/tissue with high-efficiency that are guaranteed to be marked by eGFP expression.\n\nThe genetic strategy for CRISPR/Cas9 editing presented here enhances the number of genetic elements that can be brought together in a single fly and allow for CRISPR based reagents to be used in innovative ways. For example, in addition to the basic eye development screen presented here as an illustrative example, Cas9 can be expressed in a mosaic fashion under the control of the Gal4/UAS system using the CoinFLP method (Bosch et al., 2015). This would allow for the generation of CRISPR edited mosaic clones useful for studying cell-cell interactions including cell competition that are integral elements of tissue development. Indeed, a recent study has presented evidence of a role of some genes involved in PI signaling as regulators of cell competition during eye development (Janardan et al., 2020) and the expanded repertoire of editing reagents generated during this study will allow the mechanism by which PI signaling regulates cell competition to be analysed in greater detail.\n\nRecent studies have used the approach of having two sgRNAs both targeting the coding region immediately downstream of the start codon with the expectation of maximizing the likelihood of a frameshift mutation to achieve loss of function (Port et al., 2020). By contrast, we have taken a slightly different approach of using two sgRNAs, one located near the start codon and the other near the stop codon thus generating a deletion of the full open-reading frame post-editing. Even if only the gRNA targeting the first exon is functional, indels can be introduced and lead to loss-of-function from a resulting frameshift mutation. However, the presence of second sgRNA targeting the last exon will ensure that the entire gene is deleted thus increasing the chances of generating loss-of-function mutants. Secondly, because our dgRNA containing transgenic flies target both the first and the last exon and result in complete deletion of the gene, the subsequent introduction of a copy of the gene with homologous arms (Baena-Lopez et al., 2013) would result in gene knock-ins and reconstitution of function. This would require a germ line knockout of the gene and the use of our reagent set to generate such a null allele is described in the study. The use of a suitably mutagenized copy of the wild-type gene would allow individual point mutations or domain deletions of a protein to be generated, for example allowing the analysis of the role of specific amino acid residues or domains in a specific cell biological question. Since such knock-in constructs would also be expressed from the same locus as the wild-type gene thereby avoiding artifacts associated with altered levels of expression when transgenes are expressed from alternate genomic loci.\n\nDuring the course of this study, we identified a few limitations for the use of these reagents. For example, in the case of the PI4P 5-kinase sktl, eye-specific deletion resulted in morphologically normal looking eyes. The reason for this was most likely that cells lacking sktl were eliminated (due to the essential nature of the gene product) early in eye disc development and only those cells with indels that are multiples of three bases thus possibly producing a partially functional protein survived. This is however dependent on the nature of the gene rather than the design of the gRNA constructs. For example, when sgRNA targeting the kinase domain of sktl was used in conjunction with ey\u00a0>UAS-Cas9-GFP, flies were pupal lethal presumably because even 1\u20132 bp deletions within the kinase domain of sktl abolishes kinase activity and gene function. In the case of the PI transfer protein RDGB, we were able to detect the presence of full-length protein in flies when eye specific knockout was performed. The possibility that either of the gRNAs were inefficient or non-functional in tissues was ruled out as we were able to use the rdgBdgRNA flies to generate a germline knockout of this gene that phenocopied existing classical alleles. Since rdgB is located on the X-chromosome the inability to lose the protein by tissue-specific editing is unlikely to be due to editing of only one copy of the gene. We therefore speculate that the residual protein in eye-specific editing of rdgB most likely results from the long half-life of the protein that was present from early development. The implications of this is that when used for performing a screen in a tissue-specific manner, the lack of a phenotype does not conclusively rule out the involvement of that gene. Apart from the two examples described here, it is possible that CRISPR based targeting of genes in a tissue-specific manner may lead to heterogeneous disruption of the target gene especially in polyploid larval tissues such as the salivary glands and fat body. Therefore, absence of phenotypes in these tissue-specific gene disruptions using dgRNA will not be conclusive and under these circumstances, generation of a germline knock out would be valuable.\n\nIn summary, we have generated a toolkit consisting of a transgenic library of 103 dgRNA and a UAS-Cas9-T2A-eGFP that can be used in conjunction with the existing large repertoire of GAL4 lines to perform a systems level analysis of PI signaling selectively in any cell type/tissue of choice. The UAS-Cas9-T2A-eGFP construct would be helpful to track Cas9 expressing cells in culture or in fly tissues. The dgRNAs can also be transfected to delete gene function in cultured Drosophila cells. They can also be used to generate whole body knockouts and the null alleles so generated can be used as a template to knock in specific versions of the gene at the endogenous locus. While the PI kinases and phosphatases have been the subject of extensive analysis, the effectors of PI signaling, namely the binding proteins remain poorly studied. We envisage the availability of this dgRNA reagent set will accelerate the studies of the function of these proteins in cellular organization and tissue architecture. They will also facilitate the functional analysis of disease mechanisms in the case of those proteins linked to human disease.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w1118</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 3605</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>AB1-Gal4</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 1824</td>\n      <td>y1 w*; P{GawB}AB1</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Cas9</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 54592</td>\n      <td>P{hsFLP}1, y1 w1118; P{UAS-Cas9.P}attP2/TM6B, Tb1</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>attP40</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 25709</td>\n      <td>y1 v1 P{nos-phiC31\\int.NLS}X; P{CaryP}attP40</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>attP2</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 25710</td>\n      <td>P{nos-phiC31\\int.NLS}X, y1 sc1 v1 sev21; P{CaryP}attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>ey-Gal4</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 5534</td>\n      <td>w*; P{GAL4-ey.H}3\u20138</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>rdgB9</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 27337</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>nos-Cas9</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 54591</td>\n      <td>y1 M{nos-Cas9.P}ZH-2A w*</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>vasa-Cas9 (3)</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 51324</td>\n      <td>w1118; PBac{vas-Cas9}VK00027</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>vasa-Cas9 (1)</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 51323</td>\n      <td>y1 M{vas-Cas9}ZH-2A w1118/FM7c</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Act5c-Cas9</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 54590</td>\n      <td>y1 M{Act5C-Cas9.P}ZH-2A w*</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>nub-Gal4;UAS-Cas9</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 67086</td>\n      <td>w*; P{GawB}nubbin-AC-62; P{UAS-Cas9.P2}attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>PI3K RNAi #1</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 61182</td>\n      <td>y1 sc* v1 sev21; P{TRiP.HMC05152}attP40</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>PI3K RNAi #2</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 27690</td>\n      <td>y1 v1; P{TRiP.JF02770}attP2/TM3, Sb1</td>\n    </tr>\n    <tr>\n      <td>Cell line (D. melanogaster)</td>\n      <td>S2 R+</td>\n      <td>Drosophila Genomics Resource Center</td>\n      <td>Stock number 150</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Cas9 (Mouse monoclonal)</td>\n      <td>Takara</td>\n      <td>Cat#632628 (CloneTG8C1)</td>\n      <td>IF(1:200), WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-OCRL (Rabbit polyclonal)</td>\n      <td>Gift from Avital Rodal</td>\n      <td></td>\n      <td>IF(1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (Rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#: ab13970</td>\n      <td>IF (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rdgB (Rat polyclonal)</td>\n      <td>Yadav et al., 2015</td>\n      <td></td>\n      <td>WB (1:4000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (Mouse monoclonal)</td>\n      <td>Santacruz</td>\n      <td>Cat # SC 9996</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Syntaxin A1 (Mouse monoclonal)</td>\n      <td>DHSB</td>\n      <td>Cat # 8C3</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-beta tubulin</td>\n      <td>DHSB</td>\n      <td>Cat # E7C</td>\n      <td>WB (1:4000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBS-hsp70-Cas9 (plasmid)</td>\n      <td>Addgene</td>\n      <td>Cat# 46294</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAC-Cas9-sgRNA (plasmid)</td>\n      <td>Addgene</td>\n      <td>Cat# 49330</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBFvU6.2 (plasmid)</td>\n      <td>NIG (Japan)</td>\n      <td></td>\n      <td>https://shigen.nig.ac.jp/fly/nigfly/cas9PlasmidsListAction.do</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBFvU6.2B (plasmid)</td>\n      <td>NIG (Japan)</td>\n      <td></td>\n      <td>https://shigen.nig.ac.jp/fly/nigfly/cas9PlasmidsListAction.do</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUASt (plasmid)</td>\n      <td>Brand and Perrimon, 1993</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Whole Genome DNA library prep kit</td>\n      <td>Illumina</td>\n      <td>FC-121\u20134002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Agilent high sensitivity DNA kit</td>\n      <td>Agilent</td>\n      <td>5067\u20134626</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Hiseq 2500</td>\n      <td>Illumina</td>\n      <td>SY-401\u20132501</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>gRNA target finder</td>\n      <td>http://targetfinder.flycrispr.neuro.brown.edu/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>gRNA efficiency tool</td>\n      <td>https://www.flyrnai.org/evaluateCrispr/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Invitrogen</td>\n      <td>D1306</td>\n      <td>(1 \u00b5g/mL)</td>\n    </tr>\n  </tbody>\n</table>\n\n### List of primers used in this study included as Supplementary file 2\n\ngRNA design, synthesis, and transgenic generation gRNAs were cloned in pBFv6.2 and pBFv6.2B vectors (Kondo and Ueda, 2013), such that the gRNAs close to the start site were cloned in pBFv6.2 vector and the gRNAs close to the stop site were cloned in pBFv6.2B vector. A high-throughput method of gRNA cloning was devised, in which up to 5 gRNA constructs were cloned simultaneously in a single tube and then subsequently screened by PCR and sequencing. To generate the gRNA construct, the cloning vector was amplified using 5\u2019-G(N19) GTTTTAGAGCTAGAAATAGC-3\u2019 and 5\u2019-GAAGTATTGAGGAAAACATA-3\u2019 oligos in order to introduce the 19 base CRISPR target sequence into the vector. N19 corresponds to the sequences in gRNA target columns in Supplementary file 1. Once amplified, the DNA was purified, Dpn1 digested, phosphorylated at the ends using PNK, ligated and transformed. The bacterial colonies were screened using antisense primers for gRNA sequence (Complimentary to N19 sequence) and M13-rev primers by PCR. These were then sequence confirmed and tested in pairs for their efficacy in S2R+ cells (see below). Efficient gRNA pairs were subcloned together as before (Kondo and Ueda, 2013) using EcoR1 and Not1 double digestion to generate dual-gRNA. Since the gRNAs were generated using PCR-based methods, which is intrinsically error prone, we sequenced the attP and vermillion region in addition to the gRNA region before generating transgenic flies. Transgenic flies expressing dual gRNA were generated using phiC31 integrase mediated transgenesis in either attP40 (BDSC 25709) or attP2 (BDSC 25710) flies (Supplementary file 1). The chromosome for transgenesis was chosen based on the chromosomal location of the gene. We tried not to use the same chromosome for the transgene where the gene is located.\n\nS2R+ cells transfection gRNA pairs were tested for the potential to delete the gene of interest in S2R+ cells. Low passage S2R+ cells were transfected with a mixture of 2 gRNA plasmids (100 ng/\u03bcl each) and hsp70-Cas9 (250 ng/\u03bcl) plasmids using Fugene HD transfection reagent according to the manufacturer\u2019s protocol. The transfected cells were incubated at room temperature for 48 hr and then collected by spinning in a tube and removing the medium. These were then resuspended in squishing buffer (10 mM Tris-Cl pH 8.2, 1 mM EDTA, 25 mM NaCl and 200 \u00b5g/ml Proteinase K) and incubated at 37\u00b0C for 1 hr and 95\u00b0C for 20 min. This was directly used for PCR to test the efficiency of deletion. Since the efficiency of transfection was found to be low, for most of the gRNAs, deletion bands were seen only when a nested PCR was performed. For the primer list used for nested PCRs, please refer to the key resource table. The deletion bands were sequenced and verified for deletion against reference genomic sequence.\n\nGeneration of UAS-Cas9-T2A-eGFP transgenes pUAST-eGFP vector was first generated by inserting eGFP sequence using EcoR1 and Xba1 restriction enzymes into the pUAST vector (Brand and Perrimon, 1993). Cas9 insert was PCR amplified from pAC-Cas9-sgRNA (Bassett et al., 2013) as a template, using the following primers (5\u2019-gagcggagagcattgcggctgataagg-3\u2019 and 5\u2019-gaggcgcaccgtgggccgcggccgcagatctctaccgctgccgctaccgctagca-3\u2019) which led to amplification of 3xFLAG-SV40-NLS-Cas9-NLS-T2A. The PCR product was digested using EcoR1 and Not1 enzymes and cloned into the pUAST-eGFP vector. After testing for its expression and efficacy in S2R+ cells, transgenics were generated by P-element-based random insertion. Two lines were obtained and were both mapped to the third chromosome. One of these lines (with stronger mini white expression, as judged visually) was used for further experiments.\n\nIsogenization of fly stocks for NGS attP40 and attP2 fly stocks were isogenized by crossing them to triple balancer fly stocks. attP40 fly stocks (BDSC 25709) were triple balanced with FM7a; CyO;Tb. Subsequently, the balancer chromosomes were removed and stocks were maintained. After repeated attempts, we are unable to bring attP2 stocks (BDSC 25710) on triple balancers and hence were unable to isogenize them. Hence, only attP40 and S2R+ cells were processed for NGS sequencing. attP2 stocks were Sanger sequenced for genomic regions of interest whenever needed.\n\n### Whole genome DNA library preparation, next-generation sequencing (NGS), and variant analysis\n\nGenomic DNA was extracted using Qiagen Genomic DNA extraction kit. The Whole Genome DNA libraries were constructed using TruSeq Nano DNA LT Sample Preparation Kit Set B (24 Samples), Catalog no-FC-121\u20134002 according to the manufacturer\u2019s instructions (Illumina Inc, USA). Briefly, the genomic DNA (100 ng) were sonicated using Covaris S220 to 350 bp insert size and clean up the fragmented DNA using illumina sample purification beads. Purified fragmented DNA were end repaired, 3'ends adenylation and adapter ligation. DNA fragments were enriched using eight cycles of PCR according to the manufacturer's instructions. Library quality was analyzed on Agilent 2100 Bioanalyzer using DNA high sensitivity kit (Agilent Technologies, USA). Next-generation sequencing of libraries was performed using Illumina Hiseq 2500 for 2 \u00d7 100 bp. Sequence reads of both isogenized attP40 (30 million paired end reads) and S2R+ (29 million paired end reads) cells were imported into the CLC Genomics Workbench 12.0 (Qiagen). The reads were trimmed off the adapter sequences and reads containing low-quality bases eliminated. The trimmed raw sequences were mapped to the Drosophila melanogaster genome and basic variant detection tools were used with default parameters of CLC Genomics workbench.\n\n### Electroretinograms\n\nElectroretinograms were performed as before (Balakrishnan et al., 2018). Briefly, flies were anesthetized and immobilized at the end of a disposable pipette tip using a drop of colorless nail varnish. Recordings were performed using glass microelectrodes (640786, Harvard Apparatus, MA) filled with 0.8% w/v NaCl solution. Voltage changes were recorded between the surface of the eye and an electrode placed on the thorax. At 1 day, flies, both male and female, were used for recording. Following fixing and positioning, flies were dark adapted for 5 min. ERGs were recorded with 2 s flashes of green light stimulus, with 10 stimuli (flashes) per recording and 15 s of recovery time between two flashes of light. Stimulating light was delivered from an LED light source to within 5 mm of the fly's eye through a fiber optic guide. Calibrated neutral density filters were used to vary the intensity of the light source. Voltage changes were amplified using a DAM50 amplifier (SYS-DAM50, WPI, FL) and recorded using pCLAMP 10.4. Analysis of traces was performed using Clampfit 10.4 (Molecular Devices, CA).\n\n### Imaging of salivary glands and nephrocytes\n\nSalivary glands or nephrocytes (of appropriate genotypes) from wandering 3rd-instar larvae were dissected in 1X phosphate-buffered saline (PBS) (pH 7.4) and fixed for 20 min at room temperature in 4% paraformaldehyde. Fixed tissues were then washed three times for 5 min in PBS (pH 7.4) and permeabilized in PBST (PBS + 0.3% Triton X-100) 3 \u00d7 5 min. Samples were blocked in 5%NGS in 0.3% PBST for 2 hr. Primary antibody incubation was performed overnight at 4\u00b0C in PBST with 5% normal goat serum. Primary antibody used are anti-dCas9 (Takara 632628) 1:200, anti-OCRL [Gift from Avital Rodal-(Del Signore et al., 2017)] 1:50, anti-eGFP (Abcam ab13970) 1:5000. Following washes in 0.3% PBST, incubation in secondary antibody for 2 hr in 0.3% PBST. Secondary antibody used is Alexa 633 Goat \u03b1-Rabbit IgG (Life Technology A21070) 1:200, Alexa 488 Goat \u03b1-chicken IgG (Abcam ab150173) 1:200, Alexa 568 Goat \u03b1-mouse IgG (Life Technology A11004). Following this the tissue was stained with DAPI for 5 min and mounted on a glass slide with 70% glycerol in PBS, sealed it with cover slip using colorless nail varnish, and allowed to dry. Samples were imaged on an Olympus FV3000 laser scanning confocal microscope under 40X/60 \u00d7 1.4 NA objective.\n\n### Western blotting\n\nForty-eight hours post-transfection, S2R+ cells were harvested by repeated flushing of the media and pelleted down in a 1.7 ml Eppendorf vial by centrifugation at a speed of 800 rpm for 10 min. The pelleted cells were lysed by repeated pipetting in Laemli loading buffer. Following this, the samples were heated at 95\u00b0C for 5 min and loaded onto an SDS-PAGE. The proteins were then transferred onto a nitrocellulose membrane and incubated overnight at 4\u00b0C with indicated antibodies. Primary antibody concentrations used were anti-dCas9 (Takara 632628) 1:2000; anti-GFP (Santa Cruz sc9996) 1:2000; anti-RDGB (Yadav et al., 2015), 1:4000; anti-Syntaxin A1 (DHSB 8C3) 1:1000 and anti-beta-Tubulin (DHSB E7c) 1:4000. The blots were then washed thrice with Tris Buffer Saline containing 0.1% Tween-20 (0.1% TBS-T) and incubated with appropriate HRP-conjugated secondary antibodies (Jackson Laboratories, Inc) at 1:10,000 for 45 min. After three washes with 0.1% TBS-T, blots were developed using Clarity Western ECL substrate on a GE ImageQuant LAS 4000 system.\n\n### Generation of full body KO\n\nFive Cas9 virgin flies (Act5c-Cas9/vasa-Cas9/nos-Cas9- see Supplementary file 1) were crossed to males of gRNA transgenic lines.\u00a0~\u00a010 F1 progeny males were crossed to balancer (specific for the gene of interest) flies. Subsequently, they were tested for deletion by nested PCR. F2 progeny from positive F1s were crossed to balancers (10 F2 flies were crossed from every F1 that showed a deletion band. Typically, not more than 50 crosses were set in case of many F1s being positive) and tested for deletion by PCR. Exact values for number of positive F2s per crosses set is given in Supplementary file 1. Positives were tested for presence of gRNA and Cas9 transgenes and flies that lacked both were further developed into stocks.\n\n### Nested PCR\n\nNested PCR was used to test the presence of deletion in S2R+ cells and mosaic F1 flies. Single flies or S2R+ cells were squished in a squishing buffer (see above), incubated at 37\u00b0C for 30 min and 95\u00b0C for 10 min. One \u03bcl of the supernatant was used to perform PCR with an outer set of primers (Supplementary file 2). One \u03bcl of this PCR product was used to perform PCR with an inner set of primers.\n\n### Imaging Drosophila wings\n\nAdult female flies of appropriate genotypes were dipped in 70% ethanol, briefly dried and wings clipped. The wings were mounted in colorless nail varnish and imaged under a light microscope (Olympus SZX12).\n",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "7fa24034-598d-48d4-aa66-feeb6be9ecf9",
+      "submission_id": "d54949a2-1130-40ed-bb46-d9ab1fd5160e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jiwon Shim, Hanyang University Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55793.sa1](https://doi.org/10.7554/eLife.55793.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nPhosphoinositide (PI) signaling is important for various biological processes in all metazoan organisms. The authors generated a CRISPR-based genome engineering toolkit to make tissue-specific mutations in \u03c0 signaling genes in Drosophila. The reagents generated in this study will be a useful and versatile genetic tool for researchers in the field.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A genome engineering resource to uncover principles of cellular organization and tissue architecture by lipid signalling\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Utpal Banerjee as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThree reviewers suggested major criticisms on validations of the new tool and generated stocks. Therefore, the revised manuscript should demonstrate efficient knockout events by expression analysis and by extensive molecular analysis of targeted mutations for many more genes rather than a few. Essential revisions are summarized as below and full reviewers' comments are attached for your reference.\n\nSummary:\n\nThis study describes the generation of a CRISPR/Cas-9 mediated gene editing toolkit in Drosophila and offers germline or tissue-specific knockouts of Drosophila \u03c0 signaling genes. There have been several independent efforts to generate systematic knockout tools in this study, and it will be a valuable toolkit for the fly community working on \u03c0 signaling in Drosophila cells and whole animals. However, this report shows a few successful cases of gene knockouts and insufficient assessments for the new tool, and therefore, the manuscript requires additional extensive molecular and genetic evaluation of the presented data.\n\nEssential revisions:\n\n1) Confirm DNA lesions in many more cases:\n\ni) The authors designed dgRNA constructs to generate gene deletion. Although they claimed that the targeted deletions were confirmed in S2R+ cells, it is unclear whether the mutations were confirmed in flies.\n\nAccording to subsection \u201cInvestigating the role of \u03c0 signalling in eye development using the dgRNA toolkit\u201d, a few representative ey>Cas9;dgRNA lines were tested for genomic deletion. Then, it appears that the majority of 103 transgenic lines were not tested for molecular lesions. Table 1 shows a list of genes with the size of the genomic deletion. If in fact only a few lines were tested, then it would be difficult to properly evaluate the data in Table 1. It is important to know how many lines were tested for deletion and how many actually showed an expected size of deletions.\n\n2) Better validation of the efficacy:\n\ni) The authors verified the efficiency and usefulness of the tool by targeting \u03c0 genes in the eye. Most of the known target genes resulted in desirable phenotypes in the eye; however, some did not. In this case, it could be a matter of protein stability as the authors explained, but it also could be due to the efficiency or the variability of the new tool in the eye. The tool requires a better validation on a cell-by-cell basis. For example, with the use of in situ hybridization or an antibody against the protein (there are several antibodies readily available), expressions of target genes could be measured. If the phenotype/expression level could be quantified, efficiencies of whole body mutant, tissue-specific RNAi, and tissue-specific deletion need to be compared.\n\nii) In Figure 4A, the authors have shown a truncated band of CG5734 without showing its full-length gene. Even with the presence of truncated size, the intact gene may be still viable in some eye cells. It again will be important to show how efficient it is to use the new tool at a tissue level.\n\niii) In addition to ey-gal4, the tool requires validations with additional tissue-specific drivers. This will not only verify its effectiveness but enhance the broader applications.\n\niv) In subsection \u201cGeneration of whole fly knockouts and using dgRNA transgenics\u201d, it seems that they tried germline knockout for several genes, but the procedure is not mentioned and the data are described very ambiguously. \"The deletions obtained in this manner are highly efficient (between 4-100% efficiency in F1 flies and between 3-70% efficiency in F2 flies) in generating germline knockouts with deletions ranging in size between 400bp and 38kb.\" From this description, it is difficult to know whether the deletions are highly efficient as claimed. The procedure for making germline knockout and the results need to be described in full detail. In Table 1, a number of tissue-specific knockouts show no phenotype. It is possible that some of them may not have expected mutations.\n\nv) There is no data showing the loss of protein expression in eye discs from eye-specific knockout lines. Crosses with ey-Gal4 will generate mosaic tissues in developing eye discs. It is important to know how efficient is a somatic knockout in the region of ey-Gal4 expression.\n\n3) Compare SNPs in other strains:\n\ni) The authors make the argument that because their dgRNA constructs work in both their BL25709 Drosophila and S2R+ cells and match the reference genome, that they should work in other genetic backgrounds. However, these backgrounds don't sample the full range of nucleotide variation in laboratory stocks. Can the authors compare their gRNA sequences with genomes of other common lab strains (or optionally other wildtype genomic sequences like the DGRP)?\n\nii) Authors have carefully selected dgRNA sequences by comparing genomic sequences of S2R+ cells, parent fly stocks, and reference fly genome. This will be a useful resource for researchers who would refer to this study in the future. Therefore, detailed descriptions of SNPs found (e.g. in a table or additional diagrams) need to be added in addition to the diagram shown in Figure 2.\n\n4) Separate methods from results:\n\ni) Since the manuscript describes methods in the result, it does not separate the methods from the main text. However, it should either be more specific in the text or include the methods part for further details. As one example, UAS-Cas9-eGFP transgenic flies newly generated in this study require detail information for those who will order stocks.\n\nReviewer #1:\n\nIn this manuscript, Gaghu and colleagues have designed a set of CRISPR based genome editing tools and constructed reagents by which 103 phosphoinositide (PI)-related genes can be individually deleted. With the use of the reagents, authors have identified novel \u03c0 genes that control eye development and verified the effectiveness of the tools.\n\nThis study will potentially benefit the fly community by providing the new tissue-specific CRISPR tool. However, as a resource paper, the manuscript requires better validations on the technique itself and focus on describing the validity of the tool.\n\n1) Authors have carefully selected dgRNA sequences by comparing genomic sequences of S2R+ cells, parent fly stocks, and reference fly genome. This will be a useful resource for researchers who would refer to this study in the future. Therefore, detailed descriptions of SNPs found (e.g. in a table or additional diagrams) need to be added in addition to the diagram shown in Figure 2.\n\na) In the same vein, if SNPs in different backgrounds are critical for the CRISPR efficiency, giving a few examples of such cases would enhance the importance of resources provided.\n\n2) Since the manuscript describes methods in the result, it does not separate the methods from the main text. However, it should either be more specific in the text or include the methods part fur further details. As one example, UAS-Cas9-eGFP transgenic flies newly generated in this study require detail information for those who will order stocks.\n\n3) The authors verified the efficiency and usefulness of the tool by targeting \u03c0 genes in the eye. Most of the known target genes resulted in desirable phenotypes in the eye; however, some did not. In this case, it could be a matter of protein stability as the authors explained, but it also could be due to the efficiency or the variability of the new tool in the eye. The tool requires a better validation in a cell-by-cell basis. For example, with the use of in situ hybridization or an antibody against the protein, expressions of target genes could be measured. If the phenotype/expression level could be quantified, efficiencies of whole body mutant, tissue-specific RNAi, and tissue-specific deletion need to be compared.\n\na) In Figure 4A, the authors have shown a truncated band of CG5734 without showing its full-length gene. Even with the presence of truncated size, the intact gene may be still viable in some eye cells. It again will be important to show how efficient it is to use the new tool at a tissue level.\n\n4) In addition to ey-gal4, the tool requires validations with additional tissue-specific drivers. This will not only verify its effectiveness but enhance the broader applications.\n\nReviewer #2:\n\nThis study offers a library of 103 gRNA lines to generate germline or tissue-specific knockouts of Drosophila \u03c0 signaling genes. With additional constructs, they could also be used to generate new alleles or tagged proteins. This is a useful toolkit for the growing community working on signalling, transport and metabolism of \u03c0 in Drosophila cells and whole animals. The lines target two sites in each gene, are robust to some target genome variation, and in some cases are validated using RNAi or known mutant phenotypes. This is a very useful collection of well-designed lines, with good supporting validation.\n\nThe authors make the argument that because their dgRNA constructs work in both their BL25709 Drosophila and S2R+ cells and match the reference genome, that they should work in other genetic backgrounds. However, these backgrounds don't sample the full range of nucleotide variation in laboratory stocks. Can the authors compare their gRNA sequences with genomes of other common lab strains (or optionally other wildtype genomic sequnces like the DGRP)?\n\nReviewer #3:\n\nThis manuscript describes the generation of a genetic tool kit for tissue-specific and whole animal knockout using CRISPR/Cas9-mediated gene editing in Drosophila. There have been several independent efforts to generate Cas9-based systematic gene knockout tools in culture cells and flies. This study attempts to demonstrate the feasibility of constructing guide RNAi library targeted to a relatively small set the genes involved in phosphoinositides (PI) metabolism and signaling. This report shows a few successful cases of gene knockout and a list of 103 targeted genes. Therefore, in principle, the genetic tools generated in this study can be valuable resources in the field of \u03c0 signaling. However, I feel that the general strategy used in this study is not particularly novel, and more importantly, analysis of their library appears to be rather limited and preliminary for proper evaluation of the presented data.\n\nMerits of this work:\n\n1) They sequenced S2R+ genome and an isogenic fly genome. After comparing these sequences and the reference genome, gRNA targets were carefully selected to avoid potential mismatches or off-targets.\n\n2) This study used double guide RNAs targeted to 1st and last coding exons to generate null mutations by deletion. The use of T2A-mediated eGFP expression also helps to identify Cas9-expressing cells.\n\n3) Cas9 mutagenesis targeted to a full set of PI-related genes is a new attempt.\n\nWeaknesses:\n\nOverall, their strategy for tissue-specific knockout is similar to two recent papers (Meltzer et al., 2019; Port et al., 2020). Hence, novelty of this manuscript is somewhat diminished. In addition, there are major issues related to their methods and data, as listed below.\n\n1) Authors designed dgRNA constructs to generate gene deletion. Although they claimed that the targeted deletions were confirmed in S2R+ cells, it is unclear whether the mutations were confirmed in flies.\n\nAccording to subsection \u201cInvestigating the role of \u03c0 signalling in eye development using the dgRNA toolkit\u201d, a few representative ey>Cas9;dgRNA lines were tested for genomic deletion. Then, it appears that the majority of 103 transgenic lines were not tested for molecular lesions. Table 1 shows a list of genes with the size of the genomic deletion. If in fact only a few lines were tested, then it would be difficult to properly evaluate the data in Table 1. It is important to know how many lines were tested for deletion and how many actually showed expected size of deletions.\n\n2) In subsection \u201cGeneration of whole fly knockouts and using dgRNA transgenics\u201d, it seems that they tried germline knockout for several genes, but the procedure is not mentioned and the data are described very ambiguously. \"The deletions obtained in this manner are highly efficient (between 4-100% efficiency in F1 flies and between 3-70% efficiency in F2 flies) in generating germline knockouts with deletions ranging in size between 400bp and 38kb.\" From this description, it is difficult to know whether the deletions are highly efficient as claimed. The procedure for making germline knockout and the results need to be described in full detail. In Table 1, a number of tissue-specific knockout show no phenotype. It is possible that some of them may not have expected mutations.\n\n3) There is no data showing the loss of protein expression in eye discs from eye-specific knockout lines. Crosses with ey-Gal4 will generate mosaic tissues in developing eye discs. It is important to know how efficient is somatic knockout in the region of ey-Gal4 expression.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A genome engineering resource to uncover principles of cellular organization and tissue architecture by lipid signalling\" for further consideration by eLife. Your revised article has been evaluated by Utpal Banerjee (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nAll the reviewers agreed that the authors added a substantial amount of new data and appropriately addressed most of the concerns.\n\nReviewer #1:\n\nIn the revised manuscript, Trivedi et al. provide a significantly improved version of their work with additional analyses and in vivo validations and addressed most of the concerns raised by the reviewers. Two additional points need to be modified to clarify the results.\n\n1) In Figure 2B, the authors validated the efficiency of ocrl deletion by immunohistochemistry and showed that ocrl knockout reduces the anti-OCRL staining in the wing disc. However, staining patterns shown in controls are too low, and it is hard to tell whether the antibody used was working in the disc. Providing a reference for the antibody that shows an expression pattern in a representative organ and/or highlighting higher mag images will be critical to reassure the data. If this antibody was first used in an IHC experiment, proper confirmations for the antibody would be needed.\n\n2) In Figure 3C, gel images do not have proper labels.\n\n3) If possible, it will be best to organize the deposition of generated flies to major stock centers before publication and describe it in the text.\n\nReviewer #2:\n\nThe authors have added substantial new validation, particularly on the areas of SNP variation, the lesions obtained, and homozygous phenotypes. This now gives the reader greater confidence in the usefulness of their resource \u2013 for somatic knockouts one can often find a localized phenotype but not always, perhaps due to perdurance of a stable gene product; and most of their gRNA stocks can be used to generate germline knockouts, and they have established mutant stocks for about half of them.\n\nTaken together, I think this collection will be a valuable resource targeting many genes of great interest for the fly signaling and lipid communities. The paper now gives a much better sense of the approach's strengths and limitations, and there is enough information to make many lines of wide use immediately and to develop further mutant stocks for the remainder. To make these lines accessible to the community, I hope that both the gRNA and mutant stocks will be offered promptly to the major stock centers, if the authors haven't done so already.\n\nReviewer #3:\n\n1) The authors have revised the manuscript with additional experiments and clarifications. The revised manuscript appears to be significantly improved by extensive molecular analysis of targeted mutations in fly tissues. Phenotype analysis with additional GAL4 drivers also supports the effectiveness of the CRISPR/Cas9 tools.\n\n2) Considering that the majority of targeted genes by ey-GAL4 do not show phenotypes, it is still possible that targeting might not have caused sufficient loss of protein expression in many genes. In this regard, checking the expression level for only one gene (Ocrl) is a weak point. However, the new data showing deletions in most targeted genes seems to compensate for the weakness. In summary, the revised manuscript seems to be acceptable, but a few mistakes listed below should be corrected.\n\n3) Some genotypes in figures are not italicized. Those genotypes need to be fixed.\n\n4) Anti-Ocrl staining appears to be nuclear staining to me, although it is too weak to be certain. A better way to show the mutation effect is to use a different Gal4 such as en-Gal4 to show an internal control. It would be good to show a test for antibody specificity.\n",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a09b1349-78c7-44a3-94b7-58c402c9422a",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C1",
+      "claim": "Phosphoinositides (PI) are key regulators of cellular organization in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphoinositides (PI) are key regulators of cellular organization in eukaryotes and genes that tune PI signaling are implicated in human disease mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in cell biology supported by extensive literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "23ac97e5-67e5-43f6-ab4f-b74510bc6172",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C2",
+      "claim": "Genes that tune PI signaling are implicated in human disease mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphoinositides (PI) are key regulators of cellular organization in eukaryotes and genes that tune PI signaling are implicated in human disease mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge and references throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "613a68fe-a1d2-47a0-abdc-01060a2e2502",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C3",
+      "claim": "The study describes a set of CRISPR-based genome engineering tools that allow manipulation of PI signaling proteins with spatial and temporal control during metazoan development.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a set of CRISPR-based genome engineering tools that allow the manipulation of each of these proteins with spatial and temporal control during metazoan development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the generation and validation of these tools throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "a9efb43b-b93f-4215-9fd5-5ba352b28a6a",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C4",
+      "claim": "The reagents were used to deplete a set of 103 proteins individually in the Drosophila eye.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the use of these reagents to deplete a set of 103 proteins individually in the Drosophila eye and identify several new molecules that control eye development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the Results section with experimental data and images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "e704467f-0299-4a88-a49a-a3485ac9f89c",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C5",
+      "claim": "Several new molecules that control eye development were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the use of these reagents to deplete a set of 103 proteins individually in the Drosophila eye and identify several new molecules that control eye development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The screen results are presented in the Results section and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "322bff57-1867-4769-83f6-2b1c63c8673e",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C6",
+      "claim": "The head group of phosphatidylinositol can be phosphorylated combinatorially at positions 3, 4, and 5 to generate a set of seven PIs.",
+      "claim_type": "EXPLICIT",
+      "source": "The head group of the parent lipid phosphatidylinositol can be phosphorylated combinatorially at positions 3, 4, and 5 to generate a set of seven PIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about PI metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "71dc6ed6-17ea-4abe-9127-bcd56661230c",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C7",
+      "claim": "Phosphatidylinositol 4,5 bisphosphate [PI(4,5)P2] plays a key role in the regulation of membrane transport and the cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "These PIs are key regulators of subcellular processes; for example, phosphatidylinositol 4,5 bisphosphate [PI(4,5)P2] plays a key role in the regulation of membrane transport and the cytoskeleton (Janmey et al., 2018), whereas phosphatidylinositol three phosphate (PI3P) is an important regulator of endocytosis and autophagy (Schink et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Janmey et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "0ab7540a-3666-414a-bb76-d9d5149394a7",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C8",
+      "claim": "Phosphatidylinositol three phosphate (PI3P) is an important regulator of endocytosis and autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "These PIs are key regulators of subcellular processes; for example, phosphatidylinositol 4,5 bisphosphate [PI(4,5)P2] plays a key role in the regulation of membrane transport and the cytoskeleton (Janmey et al., 2018), whereas phosphatidylinositol three phosphate (PI3P) is an important regulator of endocytosis and autophagy (Schink et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Schink et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "40eedba4-65c6-423f-801b-c8868b7c4494",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C9",
+      "claim": "PIs have been implicated in the regulation of nuclear function.",
+      "claim_type": "EXPLICIT",
+      "source": "PIs have also been implicated in the regulation of nuclear function (Fiume et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fiume et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "2a24d0ca-22f8-4625-96f2-42a6fc3ca45d",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C10",
+      "claim": "Phosphatidylinositol 3,4,5 trisphosphate (PIP3) is an essential regulator of growth factor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, phosphatidylinositol 3,4,5 trisphosphate (PIP3) is an essential regulator of growth factor signaling and plays a conserved role in developmental control in C. elegans, Drosophila, and mammals (Engelman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Engelman et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "026df1de-63e8-427c-b4f4-e8da83b8b1d5",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C11",
+      "claim": "PIP3 plays a conserved role in developmental control in C. elegans, Drosophila, and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, phosphatidylinositol 3,4,5 trisphosphate (PIP3) is an essential regulator of growth factor signaling and plays a conserved role in developmental control in C. elegans, Drosophila, and mammals (Engelman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Engelman et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "272b74e0-9771-4652-af0a-09fffbc671c1",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C12",
+      "claim": "Phosphatidylinositol four phosphate (PI4P) levels play a key role during cellular development in gametogenesis in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphatidylinositol four phosphate (PI4P) levels play a key role during cellular development in gametogenesis in Drosophila (Brill et al., 2000; Tan et al., 2014) and a conserved role for PI(4,5)P2 is proposed in apico-basal polarity (Devergne et al., 2014; Martin-Belmonte et al., 2007; Rousso et al., 2013; Yan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Brill et al., 2000 and Tan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "75753072-6f69-49a7-bccc-9f98cdc8b6cf",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C13",
+      "claim": "A conserved role for PI(4,5)P2 is proposed in apico-basal polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphatidylinositol four phosphate (PI4P) levels play a key role during cellular development in gametogenesis in Drosophila (Brill et al., 2000; Tan et al., 2014) and a conserved role for PI(4,5)P2 is proposed in apico-basal polarity (Devergne et al., 2014; Martin-Belmonte et al., 2007; Rousso et al., 2013; Yan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Devergne et al., 2014; Martin-Belmonte et al., 2007; Rousso et al., 2013; Yan et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "7cbe6d63-8c21-426c-a298-9eda1b9c6853",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C14",
+      "claim": "Dysregulation in PI signaling has been linked to Lowe syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation in PI signaling has also been linked to several human diseases; these include developmental disorders such as Lowe syndrome (Staiano et al., 2015) and PIK3CA-related overgrowth spectrum (PROS)(Madsen et al., 2018); mutations in PTEN, a key regulator of PIP3 levels are the second most frequent mutations seen in human cancers (Worby and Dixon, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Staiano et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "d85cab0c-c702-4ba1-afa0-a8f5c0bb7617",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C15",
+      "claim": "Dysregulation in PI signaling has been linked to PIK3CA-related overgrowth spectrum (PROS).",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation in PI signaling has also been linked to several human diseases; these include developmental disorders such as Lowe syndrome (Staiano et al., 2015) and PIK3CA-related overgrowth spectrum (PROS)(Madsen et al., 2018); mutations in PTEN, a key regulator of PIP3 levels are the second most frequent mutations seen in human cancers (Worby and Dixon, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Madsen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "c12a43bb-8181-4bc9-ac8a-fb959c6d0a9a",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C16",
+      "claim": "Mutations in PTEN are the second most frequent mutations seen in human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation in PI signaling has also been linked to several human diseases; these include developmental disorders such as Lowe syndrome (Staiano et al., 2015) and PIK3CA-related overgrowth spectrum (PROS)(Madsen et al., 2018); mutations in PTEN, a key regulator of PIP3 levels are the second most frequent mutations seen in human cancers (Worby and Dixon, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Worby and Dixon, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "c9fccbb2-bb2d-4846-8b87-fe247391b429",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C17",
+      "claim": "Mutations in genes regulating PI signaling are seen in a large number of genetic disorders of the human nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in genes regulating PI signaling are seen in a large number of genetic disorders of the human nervous system (Raghu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Raghu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "df2d0f0b-2b4a-4bae-acba-3749ab9a8cbe",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C18",
+      "claim": "The seven PIs are generated in cells by the activity of a set of evolutionarily conserved lipid kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "The seven PIs are generated in cells by the activity of a set of evolutionarily conserved lipid kinases that are specific for the substrate they will use, as well as the position on the inositol at which they will phosphorylate (Sasaki et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sasaki et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "33fdc602-d078-42be-8e02-b72ad0d4bbe0",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C19",
+      "claim": "Many proteins contain domains that bind PI3P (PX and FYVE) and PI4P (FAPP and OSBP).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, many proteins contain domains that bind PI3P (PX and FYVE) and PI4P (FAPP and OSBP) and numerous PH domains that bind various PIs with differing degrees of affinity and selectivity have been reported (Hammond and Balla, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hammond and Balla, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "25ab4e14-e32c-4b09-b579-6fbc773b7f64",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C20",
+      "claim": "A recent biochemical study has identified a large number of proteins that bind a range of PIs with varying degrees of specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent biochemical study has identified a large number of proteins that bind a range of PIs with varying degrees of specificity (Jungmichel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jungmichel et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "1c797072-91f9-4e14-8986-30bf6c11d713",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C21",
+      "claim": "A detailed annotation of the PI signaling genes in the Drosophila genome led to the identification of 103 genes which are part of the PI signaling toolkit.",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed annotation of the PI signaling genes in the Drosophila genome (Balakrishnan et al., 2015) led to the identification of 103 genes which are part of the PI signaling toolkit (Figure 1) and conserved between flies and other organisms important for the study of developmental processes and disease biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Balakrishnan et al., 2015 and is the basis for the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "bfb1cf74-a9f4-4eec-87a6-def1dbfd9f2e",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C22",
+      "claim": "The 103 PI signaling genes are conserved between flies and other organisms important for the study of developmental processes and disease biology.",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed annotation of the PI signaling genes in the Drosophila genome (Balakrishnan et al., 2015) led to the identification of 103 genes which are part of the PI signaling toolkit (Figure 1) and conserved between flies and other organisms important for the study of developmental processes and disease biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Balakrishnan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "be4372f5-78d1-4ef4-9359-466c759f2712",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C23",
+      "claim": "The GAL4/UAS system allows for tight spatial and temporal gene modulation in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Further the availability of binary gene expression control systems such as the GAL4/UAS system allow for tight spatial and temporal gene modulation in turn allowing sophisticated analysis of both cell autonomous and non-cell autonomous modes of developmental control by PI signaling (Colombani et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Colombani et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "20c40343-633f-411e-82dc-b216e21fbc91",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C24",
+      "claim": "CRISPR/Cas9 has emerged as a powerful tool for genome editing in multiple organisms including flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In the recent years, CRISPR/Cas9 has emerged as a powerful tool for genome editing in multiple organisms including flies (Gratz et al., 2013; Wang et al., 2016; Wu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gratz et al., 2013; Wang et al., 2016; Wu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "c81197d1-cfda-4af2-a7e3-040583894a6c",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C25",
+      "claim": "Transgenic fly lines expressing RNAi constructs are available against almost the entire fly genome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike transgenic fly lines expressing RNAi constructs that are available against almost the entire fly genome (Dietzl et al., 2007; Perkins et al., 2015), efforts to make guide RNA (gRNA) expressing transgenic flies are still underway (Meltzer et al., 2019; Port et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dietzl et al., 2007 and Perkins et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "eadd115d-04c4-4250-a360-442c8dc89624",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C26",
+      "claim": "A genome editing system was generated that can be used for Cas9 mediated editing to delete the open-reading frame of each of the 103 annotated PI signaling genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have generated a genome editing system that can be used for Cas9 mediated editing to delete the open-reading frame of each of the 103 annotated genes that could regulate PI signaling (Balakrishnan et al., 2015; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main contribution of the study, demonstrated throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "e2bd1849-6e6b-4e16-b8f2-2ae8e5a318bd",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C27",
+      "claim": "The guides were used to generate both whole body knock outs as well as tissue specific, developmentally timed depletion of individual genes with high efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we use these guides to generate both whole body knock outs as well as tissue specific, developmentally timed depletion of individual genes with high efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the Results section with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "a9c777a0-0680-4b12-9d6d-f45961c4a05f",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C28",
+      "claim": "A genetic screen in the developing Drosophila eye identified key roles for PI signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, using these reagents we present the results of a genetic screen in the developing Drosophila eye and identify key roles for PI signaling in this influential model of tissue development and patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the Results section with experimental data and images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "e4a07cf1-6556-43c5-80a2-10bf1483de16",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C29",
+      "claim": "A single mismatch in the target sequence may highly reduce the efficiency of CRISPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, CRISPR-Cas9-based genome editing is highly robust and specific; a single mismatch in the target sequence may highly reduce the efficiency of CRISPR (Pattanayak et al., 2013), especially if the mismatches are present in the core 12 bp protospacer region most proximal to the protospacer adjacent motif (PAM) site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pattanayak et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "db553e06-65c1-48c3-b107-6762dc7d304f",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C30",
+      "claim": "The entire genome of S2R+ cells and the isogenized attP40 parent fly stock were sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire genome of S2R+ cells as well as the isogenized attP40 parent fly stock (BDSC 25709: y1 v1 P{y[+t7.7]=nos-phiC31\\int.NLS}X; P{y[+t7.7]=CaryP}attP40) that was to be used to generate dgRNA transgenic flies were sequenced (sequencing data is available for S2R+ cells on hyperlink and for isogenized attP40 stock on hyperlink).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological step described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "5bce33d2-3bdd-44d7-ac0f-abb99660efe9",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C31",
+      "claim": "Both the isogenized parent fly stock and the S2R+ cell genome sequences showed more than 600,000 single-nucleotide polymorphisms (SNPs) when aligned against the reference genome.",
+      "claim_type": "EXPLICIT",
+      "source": "When aligned against the reference genome, both the isogenized parent fly stock and the S2R+ cell genome sequences showed more than 600,000 single-nucleotide polymorphisms (SNPs) (Supplementary file 3, 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data presented in Supplementary files 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "20a97115-136b-4a0d-8884-3ba9c15055b4",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C32",
+      "claim": "The genome sequences had ~1.3 million mismatches (SNP, insertions, and deletions) when compared to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to each other, these genome sequences had ~1.3 million mismatches (SNP, insertions, and deletions) suggesting that, as expected, almost all the sequence differences in the two genomes were independent of each other (Supplementary file 3, 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data presented in Supplementary files 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "911667e0-f427-41ea-b1f5-c620ae07449b",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C33",
+      "claim": "Only 1 gRNA target (targeting CG10426), out of the 206 generated, seemed to have one base mismatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 1 gRNA target (targeting CG10426), out of the 206 generated, seemed to have one base mismatch marked in red (Supplementary file 1), while the other 205 targets matched between all the genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "9fc9f287-d288-4a1c-a015-766308b3224f",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C34",
+      "claim": "For each gene, two regions were identified wherein an sgRNA would be designed to target each region.",
+      "claim_type": "EXPLICIT",
+      "source": "For each gene, two regions were identified wherein an sgRNA would be designed to target each region. The first sgRNA would be designed to target the first coding exon and the second sgRNA to target the exon with the stop codon (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the design strategy described in the Methods and illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "0b279fca-205a-41a3-beab-e730ef073503",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C35",
+      "claim": "The OCRL polypeptide of the expected Mr of ca. 100 kDa is completely absent in ocrlKO lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "The OCRL polypeptide of the expected Mr of ca. 100 kDa is completely absent in ocrlKO lysates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B by western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "a474ac07-b7eb-4e98-ba84-28adc3327ce3",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C36",
+      "claim": "The OCRL protein is seen in punctate structures throughout the cell body in wild-type nephrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the OCRL protein (magenta) is seen in punctate structures throughout the cell body. This staining is completely absent in ocrlKO animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C by immunolabeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "31978425-623f-42cc-ad47-78949efb97e5",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C37",
+      "claim": "OCRL staining is completely absent in ocrlKO animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the OCRL protein (magenta) is seen in punctate structures throughout the cell body. This staining is completely absent in ocrlKO animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C by immunolabeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "dac3c3aa-93e4-48f2-a282-a4b97b922720",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C38",
+      "claim": "The 555 bp diagnostic band is seen in the ocrl KO and nephrocyte-specific knockout DNA but not in wild-type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The 555 bp diagnostic band is seen in the ocrl KO and nephrocyte-specific knockout DNA but not in wild-type flies and in NTC (no template control).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D by PCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "33e263d5-5308-48db-90cb-bf0c3e688bc5",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C39",
+      "claim": "There is no detectable signal for OCRL in the nephrocytes of nephrocyte specific knockout animals.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no detectable signal for OCRL in the nephrocytes of nephrocyte specific knockout animals; the experiment was repeated twice and 24 individual nephrocytes images from multiple animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2E by immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "e056b082-2a68-4488-a895-3b81703ab5a7",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C40",
+      "claim": "The expected molecular size of Cas9 is 158 kD.",
+      "claim_type": "EXPLICIT",
+      "source": "The expected molecular size of Cas9 is 158 kD (the band of highest intensity indicated with a '*').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B by western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "73beea25-3a25-4bf8-ad47-877ddcb1e913",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C41",
+      "claim": "The Cas9 antibody cross-reacts with a protein from S2R+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the Cas9 antibody cross-reacts with a protein from S2R+ cells ('#') thereby precluding immunocytochemical detection of Cas9 in S2R+ cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is noted in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "e381e2a7-08b2-4e54-a71e-e168088c0015",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C42",
+      "claim": "The presence of a 358 bp band in cells expressing Cas9 compared to the 1739 bp band in untransfected cells suggests the successful deletion of CG5734.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a 358 bp band in cells expressing Cas9 compared to the 1739 bp band in untransfected cells suggests the successful deletion of CG5734.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C by genomic PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "ba6fa83a-fd07-4c87-ab39-214bdcdcd03f",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C43",
+      "claim": "Cas9 was predominantly localized in the nucleus suggesting efficient nuclear localization by the NLS.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 (grayscale) was predominantly localized in the nucleus suggesting efficient nuclear localization by the NLS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D by immunostaining of salivary glands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "8089010e-bc71-4570-8f5a-7f75c5ad50d3",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C44",
+      "claim": "Expected genomic deletions were identified in DNA obtained from fly heads but not in DNA obtained from the fly body suggesting tissue (eye)-specific gene deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Expected genomic deletions were identified in DNA obtained from fly heads but not in DNA obtained from the fly body suggesting tissue (eye)-specific gene deletion using our newly generated reagents (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A by genomic PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "38d912ef-6ea4-4562-8e28-2cfbf0a0e908",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C45",
+      "claim": "Deletion of Class I PI3K (Dp110) resulted in smaller eyes compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of Class I PI3K (Dp110), that converts PI(4,5)P2 to PI(3,4,5)P3 resulted in smaller eyes compared to controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4B and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "2a19d0ba-b7eb-4e95-95fd-de29f9d14272",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C46",
+      "claim": "The role of PI3K in cell growth is in agreement with a number of studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with a number of studies that have established the importance of PI3K for cell growth (Goberdhan et al., 1999; Weinkove et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Goberdhan et al., 1999 and Weinkove et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "5b7d73f5-9edc-4af8-a092-8c798f13528f",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C47",
+      "claim": "RNAi-mediated knockdown of Dp110 resulted in ~40% reduction in eye size compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "While the RNAi-mediated knockdown resulted in ~40% reduction [Figure 5A (ii) and (iii) and C] compared to controls [Figure 5A (i)], dgRNA mediated Dp110 knockout showed a stronger phenotype with eyes ~ 75% smaller [Figure 5B (ii) and C] than appropriate controls [Figure 5B (i)] thus demonstrating that these dgRNAs serve as efficient tools to study tissue-specific roles of genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A and quantified in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "3f00ec24-6c9a-4450-869a-91df1cceb9cd",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C48",
+      "claim": "dgRNA mediated Dp110 knockout showed a stronger phenotype with eyes ~ 75% smaller than appropriate controls.",
+      "claim_type": "EXPLICIT",
+      "source": "While the RNAi-mediated knockdown resulted in ~40% reduction [Figure 5A (ii) and (iii) and C] compared to controls [Figure 5A (i)], dgRNA mediated Dp110 knockout showed a stronger phenotype with eyes ~ 75% smaller [Figure 5B (ii) and C] than appropriate controls [Figure 5B (i)] thus demonstrating that these dgRNAs serve as efficient tools to study tissue-specific roles of genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B and quantified in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "bd440ada-1982-40a4-aecb-6f03f69594fe",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C49",
+      "claim": "CRISPR-mediated Pten deletion results in eyes larger than control eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-mediated Pten deletion results in eyes larger than control eyes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B(iii) and quantified in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "2dc8c173-c251-4d1f-bb6a-17a9c0d3d7a7",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C50",
+      "claim": "When both Dp110 and Pten are targeted simultaneously, the size of the eyes are intermediate between the small eyes seen with Dp110 deletion and the large eyes seen with Pten deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "When both Dp110 and Pten are targeted simultaneously, the size of the eyes are intermediate between the small eyes seen with Dp110 deletion and the large eyes seen with Pten deletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B(iv) and quantified in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "12f6af69-2df2-4dce-a3dc-22b112026a99",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C51",
+      "claim": "Class I PI3K (encoded by Dp110) phosphorylates PIP2 to generate PIP3.",
+      "claim_type": "EXPLICIT",
+      "source": "Class I PI3K (encoded by Dp110) phosphorylates PIP2 to generate PIP3 while the lipid phosphatase PTEN (encoded by Pten) dephosphorylates PIP3 to generate PIP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about PI metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "46ee29e2-4355-4d53-97c8-eb212d6ce3b7",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C52",
+      "claim": "The lipid phosphatase PTEN (encoded by Pten) dephosphorylates PIP3 to generate PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Class I PI3K (encoded by Dp110) phosphorylates PIP2 to generate PIP3 while the lipid phosphatase PTEN (encoded by Pten) dephosphorylates PIP3 to generate PIP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about PI metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "71ed2380-4d3c-42f0-adc2-9e6453a3c061",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C53",
+      "claim": "Disruption of Pten was able to rescue the phenotype of the disruption of Dp110 and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of Pten was able to rescue the phenotype of the disruption of Dp110 and vice versa.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B(iv) and quantified in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "5a1aaef3-db84-42d3-99a7-bf7cddfe0615",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C54",
+      "claim": "RDGB (retinal degeneration B) is a PI transfer protein, depletion of which leads to light-dependent phototransduction defects.",
+      "claim_type": "EXPLICIT",
+      "source": "RDGB (retinal degeneration B) is a PI transfer protein (encoded by rdgB), depletion of which leads to light-dependent phototransduction defects (Yadav et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yadav et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "9862f71e-7380-45d4-9619-d3c4fe21a764",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C55",
+      "claim": "Whole body mutants of rdgB are viable with no morphological defects in the eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole body mutants of rdgB are viable with no morphological defects in the eye (Yadav et al., 2015), although electrical recordings (ERG) from the eye of rdgB mutants show reduced amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yadav et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "47023336-7f75-4249-830e-995ed942c8f6",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C56",
+      "claim": "Electrical recordings (ERG) from the eye of rdgB mutants show reduced amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole body mutants of rdgB are viable with no morphological defects in the eye (Yadav et al., 2015), although electrical recordings (ERG) from the eye of rdgB mutants show reduced amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yadav et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "4deb0649-4fce-4d55-ba1d-4b7c7c9195a4",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C57",
+      "claim": "ERG recordings from the germline knockout of rdgB generated using CRISPR/Cas9 was comparable to rdgB2.",
+      "claim_type": "EXPLICIT",
+      "source": "ERG recordings from this germline knockout of rdgB generated using CRISPR/Cas9 was comparable to rdgB2 (Figure 6B), an amorphic allele generated by chemical mutagenesis in the Benzer lab (Harris and Stark, 1977).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B and supported by citation to Harris and Stark, 1977.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "5462a0b0-8f8a-4ca7-b736-5b6f35b8bcb6",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C58",
+      "claim": "Germline knockouts of 48 genes were generated using the dgRNA transgenic flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In a similar manner, using the dgRNA transgenic flies, we generated germline knockouts of several additional genes (total 48 genes) by crossing them to either nanos, vasa or Act5c-Cas9 flies (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "85bb004f-e12c-4b7f-a4ab-3734a4684e52",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C59",
+      "claim": "The deletions obtained are highly efficient between 4 and 100% efficiency in F1 flies and between 3\u201370% efficiency in F2 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletions obtained in this manner are highly efficient between 4 and 100% efficiency in F1 flies and between 3\u201370% efficiency in F2 flies (absolute values provided in Supplementary file 1) in generating germline knockouts with deletions ranging in size between 400 bp and 38 kb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "fe58eaf5-5df7-4c9a-968c-b7d4ba76ad0f",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C60",
+      "claim": "Germline knockouts have deletions ranging in size between 400 bp and 38 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletions obtained in this manner are highly efficient between 4 and 100% efficiency in F1 flies and between 3\u201370% efficiency in F2 flies (absolute values provided in Supplementary file 1) in generating germline knockouts with deletions ranging in size between 400 bp and 38 kb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "1afb68c1-0a42-4072-93c1-f2804cd6c0bf",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C61",
+      "claim": "For 13 genes, germline deletions could not be generated despite repeated attempts.",
+      "claim_type": "EXPLICIT",
+      "source": "For a few genes (13 genes), we were unable to generate germline deletions despite repeated attempts in some cases possibly due to their essential roles in gametogenesis or embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "ffea5da5-2294-43c7-8546-34ed39d88736",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C62",
+      "claim": "Western blot analysis showed that eye-specific Cas9 expression was not sufficient to knockout rdgB and detectable levels of RDGB protein was still present.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that eye-specific Cas9 expression was not sufficient to knockout rdgB and detectable levels of RDGB protein was still present.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A by western blot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "4477e54b-de04-44ed-8add-98a581fe8f7f",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C63",
+      "claim": "The mean amplitude from ERG recordings of eye-specific rdgB deletion flies was the same as control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean amplitude from ERG recordings of these flies was the same as control flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "c49652c0-c7c6-41f2-9b03-074ce084e438",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C64",
+      "claim": "Western blot analysis of whole fly rdgB deletion showed a complete loss of RDGB similar to the rdgB2 null mutant flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The same dgRNA flies were used to generate a whole fly rdgB deletion (rdgBCRISPR KO) and western blot analysis showed a complete loss of RDGB similar to the rdgB2 null mutant flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6C by western blot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "7418d0f7-3284-410d-a3a4-40a5f39dfebb",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C65",
+      "claim": "Both rdgB2 and rdgBCRISPR KO flies showed complete loss of ERG amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both rdgB2 and rdgBCRISPR KO flies showed complete loss of ERG amplitudes as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "4d61948d-98fd-4661-a16f-984863e28f99",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C66",
+      "claim": "skittles (sktl) is a PI4P 5-kinase known to have a role during larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "skittles (sktl) is a PI4P 5-kinase known to have a role during larval development (Hassan et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hassan et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "4dc1d7d7-e5c8-41f6-9e42-92e1426c47b3",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C67",
+      "claim": "Mutations in sktl are organismal lethal as well as cell lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in sktl are organismal lethal as well as cell lethal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sktl.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "3ad1a7a5-280a-49a4-b945-5d2b543267f2",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C68",
+      "claim": "Out of the 141 F2 flies sequenced for sktl, 132 showed in-frame indels with an intact kinase domain, with the largest deletion being 24 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 141 F2 flies sequenced, 132 showed in-frame indels with an intact kinase domain, with the largest deletion being 24 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is sequencing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "75da81b3-fc82-4fed-b507-c946958ea522",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C69",
+      "claim": "The sktl sgRNA were highly efficient at targeting sktl but only cells with at least a partially functional protein managed to survive during eye development.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the sktl sgRNA were highly efficient at targeting sktl but only cells with at least a partially functional protein managed to survive during eye development and therefore appeared morphologically normal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the sequencing data and phenotypic observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "7478dd92-a458-44b7-95d5-77a52465c0fe",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C70",
+      "claim": "The study uncovered the function of 30 PI signaling genes in eye development.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we uncovered the function of 30 PI signaling genes in eye development and nine genes previously not implicated in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "67e2133a-3ee1-4632-8909-34e38d5afedc",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C71",
+      "claim": "Nine genes previously not implicated in eye development were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we uncovered the function of 30 PI signaling genes in eye development and nine genes previously not implicated in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "f32710e8-3503-46e2-90bc-0e065c746606",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C72",
+      "claim": "The toolkit includes reagents for editing ca. 72 PI binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the tool kit presented here includes reagents for editing ca. 72 PI binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the composition of the 103 gene toolkit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "36f5f707-bdf2-4be0-bfbe-7dfd96f2596c",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C73",
+      "claim": "The UAS-Cas9-T2A-eGFP construct provides the advantage that all cells expressing Cas9 also express eGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The system we have developed includes a number of innovative features. In the study of cell-cell interactions in development, it is desirable and indeed essential to mark the cell types in which gene manipulation is being performed. To facilitate this, we have designed an UAS-Cas9-T2A-eGFP construct which provides many advantages: (i) All cells expressing Cas9 also express eGFP thus marking cells guaranteed to express Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the construct described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "77dfdd23-2e99-4c6c-b9a4-893f2a91ff88",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C74",
+      "claim": "Since Cas9 and eGFP are expressed as independent proteins, the possibility of a Cas9 fusion protein with reduced function is eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) Since Cas9 and eGFP are expressed as independent proteins, the possibility of a Cas9 fusion protein with reduced function is eliminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the construct described in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "d7978345-8b13-4dde-ba37-f8dbd91b1779",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C75",
+      "claim": "The UAS-Cas9-T2A-eGFP avoids the need for two independent genetic elements to express both Cas9 and eGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) The UAS-Cas9-T2A-eGFP presented here avoids the need for two independent genetic elements to express both Cas9 and eGFP thus reducing the complexity of strain construction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the construct described in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "0f1ddd9f-3478-43fe-84b0-5e368748b004",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C76",
+      "claim": "The use of Cas9 with an NLS ensures that the protein is nuclear localized maximizing the probability of gene editing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) The use of Cas9 with an NLS ensures that the protein is nuclear localized maximizing the probability of gene editing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the construct described in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "d449a718-de24-4ba4-99ca-30582fc846ea",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C77",
+      "claim": "Cas9 can be expressed in a mosaic fashion under the control of the Gal4/UAS system using the CoinFLP method.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in addition to the basic eye development screen presented here as an illustrative example, Cas9 can be expressed in a mosaic fashion under the control of the Gal4/UAS system using the CoinFLP method (Bosch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bosch et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "bd21a46b-4f94-4964-82d0-6b0bdf5e5d77",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C78",
+      "claim": "A recent study has presented evidence of a role of some genes involved in PI signaling as regulators of cell competition during eye development.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent study has presented evidence of a role of some genes involved in PI signaling as regulators of cell competition during eye development (Janardan et al., 2020) and the expanded repertoire of editing reagents generated during this study will allow the mechanism by which PI signaling regulates cell competition to be analysed in greater detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Janardan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "a57d7ac2-36f8-4426-b124-1fccd9c88882",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C79",
+      "claim": "Recent studies have used the approach of having two sgRNAs both targeting the coding region immediately downstream of the start codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have used the approach of having two sgRNAs both targeting the coding region immediately downstream of the start codon with the expectation of maximizing the likelihood of a frameshift mutation to achieve loss of function (Port et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Port et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "c218d1d2-c86c-442c-80f2-ecef6cb4eead",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C80",
+      "claim": "The dgRNA containing transgenic flies target both the first and the last exon and result in complete deletion of the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, because our dgRNA containing transgenic flies target both the first and the last exon and result in complete deletion of the gene, the subsequent introduction of a copy of the gene with homologous arms (Baena-Lopez et al., 2013) would result in gene knock-ins and reconstitution of function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the approach described in the study, with citation to Baena-Lopez et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "73d9f2e1-ddd5-4d88-81a9-afcf1dafe7e8",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C81",
+      "claim": "In the case of the PI4P 5-kinase sktl, eye-specific deletion resulted in morphologically normal looking eyes because cells lacking sktl were eliminated early in eye disc development.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the case of the PI4P 5-kinase sktl, eye-specific deletion resulted in morphologically normal looking eyes. The reason for this was most likely that cells lacking sktl were eliminated (due to the essential nature of the gene product) early in eye disc development and only those cells with indels that are multiples of three bases thus possibly producing a partially functional protein survived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations and sequencing data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "5bf53a03-74dc-45ab-bff1-41fa85f2e9c6",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C82",
+      "claim": "The residual protein in eye-specific editing of rdgB most likely results from the long half-life of the protein that was present from early development.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore speculate that the residual protein in eye-specific editing of rdgB most likely results from the long half-life of the protein that was present from early development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "321ba31a-1846-4f76-8292-1d8e6ca38d44",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C83",
+      "claim": "The lack of a phenotype in tissue-specific gene disruptions using dgRNA will not be conclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, absence of phenotypes in these tissue-specific gene disruptions using dgRNA will not be conclusive and under these circumstances, generation of a germline knock out would be valuable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the limitations observed in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "ca8dc24d-5c07-482d-8f0f-bad20e5e5ade",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C84",
+      "claim": "Out of 103 genes, 102 gave the desired deletion product when crossed to Act5c-Cas9 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Once generated, all the dgRNA transgenics were crossed to Act5c-Cas9 (BDSC 54590: y1 M{Act5C-Cas9.P}ZH-2A w*) flies and larval progeny were tested for deletions by PCR and sequencing. Out of 103 genes, 102 gave the desired deletion product, while one did not give a band of the expected length (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from testing the dgRNA lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "c20bd8f1-7c25-44ed-9061-26b1126a3ecb",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C85",
+      "claim": "One dgRNA did not give a band of the expected length when crossed to Act5c-Cas9 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 103 genes, 102 gave the desired deletion product, while one did not give a band of the expected length (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from testing the dgRNA lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "47d907d3-b3e4-4091-baf0-d98299fbd57a",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C86",
+      "claim": "Deletion of Pten resulted in a wing blade larger than that of controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, deletion of Pten resulted in a wing blade larger than that of controls while deletion of Dp110 and akt both resulted in a reduction in the size of the wing blade.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "8f8f56b0-8f58-4ade-98bd-e2c7c51bf4d5",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C87",
+      "claim": "Deletion of Dp110 and akt both resulted in a reduction in the size of the wing blade.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, deletion of Pten resulted in a wing blade larger than that of controls while deletion of Dp110 and akt both resulted in a reduction in the size of the wing blade.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "c0d17d27-b114-4282-b073-a2e7400480dd",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C88",
+      "claim": "Target locus deletion was seen irrespective of presence or absence of phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "It was observed that target locus deletion was seen irrespective of presence or absence of phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "6381ae99-72e3-4cd6-8bef-9820a06ad68e",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C89",
+      "claim": "The absence of a phenotype when some genes are deleted is not a consequence of the lack of a deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the absence of a phenotype when some genes are deleted is not a consequence of the lack of a deletion; rather these may be examples where the protein pre-existing in the precursor cells perdures despite the gene being subsequently deleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the PCR data showing deletions even without phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "ed028737-3d58-46e8-b014-709aab12d29c",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C90",
+      "claim": "The Drosophila eye is composed of ~800 regularly arranged ommatidia.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila eye is composed of ~800 regularly arranged ommatidia, each containing eight photoreceptor neurons making the Drosophila eye an attractive tissue to study neurodegenerative diseases like Huntington's disease (Krench and Littleton, 2013) and screen for genes and genetic modifiers involved in neural development (Ma et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila eye anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "a31c169c-0f89-4a76-bec7-ab9a303f2bf4",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C91",
+      "claim": "Each ommatidium contains eight photoreceptor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila eye is composed of ~800 regularly arranged ommatidia, each containing eight photoreceptor neurons making the Drosophila eye an attractive tissue to study neurodegenerative diseases like Huntington's disease (Krench and Littleton, 2013) and screen for genes and genetic modifiers involved in neural development (Ma et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila eye anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "23f9420c-19b4-4d30-b7d3-d20785258727",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C92",
+      "claim": "The Drosophila eye is an attractive tissue to study neurodegenerative diseases like Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila eye is composed of ~800 regularly arranged ommatidia, each containing eight photoreceptor neurons making the Drosophila eye an attractive tissue to study neurodegenerative diseases like Huntington's disease (Krench and Littleton, 2013) and screen for genes and genetic modifiers involved in neural development (Ma et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Krench and Littleton, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "843565cb-6769-43c1-88ac-4c48a7bc271d",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C93",
+      "claim": "Photoreceptor neurons are an excellent model for phototransduction which in flies is largely dependent on PI signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, photoreceptor neurons are an excellent model for phototransduction which in flies is largely dependent on PI signaling (Raghu et al., 2012) and dysregulation of PI signaling leads to defects in the development, cellular structure and functions of the eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Raghu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "cee4bcc0-6567-4904-8332-4e3c02640b08",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C94",
+      "claim": "Dysregulation of PI signaling leads to defects in the development, cellular structure and functions of the eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, photoreceptor neurons are an excellent model for phototransduction which in flies is largely dependent on PI signaling (Raghu et al., 2012) and dysregulation of PI signaling leads to defects in the development, cellular structure and functions of the eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the citation to Raghu et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "481e5710-4b67-4f4b-9289-de42fa67293d",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C95",
+      "claim": "eyeless (ey) is expressed very early on in the eye primordia in the embryo and before the formation of the morphogenetic furrow.",
+      "claim_type": "EXPLICIT",
+      "source": "eyeless (ey) is expressed very early on in the eye primordia in the embryo and before the formation of the morphogenetic furrow at the time of photoreceptor determination in the third instar larva (Halder et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Halder et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "90a78eb1-7dce-462e-8003-433e13c55469",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "claim_id": "C96",
+      "claim": "ey is also expressed in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ey is also expressed in neurons (Callaerts et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Callaerts et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e2b935e6-9ae8-4933-8ce2-f587304442fa",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated a comprehensive CRISPR-based genome editing toolkit targeting 103 PI signaling genes in Drosophila. This involved sequencing genomes to avoid SNPs, designing dual gRNAs targeting first and last exons, and validating functionality in both cell culture and flies, with 102 of 103 dgRNA lines producing expected deletions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C34 and C84-C85 collectively demonstrate successful generation and validation of the dgRNA toolkit. The genomic sequencing approach (C30-C33) ensured gRNA specificity across genetic backgrounds, the dual-gRNA design strategy (C34) was clearly described, and functional validation showed 102/103 lines worked as expected (C84-C85). The experimental evidence from PCR, sequencing, and multiple validation approaches strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "95b85a12-939f-4bc3-b3a5-97a9068fcab8",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors validated tissue-specific CRISPR knockout of ocrl in nephrocytes, demonstrating complete loss of OCRL protein by western blot, immunostaining, and PCR detection of genomic deletions specifically in nephrocytes but not in whole body controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 provide converging evidence from multiple orthogonal methods (western blot, immunostaining, PCR) all showing complete loss of OCRL protein in tissue-specific knockouts. The specificity is demonstrated by presence of deletion bands only in appropriate tissues (C38, C39). This represents strong validation of the tissue-specific editing capability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "a6bccd7e-1abf-4315-b749-1fdd4188607a",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors generated and validated a novel UAS-Cas9-T2A-eGFP construct that expresses Cas9 and eGFP as independent proteins, with Cas9 showing nuclear localization and functional gene editing capability. This construct provides advantages over existing tools by marking Cas9-expressing cells with eGFP while avoiding potential fusion protein artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 and C73-C76 demonstrate successful generation and validation of the construct through western blot (C40-C41), functional deletion assays (C42), and immunostaining showing nuclear localization (C43). The design features (C73-C76) are logical and well-justified. The functional validation in both cell culture and flies supports the utility of this reagent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "d11eb4d7-0061-483a-a758-220668d37a79",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors performed a tissue-specific screen in the Drosophila eye using the dgRNA toolkit, identifying functions for 30 PI signaling genes in eye development including 9 genes not previously implicated. The screen demonstrated tissue-specific deletions and revealed phenotypes including altered eye size for genes like Dp110.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 and C70-C71 demonstrate successful tissue-specific screening with clear phenotypes. PCR evidence confirms tissue-specific deletions (C44), and quantitative phenotypic analysis shows significant effects (C47-C48). The identification of 30 genes with functions in eye development, including 9 novel genes (C70-C71), represents a substantial contribution. The comparison with RNAi showing stronger CRISPR phenotypes (C47-C48) validates the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "4f8c6e92-c879-40fc-9178-b3ceaeb0cab8",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors demonstrated genetic interaction analysis by simultaneously targeting Dp110 and Pten, showing that double knockout produces an intermediate eye size phenotype, consistent with these genes having opposing biochemical functions in PIP2/PIP3 interconversion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 show successful multi-gene targeting with phenotypes consistent with known biochemical functions (C51-C52). The intermediate phenotype in double knockouts (C50, C53) demonstrates genetic interaction and validates the approach for epistasis analysis. The quantitative data in Figure 5C supports the intermediate phenotype claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "c89fcd78-7a3b-4f35-bdfe-38ac203babc8",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors generated germline knockouts for 48 genes using the dgRNA toolkit with high efficiency (4-100% in F1, 3-70% in F2), producing deletions ranging from 400 bp to 38 kb. For 13 genes, germline deletions could not be obtained, possibly due to essential roles in gametogenesis or embryogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 document systematic germline knockout generation with quantitative efficiency data provided in Supplementary file 1. The rdgB knockout validation (C57) with ERG recordings matching classical alleles provides strong functional validation. The range of deletion sizes (C60) and documentation of failures (C61) demonstrates thoroughness. The efficiency ranges are reasonable for CRISPR-based approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "78c77869-55b7-4ee4-b31c-1a944a3cb67f",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors identified a limitation of tissue-specific editing for rdgB, where eye-specific Cas9 expression failed to deplete RDGB protein levels despite genomic deletion, likely due to protein perdurance. In contrast, germline knockout showed complete protein loss and expected ERG phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 provide clear evidence of the limitation through western blots showing residual protein (C62), normal ERG recordings (C63), and contrast with successful germline knockout (C64-C65). The speculation about protein half-life (C82) is reasonable given the data, though not definitively proven. This represents an important caveat for the methodology that is honestly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "93ea02a3-b97e-4398-adaf-90069914a08f",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors identified another limitation where eye-specific deletion of the essential gene sktl resulted in morphologically normal eyes. Sequencing revealed that 132/141 F2 flies had in-frame indels maintaining the kinase domain, suggesting selection for cells with partially functional protein during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 and C81 document this limitation with sequencing data showing predominantly in-frame indels (C68). The inference that only cells with partially functional protein survived (C69, C81) is reasonable given the essential nature of sktl (C67) and the sequencing results. This represents another important caveat that is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "b91be2ff-7007-4fc4-9508-966c8563a05a",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors demonstrated applicability of the toolkit beyond the eye by showing tissue-specific deletions in the wing, where Pten deletion increased wing size while Dp110 and akt deletions reduced wing size, consistent with known roles in growth control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 demonstrate the toolkit works in multiple tissues with phenotypes consistent with established gene functions. The wing phenotypes validate the broader applicability of the approach beyond the eye screen. Figure 4E provides visual evidence supporting these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "32277f94-741d-48bb-8c1c-1de63b63cb31",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors found that genomic deletions occurred even in cases without observable phenotypes, indicating that absence of phenotype does not necessarily mean absence of deletion, but may reflect protein perdurance or other factors. They conclude that germline knockouts may be necessary when tissue-specific approaches fail to produce phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 are supported by PCR data in Figure 4\u2014figure supplement 2 showing deletions regardless of phenotype. The conclusion (C83) that absence of phenotype is not conclusive is appropriately cautious and supported by the rdgB and sktl examples. This represents important guidance for users of the toolkit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "2f3b62f4-f21a-4caf-a221-db72681da8e4",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors provide background on PI signaling, describing the seven PIs generated by combinatorial phosphorylation, their roles in cellular processes, involvement in development across species, links to human diseases, and the identification of 103 conserved PI signaling genes in Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 represent well-established background knowledge supported by appropriate citations. These claims provide context for the study but do not represent novel findings. The annotation of 103 PI signaling genes (C21) is based on prior work (Balakrishnan et al., 2015) and serves as the foundation for the current toolkit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "363c0147-36a2-4887-81e2-36af3a59e813",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors provide methodological background on the GAL4/UAS system for spatial/temporal control in Drosophila, the emergence of CRISPR/Cas9 for genome editing, the availability of genome-wide RNAi resources, and the specificity requirements for CRISPR targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C29 represent established methodological knowledge supported by appropriate citations. These provide important context for why the current toolkit was needed and how it was designed, but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "aa87a39c-ceef-480d-bce0-a28504cb12fe",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors describe the overall scope and contributions of the study, including generation of CRISPR tools for spatial/temporal manipulation of PI signaling proteins, identification of new molecules controlling eye development, and provision of reagents for editing 72 PI binding proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C5, C28, and C72 represent accurate summary statements of the study's contributions that are supported by the detailed results. These are appropriate framing claims that are validated by the specific experimental results described in other claim groups.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "3a2dbbf1-4a85-4e2c-93e8-8c2d6b22cf8e",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss potential applications and design considerations, including use with CoinFLP for mosaic analysis, relevance to cell competition studies, comparison with alternative gRNA design strategies, and potential for gene knock-in approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C80 represent discussion of potential applications and design rationale rather than demonstrated results. While C77-C78 cite relevant prior work, these applications are not experimentally validated in the current study. C79-C80 discuss design choices but do not provide experimental comparison with alternative approaches. These represent reasonable speculation but lack direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "917df1f5-841b-4657-97a6-15700511ec95",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors provide background on the Drosophila eye as a model system, describing its structure (~800 ommatidia with 8 photoreceptors each), utility for studying neurodegeneration and development, dependence on PI signaling for phototransduction, and the expression pattern of the eyeless gene used to drive Cas9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C96 represent established knowledge about the Drosophila eye model system supported by appropriate citations. These provide important context for why the eye was chosen for the screen but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    },
+    {
+      "id": "7612334a-79a2-43e8-80f7-29ef47d71180",
+      "content_id": "22f47001-23ee-4419-b5d0-061e76ad0ce5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors cite prior work establishing roles for specific PI signaling genes, including PI3K in cell growth and RDGB in phototransduction, to provide context for their findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C54-C56 represent accurate citations of prior work that provide context for interpreting the current results. These are appropriately used to validate that the toolkit recapitulates known phenotypes, but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:57:51.209972Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eadd115d-04c4-4250-a360-442c8dc89624",
+      "result_id": "e2b935e6-9ae8-4933-8ce2-f587304442fa"
+    },
+    {
+      "claim_id": "e2bd1849-6e6b-4e16-b8f2-2ae8e5a318bd",
+      "result_id": "e2b935e6-9ae8-4933-8ce2-f587304442fa"
+    },
+    {
+      "claim_id": "db553e06-65c1-48c3-b107-6762dc7d304f",
+      "result_id": "e2b935e6-9ae8-4933-8ce2-f587304442fa"
+    },
+    {
+      "claim_id": "5bce33d2-3bdd-44d7-ac0f-abb99660efe9",
+      "result_id": "e2b935e6-9ae8-4933-8ce2-f587304442fa"
+    },
+    {
+      "claim_id": "20a97115-136b-4a0d-8884-3ba9c15055b4",
+      "result_id": "e2b935e6-9ae8-4933-8ce2-f587304442fa"
+    },
+    {
+      "claim_id": "911667e0-f427-41ea-b1f5-c620ae07449b",
+      "result_id": "e2b935e6-9ae8-4933-8ce2-f587304442fa"
+    },
+    {
+      "claim_id": "9fc9f287-d288-4a1c-a015-766308b3224f",
+      "result_id": "e2b935e6-9ae8-4933-8ce2-f587304442fa"
+    },
+    {
+      "claim_id": "ca8dc24d-5c07-482d-8f0f-bad20e5e5ade",
+      "result_id": "e2b935e6-9ae8-4933-8ce2-f587304442fa"
+    },
+    {
+      "claim_id": "c20bd8f1-7c25-44ed-9061-26b1126a3ecb",
+      "result_id": "e2b935e6-9ae8-4933-8ce2-f587304442fa"
+    },
+    {
+      "claim_id": "0b279fca-205a-41a3-beab-e730ef073503",
+      "result_id": "95b85a12-939f-4bc3-b3a5-97a9068fcab8"
+    },
+    {
+      "claim_id": "a474ac07-b7eb-4e98-ba84-28adc3327ce3",
+      "result_id": "95b85a12-939f-4bc3-b3a5-97a9068fcab8"
+    },
+    {
+      "claim_id": "31978425-623f-42cc-ad47-78949efb97e5",
+      "result_id": "95b85a12-939f-4bc3-b3a5-97a9068fcab8"
+    },
+    {
+      "claim_id": "dac3c3aa-93e4-48f2-a282-a4b97b922720",
+      "result_id": "95b85a12-939f-4bc3-b3a5-97a9068fcab8"
+    },
+    {
+      "claim_id": "33e263d5-5308-48db-90cb-bf0c3e688bc5",
+      "result_id": "95b85a12-939f-4bc3-b3a5-97a9068fcab8"
+    },
+    {
+      "claim_id": "e056b082-2a68-4488-a895-3b81703ab5a7",
+      "result_id": "a6bccd7e-1abf-4315-b749-1fdd4188607a"
+    },
+    {
+      "claim_id": "73beea25-3a25-4bf8-ad47-877ddcb1e913",
+      "result_id": "a6bccd7e-1abf-4315-b749-1fdd4188607a"
+    },
+    {
+      "claim_id": "e381e2a7-08b2-4e54-a71e-e168088c0015",
+      "result_id": "a6bccd7e-1abf-4315-b749-1fdd4188607a"
+    },
+    {
+      "claim_id": "ba6fa83a-fd07-4c87-ab39-214bdcdcd03f",
+      "result_id": "a6bccd7e-1abf-4315-b749-1fdd4188607a"
+    },
+    {
+      "claim_id": "36f5f707-bdf2-4be0-bfbe-7dfd96f2596c",
+      "result_id": "a6bccd7e-1abf-4315-b749-1fdd4188607a"
+    },
+    {
+      "claim_id": "77dfdd23-2e99-4c6c-b9a4-893f2a91ff88",
+      "result_id": "a6bccd7e-1abf-4315-b749-1fdd4188607a"
+    },
+    {
+      "claim_id": "d7978345-8b13-4dde-ba37-f8dbd91b1779",
+      "result_id": "a6bccd7e-1abf-4315-b749-1fdd4188607a"
+    },
+    {
+      "claim_id": "0f1ddd9f-3478-43fe-84b0-5e368748b004",
+      "result_id": "a6bccd7e-1abf-4315-b749-1fdd4188607a"
+    },
+    {
+      "claim_id": "8089010e-bc71-4570-8f5a-7f75c5ad50d3",
+      "result_id": "d11eb4d7-0061-483a-a758-220668d37a79"
+    },
+    {
+      "claim_id": "38d912ef-6ea4-4562-8e28-2cfbf0a0e908",
+      "result_id": "d11eb4d7-0061-483a-a758-220668d37a79"
+    },
+    {
+      "claim_id": "5b7d73f5-9edc-4af8-a092-8c798f13528f",
+      "result_id": "d11eb4d7-0061-483a-a758-220668d37a79"
+    },
+    {
+      "claim_id": "3f00ec24-6c9a-4450-869a-91df1cceb9cd",
+      "result_id": "d11eb4d7-0061-483a-a758-220668d37a79"
+    },
+    {
+      "claim_id": "a9efb43b-b93f-4215-9fd5-5ba352b28a6a",
+      "result_id": "d11eb4d7-0061-483a-a758-220668d37a79"
+    },
+    {
+      "claim_id": "7478dd92-a458-44b7-95d5-77a52465c0fe",
+      "result_id": "d11eb4d7-0061-483a-a758-220668d37a79"
+    },
+    {
+      "claim_id": "67e2133a-3ee1-4632-8909-34e38d5afedc",
+      "result_id": "d11eb4d7-0061-483a-a758-220668d37a79"
+    },
+    {
+      "claim_id": "bd440ada-1982-40a4-aecb-6f03f69594fe",
+      "result_id": "4f8c6e92-c879-40fc-9178-b3ceaeb0cab8"
+    },
+    {
+      "claim_id": "2dc8c173-c251-4d1f-bb6a-17a9c0d3d7a7",
+      "result_id": "4f8c6e92-c879-40fc-9178-b3ceaeb0cab8"
+    },
+    {
+      "claim_id": "12f6af69-2df2-4dce-a3dc-22b112026a99",
+      "result_id": "4f8c6e92-c879-40fc-9178-b3ceaeb0cab8"
+    },
+    {
+      "claim_id": "46ee29e2-4355-4d53-97c8-eb212d6ce3b7",
+      "result_id": "4f8c6e92-c879-40fc-9178-b3ceaeb0cab8"
+    },
+    {
+      "claim_id": "71ed2380-4d3c-42f0-adc2-9e6453a3c061",
+      "result_id": "4f8c6e92-c879-40fc-9178-b3ceaeb0cab8"
+    },
+    {
+      "claim_id": "4deb0649-4fce-4d55-ba1d-4b7c7c9195a4",
+      "result_id": "c89fcd78-7a3b-4f35-bdfe-38ac203babc8"
+    },
+    {
+      "claim_id": "5462a0b0-8f8a-4ca7-b736-5b6f35b8bcb6",
+      "result_id": "c89fcd78-7a3b-4f35-bdfe-38ac203babc8"
+    },
+    {
+      "claim_id": "85bb004f-e12c-4b7f-a4ab-3734a4684e52",
+      "result_id": "c89fcd78-7a3b-4f35-bdfe-38ac203babc8"
+    },
+    {
+      "claim_id": "fe58eaf5-5df7-4c9a-968c-b7d4ba76ad0f",
+      "result_id": "c89fcd78-7a3b-4f35-bdfe-38ac203babc8"
+    },
+    {
+      "claim_id": "1afb68c1-0a42-4072-93c1-f2804cd6c0bf",
+      "result_id": "c89fcd78-7a3b-4f35-bdfe-38ac203babc8"
+    },
+    {
+      "claim_id": "ffea5da5-2294-43c7-8546-34ed39d88736",
+      "result_id": "78c77869-55b7-4ee4-b31c-1a944a3cb67f"
+    },
+    {
+      "claim_id": "4477e54b-de04-44ed-8add-98a581fe8f7f",
+      "result_id": "78c77869-55b7-4ee4-b31c-1a944a3cb67f"
+    },
+    {
+      "claim_id": "c49652c0-c7c6-41f2-9b03-074ce084e438",
+      "result_id": "78c77869-55b7-4ee4-b31c-1a944a3cb67f"
+    },
+    {
+      "claim_id": "7418d0f7-3284-410d-a3a4-40a5f39dfebb",
+      "result_id": "78c77869-55b7-4ee4-b31c-1a944a3cb67f"
+    },
+    {
+      "claim_id": "5bf53a03-74dc-45ab-bff1-41fa85f2e9c6",
+      "result_id": "78c77869-55b7-4ee4-b31c-1a944a3cb67f"
+    },
+    {
+      "claim_id": "4d61948d-98fd-4661-a16f-984863e28f99",
+      "result_id": "93ea02a3-b97e-4398-adaf-90069914a08f"
+    },
+    {
+      "claim_id": "4dc1d7d7-e5c8-41f6-9e42-92e1426c47b3",
+      "result_id": "93ea02a3-b97e-4398-adaf-90069914a08f"
+    },
+    {
+      "claim_id": "3ad1a7a5-280a-49a4-b945-5d2b543267f2",
+      "result_id": "93ea02a3-b97e-4398-adaf-90069914a08f"
+    },
+    {
+      "claim_id": "75da81b3-fc82-4fed-b507-c946958ea522",
+      "result_id": "93ea02a3-b97e-4398-adaf-90069914a08f"
+    },
+    {
+      "claim_id": "73d9f2e1-ddd5-4d88-81a9-afcf1dafe7e8",
+      "result_id": "93ea02a3-b97e-4398-adaf-90069914a08f"
+    },
+    {
+      "claim_id": "47d907d3-b3e4-4091-baf0-d98299fbd57a",
+      "result_id": "b91be2ff-7007-4fc4-9508-966c8563a05a"
+    },
+    {
+      "claim_id": "8f8f56b0-8f58-4ade-98bd-e2c7c51bf4d5",
+      "result_id": "b91be2ff-7007-4fc4-9508-966c8563a05a"
+    },
+    {
+      "claim_id": "c0d17d27-b114-4282-b073-a2e7400480dd",
+      "result_id": "32277f94-741d-48bb-8c1c-1de63b63cb31"
+    },
+    {
+      "claim_id": "6381ae99-72e3-4cd6-8bef-9820a06ad68e",
+      "result_id": "32277f94-741d-48bb-8c1c-1de63b63cb31"
+    },
+    {
+      "claim_id": "321ba31a-1846-4f76-8292-1d8e6ca38d44",
+      "result_id": "32277f94-741d-48bb-8c1c-1de63b63cb31"
+    },
+    {
+      "claim_id": "a09b1349-78c7-44a3-94b7-58c402c9422a",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "23ac97e5-67e5-43f6-ab4f-b74510bc6172",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "322bff57-1867-4769-83f6-2b1c63c8673e",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "71dc6ed6-17ea-4abe-9127-bcd56661230c",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "0ab7540a-3666-414a-bb76-d9d5149394a7",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "40eedba4-65c6-423f-801b-c8868b7c4494",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "2a24d0ca-22f8-4625-96f2-42a6fc3ca45d",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "026df1de-63e8-427c-b4f4-e8da83b8b1d5",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "272b74e0-9771-4652-af0a-09fffbc671c1",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "75753072-6f69-49a7-bccc-9f98cdc8b6cf",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "7cbe6d63-8c21-426c-a298-9eda1b9c6853",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "d85cab0c-c702-4ba1-afa0-a8f5c0bb7617",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "c12a43bb-8181-4bc9-ac8a-fb959c6d0a9a",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "c9fccbb2-bb2d-4846-8b87-fe247391b429",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "df2d0f0b-2b4a-4bae-acba-3749ab9a8cbe",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "33fdc602-d078-42be-8e02-b72ad0d4bbe0",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "25ab4e14-e32c-4b09-b579-6fbc773b7f64",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "1c797072-91f9-4e14-8986-30bf6c11d713",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "bfb1cf74-a9f4-4eec-87a6-def1dbfd9f2e",
+      "result_id": "2f3b62f4-f21a-4caf-a221-db72681da8e4"
+    },
+    {
+      "claim_id": "be4372f5-78d1-4ef4-9359-466c759f2712",
+      "result_id": "363c0147-36a2-4887-81e2-36af3a59e813"
+    },
+    {
+      "claim_id": "20c40343-633f-411e-82dc-b216e21fbc91",
+      "result_id": "363c0147-36a2-4887-81e2-36af3a59e813"
+    },
+    {
+      "claim_id": "c81197d1-cfda-4af2-a7e3-040583894a6c",
+      "result_id": "363c0147-36a2-4887-81e2-36af3a59e813"
+    },
+    {
+      "claim_id": "e4a07cf1-6556-43c5-80a2-10bf1483de16",
+      "result_id": "363c0147-36a2-4887-81e2-36af3a59e813"
+    },
+    {
+      "claim_id": "613a68fe-a1d2-47a0-abdc-01060a2e2502",
+      "result_id": "aa87a39c-ceef-480d-bce0-a28504cb12fe"
+    },
+    {
+      "claim_id": "e704467f-0299-4a88-a49a-a3485ac9f89c",
+      "result_id": "aa87a39c-ceef-480d-bce0-a28504cb12fe"
+    },
+    {
+      "claim_id": "a9c777a0-0680-4b12-9d6d-f45961c4a05f",
+      "result_id": "aa87a39c-ceef-480d-bce0-a28504cb12fe"
+    },
+    {
+      "claim_id": "f32710e8-3503-46e2-90bc-0e065c746606",
+      "result_id": "aa87a39c-ceef-480d-bce0-a28504cb12fe"
+    },
+    {
+      "claim_id": "d449a718-de24-4ba4-99ca-30582fc846ea",
+      "result_id": "3a2dbbf1-4a85-4e2c-93e8-8c2d6b22cf8e"
+    },
+    {
+      "claim_id": "bd21a46b-4f94-4964-82d0-6b0bdf5e5d77",
+      "result_id": "3a2dbbf1-4a85-4e2c-93e8-8c2d6b22cf8e"
+    },
+    {
+      "claim_id": "a57d7ac2-36f8-4426-b124-1fccd9c88882",
+      "result_id": "3a2dbbf1-4a85-4e2c-93e8-8c2d6b22cf8e"
+    },
+    {
+      "claim_id": "c218d1d2-c86c-442c-80f2-ecef6cb4eead",
+      "result_id": "3a2dbbf1-4a85-4e2c-93e8-8c2d6b22cf8e"
+    },
+    {
+      "claim_id": "ed028737-3d58-46e8-b014-709aab12d29c",
+      "result_id": "917df1f5-841b-4657-97a6-15700511ec95"
+    },
+    {
+      "claim_id": "a31c169c-0f89-4a76-bec7-ab9a303f2bf4",
+      "result_id": "917df1f5-841b-4657-97a6-15700511ec95"
+    },
+    {
+      "claim_id": "23f9420c-19b4-4d30-b7d3-d20785258727",
+      "result_id": "917df1f5-841b-4657-97a6-15700511ec95"
+    },
+    {
+      "claim_id": "843565cb-6769-43c1-88ac-4c48a7bc271d",
+      "result_id": "917df1f5-841b-4657-97a6-15700511ec95"
+    },
+    {
+      "claim_id": "cee4bcc0-6567-4904-8332-4e3c02640b08",
+      "result_id": "917df1f5-841b-4657-97a6-15700511ec95"
+    },
+    {
+      "claim_id": "481e5710-4b67-4f4b-9289-de42fa67293d",
+      "result_id": "917df1f5-841b-4657-97a6-15700511ec95"
+    },
+    {
+      "claim_id": "90a78eb1-7dce-462e-8003-433e13c55469",
+      "result_id": "917df1f5-841b-4657-97a6-15700511ec95"
+    },
+    {
+      "claim_id": "2a19d0ba-b7eb-4e95-95fd-de29f9d14272",
+      "result_id": "7612334a-79a2-43e8-80f7-29ef47d71180"
+    },
+    {
+      "claim_id": "5a1aaef3-db84-42d3-99a7-bf7cddfe0615",
+      "result_id": "7612334a-79a2-43e8-80f7-29ef47d71180"
+    },
+    {
+      "claim_id": "9862f71e-7380-45d4-9619-d3c4fe21a764",
+      "result_id": "7612334a-79a2-43e8-80f7-29ef47d71180"
+    },
+    {
+      "claim_id": "47023336-7f75-4249-830e-995ed942c8f6",
+      "result_id": "7612334a-79a2-43e8-80f7-29ef47d71180"
+    }
+  ],
+  "comparisons": []
+}

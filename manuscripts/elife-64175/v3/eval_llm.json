@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "AAV-mediated gene therapies are advancing clinically with FDA approvals, but face challenges including efficient gene delivery and immune responses. AAV engineering has produced improved vectors to address these issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C12 establish the clinical context and motivation for the study. These are well-supported by established knowledge in gene therapy (C1, C2, C11, C12), specific FDA approvals (C10), and citations to published literature (C9, C12). This provides appropriate background for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Quantitative comparison of AAV vectors in large animals is challenging due to the need for large animal numbers and high inter-animal variability in primates. Optimal vector selection is critical for gene therapy success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13-C17 establish the problem that the scAAVengr method addresses. These claims are supported by established knowledge of traditional AAV screening challenges (C16, C17) and logical inference about gene therapy requirements (C13-C15). This provides clear motivation for developing the new method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Primates are the most physiologically relevant preclinical model for retinal gene therapy as they are the only animal with a macula and foveal pit, and AAV performance in small animals does not predict primate efficiency. AAV expression patterns differ between foveal and peripheral retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 justify the use of primates for AAV screening. These are well-supported by established knowledge in comparative biology (C18, C22), translational research (C19, C20), and citations to published literature (C21, C23-C25). This provides strong rationale for the experimental model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C76",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The scAAVengr pipeline enables simultaneous quantitative comparison of multiple AAV vectors across all cell types in the same animal with single-cell resolution. The method is applicable to any tissue with identifiable marker genes and provides rapid evaluation of AAV clinical potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26, C76, C90-C92 describe the core methodological contribution. C4 is supported by experimental data throughout the manuscript. C26 and C90 are supported by validation in multiple tissues (primate retina, mouse brain/heart/liver). C76, C91, C92 are reasonable inferences about the method's capabilities based on demonstrated performance. The method is well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C93",
+      "C94"
+    ],
+    "result": "Directed evolution was performed in canine retina using pooled AAV2-based libraries. Deep sequencing revealed ~4.8E+6 variants in the AAV2-7mer library, which converged to ~7.1E+4 variants after five rounds of selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C93-C94 describe the directed evolution experiments in dogs. These are supported by experimental data (C32, C35, C93, C94) and citations to published methods (C33, C34). The library diversity and convergence are quantified by deep sequencing data shown in Figure 1\u2014figure supplement 1B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Top-performing variants from directed evolution were identified based on fold increase during selection rather than final abundance. K916 (PAPQDTTKKA insertion) was top-ranked by DNA recovery, K912 (LAPDSTTRSA insertion) by mRNA recovery, and K91 (LAHQDTTKNA insertion) was the convergent variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 identify specific variants and establish the selection criteria. C36-C38 are supported by experimental data from deep sequencing. C39 is supported by citation to previous work (Byrne et al., 2020) and inference from current data showing K91 did not outperform other variants despite high abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C95"
+    ],
+    "result": "A 17-member scAAVengr library of GFP-barcoded AAV vectors was created and injected intravitreally into 3 non-human primates (2 marmosets, 1 cynomolgus macaque). Eight weeks post-injection, GFP expression was evident in retinas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C95 describe the scAAVengr library construction and injection. These are supported by experimental data describing library composition (C40), injection procedures (C41), timeline (C42), and GFP expression (C95, Figure 1B-E). The experimental design is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Single-cell RNA-seq identified all major retinal cell types in marmosets and macaques. Statistical analysis revealed significant differences in infection rates (p<0.001, Friedman's test). K912 was the top canine variant, NHP26 the top primate variant, while convergent variant K91 did not outperform parental serotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 present key scAAVengr results. C43 is supported by experimental data and citation to previous work (Peng et al., 2019). C44 is supported by statistical analysis with appropriate non-parametric test. C45-C47 are supported by experimental data shown in Figures 3-4. The statistical approach is appropriate for the non-normal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Newly engineered K9 variants and NHP26 infected inner and outer retinal cells in primates. Infection was most efficient in RGCs and M\u00fcller glia, particularly in the macula. Marmosets showed higher infection rates than cynomolgus macaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe cell-type-specific infection patterns. C48 is supported by data in Figure 3. C49 combines experimental data with inference about anatomical barriers. C50 is supported by comparative data between species. The observations are consistent across multiple metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "K912 was the overall best performing variant across all retinal cell types, while NHP26 was the top primate-derived variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 identify the top-performing variants. These are supported by experimental data shown in Figure 4, which plots infection efficiency vs. expression level across cell types. The ranking is based on quantitative metrics from multiple animals and retinal regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C82",
+      "C83"
+    ],
+    "result": "Multiple AAV serotypes can infect individual cells (up to 8 in marmoset, 3 in macaque), with the majority infected by K912. This suggests competition between variants does not inhibit infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C82-C83 analyze co-infection patterns. C54-C56 are supported by experimental data in Figure 5A (upset plots). C82 is supported by the same data. C83 is an inference from the co-infection observations. However, the inference about lack of competition (C83) could be strengthened with additional controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C84"
+    ],
+    "result": "In vitro experiments in HEK293 cells demonstrate that pooling AAV variants does not impede infection of library members in terms of cell numbers infected or expression levels, validating the pooled screening approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C84 validate the pooled library approach. C57-C58 are supported by experimental data in Figure 5B showing stable infection and expression across conditions. C59 and C84 are inferences from this data. The in vitro validation supports the in vivo pooled screening, though in vivo confirmation would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C81"
+    ],
+    "result": "At least ~E+5 AAV variants can be quantified using scAAVengr. From 8000 cells, all barcodes were recovered from 3- and 6-bp libraries, and ~100,000 unique barcodes from 9- and 14-bp libraries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C81 establish the scalability of the method. These are supported by experimental data from barcode recovery experiments shown in Figure 5C. The quantification is based on empirical testing with libraries of defined diversity. The estimate is conservative and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Individual validation of K912 with scCAG-GFP showed GFP expression in retinal flatmounts and cross-sections 10 weeks post-injection. Expression was higher in rods than cones and strongest in RGCs and M\u00fcller glia, particularly in the macula, consistent with scAAVengr results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 validate K912 performance independently. These are supported by experimental data from confocal imaging and histology shown in Figure 6A-G. The agreement between scAAVengr predictions and individual validation strengthens confidence in the screening method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C88",
+      "C89"
+    ],
+    "result": "K912 was used to deliver SaCas9 and edit the rhodopsin gene in macaque retina. Editing efficiency (1.8% in cynomolgus, 1.7% in rhesus) was similar to K912 infection rates detected by scAAVengr, validating that scRNA-seq accurately estimates viral gene delivery efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C66-C70, C88-C89 demonstrate functional validation through genome editing. C66 shows Cas9 expression by RT-PCR. C67-C70 show editing by deep sequencing. C69, C88-C89 compare editing to infection rates. The similarity between editing and infection rates (C7, C69, C88) validates the scAAVengr predictions. This is strong functional validation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C79",
+      "C80"
+    ],
+    "result": "scAAVengr screening in mouse brain, heart, and liver following systemic injection identified AAV8, AAV8-2YF, AAV9, AAV9-2YF, and AAVrh.10 as top performers, consistent with published tropism data. Retinal DE variants (K912, NHP9) did not efficiently infect these organs, indicating retinal-specific adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C71-C75, C79-C80 extend scAAVengr to systemic delivery in mice. C71-C72 are supported by experimental data in Figure 8. C73 validates results against published literature. C74-C75, C79-C80 show tissue specificity of variants. The agreement with published data (C73) and tissue-specific patterns support the method's validity across delivery routes and species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Marmoset eyes were more easily infected than cynomolgus macaques with greater infection percentages and more co-infections per cell. This may be due to smaller eye size, vitreous properties, or immunological factors, suggesting large primates better predict human gene delivery efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is supported by experimental data comparing species. However, C86 is speculation about mechanisms without experimental validation. C87 is an inference that large primates are better models, but this conclusion requires additional validation in humans or larger comparative studies. The observation is sound but mechanistic understanding is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The overall K912 infection rate of ~2% of total retinal cells suggests significant improvements in AAV transduction are needed for maximal therapeutic benefit via intravitreal injection. Whether capsid modification alone can overcome retinal barriers remains uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a reasonable inference from the experimental data on infection rates. C78 acknowledges uncertainty about future directions. These claims appropriately contextualize the limitations of current vectors and identify areas for future work. The assessment is balanced and scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "All animal procedures were performed with appropriate regulatory approvals. Dogs (7-17 months) had AAV2 neutralizing antibody titers <1:25. Non-human primates (3-10 years) had anti-AAV2 titers <1:5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 document regulatory compliance and subject characteristics. These are statements of fact about study conduct supported by institutional approvals and screening data. Appropriate documentation of animal welfare and experimental conditions.",
+    "result_type": "MINOR"
+  }
+]

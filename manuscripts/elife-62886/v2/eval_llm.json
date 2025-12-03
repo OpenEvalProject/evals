@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C88"
+    ],
+    "result": "DAG accumulates at sites of LD formation in yeast, and deletion of Pah1 (which converts PA to DAG) results in uniform ER localization of DAG and accumulation of NLs in the ER rather than in LDs. The ER-DAG sensor shows punctate localization in wild-type and NL synthesis-deficient cells, but uniform ER distribution in pah1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 and C88 are well-supported by experimental fluorescence microscopy data (Figure 1A) and citations to prior work (Choudhary et al., 2018, 2020; Adeyo et al., 2011). The experimental observations clearly demonstrate the differential DAG localization patterns in different genetic backgrounds, providing strong evidence for DAG's role in LD formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "MD simulations demonstrate that TG lens formation in DOPC bilayers occurs above 4% TG/PL concentration in a concentration-dependent manner. DAG promotes phase separation at low TG concentrations (<4%), accelerates blister formation, and preferentially induces blister formation in regions with higher DAG concentration. These results suggest DAG can promote LD biogenesis in a protein-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by computational MD simulation data (Figures 1C-E) that are consistent with prior computational work (Khandelia et al., 2010) and theoretical frameworks (Thiam and For\u00eaat, 2016). The simulations systematically demonstrate DAG's effect on TG blister formation across multiple conditions with appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MD simulations establish that TG blister formation follows equilibrium phase coexistence between the blister and bilayer, with an equilibrium TG concentration of 1.1 \u00b1 0.1% in DOPC bilayers. This is demonstrated by: (1) agreement with experimental values, (2) excess TG translocating to oil lenses, (3) size-independence of equilibrium concentration, and (4) blister dissolution below the threshold concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are well-supported by computational data (Figure 2) validated against experimental measurements (White, 1986; Hamilton et al., 1983). Multiple independent computational approaches converge on the phase coexistence model, including TG injection experiments, size-dependence studies, and dissolution experiments, providing strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "DAG depletes TG from lipid bilayers and promotes blister formation, providing a mechanistic explanation for why Pah1 deletion (which reduces DAG synthesis) results in NL accumulation in the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by computational data (Figures 1D, 2G) and are consistent with experimental observations from Pah1 deletion studies (Adeyo et al., 2011). The computational predictions align with the experimental phenotypes, strengthening the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "MD simulations reveal that ER-enriched lipids (PE, unsaturated lipids, cholesterol) promote TG blister formation and deplete TG from membranes, while lipids scarce in the ER (saturated lipids, short-chain lipids) oppose blister formation and promote TG accumulation in membranes. The ER membrane composition appears optimized to promote LD formation and minimize TG accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by systematic computational studies (Figure 3) testing multiple lipid compositions, with results for cholesterol validated against experimental NMR data (Spooner and Small, 1987). The comprehensive analysis across different lipid types provides strong evidence for the role of membrane composition in modulating TG distribution, though C38 includes some speculative interpretation about evolutionary optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "MD simulations show spontaneous PL de-mixing according to intrinsic curvature in multicomponent bilayers with TG blisters, with PE and DAG accumulating in regions of negative curvature. However, PL de-mixing alone is not sufficient to promote TG blister formation, as DPPC/DOPC mixtures show de-mixing even when blister formation is opposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by computational data (Figure 4A-C) that systematically test the relationship between PL de-mixing and blister formation. The observation that de-mixing occurs even when blister formation is opposed provides strong evidence against PL de-mixing as a sufficient driver of LD formation, refining prior theoretical models (Zanghellini et al., 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Nucleation energy decreases with excess TG in the bilayer, and changes in nucleation rate as a function of lipid composition are at least partly due to variations in TG bilayer chemical potential. This model agrees with experimental results showing membrane curvature affects LD formation by altering critical TG concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by computational analysis of nucleation energetics (Figure 4D) and are consistent with experimental work (Santinho et al., 2020). The correlation between nucleation energy and excess TG provides mechanistic insight into how lipid composition modulates LD formation through chemical potential changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Lateral pressure profile (LPP) analysis reveals that lipids promoting TG depletion (DAG, PE) increase positive pressure in hydrophobic chains, while lipids opposing blister formation (short-chain lipids) decrease chain pressure. Strong correlations exist between equilibrium TG concentration and both hydrophobic pressure and monolayer curvature stress, indicating pre-existing bilayer stresses predict TG accumulation propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by computational LPP calculations (Figure 4E-G) validated against atomistic simulations (Vamparys et al., 2013; Ding et al., 2015). The strong correlations between bilayer stresses and TG concentration provide mechanistic insight, though the coarse-grained force field introduces some quantitative uncertainty acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Both computational and experimental results demonstrate that increasing acyl chain saturation in TG and PLs promotes TG accumulation in membranes. In ole1ts yeast cells at non-permissive temperature, increased saturated fatty acids lead to BODIPY-positive ER structures, which are enhanced by palmitic acid supplementation and rescued by palmitoleic acid supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 are supported by both computational predictions (Figure 5A-B) and experimental validation using fluorescence microscopy (Figure 5C-F). The agreement between in silico predictions and in vivo observations, including the rescue experiments with different fatty acids, provides strong evidence for the role of lipid saturation in modulating TG distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Elo1\u0394 mutant cells show increased membrane-associated BODIPY fluorescence when cultivated with lauric acid (C12:0) compared to palmitic acid (C16:0), suggesting NLs accumulate in the ER in cells containing short-chain PLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by experimental fluorescence microscopy data (Figure 6) that validate the computational predictions about short-chain lipids. The differential response to lauric vs. palmitic acid provides clear evidence for chain-length effects on NL distribution, consistent with the computational model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The agreement between experimental results and computational predictions indicates the modeling approach faithfully reproduces molecular properties of LD formation in vivo, pointing to an important role of ER lipid composition and internal stresses in LD biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by the convergence of computational predictions with experimental validation across multiple conditions (Figures 5-6). The systematic agreement between in silico and in vivo results, despite the simplicity of the coarse-grained model, provides strong evidence for the validity of the approach and the importance of lipid composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Alterations in lipid homeostasis result in defects in LD formation and TG accumulation in the ER. The data suggest that seipin-independent ER properties (lipid composition) significantly alter LD formation propensity, and that spontaneous TG de-mixing can lead to LD formation via phase separation, with proteins acting as nucleation factors while PLs modulate de-mixing propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 synthesize prior experimental observations (Adeyo et al., 2011; Wang et al., 2016, 2018; Santinho et al., 2020) with the current computational and experimental results. The integration of multiple lines of evidence supports the proposed model where lipid composition modulates protein-initiated LD formation, though the relative contributions of protein vs. lipid factors require further quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C74"
+    ],
+    "result": "The equilibrium concentration of TG in the ER membrane is a major factor determining LD formation propensity. Early LD formation stages are dominated by specific molecular interactions between PLs and TG. The amount of TG in the ER at equilibrium is non-zero, and pre-existing lateral stresses in the membrane accurately predict TG condensation propensity. When nascent LDs form, excess TG flows to LDs without additional energy if free diffusion is permitted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C72, and C74 are supported by the computational phase coexistence model and correlation analyses (Figures 2, 4). The non-zero equilibrium TG concentration and its relationship to bilayer stresses provide mechanistic insights, though the implications for TG catabolism (C71) and the requirement for free diffusion (C72) involve some extrapolation beyond direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The ER membrane composition (high unsaturated lipids and PE) keeps TG at very low concentrations, promoting LD packaging and potentially preventing lipotoxicity. Increased saturated fatty acids in yeast promote TG accumulation in the ER, potentially providing a new explanation for saturated fatty acid toxicity independent of TG incorporation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by computational predictions and experimental validation (Figure 5), with C75 also consistent with established knowledge about ER composition (van Meer et al., 2008; Upadhyaya and Sheetz, 2004). However, C77 is speculative regarding the mechanism of saturated fatty acid toxicity, as the study does not directly measure toxicity or establish causation between ER TG accumulation and cellular damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Elevated local DAG concentration promotes LD formation through unfavorable DAG-TG interactions in membranes. PA to DAG conversion creates a positive feedback loop by increasing both TG synthesis substrate and membrane capacity for TG packaging. DAG concentration must decrease for LD budding to proceed. DAG acts as a master regulator of LD biogenesis stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by computational data showing DAG's effects on TG distribution (Figures 1-2) and experimental evidence for DAG dynamics during LD budding (Choudhary et al., 2018). The proposed positive feedback mechanism is a logical inference from the data, though the 'master regulator' designation (C82) is somewhat interpretive given that other factors also play important roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Nucleation energy is the key parameter determining TG blister formation rate. The coexistence of NLs in ER membrane and nucleated LDs suggests the process can be described as phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by theoretical considerations (Thiam and For\u00eaat, 2016) and experimental observations of NL coexistence in various genetic backgrounds. The phase separation framework is consistent with both the computational results and prior theoretical work, providing a unifying conceptual model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The agreement between coarse-grained and atomistic lateral pressure profiles validates the modeling approach quality. TG blister formation in silico follows a phase separation mechanism like in vitro, indicating TG accumulation in the ER is coupled with defects in LD formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by comparison with atomistic simulations (Vamparys et al., 2013; Ding et al., 2015) and consistency with in vitro observations (Thiam and For\u00eaat, 2016). The validation of the computational approach strengthens confidence in the results, though the authors appropriately acknowledge limitations of coarse-grained force fields.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Both local events at LD formation sites and global ER membrane properties play major roles in LD biogenesis regulation. Physiological variations in ER lipid composition at sites distant from LDs might provide an alternative route to modulate fat accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by the integration of computational and experimental results showing membrane composition effects. However, C87 is largely speculative about potential regulatory mechanisms involving lipid transport or organelle contact sites, as the study does not directly investigate these processes. The claim represents a reasonable hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C78"
+    ],
+    "result": "Non-zero TG concentration in the ER suggests lipases or transport proteins might interact with TG directly from the ER. Pre-existing starvation-resistant LDs have been observed in COS-1 cells. Cells could potentially adjust local ER composition to modulate LD formation in response to nutrient intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71 and C78 are speculative implications of the model rather than demonstrated results, lacking direct experimental evidence. C73 is supported by citation (Kassan et al., 2013) but is presented as context rather than a finding of this study. These claims represent reasonable hypotheses for future investigation but are not established by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background information on LD structure, function, biogenesis, and prior experimental and computational approaches to studying LD formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 represent established background knowledge supported by appropriate citations to prior work. These claims provide context for the current study and are well-documented in the literature, though they are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  }
+]

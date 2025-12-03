@@ -1,0 +1,1201 @@
+{
+  "submission": {
+    "id": "5f01dbb6-19a8-465c-8d3f-d6239e9435d2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:49:05.348887Z",
+    "updated_at": "2025-12-03T06:49:05.348887Z"
+  },
+  "content": [
+    {
+      "id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "submission_id": "5f01dbb6-19a8-465c-8d3f-d6239e9435d2",
+      "content_type": "manuscript",
+      "content_text": "# Cost-precision trade-off relation determines the optimal morphogen gradient for accurate biological pattern formation\n\n## Authors\n\n- Yonghyun Song<sup>1</sup> ([ORCID: 0000-0002-8713-1294](https://orcid.org/0000-0002-8713-1294))\n- Changbong Hyeon<sup>1</sup> ([ORCID: 0000-0002-4844-7237](https://orcid.org/0000-0002-4844-7237)) \u2020\n\n### Affiliations\n\n1. Korea Institute for Advanced Study Seoul Republic of Korea\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpatial boundaries formed during animal development originate from the pre-patterning of tissues by signaling molecules, called morphogens. The accuracy of boundary location is limited by the fluctuations of morphogen concentration that thresholds the expression level of target gene. Producing more morphogen molecules, which gives rise to smaller relative fluctuations, would better serve to shape more precise target boundaries; however, it incurs more thermodynamic cost. In the classical diffusion-depletion model of morphogen profile formation, the morphogen molecules synthesized from a local source display an exponentially decaying concentration profile with a characteristic length \u03bb. Our theory suggests that in order to attain a precise profile with the minimal cost, \u03bb should be roughly half the distance to the target boundary position from the source. Remarkably, we find that the profiles of morphogens that pattern the Drosophila embryo and wing imaginal disk are formed with nearly optimal \u03bb. Our finding underscores the cost-effectiveness of precise morphogen profile formation in Drosophila development.\n\n## Introduction\n\nComplex spatial structures are shaped across the entire body from an ensemble of initially identical cells during animal development. The emergence of spatial structures is generally linked to the pre-patterning of tissues with biomolecules, called morphogens, that instruct cells to acquire distinct cell fates in a concentration-dependent manner (Turing, 1990; Wolpert, 1969; Crick, 1970). At the molecular level, the positional information encoded in the local morphogen concentration is translated by the cells into the expression of specific genes associated with cell-fate determination. In order to generate reproducible spatial organization, the concentration profile of morphogens must be stable against the noisy background signals inherent to the cellular environment.\n\nAlong with quantitative measurements of morphogen gradients (Gregor et al., 2007; Kicheva et al., 2007; Bollenbach et al., 2008; Kanodia et al., 2009; He et al., 2010; Zagorski et al., 2017; Petkova et al., 2019), a number of theoretical studies have been devoted to understanding the precision and speed by which morphogen gradients are formed and interpreted (Tostevin et al., 2007; Emberly, 2008; Erdmann et al., 2009; Berezhkovskii et al., 2010; Saunders and Howard, 2009; Morishita and Iwasa, 2009; Kolomeisky, 2011; Tka\u010dik et al., 2015; Lo et al., 2015; Desponds et al., 2020; Fancher and Mugler, 2020); however, generation of morphogen gradient, which breaks the spatial symmetry, incurs thermodynamic cost, and the relation of this cost with the precision and speed of morphogen gradient formation has rarely been addressed except for a few cases (Emberly, 2008). Creating and maintaining morphogen gradients require an influx of energy (Falasco et al., 2018), which is a limited resource for biological systems (Ilker and Hinczewski, 2019), particularly at the stage of embryonic development (Rodenfels et al., 2019; Rodenfels et al., 2020; Song et al., 2019). In the present work, we study the trade-off between the cost and precision of the morphogen profile formation in the framework of the reaction-diffusion model of localized synthesis, diffusion, and depletion (SDD model) (Tostevin et al., 2007; Gregor et al., 2007; Kicheva et al., 2007; Bollenbach et al., 2008; Shvartsman and Baker, 2012; Teimouri and Kolomeisky, 2014).\n\nThe precision associated with morphogen gradients are perhaps best exemplified by the patterning of the anterior-posterior axis of the Drosophila embryo through the Bicoid (Bcd) gradient. In the 2-hr post-fertilization of fruit fly embryogenesis, a uniform field of \u223c6000 nuclei characterizes the periphery of the shared cytoplasm (Foe and Alberts, 1983). Bcd, a transcription factor, is produced from the anterior-end of the embryo by maternally deposited bcd mRNAs. Its subsequent diffusion and degradation engender an exponentially decaying profile of Bcd concentration (Driever and N\u00fcsslein-Volhard, 1988a; Driever and N\u00fcsslein-Volhard, 1988b), which is translated into the anterior expression of the target gene, hunchback (hb) (Struhl et al., 1989). Nuclei at around the middle section of the embryo can infer their relative spatial positions by detecting the concentration of Bcd with an exquisite precision of \u223c a single nucleus width (Gregor et al., 2007).\n\nOther quantitatively characterized morphogens include Wingless (Wg), Hedgehog (Hh), and Decapentaplegic (Dpp), which pattern the dorsal-ventral (DV) and anterior-posterior (AP) axes of the wing imaginal disk in the fly larvae. Wg, a member of the Wnt signaling pathway, spreads through the wing disk from a narrow band of cells at the DV boundary (Zecca et al., 1996; Neumann and Cohen, 1997). The Wg concentration profile leads to the differential activation of multiple target genes, and, in particular, induces the sharp expression boundary of senseless (sens) a few cells away from the DV boundary (Jafar-Nejad et al., 2006; Bakker et al., 2020). Similarly, Hh patterns the AP axis by spreading from the posterior to the anterior side of the wing disk, affecting the expression of multiple genes. Its downstream transcriptional regulation gives rise to a strip of 8\u201310 dpp expressing cells that form the AP boundary (Tabata and Kornberg, 1994; Strigini and Cohen, 1997). Dpp, which spreads out from the localized production at the AP boundary, further patterns the AP axis. Major changes in the expression level of Dpp target genes, such as spalt-major (salm), occur at \u223c50% of the total length of the domain patterned by Dpp (Nellen et al., 1996; Entchev et al., 2000). Overall, Drosophila wing structures with the spatial precision of a single-cell width emerge from the coordinated actions of multiple patterning events (Abouchar et al., 2014).\n\nThe positional information, encoded in the concentration profile $\u03c1\u2062(x)$ (red line in Figure 1), is decoded to yield the target gene expression profile, $g\u2062(\u03c1\u2062(x))$ (blue line in Figure 1). The morphogen profile, $\u03c1\u2062(x)$, and the corresponding gene expression level, $g\u2062(\u03c1\u2062(x))$, together specify the cell fate in a morphogen concentration-dependent manner. In what follows, we will motivate a quantitative expression for the positional error associated with the \u2018boundary\u2019 positions, where the target gene expression profile displays a sharp change.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70034/elife-70034-fig1-v2.jpg)\n\n**Figure 1.:** (Top) The specification of the anterior region of the fruit fly embryo. The uniformly distributed nuclei (gray circles) are subjected to different concentrations of the morphogen (red dots) in the local environment, which leads to the anterior expression of the target gene (blue shade). (Bottom) The red and blue lines respectively depict the morphogen profile, $\u03c1\u2062(x)$, and the target gene expression, $g\u2062(x)$, which together specify cell fate. The squared positional error at the boundary $x_{b}$, $\\sigma_{x}^{2}\u2062(x_{b})$, is defined as the product between the variance of the morphogen concentration, $\\sigma_{\u03c1}^{2}\u2062(x_{b})$, and the squared inverse slope of the morphogen profile, $(\\partial_{x}\u2061\u03c1\u2062(x))_{x=x_{b}}^{-2}$.\n\nWe begin by defining a target boundary, $x=x_{b}$, where the morphogen concentration is at its critical threshold value $\u03c1_{b}\u2261\u03c1\u2062(x_{b})$. The nuclei exposed to morphogen concentrations higher than $\u03c1_{b}$ would adopt an anterior cell fate. Prior to measuring the local morphogen concentration, each nucleus has no information regarding its own position (Figure 1). After measuring $\u03c1^_{b}$, the nucleus can estimate the location of target boundary, such that $x^_{b}=x^_{b}\u2062(\u03c1^_{b})$. For instance, the Bcd concentration at each nucleus at position $x$ ($\u03c1\u2062(x)$) can be detected in terms of the frequency of Bcd binding to regulatory sequences in DNA. Higher local concentration of Bcd leads to a more frequent expression of the target gene, resulting in the position-dependent expression profile of hb ($g\u2062(\u03c1\u2062(x))$) (Gregor et al., 2007). The error (variance) associated with the measured concentration at $x=x_{b}$ with respect to its true value $\u03c1_{b}$ is given by $\\sigma_{\u03c1}^{2}(x_{b})[\u2261\u27e8(\u03c1^_{b}-\u03c1_{b})^{2}\u27e9=(1/N)\\sum_{i=1}^{N}(\u03c1^_{b,i}-\u03c1_{b})^{2}]$. In other words, $\\sigma_{\u03c1}^{2}\u2062(x_{b})$ represents the inherent variability of the morphogen profile, which can be determined experimentally by performing multiple measurements, $\u03c1^_{b,i}$ ($i=1,2,\u22ef\u2062N$). For the nucleus to make a single measurement, $\u03c1^_{b,i}$, it would integrate the morphogen-induced signal for a short time interval during which the local morphogen concentration remains effectively constant. Then, the Taylor expansion of the concentration at the target boundary, $\u03c1\u2062(x^_{b})\u2248\u03c1\u2062(x_{b})+(\\partial\u2061\u03c1\u2062(x^_{b})/\\partial\u2061x^_{b})|_{x^_{b}=x_{b}}\u2062(x^_{b}-x_{b})+\u22ef$, allows one to relate the error in measured concentration with the positional error in estimating the target boundary $\\sigma_{x}^{2}(x_{b})[\u2261\u27e8(x^_{b}-x_{b})^{2}\u27e9=(1/N)\\sum_{i=1}^{N}(x^_{b,i}-x_{b})^{2}]$ as follows:\n\n$$\n\\sigma_{x}^{2}\u2062(x_{b})\u2243(\\frac{\\partial\u2061\u03c1\u2062(x^_{b})}{\\partial\u2061x^_{b}})_{x^_{b}=x_{b}}^{-2}\u2062\\sigma_{\u03c1}^{2}\u2062(x_{b}),\n$$\n\nsuch that the morphogen profiles exhibiting a large gradient and small fluctuations give rise to small positional errors.\n\nOf fundamental importance is to address how naturally occurring morphogen profiles, tasked with the transfer of positional information, are formed under limited amount of resources. In an earlier work, Emberly considered the total morphogen content at steady state as a proxy for the cost, and evaluated the \u2018cost-effectiveness\u2019 of the exponentially decaying Bcd profile with a characteristic decay length \u03bb (Emberly, 2008). Remarkably, it was shown that for a given positional error, the Bcd profile is shaped with a nearly cost-minimizing \u03bb (Emberly, 2008). Here, we expand this argument with an in-depth treatment of the dynamics of morphogen profile formation and the thermodynamic cost involving the formation and maintenance of precise morphogen profiles.\n\n## Results\n\nThe cost of transferring the positional information should include the cellular resources used to generate the steady state profile prior to the measurement, as well as the resources to maintain the profile during the measurement. Theoretically, cells may control the act of measurement by modulating the availability of morphogen-sensing receptors, or by tuning the overall transcription rate of the target gene. In this context, we consider two limiting scenarios. (i) Point measurement, in which the morphogen profile is measured instantaneously; (ii) Space-time-averaged measurement, in which the morphogen profile is measured over a finite space and for a time interval $T$. In the former, the associated cost is defined as the amount of morphogen molecules produced while the profile approaches to the steady state. In the latter, we assume a space-time-averaged measurement carried out for a long time duration. Then, the morphogen produced over the measurement can be approximated as the total cost required to create and maintain the morphogen gradient. For both of the limiting scenarios, we will show that the cost of generating morphogen profiles and the precision of the profiles are counterbalanced. We consider a morphogen production-independent quantity by taking the product of total cost and the positional error to quantify the trade-off between the cost and precision of the morphogen profile, and show that the trade-off product can be minimized when the morphogen gradient\u2019s characteristic length, \u03bb, is properly selected. We evaluate the cost-effectiveness of morphogen profiles patterning the fruit fly embryo and wing disk, which have been quantitatively characterized in a number of studies (Gregor et al., 2007; Kicheva et al., 2007; Bollenbach et al., 2008; Nahmad and Stathopoulos, 2009; Drocco et al., 2011; Wartlick et al., 2011; Perry et al., 2012; Zhou et al., 2012; Chaudhary et al., 2019; Petkova et al., 2019; Bakker et al., 2020).\n\n### Point measurement\n\nWe begin by defining the dynamics of morphogen profile formation in a system composed of a one-dimensional (1D) array of cells in the domain $0\\leqx\\leqL$, where $L$ is the system size (see Figures 1 and 2(a)). The term \u2018cell\u2019 refers to the spatial grid in which to define the local positional error and the cost. We denote the amount of morphogen in the cell of the volume ($v_{cell}$) and length ($l_{cell}$) at the interval between $x$ and $x+l_{cell}$ by $\u03c1\u2062(x,t)[conc\u2261#/v_{cell}]$. Unless otherwise specified, \u03c1 refers to the ensemble averaged morphogen concentration. At the left boundary (see Figure 2a), the morphogen is injected at a constant flux of jin$[conc\\timesl_{cell}/time]$. At all positions, the morphogen molecules are depleted with rate $k_{d}$ [$time^{-1}$], while spreading across the cells with the diffusivity $D[l_{cell}^{2}/time]$ (Figure 2a). For $L/l_{cell}\u226b1$ (i.e. at the continuum limit), the spatiotemporal dynamics of the morphogen is described using the reaction-diffusion equation\n\n$$\n\\partial_{t}\u2061\u03c1\u2062(x,t)=D\u2062\\partial_{x}^{2}\u2061\u03c1\u2062(x,t)-k_{d}\u2062\u03c1\u2062(x,t),\n$$\n\nwith boundary conditions $-D\u2062\\partial_{x}\u2061\u03c1\u2062(x,t)|_{x=0}=j_{in}$ and $D\u2062\\partial_{x}\u2061\u03c1\u2062(x,t)|_{x=L}=0$. Then, the concentration profile at steady state is obtained as\n\n$$\n\u03c1_{ss}(x)=\\frac{j_{in}}{\\sqrt{Dk_{d}}}\\frac{cosh(\\frac{L\u2212x}{\\lambda})}{sinh(\\frac{L}{\\lambda})}\u2248\\frac{j_{in}}{\\sqrt{Dk_{d}}}e^{\u2212x/\\lambda},\n$$\n\nwhere $\\lambda=(\\sqrt{D/k_{d}})$ is the characteristic decay length determined by the diffusivity of morphogen ($D$) and the depletion rate ($k_{d}$). For large system size ($L\u226b\\lambda$), $\u03c1_{ss}\u2062(x)$ is simply an exponentially decaying profile with characteristic length \u03bb. In what follows, we will define (i) the cost, and (ii) the precision associated with this reaction-diffusion model.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70034/elife-70034-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of the model. (b) The position-dependent lower bound of the trade-off product $\\pi_{o,min}\u2062(x_{b})$, obtained numerically. The gray hashed area represent the inaccessible regions. The trade-off product of the morphogen profiles of Bcd, Wg, Hh, and Dpp are shown in the respective insets. (c) The black line denotes the optimal characteristic decay length ($\\lambda_{min}$) with respect to the position $x_{b}/L$. The color scale indicates the trade-off product $\\pi_{o}\u2062(x_{b})$ computed for each pair of $\\lambda/L$ and $x_{b}/L$ values. The grea dotted line depicts the linear approximation of $\\lambda_{min}$ at large $L$. In (b) and (c), the depicted trade-off product is normalized by $\\alpha_{o}\u2062L/l_{cell}$. The parameters for the naturally occurring morphogen profiles are further described in Appendix 3, Length scales of Bcd, Wg, Hh, and Dpp, and Appendix 3\u2014table 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70034/elife-70034-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Length scales of naturally occurring morphogen profiles. The left column depicts the exponentially decaying morphogen profiles. The solid red lines denote the exponentially decaying profiles with the associated \u03bb\u2019s in Appendix 3\u2014table 1. The gray shaded regions depict the respective range of target boundary positions. The right column depicts the target gene expression profiles from which the range of boundary positions are obtained. (a) (Left) Bcd morphogen profile. (Right) Bcd target Hb profile. (b) (Left) Wg morphogen profile. (Right) Wg target sens gene expression profile. (c) (Left) Hh morphogen profile. The colors green, purple, and orange correspond to different stages of development. The characteristic decay length corresponding to the purple profile, $\\lambda\u22488\\mu\u2062m$, was used in Figures 2 and 3 of the present work. (Right) Hh target Engrailed, Collier, and Dpp profiles. The white dotted line denotes the AP border, as specified by the staining of Ci. The length of the expression domains of the target genes were estimated from the 50 $\\mu\u2062m$ scale bar. (d) (Left) Dpp morphogen profile. (Right) Dpp target gene expression profiles. In the right column of (a,b,d), the black intervals denote the range of boundary positions, $x_{b}$. (a) Panel 1 is reprinted from Figure 5 Cell, 130(1), Gregor, T., Tank, D. W., Wieschaus, E. F., and Bialek, W., Probing the Limits to Positional Information, 153\u2013164, Copyright (2007), with permission from Elsevier. It is not covered by the CC-BY 4.0 licence and further reproduction of this panel would need permission from the copyright holder. (a) Panel 2 is reprinted from Figure 3 Current Biology, 22(23), Perry, M. W., Bothma, J. P., Luu, R. D., and Levine, M., Precision of hunchback expression in the Drosophila embryo, 2247\u20132252, Copyright (2012), with permission from Elsevier. It is not covered by the CC-BY 4.0 licence and further reproduction of this panel would need permission from the copyright holder. (b) Panel 1 is reproduced from Figure 3, Kicheva, A., Pantazis, P., Bollenbach, T., Yannis, K., Bittig, T., Frank, J., and Gonz\u00e1lez-Gait\u00e1n, M. (2007). Kinetics of Morphogen Gradient Formation. Science, 315 (5811):521\u2013525. Reprinted with permission from AAAS. It is not covered by the CC-BY 4.0 licence and further reproduction of this panel would need permission from the copyright holder. (b) Panel 2 reproduced from Figure 1 (Bakker et al., 2020). (c) Panel 1 is reproduced from Figure S2, Wartlick, O., Mumcu, P., Kicheva, A., Bittig, T., Seum, C., J\u00fclicher, F., and Gonz\u00e1lez-Gait\u00e1n, M. (2011). Dynamics of Dpp signaling and proliferation control. Science, 331 (6021):1154\u20131159. Reprinted with permission from AAAS. It is not covered by the CC-BY 4.0 licence and further reproduction of this panel would need permission from the copyright holder. (c) Panel 2 is reproduced from Figure 5, Torroja, C., Gorfinkiel, N., and Guerrero, I. (2004). Patched cotrols the Hedgehog gradient by encocytosis in a dynamin-dependent manner, but this internalization does not play a major role in signal transduction. Development, 131(10):2395\u20132408, https://doi.org/10.1242/dev.01102, with permission from The Company of Biologists. It is not covered by the CC-BY 4.0 licence and further reproduction of this panel would need permission from the copyright holder. (d) Panel 1 is reproduced from Figure 1, Kicheva, A., Pantazis, P., Bollenbach, T., Yannis, K., Bittig, T., Frank, J., and Gonz\u00e1lez-Gait\u00e1n, M. (2007). Kinetics of Morphogen Gradient Formation. Science, 315 (5811):521\u2013525. Reprinted with permission from AAAS. It is not covered by the CC-BY 4.0 licence and further reproduction of this panel would need permission from the copyright holder. (d) Panel 2 reproduced from Figure 2 (Bakker et al., 2020).\n\n(i) With a function $R\u2062(x,t)\u2261(\u03c1_{ss}\u2062(x)-\u03c1\u2062(x,t))/(\u03c1_{ss}\u2062(x)-\u03c1\u2062(x,0))$, which captures the evolution of the morphogen profile from $\u03c1(x,t=0)=0$ to the steady state value $\u03c1_{ss}\u2062(x)$ (Equation 3), the mean local accumulation time at $x$ that characterizes the average time scale for establishing the steady state profile is calculated as Berezhkovskii et al., 2010,\n\n$$\n\\tau\u2062(x)=\\int_{0}^{\u221e}R\u2062(x,t)\u2062\ud835\udc51t=k_{d}^{-1}\u2062f\u2062(x;\\lambda),\n$$\n\nwhere $f\u2062(x;\\lambda)\u2261\\frac{1}{2}\u2062[1+\\frac{L}{\\lambda}\u2062coth\u2061(\\frac{L}{\\lambda})-\\frac{L-x}{\\lambda}\u2062tanh\u2061(\\frac{L-x}{\\lambda})]$ is a dimensionless quantity determined by $x$ and \u03bb. Then, $v_{cell}\u2062j_{in}/l_{cell}\\times\\tau\u2062(x)$ quantifies the total number of morphogens produced over the time scale of $\\tau\u2062(x)$. The thermodynamic cost of producing the morphogens, which is effectively the driving force of pattern formation, is expected to be proportional to this number (Lynch and Marinov, 2015), such that\n\n$$\n\ud835\udc9e\u2062(x)=\\alpha_{o}\u2062(\\frac{v_{cell}\u2062j_{in}}{l_{cell}\u2062k_{d}})\u2062f\u2062(x;\\lambda)\u2248\\alpha_{o}\u2062(\\frac{v_{cell}\u2062j_{in}}{l_{cell}\u2062k_{d}})\u2062\\frac{1}{2}\u2062(1+\\frac{x}{\\lambda}),\n$$\n\nwhere $C\u2062(x)$ increases linearly with $x$ for large system size ($L\u226b\\lambda$) (Berezhkovskii et al., 2010).\n\nThe proportionality constant, $\\alpha_{o}$, amounts to the thermodynamic cost of synthesizing and degrading a single morphogen molecule, which can be quantified by the number of ATPs hydrolyzed in the process. For instance, the thermodynamic cost required to translate and degrade a single Bcd protein composed of 494 amino acids is on the order of $\\alpha_{o}\u2248494\\times4\u22482\\times10^{3}$ ATPs, where we assume that each peptide-bond formation requires 4 ATPs (Lynch and Marinov, 2015). In the first \u223c2 hr of Drosophila embryogenesis when the anterior-posterior axis patterning takes place, \u223c5\u00a0\u00d7\u00a0108 Bcd molecules are produced (Drocco et al., 2012). Thus, the cost of generating the Bcd profile is on the order of 1012 ATPs, which is a small fraction of the total energy budget of Drosophila embryogenesis (\u223c7\u00a0\u00d7\u00a01016 ATPs) (Song et al., 2019). However, the energy budget of developing systems remains largely uncharacterized, and there is certainly a lack of understanding on how much of the cost can be attributed to 'housekeeping processes', as opposed to the cost of generating new spatial structures (Rodenfels et al., 2019; Song et al., 2019). The generation of each morphogen profile is an indispensable developmental process, although its thermodynamic cost is relatively small compared to the total energy budget.\n\n(ii) The local measure of precision at position $x$ can be quantified by the squared relative error in the positional measurement of morphogen profile (Equation 1):\n\n$$\n\u03f5^{2}(x)\u2261\\frac{\\sigma_{x}^{2}(x)}{x^{2}}=(\\frac{\u2202log\u2061\u03c1_{ss}(x)}{\u2202log\u2061x})^{\u22122}\\frac{\\sigma_{\u03c1}^{2}(x)}{\u27e8\u03c1^(x)\u27e9^{2}}=(\\frac{\\lambda^{3}}{x^{2}l_{cell}})(\\frac{v_{cell}j_{in}}{l_{cell}k_{d}})^{\u22121}\\frac{sinh(\\frac{L}{\\lambda})cosh(\\frac{L\u2212x}{\\lambda})}{[sinh(\\frac{L\u2212x}{\\lambda})]^{2}}\u2248(\\frac{\\lambda^{3}}{x^{2}l_{cell}})(\\frac{v_{cell}j_{in}}{l_{cell}k_{d}})^{\u22121}e^{x/\\lambda},\n$$\n\nwhere $\u03c1^\u2062(x)$ represents the morphogen concentration estimated at $x$ from a measurement. For large system size ($L\u226b\\lambda$), $\u03f5^{2}\u2062(x)\u221d(\\lambda^{3}/x^{2})\u2062e^{x/\\lambda}$. Note that the multiple measurements of $\u03c1^\u2062(x)$ yield the mean concentration profile $\u27e8\u03c1^\u2062(x)\u27e9=(1/N)\u2062\\sum_{i=1}^{N}\u03c1^_{i}\u2062(x)$, which is equivalent to $\u03c1_{ss}\u2062(x)$ at steady states given in Equation 3. We use the fact that the probability distribution of the steady state concentration profile obeys the Poisson statistics (Heuett and Qian, 2006) (i.e. $v_{cell}^{2}\u2062\\sigma_{\u03c1}^{2}\u2062(x)=v_{cell}\u2062\u27e8\u03c1^\u2062(x)\u27e9=v_{cell}\u2062\u03c1_{ss}\u2062(x)$), since all the reactions in the system are of zeroth or first order. Although the present study mainly focuses on the mathematical form of the precision, $\u03f5^{2}\u2062(x)$ is also bounded by physical constraints such as the size of the morphogen sensing machineries that bind and measure the local concentration (Tostevin et al., 2007). Experimentally determined values of the precision range from $\u03f5^{2}\u2062(x_{b})\u22487\\times10^{-4}$ for Bcd to $\u03f5^{2}\u2062(x_{b})\u22481.5\\times10^{-2}$ for Dpp, where $x_{b}\u2248(0.4-0.5)\u2062L$ for both systems (Gregor et al., 2007; Bollenbach et al., 2008).\n\nThere is a trade-off between $\ud835\udc9e\u2062(x)$ and $\u03f5^{2}\u2062(x)$. If $n_{m}$ is the number of morphogen molecules produced for a certain time duration then $\ud835\udc9e\u2062(x)\u221dn_{m}$ and $\\sigma_{\u03c1}^{2}\u2062(x)/\u27e8\u03c1^\u2062(x)\u27e9^{2}\u221d1/n_{m}$, the latter of which simply arises from the central limit theorem, or can be rationalized based on the Berg-Purcell result ($\\delta\u2062\u03c1^/\u03c1^\u223c1/\\sqrt{D\u2062a\u2062\u03c1^\u2062\\tau}$) (Berg and Purcell, 1977) where $a$ is the radius of the volume in which a receptor detects the morphogen and \u03c4 is the detection time. Increasing the overall morphogen content reduces the morphogen profile\u2019s positional error at the expense of a larger thermodynamic cost. In Equations 5 and 6, $n_{m}$ corresponds to $(v_{cell}\u2062j_{in}/l_{cell}\u2062k_{d})$ (the morphogen molecules produced for the time duration $k_{d}^{-1}$). The nm-independent trade-off between the cost of generating the morphogen profile and the squared relative error in the position of morphogen profile can be quantified by taking the product of the two quantities,\n\n$$\n\\pi_{o}\u2062(x;\\lambda)\u2261\ud835\udc9e\u2062(x;\\lambda)\\times\u03f5^{2}\u2062(x;\\lambda)\\geq\\pi_{o,min}\u2062(x;\\lambda),\n$$\n\nwhere the \u03bb dependence of the trade-off product is made explicit for the discussion that follows.\n\nWe are mainly concerned with the precision at the boundary position, $x=x_{b}$, where a sharp change in the downstream gene expression, $g\u2062(x)$, is observed. The inequality in Equation 7 constrains the properties of the morphogen profile at $x_{b}$, specifying either the minimal cost of generating the morphogen profile for a given positional error or the minimal error in the morphogen profile for a given thermodynamic cost (Figure 2). In other words, when the trade-off product $\\pi_{o}\u2062(x_{b};\\lambda)$ is close to its lower bound $\\pi_{o,min}\u2062(x_{b};\\lambda)$, the system is cost-effective at generating precise morphogen profiles at $x_{b}$. Generally, $\\pi_{o,min}\u2062(x_{b};\\lambda)$ increases monotonically with $x_{b}$, which signifies that boundaries farther away from the origin require the synthesis of more morphogen molecules to achieve comparable positional error (Figure 2b). For a fixed system size $L$ and position $x_{b}$, the value of the trade-off product is determined solely by the decay length, \u03bb. By tuning \u03bb, one can find the value of $\\lambda_{min}$ that minimizes the trade-off product at $x=x_{b}$, that\u00a0is, $\\pi_{o,min}\u2062(x_{b})$, such that\n\n$$\n\\lambda_{min}\u2062(x_{b})=arg\u2061min\\lambda\u2061\\pi_{o}\u2062(x_{b};\\lambda).\n$$\n\nThe optimal decay length, $\\lambda_{min}\u2062(x_{b})$, also increases monotonically with the target boundary $x_{b}$; for $x_{b}<L/2$, $\\lambda_{min}$ is well approximated by the linear relationship $\\lambda_{min}\u2062(x_{b})\u22480.43\u2062x_{b}$ (See Equation 40 for the derivation).\n\nIt is of great interest to compare $x_{b}$ and \u03bb of real morphogen profiles against the optimal $\\lambda_{min}\u2062(x_{b})$ that one can predict from Equation 8. For the morphogen profiles of Bcd, Wg, Hh, and Dpp, we first estimated the possible range of $x_{b}$ from the experimentally measured expression profiles of the respective target genes, hb, sens, dpp and salm (Torroja et al., 2004; Perry et al., 2012; Bakker et al., 2020). The range of the inferred boundary positions where the target gene expressions undergo relatively sharp changes are shown on the right column of Figure 2\u2014figure supplement 1 and listed in Appendix 3\u2014table 1. The morphogen concentration profiles obtained from experiments are shown on the left column of Figure 2\u2014figure supplement 1, where we overlaid the exponential profiles with characteristic lengths $\\lambda_{Bcd}=100\\mum$, $\\lambda_{Wg}=6\\mum$, $\\lambda_{Hh}=8\\mum$, and $\\lambda_{Dpp}=20\\mum$ (Houchmandzadeh et al., 2002; Kicheva et al., 2007; Wartlick et al., 2011). Figure 2b shows the pairs of $x_{b}$ and \u03bb normalized by the system size, $L$, which reveals that the \u03bb\u2019s of naturally occurring morphogen profiles are close to their respective optimal values, $\\lambda_{min}\u2062(x_{b})$. Taken together, our findings indicate that the concentration profiles of the four morphogens are effectively formed under the condition that the cost-precision trade-off, $\\pi_{o}\u2062(x_{b};\\lambda)$, is minimized to its lower bound, $\\pi_{o,min}\u2062(x_{b};\\lambda)$ (Figure 2b) (see the Appendix 3, Length scales of Bcd, Wg, Hh, and Dpp, for more details on the relevant parameters of the morphogen profiles).\n\nOur theoretical result must be interpreted with care. For the Bcd profile with the target boundary $x_{b}\u22480.4\u2062L$, $\\pi_{o}\u2062(x_{b};\\lambda_{Bcd})\u2248\\alpha_{o}\u2062(L/l_{cell})\u20620.6$ (Figure 2b) where $L/l_{cell}\u224850$, and the experimentally reported precision is $\u03f5^{2}\u2062(x_{b})\u22487\\times10^{-4}$ (Gregor et al., 2007). Thus, the cost associated with the Bcd profile is $C\u2062(x_{b};\\lambda_{Bcd})=\\pi_{o}\u2062(x_{b};\\lambda_{Bcd})/\u03f5^{2}\u2062(x_{b};\\lambda_{Bcd})\u22484\\times10^{4}\u2062\\alpha_{o}$, or equivalently, the thermodynamic cost of synthesizing and degrading 4\u00a0\u00d7\u00a0104 Bcd molecules. This is orders of magnitude smaller than the earlier estimate of \u223c5\u00a0\u00d7\u00a0108 based on the experimental measurement of total Bcd synthesis in the embryo (Drocco et al., 2012). The discrepancy between the two numbers most likely arises because our theory simplifies the dynamics of the nuclear concentration of Bcd in one dimension, whereas the direct measurement of Bcd synthesis accounts for all the molecules in 3D volume including the cytoplasm and the nuclei (Gregor et al., 2007; Drocco et al., 2012). Additionally, the duration to generate the steady state morphogen profile is longer than the characteristic time, \u03c4. However, assuming that the cytoplasmic and nuclear concentrations are proportional to each other, and that the time for the morphogen profile to reach steady state is proportional to \u03c4, it is possible to adjust the proportionality constant $\\alpha_{o}$ so that $C\u2062(x_{b})$ represents the overall cost to produce the concentration profile of nuclear Bcd.\n\n### Space-time-averaged measurement\n\nThe positional information available from the morphogen profile varies depending on the method by which the cell senses and interprets the local morphogen concentration. Our previous definition of $\u03f5^{2}\u2062(x)$ (Equation 6) represents the positional error from a single independent measurement of the morphogen concentration at a specific location in space. However, organisms may further improve the positional information of the morphogen gradient through space-time-averaging.\n\nTo incorporate the scenario of space-time-averaging, we assume that the cell at position $x$ uses a sensor with size $a$ to detect the morphogen concentration over the space interval $(x-a,x+a)$ for time $T$ (Figure 3a). Then the space-time-averaged molecular count is written as\n\n$$\nm_{i}\u2062(x)=\\frac{1}{T}\u2062\\int_{0}^{T}\ud835\udc51t\u2062\\int_{x-a}^{x+a}\u03c1^_{i}\u2062(y,t)\u2062\ud835\udc51y,\n$$\n\nwhere $\u03c1^_{i}\u2062(y,t)$ represents an estimate of molecular count at position $y$ from an $i$-th independent measurement. Repeated measurements ($N\u226b1$) lead to the mean value of molecular counts\n\n$$\n\u27e8m\u2062(x)\u27e9=\\frac{1}{N}\u2062\\sumi=1Nm_{i}\u2062(x)=\\frac{2\u2062j_{in}}{k_{d}}\u2062e^{-x/\\lambda}\u2062sinh\u2061(a/\\lambda).\n$$\n\nIn this case,\u00a0$j_{in}$ and $k_{d}$ are in the units of $#/time$ and $time^{-1}$, respectively. With a sufficiently long measurement time ($T\u226bk_{d}^{-1}$), the variance of $m\u2062(x)$ can be approximated to Fancher and Mugler, 2020\n\n$$\n\\sigma_{m}^{2}\u2062(x)\u2261\\frac{1}{N}\u2062\\sumi=1N(m_{i}\u2062(x)-\u27e8m\u2062(x)\u27e9)^{2}=\\frac{4\u2062j_{in}\u2062e^{-x/\\lambda}\u2062sinh\u2061(a/\\lambda)}{T\u2062k_{d}^{2}}\u2062(1-\\frac{(\\lambda/a)\u2062cosh\u2061(a/\\lambda)\u2062sinh\u2061(a/\\lambda)+1}{2\u2062e^{a/\\lambda}\u2062(\\lambda/a)\u2062sinh\u2061(a/\\lambda)}).\n$$\n\nAnalogously to Equation 6, the squared relative error (precision) at position $x$ can be quantified as follows,\n\n$$\n\u03f5_{T}^{2}\u2062(x)\u2261(\\frac{\\partial\u2061log\u2061\u27e8m\u2062(x)\u27e9}{\\partial\u2061log\u2061x})^{-2}\u2062\\frac{\\sigma_{m}^{2}\u2062(x)}{\u27e8m\u2062(x)\u27e9^{2}}=\\frac{(\\lambda/x)^{2}\u2062e^{x/\\lambda}}{j_{in}\u2062T}\u2062(\\frac{e^{-a/\\lambda}+3\u2062e^{3\u2062a/\\lambda}-4\u2062(1+a/\\lambda)\u2062e^{a/\\lambda}}{2\u2062(e^{2\u2062a/\\lambda}-1)^{2}}).\n$$\n\nThe cost of maintaining the morphogen profile at steady states is proportional to $j_{in}\u2062T$, which simply represents the total number of morphogens produced for $T$, such that the total thermodynamic cost for producing morphogens for time $T$ is\n\n$$\n\ud835\udc9e_{T}=\\alpha_{o}\u2062j_{in}\u2062T.\n$$\n\nIn the product between the net amount of morphogen molecules synthesized and the positional error from the averaged signal, the number of morphogens synthesized for time $T$, $j_{in}\u2062T$ cancels off, which yields the following expression of the cost-precision trade-off:\n\n$$\n\\pi_{T}\u2062(x;\\lambda)\u2261\ud835\udc9e_{T}\\times\u03f5_{T}^{2}\u2062(x;\\lambda)\\geq\\pi_{T,min}\u2062(x;\\lambda).\n$$\n\nWith a given target boundary $x=x_{b}$ and the sensor size $a$, the value of $\\pi_{T}\u2062(x_{b};\\lambda)$ is solely determined by \u03bb, analogously to $\\pi_{o}\u2062(x_{b};\\lambda)$. Thus, the lower bound of $\\pi_{T}\u2062(x_{b};\\lambda)$, i.e., $\\pi_{T,min}\u2062(x_{b};\\lambda)$, can be determined simply by tuning \u03bb to a value that minimizes $\\pi_{T}\u2062(x_{b};\\lambda)$, that\u00a0is, $\\lambda_{min}\u2062(x_{b})$. Both $\\pi_{T,min}\u2062(x_{b};\\lambda)$ and $\\lambda_{min}\u2062(x_{b})$ increase monotonically with $x_{b}$. In particular, $\\lambda_{min}\u2062(x_{b})$ is found in the range of $(x_{b}-a)/2\\leq\\lambda_{min}\u2062(x_{b})\\leqx_{b}/2$ (see Equations 42 and 43 for derivation). The boundary of the inaccessible region in Figure 3b constrains $\\pi_{T}\u2062(x_{b};\\lambda)$, suggesting that there is a minimal morphogen production for a given positional error. For instance, in order to suppress the positional error down to 10% ($\u03f5_{T}\u2062(x_{b})\u22480.1$) at $x_{b}=60\u2062a$, the characteristic length must be $\\lambda\u224830\u2062a$, which demands that the system synthesize at least \u223c182 morphogen molecules (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70034/elife-70034-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic of the model. (b) The optimal trade-off product $\\pi_{T}\u2062(x_{b})$ obtained numerically with respect to the location of the target boundary position normalized by the sensor size ($x_{b}/a$). The gray hashed area represent the inaccessible regions. Shown are the trade-off products of the morphogens profiles of Bcd, Wg, Hh, and Dpp. (c) The black line denotes the optimal characteristic decay length ($\\lambda_{min}$) with respect to the position $x_{b}/a$. The color scale indicates the trade-off product $\\pi_{T}\u2062(x_{b})$ computed for each pair of $\\lambda/a$ and $x_{b}/a$ values. The gray dotted line depicts the linear approximation of $\\lambda_{min}$. The white dotted line depicts the linear approximation of $\\lambda_{min}$ for the point measurement model. In (b) and (c), the depicted trade-off product is normalized by $\\alpha_{o}$. The parameters for the naturally occurring morphogen profiles are further described in the Appendix 3, Length scales of Bcd, Wg, Hh, and Dpp, and Appendix 3\u2014table 1.\n\nAs we have done for $\\pi_{o}$ in the point measurement, we can evaluate $\\pi_{T}$ of the four morphogen profiles at their target boundaries ($x_{b}$), by using the cell size as a proxy for the sensor size ($a$), and by assuming that the morphogen profile is measured for a sufficiently long time (i.e. $T\u226bk_{d}^{-1}$, the validity of which is further discussed in the Appendix 3, Time scales of Bcd, Wg, Hh, and Dpp). The boundary position and characteristic length associated with each morphogen, normalized by the respective cell size, are shown in Figure 3c (see Appendix 3, Length scales of Bcd, Wg, Hh, and Dpp and Appendix 3\u2014table 1 for more detail). We find that the characteristic decay lengths ($\\lambda=\\sqrt{D/k_{d}}$) of all four morphogen profiles are close to their respective $\\lambda_{min}\u2062(x_{b})$ values. Thus, from the space-time-averaged measurement of morphogen profiles, the four morphogen profiles are also formed under the conditions of nearly optimal cost-precision trade-off (Figure 3b).\n\n## Discussion\n\n### Comparison of the trade-off products, \u03c0o and \u03c0T\n\nAlthough the two models of biological pattern formation seem to differ in the definitions of both the precision and the associated cost, the measure of precision in the two models are in fact limiting expressions of each other. The concentration detected in the measurement with space-time-averaging, defined as $m\u2062(x)/(2\u2062a)$ at the limit of small sensor size ($a/\\lambda\u226a1$) (Equation 10) is identical to the one in the point measurement in the limit of $L\u226b\\lambda$ (Equation 3), both yielding $(j_{in}/\\sqrt{D\u2062k_{d}})\u2062e^{-x/\\lambda}$. On the one hand, $\u03f5^{2}\u2062(x)$, defined through $\u03c1_{ss}\u2062(x)$, is experimentally quantifiable through repeated measurements of the morphogen profile from the images of fixed samples (Kicheva et al., 2007; Gregor et al., 2007; Bollenbach et al., 2008). On the other hand, $\u03f5_{T}^{2}\u2062(x)$, defined through $m\u2062(x)$, may represent the precision accessible to cells that integrate the signal over time from multiple receptors positioned across the cell surface. Effectively, $\u03f5^{2}\u2062(x)$ can be interpreted as the short time limit of $\u03f5_{T}^{2}\u2062(x)$ measured by a single receptor.\n\nThe cost associated with the morphogen profile in the case of point measurement, $v_{cell}\u2062j_{in}\u2062l_{cell}^{-1}\u2062\\tau\u2062(x)$, is a quantity that reflects the number of morphogen molecules required to reach steady state at position $x$. In contrast, the cost of morphogen production with space-time-averaging, $j_{in}\u2062T$, integrated over a time interval $T\u226bk_{d}^{-1}$, is identical for all positions. The latter assumption is required in the derivation of the expression of $\u03f5_{T}^{2}\u2062(x)$ (see Appendix 1 of Fancher and Mugler, 2020). We additionally demand $T\u226b\\tau\u2062(x)$ in order for $j_{in}\u2062T$ to represent the total cost of morphogen profile formation and maintenance. However, $T$ may not necessarily be larger than either $k_{d}^{-1}$ or $\\tau\u2062(x)$. For instance, the Bcd profile degrades and stabilizes at time scales of $\u223c1$ hour (Berezhkovskii et al., 2010; Drocco et al., 2012), but must be measured within 10 min by the nuclei (Lucas et al., 2018) (see further discussion in the Appendix 3, Time scales of Bcd, Wg, Hh, and Dpp). The energetic cost of naturally occurring morphogen profiles is likely determined in between the two limiting cases.\n\nFor actual biological systems, the cost-precision trade-off involving the pattern formation is presumably at work in between the two scenarios. Thus, of great significance is the finding that $\\pi_{o}\u2062(x;\\lambda)$ and $\\pi_{T}\u2062(x;\\lambda)$ for the two limiting models can be effectively minimized by similar \u03bb values at a given position: $\\lambda_{min}\u22480.43\u2062x_{b}$ for the point measurement, and $\\lambda_{min}\u22480.5\u2062x_{b}$ for the space-time-averaging.\n\n### The entropic cost of forming precise morphogen profiles\n\nBiological pattern formation by morphogen gradients is a process operating out of equilibrium (Falasco et al., 2018), in which thermodynamic cost is incurred to generate a morphogen gradient with minimal error for the transfer of positional information against stochastic fluctuations. In the Appendix 1, Reversible reaction-diffusion model of morphogen dynamics, we extend our discussion of cost-precision trade-off on the models that include uni-directional irreversible steps in the synthesis and depletion by considering a more general reaction model with bi-directional reversible kinetics where the forward and reverse rates are well defined at every elementary process (Appendix 1\u2014figure 1. A and Equation 16). Such a model allows us to quantify the entropy production rate ($S\u02d9_{tot}$) or the thermodynamic cost for the formation of morphogen gradient and clarifies the physical meaning of $\\alpha_{o}$ (for the relation between $C$ (Equation 5) and $S\u02d9_{tot}$, see Appendix 1 and Equations 32, 33). Similar to the point measurement, we derive expressions for the relaxation time to the steady state ($\\tau_{rev}\u2062(x)$) and the positional error ($\u03f5_{rev}^{2}\u2062(x)$). The trade-off among the thermodynamic cost, speed of formation ($\u223c\\tau_{rev}^{-1}\u2062(x)$), and precision is quantified by the product of the three quantities,\n\n$$\n\\pi_{o,rev}\u2062(x)\u2261S\u02d9_{tot}\u2062\\tau_{rev}\u2062(x)\u2062\u03f5_{rev}^{2}\u2062(x)\\geq\\pi_{o,rev,min}\u2062(x).\n$$\n\nThe lower bound, $\\pi_{o,rev,min}\u2062(x_{b})$, increases monotonically with $x_{b}$ (Appendix 1\u2014figure 1).\n\nWith $S\u02d9_{tot}\u2062\\tau_{rev}\u2062(x_{b})$ representing the entropy production during the time scale associated with the morphogen profile formation, Equation 15 is reminiscent of the thermodynamic uncertainty relation (TUR), a fundamental trade-off relation between the entropy production and the precision of a current-like output observable for dynamical processes generated in nonequilibrium with a universal bound (Barato and Seifert, 2015; Gingrich et al., 2016; Hyeon and Hwang, 2017; Hwang and Hyeon, 2018; Horowitz and Gingrich, 2020; Song and Hyeon, 2020). However, unlike TUR which has a model independent lower bound, the lower bound of Equation 15 is model-specific and position-dependent. The cost-precision trade-off of pattern formation discussed in this study fundamentally differs from that of TUR (Pietzonka et al., 2017; Horowitz and Gingrich, 2017; Dechant and Sasa, 2020; Song and Hyeon, 2021), in that the concentration profile of morphogen is not a current-like observable with an odd-parity with time-reversal; however, still of great significance is the discovery of the underlying principle that the pattern formation is quantitatively bounded by the dissipation. For future work, it would be of great interest to consider employing the morphogen-induced currents through signaling pathways, such as transcription, as the output observable to which TUR can be directly applied.\n\n### Cost-effectiveness of precise morphogen profile formation\n\nThere are multiple possibilities of achieving the same critical threshold concentration $\u03c1\u2062(x_{b})$ at the target boundary $x=x_{b}$ through the combination of morphogen synthesis rate ($j_{in}$), diffusivity ($D$) and depletion rate ($k_{d}$) (inset in Figure 4). A steeper morphogen profile with larger $j_{in}$ and smaller $\\lambda(=\\sqrt{D/k_{d}})$ (red in Figure 4a) leads to a more precise boundary but it incurs a higher thermodynamic cost. The opposite case with a morphogen profile with smaller $j_{in}$ and larger \u03bb gives rise to a less precise boundary with a lower cost (brown in Figure 4a). As the main result, we show that \u03bb can be tuned to minimize the cost-precision trade-off product, which leads to the formation of cost-effective morphogen profiles. In other words, morphogen profiles with optimal characteristic length $\\lambda_{min}$ achieve a desired precision when the cost is minimal (Figure 4b). Specifically, $\\lambda_{min}\u2248(0.43-0.50)\u2062x_{b}$, which suggests that the target boundary of the exponentially decaying morphogen profile, $c\u2062(x)=c_{0}\u2062e^{-x/\\lambda}$, should be formed at $c\u2062(x_{b})\u22480.1\u2062c_{0}$. Remarkably, the \u03bb\u2019s of naturally occurring morphogen profiles in fruit fly development are close to their respective optimal values, and we confirm that the target boundaries of biological pattern from those profiles are identified at $c\u2062(x_{b})\u22480.1\u2062c_{0}$ (see Figure 2\u2014figure supplement 1). These findings lend support to the hypothesis that along with the reduction in the positional error, the thermodynamic costisone of the key physical constraints in designing the morphogen profiles.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70034/elife-70034-fig4-v2.jpg)\n\n**Figure 4.:** (a) Three possible morphogen profiles (i) (red), (ii) (cyan), (iii) (brown) with different \u03bb\u2019s ($\\lambda^{(i)}<\\lambda^{(ii)}<\\lambda^{(iii)}$), generated with different values of morphogen influxes $j_{in}$ ($j_{in}^{(i)}>j_{in}^{(ii)}>j_{in}^{(iii)}$). The morphogen concentration of the three profiles coincide at $x_{b}$, giving rise to the same threshold value $\u03c1\u2062(x_{b})$ but different positional errors ($\u03f5^{2}\u2062(x_{b};\\lambda)$). (b) The precision of three possible morphogen profiles (i) (red), (ii) (cyan), (iii) (brown) with different \u03bb\u2019s ($\\lambda^{(i)}<\\lambda^{(ii)}<\\lambda^{(iii)}$), generated with different values of morphogen influxes $j_{in}$ ($j_{in}^{(i)}>j_{in}^{(iii)}>j_{in}^{(ii)}$). The \u03bb values are identical to those with matching colors in (a), but the red and brown curves are generated with different $j_{in}$ values from those in (a). The cost associated with each morphogen profile are shown in units of $\\alpha_{o}\u2062L/l_{cell}$. (c) The diagram of the trade-off product associated with the point measurement, $\\pi_{o}\u2062(x;\\lambda)$, plotted with respect to $x$ and \u03bb. The black line indicates the optimal decay length, $\\lambda_{min}$ at position $x$. Shown on the diagram are the trade-off product $\\pi_{o}$\u2019s for the three cases shown in (a) and (b). (d) The value of $\\pi_{o}$ as a function of \u03bb at $x=x_{b}$. The trade-off product is minimized to $\\pi_{o}=\\pi_{o}^{(ii)}\u2248\\alpha_{o}\u2062(L/l_{cell})\u20620.4$ with $\\pi_{o}^{(ii)}<\\pi_{o}^{(iii)}<\\pi_{o}^{(i)}$.\n\n### Concluding remarks\n\nThe classical SDD model offers a simple and powerful framework to study basic properties of morphogen dynamics (Gregor et al., 2007; Kicheva et al., 2007; Bollenbach et al., 2008; Emberly, 2008; Berezhkovskii et al., 2010; Teimouri and Kolomeisky, 2014; Fancher and Mugler, 2020). The molecular mechanisms underlying the formation of morphogen profiles are, however, much more complex than those discussed here. Even the seemingly simple diffusive spreading of the morphogen can originate from many different mechanisms (M\u00fcller et al., 2013). In fact, among the four biological examples shown in Figures 2 and 3, it has been suggested that Wg and Hh spread over the space through active transport mechanisms rather than through passive diffusion (Huang and Kornberg, 2015; Teimouri and Kolomeisky, 2016; Chen et al., 2017; Fancher and Mugler, 2020; Rosenbauer et al., 2020). Furthermore, the morphogens considered in the present study induce the expression of multiple target gene expressions, potentially leading to multiple spatial boundaries (Torroja et al., 2004; Hannon et al., 2017; Bakker et al., 2020). While our theory suggests that the cost-precision trade-off can only be optimized at a single target boundary, one can consider an extension of our study in which a weighted average of the precision of many boundary positions is balanced against the total cost of generating the morphogen profile.\n\nModified trade-off relations in systems with more complex geometries, such as the 1D model with a distributed morphogen source, and the morphogen dynamics on a sphere, can be conceived as well (see Appendix 2). For the latter case, the \u03bb values, for the morphogens inducing the endoderm and mesoderm of zebrafish embryos, are found far greater than those leading to the trade-off bound (Appendix 2\u2014figure 2b). The large trade-off product values may either simply indicate that the thermodynamic cost is not necessarily a key physical constraint or reflect the presence of other molecular players in a more complex mechanism establishing the zebrafish germ layers. (Nowak et al., 2011; M\u00fcller et al., 2012; Dubrulle et al., 2015; Almuedo-Castillo et al., 2018).\n\nGenerally, multiple morphogen profiles relay combinatorial input signals that determine the expressions of an array of downstream target genes and their subsequent interactions (Briscoe and Small, 2015; Tka\u010dik and Gregor, 2021). For instance, the anterior patterning of the Drosophila embryo depends on the dynamic interpretation of maternal input signals from bcd, nanos, and torso (Liu et al., 2013). Nevertheless, each morphogen profile is a fundamental component of biological pattern formation, and its thermodynamic cost must be taken into account in the energy budget of a developing organism. In this light, our theory proposes a quantitative framework to evaluate the cost-precision trade-off of individual morphogen profiles, which allows us to show that the morphogen profiles of fruit fly development are nearly optimal, as opposed to those of the zebrafish embryo. For future work, it would be of great interest to extend our approach to more complex tissue patterning mechanisms, for which key insights are being generated from ongoing studies on the fruit fly, zebrafish, chicken, and mouse (Dubrulle et al., 2015; Oginuma et al., 2017; Zagorski et al., 2017; Li et al., 2018; Petkova et al., 2019; Rogers et al., 2020; Oginuma et al., 2020).\n\n## Materials and methods\n\nMethods are described in Appendices 1\u20133. Appendix 1 derives the expressions associated with the cost-precision trade-off relation for the localized synthesis-diffusion-depletion model of the morphogen dynamics in a 1D array of cells. Appendix 2 derives modified trade-off relations in a 1D model with a distributed morphogen source, and the morphogen dynamics occurring on a sphere. Appendix 3 details how the length and time scales of the naturally occurring morphogen profiles are obtained from literature.\n",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "e41bbc75-3dc4-475a-a59a-3db516ade899",
+      "submission_id": "5f01dbb6-19a8-465c-8d3f-d6239e9435d2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70034.sa1](https://doi.org/10.7554/eLife.70034.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript presents a theoretical investigation on cost-precision relations in the formation of biological signaling profiles (also known as morphogen gradients) that are responsible for the proper development of biological organisms. It is argued that the thermodynamic cost is an important factor in the morphogen gradient formation, and several signaling molecule gradients in Drosophila appear to be optimized according to the presented theoretical estimates. This is one of the first quantitative studies of the optimization of the development morphogen gradients, and its main arguments are strong and convincing. One of the main conclusions of this work is that the complex task of biological signaling processes seems to be optimized, and the paper should be interesting to a wide range of scientists working on both experimental and theoretical aspects of understanding the fundamental origin of optimization in biological processes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cost-precision trade-off relation determines the optimal morphogen gradient for accurate biological pattern formation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Mariela Petkova (Reviewer #2); Anatoly Kolomeisky (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1) The main assumption in the paper is that the cost of creating a morphogen gradient is something that the biological system cares about. However, it is not shown that the cost of creating the morphogen gradient is a significant portion of the total energy budget of the biological system, and therefore potentially necessary to be optimized. The choice of trade-off function was presented without supporting arguments that either reflect biological expectations or demonstrate that the results are robust to other trade-off constructs. Importantly, the paper argues that the agreement between the optimal gradient shape predicted by the trade-off framework and the measurements in real biological systems indicates that thermodynamic cost is a key constraint determining the morphogen shape. However, perturbed systems such as increasing and decreasing the dosage of Bicoid still produce viable embryos (Liu et al., PNAS, 2013). The latter observation suggests that both producing different amount of morphogen molecules and employing regulatory mechanisms to correct the effects of perturbations are not energetically cost-limiting to an embryo. Justifying that this cost is significant with respect to the cells' energy budget would greatly aid the manuscript.\n\n2) Similarly, the authors choose a product of thermodynamic cost and the squared relative error in the position as a trade-off function that they analyze. My question is how robust are the obtained results? The choice of the trade-off function is not unique and it does not have any fundamental foundation, to the best of my understanding. For instance, one defines X as a thermodynamic cost and Y as relative error in position, then not only X*Y, but also (X+Y), X*Y*Y, X*X*Y and many other combinations also might be viewed as trade-off functions. But they would lead to a different prediction on the optimized minimal length and other related issues. Then how to choose and why?\n\n3) The work constraints the patterning problem to a gradient which produces a single target boundary, but validates the results with measurements in systems where gradients are known to regulate many downstream patterns. The result of the trade-off analysis is that the location of the target boundary determines the shape of the gradient. How is this reconciled with the understanding that, for example, the Bicoid gradient is read out by multiple downstream genes along the entire length of the fly embryo? (Hannon et al., eLife, 2017).\n\n4) The description of the error above Equation 1 is somewhat confusing in two different ways: i) definitions are given in terms of mathematical variables like N and the subscript i that are not explicitly explained. The reader can figure out the intended meaning via later discussions, but it would be helpful to make these terms clear from the start. ii) More broadly, the notion of \"measurement\" used in the paper is a little abstract, and is likely to confuse biologically-oriented readers. Before delving into the mathematical definition of measurement errors, could the authors provide a summary of how measurements could hypothetically be carried out via concrete biological mechanisms? For example, they mention that space-time-averaged measurements might be carried out by cell surface receptors. But what mechanisms could lead to instantaneous point measurements?\n\n5) In line 181 the authors state that \"the two limiting models can be effectively minimized by similar \u03bb values at a given position is of great significance.\" However comparing Figures 2(c) and 3(c) it is a hard to directly see this, because in one case the y-axis is normalized as \u03bb/L and in the other case as \u03bb/a. Could the authors somehow make this similarity in predicted \u03bb values clearer? Maybe adding a twin y axis scale to one of the figures, showing \u03bb in terms of the other normalization?\n\n6) The discussion of the reversible model in the appendix is quite nice, particularly how you can derive all the irreversible results directly from the reversible model by taking an appropriate limit. Particularly interesting is that the cost defined in terms of entropy production rate times characteristic time, if normalized by ln(\u03b3) [using Equation 33] would seem to give you the morphogen production cost of Equation 37, up to a factor of \u03b10, assuming the irreversible limit where ln(\u03b3) -> infinity. So it seems that the entropy-based cost is closely related to the other definition of cost, and the authors could consider highlighting this fact in the main text. Is there any qualitative way of understanding why ln(\u03b3) is the appropriate normalization factor?\n\n7) All derivations are mode for the finite length L. However, as argued in the specific calculations L>>\\\u03bb, so why not to derive the results for L>>1. In this case, all the formulas are much simpler and there is a clear physical interpretation for all the quantities. Why the bulkier and less transparent expressions are used in the text? If authors wanted to explain things better to a broader readership and to emphasize the physics they better use a simple analytical framework. Or they need to explain why they used a finite L.\n\n8) It would be better to describe fully how the characteristic lengths were estimated. This is because the reported numbers do not fully agree with what is reported in experiments. For example, for BCD Berezhkovskii and Shvartsman report \u03bb=75 nm, not 100nm as given in this paper. Why are such different results are reported?\n\nReviewer #1:\n\nThere has been a recent surge of interest in trying to understand the tradeoff between the precision achieved by non-equilibrium processes and the underlying thermodynamic costs. One of the most interesting arenas for this exploration has been biology, and in the current paper, the authors have discovered a novel form of this tradeoff in the context of pattern formation during animal development.\n\nTheir main focus is a 1D mathematical model describing how morphogens are produced, diffuse, and depleted within the cell, forming a gradient that divides the cell into two spatial regions with different subsequent developmental trajectories. Establishing a sharp boundary between these regions comes at a certain cost in terms of morphogen production, and the authors provide an elegant theoretical argument that the boundary precision and cost bounded by an \"uncertainty principle\" type relationship, where their product is always greater than a certain system-specific quantity. The result is reminiscent of, but qualitatively different from, the so-called thermodynamic uncertainty principle that has generated a lot of excitement in the non-equilibrium statistical physics community in the last few years.\n\nFinding such a tradeoff is interesting in itself, but is it biologically relevant? In this respect the paper makes two striking claims: (i) making the system optimally cost effective in achieving a certain precision predicts a certain characteristic decay length for the morphogen concentration profile; (ii) this prediction is directly testable using data from earlier Drosophila development experiments. The authors' analysis shows how four morphogens (Hh, Wg, Bcd, Dpp) to a good approximation fulfill the criteria for optimality in this sense. This conclusion seems robust to different mechanisms by which cells can \"measure\" the morphogen profile to translate it into cell fate decisions, whether these measurements are done instantaneously at precise locations or averaged over time and space.\n\nOverall the results of the paper are well supported by the theoretical analysis and data. The optimality of the four Drosophila morphogens suggests that cost-effectiveness has played an evolutionary role in shaping morphogenesis, at least in this organism. One complicating factor in this conclusion (which to their credit, is explored by the authors) is that optimality may not be achieved in systems with more complex geometries, like zebrafish. How and when thermodynamic costs are decisive in biological contexts is a fascinating question for future study. This paper is a significant contribution to that discussion and a wonderful example of physics-inspired theory helping us interpret well-studied biological systems in a completely new way.\n\nReviewer #2:\n\nThis paper assumes that the thermodynamic cost of producing patterning molecules constraints the events which occur during development. It takes a minimalistic view of a general class of problems in developmental systems: how a morphogen gradient specifies a boundary location in a downstream gene expression pattern. The authors evaluate the cost of generating a morphogen gradient against the precision with which the gradient can specify the target boundary. Making more morphogen molecules costs more, but reduces variability in the gradient and improves the precision with which a target boundary can be set up. The authors develop a trade-off framework for two gradient readout limits: instantaneous and spatiotemporally averaged. In both cases, the optimal solution for the shape of the morphogen gradient is consistent with experimental measurements in multiple biological systems. The key claim of the work is that this agreement between prediction and measurement is evidence that developing systems employ such trade-offs.\n\nStrengths:\n\nThe trade-off framework developed in this paper has three major strengths. First, it is simple and generalizable to multiple systems and geometries: developing embryos in multiple species as well as gradient-mediated tissue patterning. Second, it depends only on geometric features such as length, boundary location and gradient shape. These can be readily measured in real biological systems and thus test the framework's predictions. Lastly, it captures how the dynamics of reading out the morphogen gradient affects the trade-off between morphogen cost and target boundary precision. The key result of the predictions is that the same shape of the morphogenic gradient optimizes two readout strategies which are at the two extremes of biological function \u2013 instantaneous readout, and spatiotemporal averaging.\n\nWeaknesses:\n\nThe weakness in this paper lies in reconciling the work's assumptions and results with their interpretations in the context of complex biological systems.\n\nThe main assumption in the paper is that the cost of creating a morphogen gradient is something that the biological system cares about. However, it is not shown that the cost of creating the morphogen gradient is a significant portion of the total energy budget of the biological system, and therefore potentially necessary to be optimized.\n\nNext, the work constraints the patterning problem to a gradient which produces a single target boundary, but validates the results with measurements in systems where gradients are known to regulate many downstream patterns. The result of the trade-off analysis is that the location of the target boundary determines the shape of the gradient. How is this reconciled with the understanding that, for example, the Bicoid gradient is read out by multiple downstream genes along the entire length of the fly embryo? (Hannon et al.,2017)\n\nFinally, the authors present only one possibility for the trade-off function and evaluate it against measurements in unperturbed systems. The choice of trade-off function was presented without supporting arguments that either reflect biological expectations or demonstrate that the results are robust to other trade-off constructs. Importantly, the paper argues that the agreement between the optimal gradient shape predicted by the trade-off framework and the measurements in real biological systems indicates that thermodynamic cost is a key constraint determining the morphogen shape. However, perturbed systems such as increasing and decreasing the dosage of Bicoid still produce viable embryos (Liu et al., 2013). The latter observation suggests that both producing different amount of morphogen molecules and employing regulatory mechanisms to correct the effects of perturbations are not energetically cost-limiting to an embryo.\n\nReferences:\n\nHannon, C.E., Blythe, S.A. and Wieschaus, E.F., 2017. Concentration dependent chromatin states induced by the bicoid morphogen gradient. eLife, 6, p.e28275.\n\nLiu, F., Morrison, A.H. and Gregor, T., 2013. Dynamic interpretation of maternal inputs by the Drosophila segmentation gene network. Proceedings of the National Academy of Sciences, 110(17), pp.6724-6729\n\nReviewer #3:\n\nThis is a very elegant theoretical investigation on the microscopic features of the formation of biological signaling profiles. A comprehensive theoretical model that estimates the thermodynamic cost and the accuracy is presented. The theoretical predictions are utilized for analyzing several morphogens in Drosophila. The strengths of the paper are the following: (i) it addresses a fundamental question of optimization of biological systems from the fundamental point of view, (ii) the approach is fully quantitative, (iii) the theoretical framework is explored for estimating the optimization of morphogen gradients in the real biological system, and (iv) several extensions for more realistic situations of the morphogen gradients formation are outlined. All these features make me believe that the conclusions of the paper are justified. However, despite the fact that the paper is well written and the overall results seem convincing, there are several issues that need to be clarified. The weaknesses (not very significant) include: (i) the estimates of lengths do not fully agree with some of the reported lengths in the literature, (ii) the robustness of the cost-precision trade-off relation is not critically evaluated, and (iii) some references to the existing literature are missing.\n",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f84f3ffe-b56f-4fe4-8012-ad69f1048361",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C1",
+      "claim": "Spatial boundaries formed during animal development originate from the pre-patterning of tissues by signaling molecules, called morphogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial boundaries formed during animal development originate from the pre-patterning of tissues by signaling molecules, called morphogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "129e393d-64fa-4a58-95ab-0d47c0b0cdcc",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C2",
+      "claim": "The accuracy of boundary location is limited by the fluctuations of morphogen concentration that thresholds the expression level of target gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of boundary location is limited by the fluctuations of morphogen concentration that thresholds the expression level of target gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical assertion about the relationship between concentration fluctuations and boundary accuracy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "573cc6cd-4254-4258-84fc-ec0a197a5482",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C3",
+      "claim": "Producing more morphogen molecules gives rise to smaller relative fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Producing more morphogen molecules, which gives rise to smaller relative fluctuations, would better serve to shape more precise target boundaries",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from statistical principles (central limit theorem) applied to molecular counting.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "96d24517-2115-4907-afb8-4b7d2d5f9579",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C4",
+      "claim": "Producing more morphogen molecules incurs more thermodynamic cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Producing more morphogen molecules, which gives rise to smaller relative fluctuations, would better serve to shape more precise target boundaries; however, it incurs more thermodynamic cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental thermodynamic principle applied to biological synthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "28db58c6-c232-4482-8410-b4fae1d1300e",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C5",
+      "claim": "In the classical diffusion-depletion model of morphogen profile formation, the morphogen molecules synthesized from a local source display an exponentially decaying concentration profile with a characteristic length \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "In the classical diffusion-depletion model of morphogen profile formation, the morphogen molecules synthesized from a local source display an exponentially decaying concentration profile with a characteristic length \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a well-established mathematical model in developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "654ad816-2021-40d9-83cc-669a5bfa9356",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C6",
+      "claim": "To attain a precise profile with the minimal cost, \u03bb should be roughly half the distance to the target boundary position from the source.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory suggests that in order to attain a precise profile with the minimal cost, \u03bb should be roughly half the distance to the target boundary position from the source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction derived from the cost-precision trade-off analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "4eab8c2f-85ab-40cd-94fb-bfde5f4db8d8",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C7",
+      "claim": "The profiles of morphogens that pattern the Drosophila embryo and wing imaginal disk are formed with nearly optimal \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we find that the profiles of morphogens that pattern the Drosophila embryo and wing imaginal disk are formed with nearly optimal \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding based on comparison of theoretical predictions with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "bf16c5bd-4d91-443a-8739-26b077702ebf",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C8",
+      "claim": "Morphogens instruct cells to acquire distinct cell fates in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of spatial structures is generally linked to the pre-patterning of tissues with biomolecules, called morphogens, that instruct cells to acquire distinct cell fates in a concentration-dependent manner (Turing, 1990; Wolpert, 1969; Crick, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to foundational work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "78fd31f6-71aa-4c08-816e-8259f208fba2",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C9",
+      "claim": "The positional information encoded in the local morphogen concentration is translated by the cells into the expression of specific genes associated with cell-fate determination.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, the positional information encoded in the local morphogen concentration is translated by the cells into the expression of specific genes associated with cell-fate determination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular mechanism of morphogen action, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "7c397c8f-4154-4d6d-b925-17ddf709e78a",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C10",
+      "claim": "The concentration profile of morphogens must be stable against the noisy background signals inherent to the cellular environment to generate reproducible spatial organization.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to generate reproducible spatial organization, the concentration profile of morphogens must be stable against the noisy background signals inherent to the cellular environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the requirements for reliable developmental patterning.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "56852456-51ae-4d9c-a2de-21692d55edd1",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C11",
+      "claim": "Quantitative measurements of morphogen gradients have been performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with quantitative measurements of morphogen gradients (Gregor et al., 2007; Kicheva et al., 2007; Bollenbach et al., 2008; Kanodia et al., 2009; He et al., 2010; Zagorski et al., 2017; Petkova et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "e10e43a0-2ded-4cfe-8702-5573c7972d12",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C12",
+      "claim": "Theoretical studies have been devoted to understanding the precision and speed by which morphogen gradients are formed and interpreted.",
+      "claim_type": "EXPLICIT",
+      "source": "a number of theoretical studies have been devoted to understanding the precision and speed by which morphogen gradients are formed and interpreted (Tostevin et al., 2007; Emberly, 2008; Erdmann et al., 2009; Berezhkovskii et al., 2010; Saunders and Howard, 2009; Morishita and Iwasa, 2009; Kolomeisky, 2011; Tka\u010dik et al., 2015; Lo et al., 2015; Desponds et al., 2020; Fancher and Mugler, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "7652e0de-d876-412d-9fdd-48cdbc443a46",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C13",
+      "claim": "Generation of morphogen gradient incurs thermodynamic cost.",
+      "claim_type": "EXPLICIT",
+      "source": "however, generation of morphogen gradient, which breaks the spatial symmetry, incurs thermodynamic cost",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental thermodynamic principle about symmetry breaking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "bd386339-5a35-4e1e-afbb-7db998c65fac",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C14",
+      "claim": "The relation of thermodynamic cost with the precision and speed of morphogen gradient formation has rarely been addressed except for a few cases.",
+      "claim_type": "EXPLICIT",
+      "source": "the relation of this cost with the precision and speed of morphogen gradient formation has rarely been addressed except for a few cases (Emberly, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "4a408739-90c6-419d-8ab9-ae6bf170bd99",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C15",
+      "claim": "Creating and maintaining morphogen gradients require an influx of energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Creating and maintaining morphogen gradients require an influx of energy (Falasco et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on the energetics of gradient formation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "533ded5c-56c7-47d2-a43e-14a9d57d6357",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C16",
+      "claim": "Energy is a limited resource for biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "which is a limited resource for biological systems (Ilker and Hinczewski, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "3914b822-757c-463c-a828-6443719a34a0",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C17",
+      "claim": "Energy is particularly limited at the stage of embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "which is a limited resource for biological systems (Ilker and Hinczewski, 2019), particularly at the stage of embryonic development (Rodenfels et al., 2019; Rodenfels et al., 2020; Song et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on embryonic energetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "ef96a515-f777-40ee-bfec-d1077b1ab122",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C18",
+      "claim": "In the 2-hr post-fertilization of fruit fly embryogenesis, a uniform field of \u223c6000 nuclei characterizes the periphery of the shared cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 2-hr post-fertilization of fruit fly embryogenesis, a uniform field of \u223c6000 nuclei characterizes the periphery of the shared cytoplasm (Foe and Alberts, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical observation supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "6c8b5268-befa-421a-a627-b7dc22ce5b86",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C19",
+      "claim": "Bcd is produced from the anterior-end of the embryo by maternally deposited bcd mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Bcd, a transcription factor, is produced from the anterior-end of the embryo by maternally deposited bcd mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "3612a14d-7aac-43b8-a57d-75352dded0b7",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C20",
+      "claim": "Bcd's diffusion and degradation engender an exponentially decaying profile of Bcd concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Its subsequent diffusion and degradation engender an exponentially decaying profile of Bcd concentration (Driever and N\u00fcsslein-Volhard, 1988a; Driever and N\u00fcsslein-Volhard, 1988b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "0e6fb8af-3904-4715-b41f-d718723df810",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C21",
+      "claim": "The Bcd concentration profile is translated into the anterior expression of the target gene, hunchback (hb).",
+      "claim_type": "EXPLICIT",
+      "source": "which is translated into the anterior expression of the target gene, hunchback (hb) (Struhl et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "3ca9a651-90b2-4c5c-a6a2-b94a548a75c5",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C22",
+      "claim": "Nuclei at around the middle section of the embryo can infer their relative spatial positions by detecting the concentration of Bcd with an exquisite precision of \u223c a single nucleus width.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclei at around the middle section of the embryo can infer their relative spatial positions by detecting the concentration of Bcd with an exquisite precision of \u223c a single nucleus width (Gregor et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "dd5ad2f2-1719-4436-b99d-1c4566f8e6c7",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C23",
+      "claim": "Wg spreads through the wing disk from a narrow band of cells at the DV boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Wg, a member of the Wnt signaling pathway, spreads through the wing disk from a narrow band of cells at the DV boundary (Zecca et al., 1996; Neumann and Cohen, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "938bb192-1541-4208-9a5f-827587b628aa",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C24",
+      "claim": "The Wg concentration profile leads to the differential activation of multiple target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Wg concentration profile leads to the differential activation of multiple target genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Wg signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "b4cd5abb-3c0e-42b0-aacd-cb156aa6b024",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C25",
+      "claim": "Wg induces the sharp expression boundary of senseless (sens) a few cells away from the DV boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "and, in particular, induces the sharp expression boundary of senseless (sens) a few cells away from the DV boundary (Jafar-Nejad et al., 2006; Bakker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "94ac0d32-8c49-4abe-b440-bda05d1edf13",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C26",
+      "claim": "Hh patterns the AP axis by spreading from the posterior to the anterior side of the wing disk.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Hh patterns the AP axis by spreading from the posterior to the anterior side of the wing disk, affecting the expression of multiple genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Hh signaling in wing development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "90d8ca7d-c3fc-4efa-a100-31337b1ea4d7",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C27",
+      "claim": "Hh's downstream transcriptional regulation gives rise to a strip of 8\u201310 dpp expressing cells that form the AP boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Its downstream transcriptional regulation gives rise to a strip of 8\u201310 dpp expressing cells that form the AP boundary (Tabata and Kornberg, 1994; Strigini and Cohen, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "254baef0-0ce2-4e2c-bdcb-1a879e52add5",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C28",
+      "claim": "Dpp spreads out from the localized production at the AP boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Dpp, which spreads out from the localized production at the AP boundary, further patterns the AP axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Dpp signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "812ec30e-5fce-4320-b802-5499504edc3b",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C29",
+      "claim": "Major changes in the expression level of Dpp target genes, such as spalt-major (salm), occur at \u223c50% of the total length of the domain patterned by Dpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Major changes in the expression level of Dpp target genes, such as spalt-major (salm), occur at \u223c50% of the total length of the domain patterned by Dpp (Nellen et al., 1996; Entchev et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "cbdaf5ca-4db2-42f5-88bd-6253dde67148",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C30",
+      "claim": "Drosophila wing structures with the spatial precision of a single-cell width emerge from the coordinated actions of multiple patterning events.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, Drosophila wing structures with the spatial precision of a single-cell width emerge from the coordinated actions of multiple patterning events (Abouchar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "5cdcbf52-3c5d-4dcb-a16a-e37491d95521",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C33",
+      "claim": "Morphogen profiles exhibiting a large gradient and small fluctuations give rise to small positional errors.",
+      "claim_type": "EXPLICIT",
+      "source": "such that the morphogen profiles exhibiting a large gradient and small fluctuations give rise to small positional errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the mathematical relationship between concentration error and positional error (Equation 1).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "2ba6025e-8a31-4134-9f27-db15390708d7",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C34",
+      "claim": "The cost of transferring the positional information should include the cellular resources used to generate the steady state profile prior to the measurement, as well as the resources to maintain the profile during the measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost of transferring the positional information should include the cellular resources used to generate the steady state profile prior to the measurement, as well as the resources to maintain the profile during the measurement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration about what constitutes the total cost.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "4fe8214b-c44c-4df8-a76c-17c2ed2f27aa",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C36",
+      "claim": "The thermodynamic cost of producing the morphogens is proportional to the total number of morphogens produced over the time scale of \u03c4(x).",
+      "claim_type": "EXPLICIT",
+      "source": "The thermodynamic cost of producing the morphogens, which is effectively the driving force of pattern formation, is expected to be proportional to this number (Lynch and Marinov, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical assumption supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "df31bfa5-90f7-42b0-9239-980aeaf5dd18",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C41",
+      "claim": "The probability distribution of the steady state concentration profile obeys the Poisson statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the fact that the probability distribution of the steady state concentration profile obeys the Poisson statistics (Heuett and Qian, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "e00478c9-e917-4afb-961c-a71ed563322f",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C42",
+      "claim": "All the reactions in the system are of zeroth or first order.",
+      "claim_type": "EXPLICIT",
+      "source": "since all the reactions in the system are of zeroth or first order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "d3ad3e68-5a5a-4fbe-b734-adec8297b17f",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C45",
+      "claim": "Increasing the overall morphogen content reduces the morphogen profile's positional error at the expense of a larger thermodynamic cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the overall morphogen content reduces the morphogen profile's positional error at the expense of a larger thermodynamic cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the inverse relationship between cost and precision.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "59291525-981a-492b-91f3-ab9a7806e8f3",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C51",
+      "claim": "The Bcd profile must be measured within 10 min by the nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "but must be measured within 10 min by the nuclei (Lucas et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "02b59e40-20bc-4058-b34f-b0f4868682c8",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C53",
+      "claim": "Biological pattern formation by morphogen gradients is a process operating out of equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological pattern formation by morphogen gradients is a process operating out of equilibrium (Falasco et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "7a97ed13-80b5-4a64-a695-04152bff0a99",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C54",
+      "claim": "Thermodynamic cost is incurred to generate a morphogen gradient with minimal error for the transfer of positional information against stochastic fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "in which thermodynamic cost is incurred to generate a morphogen gradient with minimal error for the transfer of positional information against stochastic fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the nature of the process.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "da2c0451-dcc6-498d-b5ea-e9d06144bde1",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C55",
+      "claim": "The cost-precision trade-off of pattern formation discussed in this study fundamentally differs from that of TUR.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost-precision trade-off of pattern formation discussed in this study fundamentally differs from that of TUR (Pietzonka et al., 2017; Horowitz and Gingrich, 2017; Dechant and Sasa, 2020; Song and Hyeon, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical comparison supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "acbe99d9-d3d2-4283-836b-d709961c2baf",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C56",
+      "claim": "The concentration profile of morphogen is not a current-like observable with an odd-parity with time-reversal.",
+      "claim_type": "EXPLICIT",
+      "source": "in that the concentration profile of morphogen is not a current-like observable with an odd-parity with time-reversal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical distinction about the nature of the observable.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "efd09095-57e9-4bc4-a79a-b198b10a2157",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C57",
+      "claim": "The pattern formation is quantitatively bounded by the dissipation.",
+      "claim_type": "EXPLICIT",
+      "source": "however, still of great significance is the discovery of the underlying principle that the pattern formation is quantitatively bounded by the dissipation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "0c013c79-3242-49d1-b58c-135d6923f820",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C60",
+      "claim": "\u03bb can be tuned to minimize the cost-precision trade-off product, which leads to the formation of cost-effective morphogen profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "As the main result, we show that \u03bb can be tuned to minimize the cost-precision trade-off product, which leads to the formation of cost-effective morphogen profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical result of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "705fc5b8-3903-4fc6-a6e0-6ab0da044d0d",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C64",
+      "claim": "The thermodynamic cost is one of the key physical constraints in designing the morphogen profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings lend support to the hypothesis that along with the reduction in the positional error, the thermodynamic costisone of the key physical constraints in designing the morphogen profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "6fb6226b-4fd0-4cfd-8b6a-557b3142f0ea",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C65",
+      "claim": "The molecular mechanisms underlying the formation of morphogen profiles are much more complex than those discussed in the SDD model.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms underlying the formation of morphogen profiles are, however, much more complex than those discussed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "56d3d34b-5fee-4dc8-a28d-318718336101",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C66",
+      "claim": "It has been suggested that Wg and Hh spread over the space through active transport mechanisms rather than through passive diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, among the four biological examples shown in Figures 2 and 3, it has been suggested that Wg and Hh spread over the space through active transport mechanisms rather than through passive diffusion (Huang and Kornberg, 2015; Teimouri and Kolomeisky, 2016; Chen et al., 2017; Fancher and Mugler, 2020; Rosenbauer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies proposing alternative mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "d0a3fe52-cabf-4f90-aed3-196c36f1eee6",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C67",
+      "claim": "The morphogens considered in the present study induce the expression of multiple target gene expressions, potentially leading to multiple spatial boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the morphogens considered in the present study induce the expression of multiple target gene expressions, potentially leading to multiple spatial boundaries (Torroja et al., 2004; Hannon et al., 2017; Bakker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "30cc265f-c367-4bb2-bf29-91c433475907",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C68",
+      "claim": "The cost-precision trade-off can only be optimized at a single target boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "While our theory suggests that the cost-precision trade-off can only be optimized at a single target boundary",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the current theoretical framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "60b04414-4da3-405f-8576-66e0a0e97311",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C69",
+      "claim": "The \u03bb values for the morphogens inducing the endoderm and mesoderm of zebrafish embryos are found far greater than those leading to the trade-off bound.",
+      "claim_type": "EXPLICIT",
+      "source": "For the latter case, the \u03bb values, for the morphogens inducing the endoderm and mesoderm of zebrafish embryos, are found far greater than those leading to the trade-off bound (Appendix 2\u2014figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding based on analysis shown in Appendix 2\u2014figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "7a0d190c-3e70-43a9-852e-23a7173cbbb4",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C70",
+      "claim": "The large trade-off product values for zebrafish may indicate that the thermodynamic cost is not necessarily a key physical constraint.",
+      "claim_type": "EXPLICIT",
+      "source": "The large trade-off product values may either simply indicate that the thermodynamic cost is not necessarily a key physical constraint",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the zebrafish data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "0639c0d9-e2f5-45a7-971d-f20ba4ac8ee2",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C71",
+      "claim": "The large trade-off product values for zebrafish may reflect the presence of other molecular players in a more complex mechanism establishing the zebrafish germ layers.",
+      "claim_type": "EXPLICIT",
+      "source": "or reflect the presence of other molecular players in a more complex mechanism establishing the zebrafish germ layers. (Nowak et al., 2011; M\u00fcller et al., 2012; Dubrulle et al., 2015; Almuedo-Castillo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations to studies on zebrafish development.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "049743b8-a8e0-43e2-b81b-fd7032391704",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C72",
+      "claim": "Multiple morphogen profiles relay combinatorial input signals that determine the expressions of an array of downstream target genes and their subsequent interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, multiple morphogen profiles relay combinatorial input signals that determine the expressions of an array of downstream target genes and their subsequent interactions (Briscoe and Small, 2015; Tka\u010dik and Gregor, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "d21b0315-1b58-4d80-b306-d9853034726a",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C73",
+      "claim": "The anterior patterning of the Drosophila embryo depends on the dynamic interpretation of maternal input signals from bcd, nanos, and torso.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the anterior patterning of the Drosophila embryo depends on the dynamic interpretation of maternal input signals from bcd, nanos, and torso (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "088cd04d-90ad-4e8d-a0ff-513f5ecdd27c",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C74",
+      "claim": "Each morphogen profile is a fundamental component of biological pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, each morphogen profile is a fundamental component of biological pattern formation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of individual morphogen profiles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "a08264e1-35a9-4d25-bcd0-10a51ca345f8",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C75",
+      "claim": "The thermodynamic cost of each morphogen profile must be taken into account in the energy budget of a developing organism.",
+      "claim_type": "EXPLICIT",
+      "source": "and its thermodynamic cost must be taken into account in the energy budget of a developing organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration about energy budgets in development.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "a6799aa4-35c1-4e92-b624-f2ce94ebc24a",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C76",
+      "claim": "The theory proposes a quantitative framework to evaluate the cost-precision trade-off of individual morphogen profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In this light, our theory proposes a quantitative framework to evaluate the cost-precision trade-off of individual morphogen profiles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "9df76d8e-40d6-4a44-b087-c67c9c855f29",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "claim_id": "C77",
+      "claim": "The morphogen profiles of fruit fly development are nearly optimal, as opposed to those of the zebrafish embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "which allows us to show that the morphogen profiles of fruit fly development are nearly optimal, as opposed to those of the zebrafish embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding based on the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "999380ab-24fc-482c-9f8b-88e49e7ecd77",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Morphogens are signaling molecules that pre-pattern tissues during animal development by instructing cells to acquire distinct cell fates in a concentration-dependent manner, with positional information encoded in local morphogen concentration translated into specific gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8, C9, and C10 collectively describe established knowledge about morphogen function in developmental biology, supported by foundational citations (Turing, Wolpert, Crick). These claims provide the conceptual framework for the study and are well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "ff062223-1e9f-4f64-b1be-c47d1ef01539",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Boundary location accuracy is limited by morphogen concentration fluctuations, with a fundamental trade-off where producing more morphogen molecules reduces relative fluctuations and positional errors but incurs greater thermodynamic cost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C33, and C45 establish the theoretical basis for the cost-precision trade-off. The relationship follows from statistical principles (central limit theorem) and thermodynamic fundamentals, with the mathematical relationship in Equation 1 linking concentration fluctuations to positional error through the gradient.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "40f3086d-95da-4e10-93e6-587ecd020456",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the classical diffusion-depletion model, morphogen profiles display exponentially decaying concentration with characteristic length \u03bb, and the theory predicts that \u03bb should be roughly half the distance to the target boundary (\u03bb \u2248 0.43-0.50 x_b) to minimize the cost-precision trade-off.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C60 present the main theoretical result. C5 describes the established SDD model, while C6 and C60 present the novel theoretical prediction derived from mathematical optimization of the trade-off product. The derivation is supported by equations and analytical results shown in Figures 2 and 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The morphogen profiles of Bcd, Wg, Hh, and Dpp that pattern the Drosophila embryo and wing imaginal disk are formed with nearly optimal \u03bb values, close to the theoretical predictions for minimizing the cost-precision trade-off.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C18-C30, and C77 present the key empirical validation. The experimental data on morphogen profiles and target gene boundaries (supported by multiple citations and shown in Figures 2-3 and Figure 2\u2014figure supplement 1) are compared against theoretical predictions. The \u03bb values for all four Drosophila morphogens fall close to the optimal values predicted by the theory, providing strong support for the cost-effectiveness hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "c032c71a-391e-449b-b146-a56d5441ffb0",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Quantitative measurements of morphogen gradients have been performed, and theoretical studies have addressed the precision and speed of morphogen gradient formation and interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C12 describe the state of the field, supported by extensive citations to both experimental measurements and theoretical studies. These establish the context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "54491505-5777-45a8-a92f-176db51b343d",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Morphogen gradient generation incurs thermodynamic cost and requires energy influx, which is a limited resource in biological systems, particularly during embryonic development, but the relationship between cost and precision/speed has rarely been addressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 establish the motivation for the study, supported by citations to relevant literature on thermodynamics and energetics of development. These claims justify why examining the cost-precision trade-off is important.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "cc31409f-63b6-4ee2-8167-0dae0096e2bc",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The cost of morphogen profile formation includes resources to generate and maintain the steady-state profile, with thermodynamic cost proportional to the total number of morphogens produced, and the steady-state concentration profile obeys Poisson statistics for zeroth or first-order reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C36, C41, and C42 describe the theoretical framework for quantifying cost and precision. The Poisson statistics assumption (C41) is supported by citation and is appropriate for the zeroth/first-order reaction system (C42). The cost formulation (C36) is theoretically justified and supported by citation to Lynch and Marinov 2015.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "0ea84a31-4255-4c0e-8c95-fa345aae1cd6",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Bcd profile must be measured within 10 minutes by the nuclei during Drosophila embryogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by citation to Lucas et al. 2018 and provides an important temporal constraint for the space-time-averaged measurement model. This empirical constraint is used in the Discussion to evaluate the applicability of the two limiting measurement scenarios.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "b0ddf324-a488-4cdd-98e2-0c11f5faeef7",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Biological pattern formation by morphogen gradients operates out of equilibrium with thermodynamic cost incurred to generate gradients against stochastic fluctuations, and while the cost-precision trade-off differs fundamentally from thermodynamic uncertainty relations (TUR), pattern formation is quantitatively bounded by dissipation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 connect the work to broader thermodynamic principles. The distinction from TUR (C55-C56) is theoretically sound\u2014morphogen concentration is not a current-like observable with odd time-reversal parity. The connection to dissipation bounds (C57) is supported by the analysis in Appendix 1 with the reversible reaction-diffusion model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "0dabf3b2-57f3-4e35-89ea-8c9a6c69084b",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Thermodynamic cost is one of the key physical constraints in designing morphogen profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 is presented as a hypothesis supported by the findings. While the near-optimal \u03bb values for Drosophila morphogens provide suggestive evidence, the claim acknowledges this is a hypothesis rather than a definitive conclusion. The zebrafish counterexample (C69-C71) shows this may not be universal, and alternative explanations exist.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "606cb4e5-09af-4ed7-8a30-59a2bc4d1db7",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The molecular mechanisms underlying morphogen profile formation are more complex than the SDD model, with Wg and Hh potentially spreading through active transport rather than passive diffusion, morphogens inducing multiple target gene expressions, and the current theory only optimizing the trade-off at a single boundary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 acknowledge important limitations of the study. C66 is supported by citations to studies proposing active transport mechanisms. C67 is supported by citations showing multiple target genes. These limitations are appropriately discussed and do not invalidate the main findings but indicate areas for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "2e65f01f-e3c0-4107-b6c6-75f397a32789",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The \u03bb values for morphogens patterning zebrafish embryo endoderm and mesoderm are far greater than optimal values, which may indicate either that thermodynamic cost is not a key constraint or that more complex mechanisms are involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 present a negative result that provides important context. C69 is supported by data in Appendix 2\u2014figure 2b. C70 and C71 offer speculative but reasonable interpretations supported by citations to zebrafish development studies. This appropriately qualifies the generality of the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    },
+    {
+      "id": "51ae9399-9ff9-4da0-a8be-59d84480d3bf",
+      "content_id": "9227b827-3417-4ea8-9de2-2cf5fee49746",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Multiple morphogen profiles relay combinatorial signals determining target gene expression, each morphogen profile is a fundamental component of pattern formation with thermodynamic cost that must be considered in the energy budget, and the theory provides a quantitative framework to evaluate individual morphogen profile cost-precision trade-offs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 contextualize the work within broader developmental biology and summarize the contribution. C72-C73 are supported by citations to relevant literature. C74-C76 appropriately frame the scope and contribution of the theoretical framework developed in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:05.348887Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f84f3ffe-b56f-4fe4-8012-ad69f1048361",
+      "result_id": "999380ab-24fc-482c-9f8b-88e49e7ecd77"
+    },
+    {
+      "claim_id": "bf16c5bd-4d91-443a-8739-26b077702ebf",
+      "result_id": "999380ab-24fc-482c-9f8b-88e49e7ecd77"
+    },
+    {
+      "claim_id": "78fd31f6-71aa-4c08-816e-8259f208fba2",
+      "result_id": "999380ab-24fc-482c-9f8b-88e49e7ecd77"
+    },
+    {
+      "claim_id": "7c397c8f-4154-4d6d-b925-17ddf709e78a",
+      "result_id": "999380ab-24fc-482c-9f8b-88e49e7ecd77"
+    },
+    {
+      "claim_id": "129e393d-64fa-4a58-95ab-0d47c0b0cdcc",
+      "result_id": "ff062223-1e9f-4f64-b1be-c47d1ef01539"
+    },
+    {
+      "claim_id": "573cc6cd-4254-4258-84fc-ec0a197a5482",
+      "result_id": "ff062223-1e9f-4f64-b1be-c47d1ef01539"
+    },
+    {
+      "claim_id": "96d24517-2115-4907-afb8-4b7d2d5f9579",
+      "result_id": "ff062223-1e9f-4f64-b1be-c47d1ef01539"
+    },
+    {
+      "claim_id": "5cdcbf52-3c5d-4dcb-a16a-e37491d95521",
+      "result_id": "ff062223-1e9f-4f64-b1be-c47d1ef01539"
+    },
+    {
+      "claim_id": "d3ad3e68-5a5a-4fbe-b734-adec8297b17f",
+      "result_id": "ff062223-1e9f-4f64-b1be-c47d1ef01539"
+    },
+    {
+      "claim_id": "28db58c6-c232-4482-8410-b4fae1d1300e",
+      "result_id": "40f3086d-95da-4e10-93e6-587ecd020456"
+    },
+    {
+      "claim_id": "654ad816-2021-40d9-83cc-669a5bfa9356",
+      "result_id": "40f3086d-95da-4e10-93e6-587ecd020456"
+    },
+    {
+      "claim_id": "0c013c79-3242-49d1-b58c-135d6923f820",
+      "result_id": "40f3086d-95da-4e10-93e6-587ecd020456"
+    },
+    {
+      "claim_id": "4eab8c2f-85ab-40cd-94fb-bfde5f4db8d8",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "ef96a515-f777-40ee-bfec-d1077b1ab122",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "6c8b5268-befa-421a-a627-b7dc22ce5b86",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "3612a14d-7aac-43b8-a57d-75352dded0b7",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "0e6fb8af-3904-4715-b41f-d718723df810",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "3ca9a651-90b2-4c5c-a6a2-b94a548a75c5",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "dd5ad2f2-1719-4436-b99d-1c4566f8e6c7",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "938bb192-1541-4208-9a5f-827587b628aa",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "b4cd5abb-3c0e-42b0-aacd-cb156aa6b024",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "94ac0d32-8c49-4abe-b440-bda05d1edf13",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "90d8ca7d-c3fc-4efa-a100-31337b1ea4d7",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "254baef0-0ce2-4e2c-bdcb-1a879e52add5",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "812ec30e-5fce-4320-b802-5499504edc3b",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "cbdaf5ca-4db2-42f5-88bd-6253dde67148",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "9df76d8e-40d6-4a44-b087-c67c9c855f29",
+      "result_id": "c86829d2-1af6-47cb-b7ad-ecf1cff7be32"
+    },
+    {
+      "claim_id": "56852456-51ae-4d9c-a2de-21692d55edd1",
+      "result_id": "c032c71a-391e-449b-b146-a56d5441ffb0"
+    },
+    {
+      "claim_id": "e10e43a0-2ded-4cfe-8702-5573c7972d12",
+      "result_id": "c032c71a-391e-449b-b146-a56d5441ffb0"
+    },
+    {
+      "claim_id": "7652e0de-d876-412d-9fdd-48cdbc443a46",
+      "result_id": "54491505-5777-45a8-a92f-176db51b343d"
+    },
+    {
+      "claim_id": "bd386339-5a35-4e1e-afbb-7db998c65fac",
+      "result_id": "54491505-5777-45a8-a92f-176db51b343d"
+    },
+    {
+      "claim_id": "4a408739-90c6-419d-8ab9-ae6bf170bd99",
+      "result_id": "54491505-5777-45a8-a92f-176db51b343d"
+    },
+    {
+      "claim_id": "533ded5c-56c7-47d2-a43e-14a9d57d6357",
+      "result_id": "54491505-5777-45a8-a92f-176db51b343d"
+    },
+    {
+      "claim_id": "3914b822-757c-463c-a828-6443719a34a0",
+      "result_id": "54491505-5777-45a8-a92f-176db51b343d"
+    },
+    {
+      "claim_id": "2ba6025e-8a31-4134-9f27-db15390708d7",
+      "result_id": "cc31409f-63b6-4ee2-8167-0dae0096e2bc"
+    },
+    {
+      "claim_id": "4fe8214b-c44c-4df8-a76c-17c2ed2f27aa",
+      "result_id": "cc31409f-63b6-4ee2-8167-0dae0096e2bc"
+    },
+    {
+      "claim_id": "df31bfa5-90f7-42b0-9239-980aeaf5dd18",
+      "result_id": "cc31409f-63b6-4ee2-8167-0dae0096e2bc"
+    },
+    {
+      "claim_id": "e00478c9-e917-4afb-961c-a71ed563322f",
+      "result_id": "cc31409f-63b6-4ee2-8167-0dae0096e2bc"
+    },
+    {
+      "claim_id": "59291525-981a-492b-91f3-ab9a7806e8f3",
+      "result_id": "0ea84a31-4255-4c0e-8c95-fa345aae1cd6"
+    },
+    {
+      "claim_id": "02b59e40-20bc-4058-b34f-b0f4868682c8",
+      "result_id": "b0ddf324-a488-4cdd-98e2-0c11f5faeef7"
+    },
+    {
+      "claim_id": "7a97ed13-80b5-4a64-a695-04152bff0a99",
+      "result_id": "b0ddf324-a488-4cdd-98e2-0c11f5faeef7"
+    },
+    {
+      "claim_id": "da2c0451-dcc6-498d-b5ea-e9d06144bde1",
+      "result_id": "b0ddf324-a488-4cdd-98e2-0c11f5faeef7"
+    },
+    {
+      "claim_id": "acbe99d9-d3d2-4283-836b-d709961c2baf",
+      "result_id": "b0ddf324-a488-4cdd-98e2-0c11f5faeef7"
+    },
+    {
+      "claim_id": "efd09095-57e9-4bc4-a79a-b198b10a2157",
+      "result_id": "b0ddf324-a488-4cdd-98e2-0c11f5faeef7"
+    },
+    {
+      "claim_id": "705fc5b8-3903-4fc6-a6e0-6ab0da044d0d",
+      "result_id": "0dabf3b2-57f3-4e35-89ea-8c9a6c69084b"
+    },
+    {
+      "claim_id": "6fb6226b-4fd0-4cfd-8b6a-557b3142f0ea",
+      "result_id": "606cb4e5-09af-4ed7-8a30-59a2bc4d1db7"
+    },
+    {
+      "claim_id": "56d3d34b-5fee-4dc8-a28d-318718336101",
+      "result_id": "606cb4e5-09af-4ed7-8a30-59a2bc4d1db7"
+    },
+    {
+      "claim_id": "d0a3fe52-cabf-4f90-aed3-196c36f1eee6",
+      "result_id": "606cb4e5-09af-4ed7-8a30-59a2bc4d1db7"
+    },
+    {
+      "claim_id": "30cc265f-c367-4bb2-bf29-91c433475907",
+      "result_id": "606cb4e5-09af-4ed7-8a30-59a2bc4d1db7"
+    },
+    {
+      "claim_id": "60b04414-4da3-405f-8576-66e0a0e97311",
+      "result_id": "2e65f01f-e3c0-4107-b6c6-75f397a32789"
+    },
+    {
+      "claim_id": "7a0d190c-3e70-43a9-852e-23a7173cbbb4",
+      "result_id": "2e65f01f-e3c0-4107-b6c6-75f397a32789"
+    },
+    {
+      "claim_id": "0639c0d9-e2f5-45a7-971d-f20ba4ac8ee2",
+      "result_id": "2e65f01f-e3c0-4107-b6c6-75f397a32789"
+    },
+    {
+      "claim_id": "049743b8-a8e0-43e2-b81b-fd7032391704",
+      "result_id": "51ae9399-9ff9-4da0-a8be-59d84480d3bf"
+    },
+    {
+      "claim_id": "d21b0315-1b58-4d80-b306-d9853034726a",
+      "result_id": "51ae9399-9ff9-4da0-a8be-59d84480d3bf"
+    },
+    {
+      "claim_id": "088cd04d-90ad-4e8d-a0ff-513f5ecdd27c",
+      "result_id": "51ae9399-9ff9-4da0-a8be-59d84480d3bf"
+    },
+    {
+      "claim_id": "a08264e1-35a9-4d25-bcd0-10a51ca345f8",
+      "result_id": "51ae9399-9ff9-4da0-a8be-59d84480d3bf"
+    },
+    {
+      "claim_id": "a6799aa4-35c1-4e92-b624-f2ce94ebc24a",
+      "result_id": "51ae9399-9ff9-4da0-a8be-59d84480d3bf"
+    }
+  ],
+  "comparisons": []
+}

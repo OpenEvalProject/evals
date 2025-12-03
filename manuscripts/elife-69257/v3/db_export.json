@@ -1,0 +1,1856 @@
+{
+  "submission": {
+    "id": "265f8c77-8c3d-41af-85ce-1d6913dd8012",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:35:01.327492Z",
+    "updated_at": "2025-12-03T12:35:01.327492Z"
+  },
+  "content": [
+    {
+      "id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "submission_id": "265f8c77-8c3d-41af-85ce-1d6913dd8012",
+      "content_type": "manuscript",
+      "content_text": "# Neutrophil extracellular traps arm DC vaccination against NPM-mutant myeloproliferation\n\n## Authors\n\n- Claudio Tripodo<sup>1</sup> ([ORCID: 0000-0002-0821-6231](https://orcid.org/0000-0002-0821-6231))\n- Barbara Bassani<sup>2</sup>\n- Elena Jachetti<sup>2</sup>\n- Valeria Cancila<sup>1</sup>\n- Claudia Chiodoni<sup>2</sup>\n- Paola Portararo<sup>2</sup>\n- Laura Botti<sup>2</sup>\n- Cesare Valenti<sup>3</sup>\n- Milena Perrone<sup>2</sup>\n- Maurilio Ponzoni<sup>4</sup>\n- Patrizia Comoli<sup>5</sup>\n- Mara Lecchi<sup>6</sup>\n- Paolo Verderio<sup>6</sup>\n- Antonio Curti<sup>7</sup>\n- Mario P Colombo<sup>2</sup>\n- Sabina Sangaletti<sup>2</sup> ([ORCID: 0000-0001-7047-287X](https://orcid.org/0000-0001-7047-287X)) \u2020\n\n### Affiliations\n\n1. Tumor Immunology Unit, Department of Health Sciences, University of Palermo Palermo Italy ([ROR:044k9ta02](https://ror.org/044k9ta02))\n2. Department of Research, Fondazione IRCCS Istituto Nazionale Tumori Milan Italy ([ROR:05dwj7825](https://ror.org/05dwj7825))\n3. Department of Mathematics and Informatics, University of Palermo Palermo Italy ([ROR:044k9ta02](https://ror.org/044k9ta02))\n4. Pathology Unit, IRCCS San Raffaele Scientific Institute Milan Italy ([ROR:04tfzc498](https://ror.org/04tfzc498))\n5. Cell Factory, Istituto di Ricovero e Cura a Carattere Scientifico Policlinico San Matteo Pavia Italy ([ROR:04tfzc498](https://ror.org/04tfzc498))\n6. Bioinformatics and Biostatistics Unit, Department of Applied Research and Technological Development, Fondazione IRCCS Istituto Nazionale dei Tumori Milan Italy ([ROR:05dwj7825](https://ror.org/05dwj7825))\n7. Department of Experimental, Diagnostic and Specialty Medicine \u2013 DIMES, Institute of Hematology \"Ser\u00e0gnoli\" Bologna Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeutrophil extracellular traps (NETs) are web-like chromatin structures composed by dsDNA and histones, decorated with antimicrobial proteins. Their interaction with dendritic cells (DCs) allows DC activation and maturation toward presentation of NET-associated antigens. Differently from other types of cell death that imply protein denaturation, NETosis preserves the proteins localized onto the DNA threads for proper enzymatic activity and conformational status, including immunogenic epitopes. Besides neutrophils, leukemic cells can release extracellular traps displaying leukemia-associated antigens, prototypically mutant nucleophosmin (NPMc+) that upon mutation translocates from nucleolus to the cytoplasm localizing onto NET threads. We tested NPMc+ immunogenicity through a NET/DC vaccine to treat NPMc-driven myeloproliferation in transgenic and transplantable models. Vaccination with DC loaded with NPMc+ NET (NPMc+ NET/DC) reduced myeloproliferation in transgenic mice, favoring the development of antibodies to mutant NPMc and the induction of a CD8+ T-cell response. The efficacy of this vaccine was also tested in mixed NPMc/WT bone marrow (BM) chimeras in a competitive BM transplantation setting, where the NPMc+ NET/DC vaccination impaired the expansion of NPMc+ in favor of WT myeloid compartment. NPMc+ NET/DC vaccination also achieved control of an aggressive leukemia transduced with mutant NPMc, effectively inducing an antileukemia CD8 T-cell memory response.\n\n## Introduction\n\nFifteen years ago, a scanning electron microscopy image from Volker Brinkmann showed for the first time spider web-like chromatin structures extruded by neutrophils, called neutrophil extracellular traps (NETs), to entrap fungi and bacteria (Brinkmann et al., 2004). Such extracellular chromatin is composed by DNA and histones also decorated with antimicrobial proteins like myeloperoxidase (MPO) and neutrophil elastase suggesting the hypothesis that eukaryotic chromatin evolved under the need of maintaining genome integrity while defending the organism (Brinkmann and Zychlinsky, 2012). Extracellular traps can be released by other innate immune cells including eosinophils, macrophages, and mast cells (Goldmann and Medina, 2012) and, as recently shown, by cells of the adaptive immunity like CD4 T-helper cells (Costanza et al., 2019). Additionally, since their discovery, NET has been associated with inflammatory and immune-mediated diseases like diabetes, arthritis, systemic vasculitis, and lupus erythematosus (Jorch and Kubes, 2017). In a previous study, we demonstrated that the adoption of a NET-based dendritic cell (DC) vaccination was able to break tolerance against neutrophil cytoplasmatic antigens and induce antineutrophil cytoplasmatic antibodies (ANCA)-associated autoimmunity. Indeed, NET is highly immunogenic by virtue of the immune adjuvant effect of DNA and its associated proteins, as well as for the sticky properties of the DNA thread that enable NET persistent interaction with DCs for efficient loading of antigens followed by DC maturation and migration to draining lymph nodes for cross-presentation (Sangaletti et al., 2012).\n\nAlso, myeloid transformed cells can extrude NET into the extracellular space to activate the contact system of coagulation (Demers et al., 2012) or to sustain myeloproliferation. We have recently described extracellular traps enrichment in bone marrow (BM) biopsies from NPM1 mutant acute myeloid leukemia (AML) patients and, using an ad hoc transgenic mouse, we showed that NPM cytoplasmic compartmentalization allows mutant NPM (NPMc+) to be relocalized onto the NET threads, exerting alarmin functions (Tripodo et al., 2017). The colocalization of histones with NPMc+ is a supporting evidence of their direct release from the leukemic clone.\n\nThe immune system has the capacity to eradicate AML as shown by the graft-versus-leukemia effect that is obtained after allogeneic hematopoietic stem cell transplantation. Accordingly, ideal immune molecular targets of AML should be restricted to leukemic cells including stem cells and be part of leukemic development. Indeed, the leukemia-associated antigens that entered clinical trials as peptide vaccines, such as RHAMM, Proteinase 3, and Wilms\u2019 tumor antigen-1 (WT-1), possess these features (Anguille et al., 2012).\n\nNPM1 mutations are among the most frequent molecular alterations in AML, where they play a prognostic role (Falini et al., 2005). NPM1 gene encodes for the nucleolar protein nucleophosmin that regulates the ARF-p53 tumor-suppressor pathway (Colombo et al., 2011). NPMc mutations cause the stable relocalization of the protein from nucleus to cytoplasm, an event that, per se, is sufficient to trigger AML (Falini et al., 2007). The improved overall survival of patients with NPMc+ AML has been possibly explained by a T-cell response against the mutant epitopes. The specific CD4+ and CD8+ T-cell response against these epitopes raised the possibility of exploiting such property to immunize NPMc+ patients to control MRD or during maintenance treatment (Schneider et al., 2014). In this context, NET directly released by leukemic cells could efficiently display tumor-specific associated antigens and be used as vehicles for new DC-based vaccines.\n\nIn this study, we investigated whether the AML-associated NPMc is immunogenic when became part of the NET threads and whether it can be adopted in vaccination strategies to control leukemia outgrowth.\n\n## Results\n\n### NPMc+ NET/DC immunization controls NPMc-driven myeloproliferation\n\nThe h-MRP8-NPM1+ (NPMc+) transgenic mice develop a myeloproliferation with expansion of mature CD11b+ myeloid cells and Gr-1+c-Kit+ myeloblasts, without development of overt acute leukemia. Using NET from NPMc+ transgenic mice we previously demonstrated that mutant NPM can work as an alarmin when localized in the cytoplasm as part of the NET thread (Swerdlow et al., 2016), gaining immunogenicity. In this work, we tested the possibility of using NPMc+ NET in a DC-based vaccination strategy to control myeloproliferation of NPMc+ transgenic mice. To this end, mice were immunized with DC cocultured with NPMc+ NET or WT NET (Figure 1A). During coculture, DC became loaded with the prototypical NET-associated antigen MPO (Figure 1B, red signal) and, only in case of NPMc+ NET, with mutant NPMc (Figure 1B, green signal). NPMc+ NET/DC immunization, but not immunization with WT NET/DC, conspicuously reduced the signs of myeloid expansion in the BM of NPMc+ mice, with a decrease in dense clusters of morphologically immature granulocytic elements, as shown by histopathological analysis of H&E-stained BM sections (Figure 1C), and a reduction of myeloid blasts, in favor of more segmented forms on BM blood smears (Figure 1D). Moreover, NPMc+ NET immunization resulted in a significant decrease of cytoplasmic NPM-expressing elements, as assessed by immunofluorescence (Figure 1E, F, Figure 1\u2014source data 1). Accordingly, Fluorescence Activated Cell Sorting (FACS) analysis of the PB confirmed the reduction of circulating immature GR-1+c-Kit+ precursors and of the overall frequency of CD11b+ cells (Figure 1G, H, Figure 1\u2014source data 2) in the same vaccinated mice.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69257/elife-69257-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic representation of the vaccination experiment. (B) IF analysis for myeloperoxidase (MPO) (purple) and NPM (green) of DC cocultured with NPMc+ or WT NET. (C) Bone marrow (BM) histopathology of NPMc+ transgenic mice vaccinated with WT or NPMc+ NET-loaded DC or left untreated. (D) May\u2013Grunwald Giemsa staining of BM smears from NPMc+ transgenic mice vaccinated with WT or NPMc+ NET-loaded DC or left untreated. (E) IF analysis for NPM on BM sections from vaccinated or control mice. (F) Quantification of NPMc + areas in the IF analysis (mean with SD; KWMC test p < 0.0001) (Figure 1\u2014source data 1); PB FACS analysis for (G) GR-1+c-Kit+ myeloblasts (mean with SD; KWMC test p: 0.0030) and (H) CD11b+ myeloid cells (mean with SD; KWMC test p: 0.0810)(Figure 1\u2014source data 2); NPMc+ transgenic mice vaccinated with WT or NPMc+ NET-loaded DC or left untreated. (I) Quantification of autoantibodies to mutant NPM developing in the serum of vaccinated mice (mean with SD; KWMC test p: 0.0021) (Figure 1\u2014source data 3). In each graph every point represents a single mouse.\n\nThe immune response triggered by NPMc+ NET immunization induced anti-NPMc+ serum antibodies detected by ELISA (Figure 1I, Figure 1\u2014source data 3) and the increase of CD8+ T-cells frequency in BM infiltrates (not shown). Of note, the increased infiltration of CD8+ T cells led to a higher frequency of CD8+ T cells closely contacting NPMc+ cells (Figure 2A, B, and Figure 2\u2014source data 1). Overall, these data indicate that DC vaccination with NPMc+ NET is able to induce immune activation toward control of NPMc+ myeloproliferation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69257/elife-69257-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative IF analysis on BM sections of NPMc+ transgenic mice vaccinated with WT or NPMc+ NET-loaded DC or left untreated, showing the reciprocal distribution of CD8+ T cells (green) and NPMc+ (red). (B) Software-based quantitative analysis of cell\u2013cell contact between CD8+ and NPMc+ cells on segmented IF microphotographs; mean with SD, KWMC test p: 0.0016 (source data in Figure 2\u2014source data 1).\n\n### NPMc+ NET/DC immunization selectively impairs NPMc+ mutant hematopoiesis in competitive BMT setting\n\nTo test the activity of the DC/NPMc+ NET vaccination in controlling the expansion of NPMc+ cells, we performed competitive BM transplantation experiments in which WT mice were transplanted with a 1:1 mixture of Lin- precursors from NPMc+ Tg mice (CD45.1) and WT mice (CD45.2). Four weeks after BMT mice were vaccinated with DC loaded with either WT or NPMc+ NET (Figure 3A). Mice were sacrificed 12 weeks after BMT and analyzed for the frequency of circulating CD45.1 (NPMc+ derived) and CD45.2 (WT-derived) CD11b+ and GR-1+c-Kit+ myeloblasts, respectively. Representative analysis (Figure 3B) and cumulative data (Figure 3C and Figure 3\u2014source data 1) show that vaccination with NPMc+ NET-loaded DC impaired the expansion of CD45.1 mutant hematopoietic cells in favor of CD45.2 WT cells in the competitive setting. These results suggest that vaccination with NET carrying mutant NPMc could selectively control the expansion of mutant cells derived from NPMc+ precursors, while sparing the normal counterpart. Interestingly, the reduced expansion of CD45.1 NPMc+ cells was associated to increased CD8 T-cell infiltration in vaccinated mice (Figure 3D, E and Figure 3\u2014source data 2). The selective effect on mutant cells in the competitive setting underscores the efficacy and specificity of the engendered immune response toward mutant hematopoiesis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69257/elife-69257-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic representation of the competitive BMT experiment. (B) Representative dot plots showing the frequency of CD45.1 (NPMc+) and CD45.2 (WT) in myeloid cell- (CD11b+) and myeloblast- (GR-1+c-Kit+) gate of bone marrow (BM) chimeras that received vaccination with WT or NPMc+ NET/DC. (C) Cumulative data showing the frequency of CD45.1 (NPMc+) and CD45.2 (WT) within the CD11b+ (mean with SD; KWMC test p: 0.0628 and p: 0.0636, respectively) and GR-1+c-Kit+ (mean with SD; KWMC test p: 0.0625 and p: 0.1134, respectively) gate (original data in Figure 3\u2014source data 1). (D) IHC analysis of CD8+ cells in BM sections of in BM chimeras vaccinated with WT or NPMc+ NET-loaded DC or left untreated. (E) Quantification of CD8+ T cells performed by counting the number of immunoreactive cells out of five nonoverlapping high-power (\u00d7400) microscopic fields for every BM sample (mean with SD; KWMC test p: 0.0005) (original data in Figure 3\u2014source data 2).\n\n### NPMc+ NET/DC vaccination prevents transplantable NPMc+ leukemia ell growth\n\nSince the indolent phenotype of NPMc+ Tg mice did not allow a short-term readout for assessing vaccine efficacy, we generated a transplantable leukemia model expressing mutant NPMc. To this purpose, the leukemia cell line C1498 was infected with a lentiviral vector expressing human mutant NPM1 (C1498-NPMc+) (Figure 4\u2014figure supplement 1) and then injected into NPMc+ Tg mice. In this experimental setting, the transgenic mice are expected to induce tolerance in case of potential transgene antigenicity (Sow et al., 2020), thus we tested whether NPMc+ NET-based vaccine could disrupt tolerance in NPMc+ mice inducing an immune response able to control C1498-NPMc+ leukemia. DC uploaded with NPMc+ NET were injected intradermal in NPMc+ Tg mice bearing the C1498-NPMc+ leukemia. The vaccine was administered at days 3, 5, 10, and 14 post leukemia injection (Figure 4\u2014figure supplement 2A). Tumor growth was monitored twice a week and the raising of NPMc-specific CD8+ T cells was evaluated through in vivo cytotoxicity assay (Arranz et al., 2014) by injecting mice with splenocytes pulsed 1 hr with NPMc-derived MHC-I peptides or with an unrelated peptide. The immunization significantly delayed tumor growth (Figure 4A and Figure 4\u2014source data 1) and induced CD8+ T-cell cytotoxicity against NPMc (Figure 4B and Figure 4\u2014source data 2). In a different arm of the same experiment, the NPMc +NET/DC vaccine also induced a strong CD8+ T cytotoxic response in tumor-free mice (Figure 4B and Figure 4\u2014source data 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69257/elife-69257-fig4-v3.jpg)\n\n**Figure 4.:** C1498-NPMc+ leukemia cells were injected s.c. into NPMc+ transgenic mice. NPMc+ NET/DC-based vaccine was administered at days 3, 5, 10, and 14 post leukemia injection. Tumor growth was monitored twice a week. (A) Line chart of the mean with standard deviation (SD) tumor volume (mixed model, p: 0.0214) (original data in Figure 4\u2014source data 1). (B) Elicitation of antigen-specific CD8+ T cells in vaccinated mice. Vaccinated tumor bearing mice (TB) or control mice have been injected with 107 cells containing equal numbers of splenocytes labeled with 1.25 \u03bcM (CFSEhi) or 0.125 \u03bcM of CFSE (CFSElow). CFSEhi cells were previously pulsed 1 hr with NPMc-MHC-I peptides. Mice were sacrificed the following day, and their splenocytes and lymph nodes analyzed by flow cytometry for the evaluation of the presence of CFSEhi and CFSElow cells. NPMc-specific cytolytic activity was calculated as: (percentage CFSEhigh cells) \u00d7 100/(percentage CFSElow cells) (mean with SD; KWMC test p: 0.0007; dotted line refers to the control \u2018no TM CTRL) (Figure 4\u2014source data 2). One representative experiment out of three performed. Abbreviations: No TM: mice noninjected with C1498 cells; VAX: vaccinated mice; CTRL: nonvaccinated mice. (C) Take of C1498-NPMc+ cells injected s.c. in NPMc+ transgenic mice vaccinated with DC pulsed with NPMc+ NET or NPMc+ peptides at days 3, 5, 10, and 14 post leukemia injection, line chart of the mean with SD tumor volume (mixed model, p: 0.1443). IHC analysis for CD8 and granzyme B of C1498 tumors subcutaneously grown in NPM1 tg mice that received the different vaccinations. (D) quantification of CD8 (mean with SD; KWMC test p: 0.0010) (original data in Figure 4\u2014source data 4) and (E) granzyme B+ cells (mean with SD; KWMC test p: 0.0001) (original data in Figure 4\u2014source data 5) and (F) representative pictures showing CD8 and granzyme B+ cells in tumors from mice vaccinated with NPMc+ NET or NPMc+ peptides. (G) Frequency of GFP+ cells in mice injected intrabone and vaccinated with DC pulsed with NPMc+ NET or NPMc+ peptides at days 10, 14, 17, and 23 post leukemia cell injection (KW test p: 0.064) (original data in Figure 4\u2014source data 6). FACS analysis showing the frequency of CD8 T cells (KW test p: 0.7496) (H; original data in Figure 4\u2014source data 7), Ki-67+ CD8 T cells (KW test p: 0.0028) (I, original data in Figure 4\u2014source data 8), OX40 + CD8 T cells (analysis of Variance [ANOVA] two-way test, p:0.0066) (J, original data in Figure 4\u2014source data 9), exhausted T cells (PD1+TIM3+LAG3+, panel K, original data in Figure 4\u2014source data 10). KW test p: 0.0417, TNF+ (ANOVA two-way test, p: 0.0324) and IFNg+CD8 T cells (ANOVA two-way test, p: 0.4577) (L, M, original data in Figure 4\u2014source data 11 and Figure 4\u2014source data 12) and the amount of effector memory cells (KW test p: 0.3011) (N, original data in Figure 4\u2014source data 13). Titer of Ab to mutant NPMc and MPO in the sera of vaccinated mice. The NPMc Ab titer (O, original data in Figure 4\u2014source data 14) is shown as OD ratio (KW test p: < 0.0001) whereas the MPO Ab titer (P, original data in Figure 4\u2014source data 15) is shown as pg/ml (KWMC test p: 0.0092). Each boxplot (G\u2013P) indicates the 25th and 75th centiles of the distribution. The horizontal line inside the box indicates the median and the whiskers indicate the extreme measured values.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69257/elife-69257-fig4-figsupp1-v3.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69257/elife-69257-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Schematic representation of the vaccination experiment. (B) Take of C1498-NPMc+ cells injected s.c. in NPMc+ transgenic mice vaccinated with DC pulsed with NPMc+ NET or NPMc+ peptides at days 3, 5, 10, and 14 post leukemia injection, in each chart every line represent a single mouse.\n\nWe next compared the effects of vaccination with DC loaded with either NPMc+ NET or NPMc-derived MHC-I-binding peptides QNYLFGCE, VEAKFINY, and LAVEEVSL. In a first set of experiments in which C1498-NPMc+ cells were injected subcutaneously, the NPMc+ NET/DC vaccine was superior to peptide-loaded DC in controlling tumor growth (Figure 4C, Figure 4\u2014source data 3, Figure 4\u2014figure supplement 2B). In situ IHC analysis revealed increased tumor-infiltrating CD8+ T cells and granzyme B+ elements in support of locally induced cytotoxic response, which was more robust in NPMc+ NET/DC than NPMc-derived MHC-I peptides/DC vaccinated mice (Figure 4D\u2013F and Figure 4\u2014source data 4 and Figure 4\u2014source data 5). To better mimic a physiologic condition of leukemia growth and to test the effects of our vaccines directly into the BM immune microenvironment, we performed intrabone injection of C1498-NPMc+ cells. The DC-based vaccines were administered ip at days 7, 12, 15, and 21. At end point, we evaluated the tumor take as the frequency of GFP+ leukemia cells in the BM. Results showed a reduction of GFP+ cells in the BM of mice vaccinated with either NPMc+ NET/DC vaccine or peptide/DC vaccine in comparison to nonvaccinated mice (Figure 4G and Figure 4\u2014source data 6), which reached statistically significance in case of NPMc+ NET/DC vaccine (p = 0.0214 NPMc +NET/DC vs. ctrl and p = 0.0892 NPMc+ peptides vs. ctrl; Mann\u2013Whitney t-test). Despite similar frequency of CD8 T cell (Figure 4H, Figure 4\u2014source data 7), the NPMc+ NET/DC vaccine was superior in inducing the proliferation of CD8 T cells (Figure 4I, Figure 4\u2014source data 8). Both vaccines sustained OX40 expression on CD8 T cells (Figure 4J, Figure 4\u2014source data 9), however the reduction of exhausted PD1+TIM3+LAG3+ CD8 T cells (Figure 4K, Figure 4\u2014source data 10) was higher in mice receiving the NPMc+ NET/DC vaccine. Accordingly, the production of TNF, but not IFNg, by CD8 T cells (Figure 4L\u2013M, Figure 4\u2014source data 11, and Figure 4\u2014source data 12) was higher in mice receiving the NPMc+ NET/DC vaccine. Finally, a trend toward Tem increase was observed in mice receiving the NPMc+ NET/DC vaccine (Figure 4N, Figure 4\u2014source data 13). ELISA assay showed that both vaccines were able to induce Auto-Ab against mutant NPMc+ (Figure 4O, Figure 4\u2014source data 14), but only NPMc +NET/DC vaccinated mice developed Ab to MPO (Figure 4P, Figure 4\u2014source data 15). Overall these data support the efficacy of NET-based vaccines that were for some aspects superior in promoting T-cell responses in comparison to canonical peptide-based vaccines.\n\n## Discussion\n\nCancer immunotherapy can overcome the induction of drug resistance associated to standard treatments also establishing effective memory response that renders the therapeutic effect durable and independent of repetitive cycles of therapy. DC-loaded ex vivo with tumor antigens have largely been tested as cancer vaccines to induce Th1-type responses and trigger cytotoxic T cells targeting antigen-expressing tumor cells.\n\nThis strategy has been proposed for patients with AML, with variable clinical benefits (reviewed in Van Acker et al., 2019). Nevertheless, common weaknesses emerged from different clinical trials including the low ability of DC to mount an effective CD8 T-cell response because of a weak immunostimulatory activity and/or the existing immunosuppressive microenvironment instigated by leukemic clones fostering tolerogenic IDO-expressing DC (Weinstock et al., 2017).\n\nThis work represents a proof-of-concept featuring NET-based DC vaccination of NPMc+ AML. This subset of AML embodies about 30% of total AML and 50%\u201360% of adult normal karyotype-AML and represents a distinct entity in the World Health Organization classification of Tumours of Haematopoietic and Lymphoid Tissues (Swerdlow et al., 2016). NPM1-mutant AML encompasses a spectrum of biological heterogeneity driven by the co-occurrence of genetic mutations (e.g., FLT3 internal tandem duplications) emerging at the transcriptional level (Mer et al., 2021).\n\nNPMc+ AML has been characterized for spontaneous NPMc+ NET formation in the BM, an event associated with signs of immune activation (Tripodo et al., 2017). Despite the proimmune conditions endowed by a NET-permissive BM environment, the inflammatory skewing and the leukemic clone immunomodulatory profile associated with signs of myelomonocytic differentiation could eventually foster the development of a tolerogenic milieu suitable for NPMc+ AML progression, a condition potentially reverted by vaccination.\n\nThe main novelty of our work consists in the adoption of AML blast-derived NET as antigens source for DC presentation. This NET-based approach enables the display of leukemia-specific and -associated antigens, such as NPMc, and the conveyance of costimulatory signals through the dsDNA thread. In the case of NPMc+ AML, we demonstrated that mutant NPMc exerts a potent adjuvant function, similar to that described for the alarmin HMGB1 (Tripodo et al., 2017).\n\nOur results show that NPMc+ NET/DC vaccination is able to break tolerance against mutated NPM, eventually promoting a strong cytotoxic activity in naive and in AML-bearing NPMc+ Tg mice. These experimental results could represent an important complement to the reported effect of anti-PD-1 immunotherapy in inducing antigen-specific cytotoxic T-cell responses against immunogenic epitopes derived from mutant NPM1, which indicates an existing antigen-specific CD8 response in NPMc+ AML patients (Greiner et al., 2020). Comparing NPMc+ NET/DC vaccines with DC pulsed with NPMc-derived peptides, we found a consistent capacity of NET-based vaccines to promote antitumor immunity inducing CD8 T-cell responses along with the development of NPMc-specific antibodies. Although the efficacy of the NET-based vaccine to control leukemia growth was similar to the DC+ peptides counterpart, only the former reach statistical significance for several immune parameters, in a side-by-side comparison. Also, we would stress the novelty of the NET-based vaccines in AML, using the leukemic blasts as source of NETs, which largely represent the majority of the AML antigenic repertoire displayed onto DNA threads, per se endowed of adjuvant functions. Differently, peptide-based vaccines require prior knowledge of the immunogenic peptides to be loaded onto in vitro-activated DCs.\n\nOne potential limitation of the proposed NET/DC vaccination strategy lies on the possibility of inducing autoimmune responses against NET-exposed self-antigens, as in the case of antineutrophil cytoplasmic antibodies induced against MPO or proteinase-3. Autoimmune vasculitides of small vessels have been detected in peripheral tissues as the result of NET-loaded DC intraperitoneal injection (Sangaletti et al., 2012), but no signs of autoimmunity were observed upon adoption of a subcutaneous NET/DC vaccination, as for the here presented vaccination of C1498-NPMc+ tumor-bearing transgenic mice. Another potential caveat is related to the long-term effects of the immune response elicited by NPMc+ NET/DC vaccination on the hematopoietic niche and on its sustaining nonmalignant hematopoiesis. Experiments with BM chimeras show that NPMc+ NET/DC vaccination selectively impaired the NPMc+ elements, without disrupting the WT hematopoiesis. However, if the induction of sustained immune responses targeting BM resident elements can in turn favor the establishment of proinflammatory conditions contributing to BM niche disfunction is hard to be envisaged, in patients. BM hematopoietic stromal niche alterations have been demonstrated to causally affect the arousal and progression of hematopoietic malignancies, either through transcriptional/phenotypical rewiring of key cellular components of the niche (e.g., osteoblasts, nerve fibers, mesenchymal stromal cells) (Kode et al., 2014; Arranz et al., 2014; Zambetti et al., 2016) or through the modulation of extracellular matrix organization (Tripodo et al., 2012). In this regard, extracellular matrix amount and composition have been demonstrated to affect the activation state, cross-presentation activity, and immunoregulatory properties of myeloid elements, an issue that could prove of particular relevance in the unfavorable setting of myeloid malignancies associated with BM fibrosis (Sangaletti et al., 2005; Sangaletti et al., 2016).\n\n## Materials and methods\n\n### Animals\n\nhMPR8-NPM1 transgenic mice, hereafter referred as NPM1 tg mice, have been acquired on a mixed (C57BL/6J \u00d7 CBA) F1 background (Tripodo et al., 2017) and backcrossed to C57BL/6 (B6.Ptprc < a > ) mice. All experiments involving animals described in this study were approved by the Ministry of Health (authorization number 443/2016-PR e 693/2018-PR). NPMc+\u2013C1498 cells were obtained through lentiviral infection of C1498 cells that were provided by ATCC. NPMc+\u2013C1498 cells were authenticated by Microsynth service using highly polymorphic short tandem repeat loci (STRs). Cell lines are routinely checked for Mycoplasma negativity using MycoAlert Mycoplasma detection Kitt (Lonza). For the intrabone injection mice received 2 \u00d7 105 cells in 20 \u00b5l of saline into the tibia bone cavity. For the subcutaneous injection mice received 5 \u00d7 105 cells in 200 \u00b5l of saline into the right flank.\n\n### Lentiviral vector construction, virus production, and cell infection\n\nTo construct NPM1 lentivector the mutant NPM1 cDNA (mutation type A, TCTG duplication) was cloned into the pLVX-EF1\u03b1-IRES-ZsGreen vector (Clontech) using EcoRI and BamHI restriction sites.\n\nA third-generation packaging system was used to produce viral particles. Lentiviral supernantants for NPM1-expressing virus and control virus (empty pLVX-EF1\u03b1-IRES-ZsGreen vector) were produced in 293T cells by Ca3PO4 cotrasfection of the plasmids as previously described (De Palma and Naldini, 2002). C1498 cell line was infected using viral supernatants at 1:2 ratio with RPMI complete medium. Percentage of infection was evaluated by flow cytometry for GFP expression. Subsequently, infected C1498 cells were sorted by FACSAria to obtain pure populations (100% GFP expression).\n\n### Generation of mouse BM chimeras\n\nCompetitive BM transplantation assay has been performed transplanting lethally irradiated (1100 RAD) WT mice (B6.Ptprc < a > ; CD45.1) with 2 \u00d7 105 Lin negative cells from either NPMc+ (B6.Ptprc < a > ;CD45.1) or WT controls (B6.Ptprc < b > ; CD45.2). LK cells were isolated from total BM through negative selection (Lineage Cell Depletion Kit, Miltenyi). This method allows achieving 70% of purity rate.\n\n### NET-based vaccination protocol\n\nNeutrophils prone to extrude traps have been isolated from agar plugs implanted subcutaneously in WT and NPM1 transgenic mice, as previously described (Sangaletti et al., 2012). In particular, agar NET-prone PMN were seeded onto coated tissue culture dishes in Iscov\u2019s Modified Dulbecco\u2019s Medium ( IMDM) 2% FCS, allowed to adhere for 30 min and added with myeloid DC (1:1; PMN:DC) for 16 hr. During this period, NET is induced and transfer their component to DC that in turn upregulate MHC-II and costimulatory molecules (Sangaletti et al., 2012). Then DC are isolated from the coculture via positive selection, counted and injected (Miltenyi, CD11c Microbeads Ultra Pure). We used three schedules for the administration of the DC NET-based vaccines: (1) ip injection: 2.5 \u00d7 106 cells, once a week for a total of six injection followed by a boost 3 months later; (Figure 1A) or (2) intradermal: 2 \u00d7 106 cells at days 3, 5, 10, and 14 post leukemia cell (C1498 cells) injection, (Schedule in Figure 4A); ip injection at days 7, 12, 15, and 21 for mice receiving C1498 cells intrabone (Figure 4G).\n\nFor peptide-based vaccination protocol, BM-derived DC have been treated with Lipopolysaccharide (LPS) (10 ng/ml) for 16 hr and then added with a mixture of three NPMc+MHC-I-binding synthetic peptides for 2 hr. DC were washed and used in vaccination experiments. MHC-I H2-Kb peptides for NPM1-A mutant NPMc protein were designed according to the best score interrogating the epitope prediction site syfpeithi.de. Peptides with the following amino acid sequences, QNYLFGCE, VEAKFINY, and LAVEEVSL, were purchased from Primm Biotech (Milan, Italy). Peptides were prepared in Dimethyl sulfoxide (DMSO) and then diluted in distilled water.\n\n### Flow cytometry\n\nStaining for cell surface markers was performed in phosphate-buffered saline (PBS) supplemented with 2% fetal bovine serum (FBS) for 30 min on ice. Flow cytometry data were acquired on a LSRFortessa (Becton Dickinson) and analyzed with FlowJo software (version 8.8.6 and 10.4.2, Tree Star Inc). To assess myeloproliferation in NPMc+ transgenic mice, emphasis has been given to the evaluation of the expansion of myeloid precursors. These cells have been identified tanks to their coexpression of CD11b, GR-1, and c-Kit+ markers as described (Colombo et al., 2011). Memory CD4 and CD8 T cell have been identified within their respective gates according to the expression of CD44 and CD62L. Megakaryocyte precursors have been identified within the Lin-c-Kit- gate according to their coexpression of CD41 and CD150 markers. All the antibodies that have been used in flow cytometry are listed in Table S1.\n\n### In vivo cytotoxicity assays\n\nMice were immunized as described and euthanized 1 week after the last boost. In vivo cytotoxicity assay was performed as described in Degl\u2019Innocenti et al., 2005. Briefly, the day before sacrifice, mice were injected i.p. with 107 cells containing equal numbers of splenocytes labeled with 1.25 mg/ml (CFSEhi) or 0.125 mg/ml of CFSE (CFSElow). CFSEhi cells were previously pulsed 1 hr with a mixture of three different NPMc-derived peptides (peptide sequences: QNYLFGCE; VEAKFINY; LAVEEVSL). Upon sacrifice, splenocytes were analyzed by flow cytometry for the presence of CFSEhi and CFSElow cells. NPMc-specific cytolytic activity was calculated as: (percentage of CFSEhigh cells) \u00d7 100/(percentage of CFSElow cells).\n\n### Preparation of bone smears\n\nBM was flushed with saline from the long bones with a 1-ml sirynge in a small plate then recovered with the help of forceps and then smeared onto a slide.\n\n### Histopathological analysis, immunohistochemistry, and immunofluorescence\n\nTo assess myeloproliferation, the BM of NPMc Tg vaccinated or control mice has been histopathologically evaluated for cellularity, expansion of myeloid cells and degree of maturation of myeloid components. Histopathological analysis was performed on routinely stained hematoxylin-and-eosin sections by a pathologist with specific expertise in hematopathology and murine pathology (CT). Briefly, tissue samples were fixed in 10% buffered formalin, decalcified using an Ethylenediaminetetraacetic Acid (EDTA)-based decalcifying solution (MicroDec, Diapath) and paraffin embedded. Four-micrometers-thick sections were deparaffinized and rehydrated. The antigen unmasking technique was performed using Novocastra Epitope Retrieval Solutions pH 6 and pH 9 in a thermostatic bath at 98\u00b0C for 30 min. Subsequently, the sections were brought to room temperature and washed in PBS. After neutralization of the endogenous peroxidase with 3% H2O2 and Fc blocking by a specific protein block (Novocastra, UK), the samples were incubated with the primary antibodies. The following primary antibodies were adopted for IHC and IF: NPM (clone 376, dilution 1:100 pH 6, Dako); CD8\u03b1 (clone D4W2Z, dilution 1:400 pH 9, Cell Signaling); and granzyme B (dilution 1:10 pH 6, Cell Marque). The staining was revealed using IgG (H&L) specific secondary antibody HRP-conjugated (1:500, Novex by Life Technologies) and DAB (3,3\u2032-diaminobenzidine, Novocastra) as substrate chromogen. For double-marker immunofluorescence, after antigen retrieval, the sections were incubated overnight at 4\u00b0C with NPM and CD8\u03b1 primary antibodies. The binding of the primary antibodies to their respective antigenic substrates was revealed by made-specific secondary antibodies conjugated with Alexa-488 (Life Technologies, 1:250) and Alexa-568 (Life Technologies, 1:300) fluorochromes. Nuclei were counterstained with DAPI (4\u2032,6-diamidin-2-fenilindolo). Slides were analyzed under an Axioscope A1 microscope equipped with an Axiocam 503 Color digital camera and Zen 2.0 Software (Zeiss). Quantitative IHC data were obtained by calculating the number of CD8+ or granzyme B+ cells in five nonoverlapping fields at high-power magnification (\u00d7400).\n\nTo measure the cell\u2013cell contact between NPMc+ cells (green signal) and CD8+ cells (red signal), we applied the redundant wavelet transform called \u00e0 trous (Sciortino et al., 2017; Bellavia et al., 2014) because it preserves the original resolution of the image while allowing the removal of noise. With such a method, the quality of the data was preserved without the need of pre- or postprocessing techniques. The intensity of overlay signal (yellow signal) was then measured only within the significant zones identified automatically and related to their own areas. This approach makes the methodology we developed independent of the zoom factor used to acquire the photomicrographs.\n\n### Confocal microscopy analysis\n\nTo evaluate NET formation, NPMc relocalization onto the NET threads, and the transfer of MPO and NPMc+ antigens to DC, agar neutrophils from WT and NPMc+ mice were seeded onto poly-D-lysine coated glasses (IMDM 2% FCS), allowed to adhere for 30 minutes and added with mDCs (1:1 PMN:DC). After 16 h, cells were fixed in 4% paraformaldehyde (PFA) and sequentially stained with mAbs to NPM (antihuman/mouse NPM [clone 376, dilution 1:50, Dako] and antimouse MPO [Millipore]). The NET-DNA was counterstained with Draq5 or the vital DNA dye Sytox green, or with DAPI. IF stainings were acquired under a Leica TCS SP8 confocal microscope (Leica Microsystems).\n\n### Statistical analysis\n\nThe comparisons of interest were assessed by resorting to the nonparametric Kruskal\u2013Wallis (KW) test. p values were estimated via Monte Carlo (KWMC) approach when appropriate. Two-way analysis of variance was adopted to jointly consider observations arisen from experiments performed at different times (block variable). Mixed models (with a compound symmetry covariance matrix) were fitted to assess the tumor growth as a function of time and experimental group (fixed factors) with mice considered as random factor.\n\nAll statistical analyses were carried out with SAS (Statistical Analysis System, RRID:SCR_008567, version 9.4; SAS Institute, Inc, Cary, NC, USA), adopting an \u03b1 level of 5%.\n\nGraphical representations of dotplots reporting mean with standard deviation or boxplots were obtained with Prism version 9.2 (GraphPad Software, San Diego, CA, USA).\n",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "6747cde5-95de-4dd6-a6f6-49b427187f18",
+      "submission_id": "265f8c77-8c3d-41af-85ce-1d6913dd8012",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Renata Pasqualini, https://ror.org/05vt9qd57 Rutgers University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69257.sa0](https://doi.org/10.7554/eLife.69257.sa0)\n\nThese findings are timely and novel. NPM1-mutated acute myeloid leukemia (AML) is a frequent AML subtype for which new therapeutic approaches are needed. The data presented support the feasibility and the anti-leukemic efficacy of a dendritic cell (DC) vaccine armed with neutrophil extracellular traps (NETs) derived from NPM1-mutated myeloid cells. The new methods presented have important implications and will be of interest to a broad audience from immunology, inflammation and cancer fields.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Renata Pasqualini, https://ror.org/05vt9qd57 Rutgers University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69257.sa1](https://doi.org/10.7554/eLife.69257.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Neutrophil extracellular traps arm DC vaccination against NPM-mutant myeloproliferation\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) This work is novel and may be of interest for hematologists and immunologists. However, some of the claims, particularly those referred to the anti-leukemic activity are not fully supported by the data. Please address the referees comments in the re-submission.\n\n2) Many important points were raised, and the evaluation of the manuscript was meticulous and insightful. Inclusion of a comprehensive response to the comments provided will serve the important purpose of improving the publication and raising the impact of the study, which certainly has merit.\n\nReviewer #1 (Recommendations for the authors):\n\nPlease, provide a more detailed description of the experiments in the methods section, particularly for the vaccination protocol.\n\nSome references are reported in brackets while others as superscript. Please revise.\n\nScale bars should be added to all micrographs.\n\nFigure 1: what is the loading efficiency of NPMc NET and WT NET DCs? May loading efficiency influence their immunogenicity? If yes, please provide loading efficiency data for both DCs.\n\nFigure 1D: please specify in the methods how BM smears have been performed\n\nFigure 1E: CTR is duplicated from a paper published by the same group (Tripodo et al. Cancer Res 2017, Figure 3C, bottom left panel). I recognize this is just a control, but duplication is unacceptable.\n\nFigure 1F-I: the figure legend states \"n=5/group\", however some groups have less than five replicates and panel H does not show individual replicates. Also, please uniform the style of the histograms all the figures.\n\nFigure 2C: it seems that top and middle panels may be duplicated. If not duplicated it is unclear to this reviewer the meaning of showing these micrographs next to each other. Also, it is hard to read what is written at the top left corner of middle panels. Please clarify.\n\nFigure 3: figure legend should be revised. As it is now, there is no caption for panel D and E.\n\nFigure 3B: labels for x and y axes should be clearer. Please, remove the gating labels from the y axes, as it may be misleading. Also, it would be important to see that WT 45.1 engrafted hematopoietic subpopulations do not show significant abnormalities.\n\nFigure 3C: lower left panel (at least) needs more replicates. There is a wide difference among replicates in WT NET, questioning the actual biological difference between WT NET and NPMc NET. How do the authors explain such marked variability (~0 vs ~40%)? The same holds true for the lower right panel (~50 vs ~100%).\n\nFigure 4: to really capture the actual antileukemic potential of the NET-DC vaccine, experiments with AML cells engrafted in the bone marrow are required.\n\nFigure 4C: this panel is unclear to this reviewer. What does TM mean? What does na\u00efve no TM Vax mean? Please clarify in the figure legend.\n\nFigure 4D: please show the SE or SD of the six replicates. Was the difference between treatment arm significantly different? X axis label is missing.\n\nFigure 4G: can the authors also show OX40 CD8 percent of positive cells together with MFI? This could be added in the supplemental material.\n\nReviewer #2 (Recommendations for the authors):\n\nIn this study, the authors achieved their aim to show whether NPMc+ blast-derived NET could be utilized in a DC-based vaccine scheme control myeloproliferation or leukemia outgrowth in mouse models. However, there are some points (below) that need to be addressed for clarity.\n\nMouse model: Is there a prior characterization of this model? How does the survival of the animal look like in the steady state? Are there any obvious or subtle developmental defects? Is the immune system at the steady state normal? Where does this animal model originate from, Pandolfi group?\n\nFigure 1: NPMc+ NET/DC immunization controls NPMc-driven myeloproliferation\n\nScale of the histology specimens is missing.\n\nWhy is there a difference between the control mouse and the mouse injected with DC loaded with WT NET? Where did the authors obtain the WT NET from? It seems like the DC+WT NET injection, which is basically DCs loaded with MPO and other normal Neutrophil proteins, promotes myeloproliferation, why could this be? Is the control a transgenic mouse too?\n\nFigure 2. Analysis of CD8 T cell frequency and interaction with NPMc+ cells in BM biopsies from control and vaccinated mice.\n\nAny FACS analysis of the BM? What is the %, absolute number and phenotype of CD8+ T cells in the BM? Are they more activated, releasing granzyme and maybe IFN-g?\n\nFigure 3: NPMc+ NET/DC immunization selectively impairs NPMc+ mutant hematopoiesis in competitive BMT setting.\n\nThis is a very good experiment with extremely promising results, but how do you distinguish NPMc+ 45.1 from the recipient cells that are also 45.1? How can the authors be sure that the BM ablation prior to the BMT is 100% effective?\n\nAlso why no CD8 phenotyping was performed by FACS? % and # could be calculated more reliably than histology.\n\nFigure 4: NPMc+ NET vaccination prevents transplantable NPMc+ leukemia cell growth and promotes CD8 lysis.\n\nRoute of Leukemia cell injection, i.v.?\n\nAny specific reason why tumor couldn't be transplanted into WT mice that don't have the NPM1 mutation? Have the authors ever tried it? It could give better info about the immune system reaction and vaccine efficacy unless tumor is immediately rejected by WT host. Doing this with WT recipients would also help generalize the effects of NET/DC immunizations for other cancer types. What do authors think about the applicability of this vaccination strategy to solid tumors expressing neoantigens? Is NETosis something that can happen in the any tumor microenvironment?\n\nWhat is the effect of vaccination on the overall survival of the mice?\n\nCD8 T cell phenotyping FACS plots and gating are required. Why no other CD8 phenotyping is done? Please add if possible.\n",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b6d50164-ef2e-44c3-96de-4fb4ccc8e162",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C1",
+      "claim": "Neutrophil extracellular traps (NETs) are web-like chromatin structures composed by dsDNA and histones, decorated with antimicrobial proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophil extracellular traps (NETs) are web-like chromatin structures composed by dsDNA and histones, decorated with antimicrobial proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about NETs that draws from established scientific knowledge about their composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "9fb5eed4-1f64-4919-bb33-859d8ff5cbf9",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C2",
+      "claim": "The interaction of NETs with dendritic cells (DCs) allows DC activation and maturation toward presentation of NET-associated antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Their interaction with dendritic cells (DCs) allows DC activation and maturation toward presentation of NET-associated antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about NET-DC interactions and is referenced in the manuscript's prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "a383abd6-ef6e-4d7b-8734-12b92af05093",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C3",
+      "claim": "NETosis preserves the proteins localized onto the DNA threads for proper enzymatic activity and conformational status, including immunogenic epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differently from other types of cell death that imply protein denaturation, NETosis preserves the proteins localized onto the DNA threads for proper enzymatic activity and conformational status, including immunogenic epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about the unique properties of NETosis based on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "3e5522dc-6a6b-4c85-bc95-6656a527fcd3",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C4",
+      "claim": "Leukemic cells can release extracellular traps displaying leukemia-associated antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides neutrophils, leukemic cells can release extracellular traps displaying leukemia-associated antigens, prototypically mutant nucleophosmin (NPMc+) that upon mutation translocates from nucleolus to the cytoplasm localizing onto NET threads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the authors' previous work and observations in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "a61cd6f4-8e90-4c6f-b6db-9c3e3dfe3eb3",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C5",
+      "claim": "Mutant nucleophosmin (NPMc+) translocates from nucleolus to the cytoplasm upon mutation and localizes onto NET threads.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides neutrophils, leukemic cells can release extracellular traps displaying leukemia-associated antigens, prototypically mutant nucleophosmin (NPMc+) that upon mutation translocates from nucleolus to the cytoplasm localizing onto NET threads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavior of mutant NPM based on established knowledge and prior observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "0ce58feb-92f7-4a37-91b2-6471cbf61b1d",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C6",
+      "claim": "Vaccination with DC loaded with NPMc+ NET (NPMc+ NET/DC) reduced myeloproliferation in transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination with DC loaded with NPMc+ NET (NPMc+ NET/DC) reduced myeloproliferation in transgenic mice, favoring the development of antibodies to mutant NPMc and the induction of a CD8+ T-cell response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "c56b8fd5-e8ad-4396-a021-594d38e3ff20",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C7",
+      "claim": "NPMc+ NET/DC vaccination favored the development of antibodies to mutant NPMc.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination with DC loaded with NPMc+ NET (NPMc+ NET/DC) reduced myeloproliferation in transgenic mice, favoring the development of antibodies to mutant NPMc and the induction of a CD8+ T-cell response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data (ELISA results) presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "2d128077-51a6-4432-811f-6c4e1a1c3486",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C8",
+      "claim": "NPMc+ NET/DC vaccination induced a CD8+ T-cell response.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination with DC loaded with NPMc+ NET (NPMc+ NET/DC) reduced myeloproliferation in transgenic mice, favoring the development of antibodies to mutant NPMc and the induction of a CD8+ T-cell response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data (flow cytometry and immunohistochemistry) presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "46b0cc97-4475-49e4-9328-a967b330d415",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C9",
+      "claim": "NPMc+ NET/DC vaccination impaired the expansion of NPMc+ in favor of WT myeloid compartment in mixed NPMc/WT bone marrow chimeras.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficacy of this vaccine was also tested in mixed NPMc/WT bone marrow (BM) chimeras in a competitive BM transplantation setting, where the NPMc+ NET/DC vaccination impaired the expansion of NPMc+ in favor of WT myeloid compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data from competitive bone marrow transplantation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "66edc9af-164c-432e-9896-6e565e426482",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C10",
+      "claim": "NPMc+ NET/DC vaccination achieved control of an aggressive leukemia transduced with mutant NPMc.",
+      "claim_type": "EXPLICIT",
+      "source": "NPMc+ NET/DC vaccination also achieved control of an aggressive leukemia transduced with mutant NPMc, effectively inducing an antileukemia CD8 T-cell memory response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data from C1498-NPMc+ leukemia model experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "46427ec2-ba1d-4087-8eaf-749daff185ac",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C11",
+      "claim": "NPMc+ NET/DC vaccination effectively induced an antileukemia CD8 T-cell memory response.",
+      "claim_type": "EXPLICIT",
+      "source": "NPMc+ NET/DC vaccination also achieved control of an aggressive leukemia transduced with mutant NPMc, effectively inducing an antileukemia CD8 T-cell memory response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing CD8 T-cell responses and memory markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "c848cc81-ddbe-429f-acd6-4ad3295196ec",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C12",
+      "claim": "Volker Brinkmann showed spider web-like chromatin structures extruded by neutrophils for the first time fifteen years ago using scanning electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifteen years ago, a scanning electron microscopy image from Volker Brinkmann showed for the first time spider web-like chromatin structures extruded by neutrophils, called neutrophil extracellular traps (NETs), to entrap fungi and bacteria (Brinkmann et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement supported by citation to Brinkmann et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "59b43aba-d3bc-4063-8fe2-feefd8dc481f",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C13",
+      "claim": "NETs entrap fungi and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifteen years ago, a scanning electron microscopy image from Volker Brinkmann showed for the first time spider web-like chromatin structures extruded by neutrophils, called neutrophil extracellular traps (NETs), to entrap fungi and bacteria (Brinkmann et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional statement about NETs supported by citation to Brinkmann et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "3cf2be34-5c88-43fd-b42f-b3efc815a3d8",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C14",
+      "claim": "Extracellular chromatin is decorated with antimicrobial proteins like myeloperoxidase (MPO) and neutrophil elastase.",
+      "claim_type": "EXPLICIT",
+      "source": "Such extracellular chromatin is composed by DNA and histones also decorated with antimicrobial proteins like myeloperoxidase (MPO) and neutrophil elastase suggesting the hypothesis that eukaryotic chromatin evolved under the need of maintaining genome integrity while defending the organism (Brinkmann and Zychlinsky, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a compositional statement about NETs supported by citation to Brinkmann and Zychlinsky, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "9ee32d99-86ff-45a4-95a6-ee3d4d23aa8d",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C15",
+      "claim": "Eukaryotic chromatin evolved under the need of maintaining genome integrity while defending the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Such extracellular chromatin is composed by DNA and histones also decorated with antimicrobial proteins like myeloperoxidase (MPO) and neutrophil elastase suggesting the hypothesis that eukaryotic chromatin evolved under the need of maintaining genome integrity while defending the organism (Brinkmann and Zychlinsky, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about chromatin evolution supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "4c932865-9661-4797-83e3-2c197ac7e3e8",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C16",
+      "claim": "Extracellular traps can be released by eosinophils, macrophages, and mast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular traps can be released by other innate immune cells including eosinophils, macrophages, and mast cells (Goldmann and Medina, 2012) and, as recently shown, by cells of the adaptive immunity like CD4 T-helper cells (Costanza et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Goldmann and Medina, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "bc7aeec3-7c70-47d8-a2c0-f1f72871dfb2",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C17",
+      "claim": "CD4 T-helper cells can release extracellular traps.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular traps can be released by other innate immune cells including eosinophils, macrophages, and mast cells (Goldmann and Medina, 2012) and, as recently shown, by cells of the adaptive immunity like CD4 T-helper cells (Costanza et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Costanza et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "486a9176-1d37-4baf-a085-77d836cf6ae1",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C18",
+      "claim": "NET has been associated with inflammatory and immune-mediated diseases like diabetes, arthritis, systemic vasculitis, and lupus erythematosus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, since their discovery, NET has been associated with inflammatory and immune-mediated diseases like diabetes, arthritis, systemic vasculitis, and lupus erythematosus (Jorch and Kubes, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Jorch and Kubes, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "70255cf4-9a39-4e81-8049-e37d43515708",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C19",
+      "claim": "NET-based dendritic cell (DC) vaccination was able to break tolerance against neutrophil cytoplasmatic antigens and induce antineutrophil cytoplasmatic antibodies (ANCA)-associated autoimmunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we demonstrated that the adoption of a NET-based dendritic cell (DC) vaccination was able to break tolerance against neutrophil cytoplasmatic antigens and induce antineutrophil cytoplasmatic antibodies (ANCA)-associated autoimmunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous work and is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "3326d61b-eebe-42ab-ade4-15e942a3ad9e",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C20",
+      "claim": "NET is highly immunogenic by virtue of the immune adjuvant effect of DNA and its associated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, NET is highly immunogenic by virtue of the immune adjuvant effect of DNA and its associated proteins, as well as for the sticky properties of the DNA thread that enable NET persistent interaction with DCs for efficient loading of antigens followed by DC maturation and migration to draining lymph nodes for cross-presentation (Sangaletti et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Sangaletti et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "bf8ac34a-4d91-43d1-ba02-a65f379de76c",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C21",
+      "claim": "The sticky properties of the DNA thread enable NET persistent interaction with DCs for efficient loading of antigens followed by DC maturation and migration to draining lymph nodes for cross-presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, NET is highly immunogenic by virtue of the immune adjuvant effect of DNA and its associated proteins, as well as for the sticky properties of the DNA thread that enable NET persistent interaction with DCs for efficient loading of antigens followed by DC maturation and migration to draining lymph nodes for cross-presentation (Sangaletti et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Sangaletti et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "4b58b548-960a-4678-8e1f-7c77afad0e9e",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C22",
+      "claim": "Myeloid transformed cells can extrude NET into the extracellular space to activate the contact system of coagulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, myeloid transformed cells can extrude NET into the extracellular space to activate the contact system of coagulation (Demers et al., 2012) or to sustain myeloproliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Demers et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "19159f01-ee1c-40bd-adce-59df02f27f0a",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C23",
+      "claim": "Myeloid transformed cells can extrude NET into the extracellular space to sustain myeloproliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, myeloid transformed cells can extrude NET into the extracellular space to activate the contact system of coagulation (Demers et al., 2012) or to sustain myeloproliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on the authors' work and observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "550c762b-3320-449b-bb99-833d8903e080",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C24",
+      "claim": "Extracellular traps enrichment has been described in bone marrow (BM) biopsies from NPM1 mutant acute myeloid leukemia (AML) patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently described extracellular traps enrichment in bone marrow (BM) biopsies from NPM1 mutant acute myeloid leukemia (AML) patients and, using an ad hoc transgenic mouse, we showed that NPM cytoplasmic compartmentalization allows mutant NPM (NPMc+) to be relocalized onto the NET threads, exerting alarmin functions (Tripodo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous work supported by citation to Tripodo et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "7885da4a-f949-4abf-ba9a-f4b2cbf398c9",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C25",
+      "claim": "NPM cytoplasmic compartmentalization allows mutant NPM (NPMc+) to be relocalized onto the NET threads, exerting alarmin functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently described extracellular traps enrichment in bone marrow (BM) biopsies from NPM1 mutant acute myeloid leukemia (AML) patients and, using an ad hoc transgenic mouse, we showed that NPM cytoplasmic compartmentalization allows mutant NPM (NPMc+) to be relocalized onto the NET threads, exerting alarmin functions (Tripodo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous work supported by citation to Tripodo et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "f5a84937-c1cc-474b-9ebb-3aa99fd3de56",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C26",
+      "claim": "The colocalization of histones with NPMc+ is a supporting evidence of their direct release from the leukemic clone.",
+      "claim_type": "EXPLICIT",
+      "source": "The colocalization of histones with NPMc+ is a supporting evidence of their direct release from the leukemic clone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive statement based on observations and logical inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "f49b57b3-840b-4afb-b41b-7644574acb52",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C27",
+      "claim": "The immune system has the capacity to eradicate AML as shown by the graft-versus-leukemia effect that is obtained after allogeneic hematopoietic stem cell transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "The immune system has the capacity to eradicate AML as shown by the graft-versus-leukemia effect that is obtained after allogeneic hematopoietic stem cell transplantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established clinical knowledge about graft-versus-leukemia effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "b15bfa42-8907-44e4-8c37-0cbf9a5f8502",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C28",
+      "claim": "Ideal immune molecular targets of AML should be restricted to leukemic cells including stem cells and be part of leukemic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, ideal immune molecular targets of AML should be restricted to leukemic cells including stem cells and be part of leukemic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about ideal therapeutic targets based on established principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "891cdffc-0a92-42bd-94fa-86ed05e1dcb5",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C29",
+      "claim": "Leukemia-associated antigens such as RHAMM, Proteinase 3, and Wilms' tumor antigen-1 (WT-1) have entered clinical trials as peptide vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the leukemia-associated antigens that entered clinical trials as peptide vaccines, such as RHAMM, Proteinase 3, and Wilms' tumor antigen-1 (WT-1), possess these features (Anguille et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Anguille et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "a42e50bc-28e3-48bd-a43f-d34c72ca938b",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C30",
+      "claim": "NPM1 mutations are among the most frequent molecular alterations in AML.",
+      "claim_type": "EXPLICIT",
+      "source": "NPM1 mutations are among the most frequent molecular alterations in AML, where they play a prognostic role (Falini et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Falini et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "6905893a-4885-44ce-b227-9967ab684505",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C31",
+      "claim": "NPM1 mutations play a prognostic role in AML.",
+      "claim_type": "EXPLICIT",
+      "source": "NPM1 mutations are among the most frequent molecular alterations in AML, where they play a prognostic role (Falini et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Falini et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "cd943a20-c991-4644-ae93-71324a39c8b4",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C32",
+      "claim": "NPM1 gene encodes for the nucleolar protein nucleophosmin that regulates the ARF-p53 tumor-suppressor pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "NPM1 gene encodes for the nucleolar protein nucleophosmin that regulates the ARF-p53 tumor-suppressor pathway (Colombo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Colombo et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "de007b1f-dd42-4a8b-8ab6-3cf1bddd6be6",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C33",
+      "claim": "NPMc mutations cause the stable relocalization of the protein from nucleus to cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "NPMc mutations cause the stable relocalization of the protein from nucleus to cytoplasm, an event that, per se, is sufficient to trigger AML (Falini et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Falini et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "8620f6fe-9334-4500-83f8-a209b2cc6f96",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C34",
+      "claim": "NPMc relocalization from nucleus to cytoplasm is sufficient to trigger AML.",
+      "claim_type": "EXPLICIT",
+      "source": "NPMc mutations cause the stable relocalization of the protein from nucleus to cytoplasm, an event that, per se, is sufficient to trigger AML (Falini et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Falini et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "7d719662-e6d7-44e3-a81c-d652e45f28ec",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C35",
+      "claim": "The improved overall survival of patients with NPMc+ AML has been possibly explained by a T-cell response against the mutant epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "The improved overall survival of patients with NPMc+ AML has been possibly explained by a T-cell response against the mutant epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the mechanism of improved survival.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "55a7353b-89f3-4ff4-999c-08167c2a02d7",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C36",
+      "claim": "The specific CD4+ and CD8+ T-cell response against NPMc epitopes raised the possibility of exploiting such property to immunize NPMc+ patients to control MRD or during maintenance treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific CD4+ and CD8+ T-cell response against these epitopes raised the possibility of exploiting such property to immunize NPMc+ patients to control MRD or during maintenance treatment (Schneider et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Schneider et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "9c217917-779b-4780-b47c-b36cd7e9941c",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C37",
+      "claim": "NET directly released by leukemic cells could efficiently display tumor-specific associated antigens and be used as vehicles for new DC-based vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, NET directly released by leukemic cells could efficiently display tumor-specific associated antigens and be used as vehicles for new DC-based vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential application of NETs in vaccination.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "33859974-5e51-4dae-8712-19699d0b5006",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C38",
+      "claim": "The h-MRP8-NPM1+ (NPMc+) transgenic mice develop a myeloproliferation with expansion of mature CD11b+ myeloid cells and Gr-1+c-Kit+ myeloblasts, without development of overt acute leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "The h-MRP8-NPM1+ (NPMc+) transgenic mice develop a myeloproliferation with expansion of mature CD11b+ myeloid cells and Gr-1+c-Kit+ myeloblasts, without development of overt acute leukemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the transgenic mouse model based on observations.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "9d14a60e-6349-4ce8-8b24-6bce8b8a6a5b",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C39",
+      "claim": "Mutant NPM can work as an alarmin when localized in the cytoplasm as part of the NET thread.",
+      "claim_type": "EXPLICIT",
+      "source": "Using NET from NPMc+ transgenic mice we previously demonstrated that mutant NPM can work as an alarmin when localized in the cytoplasm as part of the NET thread (Swerdlow et al., 2016), gaining immunogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous work supported by citation to Swerdlow et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "9cedf755-1e40-420b-8a4d-f473e2a77a57",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C40",
+      "claim": "During coculture, DC became loaded with the prototypical NET-associated antigen MPO.",
+      "claim_type": "EXPLICIT",
+      "source": "During coculture, DC became loaded with the prototypical NET-associated antigen MPO (Figure 1B, red signal) and, only in case of NPMc+ NET, with mutant NPMc (Figure 1B, green signal).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation supported by immunofluorescence data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "a6887db4-68b6-426b-a18b-ce4d8657939d",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C41",
+      "claim": "DC became loaded with mutant NPMc only in case of NPMc+ NET coculture.",
+      "claim_type": "EXPLICIT",
+      "source": "During coculture, DC became loaded with the prototypical NET-associated antigen MPO (Figure 1B, red signal) and, only in case of NPMc+ NET, with mutant NPMc (Figure 1B, green signal).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation supported by immunofluorescence data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "496f9749-e982-4bcc-b05c-62c7e9bdc772",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C42",
+      "claim": "NPMc+ NET/DC immunization conspicuously reduced the signs of myeloid expansion in the BM of NPMc+ mice, with a decrease in dense clusters of morphologically immature granulocytic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "NPMc+ NET/DC immunization, but not immunization with WT NET/DC, conspicuously reduced the signs of myeloid expansion in the BM of NPMc+ mice, with a decrease in dense clusters of morphologically immature granulocytic elements, as shown by histopathological analysis of H&E-stained BM sections (Figure 1C), and a reduction of myeloid blasts, in favor of more segmented forms on BM blood smears (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by histopathological data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "1723bdda-8ddb-4087-896e-abc943389ef7",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C43",
+      "claim": "NPMc+ NET/DC immunization resulted in a reduction of myeloid blasts, in favor of more segmented forms on BM blood smears.",
+      "claim_type": "EXPLICIT",
+      "source": "NPMc+ NET/DC immunization, but not immunization with WT NET/DC, conspicuously reduced the signs of myeloid expansion in the BM of NPMc+ mice, with a decrease in dense clusters of morphologically immature granulocytic elements, as shown by histopathological analysis of H&E-stained BM sections (Figure 1C), and a reduction of myeloid blasts, in favor of more segmented forms on BM blood smears (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by blood smear data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "e1cef9a1-ebd2-4890-953a-1507eee737cb",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C44",
+      "claim": "NPMc+ NET immunization resulted in a significant decrease of cytoplasmic NPM-expressing elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, NPMc+ NET immunization resulted in a significant decrease of cytoplasmic NPM-expressing elements, as assessed by immunofluorescence (Figure 1E, F, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by immunofluorescence data shown in Figure 1E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "269fc4ff-2384-4678-aaf8-0bba97b8233e",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C45",
+      "claim": "FACS analysis of the PB confirmed the reduction of circulating immature GR-1+c-Kit+ precursors in vaccinated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Fluorescence Activated Cell Sorting (FACS) analysis of the PB confirmed the reduction of circulating immature GR-1+c-Kit+ precursors and of the overall frequency of CD11b+ cells (Figure 1G, H, Figure 1\u2014source data 2) in the same vaccinated mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by FACS data shown in Figure 1G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "c1cc6865-8eab-4897-8b1e-989cc630ecfb",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C46",
+      "claim": "FACS analysis of the PB confirmed the reduction of the overall frequency of CD11b+ cells in vaccinated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Fluorescence Activated Cell Sorting (FACS) analysis of the PB confirmed the reduction of circulating immature GR-1+c-Kit+ precursors and of the overall frequency of CD11b+ cells (Figure 1G, H, Figure 1\u2014source data 2) in the same vaccinated mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by FACS data shown in Figure 1G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "28dd0f06-c570-40cb-a025-009912028e03",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C47",
+      "claim": "The immune response triggered by NPMc+ NET immunization induced anti-NPMc+ serum antibodies detected by ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "The immune response triggered by NPMc+ NET immunization induced anti-NPMc+ serum antibodies detected by ELISA (Figure 1I, Figure 1\u2014source data 3) and the increase of CD8+ T-cells frequency in BM infiltrates (not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by ELISA data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "0f297b34-d51a-476f-bf65-04929ed0131e",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C48",
+      "claim": "The immune response triggered by NPMc+ NET immunization increased CD8+ T-cells frequency in BM infiltrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The immune response triggered by NPMc+ NET immunization induced anti-NPMc+ serum antibodies detected by ELISA (Figure 1I, Figure 1\u2014source data 3) and the increase of CD8+ T-cells frequency in BM infiltrates (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding mentioned but not shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "fa9e10c0-f021-444d-a45d-704f61d38004",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C49",
+      "claim": "The increased infiltration of CD8+ T cells led to a higher frequency of CD8+ T cells closely contacting NPMc+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the increased infiltration of CD8+ T cells led to a higher frequency of CD8+ T cells closely contacting NPMc+ cells (Figure 2A, B, and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by immunofluorescence data shown in Figure 2A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "e2a82e0a-c23f-4fcb-9f68-268bbf5f4e2c",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C50",
+      "claim": "DC vaccination with NPMc+ NET is able to induce immune activation toward control of NPMc+ myeloproliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data indicate that DC vaccination with NPMc+ NET is able to induce immune activation toward control of NPMc+ myeloproliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "c68d17ee-93f9-4fbf-80f0-92ea04487091",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C51",
+      "claim": "Vaccination with NPMc+ NET-loaded DC impaired the expansion of CD45.1 mutant hematopoietic cells in favor of CD45.2 WT cells in the competitive setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative analysis (Figure 3B) and cumulative data (Figure 3C and Figure 3\u2014source data 1) show that vaccination with NPMc+ NET-loaded DC impaired the expansion of CD45.1 mutant hematopoietic cells in favor of CD45.2 WT cells in the competitive setting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by FACS data shown in Figure 3B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "945b78c1-85ae-4a3f-8c53-8c606f83953c",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C52",
+      "claim": "Vaccination with NET carrying mutant NPMc could selectively control the expansion of mutant cells derived from NPMc+ precursors, while sparing the normal counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that vaccination with NET carrying mutant NPMc could selectively control the expansion of mutant cells derived from NPMc+ precursors, while sparing the normal counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the competitive BMT experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "f4a2b1b6-fee3-4a18-a844-84bd3a33a062",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C53",
+      "claim": "The reduced expansion of CD45.1 NPMc+ cells was associated to increased CD8 T-cell infiltration in vaccinated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the reduced expansion of CD45.1 NPMc+ cells was associated to increased CD8 T-cell infiltration in vaccinated mice (Figure 3D, E and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by IHC data shown in Figure 3D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "0c06370f-b3b1-45e3-bbc9-d22a73da913b",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C54",
+      "claim": "The selective effect on mutant cells in the competitive setting underscores the efficacy and specificity of the engendered immune response toward mutant hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The selective effect on mutant cells in the competitive setting underscores the efficacy and specificity of the engendered immune response toward mutant hematopoiesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the competitive BMT experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "6d608520-5808-49c9-ae0c-019390761514",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C55",
+      "claim": "The immunization significantly delayed tumor growth in C1498-NPMc+ leukemia-bearing mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunization significantly delayed tumor growth (Figure 4A and Figure 4\u2014source data 1) and induced CD8+ T-cell cytotoxicity against NPMc (Figure 4B and Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by tumor growth data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "69629a77-c933-47c9-b773-db8d6ef4a49b",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C56",
+      "claim": "NPMc+ NET/DC immunization induced CD8+ T-cell cytotoxicity against NPMc.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunization significantly delayed tumor growth (Figure 4A and Figure 4\u2014source data 1) and induced CD8+ T-cell cytotoxicity against NPMc (Figure 4B and Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in vivo cytotoxicity assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "46e86ab6-0f8a-49d7-83f6-105415799d49",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C57",
+      "claim": "The NPMc +NET/DC vaccine induced a strong CD8+ T cytotoxic response in tumor-free mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In a different arm of the same experiment, the NPMc +NET/DC vaccine also induced a strong CD8+ T cytotoxic response in tumor-free mice (Figure 4B and Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in vivo cytotoxicity assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "50168a7b-0f37-4ac6-9b55-ee66617f3f28",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C58",
+      "claim": "The NPMc+ NET/DC vaccine was superior to peptide-loaded DC in controlling tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In a first set of experiments in which C1498-NPMc+ cells were injected subcutaneously, the NPMc+ NET/DC vaccine was superior to peptide-loaded DC in controlling tumor growth (Figure 4C, Figure 4\u2014source data 3, Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by tumor growth data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "d9f53121-424c-4257-9745-88391e1f9b46",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C59",
+      "claim": "In situ IHC analysis revealed increased tumor-infiltrating CD8+ T cells and granzyme B+ elements in support of locally induced cytotoxic response, which was more robust in NPMc+ NET/DC than NPMc-derived MHC-I peptides/DC vaccinated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ IHC analysis revealed increased tumor-infiltrating CD8+ T cells and granzyme B+ elements in support of locally induced cytotoxic response, which was more robust in NPMc+ NET/DC than NPMc-derived MHC-I peptides/DC vaccinated mice (Figure 4D\u2013F and Figure 4\u2014source data 4 and Figure 4\u2014source data 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by IHC data shown in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "12987ef7-c55a-4f09-aa87-a52b7ce90310",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C60",
+      "claim": "Results showed a reduction of GFP+ cells in the BM of mice vaccinated with either NPMc+ NET/DC vaccine or peptide/DC vaccine in comparison to nonvaccinated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "At end point, we evaluated the tumor take as the frequency of GFP+ leukemia cells in the BM. Results showed a reduction of GFP+ cells in the BM of mice vaccinated with either NPMc+ NET/DC vaccine or peptide/DC vaccine in comparison to nonvaccinated mice (Figure 4G and Figure 4\u2014source data 6), which reached statistically significance in case of NPMc+ NET/DC vaccine (p = 0.0214 NPMc +NET/DC vs. ctrl and p = 0.0892 NPMc+ peptides vs. ctrl; Mann\u2013Whitney t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by FACS data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "1bde0f88-7cad-490f-9d0a-8cf55c3bd4d1",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C61",
+      "claim": "The NPMc+ NET/DC vaccine was superior in inducing the proliferation of CD8 T cells compared to peptide/DC vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite similar frequency of CD8 T cell (Figure 4H, Figure 4\u2014source data 7), the NPMc+ NET/DC vaccine was superior in inducing the proliferation of CD8 T cells (Figure 4I, Figure 4\u2014source data 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by FACS data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "98ee69e4-20be-4349-ac68-b9cef4979088",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C62",
+      "claim": "Both vaccines sustained OX40 expression on CD8 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both vaccines sustained OX40 expression on CD8 T cells (Figure 4J, Figure 4\u2014source data 9), however the reduction of exhausted PD1+TIM3+LAG3+ CD8 T cells (Figure 4K, Figure 4\u2014source data 10) was higher in mice receiving the NPMc+ NET/DC vaccine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by FACS data shown in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "d67c1180-e3ea-4913-bd1d-f720c01fd901",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C63",
+      "claim": "The reduction of exhausted PD1+TIM3+LAG3+ CD8 T cells was higher in mice receiving the NPMc+ NET/DC vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Both vaccines sustained OX40 expression on CD8 T cells (Figure 4J, Figure 4\u2014source data 9), however the reduction of exhausted PD1+TIM3+LAG3+ CD8 T cells (Figure 4K, Figure 4\u2014source data 10) was higher in mice receiving the NPMc+ NET/DC vaccine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by FACS data shown in Figure 4K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "da9331f8-7ce7-4470-ba9d-8f7040df7c4f",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C64",
+      "claim": "The production of TNF, but not IFNg, by CD8 T cells was higher in mice receiving the NPMc+ NET/DC vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the production of TNF, but not IFNg, by CD8 T cells (Figure 4L\u2013M, Figure 4\u2014source data 11, and Figure 4\u2014source data 12) was higher in mice receiving the NPMc+ NET/DC vaccine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by FACS data shown in Figure 4L-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "458e27c6-ee9a-4add-ab92-314a3389bec1",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C65",
+      "claim": "A trend toward Tem increase was observed in mice receiving the NPMc+ NET/DC vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a trend toward Tem increase was observed in mice receiving the NPMc+ NET/DC vaccine (Figure 4N, Figure 4\u2014source data 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by FACS data shown in Figure 4N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "11151354-2ca6-4533-84cd-5e25356af527",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C66",
+      "claim": "Both vaccines were able to induce Auto-Ab against mutant NPMc+.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISA assay showed that both vaccines were able to induce Auto-Ab against mutant NPMc+ (Figure 4O, Figure 4\u2014source data 14), but only NPMc +NET/DC vaccinated mice developed Ab to MPO (Figure 4P, Figure 4\u2014source data 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by ELISA data shown in Figure 4O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "98ac8893-a01a-486f-8f50-42810556b32b",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C67",
+      "claim": "Only NPMc +NET/DC vaccinated mice developed Ab to MPO.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISA assay showed that both vaccines were able to induce Auto-Ab against mutant NPMc+ (Figure 4O, Figure 4\u2014source data 14), but only NPMc +NET/DC vaccinated mice developed Ab to MPO (Figure 4P, Figure 4\u2014source data 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by ELISA data shown in Figure 4P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "9074766b-0215-4a97-8f49-85fdf8660ef0",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C68",
+      "claim": "These data support the efficacy of NET-based vaccines that were for some aspects superior in promoting T-cell responses in comparison to canonical peptide-based vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall these data support the efficacy of NET-based vaccines that were for some aspects superior in promoting T-cell responses in comparison to canonical peptide-based vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the comparative experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "bdcf60e8-807b-43d5-8ee3-88a27026f5b0",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C69",
+      "claim": "Cancer immunotherapy can overcome the induction of drug resistance associated to standard treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer immunotherapy can overcome the induction of drug resistance associated to standard treatments also establishing effective memory response that renders the therapeutic effect durable and independent of repetitive cycles of therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge about cancer immunotherapy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "cecfe55a-b0f8-45cd-8d2a-e6ee85b4ef06",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C70",
+      "claim": "Cancer immunotherapy can establish effective memory response that renders the therapeutic effect durable and independent of repetitive cycles of therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer immunotherapy can overcome the induction of drug resistance associated to standard treatments also establishing effective memory response that renders the therapeutic effect durable and independent of repetitive cycles of therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge about cancer immunotherapy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "129b95a0-53d7-4f1f-8505-92625f759eeb",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C71",
+      "claim": "DC-loaded ex vivo with tumor antigens have largely been tested as cancer vaccines to induce Th1-type responses and trigger cytotoxic T cells targeting antigen-expressing tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DC-loaded ex vivo with tumor antigens have largely been tested as cancer vaccines to induce Th1-type responses and trigger cytotoxic T cells targeting antigen-expressing tumor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge about DC-based cancer vaccines.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "41f1d36b-c228-43e5-803e-44e78513d8fb",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C72",
+      "claim": "This strategy has been proposed for patients with AML, with variable clinical benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy has been proposed for patients with AML, with variable clinical benefits (reviewed in Van Acker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Van Acker et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "ceebb7a8-a935-4d35-88a5-91361f99c68d",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C73",
+      "claim": "Common weaknesses emerged from different clinical trials including the low ability of DC to mount an effective CD8 T-cell response because of a weak immunostimulatory activity and/or the existing immunosuppressive microenvironment instigated by leukemic clones fostering tolerogenic IDO-expressing DC.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, common weaknesses emerged from different clinical trials including the low ability of DC to mount an effective CD8 T-cell response because of a weak immunostimulatory activity and/or the existing immunosuppressive microenvironment instigated by leukemic clones fostering tolerogenic IDO-expressing DC (Weinstock et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Weinstock et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "80583322-2fbd-45ac-8326-fe5987f625c7",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C74",
+      "claim": "NPMc+ AML represents a distinct entity in the World Health Organization classification of Tumours of Haematopoietic and Lymphoid Tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This subset of AML embodies about 30% of total AML and 50%\u201360% of adult normal karyotype-AML and represents a distinct entity in the World Health Organization classification of Tumours of Haematopoietic and Lymphoid Tissues (Swerdlow et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Swerdlow et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "c168a848-b37e-40d0-989d-47d25e06ad15",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C75",
+      "claim": "NPMc+ AML embodies about 30% of total AML and 50%\u201360% of adult normal karyotype-AML.",
+      "claim_type": "EXPLICIT",
+      "source": "This subset of AML embodies about 30% of total AML and 50%\u201360% of adult normal karyotype-AML and represents a distinct entity in the World Health Organization classification of Tumours of Haematopoietic and Lymphoid Tissues (Swerdlow et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Swerdlow et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "88e20852-456e-4bb9-9de9-7f57acf67bc1",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C76",
+      "claim": "NPM1-mutant AML encompasses a spectrum of biological heterogeneity driven by the co-occurrence of genetic mutations (e.g., FLT3 internal tandem duplications) emerging at the transcriptional level.",
+      "claim_type": "EXPLICIT",
+      "source": "NPM1-mutant AML encompasses a spectrum of biological heterogeneity driven by the co-occurrence of genetic mutations (e.g., FLT3 internal tandem duplications) emerging at the transcriptional level (Mer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Mer et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "6d28d542-3f93-43a5-a4bf-60f7451672c9",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C77",
+      "claim": "NPMc+ AML has been characterized for spontaneous NPMc+ NET formation in the BM, an event associated with signs of immune activation.",
+      "claim_type": "EXPLICIT",
+      "source": "NPMc+ AML has been characterized for spontaneous NPMc+ NET formation in the BM, an event associated with signs of immune activation (Tripodo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous work supported by citation to Tripodo et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "e04c27c6-52a3-4c1f-9fbc-2eaafbf2436c",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C78",
+      "claim": "Despite the proimmune conditions endowed by a NET-permissive BM environment, the inflammatory skewing and the leukemic clone immunomodulatory profile associated with signs of myelomonocytic differentiation could eventually foster the development of a tolerogenic milieu suitable for NPMc+ AML progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the proimmune conditions endowed by a NET-permissive BM environment, the inflammatory skewing and the leukemic clone immunomodulatory profile associated with signs of myelomonocytic differentiation could eventually foster the development of a tolerogenic milieu suitable for NPMc+ AML progression, a condition potentially reverted by vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential mechanisms of AML progression and vaccination effects.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "b20bf64b-89c8-4d74-b645-916f1a3c7219",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C79",
+      "claim": "The main novelty of our work consists in the adoption of AML blast-derived NET as antigens source for DC presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "The main novelty of our work consists in the adoption of AML blast-derived NET as antigens source for DC presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the work based on the authors' assessment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "84fd0d8d-8103-42a9-8b2f-c1d58e2967e3",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C80",
+      "claim": "This NET-based approach enables the display of leukemia-specific and -associated antigens, such as NPMc, and the conveyance of costimulatory signals through the dsDNA thread.",
+      "claim_type": "EXPLICIT",
+      "source": "This NET-based approach enables the display of leukemia-specific and -associated antigens, such as NPMc, and the conveyance of costimulatory signals through the dsDNA thread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic statement based on the experimental observations and established knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "d02d95d2-4fa5-4763-acfd-d28776d771c2",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C81",
+      "claim": "In the case of NPMc+ AML, we demonstrated that mutant NPMc exerts a potent adjuvant function, similar to that described for the alarmin HMGB1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of NPMc+ AML, we demonstrated that mutant NPMc exerts a potent adjuvant function, similar to that described for the alarmin HMGB1 (Tripodo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous work supported by citation to Tripodo et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "94eec248-1677-45c1-b7fd-5846faeaeed4",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C82",
+      "claim": "Our results show that NPMc+ NET/DC vaccination is able to break tolerance against mutated NPM, eventually promoting a strong cytotoxic activity in naive and in AML-bearing NPMc+ Tg mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that NPMc+ NET/DC vaccination is able to break tolerance against mutated NPM, eventually promoting a strong cytotoxic activity in naive and in AML-bearing NPMc+ Tg mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "0754ad05-b35b-4e8d-917c-2a00ce905ed7",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C83",
+      "claim": "These experimental results could represent an important complement to the reported effect of anti-PD-1 immunotherapy in inducing antigen-specific cytotoxic T-cell responses against immunogenic epitopes derived from mutant NPM1.",
+      "claim_type": "EXPLICIT",
+      "source": "These experimental results could represent an important complement to the reported effect of anti-PD-1 immunotherapy in inducing antigen-specific cytotoxic T-cell responses against immunogenic epitopes derived from mutant NPM1, which indicates an existing antigen-specific CD8 response in NPMc+ AML patients (Greiner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential clinical implications supported by citation to Greiner et al., 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "96f2d5b4-534e-410f-98bc-c75986a0fdd3",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C84",
+      "claim": "Anti-PD-1 immunotherapy induces antigen-specific cytotoxic T-cell responses against immunogenic epitopes derived from mutant NPM1, which indicates an existing antigen-specific CD8 response in NPMc+ AML patients.",
+      "claim_type": "EXPLICIT",
+      "source": "These experimental results could represent an important complement to the reported effect of anti-PD-1 immunotherapy in inducing antigen-specific cytotoxic T-cell responses against immunogenic epitopes derived from mutant NPM1, which indicates an existing antigen-specific CD8 response in NPMc+ AML patients (Greiner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Greiner et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "d80b2f4a-0db5-4490-8742-28825683a1f2",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C85",
+      "claim": "Comparing NPMc+ NET/DC vaccines with DC pulsed with NPMc-derived peptides, we found a consistent capacity of NET-based vaccines to promote antitumor immunity inducing CD8 T-cell responses along with the development of NPMc-specific antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing NPMc+ NET/DC vaccines with DC pulsed with NPMc-derived peptides, we found a consistent capacity of NET-based vaccines to promote antitumor immunity inducing CD8 T-cell responses along with the development of NPMc-specific antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the comparative experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "92c4f79f-2e79-4de7-bbb3-0d643ebc6b73",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C86",
+      "claim": "Although the efficacy of the NET-based vaccine to control leukemia growth was similar to the DC+ peptides counterpart, only the former reach statistical significance for several immune parameters, in a side-by-side comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the efficacy of the NET-based vaccine to control leukemia growth was similar to the DC+ peptides counterpart, only the former reach statistical significance for several immune parameters, in a side-by-side comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the comparative experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "241230a0-a5da-4ed4-8067-f327c67f8fe4",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C87",
+      "claim": "The NET-based vaccines use the leukemic blasts as source of NETs, which largely represent the majority of the AML antigenic repertoire displayed onto DNA threads, per se endowed of adjuvant functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we would stress the novelty of the NET-based vaccines in AML, using the leukemic blasts as source of NETs, which largely represent the majority of the AML antigenic repertoire displayed onto DNA threads, per se endowed of adjuvant functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic statement based on the experimental observations and established knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "b491a5b6-a7c5-4af8-ab27-c01eeb047f2c",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C88",
+      "claim": "Peptide-based vaccines require prior knowledge of the immunogenic peptides to be loaded onto in vitro-activated DCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Differently, peptide-based vaccines require prior knowledge of the immunogenic peptides to be loaded onto in vitro-activated DCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about peptide-based vaccine approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "6fe29ccd-38c1-4524-861c-51c101c293b9",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C89",
+      "claim": "One potential limitation of the proposed NET/DC vaccination strategy lies on the possibility of inducing autoimmune responses against NET-exposed self-antigens, as in the case of antineutrophil cytoplasmic antibodies induced against MPO or proteinase-3.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential limitation of the proposed NET/DC vaccination strategy lies on the possibility of inducing autoimmune responses against NET-exposed self-antigens, as in the case of antineutrophil cytoplasmic antibodies induced against MPO or proteinase-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential limitations based on prior observations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "8a21bc84-c255-424c-a39a-ad22499c3ae4",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C90",
+      "claim": "Autoimmune vasculitides of small vessels have been detected in peripheral tissues as the result of NET-loaded DC intraperitoneal injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Autoimmune vasculitides of small vessels have been detected in peripheral tissues as the result of NET-loaded DC intraperitoneal injection (Sangaletti et al., 2012), but no signs of autoimmunity were observed upon adoption of a subcutaneous NET/DC vaccination, as for the here presented vaccination of C1498-NPMc+ tumor-bearing transgenic mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous work supported by citation to Sangaletti et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "c2f2b340-a5c6-4994-bd42-603203b8b422",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C91",
+      "claim": "No signs of autoimmunity were observed upon adoption of a subcutaneous NET/DC vaccination in C1498-NPMc+ tumor-bearing transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Autoimmune vasculitides of small vessels have been detected in peripheral tissues as the result of NET-loaded DC intraperitoneal injection (Sangaletti et al., 2012), but no signs of autoimmunity were observed upon adoption of a subcutaneous NET/DC vaccination, as for the here presented vaccination of C1498-NPMc+ tumor-bearing transgenic mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "422735a3-0847-4995-94c4-e2ac75ff0c68",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C92",
+      "claim": "Experiments with BM chimeras show that NPMc+ NET/DC vaccination selectively impaired the NPMc+ elements, without disrupting the WT hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments with BM chimeras show that NPMc+ NET/DC vaccination selectively impaired the NPMc+ elements, without disrupting the WT hematopoiesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the competitive BMT experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "baca0f3a-8b00-4983-8c48-a3965fb3896d",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C93",
+      "claim": "BM hematopoietic stromal niche alterations have been demonstrated to causally affect the arousal and progression of hematopoietic malignancies, either through transcriptional/phenotypical rewiring of key cellular components of the niche (e.g., osteoblasts, nerve fibers, mesenchymal stromal cells) or through the modulation of extracellular matrix organization.",
+      "claim_type": "EXPLICIT",
+      "source": "BM hematopoietic stromal niche alterations have been demonstrated to causally affect the arousal and progression of hematopoietic malignancies, either through transcriptional/phenotypical rewiring of key cellular components of the niche (e.g., osteoblasts, nerve fibers, mesenchymal stromal cells) (Kode et al., 2014; Arranz et al., 2014; Zambetti et al., 2016) or through the modulation of extracellular matrix organization (Tripodo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "5c98e4d3-5011-421c-96a3-58c24375af8f",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C94",
+      "claim": "Extracellular matrix amount and composition have been demonstrated to affect the activation state, cross-presentation activity, and immunoregulatory properties of myeloid elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, extracellular matrix amount and composition have been demonstrated to affect the activation state, cross-presentation activity, and immunoregulatory properties of myeloid elements, an issue that could prove of particular relevance in the unfavorable setting of myeloid malignancies associated with BM fibrosis (Sangaletti et al., 2005; Sangaletti et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Sangaletti et al., 2005 and Sangaletti et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "2753c2c8-f16f-4d8c-920e-25415a0fb932",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C95",
+      "claim": "All experiments involving animals described in this study were approved by the Ministry of Health (authorization number 443/2016-PR e 693/2018-PR).",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments involving animals described in this study were approved by the Ministry of Health (authorization number 443/2016-PR e 693/2018-PR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about regulatory approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "3e4f55ea-fe9f-4ff8-bb7a-49e171596ef0",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C96",
+      "claim": "NPMc+\u2013C1498 cells were obtained through lentiviral infection of C1498 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "NPMc+\u2013C1498 cells were obtained through lentiviral infection of C1498 cells that were provided by ATCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about cell line generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "6b81bb52-a33d-4d1f-83ac-6eebdd92e6f9",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C97",
+      "claim": "NPMc+\u2013C1498 cells were authenticated by Microsynth service using highly polymorphic short tandem repeat loci (STRs).",
+      "claim_type": "EXPLICIT",
+      "source": "NPMc+\u2013C1498 cells were authenticated by Microsynth service using highly polymorphic short tandem repeat loci (STRs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about cell line authentication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "a6dcfdd4-6cda-48a5-8ae7-b1f411e2b794",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "claim_id": "C98",
+      "claim": "Cell lines are routinely checked for Mycoplasma negativity using MycoAlert Mycoplasma detection Kitt (Lonza).",
+      "claim_type": "EXPLICIT",
+      "source": "Cell lines are routinely checked for Mycoplasma negativity using MycoAlert Mycoplasma detection Kitt (Lonza).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1f9a3511-bfa0-4911-a5ac-7d17cf5aa807",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about NETs, including their composition (dsDNA, histones, antimicrobial proteins), their interaction with dendritic cells, and the unique property of NETosis to preserve protein structure. It further establishes that leukemic cells can release NETs displaying mutant NPMc+, which translocates to the cytoplasm and localizes on NET threads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 represent well-established background knowledge supported by citations and prior work. These definitional and mechanistic claims provide the scientific foundation for the study and are appropriately referenced to established literature and the authors' previous work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NPMc+ NET/DC vaccination reduced myeloproliferation in NPMc+ transgenic mice, as evidenced by decreased myeloid expansion in bone marrow, reduced circulating immature precursors, and decreased cytoplasmic NPM-expressing elements. The vaccination induced anti-NPMc+ antibodies and increased CD8+ T-cell infiltration with enhanced contact between CD8+ T cells and NPMc+ cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C50 are well-supported by multiple complementary experimental approaches including histopathology (C42-C43), immunofluorescence (C44), FACS analysis (C45-C46), ELISA (C47), and quantitative imaging (C49). The data converge to demonstrate vaccine efficacy in the transgenic model with appropriate controls (WT NET/DC). Statistical significance is reported for key findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "706a276e-4b4f-4f03-8ddd-8be147efa5f7",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In competitive bone marrow transplantation experiments, NPMc+ NET/DC vaccination selectively impaired expansion of CD45.1 NPMc+ mutant hematopoietic cells while sparing CD45.2 WT cells, demonstrating specificity of the immune response. This was associated with increased CD8 T-cell infiltration in vaccinated mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C51-C54, and C92 are supported by FACS data from competitive BMT experiments (Figure 3B-C) and IHC analysis (Figure 3D-E). The selective effect on mutant cells while preserving normal hematopoiesis is a critical finding demonstrating vaccine specificity. However, some p-values approach but do not reach conventional significance thresholds (p=0.0628, p=0.0636), which slightly weakens the statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "36dd64ad-e703-414e-ab9f-86d8155664c4",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NPMc+ NET/DC vaccination controlled aggressive C1498-NPMc+ leukemia growth in transgenic mice, significantly delaying tumor progression and inducing CD8+ T-cell cytotoxicity against NPMc. The vaccine induced strong cytotoxic responses in both tumor-bearing and tumor-free mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C55-C57 are supported by tumor growth data (Figure 4A) showing statistical significance (p=0.0214) and in vivo cytotoxicity assays (Figure 4B) demonstrating NPMc-specific CD8+ T-cell responses. The data provide strong evidence for vaccine efficacy in a transplantable leukemia model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Comparative analysis showed that NPMc+ NET/DC vaccine was superior to peptide-loaded DC in controlling tumor growth and promoting immune responses. The NET-based vaccine induced greater CD8 T-cell proliferation, reduced T-cell exhaustion, increased TNF production, and uniquely induced antibodies to both NPMc+ and MPO, while peptide vaccines only induced anti-NPMc+ antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C68 and C85-C86 are supported by extensive comparative data including tumor growth curves, IHC analysis of tumor infiltration, and detailed FACS characterization of T-cell phenotypes and functions. However, C86 notes that statistical significance was only reached for NET-based vaccine in several parameters, and some comparisons show trends rather than significant differences (e.g., C65). The superiority claim is partially supported but not uniformly across all measured parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "09bbd16d-ade6-4d5c-b82b-2d13cf85f06e",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that NPMc+ NET/DC vaccination breaks tolerance against mutated NPM and promotes strong cytotoxic activity in both naive and AML-bearing NPMc+ transgenic mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is a summary conclusion supported by the collective experimental evidence from transgenic mice (C6-C50), competitive BMT (C51-C54), and leukemia challenge models (C55-C67). The data demonstrate immune activation, antibody production, and CD8+ T-cell responses across multiple experimental systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "e9a5db5d-fc1d-4be0-90f2-7fd753a490d2",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors argue that NET-based vaccines offer advantages over peptide-based vaccines by displaying the majority of the AML antigenic repertoire on DNA threads with inherent adjuvant functions, while peptide-based vaccines require prior knowledge of immunogenic peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 are supported by the comparative experimental data (C58-C67) and represent a logical inference based on the mechanistic differences between the approaches. The NET-based approach's ability to present multiple antigens (evidenced by MPO antibody induction in C67) supports the broader antigenic repertoire claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "96a0b16c-f144-48df-ab83-39a4bc8e00d6",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors acknowledge a potential limitation regarding autoimmune responses against NET-exposed self-antigens. While intraperitoneal NET/DC injection caused autoimmune vasculitides in prior work, no signs of autoimmunity were observed with subcutaneous vaccination in the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 appropriately discuss limitations and safety considerations. C90 is supported by citation to prior work, and C91 is supported by observations in the current study. However, the manuscript does not provide detailed data on systematic evaluation of autoimmune markers, which would strengthen this safety assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "0419344c-78e4-4157-8d67-888b9626d701",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background and context from prior literature regarding NETs, NPM1-mutant AML, immunotherapy approaches, and the rationale for the current study. This includes historical context, disease characteristics, prior clinical trial results, and mechanistic understanding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C39 and C69-C84, C93-C94 represent background knowledge appropriately supported by citations to established literature. These claims provide necessary context but are not primary findings of the current study. The citations appear appropriate and the background accurately represents the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    },
+    {
+      "id": "3a39b464-3df8-42d2-9456-2721b1dde59b",
+      "content_id": "ddcd04d0-e6eb-448f-9ebf-2470bb7585b6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript reports methodological details including ethical approval, cell line generation and authentication, and quality control procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 describe standard methodological practices that are appropriately documented. These are necessary for reproducibility and meet current standards for cell line authentication and quality control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:35:01.327492Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b6d50164-ef2e-44c3-96de-4fb4ccc8e162",
+      "result_id": "1f9a3511-bfa0-4911-a5ac-7d17cf5aa807"
+    },
+    {
+      "claim_id": "9fb5eed4-1f64-4919-bb33-859d8ff5cbf9",
+      "result_id": "1f9a3511-bfa0-4911-a5ac-7d17cf5aa807"
+    },
+    {
+      "claim_id": "a383abd6-ef6e-4d7b-8734-12b92af05093",
+      "result_id": "1f9a3511-bfa0-4911-a5ac-7d17cf5aa807"
+    },
+    {
+      "claim_id": "3e5522dc-6a6b-4c85-bc95-6656a527fcd3",
+      "result_id": "1f9a3511-bfa0-4911-a5ac-7d17cf5aa807"
+    },
+    {
+      "claim_id": "a61cd6f4-8e90-4c6f-b6db-9c3e3dfe3eb3",
+      "result_id": "1f9a3511-bfa0-4911-a5ac-7d17cf5aa807"
+    },
+    {
+      "claim_id": "0ce58feb-92f7-4a37-91b2-6471cbf61b1d",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "c56b8fd5-e8ad-4396-a021-594d38e3ff20",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "2d128077-51a6-4432-811f-6c4e1a1c3486",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "9cedf755-1e40-420b-8a4d-f473e2a77a57",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "a6887db4-68b6-426b-a18b-ce4d8657939d",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "496f9749-e982-4bcc-b05c-62c7e9bdc772",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "1723bdda-8ddb-4087-896e-abc943389ef7",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "e1cef9a1-ebd2-4890-953a-1507eee737cb",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "269fc4ff-2384-4678-aaf8-0bba97b8233e",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "c1cc6865-8eab-4897-8b1e-989cc630ecfb",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "28dd0f06-c570-40cb-a025-009912028e03",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "0f297b34-d51a-476f-bf65-04929ed0131e",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "fa9e10c0-f021-444d-a45d-704f61d38004",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "e2a82e0a-c23f-4fcb-9f68-268bbf5f4e2c",
+      "result_id": "a4b7fa5b-8998-4d50-a3af-45481f3623f1"
+    },
+    {
+      "claim_id": "46b0cc97-4475-49e4-9328-a967b330d415",
+      "result_id": "706a276e-4b4f-4f03-8ddd-8be147efa5f7"
+    },
+    {
+      "claim_id": "c68d17ee-93f9-4fbf-80f0-92ea04487091",
+      "result_id": "706a276e-4b4f-4f03-8ddd-8be147efa5f7"
+    },
+    {
+      "claim_id": "945b78c1-85ae-4a3f-8c53-8c606f83953c",
+      "result_id": "706a276e-4b4f-4f03-8ddd-8be147efa5f7"
+    },
+    {
+      "claim_id": "f4a2b1b6-fee3-4a18-a844-84bd3a33a062",
+      "result_id": "706a276e-4b4f-4f03-8ddd-8be147efa5f7"
+    },
+    {
+      "claim_id": "0c06370f-b3b1-45e3-bbc9-d22a73da913b",
+      "result_id": "706a276e-4b4f-4f03-8ddd-8be147efa5f7"
+    },
+    {
+      "claim_id": "422735a3-0847-4995-94c4-e2ac75ff0c68",
+      "result_id": "706a276e-4b4f-4f03-8ddd-8be147efa5f7"
+    },
+    {
+      "claim_id": "66edc9af-164c-432e-9896-6e565e426482",
+      "result_id": "36dd64ad-e703-414e-ab9f-86d8155664c4"
+    },
+    {
+      "claim_id": "46427ec2-ba1d-4087-8eaf-749daff185ac",
+      "result_id": "36dd64ad-e703-414e-ab9f-86d8155664c4"
+    },
+    {
+      "claim_id": "6d608520-5808-49c9-ae0c-019390761514",
+      "result_id": "36dd64ad-e703-414e-ab9f-86d8155664c4"
+    },
+    {
+      "claim_id": "69629a77-c933-47c9-b773-db8d6ef4a49b",
+      "result_id": "36dd64ad-e703-414e-ab9f-86d8155664c4"
+    },
+    {
+      "claim_id": "46e86ab6-0f8a-49d7-83f6-105415799d49",
+      "result_id": "36dd64ad-e703-414e-ab9f-86d8155664c4"
+    },
+    {
+      "claim_id": "50168a7b-0f37-4ac6-9b55-ee66617f3f28",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "d9f53121-424c-4257-9745-88391e1f9b46",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "12987ef7-c55a-4f09-aa87-a52b7ce90310",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "1bde0f88-7cad-490f-9d0a-8cf55c3bd4d1",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "98ee69e4-20be-4349-ac68-b9cef4979088",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "d67c1180-e3ea-4913-bd1d-f720c01fd901",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "da9331f8-7ce7-4470-ba9d-8f7040df7c4f",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "458e27c6-ee9a-4add-ab92-314a3389bec1",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "11151354-2ca6-4533-84cd-5e25356af527",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "98ac8893-a01a-486f-8f50-42810556b32b",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "9074766b-0215-4a97-8f49-85fdf8660ef0",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "d80b2f4a-0db5-4490-8742-28825683a1f2",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "92c4f79f-2e79-4de7-bbb3-0d643ebc6b73",
+      "result_id": "105f2c96-cafa-4c7b-a23f-d756eccc6e95"
+    },
+    {
+      "claim_id": "94eec248-1677-45c1-b7fd-5846faeaeed4",
+      "result_id": "09bbd16d-ade6-4d5c-b82b-2d13cf85f06e"
+    },
+    {
+      "claim_id": "241230a0-a5da-4ed4-8067-f327c67f8fe4",
+      "result_id": "e9a5db5d-fc1d-4be0-90f2-7fd753a490d2"
+    },
+    {
+      "claim_id": "b491a5b6-a7c5-4af8-ab27-c01eeb047f2c",
+      "result_id": "e9a5db5d-fc1d-4be0-90f2-7fd753a490d2"
+    },
+    {
+      "claim_id": "6fe29ccd-38c1-4524-861c-51c101c293b9",
+      "result_id": "96a0b16c-f144-48df-ab83-39a4bc8e00d6"
+    },
+    {
+      "claim_id": "8a21bc84-c255-424c-a39a-ad22499c3ae4",
+      "result_id": "96a0b16c-f144-48df-ab83-39a4bc8e00d6"
+    },
+    {
+      "claim_id": "c2f2b340-a5c6-4994-bd42-603203b8b422",
+      "result_id": "96a0b16c-f144-48df-ab83-39a4bc8e00d6"
+    },
+    {
+      "claim_id": "c848cc81-ddbe-429f-acd6-4ad3295196ec",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "59b43aba-d3bc-4063-8fe2-feefd8dc481f",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "3cf2be34-5c88-43fd-b42f-b3efc815a3d8",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "9ee32d99-86ff-45a4-95a6-ee3d4d23aa8d",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "4c932865-9661-4797-83e3-2c197ac7e3e8",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "bc7aeec3-7c70-47d8-a2c0-f1f72871dfb2",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "486a9176-1d37-4baf-a085-77d836cf6ae1",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "70255cf4-9a39-4e81-8049-e37d43515708",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "3326d61b-eebe-42ab-ade4-15e942a3ad9e",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "bf8ac34a-4d91-43d1-ba02-a65f379de76c",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "4b58b548-960a-4678-8e1f-7c77afad0e9e",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "19159f01-ee1c-40bd-adce-59df02f27f0a",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "550c762b-3320-449b-bb99-833d8903e080",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "7885da4a-f949-4abf-ba9a-f4b2cbf398c9",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "f5a84937-c1cc-474b-9ebb-3aa99fd3de56",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "f49b57b3-840b-4afb-b41b-7644574acb52",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "b15bfa42-8907-44e4-8c37-0cbf9a5f8502",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "891cdffc-0a92-42bd-94fa-86ed05e1dcb5",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "a42e50bc-28e3-48bd-a43f-d34c72ca938b",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "6905893a-4885-44ce-b227-9967ab684505",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "cd943a20-c991-4644-ae93-71324a39c8b4",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "de007b1f-dd42-4a8b-8ab6-3cf1bddd6be6",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "8620f6fe-9334-4500-83f8-a209b2cc6f96",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "7d719662-e6d7-44e3-a81c-d652e45f28ec",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "55a7353b-89f3-4ff4-999c-08167c2a02d7",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "9c217917-779b-4780-b47c-b36cd7e9941c",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "33859974-5e51-4dae-8712-19699d0b5006",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "9d14a60e-6349-4ce8-8b24-6bce8b8a6a5b",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "bdcf60e8-807b-43d5-8ee3-88a27026f5b0",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "cecfe55a-b0f8-45cd-8d2a-e6ee85b4ef06",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "129b95a0-53d7-4f1f-8505-92625f759eeb",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "41f1d36b-c228-43e5-803e-44e78513d8fb",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "ceebb7a8-a935-4d35-88a5-91361f99c68d",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "80583322-2fbd-45ac-8326-fe5987f625c7",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "c168a848-b37e-40d0-989d-47d25e06ad15",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "88e20852-456e-4bb9-9de9-7f57acf67bc1",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "6d28d542-3f93-43a5-a4bf-60f7451672c9",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "e04c27c6-52a3-4c1f-9fbc-2eaafbf2436c",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "b20bf64b-89c8-4d74-b645-916f1a3c7219",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "84fd0d8d-8103-42a9-8b2f-c1d58e2967e3",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "d02d95d2-4fa5-4763-acfd-d28776d771c2",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "0754ad05-b35b-4e8d-917c-2a00ce905ed7",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "96f2d5b4-534e-410f-98bc-c75986a0fdd3",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "baca0f3a-8b00-4983-8c48-a3965fb3896d",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "5c98e4d3-5011-421c-96a3-58c24375af8f",
+      "result_id": "0419344c-78e4-4157-8d67-888b9626d701"
+    },
+    {
+      "claim_id": "2753c2c8-f16f-4d8c-920e-25415a0fb932",
+      "result_id": "3a39b464-3df8-42d2-9456-2721b1dde59b"
+    },
+    {
+      "claim_id": "3e4f55ea-fe9f-4ff8-bb7a-49e171596ef0",
+      "result_id": "3a39b464-3df8-42d2-9456-2721b1dde59b"
+    },
+    {
+      "claim_id": "6b81bb52-a33d-4d1f-83ac-6eebdd92e6f9",
+      "result_id": "3a39b464-3df8-42d2-9456-2721b1dde59b"
+    },
+    {
+      "claim_id": "a6dcfdd4-6cda-48a5-8ae7-b1f411e2b794",
+      "result_id": "3a39b464-3df8-42d2-9456-2721b1dde59b"
+    }
+  ],
+  "comparisons": []
+}

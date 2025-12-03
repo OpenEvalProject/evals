@@ -1,0 +1,2066 @@
+{
+  "submission": {
+    "id": "2a7aca2d-bfd2-470c-9e92-fa32e0ee0d56",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:34:42.949445Z",
+    "updated_at": "2025-12-03T01:34:42.949445Z"
+  },
+  "content": [
+    {
+      "id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "submission_id": "2a7aca2d-bfd2-470c-9e92-fa32e0ee0d56",
+      "content_type": "manuscript",
+      "content_text": "# Epigenetic regulation of Wnt7b expression by the cis-acting long noncoding RNA Lnc-Rewind in muscle stem cells\n\n## Authors\n\n- Andrea Cipriano<sup>1</sup> ([ORCID: 0000-0003-0775-3198](https://orcid.org/0000-0003-0775-3198))\n- Martina Macino<sup>1</sup> ([ORCID: 0000-0002-8730-9005](https://orcid.org/0000-0002-8730-9005))\n- Giulia Buonaiuto<sup>1</sup> ([ORCID: 0000-0002-4099-2433](https://orcid.org/0000-0002-4099-2433))\n- Tiziana Santini<sup>1</sup>\n- Beatrice Biferali<sup>1</sup> ([ORCID: 0000-0002-2399-885X](https://orcid.org/0000-0002-2399-885X))\n- Giovanna Peruzzi<sup>3</sup>\n- Alessio Colantoni<sup>1</sup>\n- Chiara Mozzetta<sup>2</sup> ([ORCID: 0000-0002-7147-7266](https://orcid.org/0000-0002-7147-7266)) \u2020\n- Monica Ballarino<sup>1</sup> ([ORCID: 0000-0002-8595-7105](https://orcid.org/0000-0002-8595-7105)) \u2020\n\n### Affiliations\n\n1. Department of Biology and Biotechnology Charles Darwin, Sapienza University of Rome Rome Italy\n2. Institute of Molecular Biology and Pathology (IBPM), National Research Council (CNR) at Sapienza University of Rome Rome Italy\n3. Center for Life Nano Science at Sapienza, Istituto Italiano di Tecnologia Rome Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nSkeletal muscle possesses an outstanding capacity to regenerate upon injury due to the adult muscle stem cell (MuSC) activity. This ability requires the proper balance between MuSC expansion and differentiation, which is critical for muscle homeostasis and contributes, if deregulated, to muscle diseases. Here, we functionally characterize a novel chromatin-associated long noncoding RNA (lncRNA), Lnc-Rewind, which is expressed in murine MuSCs and conserved in human. We find that, in mouse, Lnc-Rewind acts as an epigenetic regulator of MuSC proliferation and expansion by influencing the expression of skeletal muscle genes and several components of the WNT (Wingless-INT) signalling pathway. Among them, we identified the nearby Wnt7b gene as a direct Lnc-Rewind target. We show that Lnc-Rewind interacts with the G9a histone lysine methyltransferase and mediates the in cis repression of Wnt7b by H3K9me2 deposition. Overall, these findings provide novel insights into the epigenetic regulation of adult muscle stem cells fate by lncRNAs.\n\n## Introduction\n\nThe transcriptional output of all organisms was recently found to be more complex than originally imagined, as the majority of the genomic content is pervasively transcribed into a diverse range of regulatory short and long non-protein coding RNAs (ncRNAs) (Abugessaisa et al., 2017; Carninci et al., 2005; Cipriano and Ballarino, 2018). Among them, long noncoding RNAs (lncRNAs) are operationally defined as transcripts longer than 200 nucleotides, which display little or no protein coding potential. Since the initial discovery, numerous studies have demonstrated their contribution to many biological processes, including pluripotency, cell differentiation, and organism development (Ballarino et al., 2016; Fatica and Bozzoni, 2014). LncRNAs were demonstrated to regulate gene expression at transcriptional, post-transcriptional, or translational level. The function and the mechanisms of action are different and primarily depend on their (nuclear or cytoplasmic) subcellular localization (Carlevaro et al., 2019; Rinn and Chang, 2012; Ulitsky and Bartel, 2013). A large number of lncRNAs localize inside the nucleus, either enriched on the chromatin or restricted to specific nucleoplasmic foci (Engreitz et al., 2016; Sun et al., 2018). In this location, they have the capacity to control the expression of neighbouring (in cis) or distant (in trans) genes by regulating their chromatin environment and also acting as structural scaffolds of nuclear domains (Kopp and Mendell, 2018). Among the most important functions proposed for cis-acting lncRNAs, there is their ability to regulate transcription by recruiting repressing or activating epigenetic complexes to specific genomic loci (Huarte et al., 2010; Maamar et al., 2013; McHugh et al., 2015; Wang et al., 2011).\n\nIn muscle, high-throughput transcriptome sequencing (RNA-seq) and differential expression analyses have facilitated the discovery of several lncRNAs that are modulated during the different stages of skeletal myogenesis and dysregulated in muscle disorders (Ballarino et al., 2016; Lu et al., 2013; Zhao et al., 2019). Although the roles of these transcripts have been partially identified, we are still far from a complete understanding of their mechanisms of action. For instance, the knowledge of the lncRNAs impact on adult muscle stem cell (MuSC) biology is partial and only a few examples have been characterized as functionally important. In the cytoplasm, the lncRNA Lnc-mg has been shown to regulate MuSC differentiation by acting as a sponge for Mir125b (Zhu et al., 2017). In the nucleus, the lncRNA Dubr was found to promote satellite cell differentiation by recruiting Dnmts to the developmental pluripotency-associated 2 (Dppa2) promoter, leading to CpG hypermethylation and silencing (Wang et al., 2015). In mouse, we have previously identified several lncRNAs specifically expressed during muscle in vitro differentiation and with either nuclear or cytoplasmic localization (Ballarino et al., 2015). Among them, we found Lnc-Rewind (Repressor of wnt induction), a chromatin-associated lncRNA conserved in human and expressed in proliferating C2C12 myoblasts.\n\nHere, we provide evidence on the role of Lnc-Rewind in the epigenetic regulation of the WNT (Wingless-INT) signalling in muscle cells. The WNT transduction cascade has been demonstrated to act as a conserved regulator of stem cell function via canonical (\u03b2-CATENIN) and non-canonical (planar cell polarity and calcium) signalling, and dysregulation of its activity has been reported in various developmental disorders and diseases (Nusse and Clevers, 2017). In the muscle stem cell niche, WNT signalling is key in coordinating MuSC transitions from quiescence, proliferation, commitment, and differentiation (Brack et al., 2008; Eliazer et al., 2019; Lacour et al., 2017; Le Grand et al., 2009; Parisi et al., 2015; Rudolf et al., 2016). Because of this central role, the WNT pathway is supervised by several mechanisms and different works have shown that lncRNAs can modulate it at\u00a0both transcriptional and post-transcriptional levels (Zarkou et al., 2018). Here, we provide evidence that Lnc-Rewind associates with the H3K9 methyltransferase G9a to regulate the deposition of H3K9me2 in cis on the nearby Wnt7b gene. Our data show that Lnc-Rewind expression is necessary to maintain Wnt7b repressed and to allow MuSC expansion and proper differentiation.\n\n## Results\n\n### Lnc-Rewind is a conserved chromatin-associated lncRNA expressed in satellite cells\n\nIn an attempt to uncover novel regulators of MuSC activity, we decided to take advantage of the atlas of newly discovered lncRNAs, which\u00a0we previously identified as expressed in proliferating muscle cells (Ballarino et al., 2015). Among them, we focused on Lnc-Rewind, which is a lncRNA enriched in proliferating myoblasts and overlapping pre-Mirlet7c-2 (mmu-let7c-2) and pre-Mirlet7b (mmu-let7b) genomic loci (Figure 1A). An evolutionary conservation analysis performed by examining FANTOM5 datasets (Noguchi et al., 2017) revealed the existence of a conserved transcriptional start site (TSS)\u00a0localized in the human (hs_Lnc-Rewind) syntenic locus (Figure 1B). This region exhibits an overall\u00a0~46% of (exonic and intronic) sequence identity (Figure 1\u2014figure supplement 1A), which is relatively high for lncRNAs. Moreover, RNA-seq (Legnini et al., 2017; Figure 1B) and semiquantitative (sq)RT-PCR analyses (Figure 1\u2014figure supplement 1B) confirmed that, in proliferating human myoblasts, this region is actively transcribed. To note, the distribution of the read coverage in both mouse and human revealed the existence of spliced and unspliced Lnc-Rewind isoforms originating from the two loci (Figure 1A,B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig1-v2.jpg)\n\n**Figure 1.:** (A) UCSC visualization showing the chromosome position and the genomic coordinates of Lnc-Rewind (red shade) in the mm9 mouse genome. Mmu_Lnc-Rewind reads coverage and quantification (FPKM) from RNA-Seq experiments performed in proliferating C2C12 cells (Ballarino et al., 2015; GSE94498) are shown. (B) UCSC visualization showing the chromosome position and the genomic coordinates of hs_Lnc-Rewind (red shade) in the hg19 human genome. Hs_Lnc-Rewind reads coverage and quantification (FPKM) from RNA-Seq experiments performed in proliferating myoblasts (Legnini et al., 2017; GSE70389) are shown together with the genomic structure of the human locus (magnified box). (C) Relative Lnc-Rewind expression assessed by quantitative RT-PCR (qRT-PCR) in C2C12 myoblast (C2C12) and MuSC-derived myoblasts (referred as MuSCs) maintained in growing (GM) or differentiated (DM) conditions. Data represent the mean \u00b1 SEM from three biological replicates. Gapdh RNA was used as a normalization control. (D) Semiquantitative RT-PCR (sqRT-PCR) analysis of spliced and unspliced Lnc-Rewind isoforms in cytoplasmic (Cyt) and nuclear (Nuc) fractions from proliferating C2C12 and MuSC-derived myoblasts. The quality of fractionation was tested with mature (Gapdh) and precursor (pre-Gapdh) RNAs. \u2013rt represents the negative control. (E) RNA-FISH analysis for Lnc-Rewind RNA (red) in proliferating MuSC-derived myoblasts. Autofluorescence (grey) is shown with false colour to visualize the cell body. (F) Digital magnification and 3D\u00a0visualization of the square insert of (E). Asterisks indicate the Lnc-Rewind RNA signals inside the nuclear volume. DAPI, 4\u2019,6-diamidino-2-phenylindole (blue). Data information: *p<0.05, unpaired Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Table represents the values obtained by analysing the local sequence alignment between the human and murine Lnc-Rewind transcripts. Data were produced by using the implementation of the Smith\u2013Waterman algorithm available at http://www.ebi.ac.uk/Tools/psa/emboss_water/. (B) Semiquantitative RT-PCR (sqRT-PCR) quantification of the human hs_Lnc-Rewind transcript in proliferating (GM) myoblasts from a healthy donor. Mature Gapdh was used as endogenous control. (C) FACS plot showing MuSC\u00a0isolation strategy from WT mice. MuSCs are isolated, among the lineage (CD45/CD31/Ter119) negative cells, as \u03b17integrin+/Sca1\u2212 cells (magenta box) (left and middle panels). The right plot shows the check purity of sorted MuSCs. (D) qRT-PCR quantification of Myog and Mck in C2C12 and MuSC-derived myoblasts in growth (GM) and differentiated (DM) conditions. Data represent the mean \u00b1 SEM of three\u00a0biological replicates and were normalized on Gapdh mRNA. (E) sqRT-PCR quantification of Lnc-Rewind, using different primers, in cytoplasmic (Cyt) and nuclear (Nuc) fractions from proliferating C2C12 and MuSC-derived myoblasts. The quality of fractionation was tested with mature (Gapdh) and precursor (pre-Gapdh) RNAs. \u2013rt represents the negative control (F) Representative 60X confocal images of MuSC-derived myoblasts cell cultures hybridized with probes set specific for Lnc-Rewind (upper panels) and for a human mRNA (dlc1), as negative control (neg ctrl) (bottom panels). Autofluorescence (gray) is shown with false colour to visualize the cell body. DAPI, 4\u2019,6-diamidino-2-phenylindole (blue); scale bar: 25 \u03bcm. (G) Representative 60\u00d7 confocal images of C2C12 cell cultures hybridized with probes set specific for Lnc-Rewind (upper panels) and for a human mRNA (dlc1), as negative control (neg ctrl) (bottom panels). Autofluorescence (grey) is shown with false colour to visualize the cell body. DAPI, 4\u2019,6-diamidino-2-phenylindole (blue); scale bar: 25 \u03bcm. Data information: *p<0.05, unpaired Student\u2019s t-test.\n\nTo pinpoint possible roles of the murine transcript in muscle cells, we first assessed Lnc-Rewind expression and subcellular localization in both C2C12 and Fluorescence-activated cell sorting\u00a0(FACS)\u00a0isolated MuSC (Figure 1\u2014figure supplement 1C) grown under proliferative (hereafter referred to as MuSC-derived myoblasts) and differentiating conditions. Proper myogenic differentiation was confirmed by the expression of late muscle-specific genes such as myogenin (Myog) and muscle creatin kinase (Mck) (Figure 1\u2014figure supplement 1D). Quantitative qRT-PCR analysis revealed that Lnc-Rewind expression is high in proliferating (GM) C2C12 and MuSC-derived myoblasts and significantly decreased in fully differentiated (DM) cells (Figure 1C). Subcellular fractionation of cytoplasmic (Cyt) and nuclear (Nuc) fractions showed that both spliced and unspliced isoforms localizes in the nuclear compartment (Figure 1D, Figure 1\u2014figure supplement 1E). Accordingly, RNA fluorescence in situ hybridization (FISH) experiments performed in both MuSC-derived myoblasts (Figure 1E,F, Figure 1\u2014figure supplement 1F) and C2C12 cells (Figure 1\u2014figure supplement 1G) confirmed the nuclear localization of Lnc-Rewind and further revealed its specific enrichment to discrete chromatin foci. Overall, these results point towards a role for Lnc-Rewind in chromatin-based processes and suggest its possible involvement in the epigenetic regulation of MuSC homeostasis.\n\n### Lnc-Rewind regulates muscle system processes and MuSC expansion\n\nTo gain insights into the functional role of Lnc-Rewind and to identify the molecular pathways involved in the regulation of muscle stem cells, we performed a global transcriptional profiling on MuSC-derived myoblasts treated with either a mix of three different LNA GapmeRs against Lnc-Rewind (GAP-REW) or the scramble control (GAP-SCR) (Figure 2\u2014figure supplement 1A, upper panel). Under these conditions, we obtained\u00a0~70% reduction of Lnc-Rewind expression (Figure 2\u2014figure supplement 1A, lower panel), which led to the identification of a set of 1088 differentially expressed genes (DEGs) (p<0.05, GAP-SCR vs GAP-REW). Of these, 332 were upregulated and 756 downregulated in GAP-REW as compared to the GAP-SCR condition (Figure 2A,\u00a0Figure 2\u2014source data 1). A principal component analysis (PCA) performed on the DEG datasets revealed that the GAP-SCR and GAP-REW experimental groups displayed a clear different pattern of gene expression since they occupy different regions of the PCA plot (Figure 2\u2014figure supplement 1B). The DEG list was then subjected to Gene Ontology (GO) term enrichment analysis (Biological process) to define functional clusters. It emerged that DEGs were mostly associated with muscle cell physiology (skeletal muscle contraction, p-value=4.23E-6) (Figure 2B, Figure 2\u2014figure supplement 1C). Of note, the analysis of Lnc-Rewind generated miRNAs (Mirlet7b and Mirlet7c-2) revealed that, although the lncRNA depletion results on their concomitant downregulation (Figure 2\u2014figure supplement 1D), none of the upregulated transcripts that are also putative Mirlet7b and Mirlet7c-2 targets (~1% of the upregulated genes) (Figure 2\u2014figure supplement 1E), belong to any of the GO enriched categories. This result emphasizes a specific and miRNA-independent role for Lnc-Rewind. Both \u2018muscle system process\u2019 (p-value=3.45E-7) and \u2018striated muscle contraction\u2019 (p-value=4.63E-7) were the most significantly enriched GO terms (Figure 2\u2014figure supplement 1C). Of note, genes encoding for different proteins involved in muscle contraction, such as myosins (i.e. Myh8, Myl1, Myh3) and troponins (i.e. Tnnt2, Tnnt1) (Figure 2C), were downregulated. Accordingly, Lnc-Rewind-depleted cells express lower levels of MyHC protein (Figure 2D). Moreover, morphological evaluation highlighted a decreased number of MuSC-derived myoblasts after Lnc-Rewind depletion (Figure 2\u2014figure supplement 1F), suggesting a primary defect in MuSC proliferation. This led us to hypothesize that the defects in myogenic capacity (Figure 2C,D, Figure 2\u2014figure supplement 1F) might result by a decreased cell density that normally leads to a lower rate of myogenic differentiation. In line with this hypothesis, EdU incorporation experiments revealed a striking reduction of proliferating MuSC-derived myoblasts upon depletion of Lnc-Rewind (Figure 2E). Accordingly, the Ccnd3 gene encoding for Cyclin D3, a cyclin specifically involved in promoting transition from G1 to S phase, was significantly downregulated in Lnc-Rewind-depleted cells at both transcript (Figure 2\u2014source data 1) and protein levels (Figure 2D). In further support of this, MuSCs on single myofibres cultured for 96 hr gave rise to a decreased percentage of proliferating (Pax7+/Ki67+) progeny upon Lnc-Rewind downregulation (Figure 2F). Moreover, quantification of the number of Pax7+-derived clusters (composed of more than two nuclei), pairs (composed of two\u00a0nuclei), or single MuSCs within each myofibre revealed a reduction of activated pairs and clusters upon Lnc-Rewind depletion (Figure 2G), suggesting a role for the lncRNA in sustaining MuSC\u00a0activation and expansion.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig2-v2.jpg)\n\n**Figure 2.:** (A) Heatmap representing hierarchical clustering performed on the final list of genes differentially expressed in MuSC-derived myoblasts upon Lnc-Rewind depletion (p-value threshold<0.05; see also Figure 2\u2014source data 1). The analysis was performed using the Heatmapper webserver tool (Babicki et al., 2016). For each gene, expression levels are expressed as Z-score values. (B) Gene Ontology (GO) enrichment analysis performed by GORILLA (Eden et al., 2009) in Biological process for genes differentially expressed upon Lnc-Rewind depletion in MuSC-derived myoblasts. (C) Heatmap representing hierarchical clustering performed on DEGs belonging to the Skeletal Muscle contraction GO category (GO:0003009). The analysis was performed using the Heatmapper webserver tool (Babicki et al., 2016). For each gene, expression levels are expressed as Z-score values. (D) Western blot analysis performed on protein extracts from MuSC-derived myoblasts treated with GAP-SCR or GAP-REW. GAPDH protein was used as endogenous control. (E) Representative images of MuSC-derived myoblasts treated with GAP-SCR and GAP-REW and incubated with EdU (red). Nuclei were visualized with DAPI (blue). Histogram shows the percentage of\u00a0EdU-positive cells on the total of DAPI-positive cells. Data are graphed as mean \u00b1 SEM; n\u00a0=\u00a06 mice. (F) Representative images of single muscle fibres from WT mice treated with GAP-SCR or GAP-REW and stained for Pax7 (red) and Ki67 (green). Nuclei were visualized with DAPI (blue); histogram shows the percentage of Pax7+/Ki67\u2212\u00a0cells on the total of Pax7+/Ki67+ cells per cluster. Data represent the mean \u00b1 SEM of 40 clusters per condition; n\u00a0=\u00a05 mice. (G) Representative images of single muscle fibres from WT mice treated with GAP-SCR or GAP-REW and incubated for 24 hr with EdU (red). Nuclei were visualized with DAPI (blue); left histogram shows the number of Pax7+ cells per fibre (50 fibres per condition; n\u00a0=\u00a05 mice). Right histograms represent the mean of clusters (nuclei [n], n\u00a0>\u00a02), pairs (n\u00a0=\u00a02), and single cells Pax7+ (n\u00a0=\u00a01) per fibre. Data represent the mean \u00b1 SEM of 80 fibres per condition; n\u00a0=\u00a05 mice. Data information: *p<0.05, **p<0.01, ***p<0.001, unpaired Student\u2019s t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Upper part: Experimental timeline used for the transfection of MuSC-derived myoblasts with GAP-SCR or GAP-REW. Lower part: qRT-PCR quantification of Lnc-Rewind spliced and unspliced transcript in MuSC-derived myoblasts treated with GAP-SCR or GAP-REW. Data were normalized to Gapdh mRNA and expressed as fold change of the mean \u00b1 SEM of four\u00a0biological replicates. (B) PCA analysis of DEGs upon Lnc-Rewind depletion. GAP-REW and GAP-SCR RNA-seq replicates are shown, respectively, as red and black dots. PC1 and PC2 represent the top two dimensions of the PCA which account, respectively, for 65%\u00a0and 25% of the total variability. (C) Table shows the GO terms, their description, the p-value, the false discovery rate\u00a0(in decreasing order of statistical significance), and the enrichment of the different categories listed in the diagram of Figure 2B. (D) qRT-PCR quantification of mmu-Mirlet7-b and mmu-Mirlet7-c-2 miRNAs in GAP-SCR- or GAP-REW-treated MuSC-derived myoblasts. Data were normalized to Gapdh mRNA and expressed as fold change of the mean \u00b1 SEM of three\u00a0biological replicates. (E) Target prediction analyses performed by crossing the genes upregulated upon Lnc-Rewind depletion with the mmu-Mirlet7b/c2-3p (yellow) and mmu-Mirlet7b/c2-5p (blue) predicted target genes. Predictions were obtained from Targetscan database (Agarwal et al., 2015). (F) Representative images (left) and cells number quantification (right) of MuSC-derived myoblasts treated with GAP-SCR or GAP-REW. Data represent the mean percentage \u00b1 SEM of three\u00a0biological replicates. Data information: *p<0.05, **p<0.01, ***p<0.001, unpaired Student\u2019s t-test.\n\n### Lnc-Rewind and Wnt7b genes display opposite pattern of expression and a functional interplay\n\nTogether with the muscle-specific genes, the \u2018regulation of Wnt signalling pathway\u2019 GO\u00a0term caught our attention as it was represented by a significant subset of trancripts (p-value=5.44E-4, Figure 2\u2014figure supplement 1C). Among them, we found Wnt7b, which expression was found upregulated at both transcript and protein levels (Figure 3\u2014figure supplement 1A and Figure 2\u2014source data 1), suggesting a role for Lnc-Rewind as a repressor of Wnt7b expression. Intriguingly, Wnt7b transcriptional locus localizes only\u00a0100 kb upstream Lnc-Rewind gene (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic UCSC visualization showing the Lnc-Rewind chromosome position and its neighbouring genes. (B) TSS usage analyses of Wnt7b, Lnc-Rewind, Atxn10,\u00a0and Cdpf1 performed by using FANTOM5 (Phases\u00a01 and 2) CAGE datasets. Each bar represents the Relative Logarithmic Expression (RLE) of the tag per million (TPM) values of the TSS of each gene in one sample (1196 samples). The order of the samples is the same in each of the histograms and shown in Figure 3\u2014source data 1. R value represents the Spearman\u2019s rank correlation coefficient between Lnc-Rewind and Wnt7b expression, and the p-value was calculated using the Spearman\u2019s rank correlation test. (C) qRT-PCR quantification of Lnc-Rewind neighbouring genes in GAP-SCR versus GAP-REW treated.\u00a0MuSCs-derived myoblasts.\u00a0Data were normalized to\u00a0Gapdh\u00a0mRNA and represent the average \u00b1 SEM from\u00a0four\u00a0biological replicates. (D) Representative images of MuSC-derived myoblasts treated with GAP-SCR/si-SCR, GAP-REW,\u00a0and GAP-REW/si-Wnt7b and incubated with EdU (red). Nuclei were visualized with DAPI, 4\u2032,6-diamidino-2-phenylindole (blue). Histogram shows the percentage of EdU-positive cells on the total of DAPI-positive cells. Data are graphed as mean \u00b1 SEM;\u00a0n\u00a0=\u00a05\u00a0mice. (E) Representative images of single muscle fibres treated with GAP-SCR/si-SCR, GAP-REW,\u00a0and GAP-REW/si-Wnt7b from WT mice after\u00a096\u00a0hr\u00a0in culture, stained for Pax7 (red) and Ki67 (green). Nuclei were visualized with DAPI, 4\u2032,6-diamidino-2-phenylindole (blue). Histogram (upper panel) shows the number of Pax7+\u00a0cells per fibre. Histograms (lower panel) represent the mean of the number of clusters (nuclei [n]: n > 2), pairs (n\u00a0=\u00a02),\u00a0and single cells Pax7+\u00a0(n\u00a0=\u00a01) per fibre. Data represent the mean \u00b1 SEM;\u00a0n\u00a0=\u00a05\u00a0mice. Data information:\u00a0(C):\u00a0*p<0.05, paired Student\u2019s t-test. 3D and 3E:\u00a0*p<0.05,\u00a0**p<0.01, ***<0.001, one-way Anova with Tukey\u2019s multiple comparison test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) qRT-PCR (left panel) and Western blot (right panel) analyses performed on extracts from MuSC-derived myoblasts, treated with GAP-SCR or GAP-REW.\u00a0Gapdh mRNA and protein were used as endogenous control. Error bars represent the mean \u00b1 SEM of four\u00a0biological replicates. (B) TPM (transcripts per million) values of Lnc-Rewind neighbouring genes obtained from the RNA-seq analyses performed in GAP-SCR- versus GAP-REW-treated MuSC-derived myoblasts. TPM values are presented as average \u00b1 SD of four\u00a0biological replicates. (C) qRT-PCR quantification of Lnc-Rewind and Wnt7b in GAPSCR/si-SCR, GAP-REW, and GAP-REW/si-Wnt7b conditions. Data were normalized to Gapdh mRNA and represent the mean \u00b1 SEM of four\u00a0biological replicates. Data information: (A) **p<0.01, unpaired Student\u2019s t-test. (B) *p<0.05, **p<0.01, paired Student\u2019s t-test. (C) *p<0.05, **p<0.01, one-way Anova with Tukey\u2019s multiple comparison test.\n\nThe genomic proximity between Lnc-Rewind/Wnt7b loci, together with their anti-correlated expression in muscle cells and the lncRNA chromatin enrichment (Figure 1D,E), led us to hypothesize that Lnc-Rewind might have a direct, in cis-regulatory role on Wnt7b transcription. A first clue in favour of such hypothesis came from FANTOM5 Cap Analysis Gene Expression (CAGE) profiles of mouse samples, available on ZENBU genome browser (Noguchi et al., 2017). Indeed, the inspection of the TSS usage among all the available murine samples (n\u00a0=\u00a01196, Figure 3\u2014source data 1) revealed a distinctive anti-correlated expression between Lnc-Rewind and Wnt7b transcripts (Figure 3B, left panels). In contrast, the other Lnc-Rewind-neighbouring genes, such as Cdpf1 and Atxn10, displayed no specific expression correlation (Figure 3B, right panels). Of note, Wnt7b was the only gene that\u00a0was significantly upregulated upon the lncRNA depletion with a concomitant increase in WNT7b protein levels (Figure 3C, Figure 3\u2014figure supplement 1A, B).\n\nTo uniquely link the defects in MuSC activation/proliferation induced by Lnc-Rewind depletion (Figure 2E\u2013G) to the aberrant induction of Wnt7b expression, we performed a rescue experiment. To this end, in a context where the upregulation of Wnt7b was triggered by Lnc-Rewind depletion, we restored its expression to physiological levels by si-Wnt7b-mediated knockdown (Figure 3\u2014figure supplement 1C). Of note, rescuing Wnt7b repression promoted an increase in the percentage of proliferating MuSC-derived myoblasts towards control levels (Figure 3D). Similarly, restoration of Wnt7b repression on single\u00a0myofibres was sufficient to restore the capacity of the associated MuSCs to properly activate and proliferate ex\u00a0vivo (Figure 3E), as assessed by the quantification of the number of Pax7+ MuSCs and the percentage of single MuSCs, and derived clusters and pairs, within each myofibre (Figure 3E). Together, these findings clearly candidate the Lnc-Rewind transcript as a regulator of Wnt7b repression in muscle stem cells and prompted us towards the study of the underlying mechanism by which this regulation occurs.\n\n### Lnc-Rewind directly interacts with the methyltransferase G9a and mediates specific in cis repression of Wnt7b in MuSCs\n\nThe above results suggest that Lnc-Rewind exerts a repressive role on Wnt7b gene expression. Several works accumulated so far indicate that most of the cis-acting chromatin-associated lncRNA function occurs by recruiting and guiding chromatin modifiers to target genes (Batista and Chang, 2013; Guttman and Rinn, 2012; Khalil et al., 2009; Rinn and Chang, 2012). In light of our data showing a negative correlation of Wnt7b expression by Lnc-Rewind, we focused our attention on the two most known repressive lysine methyltransferases, EZH2 and G9a, which catalyse the deposition of H3K27me3 and H3K9me1/2 on target genes, respectively (Mozzetta et al., 2015). Both EZH2 (Caretti et al., 2004) and G9a (Ling et al., 2012) are mostly expressed in proliferating MuSCs and become downregulated during muscle differentiation (Figure 4\u2014figure supplement 1A), similarly to Lnc-Rewind (Figure 1C). Moreover, both EZH2 (Rinn et al., 2007; Zhao et al., 2008) and G9a (Nagano et al., 2008; Pandey et al., 2008) have been previously reported to be recruited to specific genomic loci through the interaction with different lncRNAs. Thus, we hypothesized that in proliferating myoblasts Lnc-Rewind might interact with EZH2 and/or G9a repressive complexes to tether them on Wnt7b genomic locus. Therefore, we performed RNA immunoprecipitation (RIP) analysis in proliferating C2C12 cells using antibodies against G9a and EZH2. We observed that, although both G9a and EZH2 were successfully immunoprecipitated (Figure 4\u2014figure supplement 1B, upper panel), Lnc-Rewind transcript was efficiently retrieved only in the G9a native RIP, while it was almost undetectable in EZH2 IP (Figure 4\u2014figure supplement 1B, lower panel). To note, the levels of RNA obtained in the specific IP fraction were similar to the ones of the Kcnq1ot1 lncRNA, which was previously demonstrated to be physically associated with both G9a and Ezh2 proteins (Pandey et al., 2008). The specificity of Lnc-Rewind and G9a interaction was strengthened by the use of two reciprocal strategies (Figure 4). On the\u00a0one hand, the G9a-crosslinked immunoprecipitation (CLIP) assay (Figure 4A) revealed the presence of Lnc-Rewind in the G9a immunoprecipitated samples. As for RIP, also in this case, Lnc-Rewind RNA-specific enrichment was comparable to the Kcnq1ot1-positive control. As a further validation, endogenous Lnc-Rewind RNA pulldown (Figure 4B) revealed the presence of G9a in the lncRNA-precipitated fraction. This evidence confirmed the direct interaction between these two partners and led us to hypothesize that Lnc-Rewind might exert its repressive function on the Wnt7b locus through G9a. In support of this, depletion of G9a by siRNA-mediated knockdown in MuSC-derived myoblasts induced Wnt7b upregulation (Figure 4C). To test whether Lnc-Rewind and G9a binds the Wnt7b locus in vivo, we applied RNA-DNA-FISH (Figure 4D) and a chromatin immunoprecipitation (ChIP) assay (Figure 4\u2014figure supplement 1C), respectively. In agreement with our hypothesis, we found an overlap between Lnc-Rewind (RNA) and Wnt7b (DNA) localization (Figure 4D) and an intriguing enrichment of the methyltransferase in the Wnt7b upstream regions (Figure 4\u2014figure supplement 1C). Consistent with a role of Lnc-Rewind in the G9a-mediated epigenetic repression of Wnt7b, quantification of the H3K9me2 mark on the G9a-occupied genomic regions (Figure 4E, upper panel) showed that H3K9me2 deposition decreased upon Lnc-Rewind knockdown, compared to the GAP-SCR control (Figure 4E, lower panel). Moreover, a combined Lnc-Rewind (RNA)/Wnt7b (DNA) FISH/G9a (PROTEIN) immunostaining approach showed the colocalization of both G9a and Lnc-Rewind on Wnt7b genomic locus (Figure 5A). Taken together, these results support a mechanism of action through which in MuSC Lnc-Rewind represses Wnt7b gene transcription by mediating the specific G9a-dependent H3K9me2 deposition on its locus (Figure 5B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig4-v2.jpg)\n\n**Figure 4.:** (A) G9a crosslinked RNA immunoprecipitation assay (CLIP) performed on nuclear extracts from C2C12 proliferating myoblasts. Western blot analysis of G9a (left panel) and qRT-PCR quantification of Lnc-Rewind recovery (right panel) expressed as input percentage (Input %) are shown. EZH2 protein and Gapdh RNA serve as negative controls; Kcnq1ot RNA is used as positive control. Data represent mean \u00b1 SEM of three\u00a0biological replicates. (B) Lnc-Rewind RNA pulldown assay performed on nuclear extracts from C2C12 proliferating myoblasts. qRT-PCR quantification of Lnc-Rewind recovery (left panel) and Western blot analysis of G9a (right panel) are shown. Gapdh RNA and EZH2 protein serve as negative controls. Data represent mean \u00b1 SEM of three\u00a0biological replicates. (C) qRT-PCR quantification of G9a and Wnt7b in MuSC-derived myoblasts treated with si-SCR or si-G9a. Data were normalized to Gapdh mRNA and represent the mean \u00b1 SEM of three\u00a0biological replicates. (D) RNA/DNA-FISH experiments performed in proliferating MuSC-derived myoblasts showing the Lnc-Rewind RNA (red) and a DNA control (CTRL) region (green) (a) or the Wnt7b locus (green) (b). Inserts in (c) show single fluorescent channels for Lnc-Rewind and Wnt7b signals labelled by asterisks. Blue lines indicate the edges of the nuclei. DAPI, 4\u2032,6\u2010diamidino\u20102\u2010phenylindole (blue). Histogram reports the mean percentage \u00b1 SD of Lnc-Rewind signals colocalizing with Wnt7b locus or with the control region from three\u00a0biological replicates. The extended list of the DNA and RNA probes used is listed in Key resources\u00a0table. (E) Zoom-in into the genomic region upstream the Wnt7b TSS (upper panel). ChIP amplicons used to test the H3K9me2 enrichments are shown in green. Histogram shows the levels of H3K9me2 as analysed by ChIP experiments performed in MuSC-derived myoblasts upon GAP-SCR or GAP-REW transfection (lower panel). The H3K9me2 enrichment is represented as input percentage (Input %). Ube2b and R15 genomic regions were used as negative and positive controls, respectively. The graph shows the mean \u00b1 SEM of six\u00a0independent experiments. Data information: (B) and (E): *p<0.05, paired Student\u2019s t-test. (C) and (D): **p<0.01, ***p<0.001, unpaired Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Western blot analysis performed on protein extracted from WT MuSC-derived myoblasts cultured in growth (GM) and differentiated (DM) conditions. GAPDH protein was used as endogenous control. (B) G9a and EZH2 native RNA immunoprecipitation (RIP) performed on nuclear extracts of C2C12 proliferating myoblasts. Data represent mean \u00b1 SEM of four\u00a0biological replicates. Western blot analysis of G9a and EZH2 (upper panel) and qRT-PCR quantification of Lnc-Rewind recovery (lower panel) are shown. EZH2 protein serves as negative control. Gapdh and Kcnq1ot1 RNAs serve, respectively, as negative and positive controls. (C) Chromatin immunoprecipitation (ChIP) of G9a performed in C2C12 proliferating myoblasts; enrichment was calculated as (IP-IgG)/Input and represented as input percentage (Input %). Gapdh genomic region was used as negative control, while Myog and R15 genomic regions were used as positive controls. The graph shows the mean \u00b1 SEM of three\u00a0biological replicates. Data information: *p<0.05, **p<0.01, ***p<0.001, unpaired Student\u2019s t-test.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig5-v2.jpg)\n\n**Figure 5.:** (A) Top panel: RNA/DNA-FISH combined with immunofluorescence performed on MuSC-derived myoblasts; Lnc-Rewind RNA (red), Wnt7b DNA locus (green), and G9a protein (grey) are shown. Bottom panel: Isosurface rendering of nuclear sections is indicated by the yellow dashed lines. The overlapping regions between Lnc-Rewind (RNA) and Wnt7b (DNA) locus (left) and among Lnc-Rewind, Wnt7b locus, and G9a (right) are indicated by the white asterisks inside the nuclear volume. (B) Proposed model for the functional interplay between Lnc-Rewind and G9a on Wnt7b gene locus. Representation of mmu_Lnc-Rewind mode of action in muscle cells. In proliferating myoblasts, the Lnc-Rewind transcript is expressed, recruits the silencing methyltransferase G9a on the locus that\u00a0represses Wnt7b transcription.\n\n## Discussion\n\nWnt signalling represents one of the pathways that has a major role in myogenesis as it is essential for proper MuSC self-renewal and differentiation (von Maltzahn et al., 2012). A correct timing of Wnt signalling activation is crucial to obtain proper tissue repair, and its aberrant activity causes a wide range of pathologies (Nusse and Clevers, 2017). Thus, it is not surprising that Wnt pathway is under a strict positive and negative multi-layered regulation. Recent studies show that lncRNAs can modulate Wnt pathway by affecting gene expression through different mechanisms, from transcriptional to post-transcriptional level (Ong et al., 2017; Shen et al., 2017; Zarkou et al., 2018) For example, lncRNAs were found interacting with transcription factors (Desideri et al., 2020)\u00a0and chromatin modifiers (Hu et al., 2015) altering Wnt signalling pathway in different tissues and in cancer. In this study, we discovered that lncRNAs-mediated regulation plays a role in modulating Wnt pathway in muscle stem cells. Taking advantage of a newly discovered atlas of not annotated muscle-specific lncRNAs (Ballarino et al., 2015), we decided to focus our attention on Lnc-Rewind for the following reasons: (1) an orthologue transcript, hs_Lnc-Rewind, with high level of sequence identity is expressed by human myoblasts (Figure 1B, Figure 1\u2014figure supplement 1A,B); (2) Lnc-Rewind is associated and retained to chromatin (Figure 1D\u2013F); (3) it is in genomic proximity to Wnt7b locus (Figure 3A), and (4) its knockdown induces upregulation of Wnt7b in MuSC-derived myoblasts (Figure 3C, Figure 3\u2014figure supplement 1A,B). Interestingly, the read coverage revealed the existence of multiple isoforms that are not fully spliced. The slowness in the splicing process could contribute to the maintenance of Lnc-Rewind at its own site of transcription improving its retention on the chromatin. In line with this, recent evidence indicates that the presence of introns, and their distinct processing, may represent a way to regulate the nuclear localization and function of many lncRNAs (Guo et al., 2020; Zuckerman and Ulitsky, 2019). These observations led us hypothesize a Lnc-Rewind-mediated in cis repression for Wnt7b gene. Of note, by analyzing the expression of surrounding genes within Lnc-Rewind genomic region, Wnt7b is the only gene to be significantly upregulated by Lnc-Rewind depletion (Figure 3C, Figure 3\u2014figure supplement 1B). Moreover, we show that Lnc-Rewind and Wnt7b expressions are anti-correlated in different cell types (Figure 3B), suggesting that the repressive action of Lnc-Rewind on Wnt7b locus could have a more general role, not only in satellite cells.\n\nIt is well-accepted that the majority of the cis-acting chromatin-associated lncRNAs function by recruiting and targeting chromatin modifiers to specific genes (Batista and Chang, 2013; Guttman and Rinn, 2012; Khalil et al., 2009; Rinn and Chang, 2012). In light of the evidence that Lnc-Rewind promotes Wnt7b repression, we decided to investigate the involvement of the two major repressive histone modifiers, EZH2 and G9a, in mediating such Lnc-Rewind-dependent silencing. Notably, by performing both protein- and RNA-centric biochemical approaches (RIP/CLIP and RNA pulldown), we found that only G9a specifically interacts with Lnc-Rewind (Figure 4A, B, Figure 4\u2014figure supplement 1B). This strongly suggests that the histone H3K9 lysine methyltransferase (KMT) might be specifically tethered on Wnt7b genomic locus by Lnc-Rewind to mediate its transcriptional repression. In support of\u00a0this idea, through H3K9me2 ChIP experiments here we provide evidence that different regions upstream Wnt7b locus are enriched in the G9a-deposited histone mark in MuSC-derived myoblasts and that H3K9me2 levels on these regions significantly decrease upon Lnc-Rewind knockdown (Figure 4E). Moreover, both ChIP (Figure 4\u2014figure supplement 1C) and imaging (Figure 4D) studies confirmed the presence of G9a in close proximity to Wnt7b locus. These data, together with the evidence that G9a downregulation is sufficient to induce Wnt7b de-repression (Figure 4C), confirm a direct role for G9a-mediated H3K9 methylation in maintaining the repression of Wnt7b in MuSCs.\n\nA correct timing and magnitude of Wnt signalling activation is essential to maintain functional MuSCs. For instance, it has been shown that low \u03b2-catenin activity is fundamental during early phases of muscle regeneration to allow MuSC activation and subsequent differentiation (Figeac and Zammit, 2015; Parisi et al., 2015). Accordingly, satellite cells isolated from mice with constitutive active Wnt/\u03b2-catenin signalling display an early growth arrest and premature differentiation (Rudolf et al., 2016). All these data point out that the cell environment, together with the timing and the proper activation of Wnt signalling pathway, is fundamental for muscle homeostasis.\n\nAlthough the function of WNT7b has been studied in different cell types and developmental processes (Chen et al., 2014; Wang et al., 2005), the involvement of this ligand in muscle biology is still rather unexplored. The fact that in MuSCs, Wnt7b gene is maintained at very low levels and that it is the latest Wnt ligand induced after muscle injury (Polesskaya et al., 2003) suggests the necessity to keep it repressed to allow MuSC expansion. In line with this, here we show that aberrant, cell-autonomous activation of Wnt7b expression upon Lnc-Rewind depletion causes defects in MuSC expansion and activation (Figure 2E\u2013G) that are abolished if the expression of Wnt7b is rescued to physiological levels (Figure 3D,E), emphasizing that Lnc-Rewind-mediated repression of Wnt7b is key in ensuring MuSC activity. This is nicely supported by a previous study demonstrating that, in the cytoplasm, a Wnt7b/lncRNA circuitry controls the proliferation of C2C12 myoblasts. Specifically, Lu and colleagues demonstrated that the YY1-associated muscle lincRNA (Yam-1) inhibits skeletal myogenesis through modulation of Mir715 expression, which in turn targets Wnt7b mRNA (Lu et al., 2013). In sum, our results support a mechanism of action through which Lnc-Rewind mediates G9a recruitment on Wnt7b locus to silence it through the deposition of the repressive mark H3K9me2 during the proliferation phase of satellite cells (Figure 5B), thus providing unique insights on the contribution of nuclear-enriched lncRNAs in myogenesis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th colspan=\"2\">Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (mouse)</td>\n      <td>C57Bl/10 (WT)</td>\n      <td>JAX</td>\n      <td>Stock#\u00a0000665 RRID:MGI:5656893</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Cell line (mouse)</td>\n      <td>C2C12</td>\n      <td>ATCC</td>\n      <td>C3H RRID:CVCL_UR38</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>Male myoblast (WT)</td>\n      <td>Telethon Biobank</td>\n      <td>N/A</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD31-PE (cell line monoclonal)</td>\n      <td>MiltenyBiotec</td>\n      <td>Cat#\u00a0130111540 RRID:AB_2657296</td>\n      <td colspan=\"2\">(1:25)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD45-PE (cell line monoclonal)</td>\n      <td>MiltenyBiotec</td>\n      <td>Cat#\u00a0130110797 RRID:AB_2658218</td>\n      <td colspan=\"2\">(1:25)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ter119-PE (cell line monoclonal)</td>\n      <td>MiltenyBiotec</td>\n      <td>Cat#\u00a0130112909 RRID:AB_2654115</td>\n      <td colspan=\"2\">(1:25)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Sca1-FITC (cell line monoclonal)</td>\n      <td>MiltenyBiotec</td>\n      <td>Cat#\u00a0130116490 RRID:AB_2751322</td>\n      <td colspan=\"2\">(1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b17Integrin-APCVio770 (cell line monoclonal)</td>\n      <td>MiltenyBiotec</td>\n      <td>Cat#\u00a0130095212 Custom</td>\n      <td colspan=\"2\">(1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-G9a (rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#\u00a0ab185050 RRID:AB_2792982</td>\n      <td colspan=\"2\">(CLIP, RIP: 10 ug; ChIP: 5 ug; WB: 1:1000; IF: 1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-EZH2 (mouse monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Cat#\u00a03147 RRID:AB_10694383</td>\n      <td colspan=\"2\">(RIP: 5 ug; WB: 1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GAPDH (rabbit polyclonal)</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Cat#\u00a0G9545 RRID:AB_796208</td>\n      <td colspan=\"2\">(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MyHC (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat#\u00a0Mf20-s RRID:AB_2147781</td>\n      <td colspan=\"2\">(1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CyclinD3 (rabbit polyclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat#\u00a0sc-182 RRID:AB_2259653</td>\n      <td colspan=\"2\">(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Wnt7b (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#ab94915 RRID:AB_10675749</td>\n      <td colspan=\"2\">(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-H3K9me2(mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#\u00a0ab1220 RRID:AB_449854</td>\n      <td colspan=\"2\">(ChIP: 5 ug)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Pax7 (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat#\u00a0Pax7-s RRID:AB_2299243</td>\n      <td colspan=\"2\">(1:10)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IgG Anti-Rabbit</td>\n      <td>Invitrogen</td>\n      <td>Cat#\u00a014-4616-82 RRID:AB_2865072</td>\n      <td colspan=\"2\">(CLIP, RIP:10 ug; ChIP: 5 ug)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-rabbit IgG Alexa Fluor Plus 647</td>\n      <td>Invitrogen</td>\n      <td>Cat#\u00a0A32795 RRID:AB_2762835</td>\n      <td colspan=\"2\">(1:300)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ki67 (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#\u00a0ab15580 RRID:AB_443209</td>\n      <td colspan=\"2\">(1:100)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>siRNA: nontargeting control</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Cat# SIC007</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LNA Gapmer: nontargeting control</td>\n      <td>Qiagen</td>\n      <td>Cat#\u00a0300610</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mir-Let7-b</td>\n      <td>Qiagen</td>\n      <td>Cat# MS00003122</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mir-Let7-c</td>\n      <td>Qiagen</td>\n      <td>Cat#\u00a018300</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>siG9a</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>SASI_Mm01_00136174 SASI_Mm_00136174_AS SASI_Mm01_00136175 SASI_Mm01_00136175_AS</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>siWnt7b</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>SASI_MM02_00316332 SASI_MM02_00316332_AS SASI_MM01_00033690 SASI_MM01_00033690_AS</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HS-DLC1 mRNA probe set</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Ref.\u00a0716041</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Wnt7b BAC probe</td>\n      <td>Invitrogen clones</td>\n      <td>RP23-272K17</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>NCTC BAC probe</td>\n      <td>Invitrogen clones</td>\n      <td>RP23-352B6</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mm-Lnc-Rewind probe\u00a0set</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Ref. 722581</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TriReagent</td>\n      <td>Sigma</td>\n      <td>Cat#T9424</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>Sigma</td>\n      <td>Cat#\u00a028718-90-3</td>\n      <td colspan=\"2\">(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DSG (di-succinimidyl glutarate)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>CAS 79642-50-5</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SYBR Green Master mix</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#\u00a0A25742</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Paris Kit</td>\n      <td>Thermo fisher scientific</td>\n      <td>Cat#\u00a0AM1921</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Direct-Zol RNA MiniPrep Kit</td>\n      <td>Zymo Research</td>\n      <td>Cat#\u00a0R2050</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MAGnify ChIP</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#\u00a0492024</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MyTaq DNA polymerase</td>\n      <td>Bioline</td>\n      <td>Cat#\u00a0bio-21105</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperScript RT Vilo Master Mix</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#\u00a011754050</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BaseScope Reagent Kit v2-RED</td>\n      <td>Advanced Cell Diagnostics, Inc</td>\n      <td>Ref. 323900</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MiScript II RT kit</td>\n      <td>Qiagen</td>\n      <td>Cat#\u00a0218160</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Lipofectamine 2000</td>\n      <td>Invitrogen</td>\n      <td>Cat#\u00a011668019</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT EdU Alexa Flour 594 HCS Assay</td>\n      <td>Invitrogen</td>\n      <td>Cat# C10354</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pierce ChIP-grade Protein A/G Magnetic Beads</td>\n      <td>ThermoFisher scientific</td>\n      <td>Cat# 26162</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Dispase II</td>\n      <td>Roche</td>\n      <td>4942078001</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Proteinase K</td>\n      <td>Roche</td>\n      <td>EO0491</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Collagenase A</td>\n      <td>Roche</td>\n      <td>10103578001</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>DNase I</td>\n      <td>Roche</td>\n      <td>10104159001</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>DNase I</td>\n      <td>ThermoFisher scientific</td>\n      <td>#EN0521</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Collagenase I</td>\n      <td>Sigma</td>\n      <td>C0130</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FACSDiva</td>\n      <td>BD Biosciences</td>\n      <td>Version 6.1.3.</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo</td>\n      <td>Tree Star</td>\n      <td>Version 9.3.2 RRID:SCR_008520</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji image processing package</td>\n      <td>Open-source software (OSS) projects</td>\n      <td>https://imagej.net/Fiji RRID:SCR_002285</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MetaMorph</td>\n      <td>Molecular Devices</td>\n      <td>https://www.moleculardevices.com/ RRID:SCR_002368</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FV10-ASW Viewer software</td>\n      <td>Olympus</td>\n      <td>https://www.olympus-lifescience.com/ RRID:SCR_014215</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ZEN 3.0 Blue edition</td>\n      <td>ZEISS</td>\n      <td></td>\n      <td colspan=\"2\"></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell preparation and FACS sorting\n\nCell isolation and labelling were essentially performed as described in Mozzetta, 2016. Isolation of cells from 2 months old C57/Bl10 (RRID:MGI:5656893) WT mice was performed as follows: briefly, whole lower hindlimb muscles were carefully isolated, minced, and digested in phosphate-buffered saline\u00a0(PBS) (Sigma) supplemented with 2.4 U/ml Dispase II (Roche), 100 \u03bcg/ml Collagenase A (Roche), 50 mM CaCl2, 1 M MgCl2, 10 mg/ml DNase I (Roche) for 1 hr at 37\u00b0C under agitation. Muscle slurries were passed 10 times through a 20G syringe (BD Bioscience). Cell suspension was obtained after three successive cycles of straining and washing in Washing Buffer consisting of HBSS containing 0.2% bovine serum albumin\u00a0(BSA) (Sigma\u2013Aldrich), 1% penicillin-streptomycin. Cells were incubated with primary antibodies CD31-PE (MiltenyBiotec, 130111540; RRID:AB_2657296), CD45-PE (MiltenyBiotec, 139110797; RRID:AB_2658218), Ter119-PE (MiltenyBiotec, 130112909; RRID:AB_2654115) 1:25; Sca1-FITC (MiltenyBiotec, 130116490; RRID:AB_2751322) 1:50; \u03b17Integrin-APCVio770 (MiltenyBiotec, 130095212; Custom) 1:20 for 45 min on ice diluted in HBSS containing 0.2% BSA, 1% penicillin-streptomycin, and 1% DNAse I. The suspension was finally washed and resuspended in PBS containing 2% fetal bovine serum (FBS) and 0.5 \u03bcM\u00a0ethylenediaminetetraacetic acid\u00a0(EDTA). Cells were sorted using a FACSAriaIII (Becton Dickinson, BD Biosciences) equipped with 488 nm, 561 nm, and 633 nm laser and FACSDiva software (BD Biosciences, version 6.1.3). Data were analyzed using a FlowJo software (Tree Star, version 9.3.2). Briefly, cells were first gated based on morphology using forward versus side scatter area parameter (FSC-A versus SSC-A) strategy followed by doublets exclusion with morphology parameter area versus width (A versus W). Muscle satellite cells (MuSCs) were isolated as Ter119neg/CD45neg/CD31neg/a7-integrinpos/Sca1neg cells. To reduce stress, cells were isolated in gentle conditions using a ceramic nozzle of size 100 \u03bcm, a low sheath pressure of 19.84 pound-force per square inch (psi) that maintain the sample pressure at 18.96 psi and a maximum acquisition rate of 3000 events/s. Cells were collected in five polypropylene tubes. Following isolation, an aliquot of the sorted cells was evaluated for purity at the same instrument resulting in an enrichment\u00a0>98\u201399% (see Figure 1\u2014figure supplement 1C,\u00a0right panel).\n\n### Cell culture conditions and transfection\n\nFreshly sorted cells were plated on ECM Gel (Sigma)-coated dishes in Cyto-grow (Resnova) complete medium as a growth medium (GM) and cultured at 37\u00b0C and 5% CO2. After 5 days in GM, MuSC-derived myoblasts were exposed, generally for 2 days, to differentiation medium consisting of Dulbecco\u2019s modified Eagle\u2019s medium\u00a0(DMEM) with 5%\u00a0horse serum (HS). Cells were counted on DAPI-stained images using the Fiji (RRID:SCR_002285) tool \u2018Multi point\u2019. Downregulation of RNA expression was performed at \u223c50% confluence by transfection in Lipofectamine 2000 (Invitrogen) according to manufacturer\u2019s instructions, with 75 nM of LNA GapmeRs (Euroclone) for the downregulation of Lnc-Rewind and with siRNA (Sigma) for G9a and Wnt7b, according to manufacturer\u2019s instructions. Negative Control A (Euroclone)\u00a0(GAP-SCR) and Mission siRNA Universal Negative Control (Sigma) (si-SCR) were used as controls. See Supplementary file 1 and Key resources table for details. MuSC-derived myoblasts were subjected to two consecutive (overnight) rounds of transfection in GM\u00a0and harvested 24 hr after second transfection.\n\nGapmeRs were designed against Lnc-Rewind sequence using the Exiqon web tool (http://www.exiqon.com/ls/Pages). Negative Control A (Euroclone) was used as negative (Scramble) control. Sequences are reported in Supplementary file 1 and Key resources table.\n\nFor EdU (Invitrogen) detection cells were incubated for 6 hr and stained using Click-iT EdU Alexa Flour 594 HCS Assay (Invitrogen) according to the manufacturer\u2019s instructions.\n\n### Single myofibre isolation and immunofluorescence\n\nSingle myofibres were isolated from Extensor digitorum longus (EDL) muscles of C57/Bl10 mice and digested in 2 mg/ml collagenase I (Sigma) for 1 hr at 37\u00b0C, gently shacked every 10 min. Single fibres were obtained gently triturating the digested EDL muscles using a glass pipette in DMEM supplemented with 10% HS. The myofibres were manually collected under a dissecting microscope and cultured in DMEM + Pyr with 20% FBS, 2.5 ng/ml FGF (Gibco), and 1% chick embryo extract (CEE) (Life Science Production). RNAi experiments were performed 4 hr after plating with one round of transfection, as described above. The fibres were incubated for 24 hr with EdU (Invitrogen) and were analyzed 96 hr after plating.\n\nFor EdU detection cells were stained using Click-iT EdU Alexa Flour 594 HCS Assay (Invitrogen) according to the manufacturer\u2019s instructions.\n\nFor the immunofluorescence, the single myofibres were fixed with 4% paraformaldehyde in PBS for 20 min at room\u00a0temperature\u00a0(RT), permeabilized with 0.5% Triton X-100 in PBS, and blocked with 10% FBS in PBS for 1 hr at RT. Primary antibodies (Pax7 (DSHB, Pax7-s; RRID:AB_2299243) 1:10 and Ki67 (Abcam, ab15580; RRID:AB_443209) 1:100) were diluted in 10%\u00a0FBS\u2013PBS and incubated overnight at 4\u00b0C. After incubation for 1 hr with the appropriate secondary antibodies (Alexa Fluor 488 or 594,\u00a0Thermo Fisher), nuclei were counterstained with DAPI (Sigma), and fibres were mounted on cover-glasses. Images were taken with Axio Observer microscope (ZEISS) and processed with ZEN 3.0 (Blue edition) software.\n\n### RNA/DNA-FISH\n\nLnc-Rewind in situ hybridization analyses were performed as previously described (Rossi et al., 2019). Briefly, proliferating MuSC-derived myoblasts and C2C12 cells were cultured on pre-coated glass coverslips and then fixed in 4% paraformaldehyde/PBS (Electron Microscopy Sciences, Hatfield, PA). RNA hybridization and signal development were carried out using Basescope assay (Advanced Cell Diagnostics, Bio-Techne) and BA-Mm-Lnc-Rewind probe-set (ref. 722581) designed to detect three junction regions of Lnc-Rewind (exon/intron1, intron1/exon2, exon/intron2). A probe specific for exon junction exon1/exon2 of human Dlc1 mRNA (BA-HS-DLC1, ref.\u00a0716041) was used as negative control. Confocal images were acquired at Olympus IX73 spinning disk confocal microscope equipped with a Confocal Imager (CREST X\u2010LIGHT) plus CoolSNAP Myo CCD camera (Photometrics) and at Olympus iX83 FluoView1200 laser scanning confocal microscope. Stacks of images were taken automatically with 0.2 or 0.3 microns between the Z-slices using a 60x NA1.35 oil objective and 405/473/559/635 nm or 405/470/555/640 nm lasers subset, respectively. Filter setting for DAPI, Alexa Fluor 488, Cy3, and Alexa Fluor 594 was used. The images were collected with MetaMorph or FV10-ASW confocal image acquisition software, and post-acquisition processing was performed by FIJI software to the entire\u00a0image. 3D\u00a0viewer plugin was used to perform 3D-rendering. DNA-FISH were sequentially carried out after RNA-FISH staining according to Santini et al., 2021. In particular, Wnt7b and negative control (corresponding to the nctc locus, previously used in\u00a0Ballarino et al., 2018\u00a0and\u00a0Desideri et al., 2020) genomic regions were visualized by nick-translated BAC clones (RP23-272K17 and RP23-352B6, respectively) labelled with Green 496 [5-fluorescein] dUTP (Enzo Life-Sciences). Percentage of colocalized signals in RNA/DNA-FISH experiments were measured as percentage ratio (%) of punctate Lnc-Rewind signals localized on the same focal plane of Wnt7b and negative control genomic regions, with\u00a0respect to the total of Lnc-Rewind signals. In particular, we analysed a total of 135 nuclei for Lnc-Rewind/Wnt7b and 126 nuclei for Lnc-Rewind/negative control, from three independent biological replicates. G9a Immunofluorescence was performed sequentially to RNA-FISH staining by incubation in blocking solution (1% goat serum/1% BSA/PBS) for 30 min at RT. G9a primary antibody (Abcam, ab185050) was incubated in 1% donkey serum/PBS overnight at 4\u00b0C, while secondary antibody (donkey anti-rabbit Alexa Fluor Plus 647, Invitrogen A32795) were applied in the same incubation buffer for 45 min at RT.\n\n### RNA analyses\n\nTotal RNA from myoblasts/myotubes and MuSC-derived myoblasts was extracted with TriReagent (Sigma) using the Direct-Zol RNA MiniPrep Kit (Zymo Research) according to protocol specification. 0.5\u20131.0 \u00b5g of RNA were treated with RNase-free DNase I enzyme (Thermo scientific). Nuclear/cytoplasmic fractionation was performed using the Paris kit (Ambion, AM1921) according to\u00a0the protocol specifications. RNA was reverse transcribed using the SuperScript VILO Master Mix (Thermo Scientific). Real-time quantitative PCRs were performed by using SYBR Green Master mix (Applied Biosystems), according to the manufacturer\u2019s instructions. Relative expression values were normalized to the housekeeping Gapdh transcript.\n\n### Western blot\n\nTotal proteins were prepared by resuspending cells in RIPA buffer (50 mM Tris\u2013HCl pH 7.4, 150 mM NaCl, 0.1% sodium dodecyl sulphate\u00a0(SDS), 0.5% sodium deoxycholate, 1% NP-40, 1 mM EDTA, protease and phosphatase inhibitors [Roche]). Protein concentration was determined using a BCA assay (ThermoFisher Scientific). The cell lysate was denatured at 95\u00b0C for 5 min. The cell lysates were resolved on 4\u201315% TGX gradient gels (Bio-Rad Laboratories) and transferred to nitrocellulose membrane (Amersham). Membranes were blocked with 5% non-fat dried milk in TBS with 0.2% Tween for 1 hr at RT and then incubated with primary antibody overnight at 4\u00b0C. Primary antibodies used were against MF20 (MyHC) (DSHB, Mf20-s; RRID:AB_2147781), G9a (Abcam, ab185050; RRID:AB_2792982), Ezh2 (Cell Signaling, #3147; RRID:AB_10694383), Wnt7b (Abcam, ab94915; RRID:AB_10675749), Cyclin D3 (Santa Cruz biotechnology, sc-182; RRID:AB_2259653), and GAPDH (Sigma, G9545; RRID:AB_796208). After washing in TBS with 0.2% Tween, membranes were incubated in HRP-conjugated specific secondary antibody (goat anti-rabbit-anti-mouse [IgG-HRP Santa Cruz Biotechnologies]) for 1 hr at RT. After washing in TBS with 0.2% Tween, blots were developed with Western lightning enhanced chemiluminescence (ThermoFisher Scientific), the signal detection was performed with the use of ChemiDoc (Bio-Rad).\n\n### RNA immunoprecipitation\n\nC2C12 cells were washed with PBS, centrifuged at 2000 rpm for 5 min and resuspended in Buffer A (20 mM Tris\u2013HCl pH\u00a08.0, 10 mM NaCl, 3 mM MgCl2, 0.1% NP40, 10% glycerol, 0.2 mM EDTA, 0.4 mM\u00a0phenylmethylsulfonyl fluoride (PMSF), 1\u00d7 Protease Inhibitor cocktail (PIC). After\u00a0a\u00a015 min incubation on ice, the cell suspension was centrifuged at 2000 rpm for 5 min at 4\u00b0C to pellet the nuclei. The supernatant was collected as cytoplasmic extract. The pellet was re-washed with Buffer A for three times. The pellet was resuspended in NT2/Wash buffer (50 mM Tris pH\u00a07.4, 150 mM NaCl, 1 mM MgCl2, 0.5% NP40, 20 mM EDTA, 1\u00d7 PIC, 1\u00d7 phenylmethylsulfonyl fluoride\u00a0(PMSF), 1 mM dithiothreitol\u00a0[DTT]), break with 7 ml dounce (tight pestel/B pestel), and centrifuged at 14,000 rpm for 30 min at 4\u00b0C. Protein A/G Magnetic beads (Thermo Scientific) were incubate with IgG (Invitrogen, 14-4616-82;\u00a0RRID:AB_2865072), G9a (Abcam, ab185050; RRID:AB_2792982), and Ezh2 (Cell Signaling, #3147; RRID:AB_10694383) antibody on rotating wheel ON at 4\u00b0C, while the nuclear extract (NE)\u00a0was precleared with the beads. Ten\u00a0percent of the NE\u00a0was collected for INP. The NE was divided in each sample with the coated beads (beads + Ab) and incubates on rotating wheel ON at 4\u00b0C. The beads were washed with NT2 buffer, and \u00bc was collected for protein and \u00be for RNA analyses. RIP qRT-PCR results were represented as percentage of IP/input signal (% input).\n\n### Crosslinking immunoprecipitation\n\nCLIP experiments were performed on NE\u00a0obtained with some modification of the Rinn et al.\u2019s protocol (Rinn et al., 2007). Briefly, C2C12 cells were washed with PBS, crosslinked with UV rays and collected in Buffer A (20 mM Tris\u2013HCl pH\u00a08.0, 10 mM NaCl, 3 mM MgCl2, 0.1% NP40, 10%\u00a0glycerol, 0.2 mM EDTA, 0.4 mM PMSF, 1\u00d7 PIC). Cells were centrifuged at 500 x\u00a0g for 10 min and the supernatant was collected as cytoplasmic extract. The nuclei\u00a0pellet was re-washed with Buffer A for three times.\u00a0After the last wash, the nuclei pellet was resuspended in NP40 lysis buffer (50 mM HEPES\u2013KOH, 150 Mm KCl, 2 Mm EDTA, 1 Mm NaF, 0.5% NP40 pH 7.4, 0.5 Mm DTT, 100\u00d7 PIC),\u00a0break with 7 ml dounce (tight pestel/B pestel) and centrifuged at maximum speed for 20 min at 4\u00b0C. The supernatant was\u00a0collected\u00a0and quantified with Bradford assay. Ten\u00a0percent\u00a0of the NE\u00a0was collected for INP. Protein A/G Magnetic beads (Thermo Scientific) were washed with PBS Tween 0.02% (1\u00d7\u00a0PBS, 0.02% Tween-20) and incubated in PBS Tween 0.02% with IgG (Invitrogen, 14-4616-82;\u00a0RRID:AB_2865072) and G9a (Abcam, ab185050; RRID:AB_2792982) antibody on rotating wheel 1 hr at RT. The NE was divided in each sample with the coated beads (beads + Ab) and incubated on rotating wheel ON at 4\u00b0C. The beads were washed three times with the NP40 High Salt Buffer 0.5. (25 mM HEPES\u2013KOH pH7.5, 250 mM KCl, 0.025% NP40)\u00a0and two times with polynucleotide kinase PNK Buffer (50 mM Tris\u2013HCL, 50 Mm NaCl, 10 mM MgCl2 pH\u00a07.5) and resuspended in 100 \u03bcl of NP40 lysis buffer. Seventy-five\u00a0microlitres\u00a0were collected for RNA analysis: an equal volume of 2\u00d7 Proteinase K Buffer (100 mM Tris\u2013HCl, pH 7.5, 150 mM NaCl, 12.5 mM EDTA, 2%\u00a0[wt/vol] SDS) was added, followed by the addition of Proteinase K (Roche) to a final concentration of 1.2 mg/ml and incubated for 30 min at 55\u00b0C. The RNA was recovered and analyzed through qRT-PCR. Twenty-five microlitres were heated at 95\u00b0C for 5 min, and the supernatant collected and resuspended in Protein elution buffer (4\u00d7 Laemmli sample buffer [Bio-Rad]) with DTT 50 mM and analyzed by Western blot.\n\n### RNA pulldown\n\nRNA pulldown experiments were performed on NE\u00a0obtained with some modification of the Rinn et al.\u2019s protocol (Rinn et al., 2007). C2C12 cells were washed with PBS and harvested in Buffer A (20 mM Tris\u2013HCl pH\u00a08.0, 10 mM NaCl, 3 mM MgCl2, 0.1% NP40, 10%\u00a0glycerol, 0.2 mM EDTA, 0.4 mM PMSF, 1\u00d7 PIC). After a 15 min incubation on ice, they were centrifuged at 2000 rpm for 5 min at 4\u00b0C to pellet the nuclei. After three washes performed with Buffer A, the pellet was resuspended in NT2 buffer (50 mM Tris pH7.4, 150 mM NaCl, 1 mM MgCl2, 0.5% NP40, 20 mM EDTA, 1\u00d7 PIC, 1\u00d7 PMSF, 1 mM DTT), broken with 1 ml dounce (tight pestel/B pestel) and centrifuged at 14,000 rpm for 30 min at 4\u00b0C. The supernatant was quantified with Bradford assay. Streptavidin magnetic beads (Promega) were incubated with biotinylated primers against Lnc-Rewind and LacZ on a rotating wheel for 30 min at RT, while the NE was precleared with the beads with the same conditions. One\u00a0percent\u00a0of the NE\u00a0was collected for INP. The NE was divided in each sample with the coated beads (beads + primers) and incubated on rotating wheel for 2 hr at RT. The beads were washed with NT2 buffer and 1/5 was collected for the RNA. The remaining 4/5 were eluted in elution buffer (2% SDS, 10%\u00a0glycerol, 62.5 mM Tris\u2013HCl pH 7.5, 0.5 M DTT, 1\u00d7 PIC) and incubated 15 min at 70\u00b0 before incubation of 5 min at 90\u00b0 in order to collect proteins. Pulldown (PD) qRT-PCR results were represented as percentage of PD/input signal (% input).\n\n### Chromatin immunoprecipitation\n\nChIP experiments on MuSC-derived myoblasts were performed on chromatin extracts according to the manufacturer's protocol (MAGnify ChIP; Life Technologies) by O.N. incubation with 3 \u03bcg of immobilized anti-H3K9me2 (Abcam ab1220; RRID:AB_449854) or rabbit IgG (14-4616-82;\u00a0RRID:AB_2865072) antibodies. A standard curve was generated for each primer pair testing 5-point dilutions of input sample. Fold enrichment was quantified using qRT-PCR (SYBR Green; Qiagen) and calculated as a percentage of input chromatin (% Inp). Data from GAP-SCR vs GAP\u2010REW conditions represent the mean of six independent experiments \u00b1 SEM. For G9a ChIP experiments on proliferating C2C12, crosslinking was performed by adding DSG (di-succinimidyl glutarate; Santa Cruz) at a final concentration of 2 mM for 45 min at RT. Then, formaldehyde (Sigma) was added to culture medium to a final concentration of 1% for 10 min at RT and stopped by glycine to a final concentration of 0.125 M. Chromatin was extracted as described in Mozzetta et al., 2014 and immunoprecipitated with 5 \u03bcg of G9a (Abcam, ab185050; RRID:AB_2792982) or rabbit IgG (14-4616-82; RRID:AB_2865072) antibodies carried out overnight at 4\u00b0C. Sequences of the oligonucleotides used for ChIP analyses are reported in Supplementary file 1.\n\n### 3\u2032-End mRNA sequencing and bioinformatic analyses\n\nTotal RNA was quantified using the Qubit 2.0 Fluorimetric Assay (ThermoFisher Scientific). Libraries were prepared from 100 ng of total RNA using the QuantSeq 3\u2032\u00a0mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen GmbH); the quality was assessed by using screen tape high-sensitivity DNA D1000 (Agilent Technologies). Sequencing was performed on a NextSeq 500 using a high-output single-end, 75 cycles, v2 Kit (Illumina Inc). Illumina novaSeq base call (BCL) files were converted in fastq file through bcl2fastq (version v2.20.0.422). Sequence reads were trimmed using trimgalore (v0.4.1) to remove adapter sequences and low-quality end bases (regions with average quality below Phred score 20). Alignment was performed with STAR 2.5.3a (Dobin et al., 2013) on mm10 reference. The expression levels of genes were determined with htseq-count 0.9.1\u00a0(Anders et al., 2015) by using mm10 Ensembl assembly (release 90). Genes having\u00a0<1\u00a0count\u00a0per million in at least four samples and those with a percentage of multi-mapping reads\u00a0>\u00a020% were filtered out. Paired t-test was performed to select differentially expressed genes in GAP-REW vs GAP-SCR conditions, setting 0.05 as p-value threshold. Gene Ontology term enrichment analyses were performed using GORILLA (Eden et al., 2009) by providing the list of genes expressed in at least one of the two conditions as background.\n\nRNA-Seq reads from WT myoblasts cultured in GM\u00a0(Legnini et al., 2017) were downloaded from GEO (GSE70389), preprocessed using Trimmomatic 0.32 software (Bolger et al., 2014), and aligned to human GRCh38 assembly using STAR 2.5.3a. The normalized read coverage tracks (.tdf files) were created and loaded on IGV genome browser (Robinson et al., 2011).\n\n### Statistical analyses\n\nThe statistical analyses were performed using Microsoft Excel (v16). The use of an unpaired or paired two-tailed Student\u2019s t-test is specified in each figure legend. For the data that did\u00a0not show a normal distribution, the Spearman\u2019s rank correlation test was used. When more than two conditions were compared, one-way Anova with Tukey\u2019s multiple comparison test was applied using Prism (v9). Statistical significance was set at p<0.05.\n",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "cba23e3c-c61b-4902-bef3-c6450782a825",
+      "submission_id": "2a7aca2d-bfd2-470c-9e92-fa32e0ee0d56",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeannie T Lee, Massachusetts General Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54782.sa1](https://doi.org/10.7554/eLife.54782.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Epigenetic regulation of Wnt7b expression by the cis-acting long noncoding RNA lnc-Rewind in muscle stem cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Senior Editor, a Reviewing Editor, and three reviewers. The following individual involved in review of your submission has agreed to reveal their identity: Ahmad S Khalil (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Editors. We will not be able to offer publication of the manuscript, at least not in the present form. You'll see that the reviewers have a number of criticisms and some feel that the data are of a preliminary quality that would need to be improved through additional experiments. While we cannot accept the current manuscript, we remain open to receiving a much revised version once you have had a chance to address the substantial concerns.\n\nSummary:\n\nLncRNAs serve as key regulators of gene expression and have recently been demonstrated to be involved in skeletal muscle development and disease. In this manuscript, Cipriano et al., characterize a novel lncRNA, lnc-Rewind, that acts a regulator of muscle stem cell proliferation through a cis-acting chromatin regulation mechanism. Using experiments with mouse cell lines and primary cells, they propose that lnc-Rewind is a conserved chromatin-associated lncRNA, whose expression is associated with muscle stem cell proliferation, that directly interacts with the methyltransferase G9a to mediate repression of Wnt7b.\n\nEssential revisions:\n\n1) Please provide direct evidence that lnc-Rewind interacts with the Wnt7b locus in cis. It would be ideal to perform a CHART/ChIRP/RAP experiment to determine if lnc-Rewind interacts with the Wnt7b locus. An RNA-DNA FISH would also be good to perform to determine the behavior of the RNA relative to the Wnt7b locus. Is the RNA confined to the locus or does it diffuse?\n\n2) It is also not clear that lnc-Rewind directly interacts with G9a. Biochemical data will be required to demonstrate an interaction.\n\n3) If lnc-Rewind upregulates 332 and downregulates 756 via Wnt7b derepression, an essential experiment would be to determine if Wnt7a overexpression in muscle cells results in a similar expression change.\n\n4) Reviewer 3 questions how important Lnc-Rewind is to muscle homeostasis and differentiation; and how important is Wnt7b for the observed phenotype? Additional evidence to support the claims would be essential.\n\n5) The percent of Lnc-Rewind precipitated with antibodies directed to G9a is very low. How much of the known G9a target Kcnq1ot1 precipitated in this assay? Is this background or a specific signal? More controls are required.\n\n6) Furthermore, the H3K9me3 ChIP shows small differences between GAP-SCR (control) and GAP-REW (experiment), and the regions that were analyzed are located about 17-28 kb away from Wnt7b. We agree with Reviewer 3 that a ChIP with anti G9a would have been more informative, and a 4C analysis might show a connection between regions 91-94 and the Wnt7b gene.\n",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "105d80a2-c365-4c55-a416-3693ba8ec425",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C1",
+      "claim": "Lnc-Rewind is expressed in murine muscle stem cells (MuSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we functionally characterize a novel chromatin-associated long noncoding RNA (lncRNA), Lnc-Rewind, which is expressed in murine MuSCs and conserved in human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that Lnc-Rewind is expressed in murine MuSCs, and this is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "3b500d75-eb45-4ea1-9ffc-3485d3b3736c",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C2",
+      "claim": "Lnc-Rewind is conserved in human.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we functionally characterize a novel chromatin-associated long noncoding RNA (lncRNA), Lnc-Rewind, which is expressed in murine MuSCs and conserved in human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conservation is demonstrated through sequence identity analysis and expression data in human myoblasts shown in Figure 1B and Figure 1\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "e78b2d00-d003-4b5e-a0e7-1d09288449d7",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C3",
+      "claim": "Lnc-Rewind acts as an epigenetic regulator of MuSC proliferation and expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, in mouse, Lnc-Rewind acts as an epigenetic regulator of MuSC proliferation and expansion by influencing the expression of skeletal muscle genes and several components of the WNT (Wingless-INT) signalling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU incorporation experiments (Figure 2E) and single myofiber assays (Figure 2F,G) showing reduced proliferation upon Lnc-Rewind depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "3c5655fb-9102-42c3-81db-bcc13d0ac17b",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C4",
+      "claim": "Lnc-Rewind influences the expression of skeletal muscle genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, in mouse, Lnc-Rewind acts as an epigenetic regulator of MuSC proliferation and expansion by influencing the expression of skeletal muscle genes and several components of the WNT (Wingless-INT) signalling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "RNA-seq analysis identified 1088 differentially expressed genes upon Lnc-Rewind depletion, with enrichment in muscle system processes (Figure 2A,B,C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "575661c8-44f6-4a4e-aa01-8befd4aaf6b8",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C5",
+      "claim": "Lnc-Rewind influences the expression of several components of the WNT signalling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, in mouse, Lnc-Rewind acts as an epigenetic regulator of MuSC proliferation and expansion by influencing the expression of skeletal muscle genes and several components of the WNT (Wingless-INT) signalling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "GO term enrichment analysis showed 'regulation of Wnt signalling pathway' as a significant category (p-value=5.44E-4), with Wnt7b identified as a target.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "5e4aa9bb-433a-49d2-bf38-d0f984102093",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C6",
+      "claim": "Wnt7b gene is a direct Lnc-Rewind target.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, we identified the nearby Wnt7b gene as a direct Lnc-Rewind target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA/DNA-FISH showing colocalization (Figure 4D), anti-correlated expression patterns (Figure 3B), and rescue experiments (Figure 3D,E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "f27d2c15-a6b4-4035-b2fe-837636e2415f",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C7",
+      "claim": "Lnc-Rewind interacts with the G9a histone lysine methyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Lnc-Rewind interacts with the G9a histone lysine methyltransferase and mediates the in cis repression of Wnt7b by H3K9me2 deposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by RIP (Figure 4\u2014figure supplement 1B), CLIP (Figure 4A), and RNA pulldown (Figure 4B) experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "bc12e73e-e51e-4368-ae3f-648dac4e9083",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C8",
+      "claim": "Lnc-Rewind mediates the in cis repression of Wnt7b by H3K9me2 deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Lnc-Rewind interacts with the G9a histone lysine methyltransferase and mediates the in cis repression of Wnt7b by H3K9me2 deposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ChIP experiments show decreased H3K9me2 levels at the Wnt7b locus upon Lnc-Rewind depletion (Figure 4E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "e7a16488-43b0-4e6f-8344-59e22afde653",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C9",
+      "claim": "Lnc-Rewind overlaps pre-Mirlet7c-2 (mmu-let7c-2) and pre-Mirlet7b (mmu-let7b) genomic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, we focused on Lnc-Rewind, which is a lncRNA enriched in proliferating myoblasts and overlapping pre-Mirlet7c-2 (mmu-let7c-2) and pre-Mirlet7b (mmu-let7b) genomic loci (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the UCSC visualization in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "1e7036c4-e9bd-46f4-9236-370408a13f9c",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C10",
+      "claim": "A conserved transcriptional start site (TSS) exists in the human syntenic locus (hs_Lnc-Rewind).",
+      "claim_type": "EXPLICIT",
+      "source": "An evolutionary conservation analysis performed by examining FANTOM5 datasets (Noguchi et al., 2017) revealed the existence of a conserved transcriptional start site (TSS) localized in the human (hs_Lnc-Rewind) syntenic locus (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FANTOM5 CAGE data analysis and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "0aabd3fe-d0d9-4a45-9c96-e84db983b8eb",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C11",
+      "claim": "The human and murine Lnc-Rewind loci exhibit an overall ~46% of (exonic and intronic) sequence identity.",
+      "claim_type": "EXPLICIT",
+      "source": "This region exhibits an overall ~46% of (exonic and intronic) sequence identity (Figure 1\u2014figure supplement 1A), which is relatively high for lncRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence alignment analysis is presented in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "930f23ea-8540-4888-966b-79c1811f3174",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C12",
+      "claim": "The human syntenic region is actively transcribed in proliferating human myoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RNA-seq (Legnini et al., 2017; Figure 1B) and semiquantitative (sq)RT-PCR analyses (Figure 1\u2014figure supplement 1B) confirmed that, in proliferating human myoblasts, this region is actively transcribed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RNA-seq data (Figure 1B) and sqRT-PCR (Figure 1\u2014figure supplement 1B).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "200f5c8b-b5eb-49cd-b72c-0b6bded6cc17",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C13",
+      "claim": "Spliced and unspliced Lnc-Rewind isoforms originate from the mouse and human loci.",
+      "claim_type": "EXPLICIT",
+      "source": "To note, the distribution of the read coverage in both mouse and human revealed the existence of spliced and unspliced Lnc-Rewind isoforms originating from the two loci (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RNA-seq read coverage patterns in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "20884d36-f0b7-403d-81b3-98389210cb6a",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C14",
+      "claim": "Lnc-Rewind expression is high in proliferating C2C12 and MuSC-derived myoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative qRT-PCR analysis revealed that Lnc-Rewind expression is high in proliferating (GM) C2C12 and MuSC-derived myoblasts and significantly decreased in fully differentiated (DM) cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data is shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "2efe1071-8c79-40db-a6f2-a25b06a30950",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C15",
+      "claim": "Lnc-Rewind expression is significantly decreased in fully differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative qRT-PCR analysis revealed that Lnc-Rewind expression is high in proliferating (GM) C2C12 and MuSC-derived myoblasts and significantly decreased in fully differentiated (DM) cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data is shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "22ff05a2-459b-4537-9647-731df485c7cd",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C16",
+      "claim": "Both spliced and unspliced Lnc-Rewind isoforms localize in the nuclear compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcellular fractionation of cytoplasmic (Cyt) and nuclear (Nuc) fractions showed that both spliced and unspliced isoforms localizes in the nuclear compartment (Figure 1D, Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Subcellular fractionation followed by RT-PCR is shown in Figure 1D and Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "f7aaa650-737d-4d7e-ab10-25c2f5e36248",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C17",
+      "claim": "Lnc-Rewind is specifically enriched to discrete chromatin foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, RNA fluorescence in situ hybridization (FISH) experiments performed in both MuSC-derived myoblasts (Figure 1E,F, Figure 1\u2014figure supplement 1F) and C2C12 cells (Figure 1\u2014figure supplement 1G) confirmed the nuclear localization of Lnc-Rewind and further revealed its specific enrichment to discrete chromatin foci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA-FISH images are shown in Figure 1E,F, Figure 1\u2014figure supplement 1F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "bbfd11ca-708b-4c39-b84d-1b7a3a648509",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C18",
+      "claim": "Lnc-Rewind depletion led to the identification of 1088 differentially expressed genes (DEGs).",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we obtained ~70% reduction of Lnc-Rewind expression (Figure 2\u2014figure supplement 1A, lower panel), which led to the identification of a set of 1088 differentially expressed genes (DEGs) (p<0.05, GAP-SCR vs GAP-REW).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "RNA-seq analysis identified DEGs shown in Figure 2A and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "886357e1-6518-457c-8b56-dccb26cccc42",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C19",
+      "claim": "Of the 1088 DEGs, 332 were upregulated and 756 downregulated upon Lnc-Rewind depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 332 were upregulated and 756 downregulated in GAP-REW as compared to the GAP-SCR condition (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmap in Figure 2A and detailed in Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "1fcb2241-7d16-43ff-b54a-b81a3c105d1f",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C20",
+      "claim": "DEGs were mostly associated with muscle cell physiology (skeletal muscle contraction, p-value=4.23E-6).",
+      "claim_type": "EXPLICIT",
+      "source": "It emerged that DEGs were mostly associated with muscle cell physiology (skeletal muscle contraction, p-value=4.23E-6) (Figure 2B, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "GO term enrichment analysis results are shown in Figure 2B and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "7239f287-3853-4882-9222-31b2f85aec01",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C21",
+      "claim": "Lnc-Rewind depletion results in concomitant downregulation of Mirlet7b and Mirlet7c-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the analysis of Lnc-Rewind generated miRNAs (Mirlet7b and Mirlet7c-2) revealed that, although the lncRNA depletion results on their concomitant downregulation (Figure 2\u2014figure supplement 1D), none of the upregulated transcripts that are also putative Mirlet7b and Mirlet7c-2 targets (~1% of the upregulated genes) (Figure 2\u2014figure supplement 1E), belong to any of the GO enriched categories.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data for miRNAs is shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "d3eb4cd6-89d3-40da-bdbf-8f4f573ec1b6",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C22",
+      "claim": "Genes encoding for different proteins involved in muscle contraction, such as myosins (i.e. Myh8, Myl1, Myh3) and troponins (i.e. Tnnt2, Tnnt1), were downregulated upon Lnc-Rewind depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, genes encoding for different proteins involved in muscle contraction, such as myosins (i.e. Myh8, Myl1, Myh3) and troponins (i.e. Tnnt2, Tnnt1) (Figure 2C), were downregulated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Heatmap showing downregulation of these genes is presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "8a8c1e22-7402-49a7-ad33-85180a1df3de",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C23",
+      "claim": "Lnc-Rewind-depleted cells express lower levels of MyHC protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Lnc-Rewind-depleted cells express lower levels of MyHC protein (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis is shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "386c94ec-945c-4886-9f9a-940595f259b4",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C24",
+      "claim": "Lnc-Rewind depletion results in a decreased number of MuSC-derived myoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, morphological evaluation highlighted a decreased number of MuSC-derived myoblasts after Lnc-Rewind depletion (Figure 2\u2014figure supplement 1F), suggesting a primary defect in MuSC proliferation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cell counting data is shown in Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "f3fa4ef8-563d-4c1b-8c83-8274385d20af",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C25",
+      "claim": "EdU incorporation experiments revealed a striking reduction of proliferating MuSC-derived myoblasts upon depletion of Lnc-Rewind.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this hypothesis, EdU incorporation experiments revealed a striking reduction of proliferating MuSC-derived myoblasts upon depletion of Lnc-Rewind (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EdU incorporation assay results are shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "f43bcffd-b463-4468-8ebf-2cde33fda191",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C26",
+      "claim": "The Ccnd3 gene encoding for Cyclin D3 was significantly downregulated in Lnc-Rewind-depleted cells at both transcript and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the Ccnd3 gene encoding for Cyclin D3, a cyclin specifically involved in promoting transition from G1 to S phase, was significantly downregulated in Lnc-Rewind-depleted cells at both transcript (Figure 2\u2014source data 1) and protein levels (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA-seq data (Figure 2\u2014source data 1) and Western blot (Figure 2D) show downregulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "e3db4741-036d-45e9-9f27-3c0337768b75",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C27",
+      "claim": "MuSCs on single myofibres cultured for 96 hr gave rise to a decreased percentage of proliferating (Pax7+/Ki67+) progeny upon Lnc-Rewind downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In further support of this, MuSCs on single myofibres cultured for 96 hr gave rise to a decreased percentage of proliferating (Pax7+/Ki67+) progeny upon Lnc-Rewind downregulation (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence quantification on single myofibres is shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "1d0c4dad-7ca9-47f8-bd13-45aa7b51a2ed",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C28",
+      "claim": "Quantification of Pax7+-derived clusters, pairs, or single MuSCs within each myofibre revealed a reduction of activated pairs and clusters upon Lnc-Rewind depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, quantification of the number of Pax7+-derived clusters (composed of more than two nuclei), pairs (composed of two nuclei), or single MuSCs within each myofibre revealed a reduction of activated pairs and clusters upon Lnc-Rewind depletion (Figure 2G), suggesting a role for the lncRNA in sustaining MuSC activation and expansion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantification data is shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "c1b9c7df-b808-4b34-a1b9-5ec5c7be2458",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C29",
+      "claim": "Wnt7b transcriptional locus localizes only 100 kb upstream of Lnc-Rewind gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, Wnt7b transcriptional locus localizes only 100 kb upstream Lnc-Rewind gene (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genomic location is shown in the UCSC visualization in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "389c290b-5771-4d83-a592-6ded725c3b5c",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C30",
+      "claim": "Wnt7b expression was found upregulated at both transcript and protein levels upon Lnc-Rewind depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, we found Wnt7b, which expression was found upregulated at both transcript and protein levels (Figure 3\u2014figure supplement 1A and Figure 2\u2014source data 1), suggesting a role for Lnc-Rewind as a repressor of Wnt7b expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR and Western blot data are shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "6912ce05-6e07-46d0-b4a7-6dcd3596d647",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C31",
+      "claim": "Lnc-Rewind and Wnt7b transcripts display a distinctive anti-correlated expression in FANTOM5 CAGE profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the inspection of the TSS usage among all the available murine samples (n = 1196, Figure 3\u2014source data 1) revealed a distinctive anti-correlated expression between Lnc-Rewind and Wnt7b transcripts (Figure 3B, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "TSS usage analysis is shown in Figure 3B with Spearman correlation coefficient R = -0.68.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "0cc7ec0e-6457-4e95-a042-7acc7eb07dde",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C32",
+      "claim": "Other Lnc-Rewind-neighbouring genes, such as Cdpf1 and Atxn10, displayed no specific expression correlation with Lnc-Rewind.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the other Lnc-Rewind-neighbouring genes, such as Cdpf1 and Atxn10, displayed no specific expression correlation (Figure 3B, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "TSS usage analysis is shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "e3dbfe55-e6de-4142-8f08-cb83c4e31cac",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C33",
+      "claim": "Wnt7b was the only gene that was significantly upregulated upon Lnc-Rewind depletion with a concomitant increase in WNT7b protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, Wnt7b was the only gene that was significantly upregulated upon the lncRNA depletion with a concomitant increase in WNT7b protein levels (Figure 3C, Figure 3\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data for neighboring genes is shown in Figure 3C, and protein data in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "35e3b456-0414-4679-a158-094facd099d2",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C34",
+      "claim": "Rescuing Wnt7b repression promoted an increase in the percentage of proliferating MuSC-derived myoblasts towards control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, rescuing Wnt7b repression promoted an increase in the percentage of proliferating MuSC-derived myoblasts towards control levels (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EdU incorporation assay with rescue experiment is shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "31fb8a16-ff06-49fd-8cde-b9805a936e55",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C35",
+      "claim": "Restoration of Wnt7b repression on single myofibres was sufficient to restore the capacity of the associated MuSCs to properly activate and proliferate ex vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, restoration of Wnt7b repression on single myofibres was sufficient to restore the capacity of the associated MuSCs to properly activate and proliferate ex vivo (Figure 3E), as assessed by the quantification of the number of Pax7+ MuSCs and the percentage of single MuSCs, and derived clusters and pairs, within each myofibre (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Single myofibre rescue experiment data is shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "762ca994-14b5-46ec-9606-7c25a1131bf2",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C36",
+      "claim": "EZH2 is mostly expressed in proliferating MuSCs and becomes downregulated during muscle differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both EZH2 (Caretti et al., 2004) and G9a (Ling et al., 2012) are mostly expressed in proliferating MuSCs and become downregulated during muscle differentiation (Figure 4\u2014figure supplement 1A), similarly to Lnc-Rewind (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot data is shown in Figure 4\u2014figure supplement 1A, and this is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "d37ed48a-8d7f-4ea6-92e5-e0494e9d8a06",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C37",
+      "claim": "G9a is mostly expressed in proliferating MuSCs and becomes downregulated during muscle differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both EZH2 (Caretti et al., 2004) and G9a (Ling et al., 2012) are mostly expressed in proliferating MuSCs and become downregulated during muscle differentiation (Figure 4\u2014figure supplement 1A), similarly to Lnc-Rewind (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot data is shown in Figure 4\u2014figure supplement 1A, and this is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "ff3f6785-7b58-4c25-876a-8a5d1f2c22a2",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C38",
+      "claim": "EZH2 has been previously reported to be recruited to specific genomic loci through the interaction with different lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both EZH2 (Rinn et al., 2007; Zhao et al., 2008) and G9a (Nagano et al., 2008; Pandey et al., 2008) have been previously reported to be recruited to specific genomic loci through the interaction with different lncRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "06f89147-8d54-489d-a17c-11ba11410d58",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C39",
+      "claim": "G9a has been previously reported to be recruited to specific genomic loci through the interaction with different lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both EZH2 (Rinn et al., 2007; Zhao et al., 2008) and G9a (Nagano et al., 2008; Pandey et al., 2008) have been previously reported to be recruited to specific genomic loci through the interaction with different lncRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "060a6b6a-5318-46c1-883e-8e75bdc90b9f",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C40",
+      "claim": "Lnc-Rewind transcript was efficiently retrieved only in the G9a native RIP, while it was almost undetectable in EZH2 IP.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that, although both G9a and EZH2 were successfully immunoprecipitated (Figure 4\u2014figure supplement 1B, upper panel), Lnc-Rewind transcript was efficiently retrieved only in the G9a native RIP, while it was almost undetectable in EZH2 IP (Figure 4\u2014figure supplement 1B, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RIP experiment results are shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "fe358645-bdcb-4610-91d0-d6173442684c",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C41",
+      "claim": "The levels of Lnc-Rewind RNA obtained in the G9a IP fraction were similar to the ones of the Kcnq1ot1 lncRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "To note, the levels of RNA obtained in the specific IP fraction were similar to the ones of the Kcnq1ot1 lncRNA, which was previously demonstrated to be physically associated with both G9a and Ezh2 proteins (Pandey et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is shown in Figure 4\u2014figure supplement 1B and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "c9c8ee18-bbc7-46de-871f-4116756dfabf",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C42",
+      "claim": "G9a-crosslinked immunoprecipitation (CLIP) assay revealed the presence of Lnc-Rewind in the G9a immunoprecipitated samples.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, the G9a-crosslinked immunoprecipitation (CLIP) assay (Figure 4A) revealed the presence of Lnc-Rewind in the G9a immunoprecipitated samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "CLIP experiment results are shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "603c10f1-7fed-461a-9e43-9e09ea750562",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C43",
+      "claim": "Endogenous Lnc-Rewind RNA pulldown revealed the presence of G9a in the lncRNA-precipitated fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "As a further validation, endogenous Lnc-Rewind RNA pulldown (Figure 4B) revealed the presence of G9a in the lncRNA-precipitated fraction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA pulldown experiment results are shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "a7fda344-02c1-4460-a1f4-494a30044493",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C44",
+      "claim": "Depletion of G9a by siRNA-mediated knockdown in MuSC-derived myoblasts induced Wnt7b upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, depletion of G9a by siRNA-mediated knockdown in MuSC-derived myoblasts induced Wnt7b upregulation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data showing Wnt7b upregulation upon G9a knockdown is shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "0de58dee-9f72-41db-8c6c-1d1fe8ff95ac",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C45",
+      "claim": "RNA-DNA-FISH showed an overlap between Lnc-Rewind (RNA) and Wnt7b (DNA) localization.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether Lnc-Rewind and G9a binds the Wnt7b locus in vivo, we applied RNA-DNA-FISH (Figure 4D) and a chromatin immunoprecipitation (ChIP) assay (Figure 4\u2014figure supplement 1C), respectively. In agreement with our hypothesis, we found an overlap between Lnc-Rewind (RNA) and Wnt7b (DNA) localization (Figure 4D) and an intriguing enrichment of the methyltransferase in the Wnt7b upstream regions (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA-DNA-FISH results are shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "78c1d7c8-ca5d-4b29-b436-317001487c24",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C46",
+      "claim": "ChIP assay showed enrichment of G9a in the Wnt7b upstream regions.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether Lnc-Rewind and G9a binds the Wnt7b locus in vivo, we applied RNA-DNA-FISH (Figure 4D) and a chromatin immunoprecipitation (ChIP) assay (Figure 4\u2014figure supplement 1C), respectively. In agreement with our hypothesis, we found an overlap between Lnc-Rewind (RNA) and Wnt7b (DNA) localization (Figure 4D) and an intriguing enrichment of the methyltransferase in the Wnt7b upstream regions (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP experiment results are shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "0bd68833-0f05-4158-846a-3964eab12705",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C47",
+      "claim": "H3K9me2 deposition decreased upon Lnc-Rewind knockdown at the Wnt7b locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role of Lnc-Rewind in the G9a-mediated epigenetic repression of Wnt7b, quantification of the H3K9me2 mark on the G9a-occupied genomic regions (Figure 4E, upper panel) showed that H3K9me2 deposition decreased upon Lnc-Rewind knockdown, compared to the GAP-SCR control (Figure 4E, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR data for H3K9me2 is shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "9b37925e-2f3e-4457-8c38-80099e45b121",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C48",
+      "claim": "Combined Lnc-Rewind (RNA)/Wnt7b (DNA) FISH/G9a (PROTEIN) immunostaining showed the colocalization of both G9a and Lnc-Rewind on Wnt7b genomic locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a combined Lnc-Rewind (RNA)/Wnt7b (DNA) FISH/G9a (PROTEIN) immunostaining approach showed the colocalization of both G9a and Lnc-Rewind on Wnt7b genomic locus (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Combined FISH/immunostaining results are shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "cdd44d3c-fee3-4152-8bf3-e6d2a1c25df2",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C49",
+      "claim": "Lnc-Rewind represses Wnt7b gene transcription by mediating the specific G9a-dependent H3K9me2 deposition on its locus during the proliferation phase of satellite cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, our results support a mechanism of action through which Lnc-Rewind mediates G9a recruitment on Wnt7b locus to silence it through the deposition of the repressive mark H3K9me2 during the proliferation phase of satellite cells (Figure 5B), thus providing unique insights on the contribution of nuclear-enriched lncRNAs in myogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This mechanism is supported by multiple experiments (RIP, CLIP, RNA pulldown, ChIP) and illustrated in the model in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "3e10dc0e-a4e2-4634-8131-fb5d70dbe825",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C50",
+      "claim": "The majority of the genomic content is pervasively transcribed into a diverse range of regulatory short and long non-protein coding RNAs (ncRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptional output of all organisms was recently found to be more complex than originally imagined, as the majority of the genomic content is pervasively transcribed into a diverse range of regulatory short and long non-protein coding RNAs (ncRNAs) (Abugessaisa et al., 2017; Carninci et al., 2005; Cipriano and Ballarino, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "bb6160ea-1540-4371-880d-1137990d8d69",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C51",
+      "claim": "Long noncoding RNAs (lncRNAs) are operationally defined as transcripts longer than 200 nucleotides, which display little or no protein coding potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, long noncoding RNAs (lncRNAs) are operationally defined as transcripts longer than 200 nucleotides, which display little or no protein coding potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "15ab662a-0904-4689-b018-5cc6ce307b87",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C52",
+      "claim": "Numerous studies have demonstrated lncRNAs' contribution to many biological processes, including pluripotency, cell differentiation, and organism development.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the initial discovery, numerous studies have demonstrated their contribution to many biological processes, including pluripotency, cell differentiation, and organism development (Ballarino et al., 2016; Fatica and Bozzoni, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "0fc50196-e16c-4a74-a488-c29e140c7ae8",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C53",
+      "claim": "LncRNAs were demonstrated to regulate gene expression at transcriptional, post-transcriptional, or translational level.",
+      "claim_type": "EXPLICIT",
+      "source": "LncRNAs were demonstrated to regulate gene expression at transcriptional, post-transcriptional, or translational level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "877e6b80-ab77-45e6-8f59-ad2217636a2d",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C54",
+      "claim": "The function and the mechanisms of action of lncRNAs are different and primarily depend on their (nuclear or cytoplasmic) subcellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The function and the mechanisms of action are different and primarily depend on their (nuclear or cytoplasmic) subcellular localization (Carlevaro et al., 2019; Rinn and Chang, 2012; Ulitsky and Bartel, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "4c9e9031-e4b7-4a36-88ae-d5f64425deb4",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C55",
+      "claim": "A large number of lncRNAs localize inside the nucleus, either enriched on the chromatin or restricted to specific nucleoplasmic foci.",
+      "claim_type": "EXPLICIT",
+      "source": "A large number of lncRNAs localize inside the nucleus, either enriched on the chromatin or restricted to specific nucleoplasmic foci (Engreitz et al., 2016; Sun et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "3d5c76ac-1111-4acd-a1b3-eab1e8693fd8",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C56",
+      "claim": "Nuclear lncRNAs have the capacity to control the expression of neighbouring (in cis) or distant (in trans) genes by regulating their chromatin environment and also acting as structural scaffolds of nuclear domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In this location, they have the capacity to control the expression of neighbouring (in cis) or distant (in trans) genes by regulating their chromatin environment and also acting as structural scaffolds of nuclear domains (Kopp and Mendell, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "3e88728d-0639-4b5b-8de7-351db6ae1972",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C57",
+      "claim": "Among the most important functions proposed for cis-acting lncRNAs, there is their ability to regulate transcription by recruiting repressing or activating epigenetic complexes to specific genomic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the most important functions proposed for cis-acting lncRNAs, there is their ability to regulate transcription by recruiting repressing or activating epigenetic complexes to specific genomic loci (Huarte et al., 2010; Maamar et al., 2013; McHugh et al., 2015; Wang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "ff223a8d-7866-4724-910f-8a0ce92c5ee9",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C58",
+      "claim": "High-throughput transcriptome sequencing (RNA-seq) and differential expression analyses have facilitated the discovery of several lncRNAs that are modulated during the different stages of skeletal myogenesis and dysregulated in muscle disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In muscle, high-throughput transcriptome sequencing (RNA-seq) and differential expression analyses have facilitated the discovery of several lncRNAs that are modulated during the different stages of skeletal myogenesis and dysregulated in muscle disorders (Ballarino et al., 2016; Lu et al., 2013; Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "1fd145ce-1c56-4481-b5b4-16c8d1bea72c",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C59",
+      "claim": "The lncRNA Lnc-mg has been shown to regulate MuSC differentiation by acting as a sponge for Mir125b in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cytoplasm, the lncRNA Lnc-mg has been shown to regulate MuSC differentiation by acting as a sponge for Mir125b (Zhu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "a0ee4ab2-157f-433a-9f89-89729b0b43e7",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C60",
+      "claim": "The lncRNA Dubr was found to promote satellite cell differentiation by recruiting Dnmts to the developmental pluripotency-associated 2 (Dppa2) promoter, leading to CpG hypermethylation and silencing in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the nucleus, the lncRNA Dubr was found to promote satellite cell differentiation by recruiting Dnmts to the developmental pluripotency-associated 2 (Dppa2) promoter, leading to CpG hypermethylation and silencing (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "2d184dc1-cd16-4888-bed7-41ea6d9af17e",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C61",
+      "claim": "The WNT transduction cascade has been demonstrated to act as a conserved regulator of stem cell function via canonical (\u03b2-CATENIN) and non-canonical (planar cell polarity and calcium) signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "The WNT transduction cascade has been demonstrated to act as a conserved regulator of stem cell function via canonical (\u03b2-CATENIN) and non-canonical (planar cell polarity and calcium) signalling, and dysregulation of its activity has been reported in various developmental disorders and diseases (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "88203e72-a7da-45f4-8b2c-a0a60075d333",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C62",
+      "claim": "Dysregulation of WNT signalling activity has been reported in various developmental disorders and diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The WNT transduction cascade has been demonstrated to act as a conserved regulator of stem cell function via canonical (\u03b2-CATENIN) and non-canonical (planar cell polarity and calcium) signalling, and dysregulation of its activity has been reported in various developmental disorders and diseases (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "53c05cf2-d893-4c4c-84ec-03f8cd1c22c0",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C63",
+      "claim": "In the muscle stem cell niche, WNT signalling is key in coordinating MuSC transitions from quiescence, proliferation, commitment, and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the muscle stem cell niche, WNT signalling is key in coordinating MuSC transitions from quiescence, proliferation, commitment, and differentiation (Brack et al., 2008; Eliazer et al., 2019; Lacour et al., 2017; Le Grand et al., 2009; Parisi et al., 2015; Rudolf et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "ae84c67c-be74-4517-a715-e0e71f156428",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C64",
+      "claim": "Different works have shown that lncRNAs can modulate the WNT pathway at both transcriptional and post-transcriptional levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this central role, the WNT pathway is supervised by several mechanisms and different works have shown that lncRNAs can modulate it at both transcriptional and post-transcriptional levels (Zarkou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "d361c3e6-8e29-4881-8a83-fb046876305b",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C65",
+      "claim": "Most of the cis-acting chromatin-associated lncRNA function occurs by recruiting and guiding chromatin modifiers to target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Several works accumulated so far indicate that most of the cis-acting chromatin-associated lncRNA function occurs by recruiting and guiding chromatin modifiers to target genes (Batista and Chang, 2013; Guttman and Rinn, 2012; Khalil et al., 2009; Rinn and Chang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "3f6664a7-4081-48cc-820c-8d8c29b59fd2",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C66",
+      "claim": "EZH2 catalyses the deposition of H3K27me3 on target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of our data showing a negative correlation of Wnt7b expression by Lnc-Rewind, we focused our attention on the two most known repressive lysine methyltransferases, EZH2 and G9a, which catalyse the deposition of H3K27me3 and H3K9me1/2 on target genes, respectively (Mozzetta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "d2c1811a-667f-4a26-ae10-3c6eccfea33d",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C67",
+      "claim": "G9a catalyses the deposition of H3K9me1/2 on target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of our data showing a negative correlation of Wnt7b expression by Lnc-Rewind, we focused our attention on the two most known repressive lysine methyltransferases, EZH2 and G9a, which catalyse the deposition of H3K27me3 and H3K9me1/2 on target genes, respectively (Mozzetta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "34af4663-bc83-454b-bda9-f1498ceef8cc",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C68",
+      "claim": "Wnt signalling represents one of the pathways that has a major role in myogenesis as it is essential for proper MuSC self-renewal and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt signalling represents one of the pathways that has a major role in myogenesis as it is essential for proper MuSC self-renewal and differentiation (von Maltzahn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "2754789a-50e7-4c3f-8729-2b58097ef9c2",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C69",
+      "claim": "A correct timing of Wnt signalling activation is crucial to obtain proper tissue repair.",
+      "claim_type": "EXPLICIT",
+      "source": "A correct timing of Wnt signalling activation is crucial to obtain proper tissue repair, and its aberrant activity causes a wide range of pathologies (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "5e45c4d9-4572-4dd8-9715-79d847b43f43",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C70",
+      "claim": "Aberrant Wnt signalling activity causes a wide range of pathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "A correct timing of Wnt signalling activation is crucial to obtain proper tissue repair, and its aberrant activity causes a wide range of pathologies (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "f11f81b8-b0f4-43bd-a284-c31531c671f8",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C71",
+      "claim": "Recent studies show that lncRNAs can modulate Wnt pathway by affecting gene expression through different mechanisms, from transcriptional to post-transcriptional level.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies show that lncRNAs can modulate Wnt pathway by affecting gene expression through different mechanisms, from transcriptional to post-transcriptional level (Ong et al., 2017; Shen et al., 2017; Zarkou et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "d54631d1-3b2f-4086-9bc5-c6eacc15a8e4",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C72",
+      "claim": "LncRNAs were found interacting with transcription factors and chromatin modifiers altering Wnt signalling pathway in different tissues and in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lncRNAs were found interacting with transcription factors (Desideri et al., 2020) and chromatin modifiers (Hu et al., 2015) altering Wnt signalling pathway in different tissues and in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "17b094ce-63a3-4b4f-a06d-03c2340b7057",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C73",
+      "claim": "The slowness in the splicing process could contribute to the maintenance of Lnc-Rewind at its own site of transcription improving its retention on the chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The slowness in the splicing process could contribute to the maintenance of Lnc-Rewind at its own site of transcription improving its retention on the chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observation of unspliced isoforms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "adec52a7-66d7-4988-8264-76f24d3edaa7",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C74",
+      "claim": "Recent evidence indicates that the presence of introns, and their distinct processing, may represent a way to regulate the nuclear localization and function of many lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, recent evidence indicates that the presence of introns, and their distinct processing, may represent a way to regulate the nuclear localization and function of many lncRNAs (Guo et al., 2020; Zuckerman and Ulitsky, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "4e1b9ea2-0a9a-45e3-9178-527d4cd89cf5",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C75",
+      "claim": "The repressive action of Lnc-Rewind on Wnt7b locus could have a more general role, not only in satellite cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show that Lnc-Rewind and Wnt7b expressions are anti-correlated in different cell types (Figure 3B), suggesting that the repressive action of Lnc-Rewind on Wnt7b locus could have a more general role, not only in satellite cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the anti-correlation observed across multiple cell types in FANTOM5 data (Figure 3B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "2fddc297-2780-44a3-b830-102f8ee9960a",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C76",
+      "claim": "It is well-accepted that the majority of the cis-acting chromatin-associated lncRNAs function by recruiting and targeting chromatin modifiers to specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well-accepted that the majority of the cis-acting chromatin-associated lncRNAs function by recruiting and targeting chromatin modifiers to specific genes (Batista and Chang, 2013; Guttman and Rinn, 2012; Khalil et al., 2009; Rinn and Chang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to multiple studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "6740ac43-b1b6-4c97-b756-814c537b5a48",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C77",
+      "claim": "Low \u03b2-catenin activity is fundamental during early phases of muscle regeneration to allow MuSC activation and subsequent differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, it has been shown that low \u03b2-catenin activity is fundamental during early phases of muscle regeneration to allow MuSC activation and subsequent differentiation (Figeac and Zammit, 2015; Parisi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "0a231e07-c5e9-4ba7-bdaf-5753465cb4b9",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C78",
+      "claim": "Satellite cells isolated from mice with constitutive active Wnt/\u03b2-catenin signalling display an early growth arrest and premature differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, satellite cells isolated from mice with constitutive active Wnt/\u03b2-catenin signalling display an early growth arrest and premature differentiation (Rudolf et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "f424e2c2-d291-457f-bac8-c8ec3fcbfd70",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C79",
+      "claim": "The cell environment, together with the timing and the proper activation of Wnt signalling pathway, is fundamental for muscle homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "All these data point out that the cell environment, together with the timing and the proper activation of Wnt signalling pathway, is fundamental for muscle homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited studies and the authors' data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "b1de65d9-4368-4e0e-b157-7e019bd87d1c",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C80",
+      "claim": "The fact that in MuSCs, Wnt7b gene is maintained at very low levels and that it is the latest Wnt ligand induced after muscle injury suggests the necessity to keep it repressed to allow MuSC expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that in MuSCs, Wnt7b gene is maintained at very low levels and that it is the latest Wnt ligand induced after muscle injury (Polesskaya et al., 2003) suggests the necessity to keep it repressed to allow MuSC expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of low Wnt7b levels and its late induction, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "d684ff6e-3c1f-4fe4-a60b-c5c6e5a4e6e6",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C81",
+      "claim": "Aberrant, cell-autonomous activation of Wnt7b expression upon Lnc-Rewind depletion causes defects in MuSC expansion and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, here we show that aberrant, cell-autonomous activation of Wnt7b expression upon Lnc-Rewind depletion causes defects in MuSC expansion and activation (Figure 2E\u2013G) that are abolished if the expression of Wnt7b is rescued to physiological levels (Figure 3D,E), emphasizing that Lnc-Rewind-mediated repression of Wnt7b is key in ensuring MuSC activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by depletion and rescue experiments shown in Figures 2E-G and 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "78b6bb47-ee70-4593-b719-edad52edc7a7",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C82",
+      "claim": "Lnc-Rewind-mediated repression of Wnt7b is key in ensuring MuSC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, here we show that aberrant, cell-autonomous activation of Wnt7b expression upon Lnc-Rewind depletion causes defects in MuSC expansion and activation (Figure 2E\u2013G) that are abolished if the expression of Wnt7b is rescued to physiological levels (Figure 3D,E), emphasizing that Lnc-Rewind-mediated repression of Wnt7b is key in ensuring MuSC activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiments shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "a471b9fa-5c04-42de-92e4-9ef394302eb2",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C83",
+      "claim": "Lu and colleagues demonstrated that the YY1-associated muscle lincRNA (Yam-1) inhibits skeletal myogenesis through modulation of Mir715 expression, which in turn targets Wnt7b mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This is nicely supported by a previous study demonstrating that, in the cytoplasm, a Wnt7b/lncRNA circuitry controls the proliferation of C2C12 myoblasts. Specifically, Lu and colleagues demonstrated that the YY1-associated muscle lincRNA (Yam-1) inhibits skeletal myogenesis through modulation of Mir715 expression, which in turn targets Wnt7b mRNA (Lu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "e356fa26-a08e-43a6-904e-7b9ef701ee80",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C84",
+      "claim": "Skeletal muscle possesses an outstanding capacity to regenerate upon injury due to the adult muscle stem cell (MuSC) activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle possesses an outstanding capacity to regenerate upon injury due to the adult muscle stem cell (MuSC) activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "e2cd1d78-9050-48bb-bb20-81ecafdb61c5",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C85",
+      "claim": "The ability of skeletal muscle to regenerate requires the proper balance between MuSC expansion and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability requires the proper balance between MuSC expansion and differentiation, which is critical for muscle homeostasis and contributes, if deregulated, to muscle diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "3d7f6c29-6cc6-4b67-89bb-3fb392d27060",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C86",
+      "claim": "The proper balance between MuSC expansion and differentiation is critical for muscle homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability requires the proper balance between MuSC expansion and differentiation, which is critical for muscle homeostasis and contributes, if deregulated, to muscle diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "df9b08aa-536e-4290-9b25-d7e69aa7cf56",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C87",
+      "claim": "Deregulation of the balance between MuSC expansion and differentiation contributes to muscle diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability requires the proper balance between MuSC expansion and differentiation, which is critical for muscle homeostasis and contributes, if deregulated, to muscle diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "4cac324b-5dde-4776-ab36-160475db3ed4",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C88",
+      "claim": "Lnc-Rewind is a chromatin-associated long noncoding RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we functionally characterize a novel chromatin-associated long noncoding RNA (lncRNA), Lnc-Rewind, which is expressed in murine MuSCs and conserved in human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by subcellular fractionation (Figure 1D) and RNA-FISH (Figure 1E,F) showing nuclear and chromatin enrichment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "e2909c51-1171-44b3-9b02-ee87c58b6a57",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C89",
+      "claim": "~70% reduction of Lnc-Rewind expression was obtained by LNA GapmeR treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we obtained ~70% reduction of Lnc-Rewind expression (Figure 2\u2014figure supplement 1A, lower panel), which led to the identification of a set of 1088 differentially expressed genes (DEGs) (p<0.05, GAP-SCR vs GAP-REW).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR quantification is shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "52df39ac-39c9-4b18-8ede-4d83bd3bdd23",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C90",
+      "claim": "The GAP-SCR and GAP-REW experimental groups displayed a clear different pattern of gene expression in PCA analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A principal component analysis (PCA) performed on the DEG datasets revealed that the GAP-SCR and GAP-REW experimental groups displayed a clear different pattern of gene expression since they occupy different regions of the PCA plot (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PCA plot is shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "1737b1f9-38b3-48c2-9eff-448e1e036677",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C91",
+      "claim": "'Muscle system process' (p-value=3.45E-7) and 'striated muscle contraction' (p-value=4.63E-7) were the most significantly enriched GO terms.",
+      "claim_type": "EXPLICIT",
+      "source": "Both 'muscle system process' (p-value=3.45E-7) and 'striated muscle contraction' (p-value=4.63E-7) were the most significantly enriched GO terms (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "GO enrichment analysis results are shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "3a32e50f-95da-47ea-9332-5b9cb867e3a4",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C92",
+      "claim": "None of the upregulated transcripts that are also putative Mirlet7b and Mirlet7c-2 targets belong to any of the GO enriched categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the analysis of Lnc-Rewind generated miRNAs (Mirlet7b and Mirlet7c-2) revealed that, although the lncRNA depletion results on their concomitant downregulation (Figure 2\u2014figure supplement 1D), none of the upregulated transcripts that are also putative Mirlet7b and Mirlet7c-2 targets (~1% of the upregulated genes) (Figure 2\u2014figure supplement 1E), belong to any of the GO enriched categories.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Target prediction analysis is shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "f2384502-2b2f-4ff2-8bb2-f7ac75964b4b",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C93",
+      "claim": "The defects in myogenic capacity might result from a decreased cell density that normally leads to a lower rate of myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This led us to hypothesize that the defects in myogenic capacity (Figure 2C,D, Figure 2\u2014figure supplement 1F) might result by a decreased cell density that normally leads to a lower rate of myogenic differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the observation of decreased cell numbers (Figure 2\u2014figure supplement 1F).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "482dd006-788e-4085-b44c-8decdc1640e3",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C94",
+      "claim": "Cyclin D3 is a cyclin specifically involved in promoting transition from G1 to S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the Ccnd3 gene encoding for Cyclin D3, a cyclin specifically involved in promoting transition from G1 to S phase, was significantly downregulated in Lnc-Rewind-depleted cells at both transcript (Figure 2\u2014source data 1) and protein levels (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Cyclin D3 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "5d6cd009-8f88-4865-96d6-ffa8a66b7a15",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C95",
+      "claim": "Lnc-Rewind has a role in sustaining MuSC activation and expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, quantification of the number of Pax7+-derived clusters (composed of more than two nuclei), pairs (composed of two nuclei), or single MuSCs within each myofibre revealed a reduction of activated pairs and clusters upon Lnc-Rewind depletion (Figure 2G), suggesting a role for the lncRNA in sustaining MuSC activation and expansion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the quantification data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "eab2161b-20d7-4d85-ab35-a6943a9025a3",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C96",
+      "claim": "The genomic proximity between Lnc-Rewind/Wnt7b loci, together with their anti-correlated expression in muscle cells and the lncRNA chromatin enrichment, suggests that Lnc-Rewind might have a direct, in cis-regulatory role on Wnt7b transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomic proximity between Lnc-Rewind/Wnt7b loci, together with their anti-correlated expression in muscle cells and the lncRNA chromatin enrichment (Figure 1D,E), led us to hypothesize that Lnc-Rewind might have a direct, in cis-regulatory role on Wnt7b transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on genomic proximity, expression correlation, and chromatin localization data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "e846d292-2c9e-4e08-bf0d-29e692e63107",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C97",
+      "claim": "Lnc-Rewind acts as a repressor of Wnt7b expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, we found Wnt7b, which expression was found upregulated at both transcript and protein levels (Figure 3\u2014figure supplement 1A and Figure 2\u2014source data 1), suggesting a role for Lnc-Rewind as a repressor of Wnt7b expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the upregulation of Wnt7b upon Lnc-Rewind depletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "fef5edbf-4cb2-41ff-bad3-4605b870fd38",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C98",
+      "claim": "The Kcnq1ot1 lncRNA was previously demonstrated to be physically associated with both G9a and Ezh2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "To note, the levels of RNA obtained in the specific IP fraction were similar to the ones of the Kcnq1ot1 lncRNA, which was previously demonstrated to be physically associated with both G9a and Ezh2 proteins (Pandey et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "5ec71cef-571a-41bc-b670-bd31ffbec6ec",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C99",
+      "claim": "In Lnc-Rewind CLIP, Lnc-Rewind RNA-specific enrichment was comparable to the Kcnq1ot1-positive control.",
+      "claim_type": "EXPLICIT",
+      "source": "As for RIP, also in this case, Lnc-Rewind RNA-specific enrichment was comparable to the Kcnq1ot1-positive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the CLIP experiment in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "dcf07384-bc60-4b7c-92f4-b08ce70cf81b",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C100",
+      "claim": "The histone H3K9 lysine methyltransferase (KMT) might be specifically tethered on Wnt7b genomic locus by Lnc-Rewind to mediate its transcriptional repression.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that the histone H3K9 lysine methyltransferase (KMT) might be specifically tethered on Wnt7b genomic locus by Lnc-Rewind to mediate its transcriptional repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the interaction data (RIP, CLIP, RNA pulldown) and the functional data (G9a knockdown, ChIP).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "7905bdb4-76a9-4fff-b415-2696ac6e422a",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C101",
+      "claim": "Different regions upstream Wnt7b locus are enriched in the G9a-deposited histone mark H3K9me2 in MuSC-derived myoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, through H3K9me2 ChIP experiments here we provide evidence that different regions upstream Wnt7b locus are enriched in the G9a-deposited histone mark in MuSC-derived myoblasts and that H3K9me2 levels on these regions significantly decrease upon Lnc-Rewind knockdown (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR data is shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "806f1ce9-c88c-4740-8c98-e7f1c82e7051",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C102",
+      "claim": "H3K9me2 levels on regions upstream Wnt7b locus significantly decrease upon Lnc-Rewind knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, through H3K9me2 ChIP experiments here we provide evidence that different regions upstream Wnt7b locus are enriched in the G9a-deposited histone mark in MuSC-derived myoblasts and that H3K9me2 levels on these regions significantly decrease upon Lnc-Rewind knockdown (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR data is shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "df35049e-9885-4329-8f4e-976300a21772",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C103",
+      "claim": "G9a downregulation is sufficient to induce Wnt7b de-repression.",
+      "claim_type": "EXPLICIT",
+      "source": "These data, together with the evidence that G9a downregulation is sufficient to induce Wnt7b de-repression (Figure 4C), confirm a direct role for G9a-mediated H3K9 methylation in maintaining the repression of Wnt7b in MuSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data showing Wnt7b upregulation upon G9a knockdown is shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "efd743df-73fe-4f64-b1b7-5250a93476a0",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "claim_id": "C104",
+      "claim": "G9a-mediated H3K9 methylation has a direct role in maintaining the repression of Wnt7b in MuSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data, together with the evidence that G9a downregulation is sufficient to induce Wnt7b de-repression (Figure 4C), confirm a direct role for G9a-mediated H3K9 methylation in maintaining the repression of Wnt7b in MuSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from multiple lines of evidence including G9a knockdown (Figure 4C), ChIP (Figure 4E), and interaction studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02993f55-203a-4fd1-ac52-dd9e98a112a4",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Lnc-Rewind is a conserved lncRNA expressed in murine MuSCs with a human ortholog (hs_Lnc-Rewind) showing ~46% sequence identity and active transcription in human myoblasts. Both mouse and human loci produce spliced and unspliced isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C10-C13 collectively demonstrate conservation through multiple lines of evidence: FANTOM5 TSS analysis (C10), sequence alignment showing 46% identity (C11), RNA-seq and RT-PCR confirming human transcription (C12), and read coverage patterns showing isoform diversity (C13). The convergence of genomic, transcriptomic, and sequence data provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "f6846a9f-998e-4c17-99a8-71f449bd0c98",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Lnc-Rewind is a chromatin-associated lncRNA highly expressed in proliferating C2C12 and MuSC-derived myoblasts, with expression significantly decreased upon differentiation. Both spliced and unspliced isoforms localize to the nuclear compartment and are enriched at discrete chromatin foci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 and C88 are supported by complementary experimental approaches: qRT-PCR quantification (C14-C15), subcellular fractionation (C16), and RNA-FISH imaging (C17). The chromatin association is demonstrated through both biochemical fractionation and microscopy, providing robust evidence for nuclear/chromatin localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Lnc-Rewind acts as an epigenetic regulator of MuSC proliferation by influencing skeletal muscle gene expression. Depletion (~70% knockdown) resulted in 1088 differentially expressed genes (332 upregulated, 756 downregulated), with significant enrichment in muscle system processes and skeletal muscle contraction pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C18-C20, C22, C89-C91 are supported by RNA-seq analysis with appropriate statistical thresholds (p<0.05), PCA showing clear separation between conditions, and GO enrichment analysis. The ~70% knockdown efficiency (C89) is adequate for loss-of-function studies. The downregulation of muscle contraction genes (myosins, troponins) is consistent with the observed phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "c41abb88-59ad-44cb-9ea5-96f4790c6a07",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Wnt7b is a direct target of Lnc-Rewind regulation. The genes are genomically proximal (100 kb apart), display anti-correlated expression across 1196 FANTOM5 samples (R=-0.68), and Wnt7b is specifically upregulated at both transcript and protein levels upon Lnc-Rewind depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C29-C33 are supported by multiple lines of evidence: genomic proximity (C29), large-scale expression correlation analysis (C31), specificity demonstrated by lack of correlation with neighboring genes (C32), and upregulation upon depletion (C30, C33). The Spearman correlation of -0.68 across 1196 samples provides strong statistical support for anti-correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "144b253b-2c69-4eb4-ac33-23fb125d9b00",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lnc-Rewind depletion causes defects in MuSC proliferation and expansion, evidenced by decreased cell numbers, reduced EdU incorporation, downregulation of Cyclin D3, and reduced proliferating progeny and activated clusters/pairs in single myofiber assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28, C93, C95 are supported by multiple complementary assays: cell counting (C24), EdU incorporation (C25), molecular markers (C26), and ex vivo myofiber culture (C27-C28). The convergence of in vitro and ex vivo evidence strengthens the conclusion. However, C93 is speculative and represents an interpretation rather than direct evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "b24294c9-af91-41b9-b3f1-d147e45bbacc",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rescue experiments demonstrate that restoring Wnt7b repression in Lnc-Rewind-depleted cells rescues MuSC proliferation and activation defects, establishing that Lnc-Rewind-mediated repression of Wnt7b is functionally important for MuSC activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35, C81-C82 are supported by rescue experiments showing restoration of proliferation (EdU incorporation) and myofiber activation phenotypes when Wnt7b is knocked down in Lnc-Rewind-depleted cells. This genetic epistasis experiment provides strong evidence for a functional relationship and establishes causality rather than mere correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "c7217163-44e1-4818-ab19-90eeea09df8d",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lnc-Rewind physically interacts with the G9a histone methyltransferase but not with EZH2. This interaction is demonstrated by RIP, CLIP, and RNA pulldown experiments, with enrichment levels comparable to the positive control Kcnq1ot1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C40-C43 are supported by three independent biochemical approaches (RIP, CLIP, RNA pulldown) demonstrating specific interaction with G9a but not EZH2. The use of Kcnq1ot1 as a positive control and the reciprocal nature of the experiments (protein-centric and RNA-centric) provide robust evidence for direct interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "ad36ba73-857e-447f-8dd8-917cdd07e822",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lnc-Rewind mediates in cis repression of Wnt7b through G9a-dependent H3K9me2 deposition. Evidence includes RNA-DNA FISH showing colocalization, G9a ChIP showing enrichment at Wnt7b upstream regions, decreased H3K9me2 upon Lnc-Rewind depletion, and Wnt7b upregulation upon G9a knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C44-C49, C100-C104 are supported by convergent evidence from imaging (RNA-DNA FISH, combined FISH/immunostaining), ChIP experiments showing both G9a occupancy and H3K9me2 levels, and functional validation through G9a knockdown. The mechanism is well-supported by multiple orthogonal approaches demonstrating physical proximity, histone modification changes, and functional dependency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "d6cbc96c-825d-4990-9b19-66893759a78a",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Lnc-Rewind depletion results in downregulation of miRNAs Mirlet7b and Mirlet7c-2, but these miRNAs do not contribute to the observed phenotypes as their predicted targets (~1% of upregulated genes) do not belong to enriched GO categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C92 are supported by qRT-PCR data showing miRNA downregulation and target prediction analysis. The conclusion that miRNAs are not responsible for the phenotype is based on the lack of overlap between predicted targets and GO-enriched categories. This analysis appropriately addresses a potential confounding mechanism given the genomic overlap with miRNA loci.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "ddaad205-8fa2-429a-bd0f-4f5df1365bf1",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Lnc-Rewind-depleted cells express lower levels of MyHC protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 is supported by Western blot analysis shown in Figure 2D. This finding is consistent with the downregulation of muscle contraction genes and reduced differentiation capacity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "89bb5b49-59f0-4e58-a6f4-2439a351dbf4",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Lnc-Rewind overlaps pre-Mirlet7c-2 (mmu-let7c-2) and pre-Mirlet7b (mmu-let7b) genomic loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C9 is supported by UCSC genome browser visualization in Figure 1A showing the genomic overlap. This is a straightforward genomic annotation observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "eb160067-1687-4d0c-93dd-cfa452b92a85",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "EZH2 and G9a are mostly expressed in proliferating MuSCs and become downregulated during muscle differentiation, similar to Lnc-Rewind.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by Western blot data (Figure 4\u2014figure supplement 1A) and citations to previous studies. This expression pattern is consistent with a role in proliferating cells and provides context for investigating these methyltransferases as potential Lnc-Rewind partners.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "77ee0363-067c-48f5-88b6-69533b24e687",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The anti-correlated expression of Lnc-Rewind and Wnt7b across multiple cell types suggests a general regulatory role beyond satellite cells, and the genomic proximity combined with chromatin enrichment suggests a direct cis-regulatory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C96 are inferences based on FANTOM5 data showing anti-correlation across diverse cell types and the combination of genomic proximity, expression correlation, and chromatin localization. While these are reasonable hypotheses supported by the data, they represent interpretations that would benefit from direct testing in other cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "864b9846-f0de-4f2c-9d4e-c719a794f67f",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The slowness in the splicing process could contribute to the maintenance of Lnc-Rewind at its own site of transcription, improving its retention on chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C73 is explicitly speculative, as acknowledged by the authors. While the observation of unspliced isoforms is supported by data, the mechanistic interpretation regarding splicing kinetics and chromatin retention is hypothetical and not directly tested. This represents an interesting hypothesis that requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "49d74b10-5ea4-4f77-aa6e-685167acafdd",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background and contextual claims establishing the importance of lncRNAs, WNT signaling, and muscle stem cell biology, drawn from established knowledge and prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C87, C94, C98 represent established knowledge in the field, supported by appropriate citations to review articles and primary literature. These claims provide necessary context for the study but do not constitute novel findings. The citations appear appropriate and the statements accurately reflect current understanding in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "e7e22cbb-ef56-4c6c-b026-09dc143159dd",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "EZH2 and G9a have been previously reported to be recruited to specific genomic loci through interaction with different lncRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by citations to previous studies and provide important precedent for investigating whether Lnc-Rewind might function through similar mechanisms. This contextualizes the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "fb136fa4-23db-42fa-b98a-7c45a4f2f954",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Lnc-Rewind acts as a repressor of Wnt7b expression, inferred from upregulation upon depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 is an inference from the observation that Wnt7b is upregulated when Lnc-Rewind is depleted. While this is a reasonable interpretation supported by the data, the mechanistic details are elaborated in other claims (C8, C49). This represents a summary conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    },
+    {
+      "id": "1e251d54-d912-4257-b8ac-3962bcfd5e08",
+      "content_id": "b2ed4946-e749-4ca1-aa18-f8ec8f125b71",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In Lnc-Rewind CLIP experiments, RNA-specific enrichment was comparable to the Kcnq1ot1 positive control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 is supported by the CLIP data in Figure 4A. The use of Kcnq1ot1 as a positive control is appropriate given its known interaction with G9a, and comparable enrichment levels support the specificity of the Lnc-Rewind-G9a interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:42.949445Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "105d80a2-c365-4c55-a416-3693ba8ec425",
+      "result_id": "02993f55-203a-4fd1-ac52-dd9e98a112a4"
+    },
+    {
+      "claim_id": "3b500d75-eb45-4ea1-9ffc-3485d3b3736c",
+      "result_id": "02993f55-203a-4fd1-ac52-dd9e98a112a4"
+    },
+    {
+      "claim_id": "1e7036c4-e9bd-46f4-9236-370408a13f9c",
+      "result_id": "02993f55-203a-4fd1-ac52-dd9e98a112a4"
+    },
+    {
+      "claim_id": "0aabd3fe-d0d9-4a45-9c96-e84db983b8eb",
+      "result_id": "02993f55-203a-4fd1-ac52-dd9e98a112a4"
+    },
+    {
+      "claim_id": "930f23ea-8540-4888-966b-79c1811f3174",
+      "result_id": "02993f55-203a-4fd1-ac52-dd9e98a112a4"
+    },
+    {
+      "claim_id": "200f5c8b-b5eb-49cd-b72c-0b6bded6cc17",
+      "result_id": "02993f55-203a-4fd1-ac52-dd9e98a112a4"
+    },
+    {
+      "claim_id": "20884d36-f0b7-403d-81b3-98389210cb6a",
+      "result_id": "f6846a9f-998e-4c17-99a8-71f449bd0c98"
+    },
+    {
+      "claim_id": "2efe1071-8c79-40db-a6f2-a25b06a30950",
+      "result_id": "f6846a9f-998e-4c17-99a8-71f449bd0c98"
+    },
+    {
+      "claim_id": "22ff05a2-459b-4537-9647-731df485c7cd",
+      "result_id": "f6846a9f-998e-4c17-99a8-71f449bd0c98"
+    },
+    {
+      "claim_id": "f7aaa650-737d-4d7e-ab10-25c2f5e36248",
+      "result_id": "f6846a9f-998e-4c17-99a8-71f449bd0c98"
+    },
+    {
+      "claim_id": "4cac324b-5dde-4776-ab36-160475db3ed4",
+      "result_id": "f6846a9f-998e-4c17-99a8-71f449bd0c98"
+    },
+    {
+      "claim_id": "e78b2d00-d003-4b5e-a0e7-1d09288449d7",
+      "result_id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd"
+    },
+    {
+      "claim_id": "3c5655fb-9102-42c3-81db-bcc13d0ac17b",
+      "result_id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd"
+    },
+    {
+      "claim_id": "bbfd11ca-708b-4c39-b84d-1b7a3a648509",
+      "result_id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd"
+    },
+    {
+      "claim_id": "886357e1-6518-457c-8b56-dccb26cccc42",
+      "result_id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd"
+    },
+    {
+      "claim_id": "1fcb2241-7d16-43ff-b54a-b81a3c105d1f",
+      "result_id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd"
+    },
+    {
+      "claim_id": "d3eb4cd6-89d3-40da-bdbf-8f4f573ec1b6",
+      "result_id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd"
+    },
+    {
+      "claim_id": "e2909c51-1171-44b3-9b02-ee87c58b6a57",
+      "result_id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd"
+    },
+    {
+      "claim_id": "52df39ac-39c9-4b18-8ede-4d83bd3bdd23",
+      "result_id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd"
+    },
+    {
+      "claim_id": "1737b1f9-38b3-48c2-9eff-448e1e036677",
+      "result_id": "5c9b2b79-9c9b-475f-a5b9-802078d17cdd"
+    },
+    {
+      "claim_id": "575661c8-44f6-4a4e-aa01-8befd4aaf6b8",
+      "result_id": "c41abb88-59ad-44cb-9ea5-96f4790c6a07"
+    },
+    {
+      "claim_id": "5e4aa9bb-433a-49d2-bf38-d0f984102093",
+      "result_id": "c41abb88-59ad-44cb-9ea5-96f4790c6a07"
+    },
+    {
+      "claim_id": "c1b9c7df-b808-4b34-a1b9-5ec5c7be2458",
+      "result_id": "c41abb88-59ad-44cb-9ea5-96f4790c6a07"
+    },
+    {
+      "claim_id": "389c290b-5771-4d83-a592-6ded725c3b5c",
+      "result_id": "c41abb88-59ad-44cb-9ea5-96f4790c6a07"
+    },
+    {
+      "claim_id": "6912ce05-6e07-46d0-b4a7-6dcd3596d647",
+      "result_id": "c41abb88-59ad-44cb-9ea5-96f4790c6a07"
+    },
+    {
+      "claim_id": "0cc7ec0e-6457-4e95-a042-7acc7eb07dde",
+      "result_id": "c41abb88-59ad-44cb-9ea5-96f4790c6a07"
+    },
+    {
+      "claim_id": "e3dbfe55-e6de-4142-8f08-cb83c4e31cac",
+      "result_id": "c41abb88-59ad-44cb-9ea5-96f4790c6a07"
+    },
+    {
+      "claim_id": "386c94ec-945c-4886-9f9a-940595f259b4",
+      "result_id": "144b253b-2c69-4eb4-ac33-23fb125d9b00"
+    },
+    {
+      "claim_id": "f3fa4ef8-563d-4c1b-8c83-8274385d20af",
+      "result_id": "144b253b-2c69-4eb4-ac33-23fb125d9b00"
+    },
+    {
+      "claim_id": "f43bcffd-b463-4468-8ebf-2cde33fda191",
+      "result_id": "144b253b-2c69-4eb4-ac33-23fb125d9b00"
+    },
+    {
+      "claim_id": "e3db4741-036d-45e9-9f27-3c0337768b75",
+      "result_id": "144b253b-2c69-4eb4-ac33-23fb125d9b00"
+    },
+    {
+      "claim_id": "1d0c4dad-7ca9-47f8-bd13-45aa7b51a2ed",
+      "result_id": "144b253b-2c69-4eb4-ac33-23fb125d9b00"
+    },
+    {
+      "claim_id": "f2384502-2b2f-4ff2-8bb2-f7ac75964b4b",
+      "result_id": "144b253b-2c69-4eb4-ac33-23fb125d9b00"
+    },
+    {
+      "claim_id": "5d6cd009-8f88-4865-96d6-ffa8a66b7a15",
+      "result_id": "144b253b-2c69-4eb4-ac33-23fb125d9b00"
+    },
+    {
+      "claim_id": "35e3b456-0414-4679-a158-094facd099d2",
+      "result_id": "b24294c9-af91-41b9-b3f1-d147e45bbacc"
+    },
+    {
+      "claim_id": "31fb8a16-ff06-49fd-8cde-b9805a936e55",
+      "result_id": "b24294c9-af91-41b9-b3f1-d147e45bbacc"
+    },
+    {
+      "claim_id": "d684ff6e-3c1f-4fe4-a60b-c5c6e5a4e6e6",
+      "result_id": "b24294c9-af91-41b9-b3f1-d147e45bbacc"
+    },
+    {
+      "claim_id": "78b6bb47-ee70-4593-b719-edad52edc7a7",
+      "result_id": "b24294c9-af91-41b9-b3f1-d147e45bbacc"
+    },
+    {
+      "claim_id": "f27d2c15-a6b4-4035-b2fe-837636e2415f",
+      "result_id": "c7217163-44e1-4818-ab19-90eeea09df8d"
+    },
+    {
+      "claim_id": "060a6b6a-5318-46c1-883e-8e75bdc90b9f",
+      "result_id": "c7217163-44e1-4818-ab19-90eeea09df8d"
+    },
+    {
+      "claim_id": "fe358645-bdcb-4610-91d0-d6173442684c",
+      "result_id": "c7217163-44e1-4818-ab19-90eeea09df8d"
+    },
+    {
+      "claim_id": "c9c8ee18-bbc7-46de-871f-4116756dfabf",
+      "result_id": "c7217163-44e1-4818-ab19-90eeea09df8d"
+    },
+    {
+      "claim_id": "603c10f1-7fed-461a-9e43-9e09ea750562",
+      "result_id": "c7217163-44e1-4818-ab19-90eeea09df8d"
+    },
+    {
+      "claim_id": "bc12e73e-e51e-4368-ae3f-648dac4e9083",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "a7fda344-02c1-4460-a1f4-494a30044493",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "0de58dee-9f72-41db-8c6c-1d1fe8ff95ac",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "78c1d7c8-ca5d-4b29-b436-317001487c24",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "0bd68833-0f05-4158-846a-3964eab12705",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "9b37925e-2f3e-4457-8c38-80099e45b121",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "cdd44d3c-fee3-4152-8bf3-e6d2a1c25df2",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "dcf07384-bc60-4b7c-92f4-b08ce70cf81b",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "7905bdb4-76a9-4fff-b415-2696ac6e422a",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "806f1ce9-c88c-4740-8c98-e7f1c82e7051",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "df35049e-9885-4329-8f4e-976300a21772",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "efd743df-73fe-4f64-b1b7-5250a93476a0",
+      "result_id": "ad36ba73-857e-447f-8dd8-917cdd07e822"
+    },
+    {
+      "claim_id": "7239f287-3853-4882-9222-31b2f85aec01",
+      "result_id": "d6cbc96c-825d-4990-9b19-66893759a78a"
+    },
+    {
+      "claim_id": "3a32e50f-95da-47ea-9332-5b9cb867e3a4",
+      "result_id": "d6cbc96c-825d-4990-9b19-66893759a78a"
+    },
+    {
+      "claim_id": "8a8c1e22-7402-49a7-ad33-85180a1df3de",
+      "result_id": "ddaad205-8fa2-429a-bd0f-4f5df1365bf1"
+    },
+    {
+      "claim_id": "e7a16488-43b0-4e6f-8344-59e22afde653",
+      "result_id": "89bb5b49-59f0-4e58-a6f4-2439a351dbf4"
+    },
+    {
+      "claim_id": "762ca994-14b5-46ec-9606-7c25a1131bf2",
+      "result_id": "eb160067-1687-4d0c-93dd-cfa452b92a85"
+    },
+    {
+      "claim_id": "d37ed48a-8d7f-4ea6-92e5-e0494e9d8a06",
+      "result_id": "eb160067-1687-4d0c-93dd-cfa452b92a85"
+    },
+    {
+      "claim_id": "4e1b9ea2-0a9a-45e3-9178-527d4cd89cf5",
+      "result_id": "77ee0363-067c-48f5-88b6-69533b24e687"
+    },
+    {
+      "claim_id": "eab2161b-20d7-4d85-ab35-a6943a9025a3",
+      "result_id": "77ee0363-067c-48f5-88b6-69533b24e687"
+    },
+    {
+      "claim_id": "17b094ce-63a3-4b4f-a06d-03c2340b7057",
+      "result_id": "864b9846-f0de-4f2c-9d4e-c719a794f67f"
+    },
+    {
+      "claim_id": "3e10dc0e-a4e2-4634-8131-fb5d70dbe825",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "bb6160ea-1540-4371-880d-1137990d8d69",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "15ab662a-0904-4689-b018-5cc6ce307b87",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "0fc50196-e16c-4a74-a488-c29e140c7ae8",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "877e6b80-ab77-45e6-8f59-ad2217636a2d",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "4c9e9031-e4b7-4a36-88ae-d5f64425deb4",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "3d5c76ac-1111-4acd-a1b3-eab1e8693fd8",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "3e88728d-0639-4b5b-8de7-351db6ae1972",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "ff223a8d-7866-4724-910f-8a0ce92c5ee9",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "1fd145ce-1c56-4481-b5b4-16c8d1bea72c",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "a0ee4ab2-157f-433a-9f89-89729b0b43e7",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "2d184dc1-cd16-4888-bed7-41ea6d9af17e",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "88203e72-a7da-45f4-8b2c-a0a60075d333",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "53c05cf2-d893-4c4c-84ec-03f8cd1c22c0",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "ae84c67c-be74-4517-a715-e0e71f156428",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "d361c3e6-8e29-4881-8a83-fb046876305b",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "3f6664a7-4081-48cc-820c-8d8c29b59fd2",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "d2c1811a-667f-4a26-ae10-3c6eccfea33d",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "34af4663-bc83-454b-bda9-f1498ceef8cc",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "2754789a-50e7-4c3f-8729-2b58097ef9c2",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "5e45c4d9-4572-4dd8-9715-79d847b43f43",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "f11f81b8-b0f4-43bd-a284-c31531c671f8",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "d54631d1-3b2f-4086-9bc5-c6eacc15a8e4",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "2fddc297-2780-44a3-b830-102f8ee9960a",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "6740ac43-b1b6-4c97-b756-814c537b5a48",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "0a231e07-c5e9-4ba7-bdaf-5753465cb4b9",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "f424e2c2-d291-457f-bac8-c8ec3fcbfd70",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "b1de65d9-4368-4e0e-b157-7e019bd87d1c",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "a471b9fa-5c04-42de-92e4-9ef394302eb2",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "e356fa26-a08e-43a6-904e-7b9ef701ee80",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "e2cd1d78-9050-48bb-bb20-81ecafdb61c5",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "3d7f6c29-6cc6-4b67-89bb-3fb392d27060",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "df9b08aa-536e-4290-9b25-d7e69aa7cf56",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "482dd006-788e-4085-b44c-8decdc1640e3",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "fef5edbf-4cb2-41ff-bad3-4605b870fd38",
+      "result_id": "49d74b10-5ea4-4f77-aa6e-685167acafdd"
+    },
+    {
+      "claim_id": "ff3f6785-7b58-4c25-876a-8a5d1f2c22a2",
+      "result_id": "e7e22cbb-ef56-4c6c-b026-09dc143159dd"
+    },
+    {
+      "claim_id": "06f89147-8d54-489d-a17c-11ba11410d58",
+      "result_id": "e7e22cbb-ef56-4c6c-b026-09dc143159dd"
+    },
+    {
+      "claim_id": "e846d292-2c9e-4e08-bf0d-29e692e63107",
+      "result_id": "fb136fa4-23db-42fa-b98a-7c45a4f2f954"
+    },
+    {
+      "claim_id": "5ec71cef-571a-41bc-b670-bd31ffbec6ec",
+      "result_id": "1e251d54-d912-4257-b8ac-3962bcfd5e08"
+    }
+  ],
+  "comparisons": []
+}

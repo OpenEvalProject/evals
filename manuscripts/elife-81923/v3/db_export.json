@@ -1,0 +1,1968 @@
+{
+  "submission": {
+    "id": "3f191435-9cee-44d9-9531-b2cad9d2b942",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:35:54.664850Z",
+    "updated_at": "2025-12-03T18:35:54.664850Z"
+  },
+  "content": [
+    {
+      "id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "submission_id": "3f191435-9cee-44d9-9531-b2cad9d2b942",
+      "content_type": "manuscript",
+      "content_text": "# Beta human papillomavirus 8E6 promotes alternative end joining\n\n## Authors\n\n- Changkun Hu<sup>1</sup> ([ORCID: 0000-0002-4407-7144](https://orcid.org/0000-0002-4407-7144))\n- Taylor Bugbee<sup>2</sup>\n- Rachel Palinski<sup>3</sup>\n- Ibukun A Akinyemi<sup>4</sup>\n- Michael T McIntosh<sup>4</sup>\n- Thomas MacCarthy<sup>6</sup>\n- Sumita Bhaduri-McIntosh<sup>4</sup>\n- Nicholas Wallace<sup>2</sup> ([ORCID: 0000-0002-3971-716X](https://orcid.org/0000-0002-3971-716X)) \u2020\n\n### Affiliations\n\n1. Basic Sciences Division, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))\n2. Division of Biology, Kansas State University Manhattan United States ([ROR:05p1j8758](https://ror.org/05p1j8758))\n3. Veterinary Diagnostic Laboratory, Kansas State University Manhattan United States ([ROR:05p1j8758](https://ror.org/05p1j8758))\n4. Child Health Research Institute, Department of Pediatrics, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))\n5. Department of Molecular Genetics and Microbiology, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))\n6. Laufer Center for Physical and Quantitative Biology, Stony Brook University Stony Brook United States ([ROR:05qghxh33](https://ror.org/05qghxh33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDouble strand breaks (DSBs) are one of the most lethal DNA lesions in cells. The E6 protein of beta-human papillomavirus (HPV8 E6) impairs two critical DSB repair pathways: homologous recombination (HR) and non-homologous end joining (NHEJ). However, HPV8 E6 only delays DSB repair. How DSBs are repaired in cells with HPV8 E6 remains to be studied. We hypothesize that HPV8 E6 promotes a less commonly used DSB repair pathway, alternative end joining (Alt-EJ). Using CAS9-based Alt-EJ reporters, we show that HPV8 E6 promotes Alt-EJ. Further, using small molecule inhibitors, CRISPR/CAS9 gene knockout, and HPV8 E6 mutant, we find that HPV8 E6 promotes Alt-EJ by binding p300, an acetyltransferase that facilitates DSB repair by HR and NHEJ. At least some of this repair occurs through a subset of Alt-EJ known as polymerase theta dependent end joining. Finally, whole genome sequencing analysis showed HPV8 E6 caused an increased frequency of deletions bearing the microhomology signatures of Alt-EJ. This study fills the knowledge gap of how DSB is repaired in cells with HPV8 E6 and the mutagenic consequences of HPV8 E6 mediated p300 destabilization. Broadly, this study supports the hypothesis that beta-HPV promotes cancer formation by increasing genomic instability.\n\n## Introduction\n\nBeta genus human papillomaviruses (beta-HPVs) are ubiquitous and transiently infect cutaneous epithelia in the general population (Bouwes Bavinck et al., 2018; Gheit, 2019; Neale et al., 2013). Beta-HPVs, including type 8 (HPV8), are associated with nonmelanoma skin cancer (NMSC) in immunocompromised individuals including people with a rare genetic disorder epidermodysplasia verruciformis and organ transplant recipients (Bouwes Bavinck et al., 2018; Bouwes Bavinck et al., 2001; Dell\u2019Oste et al., 2009; Sichero et al., 2019). However, the contribution of beta-HPV infections to NMSC in the general population is unclear. Because beta-HPV infections are not persistent in immunocompetent people, they are hypothesized to promote cancer formation by making UV-induced DNA damage more mutagenic (Hufbauer et al., 2015; Spriggs and Laimins, 2017; Wendel and Wallace, 2017). In support of this hypothesis, our group and others have used in vitro and in vivo systems to demonstrate that the E6 protein from HPV8 (8E6) impairs DNA repair (Hufbauer et al., 2015; Rollison et al., 2019; Wallace et al., 2012).\n\nThe interaction with and destabilization of p300 is a key mechanism by which 8E6 hinders DNA repair (Dacus and Wallace, 2021; Howie et al., 2011). P300 is an acetyltransferase that regulates transcription by chromatin remodeling (Ait-Si-Ali et al., 2000; Dutto et al., 2018; Goodman and Smolik, 2000). By binding p300, 8E6 decreases the abundance of multiple DNA repair proteins including ATR, ATM, BRCA1, and BRCA2 (Wallace et al., 2015; Wallace et al., 2013; Wallace et al., 2012). This lowers the activation of ATM and ATR signaling, decreasing the cellular response to UV-damaged DNA (Snow et al., 2019; Wallace et al., 2012). The limited ability to repair UV damage increases the frequency with which UV causes replication forks to collapse into double strand breaks (DSBs) in DNA (Pathania et al., 2011; Rapp and Greulich, 2004). Cells have multiple DSB repair mechanisms. Homologous recombination (HR) is minimally mutagenic, but restricted to in S/G2 phase when the sister chromatids can serve as homologous templates (Orthwein et al., 2015; Shibata et al., 2011). Whenever possible cells use HR to fix DSBs as it allows them to avoid mutations. When HR is inhibited (by cell cycle position, mutation to repair factors, or artificially), non-homologous end joining (NHEJ) is used to repair DSBs (Wang et al., 2018). NHEJ can occur throughout the cell cycle, as it does not require a homologous template. However, because NHEJ generates and ligates blunt ends to fix a DSB, it is more mutagenic than HR (Mao et al., 2008). We have shown that 8E6 attenuates both HR and NHEJ by degrading p300 (Hu et al., 2020; Hu and Wallace, 2022c; Wallace et al., 2015).\n\nNotably, 8E6 does not block the initiation of NHEJ or HR. NHEJ initiation occurs when DNA-dependent protein kinase catalytic subunit (DNA-PKcs) complexes at DSBs and activates itself by autophosphorylation (pDNA-PKcs) (Davis et al., 2014; Jiang et al., 2015). This occurs readily in the presence of 8E6. However, 8E6 prevents the resolution of pDNA-PKcs repair complexes and attenuates other downstream steps in NHEJ (Hu et al., 2020). Similarly, 8E6 allows the HR pathway to initiate, before hindering the resolution of RAD51 repair complexes (Wallace et al., 2015). We recently demonstrated that cells respond to 8E6-associated inhibition of NHEJ by trying to complete HR during G1 (Hu et al., 2022a; Hu et al., 2022b). This ultimately leads to persistent unresolved RAD51 repair complexes formed during G1.\n\nThus, currently there is a detailed understanding of how 8E6 causes DSB repair to fail, but less is known about how DSB repair occurs in cells that express 8E6. When NHEJ and HR fail, another mutagenic repair pathway known as alternative end joining (Alt-EJ) is tasked with completing DSB repair (Iliakis et al., 2015). Here, we use reporter constructs and small molecule inhibitors of DNA repair factors to demonstrate that 8E6 promotes DSB repair by Alt-EJ and to show that the use of Alt-EJ is the indirect result of initiating NHEJ when the pathway cannot be completed. We also employ whole genome sequence analysis of cells expressing 8E6 and passage matched empty vector control expressing cells to determine the frequency with which 8E6 promotes mutations with the characteristics of repair by Alt-EJ. These observations address a key knowledge gap in the field. By promoting DSB repair by Alt-EJ, 8E6 increases the risk of mutations associated with DSBs while allowing cells to avoid the apoptosis that would be associated with an unrepaired DSB. This is consistent with the proposed mechanism by which beta-HPV infections are hypothesized to promote NMSC.\n\n## Results\n\n### 8E6 promotes DSB repair by Alt-EJ\n\n8E6 delays rather than abrogates DSB repair, but it is unclear how these lesions are repaired as 8E6 hinders the completion of HR and NHEJ. Because Alt-EJ serves as another DSB repair mechanism should HR and NHEJ fail, we hypothesized that DSBs were instead repaired by Alt-EJ. To test this, we examined previously described telomerase (N/TERT) immortalized human foreskin keratinocyte (HFK) expressing vector control (HFK LXSN) and 8E6 (HFK 8E6) (Bedard et al., 2008). An established reporter cassette where a 46 nt insertion disrupts a GFP open reading frame was used to measure Alt-EJ (Bhargava et al., 2018; Tsai et al., 2020). Figure 1A describes Alt-EJ that requires resection (imbedded) and Alt-EJ that occurs independent of resection (terminal). The end joining is mediated by a 4 nt microhomology (ACGG). Transient transfection of this reporter into HFK LXSN and HFK 8E6 demonstrated that 8E6 increased terminal and imbedded Alt-EJ (Figure 1B\u2013E and Figure 1\u2014figure supplement 1). Transfection efficiency varies between independent experiments, but no significant difference was observed among groups within each experiment (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of Alt-EJ reporter. GFP is disrupted by a 46 nt insertion. One CAS9 is used to induce an upstream double strand break (DSB) (5\u2019 end) and another CAS9 is used to induce a downstream DSB (either imbedded or terminal). Following CAS9 expression, a 4 nt microhomology (ACGG) mediated Alt-EJ event can restore GFP expression. (B) Representative images of flow cytometry results of HFK cells that are GFP positive 24 hr after transfection with terminal Alt-EJ. The gating represents GFP positive based off mock transfected control. The x-axis shows cells distributed by forward scatter to avoid debris. (C) Percentage of HFK cells that are positive for GFP following transfection with terminal Alt-EJ determined by flow cytometry. (D) Representative images of flow cytometry results of HFK cells that are GFP positive 24 hr after transfection with imbedded Alt-EJ. The gating represents GFP positive based off mock transfected control. The x-axis shows cells distributed by forward scatter to avoid debris. (E) Percentage of HFK cells that are positive for GFP following transfection with imbedded Alt-EJ determined by flow cytometry. All values are represented as mean \u00b1 standard error. The statistical significance of differences between cell lines were determined using Student\u2019s t-test. p-Values indicate significant difference between cell lines. Twenty thousand cells were counted for each of three independent flow cytometry experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative immunoblotting of CAS9 after transfection with terminal alternative end joining (Alt-EJ). GAPDH is used as a loading control. (B) Densitometry of CAS9 level in cells transfected with terminal Alt-EJ. (C) Representative immunoblotting of CAS9 after transfection with imbedded Alt-EJ. GAPDH is used as a loading control. (D) Densitometry of CAS9 level in cells transfected with imbedded Alt-EJ. All values are represented as mean \u00b1 standard error (n=3). The statistical significance of differences between cell lines were determined using Student\u2019s t-test. No significant differences were obtained.\n\nTo further confirm that 8E6 promoted Alt-EJ, we examined DSB repair in cells where Alt-EJ was blocked by a small molecule inhibitor against PARP-1, an established component of the Alt-EJ pathway (1 \u00b5M of olaparib) (K\u00f6tter et al., 2014). We confirmed that PARP-1 inhibition blocked Alt-EJ using the reporter system described above (Figure 2A\u2013D and Figure 2\u2014figure supplement 1). DSBs were induced by growth in media containing zeocin (10 \u00b5g/mL, 10 min), a radiation mimetic reagent (Tsukuda and Miyazaki, 2013). H2AX phosphorylated at Serine 139 or pH2AX is used as a standard DSB marker (Rogakou et al., 1998). PARP-1 inhibition did not significantly alter DSB repair in HFK LXSN cells (Figure 2E\u2013F). This is consistent with the established view that most DSB repair occurs via either HR or NHEJ, with Alt-EJ serving as a fail-safe machinery should these pathways fail (Iliakis et al., 2015; Patterson-Fortin and D\u2019Andrea, 2020; Simsek and Jasin, 2010). In contrast, PARP-1 inhibition significantly delayed DSB repair in HFK 8E6 cells (Figure 2E\u2013F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative images of flow cytometry results of human foreskin keratinocyte (HFK) cells treated with DMSO or olaparib (1 \u03bcM) that are GFP positive 24 hr after transfection with terminal Alt-EJ. The gating represents GFP positive based off mock transfected control. The x-axis shows cells distributed by forward scatter to avoid debris. (B) Percentage of HFK cells that are positive for GFP following transfection with terminal Alt-EJ determined by flow cytometry. (C) Representative images of flow cytometry results of HFK cells treated with DMSO or olaparib that are GFP positive 24 hr after transfection with imbedded Alt-EJ. The gating represents GFP positive based off mock transfected control. The x-axis shows cells distributed by forward scatter to avoid debris. (D) Percentage of HFK cells that are positive for GFP following transfection with imbedded Alt-EJ determined by flow cytometry. (E) Representative images of pH2AX in HFK LXSN and HFK 8E6 treated with DMSO or olaparib (1 \u03bcM) following zeocin treatment (10 \u03bcg/mL, 10 min). (F) Percentage of pH2AX foci positive cells in HFK LXSN and HFK 8E6 treated with DMSO or olaparib following zeocin treatment. All values are represented as mean \u00b1 standard error. The statistical significance of differences between treatments were determined using Student\u2019s t-test. p-Values indicate significant difference between DMSO and olaparib with same cell line (p<0.05). Twenty thousand cells were counted for each of three independent flow cytometry experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative immunoblotting of CAS9 in cells treated with DMSO or olaparib (1 \u03bcM) after transfection with terminal alternative end joining (Alt-EJ). GAPDH is used as a loading control. (B) Densitometry of CAS9 level in cells tranfected with terminal Alt-EJ. (C) Representative immunoblotting of CAS9 in cells treated with DMSO or olaparib after transfection with imbedded Alt-EJ. (D). Densitometry of CAS9 level in cells tranfected with imbedded Alt-EJ. All values are represented as mean \u00b1 standard error (n=3). The statistical significance of differences between cell lines were determined using Student\u2019s t-test. No significant differences were obtained.\n\nAlt-EJ is an umbrella term that includes any end joining event that does not require DNA-PKcs activity. While most Alt-EJ relies on PARP-1, a subset of Alt-EJ can occur when PARP-1 activity is impaired. Specifically, loss of PARP-1 activity only reduces polymerase theta mediated end joining (TMEJ) by two- to fourfold (Luedeman et al., 2022). To begin determining the extent that 8E6 promoted TMEJ, we used immunoblots to determine if 8E6 increased the abundance of polymerase theta (POL\u03b8). This analysis did not find any notable changes in POL\u03b8 abundance (Figure 3A\u2013B). We next used a small molecule inhibitor of POL\u03b8 (ART558) to determine if HFK 8E6 cells were reliant on POL\u03b8 activity, using an MTT assay to detect viability. There were no significant differences in viability between HFK LXSN and HFK 8E6 cells when grown in media containing a gradient (0\u201350 \u03bcM) of ART558 concentrations (Figure 3C) However, 8E6 impairs apoptosis by degrading BAK, which complicates the interpretation of these data. To more directly define the extent that 8E6 promotes DSB repair by TMEJ, we determined the extent that POL\u03b8 inhibition impaired DSB repair. For this analysis, we induced DSBs by growth media containing zeocin (10 \u00b5g/mL, 10 min). Cells were then switched to media containing DMSO (solvent control), 1 \u03bcM 558, or 5 \u03bcM ART 558. DSBs were detected by immunofluorescence microscopy of pH2AX24 hr later. These concentrations of ART558 were analyzed because they caused the largest differences in viability between HFK 8E6 and HFK LXSN cells. ART558 delayed DSB repair in HFK 8E6 cells but not in HFK LXSN cells, indicating that 8E6 promoted repair by TMEJ (Figure 3D\u2013E). However, although statistically significant, the increased persistence of pH2AX foci was a much lower magnitude than what PARP1 inhibition caused. These experiments were also repeated with higher concentrations of ART558, but no differences in the persistence of pH2AX was detected (not shown). We interpret these data as evidence that 8E6 inhibits multiple types of DNA-PKcs-independent end joining, including but not limited to TMEJ. For simplicity, we will only use the term Alt-EJ moving forward.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative immunoblotting of POL\u03b8 in human foreskin keratinocyte (HFK) LXSN and HFK 8E6 cells. (B) Densitometry of POL\u03b8 level in HFK LXSN and HFK 8E6 cells. (C) Relative cell viability at various ART558 concentrations in HFK LXSN and HFK 8E6 following zeocin treatment. (D) Representative images of pH2AX in HFK LXSN and HFK 8E6 treated with DMSO or ART588 (1 or 5 \u03bcM) 24 hr following zeocin treatment (10 \u03bcg/mL, 10 min). (E) Average number of pH2AX foci per cell in HFK LXSN and HFK 8E6 treated with DMSO or ART558 following zeocin treatment. The statistical significance of differences between treatments were determined using Student\u2019s t-test. p-Values indicate significant difference between HFK LXSN and HFK 8E6 with same ART588 treatment (p<0.05). At least 40 cells were counted for each of three independent microscopy experiments.\n\n### DNA-PK inhibition forces 8E6 expressing cells to use Alt-EJ more frequently\n\nNHEJ initiation blocks DSB repair by other pathways, including Alt-EJ (Patterson-Fortin and D\u2019Andrea, 2020; Simsek and Jasin, 2010; Wang et al., 2006). 8E6 does not prevent the initiation of NHEJ as autophosphorylated DNA-PKcs foci form readily in HFK 8E6 cells (Hu et al., 2020). Instead, 8E6 blocks the completion of NHEJ. Thus, we hypothesized that preventing HFK 8E6 cells from initiating NHEJ would force them to repair DSBs via Alt-EJ. To test this, we determined the frequency of Alt-EJ in HFK LXSN and HFK 8E6 cells in the presence of a small molecule inhibitor of DNA-PKcs (1 \u00b5M of NU7441) to block NHEJ initiation. As expected, DNA-PKcs inhibition increased both imbedded and terminal Alt-EJ in HFK LXSN cells (Figure 4 and Figure 4\u2014figure supplement 1). However, the increase in HFK LXSN cells did not reach the levels of Alt-EJ in mock-treated HFK 8E6 cells. DNA-PKcs inhibition resulted in a further significant increased use of Alt-EJ in HFK 8E6 cells. Together these data support the conclusion that 8E6 promotes the use of Alt-EJ and that the use of the pathway is further enhanced if cells are not allowed to initiate NHEJ.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig4-v3.jpg)\n\n**Figure 4.:** (A) Representative images of flow cytometry results of human foreskin keratinocyte (HFK) cells treated with DMSO or NU7441 (1 \u03bcM) that are GFP positive 24 hr after transfection with terminal Alt-EJ. The gating represents GFP positive based off mock transfected control. The x-axis shows cells distributed by forward scatter to avoid debris. (B) Percentage of HFK cells that are positive for GFP following transfection with terminal Alt-EJ determined by flow cytometry. (C) Representative images of flow cytometry results of HFK cells treated with DMSO or NU7441 that are GFP positive 24 hr after transfection with imbedded Alt-EJ. The gating represents GFP positive based off mock transfected control. The x-axis shows cells distributed by forward scatter to avoid debris. (D) Percentage of HFK cells that are positive for GFP following transfection with imbedded Alt-EJ determined by flow cytometry. All values are represented as mean \u00b1 standard error. The statistical significance of differences between treatments were determined using Student\u2019s t-test. p-Values indicate significant difference between DMSO and NU7441 within the same cell line. Twenty thousand cells were counted for each of three independent flow cytometry experiments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative immunoblotting of CAS9 in cells treated with DMSO or NU7441 (1 \u03bcM) after transfection with terminal alternative end joining (Alt-EJ). GAPDH is used as a loading control. (B) Densitometry of CAS9 level in cells tranfected with terminal Alt-EJ. (C) Representative immunoblotting of CAS9 in cells treated with DMSO or NU7441 after transfection with imbedded Alt-EJ. GAPDH is used as a loading control. (D) Densitometry of CAS9 level in cells tranfected with imbedded Alt-EJ. All values are represented as mean \u00b1 standard error (n=3). The statistical significance of differences between cell lines were determined using Student\u2019s t-test. No significant differences were obtained.\n\nWhen HFK 8E6 cells are allowed to initiate NHEJ, many of the pDNA-PKcs repair complexes that form persist for over 24 hr (Hu et al., 2020). HR factors (e.g., RAD51) are then recruited to these unresolved repair foci (Hu et al., 2022a). However, HR is ultimately unable to repair the lesions. We hypothesized that forcing HFK 8E6 cells to use Alt-EJ by preventing initiation of NHEJ would lead to more efficient DSB repair by allowing them to avoid these abortive attempts at DSB repair. NU7441 (1 mM) was used to block NHEJ initiation and DSBs were detected using pH2AX. As we have shown before, DSBs were more persistent in mock-treated 8E6 cells than LXSN cells. Supporting our hypothesis, DNA-PKcs inhibition made DSB repair more efficient (less pH2AX) in HFK 8E6 cells (Figure 5A\u2013B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig5-v3.jpg)\n\n**Figure 5.:** (A) Representative images of pH2AX in human foreskin keratinocyte (HFK) LXSN and HFK 8E6 treated with NU7441 (1 \u03bcM) following zeocin treatment (10 \u03bcg/mL, 10 min). (B) Percentage of pH2AX foci positive cells in HFK LXSN and HFK 8E6 treated with NU7441 following zeocin treatment. (C) Representative images of RAD51 in HFK LXSN and HFK 8E6 treated with NU7441 following zeocin treatment. (D) Percentage of RAD51 foci positive cells in HFK LXSN and HFK 8E6 treated with NU7441 following zeocin treatment. (E) Representative images of pH2AX in HFK LXSN and HFK 8E6 treated with SCR7 (1 \u03bcM) following zeocin treatment. (F) Percentage of pH2AX foci positive cells in HFK LXSN and HFK 8E6 treated with SCR7 following zeocin treatment. All values are represented as mean \u00b1 standard error. The statistical significance of differences between treatments were determined using Student\u2019s t-test. p-Values indicate significant difference between DMSO and inhibitor treated with the same cell line. At least 150 cells were counted over three independent experiments. Nuclei were determined by DAPI staining. The edge of this staining is shown by a white line depicting the nucleus.\n\nWe next determined the extent that DNA-PKcs inhibition in HFK 8E6 cells resulted in increased resolution of RAD51 foci. As we have previously reported (Hu et al., 2022a), DNA-PKcs inhibition increased the persistence of RAD51 in HFK LXSN (Figure 5C\u2013D). A similar increase in RAD51 persistence was also seen in mock-treated HFK 8E6 cells. However, DNA-PKcs inhibition increased the rate of RAD51 resolution in HFK 8E6 (Figure 5C\u2013D). To determine if inhibition of a later step in the NHEJ pathway also increased the efficiency of DSB repair in HFK 8E6 cells, we used a small molecule inhibitor of ligase IV (1 \u00b5M of SCR7) to block a near terminal step in NHEJ. Ligase IV inhibition delayed DSB repair in both HFK LXSN and HFK 8E6 cells (Figure 5E\u2013F). Thus, restoration of DSB repair in HFK 8E6 specifically requires inhibition of an early NHEJ step, rather than inhibition of a later step in the pathway.\n\n### DNA-PKcs inhibition prevents 8E6 from causing RAD51 foci to form during G1\n\nThe persistent RAD51 repair complexes that form in HFK 8E6 cells occur during G1 (Hu et al., 2022a). These observations and the ones described in Figure 4 led us to hypothesize that blocking NHEJ initiation via DNA-PKcs inhibition would prevent 8E6 from causing RAD51 foci to form in G1. To test this, we detected RAD51 foci and cyclin E (G1 marker) after the induction of DSB by zeocin. DNA-PKcs inhibition increased the frequency of HFK LXSN in G1 that contained RAD51 foci (Figure 6A\u2013B). Without DNA-PKcs inhibition, 8E6 increased the frequency of cells in G1 that had RAD51 foci. However, DNA-PKcs inhibition prevented 8E6 from promoting the formation of RAD51 repair complexes during G1. As cyclin E is also expressed during early S phase, this examination was repeated using cyclin A as a marker of cells in S/G2 (Figure 6\u2014figure supplement 1). These experiments confirmed our observations using cyclin E to determine cell cycle position, providing further evidence that DNA-PKcs inhibition prevented 8E6 from promoting the formation of RAD51 foci during G1 (Figure 6\u2014figure supplement 1). We used flow cytometry as a final determinant of cell cycle position, using NUCLEAR-ID Red DNA staining to select cells in G1 based on DNA content and then determined the frequency with which these cells stained for RAD51 (Figure 6\u2014figure supplement 2). Consistent with our hypothesis, DNA-PKcs inhibition increased the frequency of RAD51 in G1 in HFK LXSN and prevented 8E6 from promoting RAD51 in G1 (Figure 6C\u2013D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig6-v3.jpg)\n\n**Figure 6.:** (A) Representative cyclin E negative and positive human foreskin keratinocyte (HFK) LXSN and HFK 8E6 cells stained for RAD51 (green) and cyclin E (red) treated with DMSO or NU7441 (1 \u03bcM) 24 hr following zeocin treatment (10 \u00b5g/mL, 10 min). (B) Percentage of RAD51 positive HFK cell in G1 determined by cyclin E staining after zeocin treatment. (C) Representative images of flow cytometry results of HFK LXSN and HFK 8E6 cells in G1 stained with RAD51 treated with DMSO or NU7441 24 hr after zeocin treatment. RAD51 intensity is determined by Alexa 488-conjugated secondary antibody and shown on the y-axis. The gating represents RAD51 positive based off secondary only control. The x-axis shows cells distributed by forward scatter to avoid debris. (D) Percentage of HFK cells in G1 that are positive for RAD51 as determined by flow cytometry. Nuclei were determined by DAPI staining. The edge of this staining is shown by a white line depicting the nucleus. All values are represented as mean \u00b1 standard error. The statistical significance of differences between treatments were determined using Student\u2019s t-test. p-Values indicate significant difference between DMSO and NU7441 treatment with the same cell line. At least 150 cells were counted over three independent experiments for microscopy. Twenty thousand cells were counted for each of three independent flow cytometry experiments.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Percentage of RAD51 positive human foreskin keratinocyte (HFK) cell treated by DMSO or NU7441 (1 \u03bcM) in G1 determined by cyclin A negative after zeocin treatment (10 \u03bcg/mL, 10 min). All values are represented as mean \u00b1 standard error. The statistical significance of differences between treatments were determined using Student\u2019s t-test. p-Values indicate significant difference between DMSO and NU7441 treatment with same cell line. At least 150 cells were counted over three independent experiments for microscopy.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Representative images of cell cycle analysis by flow cytometry following zeocin treatment (10 \u00b5g/mL, 10 min). NUCLEAR-ID Red DNA stain was used to determine DNA content and G1 (blue). (B) Representative images of flow cytometry results of HFK LXSN and HFK 8E6 cells stained with Alexa 488-conjugated secondary antibody and shown on the y-axis. The gating represents RAD51 positive based off secondary only control. The x-axis shows cells distributed by forward scatter to avoid debris. Twenty thousand cells were counted for each of three flow cytometry experiments.\n\n### DNA-PKcs inhibition does not promote HR in cells with 8E6\n\nThe data above demonstrate that the attenuation of DSB repair by 8E6 can be overcome by inhibiting DNA-PKcs. DNA-PKcs inhibition also increases the resolution of RAD51, suggesting that DNA-PKcs inhibition may prevent 8E6 from attenuating HR. To test this, we measured HR efficiency using an established HR reporter, described in Figure 7A (Pierce et al., 1999). In vector control U2OS cells (U2OS LXSN), NU7441 increases HR efficiency (Figure 7B\u2013C). This is consistent with the established idea that NHEJ and HR compete for access to DSBs (Bunting et al., 2010; Chapman et al., 2012; Orthwein et al., 2015). As previously reported, 8E6 in U2OS cells (U2OS 8E6) decreased HR efficiency (Wallace et al., 2015). However, DNA-PKcs inhibition did not prevent 8E6 from hindering HR (Figure 7B\u2013C). Consistent with a p300-dependent mechanism (see next section for more details), U2OS cells expressing 8E6 with the residues responsible for binding p300 deleted (U2OS 8E6\u0394132\u2013136) were similar to vector control (Figure 7B\u2013C). These cell lines have been previously described (Hu et al., 2020; Wallace et al., 2015). U2OS cells are routinely used to probe 8E6 biology because 8E6 retains its ability to alter DNA repair in these cells (Hu et al., 2020; Wallace et al., 2015).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig7-v3.jpg)\n\n**Figure 7.:** (A) Schematic of DR-GFP reporter. GFP open reading frame is disrupted by insertion of ISCE-1 site (SceGFP). Downstream of the reporter is a truncated internal GFP(iGFP) that can be used as a template to remove the ISCE-1 site and restore GFP expression during HR event. (B) Representative images of flow cytometry results of U2OS cells that are GFP positive treated with DMSO or NU7441(1 \u03bcM) 24 hr after ISCE-1 transfection. The gating represents GFP positive based off mock transfected control. The x-axis shows cells distributed by forward scatter to avoid debris. (C) Percentage of U2OS cells that are positive for GFP determined by flow cytometry. All values are represented as mean \u00b1 standard error. The statistical significance of differences between treatments were determined using Student\u2019s t-test. p-Values indicate significant difference between DMSO and NU7441 with same cell line. Twenty thousand cells were counted for each of three independent flow cytometry experiments.\n\n### 8E6 promotes Alt-EJ by destabilizing p300\n\n8E6 delays DSB repair by binding/destabilizing p300, leading us to hypothesize that the residues of 8E6 that facilitate the interaction with p300 were important for the phenotypes described thus far (Hu et al., 2022a, Hu et al., 2020; Wallace et al., 2015). To test this, we examined U2OS LXSN, U2OS 8E6, and U2OS 8E6\u0394132\u2013136 cells. Consistent with the p300-dependent mechanism, 8E6\u0394132\u2013136 shows similar Alt-EJ frequency with U2OS LXSN (Figure 7A\u2013B). The deletion of these residues from 8E6 has been shown to prevent some but not all aspects of 8E6 biology. As a result, we examined p300 knockout N/TERT immortalized HFK cells. P300 knockout led to increases in both terminal and imbedded Alt-EJ (Figure 8C\u2013D). To further confirm p300 dependence, we used a small molecule inhibitor of p300 (1 \u00b5M of CCS1477) to block p300 activity. Consistently, CCS1477 increased both terminal and imbedded Alt-EJ (Figure 8E\u2013F).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig8-v3.jpg)\n\n**Figure 8.:** (A\u2013B) Percentage of U2OS cells that are positive for Alt-EJ following transfection with (A) terminal or (B) imbedded determined by flow cytometry. (C\u2013D) Percentage of human foreskin keratinocyte (HFK) WT and HFK p300 KO cells that are positive for Alt-EJ following transfection with (C) terminal or (D) imbedded determined by flow cytometry. (E\u2013F) Percentage of HFK cells treated with DMSO or CCS1477 (1 \u03bcM) that are positive for Alt-EJ following transfection with (E) terminal or (F) imbedded determined by flow cytometry. All values are represented as mean \u00b1 standard error. The statistical significance of differences between cell lines and treatments were determined using Student\u2019s t-test. p-Values indicate significant difference between LXSN and 8E6 (A\u2013B); WT and p300KO (C\u2013D); and DMSO and CCS1477 treatment (E\u2013F). Twenty thousand cells were counted for each of three independent flow cytometry experiments.\n\n### DNA-PKcs inhibition prevents the formation of RAD51 foci in G1 that is caused by loss of p300\n\nWe next confirmed that the ability of 8E6 to allow RAD51 foci to form in G1 was blocked by DNA-PKcs inhibition in U2OS cells (Figure 9A\u2013B). Consistent with a p300-dependent mechanism, RAD51 foci were more likely to occur in G1 when DNA-PKcs was inhibited in U2OS LXSN and U2OS 8E6\u0394132\u2013136 cells. Further confirming a p300-dependent mechanism of action, HFK without p300 displayed an increased frequency of RAD51 staining in G1 that could be overcome by DNA-PKcs inhibition (Figure 9C\u2013D). As a final confirmation of the p300 dependence of this phenotype, we treated N/TERT HFKs with 1 \u00b5M of CCS1477 to block p300 activity. Inhibition of p300 alone increased the frequency of RAD51 staining in G1 as did DNA-PKcs inhibition alone (Figure 9E\u2013F). However, RAD51 staining in G1 was not increased by their dual application.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig9-v3.jpg)\n\n**Figure 9.:** (A\u2013B) Percentage of U2OS treated with DMSO or NU7441 (1 \u03bcM) in G1 that RAD51 staining after zeocin treatment (10 \u00b5g/mL, 10 min) as determined by (A) cyclin E staining or (B) flow cytometry. (C\u2013D) Percentage of human foreskin keratinocyte (HFK) cells treated with DMSO or NU7441 in G1 that RAD51 staining after zeocin treatment determined by (C) cyclin E staining or (D) flow cytometry. (E\u2013F) Percentage of HFK cells treated with DMSO, CCS1477 (1 \u03bcM), or NU7441 in G1 that RAD51 staining after zeocin treatment determined by (E) cyclin E staining or (F) flow cytometry. All values are represented as mean \u00b1 standard error. The statistical significance of differences between treatments were determined using Student\u2019s t-test. p-Values indicate significant difference between DMSO and NU7441 with same cell line. At least 150 cells were counted over three independent experiments for microscopy. Twenty thousand cells were counted for each of three independent flow cytometry experiments.\n\n### Alt-EJ deletions occur at a higher frequency in 8E6 expressing cells\n\nHFK cells were transfected with the 8E6 expression vector or empty vector and equally passaged under selective pressure to establish HFK 8E6 versus control HFK LXSN cell lines. These were subjected to whole genome sequencing to determine the type and frequency of mutations accumulated within each cell type. This yielded 933,163,972 high-quality paired-end sequence reads for LXSN and 624,472,714 reads for 8E6 (Table 1). Normalizing LXSN reads to the same number as 8E6 and alignment to the human genome yielded 92.4% genome coverage for both and slightly more read depth for LXSN (mean 45.4 for LXSN compared to 44.6 for 8E6) (Table 2). Variant calling including single-nucleotide polymorphisms (SNPs) and insertions or deletions (indels) were also more for LXSN cells than 8E6 expressing cells with one variation every 3 kb in LXSN compared to one every 3333 bases in 8E6 (Table 3).\n\n**Table 1.**\n Read counts.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>LXSN</th>\n      <th>Reads</th>\n      <th>Quality reads</th>\n      <th>8E6</th>\n      <th>Reads</th>\n      <th>Quality reads</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>R1</td>\n      <td>480,023,697</td>\n      <td>466,581,986</td>\n      <td>R1</td>\n      <td>326,902,764</td>\n      <td>312,236,357</td>\n    </tr>\n    <tr>\n      <td>R2</td>\n      <td>480,023,697</td>\n      <td>466,581,986</td>\n      <td>R2</td>\n      <td>326,902,764</td>\n      <td>312,236,357</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Genome coverage of reads normalized to 624,472,714.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Samples</th>\n      <th>Mean read depth</th>\n      <th>Coverage (%)</th>\n      <th>Reads mapped (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LXSN</td>\n      <td>45.4</td>\n      <td>92.4</td>\n      <td>99.74</td>\n    </tr>\n    <tr>\n      <td>8E6</td>\n      <td>44.6</td>\n      <td>92.4</td>\n      <td>99.76</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Summary of variant analysis reads normalized to 624,472,714.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genome (GRCh37)</th>\n      <th>LXSN</th>\n      <th>8E6</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of variants processed</td>\n      <td>1,031,891</td>\n      <td>928,763</td>\n    </tr>\n    <tr>\n      <td>Number of effects</td>\n      <td>2,514,053</td>\n      <td>2,251,061</td>\n    </tr>\n    <tr>\n      <td>Genome total length</td>\n      <td>3,234,834,690</td>\n      <td>3,234,834,690</td>\n    </tr>\n    <tr>\n      <td>Genome effective length</td>\n      <td>3,095,677,413</td>\n      <td>3,095,677,413</td>\n    </tr>\n    <tr>\n      <td>Variant rate</td>\n      <td>1 variant every 3000 bases</td>\n      <td>1 variant every 3333 bases</td>\n    </tr>\n    <tr>\n      <td>Number of annotated genes</td>\n      <td>71,845</td>\n      <td>71,078</td>\n    </tr>\n    <tr>\n      <td>Insertions</td>\n      <td>476,516</td>\n      <td>431,055</td>\n    </tr>\n    <tr>\n      <td>Deletions</td>\n      <td>555,375</td>\n      <td>497,708</td>\n    </tr>\n  </tbody>\n</table>\n\nRepair by Alt-EJ can frequently result in indels with characteristic sequence signatures of flanking microhomology. Using previously established algorithms to identify such characteristic indels (McIntosh et al., 2020), we quantified the accumulation of Alt-EJ DNA scars in 8E6 cells compared to LXSN control cells. Counting mutations unique to both LXSN and 8E6 cells, this quantified the frequency of short and long deletions with increasing stretches of microhomology up to 20 bp (Tables 4\u20136, Tables 7 and 8); small insertions (<5 bp) resulting from templated synthesis in trans previously reported in Drosophila (Tables 4 and 7, Table 9); or large insertions (\u226518 bp) (Tables 4 and 10) resulting from templated synthesis in cis (snapback synthesis) described in mouse embryonic stem (ES) cells. Deletions represented the most abundant Alt-EJ mutations accumulating in both cell lines. Despite a larger number of annotated indels unique to LXSN (168,005 for LXSN compared to 104,322 for 8E6), this revealed a significantly higher frequency of accumulated short deletions (2\u201329 bp) in the 8E6 cell line (86.75% in 8E6 compared to 82.33% in LXSN, p-value = 2.2e-16). The frequency of short Alt-EJ type deletions was most significant for deletions with short (\u226410 bp) stretches of flanking microhomology (Table 4). This trend was similar for long deletions (30\u2013500 bp), albeit not statistically significant (Table 5, Table 6). Accumulating insertions both small and large bearing Alt-EJ signatures were far less in frequency in both 8E6 and LXSN cell lines though significantly more in LXSN cells (Tables 7 and 8) consistent with more non-Alt-EJ mutations annotated in LXSN.\n\n**Table 4.**\n Characteristics of microhomology (Mh) mediated short deletions (2\u201329 bp) in HFK 8E6 cells.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>LXSNtotal</th>\n      <th>Minimum Mh (bp)</th>\n      <th>Alt-EJ</th>\n      <th>Frequency(%)</th>\n      <th>E6total</th>\n      <th>Minimum Mh (bp)</th>\n      <th>Alt-EJ</th>\n      <th>Frequency(%)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>49,119</td>\n      <td>2</td>\n      <td>40,440</td>\n      <td>82</td>\n      <td>32,763</td>\n      <td>2</td>\n      <td>28,425</td>\n      <td>87</td>\n      <td>2.2e-16</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>3</td>\n      <td>22,580</td>\n      <td>46</td>\n      <td></td>\n      <td>3</td>\n      <td>15,512</td>\n      <td>47</td>\n      <td>1.13e-4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>4</td>\n      <td>16,370</td>\n      <td>33</td>\n      <td></td>\n      <td>4</td>\n      <td>11,337</td>\n      <td>35</td>\n      <td>1.61e-4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>5</td>\n      <td>10,826</td>\n      <td>22</td>\n      <td></td>\n      <td>5</td>\n      <td>7664</td>\n      <td>23</td>\n      <td>6.06e-6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>6</td>\n      <td>8918</td>\n      <td>18</td>\n      <td></td>\n      <td>6</td>\n      <td>6468</td>\n      <td>20</td>\n      <td>1.33e-8</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>7</td>\n      <td>7076</td>\n      <td>14</td>\n      <td></td>\n      <td>7</td>\n      <td>5037</td>\n      <td>15</td>\n      <td>1.37e-4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>8</td>\n      <td>6243</td>\n      <td>13</td>\n      <td></td>\n      <td>8</td>\n      <td>4557</td>\n      <td>14</td>\n      <td>7.16e-7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>9</td>\n      <td>4870</td>\n      <td>10</td>\n      <td></td>\n      <td>9</td>\n      <td>3507</td>\n      <td>11</td>\n      <td>2.72e-4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>10</td>\n      <td>4392</td>\n      <td>9</td>\n      <td></td>\n      <td>10</td>\n      <td>3165</td>\n      <td>10</td>\n      <td>5.22e-4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>11</td>\n      <td>3621</td>\n      <td>7</td>\n      <td></td>\n      <td>11</td>\n      <td>2498</td>\n      <td>8</td>\n      <td>0.1825</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>12</td>\n      <td>3234</td>\n      <td>7</td>\n      <td></td>\n      <td>12</td>\n      <td>2292</td>\n      <td>7</td>\n      <td>0.0222</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>13</td>\n      <td>2448</td>\n      <td>5</td>\n      <td></td>\n      <td>13</td>\n      <td>1700</td>\n      <td>5</td>\n      <td>0.1957</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>14</td>\n      <td>2211</td>\n      <td>5</td>\n      <td></td>\n      <td>14</td>\n      <td>1522</td>\n      <td>5</td>\n      <td>0.3412</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>15</td>\n      <td>1847</td>\n      <td>4</td>\n      <td></td>\n      <td>15</td>\n      <td>1185</td>\n      <td>4</td>\n      <td>0.2958</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>16</td>\n      <td>1602</td>\n      <td>3</td>\n      <td></td>\n      <td>16</td>\n      <td>1060</td>\n      <td>3</td>\n      <td>0.8522</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>17</td>\n      <td>1238</td>\n      <td>3</td>\n      <td></td>\n      <td>17</td>\n      <td>763</td>\n      <td>2</td>\n      <td>0.0861</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>18</td>\n      <td>1083</td>\n      <td>2</td>\n      <td></td>\n      <td>18</td>\n      <td>682</td>\n      <td>2</td>\n      <td>0.2440</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>19</td>\n      <td>866</td>\n      <td>2</td>\n      <td></td>\n      <td>19</td>\n      <td>509</td>\n      <td>2</td>\n      <td>0.0240</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>20</td>\n      <td>765</td>\n      <td>2</td>\n      <td></td>\n      <td>20</td>\n      <td>467</td>\n      <td>1</td>\n      <td>0.1358</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 5.**\n Characteristics of microhomology (Mh) long deletions (30\u2013500 bp) in human foreskin keratinocyte (HFK) 8E6 cells.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>LXSNtotal</th>\n      <th>Minimum Mh (bp)</th>\n      <th>Alt-EJ</th>\n      <th>Frequency(%)</th>\n      <th>E6total</th>\n      <th>Minimum Mh (bp)</th>\n      <th>Alt-EJ</th>\n      <th>Frequency(%)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2612</td>\n      <td>2</td>\n      <td>1959</td>\n      <td>75</td>\n      <td>1168</td>\n      <td>2</td>\n      <td>888</td>\n      <td>76</td>\n      <td>0.5247</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>3</td>\n      <td>1844</td>\n      <td>71</td>\n      <td></td>\n      <td>3</td>\n      <td>842</td>\n      <td>72</td>\n      <td>0.3704</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>4</td>\n      <td>1735</td>\n      <td>66</td>\n      <td></td>\n      <td>4</td>\n      <td>782</td>\n      <td>67</td>\n      <td>0.7790</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>5</td>\n      <td>1689</td>\n      <td>65</td>\n      <td></td>\n      <td>5</td>\n      <td>765</td>\n      <td>65</td>\n      <td>0.6460</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>6</td>\n      <td>1635</td>\n      <td>63</td>\n      <td></td>\n      <td>6</td>\n      <td>722</td>\n      <td>62</td>\n      <td>0.6734</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>7</td>\n      <td>1594</td>\n      <td>61</td>\n      <td></td>\n      <td>7</td>\n      <td>693</td>\n      <td>59</td>\n      <td>0.3429</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>8</td>\n      <td>1536</td>\n      <td>59</td>\n      <td></td>\n      <td>8</td>\n      <td>673</td>\n      <td>58</td>\n      <td>0.5171</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>9</td>\n      <td>1487</td>\n      <td>57</td>\n      <td></td>\n      <td>9</td>\n      <td>656</td>\n      <td>56</td>\n      <td>0.6868</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>10</td>\n      <td>1433</td>\n      <td>55</td>\n      <td></td>\n      <td>10</td>\n      <td>634</td>\n      <td>54</td>\n      <td>0.7669</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>11</td>\n      <td>1381</td>\n      <td>53</td>\n      <td></td>\n      <td>11</td>\n      <td>616</td>\n      <td>53</td>\n      <td>0.9684</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>12</td>\n      <td>1332</td>\n      <td>51</td>\n      <td></td>\n      <td>12</td>\n      <td>596</td>\n      <td>51</td>\n      <td>1.0000</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>13</td>\n      <td>1286</td>\n      <td>49</td>\n      <td></td>\n      <td>13</td>\n      <td>568</td>\n      <td>49</td>\n      <td>0.7580</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>14</td>\n      <td>1245</td>\n      <td>48</td>\n      <td></td>\n      <td>14</td>\n      <td>543</td>\n      <td>46</td>\n      <td>0.5265</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>15</td>\n      <td>1202</td>\n      <td>46</td>\n      <td></td>\n      <td>15</td>\n      <td>530</td>\n      <td>45</td>\n      <td>0.7410</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>16</td>\n      <td>1168</td>\n      <td>45</td>\n      <td></td>\n      <td>16</td>\n      <td>505</td>\n      <td>43</td>\n      <td>0.4172</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>17</td>\n      <td>1131</td>\n      <td>43</td>\n      <td></td>\n      <td>17</td>\n      <td>485</td>\n      <td>42</td>\n      <td>0.3249</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>18</td>\n      <td>1089</td>\n      <td>42</td>\n      <td></td>\n      <td>18</td>\n      <td>468</td>\n      <td>40</td>\n      <td>0.3673</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>19</td>\n      <td>1051</td>\n      <td>40</td>\n      <td></td>\n      <td>19</td>\n      <td>451</td>\n      <td>39</td>\n      <td>0.3644</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>20</td>\n      <td>1010</td>\n      <td>39</td>\n      <td></td>\n      <td>20</td>\n      <td>433</td>\n      <td>37</td>\n      <td>0.3697</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 6.**\n Filtered variants for Alt-EJ analyses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>LXSN</th>\n      <th>8E6</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pre-filtered</td>\n      <td>879,302</td>\n      <td>820,766</td>\n    </tr>\n    <tr>\n      <td>Unique INDELs</td>\n      <td>168,005</td>\n      <td>104,322</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 7.**\n Short deletions bearing microhomology signatures of Alt-EJ.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Short deletions (2\u201329 bp)</th>\n      <th>Matching Alt-EJ</th>\n      <th>Frequency (%)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LXSN</td>\n      <td>49,119</td>\n      <td>40,440</td>\n      <td>82.33</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>8E6</td>\n      <td>32,763</td>\n      <td>28,425</td>\n      <td>86.75</td>\n      <td>2.2e-16</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 8.**\n Long deletions bearing microhomology signatures of Alt-EJ.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Long deletions (\u226530 bp)</th>\n      <th>Matching Alt-EJ</th>\n      <th>Frequency (%)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LXSN</td>\n      <td>2612</td>\n      <td>1959</td>\n      <td>75.00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>8E6</td>\n      <td>1168</td>\n      <td>888</td>\n      <td>76.03</td>\n      <td>0.5247</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 9.**\n Short insertions bearing microhomology signatures of Alt-EJ.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Short insertions (&lt;5 bp)</th>\n      <th>Matching Alt-EJ</th>\n      <th>Frequency (%)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LXSN</td>\n      <td>50,390</td>\n      <td>959</td>\n      <td>1.90</td>\n      <td>5.62e-10</td>\n    </tr>\n    <tr>\n      <td>8E6</td>\n      <td>27,611</td>\n      <td>367</td>\n      <td>1.33</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 10.**\n Long insertions bearing microhomology signatures of Alt-EJ.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Long insertions (\u226518 bp)</th>\n      <th>Matching Alt-EJ</th>\n      <th>Frequency %</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LXSN</td>\n      <td>5485</td>\n      <td>1068</td>\n      <td>19.47</td>\n      <td>1.547e-05</td>\n    </tr>\n    <tr>\n      <td>8E6</td>\n      <td>2545</td>\n      <td>392</td>\n      <td>15.40</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nWe have previously shown that 8E6 attenuates the two most prominent DSB pathways (HR and NHEJ) (Hu et al., 2020; Wallace et al., 2015). However, 8E6 delays rather than abrogates DSB repair, leaving the question of how DSBs are repaired in cells expressing 8E6. Here, we show that 8E6 promotes DSB repair via Alt-EJ (Figure 10). Because Alt-EJ can be accomplished using different sets of repair factors, we used small molecule inhibitors to determine which Alt-EJ components were most essential for DSB repair in 8E6 expressing cells. This analysis demonstrated that in HFK 8E6 cells, DSBs become three- to fourfold more persistent when PARP1 is inhibited but only ~1.5-fold more persistent when POL\u03b8 is inhibited. Thus, 8E6 promotes DSB repair that is dependent on PARP1 and to a lesser extent on POL\u03b8.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/81923/elife-81923-fig10-v3.jpg)\n\n**Figure 10.:** (i) DSB occurs in G1 phase in cells expressing 8E6. (ii) Non-homologous end joining (NHEJ) initiates with auto-phosphorated DNA-dependent protein kinase catalytic subunit (DNA-PKcs). (iii) 8E6 stalls NHEJ by degrading p300 (Hu et al., 2020). (iv) Homologous recombination (HR) initiates and fails at the site of failed NHEJ (Hu and Wallace, 2022c). (v) Finally, PARP-1-dependent Alt-EJ repairs the DSB, which lead to microhomology mediated indels.\n\nMoreover, we show that HFK 8E6 cells can be further induced to repair DSBs via Alt-EJ by the inhibition of an early step during NHEJ (DNA-PKcs) but not a later step in the pathway (Ligase IV). The increased use of Alt-EJ induced by DNA-PKcs inhibition prevented 8E6 from generating previously described DSB repair defects including the formation of RAD51 foci in G1 and delayed DSB repair. We also show that DNA-PKcs inhibition does not cause an increase in HR. Further, we provide mechanistic insight into these phenomena by showing that 8E6 promotes Alt-EJ via p300 degradation and that DNA-PKcs inhibition can prevent RAD51 foci from forming in G1 because of p300 loss. Finally, we provide whole genome sequence analysis that demonstrates 8E6 expression results in a significantly higher frequency of short deletions bearing microhomology signatures of Alt-EJ. These Alt-EJ deletions appear more frequently as short deletions (2\u201329 bp) bearing short stretches of microhomology (2\u201310 bp) (Table 4).\n\nThere are some limitations to this study. This includes potential off target activity of inhibitors. Further complicating the analysis, many DNA repair factors (e.g., PARP1) are involved in more than one repair pathways. We also acknowledge that U2OS may contain mutations (such as an ATR mutation) that change the mechanisms of DSB repair pathway choice (Elbakry et al., 2021; Juh\u00e1sz et al., 2018). However, the known ways that 8E6 alters DSB repair are consistent in U2OS and primary (HFK) cells, suggesting that results obtained in U2OS cells can be extrapolated to other cell types (Hu et al., 2020; Wallace et al., 2015). 8E6 was also expressed with the other HPV8 early genes as would be the case during a natural infection. We are currently working to determine the extent that these other early genes augment or suppress 8E6-induced changes in DSB repair.\n\nMany of the findings in this study are consistent with the existing hypotheses about DSB repair and the potential for beta-HPV infections to promote NMSCs (Gheit, 2019; Kremsdorf et al., 1982; Pfister, 2003). For example, our data in vector control (LXSN) cells show that Alt-EJ is increased when NHEJ is inhibited and that DSB repair is not significantly delayed by inhibition of Alt-EJ. This is compatible with the idea that Alt-EJ is primarily used when there are defects in either HR or NHEJ (Deriano and Roth, 2013; Simsek and Jasin, 2010; Truong et al., 2013). Similarly, by showing that 8E6 promotes Alt-EJ, a mutagenic DSB repair pathway, we provide evidence in support of the idea that transient \u03b2-HPV infections may promote tumorigenesis by causing mutations (Tommasino, 2019; Viarisio et al., 2018; Wendel and Wallace, 2017). We also show that p300 restricts DSB repair by Alt-EJ and that at least some of the DSB repair defects caused by p300 loss or 8E6 expression can be overcome by inhibition of DNA-PKcs. Does DNA-PKcs inhibition represent a feasible approach to block the increased mutagenesis associated with 8E6 expression? Or on the contrary, does DNA-PKcs inhibition promote more mutations generated by Alt-EJ?\n\nInduction of Alt-EJ is not limited to HPV8 as a recent report demonstrated that a different HPV protein from a different genus of HPV (HPV16 E7) also increases the use of Alt-EJ (Leeman et al., 2019). Further, HPV positive head and neck squamous cell carcinomas and other cancers with downregulated TGF-b signaling have an elevated frequency of mutations with signatures of repair by Alt-EJ (Liu et al., 2018; Liu et al., 2021). We show that 8E6 increases the frequency of short deletions with very short stretches of flanking microhomology. Thus, the ability to promote Alt-EJ seems to have evolved in two separate genes in the HPV family (once in HPV16 E7 and once in HPV8 E6) (Leeman et al., 2019). Why would these viruses both evolve ways to promote Alt-EJ? Perhaps, this can be linked to their ability to impair HR and/or NHEJ (Hu et al., 2020; Wallace et al., 2015). Unrepaired DSBs are highly lethal, thus we infer a strong selective pressure for HPV (a non-lytic virus) to find alternative way(s) to repair DSBs.\n\nThe data presented here invoke other interesting thoughts. Do HPV8 infections leave Alt-EJ signatures during natural infections? If so, can Alt-EJ signatures be used to provide evidence that naturally occurring beta-HPVs cause mutations? The ability to identify mutations caused by past transient beta-HPV infections would provide the long-sought after evidence that these infections permanently harm host cells.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HFK</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Derived from neonatal foreskins</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>N/TERT HFK</td>\n      <td>Michael Underbrink (PMID:18256157)</td>\n      <td></td>\n      <td>N/TERT immortalized HFK</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>U2OS</td>\n      <td>PMID:10541549</td>\n      <td></td>\n      <td>Cell line used to measure HR frequency</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Alt-EJ reporter</td>\n      <td>Addgene</td>\n      <td>#113619</td>\n      <td>Alt-EJ reporter using 4 nt microhomology</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Alt-EJ reporter (5\u2019 end)</td>\n      <td>Addgene</td>\n      <td>#113620</td>\n      <td>sgRNA/CAS9 to induce the 5\u2019 end DSB</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Alt-EJ reporter (terminal)</td>\n      <td>Addgene</td>\n      <td>#113625#113625</td>\n      <td>sgRNA/CAS9 to induce the DSB at the edge of the microhomology</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Alt-EJ reporter (imbedded)</td>\n      <td>Addgene</td>\n      <td>#113626</td>\n      <td>sgRNA/CAS9 to induce the DSB 8 nt upstream of the microhomology</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RAD51(Mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>ab1837</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-cyclin E (Rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>4132S</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-pH2AX S139 (Rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>9718S</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-cyclin A (Mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>ab39</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 594 (Goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A11012</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488 (Goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A11001</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CCS1477</td>\n      <td>Chemietek</td>\n      <td>CT-CCS1477</td>\n      <td>P300 inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NU7441</td>\n      <td>Selleckchem</td>\n      <td>S2638</td>\n      <td>DNA-PKcs inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Zeocin</td>\n      <td>Alfa Aesar</td>\n      <td>J67140-XF</td>\n      <td>Used to induce DSBs</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ART558</td>\n      <td>MedChem Express</td>\n      <td>HY-141520</td>\n      <td>Pol Theta inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI stain</td>\n      <td>Invitrogen</td>\n      <td>D1306</td>\n      <td>IF (10 \u00b5M)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NUCLEAR-ID Red</td>\n      <td>Enzo Life Science</td>\n      <td>ENZ-52406</td>\n      <td>Flow cytometry (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>ImageJ (https://imagej.nih.gov/ij/)</td>\n      <td></td>\n      <td>Version 2.3.0</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad Prism (https://graphpad.com)</td>\n      <td></td>\n      <td>Version 9.0.0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and reagents\n\nPrimary HFKs were derived from neonatal human foreskins. Immortalized human foreskin keratinocytes (N/TERT HFK) provided by Michael Underbrink (University of Texas Medical Branch). Both HFKs were grown in EpiLife medium (MEPICF500, Gibco), supplemented with 60 \u00b5M calcium chloride (MEPICF500, Gibco), human keratinocyte growth supplement (MEPICF500, Gibco), and 1% penicillin-streptomycin (PSL02-6X100ML, Caisson). Both keratinocyte cell lines were derived from different donors. They were maintained at low passage number (<20 passages) for all experiments described in this manuscript. Their identity was confirmed by morphology and growth in selective media. Only keratinocytes are viable in EpiLife media.\n\nU2OS were maintained in DMEM supplemented with 10% FBS and 1% penicillin-streptomycin. Zeocin (J67140-XF, Alfa Aesar) was used to induce DSBs (10 \u00b5g/mL, 10 min). Their identity was confirmed by the presence of the DR-GFP construct used to measure HR. This reporter cassette only exists in these cells within our lab. 8E6 expression (or lack thereof) was confirmed by rtPCR. All cell lines in this study underwent regular mycoplasma testing. NU7441 (S2638, Selleckchem) was used to inhibit DNA-PKcs phosphorylation (1 \u00b5M) and verify the pDNA-PKcs antibody. siRNA DNA-PKcs was used to further validate pDNA-PKcs antibody. KU55933 (Sigma-Aldrich, SML1109) was used to validate RAD51 antibody as previously described (Bakr et al., 2015). CCS1477 (CT-CCS1477, Chemietek) was used to inhibit p300 activity (1 \u00b5M). ART558 (HY-141520, MedChem Express) was used to inhibit Pol Theta activity. Alt-EJ plasmids (#113619, #113620, #113625, #113626, Addgene) were used to measure Alt-EJ efficiency.\n\n### Immunofluorescence microscopy\n\nCells were seeded onto either 96-well glass-bottom plates and grown overnight. Cells treated with zeocin (10 \u03bcg/mL, 10 min) were fixed with 4% paraformaldehyde. Then, 0.1% Triton-X was used to permeabilize the cells, followed by blocking with 3% bovine serum albumin. Cells were then incubated with the following antibodies: RAD51 (ab1837, Abcam, 1:200), cyclin E (4132S, Cell Signaling), pH2AX S139 (9718S, Cell Signaling), and cyclin A (ab39, Abcam). The cells were washed and stained with the appropriate secondary antibodies: Alexa Fluor 594 (red) goat anti-rabbit (A11012, Thermo Fisher Scientific), Alexa Fluor 488 (green) goat anti-mouse (A11001, Thermo Fisher Scientific). After washing, the cells were stained with 10 \u00b5M DAPI in PBS and visualized with the Zeiss LSM 770 microscope. Images were analyzed using the ImageJ techniques previously described (Murthy et al., 2018). Cyclin E intensity was measured for each cell. Average cyclin E intensity of cells grown in media without growth factor for 4 hr was used to define the threshold of cyclin E positive.\n\n### Flow cytometry\n\nCells were collected from 6 cm plates, at about 80\u201390% confluence, by using trypsinization. Cells were washed with cold PBS and fixed with 95% cold ethanol for 10 min at \u201320\u00b0C. Cells were stained with anti-RAD51 antibody (ab1837, Abcam, 1:100) and Alexa Fluor 488 goat anti-mouse (A11001, Thermo Fisher Scientific). After washing, cells were resuspended in 200 \u00b5L PBS and NUCLEAR-ID Red DNA stain (ENZ-52406, Enzo Life Science), and incubated in the dark at room temperature for 30 min. Samples were analyzed by a BD Accuri C6 Plus Flow Cytometer.\n\n### Immunoblotting\n\nAfter being washed with ice-cold PBS, cells were lysed with RIPA Lysis Buffer (VWRVN653-100ML, VWR Life Science), supplemented with Phosphatase Inhibitor Cocktail 2 (P5726-1ML, Sigma) and Protease Inhibitor Cocktail (B14001, Bimake). The Pierce BCA Protein Assay Kit (89167-794, Thermo Fisher Scientific) was used to determine protein concentration. Equal protein lysates were run on Novex 3\u20138% Tris-acetate 15 Well Mini Gels (EA03785BOX, Invitrogen) and transferred to Immobilon-P membranes (IPVH00010, Thermo Fisher Scientific). Membranes were then probed with the following primary antibodies: GAPDH (sc-47724, Santa Cruz Biotechnologies, 1:1000) P300 (sc-48343, Santa Cruz Biotechnologies). CAS9 (65832S, Cell Signaling). Pol Theta (PA5-69577, Thermo Fisher Scientific). After exposure to the matching HRP-conjugated secondary antibody, cells were visualized using SuperSignal West Femto Maximum Sensitivity Substrate (34095, Thermo Fisher Scientific).\n\n### Transfection and Alt-EJ assay\n\nHFK cells were plated in 3 mL of complete growth medium in a 6 cm plate. Cells were used at 80% confluency. Two \u00b5g of plasmids were diluted in 200 \u00b5L Xfect transfection reagent (631317, Takara). The mixture was incubated at room temperature for 15 min. The transfection mixture was added to each well drop-wise and incubated for 48 hr at 37\u00b0C. Cells were harvested for flow cytometry analysis.\n\n### Whole genome sequencing analysis\n\nHFK cells were transfected with the 8E6 expression vector or empty vector and equally passaged under selective pressure to establish HFK 8E6 versus control HFK LXSN cells. DNA was extracted using Trizol (Invitrogen), libraries were prepared using the Illumina DNA PCR-Free prep kit and sequenced with paired 300-bp v1.5 reads on a Novaseq 6000. All protocols were performed using the standard procedures provided by the manufacturers. Sequences have been deposited in the NCBI SRA database with accession number (PRJNA 856469).\n\n### Variant calling and Alt-EJ mutational analysis\n\nWhole genome sequences for passage matched LXSN and 8E6 cell lines were analyzed for indel detection using the best practices for variant discovery analysis outlined by the Broad Institute (DePristo et al., 2011). Briefly, reads from the sequenced samples were preprocessed for quality control by removing adapter sequences and low-quality reads (<Q20). Quality paired-end reads from LXSN were normalized to the same number of reads from 8E6 (624,472,714) and both sets were mapped to the human reference genome (GRCh37/hg19) using Burrows-Wheeler Aligner (BWA v0.7.17) (Li and Durbin, 2010). Aligned reads were sorted and duplicate reads were removed using Picard-tools (v2.25.5). Raw genomic variants, including SNPs and DNA insertions and deletions (indels), were identified using the GATK HaplotypeCaller algorithm in GATK (v4.1.9.0) (\u2018Genomics in the Cloud [Book]\u2019, n.d.). The identified indels were extracted and filtered for quality with GATK VariantFiltration (QUAL score normalized by allele depth: QD <2.0, Phred-scaled probability: FS >200, and Symmetric odds ratio test: SOR >10), followed by base quality score recalibration using GATK BaseRecalibrator and applied to the aligned bam files. A second round of variant calling (GATK Haplotype Caller) was performed using recalibrated (analysis-ready) SNPs and indels further filtered for quality. SnpEff 5.0 was used to annotate the genetic variants.\n\nAlt-EJ mutational signatures were counted as previously described (McIntosh et al., 2020). Briefly, indels previously identified by the 1000 Genomes Project or shared between LXSN and 8E6 cell lines were removed. Alt-EJ mutational signatures bearing flanking microhomology were then determined in R for small deletions (2\u201329 bp) and long deletions (30\u2013500 bp), small insertions (<5 bp), and large snap-back insertions (\u226518 bp). For analysis of deletions with microhomology, the sequence adjacent to each deletion was extracted based on the human genome (R package BSgenome.Hsapiens. UCSC.hg19) and annotated according to the number of contiguous matching nucleotides between the deletion and the adjacent sequence, counted from the beginning of each sequence (microhomology). Different microhomology length thresholds (ranging from 2 to 20 bp) were then used to filter the results into Alt-EJ matching deletions unique to each LXSN and E6 cell line.\n\nTo detect synthesis-dependent small insertions, we extracted \u00b115 nt surrounding the insertion (from the hg19 human genome) and identified whether there was a repeated sequence either 5\u2019 or 3\u2019 to the insertion that matched the full insertion and also at least 2 nt on either side. Matches also needed to have a gap of at least 1 nt between the two sequences.\n\nFor synthesis-dependent snapback (large) insertions, only the insertion sequence was considered. Each sequence was compared to its own reverse-complement sequence and any repeats of \u22657 nt also separated by at least 4 nt were labeled as snapback-like. To avoid spurious false negatives, only insertions of at least (2\u00d77)+4 = 18 nt were considered.\n\n### Cell viability assay\n\nTen thousand cells/well were seeded on a 96-well plate and grown for 24 hr. Zeocin treatment (10 \u03bcg/mL, 10 min) was applied 24 hr after seeding. Then ART558 dose series was added and incubated for 48 hr at 37\u00b0C. Forty-eight hr after treatment, 10 \u00b5L/well of MTT solution (10 mg/mL) was added for 24 hr. Subsequently, wells were incubated with 100 \u00b5L solubilization solution for 24 hr and the optical density measured at 640 nm. Doses for ARTT558 : 0, 1, 5, 10, 15, 20, 25, 50.\n\n### Statistical analysis\n\nAll values are represented as mean \u00b1 standard error (SE). Statistical differences between groups were measured by using Student\u2019s t-test. p-Values in all experiments were considered significant at less than 0.05. Statistical significance of Alt-EJ mutational frequencies between LSXN and 8E6 in each instance (small or large deletions or insertions) were determined by Fisher\u2019s exact t-test using prop.test in R.\n",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "61f8ee29-0cfa-493f-ac30-6d049e08980d",
+      "submission_id": "3f191435-9cee-44d9-9531-b2cad9d2b942",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wolf-Dietrich Heyer, https://ror.org/05rrcem69 University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81923.sa0](https://doi.org/10.7554/eLife.81923.sa0)\n\nThis article reports useful data on how human papillomavirus 8E6 protein regulates DSB repair pathways in human cells. The data support the claim that 8E6 promotes alternative end-joining through binding and destabilizing the p300 acetyltransferase, showing the involvement of PARP-1-dependent alternative end-joining and to a lesser degree DNA Polymerase theta-dependent alternative end-joining.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wolf-Dietrich Heyer, https://ror.org/05rrcem69 University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81923.sa1](https://doi.org/10.7554/eLife.81923.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"\u0392 human papillomavirus 8E6 promotes alternative end-joining\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wolf-Dietrich Heyer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jessica Tyler as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nRecommendations for the authors:\n\nThis study reports convincing data that in 8E6 expressing cells DSB repair is shifted towards alt-EJ at the expense of NHEJ and HR, following logically previous published studies with HPV16 and earlier work that 8E6 inhibits NHEJ and HR but does not preempt DSB repair. It is important to show experimentally, what might be considered evident, but the advance remains rather incremental. In addition, the study remains descriptive and offers little insight into the mechanisms involved other than it involves and binding (and inferred destruction) of p300. How p300 regulates DSB repair pathway choice remains unclear and is not further illuminated by this study. To add some novelty that goes beyond the HPV16 studies and closing an evident gap in the argument it to demonstrate an involvement of DNA polymerase theta to ascertain that the alt-EJ pathway involved is TMEJ. While most essential revisions require only text changes or clarifications, #4 is critical and will involve novel experimentation testing the involvement of DNA polymerase theta.\n\nEssential revisions:\n\n1) Abstract, line 24: There appear to be several alt-EJ pathways. Does this refer to TMEJ? If so, it seems now to be clear that TMEJ has a unique function and is not a backup pathway as evinced by the POLq KO phenotype and recent publications on POLq action in mitosis. See also lines 90 and 108.\n\n2) Please address the following points either by text changes or a rebuttal:\n\nIntroduction:\n\nLeeman et al. 2019 and Liu et al. 2018 and 2021 are precedents and should be in the introduction.\n\nLines 263-264:\n\nThe sentence is self-serving as Leeman et al. 2019 and Liu et al. 2018 are precedents.\n\nLine 266:\n\nWeaver et al., 2015 is incorrectly referenced. The paper reports that HPV+ HNSCC are sensitive to PARP inhibition but does not report a mutational signature or evidence of alt-EJ.\n\nLines 265-66:\n\nThe correlation of a mutational signature consistent with increased Alt-EJ across TCGA was reported by Liu et al. 2021.\n\nLines 267:\n\nThe statement that 8E6 causes a similar signature is a tautology.\n\nLines 269-73:\n\nThe statement that the ability to promote Alt-EJ seems to have evolved at least twice independently in the HPV family needs more clarification-Isn't E6 similar in both HPV16 and HPV8? And given that it is loss of HR/NHEJ that promotes the use of alt-EJ, the statement (line 273) that there is \"strong selective pressure for HPV (a non-lytic virus) to find a way to repair DSBs\" is not correct.\n\n3) Primary and h-TERT immortalized human foreskin keratinocytes are not sufficiently described-is this one or multiple sources, at what passage were experiments conducted, was mycoplasma testing routine, how was cell identity verified? Similar questions pertain to U20S.\n\n4) It seems critical to experimentally test an involvement of DNA polymerase theta (POLq) in the 8E6-induced alt-EJ events reported here. This does not require showing POLq dependence for each and every assay but available POLq KO cell lines or knockdown systems should test this point for some of the endpoints reported here.\n\nThis will also require an additional paragraph in the introduction and discussion to highlight the complexity of alt-EJ pathways to put TMEJ in context.\n\n5) Can the authors explain the quite large differences in Alt-EJ activity between figures; e.g., in figure 1 the imbedded activity is 12.46% versus 22% in figure 2. Is this transfection efficiency? A note in the manuscript may be required to explain this.\n\n6) The alt-EJ assay (Bhargava et al.) should be discussed in more detail and the relevant figure should show the nucleotide sequences involved. In particular, the involvement of the 4 nt microhomology should be discussed, as for this event the assay is significantly POLq-dependent (Figure 4 of Bhargava et al.). This becomes also important in the discussion of the genomic DNA sequencing data.\n\n7) In a publication too recent for the author to include but relevant for the interpretation and discussion of their PARPi data, Luedeman et al. (2022 Nature Comm PMID: 35927262) showed a rather modest effect of PARP on TMEJ. In a revision, this publication should be included and discussed.\n\n8) Figure 4AB. The results are not well described in the text. Isn't the key result that lesions (\u03b3 H2AX foci) are down in 8E6 expressing cells?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"\u0392 human papillomavirus 8E6 promotes alternative end-joining\" for further consideration by eLife. Your revised article has been evaluated by Paivi Ojala (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nRecommendations for the authors:\n\nThe authors addressed the concerns of the reviewers by adding the requested experiments testing the involvement of DNA polymerase theta and making the necessary text changes and adding clarifications.\n\nThe following changes are required before acceptance:\n\nFigure 2 supplement 1A and C: Add some white space between the 2 blots to indicate that these are separate.\n\nPlease clarify and make sure that the loading controls (GAPDH) were run on the same gel from which the Cas9 signal was derived in Figure 2 supplement 1A and C.\n",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "536aab74-a226-4d16-8aa8-3751a7cb43dd",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C1",
+      "claim": "Beta-HPVs, including type 8 (HPV8), are associated with nonmelanoma skin cancer (NMSC) in immunocompromised individuals including people with a rare genetic disorder epidermodysplasia verruciformis and organ transplant recipients.",
+      "claim_type": "EXPLICIT",
+      "source": "Beta-HPVs, including type 8 (HPV8), are associated with nonmelanoma skin cancer (NMSC) in immunocompromised individuals including people with a rare genetic disorder epidermodysplasia verruciformis and organ transplant recipients (Bouwes Bavinck et al., 2018; Bouwes Bavinck et al., 2001; Dell'Oste et al., 2009; Sichero et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "4d3cf5b9-2506-4d62-ad24-43e19e531259",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C2",
+      "claim": "Beta-HPV infections are hypothesized to promote cancer formation by making UV-induced DNA damage more mutagenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Because beta-HPV infections are not persistent in immunocompetent people, they are hypothesized to promote cancer formation by making UV-induced DNA damage more mutagenic (Hufbauer et al., 2015; Spriggs and Laimins, 2017; Wendel and Wallace, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "42091b53-10cd-47eb-a71c-0b654cf30ccd",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C3",
+      "claim": "The E6 protein from HPV8 (8E6) impairs DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, our group and others have used in vitro and in vivo systems to demonstrate that the E6 protein from HPV8 (8E6) impairs DNA repair (Hufbauer et al., 2015; Rollison et al., 2019; Wallace et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research including authors' own work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "ef2d8f74-d59f-45cb-aff4-595993e434e8",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C4",
+      "claim": "The interaction with and destabilization of p300 is a key mechanism by which 8E6 hinders DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction with and destabilization of p300 is a key mechanism by which 8E6 hinders DNA repair (Dacus and Wallace, 2021; Howie et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "04e30892-907a-4deb-8f99-bb57ddf519c6",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C5",
+      "claim": "P300 is an acetyltransferase that regulates transcription by chromatin remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "P300 is an acetyltransferase that regulates transcription by chromatin remodeling (Ait-Si-Ali et al., 2000; Dutto et al., 2018; Goodman and Smolik, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "acb6f446-265f-4702-bee1-1a9f051224b5",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C6",
+      "claim": "By binding p300, 8E6 decreases the abundance of multiple DNA repair proteins including ATR, ATM, BRCA1, and BRCA2.",
+      "claim_type": "EXPLICIT",
+      "source": "By binding p300, 8E6 decreases the abundance of multiple DNA repair proteins including ATR, ATM, BRCA1, and BRCA2 (Wallace et al., 2015; Wallace et al., 2013; Wallace et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "4d1837db-d7ac-4f98-ab20-361b45fbb496",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C7",
+      "claim": "8E6 lowers the activation of ATM and ATR signaling, decreasing the cellular response to UV-damaged DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This lowers the activation of ATM and ATR signaling, decreasing the cellular response to UV-damaged DNA (Snow et al., 2019; Wallace et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "a7266bc7-e558-4287-8c18-7736cc37b5d7",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C8",
+      "claim": "The limited ability to repair UV damage increases the frequency with which UV causes replication forks to collapse into double strand breaks (DSBs) in DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The limited ability to repair UV damage increases the frequency with which UV causes replication forks to collapse into double strand breaks (DSBs) in DNA (Pathania et al., 2011; Rapp and Greulich, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "08e5a1e4-d372-4758-ba00-c0695b9d9822",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C9",
+      "claim": "Homologous recombination (HR) is minimally mutagenic, but restricted to in S/G2 phase when the sister chromatids can serve as homologous templates.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous recombination (HR) is minimally mutagenic, but restricted to in S/G2 phase when the sister chromatids can serve as homologous templates (Orthwein et al., 2015; Shibata et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "436d85d0-4b3d-4ced-ba65-560a66cd9396",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C10",
+      "claim": "When HR is inhibited, non-homologous end joining (NHEJ) is used to repair DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "When HR is inhibited (by cell cycle position, mutation to repair factors, or artificially), non-homologous end joining (NHEJ) is used to repair DSBs (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9ea1b75b-5163-4035-848b-07cab333beb7",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C11",
+      "claim": "NHEJ can occur throughout the cell cycle, as it does not require a homologous template.",
+      "claim_type": "EXPLICIT",
+      "source": "NHEJ can occur throughout the cell cycle, as it does not require a homologous template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about NHEJ mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "18cc382b-9532-4d24-bd70-b3de908c83ca",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C12",
+      "claim": "NHEJ is more mutagenic than HR because NHEJ generates and ligates blunt ends to fix a DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because NHEJ generates and ligates blunt ends to fix a DSB, it is more mutagenic than HR (Mao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "21efb689-0573-4309-bd7e-9c536f51ae15",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C13",
+      "claim": "8E6 attenuates both HR and NHEJ by degrading p300.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that 8E6 attenuates both HR and NHEJ by degrading p300 (Hu et al., 2020; Hu and Wallace, 2022c; Wallace et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to authors' own published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "cab234a5-b410-4ff7-93d1-ea42d7854ab7",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C14",
+      "claim": "8E6 does not block the initiation of NHEJ or HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 8E6 does not block the initiation of NHEJ or HR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on authors' previous findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "be828f0e-3a49-484b-9eb2-a741739ec0e0",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C15",
+      "claim": "NHEJ initiation occurs when DNA-dependent protein kinase catalytic subunit (DNA-PKcs) complexes at DSBs and activates itself by autophosphorylation (pDNA-PKcs).",
+      "claim_type": "EXPLICIT",
+      "source": "NHEJ initiation occurs when DNA-dependent protein kinase catalytic subunit (DNA-PKcs) complexes at DSBs and activates itself by autophosphorylation (pDNA-PKcs) (Davis et al., 2014; Jiang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "2e70c35e-bf0c-42e0-9733-1c16d077b9dd",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C16",
+      "claim": "DNA-PKcs autophosphorylation occurs readily in the presence of 8E6.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs readily in the presence of 8E6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on authors' observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "6324e2aa-2e1c-4ccd-b8c1-931aedcb9fb5",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C17",
+      "claim": "8E6 prevents the resolution of pDNA-PKcs repair complexes and attenuates other downstream steps in NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 8E6 prevents the resolution of pDNA-PKcs repair complexes and attenuates other downstream steps in NHEJ (Hu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to authors' published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "1a01d2dc-9b7c-410f-a482-15692aa4770f",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C18",
+      "claim": "8E6 allows the HR pathway to initiate, before hindering the resolution of RAD51 repair complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 8E6 allows the HR pathway to initiate, before hindering the resolution of RAD51 repair complexes (Wallace et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to authors' published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "cdcabc5d-7921-48ab-9a6b-464040bbf7af",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C19",
+      "claim": "Cells respond to 8E6-associated inhibition of NHEJ by trying to complete HR during G1.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently demonstrated that cells respond to 8E6-associated inhibition of NHEJ by trying to complete HR during G1 (Hu et al., 2022a; Hu et al., 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to authors' recent published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "5f1d3917-3083-40d1-beb7-e20572a1d23c",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C20",
+      "claim": "8E6 leads to persistent unresolved RAD51 repair complexes formed during G1.",
+      "claim_type": "EXPLICIT",
+      "source": "This ultimately leads to persistent unresolved RAD51 repair complexes formed during G1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on authors' previous findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "fec9a789-2661-4203-97ed-eb337e796552",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C21",
+      "claim": "When NHEJ and HR fail, alternative end joining (Alt-EJ) is tasked with completing DSB repair.",
+      "claim_type": "EXPLICIT",
+      "source": "When NHEJ and HR fail, another mutagenic repair pathway known as alternative end joining (Alt-EJ) is tasked with completing DSB repair (Iliakis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "98c0fcf9-6eb9-4906-a0ed-3a7585ba358b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C22",
+      "claim": "8E6 promotes DSB repair by Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use reporter constructs and small molecule inhibitors of DNA repair factors to demonstrate that 8E6 promotes DSB repair by Alt-EJ",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated using reporter constructs and inhibitors in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "bdae521b-8fef-45ef-be3b-01c5279a853a",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C23",
+      "claim": "The use of Alt-EJ is the indirect result of initiating NHEJ when the pathway cannot be completed.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use reporter constructs and small molecule inhibitors of DNA repair factors to demonstrate that 8E6 promotes DSB repair by Alt-EJ and to show that the use of Alt-EJ is the indirect result of initiating NHEJ when the pathway cannot be completed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated using reporter constructs and inhibitors in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9c72263e-d0e4-497c-b266-ee4e89d2abf9",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C24",
+      "claim": "8E6 increases terminal Alt-EJ in HFK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient transfection of this reporter into HFK LXSN and HFK 8E6 demonstrated that 8E6 increased terminal and imbedded Alt-EJ (Figure 1B\u2013E and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transfection experiments and flow cytometry data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "47d21556-a1cf-4b39-b84e-8578d598ffb3",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C25",
+      "claim": "8E6 increases imbedded Alt-EJ in HFK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient transfection of this reporter into HFK LXSN and HFK 8E6 demonstrated that 8E6 increased terminal and imbedded Alt-EJ (Figure 1B\u2013E and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transfection experiments and flow cytometry data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "67923123-f0eb-4e3c-9f28-2e5cf1f06371",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C26",
+      "claim": "PARP-1 inhibition blocks Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that PARP-1 inhibition blocked Alt-EJ using the reporter system described above (Figure 2A\u2013D and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed using reporter system and olaparib treatment, shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "ab4434b3-d901-4259-bcca-d084cc83722d",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C27",
+      "claim": "PARP-1 inhibition does not significantly alter DSB repair in HFK LXSN cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PARP-1 inhibition did not significantly alter DSB repair in HFK LXSN cells (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pH2AX analysis after zeocin treatment, shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "e375b3a3-e5ab-477a-871c-9c2e10b93d6a",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C28",
+      "claim": "PARP-1 inhibition significantly delayed DSB repair in HFK 8E6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PARP-1 inhibition significantly delayed DSB repair in HFK 8E6 cells (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pH2AX analysis after zeocin treatment, shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "6d4ab1e0-c15c-42a8-8d5c-ee4d6d2ef36c",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C29",
+      "claim": "Most DSB repair occurs via either HR or NHEJ, with Alt-EJ serving as a fail-safe machinery should these pathways fail.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the established view that most DSB repair occurs via either HR or NHEJ, with Alt-EJ serving as a fail-safe machinery should these pathways fail (Iliakis et al., 2015; Patterson-Fortin and D'Andrea, 2020; Simsek and Jasin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "0fc19a7f-23f9-4837-adaf-bbd581f1580e",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C30",
+      "claim": "8E6 does not increase the abundance of polymerase theta (POL\u03b8).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis did not find any notable changes in POL\u03b8 abundance (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunoblot analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "90e73796-123d-4c4f-a44d-8be62988eaa6",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C31",
+      "claim": "There are no significant differences in viability between HFK LXSN and HFK 8E6 cells when grown in media containing a gradient (0\u201350 \u03bcM) of ART558 concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant differences in viability between HFK LXSN and HFK 8E6 cells when grown in media containing a gradient (0\u201350 \u03bcM) of ART558 concentrations (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by MTT assay shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "7a9525e8-aa23-45cd-85db-ac77f9b09c59",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C32",
+      "claim": "ART558 delayed DSB repair in HFK 8E6 cells but not in HFK LXSN cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ART558 delayed DSB repair in HFK 8E6 cells but not in HFK LXSN cells, indicating that 8E6 promoted repair by TMEJ (Figure 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pH2AX analysis after zeocin treatment, shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "daf1eb8e-2e19-40ca-90d6-fbd5e19826f2",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C33",
+      "claim": "8E6 promotes repair by TMEJ (polymerase theta mediated end joining).",
+      "claim_type": "EXPLICIT",
+      "source": "ART558 delayed DSB repair in HFK 8E6 cells but not in HFK LXSN cells, indicating that 8E6 promoted repair by TMEJ (Figure 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from differential effect of POL\u03b8 inhibitor on HFK 8E6 vs LXSN cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "27772d49-8a88-46e3-bbe3-e46188547e17",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C34",
+      "claim": "8E6 inhibits multiple types of DNA-PKcs-independent end joining, including but not limited to TMEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these data as evidence that 8E6 inhibits multiple types of DNA-PKcs-independent end joining, including but not limited to TMEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of the magnitude of effects from PARP1 vs POL\u03b8 inhibition",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "746093d6-857f-4423-a1f2-0ee47998b412",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C35",
+      "claim": "DNA-PKcs inhibition increases both imbedded and terminal Alt-EJ in HFK LXSN cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, DNA-PKcs inhibition increased both imbedded and terminal Alt-EJ in HFK LXSN cells (Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Alt-EJ reporter assay with NU7441 treatment, shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "78765ace-874e-4391-be01-29426bda5fbf",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C36",
+      "claim": "DNA-PKcs inhibition results in a further significant increased use of Alt-EJ in HFK 8E6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA-PKcs inhibition resulted in a further significant increased use of Alt-EJ in HFK 8E6 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Alt-EJ reporter assay with NU7441 treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "a36722c7-7c18-466f-947d-59c7d0ffe405",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C37",
+      "claim": "DNA-PKcs inhibition makes DSB repair more efficient in HFK 8E6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting our hypothesis, DNA-PKcs inhibition made DSB repair more efficient (less pH2AX) in HFK 8E6 cells (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pH2AX analysis after zeocin treatment with NU7441, shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9d49d2f9-d7ed-4792-ade6-4796273d710e",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C38",
+      "claim": "DNA-PKcs inhibition increases the persistence of RAD51 in HFK LXSN cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have previously reported (Hu et al., 2022a), DNA-PKcs inhibition increased the persistence of RAD51 in HFK LXSN (Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RAD51 foci analysis with NU7441 treatment, shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "139095b7-9f11-4918-9844-e4c15cff7e2a",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C39",
+      "claim": "DNA-PKcs inhibition increases the rate of RAD51 resolution in HFK 8E6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DNA-PKcs inhibition increased the rate of RAD51 resolution in HFK 8E6 (Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RAD51 foci analysis with NU7441 treatment, shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9e38bbbb-368a-4896-8458-2d4603f757d8",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C40",
+      "claim": "Ligase IV inhibition delayed DSB repair in both HFK LXSN and HFK 8E6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligase IV inhibition delayed DSB repair in both HFK LXSN and HFK 8E6 cells (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pH2AX analysis after zeocin treatment with SCR7, shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "632def71-93d1-42c6-b6fc-73b3e277758d",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C41",
+      "claim": "Restoration of DSB repair in HFK 8E6 specifically requires inhibition of an early NHEJ step, rather than inhibition of a later step in the pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, restoration of DSB repair in HFK 8E6 specifically requires inhibition of an early NHEJ step, rather than inhibition of a later step in the pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential effects of DNA-PKcs inhibition vs ligase IV inhibition",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "5a8e3b12-66dd-49ad-89e4-4fb2beb97239",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C42",
+      "claim": "DNA-PKcs inhibition increases the frequency of HFK LXSN in G1 that contained RAD51 foci.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA-PKcs inhibition increased the frequency of HFK LXSN in G1 that contained RAD51 foci (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RAD51 and cyclin E co-staining with NU7441 treatment, shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "59847810-d81e-4c65-836c-feeadfeb34f8",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C43",
+      "claim": "Without DNA-PKcs inhibition, 8E6 increased the frequency of cells in G1 that had RAD51 foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Without DNA-PKcs inhibition, 8E6 increased the frequency of cells in G1 that had RAD51 foci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by RAD51 and cyclin E co-staining analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "b0aae6a7-e4c3-4cbe-9fca-eaa23870ede0",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C44",
+      "claim": "DNA-PKcs inhibition prevented 8E6 from promoting the formation of RAD51 repair complexes during G1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DNA-PKcs inhibition prevented 8E6 from promoting the formation of RAD51 repair complexes during G1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by RAD51 and cyclin E co-staining with NU7441 treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9155a9b1-854d-4d33-a776-72dfb409cadf",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C45",
+      "claim": "DNA-PKcs inhibition increases HR efficiency in vector control U2OS cells (U2OS LXSN).",
+      "claim_type": "EXPLICIT",
+      "source": "In vector control U2OS cells (U2OS LXSN), NU7441 increases HR efficiency (Figure 7B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by DR-GFP reporter assay with NU7441 treatment, shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "2dbb51fa-9fc0-4d36-8210-19e963e229f4",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C46",
+      "claim": "NHEJ and HR compete for access to DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the established idea that NHEJ and HR compete for access to DSBs (Bunting et al., 2010; Chapman et al., 2012; Orthwein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "8b584e9b-13b4-4b3b-a566-4a4607b15513",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C47",
+      "claim": "8E6 in U2OS cells (U2OS 8E6) decreased HR efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, 8E6 in U2OS cells (U2OS 8E6) decreased HR efficiency (Wallace et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to authors' published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "1872f724-8f85-44d8-a756-be168aec9d91",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C48",
+      "claim": "DNA-PKcs inhibition did not prevent 8E6 from hindering HR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DNA-PKcs inhibition did not prevent 8E6 from hindering HR (Figure 7B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by DR-GFP reporter assay with NU7441 treatment, shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "0a2674df-0882-4b2f-ba84-737228119c8b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C49",
+      "claim": "U2OS cells expressing 8E6 with the residues responsible for binding p300 deleted (U2OS 8E6\u0394132\u2013136) were similar to vector control in HR efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a p300-dependent mechanism (see next section for more details), U2OS cells expressing 8E6 with the residues responsible for binding p300 deleted (U2OS 8E6\u0394132\u2013136) were similar to vector control (Figure 7B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by DR-GFP reporter assay, shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "11f98113-eeaa-48f5-8635-b72a2f8f0c85",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C50",
+      "claim": "8E6\u0394132\u2013136 shows similar Alt-EJ frequency with U2OS LXSN.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the p300-dependent mechanism, 8E6\u0394132\u2013136 shows similar Alt-EJ frequency with U2OS LXSN (Figure 7A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Alt-EJ reporter assay, referenced as Figure 7A-B but likely Figure 8A-B based on context",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "d9bce01c-0249-48c6-9fc7-d409a7b4295c",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C51",
+      "claim": "P300 knockout led to increases in both terminal and imbedded Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "P300 knockout led to increases in both terminal and imbedded Alt-EJ (Figure 8C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Alt-EJ reporter assay in p300 knockout cells, shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "98660f50-58b1-4812-a1e9-965bc2eb3bfd",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C52",
+      "claim": "P300 inhibitor CCS1477 increased both terminal and imbedded Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, CCS1477 increased both terminal and imbedded Alt-EJ (Figure 8E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Alt-EJ reporter assay with CCS1477 treatment, shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "93f8e10c-9a6b-4f7d-b758-48170e04f7bd",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C53",
+      "claim": "HFK without p300 displayed an increased frequency of RAD51 staining in G1 that could be overcome by DNA-PKcs inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Further confirming a p300-dependent mechanism of action, HFK without p300 displayed an increased frequency of RAD51 staining in G1 that could be overcome by DNA-PKcs inhibition (Figure 9C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RAD51 and cyclin E co-staining in p300 knockout cells with NU7441 treatment, shown in Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "3fe79491-a8fb-4f75-8a4c-12bc4606e03d",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C54",
+      "claim": "Inhibition of p300 alone increased the frequency of RAD51 staining in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of p300 alone increased the frequency of RAD51 staining in G1 as did DNA-PKcs inhibition alone (Figure 9E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RAD51 and cyclin E co-staining with CCS1477 treatment, shown in Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "e4f042f2-6244-4ce3-94f0-919bf3a58f67",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C55",
+      "claim": "RAD51 staining in G1 was not increased by dual application of p300 and DNA-PKcs inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RAD51 staining in G1 was not increased by their dual application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by RAD51 and cyclin E co-staining with combined CCS1477 and NU7441 treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "b7089465-4f56-4b3f-a9c1-63da9489c52b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C56",
+      "claim": "Whole genome sequencing yielded 933,163,972 high-quality paired-end sequence reads for LXSN and 624,472,714 reads for 8E6.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded 933,163,972 high-quality paired-end sequence reads for LXSN and 624,472,714 reads for 8E6 (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported sequencing data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "7d86f362-a898-4bf6-b5e6-8e2fd91ca35a",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C57",
+      "claim": "Normalizing LXSN reads to the same number as 8E6 and alignment to the human genome yielded 92.4% genome coverage for both.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalizing LXSN reads to the same number as 8E6 and alignment to the human genome yielded 92.4% genome coverage for both and slightly more read depth for LXSN (mean 45.4 for LXSN compared to 44.6 for 8E6) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported sequencing analysis data shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "31bf3b22-30e4-45b3-b33b-5cab18a82c68",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C58",
+      "claim": "Variant calling showed one variation every 3 kb in LXSN compared to one every 3333 bases in 8E6.",
+      "claim_type": "EXPLICIT",
+      "source": "Variant calling including single-nucleotide polymorphisms (SNPs) and insertions or deletions (indels) were also more for LXSN cells than 8E6 expressing cells with one variation every 3 kb in LXSN compared to one every 3333 bases in 8E6 (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported variant analysis data shown in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "31f14541-8383-4a9f-84fe-c830dd652a3b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C59",
+      "claim": "There is a significantly higher frequency of accumulated short deletions (2\u201329 bp) in the 8E6 cell line (86.75% in 8E6 compared to 82.33% in LXSN, p-value = 2.2e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a larger number of annotated indels unique to LXSN (168,005 for LXSN compared to 104,322 for 8E6), this revealed a significantly higher frequency of accumulated short deletions (2\u201329 bp) in the 8E6 cell line (86.75% in 8E6 compared to 82.33% in LXSN, p-value = 2.2e-16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported statistical analysis of deletion frequencies from whole genome sequencing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "45d81717-ef09-4c2d-9cf2-b5722e6a3eea",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C60",
+      "claim": "The frequency of short Alt-EJ type deletions was most significant for deletions with short (\u226410 bp) stretches of flanking microhomology.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of short Alt-EJ type deletions was most significant for deletions with short (\u226410 bp) stretches of flanking microhomology (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported analysis of deletion characteristics shown in Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "29fb6e95-a825-4099-ba02-c2d99629a68a",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C61",
+      "claim": "8E6 increases the frequency of short deletions with very short stretches of flanking microhomology.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that 8E6 increases the frequency of short deletions with very short stretches of flanking microhomology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by whole genome sequencing analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "83994047-f98d-466e-a34c-3904b2d9eb1b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C62",
+      "claim": "The ability to promote Alt-EJ seems to have evolved in two separate genes in the HPV family (once in HPV16 E7 and once in HPV8 E6).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ability to promote Alt-EJ seems to have evolved in two separate genes in the HPV family (once in HPV16 E7 and once in HPV8 E6) (Leeman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with published research on HPV16 E7",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "67e1746f-20a4-42df-aa0a-da38ba58b31c",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C63",
+      "claim": "HPV16 E7 increases the use of Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of Alt-EJ is not limited to HPV8 as a recent report demonstrated that a different HPV protein from a different genus of HPV (HPV16 E7) also increases the use of Alt-EJ (Leeman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "8164c125-da07-4023-9eb6-1b91c3dd341b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C64",
+      "claim": "HPV positive head and neck squamous cell carcinomas have an elevated frequency of mutations with signatures of repair by Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, HPV positive head and neck squamous cell carcinomas and other cancers with downregulated TGF-b signaling have an elevated frequency of mutations with signatures of repair by Alt-EJ (Liu et al., 2018; Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "7222a3e0-8ec7-4f76-9453-405b5f228d8b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C65",
+      "claim": "Cancers with downregulated TGF-b signaling have an elevated frequency of mutations with signatures of repair by Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, HPV positive head and neck squamous cell carcinomas and other cancers with downregulated TGF-b signaling have an elevated frequency of mutations with signatures of repair by Alt-EJ (Liu et al., 2018; Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9c7024c7-2c2e-4d11-ac8c-f878e5056c11",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C66",
+      "claim": "By promoting DSB repair by Alt-EJ, 8E6 increases the risk of mutations associated with DSBs while allowing cells to avoid the apoptosis that would be associated with an unrepaired DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "By promoting DSB repair by Alt-EJ, 8E6 increases the risk of mutations associated with DSBs while allowing cells to avoid the apoptosis that would be associated with an unrepaired DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of the biological significance of their findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9671ffd3-1102-4422-9b91-35b08fe036c1",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C67",
+      "claim": "This study supports the hypothesis that beta-HPV promotes cancer formation by increasing genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, this study supports the hypothesis that beta-HPV promotes cancer formation by increasing genomic instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of how their findings support the broader hypothesis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "ed77366d-5e39-4850-a902-ba14c2771159",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C68",
+      "claim": "8E6 promotes Alt-EJ by binding p300, an acetyltransferase that facilitates DSB repair by HR and NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, using small molecule inhibitors, CRISPR/CAS9 gene knockout, and HPV8 E6 mutant, we find that HPV8 E6 promotes Alt-EJ by binding p300, an acetyltransferase that facilitates DSB repair by HR and NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated using multiple experimental approaches including inhibitors, knockout, and mutant",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "0cbc7cf1-db68-49de-a61d-8f58100af82b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C69",
+      "claim": "At least some of the Alt-EJ repair promoted by 8E6 occurs through polymerase theta dependent end joining.",
+      "claim_type": "EXPLICIT",
+      "source": "At least some of this repair occurs through a subset of Alt-EJ known as polymerase theta dependent end joining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated using POL\u03b8 inhibitor experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "17192033-c459-47a5-9170-ec2e7c2458bb",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C70",
+      "claim": "8E6 caused an increased frequency of deletions bearing the microhomology signatures of Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, whole genome sequencing analysis showed HPV8 E6 caused an increased frequency of deletions bearing the microhomology signatures of Alt-EJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by whole genome sequencing analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "88197cd0-0c31-4e14-9069-5139b43e536c",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C71",
+      "claim": "In HFK 8E6 cells, DSBs become three- to fourfold more persistent when PARP1 is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis demonstrated that in HFK 8E6 cells, DSBs become three- to fourfold more persistent when PARP1 is inhibited but only ~1.5-fold more persistent when POL\u03b8 is inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from quantitative analysis of pH2AX persistence with inhibitors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "1bcb5c14-c665-406f-aa15-45e1243a2397",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C72",
+      "claim": "In HFK 8E6 cells, DSBs become only ~1.5-fold more persistent when POL\u03b8 is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis demonstrated that in HFK 8E6 cells, DSBs become three- to fourfold more persistent when PARP1 is inhibited but only ~1.5-fold more persistent when POL\u03b8 is inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from quantitative analysis of pH2AX persistence with inhibitors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "d76de9cf-f8eb-491a-a388-21933633445b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C73",
+      "claim": "8E6 promotes DSB repair that is dependent on PARP1 and to a lesser extent on POL\u03b8.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, 8E6 promotes DSB repair that is dependent on PARP1 and to a lesser extent on POL\u03b8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential effects of PARP1 vs POL\u03b8 inhibition",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9664dc18-70c8-4b56-bb53-baaa605fbfb9",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C74",
+      "claim": "NHEJ initiation blocks DSB repair by other pathways, including Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "NHEJ initiation blocks DSB repair by other pathways, including Alt-EJ (Patterson-Fortin and D'Andrea, 2020; Simsek and Jasin, 2010; Wang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "83d727dd-de0c-45da-9c98-2c315517b94c",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C75",
+      "claim": "Alt-EJ is primarily used when there are defects in either HR or NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "This is compatible with the idea that Alt-EJ is primarily used when there are defects in either HR or NHEJ (Deriano and Roth, 2013; Simsek and Jasin, 2010; Truong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "11be233b-d4de-43ce-ab32-d2f2c4cf79ee",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C76",
+      "claim": "P300 restricts DSB repair by Alt-EJ.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that p300 restricts DSB repair by Alt-EJ",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by p300 knockout and inhibitor experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "0743d0e4-556e-42ce-9a33-81ae4c309ece",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C77",
+      "claim": "At least some of the DSB repair defects caused by p300 loss or 8E6 expression can be overcome by inhibition of DNA-PKcs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that p300 restricts DSB repair by Alt-EJ and that at least some of the DSB repair defects caused by p300 loss or 8E6 expression can be overcome by inhibition of DNA-PKcs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by DNA-PKcs inhibitor experiments in p300 knockout and 8E6 expressing cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "1870c0a6-a7f7-4752-82df-c72691d9677d",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C78",
+      "claim": "8E6 impairs apoptosis by degrading BAK.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 8E6 impairs apoptosis by degrading BAK, which complicates the interpretation of these data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about 8E6 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9f71826c-7cc1-4182-b692-8b48c891d237",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C79",
+      "claim": "U2OS may contain mutations (such as an ATR mutation) that change the mechanisms of DSB repair pathway choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We also acknowledge that U2OS may contain mutations (such as an ATR mutation) that change the mechanisms of DSB repair pathway choice (Elbakry et al., 2021; Juh\u00e1sz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "667451e9-a543-4932-a71a-37053509008e",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C80",
+      "claim": "The known ways that 8E6 alters DSB repair are consistent in U2OS and primary (HFK) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the known ways that 8E6 alters DSB repair are consistent in U2OS and primary (HFK) cells, suggesting that results obtained in U2OS cells can be extrapolated to other cell types (Hu et al., 2020; Wallace et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to authors' published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "f6bb594a-263d-457e-8b3f-71a77e351ed9",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C81",
+      "claim": "Transient \u03b2-HPV infections may promote tumorigenesis by causing mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, by showing that 8E6 promotes Alt-EJ, a mutagenic DSB repair pathway, we provide evidence in support of the idea that transient \u03b2-HPV infections may promote tumorigenesis by causing mutations (Tommasino, 2019; Viarisio et al., 2018; Wendel and Wallace, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation supported by citations to published research",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "080cf452-c8cc-444f-bf22-c1eb4b36240f",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C82",
+      "claim": "Unrepaired DSBs are highly lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Unrepaired DSBs are highly lethal, thus we infer a strong selective pressure for HPV (a non-lytic virus) to find alternative way(s) to repair DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about DSB lethality",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "e83d1fb3-845a-44a0-9bb1-f2d0b5279c4d",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C83",
+      "claim": "There is a strong selective pressure for HPV (a non-lytic virus) to find alternative way(s) to repair DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unrepaired DSBs are highly lethal, thus we infer a strong selective pressure for HPV (a non-lytic virus) to find alternative way(s) to repair DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' inference based on the lethality of unrepaired DSBs and HPV biology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "91e34190-873c-48fe-a12d-4318b86c98c2",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C84",
+      "claim": "Beta-HPVs are ubiquitous and transiently infect cutaneous epithelia in the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "Beta genus human papillomaviruses (beta-HPVs) are ubiquitous and transiently infect cutaneous epithelia in the general population (Bouwes Bavinck et al., 2018; Gheit, 2019; Neale et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "56abb277-e640-44f0-b215-c20fa43584dc",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C85",
+      "claim": "The contribution of beta-HPV infections to NMSC in the general population is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the contribution of beta-HPV infections to NMSC in the general population is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of current knowledge gap in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "d76bac87-f52d-40d8-950d-f68902c3d154",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C86",
+      "claim": "Beta-HPV infections are not persistent in immunocompetent people.",
+      "claim_type": "EXPLICIT",
+      "source": "Because beta-HPV infections are not persistent in immunocompetent people, they are hypothesized to promote cancer formation by making UV-induced DNA damage more mutagenic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about beta-HPV infection characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "968cf7d2-d82a-4d2d-add8-6c71836c3028",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C87",
+      "claim": "Cells have multiple DSB repair mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells have multiple DSB repair mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about DNA repair",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "6a0a3690-9370-48a6-89c5-64ef668b9973",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C88",
+      "claim": "Whenever possible cells use HR to fix DSBs as it allows them to avoid mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Whenever possible cells use HR to fix DSBs as it allows them to avoid mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about DNA repair pathway preference",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "2a32de55-f095-421b-bdcb-ec1c6ce44210",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C89",
+      "claim": "The persistent RAD51 repair complexes that form in HFK 8E6 cells occur during G1.",
+      "claim_type": "EXPLICIT",
+      "source": "The persistent RAD51 repair complexes that form in HFK 8E6 cells occur during G1 (Hu et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to authors' published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "55442c27-2e1b-4a38-9bfc-ae33bb00b39c",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C90",
+      "claim": "8E6 retains its ability to alter DNA repair in U2OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "U2OS cells are routinely used to probe 8E6 biology because 8E6 retains its ability to alter DNA repair in these cells (Hu et al., 2020; Wallace et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to authors' published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "78b1f40e-29a0-418d-8557-cf3bd31f9004",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C91",
+      "claim": "Loss of PARP-1 activity only reduces polymerase theta mediated end joining (TMEJ) by two- to fourfold.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, loss of PARP-1 activity only reduces polymerase theta mediated end joining (TMEJ) by two- to fourfold (Luedeman et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "257a0421-52e6-43cd-8853-c2eefe8ca30c",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C92",
+      "claim": "Alt-EJ is an umbrella term that includes any end joining event that does not require DNA-PKcs activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Alt-EJ is an umbrella term that includes any end joining event that does not require DNA-PKcs activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of Alt-EJ based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9e24533f-2676-4f0a-9fa9-d9d60d2538c9",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C93",
+      "claim": "While most Alt-EJ relies on PARP-1, a subset of Alt-EJ can occur when PARP-1 activity is impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "While most Alt-EJ relies on PARP-1, a subset of Alt-EJ can occur when PARP-1 activity is impaired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about Alt-EJ mechanisms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "be5bb3a5-e771-49df-82b6-a9a46c9b6f95",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C94",
+      "claim": "Repair by Alt-EJ can frequently result in indels with characteristic sequence signatures of flanking microhomology.",
+      "claim_type": "EXPLICIT",
+      "source": "Repair by Alt-EJ can frequently result in indels with characteristic sequence signatures of flanking microhomology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about Alt-EJ repair signatures",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "56aead60-9d25-43f1-bafa-fa20809db639",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C95",
+      "claim": "The Alt-EJ deletions promoted by 8E6 appear more frequently as short deletions (2\u201329 bp) bearing short stretches of microhomology (2\u201310 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "These Alt-EJ deletions appear more frequently as short deletions (2\u201329 bp) bearing short stretches of microhomology (2\u201310 bp) (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by whole genome sequencing analysis shown in Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "7a657348-ecce-4528-be03-61992758a15e",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C96",
+      "claim": "The increase in HFK LXSN cells treated with DNA-PKcs inhibitor did not reach the levels of Alt-EJ in mock-treated HFK 8E6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increase in HFK LXSN cells did not reach the levels of Alt-EJ in mock-treated HFK 8E6 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of Alt-EJ frequencies across conditions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "504edb37-d2ac-4569-a8a6-164adb70dbb2",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C97",
+      "claim": "DSBs were more persistent in mock-treated 8E6 cells than LXSN cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have shown before, DSBs were more persistent in mock-treated 8E6 cells than LXSN cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to authors' previous findings",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "b36d1a95-8d09-46fb-8f9b-07fed6c77c40",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "claim_id": "C98",
+      "claim": "A similar increase in RAD51 persistence was also seen in mock-treated HFK 8E6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar increase in RAD51 persistence was also seen in mock-treated HFK 8E6 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by RAD51 foci analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dba8d3e2-3af9-42b4-842b-440976dcf699",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Beta-HPVs, including HPV8, are associated with NMSC in immunocompromised individuals and are hypothesized to promote cancer by making UV-induced DNA damage more mutagenic. The E6 protein from HPV8 (8E6) impairs DNA repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C84-C86 establish the background context for the study based on well-cited prior literature. These claims about beta-HPV associations with cancer and the hypothesis about UV damage mutagenicity are supported by multiple published references and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "eb28db89-a987-4a51-bc9c-d623f98eabd9",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "8E6 hinders DNA repair by binding and destabilizing p300, an acetyltransferase that regulates transcription. This interaction decreases the abundance of DNA repair proteins (ATR, ATM, BRCA1, BRCA2) and lowers ATM/ATR signaling, thereby attenuating both HR and NHEJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 and C13 describe the established mechanism by which 8E6 impairs DNA repair through p300 degradation. These are well-supported by citations to the authors' own published work and other research, representing prior knowledge that forms the foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "e7ca05c8-d725-4c7f-808b-ebe85ce695b2",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Limited UV damage repair increases DSB formation. Cells have multiple DSB repair mechanisms: HR (minimally mutagenic, S/G2 phase only), NHEJ (more mutagenic, occurs throughout cell cycle), and cells preferentially use HR when possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 and C87-C88 describe established knowledge about DSB repair pathways and their characteristics. These are well-supported by citations to published research and represent fundamental concepts in DNA repair biology that provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "b7aeb91f-e30b-46e7-8640-4946df8ef286",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "8E6 does not block the initiation of NHEJ or HR but prevents their completion. NHEJ initiates with DNA-PKcs autophosphorylation, which occurs readily with 8E6, but 8E6 prevents resolution of pDNA-PKcs complexes. Similarly, 8E6 allows HR initiation but hinders RAD51 complex resolution. Cells respond by attempting HR during G1, leading to persistent unresolved RAD51 complexes in G1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20 and C89 describe the authors' previously published findings about how 8E6 affects DSB repair pathway initiation versus completion. These are well-supported by citations to the authors' own work and establish the knowledge gap that motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "9fff8e8f-f8f9-4f62-ad9d-0ba5dd1292c1",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "When NHEJ and HR fail, Alt-EJ completes DSB repair. Using reporter constructs, the authors demonstrate that 8E6 promotes DSB repair by Alt-EJ, and this use of Alt-EJ is the indirect result of initiating NHEJ when the pathway cannot be completed. Specifically, 8E6 increases both terminal and imbedded Alt-EJ in HFK cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 present the first major finding of the study. The use of validated Alt-EJ reporter constructs (Figure 1) with appropriate controls demonstrates that 8E6 significantly increases both terminal and imbedded Alt-EJ. The experimental design is sound with flow cytometry quantification and statistical analysis (p<0.05). CAS9 expression was confirmed to be similar across conditions (Figure 1 supplement).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "65f6e464-fedf-466a-a34f-38b01ff3fbcf",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PARP-1 inhibition blocks Alt-EJ and does not significantly alter DSB repair in control HFK LXSN cells, but significantly delays DSB repair in HFK 8E6 cells. This is consistent with Alt-EJ serving as a fail-safe when HR and NHEJ fail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 demonstrate that 8E6-expressing cells are dependent on Alt-EJ for DSB repair. The use of olaparib (PARP-1 inhibitor) with both the Alt-EJ reporter system (Figure 2A-D) and pH2AX analysis (Figure 2E-F) provides converging evidence. The differential effect on LXSN versus 8E6 cells is statistically significant and supports the conclusion that 8E6 promotes Alt-EJ dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "b204f509-0ee6-46e9-8235-ce58834935e9",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "8E6 does not increase POL\u03b8 abundance. POL\u03b8 inhibition (ART558) delays DSB repair in HFK 8E6 cells but not LXSN cells, indicating 8E6 promotes repair by TMEJ. However, the effect is smaller (~1.5-fold) than PARP1 inhibition (3-4 fold), suggesting 8E6 promotes multiple types of DNA-PKcs-independent end joining including but not limited to TMEJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34, C69, C71-C73 characterize which Alt-EJ pathways are involved. The immunoblot analysis (Figure 3A-B) shows no change in POL\u03b8 levels. The MTT viability assay (Figure 3C) and pH2AX persistence analysis (Figure 3D-E) with ART558 demonstrate POL\u03b8 involvement but to a lesser extent than PARP1. The authors appropriately interpret this as evidence for multiple Alt-EJ pathways. However, the viability data interpretation is complicated by 8E6's effect on apoptosis (C78), which the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "e63b5a71-3d8e-4a93-b76a-43bfda0c73f9",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DNA-PKcs inhibition increases Alt-EJ in both HFK LXSN and HFK 8E6 cells, with a further significant increase in 8E6 cells. However, DNA-PKcs inhibition in LXSN cells does not reach the Alt-EJ levels seen in mock-treated 8E6 cells. This is consistent with NHEJ initiation blocking Alt-EJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C74, C96 demonstrate that preventing NHEJ initiation forces cells to use Alt-EJ. The Alt-EJ reporter assay with NU7441 (DNA-PKcs inhibitor) shows statistically significant increases in both terminal and imbedded Alt-EJ (Figure 4). CAS9 expression was confirmed to be similar across conditions (Figure 4 supplement). The observation that inhibited LXSN cells don't reach 8E6 levels suggests 8E6 has additional effects beyond just blocking NHEJ completion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "40e2d02f-27ec-4c06-b8bc-bcd1a68ec200",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DNA-PKcs inhibition makes DSB repair more efficient in HFK 8E6 cells (less pH2AX), increases RAD51 persistence in LXSN cells, but increases RAD51 resolution in 8E6 cells. In contrast, ligase IV inhibition delays DSB repair in both cell types. Thus, restoration of DSB repair in 8E6 requires inhibition of an early NHEJ step, not a later step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41, C97-C98 demonstrate that blocking NHEJ initiation rescues the DSB repair defect in 8E6 cells. The pH2AX analysis (Figure 5A-B) and RAD51 foci analysis (Figure 5C-D) with NU7441 show statistically significant effects. The comparison with SCR7 (ligase IV inhibitor, Figure 5E-F) provides important mechanistic insight that early versus late NHEJ inhibition has different effects. This supports the model that 8E6 causes problems by allowing NHEJ initiation but preventing completion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "3dfb37db-1e2a-4362-9416-0396597c416a",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DNA-PKcs inhibition increases the frequency of RAD51 foci in G1 in HFK LXSN cells. Without DNA-PKcs inhibition, 8E6 increases RAD51 foci in G1. However, DNA-PKcs inhibition prevents 8E6 from promoting RAD51 foci formation during G1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 demonstrate that blocking NHEJ initiation prevents the aberrant G1 HR phenotype caused by 8E6. The analysis uses multiple methods to determine cell cycle position: cyclin E staining (Figure 6A-B), cyclin A staining (Figure 6 supplement 1), and flow cytometry with DNA content (Figure 6C-D, supplement 2). The convergence of results from multiple approaches strengthens the conclusion. Statistical significance is demonstrated (p<0.05).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "31714578-a4f0-4b0c-a965-d698a77ebb1c",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "DNA-PKcs inhibition increases HR efficiency in U2OS LXSN cells, consistent with NHEJ and HR competing for DSBs. 8E6 decreases HR efficiency, and DNA-PKcs inhibition does not prevent 8E6 from hindering HR. U2OS cells expressing 8E6\u0394132-136 (p300 binding mutant) show similar HR efficiency to vector control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 demonstrate that while DNA-PKcs inhibition rescues some 8E6 phenotypes, it does not rescue the HR defect. The DR-GFP reporter assay (Figure 7) shows statistically significant effects. The use of the 8E6\u0394132-136 mutant provides evidence for p300 dependence. However, the authors acknowledge potential limitations of using U2OS cells (C79-C80), though they cite evidence that 8E6 effects are consistent between U2OS and HFK cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "50c3f809-2796-4569-ac47-89d053bc34b7",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "8E6 promotes Alt-EJ by binding p300. The 8E6\u0394132-136 mutant (lacking p300 binding residues) shows similar Alt-EJ frequency to control. P300 knockout and p300 inhibitor (CCS1477) both increase terminal and imbedded Alt-EJ, demonstrating that p300 restricts Alt-EJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52, C68, C76 establish the p300-dependent mechanism. Multiple complementary approaches are used: 8E6 mutant lacking p300 binding residues (Figure 8A-B), p300 knockout cells (Figure 8C-D), and p300 inhibitor CCS1477 (Figure 8E-F). All three approaches show consistent results with statistical significance (p<0.05), providing strong evidence for the p300-dependent mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "4ff34e67-6e0b-4ab6-bddf-3bec709a51e9",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "HFK without p300 show increased RAD51 staining in G1 that can be overcome by DNA-PKcs inhibition. P300 inhibition alone or DNA-PKcs inhibition alone increases RAD51 in G1, but their dual application does not increase RAD51 staining. This demonstrates that DSB repair defects caused by p300 loss or 8E6 expression can be overcome by DNA-PKcs inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55, C77 confirm the p300-dependent mechanism for the G1 RAD51 phenotype. The use of p300 knockout cells (Figure 9C-D) and p300 inhibitor CCS1477 (Figure 9E-F) with and without DNA-PKcs inhibition provides strong evidence. The epistasis analysis (dual inhibition not being additive) supports the model that p300 and DNA-PKcs act in the same pathway. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "64aee446-c1cc-4e00-a963-06cc1a14e7fd",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Whole genome sequencing of HFK 8E6 versus LXSN cells revealed a significantly higher frequency of short deletions (2-29 bp) in 8E6 cells (86.75% vs 82.33%, p=2.2e-16). The frequency of short Alt-EJ type deletions was most significant for deletions with short (\u226410 bp) stretches of flanking microhomology. These deletions appear as short deletions (2-29 bp) bearing short stretches of microhomology (2-10 bp).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61, C70, C95 provide genomic evidence that 8E6 promotes Alt-EJ-mediated mutations. The whole genome sequencing achieved good coverage (92.4%) and depth (Tables 1-2). The variant analysis used established algorithms to identify Alt-EJ signatures based on microhomology patterns. The statistical analysis (Fisher's exact test) shows highly significant differences (p=2.2e-16) for short deletions with short microhomology (Table 4). This provides direct evidence of the mutagenic consequences of 8E6-promoted Alt-EJ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "fd2a2283-25ac-463d-aaa6-584aee158c1a",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The ability to promote Alt-EJ appears to have evolved independently in two HPV genes (HPV16 E7 and HPV8 E6). HPV-positive head and neck cancers and cancers with downregulated TGF-\u03b2 signaling show elevated frequencies of Alt-EJ mutation signatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 place the findings in broader context by comparing to other HPV types and cancer types. These claims are supported by citations to published research (Leeman et al., 2019; Liu et al., 2018, 2021). The inference about convergent evolution (C62) is reasonable given that HPV16 E7 and HPV8 E6 are from different viral genera and different genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "549bb822-acb1-4b35-91e7-13a9b7d15ec8",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "By promoting Alt-EJ, 8E6 increases mutation risk while allowing cells to avoid apoptosis from unrepaired DSBs. This supports the hypothesis that beta-HPV promotes cancer by increasing genomic instability. The lethality of unrepaired DSBs creates selective pressure for HPV to find alternative repair mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67, C81-C83 represent the authors' interpretation of the biological significance of their findings. These interpretations are reasonable given the data presented: 8E6 promotes mutagenic Alt-EJ (demonstrated by reporter assays and genomic analysis), allows DSB repair to occur (preventing lethality), and the genomic data shows increased Alt-EJ mutation signatures. The evolutionary argument (C83) is logical given that unrepaired DSBs are lethal and HPV is non-lytic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "1093f719-fae1-4c74-94f9-fbf417f9ea46",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Study limitations and technical considerations: 8E6 impairs apoptosis by degrading BAK, complicating viability data interpretation. U2OS cells may have mutations affecting DSB repair pathway choice, though 8E6 effects are consistent between U2OS and HFK cells. Alt-EJ is an umbrella term for DNA-PKcs-independent end joining, with most relying on PARP-1 but some occurring when PARP-1 is impaired. Alt-EJ can result in indels with microhomology signatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80, C90-C94 acknowledge study limitations and provide technical context. The authors appropriately acknowledge that 8E6's effect on apoptosis (C78) complicates interpretation of viability assays. They also acknowledge potential limitations of U2OS cells (C79) while providing evidence that results are consistent across cell types (C80). The technical definitions of Alt-EJ and its characteristics (C91-C94) are well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    },
+    {
+      "id": "7674008a-b0fc-4349-aad1-058e69ec1f4b",
+      "content_id": "6415a905-b129-46e3-9636-7801fc09bac2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Alt-EJ is primarily used when there are defects in either HR or NHEJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 states established knowledge about Alt-EJ function, supported by multiple citations (Deriano and Roth, 2013; Simsek and Jasin, 2010; Truong et al., 2013). This provides important context for interpreting why 8E6, which impairs HR and NHEJ, would lead to increased Alt-EJ usage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:35:54.664850Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "536aab74-a226-4d16-8aa8-3751a7cb43dd",
+      "result_id": "dba8d3e2-3af9-42b4-842b-440976dcf699"
+    },
+    {
+      "claim_id": "4d3cf5b9-2506-4d62-ad24-43e19e531259",
+      "result_id": "dba8d3e2-3af9-42b4-842b-440976dcf699"
+    },
+    {
+      "claim_id": "42091b53-10cd-47eb-a71c-0b654cf30ccd",
+      "result_id": "dba8d3e2-3af9-42b4-842b-440976dcf699"
+    },
+    {
+      "claim_id": "91e34190-873c-48fe-a12d-4318b86c98c2",
+      "result_id": "dba8d3e2-3af9-42b4-842b-440976dcf699"
+    },
+    {
+      "claim_id": "56abb277-e640-44f0-b215-c20fa43584dc",
+      "result_id": "dba8d3e2-3af9-42b4-842b-440976dcf699"
+    },
+    {
+      "claim_id": "d76bac87-f52d-40d8-950d-f68902c3d154",
+      "result_id": "dba8d3e2-3af9-42b4-842b-440976dcf699"
+    },
+    {
+      "claim_id": "ef2d8f74-d59f-45cb-aff4-595993e434e8",
+      "result_id": "eb28db89-a987-4a51-bc9c-d623f98eabd9"
+    },
+    {
+      "claim_id": "04e30892-907a-4deb-8f99-bb57ddf519c6",
+      "result_id": "eb28db89-a987-4a51-bc9c-d623f98eabd9"
+    },
+    {
+      "claim_id": "acb6f446-265f-4702-bee1-1a9f051224b5",
+      "result_id": "eb28db89-a987-4a51-bc9c-d623f98eabd9"
+    },
+    {
+      "claim_id": "4d1837db-d7ac-4f98-ab20-361b45fbb496",
+      "result_id": "eb28db89-a987-4a51-bc9c-d623f98eabd9"
+    },
+    {
+      "claim_id": "21efb689-0573-4309-bd7e-9c536f51ae15",
+      "result_id": "eb28db89-a987-4a51-bc9c-d623f98eabd9"
+    },
+    {
+      "claim_id": "a7266bc7-e558-4287-8c18-7736cc37b5d7",
+      "result_id": "e7ca05c8-d725-4c7f-808b-ebe85ce695b2"
+    },
+    {
+      "claim_id": "08e5a1e4-d372-4758-ba00-c0695b9d9822",
+      "result_id": "e7ca05c8-d725-4c7f-808b-ebe85ce695b2"
+    },
+    {
+      "claim_id": "436d85d0-4b3d-4ced-ba65-560a66cd9396",
+      "result_id": "e7ca05c8-d725-4c7f-808b-ebe85ce695b2"
+    },
+    {
+      "claim_id": "9ea1b75b-5163-4035-848b-07cab333beb7",
+      "result_id": "e7ca05c8-d725-4c7f-808b-ebe85ce695b2"
+    },
+    {
+      "claim_id": "18cc382b-9532-4d24-bd70-b3de908c83ca",
+      "result_id": "e7ca05c8-d725-4c7f-808b-ebe85ce695b2"
+    },
+    {
+      "claim_id": "968cf7d2-d82a-4d2d-add8-6c71836c3028",
+      "result_id": "e7ca05c8-d725-4c7f-808b-ebe85ce695b2"
+    },
+    {
+      "claim_id": "6a0a3690-9370-48a6-89c5-64ef668b9973",
+      "result_id": "e7ca05c8-d725-4c7f-808b-ebe85ce695b2"
+    },
+    {
+      "claim_id": "cab234a5-b410-4ff7-93d1-ea42d7854ab7",
+      "result_id": "b7aeb91f-e30b-46e7-8640-4946df8ef286"
+    },
+    {
+      "claim_id": "be828f0e-3a49-484b-9eb2-a741739ec0e0",
+      "result_id": "b7aeb91f-e30b-46e7-8640-4946df8ef286"
+    },
+    {
+      "claim_id": "2e70c35e-bf0c-42e0-9733-1c16d077b9dd",
+      "result_id": "b7aeb91f-e30b-46e7-8640-4946df8ef286"
+    },
+    {
+      "claim_id": "6324e2aa-2e1c-4ccd-b8c1-931aedcb9fb5",
+      "result_id": "b7aeb91f-e30b-46e7-8640-4946df8ef286"
+    },
+    {
+      "claim_id": "1a01d2dc-9b7c-410f-a482-15692aa4770f",
+      "result_id": "b7aeb91f-e30b-46e7-8640-4946df8ef286"
+    },
+    {
+      "claim_id": "cdcabc5d-7921-48ab-9a6b-464040bbf7af",
+      "result_id": "b7aeb91f-e30b-46e7-8640-4946df8ef286"
+    },
+    {
+      "claim_id": "5f1d3917-3083-40d1-beb7-e20572a1d23c",
+      "result_id": "b7aeb91f-e30b-46e7-8640-4946df8ef286"
+    },
+    {
+      "claim_id": "2a32de55-f095-421b-bdcb-ec1c6ce44210",
+      "result_id": "b7aeb91f-e30b-46e7-8640-4946df8ef286"
+    },
+    {
+      "claim_id": "fec9a789-2661-4203-97ed-eb337e796552",
+      "result_id": "9fff8e8f-f8f9-4f62-ad9d-0ba5dd1292c1"
+    },
+    {
+      "claim_id": "98c0fcf9-6eb9-4906-a0ed-3a7585ba358b",
+      "result_id": "9fff8e8f-f8f9-4f62-ad9d-0ba5dd1292c1"
+    },
+    {
+      "claim_id": "bdae521b-8fef-45ef-be3b-01c5279a853a",
+      "result_id": "9fff8e8f-f8f9-4f62-ad9d-0ba5dd1292c1"
+    },
+    {
+      "claim_id": "9c72263e-d0e4-497c-b266-ee4e89d2abf9",
+      "result_id": "9fff8e8f-f8f9-4f62-ad9d-0ba5dd1292c1"
+    },
+    {
+      "claim_id": "47d21556-a1cf-4b39-b84e-8578d598ffb3",
+      "result_id": "9fff8e8f-f8f9-4f62-ad9d-0ba5dd1292c1"
+    },
+    {
+      "claim_id": "67923123-f0eb-4e3c-9f28-2e5cf1f06371",
+      "result_id": "65f6e464-fedf-466a-a34f-38b01ff3fbcf"
+    },
+    {
+      "claim_id": "ab4434b3-d901-4259-bcca-d084cc83722d",
+      "result_id": "65f6e464-fedf-466a-a34f-38b01ff3fbcf"
+    },
+    {
+      "claim_id": "e375b3a3-e5ab-477a-871c-9c2e10b93d6a",
+      "result_id": "65f6e464-fedf-466a-a34f-38b01ff3fbcf"
+    },
+    {
+      "claim_id": "6d4ab1e0-c15c-42a8-8d5c-ee4d6d2ef36c",
+      "result_id": "65f6e464-fedf-466a-a34f-38b01ff3fbcf"
+    },
+    {
+      "claim_id": "0fc19a7f-23f9-4837-adaf-bbd581f1580e",
+      "result_id": "b204f509-0ee6-46e9-8235-ce58834935e9"
+    },
+    {
+      "claim_id": "90e73796-123d-4c4f-a44d-8be62988eaa6",
+      "result_id": "b204f509-0ee6-46e9-8235-ce58834935e9"
+    },
+    {
+      "claim_id": "7a9525e8-aa23-45cd-85db-ac77f9b09c59",
+      "result_id": "b204f509-0ee6-46e9-8235-ce58834935e9"
+    },
+    {
+      "claim_id": "daf1eb8e-2e19-40ca-90d6-fbd5e19826f2",
+      "result_id": "b204f509-0ee6-46e9-8235-ce58834935e9"
+    },
+    {
+      "claim_id": "27772d49-8a88-46e3-bbe3-e46188547e17",
+      "result_id": "b204f509-0ee6-46e9-8235-ce58834935e9"
+    },
+    {
+      "claim_id": "0cbc7cf1-db68-49de-a61d-8f58100af82b",
+      "result_id": "b204f509-0ee6-46e9-8235-ce58834935e9"
+    },
+    {
+      "claim_id": "88197cd0-0c31-4e14-9069-5139b43e536c",
+      "result_id": "b204f509-0ee6-46e9-8235-ce58834935e9"
+    },
+    {
+      "claim_id": "1bcb5c14-c665-406f-aa15-45e1243a2397",
+      "result_id": "b204f509-0ee6-46e9-8235-ce58834935e9"
+    },
+    {
+      "claim_id": "d76de9cf-f8eb-491a-a388-21933633445b",
+      "result_id": "b204f509-0ee6-46e9-8235-ce58834935e9"
+    },
+    {
+      "claim_id": "746093d6-857f-4423-a1f2-0ee47998b412",
+      "result_id": "e63b5a71-3d8e-4a93-b76a-43bfda0c73f9"
+    },
+    {
+      "claim_id": "78765ace-874e-4391-be01-29426bda5fbf",
+      "result_id": "e63b5a71-3d8e-4a93-b76a-43bfda0c73f9"
+    },
+    {
+      "claim_id": "9664dc18-70c8-4b56-bb53-baaa605fbfb9",
+      "result_id": "e63b5a71-3d8e-4a93-b76a-43bfda0c73f9"
+    },
+    {
+      "claim_id": "7a657348-ecce-4528-be03-61992758a15e",
+      "result_id": "e63b5a71-3d8e-4a93-b76a-43bfda0c73f9"
+    },
+    {
+      "claim_id": "a36722c7-7c18-466f-947d-59c7d0ffe405",
+      "result_id": "40e2d02f-27ec-4c06-b8bc-bcd1a68ec200"
+    },
+    {
+      "claim_id": "9d49d2f9-d7ed-4792-ade6-4796273d710e",
+      "result_id": "40e2d02f-27ec-4c06-b8bc-bcd1a68ec200"
+    },
+    {
+      "claim_id": "139095b7-9f11-4918-9844-e4c15cff7e2a",
+      "result_id": "40e2d02f-27ec-4c06-b8bc-bcd1a68ec200"
+    },
+    {
+      "claim_id": "9e38bbbb-368a-4896-8458-2d4603f757d8",
+      "result_id": "40e2d02f-27ec-4c06-b8bc-bcd1a68ec200"
+    },
+    {
+      "claim_id": "632def71-93d1-42c6-b6fc-73b3e277758d",
+      "result_id": "40e2d02f-27ec-4c06-b8bc-bcd1a68ec200"
+    },
+    {
+      "claim_id": "504edb37-d2ac-4569-a8a6-164adb70dbb2",
+      "result_id": "40e2d02f-27ec-4c06-b8bc-bcd1a68ec200"
+    },
+    {
+      "claim_id": "b36d1a95-8d09-46fb-8f9b-07fed6c77c40",
+      "result_id": "40e2d02f-27ec-4c06-b8bc-bcd1a68ec200"
+    },
+    {
+      "claim_id": "5a8e3b12-66dd-49ad-89e4-4fb2beb97239",
+      "result_id": "3dfb37db-1e2a-4362-9416-0396597c416a"
+    },
+    {
+      "claim_id": "59847810-d81e-4c65-836c-feeadfeb34f8",
+      "result_id": "3dfb37db-1e2a-4362-9416-0396597c416a"
+    },
+    {
+      "claim_id": "b0aae6a7-e4c3-4cbe-9fca-eaa23870ede0",
+      "result_id": "3dfb37db-1e2a-4362-9416-0396597c416a"
+    },
+    {
+      "claim_id": "9155a9b1-854d-4d33-a776-72dfb409cadf",
+      "result_id": "31714578-a4f0-4b0c-a965-d698a77ebb1c"
+    },
+    {
+      "claim_id": "2dbb51fa-9fc0-4d36-8210-19e963e229f4",
+      "result_id": "31714578-a4f0-4b0c-a965-d698a77ebb1c"
+    },
+    {
+      "claim_id": "8b584e9b-13b4-4b3b-a566-4a4607b15513",
+      "result_id": "31714578-a4f0-4b0c-a965-d698a77ebb1c"
+    },
+    {
+      "claim_id": "1872f724-8f85-44d8-a756-be168aec9d91",
+      "result_id": "31714578-a4f0-4b0c-a965-d698a77ebb1c"
+    },
+    {
+      "claim_id": "0a2674df-0882-4b2f-ba84-737228119c8b",
+      "result_id": "31714578-a4f0-4b0c-a965-d698a77ebb1c"
+    },
+    {
+      "claim_id": "11f98113-eeaa-48f5-8635-b72a2f8f0c85",
+      "result_id": "50c3f809-2796-4569-ac47-89d053bc34b7"
+    },
+    {
+      "claim_id": "d9bce01c-0249-48c6-9fc7-d409a7b4295c",
+      "result_id": "50c3f809-2796-4569-ac47-89d053bc34b7"
+    },
+    {
+      "claim_id": "98660f50-58b1-4812-a1e9-965bc2eb3bfd",
+      "result_id": "50c3f809-2796-4569-ac47-89d053bc34b7"
+    },
+    {
+      "claim_id": "ed77366d-5e39-4850-a902-ba14c2771159",
+      "result_id": "50c3f809-2796-4569-ac47-89d053bc34b7"
+    },
+    {
+      "claim_id": "11be233b-d4de-43ce-ab32-d2f2c4cf79ee",
+      "result_id": "50c3f809-2796-4569-ac47-89d053bc34b7"
+    },
+    {
+      "claim_id": "93f8e10c-9a6b-4f7d-b758-48170e04f7bd",
+      "result_id": "4ff34e67-6e0b-4ab6-bddf-3bec709a51e9"
+    },
+    {
+      "claim_id": "3fe79491-a8fb-4f75-8a4c-12bc4606e03d",
+      "result_id": "4ff34e67-6e0b-4ab6-bddf-3bec709a51e9"
+    },
+    {
+      "claim_id": "e4f042f2-6244-4ce3-94f0-919bf3a58f67",
+      "result_id": "4ff34e67-6e0b-4ab6-bddf-3bec709a51e9"
+    },
+    {
+      "claim_id": "0743d0e4-556e-42ce-9a33-81ae4c309ece",
+      "result_id": "4ff34e67-6e0b-4ab6-bddf-3bec709a51e9"
+    },
+    {
+      "claim_id": "b7089465-4f56-4b3f-a9c1-63da9489c52b",
+      "result_id": "64aee446-c1cc-4e00-a963-06cc1a14e7fd"
+    },
+    {
+      "claim_id": "7d86f362-a898-4bf6-b5e6-8e2fd91ca35a",
+      "result_id": "64aee446-c1cc-4e00-a963-06cc1a14e7fd"
+    },
+    {
+      "claim_id": "31bf3b22-30e4-45b3-b33b-5cab18a82c68",
+      "result_id": "64aee446-c1cc-4e00-a963-06cc1a14e7fd"
+    },
+    {
+      "claim_id": "31f14541-8383-4a9f-84fe-c830dd652a3b",
+      "result_id": "64aee446-c1cc-4e00-a963-06cc1a14e7fd"
+    },
+    {
+      "claim_id": "45d81717-ef09-4c2d-9cf2-b5722e6a3eea",
+      "result_id": "64aee446-c1cc-4e00-a963-06cc1a14e7fd"
+    },
+    {
+      "claim_id": "29fb6e95-a825-4099-ba02-c2d99629a68a",
+      "result_id": "64aee446-c1cc-4e00-a963-06cc1a14e7fd"
+    },
+    {
+      "claim_id": "17192033-c459-47a5-9170-ec2e7c2458bb",
+      "result_id": "64aee446-c1cc-4e00-a963-06cc1a14e7fd"
+    },
+    {
+      "claim_id": "56aead60-9d25-43f1-bafa-fa20809db639",
+      "result_id": "64aee446-c1cc-4e00-a963-06cc1a14e7fd"
+    },
+    {
+      "claim_id": "83994047-f98d-466e-a34c-3904b2d9eb1b",
+      "result_id": "fd2a2283-25ac-463d-aaa6-584aee158c1a"
+    },
+    {
+      "claim_id": "67e1746f-20a4-42df-aa0a-da38ba58b31c",
+      "result_id": "fd2a2283-25ac-463d-aaa6-584aee158c1a"
+    },
+    {
+      "claim_id": "8164c125-da07-4023-9eb6-1b91c3dd341b",
+      "result_id": "fd2a2283-25ac-463d-aaa6-584aee158c1a"
+    },
+    {
+      "claim_id": "7222a3e0-8ec7-4f76-9453-405b5f228d8b",
+      "result_id": "fd2a2283-25ac-463d-aaa6-584aee158c1a"
+    },
+    {
+      "claim_id": "9c7024c7-2c2e-4d11-ac8c-f878e5056c11",
+      "result_id": "549bb822-acb1-4b35-91e7-13a9b7d15ec8"
+    },
+    {
+      "claim_id": "9671ffd3-1102-4422-9b91-35b08fe036c1",
+      "result_id": "549bb822-acb1-4b35-91e7-13a9b7d15ec8"
+    },
+    {
+      "claim_id": "f6bb594a-263d-457e-8b3f-71a77e351ed9",
+      "result_id": "549bb822-acb1-4b35-91e7-13a9b7d15ec8"
+    },
+    {
+      "claim_id": "080cf452-c8cc-444f-bf22-c1eb4b36240f",
+      "result_id": "549bb822-acb1-4b35-91e7-13a9b7d15ec8"
+    },
+    {
+      "claim_id": "e83d1fb3-845a-44a0-9bb1-f2d0b5279c4d",
+      "result_id": "549bb822-acb1-4b35-91e7-13a9b7d15ec8"
+    },
+    {
+      "claim_id": "1870c0a6-a7f7-4752-82df-c72691d9677d",
+      "result_id": "1093f719-fae1-4c74-94f9-fbf417f9ea46"
+    },
+    {
+      "claim_id": "9f71826c-7cc1-4182-b692-8b48c891d237",
+      "result_id": "1093f719-fae1-4c74-94f9-fbf417f9ea46"
+    },
+    {
+      "claim_id": "667451e9-a543-4932-a71a-37053509008e",
+      "result_id": "1093f719-fae1-4c74-94f9-fbf417f9ea46"
+    },
+    {
+      "claim_id": "55442c27-2e1b-4a38-9bfc-ae33bb00b39c",
+      "result_id": "1093f719-fae1-4c74-94f9-fbf417f9ea46"
+    },
+    {
+      "claim_id": "78b1f40e-29a0-418d-8557-cf3bd31f9004",
+      "result_id": "1093f719-fae1-4c74-94f9-fbf417f9ea46"
+    },
+    {
+      "claim_id": "257a0421-52e6-43cd-8853-c2eefe8ca30c",
+      "result_id": "1093f719-fae1-4c74-94f9-fbf417f9ea46"
+    },
+    {
+      "claim_id": "9e24533f-2676-4f0a-9fa9-d9d60d2538c9",
+      "result_id": "1093f719-fae1-4c74-94f9-fbf417f9ea46"
+    },
+    {
+      "claim_id": "be5bb3a5-e771-49df-82b6-a9a46c9b6f95",
+      "result_id": "1093f719-fae1-4c74-94f9-fbf417f9ea46"
+    },
+    {
+      "claim_id": "83d727dd-de0c-45da-9c98-2c315517b94c",
+      "result_id": "7674008a-b0fc-4349-aad1-058e69ec1f4b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1521 @@
+{
+  "submission": {
+    "id": "23b98c29-868b-4005-86b7-ee40aedabbaf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:20:57.260841Z",
+    "updated_at": "2025-12-03T01:20:57.260841Z"
+  },
+  "content": [
+    {
+      "id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "submission_id": "23b98c29-868b-4005-86b7-ee40aedabbaf",
+      "content_type": "manuscript",
+      "content_text": "# Human complex exploration strategies are enriched by noradrenaline-modulated heuristics\n\n## Authors\n\n- Magda Dubois<sup>1</sup> ([ORCID: 0000-0002-5396-1855](https://orcid.org/0000-0002-5396-1855)) \u2020\n- Johanna Habicht<sup>1</sup>\n- Jochen Michely<sup>1</sup>\n- Rani Moran<sup>1</sup> ([ORCID: 0000-0002-7641-2402](https://orcid.org/0000-0002-7641-2402))\n- Ray J Dolan<sup>1</sup> ([ORCID: 0000-0001-9356-761X](https://orcid.org/0000-0001-9356-761X))\n- Tobias U Hauser<sup>1</sup> ([ORCID: 0000-0002-7997-8137](https://orcid.org/0000-0002-7997-8137)) \u2020\n\n### Affiliations\n\n1. Max Planck UCL Centre for Computational Psychiatry and Ageing Research London United Kingdom\n2. Wellcome Trust Centre for Neuroimaging, University College London London United Kingdom\n3. Department of Psychiatry and Psychotherapy, Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nAn exploration-exploitation trade-off, the arbitration between sampling a lesser-known against a known rich option, is thought to be solved using computationally demanding exploration algorithms. Given known limitations in human cognitive resources, we hypothesised the presence of additional cheaper strategies. We examined for such heuristics in choice behaviour where we show this involves a value-free random exploration, that ignores all prior knowledge, and a novelty exploration that targets novel options alone. In a double-blind, placebo-controlled drug study, assessing contributions of dopamine (400 mg amisulpride) and noradrenaline (40 mg propranolol), we show that value-free random exploration is attenuated under the influence of propranolol, but not under amisulpride. Our findings demonstrate that humans deploy distinct computationally cheap exploration strategies and that value-free random exploration is under noradrenergic control.\n\n## Introduction\n\nChocolate, Toblerone, spinach, or hibiscus ice-cream? Do you go for the flavour you like the most (chocolate), or another one? In such an exploration-exploitation dilemma, you need to decide whether to go for the option with the highest known subjective value (exploitation) or opt instead for less known or valued options (exploration) so as to not miss out on possibly even higher rewards. In the latter case, you can opt to either choose an option that you have previously enjoyed (Toblerone), an option you are curious about because you do not know what to expect (hibiscus), or even an option that you have disliked in the past (spinach). Depending on your exploration strategy, you may end up with a highly disappointing ice cream encounter, or a life-changing gustatory epiphany.\n\nA common approach to the study of complex decision making, for example an exploration-exploitation trade-off, is to take computational algorithms developed in the field of artificial intelligence and test whether key signatures of these are evident in human behaviour. This approach has revealed humans use strategies that reflect an implementation of computationally demanding exploration algorithms (Gershman, 2018; Schulz and Gershman, 2019). One such strategy, directed exploration, involves awarding an \u2018information bonus\u2019 to choice options, a bonus that scales with uncertainty. This is captured in algorithms such as the Upper Confidence Bound (UCB) (Auer, 2003; Carpentier et al., 2011) and leads to an exploration of choice options the agent knowns little about (Gershman, 2018; Schwartenbeck et al., 2019) (e.g. the hibiscus ice-cream). An alternative strategy, sometimes termed \u2018random\u2019 exploration, is to induce stochasticity after value computations in the decision process. This can be realised using a fixed parameter as a source of stochasticity, such as a softmax temperature parameter (Daw et al., 2006; Wilson et al., 2014), which can be combined with the UCB algorithm (Gershman, 2018). Alternatively, one can use a dynamic source of stochasticity, such as in Thompson sampling (Thompson, 1933), where stochasticity adapts to an uncertainty about choice options. This exploration is essentially a more sophisticated, uncertainty-driven, version of a softmax. By accounting for stochasticity when comparing choice options\u2019 expected values, in effect choosing based on both uncertainty and value, these exploration strategies increase the likelihood of choosing \u2018good\u2019 options that are only slightly less valuable than the best (e.g. the Toblerone ice-cream if you are a chocolate lover).\n\nThe above processes are computationally demanding, especially when facing real-life multiple-alternative decision problems (Daw et al., 2006; Cohen et al., 2007; Cogliati Dezza et al., 2019). Human cognitive resources are constrained by capacity limitations (Papadopetraki et al., 2019), metabolic consumption (Z\u00e9non et al., 2019), but also because of resource allocation to parallel tasks (e.g.Wahn and K\u00f6nig, 2017; Marois and Ivanoff, 2005). This directly relates to an agents\u2019 motivation to perform a given task (Papadopetraki et al., 2019; Botvinick and Braver, 2015; Frob\u00f6se et al., 2020), as increasing an information demand in one process automatically reduces its availability for others (Z\u00e9non et al., 2019). In real-world highly dynamic environments, this arbitration is critical as humans need to maintain resources for alternative opportunities (i.e. flexibility; Papadopetraki et al., 2019; Kool et al., 2010; Cools, 2015). This accords with previous studies showing humans are demand-avoidant (Kool et al., 2010; Frob\u00f6se and Cools, 2018) and suggests that exploration computations tend to be minimised. Here, we examine the explanatory power of two additional computationally less costly forms of exploration, namely value-free random exploration and novelty exploration.\n\nComputationally, the least resource demanding way to explore is to ignore all prior information and to choose entirely randomly, de facto assigning the same probability to all options. Such \u2018value-free\u2019 random exploration, as opposed to the two previously considered \u2018value-based\u2019 random explorations (for simulations comparing their effects Figure 1\u2014figure supplement 2) that add stochasticity during choice value computation, forgoes any costly computation (i.e. value mean and uncertainty), known as an $\u03f5$-greedy algorithmic strategy in reinforcement learning (Sutton and Barto, 1998). Computational efficiency, however, comes at the cost of sub-optimality due to occasional selection of options of low expected value (e.g. the repulsive spinach ice cream).\n\nDespite its sub-optimality, value-free random exploration has neurobiological plausibility. Of relevance in this context is a view that exploration strategies depend on dissociable neural mechanisms (Zajkowski et al., 2017). Influences from noradrenaline and dopamine are plausible candidates in this regard based on prior evidence (Cohen et al., 2007; Hauser et al., 2016). Amongst other roles (such as memory [Sara et al., 1994], or energisation of behaviour [Varazzani et al., 2015; Silvetti et al., 2018]), the neuromodulator noradrenaline has been ascribed a function of indexing uncertainty (Silvetti et al., 2013; Yu and Dayan, 2005; Nassar et al., 2012) or as acting as a \u2018reset button\u2019 that interrupts ongoing information processing (David Johnson, 2003; Bouret and Sara, 2005; Dayan and Yu, 2006). Prior experimental work in rats shows boosting noradrenaline leads to more value-free-random-like random behaviour (Tervo et al., 2014), while pharmacological manipulations in monkeys indicates reducing noradrenergic activity increases choice consistency (Jahn et al., 2018).\n\nIn human pharmacological studies, interpreting the specific function of noradrenaline on exploration strategies is problematic as many drugs, such as atomoxetine (e.g. Warren et al., 2017), impact multiple neurotransmitter systems. Here, to avoid this issue, we chose the highly specific $\\beta$-adrenoceptor antagonist propranolol, which has only minimal impact on other neurotransmitter systems (Fraundorfer et al., 1994; Hauser et al., 2019). Using this neuromodulator, we examine whether signatures of value-free random exploration are impacted by administration of propranolol.\n\nAn alternative computationally efficient exploration heuristic to random exploration is to simply choose an option not encountered previously, which we term novelty exploration. Humans often show novelty seeking (Bunzeck et al., 2012; Wittmann et al., 2008; Gershman and Niv, 2015; Stoji\u0107 et al., 2020), and this strategy can be used in exploration as implemented by a low-cost version of the UCB algorithm. Here, a novelty bonus (Krebs et al., 2009) is added if a choice option has not been seen previously (i.e. it does not have to rely on precise uncertainty estimates). The neuromodulator dopamine is implicated not only in exploration in general (Frank et al., 2009), but also in signalling such types of novelty bonuses, where evidence indicates a role in processing and exploring novel and salient states (Wittmann et al., 2008; Bromberg-Martin et al., 2010; Costa et al., 2014; D\u00fczel et al., 2010; Iigaya et al., 2019). Although pharmacological dopaminergic studies in humans have demonstrated effects on exploration as a whole (Kayser et al., 2015), they have not identified specific exploration strategies. Here, we used the highly specific D2/D3 antagonist amisulpride, to disentangle the specific role of dopamine and noradrenaline on different exploration strategies.\n\nThus, in the current study, we examine the contributions of value-free random exploration and novelty exploration in human choice behaviour. We developed a novel exploration task combined with computational modeling to probe the contributions of noradrenaline and dopamine. Under double-blind, placebo-controlled, conditions, we assessed the impact of two antagonists with high affinity and specificity for either dopamine (amisulpride) or noradrenaline (propranolol), respectively. Our results provide evidence that both exploration heuristics supplement computationally more demanding exploration strategies, and that value-free random exploration is particularly sensitive to noradrenergic modulation, with no effect of amisulpride.\n\n## Results\n\n### Probing the contributions of heuristic exploration strategies\n\nWe developed a novel multi-round three-armed bandit task (Figure 1; bandits depicted as trees), enabling us to assess the contributions of value-free random exploration and novelty exploration in addition to Thompson sampling and UCB (combined with a softmax). In particular, we exploited the fact that both heuristic strategies make specific predictions about choice patterns. The novelty exploration assigns a \u2018novelty bonus\u2019 only to bandits for which subjects have no prior information, but not to other bandits. This can be seen as a low-resolution version of UCB, which assigns a bonus to all choice options proportionally to how informative they are, in effect a graded bonus which scales to each bandit's uncertainty. Thus, to capture this heuristic, we manipulated the amount of prior information with bandits carrying only little information (i.e. 1 vs 3 initial samples) or no information (0 initial samples). A high novelty exploration predicts a higher frequency of selecting the novel option (Figure 1f). This is in contrast to high exploration using other strategies which does not predict such a strong effect on the novel option (Figure 1\u2014figure supplement 5).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig1-v2.jpg)\n\n**Figure 1.:** In the Maggie\u2019s farm task, subjects had to choose from three bandits (depicted as trees) to maximise an outcome (sum of reward). The rewards (apple size) of each bandit followed a normal distribution with a fixed sampling variance. (a) At the beginning of each trial, subjects were provided with some initial samples on the wooden crate at the bottom of the screen and had to select which bandit they wanted to sample from next. (b) Depending the condition, they could either perform one draw (short horizon) or six draws (long horizon). The empty spaces on the wooden crate (and the sun's position) indicated how many draws they had left. The first draw in both conditions was the main focus of the analysis. (c) In each trial, three bandits were displayed, selected from four possible bandits, with different generative processes that varied in terms of their sample mean and number of initial samples (i.e. samples shown at the beginning of a trial). The \u2018certain-standard bandit\u2019 and the \u2018standard bandit\u2019 had comparable means but different levels of uncertainty about their expected mean: they provided three and one initial sample, respectively; the \u2018low-value bandit\u2019 had a low mean and displayed one initial sample; the \u2018novel bandit\u2019 did not show any initial sample and its mean was comparable with that of the standard bandits. (d) Prior to the task, subjects were administered different drugs: 400\u00a0mg amisulpride that blocks dopaminergic D2/D3 receptors, 40\u00a0mg propranolol to block noradrenergic \u03b2-receptors, and inert substances for the placebo group. Different administration times were chosen to comply with the different drug pharmacokinetics (placebo matching the other groups\u2019 administration schedule). (e) Simulating value-free random behaviour with a low vs high model parameter ($\u03f5$) in this task shows that in a high regime, agents choose the low-value bandit more often (left panel; mean \u00b1 1\u00a0SD) and are less consistent in their choices when facing identical choice options (right panel).\u00a0(f) Novelty exploration exclusively promotes choosing choice options for which subjects have no prior information, captured by the \u2018novel bandit\u2019 in our task. For details about simulations cf. Materials and methods. For details about the task display Figure 1\u2014figure supplement 1. For simulations of different exploration strategies and their impact of different bandits Figure 1\u2014figure supplement 2\u20135.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The associated rewards went from 2 (small apple on the left) to 10 (big apple on the right).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Comparison of value-based (softmax) and value-free ($\u03f5$-greedy) random exploration.(a) Changing the softmax inverse temperature affects the slope of the sigmoid while changing the $\u03f5$-greedy parameter (b) affects the compression of the sigmoid. Conceptually, in a softmax exploration mode, as each bandit's expected value is taken into account, (c) the second best bandit (medium-value bandit) is favoured over one with a lower value (low-value bandit) when injecting noise. In contrast, in an $\u03f5$-greedy exploration mode, (d) bandits are explored equally often irrespective of their expected value. Both simulations were performed on trials without novel bandit. When simulating on all trials, we observe that this also has a consequence for choice consistency. (e) Choices are more consistent in a low (versus high) softmax exploration mode (i.e. high and low values of $\\beta$, respectively), and similarly (f) choices are more consistent in a low (versus high) $\u03f5$-greedy exploration mode (i.e. low and high values of $\u03f5$, respectively). When comparing the overall consistency of the two random exploration strategies, consistency is higher in the value-based mode, reflecting a higher probability of (consistently) exploring the second best option, compared to an equal probability of exploring any non-optimal option (inconsistently) in the value-free mode.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** To illustrate the long (versus short) horizon condition, we accommodated the fact that not only key values but also other exploration strategies were enhanced by increasing multiple exploration strategies, as found in our experimental data (Appendix 2\u2014table 7 for parameter values). Please note that the difference between low and high exploration is critical here, rather than a comparison of the absolute height of the bars between strategies (which is influences in the models by multiple different exploration strategies). For simulations fitting participants\u2019 data, please see Figure 5\u2014figure supplements 1 and 3.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** To illustrate the long (versus short) horizon condition, accommodated the fact that not only the key value but also other exploration strategies were enhanced by increasing multiple exploration strategies, as found in our experimental data (Appendix 2\u2014table 7 for parameter values). Please note that the difference between low and high exploration is critical here, rather than a comparison of the absolute height of the bars between strategies (which is influences in the models by multiple different exploration strategies). For simulations fitting participants\u2019 data, please see Figure 5\u2014figure supplements 1 and 3.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (c) A high (versus low) Thompson-sampling exploration had little effect and (d) a high (versus low) UCB exploration affected this frequency but to a lower extend than novelty exploration. To illustrate the long (versus short) horizon condition, we accommodated the fact that not only the key value but also other exploration strategies were enhanced by increasing multiple exploration strategies, as found in our experimental data (Appendix 2\u2014table 7 for parameter values). Please note that the difference between low and high exploration is critical here, rather than a comparison of the absolute height of the bars between strategies (which is influences in the models by multiple different exploration strategies). For simulations fitting participants\u2019 data, please see Figure 5\u2014figure supplements 1 and 3.\n\nValue-free random exploration, captured here by $\u03f5$-greedy, predicts that all prior information is discarded entirely and that there is equal probability attached to all choice options. This strategy is distinct from other exploration strategies as it is likely to choose bandits known to be substantially worse than the other bandits. Thus, a high value-free random exploration predicts a higher frequency of selecting the low-value option (Figure 1e), whereas high exploration using other strategies does not predict such effect (Figure 1\u2014figure supplement 3). A second prediction is that choice consistency, across repeated trials, is directly affected by value-free random exploration, in particular by comparison to other more deterministic exploration strategies (e.g. directed exploration) that are value-guided and thus will consistently select\u00a0the most informative and valuable options. Given that value-free random exploration splits its choice probability equally (i.e. 33.3% of choosing any bandit out of the three displayed), an increase in such exploration predicts a lower likelihood of choosing the same bandit again, even under identical choice options (Figure 1e). This contrasts to other strategies that make consistent exploration predictions (e.g. UCB would consistently explore the choice option that carries a high information bonus; Figure 1\u2014figure supplement 4).\n\nWe generated bandits from four different generative processes (Figure 1c) with distinct sample means (but a fixed sampling variance) and number of initial samples (i.e. samples shown at the beginning of a trial for this specific bandit). Subjects were exposed to these bandits before making their first draw. The \u2018certain-standard bandit\u2019 and the (less certain) \u2018standard bandit\u2019 were bandits with comparable means but varying levels of uncertainty, providing either three or one initial samples (depicted as apples; similar to the horizon task [Wilson et al., 2014]). The \u2018low-value bandit\u2019 was a bandit with one initial sample from a substantially lower generative mean, thus appealing to a value-free random exploration strategy alone. The last bandit, with a mean comparable with that of the standard bandits, was a \u2018novel bandit\u2019 for which no initial sample was shown, primarily appealing to a novelty exploration strategy (cf. Materials and methods for a full description of bandit generative processes). To assess choice consistency, all trials were repeated once. In the pilot experiments (data not shown), we noted some exploration strategies tended to overshadow other strategies. To effectively assess all exploration strategies, we opted to present only three of the four different bandit types on each trial, as different bandit triples allow different explorations to manifest. Lastly, to assess whether subjects\u2019 behaviour captured exploration, we manipulated the degree to which subjects could interact with the same bandits. Similar to previous studies (Wilson et al., 2014), subjects could perform either one draw, encouraging exploitation (short horizon condition), or six draws, encouraging more substantial explorative behaviour (long horizon condition) (Wilson et al., 2014; Warren et al., 2017).\n\n### Testing the role of catecholamines noradrenaline and dopamine\n\nIn a double-blind, placebo-controlled, between-subjects study design, we assigned subjects (N=60) randomly to one of three experimental groups: amisulpride, propranolol, or placebo. The first group received 40\u00a0mg of the $\\beta$-adrenoceptor antagonist propranolol to alter noradrenaline function, while the second group was administered 400\u00a0mg of the D2/D3 antagonist amisulpride that alters dopamine function. Because of different pharmacokinetic properties, these drugs were administered at different times (Figure 1d) and compared to a placebo group that received a placebo at both drug times to match the corresponding antagonist's time. One subject (amisulpride group) was excluded from the analysis due to a lack of engagement with the task. Reported findings were corrected for IQ and mood, as drug groups differed marginally in those measures (Appendix 2\u2014table 7), by adding WASI (Wechsler, 2013) and PANAS (Watson et al., 1988a) negative scores as covariates in each ANOVA. Similar results were obtained in an analysis that corrected for physiological effects as from the analysis without covariates (cf. Appendix 1).\n\n### Increased exploration when information can subsequently be exploited\n\nOur task embodied two decision-horizon conditions, a short and a long. To assess whether subjects explored more in a long horizon condition, in which additional information can inform later choices, we examined which bandit subjects chose in their first draw (in accordance with the horizon task [Wilson et al., 2014]), irrespective of their drug group. A marker of exploration here is evident if subjects chose bandits with lower expected values, computed as the mean value of their initial samples shown (trials where the novel bandit was chosen were excluded). As expected, subjects chose bandits with a lower expected value in the long compared to the short horizon (repeated-measures ANOVA for the expected value: F(1, 56)\u00a0=\u00a019.457, p<0.001, $\u03b7^{2}$\u00a0=\u00a00.258; Figure 2a). To confirm that this was a consequence of increased exploration, we analysed the proportion of how often the high-value option was chosen (i.e. the bandit with the highest expected reward based on its initial samples) and we found that subjects (especially those with higher IQ) sampled from it more in the short compared to the long horizon, (WASI-by-horizon interaction: F(1,\u00a054)\u00a0=\u00a013.304, p\u00a0=\u00a00.001, $\u03b7^{2}$\u00a0=\u00a00.198; horizon main effect: F(1, 54)\u00a0=\u00a03.909, p\u00a0=\u00a00.053, $\u03b7^{2}$\u00a0=\u00a00.068; Figure 3a), confirming a reduction in exploitation when this information could be subsequently used. Interestingly, this frequency seemed to be marginally higher in the amisulpride group, suggesting an overall higher tendency to exploitation following dopamine blockade (cf. Appendix 1). This horizon-specific behaviour resulted in a lower reward on the first sample in the long compared to the short horizon (F(1, 56)\u00a0=\u00a023.922, p<0.001, $\u03b7^{2}$\u00a0=\u00a00.299; Figure 2c). When we tested whether subjects were more likely to choose options they knew less about (computed as the mean number of initial samples shown), we found that subjects chose less known (i.e. more informative) bandits more often in the long horizon compared to the short horizon (F(1, 56)\u00a0=\u00a058.78, p<0.001, $\u03b7^{2}$\u00a0=\u00a00.512; Figure 2b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig2-v2.jpg)\n\n**Figure 2.:** To investigate the effect of information on performance we collapsed subjects over all three treatment groups. (a) The expected value (average of its initial samples) of the first chosen bandit as a function of horizon. Subjects chose bandits with a lower expected value (i.e. they explored more) in the long horizon compared to the short horizon. (b) The mean number of samples for the first chosen bandit as a function of horizon. Subjects chose less known (i.e. more informative) bandits more in the long compared to the short horizon. (c) The first draw in the long horizon led to a lower reward than the first draw in the short horizon, indicating that subjects sacrificed larger initial outcomes for the benefit of more information. This additional information helped making better decisions in the long run, leading to a higher earning over all draws in the long horizon. For values and statistics Appendix 2\u2014table 3. For response times and details about all long horizons\u2019 samples Figure 2\u2014figure supplement 1. *** =\u00a0p<0.001. Data are shown as mean \u00b1 1\u00a0SEM and each dot/line represent a subject.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) The first draw in the long horizon led to a lower reward than the short horizon, indicating more exploration, while the subsequent draws led to a higher reward indicating that this additional information helped making better decisions in the long run. (b) The first draws\u2019 response time was the highest and then decreased for each draw. Long horizon trials in which subjects started with (c) an exploitation draw (choose the bandit with the highest expected value) led to little increase in reward (y-axis: difference between obtained reward and highest reward of initial samples; linear regression slope coefficient: mean\u00a0=\u00a00.118, sd\u00a0=\u00a00.038), whereas trials in which they started with (d) an exploration draw led to an large increase in reward (linear regression slope coefficient: mean\u00a0=\u00a00.028, sd\u00a0=\u00a00.041). This larger increase in reward when starting by exploring (slope is higher: t(58)\u00a0=\u00a0-12.161, p<0.001, d\u00a0=\u00a0\u22121.583) indicates that the information that was gained through exploration led to higher long-term outcomes. Data are shown as mean \u00b1 1\u00a0SEM and each dot represent one subject.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig3-v2.jpg)\n\n**Figure 3.:** Choice patterns in the first draw for each horizon and drug group (propranolol, placebo and amisulpride). (a) Subjects sampled from the high-value bandit (i.e. bandit with the highest average reward of initial samples) more in the short horizon compared to the long horizon indicating reduced exploitation. (b) Subjects sampled from the low-value bandit more in the long horizon compared to the short horizon indicating value-free random exploration, but subjects in the propranolol group sampled less from it overall, and (c) were more consistent in their choices overall, indicating that noradrenaline blockade reduces value-free random exploration. (d) Subjects sampled from the novel bandit more in the long horizon compared to the short horizon indicating novelty exploration. Please note that some horizon effects were modulated by subjects\u2019 intellectual abilities when additionally controlling for them (Appendix 2\u2014table 4). Horizontal bars represent rm-ANOVA (thick) and pairwise comparisons (thin). \u2020 =\u00a0p<0.07, * =\u00a0p<0.05, ** =\u00a0p<0.01. Data are shown as mean \u00b1 1\u00a0SEM and each line represent one subject. For values and statistics Appendix 2\u2014table 4. For response times and frequencies specific to the displayed bandits Figure 3\u2014figure supplements 1\u20132.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** There was no difference in RT depending which bandit was chosen. For details and statistics cf. Appendix 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) The high-value bandit was picked more when there was no novel bandit, and less when the high-value bandit was less certain. (b) The novel bandit was picked the most when the high-value bandit was less certain, then when the high-value bandit was more certain, and it was picked the least when both certain and certain standard bandits were present. (c) The low-value bandit was picked less when the high-value bandit was more certain. For statistics see Appendix 1.\n\nNext, to evaluate whether subjects used the additional information beneficially in the long horizon condition, we compared the average reward (across six draws) obtained in the long compared to short horizon (one draw). We found that the average reward was higher in the long horizon (F(1, 56)\u00a0=\u00a0103.759, p<0.001, $\u03b7^{2}$\u00a0=\u00a00.649; Figure 2c), indicating that subjects tended to choose less optimal bandits at first but subsequently learnt to appropriately exploit the harvested information to guide choices of better bandits in the long run. Additionally, when looking specifically at the long horizon condition, we found that subjects earned more when their first draw was explorative versus exploitative (Figure 2\u2014figure supplement 1c\u2013d; cf. Appendix 2 for details).\n\n### Subjects demonstrate value-free random behaviour\n\nValue-free random exploration (analogue to $\u03f5$-greedy) predicts that $\u03f5%$ of the time each option will have an equal probability of being chosen. In such a regime (compared to more complex strategies that would favour options with a higher expected value with a similar uncertainty), the probability of choosing bandits with a low expected value (here the low-value bandit; Figure 1e) will be higher (Figure 1\u2014figure supplement 3). We investigated whether the frequency of picking the low-value bandit was increased in the long horizon condition across all subjects (i.e. when exploration is useful), and we found a significant main effect of horizon (F(1, 54)\u00a0=\u00a04.069, p\u00a0=\u00a00.049, $\u03b7^{2}$\u00a0=\u00a00.07; Figure 3b). This demonstrates that value-free random exploration is utilised more when exploration is beneficial.\n\n### Value-free random behaviour is modulated by noradrenaline function\n\nWhen we tested whether value-free random exploration was sensitive to neuromodulatory influences, we found a difference in how often drug groups sampled from the low-value option (drug main effect: F(2, 54)\u00a0=\u00a07.003, p\u00a0=\u00a00.002, $\u03b7^{2}$\u00a0=\u00a00.206; drug-by-horizon interaction: F(2, 54)\u00a0=\u00a02.154, p\u00a0=\u00a00.126, $\u03b7^{2}$\u00a0=\u00a00.074; Figure 3b). This was driven by the propranolol group choosing the low-value option significantly less often than the other two groups (placebo vs propranolol: t(40)\u00a0=\u00a02.923, p\u00a0=\u00a00.005, d\u00a0=\u00a00.654; amisulpride vs propranolol: t(38)\u00a0=\u00a02.171, p\u00a0=\u00a00.034, d\u00a0=\u00a00.496) with no difference between amisulpride and placebo: (t(38)\u00a0=\u00a0-0.587, p\u00a0=\u00a00.559, d\u00a0=\u00a00.133). These findings demonstrate that a key feature of value-free random exploration, the frequency of choosing low-value bandits, is sensitive to influences from noradrenaline.\n\nTo further examine drug effects on value-free random exploration, we assessed a second prediction, namely choice consistency. Because value-free random exploration ignores all prior information and chooses randomly, it should result in a decreased choice consistency when presented identical choice options (Figure 1\u2014figure supplements 2 and 4, compared to more complex strategies which are always biased towards the rewarding or the information providing bandit for example). To this end, each trial was duplicated in our task, allowing us to compute the consistency as the percentage of time subjects sampled from an identical bandit when facing the exact same choice options. In line with the above analysis, we found a difference in consistency by which drug groups sampled from different option (drug main effect: F(2, 54)\u00a0=\u00a07.154, p\u00a0=\u00a00.002, $\u03b7^{2}$\u00a0=\u00a00.209; horizon main effect: F(1, 54)\u00a0=\u00a01.333, p\u00a0=\u00a00.253, $\u03b7^{2}$\u00a0=\u00a00.024; drug-by-horizon interaction: F(2, 54)\u00a0=\u00a03.352, p\u00a0=\u00a00.042, $\u03b7^{2}$\u00a0=\u00a00.11; Figure 3c), driven by the fact that the propranolol group chose significantly more consistently than the other two groups (pairwise comparisons: placebo vs propranolol: t(40)\u00a0=\u00a0-3.525, p\u00a0=\u00a00.001, d\u00a0=\u00a00.788; amisulpride vs placebo: t(38)\u00a0=\u00a01.107, p\u00a0=\u00a00.272, d\u00a0=\u00a00.251; amisulpride vs propranolol: t(38)\u00a0=\u00a0-2.267, p\u00a0=\u00a00.026, d\u00a0=\u00a00.514). Please see Appendix 1 for further discussion and analysis of the drug-by-horizon interaction. Taken together, these results indicate that value-free random exploration depends critically on noradrenaline functioning, such that an attenuation of noradrenaline leads to a reduction in value-free random exploration.\n\n### Novelty exploration is unaffected by catecholaminergic drugs\n\nNext, we examined whether subjects show evidence for novelty exploration by choosing the novel bandit for which there was no prior information (i.e. no initial samples), as predicted by model simulations (Figure 1f). We found a significant main effect of horizon (F(1, 54)\u00a0=\u00a05.593, p\u00a0=\u00a00.022, $\u03b7^{2}$\u00a0=\u00a00.094; WASI-by-horizon interaction: F(1, 54)\u00a0=\u00a013.897, p<0.001, $\u03b7^{2}$\u00a0=\u00a00.205; Figure 3d) indicating that subjects explored the novel bandit significantly more often in the long horizon condition, and this was particularly strong for subjects with a higher IQ. We next assessed whether novelty exploration was sensitive to our drug manipulation, but found no drug effects on the novel bandit (F(2, 54)\u00a0=\u00a01.498, p\u00a0=\u00a00.233, $\u03b7^{2}$\u00a0=\u00a00.053; drug-by-horizon interaction: F(2, 54)\u00a0=\u00a00.542, p\u00a0=\u00a00.584, $\u03b7^{2}$\u00a0=\u00a00.02; Figure 3d). Thus, there was no evidence that an attenuation of dopamine or noradrenaline function impacts novelty exploration in this task.\n\n### Subjects combine computationally demanding strategies and exploration heuristics\n\nTo examine the contributions of different exploration strategies to choice behaviour, we fitted a set of computational models to subjects\u2019 behaviour, building on models developed in previous studies\u00a0(Gershman, 2018). In particular, we compared models incorporating UCB, Thompson sampling, an $\u03f5$-greedy algorithm and the novelty bonus (cf. Materials and methods). Essentially, each model makes different exploration predictions. In the Thompson model, Thompson sampling (Thompson, 1933; Agrawal and Goyal, 2012) leads to an uncertainty-driven value-based random exploration, where both expected value and uncertainty contribute to choice. In this model higher uncertainty leads to more exploration such that instead of selecting a bandit with the highest mean, bandits are chosen relative to how often a random sample would yield the highest outcome, thus accounting for uncertainty (Schulz and Gershman, 2019). The UCB model (Auer, 2003; Carpentier et al., 2011), capturing directed exploration, predicts that each bandit is chosen according to a mixture of expected value and an additional expected information gain (Schulz and Gershman, 2019). This is realised by adding a bonus to the expected value of each option, proportional to how informative it would be to select this option (i.e. the higher the uncertainty in the option's value, the higher the information gain). This computation is then passed through a softmax decision model, capturing value-based random exploration. Novelty exploration is a simplified version of the information bonus in the UCB algorithm, which only applies to entirely novel options. It defines the intrinsic value of selecting a bandit about which nothing is known, and thus saves demanding computations of uncertainty for each bandit. Last, the value-free random\u00a0$\u03f5$-greedy\u00a0algorithm selects any bandit $\u03f5$ % of the time, irrespective of the prior information of this bandit. For additional models cf. Appendix 1.\n\nWe used cross-validation for model selection (Figure 4a) by comparing the likelihood of held-out data across different models, an approach that adequately arbitrates between model accuracy and complexity. The winning model encompasses uncertainty-driven value-based random exploration (Thompson sampling) with value-free random exploration ($\u03f5$-greedy parameter) and novelty exploration (novelty bonus parameter\u00a0$\u03b7$). The winning model predicted held-out data with a 55.25% accuracy (SD=8.36%; chance level =\u00a033.33%). Similarly to previous studies (Gershman, 2018), the hybrid model combining UCB and Thompson sampling explained the data better than each of those processes alone, but this was no longer the case when accounting for novelty and value-free random exploration (Figure 4a). The winning model further revealed that all parameter estimates could be accurately recovered (Figure 4b; Figure 4\u2014figure supplement 3). Interestingly, although the second and third place models made different prediction about the complex exploration strategy, using a directed exploration with value-based random exploration (UCB) or a combination of complex strategies (hybrid) respectively, they share the characteristic of benefitting from value-free random and novelty exploration. This highlights that subjects used a mixture of computationally demanding and heuristic exploration strategies.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig4-v2.jpg)\n\n**Figure 4.:** (a) A 10-fold cross-validation of the likelihood of held-out data was used for model selection (chance level =\u00a033.3%; for model selection at the individual level Figure 4\u2014figure supplement 1). The Thompson model with both the $\u03f5$-greedy parameter and the novelty bonus $\u03b7$ best predicted held-out data (b) Model simulation with 47 simulations predicted good recoverability of model parameters (for correlations between behaviour and model parameters Figure 4\u2014figure supplement 2); $\\sigma_{0}$ is the prior variance and $Q_{0}$ is the prior mean (for parameter recovery correlation plots Figure 4\u2014figure supplement 3). 1 stands for short horizon- and 2 for long horizon-specific parameters. For values and parameter details Appendix 2\u2014table 5.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) The winning model at the group level (the Thompson model with both $\u03f5$ and $\u03b7$) was also the one that accounted best for the largest number of subjects. (b) The Thompson+$\u03f5$+$\u03b7$ model and the UCB+$\u03f5$+$\u03b7$ are equally first in subject count when comparing all models, the Thompson+$\u03f5$+$\u03b7$ model is therefore still the winning model as it has the highest average likelihood of held-out data.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The behavioural indicators of (a) value-free random exploration (left panel: draws from the low-value bandit; right panel: consistency) correlated with the $\u03f5$-greedy parameter values, and of (b) novelty exploration (draws from the novel bandit) correlated with the novelty bonus\u00a0$\u03b7$.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** For each of the seven parameters of the winning model, we took four values, equally spread within the parameter range. We simulated behaviour using every combination ($4^{7}=16384$), fitted the model and analysed how well the generative parameters (original values) correlated with the recovered ones (fitted parameters). Pearson correlation coefficient = r. Each dot represents one simulation.\n\n### Noradrenaline controls value-free random exploration\n\nTo more formally compare the impact of catecholaminergic drugs on different exploration strategies, we assessed the free parameters of the winning model between drug groups (Figure 5, cf. Appendix 2 Table 6 for exact values). First, we examined the $\u03f5$-greedy parameter that captures the contribution of value-free random exploration to choice behaviour. We assessed how this value-free random exploration differed between drug groups. A significant drug main effect (drug main effect: F(2, 54)\u00a0=\u00a06.722, p\u00a0=\u00a00.002, $\u03b7^{2}$\u00a0=\u00a00.199; drug-by-horizon interaction: F(2, 54)\u00a0=\u00a01.305, p\u00a0=\u00a00.28, $\u03b7^{2}$\u00a0=\u00a00.046; Figure 5a) demonstrates that the drug groups differ in how strongly they deploy this exploration strategy. Post-hoc analysis revealed that subjects with reduced noradrenaline functioning had the lowest values of $\u03f5$ (pairwise comparisons: placebo vs propranolol: t(40)\u00a0=\u00a03.177, p\u00a0=\u00a00.002, d\u00a0=\u00a00.71; amisulpride vs propranolol: t(38)\u00a0=\u00a02.723, p\u00a0=\u00a00.009, d\u00a0=\u00a00\u00a0.626) with no significant difference between amisulpride and placebo: (t(38)\u00a0=\u00a00.251, p\u00a0=\u00a00.802, d\u00a0=\u00a00.057). Critically, the effect on $\u03f5$ was also significant when the complex exploration strategy was a directed exploration with value-based random exploration (second place model) and, marginally significant, when it was a combination of the above (third place model; cf. Appendix 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig5-v2.jpg)\n\n**Figure 5.:** The winning model\u2019s parameters were fitted to each subject\u2019s first draw (for model simulations Figure 5\u2014figure supplement 1). (a) Subjects had higher values of $\u03f5$ (value-free random exploration) in the long compared to the short horizon.\u00a0Notably, subjects in the propranolol group had lower values of $\u03f5$ overall, indicating that attenuation of noradrenaline functioning reduces value-free random exploration. Subjects from all groups (b) assigned a similar value to novelty, captured by the novelty bonus $\u03b7$, which was higher (more novelty exploration) in the long compared to the short horizon. (c) The groups had similar beliefs $Q_{0}$ about a bandit's mean before seeing any initial samples and (d) were similarly uncertain $\\sigma_{0}$ about it (for gender effects Figure 5\u2014figure supplement 2). Please note that some horizon effects were modulated by subjects\u2019 intellectual abilities when additionally controlling for them (Appendix 2\u2014table 6). ** =\u00a0p<0.01. Data are shown as mean \u00b1 1\u00a0SEM and each dot/line represent one subject. For parameter values and statistics Appendix 2\u2014table 6.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Simulated behaviour for Thompson+$\u03f5$+$\u03b7$ model.We used each subjects\u2019 fitted parameters to simulate behaviour ($N_{trials}$=4000). Data are shown as mean \u00b1 1\u00a0SEM and each dot/line represent one agent.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Mean values (across horizon conditions) of $\\sigma_{0}$\u00a0were larger for female subjects, whereas in the amisulpride group, they were larger for male subjects. Data are shown as mean \u00b1 1\u00a0SEM and each dot represent one subject.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59907/elife-59907-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Simulated behaviour for UCB+$\u03f5$+$\u03b7$ model.We used each subjects\u2019 fitted parameters to simulate behaviour ($N_{trials}$=4000). Data are shown as mean \u00b1 1\u00a0SEM and each dot/line represent one agent.\n\nThe $\u03f5$-greedy parameter was also closely linked to the above behavioural metrics (correlation between the $\u03f5$-greedy parameter and: draws from the low-value bandit: $R_{Pearson}$\u00a0=\u00a00.828, p<0.001; choice consistency: $R_{Pearson}$\u00a0=\u00a0-0.596, p<0.001; Figure 4\u2014figure supplement 2), and showed a similar horizon effect (horizon main effect: F(1, 54)\u00a0=\u00a01.968, p\u00a0=\u00a00.166,\u00a0$\u03b7^{2}$\u00a0=\u00a00.035; WASI-by-horizon interaction: F(1, 54)\u00a0=\u00a06.08, p\u00a0=\u00a00.017, $\u03b7^{2}$\u00a0=\u00a00.101; Figure 5a). Our findings thus accord with the model-free analyses and demonstrate that noradrenaline blockade reduces value-free random exploration.\n\n### No drug effects on other parameters\n\nThe novelty bonus\u00a0$\u03b7$ captures the intrinsic reward of selecting a novel option. In line with the model-free behavioural findings, there was no difference between drug groups in terms of this effect (F(2, 54)\u00a0=\u00a00.249, p\u00a0=\u00a00.78, $\u03b7^{2}$\u00a0=\u00a00.009; drug-by-horizon interaction: F(2, 54)\u00a0=\u00a00.03, p\u00a0=\u00a00.971, $\u03b7^{2}$\u00a0=\u00a00.001). There was also a close alignment between model-based and model-agnostic analyses (correlation between the novelty bonus\u00a0$\u03b7$\u00a0and draws from the novel bandit: $R_{Pearson}$\u00a0=\u00a00.683, p<0.001; Figure 4\u2014figure supplement 2), and we found a similarly increased novelty bonus effect in the long horizon in subjects with a higher IQ (WASI-by-horizon interaction: F(1, 54) =\u00a08.416, p\u00a0=\u00a00.005, $\u03b7^{2}$\u00a0=\u00a00.135; horizon main effect: F(1, 54)\u00a0=\u00a01.839, p\u00a0=\u00a00.181, $\u03b7^{2}$\u00a0=\u00a00.033; Figure 5b).\n\nWhen analysing the additional model parameters, we found that subjects had similar prior beliefs about bandits, given by the initial estimate of a bandit\u2019s mean (prior mean $Q_{0}$: F(2, 54)\u00a0=\u00a00.118, p\u00a0=\u00a00.889, $\u03b7^{2}$\u00a0=\u00a00.004; Figure 5c) and their uncertainty about it (prior variance $\\sigma_{0}$: horizon main effect: F(1, 54)\u00a0=\u00a00.129, p\u00a0=\u00a00.721, $\u03b7^{2}$\u00a0=\u00a00.002; drug main effect: F(2, 54)\u00a0=\u00a00.06, p\u00a0=\u00a00.942, $\u03b7^{2}$\u00a0=\u00a00.002; drug-by-horizon interaction: F(2, 54)\u00a0=\u00a02.162, p\u00a0=\u00a00.125, $\u03b7^{2}$\u00a0=\u00a00.074; WASI-by-horizon interaction: F(1, 54)\u00a0=\u00a00.022, p\u00a0=\u00a00.882, $\u03b7^{2}$\u00a0<\u00a00.001; Figure 5d). Interestingly, our dopamine manipulation seemed to affect this uncertainty in a gender-specific manner, with female subjects having larger values of $\\sigma_{0}$ compared to males in the placebo group, and with the opposite being true in the amisulpride group (cf. Appendix 1). Taken together, these findings show that value-free random exploration was most sensitive to our drug manipulations.\n\n## Discussion\n\nSolving the exploration-exploitation problem is non-trivial, and one suggestion is that humans solve it using computationally demanding exploration strategies (Gershman, 2018; Schulz and Gershman, 2019), taking account of the uncertainty (variance) as well as the expected reward (mean) of each choice. Although tracking the distribution of summary statistics (e.g. mean and variance) is less resource costly than keeping track of full distributions (D'Acremont and Bossaerts, 2008), it nevertheless carries considerable costs when one has to keep track of multiple options, as in exploration. Indeed, in a three-bandit task such as that considered here, this results in a necessity to compute six key-statistics, drastically limiting computational resources when selecting among choice options (Cogliati Dezza et al., 2019). Real-life decisions often comprise an unlimited range of options, which results in a tracking of a multitude of key-statistics, potentially mandating a deployment of alternative more efficient strategies. Here, we demonstrate that two additional, less resource-hungry heuristics are at play during human decision-making, value-free random exploration and novelty exploration.\n\nBy assigning intrinsic value (novelty bonus [Krebs et al., 2009]) to an option not encountered before (Foley et al., 2014), a novelty bonus can be seen as an efficient simplification of demanding algorithms, such as UCB (Auer, 2003; Carpentier et al., 2011). It is interesting to note that our winning model did not include UCB, but instead novelty exploration. This indicates humans might use such a novelty shortcut to explore unseen, or rarely visited, states to conserve computational costs when such a strategy is possible. A second exploration heuristic that also requires minimal computational resources, value-free random exploration, also plays a role in our task. Even though less optimal, its simplicity and neural plausibility renders it a viable strategy. Indeed, we observe an increase in performance in each model after adding $\u03f5$, supporting the notion that this strategy is a relevant additional human exploration heuristic. Interestingly, the benefit of $\u03f5$ is somewhat smaller in a simple UCB model (without novelty bonus), which probably arises because value-based random exploration partially captures some of the increased noisiness. We show through converging behavioural and modelling measures that both value-free random and novelty exploration were deployed in a goal-directed manner, coupled with increased levels of exploration when this was strategically useful. Importantly, these heuristics were observed in all best models (first, second and third position) even though each incorporated different exploration strategies. This suggests that the complex models make similar predictions in our task. This is also observed in our simulations, and demonstrates that value-free random exploration is at play even when accounting for other value-based forms of random exploration (Gershman, 2018; Wilson et al., 2014), whether fixed or uncertainty-driven.\n\nExploration was captured in a similar manner to previous studies (Wilson et al., 2014), by comparing in the same setting (i.e. same prior information) the first choice in a long decision horizon, where reward can be increased in the long term through information gain, and in a short decision horizon where information cannot subsequently be put to use. This means that by changing the opportunity to benefit from the information gained for the first sample, the long horizon invites extended exploration (Wilson et al., 2014), what we find also in our study. This experimental manipulation is a well-established means for altering exploration and has been used extensively in previous studies (Wilson et al., 2014; Zajkowski et al., 2017; Warren et al., 2017; Wu et al., 2018). Nevertheless, there remains a possibility that a longer horizon may also affect the psychological nature of the task. In our task, reward outcomes were presented immediately after every draw, rendering it unlikely that perception of reward delays (i.e. delay discounting) is impacted. Moreover, a monetary bonus was given only at the end of the task, and thus did not impact the horizon manipulation. We also consider our manipulation was unlikely to change effort in each horizon, because the reward (i.e. size of the apple) remains the same at every draw, resulting in an equivalent reward-effort ratio (Skvortsova et al., 2014; Hauser et al., 2017a; Walton and Bouret, 2019; Salamone et al., 2016). However, this issue can be addressed in further studies, for example, by equating the amount of button presses across both conditions.\n\nValue-free random exploration might reflect other influences, such as attentional lapses or impulsive motor responses. We consider these as unlikely to a significant factor at play here. Indeed, there are two key features that would signify such effects. Firstly, these influences would be independent of task condition. Secondly, they would be expected to lead to shorter, or more variable, response latencies. In our data, we observe an increase in value-free exploration in the long horizon condition in both behavioural measures and model parameters, speaking against an explanation based upon simple mistakes. Moreover, we did not observe a difference in response latency for choices that were related to value-free random exploration (cf. Appendix 1), further arguing against mistakes. Lastly, the sensitivity of value-free random exploration to propranolol supports this being a separate process, and previous studies using the same drug did not find an effect on task mistakes (e.g. on accuracy [Hauser et al., 2018; Jahn et al., 2018; Salamone et al., 2016; Hauser et al., 2019; ; Sokol-Hessner et al., 2015]). However, future studies could explore these exploration strategies in more detail including by reference to subjects\u2019 own self-reports.\n\nIt is still unclear how exploration strategies are implemented neurobiologically. Noradrenaline inputs, arising from the locus coeruleus (LC;\u00a0Rajkowski et al., 1994) are thought to modulate exploration (Schulz and Gershman, 2019; Aston-Jones and Cohen, 2005; Servan-Schreiber et al., 1990), although empirical data on its precise mechanisms and means of action remains limited. In this study, we found that noradrenaline impacted value-free random exploration, in contrast to novelty exploration and complex exploration. This might suggest that noradrenaline influences ongoing valuation or choice processes that discards prior information. Importantly, this effect was observed whether the complex exploration was an uncertainty-driven value-based random exploration (winning model), a directed exploration with value-based random exploration (second place model) or a combination of the above (third\u00a0place model; cf. Appendix 1). This is consistent with findings in rodents where enhanced anterior cingulate noradrenaline release leads to more random behaviour (Tervo et al., 2014). It is also consistent with pharmacological findings in monkeys that show enhanced choice consistency after reducing LC noradrenaline firing rates (Jahn et al., 2018). It would be interesting for future studies to determine, in more detail, whether value-free random exploration is corrupting a value computation itself, or whether it exclusively biases the choice process.\n\nWe note that pupil diameter has been used as an indirect marker of noradrenaline activity (Joshi et al., 2016), although the link between the two it not always straightforward (Hauser et al., 2019). Because the effect of pharmacologically induced changes of noradrenaline levels on pupil size remains poorly understood (Hauser et al., 2019; Joshi and Gold, 2020), including the fact that previous studies found no effect of propranolol on pupil diameter (Hauser et al., 2019; Koudas et al., 2009), we opted against using pupillometry in this study. However, our current findings align with previous human studies that show an association between this indirect marker and exploration, but that study did not dissociate between the different potential exploration strategies that subjects could deploy (Jepma and Nieuwenhuis, 2011). Future studies might usefully include indirect measures of noradrenaline activity, for example pupillometry, to examine a potential link between natural variations in noradrenaline levels and a propensity towards value-free random exploration.\n\nThe LC has two known modes of synaptic signalling (Rajkowski et al., 1994), tonic and phasic, thought to have complementary roles (Dayan and Yu, 2006). Phasic noradrenaline is thought to act as a reset button (Dayan and Yu, 2006), rendering an agent agnostic to all previously accumulated information, a de facto signature of value-free random exploration. Tonic noradrenaline has been associated, although not consistently (Jepma et al., 2010), with increased exploration (Aston-Jones and Cohen, 2005; Usher et al., 1999), decision noise in rats (Kane et al., 2017) and more specifically with random as opposed to directed exploration strategies (Warren et al., 2017). This later study unexpectedly found that boosting noradrenaline decreased (rather than increased) random exploration, which the authors speculated was due to an interplay with phasic signalling. Importantly, the drug used in that study also affects dopamine function making it difficult to assign a precise interpretation to the finding. A consideration of this study influenced our decision to opt for drugs with high specificity for either dopamine or noradrenaline (Hauser et al., 2018), enabling us to reveal highly specific effects on value-free random exploration. Although the contributions of tonic and phasic noradrenaline signalling cannot be disentangled in our study, our findings align with theoretical accounts and non-primate animal findings, indicating that phasic noradrenaline promotes value-free random exploration.\n\nAside from this \u2018reset signal\u2019 role, noradrenaline has been assigned other roles, including a role in memory function (Sara et al., 1994; Rossetti and Carboni, 2005; Gibbs et al., 2010). To minimise a possible memory-related impact, we designed the task such that all necessary information was visible on the screen at all times. This means subjects did not have to memorise values for a given trial, rendering the task less susceptible to forgetting or other memory effects. Another role for noradrenaline relates to volatility and uncertainty estimation (Silvetti et al., 2013; Yu and Dayan, 2005; Nassar et al., 2012), as well as the energisation of behaviour (Varazzani et al., 2015; Silvetti et al., 2018). Non-human primate studies demonstrate a higher LC activation for high effort choices, suggesting that noradrenaline release facilitates energy mobilisation (Varazzani et al., 2015). Theoretical models also suggest that the LC is involved in the control of effort exertion. Thus, it is thought to contribute to trading off between effortful actions leading to large rewards and \u2018effortless\u2019 actions leading to small rewards by modulating \u2018raw\u2019 reward values as a function of the required effort (Silvetti et al., 2018). Our task can be interpreted as encapsulating such a trade-off: complex exploration strategies are effortful but optimal in terms of reward gain, while value-free random exploration requires little effort while occasionally leading to low reward. Applying this model, a noradrenaline boost could optimise cognitive effort allocation for high reward gain (Silvetti et al., 2018), thereby facilitating complex exploration strategies compared to value-free random exploration. In such a framework, blocking noradrenaline release should decrease usage of complex exploration strategies, leading to an increase of value-free random exploration which is the opposite of what we observed in our data. Another interpretation of an effort-facilitation model of noradrenaline is that a boost would help overcoming cost, that\u00a0is the lack of immediate reward when selecting the low-value bandit, essentially providing a significant increase to the value of information gain. In line with our results, a decrease would interrupt this boost in valuation, removing an incentive to choose the low-value option. However, this theory is currently limited by the absence of empirical evidence for noradrenaline boosting valuation.\n\nNoradrenaline blockade by propranolol has been shown previously to enhance metacognition (Hauser et al., 2017b), decrease information gathering (Hauser et al., 2018), and attenuate arousal-induced boosts in incidental memory (Hauser et al., 2019). All these findings, including a decrease in value-free random exploration found here, suggests propranolol may influence how neural noise affects information processing. In particular, the results indicate that under propranolol behaviour is less stochastic and less influenced by \u2018task-irrelevant\u2019 distractions. This aligns with theoretical ideas, as well as recent optogenetic evidence (Tervo et al., 2014), that proposes noradrenaline infuses noise in a temporally targeted way (Dayan and Yu, 2006). It also accords with studies implicating noradrenaline in attention shifts (for a review Trofimova and Robbins, 2016). Other gain-modulation theories of noradrenaline/catecholamine function have proposed an effect on stochasticity (Aston-Jones and Cohen, 2005; Servan-Schreiber et al., 1990), although a hypothesised direction of effect is different (i.e. noradrenaline decreases stochasticity). Several aspects of noradrenaline functioning may explain the contradictory accounts of its link with stochasticity. For example, they might be capturing different aspects of an assumed U-shaped noradrenaline functioning curve, and/or distinct activity modes of noradrenaline (i.e. tonic and phasic firing) (Aston-Jones and Cohen, 2005). Further studies can shed light on how different modes of activity affect value-free random exploration. This idea can be extended also to tasks where propranolol has been shown to attenuate a discrimination between different levels of loss (with no effect on the value-based exploration parameter, referred to in these studies as consistency) (Rogers et al., 2004) and a reduction in loss aversion (Sokol-Hessner et al., 2015). This hints at additional roles for noradrenaline on prior information and task-distractibility during exploration in loss-frame environments. Future studies investigating exploration in loss contexts might provide important additional information on these questions.\n\nIt is important to mention here that \u03b2-adrenergic receptors, the primary target of propranolol, have been shown (unlike $\\alpha$-adrenergic receptors) to increase synaptic inhibition within rat cortex (Waterhouse et al., 1982), specifically through inhibitory GABA-mediated transmission (Waterhouse et al., 1984). Additionally \u03b2-adrenergic receptors are more concentrated in the intermediate layers in the prefrontal area (Goldman-Rakic et al., 1990), within which inhibition is favoured (Isaacson and Scanziani, 2011). Thus, inhibitory mechanisms might account for noradrenaline-related task-distractibility and randomness, or the role of \u03b2-adrenergic receptors in executive function impairments (Salgado et al., 2016). This raises the question of whether blocking \u03b2-adrenergic receptors might lead to an accumulation of synaptic noradrenaline, and therefore act via \u03b1-adrenergic receptors. To the best of our knowledge, evidence for such an effect is limited. A second question is whether the observed effects are a pure consequence of propranolol\u2019s impact on the brain, or whether they reflect peripheral effects of propranolol. When we examined peripheral markers (i.e. heart rate) and behaviour we found no evidence for an effect on any of our findings, rendering such influences unlikely. However, future studies using drugs that exclusively targets peripheral, but not central, noradrenaline receptors (e.g. De Martino et al., 2008) are needed to answer this question conclusively.\n\nDopamine has been ascribed multiple functions besides reward learning (Schultz et al., 1997), such as novelty seeking (D\u00fczel et al., 2010; Wittmann et al., 2008; Costa et al., 2014) or exploration in general (Frank et al., 2009). In fact, studies have demonstrated that there are different types of dopaminergic neurons in the ventral tegmental area, and that some contribute to non-reward signals, such as saliency and novelty (Bromberg-Martin et al., 2010). This suggests a role in novelty exploration. Moreover, dopamine has been suggested as important in an exploration-exploitation arbitration (Zajkowski et al., 2017; Kayser et al., 2015; Chakroun et al., 2019), although its precise role remains unclear, given reported effects on random exploration (Cinotti et al., 2019), on directed exploration (Costa et al., 2014; Frank et al., 2009), or no effects at all (Krugel et al., 2009). A recent study found no effect following dopamine blockade using haloperidol (Chakroun et al., 2019), which interestingly also affects noradrenaline function (e.g. Fang and Yu, 1995; Toru and Takashima, 1985). Our results did not demonstrate any main effect of dopamine manipulation on exploration strategies, even though blocking dopamine was associated with a trend level increase in exploitation (cf. Appendix 1). We believe it unlikely this reflects an ineffective drug dose as previous studies have found neurocognitive effects with the same dose (Hauser et al., 2019; Hauser et al., 2018; Kahnt et al., 2015; Kahnt and Tobler, 2017).\n\nOne possible reason for an absence of significant findings is that our dopaminergic blockade targets D2/D3 receptors rather than D1 receptors, a limitation due a lack of available specific D1 receptor blockers for use in humans. An expectation of greater D1 involvement arises out of theoretical models (Humphries et al., 2012) and a prefrontal hypothesis of exploration (Frank et al., 2009). Interestingly, we observed a weak gender-specific differential drug effect on subjects\u2019 uncertainty about an expected reward, with women being more uncertain than men in the placebo setting, but more certain in the dopamine blockade setting (cf. Appendix 1). This might be meaningful as other studies using the same drug have also found behavioural gender-specific drug effects (Soutschek et al., 2017). Upcoming, novel drugs (Soutschek et al., 2020) might be able help unravel a D1 contribution to different forms of exploration. Additionally, future studies could use approved D2/D3 agonists (e.g. ropinirole) in a similar design to probe further whether enhancing dopamine leads to a general increase in exploration.\n\nIn conclusion, humans supplement computationally expensive exploration strategies with less resource demanding exploration heuristics, and as shown here the latter include value-free random and novelty exploration. Our finding that noradrenaline specifically influences value-free random exploration demonstrates that distinct exploration strategies may be under specific neuromodulator influence. Our current findings may also be relevant to enabling a richer understanding of disorders of exploration, such as attention-deficit/hyperactivity disorder (Hauser et al., 2016; Hauser et al., 2014) including how aberrant catecholamine function might contribute to its core behavioural impairments.\n\n## Materials and methods\n\n### Subjects\n\nSixty healthy volunteers aged 18\u201335 (mean\u00a0=\u00a023.22, SD\u00a0=\u00a03.615) participated in a double-blind, placebo-controlled, between-subjects study. The sample size was determined using power calculations taking effect sizes from our prior studies that used the same drug manipulations (Hauser et al., 2019; Hauser et al., 2018; Hauser et al., 2017b). Each subject was randomly allocated to one of three drug groups, controlling for an equal gender balance across all groups (cf. Appendix 1). Candidate subjects with a history of neurological or psychiatric disorders, current health issues, regular medications (except contraceptives), or prior allergic reactions to drugs were excluded from the study. Subjects had (self-reported) normal or corrected-to-normal vision. The groups consisted of 20 subjects each matched (Appendix 2\u2014table 1) for gender and age. To evaluate peripheral drug effects, heart rate, systolic and diastolic blood pressure were collected at three different time-points: \u2018at arrival\u2019, \u2018pre-task\u2019 and \u2018post-task\u2019, cf. Appendix 1 for details. At 50 min after administrating the second drug, subjects were filled in the PANAS questionnaires (Watson et al., 1988a) and completed the WASI Matrix Reasoning subtest (Wechsler, 2013). Groups differed in mood (PANAS negative affect, cf. Appendix 1 for details) and marginally in intellectual abilities (WASI), and so we control for these potential confounders in our analyses (cf. Appendix 1 for uncorrected results). Subjects were reimbursed for their participation on an hourly basis and received a bonus according to their performance (proportional to the sum of all the collected apples\u2019 sizes). One subject from the amisulpride group was excluded due to not engaging in the task and performing at chance level. The study was approved by the UCL research ethics committee and all subjects provided written informed consent.\n\n### Pharmacological manipulation\n\nTo reduce noradrenaline functioning, we administered 40 mg of the non-selective \u03b2-adrenoceptor antagonist propranolol 60 min before the task (Figure 1D). To reduce dopamine functioning, we administered 400 mg of the selective D2/D3 antagonist amisulpride 90 min before the task. Because of different pharmacokinetic properties, drugs were administered at different times. Each drug group received the drug on its corresponding time point and a placebo at the other time point. The placebo group received placebo at both time points, in line with our previous studies (Hauser et al., 2019; Hauser et al., 2018; Hauser et al., 2017b).\n\n### Experimental paradigm\n\nTo quantify different exploration strategies, we developed a multi-armed bandit task implemented using Cogent (http://www.vislab.ucl.ac.uk/cogent.php) for MATLAB (R2018a). Subjects had to choose between bandits (i.e. trees) that produced samples (i.e. apples) with varying reward (i.e. size) in two different horizon conditions (Figure 1a\u2013b). Bandits were displayed during the entire duration of a trial and there was no time limit for sampling from (choosing) the bandits. The sizes of apples they collected were summed and converted to an amount of juice (feedback), which was displayed during 2000 ms at the end of each trial. Subjects were instructed to endeavour to make the most juice and that they would receive a cash bonus proportional to their performance. Overall subjects received \u00a310/hr and a mean bonus of \u00a31.12 (std: \u00a30.06).\n\nSimilar to the horizon task (Wilson et al., 2014), to induce different extents of exploration, we manipulated the horizon (i.e. number of apples to be picked: one in the short horizon, six in the long horizon) between trials. This horizon-manipulation, which has been extensively used to modulate exploratory behaviour (Zajkowski et al., 2017; Warren et al., 2017; Wu et al., 2018; Guo and Yu, 2018), promotes exploration in the long horizon condition as there are more opportunities to gather reward.\n\nWithin a single trial, each bandit had a different mean reward \u00b5 (i.e. apple size) and associated uncertainty as captured by the number of initial samples (i.e. number of apples shown at the beginning of the trial). Each bandit (i.e. tree) $i$ was from one of four generative processes (Figure 1c) characterised by different means $\\mu_{i}$ and number of initial samples. The rewards (apple sizes) for each bandit were sampled from a normal distribution with mean $\\mu_{i}$, specific to the bandit, and with a fixed variance, $S^{2}$\u00a0=\u00a00.8. The rewards were those sampled values rounded to the closest integer. Each distribution was truncated to [2, 10], meaning that rewards with values above or below this interval were excluded, resulting in a total of 9 possible rewards (i.e. 9 different apple sizes; Figure 1\u2014figure supplement 1 for a representation). The \u2018certain standard bandit\u2019 provided three initial samples and on every trial its mean $\\mu_{cs}$ was sampled from a normal distribution: $\\mu_{cs}~N5.5,1.4.$ The \u2018standard bandit\u2019 provided one initial sample and to make sure that its mean $\\mu_{s}$ was comparable to\u00a0$\\mu_{cs}$, the trials were split equally between the four following: ${\\mu_{s}=\\mu_{cs}+1;\u00a0\\mu_{s}=\\mu_{cs}\u22121;\u00a0\\mu_{s}=\\mu_{cs}+2;\u00a0\\mu_{s}=\\mu_{cs}\u22122}$. The \u2018novel bandit\u2019 provided no initial samples and its mean $\\mu_{n}$ was comparable to both $\\mu_{cs}$ and $\\mu_{s}$ by splitting the trials equally between the eight following:\n\n$$\n{\\mu_{n}=\\mu_{cs}+1;\u00a0\\mu_{n}=\\mu_{cs}\u22121;\u00a0\\mu_{n}=\\mu_{cs}+2;\u00a0\\mu_{n}=\\mu_{cs}\u22122;\u00a0\\mu_{n}=\\mu_{s}+1;\\mu_{n}=\\mu_{s}\u22121;\u00a0\\mu_{n}=\\mu_{s}+2;\u00a0\\mu_{n}=\\mu_{s}\u22122}.\n$$\n\nThe \u2018low bandit\u2019 provided one initial sample which was smaller than all the other bandits\u2019 means on that trial: $\\mu_{l}=min\\mu_{cs},\\mu_{s},\\mu_{n}-1.$ We ensured that the initial sample from the low-value bandit was the smallest by resampling from each bandit in the trials were that was not the case. To make sure that our task captures heuristic exploration strategies, we simulated behaviour (Figure 1). Additionally, in each trial, to avoid that some exploration strategies overshadow other ones, only three of the four different groups were available to choose from. Based on the mean of the initial samples, we identified the high-value option (i.e. the bandit with the highest expected reward) in trials where both the certain-standard and the standard bandit were present.\n\nThere were 25 trials of each of the four three-bandit combination making it a total of 100 different trials. They were then duplicated to measure choice consistency, defined as the frequency of making the same choice on identical trials (in contrast to a previous propranolol study where consistency was defined in terms of a value-based exploration parameter [Sokol-Hessner et al., 2015]). Each subject played these 200 trials both in a short and in a long horizon settings, resulting in a total of 400 trials. The trials were randomly assigned to one of four blocks and subjects were given a short break at the end of each of them. To prevent learning, the bandits\u2019 positions (left, middle or right) as well as their colour (eight sets of three different colours) where shuffled between trials. To ensure subjects distinguished different apple sizes and understood that apples from the same tree were always of similar size (generated following a normal distribution), they needed to undergo training prior to the main experiment. In training, based on three displayed apples of similar size, they were tasked to guess between two options, namely which apple was most likely to come from the same tree and then received feedback about their choice.\n\n### Statistical analyses\n\nAll statistical analyses were performed using the R Statistical Software (R Development Core Team, 2011). For computing ANOVA tests and pairwise comparisons the \u2018rstatix\u2019 package was used, and for computing effect sizes the \u2018lsr\u2019 package (Navarro, 2015) was used. To ensure consistent performance across all subjects, we excluded one outlier subject (belonging to the amisulpride group) from our analysis due to not engaging in the task and performing at chance level (defined as randomly sampling from one out of three bandits, that\u00a0is 33%). Each bandit's selection frequency for a horizon condition was computed over all 200 trials and not only over the trials where this specific bandit was present (i.e. 3/4 of 200\u00a0=\u00a0150 trials). In all the analysis comparing horizon conditions, except when looking at score values (Figure 2c), only the first\u00a0draw of the long horizon was used. We compared behavioural measures and model parameters using (paired-samples) t-tests and repeated-measures (rm-) ANOVAs with a between-subject factor of drug group (propranolol group, amisulpride group, placebo group) and a within-subject factor horizon (long, short). Information seeking, expected values and scores were analysed using rm-ANOVAs with a within-subject factor horizon. Measures that were horizon-independent (e.g. prior mean), were analysed using one-way ANOVAs with a between-subject factor drug group. As drug groups differed in negative affect (Appendix 2\u2014table 1), which, through its relationship to anxiety (Watson et al., 1988b) is thought to affect cognition (Bishop and Gagne, 2018) and potentially exploration (de Visser et al., 2010). We corrected for negative affect (PANAS) and IQ (WASI) in each analysis by adding those two measures as covariates in each ANOVA mentioned above (cf. Appendix 1 for analysis without covariates and analysis with physiological effect as an additional covariates). We report effect sizes using partial eta squared ($\u03b7^{2}$) for ANOVAs and Cohen\u2019s d (d) for t-tests (Richardson, 2011).\n\n### Computational modelling\n\nWe adapted a set of Bayesian generative models from previous studies (Gershman, 2018), where each model assumed that different characteristics account for subjects\u2019 behaviour. The binary indicators $c_{tr},c_{n}$ indicate which components (value-free random and novelty exploration respectively) were included in the different models. The value of each bandit is represented as a distribution $N(Q,S)$ with $S=0.8$, the sampling variance fixed to its generative value. Subjects have prior beliefs about bandits\u2019 values which we assume to be Gaussian with mean $Q_{0}$ and uncertainty $\\sigma_{0}$. The subject's initial estimate of a bandit\u2019s mean ($Q_{0}$; prior mean) and its uncertainty about it ($\\sigma_{0}$; prior variance) are free parameters.\n\nThese beliefs are updated according to Bayes rule (detailed below) for each initial sample (note that there are no updates for the novel bandit).\n\n### Mean and variance update rules\n\nAt each time point\u00a0$t,$ in which a sample $m$, of one of the bandits is presented, the expected mean $Q$ and precision $\\tau=\\frac{1}{\\sigma^{2}}$\u00a0of the corresponding bandit $i$ are updated as follows:\n\n$$\nQ_{i,t+1}=\\frac{\\tau_{i,t}*Q_{i,t}+\\tau_{samp}*m}{\\tau_{i,t}+\\tau_{samp}}\n$$\n\n\n\n$$\n\\tau_{t+1}^{i}=\\tau_{samp}+\\tau_{t}^{i}\n$$\n\nwhere $\\tau_{samp}=\\frac{1}{S^{2}}$\u00a0is the sampling precision, with the sampling variance $S=0.8$ fixed. Those update rules are equivalent to using a Kalman filter (Bishop, 2006) in stationary bandits.\n\nWe examined three base models: the UCB model, the Thompson model,and the hybrid model. The UCB model encompasses the UCB algorithm (captures directed exploration) and a softmax choice function (captures a value-based random exploration). The Thompson model reflects Thompson sampling (captures an uncertainty-driven value-based random exploration). The hybrid model captures the contribution of the UCB model and the Thompson model, essentially a mixture of the above. We computed three extensions of each model by either adding value-free random exploration $(c_{vf},c_{n})=(1,0)$, novelty exploration $(c_{vf},c_{n})=(0,1)$ or both heuristics\u00a0$c_{vf},c_{n}=1,1$, leading to a total of 12 models (see the labels on the x-axis in Figure 4a; $c_{vf},c_{n}=0,0$ is the model with no extension). For additional models cf. Appendix 1. A coefficient $c_{vf}$=1 indicates that an $\u03f5$-greedy component was added to the decision rule, ensuring that once in a while (every\u00a0$\u03f5$ % of the time), another option than the predicted one is selected. A coefficient $c_{n}$=1 indicates that the novelty bonus $\u03b7$ is added to the computation of the value of novel bandits and the Kronecker delta \u03b4 in front of this bonus ensures that it is only applied to the novel bandit. The models and their free parameters (summarised in Appendix 2\u2014table 5) are described in detail below.\n\n### Choice rules\n\n#### UCB model\n\nIn this model, an information bonus $\\gamma$ is added to the expected reward of each option, scaling with the option\u2019s uncertainty (UCB). The value of each band\u00a0it $i$ at timepoint t is:\n\n$$\nV_{i,t}=Q_{i,t}+\\gamma\\sigma_{i,t}+c_{n}\u03b7\\delta_{i=novel}\n$$\n\nThe probability of choosing bandit $i$ was given by passing this into the softmax decision function:\n\n$$\nPc_{t}=i=\\frac{e^{\\betaV_{i,t}}}{\\sum_{x}e^{\\betaV_{i,t}}}*1-c_{vf}\u03f5+c_{vf}\\frac{\u03f5}{3}\n$$\n\nwhere\u00a0$\\beta$ is the inverse temperature of the softmax (lower values producing more value-based random exploration), and the coefficient $c_{vf}$ adds the value-free random exploration component.\n\n#### Thompson model\n\nIn this model, based on Thompson sampling, the overall uncertainty can be seen as a more refined version of a decision temperature (Gershman, 2018). The value of each band\u00a0it $i$ is as before:\n\n$$\nV_{i,t}=Q_{i,t}+c_{n}\u03b7\\delta_{i=novel}\n$$\n\nA sample $x_{i,t}~N(V_{i,t},\\sigma_{i,t}^{2})$ is taken from each bandit. The probability of choosing a bandit $i$ depends on the probability that all pairwise differences between the sample from bandit $i$ and the other bandits $j\\neqi$ were greater or equal to 0 (see the probability of maximum utility choice rule [Speekenbrink and Konstantinidis, 2015]). In our task, because three bandits were present, two pairwise differences scores (contained in the two-dimensional vector u) were computed for each bandit. The probability of choosing bandit\u00a0$i$ is:\n\n$$\nP(c_{t}=i)=P(\u2200j:x_{i,t}>;x_{j,t})\u2217(1\u2212c_{vf}\u03f5)+c_{vf}\\frac{\u03f5}{3}\n$$\n\n\n\n$$\nPc_{t}=x_{i}=\\int_{0}^{\u221e}\\int_{0}^{\u221e}\u0278u;M_{i,t},C_{i,t}du*1-c_{vf}\u03f5+c_{vf}\\frac{\u03f5}{3}\n$$\n\nwhere $\u0278$ is the multivariate Normal density function with mean vector.\n\n$M_{i,t}=A_{i}V_{1,t}V_{2,t}V_{3,t}$\u00a0and covariance matrix\n\n$$\nC_{i,t}=A_{i}\\sigma_{1,t}000\\sigma_{2,t}000\\sigma_{3,t}A_{i}^{T}\n$$\n\nWhere the matrix $A_{i}$ computes the pairwise differences between bandit $i$ and the other bandits. For example, for band\u00a0it\u00a0$i=1$:\n\n$$\nA_{1}=1-1010-1\n$$\n\n#### Hybrid model\n\nThis model allows a combination of the UCB model and the Thompson model. The probability of choosing bandit\u00a0$i$ is:\n\n$$\nPc_{t}=i=wP_{UCB}c_{t}=i+1-wP_{Thompson}c_{t}=i*1-c_{vf}\u03f5+c_{vf}\\frac{\u03f5}{3}\n$$\n\nwhere $w$\u00a0specifies the contribution of each of the two models. $P_{UCB}$ and $P_{Thompson}$ are calculated for $c_{vf}$=0. If $w$=1, only the UCB model is used while if $w$=0 only the Thompson model is used. In between values indicate a mixture of the two models.\n\nAll the parameters besides $Q_{0}$ and $w$ were free to vary as a function of the horizon (Appendix 2\u2014table 5) as they capture different exploration forms: directed exploration (information bonus $\\gamma$; UCB model), novelty exploration (novelty bonus\u00a0$\u03b7$), value-based random exploration (inverse temperature $\\beta$; UCB model), uncertainty-directed exploration (prior variance $\\sigma_{0}$; Thompson model), and value-free random exploration ($\u03f5$-greedy parameter). The prior mean $Q_{0}$ was fitted to both horizons together as we do not expect the belief of how good a bandit is to depend on the horizon. The same was done for $w$ as assume the arbitration between the UCB model and the Thompson model does not depend on horizon.\n\n### Parameter estimation\n\nTo fit the parameter values, we used the maximum a posteriori probability (MAP) estimate. The optimisation function used was fmincon in MATLAB. The parameters could vary within the following bounds:$\\sigma_{0}=0.01,6,Q_{0}=1,10,\u03f5=0,0.5,\u03b7=[0,5]$. The prior distribution used for the prior mean parameter $Q_{0}$ was the normal distribution: $Q_{0}~N(5,2)$ that approximates the generative distributions. For the $\u03f5$-greedy parameter, the novelty bonus\u00a0$\u03b7$ and the prior variance parameter $\\sigma_{0}$, a uniform distribution (of range equal to the specific parameters\u2019 bounds) was used, which is equivalent to performing MLE. A summary of the parameter values per group and per horizon can be found in Appendix 2\u2014table 6.\n\n### Model comparison\n\nWe performed a K-fold cross-validation with\u00a0$K=10$. We partitioned the data of each subject ($N_{trials}=$\u00a0400; 200 in each horizon) into K folds (i.e. subsamples). For model fitting in our model selection, we used maximum likelihood estimation (MLE), where we maximised the likelihood for each subject individually (fmincon was ran with eight randomly chosen starting point to overcome potential local minima). We fitted the model using K-1 folds and validated the model on the remaining fold. We repeated this process K times, so that each of the K fold is used as a validation set once, and averaged the likelihood over held out trials. We did this for each model and each subject and averaged across subjects. The model with the highest likelihood of held-out data (the winning model) was the Thompson sampling with\u00a0$(c_{tr},c_{n})={1,1}$. It was also the model which accounted best for the largest number of subjects (Figure 4\u2014figure supplement 1).\n\n### Parameter recovery\n\nTo make sure that the parameters are interpretable, we performed a parameter recovery analysis. For each parameter, we took four values, equally spread, within a reasonable parameter range ($\\sigma_{0}=0.5,2.5,Q_{0}=1,6,\u03f5=0,0.5,\u03b7=[0,5]$). All parameters but $Q_{0}$ were free to vary as a function of the horizon. We simulated behaviour with one artificial agent for each 47 combinations using a new trial for each. The model was fitted using MAP estimation (cf. Parameter estimation) and analysed how well the generative parameters (generating parameters in Figure 5) correlated with the recovered ones (fitted parameters in Figure 5) using Pearson correlation (summarised in Figure 5c). In addition to the correlation we examined the spread (Figure 4\u2014figure supplement 3) of the recovered parameters. Overall the parameters were well recoverable.\n\n### Model validation\n\nTo validate our model, we used each subjects\u2019 fitted parameters to simulate behaviour on our task (4000 trials per agent). The stimulated data (Figure 5\u2014figure supplement 3), although not perfect, resembles the real data reasonably well. Additionally, to validate the behavioural indicators of the two different exploration heuristics we stimulated the behaviour of 200 agents using the winning model on one horizon condition (i.e. trials = 200). For the indicators of value-free random exploration, we stimulated behaviour with low ($\u03f5=0$) and high ($\u03f5=0.2$) values of the $\u03f5$-greedy parameter. The other parameters were set to the mean parameter fits ($\\sigma_{0}=1.312,\u03b7=2.625,Q_{0}=3.2$). This confirms that higher amounts of value-free random exploration are captured by the proportion of low-value bandit selection (Figure 1f) and the choice consistency (Figure 1e). Similarly, for the indicator of novelty exploration, we simulated behaviour with low ($\u03b7=0$) and high ($\u03b7=2$) values of the novelty bonus $\u03b7$ to validate the use of the proportion of the novel-bandit selection (Figure 1g). Again, the remaining parameters were set to the mean parameter fits ($\\sigma_{0}=1.312,\u03f5=0.1,Q_{0}=3.2$). Parameter values for high and low exploration were selected empirically from pilot and task data. Additionally, we simulated the effects of other exploration strategies in short and long horizon conditions (Figure 1\u2014figure supplement 3\u20135). To simulate a long (versus short) horizon condition,we increased the overall exploration by increasing other exploration strategies. Details about parameter values can be found in Appendix 2\u2014table 7.\n",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "d04a811f-659b-4409-90dd-662f12225622",
+      "submission_id": "23b98c29-868b-4005-86b7-ee40aedabbaf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thorsten Kahnt, Northwestern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59907.sa1](https://doi.org/10.7554/eLife.59907.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nHow individuals decide to exploit known options or to explore alternatives with unknown payouts is a fundamental question in neuroscience. This study combines human pharmacology and computational modeling to disentangle the role of two neurotransmitters (noradrenaline and dopamine) in driving different exploration strategies. Results show that value-independent \"random\" exploration heuristics are mediated by noradrenaline. These findings contribute to a better understanding of the neural processes involved in the exploration-exploitation trade-off.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Noradrenaline modulates tabula-rasa exploration\" for consideration by eLife. Your article has been reviewed by Christian B\u00fcchel as the Senior Editor, a Reviewing Editor, and three reviewers. The following individual involved in review of your submission has agreed to reveal their identity: Christopher Warren (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nDubois and colleagues investigate how two modes of exploration \u2013 tabula-rasa and novelty-seeking \u2013 contribute to human choice behavior. They found that subjects used both tabula-rasa and novelty-seeking heuristics when the task conditions were in favor of exploration. Specifically, participants could, and had to, make more responses in the long-horizon condition, which favored exploration, compared to the short-horizon condition, which favored exploitation. Moreover, the authors provide evidence that blockade of norepinephrine \u03b2 receptors leads to decreased tabula-rasa exploration and increased choice consistency, whereas blockage of D2/D3 dopamine receptors had little effects.\n\nAll reviewers agreed that this paper provides interesting evidence on exploration-exploitation trade-offs and the underlying pharmacological mechanisms. However, reviewers felt that there are a number of major conceptual, methodological and interpretational issues that should be addressed in a revised version of the manuscript.\n\nEssential revisions:\n\n1) The term \"tabula rasa\" exploration is slightly misleading and using \"random\" exploration would be simpler, and clearer. That is, \"tabula rasa\" has the connotation that both the current \"tabula rasa\" choice and all future choices will not take into account information obtained before that choice. Random exploration is a better term because it is easy and intuitive to see that random choices can be sprinkled in with choices based on previous information, whereas \"tabular rasa\" implies wiping previous information away from that point forward. Indeed, previous related work has not termed the random exploration associated with the e-greedy parameter \"tabula rasa\". Problematic in this regard is that there is another parameter in one or more of the models that reflects random exploration (Subsection \u201cChoice rules\u201d, inverse temperature). This may be why the authors opted to call the e-greedy parameter something else. However, this raises the question: what is the difference between the e-greedy parameter and the inverse temperature mathematically, but more importantly, conceptually? At the very least, it would be important to provide a better explanation of the choice of term (tabula rasa) as well as a thorough explanation of the difference between tabula rasa and random exploration. We also recommend changing the term used, but we are amenable to accepting an argument for keeping it.\n\n2) It is one thing to come up with computational terms and model-based quantities correlating with behavior but a different one to show their psychological meaning. Did the trials with tabula-rasa exploration or novelty exploration differ in terms of response times from the other types of responses? Did participants report that they indeed intended to explore in the tabula-rasa exploration trials? On a related note, how do the authors distinguish random (tabula-rasa) exploration from making a mistake? From how the task was designed, choosing the low value option appears to receive a more natural interpretation as a mistake rather than as exploration because this option was clearly dominated by the other options and remained so within and across trials.\n\n3) Relatedly, successful performance in the task is based on the ability to discriminate between different reward types and to select the one with the higher value. From the experimental design description, one can see that in order to do so, the subjects needed to distinguish between different apple sizes. In this regard, a question arises: how large was the difference between two adjacent apple sizes? Was it large enough so that after a visual inspection, the participant could easily understand that the apple size = 7 was less rewarding than the apple size = 8? Finally, since the task requires visual inspection of reward stimuli, was the subject vision somehow tested and did it differ between groups?\n\n4) Previous research of the authors (Hauser et al., 2017, 2018, 2019) has associated \u03b2 receptor blockade with enhanced metacognition, decreased information gathering/increased commitment to an early decision (Hauser et al., 2018) and an arousal (i.e., reward)-induced boost of processing stimuli. In addition, Rogers et al., (2004) suggest that propranolol affects the processing of possible losses in decision-making paradigms, and might also reduce the discrimination between the different levels of possible gains (Rogers et al. 2004). In another study, Sokol-Hessner et al., (2015) also report a loss aversion reduction after propranolol administration. These effects might also change prior information and reset behavioral adaption to look for new opportunities. In this latter study the authors also report a lack of effect of propranolol onto choice consistency, contrary to what the present study reports. How do the current results relate to these previous findings? Of course, it is possible that norepinephrine plays multiple roles, but it appears not exactly parsimonious to imbue it with a different role for each task tested. Are there some commonalities across these effects that could be explained with some common function(s)?\n\n5) Previous studies have shown that propranolol significantly decreased heart rate (e.g. Rogers et al., 2004). Did the authors measure heart rate and can they control for the possibility that peripheral effects of the drug explain the findings? And what was the reason for not collecting pupil diameter data, contrary to the previous research of the authors? Relatedly, in terms of norepinephrine influence and given the distributions of \u03b2 receptors, could the authors be more explicit about the relation of their work to potential mechanisms (e.g. Goldman-Rakic et al., 1990 or Waterhouse et al., 1982)?\n\n6) One strength of the paper is that the authors compared several computational models. The model selection is presented in Figure 4 and in Figure 4\u2014figure supplement 1, the authors provide additional information regarding the winning model that accounted best for the largest number of subjects in comparison with two other models, namely the UCB model (with novelty and greedy parameters) or hybrid (with novelty and greedy parameters). It would be useful for the reader to get a better sense about the number of subjects which results favored any given model (i.e. a more exhaustive picture). One could use the same table as the one presented as in the Appendix\u2014table 2 with respective number of subjects for which the model achieved the best performance. In fact, as shown in Figure 4, the winning model does not look very different (at least visually) from other models such as UCB (with novelty and greedy parameters) or hybrid (with novelty parameter or novelty and greedy parameters) models. As such, it would be important to know whether the conclusion about the e-greedy parameter would hold true if other model with similar performance were tested e.g. with UCB model (with novelty and greedy parameters) or hybrid (with novelty and greedy parameters)?\n\n7) Related to this issue, the point of heuristics from a psychological perspective is that they dispense with the need to use full-blown algorithmic calculations. However, in the present models, the heuristics are only added on top of these calculations and the winning model includes Thompson exploration. Stand-alone heuristic models would do the term more justice and one wonders how well a model would fare that includes only tabula rasa exploration and novelty exploration.\n\n8) The simulations provide a nice intuition for understanding choice proportions from different models/strategies (Figure 1E and 1F). However, it would be helpful to provide simulated results for long and short horizons separately. Do the models make different predictions for the two horizons? Additionally, it would be helpful to also show the results from other models (i.e. the proportion of low value bandit chosen by novelty agent). These could be added in the supplement.\n\n[Editors\u201d note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your article \"Human complex exploration strategies are extended via noradrenaline-modulated heuristics\" for consideration by eLife. Your revised article has been reviewed by Christian B\u00fcchel as the Senior Editor, a Reviewing Editor, and three reviewers. The following individual involved in review of your submission has agreed to reveal their identity: Christopher Warren (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe authors have been very responsive to the initial reviews and reviewers feel that the paper is much improved. However, a few points remain. Please address the remaining issues raised by reviewer #1 and #2 and submit a revised version of the manuscript.\n\nReviewer #1:\n\nThank you for a largely responsive revision. The paper is much improved. A few points remain:\n\nRelated to previous point 1, the argument in subsection \u201cProbing the contributions of heuristic exploration strategies\u201d does not seem to be entirely correct. The authors claim that \"A second prediction is that choice consistency, across repeated trials, is substantially affected by value-free random exploration.\" However, consistency can also be affected by the softmax parameter. If \u03b2 is higher then choice consistency is also lower. Also, I am a little bit confused about the simulation results in Figure 1\u2014figure supplement 2E,F. Do both models predict that the consistency of selecting the low value bandit is higher than the consistency of selecting the high value bandit? In line with the argument that higher \u03b2 also lead to more stochastic choices, I also wonder if that can be the reason why UCB and UCB+\ud835\udf16 are not that much different in likelihood.\n\nRegarding previous point 2: Were response time differences between value-free exploration and exploitation trials larger in the long horizon than the short horizon condition (i.e., while there was no main effect of bandit, was there an interaction with horizon or trial within horizon and was there a three-way interaction with drug)? Moreover, the response to the mistake issue is not entirely satisfactory. If participants paid (gradually) less attention in the long horizon, then it would also be expected that they make more mistakes in the long horizon condition only.\n\nRegarding previous point 8, it is great that the authors followed our suggestion to simulate all models in both the short and long horizon. However, these figures (Figure 1\u2014figure supplement 3 to Figure 1\u2014figure supplement 5) seem to be somewhat confusing. The problem may lie in the parameters selected for simulation. According to Appendix 2\u2014table 7, the multiple parameters were varied among different models. But I thought they should keep most consistent and only vary the interesting one. For example, shouldn't \ud835\udf02 be kept same or even be zero in the value free random exploration model to show how choices are vary as function of \ud835\udf16? I think the numbers are selected such that the predictions favor the value free random exploration model. If, as authors said, UCB + \ud835\udf16 + \ud835\udf02 is almost as good as Thompson-sampling + \ud835\udf16 + \ud835\udf02, I don\u2019t see what the predictions can be such dramatically different. That is how I interpret the statement that \" For simulating the long (versus short) horizon condition, we assumed that not only the key value but also the other exploration strategies increased, as found in our experimental data.\" Anyway, I feel the simulation data is somehow misleading and need more explanation.\n\nReviewer #2:\n\nThe authors addressed all my comments and made substantial revisions that have strengthened the overall manuscript. Specifically, the new information in Appendix\u2014table 4 with each model's performance and additional analyses on of the other \"(close to best)\" models further strengthens the authors' claim. The authors also clarified the results on heart rate, RT and PANAS questionnaire, providing additional results and discussing appropriately potential caveats. Further additions in the Discussion address potential mechanisms of propranolol on decision making. The only comment I have relates to the sentence that follows (in the Discussion): \u201cIn particular, the results indicate that under propranolol behaviour is more deterministic and less influenced by \u201ctask-irrelevant\u201d distractions. This aligns with theoretical ideas, as well as recent optogenetic evidence (32), that propose noradrenaline infuses noise in a temporally targeted way (31). It also accords with studies implicating noradrenaline in attention shifts (for a review cf. (76)). Other theories of noradrenaline/catecholamine function can link to determinism (64, 65), although the hypothesized direction of effect is different (i.e. noradrenaline increases determinism).\" Here, it is unclear to me how the authors define determinism and how either increasing or decreasing noradrenaline can increase determinism?\n\nApart from that, the manuscript is well-written and provides an interesting account about the role of neuromodulatory systems on the processes at play during exploration.\n",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5c0a1f63-28d0-4227-8b2f-91801a1b7098",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C1",
+      "claim": "An exploration-exploitation trade-off is thought to be solved using computationally demanding exploration algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "An exploration-exploitation trade-off, the arbitration between sampling a lesser-known against a known rich option, is thought to be solved using computationally demanding exploration algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about existing theoretical understanding in the field, supported by the broader literature context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "b2bacb8c-e0ff-457d-9bfd-6820598eb56c",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C2",
+      "claim": "Humans have limitations in cognitive resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Given known limitations in human cognitive resources, we hypothesised the presence of additional cheaper strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge that motivates the study hypothesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "f8787034-61c7-47d5-b81d-b5fe46ed8184",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C3",
+      "claim": "Human choice behaviour involves a value-free random exploration that ignores all prior knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined for such heuristics in choice behaviour where we show this involves a value-free random exploration, that ignores all prior knowledge, and a novelty exploration that targets novel options alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and computational modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "27e636d5-fa54-4075-ba38-cb4dcb4b8d12",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C4",
+      "claim": "Human choice behaviour involves a novelty exploration that targets novel options alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined for such heuristics in choice behaviour where we show this involves a value-free random exploration, that ignores all prior knowledge, and a novelty exploration that targets novel options alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and computational modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "8bac3c19-5b9c-42c2-8974-fc52e839a42e",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C5",
+      "claim": "Value-free random exploration is attenuated under the influence of propranolol.",
+      "claim_type": "EXPLICIT",
+      "source": "In a double-blind, placebo-controlled drug study, assessing contributions of dopamine (400 mg amisulpride) and noradrenaline (40 mg propranolol), we show that value-free random exploration is attenuated under the influence of propranolol, but not under amisulpride.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the pharmacological manipulation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "e02f06d2-380c-4866-be95-ad82a7b67cfe",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C6",
+      "claim": "Value-free random exploration is not attenuated under amisulpride.",
+      "claim_type": "EXPLICIT",
+      "source": "In a double-blind, placebo-controlled drug study, assessing contributions of dopamine (400 mg amisulpride) and noradrenaline (40 mg propranolol), we show that value-free random exploration is attenuated under the influence of propranolol, but not under amisulpride.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the pharmacological manipulation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "acb9ffb3-49bc-466f-a1e2-a186b7540588",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C7",
+      "claim": "Humans deploy distinct computationally cheap exploration strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that humans deploy distinct computationally cheap exploration strategies and that value-free random exploration is under noradrenergic control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "bba7bca9-33e8-40ab-b960-9ab0e6a2e82d",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C8",
+      "claim": "Value-free random exploration is under noradrenergic control.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that humans deploy distinct computationally cheap exploration strategies and that value-free random exploration is under noradrenergic control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the propranolol manipulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "e34c12ca-dbaf-4cea-927a-1ad340fb8abb",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C9",
+      "claim": "Humans use strategies that reflect an implementation of computationally demanding exploration algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has revealed humans use strategies that reflect an implementation of computationally demanding exploration algorithms (Gershman, 2018; Schulz and Gershman, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "4bad1385-8dff-433b-82cb-ae29e7be463a",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C10",
+      "claim": "Directed exploration involves awarding an 'information bonus' to choice options that scales with uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "One such strategy, directed exploration, involves awarding an 'information bonus' to choice options, a bonus that scales with uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a known computational strategy from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "7899ddd5-37bc-4761-aeff-fd230ac32b2a",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C11",
+      "claim": "The Upper Confidence Bound (UCB) algorithm captures directed exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "This is captured in algorithms such as the Upper Confidence Bound (UCB) (Auer, 2003; Carpentier et al., 2011) and leads to an exploration of choice options the agent knowns little about (Gershman, 2018; Schwartenbeck et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the relevant algorithmic literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "3d04acd1-32f4-4a7b-b51b-5f40f0f030be",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C12",
+      "claim": "Random exploration can be realized using a softmax temperature parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be realised using a fixed parameter as a source of stochasticity, such as a softmax temperature parameter (Daw et al., 2006; Wilson et al., 2014), which can be combined with the UCB algorithm (Gershman, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to computational modeling literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "8bd1b9fb-ff87-471d-8a2d-d042d4827d80",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C13",
+      "claim": "Thompson sampling is a dynamic source of stochasticity where stochasticity adapts to uncertainty about choice options.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, one can use a dynamic source of stochasticity, such as in Thompson sampling (Thompson, 1933), where stochasticity adapts to an uncertainty about choice options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Thompson sampling algorithm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "9f5f550d-3250-430f-9c02-979fa07d92f6",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C14",
+      "claim": "Exploration processes are computationally demanding when facing real-life multiple-alternative decision problems.",
+      "claim_type": "EXPLICIT",
+      "source": "The above processes are computationally demanding, especially when facing real-life multiple-alternative decision problems (Daw et al., 2006; Cohen et al., 2007; Cogliati Dezza et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "b0db025c-22f6-44a6-80a5-fb8da84ba433",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C15",
+      "claim": "Human cognitive resources are constrained by capacity limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "Human cognitive resources are constrained by capacity limitations (Papadopetraki et al., 2019), metabolic consumption (Z\u00e9non et al., 2019), but also because of resource allocation to parallel tasks (e.g.Wahn and K\u00f6nig, 2017; Marois and Ivanoff, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to cognitive science literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "4fc38f97-dd9b-44dd-a3ef-2c1deeef307b",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C16",
+      "claim": "Human cognitive resources are constrained by metabolic consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Human cognitive resources are constrained by capacity limitations (Papadopetraki et al., 2019), metabolic consumption (Z\u00e9non et al., 2019), but also because of resource allocation to parallel tasks (e.g.Wahn and K\u00f6nig, 2017; Marois and Ivanoff, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "0f161983-e901-49c6-a148-9ffc1c6dcfc2",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C17",
+      "claim": "Human cognitive resources are constrained by resource allocation to parallel tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Human cognitive resources are constrained by capacity limitations (Papadopetraki et al., 2019), metabolic consumption (Z\u00e9non et al., 2019), but also because of resource allocation to parallel tasks (e.g.Wahn and K\u00f6nig, 2017; Marois and Ivanoff, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "22df750d-b8ac-4b73-8f15-edccea1a62cf",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C18",
+      "claim": "Humans are demand-avoidant.",
+      "claim_type": "EXPLICIT",
+      "source": "This accords with previous studies showing humans are demand-avoidant (Kool et al., 2010; Frob\u00f6se and Cools, 2018) and suggests that exploration computations tend to be minimised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "431add89-bc02-42dd-9887-8a6036d84498",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C19",
+      "claim": "Exploration computations tend to be minimised in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This accords with previous studies showing humans are demand-avoidant (Kool et al., 2010; Frob\u00f6se and Cools, 2018) and suggests that exploration computations tend to be minimised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited literature about demand avoidance.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "091d231c-81cc-4fe1-82d8-ea5a0d7cd589",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C20",
+      "claim": "Value-free random exploration is the least resource demanding way to explore.",
+      "claim_type": "EXPLICIT",
+      "source": "Computationally, the least resource demanding way to explore is to ignore all prior information and to choose entirely randomly, de facto assigning the same probability to all options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about computational complexity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "010caaca-695b-4baf-9de5-685218e488c4",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C21",
+      "claim": "Value-free random exploration assigns the same probability to all options.",
+      "claim_type": "EXPLICIT",
+      "source": "Computationally, the least resource demanding way to explore is to ignore all prior information and to choose entirely randomly, de facto assigning the same probability to all options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional property of value-free random exploration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "bb534113-a787-4232-8769-22be426c086c",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C23",
+      "claim": "Value-free random exploration comes at the cost of sub-optimality due to occasional selection of options of low expected value.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational efficiency, however, comes at the cost of sub-optimality due to occasional selection of options of low expected value (e.g. the repulsive spinach ice cream).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of random selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "303c7ef6-4def-4caa-a277-b6df0524428a",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C24",
+      "claim": "Value-free random exploration has neurobiological plausibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its sub-optimality, value-free random exploration has neurobiological plausibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion that is elaborated with supporting evidence in subsequent text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "17af3632-4b99-4939-b52c-edba7011627d",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C25",
+      "claim": "Exploration strategies depend on dissociable neural mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Of relevance in this context is a view that exploration strategies depend on dissociable neural mechanisms (Zajkowski et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "97ffdc79-4d31-4d8d-988c-e42ba1beea0a",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C26",
+      "claim": "Noradrenaline and dopamine are plausible candidates for influencing exploration strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Influences from noradrenaline and dopamine are plausible candidates in this regard based on prior evidence (Cohen et al., 2007; Hauser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "66080e14-5b8f-465c-b863-5197c8a0d3c8",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C27",
+      "claim": "Noradrenaline has been ascribed a function of indexing uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst other roles (such as memory [Sara et al., 1994], or energisation of behaviour [Varazzani et al., 2015; Silvetti et al., 2018]), the neuromodulator noradrenaline has been ascribed a function of indexing uncertainty (Silvetti et al., 2013; Yu and Dayan, 2005; Nassar et al., 2012) or as acting as a 'reset button' that interrupts ongoing information processing (David Johnson, 2003; Bouret and Sara, 2005; Dayan and Yu, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "ac916f24-9050-490b-aa49-579e883cb7fd",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C28",
+      "claim": "Noradrenaline acts as a 'reset button' that interrupts ongoing information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst other roles (such as memory [Sara et al., 1994], or energisation of behaviour [Varazzani et al., 2015; Silvetti et al., 2018]), the neuromodulator noradrenaline has been ascribed a function of indexing uncertainty (Silvetti et al., 2013; Yu and Dayan, 2005; Nassar et al., 2012) or as acting as a 'reset button' that interrupts ongoing information processing (David Johnson, 2003; Bouret and Sara, 2005; Dayan and Yu, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "cf7741ee-c4ae-46eb-914a-a0101ba4f450",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C29",
+      "claim": "Boosting noradrenaline in rats leads to more value-free-random-like random behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior experimental work in rats shows boosting noradrenaline leads to more value-free-random-like random behaviour (Tervo et al., 2014), while pharmacological manipulations in monkeys indicates reducing noradrenergic activity increases choice consistency (Jahn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to animal research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "8fcdee31-4d27-44a0-8b95-d539e9729f9c",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C30",
+      "claim": "Reducing noradrenergic activity in monkeys increases choice consistency.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior experimental work in rats shows boosting noradrenaline leads to more value-free-random-like random behaviour (Tervo et al., 2014), while pharmacological manipulations in monkeys indicates reducing noradrenergic activity increases choice consistency (Jahn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to animal research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "be06f1d1-0dad-4711-833c-cafa5a23de10",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C32",
+      "claim": "Humans often show novelty seeking.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans often show novelty seeking (Bunzeck et al., 2012; Wittmann et al., 2008; Gershman and Niv, 2015; Stoji\u0107 et al., 2020), and this strategy can be used in exploration as implemented by a low-cost version of the UCB algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "5223bfed-8246-47d7-aa39-eabc4ba9a78a",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C33",
+      "claim": "Dopamine is implicated in exploration in general.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuromodulator dopamine is implicated not only in exploration in general (Frank et al., 2009), but also in signalling such types of novelty bonuses, where evidence indicates a role in processing and exploring novel and salient states (Wittmann et al., 2008; Bromberg-Martin et al., 2010; Costa et al., 2014; D\u00fczel et al., 2010; Iigaya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "40237773-1f02-4e38-9210-b0a83e586266",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C34",
+      "claim": "Dopamine plays a role in processing and exploring novel and salient states.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuromodulator dopamine is implicated not only in exploration in general (Frank et al., 2009), but also in signalling such types of novelty bonuses, where evidence indicates a role in processing and exploring novel and salient states (Wittmann et al., 2008; Bromberg-Martin et al., 2010; Costa et al., 2014; D\u00fczel et al., 2010; Iigaya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "bb710640-cfb1-4430-ac70-a4b32fcb1ec2",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C35",
+      "claim": "Amisulpride is a highly specific D2/D3 antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used the highly specific D2/D3 antagonist amisulpride, to disentangle the specific role of dopamine and noradrenaline on different exploration strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a pharmacological property of the drug used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "107d93b8-9b3a-4c4c-92c4-3a018e2e6b33",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C46",
+      "claim": "The propranolol group chose the low-value option significantly less often than the placebo group.",
+      "claim_type": "EXPLICIT",
+      "source": "This was driven by the propranolol group choosing the low-value option significantly less often than the other two groups (placebo vs propranolol: t(40) = 2.923, p = 0.005, d = 0.654; amisulpride vs propranolol: t(38) = 2.171, p = 0.034, d = 0.496) with no difference between amisulpride and placebo: (t(38) = -0.587, p = 0.559, d = 0.133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from post-hoc comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "f6773316-4b70-4cd2-8d17-9b93375f604e",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C47",
+      "claim": "The propranolol group chose the low-value option significantly less often than the amisulpride group.",
+      "claim_type": "EXPLICIT",
+      "source": "This was driven by the propranolol group choosing the low-value option significantly less often than the other two groups (placebo vs propranolol: t(40) = 2.923, p = 0.005, d = 0.654; amisulpride vs propranolol: t(38) = 2.171, p = 0.034, d = 0.496) with no difference between amisulpride and placebo: (t(38) = -0.587, p = 0.559, d = 0.133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from post-hoc comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "a37ff79b-796f-4fa7-bb94-9961a1f7c2cc",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C48",
+      "claim": "There was no difference between amisulpride and placebo groups in the frequency of choosing the low-value option.",
+      "claim_type": "EXPLICIT",
+      "source": "This was driven by the propranolol group choosing the low-value option significantly less often than the other two groups (placebo vs propranolol: t(40) = 2.923, p = 0.005, d = 0.654; amisulpride vs propranolol: t(38) = 2.171, p = 0.034, d = 0.496) with no difference between amisulpride and placebo: (t(38) = -0.587, p = 0.559, d = 0.133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from post-hoc comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "e919e2dd-ca75-4524-af19-20a61a8283a5",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C49",
+      "claim": "A key feature of value-free random exploration, the frequency of choosing low-value bandits, is sensitive to influences from noradrenaline.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that a key feature of value-free random exploration, the frequency of choosing low-value bandits, is sensitive to influences from noradrenaline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the drug effects on low-value bandit selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "5673d07c-be18-400a-8f28-c9d8a0d4151a",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C53",
+      "claim": "Noradrenaline blockade reduces value-free random exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that value-free random exploration depends critically on noradrenaline functioning, such that an attenuation of noradrenaline leads to a reduction in value-free random exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the propranolol effects on both low-value bandit selection and choice consistency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "74becf96-c7d6-4de2-978e-0cb1d06bc33e",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C57",
+      "claim": "There is no evidence that an attenuation of dopamine or noradrenaline function impacts novelty exploration in this task.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there was no evidence that an attenuation of dopamine or noradrenaline function impacts novelty exploration in this task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the lack of drug effects on novel bandit selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "489a47d5-8f38-46c0-9792-d1f37a918223",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C59",
+      "claim": "The winning model predicted held-out data with a 55.25% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "The winning model predicted held-out data with a 55.25% accuracy (SD=8.36%; chance level = 33.33%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the model validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "c38825db-ecc2-43d8-9ecf-6a5be954ead9",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C60",
+      "claim": "The hybrid model combining UCB and Thompson sampling explained the data better than each of those processes alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to previous studies (Gershman, 2018), the hybrid model combining UCB and Thompson sampling explained the data better than each of those processes alone, but this was no longer the case when accounting for novelty and value-free random exploration (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model comparison shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "50440e42-befd-420e-b22c-c8eb6dd7d6f4",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C61",
+      "claim": "When accounting for novelty and value-free random exploration, the hybrid model no longer explained the data better than UCB or Thompson sampling alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to previous studies (Gershman, 2018), the hybrid model combining UCB and Thompson sampling explained the data better than each of those processes alone, but this was no longer the case when accounting for novelty and value-free random exploration (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model comparison shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "3287f3e7-6c64-44fa-8179-448655378a94",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C62",
+      "claim": "All parameter estimates of the winning model could be accurately recovered.",
+      "claim_type": "EXPLICIT",
+      "source": "The winning model further revealed that all parameter estimates could be accurately recovered (Figure 4b; Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the parameter recovery analysis shown in Figure 4b and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "c85023cb-ae04-485f-ba43-ef44e98d8c26",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C63",
+      "claim": "Subjects used a mixture of computationally demanding and heuristic exploration strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights that subjects used a mixture of computationally demanding and heuristic exploration strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the model comparison results showing that heuristics improve model fit.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "a9e69cc8-01c8-4d05-9a6a-6b25c38bf667",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C75",
+      "claim": "Value-free random exploration was most sensitive to drug manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings show that value-free random exploration was most sensitive to our drug manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing drug effects across different model parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "5546790f-4217-484b-98c0-1b344dd5d4fe",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C76",
+      "claim": "Tracking the distribution of summary statistics is less resource costly than keeping track of full distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although tracking the distribution of summary statistics (e.g. mean and variance) is less resource costly than keeping track of full distributions (D'Acremont and Bossaerts, 2008), it nevertheless carries considerable costs when one has to keep track of multiple options, as in exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "400d74a7-56cf-41bd-b4da-9abe0bf6ace0",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C77",
+      "claim": "In a three-bandit task, tracking summary statistics results in a necessity to compute six key-statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in a three-bandit task such as that considered here, this results in a necessity to compute six key-statistics, drastically limiting computational resources when selecting among choice options (Cogliati Dezza et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the computational demands of the task, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "f729b691-c866-4015-963c-c0ad31f40683",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C78",
+      "claim": "Novelty exploration can be seen as an efficient simplification of demanding algorithms such as UCB.",
+      "claim_type": "EXPLICIT",
+      "source": "By assigning intrinsic value (novelty bonus [Krebs et al., 2009]) to an option not encountered before (Foley et al., 2014), a novelty bonus can be seen as an efficient simplification of demanding algorithms, such as UCB (Auer, 2003; Carpentier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the computational relationship between novelty exploration and UCB, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "e45de182-89b7-40e1-865b-982b33768b0d",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C79",
+      "claim": "The winning model did not include UCB, but instead novelty exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that our winning model did not include UCB, but instead novelty exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "6f015221-2362-4310-88c6-2008e3753f12",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C80",
+      "claim": "Humans might use a novelty shortcut to explore unseen states to conserve computational costs when such a strategy is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates humans might use such a novelty shortcut to explore unseen, or rarely visited, states to conserve computational costs when such a strategy is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the model comparison results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "75c3b0b1-a0d8-4293-98ad-9c481b2ef425",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C82",
+      "claim": "Both value-free random and novelty exploration were deployed in a goal-directed manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We show through converging behavioural and modelling measures that both value-free random and novelty exploration were deployed in a goal-directed manner, coupled with increased levels of exploration when this was strategically useful.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the horizon effects on both behavioral measures and model parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "13c89276-4302-454e-98a4-d889c9e9a07c",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C83",
+      "claim": "Value-free random exploration is at play even when accounting for other value-based forms of random exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the complex models make similar predictions in our task. This is also observed in our simulations, and demonstrates that value-free random exploration is at play even when accounting for other value-based forms of random exploration (Gershman, 2018; Wilson et al., 2014), whether fixed or uncertainty-driven.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model comparison and simulation results, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "26df7bd5-9015-49d1-b5a9-35975924c6c2",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C84",
+      "claim": "The long horizon invites extended exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that by changing the opportunity to benefit from the information gained for the first sample, the long horizon invites extended exploration (Wilson et al., 2014), what we find also in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and confirmed by the study's findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "cbef5962-ebb9-4cac-8999-c4fb84c24aed",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C85",
+      "claim": "Blocking noradrenaline was associated with a trend level increase in exploitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results did not demonstrate any main effect of dopamine manipulation on exploration strategies, even though blocking dopamine was associated with a trend level increase in exploitation (cf. Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a marginal finding from the drug manipulation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "a7e0f21c-3915-4b25-9330-2138deb5f303",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C86",
+      "claim": "Previous studies have found neurocognitive effects with the same dose of amisulpride used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe it unlikely this reflects an ineffective drug dose as previous studies have found neurocognitive effects with the same dose (Hauser et al., 2019; Hauser et al., 2018; Kahnt et al., 2015; Kahnt and Tobler, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "ecb46469-1724-47cf-bdf4-cf54e98618a9",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C87",
+      "claim": "Humans supplement computationally expensive exploration strategies with less resource demanding exploration heuristics.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, humans supplement computationally expensive exploration strategies with less resource demanding exploration heuristics, and as shown here the latter include value-free random and novelty exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on the experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "356e9171-b14d-4f8b-a1d8-d121b2de2c5b",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C88",
+      "claim": "Noradrenaline specifically influences value-free random exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that noradrenaline specifically influences value-free random exploration demonstrates that distinct exploration strategies may be under specific neuromodulator influence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on the drug manipulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "e063ceb2-69c4-4325-af90-916a5eaca457",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C89",
+      "claim": "Distinct exploration strategies may be under specific neuromodulator influence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that noradrenaline specifically influences value-free random exploration demonstrates that distinct exploration strategies may be under specific neuromodulator influence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion inferred from the specific finding about noradrenaline.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "fa4f068d-975f-4731-836a-81afa79a3369",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C90",
+      "claim": "The sample size was determined using power calculations taking effect sizes from prior studies that used the same drug manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample size was determined using power calculations taking effect sizes from our prior studies that used the same drug manipulations (Hauser et al., 2019; Hauser et al., 2018; Hauser et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach to determining sample size, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "e09df3e1-9483-4d18-829b-ad245ac5a4aa",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C91",
+      "claim": "Groups differed in mood (PANAS negative affect).",
+      "claim_type": "EXPLICIT",
+      "source": "Groups differed in mood (PANAS negative affect, cf. Appendix 1 for details) and marginally in intellectual abilities (WASI), and so we control for these potential confounders in our analyses (cf. Appendix 1 for uncorrected results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a demographic finding from the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "7e565751-830a-4c45-b755-8ac9b3af0469",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C92",
+      "claim": "Groups differed marginally in intellectual abilities (WASI).",
+      "claim_type": "EXPLICIT",
+      "source": "Groups differed in mood (PANAS negative affect, cf. Appendix 1 for details) and marginally in intellectual abilities (WASI), and so we control for these potential confounders in our analyses (cf. Appendix 1 for uncorrected results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a demographic finding from the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "eeed3b69-000e-4922-a61f-4029abfe74d2",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C93",
+      "claim": "40 mg of propranolol was administered 60 min before the task to reduce noradrenaline functioning.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce noradrenaline functioning, we administered 40 mg of the non-selective \u03b2-adrenoceptor antagonist propranolol 60 min before the task (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the pharmacological manipulation used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "89bba4c3-ed1c-423f-a956-0e2df354016c",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C94",
+      "claim": "400 mg of amisulpride was administered 90 min before the task to reduce dopamine functioning.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce dopamine functioning, we administered 400 mg of the selective D2/D3 antagonist amisulpride 90 min before the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pharmacological manipulation used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "46236ffc-0ea3-4f2d-8eb7-c2f99c06410a",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C95",
+      "claim": "The placebo group received placebo at both time points.",
+      "claim_type": "EXPLICIT",
+      "source": "The placebo group received placebo at both time points, in line with our previous studies (Hauser et al., 2019; Hauser et al., 2018; Hauser et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control condition, supported by citations to previous studies using the same design.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "1d5d9c31-4276-4c1a-9909-e4a24c2a74ab",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C96",
+      "claim": "The rewards of each bandit followed a normal distribution with a fixed sampling variance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Maggie's farm task, subjects had to choose from three bandits (depicted as trees) to maximise an outcome (sum of reward). The rewards (apple size) of each bandit followed a normal distribution with a fixed sampling variance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the task design shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "04f6df38-172c-42ef-a481-511200c910f4",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C97",
+      "claim": "Subjects were instructed to endeavour to make the most juice and that they would receive a cash bonus proportional to their performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were instructed to endeavour to make the most juice and that they would receive a cash bonus proportional to their performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task instructions given to participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "e71921fa-9262-469f-8540-e44f478bc550",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C98",
+      "claim": "Subjects received \u00a310/hr and a mean bonus of \u00a31.12.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall subjects received \u00a310/hr and a mean bonus of \u00a31.12 (std: \u00a30.06).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the compensation provided to participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "eadb4604-e4d9-4bfb-8ec9-6ee10d002155",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C99",
+      "claim": "The 'certain-standard bandit' provided three initial samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'certain-standard bandit' and the (less certain) 'standard bandit' were bandits with comparable means but varying levels of uncertainty, providing either three or one initial samples (depicted as apples; similar to the horizon task [Wilson et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "50d2eb0c-5095-49e2-9d57-8c423a01ac53",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C100",
+      "claim": "The 'standard bandit' provided one initial sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'certain-standard bandit' and the (less certain) 'standard bandit' were bandits with comparable means but varying levels of uncertainty, providing either three or one initial samples (depicted as apples; similar to the horizon task [Wilson et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "3c92f78a-ecb5-4ca8-84fd-70cc8941b30d",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C101",
+      "claim": "The 'low-value bandit' provided one initial sample from a substantially lower generative mean.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'low-value bandit' was a bandit with one initial sample from a substantially lower generative mean, thus appealing to a value-free random exploration strategy alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "d422f6b9-3cb4-4813-b78c-62825cede954",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C102",
+      "claim": "The 'novel bandit' provided no initial sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The last bandit, with a mean comparable with that of the standard bandits, was a 'novel bandit' for which no initial sample was shown, primarily appealing to a novelty exploration strategy",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "4a682ac7-60b6-436c-aa27-edbd9846ebda",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C103",
+      "claim": "All trials were repeated once to assess choice consistency.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess choice consistency, all trials were repeated once.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "da91f284-5478-482e-af1f-01f11f1ad2ed",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C104",
+      "claim": "Only three of the four different bandit types were presented on each trial.",
+      "claim_type": "EXPLICIT",
+      "source": "To effectively assess all exploration strategies, we opted to present only three of the four different bandit types on each trial, as different bandit triples allow different explorations to manifest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design rationale.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "2403b843-2c47-4dc3-b383-1f216eea5bb3",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C105",
+      "claim": "One subject from the amisulpride group was excluded due to not engaging in the task and performing at chance level.",
+      "claim_type": "EXPLICIT",
+      "source": "One subject (amisulpride group) was excluded from the analysis due to a lack of engagement with the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an exclusion criterion applied in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "6c9d903c-e75d-4a72-8969-88421c4fcb43",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "claim_id": "C107",
+      "claim": "The winning model accounted best for the largest number of subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also the model which accounted best for the largest number of subjects (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the individual-level model comparison shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ce8e3e67-a3d0-4086-8e09-9c226cf218dd",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Humans use two computationally cheap exploration heuristics\u2014value-free random exploration and novelty exploration\u2014in addition to more demanding strategies. Both heuristics are deployed in a goal-directed manner, with increased usage when exploration is strategically beneficial (long vs. short horizon conditions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C7, C63, C82, and C87 converge on demonstrating that humans employ both value-free random and novelty exploration heuristics alongside complex strategies. The behavioral data (horizon effects), computational modeling (winning model includes both heuristics), and parameter recovery analyses provide strong, multi-method evidence for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Propranolol (noradrenaline \u03b2-receptor antagonist) specifically reduces value-free random exploration, as evidenced by decreased selection of low-value bandits and increased choice consistency. Amisulpride (dopamine D2/D3 antagonist) shows no such effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C46-C49, C53, C75, and C88 provide converging behavioral and computational evidence that propranolol selectively attenuates value-free random exploration. The statistical comparisons show significant differences between propranolol and both placebo and amisulpride groups (p=0.005 and p=0.034 respectively for low-value bandit selection), with no difference between amisulpride and placebo. Model-based analyses confirm these effects on the \u03b5-greedy parameter.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "21b698ea-2f03-4128-a3df-de80fe9984f9",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neither dopamine (amisulpride) nor noradrenaline (propranolol) blockade significantly affected novelty exploration in this task, though dopamine blockade showed a trend toward increased exploitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C85 report null findings for drug effects on novelty exploration and marginal effects on exploitation. The statistical analyses found no significant drug effects on novel bandit selection (F(2,54)=1.498, p=0.233), supporting the conclusion. The trend-level exploitation effect is appropriately characterized as marginal and relegated to supplementary analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "9f8bc307-42d8-457a-9ade-289a10124c0c",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A computational model combining Thompson sampling (uncertainty-driven exploration) with value-free random exploration (\u03b5-greedy) and novelty exploration best explained human choice behavior, outperforming models with complex strategies alone. The model achieved 55.25% prediction accuracy on held-out data and showed good parameter recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62, C79, and C107 describe the model comparison results. The winning model's superiority is demonstrated through cross-validation (55.25% accuracy vs. 33.33% chance), individual-level model fits, and parameter recovery analyses. The finding that adding heuristics improved fit over complex strategies alone (C60-C61) provides strong evidence for the computational framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "487793c5-6684-4771-852c-bc03683fde86",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Drug groups differed in baseline mood (PANAS negative affect) and marginally in intellectual abilities (WASI), which were controlled for as covariates in all analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91 and C92 report demographic differences between groups that were appropriately identified and controlled for statistically. The manuscript explicitly states these were included as covariates in ANOVAs and provides both corrected and uncorrected results in appendices, demonstrating appropriate methodological rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "bcf4e903-d6e4-4830-8725-e449afd8f8cf",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study employed a double-blind, placebo-controlled design with three groups: 40mg propranolol (\u03b2-adrenoceptor antagonist), 400mg amisulpride (D2/D3 antagonist), and placebo, administered at different times to account for pharmacokinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 and C35 describe the pharmacological manipulation protocol. The design is clearly specified with appropriate drug doses, timing (60 min for propranolol, 90 min for amisulpride), and placebo controls. The drug specificity is supported by pharmacological knowledge (C35) and citations to previous studies using the same protocol (C95).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "406cbe72-5c63-485b-8ac2-737bd722dacb",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Maggie's Farm task presented subjects with three-armed bandits varying in initial samples (0-3) and mean rewards, with trials repeated to assess consistency. Subjects chose between bandits in short (1 draw) or long (6 draws) horizon conditions to manipulate exploration incentives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C104 comprehensively describe the task design. The methodology is clearly specified with appropriate detail about bandit types, reward distributions, horizon manipulations, and trial structure. The design rationale (C104) for presenting only three of four bandit types is explicitly justified to allow different exploration strategies to manifest.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "d293236a-6ad2-4851-b8bf-0a344396ab37",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior work and theoretical considerations establish that exploration-exploitation trade-offs are typically solved using computationally demanding algorithms (UCB, Thompson sampling), but human cognitive constraints (capacity, metabolic costs, demand avoidance) motivate the search for cheaper heuristic strategies like value-free random exploration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 establish the theoretical and empirical background for the study. These claims are well-supported by appropriate citations to the computational (C9-C13) and cognitive science (C14-C19) literature. The logical inference about value-free random exploration being computationally minimal (C20-C21) follows from established principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior evidence suggests exploration strategies depend on dissociable neural mechanisms, with noradrenaline implicated in uncertainty signaling and behavioral reset, and dopamine implicated in novelty processing. Animal studies show noradrenaline manipulations affect random behavior and choice consistency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C34 review prior neurobiological evidence supporting the study's hypotheses. Each claim is appropriately supported by citations to relevant animal and human studies. The evidence provides a plausible mechanistic framework for the pharmacological manipulations, though the authors appropriately note complexity and alternative interpretations in the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "2266d7a9-92e0-48b5-b9a0-90b27579677e",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Tracking summary statistics for multiple options is computationally demanding (requiring six statistics for three bandits). Novelty exploration can be viewed as an efficient simplification of UCB, and value-free random exploration operates even when accounting for value-based random exploration strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78, C80, and C83 provide computational justification for why heuristics would be beneficial. The argument about computational demands (C76-C77) is supported by citation and logical inference. The relationship between novelty exploration and UCB (C78) is appropriately characterized as an inference supported by citations. The demonstration that value-free exploration is distinct from value-based exploration (C83) is supported by modeling and simulation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "a9815fb3-9210-404f-9358-08880dee77f0",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The long horizon condition promotes exploration by allowing information gained to be exploited in subsequent choices, consistent with prior studies. Sample size was determined by power calculations based on previous studies using the same drug manipulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C90 describe methodological aspects. The horizon manipulation (C84) is well-established in the literature (Wilson et al., 2014) and confirmed by the study's findings. The sample size justification (C90) is appropriately based on prior effect sizes from studies using identical drug protocols, demonstrating sound experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "6043d77b-63b9-468b-a260-8712f5c4e232",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The lack of dopamine effects is unlikely due to ineffective dosing, as previous studies found neurocognitive effects with the same amisulpride dose. The findings suggest distinct exploration strategies may be under specific neuromodulator control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86 and C89 address the null dopamine findings. While C86 provides citations supporting the drug dose effectiveness, the inference in C89 about specific neuromodulator control is based primarily on the positive noradrenaline finding and negative dopamine finding. The conclusion is reasonable but would benefit from additional evidence, particularly given the D2/D3 vs. D1 receptor limitation discussed in the manuscript. The authors appropriately acknowledge this limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "112721f2-4b1c-4604-b0ef-bb90bb2594bb",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Value-free random exploration, while computationally efficient, comes at the cost of sub-optimality due to occasional selection of low-value options, but has neurobiological plausibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C24 present logical inferences about the trade-offs of value-free random exploration. The sub-optimality cost (C23) is a straightforward logical consequence of random selection. The neurobiological plausibility (C24) is elaborated with supporting evidence in subsequent claims about noradrenaline function, making this a reasonable assertion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    },
+    {
+      "id": "0c74c632-c630-4e6b-ab55-94b96cdb82c3",
+      "content_id": "7c93ac95-0753-4735-8e8c-33db8193a206",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "One subject from the amisulpride group was excluded from analysis due to lack of task engagement and chance-level performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 describes a single subject exclusion with appropriate justification (chance-level performance indicating non-engagement). This is a standard and appropriate exclusion criterion for behavioral studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:20:57.260841Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f8787034-61c7-47d5-b81d-b5fe46ed8184",
+      "result_id": "ce8e3e67-a3d0-4086-8e09-9c226cf218dd"
+    },
+    {
+      "claim_id": "27e636d5-fa54-4075-ba38-cb4dcb4b8d12",
+      "result_id": "ce8e3e67-a3d0-4086-8e09-9c226cf218dd"
+    },
+    {
+      "claim_id": "acb9ffb3-49bc-466f-a1e2-a186b7540588",
+      "result_id": "ce8e3e67-a3d0-4086-8e09-9c226cf218dd"
+    },
+    {
+      "claim_id": "c85023cb-ae04-485f-ba43-ef44e98d8c26",
+      "result_id": "ce8e3e67-a3d0-4086-8e09-9c226cf218dd"
+    },
+    {
+      "claim_id": "75c3b0b1-a0d8-4293-98ad-9c481b2ef425",
+      "result_id": "ce8e3e67-a3d0-4086-8e09-9c226cf218dd"
+    },
+    {
+      "claim_id": "ecb46469-1724-47cf-bdf4-cf54e98618a9",
+      "result_id": "ce8e3e67-a3d0-4086-8e09-9c226cf218dd"
+    },
+    {
+      "claim_id": "8bac3c19-5b9c-42c2-8974-fc52e839a42e",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "e02f06d2-380c-4866-be95-ad82a7b67cfe",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "bba7bca9-33e8-40ab-b960-9ab0e6a2e82d",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "107d93b8-9b3a-4c4c-92c4-3a018e2e6b33",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "f6773316-4b70-4cd2-8d17-9b93375f604e",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "a37ff79b-796f-4fa7-bb94-9961a1f7c2cc",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "e919e2dd-ca75-4524-af19-20a61a8283a5",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "5673d07c-be18-400a-8f28-c9d8a0d4151a",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "a9e69cc8-01c8-4d05-9a6a-6b25c38bf667",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "356e9171-b14d-4f8b-a1d8-d121b2de2c5b",
+      "result_id": "5e5efa8d-2b93-4a9e-af7e-dbb75d0d8d24"
+    },
+    {
+      "claim_id": "74becf96-c7d6-4de2-978e-0cb1d06bc33e",
+      "result_id": "21b698ea-2f03-4128-a3df-de80fe9984f9"
+    },
+    {
+      "claim_id": "cbef5962-ebb9-4cac-8999-c4fb84c24aed",
+      "result_id": "21b698ea-2f03-4128-a3df-de80fe9984f9"
+    },
+    {
+      "claim_id": "489a47d5-8f38-46c0-9792-d1f37a918223",
+      "result_id": "9f8bc307-42d8-457a-9ade-289a10124c0c"
+    },
+    {
+      "claim_id": "c38825db-ecc2-43d8-9ecf-6a5be954ead9",
+      "result_id": "9f8bc307-42d8-457a-9ade-289a10124c0c"
+    },
+    {
+      "claim_id": "50440e42-befd-420e-b22c-c8eb6dd7d6f4",
+      "result_id": "9f8bc307-42d8-457a-9ade-289a10124c0c"
+    },
+    {
+      "claim_id": "3287f3e7-6c64-44fa-8179-448655378a94",
+      "result_id": "9f8bc307-42d8-457a-9ade-289a10124c0c"
+    },
+    {
+      "claim_id": "e45de182-89b7-40e1-865b-982b33768b0d",
+      "result_id": "9f8bc307-42d8-457a-9ade-289a10124c0c"
+    },
+    {
+      "claim_id": "6c9d903c-e75d-4a72-8969-88421c4fcb43",
+      "result_id": "9f8bc307-42d8-457a-9ade-289a10124c0c"
+    },
+    {
+      "claim_id": "e09df3e1-9483-4d18-829b-ad245ac5a4aa",
+      "result_id": "487793c5-6684-4771-852c-bc03683fde86"
+    },
+    {
+      "claim_id": "7e565751-830a-4c45-b755-8ac9b3af0469",
+      "result_id": "487793c5-6684-4771-852c-bc03683fde86"
+    },
+    {
+      "claim_id": "eeed3b69-000e-4922-a61f-4029abfe74d2",
+      "result_id": "bcf4e903-d6e4-4830-8725-e449afd8f8cf"
+    },
+    {
+      "claim_id": "89bba4c3-ed1c-423f-a956-0e2df354016c",
+      "result_id": "bcf4e903-d6e4-4830-8725-e449afd8f8cf"
+    },
+    {
+      "claim_id": "46236ffc-0ea3-4f2d-8eb7-c2f99c06410a",
+      "result_id": "bcf4e903-d6e4-4830-8725-e449afd8f8cf"
+    },
+    {
+      "claim_id": "bb710640-cfb1-4430-ac70-a4b32fcb1ec2",
+      "result_id": "bcf4e903-d6e4-4830-8725-e449afd8f8cf"
+    },
+    {
+      "claim_id": "1d5d9c31-4276-4c1a-9909-e4a24c2a74ab",
+      "result_id": "406cbe72-5c63-485b-8ac2-737bd722dacb"
+    },
+    {
+      "claim_id": "04f6df38-172c-42ef-a481-511200c910f4",
+      "result_id": "406cbe72-5c63-485b-8ac2-737bd722dacb"
+    },
+    {
+      "claim_id": "e71921fa-9262-469f-8540-e44f478bc550",
+      "result_id": "406cbe72-5c63-485b-8ac2-737bd722dacb"
+    },
+    {
+      "claim_id": "eadb4604-e4d9-4bfb-8ec9-6ee10d002155",
+      "result_id": "406cbe72-5c63-485b-8ac2-737bd722dacb"
+    },
+    {
+      "claim_id": "50d2eb0c-5095-49e2-9d57-8c423a01ac53",
+      "result_id": "406cbe72-5c63-485b-8ac2-737bd722dacb"
+    },
+    {
+      "claim_id": "3c92f78a-ecb5-4ca8-84fd-70cc8941b30d",
+      "result_id": "406cbe72-5c63-485b-8ac2-737bd722dacb"
+    },
+    {
+      "claim_id": "d422f6b9-3cb4-4813-b78c-62825cede954",
+      "result_id": "406cbe72-5c63-485b-8ac2-737bd722dacb"
+    },
+    {
+      "claim_id": "4a682ac7-60b6-436c-aa27-edbd9846ebda",
+      "result_id": "406cbe72-5c63-485b-8ac2-737bd722dacb"
+    },
+    {
+      "claim_id": "da91f284-5478-482e-af1f-01f11f1ad2ed",
+      "result_id": "406cbe72-5c63-485b-8ac2-737bd722dacb"
+    },
+    {
+      "claim_id": "5c0a1f63-28d0-4227-8b2f-91801a1b7098",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "b2bacb8c-e0ff-457d-9bfd-6820598eb56c",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "e34c12ca-dbaf-4cea-927a-1ad340fb8abb",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "4bad1385-8dff-433b-82cb-ae29e7be463a",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "7899ddd5-37bc-4761-aeff-fd230ac32b2a",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "3d04acd1-32f4-4a7b-b51b-5f40f0f030be",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "8bd1b9fb-ff87-471d-8a2d-d042d4827d80",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "9f5f550d-3250-430f-9c02-979fa07d92f6",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "b0db025c-22f6-44a6-80a5-fb8da84ba433",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "4fc38f97-dd9b-44dd-a3ef-2c1deeef307b",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "0f161983-e901-49c6-a148-9ffc1c6dcfc2",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "22df750d-b8ac-4b73-8f15-edccea1a62cf",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "431add89-bc02-42dd-9887-8a6036d84498",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "091d231c-81cc-4fe1-82d8-ea5a0d7cd589",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "010caaca-695b-4baf-9de5-685218e488c4",
+      "result_id": "d293236a-6ad2-4851-b8bf-0a344396ab37"
+    },
+    {
+      "claim_id": "17af3632-4b99-4939-b52c-edba7011627d",
+      "result_id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355"
+    },
+    {
+      "claim_id": "97ffdc79-4d31-4d8d-988c-e42ba1beea0a",
+      "result_id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355"
+    },
+    {
+      "claim_id": "66080e14-5b8f-465c-b863-5197c8a0d3c8",
+      "result_id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355"
+    },
+    {
+      "claim_id": "ac916f24-9050-490b-aa49-579e883cb7fd",
+      "result_id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355"
+    },
+    {
+      "claim_id": "cf7741ee-c4ae-46eb-914a-a0101ba4f450",
+      "result_id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355"
+    },
+    {
+      "claim_id": "8fcdee31-4d27-44a0-8b95-d539e9729f9c",
+      "result_id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355"
+    },
+    {
+      "claim_id": "be06f1d1-0dad-4711-833c-cafa5a23de10",
+      "result_id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355"
+    },
+    {
+      "claim_id": "5223bfed-8246-47d7-aa39-eabc4ba9a78a",
+      "result_id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355"
+    },
+    {
+      "claim_id": "40237773-1f02-4e38-9210-b0a83e586266",
+      "result_id": "f59a5dd1-f211-4e53-b8e8-3e4d1c28c355"
+    },
+    {
+      "claim_id": "5546790f-4217-484b-98c0-1b344dd5d4fe",
+      "result_id": "2266d7a9-92e0-48b5-b9a0-90b27579677e"
+    },
+    {
+      "claim_id": "400d74a7-56cf-41bd-b4da-9abe0bf6ace0",
+      "result_id": "2266d7a9-92e0-48b5-b9a0-90b27579677e"
+    },
+    {
+      "claim_id": "f729b691-c866-4015-963c-c0ad31f40683",
+      "result_id": "2266d7a9-92e0-48b5-b9a0-90b27579677e"
+    },
+    {
+      "claim_id": "6f015221-2362-4310-88c6-2008e3753f12",
+      "result_id": "2266d7a9-92e0-48b5-b9a0-90b27579677e"
+    },
+    {
+      "claim_id": "13c89276-4302-454e-98a4-d889c9e9a07c",
+      "result_id": "2266d7a9-92e0-48b5-b9a0-90b27579677e"
+    },
+    {
+      "claim_id": "26df7bd5-9015-49d1-b5a9-35975924c6c2",
+      "result_id": "a9815fb3-9210-404f-9358-08880dee77f0"
+    },
+    {
+      "claim_id": "fa4f068d-975f-4731-836a-81afa79a3369",
+      "result_id": "a9815fb3-9210-404f-9358-08880dee77f0"
+    },
+    {
+      "claim_id": "a7e0f21c-3915-4b25-9330-2138deb5f303",
+      "result_id": "6043d77b-63b9-468b-a260-8712f5c4e232"
+    },
+    {
+      "claim_id": "e063ceb2-69c4-4325-af90-916a5eaca457",
+      "result_id": "6043d77b-63b9-468b-a260-8712f5c4e232"
+    },
+    {
+      "claim_id": "bb534113-a787-4232-8769-22be426c086c",
+      "result_id": "112721f2-4b1c-4604-b0ef-bb90bb2594bb"
+    },
+    {
+      "claim_id": "303c7ef6-4def-4caa-a277-b6df0524428a",
+      "result_id": "112721f2-4b1c-4604-b0ef-bb90bb2594bb"
+    },
+    {
+      "claim_id": "2403b843-2c47-4dc3-b383-1f216eea5bb3",
+      "result_id": "0c74c632-c630-4e6b-ab55-94b96cdb82c3"
+    }
+  ],
+  "comparisons": []
+}

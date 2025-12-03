@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C105",
+      "C106"
+    ],
+    "result": "Nup54 and Nup58 are specifically required for transposon silencing in Drosophila ovarian follicle cells. Loss of these Nups results in compromised piRNA biogenesis exclusively from the flamenco locus, with minimal effects on cell viability or bulk mRNA export, distinguishing them from other NPC subunits that have broader effects on gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C36-C45, C105, and C106 collectively demonstrate that Nup54 and Nup58 have a specific role in transposon silencing via the flamenco locus. The evidence includes systematic knockdown experiments (C39-C42), RNA-seq showing specific TE de-repression (C43-C45), and demonstration that bulk mRNA export is unaffected (C37, C66). The specificity is further supported by comparison with other Nup knockdowns (C39, C40, C46-C48, C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Nup54 and Nup58 depletion specifically affects flamenco transcript stability and export. Loss of these Nups results in reduced flam RNA levels, particularly at the 3' end of the transcript, nuclear retention of flam RNA, but no effect on bulk mRNA distribution or transcription initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 and C64-C68 provide converging evidence from RNA-seq, PRO-seq, and RNA-FISH experiments demonstrating that Nup54/Nup58 affect flam transcript stability and export. The 3'-biased reduction (C54, C63) is supported by binning analysis, PRO-seq shows minimal effects on transcription initiation (C56, C57), and RNA-FISH demonstrates nuclear retention (C64, C65). The specificity is confirmed by lack of effects on bulk mRNAs (C66, C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Nup54 and Nup58 knockdown results in a specific reduction of flamenco-derived piRNAs. The piRNA loss is approximately threefold and shows a 3'-biased pattern along the flam locus, while piRNAs from other sources (tj, cluster 20A) remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by small RNA-seq data showing specific effects on flam-derived piRNAs (C60, C61) with a 3'-biased loss pattern (C63) that mirrors the precursor transcript reduction. The specificity is demonstrated by comparison with Yb depletion (C59, C62) and other piRNA sources (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C82",
+      "C83"
+    ],
+    "result": "The C-terminal domain of Nup54 and Nup58, which mediates interaction with other Nups, is essential for their TE silencing function, while the FG-repeat regions are dispensable. This indicates that Nup54 and Nup58 function from within the NPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71, C82, and C83 are supported by rescue experiments showing that \u0394FG constructs can rescue TE de-repression (C69, C83) while \u0394C constructs cannot (C70). Co-immunoprecipitation data (C73, C96, C102) confirms that the C-terminal domain is required for Nup complex formation, supporting the inference that these Nups function from within the NPC (C71, C82, C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The nup54MB mutant allele, which produces a truncated protein lacking the C-terminal domain, phenocopies the knockdown results in vivo. Trans-heterozygous nup54MB/9B4 flies show TE de-repression, reduced flam RNA levels with 3'-bias, and reduced Yb-bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 provide in vivo validation of the cell culture findings. The nup54MB allele produces a truncated protein (C72) that fails to interact with Nup58 (C73), and trans-heterozygous flies show TE de-repression (C75), reduced flam RNA with 3'-bias (C79), and reduced Yb-bodies (C80, C81). This confirms the requirement for Nup54 in vivo and validates the cell culture results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Proximity labeling mass spectrometry reveals that Nup54 and Nup58 are in close proximity to Yb and Nxf1. Nup54/Nup58 PL-MS enriched for NPC components, Nxf1, and Yb, while Yb PL-MS enriched for Nup214 but not for Nup54/Nup58, suggesting transient interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 are supported by PL-MS data showing enrichment of Yb in Nup54/Nup58 PL-MS (C92) and Nxf1 (C91), while Nxf1 CLIP-seq shows interaction with flam RNA (C86). The asymmetry in detection (Yb enriches for Nup214 but not Nup54/Nup58, C88, C89) suggests transient interactions, which is consistent with immunofluorescence data (C93-C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C110"
+    ],
+    "result": "Nup54 and Nup58 physically interact with both Yb and Nxf1/Nxt1. Co-immunoprecipitation experiments confirm direct protein-protein interactions that are RNA-independent, and immunofluorescence shows overlapping/adjacent signals between Yb and Nup54/Nup58.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99, C101-C103, and C110 are supported by co-immunoprecipitation data showing interactions between Nup54/Nup58 and Yb (C96, C97, C99) that are RNase-insensitive (C98), as well as interactions with Nxf1/Nxt1 (C97). Immunofluorescence shows overlapping signals (C93) but also indicates dynamic localization (C94, C95). The HelC domain of Yb contributes to but is not solely responsible for the interaction (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The formation of Yb-bodies depends on flam RNA and its export machinery. flam mutants and knockdowns of export factors (nxf1/nxt1) result in disassembly of Yb-bodies, indicating interdependence between flam transcript production, export, and Yb-body assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C30, C31, C33, C34, and C35 are supported by data from flam mutants (C30, C31) and export factor knockdowns (C33, C34) showing Yb-body disassembly. The interdependence is explicitly stated (C35) and supported by citations to previous work (C27, C33, C34) as well as data presented in the manuscript (C31).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C55"
+    ],
+    "result": "Knockdown of nup62 and nup93-1 has broader effects than nup54/nup58 knockdown, causing widespread gene expression changes, de-repression of non-somatic TEs, and changes in expression of other Nups and export factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 and C55 are supported by RNA-seq data showing that nup62 and nup93-1 knockdowns affect many more genes (C46), de-repress non-somatic TEs (C47), and alter expression of other Nups and export factors (C48). The uniform reduction in flam RNA levels (C55) contrasts with the 3'-biased reduction in nup54/nup58 knockdowns, supporting the conclusion that these Nups have different roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C115",
+      "C116"
+    ],
+    "result": "Some Nups can acquire specialized roles in tissue-specific contexts, and the NPC has functions beyond constituting a barrier to nuclear/cytoplasmic exchange. Transcripts under strong selective pressure can co-opt NPC subunits to facilitate their expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C115, and C116 represent broader interpretations of the findings. The evidence for tissue-specific Nup functions comes from the specific role of Nup54/Nup58 in flam export (C3, C4, C105, C106) and comparison with Nup358 in nurse cells (C113, C114). While C116 is speculative, it is a reasonable extrapolation from the demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C111",
+      "C104"
+    ],
+    "result": "A proposed model suggests that Nup54 and Nup58 coordinate export-coupled licensing of flam transcripts through an Nxf1-NPC-Yb axis. This mechanism ensures processivity and directionality of flam export, with disruption leading to nuclear retention and destabilization of flam transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107, C108, C111, and C104 represent a proposed mechanistic model. While the model is consistent with the data (nuclear retention upon Nup54/Nup58 loss, C108; interactions between components, C110; 3'-biased effects, C54, C63), key aspects remain speculative (C107, C111) or hypothetical (C104, C68). The model provides a framework for understanding the results but requires additional experimental validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors speculate that tissue-specific control of export routes might explain nucleoporopathies, human syndromes caused by mutated Nups that lead to tissue-specific phenotypes despite ubiquitous NPC expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C120 are speculative extrapolations to human disease. While C117 is supported by citations about Nup evolution in Drosophila, and C119 accurately describes nucleoporopathies (supported by citations), the proposed connection (C118, C120) is hypothetical and not directly tested in this study. This represents an interesting hypothesis for future work but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background information on NPC structure and function: The NPC is composed of ~30 different nucleoporins, serves as the gateway for nuclear-cytoplasmic transport, and has been implicated in gene regulation through chromatin association and other mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C12 represent established background knowledge about NPC structure and function, supported by multiple citations to previous work. These claims provide context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C32"
+    ],
+    "result": "Background information on piRNA pathway and flamenco: piRNAs silence transposons in animal gonads, originate from piRNA clusters, and flamenco is the principal source of piRNAs in Drosophila follicle cells. Flam transcripts are exported via Nxf1/Nxt1 and localize to Yb-bodies for piRNA biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C26, C28, C29, and C32 represent established background knowledge about the piRNA pathway and flamenco, supported by multiple citations to previous work. These claims provide essential context for understanding the study's findings but are not novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Nup54 and Nup58 are FG-Nups that constitute the heterotrimeric Nup62 complex and line the inner channel of the NPC. Their FG-repeats contribute to the selective permeability barrier and interact with nuclear transport receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 represent established structural and functional information about Nup54 and Nup58, supported by citations to previous structural studies. This background information is essential for interpreting the functional studies but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The FG-repeats of yeast Nup49 and Nup57 (homologs of Nup54 and Nup58) are also dispensable for cell survival, suggesting that not all FG-Nups are equivalent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by citations to previous studies in yeast and provides comparative context for the finding that FG-repeats are dispensable in Drosophila Nup54/Nup58 (C83). This strengthens the interpretation but is not a novel finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The amino-terminal HelC domain of Yb is required exclusively for flam piRNA production as opposed to piRNA biogenesis in general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by a citation to a previous study (Hirakata et al., 2019) and provides context for the finding that deletion of this domain weakens interaction with Nups (C101). This is background information from prior work, not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "siYb caused a slight decrease in PRO-seq signal across the entire flam locus, possibly indicating a feedback mechanism between flam export-coupled licensing and transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is supported by PRO-seq data but the interpretation of a feedback mechanism is speculative. The observation is interesting but the mechanism is not explored further, and alternative explanations (e.g., indirect effects on transcription) are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The TE silencing function of Nup54 and Nup58 is carried out from within the pore, based on rescue experiments and the fact that neither Nup is among the most dynamic components of the NPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by rescue experiments showing that the C-terminal domain (required for NPC assembly) is essential (C70, C71) and by a citation about Nup dynamics (Rabut et al., 2004). However, the authors acknowledge they cannot completely exclude a cytosolic function, introducing some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Cytosolic Nup358 is required for piRNA production from the dual-strand cluster 42AB in nurse cells, but its depletion leads to Piwi de-localization, suggesting a different mode of action than Nup54/Nup58.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113 and C114 are supported by a citation to previous work (C113) and comparison with the current study's findings (C114). This provides context for the tissue-specific roles of different Nups but is primarily comparative analysis rather than a novel finding.",
+    "result_type": "MINOR"
+  }
+]

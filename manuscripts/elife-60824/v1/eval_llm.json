@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript reviews prior literature on propofol-induced unconsciousness, including its GABAergic mechanism, dose-dependent EEG signatures (beta at low doses, slow-delta and alpha anteriorization at surgical doses), and proposed mechanisms involving cortical fragmentation, thalamo-cortical hypersynchrony, loss of frontal-parietal connectivity, and brainstem arousal center inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 are all supported by citations to prior research. These claims establish the scientific context and background knowledge for the current study. The authors appropriately cite relevant literature to support each statement about propofol's mechanisms and effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Propofol-induced loss of consciousness (LOC) was associated with significant decreases in muscle tone, cessation of airpuff-evoked eyeblinks, decline in blood oxygenation, and decreased heart rate. Recovery of consciousness (ROC) occurred approximately 7 minutes after cessation of propofol infusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by physiological measurements shown in Figure 1C-F with appropriate statistical analysis (posterior probability > 0.99). The state-space modeling approach is appropriate for characterizing temporal changes in physiological signals. The behavioral definition of LOC and ROC is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "During the transition to unconsciousness, there was an initial increase in beta power (15-30 Hz) in all cortical areas 3-7 minutes before LOC. In frontal areas (PFC, 8A), beta power shifted to lower frequencies (14-20 Hz) and remained elevated throughout unconsciousness, while in posterior areas (PPC, STG) beta power decreased after LOC. All areas showed sustained reduction in gamma power (>35 Hz) and significant increases in slow-frequency power around LOC, with the strongest slow-frequency increases in posterior areas (STG > PPC/PFC > 8A). The thalamus showed similar slow-frequency increases at LOC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are well-supported by time-frequency analysis shown in Figure 2 with appropriate statistical testing (non-parametric cluster-based randomizations, p<0.01, corrected for multiple comparisons). The spatial gradient in slow-frequency power changes (posterior > anterior) is statistically validated. The methods for spectral analysis are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study demonstrates 'alpha anteriorization' during unconsciousness: while awake, alpha-beta power (8-25 Hz) was greater in posterior areas (PPC, STG) than anterior areas (PFC, 8A), but this relationship reversed during unconsciousness with frontal areas showing greater alpha-beta power. Additionally, the peak slow-frequency changes occurred at higher frequencies in anterior areas (1.3-1.8 Hz) compared to posterior areas (0.65-0.75 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by data in Figure 3 with strong statistical evidence (p<1E-3 to p<1E-5). The anteriorization phenomenon is clearly demonstrated through direct comparison of absolute power values between awake and unconscious states. The frequency-specific differences in slow oscillations across cortical areas are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "At recovery of consciousness (ROC), slow-frequency power returned to awake levels in all areas, but gamma power reductions persisted in PFC, 8A, and STG even 10 minutes post-ROC. In frontal area 8A, beta power remained elevated above awake levels 10 minutes post-ROC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by data in Figure 2 (right subpanels). The differential recovery dynamics of different frequency bands provide important insights into the temporal dynamics of emergence from anesthesia. The persistent gamma suppression and beta elevation suggest incomplete neural recovery despite behavioral arousal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Propofol profoundly suppressed cortical spiking activity. Awake spike rates (6-8 spikes/s) fell to 0.2-0.5 spikes/s during initial infusion, increased to 1-2 spikes/s during maintenance, and were approximately half of awake rates at LOC. At ROC, spike rates returned to approximately LOC levels, with STG recovering faster than other areas. The magnitude of spike rate suppression showed an anterior-to-posterior gradient (PFC/8A > PPC > STG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are supported by spike rate analysis shown in Figure 4A-B with appropriate statistical testing. The temporal dynamics of spiking suppression and recovery are well-characterized. The spatial gradient in spike suppression (anterior > posterior) is statistically validated (p<0.01). However, the manuscript does not fully address potential confounds such as changes in signal-to-noise ratio during unconsciousness that might affect spike detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "During unconsciousness, spike timing became strongly phase-coupled to slow-frequency oscillations, with spikes entraining to the depolarized phases (troughs) of slow oscillations, creating Up and Down states. Statistical modeling confirmed significant increases in phase modulation during unconsciousness (posterior probability 0.98-0.99 across all areas).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by spike-triggered averages (Figure 4C/E/G/I) and rigorous statistical modeling using a point-process GLM framework with beta-binomial analysis. The methods for quantifying phase-locking are appropriate and well-described. The high posterior probabilities provide strong evidence for increased phase modulation during unconsciousness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Laminar recordings revealed layer-specific effects: spiking and gamma power reductions were more pronounced in superficial layers (2/3) compared to deep layers (5/6), while slow-frequency power enhancement was stronger in deep layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by laminar probe data from two additional animals (Figure 5) with strong statistical evidence (p<1E-5 to p<1E-7). The layer identification method using gamma/beta power crossover is validated by prior work. These layer-specific effects provide important mechanistic insights, though the sample size is limited to two animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "During unconsciousness, there were strong increases in slow-frequency cortico-cortical phase synchronization between all cortical areas, with smaller reductions in theta/beta synchronization in some area pairs. Uniquely, frontal areas PFC and 8A showed sustained increases in alpha (7-15 Hz) phase synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by phase synchronization analysis (Figure 6) using the pairwise phase consistency (PPC) metric with appropriate statistical testing (p<0.01, cluster-based non-parametric randomization). The use of PPC is appropriate as it is unbiased by observation number. The unique alpha synchronization between frontal areas is an important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "During unconsciousness, all cortical areas showed increased slow-frequency phase synchronization with the thalamus, with smaller reductions in theta/beta ranges. Uniquely, thalamus-PFC connections showed sustained increases in alpha (7-15 Hz) phase synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by thalamo-cortical phase synchronization analysis (Figure 7) with appropriate statistical methods. The specific enhancement of alpha synchronization between thalamus and PFC provides important evidence for the proposed thalamo-cortical mechanism of unconsciousness. The bipolar re-referencing of thalamic signals is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Thalamic electrical stimulation during unconsciousness increased physiological arousal markers including muscle tone, eyeblinks to airpuffs, blood oxygen saturation, and heart rate. These effects were greater for high-current versus low-current stimulation and outlasted the stimulation period itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by physiological measurements (Figure 8C-F) with appropriate statistical testing (p<0.01, non-parametric randomization). The dose-response relationship (high vs. low current) strengthens the causal interpretation. The persistence of effects beyond stimulation offset is well-documented. However, the manuscript acknowledges that physiological changes (oxygen saturation, blood pressure) may themselves contribute to unconsciousness, creating potential confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "High-current thalamic stimulation significantly increased cortical spike rates from ~1 to ~2.5 spikes/s during unconsciousness, with effects persisting 30-90 seconds post-stimulation. In STG, stimulation restored spike rates to natural ROC levels. Low-current stimulation produced no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by spike rate analysis (Figure 9B-C) with appropriate statistical testing (p<0.01). The ZCA whitening approach to remove stimulation artifacts is well-justified, and the waveform correlation criterion (>0.99) for spike inclusion is rigorous. The dose-response relationship strengthens causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "High-current thalamic stimulation significantly reduced slow-frequency power for up to 85 seconds post-onset, decreased spike-LFP and LFP-LFP slow-frequency synchronization, and increased higher-frequency power with peaks in the alpha-beta band (13 Hz in 8A, 15 Hz in PFC) during stimulation. These alpha-beta peaks were absent post-stimulation. Low-current stimulation produced weak or absent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are supported by comprehensive spectral and synchronization analyses (Figure 9D-G and supplements) with appropriate statistical methods (p<0.01, cluster-based non-parametric randomization). The removal of stimulation artifacts (\u00b13s around onset/offset) is appropriate. The transient alpha-beta enhancement during stimulation is an important mechanistic finding. The dose-response relationship strengthens conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The authors conclude that propofol induces unconsciousness by disrupting intracortical and thalamo-cortical communication through decreased spiking and enhanced slow-frequency power/synchrony, leading to low-spiking Down-states and loss of higher-frequency coherence thought to integrate cortical information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 represent the main mechanistic conclusion, which is well-supported by the convergent evidence from multiple analyses (LFP power, spike rates, phase synchronization, layer-specific effects, and thalamic stimulation reversal). The interpretation is consistent with cited theories of consciousness. However, the authors appropriately acknowledge that other factors (oxygen saturation, blood pressure) may also contribute and cannot be fully separated from neurophysiological changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The authors propose that alpha-beta is the natural resonance frequency of the thalamo-cortical circuit, based on the observation that thalamic stimulation enhanced alpha-beta power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is explicitly labeled as a proposal/speculation by the authors. While the observation of alpha-beta enhancement during thalamic stimulation is well-supported (C68), the interpretation as a 'natural resonance frequency' is speculative and would require additional experiments (e.g., frequency-response characterization, computational modeling) to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The authors suggest their findings are likely relevant for other GABAergic anesthetics (sevoflurane, isoflurane, desflurane, barbiturates, etomidate) but not for NMDA antagonists (ketamine, nitrous oxide) which have different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are appropriately qualified as speculative regarding generalization to other GABAergic anesthetics. The distinction from NMDA antagonists is supported by citations (C76). This represents reasonable extrapolation based on shared mechanisms of action, though direct experimental validation would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors compare their findings to Redinbaugh et al., 2020, noting differences in the contribution of slow frequencies, layer-specific effects, and methodological approaches (propofol alone vs. ketamine+propofol, within-session vs. between-session comparisons, different stimulation parameters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 provide appropriate comparison to prior work (Redinbaugh et al., 2020). The authors identify key methodological differences that could explain discrepancies in findings. The justification for their stimulation parameters (C83) based on human clinical data (Schiff et al., 2007) is reasonable. This discussion appropriately contextualizes the current findings.",
+    "result_type": "MINOR"
+  }
+]

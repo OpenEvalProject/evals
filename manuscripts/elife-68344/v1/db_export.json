@@ -1,0 +1,1744 @@
+{
+  "submission": {
+    "id": "3b76aa2a-4879-4c7e-8c3e-7318c70fab3b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:01:44.015429Z",
+    "updated_at": "2025-12-03T10:01:44.015429Z"
+  },
+  "content": [
+    {
+      "id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "submission_id": "3b76aa2a-4879-4c7e-8c3e-7318c70fab3b",
+      "content_type": "manuscript",
+      "content_text": "# Increasing stimulus similarity drives nonmonotonic representational change in hippocampus\n\n## Authors\n\n- Jeffrey Wammes<sup>1</sup> ([ORCID: 0000-0002-8923-5441](https://orcid.org/0000-0002-8923-5441)) \u2020\n- Kenneth A Norman<sup>3</sup> ([ORCID: 0000-0002-5887-9682](https://orcid.org/0000-0002-5887-9682))\n- Nicholas Turk-Browne<sup>1</sup> ([ORCID: 0000-0001-7519-3001](https://orcid.org/0000-0001-7519-3001))\n\n### Affiliations\n\n1. Department of Psychology, Yale University New Haven United States\n2. Department of Psychology, Queen\u2019s University Kingston Canada\n3. Department of Psychology, Princeton University Princeton United States\n4. Princeton Neuroscience Institute, Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nStudies of hippocampal learning have obtained seemingly contradictory results, with manipulations that increase coactivation of memories sometimes leading to differentiation of these memories, but sometimes not. These results could potentially be reconciled using the nonmonotonic plasticity hypothesis, which posits that representational change (memories moving apart or together) is a U-shaped function of the coactivation of these memories during learning. Testing this hypothesis requires manipulating coactivation over a wide enough range to reveal the full U-shape. To accomplish this, we used a novel neural network image synthesis procedure to create pairs of stimuli that varied parametrically in their similarity in high-level visual regions that provide input to the hippocampus. Sequences of these pairs were shown to human participants during high-resolution fMRI. As predicted, learning changed the representations of paired images in the dentate gyrus as a U-shaped function of image similarity, with neural differentiation occurring only for moderately similar images.\n\n## Introduction\n\nHumans constantly learn new facts, encounter new events, and see and hear new things. Successfully managing this incoming information requires accommodating the new with the old, reorganizing memory as we learn from experience. How does learning dynamically shape representations in the hippocampus? Our experiences are encoded in distributed representations (Johnson et al., 2009; Polyn et al., 2005), spanning populations of neurons that are partially reused across multiple memories, leading to overlap. As we learn, the overlapping neural populations representing different memories in the hippocampus can shift, leading to either integration, where memories become more similar to one other, or differentiation, where memories become more distinct from one another for reviews, see Brunec et al., 2020; Duncan and Schlichting, 2018; Ritvo et al., 2019.\n\nWhether memories integrate or differentiate depends on whether the synapses that are common across the different memories strengthen or weaken. Traditional Hebbian learning models hold that synaptic connections strengthen when the pre-synaptic neuron repeatedly stimulates the post-synaptic neuron, causing them to fire together (Buonomano and Merzenich, 1998; Caporale and Dan, 2008; Feldman, 2009; Hebb, 1949). In other words, coactivation of neurons leads to strengthened connections between these neurons. This logic can scale up to the level of many synapses among entire populations of neurons, comprising distributed representations. A greater degree of coactivation among representations will strengthen shared connections and lead to integration. Consistent with this view, arbitrary pairs of objects integrate in the hippocampus following repeated temporal or spatial co-occurrence (e.g. Deuker et al., 2016; Schapiro et al., 2012). Moreover, new information that builds a link between two previously disconnected events can lead the representations of the events to integrate (Collin et al., 2015; Milivojevic et al., 2015; Tompary and Davachi, 2017). In other cases, however, coactivation produces the exact opposite outcome \u2014 differentiation. For example, hippocampal representations of two faces with similar associations (Favila et al., 2016) and of two navigation events with similar routes (Chanales et al., 2017) differentiate as a result of learning. Further complicating matters, some studies have found that the same experimental conditions can lead to integration in some subfields of the hippocampus and differentiation in other subfields (Dimsdale-Zucker et al., 2018; Molitor et al., 2021; Schlichting et al., 2015).\n\nSuch findings challenge Hebbian learning as a complete or parsimonious account of hippocampal plasticity. They suggest a more complex relationship between coactivation and representational change than the linear positive relationship predicted by classic Hebbian learning. We recently argued (Ritvo et al., 2019) that this complex pattern of data could potentially be explained by the nonmonotonic plasticity hypothesis (NMPH; Detre et al., 2013; Hulbert and Norman, 2015; Newman and Norman, 2010; Ritvo et al., 2019), which posits a \u2018U-shaped\u2019 pattern of representational change as a function of the degree to which two memories coactivate (Figure 1). According to the NMPH, low levels of coactivation between two memories will lead to no change in their overlap; high levels of coactivation will strengthen mutual connections and lead to integration; and moderate levels of coactivation (where one memory is strongly active and the unique parts of the other memory are only moderately active) will weaken mutual connections and lead to differentiation, thereby reducing competition between the memories for later retrieval attempts (Hulbert and Norman, 2015; Ritvo et al., 2019; Wimber et al., 2015). The NMPH has been put forward as a learning mechanism that applies broadly across tasks in which memories compete, whether they have been linked based on incidental co-occurrence in time or through more intentional associative learning (Ritvo et al., 2019). The NMPH can explain findings of differentiation in diverse paradigms (e.g. linking to a shared associate: Chanales et al., 2017; Favila et al., 2016; Molitor et al., 2021; Schlichting et al., 2015; retrieval practice: Hulbert and Norman, 2015; statistical learning: Kim et al., 2017) by positing that these paradigms induced moderate coactivation of competing memories. Likewise, relying on the same parameter of coactivation, the NMPH can explain seemingly contradictory findings showing that shared associates (Collin et al., 2015; Milivojevic et al., 2015; Molitor et al., 2021; Schlichting et al., 2015) and co-occurring items (Schapiro et al., 2012; Schapiro et al., 2016) can lead to integration by positing that \u2014 in these cases \u2014 the paradigms induced strong coactivation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig1-v1.jpg)\n\n**Figure 1.:** Inset (bottom left) depicts the hypothesized nonmonotonic relationship between coactivation of memories and representational change from pre- to post-learning in the hippocampus. Low coactivation leads to no representational change, moderate coactivation leads to differentiation, and high coactivation leads to integration. Network diagrams show activity patterns in high-level visual cortex and the hippocampus evoked by two stimuli (A and B) with a moderate level of visual similarity that are presented as a \u2018pair\u2019 in a statistical learning procedure (such that B is reliably presented after A). Note that the hippocampus is hierarchically organized into a layer of perceptual conjunction units that respond to conjunctions of visual features and a layer of context units that respond to other features of the experimental context (McKenzie et al., 2014). Before statistical learning (left-hand column), the hippocampal representations of A and B share a context unit (because the items appeared in a highly similar experimental context) but do not share any perceptual conjunction units. The middle column (top) diagram shows network activity during statistical learning, when the B item is presented immediately following an A item; the key consequence of this sequencing is that there is residual activation of A\u2019s representation in visual cortex when B is presented. The colored arrows are meant to indicate different sources of input converging on the unique part of each item\u2019s hippocampal representation (in the perceptual conjunction layer) when the other item is presented: green = perceptual input from cortex due to shared features (this is proportional to the overlap in the visual cortex representations of these items); orange = recurrent input within the hippocampus; purple = input from residual activation of the unique features of the previously-presented item. The purple input is what is different between the pre-statistical-learning phase (where A is not reliably presented before B) and the statistical learning phase (where A is reliably presented before B). In this example, the orange and green sources of input are not (on their own) sufficient to activate the other item\u2019s hippocampal representation during the pre-statistical-learning phase, but the combination of all three sources of input is enough to moderately activate A\u2019s hippocampal representation when B is presented during the statistical learning phase. The middle column (bottom) diagram shows the learning that will occur as a result of this moderate activation, according to the NMPH: The connection between the (moderately activated) item-A hippocampal unit and the (strongly activated) hippocampal context unit is weakened (note that this is not the only learning predicted by the NMPH in this scenario, but it is the most relevant learning and hence is highlighted in the diagram). As a result of this weakening, when item A is presented after statistical learning (right-hand column, top), it does not activate the hippocampal context unit, but item B still does (right-hand column, bottom), resulting in an overall decrease in the overlap of the hippocampal representations of A and B from pre-to-post learning.\n\nImportantly, although the NMPH is compatible with findings of both differentiation and integration across several paradigms with diverse task demands, the explanations above are post\u00a0hoc and do not provide a principled test of the NMPH\u2019s core claim that there is a continuous, U-shaped function relating the level of coactivation to representational change. If there were a way of knowing where on the x-axis of this function an experimental condition was located (note that the U-shaped curve in Figure 1 has no units), we could make a priori predictions about the learning that should take place, but practically speaking this is impossible: A wide range of neural findings on metaplasticity (summarized by Bear, 2003) suggest that the transition point on the U-shaped curve between synaptic weakening (leading to differentiation) and synaptic strengthening (leading to integration) can be shifted based on experience. In light of this constraint, Ritvo et al., 2019 argue that the key to robustly testing the NMPH account of representational change is to obtain samples from the full x-axis of the U-shaped curve and to look for a graded transition where differentiation starts to emerge at higher levels of memory coactivation and then disappears for even higher levels of memory coactivation.\n\nNo existing study has demonstrated the full U-shaped pattern for representational change; that is what we set out to do here, using a visual statistical learning paradigm \u2014 specifically, we brought about coactivation using temporal co-occurrence between paired items, and we manipulated the degree of coactivation by varying the visual similarity of the items in a pair. Figure 1 illustrates the NMPH\u2019s predictions regarding how pairing two items (A and B) in a visual statistical learning paradigm (such that B reliably follows A) can affect the similarity of the hippocampal representations of A and B. The figure depicts a situation where items A and B have moderate visual similarity, and statistical learning leads to differentiation of their hippocampal representations (because item A\u2019s hippocampal representation is moderately activated during the presentation of item B). Crucially, the figure illustrates that there are three factors that influence how strongly the hippocampal representation of item A coactivates with the hippocampal representation of item B during statistical learning: (1) overlap in the high-level visual cortex representations of items A and B; (2) recurrent input from overlapping features within the hippocampus; and (3) residual activation of item A\u2019s representation in visual cortex (because item A was presented immediately before item B). Thus, if we want to parametrically vary the coactivation of the hippocampal representations (to span the full axis of Figure 1 and test for a full \u2018U\u2019 shape), we need to vary at least one of these three factors. In our study, we chose to focus on the first factor (overlap in visual cortex). Specifically, by controlling the visual similarity of paired items (Molitor et al., 2021), we sought to manipulate overlap in visual cortex and (through this) parametrically vary the coactivation of memories in the hippocampus.\n\nTo accomplish this goal, we developed a novel approach for synthesizing image pairs using deep neural network (DNN) models of vision. These models provide a link from pictures to rich quantitative descriptions of visual features, which in turn approximate some key principles of how the visual system is organized (e.g. Cichy et al., 2016; Op de Beeck et al., 2008; G\u00fc\u00e7l\u00fc and van Gerven, 2015; Khaligh-Razavi and Kriegeskorte, 2014; Kriegeskorte, 2009; Kriegeskorte, 2015; Kubilius et al., 2016; Luo et al., 2016; Zeiler and Fergus, 2014). Most critically, later DNN layers correspond most closely to higher\u00a0order, object-selective visual areas (Eickenberg et al., 2017; G\u00fc\u00e7l\u00fc and van Gerven, 2015; Jozwik et al., 2019; Khaligh-Razavi and Kriegeskorte, 2014), and when neural networks are optimized to match human performance, their higher layers predict neural responses in higher-order visual cortex (Cadieu et al., 2014; Yamins et al., 2014). We reasoned that synthesizing pairs of stimuli that parametrically varied in their feature overlap in the upper layers of a DNN (Szegedy et al., 2015) would also parametrically vary their neural overlap in the high-level visual regions that provide input to the hippocampus.\n\nImage pairs spanning the range of possible representational overlap values were synthesized according to the procedure shown in Figure 2A and B and embedded in a statistical learning paradigm (Schapiro et al., 2012). During fMRI, participants were given a pre-learning templating run (where the images were presented in a random order, allowing us to record the neural activity evoked by each image separately), followed by six statistical learning runs (where the images where presented in a structured order, such that the first image in a pair was always followed by the second image), followed by a post-learning templating run (Figure 2C). We hypothesized that manipulating the visual similarity of the paired images would allow us to span the x-axis of Figure 1 and reveal a full U-shaped curve going from no change to differentiation to integration.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig2-v1.jpg)\n\n**Figure 2.:** (A) Our image synthesis algorithm starts with two visual noise arrays that are updated through many iterations (only three are depicted here: i, ii, and iii), until the feature activations from selected neural network layers (shown in yellow) achieve an intended Pearson correlation (r) value. (B) The result of our image synthesis algorithm was eight image pairs, that ranged in similarity from completely unrelated (similarity level 1, intended r among higher-order features = 0) to almost identical (similarity level 8, intended r = 1.00). (C) An fMRI experiment was conducted with these images to measure neural similarity and representation change. Participants performed a monitoring task in which they viewed a sequence of images, one at a time, and identified infrequent (10% of trials) gray squares in the image. Unbeknownst to participants, the sequence of images in structured runs contained the pairs (i.e. the first pairmate was always followed by the second pairmate); the images in templating runs were pseudo-randomly ordered with no pairs, making it possible to record the neural activity evoked by each image separately. (D) A behavioral experiment was conducted to verify that these similarity levels were psychologically meaningful. Participants performed an arrangement task in which they dragged and dropped images in a workspace until the most visually similar images were closest together. From the final arrangements, pairwise Euclidean distances were calculated as a measure of perceived similarity. (E) Correlation between model similarity level and distance between images (in pixels) in the arrangement task. On the left, each point represents a pair of images, with distances averaged across participants. In the center, each trendline represents the relationship between similarity level and an individual participants\u2019 distances. The rightmost plot shows the magnitude of the correlation for each participant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) In the endpoint selection phase, images were generated that maximally express each of the feature channels in a later layer of a deep neural network. These feature activations were then correlated across images and pairs of endpoint channels with the lowest possible correlation were selected. Gray circles represent feature channels and closer proximity denotes higher correlations. Colored circles highlight examples of distant, low-correlation channel pairs. (B) In the image initialization phase, paired channels served as endpoints for a weighted optimization procedure. For each endpoint pair, eight new pairs of images were created with the intention that the correlation among pairmates would span a correlation of 0 (top) to 1 (bottom) across the eight pairs. The image pairs began as simple visual noise arrays. Each image pairmate had its own endpoint, which was always maximally optimized. The other image pairmate\u2019s endpoint was weighted according to the intended correlation. The pixels in the visual noise arrays were iteratively updated to meet this weighted goal, creating intermediate images which proceeded to the next phase. (C) In the correlation tuning phase, the feature activations for the two intermediate images of a pair were extracted from the 12 layers of interest. The correlation between these activations was computed at each iteration. The absolute difference between the intended correlation and the current iteration\u2019s correlation was used to iteratively update the images to minimize this difference. For a single set of endpoints, image pairs were made at various intended correlations (eight shown here).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** To ensure that our model-based synthesis approach was effective in constraining the shared features among image pairs, we fed the final image pairs (Figure 1B) back through the neural network that generated them (GoogleNet/Inception; Szegedy et al., 2015; middle), as well as through an additional architecture (VGG19; Simonyan and Zisserman, 2014; right) to ensure that the similarity space produced was not dependent on the characteristics of one specific model. We extracted features from these networks for each of the generated images, and computed representational similarity matrices (RSMs) at the targeted layers to ensure that they reflected the intended similarity space. (A) Intended (left) and actual (center) correlations (r) of features across paired images as a function of similarity level and layer of the Inception model. We aimed for and achieved uniform correlations across pairs in lower and middle layers (2D0-4C), and linearly increasing correlations across pairs in higher layers (4D-5B, see panel B). Also shown are the actual feature correlations across layers of the alternate VGG19 model (right). In this alternate architecture (VGG19), the three highest model layers (B5P-FC2) mirrored the intended similarity for the highest model layers in the generating network (r(62) = 0.861, 0.849, 0.856 for the three highest model layers). The four low/middle layers (B1P-B4P) did as well (r(62) = 0.592, 0.542, 0.396, 0.455 for the four low/middle layers), but to a lesser extent (Steiger test ps < .001), and with lower variability across pairs (SD = 0.050, 0.017, 0.025, 0.052 for the four low/middle layers; for comparison, for the three highest layers: 0.116, 0.164, 0.169). (B) Comparison of feature correlations in each of the targeted higher layers of Inception (4D-5B). In the four highest layers (4D-5B), across all eight pairs of each of the eight endpoint axes (64 pairs total), the intended and actual feature correlations were strongly associated (r(62) = 0.970, 0.983, 0.977, 0.985, respectively, for the four highest layers). Considering each endpoint axis separately, the minimum feature correlations across the eight pairs of that axis remained high (r(6) = 0.945, 0.965, 0.966, 0.967, respectively, for the four highest layers). In the lower and middle layers (2D0-4C), feature correlations did not vary across pairs. This cannot be quantified by relating intended and actual feature correlations, given the lack of variance in intended feature correlations across pairs. Instead, the average differences between any two pairs in these eight lower/middle layers were small (M = 0.012, 0.011, 0.012, 0.041, 0.025, 0.045, 0.043, 0.053 for the eight lower/middle layers; for comparison, for the four highest layers M = 0.14, 0.19, 0.22, 0.23). The standard deviations of the feature correlations across pairs in these layers were also low (SD = 0.010, 0.010, 0.011, 0.035, 0.022, 0.039, 0.039, 0.048 for the eight lower/middle layers; for comparison, for the highest four layers SD = 0.199, 0.244, 0.259, 0.243).\n\nWe and others have previously hypothesized that nonmonotonic plasticity applies widely throughout the brain (Ritvo et al., 2019), including sensory regions (e.g. Bear, 2003). In this study, we focused on the hippocampus due to its well-established role in supporting learning effects over relatively short timescales (e.g. Favila et al., 2016; Kim et al., 2017; Schapiro et al., 2012). Importantly, we hypothesized that, even if nonmonotonic plasticity occurs throughout the entire hippocampus, it might be easier to trace out the full predicted U-shape in some hippocampal subfields than in others. As discussed above, our hypothesis is that representational change is determined by the level of coactivation \u2013 detecting the U-shape requires sweeping across the full range of coactivation values, and it is particularly important to sample from the low-to-moderate range of coactivation values associated with the differentiation \u2018dip\u2019 in the U-shaped curve (i.e. the leftmost side of the inset in Figure 1). Prior work has shown that there is extensive variation in overall activity (sparsity) levels across hippocampal subfields, with CA2/3 and DG showing much sparser codes than CA1 (Barnes et al., 1990; Duncan and Schlichting, 2018). We hypothesized that regions with sparser levels of overall activity (DG, CA2/3) would show lower overall levels of coactivation and thus do a better job of sampling this differentiation dip, leading to a more robust estimate of the U-shape, compared to regions like CA1 that are less sparse and thus should show higher levels of coactivation (Ritvo et al., 2019). Consistent with this idea, human fMRI studies have found that CA1 is relatively biased toward integration and CA2/3/DG are relatively biased toward differentiation (Dimsdale-Zucker et al., 2018; Kim et al., 2017; Molitor et al., 2021). Zooming in on the regions that have shown differentiation in human fMRI (CA2/3/DG), we hypothesized that the U-shape would be most visible in DG, for two reasons: First, DG shows sparser activity than CA3 (Barnes et al., 1990; GoodSmith et al., 2017; West et al., 1991) and thus will do a better job of sampling the left side of the coactivation curve. Second, CA3 is known to show strong attractor dynamics (\u2018pattern completion\u2019; Guzowski et al., 2004; McNaughton and Morris, 1987; Rolls and Treves, 1998) that might make it difficult to observe moderate levels of coactivation. For example, rodent studies have demonstrated that, rather than coactivating representations of different locations, CA3 patterns tend to sharply flip between one pattern and the other (e.g. Leutgeb et al., 2007; Vazdarjanova and Guzowski, 2004). As discussed below, our hypothesis about DG was borne out in the data: Using synthesized image pairs varying in similarity, we observed the full U-shape (transitioning into and out of differentiation, as a function of similarity) in DG, thereby providing direct evidence that hippocampal plasticity is nonmonotonic.\n\n## Results\n\n### Stimulus synthesis\n\n#### Model validation\n\nBefore looking at the effects of statistical learning on hippocampal representations, we wanted to verify that our model-based synthesis approach was effective in creating graded levels of feature similarity in the targeted layers of the network (corresponding to high-level visual cortex): Specifically, our goal was to synthesize images that varied parametrically in their similarity in higher layers while not differing systematically in lower and middle layers of the network. To assess whether we were successful in meeting this goal, we fed the final image pairs (Figure 2B) back through the neural network that generated them (GoogLeNet/Inception; Szegedy et al., 2015), and computed the actual feature correlations at the targeted layers. We found that the intended and actual similarity levels of the images (in terms of model features) showed a close correspondence (Figure 2\u2014figure supplement 2): In the highest four layers (4D-5B), the intended and actual feature correlations were strongly associated (r(62) = .970, .983, .977, .985, respectively). In the lower and middle layers, feature correlations did not vary across pairs, as intended.\n\n#### Behavioral validation\n\nBecause deep neural networks can be influenced by visual features to which humans are insensitive (Nguyen et al., 2015), we also sought to validate that the differences in similarity levels across image pairs were perceptually meaningful to human observers. We employed a behavioral task in which participants (n = 30) arranged sets of images (via dragging and dropping in a 2-D workspace; Figure 2D), with the instruction to place images that are visually similar close together and images that are visually dissimilar far apart (Kriegeskorte and Mur, 2012). Participants completed at least 10 arrangement trials and the distances for each synthesized image pair were averaged across these trials. When further averaged across participants, perceptual distance was strongly negatively associated with the intended model similarity (r(62) = \u22120.813, p < 0.0001; Figure 2E). In other words, image pairs at the highest similarity levels were placed closer to one another. In fact, every individual participant\u2019s correlation was negative (mean r = \u22120.552, 95% CI = [\u22120.593\u20130.512]).\n\n#### Neural validation\n\nBecause we were synthesizing image pairs based on features from the highest model layers, we hypothesized that model similarity would be associated with representational similarity in high-level visual cortical regions such as lateral occipital (LO) and inferior temporal (IT) cortices. We also explored ventral temporal regions parahippocampal cortex (PHC) and fusiform gyrus (FG), and early visual regions V1 and V2. Based on separate viewing of the 16 synthesized images during the initial templating run (prior to statistical learning), we calculated an image-specific pattern of BOLD activity across voxels in each anatomical ROI. We then correlated these patterns across image pairs as a measure of neural similarity (Figure 3A). Model similarity level was positively associated with neural similarity in LO (mean r = 0.182, 95% CI = [0.083 0.279], randomization p = 0.007) and PHC (mean r = 0.125, 95% CI = [0.022 0.228], p = 0.029). No other region showed a significant positive relationship to model similarity (V2: mean r = \u22120.029, 95% CI = [\u22120.137 0.077], p = .674; IT: r = .070, 95% CI = [\u22120.057 0.197], p = 0.145; FG: r = 0.056, 95% CI = [\u22120.055 0.170], p = 0.171), including regions of the medial temporal lobe (perirhinal cortex, and entorhinal cortex; Figure 3\u2014figure supplement 2); V1 showed a negative relationship (mean r = \u22120.112, 95% CI = [\u22120.224\u20130.003], p = .038). The correspondence between the similarity of image pairs in the model and in LO and PHC is consistent with our use of the highest layers of a neural network model for visual object recognition in image synthesis. The fact that this correspondence was observed in LO and PHC but not in earlier visual areas further validates that similarity was based on high-level features.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig3-v1.jpg)\n\n**Figure 3.:** (A) Correlation of voxel activity patterns evoked by pairs of stimuli (before statistical learning) in different brain regions of interest, as a function of model similarity level (i.e. how similar the internal representations of stimuli were in the targeted layers of the model). Neural similarity was reliably positively associated with model similarity level only in LO and PHC. Shaded areas depict bootstrap resampled 95% confidence intervals at each model similarity level. (B) Searchlight analysis. Brain images depict coronal slices viewed from a posterior vantage point. Clusters in blue survived correction for family-wise error (FWE) at p\u00a0<\u00a00.05 using the null distribution of maximum cluster mass. L = left hemisphere, R = right hemisphere, A = anterior, P = posterior.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Correlation of voxel activity patterns evoked by pairs of stimuli (before statistical learning) in different brain regions of interest, as a function of model similarity level (i.e. how similar the internal representations of stimuli were in the targeted layers of the model). Shaded areas depict bootstrap resampled 95% confidence intervals at each model similarity level. The pattern of results was identical to that in the full sample: model similarity level was positively associated with neural similarity in LO (mean r = 0.163, 95% CI = [0.056 0.270], randomization p = 0.024) and PHC (mean r = 0.127, 95% CI = [0.016 0.239], p = 0.031). No other region showed a significant positive relationship to model similarity (V2: mean r = \u22120.046, 95% CI = [\u22120.163 0.069], p = 0.720; IT: r = 0.090, 95% CI = [\u22120.049 0.226], p = 0.095; FG: r = 0.058, 95% CI = [\u22120.059 0.179], p = 0.195); V1 showed a negative relationship (mean r = \u22120.141, 95% CI = [\u22120.261 \u22120.025], p = 0.020). We also repeated the searchlight analysis in the reduced sample size, which yielded a very similar statistical map to the full sample (r = 0.928), though the clusters reported for the full sample did not survive correction.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Correlation of voxel activity patterns evoked by pairs of stimuli (before statistical learning) in different brain regions of interest, as a function of model similarity level (i.e. how similar the internal representations of stimuli were in the targeted layers of the model), in parahippocampal cortex (PHC; Duplicate figure and analysis from Figure 3A), perirhinal cortex (PRC) and entorhinal cortex (EC). Of these three regions, model similarity level was positively associated with neural similarity only in PHC (mean r = 0.126, 95% CI = [0.024 0.229], p = 0.028), not in PRC (r = 0.029, 95% CI = [\u22120.096 0.149], p = 0.339), or EC (r = 0.076, 95% CI = [\u22120.038 0.189], p = 0.154). Shaded area depicts bootstrap resampled 95% CIs.\n\nIt is unlikely that any given model layer(s) will map perfectly and exclusively to a single anatomical region. Accordingly, although we targeted higher-order visual cortex (e.g. LO, IT), the layers we manipulated may have influenced representations in other regions, or alternatively, a subset of the voxels within a given anatomical ROI. To explore this possibility, we performed a searchlight analysis (Figure 3B) testing where in the brain neural similarity was positively associated with model similarity. This revealed two large clusters of voxels (p < 0.05 corrected): left ventral and dorsal LO extending into posterior FG (3722 voxels; peak t-value = 5.60; MNI coordinates of peak = \u221237.5,\u201372.0, \u221210.5; coordinates of center = \u221226.7,\u201371.7, 17.4) and right ventral and dorsal LO extending into occipital pole (3107 voxels; peak t-value = 4.82; coordinates of peak = 33.0,\u00a0\u201388.5, 10.5; coordinates of center = 30.9,\u00a0\u201386.5, 10.6). When this analysis was repeated with a reduced sample of the 36 participants who were also included in the subsequent representational change analyses, these clusters no longer emerged as statistically significant at a corrected threshold.\n\n### Representational change\n\n#### Hippocampus\n\nWe hypothesized that learning-related representational change in the hippocampus, specifically in DG, would follow a nonmonotonic curve. That is, we predicted a cubic function wherein low levels of model similarity would yield no neural change, moderate levels of model similarity would dip toward neural differentiation, and high levels of model similarity would climb back toward neural integration (Figure 1 inset). We predicted that this nonmonotonic pattern would be observed in the DG, and possibly CA2/3 subfields, given the predisposition of these subfields (especially DG) to sparse representations and pattern separation.\n\nTo test this hypothesis, we extracted spatial patterns of voxel activity associated with each image from separate runs that occurred before and after statistical learning (pre- and post-learning templating runs, respectively). In the templating runs, images were presented individually in a completely random order to evaluate how their representations were changed by learning. The response to each image was estimated in every voxel using a GLM. The voxels from each individual\u2019s hippocampal subfield ROIs were extracted to form a pattern of activity for each image and subfield. We then calculated the pattern similarity between images in a pair using Pearson correlation, both before and after learning, and subtracted before-learning pattern similarity from after-learning pattern similarity to index the direction and amount of representational change. A separate representational change score was computed for each of the eight model similarity levels.\n\nTo test for the U-shaped curve predicted by the NMPH, we fit a theory-constrained cubic model to the series of representational change scores across model similarity levels (Figure 4A). Specifically, the leading coefficient was forced to be positive to ensure a dip, followed by a positive inflection \u2014 the characteristic shape of the NMPH (Figure 1 inset). The predictions of this theory-constrained cubic model were reliably associated with representational change in DG (r = 0.134, 95% CI = [0.007 0.267], randomization p = 0.022). The fit was not reliable in CA2/3 (r = 0.082, 95% CI = [\u22120.027 0.191], p = 0.13), CA1 (r = 0.116, 95% CI = [\u22120.001 0.231], p = 0.10), or the hippocampus as a whole (r = 0.084, 95% CI = [\u22120.018 0.186], p = 0.15). Model fit was also not reliable in other regions of the medial temporal lobe (PHC, perirhinal cortex, and entorhinal cortex; Figure 4\u2014figure supplement 1). Interestingly, in an exploratory analysis, we found that the degree of model fit in DG was predicted by the extent to which visual representations in PRC tracked model similarity (see Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig4-v1.jpg)\n\n**Figure 4.:** (A) Difference in correlation of voxel activity patterns between paired images after minus before learning at each model similarity level, in the whole hippocampus (HC) and in hippocampal subfields CA1, CA2/3 and DG. Inset image shows an individual subject mask for the ROI in question, overlaid on their T2-weighted anatomical image. The nonmonotonic plasticity hypothesis reliably predicted representational change in DG. Shaded area depicts bootstrap resampled 95% CIs. (B) Searchlight analysis. Brain images depict coronal slices viewed from an anterior vantage point. Clusters in red survived correction for family-wise error (FWE) at p\u00a0<\u00a00.05 using the null distribution of maximum cluster mass. L = left hemisphere, R = right hemisphere, A = anterior, P = posterior.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Difference in correlation of voxel activity patterns between paired images after minus before learning at each model similarity level. Model fit was not reliable in PHC (r = 0.076, 95% CI = [\u22120.055 0.209], p = 0.18), PRC (r = \u22120.106, 95% CI = [\u22120.236 0.023], p = 0.79), or EC (r = \u22120.066, 95% CI = [\u22120.161 0.026], p = 0.72). Shaded area depicts bootstrap resampled 95% CIs.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68344/elife-68344-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) For each participant, we extracted the statistic for the correlation between model similarity level and representational similarity in visual regions of interest (Linear Effect), as well as the statistic for the correlation between observed representational change and predicted representational change based on the nonmonotonic model (Nonmonotonic Effect). We then probed for cortical regions where the Linear Effect was reliably associated with our observed Nonmonotonic Effect in DG. Based on bootstrap resampling participants 50000 times, the association was reliable only in PRC (mean r = 0.348, 95% CI = [0.026 0.629]). No other regions were reliably associated with the Nonmonotonic Effect in DG (V1: mean r = 0.085, 95% CI = [\u22120.152 0.317]; V2: mean r = 0.099, 95% CI = [\u22120.140 0.345]; LOC: mean r = 0.036, 95% CI = [\u22120.291 0.399]; Fus: mean r = 0.209, 95% CI = [\u22120.072 0.493]; PHC: mean r = 0.218, 95% CI = [\u22120.080 0.509]; IT: mean r = 0.150, 95% CI = [\u22120.162 0.458]; EC: mean r = 0.169, 95% CI = [\u22120.151 0.470]). (B) Scatterplot depicting the association between the Linear Effect in PRC and the Nonmonotonic Effect in DG. The dotted vertical gray line depicts the median Linear Effect in PRC (0.065). (C) To visualize the difference, plotted here is the difference in correlation of voxel activity patterns between paired images after minus before learning at each model similarity level in DG. The left and right plots depict participants whose Linear Effect in PRC was lower and higher than the median, respectively. Shaded area depicts bootstrap resampled 95% CIs.\n\nWe followed up on the observed effect in DG and determined that there was reliable differentiation at model similarity levels 5 ($\u0394$r = \u22120.093, 95% CI = [\u22120.177 \u22120.007], p < 0.0001) and 6 ($\u0394$r = \u22120.090, 95% CI = [\u22120.179 \u22120.004], p = 0.016). This trough in the center of the U-shaped curve was also reliably lower than the peaks preceding it at level 4 ($\u0394$r = 0.129, 95% CI = [0.019 0.243], p = 0.015) and following it at level 8 ($\u0394$r = 0.150, 95% CI = [0.025 .0271], p = 0.005). The curve showed a trend toward positive representational change, suggestive of integration, for model similarity level 8 ($\u0394$r = 0.057, 95% CI = [\u22120.034 0.147], p = 0.078).\n\n#### Whole-brain searchlight\n\nTo determine whether nonmonotonic learning effects were specific to the hippocampus, we ran an exploratory searchlight analysis in which we repeated the above cubic model-fitting analysis over the whole brain (Figure 4B). This analysis revealed two reliable clusters (p < 0.05 corrected): right hippocampus extending into PHC and FG (832 voxels; peak t-value = 4.97; MNI coordinates of peak = 37.5,\u20137.5, \u221215.0; coordinates of center = 32.8,\u201318.7, \u221217.1) and anterior cingulate, extending into medial prefrontal cortex (1604 voxels; peak t-value = 5.43; coordinates of peak = \u22127.5, 28.5, 21.0; coordinates of center = \u22125.0, 28.5, 10.2).\n\n## Discussion\n\nWe set out to determine how learning shapes representations in the hippocampus and found that the degree of overlap in visual features determined the nature of representational change in DG. The pattern of results was U-shaped: with low or high overlap, object representations did not reliably change with respect to one another, whereas with moderate overlap, they pushed apart from one another following learning. This is consistent with the predictions of the NMPH (Ritvo et al., 2019) and related theories (e.g. Bienenstock et al., 1982). Although previous studies have reported evidence consistent with the NMPH (e.g. manipulations that boost coactivation of hippocampal representations lead to differentiation; Chanales et al., 2017; Favila et al., 2016; Kim et al., 2017; Schlichting et al., 2015), these studies generally compared only two or three conditions and their results can also be explained by competing hypotheses (e.g. a monotonic increase in differentiation with increasing shared activity). Crucially, the present study is the first to span coactivation continuously in order to reveal the full U-shape predicted by the NMPH, whereby differentiation emerges as coactivation grows from low to moderate and dissipates as coactivation continues from moderate to high.\n\nTo measure the impact of the degree of coactivation across a broad range of possible values, we developed a novel method of synthesizing experimental image pairs using DNN models. The intent of this approach was to precisely control the overlap among visual features at one or more layers of the model. In this case, we targeted higher layers of the model to indirectly control representational similarity in higher-order visual regions that provide input to the hippocampus. We found that the imposed visual feature relationships between images influenced human similarity judgments and were associated with parametric changes in neural similarity in higher-order visual cortex (i.e. LO, PHC). This is the first demonstration of the efficacy of stimulus synthesis in manipulating high-level representational similarity in targeted brain regions in humans. These results resonate with recent advances in stimulus synthesis designed to target individual neurons in primates (Bashivan et al., 2019; Ponce et al., 2019). Although fMRI does not allow for targeting of individual neurons, our findings show that it is feasible to use this method to target distribute representations in different visual cortical regions.\n\nOur approach of manipulating the overlap of visual inputs to the hippocampus, rather than manipulating hippocampal codes directly, was a practical one, based on the fact that we have much better computational models of visual coding than hippocampal coding. Numerous studies have shown that, while hippocampal neurons are indeed \u2018downstream\u2019 from visual cortex, they additionally encode complex information from multiple sensory modalities (Lavenex and Amaral, 2000), as well as information about reward (Wimmer and Shohamy, 2012), social relevance (Olson et al., 2007), context (Turk-Browne et al., 2012), and time (Hsieh et al., 2014; Schapiro et al., 2012), to name a few. So, although we controlled visual inputs to the hippocampus, there were many additional non-visual inputs that were free to vary and could play a role in determining the overall relational structure of the representational space. Our work here demonstrates that controlling the visual features alone was sufficient to elicit non-monotonic learning effects, raising the possibility that controlling additional dimensions might yield greater differentiation (or integration). Future work could explore combining models of vision with hippocampal models and attempt to directly target hippocampal representations with image synthesis.\n\nIn generating our experimental stimuli, we deliberately avoided the semantic or conceptual information that comes with meaningful real-world stimuli. This choice was made for several reasons. First, it is highly unlikely that the feature correspondences of even a curated set of real-world stimuli could arrange themselves in a linearly increasing fashion in a targeted model layer, which was a requirement to test our hypotheses. Second, there are known top-down influences on visual representations (Gilbert and Li, 2013), including the integration of conceptual information (Martin et al., 2018), which would have undermined our intended visual similarity structure. Last, meaningless pictures and shapes are the most commonly used stimuli when studying visual statistical learning (e.g. Kirkham et al., 2002; Luo and Zhao, 2018; Schapiro et al., 2012; Turk-Browne et al., 2005), in part to avoid contamination from pre-existing stimulus relationships. Also, although our image pairs were not nameable objects per se, the DNN used to generate them was trained on real-world images (Deng et al., 2009), meaning that they were composed from real object features. Nevertheless, the question remains whether our findings extend to meaningful real-world stimuli. Prior work has shown hippocampal differentiation in experimental conditions involving faces and scenes (Favila et al., 2016; Kim et al., 2014; Kim et al., 2017) as well as complex navigation events (Chanales et al., 2017). With this, and assuming one could find a way to impose precise differences in visual overlap as we have here, it seems likely that these effects would generalize. Future work may be able to address this issue more directly using recently developed generative methods (Son et al., 2020) or cleverly designed stimuli that capture both conceptual and perceptual similarity (Martin et al., 2018).\n\nImportantly, our study allowed us to examine representational change in specific hippocampal subfields. We found that the differentiation \u2018dip\u2019 (creating the U shape) was reliable in DG. This fits with prior studies that found differentiation in a combined CA2/3/DG ROI (Dimsdale-Zucker et al., 2018; Kim et al., 2017; Molitor et al., 2021), and greater sparsity and pattern separation in DG in particular (Berron et al., 2016; GoodSmith et al., 2017; Leutgeb et al., 2007), although note that the U-shaped pattern was trending but not significant in CA2/3 in our study. The clearer effects in DG may suggest that sparse coding (and the resulting low activation levels) is necessary to traverse the full spectrum of coactivation from low to moderate to high that can reveal nonmonotonic changes in representational similarity; regions with less sparsity (and higher baseline activation levels) may restrict coactivation to the moderate to high range, resulting in a bias toward integration and monotonic increases in representational similarity. Indeed, we had expected that CA1 might show integration effects due to its higher overall levels of activity (Barnes et al., 1990), consistent with prior studies emphasizing a role for CA1 in memory integration (Brunec et al., 2020; Dimsdale-Zucker et al., 2018; Duncan and Schlichting, 2018; Molitor et al., 2021; Schlichting et al., 2014). One speculative possibility is that the hippocampus is affected by feature overlap in earlier stages of visual cortex in addition to later stages (e.g. Huffman and Stark, 2017). Our paired stimuli were constructed to have high overlap at the top of the visual hierarchy but low overlap earlier on in the hierarchy; it is possible that allowing stimuli to have higher overlap throughout the visual hierarchy would lead to even greater coactivation in the hippocampus, resulting in integration.\n\nAlthough we focused above on differences in sparsity when motivating our predictions about subfield-specific learning effects, there are numerous other factors besides sparsity that could affect coactivation and (through this) modulate learning. For example, the degree of coactivation during statistical learning will be affected by the amount of residual activity of the A item during the B item\u2019s presentation in the statistical learning phase. In Figure 1, this residual activity is driven by sustained firing in cortex, but this could also be driven by sustained firing in hippocampus; subfields might differ in the degree to which activation of stimulus information is sustained over time (see, e.g. the literature on hippocampal time cells: Eichenbaum, 2014; Howard and Eichenbaum, 2013), and activation could be influenced by differences in the strength of attractor dynamics within subfields (e.g. Leutgeb et al., 2007; Neunuebel and Knierim, 2014). Also, in Figure 1, the learning responsible for differentiation was shown as happening between \u2018perceptual conjunction\u2019 neurons and \u2018context\u2019 neurons in the hippocampus. Subfields may vary in how strongly these item and context features are represented, in the stability/drift of the context representations (DuBrow et al., 2017), and in the interconnectivity between item and context features (Witter et al., 2000); it is also likely that some of the relevant plasticity between item and context features is happening across, in addition to within, subfields (Hasselmo and Eichenbaum, 2005). For these reasons, exploring the predictions of the NMPH in the context of biologically detailed computational models of the hippocampus (e.g. Frank et al., 2020; Hasselmo and Wyble, 1997; Schapiro et al., 2017) will help to sharpen predictions about what kinds of learning should occur in different parts of the hippocampus.\n\nAlthough our results are broadly consistent with prior findings that increasing the coactivation of memories can lead to differentiation (Chanales et al., 2017; Favila et al., 2016; Kim et al., 2017; Schlichting et al., 2015), they are notably inconsistent with results from Schapiro et al., 2012, who reported memory integration for arbitrarily paired images as a result of temporal co-occurrence; pairs in our study with comparable levels of visual similarity (roughly model similarity level 3) showed no evidence of integration. This difference between studies may relate to the fact that the visual sequences in Schapiro et al., 2012 contained a mix of strong and weak transition probabilities, whereas we used strong transition probabilities exclusively; moreover, our study had a higher baseline of visual feature overlap among pairs. Contextual and task-related factors (Brunec et al., 2020), as well as the history of recent activation (Bear, 2003), can bias the hippocampus toward integration or differentiation, similar to the remapping based on task context that occurs in rodent hippocampus (Anderson and Jeffery, 2003; Colgin et al., 2008; McKenzie et al., 2014). Speculatively, the overall higher degree of competition in our task \u2014 from stronger transition probabilities and higher baseline similarity \u2014 may have biased the hippocampus toward differentiation (Ritvo et al., 2019).\n\nOur design had several limitations. Prior work in this area has demonstrated brain-behavior relationships (Favila et al., 2016; Molitor et al., 2021), so it is clear that changes in representational overlap (i.e. either integration or differentiation) can bear on later behavioral performance. However, in the current work, our behavioral task was intentionally orthogonal to the dimensions of interest (i.e. unrelated to temporal co-occurrence and visual similarity), limiting our ability to draw conclusions about potential downstream effects on behavior. We believe that this presents a compelling target for follow-up research. Establishing a behavioral signature of both integration and differentiation in the context of nonmonotonic plasticity will not only clarify the brain-behavior relationship, but also allow for investigations in this domain without requiring brain data.\n\nFinally, although analyzing representational overlap in templating runs before and after statistical learning afforded us the ability to quantify pre-to-post changes, our design precluded analysis of the emergence of representational change over time. That is, we could not establish whether integration or differentiation occurred early or late in statistical learning. This is because, during statistical learning runs, the onsets of paired images were almost perfectly correlated, meaning that it was not possible to distinguish the representation of one image from its pairmate. Future work could monitor the time course of representational change, either by interleaving additional templating runs throughout statistical learning (although this could interfere with the statistical learning process), or by exploiting methods with higher temporal resolution where the responses to stimuli presented close in time can more readily be disentangled.\n\n### Conclusion\n\nOverall, these results highlight the complexity of learning rules in the hippocampus, showing that in DG, moderate levels of visual feature similarity lead to differentiation following a statistical learning paradigm, but higher and lower levels of visual similarity do not. From a theoretical perspective, these results provide the strongest evidence to date for the NMPH account of hippocampal plasticity. We expect that a similar U-shaped function relating coactivation and representational change will manifest in paradigms with different task demands and stimuli, but additional work is needed to provide empirical support for this claim about generality. From a methodological perspective, our results provide a proof-of-concept demonstration of how image synthesis, applied to neural network models of specific brain regions, can be used to test how representations in these regions shape learning. As neural network models continue to improve, we expect that this kind of model-based image synthesis will become an increasingly useful tool for studying neuroplasticity.\n\n## Materials and methods\n\n### Participants\n\nFor the fMRI study, we recruited 42 healthy young adults participants (18\u201335 years old, 25 females) with self-reported normal (or corrected to normal) visual acuity and good color vision. All participants provided informed consent to a protocol approved by the Yale IRB and were compensated for their time ($20 per hour). Five participants did not complete the task because of technical errors and/or time constraints, though their data could still be used for the visual templating analyses, as this only required the initial pre-learning templating run. One additional participant\u2019s data quality precluded segmentation of hippocampal subfields. As such, our final sample for the learning task was 36 participants, with a total of 41 participants available for the visual templating analyses. See Figure 3\u2014figure supplement 1 for the outcome of the visual templating analyses in a reduced sample containing only the 36 participants included in the representational change analyses.\n\nFor the behavioral validation study, we recruited 30 naive participants through Amazon Mechanical Turk (mTurk). All participants provided informed consent to a protocol approved by the Yale IRB, and were compensated for their time ($6 per hour).\n\n### Stimulus synthesis\n\nImage pairs were generated via a gradient descent optimization using features extracted from GoogLeNet a version of Inception; (Szegedy et al., 2015), a deep neural network (DNN) architecture. This particular instantiation had been pretrained on ImageNet (Deng et al., 2009), which contains over one million images of common objects. Accordingly, the learned features reflect information about the real-world features of naturalistic objects. Our approach drew heavily from Deepdream (Mordvintsev et al., 2015; Deepdreaming with tensorflow, 2021), an approach used to visualize the learned features of pretrained neural networks. Deepdream\u2019s optimization uses gradient ascent to iteratively update input pixels such that activity in a given unit, layer, or collection of layers is maximized. Different from Deepdream, the core of our approach was controlling the correlation between the features of two images at a given layer j, as a means of controlling visual overlap at a targeted level of complexity. We prioritized image optimization over features in a subset of network layers: the early convolutional layers and the output layers of later inception modules (i.e. 12 total layers).\n\nBecause we were interested in targeting higher-order visual representations (e.g. in LO), our intention was to produce pairs of images whose higher-layer (top four layers) features were correlated with one another at a specified value, ranging from 0 (not at all similar) to 1 (almost exactly the same). As such, we produced pairs of images that fell along an axis between two \u2018endpoints\u2019, where the endpoints were pairs of images designed to have a correlation of 0. Each subsequent pair of increasing similarity can be thought of as sampling two new points by stepping inward along the axis from each side. Because it was our aim to have some specificity in the level of representation we were targeting, we sought to fix the feature correlations between all of the pairs in the lower and middle layers (i.e., the bottom eight layers) at 0.25. Altogether, our stimulus synthesis procedure was composed of three phases, described below: (1) endpoint channel selection, (2) image initialization, and (3) correlation tuning (Figure 2\u2014figure supplement 1).\n\nThe purpose of the endpoint channel selection phase was to select higher-layer feature channels that, when optimized, were maximally different from one another. To do this, we generated an optimized image (Deepdreaming with tensorflow, 2021) that maximally expressed each of the 128 feature channels in layer mixed 4E (yielding 128 optimized images). We fed these images back through the network, and extracted the pattern of activation in the top four selected layers for each image. We then computed Pearson correlations among the extracted features and selected the 16 optimized channel images whose activation patterns were least inter-correlated with one another. These 16 channels were formed into eight pairs, which became the endpoint channels for a spectrum of image pairs (Figure 2\u2014figure supplement 1A).\n\nDuring image initialization, the endpoint channels served as the starting point for generating sets of image pairs with linearly increasing visual similarity. For every pair of endpoint channels, eight image pairs were synthesized, varying in intended higher-layer feature correlation from 0 to 1. These are also referred to as model similarity levels 1 through 8. Every AB image pair began with two randomly generated visual noise arrays, and an \u2018endpoint\u2019 was assigned to each \u2014 for example, channel 17 to image A and channel 85 to image B. If optimizing image A, channel 17 was always maximally optimized, while the weighting for the optimization of channel 85 depended on the intended correlation. For example, if the intended correlation was 0.14, channel 85 was weighted at 0.14. If optimizing image B for a correlation of 0.14, channel 85 was maximally optimized and channel 17\u2019s optimization was weighted at 0.14. These two weighted channel optimizations were added together, and served as the cost function for gradient descent in this phase (Figure 2\u2014figure supplement 1B). On each iteration, the gradient of the cost function was computed with respect to the input pixels. In this way, the pixels were updated at each iteration, working toward this weighted image initialization objective. Eight different AB image pairs were optimized for each of the eight pairs of endpoints, for a total of 64 image pairs (128 images in total). After 200 iterations, the resulting images were fed forward into the correlation tuning phase.\n\nThe correlation tuning phase more directly and precisely targeted correlation values. On each iteration, the pattern of activations to image A and image B were extracted from every layer of interest, and a correlation was computed between image A\u2019s pattern and image B\u2019s pattern (Figure 2A, Figure 2\u2014figure supplement 1C). The cost function for this phase was the squared difference between the current iteration\u2019s correlation, and the intended correlation. Our aim was to equate the image pairs in terms of their similarity at lower layers, so the intended correlation for the first eight layers was always 0.25. For the highest four layers, the intended correlation varied from 0 to 1. Similar to the endpoint initialization phase, the gradient of the new cost function was computed with respect to the input pixels, and so the images iteratively stepped toward exhibiting the exact feature correlation properties specified. After 200 iterations, we were left with eight pairs of images, whose correlations (i.e. similarity in higher-order visual features) varied linearly from 0 to 1 (Figure 2B, Figure 2\u2014figure supplement 1C, right side).\n\nFeature channel optimization tends to favor the expression of high frequency edges. To circumvent this, as in Deepdream (Mordvintsev et al., 2015), we utilized Laplacian pyramid regularization to smooth the image and allow low-frequency features and richer color to be expressed. Also, we wanted to ensure that the final feature correlations were not driven by eccentric pixels in the image, and that the feature correlation was reasonably well represented in various parts of the images and at various scales. To accomplish this, we performed the entire 400 iteration optimization procedure three times, magnifying the image by 40% for each volley. We also computed the gradient over a subset of the input pixels, which were selected using a moving window slightly smaller than the image, in the center of the image. As a result of this procedure, pixels toward the outside of the image were not updated as often. We then cropped the images such that pixels that had been iterated over very few times were removed. Although this was intended to avoid feature correlations driven by the periphery, it had the added benefit of giving the images an irregular ragged edge, rather than a sharp square frame which can make the images appear more homogenous. However, this cropping procedure did remove some pixels that were contributing in part to the assigned correlation value. For this reason, the final inter-image correlations are closely related to but do not exactly match the assigned values.\n\n### Model validation\n\nWe produced a large set of image pairs using the stimulus synthesis approach detailed above. For each of the eight sets of image endpoints, we generated a pair of images at each of eight model similarity levels, yielding a total of 128 ($8\\times8\\times2$) images. Each image was then fed back through the network, resulting in a pattern of activity across units in relevant layers that was correlated with the pattern from its pairmate. We also fed these images through a second commonly used DNN, VGG19 (Simonyan and Zisserman, 2014), and applied the same procedure. This was done to verify that the feature overlaps we set out to establish were not specific to one model architecture. In the selected layers of both networks, we computed second-order correlations between the intended and actual image-pair correlations. In the network used to synthesize the image pairs, we averaged these second-order correlations in each of the top four target layers, to provide an estimate of the extent to which the synthesis procedure was effective. Despite varying in similarity in the target layers, the differences in similarity in the lower and middle layers (intended to be uniformly r = 0.25) should be minimal. To confirm this, we calculated differences between the actual correlations across image pairs, as well as the standard deviation of these differences (Figure 2\u2014figure supplement 2). Second-order correlations and standard deviations were also computed for each layer in VGG19, the alternate architecture (Figure 2\u2014figure supplement 2).\n\n### Behavioral validation\n\nOnline participants consented to participate and then were provided with task instructions (see next section). The most critical instruction was as follows: 'It will be your job to drag and drop those images into the arena, and arrange them so that the more visually similar items are placed closer together, and the more dissimilar items are placed farther apart'. After confirming that they understood, participants proceeded to the task. At the start of each trial, they clicked a button labeled \u2018\u2018Start trial\u2019\u2019. They were then shown a black screen with a white outlined circle that defined the arena. The circle was surrounded by either 24 (20% of trials) or 26 images (80%), pseudo-randomly selected from the broader set of 128 images (eight pairs from each of 8 sets of endpoints; 64 pairs). Sets were selected such that there were no duplicates, the two images from a given target pair were always presented together, and every image was presented at least twice. Trials were self-paced, but could not last more than 5 min each. Warnings were provided in orange text and then red text when there was 60 and 30 s remaining, respectively. There was no minimum time, except that a trial could not be completed unless every image had been placed. This timing structure ensured that we would get at least 10 trials per subject in no longer than 50 min. On the right side of the arena, there was a button labeled \u2018\u2018Click here when finished\u2019\u2019. If this button was clicked prior to placing all of the images, a warning appeared, \u2018\u2018You have not placed all of the images\u2019\u2019. If all images had been placed, additional buttons appeared, giving the participant the option to confirm completion (\u2018\u2018Are you sure? Click here to confirm.\u2019\u2019) or return to sorting (\u2018\u2018\u2026or here to go back\u2019\u2019). We used the coordinates of the final placement location of each image to compute pairwise Euclidean distances between images (Figure 2D). We averaged across trials within participant to get one distance metric for each image pair for each participant. We then computed the Pearson correlation between the model similarity level (1 through 8) defined in the stimulus synthesis procedure and the distance between the images based on each participant\u2019s placements. We also averaged Euclidian distances across participants for each of the 64 image pairs, and then computed a Pearson correlation between model similarity level and these group-averaged distances (Figure 2E).\n\n### Arrangement task instructions\n\n#### Instructions (1/5)\n\nThank you for signing up!\n\nIn this experiment, you will be using the mouse to click and drag images around the screen. At the beginning, you will click the \u2018Start trial\u2019 button in the top left corner of your browser window, and a set of images will appear, surrounding the border of a white circular arena. It will be your job to drag and drop those images into the arena, and arrange them so that the more visually similar items are placed closer together, and the more dissimilar items are placed farther apart.\n\n#### Instructions (2/5)\n\nYou can move each image as many times as you\u2019d like to make sure that the arrangement corresponds to the visual similarity. The images you will be viewing will be abstract in nature, and will not be animals, but the following example should clarify the instructions:\n\nIf you had moved images of a wolf, a coyote, and a husky into the arena, you might think that they look quite similar to one another, and therefore place them close together. However, if the next image you pulled in was a second image of a husky, you may need to adjust your previous placements so that the two huskies are closer together than a husky and a wolf.\n\n#### Instructions (3/5)\n\nYou may find that some clusters of similar items immediately pop out to you. Once you have a set of several of these somewhat similar items grouped together, you might notice more fine-grained differences between them. Please make sure that you take the time to tinker and fine-tune in these situations. The differences within these clusters is just as important.\n\nIf two images are exactly the same, they should be placed on top of one another, and if they are ALMOST exactly the same, feel free to overlap one image with the other. By that same logic, if images are totally dissimilar, place them quite far apart, as far as on opposite sides of the arena.\n\nDepending on your screen resolution and zoom settings, the entire circle may not initially be in your field of view. This is okay. Feel free to scroll around and navigate the entire space as you arrange the images. However, it is important that the individual images are large enough that you can make out their details.\n\n#### Instructions (4/5)\n\nThere will be multiple trials to complete, each with its own set of images. You will have a maximum of 5 min to complete each trial. When there is one minute remaining, an orange message will appear in the center of the circle to inform you of this. You will receive another message, this time in red, when there are 30 s remaining. When time runs out, your arrangement will be saved, and the next trial will be prepared. If you are satisfied with your arrangement before 3 min has elapsed, you can submit it using the \u2018Click here when finished\u2019 button. This will bring up two buttons; one to confirm, and one to go back to sorting. You will not be able to submit your arrangement unless you have placed every image.\n\nWhen the trial ends, whether it was because you submitted your response, or because time ran out, the screen will be reset, revealing a new set of images and empty arena.\n\nThe task will take just under an hour to complete, no matter how quickly or how slowly you complete each trial, so there is no benefit to rushing.\n\n#### Instructions (5/5)\n\nWe would like to thank you for taking the time to participate in our research. The information that you provide during this task is very valuable to us, and will be extremely helpful in developing our research. With this in mind, we ask that you really pay attention to the details of the images, and complete each trial and arrangement carefully and conscientiously.\n\n[printed in red text] We would also like to remind you that because there is a set time limit, not a set number of trials, there is no benefit to rushing through the trials. In general, we have found that it tends to take 3.5 min at minimum to complete each trial accurately.\n\n### fMRI design\n\nEach functional task run lasted 304.5 s and consisted of viewing a series of synthesized abstract images, one at a time. Images were presented for 1 s each. The first image onset occurred after 6 s, and each subsequent onset was presented after an ISI of 1, 3, or 5 s (40:40:20 ratio). There were eight pairs, meaning that there were 16 unique images. The order of image presentations was pseudo-randomly assigned in one of two ways. In the first and last (pre- and post-learning) templating runs, the 16 images were presented in a random order for the first 16 trials. For the next 16 trials, the 16 images were presented in a different random order, with the constraint that the same image not be presented twice in a row. This same procedure was repeated until there were 80 total trials (five presentations of each of image). In the six intervening statistical learning runs, image pairs were always presented intact and in the same A to B order. In these runs, the eight pairs were presented in a random order for the first 16 trials. For the next 16 trials, the eight pairs were presented in a different order, with the constraint that the same pair could not be presented twice in a row, and so on. Critically, the images appeared continuously without segmentation cues between pairs, such that participants had to learn transition probabilities in the sequence (i.e. for pair AB, the higher probability of A transitioning to B than B transitioning to any number of other images). One out of every 10 trials was randomly assigned to have a small, partially transparent grey patch overlaid on the image. The participants performed a cover task of pressing a button on a handheld button box when they saw the grey square. This task was designed to encourage participants to maintain attention on the images, but was completely orthogonal to the pair structure.\n\n### Data acquisition\n\nData were acquired using a 3T Siemens Prisma scanner with a 64-channel head coil at the Yale Magnetic Resonance Research Center. We collected eight functional runs with a with a multiband echo-planar imaging (EPI) sequence (TR\u00a0=\u00a01500 ms; TE=32.6 ms; voxel size=1.5mm isotropic; FA=$71\u00b0$; multiband factor=6), yielding 90 axial slices. Each run contained 203 volumes. For field map correction, two spin-echo field map volumes (TR\u00a0= 8000; TE=66) were acquired in opposite phase encoding directions. These otherwise matched the parameters of our functional acquisitions. We also collected a T1-weighted magnetization prepared rapid gradient echo (MPRAGE) image (TR\u00a0=\u00a02300 ms; TE=2.27 ms; voxel size=1 mm isotropic; FA=$8\u00b0$; 192 sagittal slices; GRAPPA acceleration factor=3), and a T2-weighted turbo spin-echo (TSE) image (TR\u00a0=\u00a011390 ms; TE=90 ms; voxel size=$0.44\\times0.44\\times1.5$ mm; FA=$150\u00b0$; 54 coronal slices; perpendicular to the long axis of the hippocampus; distance factor=20%).\n\n### fMRI preprocessing\n\nFor each functional run, preprocessing was performed using the FEAT tool in FSL (Woolrich et al., 2001). Data were brain-extracted, corrected for slice timing, high-pass filtered (100 s cutoff), aligned to the middle functional volume of the run using MCFLIRT (Jenkinson et al., 2002), and spatially smoothed (3 mm). FSL\u2019s topup tool (Smith et al., 2004), in conjunction with the two field maps, was used to estimate susceptibility-induced distortions. The output was converted to radians and used to perform fieldmap correction in FEAT. The functional runs were also aligned to both the participants\u2019 T1-weighted anatomical image using boundary-based registration, and to MNI standard space with 12 degrees of freedom, using FLIRT (Jenkinson and Smith, 2001). Analyses within a single run were conducted in native space. For comparisons across participants, analyses were conducted in standard space.\n\n### Defining regions of interest\n\nFor each participant, their T1- and T2-weighted anatomical images were submitted to the automatic segmentation of hippocampal subfields (ASHS) software package (Yushkevich et al., 2015), to derive participant-specific medial temporal lobe regions of interest. We used an atlas containing 51 manual segmentations of hippocampal subfields (Aly and Turk-Browne, 2016a; Aly and Turk-Browne, 2016b). The resulting automated segmentations were used to create masks for the CA1, CA2/3, and dentate gyrus (DG) subfields. For visual ROIs, freesurfer (http://surfer.nmr.mgh.harvard.edu/) was used to create masks for V1, V2, lateral occipital (LO) cortex, fusiform gyrus (FG), parahippocampal cortex (PHC), and inferior temporal (IT) cortex, for each participant.\n\n### General linear model\n\nFor the pre- and post-learning templating runs, a regressor was developed for each of the 16 unique synthesized images. This was done by placing a delta function at each image onset and convolving this time course with the double-gamma hemodynamic response function. We then used these 16 regressors to fit a GLM to the time course of BOLD activity using FSL\u2019s FILM tool, correcting for local autocorrelation (Woolrich et al., 2001). This yielded parameter estimates for each of the 16 images, which were used for subsequent analyses.\n\n### Stimulus synthesis validation analyses\n\nThe pre-learning templating run was analyzed to derive an estimate of the baseline representational similarity among the eight target pairs before any learning had taken place. For ROI analyses, the 16 parameter estimates output by the GLM (one per stimulus) were extracted for each voxel in a given ROI and vectorized to obtain the multivoxel pattern of activity for each stimulus. We then computed the Pearson correlation between the two vectors corresponding to the pairmates in each of the eight target image pairs. This yielded eight representational similarity values, one for each image pair. As established through model-based synthesis, each of the eight image pairs also had a corresponding model similarity level. We computed and Fisher transformed the second-order correlation of neural and model similarity across levels. In other words, this analysis tested whether the pattern of similarity built in to the image pairs through the DNN model corresponded to the representational similarity in a given brain region. We constructed 95% confidence intervals (CIs) for estimates of model-brain correspondence for each ROI by bootstrap resampling of participants 50,000 times. As an additional control, we compared the true group average correlation value to a noise distribution, wherein A and B images were paired randomly 50,000 times, obliterating any systematic similarity relationships among them. We did not, however, constrain the random pairing to exclude the true image pairings. This means that the control is especially conservative because some of the resulting shuffled pairs contained the true image pairings. This analysis was used to ensure that the true effect would not be likely to occur due to random noise. In addition to ROI analyses, we also conducted exploratory searchlight analyses over the whole brain. This involved repeating the same representational similarity analyses but over patterns defined from 125-voxel searchlights (radius = 2) centered on every brain voxel. The resulting whole-brain statistical maps were then Fisher transformed, concatenated, and tested for reliability at the group level using FSL\u2019s randomise (Winkler et al., 2014). We used a cluster-forming threshold of t = 2.33 (p < .01, one-tailed) in cluster mass, and corrected for multiple comparisons using the null distribution of maximum cluster mass. Clusters that survived at (p < 0.05) were retained.\n\n### Representational change analyses\n\nTo test the NMPH, we measured whether learning-related changes in pairmate representational similarity (i.e. changes from pre- to post-statistical-learning) followed a U-shaped, cubic function of model similarity. This involved measuring the degree to which the image pairs at each level of similarity showed integration (i.e. increased representational similarity) or differentiation (i.e. decreased representational similarity). For ROI analyses, the 16 parameter estimates output by the GLM were extracted for each voxel in a given ROI and vectorized. This procedure was performed for both pre- and post-learning templating runs. In each run, Pearson correlations were computed between the vectors for each of the target image pairs, yielding eight representational similarity values. To measure learning-related changes in representational similarity, pre-learning values were subtracted from post-learning values. A positive value on this metric signifies integration, whereas a negative value signifies differentiation. Our predictions were not about any one model similarity level, but rather about a specific nonmonotonic relationship between model similarity and representational change. This hypothesis can be quantified using a cubic model, with the leading coefficient constrained to be positive. To test the efficacy of this model in each MTL ROI, we computed a cross-validated estimate of how well this model predicted the true data. Specifically, we fit the constrained cubic model to the data from all but one held-out participant. We then used the model to predict the held-out participant\u2019s data, and computed a correlation between the predicted and actual data. This procedure was repeated such that every participant was held out once, and the resulting correlations were averaged into an estimate of the fit for that ROI. We then constructed 95% confidence intervals (CIs) for estimates of the model fit for each ROI by bootstrap resampling participants 50,000 times. To produce a noise distribution, we randomly re-paired A and B images 50,000 times and repeated the above analysis with our entire sample for each repairing. We compared the true group average model fit statistic to this noise distribution for each ROI. Lastly, we conducted an exploratory searchlight analysis, repeating the analysis above in 125-voxel searchlights (radius = 2) centered on every brain voxel. As in the model similarity searchlight, all subjects\u2019 outputs were then Fisher transformed, concatenated, submitted to randomise, thresholded, and corrected for maximum cluster mass.\n\n### Quantification and statistical analysis\n\nNo statistical methods were used to predetermine sample size, but we aimed to collect at least 36 participants for the primary learning analysis. For all analyses, we used bootstrap resampling methods to analyze our results non-parametrically. Details of these analyses, as well as exact results of statistical tests, 95% confidence intervals, and p values with respect to noise distributions, are reported alongside each analysis in our Results. Statistical significance was set at p < 0.05 unless otherwise specified.\n",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "423423bc-c38c-4e34-9e81-2995ef6060b6",
+      "submission_id": "3b76aa2a-4879-4c7e-8c3e-7318c70fab3b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Morgan Barense, University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68344.sa1](https://doi.org/10.7554/eLife.68344.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis paper reports a timely, computationally-inspired fMRI analysis of how hippocampus-dependent memory handles overlap in the timing and visual characteristics of objects we encounter. The elegant experimental approach directly tests the predictions of a theoretical framework by parametrically manipulating visual overlap between associated stimuli. Results showed that within the dentate gyrus of the hippocampus, moderate levels of visual feature similarity led to differentiation following a statistical learning paradigm, but higher and lower levels of visual similarity did not. These findings speak to discrepancies in the field over how the hippocampus responds to similarity in memories and will be of broad interest to memory researchers and computational neuroscientists.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Increasing stimulus similarity drives nonmonotonic representational change in hippocampus\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Thackery Brown (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1. Provide a clearer theoretical rationale for the focus on the dentate gyrus given extant rodent work, per the detailed comments provided by Reviewer 3.\n\n2. Address the extent to which these findings are dependent on this particular learning paradigm.\n\n3. Clarify the time course of these effects, in particular as they relate to interpreting the pre- to post-learning results.\n\n4. Describe extent to which these neural patterns meaningfully relate to behaviour.\n\n5. Describe the relationship between the effects in the hippocampus and early visual regions.\n\nReviewer #2 (Recommendations for the authors):\n\n1. Related to point 2 above \u2013 it would be helpful to show an analysis of how hippocampal representations change over time. I understand that time is a confound here \u2013 representations will drift further from the pre-learning template even with no further learning. However, since all stimuli were presented at all timepoints, adjacent run-to-run similarity values for these pairs could be calculated to establish whether the relative integration/differentiation occurs in a gradual way or as a step function. I leave it up to the authors to decide how to address this, or to provide an explanation for why such an analysis might not be feasible, but this would be helpful in interpreting the pre- to post-learning results.\n\n2. Related to point 3 above \u2013 it would be helpful to provide any behavioural measures such as RT that might hint at whether (and how well) the participants learned the links between paired stimuli. Similarly, across the 6 statistical learning runs, did the authors observe RT facilitation for times when the grey square appeared on the second stimulus of a pair (vs. the first one)?\n\n3. Perhaps I'm missing something, but it seems more parsimonious to remove participants who did not have statistical learning data from the templating analyses as well (p. 17). This way, the brain maps and plots are derived from data from the same individuals.\n\n4. Figure 1 is somewhat difficult to follow. The logic is clear, but the lines depicting the information flow between the layers are somewhat difficult to keep in mind \u2013 perhaps it would be helpful if the hippocampal and visual layers were displayed in different colours. However, I leave it up to the authors to decide whether to make any changes, this could just be subjective preference. All other figures are exceptionally clear and easy to follow.\n\nReviewer #3 (Recommendations for the authors):\n\nI am very enthusiastic about this work, and did find it quite well-motivated and designed in the broad strokes. I consider my concerns/comments to be \"moderate\" and am confident they can be addressed.\n\nSpecifics on the concerns and my suggestions:\n\nThinking about the DG findings, the authors present this as being the predicted locus of their non-monotonic representational relationship. But the justification for that is somewhat brief (limited to P.8) and to be honest not immediately intuitive to me. For one thing, in my view of the rodent literature the data might suggest DG favors differentiation for both low and moderate coactivation of memories on such a task, being highly sensitive to small changes. The authors cite the important Leutgeb 2007 work on this, but it's not clear to me that favors DG for the U-shaped pattern observed. The authors might also consider evidence juxtaposing CA1 and CA3 in a similar manner (Vazdarjanova and Guzowski 2004, J Neurosci). That work and the Leutgeb data would seem to favor CA3 having a \"thresholded\" representational relationship with contextual similarity, whil also suggesting CA1 may have higher discriminability for moderate levels of overlap. One suggestion is that pattern completion processes in the CA3 subcircuit may resist differention from DG up to an extent as contextual similarity drifts.\n\nA related question on the theoretical side is how the network model is being conceptualized for subfields \u2013 for example, the subdivisions of the hippocampus can (ought to?) themselves be seen as layers in a neural network. Are the authors envisioning the context and perceptual conjunction cells as layers equally represented in each subfield tested, and that the transformation in that region alone is what differs? I ask because at least in broad terms the inputs to these regions from each other and the entorhinal cortex are different \u2013 DG and CA3 are predominantly targeted by entorhinal layer II, while CA1 is largely the target of entorhinal layer III, and it appears \"where\" and \"what\" cortical pathways are more segregated in CA1 than CA3 and DG (Witter et al., 2006 Annals of NYAS), and models of hippocampal circuit-level function often view item-context associations in inter-subregional terms (e.g., Hasselmo and Eichenbaum, 2005).\n\nThinking about the model \u2013\n\nOne interesting assumption, if I read correctly, is that residual firing within the hippocampus during statistical learning (in the conjunction units) is \"externally driven\" \u2013 we see a \"moderate\" repeated activation of a unit in Figure 1 driven by sustained firing in visual cortex from the preceding trial and repeated firing of the same unit in the context layer. To my eye, this would seem to be a high overlap scenario for such a circuit \u2013 why does full context repetition and weak input from the cortex not drive strong activity in that item A cell (plasticity has indeed promoted a strong recurrent connection from prior learning between context and the perceptual layer)? Moreover, why do we assume sustained firing in the conjunctive codes in cortex but not those in the hippocampus?\n\nOn a related note, it seems allowing context to drift, as in a temporal context model, would help \u2013 the context is likely highly similar, but not identical, between adjacent events, which could somewhat attenuate the coactivation of the past event and facilitate the weakened connections with the perceptual conjunction layer.\n\nPerhaps this is lost in the weeds, somewhat for the overall memory \u2013 similarity relationships observed, but I think it's an area where more justification and consideration could help tie the fMRI research here to data in rodents and/or motivate continued research into the circuit level of what is being observed.\n\nOverall, I think a bit more on why the model was conceptualized the way it was and how the predictions (or, if more post-hoc \u2013 discover) of DG relate to our understanding of neural population connectivity and behavior from animal work would set the study up to promote even more hypothesis testing in this area.\n",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c37623de-5b33-4dac-aed8-a8798eea337e",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C1",
+      "claim": "Manipulations that increase coactivation of memories sometimes lead to differentiation of these memories in hippocampal learning studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of hippocampal learning have obtained seemingly contradictory results, with manipulations that increase coactivation of memories sometimes leading to differentiation of these memories, but sometimes not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of prior research findings in the abstract.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "5111a0ce-d5b7-453a-b015-bd368471174f",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C2",
+      "claim": "Manipulations that increase coactivation of memories sometimes do not lead to differentiation of these memories in hippocampal learning studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of hippocampal learning have obtained seemingly contradictory results, with manipulations that increase coactivation of memories sometimes leading to differentiation of these memories, but sometimes not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of prior research findings in the abstract.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "62a627ba-3117-48fb-b26a-374b32dd3d36",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C3",
+      "claim": "The nonmonotonic plasticity hypothesis posits that representational change is a U-shaped function of the coactivation of memories during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "These results could potentially be reconciled using the nonmonotonic plasticity hypothesis, which posits that representational change (memories moving apart or together) is a U-shaped function of the coactivation of these memories during learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the theoretical hypothesis being tested.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "0304f58b-3868-4be1-ac52-53d9b7bdde74",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C4",
+      "claim": "Testing the nonmonotonic plasticity hypothesis requires manipulating coactivation over a wide enough range to reveal the full U-shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing this hypothesis requires manipulating coactivation over a wide enough range to reveal the full U-shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological requirement in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "52517e0a-508d-4295-8645-6d286a4b78e0",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C5",
+      "claim": "A novel neural network image synthesis procedure was used to create pairs of stimuli that varied parametrically in their similarity in high-level visual regions that provide input to the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "To accomplish this, we used a novel neural network image synthesis procedure to create pairs of stimuli that varied parametrically in their similarity in high-level visual regions that provide input to the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "0e5d9233-3485-4616-a037-0bce209d25e8",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C6",
+      "claim": "Learning changed the representations of paired images in the dentate gyrus as a U-shaped function of image similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, learning changed the representations of paired images in the dentate gyrus as a U-shaped function of image similarity, with neural differentiation occurring only for moderately similar images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "1774894b-c583-4ff7-9653-269a188b43b1",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C7",
+      "claim": "Neural differentiation occurred only for moderately similar images in the dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, learning changed the representations of paired images in the dentate gyrus as a U-shaped function of image similarity, with neural differentiation occurring only for moderately similar images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the main finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "6a0802dc-8e43-420c-a443-c4670e9d6dfe",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C8",
+      "claim": "Experiences are encoded in distributed representations spanning populations of neurons that are partially reused across multiple memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiences are encoded in distributed representations (Johnson et al., 2009; Polyn et al., 2005), spanning populations of neurons that are partially reused across multiple memories, leading to overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "4e5a8f4d-c208-408a-a6d2-d621f15ae12b",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C9",
+      "claim": "Overlapping neural populations representing different memories in the hippocampus can shift during learning, leading to either integration or differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "As we learn, the overlapping neural populations representing different memories in the hippocampus can shift, leading to either integration, where memories become more similar to one other, or differentiation, where memories become more distinct from one another for reviews, see Brunec et al., 2020; Duncan and Schlichting, 2018; Ritvo et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "f7a4db14-8edd-4402-8df4-3b68d1539ed8",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C10",
+      "claim": "Integration occurs when memories become more similar to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "As we learn, the overlapping neural populations representing different memories in the hippocampus can shift, leading to either integration, where memories become more similar to one other, or differentiation, where memories become more distinct from one another for reviews, see Brunec et al., 2020; Duncan and Schlichting, 2018; Ritvo et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "dee73a27-89c5-485b-b50b-035583d394bf",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C11",
+      "claim": "Differentiation occurs when memories become more distinct from one another.",
+      "claim_type": "EXPLICIT",
+      "source": "As we learn, the overlapping neural populations representing different memories in the hippocampus can shift, leading to either integration, where memories become more similar to one other, or differentiation, where memories become more distinct from one another for reviews, see Brunec et al., 2020; Duncan and Schlichting, 2018; Ritvo et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "62d5902a-ebb2-4a26-ae69-acf363d7c390",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C12",
+      "claim": "Traditional Hebbian learning models hold that synaptic connections strengthen when the pre-synaptic neuron repeatedly stimulates the post-synaptic neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional Hebbian learning models hold that synaptic connections strengthen when the pre-synaptic neuron repeatedly stimulates the post-synaptic neuron, causing them to fire together (Buonomano and Merzenich, 1998; Caporale and Dan, 2008; Feldman, 2009; Hebb, 1949).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established theory with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "7a3893ea-5925-4c2a-b80c-f1759bbc9e2f",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C13",
+      "claim": "A greater degree of coactivation among representations will strengthen shared connections and lead to integration according to Hebbian learning.",
+      "claim_type": "EXPLICIT",
+      "source": "A greater degree of coactivation among representations will strengthen shared connections and lead to integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of Hebbian learning principles as described in the text.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "565ae93c-b7e7-4b6b-b4f7-4fdee49db572",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C14",
+      "claim": "Arbitrary pairs of objects integrate in the hippocampus following repeated temporal or spatial co-occurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this view, arbitrary pairs of objects integrate in the hippocampus following repeated temporal or spatial co-occurrence (e.g. Deuker et al., 2016; Schapiro et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "21edf675-04a4-4668-a174-8f0db011268b",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C15",
+      "claim": "New information that builds a link between two previously disconnected events can lead the representations of the events to integrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, new information that builds a link between two previously disconnected events can lead the representations of the events to integrate (Collin et al., 2015; Milivojevic et al., 2015; Tompary and Davachi, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "aa545760-14f4-4904-8f03-83fb7edfe743",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C16",
+      "claim": "Coactivation can produce differentiation in some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In other cases, however, coactivation produces the exact opposite outcome \u2014 differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a contrast to the Hebbian prediction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "8e2ed1fa-5703-4d04-95ae-4d697902cd21",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C17",
+      "claim": "Hippocampal representations of two faces with similar associations differentiate as a result of learning.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, hippocampal representations of two faces with similar associations (Favila et al., 2016) and of two navigation events with similar routes (Chanales et al., 2017) differentiate as a result of learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "4aa4657b-d860-402f-86ba-fc70b8cc5698",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C18",
+      "claim": "Hippocampal representations of two navigation events with similar routes differentiate as a result of learning.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, hippocampal representations of two faces with similar associations (Favila et al., 2016) and of two navigation events with similar routes (Chanales et al., 2017) differentiate as a result of learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "8a9ccd4c-e6b9-4e7f-bb84-19425ff47f41",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C19",
+      "claim": "Some studies have found that the same experimental conditions can lead to integration in some subfields of the hippocampus and differentiation in other subfields.",
+      "claim_type": "EXPLICIT",
+      "source": "Further complicating matters, some studies have found that the same experimental conditions can lead to integration in some subfields of the hippocampus and differentiation in other subfields (Dimsdale-Zucker et al., 2018; Molitor et al., 2021; Schlichting et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "1e25e935-fc06-4b08-965b-d5c5dafbea00",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C20",
+      "claim": "The nonmonotonic plasticity hypothesis posits low levels of coactivation between two memories will lead to no change in their overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the NMPH, low levels of coactivation between two memories will lead to no change in their overlap; high levels of coactivation will strengthen mutual connections and lead to integration; and moderate levels of coactivation (where one memory is strongly active and the unique parts of the other memory are only moderately active) will weaken mutual connections and lead to differentiation, thereby reducing competition between the memories for later retrieval attempts (Hulbert and Norman, 2015; Ritvo et al., 2019; Wimber et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the theoretical hypothesis with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "a2a53108-3293-4c4f-b7d9-668df4bc0b96",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C21",
+      "claim": "The nonmonotonic plasticity hypothesis posits high levels of coactivation will strengthen mutual connections and lead to integration.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the NMPH, low levels of coactivation between two memories will lead to no change in their overlap; high levels of coactivation will strengthen mutual connections and lead to integration; and moderate levels of coactivation (where one memory is strongly active and the unique parts of the other memory are only moderately active) will weaken mutual connections and lead to differentiation, thereby reducing competition between the memories for later retrieval attempts (Hulbert and Norman, 2015; Ritvo et al., 2019; Wimber et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the theoretical hypothesis with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "bb882a46-f32d-4fe1-b8bb-1e8fd4d7266f",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C22",
+      "claim": "The nonmonotonic plasticity hypothesis posits moderate levels of coactivation will weaken mutual connections and lead to differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the NMPH, low levels of coactivation between two memories will lead to no change in their overlap; high levels of coactivation will strengthen mutual connections and lead to integration; and moderate levels of coactivation (where one memory is strongly active and the unique parts of the other memory are only moderately active) will weaken mutual connections and lead to differentiation, thereby reducing competition between the memories for later retrieval attempts (Hulbert and Norman, 2015; Ritvo et al., 2019; Wimber et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the theoretical hypothesis with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "5b7d6637-2da1-44ea-be6d-9513740cfac7",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C23",
+      "claim": "The NMPH has been put forward as a learning mechanism that applies broadly across tasks in which memories compete.",
+      "claim_type": "EXPLICIT",
+      "source": "The NMPH has been put forward as a learning mechanism that applies broadly across tasks in which memories compete, whether they have been linked based on incidental co-occurrence in time or through more intentional associative learning (Ritvo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a prior theoretical paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "4f25d7f6-bb7a-4d00-b4fc-da6e4cda4641",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C24",
+      "claim": "No existing study has demonstrated the full U-shaped pattern for representational change.",
+      "claim_type": "EXPLICIT",
+      "source": "No existing study has demonstrated the full U-shaped pattern for representational change; that is what we set out to do here, using a visual statistical learning paradigm \u2014 specifically, we brought about coactivation using temporal co-occurrence between paired items, and we manipulated the degree of coactivation by varying the visual similarity of the items in a pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the literature that the current study addresses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "25c15edb-b236-42b4-966b-c18d012f61bc",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C25",
+      "claim": "There are three factors that influence how strongly the hippocampal representation of item A coactivates with the hippocampal representation of item B during statistical learning: overlap in the high-level visual cortex representations, recurrent input from overlapping features within the hippocampus, and residual activation of item A's representation in visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the figure illustrates that there are three factors that influence how strongly the hippocampal representation of item A coactivates with the hippocampal representation of item B during statistical learning: (1) overlap in the high-level visual cortex representations of items A and B; (2) recurrent input from overlapping features within the hippocampus; and (3) residual activation of item A's representation in visual cortex (because item A was presented immediately before item B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical framework illustrated in Figure 1.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "77df4307-ad93-4d8e-aa5d-36df2ec98a3a",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C26",
+      "claim": "Later DNN layers correspond most closely to higher order, object-selective visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Most critically, later DNN layers correspond most closely to higher order, object-selective visual areas (Eickenberg et al., 2017; G\u00fc\u00e7l\u00fc and van Gerven, 2015; Jozwik et al., 2019; Khaligh-Razavi and Kriegeskorte, 2014), and when neural networks are optimized to match human performance, their higher layers predict neural responses in higher-order visual cortex (Cadieu et al., 2014; Yamins et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "90a3e048-7119-440c-9e88-de074907dbfa",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C27",
+      "claim": "When neural networks are optimized to match human performance, their higher layers predict neural responses in higher-order visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Most critically, later DNN layers correspond most closely to higher order, object-selective visual areas (Eickenberg et al., 2017; G\u00fc\u00e7l\u00fc and van Gerven, 2015; Jozwik et al., 2019; Khaligh-Razavi and Kriegeskorte, 2014), and when neural networks are optimized to match human performance, their higher layers predict neural responses in higher-order visual cortex (Cadieu et al., 2014; Yamins et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "8d683691-b252-4248-aceb-60998a4f5ea2",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C28",
+      "claim": "The intended and actual similarity levels of the images in terms of model features showed a close correspondence.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the intended and actual similarity levels of the images (in terms of model features) showed a close correspondence (Figure 2\u2014figure supplement 2): In the highest four layers (4D-5B), the intended and actual feature correlations were strongly associated (r(62) = .970, .983, .977, .985, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result with specific correlation values reported.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "5f57e84b-8217-41e3-b5c0-0e2310cd0d0a",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C29",
+      "claim": "In the highest four layers of the Inception model, the intended and actual feature correlations were strongly associated (r(62) = .970, .983, .977, .985, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the intended and actual similarity levels of the images (in terms of model features) showed a close correspondence (Figure 2\u2014figure supplement 2): In the highest four layers (4D-5B), the intended and actual feature correlations were strongly associated (r(62) = .970, .983, .977, .985, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the model validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "311a739f-0f95-4fa8-905b-984b3fe48762",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C30",
+      "claim": "In the lower and middle layers of the Inception model, feature correlations did not vary across pairs, as intended.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lower and middle layers, feature correlations did not vary across pairs, as intended.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result confirming the intended design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "3bb0be2b-d4b6-4256-8d61-a1de89d2bdd9",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C31",
+      "claim": "Perceptual distance was strongly negatively associated with the intended model similarity (r(62) = \u22120.813, p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "When further averaged across participants, perceptual distance was strongly negatively associated with the intended model similarity (r(62) = \u22120.813, p < 0.0001; Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the behavioral validation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "3f0d6698-2c1c-4e0b-a43f-5815c508f74a",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C32",
+      "claim": "Every individual participant's correlation between perceptual distance and model similarity was negative (mean r = \u22120.552, 95% CI = [\u22120.593\u20130.512]).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, every individual participant's correlation was negative (mean r = \u22120.552, 95% CI = [\u22120.593\u20130.512]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the behavioral validation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "931dcabf-1a66-40c7-b55f-4f84edf2aecf",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C33",
+      "claim": "Model similarity level was positively associated with neural similarity in LO (mean r = 0.182, 95% CI = [0.083 0.279], randomization p = 0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "Model similarity level was positively associated with neural similarity in LO (mean r = 0.182, 95% CI = [0.083 0.279], randomization p = 0.007) and PHC (mean r = 0.125, 95% CI = [0.022 0.228], p = 0.029).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the neural validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "d332b0bc-b750-4e69-9f17-a26c5650aa86",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C34",
+      "claim": "Model similarity level was positively associated with neural similarity in PHC (mean r = 0.125, 95% CI = [0.022 0.228], p = 0.029).",
+      "claim_type": "EXPLICIT",
+      "source": "Model similarity level was positively associated with neural similarity in LO (mean r = 0.182, 95% CI = [0.083 0.279], randomization p = 0.007) and PHC (mean r = 0.125, 95% CI = [0.022 0.228], p = 0.029).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the neural validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "57f6302d-316a-4a3b-b864-913598e5144a",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C35",
+      "claim": "V1 showed a negative relationship between model similarity and neural similarity (mean r = \u22120.112, 95% CI = [\u22120.224\u20130.003], p = .038).",
+      "claim_type": "EXPLICIT",
+      "source": "V1 showed a negative relationship (mean r = \u22120.112, 95% CI = [\u22120.224\u20130.003], p = .038).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the neural validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "e2d5f73f-250d-411b-8ad5-e4c1a438f321",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C36",
+      "claim": "The searchlight analysis revealed two large clusters of voxels where neural similarity was positively associated with model similarity: left ventral and dorsal LO extending into posterior FG and right ventral and dorsal LO extending into occipital pole.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed two large clusters of voxels (p < 0.05 corrected): left ventral and dorsal LO extending into posterior FG (3722 voxels; peak t-value = 5.60; MNI coordinates of peak = \u221237.5,\u201372.0, \u221210.5; coordinates of center = \u221226.7,\u201371.7, 17.4) and right ventral and dorsal LO extending into occipital pole (3107 voxels; peak t-value = 4.82; coordinates of peak = 33.0, \u201388.5, 10.5; coordinates of center = 30.9, \u201386.5, 10.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the whole-brain searchlight analysis with specific anatomical locations and statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "cc7fc08b-7a8c-4d2e-b3ff-d757613a5d2e",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C37",
+      "claim": "The predictions of the theory-constrained cubic model were reliably associated with representational change in DG (r = 0.134, 95% CI = [0.007 0.267], randomization p = 0.022).",
+      "claim_type": "EXPLICIT",
+      "source": "The predictions of this theory-constrained cubic model were reliably associated with representational change in DG (r = 0.134, 95% CI = [0.007 0.267], randomization p = 0.022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the representational change analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "dec1c93f-f428-42d0-af7e-b1bbe9b02fbf",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C38",
+      "claim": "The cubic model fit was not reliable in CA2/3 (r = 0.082, 95% CI = [\u22120.027 0.191], p = 0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "The fit was not reliable in CA2/3 (r = 0.082, 95% CI = [\u22120.027 0.191], p = 0.13), CA1 (r = 0.116, 95% CI = [\u22120.001 0.231], p = 0.10), or the hippocampus as a whole (r = 0.084, 95% CI = [\u22120.018 0.186], p = 0.15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the representational change analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "d1ab9ac9-a2f7-46a4-84db-4d21226ae536",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C39",
+      "claim": "The cubic model fit was not reliable in CA1 (r = 0.116, 95% CI = [\u22120.001 0.231], p = 0.10).",
+      "claim_type": "EXPLICIT",
+      "source": "The fit was not reliable in CA2/3 (r = 0.082, 95% CI = [\u22120.027 0.191], p = 0.13), CA1 (r = 0.116, 95% CI = [\u22120.001 0.231], p = 0.10), or the hippocampus as a whole (r = 0.084, 95% CI = [\u22120.018 0.186], p = 0.15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the representational change analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "c1fb694e-04f3-4215-9fa9-97951085e90e",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C40",
+      "claim": "The cubic model fit was not reliable in the hippocampus as a whole (r = 0.084, 95% CI = [\u22120.018 0.186], p = 0.15).",
+      "claim_type": "EXPLICIT",
+      "source": "The fit was not reliable in CA2/3 (r = 0.082, 95% CI = [\u22120.027 0.191], p = 0.13), CA1 (r = 0.116, 95% CI = [\u22120.001 0.231], p = 0.10), or the hippocampus as a whole (r = 0.084, 95% CI = [\u22120.018 0.186], p = 0.15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the representational change analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "d641f291-f6d5-4236-a1a8-06acdc4e0ffb",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C46",
+      "claim": "The whole-brain searchlight analysis revealed two reliable clusters: right hippocampus extending into PHC and FG, and anterior cingulate extending into medial prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed two reliable clusters (p < 0.05 corrected): right hippocampus extending into PHC and FG (832 voxels; peak t-value = 4.97; MNI coordinates of peak = 37.5,\u20137.5, \u221215.0; coordinates of center = 32.8,\u201318.7, \u221217.1) and anterior cingulate, extending into medial prefrontal cortex (1604 voxels; peak t-value = 5.43; coordinates of peak = \u22127.5, 28.5, 21.0; coordinates of center = \u22125.0, 28.5, 10.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the whole-brain searchlight analysis with specific anatomical locations and statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "988d1f08-3dc8-49b7-be6d-846107cce537",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C47",
+      "claim": "The degree of overlap in visual features determined the nature of representational change in DG.",
+      "claim_type": "EXPLICIT",
+      "source": "We set out to determine how learning shapes representations in the hippocampus and found that the degree of overlap in visual features determined the nature of representational change in DG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "12e43889-0211-49ea-a36f-763515320f8a",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C48",
+      "claim": "With low or high overlap, object representations did not reliably change with respect to one another in DG.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of results was U-shaped: with low or high overlap, object representations did not reliably change with respect to one another, whereas with moderate overlap, they pushed apart from one another following learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the U-shaped pattern observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "9475e331-89d9-4b4d-9417-54164c21e412",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C49",
+      "claim": "With moderate overlap, object representations pushed apart from one another following learning in DG.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of results was U-shaped: with low or high overlap, object representations did not reliably change with respect to one another, whereas with moderate overlap, they pushed apart from one another following learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the U-shaped pattern observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "a7af942f-979a-4bcd-b0ed-d8a0dfb8c67b",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C50",
+      "claim": "The present study is the first to span coactivation continuously in order to reveal the full U-shape predicted by the NMPH.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the present study is the first to span coactivation continuously in order to reveal the full U-shape predicted by the NMPH, whereby differentiation emerges as coactivation grows from low to moderate and dissipates as coactivation continues from moderate to high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the current study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "1878ef61-7148-4fa6-a6da-b55c226ad142",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C51",
+      "claim": "This is the first demonstration of the efficacy of stimulus synthesis in manipulating high-level representational similarity in targeted brain regions in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first demonstration of the efficacy of stimulus synthesis in manipulating high-level representational similarity in targeted brain regions in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the methodological novelty of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "7bafc512-f9fe-4d04-bc37-e28e97206bc5",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C52",
+      "claim": "Hippocampal neurons encode complex information from multiple sensory modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have shown that, while hippocampal neurons are indeed 'downstream' from visual cortex, they additionally encode complex information from multiple sensory modalities (Lavenex and Amaral, 2000), as well as information about reward (Wimmer and Shohamy, 2012), social relevance (Olson et al., 2007), context (Turk-Browne et al., 2012), and time (Hsieh et al., 2014; Schapiro et al., 2012), to name a few.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "5ff6a830-e2ed-4daa-8e81-82c37e6e6127",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C53",
+      "claim": "Hippocampal neurons encode information about reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have shown that, while hippocampal neurons are indeed 'downstream' from visual cortex, they additionally encode complex information from multiple sensory modalities (Lavenex and Amaral, 2000), as well as information about reward (Wimmer and Shohamy, 2012), social relevance (Olson et al., 2007), context (Turk-Browne et al., 2012), and time (Hsieh et al., 2014; Schapiro et al., 2012), to name a few.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "4dda0ebb-99ca-42ef-8dc4-fab3c1425991",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C54",
+      "claim": "Hippocampal neurons encode information about social relevance.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have shown that, while hippocampal neurons are indeed 'downstream' from visual cortex, they additionally encode complex information from multiple sensory modalities (Lavenex and Amaral, 2000), as well as information about reward (Wimmer and Shohamy, 2012), social relevance (Olson et al., 2007), context (Turk-Browne et al., 2012), and time (Hsieh et al., 2014; Schapiro et al., 2012), to name a few.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "9455a418-3f9b-4ed8-81e2-e67ed084f410",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C55",
+      "claim": "Hippocampal neurons encode information about context.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have shown that, while hippocampal neurons are indeed 'downstream' from visual cortex, they additionally encode complex information from multiple sensory modalities (Lavenex and Amaral, 2000), as well as information about reward (Wimmer and Shohamy, 2012), social relevance (Olson et al., 2007), context (Turk-Browne et al., 2012), and time (Hsieh et al., 2014; Schapiro et al., 2012), to name a few.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "5b644eb3-d514-462a-8570-9201c73decef",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C56",
+      "claim": "Hippocampal neurons encode information about time.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have shown that, while hippocampal neurons are indeed 'downstream' from visual cortex, they additionally encode complex information from multiple sensory modalities (Lavenex and Amaral, 2000), as well as information about reward (Wimmer and Shohamy, 2012), social relevance (Olson et al., 2007), context (Turk-Browne et al., 2012), and time (Hsieh et al., 2014; Schapiro et al., 2012), to name a few.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "c44e8c53-1962-4cef-853b-80ff920ec7c5",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C57",
+      "claim": "Prior work has shown hippocampal differentiation in experimental conditions involving faces and scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown hippocampal differentiation in experimental conditions involving faces and scenes (Favila et al., 2016; Kim et al., 2014; Kim et al., 2017) as well as complex navigation events (Chanales et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "8566a703-0351-47d2-be7e-e4288def9e3d",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C58",
+      "claim": "Prior work has shown hippocampal differentiation in experimental conditions involving complex navigation events.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown hippocampal differentiation in experimental conditions involving faces and scenes (Favila et al., 2016; Kim et al., 2014; Kim et al., 2017) as well as complex navigation events (Chanales et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "14bc011e-d3bd-4608-9aa6-8221eec43558",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C59",
+      "claim": "The differentiation 'dip' creating the U shape was reliable in DG.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the differentiation 'dip' (creating the U shape) was reliable in DG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "f238fe61-b844-45c7-b9fd-d9c9c032ba71",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C60",
+      "claim": "Prior studies found differentiation in a combined CA2/3/DG ROI.",
+      "claim_type": "EXPLICIT",
+      "source": "This fits with prior studies that found differentiation in a combined CA2/3/DG ROI (Dimsdale-Zucker et al., 2018; Kim et al., 2017; Molitor et al., 2021), and greater sparsity and pattern separation in DG in particular (Berron et al., 2016; GoodSmith et al., 2017; Leutgeb et al., 2007), although note that the U-shaped pattern was trending but not significant in CA2/3 in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "feaa2d7b-d4e0-44b5-a7c0-a42cf4070f4f",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C61",
+      "claim": "Prior studies found greater sparsity and pattern separation in DG in particular.",
+      "claim_type": "EXPLICIT",
+      "source": "This fits with prior studies that found differentiation in a combined CA2/3/DG ROI (Dimsdale-Zucker et al., 2018; Kim et al., 2017; Molitor et al., 2021), and greater sparsity and pattern separation in DG in particular (Berron et al., 2016; GoodSmith et al., 2017; Leutgeb et al., 2007), although note that the U-shaped pattern was trending but not significant in CA2/3 in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "cfbd0ae5-3b29-428f-b711-ced1079c668a",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C62",
+      "claim": "The U-shaped pattern was trending but not significant in CA2/3 in the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "This fits with prior studies that found differentiation in a combined CA2/3/DG ROI (Dimsdale-Zucker et al., 2018; Kim et al., 2017; Molitor et al., 2021), and greater sparsity and pattern separation in DG in particular (Berron et al., 2016; GoodSmith et al., 2017; Leutgeb et al., 2007), although note that the U-shaped pattern was trending but not significant in CA2/3 in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the results in CA2/3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "ef8eaed1-c867-45c1-94c3-5661bd1b53d5",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C63",
+      "claim": "CA2/3 and DG show much sparser codes than CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown that there is extensive variation in overall activity (sparsity) levels across hippocampal subfields, with CA2/3 and DG showing much sparser codes than CA1 (Barnes et al., 1990; Duncan and Schlichting, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "0a43f278-56e6-4472-82a6-897a21f68a62",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C64",
+      "claim": "Human fMRI studies have found that CA1 is relatively biased toward integration and CA2/3/DG are relatively biased toward differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, human fMRI studies have found that CA1 is relatively biased toward integration and CA2/3/DG are relatively biased toward differentiation (Dimsdale-Zucker et al., 2018; Kim et al., 2017; Molitor et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "d592c25a-fb95-4fc0-b512-9dfca40d3fc0",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C65",
+      "claim": "DG shows sparser activity than CA3.",
+      "claim_type": "EXPLICIT",
+      "source": "First, DG shows sparser activity than CA3 (Barnes et al., 1990; GoodSmith et al., 2017; West et al., 1991) and thus will do a better job of sampling the left side of the coactivation curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "fb750724-f06b-4f23-ab76-a5a9919b2a90",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C66",
+      "claim": "CA3 is known to show strong attractor dynamics ('pattern completion').",
+      "claim_type": "EXPLICIT",
+      "source": "Second, CA3 is known to show strong attractor dynamics ('pattern completion'; Guzowski et al., 2004; McNaughton and Morris, 1987; Rolls and Treves, 1998) that might make it difficult to observe moderate levels of coactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "06621aef-4ab9-4809-aa29-39a70933a7f5",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C67",
+      "claim": "Rodent studies have demonstrated that CA3 patterns tend to sharply flip between one pattern and the other rather than coactivating representations of different locations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, rodent studies have demonstrated that, rather than coactivating representations of different locations, CA3 patterns tend to sharply flip between one pattern and the other (e.g. Leutgeb et al., 2007; Vazdarjanova and Guzowski, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior rodent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "147dc5cc-8078-4f6d-981c-b6cc840bac25",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C68",
+      "claim": "The results are broadly consistent with prior findings that increasing the coactivation of memories can lead to differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our results are broadly consistent with prior findings that increasing the coactivation of memories can lead to differentiation (Chanales et al., 2017; Favila et al., 2016; Kim et al., 2017; Schlichting et al., 2015), they are notably inconsistent with results from Schapiro et al., 2012, who reported memory integration for arbitrarily paired images as a result of temporal co-occurrence; pairs in our study with comparable levels of visual similarity (roughly model similarity level 3) showed no evidence of integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior literature with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "364f74a9-c9af-451e-a258-78fbad569cd9",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C69",
+      "claim": "The results are notably inconsistent with results from Schapiro et al., 2012, who reported memory integration for arbitrarily paired images as a result of temporal co-occurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our results are broadly consistent with prior findings that increasing the coactivation of memories can lead to differentiation (Chanales et al., 2017; Favila et al., 2016; Kim et al., 2017; Schlichting et al., 2015), they are notably inconsistent with results from Schapiro et al., 2012, who reported memory integration for arbitrarily paired images as a result of temporal co-occurrence; pairs in our study with comparable levels of visual similarity (roughly model similarity level 3) showed no evidence of integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior literature with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "9a8f05d8-7a8d-4e18-b17d-9a231cb7ffe4",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C70",
+      "claim": "Pairs in the current study with comparable levels of visual similarity to Schapiro et al., 2012 (roughly model similarity level 3) showed no evidence of integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our results are broadly consistent with prior findings that increasing the coactivation of memories can lead to differentiation (Chanales et al., 2017; Favila et al., 2016; Kim et al., 2017; Schlichting et al., 2015), they are notably inconsistent with results from Schapiro et al., 2012, who reported memory integration for arbitrarily paired images as a result of temporal co-occurrence; pairs in our study with comparable levels of visual similarity (roughly model similarity level 3) showed no evidence of integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current results to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "11e4c5ad-f180-49ef-8f3d-849dbc736902",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C71",
+      "claim": "The visual sequences in Schapiro et al., 2012 contained a mix of strong and weak transition probabilities, whereas the current study used strong transition probabilities exclusively.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference between studies may relate to the fact that the visual sequences in Schapiro et al., 2012 contained a mix of strong and weak transition probabilities, whereas we used strong transition probabilities exclusively; moreover, our study had a higher baseline of visual feature overlap among pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of methodological differences between studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "bbb6d668-22dc-495d-809b-b9aafb8ba796",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C72",
+      "claim": "The current study had a higher baseline of visual feature overlap among pairs compared to Schapiro et al., 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference between studies may relate to the fact that the visual sequences in Schapiro et al., 2012 contained a mix of strong and weak transition probabilities, whereas we used strong transition probabilities exclusively; moreover, our study had a higher baseline of visual feature overlap among pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of methodological differences between studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "52f9f66c-f233-49f5-8cbf-6f3cd762fb9e",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C73",
+      "claim": "Prior work in this area has demonstrated brain-behavior relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work in this area has demonstrated brain-behavior relationships (Favila et al., 2016; Molitor et al., 2021), so it is clear that changes in representational overlap (i.e. either integration or differentiation) can bear on later behavioral performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "36ecc834-8383-481b-82c2-443a06470209",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C74",
+      "claim": "Changes in representational overlap (i.e. either integration or differentiation) can bear on later behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work in this area has demonstrated brain-behavior relationships (Favila et al., 2016; Molitor et al., 2021), so it is clear that changes in representational overlap (i.e. either integration or differentiation) can bear on later behavioral performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from cited prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "3285118c-51a4-461c-b5a1-e9c39ed3eb3c",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C75",
+      "claim": "These results provide the strongest evidence to date for the NMPH account of hippocampal plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "From a theoretical perspective, these results provide the strongest evidence to date for the NMPH account of hippocampal plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the significance of the current findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "3991c309-63fb-480e-8eb9-8c1ea51afb1c",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C76",
+      "claim": "42 healthy young adults participants (18\u201335 years old, 25 females) were recruited for the fMRI study.",
+      "claim_type": "EXPLICIT",
+      "source": "For the fMRI study, we recruited 42 healthy young adults participants (18\u201335 years old, 25 females) with self-reported normal (or corrected to normal) visual acuity and good color vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "defbf034-eafb-4238-b70c-531df303be24",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C77",
+      "claim": "Five participants did not complete the task because of technical errors and/or time constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Five participants did not complete the task because of technical errors and/or time constraints, though their data could still be used for the visual templating analyses, as this only required the initial pre-learning templating run.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes participant exclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "b9118a83-83a3-454e-8654-6f621e9f3710",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C78",
+      "claim": "One additional participant's data quality precluded segmentation of hippocampal subfields.",
+      "claim_type": "EXPLICIT",
+      "source": "One additional participant's data quality precluded segmentation of hippocampal subfields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a participant exclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "ed44d8ab-e312-42df-abf4-6e85d203cae1",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C79",
+      "claim": "The final sample for the learning task was 36 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our final sample for the learning task was 36 participants, with a total of 41 participants available for the visual templating analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "fdccf929-86fe-4d5f-9d5f-1f70a1583238",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C80",
+      "claim": "A total of 41 participants were available for the visual templating analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our final sample for the learning task was 36 participants, with a total of 41 participants available for the visual templating analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for a specific analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "3beafd47-5875-42c8-a648-2fde0b775887",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C81",
+      "claim": "30 naive participants were recruited through Amazon Mechanical Turk for the behavioral validation study.",
+      "claim_type": "EXPLICIT",
+      "source": "For the behavioral validation study, we recruited 30 naive participants through Amazon Mechanical Turk (mTurk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant sample for the behavioral study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "91fef21e-d169-476b-9b92-8777425d216e",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C82",
+      "claim": "Image pairs were generated via a gradient descent optimization using features extracted from GoogLeNet (a version of Inception).",
+      "claim_type": "EXPLICIT",
+      "source": "Image pairs were generated via a gradient descent optimization using features extracted from GoogLeNet a version of Inception; (Szegedy et al., 2015), a deep neural network (DNN) architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image synthesis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "04354e74-8a24-4ad6-81fb-f0fcd22cdf81",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C83",
+      "claim": "The GoogLeNet model had been pretrained on ImageNet, which contains over one million images of common objects.",
+      "claim_type": "EXPLICIT",
+      "source": "This particular instantiation had been pretrained on ImageNet (Deng et al., 2009), which contains over one million images of common objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training of the neural network model used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "b1744a42-b7f4-4e2e-bd73-103793c59cd1",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C84",
+      "claim": "The image synthesis approach drew heavily from Deepdream.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach drew heavily from Deepdream (Mordvintsev et al., 2015; Deepdreaming with tensorflow, 2021), an approach used to visualize the learned features of pretrained neural networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological basis with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "7800badc-c79c-4349-9605-661d61c7654e",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C85",
+      "claim": "Data were acquired using a 3T Siemens Prisma scanner with a 64-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were acquired using a 3T Siemens Prisma scanner with a 64-channel head coil at the Yale Magnetic Resonance Research Center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MRI acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "fafa2a3d-2201-4c36-9686-35f7e74bb774",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C87",
+      "claim": "Each functional run contained 203 volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Each run contained 203 volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fMRI acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "22020646-bc6f-4c50-953d-b3a0e3a2f881",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C88",
+      "claim": "The automatic segmentation of hippocampal subfields (ASHS) software package was used to derive participant-specific medial temporal lobe regions of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "For each participant, their T1- and T2-weighted anatomical images were submitted to the automatic segmentation of hippocampal subfields (ASHS) software package (Yushkevich et al., 2015), to derive participant-specific medial temporal lobe regions of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ROI definition method with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "ec8729c6-21de-4e4c-8c9a-05fdd1027a44",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C89",
+      "claim": "An atlas containing 51 manual segmentations of hippocampal subfields was used for ASHS segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "We used an atlas containing 51 manual segmentations of hippocampal subfields (Aly and Turk-Browne, 2016a; Aly and Turk-Browne, 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the atlas used with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "ca73ef2a-dee5-480a-821f-7d85f2b0703a",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "claim_id": "C90",
+      "claim": "Freesurfer was used to create masks for V1, V2, lateral occipital (LO) cortex, fusiform gyrus (FG), parahippocampal cortex (PHC), and inferior temporal (IT) cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "For visual ROIs, freesurfer (http://surfer.nmr.mgh.harvard.edu/) was used to create masks for V1, V2, lateral occipital (LO) cortex, fusiform gyrus (FG), parahippocampal cortex (PHC), and inferior temporal (IT) cortex, for each participant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ROI definition method for visual regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "597b1b35-6463-464e-9d53-f50784d2acc5",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The nonmonotonic plasticity hypothesis (NMPH) proposes a U-shaped relationship between memory coactivation and representational change, where low coactivation leads to no change, moderate coactivation leads to differentiation, and high coactivation leads to integration. Prior studies have shown contradictory results regarding whether coactivation leads to differentiation, and no study has demonstrated the full U-shaped pattern predicted by NMPH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 establish the contradictory findings in prior literature, C3 and C20-C22 clearly define the NMPH theoretical framework with appropriate citations, and C24 identifies the gap that no prior study has demonstrated the full U-shape. These claims collectively establish a well-supported theoretical foundation and motivation for the current study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "6f440edc-4e2a-4f54-94e8-1a08163c6153",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A novel neural network image synthesis procedure was developed using GoogLeNet/Inception pretrained on ImageNet to create image pairs that varied parametrically in similarity at high-level visual layers. This approach was based on evidence that later DNN layers correspond to higher-order visual areas and predict neural responses in higher-order visual cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C82-C84 describe the methodological approach with appropriate technical details and citations. Claims C26-C27 provide the theoretical justification for using DNN layers to target high-level visual cortex, supported by multiple citations. The method is clearly described and theoretically grounded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "c522cebc-0b09-4535-9a29-7a18af2d1d86",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Model validation showed that the intended and actual similarity levels of synthesized images showed close correspondence in the highest four layers of the Inception model (r = 0.970, 0.983, 0.977, 0.985), while lower and middle layers showed no variation across pairs as intended.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 report specific quantitative validation results with correlation values and confidence that the image synthesis procedure achieved its intended goal. The high correlations (r > 0.97) in targeted layers and lack of variation in non-targeted layers demonstrate successful manipulation of similarity at the intended hierarchical level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "a0fba172-8ba6-43be-a697-aa67d0ec91cc",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Behavioral validation using an arrangement task showed that perceptual distance was strongly negatively associated with model similarity (r = -0.813, p < 0.0001), and every individual participant showed a negative correlation (mean r = -0.552, 95% CI = [-0.593 to -0.512]).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 provide converging behavioral evidence that the model-based similarity manipulation was perceptually meaningful to human observers. The strong group-level correlation and consistency across all individual participants (100% showing negative correlations) provide robust validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "5301da45-1198-4bbb-82da-29af915f5699",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neural validation showed that model similarity was positively associated with neural similarity in lateral occipital cortex (LO; r = 0.182, p = 0.007) and parahippocampal cortex (PHC; r = 0.125, p = 0.029), but negatively in V1 (r = -0.112, p = 0.038). Searchlight analysis revealed two large clusters in bilateral LO extending into posterior fusiform gyrus and occipital pole.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 provide neural validation that the model-based similarity manipulation affected representations in targeted high-level visual regions (LO, PHC) but not early visual cortex (V1 showed opposite pattern). The searchlight analysis provides spatial specificity. Statistical significance is reported with appropriate corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "d87b2987-1f16-4247-8001-f05e23a6a154",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Learning changed representations of paired images in the dentate gyrus (DG) as a U-shaped function of image similarity, with neural differentiation occurring only for moderately similar images. The theory-constrained cubic model was reliably associated with representational change in DG (r = 0.134, 95% CI = [0.007 0.267], p = 0.022), with reliable differentiation at similarity levels 5 and 6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C37 report the main finding with appropriate statistics showing the U-shaped pattern in DG. Claims C47-C49 and C59 provide converging descriptions of this pattern. The cubic model fit is statistically significant (p = 0.022) and the confidence interval excludes zero, supporting the U-shaped relationship predicted by NMPH.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "2403a1a3-78f9-437f-b9e7-7d3d7dcf779e",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The cubic model fit was not statistically reliable in CA2/3 (r = 0.082, p = 0.13), CA1 (r = 0.116, p = 0.10), or the whole hippocampus (r = 0.084, p = 0.15), though the U-shaped pattern was trending in CA2/3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 and C62 clearly report negative results for other hippocampal subfields with appropriate statistics. The p-values are above the significance threshold (p > 0.05) and confidence intervals include zero, indicating lack of statistical support for the U-shaped pattern in these regions. The acknowledgment of a trend in CA2/3 is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "fe57bab2-b232-4613-abe6-c0e94c20eba9",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Whole-brain searchlight analysis revealed two clusters showing the nonmonotonic pattern: right hippocampus extending into PHC and FG, and anterior cingulate extending into medial prefrontal cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 reports exploratory whole-brain results with specific anatomical locations, cluster sizes, peak t-values, and MNI coordinates. The results survived correction for multiple comparisons (p < 0.05 corrected), providing appropriate statistical rigor for whole-brain analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "648ffab3-194c-4863-8da5-3bead578af65",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "This study is the first to span coactivation continuously to reveal the full U-shape predicted by NMPH and provides the strongest evidence to date for the NMPH account of hippocampal plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C75 make claims about the novelty and significance of the findings. These are supported by the demonstration of the full U-shaped pattern in DG (C37) and the lack of such demonstration in prior literature (C24). The continuous parametric manipulation of similarity across 8 levels distinguishes this from prior 2-3 condition studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "3c10c0f7-6354-43bc-9d3e-cabcf4a8c7dc",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "This is the first demonstration of the efficacy of stimulus synthesis in manipulating high-level representational similarity in targeted brain regions in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by the successful validation results showing correspondence between model similarity and both behavioral (C31-C32) and neural (C33-C36) similarity in targeted high-level visual regions. The novelty claim is reasonable given the methodological innovation described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "119be78c-a50e-4d8e-be04-8eb8e2cb8ed6",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings that differentiation was reliable in DG fit with prior studies showing differentiation in combined CA2/3/DG ROIs and greater sparsity in DG. DG shows sparser activity than CA3, while CA3 shows strong attractor dynamics that may make moderate coactivation difficult to observe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C63-C67 contextualize the current findings within prior literature with appropriate citations. The theoretical explanation for why DG showed clearer effects (sparsity allowing sampling of low-to-moderate coactivation range) is logically consistent with the NMPH framework and supported by cited prior work on hippocampal subfield properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "f6d26096-eb8d-4ea7-92c0-7e3c0b856588",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The results are broadly consistent with prior differentiation findings but inconsistent with Schapiro et al. 2012, who reported integration for arbitrarily paired images. This difference may relate to methodological differences including transition probability structure and baseline visual feature overlap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 provide appropriate comparison to prior literature, noting both consistencies and inconsistencies. The proposed explanation for the discrepancy with Schapiro et al. 2012 (differences in transition probabilities and baseline similarity) is speculative but reasonable and appropriately qualified with 'may relate to.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "1cbda83d-8adb-4229-a660-13b8971794b7",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The fMRI study included 42 recruited participants, with 5 not completing the task and 1 excluded due to data quality issues, resulting in a final sample of 36 participants for the learning task and 41 for visual templating analyses. The behavioral validation study included 30 participants recruited through Amazon Mechanical Turk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 clearly describe participant recruitment, exclusions, and final sample sizes with appropriate transparency about attrition. The sample sizes (n=36 for main analysis, n=30 for behavioral validation) are reasonable for fMRI studies, though no power analysis is reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "896ed3d8-13ba-4ab7-83d4-e616a273aaed",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Data were acquired using a 3T Siemens Prisma scanner with 64-channel head coil, with 203 volumes per run. Hippocampal subfields were segmented using ASHS software with an atlas of 51 manual segmentations, and visual ROIs were defined using Freesurfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85 and C87-C90 provide standard methodological details for fMRI acquisition and ROI definition with appropriate citations to software packages and atlases. These methods are well-established in the field and appropriately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "a0d57d45-da3b-42af-af95-dd92efa24db6",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Experiences are encoded in distributed representations with overlapping neural populations that can shift during learning toward either integration (increased similarity) or differentiation (increased distinctiveness). Traditional Hebbian learning predicts integration with coactivation, but some studies show differentiation instead, and some show different outcomes in different hippocampal subfields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C19 provide appropriate background on memory representations and learning with citations to relevant prior work. These establish the theoretical context and empirical contradictions that motivate the NMPH. The claims accurately represent cited work and established principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "eedfd796-dc96-4825-b081-a386b1452767",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Three factors influence how strongly hippocampal representations of items A and B coactivate during statistical learning: overlap in high-level visual cortex representations, recurrent input from overlapping features within hippocampus, and residual activation of item A's representation in visual cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 describes the theoretical framework illustrated in Figure 1, identifying three sources of coactivation. This is a reasonable theoretical model based on known hippocampal connectivity and dynamics, though it is a simplification. The claim is appropriately presented as a theoretical framework rather than an empirical finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "9e95b265-0887-4ac3-bab7-51b22944f1e0",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Hippocampal neurons encode complex information from multiple sensory modalities as well as information about reward, social relevance, context, and time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 accurately summarize prior literature on hippocampal coding properties with appropriate citations. These claims provide important context for discussing limitations of the visual similarity manipulation approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "cece6bf3-82c9-40cb-a1b5-a6494b14c7db",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior work has shown hippocampal differentiation in experimental conditions involving faces, scenes, and complex navigation events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 accurately cite prior studies showing differentiation effects with different stimulus types. This provides context for discussing generalizability of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    },
+    {
+      "id": "029b20be-8555-4c43-b9a5-d5ecae821f90",
+      "content_id": "ef8023bc-c5c3-4fae-a957-7353bc70b50d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work has demonstrated brain-behavior relationships, indicating that changes in representational overlap can affect later behavioral performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 cite prior work showing brain-behavior relationships and draw a reasonable inference about the functional significance of representational change. This provides context for discussing the limitation that the current study did not assess behavioral consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:44.015429Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c37623de-5b33-4dac-aed8-a8798eea337e",
+      "result_id": "597b1b35-6463-464e-9d53-f50784d2acc5"
+    },
+    {
+      "claim_id": "5111a0ce-d5b7-453a-b015-bd368471174f",
+      "result_id": "597b1b35-6463-464e-9d53-f50784d2acc5"
+    },
+    {
+      "claim_id": "62a627ba-3117-48fb-b26a-374b32dd3d36",
+      "result_id": "597b1b35-6463-464e-9d53-f50784d2acc5"
+    },
+    {
+      "claim_id": "0304f58b-3868-4be1-ac52-53d9b7bdde74",
+      "result_id": "597b1b35-6463-464e-9d53-f50784d2acc5"
+    },
+    {
+      "claim_id": "1e25e935-fc06-4b08-965b-d5c5dafbea00",
+      "result_id": "597b1b35-6463-464e-9d53-f50784d2acc5"
+    },
+    {
+      "claim_id": "a2a53108-3293-4c4f-b7d9-668df4bc0b96",
+      "result_id": "597b1b35-6463-464e-9d53-f50784d2acc5"
+    },
+    {
+      "claim_id": "bb882a46-f32d-4fe1-b8bb-1e8fd4d7266f",
+      "result_id": "597b1b35-6463-464e-9d53-f50784d2acc5"
+    },
+    {
+      "claim_id": "5b7d6637-2da1-44ea-be6d-9513740cfac7",
+      "result_id": "597b1b35-6463-464e-9d53-f50784d2acc5"
+    },
+    {
+      "claim_id": "4f25d7f6-bb7a-4d00-b4fc-da6e4cda4641",
+      "result_id": "597b1b35-6463-464e-9d53-f50784d2acc5"
+    },
+    {
+      "claim_id": "52517e0a-508d-4295-8645-6d286a4b78e0",
+      "result_id": "6f440edc-4e2a-4f54-94e8-1a08163c6153"
+    },
+    {
+      "claim_id": "77df4307-ad93-4d8e-aa5d-36df2ec98a3a",
+      "result_id": "6f440edc-4e2a-4f54-94e8-1a08163c6153"
+    },
+    {
+      "claim_id": "90a3e048-7119-440c-9e88-de074907dbfa",
+      "result_id": "6f440edc-4e2a-4f54-94e8-1a08163c6153"
+    },
+    {
+      "claim_id": "91fef21e-d169-476b-9b92-8777425d216e",
+      "result_id": "6f440edc-4e2a-4f54-94e8-1a08163c6153"
+    },
+    {
+      "claim_id": "04354e74-8a24-4ad6-81fb-f0fcd22cdf81",
+      "result_id": "6f440edc-4e2a-4f54-94e8-1a08163c6153"
+    },
+    {
+      "claim_id": "b1744a42-b7f4-4e2e-bd73-103793c59cd1",
+      "result_id": "6f440edc-4e2a-4f54-94e8-1a08163c6153"
+    },
+    {
+      "claim_id": "8d683691-b252-4248-aceb-60998a4f5ea2",
+      "result_id": "c522cebc-0b09-4535-9a29-7a18af2d1d86"
+    },
+    {
+      "claim_id": "5f57e84b-8217-41e3-b5c0-0e2310cd0d0a",
+      "result_id": "c522cebc-0b09-4535-9a29-7a18af2d1d86"
+    },
+    {
+      "claim_id": "311a739f-0f95-4fa8-905b-984b3fe48762",
+      "result_id": "c522cebc-0b09-4535-9a29-7a18af2d1d86"
+    },
+    {
+      "claim_id": "3bb0be2b-d4b6-4256-8d61-a1de89d2bdd9",
+      "result_id": "a0fba172-8ba6-43be-a697-aa67d0ec91cc"
+    },
+    {
+      "claim_id": "3f0d6698-2c1c-4e0b-a43f-5815c508f74a",
+      "result_id": "a0fba172-8ba6-43be-a697-aa67d0ec91cc"
+    },
+    {
+      "claim_id": "931dcabf-1a66-40c7-b55f-4f84edf2aecf",
+      "result_id": "5301da45-1198-4bbb-82da-29af915f5699"
+    },
+    {
+      "claim_id": "d332b0bc-b750-4e69-9f17-a26c5650aa86",
+      "result_id": "5301da45-1198-4bbb-82da-29af915f5699"
+    },
+    {
+      "claim_id": "57f6302d-316a-4a3b-b864-913598e5144a",
+      "result_id": "5301da45-1198-4bbb-82da-29af915f5699"
+    },
+    {
+      "claim_id": "e2d5f73f-250d-411b-8ad5-e4c1a438f321",
+      "result_id": "5301da45-1198-4bbb-82da-29af915f5699"
+    },
+    {
+      "claim_id": "0e5d9233-3485-4616-a037-0bce209d25e8",
+      "result_id": "d87b2987-1f16-4247-8001-f05e23a6a154"
+    },
+    {
+      "claim_id": "1774894b-c583-4ff7-9653-269a188b43b1",
+      "result_id": "d87b2987-1f16-4247-8001-f05e23a6a154"
+    },
+    {
+      "claim_id": "cc7fc08b-7a8c-4d2e-b3ff-d757613a5d2e",
+      "result_id": "d87b2987-1f16-4247-8001-f05e23a6a154"
+    },
+    {
+      "claim_id": "988d1f08-3dc8-49b7-be6d-846107cce537",
+      "result_id": "d87b2987-1f16-4247-8001-f05e23a6a154"
+    },
+    {
+      "claim_id": "12e43889-0211-49ea-a36f-763515320f8a",
+      "result_id": "d87b2987-1f16-4247-8001-f05e23a6a154"
+    },
+    {
+      "claim_id": "9475e331-89d9-4b4d-9417-54164c21e412",
+      "result_id": "d87b2987-1f16-4247-8001-f05e23a6a154"
+    },
+    {
+      "claim_id": "14bc011e-d3bd-4608-9aa6-8221eec43558",
+      "result_id": "d87b2987-1f16-4247-8001-f05e23a6a154"
+    },
+    {
+      "claim_id": "dec1c93f-f428-42d0-af7e-b1bbe9b02fbf",
+      "result_id": "2403a1a3-78f9-437f-b9e7-7d3d7dcf779e"
+    },
+    {
+      "claim_id": "d1ab9ac9-a2f7-46a4-84db-4d21226ae536",
+      "result_id": "2403a1a3-78f9-437f-b9e7-7d3d7dcf779e"
+    },
+    {
+      "claim_id": "c1fb694e-04f3-4215-9fa9-97951085e90e",
+      "result_id": "2403a1a3-78f9-437f-b9e7-7d3d7dcf779e"
+    },
+    {
+      "claim_id": "cfbd0ae5-3b29-428f-b711-ced1079c668a",
+      "result_id": "2403a1a3-78f9-437f-b9e7-7d3d7dcf779e"
+    },
+    {
+      "claim_id": "d641f291-f6d5-4236-a1a8-06acdc4e0ffb",
+      "result_id": "fe57bab2-b232-4613-abe6-c0e94c20eba9"
+    },
+    {
+      "claim_id": "a7af942f-979a-4bcd-b0ed-d8a0dfb8c67b",
+      "result_id": "648ffab3-194c-4863-8da5-3bead578af65"
+    },
+    {
+      "claim_id": "3285118c-51a4-461c-b5a1-e9c39ed3eb3c",
+      "result_id": "648ffab3-194c-4863-8da5-3bead578af65"
+    },
+    {
+      "claim_id": "1878ef61-7148-4fa6-a6da-b55c226ad142",
+      "result_id": "3c10c0f7-6354-43bc-9d3e-cabcf4a8c7dc"
+    },
+    {
+      "claim_id": "f238fe61-b844-45c7-b9fd-d9c9c032ba71",
+      "result_id": "119be78c-a50e-4d8e-be04-8eb8e2cb8ed6"
+    },
+    {
+      "claim_id": "feaa2d7b-d4e0-44b5-a7c0-a42cf4070f4f",
+      "result_id": "119be78c-a50e-4d8e-be04-8eb8e2cb8ed6"
+    },
+    {
+      "claim_id": "ef8eaed1-c867-45c1-94c3-5661bd1b53d5",
+      "result_id": "119be78c-a50e-4d8e-be04-8eb8e2cb8ed6"
+    },
+    {
+      "claim_id": "0a43f278-56e6-4472-82a6-897a21f68a62",
+      "result_id": "119be78c-a50e-4d8e-be04-8eb8e2cb8ed6"
+    },
+    {
+      "claim_id": "d592c25a-fb95-4fc0-b512-9dfca40d3fc0",
+      "result_id": "119be78c-a50e-4d8e-be04-8eb8e2cb8ed6"
+    },
+    {
+      "claim_id": "fb750724-f06b-4f23-ab76-a5a9919b2a90",
+      "result_id": "119be78c-a50e-4d8e-be04-8eb8e2cb8ed6"
+    },
+    {
+      "claim_id": "06621aef-4ab9-4809-aa29-39a70933a7f5",
+      "result_id": "119be78c-a50e-4d8e-be04-8eb8e2cb8ed6"
+    },
+    {
+      "claim_id": "147dc5cc-8078-4f6d-981c-b6cc840bac25",
+      "result_id": "f6d26096-eb8d-4ea7-92c0-7e3c0b856588"
+    },
+    {
+      "claim_id": "364f74a9-c9af-451e-a258-78fbad569cd9",
+      "result_id": "f6d26096-eb8d-4ea7-92c0-7e3c0b856588"
+    },
+    {
+      "claim_id": "9a8f05d8-7a8d-4e18-b17d-9a231cb7ffe4",
+      "result_id": "f6d26096-eb8d-4ea7-92c0-7e3c0b856588"
+    },
+    {
+      "claim_id": "11e4c5ad-f180-49ef-8f3d-849dbc736902",
+      "result_id": "f6d26096-eb8d-4ea7-92c0-7e3c0b856588"
+    },
+    {
+      "claim_id": "bbb6d668-22dc-495d-809b-b9aafb8ba796",
+      "result_id": "f6d26096-eb8d-4ea7-92c0-7e3c0b856588"
+    },
+    {
+      "claim_id": "3991c309-63fb-480e-8eb9-8c1ea51afb1c",
+      "result_id": "1cbda83d-8adb-4229-a660-13b8971794b7"
+    },
+    {
+      "claim_id": "defbf034-eafb-4238-b70c-531df303be24",
+      "result_id": "1cbda83d-8adb-4229-a660-13b8971794b7"
+    },
+    {
+      "claim_id": "b9118a83-83a3-454e-8654-6f621e9f3710",
+      "result_id": "1cbda83d-8adb-4229-a660-13b8971794b7"
+    },
+    {
+      "claim_id": "ed44d8ab-e312-42df-abf4-6e85d203cae1",
+      "result_id": "1cbda83d-8adb-4229-a660-13b8971794b7"
+    },
+    {
+      "claim_id": "fdccf929-86fe-4d5f-9d5f-1f70a1583238",
+      "result_id": "1cbda83d-8adb-4229-a660-13b8971794b7"
+    },
+    {
+      "claim_id": "3beafd47-5875-42c8-a648-2fde0b775887",
+      "result_id": "1cbda83d-8adb-4229-a660-13b8971794b7"
+    },
+    {
+      "claim_id": "7800badc-c79c-4349-9605-661d61c7654e",
+      "result_id": "896ed3d8-13ba-4ab7-83d4-e616a273aaed"
+    },
+    {
+      "claim_id": "fafa2a3d-2201-4c36-9686-35f7e74bb774",
+      "result_id": "896ed3d8-13ba-4ab7-83d4-e616a273aaed"
+    },
+    {
+      "claim_id": "22020646-bc6f-4c50-953d-b3a0e3a2f881",
+      "result_id": "896ed3d8-13ba-4ab7-83d4-e616a273aaed"
+    },
+    {
+      "claim_id": "ec8729c6-21de-4e4c-8c9a-05fdd1027a44",
+      "result_id": "896ed3d8-13ba-4ab7-83d4-e616a273aaed"
+    },
+    {
+      "claim_id": "ca73ef2a-dee5-480a-821f-7d85f2b0703a",
+      "result_id": "896ed3d8-13ba-4ab7-83d4-e616a273aaed"
+    },
+    {
+      "claim_id": "6a0802dc-8e43-420c-a443-c4670e9d6dfe",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "4e5a8f4d-c208-408a-a6d2-d621f15ae12b",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "f7a4db14-8edd-4402-8df4-3b68d1539ed8",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "dee73a27-89c5-485b-b50b-035583d394bf",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "62d5902a-ebb2-4a26-ae69-acf363d7c390",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "7a3893ea-5925-4c2a-b80c-f1759bbc9e2f",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "565ae93c-b7e7-4b6b-b4f7-4fdee49db572",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "21edf675-04a4-4668-a174-8f0db011268b",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "aa545760-14f4-4904-8f03-83fb7edfe743",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "8e2ed1fa-5703-4d04-95ae-4d697902cd21",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "4aa4657b-d860-402f-86ba-fc70b8cc5698",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "8a9ccd4c-e6b9-4e7f-bb84-19425ff47f41",
+      "result_id": "a0d57d45-da3b-42af-af95-dd92efa24db6"
+    },
+    {
+      "claim_id": "25c15edb-b236-42b4-966b-c18d012f61bc",
+      "result_id": "eedfd796-dc96-4825-b081-a386b1452767"
+    },
+    {
+      "claim_id": "7bafc512-f9fe-4d04-bc37-e28e97206bc5",
+      "result_id": "9e95b265-0887-4ac3-bab7-51b22944f1e0"
+    },
+    {
+      "claim_id": "5ff6a830-e2ed-4daa-8e81-82c37e6e6127",
+      "result_id": "9e95b265-0887-4ac3-bab7-51b22944f1e0"
+    },
+    {
+      "claim_id": "4dda0ebb-99ca-42ef-8dc4-fab3c1425991",
+      "result_id": "9e95b265-0887-4ac3-bab7-51b22944f1e0"
+    },
+    {
+      "claim_id": "9455a418-3f9b-4ed8-81e2-e67ed084f410",
+      "result_id": "9e95b265-0887-4ac3-bab7-51b22944f1e0"
+    },
+    {
+      "claim_id": "5b644eb3-d514-462a-8570-9201c73decef",
+      "result_id": "9e95b265-0887-4ac3-bab7-51b22944f1e0"
+    },
+    {
+      "claim_id": "c44e8c53-1962-4cef-853b-80ff920ec7c5",
+      "result_id": "cece6bf3-82c9-40cb-a1b5-a6494b14c7db"
+    },
+    {
+      "claim_id": "8566a703-0351-47d2-be7e-e4288def9e3d",
+      "result_id": "cece6bf3-82c9-40cb-a1b5-a6494b14c7db"
+    },
+    {
+      "claim_id": "52f9f66c-f233-49f5-8cbf-6f3cd762fb9e",
+      "result_id": "029b20be-8555-4c43-b9a5-d5ecae821f90"
+    },
+    {
+      "claim_id": "36ecc834-8383-481b-82c2-443a06470209",
+      "result_id": "029b20be-8555-4c43-b9a5-d5ecae821f90"
+    }
+  ],
+  "comparisons": []
+}

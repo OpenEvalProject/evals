@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The Hfq-mMaple3 fusion protein is functional and comparable to wild-type Hfq. The hfq-mMaple3 strain showed comparable growth to WT, while \u0394hfq showed growth defects (C18, C19). Hfq-mMaple3 exhibited activity comparable to WT Hfq in both RyhB-mediated sodB mRNA degradation and MicA-mediated ompA mRNA degradation assays (C20, C21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent functional assays (growth curves and northern blots for two different sRNA-mRNA regulatory pairs) consistently demonstrate that the mMaple3 tag does not impair Hfq function. The \u0394hfq control appropriately shows loss of function, validating the assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Under normal growth conditions, Hfq-mMaple3 exhibits relatively uniform cellular distribution with slight cytoplasmic enrichment and similar diffusion in nucleoid and cytoplasm, but slower diffusion in the membrane. Hfq-mMaple3 showed uniform distribution (C22), slightly higher cytoplasm enrichment than nucleoid or membrane (C23), similar diffusion in nucleoid and cytoplasm (C24), and slower membrane diffusion possibly due to RNase E association (C25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization and diffusion measurements are internally consistent and supported by quantitative imaging data (Figure 1b-d). The interpretation of slower membrane diffusion due to RNase E is speculative but reasonable given known Hfq-RNase E interactions. Results are consistent with prior work using Dendra2-tagged Hfq.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Transcription inhibition by rifampicin increases Hfq diffusivity, indicating that a fraction of Hfq is associated with cellular RNAs, primarily mRNAs. Rifampicin treatment increased Hfq-mMaple3 diffusivity (C26), suggesting RNA association (C27). Control proteins showed no diffusivity changes (C28, C29), confirming the effect is not due to cellular milieu changes. Under the treatment conditions, mRNAs are preferentially degraded (C30), so the diffusivity change primarily reflects mRNA binding (C31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of appropriate negative controls (mMaple3 alone, sAB-70-mMaple3, scFv-GCN4-mMaple3) that do not bind RNA strengthens the conclusion that diffusivity changes reflect RNA binding. The interpretation that the effect is primarily due to mRNA is reasonable given the known half-lives of different RNA species, though some contribution from sRNAs cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Hfq binds mRNAs in cells primarily through the distal face, with minor contributions from the rim. Proximal face mutants (Q8A, F42A) showed similar diffusivity to WT (C32), rim mutants (R16A, R19D) showed minor increases (C33), while distal face mutants (Y25D, K31A) showed the largest increases approaching rifampicin-treated levels (C34). This supports that mRNA binding is primarily through the distal face (C35) with minor rim contribution (C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic mutagenesis of different Hfq faces provides strong evidence for face-specific mRNA binding. The graded effects (proximal < rim < distal) are internally consistent and support the conclusion. However, the mutations may have indirect effects on protein structure that could affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The majority of Hfq proteins are occupied by mRNAs during exponential growth. WT Hfq showed 57\u00b11% slow (mRNA-associated) and 43\u00b11% fast (mRNA-free) populations (C37, C38), consistent with Hfq being largely occupied (C39). Distal face mutants Y25D and K31A had the most compromised mRNA binding with only 23\u00b110% and 26\u00b14% mRNA-associated populations (C40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The population analysis using cumulative distribution function fitting is methodologically sound (Figure 2\u2014figure supplement 2). The assignment of slow/fast populations to mRNA-associated/free states is reasonable based on the rifampicin experiments, though the authors acknowledge that sRNA binding may contribute to both populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Class I and Class II sRNAs access mRNA-occupied Hfq through different mechanisms: Class I sRNAs (RyhB, SgrS) can co-occupy Hfq with mRNAs, while Class II sRNAs (ChiX) directly compete and displace mRNAs. RyhB/SgrS overexpression did not change Hfq diffusivity or mRNA-associated fraction (C41), while ChiX dramatically increased diffusivity and lowered mRNA-associated fraction (C42). ChiX effectively displaced ptsG from Hfq in vitro (C43). RyhB and ChiX levels were comparable (C44). EMSA data support RyhB can co-occupy Hfq with non-target mRNA (C45). The mechanisms may generalize to other class members (C46, C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of in vivo tracking and in vitro EMSA provides strong converging evidence for the different mechanisms. The ddPCR data addressing sRNA abundance is critical for ruling out the alternative explanation that RyhB/SgrS simply cannot accumulate. The appearance of a ternary complex band in EMSA for RyhB but not ChiX supports the co-occupancy model, though some direct displacement by RyhB was also observed in vitro.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Class II sRNA displacement of mRNAs requires both proximal face binding and strong AAN motifs. ChiX lost its ability to displace mRNAs in the Q8A (proximal face) mutant background (C48), indicating proximal face binding is critical for displacement (C49). Deletion of AAN motifs progressively reduced ChiX's ability to displace mRNAs (C50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic analysis of ChiX requirements (proximal face binding and AAN motif number) provides mechanistic insight. The ddPCR data showing similar ChiX levels across conditions rules out expression differences as an explanation. The results support a stepwise binding model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Hfq-RNase E interaction facilitates recycling of Hfq from the mRNA-associated form through mRNA degradation. In RNase E mutant backgrounds (rne131, rne\u039414), Hfq diffusivity became less sensitive to rifampicin (C51), with ~75% becoming mRNA-free compared to ~89% in WT rne (C52), suggesting more mRNAs remain bound without Hfq-RNase E interaction (C53). This hints that the interaction helps recycle Hfq through mRNA degradation (C54). The Q8A mutant showed only minor differences from WT, suggesting recycling can occur beyond sRNA-dependent pathways (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of two independent RNase E mutants (rne131 and rne\u039414) strengthens the conclusion. The Q8A control is important for distinguishing sRNA-dependent from sRNA-independent effects. However, the interpretation that Hfq-RNase E interaction promotes mRNA degradation is somewhat indirect, as direct mRNA degradation rates were not measured in these backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Hfq facilitates turnover of certain mRNAs by binding through the distal face and recruiting RNase E, independent of sRNA-mediated regulation. In WT rne background, sodB, ompX, and sdhC showed 47% to 2.2-fold increased half-lives in hfq Y25D vs WT (C56). In rne131 background, all mRNAs showed increased half-lives (1.4-3.7-fold) compared to WT rne, but differences between WT and Y25D Hfq were diminished (C57, C58). This supports that Hfq facilitates mRNA turnover through distal face binding and RNase E recruitment (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design systematically tests the requirements for Hfq-mediated mRNA turnover by examining effects of both Hfq distal face mutation and RNase E mutation. The knockout of corresponding sRNAs is critical for demonstrating sRNA-independence. The convergence of effects (Y25D mutation and rne131 mutation both stabilize mRNAs, and their combination shows no additive effect) supports the proposed mechanism. However, the possibility of unknown sRNAs contributing cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "RppH-mediated decapping is not required for Hfq-mediated regulation of mRNA turnover. In \u0394sRNA\u0394rppH background, sdhC half-life was ~2.6-fold higher than in \u0394sRNA background (C60), but Y25D mutation still caused ~90% increase in half-life (C61), suggesting RppH decapping is not required for Hfq-mediated regulation (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiment directly tests whether the 5'-monophosphate-dependent RNase E activation pathway is required for Hfq-mediated mRNA turnover. The persistence of the Y25D effect in the \u0394rppH background supports that Hfq can recruit RNase E through a decapping-independent mechanism. However, this conclusion is based on a single mRNA (sdhC) and may not generalize to all Hfq-regulated mRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Strong Hfq-binding sRNAs can decoy Hfq from regulating mRNA turnover. WT ChiX increased sdhC half-life by ~70% (C63), while mutant ChiX lacking two AAN motifs did not significantly increase half-life (C64), consistent with reduced Hfq binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiment demonstrates that sRNA competitors can modulate Hfq's regulatory function on mRNA turnover. The use of ChiX mutants with reduced AAN motifs provides a control showing the effect depends on Hfq binding strength. This result connects the earlier findings on sRNA competition with the mRNA turnover regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on Hfq structure, function, and interactions with RNAs and RNase E. These claims establish the known properties of Hfq as an RNA chaperone, its structural features (homohexameric with proximal, distal, and rim faces), RNA binding preferences, sRNA classification, and interactions with RNase E.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, appropriately cited. They provide necessary background context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Summary of main findings from the abstract and discussion. These claims summarize the key conclusions: Hfq exhibits widespread mRNA-binding through the distal face (C65, C66), sRNAs can co-occupy or displace mRNAs in a face-dependent manner (C67), Hfq can recruit RNase E to promote mRNA turnover independent of sRNAs (C68), and this function can be decoyed by strong distal face-binding sRNAs (C69). Additional interpretations include that Hfq is largely occupied by mRNAs during growth (C70), most are class I mRNAs (C71), class II sRNA binding is stepwise (C72), RNase E facilitates Hfq recycling (C73), and Hfq facilitates certain mRNA turnover through distal face binding and RNase E recruitment (C74, C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims are supported by the experimental results described in the other claim groups. They represent the authors' interpretations and conclusions, which are generally well-supported by the data, though some involve reasonable speculation (e.g., stepwise binding mechanism).",
+    "result_type": "MAJOR"
+  }
+]

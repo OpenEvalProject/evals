@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C83",
+      "C84"
+    ],
+    "result": "LiCre is a single-chain light-inducible Cre recombinase consisting of AsLOV2 fused at position 20 of a Cre variant with E340A and D341A mutations, plus an additional A\u2192D mutation at the fusion junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21, C83, and C84 collectively establish the molecular composition of LiCre. The construct was validated through systematic screening (Figure 2c), sequencing confirmed the mutations (C84), and functional assays demonstrated light-dependent activity. The design is well-documented with clear structural rationale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C74",
+      "C75"
+    ],
+    "result": "The \u03b1A and \u03b1N helices of Cre cooperatively stabilize the active tetramer complex through inter-unit contacts, with E340 and D341 playing critical roles in complex stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C75 describe structural features supported by PDB data (1NZB), mutational analysis (Figure 1d-g), and computational simulations (Figure 1f). The genetic interactions between N-terminal and C-terminal mutations (C72-C73) provide strong evidence for cooperative stabilization. However, the computational model is described as 'simplistic' which introduces some uncertainty about quantitative predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Systematic deletion and mutation analysis reveals that C-terminal residues beyond position 337 are essential for Cre activity, while N-terminal deletions show context-dependent effects based on C-terminal mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C73 report experimental data from Figure 1d and 1g with appropriate controls (wild-type Cre showing 100% activity). The genetic interactions are clearly demonstrated with quantitative measurements and statistical significance. Sample sizes (n=3 independent transformants) are adequate for this type of assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Computational simulations predict that E340A D341A mutations lower the free-energy barrier for displacing the \u03b1N helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is based on 'simplistic force-field model' simulations (Figure 1f). While the prediction is consistent with experimental observations (C18), the authors acknowledge the model's limitations. The reduced structural model (removing distant residues, implicit solvation) may not capture all relevant interactions. Additional validation would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cre-VVD fusion constructs did not produce light-dependent recombinase activity, even with destabilizing C-terminal mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 report negative results from systematic testing of Cre-VVD fusions (Figure 2\u2014figure supplement 1). The interpretation of E340R mutations (C78) is reasonable based on electrostatic considerations. These negative results appropriately guided the shift to AsLOV2-based designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C20"
+    ],
+    "result": "AsLOV2 fusions to wild-type Cre at positions 17, 19, 27, and 32 showed light-dependent activity, with position 32 displaying the highest induction (15% dark to 50% light).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C20 describe screening results with appropriate validation through plasmid rescue and re-transformation (Figure 2a, Figure 2\u2014figure supplement 2). The high variability between transformants (noted in text) is acknowledged. However, the 15% background activity of LOV_Cre32 was considered too high, motivating further optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Junction mutagenesis of LOV_Cre32 reduced residual activity but also decreased induced activity and increased variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 report results from degenerate primer mutagenesis (Figure 2b). The trade-off between reduced background and reduced induced activity is clearly documented. This negative result appropriately motivated the alternative strategy of combining AsLOV2 with C-terminal mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C30",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "LiCre can be activated within 2-5 minutes of blue light illumination, with maximal activity (~65% switched cells) achieved at 90 min illumination at 36.3 mW/cm\u00b2, and minimal effective intensity between 0.057-1.815 mW/cm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C30, C85-C87 report dose-response and kinetics data from Figures 3a-b and 4e. The qPCR validation (C30) provides orthogonal confirmation of flow cytometry results. Sample sizes are adequate (n=3-10 colonies). The rapid activation (2-5 min) is a key performance metric well-supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C29",
+      "C56",
+      "C57",
+      "C58",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "LiCre outperforms nMag/pMag and CRY2L348F/CIB1 split Cre systems in yeast, showing faster activation (significant at 2 min vs 30 min), stronger induced activity, and lower background (~0% vs ~6% for nMag/pMag).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C90 report comparative data from Figure 3c-d. The validation of nMag/pMag (C88) and failure to observe CRY2L348F/CIB1 activity (C89) are clearly documented. The comparison uses matched conditions (light intensity per original authors' recommendations). However, the failure with CRY2L348F/CIB1 contradicts the original publication and lacks mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "LiCre showed higher activity under PMET17 promoter compared to PGAL1 promoter at comparable illumination conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 compares data from Figures 3a and 2c. The interpretation attributing differences to promoter/media is reasonable but not definitively proven since multiple variables changed simultaneously. This is appropriately presented as 'likely results from' rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Blue light exposure at 35.6 mW/cm\u00b2 for 1 hour does not affect yeast viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 reports CFU counting data (Figure 3\u2014figure supplement 1) showing no significant differences between illuminated and non-illuminated samples. This control is important for validating that observed effects are due to LiCre activation rather than phototoxicity. Statistical analysis (no significant difference) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C60",
+      "C94",
+      "C95"
+    ],
+    "result": "LiCre has a faster photocycle than nMag/pMag split Cre, responding to 0.5 s pulses every 10 s but not to pulses every 2 min, consistent with AsLOV2's ~80 s decay rate versus VVD's ~18,000 s decay rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C95 integrate literature values (C26-C27 from Pudasaini et al., 2015) with experimental data (Figure 3f-g). The periodic stimulation experiments directly test photocycle dynamics. The interpretation linking pulse response to decay rates is logical and well-supported. This demonstrates superior temporal precision for LiCre.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C97",
+      "C98"
+    ],
+    "result": "DNA excision by LiCre does not continue after light is switched off, with similar excision frequencies measured immediately versus 90 minutes post-illumination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C97-C98 report qPCR data (Figure 4f) showing no increase in excision after returning to darkness. This is consistent with the fast photocycle (C26) and demonstrates tight temporal control. The experimental design appropriately tests whether active enzyme persists after illumination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C99"
+    ],
+    "result": "LiCre photoactivation is approximately fourfold more efficient in stationary phase compared to exponential growth phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C99 report qPCR data (Figure 4g) comparing growth phases. The observation is clearly documented (n=10 colonies) but the mechanism remains unexplained ('reasons for this difference remain to be determined'). The interpretation for bioproduction applications (C99) is reasonable speculation but not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C104"
+    ],
+    "result": "LiCre enables light-controlled switching ON of \u03b2-carotene production in yeast, increasing intracellular carotenoid concentration from background to ~200 \u03bcg/g within 72 hours of illumination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33-C35, C104 describe the carotenoid production application (Figure 5c-d). The experimental design is sound with appropriate controls (wild-type Cre, empty vector). Quantification by spectrophotometry at 449 nm is standard. The biological context (C33-C34 citing prior work) is well-established. This demonstrates practical biotechnology application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C105"
+    ],
+    "result": "LiCre enables light-controlled deletion of the essential ERG9 gene, with illuminated cultures losing ~23% viability while dark cultures remain fully viable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C105 describe ERG9 deletion experiments (Figure 5f). The essentiality of ERG9 (C36) is well-established (Fegueur et al., 1991). The experimental design using viability as a readout is clever. However, only ~23% cell death suggests incomplete penetrance of the deletion, which could reflect incomplete LiCre activation or cellular heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C106"
+    ],
+    "result": "LiCre functions in human cells with 5% residual and 31% induced activity at 3.6 mW/cm\u00b2, outperforming Magnets-opti (50% background) and showing similar induced activity to original nMag/pMag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38-C40, C106 report lentiviral delivery and human cell data (Figure 6). The high background of Magnets-opti (C39) is surprising and contradicts the mouse transgenic data from Morikawa et al., 2020, suggesting expression level or context-dependent effects. The qPCR control for particle load is appropriate. However, residual activity in human cells (5-10%) is higher than in yeast.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The proposed mechanism of LiCre photoactivation involves steric blocking by AsLOV2 in the dark state and mutual interference between J\u03b1 and \u03b1A helices, with light-induced J\u03b1 unfolding liberating the multimerization interface and promoting \u03b1A folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C44 present a mechanistic model based on structural modeling (Figure 7). While the model is logical and consistent with known LOV domain behavior, it remains speculative ('likely,' 'may'). No direct structural data (e.g., crystallography, SAXS, crosslinking-MS) is provided to validate the proposed conformational changes. The model generates testable predictions but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C59"
+    ],
+    "result": "LiCre's single-chain design avoids limitations of split Cre systems including stoichiometry issues, incomplete self-cleavage, and fourth-power dependence on expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51, C59 discuss advantages of single-chain design, citing relevant literature (Meador et al., 2019; Morikawa et al., 2020). The mathematical argument about fourth-power dependence (C46) is logical given the tetrameric requirement. The cited issues with IRES (C48) and self-cleaving peptides (C49-C50) are well-documented. The interpretation (C59) linking simplicity to faster response is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Literature reports indicate variable performance of CRY2/CIB1 split Cre systems, with some studies showing extremely low or variable activity, while nMag/pMag has been validated by multiple independent laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 cite multiple studies (Kawano et al., 2016; Morikawa et al., 2020; Takao et al., 2020; Allen et al., 2019; Weinberg et al., 2019). This provides context for the authors' failure to observe CRY2L348F/CIB1 activity (C89). However, the authors' inability to reproduce published results warrants more investigation into potential technical differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The PA-Cre3.0 authors attributed abolished residual activity to reduced transgene expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 accurately cites Morikawa et al., 2020. However, the authors' own data showing high Magnets-opti background in human cells (C39) contradicts this, suggesting expression level alone may not explain the differences. This highlights the importance of experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The faster photocycle of LiCre offers higher temporal precision for induction of recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is a logical inference from the photocycle data (C60, C28). The ability to respond to 0.5 s pulses every 10 s demonstrates temporal precision. However, the practical significance depends on the application\u2014for some uses, the slower cycling of nMag/pMag might be advantageous (memory effect).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "LiCre enables light-triggered cell growth on selective medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 describes the HIS3 reporter experiment (Figure 4a). The visual result is clear and demonstrates a practical application. However, this is essentially a different readout of the same recombination activity already measured by other methods, so it provides validation rather than new information about LiCre properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Carotenoid production in yeast involves metabolic trade-offs between biomass (ergosterol) and product (\u03b2-carotene) pathways competing for FPP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 describe established knowledge about carotenoid production and yeast metabolism, appropriately cited (Verwaal et al., 2007, 2010). This provides biological context for the LiCre application but represents prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on Cre/LoxP system, LOV domains, and existing inducible recombinase systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 accurately describe established knowledge with appropriate citations. These provide necessary context but represent prior work rather than new findings. The descriptions are accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "LiCre provides a cheap, simple, low-background, highly efficient, and fast-responding method for light-induced recombination that works in both yeast and mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 summarize the overall findings. The characterization as 'cheap' and 'simple' is supported by the single-chain design and lack of chemical requirements. 'Low-background' is validated in yeast but less so in human cells (5-10%). 'Highly efficient' and 'fast-responding' are well-supported by comparative data. Function in both cell types is clearly demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

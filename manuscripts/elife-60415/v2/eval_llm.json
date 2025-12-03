@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors propose a novel spatial proofreading mechanism where substrate binding and product formation occur at distinct physical locations, with diffusion time used to discriminate between correct and incorrect substrates. When diffusion delay exceeds substrate unbinding timescales, very low error rates can be achieved, potentially outperforming traditional finite-step proofreading schemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20-C23 collectively establish the core theoretical mechanism through mathematical modeling (Equations 1-7, Figure 2). The model demonstrates exponential fidelity enhancement with diffusion time (Equation 6) and shows spatial proofreading can achieve effective proofreading steps n~L (Equation 7), supporting the claim of outperforming finite-step schemes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C69",
+      "C70",
+      "C116"
+    ],
+    "result": "Spatial proofreading does not require direct ATP/GTP hydrolysis by the enzyme itself; instead, energy costs are outsourced to gradient maintenance mechanisms. This liberates enzymes from proofreading-specific structural features, allowing any equilibrium enzyme with a localized effector to potentially proofread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C69-C70, C116 are supported by thermodynamic analysis (Equations 8-10) showing energy dissipation occurs through gradient maintenance rather than enzyme hydrolysis. The mathematical framework demonstrates this decoupling is theoretically sound, though experimental validation of 'any equilibrium enzyme' (C25) would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C52",
+      "C53",
+      "C55",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The spatial proofreading scheme exhibits a tunable speed-fidelity trade-off controlled by substrate localization length scale and diffusion time. An optimal intermediate regime exists where moderate speed reduction yields high fidelity enhancement, with tighter substrate localization reducing speed but increasing accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C52-C53, C55, C58-C60 are well-supported by Figure 3 showing Pareto-optimal fronts and density profiles in different diffusion regimes. The mathematical analysis demonstrates the trade-off quantitatively, and comparison to traditional proofreading (C60, citing Murugan et al., 2012) provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85"
+    ],
+    "result": "Power dissipation scales logarithmically with fidelity in the optimal regime, meaning linear increases in energy dissipation yield exponential error reduction. Beyond the optimal driving force range, additional error correction becomes increasingly costly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82, C85 are supported by Figure 4 showing log-linear scaling in the bulk regime. The comparison to E. coli chemoreceptor adaptation (C81-C82, Lan et al. 2012) provides independent validation of this scaling relationship in biological systems. The thermodynamic analysis (Equations 8-11) rigorously establishes the energetic constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Spatial proofreading achieves fidelity enhancement scaling as (\u03b7/\u03b7_eq)_max \u2248 exp(\u03b2\u0394\u03bc)/(\u03b2\u0394\u03bc), matching the theoretical limit previously accessible only to infinite-state traditional proofreading schemes. This suggests spatial proofreading outperforms finite-state schemes in peak error reduction capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by mathematical derivation (Appendix 2.2) and comparison to prior theoretical work (Qian 2006; Ehrenberg and Blomberg 1980). The scaling relationship is rigorously derived from the model, and the interpretation as 'infinite spatial filters' (C93) provides mechanistic insight. However, this is a theoretical comparison; experimental validation would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "A biochemically detailed model using kinase/phosphatase gradient formation with experimentally constrained parameters demonstrates that spatial proofreading can achieve ~10-fold fidelity enhancement at reasonable enzyme binding rates (up to ~10 s\u207b\u00b9), though not cost-efficiently. The mechanism is most effective when enzyme-substrate binding is slow enough to maintain exponential substrate gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C99-C102, C104-C105, C110-C111, C114 are supported by Figure 5 showing fidelity vs. binding rate with realistic parameters (D=1 \u03bcm\u00b2/s, k_p=5 s\u207b\u00b9, off-rates 0.1-1 s\u207b\u00b9). The model uses established gradient formation mechanisms (cited: Kholodenko 2006, Brown & Kholodenko 1999) and parameter ranges from literature (Cui & Mehta 2018, Gascoigne et al. 2001). The 'not cost-efficient' caveat (C110) is important but not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Spatial proofreading is more adaptable than traditional schemes because it decouples time delay from energy dissipation, allowing cells to tune the speed-fidelity trade-off by adjusting gradient length scales without requiring structural mutations or disrupting cellular ATP/ADP ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C117-C120 are supported by the demonstrated tunability in Figure 3 and the thermodynamic analysis showing independent control of diffusion time and driving force. The comparison to traditional schemes (C118, C31) correctly identifies their limitations. However, the claim that cells actually use this tunability in vivo remains speculative without experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Spatial proofreading is experimentally challenging to identify because it lacks dedicated structural features typical of proofreading enzymes. In vitro reconstitution in well-mixed assays would show poor fidelity compared to in vivo measurements, even with all molecular components present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C121-C123 logically follow from the mechanism's dependence on spatial gradients (which would be absent in well-mixed in vitro assays) and lack of structural signatures. This is a reasonable inference from the model, though it remains a prediction requiring experimental testing. The claim is internally consistent with the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "The minimal model assumes low substrate concentrations (keeping enzymes mostly free), slow catalysis, and identical catalysis rates for both substrates. These assumptions enable analytical solutions and are justified as optimal for proofreading performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C44 describe modeling assumptions that are mathematically justified (C40 enables linearity; C44 mirrors Hopfield 1974). Claim C41 is supported by analysis in Appendix 5. However, the biological relevance of these assumptions is not fully validated\u2014real systems may operate outside these regimes. The assumptions are reasonable for theoretical exploration but limit direct applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The model is extended to scenarios where right and wrong substrates have different localization length scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C36 states this extension exists in Appendix 4, but the appendix content is not provided in the manuscript excerpt. Without access to this analysis, the validity and implications of this extension cannot be evaluated. This appears to be a straightforward generalization but requires verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The calculated power dissipation accounts only for the additional cost of maintaining gradients against enzymatic homogenization, not the baseline cost of creating gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 provide important clarification about what is included in the thermodynamic analysis (Equation 8). This distinction is conceptually clear and analogous to the difference between ATP synthase work and ATP hydrolysis by proofreading enzymes. The clarification is appropriate for interpreting Figure 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "The spatial proofreading framework can be extended to alternative configurations (localized enzymes with delocalized substrates) and to signaling cascades where phosphatase activity differences create magnified concentration ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 propose reasonable extensions supported by citations (Kalab et al. 2002, Nalbant et al. 2004 for C124; Roy & Cyert 2009, Bauman & Scott 2002, Kholodenko 2006 for C125). These are logical generalizations of the framework, though they remain theoretical proposals without explicit modeling or experimental validation in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Spatial gradients for proofreading can be created through multiple mechanisms including kinase/phosphatase systems, passive diffusion with active degradation (e.g., morphogens like Bicoid), active transport with diffusion, or simple compartmentalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 describe established gradient formation mechanisms. C127 (Bicoid) is well-documented in developmental biology. C128 (compartmentalization) is a straightforward implementation. These claims correctly identify potential physical implementations of the theoretical framework, though specific proofreading applications remain to be demonstrated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Several biological processes involving spatial transport and substrate specificity are identified as potential examples of spatial proofreading, including mRNA localization in polarized cells and lipid transfer between membrane domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C133 describe real biological processes (supported by citations: Parton et al. 2014, Martin & Ephrussi 2009 for mRNA; Lev 2010 for lipids) that share features with the spatial proofreading model. However, these are presented as speculative examples without evidence that these systems actually use spatial proofreading for error correction. The processes exist, but their connection to proofreading is hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Spatial proofreading may be applicable to protein secretion quality control, membrane protein targeting by signal recognition particles, Golgi glycosylation reactions, and synthetic morphogen gradient systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C138 propose potential applications with supporting citations for the biological processes (Ellgaard & Helenius 2003, Arvan et al. 2002; Rao et al. 2016, Chio et al. 2017; Jaiman & Thattai 2020; Toda et al. 2020, Stapornwongkul et al. 2020). However, these are entirely speculative\u2014no evidence is provided that spatial proofreading actually operates in these systems. These are reasonable hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "Enzymatic reactions may acquire de novo proofreading capabilities by coupling to pre-existing spatial gradients in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 represents the main conceptual conclusion of the work. It is supported by the theoretical framework demonstrating that spatial gradients can enable proofreading without dedicated enzyme features (C3-C26). However, this remains a theoretical prediction\u2014experimental demonstration that enzymes actually acquire proofreading through gradient coupling would be needed for full validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Kinetic proofreading is an established nonequilibrium error correction mechanism used in DNA replication, transcription, translation, signal transduction, and pathogen recognition, operating by inducing delays between substrate binding and product formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C13 describe established knowledge about kinetic proofreading, supported by appropriate citations (Hopfield 1974, Ninio 1975, and specific citations for each application). These are accurate representations of prior work and provide necessary background context. No issues identified with these background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Traditional proofreading schemes require dedicated structural features (exonuclease pockets, phosphorylation sites, ATP/GTP hydrolysis sites), limiting the number of confirmed proofreading enzymes and leading to the assumption that generic enzymes lack active error correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C19 accurately describe limitations of traditional proofreading, supported by appropriate citations (Kunkel 2004, McKeithan 1995, Goldstein et al. 2004, Yamane & Hopfield 1977, Rodnina & Wintermeyer 2001). These claims correctly characterize the conventional understanding that the authors are challenging. The inference about limited numbers (C18) and assumptions about generic enzymes (C19) are reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Traditional proofreading relies on nucleotide chemical potentials and cannot be modulated without physiological disruptions. Concentration gradients arise in multiple cellular contexts and can be formed through various mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide context for why spatial proofreading offers advantages. C31 correctly describes constraints on traditional schemes. C32-C33 are supported by appropriate citations (Bivona et al. 2003, Caudron et al. 2005, Kholodenko 2006, Wu et al. 2018, Kholodenko 2003) documenting gradient existence and formation mechanisms. These background claims are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C72"
+    ],
+    "result": "Proofreading is inherently a nonequilibrium mechanism with associated free energy costs, and thermodynamic principles dictate minimum energy dissipation for gradient maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C72 state fundamental thermodynamic principles correctly. C68 is established knowledge about proofreading. C72 correctly invokes thermodynamic constraints on gradient maintenance. These provide the theoretical foundation for the energetic analysis (Equations 8-10) and are appropriately applied.",
+    "result_type": "MINOR"
+  }
+]

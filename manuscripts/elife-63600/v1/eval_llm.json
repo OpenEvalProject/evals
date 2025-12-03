@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Elavl1 was identified as enriched in premigratory cranial neural crest cells through scRNA-seq analysis. Analysis of published scRNA-seq data from avian embryos at the 5-6 somite stage identified three distinct clusters (neural, premigratory, and delaminating/migratory), and Elavl1 was the only gene associated with all three GO terms ('binds to 3\u2032-UTR', 'stabilizes RNA', 'regulates translation') that was abundantly expressed in isolated cranial neural crest cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C35 are well-supported by the scRNA-seq analysis shown in Figure 1. The bioinformatic approach using GO term analysis is appropriate, and the identification of Elavl1 as uniquely meeting all three criteria is clearly demonstrated. The data presentation includes appropriate visualizations (UMAP plots, feature plots, Venn diagrams) supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Elavl1 expression pattern during neural crest development was characterized by immunostaining. Elavl1 was absent from Pax7-expressing NPB cells at HH8-, became enriched throughout the neural tube and overlapped with Pax7 in premigratory cranial neural crest cells as the neural tube closed, and remained expressed in migratory neural crest cells following EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by the immunostaining data shown in Figure 2. The temporal progression of Elavl1 expression is clearly documented across multiple developmental stages with appropriate markers (Pax7). The conclusion that Elavl1 is expressed in specified, premigratory cranial neural crest cells and retained during EMT is well-supported by the imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Elavl1 knockdown resulted in specific reduction of neural crest specification genes. Elavl1 knockdown achieved 61.4\u00b10.9% of control expression (p<0.001) and caused significant reduction in Axud1 (73.7\u00b13.1%, p=0.03), FoxD3 (61.3\u00b15.5%, p=0.002), and Draxin (66.6\u00b11.8%, p=0.03) transcript levels, while Pax7 (87.4\u00b13.1%, p=0.1) and Tfap2b (98.2\u00b17.0%, p=0.6) were unaffected, indicating a specific defect in a subset of genes required for cranial neural crest specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are well-supported by the quantitative HCR data shown in Figure 3. The morpholino knockdown efficiency is validated, and the differential effects on various neural crest genes are clearly demonstrated with appropriate statistical tests (Wilcoxon signed-rank test, paired t-test). The conclusion of specificity is justified by the selective effects on different genes. Sample sizes are adequate (n=4-10 embryos).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Elavl1 knockdown caused premature neural crest delamination without affecting total cell number. While total Pax7+ cells were unchanged (101.3\u00b14.5%, p=0.6), there was a significant increase in delaminated cells (139.4\u00b18.4%, p=0.002) and decrease in cells retained in the dorsal neural tube (66.0\u00b15.3%, p=0.001). This premature delamination resulted in decreased cranial neural crest emigration away from the midline (63.6\u00b14.1%, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by quantitative immunostaining data shown in Figure 3H-I and Figure 3\u2014figure supplement 2. The cell counting methodology is appropriate, and the statistical tests (one-sample Wilcoxon signed-rank test, Wilcoxon matched-pairs signed-rank test) are correctly applied. The conclusion that Elavl1 regulates specification and prevents premature delamination is well-supported by the data showing redistribution of cells without change in total number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "RNA-seq analysis identified specific targets of Elavl1 during neural crest specification. Among differentially expressed genes, 12 were significantly downregulated, with four (Axud1, Draxin, BMP4, Msx1) having established roles in neural crest development. Several canonical neural crest genes (Pax7, Tfap2b, Snai2, Sox9, Zeb2) were unaffected, suggesting Elavl1 targets specific RNAs rather than broadly binding neural crest gene transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by the RNA-seq data shown in Figure 4 and Figure 4\u2014figure supplement 1. The differential expression analysis is appropriate, and the filtering criteria (average normalized count >250, >1.5-fold change, p<0.05) are reasonable. The validation of key targets by HCR strengthens the findings. The conclusion of specificity is well-supported by the selective effects on different genes. However, the manuscript notes that three biological replicates were used, which is at the lower end for RNA-seq studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "FoxD3 downregulation with Elavl1 knockdown is likely indirect through loss of Axud1. FoxD3 failed to meet stringency cutoff during RNA-seq analysis due to low expression at the examined stages and is likely downregulated due to indirect effects from loss of Axud1, making it unlikely to be a bona fide target of Elavl1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are reasonably supported by the RNA-seq data and prior knowledge about the Axud1-FoxD3 regulatory relationship (cited as Sim\u00f5es-Costa et al., 2015b). The reasoning is logical: FoxD3 was detected by HCR (Figure 3D) but not by RNA-seq due to low expression, and the known regulatory relationship between Axud1 and FoxD3 provides a plausible indirect mechanism. However, this remains an inference rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Draxin was identified as the primary target for stabilization by Elavl1 through RNA decay assays and binding site analysis. Among all transcripts tested (Draxin, Axud1, BMP4, Msx1, Pax7), only Draxin had significant reduction in transcript stability with Elavl1 knockdown (p=0.001). The Draxin 3\u2032-UTR contains four high probability Elavl1-binding sites, while other 3\u2032-UTRs contained only one (BMP4, Msx1) or none (Axud1, Pax7, Tfap2b).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are well-supported by the RNA decay assay data shown in Figure 4D and the bioinformatic analysis shown in Figure 4\u2014figure supplement 2. The actinomycin D chase experiment is an appropriate method to measure transcript stability, and the statistical analysis (Mann-Whitney test) is correctly applied. The binding site prediction using RBPDB with 0.9 threshold is a reasonable approach. The correlation between multiple binding sites and functional stabilization strengthens the conclusion that Draxin is the primary target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The requirement for multiple Elavl1-binding sites was hypothesized based on protein structure. Elavl1 contains three RNA recognition motifs (RRMs) that cooperate for RNA recognition, suggesting multiple contacts are required for Elavl1 to bind and stabilize RNAs in vivo, making it unlikely to bind RNAs with only a single putative binding site. This led to the hypothesis that Elavl1 specifically targets Draxin through multiple contact sites within its 3\u2032-UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C69 represent a hypothesis based on established knowledge about Elavl1 structure (C66, cited as Pabis et al., 2019) and inference from the binding site analysis. While the reasoning is logical and consistent with the data, claims C67-C69 are explicitly speculative ('it is possible', 'we hypothesize'). The hypothesis is plausible but not directly tested in this study. Additional experiments such as mutating individual binding sites would be needed to definitively establish the requirement for multiple contacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Elavl1 specifically associates with endogenous Draxin mRNA in vivo. RNA immunoprecipitation followed by qRT-PCR showed that Draxin mRNA was significantly enriched with Elavl1 IP compared to Pax7 and FoxD3 (p<0.001, one-way ANOVA with Tukey's post hoc test), while Pax7 and FoxD3 mRNAs (nontargets) were neither enriched nor significantly different from each other (p=0.89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are well-supported by the RIP-qPCR data shown in Figure 4F. The experimental design is appropriate with proper controls (IgG control, nontarget RNAs), and the statistical analysis (one-way ANOVA with Tukey's post hoc test) is correctly applied. The sample size (n=16 embryos) is adequate. The conclusion that Elavl1 specifically associates with Draxin mRNA is well-supported, though the RIP assay cannot distinguish direct from indirect binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Direct interaction between Elavl1 and the Draxin 3\u2032-UTR was demonstrated by proximity ligation assay. Significantly more PLA puncta were observed with expression of MS2-Draxin 3\u2032-UTR compared to control (p=0.016), indicating a specific and direct interaction between Elavl1 and the Draxin 3\u2032-UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is well-supported by the PLA data shown in Figure 4H-I. The MS2-MCP system is an established method for RNA visualization, and the PLA approach is appropriate for detecting protein-RNA interactions in vivo. The statistical test (two-tailed Wilcoxon matched-pairs signed-rank test) is correctly applied. The sample size (n=3 embryos, 2 sections/embryo) is modest but adequate for this technically challenging assay. This result provides strong evidence for direct interaction between Elavl1 and the Draxin 3\u2032-UTR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Draxin knockdown phenocopies Elavl1 knockdown effects on neural crest specification genes. Draxin knockdown resulted in significant reduction in FoxD3 (26.8\u00b13.2%, p<0.02), Axud1 (48.8\u00b15.1%, p<0.01), Msx1 (49.7\u00b15.8%, p<0.01), and BMP4 (63.6\u00b14.0%, p<0.01) transcript levels compared to control sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are well-supported by the HCR data shown in Figure 5A-E. The experimental design is appropriate, using the same bilateral electroporation approach as for Elavl1 knockdown. The statistical tests (Wilcoxon matched-pairs signed rank, paired t-test) are correctly applied. Sample sizes are adequate (n=4-7 embryos). The similarity of the Draxin knockdown phenotype to the Elavl1 knockdown phenotype supports the hypothesis that Draxin is a key mediator of Elavl1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Exogenous Draxin rescued neural crest specification defects caused by Elavl1 knockdown. Co-electroporation of Draxin-FLAG with Elavl1 MO significantly restored FoxD3 (84.5\u00b19.6%), Axud1 (90.3\u00b15.0%), Msx1 (91.0\u00b11.5%), and BMP4 (96.5\u00b13.1%) expression from Elavl1 knockdown (p<0.05, one-tailed paired t-test) to levels not significantly different from control (p>0.09, Wilcoxon signed-rank test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are well-supported by the rescue experiment data shown in Figure 5F-J. The experimental design is appropriate, and the statistical analysis is correctly applied using both one-tailed paired t-test to show significant rescue and Wilcoxon signed-rank test to show rescued levels are not different from control. Sample sizes are adequate (n=5-6 embryos). The rescue experiment provides strong evidence that the Elavl1 knockdown phenotype is specifically due to loss of Draxin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Exogenous Draxin rescued the premature delamination phenotype caused by Elavl1 knockdown. Co-electroporation of Draxin-FLAG with Elavl1 MO rescued the number of Pax7+ cells that delaminated (91.6\u00b14.0%) and remained within the dorsal neural tube (105.8\u00b112.0%) to near-control levels (p>0.12, one-sample Wilcoxon signed-rank test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by the rescue experiment data shown in Figure 5K-L. The experimental design is appropriate, and the statistical test (one-sample Wilcoxon signed-rank test) is correctly applied. However, the sample size is modest (n=3 embryos, 6 sections), which is at the lower end for this type of analysis. Despite the small sample size, the rescue of both delamination and neural tube retention phenotypes strengthens the conclusion that Draxin is the key mediator of Elavl1 function in preventing premature delamination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C30",
+      "C62",
+      "C82",
+      "C83"
+    ],
+    "result": "Draxin is the primary target of Elavl1 for stabilization during cranial neural crest specification. This conclusion is supported by multiple lines of evidence: RNA-seq identified Draxin as downregulated with Elavl1 knockdown, RNA decay assays showed only Draxin had reduced stability, RIP showed Elavl1 specifically associates with Draxin mRNA, PLA demonstrated direct interaction with the Draxin 3\u2032-UTR, and exogenous Draxin rescued Elavl1 knockdown phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C30, C62, C82, C83 represent the main conclusion of the study and are well-supported by the convergence of multiple experimental approaches (RNA-seq, RNA decay assays, RIP, PLA, rescue experiments). Each individual line of evidence has been evaluated above and found to be supported. The integration of these multiple approaches provides strong evidence for the conclusion that Draxin is the primary target of Elavl1 during cranial neural crest specification and is stabilized via 3\u2032-UTR interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C27",
+      "C28",
+      "C29",
+      "C12",
+      "C31",
+      "C53"
+    ],
+    "result": "Elavl1 plays a critical role in maintaining cranial neural crest specification and preventing premature delamination via Draxin mRNA stabilization. Perturbation of Elavl1 resulted in premature neural crest delamination and significant reduction in transcripts associated with the neural crest specification GRN, effects that were mediated by loss of Draxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C27, C28, C29, C12, C31, C53 represent the central findings of the study and are well-supported by the comprehensive experimental data. The knockdown experiments demonstrate the requirement for Elavl1, the molecular characterization identifies Draxin as the key target, and the rescue experiments establish causality. The conclusion that Elavl1 plays a critical role in maintaining cranial neural crest specification via Draxin mRNA stabilization is strongly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Loss of Elavl1 and Draxin interferes with multiple nodes of the neural crest specification GRN, implicating Elavl1 as a point of integration to coordinate signaling from parallel but independent GRNs. The effects include interference with nodes driven by Wnt (Axud1, FoxD3) and BMP (BMP4, Msx1) signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by the experimental data showing effects on multiple downstream genes (Axud1, FoxD3, BMP4, Msx1) that are part of different signaling pathways. The conclusion is consistent with the data and with prior knowledge about neural crest GRNs (cited as Hovland et al., 2020; Sim\u00f5es-Costa et al., 2015b; Tribulo et al., 2003). However, the claim that Elavl1 is a 'point of integration' is somewhat interpretive, as the data show that Elavl1 acts through Draxin, which then affects multiple pathways, rather than Elavl1 directly integrating multiple pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C17",
+      "C32",
+      "C104"
+    ],
+    "result": "Post-transcriptional regulation plays an important role in neural crest development and intersects with modulation of the neural crest specification GRN. This study demonstrates that RNA-binding protein-mediated post-transcriptional control, specifically through Elavl1, plays a critical role in regulating a neural crest specification module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, C17, C32, C104 represent the broader context and significance of the study. The experimental data clearly demonstrate a role for post-transcriptional regulation (via Elavl1) in neural crest specification. The conclusion that post-transcriptional regulation intersects with the neural crest specification GRN is well-supported by the data showing effects on multiple GRN components. Claims C2, C17, and C104 also cite recent literature supporting the growing appreciation for post-transcriptional regulation in neural crest development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study's findings are consistent with previous work on Elavl1 function in other contexts. The role as a stabilizing RNA-binding protein via 3\u2032-UTR interaction is consistent with prior studies, and the finding of a single biologically relevant target during neural crest specification aligns with prior work suggesting spatiotemporal specificity of Elavl1 function during embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 place the current findings in the context of prior literature. These claims are well-supported by appropriate citations (Chen et al., 2002; Dormoy-Raclet et al., 2007; Katsanou et al., 2009; Rothamel et al., 2021; Shi et al., 2020; Mukherjee et al., 2011). The comparison with prior work is appropriate and strengthens the interpretation of the current findings. The observation that prior work on Elavl1 knockout mice showed indirect downregulation of BMP4 (C87) is particularly relevant, as the current study identifies Draxin as the upstream mediator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C92",
+      "C96",
+      "C97",
+      "C100",
+      "C101"
+    ],
+    "result": "Several hypotheses are proposed for future investigation regarding Elavl1 function beyond Draxin stabilization. These include: specificity may be achieved through spatiotemporally regulated combinatorial expression of post-transcriptional regulators; Elavl1 may become displaced from Draxin at EMT onset through phosphorylation or competitive displacement; Elavl1 likely intersects with additional GRNs following specification; and additional targets may exist with functions later in neural crest development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C92, C96, C97, C100, C101 are explicitly speculative ('we speculate', 'we hypothesize', 'likely', 'it is possible') and represent hypotheses for future investigation rather than conclusions supported by the current data. While these hypotheses are reasonable and well-motivated by the data and prior literature, they remain untested. These represent appropriate directions for future work but should not be considered supported results of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C98",
+      "C99"
+    ],
+    "result": "Several pieces of prior knowledge are cited to provide context for the study's findings and hypotheses. These include: Draxin must be rapidly downregulated for EMT and migration to proceed; RNA-binding proteins can alter target association through post-translational modifications; serine-threonine kinase inhibition affects neural crest migration; serine-threonine phosphorylation modulates Elavl1 activity; Elavl1 stabilizes Snail1 and MMP-9 in other contexts; and these factors have roles in neural crest EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93, C94, C95, C98, C99 represent established knowledge from prior literature and are appropriately cited (Hutchins and Bronner, 2018; Hutchins and Bronner, 2019; Hutchins et al., 2021; Dassi, 2017; Garc\u00eda-Mauri\u00f1o et al., 2017; Liu et al., 2015; Monier-Gavelle and Duband, 1995; Grammatikakis et al., 2017; Dong et al., 2007; Yuan et al., 2011; Cano et al., 2000; Kalev-Altman et al., 2020; Monsonego-Ornan et al., 2012; Strobl-Mazzulla and Bronner, 2012; Taneyhill et al., 2007). These claims provide important context for interpreting the current findings and for generating hypotheses about mechanisms and additional functions of Elavl1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C8",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C36",
+      "C102",
+      "C103"
+    ],
+    "result": "Background knowledge about neural crest development and Elavl1 function is presented to provide context for the study. This includes: neural crest development is transcriptionally controlled via GRNs; neural crest cells undergo coordinated developmental events to form various tissues; Elavl1 is an RNA-binding protein that stabilizes mRNA via 3\u2032-UTR interaction; Elavl1 is essential for mammalian development; and Elavl1 knockout mice display craniofacial defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C8, C14, C15, C16, C18, C19, C20, C21, C22, C23, C24, C25, C26, C36, C102, C103 represent established background knowledge that is appropriately cited. These claims provide the necessary context for understanding the significance of the study and are not results of the current work. The citations are appropriate and the knowledge claims are accurate representations of the cited literature.",
+    "result_type": "MINOR"
+  }
+]

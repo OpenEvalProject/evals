@@ -1,0 +1,2087 @@
+{
+  "submission": {
+    "id": "7eae681f-bef9-4c87-b80d-f1c912598370",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:21:58.901094Z",
+    "updated_at": "2025-12-03T13:21:58.901094Z"
+  },
+  "content": [
+    {
+      "id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "submission_id": "7eae681f-bef9-4c87-b80d-f1c912598370",
+      "content_type": "manuscript",
+      "content_text": "# A genome-wide functional genomics approach uncovers genetic determinants of immune phenotypes in type 1 diabetes\n\n## Authors\n\n- Xiaojing Chu<sup>1</sup> ([ORCID: 0000-0002-9882-2912](https://orcid.org/0000-0002-9882-2912))\n- Anna WM Janssen<sup>4</sup>\n- Hans Koenen<sup>5</sup>\n- Linzhung Chang<sup>1</sup>\n- Xuehui He<sup>5</sup>\n- Irma Joosten<sup>5</sup>\n- Rinke Stienstra<sup>4</sup>\n- Yunus Kuijpers<sup>2</sup> ([ORCID: 0000-0002-5075-3970](https://orcid.org/0000-0002-5075-3970))\n- Cisca Wijmenga<sup>1</sup> ([ORCID: 0000-0002-5635-1614](https://orcid.org/0000-0002-5635-1614))\n- Cheng-Jian Xu<sup>2</sup> ([ORCID: 0000-0003-1586-4672](https://orcid.org/0000-0003-1586-4672))\n- Mihai G Netea<sup>4</sup> ([ORCID: 0000-0003-2421-6052](https://orcid.org/0000-0003-2421-6052))\n- Cees J Tack<sup>4</sup> \u2020\n- Yang Li<sup>1</sup> ([ORCID: 0000-0003-4022-7341](https://orcid.org/0000-0003-4022-7341)) \u2020\n\n### Affiliations\n\n1. Department of Genetics, University of Groningen, University Medical Center Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))\n2. Centre for Individualised Infection Medicine, CiiM, a joint venture between the Hannover Medical School and the Helmholtz Centre for Infection Research Hannover Germany ([ROR:04s99xz91](https://ror.org/04s99xz91))\n3. TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School and the Helmholtz Centre for Infection Research Hannover Germany ([ROR:04bya8j72](https://ror.org/04bya8j72))\n4. Department of Internal Medicine, Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))\n5. Department of Laboratory Medicine, Laboratory Medical Immunology, Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))\n6. Division of Human Nutrition and Health, Wageningen University Wageningen Netherlands ([ROR:04qw24q55](https://ror.org/04qw24q55))\n7. Department for Genomics & Immunoregulation, Life and Medical Sciences Institute (LIMES), University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:The large inter-individual variability in immune-cell composition and function determines immune responses in general and susceptibility o immune-mediated diseases in particular. While much has been learned about the genetic variants relevant for type 1 diabetes (T1D), the pathophysiological mechanisms through which these variations exert their effects remain unknown.Methods:Blood samples were collected from 243 patients with T1D of Dutch descent. We applied genetic association analysis on >200 immune-cell traits and >100 cytokine production profiles in response to stimuli measured to identify genetic determinants of immune function, and compared the results obtained in T1D to healthy controls.Results:Genetic variants that determine susceptibility to T1D significantly affect T cell composition. Specifically, the CCR5+ regulatory T cells associate with T1D through the CCR region, suggesting a shared genetic regulation. Genome-wide quantitative trait loci (QTLs) mapping analysis of immune traits revealed 15 genetic loci that influence immune responses in T1D, including 12 that have never been reported in healthy population studies, implying a disease-specific genetic regulation.Conclusions:This study provides new insights into the genetic factors that affect immunological responses in T1D.Funding:This work was supported by an ERC starting grant (no. 948207) and a Radboud University Medical Centre Hypatia grant (2018) to YL and an ERC advanced grant (no. 833247) and a Spinoza grant of the Netherlands Association for Scientific Research to MGN CT received funding from the Perspectief Biomarker Development Center Research Programme, which is (partly) financed by the Netherlands Organisation for Scientific Research (NWO). AJ was funded by a grant from the European Foundation for the Study of Diabetes (EFSD/AZ Macrovascular Programme 2015). XC was supported by the China Scholarship Council (201706040081).\n\n## Introduction\n\nType 1 diabetes (T1D) is a common, chronic, autoimmune disease, characterized by destruction of insulin-producing beta-cells in the pancreas that results in lifelong dependence on exogenous insulin and is associated with a high morbidity and mortality (Atkinson et al., 2014). The causes and immunological pathways responsible for T1D development are still incompletely understood, which hampers the efforts to identify an etiopathogenetic treatment.\n\nMany studies have highlighted the role of environmental, genetical, and immunological factors in the pathogenesis of T1D (Pociot and Lernmark, 2016; Rewers and Ludvigsson, 2016). Environmental factors such as being overweight, infections, microbiome composition, and dietary deficiencies have been reported as risk factors for T1D (Rewers and Ludvigsson, 2016). In turn, the immunological pathogenesis (Cabrera et al., 2016) of T1D includes innate inflammation and adaptive immunity, such as enhanced T cell responses (Hundhausen et al., 2016). In the last two decades, large genome-wide association studies (GWAS) performed have underscored the contribution of genetic polymorphisms to T1D for the susceptibility, with ~60 genomic loci associated with T1D risk identified (Barrett et al., 2009; Bradfield et al., 2011; Cooper et al., 2008; Grant et al., 2009; Huang et al., 2012; Onengut-Gumuscu et al., 2015; Ram et al., 2016). While these loci show significant enrichment in specific immune-related biological pathways, such as cytokine signaling and T cell activation (Barrett et al., 2009; Cooper et al., 2008), the functional consequences of many of these loci and genetic variants are still unknown. We thus lack information that could link the genetic susceptibility factors to the immunological pathways potentially important for T1D pathogenesis. The genetically regulated inflammatory response signature in T1D may also be relevant for the inflammatory response in general and may become modified by the chronic hyperglycemic state.\n\nIn the present study we aimed to comprehensively describe the immunopathological consequences of the genetic variants linked to T1D susceptibility, using a high-throughput functional genomics approach. As a part of the Human Functional Genomics Project (HFGP) (Netea et al., 2016), we carried out deep immunophenotyping in peripheral blood samples from a cohort of 243 T1D patients (300DM) using cell subpopulation composition and cytokine production upon stimulations as proxies of immunological function. Part of the results were then compared to those obtained in a population-based cohort of 500 healthy individuals (500FG) that successfully characterized the impact of genetic factors (Aguirre-Gamboa et al., 2016; Li et al., 2016) on immune responses in healthy individuals. Here, we systematically evaluate the genetic regulation of the immune phenotypes in T1D and show how genetic variations affect immune-cell traits and cytokine production in response to stimulations. In total, we identify 15 genome-wide significant genomic loci (p-value < 5 \u00d7 10\u20138) associated with immune phenotypes in the 300DM cohort, including 12 novel loci that have never been reported in any healthy population study. These data provide a deeper understanding of the immune mechanisms involved in the pathophysiology of T1D and affecting the general inflammatory response and may open avenues toward the development of novel diagnostics and potentially immunotherapies.\n\n## Materials and methods\n\n### Study cohort\n\nThis study mainly focuses on a 300DM cohort, and involves a 500FG cohort (part of HFGP; Netea et al., 2016). In the 300DM cohort, we collected blood samples from 243 T1D patients (132 males and 111 females of Caucasian origin), following a previously described methodology (Aguirre-Gamboa et al., 2016; Ter Horst et al., 2016; Li et al., 2016). Participant\u2019s ages ranged from 20 to 84 years. Detailed information about the 500FG cohort can be found in the previous publications (Aguirre-Gamboa et al., 2016; Ter Horst et al., 2016; Li et al., 2016).\n\n### Measurement of immune-cell composition\n\nMyeloid and lymphoid immune-cell levels were measured by 10-color flow cytometry, and we calculated the parental and grandparental proportion of 73 manually annotated immune cells and the proportion of CD4+ T cells, CD8+ T cells, memory Tregs and monocytes carrying the chemokine receptors: CCR6 (CD196), CXCR3 (CD183), CCR4 (CD194), CCR5 (CD195), and CCR7 (CD197). In total, we ended up with 269 immune-cell traits for the 300DM cohort. We then used the same gating strategy of measuring cell subpopulations as 500FG (see Aguirre-Gamboa et al., 2016 and Figure 1\u2014figure supplement 1).\n\n### Stimulation of PBMCs and measurement of cytokine production capacity\n\nIsolated peripheral blood mononuclear cells (PBMCs) were washed twice with cold phosphate-buffered saline and suspended in Roswell Park Memorial Institute (RPMI) 1640 Dutch-modified culture medium (Gibco/Invitrogen, Breda, the Netherlands) supplemented with 50 mg/l gentamycin (Centraform), 1 mM pyruvate (Gibco/Invitrogen), and 2 mM L-glutamine (Gibco/Invitrogen). Cells were counted on a Sysmex XN-450 Hematology Analyzer (Sysmex Corporation, Kobe, Japan).\n\nFor the in vitro stimulation experiments, 5 \u00d7 105 cells/well were cultured for 24 hr or 7 days at 37\u00b0C and 5% CO2 in 96-well round-bottom plates (Greiner). For the 7-day cultures, the medium was supplemented with human pooled serum (pooled from healthy blood donors, end concentration 10%). Supernatants were collected and stored in \u201320\u00b0C until used for ELISA.\n\nThe following stimulations were used: LPS (100 ng/ml, 1 ng/ml), Pam3cys, Borrelia mix, Candida albicans conidia, C. albicans hyphae, imiquimod (IMQ), Staphylococcus aureus, Streptococcus pneumoniae, palmitic acid (C16), C16+ monosodium urate crystals, Escherichia coli, Mycobacterium tuberculosis, Borrelia burgdorferi, Coxiella burnetii, Cryptococcus neoformans, oxidized low-density lipoprotein (OxLDL), OxLDL+ LPS, polyinosinic:polycytidylic acid, and Rhizopus microspores, Rhizopus oryzae (Li et al., 2016). Concentrations of cytokines in response to various stimulations were measured in PBMCs by ELISA kits, following the manufacturer\u2019s protocol. Following our previously reported definition (Li et al., 2016), we considered IL-1\u03b2, IL-6, TNF-\u03b1, IL-8, IL-10, IL-1Ra, and MCP-1 to be monocyte-derived cytokines and measured them 24 hr after stimulation. Likewise, we considered INF-\u03b3, IL-17, and IL-22 to be T cell-derived cytokines and measured them at 7 days after stimulation. For all cytokines commercially available kits were used (R&D Systems, Minneapolis, MN, or Sanquin, Amsterdam, the Netherlands).\n\n### Genotyping, quality control, and imputation\n\nDNA samples of 224 Dutch T1D patients were collected and genotyped using the Infinium Global Screening Array. Genotype calling was performed using Opticall 0.7.0 (Shah et al., 2012) with default settings (call rate > 0.99). We then excluded two samples due to contamination or mislabeling, one sample from a related individual (identity be descent > 0.185) and six genetic outliers identified by either heterozygosity rate check (individuals with heterozygosity rate heterozygosity rate \u00b13 SD from the mean were excluded) or multidimensional scaling (MDS) plots of samples merging with 1000 Genomes data. This left 215 samples for further analysis, and these samples show good consistency with European samples from 1000 Genomes data (Figure 1\u2014figure supplement 2) according to standard protocol (Anderson et al., 2010). DNA samples from the 500FG cohort were genotyped by Illumina Human OmniExpress Exome-8 v1.0 single-nucleotide polymorphism (SNP) chip. Outliers were excluded according to population relationship, medication, and disease information. Details can be found in our previous studies in 500FG (Aguirre-Gamboa et al., 2016; Li et al., 2016). SNPs with a minor allele frequency (MAF) <0.001 were removed from each cohort, and samples with a Hardy-Weinburg equilibrium (HWE) p-value < 1 \u00d7 10\u20135 were removed for the healthy cohort (500FG). We merged the 300DM cohort and 500FG cohort by taking shared genetic variants. We then imputed their genotypes using an online genotype imputation service provided by Michigan Imputation Server (https://imputationserver.sph.umich.edu)(Das et al., 2016) with HRC Panel 1.1 as reference. We excluded SNPs with low imputation quality (R2 < 0.3) and/or a MAF < 0.01 in all imputed samples and/or HWE p-values < 1 \u00d7 10\u20135 in healthy individuals, leaving 4,304,387 SNPs and 666 individuals in the merged cohort (N300DM = 215 and N500FG = 451).\n\n### Preprocessing the data\n\nAll statistical analyses were performed using the statistical programming language R. Immune-cell proportion was calculated by dividing counts of their parental by grandparental cell types (Supplementary file 1A). An inverse rank transformation (Aguirre-Gamboa et al., 2016; Orr\u00f9 et al., 2013) was applied on the proportion values for genetic association analysis. Cytokine levels were log2-transformed.\n\n### Immune parameter quantitative trait locus mapping\n\nAfter intersecting with available genotype data and excluding volunteers with a mixed background or other genetic background, 214 samples were left for immune parameter quantitative trait locus (QTL) mapping. We next evaluated covariates influencing immune function. Associations with age, gender, and seasonal effects were calculated following previously described methods (Aguirre-Gamboa et al., 2016; Ter Horst et al., 2016; Li et al., 2016), in short, using Spearman\u2019s correlation analysis and a linear regression model. Significance was declared after multiple-testing correction (FDR < 0.05). Age significantly associated with 129/269 immune-cell traits and 12/55 cytokine traits, gender associated with 59/269 immune-cell traits and 5/55 cytokine traits, and seasonal effects associated with 121/269 immune-cell traits and 38/55 cytokine traits (Figure 4\u2014figure supplement 1). We therefore took age, gender, and seasonal effects as covariates in the linear regression for both immune-cell proportion QTL mapping and cytokine QTL mapping. In addition, considering the effect of immune-cell proportion on cytokine production, we took major cell types, including monocyte, lymphocyte, T cell, B cell, and NK cell proportion in PBMC as covariates in a linear model for cytokine QTL mapping, as we have done previously (Li et al., 2016). Linear regression was applied using the R package Matrix-eQTL (Shabalin, 2012) for immune parameter QTL mapping, and the software METAL (Willer et al., 2010) was applied to summary statistics for both cohorts for a meta-analysis, in which the model based on effect size and standard error with default settings were used. p-Values <5 \u00d7 10\u20138 were considered to be genome-wide significant. Calculated lambda values indicated no obvious inflations (0.977\u20131.026).\n\n### Extraction of the T1D GWAS SNP list\n\nWe downloaded a summary of T1D GWAS results from the GWAS-catalog (https://www.ebi.ac.uk/gwas/) (Buniello et al., 2019) in November 2019, and removed data from studies performed in non-European-ancestry populations. Top SNPs from different studies that were in LD (r2 > 0.1) were considered as the same locus, and the SNPs with the lowest p-value were included in the analysis. We noticed that the effect directions of some SNPs were unclear or inconsistent between different studies. In this case, we assigned the direction from the most-recent GWAS (Onengut-Gumuscu et al., 2015).\n\n### GWAS analysis of the 300DM cohort for the known T1D loci\n\nWe extracted all proxies in strong LD with the top SNPs from published T1D GWAS (case-control) studies (r2 > 0.8) and performed a chi-square test on clinical status by using PLINK 1.9. Samples in 300DM were taken as cases and samples in 500FG as controls.\n\n### Impact of T1D GWAS loci on immune phenotypes\n\nTo detect the impact of T1D GWAS loci on immune-cell populations, we grouped all traits into four categories (B cells, T cells, monocytes, and NK cells), and counted the number of suggestive associations (p-value < 0.05) between the 63 top SNPs from T1D GWAS loci and immune-cell traits. 1000 permuted sets of the 63 SNPs were randomly selected from independent SNPs (r2 > 0.2) pruned from all genotyped SNPs. We then compared the associations of the 63 top GWAS SNPs with the associations between the 1000 permutated sets and the same category of immune traits.\n\nWe further applied a multivariate linear model to estimate the proportion of variance of each immune phenotype explained by the top SNPs from T1D GWAS loci. We repeated this analysis on 1000 permuted sets of the 63 independent SNPs, which were used as reference set. We then compared the null distribution with the variance explained by 63 top SNPs from T1D GWAS loci. The p-value was calculated by the percent of explained variance from permuted sets greater than the variance explained by the 63 T1D GWAS SNPs.\n\n### Gene expression analysis on CCR5 and its corresponding ligands genes\n\nNormalized gene expression data in PBMCs and pancreas from T1D and controls were acquired from https://www.ebi.ac.uk/gxa (Papatheodorou et al., 2020). A Student\u2019s t-test was applied to compare gene expression between groups.\n\n### Post-QTL analysis\n\nAn R package ggplot2 was used to generate Manhattan plots and boxplots. Locus zoom plots were made using an online tool (http://locuszoom.org; Pruim et al., 2010). We used R package coloc (Giambartolomei et al., 2014) to perform colocalization analysis with T1D GWAS summary statistics and immune parameter QTL profiles. For pathway analysis, genes located within \u00b110 kb of genome-wide significant SNPs (p-value < 5 \u00d7 10\u20138) were extracted and analyzed using the FUMA online tool (Watanabe et al., 2017) (https://fuma.ctglab.nl). ANNOVAR was used to annotate genetic variants (Wang et al., 2010).\n\n### Other packages used in this paper\n\nPheatmap was used to make heatmaps. Scatter plots and bar plots were generated using ggplot2.\n\n## Results\n\n### Interrelationship between immune-cell counts and cytokine production in T1D\n\nWe collected blood samples from 243 T1D patients (300DM cohort), following a previously described methodology (Aguirre-Gamboa et al., 2016; Ter Horst et al., 2016; Li et al., 2016). The baseline characteristics of the 300DM and a cohort of healthy individuals (500FG) are shown in Supplementary file 1B. Their median age was 53.5 years (range 20\u201385), and they had a median diabetes duration of 28 years (range 1\u201371 years). Hence, the cohort generally consisted of middle-aged people with long-standing T1D. We measured 72 types of immune cells covering both lymphocytes and monocyte lineages and 10/6 (300DM/500FG) different cytokines released in response to stimulation with four types of human pathogens in both cohorts (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic study design. (B,C) Cell-type (B) and cytokine-type (C) relationship visualized by nonmetric multidimensional scale (NMDS) analysis in 300DM. (B) Cell traits (red) cluster separately from T cell and monocyte traits (B) and cytokines with the same cellular origins cluster together (C). In panel (B), small dots indicate the proportion of subpopulations and large dots indicate counts of their parental cell types. Circles represent the calculated centroid of the grouped cell and cytokine types at confidence level 0.95. (D) Heatmap of correlation coefficients between immune-cell counts (y-axis) and cytokine production in response to stimulations (x-axis) in T1D patients. Significant correlations (FDR < 0.05) are labeled by dots, with color indicating correlation coefficients. Positive correlations (red) are observed between monocyte traits and monocyte-derived cytokines (top left), and between adaptive immune-cell counts and T cell-derived cytokines (bottom right). Negative correlations (blue) are observed between adaptive immune-cell counts and monocyte-derived cytokines.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Outliers (red symbols) were removed in further analysis.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Heatmap of correlation coefficients (indicated by colors) between immune cell counts (y-axis) and cytokine production in response to stimulations (x-axis) in healthy individuals (500FG), which is consistent with 300DM.\n\nNonmetric MDS plots illustrate the interrelationship among immune-cell abundances (Figure 1B) and cytokine production levels (Figure 1C) in T1D patients. We observed a separation of the B cell subpopulations cluster from the T cell, monocyte, and NK cell population clusters. This suggests that T cells, monocytes, and NK cells have more interplay than B cells at baseline, which is consistent with our previous finding in a healthy cohort (500FG; Aguirre-Gamboa et al., 2016). Furthermore, cytokine features are clustered based on their cellular origins, with a partially overlapping cluster between monocyte-derived cytokines and T cell-derived cytokines (Figure 1C). This may suggest activation of a co-regulatory network of monocyte-derived and T cell-derived cytokine production capacity in T1D.\n\nTo obtain a comprehensive interaction map between immune cells and cytokines, we correlated each of the immune-cell counts with each of the cytokine production profiles (IL-1\u03b2, IL-6, TNF-\u03b1, IL-10, IL-1RA, IL-8, MCP-1, IFN\u03b3, IL-17, and IL-22) in response to 21 stimulations. Cytokine levels were hierarchically clustered based on correlation coefficients with immune-cell counts (Figure 1D). In line with the functional relationship between immune cells and cytokines, we observed positive correlations between monocyte lineages and monocyte-derived cytokines (IL-1\u03b2, IL-6, TNF-\u03b1, IL-10, IL-1RA, IL-8, and MCP-1) and between T cell subsets and T cell-derived cytokines (IFN\u03b3, IL-17, and IL-22) (indicated by red color in Figure 1D). We also found a negative correlation between monocyte-derived cytokines production in response to four distinct types of stimulations (bacteria, fungi, non-microbial, and TLR ligands) and lymphocyte counts (blue, Figure 1D). We observed similar correlation patterns in 500FG (Figure 1\u2014figure supplement 3). This correlation is in line with a previous finding that a high abundance of adaptive immune cells at baseline is associated with lower production of monocytes-derived cytokines after stimulation (Kim et al., 2007), and this is not altered by T1D status. Overall, the interrelationships between immune cells and cytokines in response to stimulations are roughly similar between T1D and healthy individuals.\n\n### Impact of T1D GWAS SNPs on immune phenotypes in T1D patients\n\nConsidering that T1D is a multifactorial disease with a genetic component, we tested whether the known risk variants of T1D affect immune phenotypes and function. We first checked SNPs within the HLA locus in our association studies on cell proportion and cytokine production level. Consistent with our previous findings in 500FG, we did not observe any significant associations of HLA allelic variants in 300DM. We then acquired non-HLA genetic loci from published GWAS of European background were acquired from the GWAS-catalog (November 2019)(Buniello et al., 2019). Among these, genetic variants in 63 independent T1D loci were present in our data, and we found that 13 of these 63 were indeed associated with susceptibility to T1D with nominal significance (p-value < 0.05) (Supplementary file 1C).\n\nWe next investigated whether these genetic risk loci for T1D affect immune parameters and function. The quantile-quantile plot of the association of the 63 T1D GWAS loci with different cell types and cytokines illustrates an inflated deviation from an expected uniform distribution (Figure 2A, Figure 2\u2014figure supplement 1). We further tested whether this deviation can be explained by chance by comparing the association of immune traits with T1D GWAS SNPs with that of 1000 randomly selected independent SNPs (Figure 2B, Materials and methods). The p-value shows that the T1D GWAS SNPs are enriched in association with T cell traits in the T1D cohort (p-value = 0.007).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig2-v2.jpg)\n\n**Figure 2.:** (A) Quantile-quantile (Q-Q) plots of quantitative trait locus (QTL) profiles of 62 T1D GWAS loci grouped by cell populations. The distribution of p-values of associations with T cells traits (blue) shows a significant deviation from an expected uniform distribution (dashed line). (B) Histogram showing number of associations observed (red line) and those in permutations (blue bars). (C) Heatmap of QTL profiles of cell proportion carrying certain chemokine receptors across 62 T1D GWAS loci, colored by \u2212log10(p-values) and effect direction of the T1D risk allele. Arrowhead indicates a T1D risk allele rs11574435-T.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A,B) Heatmap of QTL profiles of immune phenotypes across 62 T1D GWAS loci, colored by -log10(p values) and effect direction of T1D risk allele (A: immune cell proportion traits; B: cytokine production upon stimulations).\n\nA pair-wise association analysis between T1D GWAS loci and immune phenotypes shows that 261 out of 269 immune-cell phenotypes and 53 out of 55 cytokine-stimulation pairs are suggestively associated with at least one T1D GWAS locus (p-value < 0.05, Supplementary file 1d and e). We further applied a permutation-based approach to test whether immune phenotypes were significantly influenced by the cumulative effects of these 63 GWAS loci (Materials and methods). Compared to random sets of independent SNPs, the 63 T1D GWAS loci explain significantly more of the variance in 27 cell sub-proportions and 15 cytokine production traits (p-value < 0.05, Figure 2C, Figure 2\u2014figure supplement 2A, B,). As shown in the heatmap (Figure 2C, arrowhead), one T1D risk allele, rs11574435-T, which is in strong LD (r2=0.95) with the T1D GWAS SNP rs113010081 (Onengut-Gumuscu et al., 2015), is associated with a higher percentage of many CCR5+ CD4+ T cell traits and a lower percentage of CCR5\u2212 CD4+ T cell traits.\n\nChemokine signaling pathways regulate the migration of cells from the circulation (PBMCs) to the tissue (pancreas). To further validate the importance of chemokine signaling mediated by CCR5 in T1D, we illustrated the transcriptional changes on CCR5 and its corresponding ligand genes using publicly available data from transcriptome analysis in PBMCs and pancreatic tissue from T1D patients and controls (Planas et al., 2010; Yang et al., 2015) (see also Materials and methods). This identified significant expression changes of CCR5, CCL5, and CCL4 in T1D patients, which suggests the involvement of this chemokine ligand-chemokine receptor pathway (Figure 3A). In addition, another top SNP, rs35092096, within the CCR gene region has the strongest effects on many CCR5 Treg proportions in T1D. For example, minor allele T in rs35092096 associates with a higher ratio of CCR6+ CCR7\u2212 CCR5+ Tregs/CCR6+ Tregs (Figure 3B and C). Together with the observed regulation from a GWAS locus within the CCR region on CCR6+ CCR7\u2212 CCR5+ Treg proportion, we tested whether CCR6+ CCR7\u2212 CCR5+ Tregs and T1D share the same causal variants/genomic regions by integrating the cell proportion QTL of CCR6+ CCR7\u2212 CCR5+ Tregs and the latest T1D GWAS profile via colocalization analysis (Giambartolomei et al., 2014). The result strongly supports that CCR6+ CCR7\u2212 CCR5+ Tregs share the same regulatory genomic region with T1D, although the causal SNP might be different (Figure 3D, H3=0.95). Altogether, these results support a role for the CCR region in Treg function in the pathogenesis of T1D.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig3-v2.jpg)\n\n**Figure 3.:** (A) Expression of CCR5, CCL5, and CCL4 in peripheral blood mononuclear cells (PBMCs) (top) and pancreas (bottom) is altered in T1D patients (blue, green, and purple) compared to healthy controls (red). (B) Locus zoom plot showing that single-nucleotide polymorphisms (SNPs) around rs35092096 located in the CCR region are associated with CCR6+ CCR7\u2212 CCR5+ Treg proportion. (C) Boxplot showing that CCR6+ CCR7\u2212 CCR5+ Treg proportion differs in different rs35092096 genotypes (TT: red, TG: green, and GG: blue). (D) Two locus zoom plots showing colocalization between CCR6+ CCR7\u2212 CCR5+ Treg proportion quantitative trait locus (QTL) profiles (top, red) and T1D genome-wide association studies (GWAS) profile (bottom, blue) within CCR regions.\n\nOverall, we observe that T1D GWAS loci influence immune-cell proportion and cytokine production capacity, again stressing the importance of T cell immunity in genetic regulation of T1D.\n\n### Genetic regulation of immune phenotypes in T1D\n\nTo further explore potential genetic regulation of immune phenotypes on the whole-genome level, we performed QTL mapping in 300DM. This identified nine genome-wide significant QTLs (p-value < 5 \u00d7 10\u20138) associated with immune-cell proportion, including four associated with T cell subpopulations expressing specific chemokine receptors (e.g., rs35092096 and rs7614884) (Figure 4A, top and middle panels, Supplementary file 1F). Pathway analysis of the cell proportion QTLs showed significant enrichment in chemokine and cytokine signaling-related biological pathways (FDR < 0.05, Figure 4\u2014figure supplement 2A), highlighting the effects of immune signaling genes in cell proportion regulation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig4-v2.jpg)\n\n**Figure 4.:** (A) Three Manhattan plots showing genetic regulators of immune-cell proportion (top), proportion of immune cells expressing CCR (middle) and cytokines production in response to stimulations (bottom). p-Values of single-nucleotide polymorphisms (SNPs) identified in meta-analysis are colored red. (B) Locus zoom plot showing a type 1 diabetes (T1D)-specific regulatory locus around rs4744112 that effects CCR6+ CXCR3+ CCR4 T helper1 proportion. (C) Boxplot showing how CCR6+ CXCR3+ CCR4 T helper1 proportion varies in different rs4744112 genotypes (TT: red, TG: green, and GG: blue).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Pathway enrichment analysis using genes located within immune cell proportion QTLs (A) and cytokine production QTLs (B).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Stacked boxplots showing the percentage of genomic elements where the immune phenotypes associated SNPs located.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73709/elife-73709-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A, B) Heatmaps of correlation between immune cell counts (y-axis) and age, gender, seasons (x-axis). Correlation coefficients were indicated by colors, and significant correlations (FDR <0.05) are labeled by dots. (C) Heatmap of correlation between cytokines levels upon stimulations and age, gender, seasons. Correlation coefficients were indicated by colors, and significant correlations (FDR <0.05) are labeled by dots.\n\nIn parallel, we detected six significant genomic loci associated with cytokine production in response to stimulations by QTL mapping in 300DM (Figure 4A, bottom panel, Supplementary file 1F). Cytokine production QTLs are significantly enriched in TLR-related pathways (FDR < 0.05, Figure 4\u2014figure supplement 2). A missense variant, rs5743618, on the TLR1 gene, affects IL-6 production in response to S. pneumoniae in PBMC. Previously, we had observed that the TLR locus has a strong effect on cytokine levels in controls (Li et al., 2016). Our results support the reported function of TLRs in detecting pathogens (including bacterial pathogens) and triggering the release of inflammatory cytokines (Fitzgerald and Kagan, 2020).\n\nNext, to identify the consistent immune phenotype QTLs within T1D patients and healthy individuals and expand our understanding of genetic regulation of immune phenotypes, we performed a meta-analysis by integrating the QTLs obtained from the 300DM and 500FG cohorts. In total, we identified 10 novel genetic loci associated with immune-cell proportion (Figure 4A, top panel, colored in red) and three novel genetic loci that were associated with cytokine production (Figure 4A, bottom panel, colored in red). This included a CD5 locus that was significantly associated with IgD+ CD5++ proportion in B cells (Supplementary file 1F), which may be important as recent studies have reported the relevance of IgD+ CD5++ B cells in T1D (Saxena et al., 2017) and other autoimmune diseases such as Graves\u2019 disease (Van der Weerd et al., 2013).\n\nTo summarize, we identified 28 genetic loci associated with either immune-cell traits or cytokine production phenotypes. Among them, the genes within 11 loci (\u00b1250 kb window) are known drug targets according to the public drug database (Finan et al., 2017), including COL13A1, CCR family genes, ROR2, NOS1, IL-10, IL-6, STK33, NELL1, FCGR2A, CD5, and TLR1 (Supplementary file 1F). Some of these genes are already therapeutic targets in other autoimmune diseases, for example, the STK33 inhibitor for rheumatoid arthritis treatment (Rolf et al., 2015).\n\nIt is also worth mentioning that, as far as we know, 12 out of the 28 significant loci we identified have never been reported in other healthy individual population cohorts according to PhenoScanner V2 (Kamat et al., 2019) (p-value < 1 \u00d7 10\u20135, November 2019). Nor were they identified in the 500FG cohort (p-value < 0.05). One example effect of one of these T1D-specific loci is that of rs4744112 located on chromosome 9, which influences CCR6+ CXCR3+ CCR4\u2212 Th1-like helper proportion (Figure 4B), with minor allele G leading to a decrease in these cells relative to major allele T (Figure 4C). rs4744112 is located within the transcriptional starting site and enhancer regions (Kundaje et al., 2015) of ROR2.\n\n### Functional clues from the associated variants in T1D patients\n\nTo understand the mechanism behind the genetic regulation of immune response in T1D, we next explored the function of the identified genetic factors behind immune phenotypes. We noticed that SNPs within the 28 immune parameter QTLs are mostly located in intergenic and intronic regions (Figure 4\u2014figure supplement 3), suggesting that the genetic variants we identified influence immune phenotypes through regulatory effects rather than by altering protein structure alteration. Moreover, according to public databases (Carithers and Moore, 2015; Westra et al., 2013), 7 out of the 28 loci influence gene expression in blood (Supplementary file 1F), including rs7512140: FCGR2B/FCRLB, rs35092096: CCR1/CCR3, rs4744112: ROR2/SPTLC1, rs10840031: TRIM66, rs800139: C11orf21, rs1518110: IL10, and rs56350303: AC091814.2. These indicate the potential functional genes behind the identified genetic loci.\n\n## Discussion\n\nThe present study applied a high-throughput functional genomics approach to identify the associations between genetic factors and inflammatory phenotype in patients with T1D. The results confirm a correlation between baseline immune-cell populations and ex vivo cytokine production in response to bacterial, fungal, non-microbial, and TLR ligand stimulations. We provide evidence for a direct link between T1D GWAS loci and immune functionality, particularly through circulating T cell subpopulations. We show that T cell alteration is largely driven by T1D genetics, while B cells do not show a significant association with T1D GWAS loci. The association between the proportion of CCR5+ Tregs and T1D susceptibility through CCR genes suggests that T1D-associated genetic variants contribute to alteration of immune function through a cumulative effect. Finally, out of 28 genome-wide significant genetic loci regulating immune-cell proportions and cytokine production, we identified 12 immune phenotype QTLs specific to 300DM. We also found 11 druggable genes as candidates for therapeutic intervention. Altogether, this study provides several novel insights into the genetic variability of immune traits in T1D.\n\nThe correlation we found between baseline immune cells and cytokine production in response to bacterial, fungal, non-microbial, and TLR ligand stimulations suggests that steady-state immune-cell abundance and alteration of immune-cell proportion also affect immune response. This is in line with earlier findings on the regulation between immune cells and cytokine production (Kim et al., 2007). This finding has two important consequences: (1) immune response variability could be partly explained by variations in steady state and (2) treatment of steady-state immune cells before stimulation could also influence immune response after stimulation.\n\nStudies comparing T1D patients and healthy controls show that immune-related genes are physically located in T1D loci or are differentially expressed. More studies highlight the importance of T cell immunity in T1D pathology (Farh et al., 2015). In our study, we provide evidence for a direct link between T1D GWAS loci and immune functionality, particularly for circulating T cell subpopulations. We show that T cell alteration is largely genetically driven, while, interestingly, B cells do not show a significant association with T1D GWAS loci. It is thus tempting to speculate that the occurrence of auto-antibodies in T1D patients has limited pathophysiological relevance and is merely a marker of an autoimmune process mainly driven by T cells, as has been suggested before (Martin et al., 2001).\n\nImportantly, we reveal that the effects of different GWAS loci on immune phenotypes vary. Despite the strong effects of the CCR locus (mean absolute effect sizes = 0.017 [cell proportion] and 0.15 [cytokine production]), we observed much weaker individual effects for other T1D GWAS loci on immune-cell proportion parameters (mean absolute effect size = 0.0060) and/or cytokine production (mean absolute effect size = 0.10) (Figure 2C and Figure 2\u2014figure supplement 2). This finding indicates that T1D-associated genetic variants might alter immune function through a cumulative effect. Considering the complexity of the immune system, this may be an alternative explanation for our finding that T1D-associated genetic variants that affect immune functions differ from the genetic variants that affect immune-cell proportion and cytokine production capacity.\n\nDespite the limited sample size, we identified 28 genome-wide significant genetic loci regulating immune-cell proportions and cytokine production in T1D patients and health. Among them, we found 12 immune phenotype QTLs in 300DM but not in healthy volunteers, suggesting a distinct regulatory mechanism of immune parameters and functions in disease compared to health. More importantly, our results highlight 11 druggable genes as candidates for therapeutic intervention.\n\nThe data presented in our study were generated from PBMC. While these likely reflect overall immune function, some immune-cell types may not be captured and the findings refer to changes in circulating factors that may not necessarily reflect changes occurring in relevant immune organs such as pancreatic islets, gut, or lymph nodes. Nonetheless, islet-infiltrating immune cells do originate from circulating blood cells, while circulating chemokines/cytokines are important in activating and recruiting immune cells. Hence, the circulating level of immune cells and cytokine production capacity are probably relevant for local tissue immunity.\n\nWe acknowledge that our study has limitations. First, 300DM and 500FG were recruited and measured 2 years apart, albeit in an identical setting and following the same protocol in the same lab. There may thus be some differences in the absolute immune-cell counts or cytokine levels due to a batch effect. Therefore, this study was not designed as a case-control study, but the healthy controls were used to compare genetic associations identified in the T1D cohort. Second, young people are overrepresented in 500FG. Although we regressed age out in both cohorts, there may still be a bias in the genetic mapping. Third, our investigation on circulating cytokines in this study was focused on the variation of inflammatory responses, which are mediated by innate immune cells and are antigen-independent. Future study could focus on the stimulation of PBMC with beta-cell autoantigens such as insulin or GAD65 peptides, to assess specific T and B cell functional responses. Finally, our T1D-specific analyses should be viewed as exploratory because they have not been validated in a separate cohort. Our study has also strengths. We applied cutting-edge technologies to assess immune-cell function and genetic variation, and this is the first study to comprehensively combine \u2018omics\u2019 technologies with abundant phenotyping in a rather large group of participants (N=215) to explain intra-individual variation in immune responses. Moreover, we stimulated mononuclear cells with ligands of pattern recognition receptors, such as TLR2 and TLR4, known to induce effective inflammation. These stimulations yield significant releases of cytokines allowing detailed quantification of various inflammatory pathways in each subject.\n\nIn conclusion, by applying a novel high-throughput functional genomics approach, we have shown that genetic factors regulate immune responses in T1D patients. We show genetic susceptibility to immune phenotypes in patients with T1D and highlight the importance of T cell immunity in the genetic regulation of T1D. We also identify specific cell populations (CCR5+ Tregs) that are likely involved in pathophysiology of T1D. Together, these findings may provide an avenue toward identification of novel preventive and therapeutic treatments.\n\n### Data and code availability\n\nAll the raw data on immune phenotypes and summary statistics generated directly from genetic data needed to precisely reproduce published results are deposited in Dryad (https://doi.org/10.5061/dryad.4f4qrfjd0). Custom scripts for generating summary statistics and all results are deposited in GitHub (https://github.com/Chuxj/Gf_of_ip_in_T1D, copy archived at swh:1:rev:1e39df29dbf38a94b9e2325827ac94043d190be7; Chux, 2021). Individual genetic data and other privacy-sensitive individual information are not publicly available because they contain information that could compromise research participant privacy. For data access, please contact Prof. Cees Tack (Cees.Tack@radboudumc.nl). This original data is available for qualified researchers, that is, senior investigators employed or legitimately affiliated with an academic, non-profit, or government institution who have a track record in the field. We would ask the researcher to sign a data access agreement that needs to be signed by applicants and legal representatives of their universities. In addition, we would require a research proposal, to ensure that \u2018Applications for access to Data must be Specific, Measurable, Attainable, Resourced and Timely.\u2019 The applicant must implement the proposed research within the designed time frame and the data must be deleted after finishing the proposal.\n",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "79dc8add-e623-4714-9be1-352ab3f4c319",
+      "submission_id": "7eae681f-bef9-4c87-b80d-f1c912598370",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christoph Buettner, Rutgers Robert Wood Johnson Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73709.sa0](https://doi.org/10.7554/eLife.73709.sa0)\n\nThis study examines genetic and non-genetic factors influencing immune responses in type 1 diabetes Key findings are: 1) age and season affect immune cell traits and cytokine production upon stimulation; 2) certain genetic variants that determine susceptibility to T1D significantly affect T cell composition, notably the CCR region that is associated with CCR5+ regulatory T cells; and 3) 15 genetic loci that influence immune responses in T1D, most of which have not been seen previously in healthy populations. The results suggest mechanisms of T1D-specific genetic regulation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Christoph Buettner, Rutgers Robert Wood Johnson Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73709.sa1](https://doi.org/10.7554/eLife.73709.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Genetic and environmental effects on the immune phenotypes in type 1 diabetes\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Peter S Linsley (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWhile the reviewers acknowledged the potential value of this work, they criticized that the paper lacked focus and needed significant editing and rewriting.\n\n1. Please address the many requests for clarification and/or more nuanced discussion as outlined by the reviewers.\n\n2. Define the population structure and perform an analysis for population stratification.\n\n3. Define how the 1000 random SNPs were selected.\n\n4. Describe the methodology of meta-analysis used in more detail.\n\n5. Provide figure legends that summarize the results rather than the tasks executed.\n\n6. Focus on the genetic association with immune phenotypes in your analysis.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A genome-wide functional genomics approach uncovers genetic determinants of immune phenotypes in type 1 diabetes\" for further consideration by eLife. Your revised article has been evaluated by Mone Zaidi (Senior Editor) and a Reviewing Editor.\n\nCould the authors discuss the limitation that the stimulation of PBMC's was done using generic stimulants and not \u03b2-cell autoantigens such as insulin or GAD65 peptides. This would address Reviewers 2 criticism.\n\nReviewer #1 (Recommendations for the authors):\n\nThis revised manuscript has incorporated extensive modifications to the original. The modifications have improved the manuscript and I have no further major objections to publication.\n\nReviewer #2 (Recommendations for the authors):\n\nMost comments were addressed.\n\nHowever, an important critique was not addressed or commented on by the authors, and that is the fact that stimulation of PBMC's was done using generic stimulants and not \u03b2-cell autoantigens such as insulin or GAD65 peptides. This weakness of the work needs to be addressed.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have substantially improved this manuscript by re-focusing the data that is presented and discussed on their most interesting findings. Generally, the manuscript is now much easier to read and follow, and it makes important points. The discussion in particular is well composed and acknowledges both strengths and weaknesses of the study.\n",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "51517c3b-2f5d-4db6-8ffc-4369549b90fb",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C1",
+      "claim": "Type 1 diabetes (T1D) is a common, chronic, autoimmune disease characterized by destruction of insulin-producing beta-cells in the pancreas.",
+      "claim_type": "EXPLICIT",
+      "source": "Type 1 diabetes (T1D) is a common, chronic, autoimmune disease, characterized by destruction of insulin-producing beta-cells in the pancreas that results in lifelong dependence on exogenous insulin and is associated with a high morbidity and mortality (Atkinson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Atkinson et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "cfc60391-1a32-4fb3-a909-857599735be4",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C2",
+      "claim": "T1D results in lifelong dependence on exogenous insulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Type 1 diabetes (T1D) is a common, chronic, autoimmune disease, characterized by destruction of insulin-producing beta-cells in the pancreas that results in lifelong dependence on exogenous insulin and is associated with a high morbidity and mortality (Atkinson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Atkinson et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "c778c7a6-0f7b-447b-b937-7e8e44c4fa12",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C3",
+      "claim": "T1D is associated with high morbidity and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Type 1 diabetes (T1D) is a common, chronic, autoimmune disease, characterized by destruction of insulin-producing beta-cells in the pancreas that results in lifelong dependence on exogenous insulin and is associated with a high morbidity and mortality (Atkinson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Atkinson et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "2afbcc18-7599-4a7d-815a-c6d693dd8642",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C4",
+      "claim": "Environmental factors such as being overweight, infections, microbiome composition, and dietary deficiencies have been reported as risk factors for T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "Environmental factors such as being overweight, infections, microbiome composition, and dietary deficiencies have been reported as risk factors for T1D (Rewers and Ludvigsson, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rewers and Ludvigsson, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "7336dbbf-7171-473a-86b0-8b22f3879945",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C5",
+      "claim": "The immunological pathogenesis of T1D includes innate inflammation and adaptive immunity, such as enhanced T cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, the immunological pathogenesis (Cabrera et al., 2016) of T1D includes innate inflammation and adaptive immunity, such as enhanced T cell responses (Hundhausen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cabrera et al., 2016 and Hundhausen et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "6ae7901d-99bf-4406-886f-e1f6af3dd082",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C6",
+      "claim": "Approximately 60 genomic loci have been associated with T1D risk.",
+      "claim_type": "EXPLICIT",
+      "source": "In the last two decades, large genome-wide association studies (GWAS) performed have underscored the contribution of genetic polymorphisms to T1D for the susceptibility, with ~60 genomic loci associated with T1D risk identified (Barrett et al., 2009; Bradfield et al., 2011; Cooper et al., 2008; Grant et al., 2009; Huang et al., 2012; Onengut-Gumuscu et al., 2015; Ram et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple GWAS citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "2578c26e-586a-4c78-827b-6dfc0f0aaf52",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C7",
+      "claim": "T1D GWAS loci show significant enrichment in specific immune-related biological pathways, such as cytokine signaling and T cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "While these loci show significant enrichment in specific immune-related biological pathways, such as cytokine signaling and T cell activation (Barrett et al., 2009; Cooper et al., 2008), the functional consequences of many of these loci and genetic variants are still unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barrett et al., 2009 and Cooper et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "5aee2213-b3ef-4664-a2d7-9909575c9fa5",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C8",
+      "claim": "Blood samples were collected from 243 T1D patients of Dutch descent in the 300DM cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 300DM cohort, we collected blood samples from 243 T1D patients (132 males and 111 females of Caucasian origin), following a previously described methodology (Aguirre-Gamboa et al., 2016; Ter Horst et al., 2016; Li et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "7f14fd2b-d5ed-4818-b8db-e4112dc81f03",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C9",
+      "claim": "The 300DM cohort consisted of 132 males and 111 females of Caucasian origin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 300DM cohort, we collected blood samples from 243 T1D patients (132 males and 111 females of Caucasian origin), following a previously described methodology (Aguirre-Gamboa et al., 2016; Ter Horst et al., 2016; Li et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated demographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "9d05c9e0-39ef-4d8a-b1c5-d00f8e2c58eb",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C10",
+      "claim": "Participant ages in the 300DM cohort ranged from 20 to 84 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Participant's ages ranged from 20 to 84 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated demographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "fb031df8-3820-444a-8462-3cd1fd09c33c",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C11",
+      "claim": "269 immune-cell traits were measured in the 300DM cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we ended up with 269 immune-cell traits for the 300DM cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement outcome",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "120da575-b4e7-4207-91f2-fde63a499d6f",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C12",
+      "claim": "IL-1\u03b2, IL-6, TNF-\u03b1, IL-8, IL-10, IL-1Ra, and MCP-1 are considered monocyte-derived cytokines and were measured 24 hr after stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Following our previously reported definition (Li et al., 2016), we considered IL-1\u03b2, IL-6, TNF-\u03b1, IL-8, IL-10, IL-1Ra, and MCP-1 to be monocyte-derived cytokines and measured them 24 hr after stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on previous definition from Li et al., 2016",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "a6671fe9-88b6-4d4f-a872-deb21b021e05",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C13",
+      "claim": "INF-\u03b3, IL-17, and IL-22 are considered T cell-derived cytokines and were measured at 7 days after stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we considered INF-\u03b3, IL-17, and IL-22 to be T cell-derived cytokines and measured them at 7 days after stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on previous definition from Li et al., 2016",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "93a1fc17-b8f6-4896-afa9-fc3a49a44c34",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C14",
+      "claim": "DNA samples of 224 Dutch T1D patients were genotyped using the Infinium Global Screening Array.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA samples of 224 Dutch T1D patients were collected and genotyped using the Infinium Global Screening Array.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "cc86e1ac-1575-4038-8161-18b8dfce893c",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C15",
+      "claim": "After quality control, 215 samples from the 300DM cohort remained for further analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This left 215 samples for further analysis, and these samples show good consistency with European samples from 1000 Genomes data (Figure 1\u2014figure supplement 2) according to standard protocol (Anderson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated after quality control procedures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "0b644f4b-2b32-45b4-af43-35dfe642e242",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C16",
+      "claim": "After quality control and merging, 4,304,387 SNPs and 666 individuals remained in the merged cohort (N300DM = 215 and N500FG = 451).",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded SNPs with low imputation quality (R2 < 0.3) and/or a MAF < 0.01 in all imputed samples and/or HWE p-values < 1 \u00d7 10\u20135 in healthy individuals, leaving 4,304,387 SNPs and 666 individuals in the merged cohort (N300DM = 215 and N500FG = 451).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated after quality control and merging procedures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "d0e9ec5a-fc19-4acd-ab53-f5bd66460763",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C17",
+      "claim": "Age significantly associated with 129/269 immune-cell traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Age significantly associated with 129/269 immune-cell traits and 12/55 cytokine traits, gender associated with 59/269 immune-cell traits and 5/55 cytokine traits, and seasonal effects associated with 121/269 immune-cell traits and 38/55 cytokine traits (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and referenced figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "6caecfde-b1a3-42f7-b972-3abe3cb88adf",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C18",
+      "claim": "Age significantly associated with 12/55 cytokine traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Age significantly associated with 129/269 immune-cell traits and 12/55 cytokine traits, gender associated with 59/269 immune-cell traits and 5/55 cytokine traits, and seasonal effects associated with 121/269 immune-cell traits and 38/55 cytokine traits (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and referenced figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "0cd51156-281d-434b-b9b2-fa93bdb56849",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C19",
+      "claim": "Gender significantly associated with 59/269 immune-cell traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Age significantly associated with 129/269 immune-cell traits and 12/55 cytokine traits, gender associated with 59/269 immune-cell traits and 5/55 cytokine traits, and seasonal effects associated with 121/269 immune-cell traits and 38/55 cytokine traits (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and referenced figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "8ea9351a-1de9-4cc4-9827-54e4055ac3ce",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C20",
+      "claim": "Gender significantly associated with 5/55 cytokine traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Age significantly associated with 129/269 immune-cell traits and 12/55 cytokine traits, gender associated with 59/269 immune-cell traits and 5/55 cytokine traits, and seasonal effects associated with 121/269 immune-cell traits and 38/55 cytokine traits (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and referenced figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "dd29e371-c7a3-4f30-87a8-ee86c1ad6ad7",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C21",
+      "claim": "Seasonal effects significantly associated with 121/269 immune-cell traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Age significantly associated with 129/269 immune-cell traits and 12/55 cytokine traits, gender associated with 59/269 immune-cell traits and 5/55 cytokine traits, and seasonal effects associated with 121/269 immune-cell traits and 38/55 cytokine traits (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and referenced figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "390fd2bf-a53c-4eb9-ac43-00132dc9925c",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C22",
+      "claim": "Seasonal effects significantly associated with 38/55 cytokine traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Age significantly associated with 129/269 immune-cell traits and 12/55 cytokine traits, gender associated with 59/269 immune-cell traits and 5/55 cytokine traits, and seasonal effects associated with 121/269 immune-cell traits and 38/55 cytokine traits (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and referenced figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "6fb6b062-82fb-43c8-84ab-8d7f45094575",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C23",
+      "claim": "B cell subpopulations cluster separately from T cell, monocyte, and NK cell population clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a separation of the B cell subpopulations cluster from the T cell, monocyte, and NK cell population clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in nonmetric MDS analysis shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "c9e22ff3-471a-472e-b625-e604dc93247d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C24",
+      "claim": "T cells, monocytes, and NK cells have more interplay than B cells at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that T cells, monocytes, and NK cells have more interplay than B cells at baseline, which is consistent with our previous finding in a healthy cohort (500FG; Aguirre-Gamboa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from clustering analysis and supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "d3dd02c4-4be9-49d1-be0c-6cf463bf461e",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C25",
+      "claim": "Cytokine features cluster based on their cellular origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cytokine features are clustered based on their cellular origins, with a partially overlapping cluster between monocyte-derived cytokines and T cell-derived cytokines (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in nonmetric MDS analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "e59eff3a-3436-45dd-9c59-f38b3ea9b0b7",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C26",
+      "claim": "There is a partially overlapping cluster between monocyte-derived cytokines and T cell-derived cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cytokine features are clustered based on their cellular origins, with a partially overlapping cluster between monocyte-derived cytokines and T cell-derived cytokines (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in nonmetric MDS analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "c468813e-852a-4791-92b2-1628f159958d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C27",
+      "claim": "Positive correlations are observed between monocyte lineages and monocyte-derived cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the functional relationship between immune cells and cytokines, we observed positive correlations between monocyte lineages and monocyte-derived cytokines (IL-1\u03b2, IL-6, TNF-\u03b1, IL-10, IL-1RA, IL-8, and MCP-1) and between T cell subsets and T cell-derived cytokines (IFN\u03b3, IL-17, and IL-22) (indicated by red color in Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in correlation analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "7dc1ae57-4fc1-4288-a730-dff7c113b001",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C28",
+      "claim": "Positive correlations are observed between T cell subsets and T cell-derived cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the functional relationship between immune cells and cytokines, we observed positive correlations between monocyte lineages and monocyte-derived cytokines (IL-1\u03b2, IL-6, TNF-\u03b1, IL-10, IL-1RA, IL-8, and MCP-1) and between T cell subsets and T cell-derived cytokines (IFN\u03b3, IL-17, and IL-22) (indicated by red color in Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in correlation analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "9031e77b-2ec3-47b1-8621-3bfb9d4b5e1e",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C29",
+      "claim": "Negative correlations are observed between monocyte-derived cytokines production and lymphocyte counts.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a negative correlation between monocyte-derived cytokines production in response to four distinct types of stimulations (bacteria, fungi, non-microbial, and TLR ligands) and lymphocyte counts (blue, Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in correlation analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "8f66388e-215d-4dcf-9598-79fc552c5d87",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C30",
+      "claim": "Similar correlation patterns between immune cells and cytokines are observed in both T1D patients and healthy individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar correlation patterns in 500FG (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison between 300DM and 500FG cohorts shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "4dcabdbf-c9d5-4f86-8c41-09fddba46e38",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C31",
+      "claim": "A high abundance of adaptive immune cells at baseline is associated with lower production of monocytes-derived cytokines after stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation is in line with a previous finding that a high abundance of adaptive immune cells at baseline is associated with lower production of monocytes-derived cytokines after stimulation (Kim et al., 2007), and this is not altered by T1D status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2007",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "54be144b-93aa-466c-843a-1af77f7667ed",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C32",
+      "claim": "The correlation between adaptive immune cell abundance and monocyte-derived cytokine production is not altered by T1D status.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation is in line with a previous finding that a high abundance of adaptive immune cells at baseline is associated with lower production of monocytes-derived cytokines after stimulation (Kim et al., 2007), and this is not altered by T1D status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison between T1D and healthy cohorts",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "f91336d1-85bb-49b0-9d6a-d06a882fb7f1",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C33",
+      "claim": "The interrelationships between immune cells and cytokines in response to stimulations are roughly similar between T1D and healthy individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the interrelationships between immune cells and cytokines in response to stimulations are roughly similar between T1D and healthy individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from correlation analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "9da50a57-9373-43d2-9748-f70b44942164",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C34",
+      "claim": "63 independent T1D loci from published GWAS were present in the study data.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, genetic variants in 63 independent T1D loci were present in our data, and we found that 13 of these 63 were indeed associated with susceptibility to T1D with nominal significance (p-value < 0.05) (Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated from analysis of GWAS data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "0a9f0534-fbdf-49dd-ab89-92b18e023071",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C35",
+      "claim": "13 of the 63 T1D GWAS loci were associated with susceptibility to T1D with nominal significance (p-value < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, genetic variants in 63 independent T1D loci were present in our data, and we found that 13 of these 63 were indeed associated with susceptibility to T1D with nominal significance (p-value < 0.05) (Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated from statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "aab03753-542a-48a1-9353-e853a4e8b015",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C36",
+      "claim": "T1D GWAS SNPs are enriched in association with T cell traits in the T1D cohort (p-value = 0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "The p-value shows that the T1D GWAS SNPs are enriched in association with T cell traits in the T1D cohort (p-value = 0.007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by permutation analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "6381752c-2d56-4178-88f8-52ecbf54b652",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C37",
+      "claim": "261 out of 269 immune-cell phenotypes are suggestively associated with at least one T1D GWAS locus (p-value < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "A pair-wise association analysis between T1D GWAS loci and immune phenotypes shows that 261 out of 269 immune-cell phenotypes and 53 out of 55 cytokine-stimulation pairs are suggestively associated with at least one T1D GWAS locus (p-value < 0.05, Supplementary file 1d and e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated from association analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "a1a6b99e-de7a-401a-97d6-bdd82b51d2f2",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C38",
+      "claim": "53 out of 55 cytokine-stimulation pairs are suggestively associated with at least one T1D GWAS locus (p-value < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "A pair-wise association analysis between T1D GWAS loci and immune phenotypes shows that 261 out of 269 immune-cell phenotypes and 53 out of 55 cytokine-stimulation pairs are suggestively associated with at least one T1D GWAS locus (p-value < 0.05, Supplementary file 1d and e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated from association analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "46527c39-f838-4081-ba19-98c940526f80",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C39",
+      "claim": "The 63 T1D GWAS loci explain significantly more variance in 27 cell sub-proportions compared to random sets of independent SNPs (p-value < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to random sets of independent SNPs, the 63 T1D GWAS loci explain significantly more of the variance in 27 cell sub-proportions and 15 cytokine production traits (p-value < 0.05, Figure 2C, Figure 2\u2014figure supplement 2A, B,).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by permutation-based analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "7f74d7e5-2bbc-4d6b-934f-19fac2fd20cc",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C40",
+      "claim": "The 63 T1D GWAS loci explain significantly more variance in 15 cytokine production traits compared to random sets of independent SNPs (p-value < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to random sets of independent SNPs, the 63 T1D GWAS loci explain significantly more of the variance in 27 cell sub-proportions and 15 cytokine production traits (p-value < 0.05, Figure 2C, Figure 2\u2014figure supplement 2A, B,).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by permutation-based analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "638b044b-6a0b-40b2-928e-2ac86d3a2805",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C41",
+      "claim": "The T1D risk allele rs11574435-T is associated with a higher percentage of many CCR5+ CD4+ T cell traits and a lower percentage of CCR5\u2212 CD4+ T cell traits.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the heatmap (Figure 2C, arrowhead), one T1D risk allele, rs11574435-T, which is in strong LD (r2=0.95) with the T1D GWAS SNP rs113010081 (Onengut-Gumuscu et al., 2015), is associated with a higher percentage of many CCR5+ CD4+ T cell traits and a lower percentage of CCR5\u2212 CD4+ T cell traits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in QTL analysis shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "627b9d72-0c87-43e5-a396-9f4bfac3f5f1",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C42",
+      "claim": "rs11574435-T is in strong LD (r2=0.95) with the T1D GWAS SNP rs113010081.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the heatmap (Figure 2C, arrowhead), one T1D risk allele, rs11574435-T, which is in strong LD (r2=0.95) with the T1D GWAS SNP rs113010081 (Onengut-Gumuscu et al., 2015), is associated with a higher percentage of many CCR5+ CD4+ T cell traits and a lower percentage of CCR5\u2212 CD4+ T cell traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated LD relationship with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "86b086e7-1ee3-4798-bc1a-6fef721bbf2a",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C43",
+      "claim": "CCR5, CCL5, and CCL4 show significant expression changes in T1D patients compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "This identified significant expression changes of CCR5, CCL5, and CCL4 in T1D patients, which suggests the involvement of this chemokine ligand-chemokine receptor pathway (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in transcriptome analysis shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "164c610a-0aac-41a7-9dff-eac568e13e89",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C44",
+      "claim": "The minor allele T in rs35092096 associates with a higher ratio of CCR6+ CCR7\u2212 CCR5+ Tregs/CCR6+ Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, minor allele T in rs35092096 associates with a higher ratio of CCR6+ CCR7\u2212 CCR5+ Tregs/CCR6+ Tregs (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in QTL analysis shown in Figure 3B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "6ed8e3d3-7e49-4c68-b4cd-591dc72a6a1d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C45",
+      "claim": "CCR6+ CCR7\u2212 CCR5+ Tregs and T1D share the same regulatory genomic region (H3=0.95).",
+      "claim_type": "EXPLICIT",
+      "source": "The result strongly supports that CCR6+ CCR7\u2212 CCR5+ Tregs share the same regulatory genomic region with T1D, although the causal SNP might be different (Figure 3D, H3=0.95).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colocalization analysis shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "76f8b5bc-98db-4574-ae8a-c2c5c5ae682b",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C46",
+      "claim": "The CCR region plays a role in Treg function in the pathogenesis of T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results support a role for the CCR region in Treg function in the pathogenesis of T1D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of evidence including QTL and colocalization analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "18c12a67-0d0d-49f1-be65-b472d75f827d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C47",
+      "claim": "T1D GWAS loci influence immune-cell proportion and cytokine production capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we observe that T1D GWAS loci influence immune-cell proportion and cytokine production capacity, again stressing the importance of T cell immunity in genetic regulation of T1D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from multiple analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "ec2aad46-4d4b-4454-918e-29f1f52ddd1d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C48",
+      "claim": "Nine genome-wide significant QTLs (p-value < 5 \u00d7 10\u20138) associated with immune-cell proportion were identified in 300DM.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore potential genetic regulation of immune phenotypes on the whole-genome level, we performed QTL mapping in 300DM. This identified nine genome-wide significant QTLs (p-value < 5 \u00d7 10\u20138) associated with immune-cell proportion, including four associated with T cell subpopulations expressing specific chemokine receptors (e.g., rs35092096 and rs7614884) (Figure 4A, top and middle panels, Supplementary file 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated from QTL mapping analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "5bf42e48-ae15-459e-8b02-a8e27b4ae96e",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C49",
+      "claim": "Four of the nine immune-cell proportion QTLs are associated with T cell subpopulations expressing specific chemokine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This identified nine genome-wide significant QTLs (p-value < 5 \u00d7 10\u20138) associated with immune-cell proportion, including four associated with T cell subpopulations expressing specific chemokine receptors (e.g., rs35092096 and rs7614884) (Figure 4A, top and middle panels, Supplementary file 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated from QTL mapping analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "b29c61c6-579f-4331-9d04-375d259271c0",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C50",
+      "claim": "Cell proportion QTLs show significant enrichment in chemokine and cytokine signaling-related biological pathways (FDR < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway analysis of the cell proportion QTLs showed significant enrichment in chemokine and cytokine signaling-related biological pathways (FDR < 0.05, Figure 4\u2014figure supplement 2A), highlighting the effects of immune signaling genes in cell proportion regulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pathway enrichment analysis shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "607eea8d-bec5-4f48-a46a-e233ac0700b7",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C51",
+      "claim": "Six significant genomic loci associated with cytokine production in response to stimulations were detected in 300DM.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we detected six significant genomic loci associated with cytokine production in response to stimulations by QTL mapping in 300DM (Figure 4A, bottom panel, Supplementary file 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated from QTL mapping analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "db65c141-636e-4a44-ba42-c15054ac45b8",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C52",
+      "claim": "Cytokine production QTLs are significantly enriched in TLR-related pathways (FDR < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Cytokine production QTLs are significantly enriched in TLR-related pathways (FDR < 0.05, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pathway enrichment analysis shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "da66ae12-e477-4c14-a2a4-a5238ec40914",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C53",
+      "claim": "The missense variant rs5743618 on the TLR1 gene affects IL-6 production in response to S. pneumoniae in PBMC.",
+      "claim_type": "EXPLICIT",
+      "source": "A missense variant, rs5743618, on the TLR1 gene, affects IL-6 production in response to S. pneumoniae in PBMC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated from QTL analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "828e5166-6bab-48fd-9a4b-cf874d7b4e9b",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C54",
+      "claim": "The TLR locus has a strong effect on cytokine levels in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we had observed that the TLR locus has a strong effect on cytokine levels in controls (Li et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "e1e0d023-346f-4e4c-be4a-bed398c1e301",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C55",
+      "claim": "TLRs detect pathogens (including bacterial pathogens) and trigger the release of inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support the reported function of TLRs in detecting pathogens (including bacterial pathogens) and triggering the release of inflammatory cytokines (Fitzgerald and Kagan, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fitzgerald and Kagan, 2020",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "3997116a-a81f-4aa2-9044-ee8906d15f5a",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C56",
+      "claim": "A meta-analysis integrating QTLs from 300DM and 500FG cohorts identified 10 novel genetic loci associated with immune-cell proportion.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, to identify the consistent immune phenotype QTLs within T1D patients and healthy individuals and expand our understanding of genetic regulation of immune phenotypes, we performed a meta-analysis by integrating the QTLs obtained from the 300DM and 500FG cohorts. In total, we identified 10 novel genetic loci associated with immune-cell proportion (Figure 4A, top panel, colored in red) and three novel genetic loci that were associated with cytokine production (Figure 4A, bottom panel, colored in red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated from meta-analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "22b95052-5ff2-406b-9f51-325982b32d71",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C57",
+      "claim": "A meta-analysis integrating QTLs from 300DM and 500FG cohorts identified three novel genetic loci associated with cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 10 novel genetic loci associated with immune-cell proportion (Figure 4A, top panel, colored in red) and three novel genetic loci that were associated with cytokine production (Figure 4A, bottom panel, colored in red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated from meta-analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "ec60e552-4ac1-4ab3-add3-f4b9542ddd7c",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C58",
+      "claim": "The CD5 locus is significantly associated with IgD+ CD5++ proportion in B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This included a CD5 locus that was significantly associated with IgD+ CD5++ proportion in B cells (Supplementary file 1F), which may be important as recent studies have reported the relevance of IgD+ CD5++ B cells in T1D (Saxena et al., 2017) and other autoimmune diseases such as Graves' disease (Van der Weerd et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated from QTL analysis with supporting citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "1694b2dd-533a-43ee-82e7-283def7b13bb",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C59",
+      "claim": "IgD+ CD5++ B cells are relevant in T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "This included a CD5 locus that was significantly associated with IgD+ CD5++ proportion in B cells (Supplementary file 1F), which may be important as recent studies have reported the relevance of IgD+ CD5++ B cells in T1D (Saxena et al., 2017) and other autoimmune diseases such as Graves' disease (Van der Weerd et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Saxena et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "693d1b03-349e-4acf-8e13-5145cc8bd733",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C60",
+      "claim": "IgD+ CD5++ B cells are relevant in Graves' disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This included a CD5 locus that was significantly associated with IgD+ CD5++ proportion in B cells (Supplementary file 1F), which may be important as recent studies have reported the relevance of IgD+ CD5++ B cells in T1D (Saxena et al., 2017) and other autoimmune diseases such as Graves' disease (Van der Weerd et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Van der Weerd et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "99d0f7cb-4da5-4865-abb2-fe87691ea756",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C61",
+      "claim": "28 genetic loci were identified as associated with either immune-cell traits or cytokine production phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, we identified 28 genetic loci associated with either immune-cell traits or cytokine production phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of QTL mapping results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "5ec4aa3e-5121-40c9-8d62-7d8db0ead0ae",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C62",
+      "claim": "11 of the 28 identified loci contain genes that are known drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the genes within 11 loci (\u00b1250 kb window) are known drug targets according to the public drug database (Finan et al., 2017), including COL13A1, CCR family genes, ROR2, NOS1, IL-10, IL-6, STK33, NELL1, FCGR2A, CD5, and TLR1 (Supplementary file 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identified through drug database search with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "f993f88d-5152-4fd4-8be0-7a6d7194f074",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C63",
+      "claim": "STK33 inhibitor is used for rheumatoid arthritis treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these genes are already therapeutic targets in other autoimmune diseases, for example, the STK33 inhibitor for rheumatoid arthritis treatment (Rolf et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rolf et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "d76ee27c-3303-45b5-9534-dfd7334981cc",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C64",
+      "claim": "12 out of the 28 significant loci have never been reported in other healthy individual population cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth mentioning that, as far as we know, 12 out of the 28 significant loci we identified have never been reported in other healthy individual population cohorts according to PhenoScanner V2 (Kamat et al., 2019) (p-value < 1 \u00d7 10\u20135, November 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identified through database search with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "3d530efa-5364-418a-84a0-0d832a93707a",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C65",
+      "claim": "12 of the 28 significant loci were not identified in the 500FG cohort (p-value < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Nor were they identified in the 500FG cohort (p-value < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated from comparison analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "a6f7f8e3-ba56-4612-958d-1c45669faa63",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C66",
+      "claim": "rs4744112 located on chromosome 9 influences CCR6+ CXCR3+ CCR4\u2212 Th1-like helper proportion.",
+      "claim_type": "EXPLICIT",
+      "source": "One example effect of one of these T1D-specific loci is that of rs4744112 located on chromosome 9, which influences CCR6+ CXCR3+ CCR4\u2212 Th1-like helper proportion (Figure 4B), with minor allele G leading to a decrease in these cells relative to major allele T (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in QTL analysis shown in Figure 4B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "2ad69949-0e6c-4af9-9323-c8fe62f5e15d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C67",
+      "claim": "The minor allele G of rs4744112 leads to a decrease in CCR6+ CXCR3+ CCR4\u2212 Th1-like helper cells relative to major allele T.",
+      "claim_type": "EXPLICIT",
+      "source": "One example effect of one of these T1D-specific loci is that of rs4744112 located on chromosome 9, which influences CCR6+ CXCR3+ CCR4\u2212 Th1-like helper proportion (Figure 4B), with minor allele G leading to a decrease in these cells relative to major allele T (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in QTL analysis shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "5d652104-b8eb-46fb-a498-580355520121",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C68",
+      "claim": "rs4744112 is located within the transcriptional starting site and enhancer regions of ROR2.",
+      "claim_type": "EXPLICIT",
+      "source": "rs4744112 is located within the transcriptional starting site and enhancer regions (Kundaje et al., 2015) of ROR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kundaje et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "8bf3cd8c-d073-479d-99af-20380ef993ab",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C69",
+      "claim": "SNPs within the 28 immune parameter QTLs are mostly located in intergenic and intronic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that SNPs within the 28 immune parameter QTLs are mostly located in intergenic and intronic regions (Figure 4\u2014figure supplement 3), suggesting that the genetic variants we identified influence immune phenotypes through regulatory effects rather than by altering protein structure alteration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in genomic annotation analysis shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "98d82856-8e13-4111-a2d8-8378ae8d52fd",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C70",
+      "claim": "The genetic variants identified influence immune phenotypes through regulatory effects rather than by altering protein structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that SNPs within the 28 immune parameter QTLs are mostly located in intergenic and intronic regions (Figure 4\u2014figure supplement 3), suggesting that the genetic variants we identified influence immune phenotypes through regulatory effects rather than by altering protein structure alteration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genomic location analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "26e70fac-6992-4829-a529-9c30ad16f6a0",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C71",
+      "claim": "7 out of the 28 loci influence gene expression in blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, according to public databases (Carithers and Moore, 2015; Westra et al., 2013), 7 out of the 28 loci influence gene expression in blood (Supplementary file 1F), including rs7512140: FCGR2B/FCRLB, rs35092096: CCR1/CCR3, rs4744112: ROR2/SPTLC1, rs10840031: TRIM66, rs800139: C11orf21, rs1518110: IL10, and rs56350303: AC091814.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identified through eQTL database search with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "a7187d80-1be9-45b5-ab75-98cc3890a78b",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C72",
+      "claim": "There is a correlation between baseline immune-cell populations and ex vivo cytokine production in response to bacterial, fungal, non-microbial, and TLR ligand stimulations in T1D patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The results confirm a correlation between baseline immune-cell populations and ex vivo cytokine production in response to bacterial, fungal, non-microbial, and TLR ligand stimulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from correlation analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "08bbc76e-bf79-4d2e-901f-9819e2a2071f",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C73",
+      "claim": "There is a direct link between T1D GWAS loci and immune functionality, particularly through circulating T cell subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence for a direct link between T1D GWAS loci and immune functionality, particularly through circulating T cell subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from multiple analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "0f39484a-e63e-403f-b335-12d60be9d378",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C74",
+      "claim": "T cell alteration is largely driven by T1D genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that T cell alteration is largely driven by T1D genetics, while B cells do not show a significant association with T1D GWAS loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from association analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "1b5f5361-f3f1-40cc-920d-a5872ff69911",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C75",
+      "claim": "B cells do not show a significant association with T1D GWAS loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that T cell alteration is largely driven by T1D genetics, while B cells do not show a significant association with T1D GWAS loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from association analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "5f5db78a-c6b0-40cd-86db-edb7f90bf6e0",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C76",
+      "claim": "The association between the proportion of CCR5+ Tregs and T1D susceptibility through CCR genes suggests that T1D-associated genetic variants contribute to alteration of immune function through a cumulative effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between the proportion of CCR5+ Tregs and T1D susceptibility through CCR genes suggests that T1D-associated genetic variants contribute to alteration of immune function through a cumulative effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of evidence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "3e58479d-bd76-412c-bdf0-a30cc7df70cf",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C77",
+      "claim": "12 immune phenotype QTLs are specific to 300DM.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, out of 28 genome-wide significant genetic loci regulating immune-cell proportions and cytokine production, we identified 12 immune phenotype QTLs specific to 300DM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of comparative analysis between cohorts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "661e7474-9a28-4455-90a9-46171a6ee7a6",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C78",
+      "claim": "11 druggable genes were identified as candidates for therapeutic intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found 11 druggable genes as candidates for therapeutic intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identified through drug database search",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "8397ef21-e0da-48c6-82a3-20c861ec41ae",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C79",
+      "claim": "Steady-state immune-cell abundance and alteration of immune-cell proportion affect immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation we found between baseline immune cells and cytokine production in response to bacterial, fungal, non-microbial, and TLR ligand stimulations suggests that steady-state immune-cell abundance and alteration of immune-cell proportion also affect immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "aa1406fd-6780-4ed5-a2ba-b64263d44001",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C80",
+      "claim": "Immune response variability could be partly explained by variations in steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding has two important consequences: (1) immune response variability could be partly explained by variations in steady state and (2) treatment of steady-state immune cells before stimulation could also influence immune response after stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "4da023c1-dfbb-4a69-9991-c6356dae6332",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C81",
+      "claim": "Treatment of steady-state immune cells before stimulation could influence immune response after stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding has two important consequences: (1) immune response variability could be partly explained by variations in steady state and (2) treatment of steady-state immune cells before stimulation could also influence immune response after stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "3949f903-adb2-4468-8d56-deed4bc3526d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C82",
+      "claim": "Immune-related genes are physically located in T1D loci or are differentially expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies comparing T1D patients and healthy controls show that immune-related genes are physically located in T1D loci or are differentially expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of previous studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "d25cde6b-ac1d-4aec-a6fd-50b237cf9d9c",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C83",
+      "claim": "T cell immunity is important in T1D pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "More studies highlight the importance of T cell immunity in T1D pathology (Farh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Farh et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "31c6e564-2da7-4165-85dc-e549cfb659ca",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C84",
+      "claim": "The occurrence of auto-antibodies in T1D patients has limited pathophysiological relevance and is merely a marker of an autoimmune process mainly driven by T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus tempting to speculate that the occurrence of auto-antibodies in T1D patients has limited pathophysiological relevance and is merely a marker of an autoimmune process mainly driven by T cells, as has been suggested before (Martin et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation with supporting citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "d1c1d7bb-5e4b-4d19-9a8c-c7e4d9b2c4a4",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C85",
+      "claim": "The effects of different GWAS loci on immune phenotypes vary.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we reveal that the effects of different GWAS loci on immune phenotypes vary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from analysis of effect sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "747e01dd-0aa9-4bec-9156-c2888cfdc9dc",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C86",
+      "claim": "The CCR locus has strong effects on immune phenotypes (mean absolute effect sizes = 0.017 for cell proportion and 0.15 for cytokine production).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the strong effects of the CCR locus (mean absolute effect sizes = 0.017 [cell proportion] and 0.15 [cytokine production]), we observed much weaker individual effects for other T1D GWAS loci on immune-cell proportion parameters (mean absolute effect size = 0.0060) and/or cytokine production (mean absolute effect size = 0.10) (Figure 2C and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated from effect size analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "7e78b19b-2165-4742-bb26-27e301d36688",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C87",
+      "claim": "Other T1D GWAS loci have weaker individual effects on immune-cell proportion parameters (mean absolute effect size = 0.0060).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the strong effects of the CCR locus (mean absolute effect sizes = 0.017 [cell proportion] and 0.15 [cytokine production]), we observed much weaker individual effects for other T1D GWAS loci on immune-cell proportion parameters (mean absolute effect size = 0.0060) and/or cytokine production (mean absolute effect size = 0.10) (Figure 2C and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated from effect size analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "20217b3b-ae5e-4f89-8b6b-8bf4af8210fe",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C88",
+      "claim": "Other T1D GWAS loci have weaker individual effects on cytokine production (mean absolute effect size = 0.10).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the strong effects of the CCR locus (mean absolute effect sizes = 0.017 [cell proportion] and 0.15 [cytokine production]), we observed much weaker individual effects for other T1D GWAS loci on immune-cell proportion parameters (mean absolute effect size = 0.0060) and/or cytokine production (mean absolute effect size = 0.10) (Figure 2C and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated from effect size analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "c3695f3e-3533-4772-97ba-f507d596f041",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C89",
+      "claim": "T1D-associated genetic variants might alter immune function through a cumulative effect.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that T1D-associated genetic variants might alter immune function through a cumulative effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from effect size analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "63575830-9f0f-4c86-876b-7774ac201e5d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C90",
+      "claim": "T1D-associated genetic variants that affect immune functions differ from the genetic variants that affect immune-cell proportion and cytokine production capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the complexity of the immune system, this may be an alternative explanation for our finding that T1D-associated genetic variants that affect immune functions differ from the genetic variants that affect immune-cell proportion and cytokine production capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from analysis of different QTL profiles",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "2270796f-69a1-4599-9f27-93a2e90f5c95",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C91",
+      "claim": "There is a distinct regulatory mechanism of immune parameters and functions in disease compared to health.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, we found 12 immune phenotype QTLs in 300DM but not in healthy volunteers, suggesting a distinct regulatory mechanism of immune parameters and functions in disease compared to health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison between T1D and healthy cohorts",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "ed364d69-6e67-40a2-b3f2-b56b7d691e2d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C92",
+      "claim": "Islet-infiltrating immune cells originate from circulating blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, islet-infiltrating immune cells do originate from circulating blood cells, while circulating chemokines/cytokines are important in activating and recruiting immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "1d7a4f16-2968-4b49-a026-a73b6a24a29a",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C93",
+      "claim": "Circulating chemokines/cytokines are important in activating and recruiting immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, islet-infiltrating immune cells do originate from circulating blood cells, while circulating chemokines/cytokines are important in activating and recruiting immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "8170040a-ad01-43c3-9fa0-c66940e4ddd9",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C94",
+      "claim": "The circulating level of immune cells and cytokine production capacity are probably relevant for local tissue immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the circulating level of immune cells and cytokine production capacity are probably relevant for local tissue immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from biological reasoning",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "5057e313-ac52-4bb4-a13d-cb209ea9c325",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C95",
+      "claim": "The median age of the 300DM cohort was 53.5 years (range 20\u201385).",
+      "claim_type": "EXPLICIT",
+      "source": "Their median age was 53.5 years (range 20\u201385), and they had a median diabetes duration of 28 years (range 1\u201371 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated demographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "27208aeb-4efd-4c99-a8d3-022a15037f2c",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C96",
+      "claim": "The median diabetes duration in the 300DM cohort was 28 years (range 1\u201371 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Their median age was 53.5 years (range 20\u201385), and they had a median diabetes duration of 28 years (range 1\u201371 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated demographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "8d37df05-d804-446f-bac1-ae8128667a12",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C97",
+      "claim": "The 300DM cohort generally consisted of middle-aged people with long-standing T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the cohort generally consisted of middle-aged people with long-standing T1D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary characterization of cohort demographics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "ddc065ab-bdca-4f75-953c-1f4e9aa55332",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C98",
+      "claim": "72 types of immune cells covering both lymphocytes and monocyte lineages were measured in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured 72 types of immune cells covering both lymphocytes and monocyte lineages and 10/6 (300DM/500FG) different cytokines released in response to stimulation with four types of human pathogens in both cohorts (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated measurement description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "1f82e27e-ae33-478a-8513-ec04b7f49691",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C99",
+      "claim": "10 different cytokines were measured in the 300DM cohort in response to stimulation with four types of human pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured 72 types of immune cells covering both lymphocytes and monocyte lineages and 10/6 (300DM/500FG) different cytokines released in response to stimulation with four types of human pathogens in both cohorts (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated measurement description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "5c48e22a-1b87-418a-b718-f388c6727560",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C100",
+      "claim": "6 different cytokines were measured in the 500FG cohort in response to stimulation with four types of human pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured 72 types of immune cells covering both lymphocytes and monocyte lineages and 10/6 (300DM/500FG) different cytokines released in response to stimulation with four types of human pathogens in both cohorts (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated measurement description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "90c50fd7-73de-4ce0-a6ea-152d710899ab",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C101",
+      "claim": "Genetic variants that determine susceptibility to T1D significantly affect T cell composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variants that determine susceptibility to T1D significantly affect T cell composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from association analyses stated in abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "3d76fcf9-9c90-40b8-ad6b-8a07fe5c20c1",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C102",
+      "claim": "CCR5+ regulatory T cells associate with T1D through the CCR region.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the CCR5+ regulatory T cells associate with T1D through the CCR region, suggesting a shared genetic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from QTL and colocalization analyses stated in abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "0fff778b-f606-49a3-a869-70d86c9cdd2a",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C103",
+      "claim": "15 genetic loci that influence immune responses in T1D were identified through genome-wide QTL mapping analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide quantitative trait loci (QTLs) mapping analysis of immune traits revealed 15 genetic loci that influence immune responses in T1D, including 12 that have never been reported in healthy population studies, implying a disease-specific genetic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of QTL mapping results stated in abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "0bc417b1-b7f2-4d79-ba70-01dc1a086002",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C104",
+      "claim": "12 of the 15 identified genetic loci have never been reported in healthy population studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide quantitative trait loci (QTLs) mapping analysis of immune traits revealed 15 genetic loci that influence immune responses in T1D, including 12 that have never been reported in healthy population studies, implying a disease-specific genetic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of QTL mapping results stated in abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "e040d747-2ffc-4103-93be-0b578b7d382c",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "claim_id": "C105",
+      "claim": "The 12 novel loci imply a disease-specific genetic regulation in T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide quantitative trait loci (QTLs) mapping analysis of immune traits revealed 15 genetic loci that influence immune responses in T1D, including 12 that have never been reported in healthy population studies, implying a disease-specific genetic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with healthy population studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "77aabecb-d382-4050-a62f-db8f12bd039c",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background claims establish T1D as an autoimmune disease with genetic and environmental risk factors. Approximately 60 genomic loci have been associated with T1D risk, showing enrichment in immune-related pathways such as cytokine signaling and T cell activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are all supported by appropriate citations to prior work (Atkinson et al., 2014; Rewers and Ludvigsson, 2016; Cabrera et al., 2016; Hundhausen et al., 2016; Barrett et al., 2009; Cooper et al., 2008). These are standard background claims establishing the context for the study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The 300DM cohort consists of 243 T1D patients (215 after QC) of Dutch/Caucasian descent, aged 20-84 years (median 53.5), with median diabetes duration of 28 years. The study measured 269 immune-cell traits and 10 cytokines in response to stimulations. After merging with 500FG controls and quality control, 4,304,387 SNPs and 666 individuals remained for analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16 and C95-C100 describe the cohort characteristics and data processing steps with specific numbers that are internally consistent. The methodology follows previously published protocols (Aguirre-Gamboa et al., 2016; Li et al., 2016). Sample sizes, quality control procedures, and demographic data are clearly stated and appear appropriate for the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "1b59d6d2-8524-4d5b-814e-041ef6f0012d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cytokines were classified as monocyte-derived (IL-1\u03b2, IL-6, TNF-\u03b1, IL-8, IL-10, IL-1Ra, MCP-1, measured at 24h) or T cell-derived (IFN-\u03b3, IL-17, IL-22, measured at 7 days) based on previous definitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by citation to Li et al., 2016, which established these definitions. The classification is biologically reasonable, though it should be noted that this is a simplification as some cytokines can be produced by multiple cell types. The temporal distinction (24h vs 7 days) is appropriate for the different kinetics of innate vs adaptive responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "3872864b-ebd0-479c-805f-6538c22a4d14",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Age, gender, and seasonal effects significantly associated with numerous immune-cell traits and cytokine traits. Age associated with 129/269 immune-cell traits and 12/55 cytokine traits; gender with 59/269 immune-cell traits and 5/55 cytokine traits; seasonal effects with 121/269 immune-cell traits and 38/55 cytokine traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 report specific numbers of significant associations with covariates, supported by Figure 4\u2014figure supplement 1. The statistical approach (Spearman correlation and linear regression with FDR < 0.05) is appropriate. These covariates were appropriately included in subsequent QTL analyses. The large number of associations with age and seasonal effects is consistent with known biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "76398711-6121-4e92-8343-8e0aa4074fee",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nonmetric MDS analysis reveals that B cell subpopulations cluster separately from T cell, monocyte, and NK cell populations, suggesting greater interplay among T cells, monocytes, and NK cells at baseline. Cytokine features cluster based on cellular origins with partial overlap between monocyte-derived and T cell-derived cytokines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 describe clustering patterns observed in Figure 1B-C. The interpretation that separate clustering indicates less interplay (C24) is reasonable but somewhat inferential. The observation is consistent with findings in the 500FG cohort (Aguirre-Gamboa et al., 2016), providing validation. The partial overlap between monocyte and T cell cytokine clusters (C26) is clearly visible in Figure 1C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "fd649a29-651d-4e3a-a1e7-a66568b44eee",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Correlation analysis reveals positive correlations between monocyte lineages and monocyte-derived cytokines, and between T cell subsets and T cell-derived cytokines. Negative correlations exist between monocyte-derived cytokine production and lymphocyte counts. These patterns are similar between T1D patients and healthy individuals and are consistent with prior findings that high adaptive immune cell abundance associates with lower monocyte-derived cytokine production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 describe correlation patterns shown in Figure 1D with appropriate statistical support (FDR < 0.05). The positive correlations between cell types and their corresponding cytokines (C27-C28) are biologically expected. The negative correlation between lymphocyte counts and monocyte cytokines (C29) is supported by citation to Kim et al., 2007 (C31). The similarity between T1D and healthy cohorts (C30, C32-C33) is demonstrated by Figure 1\u2014figure supplement 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "33c39c63-997e-48a5-97fb-65c1c194c9ae",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Of 63 independent T1D GWAS loci present in the study data, 13 were associated with T1D susceptibility at nominal significance (p < 0.05) in the case-control comparison between 300DM and 500FG cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C35 report that only 13/63 known T1D GWAS loci replicated at nominal significance. This low replication rate is concerning and could reflect: (1) limited power due to small sample size (N=215 cases, 451 controls), (2) population differences, or (3) winner's curse in original GWAS. The use of only nominal significance (p<0.05) without multiple testing correction is noted. The authors acknowledge this limitation but the result raises questions about the representativeness of the cohort.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "77e694a8-3867-4c82-9653-943fb2d812a3",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "T1D GWAS SNPs show enrichment for association with T cell traits (permutation p=0.007). The 63 T1D GWAS loci explain significantly more variance in 27 cell sub-proportions and 15 cytokine production traits compared to random SNP sets (p<0.05). Nearly all immune phenotypes (261/269 immune-cell, 53/55 cytokine) show suggestive associations (p<0.05) with at least one T1D GWAS locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 use appropriate permutation-based statistical approaches to test enrichment, avoiding issues with multiple testing. The enrichment for T cell traits (C36, p=0.007) is statistically significant and biologically plausible given T1D pathophysiology. The variance explained analysis (C39-C40) uses proper controls (random SNP sets). However, the widespread suggestive associations (C37-C38, p<0.05) should be interpreted cautiously as many would not survive multiple testing correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "dbb4b2a8-5d52-4303-9953-c20854b2509d",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The T1D risk allele rs11574435-T (in LD r\u00b2=0.95 with rs113010081) associates with higher CCR5+ CD4+ T cell proportions and lower CCR5- CD4+ T cell proportions. The minor allele T of rs35092096 associates with higher CCR6+CCR7-CCR5+ Treg proportions. Colocalization analysis (H3=0.95) strongly supports shared regulatory regions between CCR6+CCR7-CCR5+ Tregs and T1D. Expression analysis shows significant changes in CCR5, CCL5, and CCL4 in T1D patients, supporting a role for the CCR region in Treg function in T1D pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 present converging evidence from multiple analyses: QTL mapping (C41, C44), LD analysis (C42), transcriptome analysis (C43), and colocalization (C45, H3=0.95). The colocalization posterior probability of 0.95 is strong evidence for shared causal variants. The integration of expression data from public databases (Planas et al., 2010; Yang et al., 2015) showing differential expression of CCR5, CCL5, and CCL4 in T1D provides orthogonal validation. The conclusion about CCR region involvement in Treg function (C46) is well-supported by the combined evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "63fa74d9-6122-4f52-8af0-40ff62779425",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "T1D GWAS loci influence immune-cell proportion and cytokine production capacity, with T cell alteration largely driven by T1D genetics while B cells show no significant association with T1D GWAS loci. This provides evidence for a direct link between T1D genetic susceptibility and immune functionality, particularly through T cell subpopulations. The association between CCR5+ Tregs and T1D through CCR genes suggests cumulative genetic effects on immune function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C73-C76, C101-C102 synthesize findings from multiple analyses showing preferential association of T1D GWAS loci with T cell traits. The enrichment analysis (C36, p=0.007) and variance explained analysis (C39-C40) support these conclusions. The lack of B cell associations (C75) is notable given the presence of autoantibodies in T1D, though this is acknowledged in the discussion. The interpretation of cumulative effects (C76) is reasonable given the small individual effect sizes observed (C86-C88).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "a3e11477-0ed2-4417-9df3-d63e60f95948",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Genome-wide QTL mapping in 300DM identified 9 significant loci (p<5\u00d710\u207b\u2078) for immune-cell proportion (including 4 for T cells expressing chemokine receptors) and 6 loci for cytokine production. Cell proportion QTLs are enriched in chemokine/cytokine signaling pathways (FDR<0.05), while cytokine production QTLs are enriched in TLR-related pathways (FDR<0.05). The missense variant rs5743618 in TLR1 affects IL-6 production in response to S. pneumoniae, consistent with TLR function in pathogen detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 report genome-wide significant QTLs (p<5\u00d710\u207b\u2078) with appropriate pathway enrichment analysis (FDR<0.05). The enrichment in chemokine/cytokine signaling for cell proportion QTLs and TLR pathways for cytokine QTLs is biologically coherent. The TLR1 missense variant (C53) is a strong functional candidate. The consistency with previous findings in 500FG (C54, Li et al., 2016) provides validation. Lambda values (0.977-1.026) indicate no major inflation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "80ec5447-535e-48b9-87ef-9bd3f144429f",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Meta-analysis of 300DM and 500FG identified 13 additional novel loci (10 for cell proportion, 3 for cytokine production), bringing the total to 28 genome-wide significant loci. Notably, 12 of these 28 loci have never been reported in healthy population studies and were not identified in 500FG alone (p<0.05), suggesting disease-specific genetic regulation. Among the 28 loci, 11 contain known drug targets including CCR family genes, ROR2, IL-10, IL-6, STK33, CD5, and TLR1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C65, C77-C78, C103-C105 report novel QTLs from meta-analysis. The identification of 12 'T1D-specific' loci is intriguing but requires careful interpretation. The claim that these loci were 'never reported in healthy populations' (C64, C104) is based on PhenoScanner V2 search (p<1\u00d710\u207b\u2075) and absence in 500FG (p<0.05). However, absence of evidence is not evidence of absence\u2014these loci may simply not have been detected in smaller healthy cohorts due to power limitations. The claim of 'disease-specific genetic regulation' (C91, C105) is inferential and would require direct statistical testing of effect size differences between T1D and healthy cohorts. The identification of druggable targets (C62-C63, C78) is interesting but preliminary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "faf0bca1-c2c0-496e-89ae-6d1de3256ee6",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The T1D-specific locus rs4744112 on chromosome 9 influences CCR6+CXCR3+CCR4- Th1-like helper cell proportion, with the minor allele G decreasing these cells relative to major allele T. This SNP is located within transcriptional start site and enhancer regions of ROR2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 describe a specific example of a T1D-specific QTL with clear effect direction shown in Figure 4B-C. The location within regulatory regions of ROR2 (C68, supported by Kundaje et al., 2015) suggests a plausible mechanism. However, the designation as 'T1D-specific' relies on the absence of detection in 500FG, which could reflect power limitations rather than true disease-specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "32b5507f-1225-4d62-8586-eaf503c2c243",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SNPs within the 28 immune parameter QTLs are predominantly located in intergenic and intronic regions, suggesting regulatory rather than protein-coding effects. Seven of the 28 loci influence gene expression in blood (eQTLs), including FCGR2B/FCRLB, CCR1/CCR3, ROR2/SPTLC1, TRIM66, C11orf21, IL10, and AC091814.2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by genomic annotation analysis (Figure 4\u2014figure supplement 3) and eQTL database searches (Carithers and Moore, 2015; Westra et al., 2013). The predominance of non-coding variants (C69) is typical for complex trait GWAS and the inference of regulatory effects (C70) is reasonable. The identification of eQTLs (C71) provides functional support for 7/28 loci, though the mechanism for the remaining loci remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "ff5c6d2d-ac92-471e-bb7e-b11f58dac9c0",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Correlation between baseline immune-cell populations and ex vivo cytokine production suggests that steady-state immune-cell abundance affects immune response. This implies that immune response variability could be partly explained by steady-state variations and that treatment of steady-state immune cells before stimulation could influence post-stimulation immune response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72 and C79 are well-supported by the correlation analyses (Figure 1D). However, C80-C81 are more inferential. While C80 (variability explained by steady state) is a reasonable interpretation of the correlations, C81 (treatment effects) is speculative and marked as such in the evidence. The causal direction of the correlations cannot be definitively established from this observational data, though the interpretation is biologically plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "eaf05c23-6c46-4c71-b797-443ace896845",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior studies show immune-related genes are located in T1D loci or differentially expressed, with T cell immunity being important in T1D pathology. The authors speculate that auto-antibodies in T1D may have limited pathophysiological relevance and serve merely as markers of a T cell-driven autoimmune process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 appropriately summarize prior literature with citations. However, C84 is explicitly speculative ('tempting to speculate') and represents an interpretation of the finding that B cells show no significant association with T1D GWAS loci (C75). While this interpretation is consistent with the data, it is provocative and would require additional functional studies to validate. The speculation is appropriately qualified and supported by citation to Martin et al., 2001.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "ba7b8aa3-c2e6-4e57-8fb4-42ca7bd4312f",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The effects of different GWAS loci on immune phenotypes vary substantially. The CCR locus shows strong effects (mean absolute effect sizes = 0.017 for cell proportion, 0.15 for cytokine production), while other T1D GWAS loci show much weaker individual effects (mean = 0.0060 for cell proportion, 0.10 for cytokine production). This suggests T1D-associated variants may alter immune function through cumulative effects and that variants affecting immune functions differ from those affecting immune-cell proportions and cytokine production capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C90 are supported by effect size analysis shown in Figure 2C and Figure 2\u2014figure supplement 2. The quantitative effect sizes are clearly stated (C86-C88). The interpretation of cumulative effects (C89) is reasonable given the small individual effect sizes and the significant cumulative variance explained (C39-C40). The observation that different variants affect different immune parameters (C90) is an interesting finding, though the mechanistic explanation remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    },
+    {
+      "id": "22d6ccb7-2959-4df6-91d2-30ac250810d4",
+      "content_id": "2d8497c8-5c33-4ed9-b2df-4d143f97587f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The identification of 12 immune phenotype QTLs specific to 300DM suggests distinct regulatory mechanisms in disease versus health. While the study uses circulating blood cells, islet-infiltrating immune cells originate from circulation and circulating chemokines/cytokines are important for immune cell activation and recruitment, making circulating immune parameters probably relevant for local tissue immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C91 about 'distinct regulatory mechanisms' is inferential and based on absence of detection in healthy cohorts, which could reflect power limitations rather than true disease-specificity (as discussed for C64-C65). Claims C92-C94 acknowledge a limitation of the study (use of PBMCs rather than tissue) but argue for relevance. While C92-C93 are established biological facts, the inference in C94 ('probably relevant') is reasonable but not directly demonstrated. Direct comparison of effect sizes between T1D and healthy cohorts would strengthen the disease-specificity claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:21:58.901094Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "51517c3b-2f5d-4db6-8ffc-4369549b90fb",
+      "result_id": "77aabecb-d382-4050-a62f-db8f12bd039c"
+    },
+    {
+      "claim_id": "cfc60391-1a32-4fb3-a909-857599735be4",
+      "result_id": "77aabecb-d382-4050-a62f-db8f12bd039c"
+    },
+    {
+      "claim_id": "c778c7a6-0f7b-447b-b937-7e8e44c4fa12",
+      "result_id": "77aabecb-d382-4050-a62f-db8f12bd039c"
+    },
+    {
+      "claim_id": "2afbcc18-7599-4a7d-815a-c6d693dd8642",
+      "result_id": "77aabecb-d382-4050-a62f-db8f12bd039c"
+    },
+    {
+      "claim_id": "7336dbbf-7171-473a-86b0-8b22f3879945",
+      "result_id": "77aabecb-d382-4050-a62f-db8f12bd039c"
+    },
+    {
+      "claim_id": "6ae7901d-99bf-4406-886f-e1f6af3dd082",
+      "result_id": "77aabecb-d382-4050-a62f-db8f12bd039c"
+    },
+    {
+      "claim_id": "2578c26e-586a-4c78-827b-6dfc0f0aaf52",
+      "result_id": "77aabecb-d382-4050-a62f-db8f12bd039c"
+    },
+    {
+      "claim_id": "5aee2213-b3ef-4664-a2d7-9909575c9fa5",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "7f14fd2b-d5ed-4818-b8db-e4112dc81f03",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "9d05c9e0-39ef-4d8a-b1c5-d00f8e2c58eb",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "fb031df8-3820-444a-8462-3cd1fd09c33c",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "93a1fc17-b8f6-4896-afa9-fc3a49a44c34",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "cc86e1ac-1575-4038-8161-18b8dfce893c",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "0b644f4b-2b32-45b4-af43-35dfe642e242",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "5057e313-ac52-4bb4-a13d-cb209ea9c325",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "27208aeb-4efd-4c99-a8d3-022a15037f2c",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "8d37df05-d804-446f-bac1-ae8128667a12",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "ddc065ab-bdca-4f75-953c-1f4e9aa55332",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "1f82e27e-ae33-478a-8513-ec04b7f49691",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "5c48e22a-1b87-418a-b718-f388c6727560",
+      "result_id": "12b4d24f-1359-4a8c-aa7f-44432f544bfd"
+    },
+    {
+      "claim_id": "120da575-b4e7-4207-91f2-fde63a499d6f",
+      "result_id": "1b59d6d2-8524-4d5b-814e-041ef6f0012d"
+    },
+    {
+      "claim_id": "a6671fe9-88b6-4d4f-a872-deb21b021e05",
+      "result_id": "1b59d6d2-8524-4d5b-814e-041ef6f0012d"
+    },
+    {
+      "claim_id": "d0e9ec5a-fc19-4acd-ab53-f5bd66460763",
+      "result_id": "3872864b-ebd0-479c-805f-6538c22a4d14"
+    },
+    {
+      "claim_id": "6caecfde-b1a3-42f7-b972-3abe3cb88adf",
+      "result_id": "3872864b-ebd0-479c-805f-6538c22a4d14"
+    },
+    {
+      "claim_id": "0cd51156-281d-434b-b9b2-fa93bdb56849",
+      "result_id": "3872864b-ebd0-479c-805f-6538c22a4d14"
+    },
+    {
+      "claim_id": "8ea9351a-1de9-4cc4-9827-54e4055ac3ce",
+      "result_id": "3872864b-ebd0-479c-805f-6538c22a4d14"
+    },
+    {
+      "claim_id": "dd29e371-c7a3-4f30-87a8-ee86c1ad6ad7",
+      "result_id": "3872864b-ebd0-479c-805f-6538c22a4d14"
+    },
+    {
+      "claim_id": "390fd2bf-a53c-4eb9-ac43-00132dc9925c",
+      "result_id": "3872864b-ebd0-479c-805f-6538c22a4d14"
+    },
+    {
+      "claim_id": "6fb6b062-82fb-43c8-84ab-8d7f45094575",
+      "result_id": "76398711-6121-4e92-8343-8e0aa4074fee"
+    },
+    {
+      "claim_id": "c9e22ff3-471a-472e-b625-e604dc93247d",
+      "result_id": "76398711-6121-4e92-8343-8e0aa4074fee"
+    },
+    {
+      "claim_id": "d3dd02c4-4be9-49d1-be0c-6cf463bf461e",
+      "result_id": "76398711-6121-4e92-8343-8e0aa4074fee"
+    },
+    {
+      "claim_id": "e59eff3a-3436-45dd-9c59-f38b3ea9b0b7",
+      "result_id": "76398711-6121-4e92-8343-8e0aa4074fee"
+    },
+    {
+      "claim_id": "c468813e-852a-4791-92b2-1628f159958d",
+      "result_id": "fd649a29-651d-4e3a-a1e7-a66568b44eee"
+    },
+    {
+      "claim_id": "7dc1ae57-4fc1-4288-a730-dff7c113b001",
+      "result_id": "fd649a29-651d-4e3a-a1e7-a66568b44eee"
+    },
+    {
+      "claim_id": "9031e77b-2ec3-47b1-8621-3bfb9d4b5e1e",
+      "result_id": "fd649a29-651d-4e3a-a1e7-a66568b44eee"
+    },
+    {
+      "claim_id": "8f66388e-215d-4dcf-9598-79fc552c5d87",
+      "result_id": "fd649a29-651d-4e3a-a1e7-a66568b44eee"
+    },
+    {
+      "claim_id": "4dcabdbf-c9d5-4f86-8c41-09fddba46e38",
+      "result_id": "fd649a29-651d-4e3a-a1e7-a66568b44eee"
+    },
+    {
+      "claim_id": "54be144b-93aa-466c-843a-1af77f7667ed",
+      "result_id": "fd649a29-651d-4e3a-a1e7-a66568b44eee"
+    },
+    {
+      "claim_id": "f91336d1-85bb-49b0-9d6a-d06a882fb7f1",
+      "result_id": "fd649a29-651d-4e3a-a1e7-a66568b44eee"
+    },
+    {
+      "claim_id": "9da50a57-9373-43d2-9748-f70b44942164",
+      "result_id": "33c39c63-997e-48a5-97fb-65c1c194c9ae"
+    },
+    {
+      "claim_id": "0a9f0534-fbdf-49dd-ab89-92b18e023071",
+      "result_id": "33c39c63-997e-48a5-97fb-65c1c194c9ae"
+    },
+    {
+      "claim_id": "aab03753-542a-48a1-9353-e853a4e8b015",
+      "result_id": "77e694a8-3867-4c82-9653-943fb2d812a3"
+    },
+    {
+      "claim_id": "6381752c-2d56-4178-88f8-52ecbf54b652",
+      "result_id": "77e694a8-3867-4c82-9653-943fb2d812a3"
+    },
+    {
+      "claim_id": "a1a6b99e-de7a-401a-97d6-bdd82b51d2f2",
+      "result_id": "77e694a8-3867-4c82-9653-943fb2d812a3"
+    },
+    {
+      "claim_id": "46527c39-f838-4081-ba19-98c940526f80",
+      "result_id": "77e694a8-3867-4c82-9653-943fb2d812a3"
+    },
+    {
+      "claim_id": "7f74d7e5-2bbc-4d6b-934f-19fac2fd20cc",
+      "result_id": "77e694a8-3867-4c82-9653-943fb2d812a3"
+    },
+    {
+      "claim_id": "638b044b-6a0b-40b2-928e-2ac86d3a2805",
+      "result_id": "dbb4b2a8-5d52-4303-9953-c20854b2509d"
+    },
+    {
+      "claim_id": "627b9d72-0c87-43e5-a396-9f4bfac3f5f1",
+      "result_id": "dbb4b2a8-5d52-4303-9953-c20854b2509d"
+    },
+    {
+      "claim_id": "86b086e7-1ee3-4798-bc1a-6fef721bbf2a",
+      "result_id": "dbb4b2a8-5d52-4303-9953-c20854b2509d"
+    },
+    {
+      "claim_id": "164c610a-0aac-41a7-9dff-eac568e13e89",
+      "result_id": "dbb4b2a8-5d52-4303-9953-c20854b2509d"
+    },
+    {
+      "claim_id": "6ed8e3d3-7e49-4c68-b4cd-591dc72a6a1d",
+      "result_id": "dbb4b2a8-5d52-4303-9953-c20854b2509d"
+    },
+    {
+      "claim_id": "76f8b5bc-98db-4574-ae8a-c2c5c5ae682b",
+      "result_id": "dbb4b2a8-5d52-4303-9953-c20854b2509d"
+    },
+    {
+      "claim_id": "18c12a67-0d0d-49f1-be65-b472d75f827d",
+      "result_id": "63fa74d9-6122-4f52-8af0-40ff62779425"
+    },
+    {
+      "claim_id": "08bbc76e-bf79-4d2e-901f-9819e2a2071f",
+      "result_id": "63fa74d9-6122-4f52-8af0-40ff62779425"
+    },
+    {
+      "claim_id": "0f39484a-e63e-403f-b335-12d60be9d378",
+      "result_id": "63fa74d9-6122-4f52-8af0-40ff62779425"
+    },
+    {
+      "claim_id": "1b5f5361-f3f1-40cc-920d-a5872ff69911",
+      "result_id": "63fa74d9-6122-4f52-8af0-40ff62779425"
+    },
+    {
+      "claim_id": "5f5db78a-c6b0-40cd-86db-edb7f90bf6e0",
+      "result_id": "63fa74d9-6122-4f52-8af0-40ff62779425"
+    },
+    {
+      "claim_id": "90c50fd7-73de-4ce0-a6ea-152d710899ab",
+      "result_id": "63fa74d9-6122-4f52-8af0-40ff62779425"
+    },
+    {
+      "claim_id": "3d76fcf9-9c90-40b8-ad6b-8a07fe5c20c1",
+      "result_id": "63fa74d9-6122-4f52-8af0-40ff62779425"
+    },
+    {
+      "claim_id": "ec2aad46-4d4b-4454-918e-29f1f52ddd1d",
+      "result_id": "a3e11477-0ed2-4417-9df3-d63e60f95948"
+    },
+    {
+      "claim_id": "5bf42e48-ae15-459e-8b02-a8e27b4ae96e",
+      "result_id": "a3e11477-0ed2-4417-9df3-d63e60f95948"
+    },
+    {
+      "claim_id": "b29c61c6-579f-4331-9d04-375d259271c0",
+      "result_id": "a3e11477-0ed2-4417-9df3-d63e60f95948"
+    },
+    {
+      "claim_id": "607eea8d-bec5-4f48-a46a-e233ac0700b7",
+      "result_id": "a3e11477-0ed2-4417-9df3-d63e60f95948"
+    },
+    {
+      "claim_id": "db65c141-636e-4a44-ba42-c15054ac45b8",
+      "result_id": "a3e11477-0ed2-4417-9df3-d63e60f95948"
+    },
+    {
+      "claim_id": "da66ae12-e477-4c14-a2a4-a5238ec40914",
+      "result_id": "a3e11477-0ed2-4417-9df3-d63e60f95948"
+    },
+    {
+      "claim_id": "828e5166-6bab-48fd-9a4b-cf874d7b4e9b",
+      "result_id": "a3e11477-0ed2-4417-9df3-d63e60f95948"
+    },
+    {
+      "claim_id": "e1e0d023-346f-4e4c-be4a-bed398c1e301",
+      "result_id": "a3e11477-0ed2-4417-9df3-d63e60f95948"
+    },
+    {
+      "claim_id": "3997116a-a81f-4aa2-9044-ee8906d15f5a",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "22b95052-5ff2-406b-9f51-325982b32d71",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "ec60e552-4ac1-4ab3-add3-f4b9542ddd7c",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "1694b2dd-533a-43ee-82e7-283def7b13bb",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "693d1b03-349e-4acf-8e13-5145cc8bd733",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "99d0f7cb-4da5-4865-abb2-fe87691ea756",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "5ec4aa3e-5121-40c9-8d62-7d8db0ead0ae",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "f993f88d-5152-4fd4-8be0-7a6d7194f074",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "d76ee27c-3303-45b5-9534-dfd7334981cc",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "3d530efa-5364-418a-84a0-0d832a93707a",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "3e58479d-bd76-412c-bdf0-a30cc7df70cf",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "661e7474-9a28-4455-90a9-46171a6ee7a6",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "0fff778b-f606-49a3-a869-70d86c9cdd2a",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "0bc417b1-b7f2-4d79-ba70-01dc1a086002",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "e040d747-2ffc-4103-93be-0b578b7d382c",
+      "result_id": "80ec5447-535e-48b9-87ef-9bd3f144429f"
+    },
+    {
+      "claim_id": "a6f7f8e3-ba56-4612-958d-1c45669faa63",
+      "result_id": "faf0bca1-c2c0-496e-89ae-6d1de3256ee6"
+    },
+    {
+      "claim_id": "2ad69949-0e6c-4af9-9323-c8fe62f5e15d",
+      "result_id": "faf0bca1-c2c0-496e-89ae-6d1de3256ee6"
+    },
+    {
+      "claim_id": "5d652104-b8eb-46fb-a498-580355520121",
+      "result_id": "faf0bca1-c2c0-496e-89ae-6d1de3256ee6"
+    },
+    {
+      "claim_id": "8bf3cd8c-d073-479d-99af-20380ef993ab",
+      "result_id": "32b5507f-1225-4d62-8586-eaf503c2c243"
+    },
+    {
+      "claim_id": "98d82856-8e13-4111-a2d8-8378ae8d52fd",
+      "result_id": "32b5507f-1225-4d62-8586-eaf503c2c243"
+    },
+    {
+      "claim_id": "26e70fac-6992-4829-a529-9c30ad16f6a0",
+      "result_id": "32b5507f-1225-4d62-8586-eaf503c2c243"
+    },
+    {
+      "claim_id": "a7187d80-1be9-45b5-ab75-98cc3890a78b",
+      "result_id": "ff5c6d2d-ac92-471e-bb7e-b11f58dac9c0"
+    },
+    {
+      "claim_id": "8397ef21-e0da-48c6-82a3-20c861ec41ae",
+      "result_id": "ff5c6d2d-ac92-471e-bb7e-b11f58dac9c0"
+    },
+    {
+      "claim_id": "aa1406fd-6780-4ed5-a2ba-b64263d44001",
+      "result_id": "ff5c6d2d-ac92-471e-bb7e-b11f58dac9c0"
+    },
+    {
+      "claim_id": "4da023c1-dfbb-4a69-9991-c6356dae6332",
+      "result_id": "ff5c6d2d-ac92-471e-bb7e-b11f58dac9c0"
+    },
+    {
+      "claim_id": "3949f903-adb2-4468-8d56-deed4bc3526d",
+      "result_id": "eaf05c23-6c46-4c71-b797-443ace896845"
+    },
+    {
+      "claim_id": "d25cde6b-ac1d-4aec-a6fd-50b237cf9d9c",
+      "result_id": "eaf05c23-6c46-4c71-b797-443ace896845"
+    },
+    {
+      "claim_id": "31c6e564-2da7-4165-85dc-e549cfb659ca",
+      "result_id": "eaf05c23-6c46-4c71-b797-443ace896845"
+    },
+    {
+      "claim_id": "d1c1d7bb-5e4b-4d19-9a8c-c7e4d9b2c4a4",
+      "result_id": "ba7b8aa3-c2e6-4e57-8fb4-42ca7bd4312f"
+    },
+    {
+      "claim_id": "747e01dd-0aa9-4bec-9156-c2888cfdc9dc",
+      "result_id": "ba7b8aa3-c2e6-4e57-8fb4-42ca7bd4312f"
+    },
+    {
+      "claim_id": "7e78b19b-2165-4742-bb26-27e301d36688",
+      "result_id": "ba7b8aa3-c2e6-4e57-8fb4-42ca7bd4312f"
+    },
+    {
+      "claim_id": "20217b3b-ae5e-4f89-8b6b-8bf4af8210fe",
+      "result_id": "ba7b8aa3-c2e6-4e57-8fb4-42ca7bd4312f"
+    },
+    {
+      "claim_id": "c3695f3e-3533-4772-97ba-f507d596f041",
+      "result_id": "ba7b8aa3-c2e6-4e57-8fb4-42ca7bd4312f"
+    },
+    {
+      "claim_id": "63575830-9f0f-4c86-876b-7774ac201e5d",
+      "result_id": "ba7b8aa3-c2e6-4e57-8fb4-42ca7bd4312f"
+    },
+    {
+      "claim_id": "2270796f-69a1-4599-9f27-93a2e90f5c95",
+      "result_id": "22d6ccb7-2959-4df6-91d2-30ac250810d4"
+    },
+    {
+      "claim_id": "ed364d69-6e67-40a2-b3f2-b56b7d691e2d",
+      "result_id": "22d6ccb7-2959-4df6-91d2-30ac250810d4"
+    },
+    {
+      "claim_id": "1d7a4f16-2968-4b49-a026-a73b6a24a29a",
+      "result_id": "22d6ccb7-2959-4df6-91d2-30ac250810d4"
+    },
+    {
+      "claim_id": "8170040a-ad01-43c3-9fa0-c66940e4ddd9",
+      "result_id": "22d6ccb7-2959-4df6-91d2-30ac250810d4"
+    }
+  ],
+  "comparisons": []
+}

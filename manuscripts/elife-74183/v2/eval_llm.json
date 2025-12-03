@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study performed combined single-cell transcriptome and TCR clonotype analysis on CD4+IL-4eGFP+ Th2 cells from MLN and lung of 4get mice at day 10 post-Nb infection. The analyzed population likely includes cells licensed for IL-4 expression that may not become terminally differentiated Th2 cells, as well as NKT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41, and C42 describe the experimental approach and are supported by the methods and Figure 1A. Claims C43 and C44 acknowledge potential heterogeneity in the analyzed population, which is a reasonable interpretation given the IL-4eGFP reporter system captures cells at various stages of Th2 commitment. This is further supported by the identification of NKT cells in cluster MLN6 (C66, C206).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Th2 cells from lung and MLN exhibit distinct organ-specific expression profiles, with clear separation in dimensional reduction analysis. Comparison with medLN shows that differences are primarily due to secondary lymphoid organ versus peripheral organ comparison rather than anatomical distance between lymph nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C50 are directly supported by Figure 1B showing clear organ separation in UMAP and differential expression analysis (Figure 1\u2014supplement 2A). Claims C51-C53 are supported by Figure 1C,D showing medLN and MLN cells have similar profiles when projected onto the lung-MLN UMAP, indicating organ type (lymphoid vs. peripheral) is the primary driver of differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C72",
+      "C73",
+      "C76"
+    ],
+    "result": "Unbiased clustering identified 10 distinct Th2 cell clusters (2 lung, 7 MLN, 1 mixed proliferative) with characteristic gene expression patterns. Key findings include: IL-5 expression restricted to L1 cluster, IL-13 in L1 and MLN4, Tfh cells in MLN2 expressing IL-21 and BCL6, absence of Tfh13 cells, minimal Foxp3 expression, and IL-10 expression in L1 and MLN4 subsets. MLN6 contains innate-like/NKT cells expressing Th1 markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering results (C54) are supported by Figure 1E. Gene expression patterns for Th2 markers (C55), IL-5 (C56), IL-13 (C58), Th1 markers (C63-C64), Tfh markers (C72-C73), and IL-10 (C67-C68) are all documented in Figure 1F with appropriate visualization. The absence of Tfh13 cells (C76) is stated and consistent with the helminth infection model. The characterization of MLN6 as innate-like/NKT (C66) is supported by multiple gene expression patterns shown in Figure 1F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C88",
+      "C90",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C103",
+      "C104"
+    ],
+    "result": "Lung Th2 cells exhibit a stronger effector phenotype compared to MLN cells, characterized by differential expression of migration and effector-associated genes. Lung cells express high levels of TAGLN2, IL-33 receptor ST2 (Il1rl1), IL-2-STAT5 axis genes, TNF-R2, inflammation signatures, hypoxia-associated genes, and asthma-related genes (Cysltr1, Plac8, Adam8). MLN1-3 cells express CXCR5 while lung and MLN4-6 cells do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression patterns are well-documented in Figures 1F-H. Claim C83 (CXCR5 in MLN1-3) and C85 (low CXCR5 in lung/MLN4-6) are shown in Figure 1G. Claims C86 (TAGLN2), C90 (ST2/Il1rl1), and C103 (asthma genes) are supported by Figure 1G. Claims C94-C97 regarding IL-2-STAT5 axis and TNF-R2 are supported by Figure 1G-H with appropriate citations. Claim C88 regarding inflammation and hypoxia signatures is supported by Figure 1H with citations linking these to glycolysis and Th2 differentiation. Claim C104 on TGF\u03b2 target genes is supported by Figure 1F-H.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Clusters L2 and MLN5 form a transcriptional 'bridge' between lung and MLN compartments, expressing migration-associated genes (CD62L, CCR7, S1PR1) and memory markers (Tcf7, Cd27), with a circulating memory signature. L2 shows signs of MLN-associated gene expression and contains cells in blood vessels, while MLN5 lacks clear lung signatures, suggesting these clusters contain cells migrating between organs and potentially other lymphoid sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 'bridge' observation (C106) is evident in Figure 1E UMAP visualization. Expression of migration genes (C107) and memory markers (C110) is shown in Figures 1E and 2A. The circulating memory signature (C111) is supported by Figure 2B with citation. Claims C112-C113 regarding L2 expressing CXCR5/Tox2 are shown in Figures 1G and 2A. The presence of L2 cells in blood vessels (C109) is supported by Figure 2\u2014supplement 1. Differences between L2 and MLN5 (C114-C117) are documented in Figures 1F,H and 2A, with reasonable interpretations about migration patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C132"
+    ],
+    "result": "Three effector/resident memory clusters were identified: L1 (lung), MLN4, and MLN6 (innate-like/NKT). L1 and MLN4 share effector gene expression (Il1rl1, Cysltr1, Il2ra, Il5, Il13) and lung-resident memory signatures driven by Plac8 and Adam8. However, they show site-specific differences: MLN4 expresses CCR9 (lamina propria homing) while lung cells express CCR8. L1 contains a CCR9+ subset with minimal IL-5/IL-13 overlap. MLN6 expresses CXCR3, a Th1-associated marker not previously linked to IL-4+ NKT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Effector gene expression in L1 (C120) and MLN4 (C121) is documented in the text and figures. The resident memory signature (C122-C123) is supported by Figure 2B with citation to Rahimi et al., 2020. Site-specific differences in chemokine receptor expression (C124, C126) are supported by the text with appropriate citations. The presence of MLN6 (C127) and its characteristics (C128, C132) are documented in the text and figures. The CCR9+ subset in L1 (C130) is shown in Figure 2A. The novel finding of CXCR3 in NKT cells (C132) is appropriately noted as not previously described in this context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Integrative analysis revealed that bridge clusters (MLN5, L2) and effector clusters (L1, MLN4) show the most similar expression profiles between MLN and lung. MLN3 expresses an IFN response signature likely associated with Th2 priming and differentiation, consistent with literature showing IFN-\u03b3 promotes Th2 heterogeneity. An unusual MLN7 cluster expresses myeloid-associated genes, potentially representing cells with attached exosomes or vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integrative analysis (C139) is supported by Figure 2\u2014supplement 2 showing clustering of bridge and effector populations. The IFN response signature in MLN3 (C141) is shown in Figure 2B. The interpretation linking this to Th2 differentiation (C142) is supported by citation to prior work (C140). The MLN7 cluster characteristics (C143) are described in the text, and the interpretation as potential contamination with exosomes (C144) is reasonable speculation given the unusual gene expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "RNA velocity analysis identifies proliferation as a hub for Th2 differentiation decisions, with the proliferating cluster (L+MLN) representing the majority of root cells. Developmental trajectories show: (1) MLN cells (MLN1, MLN3, MLN5) as diffuse endpoints with low differentiation speed, (2) MLN4 as heterogeneous with fast-developing effector/resident memory cells, (3) L2 cells differentiating toward L1 effector cells with high confidence, and (4) IL-5/IL-13 double producers as the lung endpoint. This supports a model where migratory cells leave lymphoid organs to enter peripheral organs, with reverse migration being rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA velocity results are extensively documented in Figure 2C-D and supplementary analyses (Figure 2\u2014supplement 3A-F). The identification of proliferating cells as root cells (C145) is supported by Figure 2D and multiple analytical approaches (C147-C148) including CytoTRACE. The characterization of different clusters as endpoints or intermediate states (C149-C156) is supported by velocity length, confidence scores, and root/endpoint scores shown in Figure 2D. The conclusions about migration patterns (C157-C158) are reasonable interpretations of the velocity data. The model is further supported by citations to relevant literature (C146).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C18"
+    ],
+    "result": "Longitudinal flow cytometry analysis (days 0, 6, 8, 10 post-infection) using surface markers to track transcriptionally-defined clusters showed: L1 effector cluster increases over time in lung, L2 shows variable trends, medLN response is slightly faster than MLN but overall similar, and MLN3 is strongly increased at days 6-8. Surface markers successfully distinguish transcriptionally defined clusters, enabling temporal tracking of Th2 subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The longitudinal analysis is documented in Figure 3 with clear gating strategies (Figure 3\u2014supplement 1). The temporal dynamics (C159-C164) are shown in Figure 3C with quantification. The speculation about MLN3 as precursor to MLN1/MLN2 (C165-C166) is reasonable given the temporal patterns but appropriately presented as speculation. The successful identification of surface markers (C18) is supported by Figure 3A-B showing correspondence between transcriptional and protein-level definitions. The approach provides validation of the scRNA-seq clusters at the protein level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C167",
+      "C168",
+      "C169",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "TCR repertoire analysis reveals high heterogeneity with most distinct TCRs found in single cells, but 28% of cells express TCRs found in multiple cells. The most abundant clone has 15 sequenced members (estimated ~8,600 total). Only two small clones are shared between mice (few public clones). Expanded clone distribution varies by cluster: MLN6 and MLN7 have minimal expansion (limited TCR-driven proliferation), bridge clusters (MLN5, L2) have intermediate expansion, and effector/resident memory clusters (MLN4, L1) have more expansion than bridges but less than MLN1-3 clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TCR repertoire characteristics (C12, C167-C169) are documented in the text and Figure 4A. The low frequency of public clones (C171) is shown in Figure 4A. The differential expansion patterns across clusters (C172-C175) are documented in Figure 4B with clear visualization. The interpretation about limited TCR-driven proliferation in MLN6/MLN7 (C173) is reasonable given the lack of expanded clones. The speculation about bridge clusters containing migrants with less local clonal overlap (C176) is consistent with the data pattern but appropriately presented as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C15",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C16",
+      "C192",
+      "C193"
+    ],
+    "result": "Analysis of clonal relatedness between organs shows effective exchange of expanded Th2 clones between MLN and lung, but locally expanded clones dominate the response. Strongly expanded clones spread across organs, but clusters most distant from the other organ (L1, MLN1-3) expand more locally. Bridge clusters (L2, MLN5) show enhanced cross-organ relatedness. Top expanded MLN clones are found primarily in MLN1-3 with some members in lung, while top expanded lung clones are predominantly in L1 with minimal MLN presence. The five most expanded clones overall overlap with organ-specific top clones, indicating local expanders dominate despite cross-organ exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clonal relatedness analysis is comprehensively documented in Figure 4C-E. The effective spread of expanded clones (C177) is shown in Figure 4C. The local expansion bias (C178) and enhanced relatedness of bridge clusters (C179-C180) are documented in Figure 4D with clear quantification. The interpretation that UMAP proximity reflects TCR repertoire relatedness (C181) is validated by the concordance between visualization and clonal analysis. The distribution of top expanded clones (C182-C189) is shown in Figure 4E. The conclusion that local expanders dominate despite exchange (C190-C193) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "Analysis of TCR segment usage and CDR3 length shows no general preference for specific TCR chain compositions in expanded versus non-expanded clones. Minimal overlap in top 50 segment combinations between organs/mice for non-expanded clones, and limited overlap for expanded clones. Trbv1 shows moderate increase in expanded clones. No striking differences in CDR3 amino acid length or length distribution between expanded and non-expanded clones, or compared to naive peripheral blood T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of preferential TCR segment usage is documented in Figure 5A and Figure 5\u2014supplement 1. The minimal overlap in segment combinations (C194-C195) is shown in Figure 5A. The moderate increase in Trbv1 (C196, C198) is documented in Figure 5\u2014supplement 1B,E. The lack of CDR3 length differences (C199-C201) is shown in Figure 5B and Figure 5\u2014supplement 2A-C. The conclusion (C202) appropriately summarizes the negative findings, which are important for understanding the breadth of the Th2 response to Nb infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C224",
+      "C225"
+    ],
+    "result": "Analysis of abundant CDR3 motifs identified the invariant NKT TCR\u03b1 chain (CVVGDRGSALGRLHF) as most abundant across all samples including naive blood. Seven of nine other abundant motifs are absent from naive blood, suggesting Nb-specificity. Only CAIDPSGSWQLIF is found in both organs and both mice, potentially representing a preferentially selected motif. Co-expression analysis shows 38% of TCR\u03b3+ cells express the invariant TCR\u03b1 chain and 62% of invariant TCR\u03b1+ cells express TCR\u03b3 (correlation 0.48, p<10\u207b\u2076). TCR\u03b1 motifs in abundant pairings are also found in unique pairings with other TCR\u03b2 motifs, indicating they are not restricted to single clones. Three expanded TCR\u03b1 CDR3 motifs preferentially pair with Trbv1, suggesting its relevance for anti-Nb immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CDR3 motif analysis is documented in Figure 5C-D. The identification of the invariant NKT TCR\u03b1 chain (C203-C204) is supported by citation. The co-expression of TCR\u03b3 and invariant TCR\u03b1 (C207-C209) provides novel quantitative data with statistical significance. The identification of potentially Nb-specific motifs (C213-C216) is based on absence from naive blood, which is reasonable but not definitive proof of specificity. The finding that TCR\u03b1 motifs pair with multiple TCR\u03b2 chains (C217-C219) is shown in Figure 5D and indicates flexibility in TCR pairing. The association with Trbv1 (C224-C225) connects to the earlier finding of moderate Trbv1 enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230"
+    ],
+    "result": "Functional validation of candidate Nb-specific TCRs was performed by generating TCR retrogenic mice from three moderately expanded clones in the IL-5/IL-13+ region of lung effector cluster L1. One TCR (NB-T2) showed moderate but Nb-specific in vivo expansion, validating the approach for identifying Nb-specific TCRs. This represents the first in vivo validated Nb-specific TCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental approach (C226) is clearly described and shown in Figure 6A-B and Figure 6\u2014supplement 1. The hypothesis (C227) is reasonable given the effector phenotype of the source cluster. The successful validation of NB-T2 (C228) is documented in Figure 6C-D with appropriate controls (Hp infection, naive). The conclusion that the approach is suitable (C229) is supported by the successful identification of one specific TCR out of three tested. The novelty claim (C230) appears reasonable given the statement 'to our knowledge' but cannot be fully verified without comprehensive literature review. The moderate expansion level is appropriate given the heterogeneous response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238",
+      "C239"
+    ],
+    "result": "Effector/resident memory clusters show restricted IL-5 and IL-13 expression and contain transcriptionally similar IL-10+Foxp3\u207b cells with potential regulatory function (similar to cells described in S. mansoni infection). MLN effector/resident memory cells are heterogeneous, found in two clusters including an innate-like/NKT cluster (MLN6). The NKT population co-expresses the invariant TCR\u03b1 chain with diverse TCR\u03b2 chains and also expresses TCR\u03b3 transcripts, suggesting shared developmental pathways between NKT and \u03b3\u03b4 T cells. MLN6 also expresses CXCR3, a Th1 marker not previously associated with IL-4+ NKT or \u03b3\u03b4 T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The restriction of IL-5/IL-13 to effector/resident memory populations (C231) is documented in Figure 1F. The presence of IL-10+Foxp3\u207b cells (C232) is shown in Figure 1F, and the comparison to S. mansoni (C233) provides relevant context with citation. The heterogeneity of MLN effector cells (C234) is supported by the clustering analysis. The co-expression of invariant TCR\u03b1, diverse TCR\u03b2, and TCR\u03b3 (C235-C236) is documented in the TCR analysis with quantification. The interpretation of shared developmental pathways (C237) is reasonable given the co-expression data. The novel finding of CXCR3 in this context (C238-C239) is appropriately noted with citation to prior work showing CXCR3 in some Th2 cells but not in NKT/\u03b3\u03b4 context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246",
+      "C247",
+      "C248",
+      "C257",
+      "C258"
+    ],
+    "result": "A substantial MLN3 subpopulation exhibits an IFN response signature, suggesting a role for IFN signaling in Th2 differentiation or diversification. RNA velocity defines MLN3 as a differentiation endpoint. RNA velocity also indicates proliferating cells with low Th2 signature gene expression are at a differentiation decision point. This supports a model where proliferation and differentiation are linked (rather than orthogonal) processes, with IFN signaling involved in Th2 compartment diversification. Development appears faster with stricter directionality in lung versus MLN, consistent with MLN cells being less terminally differentiated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The IFN response signature in MLN3 (C9, C141) is documented in Figure 2B. The interpretation regarding Th2 differentiation (C10, C142) is supported by citation to in vitro studies (C241). RNA velocity defining MLN3 as endpoint (C243) is shown in Figure 2D. The identification of proliferating cells at decision points (C245) is supported by RNA velocity analysis. The interpretation that proliferation and differentiation are linked (C246) is supported by the velocity data and citations to Proserpio et al. The faster, more directional development in lung (C247-C248) is supported by velocity metrics in Figure 2D. The proposed model (C257-C258) integrates the findings with published literature and is appropriately presented as compatible with the data rather than definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C249",
+      "C250",
+      "C251",
+      "C252",
+      "C253"
+    ],
+    "result": "The most expanded clones in one organ are not the most expanded in the other organ, potentially relating to different immunological preferences or different Nb larval stages present in each organ. This refines prior human studies showing higher intra-organ than inter-organ TCR overlap (interpreted as different precursor pools/antigens), demonstrating that effective spread of Th2 effector cells occurs from the same pool even across distant organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding that top expanded clones differ between organs (C249) is documented in Figure 4E. The speculation about reasons (C250) is reasonable given the biological context but appropriately presented as speculation. The comparison to human studies (C251-C252) provides important context with citation. The interpretation that the current data refine this understanding (C253) is justified\u2014the single-cell clonal tracking demonstrates that while local expansion dominates, there is substantial exchange of clones between organs (as shown in C15, C177-C181), indicating cells from the same pool can expand in different locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C255",
+      "C256",
+      "C259",
+      "C260"
+    ],
+    "result": "The combined transcriptome and TCR clonotype analysis at single-cell resolution provides comprehensive information about Th2 heterogeneity across organs and reveals relatedness of IL-4+ NKT cells to \u03b3\u03b4 T cells. The experimental setup enables further functional characterization of expanded TCR clonotypes and investigation of Th2 cell differentiation, plasticity, and memory formation in response to helminth pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C255-C256) accurately reflect the major findings of the study as documented throughout the results. The study successfully integrated transcriptome and TCR data to characterize Th2 heterogeneity (multiple clusters with distinct functions), organ-specific differences, clonal distribution, and the novel finding of NKT/\u03b3\u03b4 T cell relatedness. The forward-looking statements (C259-C260) are reasonable given the successful validation of one Nb-specific TCR and the comprehensive characterization of Th2 subsets. The experimental framework is indeed suitable for future studies as claimed.",
+    "result_type": "MAJOR"
+  }
+]

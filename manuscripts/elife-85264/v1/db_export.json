@@ -1,0 +1,1690 @@
+{
+  "submission": {
+    "id": "8026c516-433f-48b9-b8a1-feced882a7cd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:40:56.082064Z",
+    "updated_at": "2025-12-03T20:40:56.082064Z"
+  },
+  "content": [
+    {
+      "id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "submission_id": "8026c516-433f-48b9-b8a1-feced882a7cd",
+      "content_type": "manuscript",
+      "content_text": "# Projected long-term effects of colorectal cancer screening disruptions following the COVID-19 pandemic\n\n## Authors\n\n- Pedro Nascimento de Lima<sup>1</sup> ([ORCID: 0000-0001-9057-198X](https://orcid.org/0000-0001-9057-198X)) \u2020\n- Rosita van den Puttelaar<sup>2</sup> ([ORCID: 0000-0003-2216-6557](https://orcid.org/0000-0003-2216-6557))\n- Anne I Hahn<sup>3</sup> ([ORCID: 0000-0003-4061-2303](https://orcid.org/0000-0003-4061-2303))\n- Matthias Harlass<sup>2</sup>\n- Nicholson Collier<sup>4</sup> ([ORCID: 0000-0002-2376-4156](https://orcid.org/0000-0002-2376-4156))\n- Jonathan Ozik<sup>4</sup> ([ORCID: 0000-0002-3495-6735](https://orcid.org/0000-0002-3495-6735))\n- Ann G Zauber<sup>3</sup> ([ORCID: 0000-0002-1764-5994](https://orcid.org/0000-0002-1764-5994))\n- Iris Lansdorp-Vogelaar<sup>2</sup>\n- Carolyn M Rutter<sup>5</sup> ([ORCID: 0000-0002-4396-8594](https://orcid.org/0000-0002-4396-8594))\n\n### Affiliations\n\n1. RAND Corporation Santa Monica United States ([ROR:00f2z7n96](https://ror.org/00f2z7n96))\n2. Erasmus MC Rotterdam Netherlands ([ROR:018906e22](https://ror.org/018906e22))\n3. Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))\n4. Argonne National Laboratory Lemont United States ([ROR:05gvnxz63](https://ror.org/05gvnxz63))\n5. Fred Hutchinson Cancer Center Seattle, WA United States ([ROR:007ps6h72](https://ror.org/007ps6h72))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe aftermath of the initial phase of the COVID-19 pandemic may contribute to the widening of disparities in colorectal cancer (CRC) outcomes due to differential disruptions to CRC screening. This comparative microsimulation analysis uses two CISNET CRC models to simulate the impact of ongoing screening disruptions induced by the COVID-19 pandemic on long-term CRC outcomes. We evaluate three channels through which screening was disrupted: delays in screening, regimen switching, and screening discontinuation. The impact of these disruptions on long-term CRC outcomes was measured by the number of life-years lost due to CRC screening disruptions compared to a scenario without any disruptions. While short-term delays in screening of 3\u201318 months are predicted to result in minor life-years loss, discontinuing screening could result in much more significant reductions in the expected benefits of screening. These results demonstrate that unequal recovery of screening following the pandemic can widen disparities in CRC outcomes and emphasize the importance of ensuring equitable recovery to screening following the pandemic.\n\n## Introduction\n\nThe novel SARS-Cov-2 (COVID-19) pandemic has resulted in major health consequences across the globe. In addition to the over 1 million COVID-19 deaths in the United States (Johns Hopkins Univerity & Medicine Coronavirus Resource Center, 2022), the pandemic has also contributed to steep declines in cancer screening, most notably in the early phases of the pandemic due to government-mandated shutdowns of non-emergency medical services (Gupta et al., 2020). It is estimated that colorectal cancer (CRC) screening decreased by 85% in the United States during the early phase of the pandemic, from March through April 2020 (London et al., 2022). The pandemic continues to affect CRC screening and diagnosis through staff shortages that reduce capacity at gastroenterology clinics and patient hesitancy to seek care (Wilensky, 2022; Del Vecchio Blanco et al., 2020). Despite cancer screening reopening efforts, CRC screening has not yet returned to pre-pandemic levels (Ong, 2021).\n\nCRC remains the second-leading cause of cancer deaths in the United States, with approximately 153,020 new cases and 52,550 deaths estimated in the year 2023 (Siegel et al., 2023). There is clear evidence that screening has a major impact on reducing the burden of CRC (Edwards et al., 2010; Zauber et al., 2012) and that it is cost-effective (Knudsen et al., 2021; Lansdorp-Vogelaar et al., 2011). The current United States Preventive Task Force (USPSTF) report recommends multiple screening options, including annual fecal immunochemical tests (FIT) and colonoscopy every 10 years for average-risk individuals (Davidson et al., 2021). However, CRC screening uptake was of concern even before the pandemic, with CRC screening rates well below the goal of 70.5% for Healthy People 2020 and the National Colorectal Cancer Roundtable goal of 80% by 2018 (Shapiro et al., 2021). Low rates of CRC screening have been exacerbated by the COVID-19 pandemic, and delays in screening will result in delays in diagnosis, stage progression, and increased CRC mortality.\n\nThe pandemic may also further exacerbate existing disparities related to screening. The burden of unemployment and associated loss of access to healthcare varies across different racial and ethnic groups (Marcondes et al., 2021). Because of this, the pandemic may contribute to widening disparities in cancer outcomes. A recent analysis using National Health Interview Survey (NHIS) data postulated that unemployment was adversely associated with being up-to-date with screening, with only 16.7% of unemployed individuals participating in recent CRC screenings, only 48.5% of whom were up-to-date with CRC screening (Fedewa et al., 2022).\n\nThe objective of this study is to estimate the impact of ongoing screening and treatment disruptions induced by the COVID-19 pandemic on long-term CRC outcomes. We examine 25 scenarios that reflect different levels of pre-pandemic adherence to colonoscopy and FIT screening to assess how unequal recovery in screening may contribute to widening disparities in CRC lifetime outcomes.\n\n## Methods\n\nThis paper uses two independently developed microsimulation models of CRC, CRC-SPIN and MISCAN-Colon, to estimate the effects of pandemic-induced disruptions in colonoscopy screening for eight pre-pandemic average-CRC risk population cohorts in the United States. CRC-SPIN and MISCAN-Colon models are part of the National Cancer Institute\u2019s CISNET consortium and describe the natural history of CRC in an unscreened population based on the adenoma-carcinoma sequence. Detailed descriptions of these models and underlying assumptions may be found elsewhere (Knudsen et al., 2021; Loeve et al., 1999; Rutter et al., 2019, van Hees et al., 2014). We consider variations on two commonly used screening strategies in the USPSTF recommendations during the onset of the pandemic in March 2020 (Knudsen et al., 2016): Decennial colonoscopy from age 50 to 70 and annual FIT from age 50 to 75, with diagnostic colonoscopy after a positive FIT.\n\n### Cohorts\n\nWe simulated eight pre-pandemic population cohorts that represent average-risk individuals in the United States, defined by both cohort members\u2019 age in April 2020 and their pre-pandemic screening regimens: (i) unscreened 50-year-olds (U50), (ii) unscreened 60-year-olds (U60), (iii) colonoscopy screening-adherent 60-year-olds (C60, who received their first screening colonoscopy at age 50 but have not yet had a colonoscopy at age 60), (iv) FIT screening-adherent 60-year-olds (F60, who performed annual FIT from age 50 to 59), (v) FIT screening semi-adherent 60-year-olds (f60) \u2013 those who received biannual FIT from age 50 to 56, (vi) unscreened 70-year-olds (U70), (vii) colonoscopy screening-adherent 70-year-olds (C70, who received screening colonoscopies at age 50 and 60), and (viii) FIT screening-adherent 70-year-olds (F70, who performed annual FIT from age 50 to 69). We simulated 10 million individuals within each cohort to reduce the stochastic variability in our runs and to ensure sufficient precision in our estimates. For each cohort, we simulated three sets of post-pandemic scenarios: no disruption, delays, and no screening.\n\n### Screening regimens under no disruption\n\nThe no-disruption scenarios simulate post-pandemic screening scenarios for each cohort in the counterfactual scenario where no pandemic-induced screening disruptions occurred. In no-disruption scenarios, all these cohorts would have been screened during the pandemic first lockdowns in March 2020. Cohorts with colonoscopy and FIT adherent individuals (U50, C60, F60 C70, F70) continue to follow guideline-recommended strategies strictly, with no delays. Cohorts with delayed initiation (U60, U70) begin screening late but otherwise follow guideline-recommended strategies with no delays but without any additional screening beyond the usual stopping age. Finally, for the FIT-semi-adherent 60-year-olds (f60), we simulate resumption of biannual FIT at age 60, continuing to age 75.\n\n### Pandemic-induced disruptions in CRC screening\n\n#### Delays\n\nThe pandemic has been shown to affect CRC outcomes through delays in screening. Screening colonoscopy and FIT are assumed to be delayed for a set duration of months starting at the onset of the COVID-19 pandemic in April 2020. Short-term screening delays may have occurred for a series of reasons. First, elective procedures were postponed during the first months of the pandemic. The cancellation of elective procedures caused a sharp decline in CRC screening exams during the initial phase of the pandemic (Gupta and Lieberman, 2020). To represent the full spectrum of delays caused by the pandemic \u2013 either due to cancellation of elective procedures or disruption in access to healthcare \u2013 we consider three sets of delays: a 3-, 9-, or 18-month delay in screening, which we label as short-term delays. For each delay scenario, the delay was applied on the first post-March 2020 screening exam and carried forward to any subsequent exams.\n\nSecond, the pandemic may have caused long-term delays in CRC screening. While the recovery in screening rates among insured individuals was rapid, (Choy et al., 2022) the pandemic also caused a sharp economic recession. The uneven recovery in labor force participation has the potential to cause disparities in access to healthcare in the United States due to unemployment and discontinuation of health insurance. To examine these longer-term effects of the pandemic, we consider scenarios where screening is paused for an extended period. For the 50- and 60-year-old cohorts, we simulated scenarios where screening is discontinued until the start age of Medicare enrollment (65 years). For 70-year-olds, we consider a scenario where screening is only resumed at age 75 \u2013 5 years after the pandemic onset.\n\n#### Screening regimen switching\n\nThe pandemic may also affect CRC behavior via screening regimen switching \u2013 that is, changing from a colonoscopy screening regimen to one based on FIT. There is evidence that during the pandemic some patients switched from colonoscopy to FIT (Fedewa et al., 2022) to reduce the need for in-person endoscopy procedures. Considering this possibility, we model scenarios where individuals who initially participated in a regimen of screening colonoscopy (C60 and C70) permanently switch from decennial colonoscopy to annual FIT screening as a boundary case. While one might expect pandemic-induced regimen switching to be temporary, permanent switching can serve as a boundary case for our analysis \u2013 that is, the effect of short-term regimen switching is expected to be lower than the effect of permanent regimen switching.\n\n#### Screening discontinuation\n\nWe also simulate scenarios where screening is completely discontinued after the pandemic onset as the most consequential boundary case scenario. While only a small (unknown) proportion of individuals will discontinue screening after the pandemic, this scenario serves as an upper bound for the worst possible disruption in CRC screening following the pandemic.\n\n#### Scenarios\n\nEach of the scenarios simulated in this study results from the combination of a pre-pandemic population cohort, a no-disruption screening scenario that serves as a counterfactual, and one or more screening disruptions (i.e. switching to FIT screening occurred in tandem with short-term delays). Table 1 lists those combinations and the scenario labels used in this analysis. We code our scenarios as [pre-pandemic screening cohort] | [post-pandemic disruptions].\n\n**Table 1.**\n Study cohorts and scenarios.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Cohort</th>\n      <th rowspan=\"2\">No-disruption counterfactual</th>\n      <th colspan=\"2\">CRC screening disruption scenario</th>\n    </tr>\n    <tr>\n      <th>Description</th>\n      <th>Label</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Unscreened50-year-olds (U50)</td>\n      <td rowspan=\"2\">Decennial COL from age 50 to 70</td>\n      <td>Short-term delays of [d] months*</td>\n      <td>U50 | C[d]m</td>\n    </tr>\n    <tr>\n      <td>Long-term delay (COL at age 65 and 75)</td>\n      <td>U50 | C@65</td>\n    </tr>\n    <tr>\n      <td>Annual FIT from age 50 to 75</td>\n      <td>Short-term delays*</td>\n      <td>U50 | F[d]m</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Unscreened60-year-olds (U60)</td>\n      <td rowspan=\"2\">Decennial COL from age 60 to 70</td>\n      <td>Short-term delays*</td>\n      <td>U60 | C[d]m</td>\n    </tr>\n    <tr>\n      <td>Long-term delay (COL at age 65 and 75)</td>\n      <td>U60 | C@65</td>\n    </tr>\n    <tr>\n      <td>Annual FIT from age 60 to 75</td>\n      <td>Short-term delays*</td>\n      <td>U60 | F[d]m</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">COL-adherent60-year-olds (C60)</td>\n      <td rowspan=\"4\">Decennial COL from age 50 to 70</td>\n      <td>Short-term delays*</td>\n      <td>C60 | C[d]m</td>\n    </tr>\n    <tr>\n      <td>Switch to annual FIT and short-term delays</td>\n      <td>C60 | F[d]m</td>\n    </tr>\n    <tr>\n      <td>Long-term delay (COL at age 65 and 75)</td>\n      <td>C60 | C@65</td>\n    </tr>\n    <tr>\n      <td>Discontinue screening</td>\n      <td>C60 | U</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">FIT-adherent60-year-olds (F60)</td>\n      <td rowspan=\"2\">Annual FIT from age 50 to 75</td>\n      <td>Short-term delays*</td>\n      <td>F60 | F[d]m</td>\n    </tr>\n    <tr>\n      <td>Discontinue screening</td>\n      <td>F60 | U</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">FIT-semi-adherent60-year-olds (f60)</td>\n      <td rowspan=\"2\">Biannual FIT from age 50 to 56, annual FIT from age 60 to 75</td>\n      <td>Short-term delays*</td>\n      <td>f60 | F[d]m</td>\n    </tr>\n    <tr>\n      <td>Discontinue screening</td>\n      <td>f60 | U</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Unscreened70-year-olds (U70)</td>\n      <td rowspan=\"2\">COL at age 70</td>\n      <td>Short-term delays*</td>\n      <td>U70 | C[d]m</td>\n    </tr>\n    <tr>\n      <td>Long-term delay (COL at age 75)</td>\n      <td>U70 | C@75</td>\n    </tr>\n    <tr>\n      <td>Annual FIT from age 70 to 75</td>\n      <td>Short-term delays</td>\n      <td>U70 | F[d]m</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">COL-adherent70-year-olds (C70)</td>\n      <td rowspan=\"4\">Decennial COL from age 50 to 70</td>\n      <td>Short-term delays*</td>\n      <td>C70 | C[d]m</td>\n    </tr>\n    <tr>\n      <td>Switch to annual FIT and short-term delays</td>\n      <td>C70 | F[d]m</td>\n    </tr>\n    <tr>\n      <td>Long-term delayPerform COL at age 75</td>\n      <td>C70 | C@75</td>\n    </tr>\n    <tr>\n      <td>Discontinue screening</td>\n      <td>C70 | U</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">FIT-adherent70-year-olds (F70)</td>\n      <td rowspan=\"2\">Annual FIT from age 50 to 75</td>\n      <td>Short-term delays*</td>\n      <td>F70 | F[d]m</td>\n    </tr>\n    <tr>\n      <td>Discontinue screening</td>\n      <td>F70 | U</td>\n    </tr>\n  </tbody>\n</table>\n\n_Notes: This table presents the scenarios considered in this study. Each scenario corresponds to a combination of a population cohort, indicated by their age during the first COVID-19 lockdowns (March 2020), a pre-pandemic, and a post-pandemic screening regimen. The scenarios aim to represent possible combinations of screening regimens followed in the United States. The first letter in the scenario code represents screening before the pandemic and the second letter represents screening after the pandemic.*Delays of 3, 9, and 18 months. Letter d stands for the number of months of delays._\n\n#### Outcomes\n\nThe primary measure used to assess the benefit of CRC screening programs is the expected lifetime life-years gained (LYG) from screening. All outcomes in this study correspond to expected value of life-years (LY) across the US population with average CRC risk. This study investigates the extent to which benefits from screening are expected to be lost due to pandemic-induced disruptions to CRC screening. Therefore, we calculated the total number of LY for each cohort and scenario, including the number of LY under no screening (LYNS) and the number of LY under no disruptions (LYND). LYNS is computed by simulating the cohort in the absence of CRC screening and LYND is computed by simulating the same cohort under an ideal screening scenario where no disruptions to screening happened, as defined in Table 1.\n\nThe key outcome estimated in this study is the expected number of LY lost (LYL) due to disruptions in screening, defined as $LYL=\u00a0LYND\u2212LY$. The hypothetical number of LY gained (LYG) from screening under no disruptions are $LYG_{no\u00a0disruption}\u00a0=\u00a0LYND\u2212LYNS$. Finally, we compute the percentage of life-years gained or lost due to disruption as $% LY Lost =100* LYL / LYG_{no disruption}$ . The first outcome measure (LYL) is an absolute measure of the loss of screening benefit due to pandemic disruptions. The percent LY lost due to disruptions indicates the share of screening benefit lost due to the pandemic. Following the previous analyses, we present all outcomes as LY per 1000 individuals or life days per person. We compute each of those outcomes separately for each model and report the range of outcomes observed across both models. In addition to LY outcomes, we present lifetime number of CRC cases over the remaining lifetime of individuals and number of CRC deaths (Supplementary files 2 and 3).\n\n### Test characteristics\n\nTable 2 specifies sensitivity and specificity assumptions underlying colonoscopy and FIT exams evaluated in this study. Our main results present colonoscopy sensitivity following assumptions used in the analysis that informed the most recent USPSTF screening recommendations (Zauber et al., 2008). In addition, we simulate all screening disruption scenarios under assuming lower colonoscopy sensitivity.\n\n**Table 2.**\n Per lesion test sensitivity and specificity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"4\">Sensitivity*</th>\n      <th rowspan=\"2\">Specificity\u2020</th>\n    </tr>\n    <tr>\n      <th>Test</th>\n      <th>Adenoma1\u20135 mm</th>\n      <th>Adenoma6\u20139 mm</th>\n      <th>Adenoma \u226510 mm</th>\n      <th>Preclinical cancer</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Colonoscopy, high sensitivity\u2021</td>\n      <td>0.75</td>\n      <td>0.85</td>\n      <td>0.95</td>\n      <td>0.95</td>\n      <td>0.86</td>\n    </tr>\n    <tr>\n      <td>Colonoscopy, low sensitivity\u00a7</td>\n      <td>0.55</td>\n      <td>0.70</td>\n      <td>0.90</td>\n      <td>0.95</td>\n      <td>0.86</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">FIT\u00b6</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>0.00</td>\n      <td>0.114</td>\n      <td>0.159</td>\n      <td>0.62565/0.886</td>\n      <td>0.97</td>\n    </tr>\n    <tr>\n      <td>CRC-SPIN</td>\n      <td>0.05</td>\n      <td>0.15</td>\n      <td>0.22</td>\n      <td>*0.74</td>\n      <td>0.97</td>\n    </tr>\n  </tbody>\n</table>\n\n_Notes: This table presents the assumed test characteristics. We simulated two colonoscopy sensitivity scenarios seeking to represent a range of colonoscopy sensitivity of gastroenterologists in the United States.*Sensitivity is for lesions within reach of the scope. We assume the same test characteristics for follow-up and surveillance colonoscopy as for screening colonoscopy.\u2020For FIT, the lack of specificity reflects detection of bleeding from other causes. We assume other-cause bleeding is independent of adenoma status. For colonoscopy, the lack of specificity reflects detection of non-adenomatous lesions, but specificity is handled in post-processing in cost-effectiveness analyses. Since this study does not consider burden outcomes, specificity is not considered in this paper. Specificity values were obtained from Lin et al., 2021.\u2021Baseline scenarios used in Zauber et al., 2008.\u00a7In line with low-sensitivity scenarios compatible with Rutter et al., 2022.\u00b6CRC-SPIN uses per-person test sensitivity for stool-based tests that are based on the size of the most advanced lesion. To account for the likelihood that a person with multiple adenomas is more likely than a person with only one to have a positive stool test, MISCAN uses lesion-based sensitivities instead of person-based sensitivities. Lesion-based sensitivities were derived by calibrating the person-based sensitivities to the number of people having one or more small/medium/large adenomas or cancers detected by stool-based testing with diagnostic colonoscopy, divided by those having one or more small/medium/large adenomas or cancers detected by colonoscopy screening._\n\n### CRC surveillance\n\nWe assume that individuals with an adenoma detected undergo colonoscopic surveillance according to the Multi-Society Task Force (MSTF) guidelines. These guidelines provide intervals for surveillance based on baseline findings and findings at the first surveillance colonoscopy. We assume that the intervals provided can be more generally expressed as the intervals based on the most recent colonoscopy (\u2018first-most recent colonoscopy\u2019) and the colonoscopy prior to that (\u2018second-most recent colonoscopy\u2019). In situations where the MSTF provided a range rather than a single interval, we assumed that the shortest interval would be used in routine practice. The resulting intervals are shown in Table 3.\n\n**Table 3.**\n CRC surveillance intervals.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Finding at second-most recent colonoscopy*\u2020</th>\n      <th>Finding at first-most recent colonoscopy*\u2020</th>\n      <th>Interval\u2021 to next colonoscopy, years</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>No prior colonoscopy</td>\n      <td>Normal colonoscopy</td>\n      <td>See note below\u00a7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1\u20132 adenomas &lt;10 mm</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>3\u20134 adenomas &lt;10 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>10 adenomas &lt;10 mm or any adenoma \u226510 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>&gt;10 adenomas</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Normal colonoscopy</td>\n      <td>Normal colonoscopy</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1\u20132 adenomas &lt;10 mm</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>3\u20134 adenomas &lt;10 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>5\u201310 adenomas &lt;10 mm or any adenoma \u226510 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>&gt;10 adenomas</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>1\u20132 adenomas &lt;10 mm</td>\n      <td>Normal colonoscopy</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1\u20132 adenomas &lt;10 mm</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>3\u20134 adenomas &lt;10 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>5\u201310 adenomas &lt;10 mm or any adenoma \u226510 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>&gt;10 adenomas</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>3\u20134 adenomas &lt;10 mm</td>\n      <td>Normal colonoscopy</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1\u20132 adenomas &lt;10 mm</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>3\u20134 adenomas &lt;10 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>5\u201310 adenomas &lt;10 mm or any adenoma \u226510 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>&gt;10 adenomas</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>5\u201310 adenomas &lt;10 mm</td>\n      <td>Normal colonoscopy</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>or</td>\n      <td>1\u20132 adenomas &lt;10 mm</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>any adenoma \u226510 mm</td>\n      <td>3\u20134 adenomas &lt;10 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>5\u201310 adenomas &lt;10 mm or any adenoma \u226510 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>&gt;10 adenomas</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>&gt;10 adenomas of any size</td>\n      <td>Normal colonoscopy</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1\u20132 adenomas &lt;10 mm</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>3\u20134 adenomas &lt;10 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>5\u201310 adenomas &lt;10 mm or any adenoma \u226510 mm</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>&gt;10 adenomas</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\n_*A normal colonoscopy is one in which no adenomas, SSPs (not currently simulated), or CRC is detected.\u2020This table omits the case where CRC is detected at a screening, diagnostic, or surveillance colonoscopy because the CISNET CRC models do not simulate detailed events following CRC diagnosis.\u2021The Multi-Society Task Force provides a range for some intervals (e.g. the interval for 3\u20134 adenomas <10 mm is 3\u20135 years). In such cases, we selected the shortest intervals provided.\u00a7A person whose first screening or diagnostic colonoscopy is normal does not enter surveillance but instead resumes screening with the original modality 10 years after the normal colonoscopy. The exception to the 10-year waiting period is when the first colonoscopy is a screening colonoscopy with an x-year interval, where x>10. In that case, the next colonoscopy is in x years._\n\nWe assume that persons in whom adenoma(s) have been detected remain on surveillance until age 85, provided that no adenomas are detected at the last surveillance colonoscopy. If adenomas are detected, then surveillance continues according to the clinical findings at the last colonoscopy until the person has a colonoscopy with no adenomas detected. For example, if a person has a surveillance colonoscopy at age 83 and no adenomas are detected at this exam or the exam before this one, they would be recommended to have their next surveillance at age 93. Age 93 is after the surveillance stopping age of 85 and the exam prior to age 85 was negative, so they will not have any more surveillance colonoscopies after age 83. However, if the exam at age 83 instead detected 1\u20132 small adenomas, they would come back for their surveillance colonoscopy at age 90, because adenomas were detected at the exam at age 83.\n\n## Results\n\nLoss of life due to screening disruptions was the largest for cohorts with severe disruptions after the pandemic (Figure 1). Aside from not receiving any screening, the worst-case scenario for the 50-year-old cohort was to postpone screening until age 65 when they become Medicare eligible. This cohort (scenario U50 | C@65) is expected to lose 104\u2013127 LY per 1000 individuals \u2013 a 38\u201342% loss in LYG compared to a no-disruption scenario where they start screening at age 50 (Table 4). This cohort would be 1.3\u20131.9 times more likely to have CRC over their lifetime (Supplementary file 2) and 1.6\u20132.0 times more likely to die with CRC (Supplementary file 3) compared to a cohort that started screening at age 50. Other disruption scenarios are predicted to have minor effects on this cohort. For example, 50-year-olds with colonoscopy screening delayed by 18 months (scenario U50 | C18m) are expected to experience a loss of 6\u20137 LY per 1000 individuals, and a 2% loss in LYG from screening compared to a no-disruption scenario.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85264/elife-85264-fig1-v1.jpg)\n\n**Figure 1.:** Notes: Each dot represents the estimated life-years lost per 1000 individuals or life-days lost from one model under the high sensitivity scenario. Results are ordered from highest to lowest reduction in benefit induced by the pandemic. Scenarios that result in less than 2 life-days lost per person are omitted from this figure and presented in a Supplementary figure. This figure does not present a counterfactual no-screening scenario for the 50-year-olds.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85264/elife-85264-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Notes: Each dot represents the estimated life-years lost per 1000 individuals or life-days lost from one model under the high sensitivity scenario. Results are ordered from highest to lowest reduction in benefit induced by the pandemic. This figure supplement only shows scenarios that resulted in in less than 2 life-days lost per person. This figure does not present a counterfactual no-screening scenario for the 50-year-olds.\n\n**Table 4.**\n Projected life-years (LY) per 1000 individuals.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Scenario</th>\n      <th rowspan=\"2\">Model</th>\n      <th>No screening</th>\n      <th colspan=\"2\">Screening without disruptions</th>\n      <th colspan=\"2\">Screening with disruptions</th>\n      <th colspan=\"2\">Loss due to disruptions</th>\n    </tr>\n    <tr>\n      <th>LY[a]</th>\n      <th>LY[b]</th>\n      <th>LYG[b-a]</th>\n      <th>LY[c]</th>\n      <th>LYG[c-a]</th>\n      <th>LY[b-c]</th>\n      <th>% LYG loss[(b-c)/b]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">U50 | C3m</td>\n      <td>CRCSPIN</td>\n      <td>31,595</td>\n      <td>31,893</td>\n      <td>299</td>\n      <td>31,892</td>\n      <td>297</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>31,222</td>\n      <td>31,494</td>\n      <td>273</td>\n      <td>31,491</td>\n      <td>270</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U50 | C9m</td>\n      <td>CRCSPIN</td>\n      <td>31,595</td>\n      <td>31,893</td>\n      <td>299</td>\n      <td>31,890</td>\n      <td>295</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>31,222</td>\n      <td>31,494</td>\n      <td>273</td>\n      <td>31,490</td>\n      <td>268</td>\n      <td>5</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U50 | C18m</td>\n      <td>CRCSPIN</td>\n      <td>31,595</td>\n      <td>31,893</td>\n      <td>299</td>\n      <td>31,886</td>\n      <td>291</td>\n      <td>7</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>31,222</td>\n      <td>31,494</td>\n      <td>273</td>\n      <td>31,488</td>\n      <td>266</td>\n      <td>6</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U50 | C@65</td>\n      <td>CRCSPIN</td>\n      <td>31,595</td>\n      <td>31,893</td>\n      <td>299</td>\n      <td>31,766</td>\n      <td>172</td>\n      <td>127</td>\n      <td>43</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>31,222</td>\n      <td>31,494</td>\n      <td>273</td>\n      <td>31,390</td>\n      <td>169</td>\n      <td>104</td>\n      <td>38</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U50 | F3m</td>\n      <td>CRCSPIN</td>\n      <td>31,595</td>\n      <td>31,866</td>\n      <td>271</td>\n      <td>31,865</td>\n      <td>270</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>31,222</td>\n      <td>31,483</td>\n      <td>261</td>\n      <td>31,481</td>\n      <td>259</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U50 | F9m</td>\n      <td>CRCSPIN</td>\n      <td>31,595</td>\n      <td>31,866</td>\n      <td>271</td>\n      <td>31,862</td>\n      <td>268</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>31,222</td>\n      <td>31,483</td>\n      <td>261</td>\n      <td>31,480</td>\n      <td>258</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U50 | F18m</td>\n      <td>CRCSPIN</td>\n      <td>31,595</td>\n      <td>31,866</td>\n      <td>271</td>\n      <td>31,858</td>\n      <td>264</td>\n      <td>7</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>31,222</td>\n      <td>31,483</td>\n      <td>261</td>\n      <td>31,478</td>\n      <td>256</td>\n      <td>5</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U60 | C3m</td>\n      <td>CRCSPIN</td>\n      <td>23,336</td>\n      <td>23,557</td>\n      <td>221</td>\n      <td>23,560</td>\n      <td>224</td>\n      <td>-3</td>\n      <td>-1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,114</td>\n      <td>23,309</td>\n      <td>195</td>\n      <td>23,304</td>\n      <td>190</td>\n      <td>5</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U60 | C9m</td>\n      <td>CRCSPIN</td>\n      <td>23,336</td>\n      <td>23,557</td>\n      <td>221</td>\n      <td>23,555</td>\n      <td>219</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,114</td>\n      <td>23,309</td>\n      <td>195</td>\n      <td>23,301</td>\n      <td>187</td>\n      <td>8</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U60 | C18m</td>\n      <td>CRCSPIN</td>\n      <td>23,336</td>\n      <td>23,557</td>\n      <td>221</td>\n      <td>23,547</td>\n      <td>211</td>\n      <td>10</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,114</td>\n      <td>23,309</td>\n      <td>195</td>\n      <td>23,296</td>\n      <td>182</td>\n      <td>14</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U60 | C@65</td>\n      <td>CRCSPIN</td>\n      <td>23,336</td>\n      <td>23,557</td>\n      <td>221</td>\n      <td>23,512</td>\n      <td>176</td>\n      <td>45</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,114</td>\n      <td>23,309</td>\n      <td>195</td>\n      <td>23,267</td>\n      <td>153</td>\n      <td>42</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U60 | F3m</td>\n      <td>CRCSPIN</td>\n      <td>23,336</td>\n      <td>23,528</td>\n      <td>191</td>\n      <td>23,529</td>\n      <td>193</td>\n      <td>-2</td>\n      <td>-1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,114</td>\n      <td>23,291</td>\n      <td>177</td>\n      <td>23,288</td>\n      <td>174</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U60 | F9m</td>\n      <td>CRCSPIN</td>\n      <td>23,336</td>\n      <td>23,528</td>\n      <td>191</td>\n      <td>23,525</td>\n      <td>189</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,114</td>\n      <td>23,291</td>\n      <td>177</td>\n      <td>23,285</td>\n      <td>171</td>\n      <td>6</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U60 | F18m</td>\n      <td>CRCSPIN</td>\n      <td>23,336</td>\n      <td>23,528</td>\n      <td>191</td>\n      <td>23,519</td>\n      <td>183</td>\n      <td>8</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,114</td>\n      <td>23,291</td>\n      <td>177</td>\n      <td>23,280</td>\n      <td>166</td>\n      <td>11</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C60 | C3m</td>\n      <td>CRCSPIN</td>\n      <td>23,243</td>\n      <td>23,541</td>\n      <td>298</td>\n      <td>23,541</td>\n      <td>299</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,077</td>\n      <td>23,320</td>\n      <td>243</td>\n      <td>23,318</td>\n      <td>241</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C60 | C9m</td>\n      <td>CRCSPIN</td>\n      <td>23,242</td>\n      <td>23,541</td>\n      <td>298</td>\n      <td>23,541</td>\n      <td>299</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,077</td>\n      <td>23,319</td>\n      <td>243</td>\n      <td>23,317</td>\n      <td>240</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C60 | C18m</td>\n      <td>CRCSPIN</td>\n      <td>23,242</td>\n      <td>23,541</td>\n      <td>298</td>\n      <td>23,540</td>\n      <td>298</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,077</td>\n      <td>23,320</td>\n      <td>243</td>\n      <td>23,317</td>\n      <td>239</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C60 | F3m</td>\n      <td>CRCSPIN</td>\n      <td>23,242</td>\n      <td>23,541</td>\n      <td>298</td>\n      <td>23,532</td>\n      <td>289</td>\n      <td>9</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,077</td>\n      <td>23,320</td>\n      <td>243</td>\n      <td>23,310</td>\n      <td>233</td>\n      <td>10</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C60 | F9m</td>\n      <td>CRCSPIN</td>\n      <td>23,243</td>\n      <td>23,541</td>\n      <td>298</td>\n      <td>23,532</td>\n      <td>289</td>\n      <td>9</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,077</td>\n      <td>23,319</td>\n      <td>243</td>\n      <td>23,310</td>\n      <td>233</td>\n      <td>9</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C60 | F18m</td>\n      <td>CRCSPIN</td>\n      <td>23,243</td>\n      <td>23,541</td>\n      <td>298</td>\n      <td>23,532</td>\n      <td>289</td>\n      <td>9</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,077</td>\n      <td>23,320</td>\n      <td>243</td>\n      <td>23,309</td>\n      <td>232</td>\n      <td>11</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C60 | C@65</td>\n      <td>CRCSPIN</td>\n      <td>23,243</td>\n      <td>23,541</td>\n      <td>298</td>\n      <td>23,538</td>\n      <td>295</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,077</td>\n      <td>23,320</td>\n      <td>243</td>\n      <td>23,308</td>\n      <td>231</td>\n      <td>11</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C60 | U</td>\n      <td>CRCSPIN</td>\n      <td>23,243</td>\n      <td>23,541</td>\n      <td>298</td>\n      <td>23,435</td>\n      <td>192</td>\n      <td>106</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,077</td>\n      <td>23,320</td>\n      <td>243</td>\n      <td>23,195</td>\n      <td>118</td>\n      <td>125</td>\n      <td>51</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">F60 | F3m</td>\n      <td>CRCSPIN</td>\n      <td>23,307</td>\n      <td>23,579</td>\n      <td>272</td>\n      <td>23,576</td>\n      <td>269</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,144</td>\n      <td>23,377</td>\n      <td>234</td>\n      <td>23,377</td>\n      <td>233</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">F60 | F9m</td>\n      <td>CRCSPIN</td>\n      <td>23,306</td>\n      <td>23,578</td>\n      <td>272</td>\n      <td>23,575</td>\n      <td>269</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,143</td>\n      <td>23,376</td>\n      <td>234</td>\n      <td>23,376</td>\n      <td>234</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">F60 | F18m</td>\n      <td>CRCSPIN</td>\n      <td>23,307</td>\n      <td>23,578</td>\n      <td>272</td>\n      <td>23,573</td>\n      <td>267</td>\n      <td>5</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,143</td>\n      <td>23,377</td>\n      <td>234</td>\n      <td>23,376</td>\n      <td>233</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">F60 | U</td>\n      <td>CRCSPIN</td>\n      <td>23,307</td>\n      <td>23,579</td>\n      <td>272</td>\n      <td>23,467</td>\n      <td>160</td>\n      <td>111</td>\n      <td>41</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,143</td>\n      <td>23,376</td>\n      <td>234</td>\n      <td>23,283</td>\n      <td>141</td>\n      <td>93</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">f60 | F3m</td>\n      <td>CRCSPIN</td>\n      <td>23,314</td>\n      <td>23,562</td>\n      <td>249</td>\n      <td>23,560</td>\n      <td>247</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,136</td>\n      <td>23,355</td>\n      <td>219</td>\n      <td>23,353</td>\n      <td>217</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">f60 | F9m</td>\n      <td>CRCSPIN</td>\n      <td>23,314</td>\n      <td>23,563</td>\n      <td>249</td>\n      <td>23,559</td>\n      <td>245</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,136</td>\n      <td>23,355</td>\n      <td>219</td>\n      <td>23,352</td>\n      <td>216</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">f60 | F18m</td>\n      <td>CRCSPIN</td>\n      <td>23,313</td>\n      <td>23,562</td>\n      <td>249</td>\n      <td>23,556</td>\n      <td>242</td>\n      <td>6</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,136</td>\n      <td>23,355</td>\n      <td>219</td>\n      <td>23,350</td>\n      <td>214</td>\n      <td>5</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">f60 | U</td>\n      <td>CRCSPIN</td>\n      <td>23,313</td>\n      <td>23,562</td>\n      <td>249</td>\n      <td>23,419</td>\n      <td>105</td>\n      <td>143</td>\n      <td>58</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>23,134</td>\n      <td>23,353</td>\n      <td>219</td>\n      <td>23,203</td>\n      <td>68</td>\n      <td>150</td>\n      <td>69</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U70 | C3m</td>\n      <td>CRCSPIN</td>\n      <td>15,973</td>\n      <td>16,102</td>\n      <td>128</td>\n      <td>16,099</td>\n      <td>126</td>\n      <td>3</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,748</td>\n      <td>15,866</td>\n      <td>117</td>\n      <td>15,857</td>\n      <td>108</td>\n      <td>9</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U70 | C9m</td>\n      <td>CRCSPIN</td>\n      <td>15,973</td>\n      <td>16,102</td>\n      <td>128</td>\n      <td>16,094</td>\n      <td>120</td>\n      <td>8</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,748</td>\n      <td>15,866</td>\n      <td>117</td>\n      <td>15,852</td>\n      <td>103</td>\n      <td>14</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U70 | C18m</td>\n      <td>CRCSPIN</td>\n      <td>15,973</td>\n      <td>16,102</td>\n      <td>128</td>\n      <td>16,086</td>\n      <td>113</td>\n      <td>16</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,748</td>\n      <td>15,866</td>\n      <td>117</td>\n      <td>15,845</td>\n      <td>97</td>\n      <td>21</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U70 | C@75</td>\n      <td>CRCSPIN</td>\n      <td>15,973</td>\n      <td>16,102</td>\n      <td>128</td>\n      <td>16,052</td>\n      <td>79</td>\n      <td>50</td>\n      <td>39</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,748</td>\n      <td>15,866</td>\n      <td>117</td>\n      <td>15,815</td>\n      <td>66</td>\n      <td>51</td>\n      <td>43</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U70 | F3m</td>\n      <td>CRCSPIN</td>\n      <td>15,973</td>\n      <td>16,069</td>\n      <td>95</td>\n      <td>16,067</td>\n      <td>93</td>\n      <td>2</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,748</td>\n      <td>15,840</td>\n      <td>92</td>\n      <td>15,833</td>\n      <td>85</td>\n      <td>7</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U70 | F9m</td>\n      <td>CRCSPIN</td>\n      <td>15,973</td>\n      <td>16,069</td>\n      <td>95</td>\n      <td>16,063</td>\n      <td>90</td>\n      <td>5</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,748</td>\n      <td>15,840</td>\n      <td>92</td>\n      <td>15,830</td>\n      <td>81</td>\n      <td>10</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">U70 | F18m</td>\n      <td>CRCSPIN</td>\n      <td>15,973</td>\n      <td>16,069</td>\n      <td>95</td>\n      <td>16,058</td>\n      <td>84</td>\n      <td>11</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,748</td>\n      <td>15,840</td>\n      <td>92</td>\n      <td>15,824</td>\n      <td>76</td>\n      <td>16</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C70 | C3m</td>\n      <td>CRCSPIN</td>\n      <td>15,683</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,590</td>\n      <td>15,824</td>\n      <td>234</td>\n      <td>15,823</td>\n      <td>234</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C70 | C9m</td>\n      <td>CRCSPIN</td>\n      <td>15,683</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,590</td>\n      <td>15,824</td>\n      <td>234</td>\n      <td>15,823</td>\n      <td>233</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C70 | C18m</td>\n      <td>CRCSPIN</td>\n      <td>15,684</td>\n      <td>15,969</td>\n      <td>285</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,589</td>\n      <td>15,824</td>\n      <td>234</td>\n      <td>15,822</td>\n      <td>233</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C70 | C@75</td>\n      <td>CRCSPIN</td>\n      <td>15,683</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,590</td>\n      <td>15,824</td>\n      <td>234</td>\n      <td>15,819</td>\n      <td>229</td>\n      <td>5</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C70 | F3m</td>\n      <td>CRCSPIN</td>\n      <td>15,683</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>15,964</td>\n      <td>281</td>\n      <td>5</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,590</td>\n      <td>15,824</td>\n      <td>234</td>\n      <td>15,818</td>\n      <td>228</td>\n      <td>6</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C70 | F9m</td>\n      <td>CRCSPIN</td>\n      <td>15,683</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>15,964</td>\n      <td>281</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,590</td>\n      <td>15,824</td>\n      <td>234</td>\n      <td>15,817</td>\n      <td>228</td>\n      <td>7</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C70 | F18m</td>\n      <td>CRCSPIN</td>\n      <td>15,683</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>15,964</td>\n      <td>281</td>\n      <td>4</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,589</td>\n      <td>15,824</td>\n      <td>234</td>\n      <td>15,817</td>\n      <td>227</td>\n      <td>7</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">C70 | U</td>\n      <td>CRCSPIN</td>\n      <td>15,683</td>\n      <td>15,968</td>\n      <td>285</td>\n      <td>15,930</td>\n      <td>247</td>\n      <td>38</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,581</td>\n      <td>15,815</td>\n      <td>234</td>\n      <td>15,726</td>\n      <td>146</td>\n      <td>89</td>\n      <td>38</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">F70 | F3m</td>\n      <td>CRCSPIN</td>\n      <td>15,764</td>\n      <td>16,024</td>\n      <td>259</td>\n      <td>16,023</td>\n      <td>259</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,676</td>\n      <td>15,902</td>\n      <td>226</td>\n      <td>15,902</td>\n      <td>226</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">F70 | F9m</td>\n      <td>CRCSPIN</td>\n      <td>15,765</td>\n      <td>16,024</td>\n      <td>259</td>\n      <td>16,023</td>\n      <td>259</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,677</td>\n      <td>15,903</td>\n      <td>226</td>\n      <td>15,903</td>\n      <td>225</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">F70 | F18m</td>\n      <td>CRCSPIN</td>\n      <td>15,766</td>\n      <td>16,025</td>\n      <td>259</td>\n      <td>16,024</td>\n      <td>258</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,677</td>\n      <td>15,903</td>\n      <td>226</td>\n      <td>15,903</td>\n      <td>226</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">F70 | U</td>\n      <td>CRCSPIN</td>\n      <td>15,764</td>\n      <td>16,024</td>\n      <td>259</td>\n      <td>15,990</td>\n      <td>226</td>\n      <td>33</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>MISCAN</td>\n      <td>15,677</td>\n      <td>15,903</td>\n      <td>226</td>\n      <td>15,873</td>\n      <td>196</td>\n      <td>30</td>\n      <td>13</td>\n    </tr>\n  </tbody>\n</table>\n\n_Notes: Outcomes calculated over the lifetime of a cohort of 1000 average-risk, CRC-free individuals with age at pandemic defined in the scenario description. The scenario column describes colorectal cancer screening disruption scenarios, as presented in Table 1. Life-years (LY) and Life-years gained (LYG) are computed over the remaining lifespan of individuals starting at the beginning of 2020. All values refer to cohort-level estimates \u2013 that is, the expected LY of an average-risk person. This table presents results assuming high colonoscopy sensitivity. Supplementary file 1 presents additional results for the low colonoscopy sensitivity scenario, and Supplementary files 2 and 3 present CRC cases and deaths outcomes._\n\nSimilarly, 60-year-olds are expected to incur a substantial reduction in the benefit of screening if screening is discontinued after the pandemic. Those who started screening at age 50 and stopped after the pandemic are expected to lose 106\u2013124 or 92\u2013111 LY per 1000 individuals if pursuing a colonoscopy (C60 | U) or a FIT (F60 | U) screening regimen, respectively. Those who were semi-adherent to FIT screening before the pandemic and discontinued screening (f60 | U) lose even more LY \u2013 from 143 to 149 LY per 1000 individuals, or 58\u201369% of the benefit of screening. Similarly, unscreened 60-year-olds who start screening at age 65 (scenario U60 | C@65) are predicted to lose 42\u201345 LY per 1000 individuals compared to a scenario where they would have begun screening at age 60 \u2013 a 20\u201322% loss in LYG from screening due to this disruption.\n\nSwitching the screening regimen from colonoscopy to FIT and short-term delays will cause only a modest reduction in the benefit of screening. For the 60-year-old cohort, switching from colonoscopy to annual FIT after the pandemic with an 18-month delay is expected to result in a loss of 9\u201311 LY per 1000 individuals, a 3\u20134% loss relative to a scenario with no change in screening regimen and no delays. Similarly, short-term delays are predicted to cause minimal decreases in the benefits of the screening program. A 3-month delay in colonoscopy screening results in a loss of 0\u20132 LY per 1000 individuals for the 60-year cohort (scenarios C60 | C3m), whereas a 9- or 18-month delay (C60 | C9m and C60 | C18m) is expected to result in a loss of 0\u20132 or 0\u20133 LY per 1000 individuals, respectively. The worst-case scenario of an 18-month pause starting in March 2020 (scenario C60 | C18m) resulted in a 0\u20131% loss of the benefit of screening.\n\nSeventy-year-olds lose fewer LY due to screening disruptions but can still be affected by the pandemic as they are at greater risk for CRC than younger age groups. When discontinuing screening after the pandemic, 70-year-olds are expected to lose 38\u201387 or 29\u201333 LY per 1000 individuals due to the pandemic if pursuing a colonoscopy (C70 | U) or FIT (F70 | U) screening regimen, respectively. Unscreened 70-year-olds who only come back to screening at age 75 (scenario U70 | C@75) are expected to lose 49\u201350 LY per 1000 individuals, a 39\u201343% reduction in LYG relative to a scenario where they would have received colonoscopy screening at age 70.\n\nSeventy-year-olds who were up-to-date with their screening and experienced short-term delays of up to 18 months can expect minimal loss of LY due to pandemic-induced CRC screening disruptions, even if they switch to FIT after the pandemic. Those who transitioned from colonoscopy to FIT screening at age 70 can expect a reduction of 5\u20137 LY per 1000 individuals even if a return to FIT screening was delayed by 18 months (scenario C70 | F18m). This reduction in benefit represents a 2\u20133% reduction in LYG of colonoscopy-only screening.\n\n### Low-sensitivity scenarios\n\nWhile colonoscopy sensitivity affects the overall benefit of screening, conditional on colonoscopy sensitivity, the loss of LY due to pandemic-induced scenarios is similar across sensitivity levels. Figure 2 compares LYG and LYL for high- and low-sensitivity scenarios. High-sensitivity scenarios are expected to yield higher LYG benefits than low-sensitivity scenarios, and the magnitude of this difference is higher for more intensive screening regimens. For 60-year-olds with a prior colonoscopy at age 50 who experience an 18-month delay during the pandemic (scenario C60 | C 18m), the benefit of screening is 240\u2013297 LYG per 1000 individuals under a high colonoscopy sensitivity scenario, whereas it is 217\u2013272 under a low colonoscopy sensitivity scenario.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85264/elife-85264-fig2-v1.jpg)\n\n**Figure 2.:** Notes: Each dot represents one scenario considered in this study. The horizontal axis displays the number of LYG estimated in that scenario under a high colonoscopy sensitivity scenario. The vertical axis shows the results for the same cohort under a low colonoscopy sensitivity scenario. If sensitivity did not affect the estimate, then all points would be on top of a 45-degree line. Different colors represent CRCSPIN and MISCAN models.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85264/elife-85264-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Notes: Each dot represents one scenario considered in this study. The horizontal axis displays the number of life-years lost due to disruptions (LYL) estimated in that scenario under a high colonoscopy sensitivity scenario. The vertical axis shows the results for the same cohort under a low colonoscopy sensitivity scenario. If sensitivity did not affect the estimate, then all points would be on top of a 45-degree line. Different colors represent CRCSPIN and MISCAN models.\n\nNevertheless, conditional on the sensitivity scenario, the effect of pandemic disruptions on LY lost is expected to be very similar for low-sensitivity scenarios. An 18-month delay in colonoscopy screening is expected to result in a loss of 0\u20133 LY per 1000 individuals for 60-year-olds assuming high sensitivity, whereas it is expected to result in a loss of 0\u20134 LY per 1000 individuals assuming low sensitivity.\n\n## Discussion\n\nModel-based screening cost-effectiveness analyses present estimates under guideline-concordant scenarios, but there are many reasons why real-world screening will not follow guidelines. Chief among them in 2020, the COVID-19 pandemic severely disrupted screening. Under those conditions, disparities in health outcomes can arise if disruptions are unevenly distributed in the population.\n\nOur results suggest that the COVID-19 pandemic will have an uneven effect on CRC outcomes depending on whether and how fast screening is resumed after the pandemic onset. Consider three cohorts with the same pre-pandemic screening regimen and behavior: 60-year-olds with a prior colonoscopy at age 50. Cohorts that experience short-term disruptions (e.g. 3\u201318 months) only experience a small loss of life due to short-term delays \u2013 up to 3 LY per 1000 individuals. Those who switch from colonoscopy to FIT screening are projected to experience a greater loss of life \u2013 from 9 to 11 to LY per 1000 individuals. If screening is only resumed at age 65 (e.g. age at Medicare enrollment) or abandoned, the loss of benefits from screening could be 3\u201311 LY per 1000 individuals (scenario C60 | C@65). Lastly, discontinuing screening after the pandemic is projected to cause a loss of 106\u2013124 LY per 1000 individuals, a decrease of 36\u201351% in the benefit of screening (scenario C60 | U). These results imply that the pandemic will become a disparity-widening mechanism if it differentially affects screening access and/or behavior across different population groups. These results also show that the pandemic is unlikely to substantially affect those whose screening is only interrupted momentarily.\n\nThese results highlight the potential implications of disruptions to preventative care due to loss of insurance following the pandemic. According to data from the Bureau of Labor Statistics Current Population Survey, more dramatic declines in the number employed during the COVID-19 pandemic were seen in Black, Asian American, and Hispanic groups (Gemelas et al., 2022). Moreover, data from the US Census Household Pulse Survey suggests that Black and Hispanic workers were not only more likely to be unemployed but were also more likely to be without unemployment insurance (Mar et al., 2022). These results provide important clinical insight on the projected impact of these populations which may guide future policy on the aftereffects of the pandemic. Those who were previously uninsured for long periods of time throughout the pandemic should resume CRC screening to mitigate the long-term effects projected in these simulations.\n\nThese results also add to the growing evidence of the implications of delayed CRC care following the COVID-19 pandemic. A microsimulation study based on a Canadian population explored scenarios of differing screening delays and transition periods due to attenuated screening volumes and found that a 6-month delay in primary screening could increase CRC incidence by 2200 cases and 960 more cancer deaths over a lifetime (Yong et al., 2021). A microsimulation paper based on a Chilean population illustrated similar results with respect to CRC incidence and mortality due to the screening backlog and strained patient care during the pandemic (Ward et al., 2021). Our results mirror these conclusions and provide new scenarios which consider the aftereffects of loss of healthcare insurance due to disparities magnified by the COVID-19 pandemic.\n\n### Limitations\n\nThis analysis presents a series of limitations. First, we do not present population-level estimates of reductions in benefits. While doing so could prove helpful, one would have to estimate how many people will be screened following each scenario we modeled. That would require individual-level data describing the distribution of delays and screening regimen switching in the population after the pandemic, which will not be available for many years. Instead of pursuing a population-level study, we conditioned our estimates on a discrete set of pre-specified disruption scenarios. This approach makes our study feasible but prevents us from making population-level predictions. Moreover, our approach does not account for potential correlation between risk factors and disruptions \u2013 we only provide estimates using models calibrated to represent cohorts with average risk.\n\nSecond, the scenarios presented in this analysis represent only a subset of the real-world changes in screening due to the pandemic. Even in the absence of a pandemic, individuals may switch from colonoscopy to FIT, and return to colonoscopy screening. To keep this analysis tractable, we restrict the variations considered in this paper to one switch from colonoscopy to FIT. Further, we only consider changes in screening regimens immediately following the COVID-19 pandemic. Third, this analysis only considers uncertainty stemming from structural differences between models and two scenarios of test characteristics and does not evaluate parameter or sampling uncertainty. Our estimates represent the expected value of estimates conditional on scenarios across an average-risk cohort drawn from the general US population.\n\nFinally, this paper identifies the effect of disruptions on the effectiveness of screening interventions but does not explicitly identify policy interventions or prioritization rules to amend those inequities. Future research could use extended cost-effectiveness analysis to evaluate CRC screening interventions in the context of healthcare disparities (Asaria et al., 2016; Richard et al., 2020).\n\n### Conclusion\n\nThis study quantified the potential effect of disruptions to colonoscopy screening and demonstrated that unequal recovery of CRC screening following the pandemic will predictably widen disparities in CRC outcomes. The COVID-19 pandemic will severely reduce the benefits of CRC screening if it causes screening discontinuation or long-term (e.g. 5 year) delays. Short-term delays of 3\u201318 months and regime switching from colonoscopy to FIT are not expected to have significant consequences.\n",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "99984cca-b6ec-4fcd-9a0a-8113e3fe6d35",
+      "submission_id": "8026c516-433f-48b9-b8a1-feced882a7cd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eduardo L Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85264.sa0](https://doi.org/10.7554/eLife.85264.sa0)\n\nThis important study uses two well-established colorectal cancer models to estimate the potential impact of disruptions in screening caused by the COVID-19 pandemic. By dividing the population into separate cohorts based on age and pre-pandemic screening status, the authors provide convincing evidence for the adverse impact of delays in screening, switching regimens, and screening discontinuation. The finding that discontinuation has a much greater impact on screening-associated gains in life expectancy than shorter-term delays or switching of regimens suggests that access-related barriers to screening resumption may lead to the worsening of current disparities.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Eduardo L Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85264.sa1](https://doi.org/10.7554/eLife.85264.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Unequal Recovery in Colorectal Cancer Screening Following the COVID-19 Pandemic: A Comparative Microsimulation Analysis\" for consideration by eLife. Two peer reviewers have reviewed your article, and I have overseen the evaluation in the dual role of Reviewing Editor and Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Evan Myers (Reviewer #1).\n\nEssential revisions:\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another and with the editors. The decision was reached by consensus. What follows below is an edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you amend or expand the text to clarify the narrative accordingly.\n\nReviewer #1 (Recommendations for the authors):\n\nA clearly presented paper with compelling and intuitive (this is a good thing!) findings. I have only a few questions/suggestions:\n\n1) LYG is clearly the appropriate primary outcome, but it would be of interest (and helpful to some policymakers) to have estimates of net/% changes in cancer cases and deaths.\n\n2) Lines 304-311: I agree with this, but wouldn't it be possible to at least provide bounds based on the current age structure? Even crude weighted averages would be potentially compelling.\n\n3) Lines 289-291: How would this be implemented? Would Medicare prioritize 65-year-olds with no previous screening? I agree that this is obviously the priority population, but how it might work is worth expanding a bit.\n\n4) Finally, although beyond the scope of the paper, some discussion of the potential use of methods of distributional and/or extended cost-effectiveness analysis to address some of the equity issues raised here would be appropriate.\n\nReviewer #2 (General comments and recommendations):\n\nOverall, the paper looks ok methodologically, and it addresses an important issue. The underlying models are not well described, but they have been published elsewhere and I assume extensively validated by being part of CISNET. The main shortcoming is that the effect of the pandemic is purely based on assumptions, rather than data \u2013 it would have been better if they had collected some information about how long patients put off screening during the pandemic (since it has been a few years already, this should not be difficult). But seeing that they've used a range of different assumptions, their approach seems acceptable.\n\nThe authors assume that short-term delays are a fixed duration for all patients, but in practice, this might be variable \u2013 e.g. perhaps patients with risk factors might be prioritised, or perhaps those with some clinical symptoms? Or alternatively, patients with good healthcare access (who might also be at lower risk) might have shorter durations. This is an area where collecting some data might be helpful. But again, this is a limitation rather than a fatal flaw \u2013 I think the paper as it stands is a valuable contribution.\n\nEssential points from the post-review interaction between reviewers:\n\nRev 1: I agree with Rev 2's thoughts, which I think align with mine. The issue of prioritization that Rev 2 raises really needs to be discussed more--it's not at all clear to me how that would work in most US settings. It was a basic issue DURING the pandemic for things like elective surgery, and how systems could be put in place to equitably and efficiently handle it is a challenge. The other thing that would seem to be relatively straightforward to do would be to put some ranges around the potential impact given the current population age distribution--just take the model results for the different cohorts under different scenarios and estimate a weighted average given the age distribution of the US population in 2019-2020.\n\nRev 2: Agree with Rev 1's overall appraisal (good paper with some limitations). Also, Rev 1's point about prioritisation is an important one, both (i) the descriptive question (what kind of prioritisation did happen during the pandemic?) and (ii) the normative question (what kind of prioritisation SHOULD be put in place, to achieve efficient and equitable outcomes with reduced resources?) While the authors don't have the data to answer it precisely, it is an issue that deserves a bit more attention/discussion.\n",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "300e1586-11b3-4bf3-9787-6539f4ae8101",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C1",
+      "claim": "The COVID-19 pandemic resulted in over 1 million COVID-19 deaths in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the over 1 million COVID-19 deaths in the United States (Johns Hopkins Univerity & Medicine Coronavirus Resource Center, 2022), the pandemic has also contributed to steep declines in cancer screening, most notably in the early phases of the pandemic due to government-mandated shutdowns of non-emergency medical services (Gupta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Johns Hopkins University & Medicine Coronavirus Resource Center, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "9f0fdadc-e43d-4435-acad-0bab1b28b61c",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C2",
+      "claim": "The COVID-19 pandemic contributed to steep declines in cancer screening, most notably in the early phases of the pandemic due to government-mandated shutdowns of non-emergency medical services.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the over 1 million COVID-19 deaths in the United States (Johns Hopkins Univerity & Medicine Coronavirus Resource Center, 2022), the pandemic has also contributed to steep declines in cancer screening, most notably in the early phases of the pandemic due to government-mandated shutdowns of non-emergency medical services (Gupta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gupta et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "59b46d31-f213-42aa-9adf-c7db39f79d94",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C3",
+      "claim": "Colorectal cancer (CRC) screening decreased by 85% in the United States during the early phase of the pandemic, from March through April 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that colorectal cancer (CRC) screening decreased by 85% in the United States during the early phase of the pandemic, from March through April 2020 (London et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to London et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "79042c89-fd26-41e3-a5ca-7e4569c0c507",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C4",
+      "claim": "The pandemic continues to affect CRC screening and diagnosis through staff shortages that reduce capacity at gastroenterology clinics and patient hesitancy to seek care.",
+      "claim_type": "EXPLICIT",
+      "source": "The pandemic continues to affect CRC screening and diagnosis through staff shortages that reduce capacity at gastroenterology clinics and patient hesitancy to seek care (Wilensky, 2022; Del Vecchio Blanco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wilensky, 2022 and Del Vecchio Blanco et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "cc7f3ae5-d99d-4142-a06b-bca188c93fb3",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C5",
+      "claim": "Despite cancer screening reopening efforts, CRC screening has not yet returned to pre-pandemic levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite cancer screening reopening efforts, CRC screening has not yet returned to pre-pandemic levels (Ong, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ong, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "714a35bf-f6ed-4c30-b407-232f47946702",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C6",
+      "claim": "CRC remains the second-leading cause of cancer deaths in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "CRC remains the second-leading cause of cancer deaths in the United States, with approximately 153,020 new cases and 52,550 deaths estimated in the year 2023 (Siegel et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Siegel et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "c86b7f5c-68b2-4aca-b145-07d1d27a49b1",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C7",
+      "claim": "Approximately 153,020 new CRC cases and 52,550 deaths are estimated in the United States in the year 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "CRC remains the second-leading cause of cancer deaths in the United States, with approximately 153,020 new cases and 52,550 deaths estimated in the year 2023 (Siegel et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Siegel et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "ccc6a89e-c64b-49bb-8c18-0183dde0f895",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C8",
+      "claim": "There is clear evidence that screening has a major impact on reducing the burden of CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "There is clear evidence that screening has a major impact on reducing the burden of CRC (Edwards et al., 2010; Zauber et al., 2012) and that it is cost-effective (Knudsen et al., 2021; Lansdorp-Vogelaar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Edwards et al., 2010 and Zauber et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "898ceebf-b3f8-48b4-bc5b-64f53cc20fbb",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C9",
+      "claim": "CRC screening is cost-effective.",
+      "claim_type": "EXPLICIT",
+      "source": "There is clear evidence that screening has a major impact on reducing the burden of CRC (Edwards et al., 2010; Zauber et al., 2012) and that it is cost-effective (Knudsen et al., 2021; Lansdorp-Vogelaar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Knudsen et al., 2021 and Lansdorp-Vogelaar et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "3ce6958e-4a1f-4941-a0e8-9030d1014117",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C10",
+      "claim": "The current United States Preventive Task Force (USPSTF) report recommends multiple screening options, including annual fecal immunochemical tests (FIT) and colonoscopy every 10 years for average-risk individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The current United States Preventive Task Force (USPSTF) report recommends multiple screening options, including annual fecal immunochemical tests (FIT) and colonoscopy every 10 years for average-risk individuals (Davidson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Davidson et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "1ab18d81-663b-45f2-bc8b-1721d43f110a",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C11",
+      "claim": "CRC screening uptake was of concern even before the pandemic, with CRC screening rates well below the goal of 70.5% for Healthy People 2020 and the National Colorectal Cancer Roundtable goal of 80% by 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CRC screening uptake was of concern even before the pandemic, with CRC screening rates well below the goal of 70.5% for Healthy People 2020 and the National Colorectal Cancer Roundtable goal of 80% by 2018 (Shapiro et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Shapiro et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "bafa2fad-308a-46ba-858e-dd403a592765",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C12",
+      "claim": "Low rates of CRC screening have been exacerbated by the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Low rates of CRC screening have been exacerbated by the COVID-19 pandemic, and delays in screening will result in delays in diagnosis, stage progression, and increased CRC mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference from the context of pandemic disruptions to screening.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "9fc37e5b-7a67-4deb-81e9-32a5e422b532",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C13",
+      "claim": "Delays in screening will result in delays in diagnosis, stage progression, and increased CRC mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Low rates of CRC screening have been exacerbated by the COVID-19 pandemic, and delays in screening will result in delays in diagnosis, stage progression, and increased CRC mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the relationship between screening delays and cancer outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "1019bfd1-e961-4a4e-904e-86c1b97045b3",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C14",
+      "claim": "The burden of unemployment and associated loss of access to healthcare varies across different racial and ethnic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The burden of unemployment and associated loss of access to healthcare varies across different racial and ethnic groups (Marcondes et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Marcondes et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "e7e11b5c-4786-4ab9-b5dc-ce8cea55ff88",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C15",
+      "claim": "The pandemic may contribute to widening disparities in cancer outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this, the pandemic may contribute to widening disparities in cancer outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the unequal burden of unemployment across racial and ethnic groups.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "f7a6ad60-f519-4132-9607-d3acf9a02c6d",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C16",
+      "claim": "Unemployment was adversely associated with being up-to-date with screening, with only 16.7% of unemployed individuals participating in recent CRC screenings, only 48.5% of whom were up-to-date with CRC screening.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent analysis using National Health Interview Survey (NHIS) data postulated that unemployment was adversely associated with being up-to-date with screening, with only 16.7% of unemployed individuals participating in recent CRC screenings, only 48.5% of whom were up-to-date with CRC screening (Fedewa et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fedewa et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "0a0ed4e8-9d3b-4131-ba0d-21912e6796b3",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C17",
+      "claim": "This study uses two independently developed microsimulation models of CRC, CRC-SPIN and MISCAN-Colon.",
+      "claim_type": "EXPLICIT",
+      "source": "This paper uses two independently developed microsimulation models of CRC, CRC-SPIN and MISCAN-Colon, to estimate the effects of pandemic-induced disruptions in colonoscopy screening for eight pre-pandemic average-CRC risk population cohorts in the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "e313df1e-4b0e-4dd4-ba19-f117383622c0",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C18",
+      "claim": "CRC-SPIN and MISCAN-Colon models are part of the National Cancer Institute's CISNET consortium.",
+      "claim_type": "EXPLICIT",
+      "source": "CRC-SPIN and MISCAN-Colon models are part of the National Cancer Institute's CISNET consortium and describe the natural history of CRC in an unscreened population based on the adenoma-carcinoma sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "948be676-07d8-40c0-a818-04663c1d89e2",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C19",
+      "claim": "CRC-SPIN and MISCAN-Colon models describe the natural history of CRC in an unscreened population based on the adenoma-carcinoma sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "CRC-SPIN and MISCAN-Colon models are part of the National Cancer Institute's CISNET consortium and describe the natural history of CRC in an unscreened population based on the adenoma-carcinoma sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "dbff15b1-2480-408e-bde3-adb6b51b280e",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C20",
+      "claim": "Detailed descriptions of CRC-SPIN and MISCAN-Colon models and underlying assumptions may be found in Knudsen et al., 2021; Loeve et al., 1999; Rutter et al., 2019, van Hees et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed descriptions of these models and underlying assumptions may be found elsewhere (Knudsen et al., 2021; Loeve et al., 1999; Rutter et al., 2019, van Hees et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "bcedda9a-84cb-43a9-a8a6-357747d90766",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C21",
+      "claim": "The study simulated 10 million individuals within each cohort to reduce the stochastic variability in runs and to ensure sufficient precision in estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated 10 million individuals within each cohort to reduce the stochastic variability in our runs and to ensure sufficient precision in our estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "c89a8a6a-a35e-4cc9-9f02-a657e5a3a0d3",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C22",
+      "claim": "Short-term delays in screening of 3\u201318 months are predicted to result in minor life-years loss.",
+      "claim_type": "EXPLICIT",
+      "source": "While short-term delays in screening of 3\u201318 months are predicted to result in minor life-years loss, discontinuing screening could result in much more significant reductions in the expected benefits of screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the simulation results presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "315d17fa-b860-440a-8759-0508e06583bf",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C23",
+      "claim": "Discontinuing screening could result in much more significant reductions in the expected benefits of screening compared to short-term delays.",
+      "claim_type": "EXPLICIT",
+      "source": "While short-term delays in screening of 3\u201318 months are predicted to result in minor life-years loss, discontinuing screening could result in much more significant reductions in the expected benefits of screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the simulation results presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "a3f71962-d2cc-4e11-a72e-87fc3a6d43d4",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C24",
+      "claim": "Unequal recovery of screening following the pandemic can widen disparities in CRC outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that unequal recovery of screening following the pandemic can widen disparities in CRC outcomes and emphasize the importance of ensuring equitable recovery to screening following the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results showing differential impacts of disruptions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "4ea2677e-c39f-42bd-b228-6b98f4276b39",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C25",
+      "claim": "For the 50-year-old cohort, postponing screening until age 65 (scenario U50 | C@65) is expected to lose 104\u2013127 LY per 1000 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This cohort (scenario U50 | C@65) is expected to lose 104\u2013127 LY per 1000 individuals \u2013 a 38\u201342% loss in LYG compared to a no-disruption scenario where they start screening at age 50 (Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "e5619f77-1be7-4174-831a-8ed97437b3f3",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C26",
+      "claim": "Postponing screening until age 65 for 50-year-olds represents a 38\u201342% loss in LYG compared to a no-disruption scenario where they start screening at age 50.",
+      "claim_type": "EXPLICIT",
+      "source": "This cohort (scenario U50 | C@65) is expected to lose 104\u2013127 LY per 1000 individuals \u2013 a 38\u201342% loss in LYG compared to a no-disruption scenario where they start screening at age 50 (Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "72f913b8-f45a-49eb-9ca2-eec8b5a4a5c9",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C27",
+      "claim": "The cohort postponing screening until age 65 would be 1.3\u20131.9 times more likely to have CRC over their lifetime compared to a cohort that started screening at age 50.",
+      "claim_type": "EXPLICIT",
+      "source": "This cohort would be 1.3\u20131.9 times more likely to have CRC over their lifetime (Supplementary file 2) and 1.6\u20132.0 times more likely to die with CRC (Supplementary file 3) compared to a cohort that started screening at age 50.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "0ea1aca8-7714-4540-9148-2fd6e1986306",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C28",
+      "claim": "The cohort postponing screening until age 65 would be 1.6\u20132.0 times more likely to die with CRC compared to a cohort that started screening at age 50.",
+      "claim_type": "EXPLICIT",
+      "source": "This cohort would be 1.3\u20131.9 times more likely to have CRC over their lifetime (Supplementary file 2) and 1.6\u20132.0 times more likely to die with CRC (Supplementary file 3) compared to a cohort that started screening at age 50.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "fd57488a-0b6f-4a3a-9db2-69c215526166",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C29",
+      "claim": "50-year-olds with colonoscopy screening delayed by 18 months (scenario U50 | C18m) are expected to experience a loss of 6\u20137 LY per 1000 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 50-year-olds with colonoscopy screening delayed by 18 months (scenario U50 | C18m) are expected to experience a loss of 6\u20137 LY per 1000 individuals, and a 2% loss in LYG from screening compared to a no-disruption scenario.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "88ac26ca-f424-412d-b3b0-e732b88cbd8d",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C30",
+      "claim": "50-year-olds with colonoscopy screening delayed by 18 months experience a 2% loss in LYG from screening compared to a no-disruption scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 50-year-olds with colonoscopy screening delayed by 18 months (scenario U50 | C18m) are expected to experience a loss of 6\u20137 LY per 1000 individuals, and a 2% loss in LYG from screening compared to a no-disruption scenario.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "44d3d09b-4fcf-4a7c-8e3b-0d9cc77fdd26",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C31",
+      "claim": "60-year-olds who started screening at age 50 and stopped after the pandemic are expected to lose 106\u2013124 LY per 1000 individuals if pursuing a colonoscopy screening regimen (C60 | U).",
+      "claim_type": "EXPLICIT",
+      "source": "Those who started screening at age 50 and stopped after the pandemic are expected to lose 106\u2013124 or 92\u2013111 LY per 1000 individuals if pursuing a colonoscopy (C60 | U) or a FIT (F60 | U) screening regimen, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "7d0db242-4777-43a3-8b25-c8b15cd1e7b5",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C32",
+      "claim": "60-year-olds who started screening at age 50 and stopped after the pandemic are expected to lose 92\u2013111 LY per 1000 individuals if pursuing a FIT screening regimen (F60 | U).",
+      "claim_type": "EXPLICIT",
+      "source": "Those who started screening at age 50 and stopped after the pandemic are expected to lose 106\u2013124 or 92\u2013111 LY per 1000 individuals if pursuing a colonoscopy (C60 | U) or a FIT (F60 | U) screening regimen, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "7e172e45-1d75-4825-85ab-18872ef110a5",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C33",
+      "claim": "60-year-olds who were semi-adherent to FIT screening before the pandemic and discontinued screening (f60 | U) lose 143 to 149 LY per 1000 individuals, or 58\u201369% of the benefit of screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Those who were semi-adherent to FIT screening before the pandemic and discontinued screening (f60 | U) lose even more LY \u2013 from 143 to 149 LY per 1000 individuals, or 58\u201369% of the benefit of screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "74f63ae7-71d2-4eb3-bddd-8889eee72ac3",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C34",
+      "claim": "Unscreened 60-year-olds who start screening at age 65 (scenario U60 | C@65) are predicted to lose 42\u201345 LY per 1000 individuals compared to a scenario where they would have begun screening at age 60.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, unscreened 60-year-olds who start screening at age 65 (scenario U60 | C@65) are predicted to lose 42\u201345 LY per 1000 individuals compared to a scenario where they would have begun screening at age 60 \u2013 a 20\u201322% loss in LYG from screening due to this disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "ca4a80bc-eeb1-4c7e-9313-3945c1510986",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C35",
+      "claim": "Unscreened 60-year-olds who start screening at age 65 experience a 20\u201322% loss in LYG from screening due to this disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, unscreened 60-year-olds who start screening at age 65 (scenario U60 | C@65) are predicted to lose 42\u201345 LY per 1000 individuals compared to a scenario where they would have begun screening at age 60 \u2013 a 20\u201322% loss in LYG from screening due to this disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "c5922fe1-1a1f-4473-bd2e-b81bcc95e9ee",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C36",
+      "claim": "For the 60-year-old cohort, switching from colonoscopy to annual FIT after the pandemic with an 18-month delay is expected to result in a loss of 9\u201311 LY per 1000 individuals, a 3\u20134% loss relative to a scenario with no change in screening regimen and no delays.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 60-year-old cohort, switching from colonoscopy to annual FIT after the pandemic with an 18-month delay is expected to result in a loss of 9\u201311 LY per 1000 individuals, a 3\u20134% loss relative to a scenario with no change in screening regimen and no delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "a6ea011f-584c-4050-9426-ed5a938401c6",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C37",
+      "claim": "A 3-month delay in colonoscopy screening results in a loss of 0\u20132 LY per 1000 individuals for the 60-year cohort (scenarios C60 | C3m).",
+      "claim_type": "EXPLICIT",
+      "source": "A 3-month delay in colonoscopy screening results in a loss of 0\u20132 LY per 1000 individuals for the 60-year cohort (scenarios C60 | C3m), whereas a 9- or 18-month delay (C60 | C9m and C60 | C18m) is expected to result in a loss of 0\u20132 or 0\u20133 LY per 1000 individuals, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "391fb4ed-a16b-4a86-b713-597597c1ac05",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C38",
+      "claim": "A 9-month delay in colonoscopy screening is expected to result in a loss of 0\u20132 LY per 1000 individuals for the 60-year cohort (C60 | C9m).",
+      "claim_type": "EXPLICIT",
+      "source": "A 3-month delay in colonoscopy screening results in a loss of 0\u20132 LY per 1000 individuals for the 60-year cohort (scenarios C60 | C3m), whereas a 9- or 18-month delay (C60 | C9m and C60 | C18m) is expected to result in a loss of 0\u20132 or 0\u20133 LY per 1000 individuals, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "3a26208b-aded-4075-b996-2ee5f6af6e74",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C39",
+      "claim": "An 18-month delay in colonoscopy screening is expected to result in a loss of 0\u20133 LY per 1000 individuals for the 60-year cohort (C60 | C18m).",
+      "claim_type": "EXPLICIT",
+      "source": "A 3-month delay in colonoscopy screening results in a loss of 0\u20132 LY per 1000 individuals for the 60-year cohort (scenarios C60 | C3m), whereas a 9- or 18-month delay (C60 | C9m and C60 | C18m) is expected to result in a loss of 0\u20132 or 0\u20133 LY per 1000 individuals, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "b928ee6b-153e-4f06-bcc1-99e46dea140e",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C40",
+      "claim": "The worst-case scenario of an 18-month pause starting in March 2020 (scenario C60 | C18m) resulted in a 0\u20131% loss of the benefit of screening for 60-year-olds.",
+      "claim_type": "EXPLICIT",
+      "source": "The worst-case scenario of an 18-month pause starting in March 2020 (scenario C60 | C18m) resulted in a 0\u20131% loss of the benefit of screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "214883f6-d138-46f4-890e-0e671f70d833",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C41",
+      "claim": "When discontinuing screening after the pandemic, 70-year-olds are expected to lose 38\u201387 LY per 1000 individuals if pursuing a colonoscopy screening regimen (C70 | U).",
+      "claim_type": "EXPLICIT",
+      "source": "When discontinuing screening after the pandemic, 70-year-olds are expected to lose 38\u201387 or 29\u201333 LY per 1000 individuals due to the pandemic if pursuing a colonoscopy (C70 | U) or FIT (F70 | U) screening regimen, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "90ccee1b-f42d-411d-bf1d-7f11248d7ba0",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C42",
+      "claim": "When discontinuing screening after the pandemic, 70-year-olds are expected to lose 29\u201333 LY per 1000 individuals if pursuing a FIT screening regimen (F70 | U).",
+      "claim_type": "EXPLICIT",
+      "source": "When discontinuing screening after the pandemic, 70-year-olds are expected to lose 38\u201387 or 29\u201333 LY per 1000 individuals due to the pandemic if pursuing a colonoscopy (C70 | U) or FIT (F70 | U) screening regimen, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "32017a54-0ddc-493a-bb3d-8ccdb72473d6",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C43",
+      "claim": "Unscreened 70-year-olds who only come back to screening at age 75 (scenario U70 | C@75) are expected to lose 49\u201350 LY per 1000 individuals, a 39\u201343% reduction in LYG relative to a scenario where they would have received colonoscopy screening at age 70.",
+      "claim_type": "EXPLICIT",
+      "source": "Unscreened 70-year-olds who only come back to screening at age 75 (scenario U70 | C@75) are expected to lose 49\u201350 LY per 1000 individuals, a 39\u201343% reduction in LYG relative to a scenario where they would have received colonoscopy screening at age 70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "d14564d2-95d7-44e9-b9b7-8cc7b8b11354",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C44",
+      "claim": "70-year-olds who transitioned from colonoscopy to FIT screening at age 70 can expect a reduction of 5\u20137 LY per 1000 individuals even if a return to FIT screening was delayed by 18 months (scenario C70 | F18m).",
+      "claim_type": "EXPLICIT",
+      "source": "Those who transitioned from colonoscopy to FIT screening at age 70 can expect a reduction of 5\u20137 LY per 1000 individuals even if a return to FIT screening was delayed by 18 months (scenario C70 | F18m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "db9340f5-e689-4273-a857-f406057f18f5",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C45",
+      "claim": "The reduction in benefit from transitioning from colonoscopy to FIT screening at age 70 with an 18-month delay represents a 2\u20133% reduction in LYG of colonoscopy-only screening.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction in benefit represents a 2\u20133% reduction in LYG of colonoscopy-only screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "50f00941-71fb-4ed4-bbde-84eb314cee17",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C46",
+      "claim": "High-sensitivity scenarios are expected to yield higher LYG benefits than low-sensitivity scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "High-sensitivity scenarios are expected to yield higher LYG benefits than low-sensitivity scenarios, and the magnitude of this difference is higher for more intensive screening regimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of simulation results across sensitivity scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "419f4691-8705-45be-956b-d5d4875a8e96",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C47",
+      "claim": "The magnitude of the difference in LYG between high- and low-sensitivity scenarios is higher for more intensive screening regimens.",
+      "claim_type": "EXPLICIT",
+      "source": "High-sensitivity scenarios are expected to yield higher LYG benefits than low-sensitivity scenarios, and the magnitude of this difference is higher for more intensive screening regimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of simulation results across sensitivity scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "d5608054-b934-4824-a16a-f3aefac98b56",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C48",
+      "claim": "For 60-year-olds with a prior colonoscopy at age 50 who experience an 18-month delay during the pandemic (scenario C60 | C 18m), the benefit of screening is 240\u2013297 LYG per 1000 individuals under a high colonoscopy sensitivity scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "For 60-year-olds with a prior colonoscopy at age 50 who experience an 18-month delay during the pandemic (scenario C60 | C 18m), the benefit of screening is 240\u2013297 LYG per 1000 individuals under a high colonoscopy sensitivity scenario, whereas it is 217\u2013272 under a low colonoscopy sensitivity scenario.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results comparing sensitivity scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "bafb8f33-fb67-422b-9904-d2a575ed7181",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C49",
+      "claim": "For 60-year-olds with a prior colonoscopy at age 50 who experience an 18-month delay during the pandemic (scenario C60 | C 18m), the benefit of screening is 217\u2013272 LYG per 1000 individuals under a low colonoscopy sensitivity scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "For 60-year-olds with a prior colonoscopy at age 50 who experience an 18-month delay during the pandemic (scenario C60 | C 18m), the benefit of screening is 240\u2013297 LYG per 1000 individuals under a high colonoscopy sensitivity scenario, whereas it is 217\u2013272 under a low colonoscopy sensitivity scenario.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results comparing sensitivity scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "f0929360-63b2-4764-bfb4-17a2f287db92",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C50",
+      "claim": "Conditional on the sensitivity scenario, the effect of pandemic disruptions on LY lost is expected to be very similar for low-sensitivity scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, conditional on the sensitivity scenario, the effect of pandemic disruptions on LY lost is expected to be very similar for low-sensitivity scenarios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of simulation results across sensitivity scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "30d3a3a4-8dda-43b8-bcd0-141fabb0b6cd",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C51",
+      "claim": "An 18-month delay in colonoscopy screening is expected to result in a loss of 0\u20133 LY per 1000 individuals for 60-year-olds assuming high sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "An 18-month delay in colonoscopy screening is expected to result in a loss of 0\u20133 LY per 1000 individuals for 60-year-olds assuming high sensitivity, whereas it is expected to result in a loss of 0\u20134 LY per 1000 individuals assuming low sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "2f566267-569d-49d2-b838-87e806abf9c3",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C52",
+      "claim": "An 18-month delay in colonoscopy screening is expected to result in a loss of 0\u20134 LY per 1000 individuals for 60-year-olds assuming low sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "An 18-month delay in colonoscopy screening is expected to result in a loss of 0\u20133 LY per 1000 individuals for 60-year-olds assuming high sensitivity, whereas it is expected to result in a loss of 0\u20134 LY per 1000 individuals assuming low sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "6f455360-606d-4d25-be15-607b793687ef",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C53",
+      "claim": "The COVID-19 pandemic will have an uneven effect on CRC outcomes depending on whether and how fast screening is resumed after the pandemic onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the COVID-19 pandemic will have an uneven effect on CRC outcomes depending on whether and how fast screening is resumed after the pandemic onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results showing differential impacts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "4f48d984-b173-4e89-82f1-6d74e9bf13e1",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C54",
+      "claim": "The pandemic will become a disparity-widening mechanism if it differentially affects screening access and/or behavior across different population groups.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply that the pandemic will become a disparity-widening mechanism if it differentially affects screening access and/or behavior across different population groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "dcb47079-0aed-4074-b52f-4f458800502b",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C55",
+      "claim": "The pandemic is unlikely to substantially affect those whose screening is only interrupted momentarily.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also show that the pandemic is unlikely to substantially affect those whose screening is only interrupted momentarily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results showing minimal impact of short-term delays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "8590333b-b449-4d91-b665-6eae84219910",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C56",
+      "claim": "More dramatic declines in the number employed during the COVID-19 pandemic were seen in Black, Asian American, and Hispanic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "According to data from the Bureau of Labor Statistics Current Population Survey, more dramatic declines in the number employed during the COVID-19 pandemic were seen in Black, Asian American, and Hispanic groups (Gemelas et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gemelas et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "3bdbd661-b952-411b-b73a-dfbde83fd715",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C57",
+      "claim": "Black and Hispanic workers were not only more likely to be unemployed but were also more likely to be without unemployment insurance during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, data from the US Census Household Pulse Survey suggests that Black and Hispanic workers were not only more likely to be unemployed but were also more likely to be without unemployment insurance (Mar et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mar et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "a05f6ab0-ed79-4530-baf9-8d3e9727808a",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C58",
+      "claim": "A microsimulation study based on a Canadian population found that a 6-month delay in primary screening could increase CRC incidence by 2200 cases and 960 more cancer deaths over a lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "A microsimulation study based on a Canadian population explored scenarios of differing screening delays and transition periods due to attenuated screening volumes and found that a 6-month delay in primary screening could increase CRC incidence by 2200 cases and 960 more cancer deaths over a lifetime (Yong et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yong et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "282cd053-31ac-4773-8907-3b307ad08b1a",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C59",
+      "claim": "A microsimulation paper based on a Chilean population illustrated similar results with respect to CRC incidence and mortality due to the screening backlog and strained patient care during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "A microsimulation paper based on a Chilean population illustrated similar results with respect to CRC incidence and mortality due to the screening backlog and strained patient care during the pandemic (Ward et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ward et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "eac6c508-4090-4915-ba1e-2d208ffdecce",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C60",
+      "claim": "The study does not present population-level estimates of reductions in benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we do not present population-level estimates of reductions in benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the limitations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "86914fc5-fbf6-4da6-9cca-8b4c4a0ae2c1",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C61",
+      "claim": "The approach of conditioning estimates on a discrete set of pre-specified disruption scenarios makes the study feasible but prevents making population-level predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of pursuing a population-level study, we conditioned our estimates on a discrete set of pre-specified disruption scenarios. This approach makes our study feasible but prevents us from making population-level predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the limitations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "1bec379d-026d-44e9-bb83-b380cd397af2",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C62",
+      "claim": "The study approach does not account for potential correlation between risk factors and disruptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our approach does not account for potential correlation between risk factors and disruptions \u2013 we only provide estimates using models calibrated to represent cohorts with average risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the limitations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "7f316ea2-e799-4616-9997-d8323d3e761b",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C63",
+      "claim": "The scenarios presented in this analysis represent only a subset of the real-world changes in screening due to the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the scenarios presented in this analysis represent only a subset of the real-world changes in screening due to the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the limitations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "4b1f3459-29eb-4d92-8bda-2eb9ffede352",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C64",
+      "claim": "The analysis only considers changes in screening regimens immediately following the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we only consider changes in screening regimens immediately following the COVID-19 pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the limitations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "10595ce6-5b8a-4110-8264-25c6b48dc82c",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C65",
+      "claim": "This analysis only considers uncertainty stemming from structural differences between models and two scenarios of test characteristics and does not evaluate parameter or sampling uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, this analysis only considers uncertainty stemming from structural differences between models and two scenarios of test characteristics and does not evaluate parameter or sampling uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the limitations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "5ba6e489-d589-4a16-bb38-2034fc487af7",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C66",
+      "claim": "The estimates represent the expected value of estimates conditional on scenarios across an average-risk cohort drawn from the general US population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates represent the expected value of estimates conditional on scenarios across an average-risk cohort drawn from the general US population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the limitations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "0b032518-4363-40de-9a4e-ee1a175a8f82",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C67",
+      "claim": "This paper identifies the effect of disruptions on the effectiveness of screening interventions but does not explicitly identify policy interventions or prioritization rules to amend those inequities.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, this paper identifies the effect of disruptions on the effectiveness of screening interventions but does not explicitly identify policy interventions or prioritization rules to amend those inequities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the limitations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "7aa87613-1b38-40fd-8cbf-87c4de94916e",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C68",
+      "claim": "Unequal recovery of CRC screening following the pandemic will predictably widen disparities in CRC outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This study quantified the potential effect of disruptions to colonoscopy screening and demonstrated that unequal recovery of CRC screening following the pandemic will predictably widen disparities in CRC outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "c49ed887-eba8-4c51-abf8-2306a60ee730",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C69",
+      "claim": "The COVID-19 pandemic will severely reduce the benefits of CRC screening if it causes screening discontinuation or long-term (e.g. 5 year) delays.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 pandemic will severely reduce the benefits of CRC screening if it causes screening discontinuation or long-term (e.g. 5 year) delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "d02aa1cb-bb89-4d95-9f77-b90d3a8d2b1f",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C70",
+      "claim": "Short-term delays of 3\u201318 months and regime switching from colonoscopy to FIT are not expected to have significant consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-term delays of 3\u201318 months and regime switching from colonoscopy to FIT are not expected to have significant consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "2bdf01f5-cee1-4baa-94ae-017a03cebf9e",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C71",
+      "claim": "During the pandemic some patients switched from colonoscopy to FIT to reduce the need for in-person endoscopy procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that during the pandemic some patients switched from colonoscopy to FIT (Fedewa et al., 2022) to reduce the need for in-person endoscopy procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fedewa et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "4474fcd0-4fa6-4441-bdde-a9ea4501d318",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C72",
+      "claim": "Individuals with an adenoma detected undergo colonoscopic surveillance according to the Multi-Society Task Force (MSTF) guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that individuals with an adenoma detected undergo colonoscopic surveillance according to the Multi-Society Task Force (MSTF) guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "1c26423a-3795-4d2d-889d-6a59699b7f3e",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C73",
+      "claim": "Persons in whom adenoma(s) have been detected remain on surveillance until age 85, provided that no adenomas are detected at the last surveillance colonoscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that persons in whom adenoma(s) have been detected remain on surveillance until age 85, provided that no adenomas are detected at the last surveillance colonoscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "e713c2d2-5c17-478a-8e1b-de8e57f8612e",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C74",
+      "claim": "Loss of life due to screening disruptions was the largest for cohorts with severe disruptions after the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of life due to screening disruptions was the largest for cohorts with severe disruptions after the pandemic (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "7ffffaf7-451c-4d6c-b7df-067bc698ebee",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C75",
+      "claim": "Aside from not receiving any screening, the worst-case scenario for the 50-year-old cohort was to postpone screening until age 65 when they become Medicare eligible.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from not receiving any screening, the worst-case scenario for the 50-year-old cohort was to postpone screening until age 65 when they become Medicare eligible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of simulation results across scenarios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "5b2b8d1e-d605-49c8-8e74-6913b2d20b0d",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C76",
+      "claim": "Cohorts that experience short-term disruptions (e.g. 3\u201318 months) only experience a small loss of life due to short-term delays \u2013 up to 3 LY per 1000 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohorts that experience short-term disruptions (e.g. 3\u201318 months) only experience a small loss of life due to short-term delays \u2013 up to 3 LY per 1000 individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "681801f7-ac57-44c5-bf48-b308ddc510b8",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C77",
+      "claim": "60-year-olds who switch from colonoscopy to FIT screening are projected to experience a loss of 9 to 11 LY per 1000 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Those who switch from colonoscopy to FIT screening are projected to experience a greater loss of life \u2013 from 9 to 11 to LY per 1000 individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "404b4f5d-ddec-4f24-b331-6a96783e61a9",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C78",
+      "claim": "If screening is only resumed at age 65 (e.g. age at Medicare enrollment) or abandoned, the loss of benefits from screening could be 3\u201311 LY per 1000 individuals for 60-year-olds (scenario C60 | C@65).",
+      "claim_type": "EXPLICIT",
+      "source": "If screening is only resumed at age 65 (e.g. age at Medicare enrollment) or abandoned, the loss of benefits from screening could be 3\u201311 LY per 1000 individuals (scenario C60 | C@65).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "05cda8b1-0f78-4937-a58c-77266bb94651",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C79",
+      "claim": "Discontinuing screening after the pandemic is projected to cause a loss of 106\u2013124 LY per 1000 individuals for 60-year-olds, a decrease of 36\u201351% in the benefit of screening (scenario C60 | U).",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, discontinuing screening after the pandemic is projected to cause a loss of 106\u2013124 LY per 1000 individuals, a decrease of 36\u201351% in the benefit of screening (scenario C60 | U).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "5f8e2cc0-5e4b-4c85-ae9f-4a173f7ec37e",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "claim_id": "C80",
+      "claim": "Those who were previously uninsured for long periods of time throughout the pandemic should resume CRC screening to mitigate the long-term effects projected in these simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Those who were previously uninsured for long periods of time throughout the pandemic should resume CRC screening to mitigate the long-term effects projected in these simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a recommendation based on inference from the simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b53c34fd-30c4-4818-a75f-1605fa3c6458",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The COVID-19 pandemic caused substantial disruptions to CRC screening in the United States, with an 85% decrease during March-April 2020, and screening has not returned to pre-pandemic levels despite reopening efforts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are all supported by appropriate citations to peer-reviewed sources and public health data. These claims establish the context and magnitude of pandemic-related screening disruptions, which form the foundation for the simulation study. The claims are consistent with established knowledge about pandemic impacts on healthcare services.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "ab1cc602-f713-4d9b-93f6-f0b035a148d5",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CRC is the second-leading cause of cancer deaths in the US with established screening guidelines, but screening uptake was below national goals even before the pandemic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 are well-supported by citations to authoritative sources including cancer statistics (Siegel et al., 2023), screening effectiveness studies, and USPSTF guidelines. These claims establish the clinical and public health context for the study and are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "b7e241ba-7244-4931-a419-5b78ac1896c9",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The pandemic exacerbated existing disparities in CRC screening, with unemployment and loss of healthcare access varying by race/ethnicity, potentially widening disparities in cancer outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 are supported by citations (C14, C16) and logical inference from established relationships between screening delays and cancer outcomes (C13). The connection between unemployment, healthcare access, and screening disparities is well-documented in the cited literature. The inference that pandemic-related disruptions may widen disparities (C15) follows logically from the documented unequal burden across racial/ethnic groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "8227e9c9-f873-451d-840c-18f91667a97b",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study uses two validated CISNET microsimulation models (CRC-SPIN and MISCAN-Colon) that simulate CRC natural history based on the adenoma-carcinoma sequence, with 10 million individuals simulated per cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 clearly describe the methodological approach. The models are established CISNET models with detailed documentation in cited references (C20). The large sample size of 10 million per cohort (C21) is appropriate for reducing stochastic variability in microsimulation studies. The methodology is transparent and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "dfff0d11-29c1-4abd-9a23-5357931a7bd5",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Short-term screening delays (3-18 months) result in minor life-years loss, while discontinuing screening causes much larger reductions in benefits, and unequal recovery can widen disparities in CRC outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 represent the primary conclusions of the simulation study and are supported by the detailed quantitative results presented in Table 4 and Figures 1-2. The distinction between short-term delays (minor impact) and screening discontinuation (major impact) is consistently demonstrated across multiple cohorts and scenarios. The inference about disparity-widening (C24) follows logically from the differential impacts shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "fb07ee8c-12c5-437a-b417-0a24c6d05972",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For 50-year-olds, postponing screening until age 65 results in 104-127 life-years lost per 1000 individuals (38-42% loss in benefits), with 1.3-1.9 times higher CRC incidence and 1.6-2.0 times higher CRC mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are directly supported by quantitative data in Table 4 and supplementary files. The estimates are consistent across both models (CRC-SPIN and MISCAN), providing convergent evidence. The magnitude of impact for long-term delay is substantial and clearly quantified with appropriate precision (ranges reflecting model uncertainty).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "46e5d4f5-1c03-466d-a6cf-ab94b6e2ecdb",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For 50-year-olds, an 18-month delay in colonoscopy screening results in 6-7 life-years lost per 1000 individuals, representing only a 2% loss in screening benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by simulation results and demonstrate the minimal impact of short-term delays compared to long-term disruptions. The quantitative estimates are consistent with the overall finding that short-term delays have minor consequences. This provides important context for the more severe long-term disruption scenarios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "1fdde0b9-ab16-442d-9131-fc8deb6ae6b1",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For 60-year-olds who discontinue screening after the pandemic, life-years lost range from 42-149 per 1000 individuals depending on prior screening adherence, representing 20-69% loss in screening benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 are supported by simulation results showing differential impacts based on pre-pandemic screening behavior. The range of estimates reflects both model uncertainty and variation across screening regimens (colonoscopy vs. FIT) and adherence levels. The finding that semi-adherent individuals lose more benefits (C33) is logical given their lower baseline screening benefit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "a56920b0-a390-4cef-8eca-ad8204cd991a",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For 60-year-olds, switching from colonoscopy to FIT with 18-month delay results in 9-11 life-years lost (3-4% loss), while short-term colonoscopy delays of 3-18 months result in only 0-3 life-years lost (0-1% loss).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by simulation results in Table 4. The minimal impact of short-term delays is consistently demonstrated across different delay durations. The slightly larger impact of regimen switching (C36) compared to simple delays is logical given the difference in test characteristics between colonoscopy and FIT.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "f055f7b2-fa8d-4bb5-92d8-c61e7d6a359e",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For 70-year-olds, discontinuing screening results in 29-87 life-years lost per 1000 individuals, while 5-year delays result in 49-50 life-years lost (39-43% reduction), and switching to FIT with 18-month delay results in 5-7 life-years lost (2-3% reduction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are supported by simulation results showing age-specific impacts. The lower absolute life-years lost for 70-year-olds compared to younger cohorts is expected given shorter remaining lifespan and higher baseline CRC risk. The pattern of minimal impact for short-term delays/switching versus substantial impact for discontinuation is consistent across age groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "460d33e9-c967-4fc5-b4e4-a135ac55b319",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "High-sensitivity colonoscopy scenarios yield higher life-years gained than low-sensitivity scenarios, but conditional on sensitivity level, the impact of pandemic disruptions on life-years lost is similar across sensitivity assumptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 are supported by sensitivity analyses presented in Figure 2 and supplementary materials. The finding that absolute benefits differ by sensitivity but relative impacts of disruptions are similar is important for robustness. The quantitative estimates (C48-C49, C51-C52) demonstrate this pattern clearly. This strengthens confidence in the main conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "61bf0fa6-e00d-4647-a371-73b096c76acc",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The pandemic will have uneven effects on CRC outcomes depending on screening resumption patterns, becoming a disparity-widening mechanism if it differentially affects screening access across population groups, while having minimal impact on those with only momentary interruptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 represent key interpretive conclusions that follow logically from the simulation results. The inference that differential impacts will widen disparities (C54) is well-supported by the demonstrated range of outcomes across disruption scenarios. The conclusion about minimal impact of momentary interruptions (C55) is directly supported by the short-term delay results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "56796a7b-fdf7-4bc1-a2cf-37c664a263c2",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Black, Asian American, and Hispanic groups experienced more dramatic employment declines during the pandemic, and Black and Hispanic workers were more likely to be unemployed and without unemployment insurance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by citations to government survey data (Bureau of Labor Statistics, US Census). These claims establish the empirical basis for expecting differential pandemic impacts across racial/ethnic groups, which is central to the disparity implications of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "ac1fb460-3384-49a9-8c3c-0074e1dfcd0a",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior microsimulation studies in Canadian and Chilean populations found similar patterns of increased CRC incidence and mortality due to pandemic-related screening delays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by citations and provide important context showing consistency of findings across different populations and modeling approaches. This strengthens confidence in the current study's conclusions through convergent evidence from independent research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "bf2245b3-afa4-4527-b2d1-cef442bcbbca",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study has several limitations: no population-level estimates, discrete scenario approach, average-risk cohorts only, subset of real-world scenarios, immediate post-pandemic changes only, limited uncertainty quantification, and no explicit policy recommendations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 represent an appropriately transparent and comprehensive discussion of study limitations. The authors clearly acknowledge that their scenario-based approach (C61) prevents population-level predictions, that they model only average-risk individuals (C62), and that they consider only a subset of possible disruption patterns (C63-C64). The acknowledgment of limited uncertainty quantification (C65) and lack of policy recommendations (C67) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "6cb6962e-4683-4dcd-91bb-14f23d4013b7",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study demonstrates that unequal recovery of CRC screening will widen disparities, with severe benefit reductions from discontinuation or long-term delays but minimal consequences from short-term delays or regimen switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 represent the main conclusions of the study and are well-supported by the comprehensive simulation results across multiple cohorts, scenarios, and sensitivity analyses. The distinction between severe impacts (discontinuation/long delays) and minimal impacts (short delays/switching) is consistently demonstrated throughout the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "0b3cb226-20ba-4f81-9c50-83659b42aab5",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "During the pandemic, some patients switched from colonoscopy to FIT to reduce in-person endoscopy procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by citation to Fedewa et al., 2022 and provides empirical justification for including regimen-switching scenarios in the simulation study. This establishes that the modeled scenarios reflect real-world behavioral changes during the pandemic.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "382f893c-dc27-490f-a45d-04dda0184ab8",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study assumes individuals with detected adenomas undergo surveillance according to Multi-Society Task Force guidelines until age 85, provided no adenomas are detected at the last surveillance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 clearly describe key modeling assumptions about surveillance protocols. These assumptions are standard in CRC modeling and are transparently documented. The surveillance rules are detailed in Table 3, allowing for reproducibility and evaluation of appropriateness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "160ebb1d-bef7-4d7f-bf8a-1ae16a3044f6",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Loss of life was largest for severe disruptions, with the worst scenario for 50-year-olds being postponement until age 65; short-term disruptions (3-18 months) caused minimal loss (up to 3 LY per 1000), while discontinuation caused 106-124 LY lost per 1000 for 60-year-olds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 summarize key quantitative findings from the results section and are directly supported by data in Table 4 and Figure 1. The characterization of worst-case scenarios (C75) and the distinction between minimal short-term impacts (C76) versus substantial discontinuation impacts (C79) is clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    },
+    {
+      "id": "61b531d7-ea70-4a91-bf4f-463a3c15a8c8",
+      "content_id": "accc11e9-8007-40c8-a2e6-a1fcd56afd8c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Individuals who were uninsured for long periods during the pandemic should resume CRC screening to mitigate projected long-term effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is a clinical recommendation that follows logically from the simulation results showing substantial life-years lost from screening discontinuation. While the study doesn't provide explicit policy interventions (as acknowledged in C67), this recommendation is a reasonable inference from the findings about the importance of screening resumption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:56.082064Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "300e1586-11b3-4bf3-9787-6539f4ae8101",
+      "result_id": "b53c34fd-30c4-4818-a75f-1605fa3c6458"
+    },
+    {
+      "claim_id": "9f0fdadc-e43d-4435-acad-0bab1b28b61c",
+      "result_id": "b53c34fd-30c4-4818-a75f-1605fa3c6458"
+    },
+    {
+      "claim_id": "59b46d31-f213-42aa-9adf-c7db39f79d94",
+      "result_id": "b53c34fd-30c4-4818-a75f-1605fa3c6458"
+    },
+    {
+      "claim_id": "79042c89-fd26-41e3-a5ca-7e4569c0c507",
+      "result_id": "b53c34fd-30c4-4818-a75f-1605fa3c6458"
+    },
+    {
+      "claim_id": "cc7f3ae5-d99d-4142-a06b-bca188c93fb3",
+      "result_id": "b53c34fd-30c4-4818-a75f-1605fa3c6458"
+    },
+    {
+      "claim_id": "714a35bf-f6ed-4c30-b407-232f47946702",
+      "result_id": "ab1cc602-f713-4d9b-93f6-f0b035a148d5"
+    },
+    {
+      "claim_id": "c86b7f5c-68b2-4aca-b145-07d1d27a49b1",
+      "result_id": "ab1cc602-f713-4d9b-93f6-f0b035a148d5"
+    },
+    {
+      "claim_id": "ccc6a89e-c64b-49bb-8c18-0183dde0f895",
+      "result_id": "ab1cc602-f713-4d9b-93f6-f0b035a148d5"
+    },
+    {
+      "claim_id": "898ceebf-b3f8-48b4-bc5b-64f53cc20fbb",
+      "result_id": "ab1cc602-f713-4d9b-93f6-f0b035a148d5"
+    },
+    {
+      "claim_id": "3ce6958e-4a1f-4941-a0e8-9030d1014117",
+      "result_id": "ab1cc602-f713-4d9b-93f6-f0b035a148d5"
+    },
+    {
+      "claim_id": "1ab18d81-663b-45f2-bc8b-1721d43f110a",
+      "result_id": "ab1cc602-f713-4d9b-93f6-f0b035a148d5"
+    },
+    {
+      "claim_id": "bafa2fad-308a-46ba-858e-dd403a592765",
+      "result_id": "b7e241ba-7244-4931-a419-5b78ac1896c9"
+    },
+    {
+      "claim_id": "9fc37e5b-7a67-4deb-81e9-32a5e422b532",
+      "result_id": "b7e241ba-7244-4931-a419-5b78ac1896c9"
+    },
+    {
+      "claim_id": "1019bfd1-e961-4a4e-904e-86c1b97045b3",
+      "result_id": "b7e241ba-7244-4931-a419-5b78ac1896c9"
+    },
+    {
+      "claim_id": "e7e11b5c-4786-4ab9-b5dc-ce8cea55ff88",
+      "result_id": "b7e241ba-7244-4931-a419-5b78ac1896c9"
+    },
+    {
+      "claim_id": "f7a6ad60-f519-4132-9607-d3acf9a02c6d",
+      "result_id": "b7e241ba-7244-4931-a419-5b78ac1896c9"
+    },
+    {
+      "claim_id": "0a0ed4e8-9d3b-4131-ba0d-21912e6796b3",
+      "result_id": "8227e9c9-f873-451d-840c-18f91667a97b"
+    },
+    {
+      "claim_id": "e313df1e-4b0e-4dd4-ba19-f117383622c0",
+      "result_id": "8227e9c9-f873-451d-840c-18f91667a97b"
+    },
+    {
+      "claim_id": "948be676-07d8-40c0-a818-04663c1d89e2",
+      "result_id": "8227e9c9-f873-451d-840c-18f91667a97b"
+    },
+    {
+      "claim_id": "dbff15b1-2480-408e-bde3-adb6b51b280e",
+      "result_id": "8227e9c9-f873-451d-840c-18f91667a97b"
+    },
+    {
+      "claim_id": "bcedda9a-84cb-43a9-a8a6-357747d90766",
+      "result_id": "8227e9c9-f873-451d-840c-18f91667a97b"
+    },
+    {
+      "claim_id": "c89a8a6a-a35e-4cc9-9f02-a657e5a3a0d3",
+      "result_id": "dfff0d11-29c1-4abd-9a23-5357931a7bd5"
+    },
+    {
+      "claim_id": "315d17fa-b860-440a-8759-0508e06583bf",
+      "result_id": "dfff0d11-29c1-4abd-9a23-5357931a7bd5"
+    },
+    {
+      "claim_id": "a3f71962-d2cc-4e11-a72e-87fc3a6d43d4",
+      "result_id": "dfff0d11-29c1-4abd-9a23-5357931a7bd5"
+    },
+    {
+      "claim_id": "4ea2677e-c39f-42bd-b228-6b98f4276b39",
+      "result_id": "fb07ee8c-12c5-437a-b417-0a24c6d05972"
+    },
+    {
+      "claim_id": "e5619f77-1be7-4174-831a-8ed97437b3f3",
+      "result_id": "fb07ee8c-12c5-437a-b417-0a24c6d05972"
+    },
+    {
+      "claim_id": "72f913b8-f45a-49eb-9ca2-eec8b5a4a5c9",
+      "result_id": "fb07ee8c-12c5-437a-b417-0a24c6d05972"
+    },
+    {
+      "claim_id": "0ea1aca8-7714-4540-9148-2fd6e1986306",
+      "result_id": "fb07ee8c-12c5-437a-b417-0a24c6d05972"
+    },
+    {
+      "claim_id": "fd57488a-0b6f-4a3a-9db2-69c215526166",
+      "result_id": "46e5d4f5-1c03-466d-a6cf-ab94b6e2ecdb"
+    },
+    {
+      "claim_id": "88ac26ca-f424-412d-b3b0-e732b88cbd8d",
+      "result_id": "46e5d4f5-1c03-466d-a6cf-ab94b6e2ecdb"
+    },
+    {
+      "claim_id": "44d3d09b-4fcf-4a7c-8e3b-0d9cc77fdd26",
+      "result_id": "1fdde0b9-ab16-442d-9131-fc8deb6ae6b1"
+    },
+    {
+      "claim_id": "7d0db242-4777-43a3-8b25-c8b15cd1e7b5",
+      "result_id": "1fdde0b9-ab16-442d-9131-fc8deb6ae6b1"
+    },
+    {
+      "claim_id": "7e172e45-1d75-4825-85ab-18872ef110a5",
+      "result_id": "1fdde0b9-ab16-442d-9131-fc8deb6ae6b1"
+    },
+    {
+      "claim_id": "74f63ae7-71d2-4eb3-bddd-8889eee72ac3",
+      "result_id": "1fdde0b9-ab16-442d-9131-fc8deb6ae6b1"
+    },
+    {
+      "claim_id": "ca4a80bc-eeb1-4c7e-9313-3945c1510986",
+      "result_id": "1fdde0b9-ab16-442d-9131-fc8deb6ae6b1"
+    },
+    {
+      "claim_id": "c5922fe1-1a1f-4473-bd2e-b81bcc95e9ee",
+      "result_id": "a56920b0-a390-4cef-8eca-ad8204cd991a"
+    },
+    {
+      "claim_id": "a6ea011f-584c-4050-9426-ed5a938401c6",
+      "result_id": "a56920b0-a390-4cef-8eca-ad8204cd991a"
+    },
+    {
+      "claim_id": "391fb4ed-a16b-4a86-b713-597597c1ac05",
+      "result_id": "a56920b0-a390-4cef-8eca-ad8204cd991a"
+    },
+    {
+      "claim_id": "3a26208b-aded-4075-b996-2ee5f6af6e74",
+      "result_id": "a56920b0-a390-4cef-8eca-ad8204cd991a"
+    },
+    {
+      "claim_id": "b928ee6b-153e-4f06-bcc1-99e46dea140e",
+      "result_id": "a56920b0-a390-4cef-8eca-ad8204cd991a"
+    },
+    {
+      "claim_id": "214883f6-d138-46f4-890e-0e671f70d833",
+      "result_id": "f055f7b2-fa8d-4bb5-92d8-c61e7d6a359e"
+    },
+    {
+      "claim_id": "90ccee1b-f42d-411d-bf1d-7f11248d7ba0",
+      "result_id": "f055f7b2-fa8d-4bb5-92d8-c61e7d6a359e"
+    },
+    {
+      "claim_id": "32017a54-0ddc-493a-bb3d-8ccdb72473d6",
+      "result_id": "f055f7b2-fa8d-4bb5-92d8-c61e7d6a359e"
+    },
+    {
+      "claim_id": "d14564d2-95d7-44e9-b9b7-8cc7b8b11354",
+      "result_id": "f055f7b2-fa8d-4bb5-92d8-c61e7d6a359e"
+    },
+    {
+      "claim_id": "db9340f5-e689-4273-a857-f406057f18f5",
+      "result_id": "f055f7b2-fa8d-4bb5-92d8-c61e7d6a359e"
+    },
+    {
+      "claim_id": "50f00941-71fb-4ed4-bbde-84eb314cee17",
+      "result_id": "460d33e9-c967-4fc5-b4e4-a135ac55b319"
+    },
+    {
+      "claim_id": "419f4691-8705-45be-956b-d5d4875a8e96",
+      "result_id": "460d33e9-c967-4fc5-b4e4-a135ac55b319"
+    },
+    {
+      "claim_id": "d5608054-b934-4824-a16a-f3aefac98b56",
+      "result_id": "460d33e9-c967-4fc5-b4e4-a135ac55b319"
+    },
+    {
+      "claim_id": "bafb8f33-fb67-422b-9904-d2a575ed7181",
+      "result_id": "460d33e9-c967-4fc5-b4e4-a135ac55b319"
+    },
+    {
+      "claim_id": "f0929360-63b2-4764-bfb4-17a2f287db92",
+      "result_id": "460d33e9-c967-4fc5-b4e4-a135ac55b319"
+    },
+    {
+      "claim_id": "30d3a3a4-8dda-43b8-bcd0-141fabb0b6cd",
+      "result_id": "460d33e9-c967-4fc5-b4e4-a135ac55b319"
+    },
+    {
+      "claim_id": "2f566267-569d-49d2-b838-87e806abf9c3",
+      "result_id": "460d33e9-c967-4fc5-b4e4-a135ac55b319"
+    },
+    {
+      "claim_id": "6f455360-606d-4d25-be15-607b793687ef",
+      "result_id": "61bf0fa6-e00d-4647-a371-73b096c76acc"
+    },
+    {
+      "claim_id": "4f48d984-b173-4e89-82f1-6d74e9bf13e1",
+      "result_id": "61bf0fa6-e00d-4647-a371-73b096c76acc"
+    },
+    {
+      "claim_id": "dcb47079-0aed-4074-b52f-4f458800502b",
+      "result_id": "61bf0fa6-e00d-4647-a371-73b096c76acc"
+    },
+    {
+      "claim_id": "8590333b-b449-4d91-b665-6eae84219910",
+      "result_id": "56796a7b-fdf7-4bc1-a2cf-37c664a263c2"
+    },
+    {
+      "claim_id": "3bdbd661-b952-411b-b73a-dfbde83fd715",
+      "result_id": "56796a7b-fdf7-4bc1-a2cf-37c664a263c2"
+    },
+    {
+      "claim_id": "a05f6ab0-ed79-4530-baf9-8d3e9727808a",
+      "result_id": "ac1fb460-3384-49a9-8c3c-0074e1dfcd0a"
+    },
+    {
+      "claim_id": "282cd053-31ac-4773-8907-3b307ad08b1a",
+      "result_id": "ac1fb460-3384-49a9-8c3c-0074e1dfcd0a"
+    },
+    {
+      "claim_id": "eac6c508-4090-4915-ba1e-2d208ffdecce",
+      "result_id": "bf2245b3-afa4-4527-b2d1-cef442bcbbca"
+    },
+    {
+      "claim_id": "86914fc5-fbf6-4da6-9cca-8b4c4a0ae2c1",
+      "result_id": "bf2245b3-afa4-4527-b2d1-cef442bcbbca"
+    },
+    {
+      "claim_id": "1bec379d-026d-44e9-bb83-b380cd397af2",
+      "result_id": "bf2245b3-afa4-4527-b2d1-cef442bcbbca"
+    },
+    {
+      "claim_id": "7f316ea2-e799-4616-9997-d8323d3e761b",
+      "result_id": "bf2245b3-afa4-4527-b2d1-cef442bcbbca"
+    },
+    {
+      "claim_id": "4b1f3459-29eb-4d92-8bda-2eb9ffede352",
+      "result_id": "bf2245b3-afa4-4527-b2d1-cef442bcbbca"
+    },
+    {
+      "claim_id": "10595ce6-5b8a-4110-8264-25c6b48dc82c",
+      "result_id": "bf2245b3-afa4-4527-b2d1-cef442bcbbca"
+    },
+    {
+      "claim_id": "5ba6e489-d589-4a16-bb38-2034fc487af7",
+      "result_id": "bf2245b3-afa4-4527-b2d1-cef442bcbbca"
+    },
+    {
+      "claim_id": "0b032518-4363-40de-9a4e-ee1a175a8f82",
+      "result_id": "bf2245b3-afa4-4527-b2d1-cef442bcbbca"
+    },
+    {
+      "claim_id": "7aa87613-1b38-40fd-8cbf-87c4de94916e",
+      "result_id": "6cb6962e-4683-4dcd-91bb-14f23d4013b7"
+    },
+    {
+      "claim_id": "c49ed887-eba8-4c51-abf8-2306a60ee730",
+      "result_id": "6cb6962e-4683-4dcd-91bb-14f23d4013b7"
+    },
+    {
+      "claim_id": "d02aa1cb-bb89-4d95-9f77-b90d3a8d2b1f",
+      "result_id": "6cb6962e-4683-4dcd-91bb-14f23d4013b7"
+    },
+    {
+      "claim_id": "2bdf01f5-cee1-4baa-94ae-017a03cebf9e",
+      "result_id": "0b3cb226-20ba-4f81-9c50-83659b42aab5"
+    },
+    {
+      "claim_id": "4474fcd0-4fa6-4441-bdde-a9ea4501d318",
+      "result_id": "382f893c-dc27-490f-a45d-04dda0184ab8"
+    },
+    {
+      "claim_id": "1c26423a-3795-4d2d-889d-6a59699b7f3e",
+      "result_id": "382f893c-dc27-490f-a45d-04dda0184ab8"
+    },
+    {
+      "claim_id": "e713c2d2-5c17-478a-8e1b-de8e57f8612e",
+      "result_id": "160ebb1d-bef7-4d7f-bf8a-1ae16a3044f6"
+    },
+    {
+      "claim_id": "7ffffaf7-451c-4d6c-b7df-067bc698ebee",
+      "result_id": "160ebb1d-bef7-4d7f-bf8a-1ae16a3044f6"
+    },
+    {
+      "claim_id": "5b2b8d1e-d605-49c8-8e74-6913b2d20b0d",
+      "result_id": "160ebb1d-bef7-4d7f-bf8a-1ae16a3044f6"
+    },
+    {
+      "claim_id": "681801f7-ac57-44c5-bf48-b308ddc510b8",
+      "result_id": "160ebb1d-bef7-4d7f-bf8a-1ae16a3044f6"
+    },
+    {
+      "claim_id": "404b4f5d-ddec-4f24-b331-6a96783e61a9",
+      "result_id": "160ebb1d-bef7-4d7f-bf8a-1ae16a3044f6"
+    },
+    {
+      "claim_id": "05cda8b1-0f78-4937-a58c-77266bb94651",
+      "result_id": "160ebb1d-bef7-4d7f-bf8a-1ae16a3044f6"
+    },
+    {
+      "claim_id": "5f8e2cc0-5e4b-4c85-ae9f-4a173f7ec37e",
+      "result_id": "61b531d7-ea70-4a91-bf4f-463a3c15a8c8"
+    }
+  ],
+  "comparisons": []
+}

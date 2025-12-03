@@ -1,0 +1,1671 @@
+{
+  "submission": {
+    "id": "4ab88b76-0139-4d37-ae6d-7c55703b68c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:14:55.166677Z",
+    "updated_at": "2025-12-03T08:14:55.166677Z"
+  },
+  "content": [
+    {
+      "id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "submission_id": "4ab88b76-0139-4d37-ae6d-7c55703b68c6",
+      "content_type": "manuscript",
+      "content_text": "# Early prediction of in-hospital death of COVID-19 patients: a machine-learning model based on age, blood analyses, and chest x-ray score\n\n## Authors\n\n- Emirena Garrafa<sup>1</sup> ([ORCID: 0000-0003-4761-6892](https://orcid.org/0000-0003-4761-6892)) \u2020\n- Marika Vezzoli<sup>1</sup>\n- Marco Ravanelli<sup>3</sup> ([ORCID: 0000-0002-4841-2771](https://orcid.org/0000-0002-4841-2771))\n- Davide Farina<sup>3</sup>\n- Andrea Borghesi<sup>3</sup>\n- Stefano Calza<sup>1</sup>\n- Roberto Maroldi<sup>3</sup>\n\n### Affiliations\n\n1. Department of Molecular and Translational Medicine, University of Brescia Brescia Italy\n2. ASST Spedali Civili di Brescia, Department of Laboratory Brescia Italy\n3. Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, University of Brescia Brescia Italy\n4. ASST Spedali Civili di Brescia, Department of Radiology Brescia Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nAn early-warning model to predict in-hospital mortality on admission of COVID-19 patients at an emergency department (ED) was developed and validated using a machine-learning model. In total, 2782 patients were enrolled between March 2020 and December 2020, including 2106 patients (first wave) and 676 patients (second wave) in the COVID-19 outbreak in Italy. The first-wave patients were divided into two groups with 1474 patients used to train the model, and 632 to validate it. The 676 patients in the second wave were used to test the model. Age, 17 blood analytes, and Brescia chest X-ray score were the variables processed using a random forests classification algorithm to build and validate the model. Receiver operating characteristic (ROC) analysis was used to assess the model performances. A web-based death-risk calculator was implemented and integrated within the Laboratory Information System of the hospital. The final score was constructed by age (the most powerful predictor), blood analytes (the strongest predictors were lactate dehydrogenase, D-dimer, neutrophil/lymphocyte ratio, C-reactive protein, lymphocyte %, ferritin std, and monocyte %), and Brescia chest X-ray score (https://bdbiomed.shinyapps.io/covid19score/). The areas under the ROC curve obtained for the three groups (training, validating, and testing) were 0.98, 0.83, and 0.78, respectively. The model predicts in-hospital mortality on the basis of data that can be obtained in a short time, directly at the ED on admission. It functions as a web-based calculator, providing a risk score which is easy to interpret. It can be used in the triage process to support the decision on patient allocation.\n\n## Introduction\n\nStarting from late February 2020, the COVID-19 outbreak struck the north of Italy causing more than 30,000 deaths in Lombardy alone, up to the end of March 2021. At the beginning of the outbreak, the Spedali Civili di Brescia (SCBH), the university hospital of one of the hardest hit cities in Europe, was faced with a \u2018flash flood\u2019 of severely ill patients seeking admission to the emergency department (ED). For several weeks, their number exceeded the available resources, obliging a continuous organizational restructuring of the hospital wards (Garrafa et al., 2020b).\n\nIn those weeks, given the limited evidence of clinically proven predictors (Marengoni et al., 2021; Wynants et al., 2020; Sperrin et al., 2020), prioritizing hospital admission of non-critical patients was an arduous task. Essentially, the criteria were based on the presence of fever, respiratory symptoms, and the level of blood oxygenation. A significant drawback of this approach was that patients referring to the ED with very similar clinical findings underwent inconsistent assessments. In this scenario, the availability of predictors would have been extremely beneficial, not only to triage patients, but also to monitor hospitalized patients and warn of exacerbation of the outbreaks.\n\nStarting from March 2020, all patients referred to EDs underwent a chest X-ray at admission or within a few hours. With the purpose of grading pulmonary involvement and tracking changes objectively over time, a chest X-ray severity score was developed (Brescia X-ray score) (Borghesi and Maroldi, 2020; Maroldi et al., 2021; Borghesi et al., 2020a; Borghesi et al., 2020b). The score was able to predict in-hospital mortality in 302 patients. In addition to the chest X-ray severity score, a dedicated blood sampling profile was included in the COVID-19 ED work-up (Garrafa et al., 2020a). Among its 17 blood analytes, the sampling profile encompassed hemachrome, inflammation biomarkers such as C-reactive protein (CRP), lactate dehydrogenase (LDH), and ferritin, and coagulation markers (fibrinogen and D-dimer). Since that time, the medical literature began to encompass an increasing number of studies advocating the prognostic value of single or grouped blood parameters (Bonetti et al., 2020; Borghi et al., 2020; Avouac et al., 2021; Knight et al., 2020). All these parameters were present in our COVID-19 sampling profile.\n\nThis study aims to develop and validate an early-warning model (BS-EWM), predictive of in-hospital death, based on data that could easily be acquired on admission to the ED: age, simple blood biomarkers, and chest X-ray. The model was constructed based on the analysis of a cohort of 2872 COVID-19 patients treated in a single reference center over a 10-month period.\n\nThis paper adheres to the TRIPOD checklist for predictive model development and validation (Collins et al., 2015).\n\nThe study was approved by the local ethics committee (COVID-SURG-BS; NP 4059).\n\n## Results\n\n### Description of the sample\n\nThe entire sample analyzed in this paper contained 2782 COVID-19 patients (1010 female [36.3%] and 1772 male [63.7%]), admitted to the ED and hospitalized at SCBH from March to December 2020. During these 10 months, the pandemic had two temporal waves: March\u2013April (MA) (2106 patients, 75.70% of the entire sample) and May\u2013December (MD) (676 patients, 24.30% of the entire sample) (Supplementary file 1a). The model was trained on a subsample extracted from the first wave (70%) and tested (i) on data not used to calibrate the model (remaining 30% from the first wave) and (ii) on data from the second wave (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70640/elife-70640-fig1-v3.jpg)\n\n**Figure 1.:** The early-warning model (BS-EWM) was trained with a random forest on 70% of first-wave patients (rebalanced with the synthetic minority oversampling technique [SMOTE] procedure) and (i) validated on remaining 30% of first-wave patients (ii) tested on 676 second-wave patients. In detail, 2106 patients were randomly in training and validating, maintaining the same death prevalence of the first wave.\n\nThe first-wave subsample contained 2106 COVID-19 patients hospitalized in March\u2013April 2020 at SCBH: 744 females (35.3%) and 1362 males (64.7%) (Table 1). During that period, 423 patients died (20.09% of the total): 131 females (31%) and 292 males (69%). Their mean age \u00b1 SD was 66.89 \u00b1 14.19: 67.93 \u00b1 15.40 for females and 66.32 \u00b1 13.45 for males (p-value = 0.001). The mean age of deceased patients was 76.21 \u00b1 9.12, while for living patients, it was 64.55 \u00b1 14.27 (p-value < 0.001). Mean hospital stay was 13.58 \u00b1 11.58 days (from a minimum of 0 to a maximum of 140 days): 11.33 \u00b1 10.98 days for patients who died, 14.15 \u00b1 11.66 days for surviving patients (p-value < 0.001).\n\n**Table 1.**\n Descriptive statistics on all variables in the dataset stratified respect alive\u2013dead. Comparison between first (March\u2013April) and second (May\u2013December) wave.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Variables</th>\n      <th colspan=\"2\">First wave: March\u2013April (MA) 2020</th>\n      <th rowspan=\"2\">p-Value</th>\n      <th colspan=\"2\">Second wave: May\u2013December (MD) 2020</th>\n      <th rowspan=\"2\">p-Value</th>\n    </tr>\n    <tr>\n      <th>Alive(N = 1683)</th>\n      <th>Dead(N = 423)</th>\n      <th>Alive (N = 594)</th>\n      <th>Dead (N = 82)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>64.55 (14.27)</td>\n      <td>76.21 (9.12)</td>\n      <td></td>\n      <td>65.30 (15.20)</td>\n      <td>76.72 (10.79)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>65.00(55.00, 75.00)</td>\n      <td>77.00(72.00, 82.00)</td>\n      <td></td>\n      <td>67.00(55.00, 77.00)</td>\n      <td>80.00(72.25, 84.75)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>19.00\u201397.00</td>\n      <td>44.00\u201398.00</td>\n      <td></td>\n      <td>18.00\u201397.00</td>\n      <td>44.00\u201398.00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sex</td>\n      <td></td>\n      <td></td>\n      <td>0.036\u2020</td>\n      <td></td>\n      <td></td>\n      <td>0.131\u2020</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>613 (36.4%)</td>\n      <td>131 (31.0%)</td>\n      <td></td>\n      <td>240 (40.4%)</td>\n      <td>26 (31.7%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>M</td>\n      <td>1,070 (63.6%)</td>\n      <td>292 (69.0%)</td>\n      <td></td>\n      <td>354 (59.6%)</td>\n      <td>56 (68.3%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Days in hospital</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>0.008*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>1</td>\n      <td>0</td>\n      <td></td>\n      <td>95</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>14.15 (11.66)</td>\n      <td>11.33 (10.98)</td>\n      <td></td>\n      <td>14.95 (11.67)</td>\n      <td>17.77 (10.75)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>11.00(7.00, 18.00)</td>\n      <td>8.00(4.00, 15.00)</td>\n      <td></td>\n      <td>12.00(7.00, 20.00)</td>\n      <td>17.50(9.00, 25.00)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u2013140.00</td>\n      <td>0.00\u201388.00</td>\n      <td></td>\n      <td>0.00\u201379.00</td>\n      <td>2.00\u201346.00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Score</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>6.92 (4.40)</td>\n      <td>8.77 (4.39)</td>\n      <td></td>\n      <td>5.65 (4.48)</td>\n      <td>8.23 (4.63)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>7.00(3.00, 10.00)</td>\n      <td>9.00(6.00, 12.00)</td>\n      <td></td>\n      <td>5.00(2.00, 9.00)</td>\n      <td>9.00(5.25, 11.00)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u201318.00</td>\n      <td>0.00\u201318.00</td>\n      <td></td>\n      <td>0.00\u201318.00</td>\n      <td>0.00\u201317.00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>D-dimer</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>406</td>\n      <td>113</td>\n      <td></td>\n      <td>128</td>\n      <td>16</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>1155.03 (2218.51)</td>\n      <td>3124.25 (8070.21)</td>\n      <td></td>\n      <td>1538.17 (3123.38)</td>\n      <td>4712.44 (8897.82)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>443.00(262.00, 985.00)</td>\n      <td>944.50(476.50, 2970.75)</td>\n      <td></td>\n      <td>739.50(427.50, 1341.25)</td>\n      <td>1112.00(725.50, 3619.25)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>200.00\u201347228.00</td>\n      <td>200.00\u201360,342.00</td>\n      <td></td>\n      <td>190.00\u201333,501.00</td>\n      <td>190.00\u201335,000.00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fibrinogen</td>\n      <td></td>\n      <td></td>\n      <td>0.951*</td>\n      <td></td>\n      <td></td>\n      <td>0.778*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>339</td>\n      <td>117</td>\n      <td></td>\n      <td>54</td>\n      <td>8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>530.53 (194.13)</td>\n      <td>530.55 (213.69)</td>\n      <td></td>\n      <td>523.94 (169.43)</td>\n      <td>519.77 (213.05)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>520.00(381.00, 650.00)</td>\n      <td>515.00(381.00, 654.00)</td>\n      <td></td>\n      <td>512.00(405.00, 612.00)</td>\n      <td>510.00(330.50, 649.00)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>119.00\u20131339.00</td>\n      <td>68.00\u20131333.00</td>\n      <td></td>\n      <td>147.00\u20131371.00</td>\n      <td>153.00\u20131287.00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LDH</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>188</td>\n      <td>92</td>\n      <td></td>\n      <td>61</td>\n      <td>7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>321.25 (227.50)</td>\n      <td>433.71 (205.10)</td>\n      <td></td>\n      <td>308.30 (196.23)</td>\n      <td>443.49 (707.95)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>283.00(222.00, 373.00)</td>\n      <td>406.00(269.50, 545.50)</td>\n      <td></td>\n      <td>273.00(218.00, 354.00)</td>\n      <td>332.00(257.00, 442.50)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>90.00\u20136689.00</td>\n      <td>123.00\u20131365.00</td>\n      <td></td>\n      <td>108.00\u20132565.00</td>\n      <td>122.00\u20136310.00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Neutrophils</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>23</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>5.67 (3.61)</td>\n      <td>7.17 (4.39)</td>\n      <td></td>\n      <td>5.80 (3.97)</td>\n      <td>7.21 (4.13)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>4.83(3.29, 7.03)</td>\n      <td>6.20(4.12, 9.02)</td>\n      <td></td>\n      <td>4.78(3.42, 7.11)</td>\n      <td>6.72(4.00, 9.77)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u201353.99</td>\n      <td>0.17\u201330.45</td>\n      <td></td>\n      <td>0.10\u201347.03</td>\n      <td>0.19\u201323.02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Lymphocytes</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>23</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>1.43 (5.48)</td>\n      <td>1.19 (4.29)</td>\n      <td></td>\n      <td>1.22 (0.81)</td>\n      <td>1.38 (4.63)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>1.04(0.75, 1.42)</td>\n      <td>0.81(0.55, 1.18)</td>\n      <td></td>\n      <td>1.06(0.72, 1.52)</td>\n      <td>0.74(0.47, 1.06)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.10\u2013177.63</td>\n      <td>0.04\u201385.51</td>\n      <td></td>\n      <td>0.08\u201310.28</td>\n      <td>0.08\u201342.20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Neutrophils on lymphocytes</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>23</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>6.18 (5.87)</td>\n      <td>10.72 (11.71)</td>\n      <td></td>\n      <td>7.19 (9.92)</td>\n      <td>12.84 (13.09)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>4.52(2.84, 7.50)</td>\n      <td>7.13(4.47, 13.06)</td>\n      <td></td>\n      <td>4.32(2.63, 8.40)</td>\n      <td>8.50(4.05, 15.19)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u2013101.90</td>\n      <td>0.01\u2013129.67</td>\n      <td></td>\n      <td>0.12\u2013143.25</td>\n      <td>0.11\u201370.56</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Neutrophils %</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>22</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>0.73 (0.13)</td>\n      <td>0.80 (0.12)</td>\n      <td></td>\n      <td>0.73 (0.13)</td>\n      <td>0.79 (0.16)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>0.74(0.66, 0.82)</td>\n      <td>0.82(0.75, 0.88)</td>\n      <td></td>\n      <td>0.73(0.64, 0.83)</td>\n      <td>0.83(0.69, 0.89)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u20130.97</td>\n      <td>0.01\u20130.97</td>\n      <td></td>\n      <td>0.10\u20130.99</td>\n      <td>0.10\u20130.96</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Lymphocytes %</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>22</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>0.18 (0.11)</td>\n      <td>0.13 (0.09)</td>\n      <td></td>\n      <td>0.18 (0.11)</td>\n      <td>0.13 (0.13)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>0.16(0.11, 0.23)</td>\n      <td>0.11(0.07, 0.17)</td>\n      <td></td>\n      <td>0.17(0.10, 0.25)</td>\n      <td>0.10(0.06, 0.18)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.01\u20130.97</td>\n      <td>0.01\u20130.99</td>\n      <td></td>\n      <td>0.01\u20130.88</td>\n      <td>0.01\u20130.88</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PCR</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>0.004*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>47</td>\n      <td>12</td>\n      <td></td>\n      <td>21</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>77.25 (75.76)</td>\n      <td>117.68 (95.97)</td>\n      <td></td>\n      <td>64.28 (73.38)</td>\n      <td>98.59 (102.49)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>55.65(17.30, 111.60)</td>\n      <td>99.20(42.80, 170.45)</td>\n      <td></td>\n      <td>39.10(12.30, 91.10)</td>\n      <td>74.80(20.12, 140.73)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.30\u2013479.00</td>\n      <td>0.70\u2013471.10</td>\n      <td></td>\n      <td>0.30\u2013483.20</td>\n      <td>0.30\u2013593.80</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>WBC</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>0.011*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>21</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>7.73 (7.13)</td>\n      <td>9.13 (7.46)</td>\n      <td></td>\n      <td>7.65 (4.17)</td>\n      <td>9.23 (6.25)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>6.62(4.87, 9.11)</td>\n      <td>7.62(5.60, 10.74)</td>\n      <td></td>\n      <td>6.67(5.02, 8.90)</td>\n      <td>8.34(5.55, 12.04)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.72\u2013191.02</td>\n      <td>0.32\u201392.23</td>\n      <td></td>\n      <td>0.97\u201348.19</td>\n      <td>0.97\u201347.79</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Basophils</td>\n      <td></td>\n      <td></td>\n      <td>0.073*</td>\n      <td></td>\n      <td></td>\n      <td>0.419*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>23</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>0.02 (0.02)</td>\n      <td>0.02 (0.02)</td>\n      <td></td>\n      <td>0.02 (0.04)</td>\n      <td>0.02 (0.02)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>0.01(0.01, 0.02)</td>\n      <td>0.01(0.01, 0.02)</td>\n      <td></td>\n      <td>0.02(0.01, 0.03)</td>\n      <td>0.01(0.01, 0.03)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u20130.31</td>\n      <td>0.00\u20130.15</td>\n      <td></td>\n      <td>0.00\u20130.84</td>\n      <td>0.00\u20130.11</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Basophils %</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>0.024*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>22</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>0.00 (0.00)</td>\n      <td>0.00 (0.00)</td>\n      <td></td>\n      <td>0.00 (0.00)</td>\n      <td>0.00 (0.00)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>0.00(0.00, 0.00)</td>\n      <td>0.00(0.00, 0.00)</td>\n      <td></td>\n      <td>0.00(0.00, 0.00)</td>\n      <td>0.00(0.00, 0.00)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u20130.02</td>\n      <td>0.00\u20130.06</td>\n      <td></td>\n      <td>0.00\u20130.05</td>\n      <td>0.00\u20130.01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Eosinophils</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>0.015*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>23</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>0.06 (0.12)</td>\n      <td>0.04 (0.10)</td>\n      <td></td>\n      <td>0.06 (0.14)</td>\n      <td>0.05 (0.13)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>0.01 (0.00, 0.07)</td>\n      <td>0.00 (0.00, 0.02)</td>\n      <td></td>\n      <td>0.01 (0.00, 0.06)</td>\n      <td>0.00 (0.00, 0.03)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u20132.19</td>\n      <td>0.00\u20130.79</td>\n      <td></td>\n      <td>0.00\u20131.95</td>\n      <td>0.00\u20130.97</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Eosinophils %</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>0.013*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>22</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>0.01 (0.02)</td>\n      <td>0.00 (0.01)</td>\n      <td></td>\n      <td>0.01 (0.02)</td>\n      <td>0.01 (0.01)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>0.00(0.00, 0.01)</td>\n      <td>0.00(0.00, 0.00)</td>\n      <td></td>\n      <td>0.00(0.00, 0.01)</td>\n      <td>0.00(0.00, 0.00)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u20130.27</td>\n      <td>0.00\u20130.12</td>\n      <td></td>\n      <td>0.00\u20130.25</td>\n      <td>0.00\u20130.07</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Monocytes</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>0.683*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>23</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>0.56 (0.68)</td>\n      <td>0.69 (3.32)</td>\n      <td></td>\n      <td>0.55 (0.32)</td>\n      <td>0.58 (0.41)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>0.47(0.32, 0.68)</td>\n      <td>0.41(0.25, 0.63)</td>\n      <td></td>\n      <td>0.49(0.33, 0.68)</td>\n      <td>0.48(0.27, 0.77)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.01\u201323.31</td>\n      <td>0.02\u201366.34</td>\n      <td></td>\n      <td>0.02\u20132.45</td>\n      <td>0.07\u20132.01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Monocytes %</td>\n      <td></td>\n      <td></td>\n      <td>&lt;0.001*</td>\n      <td></td>\n      <td></td>\n      <td>0.034*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>22</td>\n      <td>19</td>\n      <td></td>\n      <td>4</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>0.08 (0.04)</td>\n      <td>0.07 (0.05)</td>\n      <td></td>\n      <td>0.08 (0.04)</td>\n      <td>0.07 (0.05)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>0.07 (0.05, 0.10)</td>\n      <td>0.06 (0.04, 0.08)</td>\n      <td></td>\n      <td>0.07 (0.05, 0.10)</td>\n      <td>0.06 (0.04, 0.09)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>0.00\u20130.70</td>\n      <td>0.01\u20130.72</td>\n      <td></td>\n      <td>0.01\u20130.31</td>\n      <td>0.01\u20130.27</td>\n      <td>p-Value</td>\n    </tr>\n    <tr>\n      <td>Ferritin F</td>\n      <td>613 patients(82.39%)</td>\n      <td>131 patients(17.61%)</td>\n      <td>&lt;0.001*</td>\n      <td>240 patients(90.23%)</td>\n      <td>26 patients(9.77%)</td>\n      <td>0.372*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>158</td>\n      <td>34</td>\n      <td></td>\n      <td>43</td>\n      <td>5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>674.53 (817.61)</td>\n      <td>1237.07 (2308.64)</td>\n      <td></td>\n      <td>564.63 (526.39)</td>\n      <td>2006.00 (4680.23)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>459.00(212.00, 820.50)</td>\n      <td>700.00(353.00, 1347.00)</td>\n      <td></td>\n      <td>433.00(216.00, 750.00)</td>\n      <td>510.00(269.00, 722.00)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>4.00\u20137687.00</td>\n      <td>19.00\u201320,572.00</td>\n      <td></td>\n      <td>11.00\u20133397.00</td>\n      <td>81.00\u201320,941.00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ferritin M</td>\n      <td>1070 patients(78.56%)</td>\n      <td>292 patients(21.44%)</td>\n      <td>&lt;0.001*</td>\n      <td>354 patients(90.23%)</td>\n      <td>56 patients(9.77%)</td>\n      <td>0.007*</td>\n    </tr>\n    <tr>\n      <td>N-Miss</td>\n      <td>257</td>\n      <td>96</td>\n      <td></td>\n      <td>50</td>\n      <td>5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean (SD)</td>\n      <td>1353.00 (1359.86)</td>\n      <td>1825.25 (1945.47)</td>\n      <td></td>\n      <td>1181.95 (3295.92)</td>\n      <td>1372.04 (1258.14)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Median(Q1, Q3)</td>\n      <td>939.00(461.00, 1705.00)</td>\n      <td>1262.50(572.25, 2323.25)</td>\n      <td></td>\n      <td>737.50(405.25, 1283.00)</td>\n      <td>1159.00(598.00, 1500.00)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Range</td>\n      <td>23.00\u201311,513.00</td>\n      <td>55.00\u201313,289.00</td>\n      <td></td>\n      <td>25.00\u201356,039.00</td>\n      <td>112.00\u20137058.00</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_In bold and italics p-values < 0.05.*Wilcoxon rank-sum test.\u2020Fisher\u2019s exact test._\n\nThe second-wave subsample contained 676 COVID-19 patients hospitalized in MD 2020 at SCBH: 266 females (39.3%), 410 males (60.7%) (Table 1). During the 8 months of the second wave, 82 patients died (12.13%): 26 females (31.7%) and 56 males (68.3%). The mean age of deceased patients was 76.72 \u00b1 10.79 vs. 65.30 \u00b1 15.20 for surviving patients (p-value < 0.001). The mean hospital stay was 15.35 \u00b1 11.58 days (from a minimum of 0 to a maximum 79 days): 17.77 \u00b1 10.75 days for patients who died, 14.95 \u00b1 11.67 days for surviving patients (p-value = 0.008).\n\nThe descriptive statistics for all variables in the dataset are presented in Supplementary file 1b and were computed and stratified by the two waves (MA vs. MD) and by outcome (alive vs. dead). The two subsets were similar for most variables.\n\nThe correlations between the 17 analytes and the Brescia X-ray score were investigated using Spearman correlation coefficients and visualized using a correlation plot (Figure 2). The Brescia X-ray score was positively correlated with neutrophil to lymphocyte ratio (NLR), CRP, LDH, standardized ferritin, and D-dimer, and was negatively correlated with lymphocyte %, monocyte %, and basophil %.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70640/elife-70640-fig2-v3.jpg)\n\n**Figure 2.:** The relationships between 17 analytes and Brescia chest X-ray score are inspected with the Spearman correlation coefficients, \u03c1s, which are represented in this correlation plot by means of blue and red circles (positive and negative correlation, respectively). The diameter of the circle is proportional to the magnitude of \u03c1s and black crosses on them identify correlation not significantly different from zero (p-values > 0.05). The correlation matrix is reordered according to the hierarchical cluster analysis on the quantitative variables.\n\n### BS-EWM\n\nA machine-learning model (BS-EWM) was developed by inputting a dataset of 2782 COVID-19 patients admitted to the ED and hospitalized at SCBH from March to December 2020. The majority of patients (2106/2782, 75.70%) belonged to the first wave (MA), the remaining fraction (676/2782, 24.30%) to the second wave (MD). As outcome, the machine-learning model had the condition dead/alive, and, as covariates: age, Brescia X-ray score, and 17 blood sample analytes.\n\nFigure 1 reports the flowchart that describes how data were divided for training, validation, and testing the BS-EWM.\n\nThe synthetic minority oversampling technique (SMOTE) procedure, rebalancing the dead/alive ratio (50% vs. 50%) from the original 20.09%, improved accuracy, specificity, and sensitivity of the random forest applied on it (see Supplementary file 1c which compares performance metrics with/without the SMOTE method).\n\nThe relative variable importance measure (rel VIM) and partial dependence plot (PDP) were extracted from the random forests (Figures 3 and 4, respectively). In Figure 3, the rel VIM of BS-EWM based on age, Brescia X-ray score, and 17 blood analytes are reported on a bar plot. Since age was strongly associated with the risk of death, it masked the role of the other covariates. For completeness, the relevance of the 17 analytes and Brescia X-ray score was estimated in an additional EWM, in which the covariate \u2018age\u2019 was excluded. In Figure 4, 9/17 analytes and the Brescia X-ray score were noted as being important in predicting the risk of death (rel VIM >60). The effects of changes in covariate values on the risk of death threshold of the EWM were reported by means of a PDP (a 2D plot in the x\u2013y plane) (Figure 4). Only fibrinogen was excluded from this graphical representation since in Table 1, it was not significantly different in the two subpopulations deceased/alive. Most PDPs showed nonmonotonic increasing relationships between the x-variable and the EWM, resulting in a plateau corresponding to high values of x.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70640/elife-70640-fig3-v3.jpg)\n\n**Figure 3.:** In , Figure 3, A1, there is the rel VIM based on Gini index. It was extracted from a random forest where the outcome is dead/alive and covariates are: the 17 biomarkers, Brescia X-ray score, and age. The algorithm grows 10,000 trees where the number of splitting variables at each tree node is \u221a(# covariates in the model). Missing values are imputed with the \u2018on-the-fly-imputation\u2019 algorithm. A model with the same features was run (Figure 3, A2) excluding the covariate \u2018age\u2019 since it was strongly associated with the risk of death, masking the role of remaining covariates.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70640/elife-70640-fig4-v3.jpg)\n\n**Figure 4.:** Considering the random forest that excludes the \u2018age\u2019 variable, the PDPs were computed in correspondence of covariates with relative variable importance measure (rel VIM) of Appendix 1\u2014figure 2 > 60 (cut-off identified by the red dashed line) and p-value in Table 1 < 0.05. Of 10 most important variables in Appendix 1\u2014figure 2, nine satisfy these two conditions (only fibrinogen was excluded since it was not significantly different in the two subpopulations deceased/alive). PDPs measure the effects of changes in covariate values taken one per time, on the risk of death. They are displayed from the most to the less important variable.\n\nWhen compared to other models such as gradient boosting machine (GBM) and logistic regression, the random forest showed better performance in terms of area under the curve (AUC), sensitivity, and specificity. The in-sample sensitivity (0.93) yielded by the model was the highest, and it maintained an important 0.82 in validating the out-of-sample sensitivity, and this decreased to 0.73 when testing the MD subgroup (see Table 2 which contains details on all the metrics extracted from the ROC analysis). ROC curves are visualized in Figure 5 where, for each model (random forest, GBM, and logistic regression), the performances in training, validating, and testing are compared in a unique graph.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70640/elife-70640-fig5-v3.jpg)\n\n**Figure 5.:** ROC curves of three methods: (i) random forest, (ii) GBM, and (iii) logistic regression. Each graph reports the ROC curve computed in training (blue line, 70% of March\u2013April\u2019s patients), validating (dashed red line, 30% of March\u2013April\u2019s patients), and testing (dashed green lined, May\u2013December\u2019s patients).\n\n**Table 2.**\n Performance metrics of methods: random forest, gradient boosting machine (GBM), and logistic regression.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Metrics</th>\n      <th colspan=\"3\">Random forest</th>\n      <th colspan=\"3\">GBM</th>\n      <th colspan=\"3\">Logistic regression</th>\n    </tr>\n    <tr>\n      <th>TrainingMarch\u2013April (MA)</th>\n      <th>ValidatingMarch\u2013April (MA)</th>\n      <th>TestingMay\u2013Dec(MD)</th>\n      <th>TrainingMarch\u2013April (MA)</th>\n      <th>ValidatingMarch\u2013April (MA)</th>\n      <th>TestingMay\u2013Dec(MD)</th>\n      <th>TrainingMarch\u2013April (MA)</th>\n      <th>ValidatingMarch\u2013April (MA)</th>\n      <th>TestingMay\u2013Dec(MD)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AUC (DeLong)(95% CI)</td>\n      <td>0.97(0.97\u20130.98)</td>\n      <td>0.83(0.80\u20130.87)</td>\n      <td>0.78(0.73\u20130.84)</td>\n      <td>0.88(0.86\u20130.89)</td>\n      <td>0.84(0.80\u20130.88)</td>\n      <td>0.78(0.73\u20130.83)</td>\n      <td>0.84(0.82\u20130.86)</td>\n      <td>0.83(0.79\u20130.87)</td>\n      <td>0.52(0.44\u20130.60)</td>\n    </tr>\n    <tr>\n      <td>Sensitivity(95% CI)</td>\n      <td>0.93(0.91\u20130.97)</td>\n      <td>0.82(0.72\u20130.92)</td>\n      <td>0.73(0.54\u20131.00)</td>\n      <td>0.85(0.80\u20130.88)</td>\n      <td>0.80(0.66\u20130.90)</td>\n      <td>0.77(0.65\u20130.94)</td>\n      <td>0.80(0.77\u20130.84)</td>\n      <td>0.84(0.76\u20130.91)</td>\n      <td>0.87(0.18\u20131.00)</td>\n    </tr>\n    <tr>\n      <td>Specificity(95% CI)</td>\n      <td>0.92(0.88\u20130.94)</td>\n      <td>0.75(0.63\u20130.83)</td>\n      <td>0.73(0.41\u20130.89)</td>\n      <td>0.77(0.73\u20130.81)</td>\n      <td>0.75(0.65\u20130.87)</td>\n      <td>0.71(0.50\u20130.79)</td>\n      <td>0.74(0.70\u20130.77)</td>\n      <td>0.73(0.65\u20130.79)</td>\n      <td>0.26(0.11\u20130.94)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Comparison between the performances of three methods: random forest, GBM, and logistic regression model applied on the rebalanced dataset obtained with SMOTE methodology. Logistic regression predictions are computed using the 10-fold cross-validation in order to be comparable with random forest and GBM predictions (which use out-of-bag and 10-fold cross-validation, respectively)._\n\nIn order to compare the BS-EWM score with univariate models based on single biomarkers, three random forest (on training, validation, and testing) are estimated on the most important biomarkers (LDH, D-dimer, neutr/lymph, neutrophils %, fibrinogen, CRP, Brescia chest X-ray, lymphocytes %, ferritin std, monocytes %). Results of these 30 models are reported in Supplementary file 1d. It is evident that considering one biomarker per time, the model provides good predictions in training, but bad performances out of sample (contrary to the BS-EWM score it loses its predictive power on fresh data). Hence, it is evident that a score based on a multivariate model provide better results since it also considers interactions among variables.\n\n## Discussion\n\nThe dataset for the development, validation, and testing of the BS-EWM originated entirely from an Italian region, potentially limiting the generalizability of the risk score in other areas of the world. Additional validation studies from different geographic areas are welcomed. Furthermore, though the BS-EWM has been validated using blood sample values obtained by instruments that satisfy internal and external quality control, different equipment could lead to divergent results (Martens et al., 2021; Lippi et al., 2020). Therefore, it would be appropriate to harmonize the results. Another limit could have been the presence of missing values, though the BS-EWM has also performed adequately in this condition since it used a multiple imputation technique to overcome the problem. Finally, it is important to point out that the BS-EWM risk score should not be used for asymptomatic COVID-19 patients or for the pediatric population. It will be interesting, in the future, to verify if the BS-EWM could be applied by general practitioners to the unhospitalized population. This could allow the generalizability of the model outside the hospital context to be tested.\n\nThough the BS-EWM has been developed on a cohort of 2106 patients belonging to the COVID-19 first wave, the model also demonstrated a sensitivity greater than 70% in the early prediction of high risk in patients in the second wave, when in-hospital mortality was 40% lower.\n\nSeveral predictive models have recently been applied to COVID-19 cohorts with variable results, some of them previously developed to predict mortality for community-acquired pneumonia, such as the Pneumonia Severity Index, CURB-65, qSOFA, and MuLBSTA (Genc Yavuz et al., 2021; Lazar Neto et al., 2021; Artero et al., 2021), NEWS2 criteria (Myrstad et al., 2020; Gidari et al., 2020), and SCAP score (Anurag and Preetam, n.d.). Novel early-warning scores have been specifically built on COVID-19 patient series using different techniques such as parametric and non-parametric tests (Linssen et al., 2020) or artificial intelligence techniques such as the COVID-GRAM score (Liang et al., 2020).\n\nWhile these models are mostly based on age and a set of vital (clinical) parameters, in addition to age, the BS-EWM depends on blood parameters. It is conceivable that blood analytes capture a snapshot at hospital admission signaling a specific bodily reaction to viral infection in terms of hyperinflammation, immune response, and thrombophilia. On the other hand, the other models are more influenced by the general status of the patient, which may be determined by concomitant and pre-existing diseases.\n\nAccording to the International Federation of Clinical Chemistry (Bohn et al., 2020), no single biochemical or hematological marker is sufficiently sensitive or specific to predict the outcome of SARS-CoV-2 infection. Notably, the IFCC recommends that the interpretation of laboratory abnormalities should be based on groups of analytes (Bohn et al., 2020). In the BS-EWM, three analytes reached a significant value in predicting death: LDH, D-dimer, and NLR. LDH is a non-specific indicator of tissue damage (Bohn et al., 2020; Liang et al., 2020) that emerges as one of the most consistently elevated markers in patients at higher risk of developing adverse outcomes, probably because COVID-19 infection is characterized by systemic tissue damage. Another key feature of SARS-CoV-2 is the coagulopathy: high levels of D-dimers have been reported to correlate with unfavorable disease progression in several cohorts of patients. The coagulopathy linked to COVID-19 infection is likely to involve a complex interplay between pro-thrombotic and inflammatory factors, thus the combined analysis of both inflammatory and thrombophilic markers could play an important role in the early identification of patients at higher risk of unfavorable progression (Bohn et al., 2020; Lazzaroni et al., 2021). Finally, lymphopenia has become a hallmark of SARS-CoV-2. It has been demonstrated in almost all symptomatic patients, though in varying degrees. Disease severity has been correlated with the level of lymphocyte count reduction. A direct infection of lymphocytes, which express the coronavirus receptor ACE-2, is among the mechanisms proposed. A poor prognosis is also associated with an elevated neutrophil count combined with lymphopenia, resulting in a high NLR. The increase in granulocytes is the result of the cytokine storm induced by the virus and is responsible for tissue damage (Bonetti et al., 2020; Bohn et al., 2020).\n\nA further remark concerning the blood analytes is that, in the BS-EWM, the thresholds of the single analytes (namely the point where the functions in Figure 4 become constant and the probability of death no longer increases/decreases) closely overlap with the values recently proposed by other authors (Webb et al., 2020; Caricchio et al., 2021). For completeness, the optimal threshold (computed through the Youden index) for each biomarker to predict the outcome (dead or alive) are reported in Supplementary file 1e.\n\nThe present study is not unique in encompassing radiological findings combined with blood analysis. The study by Schalekamp et al., 2021, integrated blood analysis parameters and radiological information derived by grading chest X-rays (0\u20138 scale points). Unlike the cited study, with the BS-EWM in this study, the radiological score did not reach a high relevance (rel VIM) in predicting high risk. This difference can be explained by the different approaches used to build the model (logistic regression vs. random forests) and by the high degree of correlation of the X-ray score with multiple blood analytes: \u2018collinearity\u2019 thus could have \u2018stolen\u2019 importance from the information provided by imaging. Nevertheless, at admission, the chest X-ray score of patients who subsequently died was significantly higher than for patients who survived. Furthermore, the chest X-ray score may provide additional stability to the model, playing an important role in the case of missing data in the blood sample counterpart.\n\nFurther, the BS-EWM delivers high prediction performance and only requires a limited number of readily available variables with easy operability, no time consuming, no extra money since these analytes are required for COVID-19 diagnosis and monitoring. An important and pragmatic aspect offered by the BS-EWM is that the biomarkers employed may be obtained by the emergency laboratory in less than an hour (Garrafa et al., 2020a) and, differently from other biomarkers (Kyriazopoulou et al., 2021), they are non-expensive and frequently used also in developing countries. It is important to note that the same methodology could be applied to other infections and be practical to triage people.\n\nMost laboratories, including the small or peripheral ones, may provide results in a short time. At the Spedali Civili of Brescia, the BS-EWM is integrated within the Laboratory Information System (LIS). It works as a web-based calculator and is easy to interpret. The online calculator allows an easy assessment of the EWM, requiring only the entering of analyte values and X-ray score. The score is calculated even if some of the values are missing. Furthermore, in our center the system may be integrated with the electronic health record and the radiology information system, allowing a completely automatic data retrieval and entering, without any operator interaction. It provides a risk threshold of 0.5, above which patients are graded as having a potentially high death-risk, thus supporting closer clinical observation or admission to a high-intensive care ward. In patients yielding a low risk (score 0\u20130.49), the decision by clinicians to allocate them to a low-intensive care ward or to monitoring is further sustained. The online calculator allows an easy assessment of the EWM, requiring only the entering of analyte values and X-ray score. The score is calculated even if some of the values are missing. Furthermore, in our center the system may be integrated with the electronic health record and the radiology information system, allowing a completely automatic data retrieval and entering, without any operator interaction.\n\nFinally, the need to regularly update models and closely monitor their performances over time and geographically should be underlined, given the rapidly changing nature of the disease and its management.\n\n## Materials and methods\n\nThe dataset contained 2782 COVID-19 symptomatic patients, hospitalized between March and December 2020 at SCBH after referring to the ED. In all patients, the following variables were retrieved from the SCBH database: age, sex, length of hospitalization, Brescia X-ray score (Borghesi and Maroldi, 2020), alive/dead, and 17 blood analytes acquired at admission (D-dimer, fibrinogen, LDH, neutrophils, lymphocytes, NLR, lymphocytes %, neutrophils %, CRP, white blood cell (WBC) count, basophils, basophils %, eosinophils, eosinophils %, monocytes, monocytes %, standardized ferritin). Blood tests were acquired within 24 hr after admission to the hospital.\n\nAccording to the two temporal peaks of incidence of the COVID-19 outbreak in Lombardy, the 2782 patients were divided into two groups: (i) MA including 2106 patients admitted during the first wave; (ii) MD including 676 patients in the second wave. Quantitative variables were described using mean (SD), median (IQR), and range (min\u2013max), while categorical variables were reported as counts and percentages. The comparisons between groups were performed using the Wilcoxon rank-sum test for quantitative variables and Fisher\u2019s exact test for qualitative variables.\n\nThe relationships between the 17 analytes and the Brescia X-ray score were inspected using the Spearman correlation coefficient, \u03c1s, and visualizing results using a correlation plot (Dancelli et al., 2013; Marziano et al., 2019; Figure 2).\n\nTo estimate the BS-EWM, the outcome (alive/dead) was modeled using as covariates: (i) Brescia X-ray score, (ii) 17 analytes, (iii) age. Since most of the covariates analyzed were strongly correlated (multi-collinearity) (Figure 2) and their relationships with the outcome were non-linear, the BS-EWM was estimated using random forests (Breiman, 2001; Carpita and Vezzoli, 2012), a non-parametric machine-learning method (Vezzoli, 2011; Vezzoli et al., 2017). Moreover, the algorithm is able to manage missing values which are common in clinical studies. The \u2018on-the-fly-imputation\u2019 algorithm (Hong and Lynn, 2020) imputes data when it grows the forest handling interactions and non-linearity in the dataset.\n\nSince the prevalence rate of death in the two waves was different (20% in MA vs. 12% in MD), a strategy to generalize results in unbalanced datasets was applied, adopting a rebalancing method able to improve the detection of patients with a high death-risk.\n\nThe EWM was developed using the 2106 patients in the first COVID-19 wave (MA 2020) when in-hospital death prevalence was 20%. Seventy percent of them (1474 patients) were used for training the model and the remainder (632 patients) for testing it. Patients were randomly assigned to the two subgroups, and further stratified according to the outcome (alive/dead). Consequently, both the training and testing subgroups included the same rate of deaths (20.09%) as the full sample (2106 patients). With such a \u2018moderate\u2019 incidence of death, the dataset was statistically unbalanced. This limitation could have implied the development of a model yielding unsatisfactory results in predicting new observations for the minority class, that is, patients with death as outcome. An approach to address this limitation is to oversample the minority class (deceased patients) and, subsequently, create the predictive model (BS-EWM). The SMOTE (Chawla et al., 2002) was chosen. The SMOTE function oversamples the minority class by using bootstrapping and k-nearest neighbor to synthetically create additional observations belonging to that class (dead). The procedure is combined with under-sampling of the majority class (alive). To determine the optimum number of k-groups into which to assign the dataset, a matrix containing the 17 analytes and the Brescia X-ray score was used to compute the hierarchical cluster analysis (Salvi et al., 2019; Codenotti et al., 2016). By means of silhouette analysis, k = 2 was determined as the optimal number of clusters into which to assign the dataset. Hence, a synthetic rebalanced dataset was obtained with an equal number of living and deceased patients (888 + 888). The rebalancing procedure enabled a risk score to be devised ranging from 0 to 1 with a threshold of 0.5 to separate non-severely affected from severely affected patients. Subsequently, the model was tested on the subgroup of 632 patients in the first wave excluding the training set. A further validation of the EWM was conducted on the 676 COVID-19 patients in the second wave (Wynants et al., 2020).\n\nThe rel VIM (Carpita and Vezzoli, 2012, Doglietto et al., 2020b) and the PDP (Friedman, 2001; Doglietto et al., 2020a) were extracted from the model for a better understanding of the relationship between outcome and covariates.\n\nThe predictions extracted from the random forests classification were interpreted as in-hospital death probability conditional on the combination of the values of analytes, Brescia X-ray score, and age in COVID-19 patients at admission to the ED.\n\nThe BS-EWM performance was evaluated by AUC of an ROC curve. The robustness of the model was compared to other models by running GBM (a machine-learning approach and competitor to random forests), and logistic regression, and computing the same metrics.\n\nThe BS-EWM score is available for use online (https://bdbiomed.shinyapps.io/covid19score). In the SCBH it is integrated within LIS returning the death-risk score directly from the medical report.\n\nAll the analyses were performed by R, version 4.0.0 (R Development Core Team, 2020). The code is available at 288 https://github.com/biostatUniBS/BS_EWS copy archived at swh:1:rev:7416ba71075402e6a0ed997e7aa6a527e93247b2 (Garrafa et al., 2021).\n",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "9a33b1a9-b80e-40ce-92f4-fc06075c7675",
+      "submission_id": "4ab88b76-0139-4d37-ae6d-7c55703b68c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Evangelos J Giamarellos-Bourboulis, National and Kapodistrian University of Athens, Medical School Greece\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70640.sa1](https://doi.org/10.7554/eLife.70640.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nGarrafa et al., developed and validated an early-warning model in order to predict in-hospital mortality in patients affected by COVID-19 during the first and second wave of the pandemic. The model includes age, blood analytes and a chest X-ray score, all parameters that are easy to get at the emergency room admission. The authors tested the model in a training, validating and testing sample, showing an AUC of 0.98, 0.83 and 0.78, respectively. One of the major strengths of the study is the large sample collected in one of the main hospital of Northern Italy as well as the amount of data collected regarding analytes and radiological findings. The statistical analysis is appropriate and detailed.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Early Prediction of In-Hospital Death of COVID-19 Patients: A Machine-Learning Model Based on Age, Blood Analyses, and Chest X-Ray Score\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos Van der Meer as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Alessandra Marengoni (Reviewer #1); Dimitrios Velissaris (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n\u2013 The authors may want to add the following reference: doi: 10.1136/bmj.m3339\n\n\u2013 The predictive value of the BS-EWM could be evaluated with other scores such as the COVID-19 Mortality Score, COVID-19 Severity Index, 4C Mortality Score and COVID-IRS NLR. Do the authors have the data to provide comparisons with these scores?\n\n\u2013 The authors describe that they used parameters of patients when admitted in the ED but intended to report in-hospital mortality. I suppose a large number of patients weren't admitted in hospital and those data would be of interest for validity of the score.\n\n\u2013 The authors do not describe the time of symptoms of patients. This would be also interesting to consider alongside with the score as X-ray findings change over time.\n\n\u2013 It would be interesting to see data of comparison of the predictive value of well-established single severity biomarkers (LDH, lymphocytes, d-dimer etc) with the score.\n\n\u2013 A comment about the correlation between the X.ray score and the analytes should be added in the discussion.\n\n\u2013 Line 231-233; the authors may want to expand the paragraph comparing thresholds of analytes in other studies.\n\n\u2013 Also, the authors should expand in the discussion the easy-to-use online score.\n",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "05e90a9a-ece3-4fe1-8957-3b9b300bb533",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C1",
+      "claim": "The COVID-19 outbreak caused more than 30,000 deaths in Lombardy alone up to the end of March 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting from late February 2020, the COVID-19 outbreak struck the north of Italy causing more than 30,000 deaths in Lombardy alone, up to the end of March 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about mortality statistics in Lombardy during the COVID-19 outbreak.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "f776cb8c-1abe-46dd-97c2-82485500f17e",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C2",
+      "claim": "At the beginning of the outbreak, the number of severely ill patients seeking admission to the emergency department exceeded available resources at Spedali Civili di Brescia.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning of the outbreak, the Spedali Civili di Brescia (SCBH), the university hospital of one of the hardest hit cities in Europe, was faced with a 'flash flood' of severely ill patients seeking admission to the emergency department (ED). For several weeks, their number exceeded the available resources, obliging a continuous organizational restructuring of the hospital wards (Garrafa et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Garrafa et al., 2020b describing the hospital's experience.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "d097f612-0a65-4355-a08f-03d25d324ea8",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C3",
+      "claim": "A chest X-ray severity score (Brescia X-ray score) was developed to grade pulmonary involvement and track changes objectively over time.",
+      "claim_type": "EXPLICIT",
+      "source": "With the purpose of grading pulmonary involvement and tracking changes objectively over time, a chest X-ray severity score was developed (Brescia X-ray score) (Borghesi and Maroldi, 2020; Maroldi et al., 2021; Borghesi et al., 2020a; Borghesi et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing the development of the Brescia X-ray score.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "529e4b4e-1e56-4ad3-a465-f8d076ca749a",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C4",
+      "claim": "The Brescia X-ray score was able to predict in-hospital mortality in 302 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The score was able to predict in-hospital mortality in 302 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the predictive capability of the score based on a specific patient cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "2de8c3f2-5545-43e8-832e-9cffbdfd6ea6",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C5",
+      "claim": "The study enrolled 2782 patients between March 2020 and December 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 2782 patients were enrolled between March 2020 and December 2020, including 2106 patients (first wave) and 676 patients (second wave) in the COVID-19 outbreak in Italy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study sample size and enrollment period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "b0a5e774-fe59-4d16-86b4-9050bb39f1c0",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C6",
+      "claim": "Age is the most powerful predictor in the BS-EWM model.",
+      "claim_type": "EXPLICIT",
+      "source": "The final score was constructed by age (the most powerful predictor), blood analytes (the strongest predictors were lactate dehydrogenase, D-dimer, neutrophil/lymphocyte ratio, C-reactive protein, lymphocyte %, ferritin std, and monocyte %), and Brescia chest X-ray score (https://bdbiomed.shinyapps.io/covid19score/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated explicitly in the abstract describing the model construction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "772d2a0e-9075-4415-ae94-cb312e940871",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C7",
+      "claim": "The strongest blood analyte predictors were lactate dehydrogenase, D-dimer, neutrophil/lymphocyte ratio, C-reactive protein, lymphocyte %, ferritin std, and monocyte %.",
+      "claim_type": "EXPLICIT",
+      "source": "The final score was constructed by age (the most powerful predictor), blood analytes (the strongest predictors were lactate dehydrogenase, D-dimer, neutrophil/lymphocyte ratio, C-reactive protein, lymphocyte %, ferritin std, and monocyte %), and Brescia chest X-ray score (https://bdbiomed.shinyapps.io/covid19score/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract based on the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "897f563b-b1d8-4583-806b-0e6fc3b83aed",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C8",
+      "claim": "The areas under the ROC curve for the training, validating, and testing groups were 0.98, 0.83, and 0.78, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The areas under the ROC curve obtained for the three groups (training, validating, and testing) were 0.98, 0.83, and 0.78, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the model performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "e5da6ee1-f58d-4e10-a5a2-6e9d61b10db1",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C9",
+      "claim": "The model predicts in-hospital mortality on the basis of data that can be obtained in a short time, directly at the ED on admission.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicts in-hospital mortality on the basis of data that can be obtained in a short time, directly at the ED on admission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical application of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "a1e5ca57-f3ca-41a8-9992-2c1b229cca58",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C10",
+      "claim": "The entire sample contained 2782 COVID-19 patients with 1010 female (36.3%) and 1772 male (63.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "The entire sample analyzed in this paper contained 2782 COVID-19 patients (1010 female [36.3%] and 1772 male [63.7%]), admitted to the ED and hospitalized at SCBH from March to December 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the demographic composition of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "607b7ee2-6f2d-4c8f-a3ca-539a8c6551ab",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C11",
+      "claim": "The pandemic had two temporal waves: March\u2013April (2106 patients, 75.70%) and May\u2013December (676 patients, 24.30%).",
+      "claim_type": "EXPLICIT",
+      "source": "During these 10 months, the pandemic had two temporal waves: March\u2013April (MA) (2106 patients, 75.70% of the entire sample) and May\u2013December (MD) (676 patients, 24.30% of the entire sample) (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the temporal distribution of patients in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "0715b053-229f-4e61-bf12-adaf5be932b5",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C12",
+      "claim": "The first-wave subsample contained 2106 COVID-19 patients with 744 females (35.3%) and 1362 males (64.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "The first-wave subsample contained 2106 COVID-19 patients hospitalized in March\u2013April 2020 at SCBH: 744 females (35.3%) and 1362 males (64.7%) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the demographic composition of the first wave.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "841ab334-ab93-4cb2-9e4d-f32bba6a3ade",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C13",
+      "claim": "During the first wave, 423 patients died (20.09% of the total): 131 females (31%) and 292 males (69%).",
+      "claim_type": "EXPLICIT",
+      "source": "During that period, 423 patients died (20.09% of the total): 131 females (31%) and 292 males (69%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of mortality statistics for the first wave.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "b8bfda93-57c3-41ba-9d45-335f92a01d68",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C14",
+      "claim": "The mean age of first-wave patients was 66.89 \u00b1 14.19: 67.93 \u00b1 15.40 for females and 66.32 \u00b1 13.45 for males (p-value = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Their mean age \u00b1 SD was 66.89 \u00b1 14.19: 67.93 \u00b1 15.40 for females and 66.32 \u00b1 13.45 for males (p-value = 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of age statistics with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "65bf452d-3d68-4a68-847b-2894cf2304ba",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C15",
+      "claim": "The mean age of deceased patients in the first wave was 76.21 \u00b1 9.12, while for living patients, it was 64.55 \u00b1 14.27 (p-value < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age of deceased patients was 76.21 \u00b1 9.12, while for living patients, it was 64.55 \u00b1 14.27 (p-value < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement comparing age between deceased and living patients with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "ae7e62a3-8e0f-40d5-aab1-b9f014a84eb6",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C16",
+      "claim": "Mean hospital stay in the first wave was 13.58 \u00b1 11.58 days: 11.33 \u00b1 10.98 days for patients who died, 14.15 \u00b1 11.66 days for surviving patients (p-value < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Mean hospital stay was 13.58 \u00b1 11.58 days (from a minimum of 0 to a maximum of 140 days): 11.33 \u00b1 10.98 days for patients who died, 14.15 \u00b1 11.66 days for surviving patients (p-value < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of hospital stay statistics with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "b7acff43-6d7d-4e63-bd1e-6473c9091f9c",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C17",
+      "claim": "The second-wave subsample contained 676 COVID-19 patients: 266 females (39.3%), 410 males (60.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "The second-wave subsample contained 676 COVID-19 patients hospitalized in MD 2020 at SCBH: 266 females (39.3%), 410 males (60.7%) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the demographic composition of the second wave.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "e66c5b0e-ded8-484a-9f2e-2520b048a9a8",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C18",
+      "claim": "During the second wave, 82 patients died (12.13%): 26 females (31.7%) and 56 males (68.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "During the 8 months of the second wave, 82 patients died (12.13%): 26 females (31.7%) and 56 males (68.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of mortality statistics for the second wave.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "8b67dd51-4c6d-4395-8476-f9c42c6e3c45",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C19",
+      "claim": "The mean age of deceased patients in the second wave was 76.72 \u00b1 10.79 vs. 65.30 \u00b1 15.20 for surviving patients (p-value < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age of deceased patients was 76.72 \u00b1 10.79 vs. 65.30 \u00b1 15.20 for surviving patients (p-value < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement comparing age between deceased and living patients in the second wave with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "6ed39059-9f13-4d8f-aa82-f5f01e4ee7d4",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C20",
+      "claim": "The mean hospital stay in the second wave was 15.35 \u00b1 11.58 days: 17.77 \u00b1 10.75 days for patients who died, 14.95 \u00b1 11.67 days for surviving patients (p-value = 0.008).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean hospital stay was 15.35 \u00b1 11.58 days (from a minimum of 0 to a maximum 79 days): 17.77 \u00b1 10.75 days for patients who died, 14.95 \u00b1 11.67 days for surviving patients (p-value = 0.008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of hospital stay statistics for the second wave with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "93af0646-de52-4ece-a15a-9c135c213f9d",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C21",
+      "claim": "The Brescia X-ray score was positively correlated with neutrophil to lymphocyte ratio (NLR), CRP, LDH, standardized ferritin, and D-dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The Brescia X-ray score was positively correlated with neutrophil to lymphocyte ratio (NLR), CRP, LDH, standardized ferritin, and D-dimer, and was negatively correlated with lymphocyte %, monocyte %, and basophil %.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the correlation analysis described in the text and visualized in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "b1b192c0-aeb8-43af-b4cb-799415315e99",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C22",
+      "claim": "The Brescia X-ray score was negatively correlated with lymphocyte %, monocyte %, and basophil %.",
+      "claim_type": "EXPLICIT",
+      "source": "The Brescia X-ray score was positively correlated with neutrophil to lymphocyte ratio (NLR), CRP, LDH, standardized ferritin, and D-dimer, and was negatively correlated with lymphocyte %, monocyte %, and basophil %.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the correlation analysis described in the text and visualized in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "b3c420a4-7a81-4509-90c2-f9ae720cfbdd",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C23",
+      "claim": "The SMOTE procedure improved accuracy, specificity, and sensitivity of the random forest applied on the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic minority oversampling technique (SMOTE) procedure, rebalancing the dead/alive ratio (50% vs. 50%) from the original 20.09%, improved accuracy, specificity, and sensitivity of the random forest applied on it (see Supplementary file 1c which compares performance metrics with/without the SMOTE method).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a reference to Supplementary file 1c comparing performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "19e8381d-1027-4a32-907d-2f98bfa5b232",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C24",
+      "claim": "Age was strongly associated with the risk of death and masked the role of other covariates.",
+      "claim_type": "EXPLICIT",
+      "source": "Since age was strongly associated with the risk of death, it masked the role of the other covariates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the analysis of variable importance in the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "a3899b65-e8a7-4b98-89a5-3ba428aaa2b2",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C25",
+      "claim": "9 out of 17 analytes and the Brescia X-ray score were noted as being important in predicting the risk of death (rel VIM >60).",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 4, 9/17 analytes and the Brescia X-ray score were noted as being important in predicting the risk of death (rel VIM >60).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the relative variable importance measure analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "2a3d0d86-1724-44ba-a888-68b5965d0e87",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C26",
+      "claim": "Most PDPs showed nonmonotonic increasing relationships between the x-variable and the EWM, resulting in a plateau corresponding to high values of x.",
+      "claim_type": "EXPLICIT",
+      "source": "Most PDPs showed nonmonotonic increasing relationships between the x-variable and the EWM, resulting in a plateau corresponding to high values of x.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the patterns observed in the partial dependence plots shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "f6663a04-cccb-4648-9d3b-05750fd6aa43",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C27",
+      "claim": "When compared to other models such as gradient boosting machine (GBM) and logistic regression, the random forest showed better performance in terms of area under the curve (AUC), sensitivity, and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to other models such as gradient boosting machine (GBM) and logistic regression, the random forest showed better performance in terms of area under the curve (AUC), sensitivity, and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison of performance metrics shown in Table 2 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "75d48250-8ac0-4143-a7f5-d92ecbf61e5b",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C28",
+      "claim": "The in-sample sensitivity (0.93) yielded by the model was the highest, and it maintained an important 0.82 in validating the out-of-sample sensitivity, and this decreased to 0.73 when testing the MD subgroup.",
+      "claim_type": "EXPLICIT",
+      "source": "The in-sample sensitivity (0.93) yielded by the model was the highest, and it maintained an important 0.82 in validating the out-of-sample sensitivity, and this decreased to 0.73 when testing the MD subgroup (see Table 2 which contains details on all the metrics extracted from the ROC analysis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sensitivity metrics across different validation sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "234f4006-f28e-44b7-a059-fb0ad3d57735",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C29",
+      "claim": "The dataset for the development, validation, and testing of the BS-EWM originated entirely from an Italian region, potentially limiting the generalizability of the risk score in other areas of the world.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset for the development, validation, and testing of the BS-EWM originated entirely from an Italian region, potentially limiting the generalizability of the risk score in other areas of the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors regarding the geographic scope of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "d750713c-09c2-4539-bc15-3775d9585d1e",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C30",
+      "claim": "Different equipment could lead to divergent results in blood sample values.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, though the BS-EWM has been validated using blood sample values obtained by instruments that satisfy internal and external quality control, different equipment could lead to divergent results (Martens et al., 2021; Lippi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Martens et al., 2021 and Lippi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "44970714-7956-4869-ba1e-4d5264e08155",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C31",
+      "claim": "The BS-EWM risk score should not be used for asymptomatic COVID-19 patients or for the pediatric population.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is important to point out that the BS-EWM risk score should not be used for asymptomatic COVID-19 patients or for the pediatric population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation stated by the authors regarding the applicability of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "369eb798-55c6-4e3a-a143-b10bc784e5a4",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C32",
+      "claim": "The BS-EWM demonstrated a sensitivity greater than 70% in the early prediction of high risk in patients in the second wave, when in-hospital mortality was 40% lower.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the BS-EWM has been developed on a cohort of 2106 patients belonging to the COVID-19 first wave, the model also demonstrated a sensitivity greater than 70% in the early prediction of high risk in patients in the second wave, when in-hospital mortality was 40% lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model's performance in the second wave validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "078300f4-9d34-47f3-b439-2c87f293ce1e",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C33",
+      "claim": "LDH is a non-specific indicator of tissue damage.",
+      "claim_type": "EXPLICIT",
+      "source": "LDH is a non-specific indicator of tissue damage (Bohn et al., 2020; Liang et al., 2020) that emerges as one of the most consistently elevated markers in patients at higher risk of developing adverse outcomes, probably because COVID-19 infection is characterized by systemic tissue damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bohn et al., 2020 and Liang et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "aed468ea-f755-4f63-add0-e180843da8db",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C34",
+      "claim": "LDH emerges as one of the most consistently elevated markers in patients at higher risk of developing adverse outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "LDH is a non-specific indicator of tissue damage (Bohn et al., 2020; Liang et al., 2020) that emerges as one of the most consistently elevated markers in patients at higher risk of developing adverse outcomes, probably because COVID-19 infection is characterized by systemic tissue damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of the study data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "55156706-0435-41ec-b33a-0be627e85b1c",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C35",
+      "claim": "COVID-19 infection is characterized by systemic tissue damage.",
+      "claim_type": "EXPLICIT",
+      "source": "LDH is a non-specific indicator of tissue damage (Bohn et al., 2020; Liang et al., 2020) that emerges as one of the most consistently elevated markers in patients at higher risk of developing adverse outcomes, probably because COVID-19 infection is characterized by systemic tissue damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for LDH elevation in COVID-19 patients.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "dcce4182-ec16-4201-ab45-d11fcaf34e30",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C36",
+      "claim": "High levels of D-dimers have been reported to correlate with unfavorable disease progression in several cohorts of patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Another key feature of SARS-CoV-2 is the coagulopathy: high levels of D-dimers have been reported to correlate with unfavorable disease progression in several cohorts of patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on existing literature about D-dimer levels in COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "2dfa2b58-8884-429f-99a3-ec8cc22efaab",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C37",
+      "claim": "The coagulopathy linked to COVID-19 infection is likely to involve a complex interplay between pro-thrombotic and inflammatory factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The coagulopathy linked to COVID-19 infection is likely to involve a complex interplay between pro-thrombotic and inflammatory factors, thus the combined analysis of both inflammatory and thrombophilic markers could play an important role in the early identification of patients at higher risk of unfavorable progression (Bohn et al., 2020; Lazzaroni et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bohn et al., 2020 and Lazzaroni et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "f87ce2c3-07bd-4e71-9ba8-3bcab3d127c7",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C38",
+      "claim": "Lymphopenia has become a hallmark of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, lymphopenia has become a hallmark of SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "28a14aad-71df-4fba-905d-b59626fb63f0",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C39",
+      "claim": "Lymphopenia has been demonstrated in almost all symptomatic patients, though in varying degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated in almost all symptomatic patients, though in varying degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "dd420049-62e9-42f2-8017-cd1eef7e1aa9",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C40",
+      "claim": "Disease severity has been correlated with the level of lymphocyte count reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Disease severity has been correlated with the level of lymphocyte count reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "e3fee07f-4796-4277-8c3c-37b5881603eb",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C41",
+      "claim": "A direct infection of lymphocytes, which express the coronavirus receptor ACE-2, is among the mechanisms proposed for lymphopenia.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct infection of lymphocytes, which express the coronavirus receptor ACE-2, is among the mechanisms proposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about proposed mechanisms based on existing knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "a80e1f19-d693-4faf-8525-bf17b7eae208",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C42",
+      "claim": "A poor prognosis is associated with an elevated neutrophil count combined with lymphopenia, resulting in a high NLR.",
+      "claim_type": "EXPLICIT",
+      "source": "A poor prognosis is also associated with an elevated neutrophil count combined with lymphopenia, resulting in a high NLR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about COVID-19 prognosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "e2dedd30-a380-444e-b618-1ac00cd88c97",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C43",
+      "claim": "The increase in granulocytes is the result of the cytokine storm induced by the virus and is responsible for tissue damage.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in granulocytes is the result of the cytokine storm induced by the virus and is responsible for tissue damage (Bonetti et al., 2020; Bohn et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bonetti et al., 2020 and Bohn et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "d3e11962-b0b4-403b-9764-d56762c0d6f3",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C44",
+      "claim": "In the BS-EWM, the thresholds of the single analytes closely overlap with the values recently proposed by other authors.",
+      "claim_type": "EXPLICIT",
+      "source": "A further remark concerning the blood analytes is that, in the BS-EWM, the thresholds of the single analytes (namely the point where the functions in Figure 4 become constant and the probability of death no longer increases/decreases) closely overlap with the values recently proposed by other authors (Webb et al., 2020; Caricchio et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Webb et al., 2020 and Caricchio et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "33bed156-e1b1-44fc-9f3a-7ac47c39dbe9",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C45",
+      "claim": "At admission, the chest X-ray score of patients who subsequently died was significantly higher than for patients who survived.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, at admission, the chest X-ray score of patients who subsequently died was significantly higher than for patients who survived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the statistical analysis of the study data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "3ac1d166-f336-4561-8d10-947b0911ce32",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C46",
+      "claim": "The chest X-ray score may provide additional stability to the model, playing an important role in the case of missing data in the blood sample counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the chest X-ray score may provide additional stability to the model, playing an important role in the case of missing data in the blood sample counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the role of the chest X-ray score in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "56bd4ff5-c43f-4ffc-bba5-0a5c10aca18e",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C47",
+      "claim": "The BS-EWM delivers high prediction performance and only requires a limited number of readily available variables with easy operability, no time consuming, no extra money since these analytes are required for COVID-19 diagnosis and monitoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the BS-EWM delivers high prediction performance and only requires a limited number of readily available variables with easy operability, no time consuming, no extra money since these analytes are required for COVID-19 diagnosis and monitoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical advantages of the BS-EWM.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "0279924a-e170-46e3-9932-3868862d3305",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C48",
+      "claim": "The biomarkers employed may be obtained by the emergency laboratory in less than an hour.",
+      "claim_type": "EXPLICIT",
+      "source": "An important and pragmatic aspect offered by the BS-EWM is that the biomarkers employed may be obtained by the emergency laboratory in less than an hour (Garrafa et al., 2020a) and, differently from other biomarkers (Kyriazopoulou et al., 2021), they are non-expensive and frequently used also in developing countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Garrafa et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "5cbdce53-a211-4842-94a5-944b7893b04a",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C49",
+      "claim": "The biomarkers employed in the BS-EWM are non-expensive and frequently used also in developing countries.",
+      "claim_type": "EXPLICIT",
+      "source": "An important and pragmatic aspect offered by the BS-EWM is that the biomarkers employed may be obtained by the emergency laboratory in less than an hour (Garrafa et al., 2020a) and, differently from other biomarkers (Kyriazopoulou et al., 2021), they are non-expensive and frequently used also in developing countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical advantages of the biomarkers used, with a citation to Kyriazopoulou et al., 2021 for comparison.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "1b3627bb-b93e-4406-8090-d772408a0c68",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C50",
+      "claim": "At the Spedali Civili of Brescia, the BS-EWM is integrated within the Laboratory Information System (LIS).",
+      "claim_type": "EXPLICIT",
+      "source": "At the Spedali Civili of Brescia, the BS-EWM is integrated within the Laboratory Information System (LIS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the implementation of the model at the hospital.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "7dd37874-e470-432b-8edb-4df4c3c629b7",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C51",
+      "claim": "The BS-EWM works as a web-based calculator and is easy to interpret.",
+      "claim_type": "EXPLICIT",
+      "source": "It works as a web-based calculator and is easy to interpret.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical implementation of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "dc59b421-4073-4a55-9e23-c263900d7b6c",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C52",
+      "claim": "The online calculator allows an easy assessment of the EWM, requiring only the entering of analyte values and X-ray score.",
+      "claim_type": "EXPLICIT",
+      "source": "The online calculator allows an easy assessment of the EWM, requiring only the entering of analyte values and X-ray score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the functionality of the online calculator.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "6644fd30-c610-4dbf-afef-ff0a5b6be8a9",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C53",
+      "claim": "The score is calculated even if some of the values are missing.",
+      "claim_type": "EXPLICIT",
+      "source": "The score is calculated even if some of the values are missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capability of the model to handle missing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "c6f51696-2dc1-4809-afc3-35fa8bb39fc1",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C54",
+      "claim": "The system may be integrated with the electronic health record and the radiology information system, allowing a completely automatic data retrieval and entering, without any operator interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in our center the system may be integrated with the electronic health record and the radiology information system, allowing a completely automatic data retrieval and entering, without any operator interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential integration capabilities of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "34f46b53-82e8-46b2-a55f-72c2fa368ff0",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C55",
+      "claim": "The BS-EWM provides a risk threshold of 0.5, above which patients are graded as having a potentially high death-risk.",
+      "claim_type": "EXPLICIT",
+      "source": "It provides a risk threshold of 0.5, above which patients are graded as having a potentially high death-risk, thus supporting closer clinical observation or admission to a high-intensive care ward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about how the model's output is interpreted for clinical decision-making.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "c166de66-f692-4b6e-815e-4abd13252e41",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C56",
+      "claim": "The need to regularly update models and closely monitor their performances over time and geographically should be underlined, given the rapidly changing nature of the disease and its management.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the need to regularly update models and closely monitor their performances over time and geographically should be underlined, given the rapidly changing nature of the disease and its management.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the understanding of COVID-19's evolving nature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "d37e1202-a08c-4fc4-aa47-5e198aa77d57",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C57",
+      "claim": "The dataset contained 2782 COVID-19 symptomatic patients, hospitalized between March and December 2020 at SCBH after referring to the ED.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset contained 2782 COVID-19 symptomatic patients, hospitalized between March and December 2020 at SCBH after referring to the ED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "7090904b-12d7-4c19-867a-3716a361f09d",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C58",
+      "claim": "Blood tests were acquired within 24 hr after admission to the hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood tests were acquired within 24 hr after admission to the hospital.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the timing of data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "c5397549-7a85-4258-8f68-4e7832eb7e33",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C59",
+      "claim": "The 2782 patients were divided into two groups according to the two temporal peaks of incidence of the COVID-19 outbreak in Lombardy: MA including 2106 patients admitted during the first wave and MD including 676 patients in the second wave.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the two temporal peaks of incidence of the COVID-19 outbreak in Lombardy, the 2782 patients were divided into two groups: (i) MA including 2106 patients admitted during the first wave; (ii) MD including 676 patients in the second wave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about how the study population was divided for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "ace5d93e-f141-4f2d-b453-54f88210a693",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C60",
+      "claim": "The BS-EWM was estimated using random forests, a non-parametric machine-learning method.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate the BS-EWM, the outcome (alive/dead) was modeled using as covariates: (i) Brescia X-ray score, (ii) 17 analytes, (iii) age. Since most of the covariates analyzed were strongly correlated (multi-collinearity) (Figure 2) and their relationships with the outcome were non-linear, the BS-EWM was estimated using random forests (Breiman, 2001; Carpita and Vezzoli, 2012), a non-parametric machine-learning method (Vezzoli, 2011; Vezzoli et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology used, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "7235aac1-71a1-41eb-8658-b3f0446ca944",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C61",
+      "claim": "The random forest algorithm is able to manage missing values which are common in clinical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the algorithm is able to manage missing values which are common in clinical studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capability of the random forest algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "5161e3cc-bee0-40a8-a37e-92f5d7fabb20",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C62",
+      "claim": "The 'on-the-fly-imputation' algorithm imputes data when it grows the forest handling interactions and non-linearity in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'on-the-fly-imputation' algorithm (Hong and Lynn, 2020) imputes data when it grows the forest handling interactions and non-linearity in the dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the imputation method used, supported by a citation to Hong and Lynn, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "c882c46d-fc46-4f57-82eb-f4dd4454af59",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C63",
+      "claim": "The prevalence rate of death in the two waves was different (20% in MA vs. 12% in MD).",
+      "claim_type": "EXPLICIT",
+      "source": "Since the prevalence rate of death in the two waves was different (20% in MA vs. 12% in MD), a strategy to generalize results in unbalanced datasets was applied, adopting a rebalancing method able to improve the detection of patients with a high death-risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the difference in mortality rates between the two waves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "d6d23a11-ad77-41a9-865e-33f8274afe81",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C64",
+      "claim": "The EWM was developed using 70% of the 2106 patients in the first COVID-19 wave (MA 2020) for training and the remainder (632 patients) for testing.",
+      "claim_type": "EXPLICIT",
+      "source": "The EWM was developed using the 2106 patients in the first COVID-19 wave (MA 2020) when in-hospital death prevalence was 20%. Seventy percent of them (1474 patients) were used for training the model and the remainder (632 patients) for testing it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data split for model development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "32a9c566-ea1e-439f-9eea-19843880b80a",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C65",
+      "claim": "Patients were randomly assigned to the training and testing subgroups, and further stratified according to the outcome (alive/dead).",
+      "claim_type": "EXPLICIT",
+      "source": "Patients were randomly assigned to the two subgroups, and further stratified according to the outcome (alive/dead).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology for dividing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "58d23e40-67f2-409d-b54d-346dfda0a5b5",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C66",
+      "claim": "Both the training and testing subgroups included the same rate of deaths (20.09%) as the full sample (2106 patients).",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, both the training and testing subgroups included the same rate of deaths (20.09%) as the full sample (2106 patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the stratification of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "30fd39fa-9853-4cc8-9c40-375157166611",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C67",
+      "claim": "The SMOTE function oversamples the minority class by using bootstrapping and k-nearest neighbor to synthetically create additional observations belonging to that class (dead).",
+      "claim_type": "EXPLICIT",
+      "source": "The SMOTE function oversamples the minority class by using bootstrapping and k-nearest neighbor to synthetically create additional observations belonging to that class (dead).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about how the SMOTE method works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "cb2403bc-3b4d-40fa-ba6c-49295e1a4bb3",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C68",
+      "claim": "The SMOTE procedure is combined with under-sampling of the majority class (alive).",
+      "claim_type": "EXPLICIT",
+      "source": "The procedure is combined with under-sampling of the majority class (alive).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the SMOTE methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "80599c94-3266-4c15-bf08-8391ae620d57",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C69",
+      "claim": "By means of silhouette analysis, k = 2 was determined as the optimal number of clusters into which to assign the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the optimum number of k-groups into which to assign the dataset, a matrix containing the 17 analytes and the Brescia X-ray score was used to compute the hierarchical cluster analysis (Salvi et al., 2019; Codenotti et al., 2016). By means of silhouette analysis, k = 2 was determined as the optimal number of clusters into which to assign the dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the cluster analysis performed, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "8ad16f5d-8d29-46e9-b66e-5c6928d74e03",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C70",
+      "claim": "A synthetic rebalanced dataset was obtained with an equal number of living and deceased patients (888 + 888).",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, a synthetic rebalanced dataset was obtained with an equal number of living and deceased patients (888 + 888).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the result of the SMOTE procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "d79d03cb-9254-48cf-8a54-8bc791f1c54a",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C71",
+      "claim": "The rebalancing procedure enabled a risk score to be devised ranging from 0 to 1 with a threshold of 0.5 to separate non-severely affected from severely affected patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The rebalancing procedure enabled a risk score to be devised ranging from 0 to 1 with a threshold of 0.5 to separate non-severely affected from severely affected patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the outcome of the rebalancing procedure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "d92d2004-93a4-4a77-8460-e442fd229809",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C72",
+      "claim": "A further validation of the EWM was conducted on the 676 COVID-19 patients in the second wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the model was tested on the subgroup of 632 patients in the first wave excluding the training set. A further validation of the EWM was conducted on the 676 COVID-19 patients in the second wave (Wynants et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the validation strategy, with a citation to Wynants et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "c4fbac07-c391-4f87-ab15-840f8437e0b5",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C73",
+      "claim": "The predictions extracted from the random forests classification were interpreted as in-hospital death probability conditional on the combination of the values of analytes, Brescia X-ray score, and age in COVID-19 patients at admission to the ED.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictions extracted from the random forests classification were interpreted as in-hospital death probability conditional on the combination of the values of analytes, Brescia X-ray score, and age in COVID-19 patients at admission to the ED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about how the model's predictions are interpreted.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "c5b08511-747e-4100-a2a1-e1afd5c0f3ba",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C74",
+      "claim": "The BS-EWM score is available for use online at https://bdbiomed.shinyapps.io/covid19score.",
+      "claim_type": "EXPLICIT",
+      "source": "The BS-EWM score is available for use online (https://bdbiomed.shinyapps.io/covid19score).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the availability of the online calculator.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "5677d45a-ab01-4439-a76b-58d31378052d",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C75",
+      "claim": "In the SCBH, the BS-EWM is integrated within LIS returning the death-risk score directly from the medical report.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SCBH it is integrated within LIS returning the death-risk score directly from the medical report.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the implementation of the model at the hospital.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "8409df14-29ce-4280-8b01-763b0dff26ae",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C76",
+      "claim": "The study adheres to the TRIPOD checklist for predictive model development and validation.",
+      "claim_type": "EXPLICIT",
+      "source": "This paper adheres to the TRIPOD checklist for predictive model development and validation (Collins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological standards followed, supported by a citation to Collins et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "60e323c7-d0eb-4419-a9f5-f2bc54850258",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C77",
+      "claim": "The study was approved by the local ethics committee (COVID-SURG-BS; NP 4059).",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the local ethics committee (COVID-SURG-BS; NP 4059).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "b43c7d35-213a-40c0-b5b2-c6fe28a5a371",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C78",
+      "claim": "Considering one biomarker per time, the model provides good predictions in training, but bad performances out of sample.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that considering one biomarker per time, the model provides good predictions in training, but bad performances out of sample (contrary to the BS-EWM score it loses its predictive power on fresh data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comparison of univariate models with the multivariate BS-EWM model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "21d4d6ae-7c9e-40dc-a143-cf3a990543bd",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C79",
+      "claim": "A score based on a multivariate model provides better results since it also considers interactions among variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is evident that a score based on a multivariate model provide better results since it also considers interactions among variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of model performances.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "bd2cb064-df54-4a0c-b12e-dcb49a422977",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C80",
+      "claim": "The model was trained on a subsample extracted from the first wave (70%) and tested on data not used to calibrate the model (remaining 30% from the first wave) and on data from the second wave.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was trained on a subsample extracted from the first wave (70%) and tested (i) on data not used to calibrate the model (remaining 30% from the first wave) and (ii) on data from the second wave (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the model training and testing strategy, illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "fcee7db1-627e-4541-acbd-7c69246cc850",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C81",
+      "claim": "In-hospital mortality in the second wave was 40% lower than in the first wave.",
+      "claim_type": "IMPLICIT",
+      "source": "Though the BS-EWM has been developed on a cohort of 2106 patients belonging to the COVID-19 first wave, the model also demonstrated a sensitivity greater than 70% in the early prediction of high risk in patients in the second wave, when in-hospital mortality was 40% lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the mortality rates: first wave 20.09%, second wave 12.13%, which represents approximately a 40% reduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "880c90c7-5053-46ff-851f-d614128de349",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C82",
+      "claim": "Most of the covariates analyzed were strongly correlated (multi-collinearity).",
+      "claim_type": "EXPLICIT",
+      "source": "Since most of the covariates analyzed were strongly correlated (multi-collinearity) (Figure 2) and their relationships with the outcome were non-linear, the BS-EWM was estimated using random forests (Breiman, 2001; Carpita and Vezzoli, 2012), a non-parametric machine-learning method (Vezzoli, 2011; Vezzoli et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by the correlation plot in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "459b23c2-e73d-46d4-b1c7-87fef52d9b80",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "claim_id": "C83",
+      "claim": "The relationships between covariates and the outcome were non-linear.",
+      "claim_type": "EXPLICIT",
+      "source": "Since most of the covariates analyzed were strongly correlated (multi-collinearity) (Figure 2) and their relationships with the outcome were non-linear, the BS-EWM was estimated using random forests (Breiman, 2001; Carpita and Vezzoli, 2012), a non-parametric machine-learning method (Vezzoli, 2011; Vezzoli et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a justification for using random forests.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "291f2ed4-9f49-4f2d-b7b6-926c1269f7b0",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The COVID-19 outbreak in Lombardy caused over 30,000 deaths by March 2021, and the Spedali Civili di Brescia hospital experienced a surge of severely ill patients that exceeded available resources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 provide contextual background about the severity of the COVID-19 outbreak in the region. C1 presents mortality statistics, while C2 describes the hospital's resource constraints, supported by a citation. These claims establish the clinical context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "abf3d4a6-d8e8-4eb3-b98b-b780a92164f3",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A chest X-ray severity score (Brescia X-ray score) was developed to grade pulmonary involvement and was able to predict in-hospital mortality in 302 patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C4 describe prior work on the Brescia X-ray score. C3 is supported by multiple citations documenting the score's development, and C4 reports its predictive capability in a specific cohort. These claims establish the foundation for incorporating the X-ray score into the BS-EWM model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study enrolled 2782 COVID-19 patients hospitalized between March and December 2020, divided into two temporal waves with distinct demographic and clinical characteristics, including different mortality rates (20.09% in first wave vs. 12.13% in second wave).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C20, C57-C59 provide comprehensive descriptive statistics for the study cohort. The data are internally consistent, with appropriate statistical comparisons (p-values reported) between groups. The demographic and clinical characteristics are clearly documented with means, standard deviations, and statistical significance testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "5d21b5c3-d955-4a87-80b3-ebcbf2fd52d1",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Brescia X-ray score showed significant correlations with multiple blood biomarkers, with positive correlations with inflammatory markers (NLR, CRP, LDH, ferritin, D-dimer) and negative correlations with lymphocyte %, monocyte %, and basophil %. Most covariates were strongly correlated (multicollinearity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C22, and C82 describe correlation analyses supported by Figure 2. The correlation patterns are biologically plausible and consistent with COVID-19 pathophysiology. The identification of multicollinearity appropriately justifies the choice of random forests over linear methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "850b9272-3afe-4818-8eae-7d5e2acea27e",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The BS-EWM was developed using random forests to handle multicollinearity and non-linear relationships, with 70% of first-wave patients used for training and 30% for validation. SMOTE was applied to address class imbalance, creating a rebalanced dataset with equal numbers of living and deceased patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C71, C80, C83 describe the methodological approach with appropriate justifications. The use of random forests is well-justified given multicollinearity and non-linearity. The SMOTE procedure is appropriately applied to address class imbalance, though this approach has limitations (synthetic data generation). The methodology is supported by appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "26044b31-941a-496c-90c4-68d07f0b5c24",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The SMOTE procedure improved accuracy, specificity, and sensitivity of the random forest model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 is supported by reference to Supplementary file 1c comparing performance metrics with and without SMOTE. However, the specific performance improvements are not quantified in the main text, limiting full evaluation of the magnitude of improvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "a8420196-3243-4398-814d-a6b7f23e76c4",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Age was the most powerful predictor in the BS-EWM model, masking other covariates. Among blood analytes, the strongest predictors were LDH, D-dimer, NLR, CRP, lymphocyte %, ferritin, and monocyte %. Nine of 17 analytes and the Brescia X-ray score had relative variable importance >60.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C24-C26 describe variable importance findings supported by Figures 3 and 4. The identification of age as the dominant predictor is consistent with COVID-19 epidemiology. The partial dependence plots (C26) show appropriate non-monotonic relationships with plateaus at high values, which is biologically plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "21aa9e8c-f1e7-44ac-b677-50289d9f6d1f",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The BS-EWM achieved AUC values of 0.98 (training), 0.83 (validation), and 0.78 (testing), with sensitivity of 0.93 (training), 0.82 (validation), and 0.73 (testing). Random forest outperformed GBM and logistic regression in terms of AUC, sensitivity, and specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C27, C28 report model performance metrics supported by Table 2 and Figure 5. However, the very high training AUC (0.98) compared to validation (0.83) and testing (0.78) suggests potential overfitting. The substantial drop in performance on the second wave (testing set) raises concerns about temporal generalizability. The comparison with other models is appropriate, but the logistic regression shows poor testing performance (AUC 0.52), suggesting potential issues with model specification or the SMOTE approach for that method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "4387deda-63d8-4301-b1bd-52c93a2aa987",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The BS-EWM demonstrated sensitivity >70% in predicting high risk in second-wave patients, despite 40% lower in-hospital mortality compared to the first wave.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C81 describe the model's performance on the second wave. The 40% reduction in mortality (from 20.09% to 12.13%) is accurately calculated. The maintained sensitivity >70% (specifically 0.73 per C28) demonstrates some temporal robustness, though the performance decline is notable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "03e93d90-5239-4ddc-aae9-781f512a22d8",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Univariate models based on single biomarkers showed good training performance but poor out-of-sample performance, while the multivariate BS-EWM model provided better results by considering interactions among variables.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78 and C79 are supported by Supplementary file 1d comparing univariate and multivariate models. This comparison appropriately demonstrates the value of the multivariate approach and justifies the complexity of the BS-EWM model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "68c909e1-94b6-479d-b7e0-c81772f19808",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The key biomarkers in the model (LDH, D-dimer, NLR, lymphocyte counts) reflect established COVID-19 pathophysiology including systemic tissue damage, coagulopathy, cytokine storm, and lymphopenia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C43 provide biological interpretation of the model's key predictors, supported by appropriate citations. The mechanistic explanations are consistent with established COVID-19 pathophysiology and provide biological plausibility for the model's predictive features.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "8b6765c1-ea51-4640-8acd-4a380b0b4b97",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The biomarker thresholds identified in the BS-EWM align with values proposed by other authors. The chest X-ray score was significantly higher in patients who died and may provide stability to the model when blood data are missing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by citations (Webb et al., 2020; Caricchio et al., 2021) and statistical analysis (Table 1). The external validation of thresholds strengthens confidence in the model. The role of the X-ray score in handling missing data is appropriately noted, though its lower variable importance suggests limited independent predictive value.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The BS-EWM is implemented as a web-based calculator integrated with the hospital's Laboratory Information System, providing rapid risk assessment using readily available, inexpensive biomarkers obtainable within one hour, with a risk threshold of 0.5 for clinical decision-making.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C47-C55, C74-C75 describe the practical implementation and clinical utility of the model. The claims about rapid turnaround time are supported by citation (Garrafa et al., 2020a). The web-based calculator and LIS integration demonstrate practical deployment. However, the clinical validation of the 0.5 threshold for decision-making is not explicitly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "800e16cd-6ee9-41b8-bd3a-dc39a9cc4270",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study has limitations including geographic restriction to one Italian region, potential equipment-dependent variation in biomarker values, and inapplicability to asymptomatic or pediatric populations. Regular model updates are needed given the evolving nature of COVID-19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31, C56 appropriately acknowledge study limitations. The geographic limitation is significant for generalizability. The equipment variation concern is supported by citations (Martens et al., 2021; Lippi et al., 2020). The exclusion of asymptomatic and pediatric patients is appropriate given the study design. The recommendation for regular updates is prudent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    },
+    {
+      "id": "e72ad2c4-c265-487c-970c-9ad574345dd6",
+      "content_id": "a8cfce58-006d-4603-a5d0-921a62c767b5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model was validated on 676 second-wave patients, with predictions interpreted as in-hospital death probability. The study adhered to TRIPOD guidelines and received ethics approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C73, C76, C77 describe validation procedures and study governance. The temporal validation on the second wave is appropriate. Adherence to TRIPOD guidelines (Collins et al., 2015) and ethics approval demonstrate methodological rigor and appropriate oversight.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:14:55.166677Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "05e90a9a-ece3-4fe1-8957-3b9b300bb533",
+      "result_id": "291f2ed4-9f49-4f2d-b7b6-926c1269f7b0"
+    },
+    {
+      "claim_id": "f776cb8c-1abe-46dd-97c2-82485500f17e",
+      "result_id": "291f2ed4-9f49-4f2d-b7b6-926c1269f7b0"
+    },
+    {
+      "claim_id": "d097f612-0a65-4355-a08f-03d25d324ea8",
+      "result_id": "abf3d4a6-d8e8-4eb3-b98b-b780a92164f3"
+    },
+    {
+      "claim_id": "529e4b4e-1e56-4ad3-a465-f8d076ca749a",
+      "result_id": "abf3d4a6-d8e8-4eb3-b98b-b780a92164f3"
+    },
+    {
+      "claim_id": "2de8c3f2-5545-43e8-832e-9cffbdfd6ea6",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "a1e5ca57-f3ca-41a8-9992-2c1b229cca58",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "607b7ee2-6f2d-4c8f-a3ca-539a8c6551ab",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "0715b053-229f-4e61-bf12-adaf5be932b5",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "841ab334-ab93-4cb2-9e4d-f32bba6a3ade",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "b8bfda93-57c3-41ba-9d45-335f92a01d68",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "65bf452d-3d68-4a68-847b-2894cf2304ba",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "ae7e62a3-8e0f-40d5-aab1-b9f014a84eb6",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "b7acff43-6d7d-4e63-bd1e-6473c9091f9c",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "e66c5b0e-ded8-484a-9f2e-2520b048a9a8",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "8b67dd51-4c6d-4395-8476-f9c42c6e3c45",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "6ed39059-9f13-4d8f-aa82-f5f01e4ee7d4",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "d37e1202-a08c-4fc4-aa47-5e198aa77d57",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "7090904b-12d7-4c19-867a-3716a361f09d",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "c5397549-7a85-4258-8f68-4e7832eb7e33",
+      "result_id": "f5651ad9-8c4d-4594-ab27-3e97d91d1098"
+    },
+    {
+      "claim_id": "93af0646-de52-4ece-a15a-9c135c213f9d",
+      "result_id": "5d21b5c3-d955-4a87-80b3-ebcbf2fd52d1"
+    },
+    {
+      "claim_id": "b1b192c0-aeb8-43af-b4cb-799415315e99",
+      "result_id": "5d21b5c3-d955-4a87-80b3-ebcbf2fd52d1"
+    },
+    {
+      "claim_id": "880c90c7-5053-46ff-851f-d614128de349",
+      "result_id": "5d21b5c3-d955-4a87-80b3-ebcbf2fd52d1"
+    },
+    {
+      "claim_id": "ace5d93e-f141-4f2d-b453-54f88210a693",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "7235aac1-71a1-41eb-8658-b3f0446ca944",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "5161e3cc-bee0-40a8-a37e-92f5d7fabb20",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "c882c46d-fc46-4f57-82eb-f4dd4454af59",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "d6d23a11-ad77-41a9-865e-33f8274afe81",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "32a9c566-ea1e-439f-9eea-19843880b80a",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "58d23e40-67f2-409d-b54d-346dfda0a5b5",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "30fd39fa-9853-4cc8-9c40-375157166611",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "cb2403bc-3b4d-40fa-ba6c-49295e1a4bb3",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "80599c94-3266-4c15-bf08-8391ae620d57",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "8ad16f5d-8d29-46e9-b66e-5c6928d74e03",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "d79d03cb-9254-48cf-8a54-8bc791f1c54a",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "bd2cb064-df54-4a0c-b12e-dcb49a422977",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "459b23c2-e73d-46d4-b1c7-87fef52d9b80",
+      "result_id": "850b9272-3afe-4818-8eae-7d5e2acea27e"
+    },
+    {
+      "claim_id": "b3c420a4-7a81-4509-90c2-f9ae720cfbdd",
+      "result_id": "26044b31-941a-496c-90c4-68d07f0b5c24"
+    },
+    {
+      "claim_id": "b0a5e774-fe59-4d16-86b4-9050bb39f1c0",
+      "result_id": "a8420196-3243-4398-814d-a6b7f23e76c4"
+    },
+    {
+      "claim_id": "772d2a0e-9075-4415-ae94-cb312e940871",
+      "result_id": "a8420196-3243-4398-814d-a6b7f23e76c4"
+    },
+    {
+      "claim_id": "19e8381d-1027-4a32-907d-2f98bfa5b232",
+      "result_id": "a8420196-3243-4398-814d-a6b7f23e76c4"
+    },
+    {
+      "claim_id": "a3899b65-e8a7-4b98-89a5-3ba428aaa2b2",
+      "result_id": "a8420196-3243-4398-814d-a6b7f23e76c4"
+    },
+    {
+      "claim_id": "2a3d0d86-1724-44ba-a888-68b5965d0e87",
+      "result_id": "a8420196-3243-4398-814d-a6b7f23e76c4"
+    },
+    {
+      "claim_id": "897f563b-b1d8-4583-806b-0e6fc3b83aed",
+      "result_id": "21aa9e8c-f1e7-44ac-b677-50289d9f6d1f"
+    },
+    {
+      "claim_id": "f6663a04-cccb-4648-9d3b-05750fd6aa43",
+      "result_id": "21aa9e8c-f1e7-44ac-b677-50289d9f6d1f"
+    },
+    {
+      "claim_id": "75d48250-8ac0-4143-a7f5-d92ecbf61e5b",
+      "result_id": "21aa9e8c-f1e7-44ac-b677-50289d9f6d1f"
+    },
+    {
+      "claim_id": "369eb798-55c6-4e3a-a143-b10bc784e5a4",
+      "result_id": "4387deda-63d8-4301-b1bd-52c93a2aa987"
+    },
+    {
+      "claim_id": "fcee7db1-627e-4541-acbd-7c69246cc850",
+      "result_id": "4387deda-63d8-4301-b1bd-52c93a2aa987"
+    },
+    {
+      "claim_id": "b43c7d35-213a-40c0-b5b2-c6fe28a5a371",
+      "result_id": "03e93d90-5239-4ddc-aae9-781f512a22d8"
+    },
+    {
+      "claim_id": "21d4d6ae-7c9e-40dc-a143-cf3a990543bd",
+      "result_id": "03e93d90-5239-4ddc-aae9-781f512a22d8"
+    },
+    {
+      "claim_id": "078300f4-9d34-47f3-b439-2c87f293ce1e",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "aed468ea-f755-4f63-add0-e180843da8db",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "55156706-0435-41ec-b33a-0be627e85b1c",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "dcce4182-ec16-4201-ab45-d11fcaf34e30",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "2dfa2b58-8884-429f-99a3-ec8cc22efaab",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "f87ce2c3-07bd-4e71-9ba8-3bcab3d127c7",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "28a14aad-71df-4fba-905d-b59626fb63f0",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "dd420049-62e9-42f2-8017-cd1eef7e1aa9",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "e3fee07f-4796-4277-8c3c-37b5881603eb",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "a80e1f19-d693-4faf-8525-bf17b7eae208",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "e2dedd30-a380-444e-b618-1ac00cd88c97",
+      "result_id": "68c909e1-94b6-479d-b7e0-c81772f19808"
+    },
+    {
+      "claim_id": "d3e11962-b0b4-403b-9764-d56762c0d6f3",
+      "result_id": "8b6765c1-ea51-4640-8acd-4a380b0b4b97"
+    },
+    {
+      "claim_id": "33bed156-e1b1-44fc-9f3a-7ac47c39dbe9",
+      "result_id": "8b6765c1-ea51-4640-8acd-4a380b0b4b97"
+    },
+    {
+      "claim_id": "3ac1d166-f336-4561-8d10-947b0911ce32",
+      "result_id": "8b6765c1-ea51-4640-8acd-4a380b0b4b97"
+    },
+    {
+      "claim_id": "e5da6ee1-f58d-4e10-a5a2-6e9d61b10db1",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "56bd4ff5-c43f-4ffc-bba5-0a5c10aca18e",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "0279924a-e170-46e3-9932-3868862d3305",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "5cbdce53-a211-4842-94a5-944b7893b04a",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "1b3627bb-b93e-4406-8090-d772408a0c68",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "7dd37874-e470-432b-8edb-4df4c3c629b7",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "dc59b421-4073-4a55-9e23-c263900d7b6c",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "6644fd30-c610-4dbf-afef-ff0a5b6be8a9",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "c6f51696-2dc1-4809-afc3-35fa8bb39fc1",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "34f46b53-82e8-46b2-a55f-72c2fa368ff0",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "c5b08511-747e-4100-a2a1-e1afd5c0f3ba",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "5677d45a-ab01-4439-a76b-58d31378052d",
+      "result_id": "1b69d5d4-45be-4b0f-96c2-9ad026157abd"
+    },
+    {
+      "claim_id": "234f4006-f28e-44b7-a059-fb0ad3d57735",
+      "result_id": "800e16cd-6ee9-41b8-bd3a-dc39a9cc4270"
+    },
+    {
+      "claim_id": "d750713c-09c2-4539-bc15-3775d9585d1e",
+      "result_id": "800e16cd-6ee9-41b8-bd3a-dc39a9cc4270"
+    },
+    {
+      "claim_id": "44970714-7956-4869-ba1e-4d5264e08155",
+      "result_id": "800e16cd-6ee9-41b8-bd3a-dc39a9cc4270"
+    },
+    {
+      "claim_id": "c166de66-f692-4b6e-815e-4abd13252e41",
+      "result_id": "800e16cd-6ee9-41b8-bd3a-dc39a9cc4270"
+    },
+    {
+      "claim_id": "d92d2004-93a4-4a77-8460-e442fd229809",
+      "result_id": "e72ad2c4-c265-487c-970c-9ad574345dd6"
+    },
+    {
+      "claim_id": "c4fbac07-c391-4f87-ab15-840f8437e0b5",
+      "result_id": "e72ad2c4-c265-487c-970c-9ad574345dd6"
+    },
+    {
+      "claim_id": "8409df14-29ce-4280-8b01-763b0dff26ae",
+      "result_id": "e72ad2c4-c265-487c-970c-9ad574345dd6"
+    },
+    {
+      "claim_id": "60e323c7-d0eb-4419-a9f5-f2bc54850258",
+      "result_id": "e72ad2c4-c265-487c-970c-9ad574345dd6"
+    }
+  ],
+  "comparisons": []
+}

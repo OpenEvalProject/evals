@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C35",
+      "C36",
+      "C57",
+      "C71"
+    ],
+    "result": "Using STED and expansion microscopy, the authors demonstrate that acetylated microtubules are enriched in the core of dendritic shafts while tyrosinated microtubules form a peripheral shell near the plasma membrane. This spatial organization is maintained along dendrite length and across different dendrite diameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C57, and C71 consistently report the core-shell spatial organization across multiple imaging modalities (2D STED, 3D STED, ExM). The radial distribution analysis (C35, C36) provides quantitative support. The findings are well-documented in Figures 1 and 4 with appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C82"
+    ],
+    "result": "The authors quantified that acetylated microtubules account for 65-75% (refined to 72\u00b16%) and tyrosinated microtubules for 20-30% (refined to 26\u00b18%) of all dendritic microtubules, with only 2\u00b15% remaining unclassified. Acetylated microtubules are approximately three times more abundant than tyrosinated ones, and together these two populations account for 98% of all dendritic microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantification is supported by two independent methods: soma-based calibration (C53, C55) and dendrite-intrinsic FlipExM measurements (C63-C67). The authors acknowledge differences between methods and justify their preference for dendrite-intrinsic measurements (C82). The convergence of estimates across methods and the detailed mathematical framework (Equations 6-10) strengthen confidence in these values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C59",
+      "C60"
+    ],
+    "result": "Acetylation and tyrosination mark two distinct but not completely exclusive microtubule subsets. Acetylated microtubules display 47-55% lower tyrosination (\u03b1=0.45-0.53), while tyrosinated microtubules show 45-60% lower acetylation (\u03b2=0.45-0.60) compared to their respective reference populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-dimensional intensity histograms (Figure 2G, Figure 5F) clearly demonstrate anti-correlation between acetylation and tyrosination. The quantitative crosstalk parameters (\u03b1 and \u03b2) are measured using single-microtubule analysis with appropriate filtering to exclude bundles. The residual overlap (C46, C47) is acknowledged and accounted for in the 'modification unmixing' approach, which is analogous to spectral unmixing in fluorescence microscopy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C61",
+      "C62",
+      "C76"
+    ],
+    "result": "The total number of microtubules in dendrites scales linearly with cross-sectional area, with estimated densities of 68 microtubules/\u03bcm\u00b2 (soma-based method) and 53 microtubules/\u03bcm\u00b2 (dendrite-based FlipExM method). These values are consistent with prior electron microscopy estimates of 66 microtubules/\u03bcm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The linear relationship is demonstrated in Figures 3C and 5J. The two independent methods yield similar but not identical estimates, with the authors acknowledging potential sources of variation (C77). The consistency with electron microscopy data (C76) provides external validation. The discrepancy between methods is discussed transparently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C56"
+    ],
+    "result": "Individual microtubules cannot be resolved within dendrites using STED microscopy due to inter-microtubule spacing being smaller than STED resolution, but can be resolved in the cell body where microtubules are more dispersed. Expansion microscopy substantially improves visualization clarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The resolution limitation is well-documented (C39, C40) and supported by electron microscopy citations. The authors appropriately adapted their methodology by analyzing cell body microtubules (C41) and developing FlipExM (C56) to overcome this limitation. This represents sound experimental design responding to technical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Decomposition of total tubulin radial density as a weighted sum of acetylated and tyrosinated densities independently confirms 65% acetylated and 35% tyrosinated microtubules in ExM samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This analysis (Figure 4G) provides independent validation of the microtubule composition estimates using a different mathematical approach (Equations 12-14). The authors acknowledge this method doesn't account for the 'other' microtubule fraction, which is appropriate given the small size of that population. The convergence with other methods strengthens the overall findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The detyrosinated tubulin antibody did not provide reliable staining in neurons, though it worked in non-neuronal cells. Delta 2-tubulin was detected on a subset overlapping with central acetylated bundles but was not further characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result for detyrosinated tubulin staining is appropriately reported with supporting data (Figure 1\u2014figure supplement 4). The authors transparently acknowledge this technical limitation and do not overinterpret the delta 2-tubulin observation. This represents good scientific practice in reporting both successful and unsuccessful experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The soma-based and dendrite-based calibration methods yielded similar estimates for acetylated microtubules (74\u00b18% vs 72\u00b16%) but differed for tyrosinated microtubules (16% vs 26%). The authors suggest dendritic dynamic microtubules may be more detyrosinated than somatic ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the comparison is clearly presented (C78), the interpretation involves speculation (C80, C81). The authors appropriately identify the dendrite-intrinsic measurements as more reliable (C82), but the biological explanation for the difference remains uncertain. Additional experiments would be needed to definitively establish whether tyrosination levels differ between soma and dendrites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The spatial separation between stable and dynamic microtubules may promote efficient intracellular transport by segregating cargoes driven by subset-specific motors and limiting directional switching for non-selective motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative functional interpretations (C74, C75) of the observed spatial organization. While the speculation is reasonable and grounded in cited literature (C72, C73), no direct experimental evidence for these transport effects is provided in this study. The authors appropriately present these as hypotheses rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "The binary classification of microtubules as acetylated or tyrosinated is acknowledged as an oversimplification that doesn't capture the full complexity of microtubule modifications, including spatial variation along individual microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge limitations of their classification scheme (C87) with supporting citations (C88). The inference that most detyrosinated microtubules are also acetylated (C90) is reasonable given the small 'other' fraction (2%). This represents appropriate scientific humility about the scope and limitations of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Occasional inclusion of small microtubule bundles in single-microtubule measurements could have inflated single-microtubule intensity estimates, thereby underestimating total microtubule numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is presented as speculation (C77) about a potential source of error. While the authors implemented filtering steps to minimize this issue, they acknowledge it remains possible. Without additional validation experiments, the magnitude of this potential error cannot be determined. This represents appropriate acknowledgment of methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study used DIV9 rat hippocampal neurons cultured at 50k cells/well, with specific pre-extraction and fixation protocols. Expansion microscopy achieved expansion factors of 4.14-4.16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly stated in the Materials and Methods section. The protocols are described with sufficient detail for reproducibility and reference published methods. The expansion factor measurement is quantitative and within expected ranges for the ExM protocol used.",
+    "result_type": "MINOR"
+  }
+]

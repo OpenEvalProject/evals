@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A genome-wide Forward Genomics screen identified 29 genes preferentially lost in 10 low-acuity mammal species (visual acuity <1) representing 7 lineages. These genes are significantly enriched for vision-related functions including the GO term 'visual perception' (p=1.8e-7), mouse lens expression (p=5.5e-3), and human eye diseases like cataract (p=8.5e-3). A control screen in high-acuity species retrieved only 2 genes with no known eye functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide statistical evidence for enrichment of vision-related functions among the 29 genes, with appropriate p-values and FDR correction (C34). The control screen (C37) strengthens specificity. The methodology (C21, C33) is clearly described with defined thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Among the 29 genes identified, 15 have no previously studied role in the eye, yet many are expressed in human eyes. Four genes (RSKR, LACTBL1, LBHD1, ZNF529) cluster in expression patterns with known retina phototransduction genes, predicting uncharacterized vision-related functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by data (Figure 1B, source data 2) and citation to Uhlen et al., 2010. The prediction in C40 is a reasonable inference from convergent gene loss patterns in low-acuity species, though it remains a hypothesis requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "SERPINE3 was identified as the second-ranked candidate, lost in 7 of 10 low-acuity mammals including all four subterranean species and three echolocating bat species. Non-echolocating flying foxes that rely on vision retain intact SERPINE3. This association is robust across different visual acuity thresholds and phenotype definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by genomic data showing independent inactivating mutations. The robustness analysis (C46-C47) using three modified screens consistently ranking SERPINE3 highly strengthens the association. The contrast between echolocating and non-echolocating bats (C43-C45) provides compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Extended analysis of 381 additional mammalian genomes revealed SERPINE3 is inactivated in 70 of 430 placental mammals with at least 18 independent losses. Losses occur in nocturnal/burrowing species (pangolins, armadillos, aardvark), fossorial species (moles, mole rats), echolocating species (7 bat lineages, shrews, tenrecs), and aquatic species with reduced vision (sirenians). Species retaining vision as primary sense maintain intact SERPINE3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extensive phylogenetic analysis (C48-C74) with validation of mutations through shared mutations or raw sequencing reads (described in methods) provides strong evidence. The pattern of 18 independent losses (C49) specifically in species not relying on vision (C50-C74) is compelling. Selection analysis (C62, C64) supports relaxed selection. The inference of relaxed selection causing losses (C75-C76) is well-supported by evolutionary theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Sequence analysis reveals SERPINE3 is a member of the serine proteinase inhibitor (SERPIN) family with well-conserved key features of inhibitory serpins among placental mammals, including a signal peptide and reactive core region, suggesting it functions as a secreted serine proteinase inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by sequence analysis data (Figure 2 supplements 9-10) showing conservation of signal peptide and reactive core features. The inference that SERPINE3 functions as a secreted inhibitor (C80) is reasonable based on conserved structural features and established SERPIN biology (C78), though direct functional evidence is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "RT-qPCR analysis in zebrafish using two normalization genes (actb, rpl13a) consistently showed highest serpine3 expression in eye, followed by brain. Within the eye, expression is significantly higher in retina compared to RPE (p<0.05) and other eye tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by RT-qPCR data with appropriate biological replicates (n=3-8) and statistical testing (two-sided t-tests). The use of two independent normalization genes (C89) strengthens the findings. Dissection experiments (C91-C93) localize expression to retina with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Mouse Serpine3 shows highest expression in whole eye with no detectable expression in colon, cortex, heart, liver, spleen, and testis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by RT-qPCR data (Figure 3D) with three biological replicates, consistent with the zebrafish findings and supporting conserved eye-specific expression in vertebrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In situ hybridization in zebrafish retina shows serpine3 is expressed specifically in the inner nuclear layer, localized to cell bodies of M\u00fcller glia cells but not in bipolar or amacrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by chromogenic ISH (Figure 3E-F) and fluorescence ISH with cell-type markers (Figure 3G-H, supplements). Co-staining with GFAP (M\u00fcller glia marker) and negative results with bipolar/amacrine markers provide clear cell-type identification. Specificity is confirmed by absence of signal in knockout fish (supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Analysis of publicly available expression data provides evidence for SERPINE3 expression in eyes of human, rat, cat, cow, and chicken, suggesting a conserved expression pattern in vertebrate eyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by analysis of multiple expression datasets (source data 5). While the data is described as \"sparser,\" the consistency across multiple vertebrate species supports the inference of conserved expression. However, the evidence is less direct than the zebrafish/mouse experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "CRISPR-mediated knockout of serpine3 in zebrafish (two independent lines: cbg17 with promoter/exon 1 deletion, cbg18 with frameshift in coding exon 1) resulted in viable, fertile adults with abolished gene expression. Both lines showed frequent iris notches (4/5 cbg17, 13/20 cbg18) and significantly reduced iris solidity (p=0.009, p=6.35e-9) and circularity compared to wild-type siblings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are well-supported by experimental data. Two independent knockout lines (C101, Figure 4A-C) showing consistent phenotypes (C102-C105) provide strong evidence. Statistical analysis using Wilcoxon rank sum test (C104) is appropriate for the non-normal data. The use of both eyes as replicates is justified since phenotypes often affected only one eye.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Histological analysis of serpine3 knockout zebrafish revealed reduced distance between retina and lens, disorganized retinal layering with all layers present but less structured, reduced cell density, lack of clear separation between rod outer segments and RPE cells, and displaced pigmented cells throughout retinal layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 are supported by detailed histological analysis (Figure 4F, supplements 4-5) in both knockout lines. The phenotypes are consistent between lines, strengthening causality. However, the analysis appears qualitative without quantification of cell numbers or layer thickness, which would strengthen claims C108-C109.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Two human SNPs in linkage with SERPINE3 are associated with eye-related traits: rs1028727 (~10 kb upstream) with decreased optic nerve head area, and rs7327381 (~97 kb downstream) with increased corneal curvature, supporting a putative ocular function in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by GWAS data with proper citations (Bonnemaijer et al., 2019; Fan et al., 2020). However, the inference of SERPINE3 function (C116) is limited by the distance of SNPs from the gene and lack of functional validation. Linkage disequilibrium analysis would strengthen the association, but the convergence with experimental data is supportive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C27",
+      "C29"
+    ],
+    "result": "SERPINE3 has highest expression in eyes of zebrafish and mouse, is expressed in M\u00fcller glia cells in zebrafish retina, and CRISPR knockout results in eye shape alterations and retinal layering defects, together suggesting SERPINE3 has a role in vertebrate eyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result combines expression data (C24-C25, supported by Figures 3A-H), functional knockout data (C27, supported by Figure 4), leading to the conclusion C29. The convergence of comparative genomics predictions, expression patterns, and knockout phenotypes provides strong support for an eye-related function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "M\u00fcller glia are major retinal macroglia essential for photoreceptor viability, maintaining blood-retinal barrier and regulating vascularization. The serpine3 knockout phenotype of RPE disorganization resembles phenotypes from M\u00fcller glia ablation experiments in mice, which also show RPE aggregation and pigment displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are well-established facts supported by citations. The comparison to MG ablation phenotypes (C120-C121) is reasonable and supported by citation to Shen et al., 2012. However, this is correlative evidence; direct demonstration that serpine3 loss impairs MG function would strengthen the mechanistic link.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "While serpine3 is expressed in M\u00fcller glia in zebrafish, SERPINE3 appears to be expressed in RPE in mouse and human, indicating cell type specificity may differ between mammals and fish. As a likely secreted protein, SERPINE3 may have similar functions despite different cellular sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by citations (Hoang et al., 2020; Hadziahmetovic et al., 2012; Cowan et al., 2020) and the authors' own zebrafish data. The speculation about similar function despite different cell types (C128) is reasonable given the predicted secretion, but remains speculative without functional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "By integrating comparative genomics with experiments in model organisms, screens for specific phenotype-associated gene signatures can predict functions of uncharacterized genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by the successful prediction and experimental validation of SERPINE3's eye-related function. The study demonstrates proof-of-principle for this approach, though generalization to other genes/phenotypes would require additional examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Additional candidate genes from the screen show evidence for eye-related functions: LACTBL1 (putative serine proteinase, retina expression pattern, linked SNP associated with refractive error), SAPCD1 (missense mutation associated with macular degeneration), LRIT2 (SNPs associated with macular thickness and refractive error, knockdown reduces eye size in zebrafish), and PKD1L2 (knockout causes lens abnormalities in mouse, intronic SNP associated with myopia onset).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C142 are supported by appropriate citations to published studies. These provide additional validation of the screen's predictive power. However, most evidence is correlative (GWAS associations, expression patterns) rather than functional, with only LRIT2 (C140) and PKD1L2 (C141) having functional validation in model organisms.",
+    "result_type": "MINOR"
+  }
+]

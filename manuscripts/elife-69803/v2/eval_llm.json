@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes foundational knowledge about miRNA biology, including their structure (~22-nt regulatory RNAs processed from hairpin precursors), mechanism of action (association with AGO proteins to direct mRNA destabilization/translational repression), and targeting principles (seed region pairing to nucleotides 2-7 is critical, with contextual features influencing efficacy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5) represent well-established knowledge in the miRNA field, supported by multiple citations to prior literature. They provide necessary background context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior work has established that 3\u2032-supplementary and 3\u2032-compensatory pairing can enhance or enable miRNA targeting, with 3\u2032-supplementary sites comprising ~5% and 3\u2032-compensatory sites ~1.5% of conserved sites in mammals. The lin-41 sites in C. elegans exemplify the biological importance of 3\u2032-compensatory pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6-C10) accurately summarize prior literature on 3\u2032 pairing, supported by appropriate citations. They establish the biological relevance and motivation for the current study's systematic investigation of 3\u2032-pairing architectures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Previous measurements of 3\u2032-pairing contributions to binding affinity have shown variable effects across miRNAs and pairing architectures, ranging from modest (2-fold for let-7a positions 13-16) to substantial (>400-fold for extended pairing to miR-27a), with differences in optimal insertion positions and effects on target slicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C11-C19) accurately represent prior biochemical measurements from cited literature, establishing the incomplete and variable nature of existing knowledge about 3\u2032-pairing contributions, which motivates the comprehensive systematic approach of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors used RNA bind-n-seq (AGO-RBNS) with purified AGO2-miRNA complexes to systematically measure relative affinities of >1000 3\u2032-pairing architectures for each miRNA, revealing that optimal 3\u2032 pairing can increase affinity by >500-fold, that some miRNAs exhibit two distinct high-affinity binding modes, and that binding affinity and optimal pairing position correlate with G or oligo(G/C) nucleotides in the miRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C20-C24) represent the core methodological approach and major findings of the study. The experimental design is clearly described, the scale of measurements is unprecedented, and the key observations about binding modes and sequence preferences are supported by extensive data presented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "For let-7a, the most enriched 8-nt k-mer (AUACAACC, pairing to positions 11-18) was optimally enriched at library position 15, suggesting an optimal internal loop with 6 target nucleotides bridging seed and 3\u2032 pairing (+4 nt offset). This site was also enriched at neighboring offsets, indicating tolerance for varying loop lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C25-C28) describe specific observations from the initial k-mer enrichment analysis shown in Figure 1D. The data directly support these conclusions about optimal pairing position and offset preferences for let-7a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Relative KD measurements for let-7a 3\u2032-pairing architectures spanned a several hundred-fold range with high reproducibility (r\u00b2=0.96). Compensatory pairing to nucleotides 11-16 at optimal offsets achieved affinities comparable to canonical 6mer sites. The GGUUGU segment (positions 11-16) is most consequential for 3\u2032-compensatory pairing, with the 5\u2032 end (GGUU) more impactful than the 3\u2032 end. Optimal offset shifted from +2 nt for 4 bp pairing to +4 nt for 9-11 bp pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C29-C33) are directly supported by the comprehensive KD measurements and analysis shown in Figure 2. The reproducibility is excellent, and the conclusions about optimal pairing regions and offset preferences are clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study identifies two distinct 3\u2032-binding modes for let-7a: a 'zero-offset' mode (pairing starting at position 12, optimal at 0 or +1 nt offset) and a 'positive-offset' mode (pairing starting at position 11, optimal at +2 to +4 nt offset). The positive-offset mode requires longer target loops to accommodate pairing to the less accessible position 11 but achieves substantially greater affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C34-C39) describe a novel and important discovery supported by detailed analysis in Figures 2C-D. The data clearly show distinct offset preferences depending on whether pairing includes position 11, and the interpretation regarding accessibility is reasonable given the structural constraints of AGO2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Weak relative affinities observed for extended 3\u2032-pairing starting at position 9 with 0 nt offset are attributed to AGO2-catalyzed slicing of extensively paired molecules, which depletes them from the bound library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C40) provides a mechanistically sound explanation for anomalous data points, consistent with known AGO2 slicing activity for extensively paired targets. The inference is reasonable and supported by the observation that sites with offsets preventing contiguous pairing do not show this effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "At optimal offset (+4 nt), pairing to let-7a positions 10-20 conferred ~380-fold increased affinity, rivaling canonical 8mer affinity. The authors' measurements for pairing to positions 13-16 (1.5-fold increase) agree with previous low-throughput measurements (1.6-2-fold), while extending this pairing to position 21 at 0 nt offset only increased affinity to 3.1-fold, highlighting the importance of both optimal position and offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C41-C44) demonstrate both the magnitude of 3\u2032-pairing contributions under optimal conditions and validate the measurements against prior work. The data in Figure 2E directly support these quantitative conclusions and emphasize the importance of the newly identified positive-offset binding mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Reporter assays in cells confirmed key AGO-RBNS findings: marginal benefit of pairing to only nucleotides 13-16, greater benefit of pairing to 11-19 vs 13-21, strong benefit of positive offset for 11-19 pairing, and ability of optimal 3\u2032-compensatory sites to match 8mer efficacy. The +4A offset site was most effective, with nucleotide identity of the bridging segment modulating repression. Dual sites showed ~2.8-fold cooperativity. In vitro affinity correlated well with cellular repression (r\u00b2=0.71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C45-C51) demonstrate that the in vitro binding measurements translate to cellular repression, validating the biological relevance of the findings. The reporter assay data in Figure 3 support these conclusions with appropriate statistical testing. The correlation between affinity and repression (r\u00b2=0.71) is strong, though some quantitative discrepancies exist (e.g., +4U site performance).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Analysis of miR-1 and miR-155 revealed miRNA-specific 3\u2032-pairing preferences. Both showed stabilizing 3\u2032 pairing with increasing length, but differed in magnitude (miR-1 modest, miR-155 >500-fold increases) and optimal positions (miR-1: 12-15 extending 3\u2032-ward; miR-155: 13-16 with discontinuous shifts). Neither showed the dramatic offset shift of let-7a, though miR-1 showed broadened offset preferences for longer sites including position 11, and miR-155 preferences broadened with pairing to G19-G22. Optimal sites paired to at least two nucleotides of positions 13-16 but frequently not the entire segment, with shorter sites preferring adjacent G nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C52-C62) are well-supported by the comprehensive data in Figure 4. The miRNA-specific differences in 3\u2032-pairing preferences are clearly demonstrated, supporting the conclusion that AGO association does not fully standardize 3\u2032-pairing architecture or magnitude. The preference for G nucleotides is consistently observed across miRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The effect of pairing offset was largely independent of guide-target complementarity for all three miRNAs. A multiplicative model of pairing and offset coefficients fit the data well (r\u00b2=0.92, 0.86, 0.96 for let-7a, miR-1, miR-155 respectively), yielding interpretable coefficients representing maximum binding energy for each pairing range and fractional realization at each offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C63-C64) describe an important analytical framework that successfully captures the data structure. The model fits shown in Figure 5 and supplements demonstrate good agreement with measured values, and the independence of offset and pairing effects is a useful simplification that appears justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Comparison with nearest-neighbor thermodynamic predictions revealed that AGO association reduces differences in binding energy for different 3\u2032-end sequences compared to free RNA in solution. The benefit of 3\u2032 pairing appears largely offset by disruption of favorable AGO-miRNA interactions, with the magnitude of this cost being miRNA-specific. Pairing to specific G nucleotides (G11 of let-7a, G12 of miR-1, G20 of miR-155) showed cooperative benefits, enabling other paired nucleotides to contribute more.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C65-C68) provide important mechanistic insights supported by the thermodynamic analysis in Figure 5 and supplements. The observation that measured affinities are much lower than predicted from RNA duplex stability is well-documented, and the inference about disruption of AGO-miRNA interactions is reasonable, though somewhat speculative (C66-C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The added affinity of 3\u2032 sites was relatively constant when supplementing different seed-matched sites but varied for 3\u2032-compensatory sites with different seed mismatches. Seed-mismatch effects were miRNA-specific and unrelated to mismatch binding affinities. Chimeric miRNA experiments demonstrated that pairing and offset preferences track with the 3\u2032 sequence while seed-mismatch preferences track with the seed sequence, showing separability of these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C69-C74) reveal important functional distinctions between 3\u2032-supplementary and 3\u2032-compensatory pairing, supported by data in Figures 5F-H and Figure 6 supplements. The chimeric miRNA experiments provide strong evidence for the independence of seed and 3\u2032 region contributions, though the mechanistic basis for seed-mismatch effects on 3\u2032 pairing remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Analysis of imperfect 3\u2032 sites revealed no imperfections that increased affinity over Watson-Crick pairing. Larger mismatch effects were observed for nucleotides 11-15 of let-7a, 12-15 of miR-1, and 15-22 of miR-155, consistent with the importance of these regions. Mismatch effects depended primarily on the miRNA nucleotide's overall importance for pairing, regardless of position within the site. Deletions had similar effects to mismatches, while bulges were marginally less severe. Terminal bulges showed small but significant benefits (p<10\u207b\u2074 for all three miRNAs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C75-C79) are supported by the comprehensive analysis of imperfect sites in Figure 7A-F. The systematic examination of mismatches, bulges, and deletions provides valuable insights into the tolerance of 3\u2032 pairing to imperfections, with appropriate statistical testing for the terminal bulge effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mismatch effects within 3\u2032 pairing were much lower than predicted by nearest-neighbor parameters (r\u00b2=0.02 for observed vs predicted \u0394\u0394G). The miRNA-target U:G wobble was as disruptive as typical mismatches despite predictions of greater tolerance. For 8 of 12 mismatches, fractional \u0394G reduction was within 10% of prediction, but A:G, G:G, G:U, and U:G mismatches caused 31%, 42%, 21%, and 48% more reduction than predicted. Nearest-neighbor parameters failed to predict 3\u2032 pairing in three respects: overall contribution was far less than predicted, mismatched target G nucleotides were more deleterious, and wobble pairing was less favorable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C80-C83) are well-supported by the thermodynamic analysis in Figure 7G. The poor agreement with nearest-neighbor predictions is clearly demonstrated, and the specific deviations identified provide important insights into how AGO-bound miRNAs differ from free RNA duplexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Seed mismatches had much larger influence on \u0394\u0394G than 3\u2032 mismatches, with remarkably uniform effects (~3 kcal/mol for all 12 mismatch/wobble possibilities). Binding preferences at both seed and 3\u2032 regions were not well explained by nearest-neighbor rules, though the nature of deviations differed between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C84-C86) are supported by the seed mismatch analysis in Figure 7H. The uniform effect of seed mismatches contrasts sharply with the variable effects in the 3\u2032 region, suggesting different structural constraints in these two regions of the AGO-miRNA-target complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The study concludes that productive 3\u2032 pairing can encompass the entire miRNA 3\u2032 region and should not be limited to a short 3\u2032-supplementary region (positions 13-16). Preferred positions of 3\u2032 pairing vary widely between miRNAs to include virtually any nucleotide downstream of the seed, arguing against assigning the same short 3\u2032-supplementary region to all miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C87-C88) represent important conceptual conclusions supported by the comprehensive data showing that 3\u2032-site affinities nearly always increase with extended pairing and that optimal positions differ substantially between miRNAs. This challenges the previous simplified view of a universal 3\u2032-supplementary region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The findings for let-7a agree with recent C. elegans studies showing that pairing to nucleotides 11-14 is more important than 13-16, and that pairing to 11-19 is more important than 13-21. C. elegans requires let-7 repression of lin-41 for viability through two 3\u2032-compensatory sites pairing to nucleotides 11-19. Mutagenesis studies in C. elegans show nucleotides 11-13 are critical, 14-16 have intermediate importance, and 17-19 have no detectable importance for viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C89-C91) effectively connect the in vitro findings to biological function in C. elegans, supported by appropriate citations. The agreement between the biochemical measurements and genetic studies validates the biological relevance of the identified pairing preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The crystal structure of AGO2-miR-122 bound to a 3\u2032-supplementary target shows nucleotides 9-11 are unavailable for pairing due to helical distortion and occlusion by PIWI and L2 loop residues. The authors suggest this structure reflects the zero-offset binding mode, as it explains why extending pairing from position 12 to 11 provides minimal benefit at 0 nt offset. Both binding modes appear compatible with TDMD and miRNA-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C92-C94) integrate structural information with the functional data. While C92 accurately cites prior structural work, C93 is speculative interpretation that, while reasonable, lacks direct structural evidence for the positive-offset mode. C94 is an inference based on limited examples. The structural basis for the positive-offset mode remains to be determined.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C16"
+    ],
+    "result": "Prior work (Hoppe et al., 2019) found that topic choice accounted for over 20% of race-based funding disparities among NIH R01 applications (2011-2015), with AAB PI applications skewed toward less-funded topics, potentially due to peer reviewer biases. However, that analysis did not account for differential funding ecologies among NIH Institutes and Centers (ICs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C9-C10, and C16 accurately describe the findings and limitations of Hoppe et al., 2019, which are properly cited and form the motivation for the current re-analysis. These claims establish the context and rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42"
+    ],
+    "result": "In the re-analysis of 96,697 first-time R01 applications, 10% of 148 topics accounted for 50% of applications submitted by AAB PIs, and 25% of topics accounted for 70% of AAB applications, demonstrating a highly skewed distribution of topic preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41, and C42 are directly supported by Figure 1 and descriptive statistics from the data analysis. The nonrandom distribution is clearly demonstrated and quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C44",
+      "C47",
+      "C48",
+      "C53",
+      "C70",
+      "C82"
+    ],
+    "result": "Applications on AAB Preferred topics had similar peer review outcomes (discussion rates, priority scores, percentile rankings) compared to other topics, but were funded at lower rates (8.2% vs 8.8%, a 7% relative difference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C44, C47-C48, C53, C70, and C82 are well-supported by data in Tables 2-3 and Figure 2. The statistical analyses show no significant association between AAB preference and peer review scores (p=0.87), while funding differences are documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C46",
+      "C54",
+      "C55"
+    ],
+    "result": "Applications on AAB Preferred topics were 42% more likely to be assigned to Higher AAB ICs, which had 10% lower funding rates despite similar peer review outcomes. ICs receiving more AAB Preferred topic applications tended to have lower award rates (r=-0.35, p=0.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C45-C46, C54-C55 are supported by data in Tables 2-3 and Figure 4. The correlation between IC assignment patterns and funding outcomes is demonstrated, though the p-value of 0.08 for the IC-level correlation is borderline significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Topic-specific mean priority scores showed greater variability for smaller topics (regression to the mean), but there was no significant association between mean priority score and topic size (p=0.63). AAB preferred topics had slightly worse residuals, but differences were small (<1 priority score point).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by Figure 3 and regression analysis. The statistical analysis appropriately accounts for topic size effects, and the minimal differences in residuals argue against substantial peer reviewer bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Observed topic-specific award rates were strongly correlated with predicted award rates based solely on IC-specific award rates (r=0.62, p<0.0001). Predicted award rates showed a borderline significant negative association with proportion of AAB applications (p=0.06), while actual award rates showed no significant association (p=0.76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by Figure 5 and correlation analyses. The strong correlation between predicted and actual award rates based on IC assignment provides key evidence for the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C67",
+      "C68",
+      "C83",
+      "C84"
+    ],
+    "result": "Probit regression models showed that adjusting for topic choice reduced the race-based funding disparity coefficient by 5%, adjusting for IC assignment reduced it by 5%, but adjusting for IC award rates reduced it by 14%, indicating that IC award rates explain funding disparities better than topic choice alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C66-C68, C83-C84 are supported by regression analyses in Table 5. The comparison of coefficient reductions across models provides quantitative evidence for the relative importance of IC award rates versus topic choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C69",
+      "C81"
+    ],
+    "result": "AAB preferred topics were associated with lower funding probability in univariable analysis (p<0.01), but after adjusting for IC award rate, there was no association between AAB preferred topics and funding (p=NS). IC award rate was strongly associated with funding likelihood (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C69, and C81 are supported by regression analyses in Table 6. The disappearance of the topic effect after controlling for IC award rate is the key finding supporting the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "The lower rate of funding for AAB Preferred topics was primarily due to their assignment to ICs with lower award rates, not to peer-reviewer preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 represents the main conclusion and is well-supported by the convergence of multiple lines of evidence: similar peer review outcomes (C6-C7), differential IC assignment patterns (C54), strong correlation between IC award rates and topic-specific outcomes (C56), and regression models showing IC award rates explain disparities better than topic choice (C62, C64-C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Peer reviewers may be slightly biased in favor of AAB-preferred topics, as these applications were more likely to reach formal discussion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is an inference from C70 showing higher discussion rates for AAB-preferred topics. However, the trend was non-significant (p=0.12, C47), and alternative explanations for higher discussion rates are not ruled out. The claim of bias is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The NIH funding system involves assignment of applications to 24 ICs with varying award rates (6-15%), and funding decisions are based on peer review scores, strategic priorities, and available funds, not peer review scores alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15, C17-C19, C22-C30 describe the NIH funding system and are supported by citations and data in Table 1. These claims provide essential context for understanding the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C31",
+      "C32"
+    ],
+    "result": "Resubmissions and competing renewals systematically fare better on peer review than first-time submissions and were excluded from the primary analysis to minimize bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C31-C32 are supported by citations to Lauer 2017 and 2016. The exclusion of these applications is a reasonable methodological choice to ensure comparable observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Applications were classified into 148 topics using the Word2vec algorithm, correcting a data processing error from Hoppe et al., 2019 which reported 150 topics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 describe the methodology and correction of a previous error. The use of Word2vec is properly cited (Mikolov et al., 2013), and the correction is transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The analysis included 96,697 first-time R01 applications (from 157,405 total) with an overall award rate of 9%. AAB PIs submitted 1,643 applications (2%), and IC-specific award rates ranged from 6-15% with AAB PI representation ranging from <1% to 15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 provide descriptive statistics that are clearly documented in the text and Table 1. These data establish the study population and key variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The primary analysis focused on first-time submissions with low award rates (<10%), but supplementary analyses of resubmissions and single-PI applications yielded similar findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 describe the scope of analyses and robustness checks. The consistency of findings across different subsets strengthens confidence in the main results, though the supplementary analyses are referenced in appendices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Only 2% of PIs were AAB, which limits the ability to comprehensively describe AAB scientific interests and represents a source of error in characterizing topic preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 acknowledge an important limitation of the study. The small percentage of AAB PIs is a documented fact (C38), and the inference about limited coverage (C76) and measurement error (C77) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "NIH has increasingly recognized the importance of enhancing research in targeted topics, including health disparities and health equity research, as evidenced by new Common Fund programs and RADx-UP investment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by citations to NIH 2021a and Tromberg et al., 2020. These claims provide policy context but are not central to the study's findings.",
+    "result_type": "MINOR"
+  }
+]

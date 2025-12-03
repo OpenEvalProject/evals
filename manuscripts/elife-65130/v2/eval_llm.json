@@ -1,0 +1,157 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C46",
+      "C75",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Six clinically relevant antibiotic resistance plasmids with diverse characteristics were successfully introduced into E. coli MG1655 and clinical isolates. The plasmids varied in size (8.8-148 kb), incompatibility groups, mobility, and fitness costs (10-27% reduction), and all carried \u03b2-lactamase genes. Whole genome sequencing confirmed minimal chromosomal mutations (0-2) accumulated during plasmid acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19, C46, C75, C81-C83 collectively describe the experimental system and are well-supported by data in Table 1, Figure 1A, and whole genome sequencing results. The plasmid characteristics are documented with accession numbers, fitness measurements include appropriate replicates (n=6), and genomic validation confirms the integrity of the experimental strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Acquisition of antibiotic resistance plasmids induces collateral sensitivity to unrelated antibiotics in E. coli MG1655. Seven plasmid-antibiotic combinations showed \u22652-fold MIC reductions, with six reaching statistical significance (p<0.015). These CS effects were validated using multiple independent methods (MIC, growth curves, disk-diffusion), with six of seven instances confirmed by at least one additional method and four showing agreement across all three approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27, C71-C74 describe the core finding of plasmid-induced CS and are strongly supported by convergent evidence from three independent methodologies (Figure 1B-D). Statistical analyses are appropriate (Mann-Whitney U test, ANOVA, t-tests with Welch's correction), sample sizes are adequate (n=6-15 replicates), and the moderate effect sizes (2-4 fold changes) are consistent across methods. The one non-significant result (C24, p=0.2) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Collateral sensitivity to azithromycin induced by pOXA-48 is highly conserved across phylogenetically diverse E. coli clinical isolates (8/9 strains), while CS to colistin shows limited conservation (2/9 strains). All tested strains exhibited CS to at least one antibiotic when carrying pOXA-48.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by disk-diffusion data across nine diverse clinical E. coli isolates (Figure 2B) with appropriate statistical testing (t-test with Welch's correction, p<0.035). The phylogenetic diversity of strains is documented in Figure 2A. However, C34's suggestion of therapeutic exploitation is speculative and requires additional validation beyond the disk-diffusion data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Sequential antibiotic treatments can selectively kill pOXA-48-carrying E. coli populations. In 11 of 20 strain-treatment combinations, plasmid-carrying populations showed significantly higher mortality than plasmid-free counterparts (p<0.001). The mortality patterns correlated with strain-specific CS profiles determined by disk-diffusion assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by survival curve data (Figure 3) with appropriate statistical analysis (log-rank test, p<0.001). The consistency between mortality patterns and CS profiles (C36) strengthens the interpretation. However, a critical limitation acknowledged by the authors is that plasmid-bearing and plasmid-free populations were treated separately rather than in mixed cultures, which limits direct clinical applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Control experiments validated that plasmid loss is negligible and plasmid conjugation does not significantly affect fitness measurements under the experimental conditions used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 describe important methodological controls. C76 is supported by control experiments performed by the authors, while C77 is supported by citation to prior work (Alonso-del Valle et al., 2020). These controls are essential for interpreting the competition assay results in C19.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The antibiotic concentrations used in treatment experiments (8 mg/L azithromycin, 4 mg/L colistin) are within clinically relevant ranges as defined by EUCAST breakpoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 compares experimental concentrations to EUCAST clinical breakpoints (16 \u00b5g/ml azithromycin, 2 \u00b5g/ml colistin). However, the authors acknowledge using non-standardized media and culture conditions, and azithromycin breakpoints are only available for Salmonella and Shigella, not E. coli. This limits the direct clinical relevance of the concentration comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The molecular mechanisms underlying plasmid-associated collateral sensitivity remain unknown, and understanding these mechanisms is necessary for developing rational broad-spectrum anti-plasmid therapeutic strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 accurately characterize the current knowledge gap and future research needs. C39 is a factual statement about the field's current understanding, while C40 is a reasonable inference about requirements for future therapeutic development. These claims appropriately frame the limitations and future directions of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Colistin and azithromycin may be valuable for treating pOXA-48-carrying enterobacteria, as both are already used clinically for enterobacterial infections, with colistin serving as a last-resort antibiotic against carbapenem-resistant strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C43 suggest therapeutic applications based on the CS findings. While C42-C43 accurately describe current clinical use (supported by citations), C41's suggestion of value for treating pOXA-48-carrying bacteria is speculative. The experimental evidence shows CS effects and selective killing in separate populations, but lacks validation in mixed populations or in vivo models necessary to support clinical recommendations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C28",
+      "C29",
+      "C30",
+      "C44",
+      "C45",
+      "C79",
+      "C80"
+    ],
+    "result": "The manuscript establishes context by reviewing prior work on collateral sensitivity, plasmid-mediated antibiotic resistance, and identifies a knowledge gap regarding CS effects from horizontal plasmid acquisition. This represents the first systematic analysis of CS associated with complete antibiotic resistance plasmids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10, C28-C30, C44-C45, C79-C80 provide background context and are appropriately supported by citations to established literature. The novelty claim (C80) appears justified based on the distinction between prior work on mutations in plasmid genes versus acquisition of complete plasmids. The hypothesis (C79) logically follows from established knowledge about plasmid fitness costs.",
+    "result_type": "MINOR"
+  }
+]

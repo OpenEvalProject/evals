@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study employed an accelerated longitudinal design with 208 healthy participants (48% female) aged 14-26 years, scanned at baseline and follow-up (mean interval 11.28 months) across three UK sites. Participants were divided into template (n=30) and non-template (n=178) cohorts with matched demographics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C35, C38-C41, and C116-C121 provide comprehensive and consistent documentation of the study design, sample characteristics, and data acquisition. The longitudinal design with matched cohorts and multi-site acquisition is well-described with specific demographic details and scan parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Manifold learning applied to structural connectomes identified three eigenvectors explaining ~50% of variance, with manifold eccentricity showing linear age-related expansion (FDR<0.05) predominantly in bilateral prefrontal, temporal, and parietal regions, with peak effects in heteromodal association and paralimbic areas, default mode and limbic networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C42-C50, and C122-C124 collectively demonstrate robust manifold expansion findings with appropriate statistical correction (FDR<0.05), linear age effects confirmed by absence of quadratic effects (C50), and convergent evidence across multiple stratification schemes (cortical hierarchy and functional communities). The methodology is well-defined and results are consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C51",
+      "C52",
+      "C84",
+      "C93"
+    ],
+    "result": "Manifold expansion reflected increased within-module connectivity and network segregation, indicating differentiation of higher-order association networks. Graph-theoretical analysis showed significant positive correlations between manifold eccentricity changes and degree centrality and within-module degree, but not with participation coefficient or connectivity distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C51-C52, C84, and C93 provide converging evidence from manifold and graph-theoretical analyses. The positive associations with within-module measures and absence of associations with between-module measures (C93) support the interpretation of network consolidation rather than integration, though the interpretation relies on correlational evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C85",
+      "C86",
+      "C96",
+      "C97"
+    ],
+    "result": "Age-related manifold expansion remained significant after controlling for cortical thickness and MT skewness, though effect sizes were reduced (42%/18%/68% for thickness/MT/both). The study replicated prior findings of widespread cortical thinning and MT skewness reductions during adolescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C85-C86, and C96-C97 demonstrate that manifold findings persist beyond morphological changes, though with substantial effect size reductions (particularly 68% when controlling for both covariates, C56). This suggests partial independence but also substantial shared variance with morphological measures. The replication of prior morphological findings (C53-C54) strengthens confidence in the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C87",
+      "C114"
+    ],
+    "result": "Subcortical-weighted manifold analysis revealed significant age-related changes in caudate and thalamus connectivity patterns (FDR<0.05), with marginal effects in putamen, pallidum, and hippocampus (FDR<0.1), indicating parallel cortico-subcortical reconfigurations during adolescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57-C58, C87, and C114 consistently report subcortical findings with appropriate statistical thresholds. The distinction between significant (FDR<0.05) and marginal (FDR<0.1) effects is clearly stated. However, the marginal findings (C58) should be interpreted cautiously as they do not meet conventional significance thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C59",
+      "C60",
+      "C61",
+      "C88"
+    ],
+    "result": "Transcriptomic association analysis identified genes spatially correlated with manifold expansion (FDR<0.05, consistently expressed across donors r>0.5), showing enrichment in cortex, thalamus, and cerebellum from childhood onward (FDR<0.001), and striatum at childhood-to-adolescence transition (FDR<0.05), but not in hippocampus or amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C59-C61, and C88 describe transcriptomic findings with appropriate statistical thresholds. However, the analysis associates adolescent brain changes with adult post-mortem gene expression data from independent samples, which is acknowledged as an indirect association. The developmental enrichment analysis relies on mouse-derived developmental periods, introducing cross-species assumptions. These methodological limitations warrant caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C89",
+      "C106",
+      "C108",
+      "C109"
+    ],
+    "result": "Machine learning prediction of follow-up IQ using manifold features showed modest but significant performance (r=0.14-0.21, p<0.05), with best performance combining baseline and trajectory data from both cortical and subcortical regions (r=0.21\u00b10.02, MAE=8.86\u00b10.14, p=0.01), outperforming baseline model (p<0.001). Predictive regions included prefrontal, parietal, temporal cortices, caudate, and thalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C62-C66, C89, C106, C108-C109 demonstrate significant but weak prediction performance with appropriate cross-validation and comparison to baseline. The incremental improvements with trajectory and subcortical data are consistent. However, C110 acknowledges the weak association strength and deviation from equality line, indicating limited practical predictive utility despite statistical significance. The p-value for baseline cortical features (p=0.09, C62) is marginal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C82",
+      "C110"
+    ],
+    "result": "The prediction model showed limitations: no significant prediction of IQ change between timepoints, no improvement with nonlinear regression tree methods, and weak correlation strength with predicted scores not on the equality line despite outperforming baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C82, and C110 transparently report negative and limiting findings. These are important for understanding the boundaries of the prediction approach and are appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Extensive sensitivity analyses demonstrated robustness of manifold expansion findings across different parcellation scales (200 vs 300 parcels), sites, sexes, embedding parameters (r=0.92\u00b10.10), dimensionality reduction methods (PCA vs diffusion map, r=0.998\u00b10.001), alignment quality, thresholding approaches, and edge weight analysis. Findings were consistent but weaker in Tanner scale subset, with significant interaction showing stronger effects in early pubertal stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C81 provide comprehensive sensitivity analyses demonstrating remarkable consistency across methodological variations. The high correlations (r>0.9) across different approaches strongly support robustness. The Tanner scale interaction (C81, t=2.36, p=0.01) provides biological validation, though limited to n=73 participants. The graph-theoretical comparisons (C74-C75) show variable spatial similarity (r=0.18-0.57), indicating manifold eccentricity captures partially distinct information from traditional centrality measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C91",
+      "C92",
+      "C94",
+      "C113"
+    ],
+    "result": "The study established that higher-order association cortices in prefrontal, temporal, and parieto-occipital regions show manifold expansion during adolescence, interpreted as increased differentiation from the rest of the brain, reflecting ongoing consolidation of transmodal cortical communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C91-C92, C94, and C113 synthesize the main findings with appropriate interpretation. The interpretation of manifold expansion as network differentiation (C92) is supported by the graph-theoretical correlations (C51-C52, C93). The connection to prior literature on late-maturing regions (C91) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C98"
+    ],
+    "result": "The network effects are hypothesized to be driven by ongoing maturation of fiber bundles interconnecting higher-order cortices (superior longitudinal fascicules, thalamic and basal ganglia pathways), with coupled processes affecting depth-dependent cortical myeloarchitecture and macroscale connectome organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95 and C98 provide mechanistic interpretations that are plausible but speculative. While C95 cites supporting literature (Tamnes et al., 2010), the study does not directly measure fiber bundle maturation or depth-dependent myeloarchitecture changes in relation to specific tracts. The coupling interpretation (C98) is based on covariate analysis showing effect size reductions, which suggests shared variance but does not establish a mechanistic coupling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The discussion contextualizes findings within literature on caudate's role in cortical network organization and higher-order cognition, and speculates that coupled network and molecular changes may affect excitation/inhibition balance, linking to developmental shifts and neurodevelopmental disorder pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 appropriately cite literature on caudate function and connectivity. However, C102-C105 are highly speculative, extending from the observed structural connectivity changes to E/I balance and disorder mechanisms without direct evidence. These represent plausible hypotheses for future work but are not supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C90"
+    ],
+    "result": "The study employed manifold learning techniques that decompose connectomes into lower-dimensional axes capturing connectivity gradients, providing a compact, data-driven perspective on connectome organization that aligns with established hierarchical models and has shown utility across multiple applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 and C90 appropriately describe the manifold learning approach with extensive citations to prior literature. The methodological description is accurate and the cited convergence with hierarchical models (C27) and diverse applications (C29-C30) provide appropriate context. This represents established methodology rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C111",
+      "C112",
+      "C115"
+    ],
+    "result": "The introduction establishes adolescence as a critical period for brain network maturation with implications for cognition and disorder risk, reviews prior morphological, microstructural, and connectivity findings, identifies the gap in longitudinal dMRI manifold studies, and describes transcriptomic and IQ prediction approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C23, C31-C34, C36-C37, and C111-C112, C115 provide appropriate literature review and context with extensive citations. C31 correctly identifies a gap in the literature that the study addresses. C37 appropriately justifies IQ as a cognitive measure. These claims establish context rather than present new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The IQ prediction findings complement conceptual accounts linking brain organization to cognitive function and prior efforts to predict IQ from connectivity and graph-theoretical measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 appropriately contextualizes the prediction findings within prior literature (Margulies et al., 2016; Mesulam, 1998; Greene et al., 2018). This represents appropriate scholarly positioning rather than a novel empirical finding.",
+    "result_type": "MINOR"
+  }
+]

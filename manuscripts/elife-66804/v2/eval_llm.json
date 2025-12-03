@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors developed virtual trajectories that covered the arena in approximately 6 times less duration than real trajectories (100s vs 590s) while maintaining high correlation with spatial activity maps from real trajectories, enabling computationally efficient simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C60-C62 provide convergent evidence from Figure 1 showing high correlation values (>0.9) between virtual and real trajectory outcomes, with saturation at 100s. This methodological validation is well-supported by quantitative comparisons across multiple metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Incorporating three forms of biological heterogeneities (intrinsic, afferent, synaptic) progressively disrupted grid-patterned activity in CAN models, with synaptic heterogeneity being most disruptive, followed by afferent, then intrinsic. The disruption manifested as loss of spatial selectivity rather than changes in broad measures like average firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C22 are strongly supported by systematic data in Figures 2-3 showing progressive reductions in grid scores, information rate, and sparsity with increasing heterogeneity degrees. The hierarchy of disruption (C16-C17) and network size dependence (C21-C22) are quantitatively demonstrated across multiple network configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24"
+    ],
+    "result": "Biological heterogeneities introduced perturbations predominantly in low-frequency components of neural activity (0-2 Hz), with variance in deviations from homogeneous networks progressively increasing with higher degrees of heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C24 are supported by spectral analysis in Figure 4 showing frequency-dependent variance of activity differences between homogeneous and heterogeneous networks. The concentration of perturbations in low frequencies is consistently demonstrated across all heterogeneity types and degrees.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors developed a phenomenological resonator model by adding a high-pass filter to integrator neurons, creating theta-frequency resonance. Homogeneous CAN models with these resonators produced stable grid patterns qualitatively and quantitatively similar to integrator networks, with grid spacing and size controlled by \u03c4 rather than resonance frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C30-C33 are supported by data in Figures 5-7 demonstrating that phenomenological resonators maintain grid-patterned activity. The dissociation between resonance frequency and grid properties (C32-C33) is shown through systematic parameter manipulations, though this is specific to the rate-based model framework used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CAN models with phenomenological resonating neurons were resilient to heterogeneities and exhibited stable grid-patterned firing even at the highest degrees of all three forms of heterogeneities, with all quantitative measurements (grid score, information rate) remaining robust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34-C36 are strongly supported by data in Figure 8 showing maintained grid scores and information rates across heterogeneity degrees in resonator networks, contrasting sharply with the disruption seen in integrator networks (Figures 2-3). Multiple trials and trajectory variations confirm robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A mechanistic resonator model incorporating a slow negative feedback loop (\u03c4m = 75 ms) produced stable grid patterns in homogeneous networks. Phase-plane analysis revealed that heterogeneous resonator networks maintained closed orbits indicating spatial periodicity, while heterogeneous integrator networks lost closed orbits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C37-C40 are supported by data in Figures 9-11 and phase-plane analysis in Figure 11\u2014supplement 1B. The mechanistic model's ability to maintain closed orbits in heterogeneous conditions provides visual confirmation of network stabilization, though the phase-plane analysis is qualitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The slow kinetics of the negative feedback loop (\u03c4m) was essential for stabilizing heterogeneous CAN networks with mechanistic resonators. Fast negative feedback loops (low \u03c4m) failed to stabilize networks, while progressive increases in \u03c4m enabled stabilization even at high heterogeneity degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C41-C43 are supported by systematic manipulation of \u03c4m in Figure 12 showing that stabilization requires slow feedback (\u03c4m > \u03c4). The specificity to heterogeneous networks (C43) is demonstrated in Figure 9. This provides direct mechanistic evidence for the low-frequency suppression hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Both phenomenological and mechanistic resonators suppressed low-frequency perturbations in heterogeneous networks, with mechanistic resonators being more effective and avoiding spurious high-frequency power introduced by the derivative-based phenomenological implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 and C44-C47 are supported by comprehensive spectral analysis in Figure 13 showing reduced variance in low-frequency deviations and targeted suppression of 0-2 Hz activity in resonator networks. The superiority of mechanistic resonators (C29, C47) is quantitatively demonstrated through octave analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors propose that mechanisms suppressing low-frequency activity have a universal role in stabilizing heterogeneous biological networks, with intrinsic neuronal resonance constituting a cellular-scale activity-dependent negative feedback mechanism. They speculate that specific resonance frequencies may reflect the need to suppress frequencies where heterogeneities introduce perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8 and C48-C50 extend beyond the data presented. While C7 is supported by citations about 1/f noise prevalence, C8 and C50 are speculative generalizations from grid-cell networks to all biological systems. The inference about resonance frequency tuning (C50) lacks direct experimental validation and remains a hypothesis requiring testing in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors contextualize their findings within the established framework of negative feedback as a stabilization motif across engineering and biological systems, noting that negative feedback reduces noise effects and that resonating conductances mediate slow negative feedback in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are well-supported by extensive citations to established literature on negative feedback in control theory and biology. These claims provide appropriate context for interpreting the study's findings but represent prior knowledge rather than new results from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The authors acknowledge limitations of their rate-based CAN model approach, including inability to assess spike timing relationships and the existence of alternative theoretical frameworks for grid-cell activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 accurately describe limitations of the modeling approach, supported by citations. This represents appropriate scientific caution about model scope and generalizability, though it doesn't constitute a result per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors establish the biological context that networks must maintain stable function despite parametric variability, and identify a gap in understanding how 2D CAN models for grid cells respond to biological heterogeneities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12 establish the study's motivation through general principles (C1, C9-C10) supported by citations and identification of a research gap (C12). These are appropriately framed background claims rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

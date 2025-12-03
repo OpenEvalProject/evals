@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors generated N-terminal and C-terminal sfGFP-tagged GAF alleles that are homozygous viable and fertile, with proper localization to nuclear puncta and mitotic chromosomes, demonstrating that the sfGFP tag does not interfere with essential GAF function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide converging evidence from protein structure (C32-C33), viability assays (C34), and imaging data (C35-C36) that the tagged alleles are functional. The proper localization pattern matching previous antibody staining (C35-C36) and viability/fertility (C34) strongly support that the sfGFP tag does not disrupt GAF function (C37).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "GAF binds to 3391 peaks at stage 3 and 4175 peaks at stage 5, with high specificity (no peaks in w1118 controls), enrichment for canonical GA-rich motifs centrally located in peaks, and enrichment at promoters. The majority of peaks (87% of stage 3, 71% of stage 5) are shared between stages, indicating GAF binding is established prior to widespread ZGA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 present a comprehensive ChIP-seq analysis with appropriate controls (C40), motif validation (C41-C42), genomic distribution analysis (C43), and temporal comparison (C44-C45). The high overlap between stages and enrichment for known GAF motifs provide strong evidence for the specificity and early establishment of GAF binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "56% of stage 3 and 43% of stage 5 GAF peaks overlap with peaks identified in S2 cells, indicating that while a majority of GAF-binding sites are maintained across tissues, a subset is likely tissue-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 demonstrate substantial but incomplete overlap between embryonic and S2 cell GAF binding. The comparison is appropriately qualified given differences in cell type and antibody (C46-C47), and the inference about tissue-specific binding (C50) is reasonable given the presence of unique peaks in each dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "The deGradFP system efficiently depletes sfGFP-GAF(N) in embryos, resulting in 0% hatching rate and death prior to NC14, demonstrating that maternal GAF is essential for progression through the MZT. The lower hatching rate of sfGFP-GAF(N) embryos (30%) compared to GAF-sfGFP(C) embryos (66%) is not due to differences in protein expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C60-C61 provide strong evidence for GAF essentiality through imaging (C55), hatching assays (C56, C60), and live imaging (C57). The fluorescence quantification (C61) appropriately controls for potential expression differences. However, the lower hatching rate of sfGFP-GAF(N) controls (30% vs 66% for C-terminal tag) raises concerns about the N-terminal tag affecting function, which could confound interpretation of the deGradFP results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "GAFdeGradFP embryos exhibit severe nuclear defects including asynchronous mitosis, anaphase bridges, nuclear dropout, and high nuclear mobility, with defects becoming more pronounced approaching NC14. Embryos can complete several rounds of mitosis before arresting. Control sfGFP-GAF(N) embryos proceed normally, demonstrating defects are due to GAF absence, not the sfGFP tag. These defects are reminiscent of zld depletion phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 provide detailed phenotypic characterization with appropriate controls (C67-C68) and comparison to published phenotypes (C69). The live imaging data (C62, C65) and temporal progression (C63-C64) are well-documented. The speculation about DNA damage response (C66) is appropriately qualified. However, the possibility of germline effects (mentioned elsewhere) is not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "1452 genes are misexpressed in GAFdeGradFP embryos (884 down-regulated, 568 up-regulated), including 7 of 8 homeotic genes and multiple gap genes. Down-regulated genes are enriched for developmental functions, while up-regulated genes show weak enrichment for response to stimulus and metabolic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 present comprehensive RNA-seq results with appropriate GO-term analysis. The identification of known GAF targets like homeotic genes (C73) and gap genes (C74) validates the approach. The enrichment patterns (C75-C76) are consistent with GAF's role in ZGA. Replicates are stated to be reproducible (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "45% of down-regulated genes are proximal to GAF peaks, compared to only 17% of up-regulated genes, with significant enrichment for GAF-binding sites near down-regulated genes (p<2.2\u00d710\u207b\u00b9\u2076), supporting a role for GAF specifically in transcriptional activation. Genes activated late in NC14 with proximal GAF binding are significantly more down-regulated than those lacking GAF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 integrate ChIP-seq and RNA-seq data with appropriate statistical testing (C79). The differential enrichment between down- and up-regulated genes (C77-C78) and the timing analysis (C80) provide strong evidence for GAF's role as an activator. The statistical significance is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Down-regulated transcripts in GAFdeGradFP embryos are enriched for zygotically expressed genes, while up-regulated transcripts are largely maternally contributed (p<2.2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 demonstrate appropriate classification of transcripts and statistical analysis. The enrichment pattern is consistent with GAF's role in ZGA and the expected indirect effect on maternal transcript degradation. The statistical significance is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C152",
+      "C153"
+    ],
+    "result": "174 genes are down-regulated in both GAFdeGradFP and clamp-RNAi embryos (19.7% of GAF targets, 50.1% of CLAMP targets), indicating that while GAF and CLAMP have some overlapping functions, a majority of GAF-regulated genes depend on GAF independently of CLAMP, and both factors are independently required for embryonic development during the MZT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C152-C153 appropriately compare GAF and CLAMP datasets to assess functional overlap. The limited overlap (C83) and distinct target sets (C152) support independent functions. However, the comparison relies on published CLAMP data with potentially different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Zld protein levels are consistent between GAFdeGradFP and control embryos, and sfGFP-GAF(N) levels are unchanged upon zld knockdown, demonstrating that neither GAF nor Zld protein levels are affected by knockdown of the other factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 provide appropriate reciprocal controls using immunoblots to rule out indirect effects through protein level changes. This is essential for interpreting the functional relationships between GAF and Zld.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "135 genes are down-regulated in both GAFdeGradFP and ZldCRY2 embryos (42% of Zld-dependent, 15% of GAF-dependent genes), with only 49 shared direct targets. Shared targets include gap genes (gt, kni, hkb, Kr, tll) and cellular blastoderm formation genes (slam, bnk). Only 29 up-regulated genes are shared.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 demonstrate limited overlap between GAF and Zld targets, supporting largely independent functions. The comparison to published ZldCRY2 data is appropriate, though differences in depletion methods (optogenetic vs. deGradFP) could affect comparability. The identification of specific shared targets (C90) provides biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "73% of GAF-dependent genes are expressed late (early NC14) or later (late NC14), while Zld-dependent genes are enriched for early (NC10-11) and mid (NC12-13) expression. This supports a model where Zelda preferentially controls earliest transcribed genes while GAF predominantly regulates genes expressed during widespread activation, with control gradually transferred from Zelda to GAF as development proceeds through the MZT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C91-C92 present a clear temporal separation of GAF and Zld function with strong statistical support (p=1.3\u00d710\u207b\u00b9\u2074 for C91). The timing analysis is based on published developmental staging data. However, the 'handoff' model (C7) is appropriately labeled as a proposal/speculation, as it represents an interpretation of the timing data rather than direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "42% of GAF-binding sites at stage 5 are also occupied by Zld. While Zld is known to facilitate binding of other transcription factors (Twist, Dorsal, Bicoid), with 19% of Dorsal sites depending on Zld, imaging shows Zld is not required for GAF to form subnuclear puncta during the MZT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 integrate ChIP-seq overlap analysis (C93) with imaging data (C96) to assess GAF-Zld relationships. The imaging appropriately controls for acquisition settings and shows no difference in GAF puncta formation upon Zld depletion (C96). The comparison to other factors (C94-C95) provides context, though these are established knowledge claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The majority of high-confidence GAF peaks (3674 of 3800) are maintained in zld-RNAi background, with only 126 regions significantly different (101 decreased, 25 increased). Similarly, the majority of Zld peaks (6003) are maintained when GAF is depleted, with 105 sites differing (86 decreased, 19 increased). High correlation in peak ranks (r=0.93 for GAF, r=0.88 for Zld) indicates the overall distribution of binding sites is maintained for each factor in the absence of the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 provide comprehensive ChIP-seq analysis with spike-in normalization for GAF ChIP (C97) and DESeq2 statistical analysis (C98, C100). The high correlation in peak ranks (C101-C102) supports independent binding. However, the authors note technical concerns about global reduction in Zld signal in GAFdeGradFP embryos (discussed in methods), which could affect interpretation. The use of spike-in controls for GAF ChIP but not Zld ChIP is a methodological difference that should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "GAF-binding regions that decreased in the absence of Zld are significantly enriched for co-bound sites (p=4.8\u00d710\u207b\u2075). Of 51 GAF/Zld co-bound sites where GAF requires Zld for occupancy, 38 also require Zld for accessibility (p=2.2\u00d710\u207b\u00b9\u2076), suggesting that at this limited set of regions, Zld may function to establish accessible chromatin necessary for robust GAF binding. Nonetheless, the majority of Zld- and GAF-binding sites are occupied in the absence of the other factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 integrate ChIP-seq and ATAC-seq data with appropriate statistical testing to identify a small subset of sites where Zld pioneers accessibility for GAF binding. The enrichment for Zld-dependent accessible regions (C105) provides mechanistic insight. The conclusion appropriately emphasizes that this is a limited set of regions (C106-C107), with most binding being independent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "1523 regions have significant changes in accessibility in GAFdeGradFP embryos (607 lost, 916 gained). 32% of regions that lost accessibility are enriched for GAF binding (p=2.2\u00d710\u207b\u00b9\u2076), with 45% in promoters. The Ubx promoter exemplifies a gene requiring GAF for both chromatin accessibility and gene expression. GAF is required for chromatin accessibility at hundreds of loci during the MZT, preferentially at promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C118 present comprehensive ATAC-seq analysis with appropriate statistical testing (C113). The enrichment for GAF binding at sites losing accessibility (C113) and promoter enrichment (C114) support direct effects. The Ubx example (C115-C116) provides specific validation. However, the authors note higher variability in GAFdeGradFP replicates, potentially due to developmental defects, which may reduce sensitivity to detect subtle changes. The large number of regions gaining accessibility (C112) suggests indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Of 1192 regions co-bound by Zld and GAF, only 7 decreased in accessibility upon removal of either factor, while 104 require GAF and 190 require Zld individually. Regions requiring GAF have higher GAF ChIP signal, and regions requiring Zld have higher Zld signal, indicating both factors are individually required for accessibility at distinct co-occupied regions. The majority (891) did not change, suggesting GAF and Zld may function redundantly or other factors maintain accessibility at these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 integrate ChIP-seq and ATAC-seq data to demonstrate largely independent roles in chromatin accessibility. The correlation between ChIP signal and accessibility requirement (C122-C123) is compelling. However, the interpretation of unchanged sites (C125-C126) as potential redundancy is speculative and appropriately qualified. The comparison relies on published zld- ATAC-seq data, which may have different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "GAF-bound, GAF-dependent regions are enriched for regions that dynamically open at NC12 or NC13 compared to NC11 (p=5.7\u00d710\u207b\u2077), while Zld-bound, Zld-dependent regions are enriched for regions already accessible at NC11 (p<2.2\u00d710\u207b\u00b9\u2076). This demonstrates GAF is preferentially required for chromatin accessibility at regions that gain accessibility over the MZT, while Zld is required for accessibility at regions that are open early.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 integrate temporal ATAC-seq data with factor-dependent accessibility to demonstrate temporal specialization. The statistical significance is strong for both enrichments. This analysis relies on published staged ATAC-seq data (Blythe and Wieschaus, 2016), which is appropriate. The temporal separation complements the gene expression timing analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "All 42 regions that depend on GAF for accessibility and gain accessibility at NC13 are bound by GAF at stage 3 (NC9) and stage 5, demonstrating that GAF occupancy at these regions precedes accessibility and supports a role for GAF as a pioneer factor at these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 provide direct evidence for pioneer factor activity by demonstrating GAF binding precedes accessibility. The analysis is straightforward and compelling. However, the number of regions (42) is relatively small, and the inference of pioneer activity (C133) is based on temporal precedence rather than direct mechanistic demonstration (e.g., binding to nucleosomal DNA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "GAF is a maternally encoded factor required for development through the MZT, necessary to activate widespread zygotic transcription and remodel the chromatin accessibility landscape. Along with Zld, GAF is broadly required for activation of the zygotic genome and shaping chromatin accessibility. During the major wave of ZGA, Zld and GAF are largely independently required for both transcriptional activation and chromatin accessibility, similar to multiple pioneer factors in mice, zebrafish, and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C134-C138 represent the main conclusions of the study, supported by the comprehensive genomic analyses (ChIP-seq, RNA-seq, ATAC-seq) and phenotypic characterization presented throughout. The comparison to other species (C138) appropriately contextualizes the findings. The evidence for independent function (C137) is well-supported by the ChIP-seq and ATAC-seq analyses showing limited interdependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C177"
+    ],
+    "result": "The authors propose a handoff model where control is gradually transferred from Zld to GAF as the embryo progresses through the MZT: Zld functions primarily at the initiation of zygotic genome activation and GAF functions primarily later during the major wave of zygotic transcription, with a gradual handoff in control of transcriptional activation and chromatin remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C174, C177 present a proposed model based on the temporal analysis of gene expression (C91-C92) and chromatin accessibility (C127-C130). The model is appropriately labeled as a proposal/speculation throughout. While the temporal separation of function is well-supported by data, the 'handoff' mechanism is an interpretation rather than directly demonstrated. The model is reasonable given the evidence but would benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "GAFdeGradFP embryos do not hatch (unlike zygotic GAF null embryos that survive to third instar), showing severe defects including asynchronous mitosis, anaphase bridges, nuclear dropout, and high nuclear mobility, with defects appearing as early as NC10 in some embryos. Embryos can complete several rounds of mitosis, indicating GAF is not strictly required for mitosis progression, but the defects support a broad role for GAF in nuclear division and chromosome stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C149 provide detailed phenotypic characterization with appropriate comparison to published mutants (C139, C142). The live imaging data support the conclusions about mitotic progression (C146) and nuclear defects (C147). However, the speculation about DNA damage response (C148) and potential germline effects (C145) are appropriately qualified as uncertain. The distinction between maternal and zygotic requirements (C139-C140) is important for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C153"
+    ],
+    "result": "GAF and CLAMP are both essential in the early embryo and cannot completely compensate for each other in vivo during early development, though they may have some overlapping functions, they are independently required to regulate embryonic development during the MZT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151, C153 synthesize the comparison between GAF and CLAMP functions. The essentiality of both factors (C150) is supported by published data for CLAMP and current data for GAF. The limited overlap in target genes (C83-C84) supports independent functions (C153). However, the inference about compensation (C151) is based on both being essential rather than direct competition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "During the MZT, GAF acts largely as an activator, directly binding and activating hundreds of zygotic transcripts during ZGA. This function may be driven in part through GAF-mediated chromatin accessibility. GAF's activity is similar to Zld and shared with genome activators in other species (Pou5f3, Nanog, Dux). GAF occupancy precedes GAF-mediated accessibility at a subset of sites, supporting a pioneer-factor-like role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 synthesize the functional characterization of GAF. The activator role (C154-C155) is well-supported by the enrichment analysis (C77-C79). The connection to chromatin accessibility (C156) is supported by ATAC-seq data (C110-C118). The temporal precedence of binding (C158-C159) supports pioneer activity, though this is based on population-level data rather than single-molecule tracking. The comparison to other species (C157) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "GAF is a pioneer-like factor required for both gene expression and chromatin accessibility in the early Drosophila embryo, in addition to Zld. GAF and Zld primarily occupy the genome independently, with binding of each factor largely retained in the absence of the other. Analysis of chromatin accessibility supports these independent roles, and the authors propose that in the absence of Zld, GAF may maintain accessibility at co-bound regions, and vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C168 present the main mechanistic conclusions about GAF-Zld relationships. The independent binding (C165-C166) is well-supported by ChIP-seq data (C97-C103). The ATAC-seq data (C167) supports independent roles in accessibility. However, the proposal about mutual compensation at co-bound sites (C168) is speculative and appropriately qualified. The 'pioneer-like' designation (C164) is supported by temporal precedence of binding (C131-C133) but lacks direct demonstration of nucleosome binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C183",
+      "C184"
+    ],
+    "result": "At least two pioneer-like transcription factors, Zld and GAF, are required to sequentially reprogram the zygotic genome following fertilization. The authors suggest there are likely additional factors that function along with Zld and GAF to define accessible cis-regulatory regions and drive genome activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C184 present the overarching conclusion and future directions. The requirement for both factors (C183) is well-supported by the comprehensive data. The suggestion of additional factors (C184) is appropriately speculative and reasonable given that not all accessible regions or expressed genes depend on GAF or Zld. This acknowledges the limitations of the current study.",
+    "result_type": "MAJOR"
+  }
+]

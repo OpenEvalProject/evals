@@ -1,0 +1,479 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "A transgene-free protocol was developed to generate iMyoblasts from iPSCs through a three-stage myogenic induction process that sequentially upregulates PAX3, MYOD1, and MYH8 expression, achieving ~1000-fold upregulation of these markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C22 describe the protocol development and validation. The sequential upregulation of myogenic markers (PAX3, MYOD1, MYH8) is demonstrated by qPCR data (C21-C22) and immunofluorescence (C23-C24), with consistent results across multiple iPSC and ESC lines from control and disease subjects. The protocol is well-characterized with appropriate molecular validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The three-stage induction protocol produces cultures with 90% MYOD1+ cells at S2 stage and 80% MF20+ mononucleated iMyocytes at S3 stage, with PAX7 expression 100-fold lower than PAX3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by quantitative immunofluorescence data showing high percentages of marker-positive cells. The low PAX7 expression is consistent with cited literature on transgene-free protocols (C27). The comparison to embryonic myogenic cells (C25) is appropriately cited and represents a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "iMyoblasts express PAX3 and MYOD1 (but not PAX7), proliferate with 12-hour doubling times, can be expanded for >12 passages (>30 population doublings) while maintaining myogenic markers and differentiation capacity, and fuse to form multinucleated myotubes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by qPCR data (C28-C29), proliferation assays (C30), passage experiments with marker expression and differentiation assays (C31), and immunofluorescence showing myotube formation (C32). The data demonstrate stable maintenance of myogenic identity over extended culture, which is a key characteristic for utility in research applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "iMyoblasts express fetal and adult myogenic cell surface markers (CD82, CD56, CD318, ERBB3, NGFR), and both CD82+/CD56+ and CD82+/CD56\u2212 populations can differentiate into myotubes. iMyoblasts retain dual commitment to differentiation and reserve cell regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by flow cytometry data (C33), FAC-sorting experiments with differentiation assays (C34), and reserve cell selection experiments (C35). The demonstration that sorted populations retain differentiation capacity validates the myogenic commitment of CD82+ cells. The dual commitment to differentiation and reserve cell generation is a key stem cell characteristic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Single-cell RNA-seq analysis of iMyoblasts, bMyoblasts, S1, S2, and biopsy cells from six subjects (3 FSHD1, 3 control) identified distinct transcriptional clusters. iMyoblasts express PAX3 and MYOD1 (but not PAX7 or MYF5), while bMyoblasts express PAX3, MYOD1, PAX7, and MYF5. S2 cells subdivide into PAX3+ (S2A) and MYOD1+/MYOG+/MYH8+ (S2B) subclusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C50 describe comprehensive scRNA-seq analysis with appropriate UMAP clustering, cell cycle analysis, and gene expression profiling. The clustering of FSHD1 and control cells together (C38) is appropriately explained by the fact that disease genes are expressed in differentiated cells, not progenitors (C39). The distinct gene expression signatures for each cluster (C42-C49) are well-documented. The analysis includes cells from all six subjects across cell cycle stages (C41), demonstrating robust clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Pathway analysis using edgeR identified >4600 differentially expressed genes (FDR<0.05) in pairwise comparisons between cell types. iMyoblasts vs bMyoblasts showed enrichment for ECM genes (including distinct collagen isoforms), signaling pathways (PI3K-Akt, MAPK, Rap1, Ras), and transcription factors. Comparisons between early (S1/S2A) and committed stages showed enrichment for cell migration and TGF\u03b2 signaling in committed stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C64 describe comprehensive pathway analysis with appropriate statistical methods (edgeR with FDR correction). The identification of thousands of differentially expressed genes (C52) and enrichment of specific pathways (C53-C61) is well-documented. The analysis appropriately identifies functional categories relevant to myogenesis. However, the authors acknowledge potential batch effects and biases in some comparisons, which is appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "iMyoblasts from control, FSHD1, and LGMDR7 subjects differentiate with similar kinetics, upregulating CKM and MYH8 but expressing low levels of adult MYH1 compared to bMyotubes. Supplemented N2 media (with SB, P, C, De, Da, F) differentially affect iMyoblast and bMyoblast differentiation and muscle gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C76 are supported by qPCR and NanoString data showing differentiation kinetics and responses to different media conditions. The low MYH1 expression in iMyotubes (C67) is consistent with their fetal/embryonic identity. The differential responses to media supplements (C70-C75) are well-documented with both gene expression and morphological data. The conclusion that iMyoblasts and bMyoblasts respond differently to media (C76) is appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "DUX4 is a primate-specific transcription factor located in the D4Z4 repeat array on chromosome 4 that functions in zygotic genome activation and is normally repressed in healthy tissues. FSHD is caused by DUX4 misexpression due to D4Z4 contraction (FSHD1) or chromatin-modifying gene mutations (FSHD2), leading to muscle toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 describe established knowledge about DUX4 and FSHD with appropriate citations. These are background claims that provide context for the disease modeling experiments. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "FSHD1 iMyoblasts and bMyoblasts both upregulate DUX4 target genes >1000-fold during differentiation, with bMyoblasts showing 24-hour delayed upregulation compared to iMyoblasts. DUX4-GFP reporter shows expression in 4/100 FSHD1 iMyotube nuclei, 10\u00d7 higher frequency than bMyoblasts, suggesting more stringent DUX4 repression in bMyoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by qPCR data showing DUX4 target gene upregulation and DUX4-GFP reporter assays quantifying nuclear expression frequency. The delayed upregulation in bMyoblasts (C86) and higher nuclear frequency in iMyoblasts (C91) are appropriately interpreted as indicating differential DUX4 repression. The inference about more stringent repression in bMyoblasts (C87, C91) is reasonable given the data, though alternative explanations are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Media supplements differentially affect DUX4 target gene expression in iMyotubes and bMyotubes. N2+SB+P+C and N2+SB+De+Da+F media dramatically reduce DUX4 target gene expression in iMyotubes while enhancing muscle gene expression, uncoupling DUX4 from differentiation. The p38 inhibitor Losmapimod inhibits DUX4 target gene expression in both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by NanoString data showing differential effects of media supplements on DUX4 target genes versus muscle genes. The uncoupling of DUX4 expression from muscle differentiation (C93) is an important observation. The responsiveness to Losmapimod (C97) is appropriately cited as being in clinical trials. The inference that corticosteroids in the media repress DUX4 (C96) is supported by citation to previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "DUX4 and target genes were not upregulated during S1, S2, or S3 stages of myogenic induction, despite being upregulated during iMyoblast and bMyoblast differentiation. DUX4 levels in FSHD1 iPSCs/ESCs were 100-fold lower than in differentiating myoblasts. These findings contradict Caron et al., 2016.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by qPCR and NanoString data showing lack of DUX4 upregulation during early stages of induction. The explicit contradiction with Caron et al., 2016 (C102) is appropriately noted, and the authors acknowledge they don't exclude low-level upregulation (C103). The 100-fold difference between iPSCs/ESCs and differentiating myoblasts (C101) provides important context for the magnitude of repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "DUX4 4qA alleles remain hypomethylated (~20% CpG methylation) in FSHD1 cells throughout iPSC reprogramming, myogenic induction (S1-S3), and in iMyoblasts/iMyotubes, while control cells remain hypermethylated (~60%). These findings contradict Dion et al., 2019, which used non-specific primers that amplify all D4Z4 repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 are supported by bisulfite sequencing data using 4qA-specific primers. The maintenance of hypomethylation throughout differentiation (C105) is well-documented. The explicit contradiction with Dion et al., 2019 (C107) is appropriately explained by the use of different primers (C108). The use of 4qA-specific primers is a methodological strength that allows specific interrogation of the disease-associated allele.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The MYOD1 core enhancer becomes hypermethylated during iPSC reprogramming and demethylated during myogenic induction, concordant with MYOD1 RNA upregulation. This demonstrates that methylation machinery is operative in iPSCs and induced myogenic cells, but contracted 4qA alleles are refractory to this machinery. Therefore, methylation changes at the 4qA DUX4 locus cannot account for DUX4 repression in FSHD1 iPSCs, ESCs, and S3 iMyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by bisulfite sequencing data showing MYOD1 enhancer methylation changes that correlate with gene expression. The inference that methylation machinery is operative but 4qA alleles are refractory (C110) is reasonable given the contrasting behavior of MYOD1 and DUX4 loci. The conclusion that methylation changes don't account for DUX4 repression (C111) is appropriately supported, though it leaves open the question of what mechanism does account for repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The DNA demethylating drug 5-azacytidine (5-AzaC) increases DUX4 expression in FSHD1 S3 myocyte cultures in a concentration-dependent manner to levels comparable to iMyoblasts and bMyoblasts. This shows DUX4 repression is mediated by 5-AzaC-sensitive DNA methylation of a DUX4 regulatory locus that becomes inoperative in FSHD1 iMyoblasts and bMyoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by qPCR data showing dose-dependent DUX4 upregulation in response to 5-AzaC treatment. The inference that DUX4 repression is mediated by methylation of a regulatory locus (C113) is reasonable given the 5-AzaC sensitivity. This is a key mechanistic finding that identifies a previously unknown epigenetic regulatory mechanism. However, the specific regulatory locus is not identified, which would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "iMyoblasts and bMyoblasts xenoengraft into irradiated and BaCl2-injured mouse TA muscle, forming humanized ECM domains with human nuclei and muscle fibers. Spectrin \u03b21+ fibers are detectable within 2 weeks and increase by 4 weeks. FSHD1 xenografts have fewer fibers than control, likely due to DUX4 toxicity. Engraftment efficiency is 5-20% (iMyoblasts) to 20-60% (bMyoblasts) by RPL13A, and 20-25% (iMyoblasts) to 40-60% (bMyoblasts) by MYH2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C128 are supported by immunofluorescence data showing human-specific markers in xenografts, quantification of fiber numbers over time, and NanoString data quantifying engraftment efficiency. The lower engraftment efficiency of iMyoblasts compared to bMyoblasts (C118, C124-C125) is well-documented. The inference that FSHD1 xenografts have fewer fibers due to DUX4 toxicity (C119) is reasonable but not directly tested. The explanation for lower RPL13A percentages (C126) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Ex vivo, iMyotubes and bMyotubes express high MYH3 (embryonic/fetal) and intermediate MYH7/MYH8, with iMyotubes expressing low MYH1/MYH2 compared to bMyotubes. In xenografts, iMyoblasts downregulate MYH3/MYH7/MYH8 up to 100-fold and upregulate adult fast MYH1/MYH2 >100-fold, demonstrating fetal-to-adult MYH isoform switching and regulatory plasticity in response to host muscle signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 are supported by NanoString data showing MYH isoform expression ex vivo and in xenografts. The dramatic isoform switching (100-fold changes) in xenografts (C131) is well-documented. The conclusion that this demonstrates regulatory plasticity (C135) is appropriately supported by the data and cited literature. This is a key finding demonstrating that fetal-like iMyoblasts can mature in response to adult muscle environment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "LGMDR7 muscular dystrophy results from TCAP mutations encoding Telethonin. LGMDR7 iMyoblasts undergo muscle differentiation ex vivo and in xenografts. Telethonin expression can be efficiently restored by CRISPR-mediated microhomology repair, establishing utility for gene editing therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 describe LGMDR7 disease background (C136-C137), demonstrate differentiation capacity (C138), and cite previous work on gene editing (C139-C140). The disease modeling is supported by differentiation data. The gene editing claim (C139) is appropriately cited to previous work by the same group. The inference about utility for therapeutics (C140) is reasonable but represents future potential rather than demonstrated therapeutic efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "S1 stage FSHD1 cells engraft poorly and do not differentiate well compared to iMyoblast xenografts, as evidenced by high raw Ct values comparable to unengrafted mouse TA. This highlights the efficiency of iMyoblast engraftment for in vivo studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 are supported by qPCR data showing poor engraftment of S1 cells. This provides an important negative control demonstrating that earlier-stage cells do not engraft efficiently, validating the utility of the iMyoblast isolation protocol. The inference about iMyoblast utility (C142) is appropriately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "WWS and LGMDR9 are FKRP dystroglycanopathies with different severity. WWS iMyoblasts xenoengraft efficiently and express muscle genes. Ex vivo, WWS iMyotubes show almost complete absence of laminin binding and IIH6 reactivity with smaller unglycosylated \u03b1-DG (75 kDa), while LGMDR9 shows intermediate binding and glycosylation, modeling the functional and clinical severity of FKRP mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C150 describe FKRP disease background (C143-C145), demonstrate xenoengraftment (C146), and show differential laminin binding and \u03b1-DG glycosylation (C147-C148) that correlate with disease severity. The laminin binding assays and Western blots provide strong evidence for disease modeling. The conclusion that glycosylation differences model disease severity (C149) is appropriately supported by the dose-dependent loss of function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Primary xenografts of control and WWS iMyoblasts contain PAX3+ nuclei in humanized regions, indicating maintenance of progenitor cells. After secondary injury, PAX3+/lamin A/C+ nuclei and differentiated muscle fibers (neonatal MHC+, collagen VI+, laminin \u03b21+) are observed, demonstrating that iMyoblast xenografts maintain PAX3+ myogenic cells that regenerate human muscle in response to injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C156 are supported by immunofluorescence data showing PAX3+ nuclei in primary xenografts and after secondary injury, along with markers of differentiated muscle. The demonstration of regenerative capacity after secondary injury (C154-C155) is a key finding establishing stem cell characteristics. The conclusion that xenografts maintain regenerative PAX3+ cells (C156) is appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The iMyoblast protocol has been successfully applied to control and disease (FSHD1, WWS, LGMDR7, LGMDR9) iPSCs. The protocol differs from others in its efficient reserve cell selection without FAC sorting. iMyoblasts can be expanded for \u226530 population doublings while maintaining differentiation capacity, enabling statistically powered studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C160 summarize the protocol's applicability and advantages. The successful application to multiple disease lines (C157) is demonstrated throughout the paper. The unique feature of reserve cell selection without FAC sorting (C158) is a methodological advantage. The expansion capacity (C159) is supported by data in C31. The inference about enabling powered studies (C160) is reasonable given the expansion capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Adult bMyoblasts often cannot be propagated from dystrophy patients due to advanced pathology or senescence. The advantages of iPSC-derived iMyoblasts include the discovery of developmental epigenetic repression of DUX4. iMyoblasts undergo enhanced differentiation in specialized media, enabling 3D modeling and future studies of contractile and electrophysiological activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C163 discuss advantages of iMyoblasts. The limitation of adult bMyoblasts (C161) is appropriately cited. The discovery of DUX4 epigenetic repression (C162) is a major finding of the paper. The claim about future 3D modeling and functional studies (C163) is speculative but reasonable given the enhanced differentiation in specialized media demonstrated in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "iMyoblasts express fetal myoblast markers (PAX3, CD82, NFIX) and have a transcriptome distinct from S1/S2 progenitors (which lack NFIX) and adult bMyoblasts (which express PAX7, MYF5, MRF4, higher NFIX). The iMyoblast transcriptome shares fetal-like gene expression profiles with limb myogenic developmental trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C167 summarize the transcriptomic characterization of iMyoblasts. The expression of fetal markers (C164) is supported by scRNA-seq and other data. The distinctions from S1/S2 and bMyoblasts (C165-C166) are well-documented by the scRNA-seq analysis. The comparison to Xi et al., 2020 (C167) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "iMyoblasts may be related to adult PAX3 myogenic cells in diaphragm or stress-resistant PAX3 cells. In humans, PAX3 and PAX7 may be functionally redundant, as PAX7 is not essential for satellite cell production and regeneration. iMyoblasts express transcription factors (GATA3, GATA6, HAND2, MEIS2, GLI2, NOTCH1, ETS1, ETS2) that likely regulate ECM, adhesion, migration, and signaling genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C170 are largely speculative. The relationship to adult PAX3 cells (C168) is appropriately presented as speculation with citations. The claim about PAX3/PAX7 redundancy (C169) is cited but represents general knowledge rather than findings of this study. The inference about transcription factor regulation (C170) is reasonable but not directly tested. These are appropriate discussion points but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Ex vivo, iMyoblasts express embryonic/fetal MYH8 (vs MYH1 in bMyoblasts). In xenografts, iMyoblasts downregulate MYH8 and upregulate adult fast MYH1, demonstrating transcriptional plasticity. The signals initiating adult switching may be controlled by innervation or conversion to adult-like progenitor phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C172 are supported by NanoString data showing MYH isoform expression and switching. The fetal-like phenotype ex vivo (C171) and plasticity in vivo (C172) are well-documented. The speculation about mechanisms (C173) is appropriately presented as uncertain with citation to relevant literature. The plasticity finding is a major result, while the mechanistic speculation is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "iMyoblasts' capacity for direct engraftment, adult MYH switching, extensive expansion, and efficient CRISPR editing supports potential utility for stem cell therapies. iMyoblasts have stem cell characteristics (dual commitment to differentiation and reserve cell renewal ex vivo, regeneration after secondary injury in vivo). These characteristics likely reflect isolation from S3 cultures using reserve cell selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C178 discuss stem cell characteristics and therapeutic potential. The stem cell characteristics (C175) are well-supported by data throughout the paper. The inference about therapeutic potential (C174) is reasonable but represents future possibility rather than demonstrated therapy. The explanation for stem cell characteristics (C176-C177) is a reasonable inference about the protocol. The speculation about MYOD1 autoregulation (C178) is appropriately cited and tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "iMyoblasts maintain low-level MYOD1 and PAX3 expression cell-autonomously, enabling myogenic potential over 30 doublings and dual commitment to differentiation and reserve cell replenishment. In vivo, this enables xenoengraftment, differentiated muscle generation, and PAX3+ cell retention after secondary injury. The regulatory mechanisms are not yet understood, but iMyoblasts express known myogenic regulators (ID genes, DKK1, GREM1, RGS4, TXNRD1, UCHL1, NR2F2, FOXC2, HMGA2, IGF2BP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C183 summarize stem cell characteristics and acknowledge knowledge gaps. The maintenance of myogenic markers and dual commitment (C179) is supported by data. The in vivo behavior (C180) is well-documented. The acknowledgment that mechanisms are not understood (C181) is appropriate scientific humility. The expression of known regulators (C182) is supported by scRNA-seq data. The suggestion of future CRISPR studies (C183) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C184",
+      "C185"
+    ],
+    "result": "The findings establish a protocol for iMyoblast isolation suitable for ex vivo and in vivo investigations of human myogenesis and disease pathogenesis. The expectation is that iMyoblasts will enable development of gene editing and stem cell therapeutics for muscular dystrophies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C185 provide overall conclusions. The establishment of the protocol and its suitability for research (C184) is well-supported by the comprehensive characterization throughout the paper. The expectation about therapeutic development (C185) is appropriately presented as future potential rather than demonstrated efficacy. The paper provides strong foundational work for future therapeutic applications.",
+    "result_type": "MAJOR"
+  }
+]

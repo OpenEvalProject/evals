@@ -1,0 +1,1822 @@
+{
+  "submission": {
+    "id": "05b95a09-e843-47cc-b31e-1a22dfc557a6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:57:01.458103Z",
+    "updated_at": "2025-12-03T16:57:01.458103Z"
+  },
+  "content": [
+    {
+      "id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "submission_id": "05b95a09-e843-47cc-b31e-1a22dfc557a6",
+      "content_type": "manuscript",
+      "content_text": "# Condensin DC loads and spreads from recruitment sites to create loop-anchored TADs in C. elegans\n\n## Authors\n\n- Jun Kim<sup>1</sup> ([ORCID: 0000-0001-9473-3093](https://orcid.org/0000-0001-9473-3093))\n- David S Jimenez<sup>1</sup>\n- Bhavana Ragipani<sup>1</sup>\n- Bo Zhang<sup>2</sup>\n- Lena A Street<sup>1</sup>\n- Maxwell Kramer<sup>1</sup>\n- Sarah E Albritton<sup>1</sup>\n- Lara H Winterkorn<sup>1</sup>\n- Ana K Morao<sup>1</sup>\n- Sevinc Ercan<sup>1</sup> ([ORCID: 0000-0001-7297-1648](https://orcid.org/0000-0001-7297-1648)) \u2020\n\n### Affiliations\n\n1. Department of Biology and Center for Genomics and Systems Biology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n2. UCSF HSW San Francisco United States ([ROR:053y4qc63](https://ror.org/053y4qc63))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCondensins are molecular motors that compact DNA via linear translocation. In Caenorhabditis elegans, the X-chromosome harbors a specialized condensin that participates in dosage compensation (DC). Condensin DC is recruited to and spreads from a small number of recruitment elements on the X-chromosome (rex) and is required for the formation of topologically associating domains (TADs). We take advantage of autosomes that are largely devoid of condensin DC and TADs to address how rex sites and condensin DC give rise to the formation of TADs. When an autosome and X-chromosome are physically fused, despite the spreading of condensin DC into the autosome, no TAD was created. Insertion of a strong rex on the X-chromosome results in the TAD boundary formation regardless of sequence orientation. When the same rex is inserted on an autosome, despite condensin DC recruitment, there was no spreading or features of a TAD. On the other hand, when a \u2018super rex\u2019 composed of six rex sites or three separate rex sites are inserted on an autosome, recruitment and spreading of condensin DC led to the formation of TADs. Therefore, recruitment to and spreading from rex sites are necessary and sufficient for recapitulating loop-anchored TADs observed on the X-chromosome. Together our data suggest a model in which rex sites are both loading sites and bidirectional barriers for condensin DC, a one-sided loop-extruder with movable inactive anchor.\n\n## Introduction\n\nEukaryotic chromosome structure is dynamically regulated across the cell cycle. During interphase, genomes are organized within the nucleus and go through further compaction for accurate segregation of chromosomes during mitosis and meiosis (Gibcus et al., 2018; Himmelbach et al., 2018; Kumar et al., 2020; Rowley and Corces, 2018; Stam et al., 2019; Szalaj and Plewczynski, 2018). Chromosome compaction is mediated in part by DNA looping by a conserved family of protein complexes called the structural maintenance of chromosomes (SMCs) complexes (van Ruiten and Rowland, 2018; Kinoshita et al., 2022; Shaltiel et al., 2022; Wood et al., 2010).\n\nIn vitro analysis of SMC complexes, including condensin and cohesin, indicates that they act as ATP dependent molecular motors forming DNA loops by progressively extruding DNA (\u00c7amdere et al., 2018; Ganji et al., 2018; Kong et al., 2020; Terakawa et al., 2017). In silico modeling of loop extrusion activity to explain Hi-C data upon condensin- and cohesin-related perturbations provides strong support for loop extrusion hypothesis in vivo (Gibcus et al., 2018; Nuebler et al., 2018; Fudenberg, 2017).\n\nIn mammalian cells, interphase organization of chromosomes into topologically associating domains (TADs) is mediated by cohesin and its regulators. Cohesin loading and processivity are promoted by the Adherin complex (in yeast Scc2-Scc4, in mammals Nipbl & Mau2), and its unloading is mediated by Wapl (Peters and Nishiyama, 2012; Kim et al., 2019; Haarhuis and Rowland, 2017; Gassler et al., 2017). Cohesin translocation on DNA is also controlled by insulator proteins, including the zinc finger transcription factor CTCF, which creates TAD boundaries (Nora et al., 2017).\n\nWhile in vitro and in silico experiments suggest similar molecular activities for condensins and cohesin, it is less clear how condensin binding and movement on eukaryotic chromosomes are regulated in vivo (van Ruiten and Rowland, 2018). In yeast, condensin regulates chromosomal interactions across the ribosomal DNA and form gene loops involved in repression of the quiescent genome (Swygert et al., 2021; Paul et al., 2018; Kim et al., 2016). However, since yeast chromosomes support much smaller interaction domains and lack clear TAD boundaries, how condensin binding regulates larger eukaryotic genomes remains unknown. An excellent model to address this gap is a specialized condensin that functions within the X-chromosome dosage compensation complex (DCC) in Caenorhabditis elegans.\n\nIn addition to the canonical condensins I and II, C. elegans possess condensin IDC (hereafter condensin dosage compensation [DC]) that differs from condensins I by a single subunit, the SMC-4 variant DPY-27 (Csankovszki et al., 2009). Condensin DC binds to both X-chromosomes in hermaphrodites to repress their transcription by a factor of two, equalizing overall X chromosomal transcripts between XX hermaphrodites and XO males (Kruesi et al., 2013; Kramer et al., 2016; Kramer et al., 2015; Albritton and Ercan, 2018). Several features make condensin DC a powerful system to address mechanisms of condensin binding and spreading. First, unlike canonical condensins, the sequence elements important for condensin DC recruitment to the X-chromosomes are identified (McDonel et al., 2006; Jans et al., 2009; Ercan et al., 2007; Albritton et al., 2017). Second, the spreading of the complex can be distinguished from recruitment using X to autosome (X;A) fusion chromosomes (Ercan et al., 2009). Third, since the complex only binds to the X-chromosomes, autosomes serve as internal controls, allowing sensitive measurement using genomics approaches (Albritton et al., 2017; Vielle et al., 2012; Street et al., 2019; Ercan and Lieb, 2009).\n\nCondensin DC recruitment to the X-chromosomes is mediated by ~60 recruitment elements on the X-chromosome (rex sites) (Jans et al., 2009; Ercan et al., 2007; Albritton et al., 2017). A number of these elements was validated to autonomously recruit the DCC on extrachromosomal arrays (McDonel et al., 2006; Jans et al., 2009; Csankovszki et al., 2004). Furthermore, due to the repetitive nature of the extrachromosomal arrays, strong rex sequences depleted condensin DC from the X-chromosomes, demonstrating their recruitment activity (McDonel et al., 2006). Hi-C analysis in C. elegans embryos indicated that eight strong rex sites function as TAD boundaries and form long-range rex-rex loops on the X-chromosomes (Rowley et al., 2020; Crane et al., 2015). Recruitment of condensin DC leads to spreading to the entire chromosome, accumulating at hundreds of enhancers, promoters, and other accessible gene regulatory elements (Street et al., 2019).\n\nHere, we addressed the mechanism by which rex sites and condensin DC form TADs. Without rex sites, spreading of condensin DC to the autosomal region of the X;V fusion chromosome increases 3D DNA contacts but fails to form TADs. Insertion of a rex site on X-chromosome sufficiently leads to the formation of a loop-anchored TAD irrespective of orientation, suggesting that rex sites are bidirectional barriers to loop extrusion. However, insertion of the same single strong rex to chromosome-II, which is largely devoid of condensin DC, did not form a TAD boundary, suggesting that rex sites are barriers largely specific to condensin DC. The insertion of \u2018super rex\u2019 composed of an array of strong rex elements was capable of creating a spreading domain and forming a boundary between two domains of interaction on either side of the insertion. Insertion of three rex sites on an autosome led to recruitment and spreading of condensin DC and formed a loop-anchored TAD. Together our data suggest that rex sites are both loading sites and bidirectional barriers for condensin DC, a one-sided loop extruder with movable inactive anchor.\n\n## Results\n\n### Condensin DC is a developmentally maintained loop-extruding factor targeted to the X-chromosome\n\nWe performed Hi-C analysis in hermaphrodite mixed developmental stage embryos and L3 larvae and describe three notable observations indicating that X-chromosome harbors an additional loop-extruding factor (LEF), condensin DC (Figure 1A), throughout the development of C. elegans.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig1-v1.jpg)\n\n**Figure 1.:** (A) Cartoon of the dosage compensation complex in C. elegans. Strong and intermediate recruitment elements on the X-chromosome (rex) sites (Albritton et al., 2017) and DC complex (DCC)-dependent topologically associating domain (TAD) boundary rex sites (Anderson et al., 2019) are annotated. (B) Snapshot of chromosome-I and X for embryo and L3. EV1 is computed using the center regions of chromosomes as defined in Ikegami et al., 2010. The center regions have lower LEM-2 association, higher gene-density, and lower repeat density than the arms. Shown below are annotated ChromHMM states 1\u20135 and 16\u201320 that are associated with highest and lowest quantiles of gene expression, respectively (Evans et al., 2016). SDC-3 and DPY-27 binding is plotted as normalized Chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq) scores. (C) Meta-plot of observed Hi-C interactions compared to expected, centered across strong rex sites. The expected values are computed using only the X-chromosome due to X and autosomes having distinct P(s) curves. (D) Hi-C relative contact probability, P(s), as a function of genomic separation, s, and the log-derivative of P(s) for two biological reps. The local-maxima of slopes or inferred mean loop size is annotated as vertical ticks. (E) Compartmentalization of all autosomes and the X-chromosomes at the center region of the chromosomes. The saddle plot indicates the level of intrachromosomal interactions between and within A and B compartments defined as top and bottom halves of EV1 values. (F) The strength of compartmentalization was calculated for each chromosome by taking a ratio of the sum of interaction within the same compartment to the sum of interactions across compartment as described in Nuebler et al., 2018. Compartmentalization is weaker in mixed developmental stage embryos, compared to L3 larvae. In both developmental stages, compartmentalization is weaker on the X. See Figure 1\u2014figure supplement 1 for an alternative method of computing compartment strength.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Chromosomes have different total, arm, and center lengths (Crane et al., 2015; Bian et al., 2020; Ikegami et al., 2010), therefore using only the center regions to draw conclusions about the entire chromosome could potentially be misleading. To control for the size of the submatrix and the chromosomal region, we used a 2 kb-resolution matrix with a fixed submatrix size of 2 MB with step size of 200 kb to generate a saddle plot, from which the strength is computed. The strength per 2 MB submatrix is plotted across the entire chromosome (top panel) or plotted as a boxplot per chromosome (bottom panel). Consistent with the conclusion drawn from the center region (Figure 1F), the compartmentalization is weaker on the X.\n\nFirst is the presence of TADs on the X-chromosome. As randomly distributed LEFs track along DNA, pairs of increasingly distant genomic loci are looped in 3D space except when LEFs encounter a barrier. This results in the observed insulation effect, whereby contacts within TADs are enriched more than contacts across TADs. In the mammalian system, the essential components of TAD formation consist of cohesin and CTCF, which correspond to LEFs and barriers, respectively (Fudenberg, 2017; Nora et al., 2017; Schwarzer et al., 2017). In C. elegans, while cohesin is present, a CTCF homolog is absent (Heger et al., 2009). Therefore, no strong TAD structures are present on autosomes (Figure 1B, chromosome-I) as previously reported (Crane et al., 2015). On the other hand, X-chromosome is globally bound by condensin DC and organized into distinct TADs separated by rex sites, which are strongly bound by the DCC subunits, including SDC-2 and SDC-3 (Figure 1B). Unlike the CTCF removal experiments where cohesin remains bound, the loss of SDC-2 results in the failure of condensin DC to localize to the X-chromosome and dissolution of TADs, suggesting that SDC-2 function as both LEF loader and barrier (Crane et al., 2015; Anderson et al., 2019; Pferdehirt et al., 2011).\n\nSecond, X-chromosome show a characteristic enrichment of 3D DNA contacts compared to autosomes. The P(s) and its log-derivative are powerful metrics of Hi-C data allowing interpretation of DNA loops (Fudenberg, 2017; Gassler et al., 2017; Polovnikov et al., 2022). Experimental perturbations of cohesin and its regulator proteins (NIPBL/WAPL) in the mammalian system led to the conclusion that the decrease in the steepness of the P(s), or the characteristic shoulder, observed in the unperturbed state is indicative of loop extrusion (Fudenberg, 2017; Haarhuis and Rowland, 2017; Nora et al., 2017; Schwarzer et al., 2017). Here, we observe the similar characteristic shoulder for the X-chromosome compared to the autosomes (Figure 1D). LEF modeling of Hi-C data proposes that the peak position on the log-derivative of P(s) corresponds to the mean loop size and that increasing the number of LEFs in loop dense regime would decrease the mean loop size (Gassler et al., 2017; Polovnikov et al., 2022; Goloborodko et al., 2016). Using the same metric, we find that the mean loop size for C. elegans X-chromosomes is 200 kb in embryo and 125 kb in L3s and 400 kb for autosomes. The X-chromosomes thus have a smaller loop size than autosomes (Figure 1D). Consistent with condensin DC being an LEF, the loss of SDC-2 abolishes both condensin DC binding and this characteristic shoulder (Crane et al., 2015; Anderson et al., 2019).\n\nThird, the X-chromosome shows weaker A/B sub-compartmentalization than autosomes. The checker-board pattern of the Hi-C matrix, also known as A/B compartmentalization, indicates the spatial segregation between transcriptionally active and inactive regions of the genome (Imakaev et al., 2012). The loss of cohesin or the cohesin-unloader WAPL results in respective increase or decrease in compartmentalization, suggesting that the activity of cohesin regulates compartmentalization (Nuebler et al., 2018; Haarhuis and Rowland, 2017; Nora et al., 2017; Schwarzer et al., 2017). Previous compartment analysis in C. elegans has shown that each chromosome is largely divided into three sections: two flanking arms and the center (Crane et al., 2015; Bian et al., 2020). This division has been assigned the term A/B compartments, with the center being the singular A segment and the two arms making up the two segments of B compartment. However, upon zooming in, we observe a more fine-scale checker-board pattern that coincides with orthogonal data such as H3K27ac/me3 and chromHMM (Figure 1B and E). The comparison of autosomes and the X-chromosome reveals that the sub-compartment strength of X-chromosome is weaker than that of autosomes (Figure 1E, Figure 1F, Figure 1\u2014figure supplement 1). This is consistent with X-chromosome harboring additional LEFs, as additional active movement of chromatin imposed by condensin DC would further antagonize compartmentalization.\n\nIn summary, the strong rex sites acting as TAD boundaries, characteristic shoulder in contact frequency plots, and weaker sub-compartments of the X-chromosome suggest that condensin DC is an LEF that binds to and organizes X-chromosome structure.\n\n### Spreading of condensin DC entails loop extrusion but cannot sufficiently form TADs without rex sites\n\nIn the mammalian system, the two components of TAD formation are genetically separable, namely cohesin and CTCF. This allows one to study the effect of LEFs in the absence of barriers by removing CTCF. However, in the C. elegans DC system, a protein that uniquely corresponds to the barrier component of the model has not been isolated. Therefore, to address the function of condensin DC in the absence of barrier elements, we performed Hi-C on a strain in which chromosome-X and V are fused, where condensin DC \u2018spreads\u2019 into chromosome-V, which does not have any rex sites (Ercan et al., 2009).\n\nWe make three observations on the Hi-C matrix. First, there are no noticeable TADs on chromosome-V side of the fusion (Figure 2A), suggesting that rex sites are unique elements of the X-chromosome that are required for TAD formation. Second, enrichment of DNA contacts closer to the main diagonal occur specifically for the chromosome-V side of the fusion (Figure 2A, third panel), which coincides with the decrease in mean loop size (Figure 2B). Third, weakening of checker-board pattern on chromosome-V side (Figure 2A, inset), which coincides with the local decrease in sub-compartment strength (Figure 2C). Hi-C features on the chromosome-V side becoming more similar to the X-chromosome are consistent with the generalized model that the activity of LEFs, and not the presence of barriers, modulates chromosome loop size and compartments. In summary, the spreading of condensin DC is partially a reflection of loop extrusion, which cannot sufficiently create TADs without the presence of rex sites.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig2-v1.jpg)\n\n**Figure 2.:** (A) Condensin DC spreads ~3 MB into the autosomal region of X;V fusion chromosome. 12-MB region snapshot of Hi-C contacts in the wildtype karyotype and X;V fusion strain. Hi-C and ChIP-seq data are from embryos. The inset zoom (10 kb-binned matrix) highlights weakening of the checker-board pattern indicating compartmentalization. Log2ratio plot highlights enrichment (red) of \u2018shorter-range\u2019 interactions at the spreading region of X;V. (B) To compare the local effect of spreading, chromosome X;V is divided into four regions surrounding the fusion site and log-derivative of P(s) is plotted. (C) Inferred mean loop size of each region from the derivative plot is plotted. Purple arrow highlights the decrease in mean loop size for chromosome-V side of the fusion (proximal V). (D) Difference in local compartment strength in X;V compared to normal karyotype. EV1 and saddle strength are computed for each 2-MB submatrix. The ratio of the same region between two conditions highlights distance-dependent decrease (purple arrow) in compartment strength on chromosome-V side of the fusion.\n\n### Rex sites are bidirectional barriers for condensin DC loop extrusion\n\nThe stalling of cohesin translocation by CTCF is directional, in which two convergent CTCF binding motifs brought together by loop-extruding cohesin (Nanni et al., 2020; Nichols and Corces, 2015; Nishana et al., 2020; Rao et al., 2014). We hypothesized that the DCC system may share mechanistic similarities through a CTCF-like protein. While previous work noted the lack of orientation bias in rex-rex corner-peaks (observed as pronounced \u2018dots\u2019 at the corners of TADs) (Rowley et al., 2020; Anderson et al., 2019), such computational inference has limitations due to the small number of looping rex sites and most rex sites having multiple motifs oriented in both directions. Thus, we experimentally tested the directionality of the 12 bp rex motifs in its ability to block loop extrusion by condensin DC. We chose rex-8, which is a TAD boundary and contains four copies of the 12 bp motif all oriented in the same direction. We inserted rex-8 in the same position on the X-chromosome in opposite orientations. The rex-rex corner-peaks and the new boundary on either side of the inserted rex-8 were similar regardless of the orientation of insertion (Figure 3). Therefore, unlike CTCF binding sites, rex sites are bidirectional barriers to loop extrusion.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig3-v1.jpg)\n\n**Figure 3.:** A strong recruitment elements on the X-chromosome (rex) site with four motifs in the same orientation acts as a topologically associating domain (TAD) boundary on the X. The 358-bp rex-8 was inserted in two orientations at the same site on X-chromosome. Hi-C interactions surrounding the insertion sites along with the insulation score (black) and its subtraction to that of wild type (red), and DPY-27 ChIP-seq are plotted. A dip in the insulation score coincides with enrichment of DPY-27 ChIP (purple arrow) and supports barrier activity. Log2ratio plot highlights the lack of noticeable Hi-C difference between insertion of two different orientations.\n\n### A dCas9-based block failed to recapitulate rex-like boundary on the X-chromosome\n\nThe rex insertion on X-chromosome suggests that the rex sites are physical blocks at which condensin DC stalls. A previous in vitro study showed that linear translocation of cohesin can be blocked using a dCas9-mediated protein obstacle (Stigler et al., 2016). To test whether a large block on the chromatin fiber could prevent condensin DC translocation along chromatin, we utilized a dCas9 based system targeting a repetitive region of the X-chromosome (Figure 4). The relative size of each individual protein complex (dCas9-SunTag+Pfib-1:NLS:scFv-GFP) is approximately 1400 kDa and is predicted to be larger than the ~20 nm blocks used for in vitro experiments (Stigler et al., 2016). In addition to the size of the block being large enough to block spreading, we utilized a repetitive region as the target so that multiple blocking complexes could be recruited to a relatively small genomic locus.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig4-v1.jpg)\n\n**Figure 4.:** Top: schematic depicting the multi-protein block and the approximate size of the components utilized to prevent condensin from translocating linearly along chromatin. Bottom: Hi-C of wildtype and block strain expressing all components of dCas9-SunTag and single guide RNA (sgRNA). The tick marks point to the block target. The below are ChIP-seq data in dCas9-SunTag expressing strain with (first panel) and without (middle panel) sgRNA. The two ChIP-seq tracks show normalization by input and IgG. Arrows pointing down to the DPY-27 ChIp signal that is apparent when data is normalized to input but not to IgG.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Counts per million (CPM) normalized tracks of various ChIP and input data in conditions with (JZ2005) or without (JZ1973) sgRNA expression construct. The mapping quality (MAPQ) score threshold is increased to 20 to prevent mapping at the repetitive target locus. sgRNA expression results in an increased signal at/near the locus when chipped with DPY-27 or IgG. This is not an artifact of cross-reactivity of suntag with protein A/G or changes in sequencing bias of input as exclusion of antibody does not affect the observed tracks. The artifactual signal at the targeted locus only arises in the presence of antibodies.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** JZ2005 strain has a global effect on topologically associating domains (TADs) and likely a multi-megabase insertion near the end of chromosome-X.\n\nTo characterize the effect of the block on condensin DC binding, we performed DPY-27 ChIP-seq and normalized coverage to input (no immunoprecipitation) and IgG (non-specific antibody) controls (Figure 4). While the input normalized ChIP-seq data showed condensin DC binding specifically in the presence of the sgRNA, a similar enrichment was observed upon IgG ChIP (Figure 4\u2014figure supplement 1). This is not an artifact of sequencing bias in the input since the input tracks remain unaffected in the presence of sgRNA (Figure 4\u2014figure supplement 1). Furthermore, this increased \u2018chippability\u2019 at the target locus is specific to antibodies and not due to cross-reactivity with protein A or G. Therefore, we refrain from interpreting ChIP-seq data, as targeting of dCas9-SunTag renders the locus susceptible to being precipitated by any antibody.\n\nWe instead turned to Hi-C data to bypass the use of antibodies and infer the barrier effect of dCas9 block. This too was complicated by the fact that X-chromosome is defective in SunTag strain (Figure 4\u2014figure supplement 2), which results in a higher proportion of males in the population. This in turn leads to weaker TADs on the X-chromosomes due to males lacking DCC. Nevertheless, relative to the surroundings, the targeted locus shows enhanced insulation effect, suggesting that the dCas9 block insulated interactions across the target site.\n\n### Condensin DC is loaded at rex sites and spreads in either direction\n\nA previous model for condensin DC-mediated organization of X-chromosome structure was derived from cohesin/CTCF: condensin DC initiates loop extrusion until it encounters a rex site to form a TAD boundary (Fudenberg, 2017; Anderson et al., 2019). One key assumption made in this model is that condensin DC loads uniformly throughout the X-chromosome. This assumption is contradicted by previous work demonstrating that large chunks of non-rex DNA from the X-chromosome fail to recruit condensin DC on extrachromosomal arrays (Jans et al., 2009; Csankovszki et al., 2004). To address this contradiction, we performed a series of ectopic rex insertions on chromosome-II (Figure 5A) with the following two predictions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig5-v1.jpg)\n\n**Figure 5.:** (A) Snapshot of a region on chromosome-II where rex sites are inserted. Shown are four different conditions in L3 stage: wild-type, ERC61 (single rex-8 insertion) (Albritton et al., 2017), ERC63 (rex-8, rex-1, rex-8) [33], and ERC90 super rex, an array of six truncated, midsection (150 bp) of three strong rex\u2019s: rex-40, rex-8, rex-35, repeated. Binding surrounding the insertion sites in both directions increases with increased number and strength of inserted rexes. The levels of condensin DC ectopically recruited to chromosome-II remain weaker than the endogenous binding at X-chromosome (lower panel). (B) The enrichment of condensin DC on each autosome plotted as chromosome-wide mean enrichment and total number of binding peaks calculated from DPY-27 ChIP-seq data. The ChIP-seq values or the total number of peaks are rescaled for each data, such that the mean of autosomes excluding chromosome-II is fixed to 0 and that of X-chromosome is at 1. The plot highlights weak but reproducible recruitment of more condensin DC to chromosome-II by rex insertion. (C) The level of condensin DC binding at the inserted strong rex-8 (indicated by arrow in each strain) is comparable to the endogenous, as indicated by the ChIP-seq signal at inserted rex site (400 bp) normalized to the mean of all endogenous strong rex sites on the X.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Snapshot of a region on chromosome II where rex sites are inserted. Shown are four different conditions in embryo stage: wild-type, ERC06 (single rex-1 insertion) (Albritton et al., 2017), ERC61 (single rex-8 insertion) [33], ERC62 (rex-1, rex-8) [33], and ERC63 (rex-8, rex-1, rex-8) (Albritton et al., 2017). Binding surrounding the insertion sites in both directions increases with increased number and strength of inserted rexes. The levels of condensin DC ectopically recruited to chromosome-II remain weaker than the endogenous binding at X-chromosome (lower panel). (B) The enrichment of condensin DC on each autosome plotted as chromosome-wide mean enrichment and total number of binding peaks calculated from DPY-27 ChIP-seq data. The ChIP-seq values or the total number of peaks are rescaled for each data, such that the mean of autosomes excluding chromosome-II is fixed to 0 and that of X-chromosome is at 1. The plot highlights weak but reproducible recruitment of more condensin DC to chromosome-II by rex insertion. (C) The level of condensin DC binding at the inserted rex-1 or strong rex-8 (indicated by arrow in each strain) is comparable to the endogenous, as indicated by the ChIP-seq signal at inserted rex site (400 bp) normalized to the mean of all endogenous strong rex sites on the X.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Log2 fold change between the insertion and wildtype for each gene in the 100 kb region surrounding the insertion sites. Two insertion conditions used are ERC63 (rex-8, rex-1, rex-8 on chromosome-II) [33] (left panel) and ERC08 (eight rex-1 on chromosome-I) (right panel). The gray shading underneath the points indicates gene bodies. (B) Boxplots of the log2 fold change in the two strains. Autosomes III, IV, and V are grouped as autosomal control. Two-tailed student\u2019s t-test p-values are given. (C) Boxplots log2 fold change values are binned into 200 kb (top panels) or 500 kb (bottom panels) domains tiled across the chromosome where the rex sites are inserted. Bins containing a significant level of repression are marked with asterisks (Fisher exact test; * indicates p-value<0.05, ** indicates p-value<0.01, *** indicates p-value<0.001). The red bins indicate bins that contain an inserted rex site.\n\nFirst, if rex sites are mere barriers for condensin DC, then increasing the number of ectopic rex sites would not affect the mean DPY-27 ChIP-seq signal on chromosome-II. In other words, the observed binding at or near rex sites would be a consequence of redistribution of binding events on chromosome-II. Since the frequency of binding would be dictated by the length of chromosome-II, the mean signal on chromosome-II should remain unaffected by insertion of rex sites. Contrary to this prediction, increasing the number of ectopic rex sites increases the mean DPY-27 ChIP signal and the number of peaks on chromosome-II in both L3 (Figure 5B) and embryos (Figure 5\u2014figure supplement 1B).\n\nSecond, if rex sites are mere barriers for condensin DC, then we expect a decrease in the DPY-27 ChIP-seq signal at rex sites with subsequent insertions. That is, redistribution of condensin DC from non-rex sites to rex implies that the additional rex sites would effectively function as barriers to each other. Therefore, addition of another rex site in close proximity would dampen the signal at the initially inserted rex site due to multiple rex sites competing for the access to incoming condensin DC in cis. Again, contrary to this prediction, we observe that the presence of two flanking bidirectional barriers, rex-8, enhances binding at rex-1 (Figure 5\u2014figure supplement 1C) and minimally affects binding at rex-8 (Figure 5C, Figure 5\u2014figure supplement 1C). Importantly, ChIP-seq binding levels here tightly follow the results of quantitative ChIP experiments performed in the three rex insertion embryos (Albritton et al., 2017). Therefore, rex sites behave more cooperatively than competitively as observed by recruitment at the rex sites.\n\nIn summary, the extrachromosomal recruitment assays and ChIP binding data in ectopic insertions cannot be sufficiently explained by a \u2018barrier-only\u2019 function for rex sites. These observations are more consistent with rex sites being bona fide loading sites for condensin DC. Furthermore, we observe ectopic recruitment and spreading as a qualitative function of \u2018strength\u2019 and \u2018number\u2019 of the rex sites. Insertion of a weaker rex (rex-1) results in no recruitment or spreading while insertion of a single strong rex (rex-8) leads to recruitment without spreading. Insertion of combination of rex-1 and rex-8 leads to both recruitment and spreading (Figure 5A, Figure 5\u2014figure supplement 1A), suggesting the of rex sites also behave cooperatively in regards to spreading from the rex sites.\n\nTo further test the correlation between the rex element \u2018strength\u2019 and the level of condensin DC recruitment and spreading, we made a \u2018super rex\u2019 element combining six strong 150 bp rex sequences into one 900 bp element and inserting into chromosome-II at the same location as the single strong rex-8 insertion. Insertion of the super rex indeed was sufficient to recruit condensin DC as a point source and led to spreading of condensin DC more than that of the single rex-8 (Figure 5A). Therefore, we conclude that rex sites are loading sites for condensin DC in addition to being bidirectional barriers.\n\n### Ectopic recruitment of condensin DC to chromosome II achieves weak binding and domain-level repression\n\nCondensin DC represses transcription initiation by a factor of ~2 across the entire X-chromosomes (Kruesi et al., 2013; Kramer et al., 2016; Kramer et al., 2015). The level of condensin DC binding is proportional to repression as seen in X;A fusion chromosomes (Street et al., 2019). In ectopic recruitment experiments, the level of condensin DC binding in the autosomes is lower than that of the X (Figure 5A). We performed mRNA-seq in two rex insertion strains and observed that genes were not individually repressed by condensin DC, but there was a measurable effect when changes were analyzed at the domain level within ~200 and ~500 kb bins and even at the chromosomal level (Figure 5\u2014figure supplement 2). This supports the idea that condensin DC induces domain-wide repression whose effect size is proportional to the level of condensin DC binding.\n\n### Ectopic insertion of rex elements leads to condensin DC spreading and formation of loop-anchored TADs\n\nTo understand if inserted rex elements can sufficiently form TADs, we performed Hi-C in three notable experimental conditions based on ChIP-seq data in Figure 5A.\n\nFirst, the single rex-8 insertion, where there is recruitment with minimal spreading. In the bacterial parS/parB system, condensins not only traverse through but also collide with each other (Brand\u00e3o et al., 2021). We hypothesized that if the loading of condensin DC functions as a barrier for another SMC complex, such as cohesin, then recruitment alone would coincide with boundary formation. Insertion of a single rex-8 created a TAD boundary on the X (Figure 3) but not on chromosome II (Figure 6). Therefore, inserted rex-8 did not serve as an indiscriminate loop extrusion barrier for other SMC complexes. This is in agreement with previous work showing that insertion of strong rex sites (rex-47, rex-8, or rex-14) on chromosome-I does not result in boundary formation (Anderson et al., 2019).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig6-v1.jpg)\n\n**Figure 6.:** Snapshot of a region on chromosome-II where recruitment elements on the X-chromosome (rex) sites are inserted. Shown are four different conditions in L3 stage: wild-type, single rex-8 insertion at one site, six concatenated strong rex (super rex) insertion at the same site and insertion of rex-8, rex-1, and rex-8 at a distance from each other spanning ~80 kb. Two different y-range cutoffs for ChIP-seq data are provided to highlight the level of condensin DC spreading in each strain. Log2ratio Hi-C plots or subtraction of insulation score (insertion-wild type) plots are generated using wild-type data mapped to the corresponding insertion genome in comparison.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Zoomed-out snapshot of a region on chromosome-II where recruitment elements on the X-chromosome (rex) sites are inserted.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Snapshot of a control region on chromosome-I showing negligible technical variability. The same parameters are used as Figure 6 and Figure 6\u2014figure supplement 1 for the top and the bottom panels, respectively.\n\nSecond, the super rex insertion, where there are both recruitment and spreading in either direction from a singular source. In the bacterial parS/parB system, condensin is recruited to and spreads from the parS site to form a secondary diagonal on Hi-C matrix (Stigler et al., 2016; Sullivan et al., 2009; Wang et al., 2017; Wang et al., 2018). This pattern suggests an effective two-sided loop extrusion initiating from parS site. Alternatively, in simulation, one-sided loop extrusion from a loading site results in \u2018flames\u2019 (also referred to as \u2018stripes\u2019). This is observed as a \u2018+\u2019 centered at the loading site (Banigan et al., 2020). Consistent with one-sided extrusion, we observe flames emanating from super rex (Figure 6). The flames off the endogenous strong rex sites are also apparent on the X-chromosome (Figure 1C). Additionally, we observe an insulation effect at the super rex. Given that rex sites do not function as indiscriminate barriers for other SMC complexes, the insulation effect implies that condensin DC also facilitates contacts between non-rex elements on the same side of the rex site.\n\nThird, the three rex insertion, where there are both recruitment and spreading from multiple sources. In the three-rex insertion, we observe all features of TADs, including enriched square contacts, insulation, flame, and corner peak (Figure 6). This suggests that the presence of multiple rex sites can sufficiently recapitulate TADs observed on X-chromosome. A flame that extends past the right rex-8 implies that a subset of one-sided LEFs loaded on the left rex-8 can move past the right rex-8, suggesting a probabilistic barrier function by the rex sites.\n\nWhen zoomed out, the spreading of condensin DC observed in super rex and three rex insertions coincides with the local increase in the insulation score compared to the wildtype (Figure 6\u2014figure supplement 1, red arrows). This suggests that observed changes in 3D structure are not simply a redistribution of existing contact frequencies but rather a formation of additional contacts. Such effects are not observed in the control region on chromosome-I (Figure 6\u2014figure supplement 2). In summary, the facilitation of 3D contacts that coincides with the spreading of condensin DC along with the relative insulation at the ectopic rex sites supports a model based on loop extrusion by condensin DC.\n\n## Discussion\n\n### The cooperativity of rex sites contributes to the X-specific recruitment and spreading of condensin DC\n\nIn previous work, we proposed that cooperation between rex sites ensures X-specific and robust binding of condensin DC to an entire chromosome (Albritton and Ercan, 2018). Our ChIP-seq analysis of spreading in ectopic insertion strains suggests that the cooperativity is also involved in spreading. The insertion of a single strong rex-8 on chromosome-II resulted in recruitment but not spreading of condensin DC. This lack of spreading was \u2018rescued\u2019 by the use of engineered super rex (an array of six strong rex sites) or insertion of additional rex sites (rex-1 and rex-8), suggesting that the cooperative function of rex sites is reflected in both recruitment and spreading.\n\nIn this study, insertion of three rex sites in close proximity (within 100 kb) recapitulated the Hi-C features of the loop-anchored TADs on the X-chromosomes. A previous attempt of three rex insertions spaced far apart (within 3 MB) resulted in weak recruitment of DCC and no changes on Hi-C matrix (Anderson et al., 2019). Therefore, cooperativity must be distance dependent. On the autosome, the inserted rex sites may have to compete against the X. Indeed, even with a super rex insertion that recruited at a level comparable rex sites on the X, the level of spreading remained lower than that of the endogenous X-chromosome. On the X, activity of many weaker rex sites in between the 1 MB distance (average between strong rex sites) may contribute to the robust recruitment and spreading of condensin DC.\n\n### Previous models of condensin DC binding on the X-chromosomes\n\nCurrently, there are two seemingly contradictory models for how condensin DC binding occurs on the X-chromosome. The first one is the recruitment to and spreading from rex sites some of which include a 12 bp sequence motif required for their function (Albritton and Ercan, 2018; Meyer, 2022a; Meyer, 2022b). It is not clear what protein binds directly to the motif, but the candidates are the SDC proteins required for condensin recruitment to the X. Unlike rex sites, many other segments of the X-chromosomes cannot autonomously recruit condensin DC (Jans et al., 2009; Csankovszki et al., 2004). Thus, condensin DC must \u2018spread\u2019 from rex to other sites on the X-chromosomes. Such \u2018spreading\u2019 phenomenon was later observed on X;A fusion chromosomes (Ercan et al., 2009; Pferdehirt et al., 2011).\n\nThe second model is the uniform loading and stalling of condensin DC at rex sites (Anderson et al., 2019; Meyer, 2022a; Meyer, 2022b). This model is derived from the cohesin-related experiments in the mammalian system (Fudenberg, 2017; Kim et al., 2019; Golfier et al., 2020). If rex sites were preferential loading sites for a two-sided LEF, one would observe a secondary perpendicular diagonal which is not present in the Hi-C data. It was thus proposed that condensin DC loads uniformly across the X-chromosome (Anderson et al., 2019; Meyer, 2022a; Meyer, 2022b). The strength of this model is in its ability to explain TADs observed on the X-chromosome using minimalistic properties. However, unlike the mammalian cohesin, condensin DC lacks in vitro evidence showing that it is a two-sided LEF. Additionally, this model necessitates an added complexity in order to explain how condensin DC is specifically targeted to the X-chromosome. In the following section, we reconcile the two models by proposing that the loading of condensin DC at rex sites can result in TAD formation.\n\n### A model to explain X-specific recruitment of condensin DC and formation of loop-anchored TADs by rex sites\n\nWe consider three non-mutually exclusive features of the DCC system each with increasing complexity in order to explain how rex sites give rise to TADs observed on X-chromosome (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68745/elife-68745-fig7-v1.jpg)\n\n**Figure 7.:** Shown are three conceptually distinct features that contribute to TAD formation in C. elegans dosage compensation complex (DCC) system. The model as a group contains the following properties: (i) rex is a bidirectional barrier, (ii) rex is a loading site, (iii) rex can activate/enhance weaker \u2018secondary loading sites,\u2019 (iv) condensin DC is a one-sided loop extruder, and (v) condensin DC\u2019s loop-anchor is prone to displacement.\n\n1) One-sided loop extrusion from rex sites: We observe that rex sites are both loading sites acting as the source of condensin DC spreading and bidirectional barriers. We begin by proposing that condensin DC is a one-sided LEF based on the presence of flames and the absence of a perpendicular diagonal. In simulation, one-sided LEFs cannot form corner-peaks due to high frequency of gaps between two oppositely oriented LEFs (Banigan et al., 2020). This is unlikely to be a limitation in our system, because (i) in simulation, the corner-peaks can be \u2018rescued\u2019 with strong preferential loading at the boundary and (ii) a recent preprint reported that the cleavage of DPY-26, a kleisin subunit shared by condensin I and DC, did not eliminate rex-rex corner-peaks (Das, 2022). Therefore, the corner-peak does not necessitate an explanation based on loop extrusion.\n\nThe main limitation of condensin DC loading and extruding only from the rex sites is the inability to explain condensin-DC-mediated contacts within TADs (i.e. form transient loops between two non-rex elements). While it is possible that rex sites are merely preferential loading sites, how non-rex loading evades autosomes raises more questions. One explanation is that such off-target loading is skewed toward the X-chromosome by the increased condensin DC \u2018local concentration\u2019 produced by SDCs. However, the loss of SDC-2 does not result in global redistribution of condensin DC; in the absence of SDC-2, the fluorescence recovery after photobleaching (FRAP) recovery of condensin DC shows similar dynamics to that of free-floating molecules (Breimann et al., 2022). Therefore, the simplest conclusion reconciling many observations is that the rex sites act as condensin DC loading sites, and additional features of the DCC system explain the non-rex loops within TADs.\n\n2) Loader spreading from the rex sites: It has been proposed that the condensin DC loaders also \u2018spread,\u2019 although to a lesser extent than condensin DC, leading to SDC-2, SDC-3, and DPY-30 enrichment at active promoters on the X-chromosome (Ercan et al., 2007; Albritton et al., 2017; Street et al., 2019; Pferdehirt et al., 2011). One possible model is that these SDC-bound promoters function as secondary loading sites. However, as can be seen from Figure 1B and previous peak analysis (Albritton et al., 2017), the number of SDC-2 (the hermaphrodite specific protein that initiates condensin DC recruitment to the X) binding sites on X-chromosome is an order of magnitude below that of condensin DC subunits. In other words, SDC-2 distribution may contribute but is too sparse to mimic uniform loading across X-chromosome, a necessary feature in order to enrich contacts within a TAD.\n\n3) Loop-anchor displacement from the rex sites: We propose that upon loading, condensin DC may begin one-sided loop extrusion, but the inactive loop-anchor at the rex site is prone to being displaced. This model is inspired from the simulation work by Banigan et al., 2020, which informs that one-sided loop extrusion from a loading site whose inactive anchor is prone to displacement by diffusion (semi-diffusive one-sided loop extrusion (LE) model with a loading site) results in an increasingly murkier flame with increasing rate of diffusion (Banigan et al., 2020). Movement of the inactive anchor would allow condensin DC to form transient loops between two non-rex elements forming increased contacts within TADs. It is possible that the anchor displacement is promoted by another SMC complex, subsequent loading of condensin DC, intermittent translocation without loop formation, or diffusion.\n\nA candidate SMC complex displacing condensin DC loop anchor is cohesin, whose loader/processivity factor PQN-85 (NIPBL homolog in C. elegans) is enriched at the rex sites (Kranz et al., 2013). The hypothesis that incoming condensin DC molecules leading to anchor displacement is based on the idea that a one-sided LEF uses the loading site as loop extrusion anchor. This puts the currently extruding and free-floating LEFs at a competition for the loading site. One possible outcome of this competition is that the subsequent loading event displaces the inactive anchor of currently extruding LEF, which is then further pushed away from the loading site by the initiation of loop extrusion by newly loaded LEF. Anchor displacement could also happen through ATP-dependent directional translocation without loop formation as observed in double tethered assay where DNA is tightly anchored at two ends (Terakawa et al., 2017). This observation was explained by combining loop-capture and power-stroke model, in which the mode of translocation converts from loop extrusion to linear translocation with increasing DNA tension, suggesting that the two different modes of active translocation, LE and non-LE, can be embedded in the same SMC complex (Nomidis et al., 2022).\n\n### Establishment and maintenance of the X-chromosome 3D structure\n\nIn this paper, we used genome editing and performed ChIP-seq and Hi-C to analyze the binding and function of condensin DC. The limitation of our study is the lack of a temporal component, addressing how the structure of the X-chromosome is initialized and maintained. Previous work showed that DCC localizes to and represses X-chromosome in the early stages of embryo development (~40 cells) (Kramer et al., 2015; Dawes et al., 1999). In mixed stage embryos and L3 worms, we may be analyzing a maintenance/equilibrium state of X-chromosome organization. Hi-C data in a recent preprint presented that upon degradation of SDC-3 or cleavage of kleisin subunit DPY-26, TADs disappear but the rex-rex corner peaks remain unperturbed (Das, 2022). This is in contrast to the genetic loss of SDC-2 resulting in the complete loss of all features of TADs (Crane et al., 2015; Anderson et al., 2019). It is possible that rex-rex interactions initiated by SDC-2 mediated recruitment and condensin DC loop extrusion in early embryogenesis are maintained by a different mechanism during later development.\n\n### The role of condensin DC loop extrusion and TADs in transcription repression of the X-chromosomes\n\nPreviously, we showed that genes located at the autosomal spreading region in the X;V fusion chromosome are repressed due to condensin DC spreading (Street et al., 2019). Here, we show that this repression does not coincide with TAD formation on the chromosome-V side, and despite a clear loop-anchored TAD in three rex insertions, there was minimal effect on transcription. One hypothesis is that the process of loop extrusion by condensin DC is necessary for repression rather than insulation of 3D contacts by rex sites. Consistent with this idea, deletion of the eight strong rex sites did not result in changes in Hi-C distance decay curve, implying that the loop extrusion activity of condensin DC is largely unperturbed (Anderson et al., 2019). Similarly, shortening of 3D contacts indicative of condensin DC loop extrusion in the X;V fusion chromosome coincides with repression. Alternatively, condensin DC loop extrusion is a mechanism evolved to distribute the complex across long distances from the rex sites to accomplish chromosome-wide dosage compensation. Consistent with this idea, upon TOP-2 depletion, the processivity of condensin DC loop extrusion reduces, and the spreading of the complex to the chromosome also reduces (Morao et al., 2021). The repressive effect of condensin DC may be local and loop extrusion independent. In agreement with this, a null mutant of dpy-21 (a non condensin DCC subunit) results in X upregulation without significantly altering Hi-C interactions (Breimann et al., 2022). Future work separating Hi-C features and DC should shed light on how a condensin complex was co-opted to repress transcription of an entire chromosome.\n\n## Materials and methods\n\nAll sequencing data are available at Gene Expression Omnibus under GSE168803.\n\n### Strains\n\nUnless otherwise noted, strains were grown on nematode growth medium (NGM) media under standard worm culturing conditions. N2 wild type, one rex insertion ERC06 (knuSi254[SNP400bprex-1, unc-119(+)] II; unc-119[ed3] III), two rex insertion ERC62 (ersIs26[X:11093923-11094322(rex-8)], II: 8449965); knuSi254[SNP400bprex-1, unc-119(+)] II; unc-119[ed3] III, and three rex insertion ERC63 (ersIs27[X:11093923-11094322(rex-8)], II:8371600, II:8449968); (knuSi254[SNP400bprex-1, unc-119(+)] II; unc-119[ed3] III) strains were previously described (Albritton et al., 2017). Super rex insertion ERC90 (ersIs62[superrex(rex40,rex8,rex35)x2],II:8420106). Upstream oriented rex-8 insertion strain is ERC69 (ersIs33[X:11093924-11094281(rex-8), X:14373128]), downstream oriented rex insertion ERC80 (ersIs52[X:11094281-11093924[rex-8reverse], X:14373128]). X-V fusion YTP47 (XR-VR) and condensin DC spreading was described in Ercan et al., 2009. Primer sequences used in the generation of the CRISPR strains are included in Supplementary file 1.\n\n### Constructs and transgenes\n\ndCas9-Suntag targeting strain containing the sgRNA is JZ2005 with the genotype pySi27(Pfib-1:NLS::scFv::sfGFP::NLS::tbb-2 3\u2019UTR/unc-119[+]) I; pySi26(Pfib-1::NLS::dCas9::24xGCN4::NLS::tbb-2 3\u2019UTR/unc-119[+]) II; unc-119(ed3)/+III; pyIs1002(pU6::sgRNA- X227/Punc-122::mCherry), and without the sgRNA is JZ1973 (pySi[Pfib-1:NLS:scFv:sfGFP/unc-119(+)]) I; pySi(Pfib-1:NLS:dCas9:24xGCN4/unc-119[+] II; unc-119[ed3] III).\n\npNLZ10 (Pfib-1::NLS::dCas9::24xGCN4::NLS::tbb-2 3\u2019UTR) construct contains pCFJ150 vector backbone (Addgene plasmid # 19329). SV40 NLS::dCas9::egl-13 NLS:: tbb-2 3\u2019UTR was derived from pJW1231 (Phsp-16.48::NLS::dCas9::EGFP::NLS::tbb-2 3\u2019UTR; a generous gift from Dr. Jordan D Ward), which was made by introducing D10A and H840A mutations into pMB66 (Phsp-16.48:NLS:Cas9:EGFP:NLS:tbb-2 3\u2019UTR; Waaijers et al., 2013). To produce catalytically dead Cas9 (dCas9) and then subcloned into pCFJ150 vector. NLS: nuclear localization signal. A codon-optimized 6.25 copies of GCN4 fragment (Tanenbaum et al., 2014) were synthesized by Integrated DNA Technologies (IDT), and another three multiple GCN4 fragments containing artificial introns were made by PCR amplification to generate 24 copies of GCN4.\n\npNLZ11 (Pfib-1::NLS::scFv::sfGFP::NLS::tbb-2 3\u2019UTR) construct has the pCFJ210 vector backbone (Addgene plasmid # 19329). A codon-optimized scFv::sfGFP fragment (Tanenbaum et al., 2014) was ordered from IDT. fib-1 promoter was PCR amplified from worm genomic DNA. tbb-2 3\u2019UTR was amplified from pJW1231 (Phsp-16.48::NLS::dCas9::EGFP::NLS::tbb-2 3\u2019UTR). SV40 and egl-13 NLS sequences were added with PCR primers used for amplifying assembly fragments.\n\npBHC1131 (PU6::sgRNA-X227) construct (a generous gift from Baohui Chen) was derived from pDD162 (Addgene plasmid #47549) (Dickinson et al., 2013) and targets an X-chromosome repetitive region with guide RNA sequence 5\u2019-GGCGCCCATTTAAGGGTA-3\u2019. The sgRNA construct was modified with optimized sgRNA scaffold (F+E) which can improve the CRISPR imaging efficiency in human cells (Chen et al., 2013).\n\nPfib-1::NLS::dCas9::24xGCN4::NLS::tbb-2 3\u2019UTR and Pfib-1::NLS::scFv::sfGFP::NLS::tbb-2 3\u2019UTR were single-copy inserted into worm genome by MosSCI using direct injection protocol (Fr\u00f8kjaer-Jensen et al., 2008). PU6::sgRNA-X227 was injected at 200 ng/\u00b5L concentration with Punc-122::mCherry as the co-injection marker to get a transgenic extrachromosomal array line, which was subsequently integrated into worm genome by trimethylpsoralen ultraviolet (TMP-UV) method.\n\n### mRNA-seq and ChIP-seq\n\nChIP-seq and mRNA-seq experiments were performed as previously described (Albritton et al., 2017). Antibody information and new and published datasets used are given in Supplementary file 1. We aligned 50\u201375 bp single-end ChIP-seq reads to C. elegans genome version WS220 or WS220 variants for ChIP-seq performed in insertion strain or X-V fusion strain using bowtie2 2.3.2 with default parameters (Langmead and Salzberg, 2012). Bam files were then sorted and indexed using samtools version 2.1.1 (Ramirez-Gonzalez et al., 2012). ChIP enrichment was normalized by dividing to input using DeepTools bamCompare using the following parameters: CPM, bin-size of 10 bp, ignore duplicates, extend reads to 200 bp, exclude chrM, MAPQ 1, and remove blacklisted regions (Amemiya et al., 2019). MACS2 version 2.1.1 (https://github.com/macs3-project/MACS; Liu, 2022) was used for fragment size prediction and for peak calling. Peaks are called using individual replicates and combined bam files with minimum false discovery rate of 0.05. Bedtools intersect was used to determine overlapping peaks between replicates and merged bam files; only those present in the majority of the replicates were chosen as the final peaks to be plotted for visualization in Figure 4. For all DPY-27 ChIP-seq data, input normalized signal at each 10 bp genomic bin (xi) is rescaled (xf) using the following method:\n\nxf = (xi-A)/(X-A), where A is the mean of autosomes excluding chrII, and X is the mean of chrX.\n\nThe final plotted data has the mean of autosomes (excluding chromosome-II) of 0 and the mean of chromosome-X of 1. The rationale for this rescaling is that DPY-27 ChIP-seq experiment has a technical variability with regards to the enrichment of reads across the chromosome-X. If ChIP-seq \u2018works well,\u2019 proportionally more reads are mapped to the X-chromosome, which is necessarily coupled with proportionally less reads mapping to autosomes. This variability makes ChIP-seq hard to compare across conditions. Therefore, we use total signal on autosomes (excluding chromosome-II) and that of X-chromosome as biologically reliable data points. The chromosome-II was excluded because chromosome-II is the \u2018experimental\u2019 chromosome where rex sites are inserted thus the signal may differ between conditions. This makes chromosome-II not a reliable biological data point across experimental conditions. For chip-chip data from Ercan 2009 used in Figure 2, we use the distal (farthest away from the fusion site) 5 MB of chrX side as X and distal 5 MB of chrV side as A. For SDC-3 ChIP-seq data, input normalized signal is simply autosome centered since $A$ and $X$ have a difference of near 0. For any other ChIP-seq data used in the paper, simply input normalized data is used.\n\n### Hi-C\n\nWorms were grown on standard NGM plates, and gravid adults were bleached to obtain embryos, which were crosslinked with 2% formaldehyde and stored at \u201380\u00b0C (Ercan et al., 2007). Frozen embryos were then resuspended in and crosslinked with 2% formaldehyde in M9 for another 30 min. The embryos were spun down at 6000 g for 30 s and washed once with 100 mM Tris Cl pH 7.5 and twice with M9. The embryo pellet was resuspended in 1 mL embryo buffer (110 mM NaCl, 40 mM KCl, 2 mM CaCl2, 2 mM MgCl2, and 25 mM HEPES-KOH pH 7.5) containing one unit chitinase (Sigma), digested approximately 15 min, and blastomeres were washed with embryo buffer twice by spinning at 1000 g 5 min. The pellet was resuspended in Nuclei Buffer A (15 mM Tris\u2013HCl pH 7.5, 2 mM MgCl2, 0.34 M Sucrose, 0.15 mM Spermine, 0.5 mM Spermidine, 1 mM DTT, 0.5 mM PMSF [1\u00d7 Calbiochem Protease Inhibitor cocktail I], 0.25% NP-40, 0.1% Triton X-100), centrifuged at 1000 g for 5 min at 4\u00b0C then resuspended in 1.5 mL Nuclei Buffer A. The embryos were then dounced 10\u00d7 with a loose pestle and 10\u00d7 with a tight pestle. The nuclei were separated from the cellular debris through spinning down the dounced material at 200 G, then collecting the supernatant containing the nuclei into a separate tube. The pellet was resuspended in 1.5 mL, and the douncing process was repeated four times. Each individual supernatant containing nuclei was checked for quality by DAPI staining, and those without debris were pooled and spun down at 1000 G for 10 min at 4\u00b0C. Approximately 20 \u00b5L nuclei pellet were used to proceed to Arima Hi-C per the manufacturer\u2019s instructions. Library preparation was performed using the KAPA Hyper Prep Kit using the protocol provided by Arima. Paired-end Illumina sequencing was performed with Nextseq or Novaseq.\n\n### Hi-C data processing and analysis\n\nHi-C data analysis: The Hi-C data was mapped to ce10 (WS220) reference genome using default parameters of the Juicer pipeline version 1.5.7 (Durand et al., 2016). The biological replicates were combined using juicer\u2019s mega.sh script. The mapping statistics from the inter_30.txt output file are provided in Supplementary file 1. The inter_30.hic outputs were converted to cool format using the hicConvertFormat of HiCExplorer version 3.6 (Wolff et al., 2018; Ram\u00edrez et al., 2018) in two steps using the following parameters: (1) --inputFormat hic, --outputFormat cool and (2) --inputFormat cool --outputFormat cool --load_raw_values. The cool file was balanced using cooler version 0.8.11 using the parameters: --max-iters 500, --mad-max 5, and --ignore-diags 2 (Abdennur and Mirny, 2020). The balanced cool file was used for all downstream analysis. For computing log-binned P(s), its log-derivative, insulation scores, and on-diagonal pile-up analysis at 17 strong rex sites (Albritton et al., 2017), cooltools version 0.4.0 (https://github.com/open2c/cooltools; Fudenberg, 2022) was used. For visualizing ChIP-seq data with Hi-C data in python, pyBigwig version 0.3.18 (https://github.com/deeptools/pyBigWig; Ryan, 2021) was used. The jupyter notebook containing computational workflow for each figure is publicly available (https://github.com/ercanlab/2022_Kim_Jimenez_et_al, copy archived at swh:1:rev:9b46ddadb4f296f8f238e06dc66bb4e9a58b21a2; Kim, 2022).ChIP-seq mapping statistics, Hi-C juicer statistics, and RNA-seq TPM values for each replicate is provided. The description of strains and the primers used to generate the strains are also provided.\n",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "5a074674-3923-4ab9-a5e3-26766f819ae2",
+      "submission_id": "05b95a09-e843-47cc-b31e-1a22dfc557a6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jessica K Tyler, Weill Cornell Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68745.sa0](https://doi.org/10.7554/eLife.68745.sa0)\n\nThis paper is likely to be of broad interest to researchers in the chromosome biology field. With specific loading sequences identified, the Condensin dosage compensation complex studied here provides an elegant system to investigate the in vivo activities of SMC complexes. Combining Hi-C, ChIP-seq and RNA-seq, the authors reveal that the complex spreads along the chromosome to create chromosome loops.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jessica K Tyler, Weill Cornell Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68745.sa1](https://doi.org/10.7554/eLife.68745.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Condensin DC spreads linearly and bidirectionally from recruitment sites to create loop-anchored TADs in C. elegans\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe reviewers and the Reviewing Editor agree that the manuscript has potential, but extensive revision and new experiments and analysis are needed to make the case for publication in eLife and move forward. The reviewers raised concerns about (i) the novelty of the study (as compared to Albritton et al. 2018, and Anderson et al. 2019, and other studies); and (I) validity of the conclusions drawn from presented data. Nevertheless, the study is unique in its approach of inserting rex sites into largely DCC-free autosomes, and can be improved and developed to become an impactful publication.\n\nReviewers and the Reviewing Editor feel that suggested mechanisms, i.e. (i) loading of DCC at rex sites, and (ii) function of rex sites as extrusion boundaries, cannot fully explain presented data. While ChIP-seq data support the loading of DCC but less of its spreading, the Hi-C data indicates the boundary role and shows no indication of the loading. I.e. Hi-C and ChIP-seq data are hard to reconcile with each other. If DCC indeed loads at integrated rex sites, one would expect to see accumulation at these sites in ChIP-seq (that may to some extent be present) and stripes emanating from rex sites on Hi-C as observed at condensin loading sites in bacteria (in the case of bidirectional extrusion) or as computed in simulation (Banigan et al. eLife 2020;9:e53558). Such stripes are clearly absent in presented data, putting the loading at rex in question. Reviewers didn't find the author's explanations coherent and convincing.\n\nEssential Revisions:\n\n1) If the authors want to pursue the double-function of rex sites they need to find support for the loading process in Hi-C. Potential ways of doing this would be to generate Hi-C data for single insertions. To increase the effect, authors may want to insert a strong rex site into an autosome. Or insert many rex sites (~5-10) spaced far from each other and examine an average Hi-C map at rex sites. Deeper sequencing and high-quality Hi-C (new MNase-involving or similar protocols) can help to reveal patterns of loading. Horizontal or 45-degree lines or other structures emanating from rex sites would be indicative of loading.\n\n(*) The Reviewing Editor would also recommend considering a possibility of depleting non-DCC condensin I (or other suspected SMCs) that may be abundant at autosomes and masks the effect of DCC loading. In fact, abundance of another SMC may explain apparent disagreement between ChIP-seq and Hi-C: i.e. rex sites of DCC loading would block extrusion by another SMC, while having little effect on Hi-C maps otherwise. It's presence could be quantified by IP for another component of the condensin complex. And relative abundance of DCC and non-DCC condensin I could reveal loading.\n\n2) The authors should consider the alternative that peaks on DCC ChIP-seq are mere reflection of stopping at rex rather than loading there. Demonstrating spreading of DCC from rex is essential. The Reviewing Editor suggests examining the level of DCC at non-rex sites, proximal to rex: an increasing level of DCC at such non-rex sites upon insertion of more and more potent rex sites would support loading at rex. Perhaps a series of single-site insertions could be better than inserting two sites as they could be mutually blocking each other.\n\n3) Analysis: ChIP-seq analysis and quantification appears to have several issues. The scale on ChIP-seq plots appear to be insistent and disagree with each other (Figure 1A: Y scale goes to 1.5 and peaks at rex are <1.5, while in the inset up to 3, and several peaks exceed 3.) Figure S1A is more telling as it shows X-chromosome on the same scale. Quantitative ChIP-seq (with spike-in) may be the best solution for comparative analysis, but authors could use signal (peaks or total) on X-chromosome for normalization of non-X signals, making non-X ChIP-seq data comparable with each other. Figure 3B ChIPseq also appears all on different Y-scales, normalizing the distal part of X-chromosome can help with comparative analysis. Similarly, reviewers were concerned about quantification of 4C, its agreement with Hi-C. Analysis on Figure 4B wasn't clear and raised several concerns. It was also surprising that visual inspection of Hi-C in Figure 4A doesn't indicate or support findings in Figure 4B.\n\n4) The reviewers raised concerns with results and interpretation of dCas9-targeted boundary. The lack of the insulation on Hi-C argues against not in favor of the stopping function of dCas9-recruited proteins. Accumulation of DCC without insulation would argue for either (a) loading of DCC at the DNA that because more accessible due to nucleosome eviction by the dCas9-recruitment, and/or (b) over-ChIPability of such regions when they become more accessible -- a well-known artifact of ChIP-seq.\n\n5) Presentation: presenting Hi-C in grayscale is suboptimal as colors would allow one to see the dynamic range of the data. In addition, statistics for Hi-C need to be provided.\n\nReviewer #1 (Recommendations for the authors):\n\nIt would be interesting to see more quantification of the effects of condensin recruitment and spreading on the genome conformation. Particularly, Figure 2 may benefit from (a) a ratio map of contact frequencies in 3 rex/WT and (b) a plot of average contact frequency vs genomic separation in the affected region. In Figure 4, a zoom-in on the affected portion of the chromosome V (17.5-20Mb of the fusion chromsome) may more convincingly support the claims. Finally, in my experience, the curve in Figure 4B seems surprisingly noisy for the quality and amount of generated data. I would recommend the authors to double check the procedure by which they generated these curves.\n\nThis manuscript may benefit from a stronger and more focused statement on how it improves the state of the knowledge in the field. Many of the claims \u2013 insulation by individual rex sites, formation of loops/dots between rex sites on Hi-C maps, spreading of condensins on autosomes fused with the chromosome X \u2013 were already made in or could be inferred from the previous studies (e.g. Anderson et al. 2019, Crane et al. 2015). Of course, the authors do cite these studies in a complete and honest fashion; moreover, if I understand correctly, this study for the first time showed the effect of rex site insertions into a \"clean slate\" of an autosome, which is an important achievement. However, for a person who is not deeply engaged with the field of dosage compensation in C. elegans, the novelty of this paper may not be immediately obvious.\n",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8ef648a4-8061-48ff-b53b-03f1f6553e55",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C1",
+      "claim": "Condensin DC is recruited to and spreads from a small number of recruitment elements on the X-chromosome (rex).",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin DC is recruited to and spreads from a small number of recruitment elements on the X-chromosome (rex) and is required for the formation of topologically associating domains (TADs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citations to previous work throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "23aced10-c954-44ac-a20b-8509aeb2cb23",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C2",
+      "claim": "Condensin DC is required for the formation of topologically associating domains (TADs).",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin DC is recruited to and spreads from a small number of recruitment elements on the X-chromosome (rex) and is required for the formation of topologically associating domains (TADs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by Hi-C data showing TADs on X-chromosome.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "1cd11c9e-12d5-4fa4-8edd-e3eda1874246",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C3",
+      "claim": "When an autosome and X-chromosome are physically fused, spreading of condensin DC into the autosome does not create a TAD.",
+      "claim_type": "EXPLICIT",
+      "source": "When an autosome and X-chromosome are physically fused, despite the spreading of condensin DC into the autosome, no TAD was created.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by Hi-C data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "1fb3fcad-7f14-482f-8a97-bd03a0335228",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C4",
+      "claim": "Insertion of a strong rex on the X-chromosome results in TAD boundary formation regardless of sequence orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of a strong rex on the X-chromosome results in the TAD boundary formation regardless of sequence orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated by Hi-C data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "46ef62c4-90e1-4a14-bfda-1edaaf411203",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C5",
+      "claim": "When a single strong rex is inserted on an autosome, there is condensin DC recruitment but no spreading or features of a TAD.",
+      "claim_type": "EXPLICIT",
+      "source": "When the same rex is inserted on an autosome, despite condensin DC recruitment, there was no spreading or features of a TAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by ChIP-seq and Hi-C data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "26eda8c4-fa99-4b90-a576-11da8d3da48e",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C6",
+      "claim": "Insertion of a 'super rex' composed of six rex sites on an autosome leads to recruitment and spreading of condensin DC and formation of TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when a 'super rex' composed of six rex sites or three separate rex sites are inserted on an autosome, recruitment and spreading of condensin DC led to the formation of TADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated by ChIP-seq and Hi-C data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "31179456-cdb3-4c8e-aee1-8f5683cc209d",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C7",
+      "claim": "Insertion of three separate rex sites on an autosome leads to recruitment and spreading of condensin DC and formation of loop-anchored TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when a 'super rex' composed of six rex sites or three separate rex sites are inserted on an autosome, recruitment and spreading of condensin DC led to the formation of TADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated by ChIP-seq and Hi-C data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "42a3fe25-7f58-4780-9f92-532b2ce2a22d",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C8",
+      "claim": "Rex sites are both loading sites and bidirectional barriers for condensin DC.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, recruitment to and spreading from rex sites are necessary and sufficient for recapitulating loop-anchored TADs observed on the X-chromosome. Together our data suggest a model in which rex sites are both loading sites and bidirectional barriers for condensin DC, a one-sided loop-extruder with movable inactive anchor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract and supported by multiple experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "23ef1e1e-64e6-4c3e-b017-41e144f5b8a4",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C9",
+      "claim": "Condensin DC is a one-sided loop-extruder with movable inactive anchor.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our data suggest a model in which rex sites are both loading sites and bidirectional barriers for condensin DC, a one-sided loop-extruder with movable inactive anchor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main model proposed based on Hi-C data showing flames rather than perpendicular diagonals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "9ebbd53f-99b3-421a-92fe-c94778f134de",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C10",
+      "claim": "C. elegans possess condensin IDC (condensin dosage compensation [DC]) that differs from condensins I by a single subunit, the SMC-4 variant DPY-27.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the canonical condensins I and II, C. elegans possess condensin IDC (hereafter condensin dosage compensation [DC]) that differs from condensins I by a single subunit, the SMC-4 variant DPY-27 (Csankovszki et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "6761900f-acb0-4615-a515-e37955bcdccb",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C11",
+      "claim": "Condensin DC binds to both X-chromosomes in hermaphrodites to repress their transcription by a factor of two.",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin DC binds to both X-chromosomes in hermaphrodites to repress their transcription by a factor of two, equalizing overall X chromosomal transcripts between XX hermaphrodites and XO males (Kruesi et al., 2013; Kramer et al., 2016; Kramer et al., 2015; Albritton and Ercan, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "03fcf7ec-fc0b-4d29-9ebd-42aa1b8321d9",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C12",
+      "claim": "Condensin DC recruitment to the X-chromosomes is mediated by ~60 recruitment elements on the X-chromosome (rex sites).",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin DC recruitment to the X-chromosomes is mediated by ~60 recruitment elements on the X-chromosome (rex sites) (Jans et al., 2009; Ercan et al., 2007; Albritton et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "ad08fe03-ce2b-420d-a731-c4fcfabe73cb",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C13",
+      "claim": "Eight strong rex sites function as TAD boundaries and form long-range rex-rex loops on the X-chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hi-C analysis in C. elegans embryos indicated that eight strong rex sites function as TAD boundaries and form long-range rex-rex loops on the X-chromosomes (Rowley et al., 2020; Crane et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "86e7935c-c390-4457-8ce6-cc7f8a6a60d4",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C14",
+      "claim": "Recruitment of condensin DC leads to spreading to the entire chromosome, accumulating at hundreds of enhancers, promoters, and other accessible gene regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of condensin DC leads to spreading to the entire chromosome, accumulating at hundreds of enhancers, promoters, and other accessible gene regulatory elements (Street et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "718c9d67-cac0-44bf-8244-5471949690d6",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C15",
+      "claim": "The X-chromosome harbors TADs separated by rex sites.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, X-chromosome is globally bound by condensin DC and organized into distinct TADs separated by rex sites, which are strongly bound by the DCC subunits, including SDC-2 and SDC-3 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1B Hi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "c5be824f-d1a6-417f-88eb-13cf79d3c1a7",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C16",
+      "claim": "The loss of SDC-2 results in the failure of condensin DC to localize to the X-chromosome and dissolution of TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the CTCF removal experiments where cohesin remains bound, the loss of SDC-2 results in the failure of condensin DC to localize to the X-chromosome and dissolution of TADs, suggesting that SDC-2 function as both LEF loader and barrier (Crane et al., 2015; Anderson et al., 2019; Pferdehirt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "d2c2fc06-d7c1-49c6-bb66-38001d94bca7",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C17",
+      "claim": "The X-chromosome shows a characteristic enrichment of 3D DNA contacts compared to autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, X-chromosome show a characteristic enrichment of 3D DNA contacts compared to autosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by P(s) analysis in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "1a6481fd-ac55-4fbb-af81-4102bfe3a391",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C18",
+      "claim": "The mean loop size for C. elegans X-chromosomes is 200 kb in embryo and 125 kb in L3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same metric, we find that the mean loop size for C. elegans X-chromosomes is 200 kb in embryo and 125 kb in L3s and 400 kb for autosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results based on analysis of P(s) log-derivative shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "cbbc9013-d099-4b34-82bb-d550e4a0260d",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C19",
+      "claim": "The mean loop size for C. elegans autosomes is 400 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same metric, we find that the mean loop size for C. elegans X-chromosomes is 200 kb in embryo and 125 kb in L3s and 400 kb for autosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results based on analysis of P(s) log-derivative shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "03c8c7d0-34a0-46b4-87e4-4625c9646e87",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C20",
+      "claim": "The X-chromosome shows weaker A/B sub-compartmentalization than autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the X-chromosome shows weaker A/B sub-compartmentalization than autosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by compartment analysis in Figures 1E, 1F, and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "2aa9b9f8-b374-46d9-97aa-824b3977f194",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C21",
+      "claim": "There are no noticeable TADs on chromosome-V side of the X;V fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "First, there are no noticeable TADs on chromosome-V side of the fusion (Figure 2A), suggesting that rex sites are unique elements of the X-chromosome that are required for TAD formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A Hi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "1af04d49-718d-434c-ad0b-4e4220bde74f",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C22",
+      "claim": "Rex sites are unique elements of the X-chromosome that are required for TAD formation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, there are no noticeable TADs on chromosome-V side of the fusion (Figure 2A), suggesting that rex sites are unique elements of the X-chromosome that are required for TAD formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that no TADs form on chromosome-V despite condensin DC spreading.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "278a85fa-58bf-4d61-b369-5ec0f9160d71",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C23",
+      "claim": "Enrichment of DNA contacts closer to the main diagonal occur specifically for the chromosome-V side of the X;V fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, enrichment of DNA contacts closer to the main diagonal occur specifically for the chromosome-V side of the fusion (Figure 2A, third panel), which coincides with the decrease in mean loop size (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "43de1536-4534-40f8-be16-771d9982a861",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C24",
+      "claim": "There is weakening of checker-board pattern on chromosome-V side of the X;V fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, weakening of checker-board pattern on chromosome-V side (Figure 2A, inset), which coincides with the local decrease in sub-compartment strength (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A inset and Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "44b1403d-35b6-4e66-9098-327c4106f720",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C25",
+      "claim": "The spreading of condensin DC is partially a reflection of loop extrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the spreading of condensin DC is partially a reflection of loop extrusion, which cannot sufficiently create TADs without the presence of rex sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the X;V fusion Hi-C data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "f3df799a-07aa-4755-a690-8c1d03448e96",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C26",
+      "claim": "Rex sites are bidirectional barriers to loop extrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, unlike CTCF binding sites, rex sites are bidirectional barriers to loop extrusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the rex-8 orientation insertion experiment shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "4e5a27af-9367-4a9e-a0d4-db3376255e95",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C27",
+      "claim": "The rex-rex corner-peaks and the new boundary on either side of the inserted rex-8 were similar regardless of the orientation of insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "The rex-rex corner-peaks and the new boundary on either side of the inserted rex-8 were similar regardless of the orientation of insertion (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3 Hi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "ac7c72fb-7da3-4ec0-bb78-1408535dc6c6",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C28",
+      "claim": "Insertion of a single rex-8 on chromosome-II resulted in recruitment but not spreading of condensin DC.",
+      "claim_type": "EXPLICIT",
+      "source": "The insertion of a single strong rex-8 on chromosome-II resulted in recruitment but not spreading of condensin DC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by ChIP-seq data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "eef62a72-bf76-4b8b-8c78-eeaa2e6f18e1",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C29",
+      "claim": "Insertion of combination of rex-1 and rex-8 leads to both recruitment and spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of combination of rex-1 and rex-8 leads to both recruitment and spreading (Figure 5A, Figure 5\u2014figure supplement 1A), suggesting the of rex sites also behave cooperatively in regards to spreading from the rex sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5A and Figure 5\u2014figure supplement 1A ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "91741f7c-f2ba-4fd3-a5da-2b9345ac9860",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C30",
+      "claim": "Rex sites behave cooperatively in regards to spreading from the rex sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of combination of rex-1 and rex-8 leads to both recruitment and spreading (Figure 5A, Figure 5\u2014figure supplement 1A), suggesting the of rex sites also behave cooperatively in regards to spreading from the rex sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that multiple rex sites lead to more spreading than single rex sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "6b79a26d-3030-4862-aed1-bbc4bb7a55f6",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C31",
+      "claim": "Insertion of the super rex was sufficient to recruit condensin DC as a point source and led to spreading of condensin DC more than that of the single rex-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of the super rex indeed was sufficient to recruit condensin DC as a point source and led to spreading of condensin DC more than that of the single rex-8 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5A ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "8aaf6532-9cbe-4bd1-affc-4f5ec7037ed5",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C32",
+      "claim": "Rex sites are loading sites for condensin DC in addition to being bidirectional barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that rex sites are loading sites for condensin DC in addition to being bidirectional barriers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the ectopic insertion experiments showing recruitment and cooperative behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "2f7b714e-f405-49f1-832d-ae52bab47ae7",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C33",
+      "claim": "Condensin DC represses transcription initiation by a factor of ~2 across the entire X-chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin DC represses transcription initiation by a factor of ~2 across the entire X-chromosomes (Kruesi et al., 2013; Kramer et al., 2016; Kramer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "5d137555-972a-43ea-9695-55b5171d4c3f",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C34",
+      "claim": "The level of condensin DC binding is proportional to repression as seen in X;A fusion chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of condensin DC binding is proportional to repression as seen in X;A fusion chromosomes (Street et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "12a6b667-be8b-4289-b92a-127663ff3bd2",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C35",
+      "claim": "Genes were not individually repressed by condensin DC in ectopic recruitment experiments, but there was a measurable effect when changes were analyzed at the domain level within ~200 and ~500 kb bins and even at the chromosomal level.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed mRNA-seq in two rex insertion strains and observed that genes were not individually repressed by condensin DC, but there was a measurable effect when changes were analyzed at the domain level within ~200 and ~500 kb bins and even at the chromosomal level (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "b92711dc-a7f5-4399-9b41-590184d0ddda",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C36",
+      "claim": "Condensin DC induces domain-wide repression whose effect size is proportional to the level of condensin DC binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the idea that condensin DC induces domain-wide repression whose effect size is proportional to the level of condensin DC binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the mRNA-seq data in ectopic insertion strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "466225ee-491c-434d-998e-054c37e065f9",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C37",
+      "claim": "Insertion of a single rex-8 created a TAD boundary on the X but not on chromosome II.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of a single rex-8 created a TAD boundary on the X (Figure 3) but not on chromosome II (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figures 3 and 6 Hi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "25f07569-b265-4eee-9d60-1d8caeb734b6",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C38",
+      "claim": "Inserted rex-8 did not serve as an indiscriminate loop extrusion barrier for other SMC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, inserted rex-8 did not serve as an indiscriminate loop extrusion barrier for other SMC complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that single rex-8 on chromosome II does not form TAD boundary.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "4a175936-7ba4-4c9e-952f-3eeeea52e928",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C39",
+      "claim": "Insertion of strong rex sites (rex-47, rex-8, or rex-14) on chromosome-I does not result in boundary formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with previous work showing that insertion of strong rex sites (rex-47, rex-8, or rex-14) on chromosome-I does not result in boundary formation (Anderson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "34c40407-b9b6-42c0-8dac-19438ece97b4",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C40",
+      "claim": "Flames emanate from super rex insertion site.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with one-sided extrusion, we observe flames emanating from super rex (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6 Hi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "ca15fc80-d96c-4503-ad83-3575147869b6",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C41",
+      "claim": "Flames off the endogenous strong rex sites are apparent on the X-chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The flames off the endogenous strong rex sites are also apparent on the X-chromosome (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "01910255-2ae4-4b43-984d-5bae6b7f3c11",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C42",
+      "claim": "An insulation effect is observed at the super rex.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observe an insulation effect at the super rex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and can be inferred from Figure 6 Hi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "43a15ad7-f396-4d51-8a54-8fc71fb98c14",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C43",
+      "claim": "In the three-rex insertion, all features of TADs are observed, including enriched square contacts, insulation, flame, and corner peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the three rex insertion, where there are both recruitment and spreading from multiple sources. In the three-rex insertion, we observe all features of TADs, including enriched square contacts, insulation, flame, and corner peak (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6 Hi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "69525474-c40a-4377-b393-21aa391fcbd5",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C44",
+      "claim": "A flame that extends past the right rex-8 implies that a subset of one-sided LEFs loaded on the left rex-8 can move past the right rex-8, suggesting a probabilistic barrier function by the rex sites.",
+      "claim_type": "EXPLICIT",
+      "source": "A flame that extends past the right rex-8 implies that a subset of one-sided LEFs loaded on the left rex-8 can move past the right rex-8, suggesting a probabilistic barrier function by the rex sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the Hi-C data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "76fc2544-7aff-41ba-a279-1e9a42a3d2fe",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C45",
+      "claim": "The spreading of condensin DC observed in super rex and three rex insertions coincides with the local increase in the insulation score compared to the wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "When zoomed out, the spreading of condensin DC observed in super rex and three rex insertions coincides with the local increase in the insulation score compared to the wildtype (Figure 6\u2014figure supplement 1, red arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "90ff48e4-3a29-4d3a-92a7-447492ae2f79",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C46",
+      "claim": "Observed changes in 3D structure are not simply a redistribution of existing contact frequencies but rather a formation of additional contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that observed changes in 3D structure are not simply a redistribution of existing contact frequencies but rather a formation of additional contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the insulation score analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "6ce83b81-4b7e-4817-abba-93784f163efe",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C47",
+      "claim": "The facilitation of 3D contacts that coincides with the spreading of condensin DC along with the relative insulation at the ectopic rex sites supports a model based on loop extrusion by condensin DC.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the facilitation of 3D contacts that coincides with the spreading of condensin DC along with the relative insulation at the ectopic rex sites supports a model based on loop extrusion by condensin DC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Hi-C and ChIP-seq data in ectopic insertion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "8bf4f5bd-369e-486e-b198-af6a3167fa12",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C48",
+      "claim": "Cooperativity between rex sites ensures X-specific and robust binding of condensin DC to an entire chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous work, we proposed that cooperation between rex sites ensures X-specific and robust binding of condensin DC to an entire chromosome (Albritton and Ercan, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "f5694f05-56df-4ae3-9d6b-76f5079eae1e",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C49",
+      "claim": "The cooperativity of rex sites is also involved in spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ChIP-seq analysis of spreading in ectopic insertion strains suggests that the cooperativity is also involved in spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the ChIP-seq data from ectopic insertions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "dcb83a07-aa32-40c6-94a3-b169752ba5da",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C50",
+      "claim": "Cooperativity of rex sites must be distance dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, cooperativity must be distance dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing results of three rex insertions at different distances.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "729067e2-e774-4a3a-9377-9bea08a08cfe",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C51",
+      "claim": "A previous attempt of three rex insertions spaced far apart (within 3 MB) resulted in weak recruitment of DCC and no changes on Hi-C matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous attempt of three rex insertions spaced far apart (within 3 MB) resulted in weak recruitment of DCC and no changes on Hi-C matrix (Anderson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "c936a3e3-6335-40cf-b6f4-6fa15c48564f",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C52",
+      "claim": "Even with a super rex insertion that recruited at a level comparable rex sites on the X, the level of spreading remained lower than that of the endogenous X-chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, even with a super rex insertion that recruited at a level comparable rex sites on the X, the level of spreading remained lower than that of the endogenous X-chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and can be inferred from ChIP-seq data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "1e6d7f7f-c58d-41e4-b975-30fb672340bc",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C53",
+      "claim": "On the X, activity of many weaker rex sites in between the 1 MB distance (average between strong rex sites) may contribute to the robust recruitment and spreading of condensin DC.",
+      "claim_type": "EXPLICIT",
+      "source": "On the X, activity of many weaker rex sites in between the 1 MB distance (average between strong rex sites) may contribute to the robust recruitment and spreading of condensin DC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation stated in the discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "c05c41ea-4633-4224-bc45-a9f2ecd90d0f",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C54",
+      "claim": "Many segments of the X-chromosomes cannot autonomously recruit condensin DC.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike rex sites, many other segments of the X-chromosomes cannot autonomously recruit condensin DC (Jans et al., 2009; Csankovszki et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "e5e0f7de-79a4-431d-89fc-4397a81fef43",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C55",
+      "claim": "Condensin DC must 'spread' from rex to other sites on the X-chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, condensin DC must 'spread' from rex to other sites on the X-chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that many X segments cannot autonomously recruit condensin DC.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "91faab0e-fbde-49e3-ade0-c1704fb6d719",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C56",
+      "claim": "Spreading phenomenon was observed on X;A fusion chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such 'spreading' phenomenon was later observed on X;A fusion chromosomes (Ercan et al., 2009; Pferdehirt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "c5d33cda-2b09-492e-ae97-a03c2fb1fc95",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C57",
+      "claim": "If rex sites were preferential loading sites for a two-sided LEF, one would observe a secondary perpendicular diagonal which is not present in the Hi-C data.",
+      "claim_type": "EXPLICIT",
+      "source": "If rex sites were preferential loading sites for a two-sided LEF, one would observe a secondary perpendicular diagonal which is not present in the Hi-C data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as reasoning for the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "5bed6a4f-87de-473c-9516-3c5f50fa346f",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C58",
+      "claim": "Condensin DC is proposed to be a one-sided LEF based on the presence of flames and the absence of a perpendicular diagonal.",
+      "claim_type": "EXPLICIT",
+      "source": "We begin by proposing that condensin DC is a one-sided LEF based on the presence of flames and the absence of a perpendicular diagonal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as part of the proposed model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "5092da49-f0d4-4332-a2f1-8bc135723c53",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C59",
+      "claim": "In simulation, one-sided LEFs cannot form corner-peaks due to high frequency of gaps between two oppositely oriented LEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulation, one-sided LEFs cannot form corner-peaks due to high frequency of gaps between two oppositely oriented LEFs (Banigan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "2f1544b4-9f0f-46d6-a27e-5a4b31a009b1",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C60",
+      "claim": "In simulation, the corner-peaks can be 'rescued' with strong preferential loading at the boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "This is unlikely to be a limitation in our system, because (i) in simulation, the corner-peaks can be 'rescued' with strong preferential loading at the boundary and (ii) a recent preprint reported that the cleavage of DPY-26, a kleisin subunit shared by condensin I and DC, did not eliminate rex-rex corner-peaks (Das, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "ab2ba4e1-c21e-4687-8e05-e82682e8b7c7",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C61",
+      "claim": "The cleavage of DPY-26, a kleisin subunit shared by condensin I and DC, did not eliminate rex-rex corner-peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "This is unlikely to be a limitation in our system, because (i) in simulation, the corner-peaks can be 'rescued' with strong preferential loading at the boundary and (ii) a recent preprint reported that the cleavage of DPY-26, a kleisin subunit shared by condensin I and DC, did not eliminate rex-rex corner-peaks (Das, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to a preprint.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "f4a0dc08-385a-408f-a4c7-2cc17c30e31b",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C62",
+      "claim": "The loss of SDC-2 does not result in global redistribution of condensin DC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the loss of SDC-2 does not result in global redistribution of condensin DC; in the absence of SDC-2, the fluorescence recovery after photobleaching (FRAP) recovery of condensin DC shows similar dynamics to that of free-floating molecules (Breimann et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "b75dcf5f-35b9-495e-a1df-881d86685802",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C63",
+      "claim": "It has been proposed that the condensin DC loaders also 'spread,' although to a lesser extent than condensin DC, leading to SDC-2, SDC-3, and DPY-30 enrichment at active promoters on the X-chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that the condensin DC loaders also 'spread,' although to a lesser extent than condensin DC, leading to SDC-2, SDC-3, and DPY-30 enrichment at active promoters on the X-chromosome (Ercan et al., 2007; Albritton et al., 2017; Street et al., 2019; Pferdehirt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "1b6b90f0-8d39-458b-8040-8edbd0da88ab",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C64",
+      "claim": "The number of SDC-2 binding sites on X-chromosome is an order of magnitude below that of condensin DC subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as can be seen from Figure 1B and previous peak analysis (Albritton et al., 2017), the number of SDC-2 (the hermaphrodite specific protein that initiates condensin DC recruitment to the X) binding sites on X-chromosome is an order of magnitude below that of condensin DC subunits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion with reference to Figure 1B and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "7afade7d-3388-4c47-bca7-a6af01b1047f",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C65",
+      "claim": "Upon loading, condensin DC may begin one-sided loop extrusion, but the inactive loop-anchor at the rex site is prone to being displaced.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that upon loading, condensin DC may begin one-sided loop extrusion, but the inactive loop-anchor at the rex site is prone to being displaced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model stated in the discussion.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "1793cd14-bbdf-4651-8762-a6b037d863ae",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C66",
+      "claim": "One-sided loop extrusion from a loading site whose inactive anchor is prone to displacement by diffusion results in an increasingly murkier flame with increasing rate of diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is inspired from the simulation work by Banigan et al., 2020, which informs that one-sided loop extrusion from a loading site whose inactive anchor is prone to displacement by diffusion (semi-diffusive one-sided loop extrusion (LE) model with a loading site) results in an increasingly murkier flame with increasing rate of diffusion (Banigan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to simulation work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "b1ab3818-cf66-488d-98e8-acc8eb801346",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C67",
+      "claim": "Movement of the inactive anchor would allow condensin DC to form transient loops between two non-rex elements forming increased contacts within TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "Movement of the inactive anchor would allow condensin DC to form transient loops between two non-rex elements forming increased contacts within TADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model stated in the discussion.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "699a5894-cc8a-4971-973e-a4d37cf0d679",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C68",
+      "claim": "PQN-85 (NIPBL homolog in C. elegans) is enriched at the rex sites.",
+      "claim_type": "EXPLICIT",
+      "source": "A candidate SMC complex displacing condensin DC loop anchor is cohesin, whose loader/processivity factor PQN-85 (NIPBL homolog in C. elegans) is enriched at the rex sites (Kranz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "cd303c87-6249-4d92-9e85-bc71822c97d7",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C69",
+      "claim": "DCC localizes to and represses X-chromosome in the early stages of embryo development (~40 cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work showed that DCC localizes to and represses X-chromosome in the early stages of embryo development (~40 cells) (Kramer et al., 2015; Dawes et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "b5b5ac6b-9d51-4a31-a133-c77430415b86",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C70",
+      "claim": "Upon degradation of SDC-3 or cleavage of kleisin subunit DPY-26, TADs disappear but the rex-rex corner peaks remain unperturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "Hi-C data in a recent preprint presented that upon degradation of SDC-3 or cleavage of kleisin subunit DPY-26, TADs disappear but the rex-rex corner peaks remain unperturbed (Das, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to a preprint.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "5121c297-8e0d-4a2e-8213-bd18377850ee",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C71",
+      "claim": "Genetic loss of SDC-2 results in the complete loss of all features of TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to the genetic loss of SDC-2 resulting in the complete loss of all features of TADs (Crane et al., 2015; Anderson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "f757bf1d-b177-4fcd-872f-0a1fbb196430",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C72",
+      "claim": "Genes located at the autosomal spreading region in the X;V fusion chromosome are repressed due to condensin DC spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that genes located at the autosomal spreading region in the X;V fusion chromosome are repressed due to condensin DC spreading (Street et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "60db93b5-c5b4-4bdd-88cd-f84d8677a686",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C73",
+      "claim": "Repression in X;V fusion does not coincide with TAD formation on the chromosome-V side.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that this repression does not coincide with TAD formation on the chromosome-V side, and despite a clear loop-anchored TAD in three rex insertions, there was minimal effect on transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on Hi-C and mRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "65e1fd15-3d9d-4183-a303-898f13e2c389",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C74",
+      "claim": "Despite a clear loop-anchored TAD in three rex insertions, there was minimal effect on transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that this repression does not coincide with TAD formation on the chromosome-V side, and despite a clear loop-anchored TAD in three rex insertions, there was minimal effect on transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on mRNA-seq data in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "c27d83a0-53d7-4780-b728-62132aa8f9e9",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C75",
+      "claim": "Deletion of the eight strong rex sites did not result in changes in Hi-C distance decay curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, deletion of the eight strong rex sites did not result in changes in Hi-C distance decay curve, implying that the loop extrusion activity of condensin DC is largely unperturbed (Anderson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "b4066c1f-2f0e-4e74-8116-efcfcd4e3c73",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C76",
+      "claim": "Shortening of 3D contacts indicative of condensin DC loop extrusion in the X;V fusion chromosome coincides with repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, shortening of 3D contacts indicative of condensin DC loop extrusion in the X;V fusion chromosome coincides with repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on Hi-C and previous expression data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "5765dc03-b087-4565-8de5-51735db94685",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C77",
+      "claim": "Upon TOP-2 depletion, the processivity of condensin DC loop extrusion reduces, and the spreading of the complex to the chromosome also reduces.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, upon TOP-2 depletion, the processivity of condensin DC loop extrusion reduces, and the spreading of the complex to the chromosome also reduces (Morao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "dd8a940c-0958-436b-8a9e-5b30d6441eaf",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C78",
+      "claim": "A null mutant of dpy-21 (a non condensin DCC subunit) results in X upregulation without significantly altering Hi-C interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, a null mutant of dpy-21 (a non condensin DCC subunit) results in X upregulation without significantly altering Hi-C interactions (Breimann et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "04ddf5ab-d9b9-41be-a260-fdb18534291f",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C79",
+      "claim": "C. elegans autosomes lack clear TAD boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since yeast chromosomes support much smaller interaction domains and lack clear TAD boundaries, how condensin binding regulates larger eukaryotic genomes remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by Hi-C data in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "e2e39838-fc91-467e-b84c-d47180b62c4e",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C80",
+      "claim": "C. elegans lacks a CTCF homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, while cohesin is present, a CTCF homolog is absent (Heger et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "5ec2670b-945e-4d09-b4c8-5a55ee760d5b",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C81",
+      "claim": "No strong TAD structures are present on autosomes in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, no strong TAD structures are present on autosomes (Figure 1B, chromosome-I) as previously reported (Crane et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with reference to Figure 1B and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "4729a419-0bff-4efa-81a9-01f2082fd50c",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C82",
+      "claim": "Condensin DC spreads ~3 MB into the autosomal region of X;V fusion chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin DC spreads ~3 MB into the autosomal region of X;V fusion chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Figure 2A caption and shown in ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "290ac092-6043-40c5-baba-0ba58297c7d1",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C83",
+      "claim": "The level of condensin DC binding in the autosomes is lower than that of the X in ectopic recruitment experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In ectopic recruitment experiments, the level of condensin DC binding in the autosomes is lower than that of the X (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5A ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "d3259fd5-2b17-4789-81d9-c9a58c5724ce",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C84",
+      "claim": "Increasing the number of ectopic rex sites increases the mean DPY-27 ChIP signal and the number of peaks on chromosome-II in both L3 and embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this prediction, increasing the number of ectopic rex sites increases the mean DPY-27 ChIP signal and the number of peaks on chromosome-II in both L3 (Figure 5B) and embryos (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5B and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "e81b391f-6d78-466c-9637-fa6b583c106f",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C85",
+      "claim": "The presence of two flanking bidirectional barriers, rex-8, enhances binding at rex-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, contrary to this prediction, we observe that the presence of two flanking bidirectional barriers, rex-8, enhances binding at rex-1 (Figure 5\u2014figure supplement 1C) and minimally affects binding at rex-8 (Figure 5C, Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5C and Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "f56455b1-b8d5-4173-9649-3ded21c83f95",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C86",
+      "claim": "ChIP-seq binding levels tightly follow the results of quantitative ChIP experiments performed in the three rex insertion embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ChIP-seq binding levels here tightly follow the results of quantitative ChIP experiments performed in the three rex insertion embryos (Albritton et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "d7c7b1ab-bb90-4f57-ad24-85b79d7492c1",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C87",
+      "claim": "Rex sites behave more cooperatively than competitively as observed by recruitment at the rex sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, rex sites behave more cooperatively than competitively as observed by recruitment at the rex sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the ChIP-seq data in ectopic insertion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "3ad1fbb3-c767-4626-83be-873db7c6acb1",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C88",
+      "claim": "Insertion of a weaker rex (rex-1) results in no recruitment or spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of a weaker rex (rex-1) results in no recruitment or spreading while insertion of a single strong rex (rex-8) leads to recruitment without spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 5A and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "a1a16e86-2880-4db9-959e-5e1fdad5116a",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C89",
+      "claim": "Insertion of a single strong rex (rex-8) leads to recruitment without spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of a weaker rex (rex-1) results in no recruitment or spreading while insertion of a single strong rex (rex-8) leads to recruitment without spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 5A and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "f43ab33f-140b-4faa-841a-2a7e567b40f9",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "claim_id": "C90",
+      "claim": "Rex sites behave cooperatively in regards to spreading from the rex sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of combination of rex-1 and rex-8 leads to both recruitment and spreading (Figure 5A, Figure 5\u2014figure supplement 1A), suggesting the of rex sites also behave cooperatively in regards to spreading from the rex sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the ChIP-seq data showing enhanced spreading with multiple rex sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e26625b1-4746-4b02-a7e5-75beab0f8a80",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The X-chromosome in C. elegans exhibits distinct 3D chromatin organization compared to autosomes, characterized by TADs separated by rex sites, enriched 3D DNA contacts with smaller mean loop sizes (200 kb in embryo, 125 kb in L3 vs 400 kb for autosomes), and weaker A/B sub-compartmentalization. Autosomes lack clear TAD boundaries and CTCF homologs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 and C79-C81 are well-supported by Hi-C data presented in Figure 1 and related supplementary figures. The P(s) analysis, compartment strength calculations, and visual inspection of Hi-C matrices provide converging evidence for the distinct chromatin organization of the X-chromosome versus autosomes. The observations are consistent with prior work and the data quality appears sufficient.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "74d3c9a8-553f-45a4-83a6-7f80c37b2c5c",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Condensin DC is a specialized condensin complex in C. elegans that differs from condensin I by the SMC-4 variant DPY-27. It is recruited to ~60 rex sites on the X-chromosome, spreads across the entire chromosome, and is required for TAD formation. Eight strong rex sites function as TAD boundaries and form long-range loops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C10-C14 describe established background knowledge about condensin DC, supported by multiple citations to prior work and consistent with the Hi-C and ChIP-seq data presented in Figure 1. These claims provide the foundation for the experimental work but are primarily based on prior literature rather than new findings in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "11982539-86df-4d3f-bb8b-d7cd73bbbbfd",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the X;V fusion chromosome, condensin DC spreads ~3 MB into the autosomal region but does not create TADs. Instead, spreading results in enrichment of shorter-range DNA contacts, decreased mean loop size, and weakened compartmentalization on the chromosome-V side, suggesting that rex sites are required for TAD formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C21-C25 are well-supported by Hi-C data in Figure 2 showing clear differences between X and V sides of the fusion. The ChIP-seq data confirms condensin DC spreading, while Hi-C analysis demonstrates changes in contact frequency and compartmentalization without TAD formation. The conclusion that rex sites are necessary for TADs is logically drawn from these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "ee5cd56d-1ba1-44a5-a94d-3168a8984b35",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Insertion of a strong rex site (rex-8) on the X-chromosome creates a TAD boundary regardless of sequence orientation, demonstrating that rex sites function as bidirectional barriers to loop extrusion, unlike the orientation-dependent CTCF binding sites in mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26-C27 are supported by Hi-C data in Figure 3 showing similar TAD boundary formation and rex-rex corner peaks regardless of rex-8 orientation. The comparison to CTCF is appropriate and the bidirectional barrier function is clearly demonstrated. However, the manuscript notes computational limitations in prior work due to small sample size and mixed motif orientations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "56d640c8-fde3-4506-82b6-521205c6e88e",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Insertion of a single strong rex site (rex-8) on autosomes (chromosome-II or chromosome-I) results in condensin DC recruitment but no spreading or TAD formation, indicating that rex sites do not function as indiscriminate barriers for other SMC complexes and that recruitment alone is insufficient for TAD formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C28, C37-C39, C88-C89 are supported by ChIP-seq data in Figure 5A and Hi-C data in Figure 6 showing recruitment without spreading or TAD features. The conclusion that rex sites are not general SMC barriers is logically sound. Agreement with prior work (C39) strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "341368f2-d504-438b-88c6-feb5ed2bc158",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Insertion of a 'super rex' (six concatenated strong rex sites) on chromosome-II leads to condensin DC recruitment and spreading greater than single rex-8, with Hi-C showing flames emanating from the insertion site and an insulation effect, consistent with one-sided loop extrusion from a loading site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C31, C40, C42 are supported by ChIP-seq data in Figure 5A showing enhanced spreading and Hi-C data in Figure 6 showing flames and insulation. The flame pattern is consistent with one-sided loop extrusion rather than two-sided extrusion which would show perpendicular diagonals. The data quality appears sufficient to support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "5f450647-6449-48c8-a7a6-5d26ec0ca4fb",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Insertion of three separate rex sites (rex-8, rex-1, rex-8) on chromosome-II leads to recruitment, spreading, and formation of loop-anchored TADs with all characteristic features including enriched square contacts, insulation, flames, and corner peaks. The flame extending past the right rex-8 suggests probabilistic barrier function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C29-C30, C43-C44, C90 are supported by ChIP-seq data in Figure 5A showing cooperative recruitment/spreading and Hi-C data in Figure 6 showing complete TAD features. The observation of all TAD features with three rex sites is a key finding demonstrating sufficiency. The inference about probabilistic barrier function (C44) is reasonable based on the flame pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Rex sites function as both loading sites and bidirectional barriers for condensin DC, exhibiting cooperative behavior in both recruitment and spreading. This cooperativity is distance-dependent, as three rex sites within 100 kb recapitulate TADs while sites spaced within 3 MB do not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C32, C48-C53, C87 are supported by the ectopic insertion experiments showing that multiple rex sites enhance recruitment and spreading more than expected from simple additive effects (Figures 5 and 6). The distance-dependence conclusion (C50-C51) is supported by comparison to prior work. However, C53 is speculative about weaker rex sites contributing on the X-chromosome.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "bf7a5d79-49f9-49f6-8585-11d0d5d10249",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Condensin DC is proposed to be a one-sided loop extruder based on the presence of flames in Hi-C data and absence of perpendicular diagonals. Simulations suggest one-sided LEFs cannot form corner-peaks, but this can be rescued with strong preferential loading at boundaries, and recent work shows corner-peaks persist after kleisin cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C40-C41, C57-C61 present a mechanistic model supported by Hi-C patterns (flames vs perpendicular diagonals) and integration with simulation work. The model is consistent with the data, though it relies on inference and comparison to simulations. The citation to Das 2022 preprint (C61) about corner-peaks persisting after DPY-26 cleavage supports the model but is from unpublished work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "5db166ff-8fae-4eac-b7ce-f5134cda6fa3",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Increasing the number of ectopic rex sites increases mean DPY-27 ChIP signal and peak count on chromosome-II, and flanking rex-8 sites enhance binding at rex-1 while minimally affecting rex-8 binding, demonstrating cooperative rather than competitive behavior. These ChIP-seq results match prior quantitative ChIP experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 are supported by ChIP-seq data in Figure 5B-C and supplementary figures. The observations contradict predictions from a barrier-only model and support cooperative recruitment. The agreement with prior quantitative ChIP (C86) strengthens confidence in the ChIP-seq normalization approach used.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "c68aaeeb-822c-49be-859b-325475905fef",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Condensin DC induces domain-wide transcriptional repression proportional to binding levels. In ectopic recruitment experiments, individual genes were not significantly repressed, but measurable repression was observed at the domain level (200-500 kb bins). Repression in X;V fusion does not coincide with TAD formation, and three rex insertions forming TADs showed minimal transcriptional effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 and C72-C74 are supported by mRNA-seq data in Figure 5\u2014figure supplement 2 and prior work. The domain-level analysis is appropriate given the lack of individual gene effects. The dissociation between TAD formation and repression (C73-C74) is an important finding suggesting loop extrusion and repression are separable functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "a76ba363-995e-450d-b0c9-476fa9ad1b35",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Spreading of condensin DC in super rex and three rex insertions coincides with local increases in insulation score compared to wildtype, suggesting formation of additional contacts rather than redistribution of existing contacts. This supports a loop extrusion model for condensin DC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by insulation score analysis in Figure 6\u2014figure supplement 1. The interpretation that increased insulation reflects new contacts rather than redistribution is reasonable. The conclusion supporting loop extrusion (C47) integrates multiple lines of evidence from the ectopic insertion experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "e3d2ed3f-6bb5-4c54-bf12-fe73c9c838c1",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Loss of SDC-2 results in failure of condensin DC to localize to the X-chromosome and complete dissolution of TADs, but does not cause global redistribution of condensin DC. Recent work shows that degradation of SDC-3 or cleavage of DPY-26 causes TAD dissolution while rex-rex corner peaks remain, contrasting with SDC-2 loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C62, C70-C71 are based on prior published work and a recent preprint (Das 2022). The claims accurately represent the cited literature. However, C70 relies on unpublished preprint data. The distinction between SDC-2 loss (complete TAD loss) and SDC-3/DPY-26 perturbation (TAD loss with corner peak retention) is interesting but requires validation of the preprint findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "1e1a9f14-3ea7-4a0d-b2dc-9acf728951a5",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Many X-chromosome segments cannot autonomously recruit condensin DC, requiring spreading from rex sites. Condensin DC loaders (SDC-2, SDC-3, DPY-30) also spread to active promoters, but SDC-2 binding sites are an order of magnitude less abundant than condensin DC subunit binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 and C63-C64 are based on prior work and data in Figure 1B. The observations support the necessity of spreading from rex sites and indicate that loader spreading alone cannot explain the distribution of condensin DC. These claims provide important context for the mechanistic model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "b23720be-8504-430a-bdcc-d07c1771fdde",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A proposed model suggests that upon loading at rex sites, condensin DC begins one-sided loop extrusion but the inactive loop-anchor is prone to displacement, allowing formation of transient loops between non-rex elements. Cohesin, whose loader PQN-85 is enriched at rex sites, is a candidate for displacing the condensin DC loop anchor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C68 present a speculative mechanistic model inspired by simulation work (Banigan et al. 2020). While the model is creative and could explain the data, it lacks direct experimental validation. The proposal about cohesin displacement (C68) is based only on PQN-85 enrichment at rex sites. Additional experiments would be needed to test these specific mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "de5d96c1-7f04-41d7-86d6-100e3b95de3d",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "DCC localizes to X-chromosomes early in embryo development. Deletion of eight strong rex sites does not change Hi-C distance decay curves, suggesting loop extrusion activity is unperturbed. Shortening of 3D contacts in X;V fusion coincides with repression. TOP-2 depletion reduces processivity and spreading, while dpy-21 mutation causes upregulation without altering Hi-C interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C75-C78 are based on prior published work and accurately represent the cited literature. These observations support the discussion about the relationship between loop extrusion, TAD formation, and transcriptional repression. The claims help distinguish the structural and functional roles of condensin DC.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    },
+    {
+      "id": "7406721d-7853-41d3-bc45-48ae259ffe3f",
+      "content_id": "9d3c5338-0fce-4662-823e-49097b596ca0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The level of condensin DC binding in autosomes is lower than on the X-chromosome in ectopic recruitment experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is directly supported by ChIP-seq data in Figure 5A showing weaker DPY-27 signal on chromosome-II compared to X-chromosome. This observation is important for interpreting the ectopic insertion experiments and understanding the X-specificity of condensin DC.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:01.458103Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "718c9d67-cac0-44bf-8244-5471949690d6",
+      "result_id": "e26625b1-4746-4b02-a7e5-75beab0f8a80"
+    },
+    {
+      "claim_id": "d2c2fc06-d7c1-49c6-bb66-38001d94bca7",
+      "result_id": "e26625b1-4746-4b02-a7e5-75beab0f8a80"
+    },
+    {
+      "claim_id": "1a6481fd-ac55-4fbb-af81-4102bfe3a391",
+      "result_id": "e26625b1-4746-4b02-a7e5-75beab0f8a80"
+    },
+    {
+      "claim_id": "cbbc9013-d099-4b34-82bb-d550e4a0260d",
+      "result_id": "e26625b1-4746-4b02-a7e5-75beab0f8a80"
+    },
+    {
+      "claim_id": "03c8c7d0-34a0-46b4-87e4-4625c9646e87",
+      "result_id": "e26625b1-4746-4b02-a7e5-75beab0f8a80"
+    },
+    {
+      "claim_id": "04ddf5ab-d9b9-41be-a260-fdb18534291f",
+      "result_id": "e26625b1-4746-4b02-a7e5-75beab0f8a80"
+    },
+    {
+      "claim_id": "e2e39838-fc91-467e-b84c-d47180b62c4e",
+      "result_id": "e26625b1-4746-4b02-a7e5-75beab0f8a80"
+    },
+    {
+      "claim_id": "5ec2670b-945e-4d09-b4c8-5a55ee760d5b",
+      "result_id": "e26625b1-4746-4b02-a7e5-75beab0f8a80"
+    },
+    {
+      "claim_id": "8ef648a4-8061-48ff-b53b-03f1f6553e55",
+      "result_id": "74d3c9a8-553f-45a4-83a6-7f80c37b2c5c"
+    },
+    {
+      "claim_id": "23aced10-c954-44ac-a20b-8509aeb2cb23",
+      "result_id": "74d3c9a8-553f-45a4-83a6-7f80c37b2c5c"
+    },
+    {
+      "claim_id": "9ebbd53f-99b3-421a-92fe-c94778f134de",
+      "result_id": "74d3c9a8-553f-45a4-83a6-7f80c37b2c5c"
+    },
+    {
+      "claim_id": "6761900f-acb0-4615-a515-e37955bcdccb",
+      "result_id": "74d3c9a8-553f-45a4-83a6-7f80c37b2c5c"
+    },
+    {
+      "claim_id": "03fcf7ec-fc0b-4d29-9ebd-42aa1b8321d9",
+      "result_id": "74d3c9a8-553f-45a4-83a6-7f80c37b2c5c"
+    },
+    {
+      "claim_id": "ad08fe03-ce2b-420d-a731-c4fcfabe73cb",
+      "result_id": "74d3c9a8-553f-45a4-83a6-7f80c37b2c5c"
+    },
+    {
+      "claim_id": "86e7935c-c390-4457-8ce6-cc7f8a6a60d4",
+      "result_id": "74d3c9a8-553f-45a4-83a6-7f80c37b2c5c"
+    },
+    {
+      "claim_id": "1cd11c9e-12d5-4fa4-8edd-e3eda1874246",
+      "result_id": "11982539-86df-4d3f-bb8b-d7cd73bbbbfd"
+    },
+    {
+      "claim_id": "2aa9b9f8-b374-46d9-97aa-824b3977f194",
+      "result_id": "11982539-86df-4d3f-bb8b-d7cd73bbbbfd"
+    },
+    {
+      "claim_id": "1af04d49-718d-434c-ad0b-4e4220bde74f",
+      "result_id": "11982539-86df-4d3f-bb8b-d7cd73bbbbfd"
+    },
+    {
+      "claim_id": "278a85fa-58bf-4d61-b369-5ec0f9160d71",
+      "result_id": "11982539-86df-4d3f-bb8b-d7cd73bbbbfd"
+    },
+    {
+      "claim_id": "43de1536-4534-40f8-be16-771d9982a861",
+      "result_id": "11982539-86df-4d3f-bb8b-d7cd73bbbbfd"
+    },
+    {
+      "claim_id": "44b1403d-35b6-4e66-9098-327c4106f720",
+      "result_id": "11982539-86df-4d3f-bb8b-d7cd73bbbbfd"
+    },
+    {
+      "claim_id": "4729a419-0bff-4efa-81a9-01f2082fd50c",
+      "result_id": "11982539-86df-4d3f-bb8b-d7cd73bbbbfd"
+    },
+    {
+      "claim_id": "1fb3fcad-7f14-482f-8a97-bd03a0335228",
+      "result_id": "ee5cd56d-1ba1-44a5-a94d-3168a8984b35"
+    },
+    {
+      "claim_id": "f3df799a-07aa-4755-a690-8c1d03448e96",
+      "result_id": "ee5cd56d-1ba1-44a5-a94d-3168a8984b35"
+    },
+    {
+      "claim_id": "4e5a27af-9367-4a9e-a0d4-db3376255e95",
+      "result_id": "ee5cd56d-1ba1-44a5-a94d-3168a8984b35"
+    },
+    {
+      "claim_id": "46ef62c4-90e1-4a14-bfda-1edaaf411203",
+      "result_id": "56d640c8-fde3-4506-82b6-521205c6e88e"
+    },
+    {
+      "claim_id": "ac7c72fb-7da3-4ec0-bb78-1408535dc6c6",
+      "result_id": "56d640c8-fde3-4506-82b6-521205c6e88e"
+    },
+    {
+      "claim_id": "466225ee-491c-434d-998e-054c37e065f9",
+      "result_id": "56d640c8-fde3-4506-82b6-521205c6e88e"
+    },
+    {
+      "claim_id": "25f07569-b265-4eee-9d60-1d8caeb734b6",
+      "result_id": "56d640c8-fde3-4506-82b6-521205c6e88e"
+    },
+    {
+      "claim_id": "4a175936-7ba4-4c9e-952f-3eeeea52e928",
+      "result_id": "56d640c8-fde3-4506-82b6-521205c6e88e"
+    },
+    {
+      "claim_id": "3ad1fbb3-c767-4626-83be-873db7c6acb1",
+      "result_id": "56d640c8-fde3-4506-82b6-521205c6e88e"
+    },
+    {
+      "claim_id": "a1a16e86-2880-4db9-959e-5e1fdad5116a",
+      "result_id": "56d640c8-fde3-4506-82b6-521205c6e88e"
+    },
+    {
+      "claim_id": "26eda8c4-fa99-4b90-a576-11da8d3da48e",
+      "result_id": "341368f2-d504-438b-88c6-feb5ed2bc158"
+    },
+    {
+      "claim_id": "6b79a26d-3030-4862-aed1-bbc4bb7a55f6",
+      "result_id": "341368f2-d504-438b-88c6-feb5ed2bc158"
+    },
+    {
+      "claim_id": "34c40407-b9b6-42c0-8dac-19438ece97b4",
+      "result_id": "341368f2-d504-438b-88c6-feb5ed2bc158"
+    },
+    {
+      "claim_id": "01910255-2ae4-4b43-984d-5bae6b7f3c11",
+      "result_id": "341368f2-d504-438b-88c6-feb5ed2bc158"
+    },
+    {
+      "claim_id": "31179456-cdb3-4c8e-aee1-8f5683cc209d",
+      "result_id": "5f450647-6449-48c8-a7a6-5d26ec0ca4fb"
+    },
+    {
+      "claim_id": "eef62a72-bf76-4b8b-8c78-eeaa2e6f18e1",
+      "result_id": "5f450647-6449-48c8-a7a6-5d26ec0ca4fb"
+    },
+    {
+      "claim_id": "91741f7c-f2ba-4fd3-a5da-2b9345ac9860",
+      "result_id": "5f450647-6449-48c8-a7a6-5d26ec0ca4fb"
+    },
+    {
+      "claim_id": "43a15ad7-f396-4d51-8a54-8fc71fb98c14",
+      "result_id": "5f450647-6449-48c8-a7a6-5d26ec0ca4fb"
+    },
+    {
+      "claim_id": "69525474-c40a-4377-b393-21aa391fcbd5",
+      "result_id": "5f450647-6449-48c8-a7a6-5d26ec0ca4fb"
+    },
+    {
+      "claim_id": "f43ab33f-140b-4faa-841a-2a7e567b40f9",
+      "result_id": "5f450647-6449-48c8-a7a6-5d26ec0ca4fb"
+    },
+    {
+      "claim_id": "42a3fe25-7f58-4780-9f92-532b2ce2a22d",
+      "result_id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a"
+    },
+    {
+      "claim_id": "8aaf6532-9cbe-4bd1-affc-4f5ec7037ed5",
+      "result_id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a"
+    },
+    {
+      "claim_id": "8bf4f5bd-369e-486e-b198-af6a3167fa12",
+      "result_id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a"
+    },
+    {
+      "claim_id": "f5694f05-56df-4ae3-9d6b-76f5079eae1e",
+      "result_id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a"
+    },
+    {
+      "claim_id": "dcb83a07-aa32-40c6-94a3-b169752ba5da",
+      "result_id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a"
+    },
+    {
+      "claim_id": "729067e2-e774-4a3a-9377-9bea08a08cfe",
+      "result_id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a"
+    },
+    {
+      "claim_id": "c936a3e3-6335-40cf-b6f4-6fa15c48564f",
+      "result_id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a"
+    },
+    {
+      "claim_id": "1e6d7f7f-c58d-41e4-b975-30fb672340bc",
+      "result_id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a"
+    },
+    {
+      "claim_id": "d7c7b1ab-bb90-4f57-ad24-85b79d7492c1",
+      "result_id": "a072ae1c-7d82-4601-ba78-7b7803e7ae7a"
+    },
+    {
+      "claim_id": "23ef1e1e-64e6-4c3e-b017-41e144f5b8a4",
+      "result_id": "bf7a5d79-49f9-49f6-8585-11d0d5d10249"
+    },
+    {
+      "claim_id": "34c40407-b9b6-42c0-8dac-19438ece97b4",
+      "result_id": "bf7a5d79-49f9-49f6-8585-11d0d5d10249"
+    },
+    {
+      "claim_id": "ca15fc80-d96c-4503-ad83-3575147869b6",
+      "result_id": "bf7a5d79-49f9-49f6-8585-11d0d5d10249"
+    },
+    {
+      "claim_id": "c5d33cda-2b09-492e-ae97-a03c2fb1fc95",
+      "result_id": "bf7a5d79-49f9-49f6-8585-11d0d5d10249"
+    },
+    {
+      "claim_id": "5bed6a4f-87de-473c-9516-3c5f50fa346f",
+      "result_id": "bf7a5d79-49f9-49f6-8585-11d0d5d10249"
+    },
+    {
+      "claim_id": "5092da49-f0d4-4332-a2f1-8bc135723c53",
+      "result_id": "bf7a5d79-49f9-49f6-8585-11d0d5d10249"
+    },
+    {
+      "claim_id": "2f1544b4-9f0f-46d6-a27e-5a4b31a009b1",
+      "result_id": "bf7a5d79-49f9-49f6-8585-11d0d5d10249"
+    },
+    {
+      "claim_id": "ab2ba4e1-c21e-4687-8e05-e82682e8b7c7",
+      "result_id": "bf7a5d79-49f9-49f6-8585-11d0d5d10249"
+    },
+    {
+      "claim_id": "d3259fd5-2b17-4789-81d9-c9a58c5724ce",
+      "result_id": "5db166ff-8fae-4eac-b7ce-f5134cda6fa3"
+    },
+    {
+      "claim_id": "e81b391f-6d78-466c-9637-fa6b583c106f",
+      "result_id": "5db166ff-8fae-4eac-b7ce-f5134cda6fa3"
+    },
+    {
+      "claim_id": "f56455b1-b8d5-4173-9649-3ded21c83f95",
+      "result_id": "5db166ff-8fae-4eac-b7ce-f5134cda6fa3"
+    },
+    {
+      "claim_id": "2f7b714e-f405-49f1-832d-ae52bab47ae7",
+      "result_id": "c68aaeeb-822c-49be-859b-325475905fef"
+    },
+    {
+      "claim_id": "5d137555-972a-43ea-9695-55b5171d4c3f",
+      "result_id": "c68aaeeb-822c-49be-859b-325475905fef"
+    },
+    {
+      "claim_id": "12a6b667-be8b-4289-b92a-127663ff3bd2",
+      "result_id": "c68aaeeb-822c-49be-859b-325475905fef"
+    },
+    {
+      "claim_id": "b92711dc-a7f5-4399-9b41-590184d0ddda",
+      "result_id": "c68aaeeb-822c-49be-859b-325475905fef"
+    },
+    {
+      "claim_id": "f757bf1d-b177-4fcd-872f-0a1fbb196430",
+      "result_id": "c68aaeeb-822c-49be-859b-325475905fef"
+    },
+    {
+      "claim_id": "60db93b5-c5b4-4bdd-88cd-f84d8677a686",
+      "result_id": "c68aaeeb-822c-49be-859b-325475905fef"
+    },
+    {
+      "claim_id": "65e1fd15-3d9d-4183-a303-898f13e2c389",
+      "result_id": "c68aaeeb-822c-49be-859b-325475905fef"
+    },
+    {
+      "claim_id": "76fc2544-7aff-41ba-a279-1e9a42a3d2fe",
+      "result_id": "a76ba363-995e-450d-b0c9-476fa9ad1b35"
+    },
+    {
+      "claim_id": "90ff48e4-3a29-4d3a-92a7-447492ae2f79",
+      "result_id": "a76ba363-995e-450d-b0c9-476fa9ad1b35"
+    },
+    {
+      "claim_id": "6ce83b81-4b7e-4817-abba-93784f163efe",
+      "result_id": "a76ba363-995e-450d-b0c9-476fa9ad1b35"
+    },
+    {
+      "claim_id": "c5be824f-d1a6-417f-88eb-13cf79d3c1a7",
+      "result_id": "e3d2ed3f-6bb5-4c54-bf12-fe73c9c838c1"
+    },
+    {
+      "claim_id": "f4a0dc08-385a-408f-a4c7-2cc17c30e31b",
+      "result_id": "e3d2ed3f-6bb5-4c54-bf12-fe73c9c838c1"
+    },
+    {
+      "claim_id": "b5b5ac6b-9d51-4a31-a133-c77430415b86",
+      "result_id": "e3d2ed3f-6bb5-4c54-bf12-fe73c9c838c1"
+    },
+    {
+      "claim_id": "5121c297-8e0d-4a2e-8213-bd18377850ee",
+      "result_id": "e3d2ed3f-6bb5-4c54-bf12-fe73c9c838c1"
+    },
+    {
+      "claim_id": "c05c41ea-4633-4224-bc45-a9f2ecd90d0f",
+      "result_id": "1e1a9f14-3ea7-4a0d-b2dc-9acf728951a5"
+    },
+    {
+      "claim_id": "e5e0f7de-79a4-431d-89fc-4397a81fef43",
+      "result_id": "1e1a9f14-3ea7-4a0d-b2dc-9acf728951a5"
+    },
+    {
+      "claim_id": "91faab0e-fbde-49e3-ade0-c1704fb6d719",
+      "result_id": "1e1a9f14-3ea7-4a0d-b2dc-9acf728951a5"
+    },
+    {
+      "claim_id": "b75dcf5f-35b9-495e-a1df-881d86685802",
+      "result_id": "1e1a9f14-3ea7-4a0d-b2dc-9acf728951a5"
+    },
+    {
+      "claim_id": "1b6b90f0-8d39-458b-8040-8edbd0da88ab",
+      "result_id": "1e1a9f14-3ea7-4a0d-b2dc-9acf728951a5"
+    },
+    {
+      "claim_id": "7afade7d-3388-4c47-bca7-a6af01b1047f",
+      "result_id": "b23720be-8504-430a-bdcc-d07c1771fdde"
+    },
+    {
+      "claim_id": "1793cd14-bbdf-4651-8762-a6b037d863ae",
+      "result_id": "b23720be-8504-430a-bdcc-d07c1771fdde"
+    },
+    {
+      "claim_id": "b1ab3818-cf66-488d-98e8-acc8eb801346",
+      "result_id": "b23720be-8504-430a-bdcc-d07c1771fdde"
+    },
+    {
+      "claim_id": "699a5894-cc8a-4971-973e-a4d37cf0d679",
+      "result_id": "b23720be-8504-430a-bdcc-d07c1771fdde"
+    },
+    {
+      "claim_id": "cd303c87-6249-4d92-9e85-bc71822c97d7",
+      "result_id": "de5d96c1-7f04-41d7-86d6-100e3b95de3d"
+    },
+    {
+      "claim_id": "c27d83a0-53d7-4780-b728-62132aa8f9e9",
+      "result_id": "de5d96c1-7f04-41d7-86d6-100e3b95de3d"
+    },
+    {
+      "claim_id": "b4066c1f-2f0e-4e74-8116-efcfcd4e3c73",
+      "result_id": "de5d96c1-7f04-41d7-86d6-100e3b95de3d"
+    },
+    {
+      "claim_id": "5765dc03-b087-4565-8de5-51735db94685",
+      "result_id": "de5d96c1-7f04-41d7-86d6-100e3b95de3d"
+    },
+    {
+      "claim_id": "dd8a940c-0958-436b-8a9e-5b30d6441eaf",
+      "result_id": "de5d96c1-7f04-41d7-86d6-100e3b95de3d"
+    },
+    {
+      "claim_id": "290ac092-6043-40c5-baba-0ba58297c7d1",
+      "result_id": "7406721d-7853-41d3-bc45-48ae259ffe3f"
+    }
+  ],
+  "comparisons": []
+}

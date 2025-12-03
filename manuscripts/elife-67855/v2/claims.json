@@ -1,0 +1,1076 @@
+[
+  {
+    "claim_id": "C2",
+    "claim": "The encoder and decoder are parameterized using convolutional neural networks.",
+    "claim_type": "EXPLICIT",
+    "source": "As with most VAE methods, we parameterized both the encoder and decoder using convolutional neural networks, which provide useful inductive biases for representing regularly sampled data such as images or spectrograms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Directly stated in the manuscript describing the model architecture.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The VAE training procedure maximizes a lower bound on the probability of the data given the model.",
+    "claim_type": "EXPLICIT",
+    "source": "The two maps are jointly trained to maximize a lower bound on the probability of the data given the model (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Directly stated in the manuscript describing the training objective.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Trajectories in latent space represent sequences of spectrograms that smoothly interpolate between start and end syllables.",
+    "claim_type": "EXPLICIT",
+    "source": "Each point in this latent space represents a single spectrogram image, and trajectories in this latent space represent sequences of spectrograms that smoothly interpolate between start and end syllables (Figure 1c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text and demonstrated in Figure 1c showing interpolations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The VAE training procedure can be seen as a compression algorithm that represents each spectrogram as a collection of 32 numbers describing data-derived vocal features.",
+    "claim_type": "EXPLICIT",
+    "source": "The VAE training procedure can thus be seen as a compression algorithm that represents each spectrogram as a collection of 32 numbers describing data-derived vocal features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Directly stated in the manuscript describing the VAE's function.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Each acoustic feature calculated by MUPET appears to be encoded in a smooth gradient across the learned latent space.",
+    "claim_type": "EXPLICIT",
+    "source": "As Figure 2a\u2013c shows, each acoustic feature appears to be encoded in a smooth gradient across the learned latent space, indicating that information about each has been preserved.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text and shown in Figure 2a-c with color gradients.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Variance in commonly used acoustic metrics explained by latent features ranged from 64% to 95%.",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, when we quantified this pattern by asking how much variance in a wide variety of commonly used acoustic metrics could be accounted for by latent features (see Materials and methods), we found that values ranged from 64% to 95%, indicating that most or nearly all traditional features were captured by the latent space (see Figure 2\u2014figure supplement 1 for individual acoustic features).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Quantitative result stated in text with reference to supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Learned features carry most of the information available in traditional features, as well as unique information missed by those metrics.",
+    "claim_type": "EXPLICIT",
+    "source": "That is, the learned features carry most of the information available in traditional features, as well as unique information missed by those metrics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as conclusion from the prediction asymmetry analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The VAE, although trained with a latent space of 32 dimensions, converges on a parsimonious representation that makes use of only 5\u20137 dimensions.",
+    "claim_type": "EXPLICIT",
+    "source": "We begin by noting that the VAE, although trained with a latent space of 32 dimensions, converges on a parsimonious representation that makes use of only 5\u20137 dimensions, with variance apportioned roughly equally between these (Figure 2\u2014figure supplement 2; Dai et al., 2018).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to supplementary figure showing dimensionality.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The spaces spanned by the learned latent features have comparatively higher effective dimension than the spaces spanned by traditional features.",
+    "claim_type": "EXPLICIT",
+    "source": "As Figure 2f thus makes clear, the spaces spanned by the learned latent features have comparatively higher effective dimension than the spaces spanned by traditional features, suggesting that the learned features have a higher representational capacity.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 2f showing cumulative variance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Traditional acoustic features often exhibit high correlations, effectively reducing the number of independent measurements made.",
+    "claim_type": "EXPLICIT",
+    "source": "While the three software packages we tested (SAP [Tchernichovski and Mitra, 2004], MUPET [Van Segbroeck et al., 2017], DeepSqueak [Coffey et al., 2019]) measure upwards of 14 acoustic features per syllable, we find that these features often exhibit high correlations (Figure 2d, Figure 2\u2014figure supplement 3), effectively reducing the number of independent measurements made.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to figures showing correlation matrices.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "DeepSqueak feature space often fails to return similar spectrograms, whereas the learned latent space reliably produces close matches.",
+    "claim_type": "EXPLICIT",
+    "source": "As Figure 3 shows, DeepSqueak feature space often fails to return similar spectrograms, whereas the learned latent space reliably produces close matches (see Figure 3\u2014figure supplement 1 for comparisons to metrics in spectrogram space, Figure 3\u2014figure supplement 2 for a representative sample using all feature sets, and Figure 3\u2014figure supplement 3 for more details on nearest neighbors returned by DeepSqueak feature space).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 3 showing nearest neighbor comparisons.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Directed song is more stereotyped and slightly faster than undirected song.",
+    "claim_type": "EXPLICIT",
+    "source": "It is well-established that directed song is more stereotyped and slightly faster than undirected song (Sossinka and B\u00f6hner, 1980).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as established fact with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Learned latent features show a much more concentrated distribution of directed syllables relative to undirected syllables compared to SAP features.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 4b displays the same syllables with respect to the first two principal components of the VAE's latent features, showing a much more concentrated distribution of directed syllables relative to undirected syllables (see Figure 4\u2014figure supplement 1 for all syllables).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 4b showing the distribution.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Latent features consistently report greater variability reductions (27\u201337%) than SAP-generated features (0\u201320%) across all song syllables.",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, when we quantify this reduction of variability across all feature-space dimensions and song syllables (see Materials and methods), learned latent features consistently report greater variability reductions than SAP-generated features (Figure 4c; SAP: 0\u201320%, VAE: 27\u201337%), indicating that latent features are more sensitive to this effect.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Quantitative result stated in text with reference to Figure 4c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Latent features outperform SAP features in predicting social context.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, we find that latent features outperform SAP features in the downstream tasks of predicting social context (Appendix 1\u2014table 1), mouse strain (Appendix 1\u2014table 2), and mouse identity (Appendix 1\u2014table 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in text with reference to appendix tables.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Clear differences between the USV distributions of C57/BL6 and DBA/2 mouse strains are apparent in UMAP projection.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 4d shows a UMAP projection of the 31,440 detected syllables, colored by mouse strain. Visualized with UMAP, clear differences between the USV distributions are apparent.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 4d showing strain differences.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "C57 mice mostly produce noisy USVs, while DBA mice produce a much greater variety, including many short low-frequency syllables that C57s rarely produce.",
+    "claim_type": "EXPLICIT",
+    "source": "When taken together with an 'atlas' of USV shapes derived from this visualization (Figure 4\u2014figure supplement 2), we can develop an intuitive understanding of the differences between the USVs of the two strains: the C57 mice mostly produce noisy USVs, while the DBA mice produce a much greater variety, including many short low-frequency syllables that C57s rarely produce.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Within-subject differences in syllable repertoire are smaller than those between individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we note that almost all recordings of the same individuals are co-localized, indicating that within-subject differences in syllable repertoire are smaller than those between individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as observation from Figure 4f analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Mice produce individually stereotyped, stable vocal repertoires.",
+    "claim_type": "EXPLICIT",
+    "source": "Although it has been previously shown that a deep convolutional neural network can be trained to classify USV syllables according to mouse identity with good accuracy (Ivanenko et al., 2020, Figure S1), here we find that repertoire features learned in a wholly unsupervised fashion achieve similar results, indicating that mice produce individually stereotyped, stable vocal repertoires.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as conclusion from the repertoire analysis with citation to prior work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The finch latent space exhibits well-delineated clusters corresponding to song syllables.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, the finch latent space exhibits well-delineated clusters corresponding to song syllables (Figure 5a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 5a showing clusters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Mouse USVs clump together in a single quasi-continuous mass.",
+    "claim_type": "EXPLICIT",
+    "source": "However, as seen above, mouse USVs clump together in a single quasi-continuous mass (Figure 5b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 5b showing continuous distribution.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The clustering of mouse vocalizations is often considered well-established in the literature.",
+    "claim_type": "EXPLICIT",
+    "source": "This raises a puzzle since the clustering of mouse vocalizations is often considered well-established in the literature (Holy and Guo, 2005; Burkett et al., 2015; Woehr, 2014; Chabout et al., 2015; Hertz et al., 2020) and is assumed in most other analyses of these data (Van Segbroeck et al., 2017; Coffey et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with multiple citations to prior literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Clusters of mouse USVs are used to assess differences across strains, social contexts, and genotypes.",
+    "claim_type": "EXPLICIT",
+    "source": "Clusters of mouse USVs are used to assess differences across strains (Van Segbroeck et al., 2017), social contexts (Chabout et al., 2015; Coffey et al., 2019; Hammerschmidt et al., 2012), and genotypes (Gaub et al., 2010), and the study of transition models among clusters of syllables has given rise to models of syllable sequences that do not readily extend to the nonclustered case (Holy and Guo, 2005; Chabout et al., 2015; Hertz et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations to prior work using clustering.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Clusters detected by MUPET roughly correspond to regions of the UMAP projection, with some overlap between clusters and some noncontiguity of single clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 5c, clusters detected by MUPET roughly correspond to regions of the UMAP projection, with some overlap between clusters (e.g., purple and blue clusters) and some noncontiguity of single clusters (red and orange clusters).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 5c showing MUPET labels.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Both bird syllables and mouse USVs were more clustered than moment-matched samples of Gaussian noise, but mouse USVs were closer to the null than to birdsong on multiple goodness-of-clustering metrics.",
+    "claim_type": "EXPLICIT",
+    "source": "By these measures, both bird syllables and mouse USVs were more clustered than moment-matched samples of Gaussian noise, a simple null hypothesis, but mouse USVs were closer to the null than to birdsong on multiple goodness-of-clustering metrics (Figure 5d, Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to figures showing clustering metrics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "MUPET acoustic features admit uniformly poorer clusters than latent features as quantified by unsupervised clustering metrics.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, we find that MUPET acoustic features admit uniformly poorer clusters than latent features as quantified by the same metrics (Figure 5\u2014figure supplements 2 and 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to supplementary figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Near-perfectly consistent assignments of zebra finch syllables into six clusters were found, but much less consistent clusters for mouse syllables for more than two clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "We find near-perfectly consistent assignments of zebra finch syllables into six clusters and much less consistent clusters for mouse syllables for more than two clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as result from consistency analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Even the most acoustically disparate mouse syllables can be connected with a sequence of syllables exhibiting more-or-less smooth acoustic variation.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we find that even the most acoustically disparate syllables can be connected with a sequence of syllables exhibiting more-or-less smooth acoustic variation (Figure 5e), in contrast to zebra finch syllables (Figure 5\u2014figure supplement 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 5e showing interpolations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The shotgun-VAE approach encouraged the autoencoder to find latent features sufficient to 'glue' continuous sequences back together from randomly sampled audio snippets.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar to the shotgun approach to gene sequencing (Venter et al., 1998) and a related method of neural connectivity inference (Soudry et al., 2015), we trained the VAE on randomly sampled segments of audio, requiring that it learn latent descriptions sufficient to characterize any given time window during the recording. That is, this 'shotgun-VAE' approach encouraged the autoencoder to find latent features sufficient to 'glue' continuous sequences back together from randomly sampled audio snippets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in text describing the shotgun VAE method with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The shotgun VAE projection of mouse USVs displays some structure (silence on the right, shorter to longer syllables arranged from right to left), but no evidence of stereotyped sequential structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 6a shows a UMAP projection of latent features inferred from fixed-duration segments from a subset of the mouse USVs shown in Figure 5b. While this projection does display some structure (silence on the right, shorter to longer syllables arranged from right to left), there is no evidence of stereotyped sequential structure (see also Figure 6\u2014videos 1 and 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 6a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The shotgun VAE projection of zebra finch song shows the song represented as a single well-defined strand coursing clockwise from the bottom to the top left of the projection.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, Figure 6b shows the same technique applied to bouts of zebra finch song, with the song represented as a single well-defined strand coursing clockwise from the bottom to the top left of the projection.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 6b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Introductory notes in zebra finch song are highly variable, and particular syllables (B, E) are more variable than others (C, F).",
+    "claim_type": "EXPLICIT",
+    "source": "Most importantly, such a view of the data clearly illustrates not only stereotypy but variability: introductory notes are highly variable, but so are particular syllables (B, E) in contrast to others (C, F).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as observation from the shotgun VAE analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The VAE is able to recover the expected reduction in directed song variability on a tens-of-milliseconds timescale.",
+    "claim_type": "EXPLICIT",
+    "source": "As a plot of the first principal component of the latent space shows (Figure 4d), the VAE is able to recover the expected reduction in directed song variability on a tens-of-milliseconds timescale relevant to the hypothesized neural underpinnings of the effect (Fee and Goldberg, 2011).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 4d (likely Figure 6d based on context) and citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The shotgun VAE method is applicable to all syllables, yielding a continuous estimate of song variability.",
+    "claim_type": "EXPLICIT",
+    "source": "This result recapitulates similar analyses that have focused on harmonic and tonal syllables like A and B in Figure 4c (Kao and Brainard, 2006), but the shotgun VAE method is applicable to all syllables, yielding a continuous estimate of song variability (Figure 4e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to figures and citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "A young male zebra finch can successfully learn to sing the song of an older male over the course of multiple months after hearing only a handful of song renditions.",
+    "claim_type": "EXPLICIT",
+    "source": "A young male zebra finch can successfully learn to sing the song of an older male over the course of multiple months after hearing only a handful of song renditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as background knowledge about zebra finch song learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Most syllables form distinct clusters in a latent UMAP embedding, with many tutor/pupil syllable pairs sharing a cluster.",
+    "claim_type": "EXPLICIT",
+    "source": "As Figure 7a shows for the syllable-level analysis, most syllables form distinct clusters in a latent UMAP embedding, with many tutor/pupil syllable pairs sharing a cluster (Figure 7\u2014video 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 7a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The first and third syllables (C and E) are well-copied from tutor to pupil, but the pupil's copy of the second syllable (syllable D) does not contain the high-frequency power present in the first half of the tutor's syllable.",
+    "claim_type": "EXPLICIT",
+    "source": "For a specific tutor/pupil pair shown in Figure 7b, we highlight three corresponding syllables from the two motifs. The first and third syllables (C and E) are well-copied from tutor to pupil, but the pupil's copy of the second syllable (syllable D) does not contain the high-frequency power present in the first half of the tutor's syllable.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 7b showing specific examples.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The discrepancy in syllable D copying is reflected in the latent embedding, with the two versions corresponding to distinct clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "This discrepancy is reflected in the latent embedding, with the two versions of syllable D corresponding to distinct clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as observation from the latent space analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "A dark band of low MMD values along the diagonal indicates well-copied syllables and syllable orderings for most birds.",
+    "claim_type": "EXPLICIT",
+    "source": "We quantified the quality of copying by calculating MMD between each pair of tutor and pupil syllables, shown in Figure 7c. A dark band of low MMD values along the diagonal indicates well-copied syllables and syllable orderings for most birds.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 7c showing MMD matrix.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Out of roughly 3.6 million possible pairings of pupils and tutors, it is easily apparent which is the true pairing from the shotgun VAE UMAP projection.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, we see a close correspondence between pupil and tutor motif strands, with only a single tutor/pupil pair (pink) not overlapping. In fact, out of the roughly 3.6 million possible pairings of pupils and tutors, it is easily apparent which is the true pairing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as observation from Figure 7d analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The poorly copied syllable 'D' corresponds to a temporary divergence of the pupil strand from the tutor strand, reflected by large MMD values for both shotgun and syllable analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, the poorly copied syllable 'D' from Figure 7b corresponds to a temporary divergence of the pupil strand from the tutor strand, reflected by large MMD values for both shotgun and syllable analyses (Figure 7e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 7e showing detail.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The shotgun VAE approach accurately judges the pupil's fused 'AB' syllable to be similar to the tutor's 'A' and 'B' syllables, in contrast to the syllable-level analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, we find that the shotgun VAE approach accurately judges the pupil's fused 'AB' syllable to be similar to the tutor's 'A' and 'B' syllables, in contrast to the syllable-level analysis (Figure 7e, bottom).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in text with reference to Figure 7e showing comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Features learned by the VAE outperform frequently used acoustic features across a variety of common analysis tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we adopt a data-driven approach, demonstrating that features learned by the VAE, an unsupervised learning method, outperform frequently used acoustic features across a variety of common analysis tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as main conclusion in the Discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Learned features are more parsimonious, capture more variability in the data, and better characterize vocalizations as judged by nearest neighbor similarity.",
+    "claim_type": "EXPLICIT",
+    "source": "As we have shown, these learned features are both more parsimonious (Figure 2\u2014figure supplement 3), capture more variability in the data (Figure 2e and f), and better characterize vocalizations as judged by nearest neighbor similarity (Figure 3, Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as summary of results with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Learned features easily facilitate comparisons across sessions, social contexts, and individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, these features easily facilitate comparisons across sessions (Figure 4f), social contexts (Figure 4a\u2013c), and individuals (Figures 4d\u2013f\u20137), quantifying not only differences in mean vocal behavior (Figure 4d), but also in vocal variability (Figure 4c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as summary of results with references to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Despite conventional wisdom, clustering is not the best account of the diversity of mouse vocal behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, we have argued above that, despite conventional wisdom, clustering is not the best account of the diversity of mouse vocal behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as main conclusion from the clustering analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The huge variety of vocal behavior among rodents suggests the possibility of clustered vocal behavior in some mouse strains not included in the data.",
+    "claim_type": "EXPLICIT",
+    "source": "First, the huge variety of vocal behavior among rodents (Berryman, 1976; Holy and Guo, 2005; Novakowski, 1969; Sadananda et al., 2008; Smith et al., 1977; Miller and Engstrom, 2007) suggests the possibility of clustered vocal behavior in some mouse strains not included in our data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as qualification with citations to prior work.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "A purely signal-level analysis of vocal behavior cannot address the possibility that a continuous distribution of syllables could nevertheless be perceived categorically.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, our purely signal-level analysis of vocal behavior cannot address the possibility that a continuous distribution of syllables could nevertheless be perceived categorically. For example, swamp sparrows exhibit categorical neural and behavioral responses to changes in syllable duration (Prather et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as limitation with citation to example from another species.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The shotgun VAE approach provides a continuous variability measure for all syllables.",
+    "claim_type": "EXPLICIT",
+    "source": "In previous studies, syllable variability has only been quantified for certain well-characterized syllables like harmonic stacks in zebra finch song (Kao and Brainard, 2006). Our method, by contrast, provides a continuous variability measure for all syllables (Figure 6c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as advantage of the method with citation and figure reference.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The VAE must be trained on a per-dataset basis.",
+    "claim_type": "EXPLICIT",
+    "source": "Most notably, the VAE must be trained on a per-dataset basis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a drawback of the method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Training the VAE is more computationally intensive than calculating typical acoustic features (\u22481 hr training times on a GPU).",
+    "claim_type": "EXPLICIT",
+    "source": "This is more computationally intensive than calculating typical acoustic features (\u22481 hr training times on a GPU) and also prevents direct comparisons across datasets unless they are trained together in a single model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a drawback with specific timing information.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The resulting learned features, representing nonlinear, nonseparable acoustic effects, are somewhat less interpretable than named acoustic features like duration and spectral entropy.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, the resulting learned features, representing nonlinear, nonseparable acoustic effects, are somewhat less interpretable than named acoustic features like duration and spectral entropy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a drawback of the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "All experiments were conducted according to protocols approved by the Duke University Institutional Animal Care and Use Committee (mice: A171-20-08, birds: A172-20-08).",
+    "claim_type": "EXPLICIT",
+    "source": "All experiments were conducted according to protocols approved by the Duke University Institutional Animal Care and Use Committee (mice: A171-20-08, birds: A172-20-08).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Recordings of C57BL/6 and DBA/2 mice were obtained from the MUPET Wiki.",
+    "claim_type": "EXPLICIT",
+    "source": "Recordings of C57BL/6 and DBA/2 mice were obtained from the MUPET Wiki (Van Segbroeck M et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Additional recordings of female-directed mouse USVs comprise 36 male mice from various genetic backgrounds over 118 recording sessions of roughly 20 minutes each (\u224840 total hours, 156,180 total syllables).",
+    "claim_type": "EXPLICIT",
+    "source": "Additional recordings of female-directed mouse USVs are used in Figure 4 and Figure 4\u2014figure supplement 3. These recordings comprise 36 male mice from various genetic backgrounds over 118 recording sessions of roughly 20 minutes each (\u224840 total hours, 156,180 [Appendix 1\u2014table 1] total syllables).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "USVs were recorded with an ultrasonic microphone (Avisoft, CMPA/CM16), amplified (Presonus TubePreV2), and digitized at 300 kHz (Spike 7, CED).",
+    "claim_type": "EXPLICIT",
+    "source": "USVs were recorded with an ultrasonic microphone (Avisoft, CMPA/CM16), amplified (Presonus TubePreV2), and digitized at 300 kHz (Spike 7, CED).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing recording equipment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "A single male zebra finch was recorded over a 2-day period (153\u2013154 days post-hatch) in both female-directed and undirected contexts (14,270 total syllables, 1100 directed).",
+    "claim_type": "EXPLICIT",
+    "source": "A single male zebra finch was recorded over a 2-day period (153\u2013154 days post-hatch [dph]) in both female-directed and undirected contexts (14,270 total syllables, 1100 directed).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Song was recorded with Sound Analysis Pro 2011.104 in a soundproof box.",
+    "claim_type": "EXPLICIT",
+    "source": "Song was recorded with Sound Analysis Pro 2011.104 (Tchernichovski and Mitra, 2004) in a soundproof box.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "For Figure 7, 10 adult, normally reared birds were selected from different breeding cages, with each pupil bird having interacted with only one adult male tutor until at least 60 dph.",
+    "claim_type": "EXPLICIT",
+    "source": "For Figure 7, we selected 10 adult, normally reared birds from different breeding cages in our colony. Until at least 60 dph, each of these pupil birds had interacted with only one adult male, the tutor from his respective breeding cage.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing the experimental setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The VAE method was compared to three widely used vocal analysis packages: MUPET 2.0, DeepSqueak 2.0 (for mouse USVs), and SAP 2011.104 (for birdsong), each with default parameter settings.",
+    "claim_type": "EXPLICIT",
+    "source": "We compared our VAE method to three widely used vocal analysis packages: MUPET 2.0 (Van Segbroeck et al., 2017), DeepSqueak 2.0 (Coffey et al., 2019) (for mouse USVs), and SAP 2011.104 (Tchernichovski and Mitra, 2004) (for birdsong), each with default parameter settings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "For all mouse USV datasets, individual syllable onsets and offsets were detected using MUPET with default parameter settings.",
+    "claim_type": "EXPLICIT",
+    "source": "For all mouse USV datasets, individual syllable onsets and offsets were detected using MUPET with default parameter settings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing segmentation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Spectrograms were computed using the log modulus of a signal's Short Time Fourier Transform, computed using Hann windows of length 512 and overlap of 256 for bird vocalization, and length 1024 and overlap 512 for mouse vocalization.",
+    "claim_type": "EXPLICIT",
+    "source": "Spectrograms were computed using the log modulus of a signal's Short Time Fourier Transform, computed using Hann windows of length 512 and overlap of 256 for bird vocalization, and length 1024 and overlap 512 for mouse vocalization.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing spectrogram computation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The VAE is implemented in PyTorch (v1.1.0) and trained to maximize the standard evidence lower bound (ELBO) objective using the reparameterization trick and ADAM optimization.",
+    "claim_type": "EXPLICIT",
+    "source": "Our VAE is implemented in PyTorch (v1.1.0) and trained to maximize the standard evidence lower bound (ELBO) objective using the reparameterization trick and ADAM optimization (Kingma and Welling, 2013; Rezende et al., 2014; Paszke et al., 2017; Kingma and Ba, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The latent dimension was fixed to 32.",
+    "claim_type": "EXPLICIT",
+    "source": "The latent dimension was fixed to 32, which was found to be sufficient for all training runs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing model architecture.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Learning rate was set to 10-3 and batch size was set to 64.",
+    "claim_type": "EXPLICIT",
+    "source": "Learning rate was set to 10-3 and batch size was set to 64.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing training parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "For each analysis tool, each feature was z-scored and all components with nonzero variance were retained (9/9, 10/10, and 13/14 components for MUPET, DeepSqueak, and SAP, respectively).",
+    "claim_type": "EXPLICIT",
+    "source": "For the first set, each feature calculated by the program was z-scored and all components with nonzero variance were retained (9/9, 10/10, and 13/14 components for MUPET, DeepSqueak, and SAP, respectively).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing feature preprocessing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "For the VAE feature set, latent means were computed and principal components containing less than 1% of the total feature variance were removed (7, 5, and 5 out of 32 components retained for MUPET, DeepSqueak, and SAP syllables, respectively).",
+    "claim_type": "EXPLICIT",
+    "source": "For the second set, we trained a VAE on all syllables, computed latent means of these via the VAE encoder, and removed principal components containing less than 1% of the total feature variance (7, 5, and 5 out of 32 components retained for MUPET, DeepSqueak, and SAP syllables, respectively).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing feature selection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The variance-explained value reported is the average over five shuffled train/test folds.",
+    "claim_type": "EXPLICIT",
+    "source": "The variance-explained value reported is the average over five shuffled train/test folds (Figure 2e).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing cross-validation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "In Figure 7, the kernel bandwidth was chosen to be 25% of the median distance between points in the aggregate sample in order to focus on finer differences in distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "In Figure 7, the kernel bandwidth was chosen to be 25% of the median distance between points in the aggregate sample in order to focus on finer differences in distributions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing parameter choice.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Three unsupervised clustering metrics were used to assess the quality of clustering: the mean silhouette coefficient, the Calinski\u2013Harabasz Index, and the Davies\u2013Bouldin Index.",
+    "claim_type": "EXPLICIT",
+    "source": "We used three unsupervised clustering metrics to assess the quality of clustering for both zebra finch and mouse syllables: the mean silhouette coefficient (Rousseeuw, 1987), the Calinski\u2013Harabasz Index (Cali\u0144ski and Harabasz, 1974), and the Davies\u2013Bouldin Index (Davies and Bouldin, 1979).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "For each data split, clustering was performed using a GMM with full covariance using Expectation Maximization on the training set.",
+    "claim_type": "EXPLICIT",
+    "source": "For each data split, we clustered using a GMM with full covariance using Expectation Maximization on the training set.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing clustering procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "For the shotgun VAE analysis in Figure 6a\u2013b, regions of active vocalization were defined manually for both species (22 min of mouse recordings, 2 min of zebra finch recordings).",
+    "claim_type": "EXPLICIT",
+    "source": "To perform the analysis in Figure 6a\u2013b, regions of active vocalization were defined manually for both species (22 min of mouse recordings, 2 min of zebra finch recordings).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing data selection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "For both species, the duration of audio chunks was chosen to be roughly as long as the longest syllables (zebra finch: 120 ms; mouse: 200 ms).",
+    "claim_type": "EXPLICIT",
+    "source": "For both species, the duration of audio chunks was chosen to be roughly as long as the longest syllables (zebra finch: 120 ms; mouse: 200 ms).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing parameter choices.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Onsets and offsets were drawn uniformly at random from the set of fixed-duration segments and the corresponding spectrograms were computed on a per-datapoint basis.",
+    "claim_type": "EXPLICIT",
+    "source": "No explicit training set was made. Rather, onsets and offsets were drawn uniformly at random from the set of fixed-duration segments and the corresponding spectrograms were computed on a per-datapoint basis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing training procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "For the variability reduction analysis in Figure 6d\u2013e, song renditions were collected and jointly warped using piecewise-linear time warping.",
+    "claim_type": "EXPLICIT",
+    "source": "To perform the variability reduction analysis in Figure 6d\u2013e, song renditions were collected (see Audio segmenting) and a spectrogram was computed for each. The whole collection of spectrograms was then jointly warped using piecewise-linear time warping (Williams et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "A total of 186 directed and 2227 undirected song renditions were collected and analyzed for the variability reduction analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "A total of 186 directed and 2227 undirected song renditions were collected and analyzed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing dataset size.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "For Figure 7, 2000 vak-labeled motifs were selected from each animal to create a training set of 40,000 total spectrogram windows drawn from the 20-animal cohort.",
+    "claim_type": "EXPLICIT",
+    "source": "To generate the shotgun VAE training set for Figure 7, 2000 vak-labeled motifs were selected from each animal (see Audio segmenting). A single 60 ms window was drawn from each motif to create a training set of 40,000 total spectrogram windows drawn from the 20-animal cohort.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing training data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The hand-labeled motif segments used to train vak models were segmented into overlapping 60 ms windows that spanned each motif with an 8 ms step size between successive windows (52,826 total windows).",
+    "claim_type": "EXPLICIT",
+    "source": "After training a VAE on this dataset, the hand-labeled motif segments used to train vak models (see Audio segmenting) were segmented into overlapping 60 ms windows that spanned each motif with an 8 ms step size between successive windows (52,826 total windows).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing analysis procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "A modified UMAP distance measure was used to discourage strands from the same motif rendition from splitting.",
+    "claim_type": "EXPLICIT",
+    "source": "Although the standard UMAP embedding of shotgun VAE latents from single-finch datasets generates points along smoothly varying strands (see Figure 6b), UMAP typically broke motifs into multiple strand-like pieces in the 20-animal dataset from Figure 7. To encourage embeddings that preserve the neighbor relationship of successive windows, we modified the distance measure underlying the UMAP.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in Materials and methods describing the modified UMAP procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

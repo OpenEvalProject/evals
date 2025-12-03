@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C92"
+    ],
+    "result": "Honey bee queens reversibly adjust egg size in response to colony size changes. Queens transferred from medium to small colonies significantly increased egg size, while those transferred to large colonies decreased egg size. These adjustments were reversible upon reciprocal transfers, demonstrating plasticity rather than fixed responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8-C14, and C92 collectively demonstrate reversible egg-size plasticity with strong statistical support (all p<0.001 for individual queens). The experimental design with repeated transfers and measurements provides robust evidence. Individual queen tracking and statistical analyses (ANOVA, correlation) are appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Queens in small colonies producing larger eggs have significantly lighter ovaries than queens in large colonies producing smaller eggs, while body size remains similar. This inverse relationship between ovary size and egg size was confirmed across three independent experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16-C20 are supported by consistent ANOVA results across three independent experiments (all p<0.05 for ovary weight differences). The finding is counterintuitive but statistically robust. However, the biological mechanism underlying this inverse relationship requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C21",
+      "C22",
+      "C93",
+      "C94"
+    ],
+    "result": "Egg size is actively regulated and not simply a passive consequence of egg-laying rate. Preventing egg laying for 2 weeks did not change egg size, although egg size and egg-laying rate can be negatively correlated under certain conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C21-C22, C93-C94 demonstrate active regulation through the oviposition restriction experiment. The lack of egg-size change when laying was prevented (all p>0.1) supports active regulation. The negative correlation (C15) was significant only in some weeks, suggesting context-dependency rather than a simple trade-off.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C54",
+      "C55",
+      "C96"
+    ],
+    "result": "Queens adjust egg size based on perceived rather than actual colony size, and this perception does not require physical contact. Queens in small colonies paired with medium colonies via double-screened tunnels decreased egg size, while control queens maintained their egg sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C54-C55, and C96 are supported by the colony extension experiment with appropriate controls. All three treatment queens significantly reduced egg size (all p<0.001) while controls showed no change (all p>0.1). The double-screened tunnel design effectively excludes physical contact while allowing other cues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Egg-size plasticity is associated with quantitative changes in 290 ovarian proteins, with 275 more abundant in large-egg-producing ovaries. These proteins are enriched in biological processes including protein localization, cytoskeleton organization, and energy metabolism pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C25-C30 are supported by comprehensive LC-MS/MS proteomic analysis with appropriate statistical thresholds (p\u22640.01, FDR\u22641%). The asymmetry in protein abundance (275 vs 15, \u03c7\u00b2=233.1, p<0.001) is striking. GO and KEGG enrichment analyses provide functional context. However, the study compares ovaries, not eggs themselves, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C66"
+    ],
+    "result": "Among differentially abundant proteins, cytoskeletal organization proteins form a highly connected protein-protein interaction network. Five hub proteins were identified with >10 connections, with Rho1 being the second most connected (13 connections) and considered the most likely regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C66 are supported by PPI network analysis showing 29 of 34 cytoskeleton-related proteins are connected. The identification of hub proteins is data-driven. However, C66's designation of cytoskeletal organization as \"most likely regulatory\" is an inference requiring experimental validation, which is subsequently provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Rho1 has a major effect on egg size in honey bees. RNAi knockdown of Rho1 (35.1% reduction) consistently decreased egg size in all six queens tested (all p<0.001), while controls showed no change. Rho1 expression correlates almost perfectly with egg size (r=0.98, p<0.001) and shows spatio-temporal expression patterns consistent with a role in egg growth during vitellogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33-C43 provide strong convergent evidence for Rho1's role through multiple approaches: RNAscope localization, RT-qPCR quantification, RNAi knockdown, and correlation analyses. All six RNAi-treated queens showed significant egg-size reduction while all six controls did not. The near-perfect correlation (r=0.98) confirmed in an independent dataset (r=0.90) is compelling. The 35.1% knockdown efficiency is modest but sufficient to produce consistent phenotypic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Anatomically smaller ovaries producing larger eggs are physiologically more active in key processes including energy metabolism, protein transport, and cytoskeleton organization. This indicates that egg-size variation reflects real differences in offspring provisioning rather than simple volume changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are inferences from the proteomic data (C5-C6, C27, C29) supported by citations to established knowledge. The interpretation is logical given the enrichment patterns, but C63 acknowledges that direct egg content comparison remains to be performed. The inference is reasonable but would benefit from direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Rho1 is a conserved small GTPase that regulates cytoskeleton and cell morphogenesis. Its spatio-temporal expression pattern in honey bee ovaries, particularly in growing oocytes during vitellogenesis near follicle cells, is consistent with a role in egg-size regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 establish Rho1's known functions through appropriate citations. Claims C73-C75 connect this knowledge to the experimental observations (C33-C36). The RNAscope data showing expression in growing oocytes but not mature oocytes supports the vitellogenesis hypothesis. The interpretation is well-supported by both literature and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Rho1 knockdown specifically affects egg size without causing pathological effects, and the tight correlation between Rho1 expression and egg size across different experimental conditions suggests that social conditions, inter-individual differences, and RNAi manipulation all act through Rho1 to influence egg size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are inferences from the RNAi experiments (C39-C43). The observation that eggs differed only in size supports specificity, though more detailed phenotypic characterization would strengthen this claim. The correlation-based argument (C77) is compelling given the r=0.98 value across multiple conditions, but correlation does not prove causation or exclude parallel pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C95"
+    ],
+    "result": "Queens in large colonies typically produce more eggs and have heavier ovaries, representing a physiological adaptation. The negative correlation between egg size and egg-laying rate may explain why smaller ovaries produce larger eggs, suggesting simultaneous regulation rather than a simple trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C95 are inferences from the experimental observations (C15-C19, C21-C22). The ovary weight data (C16-C19) supports C52. However, C51 is stated without direct egg-count data from this study. C53 and C95 are reasonable interpretations but remain somewhat speculative without direct measurement of resource allocation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C72"
+    ],
+    "result": "Multiple cues that travel through double-screened tunnels (sound, temperature, pheromones, or other semiochemicals) could prompt egg-size adjustment, and multiple signaling pathways could transduce extracellular signals into cytoskeletal reorganization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56 and C72 are explicitly speculative (both marked as SPECULATION in evidence_type). While the colony extension experiment (C23-C24) demonstrates that physical contact is not required, the specific cues and signaling pathways remain unidentified. These are reasonable hypotheses for future work but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Plod, which controls egg length in Drosophila, is not among the differentially abundant proteins in honey bee ovaries, but collagen IV is more abundant in large-egg-producing ovaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by the proteomic data with appropriate citations to Drosophila studies for context. These observations suggest both conservation and divergence in egg-size regulation mechanisms across insects. The findings are descriptive and contribute to understanding evolutionary conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The ovary proteome suggests larger eggs are of superior quality, and Rho1 may become an important indicator of stress and maternal quality in honey bee health management.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is an inference that explicitly acknowledges the need for direct egg content comparison. Claim C82 is speculative about future applications. While the proteomic enrichment patterns (C27, C29) support the quality inference, and the correlations (C42-C43) support Rho1 as a potential biomarker, both claims require additional validation before being considered established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C57",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Life history trade-offs are pervasive, and egg-size variation in response to environmental conditions is widespread across species. In honey bees, egg size is adjusted in response to colony conditions in patterns consistent with solitary species, with larger eggs providing survival advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C44-C48, C57, C83-C91 establish the broader context through appropriate citations to established literature. These claims provide the theoretical framework and prior knowledge that motivates the current study. All are well-supported by citations and represent accepted scientific knowledge in life history theory and honey bee biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C97",
+      "C98"
+    ],
+    "result": "Large egg size in small colonies could be related to less consistent brood care and resource availability. Social cues can be translated into molecular processes to control reproductive provisioning, which presumably evolved as an adaptation to colonial life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C97-C98 are explicitly speculative or inferential. While C97 is supported by the combined experimental results, the evolutionary adaptation claim (C98) and the brood care hypothesis (C49) lack direct evidence. These represent reasonable interpretations and hypotheses for future work but are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C58",
+      "C59",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Egg size in honey bees varies with queen age and caste destination (worker vs. queen), with important consequences for caste determination and reproductive quality. The advantageous caste bias of larger eggs should select for paternal effects to increase egg size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C58-C59, C78-C80 are supported by appropriate citations to prior work. These claims establish relevant context about egg-size variation in other contexts. Claim C59 about paternal selection is an inference supported by citations but represents a hypothesis rather than demonstrated fact. These provide important context but are not primary findings of this study.",
+    "result_type": "MINOR"
+  }
+]

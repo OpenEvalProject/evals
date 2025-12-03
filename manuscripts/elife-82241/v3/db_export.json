@@ -1,0 +1,1763 @@
+{
+  "submission": {
+    "id": "76f8053c-95c2-422f-8097-10e2449295bf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:14:43.295951Z",
+    "updated_at": "2025-12-03T18:14:43.295951Z"
+  },
+  "content": [
+    {
+      "id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "submission_id": "76f8053c-95c2-422f-8097-10e2449295bf",
+      "content_type": "manuscript",
+      "content_text": "# Interdependent progression of bidirectional sister replisomes in E. coli\n\n## Authors\n\n- Po Jui Chen<sup>1</sup>\n- Anna B McMullin<sup>1</sup>\n- Bryan J Visser<sup>2</sup>\n- Qian Mei<sup>3</sup>\n- Susan M Rosenberg<sup>1</sup>\n- David Bates<sup>1</sup> ([ORCID: 0000-0002-0870-055X](https://orcid.org/0000-0002-0870-055X)) \u2020\n\n### Affiliations\n\n1. Molecular Virology and Microbiology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n2. Graduate Program in Integrative Molecular and Biomedical Sciences, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n3. Systems, Synthetic, and Physical Biology Program, Rice University Houston United States ([ROR:008zs3103](https://ror.org/008zs3103))\n4. Molecular and Human Genetics, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n5. Dan L Duncan Comprehensive Cancer Center, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBidirectional DNA replication complexes initiated from the same origin remain colocalized in a factory configuration for part or all their lifetimes. However, there is little evidence that sister replisomes are functionally interdependent, and the consequence of factory replication is unknown. Here, we investigated the functional relationship between sister replisomes in Escherichia coli, which naturally exhibits both factory and solitary configurations in the same replication cycle. Using an inducible transcription factor roadblocking system, we found that blocking one replisome caused a significant decrease in overall progression and velocity of the sister replisome. Remarkably, progression was impaired only if the block occurred while sister replisomes were still in a factory configuration \u2013 blocking one fork had no significant effect on the other replisome when sister replisomes were physically separate. Disruption of factory replication also led to increased fork stalling and requirement of fork restart mechanisms. These results suggest that physical association between sister replisomes is important for establishing an efficient and uninterrupted replication program. We discuss the implications of our findings on mechanisms of replication factory structure and function, and cellular strategies of replicating problematic DNA such as highly transcribed segments.\n\n## Introduction\n\nDNA replication fork stalling is now recognized as a major cause of the genomic instability that underlies many human genetic diseases, from cancer to antibiotic resistance (Tubbs and Nussenzweig, 2017; Zeman and Cimprich, 2014). Investigations into the mechanisms of fork stalling have revealed a wide range of causative factors, including deficiencies in nucleotide pools or replication proteins, and physical impediments such as unrepaired DNA lesions, bulky secondary structures, tightly bound proteins, and transcription complexes (Zeman and Cimprich, 2014). Preventative factors include proteins that promote stability of the large multi-subunit replication complex (replisome) and its association to the DNA template, as well as DNA topoisomerases and helicases that remove obstructive secondary structure and DNA-bound proteins (Br\u00fcning et al., 2014; Burgers and Kunkel, 2017; Xu and Dixon, 2018). Far less understood are the effects of organization and localization of replisomes within the cell or nucleus, particularly the grouping of multiple replisomes into a replication factory. Remarkably, replication factories have been observed in all three domains of life (Li et al., 2020), yet the functional advantage(s) of this relationship are unknown.\n\nBecause the paths of bidirectional \u2018sister\u2019 replisomes, which typically extend for tens to thousands of kilobases, are inherently divergent, it was originally assumed that the two complexes were physically and functionally independent machines (Cairns, 1963). This view changed with the advent of fluorescent protein fusions allowing the observation of replisome components in living cells. First in B. subtilis (Lemon and Grossman, 1998), and then other bacteria (Brendler et al., 2000; Jensen et al., 2001), it was shown that slow growing cells often displayed a single replication focus, suggesting that sister replisomes are often localized within a single complex. Eukaryotic replisomes also display factory behavior, often extending beyond two sister replisomes to include multiple replisomes initiated from different origins (Kitamura et al., 2006). These large fluorescent bodies can be resolved by confocal microscopy into individual diffraction-limited (~200 nm) foci containing two replisomes each, suggesting that sister replisomes might form a stable and possibly compulsory complex (Chagin et al., 2016; Saner et al., 2013). However, due to difficulties in tracking individual replisomes in a nucleus with up to hundreds of replication forks, it is unknown whether sister replisomes remain associated throughout their replication periods.\n\nCytological observations of slow growing bacteria in which the chromosome is replicated by a single pair of bidirectional forks show that the two replisomes are at times colocalized and at other times well separated (Bates and Kleckner, 2005; Hiraga et al., 2000; Onogi et al., 2002; Reyes-Lamothe et al., 2008), with possible stochastic separation and remerging (Berkmen and Grossman, 2006; Mangiameli et al., 2017b). Analysis of replisome lifecycles by synchronization or time-lapse microscopy suggests that sister replisomes are initially colocalized but then separate into two distinct foci part way through the replication period (Bates and Kleckner, 2005; Hiraga et al., 2000; Japaridze et al., 2020; Onogi et al., 2002; Reyes-Lamothe et al., 2008). This suggests that, at least under slow growth conditions, replisomes undergo a programmed splitting event one-quarter to one-half of the way through the replication period (Figure 1). The mechanism and regulation of sister replisome splitting are unknown, but splitting is contemporaneous with segregation of the origin region of the chromosome (Bates and Kleckner, 2005), which is held together by topological linkages known as precatenanes (Joshi et al., 2013; Wang et al., 2005). It is possible that the sister origin complex, which is likely membrane associated (Bates and Kleckner, 2005; Slater et al., 1995), anchors the approximately 1 MDa replisome complexes as originally proposed by Dingman, 1974.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig1-v3.jpg)\n\n**Figure 1.:** Under slow growth conditions, E. coli bidirectional sister replisomes (yellow spheres) are initially colocalized, then separate part way through the replication period, marking a transition from factory to tracking configurations. Yellow triangles indicate approximate replisome splitting times within the replication phase (C-period) from previous studies: [1] Reyes-Lamothe et al., 2008, [2] Japaridze et al., 2020, [3] Hiraga et al., 2000, [4] Onogi et al., 2000, and [5] Bates and Kleckner, 2005.\n\nAnalysis of replisome dynamics in rapidly dividing bacteria is more difficult because origins re-initiate before the previous round of forks finish, resulting in cells with 2\u20133 overlapping generations or \u2018rounds\u2019 of replication totaling 6\u201314 forks. In such cells it is virtually impossible to determine which round of replication each fluorescent focus corresponds to, and thus the timing of sister replisome pairing and splitting has not been accurately determined. Bulk measurements of replication foci in rapidly growing Escherichia coli cells indicate that the total number of replication foci is about half the number of replication forks estimated from flow cytometry (Fossum et al., 2007; Molina and Skarstad, 2004; S\u00e1nchez-Romero et al., 2011). While this ratio implies that sister replisomes are colocalized in a factory for the entire replication period, it can also be explained by a combination of part-time colocalization of sister replisomes and part-time colocalization of \u2018cousin\u2019 replisomes initiated from different origins in the previous cell cycle (Molina and Skarstad, 2004). Additional research is required to differentiate these models.\n\nDespite broad evidence that sister replisomes localize near each other for long periods in many systems, very little is known about any benefit this association might provide, or even if sister replisomes are in any way functionally interdependent. In E. coli, it is clear that each replisome can function as an independent unit, as blocking one replication fork with either an ectopic terminus (Breier et al., 2005) or array of transcription factor binding sites (Possoz et al., 2006), does not prevent the unblocked replisome from finishing. Similarly, in S. pombe, a double strand break on one side of an origin does not prevent replication by the opposite-side replisome (Doksani et al., 2009). However, even though sister replisomes have the ability to function independently, there is mounting evidence that they can affect each other\u2019s progression. For example, fork stalling at a site of strong transcription oriented toward the oncoming fork in S. cerevisiae was shown to cause a significant impairment in progression of the sister replisome (Brambati et al., 2018). Also, in both yeast (Natsume and Tanaka, 2010) and human (Conti et al., 2007) cells, sister replisomes exhibit highly coordinate velocities while replisomes initiated from different origins do not. Coordinate sister replisome progression is apparently also dependent on colocalization of the forks, as immobilizing both ends of the templated DNA (forcing sister replisomes to separate) leads to a disconnect between sister replisome velocities (Yardimci et al., 2010).\n\nHere, we investigated the physical and functional relationship between sister replisomes in E. coli to better understand the role of replication factories. Taking advantage of the fact that E. coli replisomes naturally transition between factory and separated conformations in the same replication cycle, we tested the effects of blocking one replication fork before or after the natural splitting transition. This was accomplished by placing inducible transcription factor roadblocks at varying locations on the chromosome. Replication fork progression was analyzed by deep sequencing and timed replication runout assays, and fork stalling was assessed by the ability to complete replication in fork restart-deficient strains and by binding to a four-way DNA junction binding protein. Tests were performed under both slow and rapid growth conditions, and replisome spatial dynamics were quantified by three-dimensional (3D) fluorescence imaging. Our results indicate that physical association between sister replisomes early in the replication period is important for establishing a rapid and uninterrupted replication program. We discuss the implications of our results on models of replication factory structure and function, and cellular strategies of replicating condensed and transcriptionally active DNA.\n\n## Results\n\n### Quantifying fluorescent replication proteins suggests that sister replisomes are colocalized for about half of the replication period\n\nWe sought to determine the duration of sister replisome pairing under slow and fast growth conditions in the common lab strain MG1655 using 3D fluorescence imaging. Replisomes were tagged at the sliding clamp protein (DnaN-YPet) or single stranded binding protein (SSB-YPet), the later which afforded superior fluorescence under slow growth conditions. To improve detection of foci at the top and bottom of cells, multiple z-planes were imaged and deconvolved, rendering 3D data with exceptional spatial resolution (Figure 2A). Quantification of resolvable SSB-YPet foci in >3000 slowly growing cells (\u03c4 = 125 min) indicated that >99% of cells contained either 0, 1, or 2 foci per cell (Figure 2B). From independently measured parameters of origins per cell and growth rate (Figure 2C), the cell cycle was delineated with timelines of replication forks, origins, and termini per cell (Figure 2D, top; Materials and methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig2-v3.jpg)\n\n**Figure 2.:** (A) Three-dimensional (3D) replisome imaging. E. coli cells with an SSB-YPet tag were grown to mid-exponential phase in M9 minimal media at 37\u00b0C then imaged at 0.2 \u00b5m z-plane increments, deconvoluted, and combined into a single maximum intensity projection (MIP). (B) Distribution of resolvable SSB-YPet foci. (C) Origins per cell measured by flow cytometry after RIF runout (n = 30,000 cells). Cell cycle parameters are shown. (D) Cell cycle schematic with three models of replisome pairing. Top panel indicates the number of replication forks, origins, and termini per cell as a function of cell age as determined by flow cytometry (Materials and methods). Lower panel indicates the expected number of replisome foci per cell from three models: no replisome pairing (Tracking model), full-time replisome pairing (Factory model), and 20-min transitory replisome pairing (Splitting model). (E) Fitness of replisome modeling. (Left) Overlay of theoretical (colored bars) and SSB-YPet (gray bars) foci per cell histograms. (Right) Kolmogorov\u2013Smirnov (KS) cumulative plots with dissimilarity indexes indicating the difference between modeled and measured data. (F) Heatmap of KS dissimilarity indexes obtained with varying replisome pairing times for the Splitting model. The optimal pairing time (20 min, arrow) is indicated. (G\u2013L) As in (A\u2013F) except cells were grown in Luria-Bertani (LB) media at 37\u00b0C and replisomes were tagged with DnaN-YPet. Graphical representation of a newborn cell under fast growth conditions with multiple rounds of replication initiated in prior cell generations (G, right panel). Optimal (lowest D) replisome pairing times under fast growth conditions for Splitting (13 min) and Splitting with cousins (21 min) models are indicated (L).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Arrangement of replisomes and DNA in cell drawings are speculative and are based solely on measurements of genomic content and number of DnaN-YPet foci per cell (Figure 2H, I).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Image of DnaN-mCherry-expressing wild-type cells (DB2962) under fast growth conditions. (B) Distribution of DnaN-mCherry foci per cell. (C) Fitness of replisome modeling as in Figure 2K. (D) Heatmap of KS dissimilarity indexes as in Figure 2L.\n\nFrom the timeline of replication forks per cell, theoretical timelines of replisome foci per cell were generated for different models of sister replisome pairing (Figure 2D, bottom panel). Replisome pairing varied from always separate (Tracking model) to always together (Factory model). A third model in which replisomes start out together then separate at a specific time (Splitting model) was created for all possible durations (at 1-min resolution) of pairing from 0 to 46 min, the length of the C-period. Applying these timelines to an exponential age population function yielded theoretical focus distributions (Figure 2E, histogram, colored bars) that were compared to the actual distribution from SSB-YPet imaging (gray bars). Theoretical distributions were evaluated by Kolmogorov\u2013Smirnov analysis, which quantifies a dissimilarity index (D) between cumulative curves of theoretical and SSB-YPet focus distributions, with D = 1 indicating no similarity and D = 0 indicating identical distributions (Figure 2E, Cum.). This analysis showed that neither the Tracking nor Factory models fit well to the SSB-YPet data (D = 0.17, 0.21; Figure 2E). Splitting model distributions more closely matched SSB-YPet, with optimal duration of replisome pairing found to be 20 min (D = 0.04; Figure 2F). This value is similar to previous estimates using synchronized cells and a DnaX-GFP replisome tag (Bates and Kleckner, 2005).\n\nNext, cells were grown under fast growth conditions (\u03c4 = 22 min) and DnaN-YPet foci were quantified in >1000 cells (Figure 2G). Cells contained between 1 and 10 foci, with ~70% of cells having either 2, 6, or 8 foci (Figure 2H), and 4 or 8 chromosomes per cell (Figure 2I). Under these conditions, the cell cycle is comprised of three overlapping rounds of replication; the \u2018grandmother\u2019 round initiated two generations previously, the \u2018mother\u2019 round initiated in the previous generation, and the current round (Figure 2J). The resulting cell cycle timeline predicts that cells contained either 4, 6, or 12 replication forks. Although the expected average number of forks per cell (9.9) is roughly twice the number of DnaN-YPet foci per cell (5.7), supporting the Factory model, the predicted distribution of foci from the Factory model poorly matched the observed focus distribution (D = 0.26; Figure 2K). The Splitting model yielded a more similar focus distribution, with optimal replisome pairing of 13 min (D = 0.18; Figure 2K, L). Additional inclusion of cousin replisome pairing into the model, resulting in a transitory higher-order four-replisome structure for part of sister replisome pairing, provided the best match (D = 0.03) with an optimal sister replisome pairing time of 21 min (Splitting with cousins model). Because these inferences of replisome structures are based on indirect data (foci number), we do not exclude the possibility that replisomes form complexes no larger than two owing to missed foci or imperfect cell cycle modeling. Thus, including both splitting and splitting with cousins models, we estimate that that sister replisomes are paired between 13 and 21 min under fast growth conditions and about 20 min under slow growth conditions. These intervals correspond to 32\u201351% of the replication period. Imaging replisomes using a monomeric DnaN-mCherry fusion protein yielded similar focus distributions as dimeric DnaN-Ypet fusion protein (Figure 2\u2014figure supplement 2), suggesting that focus dynamics were not influenced by tag multimerization.\n\n### Blocking one replisome early in the replication cycle inhibits progression of its sister replisome\n\nA sister replisome splitting time of 20 min corresponds to a genetic position about 1 Mb from the origin. To evaluate whether early association of sister replisomes promotes fork progression, we inserted an array of tet operators at varying distances from oriC, which, when bound by inducible Tet repressor, create a potent replisome barrier or \u2018roadblock\u2019 (Figure 3A). After allowing one to three rounds of replication to occur with one chromosome arm roadblocked, progression of the unblocked \u2018orphaned\u2019 replisomes was analyzed by sequencing, which provides high resolution DNA copy number. Assuming the rate of replication initiation is unchanged, replication fork velocity is inversely proportional to the slope along the unblocked arm, where a steeper profile indicates slower progression, and a flatter profile indicates faster progression. If indeed association between sister replisomes is beneficial to progression, then blocking one fork early in the replication cycle (near oriC) should affect progression of the other fork more than if the block occurred late in the replication cycle.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-v3.jpg)\n\n**Figure 3.:** (A) Experimental approach. Strains carrying an inducible tetO array replication barrier (top) are roadblocked and progression of the unblocked orphaned replisome is quantified by sequencing. Hypothetically, oriC-proximal roadblocks, but not oriC-distal roadblocks, will negatively affect progression of the unblocked replisome. (B) DNA sequencing profiles along the unblocked chromosome arm under slow growth conditions. Values indicate the number of sequencing reads per kilobase relative to oriC, converted to log2 to show fold changes in copy number from oriC. (C) Relative progression of the unblocked replisome under slow growth conditions. Fork progression was quantified as slope\u22121 of raw sequencing profiles (B), relative to the most oriC-distal roadblock strain (+1.10 Mb). (D, E) As above (B\u2013D) except under fast growth conditions and with additional roadblocks as indicated. Profiles are 100 kb moving average of the means of two to five independent experiments. Error bars are \u00b11 standard deviation (s.d.); two-tailed t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Profiles along the blocked chromosome arm are approximately flat between the tetO array and the most distal ter site, which terminates replication emanating from the unblocked arm. Profile noise is a consequence of low copy number under slow growth conditions (see Figure 3\u2014figure supplement 2 for comparison). Strains are DB2185 (+0.13 Mb block), DB2193 (+0.34 Mb block), and DB2146 (+1.10 Mb block).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Slight slope on the blocked chromosome arm downstream of the tetO array indicates partial \u2018read-through\u2019 of opposite arm forks through the terminus region, eventually stopping at the tetO array. Strains are DB3216 (\u22120.35 Mb block), DB2185 (+0.13 Mb block), DB3198 (+0.32 Mb block), DB2193 (+0.34 Mb block), DB3264 (+0.58 Mb block), DB3195 (+0.63 Mb block), and DB2146 (+1.10 Mb block).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Sequencing profiles for +0.13 Mb roadblock (DB2185) every 30 min after TetR-YFP induction (n = 1). (B) Change in progression of the unblocked (left) replisome after roadblocking relative to time zero, showing little change in progression after 60 min.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** DB2972 cells were roadblocked at +0.13 Mb from oriC for 2 hr and imaged for replisomes (red, DnaN-mCherry) and the roadblock (yellow, TetR-YFP). Multiple dispersed replisome foci rarely colocalizing with the roadblock suggests that unblocked replisomes were unattached to any residual replication factory structure.\n\nSequencing reads per kilobase were normalized to the number of reads at oriC, and log2 transformed to indicate fold changes in DNA abundance relative to oriC. Under slow growth conditions, copy number profiles of the unblocked arm were slightly steeper in cells with an oriC-proximal roadblock (+0.13 and +0.34 Mb from oriC) than in cells with an oriC-distal roadblock (+1.10 Mb from oriC, Figure 3B). Slope analysis suggests that fork progression was reduced by 39 \u00b1 5% in cells with an oriC-proximal roadblock relative to cells with an oriC-distal roadblock (Figure 3C). We observed a similar difference between oriC-proximal and oriC-distal roadblocked cells, under fast growth conditions, with proximal blocked cells having on average a 43 \u00b1 7% reduction in fork progression of the unblocked replisome relative to distal blocked cells (Figure 3D, E). Importantly, unblocked arm slopes remained constant after 1 hr of Tet repressor induction, indicating that once all preexisting forks completed, orphaned replisome progression was similarly affected through several rounds of replication initiation (Figure 3\u2014figure supplement 3). Additional roadblock positions were tested at +0.32, +0.58, and +0.63 Mb from oriC, the results showing that all roadblocks within ~0.6 Mb from oriC resulted in reduced progression of the unblocked replisome, while all roadblocks downstream of ~0.6 Mb had negligible effect on progression. Importantly, reduced fork progression in oriC-proximal blocked cells was observed regardless of whether the blocking array was placed on the left or right chromosome arm (\u22120.35 Mb strain), strongly suggesting that the replication defect was not due to reduced copy number of a specific gene or region. We also observed that some replication profiles appeared to show a progression defect before the other replisome had reached its roadblock (e.g., +0.58 Mb, Figure 3D). Assuming this is not a visual artifact of smoothing (curves are 100 kb moving average) and natural undulations in replication profiles, advanced (upstream) reductions in orphaned fork progression may result from fork stoppage several tens of kilobases before the roadblock (manuscript in prep), which is cumulative through several rounds of blocked replication.\n\n### oriC-proximal roadblocks reduce sister replisome velocity by rifampicin runout\n\nBecause sequencing is a bulk assay, it is possible that the effects observed after oriC-proximal roadblocking result from poor replication in only a subset of cells. To address this concern, we analyzed replication progression by flow cytometry, which measures DNA content in individual cells. Exponentially growing cells under fast growth conditions were roadblocked at two oriC-proximal positions (\u22120.35 and +0.34 Mb) and two oriC-distal positions (+0.63 and +1.10 Mb), then the rate of replication was measured by timed rifampicin runout. In this assay, replication initiation and cell division are blocked with rifampicin and cephalexin, respectively, and DNA content is monitored every 5 min by DAPI (4\u2019,6-diamidino-2-phenylindole) staining and flow cytometry (Figure 4A, top). Wild-type cells (no block) initially exhibit a dispersed genomic content (black profile, 0\u2019, Figure 4A), which gradually matures into a characteristic biphasic distribution at 80 min with peaks at 4 and 8 genome equivalents. As expected, roadblocked cells accumulate intermediate genome contents consistent with their roadblock position (Figure 4A, colored profiles). Quantifying flow cytometry histograms via KS analysis (Figure 4\u2014figure supplements 1 and 2), we find that unblocked cells achieved 90% runout by 53 \u00b1 4 min (Figure 4B, top panel). This time includes the interval required for forks to travel from oriC to ter (~41 min, Figure 2I) plus the time required for drug entry and action. Conversely, the two oriC-proximal blocked strains did not achieve 90% runout until 70 \u00b1 3 min (Figure 4B, middle panel), while both oriC-distal blocked strains behaved similarly to unblocked cells, achieving 90% runout by 56 \u00b1 5 min (bottom panel). Relative to cells not receiving a roadblock, this equates to a 32 \u00b1 3% reduction in replication speed when one arm was blocked near the origin, versus a negligible reduction (3 \u00b1 3%) in replication speed when one arm was blocked \u22650.6 Mb from the origin (Figure 4C). Interestingly, \u22120.35 and +0.34 Mb blocked strains exhibited different flow cytometry profiles despite having blocks ~equidistant from oriC. We believe this stems from slight differences in growth rate in the two strains after roadblocking (27 and 23 min, respectively), shifting the timing of DNA replication in the cell cycle. As \u22120.35 and +0.34 Mb blocked strains have very similar runout times, we conclude that the observed growth differences do not affect fork velocity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig4-v3.jpg)\n\n**Figure 4.:** (A) Replication elongation measured as a change in cellular DNA content over time after inhibiting replication initiation with rifampicin (RIF) and cell division with cephalexin (CEP). (Top) Experimental procedure. Representative DNA histograms of runout samples in wild-type MG1655 cells (no block) or cells with one replisome blocked proximally or distally to the origin are shown. DNA contents were measured by flow cytometry every 5 min for 90 min after rifampicin treatment (20-min intervals shown) with 90 min time points (light gray) overlaid for comparison. (B) Completion of replication (% runout) quantified by KS dissimilarity analysis between DNA histograms at each time point and at 90 min. Exponential regressions and times at 90% runout (vertical lines) are shown. (C) Change in fork velocity relative to unblocked cells. Values are average time to 90% runout (n = 2 replicates per strain) as determined in (B) relative to unblocked cells. Error bars are \u00b11 standard deviation (s.d.); two-tailed t-test. All cells were grown under fast growth conditions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** DNA histograms are shown at 5-min intervals with 90-min time point overlayed (gray). Strains are MG1655 (No block), DB2146 (+1.10 Mb block), DB3195 (+0.63 Mb block), DB3216 (\u22120.35 Mb block), and DB2193 (+0.34 Mb block).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Cumulative curves of DNA histograms (Figure 4\u2014figure supplement 1) with 90-min time point overlayed (gray).\n\n### Premature sister replisome separation causes increased fork collapse\n\nFork stalling is a frequent event in wild-type cells, with replisome dissociation estimates as high as 4\u20135 times per replication cycle (Mangiameli et al., 2017a). Although the majority of stalled forks are restarted quickly via PriA-mediated reloading of the replicative helicase, an estimated 5\u201320% experience breakage by shearing or collision from a second fork, forming a so-called broken or collapsed fork, which requires recombination-mediated strand invasion steps to reestablish a fork structure (Courcelle et al., 2015; Michel et al., 2018). Because oriC-proximal blocked cells had replication runout histograms with peaks that could not be fully resolved (Figure 4), we reasoned that some forks probably experienced increased collapse in addition to reduced velocity. This was tested by examining whether roadblocked cells could complete ongoing rounds of replication in the absence of the RecBCD recombination-dependent restart complex. As in the previous rifampicin runout experiments, replisomes were roadblocked before or after the natural replisome splitting transition and cells were treated with rifampicin and cephalexin. Cells were incubated for an additional 2 hr to allow ongoing viable forks to complete replication and then copy number profiles of the unblocked arm were determined by deep sequencing. In the absence of a roadblock, wild-type cells produced a flat profile, indicating complete runout (Figure 5A, No block, recB+). As expected, inactivating the RecBCD complex via a \u2206recB mutation resulted in a profile with a slight downward slope, indicating that some cells experienced a spontaneous fork stalling event requiring RecB to restart at random locations on the chromosome (No block, recB\u2212). Similar profiles were observed for cells with one fork roadblocked far from oriC (Figure 5A, +1.10 Mb block), suggesting there was no significant increase in collapsed forks. In contrast, when the roadblock was proximal to oriC, recB\u2212 profiles were more steeply sloped (Figure 5A, +0.34 and +0.13 Mb blocks), suggesting a more frequent rate of fork collapse. Quantifying percent replication fork stalling as the fraction of forks on the unblocked chromosome arm in recB\u2212 cells that remained after rifampicin runout (Materials and methods), we found that oriC-proximal roadblocking resulted in 21 \u00b1 3% and 26 \u00b1 2% fork stalling, while oriC-distal roadblocking resulted in only 5 \u00b1 1% fork stalling (Figure 5B). Cells with no roadblock experienced 4 \u00b1 1% fork stalling.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig5-v3.jpg)\n\n**Figure 5.:** (A) Raw sequencing profiles of the unblocked chromosome arm in recB+ and recB\u2212 cells after rifampicin runout. Strains contained either no block (wild-type MG1655 or its recB\u2212 derivative), an oriC-distal block at +1.10 Mb, or an oriC-proximal block at +0.34 Mb or +0.13 Mb as indicated (n = 2 replicates per strain). Dashed lines indicate the theoretical DNA profile after complete (100%) runout. (B) The frequency of stalled forks relative to unblocked recB+ . Stalled forks are quantified as the number of remaining forks on the unblocked arm after rifampicin runout (Materials and methods). Cells were grown under fast growth conditions. Error bars are \u00b11 standard deviation (s.d.); two-tailed t-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Data as described in Figure 5A. Strains are MG1655 (recB+, No block), DB2257 (recB\u2212, No block), DB2185 (recB+, +0.13 Mb block), DB2403 (recB\u2212, +0.13 Mb block), DB2193 (recB+, +0.34 Mb block), DB2722 (recB\u2212, +0.34 Mb block), DB2146 (recB+, +1.10 Mb block), and DB2725 (recB\u2212, +1.10 Mb block).\n\nTo confirm that the inability to finish replication in the absence of RecB when one replisome was blocked near oriC was due to collapsed replication forks, we mapped binding of the Holliday junction (HJ) binding protein, RDG, a catalytically deficient derivative of RuvC resolvase (Xia et al., 2016). HJs are four-way DNA junctions formed at stalled forks by either regression of the fork and subsequent annealing of the newly replicated strands (Atkinson and McGlynn, 2009), or by homologous recombination during fork remodeling (Michel et al., 2018). Thus, HJs are hallmarks of stalled forks, which are effectively detected by RDG (Xia et al., 2016). RDG binding across the genome was determined by chromatin immunoprecipitation and sequencing (ChIP-seq) after roadblocking at two oriC-proximal sites and one oriC-distal site. RDG-binding profiles in roadblocked cells show large peaks at the tetO array site and at the replication terminus (Figure 6A). These concentrations of RDG correspond to the expected locations of fork stalling in every roadblocked strain (Mei et al., 2021), and are not informative to the current study. Unreplicated regions downstream of the roadblocks showed low RDG binding, and we assume this region is essentially free of stalled forks. All three roadblocked strains showed elevated RDG binding along the left chromosome arm, but visibly more so in the two oriC-proximal blocked strains. To quantify stalling of the orphaned replisome, the increase in average RDG binding along the left arm (region LA) over average RDG binding on the unreplicated portion of the right arm (region RA) was determined in all four strains (Figure 6B, top diagram). Thus, quantification excludes hyper RDG-bound regions at the roadblock and terminus. This analysis indicates that orphaned replisomes experienced 50 \u00b1 9% more stalling that wild-type replisomes in oriC-distal blocked cells (+1.10 Mb) and 116 \u00b1 6% more stalling than wild-type replisomes in oriC-proximal blocked cells (+0.13 and +0.34 Mb). Thus, replisomes orphaned soon after replication initiation stalled significantly more than replisomes orphaned late in the replication period. Identification of the major peaks of RDG binding revealed about 30 hotspots on the unblocked chromosome arm in oriC-proximal blocked cells, with ~80% of peaks shared among the two strains (Figure 6\u2014figure supplement 2). Interestingly, RDG peaks were dispersed along the unblocked arm, implying that fork collapse was not restricted to regions that are normally replicated by colocalized sister replisomes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig6-v3.jpg)\n\n**Figure 6.:** (A) Genome binding of the Holliday junction protein RuvCDef-GFP (RDG) by chromatin immunoprecipitation and sequencing (ChIP-seq). RDG-expressing cells either contained no roadblock (DB2945) or were roadblocked at position +0.13, +0.34, or +1.10 Mb as indicated. Chromatin immunoprecipitation was performed using RuvC antibody. Log2 ChIP-seq reads (pull down/input) values >0 indicate RDG enrichment. (B) Percent change in RDG binding on the unblocked chromosome arm. Values are average RDG binding on the left arm between \u22122 Mb and oriC (region LA) divided by average RDG binding on the right arm (region RA). All cells were grown under fast growth conditions (n = 2\u20133). Error bars are \u00b11 standard deviation (s.d.); ***P < 0.001; **P < 0.01; two-tailed t-test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Frequency indicates the percentage of RDG chromatin immunoprecipitation and sequencing (ChIP-seq) IP/input values in 0.2-increment bins for wild-type DB2945 (No RB), DB3124 (+1.10 Mb blocked), DB2956 (+0.34 Mb blocked), and DB2954 (+0.13 Mb blocked).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Unblocked chromosome arm is shown between \u22122 Mb and oriC. Peaks (dashed lines) are locations of RDG signal \u22654 standard deviation (s.d.) above the 100 kb local median.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Nucleoid protein-binding profiles (black) and consensus RDG-binding peaks (dashed lines). (B) Correlation plots of nucleoid protein and RDG binding (average +0.13 Mb, +0.34 Mb blocked cells). All data are along the unblocked chromosome arm only, between oriC and \u22122 Mb.\n\n## Discussion\n\nOur data indicate that E. coli sister replisomes exhibit inter-dependent behavior during the early stages of DNA replication. Blocking one replisome within ~0.6 Mb of oriC negatively influenced the sister replisome, resulting in poorer overall fork progression measured by deep sequencing and reduced fork velocity by timed rifampicin runout. Such prematurely split replisomes were six times less likely to complete replication without the restart protein RecB and produced twice as many HJs as control cells, indicating increased fork stalling. Fork barriers placed farther than 0.6 Mb from the origin had minimal effect on progression of the unblocked replisome, suggesting that sister replisomes transition to a fully independent state part way through replication. Fluorescence imaging showed that this functional transition point roughly coincides with a physical transition of the replication machinery from colocalized (factory) replisomes to fully separate complexes. We conclude that replication fork progression through approximately the first third of the chromosome is facilitated by a physical association of leftward and rightward sister replisomes. Our data are consistent with a growing body of evidence that sister replisomes initiated from the same origin have inter-dependent fates. In both yeast (Natsume and Tanaka, 2010) and human cells (Conti et al., 2007), sister replisomes, but not replisomes initiated from different origins, exhibit similar velocities and blocking one fork with strong head-on transcription inhibits progression of its sister fork (Brambati et al., 2018). Notably, our data are not at odds with a those of a previous E. coli study concluding that sister replisomes are independent (Breier et al., 2005). That study used an ectopic termination site to block one replisome; however, the block was placed ~1 Mb from oriC, thus in a region that we would expect to have little effect on the unblocked replisome.\n\nWhat is the functional advantage provided by sister replisome association? Colocalizing replisomes may facilitate replication simply by increasing the local concentration of resources at the fork. Such resources include nucleotides, replication subunits, accessory helicases, topoisomerases, fork restart proteins, and mismatch repair proteins. Most of these components have been shown to localize or interact with the replisome (Bentchikou et al., 2015; L\u00f3pez de Saro and O\u2019Donnell, 2001; S\u00e1nchez-Romero et al., 2011; Stracy et al., 2019). It is reasonable to assume that conservation of the spatial distribution of replication resources to a defined volume around the replisomes would promote efficient fork progression, especially in a large cell or nucleus. Alternatively, factory replication may be important for coordinating the timing of left and right replication forks. For organisms with circular chromosomes and a single replication origin, precise convergence of forks at the terminus is critical for chromosome segregation and resolution of chromosome dimers (Dimude et al., 2016). Even though many bacteria possess emergency replication fork traps to limit extensive overtravel, most forks converge within a very narrow termination zone near the dif site (Hendrickson and Lawrence, 2007), implying that movement of sister replisomes is tightly coordinated. While it is unclear if coordinating termination of sister replisomes would confer any advantage in organisms with linear chromosomes since fork convergence occurs between forks initiated at different origins, coordinating sister replisome travel may provide a mechanism for equal transfer of epigenetic marks such as histones (Yuan et al., 2019). Lastly, factories may be important for fork progression through impediments including bound protein and transcription complexes. If sister replisomes are anchored to a cell structure such as a nuclear or cell membrane, or to each other via a stable link, the resulting complex might stabilize replisomes against mechanical stress imposed on the replicative helicase as it travels through dense chromatin. Supporting this idea, up to 70% of all transcription in E. coli, including the highly active ribosomal genes, occurs within the ori-proximal ~1/3 of the chromosome (Grainger et al., 2006), matching closely the region in which sister replisomes are colocalized (Figure 2).\n\nHow are sister replisomes linked together? Early models of replication proposed that bidirectional replisomes exist in an obligate binary configuration in which the two helicases are oriented head-to-head (Dingman, 1974). In this configuration, one replisome copies the top strand and one replisome copies the bottom strand, and thus the two replisomes are unable to separate without either (1) pulling Watson away from Crick, or (2) completely dissociating and reassociating both replisomes (Bates, 2008) including DnaB helicase, which is thought to remain stably associated throughout replication (Monachino et al., 2020). Given that sister replisome splitting occurs naturally in bacteria (Bates and Kleckner, 2005; Berkmen and Grossman, 2006; Hiraga et al., 2000; Japaridze et al., 2020; Mangiameli et al., 2017b; Onogi et al., 2002; Reyes-Lamothe et al., 2008) and under forced conditions in eukaryotes (Brambati et al., 2018; Yardimci et al., 2010), such an obligate factory complex seems unlikely. Perhaps more plausible is a scenario in which sister replisomes are tethered by a dedicated protein. One such protein is the eukaryotic Ctf4 protein, which can dimerize CMG helicase between two replisomes forming a stable factory (Yuan et al., 2019). Ctf4 may also direct the lagging strands from both replisomes to a single shared Pol \u03b1 primase, which would coordinate bidirectional synthesis (Li et al., 2020). Although no analogous tethering protein has been identified in bacteria, there are fork-associated proteins capable of crosslinking, which might link sister replisomes if bound in sufficient quantities. Candidate proteins include one of the highly abundant fork-associated proteins found in bacteria; SeqA in E. coli, YabA in B. subtilis, and GapA in C. crescentus. These proteins can form polymers and some mutants exhibit reduced fork progression and aberrant replisome dynamics (Arias-Cartin et al., 2017; Fossum et al., 2007; Joshi et al., 2013; Soufo et al., 2008).\n\nIn contrast to protein linker models, we propose that sister replisomes are instead connected indirectly via entanglements of newly replicated DNA exiting the forks. Topological stress at the fork, totaling 100 duplex twists per second at an elongation rate of 1000 bp per second, are reduced by topoisomerases and diluted by diffusion (as supercoils) into the surrounding DNA. However, excess stress routinely builds to the point that DNA around the fork becomes entwined and highly condensed (Postow et al., 2001). These entanglements might tether sister replisomes together, possibly aided by fork-tracking proteins like SeqA, which form stabilizing crosslinks on catenated DNA (Joshi et al., 2013). Supporting this model, the E. coli chromosome has a higher supercoil density around the replication origin (Visser et al., 2022), coinciding with the region replicated by colocalized replisomes, and supercoiling is highly symmetrical along left and right chromosome arms (Visser et al., 2022). It has also been reported that blockage of yeast replication forks at a site of strong head-on transcription (antiparallel with the direction of replication) impairs progression of the sister replisome (Brambati et al., 2018), while blockage with a double strand break does not (Doksani et al., 2009). Thus, it would seem that the fate of sister replisomes is linked specifically when they encounter topological stress.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>AB1157 dnaN-mCherry FRTKanFRT</td>\n      <td>Moolman et al., 2014</td>\n      <td>BN1682</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>AB1157 dnaN-ypet FRT</td>\n      <td>This paper</td>\n      <td>DB1568</td>\n      <td>RRL190 flipped to KmS w/pCP20</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ lac, pDM15 (+1.10 Mb block)</td>\n      <td>Joshi et al., 2011</td>\n      <td>DB2146</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ glnA, pDM15 (+0.13 Mb block)</td>\n      <td>Joshi et al., 2011</td>\n      <td>DB2185</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ dnaB, pDM15 (+0.34 Mb block)</td>\n      <td>Joshi et al., 2011</td>\n      <td>DB2193</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 \u0394recB FRTKanFRT</td>\n      <td>This paper</td>\n      <td>DB2257</td>\n      <td>MG1655 \u00d7 P1.JW2788</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ gln, \u0394recB FRTKanFRT, pDM15 (+0.13 Mb block)</td>\n      <td>This paper</td>\n      <td>DB2403</td>\n      <td>DB2185 \u00d7 P1.JW2788</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ dnaB, \u0394recB FRTKanFRT, pDM15 (+0.34 Mb block)</td>\n      <td>This paper</td>\n      <td>DB2722</td>\n      <td>DB2193 \u00d7 P1.JW2788</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ lac, \u0394recB FRTKanFRT, pDM15 (+1.10 Mb block)</td>\n      <td>This paper</td>\n      <td>DB2725</td>\n      <td>DB2146 \u00d7 P1.JW2788</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 dnaN-mCherry FRTKanFRT</td>\n      <td>This paper</td>\n      <td>DB2943</td>\n      <td>MG1655 \u00d7 P1.BN1682</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 \u03bbcIts857 PR::ruvCDef-gfp FRTKanFRT (42\u00b0C inducible RDG cassette)</td>\n      <td>This paper</td>\n      <td>DB2945</td>\n      <td>SMR19379 recombineered with primers P1/P2; P3/P4</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ gln, \u03bbcIts857 PR::ruvCDef-gfp FRTKanFRT, pDM15 (+0.13 Mb block, RDG)</td>\n      <td>This paper</td>\n      <td>DB2954</td>\n      <td>DB2185 \u00d7 P1.DB2945</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ dnaB, \u03bbcIts857 PR::ruvCDef-gfp FRTKanFRT, pDM15 (+0.34 Mb block, RDG)</td>\n      <td>This paper</td>\n      <td>DB2956</td>\n      <td>DB2193 \u00d7 P1.DB2945</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 dnaN-mCherry FRT</td>\n      <td>This paper</td>\n      <td>DB2962</td>\n      <td>DB2943 flipped to KmS w/pCP20</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ glnA, pDM15 (+0.13 Mb block) dnaN-mCherry FRTKanFRT</td>\n      <td>This paper</td>\n      <td>DB2970</td>\n      <td>DB2185 \u00d7 P1.BN1682</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ glnA, pDM15 (+0.13 Mb block) dnaN-mCherry FRT</td>\n      <td>This paper</td>\n      <td>DB2972</td>\n      <td>DB2970 flipped to KmS w/pCP20</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BW25113 yjiC::141x tetO array FRT</td>\n      <td>This paper</td>\n      <td>DB3094</td>\n      <td>JW4288 \u00d7 pJZ087 &amp; pCP20</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BW25113 yjbL::141x tetO array FRT</td>\n      <td>This paper</td>\n      <td>DB3096</td>\n      <td>JW4007 \u00d7 pJZ087 &amp; pCP20</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 141x tetO array @ lac, \u03bbcIts857 PR::ruvCDef-gfp FRTKanFRT, pDM15 (+1.10 Mb block, RDG)</td>\n      <td>This paper</td>\n      <td>DB3124</td>\n      <td>DB2146 \u00d7 P1.DB2945</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 yjiC::141x tetO array FRT</td>\n      <td>This paper</td>\n      <td>DB3191</td>\n      <td>MG16556 \u00d7 P1.DB3094</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 yjbL::141x tetO array FRT</td>\n      <td>This paper</td>\n      <td>DB3193</td>\n      <td>MG1655 \u00d7 P1.DB3096</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 yjiC::141x tetO array FRT, pDM15 (+0.63 Mb block)</td>\n      <td>This paper</td>\n      <td>DB3195</td>\n      <td>DB3191 \u00d7 pDM15</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 yjbL::141x tetO array FRT pDM15 (+0.32 Mb block)</td>\n      <td>This paper</td>\n      <td>DB3198</td>\n      <td>DB3193 \u00d7 pDM15</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BW25113 yhgN::141x tetO array FRT</td>\n      <td>This paper</td>\n      <td>DB3212</td>\n      <td>JW3397 \u00d7 pJZ087 &amp; pCP20</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 yhgN::141x tetO array FRT</td>\n      <td>This paper</td>\n      <td>DB3214</td>\n      <td>MG1655 \u00d7 P1.3212</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 yhgN::141x tetO array FRT, pDM15 (\u22120.35 Mb block)</td>\n      <td>This paper</td>\n      <td>DB3216</td>\n      <td>DB3214 \u00d7 pDM15</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BW25113 yjgZ::141x tetO array FRT</td>\n      <td>This paper</td>\n      <td>DB3258</td>\n      <td>JW4236 \u00d7 pJZ087 &amp; pCP20</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 yjgZ::141x tetO array FRT</td>\n      <td>This paper</td>\n      <td>DB3262</td>\n      <td>MG1655 \u00d7 P1.DB3258</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 yjgZ::141x tetO array FRT, pDM15 (+0.58 Mb block)</td>\n      <td>This paper</td>\n      <td>DB3264</td>\n      <td>DB3262 \u00d7 pDM15</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BW25113 \u0394recB FRTKanFRT</td>\n      <td>Baba et al., 2006</td>\n      <td>JW2788</td>\n      <td>Keio collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BW25113 \u2206yhgN FRTKanFRT</td>\n      <td>Baba et al., 2006</td>\n      <td>JW3397</td>\n      <td>Keio collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BW25113 \u2206yjbL FRTKanFRT</td>\n      <td>Baba et al., 2006</td>\n      <td>JW4007</td>\n      <td>Keio collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BW25113 \u2206yjgZ FRTKanFRT</td>\n      <td>Baba et al., 2006</td>\n      <td>JW4236</td>\n      <td>Keio collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BW25113 \u2206yjiC FRTKanFRT</td>\n      <td>Baba et al., 2006</td>\n      <td>JW4288</td>\n      <td>Keio collection Baba et al., 2006</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>AB1157dnaN-ypet FRTKanFRT</td>\n      <td>Reyes-Lamothe et al., 2010</td>\n      <td>RRL190</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>AB1157 ssb-ypet::Kan</td>\n      <td>Reyes-Lamothe et al., 2008</td>\n      <td>RRL32</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>MG1655 PN25tetO::ruvCDef-gfp FRT</td>\n      <td>Xia et al., 2016</td>\n      <td>SMR19425</td>\n      <td>Doxycycline-inducible RDG cassette</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-RuvC (mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-53437, RRID:AB_630213</td>\n      <td>IP (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCP20</td>\n      <td>Cherepanov and Wackernagel, 1995</td>\n      <td></td>\n      <td>Flippase FLP ApR recombinase</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pJZ087</td>\n      <td>Wang et al., 2019</td>\n      <td></td>\n      <td>FRT-141x tetO GmR integration</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKD46</td>\n      <td>Datsenko and Wanner, 2000</td>\n      <td></td>\n      <td>FRTKanFRT for RDG cassette</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDM15</td>\n      <td>Magnan and Bates, 2015a</td>\n      <td></td>\n      <td>PnahG::tetR-yfp CmR expression</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P1</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>GGTATATCTCCTTCTTAAAGTTAAACAAAATTATTTCTAGAAGGGTTATGCGTTGTTCCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P2</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>GTTTCATGCTATGCCAAACGAGAATGATTATCAAATTCATGTGTAGGCTGGAGCTGCTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P3</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>CCCTAATTCGATGAAGATTCTTGCTCAATTGTTATCAGCGTGTAGGCTGGAGCTGCTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P4</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>AGACGTTTGGCTGATCGGCAAGGTGTTCTGGTCGGCGATTCCGGGGATCCGTCGACC</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nextera XT DNA Sample Preparation Kit</td>\n      <td>Illumina</td>\n      <td>Cat #: FC-131-1024</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MiSeq Reagent Kit v3 (150-cycle)</td>\n      <td>Illumina</td>\n      <td>Cat #: MS-102-3001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Anhydrotetracycline hydrochloride</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat #: 37919</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium salicylate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat #: S3007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FocusCounter</td>\n      <td>https://github.com/DavidBatesLab/Matlab-scripts.git; Joshi et al., 2013</td>\n      <td>Matlab script</td>\n      <td>Counting replisome foci</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo</td>\n      <td>FlowJo LLC</td>\n      <td></td>\n      <td>Quantifying flow cytometry histograms</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>sequencingcompile.m</td>\n      <td>https://github.com/DavidBatesLab/Matlab-scripts.git</td>\n      <td>Matlab script</td>\n      <td>Extracting read coordinates from bam files</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>sequencingcompile2.m</td>\n      <td>https://github.com/DavidBatesLab/Matlab-scripts.git</td>\n      <td>Matlab script</td>\n      <td>Binning reads into 1 kb bins</td>\n    </tr>\n  </tbody>\n</table>\n\n### Strain construction and growth conditions\n\nAll bacterial strains are derivatives of E. coli K-12 wild-type strain MG1655 and are listed in the Key Resources Table. All strains and plasmids are freely available upon request. Mutant alleles were moved by P1 transduction. FRT-flanked kan genes were removed by transforming flippase plasmid pCP20 (Cherepanov and Wackernagel, 1995) and subsequent curing at 42\u00b0C. Tet array roadblocking sites at \u22120.35, +0.32, +0.58, and +0.63 Mb were constructed by integrating an FRT-141x tetO array GmR cassette into a Keio strain (Baba et al., 2006) carrying an FRT-flanked gene deletion at the desired location by co-transformation with linearized pJZ087 (Wang et al., 2019) and pCP20, followed by curing at 42\u00b0C. The GmR tetO array was then moved into MG1655 by P1 transduction and transformed with TetR-YFP expression plasmid pDM15 (Magnan et al., 2015b). For RDG ChIP-seq, the RDG expression cassette (Xia et al., 2016) was placed under control of the temperature-inducible lambda PR promoter by recombineering using primers P1 and P2 and marked with FRTKanFRT from pKD13 using primers P3 and P4.\n\nFor all experiments, cells were diluted 1:2000 in Luria-Bertani (LB) medium (fast growth) or M9 minimal medium supplemented with 0.2% succinate (slow growth) at 37\u00b0C with shaking to OD600 = 0.2. Antibiotics were used at the following concentrations: chloramphenicol (50 \u00b5g/ml), kanamycin (30 \u00b5g/ml), ampicillin (30 \u00b5g/ml), and gentamicin (5.5 \u00b5g/ml). Conditioned LB media was made by growth of wild-type MG1655 in LB for 2 hr (OD600 ~ 0.1) followed by centrifugation and two passes through a 0.2-\u00b5m filter.\n\n### Fluorescence imaging and quantification of replisomes\n\nTwo different replisome fluorescent tags were used to image replisomes due to very low signal intensity of DnaN-YPet in minimal medium and large, non-spherical foci with SSB-YPet in LB. DnaN-mCherry was used to test if tag diimerization affected focus dynamics (Figure 2\u2014figure supplement 2). Exponentially growing cells of replisome-labeled cells were applied directly to an agarose-coated slide containing growth medium and immediately imaged as previously described (Joshi et al., 2013). Using agarose slides places cells in a flat plane and prevents movement, facilitating 3D imaging of multiple cells per field without blurring. Images were taken with a Zeiss AxioImager Z1 fluorescence microscope equipped with a 10-nm motorized stage and Hamamatsu Electron Multiplier charge-coupled device camera. Cells were imaged at five z-planes positioned 0.2 \u00b5m apart. Images were deconvoluted using the Nearest Neighbor algorithm (Zeiss Axiovision) and combined into a single maxiumum intensity projection. Foci were counted using a custom image analysis program, FocusCounter (Joshi et al., 2013), freely available online at https://www.bcm.edu/research/labs/david-bates/focuscounter.\n\n### Replication roadblocking at tetO arrays\n\nDuring strain construction and routine propagation, roadblocking strains were grown in the presence of 200 nM anhydrotetracycline to inhibit background-expressed (leaky) TetR-YFP from binding to the tetO array. TetR-YFP was induced in exponentially growing cells with 20 \u00b5M sodium salicylate for 2 hr before cells were collected for analysis. For experiments performed under fast growth conditions, cultures were maintained at or below OD600 0.2 for the duration of the roadblock induction period by twofold dilution with pre-warmed conditioned media containing antibiotics and sodium salicylate every 30 min.\n\n### Whole-genome sequencing\n\nGenomic DNA was prepared from 10 ml (LB media) or 100 ml (minimal media) cells by the CTAB method (Maniatis et al., 1982). Genomic sequencing libraries were prepared using the Nextera XT Sample Preparation Kit from 1 ng of genomic DNA per the manufacturer\u2019s instructions. Paired-end sequencing was performed on an Illumina MiSeq sequencer using the re-sequencing workflow with a 2 \u00d7 75-cycle MiSeq Reagent Kit v3. Sequencing reads were mapped to the E. coli MG1655 reference genome (NCBI RefSeq accession: NC_000913.3) using MiSeq integrated analysis software. Mapped reads were sorted into 4639 1-kb bins spanning the E. coli MG1655 chromosome and exported to Excel format using two custom MATLAB (Mathworks) scripts, sequencingcompile.m and sequencingcompile2.m. To reduce noise, bins containing repetitive sequences, deleted genes, or having read counts greater or <3 standard deviation (s.d. from a 200-kb) moving average trendline were excluded, totaling \u22641.4% of reads for any one sample in the current study. On average, samples contained 2.4-million reads after filtering. Binned data were then corrected for sequencing bias (regions that sequence more or less efficiently than average), by normalizing to a non-replicating stationary phase control sample, in which all sequences on the chromosome are present at equal copy number. Finally, normalized binned read counts were set relative to the mean read count for the 20 kb surrounding oriC and converted to log2 values.\n\n### RDG chromatin immunoprecipitation\n\nThe production of RDG protein was controlled by the phage \u03bbPR promoter, which is repressed by the temperature-sensitive CI857 repressor. Cultures carrying \u03bbcIts857, ruvCDef-gfp, and a replication roadblocking tetO array and TetR expression plasmid, were grown as described above except at 30\u00b0C, then shifted to 37\u00b0C 1 hr before roadblocking to induce RDG expression. After roadblocking, cells were cross-linked in 1% paraformaldehyde for 20 min at room temperature, followed by quenching in 0.5 M glycine for 5 min. Cells were lysed and RDG-bound DNA was immunoprecipitated with RuvC antibody (Santa Cruz Biotechnology) as previously described (Xia et al., 2016). Samples were also prepared without immunoprecipitation for a copy number (input) control. DNA was purified and sequencing libraries were prepared as previously described (Xia et al., 2016), and sequencing was performed as described above except that reads >3 s.d. outside a 200-kb moving average trendline were not filtered. RDG binding was quantified for each kb of the chromosome as the ratio of reads in the pull-down sample to reads in the input sample. RDG peaks were defined as bins with an RDG signal \u22654 s.d. above the local 100-kb median.\n\n### Flow cytometry and rifampicin replication runout assay\n\nCultures were treated with 150 \u00b5g/ml rifampicin, which blocks replication initiation but does not block elongation of already initiated forks, and 10 \u00b5g/ml cephalexin, which blocks cell division. Cultures were further incubated with shaking at 37\u00b0C for the indicated time. Samples were fixed by pelleting 1 ml cells, washing in 1 ml cold TE, and resuspending (by vortexing) in cold 70% ethanol. Cells were then pelleted, washed in filtered phosphate-buffered saline (PBS), resuspended in 1 ml PBS with 2 \u00b5g/ml DAPI, and incubated overnight at 4\u00b0C in the dark. Flow cytometry was performed with a Becton-Dickinson LSR II Cell Analyzer, measuring DAPI fluorescence in 30,000 cells per sample. DNA histograms were exported into Excel for Kolmogorov\u2013Smirnov analysis (below).\n\n### Defining cell cycle parameters from DNA histograms and growth rate\n\nThe timing of replication initiation is derived from the fraction of cells in an exponential culture that have initiated. The fraction of initiated cells is equal to the fraction of cells in the larger (greater DNA content) peak in a rifampicin runout DNA histogram, quantified using FlowJo software. The fraction of initiated cells (%i) is then converted to the time of initiation (Ti) by applying an exponential age distribution function (adapted from Lindmo, 1982):\n\n$$\nT_{i}=ln[(1+%_{i})\\div2]\\div\u2212ln2\\times\\tau\n$$\n\nwhere \u03c4 is the mass doubling time in minutes, determined from optical density measurements of exponentially growing cells averaged among three independent measurements. The duration of DNA replication was determined by fitting a theoretical DNA histogram to actual histograms from flow cytometry using the cell cycle modeling program by Stokke et al., 2012. The time of replication termination (Tt) was calculated as follows (adapted from Molina and Skarstad, 2004):\n\n$$\nT_{t}=T_{i}+C\u2212[\\tau\\times(n\u22121)]\n$$\n\nwhere n is the number of overlapping replication cycles (e.g., 3 under fast growth conditions). Finally, the duration of the D-period (D) was calculated as follows (adapted from Molina and Skarstad, 2004):\n\n$$\nD=(\\tau\\timesn)\u2212T_{i}\u2212C\n$$\n\n### Modeling replisome pairing from fluorescence imaging\n\nThe number of observed foci of fluorescent replisome tags is always less than the actual number of replisomes due to undetected foci, a low and quantifiable fraction (below), and overlapping foci, resulting from coincidental overlap and active replisome pairing. To ascertain the timing and duration of replisome pairing, we compared replisome focus distributions from DnaN-YPet (fast growth conditions) and SSB-YPet (slow growth conditions) to theoretical focus distributions generated for each of four pairing models: tracking (no pairing), factory (sister replisomes paired continuously), splitting (sister replisomes paired for a determined interval), and splitting with cousins (sister and cousin replisomes paired for a determined interval; applicable only to fast growth). To generate theoretical focus distributions, timelines of predicted foci per cell for each model were created based on the forks per cell timelines (Figure 2D, J), which were then quantified by integrating an exponential population function for each stage in the timelines (adapted from Skarstad et al., 1985):\n\n$$\nF_{a1:a2}=\\int_{a1}^{a2}n(a)daor,n(a)=2\\timese^{\u2212a\\timesln(2)}\n$$\n\nwhere Fa1:a2 is the fraction of cells in an exponential culture between age a1 and a2, and n(a) is the probability of a cell to be age a, 0\u20131. Stages were then summed and adjusted for undetected foci due to coincidental overlap (Joshi et al., 2011), 0.6% for SSB-YPet and 2.9% for DnaN-YPet, yielding theoretical focus distributions for each model.\n\nFor slow growth, 47 theoretical focus distributions were generated, one for every possible duration of sister replisome pairing (in 1-min intervals) from 0 to 46 min, the length of the C-period in minimal media. For fast growth, 903 theoretical focus distributions were generated for all possible combinations of sister and cousin replisome pairing, from 0 to 41 min each, the length of the C-period in rich media. Model fitness was evaluated by comparing theoretical and actual focus distributions by Kolmogorov\u2013Smirnov analysis, which defines a dissimilarity index (D) as the maximum difference between cumulative curves of the two distributions.\n\n### Estimating fork progression and fork stalling from sequencing data\n\nCopy number profiles from whole-genome sequencing of a growing population of cells are highest at the origin and lowest at the terminus, owing to continual initiation of replication. In a steady-state exponential culture, the profile will be a straight line on a log scale with slope inversely proportional to the density of replication forks:\n\n$$\nForkspermegabase=|\u0394log_{2}CN_{ori:ter}/\u0394Mb_{ori:ter}|^{\u22121}\n$$\n\nFork density is a product of the rate of replication initiation and the rate of replication fork progression, thus assuming that initiations are in steady state, sequencing profile slope is an accurate gauge of fork progression. For our roadblocked samples, each underwent a comparable number of initiation events during roadblock induction, as evidenced by similar ratios of origin DNA to unreplicated DNA downstream of the roadblocks under both slow growth conditions (\u22120.96 \u00b1 0.12; Figure 3\u2014figure supplement 1) and fast growth conditions (\u22123.12 \u00b1 0.19; Figure 3\u2014figure supplement 2). To assess fork progression, sequencing profile slopes were calculated over a 2-Mb region along the unblocked chromosome arm beginning at oriC and excluding the terminus region, which showed highly variable copy number in left and right arm roadblocked samples.\n\nPercent stalled forks in recB+ and recB\u2212 cells were calculated as the fraction of forks remaining on the unblocked arm after roadblocking and rifampicin runout:\n\n$$\n%forkstalling=\\frac{#forksremainingafterRIFrunout}{#forksinitiated}=\\frac{2^{|log_{2}CN_{ter}post\u2212RIF|}\u22121}{2^{|log_{2}CN_{array}pre\u2212RIF|}\u22121}\n$$\n\nwhere CNter post-RIF is DNA copy number at the terminus on the unblocked chromosome arm after rifampicin runout, and CNarray pre-RIF is DNA copy number at the roadblocking array before rifampicin runout. To avoid the effects of DNA degradation at the terminus, which occurs in recB\u2212 strains (Michel et al., 2018), ter copy number was extrapolated from a linear regression of data between oriC and \u00b12.0 Mb on the unblocked arm.\n\n### Determining replication elongation rates by rifampicin runout flow cytometry\n\nWe estimated total replication time by measuring the change in DNA content by flow cytometry over time after blocking further initiations with rifampicin (RIF runout). Cumulative curves were generated for all DNA histograms (DAPI fluorescence) and the curves from each time point were compared to the final time point (90 min) by Kolmogorov\u2013Smirnov analysis. No further change was observed after 90 min in any of the samples (data not shown). Dissimilarity index values were normalized from 0% (zero time point) to 100% (90-min time point) and plotted as percent runout (1 \u2212 dissimilarity index). Data were fitted to a logarithmic regression (average R2 = 0.92 \u00b1 0.08), which is the expected runout kinetics of an exponential culture. Regression intercepts at 90% runout equal the time of replication fork elongation from oriC to about \u00b12.1 Mb, plus the time required for rifampicin to enter cells and block replication initiation.\n\n### Data availability\n\nSequencing data generated in this study have been deposited in the National Center for Biotechnology (NCBI) Sequence Read Archive (SRA), BioProject PRJNA860928. Custom Matlab scripts that were used to compile and sort sequencing data are freely available on the GitHub repository (https://github.com/DavidBatesLab/Matlab-scripts (Chen, 2022; copy archived at swh:1:rev:cb370d3f4d22e13bea8cbd30c0d296ec3ba22bc6)).\n",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "b5d7b02f-e419-4caf-a56a-10fb7c97bbaf",
+      "submission_id": "76f8053c-95c2-422f-8097-10e2449295bf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James M Berger, https://ror.org/00za53h95 Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82241.sa0](https://doi.org/10.7554/eLife.82241.sa0)\n\nThis study contains a number of compelling findings showing that bacterial replisomes can associate into 'factories' and that this interaction facilitates replication and has a beneficial impact on the cell. The authors provide strong evidence for replication factories being required to both coordinate and promote the progression of the colocalized forks as well as help prevent them from spontaneously and prematurely dissociating. This important study provides robust data in favor of the factory-and-splitting model for replication fork function.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- James M Berger, https://ror.org/00za53h95 Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82241.sa1](https://doi.org/10.7554/eLife.82241.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Interdependent progression of bidirectional sister replisomes in E. coli\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nPlease address the concerns and comments noted below.\n\nReviewer #1 (Recommendations for the authors):\n\nI have already reviewed this manuscript for a different journal. The authors took most of my comments into consideration. The manuscript is much easier to read in this new version. I have a few concerns that should be addressed before publication.\n\n1) YPet forms weak dimers, could this characteristic influence the foci number count? These experiments should be confirmed with an mCherry or mVenus fusion.\n\n2) It is not evident to me that \"cousin replisomes\" are not a consequence of the resolution limit of imaging and do not have a biological significance.\n\n3) I am puzzled by the fact that the replication fork barrier influences the replication of the other replichore even before the replisome reaches the barrier. For example in Figure 1D, the 0.58 Mb trace ( green) appears immediately (distance from oriC <0.5 Mb) below the blue traces. In my opinion, in this portion of the genome, the associated replisomes should not be influenced by a future barrier.\n\n4) Figure 4A: The strains with the barriers at -0.35 Mb and +0.34 Mb do not show the same DNA content and run-out outcome but show the same timing of replication completion (Figure 4B). Since the two barriers are symmetrical from oriC, I would have expected similar consequences of the genome content. Could the authors comment on this difference? Is it linked to experimental variability?\n\n5) Figure 6. I think that Figure 6B is misleading. It gives a false impression that orphaned forks collapse frequently. I am not sure of that. On panel A, we see that most of the RDG signal (not considering the barrier and ter peaks) comes directly from the activity of the TetR barriers (blue graph). Rather than using the average ratio with the no block strain, I would prefer to see a distribution of the log2 IP/input ratio for all strains. This way the RDG binding value of the no block strain will be included in the graph and the statistical analysis.\n\nReviewer #2 (Recommendations for the authors):\n\nIn general, this reviewer finds this to be a lovely manuscript filled with excellent science. However, a few comments/quibbles:\n\n1. Relative fork rates in Figure 3BD and Figure 5A. These are listed as \"Log2 relative abundance\" but in looking at the legend and Materials and methods it is not completely obvious how these data are normalized. Do these graphs represent the rate of the blocked fork relative to a strain (or condition, see query 4 below) lacking blocked forks? If so, the corresponding rate of the strain lacking a fork barrier (the control) would then be a simple horizontal line (i.e., the data normalized to itself) which unfortunately is not included in the figure. (I believe that this is basically what the dashed line in Figure 5A represents). Please add an explanation of how the data are normalized and add and label the comparable unblocked fork rate (possibly dotted) as a control to better highlight your results.\n\n2. Assuming that my comments in #1 are correct, doesn't the data then also show that the distal fork blocks also affect the rate of the unblocked fork (abet a much smaller effect than for the proximal blocks)? For example, the blue data line (which corresponds to fork progression in the strain containing the 1.1 MB fork block) is not horizontal, which as mentioned above would be the case if the block had no effect on fork progression. Distal effects are listed as \"minimal\" in the discussion, but what does this mean? Please mention and discuss.\n\n3. The +0.35 and -0.13 fork blocks are denoted by a very similar color in various panels of Figure 3. For example in Figure 3B, I cannot tell by the line color on the graph whether the -0.35 and the +0.34 fork blocks are being compared or the -0.35 and the + 0.13 blocks (the fact color is completely relied upon without additionally mentioning which blocks are used in the legend further exasperates this problem). In my opinion, I'd label the leftward fork block (-.34) a unique color.\n\n4. In various experiments, the experimental results are compared to the unblocked control (e.g., Figure 4A). However, it is not exactly obvious what the unblocked control represents, as the strain is not explained in the figure legend and the strain list is rather cryptically brief. I can imagine one of 3 basic possibilities: (1) That the control strain lacks both the tet repressor and operator constructs, that the strain lacks either the repressor or operator constructs, or (3) that the control strain contains both the operator and repressor, but no inducer is added to facilitate binding between the operator and repressor. If the control strain lacks both tet operator and repressor, was the inducer still added? These differences can affect the interpretation of the experiment, so please add or more explicitly emphasize this information.\n\n5. The effect of fork blocks on fork rate is featured, but what happens to the replication \"factory\" under these conditions? Does the block stabilize the factory, make it fall apart, or have no effect?\n\n6. Figure 4. FACS analysis. As nearly as this reviewer understands, the -0.35 and +0.34 fork blocks, which individually block different forks, have similar effects on the progression of the unblocked fork. Given their symmetric locations relative to OriC, I would suppose that after blocking the fork in each strain and measuring bulk DNA content, the 2 different strains would appear very similar. However, in the FACS experiment the DNA content of these 2 populations looks very different (Figure 4A OriC-proximal blocks). Shouldn't both strains give a similar FACS profile throughout the time course? Explanation?\n\n7. The notion that replication factories increase replication fidelity is a major selling point in the paper. However, as noted in the Public review, the data only rather indirectly supports the specific possibility of replication fork collapse. The inclusion of an independent and perhaps more direct approach to the question would considerably strengthen your argument and bring this otherwise excellent paper up a notch.\n\n8. Lack of mechanism. Given that eLife is a rather prestigious publication, an uncharitable reviewer might complain that this paper is unsuitable for this Journal as the manuscript is long on phenomena and rather short on mechanism. This reviewer is less concerned with this problem, as it seems clear that the study of replication factories is not yet sufficiently advanced for detailed mechanistic studies. However, in the Discussion, the authors suggest that factory formation may be the mechanistic consequence of topological intertwining between the diverging replications forks. Given that necessary assays are in hand and the 2 principal authors are very well-established bacterial geneticists, this hypothesis seems testable either by engineering an inducible double-strand break in an informative location to uncouple the divergent forks, or perhaps by overexpression of gyrase to in an effort to speed-up topological resolution. Does either treatment affect factory formation or timing? (Perhaps the data is already in hand and the follow-up manuscript is in progress?)\n",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fe6b59d4-5fd1-43d2-a992-ca0491e8dca9",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C1",
+      "claim": "DNA replication fork stalling is a major cause of genomic instability that underlies many human genetic diseases, from cancer to antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA replication fork stalling is now recognized as a major cause of the genomic instability that underlies many human genetic diseases, from cancer to antibiotic resistance (Tubbs and Nussenzweig, 2017; Zeman and Cimprich, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Tubbs and Nussenzweig, 2017; Zeman and Cimprich, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "fbd35462-fb91-4edc-a687-87ad9413681b",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C2",
+      "claim": "Replication factories have been observed in all three domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, replication factories have been observed in all three domains of life (Li et al., 2020), yet the functional advantage(s) of this relationship are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Li et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "b9e02ed7-f52d-4b3e-aa1c-71162591982b",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C3",
+      "claim": "The functional advantage(s) of replication factories are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, replication factories have been observed in all three domains of life (Li et al., 2020), yet the functional advantage(s) of this relationship are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "0db37aa9-5e75-4ef3-8611-f6a587d7bd07",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C4",
+      "claim": "Slow growing bacterial cells often display a single replication focus, suggesting that sister replisomes are often localized within a single complex.",
+      "claim_type": "EXPLICIT",
+      "source": "First in B. subtilis (Lemon and Grossman, 1998), and then other bacteria (Brendler et al., 2000; Jensen et al., 2001), it was shown that slow growing cells often displayed a single replication focus, suggesting that sister replisomes are often localized within a single complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies in B. subtilis and other bacteria (Lemon and Grossman, 1998; Brendler et al., 2000; Jensen et al., 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "caca93ec-7079-4ad7-88fd-581ae0e7ed8c",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C5",
+      "claim": "Sister replisomes in slow growing bacteria are initially colocalized but then separate into two distinct foci part way through the replication period.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of replisome lifecycles by synchronization or time-lapse microscopy suggests that sister replisomes are initially colocalized but then separate into two distinct foci part way through the replication period (Bates and Kleckner, 2005; Hiraga et al., 2000; Japaridze et al., 2020; Onogi et al., 2002; Reyes-Lamothe et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies using synchronization or time-lapse microscopy (Bates and Kleckner, 2005; Hiraga et al., 2000; Japaridze et al., 2020; Onogi et al., 2002; Reyes-Lamothe et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "a7e7c9a5-77be-40e2-ba24-13812d4b9ba3",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C6",
+      "claim": "Under slow growth conditions, replisomes undergo a programmed splitting event one-quarter to one-half of the way through the replication period.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, at least under slow growth conditions, replisomes undergo a programmed splitting event one-quarter to one-half of the way through the replication period (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the cited studies and is illustrated in Figure 1.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "3771760a-c4c1-46f8-8c00-b9f5fd1315d6",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C7",
+      "claim": "Sister replisome splitting is contemporaneous with segregation of the origin region of the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism and regulation of sister replisome splitting are unknown, but splitting is contemporaneous with segregation of the origin region of the chromosome (Bates and Kleckner, 2005), which is held together by topological linkages known as precatenanes (Joshi et al., 2013; Wang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bates and Kleckner, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "73a1275a-f423-405c-bb99-3cb6f66c87c3",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C8",
+      "claim": "The origin region of the chromosome is held together by topological linkages known as precatenanes.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism and regulation of sister replisome splitting are unknown, but splitting is contemporaneous with segregation of the origin region of the chromosome (Bates and Kleckner, 2005), which is held together by topological linkages known as precatenanes (Joshi et al., 2013; Wang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Joshi et al., 2013 and Wang et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "206a3c72-f4d5-41fb-8b81-089685bee85a",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C9",
+      "claim": "Bulk measurements of replication foci in rapidly growing E. coli cells indicate that the total number of replication foci is about half the number of replication forks estimated from flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk measurements of replication foci in rapidly growing Escherichia coli cells indicate that the total number of replication foci is about half the number of replication forks estimated from flow cytometry (Fossum et al., 2007; Molina and Skarstad, 2004; S\u00e1nchez-Romero et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies measuring replication foci (Fossum et al., 2007; Molina and Skarstad, 2004; S\u00e1nchez-Romero et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "c034baef-2d83-41cf-a71a-e9baedd8d496",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C10",
+      "claim": "In E. coli, each replisome can function as an independent unit.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, it is clear that each replisome can function as an independent unit, as blocking one replication fork with either an ectopic terminus (Breier et al., 2005) or array of transcription factor binding sites (Possoz et al., 2006), does not prevent the unblocked replisome from finishing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies showing that blocking one fork does not prevent the other from finishing (Breier et al., 2005; Possoz et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "530c50ff-2391-4395-851f-80823ce5b5eb",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C11",
+      "claim": "In S. pombe, a double strand break on one side of an origin does not prevent replication by the opposite-side replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in S. pombe, a double strand break on one side of an origin does not prevent replication by the opposite-side replisome (Doksani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Doksani et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "f863689d-e201-4fe7-9bc0-721f0a2123f5",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C12",
+      "claim": "Fork stalling at a site of strong transcription oriented toward the oncoming fork in S. cerevisiae causes a significant impairment in progression of the sister replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, fork stalling at a site of strong transcription oriented toward the oncoming fork in S. cerevisiae was shown to cause a significant impairment in progression of the sister replisome (Brambati et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Brambati et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "bb376737-15c8-4b71-92bb-7c05eb89ee6d",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C13",
+      "claim": "In both yeast and human cells, sister replisomes exhibit highly coordinate velocities while replisomes initiated from different origins do not.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, in both yeast (Natsume and Tanaka, 2010) and human (Conti et al., 2007) cells, sister replisomes exhibit highly coordinate velocities while replisomes initiated from different origins do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies in yeast (Natsume and Tanaka, 2010) and human cells (Conti et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "f1fd52dc-2a2d-4a2e-a0ad-e16c3e6f8a2d",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C14",
+      "claim": "Immobilizing both ends of the templated DNA leads to a disconnect between sister replisome velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "Coordinate sister replisome progression is apparently also dependent on colocalization of the forks, as immobilizing both ends of the templated DNA (forcing sister replisomes to separate) leads to a disconnect between sister replisome velocities (Yardimci et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yardimci et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "dbc45e4b-ad21-4456-8275-8d4a8a618461",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C15",
+      "claim": "Under slow growth conditions, >99% of E. coli cells contained either 0, 1, or 2 SSB-YPet foci per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of resolvable SSB-YPet foci in >3000 slowly growing cells (\u03c4 = 125 min) indicated that >99% of cells contained either 0, 1, or 2 foci per cell (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on quantification of SSB-YPet foci in >3000 cells, as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "7b34651d-34ce-4a47-86a2-2c72f7d48ca2",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C16",
+      "claim": "Under slow growth conditions, the optimal duration of replisome pairing was found to be 20 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Splitting model distributions more closely matched SSB-YPet, with optimal duration of replisome pairing found to be 20 min (D = 0.04; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on modeling analysis comparing theoretical and observed focus distributions, as shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "91aedbb0-16cb-4f8b-9b1b-dbc2e54246c3",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C18",
+      "claim": "Under fast growth conditions, the optimal sister replisome pairing time is between 13 and 21 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, including both splitting and splitting with cousins models, we estimate that that sister replisomes are paired between 13 and 21 min under fast growth conditions and about 20 min under slow growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling analysis comparing theoretical and observed focus distributions under fast growth conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "336cdb88-479a-4baf-9a8a-a54e5d9268bd",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C19",
+      "claim": "Sister replisome pairing intervals correspond to 32\u201351% of the replication period.",
+      "claim_type": "EXPLICIT",
+      "source": "These intervals correspond to 32\u201351% of the replication period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculation from the estimated pairing times and the length of the replication period.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "ecce169e-6bb4-4fe6-b590-e4744f95b242",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C20",
+      "claim": "A sister replisome splitting time of 20 min corresponds to a genetic position about 1 Mb from the origin.",
+      "claim_type": "EXPLICIT",
+      "source": "A sister replisome splitting time of 20 min corresponds to a genetic position about 1 Mb from the origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculation from the splitting time and fork velocity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "2bd1edee-64ee-47e9-9769-36715d737acf",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C21",
+      "claim": "Under slow growth conditions, blocking one replisome at oriC-proximal positions (+0.13 and +0.34 Mb) resulted in a 39 \u00b1 5% reduction in fork progression of the unblocked replisome relative to cells with an oriC-distal roadblock (+1.10 Mb).",
+      "claim_type": "EXPLICIT",
+      "source": "Slope analysis suggests that fork progression was reduced by 39 \u00b1 5% in cells with an oriC-proximal roadblock relative to cells with an oriC-distal roadblock (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on slope analysis of sequencing profiles from roadblocked cells under slow growth conditions, as shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "0fd78c16-44a8-4153-8e2a-d28904569e90",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C22",
+      "claim": "Under fast growth conditions, oriC-proximal blocked cells had on average a 43 \u00b1 7% reduction in fork progression of the unblocked replisome relative to distal blocked cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a similar difference between oriC-proximal and oriC-distal roadblocked cells, under fast growth conditions, with proximal blocked cells having on average a 43 \u00b1 7% reduction in fork progression of the unblocked replisome relative to distal blocked cells (Figure 3D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on slope analysis of sequencing profiles from roadblocked cells under fast growth conditions, as shown in Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "6669f023-102d-4ae9-bca9-a015a0aad4ac",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C23",
+      "claim": "All roadblocks within ~0.6 Mb from oriC resulted in reduced progression of the unblocked replisome, while all roadblocks downstream of ~0.6 Mb had negligible effect on progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional roadblock positions were tested at +0.32, +0.58, and +0.63 Mb from oriC, the results showing that all roadblocks within ~0.6 Mb from oriC resulted in reduced progression of the unblocked replisome, while all roadblocks downstream of ~0.6 Mb had negligible effect on progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequencing data from multiple roadblock positions tested under fast growth conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "2870f08c-3284-4d4b-abc2-3b0cb6bf281e",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C24",
+      "claim": "Reduced fork progression in oriC-proximal blocked cells was observed regardless of whether the blocking array was placed on the left or right chromosome arm.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, reduced fork progression in oriC-proximal blocked cells was observed regardless of whether the blocking array was placed on the left or right chromosome arm (\u22120.35 Mb strain), strongly suggesting that the replication defect was not due to reduced copy number of a specific gene or region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequencing data from roadblocks placed on different chromosome arms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "c882ce28-3d83-4f94-b30e-52a9e784fc7b",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C25",
+      "claim": "Unblocked cells achieved 90% runout by 53 \u00b1 4 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying flow cytometry histograms via KS analysis (Figure 4\u2014figure supplements 1 and 2), we find that unblocked cells achieved 90% runout by 53 \u00b1 4 min (Figure 4B, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on flow cytometry data analyzed by KS analysis, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "08c6c11c-fee7-4f76-b765-c6e1d3180dad",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C26",
+      "claim": "The two oriC-proximal blocked strains did not achieve 90% runout until 70 \u00b1 3 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the two oriC-proximal blocked strains did not achieve 90% runout until 70 \u00b1 3 min (Figure 4B, middle panel), while both oriC-distal blocked strains behaved similarly to unblocked cells, achieving 90% runout by 56 \u00b1 5 min (bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on flow cytometry data analyzed by KS analysis, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "ff851796-405f-4c35-bb60-d7e057bfa588",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C27",
+      "claim": "Both oriC-distal blocked strains achieved 90% runout by 56 \u00b1 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the two oriC-proximal blocked strains did not achieve 90% runout until 70 \u00b1 3 min (Figure 4B, middle panel), while both oriC-distal blocked strains behaved similarly to unblocked cells, achieving 90% runout by 56 \u00b1 5 min (bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on flow cytometry data analyzed by KS analysis, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "16310f98-d651-44e7-956c-c5dba2f2a636",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C28",
+      "claim": "Relative to cells not receiving a roadblock, there was a 32 \u00b1 3% reduction in replication speed when one arm was blocked near the origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to cells not receiving a roadblock, this equates to a 32 \u00b1 3% reduction in replication speed when one arm was blocked near the origin, versus a negligible reduction (3 \u00b1 3%) in replication speed when one arm was blocked \u22650.6 Mb from the origin (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on flow cytometry data analyzed by KS analysis, as shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "48c48ea9-5257-461a-b7e7-3b4e9127e7de",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C29",
+      "claim": "There was a negligible reduction (3 \u00b1 3%) in replication speed when one arm was blocked \u22650.6 Mb from the origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to cells not receiving a roadblock, this equates to a 32 \u00b1 3% reduction in replication speed when one arm was blocked near the origin, versus a negligible reduction (3 \u00b1 3%) in replication speed when one arm was blocked \u22650.6 Mb from the origin (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on flow cytometry data analyzed by KS analysis, as shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "798234a2-1076-4648-96c0-a8cb0627219d",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C30",
+      "claim": "Fork stalling is a frequent event in wild-type cells, with replisome dissociation estimates as high as 4\u20135 times per replication cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Fork stalling is a frequent event in wild-type cells, with replisome dissociation estimates as high as 4\u20135 times per replication cycle (Mangiameli et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mangiameli et al., 2017a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "7d283ab9-f797-4371-934d-2b98ffad91e2",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C31",
+      "claim": "An estimated 5\u201320% of stalled forks experience breakage by shearing or collision from a second fork, forming a collapsed fork.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the majority of stalled forks are restarted quickly via PriA-mediated reloading of the replicative helicase, an estimated 5\u201320% experience breakage by shearing or collision from a second fork, forming a so-called broken or collapsed fork, which requires recombination-mediated strand invasion steps to reestablish a fork structure (Courcelle et al., 2015; Michel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Courcelle et al., 2015 and Michel et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "2568e60c-9707-4c60-8433-51e344588dfe",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C32",
+      "claim": "Cells with no roadblock experienced 4 \u00b1 1% fork stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with no roadblock experienced 4 \u00b1 1% fork stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequencing data from recB\u2212 cells after rifampicin runout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "96e04e34-e90a-403d-9bd7-ccf2403e1887",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C33",
+      "claim": "oriC-proximal roadblocking resulted in 21 \u00b1 3% and 26 \u00b1 2% fork stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying percent replication fork stalling as the fraction of forks on the unblocked chromosome arm in recB\u2212 cells that remained after rifampicin runout (Materials and methods), we found that oriC-proximal roadblocking resulted in 21 \u00b1 3% and 26 \u00b1 2% fork stalling, while oriC-distal roadblocking resulted in only 5 \u00b1 1% fork stalling (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on sequencing data from recB\u2212 cells after rifampicin runout, as shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "2be05520-b197-404c-bed6-5380a3eed21b",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C34",
+      "claim": "oriC-distal roadblocking resulted in only 5 \u00b1 1% fork stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying percent replication fork stalling as the fraction of forks on the unblocked chromosome arm in recB\u2212 cells that remained after rifampicin runout (Materials and methods), we found that oriC-proximal roadblocking resulted in 21 \u00b1 3% and 26 \u00b1 2% fork stalling, while oriC-distal roadblocking resulted in only 5 \u00b1 1% fork stalling (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on sequencing data from recB\u2212 cells after rifampicin runout, as shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "c8bc3e5b-7ba5-402b-9276-7a3c3b46ce92",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C35",
+      "claim": "Holliday junctions are four-way DNA junctions formed at stalled forks by either regression of the fork and subsequent annealing of the newly replicated strands, or by homologous recombination during fork remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "HJs are four-way DNA junctions formed at stalled forks by either regression of the fork and subsequent annealing of the newly replicated strands (Atkinson and McGlynn, 2009), or by homologous recombination during fork remodeling (Michel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Atkinson and McGlynn, 2009 and Michel et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "73644a87-5473-4b55-aba1-3a06b2ce4066",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C36",
+      "claim": "Holliday junctions are hallmarks of stalled forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, HJs are hallmarks of stalled forks, which are effectively detected by RDG (Xia et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Xia et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "51c857dc-1ebf-49fb-8da6-ed920d21e020",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C37",
+      "claim": "Orphaned replisomes experienced 50 \u00b1 9% more stalling than wild-type replisomes in oriC-distal blocked cells (+1.10 Mb).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis indicates that orphaned replisomes experienced 50 \u00b1 9% more stalling that wild-type replisomes in oriC-distal blocked cells (+1.10 Mb) and 116 \u00b1 6% more stalling than wild-type replisomes in oriC-proximal blocked cells (+0.13 and +0.34 Mb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RDG ChIP-seq data from roadblocked cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "0db35e7b-529c-489f-8af3-dbefc38ff732",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C38",
+      "claim": "Orphaned replisomes experienced 116 \u00b1 6% more stalling than wild-type replisomes in oriC-proximal blocked cells (+0.13 and +0.34 Mb).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis indicates that orphaned replisomes experienced 50 \u00b1 9% more stalling that wild-type replisomes in oriC-distal blocked cells (+1.10 Mb) and 116 \u00b1 6% more stalling than wild-type replisomes in oriC-proximal blocked cells (+0.13 and +0.34 Mb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RDG ChIP-seq data from roadblocked cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "051db577-7a63-4617-9a29-b5ce66e345d6",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C39",
+      "claim": "Replisomes orphaned soon after replication initiation stalled significantly more than replisomes orphaned late in the replication period.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, replisomes orphaned soon after replication initiation stalled significantly more than replisomes orphaned late in the replication period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RDG ChIP-seq data from roadblocked cells at different positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "720964c5-f7f0-4ffb-a574-40ac43497f91",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C40",
+      "claim": "About 30 hotspots of RDG binding were identified on the unblocked chromosome arm in oriC-proximal blocked cells, with ~80% of peaks shared among the two strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of the major peaks of RDG binding revealed about 30 hotspots on the unblocked chromosome arm in oriC-proximal blocked cells, with ~80% of peaks shared among the two strains (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of RDG ChIP-seq data, as shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "39f162a6-0985-41ac-985c-12e37be5a7da",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C41",
+      "claim": "RDG peaks were dispersed along the unblocked arm, implying that fork collapse was not restricted to regions that are normally replicated by colocalized sister replisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RDG peaks were dispersed along the unblocked arm, implying that fork collapse was not restricted to regions that are normally replicated by colocalized sister replisomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the distribution of RDG peaks observed in ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "ff472660-86c4-4b54-bc2b-f5c40c53d430",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C42",
+      "claim": "E. coli sister replisomes exhibit inter-dependent behavior during the early stages of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that E. coli sister replisomes exhibit inter-dependent behavior during the early stages of DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding, supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "001c66c2-d82c-45f8-952d-7e893a030bd0",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C43",
+      "claim": "Blocking one replisome within ~0.6 Mb of oriC negatively influenced the sister replisome, resulting in poorer overall fork progression measured by deep sequencing and reduced fork velocity by timed rifampicin runout.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking one replisome within ~0.6 Mb of oriC negatively influenced the sister replisome, resulting in poorer overall fork progression measured by deep sequencing and reduced fork velocity by timed rifampicin runout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding, supported by the sequencing and flow cytometry data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "ade7fafe-c1a4-481d-8382-72de757ca3e0",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C44",
+      "claim": "Prematurely split replisomes were six times less likely to complete replication without the restart protein RecB.",
+      "claim_type": "EXPLICIT",
+      "source": "Such prematurely split replisomes were six times less likely to complete replication without the restart protein RecB and produced twice as many HJs as control cells, indicating increased fork stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding, supported by the sequencing data from recB\u2212 cells and RDG ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "ee776e40-3ea9-4298-b38b-577eaba30a39",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C45",
+      "claim": "Prematurely split replisomes produced twice as many HJs as control cells, indicating increased fork stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Such prematurely split replisomes were six times less likely to complete replication without the restart protein RecB and produced twice as many HJs as control cells, indicating increased fork stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding, supported by the RDG ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "57c05366-47e5-468e-b8dd-8d1d730b4d3f",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C46",
+      "claim": "Fork barriers placed farther than 0.6 Mb from the origin had minimal effect on progression of the unblocked replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "Fork barriers placed farther than 0.6 Mb from the origin had minimal effect on progression of the unblocked replisome, suggesting that sister replisomes transition to a fully independent state part way through replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding, supported by the sequencing and flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "7706f93f-22dc-414d-abe8-cdddf4a78140",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C47",
+      "claim": "Sister replisomes transition to a fully independent state part way through replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Fork barriers placed farther than 0.6 Mb from the origin had minimal effect on progression of the unblocked replisome, suggesting that sister replisomes transition to a fully independent state part way through replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that distal roadblocks have minimal effect on the unblocked replisome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "a2196f26-0212-4290-8302-6b866983ad01",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C48",
+      "claim": "The functional transition point roughly coincides with a physical transition of the replication machinery from colocalized (factory) replisomes to fully separate complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence imaging showed that this functional transition point roughly coincides with a physical transition of the replication machinery from colocalized (factory) replisomes to fully separate complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding, supported by the fluorescence imaging data and the roadblocking experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "2957909b-9aae-45f3-8c08-9009e29885f0",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C49",
+      "claim": "Replication fork progression through approximately the first third of the chromosome is facilitated by a physical association of leftward and rightward sister replisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that replication fork progression through approximately the first third of the chromosome is facilitated by a physical association of leftward and rightward sister replisomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the combined data from fluorescence imaging, sequencing, and flow cytometry experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "9dada794-73f5-4e1d-bae0-46e6e70a3d11",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C50",
+      "claim": "In both yeast and human cells, sister replisomes, but not replisomes initiated from different origins, exhibit similar velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "In both yeast (Natsume and Tanaka, 2010) and human cells (Conti et al., 2007), sister replisomes, but not replisomes initiated from different origins, exhibit similar velocities and blocking one fork with strong head-on transcription inhibits progression of its sister fork (Brambati et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies in yeast (Natsume and Tanaka, 2010) and human cells (Conti et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "1f4f17f2-bc11-4355-9add-a80f04356d89",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C51",
+      "claim": "Blocking one fork with strong head-on transcription inhibits progression of its sister fork.",
+      "claim_type": "EXPLICIT",
+      "source": "In both yeast (Natsume and Tanaka, 2010) and human cells (Conti et al., 2007), sister replisomes, but not replisomes initiated from different origins, exhibit similar velocities and blocking one fork with strong head-on transcription inhibits progression of its sister fork (Brambati et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Brambati et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "2a2400fe-2e85-4aac-b1bf-8087e12d1a6f",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C52",
+      "claim": "The data are not at odds with a previous E. coli study concluding that sister replisomes are independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our data are not at odds with a those of a previous E. coli study concluding that sister replisomes are independent (Breier et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement reconciling the current findings with a previous study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "3b602380-b5b4-43a3-9f51-98828e106281",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C53",
+      "claim": "The previous E. coli study used an ectopic termination site placed ~1 Mb from oriC, in a region that would be expected to have little effect on the unblocked replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "That study used an ectopic termination site to block one replisome; however, the block was placed ~1 Mb from oriC, thus in a region that we would expect to have little effect on the unblocked replisome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why the previous study did not observe interdependence, based on the current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "a75273f9-a58f-4b02-befa-d8104d08dffc",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C54",
+      "claim": "Colocalizing replisomes may facilitate replication by increasing the local concentration of resources at the fork.",
+      "claim_type": "EXPLICIT",
+      "source": "Colocalizing replisomes may facilitate replication simply by increasing the local concentration of resources at the fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the functional advantage of replication factories.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "e147763b-d213-4212-829f-7fd95b1256cd",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C55",
+      "claim": "Most replication components have been shown to localize or interact with the replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these components have been shown to localize or interact with the replisome (Bentchikou et al., 2015; L\u00f3pez de Saro and O'Donnell, 2001; S\u00e1nchez-Romero et al., 2011; Stracy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies showing localization or interaction of replication components with the replisome (Bentchikou et al., 2015; L\u00f3pez de Saro and O'Donnell, 2001; S\u00e1nchez-Romero et al., 2011; Stracy et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "1255968c-5c27-4510-b1a2-c658f88a529a",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C56",
+      "claim": "Conservation of the spatial distribution of replication resources to a defined volume around the replisomes would promote efficient fork progression.",
+      "claim_type": "EXPLICIT",
+      "source": "It is reasonable to assume that conservation of the spatial distribution of replication resources to a defined volume around the replisomes would promote efficient fork progression, especially in a large cell or nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the functional advantage of replication factories.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "d2c777a2-0d02-4523-9141-3cce2ac42986",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C57",
+      "claim": "Factory replication may be important for coordinating the timing of left and right replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, factory replication may be important for coordinating the timing of left and right replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the functional advantage of replication factories.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "4165b241-3181-4666-9d4b-11aabda45782",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C58",
+      "claim": "For organisms with circular chromosomes and a single replication origin, precise convergence of forks at the terminus is critical for chromosome segregation and resolution of chromosome dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "For organisms with circular chromosomes and a single replication origin, precise convergence of forks at the terminus is critical for chromosome segregation and resolution of chromosome dimers (Dimude et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dimude et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "a48fb948-4fa8-44f8-b674-8c2960e4c8a2",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C59",
+      "claim": "Most forks converge within a very narrow termination zone near the dif site, implying that movement of sister replisomes is tightly coordinated.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though many bacteria possess emergency replication fork traps to limit extensive overtravel, most forks converge within a very narrow termination zone near the dif site (Hendrickson and Lawrence, 2007), implying that movement of sister replisomes is tightly coordinated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hendrickson and Lawrence, 2007, and the inference is based on the observation of precise fork convergence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "558cac2a-e1f7-475e-b155-41760584f9db",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C60",
+      "claim": "Coordinating sister replisome travel may provide a mechanism for equal transfer of epigenetic marks such as histones.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is unclear if coordinating termination of sister replisomes would confer any advantage in organisms with linear chromosomes since fork convergence occurs between forks initiated at different origins, coordinating sister replisome travel may provide a mechanism for equal transfer of epigenetic marks such as histones (Yuan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the functional advantage of coordinating sister replisome travel, supported by a citation to Yuan et al., 2019.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "78c49c68-86bd-4f18-bb64-39b11c0fbd81",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C61",
+      "claim": "Factories may be important for fork progression through impediments including bound protein and transcription complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, factories may be important for fork progression through impediments including bound protein and transcription complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the functional advantage of replication factories.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "12d2961b-7f2a-4aaf-8e0b-17ff64570398",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C62",
+      "claim": "If sister replisomes are anchored to a cell structure or to each other via a stable link, the resulting complex might stabilize replisomes against mechanical stress imposed on the replicative helicase as it travels through dense chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "If sister replisomes are anchored to a cell structure such as a nuclear or cell membrane, or to each other via a stable link, the resulting complex might stabilize replisomes against mechanical stress imposed on the replicative helicase as it travels through dense chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the functional advantage of replication factories.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "6deba9c6-4a58-4021-a262-ac2c4777b299",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C63",
+      "claim": "Up to 70% of all transcription in E. coli, including the highly active ribosomal genes, occurs within the ori-proximal ~1/3 of the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this idea, up to 70% of all transcription in E. coli, including the highly active ribosomal genes, occurs within the ori-proximal ~1/3 of the chromosome (Grainger et al., 2006), matching closely the region in which sister replisomes are colocalized (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Grainger et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "d3365db7-8c1b-432a-81ee-c4642840decf",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C64",
+      "claim": "The region where up to 70% of all transcription occurs matches closely the region in which sister replisomes are colocalized.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this idea, up to 70% of all transcription in E. coli, including the highly active ribosomal genes, occurs within the ori-proximal ~1/3 of the chromosome (Grainger et al., 2006), matching closely the region in which sister replisomes are colocalized (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on comparing the transcription data from Grainger et al., 2006 with the replisome colocalization data from Figure 2.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "64e0e5fd-c021-44fe-8198-fde17d29d47c",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C65",
+      "claim": "Early models of replication proposed that bidirectional replisomes exist in an obligate binary configuration in which the two helicases are oriented head-to-head.",
+      "claim_type": "EXPLICIT",
+      "source": "Early models of replication proposed that bidirectional replisomes exist in an obligate binary configuration in which the two helicases are oriented head-to-head (Dingman, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dingman, 1974.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "e4bf4662-9234-46ed-9dd8-8f97d686d641",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C66",
+      "claim": "In the obligate binary configuration, one replisome copies the top strand and one replisome copies the bottom strand.",
+      "claim_type": "EXPLICIT",
+      "source": "In this configuration, one replisome copies the top strand and one replisome copies the bottom strand, and thus the two replisomes are unable to separate without either (1) pulling Watson away from Crick, or (2) completely dissociating and reassociating both replisomes (Bates, 2008) including DnaB helicase, which is thought to remain stably associated throughout replication (Monachino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the obligate binary configuration model, supported by citations to Bates, 2008 and Monachino et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "1d1dbb9e-7cbf-4af1-bffb-b6c5728d7780",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C67",
+      "claim": "DnaB helicase is thought to remain stably associated throughout replication.",
+      "claim_type": "EXPLICIT",
+      "source": "In this configuration, one replisome copies the top strand and one replisome copies the bottom strand, and thus the two replisomes are unable to separate without either (1) pulling Watson away from Crick, or (2) completely dissociating and reassociating both replisomes (Bates, 2008) including DnaB helicase, which is thought to remain stably associated throughout replication (Monachino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Monachino et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "66df549c-ac01-4bd7-bb4a-58a0850043d7",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C68",
+      "claim": "Given that sister replisome splitting occurs naturally in bacteria and under forced conditions in eukaryotes, an obligate factory complex seems unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that sister replisome splitting occurs naturally in bacteria (Bates and Kleckner, 2005; Berkmen and Grossman, 2006; Hiraga et al., 2000; Japaridze et al., 2020; Mangiameli et al., 2017b; Onogi et al., 2002; Reyes-Lamothe et al., 2008) and under forced conditions in eukaryotes (Brambati et al., 2018; Yardimci et al., 2010), such an obligate factory complex seems unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of sister replisome splitting in bacteria and eukaryotes, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "71296d1e-ffee-4610-9643-a81b2e3eb8fc",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C69",
+      "claim": "The eukaryotic Ctf4 protein can dimerize CMG helicase between two replisomes forming a stable factory.",
+      "claim_type": "EXPLICIT",
+      "source": "One such protein is the eukaryotic Ctf4 protein, which can dimerize CMG helicase between two replisomes forming a stable factory (Yuan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yuan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "d6b04f7a-c7d3-4e27-b22d-88faf3f4df28",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C70",
+      "claim": "Ctf4 may direct the lagging strands from both replisomes to a single shared Pol \u03b1 primase, which would coordinate bidirectional synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ctf4 may also direct the lagging strands from both replisomes to a single shared Pol \u03b1 primase, which would coordinate bidirectional synthesis (Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Li et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "8c0c3fc0-7779-42d0-909a-1f41c4d7868b",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C71",
+      "claim": "No analogous tethering protein has been identified in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no analogous tethering protein has been identified in bacteria, there are fork-associated proteins capable of crosslinking, which might link sister replisomes if bound in sufficient quantities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "951abb20-56d0-45c3-be0d-27f06bb91101",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C72",
+      "claim": "Candidate proteins for linking sister replisomes include SeqA in E. coli, YabA in B. subtilis, and GapA in C. crescentus.",
+      "claim_type": "EXPLICIT",
+      "source": "Candidate proteins include one of the highly abundant fork-associated proteins found in bacteria; SeqA in E. coli, YabA in B. subtilis, and GapA in C. crescentus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the properties of these proteins.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "fa1d695b-2e1b-415a-8314-897fbbe30ee7",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C73",
+      "claim": "SeqA, YabA, and GapA can form polymers and some mutants exhibit reduced fork progression and aberrant replisome dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins can form polymers and some mutants exhibit reduced fork progression and aberrant replisome dynamics (Arias-Cartin et al., 2017; Fossum et al., 2007; Joshi et al., 2013; Soufo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies showing that these proteins can form polymers and that mutants exhibit replication defects (Arias-Cartin et al., 2017; Fossum et al., 2007; Joshi et al., 2013; Soufo et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "ac7abc11-a8eb-4f9d-807b-441bf9728384",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C74",
+      "claim": "Sister replisomes are connected indirectly via entanglements of newly replicated DNA exiting the forks.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to protein linker models, we propose that sister replisomes are instead connected indirectly via entanglements of newly replicated DNA exiting the forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal for how sister replisomes are linked.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "66ecb19e-f8e6-43c3-9601-6298867c1add",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C75",
+      "claim": "Topological stress at the fork totals 100 duplex twists per second at an elongation rate of 1000 bp per second.",
+      "claim_type": "EXPLICIT",
+      "source": "Topological stress at the fork, totaling 100 duplex twists per second at an elongation rate of 1000 bp per second, are reduced by topoisomerases and diluted by diffusion (as supercoils) into the surrounding DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the elongation rate and the helical pitch of DNA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "f10b30c3-8ee2-463e-9d09-7d905530153e",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C76",
+      "claim": "Excess topological stress routinely builds to the point that DNA around the fork becomes entwined and highly condensed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, excess stress routinely builds to the point that DNA around the fork becomes entwined and highly condensed (Postow et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Postow et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "0e4990c4-11a4-4097-a6d2-f3c72dc42f83",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C77",
+      "claim": "DNA entanglements might tether sister replisomes together, possibly aided by fork-tracking proteins like SeqA.",
+      "claim_type": "EXPLICIT",
+      "source": "These entanglements might tether sister replisomes together, possibly aided by fork-tracking proteins like SeqA, which form stabilizing crosslinks on catenated DNA (Joshi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal, supported by a citation to Joshi et al., 2013 showing that SeqA forms crosslinks on catenated DNA.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "aa808053-cc40-4695-9532-a1aad84d3779",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C78",
+      "claim": "The E. coli chromosome has a higher supercoil density around the replication origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this model, the E. coli chromosome has a higher supercoil density around the replication origin (Visser et al., 2022), coinciding with the region replicated by colocalized replisomes, and supercoiling is highly symmetrical along left and right chromosome arms (Visser et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Visser et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "b152ced1-1a37-468f-a6a2-df32a53292b8",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C79",
+      "claim": "Supercoiling is highly symmetrical along left and right chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this model, the E. coli chromosome has a higher supercoil density around the replication origin (Visser et al., 2022), coinciding with the region replicated by colocalized replisomes, and supercoiling is highly symmetrical along left and right chromosome arms (Visser et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Visser et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "0c29df0d-46c3-45ee-b34d-c8fa154a07fb",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C80",
+      "claim": "Blockage of yeast replication forks at a site of strong head-on transcription impairs progression of the sister replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been reported that blockage of yeast replication forks at a site of strong head-on transcription (antiparallel with the direction of replication) impairs progression of the sister replisome (Brambati et al., 2018), while blockage with a double strand break does not (Doksani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Brambati et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "89e1a9be-a7b5-41ea-aeec-27ccf4f3a93a",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C81",
+      "claim": "Blockage of yeast replication forks with a double strand break does not impair progression of the sister replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been reported that blockage of yeast replication forks at a site of strong head-on transcription (antiparallel with the direction of replication) impairs progression of the sister replisome (Brambati et al., 2018), while blockage with a double strand break does not (Doksani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Doksani et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "875d6d9b-9c07-48b6-9ab3-e3b50d6eff5e",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "claim_id": "C82",
+      "claim": "The fate of sister replisomes is linked specifically when they encounter topological stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it would seem that the fate of sister replisomes is linked specifically when they encounter topological stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that head-on transcription (which causes topological stress) impairs the sister replisome, while a double strand break does not.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8b9c8aec-2ebb-4933-b2e1-dfa0b43105c7",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sister replisomes in E. coli are colocalized for approximately 13-21 minutes under fast growth and ~20 minutes under slow growth, corresponding to 32-51% of the replication period and ~1 Mb from the origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 collectively demonstrate through fluorescence imaging and computational modeling that sister replisomes are paired for a defined period early in replication. The data from >3000 cells under slow growth (C15) and modeling analysis (C16, C18) provide converging evidence with reasonable dissimilarity indices (D=0.04 for slow growth, D=0.03-0.18 for fast growth), supporting the temporal and spatial estimates of replisome pairing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "6bd20ecd-d219-4632-aaad-0660e2d824c3",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Blocking one replisome within ~0.6 Mb of oriC reduces progression of the unblocked sister replisome by 39-43%, while blocks beyond 0.6 Mb have negligible effect, independent of chromosome arm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 demonstrate through deep sequencing that oriC-proximal roadblocks significantly impair sister replisome progression under both slow and fast growth conditions, with consistent quantitative effects (~40% reduction). The position-dependence (~0.6 Mb threshold) and arm-independence (C24) strengthen the conclusion that this is a genuine replisome-replisome interaction rather than a gene dosage artifact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "f3eac2ee-dbb7-44e7-adf7-210630f45784",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Rifampicin runout assays show that oriC-proximal roadblocks reduce replication velocity by 32\u00b13%, while oriC-distal roadblocks have negligible effect (3\u00b13% reduction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 provide independent validation of the sequencing results using flow cytometry. The 90% runout times (53\u00b14 min for unblocked, 70\u00b13 min for proximal blocked, 56\u00b15 min for distal blocked) are internally consistent and support the position-dependent effect on fork velocity. The use of individual cell measurements addresses potential concerns about population heterogeneity from bulk sequencing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "18ac8e6e-68bf-4740-835a-b438dae4a25d",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prematurely separated replisomes (oriC-proximal roadblocks) show 5-6 fold increased fork stalling in recB- cells compared to controls, while oriC-distal roadblocks show minimal increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 and C44 demonstrate through recB- runout experiments that oriC-proximal roadblocking causes significantly more fork collapse (21-26% stalling) compared to no roadblock (4%) or distal roadblock (5%). The position-dependence matches the replisome pairing window, supporting a functional role for sister replisome association in preventing fork collapse.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "e49c2ff4-f980-4713-94bf-b148dffe8674",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Orphaned replisomes from oriC-proximal roadblocks produce twice as many Holliday junctions as controls, with 116\u00b16% more stalling than wild-type, compared to 50\u00b19% for oriC-distal blocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 and C45 use RDG ChIP-seq to directly measure fork stalling through Holliday junction detection. The quantitative differences between proximal and distal roadblocks (116% vs 50% increase) corroborate the recB- data and provide molecular evidence for increased fork stalling. The dispersed distribution of RDG peaks (C40-C41) suggests the effect is not limited to specific genomic regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "1528779d-a0a5-4e41-81a7-ca89bb05f619",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "E. coli sister replisomes exhibit interdependent behavior during early replication (~first third of chromosome), transitioning to independence after physical separation, with functional and physical transitions coinciding at ~0.6 Mb from oriC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 synthesize the major findings into a coherent model. The convergence of evidence from sequencing (C43), flow cytometry (C28-C29), fork stalling assays (C33-C34, C37-C38), and fluorescence imaging (C15-C20, C48) supports the conclusion that sister replisomes are functionally interdependent when physically associated. The ~0.6 Mb transition point aligns with the ~20 min pairing duration and ~1 Mb genetic distance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "4ced8dce-f1cf-4ce4-82a6-8ffe6b3cd7bc",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Replication factories are observed across all domains of life, but their functional advantages remain unknown despite fork stalling being a major cause of genomic instability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the biological context through citations to prior work. These are well-supported background claims that frame the study's motivation, though C3 represents a knowledge gap that the current work addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "bf7b8e1d-b22f-4240-88cc-ada040c39cc6",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior studies in bacteria show that sister replisomes are initially colocalized but separate partway through replication, contemporaneous with origin segregation and precatenane resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 summarize prior literature on bacterial replisome dynamics. These are well-cited background claims (Lemon and Grossman 1998; Bates and Kleckner 2005; etc.) that establish the foundation for the current study's investigation of replisome splitting timing and functional consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "d4591ae8-f5ed-4a90-bfe8-b14e0d25f344",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In rapidly growing E. coli, the number of replication foci is approximately half the number of forks estimated from flow cytometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C9 is supported by citations to three prior studies (Fossum et al. 2007; Molina and Skarstad 2004; S\u00e1nchez-Romero et al. 2011). This observation motivates the current study's more detailed modeling approach to distinguish between factory and splitting models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "78efbf1b-4fad-45bb-9f89-79cadc61387c",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Individual replisomes can function independently, as blocking one fork does not prevent the other from completing replication in E. coli and S. pombe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 cite prior work (Breier et al. 2005; Possoz et al. 2006; Doksani et al. 2009) showing replisomes can function independently. This establishes an important baseline that the current study refines by showing position-dependent effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "6e0a9dd0-4117-483a-bfb7-6a87cb03e934",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In eukaryotes, sister replisomes exhibit coordinated velocities and blocking one fork can impair the other, with coordination dependent on fork colocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 cite prior eukaryotic studies (Brambati et al. 2018; Natsume and Tanaka 2010; Conti et al. 2007; Yardimci et al. 2010) showing sister replisome interdependence. These establish that the phenomenon being investigated in E. coli has precedent in other systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "f8809a71-ead4-4842-8e97-f46deaec2ee0",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Fork stalling occurs 4-5 times per replication cycle in wild-type cells, with 5-20% of stalled forks experiencing collapse requiring recombination-mediated restart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 cite prior work (Mangiameli et al. 2017a; Courcelle et al. 2015; Michel et al. 2018) establishing baseline fork stalling frequencies. This provides context for interpreting the increased stalling observed with premature replisome separation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "5cd21353-9ef6-468d-9250-9cdf2eb86ac5",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Holliday junctions are four-way DNA junctions formed at stalled forks and serve as hallmarks of fork stalling, detectable by RDG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 cite prior work (Atkinson and McGlynn 2009; Michel et al. 2018; Xia et al. 2016) establishing the molecular basis for using RDG ChIP-seq to detect stalled forks. This validates the methodological approach used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "8a52d3c6-e8b6-44a2-a509-6f94b1eb1629",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The current findings are consistent with prior E. coli work showing replisome independence, as that study used a distal roadblock (~1 Mb from oriC) where interdependence would not be expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 reconcile the current findings with prior work (Breier et al. 2005) by noting the roadblock position difference. This is a reasonable interpretation that resolves an apparent contradiction, though it relies on inference rather than direct experimental comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "9ac87129-2a5b-4b8b-92b3-8126dd908c8f",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Colocalizing replisomes may facilitate replication by increasing local concentration of replication resources, which have been shown to localize with replisomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C56 propose a mechanism for factory function but are explicitly speculative (C54, C56). While C55 cites evidence that replication components localize to replisomes, the causal connection to factory function is not demonstrated. This represents a plausible hypothesis requiring further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "6d77289e-9c0e-48c6-9fb2-1bb43425cd95",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Factory replication may coordinate fork timing to ensure precise convergence at the terminus, which is critical for chromosome segregation in organisms with circular chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C59 propose another speculative mechanism. While C58 cites evidence for the importance of precise termination (Dimude et al. 2016) and C59 cites evidence for narrow termination zones (Hendrickson and Lawrence 2007), the connection to factory replication is inferred rather than demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "fa273263-deed-4b32-809c-48479a39d4c8",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Coordinating sister replisome travel may enable equal transfer of epigenetic marks like histones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 is speculative with a supporting citation (Yuan et al. 2019). However, the relevance to E. coli (which lacks histones) is unclear, and the mechanism is not tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "d0dd5462-0b09-46ff-bef2-1e5be73c8863",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Factories may stabilize replisomes against mechanical stress when traversing impediments, supported by the observation that 70% of E. coli transcription occurs in the ori-proximal region where replisomes are colocalized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C64 propose a mechanism linking factory function to transcription-replication conflicts. While C63 cites evidence for transcription distribution (Grainger et al. 2006) and C64 notes the correlation with replisome pairing, the causal relationship is speculative. The current study does not directly test whether factories specifically help with transcription-replication conflicts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "a67a4474-f840-4eba-922e-202e142897e7",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "An obligate head-to-head replisome configuration is unlikely given that sister replisome splitting occurs naturally in bacteria and under forced conditions in eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 cite historical models (Dingman 1974; Bates 2008; Monachino et al. 2020) and argue against obligate pairing based on observed splitting. The logic is sound and supported by multiple citations showing splitting occurs across systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "8527c506-f231-4287-815e-ca2f65bddb8d",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "In eukaryotes, Ctf4 can dimerize CMG helicases to form stable factories and may coordinate lagging strand synthesis through shared Pol \u03b1 primase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 cite prior work (Yuan et al. 2019; Li et al. 2020) on eukaryotic factory mechanisms. These are well-supported background claims that provide context for potential bacterial mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "a169c784-6d1b-4177-89e0-de1524069ff5",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "No bacterial tethering protein analogous to Ctf4 has been identified, but candidate proteins (SeqA, YabA, GapA) can form polymers and show replication defects when mutated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 states current knowledge, C72 is speculative, and C73 cites evidence for polymer formation and mutant phenotypes (Arias-Cartin et al. 2017; Fossum et al. 2007; Joshi et al. 2013; Soufo et al. 2008). However, the connection to sister replisome tethering is not demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "32e02996-e2be-44cc-9f88-12185e9346ae",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Sister replisomes may be connected via DNA entanglements from topological stress, possibly stabilized by proteins like SeqA that crosslink catenated DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 propose an alternative tethering mechanism. C75 is a calculation, C76 cites evidence for DNA condensation (Postow et al. 2001), and C77 cites SeqA's ability to crosslink catenated DNA (Joshi et al. 2013). However, the model is speculative and not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "8531a773-7c1a-4021-962c-77d6e3a8dd91",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The E. coli chromosome has higher supercoil density around the origin with symmetrical supercoiling along chromosome arms, coinciding with the replisome pairing region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 cite recent work (Visser et al. 2022) showing supercoil distribution patterns that correlate with the replisome pairing region identified in the current study. This provides supporting evidence for the DNA entanglement model, though causality is not established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    },
+    {
+      "id": "7c874bf4-656a-49aa-af8b-9e2ec12c19be",
+      "content_id": "3ed17d00-427a-49eb-a1f4-21fa3be44d41",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "In yeast, head-on transcription (causing topological stress) impairs sister replisome progression while double-strand breaks do not, suggesting sister replisomes are linked specifically during topological stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 cite prior work (Brambati et al. 2018; Doksani et al. 2009) and draw an inference about the specificity of sister replisome coupling to topological stress. The inference is reasonable given the differential effects of the two types of blocks, though C82 represents interpretation rather than direct demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:43.295951Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dbc45e4b-ad21-4456-8275-8d4a8a618461",
+      "result_id": "8b9c8aec-2ebb-4933-b2e1-dfa0b43105c7"
+    },
+    {
+      "claim_id": "7b34651d-34ce-4a47-86a2-2c72f7d48ca2",
+      "result_id": "8b9c8aec-2ebb-4933-b2e1-dfa0b43105c7"
+    },
+    {
+      "claim_id": "91aedbb0-16cb-4f8b-9b1b-dbc2e54246c3",
+      "result_id": "8b9c8aec-2ebb-4933-b2e1-dfa0b43105c7"
+    },
+    {
+      "claim_id": "336cdb88-479a-4baf-9a8a-a54e5d9268bd",
+      "result_id": "8b9c8aec-2ebb-4933-b2e1-dfa0b43105c7"
+    },
+    {
+      "claim_id": "ecce169e-6bb4-4fe6-b590-e4744f95b242",
+      "result_id": "8b9c8aec-2ebb-4933-b2e1-dfa0b43105c7"
+    },
+    {
+      "claim_id": "2bd1edee-64ee-47e9-9769-36715d737acf",
+      "result_id": "6bd20ecd-d219-4632-aaad-0660e2d824c3"
+    },
+    {
+      "claim_id": "0fd78c16-44a8-4153-8e2a-d28904569e90",
+      "result_id": "6bd20ecd-d219-4632-aaad-0660e2d824c3"
+    },
+    {
+      "claim_id": "6669f023-102d-4ae9-bca9-a015a0aad4ac",
+      "result_id": "6bd20ecd-d219-4632-aaad-0660e2d824c3"
+    },
+    {
+      "claim_id": "2870f08c-3284-4d4b-abc2-3b0cb6bf281e",
+      "result_id": "6bd20ecd-d219-4632-aaad-0660e2d824c3"
+    },
+    {
+      "claim_id": "c882ce28-3d83-4f94-b30e-52a9e784fc7b",
+      "result_id": "f3eac2ee-dbb7-44e7-adf7-210630f45784"
+    },
+    {
+      "claim_id": "08c6c11c-fee7-4f76-b765-c6e1d3180dad",
+      "result_id": "f3eac2ee-dbb7-44e7-adf7-210630f45784"
+    },
+    {
+      "claim_id": "ff851796-405f-4c35-bb60-d7e057bfa588",
+      "result_id": "f3eac2ee-dbb7-44e7-adf7-210630f45784"
+    },
+    {
+      "claim_id": "16310f98-d651-44e7-956c-c5dba2f2a636",
+      "result_id": "f3eac2ee-dbb7-44e7-adf7-210630f45784"
+    },
+    {
+      "claim_id": "48c48ea9-5257-461a-b7e7-3b4e9127e7de",
+      "result_id": "f3eac2ee-dbb7-44e7-adf7-210630f45784"
+    },
+    {
+      "claim_id": "2568e60c-9707-4c60-8433-51e344588dfe",
+      "result_id": "18ac8e6e-68bf-4740-835a-b438dae4a25d"
+    },
+    {
+      "claim_id": "96e04e34-e90a-403d-9bd7-ccf2403e1887",
+      "result_id": "18ac8e6e-68bf-4740-835a-b438dae4a25d"
+    },
+    {
+      "claim_id": "2be05520-b197-404c-bed6-5380a3eed21b",
+      "result_id": "18ac8e6e-68bf-4740-835a-b438dae4a25d"
+    },
+    {
+      "claim_id": "ade7fafe-c1a4-481d-8382-72de757ca3e0",
+      "result_id": "18ac8e6e-68bf-4740-835a-b438dae4a25d"
+    },
+    {
+      "claim_id": "51c857dc-1ebf-49fb-8da6-ed920d21e020",
+      "result_id": "e49c2ff4-f980-4713-94bf-b148dffe8674"
+    },
+    {
+      "claim_id": "0db35e7b-529c-489f-8af3-dbefc38ff732",
+      "result_id": "e49c2ff4-f980-4713-94bf-b148dffe8674"
+    },
+    {
+      "claim_id": "051db577-7a63-4617-9a29-b5ce66e345d6",
+      "result_id": "e49c2ff4-f980-4713-94bf-b148dffe8674"
+    },
+    {
+      "claim_id": "720964c5-f7f0-4ffb-a574-40ac43497f91",
+      "result_id": "e49c2ff4-f980-4713-94bf-b148dffe8674"
+    },
+    {
+      "claim_id": "39f162a6-0985-41ac-985c-12e37be5a7da",
+      "result_id": "e49c2ff4-f980-4713-94bf-b148dffe8674"
+    },
+    {
+      "claim_id": "ee776e40-3ea9-4298-b38b-577eaba30a39",
+      "result_id": "e49c2ff4-f980-4713-94bf-b148dffe8674"
+    },
+    {
+      "claim_id": "ff472660-86c4-4b54-bc2b-f5c40c53d430",
+      "result_id": "1528779d-a0a5-4e41-81a7-ca89bb05f619"
+    },
+    {
+      "claim_id": "001c66c2-d82c-45f8-952d-7e893a030bd0",
+      "result_id": "1528779d-a0a5-4e41-81a7-ca89bb05f619"
+    },
+    {
+      "claim_id": "57c05366-47e5-468e-b8dd-8d1d730b4d3f",
+      "result_id": "1528779d-a0a5-4e41-81a7-ca89bb05f619"
+    },
+    {
+      "claim_id": "7706f93f-22dc-414d-abe8-cdddf4a78140",
+      "result_id": "1528779d-a0a5-4e41-81a7-ca89bb05f619"
+    },
+    {
+      "claim_id": "a2196f26-0212-4290-8302-6b866983ad01",
+      "result_id": "1528779d-a0a5-4e41-81a7-ca89bb05f619"
+    },
+    {
+      "claim_id": "2957909b-9aae-45f3-8c08-9009e29885f0",
+      "result_id": "1528779d-a0a5-4e41-81a7-ca89bb05f619"
+    },
+    {
+      "claim_id": "fe6b59d4-5fd1-43d2-a992-ca0491e8dca9",
+      "result_id": "4ced8dce-f1cf-4ce4-82a6-8ffe6b3cd7bc"
+    },
+    {
+      "claim_id": "fbd35462-fb91-4edc-a687-87ad9413681b",
+      "result_id": "4ced8dce-f1cf-4ce4-82a6-8ffe6b3cd7bc"
+    },
+    {
+      "claim_id": "b9e02ed7-f52d-4b3e-aa1c-71162591982b",
+      "result_id": "4ced8dce-f1cf-4ce4-82a6-8ffe6b3cd7bc"
+    },
+    {
+      "claim_id": "0db37aa9-5e75-4ef3-8611-f6a587d7bd07",
+      "result_id": "bf7b8e1d-b22f-4240-88cc-ada040c39cc6"
+    },
+    {
+      "claim_id": "caca93ec-7079-4ad7-88fd-581ae0e7ed8c",
+      "result_id": "bf7b8e1d-b22f-4240-88cc-ada040c39cc6"
+    },
+    {
+      "claim_id": "a7e7c9a5-77be-40e2-ba24-13812d4b9ba3",
+      "result_id": "bf7b8e1d-b22f-4240-88cc-ada040c39cc6"
+    },
+    {
+      "claim_id": "3771760a-c4c1-46f8-8c00-b9f5fd1315d6",
+      "result_id": "bf7b8e1d-b22f-4240-88cc-ada040c39cc6"
+    },
+    {
+      "claim_id": "73a1275a-f423-405c-bb99-3cb6f66c87c3",
+      "result_id": "bf7b8e1d-b22f-4240-88cc-ada040c39cc6"
+    },
+    {
+      "claim_id": "206a3c72-f4d5-41fb-8b81-089685bee85a",
+      "result_id": "d4591ae8-f5ed-4a90-bfe8-b14e0d25f344"
+    },
+    {
+      "claim_id": "c034baef-2d83-41cf-a71a-e9baedd8d496",
+      "result_id": "78efbf1b-4fad-45bb-9f89-79cadc61387c"
+    },
+    {
+      "claim_id": "530c50ff-2391-4395-851f-80823ce5b5eb",
+      "result_id": "78efbf1b-4fad-45bb-9f89-79cadc61387c"
+    },
+    {
+      "claim_id": "f863689d-e201-4fe7-9bc0-721f0a2123f5",
+      "result_id": "6e0a9dd0-4117-483a-bfb7-6a87cb03e934"
+    },
+    {
+      "claim_id": "bb376737-15c8-4b71-92bb-7c05eb89ee6d",
+      "result_id": "6e0a9dd0-4117-483a-bfb7-6a87cb03e934"
+    },
+    {
+      "claim_id": "f1fd52dc-2a2d-4a2e-a0ad-e16c3e6f8a2d",
+      "result_id": "6e0a9dd0-4117-483a-bfb7-6a87cb03e934"
+    },
+    {
+      "claim_id": "798234a2-1076-4648-96c0-a8cb0627219d",
+      "result_id": "f8809a71-ead4-4842-8e97-f46deaec2ee0"
+    },
+    {
+      "claim_id": "7d283ab9-f797-4371-934d-2b98ffad91e2",
+      "result_id": "f8809a71-ead4-4842-8e97-f46deaec2ee0"
+    },
+    {
+      "claim_id": "c8bc3e5b-7ba5-402b-9276-7a3c3b46ce92",
+      "result_id": "5cd21353-9ef6-468d-9250-9cdf2eb86ac5"
+    },
+    {
+      "claim_id": "73644a87-5473-4b55-aba1-3a06b2ce4066",
+      "result_id": "5cd21353-9ef6-468d-9250-9cdf2eb86ac5"
+    },
+    {
+      "claim_id": "9dada794-73f5-4e1d-bae0-46e6e70a3d11",
+      "result_id": "8a52d3c6-e8b6-44a2-a509-6f94b1eb1629"
+    },
+    {
+      "claim_id": "1f4f17f2-bc11-4355-9add-a80f04356d89",
+      "result_id": "8a52d3c6-e8b6-44a2-a509-6f94b1eb1629"
+    },
+    {
+      "claim_id": "2a2400fe-2e85-4aac-b1bf-8087e12d1a6f",
+      "result_id": "8a52d3c6-e8b6-44a2-a509-6f94b1eb1629"
+    },
+    {
+      "claim_id": "3b602380-b5b4-43a3-9f51-98828e106281",
+      "result_id": "8a52d3c6-e8b6-44a2-a509-6f94b1eb1629"
+    },
+    {
+      "claim_id": "a75273f9-a58f-4b02-befa-d8104d08dffc",
+      "result_id": "9ac87129-2a5b-4b8b-92b3-8126dd908c8f"
+    },
+    {
+      "claim_id": "e147763b-d213-4212-829f-7fd95b1256cd",
+      "result_id": "9ac87129-2a5b-4b8b-92b3-8126dd908c8f"
+    },
+    {
+      "claim_id": "1255968c-5c27-4510-b1a2-c658f88a529a",
+      "result_id": "9ac87129-2a5b-4b8b-92b3-8126dd908c8f"
+    },
+    {
+      "claim_id": "d2c777a2-0d02-4523-9141-3cce2ac42986",
+      "result_id": "6d77289e-9c0e-48c6-9fb2-1bb43425cd95"
+    },
+    {
+      "claim_id": "4165b241-3181-4666-9d4b-11aabda45782",
+      "result_id": "6d77289e-9c0e-48c6-9fb2-1bb43425cd95"
+    },
+    {
+      "claim_id": "a48fb948-4fa8-44f8-b674-8c2960e4c8a2",
+      "result_id": "6d77289e-9c0e-48c6-9fb2-1bb43425cd95"
+    },
+    {
+      "claim_id": "558cac2a-e1f7-475e-b155-41760584f9db",
+      "result_id": "fa273263-deed-4b32-809c-48479a39d4c8"
+    },
+    {
+      "claim_id": "78c49c68-86bd-4f18-bb64-39b11c0fbd81",
+      "result_id": "d0dd5462-0b09-46ff-bef2-1e5be73c8863"
+    },
+    {
+      "claim_id": "12d2961b-7f2a-4aaf-8e0b-17ff64570398",
+      "result_id": "d0dd5462-0b09-46ff-bef2-1e5be73c8863"
+    },
+    {
+      "claim_id": "6deba9c6-4a58-4021-a262-ac2c4777b299",
+      "result_id": "d0dd5462-0b09-46ff-bef2-1e5be73c8863"
+    },
+    {
+      "claim_id": "d3365db7-8c1b-432a-81ee-c4642840decf",
+      "result_id": "d0dd5462-0b09-46ff-bef2-1e5be73c8863"
+    },
+    {
+      "claim_id": "64e0e5fd-c021-44fe-8198-fde17d29d47c",
+      "result_id": "a67a4474-f840-4eba-922e-202e142897e7"
+    },
+    {
+      "claim_id": "e4bf4662-9234-46ed-9dd8-8f97d686d641",
+      "result_id": "a67a4474-f840-4eba-922e-202e142897e7"
+    },
+    {
+      "claim_id": "1d1dbb9e-7cbf-4af1-bffb-b6c5728d7780",
+      "result_id": "a67a4474-f840-4eba-922e-202e142897e7"
+    },
+    {
+      "claim_id": "66df549c-ac01-4bd7-bb4a-58a0850043d7",
+      "result_id": "a67a4474-f840-4eba-922e-202e142897e7"
+    },
+    {
+      "claim_id": "71296d1e-ffee-4610-9643-a81b2e3eb8fc",
+      "result_id": "8527c506-f231-4287-815e-ca2f65bddb8d"
+    },
+    {
+      "claim_id": "d6b04f7a-c7d3-4e27-b22d-88faf3f4df28",
+      "result_id": "8527c506-f231-4287-815e-ca2f65bddb8d"
+    },
+    {
+      "claim_id": "8c0c3fc0-7779-42d0-909a-1f41c4d7868b",
+      "result_id": "a169c784-6d1b-4177-89e0-de1524069ff5"
+    },
+    {
+      "claim_id": "951abb20-56d0-45c3-be0d-27f06bb91101",
+      "result_id": "a169c784-6d1b-4177-89e0-de1524069ff5"
+    },
+    {
+      "claim_id": "fa1d695b-2e1b-415a-8314-897fbbe30ee7",
+      "result_id": "a169c784-6d1b-4177-89e0-de1524069ff5"
+    },
+    {
+      "claim_id": "ac7abc11-a8eb-4f9d-807b-441bf9728384",
+      "result_id": "32e02996-e2be-44cc-9f88-12185e9346ae"
+    },
+    {
+      "claim_id": "66ecb19e-f8e6-43c3-9601-6298867c1add",
+      "result_id": "32e02996-e2be-44cc-9f88-12185e9346ae"
+    },
+    {
+      "claim_id": "f10b30c3-8ee2-463e-9d09-7d905530153e",
+      "result_id": "32e02996-e2be-44cc-9f88-12185e9346ae"
+    },
+    {
+      "claim_id": "0e4990c4-11a4-4097-a6d2-f3c72dc42f83",
+      "result_id": "32e02996-e2be-44cc-9f88-12185e9346ae"
+    },
+    {
+      "claim_id": "aa808053-cc40-4695-9532-a1aad84d3779",
+      "result_id": "8531a773-7c1a-4021-962c-77d6e3a8dd91"
+    },
+    {
+      "claim_id": "b152ced1-1a37-468f-a6a2-df32a53292b8",
+      "result_id": "8531a773-7c1a-4021-962c-77d6e3a8dd91"
+    },
+    {
+      "claim_id": "0c29df0d-46c3-45ee-b34d-c8fa154a07fb",
+      "result_id": "7c874bf4-656a-49aa-af8b-9e2ec12c19be"
+    },
+    {
+      "claim_id": "89e1a9be-a7b5-41ea-aeec-27ccf4f3a93a",
+      "result_id": "7c874bf4-656a-49aa-af8b-9e2ec12c19be"
+    },
+    {
+      "claim_id": "875d6d9b-9c07-48b6-9ab3-e3b50d6eff5e",
+      "result_id": "7c874bf4-656a-49aa-af8b-9e2ec12c19be"
+    }
+  ],
+  "comparisons": []
+}

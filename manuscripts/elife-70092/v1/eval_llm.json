@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes the motivation for automated sleep staging by documenting limitations of current manual scoring practices. Manual sleep scoring is time-consuming (up to 2 hours per night), suffers from low interscorer agreement (~83%), and low intrascorer agreement (~90%), creating a bottleneck as demand for sleep measurement increases exponentially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9, C13-C15 are well-supported by citations to published literature (C14, C15) and established knowledge in the field (C2, C3, C13). The claims about interscorer and intrascorer variability are directly cited to peer-reviewed studies, providing strong evidence for the motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The YASA algorithm was trained on 31,000+ hours of PSG data from 3,163 nights across seven heterogeneous datasets and tested on 585 nights from six datasets. The training set included diverse populations with varying ages, races, BMI, and sleep apnea severity (AHI range 0-125, 29% with moderate sleep apnea). Training and testing sets were well-matched demographically with only small differences in age and BMI (effect sizes <0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-C30 are directly supported by descriptive statistics presented in the manuscript and Table 1. The data clearly document the size, composition, and heterogeneity of the training and testing datasets. Statistical comparisons between training and testing sets are appropriately conducted with effect sizes reported, demonstrating adequate matching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A second independent testing set (DOD) consisted of 75 nights from healthy adults (n=25) and OSA patients (n=50), with each night scored by five independent expert scorers to enable consensus-based validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by citations to the DOD dataset (Guillot et al., 2020) and clear description of the data composition. The use of five independent scorers for consensus scoring is well-documented and represents a rigorous validation approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "On the primary NSRR testing set (585 nights), YASA achieved median accuracy of 87.46% with Cohen's kappa of 0.819 and Matthews correlation coefficient of 0.821. Accuracy varied by dataset (83.99-90.44%) and showed strong correlation with algorithm confidence (r=0.76, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are directly supported by validation results presented in Figure 1 and the text. Multiple performance metrics are reported (accuracy, kappa, MCC), providing robust assessment. The correlation between confidence and accuracy is statistically significant and visualized in Figure 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Stage-specific performance showed excellent sensitivity for N2 (85.7%), N3 (83.2%), REM (>85%), and wake (>85%), but moderate performance for N1 (45.4%). The most common errors were N1\u2192N2 (27.5%) and N3\u2192N2 (16.1%), with few blatant errors like N3\u2192REM (0.2%). When incorrect, the second-choice prediction was correct 76.3% of the time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by confusion matrix data in Figure 1C and validation results. The poor N1 performance is appropriately contextualized with citation (C46) showing human scorers also struggle with N1 (<45% agreement). The error patterns are clearly documented and consistent with known challenges in sleep staging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Algorithm accuracy was significantly higher during stable epochs (94.08\u00b15.61%) versus transition epochs (69.15\u00b17.23%, p<0.001) and in high-confidence epochs (\u226580% confidence: 95.90\u00b13.70%) versus low-confidence epochs (62.91\u00b16.6%, p<0.001). Confidence varied by stage, highest for wake (92.7%) and lowest for N1 (63.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by statistical analyses with appropriate p-values and effect sizes. The findings are logical given that transitions are inherently ambiguous and N1 is difficult to score. Figure 2F visualizes the transition effect, and Figure 1\u2014figure supplement 2 shows confidence distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "YASA showed negligible systematic bias, with similar proportions of each sleep stage between human and automatic scoring (all Cohen's d<0.11) and consistent stage transition percentages (11.12\u00b15.19% vs 11.46\u00b14.11%, Cohen's d=0.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by data in Figure 1D and statistical comparisons with appropriate effect size measures. The small effect sizes demonstrate lack of systematic bias, which is important for clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "On the DOD-Healthy dataset (n=25), YASA achieved 86.6% accuracy (kappa=80.1%) against consensus scoring, performing comparably to two deep-learning algorithms (Stephansen 2018, Perslev 2021) and most human scorers. The Perslev algorithm showed significantly higher F1-scores for N1, REM, and wake, while YASA was not significantly different for N2 and N3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by Table 2 with appropriate statistical testing (pairwise t-tests with Holm correction). The direct comparison to existing algorithms on the same dataset is a strength, though YASA's lower performance on some stages (C60) is honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "On the DOD-Obstructive dataset (OSA patients, n=50), YASA achieved 84.3% accuracy (kappa=76.5%), performing comparably to the Stephansen algorithm and most human scorers but significantly worse than the Perslev algorithm (p=0.009). YASA outperformed others for N3 sleep but underperformed Perslev for N1, REM, and wake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by Table 3 with appropriate statistical comparisons. The lower performance on OSA patients versus healthy adults is acknowledged and discussed. The mixed results (better for N3, worse for N1/REM/wake) are honestly reported with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "On the combined DOD dataset (n=75), YASA accuracy was higher during stable epochs (91.2\u00b17.8%) versus transitions (68.95\u00b17.7%, p<0.001). Human consensus was 4\u00d7 more likely during stable/high-confidence epochs, and YASA confidence correlated with human consensus (r=0.561, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by statistical analyses with appropriate p-values. The correlation between algorithm confidence and human consensus (C70) validates the confidence metric as meaningful. The findings are internally consistent and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Moderator analyses showed YASA accuracy was negatively correlated with age (r=-0.128, p=0.002) and AHI (r=-0.29, p<0.001), but not with BMI (r=-0.001, p=0.97) or sex (p=0.103). Race was a significant predictor (p=0.021), with lower accuracy in Hispanic versus White individuals (p=0.032), though this may reflect sample size imbalance. AHI correlated with stage transitions (r=0.427, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are supported by statistical analyses shown in Figure 2 with appropriate tests (correlations, t-tests, ANOVA). The authors appropriately note the race effect may be confounded by sample size (n=40 Hispanic vs n=342 White). The correlation between AHI and transitions (C76) provides mechanistic insight into the AHI effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Random forest analysis showed that sleep fragmentation markers (N1 percentage and stage transitions) accounted for 40% of accuracy variance, while demographic factors (age, sex, race) and medical diagnoses accounted for only ~10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by random forest analysis reported in Supplementary file 3b. This analysis appropriately identifies the most important predictors of accuracy and contextualizes the demographic effects as relatively minor compared to sleep architecture features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Feature importance analysis revealed EEG as most important (11/20 top features), followed by EOG (7/20) and EMG (1/20). The single most important feature was EOG absolute power. Using only EEG achieved 85.12% accuracy; adding EOG increased accuracy to 86.92%, only ~0.5% below the full model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are supported by SHAP analysis shown in Figure 1\u2014figure supplement 7 and ablation experiments. The feature importance rankings are clearly documented, and the minimal contribution of EMG (C86) is empirically demonstrated. The claim about EEG being most important (C84) is a reasonable inference from the feature counts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "YASA is implemented as an open-source Python package with extensive functionality beyond sleep staging (spindle/slow-wave detection, artifact rejection, spectral analysis). The algorithm is computationally efficient (<5s per night on a basic laptop), uses interpretable features rather than black-box deep learning, processes data locally (no cloud upload), and is free under BSD-3 license. The software has been downloaded thousands of times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C107-C111 are supported by documentation and implementation details. The processing speed (C90) is stated but not rigorously benchmarked. The ease-of-use claims (C107) are supported by code examples in Figure 3\u2014figure supplements 1-2. The download statistics (C111) are stated but not independently verifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Summary of performance: YASA achieved 87.5% accuracy on NSRR data (>90% on stable epochs), matching human interrater agreement. Performance was comparable to existing algorithms on healthy adults but 2.4% worse than Perslev on OSA patients. Accuracy was unaffected by sex/BMI but sensitive to age and sleep apnea severity, consistent with human scoring patterns. Most errors occurred at transitions and in N1 sleep, matching human error patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C104 are summary statements supported by the validation results (C36-C70) and moderator analyses (C71-C78). The comparisons to human performance are appropriately cited (C97, C102, C104). The acknowledgment of lower performance on OSA patients (C95) demonstrates honest reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Limitations: YASA performed significantly worse than Perslev (2021) on OSA patients, potentially because Perslev used multiple EEG channels and bilateral EOGs while YASA used single EEG/EOG/EMG. The Perslev algorithm doesn't use EMG, consistent with YASA's finding of negligible EMG benefit. Future improvements could include additional EEG channels and/or bilateral EOGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 are supported by the comparative results (Tables 2-3) and honest discussion of limitations. The speculation about channel differences (C115) is reasonable but unproven. The observation about EMG (C116-C117) is supported by both algorithms' findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Additional limitations: The algorithm was only tested on full-night recordings (performance on naps unknown), operates at 30-second resolution (not higher temporal resolution), cannot detect sleep disorder markers (apnea, leg movements), and is tailored to human scalp data (not intracranial or animal data).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 are honestly stated limitations. The 30-second resolution limitation (C120-C122) is appropriately contextualized as matching current gold standards and training data. The lack of clinical disorder detection (C123) is a significant limitation for clinical use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Advantages over existing tools: YASA is orders of magnitude faster than Stephansen (10-20s vs 10-20min), easily modifiable with basic Python knowledge, and can be trained on a basic laptop in a couple hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C127 are stated but not rigorously validated. The speed comparison (C125) lacks detailed benchmarking methodology. The ease of modification (C126) and training time (C127) are subjective claims without empirical validation. These advantages are plausible given the simpler architecture but would benefit from systematic comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Methods: PSG signals (central EEG, left EOG, chin EMG) were downsampled to 100Hz, bandpass-filtered (0.4-30Hz), and processed in 30-second epochs without artifact removal. Features were extracted and classified using LightGBM with optimized hyperparameters. Performance was evaluated using standardized guidelines with multiple metrics (accuracy, kappa, MCC, F1-scores).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 are clearly documented in Materials and Methods with appropriate citations (C134: Ke et al. 2017; C135: Menghini et al. 2021). The preprocessing steps are standard and well-described. The choice to not apply artifact removal (C132) is notable and may affect real-world performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Consensus scoring methodology: Each DOD night was scored by five independent experts, with consensus determined by majority vote (most reliable scorer used for ties). This approach reduces bias from low interscorer agreement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 are supported by citations to established consensus scoring methods (Guillot et al. 2020, Perslev et al. 2021, Stephansen et al. 2018). The methodology is clearly described and represents best practice for algorithm validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work context: Recent sleep staging algorithms include Sun et al. (2017, kappa=0.68, n=2000), Z3Score (89.8-72.1% accuracy, n=~1700), Stanford-stage (87% accuracy, n=~3000), SeqSleepNet (87.1% accuracy, n=200), and U-Sleep (F1=0.79-0.76, n=15,660).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 accurately summarize prior work with appropriate citations. These provide important context for evaluating YASA's performance and training set size. The heterogeneity in reported metrics across studies highlights the value of YASA's direct comparisons.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors developed a minimal model for native (unmanipulated) k-fiber shapes using Euler-Bernoulli beam theory. They found that forces at k-fiber ends (Fx, Fy) and a moment at the pole (Mp), but not at the kinetochore (Mk = 0), are necessary and sufficient to recapitulate native k-fiber shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 collectively demonstrate that the minimal native k-fiber model with end forces and pole moment accurately captures experimental k-fiber shapes. The model fitting results (C33-C34) show lowest RMSE and accurate peak position predictions, with statistical validation (Figure 2e-g). The theoretical framework (C98-C100) is well-established beam theory appropriately applied to this biological system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C78"
+    ],
+    "result": "K-fiber shape diversity across different spindle angles is primarily explained by k-fiber length rather than differential force generation. Outer k-fibers have larger deflections due to their greater length, not due to larger forces or moments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 show that while outer k-fibers have larger deflections, no detectable trend in force parameters exists across angles (Figure 2\u2014figure supplement 3d-e). The model demonstrates that length alone is sufficient to explain deflection differences (C38, Figure 2\u2014figure supplement 3g), providing a parsimonious explanation for shape diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C68",
+      "C69"
+    ],
+    "result": "End-localized forces and moments alone are insufficient to recapitulate manipulated k-fiber shapes. Models with only end forces (Mk=0) or with a kinetochore moment (Mk\u22600) fail to capture key features of manipulated k-fibers, particularly the position and extent of negative curvature near kinetochores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 demonstrate systematic model failure with quantitative metrics: 10-fold higher RMSE (C39), inability to capture negative curvature minima positions spanning 0.5-3 \u03bcm (C42), and failure to preserve orientation over the observed 3 \u03bcm length scale (Figure 3h-i). This establishes the necessity of lateral anchorage beyond end forces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Non-uniform k-fiber flexural rigidity due to varying microtubule numbers cannot explain the observed negative curvature response. To shift curvature minima 3 \u03bcm from kinetochores would require twice as many microtubules near kinetochores, inconsistent with structural studies showing only 20-30% more microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 systematically test whether structural heterogeneity can explain observations. The modeling (Figure 3\u2014figure supplement 2c-d) quantitatively shows the required 2-fold increase in microtubule number is inconsistent with cited EM studies (C43), ruling out this alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C70"
+    ],
+    "result": "Local anchorage with \u03c3=1-3 \u03bcm near kinetochores is required to capture spatially distinct mechanics observed in wildtype manipulations. Global anchorage along the entire k-fiber length produces negative curvature on both sides of the microneedle, confirmed experimentally in FCPT-treated spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 combine computational predictions with experimental validation. Simulations show local anchorage (\u03c3=2 \u03bcm) produces localized negative curvature only near kinetochores (C50, Figure 4d), while global anchorage (\u03c3=10 \u03bcm) produces bilateral negative curvature (C52, Figure 4e). FCPT experiments (C53, m=10 cells, n=13 k-fibers) confirm the global anchorage prediction, validating the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PRC1's mechanical engagement is spatially regulated and concentrated in the spindle center. An equilibrium binding model accounting for PRC1's preferential binding to antiparallel microtubules predicts actively engaged PRC1 (c2) is predominantly in the spindle center, consistent with local anchorage requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 establish PRC1's role from prior work. Claims C55-C57 use biophysical properties (30-fold lower affinity for parallel vs antiparallel microtubules, C55) and spindle architecture (parallel microtubules at poles, C56) to predict spatial engagement patterns (C57, Figure 4i). The model appropriately distinguishes between total abundance and mechanical engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C71",
+      "C72"
+    ],
+    "result": "A minimal model with an effective point crosslinking force (Fc) within 3 \u03bcm of kinetochores, together with end forces and pole moment, is necessary and sufficient to recapitulate manipulated k-fiber shapes. The position of negative curvature minimum quantitatively predicts the anchorage length scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 validate the coarse-graining approach (Figure 5\u2014figure supplement 1). Claims C60-C61 show consistent inference of \u03bbc within 3 \u03bcm across all k-fibers (m=14 cells, n=15 k-fibers, Figure 5g). The strong correlation between curvature minimum position and \u03bbc (C62, R\u00b2=0.85, p=1e-6, Figure 5h) provides a quantitative predictor. Model fits show significantly lower RMSE than previous models (Figure 5c) and accurately capture all geometric features (Figure 5d-f).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The position of the negative curvature minimum serves as a quantitative predictor of the local anchorage length scale, with a strong correlation (R\u00b2=0.85, p=1e-6) between curvature minimum position and inferred anchorage position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 establish a quantitative relationship between an observable feature (curvature minimum) and the underlying mechanical property (anchorage length scale). The strong statistical correlation (Figure 5h) validates this as a predictive tool, advancing beyond the prior qualitative association between negative curvature and anchorage presence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C86",
+      "C87"
+    ],
+    "result": "The anchoring network responds elastically to microneedle forces in the range 400-1500 pN, generating 100-700 pN resisting forces. The linear relationship between crosslinking force (Fc) and microneedle force (Fext) without plateau indicates the network withstands large forces without significant detachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 quantify the force response with absolute force estimates (using EI=400 pN\u00b7\u03bcm\u00b2). The linear relationship (C65, Spearman R=0.85, p=4e-4, Figure 5i) without plateau (C66) supports elastic behavior (C86) where individual crosslinker detachment does not dominate collective response (C87). However, the absolute force estimates depend on the assumed flexural rigidity value, which has not been directly measured for k-fibers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C95"
+    ],
+    "result": "Spatially regulated anchorage within 3 \u03bcm of kinetochores provides a design principle for differential reinforcement: it ensures sister k-fibers remain aligned and bi-oriented in the spindle center while allowing pivoting and clustering at poles, supporting distinct functions across spindle regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74, C79-C81, C84-C85, and C95 propose functional implications of the observed anchorage pattern. While the modeling results strongly support the mechanical consequences (alignment near kinetochores, pivoting at poles), the functional claims about biorientation (C80), chromosome oscillations (C81), and spindle maintenance (C85) are speculative. These are reasonable hypotheses based on the mechanics, but lack direct experimental validation of the proposed functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The model makes several simplifying assumptions: mechanical homogeneity along k-fiber length, elastic bending response, and 2D force analysis. These assumptions are acknowledged as limitations, with evidence that k-fiber structure varies spatially and that large forces can cause fracturing or breakage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 transparently document model assumptions and their limitations. Citations to structural studies (C89-C90) and prior experimental work (C92-C93) acknowledge where reality may deviate from assumptions. This represents appropriate scientific practice in model development, though it also indicates areas where the model may not fully capture k-fiber behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Experimental methods used PtK2 GFP-\u03b1-tubulin cells and FCPT treatment to rigor-bind Eg5 for global crosslinking experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 describe standard experimental methods with appropriate citations. The cell line and drug treatment are well-established tools in the field, properly applied to test model predictions about global anchorage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The k-fiber flexural rigidity is estimated as 400 pN\u00b7\u03bcm\u00b2 based on 20 microtubules with sliding coupling (EI_k-fiber = N\u00b7EI_MT), using known single microtubule rigidity (2.2\u00d710\u207b\u00b2\u00b3 Nm\u00b2) and microtubule numbers (15-25) from literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C105 provide a reasonable estimate based on literature values and explicit assumptions. However, the assumption of sliding coupling (C104) versus rigid coupling represents a 20-fold difference in rigidity (N vs N\u00b2). While the sliding assumption is stated, no direct validation is provided. The estimate is used for absolute force calculations (Figure 5h), so uncertainty in this value propagates to force estimates. The approach is transparent but the accuracy is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Coarse-graining kinetochore-proximal forces (tensile kinetochore force and compressive bridging-fiber force) into an effective point force is justified by comparison with a fine-grained junction model, showing similar RMSE values and inferred parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 validate the coarse-graining approach through systematic comparison. The similar RMSE values (9e-3\u00b11e-3 \u03bcm vs 1e-2\u00b11e-3 \u03bcm) and agreement in inferred forces (Figure 2\u2014figure supplement 1d) support the simplified treatment for the native k-fiber model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Treating the microneedle force as a point force is validated by simulations showing that k-fiber profiles with distributed forces (0.5-1.5 \u03bcm contact length) match point force profiles when integrated force is constant, with low fitting errors (RMSE \u22480.03 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 validate a modeling assumption through systematic simulation. The validation is appropriate for the experimental conditions (finite microneedle diameter) and supports the point force approximation used throughout the modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The model assumes crosslinkers do not detach during microneedle manipulation, based on FCPT experiments showing negative curvature follows the microneedle rather than occurring far from it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 states an assumption with indirect experimental support. The FCPT experiment (Figure 4f-h) shows that with global anchorage, negative curvature moves with the microneedle, which is consistent with no widespread detachment. However, this is indirect evidence, and the assumption may not hold for all force magnitudes. The linear Fc-Fext relationship (C65-C66) provides additional support, but direct measurement of crosslinker detachment is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C75",
+      "C76",
+      "C77",
+      "C82",
+      "C83"
+    ],
+    "result": "Background claims establish the biological context and prior work: k-fibers are microtubule bundles that segregate chromosomes, are anchored by a non-kMT network, show heterogeneous anchorage along their length, and can be studied using shape analysis based on well-characterized microtubule bending mechanics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C26, C75-C77, C82-C83 provide established knowledge and prior work context, all supported by appropriate citations. These claims set up the scientific question and justify the modeling approach but do not constitute new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Prior work by the authors developed microneedle manipulation to mechanically challenge k-fiber anchorage and revealed spatially distinct response features indicating heterogeneous anchorage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 describe prior work by the authors (Suresh et al., 2020) that motivates the current study. These are appropriately cited and provide the experimental foundation for the modeling work.",
+    "result_type": "MINOR"
+  }
+]

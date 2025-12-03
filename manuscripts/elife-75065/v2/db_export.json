@@ -1,0 +1,1779 @@
+{
+  "submission": {
+    "id": "da2da7e6-5bbd-4a1c-b2f0-c406f9c3c94b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:46:05.157888Z",
+    "updated_at": "2025-12-03T10:46:05.157888Z"
+  },
+  "content": [
+    {
+      "id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "submission_id": "da2da7e6-5bbd-4a1c-b2f0-c406f9c3c94b",
+      "content_type": "manuscript",
+      "content_text": "# Rapid odor processing by layer 2 subcircuits in lateral entorhinal cortex\n\n## Authors\n\n- Sebastian H Bitzenhofer<sup>1</sup> ([ORCID: 0000-0003-0736-6251](https://orcid.org/0000-0003-0736-6251)) \u2020\n- Elena A Westeinde<sup>1</sup>\n- Han-Xiong Bear Zhang<sup>1</sup>\n- Jeffry S Isaacson<sup>1</sup> ([ORCID: 0000-0001-9052-5211](https://orcid.org/0000-0001-9052-5211)) \u2020\n\n### Affiliations\n\n1. Center for Neural Circuits and Behavior and Department of Neurosciences, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOlfactory information is encoded in lateral entorhinal cortex (LEC) by two classes of layer 2 (L2) principal neurons: fan and pyramidal cells. However, the functional properties of L2 cells and how they contribute to odor coding are unclear. Here, we show in awake mice that L2 cells respond to odors early during single sniffs and that LEC is essential for rapid discrimination of both odor identity and intensity. Population analyses of L2 ensembles reveal that rate coding distinguishes odor identity, but firing rates are only weakly concentration dependent and changes in spike timing can represent odor intensity. L2 principal cells differ in afferent olfactory input and connectivity with inhibitory circuits and the relative timing of pyramidal and fan cell spikes provides a temporal code for odor intensity. Downstream, intensity is encoded purely by spike timing in hippocampal CA1. Together, these results reveal the unique processing of odor information by LEC subcircuits and highlight the importance of temporal coding in higher olfactory areas.\n\n## Introduction\n\nOlfactory cues provide rich information about the environment critical for behaviors as diverse as food seeking, social interactions, and predator avoidance. These behaviors depend not only on the identification of specific odors, but also on the detection of odor concentration which is essential for odor-guided navigation (Ache et al., 2016; Marin et al., 2021). In mammals, olfactory information is initially encoded by the firing activity of olfactory bulb (OB) mitral cells (Uchida et al., 2014; Wilson and Mainen, 2006). This information projects directly via the lateral olfactory tract (LOT) to the primary olfactory (piriform) cortex (PCx), a region thought to be critical for odor perception (Blazing and Franks, 2020; Uchida et al., 2014; Wilson and Sullivan, 2011). Although the properties of circuits in OB and PCx governing olfaction have received considerable attention, much less is known about odor processing in higher brain areas. In this study, we explore the nature of odor coding in lateral entorhinal cortex (LEC), a higher region that transmits information to the hippocampus which underlies odor-dependent memories and navigation (Li et al., 2017; Radvansky and Dombeck, 2018).\n\nThe LEC receives two main sources of olfactory input: direct projections from OB mitral cells via the LOT and indirect projections via PCx principal cells (Haberly and Price, 1978; Kerr et al., 2007). These inputs synapse onto two distinct types of layer 2 (L2) principal neurons: fan and pyramidal cells (Canto and Witter, 2012; Kobro-Flatmoen and Witter, 2019; Tahvildari and Alonso, 2005). Fan cells in L2a have extensive apical dendritic arbors but lack basal dendrites, express reelin, and project via the lateral perforant path to granule cells in the dentate gyrus (Leitner et al., 2016; Vandrey et al., 2020). Pyramidal cells are concentrated in L2b, express calbindin, project to stratum lacunosum moleculare of hippocampal CA1, and send feedback projections to the PCx and OB (Chapuis et al., 2013; Leitner et al., 2016). LEC neurons respond in an odor-specific fashion (Leitner et al., 2016; Woods et al., 2020; Xu and Wilson, 2012) and calcium imaging in anesthetized mice revealed that fan cells respond more selectively to odors than pyramidal cells (Leitner et al., 2016). However, the role of LEC in odor discrimination has been debated (Chapuis et al., 2013; Lee et al., 2021; Li et al., 2017) and the coding of odor identity and intensity by fan and pyramidal cells in awake animals has not been established.\n\nRodents can make odor-guided behavioral decisions based on neural activity triggered by a single sniff (Chong and Rinberg, 2018; Uchida and Mainen, 2003) and studies have shed light on odor coding features of the OB and PCx. Odor identity is represented by the spatiotemporal activity patterns of OB mitral cells (Bathellier et al., 2008; Chong and Rinberg, 2018; Cury and Uchida, 2010; Shusterman et al., 2011) and the spike timing of cells early after odor inhalation is especially important for odor discrimination (Chong et al., 2020; Gill et al., 2020; Wilson et al., 2017). Changes in odor concentration can be decoded from both spike rate and the temporal profile of odor-evoked responses (Bathellier et al., 2008; Cang and Isaacson, 2003; Margrie and Schaefer, 2003; Sirotin et al., 2015). In PCx, odor identity is represented by distributed ensembles of active layer 2/3 pyramidal cells (Blazing and Franks, 2020; Miura et al., 2012; Roland et al., 2017; Schoonover et al., 2021; Stern et al., 2018; Stettler and Axel, 2009; Uchida et al., 2014). Calcium imaging in anesthetized mice revealed that while PCx population response patterns become markedly different over a 100-fold change in odor concentration, responses in a subset of neurons are insensitive to concentration (Roland et al., 2017). PCx recordings in awake mice indicate that odor identity is encoded by ensembles of pyramidal cells active early during individual sniffs in a manner invariant to odor concentration (Bolding and Franks, 2018). In contrast, odor intensity could be determined from a subpopulation of later responding pyramidal cells whose firing latencies shift earlier as odor concentration increases (Bolding and Franks, 2017).\n\nIn this study, we use extracellular recordings in awake mice, odor-driven behavior, and brain slice experiments to determine how LEC L2 principal cells contribute to olfactory information processing.\n\n## Results\n\n### Rapid odor-evoked activity during single sniffs in LEC\n\nPrevious work revealed distinct differences in the timing of odor-evoked activity in the OB and PCx during individual sniffs. While OB mitral cells fire spikes at odor-specific latencies that tile individual respiration cycles (Bathellier et al., 2008; Cury and Uchida, 2010; Shusterman et al., 2011), PCx pyramidal cells preferentially fire within the first 100 ms of odor inhalation (Bolding and Franks, 2018). However, the timing of odor-evoked activity in LEC relative to respiration-coupled firing in the OB and PCx is unknown. To address this question, we made acute simultaneous recordings of multiunit activity using silicon probes in the OB mitral cell layer, L2/3 of anterior PCx, and L2 of LEC in awake, head-fixed mice (n = 6 recordings from five mice, Figure 1a, Figure 1\u2014figure supplement 1). We monitored nasal airflow at the outlet of a custom built olfactometer and delivered monomolecular odors (n = 11) triggered by the exhalation phase of respiration (respiration cycle duration ~300 ms, Figure 1\u2014figure supplement 1). This approach allowed us to precisely align all recordings to the onset of the first inhalation of the applied odor for each trial (Figure 1b). Consistent with recent findings (Bolding and Franks, 2018), while odors evoked OB mitral cell activity during both early and late phases of a sniff (peaks at 43 and 232 ms, respectively), responses in PCx selectively occurred early (peak time 53 ms) after odor inhalation (Figure 1c). Interestingly, we found that simultaneously recorded activity in LEC also preferentially occurred early after odor inhalation (peak at 75 ms, Figure 1c). Experiments using channelrhodopsin-driven firing of OB mitral cells revealed similar shifts in the timing of early activity from OB to LEC suggesting that increasing latencies largely reflect axonal conduction times across regions (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig1-v2.jpg)\n\n**Figure 1.:** (a) Experimental setup for triple recordings of odor-evoked activity in the olfactory bulb (OB), anterior PCx, and LEC of awake head-fixed mice. Downward and upward deflections on respiration trace from pressure sensor indicate inhalation (Inh) and exhalation (Exh), respectively. (b) Left, respiration signals during odor delivery (blue shading) for five trials are plotted above PID measurement of odor (2-Heptanone) at the sampling port. Black circles, inhalation onset. Right, same respiration signals aligned to onset of first inhalation. (c) OB mitral cell odor responses during individual sniffs have both early and late components, while early responses dominate in PCx and LEC. Spike-density plots of single-unit activity averaged across all triple recordings (n = 6 recordings from five mice) from OB (n = 36 cells), PCx (n = 530 cells), and LEC (n = 161 cells) responses to 11 odors. Trials were aligned to the first inhalation during each odor (dashed line). Top trace, representative averaged respiration trace from one experiment. (d\u2013f) Raster plots and spike-density functions of odor-evoked activity for two representative cells from OB, PCx, and LEC in response to hexanal (top) and ethyl tiglate (bottom). (g\u2013i) OB mitral cell responses occur evenly across the entire respiration cycle, while responses of PCx L2/3 cells and LEC L2 cells often occur early following odor inhalation. Plots reflect odor-evoked firing rates for all cell\u2013odor pairs rank ordered by time of peak firing. For cross-validation, peristimulus time histograms are plotted from even trials that are sorted relative to the peaks obtained from odd trials. (g) Plots of odor-evoked firing rates for all cell\u2013odor pairs rank ordered by time of peak firing for OB mitral cells (left), PCx L2/3 cells (middle), and LEC L2 cells (right). (h) Histograms showing time of peak odor responses relative to inhalation onset for significantly activated cell\u2013odor pairs in the OB, PCx, and LEC. (i) Percent of activated cells per odor in the OB, PCx, and LEC during the early (0\u2013100 ms) and late (200\u2013300 ms) phase of odor-evoked activity marked in (h). Error bars represent standard error of the mean (SEM).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Identification of in vivo recordings sites. Example coronal sections from one mouse showing silicon probe tracks labeled with DiI in olfactory bulb (OB), PCx, and lateral entorhinal cortex (LEC). Only superficial probe contacts are used to record from upper layers in LEC (Methods).(b) Isolation of first inhalation during odor application. Top, respiration traces (gray) for individual trials from one experiment aligned to the first inhalation during odor delivery. Black trace, average of all trials. Middle, raster plot of inhalation onset times for each trial. Bottom, peristimulus time histogram of inhalation onset times from trials. (c) Optogenetic activation of mitral cells illustrates the minimal time course for propagation of signaling from OB. Left, sections from Tbx21cre \u00d7 Ai32 mouse showing ChR2/GFP expression in OB mitral cells and lateral olfactory tract (LOT) fibers of PCx and LEC. Right, averaged firing rate of single cells recorded from OB (n = 12 cells, 2 recordings), PCx (n = 171 cells), and LEC (n = 59 cells) in response to 5-ms LED illumination (473 nm) over the OB. Error bars represent standard error of the mean (SEM).\n\nWe isolated single units to further explore the timing of odor-evoked activity across individual cells in the three brain regions (Figure 1d\u2013f). While individual OB mitral cells showed odor-evoked responses that peaked at times that tiled the entire respiration cycle, many L2/3 PCx and L2 LEC cells preferentially responded early after odor inhalation (Figure 1g\u2013h). Overall, the percentage of significantly activated cells per odor during the early phase of respiration (<100 ms after inhalation) was greater in the PCx and LEC compared to the OB (Figure 1i). In contrast, across the three olfactory areas, the fraction of activated cells per odor during later times (200- to 300-ms postinhalation) was lowest for the LEC. Together, these results suggest that activity triggered early during individual sniffs is important for odor coding in LEC.\n\n### Behavioral discrimination of odor identity and intensity requires the LEC\n\nTo test the importance of the LEC in odor-driven behavior, we took advantage of an optogenetic approach to acutely silence the LEC in head-fixed mice performing odor discrimination in a two-alternative forced-choice (2AFC) task (Figure 2a, Figure 2\u2014figure supplement 1). We used transgenic mice (Gad2cre \u00d7 Ai32) selectively expressing ChR2 in inhibitory neurons and made bilateral optical windows over the LEC for photostimulation (Materials and methods). Mice were trained (>75% correct responses) to lick left or right to distinguish odor identity (isoamyl acetate vs. limonene, both at 1% concentration). For each trial (\u22654-s interval), odor application (1-s duration) began at the respiration exhalation phase so that behavior could be aligned to the onset of the first inhalation of each odor. Mice were free to report their choice (left or right lick) at any time within 2 s of odor onset and fiber-coupled LEDs (473 nm) targeting the LEC bilaterally were used to suppress cortical activity during odor delivery on a random subset (25%) of trials. We found that LEC is critical for discrimination of odor identity since LEC silencing reduced the fraction of correct responses to the chance level (Figure 2b, LED off: 83.76 \u00b1 3.17%, LED on: 57.06 \u00b1 5.22%, p = 0.009, paired t-test, n = 6 mice). Moreover, by analyzing lick timing, we determined that the discriminability measure d\u2032 became significantly different under control conditions as early as 225 ms after inhalation onset and performance accuracy increased within 200 ms of inhalation (Figure 2b, Figure 2\u2014figure supplement 1). This rapid behavioral discriminability is consistent with the rapid timing of odor-evoked activity we observe in LEC, especially when considering motor initiation delays.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig2-v2.jpg)\n\n**Figure 2.:** (a) Top, experimental setup for two-alternative forced-choice (2AFC) odor-driven behavior with bilateral optogenetic silencing of the LEC in head-fixed mice expressing ChR2 in GABAergic neurons. Bottom, representative respiration traces aligned to the first inhalation of odor and superimposed lick responses (colored bars) during odor discrimination. (b) LEC is required for discrimination of odor identity. Left, percent of correct choices for mice trained to discriminate different odors (isoamyl acetate vs. limonene, both at 1.0%) on trials with (LED on) and without (LED off) optogenetic LEC silencing (n = 6 mice). Red circles, mean \u00b1 standard error of the mean (SEM). Right: d\u2032 of cumulative responses over time. Under control conditions (LED off), d\u2032 becomes significantly different 225 ms following odor inhalation. (c) LEC is required for discrimination of odor intensity. Left, percent of correct choices for mice trained to discriminate different concentrations of the same odor (0.25% vs. 1.0% ethyl tiglate) for trials with and without LEC silencing (n = 6 mice). Red circles, mean \u00b1 SEM. Right: d\u2032 of cumulative responses over time. Under control conditions (LED off), d\u2032 becomes significantly different 175 ms following odor inhalation. Error bars represent SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Schematic of behavior trial structure.(b) Performance in odor identity discrimination for LED off trials plotted relative to the choice time (first lick after odor inhalation). Black bar, significantly different from chance. In this and subsequent panels, time zero responds to the time of first odor inhalation. (c\u2013e) Miss rate and lick timing when lateral entorhinal cortex (LEC) is silenced during two-alternative forced-choice (2AFC) odor identity discrimination. (c) Percent of miss trials in the 2AFC with and without optogenetic silencing of the LEC during all experiments (n = 6 mice). Gray lines, individual experiments. Red circle, mean \u00b1 standard error of the mean (SEM). (d) Histograms of time to first lick for correct (green) and error (red) trials with LED off. Tick marks indicate average response times for individual mice (top, Correct; bottom, Error). Green circle, timing of correct responses averaged across mice (\u00b1 SEM). Red circle, error responses (\u00b1 SEM). (e) As in (d) for LED on trials. (f) Performance in odor intensity discrimination for LED off trials plotted relative to the choice time (first lick after odor inhalation). Black bar indicates significantly different from chance. (g\u2013i) Miss rate and lick timing when LEC is silenced during odor intensity discrimination (n = 6 mice). (e\u2013f) As for (c\u2013e). (j) Control experiments for LEC silencing during odor identity discrimination. Left, percent of correct choices during sham optogenetic silencing of the LEC (n = 8 mice). Gray lines, same mice from experiments above but with the LEC masked from LED illumination (LEC occluded). Black lines, Gad2cre mice trained in the task but uninjected with adeno-associated virus (AAV)-ChR2. Right, percent of miss trials during sham silencing. Red symbols, average \u00b1 SEM. (k) Control experiments for LEC silencing during odor intensity discrimination (n = 8 mice). As for (g). Error bars represent SEM.\n\nWe next tested whether LEC played a role in the behavioral discrimination of odor intensity. Mice performed the same 2AFC task, but were trained to distinguish two different concentrations of the same odor (0.25% vs. 1.0% ethyl tiglate, Figure 2c). Silencing LEC again reduced the fraction of correct responses to the chance level (LED off: 77.40 \u00b1 1.58%, LED on: 52.37 \u00b1 2.10%, p = 0.0003, paired t-test, n = 6 mice), indicating that the LEC is also essential for detecting odor intensity and analysis of lick times revealed that mice could perform this discrimination rapidly (within 200 ms of odor inhalation, Figure 2c, Figure 2\u2014figure supplement 1). Sham experiments confirmed that LED illumination alone could not produce these effects (Figure 2\u2014figure supplement 1). Together, these findings indicate that LEC plays an essential role in behavior requiring discrimination of odor identity or intensity. Furthermore, the rapid speed of LEC-dependent behavior during single sniffs is entirely consistent with the rapid time course of odor-evoked activity we observe in L2.\n\n### Ensemble coding of odor identity in LEC\n\nWe made acute recordings of L2 activity while mice were passively exposed to 11 odorants and analyzed responses of individual cells (n = 19 recordings in 17 mice) to examine odor identity coding (Figure 3a). Across all cells (n = 576), odor-evoked firing peaked in a time window 50\u2013100 ms from the start of odor inhalation, considerably earlier than respiration-coupled activity observed in the absence of applied odor (blank response, Figure 3b). We thus used this 50-ms time window for analysis of rapid odor-evoked activity in LEC. Individual odors activated overlapping ensembles of L2 neurons with 48% of cells showing increases in firing rate to two or more odors (Figure 3c). Sorting responses of significantly activated cells normalized to the odors causing their strongest activation revealed that cells respond best to a subset of preferred odors (Figure 3d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig3-v2.jpg)\n\n**Figure 3.:** (a) Spike-density functions of inhalation-aligned odor-evoked activity (11 odors and blank) for 2 representative LEC L2 cells. Asterisks, significant odor-evoked increases in firing rate. (b) Averaged spike-density function of activity in LEC L2 (n = 576 cells) shows early increase in firing rate for odor-evoked responses (black line) vs. baseline respiration-coupled activity (blank, gray line). Bracket, 50-ms window used to measure early odor-evoked firing. (c) Percent of cells responsive from 0 to 11 odors. (d) Normalized and ranked odor-evoked firing rate change relative to blank in LEC L2. (e\u2013g) Principal component analysis reveals that LEC cell ensembles can rapidly distinguish odor identity. (e) Trajectories of the first three principal components of odor-evoked activity in LEC L2 over time following odor inhalation (each odor indicated by different colored line). Circles represent time points relative to odor inhalation: 0 ms (black), 75 ms (red), and 200 ms (gray). (f) Euclidean distance of the first three principal components (69% explained variance) between 11 odors (binned over 1-ms time window) shows discriminability peak within 100 ms of odor inhalation. (g) A linear classifier can rapidly discriminate odor identity from early odor-evoked changes in firing rate or binary categorization of activity. Classification accuracy is plotted using mean firing rate (black) or binary measure of cell activation (gray) using a 50-ms sliding window with 5-ms steps. Error bars represent standard error of the mean (SEM).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a, b) Classifier accuracy is highest during early periods of the odor response.(a) Reducing bin size from 50 to 10 and 2 ms for measurements of classifier accuracy of odor identity makes accuracy course more transient. Dotted line, chance. (b) Same as (a) but baselined to chance and scaled to peak accuracy. (c) Classification accuracy as a function of ensemble size is identical using firing rate or binary measure of activity in a fixed window at 50\u2013100 ms. Error bars represent standard error of the mean (SEM).\n\nTo study how activity in populations of L2 neurons might be used to encode odor identity, we used principal component analysis (PCA) of trial-by-trial response vectors from firing activity of all neurons recorded for each odor (see Methods). Vectors were binned in 1-ms intervals to examine the trajectory of the first three principal components following odor inhalation. Responses rapidly became more dispersed (discriminable) in PCA space (i.e., 0- vs. 75-ms postinhalation onset) and reverted to the preodor condition by 200 ms (Figure 3e). We measured discriminability using the Euclidean distance in PCA space for the different odors. This confirmed that the biggest difference in population activity occurred during the early peak of LEC odor-evoked activity (Figure 3f). We next trained a linear classifier to test the ability to decode odor identity from population activity. Using a sliding time window (integrating 50 ms of activity every 5 ms), the classifier distinguished odor identities with high accuracy (>90 %) within 100 ms of odor inhalation (Figure 3g). We found an equally high accuracy in odor identification when cells were characterized only based on whether they showed significant increases in firing rate (Figure 3g). Thus, simply knowing which cell ensembles are active across the population provide as much information about odors as cell firing rates. While decoding accuracy remained high over the duration of the respiration cycle, reducing the integration time window for the linear classifier revealed a more transient increase in accuracy locked to the early phase of odor inhalation (Figure 3\u2014figure supplement 1). This indicates that LEC population activity during later phases of individual sniffs best contains information about odor identity when activity is integrated over longer time windows. Classifier performance specifically during the rapid peak of odor-evoked activity (50- to 100-ms postinhalation) improved as the population of cells used for classification increased (Figure 3\u2014figure supplement 1), however, high levels of accuracy (>50%) were readily achieved with ensembles of <250 L2 neurons.\n\n### Spike timing in LEC encodes odor intensity\n\nDoes early odor-evoked activity in LEC also contain information regarding odor intensity? To address this question, we analyzed activity of single L2 neurons in response to four concentrations (0.25%, 0.33%, 0.50%, and 1.00%) of the same set of 11 odors. This fourfold change in concentration is within the range we used for behavioral discrimination (0.25% and 1.0%). Individual cells had diverse patterns of responses to different odor concentrations, with some showing a simple scaling of firing rate as odor concentration increased while others showed concentration-dependent changes in the time course of the evoked response (Figure 4a). Averaging odor-evoked activity across all units revealed only a weak increase in early firing rate for a fourfold change in odor concentration (50- to 100-ms postinhalation, 0.8-fold increase, \u03c1 = 0.3, p = 0.03, Spearman\u2019s rank correlation, Figure 4b, Figure 4\u2014figure supplement 1). Similarly, we found only a modest increase in the percentage of activated cells per odor as concentration increased (\u03c1 = 0.3, p = 0.05, Spearman\u2019s rank correlation, Figure 4\u2014figure supplement 1) and lifetime sparseness (a measure of response selectivity) was weakly sensitive to changes in concentration (\u03c1 = 0.04, p = 0.04, Spearman\u2019s rank correlation, Figure 4\u2014figure supplement 1). These findings suggest that odor intensity might not be optimally represented by the firing rates of ensembles of LEC neurons.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig4-v2.jpg)\n\n**Figure 4.:** (a) Spike-density functions of odor-evoked activity for three representative LEC L2 cell\u2013odor pairs at four concentrations indicated by line shading (0.25%, 0.33%, 0.50%, and 1.00%). (b) Averaged spike-density function of odor-evoked activity aligned to the first inhalation across four concentrations of the same odors for the LEC L2 cell population (n = 576 cells, 11 odors at 0.25%, 0.33%, 0.50%, and 1.00%). (c, d) Principal component analysis of the cell population for responses to four odor concentrations indicates that firing rate can be used to discriminate odor intensity, but discriminability is poorer than that for odor identity. (c) Trajectories of the first three principal components of odor-evoked activity over time following odor inhalation (each odor concentration indicated by a different line shading). Circles represent time points relative to odor inhalation: 0 ms (filled black), 75 ms (red), and 200 ms (open black). (d) Euclidean distance of the first three principal components of odor-evoked activity in the LEC between responses of the four concentrations (blue) shows a peak in discriminability within 100 ms of odor inhalation. The discriminability between responses of the same cells to 11 odors for the four different intensities (gray to black) is much higher. Responses are binned with a 1-ms time window. (e\u2013h) A linear classifier shows that odor identity discrimination somewhat improves as odor concentration increases and that odor intensity can be weakly discerned from firing rate changes. (e) Classification accuracy for odor identity at the four concentrations indicated by the shaded lines using a 50-ms sliding window with 5-ms steps. (f) Classification accuracy of odor identity at different concentrations based on average firing rate in a fixed window 50\u2013100 ms following odor inhalation. (g) Classification accuracy of odor intensity for each odor based on average firing rate using a sliding window. (h) Classification accuracy of odor intensity for each odor based on average firing rate in a fixed window 50\u2013100 ms following odor inhalation. (i\u2013k) Spike timing effectively encodes odor intensity. (i) Blow-up of data from (b) shows shift in timing of peak responses with odor concentration. Arrowheads mark peak times at the four concentrations. (j) Peak time of odor-evoked activity averaged across all cell\u2013odor pairs shifts with changes in odor concentration. (k) Mean pairwise peak time difference of odor-evoked activity for cell\u2013odor pairs indicates that spike firing becomes more synchronized as odor concentration increases. Error bars represent standard error of the mean (SEM).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013c) Summary data describing effects of odor concentration on responses in lateral entorhinal cortex (LEC) layer 2 (L2). (a) Mean firing rate at each concentration for all cell\u2013odor pairs. (b) Percent of activated cells per odor (rate during 50\u2013100-ms window postinhalation) at different intensities. (c) Lifetime sparseness of odor identity for the four different concentrations. (d, e) Odor identity vs. odor intensity rate coding as a function of ensemble size. (d) Odor identity classification accuracy using mean firing rate at different intensities (fixed window 50\u2013100-ms postinhalation). (e) Odor intensity classification accuracy using same measure. (f\u2013g) Activity becomes more synchronized as odor concentration increases. (f) Peak time histograms of odor-evoked activity at different intensities for all cell\u2013odor pairs. (g) Kurtosis of the peak time distributions shown in (C1). Error bars represent standard error of the mean (SEM).\n\nWe used PCA of the pseudopopulation activity grouped by odor concentration to understand how responses evolved over the time course of single sniffs. Interestingly, responses to the four concentrations rapidly dispersed in PCA space after odor inhalation and returned to preodor levels of variability within 200 ms (Figure 4c). This suggests that ensemble activity based on early odor-evoked changes in firing rate could be used to discriminate odor intensity. Indeed, the Euclidean distances in PCA space between responses to different odor concentrations revealed a clear peak within 100 ms of odor inhalation (Figure 4d). However, these values were much less than those obtained from PCA comparing different odors and increasing concentration only slightly increased the distances that distinguished between odors (Figure 4d). Thus, population activity showed smaller differences (less discriminability) between odor concentrations when compared to activity representing different odor identities.\n\nWe trained a linear classifier to detect odor identity for the different concentrations using firing rates integrated over a sliding 50-ms window. Classification accuracy of odor identity only slightly improved as concentration increased (Figure 4e, f, Figure 4\u2014figure supplement 1). In contrast, when we trained the linear classifier to detect odor concentration based on firing rate, classification accuracy was considerably worse (Figure 4g, Figure 4\u2014figure supplement 1). Indeed, classification accuracy for each of the 11 tested odors was only marginally above chance level (Figure 4h). These results suggest that while L2 population firing rates can be used to discern both odor identity and intensity, rate coding appears relatively weaker at representing information regarding odor intensity.\n\nWhat other properties of evoked activity might underlie the representation of odor intensity in LEC? When studying odor-evoked responses at higher temporal resolution, we found that the average time to peak firing of L2 cells shifted earlier as odor concentration increased (Figure 4i). We quantified this shift by determining the time of peak firing (relative to odor inhalation) for all cell\u2013odor pairs across odor concentrations and found that peak times shifted earlier with increasing odor concentrations (\u03c1 = \u22120.04, p < 0.001, Spearman\u2019s rank correlation, Figure 4j). We next considered the possibility that changes in spike timing across the L2 cell population altered the relative synchrony of odor-evoked activity in LEC. Indeed, pairwise peak time differences for odor responses became smaller as odor concentration increased (Figure 4k, Figure 4\u2014figure supplement 1). This indicates that activity in LEC becomes more synchronized with increases in odor concentration. Together, these findings show that odor intensity can be distinguished using a temporal code in LEC.\n\n### Differential connectivity of fan and pyramidal cells with long range and local circuits\n\nHow do the two types of L2 principal neurons contribute to odor processing in LEC? We first used brain slices to study the functional properties of L2 fan and pyramidal cells. We took advantage of the fact that the two cell types can be distinguished by their distinct axonal projection patterns: fan cells project to DG granule cells while L2 pyramidal cells send feedback projections to the OB (Chapuis et al., 2013; Leitner et al., 2016; Vandrey et al., 2020). We injected green retrobeads into either the DG or OB and made targeted whole-cell current clamp recordings from bead-labeled cells in coronal LEC slices. In a subset of experiments, we used mice that express red fluorescent protein in olfactory cortical pyramidal cells (Ntsr1(209)cre \u00d7 Ai14, Boyd et al., 2012). Biocytin was added to the pipette internal solution for post hoc reconstruction of dendritic arbors. DG bead injection labeled neurons with cell bodies localized in L2a (Figure 5a) that possessed extensive, fan-like apical dendrites but few basal dendrites (Figure 5b, Figure 5\u2014figure supplement 1). In contrast, OB injection labeled cells in L2b (Figure 5c) with typical pyramidal cell dendritic morphology (Figure 5d, Figure 5\u2014figure supplement 1). Similar to previous studies of L2 fan and pyramidal cells (Leitner et al., 2016; Tahvildari and Alonso, 2005; Vandrey et al., 2020), current injection revealed differences in membrane excitability including resting potential (fan: \u221264 \u00b1 1.1 mV [n = 15], pyramidal: \u221269.4 \u00b1 1.7 mV [n = 10], p = 0.016, t-test), input resistance (fan: 147.6 \u00b1 10.4 mOhm, pyramidal: 102.1 \u00b1 12.8 mOhm, p = 0.012), and sag (fan: 3.7 \u00b1 0.4 mV, pyramidal: 1.1 \u00b1 0.4 mV, p = 0.0003).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig5-v2.jpg)\n\n**Figure 5.:** (a) Top, schematic of retrobead injection into the DG of Ntsr1(209)cre mice expressing TdTomato. Bottom, image of lateral entorhinal cortex (LEC) region outlined in schematic showing DG-projecting cells (green) located in L2a and Ntsr1-positive cells (red) concentrated in L2b. (b) Targeted brain slice recording from a DG-projecting fan cell. Top, reconstruction of fan cell dendritic arbor. Bottom, membrane potential response to current steps. (c) Top: schematic of retrobead injection into the olfactory bulb (OB) of Ntsr1(209)cre mice expressing TdTomato. Bottom, image of LEC region showing OB-projecting cells (green) and Ntsr1-positive cells (red) colocalize in L2b. (d) Targeted brain slice recording from an OB-projecting pyramidal cell. Top, reconstruction of pyramidal cell dendritic arbor. Bottom, membrane potential response to current steps. (e, f) Fan cells receive stronger direct OB input than pyramidal cells. (e) Top, recording schematic for paired recordings of fan and pyramidal cells in LEC slices expressing ChR2 in lateral olfactory tract (LOT) fibers. Bottom, reconstruction of simultaneously recorded fan cell (blue) and pyramidal cell (black) overlaid on image of LEC slice showing ChR2 expression in LOT (green). (f) Top, LED-evoked excitatory postsynaptic currents (EPSCs) in fan and pyramidal cells from e. Blue bar, LED flash. Bottom, summary of EPSC amplitudes elicited by stimulation of OB input. Black circles, individual cells. Red circles, mean \u00b1 standard error of the mean (SEM). (g, h) Fan cells receive stronger direct PCx input than pyramidal cells. (g) Top, recording schematic for paired recordings in LEC slices expressing ChR2 in PCx. Bottom, reconstruction of simultaneously recorded fan cell (blue) and pyramidal cell (black) overlaid on image of LEC slice showing ChR2 expression in PCx fibers (green). (h) Top, LED-evoked EPSCs in fan and pyramidal cells from (g). Blue bar, LED. Bottom, summary of EPSC amplitudes elicited by stimulation of PCx input. Black circles, cells in control artificial cerebrospinal fluid (aCSF). Open circles, cells recorded in tetrodotoxin (1 \u00b5M) and 4-aminopyridine (100 \u00b5M). Red circles, mean \u00b1 SEM. (i\u2013k) Fan cells receive less parvalbumin (PV) cell-mediated inhibition than pyramidal cells. (i) Top, recording schematic. Bottom, LED-evoked inhibitory postsynaptic currents (IPSCs) elicited in simultaneously recorded fan and pyramidal cells. Traces indicate responses to five LED pulses of increasing duration (blue bars). (j) Inhibitory charge for fan cell (open circles) and pyramidal cell (filled circles) shown in (i). Lines fit to points are used to measure slope of input\u2013output relationship. (k) Summary of IPSC slopes for fan and pyramidal cells in response to activation of PV cells. Black circles, individual cells. Red circles, mean \u00b1 SEM. (l\u2013n) Fan cells and pyramidal cells receive similar somatostatin (SOM) cell-mediated inhibition. (l) Top, recording schematic. Bottom, LED-evoked IPSCs elicited in simultaneously recorded fan and pyramidal cells. Traces indicate responses to five LED pulses of increasing duration (blue bars). (m) Inhibitory charge for fan cell (open circles) and pyramidal cell (filled circles) shown in (l). (n) Summary of IPSC slopes for fan and pyramidal cells in response to activation of SOM cells. Black circles, individual cells. Red circles, mean \u00b1 SEM.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) The dendritic arbors of lateral entorhinal cortex (LEC) fan cells take up more cortical space than pyramidal cells.Left, heat map of reconstructed DG-projecting LEC layer 2 (L2) fan cells (n = 8 cells). Image shows average of all cells superimposed. Brighter colors indicate more overlap of dendrites across cells. Right, same for LEC L2 pyramidal cells (n = 5 cells). (b, c) Paired-pulse ratios of lateral olfactory tract (LOT)-evoked excitatory postsynaptic currents (EPSCs) onto fan and pyramidal cells suggest synapses of both cell types have similar release probabilities. (b) Top, recording schematic for paired whole-cell recordings of LEC L2 fan and pyramidal cells and optogenetic stimulation (4 ms) of the LOT input. Bottom, representative EPSCs elicited by paired-pulse stimulation (interstimulus interval, 200 ms). (c) Paired-pulse ratio of responses from paired recordings. Black circles and lines, individual cell pairs. Red circles, mean \u00b1 standard error of the mean (SEM). (d, e) Minimal LOT stimulation indicates that fan and pyramidal cells have similar single fiber responses. (d) Top, recording schematic showing LOT minimal electrical stimulation. Bottom, overlay of superimposed trials (n = 10) showing failures and successes recorded in a fan (left) and pyramidal cell (right) using threshold stimulation. (e) Summary of minimal EPSC amplitude (average of success) in fan and pyramidal cells (n = 7 and 6, respectively). Black circles, individual recordings. Red circles, mean \u00b1 SEM. Error bars represent SEM.\n\nWe next used an optogenetic approach to examine whether fan and pyramidal cells differed in their olfactory input. To probe direct input from the OB, we took advantage of Tbx21cre mice crossed with the Ai32 reporter line to selectively express ChR2 in OB mitral cells (Haddad et al., 2013). We used LEC slices from these mice to make simultaneous voltage-clamp recordings (\u221270 mV) from L2a fan and L2b pyramidal cells (Figure 5e) that were confirmed by post hoc anatomical reconstruction. Excitatory postsynaptic currents (EPSCs) evoked from ChR2-expressing LOT fibers (473 nm, 4-ms flash) were significantly larger in fan vs. pyramidal cells (Figure 5f, 136.7 \u00b1 3 and 22.3 \u00b1 5.5 pA, respectively, n = 7 pairs, p = 0.02, paired t-test). Paired-pulse facilitation (200-ms interstimulus interval) was identical for fan and pyramidal cell EPSCs (Figure 5\u2014figure supplement 1, paired pulse ratio 1.9 \u00b1 0.2 and 1.8 \u00b1 0.3, respectively, p = 0.69, paired t-test) suggesting that LOT release probability was the same onto both cell types. Moreover, the amplitude of single fiber EPSCs recorded in fan (n = 8) and pyramidal (n = 7) cells using minimal LOT stimulation were also virtually identical (Figure 5\u2014figure supplement 1, 9.7 \u00b1 1.7 and 7.9 \u00b1 1.1 pA, respectively, p = 0.35, t-test). These results indicate that the stronger LOT-evoked responses of fan cells reflect the fact that they receive inputs from more OB mitral cells than pyramidal cells. Projections from piriform cortex provide another source of olfactory input to the LEC. To study these inputs, we used LEC slices from mice injected in anterior PCx with adeno-associated virus (AAV) driving expression of ChR2. A subset of experiments were performed in the presence of tetrodotoxin (1 \u00b5M) and 4-aminopyridine (100 \u00b5M) to ensure monosynaptic input (Petreanu et al., 2009). Simultaneous recordings revealed larger ChR2-evoked EPSCs in fan vs. pyramidal cells (Figure 5g, h, 331 \u00b1 41.4 and 174 \u00b1 22.6 pA, respectively, n = 15 pairs, p = 0.002, paired t-test) indicating that fan cells also receive stronger olfactory input relayed from the piriform cortex.\n\nIn addition to olfactory excitatory input, we considered the possibility that fan and pyramidal cells might differ in their inhibition by local GABAergic interneurons. We addressed this by studying the impact of two major classes of inhibitory interneurons: soma-targeting, parvalbumin (PV) cells and dendrite-targeting somatostatin (SOM) cells (Isaacson and Scanziani, 2011). We made simultaneous recordings of inhibitory postsynaptic currents (IPSCs, Vm = 0 mV) from fan and pyramidal cells using LEC slices from Pvalbcre (Figure 5i\u2013k) or Sstcre mice (Figure 5l\u2013n) crossed with a ChR2 reporter line (Ai32). We drove interneuron firing with different durations of LED illumination (2\u201332 ms) and fit the relationship between LED duration and inhibitory charge with a line to compare the slopes of the input/output relationship for each cell pair. Interestingly, these experiments revealed that fan cells received substantially less inhibition from PV cells than pyramidal cells (Figure 5i\u2013k) while both cell types received the same relative amount of SOM cell-mediated inhibition (Figure 5l\u2013n). Thus, fan and pyramidal cells also differ in their connectivity with local interneuron circuits.\n\n### Temporal shift of pyramidal cell firing relative to fan cells regulates synchronous activity\n\nThe differences in olfactory input and PV cell-mediated inhibition between L2 fan and pyramidal cells suggest that the two principal cells may respond heterogeneously to odors. To investigate this idea, we identified cre mouse lines that could be used to target in vivo recordings to the different L2 principal cell types. We found that NetrinG1cre mice, which selectively label semilunar principal cells in PCx (Bolding et al., 2020), specifically targeted fan cells in LEC. In NetrinG1cre \u00d7 Ai14 mice, TdTomato-expressing cells localized to L2a and were colabeled by retrobeads injected in the DG (Figure 6a, 90.47 \u00b1 1.47%, n = 6 slices from three mice). Furthermore, immunolabeling revealed that NetrinG1cre expression was restricted to reelin-positive neurons in LEC L2a and did not overlap with L2b cells expressing calbindin (Figure 6\u2014figure supplement 1). To target recordings to L2 pyramidal cells, we used Calb1cre mice (Leitner et al., 2016). We confirmed that cells expressing Calb1cre were concentrated in L2b, colabeled by retrobeads injected in the OB (81.89 \u00b1 2.39%, n = 6 slices from three mice), and immuno-positive for calbindin but not reelin (Figure 6b, Figure 6\u2014figure supplement 1). Consistent with previous histological work describing LEC calbindin-expressing pyramidal cells projecting to CA1 (Ohara et al., 2019), we found small numbers of Calb1cre cells in layer 3. Although calbindin is also expressed in some GABAergic neuron subtypes, immunolabeling in Gad2cre \u00d7 Ai14 mice revealed very few calbindin-positive interneurons in LEC (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig6-v2.jpg)\n\n**Figure 6.:** (a, b) Transgenic mouse lines allow targeting of layer 2 (L2) fan and pyramidal cells in lateral entorhinal cortex (LEC). (a) NetrinG1-cre expression in L2a fan cells. Left, site of DG retrobead (blue) injection in NetrinG1cre \u00d7 Ai14 mouse. Right, LEC section indicates cre restricted to DG-projecting cells in L2a. (b) Calb1-cre expression in L2b pyramidal cells. Left, site of olfactory bulb (OB) retrobead (blue) injection in Calb1cre \u00d7 Ai14 mouse. Right, LEC section indicates cre within OB-projecting cells in L2b. (c) Odors evoke rapid responses in optogenetically tagged fan and pyramidal cells. Top, experimental setup. Bottom, plots of odor-evoked firing rates for all cell\u2013odor pairs rank ordered by time of peak firing for ChR2-tagged NetrinG1 (left) and calbindin (right) neurons (n = 122 and 98 cells, respectively). Peristimulus time histograms using only even trials are sorted relative to the peaks obtained from odd trials. (d) Odor concentration-dependent timing of pyramidal cell activity. Average time course of activity evoked by different odor concentrations (0.25%, 0.33%, 0.50%, and 1.00%) for tagged NetrinG1/fan (top) and calbindin/pyramidal (bottom) cells. (e) Traces in (d) shown on a faster timescale. Arrowheads mark times of peak firing for the different intensities. (f) Peak rates of odor-evoked activity at different intensities for NetrinG1/fan and calbindin/pyramidal cell\u2013odor pairs. (g) Peak times of odor-evoked activity at different intensities reveal strong dependence on odor concentration for calbindin/pyramidal but not NetrinG1/fan cells. (h) Synchrony between fan and pyramidal cell firing depends on odor concentration. Pairwise peak time differences of NetrinG1/fan and calbindin/pyramidal cell\u2013odor pairs decrease as odor concentration increases. Error bars represent standard error of the mean (SEM).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) NetrinG1cre labeling of fan cells. Left, coronal sections of lateral entorhinal cortex (LEC) from mice expressing tdTomato in cre+ neurons immunostained for Reelin and Calbindin. Center, locations of labeled neurons (n = 6 slices, three mice). Right, percent overlap between labeled neurons in layer 2 (L2) (n = 6 slices from three mice). (b) Calb1cre labeling of pyramidal cells. Left, coronal sections of LEC from mice expressing tdTomato in cre+ neurons immunostained for Reelin and Calbindin. Center, locations of labeled neurons (n = 6 slices, three mice). Right, percent overlap between labeled neurons in L2 (n = 6 slices, three mice). (c) Only a small fraction of calbindin-expressing cells in LEC L2 are GABAergic. Left, representative images of LEC L2 from coronal sections of mice expressing tdTomato in Gad2-positive neurons immunostained for calbindin. Center, distance of labeled neurons from the pia (n = 6 slices from three mice). Right, overlap between labeled neurons (n = 6 slices, three mice). (d, e) Optogenetic tagging of ChR2-expressing neurons in NetrinG1 cre and Calb1cre mice. (d) Single units identified as fan cells in NetrinG1cre mice. Top, spike raster and PSTH from a ChR2-expressing cell responding to LED illumination (5 ms, 473 nm). Bottom, plot of all L2 cells recorded during phototagging experiments rank ordered by LED-evoked firing rate. Symbols at right indicate cells meeting tagging criteria (see Methods). (e) Identified pyramidal cells in Calb1cre mice as in (d). The longer latency for activation of NetrinG1 cells may reflect lower levels of ChR2 expression compared to pyramidal cells. (f\u2013i) Summary of NetrinG1cre/fan and Calb1cre/pyramidal cell responses (50- to 100-ms postinhalation). (f) Percent of activated NetrinG1 (green) and calbindin (purple) cells. (g) Lifetime sparseness of odor-evoked activity. (h) Mean firing rate of odor-evoked activity all cell\u2013odor pairs. (i) Mean pairwise peak time difference at different intensities. Error bars represent standard error of the mean (SEM).\n\nWe crossed NetrinG1cre and Calb1cre mice with the Ai32 line to express ChR2 in LEC L2 fan and pyramidal cells, respectively, and used phototagging (Lima et al., 2009) to identify the cell types during single-unit recording in awake, head-fixed mice (n = 12 recordings from 10 NetrinG1cre mice and n = 7 recordings from 7 Calb1cre mice, Figure 6\u2014figure supplement 1). Both identified cell types showed an early peak of odor-evoked activity (Figure 6c, d) and we found only modest differences in ensemble coding of odor identity; the number of activated units per odor and mean evoked firing rate was slightly greater for pyramidal cells while lifetime sparseness (a measure of odor selectivity) was higher for fan cells (Figure 6\u2014figure supplement 1).\n\nIn contrast to the subtle distinctions in odor identity coding, we found a notable difference in how changes in odor concentration modulated spike timing in fan and pyramidal cells. While the average latency to peak response shifted earlier as concentration increased for pyramidal cells, the time course of fan cell responses appeared concentration invariant (Figure 6e). We confirmed this by quantifying the peak responses for all cell\u2013odor pairs. We found that although peak firing rates slightly increased with odor concentration for both cell types (Figure 6f, fan: \u03c1 = 0.04, p = 0.009, n = 112 cells; pyramidal: \u03c1 = 0.04, p = 0.009, n = 98 cells, Spearman\u2019s rank correlation), they differed significantly in how odor concentration modulated spike timing: time to peak firing for pyramidal cells became faster as concentration increased, whereas fan cell peak firing times were largely unaffected (Figure 6g, fan: \u03c1 = \u22120.02, p = 0.2; pyramidal: \u03c1 = \u22120.09, p < 0.001, Spearman\u2019s rank correlation; fan vs. pyramidal peak time: 0.25% p < 0.001, 0.33% p < 0.001, 0.5% p = 0.01, 1% p = 0.7, t-test). Interestingly, the peak firing times of fan cells typically preceded pyramidal cells (Figure 6g) and pyramidal, but not fan cells, fired more synchronously as odor concentration increased (Figure 6\u2014figure supplement 1). The temporal shift in pyramidal cell activity and earlier (but constant) timing of fan cell responses underlies spike synchronization between the cell types as odor concentration increases (Figure 6h, \u03c1 = \u22120.05, p < 0.001, Spearman\u2019s rank correlation). Together, these results show that relative differences in spike timing between fan and pyramidal cells can account for the temporal coding of odor intensity in LEC L2.\n\n### A purely temporal code for odor intensity in CA1\n\nSpike timing and synchrony in L2 of LEC provide a potential mechanism for odor intensity coding, but is this information relevant downstream in the hippocampus? To probe how information from LEC was routed to the hippocampal formation, we first traced the projections from L2 principal cells by injecting AAV1-CAG-FLEX-tdTomato into the LEC of NetrinG1cre and Calb1cre mice (Figure 7a, b). This showed that fan cells send dense input to the outer molecular layer of the DG via the lateral perforant path (Figure 7a, Leitner et al., 2016; Vandrey et al., 2020). Injections in Calb1cre mice revealed projections from L2 pyramidal cells to hippocampal CA1 through the temporoammonic pathway (Figure 7b, Amaral and Witter, 1989; Kitamura et al., 2014; Masurkar et al., 2017). This tracing confirmed that information from LEC L2 is relayed to CA1 via both direct (pyramidal cell) and indirect (fan cell) pathways.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig7-v2.jpg)\n\n**Figure 7.:** (a, b) Fan and pyramidal cells target distinct hippocampal regions. (a) Schematic of fan cell anterograde viral tracing strategy in NetrinG1cre mice and images showing AAV-FLEX-tdTomato expression (red) at lateral entorhinal cortex (LEC) injection site (left) and projections concentrated in DG (right). (b) Schematic of pyramidal cell tracing strategy in Calb1cre mice and images showing AAV-FLEX-tdTomato expression (red) at LEC injection site (left) and projections concentrated in CA1 stratum (s) lacunosum moleculare (slm, right). Hippocampal regions: so, s. oriens; sp, s. pyramidale; sr, s. radiatum; ml, DG molecular layer; sg, DG s. granulosum; h, DG hilus. (c\u2013f) Rapid odor-evoked changes in firing rate encode odor identity but not intensity in CA1 pyramidal cells. (c) CA1 pyramidal cells respond rapidly to odors. Left, experimental setup. Right, odor-evoked firing rates for all cell\u2013odor pairs rank ordered by time of peak firing in CA1 (n = 609 cells, 11 odors). Peristimulus time histograms using only even trials are sorted relative to the peaks obtained from odd trials. (d) Average activity at four odor concentrations for CA1 cells aligned to inhalation onset show that firing rate is independent of odor concentration. (e) Firing rate encodes odor identity in CA1. Plot shows classification accuracy of odor identity at the different intensities (0.25%, 0.33%, 0.50%, and 1.00%) based on the average firing rate in a fixed time window (81\u2013131 ms after inhalation onset). Chance, dotted line. (f) Firing rate does not encode odor intensity. Classification accuracy of odor intensity for 11 odors based on average firing rate in the same fixed time is no better than chance (dotted line). (g\u2013j) Odor intensity encoded by spike timing changes in CA1. (g) Data from (d) on a faster timescale show odor concentration-dependent shift in timing of peak response. Arrowheads indicate peak times for the concentrations indicated by different shading. (h) Peak firing rate of odor-evoked activity for all cell\u2013odor pairs is independent of concentration. (i) Peak time of odor-evoked activity for cell\u2013odor pairs is concentration dependent. (j) Pairwise peak time differences between neurons indicates that odor-evoked firing in CA1 becomes more synchronous as odor concentration is increased. Error bars represent standard error of the mean (SEM).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75065/elife-75065-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a\u2013d) Summary of CA1 responses to odor concentrations (81- to 132-ms postinhalation). (a) Percent of activated cells per odor. (b) Mean firing rate of odor-evoked activity for all cell\u2013odor pairs. (c) Lifetime sparseness of odor-evoked activity. (d) Euclidean distance of the first three principal components (74% explained variance) of odor-evoked activity between 11 odors (gray to black) at the different concentrations (binned with 1-ms time window). Blue line indicates Euclidean distance between intensities for any given odor. (e, f) Linear classifier performs well using CA1 firing rate to decode odor identity but performs poorly decoding odor intensity. (e) Classification accuracy for odor identity at different intensities (0.25%, 0.33%, 0.50%, and 1.00%) based on average firing rate (50-ms sliding window with 5-ms steps). (f) Classification accuracy of odor intensity for all 11 odors based on average firing rate. (B3) CA1 activity becomes more synchronized as odor concentration increases. Left, peak time histograms of odor-evoked activity at different intensities for all cell\u2013odor pairs. Right, kurtosis of the peak time distributions shown at left. Error bars represent standard error of the mean (SEM).\n\nWe next used linear silicon probes to record odor-evoked activity in intermediate CA1 in awake, head-fixed mice (n = 609 cells from 13 recordings in 11 mice). Like PCx and LEC, cells in CA1 preferentially responded early during individual sniffs (Figure 7c, d) and peak odor-evoked firing in CA1 (106 ms, odor concentration 1%) occurred briefly after LEC fan (72 ms) and pyramidal (78 ms) cells. Surprisingly, in contrast to LEC L2, the peak firing rate in CA1 was insensitive to odor concentration (Figure 7d compared to Figure 4b). Unlike LEC, the percentage of activated cells per odor, mean firing rate, and response sparseness were also concentration independent in CA1 (Figure 7\u2014figure supplement 1). This suggests that rate coding features found in LEC that could contribute to odor intensity discrimination are discarded at the level of CA1. Indeed, although PCA (Figure 7\u2014figure supplement 1) and the use of linear classifiers revealed that odor identity could be distinguished with high accuracy (Figure 7e, Figure 7\u2014figure supplement 1), odor intensity could not be decoded from CA1 firing rates (Figure 7f, Figure 7\u2014figure supplement 1). Thus, firing rates contain information about odor identity, but not intensity in CA1.\n\nImportantly, we observed that the timing of early odor-evoked activity was dependent on concentration in CA1 (Figure 7g). Although peak firing rate was concentration insensitive, the time to peak shifted earlier as concentration increased (Figure 7h, i, peak rate: \u03c1 = \u22120.002, p = 0.7; peak time: \u03c1 = \u22120.04, p < 0.001, n = 609 cells, Spearman\u2019s rank correlation). As we found for LEC, pairwise peak time differences were reduced with increasing odor concentration (\u03c1 = \u22120.01, p < 0.001, Spearman\u2019s rank correlation), indicating that firing also became more synchronized within CA1 (Figure 7j, Figure 7\u2014figure supplement 1). These findings indicate that downstream of LEC, odor intensity must ultimately be represented by changes in spike timing in CA1.\n\n## Discussion\n\nIn this study, we examined olfactory information processing in the LEC of awake mice. We found that odors activate principal L2 cells early during individual sniffs and that LEC is essential for rapid odor-guided behavior. Odor identity was readily decoded from the firing rates of ensembles of L2 cells, but rate coding appeared less useful for discerning odor intensity. Interestingly, changes in odor concentration were well described by shifts in the timing and synchrony of L2 cell spikes. We found that the two types of L2 principal neurons, fan and pyramidal cells, differ in their functional properties. Slice recordings revealed stronger olfactory input and weaker PV cell inhibition of L2 fan cells compared to pyramidal cells and targeted in vivo recordings showed that spike timing differences between the cell types contribute to odor intensity coding in LEC. Interestingly, we found that CA1 discards any concentration-dependent firing rate changes inherited from LEC and represents odor intensity using a purely temporal code.\n\nIn awake animals, the timing of respiration-coupled activity driven by odors varies across brain regions. While population activity of OB mitral cells spans individual respiration cycles, L2/3 pyramidal cells in PCx respond to odors preferentially early after odor inhalation (Bolding and Franks, 2018; Shusterman et al., 2011). Recurrent inhibition has been found to enforce the short time window for sniff-coupled activity elicited by odors in PCx (Bolding and Franks, 2018). Here, we show in LEC, which receives input from both the OB and PCx, that odor-evoked activity is also largely limited to an early window within 100 ms of odor inhalation. Like PCx, local feedback inhibition presumably curtails late odor-evoked activity in LEC.\n\nPrevious behavioral studies have differed regarding the importance of LEC for odor discrimination. Chemical inactivation using LEC muscimol infusion in rats was reported to impair discrimination of complex but not simple multiodor mixtures (Chapuis et al., 2013). This suggests that LEC is only required for behavior requiring difficult odor discrimination. In contrast, more recent work in mice found that LEC muscimol infusion (Lee et al., 2021) or optogenetic suppression of LEC inputs to CA1 (Li et al., 2017) degraded performance in simple, two-odorant discrimination tasks. Moreover, the LEC and fan cells in particular appear to play a critical role in the learning of new olfactory cue\u2013reward associations (Igarashi et al., 2014; Lee et al., 2021). We found that optogenetic suppression of the LEC abolished rapid behavioral discrimination of both odor identity and intensity, indicating that the LEC is essential for simple odor-guided behavior. Mice made decisions during the 2AFC task using information obtained early during single sniffs of odor. Thus, it is likely that L2 activity early during individual sniffs is critical for odor-driven behavior. Our experiments required simple discrimination of markedly different odorants or odor concentrations; we do not rule out the possibility that mice could integrate LEC activity over longer periods (even across multiple sniffs) during tasks requiring more difficult odor discrimination.\n\nWhile acute optogenetic silencing of LEC disrupted performance in behavioral tasks requiring discrimination of odor identity and intensity, our findings do not necessarily prove that odor discrimination within the LEC is required for behavior. It could be the case that LEC is essential for the retrieval of learned odor\u2013reward associations while discrimination is provided elsewhere (i.e., piriform cortex). Nonetheless, our results are consistent with LEC playing a critical role in odor-driven behavior. An additional caveat to experiments using optogenetic silencing, is that acute perturbations could disrupt behavior by removing \u2018permissive\u2019 activity for downstream structures, rather than implicating the target circuit as \u2018instructive\u2019 for the behavior (Wolff and \u00d6lveczky, 2018). Future experiments examining the effects of chronic LEC inactivation on odor discrimination will be useful to probe this possibility.\n\nGiven the timing of odor-guided behavior and odor-evoked activity in LEC, we studied how information regarding odor identity is encoded by rapid L2 cell responses. We find that different odors are represented by overlapping ensembles of active cells in LEC, similar to odor coding in PCx (Blazing and Franks, 2020; Miura et al., 2012; Poo and Isaacson, 2009; Stettler and Axel, 2009; Uchida et al., 2014). Population analyses established that a firing rate code distinguished odor identity in L2 and distinct odor representations emerged rapidly (<100 ms) after inhalation. Interestingly, as in PCx (Bolding and Franks, 2017), simply knowing whether cells were activated or not by odors was as effective as knowing actual firing rates when decoding odor identity from population activity.\n\nIncreases in odor concentration over a fourfold range caused modest increases in firing rate of L2 cells and population analyses revealed that increases in concentration could improve discrimination of odor identity. However, for individual odors, changes in firing rate worked relatively poorly for decoding odor intensity from population activity. Analyzing odor response kinetics revealed another way odor intensity is represented in LEC. We found that increases in concentration shifted the times of peak odor responses earlier during individual sniffs and spiking became more synchronized across cells. In anterior PCx, odor representations were reported to be \u2018concentration invariant\u2019 when rapid population responses were studied using firing rates (Bolding and Franks, 2018). On the other hand, a subpopulation of PCx neurons whose latencies decreased as odor concentrations increased have been suggested to provide a temporal code for odor intensity (Bolding and Franks, 2017). In LEC, firing rate clearly provides some information, albeit limited, for determining odor intensity from population activity. However, temporal features of the population response can well represent intensity in LEC.\n\nWe studied LEC L2 microcircuits in more detail using voltage-clamp clamp recordings in brain slices. We found that the L2 principal neuron subtypes, fan and pyramidal cells, differed in their local and long-distance inputs. Fan cells receive contacts from more OB mitral cells than pyramidal cells. PCx inputs are also stronger onto fan cells. One simple explanation for these differences is the fact that fan cells have more extensive apical dendrites spreading through L1, where inputs converge from LOT and PCx. Intriguingly, fan cells also received markedly weaker inhibition from PV cells. This suggests that odors may produce stronger afferent excitation and weaker somatic inhibition in fan vs. pyramidal cells. Interestingly, a study using paired recordings to examine local connectivity in LEC slices (Nilssen et al., 2018) reported that fast spiking cell connectivity was more prevalent with fan (17 connections of 28 pairs, 61%) than pyramidal cells (3 of 11, 27%). Differences in the approach for targeting interneurons genetic targeting (ours) vs. electrophysiological properties (Nilssen et al., 2018) could account for the apparent discrepancy between the studies.\n\nWe studied odor-evoked responses of fan and pyramidal cells using optogenetic tagging in cre mice. If connections from OB mitral cells to LEC are distributed \u2018randomly\u2019 as proposed for the PCx (Schaffer et al., 2018; Sosulski et al., 2011; Stettler and Axel, 2009) the fact that fan cells receive more LOT input than pyramidal cells suggests that they might be more broadly tuned for odors. However, we found odor representations were actually sparser for fan compared to pyramidal cells. This observation is consistent with a recent calcium imaging study reporting that fan cells are more odor selective than pyramidal cells (Leitner et al., 2016). Given the smaller size of the LOT at the level of the LEC, odor representations here are presumably less influenced by direct OB input than PCx. More studies examining the distribution of OB inputs in the LEC would help understand tuning properties in this region.\n\nWe found marked differences in the timing of sniff-coupled responses in fan and pyramidal cells as odor concentration changed. Fan cells always responded earlier than pyramidal cells and their peak response times were largely concentration invariant. In contrast, the peak response times of pyramidal cells consistently shifted earlier as concentration increased. The net effect was a concentration-dependent increase in the synchrony of spiking between the two cell populations. We suspect that the stronger olfactory input and weaker PV inhibition onto fan cells, rather than broadening odor tuning, leads to their earlier activation than pyramidal cells following odor inhalation. Spike timing only carries information in relation to a reference signal. Our data suggest that fan cells could provide such a reference signal and the synchrony of fan and pyramidal cell firing could be used by downstream areas to read out odor intensity.\n\nLike L2 LEC cells, CA1 neurons preferentially responded early during individual sniffs. Interestingly, firing rates of CA1 cells were completely insensitive to changes in odor concentration. This means that CA1 discards any firing rate changes encoding odor intensity relayed by LEC. Rather, odor intensity was encoded purely by concentration-dependent shifts in spike timing resulting in higher levels of spike synchrony as concentration increased. Temporal coding is thought to contribute to a variety of hippocampal features such as episodic memory and spatial navigation (Dragoi, 2020; Eichenbaum, 2014). The temporal coding of odor intensity in hippocampus is likely also critical for basic behaviors requiring navigation to odor sources.\n\n## Materials and methods\n\nAll animal procedures were in accordance with protocols approved by the University of California, San Diego Institutional Animal Care and Use Committee and guidelines of the National Institutes of Health. Both female and male mice (>6 weeks old) were used for in vivo experiments. The following strains were obtained from JAX (stock number): C57BL/6J (000664), Tbx21cre (024507), Gad2-Cre (010802), Pvalbcre (008069), Sstcre (013044), Calb1cre (028532), Ai14(RCL-tdT) (007914), and Ai32(RCL-ChR2(H134R)/EYFP) (024109). Ntsr1(209)cre mice (Tg(Ntsr1-cre)209Gsat) were obtained from the Gensat Project. Cre+ neurons in olfactory cortical areas have previously been characterized as pyramidal neurons (Boyd et al., 2012; Stokes and Isaacson, 2010). NetrinG1cre mice were kindly provided by Fan Wang (Duke University). Mice were maintained on a 12:12 reversed light:dark cycle and experiments were performed during the dark period.\n\n### Viral and retrobead injections\n\nNetrinG1cre or Calb1cre mice were anesthetized (2% isoflurane) and injected with AAV1-CAG-FLEX-tdTomato (200 nl at 20 nl/min, Addgene #28306) into the LEC (coordinates: ~3.6 mm posterior to bregma, 1.5\u20132.0 mm ventral to the lateral ridge on the posterior part of the temporal bone, 0.3\u20130.4 mm from dura at a 90\u00b0 angle). Orientation of the LEC was assisted by visualizing the rhinal vein through the skull. For bead injections, Ntsr1cre \u00d7 Ai14, NetrinG1cre \u00d7 Ai14 mice, or Calb1cre \u00d7 Ai14 were anesthetized (2% isoflurane) and injected with green retroBeads (500 nl at 100 nl/min, Lumafluor) into the DG (coordinates from bregma: 3.0 mm posterior, 2.0 mm lateral, 2.5 mm ventral from dura) or the OB (coordinates from bregma: 5.0 mm anterior, 0.8 mm lateral, 0.5 mm ventral from dura), respectively. After all injections, mice received dexamethasone (2 mg/kg) and buprenorphine (0.1 mg/kg) before return to their home cage. Mice were used for experiments 4 weeks after viral injections and 3 days after bead injections.\n\nFor in vitro recordings of PCx input to LEC, neonatal mice (postnatal day 0\u20132) were anesthetized by hypothermia and AAV9-hSyn-hChR2(H134R)-eYFP-WPRE-hGH was injected at four sites (23 nl/site, depths of 0.18\u20130.25 mm) targeting the anterior PCx based on landmarks including the superficial temporal vein and the posterior border of the eye (Boyd et al., 2012). Brain slices were made 3\u20134 weeks after injection.\n\n### Immunohistochemistry\n\nMice used for histology were transcardially perfused with 4% paraformaldehyde in PBS and the brains extracted. Fixed brains were kept in 4% paraformaldehyde at 4\u00b0C for 24 hr and in 30% sucrose for 24\u201348 hr. Coronal sections were cut at 50 \u00b5m. Free floating sections were washed in TBS, permeabilized and blocked in TBS containing 10% horse serum and 0.2% Triton X-100, and incubated overnight with primary antibodies (mouse anti-reelin, 1:2000, MAB5364, Merck Millipore; rabbit anti-calbindin, 1:5000, CB-38a, Swant). Slices were washed in TBS, incubated for 2 hr with secondary antibodies (goat anti-mouse Alexa Fluor 488, 1:500, A11029, Thermo Fisher; goat anti-rabbit Alexa Fluor 488, 1:500, A11008, Thermo Fisher; goat anti-rabbit Alexa Fluor 647, 1:500, A32733, Thermo Fisher). Slices were mounted on slides (Vectashield medium with DAPI), imaged using a confocal microscope (Leica SP8) and subsequently analyzed with ImageJ.\n\n### Brain slice experiments\n\nMice were anesthetized with isoflurane and decapitated. Brains were removed and placed into ice-cold artificial cerebrospinal fluid (aCSF) containing (in mM) 83 NaCl, 2.5 KCl2, 0.5 CaCl2, 3.3 MgSO4, 1 NaH2PO4, 26.2 NaHCO3, 22 glucose, and 72 sucrose, equilibrated with 95% O2 and 5% CO2. Coronal slices (300\u2013400 \u03bcm thickness) containing the LEC were cut using a vibrating slicer and incubated at 35\u00b0C for 30 min. Slices were transferred to a recording chamber and superfused with aCSF containing (in mM) 119 NaCl, 5 KCl, 2.5 CaCl2, 1.3 MgSO4, 1 NaH2PO4, 26.2 NaHCO3, and 22 glucose, equilibrated with 95% O2 and 5% CO2. All experiments were conducted at 28\u201330\u00b0C.\n\nPatch-clamp recordings were performed using an upright microscope and DIC optics. Recordings were made using a Multiclamp 700 A amplifier (Molecular Devices) digitized at 20 kHz and acquired using AxographX software. For current clamp recordings, pipettes (3\u20136 M\u03a9) contained (in mM) 150 potassium gluconate, 1.5 MgCl2, 5 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) buffer, 0.1 ethylene glycol-bis(\u03b2-aminoethyl ether)-N,N,N\u2032,N\u2032-tetraacetic acid (EGTA), 10 phosphocreatine, and 2.0 Mg-ATP, pH 7.4. For voltage-clamp recordings, the internal solution contained (in mM): 130 D-gluconic acid, 130 CsOH, 5 NaCl, 10 HEPES, 0.2 EGTA, 12 phosphocreatine, 3 Mg-ATP, and 0.2 Na-GTP [pH 7.3]. Biocytin (0.2%) was added to the pipette to allow for recovery of cell morphology. Series resistance was routinely <20 M\u03a9 and continuously monitored. Output from a collimated LED light source (470 nm, ThorLabs) was directed through the \u00d740 microscope objective for full-field photoactivation of ChR2.\n\nFor reconstruction of biocytin-filled cells, slices were fixed overnight in 4% PFA and then transferred into 30% sucrose. Biocytin was immunolabeled using 1:500 Alexa Fluor 488 strepavidin (Invitrogen, S32354). Slices were mounted on slides (Vectashield), imaged using a two-photon microscope (Olympus Fluoview) and subsequently analyzed with ImageJ.\n\n### Olfactory-driven behavior\n\nUnder isoflurane anesthesia (2%), Gad2cre \u00d7 Ai32 or Gad2cre mice were implanted with a metal head bar for head fixation. The skull above the LEC was exposed bilaterally by carefully detaching muscles from the lateral ridge of the skull. An area of bone (~750 \u00b5m diameter) over LEC was thinned and covered with transparent cyanoacrylate glue to create a window for LED illumination. This window location makes it unlikely that PCx or medial entorhinal cortex were photosuppressed and surface illumination should not impact deeper brain regions such as the ventral hippocampus. Post hoc diI marking of the window center confirmed its location over LEC. After implantation, mice received dexamethasone (2 mg/kg) and buprenorphine (0.1 mg/kg) before returning to their home cage. Behavioral experiments were conducted using Bpod State Machines (Sanworks). After >7 days of recovery, mice were water deprived (1 ml/day) and accustomed to handling and head fixation. Subsequently, mice were trained to lick for water in response to odor stimulation and trained to discriminate odor identity (isoamyl acetate 1% [vol/vol] vs. limonene 1% [vol/vol] in mineral oil) or odor intensity (ethyl tiglate 0.25% vs. 1% [vol/vol] in mineral oil) for several days in a 2AFC task until they reached the criterion of 75% correct choices. Mice indicated their choices by licking one of two lick ports for a water reward (5 \u00b5l). Respiration was recorded with a pressure sensor at the nose. Trials were initiated with a 50-ms tone. A custom-made closed-loop olfactometer was used for precisely timed and stable odor stimulation triggered by respiration. Odors were delivered for 1 s and mice were given a 2-s response time from the start of odor delivery. Error trials were followed by a 4-s timeout. On test day, mice performed the 2-AFC task with bilateral optogenetic silencing of the LEC (transcranial stimulation with fiber-coupled LEDs, Thorlabs, 470-nm, 1000-\u00b5m core fibers, 10-ms pulses, 20 Hz) randomly on 25% of trials. LED fibers were shielded to minimize light leakage. Control experiments were performed using Gad2cre \u00d7 Ai32 mice in which the optical windows above LEC was shielded from LED illumination or Gad2cre mice that were not expressing ChR2. For analysis of response times, all trials were aligned to the onset of the first inhalation after stimulus onset.\n\n### In vivo recordings and olfactory stimulation\n\nMice were implanted with a metal head bar for head fixation as described previously. The skull above the OB (coordinates from bregma: 5.0 mm anterior, 0.8 mm lateral), PCx (coordinates from bregma: 1.7 mm anterior, 2.5 mm lateral), LEC (see above and Figure 1\u2014figure supplement 1), and/or CA1 (coordinates from bregma: 3.6 mm posterior, 4.4 mm lateral) was exposed and electrode insertion sites were marked on the skull. After >4 days of recovery, mice were accustomed to handling and head fixation. During recording, awake mice sat quietly in a loosely fitted plastic tube. Silicon probes were inserted into the OB (16-channel, Neuronexus, 0.5 mm from dura), PCx (32-channel, Cambridge Neurotech, 3.6 mm from dura), LEC (32-channel, Cambridge Neurotech, 0.8 mm from dura at a 90\u00b0 angle), and/or CA1 (64-channel, Cambridge Neurotech, 2.2 mm from dura at a 45\u00b0 angle). Electrodes were left in place for ~45 min before recordings were initiated. Signals were recorded using an Open Ephys acquisition board and digitized at 20 kHz using Open Ephys software. Probes were coated in DiI to verify recording locations post hoc. A small number of mice were used for a second recording session within several days by covering the craniotomy with silicon sealant after the first recording. Distinct probe tracks in these mice make it unlikely that the same neurons were recorded across the two sessions.\n\nFor LEC, we used 16 channels of the 32-channel linear probe (25 \u00b5m electrode spacing). The probe was inserted such that the top four channels were outside the cortex (easily determined from the difference in noise level across sites during recording). The remaining channels (5\u201316) used for recording extended only 300 \u00b5m into the LEC from the cortical surface. Thus, most of the neurons we recorded should be limited to L2.\n\nA custom-made, Arduino-controlled closed-loop olfactometer was used for precisely timed and stable odor stimulation triggered by respiration. Odor timing was verified using a fast PID (Aurora Scientific). For odor trials, charcoal-filtered air (1 l/min) was directed to glass vials containing monomolecular odorants (Figure 3, 1% [vol/vol] in mineral oil) or an odor blank (mineral oil alone) using mass flow controllers. Odors were delivered in randomized order and concentrations of 0.25%, 0.33%, 0.50%, and 1% were achieved by adding 0\u20133 blank lines to the odor line. Recordings were made using 25 repetitions of each odor at each concentration.\n\nFor phototagging of cells in NetrinG1cre \u00d7 Ai32 and Calb1cre \u00d7 Ai32 mice, a fiber-coupled LED (470-nm, 400-\u00b5m core fiber, Thorlabs) was positioned within 1 mm of the exposed skull above the LEC. 5-ms light pulses were used to excite ChR2-expressing NetrinG1cre or Calb1cre neurons. Tagged units were identified based on both a significant increase in firing rate and consistent spike latency within a 5-ms window from LED onset (Kvitsiani et al., 2013). Given the lack of an obvious border between layers 2 and 3, the tagged pyramidal cell population we study may include a small number of L3 calbindin-expressing cells.\n\nFor recordings of responses to ChR2 activation of OB mitral cells in Tbx21cre \u00d7 Ai32 mice, the fiber-coupled LED was positioned within 1 mm of the exposed skull above the OB.\n\n### In vivo data analysis\n\nAnalysis was performed using MATLAB R2018b (MathWorks). Spikes were sorted using Kilosort2 (https://github.com/MouseLand/Kilosort; Pachitariu, 2021), followed by manual curation in Phy (https://github.com/cortex-lab/phy; Rossant, 2021) to obtain single units used for analyses. Cells were excluded from analysis if they did not maintain consistent firing and amplitude throughout the recording. For analysis of odor-evoked activity, all stimulation trials were aligned to the onset of the first inhalation of odor. Units were considered activated when mean firing rate in response to odor stimulation significantly increased compared to blank stimulation using paired t-tests (p < 0.05). Spike-density functions were calculated using a gaussian kernel (\u03c3 = 10 ms) and averaged across trials. Lifetime sparseness of single units was calculated based on the mean firing rate change across odors as:\n\n$$\n1-\\sum_{j=1,N}r_{j}/N^{2}/\\sum_{j=1,N}r_{j}^{2}/N/1-1/N\n$$\n\nwhere rj is the response of the unit to odor j and N is the total number of odors. Negative responses were set to 0 for this measure. This provides a measure of how selective the response of a unit was distributed among all odors (completely selective = 1, nonselective = 0).\n\nPCA was performed on pseudopopulation responses of all recorded units. Euclidean distance was computed on the first three principal components in 1 ms bins. Support vector machine classification was performed on pseudopopulation responses of all recorded units in a one-vs-one coding scheme with 20% holdout validation to test the model. Statistical comparisons were performed using paired and unpaired t-tests, and Spearman\u2019s rank correlations.\n",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "42300b96-70f9-4920-9d50-83fa9136be07",
+      "submission_id": "da2da7e6-5bbd-4a1c-b2f0-c406f9c3c94b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, https://ror.org/03vek6s52 Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75065.sa0](https://doi.org/10.7554/eLife.75065.sa0)\n\nThis work provides rigorous and high quality data regarding how neurons in the lateral entorhinal cortex (LEC) represent odor information as well as supporting a critical role of this area in odor discrimination. The LEC is an understudied area of the brain, yet critical for odor associations. This work will be of great interest to a wide neuroscience audience.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, https://ror.org/03vek6s52 Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75065.sa1](https://doi.org/10.7554/eLife.75065.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Rapid odor processing by layer 2 subcircuits in lateral entorhinal cortex\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Naoshige Uchida as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Laura Colgin as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAs you will see below, all the reviewers appreciate the rigor of single neuron recording and slice physiology experiments, and the importance of the results from these experiments. However, the reviewers noted some difficulties in interpreting the optogenetic experiments to demonstrate the importance of LEC in a simple odor discrimination. The reviewers discussed on this issue, and agreed that careful discussions on potential caveats of this experiment would be necessary before publication of this work in eLife.\n\n1. A recent study by Kei Igrashi's group (Lee et al., Nature, 2021) showed that inhibition of fan cells, but not pyramidal neurons, impaired learning of new associations. Silencing of neither, however, affected the performance in already learned associations. The task and manipulations are somewhat different from the present study so it is difficult to compare directly but this appears to raise some concern or points to interpretational difficulty of the present results.\n\n2. As Reviewer 2 pointed out, the animals with optogenetic silencing exhibited rapid licking relative to odor onset, indicating that the animals are displaying fast guesses before processing odor information. It remains unclear why mice exhibited fast guesses but this raises the possibility that mice reacted before having the chance to process odor information. If this possibility cannot be excluded, it remains unclear whether the impaired performance in the odor discrimination and detection tasks is due to an impairment in odor processing/discrimination or due to some other reasons that prompted mice to react before properly processing an odor.\n\n3. There is a possibility of off-target effects. We recognize that this is true in most of previous experiments using transient manipulations. Nonetheless, given the above concerns, it would be useful to discuss potential caveats of off-target effects in the context of the present experiment.\n\nThe reviewers thought that discussing all of these issues would be important so that the results of optogenetic experiments can be placed in proper contexts. We would like to encourage the authors to include thorough discussions on the above issues as well as other issues raised below concerning the interpretation of the optogenetic experiments. To address these issues, additional experiments can be useful and we would welcome such efforts. However, we do not consider additional experiments to be essential for this revision.\n\nReviewer #2 (Recommendations for the authors):The more rapid behavioral discrimination of intensity (175 ms) vs. identity (225 ms) is interesting and reasonable re: Resulaj and Rinberg (2015 \u2013 i.e. fast, though not necessarily faster concentration discrimination), but not entirely expected from Abraham et al., (2010), Bolding and Franks (2017), or with the authors\u2019 own results about the relative timing of identity vs. intensity information in LEC. Note that this result is not necessarily inconsistent with Bolding or with this study, because of the expectedly longer reaction vs. encoding times, but still the relative difference warrants some discussion.\n\nThe PCA trajectories are nice, and it's somewhat surprising that these returned to baseline by 200 ms. How much of the variance do the first three principal components account for?\n\nAs stated above, the slice physiology experiments are nice, are an important addition to the literature, but are descriptive and do not integrate especially meaningfully into the rest of the manuscript. Interestingly, fan cells resemble semilunar cells in PCx. Like SLs, fan cells receive stronger LOT inputs that PYRs, but unlike SLs, they also receive strong(er) intracortical inputs.\n\nThe concentration effects are small, but the concentration range is small (4-fold; c.f. 100-fold change in Bolding 2017, Roland 2017), which makes it even more remarkable that they were able to resolve their concentration-effects so clearly. This is more of an observation than a point of contention.\n\nFigure 2, b and c \u2013 the authors should state that the red markers represent means +/- sem. The error bars are very hard to see.\n\nThe authors should discuss, even briefly, the role of the LEC in odor-cue association (e.g. Igarashi\u2026Moser, 2014; Lee\u2026Igarashi, 2021; etc).\n\nFigure 3S3b \u2013 The rapid increase and decay of normalized decoding accuracy with a 2-ms window is cute but a bit contrived given how bad actual performance is (a)\n\nWhy did they need to inject flex-tdTomato into Ai14 mice?\n\nReviewer #3 (Recommendations for the authors):\n\nTemporal coding relative to sniffing:\n\nSince sniff-locked encoding is examined across a relatively long period of time after each inhalation (up to 300 ms), and head-fixed mice often breath much faster than 3-4 Hz, additional information would be useful to understand the interpretation of \u201cshort\u201d vs \u201clong\u201d coding latencies.\n\nA. Were any measures taken to correct for multiple sniffs being included in the \u201clong\u201d latency period? From Supp. Figure 1b it does appear that some trials would include a second sniff happening in the time period between 200-300 after the first sniff onset. This could contribute to noise in the late response that would not be present in the early response.\n\nB. Would the short vs. long latency coding results look different if only sniff cycles without another sniff in the long latency bins were included in the analysis? What about separately analyzing \u201cshort\u201d and \u201clong\u201d sniff cycles (similar to Shusterman, et al., 2018)?\n\nC. Could the authors comment on why <100 ms was chosen as an \u201cearly\u201d spiking response relative to inhalation? It seems that what is considered early and late in the sniff cycle can vary across studies, so a rationale here would be useful.\n\nOptogenetic block of LEC:\n\nThe advantage of optogenetics in this context is the precise control that the researchers have over when the disruption is applied to the LEC. The authors argue that early neural activity in the first sniff following odor application is essential for the animals\u2019 performance on the task. They could directly test this by only blocking the LEC after this early phase. The prediction would be that on trials with \u201clate\u201d LEC block animals would have much improved performance compared to those that experience complete block. This technique has been used previously in the olfactory system (the \u201coptogenetic masking\u201d technique of Wilson, et al., 2017 is similar) to investigate \u201cprimacy coding\u201d in the olfactory bulb and would greatly enhance the impact of the current work.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cRapid odor processing by layer 2 subcircuits in lateral entorhinal cortex\u201d for further consideration by eLife. Your revised article has been evaluated by Laura Colgin (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe authors responded to the reviewers\u2019 previous concerns mostly adequately. However, we have one request before accepting this manuscript.\n\nSome issues such as the impact of fast guesses in performance appear to remain as an issue of further discussion, but the current manuscript provides the data for the readers to evaluate. We still would like to request one change regarding the analysis of sequential activity. As the authors\u2019 new analysis in the rebuttal shows, the way the data is currently presented in the manuscript overestimates the extent of sequential activity. The authors\u2019 new analysis using cross validation (sorting with the odd trials and plotting only the even trials) shows a lesser extent of sequence, with the LEC almost losing the sequential pattern. Although there are still some papers that use the authors\u2019 original method (sorting with all trials and plotting all trials) in the field, this practice must be corrected. Therefore, we request that all of the sequential activity figures be replaced to the cross-validated ones (e.g. sorting by the odd trials, and plotting the even trials). Given the apparent loss of sequence in LEC, it would be useful if the authors provide some quantitative analysis of sequence.\n",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "15fa5949-5142-48a2-9c76-cbbecfe804fb",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C1",
+      "claim": "Olfactory information is encoded in lateral entorhinal cortex (LEC) by two classes of layer 2 (L2) principal neurons: fan and pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory information is encoded in lateral entorhinal cortex (LEC) by two classes of layer 2 (L2) principal neurons: fan and pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations to previous work (Canto and Witter, 2012; Kobro-Flatmoen and Witter, 2019; Tahvildari and Alonso, 2005) and experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "d2b787f7-3ee1-4aa9-b488-fc6c2f63af31",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C2",
+      "claim": "L2 cells respond to odors early during single sniffs in awake mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show in awake mice that L2 cells respond to odors early during single sniffs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from simultaneous recordings in OB, PCx, and LEC showing peak activity at 75 ms in LEC (Figure 1c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "70a60e0f-1f7c-4972-8ce1-e69595e0135a",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C3",
+      "claim": "LEC is essential for rapid discrimination of both odor identity and intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show in awake mice that L2 cells respond to odors early during single sniffs and that LEC is essential for rapid discrimination of both odor identity and intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic silencing experiments showing that LEC suppression reduced correct responses to chance level for both odor identity and intensity discrimination (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "5f46ca08-b1de-4bc1-b0f9-ad8189456be2",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C4",
+      "claim": "Rate coding distinguishes odor identity in LEC L2 ensembles.",
+      "claim_type": "EXPLICIT",
+      "source": "Population analyses of L2 ensembles reveal that rate coding distinguishes odor identity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PCA and linear classifier analyses showing high accuracy (>90%) in decoding odor identity from firing rates (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "8d5f0683-e112-4d05-a499-441f7ffdf31c",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C5",
+      "claim": "Firing rates in LEC L2 are only weakly concentration dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Population analyses of L2 ensembles reveal that rate coding distinguishes odor identity, but firing rates are only weakly concentration dependent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing only a 0.8-fold increase in early firing rate for a fourfold change in odor concentration (Figure 4b, Figure 4\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "e79f1fd9-b1b3-45a7-94dd-330949515f23",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C6",
+      "claim": "Changes in spike timing can represent odor intensity in LEC L2.",
+      "claim_type": "EXPLICIT",
+      "source": "Population analyses of L2 ensembles reveal that rate coding distinguishes odor identity, but firing rates are only weakly concentration dependent and changes in spike timing can represent odor intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing that peak firing times shift earlier with increasing odor concentration and that spike synchrony increases with concentration (Figure 4i-k).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "a847cd8b-34d3-42ff-b673-edc8a0d75006",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C7",
+      "claim": "L2 principal cells differ in afferent olfactory input.",
+      "claim_type": "EXPLICIT",
+      "source": "L2 principal cells differ in afferent olfactory input and connectivity with inhibitory circuits",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by brain slice recordings showing that fan cells receive stronger direct OB input (136.7 \u00b1 3 pA vs. 22.3 \u00b1 5.5 pA) and stronger PCx input (331 \u00b1 41.4 pA vs. 174 \u00b1 22.6 pA) than pyramidal cells (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "63c2e636-0030-4c93-9e27-118080786bbd",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C8",
+      "claim": "L2 principal cells differ in connectivity with inhibitory circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "L2 principal cells differ in afferent olfactory input and connectivity with inhibitory circuits",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by brain slice recordings showing that fan cells receive substantially less inhibition from PV cells than pyramidal cells, while both receive similar SOM cell-mediated inhibition (Figure 5i-n).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "2d7aba27-17e2-4077-bf87-df34875cee32",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C9",
+      "claim": "The relative timing of pyramidal and fan cell spikes provides a temporal code for odor intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "the relative timing of pyramidal and fan cell spikes provides a temporal code for odor intensity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic tagging experiments showing that pyramidal cell peak firing times shift earlier with increasing concentration while fan cell timing remains constant, resulting in concentration-dependent synchrony (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "f00b700f-c04b-4d83-a2d4-376c42b44720",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C10",
+      "claim": "Odor intensity is encoded purely by spike timing in hippocampal CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream, intensity is encoded purely by spike timing in hippocampal CA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CA1 recordings showing that firing rates are insensitive to odor concentration but peak firing times shift earlier and synchrony increases with concentration (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "702da4e8-5be6-46dc-a462-758dbc9d374a",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C11",
+      "claim": "OB mitral cells fire spikes at odor-specific latencies that tile individual respiration cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "While OB mitral cells fire spikes at odor-specific latencies that tile individual respiration cycles (Bathellier et al., 2008; Cury and Uchida, 2010; Shusterman et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work and confirmed by data in Figure 1 showing OB responses distributed across the respiration cycle.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "9c9adeba-273d-464f-9df6-975308f95e97",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C12",
+      "claim": "PCx pyramidal cells preferentially fire within the first 100 ms of odor inhalation.",
+      "claim_type": "EXPLICIT",
+      "source": "PCx pyramidal cells preferentially fire within the first 100 ms of odor inhalation (Bolding and Franks, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and confirmed by simultaneous recordings showing PCx peak at 53 ms (Figure 1c).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "97ef811a-ba0d-4f16-a0d3-1993561e0449",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C13",
+      "claim": "Odors evoked OB mitral cell activity during both early and late phases of a sniff with peaks at 43 and 232 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "while odors evoked OB mitral cell activity during both early and late phases of a sniff (peaks at 43 and 232 ms, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from simultaneous recordings shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "25395f27-b001-418e-abca-5f5bb50c0658",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C14",
+      "claim": "Responses in PCx selectively occurred early (peak time 53 ms) after odor inhalation.",
+      "claim_type": "EXPLICIT",
+      "source": "responses in PCx selectively occurred early (peak time 53 ms) after odor inhalation (Figure 1c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from simultaneous recordings shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "4393624f-d4df-4474-9559-605c8413b83d",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C15",
+      "claim": "Activity in LEC preferentially occurred early after odor inhalation with a peak at 75 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that simultaneously recorded activity in LEC also preferentially occurred early after odor inhalation (peak at 75 ms, Figure 1c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from simultaneous recordings shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "bb4b047c-08d7-4f77-be2f-7b4aa01df23a",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C16",
+      "claim": "The percentage of significantly activated cells per odor during the early phase of respiration (<100 ms after inhalation) was greater in the PCx and LEC compared to the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the percentage of significantly activated cells per odor during the early phase of respiration (<100 ms after inhalation) was greater in the PCx and LEC compared to the OB (Figure 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis of single-unit recordings shown in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "618844e0-7fa2-4fed-87cf-dce23a997ade",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C17",
+      "claim": "The fraction of activated cells per odor during later times (200- to 300-ms postinhalation) was lowest for the LEC across the three olfactory areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, across the three olfactory areas, the fraction of activated cells per odor during later times (200- to 300-ms postinhalation) was lowest for the LEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative analysis of single-unit recordings shown in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "eab65fe5-dddf-4026-9c51-5941dde64856",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C18",
+      "claim": "LEC silencing reduced the fraction of correct responses to chance level in odor identity discrimination (LED off: 83.76 \u00b1 3.17%, LED on: 57.06 \u00b1 5.22%, p = 0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LEC is critical for discrimination of odor identity since LEC silencing reduced the fraction of correct responses to the chance level (Figure 2b, LED off: 83.76 \u00b1 3.17%, LED on: 57.06 \u00b1 5.22%, p = 0.009, paired t-test, n = 6 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic silencing experiments during 2AFC behavior shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "9e305183-b820-443c-9a36-1318b2220aeb",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C19",
+      "claim": "The discriminability measure d\u2032 became significantly different as early as 225 ms after inhalation onset under control conditions during odor identity discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "by analyzing lick timing, we determined that the discriminability measure d\u2032 became significantly different under control conditions as early as 225 ms after inhalation onset",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of lick timing data shown in Figure 2b and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "ac51bc69-dfc3-49d6-8946-e86669c18a89",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C20",
+      "claim": "Performance accuracy increased within 200 ms of inhalation during odor identity discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "performance accuracy increased within 200 ms of inhalation (Figure 2b, Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of behavioral performance shown in Figure 2b and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "3f196d99-bafc-4cec-be8e-d53b3c1bb150",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C21",
+      "claim": "Silencing LEC reduced the fraction of correct responses to chance level in odor intensity discrimination (LED off: 77.40 \u00b1 1.58%, LED on: 52.37 \u00b1 2.10%, p = 0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing LEC again reduced the fraction of correct responses to the chance level (LED off: 77.40 \u00b1 1.58%, LED on: 52.37 \u00b1 2.10%, p = 0.0003, paired t-test, n = 6 mice)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic silencing experiments during 2AFC behavior shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "e54ddff9-ec01-4a38-a9df-17baef7c2b0c",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C22",
+      "claim": "Mice could perform odor intensity discrimination within 200 ms of odor inhalation.",
+      "claim_type": "EXPLICIT",
+      "source": "analysis of lick times revealed that mice could perform this discrimination rapidly (within 200 ms of odor inhalation, Figure 2c, Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of lick timing data showing d\u2032 becomes significantly different 175 ms following odor inhalation (Figure 2c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "fa4acffc-6945-4c03-b003-26c0f5373170",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C23",
+      "claim": "Odor-evoked firing in LEC L2 peaked in a time window 50\u2013100 ms from the start of odor inhalation.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all cells (n = 576), odor-evoked firing peaked in a time window 50\u2013100 ms from the start of odor inhalation, considerably earlier than respiration-coupled activity observed in the absence of applied odor (blank response, Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of single-unit recordings shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "fe5e5120-e8bb-4db9-9deb-baa4db234e2b",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C24",
+      "claim": "48% of LEC L2 cells showed increases in firing rate to two or more odors.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual odors activated overlapping ensembles of L2 neurons with 48% of cells showing increases in firing rate to two or more odors (Figure 3c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of single-unit responses to 11 odors shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "0bb46b71-4619-4cf2-aff1-3b030c63486e",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C25",
+      "claim": "A linear classifier distinguished odor identities with high accuracy (>90%) within 100 ms of odor inhalation using LEC L2 population activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a sliding time window (integrating 50 ms of activity every 5 ms), the classifier distinguished odor identities with high accuracy (>90 %) within 100 ms of odor inhalation (Figure 3g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by linear classifier analysis of population activity shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "ac175e89-b458-46ef-9a15-3181e8d331d1",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C26",
+      "claim": "Simply knowing which cell ensembles are active across the population provides as much information about odors as cell firing rates in LEC L2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an equally high accuracy in odor identification when cells were characterized only based on whether they showed significant increases in firing rate (Figure 3g). Thus, simply knowing which cell ensembles are active across the population provide as much information about odors as cell firing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by linear classifier analysis comparing rate-based and binary measures of activity shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "aafdf5f6-28f7-40bc-baea-2a678839c066",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C27",
+      "claim": "Averaging odor-evoked activity across all LEC L2 units revealed only a weak increase in early firing rate for a fourfold change in odor concentration (0.8-fold increase, \u03c1 = 0.3, p = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging odor-evoked activity across all units revealed only a weak increase in early firing rate for a fourfold change in odor concentration (50- to 100-ms postinhalation, 0.8-fold increase, \u03c1 = 0.3, p = 0.03, Spearman's rank correlation, Figure 4b, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of concentration-dependent responses shown in Figure 4b and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "79dc46fa-da1a-4160-be38-ff3a03425b16",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C28",
+      "claim": "The percentage of activated cells per odor in LEC L2 showed only a modest increase as concentration increased (\u03c1 = 0.3, p = 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found only a modest increase in the percentage of activated cells per odor as concentration increased (\u03c1 = 0.3, p = 0.05, Spearman's rank correlation, Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of concentration-dependent responses shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "75f95410-899b-44f7-bd95-18769252c4b1",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C29",
+      "claim": "Lifetime sparseness in LEC L2 was weakly sensitive to changes in concentration (\u03c1 = 0.04, p = 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "lifetime sparseness (a measure of response selectivity) was weakly sensitive to changes in concentration (\u03c1 = 0.04, p = 0.04, Spearman's rank correlation, Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of concentration-dependent responses shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "46598338-2482-4c7c-953c-a2e0e7d20ef4",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C30",
+      "claim": "The time of peak firing of LEC L2 cells shifted earlier as odor concentration increased (\u03c1 = \u22120.04, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified this shift by determining the time of peak firing (relative to odor inhalation) for all cell\u2013odor pairs across odor concentrations and found that peak times shifted earlier with increasing odor concentrations (\u03c1 = \u22120.04, p < 0.001, Spearman's rank correlation, Figure 4j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of spike timing across concentrations shown in Figure 4j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "97914406-80de-478a-bb92-2cfeb8f3c497",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C31",
+      "claim": "Pairwise peak time differences for odor responses in LEC L2 became smaller as odor concentration increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, pairwise peak time differences for odor responses became smaller as odor concentration increased (Figure 4k, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of spike synchrony shown in Figure 4k and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "6eed9d6b-8e6f-4459-9294-43eec3bf2c07",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C32",
+      "claim": "Activity in LEC becomes more synchronized with increases in odor concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that activity in LEC becomes more synchronized with increases in odor concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that pairwise peak time differences decrease with increasing concentration (Figure 4k).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "529ec9da-f9d9-419a-aa3f-1b2169bbd97b",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C33",
+      "claim": "DG bead injection labeled neurons with cell bodies localized in L2a that possessed extensive, fan-like apical dendrites but few basal dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Biocytin was added to the pipette internal solution for post hoc reconstruction of dendritic arbors. DG bead injection labeled neurons with cell bodies localized in L2a (Figure 5a) that possessed extensive, fan-like apical dendrites but few basal dendrites (Figure 5b, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by anatomical reconstructions shown in Figure 5a-b and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "54a398f8-cda6-4bc6-a630-9d3de202e486",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C34",
+      "claim": "OB injection labeled cells in L2b with typical pyramidal cell dendritic morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, OB injection labeled cells in L2b (Figure 5c) with typical pyramidal cell dendritic morphology (Figure 5d, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by anatomical reconstructions shown in Figure 5c-d and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "24693684-278f-47ca-aca8-8bb1aed1654d",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C35",
+      "claim": "Fan cells have a more depolarized resting potential than pyramidal cells (fan: \u221264 \u00b1 1.1 mV, pyramidal: \u221269.4 \u00b1 1.7 mV, p = 0.016).",
+      "claim_type": "EXPLICIT",
+      "source": "current injection revealed differences in membrane excitability including resting potential (fan: \u221264 \u00b1 1.1 mV [n = 15], pyramidal: \u221269.4 \u00b1 1.7 mV [n = 10], p = 0.016, t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole-cell current clamp recordings shown in Figure 5b,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "2a2a3718-3535-46b2-a5a7-425f3b6da0f1",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C36",
+      "claim": "Fan cells have higher input resistance than pyramidal cells (fan: 147.6 \u00b1 10.4 mOhm, pyramidal: 102.1 \u00b1 12.8 mOhm, p = 0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "input resistance (fan: 147.6 \u00b1 10.4 mOhm, pyramidal: 102.1 \u00b1 12.8 mOhm, p = 0.012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole-cell current clamp recordings shown in Figure 5b,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "3302650e-39ae-43a1-83c0-c7bc87cece76",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C37",
+      "claim": "Fan cells have greater sag than pyramidal cells (fan: 3.7 \u00b1 0.4 mV, pyramidal: 1.1 \u00b1 0.4 mV, p = 0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "sag (fan: 3.7 \u00b1 0.4 mV, pyramidal: 1.1 \u00b1 0.4 mV, p = 0.0003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole-cell current clamp recordings shown in Figure 5b,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "ca175e5b-2c53-4f9a-9ab4-db1906713c6d",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C38",
+      "claim": "EPSCs evoked from ChR2-expressing LOT fibers were significantly larger in fan vs. pyramidal cells (136.7 \u00b1 3 and 22.3 \u00b1 5.5 pA, respectively, n = 7 pairs, p = 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory postsynaptic currents (EPSCs) evoked from ChR2-expressing LOT fibers (473 nm, 4-ms flash) were significantly larger in fan vs. pyramidal cells (Figure 5f, 136.7 \u00b1 3 and 22.3 \u00b1 5.5 pA, respectively, n = 7 pairs, p = 0.02, paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by paired voltage-clamp recordings shown in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "da5715e8-cfcc-4fcb-8ee4-954aff83eb7c",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C39",
+      "claim": "Paired-pulse facilitation was identical for fan and pyramidal cell EPSCs (paired pulse ratio 1.9 \u00b1 0.2 and 1.8 \u00b1 0.3, respectively, p = 0.69).",
+      "claim_type": "EXPLICIT",
+      "source": "Paired-pulse facilitation (200-ms interstimulus interval) was identical for fan and pyramidal cell EPSCs (Figure 5\u2014figure supplement 1, paired pulse ratio 1.9 \u00b1 0.2 and 1.8 \u00b1 0.3, respectively, p = 0.69, paired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by paired-pulse experiments shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "ad5e4235-4259-4d89-8459-a9e38ce4cf09",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C40",
+      "claim": "The amplitude of single fiber EPSCs recorded in fan and pyramidal cells using minimal LOT stimulation were virtually identical (9.7 \u00b1 1.7 and 7.9 \u00b1 1.1 pA, respectively, p = 0.35).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the amplitude of single fiber EPSCs recorded in fan (n = 8) and pyramidal (n = 7) cells using minimal LOT stimulation were also virtually identical (Figure 5\u2014figure supplement 1, 9.7 \u00b1 1.7 and 7.9 \u00b1 1.1 pA, respectively, p = 0.35, t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by minimal stimulation experiments shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "051399bc-4bba-46eb-9dea-4b435019bf0a",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C41",
+      "claim": "The stronger LOT-evoked responses of fan cells reflect the fact that they receive inputs from more OB mitral cells than pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the stronger LOT-evoked responses of fan cells reflect the fact that they receive inputs from more OB mitral cells than pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of larger total EPSCs but similar single fiber EPSCs and paired-pulse ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "6cc1a4f0-b052-4765-bc43-27b754e0ffe8",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C42",
+      "claim": "ChR2-evoked EPSCs from PCx were larger in fan vs. pyramidal cells (331 \u00b1 41.4 and 174 \u00b1 22.6 pA, respectively, n = 15 pairs, p = 0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous recordings revealed larger ChR2-evoked EPSCs in fan vs. pyramidal cells (Figure 5g, h, 331 \u00b1 41.4 and 174 \u00b1 22.6 pA, respectively, n = 15 pairs, p = 0.002, paired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by paired voltage-clamp recordings shown in Figure 5g-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "0b64fc17-fa79-43f2-845b-fc63555d477e",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C43",
+      "claim": "Fan cells receive substantially less inhibition from PV cells than pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these experiments revealed that fan cells received substantially less inhibition from PV cells than pyramidal cells (Figure 5i\u2013k)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic activation of PV cells and measurement of IPSCs shown in Figure 5i-k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "3d180058-563e-47d3-a86c-2fc7994968e0",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C44",
+      "claim": "Both fan and pyramidal cells received the same relative amount of SOM cell-mediated inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "while both cell types received the same relative amount of SOM cell-mediated inhibition (Figure 5l\u2013n)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by optogenetic activation of SOM cells and measurement of IPSCs shown in Figure 5l-n.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "557ddaba-8b8c-4df1-a8d5-ef556c0c46e9",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C45",
+      "claim": "In NetrinG1cre \u00d7 Ai14 mice, TdTomato-expressing cells localized to L2a and were colabeled by retrobeads injected in the DG (90.47 \u00b1 1.47%, n = 6 slices from three mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In NetrinG1cre \u00d7 Ai14 mice, TdTomato-expressing cells localized to L2a and were colabeled by retrobeads injected in the DG (Figure 6a, 90.47 \u00b1 1.47%, n = 6 slices from three mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by anatomical analysis shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "dc6f823c-0d68-4321-8dfc-930a41a8c247",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C46",
+      "claim": "NetrinG1cre expression was restricted to reelin-positive neurons in LEC L2a and did not overlap with L2b cells expressing calbindin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, immunolabeling revealed that NetrinG1cre expression was restricted to reelin-positive neurons in LEC L2a and did not overlap with L2b cells expressing calbindin (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunohistochemistry shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "ccfc9920-b798-4e48-9835-54cfb4818654",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C47",
+      "claim": "Cells expressing Calb1cre were concentrated in L2b, colabeled by retrobeads injected in the OB (81.89 \u00b1 2.39%, n = 6 slices from three mice), and immuno-positive for calbindin but not reelin.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that cells expressing Calb1cre were concentrated in L2b, colabeled by retrobeads injected in the OB (81.89 \u00b1 2.39%, n = 6 slices from three mice), and immuno-positive for calbindin but not reelin (Figure 6b, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by anatomical analysis shown in Figure 6b and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "a13f5b89-b983-4e98-a9ec-0d85e29bfd41",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C48",
+      "claim": "Peak firing rates slightly increased with odor concentration for both fan and pyramidal cells (fan: \u03c1 = 0.04, p = 0.009, n = 112 cells; pyramidal: \u03c1 = 0.04, p = 0.009, n = 98 cells).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that although peak firing rates slightly increased with odor concentration for both cell types (Figure 6f, fan: \u03c1 = 0.04, p = 0.009, n = 112 cells; pyramidal: \u03c1 = 0.04, p = 0.009, n = 98 cells, Spearman's rank correlation)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of phototagged cell responses shown in Figure 6f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "3987bbb5-c93d-4c99-b8b9-37986639f3ac",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C49",
+      "claim": "Time to peak firing for pyramidal cells became faster as concentration increased, whereas fan cell peak firing times were largely unaffected (fan: \u03c1 = \u22120.02, p = 0.2; pyramidal: \u03c1 = \u22120.09, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "time to peak firing for pyramidal cells became faster as concentration increased, whereas fan cell peak firing times were largely unaffected (Figure 6g, fan: \u03c1 = \u22120.02, p = 0.2; pyramidal: \u03c1 = \u22120.09, p < 0.001, Spearman's rank correlation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of phototagged cell responses shown in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "009fe90e-c00d-4d8f-9ebb-840550799c0d",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C50",
+      "claim": "The peak firing times of fan cells typically preceded pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the peak firing times of fan cells typically preceded pyramidal cells (Figure 6g)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of phototagged cell responses shown in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "01db76ae-ca47-4c40-8708-e5b404c8e6b1",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C51",
+      "claim": "The temporal shift in pyramidal cell activity and earlier (but constant) timing of fan cell responses underlies spike synchronization between the cell types as odor concentration increases (\u03c1 = \u22120.05, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal shift in pyramidal cell activity and earlier (but constant) timing of fan cell responses underlies spike synchronization between the cell types as odor concentration increases (Figure 6h, \u03c1 = \u22120.05, p < 0.001, Spearman's rank correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of pairwise peak time differences shown in Figure 6h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "c0a97089-9861-4d0e-8d17-36a31b6de8c7",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C52",
+      "claim": "Fan cells send dense input to the outer molecular layer of the DG via the lateral perforant path.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that fan cells send dense input to the outer molecular layer of the DG via the lateral perforant path (Figure 7a, Leitner et al., 2016; Vandrey et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by viral tracing shown in Figure 7a and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "b5c5387c-6c73-4b85-978a-13a640d4ad16",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C53",
+      "claim": "L2 pyramidal cells project to hippocampal CA1 through the temporoammonic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Injections in Calb1cre mice revealed projections from L2 pyramidal cells to hippocampal CA1 through the temporoammonic pathway (Figure 7b, Amaral and Witter, 1989; Kitamura et al., 2014; Masurkar et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by viral tracing shown in Figure 7b and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "18adb9ff-111d-4e30-9b56-07db46263d53",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C54",
+      "claim": "Information from LEC L2 is relayed to CA1 via both direct (pyramidal cell) and indirect (fan cell) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This tracing confirmed that information from LEC L2 is relayed to CA1 via both direct (pyramidal cell) and indirect (fan cell) pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the anatomical tracing showing fan cells project to DG and pyramidal cells project to CA1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "85931a87-acc3-4b2d-a33f-599029d92bc8",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C55",
+      "claim": "Peak odor-evoked firing in CA1 (106 ms, odor concentration 1%) occurred briefly after LEC fan (72 ms) and pyramidal (78 ms) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Like PCx and LEC, cells in CA1 preferentially responded early during individual sniffs (Figure 7c, d) and peak odor-evoked firing in CA1 (106 ms, odor concentration 1%) occurred briefly after LEC fan (72 ms) and pyramidal (78 ms) cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of CA1 recordings shown in Figure 7c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "fe34f69c-887d-41c7-ad61-53582d31fbde",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C56",
+      "claim": "The peak firing rate in CA1 was insensitive to odor concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in contrast to LEC L2, the peak firing rate in CA1 was insensitive to odor concentration (Figure 7d compared to Figure 4b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of CA1 responses to different concentrations shown in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "006b1170-acd3-4d52-bfd9-b444ca31b2d4",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C57",
+      "claim": "The percentage of activated cells per odor, mean firing rate, and response sparseness were concentration independent in CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike LEC, the percentage of activated cells per odor, mean firing rate, and response sparseness were also concentration independent in CA1 (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of CA1 responses shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "9d07d862-5d84-4154-ad60-462d99c32dfa",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C58",
+      "claim": "Odor identity could be distinguished with high accuracy from CA1 firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although PCA (Figure 7\u2014figure supplement 1) and the use of linear classifiers revealed that odor identity could be distinguished with high accuracy (Figure 7e, Figure 7\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PCA and linear classifier analyses shown in Figure 7e and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "c6bf0218-b6c8-4918-bc4f-d2e2a6219f86",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C59",
+      "claim": "Odor intensity could not be decoded from CA1 firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "odor intensity could not be decoded from CA1 firing rates (Figure 7f, Figure 7\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by linear classifier analysis shown in Figure 7f and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "5f46a510-2ec0-4711-b436-c85dbf21128a",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C60",
+      "claim": "The time to peak in CA1 shifted earlier as concentration increased (peak rate: \u03c1 = \u22120.002, p = 0.7; peak time: \u03c1 = \u22120.04, p < 0.001, n = 609 cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Although peak firing rate was concentration insensitive, the time to peak shifted earlier as concentration increased (Figure 7h, i, peak rate: \u03c1 = \u22120.002, p = 0.7; peak time: \u03c1 = \u22120.04, p < 0.001, n = 609 cells, Spearman's rank correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of CA1 responses shown in Figure 7h-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "dc2d00a4-09a2-4719-bdcf-ddadd6538aa9",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C61",
+      "claim": "Pairwise peak time differences in CA1 were reduced with increasing odor concentration (\u03c1 = \u22120.01, p < 0.001), indicating that firing became more synchronized.",
+      "claim_type": "EXPLICIT",
+      "source": "As we found for LEC, pairwise peak time differences were reduced with increasing odor concentration (\u03c1 = \u22120.01, p < 0.001, Spearman's rank correlation), indicating that firing also became more synchronized within CA1 (Figure 7j, Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of spike synchrony shown in Figure 7j and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "b703f4a6-5070-4345-a6b7-3a810d2c89a7",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C62",
+      "claim": "The LEC receives two main sources of olfactory input: direct projections from OB mitral cells via the LOT and indirect projections via PCx principal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The LEC receives two main sources of olfactory input: direct projections from OB mitral cells via the LOT and indirect projections via PCx principal cells (Haberly and Price, 1978; Kerr et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous anatomical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "7be6584b-2c5f-450f-a80d-c57e4839bf8a",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C63",
+      "claim": "These inputs synapse onto two distinct types of layer 2 (L2) principal neurons: fan and pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These inputs synapse onto two distinct types of layer 2 (L2) principal neurons: fan and pyramidal cells (Canto and Witter, 2012; Kobro-Flatmoen and Witter, 2019; Tahvildari and Alonso, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "c11b8247-2e90-488e-9048-a331918bbef3",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C64",
+      "claim": "Fan cells in L2a have extensive apical dendritic arbors but lack basal dendrites, express reelin, and project via the lateral perforant path to granule cells in the dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Fan cells in L2a have extensive apical dendritic arbors but lack basal dendrites, express reelin, and project via the lateral perforant path to granule cells in the dentate gyrus (Leitner et al., 2016; Vandrey et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work and confirmed by data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "92c277dc-200a-4085-992b-3609e6185158",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C65",
+      "claim": "Pyramidal cells are concentrated in L2b, express calbindin, project to stratum lacunosum moleculare of hippocampal CA1, and send feedback projections to the PCx and OB.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyramidal cells are concentrated in L2b, express calbindin, project to stratum lacunosum moleculare of hippocampal CA1, and send feedback projections to the PCx and OB (Chapuis et al., 2013; Leitner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work and confirmed by data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "3b44af4a-f361-421d-a3b6-67db7f4d59eb",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C66",
+      "claim": "LEC neurons respond in an odor-specific fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "LEC neurons respond in an odor-specific fashion (Leitner et al., 2016; Woods et al., 2020; Xu and Wilson, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work and confirmed by data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "057b7a15-eb56-4886-adb2-7c6c8bbf4996",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C67",
+      "claim": "Calcium imaging in anesthetized mice revealed that fan cells respond more selectively to odors than pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "calcium imaging in anesthetized mice revealed that fan cells respond more selectively to odors than pyramidal cells (Leitner et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "b8324af1-4f46-4f00-a348-346219ddac7f",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C68",
+      "claim": "Rodents can make odor-guided behavioral decisions based on neural activity triggered by a single sniff.",
+      "claim_type": "EXPLICIT",
+      "source": "Rodents can make odor-guided behavioral decisions based on neural activity triggered by a single sniff (Chong and Rinberg, 2018; Uchida and Mainen, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous behavioral work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "10fc6f05-d0c2-46a9-9e39-3f58720124a5",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C69",
+      "claim": "Odor identity is represented by the spatiotemporal activity patterns of OB mitral cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Odor identity is represented by the spatiotemporal activity patterns of OB mitral cells (Bathellier et al., 2008; Chong and Rinberg, 2018; Cury and Uchida, 2010; Shusterman et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "39605ea8-3e07-4daf-a921-86393cbdf3b8",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C70",
+      "claim": "The spike timing of OB cells early after odor inhalation is especially important for odor discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "the spike timing of cells early after odor inhalation is especially important for odor discrimination (Chong et al., 2020; Gill et al., 2020; Wilson et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "d1a74b9c-19e9-4b0d-8730-0498485d9817",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C71",
+      "claim": "Changes in odor concentration can be decoded from both spike rate and the temporal profile of odor-evoked responses in OB.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in odor concentration can be decoded from both spike rate and the temporal profile of odor-evoked responses (Bathellier et al., 2008; Cang and Isaacson, 2003; Margrie and Schaefer, 2003; Sirotin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "ebd369d8-6497-4f98-a353-ef59ecdf8e07",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C72",
+      "claim": "In PCx, odor identity is represented by distributed ensembles of active layer 2/3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In PCx, odor identity is represented by distributed ensembles of active layer 2/3 pyramidal cells (Blazing and Franks, 2020; Miura et al., 2012; Roland et al., 2017; Schoonover et al., 2021; Stern et al., 2018; Stettler and Axel, 2009; Uchida et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "addee21c-89c5-456a-a263-481057bb003c",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C73",
+      "claim": "Calcium imaging in anesthetized mice revealed that while PCx population response patterns become markedly different over a 100-fold change in odor concentration, responses in a subset of neurons are insensitive to concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium imaging in anesthetized mice revealed that while PCx population response patterns become markedly different over a 100-fold change in odor concentration, responses in a subset of neurons are insensitive to concentration (Roland et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "10dc4119-33dd-475b-8127-c11d2f74aaf2",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C74",
+      "claim": "PCx recordings in awake mice indicate that odor identity is encoded by ensembles of pyramidal cells active early during individual sniffs in a manner invariant to odor concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "PCx recordings in awake mice indicate that odor identity is encoded by ensembles of pyramidal cells active early during individual sniffs in a manner invariant to odor concentration (Bolding and Franks, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "5cecb63e-c942-434d-8558-ef2834bb8798",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C75",
+      "claim": "Odor intensity in PCx could be determined from a subpopulation of later responding pyramidal cells whose firing latencies shift earlier as odor concentration increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, odor intensity could be determined from a subpopulation of later responding pyramidal cells whose firing latencies shift earlier as odor concentration increases (Bolding and Franks, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "d75b7f3f-749c-405f-88fd-52974821940a",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C76",
+      "claim": "Recurrent inhibition enforces the short time window for sniff-coupled activity elicited by odors in PCx.",
+      "claim_type": "EXPLICIT",
+      "source": "Recurrent inhibition has been found to enforce the short time window for sniff-coupled activity elicited by odors in PCx (Bolding and Franks, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "08713fd7-88e9-42fa-a4ce-2db40a99e044",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C77",
+      "claim": "Local feedback inhibition presumably curtails late odor-evoked activity in LEC.",
+      "claim_type": "IMPLICIT",
+      "source": "Like PCx, local feedback inhibition presumably curtails late odor-evoked activity in LEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by analogy to PCx based on the similar temporal profile of responses.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "8512fcb5-4d17-4e54-937e-ff31c23792bd",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C78",
+      "claim": "Chemical inactivation using LEC muscimol infusion in rats was reported to impair discrimination of complex but not simple multiodor mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical inactivation using LEC muscimol infusion in rats was reported to impair discrimination of complex but not simple multiodor mixtures (Chapuis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "ab2aed75-bc6c-459b-86a9-94b3a2b691cf",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C79",
+      "claim": "LEC muscimol infusion or optogenetic suppression of LEC inputs to CA1 degraded performance in simple, two-odorant discrimination tasks in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, more recent work in mice found that LEC muscimol infusion (Lee et al., 2021) or optogenetic suppression of LEC inputs to CA1 (Li et al., 2017) degraded performance in simple, two-odorant discrimination tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "9a2e5d6a-7917-45d2-800d-25d593cf0519",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C80",
+      "claim": "The LEC and fan cells in particular appear to play a critical role in the learning of new olfactory cue\u2013reward associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the LEC and fan cells in particular appear to play a critical role in the learning of new olfactory cue\u2013reward associations (Igarashi et al., 2014; Lee et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "b9e5f6dd-8845-4821-861a-825a12dce8da",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C81",
+      "claim": "It is likely that L2 activity early during individual sniffs is critical for odor-driven behavior.",
+      "claim_type": "IMPLICIT",
+      "source": "Mice made decisions during the 2AFC task using information obtained early during single sniffs of odor. Thus, it is likely that L2 activity early during individual sniffs is critical for odor-driven behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal correspondence between rapid behavioral discrimination and early L2 responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "9fb73138-45f3-4756-aff6-1542be077f56",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C82",
+      "claim": "Different odors are represented by overlapping ensembles of active cells in LEC, similar to odor coding in PCx.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that different odors are represented by overlapping ensembles of active cells in LEC, similar to odor coding in PCx (Blazing and Franks, 2020; Miura et al., 2012; Poo and Isaacson, 2009; Stettler and Axel, 2009; Uchida et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 3 and citations to previous work on PCx.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "f4937185-1743-4d48-89ac-b64582c00994",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C83",
+      "claim": "As in PCx, simply knowing whether cells were activated or not by odors was as effective as knowing actual firing rates when decoding odor identity from population activity in LEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, as in PCx (Bolding and Franks, 2017), simply knowing whether cells were activated or not by odors was as effective as knowing actual firing rates when decoding odor identity from population activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by linear classifier analysis in Figure 3g and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "8b35b309-98ee-41c1-b365-4857e077f951",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C84",
+      "claim": "In anterior PCx, odor representations were reported to be 'concentration invariant' when rapid population responses were studied using firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In anterior PCx, odor representations were reported to be 'concentration invariant' when rapid population responses were studied using firing rates (Bolding and Franks, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "3fce67f5-8612-4328-a44b-006a98f68a98",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C85",
+      "claim": "If connections from OB mitral cells to LEC are distributed 'randomly' as proposed for the PCx, the fact that fan cells receive more LOT input than pyramidal cells suggests that they might be more broadly tuned for odors.",
+      "claim_type": "IMPLICIT",
+      "source": "If connections from OB mitral cells to LEC are distributed 'randomly' as proposed for the PCx (Schaffer et al., 2018; Sosulski et al., 2011; Stettler and Axel, 2009) the fact that fan cells receive more LOT input than pyramidal cells suggests that they might be more broadly tuned for odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the assumption of random connectivity and the finding of stronger LOT input to fan cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "9a1dd5e3-dd5c-4c29-8c15-c6cd7c68b06f",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C86",
+      "claim": "Odor representations are sparser for fan compared to pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found odor representations were actually sparser for fan compared to pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lifetime sparseness measurements shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "60aaa70f-42a1-43fe-9922-e70e61f9884f",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C87",
+      "claim": "The stronger olfactory input and weaker PV inhibition onto fan cells leads to their earlier activation than pyramidal cells following odor inhalation.",
+      "claim_type": "IMPLICIT",
+      "source": "We suspect that the stronger olfactory input and weaker PV inhibition onto fan cells, rather than broadening odor tuning, leads to their earlier activation than pyramidal cells following odor inhalation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of slice physiology data and in vivo timing differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "f3c78c82-b93d-42f9-84d1-fcb0c2919dd3",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C88",
+      "claim": "Fan cells could provide a reference signal for spike timing and the synchrony of fan and pyramidal cell firing could be used by downstream areas to read out odor intensity.",
+      "claim_type": "IMPLICIT",
+      "source": "Spike timing only carries information in relation to a reference signal. Our data suggest that fan cells could provide such a reference signal and the synchrony of fan and pyramidal cell firing could be used by downstream areas to read out odor intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the concentration-invariant timing of fan cells and concentration-dependent timing of pyramidal cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "92a0cc69-c5b8-4141-8c79-327d89a9caa3",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C89",
+      "claim": "CA1 discards any firing rate changes encoding odor intensity relayed by LEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, firing rates of CA1 cells were completely insensitive to changes in odor concentration. This means that CA1 discards any firing rate changes encoding odor intensity relayed by LEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of LEC and CA1 concentration-dependent responses shown in Figures 4 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "1b0f78a4-7b05-41d5-bb8b-b718d017c760",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C90",
+      "claim": "Temporal coding contributes to a variety of hippocampal features such as episodic memory and spatial navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal coding is thought to contribute to a variety of hippocampal features such as episodic memory and spatial navigation (Dragoi, 2020; Eichenbaum, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "2b8746e7-d18d-4b76-90c4-8eeb25a91642",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "claim_id": "C91",
+      "claim": "The temporal coding of odor intensity in hippocampus is likely critical for basic behaviors requiring navigation to odor sources.",
+      "claim_type": "IMPLICIT",
+      "source": "The temporal coding of odor intensity in hippocampus is likely also critical for basic behaviors requiring navigation to odor sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding of temporal coding in CA1 and general knowledge about hippocampal function in navigation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2e375728-56ba-4fc0-a140-69742c3126a4",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LEC L2 neurons respond rapidly to odors during single sniffs, with peak activity occurring 50-100 ms after inhalation onset, earlier than respiration-coupled baseline activity and with a higher percentage of activated cells during the early phase compared to later phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C13-C17, and C23 collectively demonstrate rapid odor-evoked responses in LEC L2 with consistent timing measurements across multiple analyses. The data from simultaneous recordings in OB, PCx, and LEC (Figure 1) provide strong converging evidence for early response timing, and the quantitative analyses of activated cell percentages across time windows are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "f1ac1d18-118f-410f-8d8d-0b25cdb5263b",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LEC is essential for rapid discrimination of both odor identity and odor intensity, as demonstrated by optogenetic silencing experiments that reduced behavioral performance to chance levels for both tasks, with mice making decisions within 200-225 ms of odor inhalation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18-C22 are strongly supported by optogenetic silencing experiments with appropriate controls (Figure 2). The behavioral data show statistically significant impairments (p=0.009 for identity, p=0.0003 for intensity) and the timing analyses demonstrate rapid discrimination. However, the authors acknowledge that acute silencing may disrupt permissive rather than instructive activity, which is an important caveat.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "ca1b3de1-88e5-4088-bce8-b79d11c667c4",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Odor identity is encoded by rate coding in LEC L2 ensembles, with overlapping populations of neurons responding to different odors and linear classifiers achieving >90% accuracy in distinguishing odor identities within 100 ms of inhalation, with binary activation patterns performing as well as firing rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C24-C26, C82-C83 are well-supported by PCA and linear classifier analyses (Figure 3). The finding that 48% of cells respond to multiple odors, combined with high classification accuracy using both rate and binary measures, provides strong evidence for ensemble coding of odor identity. The comparison to PCx coding (C82-C83) is appropriately supported by citations and data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "be211901-f54c-4705-9625-0c00bf49162b",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Odor intensity is weakly encoded by firing rates in LEC L2 (only 0.8-fold increase for fourfold concentration change) but strongly encoded by spike timing, with peak firing times shifting earlier and spike synchrony increasing as odor concentration increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C27-C32 are supported by comprehensive analyses of concentration-dependent responses (Figure 4). The weak correlation between firing rate and concentration (\u03c1=0.3, p=0.03) contrasts with the strong temporal coding (\u03c1=-0.04, p<0.001 for peak time shifts). The data convincingly demonstrate that temporal coding is more robust than rate coding for intensity discrimination in LEC L2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "5038271e-19b0-4f79-a6ec-ececb1294bc4",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Fan and pyramidal cells in LEC L2 differ substantially in their circuit properties: fan cells receive stronger direct OB input (136.7\u00b13 vs 22.3\u00b15.5 pA) and PCx input (331\u00b141.4 vs 174\u00b122.6 pA) than pyramidal cells, reflecting more numerous synaptic contacts rather than stronger individual synapses, and fan cells receive substantially less PV cell-mediated inhibition while receiving similar SOM cell-mediated inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C33-C44 are strongly supported by systematic brain slice experiments (Figure 5). The combination of anatomical reconstructions, paired recordings, optogenetic stimulation, and minimal stimulation experiments provides converging evidence for differential connectivity. The inference that fan cells receive more OB inputs (C41) is well-justified by the combination of larger total EPSCs but similar single-fiber EPSCs and paired-pulse ratios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "1f609965-4ded-4d5d-9e6b-f774aab9ff34",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The relative timing of pyramidal and fan cell spikes provides a temporal code for odor intensity: fan cells respond earlier and with concentration-invariant timing (\u03c1=-0.02, p=0.2), while pyramidal cell peak times shift earlier with increasing concentration (\u03c1=-0.09, p<0.001), resulting in concentration-dependent synchrony between the two cell types (\u03c1=-0.05, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C45-C51 are well-supported by optogenetic tagging experiments that successfully identified fan and pyramidal cells in vivo (Figure 6). The anatomical validation (C45-C47) is thorough, and the differential timing responses to concentration changes are statistically significant. The interpretation that fan cells provide a reference signal for temporal coding is reasonable given the data, though it remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In hippocampal CA1, odor intensity is encoded purely by spike timing rather than firing rate: CA1 firing rates are insensitive to odor concentration but peak firing times shift earlier (\u03c1=-0.04, p<0.001) and synchrony increases with concentration (\u03c1=-0.01, p<0.001), while odor identity can be decoded with high accuracy from firing rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C54-C61, and C89 are supported by CA1 recordings and anatomical tracing (Figure 7). The finding that CA1 discards rate-based intensity information from LEC while preserving temporal coding is striking and well-documented. The contrast between successful odor identity decoding and failed intensity decoding from firing rates, combined with successful temporal coding of intensity, provides strong evidence for the purely temporal code in CA1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "29184aef-e4f9-47f8-8dc4-356adb2ad202",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Fan cells project to the dentate gyrus via the lateral perforant path while L2 pyramidal cells project to hippocampal CA1 through the temporoammonic pathway, establishing both direct and indirect pathways from LEC L2 to CA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by viral tracing experiments (Figure 7a-b) and are consistent with previous anatomical studies cited by the authors. The anatomical evidence clearly demonstrates the distinct projection patterns of the two cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "16aa58c5-738b-4932-9291-993680b3bb2b",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LEC receives olfactory input from OB and PCx that synapses onto two distinct L2 principal neuron types (fan and pyramidal cells) with characteristic anatomical and molecular properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C62-C65 establish the basic anatomical framework and are supported by both citations to previous work and confirmatory data in the manuscript. This represents established knowledge that is appropriately cited and verified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "46cd59f0-d477-4b50-b25f-bee56d09ce64",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has established that OB mitral cells fire at odor-specific latencies across respiration cycles, PCx pyramidal cells respond early during sniffs with concentration-invariant identity coding, and rodents can make odor-guided decisions based on single-sniff activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C68-C76, and C84 accurately summarize prior work with appropriate citations. The authors' own data (Figure 1) confirm the timing patterns in OB and PCx, validating the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "a21a8de9-fd02-4463-9de0-c77b7ce12b71",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous studies have shown that LEC neurons respond in an odor-specific fashion, with conflicting results regarding LEC's role in odor discrimination, though recent work suggests LEC is important for learning olfactory cue-reward associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67, C78-C80 accurately represent prior work with appropriate citations. The authors acknowledge the conflicting literature on LEC's role in odor discrimination, which provides important context for their own findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "3a25936f-b6b6-488e-a20c-ace7a04ef1b4",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors infer that local feedback inhibition curtails late odor-evoked activity in LEC (by analogy to PCx), that early L2 activity is critical for odor-driven behavior, that fan cells' stronger input and weaker PV inhibition leads to earlier activation, and that fan cells provide a reference signal for temporal coding that is used by downstream areas including hippocampus for odor-guided navigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77, C81, C85-C88, and C91 represent reasonable inferences from the data but lack direct experimental validation. While the inferences are logical and consistent with the data, they would benefit from additional experiments such as direct manipulation of inhibition (C77), causal testing of early vs. late activity in behavior (C81), or testing the functional role of fan cell timing as a reference signal (C88).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    },
+    {
+      "id": "ad7b1566-4bad-4b2b-8129-a29198b0776d",
+      "content_id": "d9b1b921-b16c-41d8-b29d-8097a4960b97",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Temporal coding contributes to hippocampal functions including episodic memory and spatial navigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 accurately represents established knowledge about hippocampal function with appropriate citations. This provides context for interpreting the temporal coding findings in CA1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:46:05.157888Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d2b787f7-3ee1-4aa9-b488-fc6c2f63af31",
+      "result_id": "2e375728-56ba-4fc0-a140-69742c3126a4"
+    },
+    {
+      "claim_id": "97ef811a-ba0d-4f16-a0d3-1993561e0449",
+      "result_id": "2e375728-56ba-4fc0-a140-69742c3126a4"
+    },
+    {
+      "claim_id": "25395f27-b001-418e-abca-5f5bb50c0658",
+      "result_id": "2e375728-56ba-4fc0-a140-69742c3126a4"
+    },
+    {
+      "claim_id": "4393624f-d4df-4474-9559-605c8413b83d",
+      "result_id": "2e375728-56ba-4fc0-a140-69742c3126a4"
+    },
+    {
+      "claim_id": "bb4b047c-08d7-4f77-be2f-7b4aa01df23a",
+      "result_id": "2e375728-56ba-4fc0-a140-69742c3126a4"
+    },
+    {
+      "claim_id": "618844e0-7fa2-4fed-87cf-dce23a997ade",
+      "result_id": "2e375728-56ba-4fc0-a140-69742c3126a4"
+    },
+    {
+      "claim_id": "fa4acffc-6945-4c03-b003-26c0f5373170",
+      "result_id": "2e375728-56ba-4fc0-a140-69742c3126a4"
+    },
+    {
+      "claim_id": "70a60e0f-1f7c-4972-8ce1-e69595e0135a",
+      "result_id": "f1ac1d18-118f-410f-8d8d-0b25cdb5263b"
+    },
+    {
+      "claim_id": "eab65fe5-dddf-4026-9c51-5941dde64856",
+      "result_id": "f1ac1d18-118f-410f-8d8d-0b25cdb5263b"
+    },
+    {
+      "claim_id": "9e305183-b820-443c-9a36-1318b2220aeb",
+      "result_id": "f1ac1d18-118f-410f-8d8d-0b25cdb5263b"
+    },
+    {
+      "claim_id": "ac51bc69-dfc3-49d6-8946-e86669c18a89",
+      "result_id": "f1ac1d18-118f-410f-8d8d-0b25cdb5263b"
+    },
+    {
+      "claim_id": "3f196d99-bafc-4cec-be8e-d53b3c1bb150",
+      "result_id": "f1ac1d18-118f-410f-8d8d-0b25cdb5263b"
+    },
+    {
+      "claim_id": "e54ddff9-ec01-4a38-a9df-17baef7c2b0c",
+      "result_id": "f1ac1d18-118f-410f-8d8d-0b25cdb5263b"
+    },
+    {
+      "claim_id": "5f46ca08-b1de-4bc1-b0f9-ad8189456be2",
+      "result_id": "ca1b3de1-88e5-4088-bce8-b79d11c667c4"
+    },
+    {
+      "claim_id": "fe5e5120-e8bb-4db9-9deb-baa4db234e2b",
+      "result_id": "ca1b3de1-88e5-4088-bce8-b79d11c667c4"
+    },
+    {
+      "claim_id": "0bb46b71-4619-4cf2-aff1-3b030c63486e",
+      "result_id": "ca1b3de1-88e5-4088-bce8-b79d11c667c4"
+    },
+    {
+      "claim_id": "ac175e89-b458-46ef-9a15-3181e8d331d1",
+      "result_id": "ca1b3de1-88e5-4088-bce8-b79d11c667c4"
+    },
+    {
+      "claim_id": "9fb73138-45f3-4756-aff6-1542be077f56",
+      "result_id": "ca1b3de1-88e5-4088-bce8-b79d11c667c4"
+    },
+    {
+      "claim_id": "f4937185-1743-4d48-89ac-b64582c00994",
+      "result_id": "ca1b3de1-88e5-4088-bce8-b79d11c667c4"
+    },
+    {
+      "claim_id": "8d5f0683-e112-4d05-a499-441f7ffdf31c",
+      "result_id": "be211901-f54c-4705-9625-0c00bf49162b"
+    },
+    {
+      "claim_id": "e79f1fd9-b1b3-45a7-94dd-330949515f23",
+      "result_id": "be211901-f54c-4705-9625-0c00bf49162b"
+    },
+    {
+      "claim_id": "aafdf5f6-28f7-40bc-baea-2a678839c066",
+      "result_id": "be211901-f54c-4705-9625-0c00bf49162b"
+    },
+    {
+      "claim_id": "79dc46fa-da1a-4160-be38-ff3a03425b16",
+      "result_id": "be211901-f54c-4705-9625-0c00bf49162b"
+    },
+    {
+      "claim_id": "75f95410-899b-44f7-bd95-18769252c4b1",
+      "result_id": "be211901-f54c-4705-9625-0c00bf49162b"
+    },
+    {
+      "claim_id": "46598338-2482-4c7c-953c-a2e0e7d20ef4",
+      "result_id": "be211901-f54c-4705-9625-0c00bf49162b"
+    },
+    {
+      "claim_id": "97914406-80de-478a-bb92-2cfeb8f3c497",
+      "result_id": "be211901-f54c-4705-9625-0c00bf49162b"
+    },
+    {
+      "claim_id": "6eed9d6b-8e6f-4459-9294-43eec3bf2c07",
+      "result_id": "be211901-f54c-4705-9625-0c00bf49162b"
+    },
+    {
+      "claim_id": "a847cd8b-34d3-42ff-b673-edc8a0d75006",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "63c2e636-0030-4c93-9e27-118080786bbd",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "529ec9da-f9d9-419a-aa3f-1b2169bbd97b",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "54a398f8-cda6-4bc6-a630-9d3de202e486",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "24693684-278f-47ca-aca8-8bb1aed1654d",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "2a2a3718-3535-46b2-a5a7-425f3b6da0f1",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "3302650e-39ae-43a1-83c0-c7bc87cece76",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "ca175e5b-2c53-4f9a-9ab4-db1906713c6d",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "da5715e8-cfcc-4fcb-8ee4-954aff83eb7c",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "ad5e4235-4259-4d89-8459-a9e38ce4cf09",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "051399bc-4bba-46eb-9dea-4b435019bf0a",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "6cc1a4f0-b052-4765-bc43-27b754e0ffe8",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "0b64fc17-fa79-43f2-845b-fc63555d477e",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "3d180058-563e-47d3-a86c-2fc7994968e0",
+      "result_id": "5038271e-19b0-4f79-a6ec-ececb1294bc4"
+    },
+    {
+      "claim_id": "2d7aba27-17e2-4077-bf87-df34875cee32",
+      "result_id": "1f609965-4ded-4d5d-9e6b-f774aab9ff34"
+    },
+    {
+      "claim_id": "557ddaba-8b8c-4df1-a8d5-ef556c0c46e9",
+      "result_id": "1f609965-4ded-4d5d-9e6b-f774aab9ff34"
+    },
+    {
+      "claim_id": "dc6f823c-0d68-4321-8dfc-930a41a8c247",
+      "result_id": "1f609965-4ded-4d5d-9e6b-f774aab9ff34"
+    },
+    {
+      "claim_id": "ccfc9920-b798-4e48-9835-54cfb4818654",
+      "result_id": "1f609965-4ded-4d5d-9e6b-f774aab9ff34"
+    },
+    {
+      "claim_id": "a13f5b89-b983-4e98-a9ec-0d85e29bfd41",
+      "result_id": "1f609965-4ded-4d5d-9e6b-f774aab9ff34"
+    },
+    {
+      "claim_id": "3987bbb5-c93d-4c99-b8b9-37986639f3ac",
+      "result_id": "1f609965-4ded-4d5d-9e6b-f774aab9ff34"
+    },
+    {
+      "claim_id": "009fe90e-c00d-4d8f-9ebb-840550799c0d",
+      "result_id": "1f609965-4ded-4d5d-9e6b-f774aab9ff34"
+    },
+    {
+      "claim_id": "01db76ae-ca47-4c40-8708-e5b404c8e6b1",
+      "result_id": "1f609965-4ded-4d5d-9e6b-f774aab9ff34"
+    },
+    {
+      "claim_id": "f00b700f-c04b-4d83-a2d4-376c42b44720",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "18adb9ff-111d-4e30-9b56-07db46263d53",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "85931a87-acc3-4b2d-a33f-599029d92bc8",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "fe34f69c-887d-41c7-ad61-53582d31fbde",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "006b1170-acd3-4d52-bfd9-b444ca31b2d4",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "9d07d862-5d84-4154-ad60-462d99c32dfa",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "c6bf0218-b6c8-4918-bc4f-d2e2a6219f86",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "5f46a510-2ec0-4711-b436-c85dbf21128a",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "dc2d00a4-09a2-4719-bdcf-ddadd6538aa9",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "92a0cc69-c5b8-4141-8c79-327d89a9caa3",
+      "result_id": "1ad5a95d-2485-4e6d-bf7a-11fcd999a11b"
+    },
+    {
+      "claim_id": "c0a97089-9861-4d0e-8d17-36a31b6de8c7",
+      "result_id": "29184aef-e4f9-47f8-8dc4-356adb2ad202"
+    },
+    {
+      "claim_id": "b5c5387c-6c73-4b85-978a-13a640d4ad16",
+      "result_id": "29184aef-e4f9-47f8-8dc4-356adb2ad202"
+    },
+    {
+      "claim_id": "15fa5949-5142-48a2-9c76-cbbecfe804fb",
+      "result_id": "16aa58c5-738b-4932-9291-993680b3bb2b"
+    },
+    {
+      "claim_id": "b703f4a6-5070-4345-a6b7-3a810d2c89a7",
+      "result_id": "16aa58c5-738b-4932-9291-993680b3bb2b"
+    },
+    {
+      "claim_id": "7be6584b-2c5f-450f-a80d-c57e4839bf8a",
+      "result_id": "16aa58c5-738b-4932-9291-993680b3bb2b"
+    },
+    {
+      "claim_id": "c11b8247-2e90-488e-9048-a331918bbef3",
+      "result_id": "16aa58c5-738b-4932-9291-993680b3bb2b"
+    },
+    {
+      "claim_id": "92c277dc-200a-4085-992b-3609e6185158",
+      "result_id": "16aa58c5-738b-4932-9291-993680b3bb2b"
+    },
+    {
+      "claim_id": "702da4e8-5be6-46dc-a462-758dbc9d374a",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "9c9adeba-273d-464f-9df6-975308f95e97",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "b8324af1-4f46-4f00-a348-346219ddac7f",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "10fc6f05-d0c2-46a9-9e39-3f58720124a5",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "39605ea8-3e07-4daf-a921-86393cbdf3b8",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "d1a74b9c-19e9-4b0d-8730-0498485d9817",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "ebd369d8-6497-4f98-a353-ef59ecdf8e07",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "addee21c-89c5-456a-a263-481057bb003c",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "10dc4119-33dd-475b-8127-c11d2f74aaf2",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "5cecb63e-c942-434d-8558-ef2834bb8798",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "d75b7f3f-749c-405f-88fd-52974821940a",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "8b35b309-98ee-41c1-b365-4857e077f951",
+      "result_id": "46cd59f0-d477-4b50-b25f-bee56d09ce64"
+    },
+    {
+      "claim_id": "3b44af4a-f361-421d-a3b6-67db7f4d59eb",
+      "result_id": "a21a8de9-fd02-4463-9de0-c77b7ce12b71"
+    },
+    {
+      "claim_id": "057b7a15-eb56-4886-adb2-7c6c8bbf4996",
+      "result_id": "a21a8de9-fd02-4463-9de0-c77b7ce12b71"
+    },
+    {
+      "claim_id": "8512fcb5-4d17-4e54-937e-ff31c23792bd",
+      "result_id": "a21a8de9-fd02-4463-9de0-c77b7ce12b71"
+    },
+    {
+      "claim_id": "ab2aed75-bc6c-459b-86a9-94b3a2b691cf",
+      "result_id": "a21a8de9-fd02-4463-9de0-c77b7ce12b71"
+    },
+    {
+      "claim_id": "9a2e5d6a-7917-45d2-800d-25d593cf0519",
+      "result_id": "a21a8de9-fd02-4463-9de0-c77b7ce12b71"
+    },
+    {
+      "claim_id": "08713fd7-88e9-42fa-a4ce-2db40a99e044",
+      "result_id": "3a25936f-b6b6-488e-a20c-ace7a04ef1b4"
+    },
+    {
+      "claim_id": "b9e5f6dd-8845-4821-861a-825a12dce8da",
+      "result_id": "3a25936f-b6b6-488e-a20c-ace7a04ef1b4"
+    },
+    {
+      "claim_id": "3fce67f5-8612-4328-a44b-006a98f68a98",
+      "result_id": "3a25936f-b6b6-488e-a20c-ace7a04ef1b4"
+    },
+    {
+      "claim_id": "9a1dd5e3-dd5c-4c29-8c15-c6cd7c68b06f",
+      "result_id": "3a25936f-b6b6-488e-a20c-ace7a04ef1b4"
+    },
+    {
+      "claim_id": "60aaa70f-42a1-43fe-9922-e70e61f9884f",
+      "result_id": "3a25936f-b6b6-488e-a20c-ace7a04ef1b4"
+    },
+    {
+      "claim_id": "f3c78c82-b93d-42f9-84d1-fcb0c2919dd3",
+      "result_id": "3a25936f-b6b6-488e-a20c-ace7a04ef1b4"
+    },
+    {
+      "claim_id": "2b8746e7-d18d-4b76-90c4-8eeb25a91642",
+      "result_id": "3a25936f-b6b6-488e-a20c-ace7a04ef1b4"
+    },
+    {
+      "claim_id": "1b0f78a4-7b05-41d5-bb8b-b718d017c760",
+      "result_id": "ad7b1566-4bad-4b2b-8129-a29198b0776d"
+    }
+  ],
+  "comparisons": []
+}

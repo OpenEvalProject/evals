@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C36",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Between January 2014 and May 2019, there were 846 HIV diagnoses in Amsterdam residents, with 516 (61%) estimated to have been infected in 2014\u20132018. The majority (75%) self-identified as MSM, 20% as heterosexual, with small numbers in other transmission categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C36, C94-C98 provide consistent descriptive statistics from the ATHENA cohort data. The numbers are directly observed (diagnoses) or estimated using validated biomarker methods (infection times). The data completeness is high and the proportions across risk groups sum appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Amsterdam experienced substantial declines in HIV diagnoses from ~300 in 2010 to ~120 in 2018, primarily among MSM. Despite this decline, Amsterdam's diagnosis rate (104 per 100,000) remained higher than the rest of the Netherlands (24 per 100,000), maintaining its status as a national HIV hotspot. Estimated infections declined from 1128 in 2009\u20132013 to 516 in 2014\u20132018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C21, C22, C37-C40 document temporal trends in diagnoses and estimated infections using surveillance data and biomarker-based infection time estimates. The comparison between Amsterdam and national rates is straightforward and the substantial reduction in infections is supported by the data. The inference that Amsterdam remains a hotspot is justified by the rate differential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C50",
+      "C82",
+      "C83"
+    ],
+    "result": "Among infections estimated to have occurred in 2014\u20132018, an estimated 14% [12\u201316%] of MSM infections and 41% [35\u201348%] of heterosexual infections remained undiagnosed by May 2019. Undiagnosed proportions varied by region of birth, with the highest proportion (57% [47\u201367%]) among heterosexuals born in Sub-Saharan Africa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C50, C82, C83 report undiagnosed proportions derived from time-to-diagnosis modeling using validated Bayesian methods (C31-C33). The estimates account for declining incidence trends using ECDC modeling tool weights. Sensitivity analyses using alternative weighting schemes yielded similar results (mentioned in text). The credible intervals are appropriately reported and the variation by risk group is consistent with known disparities in testing behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Late presentation (CD4 <350) occurred in 33% of diagnoses, with higher rates among heterosexuals than MSM. Time-to-diagnosis was substantially longer in heterosexuals (14 months longer overall, 9 months for Dutch-born, 19 months for foreign-born) compared to MSM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C46-C48 document disparities in time-to-diagnosis using direct observations (CD4 counts) and Bayesian estimates from biomarker data. The differences are clinically meaningful and consistent with known patterns of healthcare access and testing behavior. The posterior median estimates are appropriately derived from the hierarchical model described in C31-C33.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Among the 516 Amsterdam diagnoses with estimated infection in 2014\u20132018, 87% were in MSM (37% Dutch-born, 50% foreign-born) and 13% were in heterosexuals (4% Dutch-born, 9% foreign-born).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide demographic breakdowns of diagnosed infections. The proportions are directly observed from cohort data and sum correctly (190+256+23+47=516). The inference in C45 that the majority were in MSM is mathematically supported by the proportions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Data were obtained from the ATHENA cohort, which has near-complete coverage with only 2% opt-out and 5.2% lost to follow-up. Infections were geolocated to Amsterdam based on postcode at registration or most recent update, with 92% consistently resident, 4% moving to Amsterdam, and 4% moving away.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 describe the data source and methodology. The ATHENA cohort is well-established and cited appropriately (C24). The completeness statistics (C25-C26) and geolocation approach (C27-C30) are clearly described. The proportions for residence patterns sum to 100% and the methodology is transparent about potential biases from residence changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Time from infection to diagnosis was estimated using a Bayesian approach trained on 19,788 HIV seroconverters from the CASCADE collaboration, modeling joint evolution of viral load and CD4 counts. Amsterdam patients had an average of 4 viral load and 6 CD4 observations per patient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe the infection time estimation methodology with appropriate citation to Pantazis et al., 2019. The use of external training data (CASCADE) and application to Amsterdam patients with longitudinal biomarkers is methodologically sound. The average number of observations per patient is sufficient for reliable estimation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Of the 516 individuals with estimated infection in 2014\u20132018, 378 (73%) had pol sequences available, with 341 belonging to major circulating subtypes. Phylogenetic analysis identified 1829 distinct transmission chains (subgraphs) that included at least one Amsterdam infection prior to 2014.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe sequence availability and phylogenetic reconstruction. The sequence coverage (73%) is reasonable given the study period and clinical practices. The exclusion criteria (C53) are appropriate for phylogenetic analysis. The identification of 1829 pre-existing chains (C54) is derived from phyloscanner analysis of subtype-specific trees with appropriate background sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Among pre-existing transmission chains, 76% of MSM chains and 70% of heterosexual chains had all members virally suppressed by 2014. Of these suppressed chains, 95% (MSM) and 98% (heterosexual) showed no growth in 2014\u20132018. The difference in suppression rates was statistically significant (p=0.02) but modest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 document the relationship between viral suppression and transmission chain growth. The proportions are derived from combining phylogenetic data with viral load measurements. The statistical test (C61) is appropriate (chi-square) and the interpretation (C62) that suppressed chains rarely grow is strongly supported by the data and consistent with U=U (undetectable=untransmittable) principles cited in C84.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Among phylogenetically observed chains, 89 (7%) of 1253 pre-existing MSM chains and 15 (3%) of 576 pre-existing heterosexual chains grew in 2014\u20132018. Additionally, 114 new MSM chains and 26 new heterosexual chains emerged during this period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 report directly observed phylogenetic data on chain growth. The numbers are consistent with the total chains reported in C55 and C58. The observation that emerging chains outnumber growing pre-existing chains is straightforward from the data, though the authors appropriately note these are incomplete observations requiring statistical modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Statistical modeling accounting for unobserved chains estimated 172 [154-195] emerging MSM chains and 58 [42-83] emerging heterosexual chains, substantially more than phylogenetically observed. An estimated 61% [55\u201367%] of growing MSM chains and 69% [56\u201381%] of growing heterosexual chains were emerging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 report results from the Bayesian branching process model described in the methods. The model appropriately accounts for incomplete sampling and the theoretical property (C70) that small chains are likely unobserved when R<1 is well-established. The credible intervals are appropriately wide, reflecting uncertainty in unobserved chains. Model fit was reported as very good (Appendix reference).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C85",
+      "C86"
+    ],
+    "result": "An estimated 47% [39\u201355%] of MSM infections and 61% [45\u201377%] of heterosexual infections in 2014\u20132018 occurred in emerging chains, with the remainder in pre-existing chains. Overall, 53% of MSM infections and 39% of heterosexual infections grew from chains that existed prior to 2014.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C85-C86 report the distribution of infections across chain types from the branching process model. The proportions are internally consistent (emerging + pre-existing = 100%). The finding that pre-existing chains contributed more infections on average (C75) follows logically from the proportions. The credible intervals appropriately reflect uncertainty, particularly for heterosexuals with smaller sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "An estimated 67% [60\u201374%] of MSM infections and 56% [41\u201370%] of heterosexual infections in 2014\u20132018 had an Amsterdam resident as source (locally preventable). Evidence was strong for MSM (all credible intervals >50%) but more moderate for heterosexuals (wider intervals including 50%), reflecting lower sequence availability due to late diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C87-C90 report the primary outcome on locally preventable infections. The estimates are derived from the branching process model by subtracting introduced chains from total infections (Equation 8). The assessment of statistical strength (C88-C89) appropriately considers credible interval width and position. The explanation for weaker evidence in heterosexuals (C90) is supported by the sequence availability data (C51) and late presentation rates (C34-C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Of an estimated 415 [316-542] locally preventable infections in 2014\u20132018, 43% [37\u201349%] were in foreign-born MSM, 41% [35\u201347%] in Dutch-born MSM, 10% [6\u201318%] in foreign-born heterosexuals, and 5% [2\u20139%] in Dutch-born heterosexuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C76-C79 report the distribution of locally preventable infections by risk group. These are derived by combining the proportion of locally preventable infections (C8-C9) with the estimated total infections by risk group (Table 1) using the weighting approach described in Equation 9. The proportions sum correctly and the credible intervals appropriately reflect propagated uncertainty from multiple estimation steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The majority of Amsterdam MSM infections in 2014\u20132018 originated in transmission chains that pre-existed by 2014.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is directly supported by C85, which estimates 53% of MSM infections grew from pre-existing chains. This is a key finding that contradicts the authors' initial speculation that new infections would be concentrated in emerging chains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C80",
+      "C81"
+    ],
+    "result": "Amsterdam reached the UNAIDS 95-95-95 targets before the COVID-19 pandemic, with an estimated 5% of all PLHIV remaining undiagnosed by end of 2019. The city has experienced a decade of declining HIV diagnoses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C80-C81 provide context about Amsterdam's HIV response achievements. C49 is supported by appropriate citations (Sighem et al., 2020; UNAIDS, 2019). The 5% undiagnosed estimate refers to all PLHIV (not just recent infections), which is distinct from and lower than the 14-41% undiagnosed among recent infections (C6-C7). The decade of declining diagnoses (C81) is supported by surveillance data (C21).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C92"
+    ],
+    "result": "The burden of locally acquired infection remains concentrated in MSM, with both Dutch-born and foreign-born MSM likely to benefit most from intensified city-level interventions. There remains considerable potential to prevent HIV infections among Amsterdam residents through city-level interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100, C92 represent the main conclusions. They are supported by the distribution of locally preventable infections showing 84% (43%+41%) in MSM (C10-C11, C76-C77). The conclusion of considerable prevention potential (C92) is justified by the finding that the majority of infections were locally preventable (C87) despite declining incidence. These are appropriate inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "More than 300 cities have joined the UNAIDS Fast-Track Cities initiative. HIV is concentrated in metropolitan areas, and Amsterdam is the city with the greatest HIV burden in the Netherlands. Amsterdam joined the initiative on December 1, 2014, and launched the H-Team project focusing on outreach, frequent testing, immediate ART, and PrEP rollout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C20 provide background context with appropriate citations. The number of cities (C1, C16) is stated as fact with reference to UNAIDS and the Fast-Track Cities website. Amsterdam's HIV burden (C17) and the H-Team interventions (C19-C20) are supported by multiple citations. These are well-established facts providing necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Late diagnoses remain common in Amsterdam.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by the data showing 33% late presentation (C34) and substantial proportions of recent infections remaining undiagnosed (C6-C7). This is a straightforward observation from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Treatment for HIV infection resulting in undetectable viral load equals untransmittable virus (U=U).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 states the established U=U principle with appropriate citation to Rodger et al., 2019. This is well-established scientific knowledge used to interpret the finding that suppressed chains rarely grow (C62).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Data from clinic surveys in migrants across Europe indicated 51% in-country HIV acquisition in heterosexual women and 58% in heterosexual men post-migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 cites external data (Alvarez-Del Arco et al., 2017) showing similar proportions of in-country acquisition as found in this study. This provides external validation for the findings on locally preventable infections in heterosexuals. The citation is appropriate and the comparison is relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "COVID-19 has severely disrupted prevention messaging, testing, PrEP services, and early pathways to care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 states a well-known impact of the COVID-19 pandemic on HIV services. While no specific citation is provided, this is widely documented and provides relevant context for the importance of the findings. This is general knowledge about pandemic impacts.",
+    "result_type": "MINOR"
+  }
+]

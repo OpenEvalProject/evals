@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C93",
+      "C94"
+    ],
+    "result": "Single-cell RNA sequencing was performed on shrimp hemocytes from three treatment groups (control, rEGFP, rCREG), yielding 34,693 cells with varying transcript and gene counts per cell. The rCREG-treated samples showed the highest UMIs and detected genes, consistent with CREG being a hemocyte activation factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 provide clear quantitative data from scRNA-seq experiments showing cell counts, median transcripts, and genes per cell across treatments. Claims C93-C94 describe appropriate methodological approaches (iodixanol gradient centrifugation, canonical correlation analysis for batch correction). The data quality metrics are reasonable for scRNA-seq, and the observation about rCREG treatment is internally consistent with prior work (C26).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Five major hemocyte populations were identified in shrimp hemolymph: prohemocytes (19.7%), granulocytes (40%), monocytic hemocytes (32%), transitional cells (6%), and germ-like cells (2.3%). Each population was characterized by specific marker genes, with granulocytes expressing ProPO system genes and monocytic hemocytes expressing genes shared with mammalian monocytes including Nlrp3 and Lyz1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C27 present the main cell type classification based on scRNA-seq clustering. Claims C28-C34 provide specific marker gene evidence for each population, supported by both current data and appropriate citations to prior literature. The functional annotation of cell types based on marker genes follows standard scRNA-seq analysis practices. The identification of five populations is well-supported by the data presented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The three major immune cell types (PHs, MHs, GHs) were further subdivided into six subtypes. PH1 showed high expression of cell cycle genes and represented proliferating cells (~4.5% of total), consistent with prior reports of 2-5% proliferating hemocytes. Trajectory analysis revealed two differentiation branches (MH and GH lineages) originating from a common prohemocyte.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe subclustering results with specific cell counts and marker gene patterns. Claim C45 provides cell cycle analysis supporting PH1 as proliferating cells, validated by citation C46. Claim C47 presents trajectory analysis using Monocle, a standard computational approach. The convergence of multiple lines of evidence (marker genes, cell cycle analysis, trajectory inference, consistency with prior literature) strongly supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "A novel macrophage-like subset MH2 was identified, expressing marker genes including Nlrp3 and Casp1. Nine MH2 marker genes have human homologs that are specifically expressed in human macrophages, including tissue-specific macrophages, suggesting MH2 might be an invertebrate homolog of human macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 identifies MH2 as a novel subset based on scRNA-seq data. Claims C56-C57 provide comparative genomic evidence using the Human Cell Atlas database, showing that nine MH2 marker genes have human homologs specifically expressed in macrophages. While claim C58 is inferential, it is reasonably supported by the comparative gene expression data. The identification of a novel cell type with conserved marker genes is a significant finding, though the evolutionary homology claim (C58) remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "MH2 hemocytes are phagocytic cells with morphology similar to vertebrate macrophages (round nuclei, vacuolated cytoplasm). Phagocytic hemocytes specifically expressed MH2 marker genes (CHIT1, Lyz1, NAGA, NLRP3) at both mRNA and protein levels, and their phagocytosis was inhibited by cytochalasin D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide multiple independent lines of experimental evidence: morphological observation (C60), functional inhibition assay (C61), qPCR validation (C62), and immunoblotting (C63). The convergence of morphological, functional, and molecular evidence strongly supports that MH2 cells are phagocytic and express the identified marker genes. The cytochalasin D inhibition experiment (C61) provides mechanistic validation of actin-dependent phagocytosis, consistent with vertebrate macrophages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Three shrimp homologs of human transcription factors (Fli1, MAF, c-Rel) were identified among differentially expressed genes during hemocyte differentiation. Fli1 was specifically expressed in the granulocyte lineage, while MAF and c-Rel were highly expressed in the MH lineage, suggesting conservation of myeloid regulators between shrimp and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C50, C52 present gene expression data from trajectory analysis. Claims C51, C53, C54 provide supporting citations for the known functions of these transcription factors in vertebrate myeloid differentiation. The parallel expression patterns of homologous transcription factors in corresponding cell lineages (Fli1 in granulocytes, MAF/c-Rel in monocytic cells) provide reasonable evidence for functional conservation, though claim C55 remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Shrimp hemocyte differentiation is similar to human myeloid cell development, where granulocyte-monocyte progenitor differentiates into monocyte and granulocyte.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 draws a comparative inference between shrimp hemocyte differentiation (C47) and human myeloid development, supported by citation to Bassler et al., 2019. The trajectory analysis showing bifurcation from a common progenitor into two lineages provides structural similarity to vertebrate GMP differentiation. While this is a comparative inference, it is reasonably supported by the trajectory data and the expression of conserved transcription factors (C49-C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C86",
+      "C89"
+    ],
+    "result": "The new classification reconciles discrepancies in traditional morphology-based classification. Hyalinocyte markers were expressed in PH1, PH2, MH1, and MH2, explaining why hyalinocytes contain both proliferating progenitors and phagocytic cells. Semi-granulocyte markers were expressed in both GH2 and MH2, indicating that cells sorted as semi-granulocytes contain both monocytic hemocytes and granulocyte lineage cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C71 present gene expression data comparing traditional marker genes with the new classification. Claims C69-C70, C86, C89 provide interpretations that resolve previous inconsistencies in the literature. The molecular data (marker gene expression patterns) provides a more objective basis for classification than morphology alone and explains functional heterogeneity within morphologically defined groups. This represents a significant advance in understanding shrimp hemocyte classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Recombinant protein injection slightly altered cell type proportions (increased GHs and PHs, decreased MHs), but there were no significant differences between rEGFP and rCREG treatments, suggesting CREG is an activation factor rather than a differentiation factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 present quantitative data on cell type proportions across treatments. Claim C40 provides a reasonable interpretation based on the lack of differential effects between rEGFP and rCREG on cell type proportions, despite rCREG showing higher activation (C25-C26). The inference that CREG is an activation rather than differentiation factor is logically sound given the data, though the statistical analysis details are not fully described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "A new functional monocytic hemocyte lineage was identified in shrimp. The terminally differentiated cells share several functional genes with mammalian macrophages, suggesting this lineage might be an invertebrate evolutionary homolog of the vertebrate monocyte lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 summarize the main findings regarding the monocytic hemocyte lineage, supported by the collective evidence from trajectory analysis (C47), marker gene identification (C2, C56-C57), and functional validation (C3, C60-C64). Claim C92 is a speculative evolutionary inference, but it is reasonably supported by the comparative genomic and functional data. The identification of a novel cell lineage with conserved features represents a major contribution, though the evolutionary homology claim requires cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Nlrp3 and Casp1, mammalian macrophage inflammasome components, were identified in MH2 cells, suggesting inflammasome-mediated anti-pathogenic processes might exist in invertebrate innate immunity. NAGA, which inhibits macrophage activation in vertebrates, was also found in shrimp phagocytes, implying similar negative regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73, C75 state established knowledge about mammalian proteins (supported by citations). Claims C74, C76 are speculative inferences based on the presence of homologous genes in shrimp. While the identification of these genes in MH2 is data-supported (C2, C56, C62-C63), the functional claims about inflammasome activity and regulatory mechanisms are not experimentally validated in this study. These remain hypotheses requiring functional validation through future experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background context on invertebrate immunity, shrimp biology, and prior work on hemocyte classification in other invertebrates (mosquito, Drosophila) is provided to motivate the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C19 provide background information supported by appropriate citations to established literature. These claims set the scientific context for the study and are not primary findings. The citations appear appropriate and the general knowledge claims are consistent with the field. This background material is well-supported but represents prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C26"
+    ],
+    "result": "CREG was previously identified as a hemocyte activation factor that is more effective than EGFP in activating shrimp hemocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C26 reference prior work by the authors (Huang et al., 2021) establishing CREG as an activation factor. This provides context for the experimental design (using rCREG treatment) and is supported by citation to published work. The current study's observation of higher UMIs and genes in rCREG-treated cells (C25) is consistent with this prior finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Phagocyte proportions vary across species (40-60% in oysters, most immune cells in fish, most myeloid cells in humans), with shrimp containing fewer phagocytes. The data suggest at least part of shrimp phagocytes originated from a macrophage-like subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 provide comparative context supported by appropriate citations. Claim C82 is an inference based on the identification of phagocytic MH2 cells (C3, C64). While the inference is reasonable, the phrase \"at least a part\" is appropriately cautious since the study does not quantify what proportion of total phagocytes are MH2 cells versus other potential phagocytic populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Various tissue-specific macrophages could have evolved from a common primitive cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is a broad evolutionary speculation based on the observation that MH2 marker gene homologs are expressed in various human tissue-specific macrophages (C57). While the comparative data is interesting, this evolutionary claim goes beyond what the data can support. The study identifies conserved marker genes but does not provide phylogenetic analysis or functional evidence to support claims about evolutionary origins of tissue-specific macrophages. This remains highly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Various marker genes and their functions in other organisms are cited to support cell type annotations (h1f0 for stemness, TGM1 as immature marker, Igfbp7 for proliferation, lhx9 for gonadal development, spir for oocyte division, cytochalasin D as actin inhibitor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C95-C97 provide supporting information from the literature to justify marker gene selection and experimental approaches. Each claim is supported by appropriate citations. These represent established knowledge used to interpret the current findings rather than new discoveries. The citations appear appropriate and the knowledge claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  }
+]

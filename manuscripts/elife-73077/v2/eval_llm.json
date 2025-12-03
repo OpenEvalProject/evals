@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C44",
+      "C68"
+    ],
+    "result": "The authors demonstrate that a previously published model of visual navigation (Sun et al. 2020) can be generalized to olfactory navigation tasks (chemotaxis and anemotaxis) in flies and ants by utilizing a 'copy-and-shift' neural mechanism. This mechanism copies the current heading from head-direction cells and shifts it based on sensory valence changes, allowing the model to exploit sensory gradients that provide no instantaneous orientation information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C34, C35, C42, C43, and C44 provide computational modeling evidence showing that the model successfully generates realistic chemotaxis and anemotaxis behaviors when adapted from visual to olfactory inputs. The copy-and-shift mechanism (C3, C18-C21, C26) is well-described and supported by prior anatomical evidence (C24, C25). The model produces behaviors matching published behavioral data (C35, C43, C50), demonstrating successful generalization across sensory modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C55",
+      "C69"
+    ],
+    "result": "The model demonstrates coordination between different guidance strategies (chemotaxis and anemotaxis) through context-dependent switching mechanisms triggered by ON/OFF responses to odor concentration changes, and through ring attractor networks that optimally integrate cues sharing a common frame of reference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 show that the model successfully reproduces observed behavioral switching between anemotaxis (ON response) and chemotaxis (OFF response) in flies, matching published data (\u00c1lvarez-Salvado et al., 2018). The contextual switching mechanism (C27, C48) and ring attractor integration (C28) are computationally demonstrated. However, the ring attractor implementation remains hypothetical (C28, C84) without direct neural evidence, though the behavioral outputs are realistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The model successfully integrates path integration (PI) with olfactory navigation in desert ants, weighting PI output relative to home vector length and odor concentration, producing homing paths that match real ant behavior following displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 demonstrates that simulated paths closely match real ant data (Buehlmann et al., 2012) following displacement. The integration mechanism (C53) is based on prior behavioral observations and the authors' previous modeling work. The model successfully coordinates multiple navigation systems (C55) across sensory domains, though the neural implementation of the ring attractor remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C66",
+      "C70"
+    ],
+    "result": "The copy-and-shift mechanism can transfer directional cues from unstable/egocentric frames of reference (wind direction) to stable/geocentric frames (celestial compass), enabling ants to compensate for wind displacement and return to familiar routes. This provides a first computational account of how insects recover from environmental disturbances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 describe the wind compensation behavior observed in real ants (Wystrach and Schwarz, 2013) and show how the copy-and-shift mechanism can account for it computationally. The model successfully reproduces the behavioral pattern where ants use a 'clutching pose' to transfer wind direction into a geocentric frame. However, the claim of being the 'first account' (C5) is strong and the mechanism remains a computational hypothesis requiring experimental validation of the proposed neural substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The model accounts for backtracking behavior in desert ants displaced from the nest by using the copy-and-shift mechanism to create a 180\u00b0 reversed heading when visual novelty drops significantly, stored in working memory to guide initial search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 cites observed backtracking behavior (Wystrach et al., 2013), and C65 shows the model can reproduce this through a 180\u00b0 shift triggered by visual novelty changes. The model successfully distinguishes this from other displacement scenarios (C63). However, the trigger mechanism (significant drop in visual novelty) is somewhat speculative (C64) and the neural implementation of working memory storage remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The model generates realistic chemotaxis behavior in flies by adapting the visual navigation model to use olfactory inputs (antennal lobe to lateral horn and mushroom bodies) instead of visual inputs, with the copy-and-shift mechanism driven by temporal changes in odor concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 establish the behavioral and anatomical basis for chemotaxis in flies with appropriate citations. Claims C34-C35 demonstrate that the model produces realistic chemotaxis in 'volcano' and other odor landscapes. The neural pathways are well-established (C33), though the authors acknowledge limitations (C36, C37) regarding direct pathways and applicability to larvae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The model generates realistic anemotaxis behavior in flies by using wedge projection neurons (WPNs) to encode wind direction relative to the animal's heading, which then drives the shift component of the copy-and-shift mechanism to turn the agent upwind when rewarding odor is detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 establish the behavioral and neural basis for anemotaxis with appropriate citations to prior work. Claims C42-C43 demonstrate that the model successfully reproduces realistic odor-driven anemotaxis in simulated laboratory environments. The WPN encoding and neural pathways are well-supported by anatomical studies (C40, C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C76",
+      "C79",
+      "C80"
+    ],
+    "result": "The model represents a general navigation framework extending across multiple behavioral tasks and sensory modalities, supporting the hypothesis that the central complex acts as a general navigation center in insects through a 'bowtie' architecture that constrains input format but deconstrains behavioral outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 synthesize the results showing the model handles multiple tasks (chemotaxis, anemotaxis, PI, visual homing) across contexts. The bowtie architecture interpretation (C76, C79, C80) provides a conceptual framework supported by analogy to mammalian systems (C77, C78). However, this remains a computational demonstration rather than direct neural validation, and the generality claim depends on the success of the individual behavioral models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The neural mechanisms underlying the copy-and-shift mechanism (lateralized connections, synaptic plasticity) and working memory (synapse-weight modulation) have been mapped and modeled in prior work, demonstrating biological feasibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 cite multiple studies demonstrating that the neural substrates for the copy-and-shift mechanism have been anatomically mapped and computationally modeled. Recent work (Goulard et al., 2021) presents functionally similar mechanisms, supporting the biological plausibility of the proposed model. These claims appropriately acknowledge prior work rather than claiming novelty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The model hypothesizes that ring attractor networks in the fan-shaped body and noduli optimally integrate desired heading cues, with different PFN neuron populations storing distinct desired headings from independent navigation systems, and FB-NOc neurons implementing context switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 are explicitly stated as hypotheses with citations to anatomical studies. While the computational function of ring attractors is demonstrated in the model, the specific neural implementation remains speculative. The authors appropriately frame these as testable hypotheses for future work, but they lack direct experimental validation in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The model uses simplified odor perception assuming stable gradients, which reflects laboratory settings but simplifies naturalistic conditions. However, insect olfactory processing includes adaptation and gain control mechanisms that normalize noisy inputs, and shared processing principles exist across sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 acknowledge important limitations of the model's odor simulation with appropriate citations. Claims C89-C92 provide context showing that (1) stable gradients exist in some natural settings, (2) neural mechanisms exist to smooth noisy inputs, and (3) cross-modal processing similarities support the model's generalization approach. The authors appropriately identify limitations while providing justification for their simplifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Both visual and olfactory cues have direct pathways to motor centers in addition to CX pathways. The authors propose that direct pathways mediate fast reflexes while CX pathways handle higher-level guidance requiring learning and integration, with lateral accessory lobes integrating both pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is well-supported by citations to anatomical studies. However, claims C94 and C96 are explicitly speculative proposals about functional roles that lack direct experimental validation. Claim C95 provides some support from Steinbeck et al. 2020, but the overall functional distinction between fast and slow pathways remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors propose that mushroom bodies process rotationally invariant but spatially varying cues (generating gradient ascent/descent behaviors) while rotationally varying cues innervate the CX directly, and this separation is fundamental to the model's flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 present a novel organizational principle for sensory processing in the model. While this separation successfully enables the diverse behaviors demonstrated, it is explicitly stated as a proposal (C99, C100) and testable hypothesis (C101) rather than established fact. The functional success in the model supports the idea, but experimental validation of this organizational principle is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The central complex is hypothesized to coordinate insect guidance strategies based on prior discoveries of head-direction systems, sensory innervation, columnar structure, and steering circuits. For the CX to be a general navigation center, it must handle gradient ascent/descent, coordinate competing guidance systems, and generalize across modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C14 summarize well-established prior work on CX structure and function with appropriate citations. Claims C15-C17 logically define requirements for the CX to be considered a general navigation center, setting up the motivation for the current study. These are background claims that appropriately frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The CX is ancient and highly conserved across insect species, with fixed circuitry optimized for diverse sensory inputs and behavioral outputs. The authors propose that CX circuits can be flexibly repurposed by different insects, functioning through a 'bowtie' architecture similar to mammalian decision-making circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are well-supported by citations to prior work on CX evolution and conservation. Claims C77-C78 appropriately cite the bowtie architecture concept from mammalian neuroscience. Claims C6, C67, C71, and C76 represent interpretations and proposals based on the modeling results, which are reasonable given the demonstrated flexibility of the model but remain somewhat speculative regarding biological implementation.",
+    "result_type": "MINOR"
+  }
+]

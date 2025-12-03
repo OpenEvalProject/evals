@@ -1,0 +1,1433 @@
+{
+  "submission": {
+    "id": "78acd744-f26e-4542-8666-dd283b6b9663",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:01:37.728359Z",
+    "updated_at": "2025-12-03T12:01:37.728359Z"
+  },
+  "content": [
+    {
+      "id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "submission_id": "78acd744-f26e-4542-8666-dd283b6b9663",
+      "content_type": "manuscript",
+      "content_text": "# Boosting targeted genome editing using the hei-tag\n\n## Authors\n\n- Thomas Thumberger<sup>1</sup> ([ORCID: 0000-0001-8485-457X](https://orcid.org/0000-0001-8485-457X))\n- Tinatini Tavhelidse-Suck<sup>1</sup> ([ORCID: 0000-0002-6103-9019](https://orcid.org/0000-0002-6103-9019))\n- Jose Arturo Gutierrez-Triana<sup>1</sup>\n- Alex Cornean<sup>1</sup> ([ORCID: 0000-0003-3727-7057](https://orcid.org/0000-0003-3727-7057))\n- Rebekka Medert<sup>2</sup>\n- Bettina Welz<sup>1</sup>\n- Marc Freichel<sup>3</sup> ([ORCID: 0000-0003-1387-2636](https://orcid.org/0000-0003-1387-2636))\n- Joachim Wittbrodt<sup>1</sup> ([ORCID: 0000-0001-8550-7377](https://orcid.org/0000-0001-8550-7377)) \u2020\n\n### Affiliations\n\n1. Centre for Organismal Studies (COS), Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))\n2. Heidelberg Biosciences International Graduate School (HBIGS) Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))\n3. Institute of Pharmacology, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))\n4. DZHK (German Centre for Cardiovascular Research), partner site Heidelberg/Mannheim Heidelberg Germany ([ROR:031t5w623](https://ror.org/031t5w623))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrecise, targeted genome editing by CRISPR/Cas9 is key for basic research and translational approaches in model and non-model systems. While active in all species tested so far, editing efficiencies still leave room for improvement. The bacterial Cas9 needs to be efficiently shuttled into the nucleus as attempted by fusion with nuclear localization signals (NLSs). Additional peptide tags such as FLAG- or myc-tags are usually added for immediate detection or straightforward purification. Immediate activity is usually granted by administration of preassembled protein/RNA complexes. We present the \u2018hei-tag (high efficiency-tag)\u2019 which boosts the activity of CRISPR/Cas genome editing tools already when supplied as mRNA. The addition of the hei-tag, a myc-tag coupled to an optimized NLS via a flexible linker, to Cas9 or a C-to-T (cytosine-to-thymine) base editor dramatically enhances the respective targeting efficiency. This results in an increase in bi-allelic editing, yet reduction of allele variance, indicating an immediate activity even at early developmental stages. The hei-tag boost is active in model systems ranging from fish to mammals, including tissue culture applications. The simple addition of the hei-tag allows to instantly upgrade existing and potentially highly adapted systems as well as to establish novel highly efficient tools immediately applicable at the mRNA level.\n\n## Introduction\n\nIn the last decade, the CRISPR/Cas9 system and its derivatives facilitated and revolutionized genome editing across all phyla (Nidhi et al., 2021). The efficiency of editing crucially depends on the on-site activity of the particular Cas9 enzymes used (usually Streptococcus pyogenes Cas9, SpCas9) in the nucleus. State-of-the-art Cas9 variants differ by peptide tags added to the N- and C-termini of the respective endonuclease resulting in reported different activities (Liu et al., 2021; Zhang et al., 2014). Employed tags usually comprise diverse nuclear localization signals (NLSs) and epitope tags (e.g. FLAG, Myc, HA) for potential protein purification or visualization. To achieve nuclear localization of the Cas9 enzyme, the monopartite NLS originating from the SV40 large T-antigen (Kalderon et al., 1984) or a bipartite NLS discovered in Xenopus nucleoplasmin is routinely employed (Dingwall et al., 1988). However, the nuclear localization activity of commonly used NLSs is tightly controlled during early development (Poon and Jans, 2005) and is first detectable during gastrulation. In fish embryos, an optimized artificial NLS (Inoue et al., 2016) (oNLS) facilitates prominent nuclear localization already immediately after fertilization, while the SV40 NLS acts most prominently much later and facilitates nuclear localization approximately at the 1000-cell stage. For high targeting efficiency with low mosaicism, a peak activity should be achieved in the zygote or at early cleavage stages. Here, we present the hei-tag, a short bipartite tag composed of a myc-tag and optimized NLSs at the N- and C-termini, that boosts Cas9 or cytosine-to-thymine (C-to-T) base editor-mediated targeted genome editing in organismo and cell culture.\n\n## Results\n\nAssessing the genome editing efficiency requires a reliable and quantitative readout based on an apparent phenotype. We established a quantitative assay for loss-of-eye pigmentation to address the activity of different Cas9 variants in two teleost model systems, medaka (Oryzias latipes) and zebrafish (Danio rerio) covering a wide evolutionary distance of 200 million years (Furutani-Seiki and Wittbrodt, 2004). Our assay on retinal pigmentation provides a highly reproducible quantitative readout for the loss of the conserved transporter protein oculocutaneous albinism type 2 (oca2), required for melanin biosynthesis (Figure 1a). Only its bi-allelic inactivation results in the loss of pigmentation of eyes and skin (Lischik et al., 2019). A prominent knock-out phenotype thus can either result from a single to few early events, or from many events at subsequent developmental stages. Although phenotypically indifferent, the allele variance (genetic mosaicism) reflects the time point of action.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig1-v3.jpg)\n\n**Figure 1.:** Phenotypic range and quantification of OlOca2 T1, T2, and DrOca2 T1, T2 sgRNAs/Cas9 variant and sgRNA/Cas9 protein complex (ribonucleoprotein [RNP])-mediated loss of pigmentation in medaka (a\u2013d) and zebrafish (e\u2013g) at high concentrations. (a) Fully pigmented eyes in uninjected control medaka embryo at 4.5 dpf. (b1\u2013b5) Range of typically observed loss-of-pigmentation phenotypes upon injection with 150ng/\u00b5l heiCas9 mRNA and 30ng/\u00b5l OlOca2 T1, T2 sgRNAs. The observed phenotypes range from almost full pigmentation (b1) to completely unpigmented eyes (b5). (c) Minimum intensity projection of a medaka embryo at 4.5days after injection with 150ng/\u00b5l heiCas9 and 30ng/\u00b5l OlOca2 T1, T2 sgRNAs. (c\u2019) Locally thresholded pigmentation on elliptical selection per eye (same embryo as in c). (d) Quantification of mean gray values (0 = fully pigmented, 255 = completely unpigmented) of individual eyes from Oca2 knock-out medaka crispants co-injected with 30ng/\u00b5l OlOca2 T1, T2 sgRNAs and 150ng/\u00b5l mRNAs of zCas9 and heiCas9 (red) compared to RNP injections (concentrations indicated). Medians: uninjected control = 0.4; zCas9 = 134.5; heiCas9 = 225.3; 1.765\u00b5M RNP = 211.1; 5\u00b5M RNP = 216.2; 24\u00b5M RNP = 237.8. Note: highly significant pigment loss (70% increase) in heiCas9 vs. zCas9 crispants (p = 1.1e-25); heiCas9 reaches the same knock-out efficiency compared to RNP injections with only significant differences at highest RNP concentrations (24\u00b5M). (e) Fully pigmented uninjected control zebrafish embryo at 2.5 dpf. (f1\u2013f4) Range of typically observed loss-of-pigmentation phenotypes upon injection with 150ng/\u00b5l heiCas9 mRNA and 30ng/\u00b5l DrOca2 T1, T2 sgRNAs. The observed phenotypes range from almost full pigmentation (f1) to completely unpigmented eyes and body (f4). (g) Quantification of mean gray values of individual eyes from oca2 knock-out zebrafish embryos co-injected with 30ng/\u00b5l DrOca2 T1, T2 sgRNAs and 150ng/\u00b5l mRNAs of zCas9 and heiCas9 (red), respectively. Medians: uninjected control = 5.3; zCas9 = 14.7; heiCas9 = 254.6. Note the very highly significant pigment loss (17-fold increase) in heiCas9 vs. zCas9 crispants (p = 2.1e-56). dpf, days post fertilization; mean gray values ranged from 0, that is, fully pigmented eye to 255, that is, complete loss of pigmentation; n, number of eyes analyzed. Bold line, median. Statistical analysis performed in R, pairwise Wilcoxon rank sum test, Bonferroni corrected.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Comparison of OlOca2 knock-out efficiency (quantification of eye pigmentation) using a permutation screen of peptide domains (nuclear localization signals [NLSs], Myc-tag, amino acid linkers) flanking a mammalian codon-optimized Cas9 enzyme. Injection mix contained 30ng/\u00b5l OlOca2 T1, T2, 150ng/\u00b5l tagged Cas9 variant mRNA, 20ng/\u00b5l GFP mRNA injection marker. Particular peptides and relative positions indicated by schematics. Constellation of peptides sorted by knock-out efficiency. The \u2018hei-tag\u2019 myc-flexible-linker-oNLS-Cas9-oNLS (heiCas9) variant was identified being most efficient. JDS246-Cas9 (Addgene #43861), MSI-Cas9-Xl (myc-Cas9) was cloned following Zhang et al., 2014. Peptides used: FLAG, FLAG tag; F, flexible linker; I, internal linker; M, cMyc-tag; O, optimized NLS (Inoue et al., 2016); S, SV40 NLS (Kalderon et al., 1984); Xl, bipartite Xenopus laevis nucleoplasmin NLS (Dingwall et al., 1988). For sequences, see Supplementary files 1 and 2. 0 = fully pigmented, 255 = completely unpigmented; n, number of eyes analyzed.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Percentage of dead, abnormal (e.g. delayed development or malformation), and properly developed injected embryos. Only properly developed embryos were included for analysis. n, total number of injected embryos.\n\nState-of-the-art protocols employ high concentrations of Cas9 and respective sgRNAs to ensure efficient on-site editing. To facilitate uniform Cas9 action, we followed our successful mRNA injection protocol (Gutierrez-Triana et al., 2018). One-cell stage medaka embryos were co-injected with sgRNAs targeting the oca2 gene (OlOca2 T1, T2) together with mRNA encoding a Cas9 endonuclease and mRNA encoding the green fluorescent protein (GFP) as injection tracer. Injected embryos were fixed at 4.5 days post fertilization (dpf) (Iwamatsu, 2004) well after the onset of pigmentation in control injections and subjected to image analysis (Figure 1b). In brief, the eyes were segmented, (residual) pigmentation was thresholded (Figure 1c\u2013c\u2019) and quantified according to mean gray values (0, i.e. fully pigmented, 255, i.e. completely unpigmented, Figure 1d).\n\nWe first established the base activity level for the assay at standard conditions with high molar excess (150 ng/\u00b5l concentration) and determined the activity of a Cas9 variant codon optimized for zebrafish, that is, a Cas9 carrying an SV40 NLS at the N- and C-terminus (nls-zCas9-nls, hereinafter: zCas9, Plasmid #47929 Addgene, Jao et al., 2013). The analysis of medaka oca2 knock-out embryos injected with zCas9 revealed bi-allelic inactivation events of the oca2 gene, yet with a strong overall variability as apparent by patchy unpigmented domains in the eyes (median of mean gray values = 134.5 compared to uninjected controls, median = 0.4; Figure 1d). This patchy distribution of small, unpigmented areas indicated that bi-allelic targeting occurred only in few cells at later stages of development. To address whether different peptide domains (NLSs, Myc-tag, amino acid linkers) flanking the Cas9 enzyme enhance the targeting efficiency, we performed a permutation screen with Cas9 variants carrying these domains at different positions, which resulted in the identification of the \u2018hei-tag\u2019 (Figure 1\u2014figure supplement 1). The hei-tag comprises a myc-tag connected via a flexible linker to an oNLS at the N-terminus complemented by a second oNLS fused to the C-terminus of a mammalian codon-optimized Cas9 (see Supplementary file 1 for sequence) and in this conformation displayed highest editing activity. Any alteration of those domains in relative order or sequence negatively impacted on editing efficiency compared to the hei-tag (Supplementary file 2).\n\nWhen assessing the activity of the resulting heiCas9 at high molar excess (standard conditions, 150 ng/\u00b5l), heiCas9 displayed a 70% increase in bi-allelic targeting efficiency vs. the reference zCas9 (median zCas9 = 134.5, heiCas9 = 225.3; Figure 1d) in medaka. Embryos co-injected with heiCas9 mRNA and sgRNAs against oca2 essentially lost pigmentation. The observed absence of pigmentation argues for an early time point of action due to high activity and efficient nuclear translocation of the tagged heiCas9 variant already at the earliest cleavage stages. In developing organisms, the time point of genome editing essentially impacts on the allele variance, that is, the number of alleles established by the targeting attempt. To immediately provide a functional editing machinery, preassembled ribonucleoproteins (RNPs) containing Cas9 protein and guide RNA are popular, employing high molar excess/high concentrations of Cas9 (Kroll et al., 2021; Wu et al., 2018). Strikingly, the editing efficiency of injected heiCas9 mRNA was fully comparable to such RNP approaches (Figure 1d, Figure 1\u2014figure supplement 2).\n\nTo address whether the enhancement by hei-tag fusion to Cas9 is applicable to different models, we next compared the activities of the zCas9 and heiCas9 in a second, evolutionarily distant fish species D. rerio (zebrafish) targeting the orthologous oca2 gene (sgRNAs DrOca2 T1, T2; Hammouda et al., 2019). Injected and control embryos were fixed well after the onset of pigmentation at 2.5 dpf (Kimmel et al., 1995; Figure 1e\u2013f) and subjected to the quantitative assay for eye pigmentation described above. Taking the activity of zCas9 as base level (median = 14.7), heiCas9 delivered an outstanding targeting efficiency (median = 254.6), reflecting a 17-fold increase (p = 2.1e-56) (Figure 1g, Figure 1\u2014figure supplement 2). Similar to the results in medaka, yet even more pronounced, nearly unpigmented embryos were obtained with the heiCas9, arguing for highly efficient, early targeting. Taken together, addition of the hei-tag to a mammalian codon-optimized Cas9 resulted in the highly efficient heiCas9, which boosted the targeting efficiency 17-fold, even when used at saturating concentrations. It prominently inactivated both alleles of the targeted oca2 locus, with a putatively early onset of action upon injection of heiCas9 mRNA and the respective sgRNAs at the one-cell stage.\n\nTo address whether the high targeting efficiency of heiCas9 was conveyed by the high molar excess employed or was possibly restricted to the oca2 locus, we turned to a multiplexing regime at 10-fold reduced concentrations of the Cas9 variants employed. We targeted four different genomic loci with four different sgRNAs: exonic targeting of oca2 (OlOca2 T2), targeting of the start codon of the retina-specific transcription factor 2 (rx2; Stemmer et al., 2015), and the crystallin alpha a (cryaa; Stemmer et al., 2015) as well as intronic targeting of rx3 (Zilova et al., 2021). Medaka one-cell stage embryos were co-injected with a mix of 12.5 ng/\u00b5l per sgRNA, the 10-fold reduced (15 ng/\u00b5l) zCas9 or heiCas9 mRNA and 20 ng/\u00b5l mCherry mRNA as injection tracer.\n\nFor each multiplexing experiment, the genomic DNA of three pools each containing eight randomly picked crispants was extracted at 4 dpf and subjected to allele-specific genotyping via Illumina sequencing. In the multiplexing approaches, a total of 823,898 reads for the zCas9 and 824,817 reads for the heiCas9, compared to 711,739 control reads, were analyzed (Supplementary file 3, Figure 2\u2014figure supplement 1). In all cases, heiCas9 performed dramatically better than the reference zCas9 (Figure 2a; mean percentage of modified alleles zCas9 [black dots] vs. heiCas9 [red dots]: OlOca2: 3.38% vs. 54.59%, p = 0.026; OlRx2: 20.82% vs. 95.85%, p = 3.2e-06; OlRx3: 16.61% vs. 49.36%, p = 0.0041; OlCryaa: 83.50% vs. 98.44%, p = 0.039). Strikingly, although the overall targeting efficiency was consistently higher as reflected by the high percentage of edited alleles (Figure 2a), at the same time the allele variance was reduced in all cases when using heiCas9 (Figure 2b; mean percentage of allele variance: zCas9 [black hollow dots] vs. heiCas9 [red hollow dots]: OlOca2: 20.71% vs. 12.87%, p = 0.025; OlRx2: 15.63% vs. 7.86%, p = 7.6e-06; OlRx3: 17.91% vs. 12.75%, p = 0.00021; OlCryaa: 10.17% vs. 8.74%, p = 0.22). This reduced allele variance for all multiplexed loci indicates an early editing by heiCas9. Given this and the overall higher targeting efficiency in all loci analyzed in the multiplexing approach, heiCas9 outperformed zCas9. It resulted in a massive performance boost, which was partially masked at saturating conditions, and now became fully apparent. The high efficiency of heiCas9 thus allows efficient editing at low concentrations with the potential to reduce off-target effects. Whether this putative reduction of off-targets is (over-)compensated by the efficient nuclear localization needs to be assessed by whole-genome sequencing approaches in the future.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig2-v3.jpg)\n\n**Figure 2.:** Multiplexed injections with 15ng/\u00b5l mRNA of zCas9 or heiCas9 (red) mRNA and 12.5ng/\u00b5l per sgRNA targeting exonic sequences in oculocutaneous albinism type 2 (oca2; OlOca2 T2), the start codons of the retina-specific homeobox transcription factor 2 (rx2; OlRx2) and of the alpha a crystallin (cryaa; OlCryaa), as well as an intronic sequence in rx3 (OlRx3). Illumina sequencing performed on three biological replicates (eight embryos each) per targeted locus. (a) Increased knock-out efficiency in heiCas9 crispants as shown by proportion of modified over all Illumina sequencing reads per replicate and locus. (b) Reduced allele variance in heiCas9 crispants as shown by abundance of specific allele divided by all modified alleles per replicate and locus. Bold line, mean values of zCas9 (black) and heiCas9 (red). Total aligned Illumina reads analyzed: OlOca2: zCas9 = 194,931, heiCas9 = 180,222; OlRx2: zCas9 = 224,146, heiCas9 = 269,103; OlRx3: zCas9 = 195,248, heiCas9 = 175,044; OlCryaa: zCas9 = 209,573, heiCas9 = 200,448. Statistical analysis performed in R, Student\u2019s t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Relative abundance of Illumina reads categorized by mode of editing among all modified alleles per replicate, locus (OlOca2, OlRx2, OlRx3, OlCryaa) and Cas9 mRNA employed (zCas9, heiCas9). Categories: only insertions, only deletions, only substitutions, insertions and substitutions, deletions and substitutions. n, total number of aligned modified Illumina reads per replicate.\n\nWhile the early onset of action is required for uniform editing in developing organisms, cell culture approaches demand efficient translocation of the sgRNA/Cas9 complex in a large number of cells. To validate the range of action on the one hand and to address the relevance of the hei-tag in a mammalian setting, we expanded the scope of the analysis to mammalian cell culture. We focused on mRNA-based assays and compared the activity of heiCas9 to state-of-the-art Cas9 variants, that is, the commercially available GeneArt CRISPR nuclease as well as a mammalian codon-optimized Cas9 (JDS246-Cas9, Addgene #43861) in mouse SW10 cells. We assessed the respective genome editing efficiencies by independent and complementary tools, the Tracking of Indels by Decomposition (TIDE) analysis (Brinkman et al., 2014) as well as by Inference of CRISPR Editing (ICE) (Hsiau et al., 2018). Both approaches decompose the mixed Sanger reads of PCR products spanning the CRISPR target site and compute an efficiency score as well as the distribution of expected indels. To target the murine Periaxin (Prx) locus, mouse SW10 cells were co-transfected with MmPrx crRNA/ATTO-550-linked tracrRNA and the mRNAs of either JDS246-Cas9, GeneArt CRISPR nuclease, or heiCas9. The Prx locus was PCR amplified and sequenced. Similar to targeting in organismo, heiCas9 also exhibited the highest genome editing efficiency when compared to JDS246-Cas9 (TIDE: 123.6%, ICE: 113%) and GeneArt CRISPR nuclease (TIDE: 123.1%, ICE: 111%) in mammalian cell culture (Figure 3, Figure 3\u2014figure supplement 1, R2 > 0.9 (TIDE) and >0.9 (ICE) for all mRNAs tested). Notably, the KO-score efficiencies (ICE) amounted to 173% compared to JDS246-Cas9 and to 167% compared to GeneArt CRISPR nuclease, indicating higher abundance of frameshifts (Hsiau et al., 2018) at this genomic locus.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig3-v3.jpg)\n\n**Figure 3.:** Mouse SW10 cells were co-transfected with MmPrx crRNA and mRNAs of JDS246-Cas9, GeneArt CRISPR nuclease, and heiCas9, respectively. Genome editing efficiency was assessed by Tracking of Indels by Decomposition (TIDE) and Inference of CRISPR Editing (ICE) tools. ICE knock-out score represents proportion of indels that indicate a frameshift or\u226521bp deletion. Data points represent three biological replicates, black line indicates respective mean: TIDE indel %: JDS246-Cas9 = 46.2; GeneArt CRISPR nuclease = 46.4, heiCas9 = 57.1; ICE indel %: JDS246-Cas9 = 53.3; GeneArt CRISPR nuclease = 54.3, heiCas9 = 60.3; ICE knock-out score %: JDS246-Cas9 = 33.7; GeneArt CRISPR nuclease = 35.0, heiCas9 = 58.3. R2> 0.9 (TIDE) and>0.9 (ICE) for all mRNAs tested. For representative indel spectrum for each mRNA, see Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Indel spectrum diagram obtained from Tracking of Indels by Decomposition (TIDE) (red bargraphs) and Inference of CRISPR Editing (ICE) (blue bargraphs) analyses following JDS246-Cas9 mRNA, GeneArt CRISPR nuclease mRNA, and heiCas9 mRNA and Prx tracrRNA/crRNA transfections. Note decreased number of wild-type alleles (gray dashed line in TIDE analysis) in heiCas9-transfected cells and increased abundance of 26 nt deletion (black arrowhead in ICE analysis).\n\nRemarkably, heiCas9-transfected cells showed a highly increased number of mutant alleles with an increased abundance of a 26 nt deletion when compared to GeneArt CRISPR nuclease and JDS246-Cas9 (Figure 3\u2014figure supplement 1).\n\nGiven the observed boosting of Cas9 activity by the simple addition of the hei-tag, we next tested if the hei-tag also improves further Cas9-based techniques. Base editing is an increasingly applied method with a potential for therapeutics (Antoniou et al., 2021). Base editors are composed of a modified Cas9 that only nicks one DNA strand and does not introduce a double-strand break (Cas9 nickase or Cas9n) and a nucleotide deaminase for precisely targeted nucleotide editing (Anzalone et al., 2020). To increase the efficiency of base editors, several iterative rounds of optimization of the employed deaminases and linkers have been undertaken, yielding optimal performance with the newest variants (Carrington et al., 2020; Cornean et al., 2022; Rosello et al., 2021; Zhao et al., 2020). To investigate if the addition of the hei-tag provides an easy and straightforward alternative route for increasing the activity of a nuclear protein of interest, we selected a C-to-T base editor version with intermediate efficiency (BE4-Gam Komor et al., 2017) to introduce non-sense or severe miss-sense mutations into the pigmentation gene oca2. We employed our tool ACEofBASEs (Cornean et al., 2022) to design and evaluate sgRNA target sites that introduce non-synonymous codon mutations and/or pre-mature STOP codons upon editing of the respective open reading frame (ORF). We compared three different sgRNAs (OlOca2 T1, T3, and T4) employing the original BE4-Gam and the hei-tag fused variant (heiBE4-Gam). In the oca2 ORF, the transition of cytosines 766, 922, and 997 to thymine all convert the respective codon to a pre-mature STOP (OlOca2 T3: C766T, leading to Q256*; OlOca2 T4: C922T, leading to Q308*; OlOca2 T1: C995-997T, leading to T332I and Q333*). Again, the loss of pigmentation was used as proxy for bi-allelic targeting efficiency following medaka one-cell stage injections with either one of the three sgRNAs (OlOca2 T1, T3, or T4, 30ng/\u00b5l) as well as 150ng/\u00b5l mRNA of either BE4-Gam or heiBE4-Gam. Screening and analysis was performed at 4.5 dpf as described above. For each sgRNA employed, heiBE4-Gam resulted in more pronounced loss of pigmentation in comparison to BE4-Gam (Figure 4a; control median = 0.0; medians BE4-Gam vs. heiBE4-Gam: OlOca2 T1, 0.6 vs. 28.0, p = 1.737e-20; OlOca2 T3, 0.0 vs. 0.8, p = 0.0471; OlOca2 T4, 93.8 vs. 170.1, p = 5.215e-12). Quantification of Sanger sequencing reads confirmed an increase of all C-to-T transitions at the OlOca2 T1 target site when heiBE4-Gam was used (74.1% \u00b1 8.9% for heiBE4-Gam vs. 44.2% \u00b1 6.8% for BE4-Gam; Figure 4\u2014figure supplement 1, three replicates containing five randomly picked embryos each). In particular, the C997T transition introducing a pre-mature STOP codon was increased 1.7-fold (i.e. 68% in heiBE4-Gam vs. 41% in BE4-Gam) in case of heiBE4-Gam (Figure 4b and c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig4-v3.jpg)\n\n**Figure 4.:** Phenotypic range and quantification of heiBE4-Gam-mediated C-to-T transitions in medaka embryos. (a) Categories of typically observed loss-of-pigmentation phenotypes in oca2 editants. The observed pigmentation phenotypes range from (almost) unpigmented eyes, that is, a very strong knock-out (top panel) over intermediate (central panel) to no loss of pigmentation (bottom panel). Quantification of phenotype resulting from injections with either BE4-Gam or heiBE4-Gam (red) mRNA and OlOca2 T1, T3, or T4 sgRNAs. Note: dramatic increase of bi-allelic knock-out rate when using heiBE4-Gam. n, number of eyes analyzed. Control median = 0.0; medians BE4-Gam vs. heiBE4-Gam: OlOca2 T1, 0.6 vs. 28.0, p = 1.737; OlOca2 T3, 0.0 vs. 0.8, p = 0.0471; OlOca2 T4, 93.8 vs. 170.1, p = 5.215e-12. Bold lines, median values. Statistical analysis performed in R, pairwise Wilcoxon rank sum test. (b) Schematic representation of base editing window in OlOca2 T1 target site (PAM, protospacer adjacent motif). C-to-T transition of C995 and C996 edits the threonine (T) codon to isoleucine (I) (T332I); C997T creates a pre-mature STOP codon (Q333*). Nucleotide positions refer to the oca2 open reading frame. (c) Quantification of Sanger sequencing reads at nucleotides C995, C996, C997 inside the base editing window of three injected embryo pools (five embryos each) reveals overall dramatic increase of C-to-T base transition when using heiBE4-Gam. Note 1.7-fold increase of C997T transition, that is, efficient introduction of a pre-mature STOP codon. Mean values indicated by bold horizontal lines, Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Schematic representation of base editing window in OlOca2 T1 target site. (b\u2013c) Sanger sequencing quantifications (EditR; Kluesner et al., 2018) of pools of five randomly picked embryos injected with sgRNA OlOca2 T1 and either BE4-Gam (b) or heiBE4-Gam (c). Note: in heiBE4-Gam injections, for each cytosine, the C-to-T transition rate was higher than 60%, a level never observed in BE4-Gam-injected embryos. C997T is highlighted with white frame.\n\nIn conclusion, using the hei-tag to extend the ORFs of a mammalian codon-optimized SpCas9 or a C-to-T base editor (BE4-Gam) severely enhanced the respective genome targeting efficiency.\n\n## Discussion\n\nWhile the use of the optimized NLS in the hei-tag explains the earlier and better performance of the hei-tagged versions of Cas9 and base editors in developing organisms, the impact of the specific topology of domains contained in the hei-tag remains elusive. It is speculated that the addition of certain peptide tags influences the efficacy and specificity of the fused protein of interest, due to their different isoelectric points and charge distributions (Zhang et al., 2014). Interestingly, our permutation screen demonstrated that although comprising the exact same peptides (for instance, compare MFO-Cas9-O [heiCas9] vs. OMF-Cas9-O and MSF-Cas9-S vs. SMF-Cas9-S in Figure 1\u2014figure supplement 1), position of the particular tags relative to each other conveyed different genome editing efficiencies.\n\nThe hei-tag renders the resulting heiCas9 into a highly efficient endonuclease with broad applicability overcoming the limitations of current SpCas9 variants by dramatically increasing the efficiency of targeted genome editing in organismo, as demonstrated in two evolutionarily distant fish models, as well as in mouse cell culture. In those systems, heiCas9 leads to a high abundance of identical mutant alleles, important for testing specific hypotheses or introducing site-specific modifications by homology-directed repair (Gutierrez-Triana et al., 2018). Conversely, Cas9 variants without the hei-tag are better suited for targeted screening approaches since they introduce a large number of different mutant alleles. heiCas9 markedly increased the (bi-allelic) targeting rate alongside a decrease in allele variance, indicating a high targeting efficiency already at the earliest stages of development. Precedentially such early targeting in developing organisms was most of all reported using RNPs (Kroll et al., 2021; Wu et al., 2018), yet mRNA injection of heiCas9 is fully comparable to these protein approaches. The benefits of using mRNA over protein are apparent: new Cas9 variants can easily be generated and produced cost-efficiently by highly reproducible in vitro transcription, a standard method in molecular biology labs.\n\nIn light of the ever-expanding CRISPR tool kit, the addition of the hei-tag provides the means to boost current specialized and future variants, as the simple addition of the hei-tag sequence also potentiated the activity of a cytosine base editor, with heiBE4-Gam resulting in an overall increase of about 30% of C-to-T transition rates (Figure 4 and Figure 4\u2014figure supplement 1). Taken together, the boosting activity of the hei-tag is neither limited by the species nor the approach, making it a powerful tweak to swiftly upgrade any specifically adapted Cas-based genome editing approach (Anzalone et al., 2020).\n\n## Materials and methods\n\n### Fish maintenance\n\nZebrafish (D. rerio) and medaka (O. latipes) fish were bred and maintained as previously described (Koster et al., 1997; Westerfield, 2000). The animal strains used in the present study were zebrafish AB/back and medaka Cab. All experimental procedures were performed according to the guidelines of the German animal welfare law and approved by the local government (Tierschutzgesetz \u00a711, Abs. 1, Nr. 1, husbandry permit number 35-9185.64/BH Wittbrodt).\n\n### Cloning of Cas9 variants\n\nThe mammalian codon-optimized (Geneious 8.1.9, https://www.geneious.com) Cas9 sequence was gene-synthesized (GeneArt, ThermoFisher Scientific) as template for cloning the permutated peptide-tag Cas9 fusions (Supplementary file 2) using primers (Table 1) containing the sequences coding for a myc-tag (EQKLISEEDL), flexible or internal linkers and an SV40 (PKKKRKV) or optimized oNLS (PPPKRPRLD) (Inoue et al., 2016; Figure 1\u2014figure supplement 1). Cloning into the pCS2+ plasmid (Rupp et al., 1994) (multiple cloning site extended for AgeI site downstream of BamHI site) was performed using AgeI and XbaI restriction sites included in the 5\u2019 region of the forward or reverse primers, respectively. See Supplementary file 1 for full sequence of heiCas9. For consistent mRNA synthesis, the published myc-Cas9 (Zhang et al., 2014) (MSI-Cas9-Xl) was re-established with the pX330-U6-Chimeric_BB-CBh-hSpCas9 vector as template, primer-based exchange of the N-terminal FLAG tag with the myc-tag sequence and brought into pCS2+ (Rupp et al., 1994) using AgeI and XbaI restriction sites included in the 5\u2019 region of the respective primers as well. pX330-U6-Chimeric_BB-CBh-hSpCas9 was a gift from Feng Zhang (Addgene plasmid #42230) (Cong et al., 2013).\n\n**Table 1.**\n Primer sequences used for Cas9 variant cloning.Restriction enzyme sites used for cloning are indicated in italics (AgeI in the forward primer, XbaI in the reverse primer), underscored sequence, binding to Cas9 open reading frame (ORF). F, flexible linker; I, internal linker; M, cMyc-tag; O, optimized NLS (Inoue et al., 2016); S, SV40 NLS (Kalderon et al., 1984); Xl, bipartite Xenopus laevis nucleoplasmin NLS (Dingwall et al., 1988). For instance, to establish the heiCas9 ORF, primers MFO-Cas9_fwd and Cas9-O_rev were used.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer name</th>\n      <th>Primer sequences in 5\u2019\u20133\u2019</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MFO-Cas9_fwd</td>\n      <td>AATTTACCGGTTTACCATGGAGCAGAAGCTGATCAGCGAGGAGGACCTGGGAGGAAGCGGACCACCTCCCAAGAGGCCCAGGCTGGACCTCGAGGATAAAAAGTATTCTATTGGTTTAG</td>\n    </tr>\n    <tr>\n      <td>MIS-Cas9_fwd</td>\n      <td>AATTTACCGGTTTACCATGGAGCAGAAGCTGATCAGCGAGGAGGACCTGGGTATCCACGGAGTCCCAGCAGCCGCTCCAAAGAAGAAGCGTAAGGTAGATAAAAAGTATTCTATTGGTTTAG</td>\n    </tr>\n    <tr>\n      <td>MSF-Cas9_fwd</td>\n      <td>AATTTACCGGTTTACCATGGAGCAGAAGCTGATCAGCGAGGAGGACCTGATGGCTCCAAAGAAGAAGCGTAAGGTAGGAGGAAGCGGAGATAAAAAGTATTCTATTGGTTTAG</td>\n    </tr>\n    <tr>\n      <td>OMF-Cas9_fwd</td>\n      <td>AATTTACCGGTTTACCATGCCACCTCCCAAGAGGCCCAGGCTGGACCTCGAGGAGCAGAAGCTGATCAGCGAGGAGGACCTGGGAGGAAGCGGAGATAAAAAGTATTCTATTGGTTTAG</td>\n    </tr>\n    <tr>\n      <td>SMF-Cas9_fwd</td>\n      <td>AATTTACCGGTTTACCATGGCTCCAAAGAAGAAGCGTAAGGTACTCGAGGAGCAGAAGCTGATCAGCGAGGAGGACCTGGGAGGAAGCGGAGATAAAAAGTATTCTATTGGTTTAG</td>\n    </tr>\n    <tr>\n      <td>Cas9-O_rev</td>\n      <td>AATTTTCTAGATTAGTCCAGCCTGGGCCTCTTGGGAGGAGGGGATCCGTCACCCCCAAGCTGTGAC</td>\n    </tr>\n    <tr>\n      <td>Cas9-S_rev</td>\n      <td>AATTTTCTAGATTAATCTACCTTACGCTTCTTCTTTGGAGCAGCGGATCCGTCACCCCCAAGCTGTGACA</td>\n    </tr>\n    <tr>\n      <td>myc-Cas9_fwd</td>\n      <td>AATTTACCGGTCAAACATGGAGCAGAAGCTGATCAGCGAGGAGGACCTGATGGCCCCAAAGAAGAAGCGGAAGGTC</td>\n    </tr>\n    <tr>\n      <td>myc-Cas9_rev</td>\n      <td>AATTTTCTAGATTACTTTTTCTTTTTTGCCTGGCCGGC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning of BE4-Gam and heiBE4-Gam\n\nBE4-Gam was subcloned from pCMV(BE4-Gam) (Addgene plasmid #100806, a gift from David Liu) (Komor et al., 2017) in a two-step process, first into pJET1.2 (Thermo Scientific), then into pGGEV4 (Kirchmaier et al., 2013) (Addgene plasmid #49284), by BamHI, EcoRV, and KpnI restriction sites to create pGGEV4(BE4-Gam). heiBE4-Gam was assembled into pCS2+ (Rupp et al., 1994) by NEBuilder HiFi DNA Assembly (NEB) with four inserts using Q5 polymerase PCR products (NEB): pCS2+ backbone, hei-tag fragment, Gam Mu-APOBEC1-Cas9n fragment, Cas9n-UGI fragment, 2xUGI-oNLS (see Table 2 for primers used).\n\n**Table 2.**\n Primer sequences used for BE4-Gam and heiBE4-Gam cloning.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer name</th>\n      <th>Primer sequences in 5\u2019\u20133\u2019</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pCS2+_backbone_fwd</td>\n      <td>GCCTCTAGAACTATAGTGAGTCG</td>\n    </tr>\n    <tr>\n      <td>pCS2+_backbone_rev</td>\n      <td>ATGGGATCCTGCAAAAAGAACAAG</td>\n    </tr>\n    <tr>\n      <td>hei-tag_fragment_fwd</td>\n      <td>CTTGTTCTTTTTGCAGGATCCCATTTACCATGGAGCAGAAGCTG</td>\n    </tr>\n    <tr>\n      <td>hei-tag_fragment_rev</td>\n      <td>GCTGGTTTAGCCTCGAGGTCCAGCCTGG</td>\n    </tr>\n    <tr>\n      <td>Gam_Mu-APOBEC1-Cas9n_fragment_fwd</td>\n      <td>GACCTCGAGGCTAAACCAGCAAAACGTATCAAG</td>\n    </tr>\n    <tr>\n      <td>Gam_Mu-APOBEC1-Cas9n_fragment_rev</td>\n      <td>CTAGGGCCTTGAGAAGTGTC</td>\n    </tr>\n    <tr>\n      <td>Cas9n-UGI_fragment_fwd</td>\n      <td>GACACTTCTCAAGGCCCTAG</td>\n    </tr>\n    <tr>\n      <td>Cas9n-UGI_fragment_rev</td>\n      <td>CAGAGTCACCCCCAAGCTG</td>\n    </tr>\n    <tr>\n      <td>2xUGI-oNLS_fwd</td>\n      <td>CAGCTTGGGGGTGACTCTG</td>\n    </tr>\n    <tr>\n      <td>2xUGI-oNLS_rev</td>\n      <td>CGACTCACTATAGTTCTAGAGGCTTAGTCCAGCCTGGGCCTCTTGGGAGGGGGAGAACCACCAGAGAGC</td>\n    </tr>\n  </tbody>\n</table>\n\n### sgRNA design\n\nAll sgRNAs for medaka (OlOca2, Rx2, Rx3, Cryaa) and zebrafish (DrOca2) were designed using the CCTop target predictor with standard parameters (Stemmer et al., 2015). The sgRNAs used for base editing (OlOca2 T1, T3, T4) were designed or evaluated using ACEofBASEs (Cornean et al., 2022) and selected for introducing a pre-mature STOP codon. The following target sites were used [PAM in brackets]: OlOca2 T1 (GAAACCCAGGTGGCCATTGC[AGG]), OlOca2 T2 (TTGCAGGAATCATTCTGTGT[GGG]), OlOca2 T3 (GATCCAAGTGGAGCAGACTG[AGG]), OlOca2 T4 (CACAATCCAGGCCTTCCTGC[AGG]) DrOca2 T1 (GTACAGCGACTGGTTAGTCA[TGG]), DrOca2 T2 (TAAGCACGTAGACTCCTGCC[AGG]), Rx2 (GCATTTGTCAATGGATACCC[TGG]), Cryaa (GGGAGAAGTGCTTGACATCC[AGG]), Rx3 (AGCAGAGCGCGCAAAGAACC[AGG]). OlOca2 T1, OlOca2 T2, and DrOca2 T1 were the same as in Hammouda et al., 2019, OlOca2 T3 was the same as in Lischik et al., 2019 (OCA2_4), OlRx2 and OlCryaa are from Stemmer et al., 2015, and OlRx3 is the same used in Zilova et al., 2021. Cloning of sgRNA templates was performed as described (Stemmer et al., 2015). Plasmid DR274 was a gift from Keith Joung (Addgene plasmid #42250) (Hwang et al., 2013).\n\nIn vitro transcription of mRNA pCS2+ constructs in this work were linearized using NotI-HF (NEB) except for zCas9 \u2013 linearized with HpaI (NEB). The pGGEV4(BE4-Gam) was linearized using SpeI-HF (NEB). mRNA was transcribed in vitro using the mMESSAGE mMACHINE SP6 transcription kit (ThermoFisher Scientific, AM1340). pCS2-nCas9n (zCas9) was a gift from Wenbiao Chen (Addgene plasmid #47929) (Jao et al., 2013). The JDS246-Cas9 was linearized with MssI FD (ThermoFisher Scientific) and transcribed in vitro using the mMESSAGE mMACHINE T7 Ultra Transcription Kit (ThermoFisher Scientific, AM1345). JDS246-Cas9 was a gift from Keith Joung (Addgene plasmid #43861). sgRNAs were synthesized using the MEGAscript T7 transcription kit (ThermoFisher Scientific, AM1334) after plasmid digestion with DraI FD (ThermoFisher Scientific).\n\n### Microinjection\n\nAll microinjections were performed at the one-cell stage. At standard concentrations, zebrafish and medaka zygotes were injected with 150 ng/\u00b5l Cas9 (variant) mRNA, Oca2 sgRNAs at 30 ng/\u00b5l, and H2B-GFP mRNA at 10 ng/\u00b5l as injection tracer. The multiplexing injection mixes contained 12.5 ng/\u00b5l per sgRNA (OlOca2 T2, Rx2, Rx3, Cryaa) and 15 ng/\u00b5l of either zCas9 or heiCas9 mRNA as well as 20 ng/\u00b5l mCherry mRNA as injection tracer. For the protein injections, 24 \u00b5M RNP mix (Kroll et al., 2021) was assembled in Cas9 buffer (20 mM Tris-HCl, 600 mM KCl, 20% glycerol; Wu et al., 2018) by mixing 61 \u00b5M Alt-R S.p. Cas9 Nuclease V3 (IDT) with 5710 ng of each sgRNA OlOca2 T1 and T2; 285.6 ng GFP mRNA were added as injection tracer. The mix was incubated for 5 min at 37\u00b0C and stored on ice until further dilution and injection. To obtain 5 \u00b5M RNPs (Wu et al., 2018), the 24 \u00b5M RNP mix was diluted in a 1:1 mixture of Cas9 buffer and nuclease-free water. Five \u00b5M RNP solution was further diluted in a 1:1 mixture of Cas9 buffer and nuclease-free water to obtain 1.765 \u00b5M RNPs.\n\nFor the base editing experiments, medaka zygotes were injected with BE4-Gam or heiBE4-Gam mRNA at 150 ng/\u00b5l, respective Oca2 sgRNA at 30 ng/\u00b5l, and GFP mRNA at 20 ng/\u00b5l as injection tracer. All injected embryos were maintained at 28\u00b0C in zebrafish medium (Westerfield, 2000) or medaka embryo rearing medium (ERM, 17 mM NaCl; 40 mM KCl; 0.27 mM CaCl2\u20222H2O; 0.66 mM MgSO4\u20227H2O, 17 mM HEPES).\n\nEmbryos were screened for GFP or mCherry expression 4\u20137 hr or 1 day after injection using a Nikon SMZ18 stereomicroscope, and uninjected specimens were discarded.\n\n### Image acquisition and phenotype analysis\n\nMedaka 4.5 dpf embryos (Iwamatsu, 2004) and zebrafish 2.5 dpf (Kimmel et al., 1995) embryos were fixed with 4% paraformaldehyde in 2\u00d7 PTW (2\u00d7 PBS pH 7.3, 0.1% Tween 20). Images of medaka embryos were acquired with the high content screening ACQUIFER Imaging Machine (DITABIS AG, Pforzheim, Germany). Images of zebrafish embryos were acquired with a Nikon digital sight DS-Ri1 camera mounted onto a Nikon Microscope SMZ18 and the Nikon Software NIS-Elements F version 4.0. Only properly developed embryos were included in the following analysis. Image analysis was performed with Fiji (Schindelin et al., 2012), that is, mean gray values were obtained on minimum intensity projections and locally thresholded (Phansalkar algorithm with parameters r = 20, p = 0.4, k = 0.4) pictures and elliptical selections for each individual eye. The mean gray value per eye was used for the boxplot and statistical analysis (pairwise comparisons using Wilcoxon rank sum test, Bonferroni corrected) in RStudio (Team, 2020).\n\n### Targeted amplicon sequencing via illumina\n\nThe multiplex approach was genotyped on DNA extractions of pools with each replicate containing eight randomly picked crispants per zCas9 or heiCas9 injection or six control specimens. DNA was prepared by grinding and lysis in DNA extraction buffer (0.4 M Tris/HCl pH 8.0, 0.15 M NaCl, 0.1% SDS, 5 mM EDTA, pH 8.0, 1 mg/ml proteinase K) at 60\u00b0C overnight. Proteinase K was inactivated at 95\u00b0C for 10 min and the solution was diluted 1:2 with nuclease-free water. For each DNA extraction, small libraries were constructed by PCR amplifying the four regions of interest (295\u2013362 bp, OlOca2, rx2, rx3, cryaa) using locus-specific primers with 5\u2019 partial illumina adapter sequences (Table 3) and Q5 Hot Start High-Fidelity DNA Polymerase (New England Biolabs). PCR products were run on a 1% agarose gel, respective bands were excised and cleaned up using the Monarch DNA Gel Extraction Kit (New England Biolabs). PCR products from the same genomic DNA source were pooled to equilmolarity at 25 ng/\u00b5l and submitted to GeneWiz (Azenta Life Sciences) for sequencing (Amplicon-EZ: Illumina MiSeq, 2 \u00d7 250 bp sequencing, paired-end) obtaining between 48,018 and 96,899 reads per sample.\n\n**Table 3.**\n Locus-specific primers with 5\u2019 partial illumina adapter sequences.Locus-specific primers with Illumina adapter sequence underscored.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer name</th>\n      <th>Primer sequences in 5\u2019\u20133\u2019</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>oca2_F</td>\n      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTCGTTAGAGTGGTATGGAGAACTGT</td>\n    </tr>\n    <tr>\n      <td>oca2_R</td>\n      <td>GACTGGAGTTCAGACGTGTGCTCTTCCGATCTATGGTCCTCACATCAGCAGC</td>\n    </tr>\n    <tr>\n      <td>cryaa_F</td>\n      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTCGCCATTTGCTTGTGTGTCA</td>\n    </tr>\n    <tr>\n      <td>cryaa_R</td>\n      <td>GACTGGAGTTCAGACGTGTGCTCTTCCGATCTAGTCTAGGAGGATGGGGCAG</td>\n    </tr>\n    <tr>\n      <td>rx2_F</td>\n      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTAGAGGCACAAGAACTATTTGTTGATC</td>\n    </tr>\n    <tr>\n      <td>rx2_R</td>\n      <td>GACTGGAGTTCAGACGTGTGCTCTTCCGATCTAGGGCTCCGTTAACTTTGGG</td>\n    </tr>\n    <tr>\n      <td>rx3_F</td>\n      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTATGCAAACCAAGAAAGCGCC</td>\n    </tr>\n    <tr>\n      <td>rx3_R</td>\n      <td>GACTGGAGTTCAGACGTGTGCTCTTCCGATCTTGGGATTTCTCAAAGGCCCG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Analysis and plotting of next-generation sequencing data\n\nAmplicon sequencing data was analyzed with CRISPResso2 v.2.1.2 (Clement et al., 2019) using the default -n nhej parameters. Demultiplexing was achieved by mapping to the four different wild-type loci, respectively. Downstream analysis was conducted using R v.3.6.3 in R studio (Team, 2020) (package: ggplot2 Wickham, 2016), with data sourced from \u2018CRISPResso_quantification_of_editing_frequency.txt\u2019 output table. To determine the average read count per modified allele, the \u2018Alleles_frequency_table.txt\u2019 output table was used. The number of modified alleles was determined by filtering > \u2018Read_status\u2019 > modified. Average read count per modified allele = modified reads/N modified alleles.\n\n### Genotyping of editants\n\nGenotyping was performed on DNA extractions (see above) of three replicates containing five randomly picked editants each of BE4-Gam and heiBE4-Gam injections. Q5 polymerase (NEB), primers fwd 5\u2019-GTTAAAACAGTTTCTTAAAAAGAACAGGA-3\u2019 and rev 5\u2019-AGCAGAAGAAATGACTCAACATTTTG-3\u2019 (annealing at 62\u00b0C) were used on 1 \u00b5l of diluted DNA sample according to the manufacturer\u2019s instructions with 30\u00d7 PCR cycles. PCR products were analyzed on a 1% agarose gel, bands excised, DNA extraction performed using innuPREP Gel Extraction Kit (Analytik Jena) according to the manufacturer\u2019s instructions and subjected to Sanger sequencing (see below).\n\n### Cell lines\n\nMouse SW10 cells (ATCC, CRL-2766, Lot number 4117643) were cultured in DMEM (Gibco) supplemented with 1 g/ml glucose containing 10% FCS (Sigma), 1% penicillin (10,000 units/ml; Gibco), and 1% streptomycin (10 mg/ml; Gibco) and maintained at 33\u00b0C and 5% CO2 and regularly tested negative for mycoplasma infections. Cells were passaged at 80\u201390% confluency. Twenty-four hr before transfection cells were seeded in a density of 85,000 cells per 12 wells.\n\nCRISPR Transfection crRNA targeting exon 6 (TCGTATCCAGACACCGTCCC[GGG], PAM in brackets) of the mouse Periaxin (MmPrx) gene was selected from the IDT (crRNA XT) predesign crRNA database. crRNA (50 \u00b5M) and Alt-R CRISPR-Cas9 tracrRNA, ATTO-550 (50 \u00b5M; IDT, 1075927) were diluted in nuclease-free duplex buffer (IDT) to a final concentration of 1 \u00b5M and incubated at 95\u00b0C for 5 min. One \u00b5g of the corresponding Cas9 mRNA (GeneArt CRISPR nuclease Invitrogen, A29378; JDS246-Cas9 or heiCas9) and 15 \u00b5l of tracrRNA+crRNA Mix (1 \u00b5M) were diluted in 34 \u00b5l Opti-MEM I (Gibco) and mixed with 3 \u00b5l Lipofectamine RNAiMAX (ThermoFisher) diluted in 47 \u00b5l Opti-MEM I. The tracrRNA+crRNA lipofection mix was incubated for 20 min at RT. Cell culture medium was exchanged with 900 \u00b5l Opti-MEM I and the tracrRNA+crRNA lipofection mix was added dropwise to the well. After 48 hr, genomic DNA was extracted using the DNeasy Blood and Tissue Kit (Qiagen, 69506) following the manufacturer\u2019s protocol. Q5-PCR was carried out using primers flanking the targeted exon 6 (fwd 5\u2019-GAGACACTCACTCCAGACCC-3\u2019; rev 5\u2019-ACTCAGTAACCCAACAGCCA-3\u2019) and 30 cycles. PCR amplicons were purified using the Monarch DNA Gel Extraction Kit (NEB, T1020S) and subjected to sequencing.\n\n### Sanger sequencing\n\nSanger sequencing was performed by Eurofins Genomics using fwd 5\u2019-GTTAAAACAGTTTCTTAAAAAGAACAGGA-3\u2019 to evaluate base editing at OlOca2 T1 target site and using fwd 5\u2019-GAGACACTCACTCCAGACCC-3\u2019 and rev 5\u2019-ACTCAGTAACCCAACAGCCA-3\u2019 to evaluate genome editing of the Prx locus in SW10 cells. Quantification of base editing from Sanger sequencing reads was performed with EditR (Kluesner et al., 2018). Genome editing efficiency was assessed by sequence analysis using the TIDE web tool (Brinkman et al., 2014) and by ICE (Hsiau et al., 2018) using default parameters and indel size range up to 30 bp.\n\n### Data visualization\n\nData visualization and figure assembly was performed using Fiji (Schindelin et al., 2012), ggplot2 (Wickham, 2016) in RStudio (Team, 2020), Geneious Prime 2019.2.1, Adobe Illustrator CS6 and Affinity Designer 1.10.5.\n",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "4dfca9fe-babf-4ec0-8de2-7324c3fc65cf",
+      "submission_id": "78acd744-f26e-4542-8666-dd283b6b9663",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Zacharias Kontarakis, ETH Zurich Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70558.sa0](https://doi.org/10.7554/eLife.70558.sa0)\n\nThis manuscript describes the addition of a short tag on the Cas9 nuclease as a means to improve genome editing efficiency. Importantly, the authors have tested their approach on several genomic targets, model organisms, and Cas9 derivative engineering tools. Overall, these findings support the possible general applicability of this tag for improving the outcomes of a wide range of modern Cas9 based applications, including Base Editors. Adding to a recent report of improving Prime Editing by optimising the NLS, this paper reinforces the notion that there is still unexplored space in altering genome engineering activity in a modular way.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Zacharias Kontarakis, ETH Zurich Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70558.sa1](https://doi.org/10.7554/eLife.70558.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"hei-tag: a highly efficient tag to boost targeted genome editing\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Zacharias Kontarakis as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Benchmark hei-tag activity against the state-of-art genome engineering tool in each experiment (see reviewer comments \u2013 also comparison to RNP use in fish is highly desirable).\n\n2) Provide heiCas9 editing data across multiple targets/gRNAs, ideally showing diverse characteristics (e.g. genomic location, sequence, activity).\n\n3) Edit manuscript to clearly describe the strengths and weaknesses of the \"hei-tagging\" method.\n\nReviewer #1 (Recommendations for the authors):\n\nI have a few concerns regarding the way the authors structure and present their claims:\n\n1) One of the main take home messages (based on the Abstract) is that the hei-tag boosts the activity of a \"wide variety\" of genome editing tools. Even though the BE data are promising, the manuscript could use more examples (e.g. prime editors, that have been used in zebrafish \u2013 Petri et al., 2021). Can the hei-tag make editing possible in cases where it is undetectable with the state of the art tools?\n\n2) Throughout the manuscript, the authors use only a handful of guides. Adding more examples, especially using guides that show a range of efficiencies with the non-hei-tag Cas9 would provide a better description of the strengths and limitations of the hei-tag.\n\n3) What is the rationale of using the Cas9 from Hwang et al., and not the zebrafish codon optimised Cas9 from Jao et al?\n\n4) Why do the authors use the GeneArt nuclease as a \"state of the art\" for the cell culture? What other tags are included in this nuclease? We can see that the worse score in Fig1d comes from JDS246. Not having the hei-tag is only one difference between JDS246 and heiCas9. One other is that heiCas9 lacks the FLAG (Myc-Cas performs already pretty well, however zebrafish data are not shown). How does GeneArt Cas9 compare in that respect? Such information should be presented to readers.\n\n5) In Figure 1, what do the single guide results look like? Boosting deletion outcomes using two guides is not the same as boosting activity of single guide editing. Is the activity of both guides improved? Are they just being brought at the same level? Did the authors use sequencing to analyse what happened at the DNA level?\n\n6) The hei-tag could be affecting editing outcomes, rather than ON target activity. In Figure S1, it is clear that the frequency of the in frame -15 allele is reduced, while overall efficiency in not dramatically affected. Changing the editing profile by using different nucleases (variants) is not the same as boosting efficiency in KO. The in-frame indels could be favored in other sites, thus reducing KO-score (if out of frame are regarded as desired outcome).\n\n7) Generally, it is advised to use NGS data for strong claims about editing efficiency.\n\n8) If ON-target activity is boosted, increased OFF-target activity is of concern, especially in cell culture when editing accuracy and precision are key. Since the main focus of the authors is not mammalian cell culture or therapeutic applications, they should at least be clear about this limitation.\n\nGenerally, the manuscript would be strengthened by including more examples of editing tools (desirable, but not absolutely required), include analyses of more guides (required), add sequencing data wherever possible (highly advised), adequately discussing strengths and limitations of the hei-tag (required), presenting some NGS data (recommended), toning down some \"generalised\" claims (unless more supporting data are provided).\n\nReviewer #2 (Recommendations for the authors):\n\nSeveral reports in zebrafish have shown that Cas9/gRNA complexes injections can reach gene editing up to 100% in F0 embryos including when targeting multiple loci at the same time (See for instance Wu et al., 2018 and Kroll et al., 2021). In light of these impressive results the utility of the present method for the fish community is overstated at best without mentioning these points anywhere in the discussion.\n\nThe authors should attempt to compare the injection of heiCAS9 protein as this is the current preferred and most efficient method in the fish community.\n\nIn the present manuscript is not clear what is the purpose of the Myc tag in the construct. This is not used at all to visualize protein localization or purification. Do the authors believe that the addition of Myc increases Cas9 activity? If not giving that this is a method paper they should demonstrate the utility in this specific contest.\n\nThe zebrafish experiment lacks the comparison of the heicas9 with the most efficient myc-Cas9 leading to an overestimation to the improved efficiency of the construct.\n\nFinally methodological papers based on a single locus are difficult to appreciate as they may be influenced by \"the gambler's luck\" (i.e. the chosen locus cold be a fortunate pick). These results should be extended to other genes as it's standard in the field (see the two publications above).\n\nFinally the base editor experiment are equally strongly biased. The comparison with BE4-Gam is not representative of the current state of the art were several reports using ancBE4Max (See for instance Carrington et al., 2020, Zao et al., 2020 and Rosello et al., 2021) show highly improved results. In lights of these papers the statement \"Notably, in heiBE4-Gam injections, for each of the three cytosines in the base editing window, the C-to-T transition rate was higher than 60%, a level never observed in BE4-Gam injected embryos\" is not true as similar or higher level of C to T conversion have been reported. Again this a comparison with ancBE4Max should be extended to multiple loci.\n\nReviewer #3 (Recommendations for the authors):\n\n1. In the abstract, the authors introduced factors that leave room for the improvement of gene editing efficiency in CRISPR/Cas9 tools: (1) nuclear localization signal -citing Cong et al., 2013; and (2) protein tags for \"immediate detection or straight-forward purification\" and linkers to \"avoid steric hinderance impacting on activity\" -citing Zhang et al., 2014. However, such conclusions were never made in either of the originally cited papers. Cong et al., did not compare the editing activity with and without a NLS signal. On the contrary, there are partial evidence indicating that Cas9 protein may not require an NLS to assist import into the nucleus (Hu et al., G3, 2018). In Zhang et al., it was suspected that the addition of a flag or myc tag changed the charge distribution of the Cas9 protein, thus increasing its specificity and efficacy. No statement was made about the purification or the linker. It is OK to introduce the relevant background, but I find it problematic to misinterpret the cited literature to show conclusions they did not make.\n\n2. The authors used modified version of NLS in the hei-tag construct to facilitate early nuclear targeting, while a straight-forward way to make nuclear-targeted Cas9 available in the cell is to directly inject the (nuclear-targeting) Cas9 protein. The authors should either provide this control experiment, or clarify why they only chose to build RNA-based systems.\n\n3. It is widely known that the gRNA design is a critical factor affecting the gene editing efficiency. While hei-tag shows an increased bi-allelic editing efficiency than the control constructs, it is not clear whether this boost is universal with different targeted genes and different sgRNA designs.\n\n4. JDS246-Cas9 was chosen as the baseline construct to evaluate the boost of editing efficiency. Given this was a construct originally made for mammalian cells, it is not clear whether it represents the state-of-art editing techniques, especially in zebrafish. While it is unrealistic to test all the available tools, other systems have been reported with high bi-allelic editing efficiency specifically in zebrafish should be introduced as a control (e.g. Jao et al., 2013, PNAS -disclaimer: the reviewer was not a maker of this tool).\n\n5. In the base-editing experiments, the injected fish showed various level of eye-pigmentation colors, in contrast to the knockout experiment where cells devoid of pigment appear in patches on the eye. The authors should provide an explanation of why this is the case and justify why the pigmentation level has to be quantified differently in Figure 3 than Figure 1.\n",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2b6c5c57-08b3-4977-ba30-b8582170bca9",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C1",
+      "claim": "The bacterial Cas9 needs to be efficiently shuttled into the nucleus as attempted by fusion with nuclear localization signals (NLSs).",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial Cas9 needs to be efficiently shuttled into the nucleus as attempted by fusion with nuclear localization signals (NLSs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about Cas9 function and common practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "90a4ca6b-eb73-49d5-b7e6-cd421f7d04bc",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C2",
+      "claim": "Additional peptide tags such as FLAG- or myc-tags are usually added for immediate detection or straightforward purification.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional peptide tags such as FLAG- or myc-tags are usually added for immediate detection or straightforward purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes common practice in the field of protein tagging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "00d6ea4e-2a10-4160-b5f1-ec3607f9ec67",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C3",
+      "claim": "The addition of the hei-tag to Cas9 or a C-to-T (cytosine-to-thymine) base editor dramatically enhances the respective targeting efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of the hei-tag, a myc-tag coupled to an optimized NLS via a flexible linker, to Cas9 or a C-to-T (cytosine-to-thymine) base editor dramatically enhances the respective targeting efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "1b215af3-e039-491d-9805-c4c4b734d3fc",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C4",
+      "claim": "The hei-tag boost results in an increase in bi-allelic editing.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in an increase in bi-allelic editing, yet reduction of allele variance, indicating an immediate activity even at early developmental stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing increased pigmentation loss in embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "9c5b0748-2127-4c59-8fc1-79282362ce1f",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C5",
+      "claim": "The hei-tag boost results in reduction of allele variance.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in an increase in bi-allelic editing, yet reduction of allele variance, indicating an immediate activity even at early developmental stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequencing data showing fewer distinct alleles in heiCas9 experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "c4a5995e-8249-44cb-8bb4-f9b94aac1a8c",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C6",
+      "claim": "The hei-tag boost indicates an immediate activity even at early developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in an increase in bi-allelic editing, yet reduction of allele variance, indicating an immediate activity even at early developmental stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reduced allele variance and increased bi-allelic editing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "0372da43-e24a-49d7-94e2-051bd6682db9",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C7",
+      "claim": "The hei-tag boost is active in model systems ranging from fish to mammals, including tissue culture applications.",
+      "claim_type": "EXPLICIT",
+      "source": "The hei-tag boost is active in model systems ranging from fish to mammals, including tissue culture applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from medaka, zebrafish, and mouse cell culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "0fdcb87b-3a66-4216-8d7a-7ce73de609a5",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C8",
+      "claim": "The simple addition of the hei-tag allows to instantly upgrade existing and potentially highly adapted systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The simple addition of the hei-tag allows to instantly upgrade existing and potentially highly adapted systems as well as to establish novel highly efficient tools immediately applicable at the mRNA level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the demonstration that adding the hei-tag to different Cas9 variants and base editors improves their performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "530f6183-750c-47d6-89dc-ffa3f250fe13",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C9",
+      "claim": "In the last decade, the CRISPR/Cas9 system and its derivatives facilitated and revolutionized genome editing across all phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "In the last decade, the CRISPR/Cas9 system and its derivatives facilitated and revolutionized genome editing across all phyla (Nidhi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "67fe11e9-a1d6-45c7-ba2e-951df7eb5f33",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C10",
+      "claim": "The efficiency of editing crucially depends on the on-site activity of the particular Cas9 enzymes used in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of editing crucially depends on the on-site activity of the particular Cas9 enzymes used (usually Streptococcus pyogenes Cas9, SpCas9) in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the CRISPR field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "f6339e8e-3ee6-4e4e-8f33-14cd65dad36d",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C11",
+      "claim": "State-of-the-art Cas9 variants differ by peptide tags added to the N- and C-termini of the respective endonuclease resulting in reported different activities.",
+      "claim_type": "EXPLICIT",
+      "source": "State-of-the-art Cas9 variants differ by peptide tags added to the N- and C-termini of the respective endonuclease resulting in reported different activities (Liu et al., 2021; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "ba530e04-83dc-4db2-a6d5-076981bf10af",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C12",
+      "claim": "The monopartite NLS originating from the SV40 large T-antigen is routinely employed to achieve nuclear localization of the Cas9 enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve nuclear localization of the Cas9 enzyme, the monopartite NLS originating from the SV40 large T-antigen (Kalderon et al., 1984) or a bipartite NLS discovered in Xenopus nucleoplasmin is routinely employed (Dingwall et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "f666eda6-c99c-413f-9b19-2655983ee6c2",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C13",
+      "claim": "A bipartite NLS discovered in Xenopus nucleoplasmin is routinely employed to achieve nuclear localization of the Cas9 enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve nuclear localization of the Cas9 enzyme, the monopartite NLS originating from the SV40 large T-antigen (Kalderon et al., 1984) or a bipartite NLS discovered in Xenopus nucleoplasmin is routinely employed (Dingwall et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "32488253-760a-45e5-8fb3-3aafd0abb1e2",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C14",
+      "claim": "The nuclear localization activity of commonly used NLSs is tightly controlled during early development.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the nuclear localization activity of commonly used NLSs is tightly controlled during early development (Poon and Jans, 2005) and is first detectable during gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "1eabb9a8-c49e-4b29-816d-dbb19e929789",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C15",
+      "claim": "In fish embryos, an optimized artificial NLS (oNLS) facilitates prominent nuclear localization already immediately after fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In fish embryos, an optimized artificial NLS (Inoue et al., 2016) (oNLS) facilitates prominent nuclear localization already immediately after fertilization, while the SV40 NLS acts most prominently much later and facilitates nuclear localization approximately at the 1000-cell stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "c491a5a5-fbed-4382-8062-249e267158c0",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C16",
+      "claim": "The SV40 NLS acts most prominently much later and facilitates nuclear localization approximately at the 1000-cell stage in fish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In fish embryos, an optimized artificial NLS (Inoue et al., 2016) (oNLS) facilitates prominent nuclear localization already immediately after fertilization, while the SV40 NLS acts most prominently much later and facilitates nuclear localization approximately at the 1000-cell stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "eaf19ac7-49e9-4cb4-ae83-d0d94730dd35",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C17",
+      "claim": "For high targeting efficiency with low mosaicism, a peak activity should be achieved in the zygote or at early cleavage stages.",
+      "claim_type": "EXPLICIT",
+      "source": "For high targeting efficiency with low mosaicism, a peak activity should be achieved in the zygote or at early cleavage stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about developmental biology and genome editing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "1f1f6cdf-d248-4920-8ea8-13507e0a3ced",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C18",
+      "claim": "The hei-tag is a short bipartite tag composed of a myc-tag and optimized NLSs at the N- and C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the hei-tag, a short bipartite tag composed of a myc-tag and optimized NLSs at the N- and C-termini, that boosts Cas9 or cytosine-to-thymine (C-to-T) base editor-mediated targeted genome editing in organismo and cell culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the construct developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "476bdfd7-3f49-4e50-ab06-93418dac80eb",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C19",
+      "claim": "The hei-tag boosts Cas9 or cytosine-to-thymine (C-to-T) base editor-mediated targeted genome editing in organismo and cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the hei-tag, a short bipartite tag composed of a myc-tag and optimized NLSs at the N- and C-termini, that boosts Cas9 or cytosine-to-thymine (C-to-T) base editor-mediated targeted genome editing in organismo and cell culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "c2c49631-0ac0-4961-8e19-40f6759c5175",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C20",
+      "claim": "Only bi-allelic inactivation of oca2 results in the loss of pigmentation of eyes and skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Only its bi-allelic inactivation results in the loss of pigmentation of eyes and skin (Lischik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "b927db44-99e3-448f-81a9-eec3f8dae470",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C21",
+      "claim": "Medaka and zebrafish cover a wide evolutionary distance of 200 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "We established a quantitative assay for loss-of-eye pigmentation to address the activity of different Cas9 variants in two teleost model systems, medaka (Oryzias latipes) and zebrafish (Danio rerio) covering a wide evolutionary distance of 200 million years (Furutani-Seiki and Wittbrodt, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "2002e418-de17-44f2-8d20-faf159520e91",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C22",
+      "claim": "heiCas9 displayed a 70% increase in bi-allelic targeting efficiency vs. the reference zCas9 in medaka at high molar excess.",
+      "claim_type": "EXPLICIT",
+      "source": "When assessing the activity of the resulting heiCas9 at high molar excess (standard conditions, 150 ng/\u00b5l), heiCas9 displayed a 70% increase in bi-allelic targeting efficiency vs. the reference zCas9 (median zCas9 = 134.5, heiCas9 = 225.3; Figure 1d) in medaka.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "7a1d3055-e48b-4dde-afdf-f1279478ac92",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C23",
+      "claim": "The editing efficiency of injected heiCas9 mRNA was fully comparable to RNP approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the editing efficiency of injected heiCas9 mRNA was fully comparable to such RNP approaches (Figure 1d, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1d and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "18c085b1-70d8-468f-975d-dbcbbbcbaf9e",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C24",
+      "claim": "heiCas9 delivered a 17-fold increase in targeting efficiency compared to zCas9 in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking the activity of zCas9 as base level (median = 14.7), heiCas9 delivered an outstanding targeting efficiency (median = 254.6), reflecting a 17-fold increase (p = 2.1e-56) (Figure 1g, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "9aab4d42-549b-4d00-98f5-5076e63f28ba",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C25",
+      "claim": "In all multiplexing cases, heiCas9 performed dramatically better than the reference zCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, heiCas9 performed dramatically better than the reference zCas9 (Figure 2a; mean percentage of modified alleles zCas9 [black dots] vs. heiCas9 [red dots]: OlOca2: 3.38% vs. 54.59%, p = 0.026; OlRx2: 20.82% vs. 95.85%, p = 3.2e-06; OlRx3: 16.61% vs. 49.36%, p = 0.0041; OlCryaa: 83.50% vs. 98.44%, p = 0.039).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Illumina sequencing data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "44e12a53-c169-469c-9119-d883e235adff",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C26",
+      "claim": "The allele variance was reduced in all cases when using heiCas9 in multiplexing experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, although the overall targeting efficiency was consistently higher as reflected by the high percentage of edited alleles (Figure 2a), at the same time the allele variance was reduced in all cases when using heiCas9 (Figure 2b; mean percentage of allele variance: zCas9 [black hollow dots] vs. heiCas9 [red hollow dots]: OlOca2: 20.71% vs. 12.87%, p = 0.025; OlRx2: 15.63% vs. 7.86%, p = 7.6e-06; OlRx3: 17.91% vs. 12.75%, p = 0.00021; OlCryaa: 10.17% vs. 8.74%, p = 0.22).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Illumina sequencing data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "ebc99f6d-672b-41c1-81e9-8fe4ddc8ac9c",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C27",
+      "claim": "heiCas9 also exhibited the highest genome editing efficiency when compared to JDS246-Cas9 and GeneArt CRISPR nuclease in mammalian cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to targeting in organismo, heiCas9 also exhibited the highest genome editing efficiency when compared to JDS246-Cas9 (TIDE: 123.6%, ICE: 113%) and GeneArt CRISPR nuclease (TIDE: 123.1%, ICE: 111%) in mammalian cell culture (Figure 3, Figure 3\u2014figure supplement 1, R2 > 0.9 (TIDE) and >0.9 (ICE) for all mRNAs tested).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TIDE and ICE analysis data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "37fba528-d815-4f9b-974c-b91386409942",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C28",
+      "claim": "The KO-score efficiencies (ICE) for heiCas9 amounted to 173% compared to JDS246-Cas9 and to 167% compared to GeneArt CRISPR nuclease in mammalian cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the KO-score efficiencies (ICE) amounted to 173% compared to JDS246-Cas9 and to 167% compared to GeneArt CRISPR nuclease, indicating higher abundance of frameshifts (Hsiau et al., 2018) at this genomic locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ICE analysis data and a citation explaining the meaning of KO-score.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "85e240e8-4040-4ae8-a4e8-fa59a762b22c",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C29",
+      "claim": "For each sgRNA employed, heiBE4-Gam resulted in more pronounced loss of pigmentation in comparison to BE4-Gam.",
+      "claim_type": "EXPLICIT",
+      "source": "For each sgRNA employed, heiBE4-Gam resulted in more pronounced loss of pigmentation in comparison to BE4-Gam (Figure 4a; control median = 0.0; medians BE4-Gam vs. heiBE4-Gam: OlOca2 T1, 0.6 vs. 28.0, p = 1.737e-20; OlOca2 T3, 0.0 vs. 0.8, p = 0.0471; OlOca2 T4, 93.8 vs. 170.1, p = 5.215e-12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative pigmentation data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "db7f7153-eb9d-447f-acf5-80aea0439ee3",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C30",
+      "claim": "Quantification of Sanger sequencing reads confirmed an increase of all C-to-T transitions at the OlOca2 T1 target site when heiBE4-Gam was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of Sanger sequencing reads confirmed an increase of all C-to-T transitions at the OlOca2 T1 target site when heiBE4-Gam was used (74.1% \u00b1 8.9% for heiBE4-Gam vs. 44.2% \u00b1 6.8% for BE4-Gam; Figure 4\u2014figure supplement 1, three replicates containing five randomly picked embryos each).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Sanger sequencing data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "8bda3227-233f-4f2b-8783-1b2d24497680",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C31",
+      "claim": "The C997T transition introducing a pre-mature STOP codon was increased 1.7-fold in case of heiBE4-Gam.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the C997T transition introducing a pre-mature STOP codon was increased 1.7-fold (i.e. 68% in heiBE4-Gam vs. 41% in BE4-Gam) in case of heiBE4-Gam (Figure 4b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Sanger sequencing data shown in Figure 4b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "d98a2ddd-297f-477e-bcb8-d8f742df02a0",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C32",
+      "claim": "Using the hei-tag to extend the ORFs of a mammalian codon-optimized SpCas9 or a C-to-T base editor (BE4-Gam) severely enhanced the respective genome targeting efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, using the hei-tag to extend the ORFs of a mammalian codon-optimized SpCas9 or a C-to-T base editor (BE4-Gam) severely enhanced the respective genome targeting efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by all the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "a3346706-d8ff-47b2-8f83-a400a2cc8682",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C33",
+      "claim": "The use of the optimized NLS in the hei-tag explains the earlier and better performance of the hei-tagged versions of Cas9 and base editors in developing organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "While the use of the optimized NLS in the hei-tag explains the earlier and better performance of the hei-tagged versions of Cas9 and base editors in developing organisms, the impact of the specific topology of domains contained in the hei-tag remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of the optimized NLS and the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "6acc7d44-6da0-4009-9c3b-ea4333e9b22a",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C34",
+      "claim": "The impact of the specific topology of domains contained in the hei-tag remains elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "While the use of the optimized NLS in the hei-tag explains the earlier and better performance of the hei-tagged versions of Cas9 and base editors in developing organisms, the impact of the specific topology of domains contained in the hei-tag remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation in understanding the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "e5bcee05-95b3-4f04-954b-c4529c898855",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C35",
+      "claim": "It is speculated that the addition of certain peptide tags influences the efficacy and specificity of the fused protein of interest, due to their different isoelectric points and charge distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is speculated that the addition of certain peptide tags influences the efficacy and specificity of the fused protein of interest, due to their different isoelectric points and charge distributions (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by a citation to published literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "0d295acf-4ee2-4f11-ac0c-164d2a608f50",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C36",
+      "claim": "The permutation screen demonstrated that although comprising the exact same peptides, position of the particular tags relative to each other conveyed different genome editing efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our permutation screen demonstrated that although comprising the exact same peptides (for instance, compare MFO-Cas9-O [heiCas9] vs. OMF-Cas9-O and MSF-Cas9-S vs. SMF-Cas9-S in Figure 1\u2014figure supplement 1), position of the particular tags relative to each other conveyed different genome editing efficiencies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from the permutation screen shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "62fc5b2f-6d4b-4646-88ff-65715ceea506",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C37",
+      "claim": "heiCas9 leads to a high abundance of identical mutant alleles, important for testing specific hypotheses or introducing site-specific modifications by homology-directed repair.",
+      "claim_type": "EXPLICIT",
+      "source": "In those systems, heiCas9 leads to a high abundance of identical mutant alleles, important for testing specific hypotheses or introducing site-specific modifications by homology-directed repair (Gutierrez-Triana et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing reduced allele variance and a citation to a relevant method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "c4574e8f-0146-4460-bc50-7f269e8a26ba",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C38",
+      "claim": "Cas9 variants without the hei-tag are better suited for targeted screening approaches since they introduce a large number of different mutant alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Cas9 variants without the hei-tag are better suited for targeted screening approaches since they introduce a large number of different mutant alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that non-hei-tagged Cas9 produces higher allele variance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "96516367-36e5-40b3-a59e-0e62a2df5636",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C39",
+      "claim": "heiCas9 markedly increased the (bi-allelic) targeting rate alongside a decrease in allele variance, indicating a high targeting efficiency already at the earliest stages of development.",
+      "claim_type": "EXPLICIT",
+      "source": "heiCas9 markedly increased the (bi-allelic) targeting rate alongside a decrease in allele variance, indicating a high targeting efficiency already at the earliest stages of development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "f08fc860-5a58-4fbf-9539-9a5f28a9c694",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C40",
+      "claim": "Early targeting in developing organisms was most of all reported using RNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Precedentially such early targeting in developing organisms was most of all reported using RNPs (Kroll et al., 2021; Wu et al., 2018), yet mRNA injection of heiCas9 is fully comparable to these protein approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "b3980e46-436a-4fde-b3e7-ab894e3a2977",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C41",
+      "claim": "mRNA injection of heiCas9 is fully comparable to RNP protein approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Precedentially such early targeting in developing organisms was most of all reported using RNPs (Kroll et al., 2021; Wu et al., 2018), yet mRNA injection of heiCas9 is fully comparable to these protein approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing heiCas9 mRNA to RNP injections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "6db633a0-1563-48d7-ba32-57ad2ed354db",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C42",
+      "claim": "New Cas9 variants can easily be generated and produced cost-efficiently by highly reproducible in vitro transcription, a standard method in molecular biology labs.",
+      "claim_type": "EXPLICIT",
+      "source": "The benefits of using mRNA over protein are apparent: new Cas9 variants can easily be generated and produced cost-efficiently by highly reproducible in vitro transcription, a standard method in molecular biology labs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about molecular biology methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "af1e2761-5510-40a0-814b-c4daa61b953a",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C43",
+      "claim": "The addition of the hei-tag provides the means to boost current specialized and future variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of the ever-expanding CRISPR tool kit, the addition of the hei-tag provides the means to boost current specialized and future variants, as the simple addition of the hei-tag sequence also potentiated the activity of a cytosine base editor, with heiBE4-Gam resulting in an overall increase of about 30% of C-to-T transition rates (Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing improved base editor performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "97dd7ff9-12a9-4423-9453-5b8c12a171b3",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C44",
+      "claim": "heiBE4-Gam resulted in an overall increase of about 30% of C-to-T transition rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of the ever-expanding CRISPR tool kit, the addition of the hei-tag provides the means to boost current specialized and future variants, as the simple addition of the hei-tag sequence also potentiated the activity of a cytosine base editor, with heiBE4-Gam resulting in an overall increase of about 30% of C-to-T transition rates (Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Sanger sequencing data shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "3ecf0268-3596-49d5-9735-d98d0ece6578",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C45",
+      "claim": "The boosting activity of the hei-tag is neither limited by the species nor the approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the boosting activity of the hei-tag is neither limited by the species nor the approach, making it a powerful tweak to swiftly upgrade any specifically adapted Cas-based genome editing approach (Anzalone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from multiple species and applications, plus a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "10ec438a-8598-4df3-aed3-c1e47eef3944",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C46",
+      "claim": "The hei-tag makes it a powerful tweak to swiftly upgrade any specifically adapted Cas-based genome editing approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the boosting activity of the hei-tag is neither limited by the species nor the approach, making it a powerful tweak to swiftly upgrade any specifically adapted Cas-based genome editing approach (Anzalone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "38dfc6ee-0b9d-4cd9-9414-40d6ecde5a1f",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C47",
+      "claim": "Base editing is an increasingly applied method with a potential for therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Base editing is an increasingly applied method with a potential for therapeutics (Antoniou et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "84ddc156-22a2-428a-9a7b-4d62e0f38ef7",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C48",
+      "claim": "Base editors are composed of a modified Cas9 that only nicks one DNA strand and does not introduce a double-strand break (Cas9 nickase or Cas9n) and a nucleotide deaminase for precisely targeted nucleotide editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Base editors are composed of a modified Cas9 that only nicks one DNA strand and does not introduce a double-strand break (Cas9 nickase or Cas9n) and a nucleotide deaminase for precisely targeted nucleotide editing (Anzalone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "e66734c4-b38d-49a5-b784-82362b435ddb",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C49",
+      "claim": "To increase the efficiency of base editors, several iterative rounds of optimization of the employed deaminases and linkers have been undertaken, yielding optimal performance with the newest variants.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase the efficiency of base editors, several iterative rounds of optimization of the employed deaminases and linkers have been undertaken, yielding optimal performance with the newest variants (Carrington et al., 2020; Cornean et al., 2022; Rosello et al., 2021; Zhao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "f5e70f0f-b050-47a5-851b-81794b6791ef",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C50",
+      "claim": "Medaka embryos were fixed at 4.5 days post fertilization (dpf) well after the onset of pigmentation in control injections.",
+      "claim_type": "EXPLICIT",
+      "source": "Injected embryos were fixed at 4.5 days post fertilization (dpf) (Iwamatsu, 2004) well after the onset of pigmentation in control injections and subjected to image analysis (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol with a citation for the developmental stage.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "11ff3605-4ab2-443d-b4ca-b16a3e404ec7",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C51",
+      "claim": "The analysis of medaka oca2 knock-out embryos injected with zCas9 revealed bi-allelic inactivation events of the oca2 gene, yet with a strong overall variability as apparent by patchy unpigmented domains in the eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of medaka oca2 knock-out embryos injected with zCas9 revealed bi-allelic inactivation events of the oca2 gene, yet with a strong overall variability as apparent by patchy unpigmented domains in the eyes (median of mean gray values = 134.5 compared to uninjected controls, median = 0.4; Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "6d471e54-ccea-4622-a859-23e40bb82785",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C52",
+      "claim": "The patchy distribution of small, unpigmented areas indicated that bi-allelic targeting occurred only in few cells at later stages of development.",
+      "claim_type": "EXPLICIT",
+      "source": "This patchy distribution of small, unpigmented areas indicated that bi-allelic targeting occurred only in few cells at later stages of development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "711f05e1-1b8e-4f3b-a23d-4d1352b713f6",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C53",
+      "claim": "The 'hei-tag' comprises a myc-tag connected via a flexible linker to an oNLS at the N-terminus complemented by a second oNLS fused to the C-terminus of a mammalian codon-optimized Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "The hei-tag comprises a myc-tag connected via a flexible linker to an oNLS at the N-terminus complemented by a second oNLS fused to the C-terminus of a mammalian codon-optimized Cas9 (see Supplementary file 1 for sequence) and in this conformation displayed highest editing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the hei-tag construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "3a467d61-9281-4b4c-a9de-2ceee25c688d",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C54",
+      "claim": "Any alteration of those domains in relative order or sequence negatively impacted on editing efficiency compared to the hei-tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Any alteration of those domains in relative order or sequence negatively impacted on editing efficiency compared to the hei-tag (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from the permutation screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "719282a0-bd1f-41ed-ab7f-87d3aa6099e7",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C55",
+      "claim": "Embryos co-injected with heiCas9 mRNA and sgRNAs against oca2 essentially lost pigmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos co-injected with heiCas9 mRNA and sgRNAs against oca2 essentially lost pigmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the quantitative pigmentation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "b0909287-3d30-4716-b23e-c9ac88c865dd",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C56",
+      "claim": "The observed absence of pigmentation argues for an early time point of action due to high activity and efficient nuclear translocation of the tagged heiCas9 variant already at the earliest cleavage stages.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed absence of pigmentation argues for an early time point of action due to high activity and efficient nuclear translocation of the tagged heiCas9 variant already at the earliest cleavage stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed phenotype and reduced allele variance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "b39bdbe9-1eee-4a32-a482-ae99dea725fe",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C57",
+      "claim": "In developing organisms, the time point of genome editing essentially impacts on the allele variance, that is, the number of alleles established by the targeting attempt.",
+      "claim_type": "EXPLICIT",
+      "source": "In developing organisms, the time point of genome editing essentially impacts on the allele variance, that is, the number of alleles established by the targeting attempt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about developmental biology and genome editing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "ea2bc45a-b6f4-4fb2-b97f-e594e64c48d2",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C58",
+      "claim": "To immediately provide a functional editing machinery, preassembled ribonucleoproteins (RNPs) containing Cas9 protein and guide RNA are popular, employing high molar excess/high concentrations of Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "To immediately provide a functional editing machinery, preassembled ribonucleoproteins (RNPs) containing Cas9 protein and guide RNA are popular, employing high molar excess/high concentrations of Cas9 (Kroll et al., 2021; Wu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "f58dc620-510c-47c9-a37d-9b924ddeb148",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C59",
+      "claim": "Nearly unpigmented embryos were obtained with the heiCas9 in zebrafish, arguing for highly efficient, early targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the results in medaka, yet even more pronounced, nearly unpigmented embryos were obtained with the heiCas9, arguing for highly efficient, early targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "c07145fe-7565-475a-86bb-29b81c5b5419",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C60",
+      "claim": "Addition of the hei-tag to a mammalian codon-optimized Cas9 resulted in the highly efficient heiCas9, which boosted the targeting efficiency 17-fold, even when used at saturating concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, addition of the hei-tag to a mammalian codon-optimized Cas9 resulted in the highly efficient heiCas9, which boosted the targeting efficiency 17-fold, even when used at saturating concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data from zebrafish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "5f4366e7-c4dc-46ec-9ded-f466090861c0",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C61",
+      "claim": "heiCas9 prominently inactivated both alleles of the targeted oca2 locus, with a putatively early onset of action upon injection of heiCas9 mRNA and the respective sgRNAs at the one-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "It prominently inactivated both alleles of the targeted oca2 locus, with a putatively early onset of action upon injection of heiCas9 mRNA and the respective sgRNAs at the one-cell stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing high bi-allelic editing and reduced allele variance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "69f23fb2-e25f-46cc-9863-49411e3bb03a",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C62",
+      "claim": "In the multiplexing approaches, a total of 823,898 reads for the zCas9 and 824,817 reads for the heiCas9, compared to 711,739 control reads, were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the multiplexing approaches, a total of 823,898 reads for the zCas9 and 824,817 reads for the heiCas9, compared to 711,739 control reads, were analyzed (Supplementary file 3, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the amount of sequencing data analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "1d1a1e0b-8f69-480d-8b35-2f3d9592a326",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C63",
+      "claim": "The reduced allele variance for all multiplexed loci indicates an early editing by heiCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduced allele variance for all multiplexed loci indicates an early editing by heiCas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed reduction in allele variance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "f2f11ef9-3a41-4ac5-97c7-c296390bdec0",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C64",
+      "claim": "The high efficiency of heiCas9 allows efficient editing at low concentrations with the potential to reduce off-target effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The high efficiency of heiCas9 thus allows efficient editing at low concentrations with the potential to reduce off-target effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed high efficiency at low concentrations.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "dce8bf72-181e-4c5e-b0ce-21a910956b6d",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C65",
+      "claim": "Whether the putative reduction of off-targets is (over-)compensated by the efficient nuclear localization needs to be assessed by whole-genome sequencing approaches in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether this putative reduction of off-targets is (over-)compensated by the efficient nuclear localization needs to be assessed by whole-genome sequencing approaches in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation and suggests future work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "a9a90ce2-49d5-4613-9e4b-5b9e55da8e72",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C66",
+      "claim": "heiCas9-transfected cells showed a highly increased number of mutant alleles with an increased abundance of a 26 nt deletion when compared to GeneArt CRISPR nuclease and JDS246-Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, heiCas9-transfected cells showed a highly increased number of mutant alleles with an increased abundance of a 26 nt deletion when compared to GeneArt CRISPR nuclease and JDS246-Cas9 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "5c474722-db62-4341-b6eb-460c68679638",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C67",
+      "claim": "The transition of cytosines 766, 922, and 997 to thymine all convert the respective codon to a pre-mature STOP in the oca2 ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "In the oca2 ORF, the transition of cytosines 766, 922, and 997 to thymine all convert the respective codon to a pre-mature STOP (OlOca2 T3: C766T, leading to Q256*; OlOca2 T4: C922T, leading to Q308*; OlOca2 T1: C995-997T, leading to T332I and Q333*).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the expected outcome of base editing at specific positions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "eb95ad69-a13c-4a72-b3a2-8a2c15905d67",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C68",
+      "claim": "All experimental procedures were performed according to the guidelines of the German animal welfare law and approved by the local government.",
+      "claim_type": "EXPLICIT",
+      "source": "All experimental procedures were performed according to the guidelines of the German animal welfare law and approved by the local government (Tierschutzgesetz \u00a711, Abs. 1, Nr. 1, husbandry permit number 35-9185.64/BH Wittbrodt).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "0fb12672-9792-42b2-a666-40883fd706a3",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "claim_id": "C69",
+      "claim": "Mouse SW10 cells were regularly tested negative for mycoplasma infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse SW10 cells (ATCC, CRL-2766, Lot number 4117643) were cultured in DMEM (Gibco) supplemented with 1 g/ml glucose containing 10% FCS (Sigma), 1% penicillin (10,000 units/ml; Gibco), and 1% streptomycin (10 mg/ml; Gibco) and maintained at 33\u00b0C and 5% CO2 and regularly tested negative for mycoplasma infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes quality control of the cell line used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2337dd8a-a1aa-4b47-a222-2dab7866e179",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The hei-tag (myc-tag + optimized NLS via flexible linker at N-terminus, plus C-terminal oNLS) dramatically enhances Cas9 targeting efficiency, resulting in increased bi-allelic editing and reduced allele variance, indicating early developmental activity. In medaka, heiCas9 showed 70% increase in bi-allelic targeting vs. zCas9 (C22), with embryos essentially losing pigmentation (C55), suggesting early action at cleavage stages (C56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C5, C6, C18, C19, C22, C32, C53-C56 collectively demonstrate the hei-tag's enhancement of Cas9 activity through quantitative phenotypic data (Figure 1d) and sequencing results. The specific composition of the hei-tag (C53) and its superiority over permutations (C54) are well-documented. The inference of early developmental activity (C6, C56) is logically supported by reduced allele variance (C5) and increased bi-allelic editing (C4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "6be8afb2-ad74-44d9-b0e1-e812454bc0af",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "heiCas9 demonstrates broad applicability across evolutionarily distant species. In zebrafish, heiCas9 delivered a 17-fold increase in targeting efficiency compared to zCas9 (median 254.6 vs. 14.7, p=2.1e-56), with nearly unpigmented embryos indicating highly efficient early targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C24, C59-C61 are strongly supported by quantitative data from zebrafish experiments (Figure 1g) showing dramatic improvement. The statistical significance (p=2.1e-56) and large effect size (17-fold) provide robust evidence. The phenotypic observations (C59) and inferences about early activity (C61) are consistent with the quantitative measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "d165658d-701e-4a47-bc67-f358d598ea49",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "heiCas9 mRNA injection achieves editing efficiency fully comparable to RNP (ribonucleoprotein) approaches, which were previously the primary method for achieving early targeting in developing organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C40, C41, C58 are supported by direct comparison data in Figure 1d showing heiCas9 mRNA performance matching RNP injections at various concentrations. The citations (C40, C58) establish the prior state of the field, and the experimental data (C23, C41) demonstrate equivalence with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "3415e960-9866-4af8-b74f-596945e3c8d9",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In multiplexing experiments at 10-fold reduced Cas9 concentrations targeting four different genomic loci, heiCas9 dramatically outperformed zCas9 with higher targeting efficiency (e.g., OlOca2: 54.59% vs. 3.38%, p=0.026) and reduced allele variance across all loci, indicating early editing activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C26, C62, C63 are well-supported by Illumina sequencing data (Figure 2a-b) from >800,000 reads per condition across four loci. The statistical significance is reported for each locus, and the consistent pattern of both increased efficiency and reduced variance strengthens the conclusion. The inference of early editing (C63) logically follows from reduced allele variance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "0fee54ee-243e-4450-a954-aa2efa11ddd0",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In mammalian cell culture (mouse SW10 cells), heiCas9 exhibited the highest genome editing efficiency compared to JDS246-Cas9 and GeneArt CRISPR nuclease, with KO-score efficiencies of 173% and 167% respectively, and increased abundance of a 26 nt deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C28, C66 are supported by TIDE and ICE analysis data (Figure 3) with high R\u00b2 values (>0.9) indicating good fit. The comparison includes appropriate controls (two commercial/published Cas9 variants) and uses complementary analysis methods. The specific observation of increased 26 nt deletion (C66) is documented in Figure 3\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "5350defe-3c8b-4bdb-8782-46657f26d9b8",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The hei-tag also enhances base editor activity: heiBE4-Gam resulted in more pronounced pigmentation loss than BE4-Gam for all three sgRNAs tested, with an overall ~30% increase in C-to-T transition rates and 1.7-fold increase in the critical C997T STOP codon transition (68% vs. 41%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31, C43-C44 are supported by quantitative phenotypic data (Figure 4a) with statistical significance and Sanger sequencing quantification (Figure 4\u2014figure supplement 1) from three biological replicates. The specific increase in the STOP codon transition (C31) is particularly well-documented. This demonstrates the hei-tag's applicability beyond standard Cas9.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "1f1462a0-a239-4dfb-8288-45993276e952",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The optimized NLS in the hei-tag explains earlier and better performance in developing organisms, but the impact of specific domain topology remains elusive. A permutation screen showed that identical peptides in different arrangements conveyed different editing efficiencies, possibly due to isoelectric points and charge distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 appropriately distinguish between what is understood (oNLS function, C33) and what remains unclear (topology effects, C34). The permutation screen data (C36, Figure 1\u2014figure supplement 1) supports the topology claim. The speculation about charge effects (C35) is appropriately cited and presented as speculation rather than established fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "8e91988f-a4a1-411c-a945-daea271ef075",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "heiCas9 produces high abundance of identical mutant alleles (useful for hypothesis testing and homology-directed repair), while non-hei-tagged Cas9 variants are better suited for screening approaches requiring diverse alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are logical inferences from the demonstrated reduced allele variance with heiCas9 (C26) and are appropriately contextualized with a citation for homology-directed repair applications (C37). This represents a practical interpretation of the results for different experimental applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "191a19e3-f250-4ed7-84d0-9c8eaec2bf4b",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The boosting activity of the hei-tag is neither limited by species nor approach, making it a powerful tool to upgrade any Cas-based genome editing approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by the cumulative evidence from multiple species (medaka, zebrafish, mouse cells) and multiple applications (Cas9, base editor). The broad conclusion is justified by the consistent enhancement across diverse experimental contexts, though the claim of applicability to \"any\" approach (C46) is somewhat overstated but appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "171c2476-a772-414b-b842-1663fd1f3822",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The high efficiency of heiCas9 allows efficient editing at low concentrations with potential to reduce off-target effects, though whether this is compensated by efficient nuclear localization needs future whole-genome sequencing assessment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C65 appropriately identify a potential benefit (reduced off-targets at lower concentrations) but acknowledge this is speculative and requires future validation. The multiplexing data at 10-fold reduced concentrations (C25-C26) supports the efficiency claim, but off-target analysis was not performed. This represents responsible speculation about implications rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "cf128214-3914-4891-a84d-e7555ba42b67",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background context: Cas9 requires nuclear localization via NLS fusion, commonly uses SV40 or Xenopus nucleoplasmin NLS, and peptide tags (FLAG, myc) are added for detection/purification. NLS activity is developmentally controlled, with optimized NLS (oNLS) active immediately after fertilization while SV40 NLS acts later (~1000-cell stage in fish).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C17 establish field knowledge and are appropriately supported by citations. These provide essential context for understanding why the hei-tag design (using oNLS) would be advantageous. The developmental timing of NLS activity (C14-C16) is particularly relevant for interpreting the early activity results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "d72111ee-41e6-4d8a-a705-73503c53c2f2",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methodological context: The oca2 gene requires bi-allelic inactivation for pigmentation loss, providing a quantitative phenotypic readout. Medaka and zebrafish span 200 million years of evolution. Timing of genome editing impacts allele variance in developing organisms. zCas9 showed patchy unpigmented domains indicating late-stage bi-allelic targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C50-C52, C57, C67 describe the experimental system and baseline observations. These are well-supported by citations (C20, C21, C50) and data (C51). The inference about late-stage targeting from patchy phenotype (C52) is reasonable. These claims establish the validity of the assay system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "6ed726cd-a584-4aba-a202-3de3792efbc5",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Summary and field context: heiCas9 increased bi-allelic targeting with decreased allele variance indicating early developmental activity. mRNA-based approaches offer advantages over protein (easy generation, cost-effective, reproducible). Base editing is increasingly applied with therapeutic potential, and base editors have undergone iterative optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C42, C47-C49 provide summary statements and field context appropriately supported by data (C39) or citations (C47-C49). The advantages of mRNA (C42) represent established knowledge. These claims help contextualize the significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "39087a38-66d0-4edb-8e1c-a05318668f94",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Ethical and quality control statements: Experiments followed German animal welfare law with local approval. Mouse SW10 cells were regularly tested negative for mycoplasma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are standard methodological statements about ethical compliance and quality control. These are appropriately documented with permit numbers (C68) and represent good scientific practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    },
+    {
+      "id": "042d868c-3fcb-4747-9fc2-10e6b8d30ab1",
+      "content_id": "924dc6c7-73bc-4a43-9e36-b05b1dc95bc8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The hei-tag allows instant upgrade of existing systems and establishes novel tools applicable at mRNA level. CRISPR/Cas9 has revolutionized genome editing across all phyla in the last decade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 represent high-level summary statements. C8 is supported by the demonstration across multiple Cas9 variants and base editors. C9 provides general field context with appropriate citation. These frame the significance of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:01:37.728359Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "00d6ea4e-2a10-4160-b5f1-ec3607f9ec67",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "1b215af3-e039-491d-9805-c4c4b734d3fc",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "9c5b0748-2127-4c59-8fc1-79282362ce1f",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "c4a5995e-8249-44cb-8bb4-f9b94aac1a8c",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "1f1f6cdf-d248-4920-8ea8-13507e0a3ced",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "476bdfd7-3f49-4e50-ab06-93418dac80eb",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "2002e418-de17-44f2-8d20-faf159520e91",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "d98a2ddd-297f-477e-bcb8-d8f742df02a0",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "711f05e1-1b8e-4f3b-a23d-4d1352b713f6",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "3a467d61-9281-4b4c-a9de-2ceee25c688d",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "719282a0-bd1f-41ed-ab7f-87d3aa6099e7",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "b0909287-3d30-4716-b23e-c9ac88c865dd",
+      "result_id": "2337dd8a-a1aa-4b47-a222-2dab7866e179"
+    },
+    {
+      "claim_id": "0372da43-e24a-49d7-94e2-051bd6682db9",
+      "result_id": "6be8afb2-ad74-44d9-b0e1-e812454bc0af"
+    },
+    {
+      "claim_id": "18c085b1-70d8-468f-975d-dbcbbbcbaf9e",
+      "result_id": "6be8afb2-ad74-44d9-b0e1-e812454bc0af"
+    },
+    {
+      "claim_id": "f58dc620-510c-47c9-a37d-9b924ddeb148",
+      "result_id": "6be8afb2-ad74-44d9-b0e1-e812454bc0af"
+    },
+    {
+      "claim_id": "c07145fe-7565-475a-86bb-29b81c5b5419",
+      "result_id": "6be8afb2-ad74-44d9-b0e1-e812454bc0af"
+    },
+    {
+      "claim_id": "5f4366e7-c4dc-46ec-9ded-f466090861c0",
+      "result_id": "6be8afb2-ad74-44d9-b0e1-e812454bc0af"
+    },
+    {
+      "claim_id": "7a1d3055-e48b-4dde-afdf-f1279478ac92",
+      "result_id": "d165658d-701e-4a47-bc67-f358d598ea49"
+    },
+    {
+      "claim_id": "b3980e46-436a-4fde-b3e7-ab894e3a2977",
+      "result_id": "d165658d-701e-4a47-bc67-f358d598ea49"
+    },
+    {
+      "claim_id": "f08fc860-5a58-4fbf-9539-9a5f28a9c694",
+      "result_id": "d165658d-701e-4a47-bc67-f358d598ea49"
+    },
+    {
+      "claim_id": "ea2bc45a-b6f4-4fb2-b97f-e594e64c48d2",
+      "result_id": "d165658d-701e-4a47-bc67-f358d598ea49"
+    },
+    {
+      "claim_id": "9aab4d42-549b-4d00-98f5-5076e63f28ba",
+      "result_id": "3415e960-9866-4af8-b74f-596945e3c8d9"
+    },
+    {
+      "claim_id": "44e12a53-c169-469c-9119-d883e235adff",
+      "result_id": "3415e960-9866-4af8-b74f-596945e3c8d9"
+    },
+    {
+      "claim_id": "69f23fb2-e25f-46cc-9863-49411e3bb03a",
+      "result_id": "3415e960-9866-4af8-b74f-596945e3c8d9"
+    },
+    {
+      "claim_id": "1d1a1e0b-8f69-480d-8b35-2f3d9592a326",
+      "result_id": "3415e960-9866-4af8-b74f-596945e3c8d9"
+    },
+    {
+      "claim_id": "ebc99f6d-672b-41c1-81e9-8fe4ddc8ac9c",
+      "result_id": "0fee54ee-243e-4450-a954-aa2efa11ddd0"
+    },
+    {
+      "claim_id": "37fba528-d815-4f9b-974c-b91386409942",
+      "result_id": "0fee54ee-243e-4450-a954-aa2efa11ddd0"
+    },
+    {
+      "claim_id": "a9a90ce2-49d5-4613-9e4b-5b9e55da8e72",
+      "result_id": "0fee54ee-243e-4450-a954-aa2efa11ddd0"
+    },
+    {
+      "claim_id": "85e240e8-4040-4ae8-a4e8-fa59a762b22c",
+      "result_id": "5350defe-3c8b-4bdb-8782-46657f26d9b8"
+    },
+    {
+      "claim_id": "db7f7153-eb9d-447f-acf5-80aea0439ee3",
+      "result_id": "5350defe-3c8b-4bdb-8782-46657f26d9b8"
+    },
+    {
+      "claim_id": "8bda3227-233f-4f2b-8783-1b2d24497680",
+      "result_id": "5350defe-3c8b-4bdb-8782-46657f26d9b8"
+    },
+    {
+      "claim_id": "af1e2761-5510-40a0-814b-c4daa61b953a",
+      "result_id": "5350defe-3c8b-4bdb-8782-46657f26d9b8"
+    },
+    {
+      "claim_id": "97dd7ff9-12a9-4423-9453-5b8c12a171b3",
+      "result_id": "5350defe-3c8b-4bdb-8782-46657f26d9b8"
+    },
+    {
+      "claim_id": "a3346706-d8ff-47b2-8f83-a400a2cc8682",
+      "result_id": "1f1462a0-a239-4dfb-8288-45993276e952"
+    },
+    {
+      "claim_id": "6acc7d44-6da0-4009-9c3b-ea4333e9b22a",
+      "result_id": "1f1462a0-a239-4dfb-8288-45993276e952"
+    },
+    {
+      "claim_id": "e5bcee05-95b3-4f04-954b-c4529c898855",
+      "result_id": "1f1462a0-a239-4dfb-8288-45993276e952"
+    },
+    {
+      "claim_id": "0d295acf-4ee2-4f11-ac0c-164d2a608f50",
+      "result_id": "1f1462a0-a239-4dfb-8288-45993276e952"
+    },
+    {
+      "claim_id": "62fc5b2f-6d4b-4646-88ff-65715ceea506",
+      "result_id": "8e91988f-a4a1-411c-a945-daea271ef075"
+    },
+    {
+      "claim_id": "c4574e8f-0146-4460-bc50-7f269e8a26ba",
+      "result_id": "8e91988f-a4a1-411c-a945-daea271ef075"
+    },
+    {
+      "claim_id": "3ecf0268-3596-49d5-9735-d98d0ece6578",
+      "result_id": "191a19e3-f250-4ed7-84d0-9c8eaec2bf4b"
+    },
+    {
+      "claim_id": "10ec438a-8598-4df3-aed3-c1e47eef3944",
+      "result_id": "191a19e3-f250-4ed7-84d0-9c8eaec2bf4b"
+    },
+    {
+      "claim_id": "f2f11ef9-3a41-4ac5-97c7-c296390bdec0",
+      "result_id": "171c2476-a772-414b-b842-1663fd1f3822"
+    },
+    {
+      "claim_id": "dce8bf72-181e-4c5e-b0ce-21a910956b6d",
+      "result_id": "171c2476-a772-414b-b842-1663fd1f3822"
+    },
+    {
+      "claim_id": "2b6c5c57-08b3-4977-ba30-b8582170bca9",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "90a4ca6b-eb73-49d5-b7e6-cd421f7d04bc",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "67fe11e9-a1d6-45c7-ba2e-951df7eb5f33",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "f6339e8e-3ee6-4e4e-8f33-14cd65dad36d",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "ba530e04-83dc-4db2-a6d5-076981bf10af",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "f666eda6-c99c-413f-9b19-2655983ee6c2",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "32488253-760a-45e5-8fb3-3aafd0abb1e2",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "1eabb9a8-c49e-4b29-816d-dbb19e929789",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "c491a5a5-fbed-4382-8062-249e267158c0",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "eaf19ac7-49e9-4cb4-ae83-d0d94730dd35",
+      "result_id": "cf128214-3914-4891-a84d-e7555ba42b67"
+    },
+    {
+      "claim_id": "c2c49631-0ac0-4961-8e19-40f6759c5175",
+      "result_id": "d72111ee-41e6-4d8a-a705-73503c53c2f2"
+    },
+    {
+      "claim_id": "b927db44-99e3-448f-81a9-eec3f8dae470",
+      "result_id": "d72111ee-41e6-4d8a-a705-73503c53c2f2"
+    },
+    {
+      "claim_id": "f5e70f0f-b050-47a5-851b-81794b6791ef",
+      "result_id": "d72111ee-41e6-4d8a-a705-73503c53c2f2"
+    },
+    {
+      "claim_id": "11ff3605-4ab2-443d-b4ca-b16a3e404ec7",
+      "result_id": "d72111ee-41e6-4d8a-a705-73503c53c2f2"
+    },
+    {
+      "claim_id": "6d471e54-ccea-4622-a859-23e40bb82785",
+      "result_id": "d72111ee-41e6-4d8a-a705-73503c53c2f2"
+    },
+    {
+      "claim_id": "b39bdbe9-1eee-4a32-a482-ae99dea725fe",
+      "result_id": "d72111ee-41e6-4d8a-a705-73503c53c2f2"
+    },
+    {
+      "claim_id": "5c474722-db62-4341-b6eb-460c68679638",
+      "result_id": "d72111ee-41e6-4d8a-a705-73503c53c2f2"
+    },
+    {
+      "claim_id": "96516367-36e5-40b3-a59e-0e62a2df5636",
+      "result_id": "6ed726cd-a584-4aba-a202-3de3792efbc5"
+    },
+    {
+      "claim_id": "6db633a0-1563-48d7-ba32-57ad2ed354db",
+      "result_id": "6ed726cd-a584-4aba-a202-3de3792efbc5"
+    },
+    {
+      "claim_id": "38dfc6ee-0b9d-4cd9-9414-40d6ecde5a1f",
+      "result_id": "6ed726cd-a584-4aba-a202-3de3792efbc5"
+    },
+    {
+      "claim_id": "84ddc156-22a2-428a-9a7b-4d62e0f38ef7",
+      "result_id": "6ed726cd-a584-4aba-a202-3de3792efbc5"
+    },
+    {
+      "claim_id": "e66734c4-b38d-49a5-b784-82362b435ddb",
+      "result_id": "6ed726cd-a584-4aba-a202-3de3792efbc5"
+    },
+    {
+      "claim_id": "eb95ad69-a13c-4a72-b3a2-8a2c15905d67",
+      "result_id": "39087a38-66d0-4edb-8e1c-a05318668f94"
+    },
+    {
+      "claim_id": "0fb12672-9792-42b2-a666-40883fd706a3",
+      "result_id": "39087a38-66d0-4edb-8e1c-a05318668f94"
+    },
+    {
+      "claim_id": "0fdcb87b-3a66-4216-8d7a-7ce73de609a5",
+      "result_id": "042d868c-3fcb-4747-9fc2-10e6b8d30ab1"
+    },
+    {
+      "claim_id": "530f6183-750c-47d6-89dc-ffa3f250fe13",
+      "result_id": "042d868c-3fcb-4747-9fc2-10e6b8d30ab1"
+    }
+  ],
+  "comparisons": []
+}

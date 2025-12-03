@@ -1,0 +1,1811 @@
+{
+  "submission": {
+    "id": "c62a5c3a-6248-44df-b5af-8d87d904fc2a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:15:55.205926Z",
+    "updated_at": "2025-12-03T14:15:55.205926Z"
+  },
+  "content": [
+    {
+      "id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "submission_id": "c62a5c3a-6248-44df-b5af-8d87d904fc2a",
+      "content_type": "manuscript",
+      "content_text": "# Increased signal-to-noise ratios within experimental field trials by regressing spatially distributed soil properties as principal components\n\n## Authors\n\n- Jeffrey C Berry<sup>1</sup>\n- Mingsheng Qi<sup>1</sup> ([ORCID: 0000-0003-2448-1227](https://orcid.org/0000-0003-2448-1227))\n- Balasaheb V Sonawane<sup>2</sup>\n- Amy Sheflin<sup>3</sup>\n- Asaph Cousins<sup>2</sup>\n- Jessica Prenni<sup>3</sup>\n- Daniel P Schachtman<sup>4</sup> ([ORCID: 0000-0003-1807-4369](https://orcid.org/0000-0003-1807-4369))\n- Peng Liu<sup>5</sup>\n- Rebecca S Bart<sup>1</sup> ([ORCID: 0000-0003-1378-3481](https://orcid.org/0000-0003-1378-3481)) \u2020\n\n### Affiliations\n\n1. Donald Danforth Plant Science Center St. Louis United States ([ROR:000cyem11](https://ror.org/000cyem11))\n2. School of Biological Sciences, Washington State University Pullman United States ([ROR:05dk0ce17](https://ror.org/05dk0ce17))\n3. Department of Biochemistry and Molecular Biology, Colorado State University Fort Collins United States ([ROR:03k1gpj17](https://ror.org/03k1gpj17))\n4. Department of Agronomy and Horticulture, University of Nebraska-Lincoln Lincoln United States ([ROR:043mer456](https://ror.org/043mer456))\n5. Department of Statistics, Iowa State University Ames United States ([ROR:04rswrd78](https://ror.org/04rswrd78))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEnvironmental variability poses a major challenge to any field study. Researchers attempt to mitigate this challenge through replication. Thus, the ability to detect experimental signals is determined by the degree of replication and the amount of environmental variation, noise, within the experimental system. A major source of noise in field studies comes from the natural heterogeneity of soil properties which create microtreatments throughout the field. In addition, the variation within different soil properties is often nonrandomly distributed across a field. We explore this challenge through a sorghum field trial dataset with accompanying plant, microbiome, and soil property data. Diverse sorghum genotypes and two watering regimes were applied in a split-plot design. We describe a process of identifying, estimating, and controlling for the effects of spatially distributed soil properties on plant traits and microbial communities using minimal degrees of freedom. Importantly, this process provides a method with which sources of environmental variation in field data can be identified and adjusted, improving our ability to resolve effects of interest and to quantify subtle phenotypes.\n\n## Introduction\n\nEnvironmental variation makes the real world a noisy place to conduct science. In the context of experimental agriculture fields, variation in topography may result in uneven water moisture accumulation. Similarly, soil nutrients such as nitrogen and phosphate are often nonuniformly distributed across a field. These unintended and often unknown sources of environmental variation may significantly affect the experimental results. The traditional approach to mitigate this variability is through experimental designs that include replicate blocks (Piepho et al., 2013; Fisher, 1925). While helpful for controlling for variation that is relatively uniform within the blocks, true biological signal may still be masked by other experimental noise that is heterogeneous within blocks.\n\nAnalytical approaches have been used to parameterize spatial variation within a field using traditional mixed-effect modeling. These methods come in two general flavors: estimating spatial-covariance structures and spatial-smoothing using splines (Rodr\u00edguez-\u00c1lvarez et al., 2016; Piepho et al., 2008; Velazco et al., 2017). The former is older and canonical but requires advanced statistical knowledge to interpret the results. The latter is newer and easier to use courtesy of advancements in computation. Spatial-smoothing has been shown to effectively account for spatial variations in uniform barley fields and promotes genetic heritability in simulation studies (Rodr\u00edguez-\u00c1lvarez et al., 2016). While spatial-smoothing using splines does effectively address spatial variation of a trait in a field, traditional parameterizations using spatial-covariance structures do so as well and further provide intuitive metrics on the type and shape of the structure. Estimating and accounting for spatial structure have proven useful for a variety of biological systems including nematodes (Quist et al., 2019), microbiomes (Franklin and Mills, 2003), forestry (Ohashi and Gyokusen, 2007; M\u00f6tt\u00f6nen et al., 1999; Bai et al., 2012), and ionomics QTL mapping (Pauli et al., 2018). These previous studies have used spatial-covariance estimation methods to identify and associate spatial effects on various traits of interest. These methods are also the backbone of geospatial statistics where the goal is to interpolate values between sampling points (Olea, 2018).\n\nAnother challenge facing field studies is to identify which factors of a multivariate dataset influence the traits of interest and then adjust for the effects from all covariates while maintaining sufficient degrees of freedom for statistical inference. This challenge is similar to the challenge associated with genome-wide association studies (GWAS) that must handle population structure. In GWAS studies, phylogenetic relatedness is managed by principal component analysis (Price et al., 2006). Principal components (PCs) capture axes of most variation and effectively reduce a complex multivariate dataset down to only a few independent vectors of greatest importance. PCs have also previously been used for dimension reduction to investigate how various soil nutrients affect natural selection on plant roots (Murren et al., 2020).\n\nHere, we combine approaches from geospatial statistics with dimension reduction to deal with environmental variation in field studies. Specifically, we estimated spatial-covariance structures for each factor and then accounted for these effects using principal component regression. Applying this approach reduced experimental noise due to environmental variation and revealed previously hidden associations in a field study. This field study with 24 varieties of sorghum and 2 watering treatments, well-watered and water stressed, arranged in a split-plot design with 8 replicate blocks, was completed in 2017. Several types of data were collected including, but not limited to, plant harvest traits (height, fresh and dry weight, and panicle size), soil property composition (calcium, magnesium, nitrate, organic matter, pH, phosphate, potassium, salinity, sodium, sulfate, and total cations), three microbiome samplings for each plot (root, rhizosphere, and soil), leaf traits (specific leaf area, C and N content, and stable isotopes of C and N), and root metabolomic profile. In this study, the soil chemical and physical properties were used as the multicovariates that exhibited spatial-covariance structure and subsequently created microtreatment effects throughout the field that are associated with plant traits. We demonstrate that accounting for these effects via residuals of principal component regression is an effective method to improve the detection of effects of treatment factors and reduce the noise caused by spatial variation within a field.\n\n## Results\n\n### Geospatial statistics interpolates soil property composition throughout the field\n\nWe previously described a field-level experiment in which sorghum and its associated microbiome were evaluated across two different watering treatments (Qi et al., 2022). As is typical of field studies, the collected data showed significant variability across all measured parameters. We also measured several different soil properties at multiple points throughout the field including organic matter, pH, phosphate, nitrate, sum of cations, calcium, magnesium, potassium, sodium, sulfate, and salinity compositions. We hypothesized that variation across the field in these soil properties may explain some of the variability in the other measurements. Here, using the field and microbiome datasets from Qi et al., 2022, we describe and evaluate a general method for reducing noise and apply this method to additional metabolomics and stable isotope datasets.\n\nFirst, because only a limited set of points across the field were sampled for soil properties, there was a need to estimate the missing values (Figure 1A). We suspected that sample proximity would introduce correlation within the measured soil properties. To assess this type of spatial correlation, we employed techniques from geospatial statistics to capture the correlation structure of any pair of samples in the field. Of the 12 properties tested, 6 properties exhibited evidence of spatial distributions (p value <0.05): salinity (mmho), nitrate (ppm), sulfate (ppm), calcium (ppm), magnesium (ppm), and phosphate (ppm) (see Methods: Statistical testing for evidence of spatial structure). For these six soil properties we estimated the missing values throughout the field. Interpolation of values between sampling points was performed by leveraging spatial correlation structure to predict unobserved values, a process called kriging (see Methods: Geospatial interpolation methods) (Table 1). To test the kriging accuracy, we performed a leave-one-out cross-validation for each soil property. Through this analysis we observed that the error of the predictions, when scaled to unit variance of the observations, exhibit distributions that resemble the expected standard Z-distribution (Figure 1\u2014figure supplement 1). The ratio of the partial sill to the nugget is a proxy for the magnitude of the variance that is attributable to the spatial structure. Comparing this ratio for nitrate and phosphate shows that the phosphate spatial correlation was much stronger than the nitrate spatial correlation (Figure 1). Calcium also exhibited correlation structure of distances larger than nitrate, but much smaller than phosphate (Figure 1). To visualize the spatial structure for each soil property, the kriged values of each property were centered around the mean and scaled to unit variance (Figure 1). This analysis revealed that the soil properties exhibited different topographies across the field. For example, phosphate levels were high in a band across the center of the field while nitrate and calcium levels were more variable with several high and low spots (Figure 1). We also considered correlation between the different soil properties and observed several correlation blocks, implying similar spatial structures (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70056/elife-70056-fig1-v1.jpg)\n\n**Figure 1.:** Water treatment is specified on right; WS = water stressed, WW = well-watered. Eight split-plot replicate blocks are denoted in gray vertical bars. Color scale represents data with genotype and treatment removed. Green indicates larger than average, white indicates approximately average, and magenta indicates below average values. (A) Nitrate values are shown for each cell (outlined in gray) that were sampled for soil property analysis. (B) Kriged nitrate values to estimate nitrate levels in unsampled plots. (C, D) Kriged values for phosphate and calcium. Variogram fit of spatial model is indicated with model type, nugget, partial sill, and range.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70056/elife-70056-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Shown is the difference between the predicted and the observed values for each sample normalized to the standard deviation of the observations, x-axis, and their respective frequency, y-axis.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70056/elife-70056-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Negative correlations are depicted as shades of red, and positive correlations are depicted as blue. Soil properties are ordered by hierarchical clustering based on Euclidean distance and complete agglomeration.\n\n**Table 1.**\n Shown are sum-of-square errors for each soil property (columns) and each spatial model tested (rows).Cells that have asterisks are those models that have minimal errors and are chosen to be the best-fit model for kriging for the respective soil property.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Salinity</th>\n      <th>Nitrate</th>\n      <th>Sulfate</th>\n      <th>Calcium</th>\n      <th>Magnesium</th>\n      <th>Phosphate</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Nugget only</td>\n      <td>1.92115E\u221205</td>\n      <td>203.668</td>\n      <td>10645.6</td>\n      <td>833211000</td>\n      <td>2261360</td>\n      <td>149,688</td>\n    </tr>\n    <tr>\n      <td>Exponential</td>\n      <td>1.1769E\u221206</td>\n      <td>41.2651</td>\n      <td>1909.53</td>\n      <td>17886300000</td>\n      <td>65136300</td>\n      <td>27556.2</td>\n    </tr>\n    <tr>\n      <td>Spherical</td>\n      <td>2.03099E\u221206</td>\n      <td>25.5247</td>\n      <td>2058.42</td>\n      <td>244155000*</td>\n      <td>1038010*</td>\n      <td>32351.9</td>\n    </tr>\n    <tr>\n      <td>Gaussian</td>\n      <td>2.16269E\u221206</td>\n      <td>22.3183*</td>\n      <td>289,060</td>\n      <td>17669600000</td>\n      <td>64365000</td>\n      <td>100,531</td>\n    </tr>\n    <tr>\n      <td>Matern</td>\n      <td>0.00000113273*</td>\n      <td>23.0069</td>\n      <td>1682.03*</td>\n      <td>266373000</td>\n      <td>1087980</td>\n      <td>18961.6</td>\n    </tr>\n    <tr>\n      <td>Stein\u2019s Matern</td>\n      <td>1.13273E\u221206</td>\n      <td>23.0069</td>\n      <td>290,357</td>\n      <td>17886300000</td>\n      <td>65136300</td>\n      <td>18827.8*</td>\n    </tr>\n  </tbody>\n</table>\n\n### Soil property variation influences plant phenotypes and microbiome composition\n\nThe above analyses clearly showed that soil properties were variable across the field site. However, it was not clear whether the observed variation was large enough to affect plant-associated phenotypes or the microbiome. To address this, we used constrained analysis of principal coordinates (CAP). With CAP, it is possible to identify specific effects on a multidimensional dataset while acknowledging variation due to other effects. For example, to understand if and how soil property variation affected microbiome composition, we first had to control for the effects of the watering treatments, the different genotypes and their interactions (see Methods: Statistical testing for phenotype\u2013property associations). First, CAP was computed and a permutation analysis of variance (ANOVA), using 999 iterations, was performed on each soil property to identify if there is an interaction with the different compartments on the overall microbiome composition and resulted in all but one soil property, sulfate, showing an interaction effect (Table 2). Following the interaction effect permutation ANOVA, post hoc permutation ANOVAs, using 999 permutations, were performed to identify specific soil property influence on the three compartments independently. From this analysis, we observed that the root microbiome was invariant to all soil property variations. In contrast, the rhizosphere and soil microbiomes were influenced by the variation in several soil properties (Figure 2A). Additionally, there were some soil properties (salinity, sulfate, and calcium) whose variation affected either the rhizosphere or soil microbiomes but not both. This suggests that microbiome compartments are differentially sensitive to different types of soil property variation. CAP and permutation ANOVA were also applied to annotated root metabolomic profiles. In contrast to the large effects seen in the microbiomes, no soil property variances were associated with changes in the metabolomic profile (Figure 2\u2014figure supplement 1). This may reflect the relative stability of the metabolites identified from gas chromatography\u2013mass spectrometry (GC\u2013MS) which mostly represents primary metabolites, or the sensitivity of measurements.\n\n**Table 2.**\n Shown for each soil property that exhibits significant spatial distribution (see Methods: Statistical testing for evidence of spatial structure) (first column) is the interaction effect with the different microbiome tissue compartments on the overall microbiome composition (p value <0.05 indicates significant interaction, PERMANOVA from model: Composition ~ Property:Compartment).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Soil property</th>\n      <th>p value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sulfate (ppm)</td>\n      <td>0.24</td>\n    </tr>\n    <tr>\n      <td>Salinity (mmho/cm)</td>\n      <td>0.011</td>\n    </tr>\n    <tr>\n      <td>Phosphate (ppm)</td>\n      <td>0.001</td>\n    </tr>\n    <tr>\n      <td>Nitrate (ppm)</td>\n      <td>0.001</td>\n    </tr>\n    <tr>\n      <td>Magnesium (ppm)</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Calcium (ppm)</td>\n      <td>0.005</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70056/elife-70056-fig2-v1.jpg)\n\n**Figure 2.:** Six soil properties were assessed for effect on root microbiome and plant phenotypes using permutation ANOVA. Cells are colored by \u2212log10 p value of the effect. (A) Effect of each soil property on microbiome beta diversity from three root compartments: root (endosphere), RHZ (rhizosphere), and soil (bulk soil), while constraining on genotype and treatment. Effect of each soil nutrient on the height and weight (B) and leaf \u03b415N (C) using type III sum of squares while including treatment, genotype, and interaction as additional fixed effects. (D) Example effect of kriged phosphate, x-axis, on plant height, adjusted for genotype and treatment, y-axis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70056/elife-70056-fig2-figsupp1-v1.jpg)\n\nWhile microbiome and metabolite data are highly multivariate, plant phenotypes, composed of individual phenotypic traits, are much less so and are therefore suited to univariate statistical analyses. Just as the microbiome has the potential to be influenced by the soil property variations, the same could be true for the univariate phenotypic traits. Similarly, the effects due to the experimental design must be acknowledged to more precisely evaluate the association a given property has on the phenotypic trait. Mixed-effect models were created for each soil property\u2013phenotypic trait pair with treatment, genotype, and their interaction as fixed effects and random effect for the split-plot replicates each having multivariate-normal spatial correlation structure (see Methods: Statistical testing for phenotype\u2013property associations; Equation 4). The precise effect a given soil property has on a phenotypic trait was evaluated using type III sum of squares to account for the other sources of variance (treatment, genotype, and the interaction) on the phenotypic trait. Traditional F-test from the ANOVA revealed that plant height and total fresh weight are influenced by soil phosphate and magnesium variation, respectively (Figure 2B). Similar modeling of the leaf traits indicated the soil phosphate variation is significantly associated with \u1e9f15N (Figure 2C). Many other phenotypic traits were examined and did not have statistically significant associations with the variation in soil properties (Figure 2\u2014figure supplement 1). Closer examination showed that soil phosphate levels are mildly inversely correlated to plant height (Figure 2D). This supports the hypothesis that excess phosphate inhibits plant growth and development (Shukla et al., 2017; Song et al., 2016) and suggests that the levels found in the center of the field were too high for optimum sorghum growth.\n\n### Statistical approach to place field noise into PCs\n\nWe have shown that many of the soil properties exhibit spatial distribution and influence various plant and microbiome traits. Therefore, to understand the effects of treatment and genotype on the phenotypic traits more precisely, we must first account for the effects of the soil properties. The replication in our study was not sufficient to include all the soil properties as covariates to account for their influence \u2013 this would require a degree of freedom for every soil property. A generalized approach to overcome limited sample size is reducing the dimensionality of the covariates using principal component analysis and regressing against the first several PCs, known as principal component regression. In this approach, the PCs retain a percentage of the influence from the individual properties and can be used as a proxy to adjust for as much variation as possible.\n\nTo adjust for the spatial effect of soil properties unrelated to genotype and treatment, we used the observed soil properties, not the kriged values, and fit linear models for each soil property with fixed effects being treatment, genotype, and their interaction. The residuals from these linear models were the adjusted soil properties unrelated to genotype and treatment. These residuals were then processed with principal component analysis. To test the success of accounting for our experimental design, we investigated clustering within the first two PCs and observed that indeed the treatment and genotype effects were accounted for (Figure 3A) as there were no obvious treatment or genotype effects remaining in these PCs. We selected the first three PCs as regressors which represented approximately 66% of the total variance in the soil property data (Figure 3B). Next, we visualized the contribution of each soil property within each PC (Figure 3C). PC1 is primarily represented by calcium, magnesium, potassium, sodium, and sum of cations. PC2 is primarily represented by sulfate, salinity, and pH. PC3 is primarily represented by phosphate and nitrate. Then, we used kriging (see Methods: Geospatial interpolation methods) to interpolate the missing values for the rest of the field. Since many soil properties exhibited spatial distributions (Figure 1), we expected that the PCs would also display a spatial distribution. Indeed, the spatial distribution of the kriged first PC resembles the calcium distribution which emphasizes the contribution of that property (Figures 1 and 3D). In summary, through this approach, we revealed specific sources of field-level noise and successfully captured a significant proportion of the field-level variation into three PCs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70056/elife-70056-fig3-v1.jpg)\n\n**Figure 3.:** (A) First two principal components of soil property residuals as x- and y-axis, respectively, colored by genotype and shaped by treatment. (B) Scree plot of the first 10 principal components. Shown is the percent variance explained of the total property variance by each component. Dashed line is at 10% variance explained. (C) For the first three components, colored is the contribution of each soil property to its respective variance explained within each component. (D) Spatial distribution of kriged PC1. Each cell colored by scaling the values to unit variance. Variogram fit with nugget, partial sill, and range displayed.\n\n### Using PCs to denoise field data\n\nHaving reduced the soil property influences into a limited number of PCs, next we aimed to account for these unintended influences on our phenotypes of interest. Similar to how we removed the experimental design effects, we created mixed-effect models for each of our phenotypes as the dependent variable with multivariate normal spatial structure within each split-plot replicate, and the first three PCs as fixed effect independent variables (see Methods: Principal component regression; Equation 5). For the univariate phenotypes, we extracted model residuals (Equation 2) to generate soil property invariant phenotypes. In the microbiomes, residuals were not comparable to the original counts, therefore we back transformed the model estimates to create an adjusted count for each operational taxonomic unit (OTU) (see Methods: Principal component regression; Equation 6).\n\nIn the microbiome datasets, we expected the variance within each of the compartments to decrease and the difference between compartments to be more obvious. To test this, we combined the original observed counts and the adjusted counts for microbes that were able to be modeled and performed principal component analysis. We observed larger distances between microbiome compartments using the adjusted counts versus the observed counts (Figure 4A). This indicates the sources of variation from the soil properties were better controlled thereby increasing the differentiation between compartments. Within each compartment, the root microbiome was least affected by soil factors which was demonstrated by the small distance between the observed and adjusted counts, followed by rhizosphere with a larger separation, and soil being the farthest and most affected (Figure 4A). The adjusted counts produced clusters that were larger than their respective original counts, again indicating sources of variation were addressed so that the within compartment effects were better elucidated (Figure 4A). Next, we examined the experimental design effects within each compartment using variance components (PERMANOVA) and found mirroring results (Figure 4B). The experimental design was not differentially resolved in the root microbiome after principal component regression; however, the rhizosphere and soil microbiomes saw an increase in 3% and 2%, respectively. Noting that treatment was the effect of largest change, we sought to visualize treatment effect changes within each of the tissue compartments. Given the strong compartment differentiation, identifying clusters within a compartment required principal component analysis to be performed on each compartment individually. In the rhizosphere, we observed treatment differentiation using both the observed and adjusted counts; however, the distance between the centers of each cluster was larger after adjustment further indicating within-group variation was reduced (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70056/elife-70056-fig4-v1.jpg)\n\n**Figure 4.:** (A) Principal component analysis on the combined raw and residual microbiome tables. Shown are the first two components with their respective variance explained. Samples are colored by tissue type and shaped by original or residual values. Gray points are the centers of each respective cluster, and gray lines connect the centers of each cluster. (B) Partial correlations of experimental design variables in each microbiome compartment\u2019s composition before and after principal component regression. (C) Observed plant height values, x-axis, and the change in that value as a result of the adjustment, y-axis. (D) Similar to C, shown are the fresh weight values and their respective changes. In both C and D, horizontal green dashed lines represent the 95% confidence interval for the change in observation. Light gray dots are within the interval, and dark gray dots are outside of the interval. (E) Partial correlations of experimental design variables in leaf \u03b415N before and after principal component regression. (F, G) For only water-stressed samples and only the soil microbiome, plant height, y-axis, and operational taxonomic unit (OTU) abundance of Microvirga, x-axis, before and after principal component regression. Shown in G, is the fit of a change-point model where the red line is no change before threshold, the vertical dashed line, and the blue line is a linear fit after the threshold.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70056/elife-70056-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Left panel uses the original counts and right uses adjusted counts (see Methods: Principal component regression). Each panel has colors corresponding to the treatment for each sample.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70056/elife-70056-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Boxplots, overlaying violin plots, of plant height, y-axis, against the watering treatments (WS: drought, WW: well-watered), x-axis. (B) Same as A, but displaying the residuals of plant height, y-axis, from principal component regression model using dimension reduced soil properties as covariates. See Qi et al., 2022 for additional details and analysis on these data. (C) Variance components, y-axis, of each harvest trait measured, x-axis, for both original data and adjusted data (_resid).\n\nTo assess how principal component regression affected the univariate plant phenotypes, we compared the data before and after principal component regression. Prior to removing noise from soil properties, plant height and fresh weight both showed drought effects, and after performing principal component regression, these effects were maintained (Figure 4\u2014figure supplement 2). Further, by plotting the original values against the change for each value after adjustment, we showed that this correction method is equitable for all plant sizes; in other words, short and tall plants were not overly adjusted either positively or negatively (Figure 4). Additionally, the variation attributable to soil properties was as much as \u00b110% for fresh weight and \u00b16% for plant height for some individual observations. Additionally, variance components were computed for all harvest traits but both fresh weight and plant height did not demonstrate an increase in experimental design resolution (Figure 4\u2014figure supplement 2). Lastly, leaf delta \u03b415N showed an association with phosphate (Figure 2C), and variance components for the experimental design effects found that the R2 between the unadjusted and adjusted increased by approximately 5% (Figure 4E). This is similar to the changes in the explained variance in rhizosphere and soil microbiome compositions.\n\nMicrobiome analyses often have less-than-ideal replication and therefore elimination of confounding variations is crucial in identifying effects of interest, such as identifying plant-growth promoting microbes. For instance, change-point models can identify microbial impacts on plant phenotypes once the abundance of the microbe reaches a particular level (Qi et al., 2022). We show that in water-stressed samples before the adjustment on both plant height and microbe abundance of Microvirga in the soil microbiome, we do not see any evidence of an association. However, after accounting for the variance from the soil properties, there is a strong positive correlation between plant phenotype and OTU abundance (false discovery rate (FDR)-adjusted p value <0.05) (Figure 4F, G). This further emphasizes that if an experimental factor is expected to have a small effect size, that it would be lost to noise. We observe an order of magnitude more significant OTUs in the change-point associations before principal component regression versus after (Table 3). Adjusting the soil property effect or other nuisance factors in experimental design can lead to increased power of detecting biological signals.\n\n**Table 3.**\n Shown for each microbiome compartment are the number of operational taxonomic units (OTUs) that showed significant association (p value <0.05) in their abundance to the respective phenotype, either positive or negative, both before (original) and after (PC123 Adj) principal component regression.The intersection column shows the number of OTUs shared between these two sets of counts.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Compartment</th>\n      <th>Phenotype</th>\n      <th>Original</th>\n      <th>PC123 Adj</th>\n      <th>Intersection</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Soil</td>\n      <td>Dry weight</td>\n      <td>7950</td>\n      <td>445</td>\n      <td>155</td>\n    </tr>\n    <tr>\n      <td>RHZ</td>\n      <td>Dry weight</td>\n      <td>5619</td>\n      <td>897</td>\n      <td>333</td>\n    </tr>\n    <tr>\n      <td>Root</td>\n      <td>Dry weight</td>\n      <td>3320</td>\n      <td>231</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td>Soil</td>\n      <td>Plant height</td>\n      <td>7991</td>\n      <td>342</td>\n      <td>137</td>\n    </tr>\n    <tr>\n      <td>RHZ</td>\n      <td>Plant height</td>\n      <td>5614</td>\n      <td>854</td>\n      <td>329</td>\n    </tr>\n    <tr>\n      <td>Root</td>\n      <td>Plant height</td>\n      <td>3397</td>\n      <td>245</td>\n      <td>97</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nLarge-scale trials within complex environments are an important component of many biological subdisciplines. Because of environmental variability, these experiments must include high levels of replication and even so, results often fail to repeat in subsequent trials. For agricultural field studies a major source of variation is heterogeneous soil property distributions that create their own microtreatments and are covariates to planned experimental designs. Because these microtreatments are often unknown, and therefore not accounted for, they show up as experimental noise and may lead to false inferences. For instance, nitrogen is known to affect plant growth (size, color, yield, etc.) (Veley et al., 2017; Chapin, 1987). If nitrogen is unevenly distributed across a field experiment aimed at characterizing biomass among diverse genotypes, the variability in nitrogen may confound the experiment. In this study, by intentionally measuring multiple soil properties across the field experiment, we were able to account for this known variation through PCs and gain novel biological insight into possible field relevant interactions between plants and microbes (Qi et al., 2022).\n\nAfter accounting for environmental variation, we observe a reduced total number of OTUs that correlate with plant phenotypes (Table 3). While the total number is smaller, we also observe new \u2018hits\u2019 that were not observed before accounting for environmental factors. Additional work will be required to fully understand these patterns but here we offer a few theoretical explanations. We note that accounting for the environmental variation reduced our degrees of freedom that may reduce the power of detecting some associations. More importantly, after adjusting for environmental effect, we have focused our analysis on conditional associations instead of marginal associations. Marginal associations measure whether two variables change in the same or opposite directions simultaneously, regardless of other factors that may affect those two variables. Conditional associations, on the other hand, adjust for the impacts of other variables, and measure the relationship between two variables that cannot be explained by other variables. In a scenario in which the environment affects a microbe abundance and a plant phenotype, this may be observed as marginal associations between the two even though the microbe abundance and plant phenotype are not directly associated with each other. It is possible that many of the \u2018hits\u2019 before environmental factor adjustment are results of such marginal associations. By accounting for environmental factors, we focus on conditional associations that measure the rarer direct or possibly causal interactions between OTUs and plants. Nevertheless, future experimental work will be required to refine the list of candidate microbes.\n\nWhile the approach described here represents a major advance forward, we acknowledge several opportunities for further improvement. For example, the soil property data were collected at just one time point, approximately 1 month prior to harvest. While we expect some soil properties to remain constant over the course of the experiment, others likely fluctuate (e.g., water content). Future studies might gather soil property composition at multiple time points, including before planting and at the time of phenotyping, to generate paired data. Additionally, advancements have been made in spatiotemporal modeling using Bayesian hierarchical modeling with time as an autoregressor (Finley et al., 2015; Rushworth et al., 2014) which may prove powerful if soil property composition were densely sampled over time. We also note that replication remains a crucial aspect of these types of experiments. In this analysis, we used three degrees of freedom by including the first three PCs of the soil property data in a regression to account for their contributions on the phenotypes. We chose to only include PCs that have at least 10% variance explained and only include up to replication number minus three so the experimental design effects could still be estimated. In our case, had a fourth PC shown a significant source of variance, degrees of freedom would have become limiting. On the other hand, had we included additional replication, it may have been possible to correct for covariates such as the soil properties by directly regressing on the properties themselves, rather than using a dimension reduction technique.\n\nA significant advantage of the method described here, is that the sources of variation (soil properties) are known. This allows the researcher to examine how these fluctuations might influence experimental results and may also lead to additional biological insight. However, we note that it is not possible to measure every potential source of variation. In many cases, it may prove useful to apply an approach that is agnostic to the source of variation, such as the SpATS method described previously (Velazco et al., 2017).\n\nWe note that in these datasets, the stable isotopes and primary metabolite profiles are invariant to the measured soil properties. For the isotopes, this may be indicative of stability relative to the fluctuations in the properties across the field, but it is possible that if the soil property variations were larger, then a relationship might be established. The metabolite profile used in these analyses is only those captured from GC/MS and mostly consist of primary metabolites such as sugars, organic and amino acids, small phenolics, and fatty acids. It may be true that secondary metabolites that were not examined in these analyses may associate with the soil property variations. We observe that a relatively small amount of variation in plant height and weight were attributed to the soil property composition, other types of data, particularly microbiome composition, were much more susceptible. Microbiome quantification has been shifting from using OTUs to amplicon sequence variants (ASVs) which are designed to identify and retain more specific bacterial identification. Some microbes were overtly sparse across the samples and principal component regression could not successfully estimate model parameters. The microbiome table generation pipeline used for this field allows for the identification of very sparse microbes by way of using 99.5% identity clustering which results in 23,617 OTUs detected. After applying principal component regression, approximately 25% of the microbes were successfully modeled and retained. The methods proposed here should also be applicable to those types of tables as well with one caveat: ASV tables are sparser than OTU tables. While the methods here are zero-inflated, it is likely the percent of ASVs not successfully modeled would be larger than if using classical OTU techniques.\n\nIn conclusion, here we demonstrate the impact of spatially distributed soil property variations on several phenotypes of interest and present principal component regression as a method to alleviate the effects analytically. We observed that the microbiome communities were heavily influenced by the soil properties while the plant phenotypes were more resilient but nonetheless affected. Identifying sources of variation and removing their influence enhances the ability to resolve other effects of interest and enables more honest, reliable, and believable quantification of subtle phenotypes.\n\n## Materials and methods\n\nIn a related research manuscript (Qi et al., 2022), we describe analysis of the field dataset and include additional details on experimental design (sorghum varieties, watering regimes, and field layout). Microbes were not intentionally added to these experiments, but instead were allowed to evolve naturally from the environment. For clarity, we summarize key details here, as well. In short, we planted 24 varieties of sorghum in a split-plot design with 8 replicate blocks with 2 watering treatments per block (WW: well-watered and WS: drought). End of season harvesting procedures, microbiome sampling, DNA extraction, and sequencing are also fully described in Qi et al., 2022.\n\n### Processing amplicon reads with VSEARCH and OTU table QC\n\nThree microbiomes were collected for each plant: root endophytes, rhizosphere, and bulk soil, and all samples were sent for 16S PE amplicon sequencing at JGI (see Qi et al., 2022 for extraction and sequencing methods). What follows is the VSEARCH (v2.9.0) (Rognes et al., 2016) workflow for taking the reads for each sample and processing them to curate the OTU table: merge paired ends, merge all samples, fastq filter, sequence dereplication, cluster unique sequences, remove chimeras, and read quantification. Merging paired ends had the following parameters: max diffs = 10, max diff percentage = 90, min merge length = 230, max merge length = 540. Samples were then combined into a single fasta file. Fastq filtering had the following parameters: maxee = 1, strip left = 19, strip right = 20, fastq max n\u2019s=0, fasta width = 0. Dereplication had the following parameters: min unique size = 1, fasta width = 0. OTU clustering had the following parameters: id percentage = 0.995, strand = both. Removing chimeras had the following parameters: fasta width = 0. Read quantification had the following parameters: id percentage = 0.9. These steps were combined all together in a directed acyclic graph (DAG) workflow and executed on a HTCondor high-throughput computation cluster. A total of 171,273 OTUs were detected and of those 114,179 had quantification across all 1280 samples. OTU table quality control was done in two steps: samples were removed if the total number of reads quantified across all OTUs was less than 10,000. In addition, OTUs were removed if the total number of reads quantified across all samples was less than 100 or greater than 200,000. After applying this filter 92,385 OTUs and 1280 samples remained. Of the OTUs removed only 422 had counts larger than 200,000 indicating the majority of the OTUs removed were rare and would not have enough information to perform proper statistical analysis. Once OTUs and samples that did not meet the quality control filters were removed, each OTU count in a sample was scaled proportionally to the same number, max number of reads per sample, so that all samples had the same number of OTU counts quantified.\n\n### Geospatial interpolation methods\n\nOne major assumption of fitting spatial models is that the distribution is stationary, meaning that the mean and covariance between any two samples are the same throughout the grid. However, this field trial included two treatment factors (watering treatments and sorghum genotypes) which may have directly affected the measured soil properties. Thus, to satisfy the stationary assumption, we needed to account for any influence on the soil properties from the two treatment factors and/or their interaction. To do this, we fitted linear models including treatment factors and their interaction for each soil property as follows:\n\n$$\nProperty=intercept+Treatment+Genotype+Treatment*Genotype+residual error\n$$\n\nThen we calculated residuals for each property to generate stationary soil properties by subtracting the observed values by the predicted values based on model (1), as follows:\n\n$$\nResiduals = Property_{ij}-Predicted(Property_{ij})\n$$\n\nThe residuals were used to estimate variances at multiple distances to produce a variogram and then, several spatial models were fitted to the data. The spatial models that were considered include (1) No Structure, (2) Exponential, (3) Spherical, (4) Gaussian, (5) Matern, and (6) Stein.\n\nThis was fully implemented in the R package \u2018gstat\u2019 using the fit.variogram() function, and full spatial model parameterizations can be found (Pebesma and Wesseling, 1998; Pebesma, 2004; Pebesma and Wesseling, 1998; Pebesma, 2004). The best fitting model was selected as the one that produced the minimal sum-of-squares errors. Given a spatial model, there are three metrics that describe a spatial fit and help us understand how the sampled points are correlated. The nugget is the estimated variance between two adjacent samples and represents the noise of the data. The range is the distance at which the change in variance with respect to distance first becomes zero and represents how far away sampled points demonstrate the correlation structure. Finally, the partial sill is the variance at the range minus the nugget variance. Since each spatial model is fully parameterized by only these three coefficients, model complexity is not a factor in estimating the model sum of squares to identify the best fitting parameterization.\n\nWith the best spatial model, we estimated spatial weights as a function of the distance between two sampling points and used these weights to predict values at nonsampled positions by kriging, a method to interpolate by using a weighted average of the observed values in the neighborhood of nonsampled position. More specifically, we applied ordinary kriging and let the sum of spatial weights to be one so that ordinary kriging is unbiased (Olea, 2018).\n\n$$\nResidual_{krig}position_{0}= \\sum_{i=1}^{n} \\lambda_{i}Residual(position_{i})\n$$\n\n\n\n$$\nwhere\u00a0\\sumi=1n\u00a0\\lambda_{i}=1\n$$\n\nKriging was performed using the krige() function in the R package \u2018gstat\u2019.\n\n### Statistical testing for evidence of spatial structure\n\nUsing the residuals of the soil properties from Equation 2 (see Methods: Geospatial interpolation methods), multiple models were created with different spatial-covariance structures: intercept-only (no structure), spherical, exponential, Gaussian, linear, and rational-quadratic. A soil property is considered to exhibit evidence of spatial structure if any of five spatial covariance structure models are significantly more likely than the intercept-only model using likelihood ratio test (p value <0.05).\n\n### Statistical testing for phenotype\u2013property associations\n\nUsing only the soil properties that were determined to have significant spatial structure (see Methods: Statistical testing for evidence of spatial structure), the kriged soil property (Equation 3) was computed and used in the following association model for the mean structure:\n\n$$\nf(Phenotype_{ijk}) = intercept + Treatment+Genotype+Treatment*Genotype+Property_{krig}+Z+ error\n$$\n\nwhere f() is the transformation function, Z is the multivariate normal spatial distribution nested within each split-plot replicate. In the case of plant height, fresh weight, and \u03b413C, the f() is the identity function and significant association is determined by computing a chi-square statistic based on type III sum of squares for the Property_krig. In the metabolite and microbiome estimation, f() is a Canberra distance transformation and significant association is determined by using constrained analysis of principal coordinates using the capscale() function in the vegan R package and constraining on all terms except Property_krig, which has its effect on metabolite composition estimated using permutation ANOVA with 999 iterations.\n\n### Principal component regression\n\nStarting with the stationary soil properties, that is, the residuals obtained from Equation 2, principal component analysis was performed using the PCA() function in the FactoMineR R package, and the first three components were extracted. Each PC was then kriged using the same methods described previously in the method section of geospatial interpolation methods using Equation 3. The kriged PCs were then used to create the following principal component regression model:\n\n$$\ng(E(Phenotype)) = \\alpha+\\beta_{1}PC1_{krig}+\\beta_{2}PC2_{krig}+\\beta_{3}PC3_{krig}+Z\n$$\n\nwhere g() is the link function for the expected value of the phenotype, \u03b1 is the model intercept, each \u03b2 is the regression coefficient for the respective term, Z is the multivariate normal spatial distribution nested within each split-plot replicate. In the case of plant height, fresh weight, and \u03b413C, the g() is the identity function. For the microbiome data, each tissue compartment was performed independently with Equation 5, and g() is the log link to the zero-inflated negative-binomial distribution implemented in the R package NBZIMM R package with the glmm.zinb() function. The metabolites were not modeled.\n\nSoil property invariant data were created for the univariate phenotypes by extracting model residuals similar to Equation 2. For each microbiome compartment, every OTU was modeled independently and an adjusted count-like value was created by dividing the original count by the exponentiated regression coefficients for each PC as follows:\n\n$$\nAdjusted OTU_{i} = Observed OTU_{i} / exp(b_{1}+b_{2}+b_{3})\n$$\n\nwhere each b coefficient is an estimated beta coefficient by fitting model (5).\n\n### Soil property composition sampling and processing\n\nSelected plants were excavated using a shovel to a depth of 12\u201314 inches. The soil (approximately 200 g) from the excavated root ball was shaken off into a wash pan in the field, homogenized and collected into a quart-size Ziploc bag. In addition to the collection of roots for microbiome analysis a subset of roots were collected for metabolite analysis as described in Sheflin et al., 2019. The soil used for chemical and physical analysis was stored in the Ziploc bags at 4\u00b0C and sent to Ward labs for analysis of pH, buffer pH, sum of cations , base saturation (%), soluble salts, organic matter, nitrate\u2013nitrogen, phosphorus, potassium, calcium, magnesium, sodium, sulfur, zinc, iron, manganese, and copper.\n\n### Root metabolomics sampling and processing\n\n#### Nontargeted metabolite profiling using GC\u2013MS\n\nMetabolite extraction was conducted by weighing out 19\u201321 mg of each freeze-dried sorghum root and placing them into clean 2 ml autosampler glass vials (VWR, Radnor, PA, USA). Automated control of sample extraction (i.e., solvent proportions, solvent volumes, sample agitation, and supernatant transfers) was accomplished using a standalone Gerstel MultiPurpose Sampler (MPS). Samples were extracted by adding 770 \u03bcl of methyl-tert-butyl-ether (MTBE) and 385 \u03bcl to each vial and vortexing on the MPS at room temperature for 30 min. To separate organic and aqueous layers, 640 \u03bcl of water was added to the remaining extract and vortexed for 15 min. Samples were then centrifuged for 25 min at 3500 rpm at 4\u00b0C. The organic layer was extracted twice by transferring into a new 2 ml autosampler vial without disturbing the lower layer then adding 600 \u03bcl of MTBE and transferring again. The aqueous layer was also extracted twice by transferring out of the vial into a new 2 ml autosampler vial without disturbing the pellet then adding 300 \u03bcl of methanol and 300 \u03bcl of acetonitrile, vortexing for 3 min and transferring again. The aqueous layer was completely dried under N gas, resuspended in 300 \u03bcl of 75% methanol. 20 \u00b5l of the aqueous layer from each sample was transferred to another set of glass vials, centrifuged for 2 min at 3500 rpm and then dried under N2 (g) for 30 min. Dried samples were stored at \u221280\u00b0C until derivatization. Derivatization (methoximation and silylation) took place immediately prior to running the samples. Dried down samples were allowed to warm to room temperature and then resuspended in 50 \u00b5l of methoxyamine HCl (prewarmed to 60\u00b0C) and centrifuged for 30 s. Samples were then incubated at 60\u00b0C for 45 min, followed by a brief vortex, sonication for 10 min and an additional incubation at 60\u00b0C for 45 min. Following this, the samples were centrifuged before receiving 50 \u00b5l of N-methyl-N-(trimethylsilyl)trifluoroacetamide (MSTFA) + 1% trimethylchlorosilane (TMCS) (Thermo Fisher Scientific, Waltham, MA, USA), briefly vortexed and incubated at 60\u00b0C for 40 min, as described previously (Chaparro et al., 2018). Samples were loaded (~100 \u00b5l) into glass inserts within glass autosampler vials and centrifuged for 30 s prior to GC\u2013MS analysis. In addition, a pooled extract was created by combining equal volumes of each sample into one glass vial for use as a consistent representative quality control sample (QC).\n\nGC\u2013MS analysis was performed using a Trace 1310 GC coupled to a Thermo ISQ mass spectrometer (Thermo Scientific). Derivatized samples (1 \u00b5l) were injected in a 1:10 split ratio. Metabolites were separated with a 30 m TG-5MS column (Thermo Scientific, 0.25 mm i.d. 0.25 \u03bcm film thickness). The GC program began at 80\u00b0C for 0.5 min and ramped to 330\u00b0C at a rate of 15\u00b0C per min and ended with an 8 min hold at a 1.2 ml min\u22121 helium gas flow rate. The inlet temperature was held at 285\u00b0C and the transfer line was held at 260\u00b0C. Masses between 50 and 650 m/z were scanned at 5 scans/s after electron impact ionization.\n\nMetabolomic data processing was conducted as previously described (Chaparro et al., 2018). GC\u2013MS files were converted to.cdf format and processed by XCMS in R (Smith et al., 2006; Mahieu et al., 2016; R Core Team, 2015). All samples were normalized to the total ion current. RAMClustR was used to deconvolute peaks into spectral clusters for metabolite annotation (Broeckling et al., 2014). RAMSearch (Broeckling et al., 2016) was used to match metabolites using retention time, retention index, and matching mass spectra data with external databases including Golm Metabolome Database (Hummel et al., 2007; Hummel et al., 2013) and NIST (Broeckling et al., 2016).\n\n### Leaf traits analyses\n\nThe middle portion (10\u201312 cm long) of the uppermost fully expanded leaf from individual plants was harvested in a coin envelope for the analysis of specific leaf area, C and N content, and stable isotopes of C and N. Leaf samples were oven-dried at 65\u00b0C to a constant mass and ca. 2.5 mg of the dry leaf was subsample using a custom-made leaf punch system in a tin capsule. The leaf punch provided the leaf area of subsample, which were weighed to estimate specific leaf area. The N, C and \u03b415N and \u03b413C concentrations of dry leaf were determined by combusting encapsulated samples in an elemental analyzer (ECS 4010, Costech Analytical Technologies) coupled to a continuous flow isotope ratio mass spectrometer (Delta XP, Finnigan MAT) at the Stable Isotope Core Laboratory, Washington State University.\n\n### Software used and data availability\n\nAll analyses herein were performed in R using the following packages: raster(3.4.5), ggplot2(3.3.3), deldir(0.1.21), vegan(2.5.5), plyr(1.8.4), gridExtra(2.3), reshape(1.4.3), FactoMineR(2.4), factoextra(1.0.7), chngpt(2019.3.12), stringr(1.4.0), gstat(2.0.6), sp(1.4.2), scales(1.0.0), lme4(1.1.21), nlme(3.1.140), parallel(3.5.2), and patchwork(1.1.1). All data and scripts used to create all figures and perform all analyses can be found at https://zenodo.org/record/4715924.\n",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "c2b8d1ed-78f7-45c1-9349-2cc84d497751",
+      "submission_id": "c62a5c3a-6248-44df-b5af-8d87d904fc2a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Noah K Whiteman, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70056.sa0](https://doi.org/10.7554/eLife.70056.sa0)\n\nIn this study, the authors took an experimental, empirical approach to tackle the thorny problem of micro-scale variation in soil properties within and among field plots in confounding statistical analyses. The issue is that in field experiments, small variation in one or more soil property variables can obscure true effects of experimental variables on plant phenotypes. The main result is that without their framework they would not have found the association between water treatment, plant growth and Microvirga bacterial abundance, it would have been lost to the noise inherent in these kind of large-scale experiments with relatively modest degrees of freedom. Overall, the PC-based approach to de-noise these kinds of datasets provides an important advance by pulling out subtle phenotypic effects in field trials.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Noah K Whiteman, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70056.sa1](https://doi.org/10.7554/eLife.70056.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Increased signal to noise ratios within experimental field trials by regressing spatially distributed soil properties as principal components.\" for consideration by eLife. Your article has now been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Meredith Schuman as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Andrew Gloss (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Each of the reviewers' specific concerns below should be addressed prior to resubmission of a revised manuscript for publication consideration. A major concern was a lack of detail on many aspects of the statistical model, the location of the raw data and ability of others to re-run the code. This should be the focus of the author's should they consider revising and resubmitting this manuscript.\n\n2) Because the manuscript is, essentially a methods development report, it is of the utmost importance that the authors revise this manuscript in alignment with those goals. It should be straightforward, not difficult, for others to implement the tools developed.\n\nReviewer #1 (Recommendations for the authors):\n\nI would like to see the raw data and methods for all of these experiments uploaded/appended as supplementary information here--it isn't satisfactory that one should turn to a preprint for this information--it should all be in the present manuscript. In that vein, I was also confused by whether microbes were a treatment or a passive variable here in this study (e.g., I had a hard time differentiating between the Qi et al., biorxiv manuscript and this one).\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, I found the approach exciting, and the paper makes a good case for its use in future experiments! However, some work is needed to make the presentation more complete in a few different ways, as numbered below. When revising, please consider the following sentence-by-sentence and analysis-by-analysis: is the approach fully described in the methods? Are the necessary results provided so a reader could evaluate support for the statement rather than taking the written interpretation at face value? (e.g., L245: readers should be able to view the results, rather than relying on the vague assurance that the results that aren't shown are \"similar\" to the one that is. This paper could and probably should have more extensive supplementary results to achieve this).\n\n1. Not all aspects of the method's implementation are described thoroughly in the paper, in both practical and conceptual senses. This includes both the specific formulations of each analysis -- with a careful description of the model inputs, outputs, specification, and software packages -- and very clear explanations of the goal of each step and how the approach achieves it. The incompleteness of these details made it difficult to fully evaluate, and could pose obstacles to its reliable implementation and interpretation by other researchers. In a paper presenting a methodological approach and arguing for its broader use, clearly walking readers through these steps is essential. Addressing this will require revisions to the methods and results alike. While I do appreciate the brevity, other papers implementing spatial models for environmental variation -- such as Pauli et al., 2018 (G3, doi: 10.1534/g3.117.300479) or Velazco et al., 2017 (Theor. Appl. Genet; doi: 10.1007/s00122-017-2894-4) -- walk the reader through their approaches more thoroughly.\n\n2. Results are presented incompletely. For example, Figure 4E shows how PC regression affected variance partitioning among explanatory variables and unexplained noise, but only for one dependent variable. This really should be conducted for every dependent variable included in the study. When conducting many tests, a seemingly compelling result can arise even by chance, so it's difficult to know how to interpret a single strong result that is hand-picked to be presented. Similarly, the effect of spatial modeling should be presented across all OTUs considered in the study, not just one with a particularly strong effect in the desired direction. Otherwise, one is left wondering if this is a chance result (since re-fitting a model on adjusted data will always alter it) that only arose because so many OTUs were tested -- and whether patterns in the opposite direction, where a significant effect emerged only in the unadjusted phenotypes, also were observed. Note that multiple test corrections (likely FDR) should be presented when applicable as well throughout the paper, especially for the large number of OTU tests that must've been conducted but not shown. It seems like the results should pass this scrutiny, but it must be applied nonetheless!\n\n3. How the approach builds on or is unique from previous studies and approaches, and ensuing strengths and weaknesses to be expected as a result, is not sufficiently described; see Public Review for further details.\n\nSpecific comments:\n\nI don't quite follow how separation of cluster centers in the PCA plots (Figures 4A-B) suggests that environmental noise has been reduced and treatment signals have been boosted. In these figures, the centers for each condition do appear further apart, but the spread of points within each condition have also increased. If both spread and centers increase, does this actually reflect better separation of conditions, or just a re-scaling of the overall plot? Does variance partitioning (explained vs. unexplained variance) and the significance of the condition effect in a statistical model actually improve? (Also, I'm confused by L223-224 -- wouldn't weakening a true treatment effect also enlarge clusters, albeit in a different way by drawing points toward the center of the plot?)\n\nIt would be very helpful to walk through the spatial model selection more -- a bit on the different spatial covariance structures that were tested in particular. The test results used for model selection should also be more fully presented, including parameters relevant to the likelihood ratio tests that were conducted (e.g., degrees of freedom for each comparison, log likelihood scores for each model and associated p-value, etc).\n\nL143-147: Microbiomes of different compartments being affected by different soil elements seems plausible, but this could also just reflect false negatives, a common problem when simply \"tallying up\" the tests significant at some threshold. As a result of experimental noise (or differences in the amount of unexplained variance within specific compartments), it's possible that an element might have significant effects only in one compartment even if it affects all of them. Evaluating a model of microbiome_composition ~ element * compartment is needed to test this, paying attention the significance of the interaction term.\n\nTable S1: How is model complexity taken into account? Typically, a more complex model will always have reduced error. Do the model comparisons penalize for increasing model complexity?\n\nI was unable to access the scripts on Zenodo, but maybe that was user error on my end!\n\nReviewer #3 (Recommendations for the authors):\n\n1. It might be helpful to describe the details of the statistical model.\n\n2. To help readers employ the proposed tool in their studies, it is valuable to include the step-by-step procedure of the proposed strategy, such as selection of variables, number of PCs to include in the model etc.\n\n3. For the proposed tool, will the correlations between the phenotypes affect the results/performance?\n\n4. Page 10, line 151: GCMS should be \"GC/MS\" or \"GC-MS\"?\n",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5012ccac-2d34-43fb-9664-3e6fa09c164b",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C1",
+      "claim": "Environmental variability poses a major challenge to any field study.",
+      "claim_type": "EXPLICIT",
+      "source": "Environmental variability poses a major challenge to any field study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about field studies presented in the abstract without specific supporting data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "3b11ddde-da61-4284-bdf3-7670dd64eb23",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C2",
+      "claim": "The ability to detect experimental signals is determined by the degree of replication and the amount of environmental variation, noise, within the experimental system.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ability to detect experimental signals is determined by the degree of replication and the amount of environmental variation, noise, within the experimental system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle stated in the abstract without specific experimental support in this section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "7f449ad3-7580-4e76-ad4e-90322d70855b",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C3",
+      "claim": "A major source of noise in field studies comes from the natural heterogeneity of soil properties which create microtreatments throughout the field.",
+      "claim_type": "EXPLICIT",
+      "source": "A major source of noise in field studies comes from the natural heterogeneity of soil properties which create microtreatments throughout the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact in the abstract and is supported by the experimental findings presented later in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "f3568e1c-e902-44f8-8041-58f614d032c4",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C4",
+      "claim": "The variation within different soil properties is often nonrandomly distributed across a field.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the variation within different soil properties is often nonrandomly distributed across a field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the spatial analysis and kriging results shown in Figure 1 and described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "c425fb80-57ab-4ff9-9f7a-762fd07792e1",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C5",
+      "claim": "Diverse sorghum genotypes and two watering regimes were applied in a split-plot design.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse sorghum genotypes and two watering regimes were applied in a split-plot design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "28201e6d-a516-4f8a-9a93-c3ceff471960",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C6",
+      "claim": "The process provides a method with which sources of environmental variation in field data can be identified and adjusted, improving our ability to resolve effects of interest and to quantify subtle phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this process provides a method with which sources of environmental variation in field data can be identified and adjusted, improving our ability to resolve effects of interest and to quantify subtle phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the results showing improved signal-to-noise ratios after adjustment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "f766a1e3-4e0f-43b5-ab1f-ff12427b2455",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C7",
+      "claim": "Variation in topography may result in uneven water moisture accumulation in experimental agriculture fields.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of experimental agriculture fields, variation in topography may result in uneven water moisture accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about agricultural fields.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "0ec45bf5-8469-407c-84bd-a05665e66ef2",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C8",
+      "claim": "Soil nutrients such as nitrogen and phosphate are often nonuniformly distributed across a field.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, soil nutrients such as nitrogen and phosphate are often nonuniformly distributed across a field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge and is supported by the spatial distribution data shown in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "a92d37d0-1b40-4373-9334-61c57035c1b5",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C9",
+      "claim": "The traditional approach to mitigate variability is through experimental designs that include replicate blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "The traditional approach to mitigate this variability is through experimental designs that include replicate blocks (Piepho et al., 2013; Fisher, 1925).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "b94dffb2-d25c-4fee-9392-b99948f3a64a",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C10",
+      "claim": "True biological signal may still be masked by experimental noise that is heterogeneous within blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "While helpful for controlling for variation that is relatively uniform within the blocks, true biological signal may still be masked by other experimental noise that is heterogeneous within blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of traditional blocking designs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "c95768c7-9cbb-488a-8a30-11b6bcefddbf",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C11",
+      "claim": "Spatial-smoothing has been shown to effectively account for spatial variations in uniform barley fields and promotes genetic heritability in simulation studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial-smoothing has been shown to effectively account for spatial variations in uniform barley fields and promotes genetic heritability in simulation studies (Rodr\u00edguez-\u00c1lvarez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "3b422c2b-838a-4f85-854d-fe0bd2b9ae6b",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C12",
+      "claim": "Estimating and accounting for spatial structure have proven useful for a variety of biological systems including nematodes, microbiomes, forestry, and ionomics QTL mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimating and accounting for spatial structure have proven useful for a variety of biological systems including nematodes (Quist et al., 2019), microbiomes (Franklin and Mills, 2003), forestry (Ohashi and Gyokusen, 2007; M\u00f6tt\u00f6nen et al., 1999; Bai et al., 2012), and ionomics QTL mapping (Pauli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "f3dc27dd-6097-42ff-9134-776980237a08",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C13",
+      "claim": "In GWAS studies, phylogenetic relatedness is managed by principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In GWAS studies, phylogenetic relatedness is managed by principal component analysis (Price et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "40800203-0f3b-4946-9955-6e9d6d8615cc",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C14",
+      "claim": "Principal components capture axes of most variation and effectively reduce a complex multivariate dataset down to only a few independent vectors of greatest importance.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal components (PCs) capture axes of most variation and effectively reduce a complex multivariate dataset down to only a few independent vectors of greatest importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mathematical properties of PCA, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "a3cb0752-7e44-420d-8148-656013f7af3e",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C15",
+      "claim": "PCs have previously been used for dimension reduction to investigate how various soil nutrients affect natural selection on plant roots.",
+      "claim_type": "EXPLICIT",
+      "source": "PCs have also previously been used for dimension reduction to investigate how various soil nutrients affect natural selection on plant roots (Murren et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "e4bbe127-94c6-4371-8b6d-2fc5f53617e5",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C16",
+      "claim": "The field study included 24 varieties of sorghum and 2 watering treatments, well-watered and water stressed, arranged in a split-plot design with 8 replicate blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "This field study with 24 varieties of sorghum and 2 watering treatments, well-watered and water stressed, arranged in a split-plot design with 8 replicate blocks, was completed in 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "eb0e02de-f254-4969-b0b3-1f154b2b8478",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C17",
+      "claim": "Several types of data were collected including plant harvest traits, soil property composition, three microbiome samplings for each plot, leaf traits, and root metabolomic profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Several types of data were collected including, but not limited to, plant harvest traits (height, fresh and dry weight, and panicle size), soil property composition (calcium, magnesium, nitrate, organic matter, pH, phosphate, potassium, salinity, sodium, sulfate, and total cations), three microbiome samplings for each plot (root, rhizosphere, and soil), leaf traits (specific leaf area, C and N content, and stable isotopes of C and N), and root metabolomic profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the types of data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "798eb7c3-e56c-4ba7-ac3d-31f68db6d181",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C18",
+      "claim": "Only a limited set of points across the field were sampled for soil properties.",
+      "claim_type": "EXPLICIT",
+      "source": "First, because only a limited set of points across the field were sampled for soil properties, there was a need to estimate the missing values (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "00dd4b60-2d91-4fd7-a663-b459f3bde7dd",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C19",
+      "claim": "Of the 12 properties tested, 6 properties exhibited evidence of spatial distributions (p value <0.05): salinity (mmho), nitrate (ppm), sulfate (ppm), calcium (ppm), magnesium (ppm), and phosphate (ppm).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 12 properties tested, 6 properties exhibited evidence of spatial distributions (p value <0.05): salinity (mmho), nitrate (ppm), sulfate (ppm), calcium (ppm), magnesium (ppm), and phosphate (ppm) (see Methods: Statistical testing for evidence of spatial structure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from statistical testing described in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "bedcac2f-a852-4479-aab3-dad87bd3f80f",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C20",
+      "claim": "The error of the predictions, when scaled to unit variance of the observations, exhibit distributions that resemble the expected standard Z-distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this analysis we observed that the error of the predictions, when scaled to unit variance of the observations, exhibit distributions that resemble the expected standard Z-distribution (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the leave-one-out cross-validation analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "dee5dc1c-c74b-4d2e-b204-8ec74d8d7276",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C21",
+      "claim": "The ratio of the partial sill to the nugget is a proxy for the magnitude of the variance that is attributable to the spatial structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of the partial sill to the nugget is a proxy for the magnitude of the variance that is attributable to the spatial structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a geostatistical concept used in the analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "c688548d-28b0-4585-a62c-405b9a0f8049",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C22",
+      "claim": "The phosphate spatial correlation was much stronger than the nitrate spatial correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing this ratio for nitrate and phosphate shows that the phosphate spatial correlation was much stronger than the nitrate spatial correlation (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparing the variogram parameters shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "6118e75a-d1ab-4d0f-9c99-d3f814330287",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C23",
+      "claim": "Calcium exhibited correlation structure of distances larger than nitrate, but much smaller than phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium also exhibited correlation structure of distances larger than nitrate, but much smaller than phosphate (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparing the variogram parameters shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "0ec5f4e5-512e-4c4e-83de-8f3e1232eaaf",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C24",
+      "claim": "The soil properties exhibited different topographies across the field.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that the soil properties exhibited different topographies across the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the spatial distribution maps shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "48575808-7873-4ea6-8f33-000e945832f7",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C25",
+      "claim": "Phosphate levels were high in a band across the center of the field while nitrate and calcium levels were more variable with several high and low spots.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, phosphate levels were high in a band across the center of the field while nitrate and calcium levels were more variable with several high and low spots (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the spatial distribution maps in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "aa4521a9-60c2-4cef-a347-796e09d0d866",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C26",
+      "claim": "Several correlation blocks were observed between different soil properties, implying similar spatial structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We also considered correlation between the different soil properties and observed several correlation blocks, implying similar spatial structures (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the correlation heatmap in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "777bd58c-0f0b-406e-a6d2-bd593cd5ab2f",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C27",
+      "claim": "All but one soil property, sulfate, showed an interaction effect with the different compartments on the overall microbiome composition.",
+      "claim_type": "EXPLICIT",
+      "source": "First, CAP was computed and a permutation analysis of variance (ANOVA), using 999 iterations, was performed on each soil property to identify if there is an interaction with the different compartments on the overall microbiome composition and resulted in all but one soil property, sulfate, showing an interaction effect (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the permutation ANOVA analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "588cc6c6-f024-4182-9d2f-2f9462d31975",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C28",
+      "claim": "The root microbiome was invariant to all soil property variations.",
+      "claim_type": "EXPLICIT",
+      "source": "From this analysis, we observed that the root microbiome was invariant to all soil property variations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the post hoc permutation ANOVA analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "1e12d15d-4c87-4fea-acf6-da8815c44244",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C29",
+      "claim": "The rhizosphere and soil microbiomes were influenced by the variation in several soil properties.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the rhizosphere and soil microbiomes were influenced by the variation in several soil properties (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmap in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "2c5e554c-5f48-4296-89d6-9311d8bdab10",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C30",
+      "claim": "Some soil properties (salinity, sulfate, and calcium) affected either the rhizosphere or soil microbiomes but not both.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there were some soil properties (salinity, sulfate, and calcium) whose variation affected either the rhizosphere or soil microbiomes but not both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the differential effects shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "254561d3-fae9-4276-a4bc-8c0f157d7121",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C31",
+      "claim": "Microbiome compartments are differentially sensitive to different types of soil property variation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that microbiome compartments are differentially sensitive to different types of soil property variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of soil properties on different microbiome compartments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "63158dc2-be10-48e6-94b8-d67329bb6152",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C32",
+      "claim": "No soil property variances were associated with changes in the metabolomic profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the large effects seen in the microbiomes, no soil property variances were associated with changes in the metabolomic profile (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the CAP and permutation ANOVA analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "bcb0e658-361d-4939-9252-a64cbd021ea2",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C33",
+      "claim": "The lack of association between soil properties and metabolomic profile may reflect the relative stability of the metabolites identified from GC\u2013MS which mostly represents primary metabolites, or the sensitivity of measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect the relative stability of the metabolites identified from gas chromatography\u2013mass spectrometry (GC\u2013MS) which mostly represents primary metabolites, or the sensitivity of measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why no associations were found.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "44798227-8646-4f91-92f8-5e37dcdbcd8e",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C34",
+      "claim": "Plant height and total fresh weight are influenced by soil phosphate and magnesium variation, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional F-test from the ANOVA revealed that plant height and total fresh weight are influenced by soil phosphate and magnesium variation, respectively (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the mixed-effect model analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "73e230e1-b5f4-4885-9c2c-9a497fff1043",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C35",
+      "claim": "Soil phosphate variation is significantly associated with \u1e9f15N.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar modeling of the leaf traits indicated the soil phosphate variation is significantly associated with \u1e9f15N (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the mixed-effect model analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "b2fad3c3-6269-428d-a813-cfa886a34d49",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C36",
+      "claim": "Soil phosphate levels are mildly inversely correlated to plant height.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer examination showed that soil phosphate levels are mildly inversely correlated to plant height (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the scatter plot in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "9ca8efa9-853f-460c-a336-75a5c9f5da11",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C37",
+      "claim": "Excess phosphate inhibits plant growth and development.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the hypothesis that excess phosphate inhibits plant growth and development (Shukla et al., 2017; Song et al., 2016) and suggests that the levels found in the center of the field were too high for optimum sorghum growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and the observed inverse correlation.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "704d9f00-c675-4b7e-a22e-9911d111b097",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C38",
+      "claim": "The treatment and genotype effects were accounted for in the first two PCs of soil property residuals.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the success of accounting for our experimental design, we investigated clustering within the first two PCs and observed that indeed the treatment and genotype effects were accounted for (Figure 3A) as there were no obvious treatment or genotype effects remaining in these PCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the PCA plot in Figure 3A where no clustering by treatment or genotype is observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "21d0164a-afaf-4348-a00d-5c59673e14f1",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C39",
+      "claim": "The first three PCs represented approximately 66% of the total variance in the soil property data.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected the first three PCs as regressors which represented approximately 66% of the total variance in the soil property data (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the scree plot in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "e965e643-7863-4a52-8335-ff42ae4ad51c",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C40",
+      "claim": "PC1 is primarily represented by calcium, magnesium, potassium, sodium, and sum of cations.",
+      "claim_type": "EXPLICIT",
+      "source": "PC1 is primarily represented by calcium, magnesium, potassium, sodium, and sum of cations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the contribution plot in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "f64c7d2d-c871-4d13-bcc1-2a0bffff451b",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C41",
+      "claim": "PC2 is primarily represented by sulfate, salinity, and pH.",
+      "claim_type": "EXPLICIT",
+      "source": "PC2 is primarily represented by sulfate, salinity, and pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the contribution plot in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "a0c189fb-f884-4665-8985-2954d0a8ed16",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C42",
+      "claim": "PC3 is primarily represented by phosphate and nitrate.",
+      "claim_type": "EXPLICIT",
+      "source": "PC3 is primarily represented by phosphate and nitrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the contribution plot in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "8f116057-9d08-4e68-ade3-4444f6ee72f5",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C43",
+      "claim": "The spatial distribution of the kriged first PC resembles the calcium distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the spatial distribution of the kriged first PC resembles the calcium distribution which emphasizes the contribution of that property (Figures 1 and 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the spatial maps in Figures 1 and 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "68f3fc61-cc11-4ad7-b41d-74b5fd3daf58",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C44",
+      "claim": "Larger distances between microbiome compartments were observed using the adjusted counts versus the observed counts.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed larger distances between microbiome compartments using the adjusted counts versus the observed counts (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the PCA plot in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "668cc272-9ff0-4e34-a2cf-202b67eb999a",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C45",
+      "claim": "The root microbiome was least affected by soil factors, followed by rhizosphere with a larger separation, and soil being the farthest and most affected.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates the sources of variation from the soil properties were better controlled thereby increasing the differentiation between compartments. Within each compartment, the root microbiome was least affected by soil factors which was demonstrated by the small distance between the observed and adjusted counts, followed by rhizosphere with a larger separation, and soil being the farthest and most affected (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the distances between original and adjusted counts in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "1086dfc6-3f6e-4674-8ac1-85fa8d21934c",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C46",
+      "claim": "The rhizosphere and soil microbiomes saw an increase in experimental design resolution of 3% and 2%, respectively, after principal component regression.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental design was not differentially resolved in the root microbiome after principal component regression; however, the rhizosphere and soil microbiomes saw an increase in 3% and 2%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the variance components analysis in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "a328eacd-b5b4-49b3-9c7f-1ff7c0a7b85e",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C47",
+      "claim": "In the rhizosphere, treatment differentiation was observed using both the observed and adjusted counts; however, the distance between the centers of each cluster was larger after adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rhizosphere, we observed treatment differentiation using both the observed and adjusted counts; however, the distance between the centers of each cluster was larger after adjustment further indicating within-group variation was reduced (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the PCA plots in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "617f8192-5ff7-417f-994a-88e8742e064b",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C48",
+      "claim": "The variation attributable to soil properties was as much as \u00b110% for fresh weight and \u00b16% for plant height for some individual observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the variation attributable to soil properties was as much as \u00b110% for fresh weight and \u00b16% for plant height for some individual observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the plots of original values versus change in Figure 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "08d6795e-06ee-4133-8764-6f956ab9fa50",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C49",
+      "claim": "Leaf delta \u03b415N showed an increase in R2 of approximately 5% for the experimental design effects after adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, leaf delta \u03b415N showed an association with phosphate (Figure 2C), and variance components for the experimental design effects found that the R2 between the unadjusted and adjusted increased by approximately 5% (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the variance components analysis in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "1bd3bce5-dff3-48a1-b6fe-f0a8b2adf6e8",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C50",
+      "claim": "Before adjustment on both plant height and microbe abundance of Microvirga in the soil microbiome, there was no evidence of an association in water-stressed samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in water-stressed samples before the adjustment on both plant height and microbe abundance of Microvirga in the soil microbiome, we do not see any evidence of an association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "56baff59-b54a-427d-91c2-0d9fc82ff6f3",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C51",
+      "claim": "After accounting for the variance from the soil properties, there is a strong positive correlation between plant phenotype and OTU abundance of Microvirga (FDR-adjusted p value <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "However, after accounting for the variance from the soil properties, there is a strong positive correlation between plant phenotype and OTU abundance (false discovery rate (FDR)-adjusted p value <0.05) (Figure 4F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4G with the change-point model fit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "6955d0bb-93ce-46d0-a00d-a90b91b96050",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C52",
+      "claim": "An order of magnitude more significant OTUs were observed in the change-point associations before principal component regression versus after.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe an order of magnitude more significant OTUs in the change-point associations before principal component regression versus after (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 3 comparing the number of significant OTUs before and after adjustment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "9a17ee3f-f884-4860-9822-b61d64336fe4",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C53",
+      "claim": "Adjusting the soil property effect or other nuisance factors in experimental design can lead to increased power of detecting biological signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjusting the soil property effect or other nuisance factors in experimental design can lead to increased power of detecting biological signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the results showing improved detection of associations after adjustment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "b5f51a36-6db2-4796-ba3d-8eb22982bd22",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C54",
+      "claim": "Nitrogen is known to affect plant growth (size, color, yield, etc.).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, nitrogen is known to affect plant growth (size, color, yield, etc.) (Veley et al., 2017; Chapin, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "2340d851-f325-4b61-9c11-537bff326c5d",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C55",
+      "claim": "If nitrogen is unevenly distributed across a field experiment aimed at characterizing biomass among diverse genotypes, the variability in nitrogen may confound the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "If nitrogen is unevenly distributed across a field experiment aimed at characterizing biomass among diverse genotypes, the variability in nitrogen may confound the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the known effects of nitrogen on plant growth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "e5d84029-6c7d-4399-99a6-a63206d53289",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C56",
+      "claim": "After accounting for environmental variation, a reduced total number of OTUs that correlate with plant phenotypes was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "After accounting for environmental variation, we observe a reduced total number of OTUs that correlate with plant phenotypes (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "def5d83c-cd5d-426c-851c-05a2d8963564",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C57",
+      "claim": "New 'hits' were observed that were not observed before accounting for environmental factors.",
+      "claim_type": "EXPLICIT",
+      "source": "While the total number is smaller, we also observe new 'hits' that were not observed before accounting for environmental factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of significant OTUs before and after adjustment in Table 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "04388ae4-782f-4d1b-ba67-e75f1216b1a1",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C58",
+      "claim": "Accounting for the environmental variation reduced degrees of freedom that may reduce the power of detecting some associations.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that accounting for the environmental variation reduced our degrees of freedom that may reduce the power of detecting some associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the statistical consequences of the adjustment method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "7a7177b9-e378-4fbe-8437-402494c1b5f1",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C59",
+      "claim": "After adjusting for environmental effect, the analysis focused on conditional associations instead of marginal associations.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, after adjusting for environmental effect, we have focused our analysis on conditional associations instead of marginal associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the statistical approach used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "71c1558c-bea8-4650-af16-c9f66d37c505",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C60",
+      "claim": "Marginal associations measure whether two variables change in the same or opposite directions simultaneously, regardless of other factors that may affect those two variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Marginal associations measure whether two variables change in the same or opposite directions simultaneously, regardless of other factors that may affect those two variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a statistical concept.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "e9387bb4-1877-428c-94c2-99381f59eee5",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C61",
+      "claim": "Conditional associations adjust for the impacts of other variables, and measure the relationship between two variables that cannot be explained by other variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional associations, on the other hand, adjust for the impacts of other variables, and measure the relationship between two variables that cannot be explained by other variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a statistical concept.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "cc21cecb-ff07-4135-9b34-cf9c265280a1",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C62",
+      "claim": "Many of the 'hits' before environmental factor adjustment are results of marginal associations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that many of the 'hits' before environmental factor adjustment are results of such marginal associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the nature of the associations observed before adjustment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "c79262d9-d0f3-455e-8239-19859fcfb5a8",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C63",
+      "claim": "By accounting for environmental factors, the analysis focuses on conditional associations that measure the rarer direct or possibly causal interactions between OTUs and plants.",
+      "claim_type": "EXPLICIT",
+      "source": "By accounting for environmental factors, we focus on conditional associations that measure the rarer direct or possibly causal interactions between OTUs and plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the nature of the associations observed after adjustment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "0fd6e6ed-6fd1-493a-84f1-8546f3305c10",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C64",
+      "claim": "The soil property data were collected at just one time point, approximately 1 month prior to harvest.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the soil property data were collected at just one time point, approximately 1 month prior to harvest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "aa5ef06b-71af-4d5c-9411-fd9cdaa61e9c",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C65",
+      "claim": "Some soil properties are expected to remain constant over the course of the experiment, while others likely fluctuate (e.g., water content).",
+      "claim_type": "EXPLICIT",
+      "source": "While we expect some soil properties to remain constant over the course of the experiment, others likely fluctuate (e.g., water content).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of soil properties.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "eeb9622a-09af-410b-bb00-7912fd4a09d9",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C66",
+      "claim": "Three degrees of freedom were used by including the first three PCs of the soil property data in a regression.",
+      "claim_type": "EXPLICIT",
+      "source": "In this analysis, we used three degrees of freedom by including the first three PCs of the soil property data in a regression to account for their contributions on the phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "6bf0bc69-3fac-4175-94c6-ff403fe12efa",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C67",
+      "claim": "Only PCs that have at least 10% variance explained were included, and only up to replication number minus three were included so the experimental design effects could still be estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to only include PCs that have at least 10% variance explained and only include up to replication number minus three so the experimental design effects could still be estimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the criteria for selecting PCs in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "361b1d47-c5ab-42b6-a65e-dc55ea1fe72e",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C68",
+      "claim": "A significant advantage of the method described is that the sources of variation (soil properties) are known.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant advantage of the method described here, is that the sources of variation (soil properties) are known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "6bc82dd7-b55e-4efb-9e57-da464531ef41",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C69",
+      "claim": "The stable isotopes and primary metabolite profiles are invariant to the measured soil properties.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in these datasets, the stable isotopes and primary metabolite profiles are invariant to the measured soil properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "87911c42-1bf7-411d-a8e4-3b60f5573b59",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C70",
+      "claim": "For the isotopes, the invariance may be indicative of stability relative to the fluctuations in the properties across the field.",
+      "claim_type": "EXPLICIT",
+      "source": "For the isotopes, this may be indicative of stability relative to the fluctuations in the properties across the field, but it is possible that if the soil property variations were larger, then a relationship might be established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why no associations were found.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "02afb3fd-3a8b-4caa-938c-41d4475763d7",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C71",
+      "claim": "The metabolite profile used in these analyses is only those captured from GC/MS and mostly consist of primary metabolites such as sugars, organic and amino acids, small phenolics, and fatty acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The metabolite profile used in these analyses is only those captured from GC/MS and mostly consist of primary metabolites such as sugars, organic and amino acids, small phenolics, and fatty acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the types of metabolites analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "a6c3a9a0-aa9b-4476-beb6-170504603b56",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C72",
+      "claim": "Secondary metabolites that were not examined in these analyses may associate with the soil property variations.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be true that secondary metabolites that were not examined in these analyses may associate with the soil property variations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about metabolites not analyzed in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "f5e99a91-2dfc-4788-8a48-d8d026209948",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C73",
+      "claim": "A relatively small amount of variation in plant height and weight were attributed to the soil property composition.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that a relatively small amount of variation in plant height and weight were attributed to the soil property composition, other types of data, particularly microbiome composition, were much more susceptible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the results comparing the effects on different types of data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "0ec51f51-dc4e-46d7-a7d0-260b78440082",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C74",
+      "claim": "Some microbes were overtly sparse across the samples and principal component regression could not successfully estimate model parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Some microbes were overtly sparse across the samples and principal component regression could not successfully estimate model parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "5f3a6f46-c62d-4957-8cc9-629329b19dae",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C75",
+      "claim": "The microbiome table generation pipeline used for this field allows for the identification of very sparse microbes by way of using 99.5% identity clustering which results in 23,617 OTUs detected.",
+      "claim_type": "EXPLICIT",
+      "source": "The microbiome table generation pipeline used for this field allows for the identification of very sparse microbes by way of using 99.5% identity clustering which results in 23,617 OTUs detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bioinformatics pipeline used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "84c94822-7f0a-48b0-87ff-37684c407736",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C76",
+      "claim": "After applying principal component regression, approximately 25% of the microbes were successfully modeled and retained.",
+      "claim_type": "EXPLICIT",
+      "source": "After applying principal component regression, approximately 25% of the microbes were successfully modeled and retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the principal component regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "19d2f6fd-2ad6-4dfe-9459-f10081f03427",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C77",
+      "claim": "The methods proposed should be applicable to ASV tables as well, but the percent of ASVs not successfully modeled would likely be larger than if using classical OTU techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "The methods proposed here should also be applicable to those types of tables as well with one caveat: ASV tables are sparser than OTU tables. While the methods here are zero-inflated, it is likely the percent of ASVs not successfully modeled would be larger than if using classical OTU techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the applicability of the methods to ASV data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "5028d65f-9c4e-417b-adfd-4d30dc5cab6e",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C78",
+      "claim": "The microbiome communities were heavily influenced by the soil properties while the plant phenotypes were more resilient but nonetheless affected.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the microbiome communities were heavily influenced by the soil properties while the plant phenotypes were more resilient but nonetheless affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "17f8752e-b51d-4860-b038-07dcf1bd0d82",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C79",
+      "claim": "Identifying sources of variation and removing their influence enhances the ability to resolve other effects of interest and enables more honest, reliable, and believable quantification of subtle phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Identifying sources of variation and removing their influence enhances the ability to resolve other effects of interest and enables more honest, reliable, and believable quantification of subtle phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the results showing improved signal-to-noise ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "dbf4d869-b908-40d2-a035-e9f5b48552dd",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C80",
+      "claim": "A total of 171,273 OTUs were detected from the VSEARCH workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 171,273 OTUs were detected and of those 114,179 had quantification across all 1280 samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of the bioinformatics pipeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "a97faa89-ceca-44eb-a84e-de58c3dc2a62",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C81",
+      "claim": "After quality control filtering, 92,385 OTUs and 1280 samples remained.",
+      "claim_type": "EXPLICIT",
+      "source": "After applying this filter 92,385 OTUs and 1280 samples remained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of the quality control filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "40d17604-550c-4711-aa4e-769008cb678a",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C82",
+      "claim": "Of the OTUs removed, only 422 had counts larger than 200,000 indicating the majority of the OTUs removed were rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the OTUs removed only 422 had counts larger than 200,000 indicating the majority of the OTUs removed were rare and would not have enough information to perform proper statistical analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristics of the OTUs removed during quality control.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "c150ad24-c3a3-4c1e-bbb3-6bf279f6bdeb",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C83",
+      "claim": "The field trial included two treatment factors (watering treatments and sorghum genotypes) which may have directly affected the measured soil properties.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this field trial included two treatment factors (watering treatments and sorghum genotypes) which may have directly affected the measured soil properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a consideration in the statistical analysis to satisfy the stationarity assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "c9da00e3-6783-47aa-9493-30089a104987",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C84",
+      "claim": "To satisfy the stationary assumption, it was necessary to account for any influence on the soil properties from the two treatment factors and/or their interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, to satisfy the stationary assumption, we needed to account for any influence on the soil properties from the two treatment factors and/or their interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for the statistical approach used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "96a2a15a-f38e-4987-9ccc-4938b5447dd9",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C85",
+      "claim": "Several spatial models were fitted to the data including No Structure, Exponential, Spherical, Gaussian, Matern, and Stein.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial models that were considered include (1) No Structure, (2) Exponential, (3) Spherical, (4) Gaussian, (5) Matern, and (6) Stein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial models tested in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "7d6aac22-8698-4970-bcf9-f0a11c0a9417",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C86",
+      "claim": "The best fitting model was selected as the one that produced the minimal sum-of-squares errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The best fitting model was selected as the one that produced the minimal sum-of-squares errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the criterion for model selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "ccf14517-deae-4778-b1d7-9544881e5d09",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C87",
+      "claim": "The nugget is the estimated variance between two adjacent samples and represents the noise of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "The nugget is the estimated variance between two adjacent samples and represents the noise of the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a geostatistical parameter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "9937d9fe-a778-411d-aab6-6ea8daec46b1",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C88",
+      "claim": "The range is the distance at which the change in variance with respect to distance first becomes zero and represents how far away sampled points demonstrate the correlation structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The range is the distance at which the change in variance with respect to distance first becomes zero and represents how far away sampled points demonstrate the correlation structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a geostatistical parameter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "e1bf2d64-431d-4f4b-9f82-eac88ed419ca",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C89",
+      "claim": "The partial sill is the variance at the range minus the nugget variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the partial sill is the variance at the range minus the nugget variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a geostatistical parameter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "d1fbbeaa-22d9-402c-ab3c-ef69f2d84c58",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C90",
+      "claim": "Ordinary kriging is unbiased when the sum of spatial weights equals one.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, we applied ordinary kriging and let the sum of spatial weights to be one so that ordinary kriging is unbiased (Olea, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of ordinary kriging supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "fa7cd165-16b1-4088-bb16-e1887372e336",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "claim_id": "C91",
+      "claim": "A soil property is considered to exhibit evidence of spatial structure if any of five spatial covariance structure models are significantly more likely than the intercept-only model using likelihood ratio test (p value <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "A soil property is considered to exhibit evidence of spatial structure if any of five spatial covariance structure models are significantly more likely than the intercept-only model using likelihood ratio test (p value <0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical criterion for determining spatial structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Six of twelve soil properties (salinity, nitrate, sulfate, calcium, magnesium, phosphate) exhibited significant spatial structure (p<0.05) across the field. Kriging was used to interpolate missing values, with leave-one-out cross-validation showing prediction errors resembling standard Z-distributions. Different soil properties exhibited distinct spatial patterns, with phosphate showing stronger spatial correlation than nitrate, and calcium showing intermediate correlation structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C26 and C85-C91 collectively demonstrate spatial heterogeneity in soil properties using appropriate geostatistical methods. The statistical testing (C19, C91), kriging validation (C20), and visual evidence in Figure 1 provide converging support. The variogram parameters (nugget, partial sill, range) are properly defined and used to characterize spatial structure strength and scale.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "25293e6e-6547-4999-b180-aedd513a4515",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Soil property variation differentially affected microbiome compartments. The root endosphere microbiome was invariant to all soil property variations, while rhizosphere and bulk soil microbiomes were significantly influenced by several soil properties. Some properties (salinity, sulfate, calcium) affected only one compartment type, suggesting differential sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by permutation ANOVA results (Table 2, Figure 2A) with appropriate statistical testing (999 iterations). The compartment-specific effects are clearly demonstrated, though the biological mechanisms underlying differential sensitivity are not explored. The statistical approach properly controls for experimental design factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "5760295d-cf5e-4cf3-889a-5eb7c8b3e30c",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "No soil property variations were significantly associated with root metabolomic profiles measured by GC-MS. The authors speculate this may reflect the stability of primary metabolites or measurement sensitivity limitations, and suggest secondary metabolites not measured might show associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C32 and C69 report negative results supported by Figure 2\u2014figure supplement 1, but claims C33, C70, C72 are speculative explanations without supporting data. The limitation to GC-MS-detectable primary metabolites (C71) is acknowledged but not tested. Alternative explanations (e.g., insufficient statistical power, timing of sampling) are not adequately explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "3869dc9e-3d37-4974-b483-273d34f2662c",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Plant height was significantly influenced by soil phosphate variation (p<0.05), showing a mild inverse correlation. Soil magnesium variation significantly affected total fresh weight. Leaf \u03b415N was significantly associated with phosphate variation. The inverse phosphate-height relationship supports the hypothesis that excess phosphate inhibits sorghum growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by mixed-effect model analyses with appropriate type III sum of squares (Figure 2B-D). The inverse phosphate-height correlation (C36) is visually evident in Figure 2D. However, C37's causal interpretation relies heavily on cited literature rather than direct experimental manipulation in this study. The correlation is described as 'mild' without quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "4965b98d-e65f-46cc-abdc-aa3f017895c1",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Principal component analysis of soil property residuals (after removing treatment and genotype effects) captured 66% of variance in the first three PCs. PC1 was dominated by cations (calcium, magnesium, potassium, sodium), PC2 by sulfate/salinity/pH, and PC3 by phosphate/nitrate. The spatial distribution of PC1 resembled calcium distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are well-supported by Figure 3A-D showing PCA results, scree plot, and contribution plots. The approach of using residuals after removing experimental design effects (C38, C66) is methodologically sound. The 10% variance threshold and degrees of freedom considerations (C67) are reasonable but somewhat arbitrary choices that could affect results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "550d1ff6-04a8-4650-a311-d53a8f6adafa",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "After principal component regression adjustment, microbiome compartments showed increased differentiation in PCA space. Root microbiome was least affected by soil factors, rhizosphere showed intermediate effects, and bulk soil was most affected. Rhizosphere and soil microbiomes showed 3% and 2% increases in experimental design resolution, respectively, while root microbiome showed no change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by Figure 4A-B and Figure 4\u2014figure supplement 1. The increased distances between compartments and tighter within-compartment clustering after adjustment indicate successful noise reduction. The modest improvements (2-3%) are honestly reported but raise questions about practical significance. The differential effects across compartments are consistent with earlier findings (C28-C31).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "127a9a71-93ac-4436-886c-b88988948652",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Principal component regression adjustment affected individual plant observations by up to \u00b110% for fresh weight and \u00b16% for plant height. Leaf \u03b415N showed approximately 5% increase in R\u00b2 for experimental design effects after adjustment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by Figure 4C-E. The adjustments appear equitable across the range of values (C48). However, the manuscript notes that variance components for height and weight did not show increased experimental design resolution (Figure 4\u2014figure supplement 2), which seems inconsistent with the claimed improvements and warrants further explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "9e084de8-e10c-44e7-b8bc-95e9ec822ba3",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "After accounting for soil property variance, a previously undetected positive correlation between Microvirga abundance and plant height in water-stressed samples became statistically significant (FDR-adjusted p<0.05). The total number of significant OTU-phenotype associations decreased by an order of magnitude after adjustment, but new associations were revealed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by Figure 4F-G and Table 3. The change-point model analysis is appropriate for detecting threshold effects. However, the dramatic reduction in significant associations (C52) raises concerns about whether the adjustment is removing true biological signals along with noise. The interpretation that new 'hits' represent more direct interactions (C53) is reasonable but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "4ef190fe-4279-4681-92b3-923435505a6c",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "After environmental adjustment, fewer total OTU-phenotype correlations were detected, but new associations emerged. The authors argue this shift represents a transition from marginal to conditional associations, focusing on direct OTU-plant interactions rather than environment-mediated correlations. The reduction in degrees of freedom may have decreased power for some associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C57 are supported by Table 3 data. However, C58-C63 present interpretations that are logical but not empirically validated. The distinction between marginal and conditional associations (C60-C61) is conceptually sound, but the claim that pre-adjustment 'hits' were primarily marginal associations (C62) and post-adjustment associations are 'direct or possibly causal' (C63) requires experimental validation not provided in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "14be491e-2994-4f4d-bfa9-efcdd7ae5ae1",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The principal component regression method successfully identified and adjusted for spatially distributed soil property effects, improving signal-to-noise ratios and enabling detection of subtle phenotypes. Microbiome communities were heavily influenced by soil properties while plant phenotypes were more resilient but still affected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C53, C78-C79 represent the main conclusions, supported by multiple lines of evidence throughout the manuscript. The method demonstrably reduced noise and revealed previously hidden associations (e.g., C50-C51). However, the improvements are modest in magnitude (2-5% increases in R\u00b2), and the dramatic reduction in significant associations raises questions about the balance between noise reduction and signal preservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "8ea7078c-f359-475b-9a68-905be345bf22",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study has several acknowledged limitations: soil properties were measured at only one timepoint, approximately 25% of OTUs were too sparse to model successfully, and the method may not transfer well to sparser ASV tables. Plant phenotypes showed relatively small effects from soil properties compared to microbiome composition. A key advantage is that sources of variation (soil properties) were directly measured.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C77 honestly acknowledge study limitations and methodological constraints. The single timepoint sampling (C64-C65) is a significant limitation for dynamic soil properties. The sparsity issues (C74-C77) are well-documented with specific numbers. The speculation about ASV applicability (C77) is reasonable but untested. These limitations do not invalidate the main findings but constrain their generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "9c05f26e-6e25-4198-866b-b2f1f954b443",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The field experiment used a split-plot design with 24 sorghum genotypes, 2 watering treatments, and 8 replicate blocks. Multiple data types were collected including plant traits, soil properties, microbiomes, leaf traits, and metabolomics. The microbiome analysis detected 171,273 OTUs, with 92,385 retained after quality control. Soil property residuals were calculated to satisfy stationarity assumptions for spatial modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C5, C80-C84 describe the experimental design and data processing pipeline. The design is appropriate for the research questions. Quality control procedures (C81-C82) are reasonable, removing rare OTUs while retaining those with sufficient data. The approach to satisfy stationarity assumptions (C83-C84) is methodologically sound for spatial analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "387531e5-e626-493d-ae0b-9411dee36bee",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Environmental variability, particularly from spatially heterogeneous soil properties, poses challenges for field studies by creating unintended microtreatments. Traditional blocking designs help control uniform variation but may not address heterogeneous within-block noise. The ability to detect experimental signals depends on replication and environmental noise levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C7-C10 establish the study's motivation and are supported by general knowledge (C1-C2, C7-C9) and the experimental findings presented later (C3-C4). These are well-established principles in field experimentation. The spatial heterogeneity demonstrated in this study (C4, C19-C26) validates these general concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "cb14b3dc-6efc-4086-a09c-54c047f2e0d5",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has demonstrated the utility of spatial modeling approaches in various biological systems and the use of principal component analysis for dimension reduction in GWAS and plant ecology studies. PCA effectively captures major axes of variation in multivariate datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 accurately cite and describe relevant prior work. The citations appear appropriate and the descriptions of PCA properties (C14) and applications (C13, C15) are accurate. These claims establish the methodological foundation for the current study's approach of combining spatial modeling with PCA-based dimension reduction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    },
+    {
+      "id": "313f75b7-4a70-4a4a-937a-57317d379288",
+      "content_id": "b033e3bd-3ab9-463f-a30b-046bceb95538",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Nitrogen affects plant growth characteristics, and uneven nitrogen distribution across a field can confound experiments aimed at characterizing biomass differences among genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by appropriate citations (C54) and represent logical inference (C55). This example illustrates the general problem addressed by the study. However, nitrogen was not one of the six soil properties showing significant spatial structure in this particular field (C19), which somewhat limits the relevance of this specific example.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:15:55.205926Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "798eb7c3-e56c-4ba7-ac3d-31f68db6d181",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "00dd4b60-2d91-4fd7-a663-b459f3bde7dd",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "bedcac2f-a852-4479-aab3-dad87bd3f80f",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "dee5dc1c-c74b-4d2e-b204-8ec74d8d7276",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "c688548d-28b0-4585-a62c-405b9a0f8049",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "6118e75a-d1ab-4d0f-9c99-d3f814330287",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "0ec5f4e5-512e-4c4e-83de-8f3e1232eaaf",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "48575808-7873-4ea6-8f33-000e945832f7",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "aa4521a9-60c2-4cef-a347-796e09d0d866",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "96a2a15a-f38e-4987-9ccc-4938b5447dd9",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "7d6aac22-8698-4970-bcf9-f0a11c0a9417",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "ccf14517-deae-4778-b1d7-9544881e5d09",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "9937d9fe-a778-411d-aab6-6ea8daec46b1",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "e1bf2d64-431d-4f4b-9f82-eac88ed419ca",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "d1fbbeaa-22d9-402c-ab3c-ef69f2d84c58",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "fa7cd165-16b1-4088-bb16-e1887372e336",
+      "result_id": "0f0dea83-5b0b-486d-aa4f-a47fc24fc7a2"
+    },
+    {
+      "claim_id": "777bd58c-0f0b-406e-a6d2-bd593cd5ab2f",
+      "result_id": "25293e6e-6547-4999-b180-aedd513a4515"
+    },
+    {
+      "claim_id": "588cc6c6-f024-4182-9d2f-2f9462d31975",
+      "result_id": "25293e6e-6547-4999-b180-aedd513a4515"
+    },
+    {
+      "claim_id": "1e12d15d-4c87-4fea-acf6-da8815c44244",
+      "result_id": "25293e6e-6547-4999-b180-aedd513a4515"
+    },
+    {
+      "claim_id": "2c5e554c-5f48-4296-89d6-9311d8bdab10",
+      "result_id": "25293e6e-6547-4999-b180-aedd513a4515"
+    },
+    {
+      "claim_id": "254561d3-fae9-4276-a4bc-8c0f157d7121",
+      "result_id": "25293e6e-6547-4999-b180-aedd513a4515"
+    },
+    {
+      "claim_id": "63158dc2-be10-48e6-94b8-d67329bb6152",
+      "result_id": "5760295d-cf5e-4cf3-889a-5eb7c8b3e30c"
+    },
+    {
+      "claim_id": "bcb0e658-361d-4939-9252-a64cbd021ea2",
+      "result_id": "5760295d-cf5e-4cf3-889a-5eb7c8b3e30c"
+    },
+    {
+      "claim_id": "6bc82dd7-b55e-4efb-9e57-da464531ef41",
+      "result_id": "5760295d-cf5e-4cf3-889a-5eb7c8b3e30c"
+    },
+    {
+      "claim_id": "87911c42-1bf7-411d-a8e4-3b60f5573b59",
+      "result_id": "5760295d-cf5e-4cf3-889a-5eb7c8b3e30c"
+    },
+    {
+      "claim_id": "02afb3fd-3a8b-4caa-938c-41d4475763d7",
+      "result_id": "5760295d-cf5e-4cf3-889a-5eb7c8b3e30c"
+    },
+    {
+      "claim_id": "a6c3a9a0-aa9b-4476-beb6-170504603b56",
+      "result_id": "5760295d-cf5e-4cf3-889a-5eb7c8b3e30c"
+    },
+    {
+      "claim_id": "44798227-8646-4f91-92f8-5e37dcdbcd8e",
+      "result_id": "3869dc9e-3d37-4974-b483-273d34f2662c"
+    },
+    {
+      "claim_id": "73e230e1-b5f4-4885-9c2c-9a497fff1043",
+      "result_id": "3869dc9e-3d37-4974-b483-273d34f2662c"
+    },
+    {
+      "claim_id": "b2fad3c3-6269-428d-a813-cfa886a34d49",
+      "result_id": "3869dc9e-3d37-4974-b483-273d34f2662c"
+    },
+    {
+      "claim_id": "9ca8efa9-853f-460c-a336-75a5c9f5da11",
+      "result_id": "3869dc9e-3d37-4974-b483-273d34f2662c"
+    },
+    {
+      "claim_id": "704d9f00-c675-4b7e-a22e-9911d111b097",
+      "result_id": "4965b98d-e65f-46cc-abdc-aa3f017895c1"
+    },
+    {
+      "claim_id": "21d0164a-afaf-4348-a00d-5c59673e14f1",
+      "result_id": "4965b98d-e65f-46cc-abdc-aa3f017895c1"
+    },
+    {
+      "claim_id": "e965e643-7863-4a52-8335-ff42ae4ad51c",
+      "result_id": "4965b98d-e65f-46cc-abdc-aa3f017895c1"
+    },
+    {
+      "claim_id": "f64c7d2d-c871-4d13-bcc1-2a0bffff451b",
+      "result_id": "4965b98d-e65f-46cc-abdc-aa3f017895c1"
+    },
+    {
+      "claim_id": "a0c189fb-f884-4665-8985-2954d0a8ed16",
+      "result_id": "4965b98d-e65f-46cc-abdc-aa3f017895c1"
+    },
+    {
+      "claim_id": "8f116057-9d08-4e68-ade3-4444f6ee72f5",
+      "result_id": "4965b98d-e65f-46cc-abdc-aa3f017895c1"
+    },
+    {
+      "claim_id": "eeb9622a-09af-410b-bb00-7912fd4a09d9",
+      "result_id": "4965b98d-e65f-46cc-abdc-aa3f017895c1"
+    },
+    {
+      "claim_id": "6bf0bc69-3fac-4175-94c6-ff403fe12efa",
+      "result_id": "4965b98d-e65f-46cc-abdc-aa3f017895c1"
+    },
+    {
+      "claim_id": "68f3fc61-cc11-4ad7-b41d-74b5fd3daf58",
+      "result_id": "550d1ff6-04a8-4650-a311-d53a8f6adafa"
+    },
+    {
+      "claim_id": "668cc272-9ff0-4e34-a2cf-202b67eb999a",
+      "result_id": "550d1ff6-04a8-4650-a311-d53a8f6adafa"
+    },
+    {
+      "claim_id": "1086dfc6-3f6e-4674-8ac1-85fa8d21934c",
+      "result_id": "550d1ff6-04a8-4650-a311-d53a8f6adafa"
+    },
+    {
+      "claim_id": "a328eacd-b5b4-49b3-9c7f-1ff7c0a7b85e",
+      "result_id": "550d1ff6-04a8-4650-a311-d53a8f6adafa"
+    },
+    {
+      "claim_id": "617f8192-5ff7-417f-994a-88e8742e064b",
+      "result_id": "127a9a71-93ac-4436-886c-b88988948652"
+    },
+    {
+      "claim_id": "08d6795e-06ee-4133-8764-6f956ab9fa50",
+      "result_id": "127a9a71-93ac-4436-886c-b88988948652"
+    },
+    {
+      "claim_id": "1bd3bce5-dff3-48a1-b6fe-f0a8b2adf6e8",
+      "result_id": "9e084de8-e10c-44e7-b8bc-95e9ec822ba3"
+    },
+    {
+      "claim_id": "56baff59-b54a-427d-91c2-0d9fc82ff6f3",
+      "result_id": "9e084de8-e10c-44e7-b8bc-95e9ec822ba3"
+    },
+    {
+      "claim_id": "6955d0bb-93ce-46d0-a00d-a90b91b96050",
+      "result_id": "9e084de8-e10c-44e7-b8bc-95e9ec822ba3"
+    },
+    {
+      "claim_id": "9a17ee3f-f884-4860-9822-b61d64336fe4",
+      "result_id": "9e084de8-e10c-44e7-b8bc-95e9ec822ba3"
+    },
+    {
+      "claim_id": "e5d84029-6c7d-4399-99a6-a63206d53289",
+      "result_id": "4ef190fe-4279-4681-92b3-923435505a6c"
+    },
+    {
+      "claim_id": "def5d83c-cd5d-426c-851c-05a2d8963564",
+      "result_id": "4ef190fe-4279-4681-92b3-923435505a6c"
+    },
+    {
+      "claim_id": "04388ae4-782f-4d1b-ba67-e75f1216b1a1",
+      "result_id": "4ef190fe-4279-4681-92b3-923435505a6c"
+    },
+    {
+      "claim_id": "7a7177b9-e378-4fbe-8437-402494c1b5f1",
+      "result_id": "4ef190fe-4279-4681-92b3-923435505a6c"
+    },
+    {
+      "claim_id": "71c1558c-bea8-4650-af16-c9f66d37c505",
+      "result_id": "4ef190fe-4279-4681-92b3-923435505a6c"
+    },
+    {
+      "claim_id": "e9387bb4-1877-428c-94c2-99381f59eee5",
+      "result_id": "4ef190fe-4279-4681-92b3-923435505a6c"
+    },
+    {
+      "claim_id": "cc21cecb-ff07-4135-9b34-cf9c265280a1",
+      "result_id": "4ef190fe-4279-4681-92b3-923435505a6c"
+    },
+    {
+      "claim_id": "c79262d9-d0f3-455e-8239-19859fcfb5a8",
+      "result_id": "4ef190fe-4279-4681-92b3-923435505a6c"
+    },
+    {
+      "claim_id": "28201e6d-a516-4f8a-9a93-c3ceff471960",
+      "result_id": "14be491e-2994-4f4d-bfa9-efcdd7ae5ae1"
+    },
+    {
+      "claim_id": "9a17ee3f-f884-4860-9822-b61d64336fe4",
+      "result_id": "14be491e-2994-4f4d-bfa9-efcdd7ae5ae1"
+    },
+    {
+      "claim_id": "5028d65f-9c4e-417b-adfd-4d30dc5cab6e",
+      "result_id": "14be491e-2994-4f4d-bfa9-efcdd7ae5ae1"
+    },
+    {
+      "claim_id": "17f8752e-b51d-4860-b038-07dcf1bd0d82",
+      "result_id": "14be491e-2994-4f4d-bfa9-efcdd7ae5ae1"
+    },
+    {
+      "claim_id": "0fd6e6ed-6fd1-493a-84f1-8546f3305c10",
+      "result_id": "8ea7078c-f359-475b-9a68-905be345bf22"
+    },
+    {
+      "claim_id": "aa5ef06b-71af-4d5c-9411-fd9cdaa61e9c",
+      "result_id": "8ea7078c-f359-475b-9a68-905be345bf22"
+    },
+    {
+      "claim_id": "361b1d47-c5ab-42b6-a65e-dc55ea1fe72e",
+      "result_id": "8ea7078c-f359-475b-9a68-905be345bf22"
+    },
+    {
+      "claim_id": "f5e99a91-2dfc-4788-8a48-d8d026209948",
+      "result_id": "8ea7078c-f359-475b-9a68-905be345bf22"
+    },
+    {
+      "claim_id": "0ec51f51-dc4e-46d7-a7d0-260b78440082",
+      "result_id": "8ea7078c-f359-475b-9a68-905be345bf22"
+    },
+    {
+      "claim_id": "5f3a6f46-c62d-4957-8cc9-629329b19dae",
+      "result_id": "8ea7078c-f359-475b-9a68-905be345bf22"
+    },
+    {
+      "claim_id": "84c94822-7f0a-48b0-87ff-37684c407736",
+      "result_id": "8ea7078c-f359-475b-9a68-905be345bf22"
+    },
+    {
+      "claim_id": "19d2f6fd-2ad6-4dfe-9459-f10081f03427",
+      "result_id": "8ea7078c-f359-475b-9a68-905be345bf22"
+    },
+    {
+      "claim_id": "e4bbe127-94c6-4371-8b6d-2fc5f53617e5",
+      "result_id": "9c05f26e-6e25-4198-866b-b2f1f954b443"
+    },
+    {
+      "claim_id": "eb0e02de-f254-4969-b0b3-1f154b2b8478",
+      "result_id": "9c05f26e-6e25-4198-866b-b2f1f954b443"
+    },
+    {
+      "claim_id": "c425fb80-57ab-4ff9-9f7a-762fd07792e1",
+      "result_id": "9c05f26e-6e25-4198-866b-b2f1f954b443"
+    },
+    {
+      "claim_id": "dbf4d869-b908-40d2-a035-e9f5b48552dd",
+      "result_id": "9c05f26e-6e25-4198-866b-b2f1f954b443"
+    },
+    {
+      "claim_id": "a97faa89-ceca-44eb-a84e-de58c3dc2a62",
+      "result_id": "9c05f26e-6e25-4198-866b-b2f1f954b443"
+    },
+    {
+      "claim_id": "40d17604-550c-4711-aa4e-769008cb678a",
+      "result_id": "9c05f26e-6e25-4198-866b-b2f1f954b443"
+    },
+    {
+      "claim_id": "c150ad24-c3a3-4c1e-bbb3-6bf279f6bdeb",
+      "result_id": "9c05f26e-6e25-4198-866b-b2f1f954b443"
+    },
+    {
+      "claim_id": "c9da00e3-6783-47aa-9493-30089a104987",
+      "result_id": "9c05f26e-6e25-4198-866b-b2f1f954b443"
+    },
+    {
+      "claim_id": "5012ccac-2d34-43fb-9664-3e6fa09c164b",
+      "result_id": "387531e5-e626-493d-ae0b-9411dee36bee"
+    },
+    {
+      "claim_id": "3b11ddde-da61-4284-bdf3-7670dd64eb23",
+      "result_id": "387531e5-e626-493d-ae0b-9411dee36bee"
+    },
+    {
+      "claim_id": "7f449ad3-7580-4e76-ad4e-90322d70855b",
+      "result_id": "387531e5-e626-493d-ae0b-9411dee36bee"
+    },
+    {
+      "claim_id": "f3568e1c-e902-44f8-8041-58f614d032c4",
+      "result_id": "387531e5-e626-493d-ae0b-9411dee36bee"
+    },
+    {
+      "claim_id": "f766a1e3-4e0f-43b5-ab1f-ff12427b2455",
+      "result_id": "387531e5-e626-493d-ae0b-9411dee36bee"
+    },
+    {
+      "claim_id": "0ec45bf5-8469-407c-84bd-a05665e66ef2",
+      "result_id": "387531e5-e626-493d-ae0b-9411dee36bee"
+    },
+    {
+      "claim_id": "a92d37d0-1b40-4373-9334-61c57035c1b5",
+      "result_id": "387531e5-e626-493d-ae0b-9411dee36bee"
+    },
+    {
+      "claim_id": "b94dffb2-d25c-4fee-9392-b99948f3a64a",
+      "result_id": "387531e5-e626-493d-ae0b-9411dee36bee"
+    },
+    {
+      "claim_id": "c95768c7-9cbb-488a-8a30-11b6bcefddbf",
+      "result_id": "cb14b3dc-6efc-4086-a09c-54c047f2e0d5"
+    },
+    {
+      "claim_id": "3b422c2b-838a-4f85-854d-fe0bd2b9ae6b",
+      "result_id": "cb14b3dc-6efc-4086-a09c-54c047f2e0d5"
+    },
+    {
+      "claim_id": "f3dc27dd-6097-42ff-9134-776980237a08",
+      "result_id": "cb14b3dc-6efc-4086-a09c-54c047f2e0d5"
+    },
+    {
+      "claim_id": "40800203-0f3b-4946-9955-6e9d6d8615cc",
+      "result_id": "cb14b3dc-6efc-4086-a09c-54c047f2e0d5"
+    },
+    {
+      "claim_id": "a3cb0752-7e44-420d-8148-656013f7af3e",
+      "result_id": "cb14b3dc-6efc-4086-a09c-54c047f2e0d5"
+    },
+    {
+      "claim_id": "b5f51a36-6db2-4796-ba3d-8eb22982bd22",
+      "result_id": "313f75b7-4a70-4a4a-937a-57317d379288"
+    },
+    {
+      "claim_id": "2340d851-f325-4b61-9c11-537bff326c5d",
+      "result_id": "313f75b7-4a70-4a4a-937a-57317d379288"
+    }
+  ],
+  "comparisons": []
+}

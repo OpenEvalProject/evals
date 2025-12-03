@@ -1,0 +1,1832 @@
+{
+  "submission": {
+    "id": "28e26099-1edf-4cdb-9b7d-b7587d5db2b2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:13:59.887916Z",
+    "updated_at": "2025-12-03T05:13:59.887916Z"
+  },
+  "content": [
+    {
+      "id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "submission_id": "28e26099-1edf-4cdb-9b7d-b7587d5db2b2",
+      "content_type": "manuscript",
+      "content_text": "# Biosynthesis of a sulfated exopolysaccharide, synechan, and bloom formation in the model cyanobacterium Synechocystis sp. strain PCC 6803\n\n## Authors\n\n- Kaisei Maeda<sup>1</sup>\n- Yukiko Okuda<sup>1</sup>\n- Gen Enomoto<sup>1</sup>\n- Satoru Watanabe<sup>2</sup>\n- Masahiko Ikeuchi<sup>1</sup> ([ORCID: 0000-0003-4231-8423](https://orcid.org/0000-0003-4231-8423)) \u2020\n\n### Affiliations\n\n1. Department of Life Sciences (Biology), Graduate School of Arts and Sciences, University of Tokyo Tokyo Japan\n2. Department of Bioscience, Tokyo University of Agriculture Tokyo Japan\n3. Faculty of Education and Integrated Arts and Sciences, Waseda University Tokyo Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nExtracellularpolysaccharides of bacteria contribute to biofilm formation, stress tolerance, and infectivity. Cyanobacteria, the oxygenic photoautotrophic bacteria, uniquely produce sulfated extracellular polysaccharides among bacteria to support phototrophic biofilms. In addition, sulfated polysaccharides of cyanobacteria and other organisms have been focused as beneficial biomaterial. However, very little is known about their biosynthesis machinery and function in cyanobacteria. Here, we found that the model cyanobacterium, Synechocystis sp. strain PCC 6803, formed bloom-like cell aggregates embedded in sulfated extracellular polysaccharides (designated as synechan) and identified whole set of genes responsible for synechan biosynthesis and its transcriptional regulation, thereby suggesting a model for the synechan biosynthesis apparatus. Because similar genes are found in many cyanobacterial genomes with wide variation, our findings may lead elucidation of various sulfated polysaccharides, their functions, and their potential application in biotechnology.\n\n## Introduction\n\nBacterial extracellular polysaccharides establish biofilms for nutrient supply and stress avoidance, and they sometimes support cellular activities such as motility and infectivity (Woodward and Naismith, 2016). Generally, the polysaccharide chains consist of a few types of sugars (with or without chemical modifications) and are anchored on cells (capsular polysaccharides, CPS) or exist as nonanchored exopolysaccharides (EPS, also called released polysaccharides). Nonetheless, their molecular structures vary greatly, for\u00a0example, branching schemes, sugar constituents, and modifications, and thus their physical properties also vary. Bacterial extracellular polysaccharides and lipopolysaccharides are produced and exported via three distinct pathways: the Wzx/Wzy-dependent pathway, ABC-dependent pathway, and synthase-dependent pathway (Schmid et al., 2015). Many bacteria can produce several extracellular polysaccharides, and production often depends on environmental conditions. Some extracellular polysaccharides have been appropriated for use as biopolymers for food (i.e. cellulose as nata de coco), food additive (i.e. xanthan as a thickener or an emulsifier), cosmetics (i.e. hyaluronic acid for viscosupplementation), and medicine (i.e. alginate for drug delivery).\n\nCyanobacteria, the oxygenic photoautotrophic bacteria that inhabit almost every ecosystem on Earth, contribute to the global photosynthetic production (Flombaum et al., 2013; Mangan et al., 2016). Cyanobacteria produce various extracellular polysaccharides to form colonies, which are planktonic or attached on solid surfaces, likely to stay in a phototrophic niche in nature (De Philippis, 1998). A notable example is the water bloom, a dense population of cyanobacterial cells that floats on the water surface and often produces cyanotoxins and extracellular polysaccharides (Huisman et al., 2018). The extracellular polysaccharides are also important for photosynthetic production of cyanobacteria and their application (Kehr and Dittmann, 2015; Kumar et al., 2018). However, very little is known about their biosynthesis except for extracellular cellulose. A thermophilic cyanobacterium (Thermosynechococcus vulcanus) accumulates cellulose to form tight cell aggregation (Kawano et al., 2011). This cellulose is produced by cellulose synthase tripartite system unique to cyanobacteria, and its biosynthesis is regulated by temperature and light (Enomoto et al., 2015; Maeda et al., 2018). In the cyanobacterial genomes, there are still many putative genes for extracellular polysaccharide biosynthesis.\n\nInterestingly, many cyanobacterial extracellular polysaccharides are sulfated, that\u00a0is, as a sugar modification (Pereira et al., 2009). Sulfated polysaccharides are also produced by animals (as glycosaminoglycan in the extracellular matrix such as heparan sulfate) and algae (as cell\u00a0wall components such as carrageenan) but are scarcely known in other bacteria or plants (Ghosh et al., 2009). Major examples of cyanobacterial sulfated polysaccharides are spirulan from Arthrospira platensis (vernacular name, \u2018Spirulina\u2019), sacran from Aphanothece sacrum (vernacular name, \u2018Suizenji-Nori\u2019), and cyanoflan from Cyanothece sp. CCY 0110 (Mota et al., 2020; Mouhim et al., 1993; Okajima et al., 2008). These sulfated polysaccharides were found in their biofilms and may be relevant to some ecological functions in cyanobacteria (Fujishiro et al., 2004). In addition, the bioactivities (antiviral, antitumor, and anti-inflammatory) of sulfated polysaccharides from cyanobacteria were reported, too (Flores et al., 2019a; Hayashi et al., 1996; Ngatu et al., 2012). However, very little is known about their biosynthesis machinery and physiological functions. On the other hand, biosynthesis and modification of animal sulfated polysaccharides have been extensively studied because of their importance to tissue protection, tissue development, and immunity (Karamanos et al., 2018; Sasisekharan et al., 2006) and potential applications in healthy foods, biomaterials, and medicines (Jiao et al., 2011; Wardrop and Keeling, 2008).\n\nThe poor understanding about cyanobacterial sulfated polysaccharide biosynthesis is probably due to low or no accumulation of sulfated polysaccharides in typical model species (Pereira et al., 2009). More than three decades ago, Panoff et al. reported sulfated polysaccharides in two related model cyanobacteria, Synechocystis sp. PCC 6803 and Synechocystis sp. PCC 6714 (hereafter Synechocystis 6803 and Synechocystis 6714) (Panoff et al., 1988). Recently, Flores et al. confirmed sulfated polysaccharides and reported their enhanced accumulation in a sigma factor sigF mutant for global cell surface regulation in Synechocystis 6803 (Flores et al., 2019b). In parallel, several papers have studied genes that could be involved in extracellular polysaccharides biosynthesis in Synechocystis 6803, but no clear results were obtained about the sulfated polysaccharide (Fisher et al., 2013; Foster et al., 2009; Jittawuttipoka et al., 2013; Pereira et al., 2019). Here, we found that a motile substrain of Synechocystis 6803 showed bloom-like cell aggregation and sulfated EPS production, but a non-motile substrain (a standard substrain for photosynthesis study) did not. By gene disruption and overexpression, we first identified a whole set of genes responsible for sulfated EPS biosynthesis and its regulatory system, opening the way to engineering of their production.\n\n## Results\n\n### Bloom formation and EPS accumulation in Synechocystis sp. PCC 6803\n\nWe fortuitously found that a motile substrain of Synechocystis 6803 produces EPS and forms floating cell aggregates resembling a typical cyanobacterial bloom. We established a two-step culture regime (2-day bubbling culture and subsequent standing culture without bubbling under continuous light) for reproducible formation of bloom-like aggregates (Figure 1A,B). The first (bubbling) step allows for cell propagation and EPS production, whereas the second (standing) step allows for massive cell aggregation and flotation, even though Synechocystis 6803 does not possess genes for intracellular gas vesicles (Harke et al., 2016). In Synechocystis 6803, cell flotation accompanying the generation of extracellular gas bubbles was suppressed by inactivation of photosynthesis (Figure 1C), suggesting that gas derived from photosynthesis drives the upward movement of cells embedded in viscous EPS. The non-motile, glucose-tolerant substrain\u2014commonly used for photosynthesis research\u2014did not aggregate or float.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig1-v1.jpg)\n\n**Figure 1.:** (A) Time course of bloom formation by wild-type\u00a0(WT) Synechocystis 6803 during the second step of culture. Extracellular gas bubbles are formed and trapped in viscous EPS (~1 hr). Green vertical columns with bubbles become apparent at 4 hr. Those trapped gas bubbles slowly rise together with the viscous columns. (B) Enlarged images showing gas bubbles trapped in EPS. Vertically aligned bubbles are indicated by red arrows. (C) Lack of bloom formation in the non-motile substrain (NM) or WT with or without light and the photosynthesis inhibitor DCMU at 48 hr of the second step of culture. (D) Domain architecture of Slr5054. GT, glycosyltransferase domain; TM, transmembrane region. (E) Lack of bloom formation in \u0394slr5054 after standing culture for 48 hr. (F) Isolation of EPS from the first step of culture. Cells and capsular polysaccharides (CPS) were removed from the culture by centrifugation, and EPS in the supernatant was separated from \u2018free\u2019 polysaccharide (PS) by membrane filtration followed by a second centrifugation to remove residual cells. CPS was collected from the cell pellet after vortexing and centrifugation. (G) Sugar content of fractions from WT and \u0394slr5054. Error bars represent SD (CPS, n\u00a0=\u00a06; others, n\u00a0=\u00a03; **p<0.005).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Protocol for isolating crude EPS from the bloomed culture. The bloom, including EPS and cells at the end of the second (standing) step of culture, was trapped by membrane filtration, and crude EPS was recovered from the bloom by vortexing and centrifugation. PS, polysaccharide; ppt, precipitate; sup, supernatant. (B) Time course of sugar accumulation in the crude EPS during the standing culture. (C) Sugar content of the crude EPS from WT, and a non-motile glucose-tolerant substrain (NM). Error bars represent SD (n\u00a0=\u00a03, **p<0.005).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Domain architecture of membrane-bound glycosyltransferases. Red box, glycosyltransferase domain (GT); blue box, transmembrane region; orange box, glycogen phosphorylase domain. (B) Bloom formation by mutants after the second step of culture.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The microscopic images of isolated EPS from WT culture (Figure 1g) stained with alcian blue at pH 2.5 (left) and pH 0.5 (right).\n\nWe first isolated crude viscous EPS from the bloomed culture by membrane filtration (Figure 1\u2014figure supplement 1A). The crude EPS consisted of polysaccharide but very little protein or nucleic acid and its abundance remained unchanged during the second culture step (Figure 1\u2014figure supplement 1B). As a common feature of diverse EPS biosynthesis systems in bacteria, membrane-bound glycosyltransferases are particularly important (Schmid et al., 2015). In the Synechocystis 6803 genome, 59 genes were annotated as glycosyltransferases. Twelve of them were uncharacterized and predicted to encode transmembrane helices. So, we disrupted five of them initially and found that slr5054 is essential for bloom formation (Figure 1D,E and Figure 1\u2014figure supplement 2). The viscous EPS preparation was improved by removing cells before filtration to avoid cell-associated polysaccharides such as CPS (Figure 1F). \u2206slr5054 lacked most of the EPS present in the wild type (WT), whereas the CPS and free polysaccharide fractions were similar in the WT and \u2206slr5054 (Figure 1G). Then, we performed Alcian blue staining to examine the acidity of the EPS (Figure 1\u2014figure supplement 3). Generally, sulfated polysaccharides are stained at pH 0.5 condition, while acidic polysaccharides, which contain sulfate groups and/or carboxylate groups (such as uronic acids and carboxylate modification), are stained at pH 2.5 condition (Bellezza et al., 2006). The EPS from WT was clearly stained under both pH conditions, strongly suggestive of the sulfate modification.\n\nGene cluster for the biosynthesis of viscous EPS slr5054 resides on a megaplasmid, pSYSM, in a large gene cluster (sll5042\u201360), which we named xss (extracellular sulfated polysaccharide biosynthesis) (Figure 2A, xssA\u2013xssS). This cluster includes two genes for sulfotransferases (xssA, xssE), eight genes for glycosyltransferases (xssB, xssC, xssG, xssI, xssM, xssN, xssO, xssP), three genes for the polysaccharide polymerization system (Wzx/flippase; xssH, Wzy/polymerase; xssF, and polysaccharide co-polymerase [PCP]; xssK), one gene for a putative transcriptional regulator (xssQ), a pair of genes for the bacterial two-component phosphorelay system (xssR, xssS), and genes encoding several small proteins of unknown function (Supplementary file 1, Figure 2A). All genes except those of unknown function were disrupted individually with a read-through cassette, and segregation was confirmed by colony PCR (Figure 2\u2014figure supplement 1). Bloom formation and sugar content of the EPS fraction were reduced in many mutants (Figure 2B,C). In particular, bloom formation was completely abolished in \u2206xssA, \u2206xssB, \u2206xssF, \u2206xssH, \u2206xssK, \u2206xssM, \u2206xssN, and \u2206xssP, in which EPS accumulation was also suppressed. Certain glycosyltransferase mutants (\u2206xssC, \u2206xssG, \u2206xssI, \u2206xssO) formed blooms but accumulated little EPS, and neither bloom formation nor EPS accumulation was substantially altered in one sulfotransferase mutant (\u2206xssE). In general, the Wzx/Wzy system in bacteria produces various EPS, lipopolysaccharides, and CPS through four steps: (i) biosynthesis of a heterooligosaccharide repeat unit on a lipid linker at the cytoplasmic side of the plasma membrane by a series of glycosyltransferases and modification enzymes, (ii) flip-out of the unit to the periplasmic side by Wzx, (iii) polymerization by transfer of the nascent polysaccharide chain to the repeat unit by Wzy, and (iv) export of the EPS chain through the periplasm and outer membrane via PCP and the outer-membrane polysaccharide export protein (OPX) (Islam and Lam, 2014; Schmid et al., 2015). It is very likely that the xss cluster harbors a whole set of genes for the Wzx/Wzy-dependent pathway except a gene for OPX.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig2-v1.jpg)\n\n**Figure 2.:** (A) The xss gene cluster. Red, polysaccharide biosynthesis genes; green, regulatory genes; black, genes of unknown function. (B) Bloom formation by the mutants carrying disruptions in the polysaccharide biosynthesis xss genes. (C) Total sugar content (\u00b5g glucose per 1\u00a0\u00d7\u00a0108 cells) of the exopolysaccharides (EPS) fraction from mutants in b. Red bars, bloom-forming mutants; blue bars, non-bloom-forming mutants. Error bars represent SD (wild\u00a0type\u00a0[WT] grown at 20\u00b0C, n\u00a0=\u00a06; others, n\u00a0=\u00a03). Statistical significance was determined using Welch\u2019s t test (*p<0.05, **p<0.005, ***p<0.0005). (D) Bloom formation by regulatory mutants, WT grown at 20\u00b0C, and outer-membrane\u00a0polysaccharide export protein\u00a0(OPX) mutant (\u2206sll1581). (E) Total sugar content of the EPS fraction from mutants in d. Red bars, bloom-forming mutants; green bars, excess-bloom-forming mutants. (F) A sheet of OX-xssR cells was stripped off from the agar plate by tweezers. The culture temperature was 31\u00b0C unless otherwise stated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** M indicates marker lane, and the numbers above each lane indicate the different clones. The band positions of wild type (WT) and mutants (MT) are shown at the right, with theoretical lengths in nt. A solid arrow indicates the existence of the band; a dotted arrow indicates the absence of the band. The bold text in the strain names indicates the region assessed by PCR.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Hybrid-type histidine kinase XssS presumably senses a cold signal and transduces it to the response regulator XssR, which in turn activates the transcription of extracellular\u00a0sulfated polysaccharide biosynthesis\u00a0(xss) genes via the signal\u00a0transduction\u00a0ATPase with\u00a0numerous\u00a0domains (STAND) protein XssQ. Generally, STAND proteins consist of the three-domain module, sensor region, and effector region13. In XssQ, the three-domain module consisting of the NACHT (NAIP [neuronal apoptosis inhibitor protein], CIIA [MHC class II transcription activator], HET-E, and TP1 [mammalian telomerase-associated proteins]) domain (PF05729), HD1 (helical domain 1), and WHD (winged helix domain) responds to a signal from XssR and oligomerizes, leading to the activation of the N-terminal effector domain (helix-turn-helix XRE family domain [SM00530]).\n\n### Regulation of the sulfated EPS biosynthesis\n\nThe sensory histidine kinase mutant \u2206xssS accumulated a much larger amount of EPS than WT, whereas mutants of the cognate response regulator xssR and transcriptional regulator xssQ had a null phenotype with regard to both bloom formation and EPS accumulation (Figure 2D,E, Supplementary file 2). The double mutant \u2206xssS/\u2206xssR had a phenotype similar to that of \u2206xssR. Overexpression of xssR or xssQ (OX-xssR, OX-xssQ) resulted in strong bloom formation as well as marked accumulation of viscous EPS, similar to that seen for \u0394xssS. The combination of xssQ disruption and xssR overexpression (\u0394xssQ\u00a0+\u00a0OX xssR) abrogated bloom formation and EPS accumulation, whereas the combination of xssQ overexpression and xssR disruption (\u0394xssR\u00a0+\u00a0OX xssQ) resulted in a pronounced phenotype of bloom formation and EPS accumulation. These results suggested that the sensor histidine kinase XssS suppresses the response regulator XssR, leading to activation of the transcriptional activator XssQ. Notably, the OX-xssR and OX-xssQ strains formed sticky, non-motile, biofilm-like colonies on agar plates that could be picked by tweezers (Figure 2F).\n\nXssQ is a new type of the signal transduction ATPase with numerous domains (STAND) protein, because it harbors an N-terminal helix-turn-helix transcriptional DNA-binding domain (Figure 2\u2014figure supplement 2). Typical STAND proteins possess a three-domain module with ATPase activity and are involved in processes such as apoptosis and immunity in animals, plants, and some bacteria (Danot et al., 2009). Using real-time quantitative PCR (qPCR), we compared gene expression in the xss cluster for WT, \u0394xssS, and \u0394xssQ (Figure 3A). Expression of five genes (xssA, xssB, xssE, xssN, xssP) was very low in \u2206xssQ compared with WT, whereas that of xssF, xssH, and xssK was not substantially affected. These results suggested that XssQ transcriptionally activates genes encoding sulfotransferases and certain glycosyltransferases but not genes for polymerization and export via the Wzx/Wzy system. qPCR analysis of gene expression in \u2206xssS revealed a tendency for slight up-regulation of xssB, xssE, xssN, and xssP. We next performed RNA-seq of WT, \u0394xssS, and \u0394xssQ to analyze the transcriptome (Figure 3\u2014figure supplement 1). The genes down-regulated in \u0394xssQ and up-regulated in \u0394xssS were mostly xss genes. In detail, the regulated genes were xssA-E and xssL-P, which were roughly consistent with the qPCR analysis (Figure 3A). We conclude that xssA-E and xssL-P were specifically regulated by XssS/XssR/XssQ. In a previous report, xssA\u2013xssE and xssL\u2013xssP were up-regulated at low temperature in another substrain of Synechocystis 6803 (Kopf et al., 2014b). To test this in our substrain, we measured the sulfated EPS accumulation of WT culture at 20\u00b0C, and it was 3.1-fold greater than that at normal growth temperature (31\u00b0C; Figure 2D,E and Supplementary file 2). This result suggests that XssS/XssR/XssQ is a temperature sensor for xss gene expression.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig3-v1.jpg)\n\n**Figure 3.:** (A) Transcript levels for xss genes in wild\u00a0type\u00a0(WT), \u0394xssS, and \u0394xssQ measured by quantitative PCR\u00a0(qPCR). The internal standard was rnpB. Relative expression levels were obtained by normalization to the transcript levels of each gene in WT. Error bars represent SD (n\u00a0=\u00a03, biological triplicates). (B) Upper: Sequence comparison of upstream regions of the five regulated genes. Putative consensus regions are shown in red and fully conserved nucleotides are shown in bold letter. Underlines represent transcribed regions based on the report\u00a0(Kopf et al., 2014b) and initiation codons of regulated genes are shown in black/bold letters. (B) Lower: Sequences of DNA probe and competitors for xssE (native and mutant) used for electrophoretic mobility shift assay (EMSA) of C. Consensus regions are shown in red, and mutated regions are shown in blue. Total DNA size is 251 bp, where identical sequences are mostly not shown except 20 bp at both ends. (C) The autoradiogram image of EMSA of XssQ protein and the DNA probe of xssE with some competitors.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Transcript levels were based on RPKM (reads per kilobase of exon per million mapped reads) value shown in Figure 3\u2014figure supplement 1\u2014source data 1. Dots in the second quadrant mean down-regulation in \u0394xssQ and up-regulation in \u0394xssS. Most xss genes were in this quadrant.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A and B) HPLC profiles for neutral sugars in wild-type EPS (A) and \u0394xssS EPS (B). (C and D) HPLC profiles for uronic acids in wild-type EPS (C) and \u0394xssS EPS (D). The corresponding monosaccharide and retention time are noted at each peak. (E and F) HPLC profiles for SO42\u2013 after hydrolysis of EPS samples of wild\u00a0type (E) and \u0394xssS (F).\n\nWe aligned nucleotide sequences near the transcription start sites of the regulated genes (xssA, xssE, xssL, xssN, and xssP) to find the consensus sequences for XssQ binding (Figure 3B), according to the differential RNA-seq-type transcriptomic analysis of Synechocystis 6803 (Kopf et al., 2014b). There are single or tandem consensus sequence, AAGTTXXAC. To confirm the binding of XssQ to this region, we performed electrophoretic mobility shift assay (EMSA) using purified recombinant XssQ protein and a PCR-amplified DNA fragment of xssE upstream (Figure 3C). The band position of the radiolabeled probe DNA shifted reflecting the concentration of XssQ. This shift was largely eliminated by excess addition of the unlabeled native competitor, but not by addition of the mutant competitor with mutations in the consensus region. These results suggest that XssQ recognizes the consensus sequence of xssE and other target genes for their transcriptional activation.\n\n### The chemical composition of the sulfated EPS\n\nThe EPS fractions of WT and the overproduction mutant (\u2206xssS) were subjected to chemical composition analysis (Table 1, Figure 3\u2014figure supplement 2). EPS from \u2206xssS consisted of only four types of monosaccharides and sulfate with the near stoichiometric molar ratio of rhamnose:mannose:galactose:glucose:sulfate of 1:1:1:5:2. This finding roughly fits with the gene number, that\u00a0is, eight glycosyltransferase genes and two sulfotransferase genes. We assumed that the sulfated EPS of \u2206xssS is produced by the xss cluster in Synechocystis 6803 and designated \u2018synechan\u2019. On the other hand, the EPS fraction from WT likely contained unknown polysaccharides consisting of mannose, fucose, and xylose in addition to synechan of the \u2206xssS. It should be mentioned that the membrane filtration is effective to collect synechan selectively from the \u2018free\u2019 polysaccharides, which have been mixed together with viscous molecules in literature.\n\n**Table 1.**\n Chemical composition of the exopolysaccharides (EPS) from wild-type\u00a0(WT) Synechocystis 6803 and \u0394xssS mutant.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"3\"></th>\n      <th colspan=\"12\">Sugars</th>\n      <th></th>\n      <th>Sulfate residues</th>\n    </tr>\n    <tr>\n      <th colspan=\"8\">Neutral sugars (mol/mol% )</th>\n      <th></th>\n      <th colspan=\"3\">Uronic acids (mol/mol % )</th>\n      <th></th>\n      <th>Substitution degree</th>\n    </tr>\n    <tr>\n      <th>Rhamnose</th>\n      <th>Ribose</th>\n      <th>Mannose</th>\n      <th>Fucose</th>\n      <th>Galactose</th>\n      <th>Xylose</th>\n      <th>Glucose</th>\n      <th>Total</th>\n      <th></th>\n      <th>Galacturonic acid</th>\n      <th>Glucuronic acid</th>\n      <th>Total</th>\n      <th></th>\n      <th>(mol/mol%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT</td>\n      <td>16.6</td>\n      <td>N.D.</td>\n      <td>25.7</td>\n      <td>16.2</td>\n      <td>4.7</td>\n      <td>10.6</td>\n      <td>23.1</td>\n      <td>96.9</td>\n      <td></td>\n      <td>ND</td>\n      <td>3.1</td>\n      <td>3.1</td>\n      <td></td>\n      <td>10.4</td>\n    </tr>\n    <tr>\n      <td>\u0394xssS</td>\n      <td>13.1</td>\n      <td>N.D.</td>\n      <td>14.2</td>\n      <td>1.2</td>\n      <td>12.5</td>\n      <td>1.0</td>\n      <td>57.9</td>\n      <td>99.9</td>\n      <td></td>\n      <td>ND</td>\n      <td>0.1</td>\n      <td>0.1</td>\n      <td></td>\n      <td>26.6</td>\n    </tr>\n  </tbody>\n</table>\n\n### The OPX protein for synechan biosynthesis\n\nThere is no candidate gene in the xss-carrying plasmid for the OPX protein of the Wzx/Wzy system, whereas sll1581, an OPX homolog, was found on the main chromosome. Disruption of sll1581 (\u0394sll1581) abolished bloom formation and EPS accumulation (Figure 2D,E). Thus, the chromosomal OPX protein Sll1581 (XssT) appears to serve as the outer-membrane exporter for synechan. Interestingly, Synechocystis 6803 possesses xssT (OPX gene) and sll0923 (a second PCP-2a gene) on the main chromosome and xssK (PCP-2a gene) on the plasmid pSYSM, whereas its close relative Synechocystis 6714 harbors only homologs of sll0923 and xssT but lacks the entire plasmid carrying the xss cluster. This suggested that XssT serves as an OPX for dual function for both XssK and Sll0923. It is likely that Synechocystis 6803 acquired pSYSM and borrowed the chromosomal OPX gene xssT to produce synechan or, alternatively, Synechocystis 6714 may have lost the plasmid.\n\n## Discussion\n\nSummarizing these data, we propose models for synechan biosynthesis apparatus including OPX and temperature-responsive regulation (Figure 4A,B and Figure 2\u2014figure supplement 2). The model of the Xss apparatus fits well with the known Wzx/Wzy-dependent apparatus represented by xanthan biosynthesis in Xanthomonas campestris (Katzen et al., 1998). The eight glycosyltransferases including XssP (the priming glycosyltransferase) produce oligosaccharide repeat unit of eight sugars, which is consistent with the sugar composition of synechan. These findings suggest that the xss cluster on the pSYSM plasmid harbors a whole set of genes for synechan biosynthesis except the OPX gene (xssT on the main chromosome). Notably, the cluster harbors two sulfotransferase genes, which have not been found to our knowledge in other bacterial gene clusters for extracellular polysaccharide biosynthesis. Sulfotransferases, XssA and XssE, belong to distinct subfamilies of bacterial sulfotransferases. We found many sulfotransferase genes in various cyanobacterial genomes by Pfam search (PF00685, PF03567, PF13469). They are mostly found in gene clusters for putative extracellular polysaccharide biosynthesis (Wzx/Wzy-type and ABC-type) (Figure 4\u2014figure supplement 1). It should be noted that they are more or less partial as a cluster for extracellular polysaccharide biosynthesis system, whereas the xss cluster appears to be complete except the OPX gene in Synechocystis 6803. It is well established that the polysaccharide moiety of membrane-anchored lipopolysaccharides and CPS of bacteria are produced and exported by the Wzx/Wzy-dependent or ABC transporter\u2013dependent pathways, whereas free EPS, that\u00a0is, xanthan and cellulose, are produced by the Wzx/Wzy-dependent and synthase-dependent pathways but not by the ABC transporter\u2013dependent pathway (Schmid et al., 2015; Willis and Whitfield, 2013). In the literature, a sulfated CPS was reported in A. platensis (formerly Spirulina platensis) (Mouhim et al., 1993). This sulfated CPS may be produced by an ABC transporter-type gene cluster in Figure 4\u2014figure supplement 1. Gene disruption will confirm such predictions deduced from the gene cluster analyses, although targeted disruption is not so easy in many cyanobacteria due to poor transformation efficiency except Synechocystis 6803. In contrast, no sulfated polysaccharide has been reported in the other bacteria, though many sulfotransferases are also registered in Pfam database. Some of them are known to transfer a sulfuryl group to lipo-oligosaccharides in rhizobia (Nod factor) and mycobacteria (Mougous et al., 2002).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig4-v1.jpg)\n\n**Figure 4.:** (A) Model for the synechan biosynthesis apparatus with sugar polymerization and modification. Red boxes represent biosynthesis components, and red boxes with blue stripes represent transcriptionally regulated components. A putative lipid linker is shown as a black rod. Each monosaccharide is shown as a small hexagon, and each sulfate group is shown as a red spot. (B) Signaling and transcriptional regulation model. Green arrows and ellipses represent regulatory genes and proteins, respectively. Genes for synechan biosynthesis are shown in red, and transcriptionally regulated genes are depicted with blue stripes. Arrows with double lines represent transcriptional activation. (C) Two flotation models in cyanobacteria. Left, flotation of cells (green circles) with intracellular gas-filled vesicles (white circles). Right, flotation of exopolysaccharides (EPS) (red shading)-entrapped cells (green circles) and extracellular gas bubbles (white circles), which are generated by photosynthesis.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** A part of each cluster harboring genes for sulfotransferases, glycosyltransferases, and polysaccharide biosynthesis/export systems (Wzx/Wzy type and ABC transporter type) in cyanobacterial genomes.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The colored blocks indicate genes with direction. The homologs of each gene are represented by their corresponding colors (red, xssQ; blue, xssR; green, xssS).\n\nXssQ, a STAND protein with a DNA binding domain is indeed the transcriptional activator for xssE and other induced genes. XssQ homologs are found widely throughout the cyanobacteria but the set of XssS/XssR/XssQ is found near the gene cluster for sulfated EPS biosynthesis with sulfotransferases in many cyanobacteria (Figure 4\u2014figure supplement 2, Supplementary file 3). Consensus sequences are also found in upstream of some genes in the cluster, suggesting that the XssS/XssR/XssQ system may operate universally for induction of sulfated EPS production under certain environmental conditions such as cold temperature.\n\nAcidic polysaccharides containing uronic acids and other carboxylic groups are common in bacteria, but sulfated polysaccharides are produced exclusively by cyanobacteria (Pereira et al., 2009). To speculate on the physiological significance of sulfated polysaccharides, we summarized the distribution of sulfotransferase genes in cyanobacteria of various habitats (Supplementary file 3). Species living in high salinity environments such as a salt lake or seawater mostly produce sulfated polysaccharides. Abundant sulfotransferases are found in the marine Trichodesmium that forms bloom-like colonies to collect dust-bound iron for nutrition (Rubin et al., 2011). Sulfated polysaccharides may play a role for adsorbing metal ions such as iron in saline environments. Consistently, the xss genes are up-regulated in iron deficient conditions in Synechocystis 6803 (Kopf et al., 2014b). The freshwater species Synechocystis sp. PCC 6714 lacks the xss genes including sulfotransferases and salt-resistance genes that are present in the more salt-resistant Synechocystis 6803 (Kopf et al., 2014a). A cyanobacterial sulfated polysaccharide, sacran, shows much higher capacity for saline absorption than does uronic acid-containing polysaccharides, whereas both absorb pure water efficiently (Okajima et al., 2008). This fact may also support the role of sulfated polysaccharides for water retention in aquatic or terrestrial habitats.\n\nThere are many putative genes that may be involved in biosynthesis and export of extracellular polysaccharides and lipopolysaccharides in the genome of Synechocystis 6803 (Fisher et al., 2013; Pereira et al., 2015). Many of them have been disrupted for characterization. With regard to the Wzx/Wzy-dependent system, sll5052 (xssK) disruption mutant showed no clear phenotypes for bloom formation or EPS production (Jittawuttipoka et al., 2013), probably because the parent strain did not produce discernable amount of EPS like our non-motile strain or large EPS molecules were removed by membrane filtration from their EPS preparation. Similarly, the deletion mutant of sll5049 (xssH) did not show any defect in EPS or CPS accumulation, though related mutants (\u2206sll0923 for a second PCP-2a) were shown to be depleted slightly of both CPS and EPS (Pereira et al., 2019). These results contrast with our null phenotype of \u2206sll5052 (xssK) and \u2206sll5049 (xssH), probably because of the difference in the parent strains. In addition, we found that our \u2206sll0923 did not show any defect in the bloom formation. On the other hand, disruption of sigF (slr1564) for a sigma factor of global cell surface regulation increased three- to fourfold accumulation of sulfated EPS preparation (Flores et al., 2019a; Flores et al., 2019b). The proteome analysis of \u2206sigF revealed many (more than 160) proteins except for any Xss proteins were up-regulated, leaving the sulfated EPS biosynthesis pathway elusive. The sugar composition of the EPS of their WT is somehow similar to our WT, likely reflecting varied mixture of synechan and unknown polysaccharides. Moreover, the sugar composition of the EPS fraction of \u2206sigF was different for WT or synechan from our \u2206xssS. The global cell surface regulator sigF may affect accumulation of various polysaccharides.\n\nTo get insights into the difference in bloom formation between the motile and non-motile substrains, we compared transcriptome data (Supplementary file 4). It is evident that many xss genes on the plasmid are expressed several times higher in the motile substrain than the non-motile one except for xssT on the main chromosome, despite that the nucleotide sequence of the xss gene cluster was completely conserved between them. This fact suggests a possibility that another signaling via XssS/XssR/XssQ may contribute to the difference in bloom formation and synechan production between the substrains. Moreover, cell aggregation of another motile substrain of Synechocystis 6803 requires type IV pili apparatus, which drives cell motility (Conradi et al., 2019). Cell aggregation of another non-motile substrain also requires the type IV pili but this aggregation was enhanced by disruption of the OPX gene (xssT) (Allen et al., 2019). Thus, cell aggregation and bloom formation may be complex phenomena of extracellular polysaccharides and type IV pili in Synechocystis 6803.\n\nThe cyanobacterial bloom rapidly accumulates in populations of cyanobacterial cells floating on the water surface, which often produce potent cyanotoxins (hepatotoxins, neurotoxins, etc.) (Merel et al., 2013). Blooms are thought to be supported mainly by cellular buoyancy due to intracellular proteinaceous gas vesicles constructed by gas vesicle proteins (Beard et al., 2002; Walsby, 1994). Moreover, recent studies suggested that extracellular polysaccharides are also important for the bloom formation (Chen et al., 2019). Some papers reported that the cells without gas vesicle can form blooms by EPS-dependent manner after artificial addition of divalent cations (Ca2+ or Mg2+) (Dervaux et al., 2015; Wei et al., 2019). On the other hand, our study demonstrated that the gas-trapped EPS is sufficient for bloom formation of Synechocystis 6803, which does not produce gas vesicles, without addition of any divalent cations (Figure 4B). This result is consistent with reports that cyanobacteria without gas vesicles form booms in natural environments, including freshwater lakes (Casero et al., 2019; du Plooy et al., 2015; Steffen et al., 2012).\n\nFinally, sulfated polysaccharides are expected to be healthy foods, industrial materials and medicines (Jiao et al., 2011; Wardrop and Keeling, 2008). Some sulfated EPS from Synechocystis 6803 showed antitumor activity (Flores et al., 2019a), though this EPS may not be identical to synechan. The Xss-dependent biosynthesis of synechan in Synechocystis 6803 should be a good model for studies of other cyanobacterial sulfated polysaccharides. Combinatorial expression of sulfotransferases and glycosyltransferases from other cyanobacteria in Synechocystis cells will provide clues to their functions. Heterologous expression of Synechocystis xss genes in other organisms will also open a possibility of large-scale production of modified synechan species. Further molecular studies of xss genes and related genes from the database should accelerate screening and potential applications of cyanobacterial sulfated polysaccharides.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>slr1943</td>\n      <td>GenBank</td>\n      <td>Gene ID:952818</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>slr1043</td>\n      <td>GenBank</td>\n      <td>Gene ID:953647</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll0501</td>\n      <td>GenBank</td>\n      <td>Gene ID:953286</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>slr1118</td>\n      <td>GenBank</td>\n      <td>Gene ID:952865</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5042</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655985</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5043</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655983</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5044</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655981</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>ssl5045</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655897</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5046</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655982</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5047</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655980</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5048</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655974</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5049</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655975</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5050</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655972</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>slr5051</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655936</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5052</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655973</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>slr5053</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655990</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>slr5054</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655991</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>slr5055</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655867</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>slr5056</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655868</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5057</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655970</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>slr5058</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655931</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5059</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655971</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll5060</td>\n      <td>GenBank</td>\n      <td>Gene ID:2655968</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Synechocystis sp. PCC 6803)</td>\n      <td>sll1581</td>\n      <td>GenBank</td>\n      <td>Gene ID:953845</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Synechocystis sp. PCC 6803)</td>\n      <td>Wild-type strain; WT</td>\n      <td>Doi.org/10.1093/dnares/dsr042</td>\n      <td>PCC-P</td>\n      <td>Motile</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Synechocystis sp. PCC 6803)</td>\n      <td>Non-motile strain; NM</td>\n      <td>Doi.org/10.1093/dnares/dsr042</td>\n      <td>GT-I</td>\n      <td>Glucose-tolerant</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>JM109</td>\n      <td>Takara</td>\n      <td>Takara:9052</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pPCR-Script (plasmid)</td>\n      <td>STRATAGENE</td>\n      <td>STRATAGENE:211186</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>In-Fusion HD Cloning</td>\n      <td>Clontech</td>\n      <td>Clontech:639635</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alcian Blue 8GX</td>\n      <td>MERCK</td>\n      <td>MERCK:05500</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cyanobacterial strains and cultures\n\nThe motile substrain PCC-P of the unicellular cyanobacterium Synechocystis sp. PCC 6803, which exhibits phototaxis (Yoshihara et al., 2000) and forms bloom-like aggregates, was used as the WT in this work. A non-motile glucose-tolerant substrain, which has been widely used for studies of photosynthesis, was used for comparison (Chin et al., 2018). Cells were maintained in 50 mL of BG11 liquid medium (Stanier et al., 1971) under continuous illumination of fluorescent lamps from outside (30\u00a0\u00b5mol photons/m2/s) with bubbling of 1% CO2 in air at 31\u00b0C, or on 1.5% agar plates. Cell density was monitored at 730 nm.\n\n### Construction of plasmids and mutants\n\nPrimers used are listed in Supplementary file 5. Plasmids and mutants were constructed as described (Chin et al., 2018). In brief, the DNA fragments, antibiotic-resistance cassettes, the trc promoter, and plasmid vectors were amplified by PCR using PrimeSTAR MAX DNA polymerase (Takara, Shiga, Japan) and combined using the In-Fusion System (Takara). The resulting plasmid constructs were confirmed by DNA sequencing.\n\nGene disruption was performed in two different ways. One method was replacement of a large portion of a targeted gene(s) with an antibiotic-resistance cassette. The other method was replacement of the translation initiation codon with a stop codon. In both cases, the screening cassette without the terminator was inserted in the direction of the targeted gene(s) to allow transcriptional read-through of the downstream gene(s). For overexpression, gene expression was constitutively driven by the strong trc promoter in two ways: integration of a target gene with the strong trc promoter into a neutral site near slr0846 or IS203c, or replacement of the target-gene promoter with the trc promoter. Natural transformation and subsequent homologous recombination were performed as described\u00a0(Chin et al., 2018). The antibiotic concentration for the selection of transformants was 20 \u03bcg/mL chloramphenicol, 20 \u03bcg/mL kanamycin, and/or 20 \u03bcg/mL spectinomycin. Complete segregation of the transformed DNA in the multicopy genome was confirmed by PCR using primers listed in Supplementary file 5, and the transformants are listed in Supplementary file 6.\n\n### Bloom formation\n\nThe bloom was reproducibly formed using the two-step culture regime we developed in this work. Before the bloom formation experiment, cells were precultured once in liquid after transfer from plates. In the first step, cells inoculated at OD730\u00a0=\u00a00.2 were grown with vigorous aeration under continuous light at 31\u00b0C or 20\u00b0C for 48 hr. Typically the cell density reached OD730\u00a0~\u00a02. In the second step, the culture was shifted to the standing condition without bubbling under the same continuous light for another 48 hr (or longer) for cells to rise to the surface. Regarding the mutants of transmembrane glycosyltransferases, bloom formation was examined after 168 hr of the second-step culture. The final concentration of the photosynthesis inhibitor DCMU (3-(3,4-dichlorophenyl)-1,1-dimethylurea) was 100 \u03bcM.\n\n### EPS fractionation\n\nThe fractionation method to isolate the crude EPS is shown in Figure 1\u2014figure supplement 1A. The viscous materials including cells after the second step of culture were collected by filtration using a 1.0 \u03bcm pore PTFE membrane (Millipore). The trapped materials were gently and carefully recovered from the membrane using MilliQ water with the aid of flat-tip tweezers. The collected sample was vortexed and then centrifuged at 20,000\u00a0\u00d7\u00a0g for 10 min to remove cells. The supernatant constituted the crude EPS that contained viscous EPS and possibly CPS.\n\nThe refined fractionation method to isolate EPS is shown in Figure 1F. The entire culture at the end of the first step, which did not contain gas bubbles, was first centrifuged at 10,000\u00a0\u00d7\u00a0g for 10 min to remove cells and CPS and then filtered through a 1.0 \u03bcm pore PTFE membrane. The trapped EPS was carefully recovered as described above. The flowthrough of the filtration was regarded as free polysaccharides, which were recovered by ethanol precipitation. CPS was released from the cell pellet by vigorous vortexing with MilliQ water and recovered by centrifugation to remove cells (20,000\u00a0\u00d7\u00a0g for 10 min).\n\n### Sugar quantification\n\nTotal sugar was quantified using the phenol-sulfate method (DuBois et al., 1956). A 100 \u03bcL aliquot of 5% (w/w) phenol was added to 100 \u03bcL of a sample in a glass tube and vortexed three times for 10 s. Then, 500 \u03bcL of concentrated sulfuric acid was added, and the tube was immediately vortexed three times for 10 s and then kept at 30\u00b0C for 30 min in a water bath. Sugar content was measured by absorption at 487 nm using a UV-2600PC spectrophotometer (Shimadzu, Japan, Tokyo). Any contamination of the BG11 medium was evident by slight background coloration. This background was subtracted on the basis of the extrapolation of absorption at 430 nm, where the coloration due to sugars was minimal. Glucose was used as the standard. Some EPS samples were highly viscous, so we vortexed and sonicated them before measurement. Statistical significance was determined using Welch\u2019s t test.\n\n### Sugar composition analysis\n\nThe collected EPS samples were dialyzed with MilliQ water and then freeze-dried for 3 days. Sugar composition was analyzed by Toray Research Center, Inc (Tokyo, Japan). A part of the fluffy sample (WT, 0.298 mg; \u0394xssS, 0.203 mg) was dissolved in 200 \u03bcL of 2 M trifluoroacetic acid and hydrolyzed at 100\u00b0C for 6 hr. The treated sample was vacuum-dried with a centrifugal evaporator, redissolved in 400 \u03bcL MilliQ water, and filtered through a 0.22 \u03bcm pore filter. This sample was used for the analysis.\n\nMonosaccharide composition was determined by HPLC with the LC-20A system (Shimadzu). For neutral sugars, the column was TSK-gel Sugar AXG (TOSOH, Japan) and the temperature was 70\u00b0C. The mobile phase was 0.5 M potassium borate (pH 8.7) at 0.4 mL/min. Post-column labeling was performed using 1% (w/v) arginine and 3% (w/v) boric acid at 0.5 mL/min, 150\u00b0C. For uronic acids, the column was a Shimpack ISA-07 (Shimadzu) and the temperature was 70\u00b0C. The mobile phase was 1.0 M potassium borate (pH 8.7) at 0.8 mL/min. Post-column labeling was performed using 1% (w/v) arginine and 3% (w/v) boric acid at 0.8 mL/min, 150\u00b0C. The detector was an RF-10AXL (Shimadzu), with excitation at 320 nm and emission at 430 nm. The standard curves were prepared for each monosaccharide with standard samples.\n\nThe SO42\u2212 content was determined by anion exchange column chromatography using the ISC-2100 system (Thermo Fisher Scientific, Waltham,\u00a0MA). The column was eluted via a gradient of 0\u20131.0 M KOH. The separation column was IonPac ASI l-HC-4 \u03bcm (Thermo Fisher Scientific). Electric conductivity was used for detection.\n\n### Alcian blue staining\n\nThe polysaccharides were stained with 1% Alcian blue 8GX (Merck) for 10 min in 3% acetic acid (pH 2.5) or 0.5 N HCl (pH 0.5) as previously described (Di Pippo et al., 2013).\n\n### Quantitative\u00a0PCR\n\nThe qPCR was performed as described in our previous work (Maeda et al., 2018). Cells were harvested by centrifugation at 5000\u00a0\u00d7\u00a0g for 10 min at 4\u00b0C. Cell disruption and RNA extraction were done using an RNeasy Mini kit for bacteria (Qiagen, Venlo, The\u00a0Netherlands). In addition, cells were disrupted five times by mechanical homogenization with zirconia beads (0.1 mm diameter) in a microhomogenizing system (Micro Smash MS-100, TOMY SEIKO, Tokyo, Japan) at 5000 rpm for 40 s. For cDNA preparation, RNA was reverse-transcribed using random primers (PrimeScript RT reagent kit with gDNA eraser, Takara). Real-time PCR was performed using the THUNDERBIRD SYBR qPCR Mix (Toyobo) and the Thermal Cycler Dice Real Time System II (Takara). The transcript level in each strain was normalized to the internal control (rnpB). The primers used are listed in Supplementary file 5.\n\n### Electrophoretic mobility shift assay\n\nThe expression and purification of recombinant His-tagged proteins and EMSA were performed as described in our previous works (Hirose et al., 2010; Maeda et al., 2014). In brief, His-tagged XssQ was expressed using pET28a vector system and Escherichia coli C41(DE3) strain. The protein was purified by Histrap HP column (Cytiva, Tokyo, Japan) and AKTA prime system (Cytiva). For probe and native competitor, the upstream region of xssE was amplified with the primer set xssEup-1F/2R (total 251 bp). As a mutant competitor, the same region of the chemically synthesized DNA fragment containing mutations in the two consensus sequences was used for amplification with the same primer set as mentioned above. Labeling of the DNA probe, electrophoresis, and autoradiography were performed as described (Midorikawa et al., 2009). We incubated the aliquots of the XssQ protein (0, 500, 1000, or 3000 ng/lane) with the radiolabeled probe for 30 min at room temperature. For competition, 3000 ng of XssQ was incubated with the probe and 20 pmol of unlabeled competitors (native or mutant).\n\n### RNA-seq analysis\n\nRNAs for RNA-seq analysis were extracted as described above. Library construction for RNA sequencing analysis was conducted as described previously (Ohbayashi et al., 2016). The average number of raw read pairs per sample was 2.84 million. The reads were trimmed using CLC Genomics Workbench ver. 12.0 (QIAGEN) with the following parameters; Phred quality score\u00a0>30; ambiguous nucleotides allowed: 1; automatic read-through adaptor trimming: yes; removing the terminal 15 nucleotides from the 5\u2019 end; and removing truncated reads of less than 20 nucleotides in length. Trimmed reads were mapped to the all genes in Synechocystis sp. PCC 6803 using CLC Genomics Workbench ver. 12.0 with the following parameters; mismatch cost: 2; indel cost: 3; length fraction: 0.8; similarity fraction: 0.9; and maximum number of hits for a read: 10. In the comparison between WT and mutants \u0394xssS, and \u0394xssQ (Figure 3\u2014figure supplement 1), the genome information (accession numbers, chromosome: CP003265, pSYSM: CP003266, pSYSX: CP003269, pSYSA: CP003267, pSYSG: CP003268, pCA2.4: CP003270, pCB2.4: CP003271, and pCC5.2: CP003272) was used as a reference, and in the comparison between the motile WT (PCC-P) and non-motile (NM) substrains (Supplementary file 4), the genome information (accession numbers, chromosome: AP012276, pSYSM: AP004310, pSYSX: AP006585, pSYSA: AP004311, pSYSG: AP004312, pCA2.4: CP003270, pCB2.4: CP003271, and pCC5.2: CP003272) was used as a reference. Reads per kilobase per million mapped reads (RPKM) were calculated using CLC Genomics Workbench ver. 20.0. Original sequence reads were deposited in the DRA/SRA database with the following accession numbers, DRA011755. The accession number of BioProject was PRJDB11449.\n\n### Bioinformatics analysis\n\nThe sequences of the proteins were obtained from NCBI (http://www.ncbi.nlm.nih.gov/) and Pfam (http://pfam.xfam.org/) (Finn et al., 2016). The domain architecture was searched using the Simple Modular Architecture Research Tool, SMART (Letunic et al., 2015). Glycosyltransferase classifications were based on the CAZy database (http://www.cazy.org/) (Henrissat, 1991; Lombard et al., 2014). Amino acid sequence similarity was evaluated by NCBI BLAST search.\n",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "6e6c1528-5c3c-42e2-9daa-7f930d574479",
+      "submission_id": "28e26099-1edf-4cdb-9b7d-b7587d5db2b2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wolfgang Hess\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66538.sa1](https://doi.org/10.7554/eLife.66538.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nWith the findings in your article you have elucidated the biochemical and regulatory apparatus for the biosynthesis of sulfated exopolysaccharides, an entire class of molecules previously not studied in cyanobacteria. Therefore, the work has broad implications for the microbiology and ecology of these organisms but opens also the possibility to use these compounds in biotechnology and modify their structures by combinatorial synthesis in the future.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Biosynthesis system of Synechan, a sulfated exopolysaccharide, in the model cyanobacterium Synechocystis sp. PCC 6803\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wolfgang Hess as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Conrad W Mullineaux (Reviewer #2); Jochen Schmid (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe text of the manuscript needs to be revised to improve clarity in presentation and discussion.\n\nReviewer #1 (Recommendations for the authors):\n\nThe observations are very interesting and worthwhile to be published. Please consider the following points to improve the manuscript.\n\nLine 21, 33-35: Some extracellular polysaccharides can be utilized for food, cosmetics, in medicine and as beneficial biomaterial, they have potential application in biotechnology. Can you give some real examples or be more specific instead of citing some reviews?\n\nLine 97, 98, Figure S2: 5 genes encoding proteins with glycosyltransferase domains were screened by mutagenesis. I assume there are many more genes with such domains in Synechocystis. How many were bioinformatically screened initially? And which considerations led to the choice of those 5 genes for which deletions were constructed?\n\nLine 160: The gene cluster on pSYSM contains also several \"small proteins of unknown function\". I noticed that xxsL/slr5053 has an annotation as \"cyanoexosortase A system-associated protein\".\n\nFigure 3A: Y-axis, this should be \"Relative transcript levels\".\n\nLine 234: Please add which Figure the statement refers to after \"\u2026which were roughly consistent with the qPCR analysis\" (probably Figure 3A).\n\nLine 235-236: \"In a previous report, xssA-xssE and xssL-xssP were up-regulated at low temperature.\u2026\" Looking at the referred data I think the genes were upregulated at low temperature, by the shift to high light and iron starvation. This is especially well visible for the TSSs in front of slr5055, sll5057 and probably widens the relevance also in the ecological context. You may note that it was reported that natural populations of Trichodesmium with its record number of sulfotransferase genes according to your Table S3 form large floating colonies to collect iron-rich dust particles (https://www.nature.com/articles/ngeo1181 and PMID: 31551530).\n\nTable 1: Measuring the chemical composition of the EPS found rhamnose to make up 16.6 mol/mol % of the pool of neutral sugars. The presence of rhamnose can be relevant for recently established approaches to use the rhamnose-inducible rhaBAD promoter in cyanobacteria (Kelly et al., 2018; PMID: 29544054). This promoter is considered strong and well-regulated and is becoming very popular. Especially, Synechocystis was not found to produce or metabolize rhamnose and therefore could be considered as an ideal inducer molecule. Can you comment on whether these ideas might need to be re-considered in view of your findings?\n\nTranscriptome analysis: Please explain the legend to Figure S6 what the location of a dot in a particular quadrant means (upregulation in \u0394xssS, downregulation in \u0394xssS and \u0394xssQ, etc.). It seems there were several genes down-regulated in \u0394xssQ and down-regulated \u0394xssQ. Can you please comment on what those genes are?\n\nWith the given information it is not possible to follow the RNA-seq analysis. Did you do replicates? How many reads were obtained? Which programs with which parameters were used for the QC, mapping etc.? This information cannot be inferred from the cited reference Ohbayashi et al., 2016. Please upload the raw reads to a public repository and include the accession number in the manuscript.\n\nReviewer #2 (Recommendations for the authors):\n\nThis is a very well-written and well-presented piece of work. The combination of genetic, chemical and phenotypic analysis is extremely thorough. My only significant issue with the paper is that the cartoon in Figure 4B implies that blooms are formed simply by embedding cells in EPS. This is clearly an over-simplification. The authors' data in Figure 2 and Table S2 shows that some mutants still have unaltered bloom formation despite a five-fold reduction in EPS production. Other recent work (not cited) has shown that the Type IV pili, and specific minor pilins, are essential for aggregation and floc formation in Synechocystis (AEM 85 (2019) e01292-18 ; J Bact 201 (2019) e00344-19). Especially the \"flocs\" discussed in the latter paper look just the same as the \"blooms\" discussed here. So I think the authors' discussion currently misses the chance to present a more complete and realistic model for bloom formation in Synechocystis. The obvious possibility is that Synechocystis uses its Type IV pili to anchor the cells to strands of EPS. That would explain why only small amounts of EPS are sufficient for full bloom formation.\n\nReviewer #3 (Recommendations for the authors):\n\nThe manuscript is of high interest for the scientific community and is in general scientifically and technically sound.\n",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fc534afd-320b-41fa-b46e-3e449c4e94d4",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C1",
+      "claim": "Extracellular polysaccharides of bacteria contribute to biofilm formation, stress tolerance, and infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellularpolysaccharides of bacteria contribute to biofilm formation, stress tolerance, and infectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data from this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "a972b4e3-3766-4459-ab47-22f076d84b43",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C2",
+      "claim": "Cyanobacteria uniquely produce sulfated extracellular polysaccharides among bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanobacteria, the oxygenic photoautotrophic bacteria, uniquely produce sulfated extracellular polysaccharides among bacteria to support phototrophic biofilms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "a72bc5f9-ce77-436b-8f39-f53ad537e49b",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C3",
+      "claim": "Synechocystis sp. strain PCC 6803 formed bloom-like cell aggregates embedded in sulfated extracellular polysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the model cyanobacterium, Synechocystis sp. strain PCC 6803, formed bloom-like cell aggregates embedded in sulfated extracellular polysaccharides (designated as synechan)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "6fcd1a13-1aea-4415-944d-54b3568e332a",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C4",
+      "claim": "The sulfated extracellular polysaccharide produced by Synechocystis sp. PCC 6803 was designated as synechan.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the model cyanobacterium, Synechocystis sp. strain PCC 6803, formed bloom-like cell aggregates embedded in sulfated extracellular polysaccharides (designated as synechan)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a naming convention established by the authors based on their findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "45b4eab8-211a-4f0d-a6d6-97bf74c91c80",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C5",
+      "claim": "A whole set of genes responsible for synechan biosynthesis and its transcriptional regulation was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "identified whole set of genes responsible for synechan biosynthesis and its transcriptional regulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by gene disruption and overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "47f10c43-795a-4726-9721-f03b2085da71",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C6",
+      "claim": "Similar genes are found in many cyanobacterial genomes with wide variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because similar genes are found in many cyanobacterial genomes with wide variation, our findings may lead elucidation of various sulfated polysaccharides, their functions, and their potential application in biotechnology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatics analysis of cyanobacterial genomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "5b664768-782c-4bec-90c2-9f3309d57783",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C7",
+      "claim": "Bacterial extracellular polysaccharides establish biofilms for nutrient supply and stress avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial extracellular polysaccharides establish biofilms for nutrient supply and stress avoidance, and they sometimes support cellular activities such as motility and infectivity (Woodward and Naismith, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "09b63130-15df-4947-a94c-348e40e39f9b",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C8",
+      "claim": "Bacterial extracellular polysaccharides sometimes support cellular activities such as motility and infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial extracellular polysaccharides establish biofilms for nutrient supply and stress avoidance, and they sometimes support cellular activities such as motility and infectivity (Woodward and Naismith, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "7d504b12-f7be-429d-a818-08d325a2afbe",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C9",
+      "claim": "Bacterial extracellular polysaccharides and lipopolysaccharides are produced and exported via three distinct pathways: the Wzx/Wzy-dependent pathway, ABC-dependent pathway, and synthase-dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial extracellular polysaccharides and lipopolysaccharides are produced and exported via three distinct pathways: the Wzx/Wzy-dependent pathway, ABC-dependent pathway, and synthase-dependent pathway (Schmid et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "93d1269d-86f6-435e-a390-760a68b2be04",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C10",
+      "claim": "Cyanobacteria contribute to the global photosynthetic production.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanobacteria, the oxygenic photoautotrophic bacteria that inhabit almost every ecosystem on Earth, contribute to the global photosynthetic production (Flombaum et al., 2013; Mangan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "d4f51ad5-9146-41a2-9742-e5e385cbdfbb",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C11",
+      "claim": "Cyanobacteria produce various extracellular polysaccharides to form colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanobacteria produce various extracellular polysaccharides to form colonies, which are planktonic or attached on solid surfaces, likely to stay in a phototrophic niche in nature (De Philippis, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "118083e4-b9c2-46d0-9523-dc5affce565e",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C12",
+      "claim": "Many cyanobacterial extracellular polysaccharides are sulfated.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many cyanobacterial extracellular polysaccharides are sulfated, that is, as a sugar modification (Pereira et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "bd73e26d-f460-44e7-8c4c-15dab1d9bcf0",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C13",
+      "claim": "Sulfated polysaccharides are produced by animals and algae but are scarcely known in other bacteria or plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Sulfated polysaccharides are also produced by animals (as glycosaminoglycan in the extracellular matrix such as heparan sulfate) and algae (as cell wall components such as carrageenan) but are scarcely known in other bacteria or plants (Ghosh et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "7cb3cb22-bc7d-4d56-8e7e-4bd029c508b8",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C14",
+      "claim": "A motile substrain of Synechocystis 6803 produces EPS and forms floating cell aggregates resembling a typical cyanobacterial bloom.",
+      "claim_type": "EXPLICIT",
+      "source": "We fortuitously found that a motile substrain of Synechocystis 6803 produces EPS and forms floating cell aggregates resembling a typical cyanobacterial bloom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "531e45db-669b-47f1-8a9e-fcdcf66e90a4",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C15",
+      "claim": "A two-step culture regime was established for reproducible formation of bloom-like aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "We established a two-step culture regime (2-day bubbling culture and subsequent standing culture without bubbling under continuous light) for reproducible formation of bloom-like aggregates (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological finding supported by experimental data and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "d295b610-7a81-4813-85f2-83533f4dc326",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C16",
+      "claim": "The first bubbling step allows for cell propagation and EPS production.",
+      "claim_type": "EXPLICIT",
+      "source": "The first (bubbling) step allows for cell propagation and EPS production, whereas the second (standing) step allows for massive cell aggregation and flotation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental design and observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "fa725047-06d9-4f49-ac13-ef57ba5a3833",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C17",
+      "claim": "The second standing step allows for massive cell aggregation and flotation.",
+      "claim_type": "EXPLICIT",
+      "source": "The first (bubbling) step allows for cell propagation and EPS production, whereas the second (standing) step allows for massive cell aggregation and flotation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental design and observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "1408ad07-971d-448f-b040-d14a791c7ff0",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C18",
+      "claim": "Synechocystis 6803 does not possess genes for intracellular gas vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "even though Synechocystis 6803 does not possess genes for intracellular gas vesicles (Harke et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "a52f17a0-864d-4c4b-a249-bf28bca28c7a",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C19",
+      "claim": "Cell flotation accompanying the generation of extracellular gas bubbles was suppressed by inactivation of photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In Synechocystis 6803, cell flotation accompanying the generation of extracellular gas bubbles was suppressed by inactivation of photosynthesis (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "56747309-2e19-4aae-8c8e-b6b3b702c48e",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C20",
+      "claim": "Gas derived from photosynthesis drives the upward movement of cells embedded in viscous EPS.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that gas derived from photosynthesis drives the upward movement of cells embedded in viscous EPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that photosynthesis inactivation suppresses flotation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "36bb3d6c-7e1d-41b9-ac81-fca2c72b5b98",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C21",
+      "claim": "The non-motile, glucose-tolerant substrain did not aggregate or float.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-motile, glucose-tolerant substrain\u2014commonly used for photosynthesis research\u2014did not aggregate or float.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "f4ceb68d-9e91-483c-bda4-956ec5ca24d3",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C22",
+      "claim": "slr5054 is essential for bloom formation.",
+      "claim_type": "EXPLICIT",
+      "source": "So, we disrupted five of them initially and found that slr5054 is essential for bloom formation (Figure 1D,E and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene disruption experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "18e98ac9-5da9-4f40-9cf2-f313842d1b6c",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C23",
+      "claim": "\u2206slr5054 lacked most of the EPS present in the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2206slr5054 lacked most of the EPS present in the wild type (WT), whereas the CPS and free polysaccharide fractions were similar in the WT and \u2206slr5054 (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "73ab0a9a-456a-46d8-9def-067cefa9beb9",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C24",
+      "claim": "The EPS from WT was clearly stained under both pH 2.5 and pH 0.5 conditions with Alcian blue.",
+      "claim_type": "EXPLICIT",
+      "source": "The EPS from WT was clearly stained under both pH conditions, strongly suggestive of the sulfate modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from Alcian blue staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "a5e90cd6-18f3-4a46-9e6f-63679aa32de2",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C25",
+      "claim": "Alcian blue staining at pH 0.5 indicates sulfated polysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, sulfated polysaccharides are stained at pH 0.5 condition, while acidic polysaccharides, which contain sulfate groups and/or carboxylate groups (such as uronic acids and carboxylate modification), are stained at pH 2.5 condition (Bellezza et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "fb75e439-fe88-4e5c-bfc5-928480841175",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C26",
+      "claim": "slr5054 resides on a megaplasmid, pSYSM, in a large gene cluster (sll5042\u201360).",
+      "claim_type": "EXPLICIT",
+      "source": "slr5054 resides on a megaplasmid, pSYSM, in a large gene cluster (sll5042\u201360), which we named xss (extracellular sulfated polysaccharide biosynthesis) (Figure 2A, xssA\u2013xssS).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "66d5eb32-1e42-4590-bcf2-dc2d3176bc8d",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C27",
+      "claim": "The gene cluster was named xss (extracellular sulfated polysaccharide biosynthesis).",
+      "claim_type": "EXPLICIT",
+      "source": "slr5054 resides on a megaplasmid, pSYSM, in a large gene cluster (sll5042\u201360), which we named xss (extracellular sulfated polysaccharide biosynthesis) (Figure 2A, xssA\u2013xssS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a naming convention established by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "4ab831c0-7d68-4256-9bdc-3f777221bce3",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C28",
+      "claim": "The xss cluster includes two genes for sulfotransferases (xssA, xssE).",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster includes two genes for sulfotransferases (xssA, xssE), eight genes for glycosyltransferases (xssB, xssC, xssG, xssI, xssM, xssN, xssO, xssP), three genes for the polysaccharide polymerization system (Wzx/flippase; xssH, Wzy/polymerase; xssF, and polysaccharide co-polymerase [PCP]; xssK), one gene for a putative transcriptional regulator (xssQ), a pair of genes for the bacterial two-component phosphorelay system (xssR, xssS), and genes encoding several small proteins of unknown function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis and annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "5b8cd039-741f-4756-affc-e9e703832f2f",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C29",
+      "claim": "The xss cluster includes eight genes for glycosyltransferases (xssB, xssC, xssG, xssI, xssM, xssN, xssO, xssP).",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster includes two genes for sulfotransferases (xssA, xssE), eight genes for glycosyltransferases (xssB, xssC, xssG, xssI, xssM, xssN, xssO, xssP), three genes for the polysaccharide polymerization system (Wzx/flippase; xssH, Wzy/polymerase; xssF, and polysaccharide co-polymerase [PCP]; xssK), one gene for a putative transcriptional regulator (xssQ), a pair of genes for the bacterial two-component phosphorelay system (xssR, xssS), and genes encoding several small proteins of unknown function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis and annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "2c287efa-3ccc-4a12-a029-adfa7d22b637",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C30",
+      "claim": "The xss cluster includes three genes for the polysaccharide polymerization system (Wzx/flippase; xssH, Wzy/polymerase; xssF, and polysaccharide co-polymerase [PCP]; xssK).",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster includes two genes for sulfotransferases (xssA, xssE), eight genes for glycosyltransferases (xssB, xssC, xssG, xssI, xssM, xssN, xssO, xssP), three genes for the polysaccharide polymerization system (Wzx/flippase; xssH, Wzy/polymerase; xssF, and polysaccharide co-polymerase [PCP]; xssK), one gene for a putative transcriptional regulator (xssQ), a pair of genes for the bacterial two-component phosphorelay system (xssR, xssS), and genes encoding several small proteins of unknown function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis and annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "b889283a-8373-451c-a2b3-8fa04906ff5b",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C31",
+      "claim": "Bloom formation was completely abolished in \u2206xssA, \u2206xssB, \u2206xssF, \u2206xssH, \u2206xssK, \u2206xssM, \u2206xssN, and \u2206xssP.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, bloom formation was completely abolished in \u2206xssA, \u2206xssB, \u2206xssF, \u2206xssH, \u2206xssK, \u2206xssM, \u2206xssN, and \u2206xssP, in which EPS accumulation was also suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene disruption experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "117c2dbe-9a02-46a2-aa8e-c8b52c523106",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C32",
+      "claim": "EPS accumulation was suppressed in \u2206xssA, \u2206xssB, \u2206xssF, \u2206xssH, \u2206xssK, \u2206xssM, \u2206xssN, and \u2206xssP.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, bloom formation was completely abolished in \u2206xssA, \u2206xssB, \u2206xssF, \u2206xssH, \u2206xssK, \u2206xssM, \u2206xssN, and \u2206xssP, in which EPS accumulation was also suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene disruption experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "b5ee30d9-761a-42f3-8054-30c1cb550da8",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C33",
+      "claim": "Certain glycosyltransferase mutants (\u2206xssC, \u2206xssG, \u2206xssI, \u2206xssO) formed blooms but accumulated little EPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain glycosyltransferase mutants (\u2206xssC, \u2206xssG, \u2206xssI, \u2206xssO) formed blooms but accumulated little EPS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene disruption experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "57a42ada-9b45-4f11-a205-52432ff907a6",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C34",
+      "claim": "Neither bloom formation nor EPS accumulation was substantially altered in one sulfotransferase mutant (\u2206xssE).",
+      "claim_type": "EXPLICIT",
+      "source": "and neither bloom formation nor EPS accumulation was substantially altered in one sulfotransferase mutant (\u2206xssE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene disruption experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "88aa74d6-d0ec-48a3-ac36-d62b890a4a5a",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C35",
+      "claim": "The xss cluster harbors a whole set of genes for the Wzx/Wzy-dependent pathway except a gene for OPX.",
+      "claim_type": "EXPLICIT",
+      "source": "It is very likely that the xss cluster harbors a whole set of genes for the Wzx/Wzy-dependent pathway except a gene for OPX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the gene composition of the cluster.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "f998ced3-39ef-4215-aa48-81f647461d82",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C36",
+      "claim": "The sensory histidine kinase mutant \u2206xssS accumulated a much larger amount of EPS than WT.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensory histidine kinase mutant \u2206xssS accumulated a much larger amount of EPS than WT",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene disruption experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "8f5b50a1-5996-44a7-9f7e-957086339713",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C37",
+      "claim": "Mutants of the cognate response regulator xssR and transcriptional regulator xssQ had a null phenotype with regard to both bloom formation and EPS accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas mutants of the cognate response regulator xssR and transcriptional regulator xssQ had a null phenotype with regard to both bloom formation and EPS accumulation (Figure 2D,E, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene disruption experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "61562607-83cc-442c-8c86-9e2e7c3db079",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C38",
+      "claim": "The double mutant \u2206xssS/\u2206xssR had a phenotype similar to that of \u2206xssR.",
+      "claim_type": "EXPLICIT",
+      "source": "The double mutant \u2206xssS/\u2206xssR had a phenotype similar to that of \u2206xssR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene disruption experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "612ab5b1-cc92-4afb-8ed6-693a2857ddd7",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C39",
+      "claim": "Overexpression of xssR or xssQ resulted in strong bloom formation as well as marked accumulation of viscous EPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of xssR or xssQ (OX-xssR, OX-xssQ) resulted in strong bloom formation as well as marked accumulation of viscous EPS, similar to that seen for \u0394xssS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "7d72727d-8799-45aa-afad-7fc3f83c00c3",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C40",
+      "claim": "The combination of xssQ disruption and xssR overexpression abrogated bloom formation and EPS accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of xssQ disruption and xssR overexpression (\u0394xssQ + OX xssR) abrogated bloom formation and EPS accumulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by combined gene manipulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "b7536bd9-d1ad-4f73-b156-643fcf7aff6a",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C41",
+      "claim": "The combination of xssQ overexpression and xssR disruption resulted in a pronounced phenotype of bloom formation and EPS accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the combination of xssQ overexpression and xssR disruption (\u0394xssR + OX xssQ) resulted in a pronounced phenotype of bloom formation and EPS accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by combined gene manipulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "6ef1809f-7eed-4b6d-b274-ec2295ce4fc6",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C42",
+      "claim": "The sensor histidine kinase XssS suppresses the response regulator XssR, leading to activation of the transcriptional activator XssQ.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that the sensor histidine kinase XssS suppresses the response regulator XssR, leading to activation of the transcriptional activator XssQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phenotypes of various mutants and overexpression strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "cf5e0071-e726-4d8f-b04f-4f319b9d5a50",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C43",
+      "claim": "The OX-xssR and OX-xssQ strains formed sticky, non-motile, biofilm-like colonies on agar plates that could be picked by tweezers.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the OX-xssR and OX-xssQ strains formed sticky, non-motile, biofilm-like colonies on agar plates that could be picked by tweezers (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "7b8346d3-502a-432e-bdaa-088a77c51de6",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C44",
+      "claim": "XssQ is a new type of the signal transduction ATPase with numerous domains (STAND) protein.",
+      "claim_type": "EXPLICIT",
+      "source": "XssQ is a new type of the signal transduction ATPase with numerous domains (STAND) protein, because it harbors an N-terminal helix-turn-helix transcriptional DNA-binding domain (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on domain architecture analysis shown in a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "1ca0ccbf-ab5b-4bb5-a4a4-a3cb3a929600",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C45",
+      "claim": "Expression of five genes (xssA, xssB, xssE, xssN, xssP) was very low in \u2206xssQ compared with WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of five genes (xssA, xssB, xssE, xssN, xssP) was very low in \u2206xssQ compared with WT, whereas that of xssF, xssH, and xssK was not substantially affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "615abca9-8107-4749-aedc-99552be87bba",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C46",
+      "claim": "Expression of xssF, xssH, and xssK was not substantially affected in \u2206xssQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of five genes (xssA, xssB, xssE, xssN, xssP) was very low in \u2206xssQ compared with WT, whereas that of xssF, xssH, and xssK was not substantially affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "5b352ee6-a5ee-4270-9095-dd75df8e34de",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C47",
+      "claim": "XssQ transcriptionally activates genes encoding sulfotransferases and certain glycosyltransferases but not genes for polymerization and export via the Wzx/Wzy system.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that XssQ transcriptionally activates genes encoding sulfotransferases and certain glycosyltransferases but not genes for polymerization and export via the Wzx/Wzy system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on qPCR data showing differential gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "da2edf69-8463-4b34-b4ae-1e962b0b0bdc",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C48",
+      "claim": "The genes down-regulated in \u0394xssQ and up-regulated in \u0394xssS were mostly xss genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes down-regulated in \u0394xssQ and up-regulated in \u0394xssS were mostly xss genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "d6cae0f0-f099-4667-835c-66978c02c5ab",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C49",
+      "claim": "xssA-E and xssL-P were specifically regulated by XssS/XssR/XssQ.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that xssA-E and xssL-P were specifically regulated by XssS/XssR/XssQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on RNA-seq and qPCR data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "d759793e-ce24-407d-b10e-786ffe1ac059",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C50",
+      "claim": "xssA\u2013xssE and xssL\u2013xssP were up-regulated at low temperature in another substrain of Synechocystis 6803.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous report, xssA\u2013xssE and xssL\u2013xssP were up-regulated at low temperature in another substrain of Synechocystis 6803 (Kopf et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "df077f03-4cec-4ddc-b46e-3ee2bca65e1e",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C51",
+      "claim": "Sulfated EPS accumulation at 20\u00b0C was 3.1-fold greater than that at normal growth temperature (31\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "To test this in our substrain, we measured the sulfated EPS accumulation of WT culture at 20\u00b0C, and it was 3.1-fold greater than that at normal growth temperature (31\u00b0C; Figure 2D,E and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "dfa12506-8df1-4d6b-af5b-0d2e370edbf1",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C52",
+      "claim": "XssS/XssR/XssQ is a temperature sensor for xss gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that XssS/XssR/XssQ is a temperature sensor for xss gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temperature-dependent EPS accumulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "613710da-1dc1-4273-ba6b-e25dc0c34a28",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C53",
+      "claim": "There are single or tandem consensus sequences, AAGTTXXAC, in the upstream regions of regulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "There are single or tandem consensus sequence, AAGTTXXAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "b3ff84ce-d13b-4c38-ba60-11cea7732204",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C54",
+      "claim": "XssQ binds to the consensus sequence of xssE and other target genes for their transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that XssQ recognizes the consensus sequence of xssE and other target genes for their transcriptional activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EMSA experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "11396008-938c-4f5f-909a-5d0afa9d1260",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C55",
+      "claim": "EPS from \u2206xssS consisted of only four types of monosaccharides and sulfate with the near stoichiometric molar ratio of rhamnose:mannose:galactose:glucose:sulfate of 1:1:1:5:2.",
+      "claim_type": "EXPLICIT",
+      "source": "EPS from \u2206xssS consisted of only four types of monosaccharides and sulfate with the near stoichiometric molar ratio of rhamnose:mannose:galactose:glucose:sulfate of 1:1:1:5:2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chemical composition analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "5ba54390-3421-4f86-82b5-4cd65883a42a",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C56",
+      "claim": "The sulfated EPS of \u2206xssS is produced by the xss cluster in Synechocystis 6803 and was designated 'synechan'.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that the sulfated EPS of \u2206xssS is produced by the xss cluster in Synechocystis 6803 and designated 'synechan'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the chemical composition and genetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "e34d8a4d-6dcd-4adc-9333-88e4e07bda27",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C57",
+      "claim": "The EPS fraction from WT likely contained unknown polysaccharides consisting of mannose, fucose, and xylose in addition to synechan of the \u2206xssS.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the EPS fraction from WT likely contained unknown polysaccharides consisting of mannose, fucose, and xylose in addition to synechan of the \u2206xssS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the chemical composition analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "05ae4218-8eb6-44eb-b092-dc961ba78086",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C58",
+      "claim": "Membrane filtration is effective to collect synechan selectively from the 'free' polysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be mentioned that the membrane filtration is effective to collect synechan selectively from the 'free' polysaccharides, which have been mixed together with viscous molecules in literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the fractionation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "4f47f176-a614-424f-bd16-cf68f137f515",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C59",
+      "claim": "Disruption of sll1581 (\u0394sll1581) abolished bloom formation and EPS accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of sll1581 (\u0394sll1581) abolished bloom formation and EPS accumulation (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene disruption experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "bf11a0ad-9cca-4e4a-8058-1e34c492fba0",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C60",
+      "claim": "The chromosomal OPX protein Sll1581 (XssT) serves as the outer-membrane exporter for synechan.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the chromosomal OPX protein Sll1581 (XssT) appears to serve as the outer-membrane exporter for synechan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phenotype of the \u0394sll1581 mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "0a3acf66-7c3b-4629-9f31-e1971ec9cf0a",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C61",
+      "claim": "Synechocystis 6803 possesses xssT (OPX gene) and sll0923 (a second PCP-2a gene) on the main chromosome and xssK (PCP-2a gene) on the plasmid pSYSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Synechocystis 6803 possesses xssT (OPX gene) and sll0923 (a second PCP-2a gene) on the main chromosome and xssK (PCP-2a gene) on the plasmid pSYSM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "5d337865-8351-421f-b614-416cacadd5df",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C62",
+      "claim": "Synechocystis 6714 harbors only homologs of sll0923 and xssT but lacks the entire plasmid carrying the xss cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas its close relative Synechocystis 6714 harbors only homologs of sll0923 and xssT but lacks the entire plasmid carrying the xss cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "3e69f6d3-04d5-431a-bcfe-bff43214664d",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C63",
+      "claim": "XssT serves as an OPX for dual function for both XssK and Sll0923.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that XssT serves as an OPX for dual function for both XssK and Sll0923.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genomic organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "79855797-4b7e-4e2f-bedd-b966864a68e4",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C64",
+      "claim": "Synechocystis 6803 acquired pSYSM and borrowed the chromosomal OPX gene xssT to produce synechan, or alternatively, Synechocystis 6714 may have lost the plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that Synechocystis 6803 acquired pSYSM and borrowed the chromosomal OPX gene xssT to produce synechan or, alternatively, Synechocystis 6714 may have lost the plasmid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on comparative genomic analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "3b6c86a8-3065-4b69-aa02-90ec99f422b2",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C65",
+      "claim": "The model of the Xss apparatus fits well with the known Wzx/Wzy-dependent apparatus represented by xanthan biosynthesis in Xanthomonas campestris.",
+      "claim_type": "EXPLICIT",
+      "source": "The model of the Xss apparatus fits well with the known Wzx/Wzy-dependent apparatus represented by xanthan biosynthesis in Xanthomonas campestris (Katzen et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "a2fcd2f2-f13c-4f03-9492-7d9f9b1e6e60",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C66",
+      "claim": "The eight glycosyltransferases including XssP produce oligosaccharide repeat unit of eight sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "The eight glycosyltransferases including XssP (the priming glycosyltransferase) produce oligosaccharide repeat unit of eight sugars, which is consistent with the sugar composition of synechan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the number of glycosyltransferases and the sugar composition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "017a96e7-9d7e-4fd5-b397-02bc9aff1f6e",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C67",
+      "claim": "The xss cluster on the pSYSM plasmid harbors a whole set of genes for synechan biosynthesis except the OPX gene (xssT on the main chromosome).",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the xss cluster on the pSYSM plasmid harbors a whole set of genes for synechan biosynthesis except the OPX gene (xssT on the main chromosome).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on genetic and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "b0eb45b0-291e-4584-9a56-b3e76f9ae02a",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C68",
+      "claim": "The cluster harbors two sulfotransferase genes, which have not been found in other bacterial gene clusters for extracellular polysaccharide biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the cluster harbors two sulfotransferase genes, which have not been found to our knowledge in other bacterial gene clusters for extracellular polysaccharide biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative analysis of gene clusters.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "256338a5-874c-4b48-a2fb-ba3891b57f17",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C69",
+      "claim": "Sulfotransferases, XssA and XssE, belong to distinct subfamilies of bacterial sulfotransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Sulfotransferases, XssA and XssE, belong to distinct subfamilies of bacterial sulfotransferases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "40003c61-7898-44bf-8692-1d9f8196341a",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C70",
+      "claim": "Many sulfotransferase genes are found in various cyanobacterial genomes by Pfam search.",
+      "claim_type": "EXPLICIT",
+      "source": "We found many sulfotransferase genes in various cyanobacterial genomes by Pfam search (PF00685, PF03567, PF13469).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "9649cff1-d52d-4b22-bfbe-c7c08505a966",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C71",
+      "claim": "Sulfotransferase genes are mostly found in gene clusters for putative extracellular polysaccharide biosynthesis (Wzx/Wzy-type and ABC-type).",
+      "claim_type": "EXPLICIT",
+      "source": "They are mostly found in gene clusters for putative extracellular polysaccharide biosynthesis (Wzx/Wzy-type and ABC-type) (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatics analysis shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "fc8fc14a-9508-49b7-bd07-073d15eff424",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C72",
+      "claim": "The xss cluster appears to be complete except the OPX gene in Synechocystis 6803.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that they are more or less partial as a cluster for extracellular polysaccharide biosynthesis system, whereas the xss cluster appears to be complete except the OPX gene in Synechocystis 6803.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on bioinformatics analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "22ac35d4-f117-485d-96d3-3958d0c18064",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C73",
+      "claim": "Free EPS are produced by the Wzx/Wzy-dependent and synthase-dependent pathways but not by the ABC transporter\u2013dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that our \u2206sll0923 did not show any defect in the bloom formation. On the other hand, disruption of sigF (slr1564) for a sigma factor of global cell surface regulation increased three- to fourfold accumulation of sulfated EPS preparation (Flores et al., 2019a; Flores et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "b51a880c-00ce-4f0b-9b0f-c4c411126b3c",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C74",
+      "claim": "XssQ homologs are found widely throughout the cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "XssQ homologs are found widely throughout the cyanobacteria but the set of XssS/XssR/XssQ is found near the gene cluster for sulfated EPS biosynthesis with sulfotransferases in many cyanobacteria (Figure 4\u2014figure supplement 2, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatics analysis shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "4f0f4114-399a-454f-ab70-f706e3889857",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C75",
+      "claim": "The set of XssS/XssR/XssQ is found near the gene cluster for sulfated EPS biosynthesis with sulfotransferases in many cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "XssQ homologs are found widely throughout the cyanobacteria but the set of XssS/XssR/XssQ is found near the gene cluster for sulfated EPS biosynthesis with sulfotransferases in many cyanobacteria (Figure 4\u2014figure supplement 2, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatics analysis shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "8294d4de-05f8-49cc-88fe-83d78e07aedb",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C76",
+      "claim": "The XssS/XssR/XssQ system may operate universally for induction of sulfated EPS production under certain environmental conditions such as cold temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Consensus sequences are also found in upstream of some genes in the cluster, suggesting that the XssS/XssR/XssQ system may operate universally for induction of sulfated EPS production under certain environmental conditions such as cold temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the conservation of the regulatory system and consensus sequences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "0c7aa689-e2ba-4e7d-92cd-3412aa4ccea6",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C77",
+      "claim": "Sulfated polysaccharides are produced exclusively by cyanobacteria among bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Acidic polysaccharides containing uronic acids and other carboxylic groups are common in bacteria, but sulfated polysaccharides are produced exclusively by cyanobacteria (Pereira et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "3001284a-df11-4f62-abcc-c8054a7f9b43",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C78",
+      "claim": "Species living in high salinity environments such as a salt lake or seawater mostly produce sulfated polysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "Species living in high salinity environments such as a salt lake or seawater mostly produce sulfated polysaccharides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the distribution of sulfotransferase genes in cyanobacteria.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "66d27999-ef87-43a9-99ce-2632ec4d59df",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C79",
+      "claim": "Abundant sulfotransferases are found in the marine Trichodesmium that forms bloom-like colonies to collect dust-bound iron for nutrition.",
+      "claim_type": "EXPLICIT",
+      "source": "Abundant sulfotransferases are found in the marine Trichodesmium that forms bloom-like colonies to collect dust-bound iron for nutrition (Rubin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatics analysis and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "7b80ca8f-dc6e-4fd8-8e95-84db9295322f",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C80",
+      "claim": "Sulfated polysaccharides may play a role for adsorbing metal ions such as iron in saline environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Sulfated polysaccharides may play a role for adsorbing metal ions such as iron in saline environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the distribution of sulfotransferases and ecological context.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "c20d10fc-bf4c-4d8a-ba3f-46f1a87ca66d",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C81",
+      "claim": "The xss genes are up-regulated in iron deficient conditions in Synechocystis 6803.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the xss genes are up-regulated in iron deficient conditions in Synechocystis 6803 (Kopf et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "7c59a018-76ba-4393-afc0-5499992a9cc9",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C82",
+      "claim": "The freshwater species Synechocystis sp. PCC 6714 lacks the xss genes including sulfotransferases and salt-resistance genes that are present in the more salt-resistant Synechocystis 6803.",
+      "claim_type": "EXPLICIT",
+      "source": "The freshwater species Synechocystis sp. PCC 6714 lacks the xss genes including sulfotransferases and salt-resistance genes that are present in the more salt-resistant Synechocystis 6803 (Kopf et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "5b3fef66-6f99-4fb8-aebf-912113767170",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C83",
+      "claim": "Sacran shows much higher capacity for saline absorption than does uronic acid-containing polysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "A cyanobacterial sulfated polysaccharide, sacran, shows much higher capacity for saline absorption than does uronic acid-containing polysaccharides, whereas both absorb pure water efficiently (Okajima et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "b743cde5-d3d5-4759-a96a-c96b391a3d25",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C84",
+      "claim": "Both sacran and uronic acid-containing polysaccharides absorb pure water efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "A cyanobacterial sulfated polysaccharide, sacran, shows much higher capacity for saline absorption than does uronic acid-containing polysaccharides, whereas both absorb pure water efficiently (Okajima et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "cfa38742-2cde-469d-847e-8ea8e1a0d6d6",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C85",
+      "claim": "The gas-trapped EPS is sufficient for bloom formation of Synechocystis 6803, which does not produce gas vesicles, without addition of any divalent cations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, our study demonstrated that the gas-trapped EPS is sufficient for bloom formation of Synechocystis 6803, which does not produce gas vesicles, without addition of any divalent cations (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "cd46acae-20be-4bf5-ba68-f6b97bbcc65a",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C86",
+      "claim": "Cyanobacteria without gas vesicles form blooms in natural environments, including freshwater lakes.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with reports that cyanobacteria without gas vesicles form booms in natural environments, including freshwater lakes (Casero et al., 2019; du Plooy et al., 2015; Steffen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "2ee85074-a4e7-46a9-a588-fd650da75e88",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C87",
+      "claim": "Some sulfated EPS from Synechocystis 6803 showed antitumor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Some sulfated EPS from Synechocystis 6803 showed antitumor activity (Flores et al., 2019a), though this EPS may not be identical to synechan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "9c7fee2c-4ad1-43e0-9232-2404b2930ed3",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C88",
+      "claim": "The Xss-dependent biosynthesis of synechan in Synechocystis 6803 should be a good model for studies of other cyanobacterial sulfated polysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "The Xss-dependent biosynthesis of synechan in Synechocystis 6803 should be a good model for studies of other cyanobacterial sulfated polysaccharides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the utility of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "4075e370-7f63-4365-8288-1b109a6be2d7",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C89",
+      "claim": "Many xss genes on the plasmid are expressed several times higher in the motile substrain than the non-motile one except for xssT on the main chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that many xss genes on the plasmid are expressed several times higher in the motile substrain than the non-motile one except for xssT on the main chromosome, despite that the nucleotide sequence of the xss gene cluster was completely conserved between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "2f775656-a375-4198-bec8-43f5a0b2dd04",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C90",
+      "claim": "The nucleotide sequence of the xss gene cluster was completely conserved between the motile and non-motile substrains.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that many xss genes on the plasmid are expressed several times higher in the motile substrain than the non-motile one except for xssT on the main chromosome, despite that the nucleotide sequence of the xss gene cluster was completely conserved between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "4408fcae-56a0-4c80-a282-d2f71fbec605",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C91",
+      "claim": "Another signaling via XssS/XssR/XssQ may contribute to the difference in bloom formation and synechan production between the substrains.",
+      "claim_type": "EXPLICIT",
+      "source": "This fact suggests a possibility that another signaling via XssS/XssR/XssQ may contribute to the difference in bloom formation and synechan production between the substrains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the transcriptome differences.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "468c763a-5d77-46df-b0e0-6acda6cd5248",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C92",
+      "claim": "Cell aggregation of another motile substrain of Synechocystis 6803 requires type IV pili apparatus, which drives cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cell aggregation of another motile substrain of Synechocystis 6803 requires type IV pili apparatus, which drives cell motility (Conradi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "8803886f-df8e-4bf3-8928-ed6ec6428c00",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C93",
+      "claim": "Cell aggregation of another non-motile substrain requires the type IV pili but this aggregation was enhanced by disruption of the OPX gene (xssT).",
+      "claim_type": "EXPLICIT",
+      "source": "Cell aggregation of another non-motile substrain also requires the type IV pili but this aggregation was enhanced by disruption of the OPX gene (xssT) (Allen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "a66934d9-5474-473b-8faf-dbe961191253",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "claim_id": "C94",
+      "claim": "Cell aggregation and bloom formation may be complex phenomena of extracellular polysaccharides and type IV pili in Synechocystis 6803.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cell aggregation and bloom formation may be complex phenomena of extracellular polysaccharides and type IV pili in Synechocystis 6803.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the integration of findings from this and other studies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A motile substrain of Synechocystis sp. PCC 6803 forms bloom-like cell aggregates embedded in sulfated extracellular polysaccharides (designated synechan) through a two-step culture process, with photosynthesis-derived gas driving flotation. The non-motile substrain does not exhibit this phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14, C15 establish the bloom formation phenotype with experimental observations. Claims C16-C17 describe the two-step culture method. Claims C19-C20 demonstrate photosynthesis-dependent flotation through DCMU inhibition experiments (Figure 1C). Claim C21 provides a negative control with the non-motile substrain. The evidence converges to support this major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The xss gene cluster on plasmid pSYSM contains genes encoding sulfotransferases, glycosyltransferases, and components of the Wzx/Wzy-dependent polysaccharide biosynthesis pathway. Gene disruption experiments demonstrate that specific genes (xssA, xssB, xssF, xssH, xssK, xssM, xssN, xssP) are essential for bloom formation and EPS accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 establish slr5054 as essential through gene disruption. Claims C26-C30 characterize the xss cluster composition through genomic analysis. Claims C31-C34 systematically test individual genes through disruption experiments with clear phenotypic outcomes. The Alcian blue staining (C24-C25) provides evidence for sulfation. The inference about the Wzx/Wzy pathway (C35) is well-supported by the gene composition data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "11267174-a85e-46cf-b361-22029bf15252",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The XssS/XssR/XssQ regulatory system controls synechan biosynthesis, where the sensor histidine kinase XssS suppresses the response regulator XssR, leading to activation of the transcriptional activator XssQ. Genetic manipulation experiments demonstrate this regulatory hierarchy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 present a comprehensive set of genetic manipulation experiments (deletions, overexpression, and combinations) that establish the regulatory hierarchy. The epistasis experiments (C40-C41) are particularly strong evidence. Claim C42 synthesizes these observations into a coherent model. Claim C43 provides additional phenotypic support. The logic is sound and the experimental design addresses alternative hypotheses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "64dde1bc-f139-437f-ba4a-3b35f483310f",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "XssQ is a novel STAND protein with a DNA-binding domain that transcriptionally activates specific xss genes (xssA-E and xssL-P) by binding to consensus sequences (AAGTTXXAC) in their promoter regions, as demonstrated by qPCR, RNA-seq, and EMSA experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 establishes XssQ as a novel STAND protein through domain analysis. Claims C45-C49 use qPCR and RNA-seq to identify target genes with consistent results. Claims C53-C54 identify consensus sequences and demonstrate direct DNA binding through EMSA with appropriate controls (native and mutant competitors). The multiple lines of evidence (expression analysis, sequence analysis, and biochemical binding) strongly support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "1f262efd-001e-4374-ac25-499e66f39005",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The XssS/XssR/XssQ system functions as a temperature sensor, with sulfated EPS accumulation increasing 3.1-fold at 20\u00b0C compared to 31\u00b0C, consistent with prior reports of temperature-dependent xss gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 cites prior literature showing temperature-dependent gene expression. Claim C51 provides quantitative experimental data (3.1-fold increase) with appropriate controls. Claim C52 synthesizes these observations into a functional interpretation. The evidence is consistent and the inference is reasonable, though the molecular mechanism of temperature sensing is not elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "263288f3-efa2-497c-89c7-eb04cfb75995",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Chemical composition analysis reveals that synechan from \u0394xssS consists of four monosaccharides and sulfate in a near-stoichiometric ratio (rhamnose:mannose:galactose:glucose:sulfate = 1:1:1:5:2), while wild-type EPS contains additional unknown polysaccharides. Membrane filtration effectively separates synechan from free polysaccharides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 provides detailed chemical composition data with specific molar ratios. Claims C56-C57 interpret the compositional differences between \u0394xssS and WT, with C56 appropriately using cautious language ('assumed'). Claim C58 addresses methodological considerations. The chemical analysis appears rigorous and the interpretation that \u0394xssS produces a more homogeneous product is reasonable. The stoichiometry roughly matches the number of glycosyltransferase and sulfotransferase genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "5bcf6a1f-5877-4b74-bffe-0e086e87849b",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The chromosomal gene sll1581 (xssT) encodes the outer-membrane polysaccharide export protein (OPX) for synechan biosynthesis. Comparative genomic analysis suggests XssT may serve dual functions for both plasmid-encoded XssK and chromosomal Sll0923, and that Synechocystis 6803 may have acquired the xss-containing plasmid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 demonstrates that \u0394sll1581 abolishes bloom formation and EPS accumulation, providing strong functional evidence. Claim C60 infers the OPX function, which is reasonable given the phenotype and the known role of OPX proteins. Claims C61-C63 use comparative genomics to support the dual function hypothesis. Claim C64 is appropriately presented as speculation about evolutionary history. The functional data is strong, though the evolutionary interpretation is more tentative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "b85b4368-a91a-48ed-bc99-0be6022d7325",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The xss cluster represents a complete Wzx/Wzy-dependent biosynthesis system (except OPX) that is unique among bacteria in containing two sulfotransferase genes from distinct subfamilies. The eight glycosyltransferases likely produce an eight-sugar repeat unit consistent with synechan composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 compares the system to the well-characterized xanthan biosynthesis pathway. Claim C66 makes a reasonable inference connecting gene number to sugar composition. Claim C67 synthesizes the genetic and biochemical findings. Claims C68-C69 highlight the novelty of having two sulfotransferases from different subfamilies. The comparison to known systems is appropriate and the inference about repeat unit structure is logical, though direct structural determination would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "78ff8de1-b888-4199-9d29-f13c3bc0709b",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Bioinformatics analysis reveals that sulfotransferase genes and the XssS/XssR/XssQ regulatory system are widely distributed in cyanobacterial genomes, typically associated with gene clusters for sulfated EPS biosynthesis. The xss cluster in Synechocystis 6803 appears to be the most complete example identified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 report bioinformatics findings about sulfotransferase distribution. Claim C72 compares cluster completeness across species. Claims C74-C75 document the distribution of the regulatory system. Claim C76 is appropriately presented as speculation about universal function. The bioinformatics analysis appears systematic and the identification of conserved regulatory elements strengthens the functional predictions. However, experimental validation in other species would be needed to confirm universal function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "ca04a695-06a2-446b-91f8-de2252be52a8",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sulfated polysaccharides in cyanobacteria may function in metal ion adsorption and water retention in saline environments, as suggested by the distribution of sulfotransferase genes in halophilic species, upregulation under iron deficiency, and the superior saline absorption capacity of sulfated polysaccharides compared to uronic acid-containing polysaccharides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79 present correlative bioinformatics observations. Claims C80 is speculation. Claims C81-C84 cite prior literature supporting various aspects of the hypothesis. While the ecological correlation is interesting and the cited properties of sulfated polysaccharides are relevant, direct experimental evidence linking synechan to these specific functions is lacking. The hypothesis is plausible but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "390514da-2d1a-4ccf-9423-4b01ca105822",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Gas-trapped EPS is sufficient for bloom formation in Synechocystis 6803 without gas vesicles or added divalent cations, consistent with reports of blooms formed by cyanobacteria lacking gas vesicles in natural environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 presents experimental evidence that bloom formation occurs without gas vesicles or added cations. Claim C86 cites literature showing this phenomenon occurs in nature. The experimental demonstration is clear and the consistency with natural observations strengthens the ecological relevance. This represents an important mechanistic insight into bloom formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "d51aa3fe-03d9-4da6-9efd-2445036dabe9",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Transcriptome comparison reveals that xss genes are expressed several times higher in the motile substrain compared to the non-motile substrain despite complete conservation of the xss cluster sequence, suggesting additional regulatory mechanisms may contribute to strain differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 present transcriptome and genomic sequence data showing differential expression despite sequence conservation. Claim C91 appropriately presents the interpretation as speculation. The data clearly demonstrate strain-specific regulation, though the molecular basis remains unclear. This is an important observation for understanding the variability in EPS production.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "199e885e-6d51-4c11-87e0-d755cef9ca68",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge claims about bacterial extracellular polysaccharides, cyanobacterial biology, and sulfated polysaccharides are established through citations to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide context and background knowledge supported by appropriate citations. They establish the significance of the work and place it in the broader context of bacterial polysaccharide biology. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    },
+    {
+      "id": "07553bd2-1b03-40dd-8117-68eccbba3835",
+      "content_id": "d269033a-926a-48a8-8366-23b5408f89d9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that the Xss-dependent biosynthesis system could serve as a model for studying other cyanobacterial sulfated polysaccharides, and that cell aggregation and bloom formation may involve complex interactions between extracellular polysaccharides and type IV pili.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are forward-looking speculation claims (C88) and synthesis of findings from multiple studies (C94). While reasonable, they represent hypotheses for future work rather than demonstrated results. Claim C94 integrates findings from other studies (C92-C93) but the mechanistic details remain unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:13:59.887916Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a72bc5f9-ce77-436b-8f39-f53ad537e49b",
+      "result_id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab"
+    },
+    {
+      "claim_id": "6fcd1a13-1aea-4415-944d-54b3568e332a",
+      "result_id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab"
+    },
+    {
+      "claim_id": "7cb3cb22-bc7d-4d56-8e7e-4bd029c508b8",
+      "result_id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab"
+    },
+    {
+      "claim_id": "531e45db-669b-47f1-8a9e-fcdcf66e90a4",
+      "result_id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab"
+    },
+    {
+      "claim_id": "d295b610-7a81-4813-85f2-83533f4dc326",
+      "result_id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab"
+    },
+    {
+      "claim_id": "fa725047-06d9-4f49-ac13-ef57ba5a3833",
+      "result_id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab"
+    },
+    {
+      "claim_id": "a52f17a0-864d-4c4b-a249-bf28bca28c7a",
+      "result_id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab"
+    },
+    {
+      "claim_id": "56747309-2e19-4aae-8c8e-b6b3b702c48e",
+      "result_id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab"
+    },
+    {
+      "claim_id": "36bb3d6c-7e1d-41b9-ac81-fca2c72b5b98",
+      "result_id": "91916a07-d9e3-4a19-92ca-fcecb27e23ab"
+    },
+    {
+      "claim_id": "f4ceb68d-9e91-483c-bda4-956ec5ca24d3",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "18e98ac9-5da9-4f40-9cf2-f313842d1b6c",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "73ab0a9a-456a-46d8-9def-067cefa9beb9",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "a5e90cd6-18f3-4a46-9e6f-63679aa32de2",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "fb75e439-fe88-4e5c-bfc5-928480841175",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "66d5eb32-1e42-4590-bcf2-dc2d3176bc8d",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "4ab831c0-7d68-4256-9bdc-3f777221bce3",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "5b8cd039-741f-4756-affc-e9e703832f2f",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "2c287efa-3ccc-4a12-a029-adfa7d22b637",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "b889283a-8373-451c-a2b3-8fa04906ff5b",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "117c2dbe-9a02-46a2-aa8e-c8b52c523106",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "b5ee30d9-761a-42f3-8054-30c1cb550da8",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "57a42ada-9b45-4f11-a205-52432ff907a6",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "88aa74d6-d0ec-48a3-ac36-d62b890a4a5a",
+      "result_id": "f6ba9dbf-9d7f-4b04-8434-f554dfaa992b"
+    },
+    {
+      "claim_id": "f998ced3-39ef-4215-aa48-81f647461d82",
+      "result_id": "11267174-a85e-46cf-b361-22029bf15252"
+    },
+    {
+      "claim_id": "8f5b50a1-5996-44a7-9f7e-957086339713",
+      "result_id": "11267174-a85e-46cf-b361-22029bf15252"
+    },
+    {
+      "claim_id": "61562607-83cc-442c-8c86-9e2e7c3db079",
+      "result_id": "11267174-a85e-46cf-b361-22029bf15252"
+    },
+    {
+      "claim_id": "612ab5b1-cc92-4afb-8ed6-693a2857ddd7",
+      "result_id": "11267174-a85e-46cf-b361-22029bf15252"
+    },
+    {
+      "claim_id": "7d72727d-8799-45aa-afad-7fc3f83c00c3",
+      "result_id": "11267174-a85e-46cf-b361-22029bf15252"
+    },
+    {
+      "claim_id": "b7536bd9-d1ad-4f73-b156-643fcf7aff6a",
+      "result_id": "11267174-a85e-46cf-b361-22029bf15252"
+    },
+    {
+      "claim_id": "6ef1809f-7eed-4b6d-b274-ec2295ce4fc6",
+      "result_id": "11267174-a85e-46cf-b361-22029bf15252"
+    },
+    {
+      "claim_id": "cf5e0071-e726-4d8f-b04f-4f319b9d5a50",
+      "result_id": "11267174-a85e-46cf-b361-22029bf15252"
+    },
+    {
+      "claim_id": "7b8346d3-502a-432e-bdaa-088a77c51de6",
+      "result_id": "64dde1bc-f139-437f-ba4a-3b35f483310f"
+    },
+    {
+      "claim_id": "1ca0ccbf-ab5b-4bb5-a4a4-a3cb3a929600",
+      "result_id": "64dde1bc-f139-437f-ba4a-3b35f483310f"
+    },
+    {
+      "claim_id": "615abca9-8107-4749-aedc-99552be87bba",
+      "result_id": "64dde1bc-f139-437f-ba4a-3b35f483310f"
+    },
+    {
+      "claim_id": "5b352ee6-a5ee-4270-9095-dd75df8e34de",
+      "result_id": "64dde1bc-f139-437f-ba4a-3b35f483310f"
+    },
+    {
+      "claim_id": "da2edf69-8463-4b34-b4ae-1e962b0b0bdc",
+      "result_id": "64dde1bc-f139-437f-ba4a-3b35f483310f"
+    },
+    {
+      "claim_id": "d6cae0f0-f099-4667-835c-66978c02c5ab",
+      "result_id": "64dde1bc-f139-437f-ba4a-3b35f483310f"
+    },
+    {
+      "claim_id": "613710da-1dc1-4273-ba6b-e25dc0c34a28",
+      "result_id": "64dde1bc-f139-437f-ba4a-3b35f483310f"
+    },
+    {
+      "claim_id": "b3ff84ce-d13b-4c38-ba60-11cea7732204",
+      "result_id": "64dde1bc-f139-437f-ba4a-3b35f483310f"
+    },
+    {
+      "claim_id": "d759793e-ce24-407d-b10e-786ffe1ac059",
+      "result_id": "1f262efd-001e-4374-ac25-499e66f39005"
+    },
+    {
+      "claim_id": "df077f03-4cec-4ddc-b46e-3ee2bca65e1e",
+      "result_id": "1f262efd-001e-4374-ac25-499e66f39005"
+    },
+    {
+      "claim_id": "dfa12506-8df1-4d6b-af5b-0d2e370edbf1",
+      "result_id": "1f262efd-001e-4374-ac25-499e66f39005"
+    },
+    {
+      "claim_id": "11396008-938c-4f5f-909a-5d0afa9d1260",
+      "result_id": "263288f3-efa2-497c-89c7-eb04cfb75995"
+    },
+    {
+      "claim_id": "5ba54390-3421-4f86-82b5-4cd65883a42a",
+      "result_id": "263288f3-efa2-497c-89c7-eb04cfb75995"
+    },
+    {
+      "claim_id": "e34d8a4d-6dcd-4adc-9333-88e4e07bda27",
+      "result_id": "263288f3-efa2-497c-89c7-eb04cfb75995"
+    },
+    {
+      "claim_id": "05ae4218-8eb6-44eb-b092-dc961ba78086",
+      "result_id": "263288f3-efa2-497c-89c7-eb04cfb75995"
+    },
+    {
+      "claim_id": "4f47f176-a614-424f-bd16-cf68f137f515",
+      "result_id": "5bcf6a1f-5877-4b74-bffe-0e086e87849b"
+    },
+    {
+      "claim_id": "bf11a0ad-9cca-4e4a-8058-1e34c492fba0",
+      "result_id": "5bcf6a1f-5877-4b74-bffe-0e086e87849b"
+    },
+    {
+      "claim_id": "0a3acf66-7c3b-4629-9f31-e1971ec9cf0a",
+      "result_id": "5bcf6a1f-5877-4b74-bffe-0e086e87849b"
+    },
+    {
+      "claim_id": "5d337865-8351-421f-b614-416cacadd5df",
+      "result_id": "5bcf6a1f-5877-4b74-bffe-0e086e87849b"
+    },
+    {
+      "claim_id": "3e69f6d3-04d5-431a-bcfe-bff43214664d",
+      "result_id": "5bcf6a1f-5877-4b74-bffe-0e086e87849b"
+    },
+    {
+      "claim_id": "79855797-4b7e-4e2f-bedd-b966864a68e4",
+      "result_id": "5bcf6a1f-5877-4b74-bffe-0e086e87849b"
+    },
+    {
+      "claim_id": "3b6c86a8-3065-4b69-aa02-90ec99f422b2",
+      "result_id": "b85b4368-a91a-48ed-bc99-0be6022d7325"
+    },
+    {
+      "claim_id": "a2fcd2f2-f13c-4f03-9492-7d9f9b1e6e60",
+      "result_id": "b85b4368-a91a-48ed-bc99-0be6022d7325"
+    },
+    {
+      "claim_id": "017a96e7-9d7e-4fd5-b397-02bc9aff1f6e",
+      "result_id": "b85b4368-a91a-48ed-bc99-0be6022d7325"
+    },
+    {
+      "claim_id": "b0eb45b0-291e-4584-9a56-b3e76f9ae02a",
+      "result_id": "b85b4368-a91a-48ed-bc99-0be6022d7325"
+    },
+    {
+      "claim_id": "256338a5-874c-4b48-a2fb-ba3891b57f17",
+      "result_id": "b85b4368-a91a-48ed-bc99-0be6022d7325"
+    },
+    {
+      "claim_id": "40003c61-7898-44bf-8692-1d9f8196341a",
+      "result_id": "78ff8de1-b888-4199-9d29-f13c3bc0709b"
+    },
+    {
+      "claim_id": "9649cff1-d52d-4b22-bfbe-c7c08505a966",
+      "result_id": "78ff8de1-b888-4199-9d29-f13c3bc0709b"
+    },
+    {
+      "claim_id": "fc8fc14a-9508-49b7-bd07-073d15eff424",
+      "result_id": "78ff8de1-b888-4199-9d29-f13c3bc0709b"
+    },
+    {
+      "claim_id": "b51a880c-00ce-4f0b-9b0f-c4c411126b3c",
+      "result_id": "78ff8de1-b888-4199-9d29-f13c3bc0709b"
+    },
+    {
+      "claim_id": "4f0f4114-399a-454f-ab70-f706e3889857",
+      "result_id": "78ff8de1-b888-4199-9d29-f13c3bc0709b"
+    },
+    {
+      "claim_id": "8294d4de-05f8-49cc-88fe-83d78e07aedb",
+      "result_id": "78ff8de1-b888-4199-9d29-f13c3bc0709b"
+    },
+    {
+      "claim_id": "3001284a-df11-4f62-abcc-c8054a7f9b43",
+      "result_id": "ca04a695-06a2-446b-91f8-de2252be52a8"
+    },
+    {
+      "claim_id": "66d27999-ef87-43a9-99ce-2632ec4d59df",
+      "result_id": "ca04a695-06a2-446b-91f8-de2252be52a8"
+    },
+    {
+      "claim_id": "7b80ca8f-dc6e-4fd8-8e95-84db9295322f",
+      "result_id": "ca04a695-06a2-446b-91f8-de2252be52a8"
+    },
+    {
+      "claim_id": "c20d10fc-bf4c-4d8a-ba3f-46f1a87ca66d",
+      "result_id": "ca04a695-06a2-446b-91f8-de2252be52a8"
+    },
+    {
+      "claim_id": "7c59a018-76ba-4393-afc0-5499992a9cc9",
+      "result_id": "ca04a695-06a2-446b-91f8-de2252be52a8"
+    },
+    {
+      "claim_id": "5b3fef66-6f99-4fb8-aebf-912113767170",
+      "result_id": "ca04a695-06a2-446b-91f8-de2252be52a8"
+    },
+    {
+      "claim_id": "b743cde5-d3d5-4759-a96a-c96b391a3d25",
+      "result_id": "ca04a695-06a2-446b-91f8-de2252be52a8"
+    },
+    {
+      "claim_id": "cfa38742-2cde-469d-847e-8ea8e1a0d6d6",
+      "result_id": "390514da-2d1a-4ccf-9423-4b01ca105822"
+    },
+    {
+      "claim_id": "cd46acae-20be-4bf5-ba68-f6b97bbcc65a",
+      "result_id": "390514da-2d1a-4ccf-9423-4b01ca105822"
+    },
+    {
+      "claim_id": "4075e370-7f63-4365-8288-1b109a6be2d7",
+      "result_id": "d51aa3fe-03d9-4da6-9efd-2445036dabe9"
+    },
+    {
+      "claim_id": "2f775656-a375-4198-bec8-43f5a0b2dd04",
+      "result_id": "d51aa3fe-03d9-4da6-9efd-2445036dabe9"
+    },
+    {
+      "claim_id": "4408fcae-56a0-4c80-a282-d2f71fbec605",
+      "result_id": "d51aa3fe-03d9-4da6-9efd-2445036dabe9"
+    },
+    {
+      "claim_id": "fc534afd-320b-41fa-b46e-3e449c4e94d4",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "a972b4e3-3766-4459-ab47-22f076d84b43",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "5b664768-782c-4bec-90c2-9f3309d57783",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "09b63130-15df-4947-a94c-348e40e39f9b",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "7d504b12-f7be-429d-a818-08d325a2afbe",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "93d1269d-86f6-435e-a390-760a68b2be04",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "d4f51ad5-9146-41a2-9742-e5e385cbdfbb",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "118083e4-b9c2-46d0-9523-dc5affce565e",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "bd73e26d-f460-44e7-8c4c-15dab1d9bcf0",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "1408ad07-971d-448f-b040-d14a791c7ff0",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "a5e90cd6-18f3-4a46-9e6f-63679aa32de2",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "22ac35d4-f117-485d-96d3-3958d0c18064",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "0c7aa689-e2ba-4e7d-92cd-3412aa4ccea6",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "2ee85074-a4e7-46a9-a588-fd650da75e88",
+      "result_id": "199e885e-6d51-4c11-87e0-d755cef9ca68"
+    },
+    {
+      "claim_id": "9c7fee2c-4ad1-43e0-9232-2404b2930ed3",
+      "result_id": "07553bd2-1b03-40dd-8117-68eccbba3835"
+    },
+    {
+      "claim_id": "a66934d9-5474-473b-8faf-dbe961191253",
+      "result_id": "07553bd2-1b03-40dd-8117-68eccbba3835"
+    }
+  ],
+  "comparisons": []
+}

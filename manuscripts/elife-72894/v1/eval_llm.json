@@ -1,0 +1,173 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C58",
+      "C60"
+    ],
+    "result": "The double-\u03bcPeriscope is a novel optical device consisting of two microprisms (0.10 mm \u00d7 0.10 mm or 0.18 mm \u00d7 0.18 mm) mounted on a single shaft, each connected to a GRIN lens and multimode optical fiber. The device uses simple, low-cost components including tiny prisms, GRIN lenses, and a high-sensitivity camera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C58, and C60 provide consistent technical specifications of the device design. The description is supported by Figure 1a-b showing the device structure, and the materials and methods section provides detailed fabrication information. The technical specifications are internally consistent and adequately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C63"
+    ],
+    "result": "The double-\u03bcPeriscope enables independent optogenetic manipulation of two cortical layers (L1 and L5) and demonstrates for the first time that backpropagating action potential-induced calcium spike (BAC) firing occurs in vivo. Combined somatic and dendritic stimulation evoked more prominent local field potential deflections and action potentials compared to stimulation of either compartment alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 are well-supported by experimental data shown in Figure 1d-f. The demonstration of BAC firing in vivo (C27, C30) represents a novel finding building on prior in vitro work (C25). The experimental design using Sim1-KJ18-Cre \u00d7 Ai32 mice (C63) is appropriate, and the results showing enhanced responses to combined stimulation (C28, C29) are clearly documented with electrophysiological recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C64"
+    ],
+    "result": "The double-\u03bcPeriscope enables simultaneous optogenetic stimulation of one layer (L2/3) while monitoring calcium activity in another layer (L5), revealing that L2/3 stimulation produces net inhibitory effects on L5 in motor cortex. This inhibition was statistically significant (n=3 mice, 20 measurements each, all p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe the experimental setup using Rasgrf2-2A-dCre mice with appropriate genetic tools. The finding of L2/3-to-L5 inhibition (C33) is supported by Figure 2c-d and statistical analysis (C64). The result agrees with prior work in somatosensory cortex (Pluta et al., 2019), strengthening the conclusion. However, C34's claim that this \"might be a general principle across the cortex\" is speculative and extends beyond the data from motor cortex alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C65",
+      "C66"
+    ],
+    "result": "The double-\u03bcPeriscope enables simultaneous monitoring of thalamic (POm) axonal activity in two cortical layers (L1 and L5a) in awake mice. The axonal activities showed surprising variability with mean cross-correlation coefficients below 0.3 in all four mice, suggesting POm may deliver different information to these layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are well-supported by experimental data in Figure 2e-h. The use of Gpr26-cre mice with GCaMP6s (C39) is appropriate for labeling POm neurons. The finding of variable correlation between L1 and L5a activities (C40, C41) is clearly documented. However, C42's interpretation that POm delivers \"different types of information\" is speculative inference that requires additional experiments to confirm. The technical challenge of imaging axonal activities at depth (C65) provides important context for the significance of this demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Existing techniques for multilayer cortical investigation have significant limitations: electrical recordings lack cell-type specificity (C8-C11), large prisms cause substantial tissue damage (C15-C19), tapered fibers and micro-LEDs cannot perform imaging (C20-C21), and z-axis imaging is technically challenging (C14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the motivation for the new tool by documenting limitations of existing approaches. Claims C8-C11 about electrical recording limitations are supported by appropriate citations (Buzs\u00e1ki, 2006). Claims C15-C18 about tissue damage from large prisms are supported by citation to Andermann et al., 2013. Claims C20-C21 about limitations of alternative optical approaches are supported by multiple citations. However, C19 about altered connectivity is speculative inference without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The double-\u03bcPeriscope offers significant advantages over alternative approaches: it enables simultaneous imaging at any distance (C54-C55), works for closely spaced structures <1mm (C45), causes less tissue damage due to sharp prism edges (C47), provides better layer specificity than bare fibers (C48), and is an order of magnitude less expensive than electric lens systems (C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C53 appropriately cite limitations of alternative approaches (bare fibers, electric lenses). However, the comparative advantages claimed in C45-C48, C54-C57 are largely based on inference and design principles rather than direct experimental comparison. No quantitative data comparing tissue damage (C47), cost (C57), or performance metrics against other methods are provided. Claims C54-C56 about capabilities are reasonable inferences from the design but lack experimental validation for all claimed scenarios (e.g., deep subcortical imaging).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The current double-\u03bcPeriscope uses single-core multimode fiber and cannot visualize subcellular structures, but this limitation could be addressed using commercially available multicore fiber bundles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 accurately describes the current technical specification. Claim C61 correctly identifies a limitation that follows logically from using multimode fiber. Claim C62 offers a reasonable speculation about potential improvements, appropriately qualified as applicable \"if spatial resolution is required in other applications.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C12",
+      "C13",
+      "C22",
+      "C25",
+      "C35",
+      "C36",
+      "C59"
+    ],
+    "result": "Background claims establishing the scientific context: cortical organization (C1), optogenetics as an established method (C7), recent advances in volumetric imaging (C12-C13), prior work on single-layer endoscopes (C22), BAC firing in vitro (C25), textbook assumptions about L2/3-L5 connectivity (C35), and mechanisms of translaminar inhibition (C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide appropriate scientific context and are supported by relevant citations to established literature. They accurately represent prior knowledge and set up the rationale for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Methodological details: experiments were ethically approved (C67), used mice aged P40-70 (C68) of both sexes (C69), with optogenetic stimulation parameters of 12 mW/mm\u00b2 for 20 ms (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are clearly stated and provide essential information for reproducibility. The ethical approval, subject demographics, and stimulation parameters are appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

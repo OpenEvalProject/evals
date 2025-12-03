@@ -1,0 +1,2432 @@
+{
+  "submission": {
+    "id": "dfeff2b0-9741-4b82-a3cf-3170cfd7b3f4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:35:06.259474Z",
+    "updated_at": "2025-12-03T03:35:06.259474Z"
+  },
+  "content": [
+    {
+      "id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "submission_id": "dfeff2b0-9741-4b82-a3cf-3170cfd7b3f4",
+      "content_type": "manuscript",
+      "content_text": "# Cerebrospinal fluid proteome maps detect pathogen-specific host response patterns in meningitis\n\n## Authors\n\n- Anahita Bakochi<sup>1</sup> ([ORCID: 0000-0001-8144-8525](https://orcid.org/0000-0001-8144-8525))\n- Tirthankar Mohanty<sup>1</sup>\n- Paul Theodor Pyl<sup>2</sup>\n- Carlos Alberto Gueto-Tettay<sup>1</sup>\n- Lars Malmstr\u00f6m<sup>1</sup> ([ORCID: 0000-0001-9885-9312](https://orcid.org/0000-0001-9885-9312))\n- Adam Linder<sup>1</sup>\n- Johan Malmstr\u00f6m<sup>1</sup> ([ORCID: 0000-0002-2889-7169](https://orcid.org/0000-0002-2889-7169)) \u2020\n\n### Affiliations\n\n1. Department of Clinical Sciences, Division of Infection Medicine, Lund University Lund Sweden\n2. Division of Surgery, Oncology, and Pathology, Department of Clinical Sciences, Biomedical Center, Lund University Lund Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nMeningitis is a potentially life-threatening infection characterized by the inflammation of the leptomeningeal membranes. Many different viral and bacterial pathogens can cause meningitis, with differences in mortality rates, risk of developing neurological sequelae, and treatment options. Here, we constructed a compendium of digital cerebrospinal fluid (CSF) proteome maps to define pathogen-specific host response patterns in meningitis. The results revealed a drastic and pathogen-type specific influx of tissue-, cell-, and plasma proteins in the CSF, where, in particular, a large increase of neutrophil-derived proteins in the CSF correlated with acute bacterial meningitis. Additionally, both acute bacterial and viral meningitis result in marked reduction of brain-enriched proteins. Generation of a multiprotein LASSO regression model resulted in an 18-protein panel of cell- and tissue-associated proteins capable of classifying acute bacterial meningitis and viral meningitis. The same protein panel also enabled classification of tick-borne encephalitis, a subgroup of viral meningitis, with high sensitivity and specificity. The work provides insights into pathogen-specific host response patterns in CSF from different disease etiologies to support future classification of pathogen type based on host response patterns in meningitis.\n\n## Introduction\n\nMeningitis is a common condition with an estimated annual prevalence of 8.7 million cases globally (Kassebaum et al., 2017). In the majority of cases, meningitis is caused by viruses, such as enteroviruses, and is associated with low mortality rates (Chadwick, 2005). Certain subtypes of viral meningitis (VM), such as tick-borne encephalitis (TBE), are in contrast associated with higher mortality rates and risk of developing neurological sequelae (Bogovic and Strle, 2015). Acute bacterial meningitis (ABM) is one of the leading causes of death due to infectious diseases worldwide and is associated with rapid disease progression, increased risk of long-term neurological sequelae in survivors, and high mortality rates (van de Beek et al., 2004; van de Beek et al., 2006). The different bacterial and viral pathogens are associated with specific virulence mechanisms that impact the molecular phenotype of the host immune response. This information can be used to diagnose patients with meningitis, which routinely involves lumbar punctures to evaluate several parameters in the cerebrospinal fluid\u00a0(CSF) such as the number of white blood cells (WBCs)\u00a0as well as glucose and protein concentrations to differentiate between ABM and VM (Ross et al., 1988). Unfortunately, these parameters are relatively non-specific yielding inconclusive diagnostic information (Garty et al., 1997; Lindquist et al., 1988; Nigrovic et al., 2002), and it currently remains unknown if different pathogens and pathogen types can evoke detectable differences in host response proteome.\n\nExtracellular body fluids such as blood plasma, saliva, and CSF are deficient in the machinery required for de novo protein synthesis. The protein constituents of body fluids are generated via active protein secretion from surrounding tissues or from passive leakage derived from normal protein turnover from cells and tissues. During healthy conditions, the concentration of individual proteins in body fluids is maintained via a tightly controlled balance between protein secretion and clearance. This balance is altered in severe infectious diseases such as sepsis or meningitis due\u00a0to the host responses triggered by the invading pathogen (Malmstr\u00f6m et al., 2016). In meningitis and sepsis, the immune response normally increases cellular and acellular mediators in the CSF and plasma, which leads to a drastic proteome reorganization (Karlsson et al., 2018). In the most severe stages of disease, host immune response becomes overwhelming, leading to organ damage and impaired prognosis (van de Beek et al., 2004; van de Beek et al., 2006).\n\nImproved definitions of the pathogen or pathogen-type specific host response patterns in CSF could provide insights into specific virulence mechanisms, subsequently leading to the development of new diagnostic and prognostic information. However, detection of pathogen-specific host response patterns requires the analysis of large sample cohorts to compare host response patterns from a similar group of pathogens to all other pathogen types. As the protein composition of body fluids is produced elsewhere, mRNA transcript profiling is less suitable for the detection of host responses. Mass spectrometry (MS)-based protein quantification has become the preferred method for multiplexed and quantitative analysis of proteomes (Aebersold and Mann, 2016). The prevailing MS strategy relies on data-dependent acquisition (DDA), where the mass spectrometer sequentially selects and fragments trypsin-generated peptide ions to generate informative daughter fragment ion spectra used for database searching. Although such proteomics experiments enable identification of thousands of peptide ions, the strategy is associated with lower quantitative reproducibility, as in complex samples the number of available peptides exceeds the cycling time of the DDA method. In contrast, the recent development of sequential window acquisition of all theoretical fragment ion spectra (SWATH)-MS generates fragment ion spectra of all MS-measurable peptides to produce a digital representation of the analyzed proteome (Gillet et al., 2012). In SWATH-MS, proteome maps are generated based on data-independent acquisition (DIA), followed by protein quantification using a priori established assay libraries (Teleman et al., 2017). Different assay libraries can be used to iteratively query the same DIA data in an iterative fashion, which is a considerable advantage as it permits a single data collection step for clinical samples (Guo et al., 2015) and focused reanalysis in future studies. Importantly, DIA is associated with a high degree of reproducibility, making it possible to merge data sets analyzed separately in time to perform cross-study comparisons. In this way, new opportunities emerge to construct compendiums of proteome maps from physical biobanks to identify protein patterns in body fluids associated with, for example, disease progression and treatment options.\n\nIn this study, we developed a compendium of SWATH-MS CSF proteome maps to provide novel insights into central nervous system (CNS) functioning and host response in a cohort of patients with meningitis. We demonstrate how an extendable compendium of proteome maps supports post-acquisition and iterative data analysis using cell- and tissue-derived assay libraries to define discriminatory protein panels associated with ABM or VM. The results revealed how meningitis generates pathogen-specific changes in the CSF proteome. Furthermore, the compendium of CSF proteome maps supported the identification of a protein panel capable of differentiating between ABM, VM, and TBE, a VM subgroup, with high sensitivity and specificity based on the host response patterns in the CSF.\n\n## Results\n\n### Construction of a compendium of SWATH-MS CSF proteome maps from meningitis patients\n\nDetection of pathogen-specific host responses in the CSF proteome requires comparative analysis of patient sample cases of meningitis caused by different pathogens. Here, CSF was collected by lumbar puncture from a cohort of 135 patients admitted to the hospital with the suspicion of meningitis. Following confirmed diagnosis, the patients were broadly subdivided into ABM (n\u00a0=\u00a035), neuroborreliosis (BM, n\u00a0=\u00a07), VM (n\u00a0=\u00a021), suspected ABM (n\u00a0=\u00a05), suspected VM (n\u00a0=\u00a016), and inflammation without infection (n\u00a0=\u00a02). In this cohort, ABM was caused by 11 different bacterial pathogens, where the most frequent pathogen was Streptococcus pneumoniae. VM was caused by seven different viruses with the highest frequency of TBE and enteroviruses (Figure 1). Patients with suspected meningitis but with normal WBC count (<5\u00a0\u00d7\u00a0106/L) and with no clinical signs of infection/inflammation were regarded as a control group (n\u00a0=\u00a049). CSF from each sample was digested, and peptides were analyzed by DDA-MS for the construction of a CSF proteome assay library and DIA-MS to produce a compendium of proteome maps (Figure 1a). The CSF assay library was merged with previously established assay libraries from 28 healthy human organs or primary cells to enable the quantification of proteins enriched in relevant tissues such as brain, plasma, and immune cells. The assay library relied on the protein abundance in the analyzed tissues and provides a statistically significant relationship between proteins and tissues, which was integrated into our results to infer the most likely tissue origin of proteins detected in the CSF. The compendium of SWATH-MS files was subsequently interrogated with the merged human assay library followed by interrogation of assay libraries from the most common pathogens causing meningitis to determine protein profiles correlating with pathogen\u00a0type (Figure 1b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig1-v2.jpg)\n\n**Figure 1.:** (a) Fifty microliters of CSF from each sample were prepared and analyzed using both shotgun mass\u00a0spectrometry\u00a0(MS) and sequential window acquisition of all theoretical fragment ion spectra\u00a0(SWATH-MS) for the construction of CSF proteome assay library and production of a digital compendium of SWATH-MS proteome maps. These SWATH-MS maps were post-acquisition interrogated with previously established assay library from 28 healthy human organs or primary cells to enable the quantification of proteins enriched in relevant tissues such as brain, plasma, or immune cells. The SWATH-MS maps were further interrogated with the CSF assay library for determining protein profiles correlating with acute bacterial meningitis, viral meningitis, neuroborreliosis and control samples. (b) A summary showing the number of CSF samples in each sample group, as well as the bacterial or viral strains that caused meningitis. The distribution of gender (as percentage in male) and average age for each group is\u00a0also presented.\n\n### Changes in the proteome pattern in CSF during meningitis\n\nA total of 771 unique human proteins were confidently detected and quantified in this analysis. The sample group containing the largest number of unique proteins was ABM (n\u00a0=\u00a0719 versus n\u00a0=\u00a0544 in controls), followed by VM (n\u00a0=\u00a0550) and BM (n\u00a0=\u00a0478). On average, the total protein intensities in ABM were 2, 2.7, and 4.3 times higher than in BM, VM, and the control group, respectively (Figure 2\u2014figure supplement 1). This reflects an elevated protein concentration in CSF, associated in particular with bacterial meningitis. Analysis of the subcellular compartment of the detected proteins revealed that the majority of proteins are secreted (between 37%\u00a0and\u00a048% across all samples), followed by membrane-bound proteins, which comprised 18\u201324% of the total protein content (Figure 2\u2014figure supplement 2a). The average intensity for the secreted proteins was 5.9-fold higher in ABM versus control and 2.7\u20132.9-fold higher in ABM when compared to BM or VM (Figure 2\u2014figure supplement 2b). The distribution of quantified proteins in relation to sample groups is presented as a heat map in Figure 2a. The sample clustering clearly subdivides the sample cohort into four distinct clusters representing predominantly the ABM, VM, and control samples. The row-wise color\u00a0coding indicates inferred tissue origin based on the information from the assay library. The most distant sample cluster includes in principle all the ABM samples. The remaining sample clusters are more similar, but the general trend supports subdivision of most of the VM samples from the control samples. We observe that numerous neutrophil-, plasma-, and brain-associated proteins constitute on average 15\u201320% of the protein intensity, where, in particular, the neutrophil proteins increased during ABM (Figure 2\u2014figure supplement 3). Plasma proteins are known to be major constituents of CSF under physiological conditions (Guldbrandsen et al., 2014), and presence of brain-associated proteins in CSF is likely related to protein turnover in the brain. Statistical analysis between sample groups reveals 79 statistically induced or repressed proteins (Figure 2b\u2013d). The majority of significantly altered proteins were associated with neutrophils (32% in ABM and 14% in VM), the brain (44% in ABM and 32% in VM), and some plasma proteins including several acute-phase proteins (Figure 2\u2014figure supplement 4a,\u00a0b). In addition, several neutrophil-associated proteins were induced\u00a0\u226564-fold (yellow dots) but not statistically significant, indicating a large degree of variation associated with these proteins. For each group, the average intensities of all neutrophil proteins show a significant increase only in ABM compared to controls (Figure 2f), whereas there is a significant decrease in brain-associated proteins in ABM, VM, and TBE (Figure 2e). Among the gene ontology (GO) terms enriched for the repressed proteins in ABM was \u2018regulation of synapse maturation and assembly,\u2019 suggesting changes on the cellular level in neuronal circuits during ABM (Figure 2\u2014figure supplement 4c). Of the induced proteins, notable GO terms were \u2018regulation of apoptotic signaling pathway,\u2019 \u2018defense response to bacterium,\u2019 and \u2018glial cell development.\u2019 These suggest increased apoptotic pathways and enriched molecular processes specialized in combating bacteria in the CSF of patients with ABM, followed by increased development of glial cells, which are involved in maintaining chemical homeostasis and act as the immune cells of the CNS (Ransohoff and Brown, 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig2-v2.jpg)\n\n**Figure 2.:** (a) The quantified proteins (rows) and samples (columns) were clustered and visualized in a heat map. Top horizontal color bar classified sample groups, and left vertical color bar classified the human tissue assignments for each protein. The data was row-wise normalized by Z-score transformation, and column and row clustering was performed with ward.D and canberra clustering criterions. (b\u2013d) Differentially expressed proteins between control and acute bacterial meningitis\u00a0(ABM) (b), neuroborreliosis\u00a0(BM) (c), and viral meningitis\u00a0(VM) (d) are shown in volcano plots. Statistically significant proteins (Hochberg-corrected p-values\u22640.05 and log2 fold change \u2264 \u22122 and\u00a0\u22652) are labeled in red. Statistically non-significant proteins with a high fold change of\u00a0\u226564 are\u00a0labeled in yellow. (e,\u00a0f) Log2 scaled average intensities of brain and neutrophil-associated proteins for ABM, BM, VM, tick-borne encephalitis\u00a0(TBE), and control are presented. The significance of the changes was calculated with a standard Student's t-test and marked with asterisk (one or two star significance).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Average total ion currents (TIC) for acute bacterial meningitis\u00a0(ABM), neuroborreliosis\u00a0(BM), viral meningitis\u00a0(VM), and control groups are presented, and the contribution of each tissue group is shown with color.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The detected proteins in this dataset were matched to the human reference proteome from UniProt (Proteome ID: UP000005640, March\u00a02021), and the annotation for subcellular location was obtained. The primary subcellular compartment was selected, and these are visualized as grouped bar plots for each sample group; acute bacterial meningitis (ABM;\u00a0red), neuroborreliosis (BM;\u00a0yellow), viral meningitis (VM;\u00a0blue), and control (green) bars. (a) Percentage on y-axis depicts the proportion of a particular subcellular compartment within the sample group. (b) The total average intensity of each protein belonging to corresponding subcellular compartment was summed and shown. Separate compartment groups were made in case two primary subcellular compartments were indicated for a protein (e.g., \u2018Secreted, membrane\u2019). Proteins that were annotated to multiple subcellular compartments are classified as \u2018Other.\u2019\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** A dual-axis graph showing the average intensities for each 12 tissues (left y-axis) and the number of proteins associated to each tissue (right y-axis).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a,\u00a0b) The tissue\u00a0assignment, protein abundances, and identities of proteins with statistical significance (Benjamini\u2013Hochberg-corrected p-value\u22640.05 and log2 fold change \u2264 \u22122 and\u00a0\u22652) are shown and labeled with red horizontal line. Statistically non-significant proteins with high fold change of\u00a0\u226564 were considered of biological interest and labeled with yellow horizontal line. The data is shown for acute bacterial meningitis (ABM)\u00a0in (a) and for viral meningitis (VM)\u00a0in (b). (c) Proteins selected for ABM were annotated by gene ontology terms. The average fold change for all proteins included in each term is plotted to show the direction of change compared to controls.\n\n### Cross-comparison of CSF protein composition between ABM, BM, and VM\n\nTo evaluate differences in the host response between the sample groups, we plotted the differentially expressed proteins in scatter plots, with the corresponding log2 fold change for ABM/control on the x-axis and log2 fold change for BM/control on the y-axis (Figure 3a). This cross-plot was repeated for ABM against VM (Figure 3b) and VM against BM (Figure 3c). Proteins that were statistically significant or associated with high fold changes (\u226564) in both sample groups are colored in black, otherwise only in one color (red; ABM, orange; BM and green; VM). This cross-comparison reveals that ABM and VM evoke a more similar response compared to BM. In total, ABM was associated with 49 unique statistically significant proteins and VM 10 proteins and 16 proteins were shared between the disease groups (Figure 3d). Only three proteins, chitinase-3-like protein 2 (CHI3L2), immunoglobulin mu heavy chain disease protein (MUCB), and profilin-1 (PROF1), were found at higher levels in all the three diseased groups compared to control (Figure 3e), although the intensities for these proteins are substantially higher in the ABM samples. Previous studies have shown an association between these proteins and neurological disease (M\u00f8llgaard et al., 2016; Narayanan et al., 2016; Opsahl et al., 2016). The inferred tissue assignment and average intensities for the 49 ABM-specific proteins in all samples are presented in Figure 3f and for the 10 VM-specific proteins in Figure 3g. We observed that neutrophil proteins are distinctive for ABM, but not for VM. In addition, ABM also led to increased levels of acute-phase proteins such as serum amyloid a-1 (SAA1) and C-reactive protein (CRP). In contrast, VM resulted in increased concentrations of C4b-binding protein and C-X-C motif chemokine 10 (CXCL10), where the latter chemokine is elevated in plasma during viral infections.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig3-v2.jpg)\n\n**Figure 3.:** (a\u2013c) Significantly regulated proteins (Benjamini\u2013Hochberg-corrected p-value\u22640.05 and log2 fold change of \u2264 \u22122 and\u00a0\u22652) together with proteins with high fold change of\u00a0\u226564 for all three groups were selected, and their fold changes of\u00a0two disease group at a time were plotted against each other: ABM versus BM (a), ABM versus VM (b), and BM versus VM (c). The points are colored based on their significance in either one group only (red: ABM; orange: BM; green: VM) or in both (black). Proteins absent in one group were plotted at the null\u00a0line for that group for visualization purposes. (d) Venn diagram summarizes the overlap of the proteins shown in (a\u2013c) for the different groups. The intensities of the three proteins shared in all three groups (e), 49 proteins specific to ABM (f), and 10 proteins specific to VM (g) are shown as bar plots for every CSF sample. Proteins not classified to a tissue were further divided into two groups depending on if they were downregulated (-) or upregulated (+) compared to control.\n\n### Predictive proteomic patterns using LASSO regression modeling\n\nTo define host response protein patterns specific for pathogen\u00a0type, we used LASSO regression to select discriminatory protein intensities from the compendium of CSF proteome maps. In total, we included the four broader groups, ABM, BM, VM, and the control group. In addition, we included TBE as this group was associated with a distinct molecular host\u00a0response. We used fourfold cross-validation to build a model for each of the five groups to distinguish the groups from each other. To assess the stability of our model, we repeated the process 100 times (runs), generating 2000 models in total (4 folds \u00d7 5 groups \u00d7 100 runs). All of the tested groups had an area under the receiver operating characteristic curve (AUROC) above 0.80, and two of them had an AUROC above 0.90 (Figure 4a). The protein profiles for ABM and control were reproducible across the 100 runs and specific, with a mean AUROC of 0.96 for ABM and 0.95 for controls. The models for BM and VM had a lower mean AUROC of 0.85 and 0.80, respectively. TBE displayed the most stable and discriminatory AUROC of 0.87 of all specific causative-agent subgroups, indicating that TBE evokes a distinct host response. In total, 18 proteins were detected in\u00a0\u226590% of the 100 runs in every fold and had a nonzero weight, which were consistently used in the LASSO models for discriminating different sample groups. For these 18 predictive proteins, we visualized the distribution of the respective protein contribution to the models as box\u00a0plots colored by the average weight (coefficient) over all 100 runs (Figure 4c). Proteins with a nonzero coefficient had a positive influence on the model and are regarded as predictive proteins for the disease group as shown by the fill color of the box plots. The average intensity of the 18 proteins shows the differences in the abundance levels in their respective sample group (Figure 4d, Figure 4\u2014figure supplement 1). 5 of the 18 proteins were in general detected in higher amounts in ABM and BM and include proteins such as gelsolin (GEL), cathepsin D (CATD), and transthyretin (TTHY) that are involved in neutrophil degranulation according to the Reactome Pathway Database. Nine of the proteins were exclusively elevated in ABM and include proteins involved in inflammatory response (A2GL, HPT A1T1), fibrin clot formation (HEP2, PROS), LPS binding (CD14), and regulation of the complement cascade (CFAH). Notably, these proteins are all found in lower concentrations in the control samples, and these proteins were mostly predictive for ABM and/or the control samples. In contrast, BM, VM, and TBE in general have less discriminatory weight coefficient. For TBE, monocyte differentiation antigen CD14 was elevated compared to the controls. Antithrombin-III, a serine protease inhibitor that regulates the blood coagulation cascade, was associated with a high weight coefficient and a relatively high abundance level in the VM group. In conclusion, these results demonstrate that LASSO regression can select a set of predictive proteins to classify different disease etiologies in meningitis, which was not possible by any of single-protein biomarker candidates quantified in this study.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig4-v2.jpg)\n\n**Figure 4.:** (a) Predictive proteomic profiling was performed on all detected and manually curated proteins (n\u00a0=\u00a0771) by LASSO regression model to assign predictive scores to discriminate acute bacterial meningitis\u00a0(ABM), neuroborreliosis\u00a0(BM), viral meningitis\u00a0(VM), tick-borne encephalitis\u00a0(TBE), and control samples from each other. The samples were split into four randomly selected folds, and the modeling was repeated 100 times. The average area under the curve (AUC) of the sensitivity and specificity of the predicted model is presented in a receiver operating characteristic\u00a0(ROC) curve. (b) The variation of the AUC across the 100 repetitions is shown as box plots. (c) All proteins that were detected in each fold and in\u00a0\u226590% of the 100 repetitions (18 proteins) were selected as important proteins for the construction of the LASSO prediction model, and their value (e.g., log-transformed, centered, and scaled protein abundances) plotted as box plots. The fill color of the box plot represents the weight coefficient assigned to each individual protein, where blue and red represent positive or negative effect of that protein for prediction of that specific sample group. (d) The selected 18 proteins are presented in a heat map, with sample groups as rows and sample group averages for each protein as columns.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013c) Differentially expressed proteins between control and acute bacterial meningitis\u00a0(ABM) (a), neuroborreliosis\u00a0(BM) (b), and viral meningitis\u00a0(VM) (c) are shown in volcano plots. Statistically significant proteins (Hochberg-corrected p-values\u22640.05 and log2 fold change \u2264 \u22122 and\u00a0\u22652) are labeled in red. Statistically non-significant proteins with a high fold change of\u00a0\u226564 are\u00a0labeled in yellow. These volcano plots are identical to the volcano plots in Figure 2b\u2013d. The 18 predictive proteins selected as important proteins for the construction of the LASSO prediction model are labeled in each volcano plot. The color of the protein labels complies with the volcano plot colors.\n\n### Longitudinal follow-up of protein levels in ABM and subarachnoidal hemorrhage\n\nMeningitis is a disease that is associated with a risk of developing severe neurological sequelae in survivors, and some studies have shown that the levels of certain proteins remained high in the CSF from non-survivors (Goonetilleke et al., 2010), such as chitotriosidase, complement C1q tumor necrosis factor-related protein 9,\u00a0and haptoglobin. To investigate changes of the CSF proteome over time, we extended the compendium of proteome maps with an additional total of 36 CSF samples from ABM (six patients) and from patients with subarachnoidal hemorrhage (SAH, four patients). From these patients, there were multiple CSF samples collected up to 10\u201313 days after admittance to hospital (Figure 5a). Four LASSO-predicted proteins for ABM remained elevated until the end of the 10-day period (Figure 5b), suggesting that sampling over a longer time period is required to observe the protein levels returning to baseline. The brain proteins with significantly lower levels in ABM started to increase during the extended follow-up times peaking around day 5 (Figure 5c). In contrast, the proteins with significantly lower abundance in ABM compared to control cases show a slight increase over time (Figure 5d), whereas the proteins with higher levels in ABM compared to control decreased in ABM over the 10 day-period (Figure 5e). The levels of neutrophil proteins in ABM start to decrease but showed a high degree of variability (Figure 5f). In all cases, protein levels were low or absent in SAH. Interestingly, the LASSO-predicted proteins used for discriminating ABM tend to stay elevated even after the patients were released from hospital care. These results indicate an ongoing complex host response process that is unique to infectious neurological disease, such as ABM, and is\u00a0absent in other types of neurological trauma such as SAH. Data of protein levels over a longer period of time could possibly help in understanding neurological sequelae that are followed after some cases of meningitis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64159/elife-64159-fig5-v2.jpg)\n\n**Figure 5.:** (a) Summary of the cerebrospinal fluid (CSF)\u00a0samples collected from patients with ABM (n\u00a0=\u00a06) or SAH (n\u00a0=\u00a04) for longitudinal analysis of CSF proteome is presented. (b\u2013f) Based on previous results, five groups of proteins were selected for longitudinal analysis in ABM up to 10 days and in SAH up to 13 days after admittance to hospital: four proteins selected by LASSO as predictive and indicative of ABM (b), brain-associated proteins downregulated in AMB (c), downregulated proteins not classified to a tissue and specific to ABM (d), upregulated proteins not classified to a tissue and specific to ABM (e), and neutrophil proteins upregulated in ABM (f).\n\n## Discussion\n\nHere, we present a resource of extendable compendium of CSF proteome maps from a cohort of meningitis patients to define specific host response patterns in meningitis. The quantified proteins have a median coefficient of variation (CV) for technical replicates below 20% as previously shown (Guo et al., 2015). The compendium presented in this study comprised in total 171 CSF samples with different sample- and time-dimensions generated from\u00a0<50 \u03bcL of CSF. In SWATH-MS, the post-acquisition targeted data analysis strategy using previously established assay libraries confirms the\u00a0presence and relative abundance of proteins. Once acquired, the compendium of SWATH-MS maps can be iteratively reanalyzed in silico to test new hypotheses. In this study, we used a highly curated assay library to search for tissue- or cell-enriched proteins informative for host response patterns associated with ABM, BM, TBE, and VM.\n\nIn severe infectious diseases, several factors may influence the type and magnitude of the host response, such as type of infecting pathogen, host immune status, and time of infection. The dysregulated host responses during sepsis and meningitis can be detrimental to the host (Iskander et al., 2013; Ward et al., 2008). At the same time, altered protein composition of CSF provides an opportunity to probe disease status of the complex interplay of factors driving the host response. Damage derived from the infectious process and/or the host response may generate detectable protein changes associated with, for example, organ damage (Malmstr\u00f6m et al., 2015). In this study, we used LASSO regression to define protein patterns capable of discriminating between ABM, BM, VM, TBE, and controls. Based on an assay library containing information of tissue- and cell-enriched proteins, the different disease groups had noticeable differences in protein patterns associated with neutrophils, blood plasma, and proteins predominantly present in the brain. The increased levels of neutrophil proteins are a consequence of infiltrating activated neutrophils, known to occur predominately during ABM (Hoffman and Weber, 2009; Tunkel and Scheld, 1993). Neutrophils may release decondensed extracellular DNA coated with antimicrobial proteins called neutrophil extracellular traps (NETs) (Moorthy et al., 2016). A recent study showed high levels of NETs in the CSF of patients with pneumococcal meningitis and that disrupting NETs using DNase I significantly reduces bacterial load, demonstrating that NETs contribute to the pathogenesis of pneumococcal meningitis (Mohanty et al., 2019). It is noteworthy that both ABM and VM introduce reduced levels of brain-specific proteins, although the overlap of the reduced proteins between ABM and VM is small. The reason for this reduction is not clarified, although it was previously reported that brain proteins decrease in CSF during other neurological disorders, such as Huntington's disease (Fang et al., 2009).\n\nThe large number of disease-causing pathogens in meningitis leads to high heterogeneity in both patients and disease progression, and this variability can be seen in other severe infectious diseases such as sepsis. In order to account for this clinical diversity in medical research, traditional individual biomarker studies can be replaced with multiprotein panels to provide better coverage of the underlying disease. The LASSO regression model resulted in 18 predictive proteins. Proteins predictive of ABM include CATD and complement factor H (CFAH), both of which are known plasma proteins involved in clearance of specifically bacterial infections (Bewley et al., 2011; Haapasalo et al., 2012). Leucine-rich alpha-2-glycoprotein (A2GL) has previously been suggested to be an inflammatory marker, and significantly higher levels of A2GL were reported in the CSF of children with ABM compared to febrile controls (Chong et al., 2018). Other studies have shown that the CSF levels of alpha-1 antitrypsin (A1AT) and apolipoprotein E (APOE) were higher in ABM compared to controls (Hoffman et al., 1989; Gutteberg et al., 1986; Wang et al., 2012). Furthermore, antithrombin-3 (ANT3), one of the predictive proteins for VM, has previously been shown to have a broad-spectrum antiviral activity for various human cytomegaloviruses and herpes simplex viruses (Quenelle et al., 2014). These results together indicate that large-scale multiprotein panels can yield biological and clinical insights that are difficult to achieve with traditional statistical analyses.\n\nThe high reproducibility of SWATH-MS is a consequence of the DIA, which generates fragment-ion spectra from all MS-measurable peptides from a proteome. This feature can support extension of the compendium to generate a digital representation of physical biobanks. In total, the sample cohort in this study consists of patients infected with 19 different pathogens, where the three largest groups were S. pneumoniae, enteroviruses, and TBE. Among these pathogen groups, the LASSO regression generated the highest AUC for TBE although the sample size was relatively small. There are currently no biomarkers for detecting and diagnosing TBE (Bogovic and Strle, 2015). Future extension of the compendium will enable further investigations of pathogen-specific host responses for other pathogens in CSF. In addition, the opportunity to reanalyze the compendium in silico based on improved assay libraries will provide opportunities to find new protein\u00a0patterns correlating with other types of clinical information such as disease outcome or the development of neurological sequelae. This goal can be achieved through either a data-driven process where samples are clustered based on similarities in the proteome changes or in a hypothesis-driven fashion where the compendium is interrogated for protein profiles correlating with, for example, pathogen\u00a0type, infection time, or disease severity. The increasing efforts to construct complete assay libraries of the human proteome (Kim et al., 2014; Matsumoto et al., 2017; Zolg et al., 2017) will provide improved definition of proteins enriched in particular cells and tissues and will enable quantification of additional proteins, post-translational modifications (Rosenberger et al., 2017), and proteolytically processed proteins from the already established compendiums of proteome maps. Ultimately such a resource can be anticipated to enable improved correlation between host responses and detectable changes in CSF and potentially blood plasma to identify molecular markers that can be used for the development of new diagnostic-, prognostic-, and treatment-decisive information for severe infectious diseases.\n\n## Materials and methods\n\n### Patients and CSF samples\n\nCSF samples (n\u00a0=\u00a0171) from a total of 139 patients from two different cohorts were analyzed. Patients enrolled in a prospective study at the Clinic for Infectious Diseases, Lund University Hospital, Lund, Sweden, between March 2006 and November 2009 (as previously described; Linder et al., 2011), with a clinical suspicion of meningitis who underwent a lumbar puncture and where CSF samples were collected, were included. The patients were categorized into\u00a0the following groups: ABM (n\u00a0=\u00a035), BM (n\u00a0=\u00a07), VM (n\u00a0=\u00a021, of which TBE n\u00a0=\u00a05), suspected ABM (n\u00a0=\u00a05), suspected VM (n\u00a0=\u00a016), and inflammation with no infection (n\u00a0=\u00a02). Control patients had a suspected meningitis, but were declared healthy after displaying a normal CSF WBC count (<5\u00a0\u00d7\u00a0106/L) (n\u00a0=\u00a049). In addition, longitudinal samples were collected from six of the previously mentioned ABM patients (6\u00a0original samples and additional 14 longitudinal samples) and from four patients with SAH\u00a0(22 longitudinal samples).\n\n### CSF sample preparation\n\nA constant volume of 50 \u03bcL of each CSF sample was used to correlate to the protein concentration present in each sample. Samples were heat-inactivated by incubation on a heat-block for 5 min at 80\u00b0C to kill any microorganisms present in the samples, and then transferred into lysing matrix tubes (Nordic Biolabs) containing 90 mg silica beads (0.1 mm). The cells were homogenized with a cell disruptor (BeadBeater, FastPrep 96, MP Biomedicals) twice for 180 s. The samples were incubated for 30 min at 37\u00b0C in 10 M urea, 1 M ammonium bicarbonate\u00a0(ABC), and 1 \u03bcg trypsin (sequence grade modified trypsin porcin, Promega) for denaturation and tryptic cleavage. Samples were further incubated in 10 M urea and 1 M ABC for 30 min, after which large unfolded proteins were spun down by centrifugation. The supernatants were reduced by incubation for 60 min at 37\u00b0C in 500 mM tris(2-carboxyethyl) phosphine\u00a0(TCEP, Sigma-Aldrich) and alkylated by incubation with 500 mM 2-Iodoacetamide\u00a0(IAA, Sigma-Aldrich). Samples were diluted in 100 mM ABC and incubated overnight in 1 \u03bcg trypsin, after which trypsin was inactivated by addition of formic acid. C18-columns (Vydac UltraMicro Spin Silica C18 300 \u00c5) were used according to manufacturer's instructions to clean\u00a0up and concentrate the peptide samples.\n\n### Bacterial strains and sample preparation\n\nFor the generation of pathogen assay libraries, bacterial isolates (n\u00a0=\u00a01 of Escherichia coli, Enterococcus faecalis, Streptococcus pyogenes, Streptococcus agalactiae, Listeria monocytogenes, Pseudomonas aeruginosa, Staphylococcus aureus, and n\u00a0=\u00a04 of S. pneumoniae) were taken from frozen stocks and grown overnight at 37\u00b0C and 5% CO2 on blood agar plates. Streaks of each plate were grown in Todd\u2013Hewitt broth (30 g/L, Difco Laboratories) supplemented with yeast extract (6 g/L, Difco Laboratories). The bacterial cells were centrifuged and the pellet was washed three times in wash buffer (50 mM Tris-HCl, 150 mM NaCl, pH 7.6, Medicago). The final pellet was resuspended to a final concentration of 2 \u00d7 109 CFU/mL. The pellet was dissolved in ice-cold LC-grade water and heat-inactivated by incubation at 90\u00b0C for 5 min. The homogenization, denaturation, in-solution digestion, reduction, alkylation, and sample clean-up were performed as for the CSF sample preparation.\n\n### LC-MS/MS analysis of CSF samples\n\nAll peptide analyses were performed on a Q Exactive Plus mass spectrometer (Thermo Fisher Scientific) connected to an EASY-nLC 1000 ultra-high-performance liquid chromatography system (Thermo Fisher Scientific). For shotgun analysis, peptides were separated on an EASY-Spray column (Thermo Scientific; ID 75 \u03bcm\u00a0\u00d7 25 cm, column temperature 45\u00b0C). Column equilibration and sample load were performed using constant pressure at 600 bar. Solvent A was used as stationary phase (0.1% formic acid). Solvent B (mobile phase; 0.1% formic acid, 100% acetonitrile) was used to run a linear gradient from 5% to 35% over 60 min at a flow rate of 300 nL/min. One full MS scan (resolution 70,000 @ 200 m/z; mass range 400\u20131600 m/z) was followed by MS/MS scans (resolution 17,500 @ 200 m/z) of the 15 most abundant ion signals (TOP15). The precursor ions were isolated with 2 m/z isolation width and fragmented using higher-energy collisional-induced dissociation at a normalized collision energy of 30. Charge state screening was enabled and unassigned or singly charged ions were rejected. The dynamic exclusion window was set to 10 s. Only MS precursors that exceeded a threshold of 1.7e4 were allowed to trigger MS/MS scans. The ion accumulation time was set to 100 ms (MS) and 60 ms (MS/MS) using an AGC target setting of 1e6 (MS and MS/MS).\n\nFor DIA, peptides were separated using an EASY-spray column (Thermo Fisher Scientific; ID 75 \u03bcm \u00d7 25 cm, column temperature 45\u00b0C). Column equilibration and sample load was performed at 600 bar. Solvent A was used as stationary phase (0.1% formic acid). Solvent B (mobile phase; 0.1% formic acid, 100% acetonitrile) was used to run a linear gradient from 5% to 35% over 120 min at a flow rate of 300 nL/min. A full MS scan (resolution 70,000 @ 200 m/z; mass range from 400 to 1200 m/z) was followed by 32 MS/MS full fragmentation scans (resolution 35,000 @ 200 m/z) using an isolation window of 26 m/z (including 0.5 m/z overlap between the previous and next window). The precursor ions within each isolation window were fragmented using higher-energy collisional-induced dissociation at normalized collision energy of 30. The automatic gain control was set to 1e6 for both MS and MS/MS with ion accumulation times of 100 ms (MS) and 120 ms (MS/MS). The obtained raw files were converted to mzML using MSConvert (Kessner et al., 2008). The MS proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD023174.\n\n### LC-MS/MS analysis of bacterial samples\n\nPeptide analysis was performed as for the CSF samples, with the exception that an Acclaim PepMap 100 pre-column (Thermo Scientific, C18, 3 \u03bcm, 100 \u00c5; ID 75 \u03bcm\u00a0\u00d7 2 cm) was coupled to the column and the linear gradient of between 5% and 35% acetonitrile in aqueous 0.1% formic acid was run for 120 min instead. The MS proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD024904.\n\n### CSF shotgun MS analysis\n\nThe shotgun MS data was searched with Trans-Proteomic Pipeline (TPP, v4.7 POLAR VORTEX rev 0, Build 201405161127) using X!Tandem against the UniProt human reference proteome (UP000005640, Oct-2015, reviewed and canonical proteins only), and for generation of decoy proteins a reverse approach was used. Cysteine carbamidomethylation was considered as a fixed and methionine oxidation as a variable modification, and enzyme specificity was set for trypsin to allow two missed cleavage sites. Variable acetylation of the n-terminae, S-carbamoylmethyl-cysteine cyclization of the n-terminal cysteines as well as pyro-glutamic acid formation from glutamic acid and glutamine was also allowed by X!Tandem. The precursor mass tolerance thresholds were set to 20 ppm and the fragment mass tolerance to 50 ppm. The raw files were gzipped and Numpressed (Teleman et al., 2014) and converted to mzML format using msconvert from ProteoWizard (v3.05930 suite, [Chambers et al., 2012]).\n\n### CSF assay library creation and DIA analysis\n\nAssay libraries were created using the Fraggle-Franklin-Tramler workflow (Teleman et al., 2017). In brief, fragment spectra from TPP search results were interpreted by the software tool fraggle and assembled into a retention time normalized consensus assay library with a Franklin-derived multilevel false-disovery\u00a0rate\u00a0(FDR) of\u00a0<0.01. Assays were generated by the software tool Tramler and contain only the 3\u20136 most intense fragments within the mass range of 350\u20132000 m/z and do not fall within the precursor isolation window (Deutsch et al., 2012). The assay library was stored in traML format. For DIA analysis, DIANA v2.0.0 was used (Teleman et al., 2015) with a 20 ppm extraction window. The generated data was manually curated to remove various immunoglobulin variable chain proteins.\n\n### Shotgun MS analysis and assay library creation of bacterial samples\n\nA snakemake workflow was created for building generic transition library (GTL) from Thermo DDA experiments. The raw spectral library creation was achieved by a tandem of spectrum clustering, DDA searches and OpenSwath protocols. Initially, a set of DDA raw files were converted to mascot generic format by ThermoRawFileParser software (Hulstaert et al., 2020). Secondly, spectra files were clustered through Mass Rarity Clustering approach by MaRaCluster (The and K\u00e4ll, 2016). Ursgal package (Kremer et al., 2016) was used as interface for searching the consensus spectra against data\u2019s UniProt reference proteome using five search engines, namely MSGFPlus (version 2019.07.03), MS Amanda (version 2.0.0.17442, Dorfer et al., 2014), Comet\u00a0(version 2019.01.rev5, Eng et al., 2013; Eng et al., 2015), X! Tandem (version alanine, Craig and Beavis, 2004), and OMSSA\u00a0(version 2.1.9, Geer et al., 2004). Optional Met Oxidation (UniMod: 35), Asp and Gln deamidations (UniMod: 7), along with the fixed Cys carbamidomethylation (UniMod: 4) modifications, were considered in this study. Individual engine results were validated by percolator (v3.4.0, K\u00e4ll et al., 2007), while the Combine FDR algorithm was implemented for combining results from all search engines (Jones et al., 2009). Moreover, a threshold of 1% peptide FDR was set for decisive candidate inclusion. In the final step, GTL database was built by all peptide\u2019s b- and y-ions extraction and adding decoy assays, as described previously (Escher et al., 2012; Collins et al., 2013; R\u00f6st et al., 2014; Schubert et al., 2015). In this implementation, we use eight ion types: b, y, b(2+), y(2+), b-H2O, y-H2O, b-NH3, and y-NH3.\n\n### Human tissue atlas\n\nThe human tissue atlas was used to statistically assign all detected proteins (n\u00a0=\u00a0771) to human tissue based on abundance. A total of 12 tissue\u00a0assignments were used, which included the following tissues and cell types: adipose, brain, liver, nerve, erythrocytes, lymphocytes, macrophages, neutrophils, platelets, and plasma. Proteins associated to other tissues that were available via the atlas are\u00a0depicted here as \u2018others.\u2019 A protein was depicted as \u2018not classified\u2019 if the abundance could not be statistically associated to only one tissue or if it was missing from the atlas altogether. The tissue assignments of certain proteins used in further analyses in this study were compared and matched against other, publicly available and published protein tissue-assignment repositories (Supplementary file 1).\n\n### Statistical analysis\n\nFor statistical analyses, a Benjamini\u2013Hochberg-corrected t-test was used. GO annotations were performed by using two unranked lists of proteins with GOrilla (Eden et al., 2009). For the LASSO modeling, the proteomic data was first log-transformed, scaled, and centered (i.e., log10 of the abundances, subtraction of the per-protein mean and division by the per-protein standard deviation). This data was then used as the input to the LASSO implementation of the LiblineaR package of the R statistical programming language (R version 3.6.1; LiblineaR version 2.10\u20138). A fourfold cross-validation approach was used for model building, where the samples were split randomly into four balanced groups (same proportion of pathogen type as the whole cohort). For each of the four groups, the model was trained on 3/4 of the data and the performance was evaluated on the remaining 1/4, and this modeling was performed 100 times. Proteins that received a nonzero weight coefficient (as in the value of that protein has an influence on the model) in\u00a0\u226590% of all models were selected for further analysis.\n",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "edf362b5-fef9-4580-8bc3-0886fc65cca0",
+      "submission_id": "dfeff2b0-9741-4b82-a3cf-3170cfd7b3f4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Benjamin F Cravatt, The Scripps Research Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64159.sa1](https://doi.org/10.7554/eLife.64159.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe Reviewers and Editors were pleased with the revised manuscript, which has added useful analyses to better appreciate the value of the described MS-based proteomic methodology for characterising a translationally important biological system.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cerebrospinal fluid proteome maps detect pathogen-specific host response patterns in meningitis\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Bavesh Kana as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Martin Beck (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1. In some cases the actual pathogens may have left their peptides in CSF. Have the authors tried to detect them by a species wide search? Of course, this may require shotgun data.\n\n2. The authors may want to comment on their proteome coverage in the main text. I understand that this is somewhat delicate for a body fluid, but at least the number of proteins confidently detected would be interesting.\n\n3. It would be helpful in Figure 2 and 3 if the authors could highlight specific proteins in the volcano plots. For instance where are some of the predictive proteins shown in Figure 4c, such as A1AT, APOE, GELS, TTHY, etc?\n\n4. A brief discussion is warranted regarding whether the CSF protein-pathogen associations found in this work have been previously reported in the literature, or represent entirely novel associations.\n\n5. It would be helpful for the authors to perform some type of analysis to depict the localization of the proteins detected (e.g., classically secreted proteins versus membrane versus intracellular). For instance I already see in Figure 4c that ANT3 is mitochondrial. Is there an enrichment of classically secreted proteins in this dataset?Reviewer #2 (Recommendations for the authors):\n\nBakochi et al have developed a swath MS panel to quantify the proteome content of cerebrospinal fluid. They used it to measure a large meningitis patient panel that had been clinically classified into different bacterial and viral pathogens. In particular bacterial infection resulted in an increased protein concentration and neutrophil protein content, while in general brain but i.e. also apoptosis-related proteins were found to be variable. The proteomic profiles of CSF are distinct from a control group and, based on a selected subset of proteins, allow to discriminate the type of pathogen with decent sensitivity and specificity. It is demonstrated to those changes last for a surprisingly long period of time in patients after clinical display.\n\nThe manuscript is technically well done, well written and presented. The strength of this study is that it capitalizes on the strength of swath MS in a biological system where protein quantification is without any alternative. Another strength is the relatively large patient panel, although it breaks down to smaller numbers for some of the less frequent pathogens. The panel described here may be used to assess the disease status of patients and maybe further explored for diagnostic potential in the future.\n\nIn some cases the actual pathogens may have left their peptides in CSF. Have the authors tried to detect them by a species wide search? Of course, this may require shotgun data.\n\nThe authors may want to comment on their proteome coverage in the main text. I understand that this is somewhat delicate for a body fluid, but at least the number of proteins confidently detected would be interesting.\n\nReviewer #4 (Recommendations for the authors):\n\nBakochi et al. present a proteomic analysis of cerebrospinal fluid proteins in control patients or in individual sample cases of meningitis caused by different pathogens. Pathogen-specific changes to the CSF proteome was observed. The authors identify specific proteins that could classifying the type of pathogen that caused meningitis. Major strengths of this work include (1) rigorous proteomic analysis, (2) an unusual patient cohort characterized by a diversity of pathogens (bacterial, viral, neuroborreliosis), (3) the ability to perform direct comparisons of distinct pathogen-induced proteomic changes in CSF, and (4) generation of a predictive model based on the proteomics dataset. The data as presented support the conclusion that distinct pathogens induce shared as well as distinct changes to the CSF proteome. No technical weaknesses were noted. However, the likely impact of this work on the field remains limited. There have been many other proteomic studies of the CSF to identify meningitis biomarkers. While this work builds on these previous proteomic datasets, it remains unclear whether this dataset is more robust, reproducible, or representative versus some of the other published datasets (PMID 26040285, 28765563, 20608875, etc.; reviewed in 31404562).\n\n1. It would be helpful in Figure 2 and 3 if the authors could highlight specific proteins in the volcano plots. For instance where are some of the predictive proteins shown in Figure 4c, such as A1AT, APOE, GELS, TTHY, etc?\n\n2. A brief discussion is warranted regarding whether the CSF protein-pathogen associations found in this work have been previously reported in the literature, or represent entirely novel associations.\n\n3. It would be helpful for the authors to perform some type of analysis to depict the localization of the proteins detected (e.g., classically secreted proteins versus membrane versus intracellular). For instance I already see in Figure 4c that ANT3 is mitochondrial. Is there an enrichment of classically secreted proteins in this dataset?\n",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "63024753-0216-4bfe-8585-5640bae1732f",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C1",
+      "claim": "Meningitis is a potentially life-threatening infection characterized by the inflammation of the leptomeningeal membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Meningitis is a potentially life-threatening infection characterized by the inflammation of the leptomeningeal membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about meningitis that represents established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "5df27ed9-7e31-4863-9145-70ba48fd777e",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C2",
+      "claim": "Many different viral and bacterial pathogens can cause meningitis, with differences in mortality rates, risk of developing neurological sequelae, and treatment options.",
+      "claim_type": "EXPLICIT",
+      "source": "Many different viral and bacterial pathogens can cause meningitis, with differences in mortality rates, risk of developing neurological sequelae, and treatment options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established medical knowledge about meningitis etiology and outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "4989b388-a1f4-49af-b25c-0b0078cfebbb",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C3",
+      "claim": "A drastic and pathogen-type specific influx of tissue-, cell-, and plasma proteins occurs in the CSF during meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed a drastic and pathogen-type specific influx of tissue-, cell-, and plasma proteins in the CSF, where, in particular, a large increase of neutrophil-derived proteins in the CSF correlated with acute bacterial meningitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental proteomics data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "7b77b945-aba4-4663-932d-ae3530fcf679",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C4",
+      "claim": "A large increase of neutrophil-derived proteins in the CSF correlates with acute bacterial meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed a drastic and pathogen-type specific influx of tissue-, cell-, and plasma proteins in the CSF, where, in particular, a large increase of neutrophil-derived proteins in the CSF correlated with acute bacterial meningitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the proteomics data showing elevated neutrophil proteins in ABM samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "bd13dc80-b5fa-4f39-bfaf-57b3e57b4ded",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C5",
+      "claim": "Both acute bacterial and viral meningitis result in marked reduction of brain-enriched proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, both acute bacterial and viral meningitis result in marked reduction of brain-enriched proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by the proteomics measurements showing decreased brain-associated proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "2310880f-d117-420f-9ef9-218c8fcdb438",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C6",
+      "claim": "An 18-protein panel of cell- and tissue-associated proteins is capable of classifying acute bacterial meningitis and viral meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of a multiprotein LASSO regression model resulted in an 18-protein panel of cell- and tissue-associated proteins capable of classifying acute bacterial meningitis and viral meningitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the LASSO regression modeling results presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "bbe9e49d-0dc5-43ed-902c-9282bfc14475",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C7",
+      "claim": "The 18-protein panel enables classification of tick-borne encephalitis with high sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The same protein panel also enabled classification of tick-borne encephalitis, a subgroup of viral meningitis, with high sensitivity and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LASSO model performance data showing high AUROC for TBE classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "c4bac6a5-1fc7-48ad-8fa6-c8543ae5375b",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C8",
+      "claim": "Meningitis has an estimated annual prevalence of 8.7 million cases globally.",
+      "claim_type": "EXPLICIT",
+      "source": "Meningitis is a common condition with an estimated annual prevalence of 8.7 million cases globally (Kassebaum et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kassebaum et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "089664c9-e8dc-473c-9136-6c30421ee3db",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C9",
+      "claim": "In the majority of cases, meningitis is caused by viruses, such as enteroviruses, and is associated with low mortality rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In the majority of cases, meningitis is caused by viruses, such as enteroviruses, and is associated with low mortality rates (Chadwick, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chadwick, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "db30ab38-fada-4143-83bb-ae0c3e2d8cfd",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C10",
+      "claim": "Tick-borne encephalitis is associated with higher mortality rates and risk of developing neurological sequelae.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain subtypes of viral meningitis (VM), such as tick-borne encephalitis (TBE), are in contrast associated with higher mortality rates and risk of developing neurological sequelae (Bogovic and Strle, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bogovic and Strle, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "974c7233-2cf0-4a55-b18f-6fe508fee279",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C11",
+      "claim": "Acute bacterial meningitis is one of the leading causes of death due to infectious diseases worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute bacterial meningitis (ABM) is one of the leading causes of death due to infectious diseases worldwide and is associated with rapid disease progression, increased risk of long-term neurological sequelae in survivors, and high mortality rates (van de Beek et al., 2004; van de Beek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to van de Beek et al., 2004 and 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "10ff3728-4fc6-4131-9f32-7fa9ca67c2d5",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C12",
+      "claim": "Acute bacterial meningitis is associated with rapid disease progression, increased risk of long-term neurological sequelae in survivors, and high mortality rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute bacterial meningitis (ABM) is one of the leading causes of death due to infectious diseases worldwide and is associated with rapid disease progression, increased risk of long-term neurological sequelae in survivors, and high mortality rates (van de Beek et al., 2004; van de Beek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to van de Beek et al., 2004 and 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "d3401370-3daa-4a35-90b6-22896894357b",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C13",
+      "claim": "Different bacterial and viral pathogens are associated with specific virulence mechanisms that impact the molecular phenotype of the host immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "The different bacterial and viral pathogens are associated with specific virulence mechanisms that impact the molecular phenotype of the host immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about pathogen-host interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "421545a4-9bb6-41f9-9c91-8245a6806dcf",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C14",
+      "claim": "Diagnosis of meningitis routinely involves lumbar punctures to evaluate several parameters in the cerebrospinal fluid such as the number of white blood cells as well as glucose and protein concentrations to differentiate between ABM and VM.",
+      "claim_type": "EXPLICIT",
+      "source": "This information can be used to diagnose patients with meningitis, which routinely involves lumbar punctures to evaluate several parameters in the cerebrospinal fluid (CSF) such as the number of white blood cells (WBCs) as well as glucose and protein concentrations to differentiate between ABM and VM (Ross et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ross et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f9f95d6c-3cc8-4be8-9837-8e399fd3e51f",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C15",
+      "claim": "CSF parameters used for meningitis diagnosis are relatively non-specific yielding inconclusive diagnostic information.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, these parameters are relatively non-specific yielding inconclusive diagnostic information (Garty et al., 1997; Lindquist et al., 1988; Nigrovic et al., 2002), and it currently remains unknown if different pathogens and pathogen types can evoke detectable differences in host response proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Garty et al., 1997; Lindquist et al., 1988; Nigrovic et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "b3746127-30cb-4074-9a28-e174be2f84d3",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C16",
+      "claim": "It currently remains unknown if different pathogens and pathogen types can evoke detectable differences in host response proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, these parameters are relatively non-specific yielding inconclusive diagnostic information (Garty et al., 1997; Lindquist et al., 1988; Nigrovic et al., 2002), and it currently remains unknown if different pathogens and pathogen types can evoke detectable differences in host response proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a knowledge gap that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f69f3ea0-a85b-4004-b6bb-c9ce336cab57",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C17",
+      "claim": "Extracellular body fluids such as blood plasma, saliva, and CSF are deficient in the machinery required for de novo protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular body fluids such as blood plasma, saliva, and CSF are deficient in the machinery required for de novo protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established biological knowledge about body fluids.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "7a179083-4039-401c-81e0-93ccebd45310",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C18",
+      "claim": "The protein constituents of body fluids are generated via active protein secretion from surrounding tissues or from passive leakage derived from normal protein turnover from cells and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein constituents of body fluids are generated via active protein secretion from surrounding tissues or from passive leakage derived from normal protein turnover from cells and tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established biological knowledge about protein composition of body fluids.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "0827b7d1-fd60-4d9c-9bae-481c60360050",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C19",
+      "claim": "During healthy conditions, the concentration of individual proteins in body fluids is maintained via a tightly controlled balance between protein secretion and clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "During healthy conditions, the concentration of individual proteins in body fluids is maintained via a tightly controlled balance between protein secretion and clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established biological knowledge about protein homeostasis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "dc90afc9-26d0-44ea-8c30-fcb0a976c4bb",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C20",
+      "claim": "The balance between protein secretion and clearance is altered in severe infectious diseases such as sepsis or meningitis due to the host responses triggered by the invading pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "This balance is altered in severe infectious diseases such as sepsis or meningitis due to the host responses triggered by the invading pathogen (Malmstr\u00f6m et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Malmstr\u00f6m et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "57559818-94e8-4c84-b46b-e443c6bc0641",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C21",
+      "claim": "In meningitis and sepsis, the immune response normally increases cellular and acellular mediators in the CSF and plasma, which leads to a drastic proteome reorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "In meningitis and sepsis, the immune response normally increases cellular and acellular mediators in the CSF and plasma, which leads to a drastic proteome reorganization (Karlsson et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Karlsson et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "77ce15e8-d9d7-467b-a49e-ca74962472b2",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C22",
+      "claim": "In the most severe stages of disease, host immune response becomes overwhelming, leading to organ damage and impaired prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the most severe stages of disease, host immune response becomes overwhelming, leading to organ damage and impaired prognosis (van de Beek et al., 2004; van de Beek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to van de Beek et al., 2004 and 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "e6f17e6c-7172-4899-a4df-15dd526d9189",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C23",
+      "claim": "Detection of pathogen-specific host response patterns requires the analysis of large sample cohorts to compare host response patterns from a similar group of pathogens to all other pathogen types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, detection of pathogen-specific host response patterns requires the analysis of large sample cohorts to compare host response patterns from a similar group of pathogens to all other pathogen types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a methodological inference about study design requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f7cdc57f-ff53-429b-845a-12e3c0d37bdc",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C24",
+      "claim": "As the protein composition of body fluids is produced elsewhere, mRNA transcript profiling is less suitable for the detection of host responses.",
+      "claim_type": "EXPLICIT",
+      "source": "As the protein composition of body fluids is produced elsewhere, mRNA transcript profiling is less suitable for the detection of host responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the fact that body fluids lack protein synthesis machinery.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "699883d3-7770-448b-ac16-192b3c0ca548",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C25",
+      "claim": "Mass spectrometry-based protein quantification has become the preferred method for multiplexed and quantitative analysis of proteomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry (MS)-based protein quantification has become the preferred method for multiplexed and quantitative analysis of proteomes (Aebersold and Mann, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Aebersold and Mann, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "fa2f8ba3-7f9b-41f0-a5aa-ad473bf243f3",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C26",
+      "claim": "The prevailing MS strategy relies on data-dependent acquisition (DDA), where the mass spectrometer sequentially selects and fragments trypsin-generated peptide ions to generate informative daughter fragment ion spectra used for database searching.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevailing MS strategy relies on data-dependent acquisition (DDA), where the mass spectrometer sequentially selects and fragments trypsin-generated peptide ions to generate informative daughter fragment ion spectra used for database searching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about mass spectrometry methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f68df1e4-1e33-4967-a02e-f2ddf41ae315",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C27",
+      "claim": "DDA proteomics experiments enable identification of thousands of peptide ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such proteomics experiments enable identification of thousands of peptide ions, the strategy is associated with lower quantitative reproducibility, as in complex samples the number of available peptides exceeds the cycling time of the DDA method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about DDA capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "ddda39b2-aff6-44bf-a530-ebb516d8c408",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C28",
+      "claim": "DDA is associated with lower quantitative reproducibility because in complex samples the number of available peptides exceeds the cycling time of the DDA method.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such proteomics experiments enable identification of thousands of peptide ions, the strategy is associated with lower quantitative reproducibility, as in complex samples the number of available peptides exceeds the cycling time of the DDA method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about DDA limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "fcdeba53-e240-4df5-a2af-896dbe370479",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C29",
+      "claim": "SWATH-MS generates fragment ion spectra of all MS-measurable peptides to produce a digital representation of the analyzed proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the recent development of sequential window acquisition of all theoretical fragment ion spectra (SWATH)-MS generates fragment ion spectra of all MS-measurable peptides to produce a digital representation of the analyzed proteome (Gillet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gillet et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f4e2bd06-5b72-4011-87f3-8669ae26301d",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C30",
+      "claim": "In SWATH-MS, proteome maps are generated based on data-independent acquisition (DIA), followed by protein quantification using a priori established assay libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "In SWATH-MS, proteome maps are generated based on data-independent acquisition (DIA), followed by protein quantification using a priori established assay libraries (Teleman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Teleman et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "2efd0f5a-4f28-4e9d-961c-99b8137ca2fd",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C31",
+      "claim": "Different assay libraries can be used to iteratively query the same DIA data in an iterative fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Different assay libraries can be used to iteratively query the same DIA data in an iterative fashion, which is a considerable advantage as it permits a single data collection step for clinical samples (Guo et al., 2015) and focused reanalysis in future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Guo et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "abbb95a6-1c1c-4451-abc3-a8fd34806671",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C32",
+      "claim": "DIA is associated with a high degree of reproducibility, making it possible to merge data sets analyzed separately in time to perform cross-study comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, DIA is associated with a high degree of reproducibility, making it possible to merge data sets analyzed separately in time to perform cross-study comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about DIA methodology advantages.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "178461e6-cfe6-417e-b5a5-a79350626adc",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C33",
+      "claim": "CSF was collected by lumbar puncture from a cohort of 135 patients admitted to the hospital with the suspicion of meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, CSF was collected by lumbar puncture from a cohort of 135 patients admitted to the hospital with the suspicion of meningitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental sample collection performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "700499a8-b833-4b83-9828-27bb4e7cf311",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C34",
+      "claim": "Following confirmed diagnosis, the patients were broadly subdivided into ABM (n = 35), neuroborreliosis (BM, n = 7), VM (n = 21), suspected ABM (n = 5), suspected VM (n = 16), and inflammation without infection (n = 2).",
+      "claim_type": "EXPLICIT",
+      "source": "Following confirmed diagnosis, the patients were broadly subdivided into ABM (n = 35), neuroborreliosis (BM, n = 7), VM (n = 21), suspected ABM (n = 5), suspected VM (n = 16), and inflammation without infection (n = 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the patient cohort classification in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "0ab42137-3ae9-4ef4-be75-7659676ed079",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C35",
+      "claim": "In this cohort, ABM was caused by 11 different bacterial pathogens, where the most frequent pathogen was Streptococcus pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, ABM was caused by 11 different bacterial pathogens, where the most frequent pathogen was Streptococcus pneumoniae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pathogen distribution in the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "fbffb2ba-850d-4619-8149-da2034101227",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C36",
+      "claim": "VM was caused by seven different viruses with the highest frequency of TBE and enteroviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "VM was caused by seven different viruses with the highest frequency of TBE and enteroviruses (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the viral pathogen distribution shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "1836f5b6-4be9-42b7-bfa4-2dd31e1bb222",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C37",
+      "claim": "Patients with suspected meningitis but with normal WBC count (<5 \u00d7 106/L) and with no clinical signs of infection/inflammation were regarded as a control group (n = 49).",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with suspected meningitis but with normal WBC count (<5 \u00d7 106/L) and with no clinical signs of infection/inflammation were regarded as a control group (n = 49).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control group definition in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "781a09e9-76c4-44f2-8fae-58074cca5106",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C38",
+      "claim": "A total of 771 unique human proteins were confidently detected and quantified in this analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 771 unique human proteins were confidently detected and quantified in this analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the proteomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "fe7c8ce2-f78f-478f-8282-f1136d8a009d",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C39",
+      "claim": "The sample group containing the largest number of unique proteins was ABM (n = 719 versus n = 544 in controls), followed by VM (n = 550) and BM (n = 478).",
+      "claim_type": "EXPLICIT",
+      "source": "The sample group containing the largest number of unique proteins was ABM (n = 719 versus n = 544 in controls), followed by VM (n = 550) and BM (n = 478).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the proteomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "02422f1a-fe58-4055-9891-1fc5836f8284",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C40",
+      "claim": "On average, the total protein intensities in ABM were 2, 2.7, and 4.3 times higher than in BM, VM, and the control group, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the total protein intensities in ABM were 2, 2.7, and 4.3 times higher than in BM, VM, and the control group, respectively (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "e4447981-a2aa-4fd8-908b-881ff3a56fc5",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C41",
+      "claim": "The majority of proteins detected are secreted (between 37% and 48% across all samples), followed by membrane-bound proteins, which comprised 18\u201324% of the total protein content.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the subcellular compartment of the detected proteins revealed that the majority of proteins are secreted (between 37% and 48% across all samples), followed by membrane-bound proteins, which comprised 18\u201324% of the total protein content (Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from subcellular compartment analysis shown in Figure 2\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "8030c22c-04fc-4d71-9ae8-92c33cc4c5aa",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C42",
+      "claim": "The average intensity for the secreted proteins was 5.9-fold higher in ABM versus control and 2.7\u20132.9-fold higher in ABM when compared to BM or VM.",
+      "claim_type": "EXPLICIT",
+      "source": "The average intensity for the secreted proteins was 5.9-fold higher in ABM versus control and 2.7\u20132.9-fold higher in ABM when compared to BM or VM (Figure 2\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result shown in Figure 2\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "0bdaaae1-3a39-474d-bca6-e80b6185d7a6",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C43",
+      "claim": "Numerous neutrophil-, plasma-, and brain-associated proteins constitute on average 15\u201320% of the protein intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that numerous neutrophil-, plasma-, and brain-associated proteins constitute on average 15\u201320% of the protein intensity, where, in particular, the neutrophil proteins increased during ABM (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "5ae90fdc-62da-4b9a-9f53-cb83340bac50",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C44",
+      "claim": "Neutrophil proteins increased during ABM.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that numerous neutrophil-, plasma-, and brain-associated proteins constitute on average 15\u201320% of the protein intensity, where, in particular, the neutrophil proteins increased during ABM (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f9f7de1f-2d16-488b-9ef5-be61789e2673",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C45",
+      "claim": "Plasma proteins are known to be major constituents of CSF under physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma proteins are known to be major constituents of CSF under physiological conditions (Guldbrandsen et al., 2014), and presence of brain-associated proteins in CSF is likely related to protein turnover in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Guldbrandsen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "2e0936be-9a6a-4a80-8f27-4a919aeed306",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C46",
+      "claim": "Presence of brain-associated proteins in CSF is likely related to protein turnover in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma proteins are known to be major constituents of CSF under physiological conditions (Guldbrandsen et al., 2014), and presence of brain-associated proteins in CSF is likely related to protein turnover in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed brain proteins in CSF.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "12795b4e-949f-46e3-8416-51032222ab8e",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C47",
+      "claim": "Statistical analysis between sample groups reveals 79 statistically induced or repressed proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analysis between sample groups reveals 79 statistically induced or repressed proteins (Figure 2b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from statistical analysis shown in Figure 2b\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "8a07834b-ab7c-4839-b882-0fa4644da3a6",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C48",
+      "claim": "The majority of significantly altered proteins were associated with neutrophils (32% in ABM and 14% in VM), the brain (44% in ABM and 32% in VM), and some plasma proteins including several acute-phase proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of significantly altered proteins were associated with neutrophils (32% in ABM and 14% in VM), the brain (44% in ABM and 32% in VM), and some plasma proteins including several acute-phase proteins (Figure 2\u2014figure supplement 4a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from tissue assignment analysis shown in Figure 2\u2014figure supplement 4a, b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "9e89223b-882a-40ca-861b-917bc7e3532f",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C49",
+      "claim": "Several neutrophil-associated proteins were induced \u226564-fold but not statistically significant, indicating a large degree of variation associated with these proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several neutrophil-associated proteins were induced \u226564-fold (yellow dots) but not statistically significant, indicating a large degree of variation associated with these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of high fold-change but non-significant proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "60bcbe05-195c-4f41-aa2f-3362a5d26816",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C50",
+      "claim": "The average intensities of all neutrophil proteins show a significant increase only in ABM compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "For each group, the average intensities of all neutrophil proteins show a significant increase only in ABM compared to controls (Figure 2f), whereas there is a significant decrease in brain-associated proteins in ABM, VM, and TBE (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "e1c58c38-4320-4993-a16d-ade938807cfc",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C51",
+      "claim": "There is a significant decrease in brain-associated proteins in ABM, VM, and TBE.",
+      "claim_type": "EXPLICIT",
+      "source": "For each group, the average intensities of all neutrophil proteins show a significant increase only in ABM compared to controls (Figure 2f), whereas there is a significant decrease in brain-associated proteins in ABM, VM, and TBE (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "1f31eda1-3c27-421d-b90f-8deac4cc28bb",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C52",
+      "claim": "Among the gene ontology terms enriched for the repressed proteins in ABM was 'regulation of synapse maturation and assembly,' suggesting changes on the cellular level in neuronal circuits during ABM.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the gene ontology (GO) terms enriched for the repressed proteins in ABM was 'regulation of synapse maturation and assembly,' suggesting changes on the cellular level in neuronal circuits during ABM (Figure 2\u2014figure supplement 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of GO enrichment analysis shown in Figure 2\u2014figure supplement 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "effad200-97a2-42bd-bb3c-f9c980b391c3",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C53",
+      "claim": "Notable GO terms for induced proteins in ABM were 'regulation of apoptotic signaling pathway,' 'defense response to bacterium,' and 'glial cell development.'",
+      "claim_type": "EXPLICIT",
+      "source": "Of the induced proteins, notable GO terms were 'regulation of apoptotic signaling pathway,' 'defense response to bacterium,' and 'glial cell development.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from GO enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "48cac717-589d-4660-89cd-6886bcdc5901",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C54",
+      "claim": "The GO terms suggest increased apoptotic pathways and enriched molecular processes specialized in combating bacteria in the CSF of patients with ABM, followed by increased development of glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These suggest increased apoptotic pathways and enriched molecular processes specialized in combating bacteria in the CSF of patients with ABM, followed by increased development of glial cells, which are involved in maintaining chemical homeostasis and act as the immune cells of the CNS (Ransohoff and Brown, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the GO enrichment results, with citation support for glial cell function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "a91c2dd2-7015-435a-b3fc-dc5e282012b9",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C55",
+      "claim": "Glial cells are involved in maintaining chemical homeostasis and act as the immune cells of the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "These suggest increased apoptotic pathways and enriched molecular processes specialized in combating bacteria in the CSF of patients with ABM, followed by increased development of glial cells, which are involved in maintaining chemical homeostasis and act as the immune cells of the CNS (Ransohoff and Brown, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ransohoff and Brown, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "fad1f10b-a1e5-4cc5-906f-b3faf86a5a22",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C56",
+      "claim": "ABM and VM evoke a more similar response compared to BM.",
+      "claim_type": "EXPLICIT",
+      "source": "This cross-comparison reveals that ABM and VM evoke a more similar response compared to BM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cross-comparison analysis of differentially expressed proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "1b211724-8194-4c79-a3d3-24c343a19d41",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C57",
+      "claim": "ABM was associated with 49 unique statistically significant proteins and VM 10 proteins and 16 proteins were shared between the disease groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, ABM was associated with 49 unique statistically significant proteins and VM 10 proteins and 16 proteins were shared between the disease groups (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the Venn diagram analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "21f43326-f32a-4585-a179-2d395e9bcf7f",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C58",
+      "claim": "Only three proteins, chitinase-3-like protein 2 (CHI3L2), immunoglobulin mu heavy chain disease protein (MUCB), and profilin-1 (PROF1), were found at higher levels in all the three diseased groups compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Only three proteins, chitinase-3-like protein 2 (CHI3L2), immunoglobulin mu heavy chain disease protein (MUCB), and profilin-1 (PROF1), were found at higher levels in all the three diseased groups compared to control (Figure 3e), although the intensities for these proteins are substantially higher in the ABM samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the protein intensity analysis shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "34970489-d2da-4e0f-80b8-6bff47f65102",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C59",
+      "claim": "The intensities for CHI3L2, MUCB, and PROF1 are substantially higher in the ABM samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Only three proteins, chitinase-3-like protein 2 (CHI3L2), immunoglobulin mu heavy chain disease protein (MUCB), and profilin-1 (PROF1), were found at higher levels in all the three diseased groups compared to control (Figure 3e), although the intensities for these proteins are substantially higher in the ABM samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the protein intensity analysis shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "5fcfcdc5-6876-4dac-82dd-645abeb0e973",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C60",
+      "claim": "Previous studies have shown an association between CHI3L2, MUCB, and PROF1 and neurological disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown an association between these proteins and neurological disease (M\u00f8llgaard et al., 2016; Narayanan et al., 2016; Opsahl et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to M\u00f8llgaard et al., 2016; Narayanan et al., 2016; Opsahl et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "54e3597d-4384-4df7-994e-4087b2a81fd7",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C61",
+      "claim": "Neutrophil proteins are distinctive for ABM, but not for VM.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that neutrophil proteins are distinctive for ABM, but not for VM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the tissue assignment analysis of disease-specific proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "0e2b28cb-fe7b-4f21-a3f2-420c0335ba9a",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C62",
+      "claim": "ABM led to increased levels of acute-phase proteins such as serum amyloid a-1 (SAA1) and C-reactive protein (CRP).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ABM also led to increased levels of acute-phase proteins such as serum amyloid a-1 (SAA1) and C-reactive protein (CRP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the protein intensity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "eb46092b-ee4c-4d45-b6db-9dbe9b7b2ca5",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C63",
+      "claim": "VM resulted in increased concentrations of C4b-binding protein and C-X-C motif chemokine 10 (CXCL10).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, VM resulted in increased concentrations of C4b-binding protein and C-X-C motif chemokine 10 (CXCL10), where the latter chemokine is elevated in plasma during viral infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the protein intensity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "4e019791-2ba6-4017-b300-390df765675d",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C64",
+      "claim": "CXCL10 is elevated in plasma during viral infections.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, VM resulted in increased concentrations of C4b-binding protein and C-X-C motif chemokine 10 (CXCL10), where the latter chemokine is elevated in plasma during viral infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about CXCL10 in viral infections.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "67470409-fac5-4d28-956d-28df1f58ceaa",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C65",
+      "claim": "All of the tested groups had an area under the receiver operating characteristic curve (AUROC) above 0.80.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the tested groups had an area under the receiver operating characteristic curve (AUROC) above 0.80, and two of them had an AUROC above 0.90 (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the LASSO regression modeling shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "ce8d802b-0fda-43bf-822e-9e515afa0930",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C66",
+      "claim": "Two of the tested groups had an AUROC above 0.90.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the tested groups had an area under the receiver operating characteristic curve (AUROC) above 0.80, and two of them had an AUROC above 0.90 (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the LASSO regression modeling shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "bc4ddf02-cb48-427e-9efd-c95be97b5211",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C67",
+      "claim": "The protein profiles for ABM and control were reproducible across the 100 runs and specific, with a mean AUROC of 0.96 for ABM and 0.95 for controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein profiles for ABM and control were reproducible across the 100 runs and specific, with a mean AUROC of 0.96 for ABM and 0.95 for controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the LASSO regression modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "98f2ca9e-4ea3-481b-9457-56786d743b89",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C68",
+      "claim": "The models for BM and VM had a lower mean AUROC of 0.85 and 0.80, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The models for BM and VM had a lower mean AUROC of 0.85 and 0.80, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the LASSO regression modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "b1164a19-8c46-4f77-a37d-ca890bfb1ac7",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C69",
+      "claim": "TBE displayed the most stable and discriminatory AUROC of 0.87 of all specific causative-agent subgroups, indicating that TBE evokes a distinct host response.",
+      "claim_type": "EXPLICIT",
+      "source": "TBE displayed the most stable and discriminatory AUROC of 0.87 of all specific causative-agent subgroups, indicating that TBE evokes a distinct host response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the LASSO regression modeling with an interpretation about TBE host response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "e31a8c8d-2782-4d8e-bc78-9f29f289a841",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C70",
+      "claim": "18 proteins were detected in \u226590% of the 100 runs in every fold and had a nonzero weight, which were consistently used in the LASSO models for discriminating different sample groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 18 proteins were detected in \u226590% of the 100 runs in every fold and had a nonzero weight, which were consistently used in the LASSO models for discriminating different sample groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the LASSO regression modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "21952303-b107-42cd-bd41-c78f87456cc9",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C71",
+      "claim": "5 of the 18 proteins were in general detected in higher amounts in ABM and BM and include proteins such as gelsolin (GEL), cathepsin D (CATD), and transthyretin (TTHY) that are involved in neutrophil degranulation according to the Reactome Pathway Database.",
+      "claim_type": "EXPLICIT",
+      "source": "5 of the 18 proteins were in general detected in higher amounts in ABM and BM and include proteins such as gelsolin (GEL), cathepsin D (CATD), and transthyretin (TTHY) that are involved in neutrophil degranulation according to the Reactome Pathway Database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the LASSO model with functional annotation from Reactome.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "6301d47e-036a-42be-ab57-b1bb2d64aa75",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C72",
+      "claim": "Nine of the 18 proteins were exclusively elevated in ABM and include proteins involved in inflammatory response (A2GL, HPT A1T1), fibrin clot formation (HEP2, PROS), LPS binding (CD14), and regulation of the complement cascade (CFAH).",
+      "claim_type": "EXPLICIT",
+      "source": "Nine of the proteins were exclusively elevated in ABM and include proteins involved in inflammatory response (A2GL, HPT A1T1), fibrin clot formation (HEP2, PROS), LPS binding (CD14), and regulation of the complement cascade (CFAH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the LASSO model with functional annotation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "ccb3ca34-8469-4123-b812-2f90fb0cdc57",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C73",
+      "claim": "These proteins are all found in lower concentrations in the control samples, and these proteins were mostly predictive for ABM and/or the control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these proteins are all found in lower concentrations in the control samples, and these proteins were mostly predictive for ABM and/or the control samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the LASSO model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "7624309c-068e-46bb-b41b-fd8508fbd093",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C74",
+      "claim": "BM, VM, and TBE in general have less discriminatory weight coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, BM, VM, and TBE in general have less discriminatory weight coefficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the LASSO model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "648c193f-36f6-4d9d-9992-4e9bc654df5e",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C75",
+      "claim": "For TBE, monocyte differentiation antigen CD14 was elevated compared to the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "For TBE, monocyte differentiation antigen CD14 was elevated compared to the controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the protein intensity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "eddf17d8-1172-421a-b112-af4fb905845c",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C76",
+      "claim": "Antithrombin-III, a serine protease inhibitor that regulates the blood coagulation cascade, was associated with a high weight coefficient and a relatively high abundance level in the VM group.",
+      "claim_type": "EXPLICIT",
+      "source": "Antithrombin-III, a serine protease inhibitor that regulates the blood coagulation cascade, was associated with a high weight coefficient and a relatively high abundance level in the VM group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the LASSO model with functional annotation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "967d41ba-4d4b-412d-bd19-d9a2be3e9797",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C77",
+      "claim": "LASSO regression can select a set of predictive proteins to classify different disease etiologies in meningitis, which was not possible by any of single-protein biomarker candidates quantified in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these results demonstrate that LASSO regression can select a set of predictive proteins to classify different disease etiologies in meningitis, which was not possible by any of single-protein biomarker candidates quantified in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the LASSO modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "a3906ebe-2dc3-4e0c-84bc-4b3c4523eb78",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C78",
+      "claim": "Some studies have shown that the levels of certain proteins remained high in the CSF from non-survivors, such as chitotriosidase, complement C1q tumor necrosis factor-related protein 9, and haptoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "Meningitis is a disease that is associated with a risk of developing severe neurological sequelae in survivors, and some studies have shown that the levels of certain proteins remained high in the CSF from non-survivors (Goonetilleke et al., 2010), such as chitotriosidase, complement C1q tumor necrosis factor-related protein 9, and haptoglobin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Goonetilleke et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "64188c38-77a7-41de-a900-e4bebfa27402",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C79",
+      "claim": "The compendium was extended with an additional total of 36 CSF samples from ABM (six patients) and from patients with subarachnoidal hemorrhage (SAH, four patients).",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate changes of the CSF proteome over time, we extended the compendium of proteome maps with an additional total of 36 CSF samples from ABM (six patients) and from patients with subarachnoidal hemorrhage (SAH, four patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the longitudinal sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "d1b205fc-7b6f-4bb6-b309-2a82d9e99679",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C80",
+      "claim": "From these patients, there were multiple CSF samples collected up to 10\u201313 days after admittance to hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "From these patients, there were multiple CSF samples collected up to 10\u201313 days after admittance to hospital (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the longitudinal sampling timeline shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "605ffe52-e306-40e1-bb7c-6342654d6535",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C81",
+      "claim": "Four LASSO-predicted proteins for ABM remained elevated until the end of the 10-day period.",
+      "claim_type": "EXPLICIT",
+      "source": "Four LASSO-predicted proteins for ABM remained elevated until the end of the 10-day period (Figure 5b), suggesting that sampling over a longer time period is required to observe the protein levels returning to baseline.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the longitudinal analysis shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f0304e8a-46a8-45ea-961f-9c786d9d9364",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C82",
+      "claim": "Sampling over a longer time period is required to observe the protein levels returning to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Four LASSO-predicted proteins for ABM remained elevated until the end of the 10-day period (Figure 5b), suggesting that sampling over a longer time period is required to observe the protein levels returning to baseline.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observation that proteins remained elevated at 10 days.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "b3086a69-068b-4010-b8e7-2aed5c899abe",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C83",
+      "claim": "The brain proteins with significantly lower levels in ABM started to increase during the extended follow-up times peaking around day 5.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain proteins with significantly lower levels in ABM started to increase during the extended follow-up times peaking around day 5 (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the longitudinal analysis shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "2624626f-8f08-4eb8-a703-639f2ff90cfe",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C84",
+      "claim": "The proteins with significantly lower abundance in ABM compared to control cases show a slight increase over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the proteins with significantly lower abundance in ABM compared to control cases show a slight increase over time (Figure 5d), whereas the proteins with higher levels in ABM compared to control decreased in ABM over the 10 day-period (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the longitudinal analysis shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f448de46-0bf7-4d78-92a2-8e70299cce98",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C85",
+      "claim": "The proteins with higher levels in ABM compared to control decreased in ABM over the 10 day-period.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the proteins with significantly lower abundance in ABM compared to control cases show a slight increase over time (Figure 5d), whereas the proteins with higher levels in ABM compared to control decreased in ABM over the 10 day-period (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the longitudinal analysis shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "df46e117-8393-4f2b-9f62-f2a40987de80",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C86",
+      "claim": "The levels of neutrophil proteins in ABM start to decrease but showed a high degree of variability.",
+      "claim_type": "EXPLICIT",
+      "source": "The levels of neutrophil proteins in ABM start to decrease but showed a high degree of variability (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the longitudinal analysis shown in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "fe1a3161-5b53-4e41-ab86-e9feb9332b0c",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C87",
+      "claim": "In all cases, protein levels were low or absent in SAH.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, protein levels were low or absent in SAH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the longitudinal analysis comparing ABM and SAH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "412b24e8-369c-420e-80a5-20c02a7d72b3",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C88",
+      "claim": "The LASSO-predicted proteins used for discriminating ABM tend to stay elevated even after the patients were released from hospital care.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the LASSO-predicted proteins used for discriminating ABM tend to stay elevated even after the patients were released from hospital care.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the longitudinal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "d00cdd08-eb4b-4d46-980e-5ccfcc36f19f",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C89",
+      "claim": "These results indicate an ongoing complex host response process that is unique to infectious neurological disease, such as ABM, and is absent in other types of neurological trauma such as SAH.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate an ongoing complex host response process that is unique to infectious neurological disease, such as ABM, and is absent in other types of neurological trauma such as SAH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the longitudinal data comparing ABM and SAH.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "4a557997-1b8c-4af7-8305-5c7162804cbd",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C90",
+      "claim": "Data of protein levels over a longer period of time could possibly help in understanding neurological sequelae that are followed after some cases of meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Data of protein levels over a longer period of time could possibly help in understanding neurological sequelae that are followed after some cases of meningitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications of longitudinal data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "2cc1856b-0e24-4dde-b58d-f12329681056",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C91",
+      "claim": "The quantified proteins have a median coefficient of variation (CV) for technical replicates below 20% as previously shown.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantified proteins have a median coefficient of variation (CV) for technical replicates below 20% as previously shown (Guo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Guo et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "ff634a25-550a-4f11-beb6-579cfdf52ea9",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C92",
+      "claim": "The compendium presented in this study comprised in total 171 CSF samples with different sample- and time-dimensions generated from <50 \u03bcL of CSF.",
+      "claim_type": "EXPLICIT",
+      "source": "The compendium presented in this study comprised in total 171 CSF samples with different sample- and time-dimensions generated from <50 \u03bcL of CSF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the study's sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "269ddbb2-2653-4216-8a60-8ec154a3de81",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C93",
+      "claim": "In SWATH-MS, the post-acquisition targeted data analysis strategy using previously established assay libraries confirms the presence and relative abundance of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In SWATH-MS, the post-acquisition targeted data analysis strategy using previously established assay libraries confirms the presence and relative abundance of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about SWATH-MS methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "2bb49faf-97d8-40b8-bdcc-71fba38bbe6b",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C94",
+      "claim": "Once acquired, the compendium of SWATH-MS maps can be iteratively reanalyzed in silico to test new hypotheses.",
+      "claim_type": "EXPLICIT",
+      "source": "Once acquired, the compendium of SWATH-MS maps can be iteratively reanalyzed in silico to test new hypotheses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a methodological advantage of SWATH-MS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "9ae092b6-3129-45ba-b16e-f990f2601248",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C95",
+      "claim": "In severe infectious diseases, several factors may influence the type and magnitude of the host response, such as type of infecting pathogen, host immune status, and time of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In severe infectious diseases, several factors may influence the type and magnitude of the host response, such as type of infecting pathogen, host immune status, and time of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about factors affecting host response.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "9c666d28-d36f-4805-aa03-57dea8c6bf58",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C96",
+      "claim": "The dysregulated host responses during sepsis and meningitis can be detrimental to the host.",
+      "claim_type": "EXPLICIT",
+      "source": "The dysregulated host responses during sepsis and meningitis can be detrimental to the host (Iskander et al., 2013; Ward et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Iskander et al., 2013 and Ward et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "ea96448c-6080-4ffe-bf9d-91ca4d8f3cc8",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C97",
+      "claim": "Altered protein composition of CSF provides an opportunity to probe disease status of the complex interplay of factors driving the host response.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, altered protein composition of CSF provides an opportunity to probe disease status of the complex interplay of factors driving the host response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about the utility of CSF proteomics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "6a9ce3bb-f643-424f-9567-ceca08480584",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C98",
+      "claim": "Damage derived from the infectious process and/or the host response may generate detectable protein changes associated with, for example, organ damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Damage derived from the infectious process and/or the host response may generate detectable protein changes associated with, for example, organ damage (Malmstr\u00f6m et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Malmstr\u00f6m et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "870750df-c48b-40a3-89f3-8543b93d8e5f",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C99",
+      "claim": "The increased levels of neutrophil proteins are a consequence of infiltrating activated neutrophils, known to occur predominately during ABM.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased levels of neutrophil proteins are a consequence of infiltrating activated neutrophils, known to occur predominately during ABM (Hoffman and Weber, 2009; Tunkel and Scheld, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hoffman and Weber, 2009 and Tunkel and Scheld, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "47b2ffe1-5842-4d6f-af4a-22beda78ec0b",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C100",
+      "claim": "Neutrophils may release decondensed extracellular DNA coated with antimicrobial proteins called neutrophil extracellular traps (NETs).",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophils may release decondensed extracellular DNA coated with antimicrobial proteins called neutrophil extracellular traps (NETs) (Moorthy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Moorthy et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "b0e8b825-3f2b-44f5-bcd2-8ffa8b6013d9",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C101",
+      "claim": "A recent study showed high levels of NETs in the CSF of patients with pneumococcal meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed high levels of NETs in the CSF of patients with pneumococcal meningitis and that disrupting NETs using DNase I significantly reduces bacterial load, demonstrating that NETs contribute to the pathogenesis of pneumococcal meningitis (Mohanty et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mohanty et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "e1f5271c-4776-4c1e-ae42-2d40907fc9ed",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C102",
+      "claim": "Disrupting NETs using DNase I significantly reduces bacterial load in pneumococcal meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed high levels of NETs in the CSF of patients with pneumococcal meningitis and that disrupting NETs using DNase I significantly reduces bacterial load, demonstrating that NETs contribute to the pathogenesis of pneumococcal meningitis (Mohanty et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mohanty et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "a87db6b1-41b6-4a12-a946-dfd234d8e0ed",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C103",
+      "claim": "NETs contribute to the pathogenesis of pneumococcal meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed high levels of NETs in the CSF of patients with pneumococcal meningitis and that disrupting NETs using DNase I significantly reduces bacterial load, demonstrating that NETs contribute to the pathogenesis of pneumococcal meningitis (Mohanty et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mohanty et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "143a4679-7b75-44e8-b058-995cb99241c2",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C104",
+      "claim": "The reason for the reduction of brain-specific proteins is not clarified.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that both ABM and VM introduce reduced levels of brain-specific proteins, although the overlap of the reduced proteins between ABM and VM is small. The reason for this reduction is not clarified, although it was previously reported that brain proteins decrease in CSF during other neurological disorders, such as Huntington's disease (Fang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a lack of understanding about the mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "6396f3b6-a988-41c4-bbc8-77e2a4f376da",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C105",
+      "claim": "It was previously reported that brain proteins decrease in CSF during other neurological disorders, such as Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that both ABM and VM introduce reduced levels of brain-specific proteins, although the overlap of the reduced proteins between ABM and VM is small. The reason for this reduction is not clarified, although it was previously reported that brain proteins decrease in CSF during other neurological disorders, such as Huntington's disease (Fang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "a311df7e-675b-4ae4-8a31-585ee5c1c73e",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C106",
+      "claim": "The large number of disease-causing pathogens in meningitis leads to high heterogeneity in both patients and disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "The large number of disease-causing pathogens in meningitis leads to high heterogeneity in both patients and disease progression, and this variability can be seen in other severe infectious diseases such as sepsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about disease heterogeneity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "92dc4086-64c7-49f8-9faf-d1fbb2ebd6be",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C107",
+      "claim": "This variability can be seen in other severe infectious diseases such as sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "The large number of disease-causing pathogens in meningitis leads to high heterogeneity in both patients and disease progression, and this variability can be seen in other severe infectious diseases such as sepsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about disease heterogeneity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "56cebc05-599b-403d-845f-2688095af51f",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C108",
+      "claim": "In order to account for clinical diversity in medical research, traditional individual biomarker studies can be replaced with multiprotein panels to provide better coverage of the underlying disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to account for this clinical diversity in medical research, traditional individual biomarker studies can be replaced with multiprotein panels to provide better coverage of the underlying disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about biomarker research strategy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "e9e80b18-a0b8-4a7b-8a4e-52b9520e7fed",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C109",
+      "claim": "Proteins predictive of ABM include CATD and complement factor H (CFAH), both of which are known plasma proteins involved in clearance of specifically bacterial infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins predictive of ABM include CATD and complement factor H (CFAH), both of which are known plasma proteins involved in clearance of specifically bacterial infections (Bewley et al., 2011; Haapasalo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bewley et al., 2011 and Haapasalo et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f256d551-cd45-440b-b36d-4bb9e54ad45a",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C110",
+      "claim": "Leucine-rich alpha-2-glycoprotein (A2GL) has previously been suggested to be an inflammatory marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Leucine-rich alpha-2-glycoprotein (A2GL) has previously been suggested to be an inflammatory marker, and significantly higher levels of A2GL were reported in the CSF of children with ABM compared to febrile controls (Chong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chong et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "3502a822-f3c5-49b7-9bd0-55144a530faa",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C111",
+      "claim": "Significantly higher levels of A2GL were reported in the CSF of children with ABM compared to febrile controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Leucine-rich alpha-2-glycoprotein (A2GL) has previously been suggested to be an inflammatory marker, and significantly higher levels of A2GL were reported in the CSF of children with ABM compared to febrile controls (Chong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chong et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "650a22c5-dab8-4ecd-9f29-005e1252f954",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C112",
+      "claim": "Other studies have shown that the CSF levels of alpha-1 antitrypsin (A1AT) and apolipoprotein E (APOE) were higher in ABM compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have shown that the CSF levels of alpha-1 antitrypsin (A1AT) and apolipoprotein E (APOE) were higher in ABM compared to controls (Hoffman et al., 1989; Gutteberg et al., 1986; Wang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hoffman et al., 1989; Gutteberg et al., 1986; Wang et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "a7d416f1-7a5c-44f9-ba54-3d9ea43741d6",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C113",
+      "claim": "Antithrombin-3 (ANT3) has previously been shown to have a broad-spectrum antiviral activity for various human cytomegaloviruses and herpes simplex viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, antithrombin-3 (ANT3), one of the predictive proteins for VM, has previously been shown to have a broad-spectrum antiviral activity for various human cytomegaloviruses and herpes simplex viruses (Quenelle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Quenelle et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "c32f42d2-0488-473c-8840-ccbd35d04a85",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C114",
+      "claim": "Large-scale multiprotein panels can yield biological and clinical insights that are difficult to achieve with traditional statistical analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "These results together indicate that large-scale multiprotein panels can yield biological and clinical insights that are difficult to achieve with traditional statistical analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the LASSO modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "2d74e632-bb3a-4ed7-a82a-31cdbf19cc29",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C115",
+      "claim": "The high reproducibility of SWATH-MS is a consequence of the DIA, which generates fragment-ion spectra from all MS-measurable peptides from a proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "The high reproducibility of SWATH-MS is a consequence of the DIA, which generates fragment-ion spectra from all MS-measurable peptides from a proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about SWATH-MS methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "9752133e-0d3d-4efb-a630-1493ef2f63f6",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C116",
+      "claim": "This feature can support extension of the compendium to generate a digital representation of physical biobanks.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature can support extension of the compendium to generate a digital representation of physical biobanks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "0eb07430-5e94-49f3-8e83-c8bfe515c2a7",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C117",
+      "claim": "In total, the sample cohort in this study consists of patients infected with 19 different pathogens, where the three largest groups were S. pneumoniae, enteroviruses, and TBE.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, the sample cohort in this study consists of patients infected with 19 different pathogens, where the three largest groups were S. pneumoniae, enteroviruses, and TBE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pathogen diversity in the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "86d60314-0e08-444a-9c6d-4401f03fc74b",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C118",
+      "claim": "Among these pathogen groups, the LASSO regression generated the highest AUC for TBE although the sample size was relatively small.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these pathogen groups, the LASSO regression generated the highest AUC for TBE although the sample size was relatively small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the LASSO regression modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "cb11ec9a-fbe8-4452-a1cf-a64f74908b0b",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C119",
+      "claim": "There are currently no biomarkers for detecting and diagnosing TBE.",
+      "claim_type": "EXPLICIT",
+      "source": "There are currently no biomarkers for detecting and diagnosing TBE (Bogovic and Strle, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bogovic and Strle, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "f162fe2c-aa27-49ea-bf52-85fb0d590bc1",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C120",
+      "claim": "Future extension of the compendium will enable further investigations of pathogen-specific host responses for other pathogens in CSF.",
+      "claim_type": "EXPLICIT",
+      "source": "Future extension of the compendium will enable further investigations of pathogen-specific host responses for other pathogens in CSF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "2aa1bc15-4ae7-49b5-ab2a-b30bdd65e53a",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C121",
+      "claim": "The opportunity to reanalyze the compendium in silico based on improved assay libraries will provide opportunities to find new protein patterns correlating with other types of clinical information such as disease outcome or the development of neurological sequelae.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the opportunity to reanalyze the compendium in silico based on improved assay libraries will provide opportunities to find new protein patterns correlating with other types of clinical information such as disease outcome or the development of neurological sequelae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research opportunities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "a5a46c9a-2fc9-4694-8898-931adafdaf4d",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C122",
+      "claim": "This goal can be achieved through either a data-driven process where samples are clustered based on similarities in the proteome changes or in a hypothesis-driven fashion where the compendium is interrogated for protein profiles correlating with, for example, pathogen type, infection time, or disease severity.",
+      "claim_type": "EXPLICIT",
+      "source": "This goal can be achieved through either a data-driven process where samples are clustered based on similarities in the proteome changes or in a hypothesis-driven fashion where the compendium is interrogated for protein profiles correlating with, for example, pathogen type, infection time, or disease severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes potential analytical approaches for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "e9981a71-035b-43f9-8882-e70c64705960",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C123",
+      "claim": "The increasing efforts to construct complete assay libraries of the human proteome will provide improved definition of proteins enriched in particular cells and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The increasing efforts to construct complete assay libraries of the human proteome (Kim et al., 2014; Matsumoto et al., 2017; Zolg et al., 2017) will provide improved definition of proteins enriched in particular cells and tissues and will enable quantification of additional proteins, post-translational modifications (Rosenberger et al., 2017), and proteolytically processed proteins from the already established compendiums of proteome maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kim et al., 2014; Matsumoto et al., 2017; Zolg et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "6e65923d-fd95-4e42-94c3-25a9e54b78a8",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C124",
+      "claim": "Complete assay libraries will enable quantification of additional proteins, post-translational modifications, and proteolytically processed proteins from the already established compendiums of proteome maps.",
+      "claim_type": "EXPLICIT",
+      "source": "The increasing efforts to construct complete assay libraries of the human proteome (Kim et al., 2014; Matsumoto et al., 2017; Zolg et al., 2017) will provide improved definition of proteins enriched in particular cells and tissues and will enable quantification of additional proteins, post-translational modifications (Rosenberger et al., 2017), and proteolytically processed proteins from the already established compendiums of proteome maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations including Rosenberger et al., 2017 for post-translational modifications.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "5f124bd6-8ed2-4ff3-b5ea-622abc3d8049",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C125",
+      "claim": "Such a resource can be anticipated to enable improved correlation between host responses and detectable changes in CSF and potentially blood plasma to identify molecular markers that can be used for the development of new diagnostic-, prognostic-, and treatment-decisive information for severe infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately such a resource can be anticipated to enable improved correlation between host responses and detectable changes in CSF and potentially blood plasma to identify molecular markers that can be used for the development of new diagnostic-, prognostic-, and treatment-decisive information for severe infectious diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "218b881d-2875-42f9-8eea-6f87cdc9f16e",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C126",
+      "claim": "Fifty microliters of CSF from each sample were prepared and analyzed using both shotgun mass spectrometry and SWATH-MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifty microliters of CSF from each sample were prepared and analyzed using both shotgun mass spectrometry (MS) and sequential window acquisition of all theoretical fragment ion spectra (SWATH-MS) for the construction of CSF proteome assay library and production of a digital compendium of SWATH-MS proteome maps.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methodology shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "9862d5b4-7159-4333-91a8-7caf3c986996",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C127",
+      "claim": "The SWATH-MS maps were post-acquisition interrogated with previously established assay library from 28 healthy human organs or primary cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These SWATH-MS maps were post-acquisition interrogated with previously established assay library from 28 healthy human organs or primary cells to enable the quantification of proteins enriched in relevant tissues such as brain, plasma, or immune cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data analysis methodology shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "a30855be-c503-483f-9e80-7573e48e408e",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "claim_id": "C128",
+      "claim": "The overlap of the reduced proteins between ABM and VM is small.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that both ABM and VM introduce reduced levels of brain-specific proteins, although the overlap of the reduced proteins between ABM and VM is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the comparative analysis of reduced proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2dff28bf-35d2-4cba-81f8-4687a4922696",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study detected 771 unique human proteins in CSF samples, with ABM showing the highest protein content and a specific increase in neutrophil-derived proteins. ABM samples contained 719 proteins versus 544 in controls, with total protein intensities 4.3 times higher than controls. Neutrophil proteins showed significant elevation specifically in ABM compared to all other groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C38-C44, C47-C48, C50, and C61 collectively demonstrate pathogen-specific proteome changes with strong quantitative data from SWATH-MS analysis. The statistical significance (C47, C50) and tissue assignment analysis (C48, C61) provide converging evidence for neutrophil protein elevation being distinctive for ABM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "3e246281-9ad4-4a0e-8c23-a901fc9cae1e",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both ABM and VM result in significant reduction of brain-enriched proteins in CSF, though the overlap of reduced proteins between ABM and VM is small and the mechanism remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C51, C104, and C128 are supported by statistical analysis (Figure 2e) showing significant decreases in brain-associated proteins across disease groups. The authors acknowledge the mechanism is not clarified (C104), which is appropriate scientific caution rather than a weakness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "97d856a1-cd2c-48e2-a13f-735efb942b6a",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LASSO regression modeling identified an 18-protein panel capable of classifying meningitis types with high performance. ABM and control groups achieved mean AUROC of 0.96 and 0.95 respectively, while TBE achieved AUROC of 0.87. All tested groups had AUROC above 0.80.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C65-C70, and C77 are well-supported by the LASSO modeling results with appropriate cross-validation (fourfold, 100 repetitions). The high AUROC values and reproducibility across runs demonstrate robust classification performance. The 18-protein panel was consistently selected (\u226590% of runs), providing strong evidence for the discriminatory capability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "b2d6895b-46b9-4ef2-82b5-280e3924a30e",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The 18-protein LASSO panel includes proteins with distinct functional roles: 5 proteins elevated in both ABM and BM (involved in neutrophil degranulation), 9 proteins exclusively elevated in ABM (involved in inflammatory response, fibrin clot formation, LPS binding, complement regulation), and proteins with varying discriminatory weights for BM, VM, and TBE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 provide detailed characterization of the LASSO-selected proteins with functional annotation from established databases (Reactome). The tissue-specific elevation patterns and functional roles are consistent with known biology of bacterial versus viral infections, supporting the validity of the panel.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "314c6ffc-b8b5-428a-afc8-e7ef90c967f9",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cross-comparison analysis revealed that ABM and VM evoke more similar responses compared to BM. ABM had 49 unique significant proteins, VM had 10, with 16 shared proteins. Only three proteins (CHI3L2, MUCB, PROF1) were elevated in all three disease groups, with substantially higher intensities in ABM. ABM showed increased acute-phase proteins (SAA1, CRP) while VM showed increased C4b-binding protein and CXCL10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 are supported by Venn diagram analysis (Figure 3d) and protein intensity measurements (Figure 3e-g). The differential protein patterns between disease groups are well-documented with appropriate citations for prior associations (C60). The disease-specific protein signatures are consistent with known pathophysiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "32e6ac75-fe5a-448a-a01a-75f079e31807",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gene ontology enrichment analysis revealed that repressed proteins in ABM are enriched for 'regulation of synapse maturation and assembly,' while induced proteins are enriched for 'regulation of apoptotic signaling pathway,' 'defense response to bacterium,' and 'glial cell development,' suggesting cellular-level changes in neuronal circuits and increased immune response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by GO enrichment analysis (Figure 2\u2014figure supplement 4c) with appropriate interpretation. The biological interpretation is reasonable and supported by citation for glial cell function (C55). However, the causal link between GO enrichment and actual cellular changes is inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "1614d9fa-941c-4b23-82c6-c322ef806975",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Longitudinal analysis of 36 additional CSF samples from ABM (6 patients) and SAH (4 patients) over 10-13 days showed that four LASSO-predicted proteins for ABM remained elevated throughout the 10-day period, brain proteins started increasing around day 5, and protein levels were low or absent in SAH, indicating an ongoing host response process unique to infectious neurological disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C89 are supported by longitudinal data (Figure 5). The temporal dynamics of protein changes are well-documented. The comparison with SAH provides important specificity for infectious versus non-infectious neurological conditions. However, the small sample size (6 ABM, 4 SAH patients) and limited follow-up duration (10-13 days) are acknowledged limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "687544d4-d421-4dc3-afd1-5f4db0b93183",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study analyzed CSF from 135 patients with suspected meningitis (171 total samples including longitudinal), subdivided into ABM (n=35, 11 bacterial pathogens), BM (n=7), VM (n=21, 7 viral pathogens), and controls (n=49). The most frequent pathogens were S. pneumoniae, enteroviruses, and TBE. Samples were analyzed using 50 \u03bcL CSF with SWATH-MS and interrogated with assay libraries from 28 human organs/cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37, C92, C117, C126-C127 accurately describe the study cohort and methodology. The sample sizes and pathogen distributions are clearly documented (Figure 1b). The methodology is appropriate for the research question with adequate technical detail provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "2e16898e-b8b6-4494-bc9d-337cd92e34c4",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Several LASSO-selected proteins have been previously associated with bacterial or viral infections in literature: CATD and CFAH are involved in bacterial clearance, A2GL is an inflammatory marker elevated in ABM, A1AT and APOE are higher in ABM, and ANT3 has broad-spectrum antiviral activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C113 are well-supported by appropriate citations to prior literature (Bewley et al. 2011, Haapasalo et al. 2012, Chong et al. 2018, Hoffman et al. 1989, Gutteberg et al. 1986, Wang et al. 2012, Quenelle et al. 2014). This provides external validation for the biological relevance of the LASSO-selected proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "77e97999-24a2-4f55-8e23-670c9e62b6fc",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SWATH-MS methodology generates fragment ion spectra of all MS-measurable peptides using data-independent acquisition (DIA), followed by protein quantification using established assay libraries. The method has high reproducibility (median CV <20% for technical replicates), allows iterative reanalysis with different libraries, and enables merging of datasets analyzed separately in time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32, C91, C93-C94, C115 accurately describe SWATH-MS methodology with appropriate citations (Gillet et al. 2012, Teleman et al. 2017, Guo et al. 2015). The technical reproducibility claim (C91) is supported by citation rather than data shown in this study, which is acceptable for established methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "3abdc15d-b42c-450f-b87c-4f5d666b6fd8",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Among pathogen groups, LASSO regression generated the highest AUC for TBE (0.87) despite relatively small sample size, and there are currently no biomarkers for detecting and diagnosing TBE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C119 are supported by LASSO modeling results and citation (Bogovic and Strle, 2015). The high performance for TBE classification despite small sample size (n=5) is notable and suggests a distinct host response signature. However, the small sample size is a limitation that should be acknowledged for clinical translation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "df57e777-5e51-410a-8a71-8ebeafb7843b",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Current CSF diagnostic parameters (WBC count, glucose, protein concentrations) are relatively non-specific yielding inconclusive diagnostic information, and it was previously unknown if different pathogens can evoke detectable differences in host response proteome. Detection of pathogen-specific patterns requires large sample cohorts, and mRNA profiling is less suitable for body fluids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16, C23-C24 establish the rationale for the study with appropriate citations (Garty et al. 1997, Lindquist et al. 1988, Nigrovic et al. 2002). The logical inference about mRNA profiling limitations (C24) is sound given that body fluids lack protein synthesis machinery (C17). This provides strong justification for the proteomics approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "22439544-8b9c-441b-92c1-f8fc7147b115",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Future work could include longer-term protein monitoring to understand neurological sequelae, extension of the compendium for other pathogens, reanalysis with improved assay libraries for new protein patterns, and development of diagnostic/prognostic markers. Complete human proteome assay libraries will enable quantification of additional proteins, PTMs, and processed proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90, C120-C125 are speculative statements about future research directions and potential applications. While reasonable and well-justified based on the current results, these represent anticipated outcomes rather than demonstrated findings. The speculation is appropriate for a Discussion section but cannot be evaluated as supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "06d8faac-a391-459f-962b-9fbb5c7f5f29",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge and literature context about meningitis epidemiology, pathophysiology, current diagnostic approaches, body fluid protein composition, mass spectrometry methods, neutrophil biology, and disease heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C14, C17-C22, C25-C28, C45-C46, C55, C64, C95-C108, C114, C116 represent established knowledge or literature-based context supported by appropriate citations. These provide necessary background but are not novel findings of this study. All citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    },
+    {
+      "id": "212f79e2-6ffa-445e-b192-c5dc8b4452c7",
+      "content_id": "624829a6-7e7e-4b2b-9849-3d8fcfcf18d8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Several neutrophil-associated proteins were induced \u226564-fold but not statistically significant, indicating large variation associated with these proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by the volcano plot data showing high fold-change but non-significant proteins (yellow dots in Figure 2b-d). The interpretation about high variation is reasonable. However, this observation raises questions about whether the statistical threshold is appropriate or whether biological variability is masking real effects in some patients.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:35:06.259474Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4989b388-a1f4-49af-b25c-0b0078cfebbb",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "7b77b945-aba4-4663-932d-ae3530fcf679",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "781a09e9-76c4-44f2-8fae-58074cca5106",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "fe7c8ce2-f78f-478f-8282-f1136d8a009d",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "02422f1a-fe58-4055-9891-1fc5836f8284",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "e4447981-a2aa-4fd8-908b-881ff3a56fc5",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "8030c22c-04fc-4d71-9ae8-92c33cc4c5aa",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "0bdaaae1-3a39-474d-bca6-e80b6185d7a6",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "5ae90fdc-62da-4b9a-9f53-cb83340bac50",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "12795b4e-949f-46e3-8416-51032222ab8e",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "8a07834b-ab7c-4839-b882-0fa4644da3a6",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "60bcbe05-195c-4f41-aa2f-3362a5d26816",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "54e3597d-4384-4df7-994e-4087b2a81fd7",
+      "result_id": "2dff28bf-35d2-4cba-81f8-4687a4922696"
+    },
+    {
+      "claim_id": "bd13dc80-b5fa-4f39-bfaf-57b3e57b4ded",
+      "result_id": "3e246281-9ad4-4a0e-8c23-a901fc9cae1e"
+    },
+    {
+      "claim_id": "e1c58c38-4320-4993-a16d-ade938807cfc",
+      "result_id": "3e246281-9ad4-4a0e-8c23-a901fc9cae1e"
+    },
+    {
+      "claim_id": "143a4679-7b75-44e8-b058-995cb99241c2",
+      "result_id": "3e246281-9ad4-4a0e-8c23-a901fc9cae1e"
+    },
+    {
+      "claim_id": "a30855be-c503-483f-9e80-7573e48e408e",
+      "result_id": "3e246281-9ad4-4a0e-8c23-a901fc9cae1e"
+    },
+    {
+      "claim_id": "2310880f-d117-420f-9ef9-218c8fcdb438",
+      "result_id": "97d856a1-cd2c-48e2-a13f-735efb942b6a"
+    },
+    {
+      "claim_id": "bbe9e49d-0dc5-43ed-902c-9282bfc14475",
+      "result_id": "97d856a1-cd2c-48e2-a13f-735efb942b6a"
+    },
+    {
+      "claim_id": "67470409-fac5-4d28-956d-28df1f58ceaa",
+      "result_id": "97d856a1-cd2c-48e2-a13f-735efb942b6a"
+    },
+    {
+      "claim_id": "ce8d802b-0fda-43bf-822e-9e515afa0930",
+      "result_id": "97d856a1-cd2c-48e2-a13f-735efb942b6a"
+    },
+    {
+      "claim_id": "bc4ddf02-cb48-427e-9efd-c95be97b5211",
+      "result_id": "97d856a1-cd2c-48e2-a13f-735efb942b6a"
+    },
+    {
+      "claim_id": "98f2ca9e-4ea3-481b-9457-56786d743b89",
+      "result_id": "97d856a1-cd2c-48e2-a13f-735efb942b6a"
+    },
+    {
+      "claim_id": "b1164a19-8c46-4f77-a37d-ca890bfb1ac7",
+      "result_id": "97d856a1-cd2c-48e2-a13f-735efb942b6a"
+    },
+    {
+      "claim_id": "e31a8c8d-2782-4d8e-bc78-9f29f289a841",
+      "result_id": "97d856a1-cd2c-48e2-a13f-735efb942b6a"
+    },
+    {
+      "claim_id": "967d41ba-4d4b-412d-bd19-d9a2be3e9797",
+      "result_id": "97d856a1-cd2c-48e2-a13f-735efb942b6a"
+    },
+    {
+      "claim_id": "21952303-b107-42cd-bd41-c78f87456cc9",
+      "result_id": "b2d6895b-46b9-4ef2-82b5-280e3924a30e"
+    },
+    {
+      "claim_id": "6301d47e-036a-42be-ab57-b1bb2d64aa75",
+      "result_id": "b2d6895b-46b9-4ef2-82b5-280e3924a30e"
+    },
+    {
+      "claim_id": "ccb3ca34-8469-4123-b812-2f90fb0cdc57",
+      "result_id": "b2d6895b-46b9-4ef2-82b5-280e3924a30e"
+    },
+    {
+      "claim_id": "7624309c-068e-46bb-b41b-fd8508fbd093",
+      "result_id": "b2d6895b-46b9-4ef2-82b5-280e3924a30e"
+    },
+    {
+      "claim_id": "648c193f-36f6-4d9d-9992-4e9bc654df5e",
+      "result_id": "b2d6895b-46b9-4ef2-82b5-280e3924a30e"
+    },
+    {
+      "claim_id": "eddf17d8-1172-421a-b112-af4fb905845c",
+      "result_id": "b2d6895b-46b9-4ef2-82b5-280e3924a30e"
+    },
+    {
+      "claim_id": "fad1f10b-a1e5-4cc5-906f-b3faf86a5a22",
+      "result_id": "314c6ffc-b8b5-428a-afc8-e7ef90c967f9"
+    },
+    {
+      "claim_id": "1b211724-8194-4c79-a3d3-24c343a19d41",
+      "result_id": "314c6ffc-b8b5-428a-afc8-e7ef90c967f9"
+    },
+    {
+      "claim_id": "21f43326-f32a-4585-a179-2d395e9bcf7f",
+      "result_id": "314c6ffc-b8b5-428a-afc8-e7ef90c967f9"
+    },
+    {
+      "claim_id": "34970489-d2da-4e0f-80b8-6bff47f65102",
+      "result_id": "314c6ffc-b8b5-428a-afc8-e7ef90c967f9"
+    },
+    {
+      "claim_id": "5fcfcdc5-6876-4dac-82dd-645abeb0e973",
+      "result_id": "314c6ffc-b8b5-428a-afc8-e7ef90c967f9"
+    },
+    {
+      "claim_id": "0e2b28cb-fe7b-4f21-a3f2-420c0335ba9a",
+      "result_id": "314c6ffc-b8b5-428a-afc8-e7ef90c967f9"
+    },
+    {
+      "claim_id": "eb46092b-ee4c-4d45-b6db-9dbe9b7b2ca5",
+      "result_id": "314c6ffc-b8b5-428a-afc8-e7ef90c967f9"
+    },
+    {
+      "claim_id": "1f31eda1-3c27-421d-b90f-8deac4cc28bb",
+      "result_id": "32e6ac75-fe5a-448a-a01a-75f079e31807"
+    },
+    {
+      "claim_id": "effad200-97a2-42bd-bb3c-f9c980b391c3",
+      "result_id": "32e6ac75-fe5a-448a-a01a-75f079e31807"
+    },
+    {
+      "claim_id": "48cac717-589d-4660-89cd-6886bcdc5901",
+      "result_id": "32e6ac75-fe5a-448a-a01a-75f079e31807"
+    },
+    {
+      "claim_id": "64188c38-77a7-41de-a900-e4bebfa27402",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "d1b205fc-7b6f-4bb6-b309-2a82d9e99679",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "605ffe52-e306-40e1-bb7c-6342654d6535",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "f0304e8a-46a8-45ea-961f-9c786d9d9364",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "b3086a69-068b-4010-b8e7-2aed5c899abe",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "2624626f-8f08-4eb8-a703-639f2ff90cfe",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "f448de46-0bf7-4d78-92a2-8e70299cce98",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "df46e117-8393-4f2b-9f62-f2a40987de80",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "fe1a3161-5b53-4e41-ab86-e9feb9332b0c",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "412b24e8-369c-420e-80a5-20c02a7d72b3",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "d00cdd08-eb4b-4d46-980e-5ccfcc36f19f",
+      "result_id": "1614d9fa-941c-4b23-82c6-c322ef806975"
+    },
+    {
+      "claim_id": "178461e6-cfe6-417e-b5a5-a79350626adc",
+      "result_id": "687544d4-d421-4dc3-afd1-5f4db0b93183"
+    },
+    {
+      "claim_id": "700499a8-b833-4b83-9828-27bb4e7cf311",
+      "result_id": "687544d4-d421-4dc3-afd1-5f4db0b93183"
+    },
+    {
+      "claim_id": "0ab42137-3ae9-4ef4-be75-7659676ed079",
+      "result_id": "687544d4-d421-4dc3-afd1-5f4db0b93183"
+    },
+    {
+      "claim_id": "fbffb2ba-850d-4619-8149-da2034101227",
+      "result_id": "687544d4-d421-4dc3-afd1-5f4db0b93183"
+    },
+    {
+      "claim_id": "1836f5b6-4be9-42b7-bfa4-2dd31e1bb222",
+      "result_id": "687544d4-d421-4dc3-afd1-5f4db0b93183"
+    },
+    {
+      "claim_id": "ff634a25-550a-4f11-beb6-579cfdf52ea9",
+      "result_id": "687544d4-d421-4dc3-afd1-5f4db0b93183"
+    },
+    {
+      "claim_id": "0eb07430-5e94-49f3-8e83-c8bfe515c2a7",
+      "result_id": "687544d4-d421-4dc3-afd1-5f4db0b93183"
+    },
+    {
+      "claim_id": "218b881d-2875-42f9-8eea-6f87cdc9f16e",
+      "result_id": "687544d4-d421-4dc3-afd1-5f4db0b93183"
+    },
+    {
+      "claim_id": "9862d5b4-7159-4333-91a8-7caf3c986996",
+      "result_id": "687544d4-d421-4dc3-afd1-5f4db0b93183"
+    },
+    {
+      "claim_id": "e9e80b18-a0b8-4a7b-8a4e-52b9520e7fed",
+      "result_id": "2e16898e-b8b6-4494-bc9d-337cd92e34c4"
+    },
+    {
+      "claim_id": "f256d551-cd45-440b-b36d-4bb9e54ad45a",
+      "result_id": "2e16898e-b8b6-4494-bc9d-337cd92e34c4"
+    },
+    {
+      "claim_id": "3502a822-f3c5-49b7-9bd0-55144a530faa",
+      "result_id": "2e16898e-b8b6-4494-bc9d-337cd92e34c4"
+    },
+    {
+      "claim_id": "650a22c5-dab8-4ecd-9f29-005e1252f954",
+      "result_id": "2e16898e-b8b6-4494-bc9d-337cd92e34c4"
+    },
+    {
+      "claim_id": "a7d416f1-7a5c-44f9-ba54-3d9ea43741d6",
+      "result_id": "2e16898e-b8b6-4494-bc9d-337cd92e34c4"
+    },
+    {
+      "claim_id": "fcdeba53-e240-4df5-a2af-896dbe370479",
+      "result_id": "77e97999-24a2-4f55-8e23-670c9e62b6fc"
+    },
+    {
+      "claim_id": "f4e2bd06-5b72-4011-87f3-8669ae26301d",
+      "result_id": "77e97999-24a2-4f55-8e23-670c9e62b6fc"
+    },
+    {
+      "claim_id": "2efd0f5a-4f28-4e9d-961c-99b8137ca2fd",
+      "result_id": "77e97999-24a2-4f55-8e23-670c9e62b6fc"
+    },
+    {
+      "claim_id": "abbb95a6-1c1c-4451-abc3-a8fd34806671",
+      "result_id": "77e97999-24a2-4f55-8e23-670c9e62b6fc"
+    },
+    {
+      "claim_id": "2cc1856b-0e24-4dde-b58d-f12329681056",
+      "result_id": "77e97999-24a2-4f55-8e23-670c9e62b6fc"
+    },
+    {
+      "claim_id": "269ddbb2-2653-4216-8a60-8ec154a3de81",
+      "result_id": "77e97999-24a2-4f55-8e23-670c9e62b6fc"
+    },
+    {
+      "claim_id": "2bb49faf-97d8-40b8-bdcc-71fba38bbe6b",
+      "result_id": "77e97999-24a2-4f55-8e23-670c9e62b6fc"
+    },
+    {
+      "claim_id": "2d74e632-bb3a-4ed7-a82a-31cdbf19cc29",
+      "result_id": "77e97999-24a2-4f55-8e23-670c9e62b6fc"
+    },
+    {
+      "claim_id": "86d60314-0e08-444a-9c6d-4401f03fc74b",
+      "result_id": "3abdc15d-b42c-450f-b87c-4f5d666b6fd8"
+    },
+    {
+      "claim_id": "cb11ec9a-fbe8-4452-a1cf-a64f74908b0b",
+      "result_id": "3abdc15d-b42c-450f-b87c-4f5d666b6fd8"
+    },
+    {
+      "claim_id": "f9f95d6c-3cc8-4be8-9837-8e399fd3e51f",
+      "result_id": "df57e777-5e51-410a-8a71-8ebeafb7843b"
+    },
+    {
+      "claim_id": "b3746127-30cb-4074-9a28-e174be2f84d3",
+      "result_id": "df57e777-5e51-410a-8a71-8ebeafb7843b"
+    },
+    {
+      "claim_id": "e6f17e6c-7172-4899-a4df-15dd526d9189",
+      "result_id": "df57e777-5e51-410a-8a71-8ebeafb7843b"
+    },
+    {
+      "claim_id": "f7cdc57f-ff53-429b-845a-12e3c0d37bdc",
+      "result_id": "df57e777-5e51-410a-8a71-8ebeafb7843b"
+    },
+    {
+      "claim_id": "4a557997-1b8c-4af7-8305-5c7162804cbd",
+      "result_id": "22439544-8b9c-441b-92c1-f8fc7147b115"
+    },
+    {
+      "claim_id": "f162fe2c-aa27-49ea-bf52-85fb0d590bc1",
+      "result_id": "22439544-8b9c-441b-92c1-f8fc7147b115"
+    },
+    {
+      "claim_id": "2aa1bc15-4ae7-49b5-ab2a-b30bdd65e53a",
+      "result_id": "22439544-8b9c-441b-92c1-f8fc7147b115"
+    },
+    {
+      "claim_id": "a5a46c9a-2fc9-4694-8898-931adafdaf4d",
+      "result_id": "22439544-8b9c-441b-92c1-f8fc7147b115"
+    },
+    {
+      "claim_id": "e9981a71-035b-43f9-8882-e70c64705960",
+      "result_id": "22439544-8b9c-441b-92c1-f8fc7147b115"
+    },
+    {
+      "claim_id": "6e65923d-fd95-4e42-94c3-25a9e54b78a8",
+      "result_id": "22439544-8b9c-441b-92c1-f8fc7147b115"
+    },
+    {
+      "claim_id": "5f124bd6-8ed2-4ff3-b5ea-622abc3d8049",
+      "result_id": "22439544-8b9c-441b-92c1-f8fc7147b115"
+    },
+    {
+      "claim_id": "63024753-0216-4bfe-8585-5640bae1732f",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "5df27ed9-7e31-4863-9145-70ba48fd777e",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "c4bac6a5-1fc7-48ad-8fa6-c8543ae5375b",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "089664c9-e8dc-473c-9136-6c30421ee3db",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "db30ab38-fada-4143-83bb-ae0c3e2d8cfd",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "974c7233-2cf0-4a55-b18f-6fe508fee279",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "10ff3728-4fc6-4131-9f32-7fa9ca67c2d5",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "d3401370-3daa-4a35-90b6-22896894357b",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "421545a4-9bb6-41f9-9c91-8245a6806dcf",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "f69f3ea0-a85b-4004-b6bb-c9ce336cab57",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "7a179083-4039-401c-81e0-93ccebd45310",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "0827b7d1-fd60-4d9c-9bae-481c60360050",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "dc90afc9-26d0-44ea-8c30-fcb0a976c4bb",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "57559818-94e8-4c84-b46b-e443c6bc0641",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "77ce15e8-d9d7-467b-a49e-ca74962472b2",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "699883d3-7770-448b-ac16-192b3c0ca548",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "fa2f8ba3-7f9b-41f0-a5aa-ad473bf243f3",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "f68df1e4-1e33-4967-a02e-f2ddf41ae315",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "ddda39b2-aff6-44bf-a530-ebb516d8c408",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "f9f7de1f-2d16-488b-9ef5-be61789e2673",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "2e0936be-9a6a-4a80-8f27-4a919aeed306",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "a91c2dd2-7015-435a-b3fc-dc5e282012b9",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "4e019791-2ba6-4017-b300-390df765675d",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "9ae092b6-3129-45ba-b16e-f990f2601248",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "9c666d28-d36f-4805-aa03-57dea8c6bf58",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "ea96448c-6080-4ffe-bf9d-91ca4d8f3cc8",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "6a9ce3bb-f643-424f-9567-ceca08480584",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "870750df-c48b-40a3-89f3-8543b93d8e5f",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "47b2ffe1-5842-4d6f-af4a-22beda78ec0b",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "b0e8b825-3f2b-44f5-bcd2-8ffa8b6013d9",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "e1f5271c-4776-4c1e-ae42-2d40907fc9ed",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "a87db6b1-41b6-4a12-a946-dfd234d8e0ed",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "6396f3b6-a988-41c4-bbc8-77e2a4f376da",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "a311df7e-675b-4ae4-8a31-585ee5c1c73e",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "92dc4086-64c7-49f8-9faf-d1fbb2ebd6be",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "56cebc05-599b-403d-845f-2688095af51f",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "c32f42d2-0488-473c-8840-ccbd35d04a85",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "9752133e-0d3d-4efb-a630-1493ef2f63f6",
+      "result_id": "06d8faac-a391-459f-962b-9fbb5c7f5f29"
+    },
+    {
+      "claim_id": "9e89223b-882a-40ca-861b-917bc7e3532f",
+      "result_id": "212f79e2-6ffa-445e-b192-c5dc8b4452c7"
+    }
+  ],
+  "comparisons": []
+}

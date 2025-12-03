@@ -1,0 +1,1431 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Electron cryo-tomography requires tilt series to be recorded and computationally aligned, currently limiting throughput.",
+    "claim_type": "EXPLICIT",
+    "source": "This context can be visualized at nanometer resolution in three dimensions (3D) using electron cryo-tomography, which requires tilt series to be recorded and computationally aligned, currently limiting throughput.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract as a limitation of cryo-ET.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "High-resolution signal preserved in raw tomograms is currently limited by technical difficulties, leading to increased false-positive detection rate in 3D template matching.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, the high-resolution signal preserved in the raw tomograms is currently limited by a number of technical difficulties, leading to an increased false-positive detection rate when using 3D template matching to find molecular complexes in tomograms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract as a current limitation of 3DTM.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "2D template matching addresses issues by including high-resolution signal preserved in single-tilt images.",
+    "claim_type": "EXPLICIT",
+    "source": "We have recently described a 2D template matching approach that addresses these issues by including high-resolution signal preserved in single-tilt images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and references prior work by the authors.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "A current limitation of 2D template matching is the high computational cost that limits throughput.",
+    "claim_type": "EXPLICIT",
+    "source": "A current limitation of this approach is the high computational cost that limits throughput.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract as a limitation of 2DTM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "GPU-accelerated implementation of 2D template matching in cisTEM allows for easy scaling and improves accessibility.",
+    "claim_type": "EXPLICIT",
+    "source": "We describe here a GPU-accelerated implementation of 2D template matching in the image processing software cisTEM that allows for easy scaling and improves the accessibility of this approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "2D template matching can identify ribosomes in images of frozen-hydrated Mycoplasma pneumoniae cells with high precision and sensitivity.",
+    "claim_type": "EXPLICIT",
+    "source": "We apply 2D template matching to identify ribosomes in images of frozen-hydrated Mycoplasma pneumoniae cells with high precision and sensitivity, demonstrating that this is a versatile tool for in situ visual proteomics and in situ structure determination.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the abstract and demonstrated with experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "2D template matching and 3D template matching offer complementary information about target localization and identity.",
+    "claim_type": "EXPLICIT",
+    "source": "We benchmark the results with 3D template matching of tomograms acquired on identical sample locations and identify strengths and weaknesses of both techniques, which offer complementary information about target localization and identity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion stated in the abstract based on comparative analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "X-ray crystallography and electron cryo-microscopy have been used to generate high-resolution density maps of purified complexes that could be interpreted by atomic models.",
+    "claim_type": "EXPLICIT",
+    "source": "To realize this goal, X-ray crystallography and electron cryo-microscopy (cryo-EM) have been used to generate high-resolution density maps of purified complexes that could be interpreted by atomic models (Berman et al., 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with a citation to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "A full understanding of molecular mechanisms requires the broader context of the cell.",
+    "claim_type": "EXPLICIT",
+    "source": "While the list of high-resolution structures is rapidly growing, a full understanding of molecular mechanisms requires the broader context of the cell (Alberts, 1998).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with a citation to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Cryo-EM can be used to image complexes directly inside frozen-hydrated cells and tissues.",
+    "claim_type": "EXPLICIT",
+    "source": "Cryo-EM can be used to image complexes directly inside frozen-hydrated cells and tissues, making it one of the most promising approaches to add cellular context to structures that have been visualized in vitro.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction as an established capability of cryo-EM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The average resolution of a tomogram is inherently limited to ~20 \u00c5 due to finite angular sampling, increased specimen thickness at higher tilt angles, inaccuracy in tilt series alignment, and local distortions in the sample during imaging.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the average resolution of a tomogram is inherently limited to ~20 \u00c5 (Frank, 2006) due to the finite angular sampling allowed by tolerable radiation damage, the increased specimen thickness at higher tilt angles, inaccuracy in the tilt series alignment caused by the weak signal present in individual tilted views, and local distortions in the sample during imaging (Himes and Zhang, 2018; Voortman et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with citations to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Subtomogram averaging can boost the resolution of reconstructions of complexes visualized in situ.",
+    "claim_type": "EXPLICIT",
+    "source": "By adapting techniques from single-particle cryo-EM, subtomogram averaging can boost the resolution of reconstructions of complexes visualized in situ (Bartesaghi et al., 2008; Winkler, 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with citations to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "3D template matching has been particularly successful in the study of large cytoplasmic complexes, such as ribosomes, proteasomes and chaperonins.",
+    "claim_type": "EXPLICIT",
+    "source": "3D template matching (3DTM) has been particularly successful in the study of large cytoplasmic complexes, such as ribosomes, proteasomes and chaperonins (Albert et al., 2017; Eibauer et al., 2012; Guo et al., 2018; Pfeffer and Mahamid, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with citations to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Semi-automated detection by 3D template matching requires extensive manual curation and the false positive rate is usually difficult to determine.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this semi-automated detection requires extensive manual curation and the false positive rate is usually difficult to determine.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction as a limitation of 3DTM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "It is practically impossible to reliably locate all but the most abundant complexes in tomograms.",
+    "claim_type": "EXPLICIT",
+    "source": "As a consequence, it is practically impossible to reliably locate all but the most abundant complexes in tomograms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction as a consequence of the computational demands of 3DTM.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "2D template matching matches projections of 3D templates to features found in single-exposure (2D) images of nominally untilted specimens, at 4 \u00c5 or higher resolution depending on the sample and targets to be localized.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, we described a 2D template matching (2DTM) technique that may overcome some of the limitations of 3DTM (Rickgauer et al., 2017). 2DTM matches projections of 3D templates to features found in single-exposure (2D) images of nominally untilted specimens, at 4 \u00c5 or higher resolution depending on the sample and targets to be localized (Rickgauer et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with a citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Avoiding multiple exposures and high specimen tilt angles helps preserve the high-resolution signal in 2D images.",
+    "claim_type": "EXPLICIT",
+    "source": "Avoiding multiple exposures and high specimen tilt angles helps preserve the high-resolution signal in these 2D images (Brilot et al., 2012), and therefore, 2DTM can utilize this signal to detect complexes with high precision, as well as high angular and positional in-plane accuracy (x,y coordinates).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with a citation to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "2D template matching can detect complexes with high precision, as well as high angular and positional in-plane accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Avoiding multiple exposures and high specimen tilt angles helps preserve the high-resolution signal in these 2D images (Brilot et al., 2012), and therefore, 2DTM can utilize this signal to detect complexes with high precision, as well as high angular and positional in-plane accuracy (x,y coordinates).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with a citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "In crowded environments such as the cell, the added signal in 2DTM comes at the expense of increased background (structural noise) in the images due to overlapping density from other molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "In crowded environments such as the cell, this added signal comes at the expense of increased background (structural noise) in the images due to overlapping density from other molecules, and a relatively large error in localizing the depth of the targets within the sample (z coordinate) (Rickgauer et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with a citation to prior work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "2D template matching has a relatively large error in localizing the depth of the targets within the sample (z coordinate).",
+    "claim_type": "EXPLICIT",
+    "source": "In crowded environments such as the cell, this added signal comes at the expense of increased background (structural noise) in the images due to overlapping density from other molecules, and a relatively large error in localizing the depth of the targets within the sample (z coordinate) (Rickgauer et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with a citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The matching of high-resolution details in 2DTM requires a fine-grained angular search composed of millions of reference projections and correlation maps to be calculated.",
+    "claim_type": "EXPLICIT",
+    "source": "The matching of high-resolution details in 2DTM requires a fine-grained angular search composed of millions of reference projections and correlation maps to be calculated, making the computational workload of a 2D template search relatively high compared to a more coarse-grained search that is normally done with 3DTM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction as an explanation for the high computational cost of 2DTM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "M. pneumoniae cells are small and do not require additional sample thinning.",
+    "claim_type": "EXPLICIT",
+    "source": "We applied 2DTM to a set of images of Mycoplasma pneumoniae using a bacterial 50S large ribosomal subunit as a template. M. pneumoniae cells are small and do not require additional sample thinning (K\u00fchner et al., 2009), for example via controlled cell lysis (Fu et al., 2014) or more commonly by using focused ion beam milling (Marko et al., 2007; Rigort et al., 2012; Strunk et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction with citations to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The C++ implementation of 2DTM in cisTEM achieved a roughly 23x speed-up compared to the MATLAB CPU implementation.",
+    "claim_type": "EXPLICIT",
+    "source": "To make 2DTM accessible to more users and a broader range of biological questions, we implemented 2DTM in cisTEM (Grant et al., 2018) using C++ (Figure 1a). This achieved a roughly 23x speed-up compared to the MATLAB CPU implementation, as measured on similar hardware, with measured times scaled to account for generational differences in CPU models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The core 2DTM algorithm is unchanged from its original description.",
+    "claim_type": "EXPLICIT",
+    "source": "The core 2DTM algorithm is unchanged from its original description as depicted in the flowchart in Figure 1\u2014figure supplement 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Searching a Gatan K3 detector image (5760 \u00d7 4092 pixels) requires ~7100 CPU-hours when searching 13 focal planes.",
+    "claim_type": "EXPLICIT",
+    "source": "Even with these improvements, searching a more typically sized image, like that from a Gatan K3 detector (5760 \u00d7 4092 pixels) requires ~7100 CPU-hours when searching 13 focal planes, which are needed to determine the z coordinates of targets and resolve overlapping densities in a 150- to 200-nm-thick sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section as a measurement of computational cost.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "About 85% of the computation for 2DTM is spent on calculating fast Fourier transforms (FFTs).",
+    "claim_type": "EXPLICIT",
+    "source": "Further substantial gains in the CPU-based code are not likely, given that about 85% of the computation for 2DTM is spent on calculating fast Fourier transforms (FFTs) using the already highly optimized Intel Math-Kernel library.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section as a measurement of computational bottleneck.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The GPU-accelerated implementation of 2DTM achieved an 8.5x speed up relative to the CPU-only implementation.",
+    "claim_type": "EXPLICIT",
+    "source": "To evaluate the performance improvements of our GPU 2DTM implementation relative to the CPU 2DTM implementation, we compared two high-end GPUs (Nvidia GV100) against two high-end 28-core CPUs (Intel Xeon Platinum 8280) installed in the same general-purpose workstation, with all other hardware and variables unchanged. By this metric, the GPU-accelerated implementation of 2DTM achieved an 8.5x speed up relative to the CPU-only implementation (Figure 2c).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the Results section and shown in Figure 2c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Using IEEE 754 half-precision floating point values (FP16) for tracking search statistics resulted in a total speed-up of 10.5x relative to the CPU-only C++ implementation.",
+    "claim_type": "EXPLICIT",
+    "source": "Using IEEE 754 half-precision floating point values (FP16) for the arrays used to track search statistics, namely the pixel-wise sum and sum-of-squares over all orientations, resulted in further acceleration and a reduced memory footprint. The total speed-up was 10.5x (Figure 2c), relative to the CPU-only C++ implementation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the Results section and shown in Figure 2c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The 2DTM algorithm scales nearly linearly with the number of GPUs used.",
+    "claim_type": "EXPLICIT",
+    "source": "The algorithm scales nearly linearly with the number of GPUs used, as shown for different NVIDIA GPU architectures in Figure 2d.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 2d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "6558 50S large ribosomal subunits were identified in 220 2D images of M. pneumoniae using 2DTM.",
+    "claim_type": "EXPLICIT",
+    "source": "To this end, we collected 2D images of plunge-frozen M. pneumoniae, bacteria that lack a cell wall and can be less than 200 nm thick, making them sufficiently thin to allow TEM imaging of whole cells in ice without the need for thinning (K\u00fchner et al., 2009). We performed 2DTM using the M. pneumoniae 50S (PDB: 7OOD) (Tegunov et al., 2021) as a template (Figure 3a) and identified 6558 50S large ribosomal subunits in 220 2D images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The average SNR in 2DTM was maximized using a B-factor of about 85 \u00c52 applied to the template.",
+    "claim_type": "EXPLICIT",
+    "source": "To improve the match between template and recorded signal, the template can be low-pass filtered to approximate physical blurring of the image due to radiation damage and beam-induced motion, as well as discrepancies between the target in the template, for example due to conformational differences. To low-pass filter the template, we applied a range of B-factors to the initial map generated using pdb2mrc (Tang et al., 2007, see Materials and methods) and found that the average SNR was maximized using a B-factor of about 85 \u00c52 (Figure 3\u2014figure supplement 1a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 3\u2014figure supplement 1a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Searching an image composed of exposure-weighted frames (32 e-/\u00c52) increased the average SNR compared to using only the first eight frames (12.8 e-/\u00c52) with or without exposure weighting.",
+    "claim_type": "EXPLICIT",
+    "source": "Using this value, we found that searching an image composed of exposure-weighted frames (32 e-/\u00c52) (Grant and Grigorieff, 2015) increased the average SNR compared to using only the first eight frames (12.8 e-/\u00c52) with or without exposure weighting (Figure 3\u2014figure supplement 1b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 3\u2014figure supplement 1b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Searching each image with templates sampling a defocus range of 2400 \u00c5 in 200 \u00c5 steps (13 defocus planes) increased the number of detected targets by ~40% in a 100 nm thick sample and ~400% in a 220-nm-thick sample.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with SNR values being sensitive to defocus errors (Rickgauer et al., 2020; Rickgauer et al., 2017), searching each image with templates sampling a defocus range of 2400 \u00c5 in 200 \u00c5 steps (13 defocus planes) increased the number of detected targets by ~40% in a 100 nm thick sample and ~400% in a 220-nm-thick sample (Figure 3\u2014figure supplement 1c).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 3\u2014figure supplement 1c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "A 3D reconstruction calculated from 5080 targets detected by 2DTM had a nominal resolution of 4.3 \u00c5 (FSC threshold of 0.143).",
+    "claim_type": "EXPLICIT",
+    "source": "Using the 5080 targets that met these criteria, out of the total of 6558 detected targets, we calculated a 3D reconstruction (Figure 3b). The reconstruction had a nominal resolution of 4.3 \u00c5 (FSC threshold of 0.143, Rosenthal and Henderson, 2003; Figure 3\u2014figure supplement 1e).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section with reference to Figure 3b and Figure 3\u2014figure supplement 1e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The 20 \u00c5-filtered 3D reconstruction from 2DTM-detected targets reproduces the 50S template and shows clear density for the 30S subunit that was not present in the template.",
+    "claim_type": "EXPLICIT",
+    "source": "The 20 \u00c5-filtered reconstruction reproduces the 50S template as expected, but also shows clear, albeit weaker density for the 30S subunit that was not present in the template, and thus cannot be due to template bias (Figure 3b,c).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 3b,c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The difference map between the M. pneumoniae 50S template and the 3D reconstruction shows density in regions of the 50S that have been shown to be flexible from in vitro reconstructions of the ribosome, specifically around the L1 stalk and the L7/L12 stalk.",
+    "claim_type": "EXPLICIT",
+    "source": "The difference map calculated using diffmap (Grigorieff, 2021a), between the M. pneumoniae 50S template and the 3D reconstruction shows density in regions of the 50S that have been shown to be flexible from in vitro reconstructions of the ribosome, specifically around the L1 stalk and the L7/L12 stalk (Figure 3c).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 3c.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Density was observed in each of the three tRNA-binding sites on the small subunit in the 3D reconstruction, which were not present in the template.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, we observed density in each of the three tRNA-binding sites on the small subunit, which were not present in the template (Figure 3d).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 3d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Using B. subtilis 50S as a template, 2874 50S locations were identified in 220 images of M. pneumoniae cells, less than half than were identified using the M. pneumoniae template.",
+    "claim_type": "EXPLICIT",
+    "source": "Using B. subtilis 50S as a template, we identified 2874 50S locations, less than half than were identified using the M. pneumoniae template (Figure 4b), and with significantly lower 2DTM SNR values (p<0.0001, Mann-Whitney U test, Figure 4c).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 4b,c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The 3D reconstruction from targets found with the B. subtilis 50S template revealed M. pneumoniae-specific features including C-terminal extensions of proteins L29 and L22, and protein L9.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this, the 3D reconstruction revealed that some of the features visible in the 50S density deviate from the B. subtilis template and likely result from M. pneumoniae-specific features (O'Reilly et al., 2020; Figure 4e, Figure 4\u2014figure supplement 1c). Specifically, the 3D reconstruction showed density consistent with M. pneumoniae-specific C-terminal extensions of proteins L29 and L22, and protein L9 (Figure 4f, Figure 4\u2014figure supplement 1c; O'Reilly et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 4e,f and Figure 4\u2014figure supplement 1c.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The 3D reconstruction from targets found with the B. subtilis 50S template lacked density for protein uL30, which is present in the B. subtilis template but absent from the M. pneumoniae genome.",
+    "claim_type": "EXPLICIT",
+    "source": "The 3D reconstruction also lacked density for protein uL30, which is present in the B. subtilis template, but absent from the M. pneumoniae genome (Grosjean et al., 2014; Figure 4g).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 4g.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "A B. subtilis 50S template can be used as a homology model to identify M. pneumoniae ribosomes and distinguish species-specific features.",
+    "claim_type": "EXPLICIT",
+    "source": "We conclude that a B. subtilis 50S template can be used as a homology model to identify M. pneumoniae ribosomes and distinguish species-specific features, and that including high-resolution signal in 2DTM does not overly bias the 3D reconstruction when an appropriately high SNR threshold is used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion stated in the Results section based on the experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Including high-resolution signal in 2DTM does not overly bias the 3D reconstruction when an appropriately high SNR threshold is used.",
+    "claim_type": "EXPLICIT",
+    "source": "We conclude that a B. subtilis 50S template can be used as a homology model to identify M. pneumoniae ribosomes and distinguish species-specific features, and that including high-resolution signal in 2DTM does not overly bias the 3D reconstruction when an appropriately high SNR threshold is used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion stated in the Results section based on the experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "19 2D images of M. pneumoniae cells were collected followed by tomograms of an overlapping area for benchmarking 2DTM and 3DTM.",
+    "claim_type": "EXPLICIT",
+    "source": "To compare the detection of 50S ribosomal subunits by 2DTM and 3DTM, we collected 19 2D images of M. pneumoniae cells followed by tomograms of an overlapping area.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section describing the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The pre-exposure of 32 e-/\u00c52 for 2D images is expected to have only a small effect on tomogram signal in the resolution range relevant for 3DTM (20 \u00c5 and lower).",
+    "claim_type": "EXPLICIT",
+    "source": "The pre-exposure of 32 e-/\u00c52 affects the signal in the tomograms at higher resolution but is expected to have only a small effect in the resolution range relevant for 3DTM, that is, 20 \u00c5 and lower (Grant and Grigorieff, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section with a citation to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The effective B-factor for subtomograms was estimated at 2000 \u00c52 with pre-irradiation, compared to 1700 \u00c52 without pre-irradiation.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with this prediction, we estimated an effective B-factor for the subtomograms of 2000 \u00c52 using RELION, compared to 1700 \u00c52 without pre-irradiation (O'Reilly et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section with a citation to support the claim.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The difference of 300 \u00c52 in B-factor attenuates the signal at 30 \u00c5 by only an additional 8%.",
+    "claim_type": "EXPLICIT",
+    "source": "The difference of 300 \u00c52 attenuates the signal at 30 \u00c5 by only an additional 8%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section as a calculation based on the B-factor difference.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "652 50S subunits were identified by 2DTM and 983 50S subunits were identified by 3DTM in the overlapping area of 19 images and tomograms.",
+    "claim_type": "EXPLICIT",
+    "source": "We aligned the coordinates of the 652 50S subunits identified by 2DTM with 983 50S subunits identified by 3DTM (see Materials and methods), both containing 50S targets corresponding to single 50S subunits and 70S ribosomes (Figure 5b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section describing the comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "576 2DTM targets were within a 100 \u00c5 distance in the x,y plane and within 20\u00b0 in each Euler angle of a 3DTM target.",
+    "claim_type": "EXPLICIT",
+    "source": "Within the area common to the 2D images and tomograms, we identified 576 2DTM targets that were within a 100 \u00c5 distance in the x,y plane, and within 20\u00b0 in each Euler angle of a 3DTM target.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section describing the comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The paired targets represent ~90% of all 2DTM targets and ~60% of all 3DTM targets in the overlapping area.",
+    "claim_type": "EXPLICIT",
+    "source": "The paired targets represent ~90% of all 2DTM targets and ~60% of all 3DTM targets in this area (Figure 5c, upper).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 5c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The proportion of 2DTM targets with a corresponding 3DTM target was consistent across the images examined.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the proportion of 2DTM targets with a corresponding 3DTM target was consistent across the images examined (Figure 5d).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 5d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The proportion of 3DTM targets detected in the 2DTM search was variable and showed a negative correlation with sample thickness.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the proportion of the 3DTM targets detected in the 2DTM search was variable and showed a negative correlation with sample thickness (Figure 5e).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 5e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "A threshold SNR of 7.61 was calculated to allow for a false positive rate of one per image, assuming a Gaussian noise distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Assuming a Gaussian noise distribution, we calculated a threshold SNR of 7.61 to allow for a false positive rate of one per image (Rickgauer et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section with a citation to prior work.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "At SNR thresholds > 7.6, the proportion of 2DTM/3DTM paired targets was ~90\u2013100%.",
+    "claim_type": "EXPLICIT",
+    "source": "The plot of matching targets in Figure 5f shows that at SNR thresholds > 7.6, the proportion of 2DTM/3DTM paired targets was ~90\u2013100%, while lowering the SNR threshold below 7.6 resulted in a sharp decrease, indicating that below this threshold, more non-matching targets were found than matching targets, many of them likely false positives.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 5f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The SNR threshold can be used to set a desired false positive rate suitable for a particular experimental design.",
+    "claim_type": "EXPLICIT",
+    "source": "This experimentally validates our use of a Gaussian noise model and the Neyman-Pearson threshold criterion and shows that the SNR threshold can be used to set a desired false positive rate suitable for a particular experimental design.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion stated in the Results section based on the experimental validation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "At a threshold of 7.61, the number of 2DTM targets not detected in the 3DTM search was 76, > 4 times higher than the expected 19 false positives for the 19 searched images.",
+    "claim_type": "EXPLICIT",
+    "source": "At a threshold of 7.61, the number of 2DTM targets not detected in the 3DTM search was 76, > 4 times higher than the expected 19 false positives for the 19 searched images and representing ~12% of the 2DTM peaks (Figure 5g).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 5g.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "In samples of ~100 nm thickness, 2DTM detected ~90% of the 50S subunits identified with 3DTM.",
+    "claim_type": "EXPLICIT",
+    "source": "We also noted that in samples of ~100 nm thickness we detected ~90% of the 50S subunits identified with 3DTM (Figure 5e). We therefore estimate that given optimum sample parameters, 2DTM can detect 50S subunits with comparable sensitivity to 3DTM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 5e.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "2DTM detects ~60% of the 3DTM targets that are classified as 50S or 70S, while only detecting <5% of the 3DTM targets that likely represent false positives.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that 2DTM detects ~60% of the 3DTM targets that are classified as 50S or 70S, while only detecting <5% of the 3DTM targets that likely represent false positives (Figure 6a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 6a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "2DTM can clearly discriminate targets that were excluded by classification of 3DTM targets with RELION.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus 2DTM can clearly discriminate targets that were excluded by classification of 3DTM targets with RELION (Bharat and Scheres, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion stated in the Results section based on the comparison data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "2DTM provides complementary evidence that could be used to validate targets identified by 3DTM without the need for subtomogram averaging and classification.",
+    "claim_type": "EXPLICIT",
+    "source": "It also shows that 2DTM provides complementary evidence that could be used to validate targets identified by 3DTM without the need for subtomogram averaging and classification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion stated in the Results section based on the comparison data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Of 700 50S locations searched, 314 (~45%) had detectable 30S subunits using local search with 2DTM.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 700 50S locations searched, 314 (~45%) had detectable 30S (Figure 6b), fewer than the ~70% of the 3DTM targets that were classified as 70S using RELION.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 6b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "~ 95% (576 out of 603) of the targets aligned in x and y had an angular distance of 20\u00b0 or less, with a median of 7\u00b0.",
+    "claim_type": "EXPLICIT",
+    "source": "Comparing the 2DTM results with the refined 3DTM results shows that ~ 95% (576 out of 603) of the targets aligned in x and y had an angular distance of 20\u00b0 or less, with a median of 7\u00b0 (using Equation 1; Figure 6d).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 6d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The median in-plane distance between 2DTM and 3DTM targets is 12 \u00c5.",
+    "claim_type": "EXPLICIT",
+    "source": "The median in-plane distance of 12 \u00c5 is likely due to deformation of the sample under the electron beam, which is more pronounced with the higher electron dose used in tilt series, and to a lesser extent due to the lower resolution of 3DTM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section as an observation from the comparison.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The median out-of-plane distance between detected 2DTM and 3DTM targets was \u00b184 \u00c5 before refinement and \u00b159 \u00c5 after 2DTM refinement of z coordinates.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to the x,y locations, which were calculated in steps of one pixel (1.27 \u00c5), the defocus values of 2DTM were sampled in 200 \u00c5 steps and, correspondingly the median out-of-plane distance between detected 2DTM and 3DTM targets was much higher at \u00b184 \u00c5 (Figure 6e). We used the program refine_template (see Materials and methods) to perform a local defocus refinement, which reduced the median out-of-plane distance to \u00b159 \u00c5 (Figure 6e), less than 1/3 the diameter of the 50S.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and shown in Figure 6e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "2DTM can effectively detect overlapping particles without sample tilt.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that some of the 50S subunits detected by 2DTM overlap in the image and were found in comparable locations by 3DTM (e.g. Figure 6f\u2013i). This confirms that 2DTM, as previously proposed (Rickgauer et al., 2017) can effectively detect overlapping particles without sample tilt.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section with reference to Figure 6f\u2013i and a citation to prior work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The GPU implementation of 2DTM in cisTEM offers a user-friendly interface and substantial acceleration by running the most demanding computations on GPUs.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we provide strategies to overcome some of the major limitations of molecular localization in cells using 2DTM. Firstly, we present a new implementation of 2DTM in cisTEM, which offers a user-friendly interface and substantial acceleration by running the most demanding computations on GPUs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a summary of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Averaging of complexes identified with 2DTM can reveal differences between the template and the target and allows identification of interacting complexes that may be difficult to detect alone.",
+    "claim_type": "EXPLICIT",
+    "source": "Secondly, we show that averaging of complexes identified with 2DTM can reveal differences between the template and the target and allows identification of interacting complexes that may be difficult to detect alone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a summary of the work.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "2DTM detects bona fide ribosomes in M. pneumoniae cells with high precision and comparable sensitivity relative to 3DTM.",
+    "claim_type": "EXPLICIT",
+    "source": "Thirdly, we demonstrate that 2DTM detects bona fide ribosomes in M. pneumoniae cells with high precision and comparable sensitivity relative to 3DTM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a summary of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The speed of 2DTM has been increased by more than 10-fold, socket-to-socket, relative to the C++ CPU implementation in cisTEM via GPU acceleration.",
+    "claim_type": "EXPLICIT",
+    "source": "To make 2DTM useful in practice, we have increased its speed by more than 10-fold, socket-to-socket, relative to our C++ CPU implementation in cisTEM via GPU acceleration, making it possible to search multiple images in hours instead of days.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a summary of the technical achievement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Efficient algorithms like the FFT are often limited by memory transfers on GPUs due to the large number of processing units.",
+    "claim_type": "EXPLICIT",
+    "source": "GPUs have so many processing units (cores) that efficient algorithms, like the FFT, are often limited by memory transfers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an explanation of GPU performance characteristics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The FP16 format roughly doubles the memory bandwidth by storing two variables in the low and high 16 bits of a 32 bit __half2 vector data type.",
+    "claim_type": "EXPLICIT",
+    "source": "We have ameliorated this problem by taking advantage of the FP16 format, storing two variables in the low and high 16 bits of a 32 bit __half2 vector data type, thereby roughly doubling the memory bandwidth.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a technical implementation detail.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Template matching is a well-established method to pick particles in single-particle cryo-EM images for further processing and 3D reconstruction.",
+    "claim_type": "EXPLICIT",
+    "source": "Template matching is a well-established method to pick particles in single-particle cryo-EM images for further processing and 3D reconstruction (Scheres, 2015; Sigworth et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with citations to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Using a template for picking can lead to template bias, that is, a 3D reconstruction that reproduces the template rather than the true particle structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a template for picking can also lead to template bias, that is, a 3D reconstruction that reproduces the template rather than the true particle structure (Henderson, 2013; Subramaniam, 2013; van Heel, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with citations to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Reconstructions derived from particles identified by template matching can be validated by observing features in the reconstruction that were not present in the template and that are known to be true.",
+    "claim_type": "EXPLICIT",
+    "source": "It is therefore important to validate features in a reconstruction derived from particles identified by template matching. This is commonly done by observing features in the reconstruction that were not present in the template, and that are known to be true.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a standard validation approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The B-factor of 85 \u00c52 used to filter the 50S template matches closely the B-factor of 86 \u00c52 used to correct the in situ reconstruction of the M. pneumoniae 70S from subtomograms.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we found that applying a B-factor of 85 \u00c52 to the 50S template maximized the mean detection SNR in this dataset (Figure 3\u2014figure supplement 1a). This value matches closely the B-factor of 86 \u00c52 used to correct the in situ reconstruction of the M. pneumoniae 70S from subtomograms (Tegunov et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with a citation to support the comparison.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The SNR values observed in the M. pneumoniae study are lower on average than expected based on the molecular mass of the template and previously observed values obtained with different samples and template structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the SNR values we observe are lower on average than expected based on the molecular mass of our template (about 1.2 MDa), as well as previously observed values obtained with different samples and template structures (Rickgauer et al., 2020; Rickgauer et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with citations to prior work for comparison.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "2DTM employs the matched filter, which is the statistically optimal detector for a deterministic signal in wide-sense stationary noise.",
+    "claim_type": "EXPLICIT",
+    "source": "2DTM employs the matched filter, which is the statistically optimal detector for a deterministic signal in wide-sense stationary noise (McDonough and Whalen, 1995).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with a citation to support the claim.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The SNR measured in 2DTM is ultimately limited by the template's molecular mass, making smaller complexes more difficult to detect.",
+    "claim_type": "EXPLICIT",
+    "source": "With zero-mean Gaussian noise, the output of the matched filter is an SNR determined by the ratio of the matching signal cross-correlation coefficient to the standard deviation of correlation coefficients in areas of the image devoid of matching signal. Given that the noise is roughly constant for a given image, the SNR measured in 2DTM is ultimately limited by the template's molecular mass, making smaller complexes more difficult to detect.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an explanation of 2DTM detection limits.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "A match in 2DTM indicates that the template is sufficiently similar to the target to yield an SNR above the significance threshold but does not indicate that the target conforms to the exact structure of the template.",
+    "claim_type": "EXPLICIT",
+    "source": "A match in 2DTM indicates that the template is sufficiently similar to the target to yield an SNR above the significance threshold but does not indicate that the target conforms to the exact structure of the template.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an interpretation of 2DTM results.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Targets detected with 2DTM likely reflect a subset of the total complement of in vivo states due to bias towards targets sufficiently similar to the template state.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, since target detection depends on pre-existing structures, detection by 2DTM is necessarily biased towards targets that are sufficiently similar to the state represented by the template, and other states may be missed. As a consequence, targets detected with 2DTM likely reflect a subset of the total complement of in vivo states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a limitation of 2DTM.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Only ~45% of identified 50S subunits were found to be bound with 30S subunits using local search with 2DTM, compared to ~70% expected based on 3DTM analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the 30S subunits having a molecular mass of ~700 kDa, well above the 300\u2013400 kDa limit expected to be detectable by 2DTM in images of samples with a thickness of 150\u2013200 nm (Rickgauer et al., 2020; Rickgauer et al., 2017), we found only ~45% of the identified 50S bound with 30S subunits, just over half of the expected 70% based on the analysis of tomograms from M. pneumonia (O'Reilly et al., 2020, Figure 6b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with citations to prior work for comparison.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The low detection rate of 30S subunits is likely due to conformational differences between the 30S template and specific instances of the small ribosomal subunit in the images.",
+    "claim_type": "EXPLICIT",
+    "source": "It is unlikely that this low detection rate is due to a bias of 2DTM toward detecting isolated 50S subunits because (i) a 3D reconstruction based on detected 50S subunits shows clear density for the 30S subunit (Figure 3d) and (ii) there was no significant difference in the detection of 50S and 70S targets, as validated by 3DTM (Figure 6\u2014figure supplement 1). Since the 30S subunit is highly dynamic and can adopt multiple conformations, it is likely that our false negatives arose from conformations that are not sufficiently similar to the 30S template that we used in our search.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an explanation for the low detection rate.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Below an SNR of 7.2, the number of detected 2DTM targets without a 3DTM match is less than statistically expected, suggesting bias in the statistics based on a Gaussian noise model.",
+    "claim_type": "EXPLICIT",
+    "source": "Below an SNR of 7.2, the number of detected 2DTM targets without a 3DTM match is less than statistically expected (Figure 5g). This suggests that the statistics, which are based on a Gaussian noise model, might suffer from bias, for example because the correlation coefficients calculated for each search location are not completely independent from each other.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion and shown in Figure 5g.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "A B. subtilis 50S template can detect 50S in M. pneumoniae cells despite differences in their structures.",
+    "claim_type": "EXPLICIT",
+    "source": "One of the limitations of 2DTM is a reliance on pre-existing high-resolution structures. Outside of a few model organisms, high-resolution structures are not available for the vast majority of species. We show that, despite differences in their structures, a B. subtilis 50S template can detect 50S in M. pneumoniae cells (Figure 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion and shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Mismatches between the template and cellular target resulting from species-specific structures reduce the 2DTM SNR.",
+    "claim_type": "EXPLICIT",
+    "source": "Mismatches between the template and cellular target resulting from species-specific structures reduce the 2DTM SNR (Figure 4c).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion and shown in Figure 4c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "It is possible to generate in situ 3D reconstructions of ribosomes from 2D images of cells without the need to collect a tilt series.",
+    "claim_type": "EXPLICIT",
+    "source": "We have shown that it is possible to generate in situ 3D reconstructions of ribosomes from 2D images of cells, without the need to collect a tilt series (Figures 3 and 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with reference to Figures 3 and 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "In a 3D reconstruction from 50S located by 2DTM with a B. subtilis 50S template, density corresponding to M. pneumoniae-specific protein structures was identified, and density corresponding to a B. subtilis-specific protein was not detected.",
+    "claim_type": "EXPLICIT",
+    "source": "In a 3D reconstruction from 50S located by 2DTM with a B. subtilis 50S template we identified density corresponding to M. pneumoniae-specific protein structures, and failed to detect density corresponding to a B. subtilis-specific protein (Figure 4f\u2013g).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with reference to Figure 4f\u2013g.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "By using a sufficiently high threshold to prevent a preponderance of false positives, targets identified using 2DTM templates from different species can be averaged to generate in situ 3D reconstructions with minimal template bias.",
+    "claim_type": "EXPLICIT",
+    "source": "This demonstrates that by using a sufficiently high threshold to prevent a preponderance of false positives, targets identified using 2DTM templates from different species can be averaged to generate in situ 3D reconstructions with minimal template bias.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion stated in the Discussion based on the experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "2DTM could be used as an alternative tool to accelerate in situ structure determination in non-model organisms.",
+    "claim_type": "EXPLICIT",
+    "source": "Cryo-ET is also currently limited by computationally demanding image processing, and is thus low throughput for routine in situ structure determination. 2DTM could be used as an alternative tool to accelerate in situ structure determination in non-model organisms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a proposed application of 2DTM.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "In tomograms, the background generated by neighboring and overlapping molecules can be partially 'disentangled' from the search targets by resolving all spatial dimensions.",
+    "claim_type": "EXPLICIT",
+    "source": "A significant challenge in using cryo-EM to study complexes in situ arises from the thick and crowded nature of the sample. In tomograms, the background generated by neighboring and overlapping molecules can be partially 'disentangled' from the search targets by resolving all spatial dimensions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an advantage of 3DTM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Overlapping targets can be separated in 2DTM based on their different x,y coordinates, views, and defocus values (z coordinate).",
+    "claim_type": "EXPLICIT",
+    "source": "However, while overlapping density cannot be removed in single-tilt images used for 2DTM, overlapping targets can still be separated based on their different x,y coordinates, views, and defocus values (z coordinate).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a capability of 2DTM.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Using 2DTM, overlapping 50S ribosomes were discerned, as validated by comparison with the 3DTM results.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, using 2DTM we were able to discern overlapping 50S ribosomes, as validated by comparison with the 3DTM results (Figure 6f\u2013i).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with reference to Figure 6f\u2013i.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The results of 3DTM do not seem to be correlated with sample thickness within the tested range.",
+    "claim_type": "EXPLICIT",
+    "source": "The results of 3DTM do not seem to be correlated with sample thickness within the tested range (Figure 5\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion with reference to Figure 5\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "3DTM is less sensitive to sample thickness because it depends primarily on low-resolution signal, which remains detectable in thicker samples despite signal degradation.",
+    "claim_type": "EXPLICIT",
+    "source": "The latter seems more likely since 3DTM depends primarily on low-resolution signal, which in cryo-EM data is usually substantially stronger than high-resolution signal and therefore remains detectable in thicker samples despite signal degradation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an explanation for 3DTM performance.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The stronger reliance on low-resolution features makes 3DTM less sensitive to sample thickness and image-degrading factors, but its high false positive rate requires extensive expert curation.",
+    "claim_type": "EXPLICIT",
+    "source": "While the stronger reliance on low-resolution features makes 3DTM less sensitive to sample thickness and image-degrading factors, its high false positive rate requires extensive expert curation, often exceeding the computational run time of the original search.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a trade-off in 3DTM.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Using the full electron dose in a single exposure allows for the inclusion of high-resolution information in a 2DTM search, which improves its precision and enables detection of rare complexes in dense molecular environments.",
+    "claim_type": "EXPLICIT",
+    "source": "Using the full electron dose in a single exposure allows for the inclusion of high-resolution information in a 2DTM search, which improves its precision and enables detection of rare complexes in dense molecular environments, thereby alleviating some of the major constraints of 3DTM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an advantage of 2DTM.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The higher precision of 2DTM comes at the expense of lower sensitivity in thick samples.",
+    "claim_type": "EXPLICIT",
+    "source": "However, as we show, the higher precision of 2DTM comes at the expense of lower sensitivity in thick samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a trade-off in 2DTM.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The lack of multiple sample tilts in 2DTM makes larger features such as membranes more difficult to map in 3D and lowers the positional accuracy perpendicular to the image plane.",
+    "claim_type": "EXPLICIT",
+    "source": "The lack of multiple sample tilts makes larger features such as membranes more difficult to map in 3D and lowers the positional accuracy perpendicular to the image plane.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a limitation of 2DTM.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Better overall performance of template matching may be achieved by combining the high precision of 2DTM with the high sensitivity of 3DTM and broader cellular context in tomograms.",
+    "claim_type": "EXPLICIT",
+    "source": "Better overall performance of template matching may be achieved by combining the high precision of 2DTM with the high sensitivity of 3DTM and broader cellular context in tomograms, making this approach an effective and informative strategy for visual proteomics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a proposed combined approach.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "A combined 2DTM-3DTM approach could extend high-confidence complex detection to rare molecules in thicker samples.",
+    "claim_type": "EXPLICIT",
+    "source": "We anticipate that a combined 2DTM-3DTM approach could extend high-confidence complex detection to rare molecules in thicker samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an anticipated benefit of the combined approach.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "2DTM effectively detects ribosomes in 2D images of frozen M. pneumoniae cells at higher precision, but lower sensitivity than 3DTM in samples thicker than 100 nm.",
+    "claim_type": "EXPLICIT",
+    "source": "We describe here the implementation of a GPU-accelerated 2DTM method into the graphical user interface of the open-source software cisTEM. 2DTM effectively detects ribosomes in 2D images of frozen M. pneumoniae cells at higher precision, but lower sensitivity than 3DTM in samples thicker than 100 nm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a summary of findings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The significance threshold in 2DTM prevents the need for additional manual curation, refinement, averaging or classification, substantially streamlining the process.",
+    "claim_type": "EXPLICIT",
+    "source": "The significance threshold in 2DTM prevents the need for additional manual curation, refinement, averaging or classification, substantially streamlining the process.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an advantage of 2DTM.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "An effective, high-confidence strategy for in situ visual proteomics would combine 2DTM and 3DTM and would not be limited to species for which high-resolution structures are available.",
+    "claim_type": "EXPLICIT",
+    "source": "We propose that an effective, high-confidence strategy for in situ visual proteomics would combine 2DTM and 3DTM and would not be limited to species for which high-resolution structures are available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a proposed strategy.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "3D reconstructions from targets detected by 2DTM reveal new features not present in the template.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrated that 3D reconstructions from targets detected by 2DTM reveal new features not present in the template.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a demonstrated capability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "2DTM has the potential to deliver in situ structures at high resolution, similar to subtomogram averaging but requiring less experience and time.",
+    "claim_type": "EXPLICIT",
+    "source": "This technique, therefore, has the potential to deliver in situ structures at high resolution, similar to subtomogram averaging but requiring less experience and time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a potential application of 2DTM.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The 2DTM workflow (including data collection) is significantly faster than tomography and may therefore be more suitable for high-throughput studies.",
+    "claim_type": "EXPLICIT",
+    "source": "While it requires prior knowledge of the target structure to be reconstructed, that is, a template, the 2DTM workflow (including data collection) is significantly faster than tomography and may therefore be more suitable for high-throughput studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as an advantage of 2DTM.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The spatial organization, structures, composition, and functional states of rare complexes can be studied in cells by 2DTM, provided they are detectable in 2D images.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, the need for averaging limits detailed interrogation of molecular structures to more abundant complexes. The spatial organization, structures, composition, and functional states of rare complexes can still be studied in cells by 2DTM, provided they are detectable in 2D images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a capability of 2DTM.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

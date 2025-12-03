@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study demonstrates that combining blastocyst images with patient couple's clinical features significantly improves live birth prediction accuracy compared to using images alone. The model using only images achieved AUC=0.67 (95% CI: 0.65-0.70), while the model using both images and clinical features achieved AUC=0.77 (95% CI: 0.75-0.79), a statistically significant improvement (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 and C39-C43 provide consistent, statistically significant evidence with appropriate confidence intervals and p-values. The DeLong test was properly applied to compare ROC curves, and the results are visualized in Figure 2. The improvement from AUC 0.67 to 0.77 represents a meaningful clinical advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C43"
+    ],
+    "result": "Endometrium status-related features contribute significantly to live birth prediction accuracy. When these features were excluded from the model, AUC decreased from 0.77 to 0.74 (p=0.007), demonstrating their independent predictive value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C43 demonstrate through ablation analysis that endometrium features add significant predictive value. The statistical significance (p=0.007) and the magnitude of effect (AUC decrease of 0.03) support this conclusion. This addresses a gap identified in prior work (C11, C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C25",
+      "C53"
+    ],
+    "result": "Sixteen clinical features were identified as most predictive of live birth outcomes through logistic regression-based sequential forward feature selection. The top five features are maternal age, day of blastocyst transfer, antral follicle count, retrieved oocyte number, and endometrium thickness before transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C25, and C53 describe a systematic feature selection process with clear methodology (LR-based sequential forward selection). Figure 3 provides quantitative ranking of features by individual AUC values. The approach is methodologically sound and addresses the multimodal nature of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C44",
+      "C45"
+    ],
+    "result": "CNN heatmap analysis reveals that the model focuses on inner cell mass (ICM) and trophectoderm (TE) regions for prediction, with TE-related features contributing more when clinical features are included in training compared to image-only training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C44-C45 are supported by XGradCAM heatmap visualizations shown in Figure 4. The qualitative observation of increased TE focus when clinical features are included is visually apparent. However, the analysis is primarily qualitative; quantitative metrics of regional contribution would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C49"
+    ],
+    "result": "The proposed model achieves AUC=0.77 for live birth prediction, significantly outperforming both traditional Gardner grading (AUC=0.58-0.61) and prior CNN-based approaches using images alone (AUC~0.65-0.67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C49 are supported by comparison with literature values (C6-C7, C48) and the study's own results (C12-C13). The improvement over Gardner grading is substantial and clinically meaningful. However, direct head-to-head comparison on the same dataset would be more rigorous than literature comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C27",
+      "C28",
+      "C83",
+      "C84"
+    ],
+    "result": "The study utilized a dataset of 17,580 blastocysts with known live birth outcomes, images, and clinical features, collected from frozen embryo transfer cycles at a single institution between 2016-2020. This represents 62.5% of the 28,118 blastocysts initially reviewed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C27-C28, C83-C84 provide clear documentation of data collection. The dataset size is substantial for this domain. However, the exclusion of 37.5% of cases due to missing data (incomplete images or clinical features) could introduce selection bias, which is not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C73"
+    ],
+    "result": "The model architecture consists of an EfficientNetV2-S CNN processing two-channel blastocyst images (one focused on ICM, one on TE) and a multilayer perceptron (MLP) processing clinical features, with decision-level feature fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C73 describe the model architecture clearly, supported by Figure 1. The choice of EfficientNetV2-S is justified by citation (C32). The two-channel input design is appropriate for the dual-focus imaging protocol. The architecture is well-documented and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The study employed stratified random sampling for 80:10:10 train/validation/test split and used weighted sampling to address class imbalance (36.8% positive outcomes), which outperformed weighted cross-entropy loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 describe appropriate methodology for handling imbalanced data. Stratified sampling ensures consistent class distribution across splits. The comparison of weighted sampling vs. weighted cross-entropy (C38) demonstrates methodological rigor, though quantitative results of this comparison are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Hyperparameter optimization was performed using Facebook Ax, requiring ~30 hours of search time, with final model training taking ~1 hour on four RTX A6000 GPUs. Selected hyperparameters include batch size 16, SGD optimizer with learning rate 0.008 and momentum 0.39.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide detailed computational methodology. The use of automated hyperparameter tuning (Ax) is appropriate and enhances reproducibility. However, the search space and optimization objective are not specified, and no random seed is mentioned, which could affect reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Statistical analysis employed chi-squared tests for categorical features, t-tests for numerical features, and DeLong test for ROC curve comparison, with two-tailed tests and significance threshold of p\u22640.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe standard and appropriate statistical methodology. The DeLong test is the correct method for comparing correlated ROC curves. The specification of two-tailed tests and significance threshold demonstrates statistical rigor. Multiple testing correction is not mentioned, which could be relevant given 103 initial features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Feature selection comparison shows that LR-based selection (16 features, AUC=0.77) and MLP-based selection (14 features, AUC=0.76) perform similarly (p=0.95) and both outperform using all statistically significant features (AUC=0.75), with 12 features selected by both methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 demonstrate that feature selection improves model performance over using all significant features, supporting the principle stated in C26. The comparison of two selection methods (LR vs MLP) adds robustness. The high overlap (12/16 features) between methods suggests stable feature importance. Results are shown in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The biological interpretation suggests that TE and endometrium status-related features play critical roles in blastocyst implantation, which is necessary for positive live birth outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 provide biological context supported by multiple citations. This interpretation is consistent with the computational findings (C20, C45) showing increased TE focus when endometrium features are included. However, this remains correlative; the study does not establish causal mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "CNN analysis differs from Gardner grading by focusing on specific TE clusters rather than overall TE cell number and cohesiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is based on qualitative interpretation of heatmaps (Figure 4) without quantitative validation. While the observation is plausible, the heatmap resolution and interpretation methodology are not sufficient to definitively establish what specific features the CNN uses. This would require more detailed analysis such as feature attribution or controlled perturbation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The study acknowledges a limitation that only total testosterone was analyzed, not free or bioavailable testosterone, which may cause bias in determining testosterone's significance as a predictor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 appropriately acknowledge a data limitation. This is a minor limitation as testosterone was not identified among the top predictive features (C18). The acknowledgment demonstrates scientific transparency, though the actual impact on results is likely minimal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The authors propose that the model improves blastocyst evaluation for selection and plan to validate it prospectively through a randomized controlled trial comparing AI-selected vs. embryologist-selected blastocysts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is an inference about clinical utility that is not directly demonstrated in this retrospective study. Claim C57 describes future work. While the improved AUC suggests potential clinical benefit, actual impact on patient outcomes requires prospective validation. The proposed RCT design is appropriate but represents future work, not current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C72"
+    ],
+    "result": "Blastocyst images were captured using standard optical microscopy with two grayscale images per blastocyst (one focused on ICM, one on TE), cropped from 1024\u00d7768 resolution and padded to 500\u00d7500 pixels. Heatmaps were generated using XGradCAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C72 provide clear documentation of imaging methodology and preprocessing. The dual-focus imaging protocol is appropriate for capturing both ICM and TE features. XGradCAM is a standard visualization method. However, details about image acquisition parameters (magnification, lighting conditions) and inter-operator variability are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The study received ethics approval (LL-SC-2021-008) and informed consent was waived due to use of retrospective, de-identified data without intervention or sample collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 document appropriate ethical oversight. The justification for waiving informed consent is reasonable for retrospective analysis of de-identified data. This meets standard ethical requirements for this type of study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The introduction establishes context that infertility affects >50 million couples worldwide, >8 million IVF births have occurred since 1978, traditional morphological grading has limited predictive power (AUC=0.58-0.61), and prior CNN approaches achieved AUC~0.65-0.74.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide background context supported by appropriate citations. These establish the clinical problem, limitations of current methods, and prior work. The citations appear accurate based on the stated values. This contextualizes the study's contribution but represents prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C26"
+    ],
+    "result": "The study collected 103 clinical features encompassing maternal characteristics, hormone profiles, ultrasound results, and paternal semen parameters. Feature selection reduces dimensionality and improves model generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 documents comprehensive clinical data collection with reference to supplementary materials. Claim C26 states a general machine learning principle that is well-established and demonstrated in this study (C74-C75). The breadth of features collected is a strength of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The model was implemented using PyTorch 1.10.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 provides implementation details with appropriate citation. This aids reproducibility. However, additional details such as Python version, other dependencies, and code availability would further enhance reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background information establishes that the Gardner blastocyst grading system was introduced in 1999 and remains the most common evaluation method, and that the first IVF child was born in 1978.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide accurate historical context supported by appropriate citations. These are well-established facts in reproductive medicine that contextualize the study but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C48",
+      "C51",
+      "C52"
+    ],
+    "result": "The study identifies limitations in prior work by Miyagi et al. 2020, noting they did not report AUC for images alone and did not include endometrium status-related features despite their importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C51-C52 accurately characterize limitations of prior work based on the cited study. This motivates the current study's design to address these gaps. The criticism is fair and constructive, identifying specific methodological improvements.",
+    "result_type": "MINOR"
+  }
+]

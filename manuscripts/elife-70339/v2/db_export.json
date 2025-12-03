@@ -1,0 +1,2104 @@
+{
+  "submission": {
+    "id": "b77830ba-5553-4327-8b17-362a6fa7b6ce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:25:46.480332Z",
+    "updated_at": "2025-12-03T05:25:46.480332Z"
+  },
+  "content": [
+    {
+      "id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "submission_id": "b77830ba-5553-4327-8b17-362a6fa7b6ce",
+      "content_type": "manuscript",
+      "content_text": "# Loss of heterozygosity results in rapid but variable genome homogenization across yeast genetic backgrounds\n\n## Authors\n\n- Abhishek Dutta<sup>1</sup> ([ORCID: 0000-0003-2256-6956](https://orcid.org/0000-0003-2256-6956))\n- Fabien Dutreux<sup>1</sup> ([ORCID: 0000-0003-2569-1330](https://orcid.org/0000-0003-2569-1330))\n- Joseph Schacherer<sup>1</sup> ([ORCID: 0000-0002-6606-6884](https://orcid.org/0000-0002-6606-6884)) \u2020\n\n### Affiliations\n\n1. Universit\u00e9 de Strasbourg, CNRS, GMGM UMR 7156 Strasbourg France\n2. Institut Universitaire de France (IUF) Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe dynamics and diversity of the appearance of genetic variants play an essential role in the evolution of the genome and the shaping of biodiversity. Recent population-wide genome sequencing surveys have highlighted the importance of loss of heterozygosity (LOH) events and have shown that they are a neglected part of the genetic diversity landscape. To assess the extent, variability, and spectrum, we explored the accumulation of LOH events in 169 heterozygous diploid Saccharomyces cerevisiae mutation accumulation lines across nine genetic backgrounds. In total, we detected a large set of 22,828 LOH events across distinct genetic backgrounds with a heterozygous level ranging from 0.1% to 1%. LOH events are very frequent with a rate consistently much higher than the mutation rate, showing their importance for genome evolution. We observed that the interstitial LOH (I-LOH) events, resulting in internal short LOH tracts, were much frequent (n = 19,660) than the terminal LOH (T-LOH) events, that is, tracts extending to the end of the chromosome (n = 3168). However, the spectrum, the rate, and the fraction of the genome under LOH vary across genetic backgrounds. Interestingly, we observed that the more the ancestors were heterozygous, the more they accumulated T-LOH events. In addition, frequent short I-LOH tracts are a signature of the lines derived from hybrids with low spore fertility. Finally, we found lines showing almost complete homozygotization during vegetative progression. Overall, our results highlight that the variable dynamics of the LOH accumulation across distinct genetic backgrounds might lead to rapid differential genome evolution during vegetative growth.\n\n## Introduction\n\nThe appearance of genetic variants is a key point in the evolution of genomes as well as in the adaptation of a species to environmental changes. Genomic variability is considered to result from recombination events as well as the generation of new mutations. In a population, the genetic diversity is in part the result of multiple processes leading to single-base mutations and large alterations such as deletions, duplications, translocations, and changes of the ploidy level. The rate of these events is low in most organisms but it has been argued that the rates have been optimized by natural selection to ensure survival (Gerrish et al., 2007; Keightley et al., 2009; Lynch et al., 2008; Lynch et al., 2016; Ossowski et al., 2010; Lee et al., 2012; Zack et al., 2013). At a population level, this genetic diversity lays the foundations for phenotypic diversity.\n\nThe ability to systematically sequence the genomes of large populations has provided a deeper insight into all these events at a species-wide level. The diploid organisms (or those with a higher ploidy) are usually heterozygous for many of these genetic variants across the genome. Nevertheless, a large number of studies have pointed out that regions of the genome can frequently become homozygous for these polymorphisms during mitotic divisions (Zack et al., 2013; Holland and Cleveland, 2009; Smukowski Heil et al., 2017; Peter et al., 2018; Ropars et al., 2018; Lancaster et al., 2019; Gounot et al., 2020; Eberlein et al., 2021; Nichols et al., 2020). These loss of heterozygosity (LOH) events result from the transfer of information from one homologous chromosome to the other, primarily a consequence of mitotic recombination, among other mechanisms (Sui et al., 2020). LOH events are hence another source of genomic diversity and can contribute to the rapid onset of phenotypic diversity. In asexual populations, mechanisms driving LOH are crucial in the fixation of potential beneficial recessive mutations and counteract the Muller\u2019s ratchet, allowing them to persist (Howe and Denver, 2008; Tucker et al., 2013; Mandegar and Otto, 2007). LOH events have been identified as involved in fitness, adaptation, and pathogenesis in many fungi (Forche et al., 2011; Wertheimer et al., 2016; Beekman and Ene, 2020). In addition, LOH is also a common genetic event in cancer development (Nichols et al., 2020). LOH of BRCA1/2 (protein products regulate Rad51 activity in DNA repair pathways) and Rb1 (a human tumor suppressor gene) can lead to breast cancers and retinoblastoma, respectively (Nichols et al., 2020; Maxwell et al., 2017; Kechin et al., 2018; Sorscher et al., 2020; Choi et al., 2002; Herschkowitz et al., 2008; Kooi et al., 2016). Nevertheless, LOH events are genomic alterations that were overlooked in the dissection of the genotype-phenotype relationship.\n\nThe mechanisms behind LOH have been largely derived from studies based on the selection of events involving specific genes and on the use of the Saccharomyces cerevisiae yeast as a model organism (St Charles and Petes, 2013). Double-strand break\u00a0(DSB) repair is a common occurrence during the cell cycle that can lead to LOH. Repair of programmed DSBs induced by Spo11 is a key point of meiosis. These DSBs are repaired via reciprocal or non-reciprocal exchanges between the homologous chromosomes, crossovers (CO), or non-crossovers (NCO). Intra-tetrad mating among haploid daughter cells can also lead to LOH events. However, inter-homolog events occur at a significantly lower frequency in mitotically dividing cells. Recombination events during mitosis are random, in contrast, it is a tightly regulated process during meiosis. Return to vegetative growth, after abortive meiosis (RTG), is another process that can generate significant LOH via mitotic repair of Spo11-induced DSBs\u00a0(Dayani et al., 2011; Laureau et al., 2016). A growing body of evidence suggests that\u00a0RTGs may be a common occurrence in the life cycle of yeasts (Peter et al., 2018; Brion et al., 2017; D'Angiolo et al., 2020). In diploids undergoing mitotic growth, non-reciprocal exchanges between homologous chromosomes give rise to LOH. It is primarily caused by gene conversions, crossing over, and break-induced replication (BIR)\u00a0due to DSB repair (P\u00e2ques and Haber, 1999; Symington et al., 2014). Mitotic recombination can lead to interstitial (I-LOH) and terminal (T-LOH) LOH events. The I-LOH events are mostly caused by gene conversions involving short exchanges, ranging up to 10 kb in size (Yim et al., 2014). By contrast, T-LOH events result from mitotic CO and BIR mechanisms frequently spanning large chromosomal regions greater than 100 kb (Llorente et al., 2008; Malkova and Ira, 2013). BIR is a homologous recombination (HR) pathway that repairs only one-ended DSBs and suppressed at two-ended DSBs (Pham et al., 2020). Despite their high fidelity relative to other repair pathways, recent findings have demonstrated that HR pathways promote genome instability through an increased load of mutagenesis and chromosomal rearrangements (Kumar et al., 2015; Magwene et al., 2011; Ruderfer et al., 2006). Both I-LOH and T-LOH events have been implicated in cancers, with I-LOH events being observed at higher frequencies in gastric and lung cancers while T-LOH events being prevalent in retinoblastomas and colorectal cancers (Nichols et al., 2020; Sui et al., 2020; Kumar et al., 2015).\n\nRecent population genomic studies have highlighted the extent of LOH events in large samples of yeast natural isolates (Peter et al., 2018; Ropars et al., 2018; Magwene et al., 2011). Whole-genome sequencing of 1011 S. cerevisiae strains coming from various ecological and geographical origins strongly supported the idea of LOH-mediated phenotypic diversification (Peter et al., 2018). S. cerevisiae is highly inbred and characterized by irregular sexual cycles (Ruderfer et al., 2006). Meiosis and consequently outcrossing events are infrequent, and the clonal expansion is punctuated by a broad LOH accumulation. As a consequence, a high LOH level with 25 regions covering approximately 50% of the genome on average was observed in this large panel (Peter et al., 2018). Nevertheless, this trend is not conserved and a highly variable proportion of the genome under LOH is observed across subpopulations, ranging from a few to 80%. As a result, the degree of heterozygosity is also diverse and can be extensive in some subpopulations (Peter et al., 2018). Echoing the mutation rate and its relative conservation, this observation definitely raised the question regarding the impact of genetic backgrounds on the LOH spectrum and rate.\n\nTo have a better overview of the accumulation of LOH events over time in a population, we performed a mutation accumulation (MA) experiment by using a set of different S. cerevisiae diploid hybrids, designed to mimic the wide genetic diversity observed in this species. A total of 22,828 LOH events were detected across 169 MA lines propagated for at least 1769 divisions. This dataset allowed to recapitulate the LOH landscape observed in the natural population. We observed a rapid accumulation of LOH through vegetative propagation across the lines. However, we found that the LOH spectrum and rate is very variable across genetic backgrounds. Even if variable, the LOH rate is always much higher than the mutation rate, which is very conserved across the lines. Overall, our results highlight the overriding role of the LOH events in rapidly generating genetic diversity and shaping the genome as well as its broad variability across the genetic backgrounds.\n\n## Results\n\n### Setup and propagation of MA lines\n\nTo characterize the genome-wide landscape and dynamics of LOH accumulation, we generated 180 MA lines using nine different heterozygous S. cerevisiae strains (Table 1). The diploids were obtained by crossing haploid derivates of natural S. cerevisiae isolates from various ecological (e.g. tree, wine, and fruit) and geographical origins (Peter et al., 2018) (e.g. Africa, China, and Europe) (Supplementary file 1). These hybrids were designed to lead to a heterozygosity level ranging from 0.1% to 1%, covering a large genetic diversity of the S. cerevisiae species. In addition, the isolates were selected in order to have uniformly distributed heterozygous sites throughout the genome with a single nucleotide polymorphism (SNP) density ranging from 0.8 to 10 SNPs per kb (Figure 1\u2014figure supplement 1). These nine diploids were designated as the ancestors, and 20 replicate lines were isolated from each of them to set up an MA experiment. The replicate lines were propagated purely vegetatively and subjected to single-cell bottlenecks every 48 hr for at least 75 bottlenecks on rich media (see Materials and methods). Selection is minimal, as the experiment was designed to make drift by far the main cause of genomic changes (Halligan and Keightley, 2009). At the end of the experiment, the genome of the 169 surviving lines was completely sequenced using a short-read Illumina strategy (see Materials\u00a0and\u00a0methods).\n\n**Table 1.**\n Hybrid mutation accumulation\u00a0(MA) lines.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Hybrid</th>\n      <th>Cross*</th>\n      <th>Het positions</th>\n      <th>No. of sequenced lines</th>\n      <th>No. of bottlenecks</th>\n      <th>Total no. of divisions</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>H1</td>\n      <td>ABS \u00d7 BKL</td>\n      <td>9972</td>\n      <td>20</td>\n      <td>100</td>\n      <td>2446</td>\n    </tr>\n    <tr>\n      <td>H2</td>\n      <td>ABP \u00d7 BFQ</td>\n      <td>18789</td>\n      <td>12</td>\n      <td>75</td>\n      <td>1842</td>\n    </tr>\n    <tr>\n      <td>H3</td>\n      <td>BAP \u00d7 BAN</td>\n      <td>20875</td>\n      <td>20</td>\n      <td>75</td>\n      <td>1863</td>\n    </tr>\n    <tr>\n      <td>H4</td>\n      <td>BTI \u00d7 ABA</td>\n      <td>49412</td>\n      <td>20</td>\n      <td>75</td>\n      <td>1772</td>\n    </tr>\n    <tr>\n      <td>H5</td>\n      <td>ACD \u00d7 AKQ</td>\n      <td>52223</td>\n      <td>20</td>\n      <td>75</td>\n      <td>1777</td>\n    </tr>\n    <tr>\n      <td>H6</td>\n      <td>ACK \u00d7 CMQ</td>\n      <td>55570</td>\n      <td>20</td>\n      <td>100</td>\n      <td>2392</td>\n    </tr>\n    <tr>\n      <td>H7</td>\n      <td>ACG \u00d7 BAK</td>\n      <td>69456</td>\n      <td>19</td>\n      <td>75</td>\n      <td>1844</td>\n    </tr>\n    <tr>\n      <td>H8</td>\n      <td>CGD \u00d7 AKE</td>\n      <td>113241</td>\n      <td>19</td>\n      <td>75</td>\n      <td>1769</td>\n    </tr>\n    <tr>\n      <td>H9</td>\n      <td>BAM \u00d7 CPG</td>\n      <td>116475</td>\n      <td>19</td>\n      <td>100</td>\n      <td>2452</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Standardized names from Peter et al., 2018._\n\nTo accurately determine the total number of generations over the course of the MA experiment, we estimated the growth rate of the ancestors as well as the one of the MA lines at the end of the experiment in rich media. The growth rate of ancestral diploids was about 0.51 divisions per hour on average. No significant difference was observed between ancestors and final MA lines in terms of growth rate (Supplementary file 2, p>0.05 t-test). Therefore, we estimated that the MA lines have undergone an average of 24.2 divisions per bottleneck for a total of at least 1769 divisions per line.\n\n### Overview of the LOH content in the 169 MA lines\n\nWe first sought to characterize and analyze the LOH events that occur in the 169 MA lines. For this, the events supported by at least two adjacent converted heterozygous sites were considered as under LOH and consecutive events were merged, if the disruption was not supported by two heterozygous sites (see Materials\u00a0and\u00a0methods). A two-site threshold was chosen to accurately define LOH events across the nine backgrounds because of the 12-fold difference in terms of SNP density. In addition, the size of the LOH events was determined as the distance between the midpoint of the closest upstream and downstream unconverted sites.\n\nOverall, we identified a large set of 22,828 LOH events across the 169 MA lines, with an average size of 14.1 kb (Supplementary file 3). It is interesting to observe that the size distribution of the detected LOH events is bimodal (Figure 1A). While the majority of the events (95%) are in the first category with an average size of 1.6 kb, the rest of the events (5%) in the second category have an average size of 269.2 kb. We observed that accumulated LOHs are further away from centromeres (mean distance of 272 kb) than telomeres (mean distance of 230 kb) (Figure 1\u2014figure supplement 2A). These observations are consistent with the size and distribution of events reported during gene conversion, mitotic CO, or BIR events (Mandegar and Otto, 2007; St Charles and Petes, 2013; Jeffreys and May, 2004). In S. cerevisiae, LOH events can be either centromere proximal, I-LOH resulting from gene conversions, or centromere distal, T-LOH resulting from mitotic CO or BIR (Sui et al., 2020; Loeillet et al., 2020). Among the accumulated events, the I-LOHs were found to be significantly enriched representing 86.1% of the events (n\u00a0=\u00a019,660) compared to the T-LOHs with only 3,168 detected events (i.e. 13.9%) (Figure 1B). As expected, T-LOH events are significantly larger than I-LOH events with an average size of 55.3 and 7.5 kb, respectively (Figure 1\u2014figure supplement 3, p<10\u22123). And finally, we also observed a clear difference in the distribution of the T-LOH and I-LOH events across the genome (Figure 1\u2014figure supplement 2B\u2013C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0LOH event tract size distribution across all 169 MA lines, the average tract sizes of the interstitial LOH (I-LOH) events (7.4 kb) and terminal LOH (T-LOH) events (55.3 kb), respectively. The global average LOH event size was 14.1 kb. (B) Violin plot of the LOH event counts in the MA lines population, I-LOH events were found to be significantly greater than T-LOH events (Wilcoxon test, p<2\u00d710\u221216). (C) Distribution of MA lines based on the proportion of genome under LOH (%), dashed line indicates average proportion of genome under LOH across the 169 MA lines, 15.9% (\u00b11.86).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) All LOH events, (B) terminal LOH (T-LOH), events, and (C) interstitial LOH (I-LOH) events.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp3-v2.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp4-v2.jpg)\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Orange and blue colors represent single nucleotide polymorphisms (SNPs) fixed toward either of the parents as described in Table 1 and Supplementary file 1. All\u00a0the 14 nearly homozygous (NH) lines have been depicted. Dotted vertical lines represent position of the centromere.\n\nWe then investigated the fraction of the genome under LOH as a consequence of the accumulated events. On average, 15.9% of the genome was under LOH but with a large variation as this fraction ranges from 0.01% to 98.6% across the lines. In fact, the 169 lines were divided into three distinct groups based on the proportion of genome under LOH (Figure 1C). The first two groups were represented by 113 and 43 lines with an average of 4.1% and 20.8% of genome under LOH, respectively. The last group encompassed 14 lines that exhibit more than 90% of the genome under LOH, which is significantly higher than the other two (Figure 1\u2014figure supplements 4 and 5). This observation clearly shows that the genome of approximately 8% of the lines was quickly driven a quasi-homozygous state, henceforth we call them nearly homozygous lines.\n\nAll these data also allowed us to have an estimate of the LOH rates on all the MA lines. In fact, LOH rates can be defined based on the total number of sites in the genome under LOH or the total number of events per division. Using the 169 lines, we estimated the LOH rates to be 7.1 \u00d7 10\u22125 per site per division and 6.5 \u00d7 10\u22122 events per division on average. However, these rates include both I-LOHs and T-LOHs and we therefore estimated their respective rates to know the impact of the two types of LOH. While the I-LOH rates were 3.1 \u00d7 10\u22125 per site per division and 5.6 \u00d7 10\u22122 events per division, we found that the T-LOH rates were 4.2 \u00d7 10\u22125 per site per division and 9.2 \u00d7 10\u22123 events per division. These results clearly show that if the number of genome sites impacted by the I-LOH and T-LOH events is the same, the number of events is very different as already pointed out previously.\n\n### Large variation of the LOH spectrum across genetic backgrounds\n\nAs mentioned previously, variation can be observed both in the number of events and in the fraction of the genome under LOH by examining all of the LOH events accumulated in the 169 MA lines. These observations prompted us to study the variability of LOH accumulation variation across the nine studied genetic backgrounds. Interestingly, we found that the number of accumulated LOH events varied considerably between the strains (Figure 2A). While the H1 lines accumulated the fewest LOH events (n\u00a0=\u00a010.8 on average), the H4 lines accumulated the largest number of events (n\u00a0=\u00a0413.5 on average), which represents a difference of 38.2 times. We then examined this trend according to the type of LOH events (i.e. I-LOH or T-LOH) accumulated in the different genetic backgrounds. In most cases (except for the H1 and H9 lines), the I-LOH events were significantly in excess compared to T-LOH events in all backgrounds (Figure 2B). The variation in the LOH spectrum across strains is mainly related to a difference in the number of I-LOH. While there are 7.2 I-LOH events on average in the H1 lines, the H4 and H5 lines accumulated a large number of 395.9 and 294.8 I-LOH events\u00a0on average, respectively. Although there is a difference in terms of T-LOH between genetic backgrounds, the variance is relatively small. The number varies from 3.6 events on average for the H1 lines to a maximum of 60.9 T-LOH events on average for the H9 lines. The frequency of I-LOH events was elevated on large chromosomes and a positive correlation with the chromosome size was observed for all backgrounds except H1 and H9 (Figure 2\u2014figure supplement 2). The overall fraction of I-LOH events was significantly increased by more than 10\u201322 times in the H2, H4, and H5 lines, while in the others, the I-LOH events were only 1.3\u20132.7 times more frequent than the T-LOH events. These variations in the ratio between the I-LOH and T-LOH events are similar to those observed in various DNA repair and recombination mutants in S. cerevisiae hybrids (Figure 2\u2014figure supplement 2;\u00a0Sui et al., 2020; Loeillet et al., 2020). Interestingly, we observed that the more the ancestors were heterozygous, the more they accumulated T-LOH events (Figure 2B). And we have indeed found a positive correlation between the heterozygosity level and the number of T-LOH events (Figure 2C). Such a correlation was found neither for I-LOH nor for the total number of LOH events accumulated in the lines.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0The frequency of total LOH events across the nine genetic backgrounds are highly variable (Kruskal-Wallis test, p<2\u00d710\u221216). (B) Variability in interstitial and terminal LOH events counts across all backgrounds H1\u2013H9 (Kruskal-Wallis test, p<10\u221216), interstitial events were always in excess, except for in H6 (Wilcoxon test, *p\u00a0<\u00a00.05; **p\u00a0<\u00a00.01; ***p<0.001; ****p\u00a0<\u00a00.0001; ns\u00a0\u2013\u00a0not significant). (C) Frequency of terminal LOH events increases with increasing heterozygosity in the nine genetic backgrounds (Pearson\u2019s correlation; r\u00a0=\u00a00.69, p<2\u00d710\u221216), interstitial and total events do not bear any correlation with the background heterozygosity (Pearson\u2019s correlation; p>0.05). (D) Proportion of genome under LOH is significantly variable across the nine backgrounds (H1\u2013H9) (Kruskal-Wallis test, p<2\u00d710\u221216).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Biased fixation was only observed in H4 and H5 backgrounds (binomial test, p<0.05).\n\nSimilar to the number of LOH events, the proportion of the genome under LOH also varies across genetic backgrounds. This fraction varies from 3.6% to 16.6% of the genome across the nine backgrounds, when we exclude the nearly homozygous lines reaching more than 90% of the genome being under LOH (Figure 2D). The H3 lines accumulated the most genome under LOH (16.6%) while H8 accumulated the least (3.8%), representing a 4.6-fold difference. In addition, the H9 background was enriched in nearly\u00a0homozygous lines (n\u00a0=\u00a05), while H1 and H4 had none (Figure 2D). We did not observe a significant excess in fixation of either of the parental genomes in the different backgrounds (binomial test, p>0.05), except for the H4 and H5 lines (binomial test, p<0.05). In both, H4 and H5, more than 80% of the genome under LOH is biased toward one of the parents (Figure 2\u2014figure supplement 3), although the total genome under LOH in these backgrounds was very low with a level of 5.5% and 4.8%, respectively.\n\nFinally, we also sought to determine the LOH rate variation across the studied genetic backgrounds. The LOH site rates in these hybrids vary between 2.4 \u00d7 10\u22125 and 1.1 \u00d7 10\u22124 per site per division, and consequently a low variance was observed (Supplementary file 3). By contrast, the LOH event rates range from 5.6 \u00d7 10\u22123 to 2.8 \u00d7 10\u22121 events per division and are hence much more variable. The variability in event rates stems from I-LOH rates more than T-LOH rates. Indeed, while the T-LOH rates vary from 1.5 \u00d7 10\u22123 to 2.5 \u00d7 10\u22122 events per division, the I-LOH rates vary from 2.9 \u00d7 10\u22123 to 2.2 \u00d7 10\u22121 events per division.\n\n### Hybrid spore fertility and LOH accumulation\n\nIn our study, we selected ancestors with increasing genetic divergence (from 0.1% to 1%) and therefore with varying progeny viability. With an increase in genetic divergence, the role of anti-recombination as well as the increase in the probability of having genetic incompatibilities leads to a decrease in the viability of the offspring (Greig, 2009; Hou et al., 2016). By determining the spore viability as a measure of spore fertility in the ancestors, we indeed saw that it varies between 38% and 92% (Supplementary file 4). While the H1, H2, H3, H6, and H7 ancestors displayed good spore fertility (~85%), the spore viability of the H4, H5, H8, and H9 ancestors was severely compromised (~50%) (Supplementary file 4). We took advantage of this variability to assess the impact of it on the accumulation of LOH events. Interestingly, we observed that lines with high spore fertility accumulated much less LOH events than the lines showing low spore fertility (Figure 3A). The frequency in these was 7.6-fold higher per bottleneck. In addition, we also found that the size of the LOH events was on average much shorter in low spore fertility lines (Figure 3B). We therefore looked at the variation of the accumulated T-LOH and I-LOH events. In lines with high spore fertility, I-LOH events were three times more frequent than those of T-LOH, similar to what had previously been observed in the W303/YJM789 hybrid (Sui et al., 2020). However, I-LOH events were even more frequent (seven-fold) than T-LOH in the low spore fertility hybrids with low spore fertility. Overall, frequent short LOH tracts were a signature of the lines derived from hybrids with low spore fertility, that\u00a0is, the H4, H5, H8, and H9 lines (Figure 3\u2014figure supplement 1). MA lines derived from ancestral high spore fertility diploids accumulate large LOH events. The mean LOH event size in the latter is 45.8 kb compared to 7.4 kb in low spore fertility hybrids. The difference in the size of the events may be indicative of the specific underlying mechanisms. Moreover, meiotic spore fertility and recombination fidelity show a positive correlation in laboratory intraspecific S. cerevisiae hybrids (Raffoux et al., 2018).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Total LOH events accumulated in mutation accumulation\u00a0(MA) lines derived from ancestral diploids with high spore fertility, that\u00a0is, meiotic spore viability greater than or equal to 75% and the\u00a0fraction of four-spore viable tetrads greater than 50% (H1, H2, H3, H6, H7) is significantly lower than in MA lines derived from ancestral diploids with low spore fertility, that\u00a0is, meiotic spore viability lesser than 75% and the\u00a0fraction of four-spore viable tetrads less than 50% (H4, H5, H8, H9) (Wilcoxon test, p<2\u00d710\u221216). (B) The size (in bp) of the LOH events accumulated in MA lines derived from ancestral diploids with high spore fertility is significantly larger than in MA lines derived from ancestral diploids with low spore fertility (Wilcoxon test, p<2\u00d710\u221216). The average LOH event size in the high spore fertility and low spore fertility MA lines are 45.8 and 7.4 kb, respectively. (C) Spore viabilities in both the high and low spore fertility groups compared respective to their ancestral diploids. There is a\u00a0significant improvement in the spore viabilities of the MA lines derived from the low spore fertility ancestors (Mann-Whitney U test, p=0.04), whereas the viabilities do\u00a0not change in the MA lines derived from the high spore fertility ancestral diploids (Mann-Whitney U test, p=0.34). The spore viabilities of the individual MA lines and the ancestral diploids detailed in Supplementary file 4.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig3-figsupp1-v2.jpg)\n\nIn addition to the ancestors, we also determined meiotic spore viability in all 169 MA lines at the end of the experiment. Sporulation was consistent across all lines after 48 hr on sporulation media, with the exception of H9-8 and H9-11 which did not sporulate (Supplementary file 4). The spore viability of the lines derived from the highly fertile hybrids did not deviate significantly from their ancestral levels, meaning that they retained their high spore viability. By contrast, individual lines of the four other backgrounds presenting a low spore fertility (lines H4, H5, H8, and H9) showed significant increase compared to the ancestral spore fertility (Figure 3C). Rescue of the spore fertility in most MA lines was gradual, with only 42 out of 77 lines showing statistically significant increases (Supplementary file 4). MA lines showed up to a 23% increase in spore fertility and the nearly homozygous lines from all hybrid backgrounds were able to fully restore their spore fertility (~90%). Overall, these results suggest that recovery of spore fertility in the MA lines during mitotic propagation can be achieved either incrementally by undergoing frequent, short LOH events or completely by undergoing rapid whole-genome homozygotization.\n\n### Mutation rate is constant across heterozygous diploid backgrounds\n\nMA experiments have been primarily used to determine mutation rates in a number of model organisms. We therefore estimated mutation rates to understand if the mutational process is also impacted and variable across genetic backgrounds. DNA synthesis during mitotic recombination is considered to be mutagenic (Pham et al., 2020) and this effect is suggested to be amplified in heterozygous genomes (Strathern et al., 1995; Rattray et al., 2015). In the 169 MA lines, we identified 912 single nucleotide mutations (SNMs) and 14 multi-nucleotide mutations (MNMs), of which 83 and 2 are homozygous, respectively (Supplementary file 5). MNMs were defined as consecutive SNMs that were not separated by more than one base pair. While 101 SNMs and 2 MNMs were detected in the near-homozygous lines, 811 SNMs and 12 MNMs were identified in the 155 remaining lines. Overall, 70% of the mutations were observed in genic regions and 30% in the non-genic areas, and we observed a significant excess of non-synonymous mutations over synonymous mutations in the genic regions (binomial test, p>0.05). These biases have already been observed in previous yeast MA experiments. Transition mutations were more frequent than transversions with an average Ts/Tv ratio of 1.35. SNM and MNM rates were on average 1.1 \u00d7 10\u221210/site/division and 1.98 \u00d7 10\u221212/site/division, which is similar to previous estimates in isogenic and hybrid diploid S. cerevisiae strains (Dutta et al., 2017; Sharp et al., 2018; Liu and Zhang, 2019). SNM rates are five orders of magnitude lower than LOH rates.\n\nThe proportion of SNMs in the six categories of transitions and transversions varies across the nine backgrounds (p<10\u22124, Chi-square test; Figure 4\u2014figure supplement 1A, Supplementary file 6). Nevertheless, the transitions are always in excess compared to transversions and we found that the Ts/Tv ratio is always greater than 0.5. The Ts/Tv ratio was similar across the backgrounds with only a significant increase of\u00a0up to 1.86 for the H3 lines (p<10\u22125; Chi-square test, Figure 4\u2014figure supplement 1B, Supplementary file 6). Previous studies have reported a mutational bias of GC\u00a0>\u00a0AT over AT\u00a0>\u00a0GC mutations in yeast. We indeed found a GC > AT/AT > GC bias in all genetic backgrounds, with the exception of the H8 lines and significantly increased compared to the rest in H1 (Figure 4\u2014figure supplement 1C, Supplementary file 6). The frequency of mutations was more impacted by the neighboring nucleotide on C/G sites than on A/T sites (p<0.01, binomial test; Figure 4\u2014figure supplement 2, Supplementary file 6). Similar variations in the SNM spectrum have also been observed across different yeast species (Nguyen et al., 2020).\n\nFinally, we estimated mutation rates in the nine genetic backgrounds to determine if they were as variable as the LOH rates. The SNM rates vary from 0.65 \u00d7 10\u221210 to 1.56 \u00d7 10\u221210/site/division across the nine heterozygous diploids, representing a 2.4-fold difference. SNM rates were not significantly different within or across the nine backgrounds (Figure 4). The average mutation rate in the 14 near-homozygous lines was just slightly higher, around 1.92 \u00d7 10\u221210/site/division. Furthermore, we observed no correlation between the mutation rates and the heterozygosity levels, GC content, or LOH rates. Overall, while the spectrum of SNMs is variable, their overall frequency of occurrence remains relatively constant across genetic backgrounds.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig4-v2.jpg)\n\n**Figure 4.:** The overall, mean single nucleotide mutation (SNM) rate in the 169 MA lines 1.1 \u00d7 10\u221210 per site per division is not different from previous estimates in various diploid Saccharomyces cerevisiae strains. NH lines represent the SNM rates in the NH lines. SNMs have been detailed in Supplementary files 5 and 6.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0The spectrum of single nucleotide mutations\u00a0(SNMs) in the mutation accumulation\u00a0(MA) lines is variable across all genetic backgrounds (Chi-square test, p<0.05; Supplementary file 5\u20136). (B) The transition to transversion ratio is similar across all genetic backgrounds, significantly increased only in H3 (Chi-square test, p<0.05; Supplementary file 5\u20136). (C) The GC > AT/AT > GC mutational bias was similar in all genetic backgrounds, significantly increased only in H1 (Chi-square test, p<0.05; Supplementary file 5\u20136).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Horizontal red lines indicate mean events.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Two backgrounds carried ancestral trisomies, H3 (+1 chrIX) and H9 (+1 chrIX;\u00a0+1 chrXVI).\n\nIn addition, we also detected 51 aneuploidy events in the MA lines, 43 chromosomal gains and 8 losses (Figure 4\u2014figure supplement 3). No aneuploidy events were detected in the H2, H5, and H7 MA lines. Ancestral trisomies have been observed in H3 (chromosome IX) and H9 (chromosomes IX and XVI), and chromosome losses always correspond to the loss of extra copies of chromosomes IX and XVI in these two genetic backgrounds. The overall rate of aneuploidy is 1 \u00d7 10\u22124 per division, which is similar to that determined in previous studies (Sui et al., 2020; Loeillet et al., 2020; Sharp et al., 2018; Zhu et al., 2014). The LOH and SNM rates are not different among the euploid and aneuploid MA lines or the nearly homozygous lines (Mann-Whitney U test, p>0.05).\n\n### Mitotic propagation can lead to rapid homozygotization\n\nAs mentioned previously, we found a total of 14 nearly homozygous lines exhibiting more than\u00a0~90% of the genome under LOH, although it varies from 88% to 98% (Figure 1\u2014figure supplement 5). These lines were present in all the genetic backgrounds except for two (H1 and H4) and with a prevalence in the H9 background. The LOH spectrum in these lines is characterized by a low number of events overall with similar frequency of I-LOH and T-LOH events. The average LOH event size is 185.1 kb, significantly larger than the rest of the 155 lines (~7 kb). The nearly homozygous lines coming from low spore fertility backgrounds were able to fully restore their spore fertility (~90%) (Supplementary file 4).\n\nWe also determined the mitotic growth rates of the MA lines at the beginning and the end of the MA experiments (Supplementary file 2). Interestingly, a decrease in the growth rates on average was observed at the end for the lines, but this decrease was significantly greater for the near-homozygous lines compared to the other lines (Mann-Whitney U test, p<10\u221210). Gain in spore fertility appears to be associated with decline in vegetative growth. Life history trade-offs involving asexual and sexual reproduction under nutrient stress were found to be correlated in S. cerevisiae (Magwene et al., 2011). Furthermore, the rates of SNM and MNM in these 14 lines were 1.8-fold and 1.5-fold greater, respectively. Relatively higher mutation rates may be responsible for the higher decrease in growth rates. The frequency of homozygous mutations was found to be 3.2 times higher compared to the rest of the MA lines, but most of the detected mutations in these lines were heterozygous (Supplementary file 5). Since most new SNMs are heterozygous, most SNMs in the nearly homozygous lines may have been accumulated after the homozygotization event and mutation rates might have been higher (Nishant et al., 2010).\n\n## Discussion\n\nMitotic recombination events are thought to occur with\u00a0~105-fold less frequency than meiotic recombination and therefore require a selection system for their detection (Lee et al., 2009). Over a large number of divisions, such changes may accumulate to create a significant impact on the genome that can be detected and is relevant to measure, given the ratio between mitotic and meiotic cycles in yeast (Ruderfer et al., 2006; Kelly et al., 2012). Given the role of LOH events in evolution and disease, it is important to understand the extent of LOHs over a large number of mitotic divisions. We therefore propagated MA lines across different heterozygous diploid hybrids over many generations to probe the impact of genetic background on the LOH landscape in S. cerevisiae. Our study sheds light on cumulative genotypic changes across the MA lines that were propagated vegetatively. We surveyed a large set of 22,828 LOH events to accurately determine variations in LOH patterns and their subsequent implications with SNM rates and spore fertility. Overall, we observed an extensive accumulation of LOH events but a spectrum that was highly variable depending on the studied genetic backgrounds.\n\nOur MA lines show significant variation both in the types of LOH events accumulated and in the rates. Studies involving homozygous deletion screen of non-essential genes in the BY diploid strain have identified several gene deletion backgrounds involving DNA repair, chromatin assembly, and kinetochore function with locus-specific effects on LOH associated with recombination and whole chromosome loss (Yuen et al., 2007; Andersen et al., 2008). A previous MA study also highlighted a difference in LOH accumulation in two different hybrids (S288c/YJM789 and RM11/S288c) showing a similar heterozygous level (Dutta et al., 2017; Pankajam et al., 2020).\u00a0Conversely,\u00a0another\u00a0studyinvolving serial passages of two hybrids with different levels of heterozygosity showed no difference in the accumulation of LOH (James et al., 2019). Here, we decided to investigate many heterozygous hybrids with a wide variation in the levels of heterozygosity. The fraction of the genome under LOH varies considerably across the nine diploid hybrids studied. Gene conversions contribute toward 86% of the events (I-LOH) while mitotic CO and BIR make up the rest (T-LOH) (Ene et al., 2018). Whereas I-LOH events are more evenly distributed across the chromosomes, T-LOH events are enriched at the ends of chromosomes (Sui et al., 2020). LOH rate variation has also been observed in Cryptococcus sp. and Candida albicans in response to changing environments, such as high temperatures and the presence of antifungal drugs (Bouchonville et al., 2009; Li et al., 2012; Forche et al., 2018). In our MA lines, I-LOH events are over six times more frequent than the T-LOH events and differentially distributed along the chromosomes (Figure 1\u2014figure supplement 2A\u2013C). These differences may result from the initiation of DNA damage and repair mechanisms involved. Recombination and conversion hotspots are not conserved during meiotic DSB repair and the same may be true for mitotic DSB repair (Sui et al., 2020; Mancera et al., 2008). In addition, induction of mitotic DSBs is not synchronized and therefore, the recruitment of the repair machinery may also be spatially and temporally differentiated (Whelan et al., 2018; V\u00edtor et al., 2020).\n\nThe frequency of short I-LOH events was higher in backgrounds with low ancestral spore fertility, that\u00a0is, the H4, H5, H8, and H9 lines. Conversion events triggered by mismatch repair\u00a0(MMR) can be short, often below 1 kb, as it can be the case in low spore fertility hybrids (Palmer et al., 2003). The MMR machinery stifles recombination between divergent sequences, preventing events such as chromosomal rearrangements, deleterious mutations, and thus leading to reproductive isolation (Petit et al., 1991; Myung et al., 2001). Genetic incompatibilities with the potential to pose reproductive barriers are widespread within species (Corbett-Detig et al., 2013). Disruptions in the MMR pathway can rescue hybrid sterility and have subsequently been shown to enhance LOH accumulation in both intra- and interspecific yeast hybrids during RTG (Greig, 2009; Hunter et al., 1996; Greig et al., 2002; Mozzachiodi, 2020). Regarding the T-LOH events, we observed a heterozygosity-dependent increase in the frequency of these events across the nine backgrounds. Heterozygosity can enhance recombination-mediated repair of DSB (Clikeman et al., 2001). Moreover, the levels of heterozygosity as well as variability of the distribution of polymorphisms along the genome significantly impact CO frequencies during Arabidopsis thaliana meiosis (Ziolkowski et al., 2015).\n\nHybridization is a process common to the life history of many organisms and rapidly generates genomic diversity (Eberlein et al., 2021; Faulks and \u00d6stman, 2016; Vallejo-Marin and Lye, 2013). Even though new hybrids tend to exhibit a low spore fertility, natural hybridizations have played an essential role in the diversification and evolution of the genome of many fungal, plant, and animal species. Hybrid sterility arises from events such as genomic incompatibilities, chromosomal rearrangements, and ploidy changes. Restoring spore fertility is an essential step toward establishing a new population or species. In our MA line experiment, ancestral diploids show offspring viability ranging from 35% to over 90%. We have observed that LOH accumulation is associated with a restoration of spore fertility. While the MA lines derived from low spore fertility hybrids show a gradual return of spore fertility, the nearly\u00a0homozygous lines were able to fully restore their spore fertility. Influx of homozygosity due to LOH may result in less heteroduplex rejection during recombination repair of DSBs (D'Angiolo et al., 2020). Improved repair and fewer genetic incompatibilities can increase spore viability in homozygous backgrounds. Polyploidization events during vegetative propagation in highly diverged Saccharomyces paradoxus hybrids have also been associated with spore fertility recovery (Charron et al., 2019). However, the near-homozygous lines do not exhibit significant deviations from diploidy. The near-homozygous lines appear to undergo an accumulation of LOH events via mitotic recombination-independent mechanisms. The size and distribution of the LOH events in these lines are not consistent with the results of mitotic recombination. Mechanisms such as chromosome loss and re-duplication or hyper-recombination could be at the origin of the appearance of these near-homozygous lines. In addition, it has been shown that S. cerevisiae replication and DNA repair mutants (such as rad27) can lead to rapid homozygosity covering up to 60% of the genome after 25 vegetative bottlenecks (Loeillet et al., 2020). Alternatively, these may be due to multiple rounds of RTG, that\u00a0is, mitotic repair of Spo11-induced DSBs during aborted meiosis (Dayani et al., 2011; Laureau et al., 2016; Mozzachiodi, 2020). Nevertheless, none of the ancestral diploids or end MA lines sporulate on rich media.\n\nMA experiments have been a popular method for measuring mutation rates in model organisms. Mutation rate estimates are available for haploid and diploid yeast genomes during meiotic and vegetative propagation (Lynch et al., 2008; Sui et al., 2020; Dutta et al., 2017; Zhu et al., 2014; Nishant et al., 2010). Ploidy has a significant impact on the mutational process in yeast and the diploid genome is buffered against chromosomal instabilities (Sharp et al., 2018; Nishant et al., 2010). LOH events have been underappreciated compared to single-base mutations and large alterations such as deletions, duplications, translocations, and changes of the ploidy level. This is mainly due to the fact that most MA line experiments were performed on isogenic or homozygous model isolates. Recent interest in heterozygous genomes has indicated that LOH may have a broader and more significant impact on genome evolution. Genomic heterozygosity can also alter the mutational process (Strathern et al., 1995; Rattray et al., 2015). Different environments have also been shown to impact mutation rates in S. cerevisiae (Liu and Zhang, 2019) and mutation rates were found to be different across seven distinct yeast species (Nguyen et al., 2020). Here, the genetic background impact was limited to the mutation spectrum. We did not observe any significant difference in the overall SNM rates in the derived MA lines. Neither the genetic background nor the inherent heterozygosity appears to have a significant impact to the overall mutational process. The only variability in mutation rates observed among genetic backgrounds comes from mutator alleles, which may be rare in the S. cerevisiae species. Interestingly, the SNM rates in the nearly homozygous lines were higher but not significantly different from the rest, and the SNMs were mostly heterozygous. These observations suggest that most of the mutations in these lines appeared after the homozygotization events and that the rates may have been underestimated, compared to the other lines.\n\n## Materials and methods\n\n### Strain construction and MA lines propagation\n\nThe S. cerevisiae strains used in this study are described in Supplementary file 1. Yeast strains were grown on either YPD (yeast extract 1%, peptone 2%, dextrose 2%) or synthetic complete SC (yeast nitrogen base 0.67%, amino acid mix 0.2%, dextrose 2%) medium at 30\u00b0C (Mortimer and Johnston, 1986; Rose, 1990; McCusker et al., 1994). Briefly, haploid strains of opposite mating (MATa, ho::KanMX; MAT\u03b1, ho::NatMX) types were crossed on SC for 6\u00a0hr. These were streaked down to single colonies on YPD medium supplemented with G418 (Euromedex\u00a0\u2013\u00a04ml/l of 50 mg/ml stock) and nourseothricin (Jena Bioscience \u2013\u00a02 ml/l of 50 mg/ml stock) to select for diploids (Goldstein and McCusker, 1999).\n\nEight diploid colonies were isolated from each of the crosses H1 through H9 and ploidies were confirmed by flow cytometry and two diploid colonies were frozen. These were also checked for their ability to sporulate on 1% potassium acetate\u00a0agar. One frozen stock of each of the hybrid backgrounds was designated as the ancestor and further streaked down to single colonies. In total, 20 single colonies from each of the diploid hybrid were isolated and propagated. Individual replicate lines were bottlenecked to a single colony every 48 hr for at least 75 bottlenecks on YPD agar. Intermediates were frozen down every 25 bottlenecks until the end of the experiment. MA lines at the end of the experiment were sequenced.\n\n### Growth rates and tetrad dissection\n\nAll MA lines and ancestral diploids were revived on YPD agar plates and further streaked down to single colonies. After 24 hr, three independent average sized colonies per line were picked in 1 \u03bcl of ddH2O. The total number of cells (N) counts were estimated using a cell counter and subsequently, growth rate per hour (r) was calculated assuming exponential growth described by N\u00a0=\u00a0ert. The generation time was estimated as g\u00a0=\u00a0ln2/r per hour and the number of divisions per day was 24/g\u00a0=\u00a024 r/ln2 (Liu and Zhang, 2019). Diploid ancestors and MA lines after 100 bottlenecks were revived on YPD\u00a0agar and patched on sporulation media (1% potassium acetate\u00a0agar) for up to 72 hr (Argueso et al., 2004). Tetrad dissections were performed using the SporePlay microscope (Singer Instrument) on DIFCO YPD\u00a0agar and at least 24 and\u00a048 tetrads were dissected for the high fertility and low fertility groups, respectively.\n\n### Whole-genome sequencing of diploid strains\n\nGenomic DNA was extracted from the 169 MA lines using the Omega yeast DNA kit (Life Science Products) and DNA libraries were prepared from 5 ng of total genomic DNA using the NEBNext Ultra II FS DNA Library kit for Illumina (New England Biolabs) following manufacturer\u2019s protocols. Following quality check using a Bioanalyzer 2100 (Agilent Technologies) and quantification using the Qubit dsDNA HS assay, 4 nM of each of the libraries were pooled and run on a NextSeq 500 sequencer with paired-end 150 bp reads by the EMBL Genomics Core Facility (Heidelberg, Germany).\n\n### Read mapping, genotyping of sequencing data\n\nSequencing reads from Fastq files were mapped to the masked (RepeatMasker, default parameters, masking simple repeats, and low complexity regions) S. cerevisiae R64 reference genome using bwa mem (v0.7.17). Resulting bam files were sorted and indexed using SAMtools (v1.9). Duplicated reads were marked, and sample names were assigned using Picard (v2.18.14). GATK (v3.7.0) was used to realign remaining reads. Candidate variants were then called using GATK UnifiedGenotyper. The calling was done simultaneously for lines from the same background.\n\n### Analysis of LOH tracts\n\nAfter variant calling, SNPs called in each hybrid parental couple were first filtered (bcftools v1.9) to define a set of confident markers expected to be heterozygous in the hybrid progeny. Positions with a single alternate allele, supported by at least 50 sequencing reads across both parents, were kept as parental markers. Joint SNP calling was performed background-wise as described previously. Bcftools isec was used to extract SNPs located at parental markers positions in all samples. In case of homozygosity at markers position, a parental origin tag was added by comparing the allele to parental alleles. Positions with GQ less than 20 were filtered out. LOH events were called using an in-house script. Heterozygous and LOH tracts from either parental origin were initially defined by uninterrupted tracts of successive marker positions with the right tag (heterozygous, parent1, parent2). Single-marker tracts were filtered out and subsequent tracts from the same origin were merged. Any tracts with 80% or more overlap and shared by at least 50% of the lines from the same hybrid were excluded. Average LOH tract coordinates were determined as the mean between the coordinates of first or last marker of a given tract and the first previous or next marker around that tract. LOH tracts were tagged as terminal if they overlapped the first or last 20 kb of a chromosome and tagged as interstitial otherwise. LOH site rates per line were calculated as N/D*G, where N\u00a0=\u00a0sites under LOH (I-LOH, T-LOH or overall), D\u00a0=\u00a0total number of divisions, and G\u00a0=\u00a0total genome size. LOH event rates per line were calculated as N/D, where N\u00a0=\u00a0number of events (I-LOH, T-LOH, or total events) and D\u00a0=\u00a0total number of divisions. The LOH plots as in Figure 1\u2014figure supplement 5 were generated using the tool karyoploteR (Gel and Serra, 2017).\n\n### Analysis of new mutations\n\nFilters were applied to the SNPs that were called from the MA lines sequencing results in order to identify SNPs that were exclusive to a line, that\u00a0is, mutations that occurred during the MA experiment (Sharp et al., 2018; Liu and Zhang, 2019; Zhu et al., 2014). An initial filtering round was first applied, and only positions covered by more than 10 reads in each sample with a single alternate allele were kept. Then, filters based on the numbers of lines per background and the type of conversion event expected to occur in a given background (homozygous to homozygous, homozygous to heterozygous) were applied to positions that were initially in a homozygous state (homozygous to homozygous, homozygous to heterozygous). Bcftools (v1.9) was used to perform the filtering. For homozygous-to-homozygous conversions, SNPs occurring within a called LOH were filtered out as they were actually representing the LOH and not an SNM. The remaining set of SNMs was then analyzed using snpEff to classify intergenic and genic mutations, and for the latter, synonymous and non-synonymous ones. Mutation rates per line were calculated as N/D*2G, where N\u00a0=\u00a0number of mutations (SNM or MNM), D\u00a0=\u00a0total number of divisions, and G\u00a0=\u00a0genome size (genome size was multiplied by 2, to account for the diploid genome). Homozygous mutations were multiplied by 2 in the estimation of the rates.\n",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "3e9d9b2e-3ec2-47b1-bee5-69a8391039c8",
+      "submission_id": "b77830ba-5553-4327-8b17-362a6fa7b6ce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antonis Rokas, Vanderbilt University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70339.sa1](https://doi.org/10.7554/eLife.70339.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n\nAcceptance summary:\n\nLoss-of-heterozygosity is a phenomenon whereby a piece of sequence of one homologous chromosome is replaced by the corresponding sequence of the other homolog. Using strains of the budding yeast Saccharomyces cerevisiae with various genetic backgrounds, the manuscript by Dutta et al. describes the types and frequency of loss-of-heterozygosity events in multiple mutation accumulation lines under standard growth conditions (no stress). Although loss-of-heterozygosity events have been well documented in yeasts, especially in Candida pathogenic yeasts in response to drugs, this study is novel in that it approaches the study of loss-of-heterozygosity from an evolutionary perspective, showing that such events are surprisingly common during asexual reproduction and highly variable across strains.\n",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "62a0096e-d0ec-4503-bb3f-897ea298e18c",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C1",
+      "claim": "169 heterozygous diploid Saccharomyces cerevisiae mutation accumulation lines were generated across nine genetic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the genome-wide landscape and dynamics of LOH accumulation, we generated 180 MA lines using nine different heterozygous S. cerevisiae strains (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of MA lines and genetic backgrounds used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "e17d1f5a-a6be-485b-ab6b-70f05fef8545",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C2",
+      "claim": "The diploid hybrids were designed to have heterozygosity levels ranging from 0.1% to 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "These hybrids were designed to lead to a heterozygosity level ranging from 0.1% to 1%, covering a large genetic diversity of the S. cerevisiae species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the range of heterozygosity levels in the designed hybrids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "3a03c0b9-2281-48e5-a0b0-0ea6a6983412",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C3",
+      "claim": "A total of 22,828 LOH events were detected across the 169 MA lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we identified a large set of 22,828 LOH events across the 169 MA lines, with an average size of 14.1 kb (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly reports the total number of LOH events detected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "b0f7c1d7-e379-460f-98eb-65c9c63de891",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C4",
+      "claim": "The average size of LOH events is 14.1 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we identified a large set of 22,828 LOH events across the 169 MA lines, with an average size of 14.1 kb (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the average size of LOH events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "516225e4-29f3-4297-bab7-ba4b5c471fce",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C5",
+      "claim": "The size distribution of LOH events is bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to observe that the size distribution of the detected LOH events is bimodal (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the bimodal distribution and references Figure 1A showing this distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "56efac91-a88c-4482-bf6e-09ef6c242b6a",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C6",
+      "claim": "95% of LOH events have an average size of 1.6 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of the events (95%) are in the first category with an average size of 1.6 kb, the rest of the events (5%) in the second category have an average size of 269.2 kb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the percentage and average size for the first category of LOH events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "21497e2c-ed98-4bad-8cfb-00321adf0595",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C7",
+      "claim": "5% of LOH events have an average size of 269.2 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of the events (95%) are in the first category with an average size of 1.6 kb, the rest of the events (5%) in the second category have an average size of 269.2 kb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the percentage and average size for the second category of LOH events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "b0d73626-023d-48e3-9481-5bfc5e79cbdc",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C8",
+      "claim": "Interstitial LOH (I-LOH) events represent 86.1% of all LOH events (n = 19,660).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the accumulated events, the I-LOHs were found to be significantly enriched representing 86.1% of the events (n = 19,660) compared to the T-LOHs with only 3,168 detected events (i.e. 13.9%) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the percentage and count of I-LOH events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "981ffb13-7520-4b21-b000-a28155018f65",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C9",
+      "claim": "Terminal LOH (T-LOH) events represent 13.9% of all LOH events (n = 3,168).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the accumulated events, the I-LOHs were found to be significantly enriched representing 86.1% of the events (n = 19,660) compared to the T-LOHs with only 3,168 detected events (i.e. 13.9%) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the percentage and count of T-LOH events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "9d99b1e8-b380-4cf2-bba1-7d3664fc3179",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C10",
+      "claim": "T-LOH events are significantly larger than I-LOH events with average sizes of 55.3 kb and 7.5 kb, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, T-LOH events are significantly larger than I-LOH events with an average size of 55.3 and 7.5 kb, respectively (Figure 1\u2014figure supplement 3, p<10\u22123).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly compares the sizes of T-LOH and I-LOH events with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "6c807c81-e36f-4936-a2f7-d0332ad7a295",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C11",
+      "claim": "On average, 15.9% of the genome was under LOH across the 169 MA lines.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, 15.9% of the genome was under LOH but with a large variation as this fraction ranges from 0.01% to 98.6% across the lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the average percentage of genome under LOH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "b84499c3-b004-4d2c-90e1-01ce19da4d46",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C12",
+      "claim": "The fraction of genome under LOH ranges from 0.01% to 98.6% across the lines.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, 15.9% of the genome was under LOH but with a large variation as this fraction ranges from 0.01% to 98.6% across the lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the range of genome under LOH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "a3fead18-05c0-43da-89e0-0d08404684c0",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C13",
+      "claim": "14 lines exhibited more than 90% of the genome under LOH and are designated as nearly homozygous lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The last group encompassed 14 lines that exhibit more than 90% of the genome under LOH, which is significantly higher than the other two (Figure 1\u2014figure supplements 4 and 5). This observation clearly shows that the genome of approximately 8% of the lines was quickly driven a quasi-homozygous state, henceforth we call them nearly homozygous lines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies and names the nearly homozygous lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "c201fe51-1bff-4b4a-b75a-8e601a1c1200",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C14",
+      "claim": "The LOH rate is 7.1 \u00d7 10\u22125 per site per division on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the 169 lines, we estimated the LOH rates to be 7.1 \u00d7 10\u22125 per site per division and 6.5 \u00d7 10\u22122 events per division on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the LOH rate per site per division.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "04ee5610-40c4-4ef4-b291-af5869c69ef1",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C15",
+      "claim": "The LOH rate is 6.5 \u00d7 10\u22122 events per division on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the 169 lines, we estimated the LOH rates to be 7.1 \u00d7 10\u22125 per site per division and 6.5 \u00d7 10\u22122 events per division on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the LOH rate per division.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "7bd0dd18-85a1-4ae3-8474-3012ba20129d",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C16",
+      "claim": "The I-LOH rate is 3.1 \u00d7 10\u22125 per site per division.",
+      "claim_type": "EXPLICIT",
+      "source": "While the I-LOH rates were 3.1 \u00d7 10\u22125 per site per division and 5.6 \u00d7 10\u22122 events per division, we found that the T-LOH rates were 4.2 \u00d7 10\u22125 per site per division and 9.2 \u00d7 10\u22123 events per division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the I-LOH rate per site per division.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "bb0a63bf-7b27-4848-a127-735a7c9890da",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C17",
+      "claim": "The I-LOH rate is 5.6 \u00d7 10\u22122 events per division.",
+      "claim_type": "EXPLICIT",
+      "source": "While the I-LOH rates were 3.1 \u00d7 10\u22125 per site per division and 5.6 \u00d7 10\u22122 events per division, we found that the T-LOH rates were 4.2 \u00d7 10\u22125 per site per division and 9.2 \u00d7 10\u22123 events per division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the I-LOH rate per division.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "59c57959-371e-42c7-b591-debb9ab14c9b",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C18",
+      "claim": "The T-LOH rate is 4.2 \u00d7 10\u22125 per site per division.",
+      "claim_type": "EXPLICIT",
+      "source": "While the I-LOH rates were 3.1 \u00d7 10\u22125 per site per division and 5.6 \u00d7 10\u22122 events per division, we found that the T-LOH rates were 4.2 \u00d7 10\u22125 per site per division and 9.2 \u00d7 10\u22123 events per division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the T-LOH rate per site per division.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "56ae685b-086b-4f3f-bf70-e1ad9eaf18d4",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C19",
+      "claim": "The T-LOH rate is 9.2 \u00d7 10\u22123 events per division.",
+      "claim_type": "EXPLICIT",
+      "source": "While the I-LOH rates were 3.1 \u00d7 10\u22125 per site per division and 5.6 \u00d7 10\u22122 events per division, we found that the T-LOH rates were 4.2 \u00d7 10\u22125 per site per division and 9.2 \u00d7 10\u22123 events per division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the T-LOH rate per division.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "e6b992c2-de54-4996-bd01-78d6d57df80a",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C20",
+      "claim": "The number of accumulated LOH events varies considerably between genetic backgrounds, with H1 lines accumulating the fewest (n = 10.8 on average) and H4 lines accumulating the most (n = 413.5 on average), representing a 38.2-fold difference.",
+      "claim_type": "EXPLICIT",
+      "source": "While the H1 lines accumulated the fewest LOH events (n = 10.8 on average), the H4 lines accumulated the largest number of events (n = 413.5 on average), which represents a difference of 38.2 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares the LOH event counts between different genetic backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "729bd172-497e-4431-b8c3-43bccd79b583",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C21",
+      "claim": "I-LOH events are significantly in excess compared to T-LOH events in most genetic backgrounds (except for H1 and H9 lines).",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases (except for the H1 and H9 lines), the I-LOH events were significantly in excess compared to T-LOH events in all backgrounds (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the predominance of I-LOH events in most backgrounds with exceptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "4e40d048-f532-4591-a511-964e81f7466e",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C22",
+      "claim": "There is a positive correlation between heterozygosity level and the number of T-LOH events.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the more the ancestors were heterozygous, the more they accumulated T-LOH events (Figure 2B). And we have indeed found a positive correlation between the heterozygosity level and the number of T-LOH events (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes and shows a positive correlation between heterozygosity and T-LOH events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "81b875da-9ef5-44e7-bf27-dc0e85c96031",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C23",
+      "claim": "No correlation was found between heterozygosity level and I-LOH events or total LOH events.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a correlation was found neither for I-LOH nor for the total number of LOH events accumulated in the lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the absence of correlation for I-LOH and total LOH events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "1844cc4d-2781-4c34-a312-6e0624f56fdf",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C24",
+      "claim": "The proportion of genome under LOH varies from 3.6% to 16.6% across the nine backgrounds (excluding nearly homozygous lines).",
+      "claim_type": "EXPLICIT",
+      "source": "This fraction varies from 3.6% to 16.6% of the genome across the nine backgrounds, when we exclude the nearly homozygous lines reaching more than 90% of the genome being under LOH (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly provides the range of genome under LOH across backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "2d3a14cd-d652-43ff-9096-d19c12157db3",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C25",
+      "claim": "H3 lines accumulated the most genome under LOH (16.6%) while H8 accumulated the least (3.8%), representing a 4.6-fold difference.",
+      "claim_type": "EXPLICIT",
+      "source": "The H3 lines accumulated the most genome under LOH (16.6%) while H8 accumulated the least (3.8%), representing a 4.6-fold difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares the genome under LOH between H3 and H8 backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "9ae57067-8e29-4be1-bed0-9a9d2f30ae74",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C26",
+      "claim": "The H9 background was enriched in nearly homozygous lines (n = 5), while H1 and H4 had none.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the H9 background was enriched in nearly homozygous lines (n = 5), while H1 and H4 had none (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the distribution of nearly homozygous lines across backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "d21168ca-466a-4531-818e-993cc82b8d07",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C27",
+      "claim": "Biased fixation toward one parent was observed only in H4 and H5 backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe a significant excess in fixation of either of the parental genomes in the different backgrounds (binomial test, p>0.05), except for the H4 and H5 lines (binomial test, p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies H4 and H5 as showing biased fixation with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "2f847e76-d4af-448f-9ba0-125073b59d4e",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C28",
+      "claim": "In H4 and H5 backgrounds, more than 80% of the genome under LOH is biased toward one of the parents.",
+      "claim_type": "EXPLICIT",
+      "source": "In both, H4 and H5, more than 80% of the genome under LOH is biased toward one of the parents (Figure 2\u2014figure supplement 3), although the total genome under LOH in these backgrounds was very low with a level of 5.5% and 4.8%, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly quantifies the bias in H4 and H5 backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "eede4698-e635-4f5c-8b67-5dee1f66fa5a",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C29",
+      "claim": "LOH site rates vary between 2.4 \u00d7 10\u22125 and 1.1 \u00d7 10\u22124 per site per division across the nine hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "The LOH site rates in these hybrids vary between 2.4 \u00d7 10\u22125 and 1.1 \u00d7 10\u22124 per site per division, and consequently a low variance was observed (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the range of LOH site rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "cc11de5a-702f-48e7-996d-40eed5d65cbc",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C30",
+      "claim": "LOH event rates range from 5.6 \u00d7 10\u22123 to 2.8 \u00d7 10\u22121 events per division and are much more variable than site rates.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the LOH event rates range from 5.6 \u00d7 10\u22123 to 2.8 \u00d7 10\u22121 events per division and are hence much more variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the range of LOH event rates and notes their variability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "9e3a7907-2287-4510-a1ec-8e130a78cda1",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C31",
+      "claim": "Spore viability in the ancestral diploids varies between 38% and 92%.",
+      "claim_type": "EXPLICIT",
+      "source": "By determining the spore viability as a measure of spore fertility in the ancestors, we indeed saw that it varies between 38% and 92% (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the range of spore viability in ancestors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "29306896-564b-4382-97f2-818eefef323d",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C32",
+      "claim": "H1, H2, H3, H6, and H7 ancestors displayed good spore fertility (~85%).",
+      "claim_type": "EXPLICIT",
+      "source": "While the H1, H2, H3, H6, and H7 ancestors displayed good spore fertility (~85%), the spore viability of the H4, H5, H8, and H9 ancestors was severely compromised (~50%) (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly categorizes ancestors by spore fertility levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "9682d999-1478-42a0-a2f2-89053ec554b3",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C33",
+      "claim": "The spore viability of H4, H5, H8, and H9 ancestors was severely compromised (~50%).",
+      "claim_type": "EXPLICIT",
+      "source": "While the H1, H2, H3, H6, and H7 ancestors displayed good spore fertility (~85%), the spore viability of the H4, H5, H8, and H9 ancestors was severely compromised (~50%) (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly categorizes ancestors by spore fertility levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "4e35eed8-adc0-4bc9-b48d-07160ea90417",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C34",
+      "claim": "Lines with high spore fertility accumulated much less LOH events than lines with low spore fertility, with a 7.6-fold higher frequency in low fertility lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that lines with high spore fertility accumulated much less LOH events than the lines showing low spore fertility (Figure 3A). The frequency in these was 7.6-fold higher per bottleneck.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly compares LOH accumulation between high and low fertility lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "401923d7-8a84-42c7-9d0a-0adc9489b5a1",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C35",
+      "claim": "The size of LOH events was on average much shorter in low spore fertility lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also found that the size of the LOH events was on average much shorter in low spore fertility lines (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the difference in LOH event size between fertility groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "df2859cf-adc4-4f40-8694-5cf44c05b9e2",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C36",
+      "claim": "In lines with high spore fertility, I-LOH events were three times more frequent than T-LOH events.",
+      "claim_type": "EXPLICIT",
+      "source": "In lines with high spore fertility, I-LOH events were three times more frequent than those of T-LOH, similar to what had previously been observed in the W303/YJM789 hybrid (Sui et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly quantifies the ratio of I-LOH to T-LOH in high fertility lines and cites supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "87cb262a-fbd6-4baa-85e4-167e3828c027",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C37",
+      "claim": "In low spore fertility hybrids, I-LOH events were seven-fold more frequent than T-LOH events.",
+      "claim_type": "EXPLICIT",
+      "source": "However, I-LOH events were even more frequent (seven-fold) than T-LOH in the low spore fertility hybrids with low spore fertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly quantifies the ratio of I-LOH to T-LOH in low fertility lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "d6a17bad-fe4f-47bc-99f8-90ec550fb49e",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C38",
+      "claim": "The mean LOH event size in high spore fertility lines is 45.8 kb compared to 7.4 kb in low spore fertility hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean LOH event size in the latter is 45.8 kb compared to 7.4 kb in low spore fertility hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares mean LOH event sizes between fertility groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "60823107-9f18-42d0-ac28-959354c31969",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C39",
+      "claim": "MA lines derived from low spore fertility ancestors showed significant improvement in spore viability compared to their ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, individual lines of the four other backgrounds presenting a low spore fertility (lines H4, H5, H8, and H9) showed significant increase compared to the ancestral spore fertility (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the improvement in spore viability in low fertility backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "e18df8f7-a98d-45b3-a939-89a7527da9f4",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C40",
+      "claim": "The spore viability of lines derived from highly fertile hybrids did not deviate significantly from their ancestral levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The spore viability of the lines derived from the highly fertile hybrids did not deviate significantly from their ancestral levels, meaning that they retained their high spore viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that high fertility lines maintained their spore viability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "ca738313-e350-46fa-b013-f682b0dbdb5c",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C41",
+      "claim": "42 out of 77 MA lines from low fertility backgrounds showed statistically significant increases in spore fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue of the spore fertility in most MA lines was gradual, with only 42 out of 77 lines showing statistically significant increases (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly quantifies the number of lines showing significant fertility improvement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "52738f04-19fe-4d24-a06a-cc157b0c42b9",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C42",
+      "claim": "MA lines showed up to a 23% increase in spore fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "MA lines showed up to a 23% increase in spore fertility and the nearly homozygous lines from all hybrid backgrounds were able to fully restore their spore fertility (~90%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the maximum increase in spore fertility observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "38b7e9c9-2061-483d-896c-02d6f2a7c563",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C43",
+      "claim": "Nearly homozygous lines from all hybrid backgrounds were able to fully restore their spore fertility (~90%).",
+      "claim_type": "EXPLICIT",
+      "source": "MA lines showed up to a 23% increase in spore fertility and the nearly homozygous lines from all hybrid backgrounds were able to fully restore their spore fertility (~90%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the spore fertility restoration in nearly homozygous lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "1a31a943-d906-47e0-a746-f4b9295d5442",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C44",
+      "claim": "912 single nucleotide mutations (SNMs) and 14 multi-nucleotide mutations (MNMs) were identified in the 169 MA lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 169 MA lines, we identified 912 single nucleotide mutations (SNMs) and 14 multi-nucleotide mutations (MNMs), of which 83 and 2 are homozygous, respectively (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly reports the counts of SNMs and MNMs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "20fb6440-65bf-4c2f-b6f6-5f4622824091",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C45",
+      "claim": "83 SNMs and 2 MNMs are homozygous.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 169 MA lines, we identified 912 single nucleotide mutations (SNMs) and 14 multi-nucleotide mutations (MNMs), of which 83 and 2 are homozygous, respectively (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of homozygous mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "8805a818-ee23-405b-9dc2-0a904518557c",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C46",
+      "claim": "101 SNMs and 2 MNMs were detected in the near-homozygous lines.",
+      "claim_type": "EXPLICIT",
+      "source": "While 101 SNMs and 2 MNMs were detected in the near-homozygous lines, 811 SNMs and 12 MNMs were identified in the 155 remaining lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly reports mutation counts in nearly homozygous lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "10a6ac97-f901-4163-bfc9-0f31f71df622",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C47",
+      "claim": "811 SNMs and 12 MNMs were identified in the 155 remaining lines (excluding nearly homozygous lines).",
+      "claim_type": "EXPLICIT",
+      "source": "While 101 SNMs and 2 MNMs were detected in the near-homozygous lines, 811 SNMs and 12 MNMs were identified in the 155 remaining lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly reports mutation counts in non-nearly homozygous lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "0dff3243-4277-4ddf-9f51-4c835dc792d7",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C48",
+      "claim": "70% of mutations were observed in genic regions and 30% in non-genic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 70% of the mutations were observed in genic regions and 30% in the non-genic areas, and we observed a significant excess of non-synonymous mutations over synonymous mutations in the genic regions (binomial test, p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the distribution of mutations across genic and non-genic regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "adb9aeb0-06dd-4139-bae7-eb4a7aea2f48",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C49",
+      "claim": "There is a significant excess of non-synonymous mutations over synonymous mutations in genic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 70% of the mutations were observed in genic regions and 30% in the non-genic areas, and we observed a significant excess of non-synonymous mutations over synonymous mutations in the genic regions (binomial test, p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the excess of non-synonymous mutations with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "49613425-ca43-46f2-b37e-0c2ba562fc3b",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C50",
+      "claim": "Transition mutations were more frequent than transversions with an average Ts/Tv ratio of 1.35.",
+      "claim_type": "EXPLICIT",
+      "source": "Transition mutations were more frequent than transversions with an average Ts/Tv ratio of 1.35.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly reports the Ts/Tv ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "75988596-f0b9-4813-9c5c-5c01e69fa5c0",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C51",
+      "claim": "The SNM rate is 1.1 \u00d7 10\u221210 per site per division on average.",
+      "claim_type": "EXPLICIT",
+      "source": "SNM and MNM rates were on average 1.1 \u00d7 10\u221210/site/division and 1.98 \u00d7 10\u221212/site/division, which is similar to previous estimates in isogenic and hybrid diploid S. cerevisiae strains (Dutta et al., 2017; Sharp et al., 2018; Liu and Zhang, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the SNM rate and compares it to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "76ee42ea-5d0b-4fdc-b166-71d394d1b4f5",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C52",
+      "claim": "The MNM rate is 1.98 \u00d7 10\u221212 per site per division on average.",
+      "claim_type": "EXPLICIT",
+      "source": "SNM and MNM rates were on average 1.1 \u00d7 10\u221210/site/division and 1.98 \u00d7 10\u221212/site/division, which is similar to previous estimates in isogenic and hybrid diploid S. cerevisiae strains (Dutta et al., 2017; Sharp et al., 2018; Liu and Zhang, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the MNM rate and compares it to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "206075b2-7d76-484b-97ff-0f9cfad5db2e",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C53",
+      "claim": "SNM rates are five orders of magnitude lower than LOH rates.",
+      "claim_type": "EXPLICIT",
+      "source": "SNM rates are five orders of magnitude lower than LOH rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares SNM and LOH rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "ade88fe3-9565-4589-a460-bb17ae0c0664",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C54",
+      "claim": "The proportion of SNMs in the six categories of transitions and transversions varies across the nine backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of SNMs in the six categories of transitions and transversions varies across the nine backgrounds (p<10\u22124, Chi-square test; Figure 4\u2014figure supplement 1A, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the variation in SNM spectrum with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "72c6350f-2137-4501-8315-5a15cf899970",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C55",
+      "claim": "The Ts/Tv ratio is always greater than 0.5 across all backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the transitions are always in excess compared to transversions and we found that the Ts/Tv ratio is always greater than 0.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the Ts/Tv ratio threshold across backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "001da78b-07f4-4267-8ae5-0465300d40e1",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C56",
+      "claim": "The Ts/Tv ratio was significantly increased up to 1.86 for the H3 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ts/Tv ratio was similar across the backgrounds with only a significant increase of up to 1.86 for the H3 lines (p<10\u22125; Chi-square test, Figure 4\u2014figure supplement 1B, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies H3 as having a significantly higher Ts/Tv ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "e50b6143-0eb3-402c-b766-ce582fc24125",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C57",
+      "claim": "A GC > AT/AT > GC mutational bias was found in all genetic backgrounds except H8.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found a GC > AT/AT > GC bias in all genetic backgrounds, with the exception of the H8 lines and significantly increased compared to the rest in H1 (Figure 4\u2014figure supplement 1C, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the mutational bias across backgrounds with an exception.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "00f9d266-9327-4dda-90e9-4a0a6dcd2bce",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C58",
+      "claim": "The SNM rates vary from 0.65 \u00d7 10\u221210 to 1.56 \u00d7 10\u221210 per site per division across the nine heterozygous diploids, representing a 2.4-fold difference.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNM rates vary from 0.65 \u00d7 10\u221210 to 1.56 \u00d7 10\u221210/site/division across the nine heterozygous diploids, representing a 2.4-fold difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the range of SNM rates across backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "b1bdb0b2-f17a-4652-be91-b112c86511dc",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C59",
+      "claim": "SNM rates were not significantly different within or across the nine backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "SNM rates were not significantly different within or across the nine backgrounds (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the lack of significant difference in SNM rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "bbfaef6b-99ca-4178-961f-017d9adc9a61",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C60",
+      "claim": "The average mutation rate in the 14 near-homozygous lines was around 1.92 \u00d7 10\u221210 per site per division.",
+      "claim_type": "EXPLICIT",
+      "source": "The average mutation rate in the 14 near-homozygous lines was just slightly higher, around 1.92 \u00d7 10\u221210/site/division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the mutation rate for nearly homozygous lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "cfc96069-9de7-4d6d-9a0b-761c91c4413b",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C61",
+      "claim": "No correlation was observed between mutation rates and heterozygosity levels, GC content, or LOH rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed no correlation between the mutation rates and the heterozygosity levels, GC content, or LOH rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the absence of correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "3797385e-506c-4a13-84be-9ecefe2a9f47",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C62",
+      "claim": "51 aneuploidy events were detected in the MA lines, comprising 43 chromosomal gains and 8 losses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also detected 51 aneuploidy events in the MA lines, 43 chromosomal gains and 8 losses (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly reports the counts of aneuploidy events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "8f02cea1-5b9f-4aa9-8352-a93b2bca3553",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C63",
+      "claim": "No aneuploidy events were detected in the H2, H5, and H7 MA lines.",
+      "claim_type": "EXPLICIT",
+      "source": "No aneuploidy events were detected in the H2, H5, and H7 MA lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies backgrounds without aneuploidy events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "8e56e2f3-431d-4ae7-abbb-18f93441172e",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C64",
+      "claim": "Ancestral trisomies were observed in H3 (chromosome IX) and H9 (chromosomes IX and XVI).",
+      "claim_type": "EXPLICIT",
+      "source": "Ancestral trisomies have been observed in H3 (chromosome IX) and H9 (chromosomes IX and XVI), and chromosome losses always correspond to the loss of extra copies of chromosomes IX and XVI in these two genetic backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies ancestral trisomies in specific backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "58f945dc-1cd3-4bd4-a749-e3285b97e082",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C65",
+      "claim": "The overall rate of aneuploidy is 1 \u00d7 10\u22124 per division.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall rate of aneuploidy is 1 \u00d7 10\u22124 per division, which is similar to that determined in previous studies (Sui et al., 2020; Loeillet et al., 2020; Sharp et al., 2018; Zhu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the aneuploidy rate and compares it to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "e68ba79d-2bd4-4fdf-b1b5-c16e2bb54678",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C66",
+      "claim": "The LOH and SNM rates are not different among euploid and aneuploid MA lines or nearly homozygous lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The LOH and SNM rates are not different among the euploid and aneuploid MA lines or the nearly homozygous lines (Mann-Whitney U test, p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the lack of difference with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "68eff9c9-0f3a-447b-9c37-2b51a5a1364c",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C67",
+      "claim": "14 nearly homozygous lines exhibited 88% to 98% of the genome under LOH.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned previously, we found a total of 14 nearly homozygous lines exhibiting more than ~90% of the genome under LOH, although it varies from 88% to 98% (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly provides the range of genome under LOH in nearly homozygous lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "bc752dea-f995-4fb4-a2d7-a57874dce57c",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C68",
+      "claim": "The LOH spectrum in nearly homozygous lines is characterized by a low number of events overall with similar frequency of I-LOH and T-LOH events.",
+      "claim_type": "EXPLICIT",
+      "source": "The LOH spectrum in these lines is characterized by a low number of events overall with similar frequency of I-LOH and T-LOH events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the LOH spectrum characteristics in nearly homozygous lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "17468f62-552b-45a7-a511-dfe850e5af5d",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C69",
+      "claim": "The average LOH event size in nearly homozygous lines is 185.1 kb, significantly larger than the rest of the 155 lines (~7 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "The average LOH event size is 185.1 kb, significantly larger than the rest of the 155 lines (~7 kb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares LOH event sizes between nearly homozygous and other lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "2294fff9-9199-481f-9588-9e7baa3ad1be",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C70",
+      "claim": "Nearly homozygous lines from low spore fertility backgrounds were able to fully restore their spore fertility (~90%).",
+      "claim_type": "EXPLICIT",
+      "source": "The nearly homozygous lines coming from low spore fertility backgrounds were able to fully restore their spore fertility (~90%) (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the spore fertility restoration in nearly homozygous lines from low fertility backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "8b9fe8aa-56c7-4ba0-b3d0-61e68639639d",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C71",
+      "claim": "A decrease in growth rates was observed at the end of the MA experiment for the lines, with a significantly greater decrease for near-homozygous lines compared to other lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a decrease in the growth rates on average was observed at the end for the lines, but this decrease was significantly greater for the near-homozygous lines compared to the other lines (Mann-Whitney U test, p<10\u221210).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the growth rate changes with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "b383a302-ea11-4626-bbb1-56fa609f9a51",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C72",
+      "claim": "The rates of SNM and MNM in the 14 nearly homozygous lines were 1.8-fold and 1.5-fold greater, respectively, compared to other lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the rates of SNM and MNM in these 14 lines were 1.8-fold and 1.5-fold greater, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares mutation rates in nearly homozygous lines to other lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "0699709d-a39c-47f8-8dcc-921ad77920b8",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C73",
+      "claim": "The frequency of homozygous mutations was 3.2 times higher in nearly homozygous lines compared to the rest of the MA lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of homozygous mutations was found to be 3.2 times higher compared to the rest of the MA lines, but most of the detected mutations in these lines were heterozygous (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares homozygous mutation frequencies between nearly homozygous and other lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "0c85f48c-4de4-4b97-b2e7-2ab739300357",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C74",
+      "claim": "Most SNMs in the nearly homozygous lines may have been accumulated after the homozygotization event.",
+      "claim_type": "EXPLICIT",
+      "source": "Since most new SNMs are heterozygous, most SNMs in the nearly homozygous lines may have been accumulated after the homozygotization event and mutation rates might have been higher (Nishant et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly infers the timing of SNM accumulation in nearly homozygous lines and cites supporting literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "de76c2a3-70ec-4365-aebc-9b111736ffec",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C75",
+      "claim": "The MA lines have undergone an average of 24.2 divisions per bottleneck for a total of at least 1769 divisions per line.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we estimated that the MA lines have undergone an average of 24.2 divisions per bottleneck for a total of at least 1769 divisions per line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the estimated number of divisions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "e899a752-2521-4671-9af1-6ef68f64fa76",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C76",
+      "claim": "The growth rate of ancestral diploids was about 0.51 divisions per hour on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rate of ancestral diploids was about 0.51 divisions per hour on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the growth rate of ancestral diploids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "d8ae639e-dc03-4a9a-ae34-5b5aeeb37ca3",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C77",
+      "claim": "No significant difference was observed between ancestors and final MA lines in terms of growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference was observed between ancestors and final MA lines in terms of growth rate (Supplementary file 2, p>0.05 t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the lack of significant difference with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "6bebdc60-dd35-4729-86a4-27e8117a106f",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C78",
+      "claim": "LOH events are very frequent with a rate consistently much higher than the mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "LOH events are very frequent with a rate consistently much higher than the mutation rate, showing their importance for genome evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares LOH and mutation rates and draws a conclusion about their importance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "342d16da-e3e9-4a76-aadb-75e720a966d6",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C79",
+      "claim": "Accumulated LOHs are further away from centromeres (mean distance of 272 kb) than telomeres (mean distance of 230 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that accumulated LOHs are further away from centromeres (mean distance of 272 kb) than telomeres (mean distance of 230 kb) (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly provides the mean distances of LOH events from centromeres and telomeres.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "173f9351-3b16-496e-a193-9f4293dcae5f",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C80",
+      "claim": "The frequency of I-LOH events was elevated on large chromosomes and a positive correlation with chromosome size was observed for all backgrounds except H1 and H9.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of I-LOH events was elevated on large chromosomes and a positive correlation with the chromosome size was observed for all backgrounds except H1 and H9 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the correlation between I-LOH frequency and chromosome size with exceptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "f09b0043-dfe4-4a71-a08e-07768de6023a",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C81",
+      "claim": "Frequent short I-LOH tracts are a signature of the lines derived from hybrids with low spore fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, frequent short LOH tracts were a signature of the lines derived from hybrids with low spore fertility, that is, the H4, H5, H8, and H9 lines (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly identifies short I-LOH tracts as characteristic of low fertility lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "f998203a-f30c-44d8-980a-ebd6354150be",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C82",
+      "claim": "Recovery of spore fertility in MA lines during mitotic propagation can be achieved either incrementally by undergoing frequent, short LOH events or completely by undergoing rapid whole-genome homozygotization.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results suggest that recovery of spore fertility in the MA lines during mitotic propagation can be achieved either incrementally by undergoing frequent, short LOH events or completely by undergoing rapid whole-genome homozygotization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly summarizes two mechanisms for spore fertility recovery.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "309d3c75-5e89-4670-bffa-774a89e850eb",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C83",
+      "claim": "LOH events result from the transfer of information from one homologous chromosome to the other, primarily a consequence of mitotic recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "These loss of heterozygosity (LOH) events result from the transfer of information from one homologous chromosome to the other, primarily a consequence of mitotic recombination, among other mechanisms (Sui et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the mechanism of LOH events and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "b820c316-6989-432b-b45a-56d692d2b7fd",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C84",
+      "claim": "LOH events are another source of genomic diversity and can contribute to the rapid onset of phenotypic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "LOH events are hence another source of genomic diversity and can contribute to the rapid onset of phenotypic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the role of LOH in generating diversity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "167a561c-5ea0-46dc-a631-078db3cf567f",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C85",
+      "claim": "In asexual populations, mechanisms driving LOH are crucial in the fixation of potential beneficial recessive mutations and counteract Muller's ratchet.",
+      "claim_type": "EXPLICIT",
+      "source": "In asexual populations, mechanisms driving LOH are crucial in the fixation of potential beneficial recessive mutations and counteract the Muller's ratchet, allowing them to persist (Howe and Denver, 2008; Tucker et al., 2013; Mandegar and Otto, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the role of LOH in asexual populations and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "92f438ab-52a5-4f4c-bae6-f0edf4e9a682",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C86",
+      "claim": "LOH events have been identified as involved in fitness, adaptation, and pathogenesis in many fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "LOH events have been identified as involved in fitness, adaptation, and pathogenesis in many fungi (Forche et al., 2011; Wertheimer et al., 2016; Beekman and Ene, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the roles of LOH in fungi and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "3c50076a-e5cf-4303-9011-139a8369e639",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C87",
+      "claim": "LOH is a common genetic event in cancer development.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, LOH is also a common genetic event in cancer development (Nichols et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the role of LOH in cancer and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "c086b9fd-9119-4d52-9d74-af36850cab0c",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C88",
+      "claim": "LOH of BRCA1/2 and Rb1 can lead to breast cancers and retinoblastoma, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "LOH of BRCA1/2 (protein products regulate Rad51 activity in DNA repair pathways) and Rb1 (a human tumor suppressor gene) can lead to breast cancers and retinoblastoma, respectively (Nichols et al., 2020; Maxwell et al., 2017; Kechin et al., 2018; Sorscher et al., 2020; Choi et al., 2002; Herschkowitz et al., 2008; Kooi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes specific LOH events in cancer and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "d73ce0da-b289-4597-8a96-3c88d42cd5fb",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C89",
+      "claim": "Double-strand break (DSB) repair is a common occurrence during the cell cycle that can lead to LOH.",
+      "claim_type": "EXPLICIT",
+      "source": "Double-strand break (DSB) repair is a common occurrence during the cell cycle that can lead to LOH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes DSB repair as a mechanism for LOH.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "09f08ab8-6c0c-4e67-80c1-161c4e61cb47",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C90",
+      "claim": "Repair of programmed DSBs induced by Spo11 is a key point of meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Repair of programmed DSBs induced by Spo11 is a key point of meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the role of Spo11-induced DSBs in meiosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "c9e47047-4ebc-462d-bb99-122205cd5688",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C91",
+      "claim": "Return to vegetative growth after abortive meiosis (RTG) can generate significant LOH via mitotic repair of Spo11-induced DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Return to vegetative growth, after abortive meiosis (RTG), is another process that can generate significant LOH via mitotic repair of Spo11-induced DSBs (Dayani et al., 2011; Laureau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes RTG as a mechanism for LOH and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "859f4a05-39bb-4c29-aba0-6268feebeec5",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C92",
+      "claim": "RTGs may be a common occurrence in the life cycle of yeasts.",
+      "claim_type": "EXPLICIT",
+      "source": "A growing body of evidence suggests that RTGs may be a common occurrence in the life cycle of yeasts (Peter et al., 2018; Brion et al., 2017; D'Angiolo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly suggests RTGs are common in yeast and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "085c8d37-88dc-440a-817c-3875329f593d",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C93",
+      "claim": "In diploids undergoing mitotic growth, non-reciprocal exchanges between homologous chromosomes give rise to LOH primarily caused by gene conversions, crossing over, and break-induced replication (BIR) due to DSB repair.",
+      "claim_type": "EXPLICIT",
+      "source": "In diploids undergoing mitotic growth, non-reciprocal exchanges between homologous chromosomes give rise to LOH. It is primarily caused by gene conversions, crossing over, and break-induced replication (BIR) due to DSB repair (P\u00e2ques and Haber, 1999; Symington et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the mechanisms of LOH in mitotic growth and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "a96b8cef-2355-4441-8fb3-ed878474dd0b",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C94",
+      "claim": "I-LOH events are mostly caused by gene conversions involving short exchanges, ranging up to 10 kb in size.",
+      "claim_type": "EXPLICIT",
+      "source": "The I-LOH events are mostly caused by gene conversions involving short exchanges, ranging up to 10 kb in size (Yim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the mechanism and size of I-LOH events and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "e8d68f85-6e26-44e6-ba8e-1e85ebe5b4ad",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C95",
+      "claim": "T-LOH events result from mitotic CO and BIR mechanisms frequently spanning large chromosomal regions greater than 100 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, T-LOH events result from mitotic CO and BIR mechanisms frequently spanning large chromosomal regions greater than 100 kb (Llorente et al., 2008; Malkova and Ira, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the mechanism and size of T-LOH events and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "ae671079-3024-4696-8173-654fa13d9022",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C96",
+      "claim": "BIR is a homologous recombination (HR) pathway that repairs only one-ended DSBs and is suppressed at two-ended DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "BIR is a homologous recombination (HR) pathway that repairs only one-ended DSBs and suppressed at two-ended DSBs (Pham et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the BIR pathway and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "b00adbf4-9f12-4136-ae83-eb8aa4acb914",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C97",
+      "claim": "HR pathways promote genome instability through an increased load of mutagenesis and chromosomal rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their high fidelity relative to other repair pathways, recent findings have demonstrated that HR pathways promote genome instability through an increased load of mutagenesis and chromosomal rearrangements (Kumar et al., 2015; Magwene et al., 2011; Ruderfer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the role of HR pathways in genome instability and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "85597b45-fb39-4ec7-ac35-a8314392fdb9",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C98",
+      "claim": "I-LOH events are observed at higher frequencies in gastric and lung cancers while T-LOH events are prevalent in retinoblastomas and colorectal cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Both I-LOH and T-LOH events have been implicated in cancers, with I-LOH events being observed at higher frequencies in gastric and lung cancers while T-LOH events being prevalent in retinoblastomas and colorectal cancers (Nichols et al., 2020; Sui et al., 2020; Kumar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the prevalence of different LOH types in different cancers and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "4c36720f-9839-47e8-bd83-5e1249bcc5bb",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C99",
+      "claim": "Whole-genome sequencing of 1011 S. cerevisiae strains showed a high LOH level with 25 regions covering approximately 50% of the genome on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-genome sequencing of 1011 S. cerevisiae strains coming from various ecological and geographical origins strongly supported the idea of LOH-mediated phenotypic diversification (Peter et al., 2018). S. cerevisiae is highly inbred and characterized by irregular sexual cycles (Ruderfer et al., 2006). Meiosis and consequently outcrossing events are infrequent, and the clonal expansion is punctuated by a broad LOH accumulation. As a consequence, a high LOH level with 25 regions covering approximately 50% of the genome on average was observed in this large panel (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes LOH levels in a large population study and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "8547fa58-bc81-4558-83b9-d72beab02562",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C100",
+      "claim": "The degree of heterozygosity is diverse and can be extensive in some S. cerevisiae subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the degree of heterozygosity is also diverse and can be extensive in some subpopulations (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes heterozygosity variation in subpopulations and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "02718496-9cc7-4908-8715-9dd679a3a097",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C101",
+      "claim": "The variable dynamics of LOH accumulation across distinct genetic backgrounds might lead to rapid differential genome evolution during vegetative growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results highlight that the variable dynamics of the LOH accumulation across distinct genetic backgrounds might lead to rapid differential genome evolution during vegetative growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly concludes about the impact of variable LOH dynamics on genome evolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "f27aafc2-bc05-4773-bb67-6708dd1eefcc",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C102",
+      "claim": "The LOH rate is always much higher than the mutation rate across the lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if variable, the LOH rate is always much higher than the mutation rate, which is very conserved across the lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares LOH and mutation rates across lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "503449fe-d43a-4b65-ad92-3b429c8e109e",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C103",
+      "claim": "The mutation rate is very conserved across the lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if variable, the LOH rate is always much higher than the mutation rate, which is very conserved across the lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the conservation of mutation rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "0f9851d1-5e4c-4293-abe8-5f14b41ab5b4",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C104",
+      "claim": "Gain in spore fertility appears to be associated with decline in vegetative growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain in spore fertility appears to be associated with decline in vegetative growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the association between spore fertility and vegetative growth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "919e20b5-6a00-4943-b543-1e59ad21c656",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C105",
+      "claim": "Life history trade-offs involving asexual and sexual reproduction under nutrient stress were found to be correlated in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Life history trade-offs involving asexual and sexual reproduction under nutrient stress were found to be correlated in S. cerevisiae (Magwene et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes life history trade-offs and cites supporting literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "34cf3ae5-7afd-40be-97e9-0c6aee6d458c",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "claim_id": "C106",
+      "claim": "Relatively higher mutation rates may be responsible for the higher decrease in growth rates in nearly homozygous lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively higher mutation rates may be responsible for the higher decrease in growth rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly speculates about the relationship between mutation rates and growth rates.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "94d50a6d-d89c-4d9f-ac48-b2de85a8c77b",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study generated 169 heterozygous diploid S. cerevisiae mutation accumulation lines across nine genetic backgrounds with heterozygosity levels ranging from 0.1% to 1%, propagated for at least 1769 divisions with an average of 24.2 divisions per bottleneck. Growth rates remained stable throughout the experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C75-C77 provide comprehensive experimental design details including the number of lines, genetic backgrounds, heterozygosity levels, and division counts. The growth rate measurements (C76-C77) validate the division estimates and confirm no significant fitness decline during propagation, supporting the experimental setup's validity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "74185591-fa5f-451d-bfba-b0b1011b04f5",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A total of 22,828 LOH events were detected across the 169 MA lines with an average size of 14.1 kb. The size distribution is bimodal, with 95% of events averaging 1.6 kb and 5% averaging 269.2 kb.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 provide consistent quantitative data on LOH event counts and size distributions. The bimodal distribution (C5) is supported by Figure 1A and the specific percentages and sizes (C6-C7) are explicitly stated with clear statistical characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "ea18a74f-f2b6-42b8-a433-75602bbb296a",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Interstitial LOH (I-LOH) events represent 86.1% of all LOH events (n=19,660) while terminal LOH (T-LOH) events represent 13.9% (n=3,168). T-LOH events are significantly larger than I-LOH events (55.3 kb vs 7.5 kb). LOH events are located further from centromeres (272 kb) than telomeres (230 kb).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 and C79 provide comprehensive characterization of LOH event types with explicit counts, percentages, and statistical significance (p<10\u207b\u00b3). The spatial distribution data (C79) adds mechanistic insight. All claims are supported by explicit data and figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "a4e0fc35-3d9d-4632-a6dc-a5e532646da7",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "On average, 15.9% of the genome was under LOH across the 169 MA lines, ranging from 0.01% to 98.6%. Fourteen lines exhibited more than 90% genome under LOH (88-98%) and are designated as nearly homozygous lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 and C67 provide consistent quantitative data on genome-wide LOH coverage. The identification of nearly homozygous lines as a distinct category is well-supported by the extreme values and is visualized in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "c58c68a1-2c81-4ef1-8b58-5344a022f521",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LOH rates are 7.1\u00d710\u207b\u2075 per site per division and 6.5\u00d710\u207b\u00b2 events per division on average. I-LOH rates (3.1\u00d710\u207b\u2075 per site, 5.6\u00d710\u207b\u00b2 events per division) and T-LOH rates (4.2\u00d710\u207b\u2075 per site, 9.2\u00d710\u207b\u00b3 events per division) were calculated separately. LOH rates are five orders of magnitude higher than mutation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19, C53, C78, and C102 provide comprehensive rate calculations for different LOH types. The comparison to mutation rates (C53) is explicitly stated and demonstrates the biological significance of LOH events. All rates are calculated using appropriate denominators (divisions and genome size).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "a5554783-e498-4e49-a95e-c4a6ae151c81",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LOH event accumulation varies considerably across genetic backgrounds (10.8 to 413.5 events, 38.2-fold difference). I-LOH events are significantly in excess in most backgrounds except H1 and H9. A positive correlation exists between heterozygosity level and T-LOH events but not for I-LOH or total LOH events. I-LOH frequency correlates with chromosome size in most backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 and C80 demonstrate significant background-dependent variation in LOH accumulation with explicit statistical testing. The correlation between heterozygosity and T-LOH events (C22) is shown in Figure 2C with Pearson correlation (r=0.69, p<2\u00d710\u207b\u00b9\u2076), while the absence of correlation for I-LOH (C23) is also explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "c299570b-937a-43b4-9264-81cb498b5e74",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The proportion of genome under LOH varies from 3.6% to 16.6% across backgrounds (excluding nearly homozygous lines), with H3 showing the most (16.6%) and H8 the least (3.8%). The H9 background was enriched in nearly homozygous lines (n=5). Biased fixation toward one parent was observed only in H4 and H5 backgrounds, where >80% of LOH favored one parent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 provide detailed background-specific LOH patterns with statistical testing (binomial test for parental bias). The identification of biased fixation in H4 and H5 (C27-C28) is supported by explicit p-values and quantification, though the total genome under LOH in these backgrounds was relatively low.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "b8fdd74d-de08-4252-85a2-ac44bb3af903",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LOH site rates vary between 2.4\u00d710\u207b\u2075 and 1.1\u00d710\u207b\u2074 per site per division with low variance, while LOH event rates range from 5.6\u00d710\u207b\u00b3 to 2.8\u00d710\u207b\u00b9 events per division and are much more variable across the nine hybrids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 distinguish between site rates and event rates, showing that variability is primarily in event rates rather than site rates. This distinction is important for understanding the mechanistic basis of LOH variation across backgrounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "db5053dd-b25e-4d02-a2b2-312be87e1127",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spore viability in ancestral diploids varies between 38% and 92%, with H1, H2, H3, H6, H7 showing high fertility (~85%) and H4, H5, H8, H9 showing low fertility (~50%). Lines with low spore fertility accumulated 7.6-fold more LOH events than high fertility lines, with significantly shorter event sizes (7.4 kb vs 45.8 kb). Low fertility lines showed seven-fold excess of I-LOH over T-LOH compared to three-fold in high fertility lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 and C81 establish a clear relationship between ancestral spore fertility and LOH accumulation patterns. The 7.6-fold difference (C34) and size differences (C35, C38) are explicitly stated with statistical support. The mechanistic interpretation linking short, frequent I-LOH events to low fertility is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "520ca14f-ae67-447e-a687-544143307011",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MA lines derived from low spore fertility ancestors showed significant improvement in spore viability, with 42 out of 77 lines showing statistically significant increases up to 23%. High fertility lines maintained their ancestral spore viability. Nearly homozygous lines from all backgrounds fully restored spore fertility to ~90%. Recovery can occur either incrementally through frequent short LOH events or completely through rapid whole-genome homozygotization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43, C70, and C82 demonstrate spore fertility recovery with explicit quantification and statistical testing. The two proposed mechanisms (C82) are supported by the data showing gradual improvement in some lines and complete restoration in nearly homozygous lines. However, the mechanistic basis remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "604e2e86-fd2c-4635-a2c6-ea41362f95ab",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A total of 912 SNMs and 14 MNMs were identified in the 169 MA lines, with 83 SNMs and 2 MNMs being homozygous. Nearly homozygous lines contained 101 SNMs and 2 MNMs. Seventy percent of mutations occurred in genic regions with a significant excess of non-synonymous over synonymous mutations. Transitions were more frequent than transversions (Ts/Tv ratio of 1.35).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C50 provide mutation counts and distributions. However, C49 states a \"significant excess of non-synonymous mutations\" but cites \"p>0.05\" which indicates no significance. This is a critical error that undermines the claim. The other mutation characterizations (C44-C48, C50) are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "4600159f-ec02-4e57-a4e6-5e1ac9021511",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The SNM rate is 1.1\u00d710\u207b\u00b9\u2070 per site per division and MNM rate is 1.98\u00d710\u207b\u00b9\u00b2 per site per division on average, similar to previous estimates. SNM rates vary from 0.65\u00d710\u207b\u00b9\u2070 to 1.56\u00d710\u207b\u00b9\u2070 (2.4-fold difference) but are not significantly different across backgrounds. Nearly homozygous lines showed slightly higher rates (1.92\u00d710\u207b\u00b9\u2070). No correlation was observed between mutation rates and heterozygosity levels, GC content, or LOH rates. Mutation rates are very conserved across lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C58-C61, and C103 demonstrate that mutation rates are relatively constant across genetic backgrounds despite large variation in LOH rates. The comparison to previous studies (C51-C52) validates the measurements. The lack of correlation with other genomic features (C61) is explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "a7a8ce44-26a0-466b-988a-0556c9fdb3e2",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The proportion of SNMs in the six categories of transitions and transversions varies across backgrounds (p<10\u207b\u2074). The Ts/Tv ratio is always greater than 0.5 and was significantly increased to 1.86 in H3 lines. A GC>AT/AT>GC mutational bias was found in all backgrounds except H8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 characterize mutation spectrum variation across backgrounds with appropriate statistical testing. The identification of H3 as having elevated Ts/Tv ratio and H8 as lacking the typical GC bias provides insight into background-specific mutational processes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "5af81ff5-61a9-4b74-8ec7-d8650f223941",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Fifty-one aneuploidy events were detected (43 gains, 8 losses), with no events in H2, H5, and H7 lines. Ancestral trisomies were observed in H3 (chromosome IX) and H9 (chromosomes IX and XVI). The overall aneuploidy rate is 1\u00d710\u207b\u2074 per division, similar to previous studies. LOH and SNM rates do not differ between euploid and aneuploid lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 provide comprehensive aneuploidy characterization with appropriate rate calculations and comparison to previous work. The lack of effect on LOH and SNM rates (C66) is explicitly tested with Mann-Whitney U test (p>0.05).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "bed644b3-2138-437b-94b3-7b855b7f5a06",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Nearly homozygous lines show a distinct LOH spectrum with low event counts, similar frequencies of I-LOH and T-LOH, and significantly larger average event size (185.1 kb vs ~7 kb). These lines showed significantly greater decrease in growth rates and 1.8-fold higher SNM rates. The frequency of homozygous mutations was 3.2 times higher, but most mutations were heterozygous, suggesting accumulation after homozygotization. Gain in spore fertility appears associated with decline in vegetative growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C71-C74, C104, and C106 characterize nearly homozygous lines as a distinct category with different LOH patterns, growth rates, and mutation accumulation. The inference that mutations accumulated after homozygotization (C74) is reasonable given the heterozygous nature of most mutations. The growth-fertility tradeoff (C104) is supported by statistical testing (p<10\u207b\u00b9\u2070).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "510b96f0-cb38-4f8e-8c69-40650ae75af3",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "LOH events result from mitotic recombination mechanisms including gene conversions, crossing over, and break-induced replication. I-LOH events are caused by gene conversions (up to 10 kb), while T-LOH events result from mitotic CO and BIR (>100 kb). LOH events are important for genome evolution, adaptation, and disease, including cancer development. Population studies show high LOH levels in S. cerevisiae with variable heterozygosity across subpopulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C100 provide extensive background knowledge and context from the literature, all appropriately cited. These claims establish the biological significance of LOH events and the mechanistic basis for the observed patterns. The citations support the knowledge claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "56b26c18-b6c8-4d49-8ccb-2f6bdabcef11",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The variable dynamics of LOH accumulation across distinct genetic backgrounds might lead to rapid differential genome evolution during vegetative growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C101 represents the main conclusion of the study, synthesizing the observed variation in LOH rates, spectra, and patterns across genetic backgrounds. This conclusion is well-supported by the comprehensive data showing 38.2-fold variation in LOH accumulation and background-specific patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    },
+    {
+      "id": "a15a492c-d9e7-4661-882f-1370fd31db1d",
+      "content_id": "c913f420-65fa-42e7-ad36-96a60266a347",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Life history trade-offs involving asexual and sexual reproduction under nutrient stress were found to be correlated in S. cerevisiae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 cites prior work (Magwene et al., 2011) to support the interpretation of the observed growth-fertility tradeoff. This is appropriately used as supporting context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:46.480332Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "62a0096e-d0ec-4503-bb3f-897ea298e18c",
+      "result_id": "94d50a6d-d89c-4d9f-ac48-b2de85a8c77b"
+    },
+    {
+      "claim_id": "e17d1f5a-a6be-485b-ab6b-70f05fef8545",
+      "result_id": "94d50a6d-d89c-4d9f-ac48-b2de85a8c77b"
+    },
+    {
+      "claim_id": "de76c2a3-70ec-4365-aebc-9b111736ffec",
+      "result_id": "94d50a6d-d89c-4d9f-ac48-b2de85a8c77b"
+    },
+    {
+      "claim_id": "e899a752-2521-4671-9af1-6ef68f64fa76",
+      "result_id": "94d50a6d-d89c-4d9f-ac48-b2de85a8c77b"
+    },
+    {
+      "claim_id": "d8ae639e-dc03-4a9a-ae34-5b5aeeb37ca3",
+      "result_id": "94d50a6d-d89c-4d9f-ac48-b2de85a8c77b"
+    },
+    {
+      "claim_id": "3a03c0b9-2281-48e5-a0b0-0ea6a6983412",
+      "result_id": "74185591-fa5f-451d-bfba-b0b1011b04f5"
+    },
+    {
+      "claim_id": "b0f7c1d7-e379-460f-98eb-65c9c63de891",
+      "result_id": "74185591-fa5f-451d-bfba-b0b1011b04f5"
+    },
+    {
+      "claim_id": "516225e4-29f3-4297-bab7-ba4b5c471fce",
+      "result_id": "74185591-fa5f-451d-bfba-b0b1011b04f5"
+    },
+    {
+      "claim_id": "56efac91-a88c-4482-bf6e-09ef6c242b6a",
+      "result_id": "74185591-fa5f-451d-bfba-b0b1011b04f5"
+    },
+    {
+      "claim_id": "21497e2c-ed98-4bad-8cfb-00321adf0595",
+      "result_id": "74185591-fa5f-451d-bfba-b0b1011b04f5"
+    },
+    {
+      "claim_id": "b0d73626-023d-48e3-9481-5bfc5e79cbdc",
+      "result_id": "ea18a74f-f2b6-42b8-a433-75602bbb296a"
+    },
+    {
+      "claim_id": "981ffb13-7520-4b21-b000-a28155018f65",
+      "result_id": "ea18a74f-f2b6-42b8-a433-75602bbb296a"
+    },
+    {
+      "claim_id": "9d99b1e8-b380-4cf2-bba1-7d3664fc3179",
+      "result_id": "ea18a74f-f2b6-42b8-a433-75602bbb296a"
+    },
+    {
+      "claim_id": "342d16da-e3e9-4a76-aadb-75e720a966d6",
+      "result_id": "ea18a74f-f2b6-42b8-a433-75602bbb296a"
+    },
+    {
+      "claim_id": "6c807c81-e36f-4936-a2f7-d0332ad7a295",
+      "result_id": "a4e0fc35-3d9d-4632-a6dc-a5e532646da7"
+    },
+    {
+      "claim_id": "b84499c3-b004-4d2c-90e1-01ce19da4d46",
+      "result_id": "a4e0fc35-3d9d-4632-a6dc-a5e532646da7"
+    },
+    {
+      "claim_id": "a3fead18-05c0-43da-89e0-0d08404684c0",
+      "result_id": "a4e0fc35-3d9d-4632-a6dc-a5e532646da7"
+    },
+    {
+      "claim_id": "68eff9c9-0f3a-447b-9c37-2b51a5a1364c",
+      "result_id": "a4e0fc35-3d9d-4632-a6dc-a5e532646da7"
+    },
+    {
+      "claim_id": "c201fe51-1bff-4b4a-b75a-8e601a1c1200",
+      "result_id": "c58c68a1-2c81-4ef1-8b58-5344a022f521"
+    },
+    {
+      "claim_id": "04ee5610-40c4-4ef4-b291-af5869c69ef1",
+      "result_id": "c58c68a1-2c81-4ef1-8b58-5344a022f521"
+    },
+    {
+      "claim_id": "7bd0dd18-85a1-4ae3-8474-3012ba20129d",
+      "result_id": "c58c68a1-2c81-4ef1-8b58-5344a022f521"
+    },
+    {
+      "claim_id": "bb0a63bf-7b27-4848-a127-735a7c9890da",
+      "result_id": "c58c68a1-2c81-4ef1-8b58-5344a022f521"
+    },
+    {
+      "claim_id": "59c57959-371e-42c7-b591-debb9ab14c9b",
+      "result_id": "c58c68a1-2c81-4ef1-8b58-5344a022f521"
+    },
+    {
+      "claim_id": "56ae685b-086b-4f3f-bf70-e1ad9eaf18d4",
+      "result_id": "c58c68a1-2c81-4ef1-8b58-5344a022f521"
+    },
+    {
+      "claim_id": "206075b2-7d76-484b-97ff-0f9cfad5db2e",
+      "result_id": "c58c68a1-2c81-4ef1-8b58-5344a022f521"
+    },
+    {
+      "claim_id": "6bebdc60-dd35-4729-86a4-27e8117a106f",
+      "result_id": "c58c68a1-2c81-4ef1-8b58-5344a022f521"
+    },
+    {
+      "claim_id": "f27aafc2-bc05-4773-bb67-6708dd1eefcc",
+      "result_id": "c58c68a1-2c81-4ef1-8b58-5344a022f521"
+    },
+    {
+      "claim_id": "e6b992c2-de54-4996-bd01-78d6d57df80a",
+      "result_id": "a5554783-e498-4e49-a95e-c4a6ae151c81"
+    },
+    {
+      "claim_id": "729bd172-497e-4431-b8c3-43bccd79b583",
+      "result_id": "a5554783-e498-4e49-a95e-c4a6ae151c81"
+    },
+    {
+      "claim_id": "4e40d048-f532-4591-a511-964e81f7466e",
+      "result_id": "a5554783-e498-4e49-a95e-c4a6ae151c81"
+    },
+    {
+      "claim_id": "81b875da-9ef5-44e7-bf27-dc0e85c96031",
+      "result_id": "a5554783-e498-4e49-a95e-c4a6ae151c81"
+    },
+    {
+      "claim_id": "173f9351-3b16-496e-a193-9f4293dcae5f",
+      "result_id": "a5554783-e498-4e49-a95e-c4a6ae151c81"
+    },
+    {
+      "claim_id": "1844cc4d-2781-4c34-a312-6e0624f56fdf",
+      "result_id": "c299570b-937a-43b4-9264-81cb498b5e74"
+    },
+    {
+      "claim_id": "2d3a14cd-d652-43ff-9096-d19c12157db3",
+      "result_id": "c299570b-937a-43b4-9264-81cb498b5e74"
+    },
+    {
+      "claim_id": "9ae57067-8e29-4be1-bed0-9a9d2f30ae74",
+      "result_id": "c299570b-937a-43b4-9264-81cb498b5e74"
+    },
+    {
+      "claim_id": "d21168ca-466a-4531-818e-993cc82b8d07",
+      "result_id": "c299570b-937a-43b4-9264-81cb498b5e74"
+    },
+    {
+      "claim_id": "2f847e76-d4af-448f-9ba0-125073b59d4e",
+      "result_id": "c299570b-937a-43b4-9264-81cb498b5e74"
+    },
+    {
+      "claim_id": "eede4698-e635-4f5c-8b67-5dee1f66fa5a",
+      "result_id": "b8fdd74d-de08-4252-85a2-ac44bb3af903"
+    },
+    {
+      "claim_id": "cc11de5a-702f-48e7-996d-40eed5d65cbc",
+      "result_id": "b8fdd74d-de08-4252-85a2-ac44bb3af903"
+    },
+    {
+      "claim_id": "9e3a7907-2287-4510-a1ec-8e130a78cda1",
+      "result_id": "db5053dd-b25e-4d02-a2b2-312be87e1127"
+    },
+    {
+      "claim_id": "29306896-564b-4382-97f2-818eefef323d",
+      "result_id": "db5053dd-b25e-4d02-a2b2-312be87e1127"
+    },
+    {
+      "claim_id": "9682d999-1478-42a0-a2f2-89053ec554b3",
+      "result_id": "db5053dd-b25e-4d02-a2b2-312be87e1127"
+    },
+    {
+      "claim_id": "4e35eed8-adc0-4bc9-b48d-07160ea90417",
+      "result_id": "db5053dd-b25e-4d02-a2b2-312be87e1127"
+    },
+    {
+      "claim_id": "401923d7-8a84-42c7-9d0a-0adc9489b5a1",
+      "result_id": "db5053dd-b25e-4d02-a2b2-312be87e1127"
+    },
+    {
+      "claim_id": "df2859cf-adc4-4f40-8694-5cf44c05b9e2",
+      "result_id": "db5053dd-b25e-4d02-a2b2-312be87e1127"
+    },
+    {
+      "claim_id": "87cb262a-fbd6-4baa-85e4-167e3828c027",
+      "result_id": "db5053dd-b25e-4d02-a2b2-312be87e1127"
+    },
+    {
+      "claim_id": "d6a17bad-fe4f-47bc-99f8-90ec550fb49e",
+      "result_id": "db5053dd-b25e-4d02-a2b2-312be87e1127"
+    },
+    {
+      "claim_id": "f09b0043-dfe4-4a71-a08e-07768de6023a",
+      "result_id": "db5053dd-b25e-4d02-a2b2-312be87e1127"
+    },
+    {
+      "claim_id": "60823107-9f18-42d0-ac28-959354c31969",
+      "result_id": "520ca14f-ae67-447e-a687-544143307011"
+    },
+    {
+      "claim_id": "e18df8f7-a98d-45b3-a939-89a7527da9f4",
+      "result_id": "520ca14f-ae67-447e-a687-544143307011"
+    },
+    {
+      "claim_id": "ca738313-e350-46fa-b013-f682b0dbdb5c",
+      "result_id": "520ca14f-ae67-447e-a687-544143307011"
+    },
+    {
+      "claim_id": "52738f04-19fe-4d24-a06a-cc157b0c42b9",
+      "result_id": "520ca14f-ae67-447e-a687-544143307011"
+    },
+    {
+      "claim_id": "38b7e9c9-2061-483d-896c-02d6f2a7c563",
+      "result_id": "520ca14f-ae67-447e-a687-544143307011"
+    },
+    {
+      "claim_id": "2294fff9-9199-481f-9588-9e7baa3ad1be",
+      "result_id": "520ca14f-ae67-447e-a687-544143307011"
+    },
+    {
+      "claim_id": "f998203a-f30c-44d8-980a-ebd6354150be",
+      "result_id": "520ca14f-ae67-447e-a687-544143307011"
+    },
+    {
+      "claim_id": "1a31a943-d906-47e0-a746-f4b9295d5442",
+      "result_id": "604e2e86-fd2c-4635-a2c6-ea41362f95ab"
+    },
+    {
+      "claim_id": "20fb6440-65bf-4c2f-b6f6-5f4622824091",
+      "result_id": "604e2e86-fd2c-4635-a2c6-ea41362f95ab"
+    },
+    {
+      "claim_id": "8805a818-ee23-405b-9dc2-0a904518557c",
+      "result_id": "604e2e86-fd2c-4635-a2c6-ea41362f95ab"
+    },
+    {
+      "claim_id": "10a6ac97-f901-4163-bfc9-0f31f71df622",
+      "result_id": "604e2e86-fd2c-4635-a2c6-ea41362f95ab"
+    },
+    {
+      "claim_id": "0dff3243-4277-4ddf-9f51-4c835dc792d7",
+      "result_id": "604e2e86-fd2c-4635-a2c6-ea41362f95ab"
+    },
+    {
+      "claim_id": "adb9aeb0-06dd-4139-bae7-eb4a7aea2f48",
+      "result_id": "604e2e86-fd2c-4635-a2c6-ea41362f95ab"
+    },
+    {
+      "claim_id": "49613425-ca43-46f2-b37e-0c2ba562fc3b",
+      "result_id": "604e2e86-fd2c-4635-a2c6-ea41362f95ab"
+    },
+    {
+      "claim_id": "75988596-f0b9-4813-9c5c-5c01e69fa5c0",
+      "result_id": "4600159f-ec02-4e57-a4e6-5e1ac9021511"
+    },
+    {
+      "claim_id": "76ee42ea-5d0b-4fdc-b166-71d394d1b4f5",
+      "result_id": "4600159f-ec02-4e57-a4e6-5e1ac9021511"
+    },
+    {
+      "claim_id": "00f9d266-9327-4dda-90e9-4a0a6dcd2bce",
+      "result_id": "4600159f-ec02-4e57-a4e6-5e1ac9021511"
+    },
+    {
+      "claim_id": "b1bdb0b2-f17a-4652-be91-b112c86511dc",
+      "result_id": "4600159f-ec02-4e57-a4e6-5e1ac9021511"
+    },
+    {
+      "claim_id": "bbfaef6b-99ca-4178-961f-017d9adc9a61",
+      "result_id": "4600159f-ec02-4e57-a4e6-5e1ac9021511"
+    },
+    {
+      "claim_id": "cfc96069-9de7-4d6d-9a0b-761c91c4413b",
+      "result_id": "4600159f-ec02-4e57-a4e6-5e1ac9021511"
+    },
+    {
+      "claim_id": "503449fe-d43a-4b65-ad92-3b429c8e109e",
+      "result_id": "4600159f-ec02-4e57-a4e6-5e1ac9021511"
+    },
+    {
+      "claim_id": "ade88fe3-9565-4589-a460-bb17ae0c0664",
+      "result_id": "a7a8ce44-26a0-466b-988a-0556c9fdb3e2"
+    },
+    {
+      "claim_id": "72c6350f-2137-4501-8315-5a15cf899970",
+      "result_id": "a7a8ce44-26a0-466b-988a-0556c9fdb3e2"
+    },
+    {
+      "claim_id": "001da78b-07f4-4267-8ae5-0465300d40e1",
+      "result_id": "a7a8ce44-26a0-466b-988a-0556c9fdb3e2"
+    },
+    {
+      "claim_id": "e50b6143-0eb3-402c-b766-ce582fc24125",
+      "result_id": "a7a8ce44-26a0-466b-988a-0556c9fdb3e2"
+    },
+    {
+      "claim_id": "3797385e-506c-4a13-84be-9ecefe2a9f47",
+      "result_id": "5af81ff5-61a9-4b74-8ec7-d8650f223941"
+    },
+    {
+      "claim_id": "8f02cea1-5b9f-4aa9-8352-a93b2bca3553",
+      "result_id": "5af81ff5-61a9-4b74-8ec7-d8650f223941"
+    },
+    {
+      "claim_id": "8e56e2f3-431d-4ae7-abbb-18f93441172e",
+      "result_id": "5af81ff5-61a9-4b74-8ec7-d8650f223941"
+    },
+    {
+      "claim_id": "58f945dc-1cd3-4bd4-a749-e3285b97e082",
+      "result_id": "5af81ff5-61a9-4b74-8ec7-d8650f223941"
+    },
+    {
+      "claim_id": "e68ba79d-2bd4-4fdf-b1b5-c16e2bb54678",
+      "result_id": "5af81ff5-61a9-4b74-8ec7-d8650f223941"
+    },
+    {
+      "claim_id": "bc752dea-f995-4fb4-a2d7-a57874dce57c",
+      "result_id": "bed644b3-2138-437b-94b3-7b855b7f5a06"
+    },
+    {
+      "claim_id": "17468f62-552b-45a7-a511-dfe850e5af5d",
+      "result_id": "bed644b3-2138-437b-94b3-7b855b7f5a06"
+    },
+    {
+      "claim_id": "8b9fe8aa-56c7-4ba0-b3d0-61e68639639d",
+      "result_id": "bed644b3-2138-437b-94b3-7b855b7f5a06"
+    },
+    {
+      "claim_id": "b383a302-ea11-4626-bbb1-56fa609f9a51",
+      "result_id": "bed644b3-2138-437b-94b3-7b855b7f5a06"
+    },
+    {
+      "claim_id": "0699709d-a39c-47f8-8dcc-921ad77920b8",
+      "result_id": "bed644b3-2138-437b-94b3-7b855b7f5a06"
+    },
+    {
+      "claim_id": "0c85f48c-4de4-4b97-b2e7-2ab739300357",
+      "result_id": "bed644b3-2138-437b-94b3-7b855b7f5a06"
+    },
+    {
+      "claim_id": "0f9851d1-5e4c-4293-abe8-5f14b41ab5b4",
+      "result_id": "bed644b3-2138-437b-94b3-7b855b7f5a06"
+    },
+    {
+      "claim_id": "34cf3ae5-7afd-40be-97e9-0c6aee6d458c",
+      "result_id": "bed644b3-2138-437b-94b3-7b855b7f5a06"
+    },
+    {
+      "claim_id": "309d3c75-5e89-4670-bffa-774a89e850eb",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "b820c316-6989-432b-b45a-56d692d2b7fd",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "167a561c-5ea0-46dc-a631-078db3cf567f",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "92f438ab-52a5-4f4c-bae6-f0edf4e9a682",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "3c50076a-e5cf-4303-9011-139a8369e639",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "c086b9fd-9119-4d52-9d74-af36850cab0c",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "d73ce0da-b289-4597-8a96-3c88d42cd5fb",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "09f08ab8-6c0c-4e67-80c1-161c4e61cb47",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "c9e47047-4ebc-462d-bb99-122205cd5688",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "859f4a05-39bb-4c29-aba0-6268feebeec5",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "085c8d37-88dc-440a-817c-3875329f593d",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "a96b8cef-2355-4441-8fb3-ed878474dd0b",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "e8d68f85-6e26-44e6-ba8e-1e85ebe5b4ad",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "ae671079-3024-4696-8173-654fa13d9022",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "b00adbf4-9f12-4136-ae83-eb8aa4acb914",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "85597b45-fb39-4ec7-ac35-a8314392fdb9",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "4c36720f-9839-47e8-bd83-5e1249bcc5bb",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "8547fa58-bc81-4558-83b9-d72beab02562",
+      "result_id": "510b96f0-cb38-4f8e-8c69-40650ae75af3"
+    },
+    {
+      "claim_id": "02718496-9cc7-4908-8715-9dd679a3a097",
+      "result_id": "56b26c18-b6c8-4d49-8ccb-2f6bdabcef11"
+    },
+    {
+      "claim_id": "919e20b5-6a00-4943-b543-1e59ad21c656",
+      "result_id": "a15a492c-d9e7-4661-882f-1370fd31db1d"
+    }
+  ],
+  "comparisons": []
+}

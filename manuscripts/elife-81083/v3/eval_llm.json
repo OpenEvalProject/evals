@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript provides background on prostate cancer epidemiology, risk factors, and current treatment approaches. Prostate cancer accounts for 20% of newly diagnosed cancers and is the second leading cause of cancer-related deaths in men in the United States. Androgen receptor (AR) is the primary oncogenic driver, and AR-targeting therapies are standard of care for metastatic disease, though patients develop resistance over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by appropriate citations to established literature (Siegel et al., 2019; Gann, 2002; Heinlein and Chang, 2004; Huggins and Hodges, 1941; Polotti et al., 2017; Watson et al., 2015; Bubley and Balk, 2017). These are standard background claims establishing the clinical context for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript provides background on the integrated stress response (ISR) pathway, describing how phosphorylation of eIF2\u03b1 by four distinct kinases (GCN2, PERK, PKR, HRI) responds to different stress conditions and leads to translational reprogramming including induction of ATF4. ATF4 regulates genes involved in amino acid metabolism, proteostasis, and oxidative stress defense, and its inhibition impedes MYC-driven cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 are well-supported by appropriate citations to established literature on the ISR pathway (Baird and Wek, 2012; Tian et al., 2021; Dong et al., 2000; Walter and Ron, 2011; Chukwurah et al., 2021; Fessler et al., 2020; Harding et al., 1999; Staschke and Wek, 2019; Tameire et al., 2019; Nguyen et al., 2018). These background claims establish the mechanistic framework for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "GCN2 is specifically required for proliferation of multiple prostate cancer cell lines (LNCaP, LAPC-4, C4-2B, MR49F, 22Rv1, PC-3) both androgen-sensitive and castration-resistant. Depletion of GCN2 by siRNA or CRISPR/Cas9 deletion, or pharmacological inhibition with GCN2iB, significantly reduced cell proliferation and lowered p-eIF2\u03b1 and ATF4 levels. Depletion of other eIF2\u03b1 kinases (PKR, HRI, PERK) had no effect on p-eIF2\u03b1 or ATF4 levels. Importantly, GCN2 is not active in non-cancerous BPH-1 cells, and loss of GCN2 did not affect their growth. ATF4 depletion also reduced growth in multiple PCa cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C26 are well-supported by experimental data shown in Figure 1 and supplementary figures, including growth curves, immunoblots, and rescue experiments. The data demonstrate specificity for GCN2 among the eIF2\u03b1 kinases, reproducibility across multiple cell lines with different AR status, and cancer cell selectivity (no effect in BPH-1 cells). Statistical significance is reported (p \u2264 0.05 to p \u2264 0.0001) with appropriate replicates (N=5). The rescue experiment with GCN2 reintroduction (C20) provides strong evidence for specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C91"
+    ],
+    "result": "GCN2 is active in human prostate cancer patient samples. Enhanced GCN2 activity, measured by p-GCN2-T899 staining, was observed in malignant prostate tumor samples (N=88) compared to normal/non-malignant tissues (N=33) in tumor microarrays, and in prostate tumors from patient core needle biopsies compared to adjacent non-malignant tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C91 are supported by immunohistochemistry data shown in Figure 1F and Figure 1\u2014figure supplement 6. The tumor microarray analysis includes adequate sample sizes (N=33 normal, N=88 malignant) and shows statistically significant differences (p \u2264 0.05). The core needle biopsy data provide additional validation with paired malignant/non-malignant tissue from the same patients. This establishes clinical relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C86"
+    ],
+    "result": "GCN2 regulates expression of solute-carrier (SLC) genes involved in amino acid transport. RNA-seq analysis of LNCaP cells treated with GCN2iB for 24 hr showed 374 transcripts decreased \u2265twofold (fdr \u22640.05), with gene groups linked to amino acid deprivation and transport significantly affected. Of 61 known SLC genes involved in amino acid transport, 27 were measurably expressed in LNCaP cells, and 20 were significantly decreased following GCN2iB treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C86 are supported by RNA-seq data shown in Figure 2A-C with appropriate statistical thresholds (fdr \u22640.05, \u2265twofold change). GSEA analysis confirms enrichment of amino acid-related pathways. The data are deposited in GEO (GSE196252) supporting reproducibility. The claim that GCN2 regulates \"over 60\" SLC genes (C86) appears to be an overstatement\u2014the data show 20 of 27 expressed amino acid transporter SLC genes were decreased, not 60+ total SLC genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "GCN2 inhibition reduces protein levels of multiple amino acid transporters. Treatment with GCN2iB lowered protein levels of xCT (SLC7A11), CAT-1 (SLC7A1), ASCT1 (SLC1A4), ASCT2 (SLC1A5), LAT-1 (SLC7A5), and 4F2 (SLC3A2) in LNCaP, C4-2B, 22Rv1, and PC-3 cells. Deletion of GCN2 in 22Rv1 and PC-3 cells similarly diminished these transporter protein levels, and reintroduction of GCN2 fully restored ATF4 and ASNS expression and partially restored SLC protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by immunoblot data shown in Figure 2D-E and supplementary figures. The data demonstrate consistency between pharmacological inhibition and genetic deletion approaches. The rescue experiment (C35) provides strong evidence for specificity. However, the claim that reintroduction \"fully restored\" ATF4/ASNS but only \"partially restored\" SLC proteins suggests incomplete rescue, which could indicate additional regulatory mechanisms beyond GCN2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C87"
+    ],
+    "result": "Loss of GCN2 function reduces amino acid uptake. Treatment of LNCaP cells with GCN2iB or deletion of GCN2 in 22Rv1 cells significantly lowered the uptake of leucine, lysine, and arginine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C87 are supported by amino acid uptake measurements shown in Figure 2F-G using radiolabeled amino acids. Statistical significance is demonstrated (p \u2264 0.05 to p \u2264 0.001) with N=4 replicates. The data directly link GCN2 activity to functional amino acid transport capacity, supporting the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Pharmacological inhibition of GCN2 in LNCaP cells resulted in sharp reductions in both essential amino acids (histidine, branched-chain amino acids, threonine, phenylalanine, methionine) and non-essential amino acids (glutamate, glutamine, aspartate, asparagine, alanine, tyrosine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by amino acid measurements shown in Figure 3A using HPLC or LC-MS/MS methods. Statistical significance is demonstrated for multiple amino acids (p \u2264 0.05 to p \u2264 0.0001) with N=3 replicates. The comprehensive amino acid profiling provides strong evidence that GCN2 is critical for maintaining intracellular amino acid pools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C88"
+    ],
+    "result": "Supplementation of essential amino acids (EAA) into the medium reversed the proliferation defect caused by GCN2iB treatment in LNCaP cells and increased free amino acid pools, while supplementation with non-essential amino acids (NEAA) did not suppress the growth defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, and C88 are supported by growth assay data shown in Figure 3B and Figure 3\u2014figure supplement 1-2 with statistical significance (p \u2264 0.0001) and N=5 replicates. The differential effect of EAA versus NEAA supplementation provides strong evidence that GCN2 is specifically required for maintaining EAA homeostasis. This is a key mechanistic finding linking GCN2 to amino acid availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Inhibition of GCN2 in LNCaP cells caused G1 cell cycle arrest (increased G1 phase, reduced S phase), which was reversed by EAA supplementation. This is consistent with cell cycle checkpoint control that occurs with amino acid depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by cell cycle analysis data shown in Figure 3C with statistical significance (p \u2264 0.001 to p \u2264 0.0001) and N=3 replicates. The data are consistent with citations to prior work (Lehman et al., 2015; Leung-Pineda et al., 2004) on amino acid depletion and cell cycle control. The rescue by EAA supplementation strengthens the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "GCN2iB treatment reduced aminoacylated tRNAHis in LNCaP cells, which was restored when EAA were supplemented to the growth medium, as measured by CHARGE-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by CHARGE-seq data shown in Figure 3D-E with N=4 replicates and statistical significance. The data are deposited in GEO (GSE196251) supporting reproducibility. This provides direct mechanistic evidence that GCN2 inhibition leads to histidine depletion and accumulation of uncharged tRNAHis, which is the canonical signal for GCN2 activation. The rescue by EAA supplementation confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Histidine is a critical limiting amino acid in LNCaP and MR49F cells with GCN2 inhibition. Only histidine supplementation (not other individual amino acids) reversed the growth inhibition and cell cycle arrest caused by GCN2iB in LNCaP cells. Histidine removal increased G1 accumulation similar to GCN2iB treatment. Histidine or EAA supplementation lowered p-GCN2, p-eIF2\u03b1, and ATF4 expression. However, in 22Rv1 cells, lysine (not histidine) alleviated the slow growth associated with GCN2 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by growth assay, cell cycle analysis, and immunoblot data shown in Figure 3F-H and Figure 3\u2014figure supplement 5 with appropriate statistical analyses. The data demonstrate cell-line-specific amino acid dependencies (histidine for LNCaP/MR49F, lysine for 22Rv1), which is acknowledged by the authors as reflecting \"differences in their unique genetic features and cell-line-specific buffering mechanisms.\" This is a strength of the study showing nuanced understanding of context-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "A CRISPR/Cas9 screen targeting 394 SLC genes identified multiple transporters required for prostate cancer cell growth. Several GCN2-dependent SLC genes showed significantly diminished growth in LNCaP and 22Rv1 cells, including LAT1 (SLC7A5), SLC25A36, SLC25A46, SLC27A1, SLC35A2, and 4F2 (SLC3A2). SLC27A1 and 4F2 (SLC3A2) were required for efficient growth of both cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by CRISPR screen data shown in Figure 4A-B with appropriate statistical analyses (p \u2264 0.05, negative binomial model with Sidak correction). The screen was performed in triplicate for both cell lines and cultured for 3-4 weeks (15-20 population doublings) as previously reported (Girardi et al., 2020). This unbiased functional genomics approach provides strong evidence for the importance of specific SLC transporters in PCa growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "GCN2 regulates 4F2 (SLC3A2) expression through the ISR pathway. GCN2iB treatment reduced GCN2 activation and lowered 4F2 protein and mRNA levels after 24 hr. Histidine addition reduced GCN2 activation and 4F2 expression, while histidine removal increased them. Salubrinal (which increases p-eIF2\u03b1) increased 4F2 expression and restored it in GCN2iB-treated cells. GADD34 overexpression (which reduces p-eIF2\u03b1) decreased 4F2 expression. Halofuginone (which activates GCN2) increased 4F2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by immunoblot and qRT-PCR data shown in Figure 4C-E and supplementary figures. The data provide strong mechanistic evidence that 4F2 (SLC3A2) expression is regulated by the GCN2-eIF2\u03b1-ATF4 axis. Multiple complementary approaches (GCN2 inhibition, histidine manipulation, salubrinal, GADD34, halofuginone) all support this model. The time course showing 4F2 reduction after 24 hr (but not 6 hr) suggests indirect regulation, possibly through ATF4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "4F2 (SLC3A2) is critical for prostate cancer cell growth and amino acid homeostasis. Knockdown of 4F2 significantly reduced growth in LNCaP and 22Rv1 cells (but not non-cancerous BPH-1 cells) and led to GCN2 activation. Overexpression of 4F2 rescued the growth defect caused by loss of GCN2 function, reduced GCN2 activity, and provided a growth advantage. Knockdown of 4F2 reduced a subset of amino acids compared to GCN2 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by growth assay, immunoblot, and amino acid measurement data shown in Figure 4F-I and supplementary figures with appropriate statistical analyses. The reciprocal relationship between GCN2 and 4F2 (GCN2 regulates 4F2 expression; 4F2 loss activates GCN2; 4F2 overexpression rescues GCN2 loss) provides strong evidence for a feedback loop maintaining amino acid homeostasis. The cancer cell selectivity (no effect in BPH-1) is important for therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C90"
+    ],
+    "result": "GCN2 is required for prostate cancer tumor growth in vivo. Loss of GCN2 significantly reduced tumor growth in 22Rv1 and PC-3 xenograft models, with reduced Ki-67 staining, reduced p-GCN2-T899 staining, and sharply reduced expression of SLC transporters (4F2, xCT, LAT1). 22Rv1 tumors maintained ARv7 expression, indicating the effect is independent of AR status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 and C90 are supported by xenograft tumor growth data, IHC, and immunoblot analyses shown in Figure 6A-D and supplementary figures. The studies used appropriate sample sizes (N=4-5 mice per group) and showed statistically significant effects on tumor volume and weight (p \u2264 0.05 to p \u2264 0.0001). The consistency across two different cell lines (22Rv1 with ARv7, PC-3 AR-null) demonstrates broad applicability. This is a key finding establishing in vivo relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Loss of GCN2 has a greater effect on tumor growth than loss of ATF4. GCN2 deletion dramatically reduced 22Rv1 tumor growth, while ATF4 deletion only delayed growth. GCN2 deletion led to greater decreases in SLC transporter protein levels compared to ATF4 deletion. Loss of GCN2 did not reduce p-eIF2\u03b1 levels in end-stage tumors, suggesting activation of a secondary eIF2 kinase. Deletion of ATF4 resulted in increased GCN2 activation and p-eIF2\u03b1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by xenograft tumor growth data and immunoblot analyses shown in Figure 6E-F and Figure 6\u2014figure supplement 2A. The differential effects of GCN2 versus ATF4 deletion are important mechanistically, suggesting GCN2 functions beyond ATF4-mediated transcription (e.g., through translational control). The observation that p-eIF2\u03b1 is not reduced in GCN2 KO tumors (C70) is appropriately interpreted as possible compensation by other eIF2 kinases, with supporting citations. The increased GCN2 activation upon ATF4 deletion (C71) suggests feedback regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Essential amino acid supplementation partially rescues GCN2 KO tumor growth in vivo. EAA-supplemented drinking water increased growth of GCN2 KO 22Rv1 tumors (though with a time delay compared to WT), while not affecting WT tumor growth. Loss of GCN2 reduced intracellular arginine and lysine in tumors, with histidine and branched-chain amino acids trending lower. EAA supplementation partially restored amino acid levels (only histidine reached statistical significance) but did not restore SLC transporter expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by xenograft tumor growth data and amino acid measurements shown in Figure 6G-H and Figure 6\u2014figure supplement 3. The partial rescue by EAA supplementation provides strong in vivo evidence that GCN2 is required for maintaining amino acid homeostasis. The observation that EAA supplementation does not restore SLC transporter expression (C76) is important, indicating that the rescue is due to bypassing the need for transporters rather than restoring the pathway. The time delay in rescue suggests additional factors beyond amino acid availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Overexpression of 4F2 (SLC3A2) in GCN2 KO 22Rv1 tumors partially rescued growth and restored tumor amino acid levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by xenograft tumor growth data and amino acid measurements shown in Figure 6I and Figure 6\u2014figure supplement 4. This is a key experiment demonstrating that 4F2 is a critical downstream effector of GCN2 in vivo. The partial (not complete) rescue is consistent with GCN2 regulating multiple SLC transporters, not just 4F2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C89"
+    ],
+    "result": "Pharmacological inhibition of GCN2 with GCN2iB shows robust anti-tumor activity in vivo. Treatment with GCN2iB (30 mg/kg twice daily for 2-6 weeks) resulted in significant tumor growth inhibition in LNCaP, 22Rv1, TM00298, and LuCaP-35 xenograft models (both androgen-sensitive and castration-resistant), with reduced p-GCN2-T899 and Ki-67 staining, lowered 4F2 expression, and reduced amino acid levels. Importantly, GCN2iB had no effect on body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 and C89 are supported by xenograft tumor growth data, IHC, immunoblot, and amino acid measurements shown in Figure 7A-F and supplementary figures. The studies used appropriate sample sizes (N=4-5 mice per group) across four different models including patient-derived xenografts (PDX). Statistical significance is demonstrated (p \u2264 0.05 to p \u2264 0.0001). The lack of body weight changes (C79) is important for therapeutic window. This is a key finding demonstrating therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "4F2 (SLC3A2) expression correlates with GCN2 activity in human prostate cancer patient samples. 4F2 staining was increased in malignant versus normal tissue. SLC3A2 showed a moderate but significant correlation with p-GCN2-T899 expression (r=0.27, p=0.025), which was stronger in higher grade tumors (r=0.47, p=0.002, Gleason scores 4 and 5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by IHC data from tumor tissue arrays shown in Figure 7G and Figure 7\u2014figure supplement 3. The correlation analysis is appropriately performed with adequate sample sizes. The stronger correlation in higher grade tumors (C84) is clinically relevant. However, the moderate correlation coefficient (r=0.27 overall, r=0.47 in high grade) suggests additional factors regulate 4F2 expression beyond GCN2, which is expected given the complexity of tumor biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "A GCN2-dependent gene signature derived from RNA-seq analysis showed significant correlation with SLC3A2 (4F2) expression (r=0.53, p<0.0001) in prostate cancer patients from the TCGA database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by correlation analysis shown in Figure 7H using publicly available TCGA data (N=551 patients). The gene signature approach is more robust than single gene correlations and shows a stronger correlation (r=0.53) than the IHC analysis. This provides independent validation of the GCN2-4F2 relationship in a large patient cohort.",
+    "result_type": "MAJOR"
+  }
+]

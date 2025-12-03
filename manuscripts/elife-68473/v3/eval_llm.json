@@ -1,0 +1,474 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Mutant CycT1 proteins that cannot bind CDK9 (CycT1L203P, CycT14MUT, CycT1T3A) are poorly expressed in 293T cells but can be stabilized by the proteasomal inhibitor bortezomib. These mutants have short half-lives (2.5-6 hours) compared to wild-type CycT1, which remains stable after cycloheximide treatment. CDK9 levels are unaffected by bortezomib treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 provide converging evidence from western blots (Figure 1B) and cycloheximide chase experiments (Figure 1C) demonstrating that mutant CycT1 proteins unable to bind CDK9 are rapidly degraded via the proteasome. The rescue by bortezomib and quantified half-lives provide strong support for proteasomal degradation of unbound CycT1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Thr143 and Thr149 in CycT1 are critical residues for binding to CDK9. Mutations at these positions (but not Thr155) significantly impair or abolish CycT1:CDK9 interactions, and mutant proteins that cannot bind CDK9 are rapidly degraded by the proteasome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 are supported by systematic mutagenesis and co-IP experiments (Figures 1D-F) showing that Thr143 and Thr149 mutations reduce CDK9 binding by 5-8 fold, while Thr155 mutation has no effect. The conclusion that these residues are critical for P-TEFb assembly is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Phosphatase inhibitors (high-dose okadaic acid and calyculin A, but not low-dose okadaic acid) increase threonine phosphorylation of CycT1 and enhance CycT1:CDK9 interactions. This suggests PP1 (inhibited by high-dose okadaic acid) rather than PP2A (inhibited by low-dose okadaic acid) is responsible for CycT1 dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C70 are supported by co-IP and western blot experiments (Figures 2A-B) showing differential effects of okadaic acid concentrations. The selective inhibition by high-dose (1 \u03bcM) but not low-dose (5 nM) okadaic acid provides strong evidence for PP1 involvement, as these concentrations have well-established differential specificity for PP1 vs PP2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Thr143 and Thr149 in CycT1 are phosphorylated in cells. Mutation of these residues to alanine significantly reduces threonine phosphorylation levels. The phosphorylation was detected by two independent methods: western blotting with anti-phospho-threonine antibodies and direct Phospho-Tag staining of tryptic peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 are supported by multiple complementary approaches including western blots (Figure 2C), in-gel Phospho-Tag staining (Figure 2D), and phosphopeptide mapping (Figure 2E). The use of two independent detection methods and the specific loss of signal in the TT143149AA mutant provide strong evidence for phosphorylation at these sites. However, mass spectrometry confirmation would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Structural modeling predicts that phosphorylated Thr143 forms intramolecular interactions with Gln73 in CycT1, while phosphorylated Thr149 forms intermolecular interactions with Lys68 in CDK9. MM-GBSA calculations predict that phosphorylation at these sites is thermodynamically favorable for P-TEFb assembly, with the predominant contribution from electrostatic and polar solvation energies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 are supported by computational modeling based on crystal structure 3MI9 and MM-GBSA calculations (Figure 3A, Table 1). The predictions are consistent with experimental mutagenesis data. However, these are computational predictions that would benefit from experimental validation such as crystal structures of phosphorylated P-TEFb.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Mutations of predicted contact residues (Q73A in CycT1 and K68A in CDK9) reduce CycT1:CDK9 binding to similar extents as the TT143149AA mutation, validating the structural model. This confirms that phosphates on Thr143 and Thr149 are essential for P-TEFb assembly and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by co-IP experiments (Figures 3B-D) showing that mutations of predicted contact residues reduce binding by 5-8 fold, similar to the TT143149AA mutation. This provides strong experimental validation of the computational predictions and supports the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "PKC inhibitors (staurosporine, bisindolylmaleimide IX, HBDDE) reduce CycT1 levels in a dose-dependent manner, inhibit CycT1:CDK9 interactions, and antagonize threonine phosphorylation of CycT1. MEK 1/2 inhibitor has no effect, indicating specificity for PKC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 are supported by co-IP and western blot experiments in 293T cells (Figures 4A-C) showing that multiple PKC inhibitors reduce CycT1 levels, interactions with CDK9, and threonine phosphorylation. The lack of effect with MEK 1/2 inhibitor provides important negative control data supporting PKC specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "PKC inhibitors decrease endogenous CycT1 levels in a dose-dependent manner in Jurkat cells and activated primary CD4+ T cells without affecting CDK9 levels. Multiple PKC inhibitors (staurosporine, bisindolylmaleimide IX, H-7, sotrastaurin, HBDDE) show this effect, while MEK 1/2 inhibitor and some other PKC inhibitors do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 are supported by western blots in Jurkat cells (Figures 4D-E) and primary CD4+ T cells (Figure 4F and supplements) showing dose-dependent reduction of endogenous CycT1 by multiple PKC inhibitors. The differential effects of various inhibitors provide important specificity information, though the lack of effect with some PKC inhibitors (VTX-27, bisindolylmaleimide IV, enzastaurin) raises questions about which PKC isoforms are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "PKC\u03b1 and PKC\u03b2 bind to CycT1 and phosphorylate Thr143 and Thr149. Dominant-negative mutants of PKC\u03b1 (K368R) and PKC\u03b22 (K371R) interact more strongly with the non-phosphorylatable CycT1(280)TT143149AA mutant than with wild-type CycT1(280), while showing no interaction with CDK9. Other PKC isoforms (PKC\u03b5, PKC\u03b4, PKC\u03b3) show reduced interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 are supported by co-IP experiments (Figures 5A-B and supplements) showing preferential binding of dominant-negative PKC\u03b1 and PKC\u03b2 mutants to non-phosphorylatable CycT1. The increased binding to the TT143149AA mutant is consistent with substrate trapping by kinase-dead mutants. However, the claim that these PKCs phosphorylate Thr143 and Thr149 requires additional validation beyond the binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Dominant-negative PKC\u03b1 (K386R) and PKC\u03b22 (K371R) inhibit CycT1:CDK9 interactions, reduce threonine phosphorylation of CycT1, and decrease CycT1 protein levels in cells. These effects are reversed by bortezomib, indicating proteasomal degradation. CDK9 levels are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C128 are supported by co-IP and western blot experiments (Figures 5C-F) showing that dominant-negative PKC mutants reduce CycT1 phosphorylation, CycT1:CDK9 interactions, and CycT1 stability. The rescue by bortezomib confirms proteasomal degradation. These results provide strong functional evidence for PKC\u03b1 and PKC\u03b2 roles in CycT1 phosphorylation and stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Wild-type CycT1(280), but not the TT143149AA mutant, is phosphorylated by purified active PKC\u03b1 and PKC\u03b2 in vitro, as detected by in-gel Phospho-Tag staining. This demonstrates that PKC\u03b1 and PKC\u03b2 directly phosphorylate CycT1 at Thr143 and Thr149.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 are supported by in vitro kinase assays (Figure 5G) showing PKC-dependent phosphorylation of wild-type but not mutant CycT1(280). This provides direct biochemical evidence that PKC\u03b1 and PKC\u03b2 phosphorylate CycT1. However, the experiment does not definitively prove that Thr143 and Thr149 are the specific sites phosphorylated in vitro, as other threonines may also be present in CycT1(280).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Prolonged PMA treatment (72-96 hours) depletes PKC isoforms (PKC\u03b1, PKC\u03b21, PKC\u03b22) and decreases CycT1 levels in Jurkat cells and activated primary CD4+ T cells without affecting CDK9 levels. Bortezomib rescues CycT1 levels, and CycT1:CDK9 interactions are significantly reduced in PMA-treated cells. This explains why HIV Tat does not function in PMA-treated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C144 are supported by western blots and co-IP experiments (Figures 6A-C) showing parallel depletion of PKC and CycT1 after chronic PMA treatment. The rescue by bortezomib and reduced CycT1:CDK9 interactions provide strong mechanistic support. The connection to Tat function is supported by citation but not directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Anergic T cells from W131AOTII mice (expressing constitutively active ZAP70-W131A) have significantly lower CycT1 protein levels (~7.8-fold decrease) compared to control OTII T cells, while CDK9 protein and mRNA levels of both CycT1 and CDK9 remain unchanged. These cells exhibit impaired T cell receptor signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148 are supported by western blots and qPCR data (Figures 6D-E) showing selective reduction of CycT1 protein but not mRNA in anergic T cells. This provides important physiological validation of the mechanism in a relevant cell type. The citation for impaired TCR signaling (C148) provides context but is not directly demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Treatment of activated primary CD4+ T cells with ionomycin (1 \u03bcM) for 24-72 hours progressively decreases CycT1 expression without affecting CDK9 levels. This correlates with PKC depletion and anergy induction, preventing assembly of functional P-TEFb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C152 are supported by western blots (Figure 6F) showing time-dependent reduction of CycT1 after ionomycin treatment. The connection to PKC depletion and anergy is supported by citation (C149) but not directly demonstrated. The conclusion about P-TEFb assembly (C152) is a reasonable inference but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "P-TEFb is a critical coactivator for transcription regulated by 7SK snRNA in proliferating cells but is absent in quiescent and terminally differentiated cells due to diminished CycT1 levels. CycT1 not bound to CDK9 is rapidly degraded, and productive CycT1:CDK9 interactions are increased by PKC-mediated phosphorylation and reversed by PP1 dephosphorylation. PKC inhibitors or removal cause P-TEFb disassembly and CycT1 degradation, recapitulating P-TEFb depletion in resting and anergic CD4+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 from the abstract accurately summarize the major findings of the study. These claims are well-supported by the experimental data presented throughout the manuscript, including mutagenesis, phosphorylation analysis, kinase/phosphatase studies, and physiological validation in primary cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background information on transcriptional regulation by RNAPII, P-TEFb composition and function, 7SK snRNP regulation, disease implications, and viral strategies to utilize P-TEFb. Previous work suggested CycT1 translation is inhibited by RNAi in quiescent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C34 are background knowledge claims from the introduction, all supported by appropriate citations. These establish the context for the current study. Claim C34 about RNAi-mediated translational inhibition represents a previous hypothesis that the current study challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "In contrast to previous models of translational inhibition, CycT1 is rapidly degraded in quiescent cells and can be stabilized by proteasomal inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 represent a key conceptual advance of the study, challenging the previous RNAi model (C34) with a new degradation-based mechanism. These claims are supported by the extensive experimental data on CycT1 stability and proteasomal degradation throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Previous studies identified that residues in the N-terminal region of CycT1 (positions 1-280) are required for CDK9 binding, and specific mutations (L203P or 4MUT including T143A, T149A, T155A) completely abolished this binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are background information supported by citations. These prior findings provide the foundation for the current study's focus on Thr143 and Thr149.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Summary of study findings: mutations of Thr143 and Thr149 impair CDK9 binding; phosphorylation of these residues promotes CycT1:CDK9 interactions; structural modeling supports the mechanism; PKC inhibitors block phosphorylation; PKC\u03b1 and PKC\u03b2 bind CycT1 and promote interactions; depleting PKC leads to CycT1 degradation. The assembly and stability of P-TEFb are potentiated by phosphorylation of CycT1, regulated by PKC\u03b1, PKC\u03b2, and PP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C159 from the Discussion accurately summarize the major findings and are well-supported by the experimental data. These represent appropriate conclusions from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Thr143, 149, and 155 are conserved in over 142 mammalian species and in CycT2, and previous reports indicated these residues play critical roles in P-TEFb function. Dephosphorylation is blocked by high-dose okadaic acid (inhibiting PP1 and PP2A) but not low-dose okadaic acid (inhibiting only PP2A), indicating PP1 is the candidate phosphatase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 combine sequence conservation data with experimental results on phosphatase specificity. The conservation analysis (C160) supports functional importance. The differential okadaic acid effects (C162) provide strong evidence for PP1 involvement (C163), though direct PP1 knockdown/knockout experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "PP1 contains 3 catalytic and over 50 regulatory subunits whose genetic inactivation is lethal, and PP1 regulates cell cycle cyclins. PKC\u03b1 and PKC\u03b2 phosphorylate Thr143 and Thr149 in CycT1 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 are background information supported by citations. Claim C166 is supported by the in vitro kinase assay data (Figure 5G), though as noted earlier, this doesn't definitively prove these specific sites are phosphorylated in vitro.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "PKC depletion results in P-TEFb disassembly and CycT1 degradation, explaining cellular unresponsiveness to stimuli and why HIV Tat doesn't function in phorbol ester-treated cells. Anergic, resting, and memory T cells lack P-TEFb, maintaining proviral latency. This situation likely pertains to other DNA viruses (HSV, HTLV1/2) in resting or terminally differentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C172 connect the molecular findings to biological and pathological contexts. C167-C169 are well-supported by the experimental data. C170-C171 are supported by citations and consistent with the findings. C172 is appropriately presented as speculation ('most likely pertains') with supporting citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Comparison to cell cycle regulation: CycE unbound to CDK2 is rapidly degraded via SCF E3 ligase-mediated proteasomal pathway. Transcriptional cyclins/CDKs display and mimic regulatory paradigms of cell cycle cyclins/CDKs. This regulation differs from P-TEFb equilibrium in proliferating cells where 7SK snRNP plays the major role, with HEXIM1/2 inhibiting CDK9 by binding its ATP pocket (reminiscent of CDK2 inhibition by p21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C176 draw appropriate parallels between transcriptional and cell cycle CDK regulation, supported by citations. This conceptual framework helps contextualize the findings within broader cell biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "CycT1 and CDK9 mRNA levels don't vary between different T cell states, so global mRNA sequencing studies underestimate P-TEFb contributions. P-TEFb must be recruited to paused RNAPII and can mediate enhancer-promoter interactions. The C-terminal His-rich region of CycT1 interacts with RNAPII CTD. Post-translational modifications of P-TEFb play critical roles in activated transcription and cell growth/proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C182 discuss implications of the findings for transcriptional regulation. C177 is supported by the qPCR data (Figure 6E) and citations. C178 is a reasonable inference about limitations of transcriptomic studies. C179-C181 are background information supported by citations. C182 is an appropriate conclusion from the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "In quiescent cells, only basal transcription is detected, but external stimuli can reverse this phenotype via reversible phosphorylation of P-TEFb. Effects of potent activators (cMyc, NF-\u03baB, steroid hormones, CIITA) are translated to productive transcription of target genes through P-TEFb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C185 discuss the functional implications of P-TEFb regulation. C183 is supported by citations. C184 is a reasonable conclusion from the study's findings on reversible phosphorylation. C185 is supported by citation and consistent with the P-TEFb mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Future directions: Targeted phosphatase inhibitors could potentially block transition to quiescence and terminal differentiation, and might prevent establishment of proviral latency. Bortezomib and other proteasomal inhibitors have been examined for reversing HIV latency. Understanding P-TEFb regulation promises to reveal approaches to proviral latency, immune responses, and cellular regeneration/dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C189 are speculative statements about future applications. C186-C187 are appropriately presented as possibilities ('could', 'might') but lack experimental support. C188 is supported by citations. C189 is a reasonable forward-looking statement but represents speculation rather than demonstrated findings. These are appropriate for a Discussion section but should not be considered supported results.",
+    "result_type": "MINOR"
+  }
+]

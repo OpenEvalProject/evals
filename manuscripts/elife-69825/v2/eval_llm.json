@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "High-throughput snRNA-seq identified 14,892 cells from mouse SC, revealing 9 major cell types and 19 neuronal subclusters (9 excitatory, 10 inhibitory) with layer-specific spatial distributions determined by the SPACED computational method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 provide converging evidence from snRNA-seq data collection, clustering analysis, and spatial mapping. The identification of cell types is supported by marker gene expression (C18-C20), and spatial assignments are validated by the SPACED method with statistical significance (C23, p<0.05). The methodology is clearly described and results are consistent across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Gene ontology analysis suggests that SC neurons in different layers have distinct functional roles: SuG layer cells in visual learning/cognition, Op layer cells in defense/fear responses, and InG layer cells in locomotor behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 present GO enrichment analysis results that are consistent with established knowledge about SC layer functions (supported by citation C24). The functional predictions align with known anatomical connectivity patterns and provide biological interpretation of the transcriptomic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Morphological reconstruction and retrograde tracing revealed that Op layer neurons project to LPTN while InG/InWh layer neurons project to ZI, establishing distinct projection patterns for different SC layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide complementary anatomical evidence from single-cell reconstruction (C27-C28) and population-level retrograde tracing (C29-C30). The convergent findings from different methodological approaches strengthen the conclusion about layer-specific projection patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "LPTN-projecting and ZI-projecting SC neurons showed no significant differences in electrophysiological properties (resting membrane potential, firing threshold, action potential number), indicating they cannot be distinguished by traditional electrophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 present consistent negative findings from whole-cell recordings. The lack of significant differences is appropriately interpreted (C34), establishing the need for molecular markers to distinguish these populations. Statistical analyses are mentioned though specific p-values are referenced to supplementary files.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Patch-seq analysis of 60 projection-defined SC neurons revealed that LPTN-projecting Op layer neurons highly express Cbln2, Grm8, Zfp385b, and Dgkh, while ZI-projecting InG layer neurons highly express Pitx2, Vwc2, Gsg1l, and Clstn2, with these populations corresponding to Ex-6 and Ex-4 subclusters respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 describe a well-executed patch-seq experiment linking projection identity to transcriptomic profiles. The clustering of neurons by projection (C36), identification of DEGs (C38-C39), and correlation with snRNA-seq clusters (C40-C41) provide strong evidence for molecular signatures of projection-defined populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Detailed analysis of marker gene expression revealed heterogeneity within SC layers: Cbln2 is expressed in both Ex-3 and Ex-6 cells while Dgkh is Ex-6 specific, and Pitx2 is exclusively in Ex-4 neurons while Vwc2 is in both Ex-1 and Ex-4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide granular analysis of marker gene specificity within layers, demonstrating that projection-specific neurons represent subpopulations distinguishable by gene expression. This is supported by DEG analysis shown in referenced figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Validation of the Cbln2-IRES-Cre mouse line showed high specificity (91\u00b19% of EGFP+ cells are Cbln2+) and efficiency (92\u00b111% of Cbln2+ cells are EGFP+), with labeled neurons being predominantly glutamatergic (93\u00b16% vGlut2+, 4\u00b12.1% vGAT+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 provide thorough validation of the genetic tool with quantitative data from n=3 mice. The high percentages for specificity and efficiency, combined with neurotransmitter identity confirmation, establish the reliability of this mouse line for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Synaptic inactivation of Cbln2+ SC neurons by TeNT strongly impaired visually evoked freezing responses (significantly increased locomotion speed during visual stimuli) but did not affect predatory hunting efficiency, demonstrating selective requirement for predator avoidance behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 present clear behavioral phenotypes from loss-of-function experiments. The selective impairment of freezing (C52-C53) without affecting hunting (C54) provides strong evidence for behavioral specificity. Statistical significance is reported for the freezing deficit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Validation of the Pitx2-Cre mouse line showed high specificity (88\u00b18% of EGFP+ cells are Pitx2+) and efficiency (89\u00b19% of Pitx2+ cells are EGFP+), with labeled neurons being predominantly glutamatergic (95\u00b17% vGlut2+, 6\u00b12.5% vGAT+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 provide validation data for the Pitx2-Cre line parallel to the Cbln2 line validation. The quantitative measurements from n=3 mice demonstrate adequate specificity and efficiency for experimental use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Synaptic inactivation of Pitx2+ SC neurons impaired prey capture (increased latency to attack, prolonged capture time, reduced attack frequency) but did not affect visually evoked freezing responses, demonstrating selective requirement for prey capture behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 present complementary behavioral phenotypes to the Cbln2 results, showing opposite selectivity. The impairment of multiple hunting parameters (C62-C64) with preserved freezing (C65) provides strong evidence for behavioral specificity with appropriate statistical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Fiber photometry recordings revealed that Cbln2+ SC neurons have visual receptive fields in dorsal quadrants, respond broadly to visual stimuli with temporal-to-nasal preference, show stronger responses to slower-moving and smaller circles, but do not respond to vibrissal air puffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 provide comprehensive characterization of Cbln2+ neuron sensory properties using fiber photometry. The visual response properties (C69-C72) are consistent with predator detection, and the lack of tactile response (C73) supports modality specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Pitx2+ SC neurons responded to contralateral vibrissal air puffs but not to visual stimuli, suggesting they process tactile information from moving prey while Cbln2+ neurons process visual information from aerial predators, forming two distinct sensory processing modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 demonstrate complementary sensory selectivity to the Cbln2 results. The tactile responses (C74) and lack of visual responses (C75) support the interpretation of distinct sensory modules (C76-C78), though C76-C78 are appropriately framed as inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C88",
+      "C89"
+    ],
+    "result": "Rabies virus tracing revealed that Cbln2+ SC neurons receive monosynaptic inputs from retina and V1 (visual structures) while Pitx2+ SC neurons receive inputs from Pr5, Sp5, S1, and ZI (tactile structures), with minimal overlap between the two input patterns, supporting distinct circuit modules for detecting aerial predator versus terrestrial prey cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 provide comprehensive input mapping using rabies virus tracing. The mutually exclusive input patterns (C88) from sensory-appropriate brain regions strongly support the circuit module hypothesis (C89). Quantitative analysis is mentioned (C88) though specific statistics are in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Pitx2+ SC neurons additionally received monosynaptic inputs from motor-related areas (SNr, M1/M2) and cingulate cortex, while Cbln2+ neurons did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 identify additional input sources to Pitx2+ neurons from motor and cognitive areas, consistent with the active hunting behavior these neurons mediate. The data are from rabies tracing shown in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "AAV-based anterograde tracing revealed that Cbln2+ and Pitx2+ SC neurons send divergent projections to multiple brain areas in thalamus, midbrain, pons, and medulla, with minimal overlap in downstream targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 demonstrate segregated output patterns complementing the input segregation. The lack of overlap in projection targets supports functional independence of the two neuronal populations, though the claim of \"rarely overlapped\" could benefit from quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Quantitative analysis of axonal projections showed that Cbln2+ neurons send significantly stronger projections to LPTN than Pitx2+ neurons, while Pitx2+ neurons send significantly stronger projections to ZI than Cbln2+ neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 provide quantitative validation of the primary projection targets with statistical significance. The reciprocal pattern of strong vs. weak projections supports the anatomical segregation of the two pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Retrograde AAV tracing showed that 83\u00b19% of Cbln2+ SC neurons project to LPTN and 72\u00b111% of Pitx2+ SC neurons project to ZI, indicating that large proportions of each population target their respective primary downstream areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 provide complementary retrograde evidence for the projection patterns with quantitative data from n=3 mice. The high percentages indicate that LPTN and ZI are indeed major targets, though not exclusive, for these populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Optogenetic activation of Cbln2+ SC-LPTN pathway terminals induced freezing behavior (reduced locomotion speed during stimulation) but did not alter prey capture efficiency, demonstrating pathway sufficiency for predator avoidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 provide gain-of-function evidence complementing the loss-of-function results. The selective induction of freezing without affecting hunting demonstrates pathway sufficiency and behavioral specificity, with appropriate controls mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Optogenetic activation of Pitx2+ SC-ZI pathway terminals did not evoke freezing but promoted predatory hunting (decreased latency, reduced capture time, increased attack frequency), demonstrating pathway sufficiency for prey capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 provide complementary gain-of-function evidence for the Pitx2 pathway. The enhancement of multiple hunting parameters (C106-C108) without inducing freezing (C104) demonstrates pathway sufficiency and behavioral specificity with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C115"
+    ],
+    "result": "The study concludes that transcriptomically defined circuit modules correspond to specific behaviors in the midbrain, with circuit design for sensorimotor transformation potentially differing from brain areas responsible for complex information processing like motivation and cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113 and C115 present the main conceptual conclusions integrating all experimental findings. The correspondence between transcriptomic identity and behavior is well-supported by the data, and the comparison to other brain regions (C115) is appropriately framed as a suggestion based on cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Analysis revealed heterogeneity in marker expression across SC layers: Cbln2 is expressed by two Op layer excitatory neuron subtypes while Pitx2 is expressed by one InG layer subtype, suggesting neurons with similar transcriptomic profiles participate in the same projection paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 synthesize findings about within-layer heterogeneity and the relationship between transcriptomic similarity and projection patterns. The inference (C118) is reasonable based on the correlation data presented, though it remains a correlation rather than causal demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study's main finding is that SC neurons in distinct laminae express discrete marker genes (particularly Cbln2 and Pitx2), form distinct input-output connections, and independently mediate predator avoidance and prey capture behaviors through separate molecularly-defined circuit modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8 represent the core findings stated in the abstract. These are well-supported by the comprehensive experimental evidence including transcriptomics (C2-C3), connectivity mapping (C6), behavioral manipulations (C7), and the integration of all data (C8). This represents the paper's central contribution.",
+    "result_type": "MAJOR"
+  }
+]

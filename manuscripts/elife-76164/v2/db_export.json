@@ -1,0 +1,2197 @@
+{
+  "submission": {
+    "id": "eee7e51b-ea40-4bfc-b4f5-609070a724aa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:11:33.010304Z",
+    "updated_at": "2025-12-03T14:11:33.010304Z"
+  },
+  "content": [
+    {
+      "id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "submission_id": "eee7e51b-ea40-4bfc-b4f5-609070a724aa",
+      "content_type": "manuscript",
+      "content_text": "# The giant staphylococcal protein Embp facilitates colonization of surfaces through Velcro-like attachment to fibrillated fibronectin\n\n## Authors\n\n- Nasar Khan<sup>1</sup> ([ORCID: 0000-0002-9196-9321](https://orcid.org/0000-0002-9196-9321))\n- H\u00fcsn\u00fc Aslan<sup>1</sup> ([ORCID: 0000-0003-0471-5452](https://orcid.org/0000-0003-0471-5452)) \u2020\n- Henning B\u00fcttner<sup>2</sup> ([ORCID: 0000-0002-5086-4961](https://orcid.org/0000-0002-5086-4961))\n- Holger Rohde<sup>2</sup>\n- Thaddeus Wayne Golbek<sup>3</sup>\n- Steven Joop Roeters<sup>3</sup>\n- Sander Woutersen<sup>4</sup>\n- Tobias Weidner<sup>3</sup>\n- Rikke Louise Meyer<sup>1</sup> ([ORCID: 0000-0002-6485-5134](https://orcid.org/0000-0002-6485-5134)) \u2020\n\n### Affiliations\n\n1. Interdisciplinary Nanoscience Center (iNANO), Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))\n2. Institute for Medical Microbiology, Virology and Hygiene, University Medical Centre Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))\n3. Department of Chemistry, Aarhus University Aarhus C Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))\n4. Van \u2018t Hoff Institute of Molecular Sciences, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))\n5. Department of Biology, Aarhus University Aarhus C Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nStaphylococcus epidermidis causes some of the most hard-to-treat clinical infections by forming biofilms: Multicellular communities of bacteria encased in a protective matrix, supporting immune evasion and tolerance against antibiotics. Biofilms occur most commonly on medical implants, and a key event in implant colonization is the robust adherence to the surface, facilitated by interactions between bacterial surface proteins and host matrix components. S. epidermidis is equipped with a giant adhesive protein, extracellular matrix-binding protein (Embp), which facilitates bacterial interactions with surface-deposited, but not soluble fibronectin. The structural basis behind this selective binding process has remained obscure. Using a suite of single-cell and single-molecule analysis techniques, we show that S. epidermidis is capable of such distinction because Embp binds specifically to fibrillated fibronectin on surfaces, while ignoring globular fibronectin in solution. S. epidermidis adherence is critically dependent on multivalent interactions involving 50 fibronectin-binding repeats of Embp. This unusual, Velcro-like interaction proved critical for colonization of surfaces under high flow, making this newly identified attachment mechanism particularly relevant for colonization of intravascular devices, such as prosthetic heart valves or vascular grafts. Other biofilm-forming pathogens, such as Staphylococcus aureus, express homologs of Embp and likely deploy the same mechanism for surface colonization. Our results may open for a novel direction in efforts to combat devastating, biofilm-associated infections, as the development of implant materials that steer the conformation of adsorbed proteins is a much more manageable task than avoiding protein adsorption altogether.\n\n## Introduction\n\nBiomedical implants such as catheters, prosthetics, vascular grafts, and similar devices have revolutionized the medical field. However, implants can lead to severe infections due to bacterial biofilms: The formation of multicellular bacterial communities encased in a protective extracellular matrix (Arciola et al., 2018). Bacteria in the biofilm evade phagocytosis by immune cells (de Vor et al., 2020), and the immune system can therefore not eradicate the infection. Furthermore, a fraction of the cells enter a dormant state in which they are highly tolerant to antibiotics (Rowe et al., 2021). With the rise in use of biomedical implants, there is an urgent and growing need to understand how biofilm infections arise, such that new strategies for preventative treatment can be developed.\n\nStaphylococci, particularly Staphylococcus aureus and Staphylococcus epidermidis are the culprits of most implant-associated infections (Oliveira et al., 2018). Despite its low virulence, S. epidermidis is common in these infections due to its prowess in biofilm formation. S. epidermidis attaches to implant surfaces via adsorbed host proteins (Patel et al., 2007; Fran\u00e7ois et al., 1998) and it expresses an array of surface-bound proteins (adhesins) that bind to host proteins, such as fibrin, fibronectin (Fn), vitronectin, and collagen to initiate biofilm formation (Foster, 2020). One such adhesin is the extracellular matrix-binding protein (Embp), which is found in the vast majority of clinical isolates of S. epidermidis (Rohde et al., 2007; Salgueiro et al., 2017), suggesting that this giant 1 MDa protein is important for this species\u2019 pathogenicity. Embp contains a number of repetitive motifs. These were originally described based on sequence similarity to be 21 \u2018Found in Various Architecture\u2019 (FIVAR) repeats and 38 alternating repeats of \u2018G-related Albumin Binding\u2019 (GA) and FIVAR repeats combined, named FIVAR-GA repeats (Figure 1). After the crystal structure was recently solved, the domain structure was updated and consists of ten 170-aa F-repeats that each represent two FIVAR repeats, and forty 125-aa FG-repeats that each represent the previously termed FIVAR-GA repeats (B\u00fcttner et al., 2020). These 50 repeats can bind to Fn by interacting with FN12 of the Fn type III repeats (Figure 1), and it is presumed that this interaction aids the colonization of the host (Christner et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig1-v2.jpg)\n\n**Figure 1.:** (A) Embp consists of 50 fibronectin (Fn)-binding repeats (10 F-repeats and 40 FG-repeats). (B) The structure of Fn. Embp binds to FN12 of the Fn type III (highlighted in yellow). (C) Representation of globular and fibrillated Fn. Fn is a dimer held together by two disulfide brides, and interactions between FN(III)11\u201314 on one Fn and FN(III)1\u20134 on the other Fn. In fibrillated Fn, these domains are exposed. (D) Hypothesis for Embp\u2019s interaction with Fn on surfaces and in solution. (A) has been adapted from Figure 1 in B\u00fcttner et al., 2020. (B) has been adapted from Figure 4A in B\u00fcttner et al., 2020.\n\nThe Fn deposition can occur around implants (Wolfram et al., 2004) and offer a site for bacterial attachment. We wondered how bacteria like S. epidermidis can colonize implant surfaces by interacting with adsorbed Fn when the same protein is also abundant in a soluble form in blood. Presumably, Fn-binding proteins on the bacterial cell surface become occupied with soluble Fn before being able to interact with Fn on the implant surface. The aim of this study was to determine how pathogens overcome this dilemma and bind to host proteins on tissue or implant surfaces while ignoring soluble forms of the same protein. Understanding the pathogens\u2019 ability to selectively colonize implant surfaces reveals conceptual mechanisms for how pathogens control their location and fate in the host.\n\nIn this study, we investigate Embp\u2019s interaction with Fn. Fn circulates in bodily fluids in a compact globular form (Rocco et al., 1984), while fibrillated Fn contributes to the assembly of the extracellular matrix of tissue (Baneyx et al., 2001). It is the stretching of Fn upon interacting with cell surface integrins, which exposes self-binding domains and triggers Fn fibrillation. This mechanism ensures that Fn only fibrillates in the extracellular matrix of tissue and not in the bloodstream (Zhong et al., 1998). We hypothesize that S. epidermidis interacts selectively with fibrillated Fn because FN12 is buried in the globular form of the protein. Furthermore, we hypothesize that a fibrillated ligand provides an opportunity for a multivalent interaction with the many repetitive F- and FG-repeats of the Embp (Figure 1D).\n\nUsing a model system of polymer-coated surfaces that facilitate Fn adsorption in either globular or fibrillated conformation, we probed Embp\u2019s interaction with Fn by flow cell and advanced atomic force microscopy (AFM) experiments. The AFM can be used as a tactile tool for biological samples, which employs a cantilever with a sharp tip scanned over a sample with low forces in air or liquid environments (Dufr\u00eane et al., 2017; M\u00fcller and Dufr\u00eane, 2008). We used a mode of AFM in which the sharp tip intermittently contacts the surface while scanning over it to create a 3D real-space image. Doing so enabled us to reveal the globular and fibrillar Fn conformations on polymer surfaces. Beyond the surface morphology, AFM can be used to measure the quantitative forces acting between the tip and the sample surface (Zhang et al., 2014). The latter provides insights in many biological binding events by the modification of the probe, for example, by attaching a single cell at the end of the cantilever instead of a sharp tip (Viljoen et al., 2021). Attaching a cell or proteins on the probe and using it to measure quantitative forces on the sample of interest are referred as single-cell (SCFS) or single-molecule force spectroscopy (SMFS) which enables the observation of the nature of biomolecular binding events and their dynamics. Using native and recombinant Embp (rEmbp) in a series of analyses at the population, single-cell, and single-molecule levels, we confirmed that Embp selectively interacts with fibrillated Fn. The interaction is a Velcro-like mechanism where multiple binding domains must interact simultaneously to facilitate strong attachment. Such strong attachment via a single protein is particularly beneficial under high sheer stress, such as in the vascular system, and it was exactly under these conditions that Embp gave the cells an advantage. Embp homologs are present in other important pathogens capable of biofilm formation in the vascular system, and our study reveals a mechanism for how bacteria may accomplish this feat.\n\n## Results\n\n### Embp does not interact with soluble Fn\n\nWe hypothesized that Embp selectively binds to fibrillated Fn, which would allow the bacteria to colonize surfaces via Fn without being blocked by soluble Fn in the bloodstream (Figure 1D). To study the interaction between Embp and Fn, we expressed Embp fusion proteins comprised of either 5 F-repeats (Embp_5F) or 9 FG-repeats (Embp_9FG), each fused to the native export signal and anticipated C-terminal cell wall anchor region (B\u00fcttner et al., 2020), in the surrogate host Staphylococcus carnosus TM300, which has no other mechanisms for attachment to Fn. The full-length Embp is too large to clone into a surrogate host, and it was therefore not possible to investigate the full-length Embp protein. However, expression of the two different Embp fragments allowed us to study their interactions individually. The presence of Embp fragments on the cell surface was verified by immunofluorescence staining (Figure 2\u2014figure supplement 1).\n\nNeither F- nor FG-repeats facilitated adsorption of soluble fluorescently conjugated Fn to the surface of S. carnosus (Figure 2). The native Embp expressed by S. epidermidis did not bind soluble Fn either (Figure 2), concluding that Embp does not interact with Fn in its soluble, globular conformation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig2-v2.jpg)\n\n**Figure 2.:** Interaction of soluble Fn with Staphylococcus epidermidis 1585Pxyl/tet embp overexpressing Embp or Staphylococcus carnosus TM300 expressing recombinant Embp (5F- or 9 FG-repeats) was detected by fluorescence microscopy. Staphylococcus aureus was used as positive control. Bacteria were stained with SYTO 9 (depicted as red), and Fn bound to the cell surface was detected by immunolabeling, using anti-Fn mouse IgG primary antibody, and anti-mouse IgG conjugated with Alexa Fluor 635 as secondary antibody (depicted as green). Top panel shows overlay of bacteria (red) and Fn (green). Bottom panel shows Fn only (green). Scale bar = 10 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Bacteria were stained with SYTO 9 (red), and recombinant Embp was labeled with anti-Embp antibodies followed by anti-rabbit secondary IgG conjugated with Alexa Fluor 635 (green). Scale bar = 10 \u03bcm. (A) Overlay of bacteria (red) and Embp (green), (B) Embp only (green) of S. carnosus 5F. (C) Overlay of bacteria (red) and Embp (green), (D) Embp only (green) of S. carnosus wildtype (negative control).\n\n### Embp interacts exclusively with fibrillated Fn\n\nIn order to further investigate Embp\u2019s interaction with Fn in different conformations, we produced a model system in which Fn was adsorbed to a surface in either the globular or fibrillated conformation. Previous research had shown that Fn fibrillates when adsorbed on surfaces coated with poly(ethyl acrylate) (PEA), while it remains globular on poly(methyl acrylate) (PMA) (Llopis-Hern\u00e1ndez et al., 2016; Rico et al., 2009; Salmer\u00f3n-S\u00e1nchez et al., 2011). The two polymer coatings have similar physicochemical properties, but the ethyl side group of PEA provides sufficient mobility of the adsorbed protein to facilitate fibrillation (Bieniek et al., 2019; Guerra et al., 2010). The presence of polymer coatings was confirmed by AFM (Figure 3\u2014figure supplement 1) and X-ray photoelectron spectroscopy (XPS) (Figure 3\u2014figure supplements 2 and 3).\n\nUpon adsorption to the polymer coating, Fn spontaneously organized into a fibrillated network on PEA while remaining globular on PMA (Figure 3A and B). In order to ascribe any differences in adhesion to the conformation and not the amount of Fn, we analyzed the quantity of protein on the two surfaces. XPS analysis determined that the amount of adsorbed protein was similar on the two polymer surfaces (Figure 3C and D, and Table 1). The XPS survey scan and high-resolution C1s XPS plots are shown in Figure 3\u2014figure supplements 2 and 3. The conformational differences of adsorbed Fn on the two coatings was corroborated by Fourier transform infrared (FTIR) spectra, in which the peak positions indicate that Fn adsorbed to PMA adopts a mostly antiparallel \u03b2-sheet type secondary structure (Barth and Zscherp, 2002), similar to the globular, solution-state spectrum, while Fn on PEA adopts a more extended parallel \u03b2-sheet type structure (Figure 3E, Figure 3\u2014figure supplements 4 and 5).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-v2.jpg)\n\n**Figure 3.:** Atomic force microscopy (AFM) imaging shows the structure of adsorbed Fn on (A) PEA and (B) PMA (xy-scale bar (black)=500 nm, height scale bar (color)=115 nm). X-ray photoelectron spectroscopy (XPS) analysis of the samples shows similar chemical composition of Fn adsorbed to (C) PEA and (D) PMA, indicating that two polymer surfaces are both covered by Fn. (E) Fourier transform infrared (FTIR) spectral shape and intensity confirms that Fn adsorbed to PMA is similar to Fn in solution.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Atomic force microscopy (AFM) images (bottom panel) of PMA- and PEA-coated glass surfaces were acquired in phosphate buffered saline (PBS). The xy-scale bar (black) is 1 \u03bcm and z-scale bar (in color) is 26 nm for PMA and 16 nm for PMA.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** XPS survey spectra of poly(ethyl acrylate) (PEA) and poly(methyl acrylate) (PMA) polymer with either phosphate buffered saline (PBS) added or fibronectin. The survey scans allow for the determination of the elements present at the sample surface.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Bottom: Spectra of only poly(ethyl acrylate) (PEA) or poly(methyl acrylate) (PMA) polymer incubated with phosphate buffered saline (PBS). Top: Spectra of PEA and PMA polymer incubated with PBS and fibronectin (Fn). The C1s high-resolution spectrum has peaks at 285.0, 286.5, 288.0, and 289.0 eV assigned to the C-C, C-O, N, or S, the C=O in a protein, and the C=O in a polymer, respectively.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The raw spectra show that the scattering is different for all four samples, because the spectra are offset with respect to each other. This is expected for the current sample, as the polymer layers scatter the IR light in a not fully reproducible manner. To demonstrate that the presence of protein can already be seen with minimal data processing, the spectra are vertically shifted so as to obtain 0 OD at 1700 cm\u20131 to show that also the sample thicknesses are not identical, as can be seen by the small intensity difference of the combination of v2 + the libration mode of D2O at 1555 cm\u20131. Now also the minute amount of protein absorption in the amide-I region can be appreciated (see inset), with more high-frequency absorption in the poly(methyl acrylate) (PMA) case, and more low-frequency absorption in the poly(ethyl acrylate) (PEA) case, although care must be taken with drawing direct conclusions from this as one first has to correct for the sample thicknesses (as can be seen from intensities of the 1555 cm\u20131 mode). Looking at the 1733 cm\u20131 polymer ester mode, one can now see that the incubation with fibronectin (Fn) and subsequent rinsing with d-PBS removed a small amount of polymer, reducing the polymer thickness. When overlapping the post-incubation spectra to the pre-incubation spectra on the ester peak intensity (panel c), it becomes apparent that in the PEA case, 12% of the polymer layer is lost, and in the PMA case only 3%. Finally, matching the intensity of the ester peak in all spectra to the peak intensity in the pre-incubation PEA spectrum indicates a factor ~7 between the amount of PEA and the PMA present at the samples (panel d).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** A more accurate way to determine the relative amount of polymer-ester absorption, optimizing the overlap between the polymer ester peaks the pre- and post-incubation samples using a least-square fit with the offset and scaling factor as the fit parameters (instead of matching the intensities at 1700 and 1730 cm\u20131 as done in Figure 3\u2014figure supplement 4d). In Figure 3\u2014figure supplement 5, the result of such a least-square fit of the polymer ester peak is given before (a) and after incubation (b) with 20 \u03bcg ml\u22121 Fn. In this procedure, performed with a home-written Python script, the difference between two spectra is minimized with a constant offset c and a scaling factor m, that is: spectrum1(\u03bd) \u2013 (m * spectrum2(\u03bd)+c). The constant offset will reflect differences in the scattering, while m reflects the factor between the number of infrared (IR) oscillators (when looking at the same, isolated) peak. When performing this procedure only in the 1700\u20131760 cm\u20131 region both before and after the incubations, and subtracting the PMA spectra from the PEA spectra, we find factors of 5.3 and 6.4, respectively, that is, there are approximately six times as many ester groups present in the PEA case, as compared to the PMA case.\n\n**Table 1.**\n X-ray photoelectron spectroscopy (XPS) survey spectrum atomic percent compositions for polymer poly(ethyl acrylate) (PEA) and poly(methyl acrylate) (PMA) and either phosphate buffered saline (PBS) or PBS with fibronectin (Fn).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Element</th>\n      <th>PEA PBS [%]</th>\n      <th>PEA Fn [%]</th>\n      <th>PMA PBS [%]</th>\n      <th>PMA Fn [%]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>C1s</td>\n      <td>79.5 (1.0)</td>\n      <td>55.8 (1.0)</td>\n      <td>21.4 (1.4)</td>\n      <td>67.4 (3.8)</td>\n    </tr>\n    <tr>\n      <td>O1s</td>\n      <td>19.6 (1.0)</td>\n      <td>27.0 (1.1)</td>\n      <td>55.5 (1.2)</td>\n      <td>21.4 (1.3)</td>\n    </tr>\n    <tr>\n      <td>N1s</td>\n      <td>n.d.</td>\n      <td>8.3 (0.4)</td>\n      <td>n.d.</td>\n      <td>7.7 (1.5)</td>\n    </tr>\n    <tr>\n      <td>Si2p</td>\n      <td>0.9 (0.4)</td>\n      <td>0.1 (0.1)</td>\n      <td>19.8 (0.8)</td>\n      <td>0.2 (0.2)</td>\n    </tr>\n    <tr>\n      <td>Na1s</td>\n      <td>n.d.</td>\n      <td>3.6 (0.1)</td>\n      <td>3.2 (0.7)</td>\n      <td>1.9 (0.6)</td>\n    </tr>\n    <tr>\n      <td>Cl2p</td>\n      <td>n.d.</td>\n      <td>2.5 (0.3)</td>\n      <td>0.1 (0.1)</td>\n      <td>1.4 (0.3)</td>\n    </tr>\n    <tr>\n      <td>P2p</td>\n      <td>n.d.</td>\n      <td>2.7 (0.1)</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n    </tr>\n    <tr>\n      <td>K2p</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n    </tr>\n  </tbody>\n</table>\n\n_Note: not detectable (n.d.); (.)=standard deviation; [%]=atomic percent (sample mean, n=3)._\n\nAfter validating the model system, Embp-mediated bacterial attachment to fibrillated and globular Fn was measured using a flow cell system where the number of attached bacteria was counted by microscopy. Very few bacteria attached to the polymer coatings in the absence of Fn, and only fibrillated Fn stimulated attachment of S. carnosus expressing Embp_5F or Embp_9FG (Figure 4A). Fn consists of two nearly identical subunits linked by a pair of disulfide bonds at the C terminal (Kar et al., 1993). Each subunit consists of three domains: F1, F2, and F3 (Potts and Campbell, 1996). The globular and compact conformation of Fn is sustained by intramolecular electrostatic interactions between F1 1st-5th, F3 2nd-3rd, and F3 12th-14th repeat (Johnson et al., 1999; Maurer et al., 2015). Binding sites in these regions remain buried in the globular conformation; however, upon fibrillation on a surface or tissue interface, these binding sites become exposed (Klotzsch et al., 2009). Since Embp only binds to fibrillated Fn, we hypothesize that it interacts with epitopes that are buried in the globular conformation, but become exposed when Fn fibrillates. Indeed, it was previously reported that S. epidermidis binds near the C terminal of Fn (Arciola et al., 2003), and studies of recombinant Fn verified the interaction between Embp and the 12th repeat of the F3 domain (Christner et al., 2010). This repeat may be one of several interaction points and has not been confirmed in full-length Fn adsorbed in its natural conformation. To test the interaction between the 12th repeat of the F3 domain and the Fn-binding F- and FG-repeats, we repeated cell adhesion analysis on Fn-coated PEA after blocking the C-terminal heparin-binding domain II (F3 12th-14th repeat) with antibody sc-18827. Control samples were blocked with antibody F0916 specific for the F3 5th repeat (Figure 4). Blocking the F3 12th-14th repeat decreased the adherence of S. carnosus by approximately 62% for Embp_5F and 64% for Embp_9FG (Figure 4), supporting that Embp interacts with this subdomain. As the adherence was not completely abolished by blocking the Fn-binding site, we cannot exclude the possibility that Embp interacts with other epitopes in Fn. However, the F3 12th-14th repeat is of major significance.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig4-v2.jpg)\n\n**Figure 4.:** Staphylococcus carnosus TM300 expressing either F- (panel A) or FG-repeats (panel B) were passed through flow cells for 2 hr before enumeration of attached cells by microscopy. Adsorption of Fn only promoted attachment on poly(ethyl acrylate) (PEA)-coated surfaces where Fn fibrillated. Blocking of Fn at FnIII 12th-14th by specific antibodies (Antibody 1) resulted in decreased bacterial attachment, which indicates that Embp binds to this domain. Blocking of Fn at a different domain (FnIII 5th, Antibody 2) was included as a control for non-specific blocking of Fn by the antibodies. This antibody had no effect on bacterial attachment. p-Values are indicated (two-tailed t-test).\n\n### F and FG modules attach to Fn\n\nAfter learning that Embp interacts exclusively with fibrillated Fn, we probed the strength of this interaction by single-cell atomic force spectroscopy. Single S. carnosus expressing Embp_5F or Embp_9FG were attached to colloidal AFM probes, approached to an Fn-coated PMA or PEA surface with controlled force, and then retracted to detect the force needed to detach the cell from the surface. As expected, the force-distance curves obtained from these experiments show that both F and FG fragments bind to fibrillated but not to globular Fn. The average maximum adhesion force between S. carnosus and surfaces with fibrillated Fn was 1.19\u00b10.21 and 1.16\u00b10.18 nN, respectively, for S. carnosus expressing Embp_5F or Embp_9FG (Figure 5). In contrast, the corresponding adhesion force to surfaces with globular Fn was only 0.16\u00b10.09 and 0.12\u00b10.04 nN. The adhesion force and the shape of the force-distance curves reflect multiple binding events between the cell and the Fn-coated surface. The multiple binding events could either be due to multiple Embp fragments on the cell surface interacting with Fn or multiple interactions between a single Embp fragment and Fn.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig5-v2.jpg)\n\n**Figure 5.:** Single Staphylococcus carnosus cells expressing either F- or FG-repeats were immobilized on a colloidal atomic force microscopy (AFM) cantilever, and force-distance curves were measured by approaching and retracting the cantilever to surfaces with fibrillated or globular Fn. Adhesion events are recognized as negative peaks on the force axis below the horizontal baseline.\n\n### Embp binds to fibrillated Fn in a Velcro-like manner\n\nEmbp contains 50 Fn-binding repeats, and it must be costly for S. epidermidis to produce this enormous 1 MDa protein. How might S. epidermidis benefit from the many repetitive binding domains? We hypothesize that multivalent interactions can occur if the ligand for this giant adhesin is fibrillated, resulting in presentation of multiple binding domains in close proximity. Such multivalent binding would work like Velcro, as many weak binding events result in strong attachment. Such a Velcro effect could provide adhesion forces strong enough to attach S. epidermidis to Fn via a single Embp protein. To investigate this hypothesis, we expressed and purified rEmbp fragments that contained 1, 4, and 15 repeats of FG-repeats, attached them to an AFM cantilever using 6\u00d7 His-NTA interaction, and quantified their interaction with Fn by SMFS. In agreement with previous experiments, the FG-repeat did not interact with the globular form of Fn (Figure 6). The interaction force of a 1 or 4 FG-repeat with fibrillated Fn was also insufficient to be detected. However, the interaction force of 15 FG-repeats was 432\u00b148 pN with fibrillated Fn, confirming the value of multidomain interaction with the fibrillated ligand (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig6-v2.jpg)\n\n**Figure 6.:** Recombinant extracellular matrix-binding protein (Embp) consisting of either 1 (A), 4 (B), or 15 (C) FG-repeats was tethered to a chemically modified silicon probe trough 6\u00d7 His-NTA interaction. Force-distance curves were measured toward fibrillated Fn on poly(ethyl acrylate) (PEA) and globular Fn on poly(methyl acrylate) (PMA).\n\n### Embp is necessary for attachment under high flow\n\nIn our investigating of the interaction mechanism between Embp and Fn, we used fusion proteins that contained only a few of the F- or FG-repeats displayed on the surface of S. carnosus which has no other adhesive proteins. However, S. epidermidis has many other cell wall anchored adhesins, and the key to understanding Embp\u2019s role in S. epidermidis\u2019 pathogenicity therefore lies in understanding the circumstances under which Embp-producing S. epidermidis strains have an advantage. If oriented perpendicular to the cell surface, Embp could potentially stretch several hundred nm from the cell surface. We measured the hydrodynamic radius of S. epidermidis overexpressing Embp, and confirmed that it was significantly larger than for S. epidermidis lacking Embp (2.3\u00b10.4 \u03bcm vs. 1.3\u00b10.2 \u03bcm, two-tailed t-test, n=3, p=0.02).\n\nWe speculated that Embp would be more effective than other adhesins when S. epidermidis is attaching to Fn under high sheer stress. We therefore compared attachment of the two strains at low flow (0.03 dyn cm\u20132) and high flow (0.53 dyn cm\u20132). At low flow, Embp increased attachment to Fn by approximately 20% (two-tailed t-test, p=0.03), and at high flow, attachment was only possible Embp was expressed (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig7-v2.jpg)\n\n**Figure 7.:** Attachment to poly(ethyl acrylate) (PEA) +/-Fn was quantified for Staphylococcus epidermidis overexpressing (circles) or lacking (triangles) Embp at high flow (gray symbols, left y axis) and low flow (white symbols, right y axis). Expression of Embp led to a 20% increase in attachment at low flow (two-tailed t-test, unequal variance, p=0.03). At high flow, only the Embp-expressing strain could attach (two-tailed t-test, p=0,0009). Black bars show sample mean.\n\n## Discussion\n\nIn this study, we show that the giant cell surface protein Embp exclusively binds to fibrillated Fn because the binding site located at F3 12th \u201314th repeat is not accessible in the globular, soluble form of Fn. This discovery has implications for our understanding of how S. epidermidis colonizes host tissue and biomedical implants. Colonization and biofilm formation is the only virulence factor of S. epidermidis, and it is therefore imperative to cause disease (Both et al., 2021).\n\nImplants provide a surface for attachment and are therefore vulnerable to biofilm infections. The implant surface is immediately covered by host proteins when it is inserted into the body, and bacterial attachment is assumed to occur via specific receptor-ligand interactions between adhesins on the bacterial cell and host proteins adsorbed to the implant surface. The abundance of the same host proteins in solution poses a dilemma: How can bacteria attach to implant surfaces via proteins that are also available in solution? Based on previous research (B\u00fcttner et al., 2020; Christner et al., 2010), we hypothesized that adsorption-induced conformational changes can affect how accessible a host protein is for bacterial adhesins. In the case of Embp and Fn, the fibrillation of Fn on the implant surface is decisive for its availability as a ligand for bacterial attachment. The selective interaction with fibrillated Fn illustrates how biology has solved the need for interaction with a protein in one location (the extracellular matrix of host tissue) while ignoring the same protein in another location (the bloodstream).\n\nOur results also challenge notion that adsorbed host proteins always assist bacterial colonization. Motivated by this assumption, much research has been devoted to developing materials or coatings that prevent protein adsorption altogether. However, our results suggest that biomaterials\u2019 susceptibility to bacterial colonization does not only depend on protein adsorption, but also on the conformation of adsorbed proteins \u2013 a concept that is familiar to cell biologists studying adhesion of mammalian cells, but less so to microbiologists studying bacterial attachment. The role of host protein conformation in bacterial attachment could explain the conflicting results from in vitro studies of how serum proteins affect attachment of staphylococci. Some studies report increased attachment (Christner et al., 2010; Paharik and Horswill, 2016; Williams et al., 2002; Maxe et al., 1986), while others report the opposite (Paulsson et al., 1994; Pestrak et al., 2020). Perhaps these discrepancies reflect differences in how the underlying material affected the conformation of adsorbed serum proteins. Our study investigated bacterial attachment in a simplified model system with only one host protein, but if the concepts hold true in serum, it opens a door to controlling bacterial attachment by manipulating the conformation of adsorbed proteins, which is a more manageable task than avoiding protein adsorption entirely.\n\nThe large number of repetitive domains in Embp and its homologs in S. aureus (Ebh) and Streptococcus defectivus (Emb) is unusual among bacterial adhesins, and we wondered how pathogens benefit from producing such large proteins. One benefit could be that the adhesin protrudes from the cell surface, which makes it easier to overcome electrostatic repulsion and reach its ligand. At present, no experimental evidence is available to directly demonstrate the organization of Embp on the cell surface. However, given the stretched overall architecture revealed by structural analysis (B\u00fcttner et al., 2020), it appears plausible the molecule\u2019s length is similar to that of Ebh in S. aureus. Ebh is a 1.1 MDa protein with 52 repetitive domains, and its length was predicted to be 320 nm (Tanaka et al., 2008). We show that the hydrodynamic radius of S. epidermidis overexpressing Embp was approximately 1 \u03bcm larger than S. epidermidis lacking Embp. It is thus likely that Embp extends well beyond the electric double layer.\n\nAnother advantage of adhesins with repetitive binding domains is the possibility for multivalent interaction with the ligand. Such multivalency is only possible if the ligand is fibrillated and thereby presenting many copies of its binding domain in proximity of one another. Indeed, we showed that a single FG module interacts weekly with Fn, while the interaction force of 15 FG-repeats was 432\u00b148 pN. We therefore propose that the selective interaction with fibrillated Fn is caused by (i) the exposure of an otherwise buried binding domain and (ii) the possibility of a stronger, multivalent interaction between multiple FG-repeats and the fibrillated ligand.\n\nThe typical strength of receptor-ligand bonds is about 20\u2013200 pN (M\u00fcller et al., 2009). Hence, the interaction between 15 FG-repeats and Fn resulted in a very strong bond, and the interaction with full sized Embp is likely much stronger. Moreover, the force required to detach Embp from fibrillated Fn will depend on whether all binding repeats detach at once, or whether detachment can occur from the serial unbinding of the repeats one by one. This is akin to detachment of Velcro: The attachment is very strong, but detachment can be obtained by the serial unbinding of individual interactions. The force-distance curves can provide information about how detachment occurs. On a close inspection, it is clear that initial retraction events are the strongest and provide the highest adhesion force, indicating that multiple bonds are broken at the same time (Figure 6B). But we also observe multiple subsequent perturbations as evidence to serial rupture, unfolding or stretching events. This holds true for interactions with 15 FG-repeats, but multiple perturbations are also observed for a single FG-repeat. In this case, the perturbations likely arise from the stretching and ruptures of surface-bound Fn yielding an average adhesion force of 92\u00b127 pN, which is around the detection limit for this setup. Similar results were observed for 4 repeating units with average adhesion force of 68\u00b143 pN. On surfaces with globular Fn, little to no interaction was observed, although 15 repeating units undergo certain irregular interactions. An explanation for the observed irregularities could be simply the protein\u2019s self-occupation/entanglement as would often happen with long polymer chains. Additionally, as can be seen from Figure 3, the surface distribution of Fn can vary, depending on the local density. This may be an insignificant problem for the dynamics of cell populations, however, when it comes to assessing the behavior of an individual cell or protein, the local density can affect the results.\n\nIn conclusion, the specific binding domain and repetitive structure of Embp provides an opportunity for S. epidermidis to interact selectively and strongly with fibrillated Fn, using a single adhesive protein. The open question is how this unique Velcro-like of interaction plays into the pathology of S. epidermidis and other pathogens that contain homologs of this protein in their genome. The genome of S. epidermidis is highly variable, and not all isolates possess the same repertoire of genes for host colonization and biofilm formation (Post et al., 2017). Embp, however, is present in two-thirds of S. epidermidis isolates from orthopedic device-related infections (Post et al., 2017) and 90% of isolates from bloodstream infections (Salgueiro et al., 2017), which indicates some importance for its pathogenicity. In a recent study of adhesive vs. invasive S. epidermidis isolates, Embp was not more frequent in any of the groups (Both et al., 2021). Hence, there is no indication of a general role of Embp for invasiveness vs. colonization. We speculate that strong attachment via a single protein like Embp could be particularly advantageous in locations where shear forces make attachment difficult. Biofilms generally do not form in blood vessels unless there is an implant or a lesion on the endothelium. Infections like endocarditis often start with such a lesion (Steckelberg and Wilson, 1993), which makes the site susceptible to bacterial attachment. Fibrillated Fn forms on the surface of platelets in the early stages of wound healing (To and Midwood, 2011), and perhaps the abundance of fibrillated Fn plays role in the elevated infection risk by S. epidermidis strains that carry Embp. The abundance of Embp among isolates from such infections remains to be investigated.\n\nWe show here that Embp makes a moderate contribution to attachment under low flow, leading to a 21% increase in the number of attached bacterial, while it is essential for attachment under high flow (Figure 7). Other than Embp, only the autolysin Aae has been reported to bind Fn based on in vitro studies of purified proteins (Heilmann et al., 2003), and S. epidermidis 1585 does contain this gene. It is possible that Aae and even non-specific interaction forces contributed to adhesion of S. epidermidis at low flow, whereas only Embp attaches with sufficient force to prevent detachment at high flow.\n\nPreviously published studies have shown that the binding force of some bacteria adhesins is promoted by external mechanical forces, such as shear stress when under flow, achieved in the \u2018dock, lock, and latch\u2019 mechanism observed for the Clf-Sdr family of adhesins when binding to fibrinogen (Herman et al., 2014; Herman-Bausier et al., 2017; Vanzieleghem et al., 2015; Viela, 2019). However, our data do not suggest that increased shear stress would strengthen the interaction force between Embp and Fn, as the overall attachment rate of bacteria decreases by approximately 80% at the high flow rate. Furthermore, the structural analysis of Embp carried out by B\u00fcttner et al., 2020, points out that the Embp represents a novel mode of interaction between bacterial adhesins and host extracellular matrix proteins. Considering the giant size of Embp, one can speculate that stretching of Embp due to lateral external mechanical forces will increase its contact area with surface-organized Fn, and thereby increase the probability of successful binding events leading to adhesion. However, our data do not reveal whether this is the case. What we can conclude with certainty is that Embp is essential for attachment when host colonization is challenged by shear forces, and this observation suggests that Embp may be significant for biofilm formation in the cardiovascular system, for example, on cardiovascular grafts. Future research in animal models will determine Embp\u2019s role in colonization of endothelial cells and implants in the cardiovascular system.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, Strain backgroundStaphylococcus epidermidis</td>\n      <td>1585 WT</td>\n      <td>PMID:15752207</td>\n      <td>ATCC12228</td>\n      <td>Clinical isolate</td>\n    </tr>\n    <tr>\n      <td>Genetic reagentStaphylococcus epidermidis</td>\n      <td>1585Pxyl/tet embp</td>\n      <td>PMID:19943904</td>\n      <td></td>\n      <td>Expresses Embp from inducible promotor</td>\n    </tr>\n    <tr>\n      <td>Genetic reagentStaphylococcus epidermidis</td>\n      <td>\u0394embp</td>\n      <td>PMID:33082256</td>\n      <td></td>\n      <td>Deficient of Embp</td>\n    </tr>\n    <tr>\n      <td>Genetic reagentStaphylococcus carnosus</td>\n      <td>TM300 \u00d7 pEmbp_5F</td>\n      <td>PMID:33082256</td>\n      <td></td>\n      <td>Recombinant Embp fragment (5 F-repeats) expressed in surrogate host</td>\n    </tr>\n    <tr>\n      <td>Genetic reagentStaphylococcus carnosus</td>\n      <td>TM300 \u00d7 pEmbp_9FG</td>\n      <td>PMID:33082256</td>\n      <td></td>\n      <td>Recombinant Embp fragment (9 FG-repeats) expressed in surrogate host</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Fibronectin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog # F0895</td>\n      <td>0.1% solution isolated from human plasma</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Embp2588 IgG (rabbit polyclonal)</td>\n      <td>Rhode labPMID:19943904</td>\n      <td></td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit IgG conjugated with Alexa Fluor 635 (goat polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Catalog # A31577</td>\n      <td>(1:300)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human Fn IgG (FNIII 12\u201314) (mouse monoclonal)</td>\n      <td>Santa Cruz Biotech</td>\n      <td>Catalog # sc-18827</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human Fn IgG (FNIII 5th) (Mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #F0916</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgG conjugated with Alexa Fluor 635 (goat polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Catalog #A31574</td>\n      <td>(1:300)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Goat serum</td>\n      <td>Invitrogen</td>\n      <td>Catalog # 31873</td>\n      <td>Blocking buffer</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ethyl acrylate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #E9706-1L</td>\n      <td>Monomer for generating PEA</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methyl acrylate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #M27301-1L</td>\n      <td>Monomer for generating PMA</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Benzoin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #B8633</td>\n      <td>Initiator for the polymerization</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Phusion High-Fidelity PCR Kit</td>\n      <td>New England Biolabs</td>\n      <td>Catalog #E0553S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>GenElute PCR Clean-Up Kit</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #NA1020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Gibson assembly ligation master mix</td>\n      <td>New England Biolabs</td>\n      <td>Catalog #E5510S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>GeneJET Plasmid Miniprep Kit</td>\n      <td>Thermo Scientific</td>\n      <td>Catalog #K0702</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>SYTO-9</td>\n      <td>Invitrogen</td>\n      <td>Catalog #S34854</td>\n      <td>DNA-binding fluorescent stain</td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial strains\n\nS. epidermidis 1585 WT is a clinical isolate obtained from Rhode lab in UKE, Hamburg. S. epidermidis 1585Pxyl/tet embp expresses Embp from an inducible promotor and was used for to ensure that Embp was expressed because the regulation of the native promotor is not well described. S. epidermidis \u0394embp is a null mutant lacking Embp. Recombinant expression of F- or FG-repeats in the surrogate host S. carnosus was used to study the interaction of Embp modules without the interference from other adhesins. S. carnosus TM300 \u00d7 pEmbp_5F expresses rEmbp consisting of 5 F-repeats, and S. carnosus TM300 \u00d7 pEmbp_9FG expresses rEmbp consisting of 9 FG-repeats. All strains were generated previously in the Rhode lab (B\u00fcttner et al., 2020).\n\n### Immunofluorescence of Embp fusion protein\n\nExpression of Embp fusion protein in a non-adhesive surrogate host was critical for studying the interaction of Embp without interfering interactions from other adhesive proteins on the surface of S. epidermidis. We therefore started out by confirming the presence of Embp fragments on the surface of the surrogate host. S. carnosus TM300 WT, and S. carnosus TM300 \u00d7 pEmbp_5F were grown overnight in brain heart infusion (BHI) broth with 10 \u03bcg ml\u20131 chloramphenicol (Sigma-Aldrich, Germany). Expression of Embp fragments in the mutant strains was induced with 200 ng ml \u20131 anhydrotetracycline (AHT) after diluting the culture 100 times in BHI. Cells were grown for 6 hr at 37\u00b0C in a shaking incubator with 180 rpm until the 600 nm optical density (OD600) reached approximately 1. Cells were harvested by centrifugation (4000\u00d7 g or 10 min) and resuspended in phosphate buffered saline (PBS). A droplet of the resuspended cells was placed on a SuperFrost Ultra Plus slides (Invitrogen, Waltham, MA) for 45 min to allow the bacteria to adsorb. After washing off unbound cells, the bacteria were fixed with 4% paraformaldehyde for 30 min at room temperature and washed twice with PBS. Samples were blocked with 5% goat serum (Invitrogen, Waltham, MA) for 45 min, washed, incubated with anti-Embp2588 IgG antibodies (Christner et al., 2010) diluted 1:200 in blocking buffer at room temperature for 1 hr, washed three times, and then incubated with the secondary antibody (anti-rabbit IgG conjugated with Alexa Fluor 635, Invitrogen, Waltham, MA) diluted 1:300 in blocking buffer for 1 hr at room temperature. Cells were then washed three times and stained with 10 \u00b5M SYTO 9 (Invitrogen, Waltham, MA) in PBS for 10 min, washed three times, and visualized by confocal laser scanning microscopy (CLSM) (LSM700, Zeiss, Germany) using 488 excitation for SYTO 9, and 639 nm excitation Alexa Fluor 635 conjugated antibody, and a 63\u00d7 Plan-Apochromat N/A 1.4 objective.\n\n### Interaction of Embp with soluble Fn\n\nWe first investigated if S. epidermidis or a surrogate host expressing Embp fragments interacted with soluble Fn in its globular conformation. S. aureus 29213 WT (positive control for soluble Fn binding) S. epidermidis 1585 WT, S. epidermidis 1585\u0394embp (Embp knockout), were grown in BHI without antibiotics. S. epidermidis 1585Pxyl/tet embp (Embp overexpressed) was grown in BHI with 5 \u03bcg ml\u20131 erythromycin, S. carnosus TM300 \u00d7 pEmbp_5F (5 F-repeats) and S. carnosus TM300 \u00d7 pEmbp_9FG (9 FG-repeats) were grown in BHI with 10 \u03bcg ml\u20131 chloramphenicol. Expression of Embp, F- and FG-repeats in the mutant strains was induced with 200 ng ml \u20131 AHT after diluting the culture 100 times in BHI. Cells were grown for 6 hr at 37\u00b0C in a shaking incubator with 180 rpm until reaching OD600 of approximately 1. Cells were harvested by centrifugation (4000\u00d7 g for 10 min) and resuspended in PBS. A droplet of the resuspended cells was immobilized on a SuperFrost Ultra Plus slides (Invitrogen, Waltham, MA) for 45 min to allow the bacteria to adsorb. The unabsorbed cells were removed by washing with PBS, and the adsorbed cells were then blocked with 3% BSA for 45 min. Cells were then incubated with 100 \u00b5g ml\u20131 Fn in PBS (Sigma-Aldrich, F0895) for 60 min at room temperature. The unbound Fn was removed by washing three times with PBS. The samples were then fixed with 4% paraformaldehyde for 30 min at room temperature. Immunolabeling was then performed as described above, anti-Fn mouse IgG (Sigma-Aldrich) diluted 1:100 in blocking buffer and the secondary antibody (anti-mouse IgG conjugated with Alexa Fluor 635, Goat IgG \u2013 Invitrogen) diluted 1:300 in blocking buffer. Cells were stained and prepared for imaging as described above.\n\n### Preparation of polymer-coated surfaces\n\nQuantification of interaction forces between Embp and Fn in its globular or fibrillated form would require that Fn was immobilized to a surface. We used a previously published model system (Guerra et al., 2010; Rico et al., 2009) to generate Fn-coated surfaces that displayed Fn in these two conformations, while the physicochemical properties of the underlying surface were very similar, namely PEA and PMA. Polymers of ethyl acrylate and methyl acrylate were synthesized from their monomers (99% pure, Sigma-Aldrich, Germany) using radical polymerization. Benzoin (98% pure, Sigma-Aldrich, Germany) was used as a photoinitiator with 1 wt % for PEA and 0.35 wt % for PMA. The polymerization reaction was allowed in Schlenk flasks exposing to ultraviolet light (portable UV lamp with light of 390\u2013410 nm) up to the limited conversion of monomers (2 hr). Polymers were then dried to constant weight in a vacuum oven at 60\u00b0C for 12 hr. Both polymers were solubilized in toluene (99.8% pure, Sigma-Aldrich) to concentration of 6% w/v for PEA and 2.5% w/v for PMA. Two hours sonication in an ultrasonic bath at room temperature was used to make the polymer soluble. Glass slides (76 \u00d7 26 mm, Hounisen) were cleaned with sonication in ultrasonic bath for 15 min in acetone, ethanol, and Milli-Q water respectively, and then dried under nitrogen flow. A thin film of polymer solution was coated on clean slides using spin-coater (Laurell Technologies) with acceleration and velocity of 1000 rpm for 30 s. The spin-coated films were degassed in a desiccator for 30 min under vacuum and then put in a vacuum oven at 60\u00b0C for 2 hr to remove toluene.\n\n### Fn adsorption to PMA and PEA\n\nA hydrophobic marker (PAP pen \u2013 Sigma-Aldrich) was used to draw a small circle (around 0.5 cm square area) on the spin-coated slides. Fn from human plasma (Sigma-Aldrich, F0895) was dissolved in PBS at concentration of 20 \u00b5g ml\u20131 and 100 \u03bcl sample was adsorbed on each slide for 1 hr at room temperature.\n\n### AFM for imaging of Fn adsorbed to PMA and PEA\n\nExperiments were conducted on three replicate samples with JPK Nanowizard IV (JPK, Germany) using HQ: CSC38/No Al (MikroMasch, San Jose, CA) and TR400PSA (Asylum Research, Santa Barbara, CA) cantilevers. We used the fluid mode of operation to visualize Fn adsorbed to PEA and PMA without introducing artifacts from sample drying. The operating environment was controlled in a closed liquid chamber at 21\u00b0C with minimal evaporation. The operation parameters were set to optimize resolution with minimum possible damage or artifact from contaminations on the tip. Typically, scans were started with a large scan area of minimum 10 \u00d7 10 \u00b5m\u00b2 with a rather low scan resolution of 64 \u00d7 64 pixels and a high scan rate >1 Hz. Once an area of interest was identified, a higher resolution image 256 \u00d7 256 or 512 \u00d7 512 pixels of a smaller scan are was acquired at lower scan speeds (<1 Hz). The acquired data was processed using Gwyddion open software (http://gwyddion.net/) for necessary corrections of tilt, etc.\n\n### XPS of Fn adsorbed to PEA and PMA\n\nA 100 \u03bcl of Fn (20 \u00b5g ml\u20131) was adsorbed on a polymer spin-coated 1 \u00d7 1 cm2 glass slides (these slides were cut manually in the chemistry lab workshop) for 1 hr, and samples were then washed three times with Milli-Q water and dried under N2 flow. The chemical composition of the adsorbed layer was analyzed with a Kratos AXIS Ultra DLD instrument equipped with a monochromatic Al K\u03b1 X-ray source (h\u03bd=1486.6 eV). All spectra were collected in electrostatic mode at a take-off angle of 55\u00b0 (angle between the sample surface plane and the axis of the analyzer lens). The spectra were collected at new spots on the sample (n=3, 1 replicate) and were charge corrected to the C1s aliphatic carbon binding energy at 285.0 eV, and a linear background was subtracted for all peak areas quantifications. Analyzer pass energy of 160 eV was used for compositional survey scans of C1s, O1s, N1s, Na1s, Si2p, Cl2p, P2p, and K2p. High-resolution scans of C1s and N1s elements were collected at an analyzer pass energy of 20 eV. Compositions and fits of the high-resolution scans were produced in CasaXPS. The data is presented in a table as an average and standard deviation of the three sample spots.\n\n### FTIR analysis of Fn adsorbed to PEA and PMA\n\nFTIR measurements were performed on a Bruker Vertex v70 with 128 scans per spectrum and a 7 mm diameter beam spot. The concentration of Fn (20 \u00b5g ml\u20131) results in very small IR absorbances of the polymer layers, therefore, the spectra of stacks of eight coated CaF2 windows were measured simultaneously. For this, eight spin-coated CaF2 window surfaces with PMA and PEA were incubated for 1 hr with the 20 \u00b5g ml\u20131 Fn solution in PBS prepared in D2O (d-PBS hereafter), after rinsing the surfaces with d-PBS and placed four sets of windows (spaced by 25 \u00b5m Teflon spacers that were filled by d-PBS, with the polymer and protein-coated sides submerged in the d-PBS) in a custom-made IR cell. The incubated sample spectra were background-corrected by subtracting the spectra of the same neat d-PBS loaded windows. Before subtraction, we (i) corrected for small differences in the overall transmission of the protein and background samples (due to e.g. small differences in the amount of scattering of the IR beam, which can become significant with eight consecutive windows) by subtracting the absorption at 7500 cm\u20131, and (ii) corrected for small differences in the exact water layer thickness by scaling the spectra using a spectrally isolated absorption band of the D2O (the v1 + v2 combination band of the solvent\u2019s OD bending and stretching mode 1 at 3840 cm\u20131) to determine the scaling factor. But there is no reason to assume that the water and polymer layers thicknesses are related. Therefore, the resulting background-corrected amide-I (1600\u20131700 cm\u20131) PEA + Fn spectrum (Figure 3) still contains a tail of the 1733 cm\u20131 ester peak, which is absent in the resulting PMA + Fn spectrum. This is (i) because there is approximately six times more PEA present than PMA (as indicated by a least-square fit that minimized the total intensity of the subtraction of the PMA from the PEA background spectra in the 1700\u20131760 cm\u20131 region, see Figure 3\u2014figure supplements 4 and 5), and (ii) because the Fn incubation results in a slight loss of polymer, which is impossible to compensate for well by subtraction of the polymer spectra, because the 1733 cm\u20131 ester peak shape is affected by the presence of the protein (see Figure 3\u2014figure supplement 4d). The broadening of this peak by Fn incubation is probably because the ester groups in contact with the protein are slightly shifted with respect to the more buried ester groups that are not changed by the protein adsorption, resulting in two subpeaks that are slightly offset in frequency. Even though the PMA layer appears to be thinner and/or less dense, it will probably still be composed of many monolayers (as indicated by the XPS measurements), so this difference in thickness is not expected to affect the protein\u2019s interfacial behavior.\n\n### Quantification of bacterial attachment under flow\n\nIbidi sticky-slide VI 0.4 chambers (Ibidi, Germany) were glued to polymer-coated glass by using an equivalent mixture of silicon (DOWSIL 732 \u2013 Dow corning) and UV activating glue (Loctite 3106 Light Cure Adhesive). After flow cell assembly, 50 \u03bcl of Fn (20 \u00b5g ml\u20131) dissolved in PBS was injected to the channel of a flow cell and allow to adsorb statically for 1 hr at room temperature. The unbound Fn was removed by a flow of PBS (6 ml hr\u20131) using a syringe pump (Harvard Apparatus, Holliston, MA) for 15 min. Bacterial cells were subcultured from an overnight culture and grown for 6 hrs at 37\u00b0C and 180 rpm, harvested by centrifugation (4000\u00d7 g for 10 min), and resuspended in PBS to an OD600 of 0.1. The cell suspension was flowed through the flow cell chamber at 3 ml hr\u20131 for 2 hr at room temperature. The unbound cells were washed with PBS at 9 ml hr\u20131 for 30 min. Attached bacteria were visualized by brightfield microscopy (Zeiss Axiovert A100, 20\u00d7 objective) and counted. A minimum of five images were acquired per replicate, and a minimum of 200 cells were counted per replicate. Three replicate samples were analyzed, and individually grown bacterial cultures were used on each replicate.\n\nThe first experiment compared attachment of S. carnosus TM300 \u00d7 pEmbp_5F and S. carnosus TM300 \u00d7 pEmbp_9FG to PEA and PMA surfaces with and without Fn to investigate if the Fn-binding domains of Embp interacted selectively with the fibrillated form of Fn. The second experiment investigated which domain of Fn Embo interacted with. Previous studies had shown that that Embp binds to the F3 12th-14th domain of Fn (Christner et al., 2010), however, this experiment was only performed with recombinant fragments of Fn and not the full-length protein. We therefore investigated the role of this Fn domain in the attachment of bacteria via Embp. Flow cell experiments were carried out as described above, comparing attachment via F or FG to fibrillated Fn directly or after blocking for F3 12th-14th domain within IgG antibodies (anti-Fn, sc-18827, Santa Cruz Biotech). As a control, fibrillated Fn was blocked with IgG antibodies specific for another Fn domain (F3 5th domain). The unbound antibodies were removed with PBS (6 ml hr\u20131, 15 min) before investigating bacterial attachment as described above.\n\nThe final experiment addressing attachment under flow compared the attachment of S. epidermidis 1585 Pxyl/tet embp and S. epidermidis \u0394embp. The strains were inoculated from single colonies into BHI broth (amended with 5 \u03bcg ml\u20121 erythromycin and 200 ng ml\u20131 AHT for the Pxyl/tet embp strain) and grown overnight at 37\u00b0C, 180 rpm, harvested by centrifugation, and resuspended in PBS to OD600=0.3, transferred to the syringe pump and passed through the flow cells at either 1 or 18 ml min\u20131 flow rate for 1 hr followed by a 30 min PBS washing step of 6 or 36 ml min\u20131, respectively. Attached cells were imaged by brightfield microscopy and by CLSM after staining with 20\u00d7 SYBR Green II (Sigma-Aldrich).\n\n### Hydrodynamic radius\n\nS. epidermidis 1585 Pxyl/tet embp and S. epidermidis \u0394embp were prepared as described above, transferred to cuvettes and analyzed by dynamic light scattering (Folded Capillary Zeta Cell, Malvern, PA). Measurements of surface charge and cell diameter were carried out using Zetasizer Nano (Malvern Panalytical) on three replicate samples prepared from individually grown overnight cultures.\n\n### Single-cell force spectroscopy\n\nSCFS measurements were conducted on Fn adsorbed in its globular conformation to PMA or its fibrillated conformation to PEA. For SCFS measurement, colloidal probes with 10 \u00b5m glass beads (SHOCON-BSG-B-5, Applied NanoStructures Inc, Mountain View, CA) were selected and coated by polymerizing a dopamine solution of 4 mg ml\u20131 dopamine hydrochloride (99%, Sigma-Aldrich, H8502) in 10 mM Tris-HCl buffer at pH 8.5, and then calibrated in situ for single-cell attachment. S. carnosus TM300 expressing 5 F- and 9 FG-repeats were subcultured from overnight cultures and incubated for 6 hr in fresh media, harvested and resuspended in PBS as described above. A 100 \u00b5l drop of this solution was placed on a glass slide and incubated for 10 min, after which the unadsorbed bacteria were removed by rinsing with PBS. A colloidal probe was immersed and positioned on top of a single cell with the help of inverted optical microscope. The probe was made to contact a single cell for 5 min then retracted after the cell attachment. Once a cell was picked up (confirmed by optical microscopy), the substrate was changed to Fn-coated surfaces and SCFS was executed. The acquired force-distance plots were processed using the Nanowizard\u2019s (JPK, Germany) own processing software. Experiments were conducted on two replicate samples (minimum 20 replicate force curves on each).\n\n### Cloning and purification of F- and FG-repeats\n\nGenomic DNA was extracted from S. epidermidis 1585 WT strain using the Qiagen DNA kit (Qiagen, Hilden, Germany) by following the instructions of the manufacturer. The only exception made in the kit protocol was that cells were lysed with 15 U of lysostaphin, which was added to buffer P1. The nucleotide sequence of 1, 4, and 15 repeats of the FG-repeats was amplified from genomic DNA using primers (Table 2) with Phusion High-Fidelity PCR Kit (NEB \u2013 E0553S). The PCR products were purified with GenElute PCR Clean-Up Kit (Sigma-Aldrich NA1020). The expression vector pET302/NT-His was digested with EcoR1 restriction enzyme (NEB R0101S) and run on a 1.5% agarose gel. The digested vector was purified from the gel using the GenElute Gel Extraction Kit (Sigma-Aldrich NA1111). The purified PCR product of each rEmbp was ligated with the digested vector in a ratio of 3:1 using the Gibson assembly ligation matrix mix (NEB E5510S). Each ligation reaction was incubated for 1 hr at 50\u00b0C. The ligated products were transformed into the chemically competent Escherichia coli strain (Top10). The colony PCR was performed with REDTaq ReadyMix (Sigma-Aldrich R2523) using the T7 promoter primer as forward and the T7 terminator primer as the reverse. Cells from each selected colony were grown overnight in LB with 100 \u03bcg ml\u20131 ampicillin, and a plasmid miniprep was prepared using GeneJET Plasmid Miniprep Kit (Thermo Scientific K0702). Plasmids were sequenced with both T7 promoter and terminator primers by the Eurofins A/S (Hamburg, Germany). The plasmid of each Embp construct was transformed into an expression system (chemically competent E. coli, BL21-DE3). A single colony of the transformants was used to inoculate 2 l of LB with 100 \u03bcg ml\u20131 ampicillin until the OD600 of 0.6. For the overexpression, cells were induced with 1 M IPTG, and incubated for 16 hr on 28\u00b0C in shaking incubator at 180 rpm. Cells were harvested and lysed in binding buffer with sonication (30% amplitude, 15 s off, 15 s on) for 3 min on ice. After centrifugation, the supernatant was filtered with a 0.22 \u03bcm syringe filter and run on a nickel-nitrilotriacetic acid (Ni-NTA) column using \u00c4KTA Purifier-10 purification system. The column was washed with 5\u20138 column volumes, and the fusion proteins Embp was then eluted in fractions using elution buffer. Fractions of each rEmbp were pooled, concentrated with Amicon Ultra centrifugal filter tubes with a cut-off 3 kDa (Millipore Sigma UFC9003). Proteins were further purified with (HiTrap Q FF) column by anion exchange (IEX) chromatography using IEX binding and elution buffer, followed by size exclusion chromatography (SEC) with column (Superdex 200 Increase 10/300 GL) using MES buffer on \u00c4KTA Purifier-10 purification system. After each column, the elution fractions were run on SDS-PAGE to check the purification quality. Buffers used for rEmbp purification are listed in Table 3.\n\n**Table 2.**\n Primers for recombinant Embp (rEmbp) cloning into pET302/NT-His.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer</th>\n      <th>Sequence (5\u2032 to 3\u00b4)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>FG forward</td>\n      <td>AGAAGGAGATATACATATGCATCATCATCATCATCACGTGGAATTCGAAAACC TGTATTTTCAGGGCGGAGATCAAAAACTTCAAGATG</td>\n    </tr>\n    <tr>\n      <td>1 FG reverse</td>\n      <td>TCCGATTATACCTAGGCTCGAATATCATCGATCTCGAGCGGAATTCTTAATGA AGATTTTGTTCAGC</td>\n    </tr>\n    <tr>\n      <td>4 FG reverse</td>\n      <td>TCCGATTATACCTAGGCTCGAATATCATCGATCTCGAGCGGAATTCTTAATGT AAACTTTCTCTAGC</td>\n    </tr>\n    <tr>\n      <td>15 FG reverse</td>\n      <td>TCCGATTATACCTAGGCTCGAATATCATCGATCTCGAGCGGAATTCTTAATT TAACGATGTTTCTGC</td>\n    </tr>\n    <tr>\n      <td>T7 Promotor</td>\n      <td>TAATACGACTCACTATAGGG</td>\n    </tr>\n    <tr>\n      <td>T7 Terminator</td>\n      <td>GCTAGTTATTGCTCAGCGG</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Buffer used for recombinant Embp (rEmbp) purification.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Buffer name</th>\n      <th>Composition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Binding/lysis</td>\n      <td>50 mM K2PO4, 500 mM NaCl, 400 mM imidazole, pH 7.4</td>\n    </tr>\n    <tr>\n      <td>Ni-NTA elution</td>\n      <td>50 mM K2PO4, 500 mM NaCl, 40 mM imidazole, pH 7.4</td>\n    </tr>\n    <tr>\n      <td>IEX binding</td>\n      <td>20 mM Bis-Tris propane, pH 6.0</td>\n    </tr>\n    <tr>\n      <td>IEX elution</td>\n      <td>20 mM Bis-Tris propane, 1 M NaCl, pH 6.0</td>\n    </tr>\n    <tr>\n      <td>SEC</td>\n      <td>50 mM MES, 150 mM NaCl, pH 6.0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Single-molecule force spectroscopy\n\nSMFS measurements, similar to SCFS, conducted on Fn adsorbed to either PEA and PMA. For the SMFS experiments, the probes were prepared by attaching rEmbp fragments of various lengths with the use of 6\u00d7 His-NTA interaction. The procedure was similar to that of Obataya et al., 2005. In short, silicon probes were cleaned with ozone, and UV light then kept in one to one isopropyl alcohol and ethanol mixture overnight. Tips were rinsed in deionized water and air-dried, after which they were functionalized with 2% (3-mercaptopropyl) trimethoxysilane in EtOH for 30 min. Probes were then exposed to maleimide-C3-NTA in 50% DMF/100 mM Tris-HCl (pH7.5\u00b10.1) overnight. Ten mM NiCl2 was used to chelate the NTA groups on the tip, which was then dipped in bovine serum albumin (1 mg ml\u20131 in PBS) to passivate the surface. The attachment of 6\u00d7 His-tagged rEmbp fragments with 1, 4, or 15 repeating units of Fn-binding repeats was completed by 1 hr incubation of respective samples at room temperature. After a probe for each repeating unit was prepared, force-distance curves were collected on three replicate samples and processed, as mentioned above.\n",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "615b7d38-d2e7-45bd-8824-06af38f53838",
+      "submission_id": "eee7e51b-ea40-4bfc-b4f5-609070a724aa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vaughn S Cooper, https://ror.org/01an3r305 University of Pittsburgh United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76164.sa0](https://doi.org/10.7554/eLife.76164.sa0)\n\nBacteria must adhere to tissue to colonize and, in some cases, cause disease. Thus adherence is a key to understanding the pathogenesis of infectious diseases. This study uses a range of microscopic and biophysical measures to discover that Embp, a very long protein of repeating subunits, facilitates adherence of Staphylococcus epidermidis to damaged tissue or foreign bodies (e.g. catheters or implantable devices) even under high flow conditions such as those found in blood.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Vaughn S Cooper, https://ror.org/01an3r305 University of Pittsburgh United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76164.sa1](https://doi.org/10.7554/eLife.76164.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The giant staphylococcal protein Embp facilitates colonization of surfaces through Velcro-like attachment to fibrillated fibronectin\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor, Vaughn Cooper, and Wendy Garrett as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Paul Fey (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The flow cell experiments are very impactful. However, outstanding questions arise regarding if the investigators know what is facilitating adherence under low flow conditions? Does 1585 express Aap? There are a few experiments suggesting Aap may facilitate adherence to serum binding proteins.\n\n2) Related to above: One of the important aspects of this paper is measuring bacterial adhesion to immobilized fibronectin under flow. It is important to determine how shear-stress impacts on the strength of the bond between Embp and fibronectin, which can be performed using AFM. For MSCRAMMs such as SdrG and ClfB, shear forces actually promote strong binding by simulating the final stage of the dock-latch-lock process, which should be addressed and may require experimentation.\n\n3) It would aid the discussion if the authors could discuss the population biology of strains expressing Embp. I assume it is not on a mobilizable island\u2026is it found primarily in ST2 strains, etc. I think this is important, have we selected strains that can adhere to foreign bodies? is Embp expression part of that selection process? The brief discussion related to the function of Embp and adherence to native, damaged tissue, which may have been the original function of this protein, is very effective.\n\nReviewer #1 (Recommendations for the authors):\n\nThere are a few concerns that I have, overall, I think the manuscript will be very impactful.\n\n1. I would like to have seen a control in figure 1 documenting what the S. aureus phenotype is dependent upon. Is this phenotype Fibronectin binding protein-dependent?\n\n2. Figure 3 and other aspects of the AFM. It seems there should be a S. carnosus TM300 control only without expression of Embp.\n\n3. The flow cell experiments are very impactful. However, as a reader, I was really interested to know if the investigators knew what was facilitating adherence under low flow conditions? Does 1585 express Aap? There are a few experiments suggesting Aap may facilitate adherence to serum binding proteins.\n\n4. It would aid the discussion if the group could discuss the population biology of strains expressing embp. I assume it is not on a mobilizable island\u2026is it found primarily in ST2 strains, etc. I think this is important--have we selected for strains that can adhere to foreign bodies? is Embp expression part of that selection process? I was glad to see the brief discussion related to the function of Embp and adherence to native, damaged tissue, which may have been the original function of this protein.\n\nLine 85-An advantage\n\nLine 101, italicize S. epidermidis\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013The role of AFM in elucidating the interactions between staphylococcal wall anchored proteins and ligands should be discussed in the introduction and discussion. This will place the current study in the context of the state of the art.\n\n\u2013 The AFM experiments should be more detailed as exemplified by Dufrene's papers\n\nThe rationale for the application of AFM to study adhesin-ligand interactions should be explained simply for the non-expert. Three different approaches have been employed \u2013 non-parametric contact mode imaging of immobilized Fn (Figure 2), single cell force microscopy and single molecule force microscopy.\n\n\u2013 The 3D structure of the Fn binding domains of Embp has been published by one of the co-authors of the current study. To advance the state of the art in a substantial way the molecular details of the binding interaction of Embp with the type III Fn domain should be provided or at least modelled.\n\n\u2013 The graphic image should show a single Embp protein interacting with several Fn molecules bearing in mind that there is only one Embp binding domain in each Fn molecule. It would be interesting to know the stoichiometry of binding \u2013 to how many Fn molecules can a single Embp protein bind.\n\n\u2013 A diagram of the structure of Fn and Embp should be included.\n",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1d4ff0b4-be1f-42d4-9de0-4fb165c62316",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C1",
+      "claim": "Staphylococcus epidermidis causes some of the most hard-to-treat clinical infections by forming biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "Staphylococcus epidermidis causes some of the most hard-to-treat clinical infections by forming biofilms: Multicellular communities of bacteria encased in a protective matrix, supporting immune evasion and tolerance against antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about S. epidermidis pathogenicity that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "1ed5c080-f8ea-4ae4-be45-84260ca803a9",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C2",
+      "claim": "Biofilms are multicellular communities of bacteria encased in a protective matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Staphylococcus epidermidis causes some of the most hard-to-treat clinical infections by forming biofilms: Multicellular communities of bacteria encased in a protective matrix, supporting immune evasion and tolerance against antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement that represents established scientific knowledge about biofilms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "b7d3a56f-c25a-44f8-814d-815b52431d57",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C3",
+      "claim": "Biofilms support immune evasion and tolerance against antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Staphylococcus epidermidis causes some of the most hard-to-treat clinical infections by forming biofilms: Multicellular communities of bacteria encased in a protective matrix, supporting immune evasion and tolerance against antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about biofilm properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "9015d810-c0e4-4ba3-a0f7-a357d9c78f53",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C4",
+      "claim": "Biofilms occur most commonly on medical implants.",
+      "claim_type": "EXPLICIT",
+      "source": "Biofilms occur most commonly on medical implants, and a key event in implant colonization is the robust adherence to the surface, facilitated by interactions between bacterial surface proteins and host matrix components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge in the field of biofilm infections.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "d80db122-7d7d-4711-8134-29fe1eda92d7",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C5",
+      "claim": "A key event in implant colonization is the robust adherence to the surface, facilitated by interactions between bacterial surface proteins and host matrix components.",
+      "claim_type": "EXPLICIT",
+      "source": "Biofilms occur most commonly on medical implants, and a key event in implant colonization is the robust adherence to the surface, facilitated by interactions between bacterial surface proteins and host matrix components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement represents established scientific knowledge about bacterial colonization mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "884514b1-834f-4258-a2d4-a8a16c063816",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C6",
+      "claim": "S. epidermidis is equipped with a giant adhesive protein, extracellular matrix-binding protein (Embp).",
+      "claim_type": "EXPLICIT",
+      "source": "S. epidermidis is equipped with a giant adhesive protein, extracellular matrix-binding protein (Embp), which facilitates bacterial interactions with surface-deposited, but not soluble fibronectin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about S. epidermidis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "33b4f0a4-faed-4d27-bbd2-bc9cae083146",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C7",
+      "claim": "Embp facilitates bacterial interactions with surface-deposited, but not soluble fibronectin.",
+      "claim_type": "EXPLICIT",
+      "source": "S. epidermidis is equipped with a giant adhesive protein, extracellular matrix-binding protein (Embp), which facilitates bacterial interactions with surface-deposited, but not soluble fibronectin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "205552d8-526e-461a-b0b7-a5b046735734",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C8",
+      "claim": "S. epidermidis is capable of distinguishing between fibrillated and globular fibronectin because Embp binds specifically to fibrillated fibronectin on surfaces, while ignoring globular fibronectin in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a suite of single-cell and single-molecule analysis techniques, we show that S. epidermidis is capable of such distinction because Embp binds specifically to fibrillated fibronectin on surfaces, while ignoring globular fibronectin in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data from single-cell and single-molecule analysis techniques.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "343362bb-e09c-4e97-b8aa-6c95283ab42e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C9",
+      "claim": "S. epidermidis adherence is critically dependent on multivalent interactions involving 50 fibronectin-binding repeats of Embp.",
+      "claim_type": "EXPLICIT",
+      "source": "S. epidermidis adherence is critically dependent on multivalent interactions involving 50 fibronectin-binding repeats of Embp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data from force spectroscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "c4844c3e-581e-41eb-8775-8c9917d04650",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C10",
+      "claim": "The Velcro-like interaction mechanism of Embp proved critical for colonization of surfaces under high flow.",
+      "claim_type": "EXPLICIT",
+      "source": "This unusual, Velcro-like interaction proved critical for colonization of surfaces under high flow, making this newly identified attachment mechanism particularly relevant for colonization of intravascular devices, such as prosthetic heart valves or vascular grafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data from flow cell experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "487085eb-78ca-49d9-b2fc-60908ec846b6",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C11",
+      "claim": "The Embp attachment mechanism is particularly relevant for colonization of intravascular devices, such as prosthetic heart valves or vascular grafts.",
+      "claim_type": "EXPLICIT",
+      "source": "This unusual, Velcro-like interaction proved critical for colonization of surfaces under high flow, making this newly identified attachment mechanism particularly relevant for colonization of intravascular devices, such as prosthetic heart valves or vascular grafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing importance under high flow conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "fb730d60-424c-4ee3-b3ad-d3291f1d1b70",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C12",
+      "claim": "Other biofilm-forming pathogens, such as Staphylococcus aureus, express homologs of Embp and likely deploy the same mechanism for surface colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Other biofilm-forming pathogens, such as Staphylococcus aureus, express homologs of Embp and likely deploy the same mechanism for surface colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the presence of homologous proteins in other species.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "5c04d19f-3f4c-4e67-b55f-72d5f2ae1206",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C13",
+      "claim": "Biomedical implants such as catheters, prosthetics, vascular grafts, and similar devices have revolutionized the medical field.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomedical implants such as catheters, prosthetics, vascular grafts, and similar devices have revolutionized the medical field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge in the medical field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "307c9199-5d55-4610-b6cb-62976db44704",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C14",
+      "claim": "Implants can lead to severe infections due to bacterial biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, implants can lead to severe infections due to bacterial biofilms: The formation of multicellular bacterial communities encased in a protective extracellular matrix (Arciola et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "f53a7f33-8a0c-4971-aed2-f02e866b8f13",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C15",
+      "claim": "Bacteria in the biofilm evade phagocytosis by immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria in the biofilm evade phagocytosis by immune cells (de Vor et al., 2020), and the immune system can therefore not eradicate the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "7a1a66de-2d6d-47c7-a02a-0513b6b66f67",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C16",
+      "claim": "The immune system cannot eradicate biofilm infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria in the biofilm evade phagocytosis by immune cells (de Vor et al., 2020), and the immune system can therefore not eradicate the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited evidence about phagocytosis evasion.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "34d5c74e-bbc3-4b27-828f-76cfa168ca5b",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C17",
+      "claim": "A fraction of cells in biofilms enter a dormant state in which they are highly tolerant to antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a fraction of the cells enter a dormant state in which they are highly tolerant to antibiotics (Rowe et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "a8453897-b765-4fff-8d8c-b4cdbdf6359e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C18",
+      "claim": "Staphylococci, particularly Staphylococcus aureus and Staphylococcus epidermidis are the culprits of most implant-associated infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Staphylococci, particularly Staphylococcus aureus and Staphylococcus epidermidis are the culprits of most implant-associated infections (Oliveira et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "b20130b0-ed0e-4acc-a8b1-a0274f1cd5cb",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C19",
+      "claim": "S. epidermidis is common in implant-associated infections due to its prowess in biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its low virulence, S. epidermidis is common in these infections due to its prowess in biofilm formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established scientific knowledge about S. epidermidis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "835834a6-3be0-45c0-8c30-9459b8228885",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C20",
+      "claim": "S. epidermidis attaches to implant surfaces via adsorbed host proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "S. epidermidis attaches to implant surfaces via adsorbed host proteins (Patel et al., 2007; Fran\u00e7ois et al., 1998) and it expresses an array of surface-bound proteins (adhesins) that bind to host proteins, such as fibrin, fibronectin (Fn), vitronectin, and collagen to initiate biofilm formation (Foster, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "598373ca-aadc-4f92-9626-d3a74ea33561",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C21",
+      "claim": "S. epidermidis expresses an array of surface-bound proteins (adhesins) that bind to host proteins, such as fibrin, fibronectin (Fn), vitronectin, and collagen to initiate biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "S. epidermidis attaches to implant surfaces via adsorbed host proteins (Patel et al., 2007; Fran\u00e7ois et al., 1998) and it expresses an array of surface-bound proteins (adhesins) that bind to host proteins, such as fibrin, fibronectin (Fn), vitronectin, and collagen to initiate biofilm formation (Foster, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "40bb25f6-495a-429b-8186-42c78520ffdc",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C22",
+      "claim": "Embp is found in the vast majority of clinical isolates of S. epidermidis.",
+      "claim_type": "EXPLICIT",
+      "source": "One such adhesin is the extracellular matrix-binding protein (Embp), which is found in the vast majority of clinical isolates of S. epidermidis (Rohde et al., 2007; Salgueiro et al., 2017), suggesting that this giant 1 MDa protein is important for this species' pathogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "435c22d5-34f3-45fe-bec1-272bacb65134",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C23",
+      "claim": "Embp is a giant 1 MDa protein.",
+      "claim_type": "EXPLICIT",
+      "source": "One such adhesin is the extracellular matrix-binding protein (Embp), which is found in the vast majority of clinical isolates of S. epidermidis (Rohde et al., 2007; Salgueiro et al., 2017), suggesting that this giant 1 MDa protein is important for this species' pathogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the protein size, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "0480fb68-275c-4ddb-891a-1bc32d1b9854",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C24",
+      "claim": "The prevalence of Embp in clinical isolates suggests that this protein is important for S. epidermidis pathogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "One such adhesin is the extracellular matrix-binding protein (Embp), which is found in the vast majority of clinical isolates of S. epidermidis (Rohde et al., 2007; Salgueiro et al., 2017), suggesting that this giant 1 MDa protein is important for this species' pathogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited prevalence data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "8cc7a012-7c1f-4e76-bd32-766fda2d384b",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C25",
+      "claim": "Embp contains a number of repetitive motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Embp contains a number of repetitive motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the protein structure, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "0dd3244b-ac47-4e2c-bc10-59b29a50a452",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C26",
+      "claim": "Embp was originally described to contain 21 'Found in Various Architecture' (FIVAR) repeats and 38 alternating repeats of 'G-related Albumin Binding' (GA) and FIVAR repeats combined, named FIVAR-GA repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "These were originally described based on sequence similarity to be 21 'Found in Various Architecture' (FIVAR) repeats and 38 alternating repeats of 'G-related Albumin Binding' (GA) and FIVAR repeats combined, named FIVAR-GA repeats (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a historical description of the protein structure based on previous characterization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "fc2e0525-ff17-4727-a013-6bb217d9dacd",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C27",
+      "claim": "After the crystal structure was solved, the domain structure of Embp was updated to consist of ten 170-aa F-repeats that each represent two FIVAR repeats, and forty 125-aa FG-repeats that each represent the previously termed FIVAR-GA repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "After the crystal structure was recently solved, the domain structure was updated and consists of ten 170-aa F-repeats that each represent two FIVAR repeats, and forty 125-aa FG-repeats that each represent the previously termed FIVAR-GA repeats (B\u00fcttner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research that solved the crystal structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "113eebc0-3fbb-4e71-8243-7b9055870a58",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C28",
+      "claim": "The 50 repeats of Embp can bind to Fn by interacting with FN12 of the Fn type III repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "These 50 repeats can bind to Fn by interacting with FN12 of the Fn type III repeats (Figure 1), and it is presumed that this interaction aids the colonization of the host (Christner et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "91fa8d64-e106-46b5-83ce-564ca9444a06",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C29",
+      "claim": "The interaction between Embp and FN12 is presumed to aid the colonization of the host.",
+      "claim_type": "EXPLICIT",
+      "source": "These 50 repeats can bind to Fn by interacting with FN12 of the Fn type III repeats (Figure 1), and it is presumed that this interaction aids the colonization of the host (Christner et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative statement based on cited research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "459834a9-d0ad-452c-a1cc-c8232b6d471d",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C30",
+      "claim": "Fn deposition can occur around implants.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fn deposition can occur around implants (Wolfram et al., 2004) and offer a site for bacterial attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "a3304c5c-c807-4ce6-876e-46eb19aae8de",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C31",
+      "claim": "Fn deposition around implants offers a site for bacterial attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fn deposition can occur around implants (Wolfram et al., 2004) and offer a site for bacterial attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited evidence about Fn deposition.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "504d0b71-e2b8-4eb0-b949-7e181578c4ec",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C32",
+      "claim": "Fn circulates in bodily fluids in a compact globular form.",
+      "claim_type": "EXPLICIT",
+      "source": "Fn circulates in bodily fluids in a compact globular form (Rocco et al., 1984), while fibrillated Fn contributes to the assembly of the extracellular matrix of tissue (Baneyx et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "16141a04-cc10-4489-b1ec-2426635f24cb",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C33",
+      "claim": "Fibrillated Fn contributes to the assembly of the extracellular matrix of tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Fn circulates in bodily fluids in a compact globular form (Rocco et al., 1984), while fibrillated Fn contributes to the assembly of the extracellular matrix of tissue (Baneyx et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "cc371ab2-84e3-4b65-b833-5d3395a3f86a",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C34",
+      "claim": "The stretching of Fn upon interacting with cell surface integrins exposes self-binding domains and triggers Fn fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is the stretching of Fn upon interacting with cell surface integrins, which exposes self-binding domains and triggers Fn fibrillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established scientific knowledge about Fn fibrillation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "da249076-dad3-4f8d-b76a-a7613e3f4e23",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C35",
+      "claim": "The mechanism of Fn fibrillation ensures that Fn only fibrillates in the extracellular matrix of tissue and not in the bloodstream.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism ensures that Fn only fibrillates in the extracellular matrix of tissue and not in the bloodstream (Zhong et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "9ca69170-5cda-4a93-a9aa-0931e3240e77",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C36",
+      "claim": "S. epidermidis interacts selectively with fibrillated Fn because FN12 is buried in the globular form of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that S. epidermidis interacts selectively with fibrillated Fn because FN12 is buried in the globular form of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated by the authors that is later tested with experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "f7c54bad-f5af-4a43-b204-69b03212b66b",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C37",
+      "claim": "A fibrillated ligand provides an opportunity for a multivalent interaction with the many repetitive F- and FG-repeats of the Embp.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we hypothesize that a fibrillated ligand provides an opportunity for a multivalent interaction with the many repetitive F- and FG-repeats of the Embp (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis stated by the authors that is later tested with experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "614a7e53-b68f-486b-860e-890d30fec6ea",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C38",
+      "claim": "Neither F- nor FG-repeats facilitated adsorption of soluble fluorescently conjugated Fn to the surface of S. carnosus.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither F- nor FG-repeats facilitated adsorption of soluble fluorescently conjugated Fn to the surface of S. carnosus (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "4677371c-5cf8-4981-bdaf-cd10adca1365",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C39",
+      "claim": "The native Embp expressed by S. epidermidis did not bind soluble Fn.",
+      "claim_type": "EXPLICIT",
+      "source": "The native Embp expressed by S. epidermidis did not bind soluble Fn either (Figure 2), concluding that Embp does not interact with Fn in its soluble, globular conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "ae391d68-f004-497e-9a18-4b10e718bde4",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C40",
+      "claim": "Embp does not interact with Fn in its soluble, globular conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The native Embp expressed by S. epidermidis did not bind soluble Fn either (Figure 2), concluding that Embp does not interact with Fn in its soluble, globular conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "84a68af7-46d7-47e9-a559-821fac43c780",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C41",
+      "claim": "Fn fibrillates when adsorbed on surfaces coated with poly(ethyl acrylate) (PEA).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research had shown that Fn fibrillates when adsorbed on surfaces coated with poly(ethyl acrylate) (PEA), while it remains globular on poly(methyl acrylate) (PMA) (Llopis-Hern\u00e1ndez et al., 2016; Rico et al., 2009; Salmer\u00f3n-S\u00e1nchez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "f6317c96-e9c5-4cef-b61b-c0b28893cb69",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C42",
+      "claim": "Fn remains globular on poly(methyl acrylate) (PMA).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research had shown that Fn fibrillates when adsorbed on surfaces coated with poly(ethyl acrylate) (PEA), while it remains globular on poly(methyl acrylate) (PMA) (Llopis-Hern\u00e1ndez et al., 2016; Rico et al., 2009; Salmer\u00f3n-S\u00e1nchez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "7d225e76-ddb4-44eb-9b1c-d819ca653380",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C43",
+      "claim": "The ethyl side group of PEA provides sufficient mobility of the adsorbed protein to facilitate fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "The two polymer coatings have similar physicochemical properties, but the ethyl side group of PEA provides sufficient mobility of the adsorbed protein to facilitate fibrillation (Bieniek et al., 2019; Guerra et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "dd91ea79-753e-429b-a381-80b04cd47c7d",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C44",
+      "claim": "Upon adsorption to the polymer coating, Fn spontaneously organized into a fibrillated network on PEA while remaining globular on PMA.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon adsorption to the polymer coating, Fn spontaneously organized into a fibrillated network on PEA while remaining globular on PMA (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "c8e6896d-7867-4a36-a01e-7456678659bf",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C45",
+      "claim": "XPS analysis determined that the amount of adsorbed protein was similar on PEA and PMA surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "XPS analysis determined that the amount of adsorbed protein was similar on the two polymer surfaces (Figure 3C and D, and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 3C and D, and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "c21f7052-46f6-4749-aa0e-7cc942f4b331",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C46",
+      "claim": "FTIR spectra indicate that Fn adsorbed to PMA adopts a mostly antiparallel \u03b2-sheet type secondary structure, similar to the globular, solution-state spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational differences of adsorbed Fn on the two coatings was corroborated by Fourier transform infrared (FTIR) spectra, in which the peak positions indicate that Fn adsorbed to PMA adopts a mostly antiparallel \u03b2-sheet type secondary structure (Barth and Zscherp, 2002), similar to the globular, solution-state spectrum, while Fn on PEA adopts a more extended parallel \u03b2-sheet type structure (Figure 3E, Figure 3\u2014figure supplements 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 3E and supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "5bc50737-3ef3-4cd6-b068-1b82945d9fae",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C47",
+      "claim": "Fn on PEA adopts a more extended parallel \u03b2-sheet type structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational differences of adsorbed Fn on the two coatings was corroborated by Fourier transform infrared (FTIR) spectra, in which the peak positions indicate that Fn adsorbed to PMA adopts a mostly antiparallel \u03b2-sheet type secondary structure (Barth and Zscherp, 2002), similar to the globular, solution-state spectrum, while Fn on PEA adopts a more extended parallel \u03b2-sheet type structure (Figure 3E, Figure 3\u2014figure supplements 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 3E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "d6a92698-14b6-43b7-a211-f6537c5411c6",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C48",
+      "claim": "Only fibrillated Fn stimulated attachment of S. carnosus expressing Embp_5F or Embp_9FG.",
+      "claim_type": "EXPLICIT",
+      "source": "Very few bacteria attached to the polymer coatings in the absence of Fn, and only fibrillated Fn stimulated attachment of S. carnosus expressing Embp_5F or Embp_9FG (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "89db77c6-8cc0-4851-af9d-230f36be74b0",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C49",
+      "claim": "Fn consists of two nearly identical subunits linked by a pair of disulfide bonds at the C terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "Fn consists of two nearly identical subunits linked by a pair of disulfide bonds at the C terminal (Kar et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "fb7c7953-5b7b-439c-8ec3-779dc9ac8fd0",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C50",
+      "claim": "Each subunit of Fn consists of three domains: F1, F2, and F3.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subunit consists of three domains: F1, F2, and F3 (Potts and Campbell, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "35110ecf-c3e8-409a-88a6-760e7b27fb89",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C51",
+      "claim": "The globular and compact conformation of Fn is sustained by intramolecular electrostatic interactions between F1 1st-5th, F3 2nd-3rd, and F3 12th-14th repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "The globular and compact conformation of Fn is sustained by intramolecular electrostatic interactions between F1 1st-5th, F3 2nd-3rd, and F3 12th-14th repeat (Johnson et al., 1999; Maurer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "5cae64ee-61b1-41a2-b044-0c917306786e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C52",
+      "claim": "Binding sites in F1 1st-5th, F3 2nd-3rd, and F3 12th-14th regions remain buried in the globular conformation of Fn.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding sites in these regions remain buried in the globular conformation; however, upon fibrillation on a surface or tissue interface, these binding sites become exposed (Klotzsch et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "58cf6c1e-2889-40d4-a592-f8704a7ea51f",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C53",
+      "claim": "Upon fibrillation on a surface or tissue interface, binding sites in F1 1st-5th, F3 2nd-3rd, and F3 12th-14th regions become exposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding sites in these regions remain buried in the globular conformation; however, upon fibrillation on a surface or tissue interface, these binding sites become exposed (Klotzsch et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "9c0d2623-db16-44af-9f6b-a7ecf406b4ba",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C54",
+      "claim": "S. epidermidis binds near the C terminal of Fn.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was previously reported that S. epidermidis binds near the C terminal of Fn (Arciola et al., 2003), and studies of recombinant Fn verified the interaction between Embp and the 12th repeat of the F3 domain (Christner et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "9fe9ce4b-81b7-4a43-a31b-f113ab21a4f8",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C55",
+      "claim": "Studies of recombinant Fn verified the interaction between Embp and the 12th repeat of the F3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was previously reported that S. epidermidis binds near the C terminal of Fn (Arciola et al., 2003), and studies of recombinant Fn verified the interaction between Embp and the 12th repeat of the F3 domain (Christner et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "45b203ab-65ec-44a9-8606-eeefb85a67fc",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C56",
+      "claim": "Blocking the F3 12th-14th repeat decreased the adherence of S. carnosus by approximately 62% for Embp_5F and 64% for Embp_9FG.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the F3 12th-14th repeat decreased the adherence of S. carnosus by approximately 62% for Embp_5F and 64% for Embp_9FG (Figure 4), supporting that Embp interacts with this subdomain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "0b02d31f-661c-4913-92b4-fe18f8aeb00c",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C57",
+      "claim": "Embp interacts with the F3 12th-14th repeat subdomain of Fn.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the F3 12th-14th repeat decreased the adherence of S. carnosus by approximately 62% for Embp_5F and 64% for Embp_9FG (Figure 4), supporting that Embp interacts with this subdomain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "0f087244-68dc-41f7-946c-607d0eb1a0f6",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C58",
+      "claim": "The F3 12th-14th repeat is of major significance for Embp-Fn interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the F3 12th-14th repeat is of major significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on blocking experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "e18633e3-5cc6-4c90-b4e8-6ce4f3d46c01",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C59",
+      "claim": "The average maximum adhesion force between S. carnosus expressing Embp_5F and surfaces with fibrillated Fn was 1.19\u00b10.21 nN.",
+      "claim_type": "EXPLICIT",
+      "source": "The average maximum adhesion force between S. carnosus and surfaces with fibrillated Fn was 1.19\u00b10.21 and 1.16\u00b10.18 nN, respectively, for S. carnosus expressing Embp_5F or Embp_9FG (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "054ef2cc-df94-4bbc-9dc7-4bc3cb4147f6",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C60",
+      "claim": "The average maximum adhesion force between S. carnosus expressing Embp_9FG and surfaces with fibrillated Fn was 1.16\u00b10.18 nN.",
+      "claim_type": "EXPLICIT",
+      "source": "The average maximum adhesion force between S. carnosus and surfaces with fibrillated Fn was 1.19\u00b10.21 and 1.16\u00b10.18 nN, respectively, for S. carnosus expressing Embp_5F or Embp_9FG (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "239f1406-6b4c-41c6-957d-18f46732ccd7",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C61",
+      "claim": "The adhesion force of S. carnosus expressing Embp_5F to surfaces with globular Fn was 0.16\u00b10.09 nN.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the corresponding adhesion force to surfaces with globular Fn was only 0.16\u00b10.09 and 0.12\u00b10.04 nN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "40c49650-3e37-4eef-8109-7b1291bbb702",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C62",
+      "claim": "The adhesion force of S. carnosus expressing Embp_9FG to surfaces with globular Fn was 0.12\u00b10.04 nN.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the corresponding adhesion force to surfaces with globular Fn was only 0.16\u00b10.09 and 0.12\u00b10.04 nN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "6c1aae64-636c-4716-9a5f-b922c2a72693",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C63",
+      "claim": "Embp contains 50 Fn-binding repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Embp contains 50 Fn-binding repeats, and it must be costly for S. epidermidis to produce this enormous 1 MDa protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the protein structure, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "142eec35-25a0-4e14-9ef1-fe4ee3309390",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C64",
+      "claim": "It must be costly for S. epidermidis to produce the enormous 1 MDa Embp protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Embp contains 50 Fn-binding repeats, and it must be costly for S. epidermidis to produce this enormous 1 MDa protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the large size of the protein.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "21b89b85-c0e7-4d21-8ab0-b550dcd8e9fd",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C65",
+      "claim": "The FG-repeat did not interact with the globular form of Fn.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous experiments, the FG-repeat did not interact with the globular form of Fn (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "e702f823-f9aa-484a-ae76-580abe9769e2",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C66",
+      "claim": "The interaction force of 1 or 4 FG-repeats with fibrillated Fn was insufficient to be detected.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction force of a 1 or 4 FG-repeat with fibrillated Fn was also insufficient to be detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "75abf896-0ee6-4d9d-9a41-76dda677d43e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C67",
+      "claim": "The interaction force of 15 FG-repeats with fibrillated Fn was 432\u00b148 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the interaction force of 15 FG-repeats was 432\u00b148 pN with fibrillated Fn, confirming the value of multidomain interaction with the fibrillated ligand (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "492ec30c-aef1-4525-98a4-547ae3462372",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C68",
+      "claim": "The interaction force of 15 FG-repeats with fibrillated Fn confirms the value of multidomain interaction with the fibrillated ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the interaction force of 15 FG-repeats was 432\u00b148 pN with fibrillated Fn, confirming the value of multidomain interaction with the fibrillated ligand (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "13c53d39-45d1-4bc4-8075-1f5ac9795afc",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C69",
+      "claim": "The hydrodynamic radius of S. epidermidis overexpressing Embp was significantly larger than for S. epidermidis lacking Embp (2.3\u00b10.4 \u03bcm vs. 1.3\u00b10.2 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the hydrodynamic radius of S. epidermidis overexpressing Embp, and confirmed that it was significantly larger than for S. epidermidis lacking Embp (2.3\u00b10.4 \u03bcm vs. 1.3\u00b10.2 \u03bcm, two-tailed t-test, n=3, p=0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "35121e38-ce84-4bf0-b677-7035f51fb27b",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C70",
+      "claim": "At low flow, Embp increased attachment to Fn by approximately 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "At low flow, Embp increased attachment to Fn by approximately 20% (two-tailed t-test, p=0.03), and at high flow, attachment was only possible Embp was expressed (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "93ec61c2-65ab-4172-ba57-de21f22a4e7e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C71",
+      "claim": "At high flow, attachment to Fn was only possible when Embp was expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "At low flow, Embp increased attachment to Fn by approximately 20% (two-tailed t-test, p=0.03), and at high flow, attachment was only possible Embp was expressed (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "77d162dc-62f0-449e-b6d8-08353c10a75e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C72",
+      "claim": "The giant cell surface protein Embp exclusively binds to fibrillated Fn because the binding site located at F3 12th\u201314th repeat is not accessible in the globular, soluble form of Fn.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that the giant cell surface protein Embp exclusively binds to fibrillated Fn because the binding site located at F3 12th \u201314th repeat is not accessible in the globular, soluble form of Fn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "05149c81-64f6-43eb-bfb7-8ad77c513f77",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C73",
+      "claim": "Colonization and biofilm formation is the only virulence factor of S. epidermidis.",
+      "claim_type": "EXPLICIT",
+      "source": "Colonization and biofilm formation is the only virulence factor of S. epidermidis, and it is therefore imperative to cause disease (Both et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "987330d7-d497-4d87-a669-a8142d1a2c2f",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C74",
+      "claim": "The implant surface is immediately covered by host proteins when it is inserted into the body.",
+      "claim_type": "EXPLICIT",
+      "source": "The implant surface is immediately covered by host proteins when it is inserted into the body, and bacterial attachment is assumed to occur via specific receptor-ligand interactions between adhesins on the bacterial cell and host proteins adsorbed to the implant surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established scientific knowledge about implant colonization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "3995b9fb-ce61-4319-921a-9fcc57d616f3",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C75",
+      "claim": "Bacterial attachment to implants is assumed to occur via specific receptor-ligand interactions between adhesins on the bacterial cell and host proteins adsorbed to the implant surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The implant surface is immediately covered by host proteins when it is inserted into the body, and bacterial attachment is assumed to occur via specific receptor-ligand interactions between adhesins on the bacterial cell and host proteins adsorbed to the implant surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established scientific knowledge about bacterial attachment mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "23747d86-1e56-40f6-b97a-22a1becdc422",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C76",
+      "claim": "Adsorption-induced conformational changes can affect how accessible a host protein is for bacterial adhesins.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on previous research (B\u00fcttner et al., 2020; Christner et al., 2010), we hypothesized that adsorption-induced conformational changes can affect how accessible a host protein is for bacterial adhesins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated by the authors based on cited previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "1902cebf-0b49-4624-9192-a13c018e16db",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C77",
+      "claim": "The fibrillation of Fn on the implant surface is decisive for its availability as a ligand for bacterial attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Embp and Fn, the fibrillation of Fn on the implant surface is decisive for its availability as a ligand for bacterial attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "ae87ae02-a88c-479e-96e8-0c6f6ab711be",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C78",
+      "claim": "Biomaterials' susceptibility to bacterial colonization does not only depend on protein adsorption, but also on the conformation of adsorbed proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results suggest that biomaterials' susceptibility to bacterial colonization does not only depend on protein adsorption, but also on the conformation of adsorbed proteins \u2013 a concept that is familiar to cell biologists studying adhesion of mammalian cells, but less so to microbiologists studying bacterial attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "4770b18b-f5fe-44bb-b1d5-c67770dae6d1",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C79",
+      "claim": "The role of host protein conformation in bacterial attachment could explain the conflicting results from in vitro studies of how serum proteins affect attachment of staphylococci.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of host protein conformation in bacterial attachment could explain the conflicting results from in vitro studies of how serum proteins affect attachment of staphylococci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "88fc65d4-2395-4d49-8600-d4dd501c5916",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C80",
+      "claim": "Some studies report increased attachment of staphylococci in the presence of serum proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies report increased attachment (Christner et al., 2010; Paharik and Horswill, 2016; Williams et al., 2002; Maxe et al., 1986), while others report the opposite (Paulsson et al., 1994; Pestrak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "a72652b7-4769-4e8a-a5eb-0cdbf3cb0430",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C81",
+      "claim": "Some studies report decreased attachment of staphylococci in the presence of serum proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies report increased attachment (Christner et al., 2010; Paharik and Horswill, 2016; Williams et al., 2002; Maxe et al., 1986), while others report the opposite (Paulsson et al., 1994; Pestrak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "e817c730-5a5c-414c-a43c-0711a1b9a660",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C82",
+      "claim": "One benefit of large adhesins with repetitive domains is that the adhesin protrudes from the cell surface, which makes it easier to overcome electrostatic repulsion and reach its ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "One benefit could be that the adhesin protrudes from the cell surface, which makes it easier to overcome electrostatic repulsion and reach its ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the properties of large adhesins.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "2815b291-1f57-45b5-9b99-c95d4b033595",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C83",
+      "claim": "Ebh is a 1.1 MDa protein with 52 repetitive domains in S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "Ebh is a 1.1 MDa protein with 52 repetitive domains, and its length was predicted to be 320 nm (Tanaka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "e27c088a-5503-48f4-96b0-323704f53d2b",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C84",
+      "claim": "The length of Ebh was predicted to be 320 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Ebh is a 1.1 MDa protein with 52 repetitive domains, and its length was predicted to be 320 nm (Tanaka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "08506505-6770-4a9e-af1b-4d401622b07a",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C85",
+      "claim": "It is likely that Embp extends well beyond the electric double layer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus likely that Embp extends well beyond the electric double layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the hydrodynamic radius measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "93ef41d3-3dfd-4f2f-81ff-b3d6c9103ad2",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C86",
+      "claim": "The typical strength of receptor-ligand bonds is about 20\u2013200 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "The typical strength of receptor-ligand bonds is about 20\u2013200 pN (M\u00fcller et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "015044e7-cc07-4c4d-8bb3-46f57ea6503b",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C87",
+      "claim": "The interaction between 15 FG-repeats and Fn resulted in a very strong bond.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the interaction between 15 FG-repeats and Fn resulted in a very strong bond, and the interaction with full sized Embp is likely much stronger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on interaction forces.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "e8177405-938f-4ab1-ac11-eb4a406a5d09",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C88",
+      "claim": "The interaction with full sized Embp is likely much stronger than the interaction between 15 FG-repeats and Fn.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the interaction between 15 FG-repeats and Fn resulted in a very strong bond, and the interaction with full sized Embp is likely much stronger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "0c4a9aaa-7edf-43a2-a07d-c36ed731c01c",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C89",
+      "claim": "Embp is present in two-thirds of S. epidermidis isolates from orthopedic device-related infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Embp, however, is present in two-thirds of S. epidermidis isolates from orthopedic device-related infections (Post et al., 2017) and 90% of isolates from bloodstream infections (Salgueiro et al., 2017), which indicates some importance for its pathogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "1e1974ba-674d-40d8-ba78-20989aa6b054",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C90",
+      "claim": "Embp is present in 90% of S. epidermidis isolates from bloodstream infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Embp, however, is present in two-thirds of S. epidermidis isolates from orthopedic device-related infections (Post et al., 2017) and 90% of isolates from bloodstream infections (Salgueiro et al., 2017), which indicates some importance for its pathogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "d5945214-9b9f-45e9-94d9-3d57f3de290e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C91",
+      "claim": "The prevalence of Embp in clinical isolates indicates some importance for S. epidermidis pathogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Embp, however, is present in two-thirds of S. epidermidis isolates from orthopedic device-related infections (Post et al., 2017) and 90% of isolates from bloodstream infections (Salgueiro et al., 2017), which indicates some importance for its pathogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited prevalence data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "f07e0649-afc7-420e-a3a6-a32594c61f18",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C92",
+      "claim": "In a recent study of adhesive vs. invasive S. epidermidis isolates, Embp was not more frequent in any of the groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study of adhesive vs. invasive S. epidermidis isolates, Embp was not more frequent in any of the groups (Both et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "7247b9b3-9796-4381-a3d2-29a254eef5ee",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C93",
+      "claim": "There is no indication of a general role of Embp for invasiveness vs. colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, there is no indication of a general role of Embp for invasiveness vs. colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the cited research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "ae0eb5ec-b457-4f4a-81b8-b45cf6953013",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C94",
+      "claim": "Strong attachment via a single protein like Embp could be particularly advantageous in locations where shear forces make attachment difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that strong attachment via a single protein like Embp could be particularly advantageous in locations where shear forces make attachment difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "de40cd4c-3d9d-4da2-a62c-e301df79078d",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C95",
+      "claim": "Biofilms generally do not form in blood vessels unless there is an implant or a lesion on the endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Biofilms generally do not form in blood vessels unless there is an implant or a lesion on the endothelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established scientific knowledge about biofilm formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "9d95e49f-0c6f-49c3-bf4d-a468c5c489f4",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C96",
+      "claim": "Infections like endocarditis often start with a lesion on the endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Infections like endocarditis often start with such a lesion (Steckelberg and Wilson, 1993), which makes the site susceptible to bacterial attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "27a82e7f-2185-472c-9153-642345acf804",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C97",
+      "claim": "Lesions on the endothelium make the site susceptible to bacterial attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Infections like endocarditis often start with such a lesion (Steckelberg and Wilson, 1993), which makes the site susceptible to bacterial attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "bbf21b3c-61cb-42aa-b44d-2f2dd400ab67",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C98",
+      "claim": "Fibrillated Fn forms on the surface of platelets in the early stages of wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibrillated Fn forms on the surface of platelets in the early stages of wound healing (To and Midwood, 2011), and perhaps the abundance of fibrillated Fn plays role in the elevated infection risk by S. epidermidis strains that carry Embp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "438e3e23-ffcb-473e-8f96-836a4908a6ab",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C99",
+      "claim": "The abundance of fibrillated Fn may play a role in the elevated infection risk by S. epidermidis strains that carry Embp.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibrillated Fn forms on the surface of platelets in the early stages of wound healing (To and Midwood, 2011), and perhaps the abundance of fibrillated Fn plays role in the elevated infection risk by S. epidermidis strains that carry Embp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the findings of the study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "74bd1b9a-7e2e-47a2-bcb1-16e9ca4a5f77",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C100",
+      "claim": "Embp makes a moderate contribution to attachment under low flow, leading to a 21% increase in the number of attached bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Embp makes a moderate contribution to attachment under low flow, leading to a 21% increase in the number of attached bacterial, while it is essential for attachment under high flow (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "8b942ea4-81ed-44e5-96f2-c9eea437e5ab",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C101",
+      "claim": "Embp is essential for attachment under high flow.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Embp makes a moderate contribution to attachment under low flow, leading to a 21% increase in the number of attached bacterial, while it is essential for attachment under high flow (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "0e22f31e-469d-4246-ba58-5176d48ef1d0",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C102",
+      "claim": "S. epidermidis 1585 contains the autolysin Aae gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than Embp, only the autolysin Aae has been reported to bind Fn based on in vitro studies of purified proteins (Heilmann et al., 2003), and S. epidermidis 1585 does contain this gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "2db1584f-4ee7-44ea-b5d0-0ad8d69c1b93",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C103",
+      "claim": "Only the autolysin Aae has been reported to bind Fn besides Embp, based on in vitro studies of purified proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than Embp, only the autolysin Aae has been reported to bind Fn based on in vitro studies of purified proteins (Heilmann et al., 2003), and S. epidermidis 1585 does contain this gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "cbcdf225-3db3-428c-8097-153c1bb812f0",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C104",
+      "claim": "Aae and non-specific interaction forces may have contributed to adhesion of S. epidermidis at low flow.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that Aae and even non-specific interaction forces contributed to adhesion of S. epidermidis at low flow, whereas only Embp attaches with sufficient force to prevent detachment at high flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "227ec94a-5e34-4eda-87b6-5e880727a9aa",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C105",
+      "claim": "Only Embp attaches with sufficient force to prevent detachment at high flow.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that Aae and even non-specific interaction forces contributed to adhesion of S. epidermidis at low flow, whereas only Embp attaches with sufficient force to prevent detachment at high flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "5ac28522-6516-4412-b470-f1fe46bf3dc7",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C106",
+      "claim": "The binding force of some bacteria adhesins is promoted by external mechanical forces, such as shear stress when under flow, achieved in the 'dock, lock, and latch' mechanism observed for the Clf-Sdr family of adhesins when binding to fibrinogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously published studies have shown that the binding force of some bacteria adhesins is promoted by external mechanical forces, such as shear stress when under flow, achieved in the 'dock, lock, and latch' mechanism observed for the Clf-Sdr family of adhesins when binding to fibrinogen (Herman et al., 2014; Herman-Bausier et al., 2017; Vanzieleghem et al., 2015; Viela, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "a10f316f-5502-4a5c-87f4-c3714ccbdc6e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C107",
+      "claim": "The data do not suggest that increased shear stress would strengthen the interaction force between Embp and Fn.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data do not suggest that increased shear stress would strengthen the interaction force between Embp and Fn, as the overall attachment rate of bacteria decreases by approximately 80% at the high flow rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "8ae9d759-e3fb-4b3d-95fd-807c67f0029e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C108",
+      "claim": "The overall attachment rate of bacteria decreases by approximately 80% at the high flow rate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data do not suggest that increased shear stress would strengthen the interaction force between Embp and Fn, as the overall attachment rate of bacteria decreases by approximately 80% at the high flow rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "c4bbf1ac-cd99-4452-9e8d-d1acdb7b6ad7",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C109",
+      "claim": "The structural analysis of Embp points out that Embp represents a novel mode of interaction between bacterial adhesins and host extracellular matrix proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the structural analysis of Embp carried out by B\u00fcttner et al., 2020, points out that the Embp represents a novel mode of interaction between bacterial adhesins and host extracellular matrix proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "27d17519-bc59-4b7e-9c84-04bc167a12b8",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C110",
+      "claim": "Embp is essential for attachment when host colonization is challenged by shear forces.",
+      "claim_type": "EXPLICIT",
+      "source": "What we can conclude with certainty is that Embp is essential for attachment when host colonization is challenged by shear forces, and this observation suggests that Embp may be significant for biofilm formation in the cardiovascular system, for example, on cardiovascular grafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "261d8641-f992-4438-861f-2ed63ebae9de",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C111",
+      "claim": "Embp may be significant for biofilm formation in the cardiovascular system, for example, on cardiovascular grafts.",
+      "claim_type": "EXPLICIT",
+      "source": "What we can conclude with certainty is that Embp is essential for attachment when host colonization is challenged by shear forces, and this observation suggests that Embp may be significant for biofilm formation in the cardiovascular system, for example, on cardiovascular grafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "94d9da14-e0a8-43fa-9bf6-4b5d8dd680a6",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C112",
+      "claim": "Fn is a dimer held together by two disulfide bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Fn is a dimer held together by two disulfide brides, and interactions between FN(III)11\u201314 on one Fn and FN(III)1\u20134 on the other Fn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established scientific knowledge about Fn structure, as shown in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "fa4cd33c-396e-4565-a759-a272d2bc5084",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C113",
+      "claim": "In fibrillated Fn, the FN(III)11\u201314 and FN(III)1\u20134 domains are exposed.",
+      "claim_type": "EXPLICIT",
+      "source": "In fibrillated Fn, these domains are exposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established scientific knowledge about Fn fibrillation, as shown in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "91472f85-3a31-4957-a14b-342df06a4d86",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C114",
+      "claim": "Embp consists of 50 fibronectin (Fn)-binding repeats (10 F-repeats and 40 FG-repeats).",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Embp consists of 50 fibronectin (Fn)-binding repeats (10 F-repeats and 40 FG-repeats).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A and represents established knowledge about Embp structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "764a8b52-330a-49ad-957d-b668fe861252",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "claim_id": "C115",
+      "claim": "Embp binds to FN12 of the Fn type III.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) The structure of Fn. Embp binds to FN12 of the Fn type III (highlighted in yellow).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and is supported by cited research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "384e8eb3-d594-4aa7-b4bb-949e7e3dfcb2",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Embp does not bind to soluble, globular fibronectin. Neither F- nor FG-repeats facilitated adsorption of soluble Fn to S. carnosus, and native Embp expressed by S. epidermidis also did not bind soluble Fn.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by immunofluorescence microscopy data (Figure 2) showing no Fn binding to bacteria expressing Embp fragments or native Embp when exposed to soluble Fn. The experimental design includes appropriate controls (S. aureus as positive control) and the conclusion logically follows from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "0153226b-be03-4485-9667-7e0281636316",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A polymer-based model system was established where Fn adopts fibrillated conformation on PEA surfaces and globular conformation on PMA surfaces, with similar protein amounts on both surfaces but different secondary structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 are well-supported by multiple complementary techniques: AFM imaging (Figure 3A-B), XPS analysis (Figure 3C-D, Table 1), and FTIR spectroscopy (Figure 3E). The model system is validated by prior literature (C41-C43) and confirmed by the authors' own characterization showing structural differences while controlling for protein quantity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "b74e379d-5813-46d6-9c32-61b9a655e797",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Embp-expressing bacteria attach specifically to fibrillated Fn on PEA surfaces, and this interaction is mediated primarily through the F3 12th-14th repeat domain of Fn, as blocking this domain reduced bacterial adherence by approximately 62-64%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C56-C58 are supported by flow cell attachment assays (Figure 4) with appropriate controls including blocking antibodies against different Fn domains. The ~62-64% reduction upon blocking F3 12th-14th repeat provides strong evidence for this domain's importance, though incomplete blocking suggests additional interaction sites may exist.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "02a1bfc1-6a35-4f2d-ad6b-07b5ae25a137",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single-cell force spectroscopy revealed that both F- and FG-repeat fragments of Embp bind strongly to fibrillated Fn (1.16-1.19 nN) but show minimal adhesion to globular Fn (0.12-0.16 nN).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by single-cell AFM force spectroscopy data (Figure 5) showing approximately 7-10 fold difference in adhesion force between fibrillated and globular Fn. The measurements include appropriate replicates and the force-distance curves show characteristic multiple binding events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "8004ab85-5494-4adc-9771-b746fdb322b3",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multivalent interaction is critical for Embp-Fn binding, as single or 4 FG-repeats showed no detectable interaction with fibrillated Fn, while 15 FG-repeats produced a strong interaction force of 432\u00b148 pN, confirming the value of multidomain interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 are supported by single-molecule force spectroscopy data (Figure 6) showing a clear threshold effect where multiple repeats are required for detectable binding. The 432 pN force for 15 repeats is substantially higher than typical single receptor-ligand bonds (20-200 pN, C86), supporting the multivalent interaction model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "d6b73cda-568f-4c17-bd1e-e15dbf91598f",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Embp is essential for bacterial attachment under high flow conditions and provides moderate enhancement (~20%) under low flow. The hydrodynamic radius of S. epidermidis overexpressing Embp was significantly larger (2.3\u00b10.4 \u03bcm vs. 1.3\u00b10.2 \u03bcm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71, C100-C101 are supported by flow cell experiments (Figure 7) with statistical analysis (p=0.03 for low flow, p=0.0009 for high flow) and dynamic light scattering measurements (p=0.02). The data clearly demonstrate Embp's critical role under high shear stress conditions, though the mechanism differs from shear-enhanced binding seen in other adhesins (C106-C108).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "aeafbbc8-9799-4356-a508-19a185e5b6a8",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "S. epidermidis distinguishes between fibrillated and globular fibronectin through Embp's specific binding to fibrillated Fn, with adherence critically dependent on multivalent interactions involving the 50 fibronectin-binding repeats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C72, C77 represent the central conclusions of the study, supported by the convergence of multiple experimental approaches (immunofluorescence, flow cell assays, single-cell and single-molecule force spectroscopy). The mechanistic explanation is well-supported by the data showing both conformational selectivity and multivalency requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "98cf806c-a701-492e-8856-901756c164d8",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Velcro-like interaction mechanism of Embp is critical for colonization under high flow and may be particularly relevant for colonization of intravascular devices such as prosthetic heart valves or vascular grafts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, C110, C111 are supported by the high flow experiments (Figure 7) showing Embp's essential role under shear stress. However, C111 is somewhat speculative as it extrapolates to clinical relevance without direct in vivo validation. The conclusion is reasonable given the experimental data but represents an inference about clinical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "944576d9-d1bc-40d4-93eb-b33d983c09c0",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Biomaterials' susceptibility to bacterial colonization depends not only on protein adsorption but also on the conformation of adsorbed proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is a key conceptual conclusion supported by the entire body of experimental work showing that identical amounts of Fn (C45) produce dramatically different bacterial attachment depending on protein conformation (C44, C48). This challenges the prevailing focus on preventing protein adsorption altogether.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "01525dfa-ba9f-4a2a-91ba-839d56d9f501",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The structural basis for Embp's selectivity lies in the fact that binding sites in the F3 12th-14th repeat region are buried in globular Fn but become exposed upon fibrillation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by citations to established structural knowledge about Fn and are consistent with the experimental blocking studies (C56-C58). The mechanism explains why Embp selectively binds fibrillated Fn, though the authors acknowledge other binding sites may also contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "6cdfe83b-8571-47a1-baa3-f452c960e538",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Embp is highly prevalent in clinical S. epidermidis isolates (two-thirds of orthopedic device infections, 90% of bloodstream infections), suggesting importance for pathogenicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C89-C91 are supported by citations to previous epidemiological studies. However, C92-C93 note that Embp prevalence does not differ between adhesive and invasive isolates, suggesting the protein's role may be context-specific rather than universally important for pathogenicity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "b95410d3-ee66-4f1f-8995-b935e0ea0165",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Other biofilm-forming pathogens such as S. aureus express Embp homologs and likely deploy similar mechanisms, representing a novel mode of interaction between bacterial adhesins and host extracellular matrix proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C12 and C109 are speculative (C12 explicitly uses \"likely\") and based on sequence homology rather than experimental validation in other species. While C109 cites structural analysis suggesting novelty, direct experimental evidence for the same mechanism in S. aureus or other pathogens is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "310d01de-9cd6-43ec-925e-ac634cb58ebe",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The role of host protein conformation in bacterial attachment could explain conflicting results from in vitro studies showing both increased and decreased staphylococcal attachment in the presence of serum proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C79 is speculative, proposing that protein conformation differences might explain literature discrepancies (C80-C81). While this is a reasonable hypothesis given the study's findings, it remains untested. The cited studies used different materials and conditions that were not systematically analyzed for protein conformation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "5ccc42c7-a5f7-4a5c-aac7-b3894ff5a5f0",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Large adhesins with repetitive domains like Embp likely protrude from the cell surface, extending beyond the electric double layer to overcome electrostatic repulsion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82 and C85 are partially supported by hydrodynamic radius measurements (C69) showing increased cell size with Embp expression. However, C82 is explicitly speculative (\"could be\"), and the actual organization of Embp on the cell surface has not been directly visualized. The inference is reasonable but not definitively proven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "6e12f2ed-63de-40b5-9bc2-8bf541990c4f",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Strong attachment via Embp may be particularly advantageous in high shear environments, and the abundance of fibrillated Fn during wound healing may contribute to infection risk by Embp-carrying strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94, C99, and C104 are speculative statements about clinical relevance. While C94 is supported by the high flow experiments, C99 and C104 extrapolate to in vivo scenarios without direct evidence. The role of Aae and non-specific forces at low flow (C104) is acknowledged as uncertain by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "c535cd0e-278d-4862-969e-9188363db446",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Unlike some bacterial adhesins that are strengthened by shear stress, the data do not suggest that increased shear stress strengthens Embp-Fn interaction, as overall attachment decreases by ~80% at high flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C108 are supported by the flow cell data (Figure 7) showing decreased overall attachment at high flow despite Embp being essential. This distinguishes Embp from the 'dock, lock, and latch' mechanism (C106) and suggests Embp provides strong static attachment rather than shear-enhanced binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "fc187280-b666-45aa-bd4e-1c136c548f25",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background context on S. epidermidis biofilm infections, their clinical significance, and general mechanisms of implant colonization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6, C13-C21, C73-C75, C95 provide established background knowledge supported by citations or general scientific consensus. These contextual claims frame the study's significance but are not novel findings. They are appropriately cited and accurately represent the field's understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "bcacd7e6-531a-49bd-973f-1efc5346222d",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Structural characterization of Embp showing it is a 1 MDa protein with 50 Fn-binding repeats (10 F-repeats and 40 FG-repeats) that bind to FN12 of Fn type III.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C25-C28, C63, C114-C115 describe established structural knowledge about Embp, primarily from prior work (especially B\u00fcttner et al., 2020, C27). The updated domain structure (C27) and binding site (C28, C115) are well-established from previous studies and provide necessary context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "09b6455e-5e3a-46f1-8328-044374e72b8e",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Fibronectin exists in two conformational states: globular in circulation and fibrillated in extracellular matrix, with fibrillation triggered by integrin-mediated stretching that exposes buried domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35, C112-C113 describe established knowledge about Fn biology supported by appropriate citations. This background is essential for understanding the study's hypothesis and provides the mechanistic basis for why Embp might distinguish between Fn conformations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    },
+    {
+      "id": "f33f4d49-ebb5-496f-abd6-72442da919b5",
+      "content_id": "99af7a20-9a36-49d1-8c79-b36da6f9ccb2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors hypothesized that S. epidermidis interacts selectively with fibrillated Fn because FN12 is buried in globular Fn, and that fibrillated ligands enable multivalent interactions with Embp's repetitive domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C76 state the study's central hypotheses, which are clearly articulated and subsequently tested. These hypotheses are well-grounded in prior structural knowledge (C27-C28, C51-C53) and are validated by the experimental results. The hypotheses appropriately guided the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:33.010304Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "614a7e53-b68f-486b-860e-890d30fec6ea",
+      "result_id": "384e8eb3-d594-4aa7-b4bb-949e7e3dfcb2"
+    },
+    {
+      "claim_id": "4677371c-5cf8-4981-bdaf-cd10adca1365",
+      "result_id": "384e8eb3-d594-4aa7-b4bb-949e7e3dfcb2"
+    },
+    {
+      "claim_id": "ae391d68-f004-497e-9a18-4b10e718bde4",
+      "result_id": "384e8eb3-d594-4aa7-b4bb-949e7e3dfcb2"
+    },
+    {
+      "claim_id": "84a68af7-46d7-47e9-a559-821fac43c780",
+      "result_id": "0153226b-be03-4485-9667-7e0281636316"
+    },
+    {
+      "claim_id": "f6317c96-e9c5-4cef-b61b-c0b28893cb69",
+      "result_id": "0153226b-be03-4485-9667-7e0281636316"
+    },
+    {
+      "claim_id": "7d225e76-ddb4-44eb-9b1c-d819ca653380",
+      "result_id": "0153226b-be03-4485-9667-7e0281636316"
+    },
+    {
+      "claim_id": "dd91ea79-753e-429b-a381-80b04cd47c7d",
+      "result_id": "0153226b-be03-4485-9667-7e0281636316"
+    },
+    {
+      "claim_id": "c8e6896d-7867-4a36-a01e-7456678659bf",
+      "result_id": "0153226b-be03-4485-9667-7e0281636316"
+    },
+    {
+      "claim_id": "c21f7052-46f6-4749-aa0e-7cc942f4b331",
+      "result_id": "0153226b-be03-4485-9667-7e0281636316"
+    },
+    {
+      "claim_id": "5bc50737-3ef3-4cd6-b068-1b82945d9fae",
+      "result_id": "0153226b-be03-4485-9667-7e0281636316"
+    },
+    {
+      "claim_id": "d6a92698-14b6-43b7-a211-f6537c5411c6",
+      "result_id": "b74e379d-5813-46d6-9c32-61b9a655e797"
+    },
+    {
+      "claim_id": "45b203ab-65ec-44a9-8606-eeefb85a67fc",
+      "result_id": "b74e379d-5813-46d6-9c32-61b9a655e797"
+    },
+    {
+      "claim_id": "0b02d31f-661c-4913-92b4-fe18f8aeb00c",
+      "result_id": "b74e379d-5813-46d6-9c32-61b9a655e797"
+    },
+    {
+      "claim_id": "0f087244-68dc-41f7-946c-607d0eb1a0f6",
+      "result_id": "b74e379d-5813-46d6-9c32-61b9a655e797"
+    },
+    {
+      "claim_id": "e18633e3-5cc6-4c90-b4e8-6ce4f3d46c01",
+      "result_id": "02a1bfc1-6a35-4f2d-ad6b-07b5ae25a137"
+    },
+    {
+      "claim_id": "054ef2cc-df94-4bbc-9dc7-4bc3cb4147f6",
+      "result_id": "02a1bfc1-6a35-4f2d-ad6b-07b5ae25a137"
+    },
+    {
+      "claim_id": "239f1406-6b4c-41c6-957d-18f46732ccd7",
+      "result_id": "02a1bfc1-6a35-4f2d-ad6b-07b5ae25a137"
+    },
+    {
+      "claim_id": "40c49650-3e37-4eef-8109-7b1291bbb702",
+      "result_id": "02a1bfc1-6a35-4f2d-ad6b-07b5ae25a137"
+    },
+    {
+      "claim_id": "21b89b85-c0e7-4d21-8ab0-b550dcd8e9fd",
+      "result_id": "8004ab85-5494-4adc-9771-b746fdb322b3"
+    },
+    {
+      "claim_id": "e702f823-f9aa-484a-ae76-580abe9769e2",
+      "result_id": "8004ab85-5494-4adc-9771-b746fdb322b3"
+    },
+    {
+      "claim_id": "75abf896-0ee6-4d9d-9a41-76dda677d43e",
+      "result_id": "8004ab85-5494-4adc-9771-b746fdb322b3"
+    },
+    {
+      "claim_id": "492ec30c-aef1-4525-98a4-547ae3462372",
+      "result_id": "8004ab85-5494-4adc-9771-b746fdb322b3"
+    },
+    {
+      "claim_id": "13c53d39-45d1-4bc4-8075-1f5ac9795afc",
+      "result_id": "d6b73cda-568f-4c17-bd1e-e15dbf91598f"
+    },
+    {
+      "claim_id": "35121e38-ce84-4bf0-b677-7035f51fb27b",
+      "result_id": "d6b73cda-568f-4c17-bd1e-e15dbf91598f"
+    },
+    {
+      "claim_id": "93ec61c2-65ab-4172-ba57-de21f22a4e7e",
+      "result_id": "d6b73cda-568f-4c17-bd1e-e15dbf91598f"
+    },
+    {
+      "claim_id": "74bd1b9a-7e2e-47a2-bcb1-16e9ca4a5f77",
+      "result_id": "d6b73cda-568f-4c17-bd1e-e15dbf91598f"
+    },
+    {
+      "claim_id": "8b942ea4-81ed-44e5-96f2-c9eea437e5ab",
+      "result_id": "d6b73cda-568f-4c17-bd1e-e15dbf91598f"
+    },
+    {
+      "claim_id": "205552d8-526e-461a-b0b7-a5b046735734",
+      "result_id": "aeafbbc8-9799-4356-a508-19a185e5b6a8"
+    },
+    {
+      "claim_id": "343362bb-e09c-4e97-b8aa-6c95283ab42e",
+      "result_id": "aeafbbc8-9799-4356-a508-19a185e5b6a8"
+    },
+    {
+      "claim_id": "77d162dc-62f0-449e-b6d8-08353c10a75e",
+      "result_id": "aeafbbc8-9799-4356-a508-19a185e5b6a8"
+    },
+    {
+      "claim_id": "1902cebf-0b49-4624-9192-a13c018e16db",
+      "result_id": "aeafbbc8-9799-4356-a508-19a185e5b6a8"
+    },
+    {
+      "claim_id": "c4844c3e-581e-41eb-8775-8c9917d04650",
+      "result_id": "98cf806c-a701-492e-8856-901756c164d8"
+    },
+    {
+      "claim_id": "487085eb-78ca-49d9-b2fc-60908ec846b6",
+      "result_id": "98cf806c-a701-492e-8856-901756c164d8"
+    },
+    {
+      "claim_id": "27d17519-bc59-4b7e-9c84-04bc167a12b8",
+      "result_id": "98cf806c-a701-492e-8856-901756c164d8"
+    },
+    {
+      "claim_id": "261d8641-f992-4438-861f-2ed63ebae9de",
+      "result_id": "98cf806c-a701-492e-8856-901756c164d8"
+    },
+    {
+      "claim_id": "ae87ae02-a88c-479e-96e8-0c6f6ab711be",
+      "result_id": "944576d9-d1bc-40d4-93eb-b33d983c09c0"
+    },
+    {
+      "claim_id": "89db77c6-8cc0-4851-af9d-230f36be74b0",
+      "result_id": "01525dfa-ba9f-4a2a-91ba-839d56d9f501"
+    },
+    {
+      "claim_id": "fb7c7953-5b7b-439c-8ec3-779dc9ac8fd0",
+      "result_id": "01525dfa-ba9f-4a2a-91ba-839d56d9f501"
+    },
+    {
+      "claim_id": "35110ecf-c3e8-409a-88a6-760e7b27fb89",
+      "result_id": "01525dfa-ba9f-4a2a-91ba-839d56d9f501"
+    },
+    {
+      "claim_id": "5cae64ee-61b1-41a2-b044-0c917306786e",
+      "result_id": "01525dfa-ba9f-4a2a-91ba-839d56d9f501"
+    },
+    {
+      "claim_id": "58cf6c1e-2889-40d4-a592-f8704a7ea51f",
+      "result_id": "01525dfa-ba9f-4a2a-91ba-839d56d9f501"
+    },
+    {
+      "claim_id": "40bb25f6-495a-429b-8186-42c78520ffdc",
+      "result_id": "6cdfe83b-8571-47a1-baa3-f452c960e538"
+    },
+    {
+      "claim_id": "0c4a9aaa-7edf-43a2-a07d-c36ed731c01c",
+      "result_id": "6cdfe83b-8571-47a1-baa3-f452c960e538"
+    },
+    {
+      "claim_id": "1e1974ba-674d-40d8-ba78-20989aa6b054",
+      "result_id": "6cdfe83b-8571-47a1-baa3-f452c960e538"
+    },
+    {
+      "claim_id": "d5945214-9b9f-45e9-94d9-3d57f3de290e",
+      "result_id": "6cdfe83b-8571-47a1-baa3-f452c960e538"
+    },
+    {
+      "claim_id": "fb730d60-424c-4ee3-b3ad-d3291f1d1b70",
+      "result_id": "b95410d3-ee66-4f1f-8995-b935e0ea0165"
+    },
+    {
+      "claim_id": "c4bbf1ac-cd99-4452-9e8d-d1acdb7b6ad7",
+      "result_id": "b95410d3-ee66-4f1f-8995-b935e0ea0165"
+    },
+    {
+      "claim_id": "4770b18b-f5fe-44bb-b1d5-c67770dae6d1",
+      "result_id": "310d01de-9cd6-43ec-925e-ac634cb58ebe"
+    },
+    {
+      "claim_id": "88fc65d4-2395-4d49-8600-d4dd501c5916",
+      "result_id": "310d01de-9cd6-43ec-925e-ac634cb58ebe"
+    },
+    {
+      "claim_id": "a72652b7-4769-4e8a-a5eb-0cdbf3cb0430",
+      "result_id": "310d01de-9cd6-43ec-925e-ac634cb58ebe"
+    },
+    {
+      "claim_id": "e817c730-5a5c-414c-a43c-0711a1b9a660",
+      "result_id": "5ccc42c7-a5f7-4a5c-aac7-b3894ff5a5f0"
+    },
+    {
+      "claim_id": "08506505-6770-4a9e-af1b-4d401622b07a",
+      "result_id": "5ccc42c7-a5f7-4a5c-aac7-b3894ff5a5f0"
+    },
+    {
+      "claim_id": "ae0eb5ec-b457-4f4a-81b8-b45cf6953013",
+      "result_id": "6e12f2ed-63de-40b5-9bc2-8bf541990c4f"
+    },
+    {
+      "claim_id": "438e3e23-ffcb-473e-8f96-836a4908a6ab",
+      "result_id": "6e12f2ed-63de-40b5-9bc2-8bf541990c4f"
+    },
+    {
+      "claim_id": "cbcdf225-3db3-428c-8097-153c1bb812f0",
+      "result_id": "6e12f2ed-63de-40b5-9bc2-8bf541990c4f"
+    },
+    {
+      "claim_id": "a10f316f-5502-4a5c-87f4-c3714ccbdc6e",
+      "result_id": "c535cd0e-278d-4862-969e-9188363db446"
+    },
+    {
+      "claim_id": "8ae9d759-e3fb-4b3d-95fd-807c67f0029e",
+      "result_id": "c535cd0e-278d-4862-969e-9188363db446"
+    },
+    {
+      "claim_id": "1d4ff0b4-be1f-42d4-9de0-4fb165c62316",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "1ed5c080-f8ea-4ae4-be45-84260ca803a9",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "b7d3a56f-c25a-44f8-814d-815b52431d57",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "9015d810-c0e4-4ba3-a0f7-a357d9c78f53",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "d80db122-7d7d-4711-8134-29fe1eda92d7",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "884514b1-834f-4258-a2d4-a8a16c063816",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "5c04d19f-3f4c-4e67-b55f-72d5f2ae1206",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "307c9199-5d55-4610-b6cb-62976db44704",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "f53a7f33-8a0c-4971-aed2-f02e866b8f13",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "7a1a66de-2d6d-47c7-a02a-0513b6b66f67",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "34d5c74e-bbc3-4b27-828f-76cfa168ca5b",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "a8453897-b765-4fff-8d8c-b4cdbdf6359e",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "b20130b0-ed0e-4acc-a8b1-a0274f1cd5cb",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "835834a6-3be0-45c0-8c30-9459b8228885",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "598373ca-aadc-4f92-9626-d3a74ea33561",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "05149c81-64f6-43eb-bfb7-8ad77c513f77",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "987330d7-d497-4d87-a669-a8142d1a2c2f",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "3995b9fb-ce61-4319-921a-9fcc57d616f3",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "de40cd4c-3d9d-4da2-a62c-e301df79078d",
+      "result_id": "fc187280-b666-45aa-bd4e-1c136c548f25"
+    },
+    {
+      "claim_id": "435c22d5-34f3-45fe-bec1-272bacb65134",
+      "result_id": "bcacd7e6-531a-49bd-973f-1efc5346222d"
+    },
+    {
+      "claim_id": "8cc7a012-7c1f-4e76-bd32-766fda2d384b",
+      "result_id": "bcacd7e6-531a-49bd-973f-1efc5346222d"
+    },
+    {
+      "claim_id": "0dd3244b-ac47-4e2c-bc10-59b29a50a452",
+      "result_id": "bcacd7e6-531a-49bd-973f-1efc5346222d"
+    },
+    {
+      "claim_id": "fc2e0525-ff17-4727-a013-6bb217d9dacd",
+      "result_id": "bcacd7e6-531a-49bd-973f-1efc5346222d"
+    },
+    {
+      "claim_id": "113eebc0-3fbb-4e71-8243-7b9055870a58",
+      "result_id": "bcacd7e6-531a-49bd-973f-1efc5346222d"
+    },
+    {
+      "claim_id": "6c1aae64-636c-4716-9a5f-b922c2a72693",
+      "result_id": "bcacd7e6-531a-49bd-973f-1efc5346222d"
+    },
+    {
+      "claim_id": "91472f85-3a31-4957-a14b-342df06a4d86",
+      "result_id": "bcacd7e6-531a-49bd-973f-1efc5346222d"
+    },
+    {
+      "claim_id": "764a8b52-330a-49ad-957d-b668fe861252",
+      "result_id": "bcacd7e6-531a-49bd-973f-1efc5346222d"
+    },
+    {
+      "claim_id": "504d0b71-e2b8-4eb0-b949-7e181578c4ec",
+      "result_id": "09b6455e-5e3a-46f1-8328-044374e72b8e"
+    },
+    {
+      "claim_id": "16141a04-cc10-4489-b1ec-2426635f24cb",
+      "result_id": "09b6455e-5e3a-46f1-8328-044374e72b8e"
+    },
+    {
+      "claim_id": "cc371ab2-84e3-4b65-b833-5d3395a3f86a",
+      "result_id": "09b6455e-5e3a-46f1-8328-044374e72b8e"
+    },
+    {
+      "claim_id": "da249076-dad3-4f8d-b76a-a7613e3f4e23",
+      "result_id": "09b6455e-5e3a-46f1-8328-044374e72b8e"
+    },
+    {
+      "claim_id": "94d9da14-e0a8-43fa-9bf6-4b5d8dd680a6",
+      "result_id": "09b6455e-5e3a-46f1-8328-044374e72b8e"
+    },
+    {
+      "claim_id": "fa4cd33c-396e-4565-a759-a272d2bc5084",
+      "result_id": "09b6455e-5e3a-46f1-8328-044374e72b8e"
+    },
+    {
+      "claim_id": "9ca69170-5cda-4a93-a9aa-0931e3240e77",
+      "result_id": "f33f4d49-ebb5-496f-abd6-72442da919b5"
+    },
+    {
+      "claim_id": "f7c54bad-f5af-4a43-b204-69b03212b66b",
+      "result_id": "f33f4d49-ebb5-496f-abd6-72442da919b5"
+    },
+    {
+      "claim_id": "23747d86-1e56-40f6-b97a-22a1becdc422",
+      "result_id": "f33f4d49-ebb5-496f-abd6-72442da919b5"
+    }
+  ],
+  "comparisons": []
+}

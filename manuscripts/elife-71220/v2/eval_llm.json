@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors were unable to detect mechanosensitive channel activity of TMEM120A in multiple experimental systems. Electrophysiological recordings in HEK293 and CHO cells showed pressure-evoked currents that were attributed to endogenous Piezo1 channels rather than TMEM120A, and reconstituted proteoliposomes showed no mechanosensitive activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C34 provide converging negative evidence from multiple experimental approaches (cell-attached patch clamp in HEK293, CHO, and Piezo1-knockout cells, plus giant liposome patching). The control experiments with Piezo1 knockout cells (C29-C30) effectively demonstrate that observed currents were from endogenous channels, not TMEM120A. The systematic testing across different systems strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C84",
+      "C85"
+    ],
+    "result": "The cryo-EM structure of human TMEM120A was determined to 3.2 \u00c5 resolution, revealing a tightly packed homodimer. The protein was expressed in HEK293F cells, purified through detergent solubilization and affinity chromatography, and the high-quality EM density map allowed accurate model building for residues 8-69, 80-255, and 261-335 of each subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35-C39, C84-C85 describe standard cryo-EM structure determination with appropriate resolution (3.2 \u00c5) and well-documented methodology. The resolution is sufficient for the conclusions drawn, and the identification of disordered regions (C85) is consistent with typical structural biology practice. The dimeric state is directly observed in the structure (C5, C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C9",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C87"
+    ],
+    "result": "TMEM120A has a complex dimeric architecture with each subunit containing an N-terminal coiled-coil domain (CCD) with CC1 and CC2 helices, and a C-terminal transmembrane domain (TMD) with six transmembrane helices forming an \u03b1-barrel. The domains are connected by a re-entrant loop that mediates extensive dimerization interactions, resulting in an arrowhead-shaped transmembrane region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C9, C41-C55, C87 provide detailed structural characterization directly observable in the 3.2 \u00c5 cryo-EM map. The description of domain architecture, helix arrangements, and dimerization interfaces is consistent with standard structural analysis. The specific measurements (e.g., CC1 ~60 residues in C87) and interaction details (Van der Waals contacts in C52) are appropriate for this resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C47",
+      "C57",
+      "C78"
+    ],
+    "result": "TMEM120A lacks clear structural features of an ion channel protein. The transmembrane \u03b1-helical barrel encloses a deep pocket that is sealed off from the outside with no discernible ion conduction pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C47, C57, C78 are well-supported by the structural data showing a sealed pocket (C46) rather than an open pore. This structural observation, combined with the negative electrophysiology results (C21-C22), provides strong converging evidence against TMEM120A functioning as an ion channel. The inference is reasonable given the architecture observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C40",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C86"
+    ],
+    "result": "A coenzyme A (CoA) molecule is bound in the deep pocket of TMEM120A. This was confirmed through multiple approaches: electron density in the cryo-EM structure, biochemical CoA assays showing ~1:1 protein:ligand stoichiometry, and LC-MS/MS analysis identifying both CoA and acetyl-CoA with CoA being the predominant species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C40, C70-C77, C86 provide orthogonal evidence for CoA binding through structural (electron density), biochemical (fluorometric assay), and mass spectrometry approaches. The measured CoA concentration (0.15 mM) matches well with the calculated 1:1 ratio (C71-C72), and the MS fragmentation patterns confirm identity (C76). The presence of both CoA and acetyl-CoA (C73) with CoA predominating (C86) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C79"
+    ],
+    "result": "TMEM120A shares striking structural similarity with ELOVL7 fatty acid elongase despite low sequence homology. Both proteins contain a 6-TM \u03b1-barrel with similar topology and architecture, with an RMSD of ~2.5 \u00c5 between their barrel-forming helices. This structural homology was identified through DALI searches and confirmed by HHpred analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C58-C63, C79 document structural similarity through computational comparison (DALI, HHpred) and quantitative RMSD measurement (2.5 \u00c5). The RMSD value indicates significant structural similarity, and the use of multiple independent homology detection methods strengthens the conclusion. The caveat about low sequence homology (C11, C62) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C80",
+      "C81"
+    ],
+    "result": "TMEM120A contains a sequence motif (WVFHH) at the equivalent location to the catalytically important HxxHH motif in ELOVL elongases. Both proteins can bind CoA or CoA derivatives in the pocket of their 6-TM barrels, with ELOVL7 binding 3-keto acyl-CoA and TMEM120A binding CoA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68, C80-C81 establish functional parallels between TMEM120A and ELOVL7. The sequence similarity at the catalytic motif position (WVFHH vs HVFHH) is nearly identical (C66), and both proteins bind CoA derivatives in structurally equivalent pockets (C80). This is supported by both the published ELOVL7 structure (C68) and the current TMEM120A data (C10, C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors speculate that TMEM120A may function as an enzyme for fatty acid metabolism rather than a mechanosensitive channel, based on its structural similarity to ELOVL fatty acid elongase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12, C82-C83 represent speculation explicitly acknowledged by the authors (\"may imply,\" \"possibility\"). While the structural similarities to ELOVL7 are well-documented (C11, C58-C66, C79-C81) and the lack of channel features is clear (C8, C47, C57), no direct enzymatic activity assays are presented. The hypothesis is reasonable but requires experimental validation of enzymatic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The extensive dimerization of TMEM120A involving virtually every part of the protein implies that the protein must function as a dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is a reasonable inference based on the extensive structural evidence for dimerization (C5, C6, C48-C55). The involvement of multiple domains (CCD, TMD, re-entrant loop) in dimerization interfaces with extensive contacts suggests the dimer is the functional unit. This is a standard inference in structural biology when such extensive interfaces are observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Multiple membrane protein topology prediction methods predicted that TMEM120A has both N- and C-termini on the cytosolic side of the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by computational predictions from TOPCONS, though the authors appropriately note uncertainty about cellular localization and membrane orientation (C88). The use of multiple prediction methods strengthens confidence, and this topology assignment is used consistently in structural interpretation. However, this remains a prediction rather than experimental determination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C88"
+    ],
+    "result": "TMEM120A (also named TACAN or NET29) is a conserved vertebrate membrane protein with conflicting proposed functions in the literature, including roles in adipocyte differentiation, nuclear envelope organization, and mechanosensation. The cellular localization and membrane orientation remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C13-C20, C23-C27, C88 accurately summarize prior work through appropriate citations. These are background claims establishing context for the current study. The authors correctly note the uncertainty about localization (C88) and present the conflicting functional proposals from different research groups, which motivates their structural investigation.",
+    "result_type": "MINOR"
+  }
+]

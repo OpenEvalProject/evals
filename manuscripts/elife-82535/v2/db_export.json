@@ -1,0 +1,1819 @@
+{
+  "submission": {
+    "id": "63dbef1f-1c6b-44f3-b26a-88e40b2baf9c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:54:58.213895Z",
+    "updated_at": "2025-12-03T17:54:58.213895Z"
+  },
+  "content": [
+    {
+      "id": "82c2352f-649c-4878-933a-8302b8035484",
+      "submission_id": "63dbef1f-1c6b-44f3-b26a-88e40b2baf9c",
+      "content_type": "manuscript",
+      "content_text": "# Heritability enrichment in context-specific regulatory networks improves phenotype-relevant tissue identification\n\n## Authors\n\n- Zhanying Feng<sup>1</sup> ([ORCID: 0000-0002-5727-3929](https://orcid.org/0000-0002-5727-3929))\n- Zhana Duren<sup>3</sup>\n- Jingxue Xin<sup>4</sup>\n- Qiuyue Yuan<sup>3</sup>\n- Yaoxi He<sup>5</sup>\n- Bing Su<sup>5</sup>\n- Wing Hung Wong<sup>4</sup> \u2020\n- Yong Wang<sup>1</sup> ([ORCID: 0000-0003-0695-5273](https://orcid.org/0000-0003-0695-5273)) \u2020\n\n### Affiliations\n\n1. CEMS, NCMIS, HCMS, MDIS, Academy of Mathematics and Systems Science, Chinese Academy of Sciences Beijing China ([ROR:00s97k668](https://ror.org/00s97k668))\n2. School of Mathematics, University of Chinese Academy of Sciences, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))\n3. Center for Human Genetics and Department of Genetics and Biochemistry, Clemson University Greenwood United States ([ROR:01gcrbc43](https://ror.org/01gcrbc43))\n4. Department of Statistics, Department of Biomedical Data Science, Bio-X Program, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n5. State Key Laboratory of Genetic Resources and Evolution, Kunming Institute of Zoology, Chinese Academy of Sciences Kunming China ([ROR:034t30j35](https://ror.org/034t30j35))\n6. Center for Excellence in Animal Evolution and Genetics, Chinese Academy of Sciences Kunming China ([ROR:034t30j35](https://ror.org/034t30j35))\n7. Key Laboratory of Systems Biology, Hangzhou Institute for Advanced Study, University of Chinese Academy of Sciences, Chinese Academy of Sciences Hangzhou China ([ROR:034t30j35](https://ror.org/034t30j35))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSystems genetics holds the promise to decipher complex traits by interpreting their associated SNPs through gene regulatory networks derived from comprehensive multi-omics data of cell types, tissues, and organs. Here, we propose SpecVar to integrate paired chromatin accessibility and gene expression data into context-specific regulatory network atlas and regulatory categories, conduct heritability enrichment analysis with genome-wide association studies (GWAS) summary statistics, identify relevant tissues, and estimate relevance correlation to depict common genetic factors acting in the shared regulatory networks between traits. Our method improves power upon existing approaches by associating SNPs with context-specific regulatory elements to assess heritability enrichments and by explicitly prioritizing gene regulations underlying relevant tissues. Ablation studies, independent data validation, and comparison experiments with existing methods on GWAS of six phenotypes show that SpecVar can improve heritability enrichment, accurately detect relevant tissues, and reveal causal regulations. Furthermore, SpecVar correlates the relevance patterns for pairs of phenotypes and better reveals shared SNP-associated regulations of phenotypes than existing methods. Studying GWAS of 206 phenotypes in UK Biobank demonstrates that SpecVar leverages the context-specific regulatory network atlas to prioritize phenotypes\u2019 relevant tissues and shared heritability for biological and therapeutic insights. SpecVar provides a powerful way to interpret SNPs via context-specific regulatory networks and is available at https://github.com/AMSSwanglab/SpecVar, copy archived at swh:1:rev:cf27438d3f8245c34c357ec5f077528e6befe829.\n\n## Introduction\n\nGenome-wide association studies (GWAS) have gained a great success to identify thousands of genetic variants significantly associated with a variety of human complex phenotypes. Interpretation of those genetic variants holds the key to biological mechanism discovery and personalized medicine practice. However, this task is hindered by the genetic architecture that the heritability is distributed across SNPs of the whole genome with linkage disequilibrium, which cumulatively affect complex traits. By quantifying the contribution of true polygenic signal considering linkage disequilibrium, LD Score regression (LDSC) provides a widely appreciated method to estimate heritability (Bulik-Sullivan et al., 2015b) and genetic correlation (Bulik-Sullivan et al., 2015a) from GWAS summary statistics.\n\nAnother obstacle to genetic variant interpretation is that SNPs contribute to phenotype through gene regulatory networks in certain cellular contexts, that is, causal tissues or cell types. Those tissues are characterized by different types of epigenetic data, which give the active regions of the genome that interact with transcription factors (TFs) to regulate gene expression. Stratified LDSC extends LDSC and can estimate the partitioned heritability enrichment in the functional categories (Finucane et al., 2015). The categories can be nonspecific genome annotations (such as coding, UTR, promoter, and intronic regions) and context-specific regulatory regions called from chromatin data of different cell types, such as DNase-I hypersensitive sites from DNase-seq data, accessible peaks from ATAC-seq data, histone marker, or TF binding sites from ChIP-seq data (AAP and SAP). Using expression data, the functional categories can be alternatively constructed by the 100 kb windows around the transcribed regions of specifically expressed genes (SEGs) (Finucane et al., 2018). Essentially, these strategies summarize the high-dimensional SNP signals from the whole genome into partitioned heritability enrichments of functional categories and successfully identify relevant cellular tissues for many phenotypes (Finucane et al., 2015).\n\nThe rapid increase of multi-modal data resources, especially matched gene expression, chromatin states, and TF binding sites (i.e., measured on the same sample), offers an exciting opportunity to construct better functional categories for estimating context-specific heritability enrichment. One efficient way is to integrate large-scale epigenomic and transcriptomic data spanning diverse human contexts to infer regulatory networks (Duren et al., 2017). Those regulatory networks provide rich context-specific information and usually comprise TFs, regulatory elements (REs), and target genes (TGs). Recently, we developed the PECA2 model to infer regulatory network from paired expression and chromatin accessibility data (Duren et al., 2017; Duren et al., 2020). The inferred regulatory networks have been used to identify the master regulators in stem cell differentiation (Li et al., 2019) and interpret conserved regions for the nonmodel organisms (Xin et al., 2020). Noncoding genetic variants can be interpreted in the regulatory networks on how they cooperatively affect complex traits through gene regulation in certain tissues or cell types. For example, genetic variants in the regulatory network of cranial neural crest cells (CNCC) are elucidated on how they affect human facial morphology (Feng et al., 2021). Regulatory networks can help identify two kinds of relevant cell types to COVID19 severity (Feng et al., 2022b). RSS-NET utilizes gene regulatory networks of multiple contexts and shows better tissue enrichment estimation by decomposing the total effect of an SNP through TF-TG regulations (Zhu et al., 2021) and HiChIP RE-TG regulations (Ma et al., 2022). The phenotype-associated SNPs are revealed to be functional in a tissue- or cell-type-specific manner (Westra and Franke, 2014). The advances in constructing regulatory networks and interpreting genetic variants with regulatory networks enlighten us to (1) assemble a more comprehensive context-specific regulatory network atlas by using paired expression and accessibility data across diverse cellular contexts; (2) build context-specific regulatory categories by focusing on RE\u2019s specificity compared with other contexts; and (3) systematically identify enriched tissues or cell types, relevance correlation, and the underlying SN-associated regulations.\n\nSpecifically, we propose SpecVar to first leverage the publicly available paired expression and chromatin accessibility data in ENCODE and ROADMAP to systematically construct context-specific regulatory networks of 77 human contexts, which cover major cell types and germ layer lineages. This atlas serves as a valuable resource for genetic variants interpretation in multicellular contexts. SpecVar then constructs regulatory categories in the genome with this atlas, which can significantly improve the heritability enrichment. Based on the heritability enrichment and p-value in our regulatory categories, SpecVar defines the relevance score to give the context-specific representation of the GWAS. In this article, we use six well-studied phenotypes, large-scale facial morphology, and UKBB phenotypes to show that, for a single phenotype, the relevance score of SpecVar can identify relevant tissues more efficiently; and for multiple phenotypes, SpecVar can reveal relevance correlation by common relevant tissues, and underlying shared SNP-associated regulations. Compared to the existing methods, SpecVar shows novelty in three aspects: (1) SpecVar integrates paired gene expression data and chromatin, which are two types of easily accessible data with rich information, into regulatory networks. The gene expression and chromatin accessibility in the regulatory network are complementary to each other to reveal the high-quality active regulatory elements and genes for certain tissues or cell types to interpret genetic variants; (2) SpecVar highlights the comparison with other contexts by specificity to narrow down the regulatory molecules; and (3) SpecVar is more interpretable because it can explain the relevance to tissues by SNP-associated regulatory networks and interpret phenotype correlation through common relevant tissues and shared SNP-associated regulatory network. These results show that SpecVar serves as a promising tool for post-GWAS analysis.\n\n## Results\n\n### Overview of the SpecVar method\n\nSpecVar assembled a context-specific regulatory network atlas and built the context-specific representation (relevance score and SNP-associated regulatory network) of GWAS summary statistics based on heritability enrichment. Figure 1 summarizes the major steps of SpecVar to construct the context-specific regulatory network atlas and regulatory categories, calculate heritability enrichment and SNP-associated regulatory network, and investigate interpretable relevant tissues and relevance correlation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig1-v2.jpg)\n\n**Figure 1.:** (a) SpecVar constructs an atlas of context-specific regulatory networks and regulatory categories. Then SpecVar represents genome-wide association studies (GWAS) summary statistics into relevance scores and SNP-associated regulatory subnetworks. (b) For a single phenotype, SpecVar can use relevance score and SNP-associated regulatory subnetworks to identify and interpret relevant tissues. (c) For multiple phenotypes, based on relevance score, SpecVar can reveal relevance correlation, common relevant tissues, and shared regulations.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The trans-regulatory score (TRS) across 77 tissues are used for PCA.\n\nWe first constructed regulatory networks of M (M = 77 in this work) contexts. Each network is represented by a set of relations between TF and RE and between RE and TG. The M contexts included samples from all three germ layers, such as \u2018frontal cortex\u2019 (ectoderm), \u2018fetal thymus\u2019 (mesoderm), and \u2018body of pancreas\u2019 (endoderm), which ensured the wide coverage and system-level enrichment (Figure 1\u2014figure supplement 1). The context-specific regulatory networks were extracted based on the specificity of REs compared with other contexts, considering the hierarchical relationship of M contexts (Materials and methods, Supplementary file 1a). The REs in the $i$th context-specific regulatory network were pooled to form a regulatory category $C_{i}$ in the genome, which restricted the annotation to context-specific REs associated with active binding TFs and nearby regulated TGs (Figure 1a). Our atlas led to M regulatory categories, $C_{1},C_{2},\u2026,C_{M}$ of SpecVar. Given GWAS summary statistics, the M regulatory categories allowed partitioned heritability enrichment analysis by stratified LDSC. For a phenotype, stratified LDSC modeled genome-wide polygenic signals, partitioned SNPs into categories with different contributions for heritability, and considered SNP\u2019s linkage disequilibrium with the following polygenic model:\n\n$$\nE\u03c7_{j}^{2}=N\\sumi\\tau_{i}lj,i+Na+1\n$$\n\nHere, $\u03c7_{j}^{2}$ is the marginal association of SNP $j$ from GWAS summary statistics; $N$ is the sample size; $lj,i=\\sumk\\inC_{i}r_{jk}^{2}$ is the LD score of SNP $j$ in the $i$th regulatory category $C_{i}$ , where $r_{jk}$ is the genotype correlation between SNP $j$ and SNP $k$ in population; $a$ measures the contribution of confounding biases; and $\\tau_{i}$ represents the heritability enrichment of SNPs in $C_{i}$ . Stratified LDSC estimated the p value $p_{i}$ for the heritability enrichment $\\tau_{i}$ by block Jackknife (Finucane et al., 2015).\n\nWe defined the relevance score ($R_{i}$) of this phenotype to $i$th context (Figure 1a) as follows by combining the heritability enrichment and statistical significance (p-value):\n\n$$\nR_{i}=\\tau_{i}\u2219-log\u2061p_{i}\n$$\n\nThe relevance score (R score) provided a decision trade-off between the heritability enrichment and p-value resulting from a hypothesis test. It offered a robust means to rank and select relevant tissues for a given phenotype (Xiao et al., 2014).\n\nMeanwhile, SpecVar associated SNPs with context-specific regulatory networks for biological interpretation. We defined the association score (A score) to prioritize the REs by combining its regulatory strength and association significance with the phenotype (averaged -log(p-value) of SNPs located near the RE and downweighted by their LD scores and distances to this RE). We extracted the REs with significant A scores ($FDR\\leq0.05$), as well as their directly linked upstream TFs, downstream TGs, and associated SNPs, to form the SNP-associated regulatory subnetwork (Figure 1a, Materials and methods). Given GWAS summary statistics of a phenotype, SpecVar obtained M SNP-associated regulatory subnetworks, $G_{1},G_{2},\u2026,G_{M}$ , allowing us to interpret relevant tissues by SNP\u2019s regulation mechanism.\n\nThe relevance score to diverse human contexts and SNP-associated regulatory networks allowed SpecVar to perform post-GWAS analysis. For a single phenotype, the R scores indicated the relevance of this phenotype to M contexts, which can be used to identify relevant tissues. Then in the relevant tissues, we can investigate the SNP-associated regulatory subnetwork to interpret the relevance (Figure 1b, Materials and methods). For multiple phenotypes, we can correlate the R score vectors in multiple contexts to define relevance correlation (Finucane et al., 2018). The relevance correlation might give insights into the association of phenotypes since SpecVar can further interpret the relevance correlation between two phenotypes by common relevant tissues and the shared SNP-associated regulatory subnetwork (Figure 1c, Materials and methods).\n\n### Context-specific regulatory networks improve heritability enrichment\n\nWe first designed experiments to show that context-specific regulatory networks could improve heritability enrichment. We collected GWAS summary statistics of six phenotypes, including two lipid phenotypes (Willer et al., 2013): low-density lipoprotein (LDL) and total cholesterol; two human intelligential phenotypes (Lee et al., 2018): educational attainment and cognitive performance; and two craniofacial bone phenotypes: brain shape (Naqvi et al., 2021) and facial morphology (Xiong et al., 2019). We used these six phenotypes as a benchmark since their relevant tissues have been previously studied and partially known: lipid phenotypes are associated with the liver for its key role in lipid metabolism (Nguyen et al., 2008); human intelligential phenotypes are associated with brain tissues (Goriounova and Mansvelder, 2019); facial morphology and brain shape have shared heritability in cranial neural crest cells (Naqvi et al., 2021). We compared our context-specific regulatory networks with four alternative methods of functional categories: all regulatory elements (ARE), all accessible peaks (AAP), specifically accessible peaks (SAP) (Finucane et al., 2015), and specifically expressed genes (Finucane et al., 2018) (SEG) (Materials and methods).\n\nFirst, we showed that SpecVar could achieve higher heritability enrichment in the relevant tissues than other methods (Supplementary file 1b). For LDL, SpecVar obtained a heritability enrichment of 678.91 in the \u2018right lobe of liver\u2019, while ARE, SAP, AAP, and SEG gave heritability enrichment of 113.34, \u201342.09, 50.95, and 4.47, respectively. We conducted Welch\u2019s t-test to assess the significance of the difference between SpecVar and other methods and found that the heritability enrichment of SpecVar was significantly higher than ARE ($p=6.9\\times10^{\u22124}$), SAP ($p=1.4\\times10^{\u22124}$), AAP ($p=3.4\\times10^{\u22124}$), and SEG ($p=2.1\\times10^{\u22124}$) (Figure 2a). For total cholesterol, SpecVar also gave significantly higher heritability enrichment in \u2018right lobe of liver\u2019 than ARE ($p=5.7\\times10^{\u22124}$), SAP ($p=4.4\\times10^{\u22125}$), AAP ($p=1.6\\times10^{\u22124}$), and SEG ($p=7.7\\times10^{\u22125}$) (Figure 2b). For educational attainment and cognitive performance, they were relevant to brain tissues: \u2018frontal cortex\u2019, \u2018cerebellum\u2019, \u2018caudate nucleus\u2019, \u2018Ammon\u2019s horn\u2019, and \u2018putamen\u2019. SpecVar obtained the highest averaged heritability enrichment in brain tissues among these methods (Figure 2\u2014figure supplement 1a and b). In the \u2018frontal cortex\u2019, SpecVar had significantly higher heritability enrichment than ARE ($p=1.2\\times10^{\u22125}$), SAP ($p=2.0\\times10^{\u22126}$), AAP ($p=3.0\\times10^{\u22126}$), and SEG ($p=3.0\\times10^{\u22126}$) for educational attainment (Figure 2c). And for cognitive performance in \u2018frontal cortex\u2019, SpecVar also had significantly higher heritability enrichment than ARE ($p=9.0\\times10^{\u22126}$), SAP ($p=2.0\\times10^{\u22126}$), AAP ($p=1.0\\times10^{\u22126}$), and SEG ($p=1.0\\times10^{\u22126}$) (Figure 2d). For brain shape, SpecVar obtained a significantly higher heritability enrichment in its relevant context \u2018CNCC\u2019 than the other four methods (ARE $p=5.9\\times10^{\u22124}$ , SAP $p=6.7\\times10^{\u22124}$ , AAP $p=7.5\\times10^{\u22124}$ , and SEG $p=8.1\\times10^{\u22125}$ , Figure 2e). For facial morphology, SpecVar also gave a much higher heritability enrichment in \u2018CNCC\u2019 than the other four methods (ARE $p=9.0\\times10^{\u22126}$ , SAP $p=1.0\\times10^{\u22126}$ , AAP $p=7.0\\times10^{\u22126}$ , and SEG $p=1.0\\times10^{\u22126}$ , Figure 2e). Second, except for the known relevant tissues, these complex traits may be relevant to other contexts. So, for every method, we ranked the heritability enrichment to get the top 10 contexts and used these top contexts\u2019 heritability enrichment to compare the ability of these five methods to explain heritability. SpecVar also showed the best performance of heritability enrichment among the five methods (Figure 2g). Taking brain shapeas an example, SpecVar achieved significantly higher heritability enrichment (averaged heritability enrichment 96.13) than ARE (averaged heritability enrichment 26.77, t-test $p=3.4\\times10^{\u22123}$), SAP (42.92, $p=1.9\\times10^{\u22122}$), AAP (20.34, $p=1.8\\times10^{\u22123}$), and SEG (2.25, $p=3.1\\times10^{\u22124}$). We found that specificity could significantly improve the heritability enrichment. Among the five methods we compared, SpecVar and SAP are based on the specificity of ARE and AAP, respectively. SpecVar showed significantly higher heritability enrichment than ARE and SAP showed significantly higher heritability enrichment than AAP (Figure 2g). For brain shape, SpecVar obtained averaged heritability enrichment of 96.31 of the top 10 contexts, which was significantly higher than ARE (averaged heritability enrichment 26.77, $p=3.4\\times10^{\u22123}$); SAP obtained average heritability enrichment of 42.92, and AAP\u2019s averaged heritability enrichment was 20.34 ($p=2.7\\times10^{\u22123}$). The other five phenotypes showed a similar improvement (Figure 2g).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig2-v2.jpg)\n\n**Figure 2.:** (a) The heritability enrichment of low-density lipoprotein (LDL) in the \u2018right lobe of liver\u2019. (b) The heritability enrichment of total cholesterol in the \u2018right lobe of liver\u2019. (c) The heritability enrichment of educational attainment in the \u2018frontal cortex\u2019. (d) The heritability enrichment of cognitive performance in the \u2018frontal cortex\u2019. (e) The heritability enrichment of brain shape in cranial neural crest cell (CNCC). (f) The heritability enrichment of facial morphology in \u2018CNCC\u2019. The sample size of error bars for (a-f) is 200. (g) Boxplot of top 10 contexts\u2019 heritability enrichment of six phenotypes for five methods.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) The five brain tissues\u2019 averaged heritability enrichment of educational attainment. (b) The five brain tissues\u2019 averaged heritability enrichment of cognitive performance. (c) Schematic showing the relationship and differences of the five methods. (d) Three comparisons to conduct ablation analysis. For comparison between SpecVar and specifically accessible peaks (SAP), we exclude their shared genomic regions. And for comparison between SpecVar and specifically expressed genes (SEG), we also exclude their shared genomic regions. (e) The log2(Fold) of SpecVar vs all regulatory elements (ARE), SpecVar vs SAP, and SpecVar vs SEG for six phenotypes in their relevant tissues.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) The heritability enrichment of low-density lipoprotein (LDL) in the \u2018right lobe of liver\u2019. (b) The heritability enrichment of total cholesterol in the \u2018right lobe of liver\u2019. (c) The heritability enrichment of educational attainment in the \u2018frontal cortex\u2019. (d) The heritability enrichment of cognitive performance in the \u2018frontal cortex\u2019. (e) The heritability enrichment of brain shape in cranial neural crest cell (\u2018CNCC\u2019). (f) The heritability enrichment of facial morphology in \u2018CNCC\u2019. The sample size of error bars for (a-f) is 200.\n\nTo explore the heritability enrichment improvement of SpecVar, we conducted ablation analysis to study the contribution of two important parts of SpecVar: (1) regulatory network by integrating gene expression and chromatin accessibility data, and (2) specificity by comparing with other contexts. Figure 2\u2014figure supplement 1c shows the relationship and difference of the five methods: SEG is the combination of gene expression and specificity; AAP is only from chromatin accessibility; SAP is the combination of chromatin accessibility and specificity; ARE integrates gene expression and chromatin accessibility; and SpecVar considers integration of gene expression, chromatin accessibility, and specificity. To analyze the effect of the regulatory network in heritability enrichment, we compared SpecVar with SAP and showed the effect of gene expression data. We compared SpecVar with SEG and showed the effect of chromatin accessibility data. We compared SpecVar with ARE and showed the contribution of specificity (Figure 2\u2014figure supplement 1d). To quantify the effect of each component, we caculated the fold change of different methods\u2019 heritability enrichments. We found that chromatin accessibility, which was part of the regulatory network, showed the highest effect in improving heritability enrichments for all six phenotypes. This is consistent with the fact that most genetic variants are located in the noncoding regulatory regions (Claussnitzer et al., 2015; Kumar et al., 2012; Smemo et al., 2014) and chromatin accessibility gives the direct functional evidence for genetic variants. The specificity in SpecVar also contributed at least four-fold improvement in heritability enrichment (Figure 2\u2014figure supplement 1e).\n\nIn summary, the experiment on six phenotypes\u2019 GWAS summary statistics proved that SpecVar achieved the best performance in explaining the heritability of phenotypes. These results demonstrated the power of integrating expression and chromatin accessibility data and considering contexts\u2019 specificity.\n\n### SpecVar can accurately reveal relevant tissues for phenotypes\n\nAfter establishing that SpecVar could use the context-specific regulatory networks to improve heritability enrichment, we next showed that for a given phenotype, SpecVar could use R scores to identify relevant tissues more accurately than other methods. In this experiment, we also used the above six phenotypes with their known relevant tissues as a benchmark and first compared SpecVar with the other two specificity-based methods: SAP and SEG (Materials and methods).\n\nFor two lipid phenotypes, SpecVar revealed that both LDL and total cholesterol were most relevant to the \u2018right lobe of liver\u2019 (Figure 3a and b, Table 1), which was consistent with the existing reports that the liver plays a central role in lipid metabolism, serving as the center for lipoprotein uptake, formation, and export to the circulation (Jha et al., 2018; Nguyen et al., 2008). SpecVar found that LDL and the total cholesterol were also significantly relevant to the \u2018fetal adrenal gland\u2019 and the adrenal cortex has been revealed to play an important role in lipid mentalism (Boyd et al., 1983). However, SAP and SEG failed to prioritize liver tissue as the significant relevant tissue. For LDL, SAP identified the \u2018frontal cortex\u2019 to be the most relevant tissue. SEG identified the most relevant tissue to be \u2018HepG2\u2019, which was human hepatoma cell lines, but the relevance score was relatively lower (Figure 3a, Supplementary file 1c). For total cholesterol, SAP identified the \u2018fetal adrenal gland\u2019 and SEG obtained \u2018HepG2\u2019 as the most relevant tissues (Figure 3b, Supplementary file 1c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig3-v2.jpg)\n\n**Figure 3.:** The top five relevant tissues ranked by the relevant score of SpecVar, SAP, and SEG for (a) low-density lipoprotein (LDL), (b) total cholesterol, (c) educational attainment, (d) cognitive performance, (e) brain shape, and (f) facial morphology. The sample size of error bars for (a-f) is 100.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig3-figsupp3-v2.jpg)\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig3-figsupp4-v2.jpg)\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The top five relevant tissues for (a) low-density lipoprotein (LDL), (b) total cholesterol, (c) educational attainment, (d) cognitive performance, (e) brain shape, and (f) facial morphology. (g) Fold change of first-ranked tissue and second-ranked tissue of group-based SpecVar and original SpecVar.\n\n**Table 1.**\n The total sample size, number of significant SNP associations, and SpecVar-identified relevant tissues of six phenotypes.For each relevant tissue, we have two numbers in the bracket: the first is the R score and the second is its false discovery rate (FDR) q-value.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Trait</th>\n      <th>Sample size</th>\n      <th>SNP association</th>\n      <th>Relevant tissues (R score and its FDR q-value)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Low-density lipoprotein</td>\n      <td>173,082</td>\n      <td>3077</td>\n      <td>Right lobe of liver (722.74, 1.2e-3), frontal cortex (146.54, 3.3e-4), gastrocnemius medialis (128.02, 4.7e-4), fetal adrenal gland (123.52, 9.5e-4)</td>\n    </tr>\n    <tr>\n      <td>Total cholesterol</td>\n      <td>187,365</td>\n      <td>4169</td>\n      <td>Right lobe of liver (714.75, 1.0e-2), fetal adrenal gland (216.74, 4.3e-17), H7-hESC (130.73, 2.1e-3)</td>\n    </tr>\n    <tr>\n      <td>Educational attainment</td>\n      <td>1070,751</td>\n      <td>30,519</td>\n      <td>Frontal cortex (167.23, 3.7e-7)</td>\n    </tr>\n    <tr>\n      <td>Cognitive performance</td>\n      <td>257,841</td>\n      <td>13,732</td>\n      <td>Frontal cortex (216.62, 7.0e-28),Ammon\u2019s horn (107.25, 2.3e-10)</td>\n    </tr>\n    <tr>\n      <td>Brain shape</td>\n      <td>19,644</td>\n      <td>38,630</td>\n      <td>CNCC (512.56, 2.7e-44), trophoblast (144.15, 3.8e-9)</td>\n    </tr>\n    <tr>\n      <td>Facial morphology</td>\n      <td>10,115</td>\n      <td>495</td>\n      <td>CNCC (134.95, 8.0e-10), fibroblast (128.81, 3.8e-26)</td>\n    </tr>\n  </tbody>\n</table>\n\n_CNCC, cranial neural crest cell._\n\nFor two human intelligential phenotypes, SpecVar prioritized the \u2018frontal cortex\u2019 to be the most relevant tissue for both educational attainment and cognitive performance (Figure 3c and d, Table 1). \u2018Frontal cortex\u2019 is the cerebral cortex covering the front part of the frontal lobe and is implicated in planning complex cognitive behavior, personality expression, decision-making, and moderating social behavior (Gabrieli et al., 1998; Yang and Raine, 2009). There were five tissues (\u2018frontal cortex\u2019, \u2018Ammon\u2019s horn\u2019, \u2018cerebellum\u2019, \u2018putamen\u2019, and \u2018caudate nucleus\u2019) from the brain in our atlas and they were significantly higher ranked by SpecVar\u2019s relevance score than nonbrain tissues for educational attainment (Wilcoxon rank-sum test, $p=6.1\\times10^{\u22127}$ , Figure 3c) and cognitive performance ($p=8.0\\times10^{\u22126}$, Figure 3d). In comparison, for educational attainment, SAP prioritized brain tissues to be higher ranked than nonbrain tissues, but with a less significant p-value ($p=2.3\\times10^{\u22123}$, Figure 3c, Supplementary file 1c). SEG could not rank brain tissues to be higher than nonbrain tissues ($p=6.4\\times10^{\u22121}$, Figure 3c, Supplementary file 1c). For cognitive performance, SAP failed to rank brain tissues as the more relevant tissues ($p=6.0\\times10^{\u22122}$, Figure 3d, Supplementary file 1c), and SEG identified brain tissues to be more relevant than nonbrain tissues but with a less significant p-value ($P=3.2\\times10^{\u22123}$, Figure 3d, Supplementary file 1c).\n\nFor both facial morphology and brain shape, SpecVar identified CNCC as the most relevant context (Figure 3e and f, Table 1). CNCC is a migratory cell population in early human craniofacial development that gives rise to the peripheral nervous system and many non-neural tissues such as smooth muscle cells, pigment cells of the skin, and craniofacial bones, which make it much more related to facial morphology and brain shape than the other 76 contexts (Cordero et al., 2011; Barlow et al., 2008). Facial morphology and brain shape were also revealed to share heritability in CNCC (Naqvi et al., 2021). But the other two methods failed to identify CNCC as the most relevant context. For brain shape, SAP identified \u2018H1-hESC\u2019 and SEG identified \u2018tibial nerve\u2019 to be the most relevant tissue (Figure 3e, Supplementary file 1c). For facial morphology, SAP and SEG identified \u2018foreskin\u2019 and \u2018sigmoid colon\u2019 to be the most relevant tissues, respectively (Figure 3f, Supplementary file 1c).\n\nWe next compared with other relevant tissue identification methods that were not based on LDSC. First, we compared SpecVar to CoCoNet, which was based on gene co-expression networks. CoCoNet is built with 38 tissues\u2019 co-expression networks from GTEx, and we applied it to our six phenotypes. We could see CoCoNet identified \u2018Breast\u2019 as the most relevant tissue for LDL (Figure 3\u2014figure supplement 1a) and \u2018Brain_other\u2019 as the most relevant tissue for total cholesterol (Figure 3\u2014figure supplement 1b). \u2018Breast\u2019 was the most relevant tissue for educational attainment (Figure 3\u2014figure supplement 1c), and \u2018Stomach\u2019 was the most relevant tissue for cognitive performance (Figure 3\u2014figure supplement 1d). Since there is no CNCC sample in GTEx, CoCoNet revealed \u2018Prostate\u2019 as the most relevant tissue for brain shape and facial morphology. These results seemed less reasonable than SpecVar because CoCoNet did not identify liver tissues for LDL and total cholesterol and did not reveal brain tissues for educational attainment and cognitive performance. We also compared with RolyPoly, which was a non-network-based method for discovering relevant tissues. We fitted the RolyPoly model with gene expression profiles of our 77 human contexts and applied it to GWAS of LDL, total cholesterol, educational attainment, cognitive performance, and facial morphology. RolyPoly prioritized the \u2018HepG2\u2019 cell line as the most relevant tissue for LDL and total cholesterol (Figure 3\u2014figure supplement 2a and b). \u2018HepG2\u2019 is also reasonable to be relevant to lipid phenotypes because it is the nontumorigenic cell with high proliferation rates and epithelial-like morphology that performs many differentiated hepatic functions. For educational attainment, RolyPoly did not identify the five brain tissues as the top-ranked tissue and only include \u2018fetal spinal cord\u2019 in the top five relevant tissues (Figure 3\u2014figure supplement 2c). For cognitive performance, there were no brain tissues in the top five tissues (Figure 3\u2014figure supplement 2d). And for facial morphology, RolyPoly failed to identify \u2018CNCC\u2019 as relevant tissues (Figure 3\u2014figure supplement 2e). The comparison with two non-LDSC-based methods again showed the superiority of SpecVar to identify proper relevant tissues.\n\nAfter identifying the relevant tissues, SpecVar could further interpret the relevance by extracting SNP-associated regulatory subnetwork (Materials and methods). For example, we obtained the brain shape\u2019s SNP-associated regulatory subnetwork in CNCC (Figure 4a). There were 62 SNPs associated with 24 REs, 73 TFs, and 52 TGs. The TGs were tightly involved with brain development. For example, POU3F3 is a well-known TF involved in the development of the central nervous system and is related to many neurodevelopmental disorders (Snijders Blok et al., 2019). EMX2 is expressed in the developing cerebral cortex and is involved in the patterning of the rostral brain (Cecchi and Boncinelli, 2000). FOXC2 is a member of the FOX family, which are modular competency factors for facial cartilage (Xu et al., 2018), and its mutation is linked to the cleft palate (Bahuau et al., 2002). By GWAS study, FOXC2 was previously found to be associated with brain shape by its nearest significant SNP \u201816:86714715\u2019 (Naqvi et al., 2021). However, in CNCC, we did not find any accessible peaks that overlapped with this SNP. Instead, we found a CNCC-specific RE that regulated FOXC2 in a locus of the 650k downstream (Figure 4b). GWAS revealed that the SNPs in this region had a strong association with brain shape and had high LD with each other. Our CNCC-specific regulations further prioritized only two SNPs (\u201816:87237097\u2019, \u201816:87236947\u2019) located in this CNCC-specific RE, which may influence the expression of FOXC2 and the brain shape phenotypes. We checked the chromatin loops in the database of HiChIP (Zeng et al., 2022) and found that this SNP-associated regulation of FOXC2 was supported by a HiChIP loop in brain tissues to link this SNP locus and FOXC2 promoter. This example showed the power of SpecVar to interpret the genetic variants\u2019 association with phenotypes by detailed regulatory networks in relevant tissues.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig4-v2.jpg)\n\n**Figure 4.:** (a) The brain shape\u2019s SNP-associated regulatory subnetwork in cranial neural crest cell (CNCC). The dash arrows indicate significant SNPs that are not located in regulatory elements (RE) but near this RE. (b) SNP-associated regulation of FOXC2. There is a group of significant SNPs of brain shape that is located in the 650k downstream of FOXC2, and they are with high linkage disequilibrium. SpecVar prioritizes SNPs located in a CNCC-specific RE as causal genetic variants affecting brain shape through the regulation of FOXC2. The SNP locus and promoter of FOXC2 are linked by a HiChIP loop of the brain tissues.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig4-figsupp1-v2.jpg)\n\nThe SNP-associated regulatory networks can facilitate the fine mapping of GWAS signals. Since there are eQTL data of the liver and brain tissues in the GTEx database, we collected the significant SNP-gene pairs of liver and brain tissues from GTEx to validate the identified SNP-associated regulations. For educational attainment, SpecVar revealed 7611 SNP-TG pairs in its SNP-associated regulatory network of \u2018frontal cortex\u2019, and we found that 3693 SNPs (40.1%) of these SNP-TG pairs were also SNPs of eQTL in brain tissues. Among the 2862 SNPs, 788 SNPs (10.4%) had the same TGs with the eGenes in the eQTL database (hypergeometry test, $p=7.0\\times10^{\u2212121}$). For cognitive performance, there were 7494 SNP-TG pairs in its SNP-associated regulatory network of \u2018frontal cortex\u2019. And 3569 of them (47.6%) were also SNPs of eQTL in brain tissues. SpecVar further revealed that 988 SNPs (13.2%) had the same TGs with the eGenes in the eQTL database ($p=3.2\\times10^{\u2212224}$). For LDL, there were 556 SNP-TGs pairs in its SNP-associated regulatory network of \u2018right lobe of liver\u2019, and we found that 45 of the SNP-TG pairs (8.1%) were also SNPs of eQTL. Two of the SNPs had the same TGs with the eGenes in the eQTL database ($p=5.0\\times10^{\u22122}$). For total cholesterol, there were 461 SNP-TGs pairs in its SNP associated regulatory network of \u2018right lobe of liver\u2019. We found that 16 of the SNP-TG pairs (3.5%) were also SNPs of eQTL. There were two of the SNPs that had the same TGs with the eGenes in the eQTL database ($p=3.0\\times10^{\u22122}$).\n\nIn summary, we evaluated SpecVar\u2019s ability to identify relevant tissues using six well-studied phenotypes as the gold standard by comparison with SAP, SEG, CoCoNet, and RolyPoly. The results showed that SpecVar could identify relevant tissues more accurately and stably. Meanwhile, SpecVar provided detailed regulations to interpret the relevance to tissues and help the fine mapping of GWAS signals.\n\n### SpecVar reveals the association of multiple phenotypes by relevance correlation\n\nSpecVar\u2019s ability to accurately and robustly identify relevant tissues enlightens us to define the relevance correlation of two phenotypes by Spearman correlation of their R scores (Materials and methods). The relevance correlation may approximate phenotypic correlation since if two phenotypes are correlated, their relevance to human contexts will also be correlated. We used two GWAS datasets with phenotypic correlation computed from individual phenotypic data as the gold standard and compared SpecVar with two other methods SAP and SEG.\n\nThe first dataset was GWAS of 78 distances on the human face (Xiong et al., 2019). Based on summary statistics, we computed the relevance correlations of 3003 pairs of distances with SpecVar, SAP, and SEG. We compared the relevance correlation to phenotypic correlation from individual phenotypic data and computed the Pearson correlation coefficient (PCC, Materials and methods) to evaluate the performance of these three methods. SpecVar\u2019s relevance correlation showed the best performance in approximating phenotypic correlation (Figure 5a and b, PCC = 0.522), which outperformed the other two methods: SAP PCC = 0.467 (Figure 5b) and SEG PCC = 0.405 (Figure 5b). We also evaluated the ability to approximate the phenotypic correlation of highly correlated phenotypes. By setting the threshold of phenotypic correlation to 0.4, we obtained the 363 highly correlated phenotype pairs of facial landmark distances and compared the three methods based on their performance on these 363 pairs of phenotypes. We found that SpecVar also performed best with PCC 0.467, which was the largest among the three methods: SAP PCC = 0.454 and SEG PCC = 0.245 (Figure 5c). We also used the mean square error (Figure 5\u2014figure supplement 1a and b) and mutual information (Figure 5\u2014figure supplement 1c and d) as metrics to evaluate the performance (Materials and methods) and SpecVar was the best among these three methods.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig5-v2.jpg)\n\n**Figure 5.:** (a) The scatter plot of true phenotypic correlation and relevance correlation by SpecVar. Each point means a pair of facial distances. (b) For all phenotype pairs of facial distances, the Pearson correlation coefficient (PCC) between phenotypic correlation and relevance correlation of three methods. (c) For highly correlated phenotype pairs of facial distances, the PCC between phenotypic correlation and relevance correlation of three methods. (d) For all pairs of UKBB phenotypes, the PCC between phenotypic correlation and relevance correlation of three methods. (e) For highly correlated pairs of UKBB phenotypes, the PCC between phenotypic correlation and relevance correlation of three methods. (f) For UKBB phenotype pairs with 25 different heritability thresholds, the PCC between phenotypic correlation and relevance correlation of four methods.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) For all phenotype pairs of facial distances, the MSE between true phenotypic correlation and relevance correlation of SpecVar, specifically accessible peaks (SAP), and specifically expressed genes (SEG). (b). For highly correlated phenotype pairs of facial distances, the MSE between true phenotypic correlation and estimated phenotypic correlation of SpecVar, SAP, and SEG. (c). For all phenotype pairs of facial distances, the MI between true phenotypic correlation and relevance correlation of SpecVar, SAP, and SEG. (d). For highly correlated phenotype pairs of facial distances, the MI between true phenotypic correlation and estimated phenotypic correlation of SpecVar, SAP, and SEG.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) For all phenotype pairs of UKBB phenotypes, the mean square error (MSE) between true phenotypic correlation and relevance correlation of three methods. (b) For highly correlated phenotype pairs of UKBB phenotypes, the MSE between true phenotypic correlation and relevance correlation of three methods. (c) For all phenotype pairs of UKBB phenotypes, the mutual information (MI) between true phenotypic correlation and relevance correlation of three methods. (d) For highly correlated phenotype pairs of UKBB phenotypes, the MI between true phenotypic correlation and relevance correlation of three methods. (e) For UKBB phenotype pairs with different heritability thresholds, the MSE between true phenotypic correlation and relevance correlation of three methods. (f) Boxplot of relevance correlation MSE under 25 different thresholds of phenotype heritability. SpecVar shows the smallest variance. (g) Boxplot of relevance correlation Pearson correlation coefficient (PCC) under 25 different thresholds of phenotype heritability. SpecVar and specifically accessible peaks (SAP) show the smallest variance.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (a) The scatter plot of true phenotypic correlation and estimated relevance correlation by heritability enrichment. (b) The scatter plot of true phenotypic correlation and estimated relevance correlation by -log(p-value). Each point means a pair of facial distances. (c) For all phenotype pairs, the mean square error (MSE) between phenotypic correlation and relevance correlation of SpecVar, heritability enrichment, and -log(p-value). (d) For all phenotype pairs, the Pearson correlation coefficient (PCC) between phenotypic correlation and relevance correlation of SpecVar, heritability enrichment, and -log(p-value). (e) For high correlated phenotype pairs, the MSE between phenotypic correlation and relevance correlation of SpecVar, heritability enrichment, and -log(p-value). (f) For high correlated phenotype pairs, the PCC between phenotypic correlation and relevance correlation of SpecVar, heritability enrichment, and -log(p-value).\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (a) For phenotype pairs with 25 different heritability thresholds, the mean square error (MSE) between true phenotypic correlation and SpecVar\u2019s relevance correlation; and MSE between true phenotypic correlation and LDSC-GC\u2019s genetic correlation. (b). For phenotype pairs with 25 different heritability thresholds, the Pearson correlation coefficient (PCC) between true phenotypic correlation and SpecVar\u2019s relevance correlation; and PCC between true phenotypic correlation and LDSC-GC\u2019s genetic correlation. (c) The R2 metric of regression between phenotypic correlation and relevance correlation, genetic correlation, linear combination, and product on face distance dataset. (d) The PCC metric of four regression in face distance dataset. (e) The R2 metric of four regression on UKBB dataset. (f) The PCC metric of four regressionon UKBB dataset.\n\nThe second GWAS dataset is from UK Biobank. There were 4313 GWAS in UK Biobank, from which we selected 206 high-quality GWAS summary statistics of 12 classes (Supplementary file 1d, Materials and methods). We applied SpecVar and the other two methods to obtain the relevance correlations among these 206 phenotypes and used the phenotypic correlations computed from individual data as validation. First, SpecVar performed best in the approximation of phenotypic correlation (PCC = 0.360), followed by SAP (PCC = 0.315) and SEG (PCC = 0.285) (Figure 5d). For highly correlated phenotypes, SpecVar\u2019s relevance correlation was also closest to phenotypic correlation (Figure 5e). SpecVar\u2019s outperformance of estimating phenotypic correlation was reproduced by using mean square error (Figure 5\u2014figure supplement 2a and b) and mutual information (Figure 5\u2014figure supplement 2c and d) as metrics. We found that the heritability of these 206 phenotypes was quite variable. For example, \u2018rose wine intake\u2019 had a heritability of $6.5\\times10^{\u22123}$ and \u2018corneal resistance factor right\u2019 had a heritability of 0.336. So, we checked whether the heritability would influence the quality of relevance correlation. To do this, we set different thresholds of heritability and obtained a subset of phenotypes for each threshold. Then for the phenotype subset of each heritability threshold, we computed the PCC between relevance correlation and phenotypic correlation. For almost all the thresholds of heritability, SpecVar showed the best performance of PCC and mean square error (Figure 5f, Figure 5\u2014figure supplement 2e). SpecVar also had the smallest variance regarded heritability among these three methods (Figure 5\u2014figure supplement 2f and g). This means that the relevance correlation of SpecVar could estimate phenotypic correlation more accurately and robustly.\n\nSpecVar can interpret the relevance correlation by the common relevant tissues and shared SNP-associated regulations of two phenotypes (Supplementary file 1e). For example, \u2018body mass index\u2019 and \u2018leg fat-free mass (right)\u2019 were correlated with a phenotypic correlation of 0.697. SpecVar obtained a relevance correlation of 0.602, while SAP obtained a relevance correlation of 0.342 and SEG gave a relevance correlation of 0.437. SpecVar further revealed that these two phenotypes were correlated because they were both most relevant to the \u2018frontal cortex\u2019 (Figure 6a). Body mass index has been reported to be related to frontal cortex development (Laurent et al., 2020) and relevant to the reduced and thin frontal cortex (Islam et al., 2018; Shaw et al., 2018). Obesity and fat accumulation are also revealed to be associated with the frontal cortex (Gluck et al., 2017; Kakoschke et al., 2019). SpecVar then extracted these two phenotypes\u2019 SNP-associated regulatory networks in the \u2018frontal cortex\u2019 and found that their SNP-associated networks were significantly shared. The significant overlapping was observed at SNP, RE, TG, and TF levels: $p=8.2\\times10^{\u221263}$ for SNPs, $p=1.4\\times10^{\u221247}$ for REs, $p=6.0\\times10^{\u221225}$ for TGs, and $p=8.2\\times10^{\u221225}$ for TFs (Figure 6b). The shared regulatory network was involved with body weight and obesity. For example, in the brain, SH2B1 enhances leptin signaling and leptin\u2019s antiobesity action, which is associated with the regulation of energy balance, body weight, and glucose metabolism (Rui, 2014). We found that one common significant SNP \u201816:2896143\u2019of these two phenotypes was located in the specific REs of the \u2018frontal cortex\u2019 at the 90k downstream of SH2B1. Even though this RE was near the promoter of NFATC2IP, SpecVar revealed that it regulated the expression of SH2B1, which was supported by a HiChIP loop in brain tissues to associate the SNP-associated RE and promoter of SH2B1 (Figure 6c). These results indicated that one shared SNP was located in the \u2018frontal cortex\u2019-specific RE and might regulate the expression of SH2B1 to influence two phenotypes: \u2018body mass index\u2019 and \u2018leg fat-free mass (right)\u2019.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82535/elife-82535-fig6-v2.jpg)\n\n**Figure 6.:** (a) Scatter plot of R scores across 77 human contexts of \u2018body mass index\u2019 and \u2018leg fat-free mass (right)\u2019. (b) The SNP-associated regulatory network of \u2018body mass index\u2019 and \u2018leg fat-free mass (right)\u2019 are significantly shared. (c) SNP-associated regulation of SH2B1. There is a shared significant SNP of \u2018body mass index\u2019 and \u2018leg fat-free mass (right)\u2019 that is located at the 90k downstream of SH2B1, and there is a HiChIP loop linking this locus to the promoter of SH2B1. SpecVar prioritizes SNP located in a \u2018frontal cortex\u2019-specific regulatory elements (RE) as potential causal genetic variant affecting both \u2018body mass index\u2019 and \u2018leg fat-free mass (right)\u2019 through regulation of SH2B1.\n\nThrough the application of relevance correlation to two datasets with the gold standard of phenotypic correlation, we concluded that SpecVar can use the accurate relevance score to define relevance correlation, which could better estimate phenotypic correlation. SpecVar could further reveal common relevant tissues and shared SNP-associated regulatory networks to interpret correlation of phenotypes.\n\n## Discussion\n\nIn this article, we introduce the context-specific regulatory network, which integrate paired gene expression and chromatin accessibility data, to construct context-specific regulatory categories for better interpretation of GWAS data. SpecVar is developed as a tool to interpret genetic variants based on GWAS summary statistics. The key message is that integrating chromatin accessibility and gene expression data into context-specific regulatory networks can provide better regulatory categories for heritability enrichment (Gazal et al., 2019). SpecVar is based on the popular model stratified LDSC (Finucane et al., 2015), which includes 52 function categories as the baseline model. In addition, we show that extending the functional categories from noncontext-specific regions to context-specific regions can improve the heritability enrichment, which is consistent with other studies based on gene expression (Finucane et al., 2018) and ChIP-seq (van de Geijn et al., 2020) data.\n\nOur main contribution in SpecVar is from (1) integrating paired gene expression data and chromatin, which are two types of most easily accessible data, into regulatory networks; (2) highlighting the comparison with other contexts by the specificity of the regulatory network to narrow down the genes and REs, which will help us explain how the phenotype-associated SNPs influence the tissue or cell types in a specific way; and (3) more interpretability than existing methods because SpecVar gives more biological insights in explaining the relevance to tissues by SNP-associated regulatory networks and interpreting phenotype correlation through common relevant tissues and shared SNP-associated regulatory network. To study the contribution of two important parts of SpecVar to the improvement of heritability enrichment: (1) regulatory network by integrating gene expression and chromatin accessibility data, and (2) specificity by comparing with other contexts, we conducted ablation analysis. First, we sorted out the main components of SpecVar (Figure 2\u2014figure supplement 1c) and illustrated the relationship and differences of the five methods. Then we compared SpecVar with ARE, SAP, and SEG to show the effect of specificity, gene expression annotations, and chromatin accessibility (Figure 2\u2014figure supplement 1d), respectively. We conducted these comparisons for six phenotypes and computed fold change of heritability enrichment to measure the effect to improve heritability enrichment. We found that the annotation from chromatin accessibility contributed most to improve heritability enrichment (Figure 2\u2014figure supplement 1e). This meant that the regulatory networks of SpecVar, which integrated chromatin accessibility with gene expression data, played a more important role in improving heritability enrichment. And specificity also improved heritability enrichment by four-fold.\n\nSpecVar outperformed the existing methods in three points. First, SpecVar defined the relevance score based on both heritability enrichment and p-value. Because of the variability in the number of REs in the regulatory categories (Supplementary file 1f), using only heritability enrichment or p-value will not give a stable estimation of the relevance of phenotype to tissues. For example, in the experiment of identifying six phenotypes\u2019 relevant tissues, heritability enrichment could select the most relevant tissues for LDL and total cholesterol to be the \u2018right lobe of liver\u2019 but failed to get proper tissues for other four phenotypes (Figure 3\u2014figure supplement 3). P value could obtain proper tissues for cognitive performance (\u2018frontal cortex\u2019) and brain shape (CNCC) but failed to get relevant tissues for LDL, total cholesterol, educational attainment, and facial morphology (Figure 3\u2014figure supplement 4). By combining heritability enrichment and p-value into R score, SpecVar could prioritize proper relevant tissues for all the six phenotypes (Figure 3). Like the R score-based relevance correlation, we could use the heritability enrichment and p-value to compute relevance correlation (Figure 5\u2014figure supplement 3a and b). We found relevance correlation based on heritability enrichment and p-value would give larger MSE (Figure 5\u2014figure supplement 3c and e) and lower PCC (Figure 5\u2014figure supplement 3d and f) than the R score, which showed that SpecVar\u2019s R score can achieve a better approximation of phenotypic correlation. Those comparisons showed that the R score was a good metric to evaluate tissue\u2019s relevance to the phenotype. Second, SpecVar\u2019s regulatory categories had advantages over the existing functional categories to explain heritability. The context-specific regulatory networks formed regulatory categories that enable better heritability enrichment than other methods (Figure 2). The improved heritability enrichment was also observed when we pooled regulatory categories of all the methods together to fit stratified LDSC and re-estimated the heritability enrichment of each context for each method (Figure 2\u2014figure supplement 2). The regulatory categories of SpecVar can be used to calculate R scores to identify relevant tissues more accurately than other methods (Figure 3). And the R score of SpecVar can also be used to compute relevance correlation to better approximate phenotypic correlation than other methods when we do not have comprehensive phenotype measurement in each individual (Figure 5). Third, with the constructed context-specific regulatory network atlas, SpecVar could further interpret the relevant tissue by SNP-associated regulatory networks (Figure 4) and interpret relevance correlation by common relevant tissues and shared SNP-associated regulations in relevant tissues (Figure 6). These three aspects made SpecVar an interpretable tool for heritability enrichment, identifying relevant tissues, and accessing associations of phenotypes.\n\nIdentification of relevant contexts can be conducted at different resolutions. First, in this article, SpecVar identified relevant contexts at the tissue level because most of the 77 contexts were tissues or cell lines. Second, we could identify relevant organs or groups of tissues. For example, our 77 human contexts can be hieratically clustered into 36 groups. We pooled the REs in the same groups together to form 36 group-level RE sets. Then we defined an RE to be a group-specific RE if it was not overlapped with REs in other groups. This procedure would form 36 sets of group-specific REs. Finally, we fitted the stratified LDSC model with these 36 sets of group-specific regulatory categories and obtained heritability enrichment, p-value, and R score for each group by SpecVar. We tested the group-based SpecVar on our six phenotypes. For LDL and total cholesterol, SpecVar identified \u2018Liver\u2019 tissues to be the most relevant tissue (Figure 3\u2014figure supplement 5a and b). For educational attainment and cognitive performance, SpecVar revealed \u2018brain\u2019 tissues to be the most relevant tissues (Figure 3\u2014figure supplement 5c and d). And for brain shape and facial morphology, SpecVar found \u2018CNCC\u2019 to be the most relevant tissue (Figure 3\u2014figure supplement 5e and f). Third, we can identify relevant contexts at the cell-type level since the amount of single-cell multimodal data, such as single-cell RNA-seq and single-cell ATAC-seq data, are increasing in recent years (Han et al., 2020). The paired single-cell multi-omics data, which means single-cell data profiled from the same context, enable us to identify cell types and infer regulatory networks for these cell types (Duren et al., 2018; Zeng et al., 2019). It will be promising to construct an atlas of context-specific regulatory networks at cell-type level and build SpecVar model based on these cell-type-specific regulatory networks. This extension of SpecVar to single-cell level holds the promise to identify more detailed relevant cell types for given phenotypes.\n\nBased on the accurate and highly interpretable relevant tissue identification, the relevance correlation of SpecVar provides us with another perspective of associations between two phenotypes: if two phenotypes are correlated, their relevance to human contexts will also be correlated. This rationale is independent of genetic correlation, which is the proportion of variance that two phenotypes share due to genetic causes and can be estimated with GWAS summary statistics by LDSC-GC (Bulik-Sullivan et al., 2015a). When using measured phenotype value correlation as the gold standard of phenotype correlation, we found that SpecVar performed better when the heritability of phenotype was low while LDSC-GC performed better when the heritability was high (Figure 5\u2014figure supplement 4a and b). This indicated that the integration of relevance correlation and genetic correlation might give a better estimation of phenotypic correlation. We validated this idea by regressing phenotypic correlation on relevance correlation and genetic correlation in two GWAS datasets. For the phenotypes of facial distances, if we only used relevance correlation to regress phenotypic correlation, the coefficient of determination (R2) was 0.2720; if we only used genetic correlation, the R2 was 0.0002; if we used the linear combination of relevance correlation and genetic correlation to regress phenotypic correlation, the R2 was 0.2765, which was significantly higher than that only with SpecVar (F-test of R2 increase, $p\\leq1.8\\times10^{\u22125}$) or only with LDSC-GC ($p\\leq5.3\\times10^{\u2212213}$); and if we used a product (nonlinear combination) of relevance correlation and genetic correlation, the R2 was much higher: 0.2911 (Figure 5\u2014figure supplement 4c and d). And for 206 phenotypes of UK Biobank, if we only used relevance correlation, the R2 was 0.1289; if we only used genetic correlation, the R2 was 0.5614; if we used the linear combination of relevance correlation and genetic correlation to regress phenotypic correlation, the R2 was 0.5927, which was significantly higher than that only with SpecVar ($p\\leq2.2\\times10^{\u221216}$) or only with LDSC-GC ($p\\leq2.2\\times10^{\u221216}$); and if we used a product of relevance correlation and genetic correlation, the R2 was 0.7375, which was much more improved (Figure 5\u2014figure supplement 4e and f). These results showed that relevance correlation and genetic correlation revealed the association of phenotypes in a complementary way.\n\nOur work can be improved in several aspects. The usage of context-specific regulatory networks contributed most to the improvement of SpecVar. But the context-specific regulatory networks can only cover part of the regulatory elements and genetic variants, which are highly essential and representative. Higher-quality and more comprehensive regulatory networks will help obtain better representation. Currently, we built the atlas of regulatory networks of 77 human contexts and only included CNCC in the early developmental stage, which was far from complete. We expect more developmental stages will be included with multi-omics data from ENCODE (Snyder et al., 2020) and GTEx (Consortium, 2020). On the other hand, SpecVar is based on stratified LDSC, which may not perform well on admixed populations. Thus, considering the effect of mixed ancestries will help SpecVar handle more circumstances. For example, Luo. et al. have developed cov-LDSC to adjust the LDSC model to be suitable for admixed populations (Luo et al., 2021). Building SpecVar model based on cov-LDSC will be promising to perform well on GWAS with mixed populations. Lastly, it will be useful to extend the current approach using a model based on individual whole-genome sequencing data (Li et al., 2020).\n\n## Materials and methods\n\n### Regulatory network inference with paired expression and chromatin accessibility data by PECA2\n\nThe regulatory networks were inferred by the PECA2 (Duren et al., 2020) model with paired expression and chromatin accessibility data. First, we collected paired expression and chromatin accessibility data of 76 human tissue or cell lines from ENCODE and ROADMAP (Supplementary file 1a). Then with paired expression and accessibility data of each context, PECA2 calculated two scores. One was the trans-regulatory score. Specifically, PECA2 hypothesized that TF regulated the downstream TG by binding at REs. The trans-regulatory score was calculated by integrating multiple REs bound by a TF to regulate TG to quantify the regulatory strength of this TF on the TG. And PECA2 also considered a prior TF-TG correlation across external public data from ENCODE database. In detail, the trans-regulatory score $TRS_{ij}$ of $i$th TF and $j$th TG was quantified as\n\n$$\nTRS_{ij}=\\sum_{k}B_{ik}O_{k}I_{kj}\\times2^{R_{ij}}\\times\\sqrt{TF_{i}TG_{j}}\n$$\n\nHere, $TF_{i}$ and $TG_{j}$ are the expressions of the ith TF and jth TG. $B_{ik}$ is the motif binding strength of ith TF on kth RE, which was defined as the sum of the binding strength of all the binding sites of ith TF on kth RE. $O_{k}$ is the measure of accessibility for kth RE. $I_{kj}$ represents the interaction strength between kth RE and jth TG, which was learned from the PECA model on diverse ENCODE cellular contexts (Duren et al., 2017; Duren et al., 2018). $R_{ij}$ is the expression correlation of ith TF and jth TG across diverse ENCODE samples. The significance of the TRS was obtained by a background of randomly selected TF-TG pairs and the threshold of the TRS was decided by controlling the false discovery rate (FDR) at 0.001.\n\nThe other one was the cis-regulatory score to measure the regulatory strength of RE on a TG. The cis-regulatory score $CRS_{kj}$ of kth RE on jth TG was quantified as\n\n$$\nCRS_{kj}=\\sumiB_{ik}TRS_{ij}\\timesI_{kj}\\timesO_{k}\n$$\n\nWe approximated the distribution of $log_{2}\u20611+CRS_{kj}$ by a normal distribution and predicted RE-TG associations by selecting the RE-TG pairs that had p-value\u22640.05.\n\nThe output of PECA2 was a regulatory network with TFs, REs, and TGs as nodes and the regulations among them as edges. This procedure was applied to 76 human contexts with paired expression and chromatin accessibility data and obtained 76 regulatory networks. We noted that the regulatory network of the early development stage CNCC was reconstructed recently (Feng et al., 2021), and we included the regulatory network of CNCC to form our regulatory network atlas of 77 human contexts.\n\n### Construction of context-specific regulatory network atlas and regulatory categories\n\nThe context-specific regulatory network was obtained based on the specificity of REs. In detail, we had 77 regulatory networks, and each regulatory network had a set of REs $RE_{i},1\\leqi\\leq77$. Firstly, we hierarchically clustered 77 contexts\u2019 regulatory networks into 36 groups by trans-regulatory scores (Supplementary file 1a). Then for a given context, a RE was defined as a context-specific RE if it was not overlapped with REs of other contexts. Formally, the context-specific RE set of $i$th context $C_{i}$ was defined as\n\n$$\nC_{i}=RE_{ik}\\inRE_{i}|RE_{ik}\u2209RE_{j},j\\neqi\n$$\n\nHere, $RE_{ik}\u2209RE_{j}$ means $RE_{ik}$ was not overlapped with any REs in $RE_{j}$:\n\n$$\nRE_{ik}\u2209RE_{j}\u27faRE_{ik}\u00a0is\u00a0not\u00a0overlapped\u00a0with\u00a0any\u00a0RE_{jl}\u00a0in\u00a0RE_{j}\n$$\n\nAnd we defined \u2018overlapped\u2019 (1) for REs from contexts of the different groups, two REs were overlapped if their overlapping base ratio was over 50%; (2) for REs from contexts of the same group, two REs were overlapped if their overlapping base ratio was over 60%. The reason we used different \u2018overlapped\u2019 criteria for REs from the same group and different groups was to retain group-specific REs. For example, we had five cell types for the brain tissues: \u2018Ammon\u2019s horn\u2019, \u2018caudate nucleus\u2019, \u2018cerebellum\u2019, \u2018frontal cortex\u2019, and \u2018putamen\u2019. If we defined RE\u2019s specificity with stringent conditions among these five brain cell types, many REs of brain lineage would be lost.\n\nFinally, the context-specific regulatory network was formed by specific REs and their directly linked upstream TFs and downstream TGs. And the context-specific RE sets $C_{i},1\\leqi\\leq77$ gave the regulatory categories of SpecVar.\n\n### Heritability enrichment and R score of GWAS summary statistics by SpecVar\n\nSpecVar used stratified LDSC (Finucane et al., 2015) to compute partitioned heritability enrichment. Under the linear additive model, stratified LDSC models the causal SNP effect on phenotype as drawn from a distribution with mean zero and variance\n\n$$\nVar\\beta_{j}=\\sum_{i}\\tau_{i}1_{j\\inC_{i}}\n$$\n\nAnd with the assumption that the LD of a category that is enriched for heritability will increase the $\u03c7^{2}$ statistic of an SNP more than the LD of a category that does not contribute to heritability, the expected $\u03c7^{2}$ statistic is modeled as follows:\n\n$$\nE\u03c7_{j}^{2}=N\\sumC_{i}\\tau_{i}lj,i+Na+1\n$$\n\nwhere $N$ is the sample size; $C_{i}$ denotes the regulatory category formed by the $i$th context-specific regulatory network; $\u03c7_{j}^{2}$ is the marginal association of SNP $j$ from GWAS summary statistics; $r_{jk}^{2}$ is the LD score of SNP $j$ in the $i$th category, where $r_{jk}^{2}$ was the genotype correlation between SNP $j$ and SNP $k$; $a$ measures the contribution of confounding biases; and $\\tau_{i}$ represents heritability enrichment of SNPs in $C_{i}$ . Stratified LDSC estimates standard error with a block jackknife and uses the standard error to calculate the p-value $p_{i}$ for the heritability enrichment $\\tau_{i}$ (Finucane et al., 2015).\n\nTo make a trade-off between the heritability enrichment score and p-value resulting from a hypothesis test, we combined heritability enrichment and statistical significance (p-value) to define the relevance score ($R_{i}$) of this phenotype to $i$th context as follows:\n\n$$\nR_{i}=\\tau_{i}\u2219-log\u2061p_{i}\n$$\n\nThe relevance score (R score) offered a new robust means to rank and select relevant tissue for a given phenotype (Xiao et al., 2014; Figure 3\u2014figure supplements 3 and 4, and Figure 5\u2014figure supplement 3).\n\n### Significance testing of R score and identification of relevant contexts\n\nWe used block jackknife to estimate the standard error, p-value, and FDR for the R score. Specifically, we computed the R score $R_{i}$ of a phenotype to $i$th context. Then we estimated the standard error, p value, and FDR of $R_{i}$ following the procedures:\n\nThe R scores and their FDR q-values could be used to select relevant tissues. We used R score \u2265100 and FDR \u22640.01 as the threshold to pick up relevant tissues for a phenotype. For six well-studied phenotypes in this article, their relevant tissues, R scores, and FDR are summarized in Table 1.\n\n### Four alternative methods to construct representations of GWAS summary statistics\n\nBased on expression and chromatin accessibility data, there were four alternative methods for constructing regulatory categories: AAP, SAP, SEG, and ARE.\n\nThe AAP method used all the chromatin-accessible peaks of each context to form a genome functional category, which was used for partitioned heritability enrichment analysis. The SAP method used the same rules of SpecVar above to obtain specifically accessible peaks of each context, and the context-specific peaks sets of M contexts formed functional categories of SAP. The SEG method was constructed by following the procedure in Finucane et al., 2018. First, the t-statistics for differential expression of each gene in each of the M contexts were calculated. Then for each context, the top 10% genes ranked by t-statistic were selected, and the 100 kb windows around those top 10% genes were used to form a functional category. For the ARE method, we obtained all REs in the regulatory network of a context to be a functional category, and the RE sets of M contexts formed regulatory categories of ARE.\n\nWe could conclude the difference and relationship between the five methods (Figure 2\u2014figure supplement 1c): SEG was the combination of gene expression and specificity; AAP was only from chromatin accessibility; SAP was the combination of chromatin accessibility and specificity; ARE integrated gene expression and chromatin accessibility; and SpecVar considered gene expression, chromatin accessibility, and specificity. Supplementary file 1f shows the number and size of genomic regions of each method and the overlapping among these methods.\n\nAfter obtaining functional categories with these four alternate methods, we could also use stratified LDSC to obtain heritability enrichment and define the R score representation of GWAS summary statistics with Equations 8 and 9. We called them AAP, SAP, SEG, and ARE, respectively. We compared these four alternate methods with SpecVar.\n\n### Relevance correlation analysis of SpecVar\n\nSpecVar defined relevance correlation based on R scores. The R scores to $M$ contexts could be aggregated into a context-specific vector representation of GWAS summary statistics:\n\n$$\nR=R_{1},R_{2},\u22ef,R_{M}\n$$\n\nFor two phenotypes, such as phenotype $p$ and phenotype $q$, we obtained their R score representations:\n\n$$\nR^{p}=R_{1}^{p},R_{2}^{p},\u22ef,R_{M}^{p}\n$$\n\n\n\n$$\nR^{q}=R_{1}^{q},R_{2}^{q},\u22ef,R_{M}^{q}\n$$\n\nThen the Spearman correlation of their R score representation was used to define the relevance correlation:\n\n$$\n\u03c1_{g}=\u03c1R^{p},R^{q}=1-\\frac{6\\sum_{i}rR_{i}^{p}-rR_{i}^{q}^{2}}{M*M^{2}-1}\n$$\n\nHere, $rR_{i}^{p}$ and $rR_{i}^{q}$ are the ranks of $i$th context by the R score for the two phenotypes.\n\nFor two other specificity-based regulatory categories SAP and SEG, we also used their functional categories to compute heritability enrichment and p-value and defined the R score with Equations 7\u20139. The R scores of SAP and SEG were used to compute relevance correlation.\n\n### Evaluation of relevant tissue identification and relevance correlation\n\nTo evaluate the performance of the SpecVar and other methods, we used different datasets as the gold standard.\n\nFor the application to identify relevant tissues, we used six well-studied phenotypes that we had knowledge of the relevant tissues: two lipid phenotypes (LDL and total cholesterol) were relevant to the liver; two human intelligential phenotypes (educational attainment and cognitive performance) were relevant to the brain; two craniofacial bone phenotypes (facial morphology and brain shape) were relevant to CNCC. We used different methods to identify relevant tissues of these six phenotypes and checked whether they obtained the proper relevant tissues.\n\nFor relevance correlation, we used the phenotypic correlation computed with individual phenotypic data as the gold standard. First, we computed the PCC between relevance correlation and phenotypic correlation:\n\n$$\nPCC=\\frac{\\sumi,j\\inP(p_{ij}\u2212p\u00af)(p_{ij}^{\u2032}\u2212p\u00af^{\u2032})}{\\sqrt{\\sumi,j\\inP(p_{ij}\u2212p\u00af)^{2}\\sumi,j\\inP(p_{ij}^{\u2032}\u2212p\u00af^{\u2032})^{2}}}\n$$\n\nHere, $P$ is the set of phenotypes, and $N$ is the number of phenotype pairs; $p_{ij}$ is the phenotypic correlation computed with individual phenotypic data, and $p_{ij}^{`}$ is the relevance correlation; $p\u00af$ is the average of $p_{ij}$ , and $p\u00af^{\u2032}$ is the average of $p_{ij}^{`}$ . A larger PCC indicated better performance in approximating phenotypic correlation.\n\nWe also used the mean square error (MSE) between relevance correlation and phenotypic correlation:\n\n$$\nMSE=\\frac{\\sum_{i,j\\inP}p_{ij}-p_{ij}^{`}^{2}}{N}\n$$\n\nA smaller MSE indicated better performance in approximating phenotypic correlation.\n\nThe last metric we used to evaluate the performance of approximating phenotypic correlation was mutual information, which was a nonlinear metric. We used the \u2018k-nearest neighbor\u2019 stratagem proposed by Kraskov et al. to estimate the mutual information of two vectors (Kraskov et al., 2004).\n\n### Extracting SNP-associated regulatory subnetworks in relevant tissues\n\nGiven a phenotype\u2019s GWAS summary statistics and a context, SpecVar identified SNPs-associated regulatory subnetwork by considering the following two factors: (1) the cis-regulatory score of SNP-associated RE should be large enough to indicate its importance in the regulatory network; (2) the risk signal of SNPs (i.e., p-value) on or near this RE should be large to indicate its association with phenotype. We combined these two factors to define the association score (A score) of SNP-associated REs.\n\nFirst, the regulatory strength of kth RE was measured by the maximum cis-regulatory score of this RE. Formally,\n\n$$\nC_{k}=maxj\u2061CRS_{kj}\n$$\n\nHere, $CRS_{kj}$ is the cis-regulatory score of kth RE on jth TG. For the $k$th RE, the larger $C_{k}$ was, the more important role this RE played in the regulatory network. Second, the risk score of GWAS $S_{k}$ for $k$th RE was defined as the average of the -log(p-value) of SNPs located on or near this RE, which were downweighted by their LD scores and distances to RE:\n\n$$\nS_{k}=\\frac{1}{|P_{k}|}\\suml\\inP_{k}\u2212\\omega_{l}\u22c5log(p_{l})\u22c5e^{\u2212\\frac{d_{lk}}{d_{0}}}\n$$\n\nHere, $P_{k}$ is the set of SNPs whose distances were less than 50 kb to the $k$th RE, and $P_{k}$ is the total number of this SNP set; $\\omega_{l}$ (the reciprocal of LD score, downloaded at https://data.broadinstitute.org/alkesgroup/LDSCORE/) is the weight of the $l$th SNP; $p_{l}$ is the p-value of the $l$th SNP in summary statistics; $d_{lk}$ is the base pair distance of the lth SNP to kth RE and $d_{0}$ is a constant, which was set to 5000 as default. For the $k$th RE, a larger value of $S_{k}$ indicated a stronger association with the given phenotype.\n\nFinally, we obtained the association score (A score) of kth RE by combining these two factors:\n\n$$\nA_{k}=\\sqrt{C_{k}*S_{k}}\n$$\n\nEvery RE in the context-specific regulatory network was qualified by the A score. We used the GWAS of six phenotypes to analyze the distribution of A scores and found that the A scores followed a Gaussian distribution (Figure 4\u2014figure supplement 1). So, we hypothesized the distribution of A scores was Gaussian distribution and selected the REs associated with the given phenotype by A scores\u2019 FDR threshold of 0.05. The prioritized REs, as well as their directly linked upstream TFs, downstream TGs, and the associated SNPs, formed the SNP-associated regulatory subnetwork.\n\n### GWAS summary statistics of UK Biobank\n\nThe GWAS summary statistics of UK Biobank were downloaded at http://www.nealelab.is/uk-biobank. There were 4176 phenotypes and 11,372 GWAS summary statistics. We selected 206 GWAS summary statistics (Supplementary file 1d) based on the following conditions.\n",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "da16ce80-7354-411f-a3a0-3bdbea53e61d",
+      "submission_id": "63dbef1f-1c6b-44f3-b26a-88e40b2baf9c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Charles Farber, https://ror.org/0153tk833 University of Virginia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82535.sa0](https://doi.org/10.7554/eLife.82535.sa0)\n\nIn this article, the authors develop a method to identify potentially causal tissues and cell types for complex diseases by performing heritability enrichment estimation using information from gene regulatory networks. This article is of significant interest to geneticists and biologists interested in unraveling the molecular basis of disease. The key claims of the article are well supported by the data. The work has the potential to inform our understanding of the genetics of complex diseases.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Charles Farber, https://ror.org/0153tk833 University of Virginia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82535.sa1](https://doi.org/10.7554/eLife.82535.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Heritability enrichment in context-specific regulatory networks improves phenotype-relevant tissue identification\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David James as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Please improve the description of the advance of the approach relative to other publications. How does this combination of an existing network method and an existing heritability enrichment method constitute substantial progress in the field?\n\n2. Reporting of SpecVar-based heritability enrichment point estimates should be accompanied by appropriate measures of statistical significance (p-values, FDR-adjusted q-values, confidence intervals, etc.).\n\n3. The comparisons between SpecVar and other approaches (AAP, ARE, SAP, SEG) are not sufficiently rigorous.\n\nReviewer #1 (Recommendations for the authors):\n\nThe approach taken in the study is conceptually interesting, however, it's not clear how novel the approach is. Additionally, there are several issues related to reporting results that need to be addressed. In particular, the authors do not report the statistical significance of enrichments using the new annotation aggregation method. Therefore, it is not possible to evaluate whether the higher overall heritability enrichment of the aggregate annotations they report compared to existing annotation approaches is meaningful.\n\n1. Describe the novelty of the approach relative to other publications. How does this combination of an existing network method and an existing heritability enrichment method warrant a substantial advance in the field?\n\n2. Reporting of SpecVar-based heritability enrichment point estimates should be accompanied by appropriate measures of statistical significance (p-values, FDR-adjusted q-values, confidence intervals, etc.).\n\n3. The comparisons between SpecVar and other approaches (AAP, ARE, SAP, SEG) are not sufficiently rigorous.\n\na. First, please provide additional context. What is the amount of the genome covered by the regions defined by each approach? What is the overlap between these regions? For example, Table S4 shows SpecVar sets typically include substantially fewer regions than SAP. Are SpecVar regions primarily a subset of SAP regions or do they contain distinct/non-overlapping territory in the genome?\n\nb. Second, please provide a way to evaluate whether differences in enrichment between the methods are statistically meaningful.\n\nc. Fitting a joint LDSC model with multiple annotation sets would provide a more rigorous assessment of the performance of SpecVar relative to the other approaches.\n\n4. Y-axes for bar plots in Figure 5 should start at 0. The floating y-axis origin is highly misleading.\n\n5. The approach to defining context-specific REs based on overlap (>50% of bases overlapping for cross-group comparisons, and >60% of bases overlapping for within-group comparisons) seems quite stringent and likely excludes a lot of lineage-specific REs. Calculating enrichments for \"group-specific\" regulatory networks, where REs are considered group-specific if they do not overlap any of the other 35 groups resulting from the hierarchical clustering (ignoring whether an RE overlaps REs from other contexts within the same group), might provide more biologically relevant region sets.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 The authors only show the performance of the SpecVar method on 6 traits, however, it is not clear whether these are representative of all of the traits in UKBiobank. For traits with fewer SNP associations and lower sample numbers it appears that LDSC-SAP produces much high trait relevance scores, however, the authors use different tissues in each method so it may not be a fair comparison.\n\n\u2013 The authors use the Pearson correlation coefficient to evaluate the performance of the SpecVar method, however, they should also consider other nonlinear metrics.\n\n\u2013 The authors should consider a comparison with other regulatory network-based heritability methods such as CoCoNet, which is based on co-regulated genes. They should also compare to other non-network-based methods.\n\n\u2013 The highlighted example SNP-associated network for the FOXC2 variants is interesting, however, the authors should demonstrate whether there are chromatin interactions (HiC or HiChIP) in brain tissues linking these variants in ATAC-seq peaks to the FOXC2 promoter. It would also be helpful to highlight another example using distinct UKBB phenotype and tissue datasets.\n\n\u2013 It will be more interesting to adapt this to paired multimodal single-cell data if possible or expand on this in the Discussion.\n\n\u2013 Lastly, LDSC-based methods may not perform well on admixed populations, thus some discussion on how this could be adapted using covariate-adjusted approaches (e.g. cov-LDSC) would be helpful.\n\nReviewer #3 (Recommendations for the authors):\n\nThe study would benefit from investigating the following questions:\n\nWhich part of the new annotation drives the extreme heritability enrichment from SpecVar, compared to other LDSC-based methods?\n\nHow to use the R score for a formal hypothesis test, rather than subjectively picking a few top-ranked tissues for the trait? How to evaluate the false positive rate for the test?\n\nHow to explain the inconsistent findings with previous studies, e.g., the association of the liver to LDL?\n\nAre the GWAS signal in context-specific RE colocalised with context-specific eQTL signals?\n\nHow to link relevance score correlation across tissues to shared heritability between traits?\n",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "101ddd96-f492-4d3a-a7d4-1655bebcb355",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C1",
+      "claim": "SpecVar integrates paired chromatin accessibility and gene expression data into context-specific regulatory network atlas and regulatory categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose SpecVar to integrate paired chromatin accessibility and gene expression data into context-specific regulatory network atlas and regulatory categories, conduct heritability enrichment analysis with genome-wide association studies (GWAS) summary statistics, identify relevant tissues, and estimate relevance correlation to depict common genetic factors acting in the shared regulatory networks between traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a description of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "317387d2-f041-47f3-80c8-53e4dfdb8ac3",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C2",
+      "claim": "SpecVar improves power upon existing approaches by associating SNPs with context-specific regulatory elements to assess heritability enrichments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method improves power upon existing approaches by associating SNPs with context-specific regulatory elements to assess heritability enrichments and by explicitly prioritizing gene regulations underlying relevant tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract describing the method's advantages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "d5138ce9-2312-42ae-a4b2-f8d72d99217f",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C3",
+      "claim": "SpecVar can improve heritability enrichment, accurately detect relevant tissues, and reveal causal regulations as shown by ablation studies, independent data validation, and comparison experiments with existing methods on GWAS of six phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation studies, independent data validation, and comparison experiments with existing methods on GWAS of six phenotypes show that SpecVar can improve heritability enrichment, accurately detect relevant tissues, and reveal causal regulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a summary of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "d9d11034-31fb-4e34-8e75-5128904f34de",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C4",
+      "claim": "SpecVar correlates the relevance patterns for pairs of phenotypes and better reveals shared SNP-associated regulations of phenotypes than existing methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SpecVar correlates the relevance patterns for pairs of phenotypes and better reveals shared SNP-associated regulations of phenotypes than existing methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "0ad5cd8b-62ce-4fa6-ad1e-c9705c1fbcc5",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C5",
+      "claim": "Studying GWAS of 206 phenotypes in UK Biobank demonstrates that SpecVar leverages the context-specific regulatory network atlas to prioritize phenotypes' relevant tissues and shared heritability for biological and therapeutic insights.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying GWAS of 206 phenotypes in UK Biobank demonstrates that SpecVar leverages the context-specific regulatory network atlas to prioritize phenotypes' relevant tissues and shared heritability for biological and therapeutic insights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a result from analyzing UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "eb8dbba3-9f9c-4aca-b365-579aef8806b7",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C6",
+      "claim": "LD Score regression (LDSC) provides a widely appreciated method to estimate heritability and genetic correlation from GWAS summary statistics by quantifying the contribution of true polygenic signal considering linkage disequilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "By quantifying the contribution of true polygenic signal considering linkage disequilibrium, LD Score regression (LDSC) provides a widely appreciated method to estimate heritability (Bulik-Sullivan et al., 2015b) and genetic correlation (Bulik-Sullivan et al., 2015a) from GWAS summary statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "7daee67a-71cd-4414-b00c-04e6920e05c1",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C7",
+      "claim": "SNPs contribute to phenotype through gene regulatory networks in certain cellular contexts, that is, causal tissues or cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Another obstacle to genetic variant interpretation is that SNPs contribute to phenotype through gene regulatory networks in certain cellular contexts, that is, causal tissues or cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "33074398-a7fb-4053-9088-2597bb0de0f0",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C8",
+      "claim": "Stratified LDSC extends LDSC and can estimate the partitioned heritability enrichment in the functional categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Stratified LDSC extends LDSC and can estimate the partitioned heritability enrichment in the functional categories (Finucane et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "cb640c8a-0ac8-4dd0-b032-4f2e3c0bd54e",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C9",
+      "claim": "The regulatory networks constructed by PECA2 model have been used to identify the master regulators in stem cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred regulatory networks have been used to identify the master regulators in stem cell differentiation (Li et al., 2019) and interpret conserved regions for the nonmodel organisms (Xin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "b88852ee-81a9-4ab7-88c9-cbaba28add28",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C10",
+      "claim": "Genetic variants in the regulatory network of cranial neural crest cells (CNCC) are elucidated on how they affect human facial morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, genetic variants in the regulatory network of cranial neural crest cells (CNCC) are elucidated on how they affect human facial morphology (Feng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "f549edb1-7562-4366-bacf-32f403c65b20",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C11",
+      "claim": "Regulatory networks can help identify two kinds of relevant cell types to COVID19 severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulatory networks can help identify two kinds of relevant cell types to COVID19 severity (Feng et al., 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "f9b87ea1-76c8-4bf0-a029-73cb5f5a1472",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C12",
+      "claim": "RSS-NET utilizes gene regulatory networks of multiple contexts and shows better tissue enrichment estimation by decomposing the total effect of an SNP through TF-TG regulations and HiChIP RE-TG regulations.",
+      "claim_type": "EXPLICIT",
+      "source": "RSS-NET utilizes gene regulatory networks of multiple contexts and shows better tissue enrichment estimation by decomposing the total effect of an SNP through TF-TG regulations (Zhu et al., 2021) and HiChIP RE-TG regulations (Ma et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "a83c72b5-20a0-4a88-9826-00aa4c1ea5da",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C13",
+      "claim": "The phenotype-associated SNPs are revealed to be functional in a tissue- or cell-type-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype-associated SNPs are revealed to be functional in a tissue- or cell-type-specific manner (Westra and Franke, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "b676147b-09ce-4cf4-8b1c-7e391acf887e",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C14",
+      "claim": "SpecVar constructed regulatory networks of 77 human contexts that cover major cell types and germ layer lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we propose SpecVar to first leverage the publicly available paired expression and chromatin accessibility data in ENCODE and ROADMAP to systematically construct context-specific regulatory networks of 77 human contexts, which cover major cell types and germ layer lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "b3843f9e-5347-401a-8b75-bb0f634c4027",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C15",
+      "claim": "The M contexts included samples from all three germ layers, such as 'frontal cortex' (ectoderm), 'fetal thymus' (mesoderm), and 'body of pancreas' (endoderm).",
+      "claim_type": "EXPLICIT",
+      "source": "The M contexts included samples from all three germ layers, such as 'frontal cortex' (ectoderm), 'fetal thymus' (mesoderm), and 'body of pancreas' (endoderm), which ensured the wide coverage and system-level enrichment (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "864fe4d8-4b7d-49c6-bab3-5a7b62dcf14c",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C16",
+      "claim": "SpecVar obtained a heritability enrichment of 678.91 for LDL in the 'right lobe of liver', while ARE, SAP, AAP, and SEG gave heritability enrichment of 113.34, \u201342.09, 50.95, and 4.47, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For LDL, SpecVar obtained a heritability enrichment of 678.91 in the 'right lobe of liver', while ARE, SAP, AAP, and SEG gave heritability enrichment of 113.34, \u201342.09, 50.95, and 4.47, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with specific numerical values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "bf9dfafa-067c-49a6-89f5-373963b9ad52",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C19",
+      "claim": "SpecVar obtained the highest averaged heritability enrichment in brain tissues among these methods for educational attainment and cognitive performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For educational attainment and cognitive performance, they were relevant to brain tissues: 'frontal cortex', 'cerebellum', 'caudate nucleus', 'Ammon's horn', and 'putamen'. SpecVar obtained the highest averaged heritability enrichment in brain tissues among these methods (Figure 2\u2014figure supplement 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "4c131bc9-5409-410e-b883-2f5943ee75ea",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C25",
+      "claim": "Specificity can significantly improve the heritability enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that specificity could significantly improve the heritability enrichment. Among the five methods we compared, SpecVar and SAP are based on the specificity of ARE and AAP, respectively. SpecVar showed significantly higher heritability enrichment than ARE and SAP showed significantly higher heritability enrichment than AAP (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "9c869608-1d7b-4d66-ab50-fe6a8523a46d",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C26",
+      "claim": "Chromatin accessibility contributed most to improve heritability enrichment for all six phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that chromatin accessibility, which was part of the regulatory network, showed the highest effect in improving heritability enrichments for all six phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on ablation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "8efc9f7e-5ec4-4084-9aa3-e6668b0fb56a",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C27",
+      "claim": "Most genetic variants are located in the noncoding regulatory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the fact that most genetic variants are located in the noncoding regulatory regions (Claussnitzer et al., 2015; Kumar et al., 2012; Smemo et al., 2014) and chromatin accessibility gives the direct functional evidence for genetic variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "ebf2ee89-728f-44f7-b63c-f97e999084fb",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C28",
+      "claim": "The specificity in SpecVar contributed at least four-fold improvement in heritability enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity in SpecVar also contributed at least four-fold improvement in heritability enrichment (Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "fc047684-1ba6-4ca5-94e3-46986909ab70",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C29",
+      "claim": "SpecVar revealed that both LDL and total cholesterol were most relevant to the 'right lobe of liver'.",
+      "claim_type": "EXPLICIT",
+      "source": "For two lipid phenotypes, SpecVar revealed that both LDL and total cholesterol were most relevant to the 'right lobe of liver' (Figure 3a and b, Table 1), which was consistent with the existing reports that the liver plays a central role in lipid metabolism, serving as the center for lipoprotein uptake, formation, and export to the circulation (Jha et al., 2018; Nguyen et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with references to figures, table, and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "52ba2285-720a-456b-8754-725bb221e48d",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C30",
+      "claim": "The liver plays a central role in lipid metabolism, serving as the center for lipoprotein uptake, formation, and export to the circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "For two lipid phenotypes, SpecVar revealed that both LDL and total cholesterol were most relevant to the 'right lobe of liver' (Figure 3a and b, Table 1), which was consistent with the existing reports that the liver plays a central role in lipid metabolism, serving as the center for lipoprotein uptake, formation, and export to the circulation (Jha et al., 2018; Nguyen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "571b1b1a-57b9-444c-ba59-b67e5e72654a",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C31",
+      "claim": "SpecVar found that LDL and the total cholesterol were also significantly relevant to the 'fetal adrenal gland'.",
+      "claim_type": "EXPLICIT",
+      "source": "SpecVar found that LDL and the total cholesterol were also significantly relevant to the 'fetal adrenal gland' and the adrenal cortex has been revealed to play an important role in lipid mentalism (Boyd et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "4333571c-c9d7-4417-a07d-a1171d851e42",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C32",
+      "claim": "The adrenal cortex has been revealed to play an important role in lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "SpecVar found that LDL and the total cholesterol were also significantly relevant to the 'fetal adrenal gland' and the adrenal cortex has been revealed to play an important role in lipid mentalism (Boyd et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "cb945f0d-44e1-4f58-8c2c-484aa620800b",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C33",
+      "claim": "SAP and SEG failed to prioritize liver tissue as the significant relevant tissue for LDL and total cholesterol.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SAP and SEG failed to prioritize liver tissue as the significant relevant tissue. For LDL, SAP identified the 'frontal cortex' to be the most relevant tissue. SEG identified the most relevant tissue to be 'HepG2', which was human hepatoma cell lines, but the relevance score was relatively lower (Figure 3a, Supplementary file 1c). For total cholesterol, SAP identified the 'fetal adrenal gland' and SEG obtained 'HepG2' as the most relevant tissues (Figure 3b, Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with references to figures and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "901afd18-1dfc-4e15-99d6-bcb1469110f0",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C34",
+      "claim": "SpecVar prioritized the 'frontal cortex' to be the most relevant tissue for both educational attainment and cognitive performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For two human intelligential phenotypes, SpecVar prioritized the 'frontal cortex' to be the most relevant tissue for both educational attainment and cognitive performance (Figure 3c and d, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with references to figures and table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "6d552568-be2f-45d2-b16d-61bbe594195c",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C35",
+      "claim": "'Frontal cortex' is the cerebral cortex covering the front part of the frontal lobe and is implicated in planning complex cognitive behavior, personality expression, decision-making, and moderating social behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "'Frontal cortex' is the cerebral cortex covering the front part of the frontal lobe and is implicated in planning complex cognitive behavior, personality expression, decision-making, and moderating social behavior (Gabrieli et al., 1998; Yang and Raine, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "0178f6b8-c1d4-4aee-8ec8-36400046d4f6",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C42",
+      "claim": "For both facial morphology and brain shape, SpecVar identified CNCC as the most relevant context.",
+      "claim_type": "EXPLICIT",
+      "source": "For both facial morphology and brain shape, SpecVar identified CNCC as the most relevant context (Figure 3e and f, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with references to figures and table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "fc76ba08-a804-4ba9-bd66-d92859ec7264",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C43",
+      "claim": "CNCC is a migratory cell population in early human craniofacial development that gives rise to the peripheral nervous system and many non-neural tissues such as smooth muscle cells, pigment cells of the skin, and craniofacial bones.",
+      "claim_type": "EXPLICIT",
+      "source": "CNCC is a migratory cell population in early human craniofacial development that gives rise to the peripheral nervous system and many non-neural tissues such as smooth muscle cells, pigment cells of the skin, and craniofacial bones, which make it much more related to facial morphology and brain shape than the other 76 contexts (Cordero et al., 2011; Barlow et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "3ba80652-9858-45ca-ba26-daee8631b04d",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C44",
+      "claim": "Facial morphology and brain shape were revealed to share heritability in CNCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Facial morphology and brain shape were also revealed to share heritability in CNCC (Naqvi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "7aedaa88-5d23-4636-9f8a-2e443623b9a1",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C45",
+      "claim": "SAP and SEG failed to identify CNCC as the most relevant context for brain shape and facial morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "But the other two methods failed to identify CNCC as the most relevant context. For brain shape, SAP identified 'H1-hESC' and SEG identified 'tibial nerve' to be the most relevant tissue (Figure 3e, Supplementary file 1c). For facial morphology, SAP and SEG identified 'foreskin' and 'sigmoid colon' to be the most relevant tissues, respectively (Figure 3f, Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with references to figures and supplementary file.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "c25dc8f7-b026-4e81-9715-ba2b5acc31cf",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C46",
+      "claim": "POU3F3 is a well-known TF involved in the development of the central nervous system and is related to many neurodevelopmental disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, POU3F3 is a well-known TF involved in the development of the central nervous system and is related to many neurodevelopmental disorders (Snijders Blok et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "d0f30330-89f3-44fb-84a1-6dc895cdc344",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C47",
+      "claim": "EMX2 is expressed in the developing cerebral cortex and is involved in the patterning of the rostral brain.",
+      "claim_type": "EXPLICIT",
+      "source": "EMX2 is expressed in the developing cerebral cortex and is involved in the patterning of the rostral brain (Cecchi and Boncinelli, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "2757155e-f351-4eff-8d72-b7acc2e24792",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C48",
+      "claim": "FOXC2 is a member of the FOX family, which are modular competency factors for facial cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "FOXC2 is a member of the FOX family, which are modular competency factors for facial cartilage (Xu et al., 2018), and its mutation is linked to the cleft palate (Bahuau et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "01608f26-16a5-4727-bc51-0811353edd8f",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C49",
+      "claim": "FOXC2 mutation is linked to the cleft palate.",
+      "claim_type": "EXPLICIT",
+      "source": "FOXC2 is a member of the FOX family, which are modular competency factors for facial cartilage (Xu et al., 2018), and its mutation is linked to the cleft palate (Bahuau et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "bf4568e8-db56-4738-892f-b659a94e8409",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C50",
+      "claim": "By GWAS study, FOXC2 was previously found to be associated with brain shape by its nearest significant SNP '16:86714715'.",
+      "claim_type": "EXPLICIT",
+      "source": "By GWAS study, FOXC2 was previously found to be associated with brain shape by its nearest significant SNP '16:86714715' (Naqvi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "62490b1b-1601-40e9-bc51-72c40488c415",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C51",
+      "claim": "SpecVar prioritized two SNPs ('16:87237097', '16:87236947') located in a CNCC-specific RE that may influence the expression of FOXC2 and the brain shape phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our CNCC-specific regulations further prioritized only two SNPs ('16:87237097', '16:87236947') located in this CNCC-specific RE, which may influence the expression of FOXC2 and the brain shape phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "6f69cf48-2b2c-478f-ab5f-bace16f5abb7",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C52",
+      "claim": "The SNP-associated regulation of FOXC2 was supported by a HiChIP loop in brain tissues to link the SNP locus and FOXC2 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "We checked the chromatin loops in the database of HiChIP (Zeng et al., 2022) and found that this SNP-associated regulation of FOXC2 was supported by a HiChIP loop in brain tissues to link this SNP locus and FOXC2 promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "07c0e493-bf80-4af6-9484-a403778c0437",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C53",
+      "claim": "For educational attainment, SpecVar revealed 7611 SNP-TG pairs in its SNP-associated regulatory network of 'frontal cortex', and 3693 SNPs (40.1%) of these SNP-TG pairs were also SNPs of eQTL in brain tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "For educational attainment, SpecVar revealed 7611 SNP-TG pairs in its SNP-associated regulatory network of 'frontal cortex', and we found that 3693 SNPs (40.1%) of these SNP-TG pairs were also SNPs of eQTL in brain tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing validation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "65cccbb5-ec85-43c0-ab8e-3732a4ae24c1",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C55",
+      "claim": "For cognitive performance, there were 7494 SNP-TG pairs in its SNP-associated regulatory network of 'frontal cortex', and 3569 of them (47.6%) were also SNPs of eQTL in brain tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "For cognitive performance, there were 7494 SNP-TG pairs in its SNP-associated regulatory network of 'frontal cortex'. And 3569 of them (47.6%) were also SNPs of eQTL in brain tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing validation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "abbde37b-3bb6-41e8-a345-20b4621d446a",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C57",
+      "claim": "SpecVar's relevance correlation showed the best performance in approximating phenotypic correlation (PCC = 0.522) for facial distances, which outperformed SAP (PCC = 0.467) and SEG (PCC = 0.405).",
+      "claim_type": "EXPLICIT",
+      "source": "SpecVar's relevance correlation showed the best performance in approximating phenotypic correlation (Figure 5a and b, PCC = 0.522), which outperformed the other two methods: SAP PCC = 0.467 (Figure 5b) and SEG PCC = 0.405 (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with specific numerical values and references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "5dff7128-f13c-4c9d-adbe-dcef37b62bf7",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C58",
+      "claim": "For highly correlated phenotype pairs of facial distances, SpecVar performed best with PCC 0.467, which was the largest among SAP (PCC = 0.454) and SEG (PCC = 0.245).",
+      "claim_type": "EXPLICIT",
+      "source": "By setting the threshold of phenotypic correlation to 0.4, we obtained the 363 highly correlated phenotype pairs of facial landmark distances and compared the three methods based on their performance on these 363 pairs of phenotypes. We found that SpecVar also performed best with PCC 0.467, which was the largest among the three methods: SAP PCC = 0.454 and SEG PCC = 0.245 (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with specific numerical values and reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "99fd193f-0a18-473a-b589-0b4d6dc41650",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C59",
+      "claim": "For 206 phenotypes of UK Biobank, SpecVar performed best in the approximation of phenotypic correlation (PCC = 0.360), followed by SAP (PCC = 0.315) and SEG (PCC = 0.285).",
+      "claim_type": "EXPLICIT",
+      "source": "First, SpecVar performed best in the approximation of phenotypic correlation (PCC = 0.360), followed by SAP (PCC = 0.315) and SEG (PCC = 0.285) (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with specific numerical values and reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "70808bfa-0c7d-4882-bd22-575064b66b40",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C60",
+      "claim": "For almost all the thresholds of heritability, SpecVar showed the best performance of PCC and mean square error.",
+      "claim_type": "EXPLICIT",
+      "source": "For almost all the thresholds of heritability, SpecVar showed the best performance of PCC and mean square error (Figure 5f, Figure 5\u2014figure supplement 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "e0700483-0ba6-43ba-a0ee-cf36bc380e03",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C61",
+      "claim": "SpecVar had the smallest variance regarded heritability among the three methods.",
+      "claim_type": "EXPLICIT",
+      "source": "SpecVar also had the smallest variance regarded heritability among these three methods (Figure 5\u2014figure supplement 2f and g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "740492c7-f05c-43d6-a88e-ff10ac3ed650",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C62",
+      "claim": "'Body mass index' and 'leg fat-free mass (right)' were correlated with a phenotypic correlation of 0.697.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 'body mass index' and 'leg fat-free mass (right)' were correlated with a phenotypic correlation of 0.697.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing an example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "c3205c21-cf98-4184-95cb-88fa1f2ddd5b",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C63",
+      "claim": "SpecVar obtained a relevance correlation of 0.602 for 'body mass index' and 'leg fat-free mass (right)', while SAP obtained 0.342 and SEG gave 0.437.",
+      "claim_type": "EXPLICIT",
+      "source": "SpecVar obtained a relevance correlation of 0.602, while SAP obtained a relevance correlation of 0.342 and SEG gave a relevance correlation of 0.437.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing an example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "12033286-219d-42ce-b57f-d38cdaf30ced",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C64",
+      "claim": "SpecVar revealed that 'body mass index' and 'leg fat-free mass (right)' were both most relevant to the 'frontal cortex'.",
+      "claim_type": "EXPLICIT",
+      "source": "SpecVar further revealed that these two phenotypes were correlated because they were both most relevant to the 'frontal cortex' (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "af56553a-2556-4d90-8965-1c7b4c06d5ec",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C65",
+      "claim": "Body mass index has been reported to be related to frontal cortex development.",
+      "claim_type": "EXPLICIT",
+      "source": "Body mass index has been reported to be related to frontal cortex development (Laurent et al., 2020) and relevant to the reduced and thin frontal cortex (Islam et al., 2018; Shaw et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "879cb63d-dbfb-4601-9613-290299aed2e5",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C66",
+      "claim": "Body mass index is relevant to the reduced and thin frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Body mass index has been reported to be related to frontal cortex development (Laurent et al., 2020) and relevant to the reduced and thin frontal cortex (Islam et al., 2018; Shaw et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "46d24d25-a7b3-42d8-905a-f262a8338916",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C67",
+      "claim": "Obesity and fat accumulation are revealed to be associated with the frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity and fat accumulation are also revealed to be associated with the frontal cortex (Gluck et al., 2017; Kakoschke et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "bf739c03-7001-4169-8e94-700c9c6d3ceb",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C69",
+      "claim": "In the brain, SH2B1 enhances leptin signaling and leptin's antiobesity action, which is associated with the regulation of energy balance, body weight, and glucose metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the brain, SH2B1 enhances leptin signaling and leptin's antiobesity action, which is associated with the regulation of energy balance, body weight, and glucose metabolism (Rui, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "f50109e6-088b-4096-815f-83f96d5b911c",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C70",
+      "claim": "One common significant SNP '16:2896143' of 'body mass index' and 'leg fat-free mass (right)' was located in the specific REs of the 'frontal cortex' at the 90k downstream of SH2B1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that one common significant SNP '16:2896143'of these two phenotypes was located in the specific REs of the 'frontal cortex' at the 90k downstream of SH2B1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing an example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "790128b9-a4f4-464a-934c-af58f87b1589",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C71",
+      "claim": "SpecVar revealed that the RE near SH2B1 regulated the expression of SH2B1, which was supported by a HiChIP loop in brain tissues to associate the SNP-associated RE and promoter of SH2B1.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though this RE was near the promoter of NFATC2IP, SpecVar revealed that it regulated the expression of SH2B1, which was supported by a HiChIP loop in brain tissues to associate the SNP-associated RE and promoter of SH2B1 (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "e652cbcf-f991-47d6-9bd3-b956076446ae",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C72",
+      "claim": "Integrating chromatin accessibility and gene expression data into context-specific regulatory networks can provide better regulatory categories for heritability enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "The key message is that integrating chromatin accessibility and gene expression data into context-specific regulatory networks can provide better regulatory categories for heritability enrichment (Gazal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "9969a2a8-df89-46fd-8aff-6074c42ae0e1",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C73",
+      "claim": "Extending the functional categories from noncontext-specific regions to context-specific regions can improve the heritability enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that extending the functional categories from noncontext-specific regions to context-specific regions can improve the heritability enrichment, which is consistent with other studies based on gene expression (Finucane et al., 2018) and ChIP-seq (van de Geijn et al., 2020) data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "d3bd958c-a2e8-47d6-815a-5dc54a6091ba",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C74",
+      "claim": "The annotation from chromatin accessibility contributed most to improve heritability enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the annotation from chromatin accessibility contributed most to improve heritability enrichment (Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "6492004e-3702-4f5b-823c-237d0363d08d",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C75",
+      "claim": "The regulatory networks of SpecVar, which integrated chromatin accessibility with gene expression data, played a more important role in improving heritability enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "This meant that the regulatory networks of SpecVar, which integrated chromatin accessibility with gene expression data, played a more important role in improving heritability enrichment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "2d8ba1ab-e18f-4df1-8b91-323c3fa6021a",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C76",
+      "claim": "Specificity improved heritability enrichment by four-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "And specificity also improved heritability enrichment by four-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section summarizing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "45f5d339-954c-4180-8ec4-fddab0e0e119",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C77",
+      "claim": "SpecVar defined the relevance score based on both heritability enrichment and p-value.",
+      "claim_type": "EXPLICIT",
+      "source": "First, SpecVar defined the relevance score based on both heritability enrichment and p-value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "c00a27e9-bc93-4775-a533-1a33ff688e28",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C78",
+      "claim": "Using only heritability enrichment or p-value will not give a stable estimation of the relevance of phenotype to tissues due to the variability in the number of REs in the regulatory categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the variability in the number of REs in the regulatory categories (Supplementary file 1f), using only heritability enrichment or p-value will not give a stable estimation of the relevance of phenotype to tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with reference to supplementary file.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "1a2b2247-cc7d-4e3f-b339-ab77bb3331b8",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C79",
+      "claim": "SpecVar's regulatory categories had advantages over the existing functional categories to explain heritability.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, SpecVar's regulatory categories had advantages over the existing functional categories to explain heritability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section summarizing advantages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "11b89644-b42a-4993-9d65-f96e2c1c4302",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C80",
+      "claim": "With the constructed context-specific regulatory network atlas, SpecVar could interpret the relevant tissue by SNP-associated regulatory networks and interpret relevance correlation by common relevant tissues and shared SNP-associated regulations in relevant tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, with the constructed context-specific regulatory network atlas, SpecVar could further interpret the relevant tissue by SNP-associated regulatory networks (Figure 4) and interpret relevance correlation by common relevant tissues and shared SNP-associated regulations in relevant tissues (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "03fa4342-3609-448f-973b-e029132eab3c",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C81",
+      "claim": "SpecVar performed better when the heritability of phenotype was low while LDSC-GC performed better when the heritability was high.",
+      "claim_type": "EXPLICIT",
+      "source": "When using measured phenotype value correlation as the gold standard of phenotype correlation, we found that SpecVar performed better when the heritability of phenotype was low while LDSC-GC performed better when the heritability was high (Figure 5\u2014figure supplement 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "f3ef9623-b030-4100-9b14-b6f743dc7812",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C84",
+      "claim": "Relevance correlation and genetic correlation revealed the association of phenotypes in a complementary way.",
+      "claim_type": "EXPLICIT",
+      "source": "These results showed that relevance correlation and genetic correlation revealed the association of phenotypes in a complementary way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "f8dfad89-0d29-4e96-8af4-05e9931a264d",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C85",
+      "claim": "The usage of context-specific regulatory networks contributed most to the improvement of SpecVar.",
+      "claim_type": "EXPLICIT",
+      "source": "The usage of context-specific regulatory networks contributed most to the improvement of SpecVar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section summarizing findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "ac844fa9-7cb8-40e4-974a-aa67e630fb3c",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C86",
+      "claim": "The context-specific regulatory networks can only cover part of the regulatory elements and genetic variants, which are highly essential and representative.",
+      "claim_type": "EXPLICIT",
+      "source": "But the context-specific regulatory networks can only cover part of the regulatory elements and genetic variants, which are highly essential and representative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "dfe4bbd4-1d51-424f-bbe1-67d907619abe",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C87",
+      "claim": "SpecVar is based on stratified LDSC, which may not perform well on admixed populations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, SpecVar is based on stratified LDSC, which may not perform well on admixed populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "c3a19892-cdf5-4325-b7cf-4b6ff307b651",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C88",
+      "claim": "Luo et al. have developed cov-LDSC to adjust the LDSC model to be suitable for admixed populations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Luo. et al. have developed cov-LDSC to adjust the LDSC model to be suitable for admixed populations (Luo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "91e38dc9-77d4-4f91-8e64-fadad1f51411",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C89",
+      "claim": "PECA2 calculated the trans-regulatory score by integrating multiple REs bound by a TF to regulate TG to quantify the regulatory strength of this TF on the TG.",
+      "claim_type": "EXPLICIT",
+      "source": "One was the trans-regulatory score. Specifically, PECA2 hypothesized that TF regulated the downstream TG by binding at REs. The trans-regulatory score was calculated by integrating multiple REs bound by a TF to regulate TG to quantify the regulatory strength of this TF on the TG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "b150f57a-18f5-4921-bee1-03443482479d",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C90",
+      "claim": "PECA2 considered a prior TF-TG correlation across external public data from ENCODE database.",
+      "claim_type": "EXPLICIT",
+      "source": "And PECA2 also considered a prior TF-TG correlation across external public data from ENCODE database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "f4d3f9a5-711c-4a1c-8e02-7dc579389bf3",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C91",
+      "claim": "The output of PECA2 was a regulatory network with TFs, REs, and TGs as nodes and the regulations among them as edges.",
+      "claim_type": "EXPLICIT",
+      "source": "The output of PECA2 was a regulatory network with TFs, REs, and TGs as nodes and the regulations among them as edges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "0c95bc5e-ed4e-42e0-a909-b405d1b98163",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C92",
+      "claim": "77 contexts' regulatory networks were hierarchically clustered into 36 groups by trans-regulatory scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we hierarchically clustered 77 contexts' regulatory networks into 36 groups by trans-regulatory scores (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "c557bc84-231d-4ac0-9812-cedfce220b94",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C93",
+      "claim": "For a given context, a RE was defined as a context-specific RE if it was not overlapped with REs of other contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Then for a given context, a RE was defined as a context-specific RE if it was not overlapped with REs of other contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "5cbc1949-8745-4614-b9ee-b43ac9e12479",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C94",
+      "claim": "The context-specific regulatory network was formed by specific REs and their directly linked upstream TFs and downstream TGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the context-specific regulatory network was formed by specific REs and their directly linked upstream TFs and downstream TGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "239b1678-8760-4bf4-9d70-d9998fbabea4",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C95",
+      "claim": "SpecVar used stratified LDSC to compute partitioned heritability enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "SpecVar used stratified LDSC (Finucane et al., 2015) to compute partitioned heritability enrichment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "35d2a3a7-8a4b-441a-8abf-31592d500a1a",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C96",
+      "claim": "Stratified LDSC estimates standard error with a block jackknife and uses the standard error to calculate the p-value for the heritability enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Stratified LDSC estimates standard error with a block jackknife and uses the standard error to calculate the p-value pi for the heritability enrichment \u03c4i (Finucane et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "bcbac1e5-b02b-48ee-bbc7-90b7ec685e2c",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C97",
+      "claim": "SpecVar used R score \u2265100 and FDR \u22640.01 as the threshold to pick up relevant tissues for a phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We used R score \u2265100 and FDR \u22640.01 as the threshold to pick up relevant tissues for a phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "528fc6be-5b6c-4f6c-bdf3-6455f7b02125",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C98",
+      "claim": "The AAP method used all the chromatin-accessible peaks of each context to form a genome functional category.",
+      "claim_type": "EXPLICIT",
+      "source": "The AAP method used all the chromatin-accessible peaks of each context to form a genome functional category, which was used for partitioned heritability enrichment analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing alternative methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "77fcb493-e834-4313-9981-40d6b837b90e",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C99",
+      "claim": "The SAP method used the same rules of SpecVar to obtain specifically accessible peaks of each context.",
+      "claim_type": "EXPLICIT",
+      "source": "The SAP method used the same rules of SpecVar above to obtain specifically accessible peaks of each context, and the context-specific peaks sets of M contexts formed functional categories of SAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing alternative methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "393b7884-5df7-41a2-aaaf-1115a74c13e5",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C100",
+      "claim": "The SEG method was constructed by calculating t-statistics for differential expression of each gene in each context and selecting the top 10% genes ranked by t-statistic.",
+      "claim_type": "EXPLICIT",
+      "source": "The SEG method was constructed by following the procedure in Finucane et al., 2018. First, the t-statistics for differential expression of each gene in each of the M contexts were calculated. Then for each context, the top 10% genes ranked by t-statistic were selected, and the 100 kb windows around those top 10% genes were used to form a functional category.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "8a3912b7-353b-4a7e-a851-da7021d11586",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C101",
+      "claim": "For the ARE method, all REs in the regulatory network of a context were used to form a functional category.",
+      "claim_type": "EXPLICIT",
+      "source": "For the ARE method, we obtained all REs in the regulatory network of a context to be a functional category, and the RE sets of M contexts formed regulatory categories of ARE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing alternative methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "c11975f1-eb6e-4e1f-ba9e-4b6c57f48551",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C102",
+      "claim": "The Spearman correlation of R score representations was used to define the relevance correlation for two phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Then the Spearman correlation of their R score representation was used to define the relevance correlation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "af8dc336-ea59-4f32-9653-07db1b273b97",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C103",
+      "claim": "SpecVar defined the association score (A score) to prioritize the REs by combining its regulatory strength and association significance with the phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined the association score (A score) to prioritize the REs by combining its regulatory strength and association significance with the phenotype (averaged -log(p-value) of SNPs located near the RE and downweighted by their LD scores and distances to this RE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "4a91891a-237e-4b4a-8ab8-394e316a0264",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C104",
+      "claim": "SpecVar extracted the REs with significant A scores (FDR\u22640.05), as well as their directly linked upstream TFs, downstream TGs, and associated SNPs, to form the SNP-associated regulatory subnetwork.",
+      "claim_type": "EXPLICIT",
+      "source": "We extracted the REs with significant A scores (FDR\u22640.05), as well as their directly linked upstream TFs, downstream TGs, and associated SNPs, to form the SNP-associated regulatory subnetwork (Figure 1a, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to figure and Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "9d3fc460-3228-459e-a244-6c47669a745e",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "claim_id": "C105",
+      "claim": "SpecVar selected 206 GWAS summary statistics from UK Biobank based on specific quality conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 4176 phenotypes and 11,372 GWAS summary statistics. We selected 206 GWAS summary statistics (Supplementary file 1d) based on the following conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e6fc59e7-56b0-459b-99c7-e0548716cbcd",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SpecVar constructs a context-specific regulatory network atlas from 77 human contexts using paired chromatin accessibility and gene expression data via the PECA2 model, which integrates transcription factors (TFs), regulatory elements (REs), and target genes (TGs) into context-specific networks based on RE specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C14, and C89-C94 collectively describe the construction of the regulatory network atlas. The methodology is clearly described with specific details about PECA2 model implementation, hierarchical clustering, and specificity criteria. The 77 contexts covering major germ layers (C15) provide comprehensive coverage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "d47e51fe-9110-497f-afc4-51152a07dced",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SpecVar achieves significantly higher heritability enrichment than existing methods (ARE, SAP, AAP, SEG) across six phenotypes, with chromatin accessibility contributing most to improvement and specificity providing at least four-fold enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C19, C25, C26, and C28 provide specific numerical comparisons with statistical significance (p-values) demonstrating SpecVar's superior heritability enrichment. Ablation studies (C26, C28) quantify the contributions of different components. The results are consistent across multiple phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "7aa7bea6-0fc8-4e00-ac5d-d0b80fb0dabb",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For lipid phenotypes (LDL and total cholesterol), SpecVar correctly identifies the 'right lobe of liver' as the most relevant tissue, consistent with the liver's central role in lipid metabolism, while SAP and SEG fail to prioritize liver tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 demonstrate SpecVar's accurate tissue identification for lipid phenotypes with biological validation from literature (C30, C32). The comparison with other methods (C33) shows SpecVar's superiority. The identification of fetal adrenal gland (C31) is also supported by literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "02300281-e976-4064-bf62-f0f9b868ee0b",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SpecVar identifies 'frontal cortex' as the most relevant tissue for educational attainment and cognitive performance, consistent with the frontal cortex's role in complex cognitive behavior and decision-making.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 show SpecVar correctly identifies brain tissues for cognitive phenotypes with biological validation. The frontal cortex's known functions (C35) support the relevance identification. Statistical comparisons show brain tissues ranked significantly higher than non-brain tissues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "74e8e629-d5b6-4f94-8d4b-8fa212df33fd",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SpecVar identifies cranial neural crest cells (CNCC) as the most relevant context for both facial morphology and brain shape, consistent with CNCC's role in craniofacial development, while SAP and SEG fail to identify CNCC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 demonstrate SpecVar's accurate identification of CNCC for craniofacial phenotypes with strong biological justification (C43). The shared heritability between facial morphology and brain shape in CNCC (C44) is supported by literature. Comparison with other methods (C45) shows clear superiority.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "5ff0eb34-b092-4e9a-99bd-bc31618cfa51",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SpecVar's SNP-associated regulatory network for brain shape in CNCC identifies biologically relevant genes (POU3F3, EMX2, FOXC2) and prioritizes two specific SNPs near FOXC2 that are supported by HiChIP chromatin loop data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 provide detailed biological interpretation of SNP-associated networks with literature support for gene functions (C46-C49) and independent validation from HiChIP data (C52). The prioritization of specific SNPs (C51) demonstrates fine-mapping capability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "0d851d74-32bc-488e-8c9f-265de1931847",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SpecVar's SNP-associated regulatory networks for educational attainment and cognitive performance in frontal cortex show substantial overlap (40.1% and 47.6% respectively) with eQTL data from brain tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C55 provide independent validation of SpecVar's SNP-TG pairs using GTEx eQTL data. The percentages of overlap are substantial and statistically significant (hypergeometry test p-values provided), supporting the biological relevance of identified regulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "c6865a44-b6c6-447e-b733-4ab73802ac5a",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SpecVar's relevance correlation outperforms SAP and SEG in approximating phenotypic correlation for both facial distances (PCC=0.522) and UK Biobank phenotypes (PCC=0.360), with the best performance across different heritability thresholds and smallest variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 provide comprehensive quantitative comparisons across two independent datasets with multiple metrics (PCC, MSE). The consistent superiority across different heritability thresholds (C60) and smallest variance (C61) demonstrate robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SpecVar reveals that body mass index and leg fat-free mass are correlated through shared relevance to frontal cortex, with a common SNP near SH2B1 located in a frontal cortex-specific RE supported by HiChIP loop data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C71 demonstrate SpecVar's ability to interpret phenotype correlation through common relevant tissues and shared regulatory networks. The biological plausibility is supported by literature (C65-C67, C69), and the SNP-gene regulation is validated by HiChIP data (C71).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "d0f572d4-e3cc-493e-b913-d682eb5a2e1f",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Integrating chromatin accessibility and gene expression into context-specific regulatory networks provides better regulatory categories for heritability enrichment, with chromatin accessibility contributing most and specificity providing four-fold improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 summarize the key methodological contributions with support from ablation studies. The findings are consistent with other studies (C73) and provide quantitative measures of improvement (C76). This represents the core conceptual advance of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "5c46d19e-3d15-4574-91c4-a8f875c16aa3",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SpecVar defines the relevance score (R score) by combining heritability enrichment and p-value to provide stable tissue relevance estimation, using thresholds of R\u2265100 and FDR\u22640.01 for tissue selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 and C97 describe the R score definition and rationale. The justification for combining both metrics (C78) is supported by the variability in RE numbers across categories. The specific thresholds (C97) provide reproducible criteria for tissue selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "faa29253-ae86-4068-8153-14b1a9b348b7",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SpecVar's regulatory categories have advantages over existing functional categories in explaining heritability and provide interpretability through SNP-associated regulatory networks and shared regulations between phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 summarize SpecVar's advantages with support from comparative analyses throughout the manuscript. The interpretability through regulatory networks (C80) is demonstrated in multiple examples (Figures 4 and 6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "147fed17-ce75-4736-ac4b-146c078a3b0d",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SpecVar's relevance correlation performs better for low-heritability phenotypes while LDSC-GC performs better for high-heritability phenotypes, suggesting the two approaches reveal phenotype associations in complementary ways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81 and C84 describe the complementary nature of relevance correlation and genetic correlation. The heritability-dependent performance (C81) is supported by data, and regression analyses show improved phenotypic correlation estimation when combining both approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "d9658cd5-7c1c-4416-8e4b-476644396f52",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The usage of context-specific regulatory networks contributed most to SpecVar's improvement, but the method has limitations including incomplete coverage of regulatory elements and potential poor performance on admixed populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88 provide balanced assessment of SpecVar's strengths and limitations. The limitations are clearly acknowledged (C86, C87) with potential solutions mentioned (C88). This demonstrates appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "7e4fb827-6b5c-49e1-941c-8ee09c2e0c4e",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "SpecVar uses stratified LDSC to compute partitioned heritability enrichment, with standard error estimation by block jackknife and p-value calculation for heritability enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 describe the statistical framework with appropriate citations. The use of established methods (stratified LDSC) provides methodological rigor and comparability with existing approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "67f3a0bb-1536-426d-8195-e6f8207728dc",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Four alternative methods (AAP, SAP, SEG, ARE) were constructed for comparison, using different combinations of chromatin accessibility, gene expression, and specificity criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C101 describe the comparison methods with clear definitions. These provide appropriate baselines for evaluating SpecVar's performance and enable ablation analysis of different components.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "a8acf0d1-2552-44fd-a7c6-039c7abbc89f",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "SpecVar defines relevance correlation using Spearman correlation of R scores and association score (A score) combining regulatory strength and SNP association significance to extract SNP-associated regulatory subnetworks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C104 describe the computational methods for relevance correlation and SNP-associated network extraction. The A score definition (C103) appropriately combines regulatory and genetic information with FDR control (C104).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "007a0ebe-0982-448b-9722-c585910925ad",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "SpecVar selected 206 high-quality GWAS summary statistics from UK Biobank based on specific quality conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 describes the data selection criteria for UK Biobank analysis. The quality control is appropriate for ensuring reliable results, though specific selection criteria are not detailed in the claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "24976b83-be67-4602-845c-ef7322ccea79",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "LDSC provides methods to estimate heritability and genetic correlation from GWAS summary statistics, and stratified LDSC extends this to estimate partitioned heritability enrichment in functional categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 describe established background knowledge with appropriate citations. These provide the methodological foundation for SpecVar's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "cb4649ad-7a90-4a11-adc7-f4db0fe9caad",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Regulatory networks constructed from multi-omics data have been successfully used to identify master regulators, interpret genetic variants in specific contexts, and reveal tissue-specific functionality of phenotype-associated SNPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 provide background on prior applications of regulatory networks with appropriate citations. These establish the rationale for SpecVar's approach and demonstrate the utility of regulatory network-based methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    },
+    {
+      "id": "aa14f6e3-566b-431b-a9f2-b0900cf26c58",
+      "content_id": "82c2352f-649c-4878-933a-8302b8035484",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "SpecVar correlates relevance patterns for phenotype pairs and reveals shared SNP-associated regulations better than existing methods, as demonstrated on 206 UK Biobank phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are high-level summaries supported by detailed results in C57-C71. The application to 206 UK Biobank phenotypes demonstrates scalability and broad applicability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:58.213895Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "101ddd96-f492-4d3a-a7d4-1655bebcb355",
+      "result_id": "e6fc59e7-56b0-459b-99c7-e0548716cbcd"
+    },
+    {
+      "claim_id": "b676147b-09ce-4cf4-8b1c-7e391acf887e",
+      "result_id": "e6fc59e7-56b0-459b-99c7-e0548716cbcd"
+    },
+    {
+      "claim_id": "91e38dc9-77d4-4f91-8e64-fadad1f51411",
+      "result_id": "e6fc59e7-56b0-459b-99c7-e0548716cbcd"
+    },
+    {
+      "claim_id": "b150f57a-18f5-4921-bee1-03443482479d",
+      "result_id": "e6fc59e7-56b0-459b-99c7-e0548716cbcd"
+    },
+    {
+      "claim_id": "f4d3f9a5-711c-4a1c-8e02-7dc579389bf3",
+      "result_id": "e6fc59e7-56b0-459b-99c7-e0548716cbcd"
+    },
+    {
+      "claim_id": "0c95bc5e-ed4e-42e0-a909-b405d1b98163",
+      "result_id": "e6fc59e7-56b0-459b-99c7-e0548716cbcd"
+    },
+    {
+      "claim_id": "c557bc84-231d-4ac0-9812-cedfce220b94",
+      "result_id": "e6fc59e7-56b0-459b-99c7-e0548716cbcd"
+    },
+    {
+      "claim_id": "5cbc1949-8745-4614-b9ee-b43ac9e12479",
+      "result_id": "e6fc59e7-56b0-459b-99c7-e0548716cbcd"
+    },
+    {
+      "claim_id": "317387d2-f041-47f3-80c8-53e4dfdb8ac3",
+      "result_id": "d47e51fe-9110-497f-afc4-51152a07dced"
+    },
+    {
+      "claim_id": "d5138ce9-2312-42ae-a4b2-f8d72d99217f",
+      "result_id": "d47e51fe-9110-497f-afc4-51152a07dced"
+    },
+    {
+      "claim_id": "864fe4d8-4b7d-49c6-bab3-5a7b62dcf14c",
+      "result_id": "d47e51fe-9110-497f-afc4-51152a07dced"
+    },
+    {
+      "claim_id": "bf9dfafa-067c-49a6-89f5-373963b9ad52",
+      "result_id": "d47e51fe-9110-497f-afc4-51152a07dced"
+    },
+    {
+      "claim_id": "4c131bc9-5409-410e-b883-2f5943ee75ea",
+      "result_id": "d47e51fe-9110-497f-afc4-51152a07dced"
+    },
+    {
+      "claim_id": "9c869608-1d7b-4d66-ab50-fe6a8523a46d",
+      "result_id": "d47e51fe-9110-497f-afc4-51152a07dced"
+    },
+    {
+      "claim_id": "8efc9f7e-5ec4-4084-9aa3-e6668b0fb56a",
+      "result_id": "d47e51fe-9110-497f-afc4-51152a07dced"
+    },
+    {
+      "claim_id": "ebf2ee89-728f-44f7-b63c-f97e999084fb",
+      "result_id": "d47e51fe-9110-497f-afc4-51152a07dced"
+    },
+    {
+      "claim_id": "fc047684-1ba6-4ca5-94e3-46986909ab70",
+      "result_id": "7aa7bea6-0fc8-4e00-ac5d-d0b80fb0dabb"
+    },
+    {
+      "claim_id": "52ba2285-720a-456b-8754-725bb221e48d",
+      "result_id": "7aa7bea6-0fc8-4e00-ac5d-d0b80fb0dabb"
+    },
+    {
+      "claim_id": "571b1b1a-57b9-444c-ba59-b67e5e72654a",
+      "result_id": "7aa7bea6-0fc8-4e00-ac5d-d0b80fb0dabb"
+    },
+    {
+      "claim_id": "4333571c-c9d7-4417-a07d-a1171d851e42",
+      "result_id": "7aa7bea6-0fc8-4e00-ac5d-d0b80fb0dabb"
+    },
+    {
+      "claim_id": "cb945f0d-44e1-4f58-8c2c-484aa620800b",
+      "result_id": "7aa7bea6-0fc8-4e00-ac5d-d0b80fb0dabb"
+    },
+    {
+      "claim_id": "901afd18-1dfc-4e15-99d6-bcb1469110f0",
+      "result_id": "02300281-e976-4064-bf62-f0f9b868ee0b"
+    },
+    {
+      "claim_id": "6d552568-be2f-45d2-b16d-61bbe594195c",
+      "result_id": "02300281-e976-4064-bf62-f0f9b868ee0b"
+    },
+    {
+      "claim_id": "0178f6b8-c1d4-4aee-8ec8-36400046d4f6",
+      "result_id": "74e8e629-d5b6-4f94-8d4b-8fa212df33fd"
+    },
+    {
+      "claim_id": "fc76ba08-a804-4ba9-bd66-d92859ec7264",
+      "result_id": "74e8e629-d5b6-4f94-8d4b-8fa212df33fd"
+    },
+    {
+      "claim_id": "3ba80652-9858-45ca-ba26-daee8631b04d",
+      "result_id": "74e8e629-d5b6-4f94-8d4b-8fa212df33fd"
+    },
+    {
+      "claim_id": "7aedaa88-5d23-4636-9f8a-2e443623b9a1",
+      "result_id": "74e8e629-d5b6-4f94-8d4b-8fa212df33fd"
+    },
+    {
+      "claim_id": "c25dc8f7-b026-4e81-9715-ba2b5acc31cf",
+      "result_id": "5ff0eb34-b092-4e9a-99bd-bc31618cfa51"
+    },
+    {
+      "claim_id": "d0f30330-89f3-44fb-84a1-6dc895cdc344",
+      "result_id": "5ff0eb34-b092-4e9a-99bd-bc31618cfa51"
+    },
+    {
+      "claim_id": "2757155e-f351-4eff-8d72-b7acc2e24792",
+      "result_id": "5ff0eb34-b092-4e9a-99bd-bc31618cfa51"
+    },
+    {
+      "claim_id": "01608f26-16a5-4727-bc51-0811353edd8f",
+      "result_id": "5ff0eb34-b092-4e9a-99bd-bc31618cfa51"
+    },
+    {
+      "claim_id": "bf4568e8-db56-4738-892f-b659a94e8409",
+      "result_id": "5ff0eb34-b092-4e9a-99bd-bc31618cfa51"
+    },
+    {
+      "claim_id": "62490b1b-1601-40e9-bc51-72c40488c415",
+      "result_id": "5ff0eb34-b092-4e9a-99bd-bc31618cfa51"
+    },
+    {
+      "claim_id": "6f69cf48-2b2c-478f-ab5f-bace16f5abb7",
+      "result_id": "5ff0eb34-b092-4e9a-99bd-bc31618cfa51"
+    },
+    {
+      "claim_id": "07c0e493-bf80-4af6-9484-a403778c0437",
+      "result_id": "0d851d74-32bc-488e-8c9f-265de1931847"
+    },
+    {
+      "claim_id": "65cccbb5-ec85-43c0-ab8e-3732a4ae24c1",
+      "result_id": "0d851d74-32bc-488e-8c9f-265de1931847"
+    },
+    {
+      "claim_id": "abbde37b-3bb6-41e8-a345-20b4621d446a",
+      "result_id": "c6865a44-b6c6-447e-b733-4ab73802ac5a"
+    },
+    {
+      "claim_id": "5dff7128-f13c-4c9d-adbe-dcef37b62bf7",
+      "result_id": "c6865a44-b6c6-447e-b733-4ab73802ac5a"
+    },
+    {
+      "claim_id": "99fd193f-0a18-473a-b589-0b4d6dc41650",
+      "result_id": "c6865a44-b6c6-447e-b733-4ab73802ac5a"
+    },
+    {
+      "claim_id": "70808bfa-0c7d-4882-bd22-575064b66b40",
+      "result_id": "c6865a44-b6c6-447e-b733-4ab73802ac5a"
+    },
+    {
+      "claim_id": "e0700483-0ba6-43ba-a0ee-cf36bc380e03",
+      "result_id": "c6865a44-b6c6-447e-b733-4ab73802ac5a"
+    },
+    {
+      "claim_id": "740492c7-f05c-43d6-a88e-ff10ac3ed650",
+      "result_id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5"
+    },
+    {
+      "claim_id": "c3205c21-cf98-4184-95cb-88fa1f2ddd5b",
+      "result_id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5"
+    },
+    {
+      "claim_id": "12033286-219d-42ce-b57f-d38cdaf30ced",
+      "result_id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5"
+    },
+    {
+      "claim_id": "af56553a-2556-4d90-8965-1c7b4c06d5ec",
+      "result_id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5"
+    },
+    {
+      "claim_id": "879cb63d-dbfb-4601-9613-290299aed2e5",
+      "result_id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5"
+    },
+    {
+      "claim_id": "46d24d25-a7b3-42d8-905a-f262a8338916",
+      "result_id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5"
+    },
+    {
+      "claim_id": "bf739c03-7001-4169-8e94-700c9c6d3ceb",
+      "result_id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5"
+    },
+    {
+      "claim_id": "f50109e6-088b-4096-815f-83f96d5b911c",
+      "result_id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5"
+    },
+    {
+      "claim_id": "790128b9-a4f4-464a-934c-af58f87b1589",
+      "result_id": "f0c7527b-e2e0-427b-8071-9f6ab3d469b5"
+    },
+    {
+      "claim_id": "e652cbcf-f991-47d6-9bd3-b956076446ae",
+      "result_id": "d0f572d4-e3cc-493e-b913-d682eb5a2e1f"
+    },
+    {
+      "claim_id": "9969a2a8-df89-46fd-8aff-6074c42ae0e1",
+      "result_id": "d0f572d4-e3cc-493e-b913-d682eb5a2e1f"
+    },
+    {
+      "claim_id": "d3bd958c-a2e8-47d6-815a-5dc54a6091ba",
+      "result_id": "d0f572d4-e3cc-493e-b913-d682eb5a2e1f"
+    },
+    {
+      "claim_id": "6492004e-3702-4f5b-823c-237d0363d08d",
+      "result_id": "d0f572d4-e3cc-493e-b913-d682eb5a2e1f"
+    },
+    {
+      "claim_id": "2d8ba1ab-e18f-4df1-8b91-323c3fa6021a",
+      "result_id": "d0f572d4-e3cc-493e-b913-d682eb5a2e1f"
+    },
+    {
+      "claim_id": "45f5d339-954c-4180-8ec4-fddab0e0e119",
+      "result_id": "5c46d19e-3d15-4574-91c4-a8f875c16aa3"
+    },
+    {
+      "claim_id": "c00a27e9-bc93-4775-a533-1a33ff688e28",
+      "result_id": "5c46d19e-3d15-4574-91c4-a8f875c16aa3"
+    },
+    {
+      "claim_id": "bcbac1e5-b02b-48ee-bbc7-90b7ec685e2c",
+      "result_id": "5c46d19e-3d15-4574-91c4-a8f875c16aa3"
+    },
+    {
+      "claim_id": "1a2b2247-cc7d-4e3f-b339-ab77bb3331b8",
+      "result_id": "faa29253-ae86-4068-8153-14b1a9b348b7"
+    },
+    {
+      "claim_id": "11b89644-b42a-4993-9d65-f96e2c1c4302",
+      "result_id": "faa29253-ae86-4068-8153-14b1a9b348b7"
+    },
+    {
+      "claim_id": "03fa4342-3609-448f-973b-e029132eab3c",
+      "result_id": "147fed17-ce75-4736-ac4b-146c078a3b0d"
+    },
+    {
+      "claim_id": "f3ef9623-b030-4100-9b14-b6f743dc7812",
+      "result_id": "147fed17-ce75-4736-ac4b-146c078a3b0d"
+    },
+    {
+      "claim_id": "f8dfad89-0d29-4e96-8af4-05e9931a264d",
+      "result_id": "d9658cd5-7c1c-4416-8e4b-476644396f52"
+    },
+    {
+      "claim_id": "ac844fa9-7cb8-40e4-974a-aa67e630fb3c",
+      "result_id": "d9658cd5-7c1c-4416-8e4b-476644396f52"
+    },
+    {
+      "claim_id": "dfe4bbd4-1d51-424f-bbe1-67d907619abe",
+      "result_id": "d9658cd5-7c1c-4416-8e4b-476644396f52"
+    },
+    {
+      "claim_id": "c3a19892-cdf5-4325-b7cf-4b6ff307b651",
+      "result_id": "d9658cd5-7c1c-4416-8e4b-476644396f52"
+    },
+    {
+      "claim_id": "239b1678-8760-4bf4-9d70-d9998fbabea4",
+      "result_id": "7e4fb827-6b5c-49e1-941c-8ee09c2e0c4e"
+    },
+    {
+      "claim_id": "35d2a3a7-8a4b-441a-8abf-31592d500a1a",
+      "result_id": "7e4fb827-6b5c-49e1-941c-8ee09c2e0c4e"
+    },
+    {
+      "claim_id": "528fc6be-5b6c-4f6c-bdf3-6455f7b02125",
+      "result_id": "67f3a0bb-1536-426d-8195-e6f8207728dc"
+    },
+    {
+      "claim_id": "77fcb493-e834-4313-9981-40d6b837b90e",
+      "result_id": "67f3a0bb-1536-426d-8195-e6f8207728dc"
+    },
+    {
+      "claim_id": "393b7884-5df7-41a2-aaaf-1115a74c13e5",
+      "result_id": "67f3a0bb-1536-426d-8195-e6f8207728dc"
+    },
+    {
+      "claim_id": "8a3912b7-353b-4a7e-a851-da7021d11586",
+      "result_id": "67f3a0bb-1536-426d-8195-e6f8207728dc"
+    },
+    {
+      "claim_id": "c11975f1-eb6e-4e1f-ba9e-4b6c57f48551",
+      "result_id": "a8acf0d1-2552-44fd-a7c6-039c7abbc89f"
+    },
+    {
+      "claim_id": "af8dc336-ea59-4f32-9653-07db1b273b97",
+      "result_id": "a8acf0d1-2552-44fd-a7c6-039c7abbc89f"
+    },
+    {
+      "claim_id": "4a91891a-237e-4b4a-8ab8-394e316a0264",
+      "result_id": "a8acf0d1-2552-44fd-a7c6-039c7abbc89f"
+    },
+    {
+      "claim_id": "9d3fc460-3228-459e-a244-6c47669a745e",
+      "result_id": "007a0ebe-0982-448b-9722-c585910925ad"
+    },
+    {
+      "claim_id": "eb8dbba3-9f9c-4aca-b365-579aef8806b7",
+      "result_id": "24976b83-be67-4602-845c-ef7322ccea79"
+    },
+    {
+      "claim_id": "7daee67a-71cd-4414-b00c-04e6920e05c1",
+      "result_id": "24976b83-be67-4602-845c-ef7322ccea79"
+    },
+    {
+      "claim_id": "33074398-a7fb-4053-9088-2597bb0de0f0",
+      "result_id": "24976b83-be67-4602-845c-ef7322ccea79"
+    },
+    {
+      "claim_id": "cb640c8a-0ac8-4dd0-b032-4f2e3c0bd54e",
+      "result_id": "cb4649ad-7a90-4a11-adc7-f4db0fe9caad"
+    },
+    {
+      "claim_id": "b88852ee-81a9-4ab7-88c9-cbaba28add28",
+      "result_id": "cb4649ad-7a90-4a11-adc7-f4db0fe9caad"
+    },
+    {
+      "claim_id": "f549edb1-7562-4366-bacf-32f403c65b20",
+      "result_id": "cb4649ad-7a90-4a11-adc7-f4db0fe9caad"
+    },
+    {
+      "claim_id": "f9b87ea1-76c8-4bf0-a029-73cb5f5a1472",
+      "result_id": "cb4649ad-7a90-4a11-adc7-f4db0fe9caad"
+    },
+    {
+      "claim_id": "a83c72b5-20a0-4a88-9826-00aa4c1ea5da",
+      "result_id": "cb4649ad-7a90-4a11-adc7-f4db0fe9caad"
+    },
+    {
+      "claim_id": "d9d11034-31fb-4e34-8e75-5128904f34de",
+      "result_id": "aa14f6e3-566b-431b-a9f2-b0900cf26c58"
+    },
+    {
+      "claim_id": "0ad5cd8b-62ce-4fa6-ad1e-c9705c1fbcc5",
+      "result_id": "aa14f6e3-566b-431b-a9f2-b0900cf26c58"
+    }
+  ],
+  "comparisons": []
+}

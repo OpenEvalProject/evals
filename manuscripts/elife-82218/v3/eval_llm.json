@@ -1,0 +1,466 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes background knowledge about lissencephaly, a cortical malformation caused by mutations in microtubule-related proteins including DCX and dynein. Patients exhibit microcephaly, abnormal neuronal migration resulting in a four-layered cortex, and reduced axon tracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C17 are well-established facts from prior literature, appropriately cited. These provide necessary context for the study but represent background knowledge rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "DCX negatively regulates dynein-mediated retrograde transport in neurons. In Dcx-/y and Dcx-/y;Dclk1-/- axons, both run length and velocity of dynein intermediate chain (DIC) and TrkB vesicles are significantly increased compared to WT. Reintroduction of DCX fully rescues this phenotype, while DCLK1 provides only partial rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C35 are strongly supported by live imaging data in Figure 1 showing increased dynein transport parameters in DCX-deficient neurons and rescue by DCX reintroduction. Statistical significance is reported with appropriate p-values. The differential rescue by DCX vs DCLK1 (C31-C32) provides specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Anterograde transport of TrkB vesicles is unaffected by DCX deficiency, showing no significant differences in velocity or run length between WT and Dcx-/y neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by data in Figure 1\u2014figure supplement 1C demonstrating specificity of DCX's effect on retrograde rather than anterograde transport. This control experiment strengthens the main finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Mass spectrometry analysis identified dynein intermediate chain 2 and dynactin subunit 5 as DCX-interacting proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by mass spectrometry data in Table 1. The methodology appears sound with appropriate controls (HA vs HA-DCX). However, the authors acknowledge this doesn't rule out indirect interactions through unknown bridging proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The N-terminal domain of DCX (N-DCX) shows stronger affinity for dynein than full-length DCX (FL-DCX). N-DCX decreases retrograde transport of TrkB more potently than FL-DCX in both DCX knockout and WT neurons, suggesting DCX regulates dynein through direct protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are well-supported by immunoprecipitation data (Figure 2B, Figure 2\u2014figure supplement 1A) and functional transport assays (Figures 2C-D, 2F-G). The increased binding and stronger functional effect of N-DCX provide mechanistic insight. Statistical significance is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The C-terminal domain of DCX (C-DCX) does not bind dynein directly but negatively regulates the DCX-dynein interaction. C-DCX reduces co-immunoprecipitation of dynein with FL-DCX and N-DCX, and C-DCX overexpression in WT neurons increases dynein-mediated retrograde transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by immunoprecipitation experiments (Figure 2E, Figure 2\u2014figure supplement 1B-C) and functional assays (Figures 2F-G). The data demonstrate an autoinhibitory role for the C-terminus. The conclusion (C50) logically follows from the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "DCX mutations A71S and T203R, which decrease cooperative MT binding but not dynein binding, fail to rescue increased retrograde transport in DCX knockout neurons. This demonstrates that DCX's MT-binding activity is required for regulating dynein transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by rescue experiments (Figure 3A, Figure 3\u2014figure supplement 1) and binding assays (Figure 2\u2014figure supplement 1D). The dissociation between dynein binding (preserved) and rescue function (lost) provides strong evidence for the importance of MT binding. However, alternative explanations involving protein stability or localization are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "C-DCX does not bind MTs directly but increases DCX's interactions with MTs, consistent with the C-terminal tail maintaining associations between DCX molecules on the MT lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by MT-binding assays (Figure 3B) and consistent with cited structural studies (C57). The data support a model where the C-terminus enhances cooperative MT binding through intermolecular interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "DCX decreases dynein's association with microtubules. Significantly more dynein intermediate chain precipitates with MTs in brain lysates from Dcx-/y and Dcx-/y;Dclk1-/- mice compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by MT co-sedimentation assays (Figure 3C-D) showing increased dynein-MT binding in DCX absence. This provides a direct mechanism for DCX's negative regulation of dynein transport. Statistical significance is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "DCX regulates dynein transport through competitive interactions with JIP3. JIP3 decreases DCX-dynein binding, JIP3 knockdown reduces retrograde transport in Dcx-/y neurons, and JIP3 overexpression increases retrograde transport in WT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by co-immunoprecipitation (Figure 4A), knockdown experiments (Figure 4B-C), and overexpression studies (Figure 4B-C). The bidirectional manipulation provides strong evidence for JIP3's role. The conclusion (C63-C64) that DCX acts through two mechanisms (MT binding and JIP3 competition) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A truncated JIP3 construct (amino acids 1-240) forms active, processive dynein-dynactin-JIP3 (DDJ) complexes that move along microtubules at ~0.8 \u03bcm/s, comparable to other dynein-dynactin-adaptor complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by in vitro single-molecule TIRF microscopy (Figure 5B-C). This is a novel finding as JIP3 was previously thought to have too short a coiled-coil to form active complexes. The velocity measurements are well-documented with confidence intervals and comparison to literature values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "DCX and N-DCX differentially affect DDJ velocity in vitro. At 10 nM, DCX decorates MTs and slightly reduces DDJ velocity, while N-DCX (which has weak MT affinity) has a stronger effect on velocity, likely acting directly on the DDJ complex rather than through MT binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by TIRF microscopy showing MT decoration (Figure 5\u2014figure supplement 4A-B) and velocity measurements (Figure 5C). The inference that N-DCX acts directly on DDJ (C75) is reasonable given its lack of MT binding under assay conditions, though not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "DCX differentially regulates DDJ and kinesin-1 motors. N-DCX does not affect KIF5B velocity, while FL-DCX reduces it. This suggests DCX affects kinesin-1 through MT binding but affects DDJ through direct motor complex interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by comparative velocity measurements (Figure 5C) and consistent with cited literature on DCX-kinesin interactions. The differential effects provide mechanistic specificity, though the inference about mechanisms (C78-C79) relies partly on indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "N-DCX does not affect MT gliding by single-headed dynein, suggesting it regulates dynein through interactions with the tail or associated subunits rather than the motor domain. In contrast, DCX slightly decreases MT gliding velocity, consistent with effects through MT binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by MT gliding assays (Figure 5C). The use of tail-truncated single-headed dynein provides a clean test of motor domain effects. The inferences about mechanism (C81, C83) are logical but could benefit from additional direct binding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "DCX reduces the MT on-rate of dynein without affecting dwell time, explaining the reduced MT gliding velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by single-molecule binding kinetics measurements (Figure 5\u2014figure supplement 5A-B). This provides mechanistic detail about how DCX affects dynein-MT interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "DCX regulates dynein function through two pathways: interactions with the dynein motor complex and interactions with microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is a summary conclusion well-supported by the collective evidence from multiple experimental approaches (C3-C85). This represents the central mechanistic finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "DDJ complexes can recruit two dyneins, and two-dynein complexes show higher velocities than one-dynein complexes. When DDJ is assembled in the presence of N-DCX, velocity is further reduced to ~0.41 \u03bcm/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by literature citations (C87-C89) and velocity measurements (C90, Figure 5C). The velocity reduction with N-DCX during assembly suggests interference with two-dynein complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "DDJ predominantly recruits two dyneins (42% colocalization), and N-DCX interferes with second dynein binding, reducing colocalization to 27%. Even DDJ complexes retaining two dyneins show reduced velocity in N-DCX presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are strongly supported by two-color single-molecule colocalization experiments (Figure 6A-C). The quantification of colocalization fractions and velocity measurements provide direct evidence for the proposed mechanism. This is a key result demonstrating how DCX disrupts dynein complex composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Downregulating dynein heavy chain or JIP3 in Dcx-/y;Dclk1-/- mouse brains partially rescues neuronal migration defects, demonstrating the physiological importance of DCX-mediated regulation of dynein-JIP3 interactions during cortical development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by in utero electroporation experiments (Figure 7A-D) showing rescue of lamination defects. This provides crucial in vivo validation of the molecular mechanisms identified in vitro. Statistical significance is reported. The rescue is partial, suggesting additional factors contribute to the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "DCX differentially regulates anterograde and retrograde intracellular trafficking in neuronal axons, mediating transport of critical protein complexes during neuronal growth and development. DCX positively regulates KIF1A-mediated anterograde transport while negatively regulating dynein-mediated retrograde transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 integrate current findings with previous work (cited as Liu et al., 2012). The differential regulation of opposing motor directions represents a major conceptual advance. However, C101 is somewhat speculative about which specific protein complexes are affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "While DCX reduces KIF5B velocity in vitro, anterograde transport of TrkB and mitochondria (both KIF5-mediated) remains unchanged in DCX knockout neurons, suggesting compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are supported by current data (C105-C106) and citations to previous work (C103-C104, C107). This apparent paradox is acknowledged by the authors and discussed with potential explanations. The observation is valid but the mechanistic explanation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Multiple mechanisms could explain the lack of effect on KIF5-mediated anterograde transport despite DCX's inhibitory effect on KIF5B in vitro, including cooperation between KIF5 and KIF1, changes in JIP3 binding, or tug-of-war dynamics between opposing motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C111 cite relevant literature but represent speculative explanations for an unresolved observation. The authors appropriately present these as possibilities rather than conclusions. Additional experiments would be needed to distinguish between these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "DCX may bind dynein in a 'closed' autoinhibited conformation where intramolecular N-C terminal interactions prevent C-terminal interference with dynein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 are inferences/speculation based on the observation that C-DCX inhibits DCX-dynein binding. While plausible, this conformational model lacks direct structural evidence. The speculation is reasonable but requires validation through structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "MT-bound DCX impairs retrograde transport by reducing dynein MT binding during stepping. Cooperative MT binding may increase local DCX concentration, enhancing association with nearby DDJ complexes and causing second dynein dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 is a reasonable inference from the mutant data, but C115 is speculative. The proposed mechanism for why MT-binding mutants fail to rescue (local concentration effects) is plausible but not directly tested. Alternative explanations involving protein localization or stability are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "DCX binds MTs as dimers or higher-order oligomers through MT-dependent self-association. The C-terminus facilitates binding of neighboring DCX molecules through interactions with N-terminal domains, suggesting a shift from intramolecular to intermolecular N-C interactions upon MT binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 are well-supported by citations to structural studies. Claims C121-C122 represent reasonable inferences from the structural data. This provides important context for understanding DCX's dual roles in MT binding and dynein regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The association of DCX with MTs and dynein may be dynamic and competitive, potentially regulated by phosphorylation of C-terminal sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C124 are hypothetical, and C125 (phosphorylation sites exist) is factual but their functional role is speculative. This represents an interesting model for future investigation but lacks direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "JIP3 and its homologs are brain-expressed adaptor proteins that interact with both kinesin and dynein motors to mediate bidirectional transport of various cargoes including JNK and lysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 are well-established facts from prior literature, appropriately cited. These provide necessary background for understanding JIP3's role but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The formation of active DDJ complexes despite JIP3's short predicted coiled-coil suggests either disorder-to-order transition in the predicted disordered region or that adaptors don't need to span the full dynactin shoulder. This contrasts with previous findings that short Hook3 constructs form inactive complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C132 are speculative explanations for the unexpected finding that short JIP3 forms active complexes. Claim C133 accurately cites contrasting results with Hook3. The speculation is reasonable but requires structural validation. The difference from Hook3 suggests adaptor-specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Different cargo adaptors bind dynactin and dynein differently. JIP3 interacts differently than Hook3 or BicD2, with one JIP3 molecule recruiting two dyneins. DCX displaces the second dynein without disrupting JIP3-dynactin interactions, competing with dynein-JIP3 but not JIP3-dynactin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 are supported by citations to structural studies and recent preprints. Claims C137-C140 are reasonable inferences from the current data showing selective reduction in two-dynein complexes. The model is well-supported though direct structural evidence for DCX's binding site would strengthen it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Loss-of-function mutations in DCX, dynein, and JIP3 all cause similar cortical malformations in mice and humans. These proteins interact in multiple signaling pathways including JNK/MAPK signaling and regulate nuclear migration in radial glial progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C151 are well-established facts from prior literature, appropriately cited. These provide important context for understanding the developmental significance of the molecular mechanisms identified in this study.",
+    "result_type": "MINOR"
+  }
+]

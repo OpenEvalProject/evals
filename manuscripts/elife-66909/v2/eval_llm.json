@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Conditional knockout of Dnmt3a in excitatory neurons starting at mid-gestation (E13-15) results in altered gene expression, impaired synapse maturation, and behavioral deficits in working memory and social interest without causing early lethality or gross brain morphological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by converging evidence from multiple experimental approaches. RNA-seq data (C1, Figure 3A-B), dendritic spine morphology analysis (C2, Figure 2A-D), electrophysiology (C27, Figure 2E-I), and behavioral tests (C3-C4, Figure 1C-E) provide consistent evidence. The timing of Cre recombination is confirmed by citations and experimental validation (C24). The absence of lethality and gross morphological changes (C26, Figure 1\u2014figure supplement 3C) distinguishes this model from earlier deletion approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C92"
+    ],
+    "result": "Loss of Dnmt3a abolishes postnatal accumulation of both CG and non-CG DNA methylation, leaving adult neurons with a fetal-like epigenomic pattern at approximately 222,000 genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MethylC-seq data strongly support these claims. The elimination of mCH accumulation (C6, C75, Figure 3C) and reduction in mCG levels (C5, C76, Figure 3C) are quantitatively demonstrated. The identification of 222,006 DMRs (C7, C92, Figure 3F-H) provides genome-wide evidence. The lack of methylation changes at P0 (C77) confirms the postnatal timing of the effect. The data are internally consistent across replicates (Figure 3\u2014figure supplement 3A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Dnmt3a cKO neurons exhibit altered dendritic spine morphology with longer, narrower spines and a shift toward immature filopodia phenotypes, despite maintaining normal spine density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Morphological analysis of DiI-labeled dendritic spines provides clear quantitative evidence (Figure 2B-D). The preservation of spine density (C50) with significant changes in spine dimensions (C51-C52, p<0.001) and classification (C53-C54, p<0.05) is well-documented. Sample sizes are adequate (n=701 control, n=577 cKO spines from multiple mice), and statistical tests are appropriate (KS test, Wilcoxon test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "Dnmt3a cKO neurons show reduced excitability with higher rheobase, fewer action potentials in response to current injection, hyperpolarized resting membrane potential, and lower input resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Patch-clamp electrophysiology data from adequate sample sizes (n=22 cKO, n=17 control cells) support these claims with appropriate statistical tests (t-test p=0.0042 for rheobase, Wilcoxon test p=0.049 for resting potential, p=0.023 for input resistance). The findings are internally consistent and align with the observed morphological changes. However, the mechanistic interpretation linking these changes to ion channel expression (C59, C61) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C81",
+      "C82",
+      "C83",
+      "C87"
+    ],
+    "result": "Dnmt3a cKO results in differential expression of 70 genes (46 up-regulated, 24 down-regulated), with up-regulated genes showing enrichment of gene body mCH in controls and a negative correlation between methylation loss and gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq analysis with appropriate statistical thresholds (FDR<0.05) identifies DE genes (C67-C68, Figure 3A-B). The correlation between gene body mCH and up-regulation (C81-C82, Figure 3D) is well-demonstrated. The negative correlation between methylation changes and expression (C87, Figure 3E) is statistically significant, though it explains only 0.46% of variance (C88), indicating that DNA methylation is one of multiple regulatory factors. The modest effect size is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C28",
+      "C115",
+      "C117",
+      "C124",
+      "C125",
+      "C131"
+    ],
+    "result": "Loss of DNA methylation in Dnmt3a cKO neurons leads to increased H3K27me3 at thousands of genomic regions, with 4,040 regions showing significantly increased H3K27me3 that overlap substantially with regions losing DNA methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data provide strong evidence for increased H3K27me3 (C8, C115, Figure 4D). The identification of 4,040 DM regions (C117, FDR<0.05) and their significant overlap with DMRs (C124-C125, Fisher's test p<1e-100) demonstrate spatial correlation. Quantitative analysis shows increased H3K27me3 signal at DMR centers (C131, Figure 5C). The timing of H3K27me3 changes (postnatal, not prenatal) is well-documented (C118-C119). This represents a major finding of compensatory epigenetic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C143",
+      "C147"
+    ],
+    "result": "The effect of increased H3K27me3 is specific to genes containing DMRs, with stronger effects in down-regulated genes, suggesting H3K27me3 may compensate for loss of DNA methylation-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis demonstrates specificity of H3K27me3 effects to genes with DMRs (C138-C139, Figure 5E) and stronger accumulation in down-regulated genes (C140, p=0.0029). The lack of H3K27me3 changes in genes without DMRs (C142) strengthens the specificity argument. However, the compensatory mechanism (C143, C147) remains inferential rather than directly demonstrated through perturbation experiments. The correlation data support but do not prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C148",
+      "C150",
+      "C152",
+      "C154",
+      "C155",
+      "C157"
+    ],
+    "result": "Developmentally regulated H3K27me3 changes are distinct from Dnmt3a cKO-induced changes, with developmental regions relatively unaffected by the knockout while cKO-specific regions show larger effects and greater DNA methylation loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of 12,994 developmental DM regions (C148, Figure 6A) provides a baseline for comparison. The weak correlation between developmental and cKO changes (C152, r=-0.12) and differential effects on different peak groups (C154-C155, Figure 6C-E) demonstrate distinct mechanisms. The greater methylation loss in cKO-specific regions (C156) supports the interpretation. This analysis effectively distinguishes developmental from perturbation-induced changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Dnmt3a cKO results in more than twice as many DNA methylation valleys (DMVs) compared to controls, which can be classified into eight distinct categories based on their epigenetic signatures, including regions with compensatory H3K27me3 gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of 1,838 DMVs in cKO vs. 881 in controls (C158-C159) is well-documented. Clustering analysis identifies eight distinct categories (C164, Figure 7C), with specific examples provided (C165-C167). The characterization of cluster C1 as gaining H3K27me3 (C167) and potentially showing compensatory repression (C168) integrates multiple data types. However, the compensatory mechanism in C168 remains speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Male Dnmt3a cKO mice show impaired working memory (reduced Y-maze alternations), reduced social interest (less time with novel mouse), and attenuated acoustic startle response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Behavioral data with adequate sample sizes (n=14-15 per group) and appropriate statistical tests support these claims. Y-maze performance (C42, p=0.0079, Figure 1C), three-chamber sociability (C43, p=0.01048, Figure 1D), and acoustic startle (C44, p=0.0019, Figure 1E) all show significant deficits. The specificity of deficits (intact fear conditioning, C48-C49) strengthens the interpretation. Sex differences are noted, with some effects specific to males.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Chromatin regulators associated with PRC2 (Ezh2, Suz12, Eed, Jarid2) are enriched near promoters of differentially expressed genes, suggesting Dnmt3a cKO impacts chromatin landscape via altered PRC2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "BART analysis identifies PRC2-associated factors as enriched (C106, Figure 4A), but this is a computational prediction based on published ChIP-seq data from other systems, not direct experimental evidence in this model. The inference about altered PRC2 activity (C108) is reasonable given the H3K27me3 data, but no direct measurements of PRC2 component expression or activity are provided. The claim requires experimental validation of PRC2 involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Up-regulated genes are significantly longer than both down-regulated genes and non-differentially expressed genes, consistent with enrichment of mCH-mediated repression in long genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Statistical analysis shows up-regulated genes are longer than down-regulated genes (C89, p<10^-4) and non-DE genes (C90, p<0.01), as shown in Figure 3\u2014figure supplement 4E. This finding is consistent with cited prior work on mCH and MeCP2-dependent repression in long genes. However, the broad distribution of gene lengths in both groups suggests length is not the sole determinant of regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Dnmt3a cKO neurons show increased variability in mEPSC amplitude without changes in mean amplitude or frequency, consistent with postsynaptic disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Voltage-clamp recordings demonstrate increased amplitude variability (C62, F-test p=0.0032) without changes in mean amplitude (C64) or frequency (C65), as shown in Figure 2\u2014figure supplement 2. The sample sizes are adequate (n=8 cells per group from 4-5 mice). The interpretation of postsynaptic disruption (C63) is reasonable but inferential, as the increased variability could reflect heterogeneity in postsynaptic receptor composition or spine maturation states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "113,557 developmental DMRs that gain mCG between P0 and P39 strongly overlap (83.2%) with Dnmt3a cKO DMRs, and are enriched for transcription factor binding motifs associated with neuronal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of developmental DMRs (C100) and their substantial overlap with cKO DMRs (C101, 83.2%, Figure 3G-H) is well-documented. Motif enrichment analysis identifies relevant transcription factors (C102, FDR<0.05, Figure 3\u2014figure supplement 5D). This analysis effectively links the cKO phenotype to disruption of normal developmental methylation patterns. The findings support the interpretation that Dnmt3a is essential for developmental methylation of regulatory elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "Dnmt3a cKO animals survive and breed normally without overt brain morphological alterations or gross motor impairments, though they show altered exploratory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Observational data confirm survival and breeding (C35), histological analysis shows no gross morphological changes (C36, Figure 1\u2014figure supplement 3C), and open field testing shows no motor impairments (C37). The absence of anxiety-like behavior (C40, Figure 1\u2014figure supplement 4C-E) distinguishes this model from adult Dnmt3a knockdown. These findings establish that the model is viable for studying specific cognitive functions without confounding effects of severe developmental disruption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "The Neurod6-Cre system specifically targets excitatory neurons, and deletion of Dnmt3a exon 19 is faithfully captured in cortical excitatory neurons with reduced DNMT3A protein at early postnatal time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "INTACT mouse validation confirms excitatory neuron specificity (C30, Figure 1\u2014figure supplement 2), RNA-seq confirms exon 19 deletion (C31, Figure 1B), and Western blot shows reduced protein at P5 and P13 (C33, Figure 1\u2014figure supplement 3B). These validation experiments are essential for interpreting the model but represent methodological confirmation rather than novel biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C116"
+    ],
+    "result": "Active histone marks (H3K4me3 and H3K27ac) are largely conserved between Dnmt3a cKO and control neurons at P39, with no differentially modified regions detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq peak analysis shows conservation of H3K4me3 and H3K27ac peaks (C114, Figure 4D), and differential binding analysis finds no significant DM regions (C116, Figure 4\u2014figure supplement 1C). However, the lack of detected changes could reflect limited statistical power with only two replicates per condition, as acknowledged in the discussion. The subtle increases in H3K27ac signal at DMRs (C135, 4.64% change) suggest some changes may be below the detection threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "No significant changes in transposable element expression were found between Dnmt3a cKO and control cortical excitatory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Analysis of TE family and class expression shows no significant changes (C72, FDR>0.05, Figure 3\u2014figure supplement 2). This negative result is important for ruling out TE derepression as a mechanism, though the analysis is limited to expression levels and does not assess TE mobility or insertional mutagenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Male Dnmt3a cKO mice show increased prepulse inhibition, which may be driven by reduced startle reflex rather than improved sensorimotor gating, and the startle deficit is not due to impaired hearing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PPI data show increased inhibition (C45, p<0.05, Figure 1\u2014figure supplement 5B), but the interpretation that this is driven by reduced startle (C46) is appropriately cautious. The inference that hearing is intact (C47) is supported by performance in PPI and fear conditioning tasks. This careful interpretation distinguishes between apparent sensorimotor gating improvement and a confounding effect of reduced baseline startle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Dnmt3a cKO mice show no deficits in fear memory acquisition, recall, or extinction, indicating specificity of cognitive impairments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Fear conditioning data show no significant differences in acquisition, contextual recall, cued recall, or extinction (C48-C49, Figure 1\u2014figure supplement 5C-F). These negative results are important for demonstrating specificity of the working memory and social behavior deficits, indicating that Dnmt3a cKO does not cause global cognitive impairment. The intact fear conditioning also confirms that sensory and motor functions required for this task are preserved.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Site-specifically sumoylated histone H4 at Lys12 (H4K12su) was successfully synthesized using a semisynthetic strategy and incorporated into octamers and nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe the semisynthetic production of H4K12su and its incorporation into octamers and nucleosomes, supported by experimental data in Figures 1A-D. The methodology is well-documented with appropriate analytical characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "H4K12su inhibits p300-mediated acetylation of the H4 tail in octamers and mononucleosomes through site occlusion rather than allosteric inactivation of p300.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 demonstrate that H4K12su blocks H4 tail acetylation while H2A/H2B/H3 acetylation remains intact (C27), and p300 autoacetylation is unaffected (C28). The data from Figures 1E-F support the conclusion that inhibition occurs via site occlusion (C30) rather than enzyme inactivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "H4K12su drastically inhibits RNA polymerase II-mediated transcription from chromatinized plasmid templates in vitro without affecting chromatin assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 show that H4K12su does not prevent chromatin formation (C36, Figure 2B) but strongly inhibits transcription (C37, C40, Figure 2C). The HDAC inhibitor control (C38) supports that the effect is not mediated through HDAC1, strengthening the direct mechanism conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Mass spectrometry analysis reveals that H4K12su reduces p300-mediated hyperacetylation of the H4 tail in chromatinized templates prior to transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by MS-MS data in Figure 3 and Tables 1-4 showing reduced acetylation in H4K12su chromatin. The novel in-gel desumoylation protocol enables direct comparison. However, C45 is speculative about the mechanism linking reduced acetylation to transcription inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "p300 exhibits intrinsic substrate preference for K5/K8 over K12/K16 in the H4 tail, and this preference is unchanged by the presence of SUMO-3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by MS-MS fragment ion analysis in Tables 2-4. The data show consistent acetylation patterns between wt H4 and H4K12su substrates, confirming that SUMO-3 does not alter p300's intrinsic specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A SUMO-3-H4 fusion protein in HEK293T cells inhibits H4K16 acetylation and is incorporated into chromatin, confirming negative crosstalk between H4 sumoylation and acetylation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by immunoprecipitation and western blot data in Figure 4. The fusion protein is incorporated into chromatin (C51) and significantly inhibits H4K16ac (C49), consistent with in vitro findings. The observation extends to other acetyltransferases (C54), though this is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "H4K12su inhibits H3K4 methylation by the COMPASS extended catalytic module (eCM) but not the core catalytic module (CM), indicating the Spp1 subunit mediates this negative crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by methylation assay data in Figure 5B-C. The differential activity between eCM and CM (C64, C65) provides strong evidence that Spp1 mediates the inhibition. The conclusion of cis-crosstalk with acetylation (C66) is well-supported, though trans-crosstalk with methylation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Sumoylated H4 does not inhibit all H3K4 methyltransferases in human cells, as MLL family enzymes lack the Spp1 analog present in SETD1A/B complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are supported by immunoprecipitation data (Figure 6A) and established knowledge about methyltransferase composition. The lack of global H3K4me3 inhibition (C68, C69) is consistent with the absence of Spp1 analogs in MLL enzymes (C72), while SETD1A/B contains CFP1 (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C95"
+    ],
+    "result": "ChIP-seq analysis reveals an inverse correlation between H4 sumoylation and H3K4me3 at transcription start sites, suggesting specific inhibition of SETD1A/B-mediated methylation at active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 and C95 are supported by ChIP-seq data in Figure 6B-C showing FLAG-HA-Su3(\u0394GG)-H4(\u03941-11) is depleted at TSSs where H3K4me3 is enriched. This genomic distribution pattern supports the biochemical crosstalk observed in vitro and is consistent with SETD1A/B targeting to active promoters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Endogenous wild-type H4 in asymmetric mononucleosomes containing sumoylated H4 shows reduced H4K16 acetylation, suggesting a potential trans-nucleosome mechanism of inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 report an interesting observation but C89 is highly speculative. The data (C88) show reduced H4K16ac in endogenous wt H4 within HA-tagged asymmetric nucleosomes, but alternative explanations (e.g., preferential incorporation into already hypoacetylated chromatin regions) are not excluded. Additional experiments are needed to establish a trans-inhibition mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C96"
+    ],
+    "result": "Histone H4 sumoylation plays a key role in gene silencing through negative biochemical crosstalk with active transcription-associated marks including H4 acetylation and H3K4 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C96 represent the main conclusions synthesized from multiple experimental approaches. The combination of in vitro biochemical assays, transcription assays, mass spectrometry, and cellular ChIP-seq data provides strong converging evidence for the role of H4 sumoylation in gene silencing through multiple inhibitory pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work established that histone sumoylation occurs across eukaryotes and has been associated with gene regulation, with H4K12 identified as a major sumoylation site linked to transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 summarize established knowledge from prior literature with appropriate citations. These background claims provide context for the current study and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C25",
+      "C33",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C90",
+      "C93"
+    ],
+    "result": "Prior work established that p300-mediated acetylation and H3K4 methylation by COMPASS/SET1 complexes are necessary for active transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C25, C33, C55-C61, C90, and C93 summarize established knowledge about histone modifications associated with active transcription. These are well-supported by the cited literature and provide the mechanistic framework for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "The mechanism of H4 acetylation inhibition by H4K12su may involve steric occlusion or altered H4 tail orientation, and SUMO may interact with the Spp1 subunit to inhibit COMPASS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82, C85, C87, C91, C92, and C94 are largely speculative about molecular mechanisms. While the speculation is reasonable and informed by the data (e.g., C83, C84, C86 provide relevant context), these mechanistic hypotheses require structural or additional biochemical validation. These represent important future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Free DNA inhibits p300 activity to a similar extent as mononucleosomes, suggesting that additional factors enable robust p300 activity during transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by experimental data in Figure 1\u2014figure supplement 1H. However, C35 is somewhat speculative about the biological implications. This unexpected finding raises interesting questions about p300 regulation but is tangential to the main conclusions about H4K12su.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Prior studies suggested that sumoylated H4 does not directly enable heterochromatin formation but may act by recruiting LSD1 to genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 summarize interpretations from prior work (including the authors' previous study, C62, C18). These are appropriately cited and provide context for the current mechanistic findings, though C81 is speculative about the LSD1 recruitment mechanism.",
+    "result_type": "MINOR"
+  }
+]

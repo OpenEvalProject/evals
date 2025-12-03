@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript establishes the biological context and competing hypotheses for membrane-less nuclear foci formation. Two main models are described: the Polymer Bridging Model (PBM), where proteins form bridges between chromatin loci, and the Liquid Phase Model (LPM), where liquid-liquid phase separation creates droplet-like structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 provide well-established background knowledge supported by appropriate citations. The description of the two competing models (PBM and LPM) is clearly articulated and grounded in prior literature, establishing the scientific context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prior experimental evidence for the LPM in DSB foci exists but is limited by optical resolution, and microscale predictions to discriminate between models were lacking. Previous work by the authors found Rad52 foci behavior consistent with liquid droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 accurately describe the state of the field with appropriate citations. The identification of the gap in microscale predictive models (C28) provides clear motivation for the current work, and the reference to prior experimental findings (C29) is properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C95",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors derive a mean-field description showing that the PBM can be mathematically equivalent to the LPM under fast binding/unbinding conditions, but with a specific constraint linking concentration and diffusion. This constraint relates effective diffusion coefficient to particle density through binding site properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C95, C97, C99, C100 describe a key theoretical contribution. The mathematical derivation appears sound, showing the PBM reduces to the LPM in the mean-field limit with specific constraints (Equation 11). The limitation that this breaks down for slow binding/unbinding is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C62"
+    ],
+    "result": "The authors develop theoretical models for both LPM and PBM using Langevin equations and derive key relationships including the effective diffusion coefficient in the PBM mean-field approximation and predictions for radial displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C62 describe the theoretical framework. The use of Langevin equations and Boltzmann distributions is standard and appropriate. The derivations appear mathematically sound, with proper justification of assumptions (e.g., equilibrium assumption in C50, passive tracer assumption in C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Single-particle tracking experiments of Rad52 in yeast DSB foci show Gaussian displacement distributions consistent with normal diffusion. Both PBM and LPM can produce similar-looking traces and displacement histograms, but Gaussian statistics exclude slow binding/unbinding rates in the PBM while not ruling out fast-rate PBM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 are well-supported by experimental data (Figure 2) and simulations. The observation of Gaussian displacements (C45) is properly documented, and the inference that this excludes slow binding rates (C46) while allowing fast rates (C47) is logically sound and demonstrated through simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C61",
+      "C96"
+    ],
+    "result": "Experimental observations of Rad52 in DSB foci substantially deviate from PBM predictions: particles spend more time inside the focus than predicted by the PBM constraint relating diffusion and concentration. Crowding effects are shown to be negligible, and this deviation favors the liquid droplet hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C60, C61, C96 present a critical test of the models. Figure 2H clearly shows the experimental data point deviates from the PBM prediction line. The crowding control (C61, Figure 2\u2014supplement 1) strengthens the conclusion. This is a key discriminating result between the models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The PBM predicts specific radial displacement patterns that differ from the LPM. When PBM analysis is applied to LPM simulations, it underestimates potential depth and produces spurious positive displacement at the focus surface. This discrepancy can be used to reject the PBM and is more pronounced at high diffusivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe another discriminating test. The theoretical prediction (Equation 13) agrees with PBM simulations (C67, Figure 3C), and the systematic deviation when applied to LPM data (C69, Figure 3D) provides a clear methodological criterion. The parameter dependence (C72, Figure 3E) is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Both LPM and PBM show asymmetric angle distributions between consecutive displacements due to confinement and binding site interactions respectively. However, the asymmetry criterion is deemed unfit to discriminate between models in the context of yeast repair foci due to parameter dependencies and boundary effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 present an analysis of angle distributions. While both models show asymmetry (C75), the conclusion that this metric cannot discriminate between models (C80) is appropriately cautious and supported by the simulations (Figure 3F, Figure 3\u2014supplement 1) showing parameter-dependent behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C101",
+      "C102"
+    ],
+    "result": "The LPM predicts that foci can act as funnels to accelerate target search, with an optimal focus size that minimizes search time. In contrast, the PBM shows negligible improvement in search time unless binding sites diffuse rapidly, and lacks a clear optimal size for slowly diffusing binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C81-C102 describe theoretical predictions for target search times. The derivation (Equation 14-15) is mathematically sound and validated by simulations (C85, Figure 4B). The distinction between LPM and PBM behavior (C91, Figure 4D) provides another discriminating feature, though experimental validation is acknowledged as challenging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The authors conclude that the multiple binding site model (PBM) for Rad52 foci can be rejected, and the data are consistent with liquid-liquid phase separation (LPM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 represent the main conclusion. This is well-supported by multiple lines of evidence: the deviation from the PBM concentration-diffusion constraint (C58, C96), the radial displacement analysis, and consistency with prior experimental observations (C29). The conclusion is appropriately stated as 'consistent with' rather than 'proves' the LPM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors speculate about the biological relevance of their findings, suggesting that different foci types (repair vs. gene expression vs. silencing) may exploit different parameter regimes of the LPM and PBM to serve distinct biological functions with different timescales and requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C113 are explicitly speculative (marked as SPECULATION in evidence_type). While these are interesting hypotheses grounded in the theoretical framework, they lack direct experimental support. The speculation is appropriately qualified and serves to contextualize the findings, but cannot be evaluated as supported without additional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C118",
+      "C119"
+    ],
+    "result": "The manuscript describes methodological details including the partial absorption property of binding sites in the PBM model and the data analysis methods for extracting diffusion coefficients and free energy differences from experimental traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C118, C119 describe methodological details. These are clearly stated and reference appropriate prior work (C119 cites Min\u00e9-Hattab et al., 2021 for detailed methods). The methods appear standard and appropriate for the analysis.",
+    "result_type": "MINOR"
+  }
+]

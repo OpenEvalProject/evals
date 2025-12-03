@@ -1,0 +1,1771 @@
+{
+  "submission": {
+    "id": "3ae963a5-4021-45d8-872f-52937d8d1cc2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:02:58.910581Z",
+    "updated_at": "2025-12-03T20:02:58.910581Z"
+  },
+  "content": [
+    {
+      "id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "submission_id": "3ae963a5-4021-45d8-872f-52937d8d1cc2",
+      "content_type": "manuscript",
+      "content_text": "# Evidence for RNA or protein transport from somatic tissues to the male reproductive tract in mouse\n\n## Authors\n\n- Vera Rinaldi<sup>1</sup>\n- Kathleen Messemer<sup>2</sup>\n- Kathleen Desevin<sup>1</sup>\n- Fengyun Sun<sup>1</sup>\n- Bethany C Berry<sup>1</sup>\n- Shweta Kukreja<sup>1</sup>\n- Andrew R Tapper<sup>4</sup>\n- Amy J Wagers<sup>2</sup> ([ORCID: 0000-0002-0066-0485](https://orcid.org/0000-0002-0066-0485))\n- Oliver J Rando<sup>1</sup> ([ORCID: 0000-0003-1516-9397](https://orcid.org/0000-0003-1516-9397)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n2. Section on Islet Cell and Regenerative Biology, Joslin Diabetes Center Boston United States ([ROR:0280a3n32](https://ror.org/0280a3n32))\n3. Department of Stem Cell and Regenerative Biology, Harvard University and Harvard Stem Cell Institute Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n4. Department of Neurobiology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n5. Brudnick Neuropsychiatric Research Institute, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n6. Paul F. Glenn Center for the Biology of Aging, Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe development of tools to manipulate the mouse genome, including knockout and transgenic technology, has revolutionized our ability to explore gene function in mammals. Moreover, for genes that are expressed in multiple tissues or at multiple stages of development, the use of tissue-specific expression of the Cre recombinase allows gene function to be perturbed in specific cell types and/or at specific times. However, it is well known that putative tissue-specific promoters often drive unanticipated \u2018off-target\u2019 expression. In our efforts to explore the biology of the male reproductive tract, we unexpectedly found that expression of Cre in the central nervous system resulted in recombination in the epididymis, a tissue where sperm mature for ~1\u20132 weeks following the completion of testicular development. Remarkably, we not only observed reporter expression in the epididymis when Cre expression was driven from neuron-specific transgenes, but also when Cre expression in the brain was induced from an AAV vector carrying a Cre expression construct. A surprisingly wide range of Cre drivers \u2013 including six different neuronal promoters as well as the adipose-specific Adipoq Cre promoter \u2013 exhibited off-target recombination in the epididymis, with a subset of drivers also exhibiting unexpected activity in other tissues such as the reproductive accessory glands. Using a combination of parabiosis and serum transfer experiments, we find evidence supporting the hypothesis that Cre may be trafficked from its cell of origin to the epididymis through the circulatory system. Together, our findings should motivate caution when interpreting conditional alleles, and suggest the exciting possibility of inter-tissue RNA or protein trafficking in modulation of reproductive biology.\n\n## Introduction\n\nThe transition from unicellular life to multicellular life allowed organisms to delegate tasks to cells which could then specialize rather than being required to carry out all the functions of the organism. The disparate functions of different cell types are coordinated by a wide array of mechanisms, including direct cell-cell contacts within a tissue, shared access to nutrient pools, and both local (paracrine) and longer-range trafficking of small molecule and peptide signals. These signals often carry information about global organismal states such as hunger/satiety (insulin, leptin, etc.), reproductive status (testosterone, estrogen, etc.), stress (cortisol, adrenaline, etc.), and a multitude of other relatively blunt summaries of organismal status.\n\nIn addition to such coarse-grained signals of organismal physiology, it is increasingly understood that more detailed molecular signals can be communicated between distant tissues. This is particularly clear in the well-documented cases of systemic RNA trafficking seen in worms and plants. For instance, in Caenorhabditis elegans, introduction of double stranded RNA either by injection or by feeding with dsRNA-expressing bacteria leads to organism-wide silencing of homologous genes (Fire et al., 1998; Timmons and Fire, 1998), demonstrating that RNAs can traffic from the gut or hypodermis throughout the body, with sequence-specific regulatory consequences in the recipient tissue. Moreover, expression of RNAi triggers in neurons has been shown to silence target genes in the germline (Devanapally et al., 2015), again demonstrating trafficking of relatively precise RNA signals between tissues. Systemic RNA trafficking is also well described in plants, as various means of introducing dsRNA into aerial tissues can drive sequence-specific silencing in roots (Palauqui et al., 1997; Voinnet et al., 1998). These examples of systemic RNA trafficking highlight the potential for more precise molecular signaling between tissues than achievable via the relatively blunt information content available with hormonal signals.\n\nIn mammals, many studies have reported RNA or protein trafficking between different cell types within the same tissue (van Niel et al., 2018), or between distant tissues (Thomou et al., 2017; Poggio et al., 2019). Although this is well documented for several somatic tissues, in the unique case of the germline there are only sporadic reports of RNA trafficking from distant tissues to germ cells themselves (Cossetti et al., 2014; O\u2019Brien et al., 2020; Conine and Rando, 2022). That said, it is worth noting that gametogenesis is supported by a wide variety of somatic cells and accessory tissues, and these could serve as intermediaries between distal tissues and developing gametes. These reproductive support cells/tissues include testicular cell populations such as the Sertoli cells that act as the spermatogonial stem cell niche and broadly support testicular spermatogenesis, as well as other tissues such as the epididymis, seminal vesicle, and prostate that contribute to sperm maturation and delivery to the female reproductive tract. Given the key roles of these tissues in sperm development and maturation, we were motivated to explore the potential for inter-tissue signaling to play a role in modulating reproductive tract physiology.\n\nHere, we leverage the exquisite sensitivity of Cre-dependent recombination to identify inter-tissue communication pathways in the adult mouse, focusing on the male reproductive tract. We find that expression of Cre in multiple distant tissues, most notably including the central nervous system (CNS), results in expression of a Cre-dependent reporter gene in the epididymis. Reporter activity is observed following Cre expression in the CNS induced via adeno-associated viral (AAV) transduction, as well as in animals carrying Cre under the control of a variety of tissue-specific promoters. Parabiosis (in which two animals share a conjoined circulatory system) and serum transfer studies suggest that this \u2018off-target\u2019 reporter activity likely results from Cre trafficking from distant tissues to the epididymis via the circulatory system. Together, our findings highlight the epididymis as a surprisingly common site for unanticipated off-target effects in conditional knockout studies, and establish a novel model for inter-tissue communication in mammals.\n\n## Results\n\nThroughout this study, we utilize the Ai14D reporter mouse strain (Madisen et al., 2010; Kauffman et al., 2018) to assay Cre activity throughout the body (Figure 1A). This reporter carries a transgene at the \u2018safe harbor\u2019 Rosa26 locus, with a ubiquitously expressed CAG promoter driving expression of a transgene with a 3\u00d7 STOP cassette flanked by two LoxP sites, followed by a fluorescent reporter gene encoding tdTomato. Cre recombinase excises the STOP cassette, resulting in robust tdTomato (hereafter, Tomato) expression in Cre-expressing cells. For the majority of the experiments described below, Tomato expression is assayed in tissues cleared using a modified CLARITY (Chung and Deisseroth, 2013; Cronan et al., 2015) protocol, and visualized using lightsheet microscopy to survey entire tissues. Figure 1B shows a typical negative control image of an epididymis taken from an Ai14D animal lacking any Cre expression. The larger panel includes the caput, corpus, and cauda epididymis along with a large section of the vas deferens, while smaller inset images show representative cross sections of the indicated regions of the epididymis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the Cre-dependent reporter present in the Ai14D strain. Reporter cassette, inserted at the safe harbor Rosa26 locus, carries a strong pCAG promoter followed by a LoxP-flanked STOP cassette with three repeated in frame sequences. In the absence of Cre activity, transcription through this construct leads to transcriptional termination and no reporter activity. Following Cre-dependent excision of the LoxP cassette, the pCAG promoter is juxtaposed adjacent to a sequence encoding a tandem Tomato (tdTomato) fluorescent protein, resulting in robust expression of Tomato in tissues expressing Cre. (B) Lightsheet imaging of the mouse epididymis in the negative control Ai14D background. Following animal sacrifice, tissues were cleared for imaging according to a modified CLARITY protocol (Materials and methods). The entire epididymis, along with a large section of the vas deferens, was then imaged using the LaVision Biotec lightsheet microscope. Regions corresponding to the proximal (caput), middle (corpus), and distal (cauda) epididymis, and the vas deferens, are indicated on the image of the entire tissue sample. Insets show representative 2D slices of the indicated anatomical regions. (C) Positive control showing robust Tomato expression driven by the caput-specific Defb41 Cre driver (Bj\u00f6rkgren et al., 2012). Panels show whole tissue image and representative sections as described in panel (B), along with representative sections of the kidney and liver, as indicated. See also Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** DAPI-stained histological section of the caput and corpus epididymis from an Ai14D; Defb41Cre animal, showing expected tdTomato expression specifically in the principal cells of caput epididymis. Top panel shows the entire caput and corpus, bottom panel shows a zoom-in from the distal caput.\n\nAs a positive control, we crossed the Ai14D animal to a mouse strain bearing the epididymis-specific Defb41 iCre driver (Bj\u00f6rkgren et al., 2012). Figure 1C shows Tomato expression throughout the epididymis of these double transgenic animals. Consistent with the distribution of Defb41 mRNA expression observed in surveys of epididymal gene expression (Johnston et al., 2005; Rinaldi et al., 2020), we find that Defb41iCre drives reporter expression in a highly localized manner in the proximal (caput) epididymis. This segment-delimited expression is readily apparent in images of the whole epididymis, while cross sections show that Tomato expression is confined to the principal cells (but not basal or other interstitial cells) of the epididymal epithelium (Figure 1C, Figure 1\u2014figure supplement 1). Tomato expression is notably absent from the sperm-filled lumen. Together, these images provide representative positive and negative controls illustrating the utility of the Ai14D strain as a sensitive and specific reporter for Cre activity.\n\n### Neuronal Cre expression results in reporter activity in the cauda epididymis\n\nMotivated by observations in C. elegans that double-stranded RNA expression in neurons can result in siRNA activity in the germline (Devanapally et al., 2015), we set out to explore the potential for neuronal Cre expression in mice to drive cell non-autonomous Cre activity elsewhere in the body. In two series of experiments, Cre expression was induced in the mouse brain via stereotaxic delivery of AAV constructs engineered to drive Cre expression in transduced cells (Figure 2A). In an initial series of experiments, we utilized an AAV2-retro-Ef1a-Cre construct introduced into the prefrontal cortex (Figure 2\u2014figure supplement 1), while follow-up studies targeted the lateral somatosensory cortex, caudate putamen, and nucleus accumbens using an AAV9-pCMV-Cre construct (Figure 2B). Remarkably, examination of the epididymis in both cases revealed robust Tomato expression in the cauda (distal) epididymis and in the vas deferens (Figure 2C). Tomato expression was reproducibly observed in all epididymis samples isolated from ten AAV-transduced animals, including three animals injected in the prefrontal cortex (Figure 2\u2014figure supplement 1) as well as seven animals injected in the lateral somatosensory cortex, caudate putamen, and nucleus accumbens (Figure 2C, Figure 2\u2014figure supplement 2). As in the case of the Defb41iCre driver, closer examination of our imaging data showed that Tomato expression was confined to the epididymal epithelium (inset, Figure 2C, Figure 2\u2014figure supplement 2), with no detectable expression in the sperm filling the epididymal lumen (see below).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig2-v2.jpg)\n\n**Figure 2.:** (A) Experimental schematic showing stereotactically guided injection of AAV into the brain of Ai14D reporter animals to drive localized Cre-Lox recombination in the brain. Fifteen or 25 days post injection (depending on the experiment), mice were sacrificed and subject to tissue clearing and analysis by lightsheet microscopy. (B) Tomato reporter activity in the brain of typical AAV-injected animal. Panel shows maximum intensity projection for the entire mouse brain, viewed from above. (C) Images of the epididymis, as in Figure 1B\u2013C. Right panels show two distinct 2D slices of the cauda epididymis, highlighting the Tomato-positive rim surrounding the Tomato-negative lumen. See also Figure 2\u2014figure supplements 1\u20132.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) AAV injection scheme. As in Figure 2, but with rAAV2-retro-Eif1a-Cre injections into the prefrontal cortex. (B) Lightsheet images of the entire epididymis from two animals injected with rAAV2-retro-Eif1a-Cre in the prefrontal cortex. (C) Individual 2D cross sections from the cauda epididymis from the samples shown in panel (B).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Microscopy images of the cauda epididymis from animals mock-injected with saline, as indicated in the accompanying schematic. (B) As in panel (A), but for animals injected with AAV9-CMV-Cre in the lateral somatosensory cortex, caudate putamen, and nucleus accumbens (see also Figure 2).\n\n### Neuronal Cre expression driven from transgenes also induces recombination in the epididymis\n\nAn exciting potential explanation for the ability of neuronal Cre expression to drive recombination in the epididymis would be that Cre RNA or protein synthesized in neurons is somehow trafficked to the male reproductive tract. However, the use of viral transduction to induce Cre expression leaves open the possibility that viral particles entering the circulation could plausibly exhibit unanticipated tropism for the epididymis.\n\nWe therefore turned to an orthogonal method for driving Cre expression in neuronal subpopulations by crossing Ai14D mice to various driver lines expressing Cre under the control of cell type-specific promoters (Figure 3A). We illustrate this approach using Slc32a1Cre mice that express Cre under the control of the vesicular GABA transporter (Slc32a1, or Vgat) promoter, which drives Cre expression in inhibitory GABAergic neurons in the CNS. Consistent with expectations, we observed widespread Tomato expression in the brain of double transgenic animals, with no detectable expression in the liver, kidney, intestine, or testis (Figure 3B). Remarkably, similar to the reporter expression observed following viral induction of neuronal Cre expression (Figure 2), Cre expression from the Slc32a1 transgene also resulted in robust epididymal Tomato expression in Ai14D; Slc32a1Cre double transgenic animals (Figure 3C). Closer inspection of double transgenic epididymis by microscopy revealed Tomato expression exclusively in the principal cells of the epididymal epithelium (Figure 3D), and we further confirmed the presence of Tomato-positive principal cells by FACS (Figure 3\u2014figure supplement 1). Intriguingly, we observed patchy Tomato expression in any given histological cross section, suggesting either that a subset of principal cells are capable of receiving Cre shipments, or that Cre transfer is extremely inefficient and only a subset of cells are stochastically labeled.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic showing the cross that generated the double transgenic analyzed here, generated via crossing the Ai14D reporter with a strain bearing the Slc32a1Cre transgene (Materials and methods). (B) Lightsheet images of the indicated tissues in Ai14D; Slc32a1Cre double transgenic animals. (C) Lightsheet images of the epididymis in Ai14D; Slc32a1Cre double transgenic animals. (D) Two representative histology sections from Ai14D; Slc32a1Cre cauda epididymis and vas deferens, counterstained with DAPI, clearly showing Tomato-positive principal cells in the epithelium. See also Figure 3\u2014figure supplement 1. (E) Recombination at the reporter locus in Ai14D; Slc32a1Cre tissues. Top: Schematic shows location of primers used on the PCR, with expected sizes following recombination of 248 bp (Rec7) and 332 bp (Rec11). Bottom: Each gel shows six tissues from a negative control Ai14D animal (no exposure to Cre), along with six tissues from the Ai14D; Slc32a1Cre double transgenic. POS: positive control tissue (liver from an Ai14D; AlbCre transgenic). Red arrow indicates the band arising from the recombined locus, with clear recombination observed in the brain, as well as all epididymal samples, in Ai14D;Slc32a1Cre animals.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Bar charts show % Tomato-positive cells obtained from the indicated tissue samples, in negative control Ai14D animals (gray bars) or two double transgenic animals (red bars), as indicated. Both Slc32a1Cre and NesCre drove an increase in Tomato-positive cell numbers in the epididymis, consistent with our lightsheet, histology, and genotyping studies. To confirm the identity of Tomato-positive cells, we obtained ~10,000 Tomato-positive cells by FACS from several double transgenic animals, and carried out RNA-Seq, confirming the high level expression of principal cell markers expected from our histological studies in Figure 3D (Supplementary file 2).\n\nFinally, we sought to determine whether Cre expression in reporter animals resulted in epididymal Tomato signal as a result of Cre itself being shipped from neurons to the epididymis, vs. Cre-induced Tomato produced in neurons being shipped to the epididymis. We therefore assayed recombination at the LoxP-STOP cassette in the epididymis, finding recombination at the reporter locus in genomic DNA isolated from the epididymis (Figure 3E). These findings strongly support the hypothesis that Cre activity (RNA or protein) is the relevant molecular signal trafficked from the CNS to the epididymis.\n\nTogether, our findings suggest the possibility that Cre RNA or protein synthesized in the CNS is transported to the male reproductive tract, presumably through the circulation (see below). Importantly, the two experimental schemes used to drive Cre expression in the CNS have distinct and unrelated potential artifacts. In the case of AAV transduction, the injected virus could conceivably enter the circulation and might have an unknown tropism for the epididymis. However, this concern does not apply to the use of transgenic constructs to drive Cre expression. Conversely, it is well known that purportedly tissue-specific Cre drivers are often less cell type-specific than expected (Song and Palmiter, 2018; Stifter and Greter, 2020), and the male reproductive tract \u2013 the testis in particular \u2013 is well known to express an unusually high fraction of the genome. However, this cannot explain our results using viral transduction to drive Cre expression in the CNS. We further test the hypothesis that Cre is trafficked via the circulation to the male reproductive tract below.\n\n### Many-to-many mapping between Cre drivers and recipient tissues\n\nOur findings thus far suggest the intriguing possibility that the epididymis might be a privileged recipient of neuronally derived molecular cargo. To expand our survey of neuronal Cre lines beyond our initial studies using Slc32a1Cre, we crossed the Ai14D line to a number of additional CNS Cre drivers: Fev (serotonergic neurons), Gad2 (GABAergic neurons), Syn1 (pan-neuronal), Nestin (pan-neuronal), Drd1a (dopaminoceptive neurons), ChAT (cholinergic neurons), Dat1 (dopaminergic neurons), and Gfap (glia). We also explored two non-neuronal Cre drivers, crossing the Ai14D animal to Alb (liver) and Adipoq (adipose tissue) Cre lines. We note that the majority of these genes are either undetectable or expressed at extremely low levels (~1 ppm) in the epididymis as assayed either by bulk or single cell RNA-Seq (Rinaldi et al., 2020).\n\nFor each of these double transgenic lines, we surveyed a range of tissues, typically including brain, intestine, liver, lung, kidney, testis, seminal vesicle/prostate, and the epididymis. Images for key examples are documented in Figures 4\u20135 and Figure 4\u2014figure supplements 1\u20134. Overall, we find that the connection between Cre expression in neurons and reporter expression in the epididymis is not a one-to-one mapping, but rather many-to-many: not only do some non-neuronal Cre lines drive reporter expression in the epididymis, but many Cre lines also drive reporter expression in additional tissues such as the intestine or seminal vesicle. Findings of particular interest are detailed below.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic showing the cross that generated the double transgenics analyzed here, as in Figure 3A. (B) Representative lightsheet images of the epididymis from the indicated double transgenic animals. See also Figure 4\u2014figure supplements 1\u20134.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Experimental schematic of mating strategy. (B) Histology of the cauda and corpus epididymis from Ai14D; AlbCre double transgenic animal. Across the entire section we find two isolated Tomato-positive cells in this animal. (C) PCR assay for recombination in the indicated tissues obtained from Ai14D; AlbCre double transgenic animals. A light recombination band is seen in the cauda epididymis, consistent with low level reporter activity in panel (B), while we find no evidence for any other off-target recombination.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Ai14D; Syn1Cre double transgenic sample. Abundant Tomato signal here is clearly localized to the lumen of the epididymal tubule, consistent with Tomato expression in the male reproductive tract and potentially in the sperm, resulting from germline recombination in this animal. (B) Ai14D; NesCre double transgenic sample. Here, histology images shown widespread principal cell Tomato expression, similar to that observed in double transgenic Ai14D; Slc32a1Cre animals (Figure 3D), but with positive cells being found throughout all regions of the epididymis (in contrast to the cauda and vas deferens-enriched recombination in the Slc32a1Cre animals).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Lightsheet images of the indicated tissues showing Tomato expression in the various Ai14D; Cre double transgenic lines, as indicated.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Lightsheet images of the accessory glands are shown to the left, along with three representative sections in the right panels, for the two indicated Cre driver lines.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic, as in Figures 3A and 4A. (B) Histology from Ai14D; AdipoqCre animals, showing Tomato expression scattered throughout the epididymis epithelium. (C) PCR analysis of indicated tissues of Ai14D; AdipoqCre animals, revealing robust recombination in the epididymis. POS: positive control tissue. Red arrow indicates the band arising from the recombined locus. See also Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic showing the genomic structure of the LoxP-flanked region of Dicer1. Primers used in (B) to assess recombination are indicated on the predicted recombination product. (B) Genotyping PCR for recombination in the indicated tissues obtained from AdipoqCre; Dicer1flx/flx double transgenic animals. Notable here is the expected recombination product in adipose tissue and no recombination in the tail tip negative control. Among reproductive tissues, we find robust recombination at this locus specifically in the cauda epididymis (and to a lesser extent in the vas deferens). To further confirm the identity of the recombination product we gel-purified this band and sequenced the resulting DNA, confirming that this product corresponds to the recombination product shown in (A).\n\nMost notably, we find that a wide range of neuronal Cre lines drive Tomato expression in the epididymis. Focusing first on the putative \u2018pan-neuronal\u2019 Cre lines, driven by the Synapsin or Nestin promoters, we found extensive Tomato staining throughout the epididymis in both double transgenic lines (Figure 4\u2014figure supplement 2). However, we noted that Tomato expression in the SynCre animals was not limited to the epididymal epithelium and instead filled the epididymis lumen (Figure 4\u2014figure supplement 2A), suggestive of Tomato-positive sperm. Indeed, offspring of the Ai14D; SynCre double transgenics exhibited Tomato expression throughout the body, consistent with prior reports of SynCre driving germline recombination (Luo et al., 2020). Similarly, the Nestin Cre driver has also been reported to drive germline recombination (Betz et al., 1996; McLeod et al., 2020), and we did obtain Tomato-positive offspring of Ai14D; NesCre double transgenics. That said, in contrast to the Ai14D; SynCre animals we found no detectable labeling of sperm in Ai14D; NesCre animals, with Tomato expression in the epididymis largely confined to the epididymal epithelium (Figure 4\u2014figure supplement 2B). This suggests that NesCre-mediated recombination occurs relatively late during spermatogenesis in germ cells, with recombination in the epididymal epithelium occurring independently \u2013 probably induced by the same CNS\u2192epididymis trafficking seen for several other neuronal Cre drivers (Figure 3 and below).\n\nTurning from pan-neuronal promoters to more cell type-specific CNS Cre drivers, we consistently observed Tomato expression in the epididymis when Cre was expressed from Slc32a1, Fev, Gad2, and Drd1a promoters (Figures 3\u20134). For two of these Cre drivers \u2013 Fev and Slc32a1 \u2013 we find that Tomato expression was strongest in the cauda epididymis and vas deferens, similar to our findings obtained using AAV to drive Cre expression in the CNS. In contrast, both Ai14D; Gad2Cre and Ai14D; Drd1aCre double transgenic animals exhibited patchy epithelial staining throughout the epididymis (Figure 4). Intriguingly, off-target epididymal recombination was not unique to neuronal Cre drivers, as we also observed robust Tomato expression and reporter locus recombination in animals carrying the adipose-specific AdipoqCre (Figure 5). In contrast, reporter animals carrying the liver-specific AlbCre transgene exhibited barely detectable Tomato expression in the epididymis with few Tomato-positive cells detected throughout the entire tissue \u2013 at most one or two cells per longitudinal section (Figure 4\u2014figure supplement 1) \u2013 indicating that not all Cre transgenes drive extensive recombination in the epididymis.\n\nThus, although our initial studies suggested a privileged molecular trafficking pathway from the CNS to the male reproductive tract (Figures 2\u20144), the robust Tomato expression driven by the adipose-specific Adipoq Cre driver (Figure 5) suggested the possibility of additional avenues for unanticipated inter-tissue Cre trafficking. Not only did non-neuronal Cre drivers direct recombination in the epididymis, but multiple neuronal Cre drivers exhibited off-target activities in tissues beyond the epididymis. Most notably, within the male reproductive tract we observed robust Tomato expression in the reproductive accessory glands of the Nes, Fev, and Gad2 lines (Figure 4\u2014figure supplements 3\u20134).\n\n### Off-target recombination in the epididymis is not idiosyncratic to the Ai14D model\n\nOur data demonstrates that a wide range of putatively tissue-specific Cre lines drive recombination in the epididymis of Ai14D animals. Given the extraordinary nature of this finding, we were concerned that our results might reflect some idiosyncracy of the LoxP-flanked Tomato reporter locus in the Ai14D strain. We first explored publicly available annotations for Cre drivers from MGI (Mouse Genome Informatics: https://www.informatics.jax.org, data retrieved repeatedly from ~2018 through October 2022), which includes images from a variety of Cre drivers crossed to a LacZ reporter line. Of the lines that drive recombination in Ai14D in our study, there is also clear evidence for recombination in the epididymis epithelium for Syn1Cre, along with \u2018ambiguous\u2019 expression annotated for NesCre and Gad2Cre. However, closer examination of the image provided for NesCre also revealed clear evidence for reporter expression in the epididymis epithelium; no image was available for Gad2Cre. These reporter assays thus are consistent with our findings using the Ai14D reporter animal. Conversely, Adipoq, Slc32a1, Drd1, and Fev were all annotated as \u2018absent\u2019 in the epididymis epithelium (at postnatal days 7 and 56). However, given that epididymal activity was annotated as \u2018ambiguous\u2019 for NesCre despite clear microscopic evidence for reporter expression, we were concerned about false negative annotations for these other Cre drivers, for which either no images were available for scrutiny, or the available image was limited to a very narrow region of the epididymis. Nonetheless, the lack of annotated recombination in this dataset, for Cre drivers which exhibit robust activity in our system, suggested the possibility that some reporter loci could be relatively resistant to Cre activity \u2013 by virtue of the target locus being packaged in relatively inaccessible chromatin in the epididymis, for instance \u2013 compared to the Tomato reporter locus present in the Ai14D animal.\n\nTo extend our findings to other target loci, we therefore obtained double transgenic animals carrying the Adipoq Cre driver along with a conditional allele of Dicer1 with LoxP sites flanking exons 21 and 22 (Figure 5\u2014figure supplement 1A). PCR genotyping confirmed the expected robust recombination in adipose tissue, while tail tip DNA was used as a negative control (Figure 5\u2014figure supplement 1B). Using this assay, we document recombination of this locus specifically in the cauda epididymis, but not in the testis or other parts of the epididymis (Figure 5\u2014figure supplement 1B). These data thus extend our results to a second target locus, demonstrating that off-target recombination in the epididymis is not unique to the Ai14D reporter.\n\n### Cre activity likely traffics through the circulation to target the epididymis\n\nTogether, our findings reveal that the epididymis is a surprisingly common target of a variety of Cre drivers that are not generally thought to be expressed in the male reproductive tract. While the observations made using double transgenic lines could result from leaky expression of the promoters in question \u2013 whether in adulthood or during early development of the epididymis \u2013 this hypothesis would not explain the results observed following AAV-mediated Cre expression in the brain (Figure 2). Nonetheless, we sought to definitively test the hypothesis that Cre activity, whether protein or RNA, synthesized in distant tissues can make its way to the male reproductive tract through the circulation.\n\nAs an initial test of this hypothesis, we generated parabiotic animal pairs (Gibney et al., 2012), in which two animals are surgically joined (hereafter represented as animal1::animal2) to establish a conjoined circulatory system (Figure 6A, Figure 6\u2014figure supplement 1A\u2013C). Here, parabioses were established between a Cre driver line (focusing on the Slc32a1 and Nestin Cre lines) and an Ai14D reporter animal. Eight to nine weeks after establishing the parabiosis, we sacrificed the animal pairs and harvested tissues for analysis. We detected moderate Tomato expression in the epididymis of the Ai14D recipient animal in a parabiotic Ai14D:: Slc32a1Cre pair (Figure 6B, Figure 6\u2014figure supplement 1B), along with a faint band supporting recombination at the reporter locus in one recipient (Figure 6C). However, in two other Ai14D animals we found no evidence for recombination by PCR (Figure 6\u2014figure supplement 1C), motivating more extensive characterization of the potential for Cre transfer through the circulation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig6-v2.jpg)\n\n**Figure 6.:** (A) Experimental schematic. Parabiosis surgery was used to link the circulatory systems of an Ai14D reporter animal and that of a Slc32a1Cre or NesCre animal. After 8\u20139 weeks together, animals were sacrificed and tissues from both animals were obtained for analysis. (B) Histology from the indicated sides (highlighted in red) of two Ai14D::Cre parabiotic pairs. We observe Tomato expression specifically on the reporter side, but not the Cre side, of Ai14D::Slc32a1Cre animals. (C) Genotyping PCR from the Ai14D side, and the Cre side, of the indicated parabiotic pairs, with faint recombination detected in the cauda epididymis of Ai14D::Slc32a1Cre animals. (D) Schematic showing serum/exosome transfer experiments. Note that these experiments were carried out with a wide range of injection schedules (Materials and methods), using both whole serum transfers and TFF-enriched exosome transfers for recipient animals. (E) Lightsheet images of Ai14D recipient following transfer of serum and exosomes from AlbCre donors (left panels), or from Slc32a1Cre donors (right panels). (F) Genotyping PCR from cauda epididymis samples obtained from Ai14D animals receiving serum or TFFs from various Cre donor lines. Red arrow indicates the band diagnostic of a recombined locus.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Parabiosis schematic. (B) Histology images of the cauda epididymis from the Ai14D recipient animal after 8 weeks in a parabiosis with a Slc32a1Cre donor. Zoom-in images show Tomato-positive epithelial cells in cauda epididymis. (C) Genotyping PCR for the indicated samples. The first three samples were gathered from the indicated double transgenic. For the two parabiotic animal pairs here, samples from the Ai14D recipient and the Cre donor were each assayed. (D) Serum/exosome transfer schematic. (E) Lightsheet images from eight serum/exosome recipients, with the Cre driver used as the serum/exosome donor indicated for each sample. Tomato-positive and -negative samples are organized separately. Note that one recipient received exosomes from both Gad2Cre donor and Drd1Cre donors on different injection days. (F) Genotyping PCR for recombination in the indicated serum/exosome recipients. Most recipients were negative for recombination, with strong recombination in one recipient of AdipoqCre exosomes, and very weak recombination observed in one recipient of NesCre serum and exosomes.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77733/elife-77733-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** RT-PCR using Cre-specific primers. Samples include water controls, and RNA from either serum or exosomes (indicated in black and red, respectively) isolated from the indicated Cre lines.\n\nGiven the technical and logistical challenges involved in generating large numbers of parabiotic animal pairs, we attempted to transfer any potential circulating Cre activity by injecting serum or circulating exosomes/extracellular vesicles (EVs) (enriched via tangential flow filtration [TFF] Heinemann et al., 2014), from various Cre lines into Ai14D reporter animals (Figure 6D). In an initial experiment, we obtained serum from a Slc32a1Cre animal and transferred it into the tail vein of an Ai14D male. This procedure was repeated every other day, for a total of three transfers over 5 days. As shown in Figure 6E\u2013F, this resulted in epididymal LoxP recombination and Tomato expression in animals receiving Slc32a1Cre serum, while recipients of serum from FVB or AlbCre animals did not express Tomato or exhibit recombination at the reporter locus.\n\nFollow-up studies were, unfortunately, somewhat ambiguous (Figure 6\u2014figure supplement 1D\u2013F). We initially set out to leverage the serum transfer approach to fractionate serum and identify the circulating material responsible for driving recombination in recipient animals. We found no Tomato expression in an Ai14D male that had received TFF-enriched exosomes from nine Slc32a1Cre animals spread across 3 injection days (Figure 6\u2014figure supplement 1E, top right panel). Across many subsequent experiments, we used a range of donor animals carrying various Cre drivers and varied our injection scheme to focus on whole serum, concentrated exosomes, or combinations of the two. Ultimately, across over 20 recipient animals we documented clear evidence for recombination in six animals, with positive results in recipients of Slc32a1Cre serum, Slc32a1Cre serum and exosomes, Gad2Cre serum and exosomes, a mixture of Gad2Cre and Drd1Cre serum and exosomes, NesCre serum and exosomes, and AdipoqCre serum and exosomes (Figure 6\u2014figure supplement 1E\u2013F). However, similar or nearly identical injection schemes often resulted in no detectable Tomato expression or recombination. Although we attempted to account for variables ranging from the recipient animal\u2019s age, to injection time during the day, we have not been able to identify variables that reliably distinguish injection schema that lead to recombination from those that fail.\n\nTaken together, our data support the hypothesis that off-target Cre activity in the epididymis is likely mediated by Cre trafficking through the circulation, although the difficulty in reliably replicating this transfer impedes further mechanistic follow-up.\n\n## Discussion\n\nOur observations reveal the epididymis as a surprisingly common \u2018off-target\u2019 tissue for a variety of Cre drivers that are not believed to be expressed in the male reproductive tract. We find a many-to-many mapping, with \u2018sender\u2019 tissues including multiple neuronal subpopulations along with adipose tissue, and recipient tissues including the epididymis, seminal vesicle, prostate, and intestine. Importantly, different Cre lines drive recombination in different sets of tissues, arguing against the possibility that a generic \u2018sink\u2019 tissue nonspecifically receives any RNAs or proteins present in the circulation.\n\nThese findings are most generally of interest to the mouse genetics community. It has long been clear that transgenes carrying Cre under the control of a putatively cell type-specific promoter are often expressed in unexpected tissues (Song and Palmiter, 2018; Stifter and Greter, 2020), and here for example our data confirm prior reports of germline activity of NesCre and Syn1Cre drivers (Luo et al., 2020; Betz et al., 1996; McLeod et al., 2020). Our findings also identify many new examples of off-target Cre activity for a variety of Cre lines, many of which may have been missed before given the relatively small size of the scientific community focused on the epididymis. In this context our data simply further emphasize the importance of characterizing recombination in conditional knockout studies, as recombination in unanticipated tissues has the potential to confound interpretations of tissue-specific functions of genes of interest. Given the common off-target recombination in the epididymis, seminal vesicle and prostate documented here, this is most obviously true for any studies focused on male reproductive biology, but as we also find unexpected Cre activity in intestine driven by neuronal Cre drivers we emphasize more general caution when using Cre-Lox genetics in mouse.\n\nThe impact of these off-target effects will of course depend on the nature of the conditional allele used in a given study. It is worth noting that even in the cases of double transgenics exhibiting robust recombination in the epididymis (Slc32a1, Adipoq, etc. \u2013 Figures 3\u20145), we find fairly patchy recombination in the epididymal epithelium. This mosaic recombination behavior has different implications for conditional knockouts, where a large number of epididymis (or seminal vesicle, etc.) cells will escape deletion, vs. gain of function studies where even patchy Cre-dependent induction of gene expression (such as the tdTomato reporter used here) in the target tissue has the potential to exhibit artifactual gain of function.\n\n### What is the mechanistic basis for off-target activity of neuronal Cre drivers?\n\nThe fact that putatively tissue-specific Cre drivers can often drive recombination in unanticipated tissues has long been known. This is commonly thought to reflect \u2018leaky\u2019 expression of a given Cre transgene, potentially owing to the removal of a given promoter from its genomic context (and thus from long-range regulatory elements) in many Cre drivers. In addition, while many promoters chosen as cell type-specific Cre drivers are highly expressed in the cell type of interest, they are often also expressed at lower levels in other cell types throughout the body where the Cre transgene therefore has the potential to drive recombination.\n\nThat said, our data showing off-target Cre activity in the epididymis are unlikely to result from leaky expression of the Cre drivers studied here, for multiple reasons. First of all, we find a wide range of Cre transgenes drive recombination in the epididymis, and most of the neuron-specific genes in question are not detectably expressed in the adult epididymis (Johnston et al., 2005; Rinaldi et al., 2020). It remains plausible that these genes could be expressed in the epididymis only during early development, before becoming undetectable in the adult epididymis. However, our observation that induction of Cre expression in the brain via AAV-mediated transduction leads to reporter activity in the epididymis epithelium (Figure 2, Figure 2\u2014figure supplements 1\u20132) cannot be explained by leaky transgene expression. Conversely, the possibility that unanticipated tropism of the AAV constructs used here might result in viral transduction of the epididymis would not explain any of the results obtained using double transgenics (Figures 3\u20145). Together, these findings strongly suggest that Cre activity synthesized in neurons is transported to the epididymis.\n\nThe delivery of Cre from neurons to the epididymis could occur via a number of routes, including release of Cre-containing vesicles by peripheral neurons that innervate the cauda epididymis. We consider this to be unlikely for several reasons. First, we show that adipose-specific Cre expression reliably drives recombination in the epididymis (Figure 5), arguing against Cre transfer requiring neuronal termini. Second, induction of Cre expression specifically in one hemisphere of the brain via stereotactic AAV injections was shown to lead to Tomato expression in both the ipsilateral and contralateral epididymis (Figure 2), arguing against short-range neuronal delivery (not to mention the challenges in considering how Cre might move from the CNS to peripheral nerves).\n\nIndeed, our follow-up studies using parabioses and serum transfers support the hypothesis that Cre activity synthesized in a variety of tissues can access the circulation and subsequently be trafficked to the male reproductive tract. Although these efforts to transfer Cre activity from a Cre-expressing animal to a reporter animal were inefficient, the fact that recombination was ever observed in these studies is best explained by the trafficking hypothesis. We speculate that the circulating Cre activity consists of Cre mRNA, rather than protein, and we anticipate that the RNA is present either in exosomes or in ribonucleoprotein complexes protected from serum nucleases. Indeed, we can document Cre mRNA by PCR in the circulation of multiple Cre lines (Figure 6\u2014figure supplement 2), and there is abundant precedent for RNA transmission between different tissues. We cannot presently determine whether the transferred Cre activity is contained in exosomes, microvesicles, ribonucleoprotein complexes, or other forms. Again, precedent argues for exosomes as the carriers of inter-tissue molecular information (Valadi et al., 2007), but given the inefficiency of Cre transfer in serum and exosome injections (Figure 6, Figure 6\u2014figure supplement 1), a detailed fractionation effort would require an inordinate number of animals to be used, and must be reserved for future studies.\n\n### Potential biological implications\n\nDiscovery of a pathway by which neurons (and some other tissues) potentially traffic RNAs (or proteins) to the male reproductive tract would have exciting implications. Most intriguingly, we speculate that environmental conditions experienced by a male could be interpreted by the CNS, with salient features of the environment then communicated to the male reproductive tract via this trafficking system. Given the emerging role for the epididymis in remodeling multiple aspects of maturing sperm (Gervasi and Visconti, 2017; Tamessar et al., 2021; Zhou et al., 2018), an appealing hypothesis would be that receipt of CNS-derived information \u2013 whether RNAs (mRNAs, lincRNAs, sncRNAs, etc.), proteins, etc. \u2013 could then influence epididymal physiology and thus alter the post-testicular maturation of germ cells in the male reproductive tract.\n\nInterestingly, at least two prior studies in the paternal effects literature have suggested the possibility that circulating information may play a role in reprogramming the sperm epigenome. First, in their studies of intergenerational effects of carbon tetrachloride, Zeybel et al. reported that repeated serum transfers from CCl4-treated animals to a recipient were sufficient to reproduce H3K27me3 changes in the sperm of the recipient animal (Zeybel et al., 2012). More recently, Mansuy and colleagues reported that transferring serum from males subject to early life stress to a recipient male was sufficient to drive altered glucose responses in the F1 offspring of the recipient animal (van Steenwyk et al., 2020), again suggesting that circulating factors may play a role in reprogramming the sperm epigenome. Although neither of these studies implicated circulating RNAs in modulating sperm biology \u2013 Zeybel et al. did not speculate about the nature of the soluble factor(s), while van Steenwyk et al. focused on lipids with the potential to activate various nuclear hormone receptors \u2013 they highlight the potential for circulating factors to mediate communication between distant tissues and the germline.\n\nThis possibility of inter-tissue RNA shipments between distant tissues and the germline is particularly intriguing considering the role of systemic RNA trafficking in worms and plants. Most relevant to our study, small RNAs produced in C. elegans neurons have been documented to silence genes in the germline and induce transgenerational silencing (Devanapally et al., 2015). Intriguingly, a prior report in mouse suggested that microRNAs expressed in the brain could be delivered to sperm, and subsequently to the next generation (O\u2019Brien et al., 2020). However, with the exception of Syn1 and Nestin (Figure 4\u2014figure supplement 2), we do not find any evidence for neuronal Cre trafficking directly to sperm cells, arguing against the idea that the circulating Cre activity is stably delivered to sperm. Even in the case of Syn1 and Nestin Cre drivers, recombination in the germline likely occurs prior to the last stages of spermatogenesis in the testis \u2013 potentially in spermatogonial stem cells or even earlier in development \u2013 and not during epididymal transit. Our data instead would place the epididymis as a mediator between neuronal information processing and programming of the sperm epigenome, with CNS-derived information potentially driving altered epididymal physiology and consequent remodeling of sperm small RNAs, proteins, or surface lipids.\n\nAn alternative explanation of our findings would be that neuronally derived molecular information does not have any physiological consequences upon uptake by the epididymis. In such a \u2018trash can\u2019 model, the epididymis could simply be unusually receptive to circulating exosomes or RNPs, with the unique sensitivity of Cre-Lox systems revealing the delivery of Cre molecules at abundances that would likely be meaningless for a typical cellular sncRNA, mRNA, or protein. We disfavor this model, in part because different Cre drivers result in recombination in different parts of the epididymis, arguing for some level of specificity between different tissue-derived exosomes (for instance) and target cell populations in the epididymis.\n\nNonetheless, without any evidence for physiological functions for this trafficking system we cannot formally rule out the trash can hypothesis at present; we envision two potential approaches to this question in the future. One possibility would be to subject male mice to some stress paradigm or other exposure, then identify changes in transcription or small RNA production in the epididymis. Subsequently, males could be subject to the exposure in question, with circulating serum/exosomes then isolated and injected into an unexposed recipient. In this scenario, if circulating material is responsible for programming epididymal gene expression, the recipient animal would be expected to exhibit the molecular changes seen in directly exposed animals. While this approach could be very powerful, our experience with serum/exosome transfers has been that exosome transfer results in very inefficient transfer of Cre activity between animals, with exosomes from at least nine donor animals required for patchy and low-penetrance reporter activity (Figure 6, Figure 6\u2014figure supplement 1). This suggests that serum from scores of animals might be required for a single recipient to recapitulate the epididymal changes driven by direct exposures.\n\nAn alternative approach would be to identify the molecular basis for epididymal receptivity to neuronal information. For instance, if the circulating carrier of neuronal information is indeed present in exosomes, tetraspanins or other cell surface molecules are presumably responsible for tissue-specific targeting of exosomes to the epididymis. Identification of the relevant exosome receptor could then be used in knockout studies to prevent receipt of neuronal shipments, and changes in epididymal responses to various organismal stressors in wild type vs. knockout animals could then be used to identify potential effects of neuronal RNA/protein shipments on epididymal physiology.\n\n### Conclusions\n\nHere, we have demonstrated that Cre activity synthesized in neurons and in adipose tissue consistently directs recombination in the epididymis \u2013 with some lines also having other off-target tissues. These findings add to the literature on the dangers of Cre-Lox genetics in conditional knockout studies, identifying additional off-target tissues for a number of Cre drivers. In addition, our data suggest that this poor tissue specificity could be caused in part by mobilization of Cre activity through the circulation, implying a surprising mechanism behind some of these off-target effects. Finally, the possibility that this pathway plays a role in sensing of environmental conditions in modulation of the sperm epigenome represents an exciting hypothesis for future studies in paternal effect epigenetics.\n\n## Materials and methods\n\n### Mouse husbandry\n\nAll animal use was approved by the Institutional Animal Care and Use Committees of UMass Chan Medical School and Harvard Faculty of Arts and Sciences, under protocol PROTO202100029 to Dr Oliver Rando and protocol 29014 awarded to Dr Amy Wagers. Double transgenic AdipoqCre; Dicer1flx/flx animals were a gift from Bruna Brandao and C Ronald Kahn.\n\nThe transgenic mice utilized in this study were maintained by filial mating, giving preference toward homozygous carriers whenever possible. To avoid introduction of genetic confounders the breeding colonies were maintained for up to three generations, after which animals were either backcrossed to their background strain or the colony was culled, and new breeding pairs acquired.\n\nTransgenic animals were typically sacrificed for imaging at 10\u201312 weeks of age, unless otherwise noted. AAV injections were carried out between 8 and 12 weeks of age. For parabiosis experiments, animals underwent surgery to establish conjoined circulation between 21 and 28 days after birth. Finally, for serum/exosome transfer experiments, recipient animals were 10\u201315 weeks, while donors of plasma were typically older than 15 weeks of age as this afforded more material for injections.\n\nBelow is a list with the official names for all the mice strains and the genotype abbreviations used throughout this text, as well as the strain number listed at the Jackson Laboratory.\n\n<table>\n  <thead>\n    <tr>\n      <th>Transgenic allele</th>\n      <th>Expression of</th>\n      <th>Promoter</th>\n      <th>JAX catalog #</th>\n      <th>Genotype abbreviation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J</td>\n      <td>TdTomato upon Cre</td>\n      <td>Chicken Actin Gene</td>\n      <td>007914</td>\n      <td>Ai14D</td>\n    </tr>\n    <tr>\n      <td>Slc32a1tm2(cre)Lowl/JW</td>\n      <td>Cre</td>\n      <td>Vgat \u2013 GABA vesicular transporter</td>\n      <td>028892</td>\n      <td>Slc32a1Cre</td>\n    </tr>\n    <tr>\n      <td>B6.Cg-Tg(Nes-cre)1Kln/J</td>\n      <td>Cre</td>\n      <td>Nestin</td>\n      <td>3771</td>\n      <td>NesCre</td>\n    </tr>\n    <tr>\n      <td>B6N.Cg-Speer6-ps1Tg(Alb-cre)21Mgn/JR</td>\n      <td>Cre</td>\n      <td>Albumin</td>\n      <td>003574</td>\n      <td>AlbCre</td>\n    </tr>\n    <tr>\n      <td>B6.FVB-Tg(Adipoq-cre)1Evdr/J</td>\n      <td>Cre</td>\n      <td>Adiponectin</td>\n      <td>028020</td>\n      <td>AdipoqCre</td>\n    </tr>\n    <tr>\n      <td>B6;129-Tg(Drd1a-cre)120Mxu/MmjaxT</td>\n      <td>Cre</td>\n      <td>Drd1a \u2013 dopamine receptor G-protein</td>\n      <td>037156</td>\n      <td>Drd1Cre</td>\n    </tr>\n    <tr>\n      <td>B6N.Cg-Gad2tm2(cre)Zjh/JT</td>\n      <td>Cre</td>\n      <td>Gad2 \u2013 glutamic acid decarboxylase 2</td>\n      <td>010802</td>\n      <td>Gad2Cre</td>\n    </tr>\n    <tr>\n      <td>B6.Cg-Tg(Fev-cre)1Esd/JT</td>\n      <td>Cre</td>\n      <td>Fev \u2013 ETS oncogene family</td>\n      <td>012712</td>\n      <td>FevCre</td>\n    </tr>\n    <tr>\n      <td>B6.Cg-Tg(Syn1-cre)671Jxm/J</td>\n      <td>Cre</td>\n      <td>Synapsin1</td>\n      <td>003966</td>\n      <td>Syn1Cre</td>\n    </tr>\n    <tr>\n      <td>STOCK Defb41tm1(icre)Psip/R</td>\n      <td>iCre</td>\n      <td>Defb41 \u2013 Defensin beta 41</td>\n      <td>Gift from P Sipila</td>\n      <td>Defb41iCre</td>\n    </tr>\n    <tr>\n      <td>B6.C-Tg(CMV-cre)1Cgn/J</td>\n      <td>Cre</td>\n      <td>CMV</td>\n      <td>006054</td>\n      <td>CMVCre</td>\n    </tr>\n  </tbody>\n</table>\n\nAll genotypes were determined using Transnetyx genotyping services.\n\n### AAV constructs\n\nAn initial set of three animals were injected with rAAV2-retro-Eif1a-Cre. Subsequent experiments used an AAV9-based construct carrying pCMV-CRE: AAV9.CB-PI-Cre 5.03\u00d71012GC/ml; VCAV-04562. Virus was a gift from the Gao lab.\n\n### Stereotaxic AAV injections\n\nStereotaxic injections were performed to deliver AAV constructs into different regions of the CNS of adult Ai14D males. Adult male mice (8\u201312 weeks of age) were anesthetized with a mixture of 100 mg/kg ketamine and 10 mg/kg xylazine, administered via intraperitoneal injection. Prior to surgery, the top of the skull was shaved and disinfected. Surgeries were performed using aseptic technique with the aid of a stereotaxic frame (Stoelting Co.). Mice were placed into the stereotaxic frame and the skull was exposed by making a small incision with a scalpel blade. Using bregma and lambda as landmarks, the skull was then leveled along the coronal and sagittal planes. Two small drill holes were made in the skull that allowed injections to target the somatosensory cortex, caudate putamen, and nucleus accumbens. Microinjections were made using a Hamilton 10 \u03bcl neurosyringe (1701RN; Hamilton) and a microsyringe pump (Stoelting Co); 0.5 \u03bcl of virus was delivered through the syringe and at a constant flow rate of 30 nl/min. After injection, the needle was left unmoved for 10 min before being slowly retracted. The incision was then closed and held together with glue.\n\n### Tissue collection and preparation\n\n#### Transcardiac perfusion\n\nTo prepare tissues for imaging, animals were subject to transcardiac perfusion under deep anesthesia. Once deep anesthesia, assessed by toe pinch, was established, the thoracic cavity was opened to expose the heart and heparin was directly infused into the left ventricle using an insulin syringe with 31-gauge needle. A butterfly needle hooked to a peristaltic pump was secured in the left ventricle and the right atrium nicked to allow perfusion with 20 ml PBS, followed by 25 ml of freshly prepared 4% paraformaldehyde (PFA). Harvested organs were incubated in 4% PFA overnight, then washed with PBS and either transferred to 30% sucrose for cryoprotection (followed by OCT embedding for histology) or subjected to tissue clearing for lightsheet imaging.\n\nFor tissue clearing, passive de-lipidation performed by incubating the organ with 4% SDS/PBS at room temperature (RT) in an orbital shaker for 3 weeks (Rinaldi et al., 2018). The 4% SDS/PBS solution was changed every other day. At the end of the third week, the organ was rinsed with PBS for three times of least 4 hr and finally placed on a refractive index matching solution (0.17 M iodixanol; 0.4 M diatrizoic acid, 1 M n-methyl-d-glucamine, 0.01% sodium azide) 24 hr prior to imaging. Lightsheet images were acquired using LaVisionBioTec LightSheet Microscopy Ultramicroscope II located at the Cornell Imaging facility, Ithaca, NY. Images were processed using Arivis 4D software.\n\n### Parabioses\n\nMale mice of similar age from two different strains \u2013 one \u2018donor\u2019 animal expressing Cre, and the Ai14D Tomflx/flx \u2018recipient\u2019 \u2013 were surgically connected to allow the sharing of their circulatory systems. Surgical preparations were performed on the shaved skin, where incision was made along the opposing flanks of each mouse to be joined. A skin flap was made without damaging the underlying peritoneal lining, and the mice placed side-by-side in a prone position. To better secure the connection, the animals\u2019 joints (elbows and knees) were held together using suture. The dorsal and ventral skin flaps from the different mice were then pinched together and sutured. Parabiotic pairs were maintained for 8 weeks after surgery and therefore expected to have maintained cross-circulation for at least 2 weeks (Wright et al., 2001).\n\n### Serum and exosome injections\n\n#### Serum collection\n\nBlood was collected from the right ventricle of the heart of a deeply anesthetized animals using a 3 ml syringe 27-gauge needle. If serum was to be used for TFF, ultracentrifugation, or RNA extraction, a more thorough exsanguination was achieved by injection of 1.5 ml of saline solution using a 31-gauge needle into left ventricle, thus pushing more blood to the right ventricle for collection.\n\nThe blood was transferred to the yellow cap serum collection tubes and placed on ice until the end of the collection. Once all animals were processed, serum was obtained after incubating samples for 20 min at RT and performing a 9000 \u00d7 g spin for 10 min followed by 12,000 \u00d7 g for 5 min. Serum was transferred to a clean 1.5 ml Eppendorf tube further centrifuged at 4\u00b0C for 10 min at 16,000 \u00d7 g, and serum transferred to a new tube and either used for intravenous injections or stored at \u201380\u00b0C for later processing.\n\n#### TFF exosome enrichment\n\nWe use the manual TFF-easy from Galen molecular laboratory supplies. The device is a filter cartridge with polysulfone hollow fibers with pores of 5 nm diameter along its length. It allows the concentration of EVs by the removal of small proteins, molecules, and solutes from serum. Water and small molecules up to 5 nm pass through the pores and this fluid is discarded as flowthrough thus allowing the concentration of the serum EVs. https://galenmolecular.com/exosome-products/exosome-isolation/tff-easy/.\n\n#### Injection schedules\n\nSerum and exosome injections were performed using serum/exosomes isolated from a variety of Cre lines, with at least three tail vein injections (~250 \u03bcl per bolus) per recipient spread across 5 days (e.g. every other day). Across all injection schemes, epididymal recombination was observed only in a subset of recipients (Figure 6 and Figure 6\u2014figure supplement 1). We therefore continuously modified the injection scheme used \u2013 hoping to identify reproducible conditions for transfer of Cre activity \u2013 with various recipients receiving serum only, EVs only, or various mixtures of the two. Whenever possible, experiments were performed using littermates with two animals receiving serum/EV and two receiving saline. Treated and untreated animals were kept in different cages.\n\nThe transfer experiments using the maximal amount of material involved transfer of TFF-enriched EVs obtained from plasma pooled from 10 to 12 animals on days 1, 5, and 10, as well as serum pools from two to three mice injected on days 3, 8, and 12. Recipient animals were sacrificed for analysis on day 15. Unfortunately, across all trials we have been unable to identify experimental variables that distinguish successful (as defined by reporter expression in the recipient animal) from unsuccessful transfers.\n\n### Histology, tissue clearing, and lightsheet microscopy\n\n#### Histology\n\nMale mice from the same strain and age as previously described were perfused with 4% PFA/PBS, and epididymi explanted and further incubated in fixative at 4\u00b0C overnight (ON). After washing the excess of PFA with PBS, the sample was incubated at 4\u00b0C with a 30% sucrose, 0.002% sodium azide in PBS solution for 32 hr, or until tissues sank to the bottom of the container. Prior to mounting in OCT, sucrose was replaced with a one-to-one solution of 30% sucrose to OCT and samples kept at 4\u00b0C with agitation. Samples were than mounted using OCT. Cryo-sections were done at 5\u201310 \u03bcm thickness by the UMASS morphology core. Slides were stored at \u201380\u00b0C until further processing.\n\n#### Fluorescence\n\nFrozen slides were incubated at a 37\u00b0C warm plate for at least 10 min to ensure proper attachment of the section to the slide, then washed 3 \u00d7 5 minutes in PBS 0.02% Tween 20 (PBS-T) to remove OCT. For the nuclear visualization, slides were immersed in a PBS solution containing 3 \u03bcM DAPI (4\u2032,6-diamidino-2-phenylindole in PBS) for 5 min. Afterward slides were rinsed and mounted with ProLong Antifade gold (Thermo Fisher) and imaged on an Automated Zeiss Axioobserver workstation with DIC, LED fluorescence, autofocus, and deconvolution image processing.\n\n### Flow\n\nSingle cell suspension of the epididymis were performed as previously described (Rinaldi et al., 2020). Briefly, epididymis samples were separated into caput corpus cauda and vas and enzymatically dissociated. Cells were resuspended in HSS and transferred to a 1.5 ml Eppendorf tube for staining with viability dye and nuclear stain. Afterward the cell suspension was once more filtered while being transferred to a 5 ml polypropylene FACS tube, placed in ice, and protected from light until flow cytometry data acquisition. Data acquisition was performed in Cytec or LSRII with PMT voltages adjusted for each experimental day using single stained cells from homozygous Ai14D mice as well as from ubiquitously Cre-expressing Ai14D mice. Fluorescence minus one was also made. No compensation was necessary.\n\n### PCR assay for recombination\n\nRecombination PCR was done using 2\u00d7 MyTaq Red Mix (Meridian Biosciences, cat. BIO-25044) per manufacturer\u2019s instructions. Primers (Supplementary file 1) were diluted to final concentrations of 0.33 \u03bcM for Rec7, 0.67 \u03bcM for Rec11 and SeqRec, and 0.5 \u03bcM for Dcr1 KO. Two-hundred ng DNA was used per reaction. PCR products were run on 2% agarose gel.\n\n### High throughput RNA/DNA extraction\n\nSlightly modified from the described steps on the Qiagen RNA&DNA extraction protocol. Namely, mandatory use of the antifoam reagent and adoption of a fixed 1 ml volume of lysis buffer to 3 mm3 of tissue. The best lysis was obtained using bead beater with the pre-programmed settings for kidney mouse tissue repeated three times and starting every cycle on frozen tissue/lysis buffer.\n",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "45e5ff1c-69e5-4952-af27-43a92a08fe08",
+      "submission_id": "3ae963a5-4021-45d8-872f-52937d8d1cc2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brett Nixon, https://ror.org/00eae9z71 University of Newcastle Australia Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77733.sa0](https://doi.org/10.7554/eLife.77733.sa0)\n\nThis manuscript reports data consistent with a new and unanticipated phenomenon: that Cre or its mRNA may be transmitted between tissues in the mouse and that the male reproductive tract (epididymis) appears to be the most common target of such transported molecules. The data serve as a timely warning to mouse researchers about an unexpected complication of Cre-mediated gene manipulation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Brett Nixon, https://ror.org/00eae9z71 University of Newcastle Australia Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77733.sa1](https://doi.org/10.7554/eLife.77733.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Evidence for RNA or protein transport from somatic tissues to the male reproductive tract in mouse\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Didier Stainier as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Terence Pang (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nIt is recommended that the revisions include: (1) changes to text to temper claims and (2) consideration of additional experimental data that may help support the author's conclusions:\n\n1) Please explain/consider:\n\n(i) how the non-uniform transfer of Cre among epididymal cells (particularly in the caput segment) fit with the mechanistic explanation of the epididymis as a \"trash can\"?\n\n(ii) the age of the animals used in the initial experiments (Figure 1) and whether age / sex steroid production plays any role in regulating Cre transfer/activity.\n\n(iii) why an exposure regimen of 3 transfers over 5 days was selected.\n\n2) Please consider:\n\n(i) injection of Cre, or Cre-encoding RNA in liposomes or artificial exosomes into the tail of the mice, prior to testing for epididymal editing.\n\n(ii) the use of an alternative Cre-dependent system (e.g. using a Cre-DREDD) to eliminate the prospect that this is an artifact associated with the use of tdTOMATO.\n\n(iii) the possibility of performing PCR quantification to detect AAV viral particles in the caput.\n\n(iv) examining the expression of the \"brain tissue-specific\" Cre driver gene in the epididymis in wildtype mice and the Cre lines to confirm tissue specificity and eliminate the possibility of transcriptional leakage.\n\n(v) please check PCR conditions and DNA quality to address several of the comments raised by Referee 3 (i.e. comments 2, 3, 4, 6 and 7).\n\nReviewer #1 (Recommendations for the authors):\n\n1. It is interesting that the Cre does not appear to transfer between cells in the epididymis, that the edited areas are patchy in some cases. Similarly not all Cre lines seemed to send Cre to the same epididymal cells. How does that fit mechanisms like \"trash can\"?\n\n2. Considering the authors' hypothesis and their test using serum or exosome injection, why not test the model by injecting Cre, or Cre-encoding RNA in liposomes or artificial exosomes into the tail of the mice, and test for epididymal editing?\n\n3. In addition to having clear and convincing figures, the paper is well written, with the authors anticipating questions that could arise, and providing experiments or arguments to address them. An example is their compelling argument against the idea that Cre is transmitted directly by neurons.\n\nReviewer #2 (Recommendations for the authors):\n\nIf off-target expression is noted in the male reproductive tract, is it also detected in the female reproductive tract? Addressing this might reveal clues to the specificity of this present observation, perhaps tracing back to the primordial divergence in male/female reproductive organs The epididymis develops from the mesonephric duct and while development is regressed in females, there may be remnant tissue/cells which also express Cre.\n\nThe other commonality to all the experiments is the use of tdTOMATO. An alternative Cre-dependent system should be explored e.g. using a Cre-DREDD?\n\nThe age of the animals used in the initial experiments (Figure 1) is not clearly stated in the Methods, or figure legends. I can only assume these are 8-12 week old mice as that is the age then the subsequent AAV injection study was conducted. Is Cre activity similarly expressed in young juvenile animals? If not, perhaps there is some level of regulation by sex steroids?\n\nWhat is the basis for the differential expression of Cre within the caput epididymis itself? This is quite the outstanding visual difference in expression and should be considered further. Could this be related to its pattern of venous perfusion? Or is it a more complex interaction between the CLARITY process and the cellular/structural composition of this region?\n\nWas confirmatory profiling of neuron-specific genes and adipose performed on the caput vs corpus/cauda to confirm their presence/expression? The diffuse pattern of expression is perhaps suggestive of some level of structural specificity. Does this align with the authors' previous work on the epididymal cell atlas?\n\nWith regards to the AAV study, is it possible to perform PCR quantification to detect viral particles in the caput? Also, in this case, it would be interesting to know how long is Cre expression maintained for?\n\nIt is not clear why a limited exposure of three transfers over 5 days was selected. Was this protocol based on published methodology, including administration through the tail vein? Perhaps the inconsistent outcomes were due to a larger exposure being required.\n\nReviewer #3 (Recommendations for the authors):\n\nI suggest the authors to spend more time to make their data more complete and thus conclusive, as to make the result stand the test of time.\n\n1. First and foremost, the author should check the expression of the \"brain tissue-specific\" Cre driver gene in the epididymis (e.g., mRNA level) in wildtype mice and the Cre lines, because the tissue specificity of these genes may not be so specific. For example, the pan-neuronal maker Syn1 are also identified expressed in the human sperm [PMID: 26566474]. A stochastic expression of the Cre driver gene can result in the expression of Cre protein that are sufficient to induce cleavage in the expressed few cells, this is consistent with authors observation that the Cre-loxp recombination effect are shown in cell scattered in the epididymal/vas deferens tissue. My point is, this possibility of transcriptional leakage should be stringently tested, which could be a main reason of the Cre leakage, or exist in paradelle to the other proposed reason (Cre mRNA/protein transported from another tissue).\n\n2. Figure 3: In the E panel, there is no PCR product of Vas def under the No Cre condition both for the Rec 7 and Rec 11. This is not correct. Without Cre, there should be a larger intact band as observed in other samples. Similar problems have been observed in Figure 5c, where serval samples were failed to detect a PCR product including Sem Ves, Kidney. The author should re-check their PCR condition or the DNA quality of these tissues. This type of data, in my opinion, is not suitable for publication because this lead to doubts on the reliability of the PCR result, and decrease the credibility of the conclusion.\n\n3. Also, in Figure 3B panel, the author shows the image of liver, kidney, intestine, and testis, it is better to including the PCR results of these tissues in the E panel, which will make the data more consistent (gross image showing on red fluorescence signal is a weak demonstration, because the tissue are pretty large and there could be scattered red signal in a few cells can could only be observed under tissue section).\n\n4. Moreover, in Fig3E, the author should clarify the PCR product length of the original DNA and recombined DNA by the Rec7 and Rec11 primers in their Figure legends, some reader may neglect the primer details in the method section. Did the author wrongly label the Rec11 and Rec7? since the Rec11 should have a larger length for the recombined PCR product, but in the figure it shows a smaller product. Also, there is faint band in the H2O Lane for the Rec11 primer which may cause false positive in this assay in other experiments, the author should be more careful to interpretate the results with faint band observed.\n\n5. For the parabiotic assay, did the author check other tissues in the Ai14D recipient, at least, brain tissue should be included in the check list besides the epididymis, since the Vgat-cre is primarily target for cell in the brain tissue.\n\n6. In the Figure S9E, in the \"negative\" group, there are still some red fluorescence observable in the photos. Did the author check the negative samples by the PCR assay?\n\n7. It would be better to label or clarify which primer were used to check the recombination events in the Figure 5C, 6C, 6F et al.\n",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5f497beb-69bf-43db-a901-7a71f3f75aa6",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C1",
+      "claim": "The Ai14D reporter mouse strain carries a transgene at the Rosa26 locus with a ubiquitously expressed CAG promoter driving expression of a transgene with a 3\u00d7 STOP cassette flanked by two LoxP sites, followed by a fluorescent reporter gene encoding tdTomato.",
+      "claim_type": "EXPLICIT",
+      "source": "This reporter carries a transgene at the 'safe harbor' Rosa26 locus, with a ubiquitously expressed CAG promoter driving expression of a transgene with a 3\u00d7 STOP cassette flanked by two LoxP sites, followed by a fluorescent reporter gene encoding tdTomato.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the genetic construct of the Ai14D reporter strain, which is a well-characterized tool referenced in the methods.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "86681d0d-5e76-4c7a-aaf9-8f233d8f54cc",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C2",
+      "claim": "Cre recombinase excises the STOP cassette in the Ai14D reporter, resulting in robust tdTomato expression in Cre-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cre recombinase excises the STOP cassette, resulting in robust tdTomato (hereafter, Tomato) expression in Cre-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the Cre-Lox system used in the study, which is established knowledge and demonstrated in the experiments.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "1d35f92f-c2fe-4eed-b1b8-7b7553669d4a",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C3",
+      "claim": "Defb41iCre drives reporter expression in a highly localized manner in the proximal (caput) epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the distribution of Defb41 mRNA expression observed in surveys of epididymal gene expression (Johnston et al., 2005; Rinaldi et al., 2020), we find that Defb41iCre drives reporter expression in a highly localized manner in the proximal (caput) epididymis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C and is consistent with cited literature on Defb41 expression patterns.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "3ec7f28b-153c-4106-a833-dd61cbd33a6a",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C4",
+      "claim": "Tomato expression driven by Defb41iCre is confined to the principal cells of the epididymal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "cross sections show that Tomato expression is confined to the principal cells (but not basal or other interstitial cells) of the epididymal epithelium (Figure 1C, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through histological analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "0bf4a3d6-fe45-4d5b-b6d0-0397da6f2b27",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C5",
+      "claim": "Tomato expression driven by Defb41iCre is notably absent from the sperm-filled lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Tomato expression is notably absent from the sperm-filled lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is made from the imaging data presented in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "8ae0953b-950a-4713-8243-34ac7f14af13",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C6",
+      "claim": "Stereotaxic delivery of AAV constructs engineered to drive Cre expression in the mouse brain results in robust Tomato expression in the cauda epididymis and vas deferens.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, examination of the epididymis in both cases revealed robust Tomato expression in the cauda (distal) epididymis and in the vas deferens (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is demonstrated through experimental data from AAV injection experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "9385e67b-ebb6-455e-83b5-c8e8e1438d99",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C7",
+      "claim": "Tomato expression was reproducibly observed in all epididymis samples isolated from ten AAV-transduced animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Tomato expression was reproducibly observed in all epididymis samples isolated from ten AAV-transduced animals, including three animals injected in the prefrontal cortex (Figure 2\u2014figure supplement 1) as well as seven animals injected in the lateral somatosensory cortex, caudate putamen, and nucleus accumbens (Figure 2C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports quantitative data on the number of animals showing the effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "f4d03b55-4ce2-4541-9146-d7e930c0ffc8",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C8",
+      "claim": "Tomato expression following AAV-induced Cre expression was confined to the epididymal epithelium with no detectable expression in the sperm filling the epididymal lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the case of the Defb41iCre driver, closer examination of our imaging data showed that Tomato expression was confined to the epididymal epithelium (inset, Figure 2C, Figure 2\u2014figure supplement 2), with no detectable expression in the sperm filling the epididymal lumen (see below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on microscopic examination of the tissue samples shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "19b81f1b-1161-4c2a-a9ec-a96ebe01a935",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C9",
+      "claim": "Cre expression from the Slc32a1 transgene resulted in robust epididymal Tomato expression in Ai14D; Slc32a1Cre double transgenic animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, similar to the reporter expression observed following viral induction of neuronal Cre expression (Figure 2), Cre expression from the Slc32a1 transgene also resulted in robust epididymal Tomato expression in Ai14D; Slc32a1Cre double transgenic animals (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "f3695b88-3034-484a-a23b-13c78103ab9d",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C10",
+      "claim": "Microscopy revealed Tomato expression exclusively in the principal cells of the epididymal epithelium in Ai14D; Slc32a1Cre animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection of double transgenic epididymis by microscopy revealed Tomato expression exclusively in the principal cells of the epididymal epithelium (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "d2e0da03-6781-4407-9864-53f9837236bf",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C11",
+      "claim": "The presence of Tomato-positive principal cells in Ai14D; Slc32a1Cre animals was confirmed by FACS.",
+      "claim_type": "EXPLICIT",
+      "source": "and we further confirmed the presence of Tomato-positive principal cells by FACS (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through flow cytometry data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "464f531a-cbb0-4f35-9efe-6e8ad6330574",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C12",
+      "claim": "Patchy Tomato expression was observed in histological cross sections of Ai14D; Slc32a1Cre epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we observed patchy Tomato expression in any given histological cross section",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is made from histological analysis of the tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "54e6a1d0-5fc9-4f19-be69-02c06910bec3",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C13",
+      "claim": "Recombination at the reporter locus was detected in genomic DNA isolated from the epididymis of Ai14D; Slc32a1Cre animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore assayed recombination at the LoxP-STOP cassette in the epididymis, finding recombination at the reporter locus in genomic DNA isolated from the epididymis (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through PCR analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "d844ad98-f205-4144-959c-30b82976cbaf",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C14",
+      "claim": "The findings strongly support the hypothesis that Cre activity (RNA or protein) is the relevant molecular signal trafficked from the CNS to the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings strongly support the hypothesis that Cre activity (RNA or protein) is the relevant molecular signal trafficked from the CNS to the epididymis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental data showing recombination at the reporter locus.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "c1affcbb-ef18-4a1e-9243-c866d0388a14",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C15",
+      "claim": "A wide range of neuronal Cre lines drive Tomato expression in the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, we find that a wide range of neuronal Cre lines drive Tomato expression in the epididymis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from multiple Cre driver lines tested in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "77c62fba-c335-4ba5-bd84-581c0799a7b0",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C16",
+      "claim": "Extensive Tomato staining was found throughout the epididymis in both Synapsin and Nestin Cre double transgenic lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing first on the putative 'pan-neuronal' Cre lines, driven by the Synapsin or Nestin promoters, we found extensive Tomato staining throughout the epididymis in both double transgenic lines (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "08b02986-4672-4eb6-85bd-405d52899f3f",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C17",
+      "claim": "Tomato expression in Ai14D; SynCre animals was not limited to the epididymal epithelium and instead filled the epididymis lumen, suggestive of Tomato-positive sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noted that Tomato expression in the SynCre animals was not limited to the epididymal epithelium and instead filled the epididymis lumen (Figure 4\u2014figure supplement 2A), suggestive of Tomato-positive sperm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is made from imaging data and is consistent with germline recombination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "7362c0ed-6122-4e4c-b01e-bbcc9a3d4f67",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C18",
+      "claim": "Offspring of Ai14D; SynCre double transgenics exhibited Tomato expression throughout the body, consistent with prior reports of SynCre driving germline recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, offspring of the Ai14D; SynCre double transgenics exhibited Tomato expression throughout the body, consistent with prior reports of SynCre driving germline recombination (Luo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observation and is supported by cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "3e02fc08-6c71-4368-b25f-f216d12dac0d",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C19",
+      "claim": "The Nestin Cre driver has been reported to drive germline recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the Nestin Cre driver has also been reported to drive germline recombination (Betz et al., 1996; McLeod et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "8553fc95-103d-4bea-b7d2-40a71b72063c",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C20",
+      "claim": "Tomato-positive offspring were obtained from Ai14D; NesCre double transgenics.",
+      "claim_type": "EXPLICIT",
+      "source": "and we did obtain Tomato-positive offspring of Ai14D; NesCre double transgenics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "42b5d3ca-d118-4eb3-8e3d-d8c55f38c3f2",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C21",
+      "claim": "In contrast to Ai14D; SynCre animals, no detectable labeling of sperm was found in Ai14D; NesCre animals, with Tomato expression in the epididymis largely confined to the epididymal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, in contrast to the Ai14D; SynCre animals we found no detectable labeling of sperm in Ai14D; NesCre animals, with Tomato expression in the epididymis largely confined to the epididymal epithelium (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "aefd8c66-ec95-4e73-848f-0664df643aa8",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C22",
+      "claim": "NesCre-mediated recombination likely occurs relatively late during spermatogenesis in germ cells, with recombination in the epididymal epithelium occurring independently.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that NesCre-mediated recombination occurs relatively late during spermatogenesis in germ cells, with recombination in the epididymal epithelium occurring independently \u2013 probably induced by the same CNS\u2192epididymis trafficking seen for several other neuronal Cre drivers (Figure 3 and below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the pattern of Tomato expression observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "01046163-ada6-4aa3-bd24-317e0f8b8c24",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C23",
+      "claim": "Tomato expression was consistently observed in the epididymis when Cre was expressed from Slc32a1, Fev, Gad2, and Drd1a promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Turning from pan-neuronal promoters to more cell type-specific CNS Cre drivers, we consistently observed Tomato expression in the epididymis when Cre was expressed from Slc32a1, Fev, Gad2, and Drd1a promoters (Figures 3\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "6b608a35-b7e7-4f64-b4df-7e8f411bdb62",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C24",
+      "claim": "For Fev and Slc32a1 Cre drivers, Tomato expression was strongest in the cauda epididymis and vas deferens.",
+      "claim_type": "EXPLICIT",
+      "source": "For two of these Cre drivers \u2013 Fev and Slc32a1 \u2013 we find that Tomato expression was strongest in the cauda epididymis and vas deferens, similar to our findings obtained using AAV to drive Cre expression in the CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on imaging data comparing different Cre drivers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "19a161a0-a234-419b-a3d3-67eec0da9458",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C25",
+      "claim": "Both Ai14D; Gad2Cre and Ai14D; Drd1aCre double transgenic animals exhibited patchy epithelial staining throughout the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both Ai14D; Gad2Cre and Ai14D; Drd1aCre double transgenic animals exhibited patchy epithelial staining throughout the epididymis (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "17da3bfe-d41c-4d94-87a8-9e2adb627928",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C26",
+      "claim": "Off-target epididymal recombination was not unique to neuronal Cre drivers, as robust Tomato expression and reporter locus recombination was observed in animals carrying the adipose-specific AdipoqCre.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, off-target epididymal recombination was not unique to neuronal Cre drivers, as we also observed robust Tomato expression and reporter locus recombination in animals carrying the adipose-specific AdipoqCre (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "4647724a-a147-40a3-8bde-bef0e30899cf",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C27",
+      "claim": "Reporter animals carrying the liver-specific AlbCre transgene exhibited barely detectable Tomato expression in the epididymis with few Tomato-positive cells detected throughout the entire tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, reporter animals carrying the liver-specific AlbCre transgene exhibited barely detectable Tomato expression in the epididymis with few Tomato-positive cells detected throughout the entire tissue \u2013 at most one or two cells per longitudinal section (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "f396d473-2383-42ea-a8d6-ddc73ffdd638",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C28",
+      "claim": "Multiple neuronal Cre drivers exhibited off-target activities in tissues beyond the epididymis, most notably in the reproductive accessory glands.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only did non-neuronal Cre drivers direct recombination in the epididymis, but multiple neuronal Cre drivers exhibited off-target activities in tissues beyond the epididymis. Most notably, within the male reproductive tract we observed robust Tomato expression in the reproductive accessory glands of the Nes, Fev, and Gad2 lines (Figure 4\u2014figure supplements 3\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging data shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "b20c9954-5273-437d-ac76-46af6c4f5c72",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C29",
+      "claim": "Publicly available annotations from MGI show clear evidence for recombination in the epididymis epithelium for Syn1Cre.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the lines that drive recombination in Ai14D in our study, there is also clear evidence for recombination in the epididymis epithelium for Syn1Cre",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on examination of publicly available data from MGI.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "8bf34b75-d70a-4154-be16-573e57db6f17",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C30",
+      "claim": "MGI annotations show 'ambiguous' expression for NesCre and Gad2Cre in the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "along with 'ambiguous' expression annotated for NesCre and Gad2Cre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on examination of publicly available data from MGI.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "5a15a52e-af2b-410f-9a42-0d4635aa0272",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C31",
+      "claim": "Closer examination of the MGI image provided for NesCre revealed clear evidence for reporter expression in the epididymis epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, closer examination of the image provided for NesCre also revealed clear evidence for reporter expression in the epididymis epithelium",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on examination of publicly available images from MGI.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "f230304d-c374-4cdb-8fdb-b1baa1555dd1",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C32",
+      "claim": "Adipoq, Slc32a1, Drd1, and Fev were all annotated as 'absent' in the epididymis epithelium in MGI at postnatal days 7 and 56.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Adipoq, Slc32a1, Drd1, and Fev were all annotated as 'absent' in the epididymis epithelium (at postnatal days 7 and 56).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on examination of publicly available data from MGI.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "8d6105d8-747d-41bc-bd68-112b7e21349f",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C33",
+      "claim": "Recombination of the Dicer1 locus was confirmed specifically in the cauda epididymis of AdipoqCre; Dicer1flx/flx animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we document recombination of this locus specifically in the cauda epididymis, but not in the testis or other parts of the epididymis (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through PCR genotyping shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "b4599309-5251-435f-9c8a-fa0685cb1374",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C34",
+      "claim": "Off-target recombination in the epididymis is not unique to the Ai14D reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "These data thus extend our results to a second target locus, demonstrating that off-target recombination in the epididymis is not unique to the Ai14D reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data using the Dicer1 conditional allele.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "32ade766-99f5-4528-b479-564c19f6e6cf",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C35",
+      "claim": "Moderate Tomato expression was detected in the epididymis of the Ai14D recipient animal in a parabiotic Ai14D::Slc32a1Cre pair.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected moderate Tomato expression in the epididymis of the Ai14D recipient animal in a parabiotic Ai14D:: Slc32a1Cre pair (Figure 6B, Figure 6\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through histological analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "3de868bb-9c78-4a93-b8fe-b2e031b6c2db",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C36",
+      "claim": "A faint band supporting recombination at the reporter locus was detected in one Ai14D recipient from parabiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "along with a faint band supporting recombination at the reporter locus in one recipient (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through PCR analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "eb6de62a-51bc-4a67-8e4f-916dfee412bc",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C37",
+      "claim": "In two other Ai14D animals from parabiosis, no evidence for recombination was found by PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in two other Ai14D animals we found no evidence for recombination by PCR (Figure 6\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through PCR analysis shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "17bcb207-a034-4cea-9677-058524279963",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C38",
+      "claim": "Serum transfer from Slc32a1Cre animals to Ai14D males resulted in epididymal LoxP recombination and Tomato expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6E\u2013F, this resulted in epididymal LoxP recombination and Tomato expression in animals receiving Slc32a1Cre serum",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging and PCR analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "bb2627d6-7603-4aeb-9dda-030917e5a3fb",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C39",
+      "claim": "Recipients of serum from FVB or AlbCre animals did not express Tomato or exhibit recombination at the reporter locus.",
+      "claim_type": "EXPLICIT",
+      "source": "while recipients of serum from FVB or AlbCre animals did not express Tomato or exhibit recombination at the reporter locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through imaging and PCR analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "b1799393-6559-4c71-96e9-00f8825854da",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C40",
+      "claim": "No Tomato expression was found in an Ai14D male that had received TFF-enriched exosomes from nine Slc32a1Cre animals spread across 3 injection days.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no Tomato expression in an Ai14D male that had received TFF-enriched exosomes from nine Slc32a1Cre animals spread across 3 injection days (Figure 6\u2014figure supplement 1E, top right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on imaging data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "5a07ba94-b4e8-476a-b56d-8a2d7aaeef67",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C41",
+      "claim": "Across over 20 recipient animals in serum/exosome transfer experiments, clear evidence for recombination was documented in six animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, across over 20 recipient animals we documented clear evidence for recombination in six animals, with positive results in recipients of Slc32a1Cre serum, Slc32a1Cre serum and exosomes, Gad2Cre serum and exosomes, a mixture of Gad2Cre and Drd1Cre serum and exosomes, NesCre serum and exosomes, and AdipoqCre serum and exosomes (Figure 6\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from multiple serum/exosome transfer experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "ec599272-6af0-4b6d-b7e8-8fec3a786454",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C42",
+      "claim": "Similar or nearly identical injection schemes in serum/exosome transfer experiments often resulted in no detectable Tomato expression or recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "However, similar or nearly identical injection schemes often resulted in no detectable Tomato expression or recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations across multiple trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "3b0112ba-7ac8-4b1b-8ce3-6abadcb300e1",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C43",
+      "claim": "The data support the hypothesis that off-target Cre activity in the epididymis is likely mediated by Cre trafficking through the circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data support the hypothesis that off-target Cre activity in the epididymis is likely mediated by Cre trafficking through the circulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the parabiosis and serum transfer experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "cc7dde32-d08f-4d41-90a1-a9cacfc2ae0e",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C44",
+      "claim": "The difficulty in reliably replicating Cre transfer impedes further mechanistic follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "although the difficulty in reliably replicating this transfer impedes further mechanistic follow-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental challenges encountered in the serum/exosome transfer studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "9223cee9-62db-4cb4-828b-5c1d41c799ba",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C45",
+      "claim": "The epididymis is a surprisingly common 'off-target' tissue for a variety of Cre drivers that are not believed to be expressed in the male reproductive tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations reveal the epididymis as a surprisingly common 'off-target' tissue for a variety of Cre drivers that are not believed to be expressed in the male reproductive tract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data from multiple Cre driver lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "8f07fb9e-9d22-4c7b-840a-fa9ab7554e50",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C46",
+      "claim": "There is a many-to-many mapping between sender tissues and recipient tissues, with sender tissues including multiple neuronal subpopulations along with adipose tissue, and recipient tissues including the epididymis, seminal vesicle, prostate, and intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a many-to-many mapping, with 'sender' tissues including multiple neuronal subpopulations along with adipose tissue, and recipient tissues including the epididymis, seminal vesicle, prostate, and intestine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings across multiple Cre driver lines and tissues examined.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "d16018bd-a517-4ba9-a86d-9b0ba576b3ec",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C47",
+      "claim": "Different Cre lines drive recombination in different sets of tissues, arguing against the possibility that a generic 'sink' tissue nonspecifically receives any RNAs or proteins present in the circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, different Cre lines drive recombination in different sets of tissues, arguing against the possibility that a generic 'sink' tissue nonspecifically receives any RNAs or proteins present in the circulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the differential patterns of recombination observed with different Cre drivers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "30fa10f6-581c-4f9d-98f7-50230b855fe9",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C48",
+      "claim": "The data confirm prior reports of germline activity of NesCre and Syn1Cre drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "and here for example our data confirm prior reports of germline activity of NesCre and Syn1Cre drivers (Luo et al., 2020; Betz et al., 1996; McLeod et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations that are consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "1deefaed-9dbc-41b4-8ec0-1d1b14a73abf",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C49",
+      "claim": "The findings identify many new examples of off-target Cre activity for a variety of Cre lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also identify many new examples of off-target Cre activity for a variety of Cre lines",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the novel experimental findings reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "b665c4b4-d1c6-4994-942d-d57030dba8a8",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C50",
+      "claim": "Many off-target Cre activities may have been missed before given the relatively small size of the scientific community focused on the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "many of which may have been missed before given the relatively small size of the scientific community focused on the epididymis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why these off-target effects were not previously reported.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "4ffaada8-2de3-4a56-bb02-02100bc1a7d6",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C51",
+      "claim": "Fairly patchy recombination was found in the epididymal epithelium even in cases of double transgenics exhibiting robust recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that even in the cases of double transgenics exhibiting robust recombination in the epididymis (Slc32a1, Adipoq, etc. \u2013 Figures 3\u20145), we find fairly patchy recombination in the epididymal epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on histological observations from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "64449099-f855-4c08-97d4-4d8b39a9472c",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C52",
+      "claim": "The data showing off-target Cre activity in the epididymis are unlikely to result from leaky expression of the Cre drivers studied.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, our data showing off-target Cre activity in the epididymis are unlikely to result from leaky expression of the Cre drivers studied here, for multiple reasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on multiple lines of evidence presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "d325b5bb-64eb-47c7-8bf1-4ac9cc46d435",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C53",
+      "claim": "Most of the neuron-specific genes in question are not detectably expressed in the adult epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, we find a wide range of Cre transgenes drive recombination in the epididymis, and most of the neuron-specific genes in question are not detectably expressed in the adult epididymis (Johnston et al., 2005; Rinaldi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on epididymal gene expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "6180da72-c1b1-4760-981b-24ce7ea284f0",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C54",
+      "claim": "Induction of Cre expression in the brain via AAV-mediated transduction leads to reporter activity in the epididymis epithelium, which cannot be explained by leaky transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our observation that induction of Cre expression in the brain via AAV-mediated transduction leads to reporter activity in the epididymis epithelium (Figure 2, Figure 2\u2014figure supplements 1\u20132) cannot be explained by leaky transgene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation based on the AAV injection experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "98193528-45e7-4863-8e59-996b1b3beec0",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C55",
+      "claim": "The findings strongly suggest that Cre activity synthesized in neurons is transported to the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings strongly suggest that Cre activity synthesized in neurons is transported to the epididymis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the combined evidence from AAV and transgenic experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "c7937642-239d-4920-8df4-f5d5f2cd2bb0",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C56",
+      "claim": "Delivery of Cre from neurons to the epididymis via release of Cre-containing vesicles by peripheral neurons that innervate the cauda epididymis is considered unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "The delivery of Cre from neurons to the epididymis could occur via a number of routes, including release of Cre-containing vesicles by peripheral neurons that innervate the cauda epididymis. We consider this to be unlikely for several reasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on multiple lines of evidence discussed in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "42c454bb-7d3e-4a1a-8389-2c5d7d7385de",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C57",
+      "claim": "Adipose-specific Cre expression reliably drives recombination in the epididymis, arguing against Cre transfer requiring neuronal termini.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that adipose-specific Cre expression reliably drives recombination in the epididymis (Figure 5), arguing against Cre transfer requiring neuronal termini.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation based on the experimental data from AdipoqCre animals.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "12ac439b-605a-4037-9e34-5c27a5e806f7",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C58",
+      "claim": "Induction of Cre expression specifically in one hemisphere of the brain via stereotactic AAV injections led to Tomato expression in both the ipsilateral and contralateral epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, induction of Cre expression specifically in one hemisphere of the brain via stereotactic AAV injections was shown to lead to Tomato expression in both the ipsilateral and contralateral epididymis (Figure 2), arguing against short-range neuronal delivery",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental observations from the AAV injection studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "698751f7-8898-4420-b8dd-70c3c98cb3c7",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C59",
+      "claim": "Parabiosis and serum transfer studies support the hypothesis that Cre activity synthesized in a variety of tissues can access the circulation and subsequently be trafficked to the male reproductive tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our follow-up studies using parabioses and serum transfers support the hypothesis that Cre activity synthesized in a variety of tissues can access the circulation and subsequently be trafficked to the male reproductive tract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the parabiosis and serum transfer experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "dfe61857-3950-49e2-99b0-6ae766bf56b1",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C60",
+      "claim": "The circulating Cre activity likely consists of Cre mRNA, rather than protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the circulating Cre activity consists of Cre mRNA, rather than protein",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental findings and precedent in the literature.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "8660a179-1d48-4bef-b6d5-0f3a67982ca9",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C61",
+      "claim": "The RNA is anticipated to be present either in exosomes or in ribonucleoprotein complexes protected from serum nucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "and we anticipate that the RNA is present either in exosomes or in ribonucleoprotein complexes protected from serum nucleases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known mechanisms of RNA stability in circulation.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "53e44507-fbba-40de-a3e3-3ed35cb42f8f",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C62",
+      "claim": "Cre mRNA can be documented by PCR in the circulation of multiple Cre lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we can document Cre mRNA by PCR in the circulation of multiple Cre lines (Figure 6\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through RT-PCR analysis shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "026e0a3f-580b-413b-84f0-9f7a13753e28",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C63",
+      "claim": "There is abundant precedent for RNA transmission between different tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "and there is abundant precedent for RNA transmission between different tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "91d9b3d7-3d65-4f6b-bca6-f57493115131",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C64",
+      "claim": "In C. elegans, introduction of double stranded RNA either by injection or by feeding with dsRNA-expressing bacteria leads to organism-wide silencing of homologous genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in Caenorhabditis elegans, introduction of double stranded RNA either by injection or by feeding with dsRNA-expressing bacteria leads to organism-wide silencing of homologous genes (Fire et al., 1998; Timmons and Fire, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on systemic RNAi in C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "27864356-b0bc-472f-a675-ea1972dade3b",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C65",
+      "claim": "Expression of RNAi triggers in neurons has been shown to silence target genes in the germline in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, expression of RNAi triggers in neurons has been shown to silence target genes in the germline (Devanapally et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on neuron-to-germline RNA trafficking in C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "e26a60a1-7af2-4655-b70e-33423cff1cfb",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C66",
+      "claim": "Systemic RNA trafficking is well described in plants, as various means of introducing dsRNA into aerial tissues can drive sequence-specific silencing in roots.",
+      "claim_type": "EXPLICIT",
+      "source": "Systemic RNA trafficking is also well described in plants, as various means of introducing dsRNA into aerial tissues can drive sequence-specific silencing in roots (Palauqui et al., 1997; Voinnet et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on systemic RNA trafficking in plants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "19c7ffba-7bc2-4337-9a05-34048d1e9aab",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C67",
+      "claim": "In mammals, many studies have reported RNA or protein trafficking between different cell types within the same tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, many studies have reported RNA or protein trafficking between different cell types within the same tissue (van Niel et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on inter-cellular trafficking in mammals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "f76b3b64-8b65-40d9-8ef8-3bba5bafda76",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C68",
+      "claim": "RNA or protein trafficking between distant tissues has been reported in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "or between distant tissues (Thomou et al., 2017; Poggio et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on inter-tissue trafficking in mammals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "eac8a368-ba02-4be1-a552-8cd86099dde6",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C69",
+      "claim": "There are only sporadic reports of RNA trafficking from distant tissues to germ cells themselves in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this is well documented for several somatic tissues, in the unique case of the germline there are only sporadic reports of RNA trafficking from distant tissues to germ cells themselves (Cossetti et al., 2014; O'Brien et al., 2020; Conine and Rando, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on RNA trafficking to the germline in mammals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "408cee61-245a-40dd-80ab-3833b3443ea3",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C70",
+      "claim": "Gametogenesis is supported by a wide variety of somatic cells and accessory tissues that could serve as intermediaries between distal tissues and developing gametes.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, it is worth noting that gametogenesis is supported by a wide variety of somatic cells and accessory tissues, and these could serve as intermediaries between distal tissues and developing gametes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of reproductive biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "fdb07eb7-681f-43ea-90c5-78159b88c3b3",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C71",
+      "claim": "The epididymis is a tissue where sperm mature for approximately 1-2 weeks following the completion of testicular development.",
+      "claim_type": "EXPLICIT",
+      "source": "In our efforts to explore the biology of the male reproductive tract, we unexpectedly found that expression of Cre in the central nervous system resulted in recombination in the epididymis, a tissue where sperm mature for ~1\u20132 weeks following the completion of testicular development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of epididymal biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "ecf26f5c-dc75-4ee0-85e8-838609af1439",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C72",
+      "claim": "Zeybel et al. reported that repeated serum transfers from CCl4-treated animals to a recipient were sufficient to reproduce H3K27me3 changes in the sperm of the recipient animal.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in their studies of intergenerational effects of carbon tetrachloride, Zeybel et al. reported that repeated serum transfers from CCl4-treated animals to a recipient were sufficient to reproduce H3K27me3 changes in the sperm of the recipient animal (Zeybel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on serum transfer effects on sperm epigenetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "4ae44ec1-91d9-4a3d-a8fa-ceb5a13f2f0d",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C73",
+      "claim": "Mansuy and colleagues reported that transferring serum from males subject to early life stress to a recipient male was sufficient to drive altered glucose responses in the F1 offspring of the recipient animal.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Mansuy and colleagues reported that transferring serum from males subject to early life stress to a recipient male was sufficient to drive altered glucose responses in the F1 offspring of the recipient animal (van Steenwyk et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on serum transfer effects on offspring phenotypes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "86621430-5038-4264-82d5-cbd541a8e7f0",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C74",
+      "claim": "A prior report in mouse suggested that microRNAs expressed in the brain could be delivered to sperm, and subsequently to the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a prior report in mouse suggested that microRNAs expressed in the brain could be delivered to sperm, and subsequently to the next generation (O'Brien et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on brain-to-sperm RNA trafficking.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "fb892a3e-a546-4d60-a984-0c959d1de3f8",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C75",
+      "claim": "With the exception of Syn1 and Nestin, there is no evidence for neuronal Cre trafficking directly to sperm cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with the exception of Syn1 and Nestin (Figure 4\u2014figure supplement 2), we do not find any evidence for neuronal Cre trafficking directly to sperm cells",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental observations from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "cc56b4cc-ed5c-40a3-9e28-22f793b62133",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C76",
+      "claim": "Even in the case of Syn1 and Nestin Cre drivers, recombination in the germline likely occurs prior to the last stages of spermatogenesis in the testis.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the case of Syn1 and Nestin Cre drivers, recombination in the germline likely occurs prior to the last stages of spermatogenesis in the testis \u2013 potentially in spermatogonial stem cells or even earlier in development \u2013 and not during epididymal transit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the pattern of Tomato expression observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "96f208ed-2cac-4255-9c0b-21d594531660",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C77",
+      "claim": "The data place the epididymis as a mediator between neuronal information processing and programming of the sperm epigenome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data instead would place the epididymis as a mediator between neuronal information processing and programming of the sperm epigenome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "5bd24258-dd43-4cc1-9fb0-7d922b864d7b",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C78",
+      "claim": "CNS-derived information potentially drives altered epididymal physiology and consequent remodeling of sperm small RNAs, proteins, or surface lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "with CNS-derived information potentially driving altered epididymal physiology and consequent remodeling of sperm small RNAs, proteins, or surface lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential biological implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "9ba854cf-c3da-4f14-b2fd-2e410fb3952d",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "claim_id": "C79",
+      "claim": "Different Cre drivers result in recombination in different parts of the epididymis, arguing for some level of specificity between different tissue-derived exosomes and target cell populations in the epididymis.",
+      "claim_type": "EXPLICIT",
+      "source": "We disfavor this model, in part because different Cre drivers result in recombination in different parts of the epididymis, arguing for some level of specificity between different tissue-derived exosomes (for instance) and target cell populations in the epididymis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the differential patterns of recombination observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c0d098ea-f173-4e4d-8120-718b0f0b5e10",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Ai14D reporter mouse strain contains a Cre-dependent tdTomato reporter at the Rosa26 locus, where Cre recombinase excises a LoxP-flanked STOP cassette to enable robust tdTomato expression in Cre-expressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 describe the well-established Ai14D reporter system, which is a standard tool in mouse genetics. The genetic construct and Cre-Lox mechanism are supported by established knowledge and are demonstrated throughout the manuscript's experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "0a95b21c-bab9-403b-b019-826596e17d6d",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Defb41iCre driver directs reporter expression specifically to principal cells of the proximal (caput) epididymis epithelium, with no expression in the sperm-filled lumen, serving as a positive control for tissue-specific Cre activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 are supported by imaging data in Figure 1C and Figure 1\u2014figure supplement 1, showing localized caput expression consistent with known Defb41 expression patterns. The histological analysis clearly demonstrates principal cell-specific expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "921c109c-2237-4e88-a6a5-7c84ab367f04",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Stereotaxic AAV-mediated Cre expression in the mouse brain reproducibly results in robust tdTomato expression in the cauda epididymis and vas deferens epithelium across all ten AAV-transduced animals, with no detectable expression in sperm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are supported by experimental data from two independent AAV injection series (Figure 2, Figure 2\u2014figure supplements 1-2). The 100% penetrance (10/10 animals) and consistent epithelial-specific expression pattern provide strong evidence for this unexpected finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "54a98f42-ad3a-4d63-b110-6f7f130184a7",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Slc32a1Cre transgene drives robust tdTomato expression specifically in principal cells of the epididymal epithelium in Ai14D; Slc32a1Cre double transgenic animals, with patchy distribution across histological sections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 are supported by multiple complementary approaches: lightsheet imaging (Figure 3C), histology (Figure 3D), and FACS analysis (Figure 3\u2014figure supplement 1). The patchy expression pattern is consistently observed and documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "086d1407-9b66-4102-882b-c6ab838e79d6",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genomic DNA from the epididymis of Ai14D; Slc32a1Cre animals shows recombination at the reporter locus, strongly supporting that Cre activity (RNA or protein) itself is trafficked from the CNS to the epididymis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 are supported by PCR analysis (Figure 3E) demonstrating recombination at the genomic level. This is critical evidence that Cre activity, rather than tdTomato protein, is being transferred, though the interpretation in C14 remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "eee4e0b9-6be6-4df4-a5b2-e23ce4886fb2",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multiple neuronal Cre driver lines (Slc32a1, Fev, Gad2, Drd1a, Synapsin, Nestin) drive tdTomato expression in the epididymis, with different drivers showing distinct regional patterns (cauda-enriched for Fev/Slc32a1, patchy throughout for Gad2/Drd1a).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16, C23-C25 are supported by systematic imaging across multiple Cre lines (Figures 3-4, Figure 4\u2014figure supplement 2). The differential regional patterns argue against non-specific artifacts and suggest some specificity in the trafficking mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "dcd154cd-b9a1-4d8b-84f6-32e29d55cb78",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Syn1Cre and NesCre drivers show evidence of germline recombination, with Syn1Cre producing Tomato-positive sperm and offspring, while NesCre shows epithelial-specific epididymal expression despite also producing Tomato-positive offspring, suggesting different timing of germline recombination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 are supported by imaging data (Figure 4\u2014figure supplement 2) and offspring analysis, with interpretation consistent with cited literature on germline activity of these drivers. The differential patterns between Syn1Cre and NesCre are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "9e0b057e-6933-4ddf-891d-8cdadc208de6",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Off-target epididymal recombination is not unique to neuronal Cre drivers: the adipose-specific AdipoqCre shows robust epididymal expression, while the liver-specific AlbCre shows minimal (1-2 cells per section) epididymal expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by imaging and histology (Figure 5, Figure 4\u2014figure supplement 1). The robust AdipoqCre activity is particularly important as it demonstrates that the phenomenon is not CNS-specific, while AlbCre serves as a near-negative control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "7671f121-c658-4688-9612-c79f1ec3e277",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple neuronal Cre drivers exhibit off-target activities beyond the epididymis, particularly in reproductive accessory glands (seminal vesicle, prostate) for Nes, Fev, and Gad2 lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is supported by imaging data in Figure 4\u2014figure supplements 3-4. This extends the off-target phenomenon beyond the epididymis and suggests broader inter-tissue trafficking patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "e998f44e-8856-498c-9c8e-733917ab2a8d",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Publicly available MGI annotations show variable documentation of epididymal recombination for different Cre lines, with clear evidence for Syn1Cre, ambiguous annotations for NesCre/Gad2Cre (despite visible expression), and 'absent' annotations for Adipoq/Slc32a1/Drd1/Fev.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by examination of publicly available MGI data. This highlights that some off-target effects were previously documented but not widely recognized, while others represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "3bef79f2-decb-41b1-875b-b9d116b73865",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Off-target recombination in the epididymis is not unique to the Ai14D reporter, as demonstrated by recombination of the Dicer1 conditional allele specifically in the cauda epididymis of AdipoqCre; Dicer1flx/flx animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by PCR genotyping (Figure 5\u2014figure supplement 1B) and sequencing confirmation. This is critical evidence that the phenomenon is not an artifact of the Ai14D reporter system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "1806bb88-69b8-46df-8712-f20df3ed6dab",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Parabiosis experiments between Ai14D and Slc32a1Cre animals show variable results, with moderate Tomato expression and faint recombination detected in one Ai14D recipient, but no evidence of recombination in two other recipients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35-C37 are supported by the data shown (Figure 6B-C, Figure 6\u2014figure supplement 1B-C), but the inconsistent results (1/3 positive) raise concerns about reproducibility and suggest the transfer is highly inefficient or dependent on uncontrolled variables.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "beb65208-b809-4868-9e8e-ce25d71cc0f9",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Serum and exosome transfer experiments show that material from Cre-expressing animals can induce epididymal recombination in Ai14D recipients, with positive results in 6 of over 20 recipients across multiple Cre lines, though similar injection schemes often fail to produce recombination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C42 are supported by the experimental data (Figure 6E-F, Figure 6\u2014figure supplement 1E-F), but the low success rate (~30%) and inability to identify variables distinguishing successful from unsuccessful transfers significantly limits confidence in the reproducibility and mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "adc89061-13e4-4f76-a17f-0d6ffb81ee97",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The combined data from parabiosis and serum/exosome transfer experiments support the hypothesis that off-target Cre activity is mediated by trafficking through the circulation, though the difficulty in reliably replicating transfer impedes mechanistic follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C44 represent interpretations of the experimental data. While the positive results support circulatory trafficking, the low reproducibility and lack of mechanistic understanding prevent definitive conclusions. The hypothesis is plausible but requires more robust experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "9e752ed7-afc2-49d3-814b-d542bee723d0",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The epididymis is a common off-target tissue for various Cre drivers, with a many-to-many mapping between sender tissues (neuronal subpopulations, adipose) and recipient tissues (epididymis, seminal vesicle, prostate, intestine), and different Cre lines showing distinct tissue-specific patterns arguing against non-specific uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 synthesize the experimental findings across multiple Cre lines and tissues. The differential patterns of recombination are well-documented and support the interpretation that this is not simply non-specific uptake by 'sink' tissues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "82553922-c110-415d-a2b7-0b004a4f6cdc",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The findings confirm prior reports of germline activity for NesCre and Syn1Cre drivers and identify many new examples of off-target Cre activity, which may have been previously missed due to the small epididymis research community.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by the experimental data and cited literature. Claim C50 is speculative but reasonable given the specialized nature of epididymis research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "39716c03-e5c4-46ca-8e2c-074b31670bbc",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Even in double transgenics with robust epididymal recombination, the recombination pattern is fairly patchy within the epididymal epithelium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by histological observations throughout the manuscript (e.g., Figures 3-5). This mosaic pattern has important implications for interpreting conditional knockout studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "165f3a86-1c15-4d4e-8821-196b7245d5d7",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Off-target Cre activity in the epididymis is unlikely to result from leaky transgene expression, as most neuron-specific genes are not detectably expressed in adult epididymis, and AAV-mediated Cre induction in the brain produces epididymal recombination, strongly suggesting that Cre activity synthesized in neurons is transported to the epididymis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 present a logical argument supported by multiple lines of evidence: gene expression data (C53), AAV experiments that cannot be explained by leaky expression (C54), and the combination of transgenic and AAV approaches ruling out artifacts specific to either method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "b30bac04-8a22-4d07-83af-e55bfd3f5468",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Delivery of Cre via peripheral neuronal termini is unlikely because adipose-specific Cre drives epididymal recombination (arguing against requirement for neuronal termini), and unilateral brain AAV injections produce bilateral epididymal expression (arguing against short-range neuronal delivery).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 present logical arguments supported by experimental data (AdipoqCre results in Figure 5, bilateral epididymal expression from unilateral AAV in Figure 2). The reasoning effectively rules out direct neuronal delivery mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "7ad79695-c3d1-4ffd-ac2e-9d25d451912d",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Parabiosis and serum transfer studies support the hypothesis that Cre activity synthesized in various tissues can access the circulation and be trafficked to the male reproductive tract.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C59 is an interpretation of the parabiosis and serum transfer data. While some positive results support this hypothesis, the low reproducibility and efficiency significantly limit confidence in this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "64fb56eb-3ee3-4f06-a5b3-79a1f8ec1f67",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The circulating Cre activity likely consists of Cre mRNA (rather than protein) present in exosomes or ribonucleoprotein complexes, and Cre mRNA can be detected by PCR in the circulation of multiple Cre lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 are explicitly speculative. Claim C62 is supported by RT-PCR data (Figure 6\u2014figure supplement 2), but detection of Cre mRNA in circulation does not definitively prove it is the functional cargo responsible for epididymal recombination. The RNA vs. protein question remains unresolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "6b182d7e-36d8-41fa-9b70-5a9c254195c9",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "There is abundant precedent for RNA trafficking between tissues in C. elegans, plants, and mammals, though reports of trafficking to mammalian germ cells are sporadic, and reproductive support tissues could serve as intermediaries between distal tissues and gametes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C70 are supported by cited literature and represent established knowledge in the field. These provide important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "b188c584-d7da-4edc-b105-163141ba119b",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The epididymis is a tissue where sperm mature for approximately 1-2 weeks following testicular development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is established knowledge about epididymal biology and provides important context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "b637be6f-4f31-4b20-9b96-308d08e3690c",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Prior studies have reported that serum transfers can affect sperm epigenetics and offspring phenotypes, and that brain-derived microRNAs might be delivered to sperm and the next generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by cited literature and provide important context suggesting biological relevance for inter-tissue communication affecting reproduction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "a70eb27f-4fa3-4764-bc3c-a5491d600b52",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "With the exception of Syn1 and Nestin, there is no evidence for neuronal Cre trafficking directly to sperm cells, and even for Syn1/Nestin, germline recombination likely occurs early in spermatogenesis rather than during epididymal transit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by imaging data (Figure 4\u2014figure supplement 2) showing absence of sperm labeling for most Cre lines. The interpretation about timing of Syn1/Nestin recombination is reasonable based on the expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "37ab888b-9428-441b-9ae8-a7efaa6f42df",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "The data place the epididymis as a mediator between neuronal information processing and sperm epigenome programming, with CNS-derived information potentially driving altered epididymal physiology and consequent remodeling of sperm small RNAs, proteins, or surface lipids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C78 are interpretations and speculation about biological implications. While the data support Cre trafficking to the epididymis, there is no direct evidence that this has physiological consequences for sperm maturation or epigenetic programming. This remains a hypothesis for future testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    },
+    {
+      "id": "b435c7f4-5409-4630-8411-65302e21d78f",
+      "content_id": "e66bec47-2ef0-4298-a6fb-32553bb2de5d",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Different Cre drivers result in recombination in different parts of the epididymis, arguing for some level of specificity between tissue-derived exosomes and target cell populations rather than non-specific uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by the differential regional patterns documented throughout the manuscript (e.g., cauda-specific for some drivers, throughout for others). This is an important observation arguing against the 'trash can' model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:02:58.910581Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5f497beb-69bf-43db-a901-7a71f3f75aa6",
+      "result_id": "c0d098ea-f173-4e4d-8120-718b0f0b5e10"
+    },
+    {
+      "claim_id": "86681d0d-5e76-4c7a-aaf9-8f233d8f54cc",
+      "result_id": "c0d098ea-f173-4e4d-8120-718b0f0b5e10"
+    },
+    {
+      "claim_id": "1d35f92f-c2fe-4eed-b1b8-7b7553669d4a",
+      "result_id": "0a95b21c-bab9-403b-b019-826596e17d6d"
+    },
+    {
+      "claim_id": "3ec7f28b-153c-4106-a833-dd61cbd33a6a",
+      "result_id": "0a95b21c-bab9-403b-b019-826596e17d6d"
+    },
+    {
+      "claim_id": "0bf4a3d6-fe45-4d5b-b6d0-0397da6f2b27",
+      "result_id": "0a95b21c-bab9-403b-b019-826596e17d6d"
+    },
+    {
+      "claim_id": "8ae0953b-950a-4713-8243-34ac7f14af13",
+      "result_id": "921c109c-2237-4e88-a6a5-7c84ab367f04"
+    },
+    {
+      "claim_id": "9385e67b-ebb6-455e-83b5-c8e8e1438d99",
+      "result_id": "921c109c-2237-4e88-a6a5-7c84ab367f04"
+    },
+    {
+      "claim_id": "f4d03b55-4ce2-4541-9146-d7e930c0ffc8",
+      "result_id": "921c109c-2237-4e88-a6a5-7c84ab367f04"
+    },
+    {
+      "claim_id": "19b81f1b-1161-4c2a-a9ec-a96ebe01a935",
+      "result_id": "54a98f42-ad3a-4d63-b110-6f7f130184a7"
+    },
+    {
+      "claim_id": "f3695b88-3034-484a-a23b-13c78103ab9d",
+      "result_id": "54a98f42-ad3a-4d63-b110-6f7f130184a7"
+    },
+    {
+      "claim_id": "d2e0da03-6781-4407-9864-53f9837236bf",
+      "result_id": "54a98f42-ad3a-4d63-b110-6f7f130184a7"
+    },
+    {
+      "claim_id": "464f531a-cbb0-4f35-9efe-6e8ad6330574",
+      "result_id": "54a98f42-ad3a-4d63-b110-6f7f130184a7"
+    },
+    {
+      "claim_id": "54e6a1d0-5fc9-4f19-be69-02c06910bec3",
+      "result_id": "086d1407-9b66-4102-882b-c6ab838e79d6"
+    },
+    {
+      "claim_id": "d844ad98-f205-4144-959c-30b82976cbaf",
+      "result_id": "086d1407-9b66-4102-882b-c6ab838e79d6"
+    },
+    {
+      "claim_id": "c1affcbb-ef18-4a1e-9243-c866d0388a14",
+      "result_id": "eee4e0b9-6be6-4df4-a5b2-e23ce4886fb2"
+    },
+    {
+      "claim_id": "77c62fba-c335-4ba5-bd84-581c0799a7b0",
+      "result_id": "eee4e0b9-6be6-4df4-a5b2-e23ce4886fb2"
+    },
+    {
+      "claim_id": "01046163-ada6-4aa3-bd24-317e0f8b8c24",
+      "result_id": "eee4e0b9-6be6-4df4-a5b2-e23ce4886fb2"
+    },
+    {
+      "claim_id": "6b608a35-b7e7-4f64-b4df-7e8f411bdb62",
+      "result_id": "eee4e0b9-6be6-4df4-a5b2-e23ce4886fb2"
+    },
+    {
+      "claim_id": "19a161a0-a234-419b-a3d3-67eec0da9458",
+      "result_id": "eee4e0b9-6be6-4df4-a5b2-e23ce4886fb2"
+    },
+    {
+      "claim_id": "08b02986-4672-4eb6-85bd-405d52899f3f",
+      "result_id": "dcd154cd-b9a1-4d8b-84f6-32e29d55cb78"
+    },
+    {
+      "claim_id": "7362c0ed-6122-4e4c-b01e-bbcc9a3d4f67",
+      "result_id": "dcd154cd-b9a1-4d8b-84f6-32e29d55cb78"
+    },
+    {
+      "claim_id": "3e02fc08-6c71-4368-b25f-f216d12dac0d",
+      "result_id": "dcd154cd-b9a1-4d8b-84f6-32e29d55cb78"
+    },
+    {
+      "claim_id": "8553fc95-103d-4bea-b7d2-40a71b72063c",
+      "result_id": "dcd154cd-b9a1-4d8b-84f6-32e29d55cb78"
+    },
+    {
+      "claim_id": "42b5d3ca-d118-4eb3-8e3d-d8c55f38c3f2",
+      "result_id": "dcd154cd-b9a1-4d8b-84f6-32e29d55cb78"
+    },
+    {
+      "claim_id": "aefd8c66-ec95-4e73-848f-0664df643aa8",
+      "result_id": "dcd154cd-b9a1-4d8b-84f6-32e29d55cb78"
+    },
+    {
+      "claim_id": "17da3bfe-d41c-4d94-87a8-9e2adb627928",
+      "result_id": "9e0b057e-6933-4ddf-891d-8cdadc208de6"
+    },
+    {
+      "claim_id": "4647724a-a147-40a3-8bde-bef0e30899cf",
+      "result_id": "9e0b057e-6933-4ddf-891d-8cdadc208de6"
+    },
+    {
+      "claim_id": "f396d473-2383-42ea-a8d6-ddc73ffdd638",
+      "result_id": "7671f121-c658-4688-9612-c79f1ec3e277"
+    },
+    {
+      "claim_id": "b20c9954-5273-437d-ac76-46af6c4f5c72",
+      "result_id": "e998f44e-8856-498c-9c8e-733917ab2a8d"
+    },
+    {
+      "claim_id": "8bf34b75-d70a-4154-be16-573e57db6f17",
+      "result_id": "e998f44e-8856-498c-9c8e-733917ab2a8d"
+    },
+    {
+      "claim_id": "5a15a52e-af2b-410f-9a42-0d4635aa0272",
+      "result_id": "e998f44e-8856-498c-9c8e-733917ab2a8d"
+    },
+    {
+      "claim_id": "f230304d-c374-4cdb-8fdb-b1baa1555dd1",
+      "result_id": "e998f44e-8856-498c-9c8e-733917ab2a8d"
+    },
+    {
+      "claim_id": "8d6105d8-747d-41bc-bd68-112b7e21349f",
+      "result_id": "3bef79f2-decb-41b1-875b-b9d116b73865"
+    },
+    {
+      "claim_id": "b4599309-5251-435f-9c8a-fa0685cb1374",
+      "result_id": "3bef79f2-decb-41b1-875b-b9d116b73865"
+    },
+    {
+      "claim_id": "32ade766-99f5-4528-b479-564c19f6e6cf",
+      "result_id": "1806bb88-69b8-46df-8712-f20df3ed6dab"
+    },
+    {
+      "claim_id": "3de868bb-9c78-4a93-b8fe-b2e031b6c2db",
+      "result_id": "1806bb88-69b8-46df-8712-f20df3ed6dab"
+    },
+    {
+      "claim_id": "eb6de62a-51bc-4a67-8e4f-916dfee412bc",
+      "result_id": "1806bb88-69b8-46df-8712-f20df3ed6dab"
+    },
+    {
+      "claim_id": "17bcb207-a034-4cea-9677-058524279963",
+      "result_id": "beb65208-b809-4868-9e8e-ce25d71cc0f9"
+    },
+    {
+      "claim_id": "bb2627d6-7603-4aeb-9dda-030917e5a3fb",
+      "result_id": "beb65208-b809-4868-9e8e-ce25d71cc0f9"
+    },
+    {
+      "claim_id": "b1799393-6559-4c71-96e9-00f8825854da",
+      "result_id": "beb65208-b809-4868-9e8e-ce25d71cc0f9"
+    },
+    {
+      "claim_id": "5a07ba94-b4e8-476a-b56d-8a2d7aaeef67",
+      "result_id": "beb65208-b809-4868-9e8e-ce25d71cc0f9"
+    },
+    {
+      "claim_id": "ec599272-6af0-4b6d-b7e8-8fec3a786454",
+      "result_id": "beb65208-b809-4868-9e8e-ce25d71cc0f9"
+    },
+    {
+      "claim_id": "3b0112ba-7ac8-4b1b-8ce3-6abadcb300e1",
+      "result_id": "adc89061-13e4-4f76-a17f-0d6ffb81ee97"
+    },
+    {
+      "claim_id": "cc7dde32-d08f-4d41-90a1-a9cacfc2ae0e",
+      "result_id": "adc89061-13e4-4f76-a17f-0d6ffb81ee97"
+    },
+    {
+      "claim_id": "9223cee9-62db-4cb4-828b-5c1d41c799ba",
+      "result_id": "9e752ed7-afc2-49d3-814b-d542bee723d0"
+    },
+    {
+      "claim_id": "8f07fb9e-9d22-4c7b-840a-fa9ab7554e50",
+      "result_id": "9e752ed7-afc2-49d3-814b-d542bee723d0"
+    },
+    {
+      "claim_id": "d16018bd-a517-4ba9-a86d-9b0ba576b3ec",
+      "result_id": "9e752ed7-afc2-49d3-814b-d542bee723d0"
+    },
+    {
+      "claim_id": "30fa10f6-581c-4f9d-98f7-50230b855fe9",
+      "result_id": "82553922-c110-415d-a2b7-0b004a4f6cdc"
+    },
+    {
+      "claim_id": "1deefaed-9dbc-41b4-8ec0-1d1b14a73abf",
+      "result_id": "82553922-c110-415d-a2b7-0b004a4f6cdc"
+    },
+    {
+      "claim_id": "b665c4b4-d1c6-4994-942d-d57030dba8a8",
+      "result_id": "82553922-c110-415d-a2b7-0b004a4f6cdc"
+    },
+    {
+      "claim_id": "4ffaada8-2de3-4a56-bb02-02100bc1a7d6",
+      "result_id": "39716c03-e5c4-46ca-8e2c-074b31670bbc"
+    },
+    {
+      "claim_id": "64449099-f855-4c08-97d4-4d8b39a9472c",
+      "result_id": "165f3a86-1c15-4d4e-8821-196b7245d5d7"
+    },
+    {
+      "claim_id": "d325b5bb-64eb-47c7-8bf1-4ac9cc46d435",
+      "result_id": "165f3a86-1c15-4d4e-8821-196b7245d5d7"
+    },
+    {
+      "claim_id": "6180da72-c1b1-4760-981b-24ce7ea284f0",
+      "result_id": "165f3a86-1c15-4d4e-8821-196b7245d5d7"
+    },
+    {
+      "claim_id": "98193528-45e7-4863-8e59-996b1b3beec0",
+      "result_id": "165f3a86-1c15-4d4e-8821-196b7245d5d7"
+    },
+    {
+      "claim_id": "c7937642-239d-4920-8df4-f5d5f2cd2bb0",
+      "result_id": "b30bac04-8a22-4d07-83af-e55bfd3f5468"
+    },
+    {
+      "claim_id": "42c454bb-7d3e-4a1a-8389-2c5d7d7385de",
+      "result_id": "b30bac04-8a22-4d07-83af-e55bfd3f5468"
+    },
+    {
+      "claim_id": "12ac439b-605a-4037-9e34-5c27a5e806f7",
+      "result_id": "b30bac04-8a22-4d07-83af-e55bfd3f5468"
+    },
+    {
+      "claim_id": "698751f7-8898-4420-b8dd-70c3c98cb3c7",
+      "result_id": "7ad79695-c3d1-4ffd-ac2e-9d25d451912d"
+    },
+    {
+      "claim_id": "dfe61857-3950-49e2-99b0-6ae766bf56b1",
+      "result_id": "64fb56eb-3ee3-4f06-a5b3-79a1f8ec1f67"
+    },
+    {
+      "claim_id": "8660a179-1d48-4bef-b6d5-0f3a67982ca9",
+      "result_id": "64fb56eb-3ee3-4f06-a5b3-79a1f8ec1f67"
+    },
+    {
+      "claim_id": "53e44507-fbba-40de-a3e3-3ed35cb42f8f",
+      "result_id": "64fb56eb-3ee3-4f06-a5b3-79a1f8ec1f67"
+    },
+    {
+      "claim_id": "026e0a3f-580b-413b-84f0-9f7a13753e28",
+      "result_id": "6b182d7e-36d8-41fa-9b70-5a9c254195c9"
+    },
+    {
+      "claim_id": "91d9b3d7-3d65-4f6b-bca6-f57493115131",
+      "result_id": "6b182d7e-36d8-41fa-9b70-5a9c254195c9"
+    },
+    {
+      "claim_id": "27864356-b0bc-472f-a675-ea1972dade3b",
+      "result_id": "6b182d7e-36d8-41fa-9b70-5a9c254195c9"
+    },
+    {
+      "claim_id": "e26a60a1-7af2-4655-b70e-33423cff1cfb",
+      "result_id": "6b182d7e-36d8-41fa-9b70-5a9c254195c9"
+    },
+    {
+      "claim_id": "19c7ffba-7bc2-4337-9a05-34048d1e9aab",
+      "result_id": "6b182d7e-36d8-41fa-9b70-5a9c254195c9"
+    },
+    {
+      "claim_id": "f76b3b64-8b65-40d9-8ef8-3bba5bafda76",
+      "result_id": "6b182d7e-36d8-41fa-9b70-5a9c254195c9"
+    },
+    {
+      "claim_id": "eac8a368-ba02-4be1-a552-8cd86099dde6",
+      "result_id": "6b182d7e-36d8-41fa-9b70-5a9c254195c9"
+    },
+    {
+      "claim_id": "408cee61-245a-40dd-80ab-3833b3443ea3",
+      "result_id": "6b182d7e-36d8-41fa-9b70-5a9c254195c9"
+    },
+    {
+      "claim_id": "fdb07eb7-681f-43ea-90c5-78159b88c3b3",
+      "result_id": "b188c584-d7da-4edc-b105-163141ba119b"
+    },
+    {
+      "claim_id": "ecf26f5c-dc75-4ee0-85e8-838609af1439",
+      "result_id": "b637be6f-4f31-4b20-9b96-308d08e3690c"
+    },
+    {
+      "claim_id": "4ae44ec1-91d9-4a3d-a8fa-ceb5a13f2f0d",
+      "result_id": "b637be6f-4f31-4b20-9b96-308d08e3690c"
+    },
+    {
+      "claim_id": "86621430-5038-4264-82d5-cbd541a8e7f0",
+      "result_id": "b637be6f-4f31-4b20-9b96-308d08e3690c"
+    },
+    {
+      "claim_id": "fb892a3e-a546-4d60-a984-0c959d1de3f8",
+      "result_id": "a70eb27f-4fa3-4764-bc3c-a5491d600b52"
+    },
+    {
+      "claim_id": "cc56b4cc-ed5c-40a3-9e28-22f793b62133",
+      "result_id": "a70eb27f-4fa3-4764-bc3c-a5491d600b52"
+    },
+    {
+      "claim_id": "96f208ed-2cac-4255-9c0b-21d594531660",
+      "result_id": "37ab888b-9428-441b-9ae8-a7efaa6f42df"
+    },
+    {
+      "claim_id": "5bd24258-dd43-4cc1-9fb0-7d922b864d7b",
+      "result_id": "37ab888b-9428-441b-9ae8-a7efaa6f42df"
+    },
+    {
+      "claim_id": "9ba854cf-c3da-4f14-b2fd-2e410fb3952d",
+      "result_id": "b435c7f4-5409-4630-8411-65302e21d78f"
+    }
+  ],
+  "comparisons": []
+}

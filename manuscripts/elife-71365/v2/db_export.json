@@ -1,0 +1,1365 @@
+{
+  "submission": {
+    "id": "12422a05-db45-4737-98aa-78943401c4a5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:54:12.447629Z",
+    "updated_at": "2025-12-03T11:54:12.447629Z"
+  },
+  "content": [
+    {
+      "id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "submission_id": "12422a05-db45-4737-98aa-78943401c4a5",
+      "content_type": "manuscript",
+      "content_text": "# How to assemble a scale-invariant gradient\n\n## Authors\n\n- Arnab Datta<sup>1</sup> ([ORCID: 0000-0002-7474-1720](https://orcid.org/0000-0002-7474-1720))\n- Sagnik Ghosh<sup>1</sup> ([ORCID: 0000-0001-7174-8479](https://orcid.org/0000-0001-7174-8479)) \u2020\n- Jane Kondev<sup>1</sup> ([ORCID: 0000-0001-7522-7144](https://orcid.org/0000-0001-7522-7144))\n\n### Affiliations\n\n1. Department of Physics, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIntracellular protein gradients serve a variety of functions, such as the establishment of cell polarity or to provide positional information for gene expression in developing embryos. Given that cell size in a population can vary considerably, for the protein gradients to work properly they often have to be scaled to the size of the cell. Here, we examine a model of protein gradient formation within a cell that relies on cytoplasmic diffusion and cortical transport of proteins toward a cell pole. We show that the shape of the protein gradient is determined solely by the cell geometry. Furthermore, we show that the length scale over which the protein concentration in the gradient varies is determined by the linear dimensions of the cell, independent of the diffusion constant or the transport speed. This gradient provides scale-invariant positional information within a cell, which can be used for assembly of intracellular structures whose size is scaled to the linear dimensions of the cell, such as the cytokinetic ring and actin cables in budding yeast cells.\n\n## Introduction\n\nThe living cell is not a well-mixed bag of chemicals. Different parts of the cell have different chemical composition and these spatial inhomogeneities are critical to life. The textbook example of this comes from the study of early fly development where spatial patterns of gene expression provide the information used by the embryo to set up the animal\u2019s body plan (Gregor et al., 2005). While the early embryo is a syncytium hundreds of microns in size, spatial patterns of proteins can also be observed in much smaller cells, like for example in budding yeast, where they drive the establishment of polarity (Chiou et al., 2017).\n\nSelf-assembly of structures within the cell can also exhibit spatial patterns. For example, cell division is typically facilitated by the formation of a cytokinetic ring, a multicomponent protein structure that assembles at a specific location in the dividing cell. In cells that divide symmetrically, the cytokinetic ring self-assembles in the middle of the cell. This observation raises the intriguing question, how does the cell \u2018know\u2019 where its middle is? In the case of Escherichia coli, pole-to-pole oscillations of the Min proteins provide information about its middle and guide the assembly of the cytokinetic ring (Ramm et al., 2019). Budding yeast cells on the other hand divide asymmetrically, by assembling the cytokinetic ring close to the cell pole. Remarkably, recent experiments have found that yeast cells of different size assemble cytokinetic rings of different size, such that the diameter of the ring scales with the diameter of the cell (Kukhtevich et al., 2020). This scaling property implies that the self-assembly of the cytokinetic ring occurs at a location that is at a fixed relative distance from the pole. In other words, the location of the ring is specified not in absolute units of distance but in units relative to the cell diameter.\n\nThe process of assembling a cytokinetic ring is an example of a common engineering problem faced by cells: how to set up a coordinate system that specifies positional information? This engineering challenge is usually met by the formation of an intracellular gradient, whereby the concentration of a molecular species varies across the dimensions of the cell. In the presence of such a gradient, chemical reactions, such as those leading to the formation of the cytokinetic ring, can be localized to specific region of the cell.\n\nIntracellular gradients have been shown to be involved in a variety of processes in cells (Folkmann and Seydoux, 2018; Reber and Goehring, 2015; Hubatsch and Goehring, 2020). A well-studied example is provided by the aforementioned Bicoid gradient in the fruit fly embryo, which plays a role in patterning gene expression along the length of the cell (Gregor et al., 2005; Grimm et al., 2010). The Bicoid protein is synthesized at the anterior of the embryo from maternally deposited Bicoid mRNA localized to the anterior pole. The newly synthesized protein diffuses throughout the cell and it degrades over time, leading to a protein gradient with a higher concentration near the source. Similarly, the MEX-5 gradient in the Caenorhabditis elegans zygote (Wu et al., 2018) is involved in asymmetric division of the cell. MEX-5 exists in two phosphorylation states, one which is fast diffusing (FD) and the other is slow diffusing (SD). While the FD species is present uniformly throughout the cell, the switch from FD to SD is faster at the anterior end resulting in a gradient of SD MEX-5. Another well-studied protein gradient is Pom1 in fission yeast (Allard et al., 2019; Moseley et al., 2009) which controls cell division at the middle of the cell. Like MEX-5, Pom1 exists in two states, an SD one that is bound to the membrane and an FD state in the cytoplasm. Pom1 is recruited to the cell surface near the cell poles, and this results in a higher membrane-bound concentration near the pole than the middle of the cell.\n\nIn the fruit fly embryo, the Bicoid protein, which is produced from Bicoid mRNA localized at the anterior pole, freely diffuses in the cytoplasm and undergoes degradation with a lifetime $\\tau$. The combined effect of protein production, diffusion, and degradation leads to a concentration of Bicoid that varies along the anterior-posterior axis. The dynamics of the Bicoid gradient can be described by a one-dimensional reaction-diffusion equation (Gregor et al., 2005):\n\n$$\n\\frac{\u2202c}{\u2202t}=D\\frac{\u2202^{2}c}{\u2202^{2}z}\u2212\\frac{c}{\\tau}.\n$$\n\nThe steady-state solution to this equation is an exponentially decaying concentration gradient, $cz=c_{0} e^{-z/\\lambda}$ where $\\lambda=\\sqrt{\\tauD}$ is the decay length. Here, $c(z)$ is the concentration of Bicoid along the anterior-posterior ($z$) axis and $D$ is the diffusion constant of Bicoid. Embryos of different fly species have Bicoid gradients that are scaled to their linear dimensions, which can vary by an order of magnitude (Gregor et al., 2005). This observation provides a key motivation for the theoretical investigation herein, of a mechanism that can produce such a scale-invariant intracellular gradient.\n\nDifferent mechanisms for assembling scale-invariant gradients have been previously discussed (Ben-Zvi et al., 2011b). They typically start with Equation 1 and consider ways in which scaling can be achieved by effectively making the diffusion rate, or the lifetime of the protein, sensitive to the size of the cell in which the gradient is established. For example, one idea is that the protein degradation in the fly embryo occurs in the nuclei and therefore the effective degradation rate is proportional to the density of nuclei (Gregor et al., 2007). Regardless of embryo size, the number of nuclei, which in the early fly embryo are located at its surface, is fixed at a given stage of development, and therefore their number density scales inversely with the surface area $\u223c1/L^{2}$ ; here, $L$ is the linear dimension of the embryo. This relation leads to an effective protein lifetime $\\tau~L^{2}$ and therefore to linear scaling of the decay length with embryo length, $\\lambda=\\sqrt{\\tauD} ~L$.\n\nOther mechanisms that employ two diffusing morphogens that are produced from opposing ends of the cell (or tissue) have been proposed. These mechanisms produce scaling of the gradient from the interactions of the two morphogens, which activate and suppress each other (Ben-Zvi et al., 2011b). For example, in the expander-repressor model (Ben-Zvi and Barkai, 2010), the interactions between the repressor, produced at the anterior pole, and the expander, produced at the posterior pole, fix the repressor concentration $c\\frac{z}{\\lambda }$ at the posterior pole, that is, $c\\frac{L}{\\lambda }=const$. This then leads to scaling of the decay length of the repressor gradient $\\lambda$ with the distance between the two poles $L$. It has been argued that this mechanism is responsible for the Dpp activation gradient in Drosophila wing imaginal discs (Ben-Zvi et al., 2011a).\n\nHere, we propose a mechanism of gradient formation that makes use of directed transport of proteins along the surface of the cell. This type of cortical transport is known to occur in early embryos of C. elegans due to the contractility of the cortical layer of actin and myosin (Mayer et al., 2010), but also in much smaller cells, like budding yeast with its polar transport along actin cables confined to the cell surface (Chesarone-Cataldo et al., 2011), or the motor-driven transport along microtubules in cilia, such as in Chlamydomonas cells (Ishikawa and Marshall, 2011). Our key result is that directed transport of proteins along the cell cortex to the cell pole, when coupled to diffusion in the cell interior, produces a scale-invariant gradient. We show that the shape of the gradient is solely determined by the linear dimensions of the cell. Namely, for biologically realistic parameters that correspond to efficient capture of proteins by the surface transport, the gradient is independent of the diffusivity of the proteins and their transport speed, as well as the chemical rate constants that describe the binding and unbinding of the proteins from the molecules involved in their transport.\n\n## Results\n\n### Polar transport model of gradient formation\n\nIn a variety of cells (fission yeast [Kovar et al., 2011], budding yeast [Chesarone-Cataldo et al., 2011], Drosophila oocyte [Raman et al., 2018]), there exists a polar arrangement of cytoskeleton filaments, leading to transport of proteins toward the anterior pole, as illustrated in Figure 1. Following the example of actin cables in budding yeast cells (Chesarone-Cataldo et al., 2011), we consider a network of filaments that is localized to the surface of the cell. Proteins that diffuse in the cell\u2019s cytoplasm can be captured by molecular motors moving along the filaments toward the anterior pole, where they are released (protein release before it reaches the pole is considered in a later section). This combined process of polar transport and cytoplasmic diffusion leads to a protein gradient, with an accumulation of the proteins at the anterior cell pole. The key result of this paper is that the gradient formed by this \u2018polar transport\u2019 mechanism is scale-invariant and controlled solely by the geometry of the cell.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71365/elife-71365-fig1-v2.jpg)\n\n**Figure 1.:** Transport of proteins (red) in the cell is a combination of diffusion and polar transport. Diffusion occurs throughout the cytoplasm. When diffusing proteins encounter motor proteins (black arrows) moving along polar filaments (green) that contour the cell surface, they can be taken up by the motors and delivered to the cell\u2019s anterior pole. The anterior pole acts as a source, while the filaments along the surface of the cell serve as a sink of diffusing proteins. The result of this combined polar transport and diffusion is a protein gradient that extends along the polar ($z$) axis of the cell, with proteins accumulating toward the anterior pole.\n\nTo understand the geometric nature of the gradient, we can employ a simple argument that relates the gradient formed by the polar transport mechanism to the diffusion-degradation model (Equation 1). Instead of protein degradation proteins are removed from the cytoplasm when they are captured by the motors moving along the cell\u2019s cortex. The typical time for a protein diffusing in the cytoplasm to reach the cell\u2019s cortex is $\\tau_{D}\u2248R^{2}/D$, where $R$ is the radius of the cell (Figure 1) and $D$ is the diffusion constant of the proteins in the cytoplasm. If we think of $\\tau_{D}$ as the lifetime of a protein in the cell, before it is captured by the motor proteins, we can use the diffusion-degradation model (Equation 1) to describe the concentration of proteins in the cytoplasm. In this case, the steady-state gradient is exponential, as in the diffusion-degradation model, with a length scale of spatial decay from the anterior pole given by $\\lambda\u2248\\sqrt{D\\tau_{D}}=R$. In other words, the length scale that defines the gradient is given by the radius of the cell and is independent of the diffusion constant, or the speed of motor transport. The gradient scales with the linear dimensions of the cell thereby providing positional information that is independent of cell size, similar to what is observed for the Bicoid gradient in embryos of different fly species (Gregor et al., 2005).\n\nThis simple calculation based on Equation 1 ignores details of the cell shape and it assumes that every protein reaching the surface of the cell is captured and transported to the pole. Next, we address these shortcomings and show that a more careful analysis does not fundamentally change the main conclusion, that combined cytoplasmic diffusion and cortical transport of proteins to the cell pole leads to a scale-invariant protein gradient.\n\nTo compute the protein gradient produced by different cell shapes, we consider only shapes with azimuthal symmetry, namely, spherical, spheroidal, and cylindrical. The dynamics of the concentration of the protein in the cytoplasm ($c$) is described by a set of partial differential equations that describe protein diffusion, capture, and transport by surface-bound motors, and release at the anterior pole of the cell.\n\nThe first equation,\n\n$$\n\\frac{\u2202c}{\u2202t}=D\u2207^{2}c+j(t)\\delta(r\u2212r_{0})\n$$\n\ndescribes the diffusion of proteins in the cytoplasm, with a source term that accounts for the release of proteins, which are transported along the surface, at the anterior pole. Proteins are released slightly off the pole, at $r_{0}=r_{anterior pole}-0,0,\u03f5$ , where $\u03f5\u226asize of the cell$. (Note, in the case of the sphere, the coordinates for the two cell poles are $r_{anterior pole}=(0,0,R)$ and $r_{posterior pole}=(0,0,-R)$.) This shift off pole is required to make the partial differential equations well defined, and it has a negligible effect on the protein gradient.\n\nThe source term in Equation 2.1 is, by continuity, equal to the protein current (number of proteins per unit time)\n\n$$\nj(t)=2\\piv\u00a0limz\u2192z_{anterior\u00a0pole}c_{s}(z,\u00a0t)\u03c1(z)\n$$\n\nthat are delivered to the release point by action of motors moving with speed $v$. Here, $c_{s}(z,t)$ is the protein concentration on the surface of the cell at position $z$ along the anterior-posterior axis, while $\u03c1z$ is the radius of the cell at that same position. To obtain the protein current at the release point, we consider the current through a circle of perimeter $2\\pi \u03c1z$ and take the limit when this circle shrinks to a point that is the anterior pole.\n\nThe third and final equation,\n\n$$\n\\frac{\u2202c_{s}}{\u2202t}=\u2212D\u2207c\u200b|_{at\u00a0surface}\u22c5n^\u2212v\u22c5\u2207c_{s},\n$$\n\nwhere $n^$ is the unit vector normal to the cell surface, describes the directed transport of the proteins on the surface, by motors moving with velocity $v$ along the polar direction of the cell. The first term in this equation is a source term that describes the diffusive encounter of the surface-bound motors with proteins in the cytoplasm. A key assumption here, which we reconsider later, is that every evert diffusional encounter of the protein with the surface leads to capture by a motor.\n\nThese partial differential equations come with two boundary conditions: (i) To account for the assumption that all proteins diffusing in the cytoplasm, when they reach the cell cortex, are taken up by the motors, we set the cytoplasmic concentration $c$ to zero at the surface of the cell, that is, $c(r_{surface} ,t)=0$. (ii) The surface concentration $c_{s}$ is set to zero at the posterior pole, $c_{s}(r_{posterior pole}, t)=0$ to account for the fact that there is no influx of proteins from any other point on the surface to the posterior pole.\n\nSince proteins are only captured and transported by motors moving along the filaments lining the cell surface, that is no proteins are produced or degraded over the time when the gradient is observed, the total number of proteins is assumed fixed, $\\int_{volume}c+\\int_{surface}c_{s}=N$.\n\nIn steady state, $jt=j$ is time independent, and since we are only interested in the concentration gradient of proteins diffusing in the cytoplasm, Equation 2.1 simplifies to\n\n$$\n\u2207^{2}c=\u2212q\\delta(r\u2212r_{0}),\n$$\n\nwhere $q=\\frac{j}{D}$ and the boundary condition $cr_{surface}=0$ accounts for the cytoplasmic proteins being taken up by the cortical transport. To compute the steady-state gradient, we note that Equation 3 for the cytoplasmic concentration is the same as the Poisson equation in electrostatics with $q= \\frac{j}{D}$ playing the role of a point charge, and the concentration $c$ is the analogue of the electrostatic potential. This equation automatically satisfies protein-number conservation as the source term balances the rate at which proteins are taken up at the surface due to Gauss\u2019 theorem.\n\nNext, we consider different cell geometries. Using a combination of simulations and analytic calculations, we show that the protein gradient formed by the polar transport model is determined solely by the cell geometry and scales with the linear dimensions of the cell.\n\n### Gradients in spherical cells of different size\n\nWe start by examining the simplest cell shape, a sphere. The direction of transport is toward the anterior pole. In Figure 2A, we show a snapshot of the steady-state distribution of proteins inside the cell that results from the combined polar transport and diffusion, obtained from direct simulations of the particle dynamics. As expected, proteins concentrate at the anterior pole of the cell. Figure 2B details how the shape of the gradient changes as we change the radius of the cell, while keeping the total concentration of proteins fixed. Changing the diffusion constant and velocity of polar transport only affects the fraction of particles that are on the surface of the cell versus the cytoplasm. In particular, it does not change the shape of the cytoplasmic gradient, which is what we focus on herein. The bump in the concentration profile at very short distances is due to the release point being placed at $\u03f5=0.05R$ away from the anterior pole.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71365/elife-71365-fig2-v2.jpg)\n\n**Figure 2.:** (A) Sample steady-state configuration obtained from the direct simulation of the polar transport model in a spherical cell with 1000 proteins (red). Direction of polar transport on the surface of the cell is toward the anterior pole, where the accumulation of proteins is observed. (B) Concentration of proteins along the polar, z-axis normalized by the average cytoplasmic concentration, for spherical cells of different radii. (C) Concentration profiles from B scaled by the cell radius. (D) Comparison between the steady-state solution of the polar transport equations (Equation 3), compared to the protein concentration obtained from simulations, for a spherical cell with radius $10 \\mum$. For all plots, the diffusion constant $D=1 \\mum^{2}/s$ and the transport speed along the cortex is $v=1\\mum/s$.\n\nFor the spherical cell, Equation 3 is the analogue of the electrostatic problem of a conducting spherical shell at zero potential with a charge at $r_{0}$ , which can be solved by placing an image charge $-\\frac{R}{r_{0}}q$ at $r_{out}=0,0,\\frac{R^{2}}{r_{0}}$ . Note that this is why the release point of proteins transported to the cell pole is placed slightly inside the cell, so that the continuum equations are well defined. In the electrostatic analogy, the Coulomb potential of the charge and its image combine to give the total potential, which solves the Poisson equation with the specified boundary condition. Therefore, the cytoplasmic concentration of the protein is given by\n\n$$\nc(r)=\\frac{q}{4\\pi|r\u2212r_{0}|}\u00a0\u2212\\frac{R}{r_{0}}\\frac{q}{4\\pi|r\u2212r_{out}|}.\n$$\n\nFrom this equation we can compute the concentration gradient along the polar, $z$-axis by averaging over the radial and angular coordinates:\n\n$$\nC(z)=\\frac{\\int_{0}^{\\sqrt{R^{2}\u2212z^{2}}}\\int_{0}^{2\\pi}d\u03c1\u00a0d\u03d5\u00a0\u03c1c}{\\pi(R^{2}\u2212z^{2})}=\\frac{2q}{R}\\frac{[(\\sqrt{1^{2}\u2212\\frac{z^{2}}{R^{2}}+(\\frac{z}{R}\u2212\\frac{b}{R})^{2}}\u2212|\\frac{z}{R}\u2212\\frac{b}{R}|)\u2212\\frac{a}{R}(\\sqrt{1^{2}\u2212\\frac{z^{2}}{R^{2}}+(\\frac{z}{R}\u2212\\frac{a}{R})^{2}}\u2212|\\frac{z}{R}\u2212\\frac{a}{R}|)]}{4\\pi(1\u2212\\frac{z^{2}}{R^{2}})},\n$$\n\nwhere $b=\u00a0R\u2212\u03f5,\u00a0a=\\frac{R^{2}}{b}$ . If we define the small release distance from the pole $\u03f5$ such that is scales with $R$, then $\\frac{b}{R}$ and $\\frac{a}{R}$ are both constants, independent of $R$. Note that the choice of the release point only affects the gradient on distances away from the pole that are of order $\u03f5$ (i.e., the bump in Figure 2D at $z\u223c\u03f5$) so a different choice of the release point will not disrupt the scaling property of the gradient in the bulk of the cell. Namely, at distances $z\u226b\u03f5$, Equation 5 can be expended in the small quantity $\u03f5/R$ and $\u03f5$ cancels out when we normalize the gradient by the average protein concentration.\n\nSince, typically the average protein concentration $(c_{0})$ in cells across cell sizes is observed to be constant (Milo and Phillips, 2015), the quantity we are interested in is $C(z)/c_{0}$ , where\n\n$$\nc_{0}=\\frac{\\int_{volume}c}{volume\u00a0of\u00a0the\u00a0cell}=\\frac{q}{8\\piR}[1\u2212\\frac{b^{2}}{R^{2}}]\n$$\n\nIn Figure 2D, we compare $C(z)/c_{0}$ obtained from combining Equations 5 and 6 to the concentration gradient obtained from direct simulations of particle dynamics (see Materials and methods), and we see excellent agreement. Furthermore, by inspection of the analytic formulas, we see that $C(z)/c_{0}$ is not a function of $z$ alone but of the ratio $z/R$. This implies that the cytoplasmic gradient scales with cell radius. Therefore, the positional information conveyed by the gradient is the relative distance from the anterior pole of the cell, rather than the absolute distance.\n\n### Gradients in cylindrical cells of different size and shape\n\nNext, we investigate the properties of the gradient in cells that are cylindrical in shape, such as Schizosaccharomyces pombe (fission yeast). This geometry introduces an additional length scale into the problem since the cylinder is defined by its length and radius. In particular, we investigate how changes in cell length affect the protein gradient. As in the case of the spherical cell, we assume that molecules upon reaching the cell surface are captured and transported along the surface to the pole of the cell, as shown in Figure 1. Similar results are obtained if we assume that transport occurs along cytoskeleton filaments extending along the central axis of the cylinder, as is the case of transport by myosin and kinesin motors in cilia. This case was examined in reference (Naoz et al., 2008) where the gradient of motor proteins was computed for a more detailed model of transport than included the rates of motors binding and unbinding from the filaments, but scaling of the concentration gradient with size was not investigated.\n\nIn Figure 3A and B, we show results from simulations of the polar transport model, where we vary the length of the cylinder while keeping the radius fixed. This is a biologically interesting case due to the fact that many cylindrically shaped cells, such as fission yeast (Mitchison, 1985), grow in this manner. The key observation we make from the simulations is that the gradient shape is roughly exponential, until it sharply falls off at the posterior pole of the cell; the decay length of the exponential is independent of the cell length, which only sets the extent of the gradient.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71365/elife-71365-fig3-v2.jpg)\n\n**Figure 3.:** (A) Configuration of the proteins obtained from simulation of the polar transport model with 1000 proteins (red circles). Directed transport on the surface of the cell is along positive z-direction. (B) Protein concentration along the z axis, normalized by the average cytoplasmic concentration, for cylindrical cells of different lengths and fixed radius, $R=10\\mum$. (C) Comparison between the steady-state solution of the polar transport equations and simulations. The analytic solution is an infinite series, and we compare the first term of this series to the results of simulations. The inset compares simulation results to the sum of the first 40 terms of the analytic solutions. For all plots, the diffusion constant $D=1\u00a0\\mum^{2}/s$ and the surface transport speed, $v=1\\mum/s$.\n\nWe confirm our observations from numerical simulations by solving analytically the steady-state concentration gradient (Equation 3) for the cylinder, by expanding the concentration into an infinite sum of Bessel functions (see Appendix A for details). This analytic solution is compared to simulation results in Figure 3C, inset. Furthermore, this infinite sum of Bessel functions is well approximated by the first term of the series\n\n$$\nc(\u03c1,\u00a0z)=\\frac{1}{Z}J_{0}(\\frac{\u03c1}{\\lambda})sinh(\\frac{L+z}{\\lambda})\n$$\n\nwhen $e^{2L/\\lambda }\u226b1$; here, $J_{0}$ is the Bessel function of order 0, $2L$ is the length of the cylinder, $\\lambda$ is the decay constant of the gradient, $\u03c1=\\sqrt{x^{2}+y^{2}}$ is the polar coordinate, and $Z$ is a constant set by the total number of proteins in the cell. This approximation provides a simple formula for the decay constant $\\lambda=R/2.4$, where 2.4 is the first root of J0. Clearly, the decay length $\\lambda$ does not depend on the length of the cylinder and the shape of the gradient is mostly determined by the radius of the cell.\n\nThe fact that the decay length of the gradient is set by the radius of the cylinder leads to another interesting result. Namely, even if the average concentration of molecules in the cytoplasm $c_{0}=\\intc(\u03c1,z)/V_{cell}$ is kept fixed as the cell elongates and its volume ($V_{cell}$) increases, the concentration at the midpoint $(z=0)$ of the cell will decrease exponentially with the length of the cell as $~ c_{0}e^{-2.4L/R}$. Therefore, the polar transport mechanism provides the cell with the means to detect its overall length by locally monitoring the concentration of the protein species in the gradient, even when the total protein concentration is not changing with cell size. This protein gradient could be used by the cell to self-assemble a structure at a specified relative position away from the cell pole, like the midpoint, at a time in the cell cycle when the cell length reaches a particular threshold value.\n\n### Gradients in spheroidal cells\n\nThe third shape that we examine is a spheroid, which roughly approximates the shape of a Drosophila embryo, or a budding yeast cell; see Figure 4A. Also, this shape is mathematically useful as it interpolates between the sphere and the cylinder. A spheroid is described by the equation: $\\frac{x^{2}+y^{2}}{R^{2}}+\\frac{z^{2}}{a^{2}}=1$, where we assume $a\\geqR$. When $a=R$ this equation describes a sphere, while for $a\u226bR$ the shape resembles a cylinder. Indeed, our calculations of the gradient in this case show how the result obtained for the sphere morphs to that of the cylinder, as the long axis of the spheroid gets longer and longer.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71365/elife-71365-fig4-v2.jpg)\n\n**Figure 4.:** (A) Configuration of the proteins obtained from simulation of the polar transport model in a spheroidal cell of radius $R=10\\mum$ and major axis $a=20\\mum$, and 1000 proteins. Direction of transport on the surface of the cell is along the positive z direction. (B) Protein concentration normalized by the average cytoplasmic concentration for spheroidal cells of different radii, with a fixed aspect ratio $\\frac{a}{R}=2$. The inset shows concentration profiles where the distance from the pole is scaled by a. (C) Comparison between the analytic solution and simulations. (D) Concentration profiles for spheroids with the same minor axis ($R=10\\mum$) and a varying major axis ($a$). The dashed line represents exponential decay with a decay constant $R/2.4$ as we computed above, for the case of a cylindrical cell. For all plots, the diffusion constant $D=1\u00a0\\mum^{2}/s$ and the transport speed along the cortex is $v=1\\mum/s$.\n\nFirst, we examine the situation when the cell size changes but the cell shape defined by the aspect ratio, $a/R$, is kept fixed. In this case a single length scale defines the size of the cell. In Figure 4A and B we show results of our particle simulations for this geometry. We observe that the gradient scales with the linear dimension of the cell. In Figure 4C we compare our analytic solution to results obtained from simulations. Like for the previous two cases the solution is obtained by solving Equation 3, which in this case can be written as an infinite sum of Legendre polynomials. (The full solution is given in Appendix B.)\n\nFigure 4D shows how $C(z)/c_{0}$ changes as we make the cell more oblong while keeping the radius fixed. The shape of the gradient changes from that of a sphere ($a=R$) to one that resembles the cylinder case ($a\u226bR$). In fact, the shape of the gradient in very oblong spheroids is well approximated by an exponentially decaying function of the distance from the pole (dashed line in Figure 4D), with a decay constant given by $R/2.4,$ which is the result we obtained for a cylinder of radius $R$.\n\n### Imperfect capture of proteins at the cortex\n\nSo far, we have only considered the case where a diffusing protein upon reaching the surface of the cell always gets taken up by a motor and is transported to the pole. In reality, we expect the binding of the protein to occur only occasionally, since no motor might be present at the point of impact of the protein on the surface. Also, even if the motor is present, not every collision between the protein and the motor will necessarily be productive leading to binding. To take this into account we reexamine our polar transport model by introducing a rate constant ($k_{on}$) that describes the binding of the proteins at the surface with motors moving along the filaments on the surface. This rate constant is the product of the second-order rate constant for proteins binding to motors and the number of motors per unit area of the cells surface (for details, see Appendix C). Therefore, $k_{on}$ has units of \u00b5m/s. If we incorporate this rate constant into our model, then at the cell boundary, the diffusive protein flux into the surface of the cell must match the protein uptake by the motors, which is described by a reactive boundary condition (Erban and Chapman, 2007),\n\n$$\n\u2212D\u2207c\u22c5n^\u200b|_{at\u00a0surface}=k_{on}c\u200b|_{at\u00a0surface};\n$$\n\nhere, $n^$ is the normal to the cell surface. The fully absorbing boundary condition studied thus far corresponds to the limit $k_{on}\u2192\u221e$, while for a fully reflecting surface, when there is no capture of proteins at the surface, $k_{on}=0$. In the limit when the surface of the cell is reflective, there is of course no gradient and diffusion will lead to a constant concentration of proteins in the cell.\n\nTo analyze the effect of the reactive boundary condition on the protein gradient, we did simulations of the polar transport model in spherical cells of different radii; see Figure 5A. We also solved analytically Equation 3 with this new boundary condition and compare it to the simulation results in Figure 5B. The solution is given as an infinite series of Legendre polynomials (see Appendix C), and we plot this solution for different parameter values in Figure 5C and D.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71365/elife-71365-fig5-v2.jpg)\n\n**Figure 5.:** (A) Protein concentration gradients (normalized by the average cytoplasmic concentration $c_{0}$) in spherical cells of different radii, computed by simulations of the polar transport model with 1000 particles. We use reactive boundary conditions with $k_{on}=0.1 \\mu$ m/s. (B) Comparison of the simulated protein gradient in a spherical cell, $R=10 \\mu$ m, with reactive boundary conditions ($k_{on}=0.1 \\mu$ m/s), to the analytical solution for the concentration profile (see Appendix C). (C) Analytic results for concentration gradients for different cell radii plotted against the distance from the pole scaled by the radius; $k_{on}=0.1 \\mu$ m/s. The scaling observed for fully absorbing boundary conditions (see Figure 2C) is absent. (D) Same as C, but now with $k_{on}=1 \\mu$ m/s. Scaling is approximately restored for most distances away from the pole. For all plots, the diffusion constant $D=1\u00a0\\mum^{2}/s$ and the transport speed along the cortex is $v=1\\mum/s$.\n\nWe find that the shape of the gradient is controlled by a dimensionless rate of capture, $k_{on}R/D$, where $R$ is the cell radius and $D$ is the protein diffusion constant. For small values of $k_{on}R/D$, which is the limit of reflecting boundary conditions, when the motors are not effective at capturing the proteins that arrive at the surface of the cell by diffusion, we find that the gradient flattens out and is no longer scale-invariant (see Figure 5C). On the other hand, for large values of the dimensionless rate of capture, $k_{on}R/D$, the shape of the gradient approaches that for a fully absorbing boundary condition and scaling is restored (see Figure 5D). In Appendix C we show that the condition $k_{on}R/D\u226b1$ corresponds to the condition that the number of motors on the surface, which can capture the diffusing proteins arriving at the surface, is larger than $R/b \u22481000,$ where $b$ is the size of the motor protein (typically, a few nanometers). Note that this is a very small fraction of motors needed to cover the whole surface of the cell, which is approximately $4\\piR^{2}/b^{2}$ .\n\n### Imperfect protein transport to the pole\n\nIn our model, we have assumed that once the protein molecules bind to the motors moving along the surface, they always get transported all the way to the anterior pole of the cell, where they are released. For example, this behavior is observed for proteins that take part in intraflagellar transport in Chlamydomonas (Chien et al., 2017). Still, there is always the possibility that the proteins will fall off the motor before the pole of the cell is reached. Therefore, next we consider the case of a perfectly reacting spherical cell where after a protein molecule is captured by a motor at the surface, it can detach into the cytoplasm with rate $\\gamma$. For this unbinding to have an effect on the gradient, the average time the protein spends bound to the motor $t_{bound}= 1/\\gamma$ should be less than the time it takes for the transport to get it to the pole, $t_{transport}\u223cR/v$, which is typically a few seconds.\n\nIn Figure 6, we show the simulation results for proteins diffusing in a spherical cell, captured at the surface by motors and transported to the pole, but now with a rate $\\gamma$ for them falling off the motor. In Figure 6A, we show the effect of $\\gamma$ on the protein gradient for the perfectly reactive spherical cell (Figure 2D). We see that, with decreasing $t_{bound}=1/\\gamma$, the gradient flattens out, as would be expected for $t_{bound}=0$, since this maps to the perfectly reflective cell surface. In Figure 6B, we show that even though the presence of a finite residence time of the protein on the surface makes the gradient flatter, the scaling with the radius of the cell is preserved.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/71365/elife-71365-fig6-v2.jpg)\n\n**Figure 6.:** (A) Concentration gradient obtained from simulation with 1000 proteins for various values of $t_{bound}$ with a spherical cell of radius $R=10 \\mum$. All other parameters are the same as in Figure 2. The analytic curve represents the gradient obtained from the polar transport model for a spherical cell. (B) Concentration gradients in a scaled coordinate for different values of $R$ with $t_{bound}=1 s$. For all plots, the diffusion constant $D=1\u00a0\\mum^{2}/s$ and the transport speed along the cortex is.$v=1\\mum/s$.\n\n## Discussion\n\nHerein, we analyze a model of gradient formation in cells that naturally leads to a protein gradient that scales with the linear dimensions of the cell. The key feature of the model is diffusion of proteins in the cytoplasm coupled to polar transport along the cell surface, which can be driven by motor transport, or cytoplasmic flow (Howard et al., 2011). In the case of a spherical cell, the gradient is approximately exponential with a decay length set by the cell\u2019s radius. In a cylindrically shaped cell, where the transport is along the long axis, the gradient is exponential with a decay length set by the radius, mostly independent of the length of the cell.\n\nThe emergence of a length scale, namely, the decay length of the protein gradient, which is due to the combined action of diffusion and advection, provides an alternative to the Turing mechanism, where a length scale is set by the diffusion constant and a reaction rate constant. Indeed, a number of recent papers have shown how the emergence of a length scale due to directed transport can lead to spatial patterns in concentration, which could be utilized by cells in the process of morphogenesis (Naoz et al., 2008; Howard et al., 2011; Hecht et al., 2009; Halatek et al., 2018). Typically, the mechanisms described in these papers lead to a length scale that is set by parameters such as the speed of transport, the diffusion constant, and the rates of chemical reactions. What is unusual about the model discussed here is that the length scale of the gradient is independent of all these parameters and is set solely by the geometry of the cell.\n\nRecently, such a gradient, one whose shape is defined by the shape of the compartment it forms in, was demonstrated in flagella of Giardia cells, where the directed transport of the non-motile kinesin-13 to the flagellar tips leads to an exponential gradient of kinesin-13. As predicted by our model, the decay length of the gradient was measured to be the same for all the flagella in Giardia, independent of their length, which varies between 7 and 14 \u00b5m. Furthermore, the decay length of the gradient is 0.4 \u00b5m, which is comparable to the radius of the flagella, as predicted by Equation 7.\n\nWhile no experiments to date have directly probed the mechanism we propose for gradient formation in spherically shaped cells, there are many examples of such cells where directed transport is coupled to diffusion, in the manner assumed by our model. A promising candidate is the budding yeast cell, where the growth of the bud is enabled by a system of actin cables that is set up in the mother cell. The actin cables (typically, 10 of them) span the length of the cell and are localized to the cell cortex. This cable system can set up polar gradients via the directed transport of proteins by myosin V motors that move along the cables toward the bud while carrying secretory vesicles. In fact, a gradient of the protein Smy1, which is bound to secretory vesicles has been reported (Eskin et al., 2016), but their dependence on cell size has yet to be measured.\n\nAnother way that a polar gradient can form in budding yeast cell is by proteins bound to the side of the actin cables being transported away from the bud by the treadmilling action of actin filaments. Treadmilling is expected to occur here by the dual action of actin polymerization, which occurs at the bud neck by the activity of formin proteins localized to the septin ring, and depolymerization, which occurs toward the opposite pole of the cell (Chesarone-Cataldo et al., 2011).\n\nTo get a sense of the size of the protein gradients one can expect in yeast cells due to the treadmilling of actin cables, we can make a simple order of magnitude estimate. The measured yeast cable extension rate is about $0.5\\frac{\\mum}{s}$ and there are about 10 cables per cell, each about 5 actin filaments thick (Chesarone-Cataldo et al., 2011). Given that about 300 actin monomers are in a micron of actin filament, this leads to an actin turnover rate of about $8\\times10^{3}$ monomers/s, due to the assembly and disassembly of the actin cables. In steady state, this flux of actin from the bud neck (the anterior pole), to the posterior pole of the cell is balanced by the diffusive flux going in the opposite direction, which is generated by the higher concentration $(c_{P})$ of actin at the posterior pole than at the anterior ($c_{A}$). Estimating this diffusive flux by the expression, $D\\frac{c_{P}-c_{A}}{2R}\\piR^{2}$ , where $D\u22481\\mum^{2}/s$ is the diffusion constant for actin monomers, $R\u22482\\mum$ is the radius of the yeast cell ($\\piR^{2}$ being the cross-sectional area), yields a concentration difference between the two poles $c_{P}\u2212c_{A}\u22483\\muM$.\n\nAnother intriguing possibility for experimentally measuring the polar gradient described by our model is provided by mRNA localization, which has been observed in many different cell types (for a review, see Holt and Bullock, 2009). Subcellular localization of mRNA is typically achieved by polar active transport of mRNA and localized anchoring at the cell pole. In some instances, like in the case of the bicoid mRNA localization in late oocytes of the fruit fly, the anchors are not persistent over relevant time scales and localization is achieved by continual active transport to the pole, in this case by dynein motors moving along microtubules (Weil et al., 2006). Here the localization of mRNA satisfies the key assumptions of our model, polar transport and dynamic attachment at the pole, that, we predict, can lead to a scale-invariant mRNA gradient. Note that, if the protein that is produced by translating the mRNA does not diffuse substantially over its lifetime, the scaling of the mRNA gradient will be imprinted on the related protein gradient.\n\nWhen defining the polar transport model (Figure 1), we described the transport of proteins as being due to molecular motors moving along filaments that have a polar arrangement. Instead of directed motion due to motors, advection of proteins to the pole of the cell could also be achieved by cytoplasmic flows (Howard et al., 2011). Furthermore, for our results to hold, directed transport to the pole is not required. The key ingredient, which is encoded in Equation 3, is that the cell pole serves as a source and the surface of the cell as the sink for proteins diffusing in the cytoplasm, while the total number of proteins stays fixed. For example, diffusion of proteins along the surface of the cell will do just as well as advection, as long as the proteins, once bound and diffusing on the surface, can only detach at one of the poles (e.g., due to an interaction with another factor localized at the cell pole). Another possibility is that proteins only experience diffusive transport in the cytoplasm but get \u2018activated\u2019 at the cell pole and \u2018deactivated\u2019 by an interaction with the cell surface. Again, in this case, the concentration of active protein in the cytoplasm will be given by Equation 3, and will therefore form a scale-invariant gradient of activity in steady state.\n\nAs described in the Introduction, a scale-invariant protein gradient is useful to a cell that is in need of determining position within the cell relative to its linear dimensions, such as in the case of patterning in development (Gregor et al., 2005). Another possible use for such a gradient could be in controlling the self-assembly of linear structures such as actin cables and flagella, which are precisely scaled to the linear dimensions of the cell (McInally et al., 2019; Bauer et al., 2021; Datta et al., 2020). For example, a recent study of actin cables in yeast found that when cells were mutated to grow abnormally large, the actin cables assembled to a length that was proportional to the cell radius (McInally et al., 2021). A hypothesized explanation of this phenomena is the presence of a scale-invariant gradient of depolymerizing activity. An intriguing possibility for the observed scaling of actin cable lengths with cell length is that cable dependent polar transport of depolymerizing proteins leads to their gradient and subsequent control of the length of the cables themselves.\n\nGiven the ubiquity of cortical transport in a variety of cells, we suspect that the mechanism of gradient formation described here could be in wide use. We hope that our theoretical results will provide impetus for experiments that will identify such gradients and test the proposal that self-assembly of structures that scale with the linear dimensions of the cell use such gradients as a read-out of the cell length.\n\n## Materials and methods\n\n### Simulation details\n\nAll the simulations start at time $t=0$ with $N$ protein molecules uniformly distributed inside the cell, whose shape is either a sphere, a cylinder, or a spheroid. For the diffusion constant of the proteins in the cytoplasm, we take $D=1\\mum^{2}/s$, while for the speed of transport we take $v=1 \\mum/s$, values typical for cytoplasmic diffusion and motor transport in cells. In each simulation step, we increase the time by $\u0394t,$ usually taken to be $0.001s$, and the position of the ith protein, if it is in the cytoplasm, is updated according to the following rule:\n\n$$\nr_{i}(t+\u0394t)=r_{i}(t)+\u03be_{i}\n$$\n\nHere, $\u03be_{i}$ is a Gaussian random variable with $\u03be_{i\\alpha}=0$ and $\u03be_{i\\alpha}\u03be_{i\\alpha^{`}}=\\sqrt{2D\u0394t}\\delta_{\\alpha,\\alpha^{`}}$ ; $\\alpha$ denotes the $x,y,z$-components of the position vector.\n\nWhen a protein molecule hits the surface of the cell, it gets taken up by the polar transport. If the point on the cell surface at which it is taken up by the transport is $r_{c}=x_{c}, y_{c}, z_{c}$ , then the distance the protein has to travel to get to anterior pole is $ d(z_{c})$. The time to reach anterior pole, or equivalently, the time the protein molecule spends on the surface is, $t_{s}= d(z_{c})/v$. So, after a molecule is taken up by the polar transport, it is released from the release point $r_{0}$ into the cytoplasm of the cell after time $t_{s}$ , or after $(t_{s}/\u0394t)$ simulation steps.\n\nThe distance to the anterior pole can be computed analytically for each of the cell shapes that we consider:\n\nWe run the simulation until the protein gradient has reached a steady state. To compute $C(z)$ the steady-state cytoplasmic protein gradient along the polar, $z$-axis, we split the cell into thin slices along the $z$-axis, compute the number of proteins in a given slice at position $z$, and divide by the volume of the slice. The average cytoplasmic protein concentration $c_{0}$ is the total number of proteins in the cytoplasm divided by the volume.\n",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "45a45d8a-85b9-41c9-8cc0-bbaaa2ff249a",
+      "submission_id": "12422a05-db45-4737-98aa-78943401c4a5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pierre Sens, https://ror.org/04t0gwh46 Institut Curie, CNRS UMR168 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71365.sa0](https://doi.org/10.7554/eLife.71365.sa0)\n\nHow biological patterns such as concentration gradient scale with the size of the cell or organism is a long-standing question in developmental and cell biology. In this study, Datta et al., show theoretically that directed membrane transport of biomolecules and their release at the cell pole results in a cytoplasmic gradient that scales with cell size if two requirements are met: the cell grows while maintaining its spheroid proportions, (i.e. not by elongation), and the binding of the cytoplasmic fraction of the biomolecule to the membrane should be close to irreversible. While there are no experiments available to date to directly probe the proposed mechanism, it could be achieved through several biochemical implementations and can inspire experimental studies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Pierre Sens, https://ror.org/04t0gwh46 Institut Curie, CNRS UMR168 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71365.sa1](https://doi.org/10.7554/eLife.71365.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"How to Assemble a Scale-Invariant Gradient\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAs you will see from the reports below, the reviewers found your theoretical study potentially interesting. However, one main concern is the lack of comparison with experiments. Given the relative simplicity of the proposed mechanism, much more thorough experimental test should be feasible, and would considerably strengthen the paper. In addition, the reviewers provide a number of technical queries that need to be answered. These include:\n\n1) Thorough comparison with experiments.\n\n2) Role of the boundary conditions. As we are looking for a system's size scaling, it does not seem fair to also scale the short length cutoff (emission length epsilon). How are the results modify if this length is kept constant (Reviewer #2, public review). Also discuss the importance of the absorbing boundary condition (Reviewer #2, Recommendation and reviewer # 1 question 4).\n\n3) Discussion the concentration distribution in the x,y plane (reviewer # 1 question 4).\n\n4) Why are you only interested in concentration gradient in the cytoplasm? Many important processes depend on the membrane concentration. Provide a discussion of the membrane concentration as well.\n\nReviewer #1 (Recommendations for the authors):\n\nCongratulations on this interesting study.\n\nThe following are a few suggestions that may improve this study. For the biological examples, it will be wonderful if the authors can analyze published data on e.g. bicoid or C. elegans and yeast ring. If this is not possible, the authors should be careful in suggesting their model may explain phenomena in specific biological systems.\n\nSome suggestions on the theory:\n\n1. A sensitivity analysis would be useful to understand how sensitive is the gradient and its scaling property to parameters such as c0, Kon, R (is there a limit?), R_0 (source size) and geometries (changes in L/R ratio).\n\n2. A parameter screen that involves changing several parameters at a time (e.g. on spherical geometry) and testing scaling would inform of some interactions between parameters and provide the ranges where this mechanism may work or not, and not the boundaries which are more easily understood analytically.\n\n3. For the analysis, it would be interesting to compare the kon with the speed of transport in the membrane. Is there an interaction there? Would fast transport allow scaling for lower Kon?\n\n4. In the cylinder, does the gradient scale along the radius of the cell (x-y plane)? It can be an interesting result. The gradient may be linear? Again for the cylinder, a boundary condition at the opposite pole=0, together with rapid diffusion or no degradation (e.g. reflective boundaries along the membrane) which result in a long length scale will yield a linear gradient that scales in the z-axis. This is perhaps trivial, but maybe there is a geometry/parameter interaction where a low kon can result in scaling in this geometry specifically. This is only my intuition.\n\nThe point in the text where you argue the mechanism can be useful for cells is in my opinion weak and does not support the overall claim.\n\n5. What is the timescale to form a gradient? It should be faster than the protein degradation rate to support exclusion of turnover dynamics (with e.g. uniform production in the cell).\n\n6. You mention R/b~1000, for a size of a motor. If its size is 10nm, the cell radius is 10um, which is quite big for a unicellular organism (more like a mammalian cell), so please check that the number make sense in your argument?\n\nReviewer #2 (Recommendations for the authors):\n\nPlease specify more clearly the boundary conditions at the flat surface of the cylinder in Figure 3. Do the results of this figure depend on not having an absorbing surface near the anterior pole but only along the cylindrical part?\n",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "afc0e4ca-7c70-4b4a-94d2-06358fbf704d",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C1",
+      "claim": "Intracellular protein gradients serve a variety of functions, such as the establishment of cell polarity or to provide positional information for gene expression in developing embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular protein gradients serve a variety of functions, such as the establishment of cell polarity or to provide positional information for gene expression in developing embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about protein gradients in cells and references to developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "a6164c87-e5db-480f-b4e0-c67e915f970e",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C2",
+      "claim": "Cell size in a population can vary considerably.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that cell size in a population can vary considerably, for the protein gradients to work properly they often have to be scaled to the size of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "2d1d937c-f0f6-4fff-bcb4-947627827005",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C3",
+      "claim": "For protein gradients to work properly they often have to be scaled to the size of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that cell size in a population can vary considerably, for the protein gradients to work properly they often have to be scaled to the size of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the observation that cell sizes vary and gradients need to provide consistent positional information.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "418d89bf-4789-4932-8c47-a1c12fd842c0",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C4",
+      "claim": "The shape of the protein gradient formed by cytoplasmic diffusion and cortical transport is determined solely by the cell geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the shape of the protein gradient is determined solely by the cell geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical result of the paper, supported by mathematical analysis and simulations presented throughout.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "7bc92643-d8a9-4ed1-be71-405ff12e3a85",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C5",
+      "claim": "The length scale over which the protein concentration in the gradient varies is determined by the linear dimensions of the cell, independent of the diffusion constant or the transport speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that the length scale over which the protein concentration in the gradient varies is determined by the linear dimensions of the cell, independent of the diffusion constant or the transport speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis and simulations shown in Figures 2-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "cd01ed45-7202-4dcb-b5da-029c5cd5c76d",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C6",
+      "claim": "The gradient provides scale-invariant positional information within a cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This gradient provides scale-invariant positional information within a cell, which can be used for assembly of intracellular structures whose size is scaled to the linear dimensions of the cell, such as the cytokinetic ring and actin cables in budding yeast cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mathematical analysis and supported by the examples provided.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "9055b651-7e5b-4f2f-9f95-923154980624",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C7",
+      "claim": "Spatial patterns of gene expression in early fly development provide information used by the embryo to set up the animal's body plan.",
+      "claim_type": "EXPLICIT",
+      "source": "The textbook example of this comes from the study of early fly development where spatial patterns of gene expression provide the information used by the embryo to set up the animal's body plan (Gregor et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gregor et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "0b7ded78-7876-4c32-b333-cd2dec752d54",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C8",
+      "claim": "The early fly embryo is a syncytium hundreds of microns in size.",
+      "claim_type": "EXPLICIT",
+      "source": "While the early embryo is a syncytium hundreds of microns in size, spatial patterns of proteins can also be observed in much smaller cells, like for example in budding yeast, where they drive the establishment of polarity (Chiou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about fly embryo structure, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "55312106-8bad-45b9-9e69-d75a96cc9f71",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C9",
+      "claim": "Spatial patterns of proteins in budding yeast drive the establishment of polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "While the early embryo is a syncytium hundreds of microns in size, spatial patterns of proteins can also be observed in much smaller cells, like for example in budding yeast, where they drive the establishment of polarity (Chiou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chiou et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "6d70857f-c793-436f-a1fe-53fbd8a7b402",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C10",
+      "claim": "Cell division is typically facilitated by the formation of a cytokinetic ring.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cell division is typically facilitated by the formation of a cytokinetic ring, a multicomponent protein structure that assembles at a specific location in the dividing cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "20d6ea56-9961-45f9-bcaa-f10d1c243b6e",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C11",
+      "claim": "In cells that divide symmetrically, the cytokinetic ring self-assembles in the middle of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells that divide symmetrically, the cytokinetic ring self-assembles in the middle of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about symmetric cell division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "575183b7-02fd-4192-bde7-e62dd8d554d3",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C12",
+      "claim": "In Escherichia coli, pole-to-pole oscillations of the Min proteins provide information about its middle and guide the assembly of the cytokinetic ring.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Escherichia coli, pole-to-pole oscillations of the Min proteins provide information about its middle and guide the assembly of the cytokinetic ring (Ramm et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ramm et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "1c58b153-124c-47d1-a784-8880bbb365a3",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C13",
+      "claim": "Budding yeast cells divide asymmetrically by assembling the cytokinetic ring close to the cell pole.",
+      "claim_type": "EXPLICIT",
+      "source": "Budding yeast cells on the other hand divide asymmetrically, by assembling the cytokinetic ring close to the cell pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about budding yeast cell division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "cdedeb26-768b-49a5-8070-b8210083046c",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C14",
+      "claim": "Yeast cells of different size assemble cytokinetic rings of different size, such that the diameter of the ring scales with the diameter of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, recent experiments have found that yeast cells of different size assemble cytokinetic rings of different size, such that the diameter of the ring scales with the diameter of the cell (Kukhtevich et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kukhtevich et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "c9e3612b-cdcd-44ef-b7e0-309c1024b6a0",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C15",
+      "claim": "The location of the cytokinetic ring in budding yeast is specified at a fixed relative distance from the pole.",
+      "claim_type": "EXPLICIT",
+      "source": "This scaling property implies that the self-assembly of the cytokinetic ring occurs at a location that is at a fixed relative distance from the pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the scaling observation cited from Kukhtevich et al., 2020.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "8b4b300a-a300-4a90-879b-ee3896238a46",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C16",
+      "claim": "Intracellular gradients have been shown to be involved in a variety of processes in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular gradients have been shown to be involved in a variety of processes in cells (Folkmann and Seydoux, 2018; Reber and Goehring, 2015; Hubatsch and Goehring, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "1f4aab6a-6118-481f-88e7-c20b1d7f4cff",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C17",
+      "claim": "The Bicoid gradient in the fruit fly embryo plays a role in patterning gene expression along the length of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A well-studied example is provided by the aforementioned Bicoid gradient in the fruit fly embryo, which plays a role in patterning gene expression along the length of the cell (Gregor et al., 2005; Grimm et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gregor et al., 2005 and Grimm et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "cdbf7437-317b-43a7-950b-5fb48e8976aa",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C18",
+      "claim": "Bicoid protein is synthesized at the anterior of the embryo from maternally deposited Bicoid mRNA localized to the anterior pole.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bicoid protein is synthesized at the anterior of the embryo from maternally deposited Bicoid mRNA localized to the anterior pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Bicoid gradient formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "54bf51dd-d032-46ae-a6ae-a78eda47a50f",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C19",
+      "claim": "Newly synthesized Bicoid protein diffuses throughout the cell and degrades over time, leading to a protein gradient with a higher concentration near the source.",
+      "claim_type": "EXPLICIT",
+      "source": "The newly synthesized protein diffuses throughout the cell and it degrades over time, leading to a protein gradient with a higher concentration near the source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Bicoid gradient mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "1984382e-c396-4524-b062-633ace99ee69",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C20",
+      "claim": "The MEX-5 gradient in the Caenorhabditis elegans zygote is involved in asymmetric division of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the MEX-5 gradient in the Caenorhabditis elegans zygote (Wu et al., 2018) is involved in asymmetric division of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "8f1d68b3-c776-4769-9d86-05e6e75b9e50",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C21",
+      "claim": "MEX-5 exists in two phosphorylation states, one which is fast diffusing (FD) and the other is slow diffusing (SD).",
+      "claim_type": "EXPLICIT",
+      "source": "MEX-5 exists in two phosphorylation states, one which is fast diffusing (FD) and the other is slow diffusing (SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MEX-5, supported by the citation context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "00f0b03a-e817-493e-9409-4b473db20c1f",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C22",
+      "claim": "The FD species of MEX-5 is present uniformly throughout the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "While the FD species is present uniformly throughout the cell, the switch from FD to SD is faster at the anterior end resulting in a gradient of SD MEX-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MEX-5 gradient formation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "b7e4e486-63a8-4059-b9d5-1abbb6d0bade",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C23",
+      "claim": "The switch from FD to SD MEX-5 is faster at the anterior end resulting in a gradient of SD MEX-5.",
+      "claim_type": "EXPLICIT",
+      "source": "While the FD species is present uniformly throughout the cell, the switch from FD to SD is faster at the anterior end resulting in a gradient of SD MEX-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MEX-5 gradient formation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "383cb784-89d7-48dd-9a34-8b4dfc5ecdcb",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C24",
+      "claim": "Pom1 in fission yeast controls cell division at the middle of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Another well-studied protein gradient is Pom1 in fission yeast (Allard et al., 2019; Moseley et al., 2009) which controls cell division at the middle of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Allard et al., 2019 and Moseley et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "dcabc133-26e1-4f43-bd68-3bcbbdbfcff0",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C25",
+      "claim": "Pom1 exists in two states, an SD one that is bound to the membrane and an FD state in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Like MEX-5, Pom1 exists in two states, an SD one that is bound to the membrane and an FD state in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Pom1, supported by the citation context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "ac4b7f4f-8a9a-4431-b1ab-6f7d0b1138fd",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C26",
+      "claim": "Pom1 is recruited to the cell surface near the cell poles, resulting in a higher membrane-bound concentration near the pole than the middle of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Pom1 is recruited to the cell surface near the cell poles, and this results in a higher membrane-bound concentration near the pole than the middle of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Pom1 gradient formation, supported by the citation context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "d8602c1b-88b5-4ed0-a9f0-6b9e23c6bd0c",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C27",
+      "claim": "The dynamics of the Bicoid gradient can be described by a one-dimensional reaction-diffusion equation.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of the Bicoid gradient can be described by a one-dimensional reaction-diffusion equation (Gregor et al., 2005):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gregor et al., 2005 and is a standard model in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "ebe681a7-5e4c-4671-966f-c6708079d5e6",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C29",
+      "claim": "Embryos of different fly species have Bicoid gradients that are scaled to their linear dimensions, which can vary by an order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos of different fly species have Bicoid gradients that are scaled to their linear dimensions, which can vary by an order of magnitude (Gregor et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gregor et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "26d12e8e-1cf1-4a29-bb6c-1856030ca89e",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C30",
+      "claim": "Different mechanisms for assembling scale-invariant gradients have been previously discussed.",
+      "claim_type": "EXPLICIT",
+      "source": "Different mechanisms for assembling scale-invariant gradients have been previously discussed (Ben-Zvi et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ben-Zvi et al., 2011b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "0cb42d77-e2c6-46af-95f2-3cca68b9e135",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C31",
+      "claim": "One mechanism for scaling involves making the protein degradation rate proportional to the density of nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, one idea is that the protein degradation in the fly embryo occurs in the nuclei and therefore the effective degradation rate is proportional to the density of nuclei (Gregor et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gregor et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "3ab4bdcb-8b16-49d5-9deb-8ce97fdabfd7",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C35",
+      "claim": "The expander-repressor mechanism is responsible for the Dpp activation gradient in Drosophila wing imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been argued that this mechanism is responsible for the Dpp activation gradient in Drosophila wing imaginal discs (Ben-Zvi et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ben-Zvi et al., 2011a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "6eef7c8e-593a-40cd-aac8-fccd38a46b16",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C36",
+      "claim": "Cortical transport occurs in early embryos of C. elegans due to the contractility of the cortical layer of actin and myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of cortical transport is known to occur in early embryos of C. elegans due to the contractility of the cortical layer of actin and myosin (Mayer et al., 2010), but also in much smaller cells, like budding yeast with its polar transport along actin cables confined to the cell surface (Chesarone-Cataldo et al., 2011), or the motor-driven transport along microtubules in cilia, such as in Chlamydomonas cells (Ishikawa and Marshall, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mayer et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "738a6bd1-1ae3-4476-9727-140456fc75f2",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C37",
+      "claim": "Budding yeast has polar transport along actin cables confined to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of cortical transport is known to occur in early embryos of C. elegans due to the contractility of the cortical layer of actin and myosin (Mayer et al., 2010), but also in much smaller cells, like budding yeast with its polar transport along actin cables confined to the cell surface (Chesarone-Cataldo et al., 2011), or the motor-driven transport along microtubules in cilia, such as in Chlamydomonas cells (Ishikawa and Marshall, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chesarone-Cataldo et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "8f1a08d5-1986-4b88-8f3f-07c2944a8b21",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C38",
+      "claim": "Motor-driven transport along microtubules occurs in cilia, such as in Chlamydomonas cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of cortical transport is known to occur in early embryos of C. elegans due to the contractility of the cortical layer of actin and myosin (Mayer et al., 2010), but also in much smaller cells, like budding yeast with its polar transport along actin cables confined to the cell surface (Chesarone-Cataldo et al., 2011), or the motor-driven transport along microtubules in cilia, such as in Chlamydomonas cells (Ishikawa and Marshall, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ishikawa and Marshall, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "4b9cb3d5-9087-49b4-ba8c-ab35ea85be4d",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C39",
+      "claim": "Directed transport of proteins along the cell cortex to the cell pole, when coupled to diffusion in the cell interior, produces a scale-invariant gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Our key result is that directed transport of proteins along the cell cortex to the cell pole, when coupled to diffusion in the cell interior, produces a scale-invariant gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical result of the paper, supported by mathematical analysis and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "83e1d7cc-a42e-4531-8769-a501d708bd90",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C40",
+      "claim": "For biologically realistic parameters that correspond to efficient capture of proteins by the surface transport, the gradient is independent of the diffusivity of the proteins and their transport speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, for biologically realistic parameters that correspond to efficient capture of proteins by the surface transport, the gradient is independent of the diffusivity of the proteins and their transport speed, as well as the chemical rate constants that describe the binding and unbinding of the proteins from the molecules involved in their transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis and simulations, particularly in Figures 2-5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "0b10be71-5e6d-4854-8795-84dddb217ecd",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C41",
+      "claim": "In fission yeast, budding yeast, and Drosophila oocyte, there exists a polar arrangement of cytoskeleton filaments leading to transport of proteins toward the anterior pole.",
+      "claim_type": "EXPLICIT",
+      "source": "In a variety of cells (fission yeast [Kovar et al., 2011], budding yeast [Chesarone-Cataldo et al., 2011], Drosophila oocyte [Raman et al., 2018]), there exists a polar arrangement of cytoskeleton filaments, leading to transport of proteins toward the anterior pole, as illustrated in Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "067a39ef-6e70-4445-b088-c5cf2370ec89",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C44",
+      "claim": "The gradient scales with the linear dimensions of the cell thereby providing positional information that is independent of cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the length scale that defines the gradient is given by the radius of the cell and is independent of the diffusion constant, or the speed of motor transport. The gradient scales with the linear dimensions of the cell thereby providing positional information that is independent of cell size, similar to what is observed for the Bicoid gradient in embryos of different fly species (Gregor et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion supported by mathematical analysis and comparison to experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "d7ff078c-ebb8-4be6-a2e1-e6c184ef415d",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C45",
+      "claim": "In spherical cells, the concentration gradient along the polar z-axis is normalized by the average cytoplasmic concentration and scales with cell radius.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2B details how the shape of the gradient changes as we change the radius of the cell, while keeping the total concentration of proteins fixed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation data shown in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "e5d10793-9de0-4e8c-b0c6-f7007918b779",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C46",
+      "claim": "Changing the diffusion constant and velocity of polar transport only affects the fraction of particles that are on the surface of the cell versus the cytoplasm, not the shape of the cytoplasmic gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Changing the diffusion constant and velocity of polar transport only affects the fraction of particles that are on the surface of the cell versus the cytoplasm. In particular, it does not change the shape of the cytoplasmic gradient, which is what we focus on herein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulations and mathematical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "2029d5bb-4d9e-45d8-b865-bf463b552b11",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C49",
+      "claim": "The positional information conveyed by the gradient is the relative distance from the anterior pole of the cell, rather than the absolute distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the positional information conveyed by the gradient is the relative distance from the anterior pole of the cell, rather than the absolute distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the scaling property of the gradient.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "d7a2961a-0e72-44e4-ab1a-54b250d9e93a",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C50",
+      "claim": "In cylindrical cells, the gradient shape is roughly exponential until it sharply falls off at the posterior pole of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The key observation we make from the simulations is that the gradient shape is roughly exponential, until it sharply falls off at the posterior pole of the cell; the decay length of the exponential is independent of the cell length, which only sets the extent of the gradient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from simulation results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "f52fd448-667d-4a84-a907-f5d7daa0ffaa",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C51",
+      "claim": "In cylindrical cells, the decay length of the exponential gradient is independent of the cell length.",
+      "claim_type": "EXPLICIT",
+      "source": "The key observation we make from the simulations is that the gradient shape is roughly exponential, until it sharply falls off at the posterior pole of the cell; the decay length of the exponential is independent of the cell length, which only sets the extent of the gradient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from simulation results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "664e227d-8cd3-4e87-8b64-2a5365d3213d",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C55",
+      "claim": "The polar transport mechanism provides the cell with the means to detect its overall length by locally monitoring the concentration of the protein species in the gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the polar transport mechanism provides the cell with the means to detect its overall length by locally monitoring the concentration of the protein species in the gradient, even when the total protein concentration is not changing with cell size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mathematical analysis of the cylindrical gradient.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "b285fe93-93ad-4d59-ab06-342e0e182e07",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C64",
+      "claim": "Proteins transported to the pole in Chlamydomonas intraflagellar transport always get transported all the way to the anterior pole where they are released.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, this behavior is observed for proteins that take part in intraflagellar transport in Chlamydomonas (Chien et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chien et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "93cd1a89-daa7-40b7-97f4-447788d0de65",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C66",
+      "claim": "Even though the presence of a finite residence time of the protein on the surface makes the gradient flatter, the scaling with the radius of the cell is preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 6B, we show that even though the presence of a finite residence time of the protein on the surface makes the gradient flatter, the scaling with the radius of the cell is preserved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "189b449e-6c56-4c94-bab5-4a6efe2f5ab8",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C67",
+      "claim": "In a spherical cell, the gradient is approximately exponential with a decay length set by the cell's radius.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of a spherical cell, the gradient is approximately exponential with a decay length set by the cell's radius.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the results from the spherical cell analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "3ada7373-3085-4b84-8abe-e9ab0892f18a",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C68",
+      "claim": "In a cylindrically shaped cell where transport is along the long axis, the gradient is exponential with a decay length set by the radius, mostly independent of the length of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In a cylindrically shaped cell, where the transport is along the long axis, the gradient is exponential with a decay length set by the radius, mostly independent of the length of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the results from the cylindrical cell analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "0cd8e6aa-dc7f-4467-a7b6-601fd1ddbcb6",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C69",
+      "claim": "The length scale of the gradient in the polar transport model is independent of parameters such as the speed of transport, the diffusion constant, and the rates of chemical reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "What is unusual about the model discussed here is that the length scale of the gradient is independent of all these parameters and is set solely by the geometry of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion from the theoretical analysis presented in the paper.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "c019162c-0558-429d-9fdf-900e28af3d08",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C70",
+      "claim": "A gradient whose shape is defined by the shape of the compartment it forms in was demonstrated in flagella of Giardia cells, where directed transport of kinesin-13 to the flagellar tips leads to an exponential gradient of kinesin-13.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, such a gradient, one whose shape is defined by the shape of the compartment it forms in, was demonstrated in flagella of Giardia cells, where the directed transport of the non-motile kinesin-13 to the flagellar tips leads to an exponential gradient of kinesin-13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to recent experimental work that supports the model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "a6ba4856-8fe6-40af-aca2-14a2c3a4ff26",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C71",
+      "claim": "The decay length of the kinesin-13 gradient in Giardia flagella was measured to be the same for all flagella, independent of their length, which varies between 7 and 14 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by our model, the decay length of the gradient was measured to be the same for all the flagella in Giardia, independent of their length, which varies between 7 and 14 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data that supports the model's predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "3134e8b1-e757-499d-a6db-60c563e91243",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C72",
+      "claim": "The decay length of the kinesin-13 gradient in Giardia flagella is 0.4 \u00b5m, which is comparable to the radius of the flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the decay length of the gradient is 0.4 \u00b5m, which is comparable to the radius of the flagella, as predicted by Equation 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data that supports the model's predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "3ee666b0-8c17-4a84-9821-d2cdf82cc00d",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C73",
+      "claim": "In budding yeast, actin cables span the length of the cell and are localized to the cell cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A promising candidate is the budding yeast cell, where the growth of the bud is enabled by a system of actin cables that is set up in the mother cell. The actin cables (typically, 10 of them) span the length of the cell and are localized to the cell cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about budding yeast cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "3c22b1ad-0ad2-489a-aa62-3b77d7348b99",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C74",
+      "claim": "Myosin V motors move along actin cables in budding yeast toward the bud while carrying secretory vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "This cable system can set up polar gradients via the directed transport of proteins by myosin V motors that move along the cables toward the bud while carrying secretory vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about budding yeast cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "fd1ca9ab-8619-43e4-beac-12223722a008",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C75",
+      "claim": "A gradient of the protein Smy1, which is bound to secretory vesicles, has been reported in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a gradient of the protein Smy1, which is bound to secretory vesicles has been reported (Eskin et al., 2016), but their dependence on cell size has yet to be measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Eskin et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "2afe5ef3-dc94-41d3-a673-9d0229d19b43",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C76",
+      "claim": "Actin polymerization in budding yeast occurs at the bud neck by the activity of formin proteins localized to the septin ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Treadmilling is expected to occur here by the dual action of actin polymerization, which occurs at the bud neck by the activity of formin proteins localized to the septin ring, and depolymerization, which occurs toward the opposite pole of the cell (Chesarone-Cataldo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chesarone-Cataldo et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "d04db5e1-3202-4df2-9b92-542bca0670af",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C77",
+      "claim": "Actin depolymerization in budding yeast occurs toward the opposite pole of the cell from the bud neck.",
+      "claim_type": "EXPLICIT",
+      "source": "Treadmilling is expected to occur here by the dual action of actin polymerization, which occurs at the bud neck by the activity of formin proteins localized to the septin ring, and depolymerization, which occurs toward the opposite pole of the cell (Chesarone-Cataldo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chesarone-Cataldo et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "3a46ecd2-370d-4e98-a5ce-33b5ebc9c254",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C83",
+      "claim": "Subcellular localization of mRNA is typically achieved by polar active transport of mRNA and localized anchoring at the cell pole.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcellular localization of mRNA is typically achieved by polar active transport of mRNA and localized anchoring at the cell pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mRNA localization mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "c6442de1-acc8-4eb2-a5d6-01d09dfcc95b",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C84",
+      "claim": "Bicoid mRNA localization in late oocytes of the fruit fly is achieved by continual active transport to the pole by dynein motors moving along microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "In some instances, like in the case of the bicoid mRNA localization in late oocytes of the fruit fly, the anchors are not persistent over relevant time scales and localization is achieved by continual active transport to the pole, in this case by dynein motors moving along microtubules (Weil et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Weil et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "b5415cd6-77a6-425d-97d1-e4523f97a4a3",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C85",
+      "claim": "If the protein produced by translating the mRNA does not diffuse substantially over its lifetime, the scaling of the mRNA gradient will be imprinted on the related protein gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that, if the protein that is produced by translating the mRNA does not diffuse substantially over its lifetime, the scaling of the mRNA gradient will be imprinted on the related protein gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationship between mRNA and protein gradients.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "2bcc475a-4da2-4cf0-b94a-c3fe95606dd2",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C86",
+      "claim": "Advection of proteins to the pole of the cell could be achieved by cytoplasmic flows.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of directed motion due to motors, advection of proteins to the pole of the cell could also be achieved by cytoplasmic flows (Howard et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Howard et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "65e305c3-48b1-453c-ba42-aaf6c60ab502",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C87",
+      "claim": "The key ingredient for the polar transport model is that the cell pole serves as a source and the surface of the cell as the sink for proteins diffusing in the cytoplasm, while the total number of proteins stays fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "The key ingredient, which is encoded in Equation 3, is that the cell pole serves as a source and the surface of the cell as the sink for proteins diffusing in the cytoplasm, while the total number of proteins stays fixed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the essential features of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "9ee5f72d-2fff-44a2-847c-f617d9f5f9fc",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C88",
+      "claim": "A recent study of actin cables in yeast found that when cells were mutated to grow abnormally large, the actin cables assembled to a length that was proportional to the cell radius.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a recent study of actin cables in yeast found that when cells were mutated to grow abnormally large, the actin cables assembled to a length that was proportional to the cell radius (McInally et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McInally et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "ea6d8195-e74a-42c4-a531-49e1620dfb56",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C89",
+      "claim": "A hypothesized explanation for the scaling of actin cable lengths with cell length is the presence of a scale-invariant gradient of depolymerizing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A hypothesized explanation of this phenomena is the presence of a scale-invariant gradient of depolymerizing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "09b9812d-34cb-42f1-ac66-2d9f08c05f65",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "claim_id": "C90",
+      "claim": "Cable dependent polar transport of depolymerizing proteins could lead to their gradient and subsequent control of the length of the cables themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing possibility for the observed scaling of actin cable lengths with cell length is that cable dependent polar transport of depolymerizing proteins leads to their gradient and subsequent control of the length of the cables themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae0b7e32-db01-4ee5-bda7-aaf5fb407e98",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that a polar transport mechanism, combining cytoplasmic diffusion with cortical transport to the cell pole, produces a scale-invariant protein gradient whose shape is determined solely by cell geometry. The gradient's length scale is set by the cell's linear dimensions and is independent of diffusion constants, transport speeds, and chemical rate constants under biologically realistic conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C39, C40, and C69 collectively establish the core theoretical finding through mathematical analysis (Equations 2-7) and computational simulations across multiple cell geometries (Figures 2-6). The analytical solutions match simulation results excellently, and the independence from kinetic parameters is demonstrated for the regime of efficient protein capture (k_on*R/D >> 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "cbf80c5e-c125-4d1a-a3a3-b7f1b716ddc1",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In spherical cells, the protein concentration gradient along the polar axis scales with cell radius, providing relative rather than absolute positional information. The gradient is approximately exponential with decay length set by the cell radius, and changing diffusion constants or transport velocities only affects the surface-to-cytoplasm protein distribution, not the gradient shape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C46, C49, and C67 are well-supported by analytical solutions (Equations 4-6) and simulation data (Figure 2). The electrostatic analogy provides rigorous mathematical foundation, and Figure 2C demonstrates clear scaling when distance is normalized by radius. The independence from kinetic parameters is explicitly shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "510d38b1-0a96-4c97-88e8-9ca67a0be0cd",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In cylindrical cells with transport along the long axis, the gradient is exponential with decay length \u03bb = R/2.4 (set by radius), independent of cell length. This enables cells to sense their overall length by monitoring local protein concentration at fixed positions like the midpoint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C51, C55, and C68 are supported by analytical solutions using Bessel function expansions (Equation 7, Appendix A) and simulations (Figure 3). The decay length formula \u03bb = R/2.4 is derived from the first root of J_0. However, C55's claim about length sensing is somewhat speculative as it proposes a biological function without experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "69a8df9b-ba24-4f7c-b3ac-42e40c922494",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiple cell types (fission yeast, budding yeast, Drosophila oocyte) exhibit polar arrangements of cytoskeleton filaments that transport proteins toward the anterior pole, and the resulting gradient scales with linear cell dimensions providing size-independent positional information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C44 are supported by multiple citations (Kovar et al. 2011, Chesarone-Cataldo et al. 2011, Raman et al. 2018) and Figure 1 illustration. The scaling property is demonstrated theoretically and compared to experimental observations of Bicoid gradients (Gregor et al. 2005).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "bfa225b7-f99f-47ff-a4cc-593db2e6524d",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Experimental validation in Giardia flagella shows that kinesin-13 forms an exponential gradient with decay length 0.4 \u00b5m (comparable to flagellar radius) that remains constant across flagella of varying lengths (7-14 \u00b5m), consistent with model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C71, and C72 provide experimental support for the theoretical model. The observed decay length independence from flagellar length and its correspondence to the radius directly validate the model's key predictions. This represents strong experimental confirmation of the theoretical framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "661e7734-b9bc-431d-88c2-44746a474055",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When proteins can detach from motors during transport (finite residence time), the gradient becomes flatter but scaling with cell radius is preserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by simulation results in Figure 6B showing that varying residence times (t_bound) affects gradient steepness but maintains the scaling relationship when distance is normalized by radius. This demonstrates robustness of the scaling property.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "f1ec08d9-ced1-475c-a6dd-bc8411d5df58",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The scale-invariant gradient can be used for assembly of intracellular structures whose size scales with cell dimensions, such as cytokinetic rings in budding yeast where ring diameter scales with cell diameter and assembles at fixed relative distance from the pole.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C6 proposes a biological application while C14 and C15 cite experimental observations (Kukhtevich et al. 2020) of scaled cytokinetic rings. However, the manuscript does not experimentally demonstrate that the proposed gradient mechanism actually controls cytokinetic ring assembly. This remains a plausible hypothesis requiring experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "240eec11-f15e-4498-92f4-c941fa6b1829",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Budding yeast represents a promising experimental system where actin cables at the cell cortex could establish polar gradients via myosin V motor transport or actin treadmilling. A Smy1 gradient has been reported but size-dependence remains unmeasured.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73, C74, C76, and C77 describe established yeast cell biology. Claim C75 notes a reported Smy1 gradient (Eskin et al. 2016) but explicitly states size-dependence is unmeasured. This represents a testable prediction rather than a validated result, making the connection to the model uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "0c90b6cb-0456-4a2d-8e31-43656c32e71a",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Actin cable length scaling with cell radius in abnormally large yeast cells could be explained by a scale-invariant gradient of depolymerizing activity, where cable-dependent polar transport of depolymerizing proteins creates a gradient that controls cable length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 cites experimental observations (McInally et al. 2021), but C89 and C90 are explicitly labeled as speculative hypotheses. The manuscript proposes but does not test this mechanism. This represents an interesting application of the model requiring future experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "ade06191-d70e-4dd0-b3fe-704778cb27b5",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background context establishing that intracellular protein gradients serve various functions including cell polarity and positional information, must often scale with cell size, and are observed in multiple systems including fly embryos (Bicoid), C. elegans (MEX-5), fission yeast (Pom1), and budding yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C26) provide established background knowledge supported by multiple citations. They set the biological context and motivation for the theoretical work but do not represent novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "7de10911-5bcb-4f91-ad9e-dd053c190c86",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior mechanisms for scale-invariant gradients include the Bicoid diffusion-degradation model, nuclear density-dependent degradation, and expander-repressor interactions. Bicoid gradients scale with embryo size across fly species varying by an order of magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C29, C30, C31, and C35 accurately describe prior work with appropriate citations (Gregor et al. 2005, 2007; Ben-Zvi et al. 2011a,b). These establish the scientific context and alternative mechanisms, demonstrating the authors understand the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "e93d3301-6185-45e5-b4b1-6f92e2c007c1",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cortical transport occurs in multiple cell types: C. elegans embryos (actin-myosin contractility), budding yeast (actin cable transport), and Chlamydomonas cilia (microtubule motor transport).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C37, and C38 cite appropriate references (Mayer et al. 2010, Chesarone-Cataldo et al. 2011, Ishikawa and Marshall 2011) establishing that the transport mechanisms assumed in the model exist in real biological systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "0f5c9dcd-4a94-43cc-8fd6-0720e077af5c",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In Chlamydomonas intraflagellar transport, proteins are always transported to the anterior pole where they are released.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by citation to Chien et al. 2017 and represents established knowledge about this transport system, providing biological justification for the model's assumption of polar release.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "cb3a74a8-02cb-48aa-8be2-0a78b543b555",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "mRNA localization via polar transport and anchoring could produce scale-invariant gradients, as observed for Bicoid mRNA in fly oocytes. If translated proteins don't diffuse substantially, the mRNA gradient scaling transfers to the protein gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83 and C84 describe established mechanisms (Weil et al. 2006). Claim C85 makes a logical inference about gradient inheritance from mRNA to protein under specific conditions (limited protein diffusion). This is theoretically sound but represents a prediction rather than demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    },
+    {
+      "id": "554bf76d-c232-49d6-a3b0-d9238a929a68",
+      "content_id": "ff0773e2-ac7c-4b58-9cfb-1084c5b3b918",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model's key requirement is that the cell pole serves as a source and the surface as a sink for diffusing proteins with fixed total number. This can be achieved by cytoplasmic flows instead of motor transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C87 correctly identify the essential mathematical features of the model (Equation 3) and note that different physical mechanisms (flows vs. motors) could satisfy these requirements. This demonstrates understanding of the model's generality, supported by citation to Howard et al. 2011.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:12.447629Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "418d89bf-4789-4932-8c47-a1c12fd842c0",
+      "result_id": "ae0b7e32-db01-4ee5-bda7-aaf5fb407e98"
+    },
+    {
+      "claim_id": "7bc92643-d8a9-4ed1-be71-405ff12e3a85",
+      "result_id": "ae0b7e32-db01-4ee5-bda7-aaf5fb407e98"
+    },
+    {
+      "claim_id": "4b9cb3d5-9087-49b4-ba8c-ab35ea85be4d",
+      "result_id": "ae0b7e32-db01-4ee5-bda7-aaf5fb407e98"
+    },
+    {
+      "claim_id": "83e1d7cc-a42e-4531-8769-a501d708bd90",
+      "result_id": "ae0b7e32-db01-4ee5-bda7-aaf5fb407e98"
+    },
+    {
+      "claim_id": "0cd8e6aa-dc7f-4467-a7b6-601fd1ddbcb6",
+      "result_id": "ae0b7e32-db01-4ee5-bda7-aaf5fb407e98"
+    },
+    {
+      "claim_id": "d7ff078c-ebb8-4be6-a2e1-e6c184ef415d",
+      "result_id": "cbf80c5e-c125-4d1a-a3a3-b7f1b716ddc1"
+    },
+    {
+      "claim_id": "e5d10793-9de0-4e8c-b0c6-f7007918b779",
+      "result_id": "cbf80c5e-c125-4d1a-a3a3-b7f1b716ddc1"
+    },
+    {
+      "claim_id": "2029d5bb-4d9e-45d8-b865-bf463b552b11",
+      "result_id": "cbf80c5e-c125-4d1a-a3a3-b7f1b716ddc1"
+    },
+    {
+      "claim_id": "189b449e-6c56-4c94-bab5-4a6efe2f5ab8",
+      "result_id": "cbf80c5e-c125-4d1a-a3a3-b7f1b716ddc1"
+    },
+    {
+      "claim_id": "d7a2961a-0e72-44e4-ab1a-54b250d9e93a",
+      "result_id": "510d38b1-0a96-4c97-88e8-9ca67a0be0cd"
+    },
+    {
+      "claim_id": "f52fd448-667d-4a84-a907-f5d7daa0ffaa",
+      "result_id": "510d38b1-0a96-4c97-88e8-9ca67a0be0cd"
+    },
+    {
+      "claim_id": "664e227d-8cd3-4e87-8b64-2a5365d3213d",
+      "result_id": "510d38b1-0a96-4c97-88e8-9ca67a0be0cd"
+    },
+    {
+      "claim_id": "3ada7373-3085-4b84-8abe-e9ab0892f18a",
+      "result_id": "510d38b1-0a96-4c97-88e8-9ca67a0be0cd"
+    },
+    {
+      "claim_id": "0b10be71-5e6d-4854-8795-84dddb217ecd",
+      "result_id": "69a8df9b-ba24-4f7c-b3ac-42e40c922494"
+    },
+    {
+      "claim_id": "067a39ef-6e70-4445-b088-c5cf2370ec89",
+      "result_id": "69a8df9b-ba24-4f7c-b3ac-42e40c922494"
+    },
+    {
+      "claim_id": "c019162c-0558-429d-9fdf-900e28af3d08",
+      "result_id": "bfa225b7-f99f-47ff-a4cc-593db2e6524d"
+    },
+    {
+      "claim_id": "a6ba4856-8fe6-40af-aca2-14a2c3a4ff26",
+      "result_id": "bfa225b7-f99f-47ff-a4cc-593db2e6524d"
+    },
+    {
+      "claim_id": "3134e8b1-e757-499d-a6db-60c563e91243",
+      "result_id": "bfa225b7-f99f-47ff-a4cc-593db2e6524d"
+    },
+    {
+      "claim_id": "93cd1a89-daa7-40b7-97f4-447788d0de65",
+      "result_id": "661e7734-b9bc-431d-88c2-44746a474055"
+    },
+    {
+      "claim_id": "cd01ed45-7202-4dcb-b5da-029c5cd5c76d",
+      "result_id": "f1ec08d9-ced1-475c-a6dd-bc8411d5df58"
+    },
+    {
+      "claim_id": "cdedeb26-768b-49a5-8070-b8210083046c",
+      "result_id": "f1ec08d9-ced1-475c-a6dd-bc8411d5df58"
+    },
+    {
+      "claim_id": "c9e3612b-cdcd-44ef-b7e0-309c1024b6a0",
+      "result_id": "f1ec08d9-ced1-475c-a6dd-bc8411d5df58"
+    },
+    {
+      "claim_id": "fd1ca9ab-8619-43e4-beac-12223722a008",
+      "result_id": "240eec11-f15e-4498-92f4-c941fa6b1829"
+    },
+    {
+      "claim_id": "3ee666b0-8c17-4a84-9821-d2cdf82cc00d",
+      "result_id": "240eec11-f15e-4498-92f4-c941fa6b1829"
+    },
+    {
+      "claim_id": "3c22b1ad-0ad2-489a-aa62-3b77d7348b99",
+      "result_id": "240eec11-f15e-4498-92f4-c941fa6b1829"
+    },
+    {
+      "claim_id": "2afe5ef3-dc94-41d3-a673-9d0229d19b43",
+      "result_id": "240eec11-f15e-4498-92f4-c941fa6b1829"
+    },
+    {
+      "claim_id": "d04db5e1-3202-4df2-9b92-542bca0670af",
+      "result_id": "240eec11-f15e-4498-92f4-c941fa6b1829"
+    },
+    {
+      "claim_id": "9ee5f72d-2fff-44a2-847c-f617d9f5f9fc",
+      "result_id": "0c90b6cb-0456-4a2d-8e31-43656c32e71a"
+    },
+    {
+      "claim_id": "ea6d8195-e74a-42c4-a531-49e1620dfb56",
+      "result_id": "0c90b6cb-0456-4a2d-8e31-43656c32e71a"
+    },
+    {
+      "claim_id": "09b9812d-34cb-42f1-ac66-2d9f08c05f65",
+      "result_id": "0c90b6cb-0456-4a2d-8e31-43656c32e71a"
+    },
+    {
+      "claim_id": "afc0e4ca-7c70-4b4a-94d2-06358fbf704d",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "a6164c87-e5db-480f-b4e0-c67e915f970e",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "2d1d937c-f0f6-4fff-bcb4-947627827005",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "9055b651-7e5b-4f2f-9f95-923154980624",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "0b7ded78-7876-4c32-b333-cd2dec752d54",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "55312106-8bad-45b9-9e69-d75a96cc9f71",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "6d70857f-c793-436f-a1fe-53fbd8a7b402",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "20d6ea56-9961-45f9-bcaa-f10d1c243b6e",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "575183b7-02fd-4192-bde7-e62dd8d554d3",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "1c58b153-124c-47d1-a784-8880bbb365a3",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "8b4b300a-a300-4a90-879b-ee3896238a46",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "1f4aab6a-6118-481f-88e7-c20b1d7f4cff",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "cdbf7437-317b-43a7-950b-5fb48e8976aa",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "54bf51dd-d032-46ae-a6ae-a78eda47a50f",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "1984382e-c396-4524-b062-633ace99ee69",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "8f1d68b3-c776-4769-9d86-05e6e75b9e50",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "00f0b03a-e817-493e-9409-4b473db20c1f",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "b7e4e486-63a8-4059-b9d5-1abbb6d0bade",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "383cb784-89d7-48dd-9a34-8b4dfc5ecdcb",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "dcabc133-26e1-4f43-bd68-3bcbbdbfcff0",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "ac4b7f4f-8a9a-4431-b1ab-6f7d0b1138fd",
+      "result_id": "ade06191-d70e-4dd0-b3fe-704778cb27b5"
+    },
+    {
+      "claim_id": "d8602c1b-88b5-4ed0-a9f0-6b9e23c6bd0c",
+      "result_id": "7de10911-5bcb-4f91-ad9e-dd053c190c86"
+    },
+    {
+      "claim_id": "ebe681a7-5e4c-4671-966f-c6708079d5e6",
+      "result_id": "7de10911-5bcb-4f91-ad9e-dd053c190c86"
+    },
+    {
+      "claim_id": "26d12e8e-1cf1-4a29-bb6c-1856030ca89e",
+      "result_id": "7de10911-5bcb-4f91-ad9e-dd053c190c86"
+    },
+    {
+      "claim_id": "0cb42d77-e2c6-46af-95f2-3cca68b9e135",
+      "result_id": "7de10911-5bcb-4f91-ad9e-dd053c190c86"
+    },
+    {
+      "claim_id": "3ab4bdcb-8b16-49d5-9deb-8ce97fdabfd7",
+      "result_id": "7de10911-5bcb-4f91-ad9e-dd053c190c86"
+    },
+    {
+      "claim_id": "6eef7c8e-593a-40cd-aac8-fccd38a46b16",
+      "result_id": "e93d3301-6185-45e5-b4b1-6f92e2c007c1"
+    },
+    {
+      "claim_id": "738a6bd1-1ae3-4476-9727-140456fc75f2",
+      "result_id": "e93d3301-6185-45e5-b4b1-6f92e2c007c1"
+    },
+    {
+      "claim_id": "8f1a08d5-1986-4b88-8f3f-07c2944a8b21",
+      "result_id": "e93d3301-6185-45e5-b4b1-6f92e2c007c1"
+    },
+    {
+      "claim_id": "b285fe93-93ad-4d59-ab06-342e0e182e07",
+      "result_id": "0f5c9dcd-4a94-43cc-8fd6-0720e077af5c"
+    },
+    {
+      "claim_id": "3a46ecd2-370d-4e98-a5ce-33b5ebc9c254",
+      "result_id": "cb3a74a8-02cb-48aa-8be2-0a78b543b555"
+    },
+    {
+      "claim_id": "c6442de1-acc8-4eb2-a5d6-01d09dfcc95b",
+      "result_id": "cb3a74a8-02cb-48aa-8be2-0a78b543b555"
+    },
+    {
+      "claim_id": "b5415cd6-77a6-425d-97d1-e4523f97a4a3",
+      "result_id": "cb3a74a8-02cb-48aa-8be2-0a78b543b555"
+    },
+    {
+      "claim_id": "2bcc475a-4da2-4cf0-b94a-c3fe95606dd2",
+      "result_id": "554bf76d-c232-49d6-a3b0-d9238a929a68"
+    },
+    {
+      "claim_id": "65e305c3-48b1-453c-ba42-aaf6c60ab502",
+      "result_id": "554bf76d-c232-49d6-a3b0-d9238a929a68"
+    }
+  ],
+  "comparisons": []
+}

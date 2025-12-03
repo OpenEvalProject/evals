@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The zebrafish notochord consists of coin-shaped precursor cells arranged unidimensionally, with each cell contacting only its two immediate neighbors. These cells are isolated from surrounding tissues by an extracellular matrix layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C6, and C7 are well-supported by multiple imaging modalities including confocal microscopy (Figure 1B) and transmission electron microscopy (Figure 1C-D). The unidimensional arrangement and extracellular matrix isolation are clearly demonstrated, establishing the notochord as a simplified system for studying cell-cell interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "jag1a and Notch activity (tp1:GFP) are early markers that predict cell fate in the notochord. jag1a-positive cells differentiate into vacuolated cells, while tp1-positive cells become sheath cells. This fate determination follows a lateral inhibition pattern where future vacuolated cells are never adjacent to each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C20 are strongly supported by time-lapse imaging (Figure 2G) and quantitative analysis showing 0/51 adjacent vacuolated cell pairs versus 221/222 adjacent sheath cell pairs. The correlation between early markers and final cell fate is convincingly demonstrated through live imaging over developmental time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "jag1a and jag1b are the main Notch ligands in the notochord that generate an alternating lateral inhibition pattern with tp1:GFP (Notch activity). Morpholino knockdown of these ligands disrupts the alternating pattern and eliminates tp1:GFP signal in the notochord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10-C14 are supported by imaging data showing alternating patterns (Figure 1G-M) and morpholino experiments (Figure 2A-E). The loss of tp1:GFP signal and increased adjacent jag1a-positive cells upon knockdown provides strong evidence for jag1a/jag1b as the primary ligands mediating lateral inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C31"
+    ],
+    "result": "her6 and her9 are the key transcriptional repressors in the notochord lateral inhibition GRN. They are the most highly expressed HES/HEY family genes, show alternating expression with jag1a, have Rbp-J\u03ba binding sites near their transcription start sites, and are necessary for lateral inhibition patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C26, and C31 are well-supported by single-cell RNA-Seq analysis (Figure 3A), HCR in situ hybridization showing alternating patterns (Figure 3B-O), CUT & RUN data identifying Rbp-J\u03ba binding sites, and CRISPR knockout experiments (Figure 4H-J) demonstrating necessity for lateral inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "notch2 is the main Notch receptor expressed in the notochord at 18 and 24 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 are supported by single-cell RNA-Seq analysis (Figure 3\u2014figure supplement 2A-E) and HCR validation (Figure 3\u2014figure supplement 2F-G) showing notch2 is detected in most notochord cells at the highest levels compared to other Notch receptors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "her6 and her9 are sufficient to repress jag1a expression in a cell-autonomous manner. Overexpression of her6 or her9 reduces jag1a:mScarlet levels in the expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C30 are supported by mosaic overexpression experiments using the emilin3a promoter (Figure 4A-G) and confirmed by HCR analysis of endogenous jag1a mRNA (Figure 4\u2014figure supplement 2). The cell-autonomous reduction in jag1a levels provides strong evidence for direct repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C31"
+    ],
+    "result": "her6 and her9 are necessary for lateral inhibition patterning in the notochord. CRISPR knockout of both genes increases the number of adjacent jag1a-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C31 are supported by CRISPR knockout experiments (Figure 4H-J) showing disruption of the alternating pattern. The quantification demonstrates a significant increase in adjacent jag1a-positive cells, confirming the necessity of her6/her9 for lateral inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "her6 and her9 are sufficient to determine sheath cell fate. Overexpression of her6 or her9 increases the proportion of sheath cells at 2 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 are supported by cell fate analysis at 2 dpf (Figure 5A-D) showing a statistically significant increase in sheath cell proportion in her6/her9-expressing cells compared to controls. The data clearly demonstrate sufficiency for fate determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "jag1a overexpression is sufficient to drive vacuolated cell fate in the cells where it is expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by cell fate analysis (Figure 5E-G) showing that jag1a-overexpressing cells preferentially adopt vacuolated cell fate. This finding is surprising as it demonstrates a cell-autonomous effect of the ligand on fate determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The jag1a intracellular domain (JICD) is not sufficient to explain the cell-autonomous effect of jag1a on cell fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by experimental data (Figure 5\u2014figure supplement 1) showing no effect of JICD overexpression on cell fate. This negative result helps rule out one potential mechanism and strengthens the case for cis-inhibition as the primary mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "jag1a overexpression causes strong cell-autonomous reduction of her6/her9 expression with minimal effect on neighboring cells, suggesting cis-inhibition as the main mechanism regulating cell fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by HCR analysis (Figure 6B-I) showing strong reduction of her6/her9 in jag1a-expressing cells but minimal increase in neighbors. The quantification provides clear evidence for predominant cis-inhibition over trans-activation, though the authors appropriately note they cannot completely rule out limiting receptor levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "Mathematical modeling demonstrates that lateral inhibition patterning is promoted when cis-interactions (Kcis) are stronger than trans-interactions (Ktrans). This holds true both in the absence of cooperativity and when cooperativity is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39, C40, and C42 are supported by mathematical modeling using linear stability analysis (Figure 6J, Figure 6\u2014figure supplement 2). The modeling systematically explores parameter space and demonstrates that stronger cis- than trans-interactions destabilize the homogeneous steady state, promoting patterning. This is consistent with the experimental observations of strong cis-inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Mathematical modeling predicts that lateral induction networks generate homogeneous patterns while lateral inhibition networks generate alternating patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 are supported by mathematical simulations (Figure 1E-F, Figure 1\u2014figure supplement 1A-B) that recapitulate well-established theoretical predictions. These models provide the conceptual framework for interpreting the experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C43"
+    ],
+    "result": "A jag1a/jag1b-her6/her9 network generates a lateral inhibition pattern that determines cell fate in the notochord through Notch-mediated activation of her6/her9, which then repress jag1a expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C43 represent the main conclusion integrating all experimental findings. The complete GRN is supported by: (1) alternating expression patterns, (2) morpholino and CRISPR knockouts disrupting patterning, (3) gain-of-function experiments showing sufficiency for fate determination, and (4) mathematical modeling consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C54",
+      "C55"
+    ],
+    "result": "Jag1 can generate lateral inhibition patterns in addition to the previously described lateral induction patterns. This challenges the prior view that Jag1 exclusively mediates lateral induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C54, and C55 are supported by the experimental demonstration of jag1a-mediated lateral inhibition in the notochord, contrasting with cited literature showing Jag1-mediated lateral induction in other contexts. This represents a significant conceptual advance in understanding Notch signaling diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The identified jag1a-her6/her9 GRN may be relevant for pattern generation in other tissues where Jag1 is expressed, including heart, inner ear, muscle, and kidney.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45 and C46 are speculative. While C45 correctly cites Jag1 expression in multiple tissues, C46's suggestion of GRN relevance in these contexts is not experimentally tested. This represents a reasonable hypothesis for future work but lacks direct supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Hes1, the mammalian homolog of her6/her9, is expressed in the mouse notochord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by citation to a previous BAC transgenic study (Klinck et al., 2011). This provides evidence for potential conservation of the GRN across vertebrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Mutations in JAG1 and NOTCH2 cause vertebrae malformations in Alagille Syndrome, potentially due to defective Notch patterning during notochord development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 is supported by citations to clinical studies. However, C49's suggestion that spine problems result from defective notochord patterning is speculative and not directly tested. While plausible given the identified GRN, this connection requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The zebrafish notochord is established as a unidimensional model system for studying lateral inhibition patterning and GRN principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by the comprehensive characterization of the system including: unidimensional cell arrangement, well-defined cell contacts, genetic tractability, imaging accessibility, and successful application to dissect a complete lateral inhibition GRN. The work demonstrates the system's utility for studying pattern generation principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The tp1:GFP transgenic line contains 12 Rbp-J\u03ba binding sites from a viral sequence, making it a reporter of Notch activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by citation to the original tp1:GFP publication (Parsons et al., 2009) and represents established knowledge about this widely-used reporter line.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C64",
+      "C65"
+    ],
+    "result": "The emilin3a promoter provides notochord-specific expression with high coverage of both jag1a and tp1:GFP cell populations, making it suitable for mosaic overexpression experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C64, and C65 are supported by single-cell RNA-Seq analysis (Figure 4\u2014figure supplement 1A-B) and validation showing 98-99% coverage of tp1:GFP and jag1a:mNeonGreen cells (Figure 4\u2014figure supplement 1C-J). This technical validation is important for interpreting the gain-of-function experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Cis-inhibition between Notch ligands and receptors is required for patterning in the absence of cooperativity, and different ligand-receptor pairs have different cis and trans binding affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C57 are supported by citations to previous mathematical modeling and experimental studies. These represent established principles in the Notch signaling field that provide context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior work established that Notch signaling regulates notochord cell fate, with jag1a/jag1b morpholino knockdown causing excess vacuolated cells and NICD overexpression promoting sheath cell fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by citation to Yamamoto et al., 2010. These represent prior knowledge that motivated the current study but are not new findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Vacuolated cells contain large vacuoles providing hydrostatic pressure, while sheath cells form the surface of the cylindrical notochord structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 are supported by citations to previous anatomical studies and represent established knowledge about notochord cell types. This background information contextualizes the cell fate decisions studied in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The jag1a:mScarlet BAC transgenic line recapitulates endogenous jag1a mRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by comparison with in situ hybridization (Figure 1\u2014figure supplement 1C-E). This validation is important for establishing the transgenic line as a reliable reporter of jag1a expression.",
+    "result_type": "MINOR"
+  }
+]

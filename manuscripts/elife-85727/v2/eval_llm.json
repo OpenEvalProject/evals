@@ -1,0 +1,586 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C94"
+    ],
+    "result": "TrafE is an evolutionarily conserved E3-ligase that is recruited to damaged intracellular compartments. TrafE shares structural similarity with human TRAF6, is upregulated early after M. marinum infection, and shows robust recruitment to MCVs as early as 1 hour post-infection, sustained over the infection time course, predominantly at bacterial poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C73-C81, and C94 are supported by multiple lines of evidence including bioinformatic analysis (C74-C75), RNA-seq data (C77), proteomics (C78), and microscopy data (C79-C81, C94) showing TrafE recruitment to damaged compartments during infection and sterile damage. The structural and functional characterization is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C164",
+      "C165"
+    ],
+    "result": "TrafE functions at the intersection of ESCRT and autophagy pathways. Loss of TrafE affects expression of genes in both autophagy and ESCRT families, and TrafE plays a key role in functional recruitment of ESCRT subunits ALIX, Vps32, and Vps4 to damage sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C164, and C165 are supported by RNA-seq data showing differential expression of both autophagy and ESCRT genes in trafE-KO cells (C158-C163), and microscopy data showing impaired Vps4 recruitment and aberrant ALIX/Vps32 accumulation in trafE-KO cells (C179, C183, C189-C192). The intersection of both pathways is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C95",
+      "C96",
+      "C114",
+      "C115"
+    ],
+    "result": "Absence of TrafE severely compromises xenophagy restriction of mycobacteria. The intracellular load of M. marinum is increased in trafE-KO cells comparable to autophagy-deficient atg1-KO cells, and bacteria escape earlier from the MCV to the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C95, C96, C114, and C115 are supported by bacterial growth assays (C95, Figure 2A), Plin colocalization data showing early bacterial escape (C103-C104, Figure 2B), and the observation that endogenous TrafE levels are limiting for bacterial restriction (C96). The phenotype is comparable to atg1-KO cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C148",
+      "C149",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Absence of TrafE severely compromises ESCRT-mediated endolysosomal membrane damage repair. WT cells can fully repair damage to endolysosomes and restore their pH after LLOMe treatment, while trafE-KO cells show persistent proton leakage and failure to restore pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C144-C149 are supported by lysosensor fluorescence data (Figure 6G-H) showing that WT cells restore pH after LLOMe treatment while trafE-KO cells do not. This is further supported by impaired Vps4 recruitment (C189) and aberrant ALIX/Vps32 accumulation (C179) in trafE-KO cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C175",
+      "C176"
+    ],
+    "result": "Absence of TrafE compromises autophagy-mediated endolysosomal membrane damage repair. TrafE is not required for autophagy initiation but acts downstream of Atg1, as evidenced by accumulation of Atg8a puncta in starved trafE-KO cells and aberrant Atg8a-positive structures after LLOMe treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C169-C173, C175-C176 are supported by microscopy data showing increased Atg8a puncta in starved trafE-KO cells (C169-C170, Figure 9A-B), accumulation of aberrant crescent-like Atg8a structures after LLOMe (C173, Figure 9D), and the observation that trafE-KO cells complete development unlike atg1-KO cells (C99, C176), indicating partial rather than complete autophagy impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C116",
+      "C156",
+      "C157"
+    ],
+    "result": "Absence of TrafE results in early cell death during M. marinum infection and increased susceptibility to sterile damage. M. marinum is highly toxic for trafE-KO cells, with significantly decreased survival compared to WT and atg1-KO cells, suggesting TrafE is more broadly involved in cell survival mechanisms than Atg1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C110-C113, C116, C156-C157 are supported by microfluidic single-cell survival data (Figure 2E) showing decreased survival of trafE-KO cells during infection, and propidium iodide cell death assays (Figure 7E) showing highest susceptibility to LLOMe-induced damage. The more severe phenotype compared to atg1-KO cells suggests cumulative defects in both ESCRT and autophagy pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C120",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Membrane damage is required for TrafE recruitment to MCVs and subsequent restriction of bacteria proliferation by xenophagy. TrafE-GFP recruitment to MCVs is severely reduced upon infection with M. marinum \u0394RD1, which causes less membrane damage, and the growth advantage of WT M. marinum in trafE-KO cells is strictly dependent on MCV damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126, C120, C122-C124 are supported by microscopy data showing reduced TrafE recruitment to \u0394RD1 bacteria (C120, Figure 3A-B), bacterial growth assays showing that \u0394RD1 bacteria do not show increased growth in trafE-KO cells (C122, Figure 3C), and survival data showing no toxicity of \u0394RD1 bacteria in trafE-KO cells (C124, Figure 3D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C199",
+      "C200"
+    ],
+    "result": "TrafE is responsible for K63-linked polyubiquitination of MCVs and damaged endolysosomes. GFP-TrafE colocalizes with K63-Ub on MCVs, and while global polyubiquitination levels remain comparable between WT and trafE-KO cells, the fraction of K63-linkage positive MCVs is drastically reduced in trafE-KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130, C199-C200 are supported by immunofluorescence data showing TrafE colocalization with K63-Ub (C127, Figure 4A), comparable total ubiquitination but drastically reduced K63-Ub levels in trafE-KO cells (C128-C129, Figure 4B-E), and virtual abolishment of K63-Ub on damaged compartments in trafE mutants (C199, Figure 12B, D-E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The RING domain is essential for TrafE recruitment to damaged membranes and its E3 ligase activity. Absence of the N-terminal RING domain results in complete loss of TrafE recruitment to MCVs and damaged endolysosomes, and both truncated proteins (\u0394RING and \u0394TRAF-N) fail to complement the trafE-KO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135, C139-C143 are supported by microscopy data showing loss of recruitment for \u0394RING TrafE to MCVs (C133, Figure 5A-B) and damaged endolysosomes (C141, Figure 6B-D), bacterial growth assays showing failure of both truncations to complement trafE-KO (C134, Figure 5C), and colocalization with dextran-loaded endolysosomes (C142, Figure 6E-F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "A decrease of membrane tension alone is sufficient to trigger TrafE recruitment to endolysosomal membranes. Cytosolic GFP-TrafE relocates to endolysosomal compartments seconds after hyperosmotic shock with sorbitol, and regains cytosolic distribution when cells adapt, while lysosensor fluorescence remains stable indicating no membrane damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C155 are supported by live microscopy data showing rapid TrafE recruitment after sorbitol addition (C152, Figure 7A-B), reversibility upon cell adaptation (C153), and lysosensor data showing stable pH indicating no membrane damage (C154, Figure 7C-D). This demonstrates that membrane tension decrease, independent of damage, is sufficient for TrafE recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C179",
+      "C183"
+    ],
+    "result": "TrafE is required for functional Vps4 recruitment to damage sites, and its absence leads to aberrant accumulation of ALIX and Vps32. In trafE-KO cells, GFP-Vps4 recruitment to endolysosomal damage sites is abolished, while ALIX-GFP and GFP-Vps32 accumulate excessively, resulting in non-functional ESCRT-mediated repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C192, C179, C183 are supported by microscopy data showing abolished Vps4 recruitment in trafE-KO cells (C189, Figure 11A-B), complementation by mRFP-TrafE re-expression (C190, Figure 11\u2014figure supplement 1), colocalization of TrafE with Vps4 (C191, Figure 11D), and significantly increased ALIX/Vps32 accumulation in trafE-KO cells (C179, C183, Figure 10C-D, Figure 10\u2014figure supplement 1E-F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C201",
+      "C202"
+    ],
+    "result": "TrafE-dependent K63-ubiquitination promotes K63-Ub-ALIX interaction which enhances ALIX ability to stimulate Vps4 activity. In WT and atg1-KO cells, ALIX-GFP colocalizes with K63-Ub on damaged compartments, but in trafE mutants, ALIX-GFP structures accumulate without K63-Ub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C198, C201-C202 are supported by immunofluorescence data showing ALIX colocalization with K63-Ub in WT and atg1-KO cells but not in trafE-KO cells (C196-C199, Figure 12A-E). The working model (C201-C202) is a reasonable inference from the data showing that TrafE-dependent K63-ubiquitination is required for proper ALIX-Vps4 interaction and ESCRT function, though the specific molecular mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C163"
+    ],
+    "result": "RNA-seq comparison of trafE-KO to WT cells reveals upregulation of autophagy-related genes. 283 genes show differential expression, with clear upregulation of ATG-related transcripts including atg1, atg9, atg8a, and p62/sqstm1, and significant enrichment of the KEGG term 'autophagy-other'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160, C163 are supported by RNA-seq data showing 283 differentially expressed genes (C158, Figure 8A), upregulation of autophagy genes (C159, Figure 8B), GSEA enrichment (C160, Figure 8C), and upregulation of ALIX with downregulation of Alg2A (C163). The transcriptomic changes are consistent with the functional phenotypes observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Among D. discoideum TRAF-like proteins, only TrafE and TrafC are recruited to MCVs during infection, and only TrafE overexpression significantly restricts M. marinum growth. GFP-TrafA remains cytosolic, GFP-TrafB remains nuclear (harboring an NLS like human TRAF4), and GFP-TrafD is not recruited despite 95.56% similarity to TrafC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87, C89-C91 are supported by microscopy data showing distinct localization patterns (Figure 1\u2014figure supplement 3A-D), in silico NLS prediction for TrafB (C84), sequence similarity analysis (C85), and bacterial growth assays showing only TrafE overexpression restricts bacterial growth (C89-C91, Figure 1E, Figure 1\u2014figure supplement 4A).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "C-terminal GFP fusion of TrafE does not interfere with its function, as bacteria growth in the TrafE-GFP KI strain is comparable to WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by bacterial growth assay data (Figure 1\u2014figure supplement 4B) showing comparable growth between TrafE-GFP KI and WT cells. This validates the use of GFP-tagged TrafE for functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "trafE-KO cells complete development and form viable spores upon starvation, unlike atg1-KO cells which do not proceed beyond aggregation. This suggests TrafE may not function as a general autophagy regulator but is more specifically linked to infection- or membrane damage-related activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by developmental assay data (Figure 2\u2014figure supplement 1A) showing distinct phenotypes between atg1-KO and trafE-KO cells. The inference that TrafE has a more specific role than general autophagy (C100) is reasonable but remains somewhat speculative as it is based on a single developmental assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In trafE-KO cells, M. marinum escapes to the cytosol earlier than in WT cells (similar to atg1-KO), and after 30 hpi there is a significant decrease in infected cells with high numbers of extracellular bacteria, suggesting both MCV damage repair and xenophagy are impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104, C107-C109 are supported by Plin colocalization data showing early bacterial escape (C103-C104, Figure 2B), high-content microscopy showing decreased infected cells (C108, Figure 2C) and increased extracellular bacteria (C109, Figure 2D). The inference that both repair and xenophagy are impaired (C107) is reasonable given the combined phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "ESCRT machinery components ALIX and Vps32 are recruited to autophagosomes during starvation in an autophagy-dependent manner. In WT and trafE-KO cells starved for 1.5 hr, both ALIX-GFP and GFP-Vps32 redistribute to dextran-negative structures, but not in autophagy-deficient atg1-KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C178, C180-C182 are supported by microscopy data showing ALIX and Vps32 recruitment to dextran-negative structures during starvation (C180, Figure 10\u2014figure supplement 1A-B), and absence of this recruitment in atg1-KO cells (C182, Figure 10\u2014figure supplement 1C-D). This demonstrates the autophagy-dependence of ESCRT recruitment to autophagosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C195",
+      "C193",
+      "C194"
+    ],
+    "result": "D. discoideum ALIX contains a likely ubiquitin binding domain (UBD) with highly conserved residues. ALIX binding to K63-Ub chains establishes a positive feedback loop stimulating Vps4 activity, and failure of Vps4 to interact with Ub-bound ALIX results in major defects in cargo sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C195 is supported by sequence alignment data (Figure 12\u2014figure supplement 1) showing conserved residues indicating a likely UBD. Claims C193-C194 are supported by citations to previous work establishing the ALIX-K63-Ub-Vps4 functional relationship. The presence of a UBD in D. discoideum ALIX supports the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on mycobacterial infection strategy: M. tuberculosis and M. marinum impede phagosome maturation, tailor the MCV as a permissive niche, and progressively gain access to the cytosol through the ESX-1 secretion system via EsxA and PDIMs. ESX-1 mutants inflict less damage and fail to escape to the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C21 are background claims supported by multiple citations to previous work (Soldati and Neyrolles 2012; Pym et al. 2002; Lerner et al. 2018; Cardenal-Mu\u00f1oz et al. 2017; Gao et al. 2004; L\u00f3pez-Jim\u00e9nez et al. 2018; Hagedorn et al. 2009; Queval et al. 2017). These establish the context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on xenophagy and autophagy: Xenophagy is fundamental for cell-autonomous immunity, requires ~15 ATG genes, is initiated by Atg1 and Atg9 recruitment, depends on Atg16-Atg12-Atg5 complex and Atg8 lipidation, and requires cargo receptors like p62 to link ubiquitin-tagged bacteria to Atg8. Autophagy also removes damaged compartments (lysophagy) and cooperates with ESCRT for membrane repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C32 are background claims supported by established scientific knowledge and citations to previous work (Sharma et al. 2018; Deretic et al. 2013; Mesquita et al. 2017; Boyle and Randow 2013; Skowyra et al. 2018; L\u00f3pez-Jim\u00e9nez et al. 2018; Papadopoulos et al. 2020). These provide necessary context for understanding the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background on ESCRT function: The ESCRT-III complex functions in membrane deformation away from the cytosol and plays critical roles in phagophore closure, autophagosome-lysosome fusion, plasma membrane repair, and lysosome membrane repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are background claims supported by citations to previous work (Vietri et al. 2020; Schuck 2020). These establish the known functions of ESCRT that are relevant to the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Background on ubiquitination in infection: Ubiquitination is a conserved post-translational modification playing roles in infection. E3 ligases LRSAM1, TRAF6, NEDD4, Parkin, and Smurf1 mediate ubiquitination during infection. Galectins recognize damage and serve as 'eat-me' tags, and TRIM16-Galectin3 complexes mediate autophagy removal of damaged compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C50 are background claims supported by established knowledge and citations to previous work (Huett et al. 2012; Haldar et al. 2015; Pei et al. 2017; Manzanillo et al. 2013; Franco et al. 2017; Chauhan et al. 2016; Randow and Youle 2014). These provide context for the role of ubiquitination in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Background on TRAF proteins: Human TRAF1-7 function in immunity and cell death as E3 ligases and scaffolds. TRAFs contain RING, Zn-finger, and TRAF domains. The RING domain and Zn-fingers are required for E3 ligase activity, TRAF6 catalyzes K63-linked polyubiquitin chains, and the RING domain enables dimerization and network formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C64 are background claims supported by citations to previous work (Xie 2013; Bradley and Pober 2001; Park 2018; Joazeiro and Weissman 2000; Middleton et al. 2017; Das et al. 2022; Yin et al. 2010). These establish the known structure and function of TRAF proteins relevant to understanding TrafE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Background on D. discoideum-M. marinum model: Defects in endomembrane repair and lysophagy correlate with weakened defenses, aging, cancer, and neurodegeneration. Previous work in D. discoideum showed M. marinum colocalizes with Ub, Atg8, and p62, autophagy deficiency increases bacterial proliferation, and failure to repair MCVs increases cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 are background claims supported by citations to previous work (Papadopoulos and Meyer 2017; Cardenal-Mu\u00f1oz et al. 2017; Wang et al. 2018; Eriksson et al. 2020). These establish the rationale for using the D. discoideum-M. marinum model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "Supporting observations on ESX-1 and membrane damage: In D. discoideum infected with M. marinum \u0394RD1, ubiquitination is significantly decreased. Nearly 80% of TrafE recruitment occurs at bacterial poles where ESX-1 is localized and active. The bacteria load of \u0394RD1 is reduced in both WT and atg1-KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119, C121 are supported by citations to previous work (Cardenal-Mu\u00f1oz et al. 2017; Carlsson et al. 2009) and quantification data (C118, Figure 1C). These provide supporting context for the membrane damage-dependence of TrafE recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Supporting information on TRAF domain functions: TRAF E3-ligase activity depends on the RING domain mediating E2 enzyme interaction and on TRAF-N/RING domain-dependent oligomerization. The RING domain permits dimerization, determines substrate recognition, and binds E2-conjugating enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132, C136-C138 are supported by citations to previous work (Das et al. 2021; Das et al. 2022; Jackson et al. 2000) and established knowledge about RING domains. These provide mechanistic context for the domain deletion experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "Supporting information on membrane tension: LLOMe-induced membrane damage reduces membrane tension similarly to hyperosmotic conditions. Water expulsion results in membrane tension decrease sufficient to trigger ALIX and CHMP4B recruitment and ILV formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 are supported by citation to previous work (Mercier et al. 2020) and established knowledge about membrane tension and ESCRT recruitment. This provides mechanistic context for the hyperosmotic shock experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C161",
+      "C162"
+    ],
+    "result": "Supporting information on autophagy regulation: High, uncontrolled autophagy activity could be harmful for cells and may lead to accelerated cell death or promote replication and spread of intracellular pathogens or cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C162 are supported by citations to previous work (Levine and Yuan 2005; Ravikumar et al. 2010). This provides context for interpreting the upregulation of autophagy genes in trafE-KO cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Supporting information on Atg8 puncta: In D. discoideum cells, infection with M. marinum, LLOMe-induced sterile membrane damage, or starvation trigger an increase of LC3/Atg8 puncta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C168 are supported by citations to previous work (Cardenal-Mu\u00f1oz et al. 2017; L\u00f3pez-Jim\u00e9nez et al. 2018). This provides context for the Atg8a experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C174"
+    ],
+    "result": "Supporting information on ESCRT and autophagy: Accumulation of Atg8/LC3 structures occurs in yeast and mammalian cells lacking or expressing dominant-negative forms of ESCRT subunits required for autophagosome biogenesis, closure and maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C174 is supported by citations to previous work (Takahashi et al. 2018; Zhou et al. 2019). This provides context for interpreting the aberrant Atg8a structures in trafE-KO cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Supporting information on Vps4 function: The Vps4 ATPase is essential for assembly, disassembly, and dynamic turnover of ESCRT-III subunits during MVB formation and membrane remodeling. Absence of Vps4 leads to accumulation of ESCRT components on endosomes, formation of Atg8 clusters, and defects in autophagosome closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C187 are supported by citations to previous work (Shestakova et al. 2010; Mierzwa et al. 2017; Takahashi et al. 2018). This provides context for interpreting the Vps4 recruitment defect in trafE-KO cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C188"
+    ],
+    "result": "Supporting observation on Vps4 recruitment: After addition of 4.5 mM LLOMe in WT cells, GFP-Vps4 is robustly redistributed from the cytosolic pool to damaged endolysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C188 is supported by microscopy data and citation to previous work (L\u00f3pez-Jim\u00e9nez et al. 2018). This establishes the baseline for comparison with trafE-KO cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C184"
+    ],
+    "result": "Interpretation: The excessive accumulation of ESCRT components on damaged endolysosomes or autophagy-related structures in trafE-KO cells might reflect incomplete engagement of both ESCRT and autophagy machineries, placing TrafE at their intersection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C184 is a reasonable inference from the observation that ESCRT components accumulate but repair is impaired in trafE-KO cells. This interpretation is consistent with the data showing both ESCRT and autophagy defects, though it remains somewhat speculative about the precise mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C203",
+      "C205",
+      "C206"
+    ],
+    "result": "Working model for atg1-KO and trafE-KO cells: In atg1-KO cells, ESCRT-dependent damage repair is functional but autophagy-dependent fusion-type repair is absent. In trafE-KO cells, absence of K63-Ub impairs autophagy-dependent fusion-type repair. TrafE may also be involved in phagophore closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C203, C205, and C206 are models and speculation based on inference from experimental data. While the models are consistent with the data, they represent interpretations rather than directly demonstrated results. Claim C206 about phagophore closure is explicitly speculative, based on citations to previous work about ESCRT in phagophore closure (Takahashi et al. 2018, 2019; Zhen et al. 2020) but not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

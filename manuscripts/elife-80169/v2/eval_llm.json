@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "RNA-seq analysis reveals that dFOXO deletion flies have increased TE expression with age compared to wildtype flies. In wildtype animals, only 2 TEs increased and 2 decreased with age, while dFOXO deletion animals showed 18 TEs with increased expression and none decreased. Total TE expression increased 1.2-fold in wildtype and 1.41-fold in dFOXO null flies with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 are supported by RNA-seq data shown in Figure 1 with appropriate statistical analysis (DESeq2, adjusted p<0.05). The isogenic nature of the strains (C66) strengthens the interpretation. However, C68 notes different TE landscapes between supposedly isogenic lines, which introduces some uncertainty about baseline comparisons but doesn't invalidate the age-related changes within each strain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C70",
+      "C71",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "The UAS-gypsy system produces an active transposable element that can transpose and insert throughout the genome. When crossed to Ubi-GAL4, ectopic gypsy expression is induced, new insertions are created and detected, and over 11,000 insertion sites were mapped across all chromosomes with 66% in transcribed regions (mostly intronic). The target site duplication matches the known YRYRYR motif for endogenous gypsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are well-supported by multiple complementary approaches: RT-qPCR (Figure 2b), gDNA qPCR (Figure 2c), Sanger sequencing (Figure 2d), and targeted next-generation sequencing (Figure 3). The target site duplication analysis (C45, C110) validates that the synthetic element behaves like natural gypsy. The distribution data (C41-C44, C70-C71) is comprehensive with three biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C46",
+      "C47",
+      "C48",
+      "C3",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Ectopic expression of active gypsy significantly decreases male fly lifespan by 19% (median survival 70 vs 86 days). The mortality effect only becomes apparent in middle-aged animals (starting at day 26), with significant increases in age-specific mortality in 26-75 day old animals but not in young flies, suggesting young animals can tolerate TE activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C46-C48 are strongly supported by three independent cohorts (Figure 4a) with appropriate statistical analysis (log-rank test, p<0.0001). The age-specific mortality analysis (C3, C48, Figure 4b-e) demonstrates the effect is restricted to middle-aged animals with proper statistical testing (one-way ANOVA with multiple comparison correction). The interpretation that young animals tolerate TE activity (C89-C90) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C95",
+      "C96"
+    ],
+    "result": "An intact reverse transcriptase is necessary for the lifespan-shortening effect of ectopic gypsy. Deletion of RT prevents the lifespan effect despite equivalent mRNA expression levels, and no increase in ectopic gypsy DNA is detected in the RT deletion line, implicating the DNA synthesis step as detrimental.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are well-supported by the RT deletion experiment (Figure 6). The rescue of lifespan (C51, Figure 6a), equivalent RNA expression (C52, Figure 6b), and absence of DNA increase (C53, Figure 6c) provide strong evidence that RT activity is required. The conclusion that DNA synthesis is implicated (C54, C96) is a logical inference, though the authors acknowledge (C117) that downstream steps cannot be ruled out without additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C77"
+    ],
+    "result": "Active gypsy expression increases sensitivity to oxidative stress in an age-dependent manner. Five-day-old active gypsy flies show paraquat resistance similar to 15-day-old controls, and 15-day-old active gypsy flies have significantly decreased resistance compared to age-matched controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C57, C77 are supported by paraquat resistance assays at multiple ages (Figure 7a) with appropriate statistical analysis (log-rank test). The dramatic finding that 5-day-old active gypsy flies resemble 15-day-old controls (C56, C77) suggests accelerated aging of this phenotype. However, the effect disappears at 30 and 50 days, indicating complexity in the relationship between TE activity and oxidative stress resistance over the lifespan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Active gypsy expression promotes a decline in circadian rhythmicity. Control flies maintained 84-97% rhythmicity at all assessed ages, while flies with ectopic gypsy expression showed only 73-77% rhythmicity and displayed a significant decline in rhythmicity index with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58-C60 are supported by circadian behavior analysis (Figure 7b-c) with appropriate sample sizes (n=22-31 flies per condition). The decline in rhythmicity index (C60) is statistically significant and specific to the active gypsy flies. However, other circadian measures (period, total activity) were not affected, indicating selective impact on specific aging phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C100"
+    ],
+    "result": "Active TE expression accelerates a subset but not all aging phenotypes. Locomotor activity decay occurred at rates similar to controls, indicating that not all aging phenotypes show accelerated decay in response to active TE, and suggesting that hallmarks of aging are not uniformly affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C100 are supported by negative geotaxis assays (Figure 7\u2014figure supplement 3) showing no difference between active gypsy and controls. This negative result is important for establishing that TEs selectively affect certain aging phenotypes (oxidative stress, circadian rhythmicity) but not others (locomotion). The conclusion that TEs can be causative agents (C80) is supported by the totality of the lifespan and phenotypic data, though the selective nature of effects (C100) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C61",
+      "C62",
+      "C82",
+      "C102"
+    ],
+    "result": "Overexpression of dFOXO partially rescues the lifespan defect caused by active gypsy, reducing the 19% decrease in lifespan to 8%. This rescue is not due to decreased ectopic gypsy mRNA expression, as transcript levels remain significantly induced in dFOXO-overexpressing flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C61-C62, C82, C102 are supported by lifespan assays with dFOXO overexpression (Figure 8b) and RT-qPCR showing maintained gypsy expression (Figure 8c). The partial rescue is statistically significant (log-rank test) and demonstrates that dFOXO can counteract TE effects through mechanisms other than transcriptional repression of the TE itself. Two independent biological replicates support the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C103"
+    ],
+    "result": "dFOXO overexpression rescues paraquat sensitivity and reduces gypsy insertion numbers despite comparable mRNA levels, suggesting dFOXO protects both genome integrity and oxidative stress responses caused by active gypsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C103 are supported by paraquat assays (Figure 8d) and insertion quantification (Figure 8e) in dFOXO-overexpressing flies. The reduction in insertions despite equivalent mRNA expression is particularly striking and suggests dFOXO acts post-transcriptionally. However, the mechanism by which dFOXO reduces insertions is not determined, and C65 is an inference that requires further mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Ectopic gypsy DNA was detected at multiple ages (5-70 days) but unexpectedly does not increase with age despite constant RNA expression. The oldest animals have the lowest detectable insertions, suggesting unknown mechanisms act to clear or prevent increases in TE insertion load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C92-C94 are supported by longitudinal qPCR measurements (Figure 5a-d) using three different primer approaches. The finding that insertions decrease with age (C92-C93) is unexpected and well-documented, though the interpretation that clearance mechanisms exist (C94) is speculative. The constant RNA expression (C50) with decreasing DNA is puzzling and suggests either cell loss or DNA repair, but the mechanism remains undetermined (C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Female flies show confounding effects in the UAS-gypsy system, with lifespan effects present in parental controls and differential distribution of insertions between head and body tissues, unlike males which show equivalent insertion levels throughout somatic tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by female lifespan data (Figure 4\u2014figure supplement 1) and tissue distribution assays (Figure 4\u2014figure supplement 2-3). The sex-specific differences are well-documented and appropriately led the authors to focus on males for subsequent experiments. This is good experimental practice, though it limits the generalizability of findings to males only.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C69",
+      "C83",
+      "C84",
+      "C85",
+      "C97",
+      "C98",
+      "C99",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Background literature establishes that TE expression increases with age across species, TEs can cause genomic instability and disease, the siRNA pathway controls TEs in Drosophila somatic tissue, and FOXO is a conserved longevity factor that activates small RNA pathways limiting TE expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C30, C69, C83-C85, C97-C99, C106-C109 are all citation-based background claims that appropriately contextualize the study. The citations appear relevant and support the stated claims. These establish the rationale for investigating TE activity in aging and the potential role of FOXO, though the accuracy of individual cited claims was not independently verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C114",
+      "C115",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study addresses whether TEs are causative agents in aging using the UAS-gypsy system, though the ubiquitous ubi-GAL4 driver active throughout the life cycle prevents defining the exact time window when TE activity affects lifespan. The survival curve shape indicates healthy flies rather than disease-induced mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C114-C115, C119-C121 describe the conceptual framework and limitations of the study. C1 is established background knowledge. C114-C115 appropriately acknowledge a limitation of the experimental system. C119-C121 correctly apply criteria for distinguishing premature aging from disease-induced mortality based on survival curve analysis, strengthening the interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C101",
+      "C104",
+      "C105",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The manuscript includes several speculative interpretations and identifies open questions requiring future work, including the mechanism by which aging synergizes with TE activity, whether clearance occurs via cell loss or DNA repair, what step beyond DNA synthesis is most detrimental, and whether dFOXO has a novel role in promoting longevity through combating TE activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91, C101, C104-C105, C116-C118 are explicitly speculative or identify areas for future investigation. These are appropriately presented as hypotheses or open questions rather than established findings. While they represent reasonable interpretations of the data, they require additional experiments for validation and should not be considered supported results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1854 @@
+{
+  "submission": {
+    "id": "43af412b-50b2-43f2-92b8-5c389a7a377c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:21:40.884457Z",
+    "updated_at": "2025-12-03T17:21:40.884457Z"
+  },
+  "content": [
+    {
+      "id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "submission_id": "43af412b-50b2-43f2-92b8-5c389a7a377c",
+      "content_type": "manuscript",
+      "content_text": "# Revealing druggable cryptic pockets in the Nsp1 of SARS-CoV-2 and other \u03b2-coronaviruses by simulations and crystallography\n\n## Authors\n\n- Alberto Borsatto<sup>1</sup> ([ORCID: 0000-0002-8889-6491](https://orcid.org/0000-0002-8889-6491))\n- Obaeda Akkad<sup>1</sup>\n- Ioannis Galdadas<sup>1</sup> ([ORCID: 0000-0003-2136-9723](https://orcid.org/0000-0003-2136-9723))\n- Shumeng Ma<sup>3</sup>\n- Shymaa Damfo<sup>3</sup>\n- Shozeb Haider<sup>3</sup> ([ORCID: 0000-0003-2650-2925](https://orcid.org/0000-0003-2650-2925))\n- Frank Kozielski<sup>3</sup>\n- Carolina Estarellas<sup>5</sup> ([ORCID: 0000-0002-0944-9053](https://orcid.org/0000-0002-0944-9053)) \u2020\n- Francesco Luigi Gervasio<sup>1</sup> ([ORCID: 0000-0003-4831-5039](https://orcid.org/0000-0003-4831-5039)) \u2020\n\n### Affiliations\n\n1. School of Pharmaceutical Sciences, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))\n2. ISPSO, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))\n3. School of Pharmacy, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n4. UCL Centre for Advanced Research Computing, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n5. Department of Nutrition, Food Science and Gastronomy, Faculty of Pharmacy and Food Sciences, and Institute of Theoretical and Computational Chemistry, University of Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))\n6. Chemistry Department, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n7. Institute of Structural and Molecular Biology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNon-structural protein 1 (Nsp1) is a main pathogenicity factor of \u03b1- and \u03b2-coronaviruses. Nsp1 of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) suppresses the host gene expression by sterically blocking 40S host ribosomal subunits and promoting host mRNA degradation. This mechanism leads to the downregulation of the translation-mediated innate immune response in host cells, ultimately mediating the observed immune evasion capabilities of SARS-CoV-2. Here, by combining extensive molecular dynamics simulations, fragment screening and crystallography, we reveal druggable pockets in Nsp1. Structural and computational solvent mapping analyses indicate the partial crypticity of these newly discovered and druggable binding sites. The results of fragment-based screening via X-ray crystallography confirm the druggability of the major pocket of Nsp1. Finally, we show how the targeting of this pocket could disrupt the Nsp1-mRNA complex and open a novel avenue to design new inhibitors for other Nsp1s present in homologous \u03b2-coronaviruses.\n\n## Introduction\n\nCoronaviruses (CoVs) are the largest family of RNA viruses identified to date. CoVs are members of the subfamily Coronavirinae classified into four genera \u03b1-, \u03b2-, \u03b3-, and \u03b4-CoV. Common human CoVs belong to the first two genera and include the 229E (\u03b1-), NL63 (\u03b1-), OC43 (\u03b2-), and HKU1 (\u03b2-). Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), which led to the COVID-19 pandemic declared in March 2020 as the severe acute respiratory syndrome-related CoV, SARS-CoV-1, and the Middle East respiratory syndrome-related CoV, MERS-CoV, all belong to the \u03b2-CoV genera and are suggested to originate from bats (Andersen et al., 2020; Li et al., 2005; Corman et al., 2014). The genome of different CoVs typically encodes four structural proteins, namely spike, envelope, membrane, and nucleocapsid, and two large polyproteins, pp1a and pp1ab, that are later cleaved into several non-structural proteins (Woo et al., 2010). Due to the SARS-CoV-2 pandemic, significant efforts have been directed to the study and inhibition of these proteins such as the spike protein and the protease Mpro (Owen et al., 2021). Among the different proteins that are involved in the pathogenicity of SARS-CoV-2 is the non-structural protein 1 (Nsp1), a small 180 residue protein Coronaviridae Study Group of the International Committee on Taxonomy of Viruses, 2020 whose function has been studied comparatively less than the rest of the pathogenic proteins. The structure of Nsp1 can be divided into three domains, a structured core, and two disordered domains corresponding to the N- and C-termini of the protein. The structured domain is composed of 117 residues (Glu10-Asn126) and displays an \u03b1/\u03b2-fold. The disordered C-terminal domain (Gly127-Gly180) was shown to partially fold into a helix-loop-helix pattern when bound to the 40S ribosomal subunit (Figure 1; Schubert et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig1-v1.jpg)\n\n**Figure 1.:** Cartoon representation of the full-length non-structural protein 1 (Nsp1) structure from the AlphaFold (Jumper et al., 2021; Varadi et al., 2022) model, showing the N-terminus (in yellow, aa Met1-Asn9), the Nsp1N core (in gray, aa Glu10-Asn126), and the C-terminus (blue, aa Gly127-Gly180).\n\nIt is worth noting that Nsp1 is only present in the \u03b1- and \u03b2-, but not in the \u03b3- and \u03b4-CoVs. The structural analysis of Nsp1N structures from \u03b1- (PDB entries 3ZBD and 5XBC) and \u03b2- (PDB entry 2HSX) CoVs suggests that, despite the low sequence homology, the Nsp1 of the two genera displays a high structural similarity, with root-mean-square deviation (RMSD) values ranging from 1.8 to 2.4 A (Shen et al., 2018; Min et al., 2020). The structural similarity of the \u03b1-CoVs and \u03b2-CoVs Nsp1 is reflected by their biological function as both are involved in the regulation of the host and viral gene expression. Multiple studies have shown that the expression of Nsp1 inhibits the translation in host cells by a combination of different mechanisms. For instance, Nsp1 sterically blocks the mRNA tunnel in the 40S ribosomal subunit (Schubert et al., 2020), the 43S preinitiation complex, and the non-translating 80S ribosomes (Schubert et al., 2020; Thoms et al., 2020; Yuan et al., 2020). Moreover, it has been shown that Nsp1 can also trigger the cleavage of the host mRNA and hinder its nuclear export to the cytosol (Zhang et al., 2021). These mechanisms concur in downregulating the translation-mediated innate immune response of the host cell, hence mediating the observed immune evasion capabilities of SARS-CoV-2 (Thoms et al., 2020; Narayanan et al., 2008). Interestingly, only host mRNAs are subjected to Nsp1-mediated endonucleolytic cleavage whereas viral mRNAs escape from this translation suppression mechanism. Experimental results have shown that the interaction of N-terminal Nsp1 with the stem loop 1 (SL1) at the viral mRNA 5\u2019 UTR region is necessary to avoid the Nsp1-mediated translation shutdown and cleavage in infected cells (Tanaka et al., 2012; Vankadari et al., 2020). The proposed mechanism suggests that Nsp1 plays the role of a ribosome gatekeeper by sterically blocking the mRNA tunnel of the ribosome for the host mRNAs and the blockage is lifted upon the interaction of Nsp1 with the 5\u2019-UTR SL1 sequence of the viral mRNA. In this way, the virus can inhibit selectively the translation of the host mRNA and highjack the ribosome to foster the translation of its own mRNA (Tidu et al., 2020; Mendez et al., 2021).\n\nThe regulatory role of Nsp1 in viral replication and gene expression has also been demonstrated by mutations in the Nsp1 coding region of the transmissible gastroenteritis virus (TGEV, an \u03b1-CoV infecting pigs) and the murine hepatitis virus (MHV, a \u03b2-CoV infecting mice) genomes. According to these mutagenesis studies, blocking the function of Nsp1 in different viruses leads to a drastic reduction or elimination of the infectious virus (Shen et al., 2019).\n\nAltogether, the high structural similarity across different \u03b1- and \u03b2-CoVs from different organisms, the fact that Nsp1 has no homologues outside of the CoVs, as well as its crucial role in mediating immune evasion, make Nsp1 a valuable target for developing antiviral drugs, not only for the ongoing COVID-19 pandemic but also to prevent future pandemic outbreaks caused by new variants. However, the largest folded domain of Nsp1, namely the N-terminal core region (Nsp1N), corresponds to a small compact domain that shows predominantly small superficial cavities, which complicates rational drug design efforts. In spite of Nsp1 being a validated target for therapeutic intervention, very few studies explored Nsp1 for structure-based drug discovery, and only one of them reported the binding of a ligand to the C-terminal domain of SARS-CoV-2 Nsp1 (Afsar et al., 2022). To date, no ligand-bound Nsp1 crystal structures are available, making the ones presented here and in another study from our group the first fragment-bound SARS-CoV-2 Nsp1 crystal structures so far (Ma et al., 2022).\n\nHere, we used a combination of computational and experimental approaches to explore the druggability of Nsp1 in SARS-CoV-2, and the possibility to expand the findings to homologous Nsp1s. In particular, we have used modelling, enhanced sampling simulations, virtual screening, fragment soaking, and X-ray crystallography to identify druggable binding pockets, including hidden (cryptic) ones, and evaluate the potential of ligands to interfere with the formation of Nsp1-RNA complexes. Our enhanced sampling simulations predict four partially cryptic binding pockets of which one is validated by crystallography. Moreover, taking into consideration the 3D similarity between different Nsp1s in \u03b1- and \u03b2-CoVs, we have extended our analysis to assess the conservation of the pockets across various Nsp1s of \u03b1- and \u03b2-CoVs infecting humans. The results of this research can be used as a stepping stone for the design of Nsp1 inhibitors for SARS-CoV-2 and potentially for other \u03b1- and \u03b2-CoVs.\n\n## Results and discussion\n\n### Structural assessment of Nsp1 pockets\n\nTo the date of writing this paper, the only available X-ray structure of apo SARS-CoV-2 Nsp1 contains only the N-terminal region (aa 10\u2013126 PDB entry 7K7P) (Clark et al., 2021), hereafter referred to as Nsp1N system. Starting from this crystal structure, we have characterized the possible binding pockets present in the 3D structure by means of pocket detection algorithms, namely DoGSiteScorer (Volkamer et al., 2012) (available via the ProteinPlus webserver) and Fpocket (Le Guilloux et al., 2009), showing similar results (Figure 2 and Figure 2\u2014figure supplement 1). The analysis indicates the presence of some putative binding sites on the protein surface. Specifically, two different areas were identified to harbor potential binding pockets by both algorithms. The first one is sandwiched between the entrance of the \u03b2-barrel and the \u03b1-helix displaying a more evident pocket-like structure with a concave topology (Figure 2, left). The second region, located on the opposite side of the \u03b2-barrel, is characterized by a groove-like topology and spans a larger area on the protein surface but is very shallow (Figure 2, right).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig2-v1.jpg)\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig2-figsupp1-v1.jpg)\n\nTo investigate more in-depth the nature of the pocket-like structure and the possible opening of hidden (cryptic) binding sites in the grooved region, we have carried out a 1-\u03bcs-long unbiased molecular dynamics (MD) simulation of Nsp1N in its apo state. The time series of the RMSD shows that the system remains stable throughout the simulation (Figure 3\u2014figure supplement 1). The analysis of the pockets observed along the MD simulation through the MDpocket (Le Guilloux et al., 2009) program confirms the presence of a pocket-like structure, hereafter referred to as pocket 1, at the same place as the one predicted for the X-ray structure by ProteinPlus and Fpocket. A detailed analysis of pocket 1 indicates that the residues forming this pocket are mostly located between the N- and C-termini of the Nsp1N protein, namely between the \u03b1-helix and the two \u03b2-strands of the \u03b2-barrel (Figure 3A, left). The analysis of the pocket\u2019s volume confirms the stability of pocket 1, with an average value of 410\u00b1150 \u00c53 (Figure 3B). Interestingly, the volume obtained during the simulation is significantly larger than the one predicted based on the crystal structure (217 \u00c53), since during the simulation the structural features of any pocket are subject to fluctuations due to the rearrangements of the amino acid side chains. However, in this case, the difference in volume between the crystal structure and simulations is the result not only of the residue fluctuations, but also of the different residues identified around the pocket. Specifically, the residues close to the \u03b2-barrel form a larger cavity in the simulation than the one observed in the Nsp1N crystal structure. This finding suggests that pocket 1 is partially cryptic. It is worth noting that some of these residues are located at the beginning of the C-terminus loop of the protein, suggesting that the binding of a ligand to this region can potentially affect the dynamics of the Nsp1 C-terminus, and possibly release the blockage of host RNA entry into ribosome for translation. Additionally, as pocket 1 is close to the viral RNA binding region (Sakuraba et al., 2021), the binding of a ligand in this pocket could also interfere with the interaction with SL1 of viral RNA, leading to the failure in evasion of translation shutdown and cleavage of viral RNA. The second pocket identified during the MD simulations, namely pocket 2, is located in the grooved region. The structural analysis of pocket 2 over the simulation does not present significant differences with respect to the X-ray structure. In this pocket, the residues are mostly distributed between the loops connecting different \u03b2-strands of the \u03b2-barrel and the \u03b1-helix (Figure 3A, right). Likewise, the volume calculated during the simulation is 240\u00b1114 \u00c53, in agreement with the volume predicted by ProteinPlus for the Nsp1N crystal structure (150 \u00c53).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig3-v1.jpg)\n\n**Figure 3.:** (A) Cavities identified on Nsp1N along the 1 \u03bcs unbiased molecular dynamics (MD) simulation, namely pocket 1 (purple) and pocket 2 (green), with the main residues displayed in sticks. (B) The volume distribution of each pocket along the unbiased MD simulations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The black shaded area delimits the RMSD values within two standard deviations from the time average.\n\n### Crypticity assessment of Nsp1 pockets\n\nEncouraged by the results obtained from the unbiased MD simulations, we used SWISH (Sampling Water Interfaces through Scaled Hamiltonians) with mixed solvents, an enhanced sampling method developed by our group to explore cryptic binding pockets. SWISH is a Hamiltonian replica-exchange method that improves the sampling of hydrophobic cavities by scaling the interactions between water molecules and protein atoms. It has been shown to be very effective in sampling the opening of hidden (cryptic) cavities in several different targets (Comitani and Gervasio, 2018). We have run six replicas of 500 ns each, considering a concentration of 1 M benzene as co-solvent, the presence of which is expected to stabilize any pocket that will open transiently during the simulations (Figure 4\u2014figure supplement 1). The resulting trajectories have been analyzed with MDpocket (Le Guilloux et al., 2009). It is worth noting that, in addition to confirming the presence of pocket 1 and pocket 2, our analysis shows the presence of two new pockets, namely, pocket 3 and pocket 4. These two pockets are both located on the exterior of the \u03b2-barrel, proximal to each other and near pocket 2 (Figure 4A). Most of the residues composing pocket 3 are part of the \u03b2-sheets of the \u03b2-barrel whereas most of the residues in pocket 4 are part of the loops connecting different \u03b2-sheets of the barrel. Interestingly, our previous analysis performed over the X-ray structure identified a shallow groove on the surface of Nsp1 connecting pockets 2, 3, and 4. However, neither of the two pocket detection algorithms used on the X-ray structure detected any evident deep cavity in this region. On the contrary, the analysis of the resulting SWISH trajectories clearly shows the presence of two distinct cavities with deep pocket-like structures. The absence of these sites in the crystal structure of Nsp1N and the fact that these cavities remained closed during the MD simulations indicate the cryptic nature of pocket 3 and pocket 4.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig4-v1.jpg)\n\n**Figure 4.:** (A) Pockets sampled during the 500 ns of replica-exchange SWISH (sampling water interfaces through scaled Hamiltonians) simulations. Volume distributions of the cryptic binding sites pocket 3 (B) and pocket 4 (C) along the six replicas of the SWISH simulations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The blue shaded area delimits the RMSD values within two standard deviations from the time average.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Volume distributions of the cryptic binding sites pocket 1 (A) and pocket 2 (B) along the six replicas of the SWISH (sampling water interfaces through scaled Hamiltonians) simulation of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) Nsp1N.\n\nThe average volume of pocket 1 during the SWISH simulations (471\u00b1128 \u00c53) is comparable to the one obtained in the MD simulations (410\u00b1150 \u00c53) for the same pocket (Figure 4\u2014figure supplement 2A). The topology of pocket 1, that is, the residues identified around the pocket, is the same for the MD and SWISH simulations (Figure 3). Likewise, the volume analysis of pocket 2 also indicates that this pocket remains open, and its volume is essentially equal to the one sampled during the unbiased simulation (214\u00b1113 \u00c53, Figure 4\u2014figure supplement 2B). More interestingly, the opening of pocket 3 (268\u00b1115 \u00c53) during the SWISH simulations revealed a pocket of comparable size to pocket 2. The time series of the volume profiles indicates that the pocket starts from a closed-like conformation that opens quickly to a more pocket-like conformation. Once opened, it maintains this open-like conformation in all the replicas (Figure 4B). A different behavior was observed for pocket 4. This pocket, the smallest one sampled during the SWISH simulations (169\u00b1120 \u00c53), displays diverse volume profiles across most SWISH replicas. Nonetheless, we were able to sample an open-like conformation for this pocket in at least two of the six replicas, suggesting that a better combination of molecular probes or higher \u03bb factors could improve the sampling of this cryptic site. Interestingly, as suggested by the preliminary analysis of the X-ray structure, the simulations suggest as well that the shallow groove most likely has a key structural role connecting three cryptic pockets of the \u03b2-barrel region of the Nsp1N, spanning this area of the protein. Our findings highlight the potential of this region to be exploited in fragment-based drug design to design larger ligands that could bind to different combinations of these pockets, increasing the specificity of the individual pockets.\n\nTo further investigate the structural features of the predicted pockets, we analyzed the unbiased MD simulations with FTDyn and FTMap programs (Kozakov et al., 2015). These programs have proven to be accurate in locating binding hotspots in proteins. It is based on the fast and accurate distributions of 16 different small organic probes docked and mapped onto the protein surface, retaining the lowest energy probes, which are finally clustered. The clusters obtained for the different probes are clustered together to generate a final consensus cluster, from which the main binding hotspots are then identified. We started by employing the FTDyn webserver, a faster version of the FTMap algorithm without local minimization, to identify the most probable conformation able to bind fragments. We extracted 25 representative conformations from the MD simulation of Nsp1N and determined the median number of interactions between the probes and each protein residue across the conformations selected. This step allows us to identify the most likely binding site residues, that is, the residues with the highest number of probe contacts. From the initially selected conformations, we have retained only 11 structures that present higher-than-average probe-residue contacts. Subsequently, the 11 structures retained were post-processed with FTMap to improve the prediction of binding hotspots on Nsp1N surface (see details in Materials and methods section and Figure 5\u2014source data 1).\n\nOur results are in good agreement with the previous analysis, regarding the location of the binding sites found for 107 consensus clusters obtained for Nsp1N. In pocket 1, 50 out of the 107 consensus clusters are mapped into it, most of them corresponding to protein-fragment complexes with the highest binding energy (Figure 5A and Figure 5\u2014source data 1). Interestingly, the clusters are distributed across the entire MD- and SWISH-sampled volume of pocket 1 and are not only limited to the small region observed in the X-ray structure, suggesting that pocket 1 is partially cryptic. The computational mapping also confirmed the presence of 50 consensus clusters in the vicinity of pockets 2, 3, and 4 (Figure 5B). In all selected bound-like Nsp1N structures, we identified at least two probes consensus clusters located in the region corresponding to the two cryptic sites previously identified by our SWISH simulations. In some cases, the second-best binding hotspot is in the presumably cryptic region, suggesting the ability of this region to accommodate molecular fragments (Figure 5\u2014source data 1; Vajda et al., 2018). Overall, this analysis strongly suggests that the main binding sites on Nsp1N are in the region corresponding to the identified cryptic pockets and highlights their potential use for fragment binding.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig5-v1.jpg)\n\n**Figure 5.:** Multiple consensus clusters are shown in sticks. Each consensus cluster is represented in different colors.\n\n### Crystallographic confirmation of Nsp1 cryptic pockets\n\nTo validate our computational findings, we proceeded with the soaking of Nsp1N crystals with 59 potential fragment hits obtained by computational methods (Table 1). Nsp1N has been crystallized containing only the structured domain, that is, the domain from Glu10 to Asn126, which displays the characteristic \u03b1/\u03b2-fold (see Materials and methods for details). This structure was used for crystal soaking experiments in which 59 distinct fragment hits, obtained from the Maybridge Ro3 library, were tested and validated through X-ray diffraction experiments using the Pan-Dataset Density Analysis (PanDDA) method, developed to analyze the data obtained from crystallographic fragment screenings (Pearce et al., 2015). Of these 59 fragments, one fragment was found in pocket 1 as previously identified in our simulations. Data collection and refinement statistics are summarized in Figure 6\u2014figure supplement 1 and Figure 6\u2014source data 1. The asymmetric unit contains one molecule of Nsp1. The model covers the sequence from Glu10 to Asn126 (E10 to N126). The chemical structure of the fragment hit is shown in Figure 6B. To study the fragment hit using orthogonal biophysical assays, we employed microscale thermophoresis (MST) and thermal shift (TSA) assays (Figure 6\u2014figure supplement 2 and Table 2). 2E10 binds to Nsp1N pocket 1 with a KD value of 15.1\u00b15.7 mM, indicating a rather good binding for a fragment. In contrast, we did not observe any stabilization of Nsp1N by the fragment. The fragment obeys the rule of 3 (Ro3) with a molecular mass of 172.9 Da, a calculated MolLogP of 2.66 and a total of three hydrogen bond donors and acceptors. Fragment hit 2E10 combines two fused 5- and 6-membered ring systems containing one acetamide substituent at the phenyl group A range of residues located in binding pocket 1, including Glu10, Val14, Arg43, Leu46, Lys47, and Leu123, establish hydrophobic interactions with the ligand (Figure 6C). The acetamide substituent establishes a hydrogen bond interaction with the side chain of Lys125.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig6-v1.jpg)\n\n**Figure 6.:** (A) Binding pose of the fragment hit obtained by crystal soaking and structure determination methods. The fragment is located in pocket 1. (B) Chemical structure and name of fragment hit. (C) Magnification of the Nsp1N \u20132E10 binding pocket showing the interactions the fragment establishes with residues of Nsp1. Hydrophobic interactions are shown by red half-moons and the hydrogen bond interaction is displayed with a dotted green line.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** PanDDA event map (A) without ligand and (B) in the presence of 2E10. Standard single dataset (D) map with and (C) without ligand 2E10. (E) Refined standard single dataset map with ligand 2E10. The sigma level for both the standard single dataset map and PanDDA maps is 1.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Concentration-response plot of fragment hit 2E10 and SARS-CoV-2 Nsp1N domain. (B) Concentrations-response curve of 2E10 and SARS-CoV-2 Nsp1 FL. All measurements were conducted at least in triplicate.\n\n**Table 1.**\n SMILES and identification number of the 59 tested fragments and corresponding predicted binding.The predicted pose for each fragment can be found at https://github.com/Gervasiolab/Gervasio-Protein-Dynamics/tree/master/nsp1/virtual_screening (Gervasiolab, 2022;copy archived at swh:1:rev:936e929db11aff39faed53e5fbe6f902f1456a6d). The above reported crystal hit (lig_1427) is highlighted in bold.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Identification Number</th>\n      <th>SMILES</th>\n      <th>Predicted pocket(s)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>lig_30</td>\n      <td>C9H7NO2</td>\n      <td>3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_83</td>\n      <td>C12H13NO2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_113</td>\n      <td>C12H13ClF3NO</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_168</td>\n      <td>C13H10O3</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_171</td>\n      <td>C11H10O3</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_194</td>\n      <td>C8H6F2O3</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_212</td>\n      <td>C11H12O2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_243</td>\n      <td>C14H17NO2S</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>lig_262</td>\n      <td>C15H16N2O</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_286</td>\n      <td>C13H13NO2S</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_329</td>\n      <td>C9H8F3NOS</td>\n      <td>3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_335</td>\n      <td>C13H11NO2S</td>\n      <td>1, 3</td>\n    </tr>\n    <tr>\n      <td>lig_349</td>\n      <td>C11H9NO2</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_355</td>\n      <td>C13H13NO2S</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>lig_369</td>\n      <td>C11H12O2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_377</td>\n      <td>C12H10O2S</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_394</td>\n      <td>C16H13NO2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_400</td>\n      <td>C14H12O2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_422</td>\n      <td>C14H9NO2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_490</td>\n      <td>C8H5NO2S2</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_502</td>\n      <td>C12H10O3</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_507</td>\n      <td>C12H12N2O</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_552</td>\n      <td>C12H15NO2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_570</td>\n      <td>C12H9NO2</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_575</td>\n      <td>C10H8O3</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_579</td>\n      <td>C12H9NO2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_685</td>\n      <td>C14H12O3</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_706</td>\n      <td>C12H14N2O</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_752</td>\n      <td>C9H7ClFN3S2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_783</td>\n      <td>C12H11FO2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_806</td>\n      <td>C14H13NO2</td>\n      <td>1, 3</td>\n    </tr>\n    <tr>\n      <td>lig_812</td>\n      <td>C13H11ClN2O</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>lig_864</td>\n      <td>C15H12O3S</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_892</td>\n      <td>C7H6N2OS</td>\n      <td>1, 3</td>\n    </tr>\n    <tr>\n      <td>lig_897</td>\n      <td>C8H6FNO2S</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_907</td>\n      <td>C10H11NOS2</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_910</td>\n      <td>C10H6F3NOS</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_924</td>\n      <td>C14H12O3S2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>lig_1009</td>\n      <td>C11H10ClNO2</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1037</td>\n      <td>C10H7ClO2S</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1054</td>\n      <td>C12H13NO2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1057</td>\n      <td>C12H16N2O</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1064</td>\n      <td>C13H12O2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1149</td>\n      <td>C11H10F3NO</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1157</td>\n      <td>C13H13NO2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1195</td>\n      <td>C11H10N2O</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1209</td>\n      <td>C9H6F3N3S2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1216</td>\n      <td>C12H11F2NO2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1220</td>\n      <td>C11H12O2S</td>\n      <td>3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1223</td>\n      <td>C8H9ClN2OS</td>\n      <td>1, 3</td>\n    </tr>\n    <tr>\n      <td>lig_1228</td>\n      <td>C15H13FN2OS</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1281</td>\n      <td>C9H7F3O3</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1310</td>\n      <td>C12H13NO2</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1315</td>\n      <td>C13H11F3O2</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1381</td>\n      <td>C9H6F3NO</td>\n      <td>3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1382</td>\n      <td>C12H8F3NO2S</td>\n      <td>1, 3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1410</td>\n      <td>C9H11NO</td>\n      <td>3, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1427</td>\n      <td>C11H13NO</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>lig_1428</td>\n      <td>C11H11NO2</td>\n      <td>1, 4</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Thermal shift assay (TSA) results for 59 potential fragment hits from computational screening using severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) Nsp1N.Fragments showing atypical curves are labelled as atypical curve in the table.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Identification number</th>\n      <th>Fragments</th>\n      <th>Ti \u00b1 SD [\u00b0C]</th>\n      <th>\u0394Ti/ \u00b0C</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>lig_575</td>\n      <td>1B9</td>\n      <td>52.5\u00b10.6</td>\n      <td>\u20132.7</td>\n    </tr>\n    <tr>\n      <td>lig_490</td>\n      <td>1C6</td>\n      <td>51.5\u00b10.4</td>\n      <td>\u20133.4</td>\n    </tr>\n    <tr>\n      <td>lig_507</td>\n      <td>1H6</td>\n      <td>50.5\u00b10.1</td>\n      <td>\u20134.1</td>\n    </tr>\n    <tr>\n      <td>lig_1427</td>\n      <td>2E10</td>\n      <td>53.8\u00b10.3</td>\n      <td>\u20131.3</td>\n    </tr>\n    <tr>\n      <td>lig_1428</td>\n      <td>2F10</td>\n      <td>53.5\u00b10.4</td>\n      <td>\u20131.7</td>\n    </tr>\n    <tr>\n      <td>lig_1037</td>\n      <td>2F5</td>\n      <td>53.7\u00b10.6</td>\n      <td>\u20131.6</td>\n    </tr>\n    <tr>\n      <td>lig_685</td>\n      <td>3E8</td>\n      <td>54.8\u00b10.2</td>\n      <td>\u20130.3</td>\n    </tr>\n    <tr>\n      <td>lig_924</td>\n      <td>4B5</td>\n      <td>54.7\u00b10.5</td>\n      <td>\u20130.5</td>\n    </tr>\n    <tr>\n      <td>lig_502</td>\n      <td>4C6</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_369</td>\n      <td>4E4</td>\n      <td>53.6\u00b10.4</td>\n      <td>\u20131.4</td>\n    </tr>\n    <tr>\n      <td>lig_400</td>\n      <td>5B7</td>\n      <td>53.9\u00b10.1</td>\n      <td>\u20130.9</td>\n    </tr>\n    <tr>\n      <td>lig_194</td>\n      <td>5D3</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_335</td>\n      <td>5E8</td>\n      <td>54.8\u00b10.2</td>\n      <td>\u20130.4</td>\n    </tr>\n    <tr>\n      <td>lig_30</td>\n      <td>6E3</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_113</td>\n      <td>6G8</td>\n      <td>54.3\u00b10.0</td>\n      <td>\u20130.6</td>\n    </tr>\n    <tr>\n      <td>lig_168</td>\n      <td>7A2</td>\n      <td>51.2\u00b10.4</td>\n      <td>\u20133.8</td>\n    </tr>\n    <tr>\n      <td>lig_212</td>\n      <td>7A4</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_552</td>\n      <td>7B6</td>\n      <td>55.0\u00b10.2</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>lig_1220</td>\n      <td>7D10</td>\n      <td>54.7\u00b10.3</td>\n      <td>\u20130.2</td>\n    </tr>\n    <tr>\n      <td>lig_171</td>\n      <td>7D2</td>\n      <td>54.6\u00b10.2</td>\n      <td>\u20130.3</td>\n    </tr>\n    <tr>\n      <td>lig_570</td>\n      <td>7E6</td>\n      <td>51.5\u00b10.4</td>\n      <td>\u20133.1</td>\n    </tr>\n    <tr>\n      <td>lig_579</td>\n      <td>7F11</td>\n      <td>51.8\u00b10.2</td>\n      <td>\u20133</td>\n    </tr>\n    <tr>\n      <td>lig_1054</td>\n      <td>7F6</td>\n      <td>54.3\u00b10.3</td>\n      <td>\u20130.6</td>\n    </tr>\n    <tr>\n      <td>lig_1310</td>\n      <td>8A4</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_1281</td>\n      <td>8A5</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_422</td>\n      <td>8B4</td>\n      <td>51.2\u00b10.1</td>\n      <td>\u20133.7</td>\n    </tr>\n    <tr>\n      <td>lig_349</td>\n      <td>8C4</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_1410</td>\n      <td>8D3</td>\n      <td>53.2\u00b10.3</td>\n      <td>\u20132.4</td>\n    </tr>\n    <tr>\n      <td>lig_1009</td>\n      <td>8G7</td>\n      <td>51.5\u00b10.4</td>\n      <td>\u20133.3</td>\n    </tr>\n    <tr>\n      <td>lig_355</td>\n      <td>9A11</td>\n      <td>54.9\u00b10.1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>lig_243</td>\n      <td>9C10</td>\n      <td>54.3\u00b10.1</td>\n      <td>\u20130.9</td>\n    </tr>\n    <tr>\n      <td>lig_1216</td>\n      <td>9D8</td>\n      <td>54.5\u00b10.4</td>\n      <td>\u20130.7</td>\n    </tr>\n    <tr>\n      <td>lig_812</td>\n      <td>9E11</td>\n      <td>53.1\u00b10.1</td>\n      <td>\u20131.9</td>\n    </tr>\n    <tr>\n      <td>lig_329</td>\n      <td>9E2</td>\n      <td>54.4\u00b10.3</td>\n      <td>\u20130.5</td>\n    </tr>\n    <tr>\n      <td>lig_262</td>\n      <td>9G9</td>\n      <td>53.2\u00b10.3</td>\n      <td>\u20131.7</td>\n    </tr>\n    <tr>\n      <td>lig_783</td>\n      <td>10A6</td>\n      <td>54.4\u00b10.2</td>\n      <td>\u20131.2</td>\n    </tr>\n    <tr>\n      <td>lig_910</td>\n      <td>10A8</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_806</td>\n      <td>10A9</td>\n      <td>54.6\u00b10.1</td>\n      <td>-1</td>\n    </tr>\n    <tr>\n      <td>lig_1381</td>\n      <td>10B7</td>\n      <td>50.7\u00b10.3</td>\n      <td>\u20134.9</td>\n    </tr>\n    <tr>\n      <td>lig_286</td>\n      <td>10G8</td>\n      <td>54.1\u00b10.2</td>\n      <td>\u20130.7</td>\n    </tr>\n    <tr>\n      <td>lig_1209</td>\n      <td>11A5</td>\n      <td>55.8\u00b10.1</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>lig_1057</td>\n      <td>11B2</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_907</td>\n      <td>11E4</td>\n      <td>55.6\u00b10.0</td>\n      <td>0.7</td>\n    </tr>\n    <tr>\n      <td>lig_1064</td>\n      <td>11E8</td>\n      <td>54.6\u00b10.1</td>\n      <td>\u20130.3</td>\n    </tr>\n    <tr>\n      <td>lig_377</td>\n      <td>11F10</td>\n      <td>54.8\u00b10.1</td>\n      <td>\u20130.8</td>\n    </tr>\n    <tr>\n      <td>lig_1195</td>\n      <td>11F2</td>\n      <td>54.8\u00b10.2</td>\n      <td>\u20130.1</td>\n    </tr>\n    <tr>\n      <td>lig_1149</td>\n      <td>11G3</td>\n      <td>55.4\u00b10.5</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <td>lig_83</td>\n      <td>12A11</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_1315</td>\n      <td>12A3</td>\n      <td colspan=\"2\">Atypical curve</td>\n    </tr>\n    <tr>\n      <td>lig_864</td>\n      <td>12B10</td>\n      <td>55.1\u00b10.2</td>\n      <td>\u20130.1</td>\n    </tr>\n    <tr>\n      <td>lig_394</td>\n      <td>12B5</td>\n      <td>55.2\u00b10.2</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>lig_1382</td>\n      <td>12C4</td>\n      <td>55.5\u00b10.4</td>\n      <td>0.6</td>\n    </tr>\n    <tr>\n      <td>lig_752</td>\n      <td>12D5</td>\n      <td>54.9\u00b10.1</td>\n      <td>\u20130.3</td>\n    </tr>\n    <tr>\n      <td>lig_1223</td>\n      <td>12F7</td>\n      <td>52.4\u00b10.3</td>\n      <td>\u20132.7</td>\n    </tr>\n    <tr>\n      <td>lig_1157</td>\n      <td>12F9</td>\n      <td>55.0\u00b10.2</td>\n      <td>\u20130.2</td>\n    </tr>\n    <tr>\n      <td>lig_1228</td>\n      <td>12G7</td>\n      <td>52.6\u00b10.5</td>\n      <td>\u20132.6</td>\n    </tr>\n    <tr>\n      <td>lig_892</td>\n      <td>12H2</td>\n      <td>54.8\u00b10.1</td>\n      <td>\u20130.4</td>\n    </tr>\n    <tr>\n      <td>lig_706</td>\n      <td>13D6</td>\n      <td>51.8\u00b10.4</td>\n      <td>\u20133.3</td>\n    </tr>\n    <tr>\n      <td>lig_897</td>\n      <td>13G5</td>\n      <td>54.3\u00b10.1</td>\n      <td>\u20130.9</td>\n    </tr>\n  </tbody>\n</table>\n\nAlthough, at first, this may seem like a very low number of hits, a detailed analysis of the crystal packing provides an explanation. Figure 7A shows the central Nsp1N structure (white) with the pockets obtained from our SWISH simulations, together with the neighboring Nsp1 structures that interact directly with pocket 1 in the full crystal packing (dark gray). Evidently, the central part of the pocket is completely accessible for fragment binding during the crystal soaking experiments. However, the gray structures are occupying the main hotspots identified by our previous FTMap analysis (Figure 5A) impeding its ability to bind more suitable fragments in pocket 1. Likewise, Figure 7B shows the central Nsp1 structure in cartoon representation (white) with the pockets obtained from our SWISH simulations, along with the neighboring Nsp1 structures directly interacting with pockets 2, 3, and 4 in the full crystal packing (dark gray). The red regions highlighted in Figure 7 involve direct contacts made with the pocket environment. It is worth emphasizing that, in this case, these direct contacts involve regions previously determined by the FTMap analysis as potential and key hotspots for the three cryptic pockets identified by SWISH. Taken altogether, soaking Nsp1N crystals with fragments presents some limitations to implementing an effective computational fragment screening of the Nsp1. Nevertheless, we would like to stress that these results provide a possible explanation for why we did not obtain more fragments crystallized in the positions of the identified cryptic pockets. Moreover, the crystallization of a single fragment in pocket 1 is an encouraging sign of the reliability and efficacy of our computational techniques for cryptic binding pocket detection.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig7-v1.jpg)\n\n**Figure 7.:** The direct crystal contacts around (A) pocket 1 and (B) pockets 2, 3, and 4 are highlighted with squares.\n\n### Disrupting Nsp1-RNA complex by means of cryptic pockets\n\nThe interaction of Nsp1 with viral RNA can release the inhibition of the viral RNA translation in host cells via the combination of different mechanisms, favoring the survival of the virus. Therefore, the disruption of the Nsp1-RNA complex can affect the life cycle of the virus. With this idea in mind, and taking into consideration the pockets found in Nsp1N, we asked whether the binding of fragments to pocket 1 could hinder the Nsp1-RNA complex formation. To this end, we have modelled two Nsp1-RNA complexes, testing their stability through MD simulations. It has been shown experimentally that the first stem loop (SL1), comprising nucleotides 7\u201333 of the 5\u2019 UTR region of SARS-CoV-1 and SARS-CoV-2 RNA, is the one that interacts with Nsp1 (Narayanan et al., 2008; Tanaka et al., 2012; Vankadari et al., 2020; Tidu et al., 2020). Therefore, we started by modelling the 3D structure of SL1 RNA. Regarding the Nsp1, we have considered the model of the full-length Nsp1 obtained by AlphaFold (Jumper et al., 2021; Varadi et al., 2022), named Nsp1FL. Using the Nsp1FL and SL1 models, we have run protein-RNA docking using the HADDOCK program (Dominguez et al., 2003; van Zundert et al., 2016). The analysis of the docked Nsp1FL-RNA complexes suggests that two different protein-RNA complexes, named model A and model B, well capture the experimentally validated contacts between the Nsp1FL and SL1. The Nsp1FL in models A and B binds to diametrically opposite positions on the SL1, with Nsp1 in model A interacting predominately with the groove of SL1 (Figure 8A) and in model B with its backbone (Figure 8\u2014figure supplement 1). Since there was no structural or experimental reason to exclude one over the other, we assessed their stability over the course of a 500-ns-long MD simulation. The RMSD of the two Nsp1FL-RNA complexes fluctuates between 5.5 and 6.5 \u00c5 for models A and B, respectively (Figure 8\u2014figure supplement 2). However, a more detailed RMSD analysis of each component of the two protein-RNA systems reveals that Nsp1FL is more stable in model A than in model B, with an average RMSD of 5.0 and 7.0 \u00c5, respectively. This result suggests that the Nsp1FL in model A displays a more stable interaction with RNA. However, the observed RMSD difference alone between the two models is not sufficient to let us propose model A over B as the most probable mode of Nsp1-RNA interaction (Figure 8\u2014figure supplement 2).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig8-v1.jpg)\n\n**Figure 8.:** (A) Residues in the proximity of pocket 1 involved in crucial Nsp1FL-SL1 contacts are displayed in sticks. (B) Crystal structure from soaking experiments (orange transparent cartoon) is superimposed over the Nsp1FL of the Nsp1FL-RNA model. The most important residues for the Nsp1FL-RNA interaction are highlighted in white (Nsp1FL model) and orange (PDB entry 8A4Y from our soaking experiments) sticks. Figures obtained from model A.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** The Nsp1FL from model A (blue) and B (red) are represented.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** Root-mean-square deviation (RMSD, nm) along the 500 ns of unbiased molecular dynamics (MD) simulations considering (A) the backbone atoms of the Nsp1FL protein from the Nsp1FL-RNA complex, (B) only the RNA atoms of the stem loop 1 (SL1) from the complex and (C) the backbone atoms of Nsp1FL and all the RNA atoms of the full Nsp1FL-RNA complex.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig8-figsupp3-v1.jpg)\n\n**Figure 8\u2014figure supplement 3.:** (A) Volume distribution of pocket 1 along the three unbiased molecular dynamics (MD) simulations of the Nsp1FL. (B) Docked poses of the fragment to the representative structure from the most populated cluster in replica 3 (left) and to the second most populated cluster in replica 2 (right). The original crystallographic pose is depicted in orange, whereas the docked poses in pink and yellow. The flexible loop comprising aa Arg124-Gly137 is displayed is cyan. N- and the C-terminal are depicted in purple and blue, respectively.\n\nSince both models not only capture the important interactions between Nsp1FL and viral RNA described experimentally but are also stable over the course of the MD simulations, we used them to verify if the previously identified pockets could be exploited to impede the Nsp1FL-RNA complex. Interestingly, out of the four pockets in Nsp1N, pocket 1 is positioned close to the Nsp1FL-RNA interface. More specifically, some residues of the C-terminal loop of Nsp1FL around pocket 1 interact with the viral RNA, namely Arg124, Lys125, and Asn126. Moreover, Glu10 is oriented toward pocket 1 and both Asp9 and Lys11 establish contacts with the SL1 moiety (Figure 8A). Therefore, these results suggest that pocket 1 can be a crucial target for rational drug design since the residues that define this pocket are directly interacting with the viral RNA and the binding of a ligand to this pocket can impair the Nsp1FL-RNA interaction.\n\nTo further investigate the effect of ligand binding to pocket 1 and how this would affect the Nsp1-SL1 interface, we superimposed the crystal structure from the soaking experiments on the Nsp1FL-RNA model A (Figure 8B). Interestingly, in the Nsp1FL-RNA complex, some residues of the N-terminus (Asp9, Glu10, and Lys11) and the core (Arg99, Arg124, Lys125, and Asn126) of Nsp1FL are directly interacting with the SL1 of RNA. When compared with the structure obtained from soaking experiments (Glu10 to Asn126), some of these residues have changed orientation. Specifically, Glu10 and Lys11 are pointing toward the fragment, Arg99 is pointing to the surface, and Arg124 and Asn126 are displaced due to the ligand binding. In the orientation that these residues have adopted in the structure obtained from soaking experiments, these residues could not interact with the RNA. As these residues are essential for the Nsp1-SL1 interaction in SARS-CoVs, the binding of a ligand in pocket 1 could diminish the Nsp1-mRNA interaction (Tanaka et al., 2012; Terada et al., 2017). Additionally, a recent study where site-directed mutagenesis was performed on the Nsp1 N-terminal and core region (Nsp1N) has demonstrated the functional role of Arg99, Arg124, and Lys125 residues in host expression shutdown, since the mutation of these residues to Ala compromised the binding of Nsp1 to the host 40S ribosomal subunit and increased the dissociation constants with purified ribosomes (Mendez et al., 2021). Therefore, these findings support the hypothesis that a disruption of the interactions between these residues and SL1 by the presence of a fragment would lead to a decrease in virus-induced host shutoff.\n\nTo assess whether the C-terminal end would affect the accessibility of a fragment to pocket 1, we quantified the volume of the pocket throughout three independent replicas. The C-terminal domain indeed affects the accessibility of the identified pocket. The distribution of the pocket volume (Figure 8\u2014figure supplement 3) shows how the volume of pocket 1 reduces to approximately 200 \u00c53 in the case of Nsp1FL, reaching similar values to the ones found in the crystal structure of the apo Nsp1 (PDB entry 7K7P). The loop that connects the N- to the C-terminal (aa Arg124-Pro153) is flexible and a portion of it (aa Arg124-Gly137) occasionally occludes pocket 1. Nonetheless, we clustered the last 200 ns of the trajectories and extracted representative structures per replica corresponding to the most populated clusters. For the structure representing the second-most populated cluster in replica 2, we were able to dock the fragment within pocket 1, obtaining a similar pose to the one seen in the presented crystal structure (Figure 8\u2014figure supplement 3). This indicates that, even in the setting of full-length Nsp1, pocket 1 is still accessible in the context of the full-length Nsp1. Moreover, we obtained a docked pose also for replica 3, even if the site is partially closed due to the inward orientation of Arg43 (Figure 8\u2014figure supplement 3). A conformation where the pocket was fully closed was instead obtained for replica 1, where no fragment could be docked to the pocket. Taken together, these results indicate that pocket 1 is still accessible for fragment binding in our full-length Nsp1 model in solution. Moreover, the flexible nature of the loop surrounding the pocket supports the hypothesis of the cryptic nature of the site, which is partially detectable in the crystal structures where the C-terminal domain is absent. Ultimately, the accessibility predictions from our simulations are confirmed by the MST measurements conducted on Nsp1FL (Figure 6\u2014figure supplement 2). The measured KD has a larger error bar, but within the error is comparable to the one obtained for Nsp1N, indicating that the C-terminal domain present in Nsp1FL does not prevent the binding of the fragment.\n\n### The conservation of Nsp1 in different CoV genera\n\nGiven the identified cryptic pockets on the Nsp1 of SARS-CoV-2 and their implication in the interaction with the RNA, we sought to analyze thoroughly the structural similarity of the Nsp1 among different CoVs. We asked whether a drug designed for Nsp1 of SARS-CoV-2 could also be useful to inhibit Nsp1 of other CoVs. As mentioned in the Introduction, of the four CoV genera, only \u03b1- and \u03b2- are common human CoVs, and Nsp1 is expressed only in these two genera. To demonstrate the homology relationship of the Nsp1N domain within different viruses belonging to the \u03b1- and \u03b2-genera, we have performed a phylogenetic analysis considering this domain, for both \u03b1- and \u03b2-CoV genera from the Conserved Domain Database (CDD) hosted at the National Center for Biotechnology Information (NCBI) (Lu et al., 2020). The analysis of the 283 Nsp1N sequences available until the end of February 2022 shows the distribution of Nsp1 homologues for different \u03b1- (TGEV- and PDEV-like) and \u03b2- (MERS-, HKU9-, SARS-, and MHV-like) CoVs (Figure 9A). In particular, we have performed a pair sequence alignment considering one representative Nsp1 protein from each of the \u03b1- and \u03b2-CoVs subfamilies presented in our phylogenetic tree (Needleman and Wunsch, 1970). The alignment demonstrates that the sequence identity varies widely depending on the homologue proteins under consideration (Table 3). Subsequently, to decrease the high heterogeneity, we have considered the Nsp1N sequence from SARS-CoV-2 and three high identity homologues corresponding to Nsp1 proteins from the human SARS-CoV-1, and two Bat CoVs, namely BatCoV HKU3 and RaTG13 (NCB1 accession numbers: MT782115.1 and MN996532.2, respectively; Min et al., 2020). The selected homologues share a high sequence identity with SARS-CoV-2 Nsp1 ranging from 86% to 93%. Figure 9B shows this high sequence identity between CoVs from different organisms, especially of the residues surrounding the cryptic pockets found in Nsp1 from SARS-CoV-2. Our analysis shows that for the four sequences, all the important residues of the pockets are conserved in the selected \u03b2-CoVs.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig9-v1.jpg)\n\n**Figure 9.:** (A) Phylogenetic tree based on 283 sequences from distinct \u03b1- and \u03b2-coronaviruses (CoVs) of different subgenera. The sequences were obtained from the Conserved Domain Database (CDD) with accession number cl41742. The scale bar indicates the number of substitutions per site in the amino acid sequence. Six different Nsp1 domain models can be identified, two for the \u03b1-CoVs (transmissible gastroenteritis virus [TGEV]-like and PDEV-like), and four for the \u03b2-CoVs genus (MERS-like, HKU9-like, SARS-like, and murine hepatitis virus [MHV]-like). (B) Multi-sequence alignment of the four homologues selected. The alignment was performed with the MUSCLE algorithm (Edgar, 2004). The residues of the different pockets are highlighted in the corresponding color, namely pocket 1 in purple, pocket 2 in green, pocket 3 in orange, and pocket 4 in cyan. (C) Representation of the pockets found in the severe acute respiratory syndrome coronavirus 1 (SARS-CoV-1) Nsp1N variant.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** The shaded area delimits the RMSD values within two standard deviations from the time average.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81167/elife-81167-fig9-figsupp2-v1.jpg)\n\n**Table 3.**\n Pairwise identity percentages of selected non-structural protein 1 (Nsp1) sequences for representative \u03b1- and \u03b2-coronaviruses (CoVs) subfamilies.National Center for Biotechnology Information (NCBI) accession numbers the sequences used for the analysis are as follows: transmissible gastroenteritis virus (TGEV) 6IVC_A, PDEV 5XBC_A, severe acute respiratory syndrome coronavirus 1 (SARS CoV-1) NP_828860.2, severe acute respiratory syndrome coronavirus 2 (SARS CoV-2) YP_009725297.1, HKU9 P0C6T6, MERS YP_009047229, and murine hepatitis virus (MHV) YP_209244.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>CoV-like</th>\n      <th>SARS-1</th>\n      <th>SARS-2</th>\n      <th>HKU9</th>\n      <th>MERS</th>\n      <th>MHV</th>\n      <th>TGEV</th>\n      <th>PDEV</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SARS-1</td>\n      <td>100</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SARS-2</td>\n      <td>86.1</td>\n      <td>100</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HKU9</td>\n      <td>20.9</td>\n      <td>19.5</td>\n      <td>100</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MERS</td>\n      <td>20.9</td>\n      <td>17.1</td>\n      <td>24.5</td>\n      <td>100</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MHV</td>\n      <td>16.9</td>\n      <td>16.4</td>\n      <td>4.1</td>\n      <td>18.0</td>\n      <td>100</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TGEV</td>\n      <td>17.4</td>\n      <td>16.9</td>\n      <td>13.3</td>\n      <td>7.9</td>\n      <td>9.0</td>\n      <td>100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PDEV</td>\n      <td>17.9</td>\n      <td>16.1</td>\n      <td>15.2</td>\n      <td>8.7</td>\n      <td>11.5</td>\n      <td>18.2</td>\n      <td>100</td>\n    </tr>\n  </tbody>\n</table>\n\nFinally, taking into account the previous data and the fact that Nsp1 proteins share a high 3D structural core identity across CoV species (Shen et al., 2018; Min et al., 2020), we have run 1 \u03bcs of unbiased MD simulations for each of the three Nsp1 homologues considered, which show a stable conformation (Figure 9\u2014figure supplement 1). Additionally, for all of them, we have evaluated the conservation of the cryptic binding pockets via extensive SWISH simulations (six replicas of 500 ns per homologue). The resulting trajectories indicate that the four pockets we reported for Nsp1N of SARS-CoV-2 are conserved in the considered homologues (Figure 9C and Figure 9\u2014figure supplement 2). Taken together, these results suggest that ligands binding to any of the pockets identified in SARS-CoV-2 Nsp1N could also target the corresponding pocket in the evaluated homologues, ultimately paving the way to the development of a drug targeting the Nsp1N of different \u03b2-CoVs.\n\n### Conclusions\n\nNsp1 is a promising drug target for CoVs both due to its crucial role in suppressing host immune response and its sequence conservation and structural similarity across the \u03b1- and \u03b2-CoV families. In this paper, by using a multidisciplinary approach combining modelling, simulations, X-ray crystallography, and fragment screening, we revealed druggable and partially cryptic pockets in the folded main domain of Nsp1. Our enhanced sampling simulations revealed four candidate pockets and predicted that fragments can bind to them. Not all of these are predicted to be accessible in a crystal structure, due to crystallographic contacts. The fragment screening and subsequent crystallographic structures confirm the presence of the deepest and most accessible pocket predicted by the simulations. Interestingly, the pockets are conserved across multiple CoV species. Moreover, we show how the fragment bound to one of these pockets can disrupt the Nsp1-mRNA complex. In particular, the binding of the fragment to the identified pocket interferes with crucial interactions between the 5\u2019-UTR SL1 and Nsp1, namely R124 and K125. This could prevent the viral mRNA to be efficiently translated, ultimately impairing the viral translation strategy. At the same time, the fragment is expected also to lower the affinity of Nsp1 for the ribosome by hindering the interaction mediated by R99, R124, and R125. Altogether, the crucial information arising from our multidisciplinary approach can provide a solid foundation for the rational drug discovery of new inhibitors not only for SARS-CoV-2, but also for other \u03b1- and \u03b2-CoVs with pandemic potential.\n\n## Materials and methods\n\n### Setup of the systems\n\n#### Preparation of Nsp1N\n\nThe structure of the N-terminal domain of SARS-CoV-2 Nsp1 (Nsp1N) was obtained from the PDB entry 7K7P (resolution 1.77 \u00c5), comprising residues Glu10-Asn126 (Mart\u00ednez-Rosell et al., 2017).\n\n#### Preparation of Nsp1FL\n\nThe Nsp1FL structure model was obtained from AlphaFold 2.0 neural network-based structural prediction (Jumper et al., 2021; Varadi et al., 2022), which is based on the NCBI Reference Sequence: YP_009725297.1.\n\n#### Preparation of Nsp1FL-RNA complex\n\nThe SL1 structure corresponding to nucleotides 7\u201333 at the 5\u2019 UTR of the viral mRNA was modelled with RNAComposer (Popenda et al., 2012; Antczak et al., 2016). The NCBI accession number for the reference viral RNA is NC_045512 (https://www.ncbi.nlm.nih.gov/genome/viruses/). Then, the SL1 structure obtained was docked to the Nsp1FL model from AlphaFold using the HADDOCK software (Dominguez et al., 2003; van Zundert et al., 2016). Two docking poses of Nsp1FL-RNA complexes were selected based on their score and the non-covalent interactions on the interface of Nsp1FL with RNA (Figure 8\u2014figure supplement 1).\n\n#### Preparation of Nsp1 in different CoV genera\n\nThe NMR structure of the SARS-CoV-1 Nsp1N was obtained from PDB entry 2HSX. Since there are no experimentally determined structures for the Nsp1 of Bat CoVs HKU3 nor RatG13, we modelled their structure using Nsp1N of SARS-CoV-2 (PDB entry 7K7P) as a template. The NCBI accession number for HKU3 and RatG13 is QND76032.1 and QHR63299.2, respectively, using the automodel function of MODELLER (Sali and Blundell, 1993).\n\nEach of these systems has been processed in the same way. First, the standard protonation state at physiological pH 7.4 was assigned to ionizable residues with the ProteinPrepare tool of the PlayMolecule server (Mart\u00ednez-Rosell et al., 2017). Then, the systems were placed in a pre-equilibrated octahedral box using the four-point water model from the a99SB-disp force field (Robustelli et al., 2018), which is a modified version of TIP4P-D (Piana et al., 2015), The final systems considering the full-size enzyme contain the model protein, around 6500 water molecules, and 0.15 M of NaCl, forcing the system to be neutral, leading to simulation systems comprising around 29,000\u201330,400 atoms for Nsp1N systems, and approximately 96,400 atoms for the Nsp1FL-RNA complex.\n\nAll the simulations were performed using the a99SB-disp force field, which is a modified form of the a99SB force field that improves the modelling of intrinsically disordered peptides while retaining the accurate description of folded proteins. To parameterize the SL1 from RNA, the RNA-Shaw force field was used (Tan et al., 2018).\n\n### MD simulations\n\n#### Unbiased MD simulations of Nsp1N\n\nAll the atomistic MD simulations were performed using the GROMACS 2021.3 package (Abraham et al., 2015) employing the a99SB-disp force field (Robustelli et al., 2018). Energy minimization was conducted using 50,000 steps of the steepest descent algorithm and setting the tolerance to 100 kJ mol\u22121 nm\u22121. The equilibration process was performed in two steps, applying harmonic restraints to all heavy atoms in the system (harmonic constant: 1000 kJ mol\u22121 nm\u22121). First, a 5 ns heating in the NVT ensemble was performed, using the V-rescale (\u03c4=0.1 ps) as thermostat (Bussi et al., 2007). Two different groups were used for temperature coupling: one for the protein and one comprising water molecules and ions. The reference temperature was set to 310 K. Second, the system was equilibrated during 15 ns in the NPT ensemble using V-rescale (Bussi et al., 2007) (\u03c4=0.5 ps) and Berendsen (Berendsen et al., 1984) (\u03c4=0.5 ps) as thermostat and barostat, respectively. The same temperature coupling groups were kept during the NPT equilibration step. The final structure from the equilibration process was used as a starting point for the MD simulations. All systems were simulated in the NPT ensemble with periodic boundary conditions using the same parameters as in the equilibration step and removing the harmonic restraints. The particle mesh Ewald method was used for treating long-range electrostatics using a cutoff of 12 A (Darden et al., 1993). A time step of 2 fs was used for all simulations after imposing constraints on the hydrogen stretching modes. We ran one replica of 1 \u03bcs of Nsp1N from SARS-CoV-2, and one replica of 1 \u03bcs of the three Nsp1N homologues (human SARS-CoV-1 and two Bat CoVs). For the Nsp1FL-RNA complex, we ran 1 replica of 500 ns for each model, A and B. Considering all the systems simulated leads to a total simulation time of 5 ms.\n\n#### Unbiased MD simulations of Nsp1FL\n\nThe AlphaFold 2.0 Nsp1FL structure model that was used to construct the Nsp1FL-RNA complex was isolated from the complex, parameterized with the a99SB-disp force field, and solvated with TIP4P-D water molecules in an octahedral box. We used the same energy minimization and equilibration protocol as the one we applied in the Nsp1N simulations. Post equilibration, we ran three independent replicas of Nsp1FL for 1 \u03bcs each starting from the same conformation but with different initial velocities each.\n\n### SWISH simulations\n\nSWISH (Woo et al., 2010; Min et al., 2020) is a Hamiltonian replica-exchange enhanced sampling technique that increases the conformational sampling of proteins by scaling the interaction of the apolar atoms of the protein with the water molecules. In this way, water molecules acquire more hydrophobic physicochemical properties that allow them to induce the opening of hydrophobic cavities. Including organic fragments in the solvent during the SWISH simulations has been shown to stabilize the cavities that open up during the simulation (Comitani and Gervasio, 2018; Oleinikovas et al., 2016). All SWISH simulations presented in this work, that is, of the Nsp1N of SARS-CoV-2 and the three CoV homologues, were run employing the same protocol: six different parallel 500 ns replicas, each one at a specific scaling factor (\u03bb, ranging evenly from 1.00 to 1.35) value, in the presence of benzene (1 M concentration) as co-solvent. Since we ran six replicas per SWISH simulation, the total accumulated time is 12 \u03bcs. Besides the scaling factors, all other parameters for both equilibration and production are the same as in the ones used for the unbiased MD simulations. Before each production run, six independent equilibration steps were carried out, one for each \u03bb value. A contact-map-based bias was introduced for each replica to prevent the possible unfolding of the protein in high scaling factor replicas. The optimal upper wall value for the contact map was tuned based on the unbiased simulations. The benzene molecules for the mixed-solvent simulations were parametrized using Gaussian 16 (Frisch et al., 2016) with Amber GAFF-2 force field (Mukherjee et al., 2011) and RESP charges.\n\n### Pocket detection\n\n#### Crystal structures\n\nIn order to evaluate whether binding pockets exist in the Nsp1 and quantify their physicochemical properties, the crystal structure of Nsp1N (PDB entry 7K7P) was analyzed with Fpocket12 and DoGSiteScorer that is available as part of the modelling server ProteinPlus (Volkamer et al., 2012). Fpocket is a geometry-based cavity detection algorithm that employs Voronoi tessellation and \u03b1 spheres to identify pockets in the protein structure. In this context, an \u03b1 sphere is defined as a sphere that contacts four atoms on its boundary and contains no internal atom. Similarly, DoGSiteScorer is an algorithm for pocket and druggability prediction that employs 3D difference of Gaussian filters to detect cavities and a support vector machine to score the identified binding sites.\n\n#### MD simulations\n\nThe trajectories were analyzed with MDpocket (Dominguez et al., 2003), an open source to detect binding pockets along MD simulations. MDpocket was run over down-sampled and reference-aligned trajectories with a time step of 100 ps between each frame. The corresponding minimized Nsp1N structure was chosen as a reference structure for each different system. The outputs let us identify and visualize the pockets observed throughout the whole simulation time with the PyMol software (PyMOL, 2022). This analysis has been performed along all the trajectories resulting from MD and SWISH simulations. Additionally, the software lets us compute the volume of the selected pockets.\n\n### Druggability assessment\n\nFTDyn and FTMap algorithms proved to be accurate in locating binding hotspots in proteins, that is, regions of the surface that majorly contribute to the free energy of binding. This approach is based on the fast and accurate distributions of 16 different small organic probes on the protein surface. Each probe is docked billions of times and map onto the target surface and scored according to an energy-based function (Dennis et al., 2002). Hence, the lowest energy probes are retained, locally minimized, and clustered. Ultimately, clusters of different probes are clustered together into a consensus cluster. The main binding hotspot is then identified as the consensus cluster containing the highest number of different probe fragments. We first employed FTDyn, a faster version of the FTMap algorithm without local minimization, to identify the most bound-like conformation in our unbiased MD simulations. We extracted 25 representative conformations from the MD simulation of SARS-CoV-2 Nsp1N, one from each of the first 25 most populated clusters (https://github.com/Gervasiolab/Gervasio-Protein-Dynamics/tree/master/nsp1/ftmap;). The 10,000-frame trajectory was clustered employing the gromos algorithm with a cutoff of 0.1 nm. Hence, we processed these structures with FTDyn server and determined the median number of interactions between probe molecules and each protein residue across the structural ensemble. We then assigned a contact score to each structure in the ensemble. The contact score is calculated as the sum of the number of residues in a given structure with a number of contacts higher than the median. We then calculated an ensemble score averaging over the 25 contact scores of the structures in the ensemble. Finally, we retained the structures in our 25-structure ensemble with a contact score higher than the average, as they were considered to be the best approximations of bound-like conformations. We further processed these 11 structures with FTMap to have a better prediction of binding hotspots on the Nsp1N surface.\n\n### Crystallographic data\n\nThe N-terminal domain of SARS-CoV-2 Nsp1 was purified and crystallized as previously described (Ma et al., 2022). Fifty-nine potential fragment hits obtained from computational fragment screening of the Maybridge Ro3 library were purchased and fragments soaked into Nsp1N crystals and validated through X-ray diffraction experiments in quasi-automated mode at ESRF beamline MASSIF-1. Data analysis of the 59 datasets was conducted in the multi-crystal system PanDDA (Pearce et al., 2017). One hit was subsequently verified by manual inspection in COOT followed by refinement in Phenix.\n\n### Thermal shift assay\n\nThe potential 59 fragments hits were tested using TSA at 2 mM containing 1% (v/v) DMSO using SARS-CoV-2 NSP1N at 1.25 mg/mL. The change in inflection temperature (Ti) would indicate a change in protein stability as the result of the protein-fragment interaction. NSP1N in the presence of 1% (v/v) DMSO was used as a control. Each fragment was tested in triplicate. The averaged Ti values for each fragment were calculated from each triplicate group. The change of inflection temperature (\u2206Ti) for fragments was calculated by subtracting the averaged Ti of the control group from the values of each triplicate group. Some fragments display atypical unfolding curves at 2 mM concentration. The Ti values of these were remeasured at lower concentrations of 1, 0.5, 0.25, or 0.125 mM. Correspondingly, 0.5%, 0.25%, 0.125%, or 0.0625% (v/v) DMSO in 1.25 mg/mL protein were used as control.\n\n$$\n\u0394Ti=averagedTi(protein_fragments)\u2212averagedTi(protein_DMSO)\n$$\n\n### Microscale thermophoresis\n\nTo label SARS-CoV-2 Nsp1N with a fluorescent dye, 100 nM of RED-TRIS-NTA second-generation dye (MO-L018, NanoTemper, M\u00fcchen, Germany) was mixed with 800 nM SARS-CoV-2 Nsp1N and incubated for 30 min on ice. The mixture was centrifuged in a Thermo Scientific Pico 17 MicroCentrifuge, 24-Pl Rotor at 15,000\u00d7 g for 10 min at 4\u00b0C to remove aggregates. The labelled protein was diluted to 100 nM in assay buffer (buffer E supplemented with 0.05% Pluronic(R) F-127) and the fragment hits 2E10 were diluted from 200 to 40 mM with assay buffer. Fifty \u00b5L of DMSO was mixed with 200 \u00b5L of assay buffer as ligand buffer. The fragment solutions were serially diluted with ligand buffer with a dilution factor of 1.5, obtaining 16 fragment solutions. Then, an equal volume of protein solution was mixed with each diluted fragment solution and incubated for 30 min at 4\u00b0C to reach the binding equilibrium. The final fragment concentrations were from 20mM to 45.7 \u00b5M, each containing 10% DMSO. The final protein concentration in each sample was 50 nM. The samples were centrifuged at 6000 rpm for 10 min before the supernatant was being loaded into capillaries and detected in the Monolith NT.115 Pico instrument (NanoTemper, M\u00fcchen, Germany) under the Pico-RED channel with 20% excitation power and 40% MST power under the Expert mode in the MO.Control software. The temperature was set at 25\u00b0C. The fragment hit 2E10 was also tested on SARS-CoV-2 Nsp1FL using the same method. All measurements were performed in triplicate. The data were analyzed, and the figures were generated in the MO.Affinity Analysis software.\n\n### Phylogenetic analysis\n\nThe 283 sequences of different \u03b1- and \u03b2-CoVs of different subgenera were obtained from the CDD, family accession number cl41742. The sequences were aligned with MEGA, version 11.0.11 (Tamura et al., 2021). The resulting multi-sequence alignment was used to construct the maximum-likelihood tree with MEGA. The resulting tree was rendered with the iTol webserver (Letunic and Bork, 2021).\n",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "8bdce036-c521-4cf2-a4ad-9bad75deb2b2",
+      "submission_id": "43af412b-50b2-43f2-92b8-5c389a7a377c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yogesh K Gupta, https://ror.org/02f6dcw23 The University of Texas Health Science Center at San Antonio United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81167.sa0](https://doi.org/10.7554/eLife.81167.sa0)\n\nSARS-CoV-2 nonstructural protein (Nsp1) has emerged as an attractive target as it plays an important role in modulating the host and viral gene expression. This study describes multiple druggable sites in Nsp1. A 1.1\u00c5 co-crystal structure of Nsp1 with a fragment, together with computational studies, provides a framework for the rational design of potential antiviral candidates. This important study is methodologically convincing and will be of interest to researchers in the fields of structural virology and rational drug design.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Yogesh K Gupta, https://ror.org/02f6dcw23 The University of Texas Health Science Center at San Antonio United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81167.sa1](https://doi.org/10.7554/eLife.81167.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Revealing druggable cryptic pockets in the Nsp-1 of SARS-CoV-2 and other \u03b2-coronaviruses by simulations and crystallography\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Volker D\u00f6tsch as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Paul Robustelli (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers agree that your study demonstrates state-of-the-art computational methods for discovering experimentally verifiable drug-binding pockets and fragment hits. However, they also raised some questions. Please address the concerns raised by the three reviewers and submit a revised version. The comments are appended to this email.\n\nReviewer #1 (Recommendations for the authors):\n\n1) The binding affinity of Nsp1/E210 interaction was measured by MST and TSA, but the data were missing. Can authors include these data in Figure 6 (or as a supplement figure)?\n\n2) Nsp1 blocks the mRNA channel in the ribosome to shut off protein translation. The virus must utilize the host translation machinery to synthesize its proteins. How is the Nsp1-mediated translation block lifted during the synthesis of viral proteins? How does Nsp1 binding to the virus's SL1 mRNA benefit the virus? The virus likely uses different capabilities of Nsp1 at different stages of infection to maximize its survival. The authors should consider expanding the discussion by clarifying some of these points.\n\nReviewer #2 (Recommendations for the authors):\n\nI have the following concerns that need to be addressed:\n\n1) The cryptic pocket was identified using the atomic coordinates from the crystal structure of Nsp1-N (10-126 aa), where the C-terminal residues are missing. Figure 3 shows that Pocket 1 is close to the C-terminal end of Nsp1-N (R124, K125, N126). This raises the question about this cryptic pocket in the context of full-length Nsp1. Whether the C-terminal tail would mask this pocket or not? And whether it will be accessible to the drugs in the full-length Nsp1.\n\n2) The binding of the drug to full-length Nsp1 is weak (Kd value of 2.74 {plus minus} 2.63 mM). Further, the associated error is almost the same as the Kd value. Computational drug/fragment binding studies were done with Nsp1-N. Biophysical interaction studies were done with full-length Nsp1, which showed weak binding. Is it possible that the C-terminal is masking the pocket and hence weaker binding? It would be interesting to check the drug binding with the C-terminal truncated Nsp1.\n\n3) The authors mention that targeting the identified pocket in Nsp1-N could disrupt the SARS-CoV-2 Nsp1-mRNA complex. However, there are conflicting reports on direct binding between Nsp1-mRNA (See references 17 and 29).\n\n4) It would be interesting to compare the drug-bound Nsp1-N with that of mRNA-bound Nsp1-N to check if the conformational changes explain how the binding of the drug could potentially disrupt the Nsp1-mRNA complex.\n\n5) Figures 2 and 3 show that Nsp1-N is slightly different orientations. It will be helpful for the reader if the figures show similar orientations. (Also, for Figure 4, if all 4 pockets can be shown clearly in the above orientations).\n\n6) Show electron density for the drug bound to Nsp1 in the PanDDA map and unbiased experimental map.\n\nReviewer #3 (Recommendations for the authors):\n\n1) This manuscript would be strengthened by the inclusion of additional data regarding the 60 potential fragment hits tested by crystal soaking. It would be nice to see the structures/SMILES strings of the 60 fragments that were tested, along with information about their predicted binding sites, or perhaps even a PDB of each predicted binding mode. I feel that while Figure 5 is informative, it would be helpful to be able to better understand the nature of the proposed binding modes to pockets 2-4, and more cryptic regions of pocket 1 in more detail.\n\n2) It would also be valuable to include the 25 representative MD conformations that were used to search for fragment hits.\n\n3) While the authors have identified crystal contacts that may have prevented fragment binding in crystal soaking experiments, in terms of validating the claims of the identification of druggable cryptic binding pockets, it would be quite interesting if the authors could test a subset of the other fragments with orthogonal biophysical assays (such as MST, TSA or other assays) to determine if there is evidence that fragments that bind to pockets 2-4 and more cryptic regions of pocket 1 bind.\n",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "120dab7d-45ab-47c3-9e51-07abc22eb0a5",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C1",
+      "claim": "Nsp1 is a main pathogenicity factor of \u03b1- and \u03b2-coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-structural protein 1 (Nsp1) is a main pathogenicity factor of \u03b1- and \u03b2-coronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract without specific experimental data in this manuscript, but is presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "03726335-922e-4b50-8d12-955c6c059178",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C2",
+      "claim": "Nsp1 of SARS-CoV-2 suppresses host gene expression by sterically blocking 40S host ribosomal subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Nsp1 of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) suppresses the host gene expression by sterically blocking 40S host ribosomal subunits and promoting host mRNA degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract, drawing from prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "7d5652d6-31c6-4abb-ab50-c735e4ea3b93",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C3",
+      "claim": "Nsp1 of SARS-CoV-2 promotes host mRNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nsp1 of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) suppresses the host gene expression by sterically blocking 40S host ribosomal subunits and promoting host mRNA degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "052aa0a2-3787-457b-9b43-f831e6c51923",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C4",
+      "claim": "Nsp1 leads to downregulation of translation-mediated innate immune response in host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism leads to the downregulation of the translation-mediated innate immune response in host cells, ultimately mediating the observed immune evasion capabilities of SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "941a650f-d4bb-4901-a595-dbf6e35955a1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C5",
+      "claim": "Nsp1 mediates immune evasion capabilities of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism leads to the downregulation of the translation-mediated innate immune response in host cells, ultimately mediating the observed immune evasion capabilities of SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "59dd0bac-8db5-4cba-95f7-e95b1c99cd30",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C6",
+      "claim": "Extensive molecular dynamics simulations reveal druggable pockets in Nsp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by combining extensive molecular dynamics simulations, fragment screening and crystallography, we reveal druggable pockets in Nsp1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by computational simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "9430ee98-655f-40af-bdf5-57339b89aeec",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C7",
+      "claim": "Fragment screening reveals druggable pockets in Nsp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by combining extensive molecular dynamics simulations, fragment screening and crystallography, we reveal druggable pockets in Nsp1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental fragment screening data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "efc9b53b-755e-47ae-8622-d73c4cb4bbab",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C8",
+      "claim": "Crystallography reveals druggable pockets in Nsp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by combining extensive molecular dynamics simulations, fragment screening and crystallography, we reveal druggable pockets in Nsp1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by crystallographic data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "38099ed7-66e9-4203-b850-d863ae734835",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C9",
+      "claim": "The newly discovered binding sites in Nsp1 are partially cryptic.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and computational solvent mapping analyses indicate the partial crypticity of these newly discovered and druggable binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational analyses (SWISH simulations and FTMap) presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "31b2b293-b7d4-4687-b781-2d5e9fa73944",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C10",
+      "claim": "Fragment-based screening via X-ray crystallography confirms the druggability of the major pocket of Nsp1.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of fragment-based screening via X-ray crystallography confirm the druggability of the major pocket of Nsp1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data showing fragment binding to pocket 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "27369a03-a358-43b1-9114-42c95dfe3772",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C11",
+      "claim": "Targeting pocket 1 in Nsp1 could disrupt the Nsp1-mRNA complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show how the targeting of this pocket could disrupt the Nsp1-mRNA complex and open a novel avenue to design new inhibitors for other Nsp1s present in homologous \u03b2-coronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulations and structural analysis of Nsp1-RNA complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "8f046ddc-40ef-4f95-be3a-4fb9f5ca02f1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C12",
+      "claim": "Targeting pocket 1 in Nsp1 could enable design of inhibitors for other Nsp1s in homologous \u03b2-coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show how the targeting of this pocket could disrupt the Nsp1-mRNA complex and open a novel avenue to design new inhibitors for other Nsp1s present in homologous \u03b2-coronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic analysis and SWISH simulations showing pocket conservation across \u03b2-coronaviruses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "7fc2c53d-02a2-4369-bc0e-013fe83a3ea9",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C13",
+      "claim": "SARS-CoV-2 belongs to the \u03b2-CoV genera.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), which led to the COVID-19 pandemic declared in March 2020 as the severe acute respiratory syndrome-related CoV, SARS-CoV-1, and the Middle East respiratory syndrome-related CoV, MERS-CoV, all belong to the \u03b2-CoV genera and are suggested to originate from bats (Andersen et al., 2020; Li et al., 2005; Corman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "8ce35c6d-e055-425f-b330-8755ea69d970",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C14",
+      "claim": "SARS-CoV-1 belongs to the \u03b2-CoV genera.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), which led to the COVID-19 pandemic declared in March 2020 as the severe acute respiratory syndrome-related CoV, SARS-CoV-1, and the Middle East respiratory syndrome-related CoV, MERS-CoV, all belong to the \u03b2-CoV genera and are suggested to originate from bats (Andersen et al., 2020; Li et al., 2005; Corman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "b910ef98-b03c-43d8-8a9b-3518c5cc9311",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C15",
+      "claim": "MERS-CoV belongs to the \u03b2-CoV genera.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), which led to the COVID-19 pandemic declared in March 2020 as the severe acute respiratory syndrome-related CoV, SARS-CoV-1, and the Middle East respiratory syndrome-related CoV, MERS-CoV, all belong to the \u03b2-CoV genera and are suggested to originate from bats (Andersen et al., 2020; Li et al., 2005; Corman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "9cb9e318-8d30-4cc8-80c3-668f4e949d87",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C16",
+      "claim": "SARS-CoV-2, SARS-CoV-1, and MERS-CoV are suggested to originate from bats.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), which led to the COVID-19 pandemic declared in March 2020 as the severe acute respiratory syndrome-related CoV, SARS-CoV-1, and the Middle East respiratory syndrome-related CoV, MERS-CoV, all belong to the \u03b2-CoV genera and are suggested to originate from bats (Andersen et al., 2020; Li et al., 2005; Corman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "3bcb06bc-74e7-469a-a47e-a81d09c76016",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C17",
+      "claim": "Nsp1 is a small 180 residue protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the different proteins that are involved in the pathogenicity of SARS-CoV-2 is the non-structural protein 1 (Nsp1), a small 180 residue protein Coronaviridae Study Group of the International Committee on Taxonomy of Viruses, 2020 whose function has been studied comparatively less than the rest of the pathogenic proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual description of Nsp1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "ab70e498-0190-4976-bb67-c6348c4dd7d5",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C18",
+      "claim": "The structured domain of Nsp1 is composed of 117 residues (Glu10-Asn126).",
+      "claim_type": "EXPLICIT",
+      "source": "The structured domain is composed of 117 residues (Glu10-Asn126) and displays an \u03b1/\u03b2-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural description based on known structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "05a9d3a0-4f99-4a67-b2cc-099ec20dd8aa",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C19",
+      "claim": "The structured domain of Nsp1 displays an \u03b1/\u03b2-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The structured domain is composed of 117 residues (Glu10-Asn126) and displays an \u03b1/\u03b2-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural description based on known structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "29ea0ad3-3717-435a-8ad6-cd7bc03c40dd",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C20",
+      "claim": "The disordered C-terminal domain of Nsp1 (Gly127-Gly180) partially folds into a helix-loop-helix pattern when bound to the 40S ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The disordered C-terminal domain (Gly127-Gly180) was shown to partially fold into a helix-loop-helix pattern when bound to the 40S ribosomal subunit (Figure 1; Schubert et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cited literature and referenced in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "91d685c0-0a03-4eb6-8a07-5903c16fedee",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C21",
+      "claim": "Nsp1 is only present in \u03b1- and \u03b2-CoVs, but not in \u03b3- and \u03b4-CoVs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that Nsp1 is only present in the \u03b1- and \u03b2-, but not in the \u03b3- and \u03b4-CoVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about coronavirus taxonomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "b6c0d253-67d7-48ef-8002-3ab75c4980a7",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C22",
+      "claim": "Nsp1N structures from \u03b1-CoVs and \u03b2-CoVs display high structural similarity despite low sequence homology.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural analysis of Nsp1N structures from \u03b1- (PDB entries 3ZBD and 5XBC) and \u03b2- (PDB entry 2HSX) CoVs suggests that, despite the low sequence homology, the Nsp1 of the two genera displays a high structural similarity, with root-mean-square deviation (RMSD) values ranging from 1.8 to 2.4 A (Shen et al., 2018; Min et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited structural analyses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "3fe40362-ebcf-4d71-9aa2-e9319a73e86d",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C23",
+      "claim": "RMSD values between Nsp1N structures from \u03b1-CoVs and \u03b2-CoVs range from 1.8 to 2.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural analysis of Nsp1N structures from \u03b1- (PDB entries 3ZBD and 5XBC) and \u03b2- (PDB entry 2HSX) CoVs suggests that, despite the low sequence homology, the Nsp1 of the two genera displays a high structural similarity, with root-mean-square deviation (RMSD) values ranging from 1.8 to 2.4 A (Shen et al., 2018; Min et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited structural analyses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "454cb07e-d9ca-4eda-9137-176a9bf74cef",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C24",
+      "claim": "Nsp1 sterically blocks the mRNA tunnel in the 40S ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Nsp1 sterically blocks the mRNA tunnel in the 40S ribosomal subunit (Schubert et al., 2020), the 43S preinitiation complex, and the non-translating 80S ribosomes (Schubert et al., 2020; Thoms et al., 2020; Yuan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "769cc4dd-2520-4b89-b082-931e4682e53c",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C25",
+      "claim": "Nsp1 blocks the 43S preinitiation complex.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Nsp1 sterically blocks the mRNA tunnel in the 40S ribosomal subunit (Schubert et al., 2020), the 43S preinitiation complex, and the non-translating 80S ribosomes (Schubert et al., 2020; Thoms et al., 2020; Yuan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "1ac90580-35e7-4cde-b697-55796410dd62",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C26",
+      "claim": "Nsp1 blocks non-translating 80S ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Nsp1 sterically blocks the mRNA tunnel in the 40S ribosomal subunit (Schubert et al., 2020), the 43S preinitiation complex, and the non-translating 80S ribosomes (Schubert et al., 2020; Thoms et al., 2020; Yuan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "3e79b29b-bd3a-4ace-8ff0-3f0aa2cc4905",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C27",
+      "claim": "Nsp1 can trigger the cleavage of host mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it has been shown that Nsp1 can also trigger the cleavage of the host mRNA and hinder its nuclear export to the cytosol (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "977c5dd5-0650-4d0b-9ce2-c56f9629ba3c",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C28",
+      "claim": "Nsp1 can hinder nuclear export of host mRNA to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it has been shown that Nsp1 can also trigger the cleavage of the host mRNA and hinder its nuclear export to the cytosol (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "227fdf55-4017-4867-b0c4-75a51bdd4fc0",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C29",
+      "claim": "Only host mRNAs are subjected to Nsp1-mediated endonucleolytic cleavage whereas viral mRNAs escape this mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only host mRNAs are subjected to Nsp1-mediated endonucleolytic cleavage whereas viral mRNAs escape from this translation suppression mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "2e302236-b409-4ff5-acb0-81ac8b796e19",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C30",
+      "claim": "The interaction of N-terminal Nsp1 with stem loop 1 (SL1) at the viral mRNA 5' UTR region is necessary to avoid Nsp1-mediated translation shutdown and cleavage in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental results have shown that the interaction of N-terminal Nsp1 with the stem loop 1 (SL1) at the viral mRNA 5' UTR region is necessary to avoid the Nsp1-mediated translation shutdown and cleavage in infected cells (Tanaka et al., 2012; Vankadari et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited experimental results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "1eb162b9-e85b-4991-870f-c2e4d5af2c7e",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C31",
+      "claim": "Nsp1 plays the role of a ribosome gatekeeper by sterically blocking the mRNA tunnel of the ribosome for host mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed mechanism suggests that Nsp1 plays the role of a ribosome gatekeeper by sterically blocking the mRNA tunnel of the ribosome for the host mRNAs and the blockage is lifted upon the interaction of Nsp1 with the 5'-UTR SL1 sequence of the viral mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "f305701a-544f-4f34-af1c-298f68259b03",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C32",
+      "claim": "The blockage of the mRNA tunnel is lifted upon interaction of Nsp1 with the 5'-UTR SL1 sequence of viral mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed mechanism suggests that Nsp1 plays the role of a ribosome gatekeeper by sterically blocking the mRNA tunnel of the ribosome for the host mRNAs and the blockage is lifted upon the interaction of Nsp1 with the 5'-UTR SL1 sequence of the viral mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "11876d4c-9eba-4bf0-95a5-8ad4c8e280a1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C33",
+      "claim": "Blocking the function of Nsp1 in different viruses leads to a drastic reduction or elimination of the infectious virus.",
+      "claim_type": "EXPLICIT",
+      "source": "According to these mutagenesis studies, blocking the function of Nsp1 in different viruses leads to a drastic reduction or elimination of the infectious virus (Shen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "9ed44c99-4c76-470d-8e21-68e3043bd76d",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C34",
+      "claim": "Nsp1 has no homologues outside of the CoVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the high structural similarity across different \u03b1- and \u03b2-CoVs from different organisms, the fact that Nsp1 has no homologues outside of the CoVs, as well as its crucial role in mediating immune evasion, make Nsp1 a valuable target for developing antiviral drugs, not only for the ongoing COVID-19 pandemic but also to prevent future pandemic outbreaks caused by new variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "dfd0f241-bcd6-416a-b4db-6c5076a607c1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C35",
+      "claim": "Nsp1 is a valuable target for developing antiviral drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the high structural similarity across different \u03b1- and \u03b2-CoVs from different organisms, the fact that Nsp1 has no homologues outside of the CoVs, as well as its crucial role in mediating immune evasion, make Nsp1 a valuable target for developing antiviral drugs, not only for the ongoing COVID-19 pandemic but also to prevent future pandemic outbreaks caused by new variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural and functional properties of Nsp1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "13b32cf7-f8b9-45e4-a99d-b4ab0f91d3da",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C36",
+      "claim": "The largest folded domain of Nsp1 (Nsp1N) shows predominantly small superficial cavities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the largest folded domain of Nsp1, namely the N-terminal core region (Nsp1N), corresponds to a small compact domain that shows predominantly small superficial cavities, which complicates rational drug design efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about Nsp1N structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "b3596d40-d454-4bd1-a493-83ad45a15ccf",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C37",
+      "claim": "Only one study reported the binding of a ligand to the C-terminal domain of SARS-CoV-2 Nsp1.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of Nsp1 being a validated target for therapeutic intervention, very few studies explored Nsp1 for structure-based drug discovery, and only one of them reported the binding of a ligand to the C-terminal domain of SARS-CoV-2 Nsp1 (Afsar et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "3e859e30-3dc7-4ec8-aea5-e91696fce906",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C38",
+      "claim": "The fragment-bound SARS-CoV-2 Nsp1 crystal structures presented in this study are the first of their kind.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, no ligand-bound Nsp1 crystal structures are available, making the ones presented here and in another study from our group the first fragment-bound SARS-CoV-2 Nsp1 crystal structures so far (Ma et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "2e9b4f12-ac6a-4d4c-a6ec-c7e4b19d7f0a",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C39",
+      "claim": "DoGSiteScorer and Fpocket show similar results in identifying putative binding sites on Nsp1N.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting from this crystal structure, we have characterized the possible binding pockets present in the 3D structure by means of pocket detection algorithms, namely DoGSiteScorer (Volkamer et al., 2012) (available via the ProteinPlus webserver) and Fpocket (Le Guilloux et al., 2009), showing similar results (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "a7313c6d-7d55-46d2-bc54-5661f9ece501",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C40",
+      "claim": "Two different areas were identified to harbor potential binding pockets by both DoGSiteScorer and Fpocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, two different areas were identified to harbor potential binding pockets by both algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "430c2c46-6bd7-482b-862a-a30565e58a0b",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C41",
+      "claim": "The first pocket area is sandwiched between the entrance of the \u03b2-barrel and the \u03b1-helix with a concave topology.",
+      "claim_type": "EXPLICIT",
+      "source": "The first one is sandwiched between the entrance of the \u03b2-barrel and the \u03b1-helix displaying a more evident pocket-like structure with a concave topology (Figure 2, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational analysis and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "6c9a53e5-0ead-403f-87c1-848ae00810ba",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C42",
+      "claim": "The second pocket region is located on the opposite side of the \u03b2-barrel with a groove-like topology.",
+      "claim_type": "EXPLICIT",
+      "source": "The second region, located on the opposite side of the \u03b2-barrel, is characterized by a groove-like topology and spans a larger area on the protein surface but is very shallow (Figure 2, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational analysis and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "2410e894-3bad-4e15-b047-632c6f971aba",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C43",
+      "claim": "The Nsp1N system remains stable throughout the 1-\u03bcs-long unbiased MD simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The time series of the RMSD shows that the system remains stable throughout the simulation (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RMSD analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "2e288f9d-541e-43a1-84a3-5f34f8eeb7ac",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C44",
+      "claim": "Pocket 1 has an average volume of 410\u00b1150 \u00c53 during MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of the pocket's volume confirms the stability of pocket 1, with an average value of 410\u00b1150 \u00c53 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by volume analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "1f34af3c-fccb-414f-9e14-aa2de818d1e5",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C45",
+      "claim": "The volume of pocket 1 during simulation (410\u00b1150 \u00c53) is significantly larger than the one predicted based on the crystal structure (217 \u00c53).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the volume obtained during the simulation is significantly larger than the one predicted based on the crystal structure (217 \u00c53), since during the simulation the structural features of any pocket are subject to fluctuations due to the rearrangements of the amino acid side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of simulation and crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "d8b3f58e-afa1-4521-a770-933b94e75ea5",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C46",
+      "claim": "Pocket 1 is partially cryptic.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that pocket 1 is partially cryptic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference in pocket volume between crystal structure and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "510599d5-f9d0-4fc7-a1e4-10c0ee93a89f",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C47",
+      "claim": "Some residues forming pocket 1 are located at the beginning of the C-terminus loop of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that some of these residues are located at the beginning of the C-terminus loop of the protein, suggesting that the binding of a ligand to this region can potentially affect the dynamics of the Nsp1 C-terminus, and possibly release the blockage of host RNA entry into ribosome for translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis from simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "056d34ae-77d0-4744-9d18-92a614fee8c4",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C48",
+      "claim": "Binding of a ligand to pocket 1 can potentially affect the dynamics of the Nsp1 C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that some of these residues are located at the beginning of the C-terminus loop of the protein, suggesting that the binding of a ligand to this region can potentially affect the dynamics of the Nsp1 C-terminus, and possibly release the blockage of host RNA entry into ribosome for translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "c0f0dfb9-852b-4248-a3df-c85877539178",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C49",
+      "claim": "Pocket 1 is close to the viral RNA binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as pocket 1 is close to the viral RNA binding region (Sakuraba et al., 2021), the binding of a ligand in this pocket could also interfere with the interaction with SL1 of viral RNA, leading to the failure in evasion of translation shutdown and cleavage of viral RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature and structural analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "6962554b-7bd3-4a52-b4ee-93699d439817",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C50",
+      "claim": "Binding of a ligand in pocket 1 could interfere with the interaction with SL1 of viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as pocket 1 is close to the viral RNA binding region (Sakuraba et al., 2021), the binding of a ligand in this pocket could also interfere with the interaction with SL1 of viral RNA, leading to the failure in evasion of translation shutdown and cleavage of viral RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on structural proximity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "c1166e55-8a14-4851-8569-90e49cf04845",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C51",
+      "claim": "Pocket 2 has a volume of 240\u00b1114 \u00c53 during MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the volume calculated during the simulation is 240\u00b1114 \u00c53, in agreement with the volume predicted by ProteinPlus for the Nsp1N crystal structure (150 \u00c53).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by volume analysis from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "9a66de7b-c90e-4811-b418-0a5dbde8fa0d",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C52",
+      "claim": "SWISH simulations reveal two new pockets (pocket 3 and pocket 4) in addition to pocket 1 and pocket 2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that, in addition to confirming the presence of pocket 1 and pocket 2, our analysis shows the presence of two new pockets, namely, pocket 3 and pocket 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SWISH simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "3f7f91d5-30a2-46af-af64-af0263cdc436",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C53",
+      "claim": "Pocket 3 and pocket 4 are both located on the exterior of the \u03b2-barrel, proximal to each other and near pocket 2.",
+      "claim_type": "EXPLICIT",
+      "source": "These two pockets are both located on the exterior of the \u03b2-barrel, proximal to each other and near pocket 2 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SWISH simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "50010466-7b06-4092-9da9-fc0beb837989",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C54",
+      "claim": "Pocket 3 and pocket 4 are cryptic in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of these sites in the crystal structure of Nsp1N and the fact that these cavities remained closed during the MD simulations indicate the cryptic nature of pocket 3 and pocket 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of these pockets in crystal structure and unbiased MD simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "0071e1a7-5b62-4a19-9667-64110cfde069",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C55",
+      "claim": "The average volume of pocket 1 during SWISH simulations (471\u00b1128 \u00c53) is comparable to the one obtained in MD simulations (410\u00b1150 \u00c53).",
+      "claim_type": "EXPLICIT",
+      "source": "The average volume of pocket 1 during the SWISH simulations (471\u00b1128 \u00c53) is comparable to the one obtained in the MD simulations (410\u00b1150 \u00c53) for the same pocket (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by volume analysis from SWISH and MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "3893c268-4973-4e6a-b03a-c893cbb0856c",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C56",
+      "claim": "Pocket 3 has an average volume of 268\u00b1115 \u00c53 during SWISH simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, the opening of pocket 3 (268\u00b1115 \u00c53) during the SWISH simulations revealed a pocket of comparable size to pocket 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by volume analysis from SWISH simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "f83a1d7e-de08-4e62-809e-333019fbe88b",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C57",
+      "claim": "Pocket 4 has an average volume of 169\u00b1120 \u00c53 during SWISH simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "This pocket, the smallest one sampled during the SWISH simulations (169\u00b1120 \u00c53), displays diverse volume profiles across most SWISH replicas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by volume analysis from SWISH simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "6cb51671-a670-4de0-9776-82418a862615",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C58",
+      "claim": "FTDyn and FTMap analysis identified 107 consensus clusters for Nsp1N.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are in good agreement with the previous analysis, regarding the location of the binding sites found for 107 consensus clusters obtained for Nsp1N.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FTDyn and FTMap computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "87e592b6-bc5e-4e38-9472-7ec0ebfed955",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C59",
+      "claim": "50 out of 107 consensus clusters are mapped into pocket 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In pocket 1, 50 out of the 107 consensus clusters are mapped into it, most of them corresponding to protein-fragment complexes with the highest binding energy (Figure 5A and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FTMap analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "d7192a0a-a749-4068-958f-dff5418f5e45",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C60",
+      "claim": "50 consensus clusters are located in the vicinity of pockets 2, 3, and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "The computational mapping also confirmed the presence of 50 consensus clusters in the vicinity of pockets 2, 3, and 4 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FTMap analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "18c924c0-82a5-4865-9664-05182a19f3a1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C61",
+      "claim": "59 potential fragment hits were tested by soaking Nsp1N crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate our computational findings, we proceeded with the soaking of Nsp1N crystals with 59 potential fragment hits obtained by computational methods (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental fragment screening data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "3d22ce6d-edb8-4da0-ae0c-6ddb61a443e2",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C62",
+      "claim": "One fragment was found in pocket 1 from the 59 tested fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 59 fragments, one fragment was found in pocket 1 as previously identified in our simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "ee0425e7-0490-4797-918f-44740d888509",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C63",
+      "claim": "Fragment 2E10 binds to Nsp1N pocket 1 with a KD value of 15.1\u00b15.7 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "2E10 binds to Nsp1N pocket 1 with a KD value of 15.1\u00b15.7 mM, indicating a rather good binding for a fragment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MST experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "29dcb1ac-4930-429d-9d08-18be4da2a7da",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C64",
+      "claim": "Fragment 2E10 does not stabilize Nsp1N in thermal shift assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we did not observe any stabilization of Nsp1N by the fragment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TSA experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "0de31109-6c53-4b24-a781-d1e3976147e6",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C65",
+      "claim": "Fragment 2E10 obeys the rule of 3 (Ro3).",
+      "claim_type": "EXPLICIT",
+      "source": "The fragment obeys the rule of 3 (Ro3) with a molecular mass of 172.9 Da, a calculated MolLogP of 2.66 and a total of three hydrogen bond donors and acceptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chemical properties of the fragment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "f3c59b15-ed9a-427e-bb40-3195f17965e7",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C66",
+      "claim": "Fragment 2E10 establishes hydrophobic interactions with residues Glu10, Val14, Arg43, Leu46, Lys47, and Leu123 in pocket 1.",
+      "claim_type": "EXPLICIT",
+      "source": "A range of residues located in binding pocket 1, including Glu10, Val14, Arg43, Leu46, Lys47, and Leu123, establish hydrophobic interactions with the ligand (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "7e6f8164-b54f-4890-a6d0-64e0299c4df1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C67",
+      "claim": "The acetamide substituent of fragment 2E10 establishes a hydrogen bond interaction with the side chain of Lys125.",
+      "claim_type": "EXPLICIT",
+      "source": "The acetamide substituent establishes a hydrogen bond interaction with the side chain of Lys125.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "2da1d866-e362-4293-b5a2-83435312a79f",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C68",
+      "claim": "Crystal packing limits the accessibility of pockets for fragment binding during soaking experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, at first, this may seem like a very low number of hits, a detailed analysis of the crystal packing provides an explanation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from analysis of crystal packing shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "4ca759eb-ed7d-44dd-a578-1bc98450b9a0",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C69",
+      "claim": "Two different Nsp1FL-RNA complex models (model A and model B) were generated by protein-RNA docking.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of the docked Nsp1FL-RNA complexes suggests that two different protein-RNA complexes, named model A and model B, well capture the experimentally validated contacts between the Nsp1FL and SL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by docking simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "873bedfc-b6b9-4fc7-a18f-8177fad4306e",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C70",
+      "claim": "Nsp1FL in model A interacts predominately with the groove of SL1.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nsp1FL in models A and B binds to diametrically opposite positions on the SL1, with Nsp1 in model A interacting predominately with the groove of SL1 (Figure 8A) and in model B with its backbone (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by docking and MD simulation data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "658cbb68-4583-4551-b056-4f2525a6b682",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C71",
+      "claim": "Nsp1FL in model B interacts predominately with the backbone of SL1.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nsp1FL in models A and B binds to diametrically opposite positions on the SL1, with Nsp1 in model A interacting predominately with the groove of SL1 (Figure 8A) and in model B with its backbone (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by docking and MD simulation data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "a56fda44-065e-4766-b19b-9da8b9ea09a4",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C72",
+      "claim": "Residues Arg124, Lys125, and Asn126 of the C-terminal loop of Nsp1FL interact with viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, out of the four pockets in Nsp1N, pocket 1 is positioned close to the Nsp1FL-RNA interface. More specifically, some residues of the C-terminal loop of Nsp1FL around pocket 1 interact with the viral RNA, namely Arg124, Lys125, and Asn126.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MD simulation data of Nsp1FL-RNA complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "51103903-7cbd-497d-94c5-e9629a3fa46f",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C73",
+      "claim": "Residues Asp9 and Lys11 establish contacts with the SL1 moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Glu10 is oriented toward pocket 1 and both Asp9 and Lys11 establish contacts with the SL1 moiety (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "3f07a98b-60a2-423a-b92e-58be9e8ba20a",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C74",
+      "claim": "Binding of a ligand to pocket 1 can impair the Nsp1FL-RNA interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results suggest that pocket 1 can be a crucial target for rational drug design since the residues that define this pocket are directly interacting with the viral RNA and the binding of a ligand to this pocket can impair the Nsp1FL-RNA interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis of Nsp1FL-RNA complexes and fragment binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "c70b0cf2-26b5-452b-865c-2712b4963bb1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C75",
+      "claim": "In the crystal structure with bound fragment, residues Glu10, Lys11, Arg99, Arg124, and Asn126 have changed orientation compared to the Nsp1FL-RNA complex.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared with the structure obtained from soaking experiments (Glu10 to Asn126), some of these residues have changed orientation. Specifically, Glu10 and Lys11 are pointing toward the fragment, Arg99 is pointing to the surface, and Arg124 and Asn126 are displaced due to the ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of crystal structure and MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "03980e4d-84ac-4c05-be0f-36e846eeac3c",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C76",
+      "claim": "Binding of a ligand in pocket 1 could diminish the Nsp1-mRNA interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In the orientation that these residues have adopted in the structure obtained from soaking experiments, these residues could not interact with the RNA. As these residues are essential for the Nsp1-SL1 interaction in SARS-CoVs, the binding of a ligand in pocket 1 could diminish the Nsp1-mRNA interaction (Tanaka et al., 2012; Terada et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural comparison and supported by cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "6baf98ff-9873-482b-af93-1f5be0b77414",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C77",
+      "claim": "Mutation of Arg99, Arg124, and Lys125 to Ala compromised the binding of Nsp1 to the host 40S ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a recent study where site-directed mutagenesis was performed on the Nsp1 N-terminal and core region (Nsp1N) has demonstrated the functional role of Arg99, Arg124, and Lys125 residues in host expression shutdown, since the mutation of these residues to Ala compromised the binding of Nsp1 to the host 40S ribosomal subunit and increased the dissociation constants with purified ribosomes (Mendez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited mutagenesis study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "f1741fd6-8b05-4b0c-b690-3fa66579be75",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C78",
+      "claim": "The C-terminal domain affects the accessibility of pocket 1 in Nsp1FL.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether the C-terminal end would affect the accessibility of a fragment to pocket 1, we quantified the volume of the pocket throughout three independent replicas. The C-terminal domain indeed affects the accessibility of the identified pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by volume analysis from MD simulations of Nsp1FL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "8c72c823-6f0b-4bc1-9bcd-5db6b395cca2",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C79",
+      "claim": "The volume of pocket 1 in Nsp1FL reduces to approximately 200 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the pocket volume (Figure 8\u2014figure supplement 3) shows how the volume of pocket 1 reduces to approximately 200 \u00c53 in the case of Nsp1FL, reaching similar values to the ones found in the crystal structure of the apo Nsp1 (PDB entry 7K7P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by volume analysis shown in Figure 8\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "8b008864-1d4c-45b8-8933-aa4980d7cd97",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C80",
+      "claim": "Pocket 1 is still accessible for fragment binding in the full-length Nsp1 model in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that pocket 1 is still accessible for fragment binding in our full-length Nsp1 model in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from docking studies and MST measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "10a4a389-7cfd-4ae8-a1b6-1784d45330b3",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C81",
+      "claim": "The KD measured for fragment 2E10 binding to Nsp1FL is comparable to that for Nsp1N within error.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the accessibility predictions from our simulations are confirmed by the MST measurements conducted on Nsp1FL (Figure 6\u2014figure supplement 2). The measured KD has a larger error bar, but within the error is comparable to the one obtained for Nsp1N, indicating that the C-terminal domain present in Nsp1FL does not prevent the binding of the fragment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MST experimental data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "cfe43fdf-9462-42c7-bebc-6181e7a1400e",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C82",
+      "claim": "283 Nsp1N sequences from different \u03b1- and \u03b2-CoVs were analyzed phylogenetically.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of the 283 Nsp1N sequences available until the end of February 2022 shows the distribution of Nsp1 homologues for different \u03b1- (TGEV- and PDEV-like) and \u03b2- (MERS-, HKU9-, SARS-, and MHV-like) CoVs (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "a80f8ee6-42f3-4253-bff1-897d4868fed3",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C83",
+      "claim": "Sequence identity of Nsp1 varies widely depending on the homologue proteins under consideration.",
+      "claim_type": "EXPLICIT",
+      "source": "The alignment demonstrates that the sequence identity varies widely depending on the homologue proteins under consideration (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment data shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "ddff9ca0-8979-4749-b2fb-7093f1a1267a",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C84",
+      "claim": "SARS-CoV-2 Nsp1 shares 86-93% sequence identity with selected homologues (SARS-CoV-1, BatCoV HKU3, and RaTG13).",
+      "claim_type": "EXPLICIT",
+      "source": "The selected homologues share a high sequence identity with SARS-CoV-2 Nsp1 ranging from 86% to 93%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "d768a4bd-a25f-40e2-b55d-5786efbd5776",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C85",
+      "claim": "All important residues of the pockets are conserved in the selected \u03b2-CoVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that for the four sequences, all the important residues of the pockets are conserved in the selected \u03b2-CoVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "c8c38fda-bed1-4f43-800c-2c361879bcdd",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C86",
+      "claim": "The four pockets identified in SARS-CoV-2 Nsp1N are conserved in the considered homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting trajectories indicate that the four pockets we reported for Nsp1N of SARS-CoV-2 are conserved in the considered homologues (Figure 9C and Figure 9\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SWISH simulations of homologous Nsp1 proteins shown in Figure 9C and Figure 9\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "7801308a-58e5-475f-93f2-53e1b43e7219",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C87",
+      "claim": "Ligands binding to pockets in SARS-CoV-2 Nsp1N could also target the corresponding pocket in evaluated homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that ligands binding to any of the pockets identified in SARS-CoV-2 Nsp1N could also target the corresponding pocket in the evaluated homologues, ultimately paving the way to the development of a drug targeting the Nsp1N of different \u03b2-CoVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from conservation of pockets across homologues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "6ad3b64c-5752-4d30-a05f-332a2bd60176",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C88",
+      "claim": "Enhanced sampling simulations revealed four candidate pockets in Nsp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our enhanced sampling simulations revealed four candidate pockets and predicted that fragments can bind to them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by SWISH simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "ce7155b4-bab5-419b-8ebd-5ab26cb80107",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C89",
+      "claim": "Not all predicted pockets are accessible in a crystal structure due to crystallographic contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all of these are predicted to be accessible in a crystal structure, due to crystallographic contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from analysis of crystal packing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "8c77846d-4b16-4673-91c0-57727521ff31",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C90",
+      "claim": "Fragment screening and crystallographic structures confirm the presence of the deepest and most accessible pocket predicted by simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The fragment screening and subsequent crystallographic structures confirm the presence of the deepest and most accessible pocket predicted by the simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data confirming computational predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "4725f12a-3577-4edc-9ca9-17e2e3151545",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C91",
+      "claim": "The pockets are conserved across multiple CoV species.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the pockets are conserved across multiple CoV species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic analysis and SWISH simulations of homologues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "da05425d-24fc-4776-93ba-633a4e62e08a",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C92",
+      "claim": "The fragment bound to pocket 1 can disrupt the Nsp1-mRNA complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show how the fragment bound to one of these pockets can disrupt the Nsp1-mRNA complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis comparing fragment-bound and RNA-bound states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "da5bac42-f33b-4341-9cdd-fbe7f21c5c41",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C93",
+      "claim": "Binding of the fragment to pocket 1 interferes with crucial interactions between 5'-UTR SL1 and Nsp1, namely R124 and K125.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the binding of the fragment to the identified pocket interferes with crucial interactions between the 5'-UTR SL1 and Nsp1, namely R124 and K125.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison of fragment-bound and RNA-bound states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "1cfd1bac-4bb6-4adb-938d-0ebf0ad901ae",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "claim_id": "C94",
+      "claim": "The fragment is expected to lower the affinity of Nsp1 for the ribosome by hindering the interaction mediated by R99, R124, and R125.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the fragment is expected also to lower the affinity of Nsp1 for the ribosome by hindering the interaction mediated by R99, R124, and R125.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis and supported by cited mutagenesis studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on Nsp1 as a pathogenicity factor in \u03b1- and \u03b2-coronaviruses, describing its role in suppressing host gene expression, promoting mRNA degradation, mediating immune evasion, and its structural characteristics. These claims establish the biological and therapeutic context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C34 are well-supported by cited literature and represent established knowledge about Nsp1 function, structure, and importance. These background claims provide appropriate context and are not novel findings of this manuscript but are accurately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "65777397-3c59-481e-ad59-b143ef0c9673",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two putative binding pocket regions were identified on Nsp1N using computational pocket detection algorithms (DoGSiteScorer and Fpocket): a pocket-like structure between the \u03b2-barrel and \u03b1-helix, and a shallow groove-like region on the opposite side of the \u03b2-barrel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by computational analysis using two independent pocket detection algorithms showing consistent results (Figure 2). The structural descriptions are clearly documented and provide the foundation for subsequent MD simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "dcdece59-a973-43bd-86a6-bb8b8d753e02",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Unbiased MD simulations of Nsp1N revealed that pocket 1 has an average volume of 410\u00b1150 \u00c5\u00b3, significantly larger than predicted from the crystal structure (217 \u00c5\u00b3), indicating partial crypticity. Pocket 2 has a volume of 240\u00b1114 \u00c5\u00b3, consistent with crystal structure predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 and C51 are well-supported by 1-\u03bcs MD simulation data with RMSD analysis confirming system stability (Figure 3). The volume calculations are quantitative and the comparison between simulation and crystal structure provides strong evidence for pocket 1's partial crypticity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "196044bb-6162-409b-9d04-8811d02e6bb4",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SWISH enhanced sampling simulations revealed two additional cryptic pockets (pocket 3 and pocket 4) on the exterior of the \u03b2-barrel, with average volumes of 268\u00b1115 \u00c5\u00b3 and 169\u00b1120 \u00c5\u00b3, respectively. These pockets were absent in crystal structures and unbiased MD simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 are supported by SWISH simulation data (6 replicas of 500 ns each) with volume analysis (Figure 4). The cryptic nature is well-established by the absence of these pockets in both crystal structures and unbiased MD simulations, demonstrating the value of enhanced sampling methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "ab95b76c-d5ed-4443-9f18-8b1635c79f14",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FTDyn and FTMap computational solvent mapping identified 107 consensus clusters on Nsp1N, with 50 clusters mapped to pocket 1 (corresponding to highest binding energy) and 50 clusters in the vicinity of pockets 2, 3, and 4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by FTDyn/FTMap analysis of 11 representative MD conformations (Figure 5). The distribution of consensus clusters provides computational validation of pocket druggability, though the method is predictive rather than experimental.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "3cf981c2-f0ee-436c-a321-8d3d2f20b8c8",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fragment screening by X-ray crystallography identified one fragment (2E10) binding to pocket 1 out of 59 tested fragments. Fragment 2E10 binds with KD = 15.1\u00b15.7 mM (MST), establishes hydrophobic interactions with multiple residues, and forms a hydrogen bond with Lys125, but does not stabilize Nsp1N in thermal shift assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 are well-supported by crystallographic data (Figure 6), MST measurements, and TSA results (Table 2). The low hit rate (1/59) is explained by crystal packing analysis (C68). The KD value indicates weak but measurable binding appropriate for a fragment, and the lack of thermal stabilization is documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "abc4e37d-afe1-4382-9e07-18dc14229976",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Crystal packing analysis revealed that crystallographic contacts limit the accessibility of predicted pockets during fragment soaking experiments, explaining the low hit rate from fragment screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C89 are supported by detailed crystal packing analysis (Figure 7) showing that neighboring Nsp1 molecules in the crystal lattice occlude key hotspots identified by FTMap. This provides a rational explanation for the experimental limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "b46f1590-fe9a-4af0-adc5-bb3bd0eb1ef1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Two Nsp1FL-RNA complex models (A and B) were generated by protein-RNA docking, showing that Nsp1FL binds to diametrically opposite positions on SL1. In model A, residues Arg124, Lys125, Asn126, Asp9, and Lys11 interact with viral RNA, with pocket 1 positioned close to the Nsp1FL-RNA interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 are supported by HADDOCK docking and 500-ns MD simulations (Figure 8). Both models capture experimentally validated contacts, though model A shows greater stability. The identification of key interacting residues is well-documented, though the models are computational predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "4758bc74-d02a-43f1-ad38-1f076d843863",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Structural comparison between fragment-bound and RNA-bound states shows that fragment binding to pocket 1 causes reorientation of key residues (Glu10, Lys11, Arg99, Arg124, Asn126), which could diminish Nsp1-mRNA interaction by interfering with crucial interactions between Nsp1 and 5'-UTR SL1 (particularly R124 and K125).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 and C93 are supported by structural superposition analysis (Figure 8B) and are consistent with cited mutagenesis studies (C77). The inference that fragment binding could disrupt RNA interaction is logical based on residue reorientation, though direct experimental validation of disruption is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "77fc743c-3711-4a26-a82b-fa79591417c1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that ligand binding to pocket 1 could affect Nsp1 C-terminus dynamics, interfere with viral RNA SL1 interaction, disrupt the Nsp1-mRNA complex, and lower Nsp1 affinity for the ribosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48, C50, C92, and C94 are speculative inferences based on structural proximity and residue involvement. While the structural analysis is sound and supported by mutagenesis data (C77), direct experimental evidence demonstrating these functional effects is lacking. These represent hypotheses requiring validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "5df2bc10-a19c-47ee-a362-d1f5f6825b23",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In full-length Nsp1, the C-terminal domain affects pocket 1 accessibility, reducing its volume to approximately 200 \u00c5\u00b3. However, pocket 1 remains accessible for fragment binding in solution, as confirmed by comparable KD values for fragment 2E10 binding to Nsp1N (15.1\u00b15.7 mM) and Nsp1FL (15.7\u00b111.6 mM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 are supported by MD simulations of Nsp1FL (3 replicas of 1 \u03bcs), volume analysis (Figure 8\u2014supplement 3), docking studies, and MST measurements (Figure 6\u2014supplement 2). The comparable KD values within error provide experimental validation that the C-terminal domain does not prevent fragment binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "f54be63d-eb41-4a1d-8185-7fc5e8cd4288",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis of 283 Nsp1N sequences from \u03b1- and \u03b2-CoVs shows that SARS-CoV-2 Nsp1 shares 86-93% sequence identity with selected homologues (SARS-CoV-1, BatCoV HKU3, RaTG13). All important pocket residues are conserved, and SWISH simulations confirm that all four pockets are conserved across these homologues, suggesting that ligands could target corresponding pockets in different \u03b2-CoVs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C87 and C91 are well-supported by phylogenetic analysis (Figure 9A), sequence alignment (Figure 9B, Table 3), and SWISH simulations of homologous proteins (Figure 9C). The conservation analysis is thorough and the inference about cross-species druggability is reasonable, though experimental validation in homologues is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "80d5a28d-15bb-4a02-ace5-9862e66552fd",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study reveals druggable and partially cryptic pockets in Nsp1 through a combination of MD simulations, SWISH enhanced sampling, fragment screening, and X-ray crystallography. These represent the first fragment-bound SARS-CoV-2 Nsp1 crystal structures and establish Nsp1 as a valuable drug target with potential for pan-coronavirus inhibitor development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12, C35, C38, C88, and C90 represent the main conclusions of the study and are well-supported by the integrated computational and experimental data. The novelty claim (C38) is appropriately qualified by citing a concurrent study from the same group. The inference about drug development potential (C35, C12) is reasonable but represents future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "b3a0aa3a-183c-4dcb-b7e4-b031d004ecd7",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior mutagenesis studies showed that mutation of Arg99, Arg124, and Lys125 to Ala compromised Nsp1 binding to the 40S ribosomal subunit and increased dissociation constants with purified ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is supported by appropriate citation (Mendez et al., 2021) and provides important functional context for interpreting the structural findings regarding fragment binding effects on these residues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    },
+    {
+      "id": "691e744c-328f-4855-8dda-4d654ef56ea1",
+      "content_id": "6bacfafd-6ec6-41ec-987c-5260617a8aa3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The N-terminal core region of Nsp1 (Nsp1N) shows predominantly small superficial cavities, complicating drug design efforts. Very few studies have explored Nsp1 for structure-based drug discovery, with only one prior study reporting ligand binding to the C-terminal domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by structural observations and appropriate citations, establishing the challenge and novelty of the current work. These claims provide important context for the significance of discovering druggable pockets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:21:40.884457Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "120dab7d-45ab-47c3-9e51-07abc22eb0a5",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "03726335-922e-4b50-8d12-955c6c059178",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "7d5652d6-31c6-4abb-ab50-c735e4ea3b93",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "052aa0a2-3787-457b-9b43-f831e6c51923",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "941a650f-d4bb-4901-a595-dbf6e35955a1",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "7fc2c53d-02a2-4369-bc0e-013fe83a3ea9",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "8ce35c6d-e055-425f-b330-8755ea69d970",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "b910ef98-b03c-43d8-8a9b-3518c5cc9311",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "9cb9e318-8d30-4cc8-80c3-668f4e949d87",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "3bcb06bc-74e7-469a-a47e-a81d09c76016",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "ab70e498-0190-4976-bb67-c6348c4dd7d5",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "05a9d3a0-4f99-4a67-b2cc-099ec20dd8aa",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "29ea0ad3-3717-435a-8ad6-cd7bc03c40dd",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "91d685c0-0a03-4eb6-8a07-5903c16fedee",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "b6c0d253-67d7-48ef-8002-3ab75c4980a7",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "3fe40362-ebcf-4d71-9aa2-e9319a73e86d",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "454cb07e-d9ca-4eda-9137-176a9bf74cef",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "769cc4dd-2520-4b89-b082-931e4682e53c",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "1ac90580-35e7-4cde-b697-55796410dd62",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "3e79b29b-bd3a-4ace-8ff0-3f0aa2cc4905",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "977c5dd5-0650-4d0b-9ce2-c56f9629ba3c",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "227fdf55-4017-4867-b0c4-75a51bdd4fc0",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "2e302236-b409-4ff5-acb0-81ac8b796e19",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "1eb162b9-e85b-4991-870f-c2e4d5af2c7e",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "f305701a-544f-4f34-af1c-298f68259b03",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "11876d4c-9eba-4bf0-95a5-8ad4c8e280a1",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "9ed44c99-4c76-470d-8e21-68e3043bd76d",
+      "result_id": "8dc97c15-5ebd-4f93-87c8-9f0a0e5f32a3"
+    },
+    {
+      "claim_id": "2e9b4f12-ac6a-4d4c-a6ec-c7e4b19d7f0a",
+      "result_id": "65777397-3c59-481e-ad59-b143ef0c9673"
+    },
+    {
+      "claim_id": "a7313c6d-7d55-46d2-bc54-5661f9ece501",
+      "result_id": "65777397-3c59-481e-ad59-b143ef0c9673"
+    },
+    {
+      "claim_id": "430c2c46-6bd7-482b-862a-a30565e58a0b",
+      "result_id": "65777397-3c59-481e-ad59-b143ef0c9673"
+    },
+    {
+      "claim_id": "6c9a53e5-0ead-403f-87c1-848ae00810ba",
+      "result_id": "65777397-3c59-481e-ad59-b143ef0c9673"
+    },
+    {
+      "claim_id": "2410e894-3bad-4e15-b047-632c6f971aba",
+      "result_id": "dcdece59-a973-43bd-86a6-bb8b8d753e02"
+    },
+    {
+      "claim_id": "2e288f9d-541e-43a1-84a3-5f34f8eeb7ac",
+      "result_id": "dcdece59-a973-43bd-86a6-bb8b8d753e02"
+    },
+    {
+      "claim_id": "1f34af3c-fccb-414f-9e14-aa2de818d1e5",
+      "result_id": "dcdece59-a973-43bd-86a6-bb8b8d753e02"
+    },
+    {
+      "claim_id": "d8b3f58e-afa1-4521-a770-933b94e75ea5",
+      "result_id": "dcdece59-a973-43bd-86a6-bb8b8d753e02"
+    },
+    {
+      "claim_id": "510599d5-f9d0-4fc7-a1e4-10c0ee93a89f",
+      "result_id": "dcdece59-a973-43bd-86a6-bb8b8d753e02"
+    },
+    {
+      "claim_id": "c1166e55-8a14-4851-8569-90e49cf04845",
+      "result_id": "dcdece59-a973-43bd-86a6-bb8b8d753e02"
+    },
+    {
+      "claim_id": "9a66de7b-c90e-4811-b418-0a5dbde8fa0d",
+      "result_id": "196044bb-6162-409b-9d04-8811d02e6bb4"
+    },
+    {
+      "claim_id": "3f7f91d5-30a2-46af-af64-af0263cdc436",
+      "result_id": "196044bb-6162-409b-9d04-8811d02e6bb4"
+    },
+    {
+      "claim_id": "50010466-7b06-4092-9da9-fc0beb837989",
+      "result_id": "196044bb-6162-409b-9d04-8811d02e6bb4"
+    },
+    {
+      "claim_id": "0071e1a7-5b62-4a19-9667-64110cfde069",
+      "result_id": "196044bb-6162-409b-9d04-8811d02e6bb4"
+    },
+    {
+      "claim_id": "3893c268-4973-4e6a-b03a-c893cbb0856c",
+      "result_id": "196044bb-6162-409b-9d04-8811d02e6bb4"
+    },
+    {
+      "claim_id": "f83a1d7e-de08-4e62-809e-333019fbe88b",
+      "result_id": "196044bb-6162-409b-9d04-8811d02e6bb4"
+    },
+    {
+      "claim_id": "6cb51671-a670-4de0-9776-82418a862615",
+      "result_id": "ab95b76c-d5ed-4443-9f18-8b1635c79f14"
+    },
+    {
+      "claim_id": "87e592b6-bc5e-4e38-9472-7ec0ebfed955",
+      "result_id": "ab95b76c-d5ed-4443-9f18-8b1635c79f14"
+    },
+    {
+      "claim_id": "d7192a0a-a749-4068-958f-dff5418f5e45",
+      "result_id": "ab95b76c-d5ed-4443-9f18-8b1635c79f14"
+    },
+    {
+      "claim_id": "18c924c0-82a5-4865-9664-05182a19f3a1",
+      "result_id": "3cf981c2-f0ee-436c-a321-8d3d2f20b8c8"
+    },
+    {
+      "claim_id": "3d22ce6d-edb8-4da0-ae0c-6ddb61a443e2",
+      "result_id": "3cf981c2-f0ee-436c-a321-8d3d2f20b8c8"
+    },
+    {
+      "claim_id": "ee0425e7-0490-4797-918f-44740d888509",
+      "result_id": "3cf981c2-f0ee-436c-a321-8d3d2f20b8c8"
+    },
+    {
+      "claim_id": "29dcb1ac-4930-429d-9d08-18be4da2a7da",
+      "result_id": "3cf981c2-f0ee-436c-a321-8d3d2f20b8c8"
+    },
+    {
+      "claim_id": "0de31109-6c53-4b24-a781-d1e3976147e6",
+      "result_id": "3cf981c2-f0ee-436c-a321-8d3d2f20b8c8"
+    },
+    {
+      "claim_id": "f3c59b15-ed9a-427e-bb40-3195f17965e7",
+      "result_id": "3cf981c2-f0ee-436c-a321-8d3d2f20b8c8"
+    },
+    {
+      "claim_id": "7e6f8164-b54f-4890-a6d0-64e0299c4df1",
+      "result_id": "3cf981c2-f0ee-436c-a321-8d3d2f20b8c8"
+    },
+    {
+      "claim_id": "2da1d866-e362-4293-b5a2-83435312a79f",
+      "result_id": "abc4e37d-afe1-4382-9e07-18dc14229976"
+    },
+    {
+      "claim_id": "ce7155b4-bab5-419b-8ebd-5ab26cb80107",
+      "result_id": "abc4e37d-afe1-4382-9e07-18dc14229976"
+    },
+    {
+      "claim_id": "4ca759eb-ed7d-44dd-a578-1bc98450b9a0",
+      "result_id": "b46f1590-fe9a-4af0-adc5-bb3bd0eb1ef1"
+    },
+    {
+      "claim_id": "873bedfc-b6b9-4fc7-a18f-8177fad4306e",
+      "result_id": "b46f1590-fe9a-4af0-adc5-bb3bd0eb1ef1"
+    },
+    {
+      "claim_id": "658cbb68-4583-4551-b056-4f2525a6b682",
+      "result_id": "b46f1590-fe9a-4af0-adc5-bb3bd0eb1ef1"
+    },
+    {
+      "claim_id": "a56fda44-065e-4766-b19b-9da8b9ea09a4",
+      "result_id": "b46f1590-fe9a-4af0-adc5-bb3bd0eb1ef1"
+    },
+    {
+      "claim_id": "51103903-7cbd-497d-94c5-e9629a3fa46f",
+      "result_id": "b46f1590-fe9a-4af0-adc5-bb3bd0eb1ef1"
+    },
+    {
+      "claim_id": "3f07a98b-60a2-423a-b92e-58be9e8ba20a",
+      "result_id": "4758bc74-d02a-43f1-ad38-1f076d843863"
+    },
+    {
+      "claim_id": "c70b0cf2-26b5-452b-865c-2712b4963bb1",
+      "result_id": "4758bc74-d02a-43f1-ad38-1f076d843863"
+    },
+    {
+      "claim_id": "03980e4d-84ac-4c05-be0f-36e846eeac3c",
+      "result_id": "4758bc74-d02a-43f1-ad38-1f076d843863"
+    },
+    {
+      "claim_id": "da5bac42-f33b-4341-9cdd-fbe7f21c5c41",
+      "result_id": "4758bc74-d02a-43f1-ad38-1f076d843863"
+    },
+    {
+      "claim_id": "056d34ae-77d0-4744-9d18-92a614fee8c4",
+      "result_id": "77fc743c-3711-4a26-a82b-fa79591417c1"
+    },
+    {
+      "claim_id": "6962554b-7bd3-4a52-b4ee-93699d439817",
+      "result_id": "77fc743c-3711-4a26-a82b-fa79591417c1"
+    },
+    {
+      "claim_id": "da05425d-24fc-4776-93ba-633a4e62e08a",
+      "result_id": "77fc743c-3711-4a26-a82b-fa79591417c1"
+    },
+    {
+      "claim_id": "1cfd1bac-4bb6-4adb-938d-0ebf0ad901ae",
+      "result_id": "77fc743c-3711-4a26-a82b-fa79591417c1"
+    },
+    {
+      "claim_id": "f1741fd6-8b05-4b0c-b690-3fa66579be75",
+      "result_id": "5df2bc10-a19c-47ee-a362-d1f5f6825b23"
+    },
+    {
+      "claim_id": "8c72c823-6f0b-4bc1-9bcd-5db6b395cca2",
+      "result_id": "5df2bc10-a19c-47ee-a362-d1f5f6825b23"
+    },
+    {
+      "claim_id": "8b008864-1d4c-45b8-8933-aa4980d7cd97",
+      "result_id": "5df2bc10-a19c-47ee-a362-d1f5f6825b23"
+    },
+    {
+      "claim_id": "10a4a389-7cfd-4ae8-a1b6-1784d45330b3",
+      "result_id": "5df2bc10-a19c-47ee-a362-d1f5f6825b23"
+    },
+    {
+      "claim_id": "cfe43fdf-9462-42c7-bebc-6181e7a1400e",
+      "result_id": "f54be63d-eb41-4a1d-8185-7fc5e8cd4288"
+    },
+    {
+      "claim_id": "a80f8ee6-42f3-4253-bff1-897d4868fed3",
+      "result_id": "f54be63d-eb41-4a1d-8185-7fc5e8cd4288"
+    },
+    {
+      "claim_id": "ddff9ca0-8979-4749-b2fb-7093f1a1267a",
+      "result_id": "f54be63d-eb41-4a1d-8185-7fc5e8cd4288"
+    },
+    {
+      "claim_id": "d768a4bd-a25f-40e2-b55d-5786efbd5776",
+      "result_id": "f54be63d-eb41-4a1d-8185-7fc5e8cd4288"
+    },
+    {
+      "claim_id": "c8c38fda-bed1-4f43-800c-2c361879bcdd",
+      "result_id": "f54be63d-eb41-4a1d-8185-7fc5e8cd4288"
+    },
+    {
+      "claim_id": "7801308a-58e5-475f-93f2-53e1b43e7219",
+      "result_id": "f54be63d-eb41-4a1d-8185-7fc5e8cd4288"
+    },
+    {
+      "claim_id": "4725f12a-3577-4edc-9ca9-17e2e3151545",
+      "result_id": "f54be63d-eb41-4a1d-8185-7fc5e8cd4288"
+    },
+    {
+      "claim_id": "59dd0bac-8db5-4cba-95f7-e95b1c99cd30",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "9430ee98-655f-40af-bdf5-57339b89aeec",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "efc9b53b-755e-47ae-8622-d73c4cb4bbab",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "38099ed7-66e9-4203-b850-d863ae734835",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "31b2b293-b7d4-4687-b781-2d5e9fa73944",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "27369a03-a358-43b1-9114-42c95dfe3772",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "8f046ddc-40ef-4f95-be3a-4fb9f5ca02f1",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "dfd0f241-bcd6-416a-b4db-6c5076a607c1",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "3e859e30-3dc7-4ec8-aea5-e91696fce906",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "6ad3b64c-5752-4d30-a05f-332a2bd60176",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "8c77846d-4b16-4673-91c0-57727521ff31",
+      "result_id": "80d5a28d-15bb-4a02-ace5-9862e66552fd"
+    },
+    {
+      "claim_id": "6baf98ff-9873-482b-af93-1f5be0b77414",
+      "result_id": "b3a0aa3a-183c-4dcb-b7e4-b031d004ecd7"
+    },
+    {
+      "claim_id": "13b32cf7-f8b9-45e4-a99d-b4ab0f91d3da",
+      "result_id": "691e744c-328f-4855-8dda-4d654ef56ea1"
+    },
+    {
+      "claim_id": "b3596d40-d454-4bd1-a493-83ad45a15ccf",
+      "result_id": "691e744c-328f-4855-8dda-4d654ef56ea1"
+    }
+  ],
+  "comparisons": []
+}

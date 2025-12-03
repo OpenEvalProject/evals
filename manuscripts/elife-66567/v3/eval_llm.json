@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes the clinical importance of \u03b2-lactam antibiotics and \u03b2-lactamase-mediated resistance, noting that \u03b2-lactams constitute >65% of injectable antibiotics in the US, that AMR could cause 10 million deaths annually by 2050, and that class A \u03b2-lactamases are the most widely distributed resistance mechanism in Gram-negative bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are all supported by appropriate citations to established literature (WHO projections, Bush & Bradford 2016, Tooke et al. 2019, Palzkill 2013-2018, Ambler 1980). These are standard background claims establishing context and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The hydrolytic mechanism of class A \u03b2-lactamases proceeds through reversible substrate binding, nucleophilic attack by Ser70 forming an acyl-enzyme intermediate, and water-mediated hydrolysis regenerating the active enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 describe the established catalytic mechanism supported by multiple citations (Chudyk et al. 2014, Hermann et al. 2003-2006, Fisher & Mobashery 2009, Pan et al. 2017) and illustrated in Figure 1\u2014figure supplement 1. This is well-established prior work appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "TEM-1 and KPC-2 represent clinically important class A \u03b2-lactamases with distinct substrate profiles: TEM-1 has narrow spectrum activity against penicillins and early cephalosporins but variants have evolved extended-spectrum activity, while KPC-2 exhibits broad substrate specificity including carbapenems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are supported by appropriate citations (Brown et al. 2009, Palzkill 2018, Queenan et al. 2004, Yigit et al. 2003) establishing the clinical relevance and substrate profiles of the two enzymes studied. This provides appropriate justification for enzyme selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Class A \u03b2-lactamases share conserved structural architecture and are largely rigid (S2 = 0.81-0.94 for TEM-1), but active site loops including the \u03a9-loop, hinge region, and \u03b13-turn-\u03b14 helix play important roles in catalysis and may be influenced by distal loops through coupled motions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 establish the structural context supported by appropriate citations (Philippon et al. 2016, Gobeil et al. 2019, Liao et al. 2018, Banerjee et al. 1998, Tooke et al. 2021). The NMR-derived order parameters and structural conservation are well-documented in prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study employed crystal structures of TEM-1 (PDB: 1PZP, 1.45 \u00c5) with allosteric ligand FTA bound ~16 \u00c5 from Ser70 between \u03b111-\u03b112 helices, and KPC-2 (PDB: 6D18, 1.35 \u00c5) with GTV bound at three sites including an allosteric site ~16 \u00c5 from Ser70 between \u03b12-\u03b17 helices. Twenty replicate 250 ns simulations (5 \u03bcs total) were performed for each system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 describe the methodological setup with appropriate PDB references and clear simulation parameters. The choice of high-resolution crystal structures with bound allosteric ligands is well-justified. The 20 \u00d7 250 ns protocol provides reasonable sampling (5 \u03bcs total per system).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Equilibrium simulations show that both TEM-1 and KPC-2 are structurally stable with average RMSD of 0.10-0.12 nm, with 80% of C\u03b1 atoms superimposable to <0.074 nm (TEM-1) and <0.066 nm (KPC-2). This rigidity is consistent with prior experimental findings and KPC-2's greater thermal stability compared to TEM-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by RMSD data (Figure 2\u2014figure supplement 2, 6) showing convergence after 50 ns and low overall RMSD values. The fractional RMSD analysis appropriately separates rigid core from flexible regions. Consistency with prior NMR and thermal stability data (Gobeil et al. 2019, Mehta et al. 2015) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Ligand binding to allosteric sites induces enhanced fluctuations in specific loops: in TEM-1 IBEQ, increased RMSF is observed in \u03b17-\u03b18, \u03b19-\u03b110, and hinge/\u03b111 regions, with \u03b112 acting as a 'lid' closing over the empty allosteric site in ApoEQ. In KPC-2 IBEQ, enhanced fluctuations occur in \u03b17-\u03b18, hinge/\u03b111, and \u03b27-\u03b28 loops. The allosteric sites differ structurally: TEM-1's is deep and hydrophobic while KPC-2's is shallow and solvent-exposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by RMSF analysis (Figure 2) with statistical significance testing (Student's t-test, p-values shown). The ligand stability is documented (Figure 3\u2014figure supplement 2). However, the magnitude of RMSF differences is relatively small and the biological significance of these fluctuation changes is not quantitatively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Positional C\u03b1 deviations between ApoEQ and IBEQ states reveal ligand-induced structural changes in loops connecting secondary structure elements. In TEM-1, major deviations occur in the hinge/\u03b111/\u03b112 region, with the hinge region showing the largest changes. In KPC-2, the most important deviation is in the \u03b14-\u03b25 loop (residues 114-116), which forms the basal pivot of the \u03b13-turn-\u03b14 helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by C\u03b1 deviation analysis (Figure 3) averaged over all trajectories with standard deviations shown. The identification of specific loops is consistent with RMSF data. The connection to hinge region motions is supported by citation to Meneksedag et al. 2013.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The conserved aromatic residue at position 105 (Tyr105 in TEM-1, Trp105 in KPC-2) plays a crucial role in substrate recognition through stacking interactions and conformational flexibility ('flipped-in'/'flipped-out'). Perturbations affecting the \u03b13-turn-\u03b14 helix conformation explain loss of \u03b2-lactam resistance in KPC variants at positions 102 or 108.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by appropriate citations to mutagenesis studies (Papp-Wallace et al. 2010a,b, Doucet et al. 2004) and prior MD work (Galdadas et al. 2018) including MIC experiments. The mechanistic link between loop deviations and position 105 is logical given the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Nonequilibrium simulations using the Kubo-Onsager approach were performed: 800 short (5 ns) simulations per system (4 \u03bcs total) initiated from equilibrated IBEQ trajectories at 5 ns intervals starting at 50 ns, with instantaneous ligand removal to perturb the system. This approach has been successfully applied to study interdomain communication in receptors and ABC transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe the nonequilibrium methodology with appropriate citations (Ciccotti & Ferrario 2013-2016, Abreu et al. 2020, Oliveira et al. 2005-2019). The protocol is clearly described with 800 replicates providing statistical power. However, the authors acknowledge (C98) this is the first application to enzymes, so validation is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In TEM-1, nonequilibrium simulations reveal signal propagation from the allosteric site (between \u03b111-\u03b112) through the hinge region (with low NMR order parameters indicating high mobility) to the \u03b21-\u03b22 loop within 50 ps. The signal then bifurcates toward the \u03a9-loop via \u03b17-\u03b18 or toward the \u03b13-\u03b14 pivot via \u03b12-\u03b24, with loops ~33 \u00c5 from the allosteric site responding rapidly. A conserved Trp229-Pro226-Pro251 \u03c0/aliphatic stacked arrangement is disrupted by perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 describe signal propagation pathways supported by C\u03b1 deviation analysis at multiple time points (Figure 4) averaged over 800 simulations with low standard errors demonstrating statistical significance. The structural features (Trp-Pro stacking) are supported by citations (Ball et al. 2005, Freund et al. 1999). The 33 \u00c5 distance is explicitly stated and the rapid response is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In KPC-2, the allosteric pocket (between \u03b12-\u03b17, ~27 \u00c5 from \u03b13 helix) is shallower than TEM-1's. Perturbation results in enhanced \u03b12-\u03b24 loop mobility leading to the \u03b13 helix basal pivot. Despite different origins, both TEM-1 and KPC-2 signals converge on common endpoints: the \u03b13-turn-\u03b14 helix pivot and the \u03a9-loop, which plays a critical role in catalysis by affecting Glu166 and Asn170 conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by nonequilibrium simulation data (Figure 4) with appropriate statistical analysis. The convergence on common endpoints despite different starting points is a key finding. The role of the \u03a9-loop is supported by multiple citations (Chudyk et al. 2014, Pan et al. 2017, Brown et al. 2009, Fritz et al. 2018, Banerjee et al. 1998).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Dynamic cross-correlation maps (DCCMs) reveal that ligand binding increases dynamic communication in TEM-1, with further increases in nonequilibrium simulations. In TEM-1 ApoEQ, \u03b111 shows high negative correlation with \u03b112 (lid motion). KPC-2 shows more correlated regions than TEM-1 in ApoEQ, but nonequilibrium simulations show reduced correlations, suggesting faster dynamical response. This faster response is attributed to KPC-2's more solvent-exposed allosteric site surrounded by dynamic surface loops, consistent with experimental observations of different timescales in different \u03b2-lactamases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C78 present DCCM analysis (Figure 5) showing correlation patterns. However, the interpretation is complex: TEM-1 shows increased correlations in nonequilibrium while KPC-2 shows decreased correlations. The explanation for KPC-2 (C76-C77) is plausible but speculative (\"plausibly explained\"). Individual trajectory analysis (Figure 5\u2014figure supplement 2) shows heterogeneity. The biological significance of correlation changes and the connection to timescales needs more rigorous quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mapping of clinical variants onto the identified allosteric communication pathways shows that 45/90 (50%) of TEM-1 variants and 15/25 (60%) of KPC-2 variants map onto the pathways. Notable TEM-1 variants include Gly92, His153, and Ala224, all associated with ESBL/inhibitor-resistant phenotypes. This suggests that 50% or more of clinically important variants may differ in allosteric behavior, indicating this is a fundamentally important property determining catalytic activity spectrum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C81 present quantitative mapping data (Figure 6) showing substantial overlap between clinical variants and communication pathways. However, C82 is explicitly stated as a hypothesis (\"If our hypothesis is correct\"). The causal relationship is not established\u2014variants could map to pathways for other reasons (structural stability, expression, etc.). The claim that allosteric behavior is \"fundamentally important\" requires experimental validation of allosteric differences in these variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The combined equilibrium and nonequilibrium MD simulations reveal that class A \u03b2-lactamases are rigid enzymes without large-scale conformational changes, but ligand-induced structural changes occur in loops surrounding active sites (hinge region, \u03a9-loop, \u03b13-turn-\u03b14 helix) positioned up to ~33 \u00c5 from allosteric sites. Nonequilibrium simulations identify initial stages of dynamic rearrangement and signal propagation routes with statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 synthesize the main findings supported by extensive simulation data (10 \u03bcs equilibrium + 8 \u03bcs nonequilibrium). The rigidity is documented by RMSD (C32-C36), loop changes by RMSF and C\u03b1 deviations (C37-C48), and signal propagation by nonequilibrium analysis (C60-C67). Statistical significance is demonstrated through averaging over many replicates with low standard errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Specific signal propagation pathways are identified: in TEM-1, signals proceed from the \u03b111-\u03b112 allosteric site via \u03b21-\u03b22 to \u03b19-\u03b110, then bifurcate toward the \u03a9-loop (via \u03b17-\u03b18) or \u03b13-\u03b14 pivot (via \u03b12-\u03b24). In KPC-2, signals from the \u03b12-\u03b17 allosteric site proceed via \u03b12-\u03b24 to the \u03b13-turn-\u03b14 pivot, and to the \u03a9-loop via \u03b17-\u03b18. Despite different origins, both converge on the \u03a9-loop and \u03b13-turn-\u03b14 helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 describe the detailed pathways supported by time-resolved C\u03b1 deviation analysis (Figure 4) with statistical validation. The convergence on common endpoints despite different starting points is a robust finding. The pathways are visualized clearly and the structural logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The results demonstrate communication between allosteric sites and active sites that could be exploited for inhibitor development. Given the conserved structural architecture of class A \u03b2-lactamases and the importance of hinge region, \u03a9-loop, and \u03b13-turn-\u03b14 helix (supported by mutational studies and clinical variants), perturbations around these sites may constitute a general mechanism of allosteric signal relay via cooperative loop dynamics. Exploitation of such signaling networks may constitute a novel inhibitor development strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C97 present the translational implications. While the communication is demonstrated (C93, supported), the generalizability (C94-C96) relies on structural conservation and mutational data but lacks direct experimental validation in other class A enzymes. The inhibitor development potential (C97) is speculative\u2014no inhibitor design or testing is presented. These are reasonable hypotheses requiring future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "This represents the first application of nonequilibrium MD to study enzymes. The study performed 10 \u03bcs of equilibrium MD and 1600 short nonequilibrium simulations (8 \u03bcs total) on \u03b2-lactamases with ultrafast turnover rates (~10^7-10^8 M^-1s^-1). The nonequilibrium simulations demonstrate direct communication between allosteric and active sites. The combination of equilibrium and nonequilibrium MD offers a powerful tool to identify allosteric communication networks in enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 summarize the methodological contribution. The novelty claim (C98) is stated cautiously (\"to the best of our knowledge\"). The simulation scale (C100-C101) is substantial and well-documented. The demonstration of communication (C102) is supported by the data. The methodological conclusion (C103) is reasonable given the results, though broader validation in other enzyme systems would strengthen it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Signal propagation occurs through cooperative coupling of loop dynamics over distances of 30 \u00c5 or more. Notably, 50% or more of clinically relevant amino acid substitutions map onto the identified pathways, suggesting that clinically important variation may affect or be driven by differences in allosteric behavior, providing a mechanism linking amino acid substitutions to spectrum of activity, catalytic turnover, and allosteric behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104 and C107 are supported by the simulation data showing loop coupling and long-range communication. Claims C105-C106 present the clinical mapping data but the causal interpretation is speculative. The suggestion that variation \"may affect, or be driven by\" allosteric differences (C106) is appropriately cautious but requires experimental validation. The mechanism is plausible but not proven.",
+    "result_type": "MAJOR"
+  }
+]

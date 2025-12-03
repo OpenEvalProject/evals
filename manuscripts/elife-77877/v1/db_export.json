@@ -1,0 +1,1834 @@
+{
+  "submission": {
+    "id": "b03bebf6-3a02-4d04-9f8d-04b42b54b81d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:29:31.922337Z",
+    "updated_at": "2025-12-03T15:29:31.922337Z"
+  },
+  "content": [
+    {
+      "id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "submission_id": "b03bebf6-3a02-4d04-9f8d-04b42b54b81d",
+      "content_type": "manuscript",
+      "content_text": "# Structural model of microtubule dynamics inhibition by kinesin-4 from the crystal structure of KLP-12 \u2013tubulin complex\n\n## Authors\n\n- Shinya Taguchi<sup>1</sup> ([ORCID: 0000-0002-9868-0651](https://orcid.org/0000-0002-9868-0651))\n- Juri Nakano<sup>3</sup>\n- Tsuyoshi Imasaki<sup>1</sup> ([ORCID: 0000-0001-5462-1820](https://orcid.org/0000-0001-5462-1820))\n- Tomoki Kita<sup>4</sup>\n- Yumiko Saijo-Hamano<sup>1</sup>\n- Naoki Sakai<sup>5</sup>\n- Hideki Shigematsu<sup>5</sup> ([ORCID: 0000-0003-3951-8651](https://orcid.org/0000-0003-3951-8651))\n- Hiromichi Okuma<sup>1</sup>\n- Takahiro Shimizu<sup>1</sup>\n- Eriko Nitta<sup>1</sup>\n- Satoshi Kikkawa<sup>1</sup>\n- Satoshi Mizobuchi<sup>2</sup>\n- Shinsuke Niwa<sup>3</sup> ([ORCID: 0000-0002-8367-9228](https://orcid.org/0000-0002-8367-9228)) \u2020\n- Ryo Nitta<sup>1</sup> ([ORCID: 0000-0002-6537-9272](https://orcid.org/0000-0002-6537-9272)) \u2020\n\n### Affiliations\n\n1. Division of Structural Medicine and Anatomy, Department of Physiology and Cell Biology, Kobe University Graduate School of Medicine Kobe Japan ([ROR:03tgsfw79](https://ror.org/03tgsfw79))\n2. Division of Anesthesiology, Kobe University Graduate School of Medicine Kobe Japan ([ROR:03tgsfw79](https://ror.org/03tgsfw79))\n3. Graduate School of Life Sciences, Tohoku University Sendai Japan ([ROR:01dq60k83](https://ror.org/01dq60k83))\n4. Department of Applied Physics, Graduate School of Engineering, Tohoku University Sendai Japan ([ROR:01dq60k83](https://ror.org/01dq60k83))\n5. RIKEN SPring-8 Center Sayo Japan\n6. Frontier Research Institute for Interdisciplinary Sciences (FRIS), Tohoku University Sendai Japan ([ROR:00gnxy932](https://ror.org/00gnxy932))\n\n\u2020 Corresponding author\n\n## Abstract\n\nKinesin superfamily proteins are microtubule-based molecular motors driven by the energy of ATP hydrolysis. Among them, the kinesin-4 family is a unique motor that inhibits microtubule dynamics. Although mutations of kinesin-4 cause several diseases, its molecular mechanism is unclear because of the difficulty of visualizing the high-resolution structure of kinesin-4 working at the microtubule plus-end. Here, we report that KLP-12, a C. elegans kinesin-4 ortholog of KIF21A and KIF21B, is essential for proper length control of C. elegans axons, and its motor domain represses microtubule polymerization in vitro. The crystal structure of the KLP-12 motor domain complexed with tubulin, which represents the high-resolution structural snapshot of the inhibition state of microtubule-end dynamics, revealed the bending effect of KLP-12 for tubulin. Comparison with the KIF5B-tubulin and KIF2C-tubulin complexes, which represent the elongation and shrinking forms of microtubule ends, respectively, showed the curvature of tubulin introduced by KLP-12 is in between them. Taken together, KLP-12 controls the proper length of axons by modulating the curvature of the microtubule ends to inhibit the microtubule dynamics.\n\n## Introduction\n\nKinesin superfamily proteins (KIFs) are microtubule-based molecular motors driven by the energy of ATP hydrolysis (Hirokawa et al., 2009a). Most KIFs move along microtubules to transport various cargos, including membranous organelles, protein complexes, and mRNAs (Guedes-Dias and Holzbaur, 2019; Hirokawa et al., 2009b). In addition to transporting cargos, some kinesins possess the ability to regulate microtubule dynamics, such as elongation (polymerization), catastrophe or shrinkage (depolymerization), in diverse ways. Kinesin-1, the founding member of the KIFs, changes the conformation of unstable GDP microtubules into a conformation resembling the GTP microtubules (Muto et al., 2005; Shima et al., 2018). Conversely, kinesin-13 destabilizes both the plus and minus ends of microtubules to induce catastrophe or depolymerization (Desai et al., 1999; Ogawa et al., 2004). Kinesin-8 moves processively toward the microtubule plus-end, where it depolymerizes microtubule (Gupta et al., 2006; Niwa et al., 2012; Varga et al., 2006; Wang et al., 2016).\n\nKinesin-4, another family of kinesins, is known to inhibit microtubule dynamics and is classified into three subfamilies: the KIF4 subfamily, the KIF7 subfamily, and the KIF21 subfamily (Yue et al., 2018). The KIF21 subfamily has attracted considerable attention because its genetic alterations are linked with several diseases. Point mutations of KIF21A cause congenital fibrosis of the extraocular muscle type 1 (CFEOM1) (Yamada et al., 2003). Polymorphisms in the KIF21B gene are associated with several inflammatory diseases, such as multiple sclerosis or Crohn\u2019s disease (Barrett et al., 2008; Goris et al., 2010). Increased expression of KIF21B is also linked to the progression of neurodegenerative disorder (Kreft et al., 2014). Kif21b knockout mice were reported to exhibit behavioral changes involving impaired learning and memory (Muhia et al., 2016).\n\nThe molecular mechanisms of how kinesin-4 affects microtubule dynamics have been studied for more than a dozen years, demonstrating the main contribution of their motor domains to microtubule dynamics inhibition. Xklp1/KIF4, a fast processive motor, was first reported to reduce both microtubule growth and the catastrophe rate (Bieling et al., 2010; Bringmann et al., 2004). Its motor domain is able to bind not only to the microtubule lattices for microtubule-based motility but also to the curved tubulin dimers for inhibition of microtubule dynamics. Nonmotile KIF7 was reported to reduce the microtubule growth rate but enhance catastrophe to organize the tips of ciliary microtubules (He et al., 2014; Yue et al., 2018). The processive motor KIF21A/B reduces microtubule growth and catastrophes similar to Xklp1/KIF4 (van der Vaart et al., 2013; van Riel et al., 2017). These studies suggest that the motor domains of kinesin-4 family proteins play a crucial role in reducing the growth rate of microtubules. In other words, minor alterations in kinesin-4 motor domains affect their conserved functions to suppress microtubule dynamics by displaying strikingly distinct motility characteristics (van der Vaart et al., 2013; van Riel et al., 2017).\n\nThe other domains of kinesin-4 are also known to be involved in microtubule dynamics inhibition by regulating or supporting motor domain functions. The coiled-coil region of KIF21A in which CFEOM1-associated mutations are localized operates as an autoinhibitory domain by interaction with the motor domain (Bianchi et al., 2016; Cheng et al., 2014; van der Vaart et al., 2013). The dominant character of CFEOM1 syndrome is thus connected to the increased activity of the mutant KIF21A kinesin caused by the loss of autoinhibition. The WD40 domain of KIF21B holds on to the growing microtubule tip and induces its pausing (van Riel et al., 2017), which is required for the sustained action of the motor domain on the microtubule plus-end to inhibit microtubule dynamics.\n\nWe previously reported the first crystal structure of the KIF4 motor domain (Chang et al., 2013) and showed molecular mechanisms of ATP-induced motion; however, because of the lack of functional and structural information on kinesin-4 on the microtubule plus-end, the mechanism by which kinesin-4 motors inhibit microtubule dynamics is still obscure. Here, we investigated the functional and structural analyses of microtubule dynamics inhibition by kinesin-4 KLP-12, a Caenorhabditis elegans (C. elegans) ortholog of KIF21A and KIF21B (Figure 1A; Figure 1\u2014figure supplement 1). Genetic analyses and in vitro TIRF (Total Internal Reflection Fluorescence microscopy) assays showed that KLP-12 regulates axonal length through inhibiting microtubule dynamics at its plus-end, similar to KIF21A and KIF21B. The crystal structure of KLP-12 complexed with curved \u03b1-, \u03b2- tubulin dimers suggested the structural model of microtubule dynamics inhibition by the kinesin-4 motor domain; kinesin-4 precisely controls the curvature of tubulin dimers at the plus-end, which is larger than that decorated by plus-end stabilizing kinesin-1 and smaller than that decorated by destabilizing kinesin-13. This precise control was achieved by the specific interactions on the microtubule interfaces conserved among kinesin-4 motors.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic presentation of the domain organization of the KIF21 subfamily: C. elegans KLP-12, human KIF21A, and KIF21B consist of a motor domain (MD; magenta), neck linker (blue), coiled-coil domains (CC; black), and WD40 domain (WD40; gray). Phylogenetic tree and sequence alignment of kinesin-4 family are available in Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2, respectively. (B) Schematic presentation of the genomic structure of C. elegans klp-12 and mutant alleles used in this study. tm10890 is a deletion mutant that induces frameshift, whereas tm5176 deletes WD repeats domain. (C) Schematic presentation of the mechanosensory neurons in C. elegans. Areas observed in panels (D) and (F) are shown by magenta boxes. ALM: anterior lateral mechanosensory, AVM: anterior ventral mechanosensory, PLM: posterior lateral mechanosensory, and PVM: posterior ventral mechanosensory neurons. (D and E) The tiling of ALM and PLM neurons. (D) Representative images of ALM and PLM neurons in wild type and klp-12 mutant worms. The axonal tip of PLM neurons does not overlap with the cell body of ALM neurons in wild type, while the axonal tip of PLM neuron overlaps with the ALM cell body in klp-12(tm5176) and klp-12(tm10890) mutant alleles. Bars, 50 \u00b5m. (E) The percentage of ALM and PLM overlap in wild-type, klp-12(tm5176), and klp-12(tm10890) mutant alleles in day 3 adult worms. n=55 in wild type, 60 in klp-12(tm5176), and 58 in klp-12(tm10890) worms. (F and G) Overexpression of KLP-12 suppresses the elongation of mechanosensory axon. (F) The morphology of wild type and klp-12-overexpressed PLM neurites. Bar, 50 \u00b5m. (G) The lengths of PLM neurites are plotted. Each dots show the length of axons in each worm. Bars represent mean \u00b1 standard deviation. n=10 in wild-type and 12 in KLP-12-expressing axons. ****, p<0.0001, Welch\u2019s t test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** This phylogenetic tree was created with reference to Yue et al., 2018. The identities were calculated by SIM (https://web.expasy.org/sim/).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The sequence alignment of kinesin-4 family proteins CeKLP-12, HsKIF21A, HsKIF21B, MmKIF4, MmKIF7, Kinesin-1 family HsKIF5B, and kinesin-13 family HsKIF2C motor domain with the secondary structure of KLP-12(M). Well-conserved residues among Kinesin-4 motors are indicated by coloring. Alignment was generated by Clustal Omega (https://www.ebi.ac.uk/Tools/msa/clustalo/).\n\n## Results\n\n### KLP-12 regulates the length of axons in C. elegans neurons\n\nKLP-12 is predicted a worm orthologue of KIF21A and KIF21B, which regulates axonal length. However, the function of KLP-12 remains to be elusive. Thus, we firstly analyzed the phenotype of klp-12 mutants. We used two independent deletion mutant alleles of klp-12, klp-12(tm10890) and klp-12(tm5176) (Figure 1B). klp-12(tm10890) was considered to be a null allele because the mutation induces deletion of exon 4\u20136, resulting in a frameshift. klp-12(tm5176) had a deletion mutation in exons encoding the tail domain. We observed the development of two mechanosensory neurons, anterior lateral mechanosensory (ALM) and posterior lateral mechanosensory (PLM) neurons (Figure 1C) because the tiling between PLM and ALM neurons are strictly regulated by microtubule regulating factors, such as kinesin-13. Previous studies have shown worm mutants with more stable microtubules have defects in tiling between PLM and ALM (Puri et al., 2021). In wild-type animals, the axonal tip of PLM neurons does not reach the cell body of ALM without overlapping with each other (wild-type in Figure 1D and E; Gallegos and Bargmann, 2004). On the other hand, more than 30% of the PLM axons in C. elegans with klp-12(tm5176) overtook the cell body of ALM (klp-12(tm5176) in Figure 1D and E). klp-12(tm10890) showed a more severe phenotype; more than 50% of neurons overlapped, and thin warped axons were observed (klp-12(tm10890) in Figure 1D and E). We also investigated the effect of overexpression of wild-type KLP-12 in C. elegans neurons. Compared to the wild type, the PLM axon overexpressing KLP-12 became strikingly shorter and thinner (Figure 1F and G). Together with these results, the appropriate activity of KLP-12 is necessary to achieve proper length control of axons, suggesting that the function of KIF21/KLP-12 family proteins (Figure 1A) is evolutionarily conserved.\n\n### KLP-12 is a plus-end directed motor that represses microtubule polymerization\n\nMammalian orthologs of KLP-12, KIF21A, and KIF21B, regulate the axon length by inhibiting the microtubule polymerization (van der Vaart et al., 2013; van Riel et al., 2017). Thus, KLP-12 may also inhibit the microtubule polymerization to restrict the length of axons. To directly visualize the KLP-12 function on the microtubules, we performed the in vitro TIRF assays. Since the neck-coiled-coil sequence of KLP-12 is not sufficient to form a stable dimer to display the processive motility in vitro, we intended to introduce the leucine zipper (LZ) of GCN4 and GFP right after KLP-12 (1-393) for dimerization (Tomishige et al., 2002), which is a similar technique used in the previous kinesin-4 family motor study (Yue et al., 2018; Figure 2A: KLP-12\u2013LZ\u2013GFP). Single KLP-12\u2013LZ\u2013GFP motors successfully showed plus-end directed processive movements on GDP microtubules stabilized by paclitaxel (taxol-stabilized microtubules) with an average velocity of 0.81\u00b10.32 \u00b5m/s and an average run length of 1.30\u00b10.89 \u00b5m, which is a similar speed as the processive fast motor kinesin-1 or KIF4 (Figure 2B\u2013D; Shima et al., 2018; Yue et al., 2018). The average velocity and run length of KLP-12\u2013LZ\u2013GFP motors were also similar on dynamic GTP microtubules (Figure 2C\u2013D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic presentation of the KLP-12 constructs. KLP-12(FL): full-length KLP-12, KLP-12\u2013LZ\u2013GFP: KLP-12 (1-393) with GFP connected with a leucine zipper, KLP-12(M): KLP-12 motor domain (1-365), KLP-12\u2013DARPin: KLP-12(M) with DARPin connected with a flexible linker. (B) A representative kymograph showing the motility of KLP-12\u2013LZ\u2013GFP on taxol-stabilized microtubules. Horizontal and vertical bars show 10 \u03bcm and 10 s, respectively. (C) Histogram showing the velocity of KLP-12\u2013LZ\u2013GFP on taxol-stabilized (green) or dynamic (magenta) microtubules. 0.81\u00b10.32 \u00b5m/s (n=407) and 0.82\u00b10.31 \u00b5m/s (n=215) on taxol-stabilized and dynamic microtubules, respectively. Mean \u00b1 standard deviation. No statistically significant differences were detected by Student\u2019s t-test. (D) Histogram showing the run length of KLP-12\u2013LZ\u2013GFP on taxol-stabilized (green) or dynamic (magenta) microtubules. n=407 molecules. 1.30\u00b10.89 \u00b5m (n=407) and 1.11\u00b10.57 \u00b5m (n=215) on taxol-stabilized and dynamic microtubules, respectively. Mean \u00b1 standard deviation. No statistically significant differences were detected by Student\u2019s t-test. (E) Representative kymographs showing the microtubule dynamics and the motility of KLP-12\u2013LZ\u2013GFP. 10 \u03bcM of fluorescently labeled microtubules were polymerized from GMPCPP stabilized microtubule seeds fixed on the cover glass in the presence of 0, 60, or 600 nM KLP-12\u2013LZ\u2013GFP at 30 \u00b0C. Horizontal and vertical bars show 5 \u03bcm and 60 s, respectively. (F\u2013I) The effect of KLP-12\u2013LZ\u2013GFP on microtubule dynamics. 10 \u03bcM of fluorescently labeled microtubules were observed in the presence of indicated concentrations of KLP-12\u2013LZ\u2013GFP at 30 \u00b0C. (F) Microtubule growth rate in vitro in the presence of KLP-12\u2013LZ\u2013GFP. Green bars show mean \u00b1 standard deviation. **, Adjusted p=0.0022, ***, Adjusted p=0.0001, ****, Adjusted p<0.0001, compared with control (0 nM). One-way ANOVA followed by Dunnett\u2019s multiple comparisons test. n=52 microtubules. (G) Frequency of microtubule catastrophe events. The number of microtubule catastrophe in vitro was normalized by minute. mean \u00b1 standard deviation. ****, Adjusted p<0.0001, compared with control (0 nM). One-way ANOVA followed by Dunnett\u2019s multiple comparisons test. n=101 microtubules. (H) Microtubule depolymerization rate in vitro in the presence of KLP-12\u2013LZ\u2013GFP. Green bars show mean \u00b1 standard deviation. No statistically significant differences were detected by One-Way ANOVA. n=30 microtubules. (I) Frequency of microtubule rescue events. The number of microtubule rescue events in vitro was normalized by minute. ****, Adjusted p<0.0001, compared with control (0 nM). One-way ANOVA followed by Dunnett\u2019s multiple comparisons test. n=99 microtubules. The effect of microtubule growth rate by kinesin-4 family motors is available in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The growth rates of the microtubules were normalized by those of microtubules without kinesin, which was set to the value of 1.0. The vertical axis indicates the ratio of the microtubule growth, and the horizontal axis indicates the kinesin concentration. The current study measures the values of the KLP-12, and the other kinesins were plotted based on the previous studies (Bieling et al., 2010; van der Vaart et al., 2013; Yue et al., 2018). Note that Bieling et al performed the experiment at 28\u00b0C \u00b1 1\u00b0C (Xklp1), van der Vaart et al (KIF21A), Yue et al (KIF7 and KIF27), and our study was performed at 37 \u00b0C.\n\nNext, we observed the microtubule dynamics and the localization of KLP-12\u2013LZ\u2013GFP at a series of different concentrations (Figure 2E). KLP-12\u2013LZ\u2013GFP did not accumulate the plus-end tips of microtubules but detached from them upon arrival of the tips, consistent with the previous results of KIF21A and KIF21B (van der Vaart et al., 2013; van Riel et al., 2017). KLP-12\u2013LZ\u2013GFP represented a concentration dependent decrease of the microtubule growth rate at its plus-end. In the absence of the KLP-12\u2013LZ\u2013GFP, the microtubule grew at the rate of 1.19\u00b10.35 \u00b5m/min (Figure 2F). Increasing amounts of KLP-12\u2013LZ\u2013GFP inhibited the microtubule growth rate, with mean rates of 1.00 \u00b5m/min at concentrations of 30 nM and 0.77 \u00b5m/min at 300 nM, respectively (Figure 2F). On the other hand, microtubule depolymerization rate was not affected by KLP-12\u2013LZ\u2013GFP (Figure 2H). The frequencies of microtubule catastrophe events and rescue events were slightly reduced in the presence of KLP-12\u2013LZ\u2013GFP (Figure 2G1). It rises two possibilities; one is that KLP-12 reduces microtubule growth with a longer period of stabilization, and another is the indirect effect induced by reduced MT catastrophe events.\n\nWe further compared the inhibitory effect of KLP-12 with the previously reported dynamics with other kinesin-4 family motors, illustrating that the growth inhibition rate of KLP-12\u2013LZ\u2013GFP was very similar to that of KIF21A (Figure 2\u2014figure supplement 1), a closely related family with 59.9% sequence identity to KLP-12 (Figure 1\u2014figure supplement 1). These results showed that KLP-12\u2013LZ\u2013GFP possesses a suppression effect on the microtubule growth rates similar to the other members of the kinesin-4 family proteins, especially to KIF21A/B.\n\n### The motor domain of KLP-12 binds to both the microtubule lattice and ends to catalyze ATP\n\nKinesin-4 moves along the microtubule until it reaches the plus-end, at which it inhibits the attachment and release of tubulin-dimers to/from the microtubule end. To achieve these dual functions, kinesin-4 must bind to the microtubule lattice and the microtubule end to catalyze ATP. We thus next focused on the monomeric motor domain of the KLP-12 (KLP-12(M)) (Figure 2A), investigating its ATPase activity in the presence of microtubules or tubulin heterodimers. We used GTP- and GDP- tubulin heterodimers to investigate the biochemical properties of KLP-12 at the plus-end of microtubules since the plus-end of microtubules is curved due to the lack of lateral interactions between protofilaments, as reported previously (Hunter et al., 2003).\n\nSteady-state ATPase kinetics of KLP-12(M) were examined in the presence of taxol-stabilized microtubules (=microtubule lattice), GTP-tubulins (mimic of the growing microtubule end), and GDP-tubulins (mimic of the shrinking microtubule end) (Figure 3A). The basal ATPase activity of KLP-12(M) in the absence of tubulins or microtubules was 0.0039\u00b10.00095 s\u20131, comparable with the other kinesin motors (Hunter et al., 2003; Wang et al., 2016). The ATPase activity of KLP-12(M) was stimulated ~33 times by microtubules to reach a maximum rate of 0.13 s\u20131. The stimulation by free GTP- and GDP- tubulin dimers reached more than ~69 and~100 times to achieve a maximum rate of 0.27 and 0.39 s\u20131, respectively. KM,microtubules, KM,GTP-tubulin, and KM,GDP-tubulin were 2.6 \u03bcM, 5.6 \u03bcM, and 22.2 \u03bcM, respectively (Figure 3A). These results indicate that KLP-12(M) binds similarly to the microtubules and the GTP-tubulin-dimers but shows considerably weaker binding to the GDP-tubulin heterodimers than to the microtubules or the GTP-tubulin heterodimers. We should note that the microtubule-activated ATPase rate was significantly lower than expected from the KLP-12\u2013LZ\u2013GFP velocity (Figure 2B). We thus examined the microtubule- and tubulin- activated ATPase rates of KLP-12\u2013LZ\u2013GFP, resulting in similar rates with those of KLP12(M), albeit ~ten times higher affinity to the tubulin or microtubule (Figure 3\u2014figure supplement 1). We concluded that KLP-12 binds to both the microtubule lattice and the growing microtubule plus-end and activates its ATPase, thus achieving microtubule motility and growing microtubule stabilization. The discrepancy between the ATPase rate and the velocity is discussed in the Discussion section.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig3-v1.jpg)\n\n**Figure 3.:** (A) The steady-state ATPase activity of KLP-12(M) measured with GDP tubulin heterodimers, GTP tubulin heterodimers, and microtubules at 30 \u00b0C. Error bars represent standard deviation. Tubulin or microtubule GTPase effect was canceled by subtracting control without KLP-12(M). (B) Size exclusion chromatography (SEC) of tubulin mixed with KLP-12(M) and DARPin. (C) SDS\u2013PAGE analysis of the SEC peaks of tubulin mixed with KLP-12(M) and DARPin. SDS-PAGE analysis of the SEC peaks of tubulin combined with KLP-12\u2013DARPin is available in Figure 3\u2014figure supplement 2. (D) Crystal structure of the tubulin\u2013KLP-12\u2013DARPin complex. Disordered linkers were drawn as a dotted line. \u03b1-tubulin is colored in light green, \u03b2-tubulin is in light blue, DARPin is in yellow, and KLP-12 is in magenta. See also Video 1 for details. (E) KLP-12 structure viewed from the interface with tubulin. The residues of the important structure are shown in color. \u03b25a-L8-\u03b25b is green, switch I is yellow, switch II is blue, \u03b16 is red, and the neck linker is cyan. (F) Nucleotide binding pocket of KLP-12. The 2Fo-Fc map around AMP-PNP was calculated with coefficient 2Fo\u2212 Fc and contoured at 2.0 \u03c3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The steady-state ATPase activity of KLP-12\u2013LZ\u2013GFP was measured with microtubules or GTP tubulin heterodimers at 30 \u00b0C. Error bars represent standard deviation. KM,microtubules and KM,GTP-tubulin was 0.272 \u03bcM and 0.753 \u03bcM,.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Size exclusion chromatography (SEC) of tubulin mixed with KLP-12\u2013DARPin. (B) SDS-PAGE analysis of the SEC peaks.\n\n![Video 1.](https://cdn.elifesciences.org/articles/77877/elife-77877-video1.mp4.jpg)\n\n### Structure determination of the tubulin\u2013KLP-12\u2013DARPin complex\n\nThe binding ability of the KLP-12(M) to the soluble GTP-tubulin heterodimer was further analyzed by size exclusion chromatography (SEC). To prevent the self-assembly of tubulins, a designed ankyrin repeat protein (DARPin) that binds to the longitudinal interface of \u03b2-tubulin was used (Ahmad et al., 2016). Equimolar tubulin dimers, KLP-12(M) with the ATP analog AMP-PNP (adenylyl-imidodiphosphate), and DARPin were injected and analyzed by SEC representing three peaks (Figure 3B). The first peak consisted of all components, tubulin, KLP-12(M), and DARPin (Figure 3C). The second and third peaks correspond to KLP-12(M) and DARPin, respectively. KLP-12(M) and DARPin shifted to the left side to form a triple complex with tubulin. Thus, KLP-12(M) has a binding ability to a soluble GTP-tubulin heterodimer, consistent with steady-state ATPase assays.\n\nNext, we proceeded to crystallize the KLP-12\u2013GTP-tubulin complex to elucidate the molecular mechanism of microtubule stabilization by kinesin-4. For crystallization, to stabilize complex formation between KLP-12(M) and tubulin, KLP-12(M) was fused to DARPin by a long linker. According to a previous study (Wang et al., 2017), the linker length between the C-terminus of KLP-12(M) and the N-terminus of DARPin was optimized. Four G4S repeats with one G2S (KLP-12\u2013DARPin fusion construct) were used to form the tubulin\u2013KLP-12\u2013DARPin complex (Figure 2A). Finally, we formed a stable 1:1 complex of KLP-12\u2013DARPin and crystallized GTP-tubulin dimers for structure determination (Figure 3\u2014figure supplement 2).\n\nWe solved the crystal structure of the GTP-tubulin\u2013KLP-12\u2013DARPin complex at 2.9 \u00c5 resolution (Figure 3D and E; Table 1). KLP-12 forms an ATP conformation in which switches I and II take the closed conformation to hydrolyze ATP, and the neck linker docks to the motor core. The linker between KLP-12 and DARPin, which follows the neck linker, was not observed because of its intrinsic flexibility. In the nucleotide-binding pocket of KLP-12, the density corresponding to AMP-PNP was found with the Mg2+ ion (Figure 3F). The highly conserved Ser217 of switch I and Gly264 of switch II are coordinated to the \u03b3-phosphate of AMP-PNP. The back door between switch I Arg218 and switch II Glu266 was also closed, representing the pre-hydrolysis state during ATP hydrolysis.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">Tubulin\u2013KLP-12\u2013DARPin</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Beam line</td>\n      <td>SPring-8 BL32XU</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Data collection</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Space group</td>\n      <td>P 21</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Cell dimensions</td>\n      <td>a, b, c (\u00c5)</td>\n      <td>82.33, 80.98, 117.75</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90.00, 93.51, 90.00</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Resolution (\u00c5)</td>\n      <td>50\u20132.88 (3.05\u20132.88) *</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Rmeas (%)</td>\n      <td>35.5 (197.0)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">I / \u03c3I</td>\n      <td>19.28 (3.39)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">CC1/2</td>\n      <td>97.7 (51.3)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Completeness (%)</td>\n      <td>98.2 (98.8)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Redundancy</td>\n      <td>87.1 (88.7)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Refinement</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Resolution (\u00c5)</td>\n      <td>49.25\u20132.88</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">No. reflections</td>\n      <td>33796</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Rwork/Rfree</td>\n      <td>0.211/0.296</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">No. atoms</td>\n      <td>Protein</td>\n      <td>10301</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>93</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">B-factors</td>\n      <td>Protein</td>\n      <td>54.67</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>42.97</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">R.m.s. deviations</td>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.010</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.40</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Values in parentheses are for the highest-resolution shell._\n\n### Structural comparisons among three types of kinesin motors, kinesin-4, kinesin-1, and kinesin-13\n\nTo investigate the structural differences of KLP-12 among kinesin-4 subfamily and kinesin superfamily proteins (KIFs), the crystal structure of KLP-12(M) was compared to the structures of the previously reported kinesin-4 members Mus musculus KIF4 (PDB ID: 3ZFC) (Chang et al., 2013) and KIF7 (PDB ID: 6MLR) (Jiang et al., 2019), as well as the well-studied plus-end motor Homo sapiens kinesin-1 (KIF5B; PDB ID: 1MKJ, 4HNA, 3J8Y) (Sindelar et al., 2002; Gigant et al., 2013; Shang et al., 2014), and the microtubule destabilizer Homo sapiens kinesin-13 (KIF2C; PDB ID: 5MIO) (Wang et al., 2017; Figure 4A). The degree of similarity was estimated by comparing RMSDs of main chain residues of KLP-12 with other motors (Figure 4 and Figure 4\u2014figure supplement 1A). Note that all structures are in the ATP or ATP-like conformation but structures were determined in different conditions; KLP-12, KIF5B (4HNA), and KIF2C are bound to tubulin dimers, KIF4 and KIF5B (1MKJ) are the motor domain only, and KIF7 and KIF5B (3J8Y) are bound to the microtubule.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig4-v1.jpg)\n\n**Figure 4.:** (A) Structural comparison of KLP-12 with the other reported kinesin motor domain structures in various states. (B) Superimposition of KLP-12 and KIF4 (Light green). (C) Superimposition of KLP-12 and KIF7 (Pink). (D) Superimposition of KLP-12 and KIF5B (Green). (E) Superimposition of KLP-12 and KIF2C (Cyan).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Superimposition of KLP-12 and motor only structure of ADP state KIF5B (Dark green). (B) Superimposition of KLP-12 and KIF5B (Yellow) bound to microtubule.\n\nThe structure of the KLP-12 (KIF21 subfamily) is very similar to KIF4 among the kinesin-4 family members (Figure 4B). Almost no structural differences exist in the main chains, including nucleotide-dependent switch regions, except for the passive conformational changes in \u03b11a and \u03b25a-L8-\u03b25b upon tubulin binding, reflecting the conserved mechanisms of microtubule dynamics inhibition among kinesin-4 motors (Bringmann et al., 2004). On the other hand, KIF7 solved in a complex with microtubule by Cryo-EM shows a moderate structural difference from KLP-12 (Figure 4A and C). Switch II (L11-\u03b14-L12-\u03b15-L13) and \u03b16-neck-linker of KIF7 are the most structurally different components from KLP-12 due to the decoupling of switch II conformational change from ATP hydrolysis cycle in KIF7 (Jiang et al., 2019). Except for the switch regions, the structures of KLP-12 and KIF7 are very similar, reflecting that they belong to the same kinesin-4 subfamily.\n\nSame as KLP-12, two other motors, KIF5B (4HNA) and KIF2C (5MIO) have been structurally analyzed in a complex with tubulin-dimer in which the exchangeable sites are occupied by the GTP, the GTP analog GDP-AlF4, and the GDP, respectively (Figure 4A, B, D and E). KIF5B binds preferentially to growing GTP microtubules or stabilizes the GDP microtubule (Muto et al., 2005; Peet et al., 2018; Shima et al., 2018), whereas KIF2C destabilizes microtubules (Ogawa et al., 2004). KLP-12 takes a similar conformation to KIF5B with RMSD value of 1.898 \u00c5. The structure of the main chain residues facing the tubulin dimer is almost similar, suggesting that the side chain differences should produce distinct functions between KLP-12 and KIF5B (Figure 4D). KIF2C, on the other hand, has a very different microtubule-binding interface from KLP-12, including \u03b25a-L8-\u03b25b, switch II, and the class-specific long loop L2 among kinesin-13 (Figure 4E). Thus, the conformational differences at the level of main chains should cause the functional differences between KLP-12 and KIF2C.\n\n### Microtubule binding interface of kinesin-4 KLP-12 at \u03b1-tubulin\n\nWe focused on the interface between \u03b1-tubulin and KLP-12 and compared it with the KIF5B and KIF2C structures by superimposing them using the kinesin motor domain (Figure 5; Figure 5\u2014figure supplement 1). KLP-12 Arg267 interacts with tubulin Glu414/Glu420 in H12 with the hydrophobic support of KLP-12 Val343 in \u03b16 through the hydrophobic stem of \u03b1-tubulin Glu420 of \u03b1-tubulin, albeit Val343 is not conserved well among kinesin-4 (Figure 5A and B). The other interface Lys269 in L11, which is conserved among KIF21 subfamily and KIF4 subfamily but not in KIF7 subfamily, makes a salt-bridge with Glu155 in H4 of \u03b1-tubulin. Thus, the KLP-12 and possibly KIF4 generate the triangle contacts among L11 of KLP-12, H4 of \u03b1-tubulin, and H12 of \u03b1-tubulin. The helix \u03b16 of KLP-12 also supports this interface.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig5-v1.jpg)\n\n**Figure 5.:** (A) KLP-12 Arg267 and Lys269 in loop L11 interact with \u03b1-tubulin Glu414 and Glu420 in helix H12 and Glu155 in helix H4, respectively. See Video 2 for detail. The interfaces of KIF5B and KIF2C at \u03b1-tubulin are available in Figure 4\u2014figure supplement 1. (B) Sequence alignment of the kinesin-4, KIF5B, and KIF2C residues at the interacting area. Interacting residues are marked by squares. (C) Superimposition of C\u03b1 chain trace models of the KLP-12 complex (orange) and KIF5B complex (green) at kinesin. The rotation direction of \u03b1-tubulin between KLP-12 and KIF5B at helices H4, H5, and H12 is illustrated as a red arrow. (D) Superimposition of C\u03b1 chain trace models of the KLP-12 complex (orange) and KIF2C complex (cyan) at kinesin.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) KIF5B Lys237 in L11 interacts with \u03b1-tubulin Glu414 and Glu420 in H12. (B) KIF2C Lys297 and Val298 in loop L2 KVD motif interact with \u03b1-tubulin Glu434 in H12. Arg498 was modeled as alanine in the reported structure (PDB ID: 5MIO). KVD motif residues Lys297, Val298, and Asp299 are displayed.\n\n![Video 2.](https://cdn.elifesciences.org/articles/77877/elife-77877-video2.mp4.jpg)\n\nThe former Arg267-mediated interaction is conserved in KIF5B through the corresponding residue Lys237 in L11 (Figure 5B; Figure 5\u2014figure supplement 1A) but not conserved in KIF2C. KIF2C has Ala500 and Glu573 instead of Lys269 and Val343 of KLP-12, resulting in a loss of interaction (Figure 5B; Figure 5\u2014figure supplement 1B). Instead, KIF2C takes another binding strategy through the KVD finger in loop L2 of KIF2C, as previously reported (Figure 5\u2014figure supplement 1B; Ogawa et al., 2004; Trofimova et al., 2018; Wang et al., 2017). The other interface between Lys269 of KLP-12 and Glu155 of \u03b1-tubulin is not conserved both in KIF5B and KIF2C. The counterpart residue is Ser239 in KIF5B, which is necessary for the kinesin-1-induced conformational change of microtubules to the growing GTP form (Shima et al., 2018; Figure 5B; Figure 5\u2014figure supplement 1A).\n\nIn summary, KLP-12 takes unique triangle contacts with \u03b1-tubulin conserved among KIF4 and KIF21 subfamilies. The different interfacial organizations of KLP-12 and KIF5B to \u03b1-tubulin result in the counter-clockwise rotation of \u03b1-tubulin up to 4 degrees with Glu420 of \u03b1-tubulin as the fulcrum, via the formation of a family-specific salt bridge at Lys269-Glu155 (Figure 5C). On the other hand, although the interfaces between KLP-12 and KIF2C to \u03b1-tubulin are entirely different, the relative binding angle of KLP-12 and KIF2C with \u03b1-tubulin is consequently similar (Figure 5D). KLP-12, thus, induces a larger rotation of \u03b1-tubulin than KIF5B, which builds a configuration of \u03b1-tubulin similar to that in the KIF2C-tubulin complex.\n\n### Microtubule binding interface of kinesin-4 KLP-12 at \u03b2-tubulin\n\nWe next investigated the microtubule-binding interface of KLP-12 at \u03b2-tubulin by comparing it to the KIF5B and KIF2C structures superimposed using the kinesin motor domain (Figure 6; Figure 6\u2014figure supplement 1). Helix \u03b15 of KLP-12 and helix H12 of \u03b2-tubulin serve as the interface between KLP-12 and microtubules. Two arginine residues, Arg311 and Arg317, in \u03b15 of KLP-12 form ionic interactions with Glu410 in H12 of \u03b2-tubulin (Figure 6A). These arginine residues are conserved in KIF5B (Figure 6B; Figure 1\u2014figure supplement 2); however, they form intramolecular contacts with Glu157 in loop L8 of KIF5B instead of interacting with Glu420 (corresponding to Glu410 in porcine) of \u03b2-tubulin (Figure 6\u2014figure supplement 1A), suggesting that the organization of \u03b15 of KLP-12 or KIF5B gives rise to the difference.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig6-v1.jpg)\n\n**Figure 6.:** (A) Close-up display of KLP-12 and \u03b2-tubulin interaction around \u03b2-tubulin helix H12 from the same view as upper panel (middle panel) and 45\u00b0 rotated view (bottom panel). Glu410 of \u03b2-tubulin H12 interacts with Arg311 and Arg317 of KLP-12 helix \u03b15. Tyr150 and Asn151 of KLP-12 form intramolecular interactions. See Video 3 for detail. The interfaces of KIF5B and KIF2C at \u03b2-tubulin are available in Figure 5\u2014figure supplement 1. (B) Sequence alignment with the secondary structure of the kinesin-4, KIF5B, and KIF2C residues at the interacting area. (C) Superimposition of C\u03b1 chain trace models of the KLP-12 complex (orange) and KIF5B complex (green) at kinesin around \u03b2-tubulin H12. (D) Superimposition of C\u03b1 chain trace models of the KLP-12 complex (orange) and KIF2C complex (cyan) at kinesin around \u03b2-tubulin H12.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) KIF5B and \u03b2-tubulin interface. Glu420 (bovine Glu420 corresponds to Glu410 of porcine) of \u03b2-tubulin H12 has no interaction with KIF5B; instead, KIF5B Glu157 forms an intramolecular interaction with Arg278 and Arg284 of KIF5B \u03b15. (B) KIF2C and \u03b2-tubulin interaction. Glu420 (bovine Glu420 corresponds to Glu410 of porcine) of \u03b2-tubulin H12 interacts with Arg540 of KIF2C \u03b15. Tyr405 and Asn406 of KIF2C form intramolecular interactions. In addition, KIF2C Arg420, which is supported by Leu422, interacts with Asp414 and Glu417 of \u03b2-tubulin H12.\n\n![Video 3.](https://cdn.elifesciences.org/articles/77877/elife-77877-video3.mp4.jpg)\n\nTo further investigate the interactions around \u03b15 of KLP-12 and KIF5B, we carefully observed and found the intramolecular contact between Tyr150 and Asn151 and the resulting additional contact between Asp152 and Lys314 of KLP-12; Asn151 is highly conserved in KIF4 and KIF21 subfamilies and KIF2C, but not in KIF5B (Figure 6B; Figure 1\u2014figure supplement 2). The corresponding residue of KIF7 is Lys150 similarly acts as asparagine, albeit Leu139 in KIF5B, did not form interaction, therefore Asp140 and Lys281 did not contact (Figure 6B; Figure 6\u2014figure supplement 1A). The interaction within KLP-12 around Asn151 slightly rearranges the composition of \u03b15 to generate intermolecular interaction between Glu410 of \u03b2-tubulin instead of intramolecular interaction with Glu172 of KLP-12. This interacting strategy is basically conserved in KIF2C (Figure 6B; Figure 6\u2014figure supplement 1B).\n\nIn addition to this interaction, KIF2C has another intermolecular contact, which KLP-12 and KIF5B do not have. Arg420 in \u03b25a of KIF2C forms an ionic interaction with Asp414 and Glu417 at the N-terminal side of H12 of \u03b2-tubulin (Figure 6\u2014figure supplement 1B). This conformation of Arg420 is supported by Leu422 through hydrophobic contact with the side chain stem of Arg420. KLP-12 has His171 instead of Leu422 of KIF2C, showing the repulsive force keeping Arg169, which corresponds to residue Arg420 of KIF2C, away from the acidic residues on H12 (Figure 6A and B). KIF5B has Ser154 in the Arg420 position of KIF2C, resulting in no interaction with H12 of \u03b2-tubulin (Figure 6B; Figure 6\u2014figure supplement 1A). These different types of interactions through H12 result in different rotation angles of \u03b2-tubulin.\n\nIn summary, Arg311 and Arg317 of KLP-12 bridge to Glu410 of \u03b2-tubulin produces a clockwise rotation of \u03b2-tubulin around the motor domain (Figure 6C). KIF5B does not make an equivalent interaction, so the net result is that KLP-12 bends tubulin by 4.6 degrees more than KIF5B. This configuration is possibly conserved in kinesin-4 subfamily, including KIF4 and KIF7, as expected from the amino acid sequence conservations. KIF2C generated further rotation of \u03b2-tubulin, resulting in tubulin\u2019s highest curvature destabilizing the microtubule end (Figure 6D).\n\n### Distinct curvature of tubulin-dimer induced by different kinesin motor domains\n\nAs described above, the different types of kinesin motor domains arrange the different kinesin\u2013tubulin interfaces to produce the distinct curvature of tubulin-dimer. To elucidate how kinesin-4 family KLP-12 affects the overall conformation of the tubulin dimer, kinesin\u2013tubulin complex structures were superimposed on \u03b1-tubulin and compared (Figure 7A\u2013C and Video 4). As a result, obvious differences in \u03b2-tubulin positions or rotations were observed among the three kinesins. The tubulin dimer with KIF5B, which generates a growing plus-end, forms the straightest conformation. The tubulin dimer with KIF2C, which is a plus-end destabilizing kinesin, forms the most curved conformation, 6.4 degrees larger than that of KIF5B. Intriguingly, KLP-12 induces intermediate curvature of the tubulin dimer, with the \u03b1- and \u03b2-tubulin angles being 4.6 degrees more curved than KIF5B. This precise control of tubulin curvature by KLP-12 is achieved by counter-clockwise rotation of \u03b1-tubulin (Figure 5C) and clockwise rotation of \u03b2-tubulin (Figure 6C) around KLP-12, seen from the left side of the protofilament.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/77877/elife-77877-fig7-v1.jpg)\n\n**Figure 7.:** (A) Superimposition of KLP-12, KIF5B, and KIF2C complexes at \u03b1-tubulin. See Video 4 for detail. (B) Close-up view of superimposed models at the \u03b2-tubulin interaction surface. (C) Tubulin dimer interface view from kinesin side. (D) Models of the microtubule plus-end curving mechanism by kinesins. The kinesin-1 family protein KIF5B does not affect the curvature of microtubules to maintain the conformation of GTPs. Kinesin-4 family protein KLP-12 slightly curves the plus-end by interacting with the mid-portion of \u03b2-tubulin H12 to stabilize the plus-end. Kinesin-13 family protein KIF2C strongly curves plus-end by interacting with the N-terminal portion of \u03b2-tubulin H12 to destabilize the microtubule.\n\n![Video 4.](https://cdn.elifesciences.org/articles/77877/elife-77877-video4.mp4.jpg)\n\n**Video 4.:** Morph movie of KLP-12, KIF5B, and KIF2C. Structures were superimposed by \u03b1-tubulin.\n\n## Discussion\n\nThis study investigated the molecular mechanism of microtubule dynamics inhibition by kinesin-4 motor C. elegans KLP-12 using genetic, biophysical, biochemical, and structural analyses. C. elegans genetics clearly illustrated the role of KLP-12 in regulating the length of axons by inhibiting microtubule dynamics. Biophysical analyses elucidated the plus-end directed motility of KLP-12 and the inhibitory effect of growing microtubules by KLP-12. Biochemical analyses also showed that KLP-12 is similarly active on both the microtubule lattice and the growing microtubule plus-end. Structural studies demonstrated kinesin-4-specific residues at the microtubule-binding interface of KLP-12, adequately increasing the curvature of tubulin-dimers. It might enable the precise curvature of microtubule plus-ends to inhibit microtubule dynamics.\n\nWe analyzed two alleles of klp-12 mutants. Previous studies have shown that the tiling between the PLM axon and ALM cell body is misregulated in klp-7 mutant worms (Puri et al., 2021). klp-7 is a worm orthologue of KIF2C that has microtubule depolymerizing activity. klp-7 mutant worms have more stable microtubules and show a larger overlap between PLM axon and ALM cell body. We find similar tiling defects in klp-12 mutants (Figure 1), but the phenotype is weaker than klp-7. This could be explained by the activity of KLP-12 in vitro that KLP-12 does not depolymerize microtubules, instead, inhibits the polymerization, unlike KLP-7 (Figure 2). Another interesting point is the difference between klp-12 mutant alleles. A comparison of the null allele klp-12(tm10890) and klp-12(tm5176), which has a deletion mutation in the tail-encoding exons, shows milder defects in tiling between ALM and PLM. This would be because klp-12(tm5176) is a hypomorphic allele that expresses tail-deleted KLP-12 protein. It is consistent with the previous study showing that full activation of KIF21A, an orthologue of KLP-12, requires binding the tail domain with a cell cortex protein KANK (van der Vaart et al., 2013). We need to test the expression of KLP-12 to verify this hypothesis.\n\nWe should note here the phenotypic difference between the motor and tail defects; the motor defect made the axon wavy and thinly, whereas the tail defect did not change the thickness of axons (Figure 1D). There are two possibilities: (I) motor function will be required for proper axon development, or (II) the tail domain without the motor will disable proper axon development. Future studies are required to elucidate this mechanism.\n\nSteady state ATPase assays of the KLP-12 motor domain in the presence of microtubules or GTP-tubulin dimers elucidated the ATPase activities with comparable affinities to microtubules and GTP-tubulin dimers. Although kinesin-13 expresses stronger binding of GDP-tubulin dimers over microtubules, other kinesin motors bind strongly to microtubules over tubulin dimers, including Xklp1 or KIF19A (Bringmann et al., 2004; Hunter et al., 2003; Wang et al., 2016). Therefore, preferential binding to the growing plus-end of microtubules is one of the important features of KLP-12. However, since ATP hydrolysis detaches KLP-12 from the microtubule ends, the tail domain should be required to tether itself to microtubules to continuously stabilize the plus ends.\n\nRegarding the ATPase rate, a discrepancy was observed between the single-molecule motility assay and the kinetic study. In the motility assay, the average rate was measured only for motors actively attached to microtubules among the KLP-12 present in the solution. In the kinetics assay, on the other hand, the average speed of all motors on the solution per unit time is calculated. In the former assay, we can detect kinesin-1 movement from 1 nM in solution, whereas KLP-12 movement only from 100 nM or more in the solution. In the latter assay, KM, microtubules of kinesin-1 is only ten times lower than KLP-12 (Chang et al., 2013). This difference would be responsible for the discrepancy in the ATPase rate. Considering that SEC and crystallographic analysis show that KLP-12 used in this study is at least structurally uniform (Figure 3B), a discrepancy in the ATPase rate may not reflect a difference in microtubule affinity or degradation of motors. Instead, it may come from unknown factors, such as a mixture of motors with an extremely slow or zero ATPase rate.\n\nFrom the crystal structural analysis, we identified the specific interactions of KLP-12 for \u03b1- and \u03b2-tubulins (Figure 4; Figure 5). The contributing residues are mostly conserved among KIF4 and KIF21 subfamilies, suggesting the conserved structural mechanisms. KLP-12 interacts with \u03b1-tubulin through the triangle contacts at the N-terminal side of H12 and H4, and \u03b2-tubulin at the mid-portion of H12. Kinesin-1 makes single contact with \u03b1-tubulin at the N-terminal side of \u03b1-tubulin H12 but no contact with \u03b2-tubulin. Kinesin-13 binds to \u03b1-tubulin at the C-terminal side of H12 through the KVD finger and to \u03b2-tubulin at the N-terminal side of H12, in addition to the mid-portion contact. These interactions are summarized in the schematic illustrations in Figure 7D.\n\nKinesin-1 cannot bend the protofilament and allows microtubules to polymerize, whereas kinesin-13 strongly bends the protofilament to depolymerize microtubules (Ogawa et al., 2004; Shima et al., 2018). KLP-12 expresses the mild effect of protofilament bending, enabling the inhibition of both the polymerization and depolymerization of the microtubules. As summarized previously, changes in the curvature of the peeled plus-ends of microtubules are fundamental to microtubule dynamics (Brouhard and Rice, 2014); less curved plus-end polymerizes the microtubule, more curved plus-end shortens the microtubule, and middle curved plus-end stabilizes the microtubule. In addition to the reported structures of KIF5B with tubulin and KIF2C with tubulin representing polymerizing and depolymerizing plus-end of a microtubule, KLP-12 complexed with tubulin structure filled the missing piece of the structural information of stabilizing plus-end of a microtubule. The other domains, including the tail, would further intricately arrange the bending effects of motor domains.\n\nIn summary, our study provides important structural clues regarding a novel molecular mechanism by which kinesin-4 inhibits microtubule dynamics. This structural model is consistent with the previously reported effects of microtubule elongation or destabilization by the motor domains of various kinesin superfamily proteins.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>Wild type</td>\n      <td>Obtained from CGC</td>\n      <td>N2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>uIs31</td>\n      <td>Described in O\u2019Hagan et al., 2005.</td>\n      <td>TU2769</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>klp-12(tm5176); uIs31</td>\n      <td>This study</td>\n      <td>OTL29</td>\n      <td>Deletion mutation in exons encoding the tail domain, generated by Niwa lab.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>uIs31; jpnEx98[Pmec-7::klp-12]</td>\n      <td>This study</td>\n      <td>OTL135</td>\n      <td>Generated by Niwa lab.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>uIs31; jpnEx98[Pmec-7::klp-12]</td>\n      <td>This study</td>\n      <td>OTL136</td>\n      <td>Generated by Niwa lab.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>klp-12(tm10890); uIs31</td>\n      <td>This study</td>\n      <td>OTL137</td>\n      <td>Induces deletion of exon 4\u20136, resulting in a frameshift, generated by Niwa lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>KLP-12\u2013LZ\u2013GFP</td>\n      <td>This study</td>\n      <td>RN349</td>\n      <td>pET21B, with C-terminus 6 x His-tag, generated by Nitta lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>KLP-12(M)</td>\n      <td>This study</td>\n      <td>RN107</td>\n      <td>pGEX-6P, N-terminal GST tag, generated by Nitta lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>DARPin</td>\n      <td>This study</td>\n      <td>RN84</td>\n      <td>pETDUET-1, with C-terminus 6 x His-tag, generated by Nitta lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>KLP-12\u2013DARPin</td>\n      <td>This study</td>\n      <td>RN148</td>\n      <td>pGEX-6P, N-terminal GST tag, generated by Nitta lab.</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Hi-Fi DNA assembly</td>\n      <td>NEB</td>\n      <td>NEB: E2621</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Glutathione Sepharose 4B</td>\n      <td>GE Health care</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Zoo system</td>\n      <td>Hirata et al., 2019</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>KAMO</td>\n      <td>Yamashita et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XDS</td>\n      <td>Kabsch, 2010a</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XSCALE</td>\n      <td>Kabsch, 2010b</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHASER</td>\n      <td>McCoy et al., 2007</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SWISS-MODEL</td>\n      <td>Waterhouse et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>Liebschner et al., 2017</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>Pettersen et al., 2004</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superdex 200 Increase 10/300 GL</td>\n      <td>GE Health care</td>\n      <td></td>\n      <td>column</td>\n    </tr>\n  </tbody>\n</table>\n\n### The amino acid sequence of constructs used in this study\n\n<table>\n  <thead>\n    <tr>\n      <th>The amino acid sequence of KLP-12\u2013LZ\u2013GFP</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MADTCVQVALRIRPQGNREKLEGSRVCTSVLPNDPQVTIGGDRSFTYDHVFDMPTLQYVVYESCVEKLVDGLFDGYNATVLAYGQTGSGKTHTMGTAFDAAVTQKEEDLGVIPRAIQHTFRKIAECKAQAIEQGLLEPAFEVSVQFVELYNDDVLDLLSDDRSMSSSIRIHEDSRGEIVLHGVEQRSVFDMHGTMDILKNGALNRTVAATNMNEQSSRSHAIFTLHLKQQRVAANPLDESGEQKTGELEMEMLCAKFHFVDLAGSERMKRTGATGDRAKEGISINVGLLALGNVIAALGGANGKVSHVPYRDSKLTRLLQDSLGGNSRTLMIACCSPSDSDFVETLNTMKYANRAKEIKNKVVANQDKSSKMIGELRSRIAALEAELLEFKQGKQLEDKVEELASKNYHLENEVARLKKLVMKDHLIHNHHKHEHAHASKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYITADKQKNGIKANFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHCLSTQSALSKDPNEKRDHMVLLEFVTAAGITHGMDELYKLEHHHHHH</td>\n    </tr>\n    <tr>\n      <td>The amino acid sequence of KLP-12(M)</td>\n    </tr>\n    <tr>\n      <td>MADTCVQVALRIRPQGNREKLEGSRVCTSVLPNDPQVTIGGDRSFTYDHVFDMPTLQYVVYESCVEKLVDGLFDGYNATVLAYGQTGSGKTHTMGTAFDAAVTQKEEDLGVIPRAIQHTFRKIAECKAQAIEQGLLEPAFEVSVQFVELYNDDVLDLLSDDRSMSSSIRIHEDSRGEIVLHGVEQRSVFDMHGTMDILKNGALNRTVAATNMNEQSSRSHAIFTLHLKQQRVAANPLDESGEQKTGELEMEMLCAKFHFVDLAGSERMKRTGATGDRAKEGISINVGLLALGNVIAALGGANGKVSHVPYRDSKLTRLLQDSLGGNSRTLMIACCSPSDSDFVETLNTMKYANRAKEIKNKVVAN</td>\n    </tr>\n    <tr>\n      <td>The amino acid sequence of A-C2 DARPin</td>\n    </tr>\n    <tr>\n      <td>MDLGKKLLEAARAGQDDEVRVLMANGADVNATDASGLTPLHLAATYGHLEIVEVLLKHGADVSASDLMGSTPLHLAALIGHLEIVEVLLKHGADVNAVDTWGDTPLRLAAVMGHLKIVEALLKHGADVNAQDKFGKTAYDTSIDNGSEDLAEILQKLNLEHHHHHH</td>\n    </tr>\n    <tr>\n      <td>The amino acid sequence of KLP-12\u2013DARPin</td>\n    </tr>\n    <tr>\n      <td>MADTCVQVALRIRPQGNREKLEGSRVCTSVLPNDPQVTIGGDRSFTYDHVFDMPTLQYVVYESCVEKLVDGLFDGYNATVLAYGQTGSGKTHTMGTAFDAAVTQKEEDLGVIPRAIQHTFRKIAECKAQAIEQGLLEPAFEVSVQFVELYNDDVLDLLSDDRSMSSSIRIHEDSRGEIVLHGVEQRSVFDMHGTMDILKNGALNRTVAATNMNEQSSRSHAIFTLHLKQQRVAANPLDESGEQKTGELEMEMLCAKFHFVDLAGSERMKRTGATGDRAKEGISINVGLLALGNVIAALGGANGKVSHVPYRDSKLTRLLQDSLGGNSRTLMIACCSPSDSDFVETLNTMKYANRAKEIKNKVVANGGGGSGGGGSGGGGSGGGGSGGSDLGKKLLEAARAGQDDEVRVLMANGADVNATDASGLTPLHLAATYGHLEIVEVLLKHGADVSASDLMGSTPLHLAALIGHLEIVEVLLKHGADVNAVDTWGDTPLRLAAVMGHLKIVEALLKHGADVNAQDKFGKTAYDTSIDNGSEDLAEILQKLNLE</td>\n    </tr>\n  </tbody>\n</table>\n\n### C. elegans experiments\n\nThe strains used in this study are described in Key resources table. C. elegans strains were maintained as described previously (Brenner, 1974). Some strains and OP50 feeder bacteria were obtained from the C. elegans genetic center (CGC) (Minneapolis, MN, USA). klp-12(tm5176) and klp-12(tm10890) were obtained from the National BioResource Project (NBRP, Tokyo, Japan). Transformation of C. elegans was performed by DNA injection as described (Mello et al., 1991). uIs31[Pmec-17::GFP] was used to visualize the morphology of mechanosensory neurons (O\u2019Hagan et al., 2005). Worms were fixed using 0.25 mM levamisol (Sigma), 5% agarose pads and 0.1 \u03bcm polystylene beads (Polysciences) as described (Niwa, 2017). Worms were observed by an LSM800 confocal microscope system equipped with a x20 Plan-Apochromat objective lens (NA0.8) (Carl Zeiss).\n\n### Cloning of klp-12 cDNA\n\nTotal worm cDNA was a kind gift from Dr. Kota Mizumoto (University of British Columbia). First, we obtained the full-length klp-12 cDNA fragment by PCR performed using KOD FX neo (TOYOBO, Tokyo, JAPAN). The first PCR was performed with 5'-gtgaaaATGGCGGACACTTGTGTGC-3' and 5'-ATTACAGAAAAGTGAAAAGGGGTACAAGTG-3' primers, and then the second PCR was performed with 5'-gtgaaaATGGCGGACACTTGTGTGC-3' and 5'-GACAGCATTTGATTTCCAGAATCCGAC \u20133'. We fully sequenced the fragment and confirmed the sequence of full-length klp-12 cDNA (NM_001028178). However, we found that the 3' latter half of the klp-12 cDNA had toxicity in bacteria and could not be inserted into vectors such as pBluescript, pEGFPN1, and pFastbac. Toxicity-resistant strains such as NEB 5-alpha F'Iq (NEB) and ABLE K (Agilent) could not compromise toxicity. Then, based on the sequence data, GeneArt (Thermo Fisher Scientific) was used to synthesize full-length klp-12 cDNA, which was codon-optimized for C. elegans.\n\n### GTP-tubulin preparation\n\nGTP-tubulin was purified from porcine brains following a previously reported method (Castoldi and Popov, 2003).\n\n### GDP-tubulin preparation\n\nGDP-tubulin was obtained as the cold disassembly product of microtubules initially polymerized from GTP-tubulin in PEM buffer (0.1 M PIPES-KOH pH 6.8, 1 mM EGTA, 1 mM MgCl2) supplemented with 1 mM GTP at 37 \u00b0C for 60 min. After tubulin assembly, microtubules were centrifuged using an Optima TL Ultracentrifuge (Beckman Coulter) with a TLA-100.3 rotor at 48,600\u00d7g at 37 \u00b0C for 30 min on a cushion containing PEM buffer supplemented with 30% glycerol. The pellet was washed two times with PEM buffer at 37 \u00b0C. GDP-tubulin was obtained after dilution in PEM buffer supplemented with 1 mM GDP at 4 \u00b0C of pellets.\n\n### Plasmid construction\n\nFor preparation of the KLP-12(M) construct, the coding region of KLP-12 (1\u2013365) was further amplified by PCR with an overlapping sequence with pGEX-6P and cloned immediately after the PreScission site of the pGEX-6P vector by Hi-Fi DNA assembly (NEB).\n\nFor preparation of the KLP-12\u2013LZ\u2013GFP construct, the N-terminal end of GFP connected to the C-terminal end of KLP-12(1-393) with the leucine zipper (LZ) was amplified by PCR by adding a LZ sequence (Yue et al., 2018) and a C-terminal 6 x His tag and cloned into the pET21B vector by Hi-Fi DNA assembly (NEB).\n\nFor preparation of the DARPin construct, the coding sequence of A-C2 DARPin was synthesized by the manufacturer (IDT gBlocks). The DNA fragment was amplified by PCR by inserting a C-terminal 6 x His tag and cloned into the pETDUET-1 vector by Hi-Fi DNA assembly (NEB).\n\nFor preparation of the KLP-12\u2013DARPin construct, the N-terminal end of DARPin connected to the C-terminal end of KLP-12(M) with the (G4S)4-GGS linker was amplified by PCR by adding a linker sequence and inserted into the pGEX-6P vector by Hi-Fi DNA assembly (NEB).\n\nAll constructs used in the study are listed in Key resources table.\n\n### Protein expression and purification\n\nTo obtain the KLP-12(M) constructs, the Escherichia coli strain BL21(DE3) harboring the plasmid encoding the KLP-12 (1\u2013365) fragment was cultured in LB medium containing 50 \u03bcg/ml ampicillin at 37 \u00b0C until OD600 >0.4. Protein expression was induced by 0.2 mM IPTG at 18 \u00b0C overnight. The cells were harvested by centrifugation and resuspended in 20 mM Tris-HCl pH 8.0 and 171 mM NaCl. The cell suspension was harvested by centrifugation and stored at \u201380 \u00b0C. The cells were resuspended in 50 mM HEPES-KOH pH 7.5, 400 mM KCl, 10% glycerol, 2 mM MgCl2, 5 mM \u03b2-mercaptoethanol, and protease inhibitor (0.7 \u03bcM leupeptin, 2 \u03bcM pepstatin A, 1 mM PMSF, and 2 mM benzamidine). Lysed cells were disrupted using sonication, and the cell debris was removed by centrifugation using an Avanti JXN-30 centrifuge (Beckman Coulter) with a JA-30.50Ti rotor at 80,000\u00d7g. The supernatant was loaded onto 2 ml Glutathione Sepharose 4B (GE Health care) for affinity chromatography, followed by 3 C protease cleavage of glutathione S-transferase (GST). After concentration using an Amicon Ultra concentrator (Merck Millipore; 10 kDa MWCO), the target protein was further purified on a Superdex 200 Increase 10/300 GL size exclusion column (GE Health care) in 20 mM HEPES-KOH pH 7.5, 150 mM NaCl, 2.5 mM MgCl2, and 1 mM DTT. Peak fractions were pooled, concentrated with an Amicon Ultra 10 kDa MWCO concentrator until 10 mg/ml, flash frozen by liquid nitrogen, and stored at \u201380 \u00b0C until use.\n\nTo obtain KLP-12\u2013LZ\u2013GFP, the same protocol as for KLP-12(M) was used until the cell suspension was harvested and stored at \u201380 \u00b0C. The cells were resuspended in wash buffer (50 mM HEPES-KOH pH 7.5, 400 mM KCl, 10% glycerol, 2 mM MgCl2, 5 mM imidazole, 5 mM \u03b2-mercaptoethanol, and protease inhibitor) and disrupted using sonication. The cell debris was removed by centrifugation using an Avanti JXN-30 centrifuge (Beckman Coulter) with a JA-30.50Ti rotor at 80,000\u00d7g. The supernatant was loaded on a 2 ml HIS-Select Nickel Affinity Gel (Merck) and washed with wash buffer. Bound protein was eluted with 50 mM HEPES-KOH pH 7.5, 400 mM KCl, 10% glycerol, 2 mM MgCl2, 300 mM imidazole, 5 mM \u03b2-mercaptoethanol, and protease inhibitor. After concentration using an Amicon Ultra 10 kDa MWCO concentrator, the target protein was further purified on a Superdex 200 Increase 10/300 GL size exclusion column (GE Health care) in 20 mM HEPES-KOH pH 7.5, 150 mM NaCl, 2.5 mM MgCl2, and 1 mM DTT. Peak fractions were pooled, and the target protein was further purified on an anion-exchange Mono Q column (GE Health care) with a linear gradient of NaCl in A buffer (20 mM Tris-HCl pH 8.0, 50 mM NaCl, 2.5 mM MgCl2, and 1 mM DTT) and B buffer (20 mM Tris-HCl pH 8.0, 1 M NaCl, 2.5 mM MgCl2, and 1 mM DTT). Peak fractions were pooled, concentrated and buffer changed with an Amicon Ultra 10 kDa MWCO concentrator into A buffer, flash frozen by liquid nitrogen and stored at \u201380 \u00b0C until use.\n\nTo obtain the DARPin constructs, the E. coli strain BL21(DE3) harboring the plasmid encoding the A-C2 DARPin fragment was cultured in LB medium containing 100 \u03bcg/ml ampicillin at 37 \u00b0C until OD600 >0.4. Protein expression was induced by 0.1 mM IPTG at 30 \u00b0C overnight. The cells were harvested by centrifugation and resuspended in 20 mM Tris-HCl pH 8.0 and 171 mM NaCl. The cell suspension was harvested by centrifugation and stored at \u201380 \u00b0C. The cells were resuspended in wash buffer (50 mM Tris-HCl pH 8.0, 300 mM NaCl, 5 mM imidazole, 5 mM \u03b2-mercaptoethanol, and protease inhibitor) and disrupted using sonication. The cell debris was removed by centrifugation using an Avanti JXN-30 centrifuge (Beckman Coulter) with a JA-30.50Ti rotor at 80,000\u00d7g. The supernatant was loaded on a 2 ml HIS-Select Nickel Affinity Gel (Merck) and washed with wash buffer. Then, a high salt wash (50 mM Tris-HCl pH 8.0, 1 M NaCl, 5 mM imidazole, 5 mM \u03b2-mercaptoethanol, and protease inhibitor) was performed followed by a low salt wash (50 mM Tris-HCl pH 8.0, 10 mM KCl, 5 mM imidazole, 5 mM \u03b2-mercaptoethanol, and protease inhibitor). Bound protein was eluted with 50 mM Tris-HCl pH 8.0, 100 mM KCl, 250 mM imidazole, 5 mM \u03b2-mercaptoethanol, and protease inhibitor. After concentration using an Amicon Ultra 10 kDa MWCO concentrator, the target protein was further purified on a Superdex 75 10/300 GL size exclusion column (GE Health care) in 20 mM HEPES-KOH pH 7.5, 150 mM NaCl, 2.5 mM MgCl2, and 1 mM DTT. Peak fractions were pooled, concentrated with an Amicon Ultra 10 kDa MWCO concentrator, flash frozen by liquid nitrogen and stored at \u201380 \u00b0C until use.\n\nTo obtain KLP-12\u2013DARPin, the same protocol as for KLP-12(M) was used for protein expression and purification, except the use of 100 \u03bcg/ml ampicillin for LB medium and 0.1 mM IPTG for protein expression induction.\n\n### Observation of MT dynamics\n\nThe in vitro MT observation was performed as reported before (Al-Bassam, 2014). Microscopy slides and precleaned glass coverslips were used to assemble a flow chamber using double-sided tape. The chamber was treated with 0.5 mg/ml PLL-PEG-biotin (Surface Solutions, Switzerland) in BRB80 buffer (80 mM K-PIPES, pH 6.8, 1 mM MgCl2, and 1 mM EGTA) for 5 min. After washing the chamber with BRB80 buffer, it was incubated with 0.5 mg/ml Streptavidin for 5 min. Short MT seeds were prepared using 1.5 \u03bcM tubulin mix containing 50% biotin-tubulin and 50% AZdye647-tubulin with 1 mM GMPCPP at 37 \u00b0C for 30 min. The polymerized MTs were pelleted by ultracentrifuge for 5 min. The pellet was resuspended by BRB80 supplemented with 10% glycerol and fragmented by pipetting. Resultant seeds were aliquoted and snapfrozen by liquid N2. The seeds were melted on 37 \u00b0C heat block immediately before the use and diluted by BRB80. Seeds were attached on the coverslips using biotin-avidin links and incubated with assay buffer (80 mM K-PIPES, pH 6.8, 1 mM MgCl2, and 1 mM EGTA, 0.5% Pluronic F127, 0.1 mg/ml BSA, 0.1 mg/ml biotin-BSA, 0.2 mg/ml k-casein).\n\nThe in vitro reaction mixture consisting of 10 \u03bcM tubulin, in assay buffer supplemented with 1 mM GTP, oxygen scavenging system composed of Trolox/PCD/PCA, 2 mM ATP, and the specified amount of KLP-12\u2013LZ\u2013GFP was added to the flow chamber. During the experiments the samples were maintained at 30 \u00b0C. An ECLIPSE Ti2-E microscope equipped with a CFI Apochromat TIRF 100XC Oil objective lens, an Andor iXion life 897 camera and a Ti2-LAPP illumination system (Nikon, Tokyo, Japan) was used to observe single molecule motility. NIS-Elements AR software ver. 5.2 (Nikon) was used to control the system.\n\n### Single molecule observation\n\nTIRF assay was performed as described before (Chiba et al., 2019). To polymerize Taxol-stabilized microtubules labeled with biotin and AZDye647, 30 \u03bcM unlabeled tubulin, 1.5 \u03bcM biotin-labeled tubulin and 1.5 \u03bcM AZDye647-labeled tubulin were mixed in BRB80 buffer supplemented with 1 mM GTP and incubated for 15 min at 37 \u00b0C. Then, an equal amount of BRB80 supplemented with 40 \u03bcM taxol was added and further incubated for more than 15 min. The solution was loaded on BRB80 supplemented with 300 mM sucrose and 20 \u03bcM taxol and ultracentrifuged at 100,000 g for 5 min at 30 \u00b0C. The pellet was resuspended in BRB80 supplemented with 20 \u03bcM taxol. Polymerized microtubules were flowed into streptavidin adsorbed flow chambers and allowed to adhere for 5\u201310 min. Unbound microtubules were washed away using assay buffer supplemented with taxol. Purified motor protein was diluted to indicated concentrations in the assay buffer suppelemented with 2 mM ATP and oxygen scavenging system composed of Trolox/PCD/PCA. Then, the solution was flowed into the glass chamber. The sample was observed by the TIRF system as described above.\n\n### ATPase activity\n\nATPase activity was measured using the EnzChek Phosphate Assay Kit (Molecular Probes) and DS-11 +spectrophotometer (DeNovix). GTP-tubulin was polymerized in PEM buffer (0.1 M PIPES-KOH pH 6.8, 1 mM EGTA, 1 mM MgCl2) supplemented with 1 mM GTP and 4% DMSO (PEM-GTP buffer) at 37 \u00b0C for 30 min. When measuring tubulin, the polymerization step was omitted. Each concentration of microtubule or GTP-tubulin was diluted with PEM-GTP buffer. GDP-tubulin was diluted with PEM buffer supplemented with 1 mM GDP (PEM-GDP buffer) to each concentration. The reactions were performed in 5 mM HEPES-KOH pH 7.5, 5 mM potassium acetate, 200 \u03bcM MESG, 1.5 U/ml PNP, 10 \u03bcM Taxol, and all assays were performed at 30 \u00b0C. When measuring as tubulin, Taxol was not added.\n\n#### Basal ATPase activity\n\nPEM-GTP buffer was used instead of microtubules (tubulin), no Taxol was added. After 1 mM ATP was added and the absorbance became stable, 1 \u03bcM KLP-12(M) was added, and the absorbance was measured every 5 s. It was calculated by subtracting the absorbance of the control measured without KLP-12(M). The experiment was performed three times.\n\n#### ATPase activity\n\nAfter 1 mM ATP was added and the absorbance became stable, 1 \u03bcM KLP-12(M) or KLP-12\u2013LZ\u2013GFP was added, and the absorbance was measured every 5 s. It was calculated by subtracting the absorbance of the control measured without KLP-12(M) or KLP-12\u2013LZ\u2013GFP. The experiment was performed three times. Values for Vmax and Km were obtained by Lineweaver-Burk plots of ATPase activity versus microtubule or tubulin concentration (1000 nM and 10,000 nM) using Microsoft Excel.\n\n### Size exclusion chromatography analyses\n\nKLP-12\u2013DARPin with tubulin or KLP-12(M), DARPin, and tubulin were analyzed on a Superdex 200 Increase 10/300 GL column equilibrated with 20 mM PIPES-KOH pH 6.8, 50 mM KCl, 1 mM MgCl2, 0.5 mM EGTA, and 10 \u03bcM AMP-PNP. Following gel filtration, the proteins were precipitated with acetone, separated by SDS\u2013PAGE, and visualized by Coomassie staining.\n\n### Crystallization and structure determination\n\nThen, 0.6 mg/ml tubulin\u2013KLP-12\u2013DARPin complex, which was purified by size exclusion chromatography, was crystallized at 20 \u00b0C by vapor diffusion in crystallization buffer containing 0.2 M ammonium acetate, 0.1 M HEPES pH 7.2\u20137.8, 22\u201326% polyethylene glycol (PEG) 3350. Crystals were harvested by Litholoop and transferred into cryoprotectant solution containing 0.2 M ammonium acetate, 0.1 M HEPES pH 7.4, 25% PEG 3350, and 20% glycerol and then flash-frozen in liquid nitrogen. All diffraction datasets were collected at the BL32XU beamline in a synchrotron facility SPring-8 equipped EIGER 9 M detector (DECTRIS Ltd) at \u2013180 \u00b0C with wavelengths of 1.00000 \u00c5 followed by a ZOO system (Hirata et al., 2019). Loop-harvested microcrystals were identified using raster scan and analysis by SHIKA (Hirata et al., 2019). Small wedge data, each consisting of 10\u00b0, were collected from single crystals, and the collected datasets were processed automatically using KAMO (Yamashita et al., 2018) with XDS (Kabsch, 2010a), followed by hierarchical clustering analysis using the correlation coefficients of the normalized structure amplitudes between datasets. Finally, a group of outlier-rejected datasets were scaled and merged using XSCALE (Kabsch, 2010b). The structure was determined by molecular replacement with the program PHASER (McCoy et al., 2007) using the crystal structure of tubulin dimer (PDB ID: 5MIO) as ensamble 1 and the homology model of KLP-12 generated by SWISS-MODEL (Waterhouse et al., 2018) with DARPin (PDB ID: 5MIO) as ensamble 2. The electron density map and the structural model were iteratively refined and rebuilt using PHENIX and COOT (Liebschner et al., 2017). The Ramachandran statistics are 92.5% and 7.5% in the favored and allowed regions of the Ramachandran plots, respectively, and 0% are outliers. Data collection and refinement statistics are summarized in Table 1. All molecular graphics were prepared by using UCSF Chimera (Pettersen et al., 2004).\n",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "2efbdd5d-a6a5-490e-bd4b-d7706fb8cc92",
+      "submission_id": "b03bebf6-3a02-4d04-9f8d-04b42b54b81d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kassandra M Ori-McKenney, https://ror.org/05rrcem69 University of California United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77877.sa0](https://doi.org/10.7554/eLife.77877.sa0)\n\nIn their study, Taguchi et al. aim to determine how a member of the kinesin-4 family is able to stabilize the tips of microtubules to suppress both their growth and shrinkage, a process important for normal development. This paper provides convincing data on KLP-12 by combining in vivo C. elegans work with in vitro single-molecule analysis and structural studies of the motor domain. The structure shows that KLP-12 bends tubulin heterodimers to a level that lies in between the extremes of bending by KIF5B (lattice stabilizer) and KIF2C (lattice destabilizer). This important study will be of interest to those in the fields of neuronal development and cytoskeletal dynamics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kassandra M Ori-McKenney, https://ror.org/05rrcem69 University of California United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77877.sa1](https://doi.org/10.7554/eLife.77877.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural model of microtubule dynamics inhibition by Kinesin-4 from the crystal structure of KLP-12 -tubulin complex\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Suzanne Pfeffer as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Robert A Cross (Reviewer #1); Jing Xu (Reviewer #2); Khanh Huy Bui (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll three reviewers agreed that this is a robust and thorough study that warrants publication in eLife once it has been revised with additional analyses and textual changes. While additional analyses from the in vitro assays constitute the major revision necessary for publication, please go through the reviewer comments carefully and revise and expand the text as necessary. There are multiple areas where additional details or discussion can benefit the paper and other areas where claims should be tempered based on the data presented.\n\nSpecifically, all three reviewers noted that they would like to see additional analyses of KLP-12 in the in vitro TIRF studies. First, does KLP-12 accumulate at the plus ends of the microtubules, either in the TIRF assay with taxol-stabilized microtubules, or in the dynamics assay? It is also important to show the localization of KLP-12 in Figure 2E. If the concentration is too high, the authors should drop the concentration as suggested by Reviewer 3. Second, there are many other parameters that the authors can quantify in their dynamic microtubule assay. Please refer to the comments from all three reviewers to bolster this section. Based on the n reported in the figure legend, the authors should be able to review their data and provide additional analyses and details that would strengthen the paper greatly without performing additional experiments.\n\nReviewer #1 (Recommendations for the authors):\n\nThis is a comprehensive effort to find out how members of the kinesin-4 family are able to stabilise microtubule tips so as to suppress both growth and shrinkage. Using crystallography of soluble tubulin in complex with KLP-12, a kinesin-4 from C. elegans, electron microscopy, and biochemistry, together with cell biological characterisation of mutants in cultured neurons, the authors argue that kinesin-4 motors exert their effects by stabilising tubulin in a bent conformation that is too straight to depolymerise readily and too bent to insert stably into the lattice.\n\nThe work is interesting but I do have some comments, mostly about the clarity of presentation and argument.\n\n1. It is proposed that all kinesins-4 make the same interface with tubulin, yet some are motile and others are not. This profound difference is mentioned but little discussed, the focus is all on the ability of kinesins-4 to stably curve tubulin. Yet the ability to bind reversibly to the unbent GDP lattice is also central to (motile) function.\n\n2. Processive KIF12 LZ dimers move at a kinesin-1-like rate of 800 nm per sec. Assuming one ATP is consumed per step, this implies an ATPase of ~50 per sec per head (50 * 2 * 8nm per sec). The reported maximum monomer rate of 0.16 s-1 is wildly inconsistent with the dimer walking rate. This is not discussed. The observed 1000x activation is consistent with previous work on kinesin-1.\n\n3. Does GFP-KLP12 LZ enrich at plus ends? I was hoping to see data from the GFP KIF12 LZ construct in TIRF assays. The walking action of KLP12 could be very important to deliver it to microtubule tips because the KLP12 motor domains prefer free tubulin, which will ordinarily be present at a much greater concentration than that in the splayed protofilaments at the microtubule tips.\n\n4. GTP tubulin was used in the ATPase assays, but not GDP tubulin. It would be helpful to know if GDP tubulin activates KIF12.\n\n5. The core of the paper is the new crystal structure with GMPCPP tubulin whose assembly is blocked by DARPIN. As the authors discuss, the new tubulin-KIF12 structure is very similar to the 4HNA (KIF5B.ADP.ALF4) structure. The rms deviation is similar to that between KIF4 and KIF12. The interface with tubulin is very similar. Yet KIF5B is activated by microtubules and not free tubulin, whereas KIF-12 prefers free tubulin. This seems like a problem for the authors' argument \u2013 since the data say that despite the kinesin-4 family-specific features of the interface, the KIF-12-tubulin structure is overall very similar indeed to the KIF5B-tubulin structure?\n\n6. The comparison of the KLP12 interface to KIF5B and KIF2C is helpful, but hard to follow. The ms lacks a clear summary statement of what are the conserved, kinesin-4 family-specific features of the interface. The claim is that KLP12 bends tubulin slightly more than KIF5B, by rotating \u03b1-tubulin by 4 degrees, with E420 of \u03b1-tubulin as the fulcrum, via the formation of a family-specific salt bridge at K269-E155. In \u03b2-tubulin, R311 and R317 bridge to E410, also producing a rotation. KIF5B does not make an equivalent interaction. The net result is that KLP12 bends tubulin by 3 degrees more than KIF5B. Please clarify that this is compatible with the earlier-discussed high similarity of the current structure to 4HNA. Please clarify that the 3 kinesins all rotate tubulin in the same plane. Relatedly it might be helpful to provide a morph animation of tubulin in the three complexes.\n\n7. Of less concern, there are some typos and language glitches.\n\nL461 'builds a composition of KIF2C similar to that of \u03b1 tubulin'.\n\nI think what is meant is 'a configuration of \u03b1-tubulin similar to that in the KIF2C complex'.\n\nL534 'Glowing plus end' should be 'growing plus end'.\n\nL585 'turn the pealed end into a workspace' \u2013 don't understand. Possibly should be 'target KLP12 to protofilament peels'.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 Figure 1C: Please explain what AVM and PVM are. ALM and PLM are explained in the caption for panel D.\n\n\u2013 Figure 1D & E: Do larger overlaps in ALM indicate longer neurons? What is the sample size?\n\n\u2013 Figure 1G: Please indicate the sample size, what the horizontal bars in the graph are, what statistical analysis was used, and what the associated P-value is.\n\n\u2013 Figure 2C & D: Please clarify the data analysis methods used here. How are the mean and errors determined here?\n\n\u2013 Figure 2D: The authors may consider reducing the range of run-length shown in the graph.\n\n\u2013 Figure 2 \u2014figure supplement 1: Please clarify what the dotted lines are.\n\n\u2013 Line 385: \"\u2026 reflecting the conserved mechanisms of the microtubule-stabilizing effect of kinesin-4\".\n\nInhibiting microtubule dynamics is not necessarily the same as stabilizing microtubules. Do the authors have data demonstrating that kinesin-4 stabilizes microtubules?\n\n-- Lines 613-614: \"slightly more curving inhibits plus-end directed motility along the microtubule lattice\".\n\nDo the authors have biophysics data demonstrating that plus-end directed motility is inhibited by slightly more curved tubulin?\n\nReviewer #3 (Recommendations for the authors):\n\n1) In Figure 1, two mutants were studied leading to a phenotype. Could the authors explain in more detail what mutations were made and why, as well as their predicted effects on the protein structure/function? Also, is there a way to verify that the mutant proteins are indeed expressed in truncated form or completely missing?\n\n2) Microtubule dynamics are generally assessed using four parameters: growth rate, depolymerization rate, catastrophe frequency and rescue frequency. What is the effect of KLP-12-LZ-GFP on the parameters that were not measured? Also, since KLP-12 decreases growth rate, does it also decrease the length of microtubules?\n\n3) What is the behaviour of KLP-12-LZ-GFP on dynamic microtubules? In figure 2B, which was done on taxol-stabilized microtubules, the motors seem to fall off the microtubule at the end. Alternatively, could the authors discuss how they think the motor decreases growth rate by walking along a microtubule and falling off it at the end?\n\n4) Figure 2 E only shows 1 concentration, can the author show more than 1 concentration?\n\n5) I wonder whether there is any mutation which is mentioned in the literature that can be mapped onto the motor domain?\n",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "68027fb5-0149-443b-bfd5-6b127825edad",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C1",
+      "claim": "KLP-12 is a C. elegans kinesin-4 ortholog of KIF21A and KIF21B.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that KLP-12, a C. elegans kinesin-4 ortholog of KIF21A and KIF21B, is essential for proper length control of C. elegans axons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the orthology relationship between KLP-12 and KIF21A/KIF21B, supported by phylogenetic analysis shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0e45f7db-e9dc-47d5-9073-edf082b634d2",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C2",
+      "claim": "KLP-12 is essential for proper length control of C. elegans axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that KLP-12, a C. elegans kinesin-4 ortholog of KIF21A and KIF21B, is essential for proper length control of C. elegans axons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genetic analysis showing that klp-12 mutants have defects in axon length control (Figure 1D-E) and overexpression causes shortened axons (Figure 1F-G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "4990b335-d8f6-4000-9f68-0a3b7c081aa6",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C3",
+      "claim": "The motor domain of KLP-12 represses microtubule polymerization in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that KLP-12, a C. elegans kinesin-4 ortholog of KIF21A and KIF21B, is essential for proper length control of C. elegans axons, and its motor domain represses microtubule polymerization in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by TIRF assays showing concentration-dependent decrease in microtubule growth rate (Figure 2E-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "24801b08-884c-4168-83ac-8c69ec86e68e",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C4",
+      "claim": "The crystal structure of the KLP-12 motor domain complexed with tubulin represents a high-resolution structural snapshot of the inhibition state of microtubule-end dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the KLP-12 motor domain complexed with tubulin, which represents the high-resolution structural snapshot of the inhibition state of microtubule-end dynamics, revealed the bending effect of KLP-12 for tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structure was solved at 2.9 \u00c5 resolution (Table 1, Figure 3D-E) and shows KLP-12 bound to curved tubulin dimers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "74e3421b-4147-4ac9-98df-faa838ccd287",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C5",
+      "claim": "KLP-12 induces bending of tubulin dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the KLP-12 motor domain complexed with tubulin, which represents the high-resolution structural snapshot of the inhibition state of microtubule-end dynamics, revealed the bending effect of KLP-12 for tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural comparison shows that KLP-12 induces intermediate curvature of tubulin, 4.6 degrees more curved than KIF5B (Figure 7A-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "37e762a8-0d8a-40a5-a667-25431b7c2bc9",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C6",
+      "claim": "The curvature of tubulin introduced by KLP-12 is intermediate between that induced by KIF5B and KIF2C.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with the KIF5B-tubulin and KIF2C-tubulin complexes, which represent the elongation and shrinking forms of microtubule ends, respectively, showed the curvature of tubulin introduced by KLP-12 is in between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural analysis shows KLP-12 induces 4.6 degrees more curvature than KIF5B, while KIF2C induces 6.4 degrees more than KIF5B (Figure 7A-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "75d3ab64-83e6-4a3d-b791-82e5a74d4b61",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C7",
+      "claim": "KLP-12 controls the proper length of axons by modulating the curvature of the microtubule ends to inhibit microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, KLP-12 controls the proper length of axons by modulating the curvature of the microtubule ends to inhibit the microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic data showing axon length defects in mutants (Figure 1D-E), in vitro data showing inhibition of microtubule dynamics (Figure 2E-I), and structural data showing intermediate tubulin curvature (Figure 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "a35d9691-7d7c-451e-aa71-99946d22ec5c",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C8",
+      "claim": "Point mutations of KIF21A cause congenital fibrosis of the extraocular muscle type 1 (CFEOM1).",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutations of KIF21A cause congenital fibrosis of the extraocular muscle type 1 (CFEOM1) (Yamada et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yamada et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "9a38d584-3417-4f38-8a04-9b7b2d77e6f4",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C9",
+      "claim": "Polymorphisms in the KIF21B gene are associated with several inflammatory diseases, such as multiple sclerosis or Crohn's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymorphisms in the KIF21B gene are associated with several inflammatory diseases, such as multiple sclerosis or Crohn's disease (Barrett et al., 2008; Goris et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Barrett et al., 2008 and Goris et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "9e3f0bb0-6a9f-4723-a728-5e4904192fad",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C10",
+      "claim": "Increased expression of KIF21B is linked to the progression of neurodegenerative disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased expression of KIF21B is also linked to the progression of neurodegenerative disorder (Kreft et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kreft et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "7d8aacd1-ba93-4933-ae09-ad3c075f1098",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C11",
+      "claim": "Kif21b knockout mice exhibit behavioral changes involving impaired learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Kif21b knockout mice were reported to exhibit behavioral changes involving impaired learning and memory (Muhia et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Muhia et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "8341e59c-28f5-4c19-8b3d-3850a25147c3",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C12",
+      "claim": "The motor domains of kinesin-4 family proteins play a crucial role in reducing the growth rate of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies suggest that the motor domains of kinesin-4 family proteins play a crucial role in reducing the growth rate of microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple studies cited in the introduction and by the in vitro data showing KLP-12 motor domain reduces microtubule growth rate (Figure 2F).",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "b62b3360-0911-44ee-b2f4-95967e4cac5f",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C13",
+      "claim": "The coiled-coil region of KIF21A operates as an autoinhibitory domain by interaction with the motor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The coiled-coil region of KIF21A in which CFEOM1-associated mutations are localized operates as an autoinhibitory domain by interaction with the motor domain (Bianchi et al., 2016; Cheng et al., 2014; van der Vaart et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bianchi et al., 2016; Cheng et al., 2014; van der Vaart et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "069e38c7-90af-4bcb-bc63-4cc26ae2f826",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C14",
+      "claim": "The dominant character of CFEOM1 syndrome is connected to the increased activity of the mutant KIF21A kinesin caused by the loss of autoinhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The dominant character of CFEOM1 syndrome is thus connected to the increased activity of the mutant KIF21A kinesin caused by the loss of autoinhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the autoinhibitory mechanism described and cited studies on CFEOM1 mutations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "a99cac95-6d6a-4ac2-b14d-3e0eeb0a901b",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C15",
+      "claim": "The WD40 domain of KIF21B holds on to the growing microtubule tip and induces its pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "The WD40 domain of KIF21B holds on to the growing microtubule tip and induces its pausing (van Riel et al., 2017), which is required for the sustained action of the motor domain on the microtubule plus-end to inhibit microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to van Riel et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0063edf5-f5aa-4e29-9258-1ce533b5635f",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C16",
+      "claim": "More than 30% of the PLM axons in C. elegans with klp-12(tm5176) overtook the cell body of ALM.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, more than 30% of the PLM axons in C. elegans with klp-12(tm5176) overtook the cell body of ALM (klp-12(tm5176) in Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "8aa07f7e-6a09-4073-94c5-9a1d92dd70d5",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C17",
+      "claim": "klp-12(tm10890) showed a more severe phenotype with more than 50% of neurons overlapped.",
+      "claim_type": "EXPLICIT",
+      "source": "klp-12(tm10890) showed a more severe phenotype; more than 50% of neurons overlapped, and thin warped axons were observed (klp-12(tm10890) in Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "f7c8f2be-e7de-4fec-bbef-3b81db90105f",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C18",
+      "claim": "The PLM axon overexpressing KLP-12 became strikingly shorter and thinner compared to the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the wild type, the PLM axon overexpressing KLP-12 became strikingly shorter and thinner (Figure 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and shown in Figure 1F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "3e2e3159-85dc-411e-9dd3-aec2e380dd7c",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C19",
+      "claim": "KLP-12\u2013LZ\u2013GFP motors showed plus-end directed processive movements on GDP microtubules stabilized by paclitaxel with an average velocity of 0.81\u00b10.32 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Single KLP-12\u2013LZ\u2013GFP motors successfully showed plus-end directed processive movements on GDP microtubules stabilized by paclitaxel (taxol-stabilized microtubules) with an average velocity of 0.81\u00b10.32 \u00b5m/s and an average run length of 1.30\u00b10.89 \u00b5m",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from single-molecule TIRF assays shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "b06af770-20ac-47a0-8473-1b3f519742b5",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C20",
+      "claim": "KLP-12\u2013LZ\u2013GFP motors showed an average run length of 1.30\u00b10.89 \u00b5m on taxol-stabilized microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Single KLP-12\u2013LZ\u2013GFP motors successfully showed plus-end directed processive movements on GDP microtubules stabilized by paclitaxel (taxol-stabilized microtubules) with an average velocity of 0.81\u00b10.32 \u00b5m/s and an average run length of 1.30\u00b10.89 \u00b5m",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from single-molecule TIRF assays shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "a83b5b9a-ddb9-4936-a48e-c35cfef08dc7",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C21",
+      "claim": "The average velocity and run length of KLP-12\u2013LZ\u2013GFP motors were similar on dynamic GTP microtubules compared to taxol-stabilized microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The average velocity and run length of KLP-12\u2013LZ\u2013GFP motors were also similar on dynamic GTP microtubules (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C-D with no statistically significant differences detected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "f2422643-ef83-44e8-96f7-77e38ffd9c46",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C22",
+      "claim": "KLP-12\u2013LZ\u2013GFP did not accumulate at the plus-end tips of microtubules but detached from them upon arrival.",
+      "claim_type": "EXPLICIT",
+      "source": "KLP-12\u2013LZ\u2013GFP did not accumulate the plus-end tips of microtubules but detached from them upon arrival of the tips, consistent with the previous results of KIF21A and KIF21B (van der Vaart et al., 2013; van Riel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in TIRF assays (Figure 2E) and consistent with cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "1d9bed42-608d-4cd2-bb24-c7d3873eba0f",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C23",
+      "claim": "KLP-12\u2013LZ\u2013GFP represented a concentration dependent decrease of the microtubule growth rate at its plus-end.",
+      "claim_type": "EXPLICIT",
+      "source": "KLP-12\u2013LZ\u2013GFP represented a concentration dependent decrease of the microtubule growth rate at its plus-end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2F with decreasing growth rates at increasing KLP-12 concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "a3e47790-3985-4e3d-88a4-274fcb6fea7f",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C24",
+      "claim": "In the absence of KLP-12\u2013LZ\u2013GFP, the microtubule grew at the rate of 1.19\u00b10.35 \u00b5m/min.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of the KLP-12\u2013LZ\u2013GFP, the microtubule grew at the rate of 1.19\u00b10.35 \u00b5m/min (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "cc9a2ec8-84fb-4ba1-afa2-00f706027f44",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C25",
+      "claim": "Increasing amounts of KLP-12\u2013LZ\u2013GFP inhibited the microtubule growth rate, with mean rates of 1.00 \u00b5m/min at 30 nM and 0.77 \u00b5m/min at 300 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing amounts of KLP-12\u2013LZ\u2013GFP inhibited the microtubule growth rate, with mean rates of 1.00 \u00b5m/min at concentrations of 30 nM and 0.77 \u00b5m/min at 300 nM, respectively (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "62bc7194-07a2-4c7e-97c3-97283776ed39",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C26",
+      "claim": "Microtubule depolymerization rate was not affected by KLP-12\u2013LZ\u2013GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, microtubule depolymerization rate was not affected by KLP-12\u2013LZ\u2013GFP (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2H with no statistically significant differences detected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "5743a83f-694a-4490-8ec4-a1cd4d290cd9",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C27",
+      "claim": "The frequencies of microtubule catastrophe events and rescue events were slightly reduced in the presence of KLP-12\u2013LZ\u2013GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequencies of microtubule catastrophe events and rescue events were slightly reduced in the presence of KLP-12\u2013LZ\u2013GFP (Figure 2G1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2G and 2I with statistically significant reductions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "e43f2045-f25b-458d-9edb-2a9f9c07c793",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C28",
+      "claim": "The growth inhibition rate of KLP-12\u2013LZ\u2013GFP was very similar to that of KIF21A.",
+      "claim_type": "EXPLICIT",
+      "source": "We further compared the inhibitory effect of KLP-12 with the previously reported dynamics with other kinesin-4 family motors, illustrating that the growth inhibition rate of KLP-12\u2013LZ\u2013GFP was very similar to that of KIF21A (Figure 2\u2014figure supplement 1), a closely related family with 59.9% sequence identity to KLP-12 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparison in Figure 2\u2014figure supplement 1 and supported by sequence identity data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "64541102-f25a-466a-8e9b-6ffc3d2d5287",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C29",
+      "claim": "The basal ATPase activity of KLP-12(M) in the absence of tubulins or microtubules was 0.0039\u00b10.00095 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal ATPase activity of KLP-12(M) in the absence of tubulins or microtubules was 0.0039\u00b10.00095 s\u20131, comparable with the other kinesin motors (Hunter et al., 2003; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured in ATPase assays (Figure 3A) and compared to cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "d8d5359d-ba17-4dfa-89b7-0b3467a5fc03",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C30",
+      "claim": "The ATPase activity of KLP-12(M) was stimulated ~33 times by microtubules to reach a maximum rate of 0.13 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATPase activity of KLP-12(M) was stimulated ~33 times by microtubules to reach a maximum rate of 0.13 s\u20131.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured in ATPase assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "a99e1b40-1108-420c-b9f1-0c395312947f",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C31",
+      "claim": "The stimulation of KLP-12(M) ATPase by free GTP-tubulin dimers reached more than ~69 times to achieve a maximum rate of 0.27 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation by free GTP- and GDP- tubulin dimers reached more than ~69 and~100 times to achieve a maximum rate of 0.27 and 0.39 s\u20131, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured in ATPase assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "108ece92-d9e9-489a-9c79-7fee69c348f7",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C32",
+      "claim": "The stimulation of KLP-12(M) ATPase by free GDP-tubulin dimers reached more than ~100 times to achieve a maximum rate of 0.39 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation by free GTP- and GDP- tubulin dimers reached more than ~69 and~100 times to achieve a maximum rate of 0.27 and 0.39 s\u20131, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured in ATPase assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "e1dcfb82-47cc-4953-be04-181d3793eacc",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C33",
+      "claim": "KM,microtubules, KM,GTP-tubulin, and KM,GDP-tubulin of KLP-12(M) were 2.6 \u03bcM, 5.6 \u03bcM, and 22.2 \u03bcM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "KM,microtubules, KM,GTP-tubulin, and KM,GDP-tubulin were 2.6 \u03bcM, 5.6 \u03bcM, and 22.2 \u03bcM, respectively (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These values are calculated from ATPase kinetics data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "3c090eca-3634-4fcb-86df-fb5b8f2b0ec3",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C34",
+      "claim": "KLP-12(M) binds similarly to the microtubules and the GTP-tubulin-dimers but shows considerably weaker binding to the GDP-tubulin heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that KLP-12(M) binds similarly to the microtubules and the GTP-tubulin-dimers but shows considerably weaker binding to the GDP-tubulin heterodimers than to the microtubules or the GTP-tubulin heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the KM values showing higher KM for GDP-tubulin (22.2 \u03bcM) compared to microtubules (2.6 \u03bcM) and GTP-tubulin (5.6 \u03bcM).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "7ec2fd56-72c3-4428-a635-e92b7d2d229a",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C35",
+      "claim": "KLP-12 binds to both the microtubule lattice and the growing microtubule plus-end and activates its ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that KLP-12 binds to both the microtubule lattice and the growing microtubule plus-end and activates its ATPase, thus achieving microtubule motility and growing microtubule stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ATPase data showing activation by both microtubules and GTP-tubulin (Figure 3A) and motility data (Figure 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "b448df43-6d66-43c8-a59b-a83859a3a0e0",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C36",
+      "claim": "The crystal structure of the GTP-tubulin\u2013KLP-12\u2013DARPin complex was solved at 2.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We solved the crystal structure of the GTP-tubulin\u2013KLP-12\u2013DARPin complex at 2.9 \u00c5 resolution (Figure 3D and E; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and documented in Table 1 with crystallographic statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "7a0ddd68-1952-4dd2-9547-33405f43532e",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C37",
+      "claim": "KLP-12 forms an ATP conformation in which switches I and II take the closed conformation to hydrolyze ATP, and the neck linker docks to the motor core.",
+      "claim_type": "EXPLICIT",
+      "source": "KLP-12 forms an ATP conformation in which switches I and II take the closed conformation to hydrolyze ATP, and the neck linker docks to the motor core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 3D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "8fcb1dfe-8a43-4c49-a80c-32efd23f6433",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C38",
+      "claim": "In the nucleotide-binding pocket of KLP-12, the density corresponding to AMP-PNP was found with the Mg2+ ion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the nucleotide-binding pocket of KLP-12, the density corresponding to AMP-PNP was found with the Mg2+ ion (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electron density map shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0641b4d2-5faa-49ac-9be8-b026481e86b6",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C39",
+      "claim": "The highly conserved Ser217 of switch I and Gly264 of switch II are coordinated to the \u03b3-phosphate of AMP-PNP.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly conserved Ser217 of switch I and Gly264 of switch II are coordinated to the \u03b3-phosphate of AMP-PNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "d784519c-8f8a-4709-893f-47e255c65cc4",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C40",
+      "claim": "The back door between switch I Arg218 and switch II Glu266 was closed, representing the pre-hydrolysis state during ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The back door between switch I Arg218 and switch II Glu266 was also closed, representing the pre-hydrolysis state during ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "a4204738-d843-4eab-b5b6-03972a0b6920",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C41",
+      "claim": "The structure of KLP-12 (KIF21 subfamily) is very similar to KIF4 among the kinesin-4 family members.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the KLP-12 (KIF21 subfamily) is very similar to KIF4 among the kinesin-4 family members (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by structural superimposition in Figure 4B with low RMSD (1.928 \u00c5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "63bc0c63-ed3f-4138-8dd3-8ef4143151b3",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C42",
+      "claim": "Almost no structural differences exist in the main chains between KLP-12 and KIF4, except for the passive conformational changes in \u03b11a and \u03b25a-L8-\u03b25b upon tubulin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost no structural differences exist in the main chains, including nucleotide-dependent switch regions, except for the passive conformational changes in \u03b11a and \u03b25a-L8-\u03b25b upon tubulin binding, reflecting the conserved mechanisms of microtubule dynamics inhibition among kinesin-4 motors (Bringmann et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural comparison shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "757592b6-9576-4ffc-ade8-0fe05c30458d",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C43",
+      "claim": "KIF7 shows a moderate structural difference from KLP-12.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, KIF7 solved in a complex with microtubule by Cryo-EM shows a moderate structural difference from KLP-12 (Figure 4A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by structural comparison in Figure 4C with higher RMSD (3.392 \u00c5) than KIF4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "fae245d3-2d19-47f4-afac-26509c074453",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C44",
+      "claim": "Switch II (L11-\u03b14-L12-\u03b15-L13) and \u03b16-neck-linker of KIF7 are the most structurally different components from KLP-12 due to the decoupling of switch II conformational change from ATP hydrolysis cycle in KIF7.",
+      "claim_type": "EXPLICIT",
+      "source": "Switch II (L11-\u03b14-L12-\u03b15-L13) and \u03b16-neck-linker of KIF7 are the most structurally different components from KLP-12 due to the decoupling of switch II conformational change from ATP hydrolysis cycle in KIF7 (Jiang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural comparison in Figure 4C and supported by citation to Jiang et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "209263fd-7255-4696-89a9-3d34efcaea21",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C45",
+      "claim": "KLP-12 takes a similar conformation to KIF5B with RMSD value of 1.898 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "KLP-12 takes a similar conformation to KIF5B with RMSD value of 1.898 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from structural superimposition shown in Figure 4D and listed in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "5668c92a-5d19-45d8-aa9d-7b2c977ce57a",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C46",
+      "claim": "KIF2C has a very different microtubule-binding interface from KLP-12, including \u03b25a-L8-\u03b25b, switch II, and the class-specific long loop L2 among kinesin-13.",
+      "claim_type": "EXPLICIT",
+      "source": "KIF2C, on the other hand, has a very different microtubule-binding interface from KLP-12, including \u03b25a-L8-\u03b25b, switch II, and the class-specific long loop L2 among kinesin-13 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from structural comparison in Figure 4E with high RMSD (4.498 \u00c5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "157184e9-ef2c-404b-906a-4b603bdb3b8a",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C47",
+      "claim": "KLP-12 Arg267 interacts with tubulin Glu414/Glu420 in H12 with the hydrophobic support of KLP-12 Val343 in \u03b16 through the hydrophobic stem of \u03b1-tubulin Glu420.",
+      "claim_type": "EXPLICIT",
+      "source": "KLP-12 Arg267 interacts with tubulin Glu414/Glu420 in H12 with the hydrophobic support of KLP-12 Val343 in \u03b16 through the hydrophobic stem of \u03b1-tubulin Glu420 of \u03b1-tubulin, albeit Val343 is not conserved well among kinesin-4 (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "db1c661c-d445-45cf-8794-1aa73e5840bb",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C48",
+      "claim": "Lys269 in L11 of KLP-12 makes a salt-bridge with Glu155 in H4 of \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The other interface Lys269 in L11, which is conserved among KIF21 subfamily and KIF4 subfamily but not in KIF7 subfamily, makes a salt-bridge with Glu155 in H4 of \u03b1-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0adb072c-4839-4712-b7a6-1744450637ea",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C49",
+      "claim": "KLP-12 and possibly KIF4 generate triangle contacts among L11 of KLP-12, H4 of \u03b1-tubulin, and H12 of \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the KLP-12 and possibly KIF4 generate the triangle contacts among L11 of KLP-12, H4 of \u03b1-tubulin, and H12 of \u03b1-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observations of interactions shown in Figure 5A and sequence conservation data in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "6abccc43-e115-42cc-8107-5c378b40e6ee",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C50",
+      "claim": "The different interfacial organizations of KLP-12 and KIF5B to \u03b1-tubulin result in the counter-clockwise rotation of \u03b1-tubulin up to 4 degrees with Glu420 of \u03b1-tubulin as the fulcrum.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, KLP-12 takes unique triangle contacts with \u03b1-tubulin conserved among KIF4 and KIF21 subfamilies. The different interfacial organizations of KLP-12 and KIF5B to \u03b1-tubulin result in the counter-clockwise rotation of \u03b1-tubulin up to 4 degrees with Glu420 of \u03b1-tubulin as the fulcrum, via the formation of a family-specific salt bridge at Lys269-Glu155 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from structural comparison shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "b919fef7-9f3f-417a-b302-326adf9715b0",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C51",
+      "claim": "Although the interfaces between KLP-12 and KIF2C to \u03b1-tubulin are entirely different, the relative binding angle of KLP-12 and KIF2C with \u03b1-tubulin is consequently similar.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, although the interfaces between KLP-12 and KIF2C to \u03b1-tubulin are entirely different, the relative binding angle of KLP-12 and KIF2C with \u03b1-tubulin is consequently similar (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from structural comparison shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "2d253ebd-4508-4249-8503-fa67d606caa5",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C52",
+      "claim": "Two arginine residues, Arg311 and Arg317, in \u03b15 of KLP-12 form ionic interactions with Glu410 in H12 of \u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Two arginine residues, Arg311 and Arg317, in \u03b15 of KLP-12 form ionic interactions with Glu410 in H12 of \u03b2-tubulin (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "e52b2500-cb4b-4fda-a361-0c680c2d0898",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C53",
+      "claim": "These arginine residues (Arg311 and Arg317) are conserved in KIF5B.",
+      "claim_type": "EXPLICIT",
+      "source": "These arginine residues are conserved in KIF5B (Figure 6B; Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence alignment in Figure 6B and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "ecbf0c04-c20b-4855-9f05-235c99d95659",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C54",
+      "claim": "In KIF5B, the conserved arginine residues form intramolecular contacts with Glu157 in loop L8 instead of interacting with Glu420 of \u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "however, they form intramolecular contacts with Glu157 in loop L8 of KIF5B instead of interacting with Glu420 (corresponding to Glu410 in porcine) of \u03b2-tubulin (Figure 6\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the KIF5B structure shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "d3bd6d8f-9cf1-4b8d-bc6c-b2c94f273c4a",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C55",
+      "claim": "Asn151 is highly conserved in KIF4 and KIF21 subfamilies and KIF2C, but not in KIF5B.",
+      "claim_type": "EXPLICIT",
+      "source": "Asn151 is highly conserved in KIF4 and KIF21 subfamilies and KIF2C, but not in KIF5B (Figure 6B; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence alignment in Figure 6B and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "adad6258-9314-4476-81d5-e795aa80f017",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C56",
+      "claim": "The interaction within KLP-12 around Asn151 slightly rearranges the composition of \u03b15 to generate intermolecular interaction between Glu410 of \u03b2-tubulin instead of intramolecular interaction with Glu172 of KLP-12.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction within KLP-12 around Asn151 slightly rearranges the composition of \u03b15 to generate intermolecular interaction between Glu410 of \u03b2-tubulin instead of intramolecular interaction with Glu172 of KLP-12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural comparison shown in Figure 6A and Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0917a6e6-36da-4998-b8b5-86454866e8f7",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C57",
+      "claim": "KIF2C has Arg420 in \u03b25a that forms an ionic interaction with Asp414 and Glu417 at the N-terminal side of H12 of \u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this interaction, KIF2C has another intermolecular contact, which KLP-12 and KIF5B do not have. Arg420 in \u03b25a of KIF2C forms an ionic interaction with Asp414 and Glu417 at the N-terminal side of H12 of \u03b2-tubulin (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the KIF2C structure shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0d8adf1e-a421-4f66-8e96-982b782555a5",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C58",
+      "claim": "Arg311 and Arg317 of KLP-12 bridging to Glu410 of \u03b2-tubulin produces a clockwise rotation of \u03b2-tubulin around the motor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, Arg311 and Arg317 of KLP-12 bridge to Glu410 of \u03b2-tubulin produces a clockwise rotation of \u03b2-tubulin around the motor domain (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from structural comparison shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "517520aa-7e9a-4f44-9754-9f83045fda79",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C59",
+      "claim": "KLP-12 bends tubulin by 4.6 degrees more than KIF5B.",
+      "claim_type": "EXPLICIT",
+      "source": "KIF5B does not make an equivalent interaction, so the net result is that KLP-12 bends tubulin by 4.6 degrees more than KIF5B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from structural comparison shown in Figure 6C and Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "4372c93b-1a02-45da-929d-729424ea1700",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C60",
+      "claim": "The tubulin dimer with KIF5B forms the straightest conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The tubulin dimer with KIF5B, which generates a growing plus-end, forms the straightest conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural comparison shown in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0eb3740b-35ed-402b-ba58-e9122b921279",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C61",
+      "claim": "The tubulin dimer with KIF2C forms the most curved conformation, 6.4 degrees larger than that of KIF5B.",
+      "claim_type": "EXPLICIT",
+      "source": "The tubulin dimer with KIF2C, which is a plus-end destabilizing kinesin, forms the most curved conformation, 6.4 degrees larger than that of KIF5B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from structural comparison shown in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "e7cc63a4-b76f-4225-9c5e-8dd80b5e3580",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C62",
+      "claim": "KLP-12 induces intermediate curvature of the tubulin dimer, with the \u03b1- and \u03b2-tubulin angles being 4.6 degrees more curved than KIF5B.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, KLP-12 induces intermediate curvature of the tubulin dimer, with the \u03b1- and \u03b2-tubulin angles being 4.6 degrees more curved than KIF5B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from structural comparison shown in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "ec82fef1-01e0-4d8b-a147-fe3cb3e2214d",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C63",
+      "claim": "This precise control of tubulin curvature by KLP-12 is achieved by counter-clockwise rotation of \u03b1-tubulin and clockwise rotation of \u03b2-tubulin around KLP-12.",
+      "claim_type": "EXPLICIT",
+      "source": "This precise control of tubulin curvature by KLP-12 is achieved by counter-clockwise rotation of \u03b1-tubulin (Figure 5C) and clockwise rotation of \u03b2-tubulin (Figure 6C) around KLP-12, seen from the left side of the protofilament.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural observations shown in Figure 5C and Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "67ca28bc-1a1f-4739-bdc7-09a91287e288",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C64",
+      "claim": "klp-12(tm10890) is a null allele because the mutation induces deletion of exon 4\u20136, resulting in a frameshift.",
+      "claim_type": "EXPLICIT",
+      "source": "klp-12(tm10890) was considered to be a null allele because the mutation induces deletion of exon 4\u20136, resulting in a frameshift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the genomic structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "fad24d37-55e1-4d1c-9951-dc99d5cfccf8",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C65",
+      "claim": "klp-12(tm5176) had a deletion mutation in exons encoding the tail domain.",
+      "claim_type": "EXPLICIT",
+      "source": "klp-12(tm5176) had a deletion mutation in exons encoding the tail domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the genomic structure in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "30950cae-4973-4a31-b626-5b015027d074",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C66",
+      "claim": "In wild-type animals, the axonal tip of PLM neurons does not reach the cell body of ALM without overlapping with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type animals, the axonal tip of PLM neurons does not reach the cell body of ALM without overlapping with each other (wild-type in Figure 1D and E; Gallegos and Bargmann, 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 1D-E and supported by citation to Gallegos and Bargmann, 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "7d72389e-400c-431e-8e78-7dfad588b290",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C67",
+      "claim": "The appropriate activity of KLP-12 is necessary to achieve proper length control of axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with these results, the appropriate activity of KLP-12 is necessary to achieve proper length control of axons, suggesting that the function of KIF21/KLP-12 family proteins (Figure 1A) is evolutionarily conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic data showing both loss-of-function and overexpression phenotypes (Figure 1D-G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "280017d6-b0e9-4bd8-849f-23d134e59e95",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C68",
+      "claim": "The function of KIF21/KLP-12 family proteins is evolutionarily conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with these results, the appropriate activity of KLP-12 is necessary to achieve proper length control of axons, suggesting that the function of KIF21/KLP-12 family proteins (Figure 1A) is evolutionarily conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity in function between KLP-12 and mammalian orthologs KIF21A/B, supported by phylogenetic analysis (Figure 1A, Figure 1\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "b6bf5038-0dbb-4119-8118-9de60470a991",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C69",
+      "claim": "Mammalian orthologs of KLP-12, KIF21A, and KIF21B, regulate the axon length by inhibiting the microtubule polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian orthologs of KLP-12, KIF21A, and KIF21B, regulate the axon length by inhibiting the microtubule polymerization (van der Vaart et al., 2013; van Riel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to van der Vaart et al., 2013 and van Riel et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "f2182040-e30b-4f83-82f0-3984e4e17a85",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C70",
+      "claim": "Xklp1/KIF4 was first reported to reduce both microtubule growth and the catastrophe rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Xklp1/KIF4, a fast processive motor, was first reported to reduce both microtubule growth and the catastrophe rate (Bieling et al., 2010; Bringmann et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bieling et al., 2010 and Bringmann et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "dc930f18-8031-4f78-8d40-a37694532c7f",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C71",
+      "claim": "The motor domain of Xklp1/KIF4 is able to bind not only to the microtubule lattices for microtubule-based motility but also to the curved tubulin dimers for inhibition of microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Its motor domain is able to bind not only to the microtubule lattices for microtubule-based motility but also to the curved tubulin dimers for inhibition of microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on cited studies of Xklp1/KIF4.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "590010a5-6238-4de5-b023-8b52406b9dd4",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C72",
+      "claim": "Nonmotile KIF7 was reported to reduce the microtubule growth rate but enhance catastrophe to organize the tips of ciliary microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonmotile KIF7 was reported to reduce the microtubule growth rate but enhance catastrophe to organize the tips of ciliary microtubules (He et al., 2014; Yue et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to He et al., 2014 and Yue et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "769d289b-4d4d-456e-bf52-cc58547af8ab",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C73",
+      "claim": "The processive motor KIF21A/B reduces microtubule growth and catastrophes similar to Xklp1/KIF4.",
+      "claim_type": "EXPLICIT",
+      "source": "The processive motor KIF21A/B reduces microtubule growth and catastrophes similar to Xklp1/KIF4 (van der Vaart et al., 2013; van Riel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to van der Vaart et al., 2013 and van Riel et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "4eda02bf-fe8d-4a53-8326-eb39fcc60992",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C74",
+      "claim": "Kinesin-1 changes the conformation of unstable GDP microtubules into a conformation resembling the GTP microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-1, the founding member of the KIFs, changes the conformation of unstable GDP microtubules into a conformation resembling the GTP microtubules (Muto et al., 2005; Shima et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Muto et al., 2005 and Shima et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "89da717e-32fb-4494-b5ec-c50c5245c676",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C75",
+      "claim": "Kinesin-13 destabilizes both the plus and minus ends of microtubules to induce catastrophe or depolymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, kinesin-13 destabilizes both the plus and minus ends of microtubules to induce catastrophe or depolymerization (Desai et al., 1999; Ogawa et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Desai et al., 1999 and Ogawa et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0b1564cc-bbfd-41f2-8822-b5623944b50a",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C76",
+      "claim": "Kinesin-8 moves processively toward the microtubule plus-end, where it depolymerizes microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-8 moves processively toward the microtubule plus-end, where it depolymerizes microtubule (Gupta et al., 2006; Niwa et al., 2012; Varga et al., 2006; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gupta et al., 2006; Niwa et al., 2012; Varga et al., 2006; Wang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "068927e7-ce58-470d-9c9b-3461975e8154",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C77",
+      "claim": "Kinesin-4 is known to inhibit microtubule dynamics and is classified into three subfamilies: the KIF4 subfamily, the KIF7 subfamily, and the KIF21 subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-4, another family of kinesins, is known to inhibit microtubule dynamics and is classified into three subfamilies: the KIF4 subfamily, the KIF7 subfamily, and the KIF21 subfamily (Yue et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yue et al., 2018 and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "6fafc7fa-db7d-40dc-be8f-d715af1e646c",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C78",
+      "claim": "Changes in the curvature of the peeled plus-ends of microtubules are fundamental to microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "As summarized previously, changes in the curvature of the peeled plus-ends of microtubules are fundamental to microtubule dynamics (Brouhard and Rice, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Brouhard and Rice, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "43f752b3-e157-40af-b222-69e727f75cec",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C79",
+      "claim": "Less curved plus-end polymerizes the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "less curved plus-end polymerizes the microtubule, more curved plus-end shortens the microtubule, and middle curved plus-end stabilizes the microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about microtubule dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "24bb0de5-f977-417a-9821-ab5ca25a11d0",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C80",
+      "claim": "More curved plus-end shortens the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "less curved plus-end polymerizes the microtubule, more curved plus-end shortens the microtubule, and middle curved plus-end stabilizes the microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about microtubule dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "87eb3369-c2a9-43a6-a8de-1f20fe4c3636",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C81",
+      "claim": "Middle curved plus-end stabilizes the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "less curved plus-end polymerizes the microtubule, more curved plus-end shortens the microtubule, and middle curved plus-end stabilizes the microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about microtubule dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "75b9c2e0-9ca0-496d-a9ba-acb04f32cf22",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C82",
+      "claim": "The structural model of KLP-12 is consistent with the previously reported effects of microtubule elongation or destabilization by the motor domains of various kinesin superfamily proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our study provides important structural clues regarding a novel molecular mechanism by which kinesin-4 inhibits microtubule dynamics. This structural model is consistent with the previously reported effects of microtubule elongation or destabilization by the motor domains of various kinesin superfamily proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of KLP-12 structure with KIF5B and KIF2C structures and their known functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "17e6590c-dcdd-4348-9191-cd501b67ad9a",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C83",
+      "claim": "KLP-12 interacts with \u03b1-tubulin through triangle contacts at the N-terminal side of H12 and H4.",
+      "claim_type": "EXPLICIT",
+      "source": "From the crystal structural analysis, we identified the specific interactions of KLP-12 for \u03b1- and \u03b2-tubulins (Figure 4; Figure 5). The contributing residues are mostly conserved among KIF4 and KIF21 subfamilies, suggesting the conserved structural mechanisms. KLP-12 interacts with \u03b1-tubulin through the triangle contacts at the N-terminal side of H12 and H4",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "2fb7b4e0-aa6a-4b9d-b395-5502b83c75ba",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C84",
+      "claim": "KLP-12 interacts with \u03b2-tubulin at the mid-portion of H12.",
+      "claim_type": "EXPLICIT",
+      "source": "KLP-12 interacts with \u03b1-tubulin through the triangle contacts at the N-terminal side of H12 and H4, and \u03b2-tubulin at the mid-portion of H12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "237f897e-7e33-450f-8e66-f0573304f285",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C85",
+      "claim": "Kinesin-1 makes single contact with \u03b1-tubulin at the N-terminal side of \u03b1-tubulin H12 but no contact with \u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-1 makes single contact with \u03b1-tubulin at the N-terminal side of \u03b1-tubulin H12 but no contact with \u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural comparison shown in Figure 5\u2014figure supplement 1A and Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "b8e1e01a-398c-476b-83f1-ec5a9f559cca",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C86",
+      "claim": "Kinesin-13 binds to \u03b1-tubulin at the C-terminal side of H12 through the KVD finger and to \u03b2-tubulin at the N-terminal side of H12, in addition to the mid-portion contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-13 binds to \u03b1-tubulin at the C-terminal side of H12 through the KVD finger and to \u03b2-tubulin at the N-terminal side of H12, in addition to the mid-portion contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural comparison shown in Figure 5\u2014figure supplement 1B and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0683b92d-7f0e-4309-a50f-420805f05a73",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C87",
+      "claim": "Kinesin-1 cannot bend the protofilament and allows microtubules to polymerize.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-1 cannot bend the protofilament and allows microtubules to polymerize, whereas kinesin-13 strongly bends the protofilament to depolymerize microtubules (Ogawa et al., 2004; Shima et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ogawa et al., 2004 and Shima et al., 2018, and structural data showing minimal tubulin curvature with KIF5B (Figure 7).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "31205d87-ee73-4607-bb5d-e8ebadfa6aa8",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C88",
+      "claim": "Kinesin-13 strongly bends the protofilament to depolymerize microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-1 cannot bend the protofilament and allows microtubules to polymerize, whereas kinesin-13 strongly bends the protofilament to depolymerize microtubules (Ogawa et al., 2004; Shima et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ogawa et al., 2004 and Shima et al., 2018, and structural data showing maximal tubulin curvature with KIF2C (Figure 7).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "517b8254-8b84-40b4-b842-4e6ad8f0468c",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C89",
+      "claim": "KLP-12 expresses the mild effect of protofilament bending, enabling the inhibition of both the polymerization and depolymerization of the microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "KLP-12 expresses the mild effect of protofilament bending, enabling the inhibition of both the polymerization and depolymerization of the microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data showing intermediate tubulin curvature (Figure 7) and functional data showing reduced growth rate and catastrophe frequency (Figure 2F, G, I).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "fe2f8fc5-9fad-4eca-9db3-15fd2f5bb134",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C90",
+      "claim": "The contributing residues for KLP-12-tubulin interactions are mostly conserved among KIF4 and KIF21 subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "From the crystal structural analysis, we identified the specific interactions of KLP-12 for \u03b1- and \u03b2-tubulins (Figure 4; Figure 5). The contributing residues are mostly conserved among KIF4 and KIF21 subfamilies, suggesting the conserved structural mechanisms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in sequence alignments in Figure 5B and Figure 6B, and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "eb22bcdc-6319-4e99-a023-348c5a799072",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C91",
+      "claim": "The tail domain of KLP-12 is required to tether itself to microtubules to continuously stabilize the plus ends.",
+      "claim_type": "IMPLICIT",
+      "source": "However, since ATP hydrolysis detaches KLP-12 from the microtubule ends, the tail domain should be required to tether itself to microtubules to continuously stabilize the plus ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the motor domain alone detaches upon ATP hydrolysis, and comparison with KIF21B where the WD40 domain holds onto microtubule tips.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "2ba0c9be-d78b-44c8-b223-d75e238bf68e",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C92",
+      "claim": "klp-12(tm5176) is a hypomorphic allele that expresses tail-deleted KLP-12 protein.",
+      "claim_type": "IMPLICIT",
+      "source": "This would be because klp-12(tm5176) is a hypomorphic allele that expresses tail-deleted KLP-12 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the milder phenotype of tm5176 compared to tm10890 and the nature of the deletion affecting the tail domain.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "b0341d40-b8bd-4405-9fec-d4f66995da73",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C93",
+      "claim": "Full activation of KIF21A requires binding the tail domain with a cell cortex protein KANK.",
+      "claim_type": "EXPLICIT",
+      "source": "It is consistent with the previous study showing that full activation of KIF21A, an orthologue of KLP-12, requires binding the tail domain with a cell cortex protein KANK (van der Vaart et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to van der Vaart et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0a703fd7-ccf7-48ba-a03c-ee3cdaa22dab",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "claim_id": "C94",
+      "claim": "The motor defect made the axon wavy and thin, whereas the tail defect did not change the thickness of axons.",
+      "claim_type": "EXPLICIT",
+      "source": "We should note here the phenotypic difference between the motor and tail defects; the motor defect made the axon wavy and thinly, whereas the tail defect did not change the thickness of axons (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the phenotypes of tm10890 (motor defect) and tm5176 (tail defect) in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "38b05298-96ee-43fb-8f32-f05ade3d9c95",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "KLP-12 is a C. elegans ortholog of mammalian KIF21A/B, and the function of KIF21/KLP-12 family proteins is evolutionarily conserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C68 are well-supported by phylogenetic analysis (Figure 1A, Figure 1\u2014figure supplement 1) showing orthology relationships, and by functional similarity demonstrated through genetic experiments showing axon length regulation in both C. elegans (C2, C16-18) and mammalian systems (C69). The sequence identity data (59.9% with KIF21A) and similar microtubule inhibition profiles (C28) further support evolutionary conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "b55079ca-b603-4f6d-a4a0-f3349120c45e",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "KLP-12 is essential for proper axon length control in C. elegans, with both loss-of-function and overexpression causing axon length defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C16-18, and C67 are strongly supported by genetic data showing that klp-12 mutants have axon length defects (>30% overlap in tm5176, >50% in tm10890; Figure 1D-E) and overexpression causes shortened axons (Figure 1F-G). The characterization of the two alleles (C64-65) and wild-type phenotype (C66) provide appropriate controls. Sample sizes are adequate (n=55-60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "1871366c-1f20-40df-a015-55dac8ca3b2e",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The motor domain of KLP-12 is a plus-end directed processive motor that inhibits microtubule polymerization in vitro by reducing growth rate and catastrophe frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C19-27 are well-supported by TIRF microscopy data showing processive motility (0.81\u00b10.32 \u00b5m/s velocity, 1.30\u00b10.89 \u00b5m run length; Figure 2B-D) and concentration-dependent inhibition of microtubule growth (Figure 2F). The lack of effect on depolymerization rate (C26) and reduction in catastrophe/rescue frequencies (C27) are clearly demonstrated. Statistical analyses are appropriate with adequate sample sizes (n=52-407). Comparison with KIF21A (C28) validates the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "5c689bcb-70a0-4674-aa2a-82ce002a12a5",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KLP-12 motor domain binds to both microtubule lattice and GTP-tubulin dimers with similar affinity, activating ATPase in both contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-35 are supported by steady-state ATPase kinetics showing basal activity (0.0039 s\u207b\u00b9), microtubule-stimulated activity (~33-fold, 0.13 s\u207b\u00b9), and GTP-tubulin-stimulated activity (~69-fold, 0.27 s\u207b\u00b9) with similar KM values for microtubules (2.6 \u00b5M) and GTP-tubulin (5.6 \u00b5M) but weaker binding to GDP-tubulin (22.2 \u00b5M; Figure 3A). The conclusion (C35) logically follows from the data. Error bars are provided and experiments were performed in triplicate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "b497d312-97f1-4eb5-ab96-1be693593c60",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The crystal structure of KLP-12 motor domain complexed with GTP-tubulin was solved at 2.9 \u00c5 resolution, revealing an ATP-bound conformation with closed switches and docked neck linker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C36-40 are well-supported by crystallographic data (Table 1) showing 2.9 \u00c5 resolution structure with good refinement statistics (Rwork/Rfree = 0.211/0.296, 92.5% Ramachandran favored). The structural features described (ATP conformation, switch positions, AMP-PNP density, closed back door) are directly observed in the electron density maps (Figure 3D-F). The claim that this represents the 'inhibition state' (C4) is reasonable given the functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "0a6bb6b8-4376-4dc9-9465-c743ff580016",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Structural comparison reveals KLP-12 is very similar to KIF4 (RMSD 1.928 \u00c5) and KIF5B (RMSD 1.898 \u00c5), but differs from KIF7 (RMSD 3.392 \u00c5) and KIF2C (RMSD 4.498 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-46 are supported by structural superimposition data (Figure 4) with quantitative RMSD values provided. The structural similarities and differences are clearly documented, with appropriate explanations for variations (e.g., switch II decoupling in KIF7, different microtubule-binding interface in KIF2C). The comparisons are made using appropriate reference structures from the PDB.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "4eca3de4-37fa-4eff-9579-f6d8ac100899",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "KLP-12 forms unique triangle contacts with \u03b1-tubulin through conserved residues (Arg267, Lys269) that induce counter-clockwise rotation of \u03b1-tubulin by ~4 degrees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-51, C83, and C90 are well-supported by structural analysis (Figure 5A) showing specific interactions between KLP-12 residues and \u03b1-tubulin helices H4 and H12. Sequence conservation among KIF4 and KIF21 subfamilies is documented (Figure 5B, Figure 1\u2014figure supplement 2). The 4-degree rotation is quantified from structural superimposition (Figure 5C). The comparison with KIF5B and KIF2C binding modes provides context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "KLP-12 interacts with \u03b2-tubulin through conserved arginine residues (Arg311, Arg317) that induce clockwise rotation of \u03b2-tubulin, bending tubulin by 4.6 degrees more than KIF5B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-59 and C84 are supported by structural analysis (Figure 6A) showing specific interactions between KLP-12 \u03b15 helix and \u03b2-tubulin H12. The role of Asn151 in rearranging \u03b15 composition (C55-56) is well-explained. Sequence conservation data (Figure 6B) and comparison with KIF5B and KIF2C (Figure 6C-D, Figure 6\u2014figure supplement 1) support the conclusions. The 4.6-degree bending is quantified from structural measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "7f9f5fa3-bd58-419c-b606-5ec7d45e30c1",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "KLP-12 induces intermediate tubulin curvature (4.6 degrees more than KIF5B, 1.8 degrees less than KIF2C) through coordinated counter-clockwise rotation of \u03b1-tubulin and clockwise rotation of \u03b2-tubulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-6 and C59-63 are well-supported by structural comparison data (Figure 7A-C) showing quantitative measurements of tubulin curvature. The intermediate curvature of KLP-12 between KIF5B (straightest) and KIF2C (most curved) is clearly demonstrated. The mechanism involving coordinated rotations of both tubulin subunits (C63) is supported by the structural analyses in Figures 5C and 6C. The measurements are consistent across claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "d80d4ca2-c6e9-4229-8980-3ea907f191b9",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "KLP-12 controls axon length by modulating microtubule end curvature to inhibit microtubule dynamics, consistent with the general principle that intermediate curvature stabilizes microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C82, and C89 integrate genetic (Figure 1), biochemical (Figure 2), and structural (Figures 5-7) data to support the mechanistic model. The general principles about curvature and microtubule dynamics (C78-81) are well-established and properly cited (Brouhard and Rice, 2014). The intermediate curvature induced by KLP-12 is consistent with its function in stabilizing microtubule ends. The model is logically coherent and supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "a15699d7-9020-4be3-b64f-ffa42d6580f9",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Kinesin-1 makes minimal contact with tubulin and allows polymerization, while kinesin-13 makes extensive contacts and strongly bends protofilaments to depolymerize microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-88 are supported by structural comparisons (Figure 5\u2014figure supplement 1, Figure 6\u2014figure supplement 1) and citations to established literature (Ogawa et al., 2004; Shima et al., 2018). The structural data showing different binding interfaces and tubulin curvatures (Figure 7) are consistent with the known functions of these motors. These claims provide important context for understanding KLP-12's intermediate behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "e8c392e6-92e5-4b63-b37a-223e5bdb1d2b",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The tail domain of KLP-12 is likely required for sustained microtubule stabilization, as evidenced by the milder phenotype of the tail-deletion mutant and comparison with KIF21A regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-93 are largely inferential. While the milder phenotype of tm5176 vs tm10890 (C16-17) and the difference in axon morphology (C94) are observed, the claim that tm5176 expresses tail-deleted protein (C92) is not directly demonstrated. The inference about tail domain function (C91) is reasonable based on the KIF21B WD40 domain function (C15) and KIF21A-KANK interaction (C93), but lacks direct experimental validation in this study. Protein expression analysis would strengthen these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    },
+    {
+      "id": "f48afc06-3d46-479e-94e2-3443d974b929",
+      "content_id": "3d22b18c-38b6-4353-b689-69aeceeed992",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work establishes that kinesin-4 family proteins, including KIF21A/B, regulate microtubule dynamics and are linked to various diseases, with motor domains playing crucial roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-15 and C69-77 summarize established literature with appropriate citations. These background claims provide context for the current study and are properly attributed to original sources. The citations appear accurate and relevant. These claims establish the biological importance and prior mechanistic understanding of kinesin-4 proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:29:31.922337Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "68027fb5-0149-443b-bfd5-6b127825edad",
+      "result_id": "38b05298-96ee-43fb-8f32-f05ade3d9c95"
+    },
+    {
+      "claim_id": "280017d6-b0e9-4bd8-849f-23d134e59e95",
+      "result_id": "38b05298-96ee-43fb-8f32-f05ade3d9c95"
+    },
+    {
+      "claim_id": "0e45f7db-e9dc-47d5-9073-edf082b634d2",
+      "result_id": "b55079ca-b603-4f6d-a4a0-f3349120c45e"
+    },
+    {
+      "claim_id": "0063edf5-f5aa-4e29-9258-1ce533b5635f",
+      "result_id": "b55079ca-b603-4f6d-a4a0-f3349120c45e"
+    },
+    {
+      "claim_id": "8aa07f7e-6a09-4073-94c5-9a1d92dd70d5",
+      "result_id": "b55079ca-b603-4f6d-a4a0-f3349120c45e"
+    },
+    {
+      "claim_id": "f7c8f2be-e7de-4fec-bbef-3b81db90105f",
+      "result_id": "b55079ca-b603-4f6d-a4a0-f3349120c45e"
+    },
+    {
+      "claim_id": "67ca28bc-1a1f-4739-bdc7-09a91287e288",
+      "result_id": "b55079ca-b603-4f6d-a4a0-f3349120c45e"
+    },
+    {
+      "claim_id": "fad24d37-55e1-4d1c-9951-dc99d5cfccf8",
+      "result_id": "b55079ca-b603-4f6d-a4a0-f3349120c45e"
+    },
+    {
+      "claim_id": "30950cae-4973-4a31-b626-5b015027d074",
+      "result_id": "b55079ca-b603-4f6d-a4a0-f3349120c45e"
+    },
+    {
+      "claim_id": "7d72389e-400c-431e-8e78-7dfad588b290",
+      "result_id": "b55079ca-b603-4f6d-a4a0-f3349120c45e"
+    },
+    {
+      "claim_id": "4990b335-d8f6-4000-9f68-0a3b7c081aa6",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "3e2e3159-85dc-411e-9dd3-aec2e380dd7c",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "b06af770-20ac-47a0-8473-1b3f519742b5",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "a83b5b9a-ddb9-4936-a48e-c35cfef08dc7",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "f2422643-ef83-44e8-96f7-77e38ffd9c46",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "1d9bed42-608d-4cd2-bb24-c7d3873eba0f",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "a3e47790-3985-4e3d-88a4-274fcb6fea7f",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "cc9a2ec8-84fb-4ba1-afa2-00f706027f44",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "62bc7194-07a2-4c7e-97c3-97283776ed39",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "5743a83f-694a-4490-8ec4-a1cd4d290cd9",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "e43f2045-f25b-458d-9edb-2a9f9c07c793",
+      "result_id": "1871366c-1f20-40df-a015-55dac8ca3b2e"
+    },
+    {
+      "claim_id": "64541102-f25a-466a-8e9b-6ffc3d2d5287",
+      "result_id": "5c689bcb-70a0-4674-aa2a-82ce002a12a5"
+    },
+    {
+      "claim_id": "d8d5359d-ba17-4dfa-89b7-0b3467a5fc03",
+      "result_id": "5c689bcb-70a0-4674-aa2a-82ce002a12a5"
+    },
+    {
+      "claim_id": "a99e1b40-1108-420c-b9f1-0c395312947f",
+      "result_id": "5c689bcb-70a0-4674-aa2a-82ce002a12a5"
+    },
+    {
+      "claim_id": "108ece92-d9e9-489a-9c79-7fee69c348f7",
+      "result_id": "5c689bcb-70a0-4674-aa2a-82ce002a12a5"
+    },
+    {
+      "claim_id": "e1dcfb82-47cc-4953-be04-181d3793eacc",
+      "result_id": "5c689bcb-70a0-4674-aa2a-82ce002a12a5"
+    },
+    {
+      "claim_id": "3c090eca-3634-4fcb-86df-fb5b8f2b0ec3",
+      "result_id": "5c689bcb-70a0-4674-aa2a-82ce002a12a5"
+    },
+    {
+      "claim_id": "7ec2fd56-72c3-4428-a635-e92b7d2d229a",
+      "result_id": "5c689bcb-70a0-4674-aa2a-82ce002a12a5"
+    },
+    {
+      "claim_id": "24801b08-884c-4168-83ac-8c69ec86e68e",
+      "result_id": "b497d312-97f1-4eb5-ab96-1be693593c60"
+    },
+    {
+      "claim_id": "b448df43-6d66-43c8-a59b-a83859a3a0e0",
+      "result_id": "b497d312-97f1-4eb5-ab96-1be693593c60"
+    },
+    {
+      "claim_id": "7a0ddd68-1952-4dd2-9547-33405f43532e",
+      "result_id": "b497d312-97f1-4eb5-ab96-1be693593c60"
+    },
+    {
+      "claim_id": "8fcb1dfe-8a43-4c49-a80c-32efd23f6433",
+      "result_id": "b497d312-97f1-4eb5-ab96-1be693593c60"
+    },
+    {
+      "claim_id": "0641b4d2-5faa-49ac-9be8-b026481e86b6",
+      "result_id": "b497d312-97f1-4eb5-ab96-1be693593c60"
+    },
+    {
+      "claim_id": "d784519c-8f8a-4709-893f-47e255c65cc4",
+      "result_id": "b497d312-97f1-4eb5-ab96-1be693593c60"
+    },
+    {
+      "claim_id": "a4204738-d843-4eab-b5b6-03972a0b6920",
+      "result_id": "0a6bb6b8-4376-4dc9-9465-c743ff580016"
+    },
+    {
+      "claim_id": "63bc0c63-ed3f-4138-8dd3-8ef4143151b3",
+      "result_id": "0a6bb6b8-4376-4dc9-9465-c743ff580016"
+    },
+    {
+      "claim_id": "757592b6-9576-4ffc-ade8-0fe05c30458d",
+      "result_id": "0a6bb6b8-4376-4dc9-9465-c743ff580016"
+    },
+    {
+      "claim_id": "fae245d3-2d19-47f4-afac-26509c074453",
+      "result_id": "0a6bb6b8-4376-4dc9-9465-c743ff580016"
+    },
+    {
+      "claim_id": "209263fd-7255-4696-89a9-3d34efcaea21",
+      "result_id": "0a6bb6b8-4376-4dc9-9465-c743ff580016"
+    },
+    {
+      "claim_id": "5668c92a-5d19-45d8-aa9d-7b2c977ce57a",
+      "result_id": "0a6bb6b8-4376-4dc9-9465-c743ff580016"
+    },
+    {
+      "claim_id": "157184e9-ef2c-404b-906a-4b603bdb3b8a",
+      "result_id": "4eca3de4-37fa-4eff-9579-f6d8ac100899"
+    },
+    {
+      "claim_id": "db1c661c-d445-45cf-8794-1aa73e5840bb",
+      "result_id": "4eca3de4-37fa-4eff-9579-f6d8ac100899"
+    },
+    {
+      "claim_id": "0adb072c-4839-4712-b7a6-1744450637ea",
+      "result_id": "4eca3de4-37fa-4eff-9579-f6d8ac100899"
+    },
+    {
+      "claim_id": "6abccc43-e115-42cc-8107-5c378b40e6ee",
+      "result_id": "4eca3de4-37fa-4eff-9579-f6d8ac100899"
+    },
+    {
+      "claim_id": "b919fef7-9f3f-417a-b302-326adf9715b0",
+      "result_id": "4eca3de4-37fa-4eff-9579-f6d8ac100899"
+    },
+    {
+      "claim_id": "17e6590c-dcdd-4348-9191-cd501b67ad9a",
+      "result_id": "4eca3de4-37fa-4eff-9579-f6d8ac100899"
+    },
+    {
+      "claim_id": "fe2f8fc5-9fad-4eca-9db3-15fd2f5bb134",
+      "result_id": "4eca3de4-37fa-4eff-9579-f6d8ac100899"
+    },
+    {
+      "claim_id": "2d253ebd-4508-4249-8503-fa67d606caa5",
+      "result_id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8"
+    },
+    {
+      "claim_id": "e52b2500-cb4b-4fda-a361-0c680c2d0898",
+      "result_id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8"
+    },
+    {
+      "claim_id": "ecbf0c04-c20b-4855-9f05-235c99d95659",
+      "result_id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8"
+    },
+    {
+      "claim_id": "d3bd6d8f-9cf1-4b8d-bc6c-b2c94f273c4a",
+      "result_id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8"
+    },
+    {
+      "claim_id": "adad6258-9314-4476-81d5-e795aa80f017",
+      "result_id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8"
+    },
+    {
+      "claim_id": "0917a6e6-36da-4998-b8b5-86454866e8f7",
+      "result_id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8"
+    },
+    {
+      "claim_id": "0d8adf1e-a421-4f66-8e96-982b782555a5",
+      "result_id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8"
+    },
+    {
+      "claim_id": "517520aa-7e9a-4f44-9754-9f83045fda79",
+      "result_id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8"
+    },
+    {
+      "claim_id": "2fb7b4e0-aa6a-4b9d-b395-5502b83c75ba",
+      "result_id": "17a38ed9-8bd5-4656-9ec6-d26be773afa8"
+    },
+    {
+      "claim_id": "74e3421b-4147-4ac9-98df-faa838ccd287",
+      "result_id": "7f9f5fa3-bd58-419c-b606-5ec7d45e30c1"
+    },
+    {
+      "claim_id": "37e762a8-0d8a-40a5-a667-25431b7c2bc9",
+      "result_id": "7f9f5fa3-bd58-419c-b606-5ec7d45e30c1"
+    },
+    {
+      "claim_id": "517520aa-7e9a-4f44-9754-9f83045fda79",
+      "result_id": "7f9f5fa3-bd58-419c-b606-5ec7d45e30c1"
+    },
+    {
+      "claim_id": "4372c93b-1a02-45da-929d-729424ea1700",
+      "result_id": "7f9f5fa3-bd58-419c-b606-5ec7d45e30c1"
+    },
+    {
+      "claim_id": "0eb3740b-35ed-402b-ba58-e9122b921279",
+      "result_id": "7f9f5fa3-bd58-419c-b606-5ec7d45e30c1"
+    },
+    {
+      "claim_id": "e7cc63a4-b76f-4225-9c5e-8dd80b5e3580",
+      "result_id": "7f9f5fa3-bd58-419c-b606-5ec7d45e30c1"
+    },
+    {
+      "claim_id": "ec82fef1-01e0-4d8b-a147-fe3cb3e2214d",
+      "result_id": "7f9f5fa3-bd58-419c-b606-5ec7d45e30c1"
+    },
+    {
+      "claim_id": "75d3ab64-83e6-4a3d-b791-82e5a74d4b61",
+      "result_id": "d80d4ca2-c6e9-4229-8980-3ea907f191b9"
+    },
+    {
+      "claim_id": "6fafc7fa-db7d-40dc-be8f-d715af1e646c",
+      "result_id": "d80d4ca2-c6e9-4229-8980-3ea907f191b9"
+    },
+    {
+      "claim_id": "43f752b3-e157-40af-b222-69e727f75cec",
+      "result_id": "d80d4ca2-c6e9-4229-8980-3ea907f191b9"
+    },
+    {
+      "claim_id": "24bb0de5-f977-417a-9821-ab5ca25a11d0",
+      "result_id": "d80d4ca2-c6e9-4229-8980-3ea907f191b9"
+    },
+    {
+      "claim_id": "87eb3369-c2a9-43a6-a8de-1f20fe4c3636",
+      "result_id": "d80d4ca2-c6e9-4229-8980-3ea907f191b9"
+    },
+    {
+      "claim_id": "75b9c2e0-9ca0-496d-a9ba-acb04f32cf22",
+      "result_id": "d80d4ca2-c6e9-4229-8980-3ea907f191b9"
+    },
+    {
+      "claim_id": "517b8254-8b84-40b4-b842-4e6ad8f0468c",
+      "result_id": "d80d4ca2-c6e9-4229-8980-3ea907f191b9"
+    },
+    {
+      "claim_id": "237f897e-7e33-450f-8e66-f0573304f285",
+      "result_id": "a15699d7-9020-4be3-b64f-ffa42d6580f9"
+    },
+    {
+      "claim_id": "b8e1e01a-398c-476b-83f1-ec5a9f559cca",
+      "result_id": "a15699d7-9020-4be3-b64f-ffa42d6580f9"
+    },
+    {
+      "claim_id": "0683b92d-7f0e-4309-a50f-420805f05a73",
+      "result_id": "a15699d7-9020-4be3-b64f-ffa42d6580f9"
+    },
+    {
+      "claim_id": "31205d87-ee73-4607-bb5d-e8ebadfa6aa8",
+      "result_id": "a15699d7-9020-4be3-b64f-ffa42d6580f9"
+    },
+    {
+      "claim_id": "eb22bcdc-6319-4e99-a023-348c5a799072",
+      "result_id": "e8c392e6-92e5-4b63-b37a-223e5bdb1d2b"
+    },
+    {
+      "claim_id": "2ba0c9be-d78b-44c8-b223-d75e238bf68e",
+      "result_id": "e8c392e6-92e5-4b63-b37a-223e5bdb1d2b"
+    },
+    {
+      "claim_id": "b0341d40-b8bd-4405-9fec-d4f66995da73",
+      "result_id": "e8c392e6-92e5-4b63-b37a-223e5bdb1d2b"
+    },
+    {
+      "claim_id": "0a703fd7-ccf7-48ba-a03c-ee3cdaa22dab",
+      "result_id": "e8c392e6-92e5-4b63-b37a-223e5bdb1d2b"
+    },
+    {
+      "claim_id": "a35d9691-7d7c-451e-aa71-99946d22ec5c",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "9a38d584-3417-4f38-8a04-9b7b2d77e6f4",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "9e3f0bb0-6a9f-4723-a728-5e4904192fad",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "7d8aacd1-ba93-4933-ae09-ad3c075f1098",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "8341e59c-28f5-4c19-8b3d-3850a25147c3",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "b62b3360-0911-44ee-b2f4-95967e4cac5f",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "069e38c7-90af-4bcb-bc63-4cc26ae2f826",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "a99cac95-6d6a-4ac2-b14d-3e0eeb0a901b",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "b6bf5038-0dbb-4119-8118-9de60470a991",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "f2182040-e30b-4f83-82f0-3984e4e17a85",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "dc930f18-8031-4f78-8d40-a37694532c7f",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "590010a5-6238-4de5-b023-8b52406b9dd4",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "769d289b-4d4d-456e-bf52-cc58547af8ab",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "4eda02bf-fe8d-4a53-8326-eb39fcc60992",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "89da717e-32fb-4494-b5ec-c50c5245c676",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "0b1564cc-bbfd-41f2-8822-b5623944b50a",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    },
+    {
+      "claim_id": "068927e7-ce58-470d-9c9b-3461975e8154",
+      "result_id": "f48afc06-3d46-479e-94e2-3443d974b929"
+    }
+  ],
+  "comparisons": []
+}

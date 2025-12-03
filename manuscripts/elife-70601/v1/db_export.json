@@ -1,0 +1,1904 @@
+{
+  "submission": {
+    "id": "7934357b-f08a-4f1b-a1a9-1e43c52944ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:19:11.254293Z",
+    "updated_at": "2025-12-03T09:19:11.254293Z"
+  },
+  "content": [
+    {
+      "id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "submission_id": "7934357b-f08a-4f1b-a1a9-1e43c52944ca",
+      "content_type": "manuscript",
+      "content_text": "# A distributed residue network permits conformational binding specificity in a conserved family of actin remodelers\n\n## Authors\n\n- Theresa Hwang<sup>1</sup> ([ORCID: 0000-0002-9011-2174](https://orcid.org/0000-0002-9011-2174))\n- Sara S Parker<sup>2</sup> ([ORCID: 0000-0003-3670-6147](https://orcid.org/0000-0003-3670-6147))\n- Samantha M Hill<sup>2</sup> ([ORCID: 0000-0002-6454-7430](https://orcid.org/0000-0002-6454-7430))\n- Meucci W Ilunga<sup>1</sup>\n- Robert A Grant<sup>1</sup> ([ORCID: 0000-0002-5072-2867](https://orcid.org/0000-0002-5072-2867))\n- Ghassan Mouneimne<sup>2</sup> ([ORCID: 0000-0001-8103-4701](https://orcid.org/0000-0001-8103-4701))\n- Amy E Keating<sup>1</sup> ([ORCID: 0000-0003-4074-8980](https://orcid.org/0000-0003-4074-8980)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Massachusetts Institute of Technology Cambridge United States\n2. Department of Cellular and Molecular Medicine, University of Arizona Cancer Center, University of Arizona Tucson United States\n3. Department of Biological Engineering and Koch Institue for Integrative Cancer Research, Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMetazoan proteomes contain many paralogous proteins that have evolved distinct functions. The Ena/VASP family of actin regulators consists of three members that share an EVH1 interaction domain with a 100 % conserved binding site. A proteome-wide screen revealed photoreceptor cilium actin regulator (PCARE) as a high-affinity ligand for ENAH EVH1. Here, we report the surprising observation that PCARE is ~100-fold specific for ENAH over paralogs VASP and EVL and can selectively bind ENAH and inhibit ENAH-dependent adhesion in cells. Specificity arises from a mechanism whereby PCARE stabilizes a conformation of the ENAH EVH1 domain that is inaccessible to family members VASP and EVL. Structure-based modeling rapidly identified seven residues distributed throughout EVL that are sufficient to differentiate binding by ENAH vs. EVL. By exploiting the ENAH-specific conformation, we rationally designed the tightest and most selective ENAH binder to date. Our work uncovers a conformational mechanism of interaction specificity that distinguishes highly similar paralogs and establishes tools for dissecting specific Ena/VASP functions in processes including cancer cell invasion.\n\n## Introduction\n\nMetazoan signal transduction networks have evolved a high degree of complexity using adapter proteins that are specialized to make many interactions and/or highly specific interactions (Rowland et al., 2017; Zarrinpar et al., 2003a). Signaling complexity arises in part from a plethora of interaction domain families such as the SH3, SH2, and PDZ domains. The facile recombination and insertion of modular domains to generate diverse protein architectures have enabled the evolution of new signaling circuits (Pawson and Nash, 2000).\n\nMany modular interaction domains bind to short linear motifs (SLiMs), which occur as stretches of 3\u201310 consecutive amino acids in intrinsically disordered regions of proteins. The SLiM-binding specificity profiles of different paralogous members in a family of domains are often highly overlapping, yet individual members can in some cases engage in highly selective interactions (Xin et al., 2013; Hause et al., 2012). For example, a SLiM in Pbs2 binds only the SH3 domain of Sho1 out of the 27 SH3 domains in yeast to activate the high-osmolarity stress response pathway (Zarrinpar et al., 2003b). Conversely, the actin assembly protein Las17 binds promiscuously to many SH3 domains, including Sho1, to drive actin-related processes such as endocytosis in yeast (Kelil et al., 2016; Robertson et al., 2009).\n\nThe Ena/VASP proteins are a family of actin regulators involved in functions ranging from T-cell activation to axon guidance (Kwiatkowski et al., 2003). There are three paralogs in mammals: ENAH (often called Mena), VASP, and EVL. All three proteins contain an N-terminal EVH1 interaction domain responsible for subcellular localization and a C-terminal EVH2 domain that polymerizes actin. The two domains are connected by a linker, predicted to be largely disordered, that contains binding motifs for other proteins. The EVH1 domain binds SLiMs with the consensus motif [FWYL]PX\u03a6P, where X is any amino acid and \u03a6 is any hydrophobic residue (Ball et al., 2000). This sequence, referred to here as the FP4 motif, binds the EVH1 domain as a polyproline type II (PPII) helix.\n\nEna/VASP proteins have evolved both overlapping and paralog-specific cellular functions. On the one hand, ENAH, VASP, and EVL can all bind to FP4 motifs in lamellipodin to promote actin assembly at the leading edge (Krause et al., 2004; Hansen and Mullins, 2015). Single deletions of Ena/VASP paralogs lead to mild phenotypic defects in mice, indicating that the paralogs can functionally compensate for each other, whereas triple mutant mice die after proceeding to late embryogenesis (Asz\u00f3di et al., 1999; Lanier et al., 1999; Kwiatkowski et al., 2007). On the other hand, the three paralogs participate in distinct pathways. ENAH, alone, promotes haptotaxis of breast cancer cells through fibronectin gradients and regulates translation of specific mRNAs in developing axons, implicating it in functions beyond its role in actin polymerization (Oudin et al., 2016; Vidaki et al., 2017). In addition, whereas ENAH and VASP promote the invasive potential of migratory breast cancer cells, EVL suppresses breast cancer invasion (Roussos et al., 2010; Zhang et al., 2009; Padilla-Rodriguez et al., 2018).\n\nThe FP4-binding pocket of the EVH1 domain is 100 % conserved across ENAH, VASP, and EVL, and the paralogs share 62\u201372% sequence identity over the entire domain (Figure 1A, B). Consequently, the three EVH1 domains recognize many common binding partners. Nevertheless, some proteins bind selectively to certain paralogs. The LIM3 domain of testin binds specifically to the ENAH EVH1 domain in a region adjacent to the highly conserved FP4-binding pocket; this is the only example of an endogenous Ena/VASP EVH1-binding partner where the mechanistic basis for specificity is defined (Bo\u00ebda et al., 2007). Testin binds specifically because it contacts residues that have diverged across paralogs to form distinct surfaces, which is a common mechanism for achieving specificity (Skerker et al., 2008; Bardwell et al., 2009; Schreiber and Keating, 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig1-v1.jpg)\n\n**Figure 1.:** (A) Sequence alignment of the EVH1 domains of ENAH, VASP, and EVL. Black denotes residues that are 100 % conserved; residues in gray share similar physicochemical properties. (B) Surface representation of ENAH EVH1 bound to an FP4 peptide (PDB 1EVH) highlighting conservation among Ena/VASP paralogs. Residues shared between all three paralogs are white; residues shared by two paralogs are orange, residues that differ in each paralog are red. (C) Biolayer interferometry data and curves fit to determine the dissociation constants for peptide PCARE B binding to ENAH, EVL, or VASP EVH1 domains. Error reported as the standard deviation of two replicates.\n\nUsing a high-throughput screen of the human peptidome, we identified, among other interaction partners, a peptide from photoreceptor cilium actin regulator (PCARE) that binds with high affinity to the ENAH EVH1 domain. PCARE is almost exclusively expressed in the retina, and mutations in PCARE are associated with inherited retinitis pigmentosa and retinal dystrophy (Collin et al., 2010; Nishimura et al., 2010; Kevany et al., 2015). Prior work implicates PCARE as a scaffold protein important for recruiting complexes that regulate actin assembly as part of new outer segment disk formation in photoreceptor cells (Corral-Serrano et al., 2020). Previous investigations identified ENAH as an interaction partner for PCARE based on tandem-affinity purification experiments in HEK293T cells and colocalization of PCARE with Ena/VASP at ciliary membrane expansions in hTERT RPE1 cells (Boldt et al., 2016; Corral-Serrano et al., 2020). PCARE was also associated, via protein tandem-affinity purification studies, with 17 other proteins with actin-related functions, including Wiskott\u2013Aldrich syndrome protein family member 3 (WASF3), which is recruited via PCARE to the cilium, leading to membrane expansions that involve actin polymerization (Corral-Serrano et al., 2020).\n\nHere, we report that PCARE is surprisingly selective for binding to ENAH in preference to EVL or VASP, despite containing an FP4 motif that can engage the perfectly conserved FP4-binding site. We demonstrate that an extended peptide from PCARE can be used as a tool to perturb ENAH-specific interactions in cells. We also reveal the mechanistic basis behind the striking paralog selectivity, which involves an epistatic residue network in the ENAH EVH1 domain that allows ENAH to adopt a conformation that is not accessible to paralogs VASP and EVL. An alpha-helical extension C-terminal to the FP4 motif in PCARE engages and stabilizes this ENAH-specific conformation using a noncanonical binding mode. These observations reveal a strategy to obtain binding specificity in a highly conserved family that must also make promiscuous interactions. Finally, inspired by previous identification of a noncanonical binding site on the backside of the EVH1 domain of VASP (Acevedo et al., 2017), which we found is also conserved in ENAH (Hwang et al., 2021), we demonstrate how PCARE can be elaborated to give designed synthetic peptides with further enhanced and unprecedented affinity and specificity for ENAH.\n\n## Results\n\n### An extended SLiM from ciliary protein PCARE binds selectively to ENAH EVH1 and reduces adhesion in mammalian cells\n\nIn a separate study, we performed a proteomic screen that identified peptides that bind to the ENAH EVH1 domain with dissociation constants primarily in the low- to midmicromolar range (KD = 2\u201360 \u03bcM). The highest affinity hit from our screen was a 36-residue peptide from PCARE (PCARE813\u2013848) that bound to ENAH with a KD of 0.19 \u03bcM (Hwang et al., 2021). Truncation studies showed that 23-residue PCARE826\u2013848, which we call PCARE B, maintains high affinity for ENAH EVH1 (KD = 0.32 \u03bcM). To explore the paralog specificity of PCARE B, we quantified binding to EVL and VASP EVH1 domains using biolayer interferometry (BLI) and discovered a 70- to 140-fold preference for binding to ENAH over EVL or VASP (Figure 1C). This was initially very surprising, given that PCARE B includes the FP4 sequence LPPPP and the Ena/VASP paralogs are 100 % conserved in the FP4-binding groove (Figure 1B). However, this was also an exciting observation, because it suggested that PCARE B could serve as a reagent for selectively targeting ENAH in cell biological studies of its functions.\n\nTo test for association of Ena/VASP proteins and PCARE B in cells, we used Ena/VASP-family-deficient cell line MVD7 (Bear et al., 2000) and expressed the individual paralogs ENAH, EVL, and VASP. MVD7 are embryonic fibroblasts derived from ENAH\u2212/\u2212 VASP\u2212/\u2212 mice, and they have low EVL expression (Damiano-Guercio et al., 2020). We used an shRNA against EVL to further decrease residual EVL (Figure 2\u2014figure supplement 1). We tagged PCARE B with mRuby2 (mRuby2-PCARE B) and coexpressed this construct with green fluorescent protein (GFP), or GFP fusions to ENAH, an EVH1 deletion mutant of ENAH (\u0394EVH1-ENAH), EVL, or VASP. ENAH, EVL, and VASP all robustly localized to focal adhesions as previously observed (Puleo et al., 2019) while \u0394EVH1-ENAH localization was cytoplasmic. mRuby2-PCARE B exhibited diffuse cytoplasmic localization under all conditions except when coexpressed with ENAH, in which case mRuby2-PCARE B was moderately enriched at focal adhesions, consistent with an ENAH\u2013PCARE B interaction (Figure 2A). To demonstrate the specificity of PCARE B for ENAH, we quantified the enrichment ratio of the mean intensity of mRuby2-PCARE B at focal adhesions and in the cytoplasm in each condition. The mean intensity values at focal adhesions and the cytoplasm were divided by the average background intensity of mRuby2-PCARE B. We observed significant enrichment (p < 0.0001) of mRuby2-PCARE B with GFP-ENAH at focal adhesions compared to the cytoplasm. The enrichment ratios for mRuby2-PCARE B with GFP-EVL and GFP-VASP were not significant (Figure 2B). In addition, plots of fluorescence intensity along a line passing through focal adhesions showed colocalization of PCARE B and ENAH (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig2-v1.jpg)\n\n**Figure 2.:** (A) Live MVD7shEVL cells expressing mRuby2-PCARE B with GFP, GFP-ENAH, GFP-dEVH1-ENAH, GFP-EVL, or GFP-VASP, imaged using total internal reflection fluorescence (TIRF) microscopy. Scale bar = 25 \u03bcm. (B) Enrichment ratio of mRuby2-PCARE B at GFP-positive focal adhesions over cytosolic signal under indicated overexpression conditions. n = 30 focal adhesions, N = 3 biological replicates. (C) Normalized fluorescence intensity of GFP signal (left axis) and mRuby2-PCARE B signal (right axis) along a line drawn through focal adhesions, indicated by the red arrow in (A). (D) Live MVD7shEVL cells expressing Mito-mRuby2-PCARE B with GFP, GFP-ENAH, GFP-dEVH1-ENAH, GFP-EVL, or GFP-VASP. Image is a maximum intensity projection of z-stack acquired using widefield fluorescence microscopy. Scale bar = 25 \u03bcm. (E) Enrichment ratio of GFP-tagged constructs to Mito-mRuby2-PCARE B-positive mitochondria over cytosolic signal under indicated overexpression conditions. n = 30 mitochondria, N = 3 biological replicates. (F) Magnified region of interest indicated by the box in (D), showing colocalization of Mito-mRuby2-PCARE B and GFP-ENAH at increasing depths in the cell. Scale bar = 5 \u03bcm. (G) Immunofluorescence labeling of MCF7 cells expressing nontargeting LKO control, ENAH-targeting shRNA, mRuby2-PCARE B, or Mito-mRuby2-PCARE B. Cells were fixed 8 hr after plating and immunolabeled for focal adhesion marker paxillin and endogenous ENAH, and additionally stained with phalloidin for F-actin. Box indicates positions of magnified regions of interest (ROI). Scale bar = 25 \u03bcm, magnified ROI scale bar = 5 \u03bcm. (H) Box-and-whisker plot of total paxillin-positive area per cell normalized to the total cell area, for indicated conditions. N = 3 biological replicates, n = 45\u201349 cells. (I) Violin plot of individual focal adhesion size (for adhesions greater than 0.25 \u03bcm2) for indicated conditions. The central black line indicates the median, peripheral gray lines indicate interquartile ranges. N = 3 biological replicates, n = 1452\u20132159 individual adhesions. In panels B, E, H, and I, * p \u2264 0.05, ** p \u2264 0.01, *** p \u2264 0.001, **** p \u2264 0.0001, Kruskal\u2013Wallis test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Relative expression of MVD7shEVL vs. MVD7ntEVL (nontargeting control) is 42.8 \u00b1 1.8 % by quantitative PCR (qPCR), three biological replicates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Representative western blot showing expression of ENAH, EVL, and VASP in MCF7 cells. At right, representative western blot showing the magnitude of knockdown using ENAH-targeted shRNA.\n\nHistorically, a mito-tagged ActA peptide has served as a valuable sideways knockout tool that can deplete Ena/VASP proteins from other cytoplasmic locations by recruiting them to the mitochondria. This strategy has been used to dissect Ena/VASP-dependent functions (Bear et al., 2000). To test whether PCARE B could serve a similar function, but with specificity for ENAH, we tagged PCARE B with a mitochondrial localization sequence, generating Mito-mRuby2-PCARE B. In MVD7shEVL cells with exogenously expressed Ena/VASP paralogs, ENAH was significantly colocalized with Mito-mRuby2-PCARE B at mitochondria, although some ENAH remained associated with focal adhesions. In contrast, EVL and VASP remained entirely localized to focal adhesions and did not localize to mitochondria (Figure 2D\u2013F). There is significant enrichment (p < 0.0001) of Mito-mRuby2-PCARE B with GFP-ENAH at the mitochondria compared to the cytoplasm, whereas the enrichment ratios of Mito-mRuby2-PCARE B with GFP-EVL and GFP-VASP were not significant (Figure 2E). Together, these findings indicate that PCARE B can recruit ENAH, but not EVL or VASP, to artificial localization sites such as the mitochondria, supporting interaction specificity between PCARE B and ENAH in cells.\n\nWe also tested whether cytoplasmic expression of PCARE B could disrupt the function of endogenous ENAH. We examined focal adhesion maturation as a readout of ENAH function in MCF7 breast cancer cells, which express significant levels of ENAH (Figure 2\u2014figure supplement 2). We compared the effects of PCARE B expression to the effects of ENAH knockdown by shRNA by assessing cell adhesion, using paxillin immunofluorescence labeling to delineate focal adhesions (Figure 2G). As expected, ENAH knockdown was associated with diminished adhesion and smaller focal adhesion size as compared to cells expressing nontargeting shRNA (Figure 2F\u2013H). Intriguingly, expression of PCARE B resulted in a similar decrease in adhesion, suggesting suppression of ENAH function at focal adhesions (Figure 2G\u2013I). Importantly, the expression of PCARE B in MCF7 cells shifted the enrichment of ENAH from focal adhesions to membrane protrusions (Figure 2G center inset). ENAH enrichment at protrusions was not observed in MCF7 cells expressing Mito-mRuby2-PCARE B, which exhibited strong mitochondrial localization of ENAH and markedly decreased adhesion (Figure 2G right inset, Figure 2H,I). This suggests that in MCF7 cells, blockade of the EVH1 domain by cytosolic PCARE B liberates ENAH from focal adhesions while permitting other EVH1-independent interactions elsewhere in the cell. In contrast, Mito-mRuby2-PCARE B can recruit ENAH away from its normal sites of action at focal adhesions and the cell membrane and to the mitochondria.\n\n### FP4 motif-flanking elements in ciliary protein PCARE confer high affinity by inducing noncanonical binding\n\nTo understand the structural basis for the high-affinity and selective interaction of PCARE B with ENAH, we solved a crystal structure of ENAH EVH1 domain fused to a 36-mer PCARE sequence to 1.65 \u00c5 resolution. Fusing a short peptide to its binding domain can assist with structure determination, in part by controlling the stoichiometry of domains and peptides in the crystallization mixture (Appleton et al., 2006; Teyra et al., 2017; Li et al., 2019). To minimize the influence of the fusion on the domain\u2013peptide interaction, we introduced a long, flexible linker between C-terminus of the ENAH EVH1 domain and the PCARE B sequence. The linker consisted of the 6-residue sequence GGSGSG and then 13 residues of PCARE that lie N-terminal to PCARE B and that we determined using truncation studies are dispensable for high-affinity binding (Hwang et al., 2021). Consistent with our truncation studies, our structure showed that only 21 residues of PCARE were fully resolved in the electron density (PCARE828\u2013848, Figure 3A). Notably, neither the Gly and Ser residues nor any of PCARE residues 813\u2013827 gave clear density in our maps, consistent with this part of the fusion protein being disordered and not forming specific interactions that might influence the peptide-binding geometry.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig3-v1.jpg)\n\n**Figure 3.:** (A) Surface representation of ENAH EVH1 bound to a segment of PCARE, highlighting Ena/VASP EVH1 domain conservation using colors as in Figure 1. (B) View comparing the orientations of an FP4 peptide and the LP4 region of PCARE. Side chains of the ENAH EVH1 domain are shown as sticks using tan for the FP4 complex and gray for the PCARE complex. (C) Surface representation of ENAH EVH1 domain bound to the PCARE peptide. The LP4 residues are light blue and other EVH1-interacting residues are green; insets show details of the interactions. Note that the PCARE828\u2013848 peptide is numbered as 133\u2013153 in the PDB file.\n\nThe high-resolution structure led to the surprising discovery that the LPPPP motif in PCARE binds at the expected canonical site, but in the opposite orientation from previously observed Ena/VASP EVH1 domains engaged with proline-rich peptides (Ball et al., 2000; Prehoda et al., 1999; Fedorov et al., 1999; Figure 3A, B). PCARE828\u2013848 uses a 14-residue alpha helix-rich extension C-terminal to the LPPPP motif to make additional contacts to an extended region on the EVH1 domain, explaining its high affinity.\n\nContacts between the extended, alpha-helical region of PCARE and ENAH are shown in Figure 3C. PCARE residues Phe843 and Leu846 make hydrophobic interactions with Ala83 and Pro65 on ENAH. The side chain of Asp840 on PCARE docks into a polar pocket on ENAH made up of the backbone atoms of ENAH residues Lys69 and Arg81. Notably, the backbone NH and side-chain hydroxyl group of Ser842 on PCARE form hydrogen bonds with the side chain of Asp840, positioning Asp840 to hydrogen bond with a water molecule that is further coordinated by the backbone NH of ENAH Arg81. Most intriguing is the interaction between Val837 on PCARE and the hydrophobic groove in ENAH, which typically engages large aromatic residues. The alpha-helical structure of PCARE828\u2013848 buries the smaller Val837 in the same site where phenylalanine can bind.\n\nTo test whether high-affinity binding of PCARE B in solution is consistent with the interactions that we observe in the structure, we made ENAH EVH1 domain with Pro65 substituted with aspartate (ENAH P65D). Residue 65, shown in Figure 3C, is remote from the canonical FP4-binding site and, as expected, this mutation has little effect on the binding of ActA (Table 1). However, this single mutation led to a dramatic 100-fold weakening of the affinity of ENAH EVH1 for free PCARE B peptide. This change in affinity is consistent with the contacts observed in our crystal structure playing a critical role in stabilizing peptide binding, and not consistent with a model in which PCARE binds in the previously observed FP4 docking geometry, for example as observed for ActA peptides, which would orient the C-terminal residues that are essential for affinity in the opposite direction (Prehoda et al., 1999; Fedorov et al., 1999; Barone et al., 2020). Collectively, our results reveal a noncanonical mode of binding where the FP4 motif of PCARE binds to the ENAH EVH1 domain in a reversed N-to-C orientation and makes extra contacts to achieve high affinity.\n\n**Table 1.**\n Affinity of EVL and ENAH EVH1 domain mutants for peptides ActA and PCARE B.Table 1\u2014source data 1.Raw data for Table 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>ActA KD (\u03bcM)*, \u2020</th>\n      <th>PCARE B KD (\u03bcM)*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ENAH</td>\n      <td>5.2 \u00b1 0.2</td>\n      <td>0.32 \u00b1 0.01</td>\n    </tr>\n    <tr>\n      <td>EVL</td>\n      <td>2.7 \u00b1 0.3</td>\n      <td>22.3 \u00b1 1.5</td>\n    </tr>\n    <tr>\n      <td>EVL V65P</td>\n      <td>2.4 \u00b1 0.1</td>\n      <td>112.1 \u00b1 9.6</td>\n    </tr>\n    <tr>\n      <td>EVL Y62C</td>\n      <td>7.1 \u00b1 0.7</td>\n      <td>19.0 \u00b1 2.8</td>\n    </tr>\n    <tr>\n      <td>EVL Y62C V65P</td>\n      <td>5.8 \u00b1 1.0</td>\n      <td>2.2 \u00b1 0.1</td>\n    </tr>\n    <tr>\n      <td>ENAH P65D</td>\n      <td>7.2 \u00b1 0.5</td>\n      <td>32.0 \u00b1 3.2</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Affinities determined by biolayer interferometry (BLI) as described in the methods and in, Hwang et al., 2021.\u2020The ActA peptide has sequence FNAPATSEPSSFEFPPPPTEDELEIIRETASSLDS (see methods for the exact construct tested)._\n\n### PCARE achieves paralog selectivity by stabilizing an ENAH EVH1 domain-specific conformation with a novel FP4-flanking sequence element\n\nInterestingly, our structure of ENAH EVH1 domain bound to PCARE828\u2013848 shows that 16 of the 18 residues that are within 4 \u00c5 of PCARE in ENAH are identical in ENAH ,VASP, and EVL. Thus, whereas the FP4-binding site is 100 % conserved, the extended binding site engaged by PCARE is also highly conserved. Residue 63 is alanine in ENAH and VASP, and the corresponding residue 64 in EVL is serine. Modeling serine at position 63 in the PCARE-bound structure of ENAH shows that the side-chain hydroxyl group can be readily accommodated in a solvent-facing conformation without interfering with PCARE binding. On the other hand, residue 65 is proline in ENAH and the corresponding residue is valine in EVL and VASP. As discussed in the previous section, Pro65 is remote from the canonical FP4-binding groove but makes extensive contacts with PCARE and is largely buried at the domain\u2013peptide interface (Figure 3C). We speculated that proline vs. valine might contribute to the ENAH-binding preference of PCARE. To test this, we made EVL with a valine-to-proline mutation, with the expectation that this would increase the binding affinity for PCARE B. Surprisingly, EVL V65P bound to PCARE B fivefold weaker than did wild-type EVL (KD = 112.1 vs. 22 \u03bcM, Table 1). In contrast, EVL V65P bound to an FP4-containing ActA peptide, which does not contact Val65 (Barone et al., 2020), with the same affinity as wild-type EVL (KD = 2.4 vs. 2.7 \u03bcM, Table 1), indicating that the V65P mutation does not lead to global disruption of the domain structure but does influence its interaction with PCARE.\n\nComparing the structures of ENAH EVH1 domain bound to PCARE828\u2013848 vs. the peptide FPPPP (PDB 1EVH; Prehoda et al., 1999) shows a conformational difference in ENAH: a loop composed of residues 80\u201386, which forms part of the extended PCARE-binding site, is shifted by 3 \u00c5 (Figure 4A). Structure gazing suggested that hydrophobic core residues Tyr63 in EVL (Cys62 in ENAH), and Trp89 and Leu15 in VASP (Tyr87 and Val15 in ENAH), are incompatible with this conformational change (Figure 4A). To test this, we made EVL EVH1 domain variants EVL Y62C and EVL V65P Y62C. EVL V65P, EVL Y62C, and EVL Y62C V65P EVH1 domains all ran identically as monomers on size-exclusion chromatography (Figure 4\u2014figure supplement 1). The Y62C mutation alone had almost no measurable effect on the binding of EVL EVH1 domain to PCARE (Table 1), but the EVL Y62C V65P EVH1 domain double mutant bound to PCARE B with KD = 2.2 \u03bcM, which is 10-fold lower than the KD for wild-type EVL and a striking 56-fold lower than the KD for binding to EVL V65P (Table 1). This dramatic enhancement in affinity for the double mutant relative to either single mutant indicates strong coupling between positions 62 and 65, consistent with the rearrangement of a loop upon PCARE binding. However, these two mutations enhanced binding to EVL EVH1 domain by only 10-fold over wild type, whereas the difference in binding affinity between ENAH and EVL is 70-fold (Figure 1C). We concluded that a broader set of residues must contribute to stabilizing the ENAH-specific conformation, but it was not readily apparent which residues these might be.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig4-v1.jpg)\n\n**Figure 4.:** (A) Superposition of ENAH EVH1 domains bound to PCARE or FP4 peptide (PDB 1EVH). The black arrow highlights a 3 \u00c5 shift in a loop that forms part of the binding pocket. Insets show residues that differ between ENAH and VASP or EVL near this loop. (B) Lowest dTERMen energy obtained when swapping 0\u20136 residues from ENAH into EVL, when modeled on the structure of ENAH EVH1 bound to PCARE. * indicates the mutation was added based on manual inspection. (C) ENAH EVH1 domain bound to a peptide from PCARE, with residues that were swapped into the EVL EVH1 domain to rescue affinity marked as purple spheres. On the right are binding curves for WT EVL EVH1 domain and EVLswapped EVH1 domain binding to PCARE B. Error reported as the standard deviation of two replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** EVL mutants run on a Superdex 75 column using fast protein liquid chromatography.\n\nTo identify the ENAH residues responsible for PCARE-binding specificity, we used the structure-based modeling method dTERMen (Zhou et al., 2020). dTERMen is a protocol for scoring the compatibility of a sequence with a backbone structure. Energies are computed based on the frequencies with which combinations of residues are found in tertiary motifs in known protein structures. As expected, when scoring different sequences on the structure of ENAH bound to PCARE, the EVL sequence scored considerably worse than the sequence of ENAH itself. Guided by the dTERMen score, we introduced increasing numbers of residues from ENAH into EVL, in an attempt to identify mutations sufficient to confer high affinity binding to PCARE. Seven replacements were sufficient to recapitulate dTERMen energies similar to that for ENAH in the PCARE828\u2013848-bound conformation (Figure 4B). These residues are distributed across the EVH1 domain, and several are distant from the PCARE828\u2014848-binding site (Figure 4C). We made a mutated EVL EVH1 domain with the seven corresponding residues from ENAH. This protein, EVLswapped, bound as tightly to PCARE B as did ENAH EVH1 (KD = 0.35 vs. 0.32 \u03bcM) (Figure 4C). Given that wild-type EVL and ENAH differ at 29 sites, and there are 1.56 million potential residue swaps of 7 residues, it is particularly notable that dTERMen quickly led us, in just a single attempt, to a combination of residues sufficient to transfer binding specificity.\n\n### Engineered binders engage ENAH EVH1 domain with increased affinity and specificity\n\nBased on our structure of PCARE bound to ENAH, we aimed to design even higher affinity, ENAH-selective peptides. To this end, we took a rational design approach. Our strategy relied on designing peptides that can simultaneously engage two binding sites on ENAH EVH1: the canonical FP4-binding site that is occupied by FP4 peptides such as ActA, ABI1, and PCARE (Prehoda et al., 1999; Fedorov et al., 1999; Barone et al., 2020; Hwang et al., 2021), and a noncanonical site previously identified in VASP EVH1 that we have shown is also important for certain ENAH\u2013peptide complexes (Acevedo et al., 2017; Hwang et al., 2021, Figure 5A, B). Using a structural model based on PDB structure 5NC7, we estimated appropriate lengths for connecting linkers (Barone et al., 2020; Hwang et al., 2021). We then made and tested different combinations of binding motifs and linkers that we predicted could bridge these two sites.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig5-v1.jpg)\n\n**Figure 5.:** (A) Surface representation of ENAH EVH1 with binding sites discussed in this study indicated. (B) Design scheme for high-affinity binders ABI1-LPP and PCARE-Dual. (C) Biolayer interferometry (BLI)-binding and dissociation curves. Blue, orange, green, red, purple, and brown curves denote EVH1 concentrations in descending order. LPP: 80, 36, 16, 7.0, 3.1, and 1.4 \u03bcM. PCARE B and ABI1-LPP: 2.5, 1.3, 0.63, 0.31, 0.16, and 0.078 \u03bcM. PCARE-Dual: 0.50, 0.25, 0.0625, 0.031, 0.016, and 0.0078 \u03bcM. Values reported as kdiss \u00b1 SD for two independent BLI replicates. (D) BLI-binding curves for PCARE-Dual binding to the EVH1 domains of ENAH, VASP, or EVL. Errors for (B) and (D) are reported as the standard deviation of two replicates.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Affinities determined by biolayer interferometry (BLI) as described in the methods and in Hwang et al., 2021. Errors reported are the standard deviation of two to three replicates.\n\nIn one design, we fused the high-affinity PCARE B sequence, via a short GSGS linker, to a second FP4 motif designed to support bivalent binding while stabilizing the ENAH-specific conformation. Peptide PCARE-Dual bound ~ sevenfold tighter than PCARE B, with KD = 50 nM (Figure 5B, D). Consistent with the designed two-site binding, PCARE-Dual interacted ~ eightfold less tightly with a mutant of ENAH EVH1 domain that had a Y38E substitution in the noncanonical site (KD = 0.38 \u00b1 0.01 \u03bcM; Figure 5\u2014figure supplement 1). In a second design, we used a peptide from ABI1 in place of PCARE B and fused this to a peptide from the protein LPP. ABI1 is an Ena/VASP interaction partner that contains the sequence FP8. We have shown that proline residues C-terminal to the FP4 motif, as well as surrounding acidic residues, enhance affinity for the ENAH EVH1 domain (Hwang et al., 2021). In particular, the seventh proline of the ABI1 FP4 motif engages ENAH EVH1 at what we call the Pro7 site (green in Figure 5A, B). LPP is another ENAH-binding partner that we have shown engages the noncanonical EVH1-binding site. We fused a 17-residue segment of ABI1 to part of the LPP linker and a second FP4 motif to make ABI1-LPP (Figure 5B). Our rationale was that the ABI1-derived segment would occupy the canonical FP4-binding site and the LPP linker would wrap along the surface of the EVH1 domain and position a second FP4 motif near the noncanonical FP4 site. The ABI1\u2013LPP fusion peptide bound with KD = 0.76 \u03bcM, which is threefold tighter than the ABI1 portion alone and fivefold tighter than the LPP portion alone, although weaker overall than PCARE-Dual.\n\nThe enhancements in affinity for PCARE-Dual and ABI1-LPP come from decreases in off-rate, with PCARE-Dual dissociating ~100-fold slower than dual-motif peptide LPP (Figure 5C). Finally, we found that PCARE-Dual is 400- to 600-fold selective for ENAH over EVL and VASP, even though VASP is also known to have a noncanonical binding site that can engage a second FP4 motif (Acevedo et al., 2017). To our knowledge, our dual-motif peptides provide the tightest and most specific known binders to the ENAH EVH1 domain to date (Figure 5D).\n\n## Discussion\n\nAlthough the three paralogs have some distinct cellular functions, proteins ENAH, VASP, and EVL are highly conserved in sequence and structure. The EVH1 domains are 100 % identical in sequence in the core FP4-binding groove and share 62\u201372% sequence identity through the rest of the EVH1 domain (Figure 1A, B). FP4-motif peptides engage a small and relatively flat surface on EVH1; previously solved structures have shown how short peptides bind to this core region or, in some cases, to an immediately adjacent hydrophobic patch (Barone et al., 2020). The limited contacts with a highly conserved, shallow site make it challenging to achieve high affinity or paralog-selective binding.\n\nThere are currently two proteins reported to bind specifically to the ENAH EVH1 domain. The LIM domain of testin binds to ENAH EVH1 with a KD of 3 \u03bcM and does not bind detectably to the EVL or VASP EVH1 domains. Testin achieves paralog specificity by making contacts with ENAH outside of the canonical FP4 groove, at surface sites where the paralogs differ (Bo\u00ebda et al., 2007). Synthetic mini-protein pGolemi binds to ENAH with KD = 0.29 \u03bcM, moderate selectivity (20-fold) over VASP, and higher selectivity (\u2265120-fold) over EVL (Golemi-Kotra et al., 2004). The mechanism behind the specificity of pGolemi has not been determined, and mutational data do not readily rationalize a model (Holtzman et al., 2007).\n\nWe have now shown that the protein PCARE contains residues adjacent to an FP4 motif that confer both high affinity and selectivity for ENAH over VASP and EVL by stabilizing an ENAH-specific conformation. The biological implications of the specificity of PCARE towards ENAH are unclear at this point. ENAH, VASP, and EVL induce distinct actin remodeling phenotypes based on their differential preferences for profilin isoforms (Mouneimne et al., 2012). Thus, paralog selectivity could be necessary when paralog-dependent actin dynamics and structures are required. Both ENAH and VASP have been identified in affinity purification-mass spectrometry experiments using PCARE as bait in ciliated cells (Corral-Serrano et al., 2020). Given that ENAH and VASP can heterotetramerize, VASP may be recruited to the identified complexes indirectly, via interaction with ENAH (Gertler et al., 1996; Riquelme et al., 2015).\n\nA dramatic feature of the PCARE-bound ENAH structure is that the LPPPP motif of PCARE binds in a reversed orientation, relative to previously observed FP4 ligands. The PPII helix possesses twofold rotational pseudosymmetry, meaning that the side chains and backbone carbonyls are similarly positioned in either the N-to-C- or C-to-N-terminal directions. SH3 domains exploit this pseudosymmetry to bind proline-rich sequences in either direction (Zarrinpar et al., 2003a). Although all Ena/VASP and Homer EVH1 domain structures solved so far show the PPII helix engaged in a single direction, the WASP EVH1 domain binds its proline-rich ligand in the opposite direction (Volkman et al., 2002). Consequently, it has long been hypothesized, although never demonstrated, that Ena/VASP EVH1 domains might also bind FP4 motifs in either direction (Ball et al., 2002). Here, we show that this is the case for ENAH. Interestingly, the large effect on PCARE binding that we observed for EVL V65P compared to wild-type EVL EVH1 suggests that EVL also binds PCARE in a reversed orientation (relative to FP4 ligands such as ActA), albeit weakly, because this is the orientation that best explains contacts with position 65.\n\nWe are not aware of other examples of such dramatic conformational specificity, in which a natural ligand binds selectively to one paralog despite almost complete (~89%) conservation of the binding site amongst its family members. However, this mechanism is reminiscent of how the cancer drug Gleevec achieves 3000-fold selectivity for Abl over Src, despite the fact that the two proteins share ~46 % sequence identity across the kinase domain, and ~86 % identity in the Gleevec-binding site (Seeliger et al., 2007). The mechanism for the selectivity of Gleevec long eluded explanation. As we found here, a few residue swaps based on sequence alignments and structure gazing failed to rescue the affinity of Src for Gleevec, because these mutations failed to account for the higher-order epistatic interactions that contribute to specificity (Seeliger et al., 2007). Interestingly, because evolution has sampled kinase sequence space under the constraints of epistasis, retracing the evolutionary trajectories that led to extant Src and Abl kinases, using ancestral reconstruction, allowed Wilson et al. to identify residues involved in a hydrogen-bonding network distant from the Gleevec-binding interface that are key for selective binding to Abl (Wilson et al., 2015).\n\nWe used an alternative approach to discover a set of residues that contribute to specificity, turning to structure-based modeling. Using dTERMen, we scored the compatibility of different sequences with the ENAH-PCARE828\u2013848 structure template and identified residues in EVL that are incompatible with this binding mode. Our method solved the challenging problem of identifying mutations within an epistatic network that contribute to function. Importantly, this facile method is easily generalizable to many protein systems as long as a structure is available.\n\nOur results demonstrate an intriguing example of how nature has evolved a protein that achieves selectivity by exploiting a conformation accessible to only one paralog, rather than by making contacts with paralog-specific residues. Our findings raise the question of how widely this mechanism of selectivity is used by other paralogous families, especially within modular interaction domain families. As evidenced by residues identified by dTERMen in our residue swap experiments, hydrophobic core packing plays a key role in enabling new ligand-bound conformations. A recent study demonstrated that randomizing hydrophobic core residues of the SH3 domain from human Fyn tyrosine kinase could effectively switch its affinity and specificity to different ligands (Ben-David et al., 2019). In addition, directed evolution experiments that varied only the hydrophobic core residues of ubiquitin yielded a conformationally stabilized ubiquitin variant that was specific for the deubiquitinase USP7 (Zhang et al., 2013). These results hint that such mechanisms of conformational specificity could be widespread.\n\nThe PCARE peptide identified in this study will serve as a valuable research tool to dissect ENAH-specific biological functions in cells. Cytoplasmic expression of a PCARE peptide displaces ENAH from focal adhesions but not membrane protrusions, indicating that this peptide could serve as a valuable tool to selectively perturb EVH1-dependent functions of ENAH. In contrast, a mito-tagged PCARE peptide selectively sequesters ENAH at the mitochondria, depleting it from sites of normal function and inhibiting ENAH-dependent biological processes such as cell adhesion. This is likely due to the high avidity of these peptides when localized to the mitochondrial surface, which could potentially outcompete interactions between the EVH2 domain of ENAH and actin-based structures (Bachmann et al., 1999).\n\nThere is emerging evidence in the literature that paralog-specific functions exist within the Ena/VASP family. For example, ENAH, but not VASP or EVL, is a regulator of local translation in neurons (Vidaki et al., 2017). In contrast, EVL has a specific role in durotactic invasion (Puleo et al., 2019). Our mito-tagged peptides will serve as valuable research reagents in uncovering and characterizing ENAH-specific molecular functions in other tissues, such as the retina. Interestingly, although VASP is phosphorylated at Tyr39 by c-Abl, we did not find direct evidence in the literature for corresponding phosphorylation of ENAH at the analogous position Tyr38 (Maruoka et al., 2012). ENAH is a substrate of c-Abl, but experiments by Tani et al. using transfected murine ENAH or ENAH mutants, c-Abl, and the adapter protein Abi1 showed that the ENAH modification site is Tyr 296; the mutation Y296F ablated the phosphorylation signal, indicating that Y38 is not a site of modification, at least under the tested conditions (Tani et al., 2003). This has implications for the mechanism of specificity of our dual-motif inhibitors, such as PCARE-Dual, which we showed binds eightfold weaker to ENAH Y38E (Figure 5\u2014figure supplement 1). Cellular conditions in which there is phosphorylation of the backside site of VASP (and perhaps EVL) but not ENAH could further increase the specificity of inhibitor targeting.\n\nThe role of ENAH in cancer metastasis has motivated work to identify inhibitors of its EVH1-mediated interactions, and extensive structure-based design and chemical optimization recently led to a high-affinity molecule (KD = 120 nM) that reduced breast cancer cell extravasation in a zebrafish model. This compound and its analogs mimic the PPII conformation of an FP4 motif. However, because the molecule binds to the highly conserved FP4-binding site, this inhibitor has similar affinity for ENAH, EVL, and VASP (Barone et al., 2020). Paralog-specific Ena/VASP inhibitors could have higher therapeutic potential, given the antagonistic roles of ENAH and EVL in promoting and suppressing breast cancer metastasis. ENAH deficiency in mouse models of cancer has been shown to decrease metastasis by reducing tumor cell invasion and intravasation (Roussos et al., 2010). On the other hand, EVL is known to promote the formation of cortical actin bundles that suppress the invasion of breast cancer cells (Padilla-Rodriguez et al., 2018). Thus, developing high-affinity, paralog-specific inhibitors of Ena/VASP proteins could be crucial in reducing pleiotropic side effects when treating metastasis. Although there are many obstacles to developing peptides as therapeutic inhibitors of cytoplasmic targets, vigorous research on a wide range of strategies for delivering peptides and even complete proteins into cells is ongoing (Lu et al., 2020; Yu et al., 2021). Independent of these advances, the exquisite affinity and specificity of the PCARE B peptide for ENAH firmly establishes the possibility of paralog-selective targeting in this family, providing key proof of principle for the development of conformationally specific therapies based either on peptides or peptide-mimicking small molecules to treat ENAH-dependent diseases.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH5a</td>\n      <td>NEB</td>\n      <td>Cat# 2987H</td>\n      <td>Chemically competent cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)</td>\n      <td>Novagen</td>\n      <td>Cat# 71400</td>\n      <td>Chemically competent cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>MCF7</td>\n      <td>Joan Brugge, Harvard</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>MVD7</td>\n      <td>Bear et al., 2000</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ENAH (rabbit polyclonal)</td>\n      <td>Sigma</td>\n      <td>Cat# HPA028448</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Paxillin (mouse monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat# 612405</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse Alexa Fluor 488 (goat polyclonal)</td>\n      <td>Thermo Fisher</td>\n      <td></td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse Alexa Fluor 647 (goat polyclonal)</td>\n      <td>Thermo Fisher</td>\n      <td></td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-rabbit Alexa Fluor 405 (donkey polyclonal)</td>\n      <td>Abcam</td>\n      <td></td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>SureLight Allophycocyanin-anti-FLAG antibody (mouse monoclonal)</td>\n      <td>Perkin Elmer</td>\n      <td>Cat# AD0059F</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-actin (mouse monoclonal)</td>\n      <td>ProteinTech Group</td>\n      <td></td>\n      <td>(1:2500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GAPDH (mouse monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 5174S</td>\n      <td>(1:000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-EVL (rabbit polyclonal)</td>\n      <td>Sigma</td>\n      <td>Cat# HPA018849</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-VASP (rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 3132S</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Streptavidin, R-Phycoerythrin Conjugate (SAPE)</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# S866</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 488-Phalloidin</td>\n      <td>Thermo Fisher</td>\n      <td></td>\n      <td>(1:40)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 647-Phalloidin</td>\n      <td>Thermo Fisher</td>\n      <td></td>\n      <td>(1:40)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1-Enah shRNA (plasmid)</td>\n      <td>GE Dharmacon</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1-Evl shRNA (plasmid)</td>\n      <td>Sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nProtein sequences can be found in Supplementary file 1.\n\n### Protein expression and purification\n\nMonomeric ENAH, EVL, or VASP EVH1 domains for use in BLI and ITC experiments, and ENAH EVH1\u2013peptide fusions for crystallography were cloned into a pMCSG7 vector (gift from Frank Gertler, MIT), which places a 6x-His and TEV cleavage tag N-terminal to the EVH1 domain. These constructs were transformed into Rosetta2(DE3) cells and grown in 2xYT media supplemented with 100 \u03bcg/ml ampicillin. Cells were grown while shaking at 37 \u00b0C to an O.D. 600 of 0.5\u20130.7 and then cooled on ice for at least 20 min. Cells were then induced with 0.5 mM IPTG and grown while shaking at 18 \u00b0C overnight. Induced cultures were resuspended in 25 ml of wash buffer (20 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES ) pH 7.6, 500 mM NaCl, 20 mM imidazole) and frozen at \u221280 \u00b0C overnight. The next day, cultures were sonicated, spun down, and applied to Ni-NTA agarose resin equilibrated with wash buffer, and washed as described above. Samples were eluted in 10 ml elution buffer (20 mM HEPES pH 7.6, 500 mM NaCl, 30 mM imidazole). TEV protease was added to the elution at a ratio of 1 mg TEV:50 mg tagged protein along with 1 mM dithiothreitol(DTT). This mixture was dialyzed against TEV cleavage buffer (50 mM HEPES pH 8.0, 300 mM NaCl, 5 mM DTT, 1 mM EDTA) at 4 \u00b0C overnight and then applied over Ni-NTA agarose resin equilibrated with wash buffer. The column was washed with 2 \u00d7 8 ml of wash buffer, and the resulting flow-through and washes were pooled, concentrated, and applied to an S75 26/60 column equilibrated in gel filtration buffer (20 mM HEPES pH 7.6, 150 mM NaCl, 1 mM DTT, 1 % glycerol). Purity was verified by sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS\u2013PAGE) and combined fractions were concentrated and flash frozen at \u221280 \u00b0C.\n\n### Small-scale protein purification for Biolayer Interferometry\n\nSUMO\u2013peptide fusions were cloned into a pDW363 vector that appends a biotin acceptor peptide (BAP) sequence and 6x-His tag to the N-terminus of the protein and transformed into Rosetta2(DE3) cells (Novagen). Rosetta2(DE3) cells encoding SUMO\u2013peptide fusions were grown in 20 ml of LB +100 \u03bcg/ml ampicillin + 0.05 mM D\u2010(+)\u2010biotin dissolved in DMSO for in vivo biotinylation. Cells were grown to an OD of 0.5\u20130.7 with 1 mM IPTG and induced for 4\u20136 hr at 37 \u00b0C. Pellets were spun down and frozen at \u221280 \u00b0C for at least 2 hr. Pellets were then thawed and resuspended in B-PER reagent (Thermo Fisher) at 4 ml/g of pellet with 0.2 mM PMSF. This suspension was shaken at 25 \u00b0C for 10\u201315 min and then spun down at 15,000 g for 10 min. The supernatant was applied to 250 \u03bcL of Ni\u2010NTA agarose resin equilibrated in 20 mM Tris pH 8.0, 500 mM NaCl, 20 mM imidazole (Buffer A), and then washed three times with 1 ml of this buffer. Peptides were eluted in 1.8 ml of 20 mM Tris pH 8.0, 500 mM NaCl, 300 mM imidazole to use in BLI assays.\n\n### Biolayer Interferometry\n\nAll BLI experiments were performed on an Octet Red96 instrument (ForteBio). Biotinylated, 6x-His-SUMO\u2013peptide fusions purified in small scale were diluted into BLI buffer (phosphate-buffered saline [PBS] pH 7.4, 1 % Bovine Serum Albumin (BSA), 0.1 % Tween-20, 1 mM DTT) and immobilized onto streptavidin-coated tips (ForteBio) until loading reached a response level between 0.5 and 0.6 nm. The loaded tips were immersed in a solution of ENAH EVH1 domain at a relevant dilution series in BLI buffer at an orbital shake speed of 1000 rpm and data were collected until the binding signal plateaued. ENAH-bound tips were subsequently placed into BLI buffer for dissociation and data were collected until the binding signal plateaued. KD values were obtained through steady-state analysis. Briefly, the data were corrected for background by subtracting the signal obtained when doing the same experiment using biotinylated, 6x-His-SUMO lacking any peptide, instead of an immobilized ENAH-binding peptide. The association phases were then fit to a one-phase-binding model in Prism and the equilibrium steady-state-binding signal values from that fit were plotted against ENAH concentration and fit to a single-site-binding model in Prism to obtain dissociation constants. Errors are reported as the standard deviation of two replicates.\n\n### Crystallography\n\nCrystals of ENAH fused at the C-terminus to PCARE were grown in hanging drops containing 0.1 M Tris pH 8.0 and 3.30 M NaCl at 18 \u00b0C. 1.5 \u03bcl of ENAH-PCARE (769 \u03bcM in 20 mM HEPES, 150 mM NaCl, 1 mM DTT) was mixed with 0.5 \u03bcl of reservoir solution, and football-shaped crystals appeared in 2 days. Diffraction data were collected at the Advanced Photon Source at Argonne National Laboratory, NE-CAT beamline 24-IDE. The ENAH-PCARE data were integrated and scaled to 1.65 A\u030a with XDS, and the structure was solved with molecular replacement using the ENAH EVH1 structure PDB 6RD2 as a search model (Barone et al., 2020). The structure was refined with iterative rounds of model rebuilding with PHENIX and COOT (Adams et al., 2010; Emsley et al., 2010). Supplementary file 2 reports refinement statistics. The structure is deposited in the PDB with the identifier 7LXF. Note that the PCARE828\u2013848 peptide is numbered as 133\u2013153 in the PDB file in accordance with the ENAH\u2013PCARE fusion protein numbering.\n\n### Modeling using dTERMen\n\nThe dTERMen scoring function and protocol are described in Zhou et al., 2020. The method requires that a template-specific scoring function be computed, based on statistics derived from structures in the PDB. After that, the inputs to dTERMen are the backbone coordinates of a structure and a sequence. dTERMen returns a score for the input sequence adopting the input structure; lower scores correspond to lower energies. Side-chain positions are not modeled explicitly. To score the EVL sequence on the ENAH-PCARE backbone template, we generated pairwise alignments of the EVH1 domains of ENAH and EVL to determine how to map sequence to structure. The EVL EVH1 domain is longer than that of ENAH by one residue, so Lys27 was not included in modelingLys27 was also removed from the EVL V65P, EVL Y62C, and EVL V65P Y62C mutants, that were tested (Supplementary file 1).\n\nWe then used dTERMen to score all possible combinations of residue swaps between EVL and ENAH, up to six possible positions. Residue swap combinations that led to the minimum energy score were recorded. The best six mutations were sufficient to nearly recapitulate the energy score of the native ENAH sequence on the ENAH-PCARE template. We also included an I26A mutation based on manual inspection of the ENAH-PCARE828\u2013848 structure, which also lowered the dTERMen energy. We cloned, overexpressed, and purified this swapped EVL sequence, as described in Hwang et al., 2021, to test for binding to PCARE B.\n\n### Plasmids for cell culture\n\nFor experiments in mammalian cells, the following plasmids were used: pLKO.1-Enah shRNA (GE Dharmacon TRCN0000061827, Homo sapiens antisense 5\u2032-TTAGAGGAGTCTCAACAGAGG-3\u2032), pLKO.1-Evl shRNA (Sigma TRCN0000091075, Mus musculus antisense 5\u2032- TTGTTCATTTCTTCCATGAGG-3\u2032), and nontargeting pLKO.1 control (a gift from Felicia Goodrum, University of Arizona). GFP, and mouse cDNA sequences for GFP-tagged ENAH, VASP, and EVL (gifts from Frank Gertler, MIT) were subcloned into the pCIB lentiviral expression vector (Addgene plasmid #120862) as previously described (Puleo et al., 2019). ENAH EVH1 domain deletion mutant was generated using inverse PCR site-directed mutagenesis of full-length ENAH. All sequences of constructed plasmids were confirmed by Sanger sequencing. mRuby2-PCARE B and Mito-mRuby2-PCARE B inserts were synthesized (Twist Bioscience) and subcloned into a SFFV-promoter lentiviral expression vector.\n\n### Cell culture\n\nMCF7 and HEK293T cells were cultured in high-glucose Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) base media with sodium pyruvate (Corning) supplemented with 10 % fetal bovine serum (FBS; Millipore), 2 mM L-glutamine (Corning), and 100 U/ml penicillin with 100 \u03bcg/ml streptomycin (Corning). MCF7 cells were confirmed mycoplasma negative and validated by STR testing through the Arizona Cancer Center EMSR core facility. MVD7 cells were cultured in high-glucose DMEM supplemented with 15 % FBS, 2 mM L-glutamine, 100 U/ml mouse interferon-\u03b3 (Millipore). MCF7 and HEK293T cells were maintained in a 37 \u00b0C humidified incubator under 5 % CO2. MVD7 cells were maintained in a 32 \u00b0C humidified incubator under 5 % CO2. For lentiviral production, second-generation lentiviral particles were generated by PEI transfection of 293T cells as previously described (Yang et al., 2017) with transfer plasmid, pMD2.G, and psPAX2 (Addgene #12259, #12260, gifts from Didier Trono). HEK293T media containing lentiviral particles was collected, filtered, and added directly to cultures with polybrene (Gibco). Puromycin (2 \u03bcg/ml final concentration; Thermo Fisher) and blasticidin (4 \u03bcg/ml final; Gibco) were used to select for cells stably expressing shRNA sequences or Ena/VASP constructs, respectively, after lentiviral transduction. For immunofluorescence experiments, MCF7 cells were cultured on fibronectin-coated coverslips (10 \u03bcg/ml; Corning). For live cell imaging (MVD7), cells were cultured in fibronectin-coated glass-bottom dishes (Mattek).\n\n### Reverse-transcription quantitative PCR\n\nTo assess EVL knockdown in MVD7, total cellular RNA was isolated using the Isolate II RNA kit (Bioline) according to the manufacturer\u2019s instructions. cDNA was synthesized from 1000 ng of input RNA using qScript cDNA Synthesis kit (Quantabio). Reverse-transcription quantitative PCR reactions were run in duplicate on an ABI 7500 Fast Real-Time PCR System (Applied Biosystems) with PowerTrack SYBR Green Master Mix (Thermo Fisher). Primer pairs were confirmed to have 85\u2013110% efficiency based on the slope of the standard curve from a cDNA dilution series. CTs were normalized to the CT GAPDH housekeeping genes. Percent knockdown was determined using the comparative CT method. M. musculus GAPDH Fwd AGGTCGGTGTGAACGGATTTG, Rev GGGGTCGTTGATGGCAACA. EVL Fwd TGAGAGCCAAACGGAAGACC, Rev TTCTGGACAGCAACGAGGAC.\n\n### Western blotting\n\nCells were lysed in buffer containing 140 mM NaCl, 10 mM Tris pH 8.0, 1 mM EDTA, 0.5 mM EGTA, 1 % Triton X-100, 0.1 % sodium deoxycholate, and 0.1 % SDS with protease and phosphatase inhibitors (Boston Bio Products). Samples were resolved by SDS\u2013PAGE and transferred onto nitrocellulose membranes. Membranes were blocked in Odyssey Blocking Buffer (LI-COR) for 1 hr and incubated at 4 \u00b0C overnight with primary antibodies. Primary antibodies were used as follows: mouse Actin 1:2,500 (ProteinTech Group, 66009-1-Ig), mouse GAPDH 1:1000 (Cell Signaling Technology, 5174 S), rabbit ENAH 1:250 (Sigma, HPA028696), rabbit EVL 1:1000 (Sigma, HPA018849), rabbit VASP 1:1000 (Cell Signaling Technology, 3132 S). Membranes were incubated with secondary antibodies conjugated to either Alexa Fluor 680 or 790 (Thermo Fisher) for 1 hr. Immunoblots were scanned using Odyssey CLx imager (LI-COR).\n\n### Immunofluorescence\n\nMCF7 cells were fixed and immunolabeled 8 hr after plating onto fibronectin (10 \u03bcg/ml; Corning) coated coverslips to assay focal adhesions. Cells were fixed with 4 % paraformaldehyde (PFA; Electron Microscopy Services) with 0.075 mg/ml saponin (Alfa Aesar, Sigma) diluted in PBS at 37 \u00b0C for 10 min. PFA was quenched with 100 mM glycine in PBS at room temperature for 10 min. Cells were then blocked in 1 % BSA plus 1 % FBS in PBS either overnight at 4 \u00b0C or for 1 hr at room temperature. The following immunofluorescence reagents and antibodies were used: mouse anti-Paxillin (1:200, clone: 349; BD Biosciences, 612405), rabbit anti-ENAH (1:100; HPA028448, Sigma), goat anti-mouse Alexa Fluor 488 and Alexa Fluor 647 (1:1000, Thermo Fisher), donkey anti-rabbit Alexa Fluor 405 (Abcam), and Alexa Fluor 488- and Alexa Fluor 647-Phalloidin (1:40, Thermo Fisher). Primary antibodies were diluted in block solution and incubated for 1.5 hr at room temperature. After washing, coverslips were incubated for 1 hr in secondary antibody solution with fluorescently labeled phalloidin. Coverslips were mounted using ProLong Gold Antifade (Invitrogen) and allowed to cure for at least 24 hr before imaging.\n\n### Microscopy and image analysis\n\nCells were imaged on a Ti-E inverted microscope (Nikon), with a \u00d7100 Apo TIRF 1.49 NA objective (Nikon) and an ORCA-Flash 4.0 V2 CMOS camera (Hamamatsu). For focal adhesion assessment, cells were imaged with total internal reflection fluorescence (TIRF) microscopy. To increase the depth of imaging for examination of mitochondrial localization, standard widefield fluorescence microscopy was used. Focal adhesion quantification was performed as previously described (Puleo et al., 2019). Briefly, a binary mask was generated for paxillin signal and actin signal, denoting focal adhesions and cell area, respectively. To facilitate semiautomated segmentation of focal adhesions, we generated a sharp, high contrast image of the paxillin and actin channels by the following processing steps: deconvolution using five iterations of the Richardson\u2013Lucy algorithm, shading correction using rolling ball, and unsharp masked (NIS Elements). Focal adhesion area was quantified by measuring the paxillin area of each cell within the whole cell area, or by examining individual focal adhesions. Enrichment ratio was quantified by measuring the mean fluorescence intensity of mRuby2-PCARE B, Mito-mRuby2-PCARE B, or GFP-ENAH/EVL/VASP at regions of interest and normalizing to average cytosolic intensity. Each experimental condition was performed in triplicate and plotted together. Images presented in figures have been lightly processed in NIS Elements, including by applying 2 iterations of the Richardson\u2013Lucy deconvolution algorithm and rolling ball shading correction to reduce background in live cell images.\n",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "15fef6d4-4a69-4d97-b50e-739ef267bb71",
+      "submission_id": "7934357b-f08a-4f1b-a1a9-1e43c52944ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hening Lin, Cornell University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70601.sa0](https://doi.org/10.7554/eLife.70601.sa0)\n\nThis manuscript describes interesting follow-up studies on one peptide hit (from a protein called PCARE) coming out of a proteome-wide screen for peptides that can bind to the EVH1 domain of ENAH, one of the three highly homologous Ena/VASP actin regulators. Surprisingly PCARE binds to ENAH selectively over the other two members of Ena/VASP family, EVL and VASP. The authors provide a nice explanation for how this selectivity is achieved and develop a peptide PCARE-Dual that specifically binds ENAH more tightly, setting out the stage for developing potent and selective inhibitors for ENAH.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Hening Lin, Cornell University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70601.sa1](https://doi.org/10.7554/eLife.70601.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A distributed residue network permits conformational binding specificity in a conserved family of actin remodelers\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Hening Lin as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Volker D\u00f6tsch as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Linda Nicholson (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The Y62C mutant needs to be further characterized to rule out dimerization and to delineate the effect of V65P mutation.\n\n2) For the structure, EVAH EVH1 is fused to the PCARE peptide. There is concern that the fusion may affect the binding interaction. Some experimental data is needed to address this concern.\n\n3) Some experiments to show the physiological interaction between PCARE and EVAH is needed.\n\n4) Revise the text/Figures according to reviewer suggestions.\n\nThese three points above are from the weaknesses identified by at least two reviewers and all three reviewers agreed during the discussion. The three reviewers felt that two co-submitted manuscripts could be merged into one much stronger manuscript as this manuscript provides some of the supporting data needed for the other manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\nI recommend the authors to revise the text to address the questions that I raised in the public review. Two of the comments need to be addressed with experimental data: the Y62C mutant binding data and the interaction between PCARE protein and ENAH protein.\n\nReviewer #2 (Recommendations for the authors):\n\n1. Please add to the introduction a description of the Acevedo et al., 2017 work provides the basis for design of the dual-motif ligands. Titled \"A Noncanonical Binding Site in the EVH1 Domain of Vasodilator-Stimulated Phosphoprotein Regulates Its Interactions with the Proline Rich Region of Zyxin\", this paper identified and characterized the novel secondary binding site on the opposite face of the VASP-EVH1 domain that was exploited in design of the dual-motif ligands investigated in the current work.\n\n2. The possible regulation of the interaction of ENAH with their dual-motif ligands by phosphorylation of ENAH should be addressed. An additional key finding of the Acevedo 2017 paper was that binding to the secondary site is inhibited by mutation of VASP EVH1 residue Y39 to E, providing a potential explanation for regulation of the VASP-Zyxin interaction by Abl-catalyzed phosphorylation of Y39. ENAH is also a reported target of Abl, and the VASP-Y39-equivalent residue is conserved in ENAH and EVL. The bivalent advantage the authors have designed in their dual-motif ligands could potentially be regulated by phosphorylation of this Y, with implications for their proposed use of a dual-motif ligand for \"dissecting specific Ena/VASP functions in processes including cancer cell invasion\" and \"as a promising lead for developing therapies to treat ENAH-dependent diseases.\" It would provide essential context if the authors addressed this very important aspect.\n\n3. It would strengthen the structural conclusions if it could be demonstrated that untethered PCARE peptide binds in the same orientation as observed in their crystal structure of the fusion protein. The main concern is that tethering the peptide to the C-terminus could constrain the binding options of the peptide (i.e., force a binding mode that differs from the biological interaction). For the VASP/Zyxin interaction, the application of NMR enabled the untethered and tethered binding interactions to be matched using chemical shift perturbations. Ideally, EVAH-EVH1 complexed with a tight-binding PCARE peptide (perhaps PCARE-Dual) could be crystallized and its structure determined. Otherwise, the possibility that fusion of the binding partners might influence the binding mode should be addressed.\n\n4. Figure 2B: The quantification of colocalization in focal adhesions can be more rigorously done using ImageJ along with a plugin for colocalization. The cross-section plots \"along a line through focal adhesions\" show individual examples but do not provide the necessary statistics on the degree of colocalization observed for each of the three paralogs.\n\n5. Figure 2F: does the 4th row in each of the mRUBY2-PCARE B and Mito-mRUBY2-PCARE B columns show visualization of mRUBY2? This should be labeled on the vertical edge, as the other 3 rows are. It would be helpful to keep the same vertical order of protein being visualized; currently the 4-row column is ordered Pax/ENAH/PCARE and the enlarged boxes are Pax/PCARE/ENAH.\n\n6. It would be very helpful to add some discussion of the biological function of PCARE and its connection to actin dynamics.\n\nReviewer #3 (Recommendations for the authors):\n\nThe impact of this work could be enhanced if key elements from both manuscript were combined into a single, more comprehensive paper. This manuscript is relatively short but closely related to the first thematically in that it describes MassTitr-identified interaction features.\n\nThe authors should discuss the potential for the Y62C dimers to form, and rule out that they exist in their preparations.\n",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8649cca6-1b1a-4614-92b9-5cb658b8d064",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C1",
+      "claim": "Metazoan proteomes contain many paralogous proteins that have evolved distinct functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Metazoan proteomes contain many paralogous proteins that have evolved distinct functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about metazoan proteomes supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "2c982ff4-a467-4303-98f0-931fe791e819",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C2",
+      "claim": "The Ena/VASP family of actin regulators consists of three members that share an EVH1 interaction domain with a 100% conserved binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ena/VASP family of actin regulators consists of three members that share an EVH1 interaction domain with a 100 % conserved binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 1A and structural data in Figure 1B showing 100% conservation of the FP4-binding site.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "f9fbea44-96e2-4f4a-95b7-acb006e86cd0",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C3",
+      "claim": "A proteome-wide screen revealed photoreceptor cilium actin regulator (PCARE) as a high-affinity ligand for ENAH EVH1.",
+      "claim_type": "EXPLICIT",
+      "source": "A proteome-wide screen revealed photoreceptor cilium actin regulator (PCARE) as a high-affinity ligand for ENAH EVH1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from a proteomic screen described in the manuscript and referenced in the Results section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "871bb4d5-0809-4cdc-b198-dc9db7e6ad8d",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C4",
+      "claim": "PCARE is ~100-fold specific for ENAH over paralogs VASP and EVL.",
+      "claim_type": "EXPLICIT",
+      "source": "PCARE is ~100-fold specific for ENAH over paralogs VASP and EVL",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by BLI binding data shown in Figure 1C demonstrating 70- to 140-fold preference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "a8cd9ee4-0e66-4120-9906-a0e8f6ee4168",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C5",
+      "claim": "PCARE can selectively bind ENAH and inhibit ENAH-dependent adhesion in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PCARE is ~100-fold specific for ENAH over paralogs VASP and EVL and can selectively bind ENAH and inhibit ENAH-dependent adhesion in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell-based experiments shown in Figure 2 demonstrating selective binding and effects on adhesion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "f4353447-3940-4e31-b95a-fb23128b39ae",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C6",
+      "claim": "Specificity arises from a mechanism whereby PCARE stabilizes a conformation of the ENAH EVH1 domain that is inaccessible to family members VASP and EVL.",
+      "claim_type": "EXPLICIT",
+      "source": "Specificity arises from a mechanism whereby PCARE stabilizes a conformation of the ENAH EVH1 domain that is inaccessible to family members VASP and EVL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data (Figure 3, Figure 4) and mutagenesis experiments (Table 1) showing conformational differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "ed594746-b699-4b44-b1ee-1bfa76a304de",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C7",
+      "claim": "Structure-based modeling rapidly identified seven residues distributed throughout EVL that are sufficient to differentiate binding by ENAH vs. EVL.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure-based modeling rapidly identified seven residues distributed throughout EVL that are sufficient to differentiate binding by ENAH vs. EVL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by dTERMen modeling results shown in Figure 4B and experimental validation in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e991cf88-a0b4-449c-a90b-265eaf044ed5",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C8",
+      "claim": "The authors rationally designed the tightest and most selective ENAH binder to date by exploiting the ENAH-specific conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "By exploiting the ENAH-specific conformation, we rationally designed the tightest and most selective ENAH binder to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by binding data for PCARE-Dual shown in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "bb9c5818-ba50-45c7-8245-743953aca2a7",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C9",
+      "claim": "The Ena/VASP proteins are a family of actin regulators involved in functions ranging from T-cell activation to axon guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ena/VASP proteins are a family of actin regulators involved in functions ranging from T-cell activation to axon guidance (Kwiatkowski et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "d79dfe1e-890c-4e8a-9da1-4dd8feab1bcc",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C10",
+      "claim": "There are three paralogs in mammals: ENAH (often called Mena), VASP, and EVL.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three paralogs in mammals: ENAH (often called Mena), VASP, and EVL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Ena/VASP family.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "c6bc6209-da76-47c9-8de0-8fc46c956d6f",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C11",
+      "claim": "All three Ena/VASP proteins contain an N-terminal EVH1 interaction domain responsible for subcellular localization and a C-terminal EVH2 domain that polymerizes actin.",
+      "claim_type": "EXPLICIT",
+      "source": "All three proteins contain an N-terminal EVH1 interaction domain responsible for subcellular localization and a C-terminal EVH2 domain that polymerizes actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Ena/VASP protein structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "0ad51333-8d4f-42f6-b005-f61c9f68f8e6",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C12",
+      "claim": "The two domains are connected by a linker, predicted to be largely disordered, that contains binding motifs for other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The two domains are connected by a linker, predicted to be largely disordered, that contains binding motifs for other proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural predictions and established knowledge about Ena/VASP proteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "9587d2be-73de-4e97-b500-5ee08ea862d5",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C13",
+      "claim": "The EVH1 domain binds SLiMs with the consensus motif [FWYL]PX\u03a6P, where X is any amino acid and \u03a6 is any hydrophobic residue.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVH1 domain binds SLiMs with the consensus motif [FWYL]PX\u03a6P, where X is any amino acid and \u03a6 is any hydrophobic residue (Ball et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "912f81e7-41e9-450c-bf15-018a31db65bc",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C14",
+      "claim": "The FP4 motif binds the EVH1 domain as a polyproline type II (PPII) helix.",
+      "claim_type": "EXPLICIT",
+      "source": "This sequence, referred to here as the FP4 motif, binds the EVH1 domain as a polyproline type II (PPII) helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about FP4 motif binding mode.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "342acab0-5555-4e4d-91e1-766fa282c4ed",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C15",
+      "claim": "ENAH, VASP, and EVL can all bind to FP4 motifs in lamellipodin to promote actin assembly at the leading edge.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, ENAH, VASP, and EVL can all bind to FP4 motifs in lamellipodin to promote actin assembly at the leading edge (Krause et al., 2004; Hansen and Mullins, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "2ad2da55-2934-4f0f-a369-67d68c0719e2",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C16",
+      "claim": "Single deletions of Ena/VASP paralogs lead to mild phenotypic defects in mice, indicating that the paralogs can functionally compensate for each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Single deletions of Ena/VASP paralogs lead to mild phenotypic defects in mice, indicating that the paralogs can functionally compensate for each other, whereas triple mutant mice die after proceeding to late embryogenesis (Asz\u00f3di et al., 1999; Lanier et al., 1999; Kwiatkowski et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature describing mouse genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "1cd920b2-2d6d-4a52-8840-78bfffb3a98e",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C17",
+      "claim": "Triple mutant mice die after proceeding to late embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Single deletions of Ena/VASP paralogs lead to mild phenotypic defects in mice, indicating that the paralogs can functionally compensate for each other, whereas triple mutant mice die after proceeding to late embryogenesis (Asz\u00f3di et al., 1999; Lanier et al., 1999; Kwiatkowski et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature describing mouse genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e1ad608b-2a98-4471-9f27-8ca52bc7c2f5",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C18",
+      "claim": "ENAH, alone, promotes haptotaxis of breast cancer cells through fibronectin gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "ENAH, alone, promotes haptotaxis of breast cancer cells through fibronectin gradients and regulates translation of specific mRNAs in developing axons, implicating it in functions beyond its role in actin polymerization (Oudin et al., 2016; Vidaki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "9e2b4631-c5b0-436f-8c73-61afa9fb0b63",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C19",
+      "claim": "ENAH regulates translation of specific mRNAs in developing axons, implicating it in functions beyond its role in actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "ENAH, alone, promotes haptotaxis of breast cancer cells through fibronectin gradients and regulates translation of specific mRNAs in developing axons, implicating it in functions beyond its role in actin polymerization (Oudin et al., 2016; Vidaki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "b7c01cbd-76df-474e-9a8c-5d8ed39c28a2",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C20",
+      "claim": "ENAH and VASP promote the invasive potential of migratory breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, whereas ENAH and VASP promote the invasive potential of migratory breast cancer cells, EVL suppresses breast cancer invasion (Roussos et al., 2010; Zhang et al., 2009; Padilla-Rodriguez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "6f55e069-b13a-4c56-87be-efe975e7bbbb",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C21",
+      "claim": "EVL suppresses breast cancer invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, whereas ENAH and VASP promote the invasive potential of migratory breast cancer cells, EVL suppresses breast cancer invasion (Roussos et al., 2010; Zhang et al., 2009; Padilla-Rodriguez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "3706917c-e395-4d7c-9f1d-10af7a895e8e",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C22",
+      "claim": "The FP4-binding pocket of the EVH1 domain is 100% conserved across ENAH, VASP, and EVL.",
+      "claim_type": "EXPLICIT",
+      "source": "The FP4-binding pocket of the EVH1 domain is 100 % conserved across ENAH, VASP, and EVL, and the paralogs share 62\u201372% sequence identity over the entire domain (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1A and structural representation in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "6bf63973-684b-416f-b657-782b7973ee48",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C23",
+      "claim": "The Ena/VASP paralogs share 62\u201372% sequence identity over the entire EVH1 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The FP4-binding pocket of the EVH1 domain is 100 % conserved across ENAH, VASP, and EVL, and the paralogs share 62\u201372% sequence identity over the entire domain (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "fa9983b4-7721-4952-a7ee-62c1078b634d",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C24",
+      "claim": "The three EVH1 domains recognize many common binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the three EVH1 domains recognize many common binding partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high conservation of the binding site and supported by established knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e2c002fb-6921-45a5-a3db-8ac6d330f9b8",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C25",
+      "claim": "The LIM3 domain of testin binds specifically to the ENAH EVH1 domain in a region adjacent to the highly conserved FP4-binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The LIM3 domain of testin binds specifically to the ENAH EVH1 domain in a region adjacent to the highly conserved FP4-binding pocket; this is the only example of an endogenous Ena/VASP EVH1-binding partner where the mechanistic basis for specificity is defined (Bo\u00ebda et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "3cf0172f-c624-4a36-ae5e-b9afab81b774",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C26",
+      "claim": "Testin is the only example of an endogenous Ena/VASP EVH1-binding partner where the mechanistic basis for specificity is defined.",
+      "claim_type": "EXPLICIT",
+      "source": "The LIM3 domain of testin binds specifically to the ENAH EVH1 domain in a region adjacent to the highly conserved FP4-binding pocket; this is the only example of an endogenous Ena/VASP EVH1-binding partner where the mechanistic basis for specificity is defined (Bo\u00ebda et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature and knowledge of the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e20f1b9c-57c3-48ef-a968-eb6a4e9fc2bb",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C27",
+      "claim": "Testin binds specifically because it contacts residues that have diverged across paralogs to form distinct surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Testin binds specifically because it contacts residues that have diverged across paralogs to form distinct surfaces, which is a common mechanism for achieving specificity (Skerker et al., 2008; Bardwell et al., 2009; Schreiber and Keating, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "9e753bae-ebe8-47b5-a5e8-afacaf4f5c5a",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C28",
+      "claim": "A 36-residue peptide from PCARE (PCARE813\u2013848) bound to ENAH with a KD of 0.19 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest affinity hit from our screen was a 36-residue peptide from PCARE (PCARE813\u2013848) that bound to ENAH with a KD of 0.19 \u03bcM (Hwang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from a proteomic screen and cited in a prior publication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "524bbf0e-5b74-4062-9cf6-4e7793ae1e08",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C29",
+      "claim": "23-residue PCARE826\u2013848 (PCARE B) maintains high affinity for ENAH EVH1 (KD = 0.32 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Truncation studies showed that 23-residue PCARE826\u2013848, which we call PCARE B, maintains high affinity for ENAH EVH1 (KD = 0.32 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental truncation studies and binding measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e5ed8372-dffc-41b6-9095-159783637555",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C30",
+      "claim": "PCARE B exhibits a 70- to 140-fold preference for binding to ENAH over EVL or VASP.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the paralog specificity of PCARE B, we quantified binding to EVL and VASP EVH1 domains using biolayer interferometry (BLI) and discovered a 70- to 140-fold preference for binding to ENAH over EVL or VASP (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BLI binding data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "21ea072d-7d10-43ab-a172-47b1b5f0fe79",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C31",
+      "claim": "PCARE is almost exclusively expressed in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "PCARE is almost exclusively expressed in the retina, and mutations in PCARE are associated with inherited retinitis pigmentosa and retinal dystrophy (Collin et al., 2010; Nishimura et al., 2010; Kevany et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "44494aa1-ab62-4655-9533-9c5e6c68f004",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C32",
+      "claim": "Mutations in PCARE are associated with inherited retinitis pigmentosa and retinal dystrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "PCARE is almost exclusively expressed in the retina, and mutations in PCARE are associated with inherited retinitis pigmentosa and retinal dystrophy (Collin et al., 2010; Nishimura et al., 2010; Kevany et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "81d24997-8d01-4c98-acfd-1ba3f8efc4e1",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C33",
+      "claim": "Prior work implicates PCARE as a scaffold protein important for recruiting complexes that regulate actin assembly as part of new outer segment disk formation in photoreceptor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work implicates PCARE as a scaffold protein important for recruiting complexes that regulate actin assembly as part of new outer segment disk formation in photoreceptor cells (Corral-Serrano et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "36e24a53-87ba-4362-b2e7-b379066f0b95",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C34",
+      "claim": "Previous investigations identified ENAH as an interaction partner for PCARE based on tandem-affinity purification experiments in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous investigations identified ENAH as an interaction partner for PCARE based on tandem-affinity purification experiments in HEK293T cells and colocalization of PCARE with Ena/VASP at ciliary membrane expansions in hTERT RPE1 cells (Boldt et al., 2016; Corral-Serrano et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "917065be-1114-4d94-af4b-c572b4358071",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C35",
+      "claim": "PCARE colocalizes with Ena/VASP at ciliary membrane expansions in hTERT RPE1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous investigations identified ENAH as an interaction partner for PCARE based on tandem-affinity purification experiments in HEK293T cells and colocalization of PCARE with Ena/VASP at ciliary membrane expansions in hTERT RPE1 cells (Boldt et al., 2016; Corral-Serrano et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "92200271-4839-4b5c-87d8-f033ec3de1da",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C36",
+      "claim": "PCARE was associated with 17 other proteins with actin-related functions via protein tandem-affinity purification studies.",
+      "claim_type": "EXPLICIT",
+      "source": "PCARE was also associated, via protein tandem-affinity purification studies, with 17 other proteins with actin-related functions, including Wiskott\u2013Aldrich syndrome protein family member 3 (WASF3), which is recruited via PCARE to the cilium, leading to membrane expansions that involve actin polymerization (Corral-Serrano et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "67448a51-c9ff-44be-9c9c-00f402bdc372",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C37",
+      "claim": "WASF3 is recruited via PCARE to the cilium, leading to membrane expansions that involve actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "PCARE was also associated, via protein tandem-affinity purification studies, with 17 other proteins with actin-related functions, including Wiskott\u2013Aldrich syndrome protein family member 3 (WASF3), which is recruited via PCARE to the cilium, leading to membrane expansions that involve actin polymerization (Corral-Serrano et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "1cf77e47-a46e-4d10-b126-6940d395167f",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C38",
+      "claim": "mRuby2-PCARE B was moderately enriched at focal adhesions when coexpressed with ENAH.",
+      "claim_type": "EXPLICIT",
+      "source": "mRuby2-PCARE B exhibited diffuse cytoplasmic localization under all conditions except when coexpressed with ENAH, in which case mRuby2-PCARE B was moderately enriched at focal adhesions, consistent with an ENAH\u2013PCARE B interaction (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "05393bd2-1a49-44d4-9898-c0bec321e8a8",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C39",
+      "claim": "There is significant enrichment (p < 0.0001) of mRuby2-PCARE B with GFP-ENAH at focal adhesions compared to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant enrichment (p < 0.0001) of mRuby2-PCARE B with GFP-ENAH at focal adhesions compared to the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of microscopy data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "8c37bd39-5dff-4bfe-815d-ad2fdbd07fbe",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C40",
+      "claim": "The enrichment ratios for mRuby2-PCARE B with GFP-EVL and GFP-VASP were not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment ratios for mRuby2-PCARE B with GFP-EVL and GFP-VASP were not significant (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of microscopy data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "c092d635-851c-4f42-b513-b3079d495c4d",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C41",
+      "claim": "ENAH was significantly colocalized with Mito-mRuby2-PCARE B at mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In MVD7shEVL cells with exogenously expressed Ena/VASP paralogs, ENAH was significantly colocalized with Mito-mRuby2-PCARE B at mitochondria, although some ENAH remained associated with focal adhesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "62a65091-d6e8-4a70-b5b6-72f89b315e1c",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C42",
+      "claim": "EVL and VASP remained entirely localized to focal adhesions and did not localize to mitochondria when Mito-mRuby2-PCARE B was expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, EVL and VASP remained entirely localized to focal adhesions and did not localize to mitochondria (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "6d340a5f-5322-402e-8b43-c4739a066a75",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C43",
+      "claim": "There is significant enrichment (p < 0.0001) of Mito-mRuby2-PCARE B with GFP-ENAH at the mitochondria compared to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "There is significant enrichment (p < 0.0001) of Mito-mRuby2-PCARE B with GFP-ENAH at the mitochondria compared to the cytoplasm, whereas the enrichment ratios of Mito-mRuby2-PCARE B with GFP-EVL and GFP-VASP were not significant (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of microscopy data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "3a9c4b50-444e-43e9-9bf2-af3817bd2772",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C44",
+      "claim": "ENAH knockdown was associated with diminished adhesion and smaller focal adhesion size compared to cells expressing nontargeting shRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, ENAH knockdown was associated with diminished adhesion and smaller focal adhesion size as compared to cells expressing nontargeting shRNA (Figure 2F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data and quantification shown in Figure 2G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "52950256-291a-434c-995c-93f60394a0bc",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C45",
+      "claim": "Expression of PCARE B resulted in a similar decrease in adhesion as ENAH knockdown, suggesting suppression of ENAH function at focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, expression of PCARE B resulted in a similar decrease in adhesion, suggesting suppression of ENAH function at focal adhesions (Figure 2G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data and quantification shown in Figure 2G-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "4436c275-601b-41dc-86fb-eb109237a4c6",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C46",
+      "claim": "Expression of PCARE B in MCF7 cells shifted the enrichment of ENAH from focal adhesions to membrane protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the expression of PCARE B in MCF7 cells shifted the enrichment of ENAH from focal adhesions to membrane protrusions (Figure 2G center inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "d6c34be3-2895-49c0-8d12-83b6ac021341",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C47",
+      "claim": "ENAH enrichment at protrusions was not observed in MCF7 cells expressing Mito-mRuby2-PCARE B, which exhibited strong mitochondrial localization of ENAH and markedly decreased adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "ENAH enrichment at protrusions was not observed in MCF7 cells expressing Mito-mRuby2-PCARE B, which exhibited strong mitochondrial localization of ENAH and markedly decreased adhesion (Figure 2G right inset, Figure 2H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "169ae717-fc4d-46ff-9e39-b5e88019abd1",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C48",
+      "claim": "The crystal structure of ENAH EVH1 domain fused to a 36-mer PCARE sequence was solved to 1.65 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the structural basis for the high-affinity and selective interaction of PCARE B with ENAH, we solved a crystal structure of ENAH EVH1 domain fused to a 36-mer PCARE sequence to 1.65 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data and methods described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "5dc8bf98-0ef1-4b59-9070-ca0b66805589",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C49",
+      "claim": "Only 21 residues of PCARE were fully resolved in the electron density (PCARE828\u2013848).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our truncation studies, our structure showed that only 21 residues of PCARE were fully resolved in the electron density (PCARE828\u2013848, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "be15d29b-4a46-43ba-9080-1d03b16ad4e3",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C50",
+      "claim": "The LPPPP motif in PCARE binds at the expected canonical site, but in the opposite orientation from previously observed Ena/VASP EVH1 domains engaged with proline-rich peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-resolution structure led to the surprising discovery that the LPPPP motif in PCARE binds at the expected canonical site, but in the opposite orientation from previously observed Ena/VASP EVH1 domains engaged with proline-rich peptides (Ball et al., 2000; Prehoda et al., 1999; Fedorov et al., 1999; Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic data shown in Figure 3A, B and comparison to prior structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "9ac97c6b-659b-4db0-81f1-a01fefc75bdf",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C51",
+      "claim": "PCARE828\u2013848 uses a 14-residue alpha helix-rich extension C-terminal to the LPPPP motif to make additional contacts to an extended region on the EVH1 domain, explaining its high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "PCARE828\u2013848 uses a 14-residue alpha helix-rich extension C-terminal to the LPPPP motif to make additional contacts to an extended region on the EVH1 domain, explaining its high affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data shown in Figure 3C and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "49bce117-4088-4f5c-acc5-70a36a212ac0",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C52",
+      "claim": "PCARE residues Phe843 and Leu846 make hydrophobic interactions with Ala83 and Pro65 on ENAH.",
+      "claim_type": "EXPLICIT",
+      "source": "PCARE residues Phe843 and Leu846 make hydrophobic interactions with Ala83 and Pro65 on ENAH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "166599cf-661d-489e-8d40-f15c3adb0109",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C53",
+      "claim": "The side chain of Asp840 on PCARE docks into a polar pocket on ENAH made up of the backbone atoms of ENAH residues Lys69 and Arg81.",
+      "claim_type": "EXPLICIT",
+      "source": "The side chain of Asp840 on PCARE docks into a polar pocket on ENAH made up of the backbone atoms of ENAH residues Lys69 and Arg81.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "ccc5fca1-4267-41d1-9be9-a77fe092cd4b",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C54",
+      "claim": "The backbone NH and side-chain hydroxyl group of Ser842 on PCARE form hydrogen bonds with the side chain of Asp840.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the backbone NH and side-chain hydroxyl group of Ser842 on PCARE form hydrogen bonds with the side chain of Asp840, positioning Asp840 to hydrogen bond with a water molecule that is further coordinated by the backbone NH of ENAH Arg81.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "6b7999af-c799-45bb-9161-711d787e2ad8",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C55",
+      "claim": "The alpha-helical structure of PCARE828\u2013848 buries the smaller Val837 in the same site where phenylalanine can bind.",
+      "claim_type": "EXPLICIT",
+      "source": "Most intriguing is the interaction between Val837 on PCARE and the hydrophobic groove in ENAH, which typically engages large aromatic residues. The alpha-helical structure of PCARE828\u2013848 buries the smaller Val837 in the same site where phenylalanine can bind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "7a13053a-0605-4e78-a37e-ca3583404ddf",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C56",
+      "claim": "ENAH P65D mutation led to a dramatic 100-fold weakening of the affinity of ENAH EVH1 for free PCARE B peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this single mutation led to a dramatic 100-fold weakening of the affinity of ENAH EVH1 for free PCARE B peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by BLI binding data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "f5036742-bf7f-439f-aac9-9e5f4ef1dad7",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C57",
+      "claim": "The ENAH P65D mutation has little effect on the binding of ActA.",
+      "claim_type": "EXPLICIT",
+      "source": "Residue 65, shown in Figure 3C, is remote from the canonical FP4-binding site and, as expected, this mutation has little effect on the binding of ActA (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BLI binding data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "46930216-25d7-4cfa-b5fa-639059be1d8b",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C58",
+      "claim": "16 of the 18 residues that are within 4 \u00c5 of PCARE in ENAH are identical in ENAH, VASP, and EVL.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our structure of ENAH EVH1 domain bound to PCARE828\u2013848 shows that 16 of the 18 residues that are within 4 \u00c5 of PCARE in ENAH are identical in ENAH ,VASP, and EVL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis and sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "b9155c01-b19b-4aad-ba25-89ddc817f576",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C59",
+      "claim": "EVL V65P bound to PCARE B fivefold weaker than did wild-type EVL (KD = 112.1 vs. 22 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, EVL V65P bound to PCARE B fivefold weaker than did wild-type EVL (KD = 112.1 vs. 22 \u03bcM, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BLI binding data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "98272694-4a38-41ef-aaa8-6811b7e45dda",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C60",
+      "claim": "EVL V65P bound to an FP4-containing ActA peptide with the same affinity as wild-type EVL (KD = 2.4 vs. 2.7 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, EVL V65P bound to an FP4-containing ActA peptide, which does not contact Val65 (Barone et al., 2020), with the same affinity as wild-type EVL (KD = 2.4 vs. 2.7 \u03bcM, Table 1), indicating that the V65P mutation does not lead to global disruption of the domain structure but does influence its interaction with PCARE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BLI binding data shown in Table 1 and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "21eeea85-b344-4ce3-8d7d-99da0d83fb88",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C61",
+      "claim": "Comparing the structures of ENAH EVH1 domain bound to PCARE828\u2013848 vs. the peptide FPPPP shows a conformational difference in ENAH: a loop composed of residues 80\u201386 is shifted by 3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the structures of ENAH EVH1 domain bound to PCARE828\u2013848 vs. the peptide FPPPP (PDB 1EVH; Prehoda et al., 1999) shows a conformational difference in ENAH: a loop composed of residues 80\u201386, which forms part of the extended PCARE-binding site, is shifted by 3 \u00c5 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "4f1e646b-077a-4df5-868b-2b3c5f5674aa",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C62",
+      "claim": "The EVL Y62C V65P EVH1 domain double mutant bound to PCARE B with KD = 2.2 \u03bcM, which is 10-fold lower than the KD for wild-type EVL and a striking 56-fold lower than the KD for binding to EVL V65P.",
+      "claim_type": "EXPLICIT",
+      "source": "The Y62C mutation alone had almost no measurable effect on the binding of EVL EVH1 domain to PCARE (Table 1), but the EVL Y62C V65P EVH1 domain double mutant bound to PCARE B with KD = 2.2 \u03bcM, which is 10-fold lower than the KD for wild-type EVL and a striking 56-fold lower than the KD for binding to EVL V65P (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BLI binding data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "3020af65-1e2e-413b-92b7-2190f539ddf1",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C63",
+      "claim": "The dramatic enhancement in affinity for the EVL Y62C V65P double mutant relative to either single mutant indicates strong coupling between positions 62 and 65.",
+      "claim_type": "EXPLICIT",
+      "source": "This dramatic enhancement in affinity for the double mutant relative to either single mutant indicates strong coupling between positions 62 and 65, consistent with the rearrangement of a loop upon PCARE binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis data shown in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "fb60fe9e-8509-47f6-bfb5-7415d3056758",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C64",
+      "claim": "Seven replacements of EVL residues with ENAH residues were sufficient to recapitulate dTERMen energies similar to that for ENAH in the PCARE828\u2013848-bound conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven replacements were sufficient to recapitulate dTERMen energies similar to that for ENAH in the PCARE828\u2013848-bound conformation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dTERMen modeling results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "128c03e1-0833-4bb9-87c3-7dc5347045ff",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C65",
+      "claim": "EVLswapped bound as tightly to PCARE B as did ENAH EVH1 (KD = 0.35 vs. 0.32 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "We made a mutated EVL EVH1 domain with the seven corresponding residues from ENAH. This protein, EVLswapped, bound as tightly to PCARE B as did ENAH EVH1 (KD = 0.35 vs. 0.32 \u03bcM) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BLI binding data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "47699b58-88c1-4a32-9783-954f4eed6196",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C66",
+      "claim": "Peptide PCARE-Dual bound ~sevenfold tighter than PCARE B, with KD = 50 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide PCARE-Dual bound ~ sevenfold tighter than PCARE B, with KD = 50 nM (Figure 5B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BLI binding data shown in Figure 5B and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "4470f3de-ea58-46ba-a86e-a1d1a52dbea9",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C67",
+      "claim": "PCARE-Dual interacted ~eightfold less tightly with a mutant of ENAH EVH1 domain that had a Y38E substitution in the noncanonical site (KD = 0.38 \u00b1 0.01 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the designed two-site binding, PCARE-Dual interacted ~ eightfold less tightly with a mutant of ENAH EVH1 domain that had a Y38E substitution in the noncanonical site (KD = 0.38 \u00b1 0.01 \u03bcM; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BLI binding data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "21524bcc-74c0-4532-9c31-dadf4ed259a7",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C68",
+      "claim": "The ABI1\u2013LPP fusion peptide bound with KD = 0.76 \u03bcM, which is threefold tighter than the ABI1 portion alone and fivefold tighter than the LPP portion alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The ABI1\u2013LPP fusion peptide bound with KD = 0.76 \u03bcM, which is threefold tighter than the ABI1 portion alone and fivefold tighter than the LPP portion alone, although weaker overall than PCARE-Dual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by BLI binding data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "11ae7470-8b3d-4601-b02b-bc6104ec05c7",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C69",
+      "claim": "PCARE-Dual dissociates ~100-fold slower than dual-motif peptide LPP.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancements in affinity for PCARE-Dual and ABI1-LPP come from decreases in off-rate, with PCARE-Dual dissociating ~100-fold slower than dual-motif peptide LPP (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BLI dissociation data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "79eae4a6-26db-4f17-891a-ffc45b8f10b7",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C70",
+      "claim": "PCARE-Dual is 400- to 600-fold selective for ENAH over EVL and VASP.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that PCARE-Dual is 400- to 600-fold selective for ENAH over EVL and VASP, even though VASP is also known to have a noncanonical binding site that can engage a second FP4 motif (Acevedo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by BLI binding data shown in Figure 5D and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "17fd47c2-acd1-4da3-88bb-7150d383f3da",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C71",
+      "claim": "The dual-motif peptides provide the tightest and most specific known binders to the ENAH EVH1 domain to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, our dual-motif peptides provide the tightest and most specific known binders to the ENAH EVH1 domain to date (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of binding data to known literature and supported by data in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "02d9eca5-7c11-4bbb-99b0-b2442261c74e",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C72",
+      "claim": "Synthetic mini-protein pGolemi binds to ENAH with KD = 0.29 \u03bcM, moderate selectivity (20-fold) over VASP, and higher selectivity (\u2265120-fold) over EVL.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic mini-protein pGolemi binds to ENAH with KD = 0.29 \u03bcM, moderate selectivity (20-fold) over VASP, and higher selectivity (\u2265120-fold) over EVL (Golemi-Kotra et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "caba3d86-8acd-4b88-ab48-aeaf686ea64a",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C73",
+      "claim": "The mechanism behind the specificity of pGolemi has not been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism behind the specificity of pGolemi has not been determined, and mutational data do not readily rationalize a model (Holtzman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "9ceff16d-0d83-458a-b87c-49370b870d38",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C74",
+      "claim": "Both ENAH and VASP have been identified in affinity purification-mass spectrometry experiments using PCARE as bait in ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ENAH and VASP have been identified in affinity purification-mass spectrometry experiments using PCARE as bait in ciliated cells (Corral-Serrano et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "967c4678-8d9f-4485-b5e6-b837173601b6",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C75",
+      "claim": "ENAH and VASP can heterotetramerize.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ENAH and VASP can heterotetramerize, VASP may be recruited to the identified complexes indirectly, via interaction with ENAH (Gertler et al., 1996; Riquelme et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e3c25707-cc57-4a90-ba9e-6f3579790a52",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C76",
+      "claim": "VASP may be recruited to PCARE-containing complexes indirectly, via interaction with ENAH.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ENAH and VASP can heterotetramerize, VASP may be recruited to the identified complexes indirectly, via interaction with ENAH (Gertler et al., 1996; Riquelme et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ability of ENAH and VASP to heterotetramerize and the specificity of PCARE for ENAH.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e0555759-0717-4435-8286-f61f853c5410",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C77",
+      "claim": "The PPII helix possesses twofold rotational pseudosymmetry, meaning that the side chains and backbone carbonyls are similarly positioned in either the N-to-C- or C-to-N-terminal directions.",
+      "claim_type": "EXPLICIT",
+      "source": "The PPII helix possesses twofold rotational pseudosymmetry, meaning that the side chains and backbone carbonyls are similarly positioned in either the N-to-C- or C-to-N-terminal directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PPII helix structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e2c12d85-9fda-44a1-be12-fa41dd5338eb",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C78",
+      "claim": "SH3 domains exploit the pseudosymmetry of PPII helices to bind proline-rich sequences in either direction.",
+      "claim_type": "EXPLICIT",
+      "source": "SH3 domains exploit this pseudosymmetry to bind proline-rich sequences in either direction (Zarrinpar et al., 2003a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "2c2282e4-03e7-47f5-a135-4ec408445b77",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C79",
+      "claim": "All Ena/VASP and Homer EVH1 domain structures solved so far show the PPII helix engaged in a single direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all Ena/VASP and Homer EVH1 domain structures solved so far show the PPII helix engaged in a single direction, the WASP EVH1 domain binds its proline-rich ligand in the opposite direction (Volkman et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of prior structural studies and supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "ce7e06b5-c1df-4922-8ca0-44b357f0a49b",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C80",
+      "claim": "The WASP EVH1 domain binds its proline-rich ligand in the opposite direction from Ena/VASP and Homer EVH1 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all Ena/VASP and Homer EVH1 domain structures solved so far show the PPII helix engaged in a single direction, the WASP EVH1 domain binds its proline-rich ligand in the opposite direction (Volkman et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "860d7309-2395-4e68-a1be-e8e425805fdc",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C81",
+      "claim": "It has long been hypothesized, although never demonstrated, that Ena/VASP EVH1 domains might also bind FP4 motifs in either direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, it has long been hypothesized, although never demonstrated, that Ena/VASP EVH1 domains might also bind FP4 motifs in either direction (Ball et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "8d2c049e-9f99-4047-8882-cbf2d8317b54",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C82",
+      "claim": "The large effect on PCARE binding observed for EVL V65P compared to wild-type EVL EVH1 suggests that EVL also binds PCARE in a reversed orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the large effect on PCARE binding that we observed for EVL V65P compared to wild-type EVL EVH1 suggests that EVL also binds PCARE in a reversed orientation (relative to FP4 ligands such as ActA), albeit weakly, because this is the orientation that best explains contacts with position 65.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis data in Table 1 and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "9ba5eb95-c8b3-4d48-b03b-c7a6d6f0617d",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C83",
+      "claim": "The cancer drug Gleevec achieves 3000-fold selectivity for Abl over Src, despite the fact that the two proteins share ~46% sequence identity across the kinase domain, and ~86% identity in the Gleevec-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this mechanism is reminiscent of how the cancer drug Gleevec achieves 3000-fold selectivity for Abl over Src, despite the fact that the two proteins share ~46 % sequence identity across the kinase domain, and ~86 % identity in the Gleevec-binding site (Seeliger et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "3cfadb7a-3486-49a4-8ba8-30601bf7f420",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C84",
+      "claim": "A few residue swaps based on sequence alignments and structure gazing failed to rescue the affinity of Src for Gleevec, because these mutations failed to account for the higher-order epistatic interactions that contribute to specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "As we found here, a few residue swaps based on sequence alignments and structure gazing failed to rescue the affinity of Src for Gleevec, because these mutations failed to account for the higher-order epistatic interactions that contribute to specificity (Seeliger et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "4ba5d385-0a9b-4f72-be61-5f83f5a9ff7e",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C85",
+      "claim": "Retracing the evolutionary trajectories that led to extant Src and Abl kinases, using ancestral reconstruction, allowed identification of residues involved in a hydrogen-bonding network distant from the Gleevec-binding interface that are key for selective binding to Abl.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, because evolution has sampled kinase sequence space under the constraints of epistasis, retracing the evolutionary trajectories that led to extant Src and Abl kinases, using ancestral reconstruction, allowed Wilson et al. to identify residues involved in a hydrogen-bonding network distant from the Gleevec-binding interface that are key for selective binding to Abl (Wilson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "5c7b54fd-3246-46a0-91cd-98e2ed99f73e",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C86",
+      "claim": "Randomizing hydrophobic core residues of the SH3 domain from human Fyn tyrosine kinase could effectively switch its affinity and specificity to different ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study demonstrated that randomizing hydrophobic core residues of the SH3 domain from human Fyn tyrosine kinase could effectively switch its affinity and specificity to different ligands (Ben-David et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "1f745428-bd61-43d0-b0c4-f1c4b4d80b3b",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C87",
+      "claim": "Directed evolution experiments that varied only the hydrophobic core residues of ubiquitin yielded a conformationally stabilized ubiquitin variant that was specific for the deubiquitinase USP7.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, directed evolution experiments that varied only the hydrophobic core residues of ubiquitin yielded a conformationally stabilized ubiquitin variant that was specific for the deubiquitinase USP7 (Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "57b892b5-5ba9-40de-b521-159540eabf6b",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C88",
+      "claim": "Cytoplasmic expression of a PCARE peptide displaces ENAH from focal adhesions but not membrane protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic expression of a PCARE peptide displaces ENAH from focal adhesions but not membrane protrusions, indicating that this peptide could serve as a valuable tool to selectively perturb EVH1-dependent functions of ENAH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "b4c94fc0-7ec0-4159-a0b4-d2a487cc1a10",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C89",
+      "claim": "A mito-tagged PCARE peptide selectively sequesters ENAH at the mitochondria, depleting it from sites of normal function and inhibiting ENAH-dependent biological processes such as cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a mito-tagged PCARE peptide selectively sequesters ENAH at the mitochondria, depleting it from sites of normal function and inhibiting ENAH-dependent biological processes such as cell adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2D-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "dd99685f-49d7-4d17-ad8b-a1f80e123259",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C90",
+      "claim": "The high avidity of PCARE peptides when localized to the mitochondrial surface could potentially outcompete interactions between the EVH2 domain of ENAH and actin-based structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to the high avidity of these peptides when localized to the mitochondrial surface, which could potentially outcompete interactions between the EVH2 domain of ENAH and actin-based structures (Bachmann et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed effects and supported by a citation to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "f3681738-19f3-44fc-88c2-cc344701efec",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C91",
+      "claim": "ENAH, but not VASP or EVL, is a regulator of local translation in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ENAH, but not VASP or EVL, is a regulator of local translation in neurons (Vidaki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "9b06a0da-93f1-4d9e-b92f-5a3ff2d60d62",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C92",
+      "claim": "EVL has a specific role in durotactic invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, EVL has a specific role in durotactic invasion (Puleo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "7827855e-561c-4078-b904-1b213139eb26",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C93",
+      "claim": "VASP is phosphorylated at Tyr39 by c-Abl.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although VASP is phosphorylated at Tyr39 by c-Abl, we did not find direct evidence in the literature for corresponding phosphorylation of ENAH at the analogous position Tyr38 (Maruoka et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "57d6fb6b-c300-4c45-b208-653f52aeb2e9",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C94",
+      "claim": "ENAH is a substrate of c-Abl, but the ENAH modification site is Tyr 296.",
+      "claim_type": "EXPLICIT",
+      "source": "ENAH is a substrate of c-Abl, but experiments by Tani et al. using transfected murine ENAH or ENAH mutants, c-Abl, and the adapter protein Abi1 showed that the ENAH modification site is Tyr 296; the mutation Y296F ablated the phosphorylation signal, indicating that Y38 is not a site of modification, at least under the tested conditions (Tani et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "5216685d-6442-47bb-a7e1-822568061482",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C95",
+      "claim": "Extensive structure-based design and chemical optimization recently led to a high-affinity molecule (KD = 120 nM) that reduced breast cancer cell extravasation in a zebrafish model.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of ENAH in cancer metastasis has motivated work to identify inhibitors of its EVH1-mediated interactions, and extensive structure-based design and chemical optimization recently led to a high-affinity molecule (KD = 120 nM) that reduced breast cancer cell extravasation in a zebrafish model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of recent work in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e78b6b02-ce05-4b1d-9d19-95d454fa9130",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C96",
+      "claim": "The recently developed high-affinity inhibitor has similar affinity for ENAH, EVL, and VASP because it binds to the highly conserved FP4-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the molecule binds to the highly conserved FP4-binding site, this inhibitor has similar affinity for ENAH, EVL, and VASP (Barone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "74d344e6-0b59-46dd-82ef-9080838664a8",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C97",
+      "claim": "ENAH deficiency in mouse models of cancer has been shown to decrease metastasis by reducing tumor cell invasion and intravasation.",
+      "claim_type": "EXPLICIT",
+      "source": "ENAH deficiency in mouse models of cancer has been shown to decrease metastasis by reducing tumor cell invasion and intravasation (Roussos et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "ebf4882d-52b5-4906-8f1c-5f10a564c434",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "claim_id": "C98",
+      "claim": "EVL is known to promote the formation of cortical actin bundles that suppress the invasion of breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, EVL is known to promote the formation of cortical actin bundles that suppress the invasion of breast cancer cells (Padilla-Rodriguez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Ena/VASP family consists of three mammalian paralogs (ENAH, VASP, EVL) with highly conserved EVH1 domains that share 62-72% sequence identity overall and 100% conservation in the FP4-binding pocket. These proteins contain N-terminal EVH1 domains for localization, C-terminal EVH2 domains for actin polymerization, and disordered linkers connecting them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C14, C22-C23 establish well-documented background knowledge about the Ena/VASP family structure and conservation. The 100% conservation of the FP4-binding site is directly supported by sequence alignment and structural data in Figure 1A-B (C2, C22). The overall sequence identity percentages (C23) are also supported by Figure 1A data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "de81e2bb-4f7e-4eda-9d8b-10e4077aa28c",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PCARE was identified as a high-affinity ENAH EVH1 ligand through proteome-wide screening, with a 36-residue peptide (PCARE813-848) binding at KD = 0.19 \u03bcM. A truncated 23-residue peptide (PCARE B, residues 826-848) maintains high affinity (KD = 0.32 \u03bcM) and exhibits 70- to 140-fold selectivity for ENAH over EVL and VASP paralogs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C28-C30 are directly supported by experimental BLI data shown in Figure 1C and cited proteomic screening results. The affinity measurements are quantitative with error bars, and the selectivity is demonstrated through direct comparison of binding to all three paralogs. The truncation studies validating PCARE B are also experimentally supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "b8d0da2f-9cd7-48e7-86f6-e32fa9a28a1a",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PCARE B selectively colocalizes with ENAH but not EVL or VASP in cells. mRuby2-PCARE B shows significant enrichment at focal adhesions only when coexpressed with ENAH (p < 0.0001), not with EVL or VASP. Similarly, mitochondrially-targeted Mito-mRuby2-PCARE B recruits ENAH but not EVL or VASP to mitochondria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are supported by quantitative microscopy data in Figure 2A-F with statistical analysis. The enrichment ratios are quantified with appropriate statistical tests (p < 0.0001 for ENAH, not significant for EVL/VASP). The selective colocalization is demonstrated through both focal adhesion and mitochondrial targeting experiments with proper controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "09cc1688-e0a6-4772-a713-c1c48a342f7c",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PCARE B expression functionally inhibits ENAH-dependent cell adhesion in MCF7 cells, producing effects similar to ENAH knockdown. Cytoplasmic PCARE B displaces ENAH from focal adhesions to membrane protrusions, while mitochondrially-targeted PCARE B sequesters ENAH at mitochondria and markedly decreases adhesion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47, C88-C89 are supported by immunofluorescence data in Figure 2G-I showing quantified effects on focal adhesion area and size. The comparison between ENAH knockdown and PCARE B expression provides functional validation. The differential effects of cytoplasmic vs. mito-targeted PCARE B on ENAH localization are clearly demonstrated with appropriate imaging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "2c7730e9-d6ab-43e2-a608-91b7be9d4dfc",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Crystal structure of ENAH EVH1 bound to PCARE (1.65 \u00c5 resolution) reveals that PCARE828-848 binds in a reversed orientation compared to canonical FP4 peptides, with the LPPPP motif engaging the canonical site but oriented N-to-C instead of the typical direction. A 14-residue alpha-helical extension C-terminal to the LPPPP motif makes extensive contacts with an extended binding surface on ENAH EVH1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 are directly supported by high-resolution crystallographic data shown in Figure 3A-C (PDB 7LXF). The reversed binding orientation is clearly demonstrated through structural comparison with prior FP4-bound structures. The specific molecular interactions (hydrophobic contacts, hydrogen bonds, polar pocket interactions) are all resolved in the 1.65 \u00c5 structure and detailed in Figure 3C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "b057a134-9f7a-4186-ab3f-d809fae98033",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mutagenesis of ENAH Pro65 to Asp (P65D) causes a 100-fold loss in PCARE B binding affinity but has minimal effect on ActA binding, validating that the extended binding interface observed in the crystal structure is critical for PCARE recognition but not for canonical FP4 ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by BLI binding data in Table 1 showing ENAH P65D binds PCARE B with KD = 32 \u03bcM vs. 0.32 \u03bcM for wild-type (100-fold difference), while ActA binding is minimally affected (7.2 vs. 5.2 \u03bcM). This validates the structural model and demonstrates Pro65 is specifically important for PCARE but not canonical FP4 binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "0236ff86-b91f-43df-8910-8c7a21c289cd",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Despite 16 of 18 residues within 4 \u00c5 of PCARE being identical across paralogs, EVL binds PCARE weakly. The EVL V65P mutation unexpectedly weakens PCARE binding 5-fold without affecting ActA binding. However, the double mutant EVL Y62C/V65P binds PCARE 10-fold tighter than wild-type EVL and 56-fold tighter than EVL V65P, indicating strong epistatic coupling between positions 62 and 65 consistent with a conformational rearrangement of the 80-86 loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 are supported by structural analysis and comprehensive mutagenesis data in Table 1 and Figure 4A. The epistatic effects are clearly demonstrated: EVL Y62C alone has minimal effect (19 vs. 22 \u03bcM), EVL V65P weakens binding (112 vs. 22 \u03bcM), but the double mutant dramatically improves binding (2.2 \u03bcM). The 3 \u00c5 loop shift is documented in Figure 4A structural comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "890a326e-776c-4d48-8168-b8a4adab5391",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Structure-based dTERMen modeling identified seven distributed residues in EVL that, when swapped to corresponding ENAH residues, are sufficient to confer high-affinity PCARE binding. The resulting EVLswapped protein binds PCARE B with KD = 0.35 \u03bcM, matching ENAH's affinity (0.32 \u03bcM), demonstrating that specificity arises from a distributed epistatic network enabling an ENAH-specific conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C64-C65 are supported by dTERMen computational modeling (Figure 4B) and experimental validation (Figure 4C). The modeling rapidly identified 7 residues from 29 differences and 1.56 million possible combinations. The experimental validation showing EVLswapped binds as tightly as ENAH (0.35 vs. 0.32 \u03bcM) provides strong support for the conformational specificity mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "4b98a1c0-27bf-4805-b62b-246dbe214a69",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rational design of dual-motif peptides exploiting both canonical and noncanonical binding sites yielded PCARE-Dual with KD = 50 nM (7-fold tighter than PCARE B) and 400-600-fold selectivity for ENAH over EVL/VASP. PCARE-Dual dissociates ~100-fold slower than single-motif peptides and represents the tightest and most selective ENAH EVH1 binder reported to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C66-C71 are supported by comprehensive BLI binding data in Figure 5B-D. The dual-site binding mechanism is validated by 8-fold weaker binding to ENAH Y38E mutant (Figure 5-supplement 1). The enhanced affinity comes from decreased off-rate (Figure 5C). The comparison to other known binders (pGolemi, ABI1-LPP) supports the claim of being the tightest/most selective binder.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ena/VASP paralogs exhibit both overlapping and distinct functions. All three can bind lamellipodin FP4 motifs and promote actin assembly, and single knockouts show mild phenotypes with functional compensation, while triple knockouts are embryonic lethal. However, ENAH specifically promotes breast cancer haptotaxis and regulates neuronal mRNA translation, while EVL suppresses breast cancer invasion. Testin LIM3 domain is the only previously characterized endogenous ligand with defined specificity mechanism, binding ENAH through contacts with divergent surface residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C21, C24-C27 are all supported by citations to prior literature establishing the functional relationships between paralogs. These represent well-established background knowledge from multiple independent studies. The claims about overlapping vs. distinct functions are consistently supported across the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PCARE is almost exclusively expressed in the retina where it functions as a scaffold protein recruiting actin regulatory complexes for photoreceptor outer segment disk formation. Mutations in PCARE cause retinitis pigmentosa and retinal dystrophy. Prior studies identified ENAH and VASP in PCARE complexes through affinity purification-MS, though VASP may be recruited indirectly via ENAH heterotetramers rather than direct PCARE binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37, C74-C76 are supported by multiple citations to prior literature characterizing PCARE biology and interactions. The inference that VASP may be recruited indirectly (C76) is reasonable given the demonstrated PCARE specificity for ENAH and the known ability of ENAH/VASP to heterotetramerize (C75), though this remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "d8ccb861-c47c-47ac-b54a-3f336c8e18c2",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The reversed binding orientation of PCARE's LPPPP motif exploits the twofold rotational pseudosymmetry of PPII helices, a property previously utilized by SH3 domains and WASP EVH1 but never before demonstrated for Ena/VASP EVH1 domains despite long-standing speculation. The large effect of EVL V65P mutation suggests EVL also binds PCARE in reversed orientation, albeit weakly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C77-C82 are supported by structural data (Figure 3A-B), established knowledge about PPII helix geometry (C77), and citations to prior literature on SH3 domains and WASP EVH1 (C78, C80). The inference about EVL binding orientation (C82) is reasonable based on the mutagenesis data in Table 1, though it remains indirect evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "9307c317-488e-4c3c-818e-fcb17a50a463",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The conformational specificity mechanism observed for PCARE-ENAH parallels other examples of specificity through conformational selection, including Gleevec's 3000-fold selectivity for Abl over Src despite 86% binding site identity. Like the PCARE case, simple residue swaps failed to transfer Gleevec specificity to Src, but ancestral reconstruction identified distant epistatic networks. Similar mechanisms involving hydrophobic core residues have been demonstrated for SH3 domains and ubiquitin variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 are all supported by citations to prior literature establishing analogous mechanisms of conformational specificity in other protein systems. These comparisons provide important context for interpreting the PCARE-ENAH mechanism and suggest conformational specificity may be a widespread strategy for achieving paralog selectivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    },
+    {
+      "id": "4aebb9f8-ad54-4e32-9523-8a57087c9696",
+      "content_id": "ea05952b-b6b3-4d07-b78a-3b6d1f892f33",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The therapeutic potential of ENAH-specific inhibitors is supported by distinct paralog functions in cancer: ENAH promotes metastasis while EVL suppresses invasion. Recent structure-based inhibitors achieve 120 nM affinity but lack paralog selectivity. ENAH is not phosphorylated at Tyr38 (unlike VASP Tyr39), which may enhance specificity of dual-motif inhibitors like PCARE-Dual that engage this site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C98 are supported by citations to prior literature on paralog-specific cancer functions, existing inhibitors, and phosphorylation sites. The inference about avidity effects (C90) is reasonable but speculative. The discussion of therapeutic implications is well-grounded in the cited literature, though the actual therapeutic utility of PCARE-based inhibitors remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:19:11.254293Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8649cca6-1b1a-4614-92b9-5cb658b8d064",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "2c982ff4-a467-4303-98f0-931fe791e819",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "bb9c5818-ba50-45c7-8245-743953aca2a7",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "d79dfe1e-890c-4e8a-9da1-4dd8feab1bcc",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "c6bc6209-da76-47c9-8de0-8fc46c956d6f",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "0ad51333-8d4f-42f6-b005-f61c9f68f8e6",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "9587d2be-73de-4e97-b500-5ee08ea862d5",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "912f81e7-41e9-450c-bf15-018a31db65bc",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "3706917c-e395-4d7c-9f1d-10af7a895e8e",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "6bf63973-684b-416f-b657-782b7973ee48",
+      "result_id": "7363c347-9dd3-4aa4-8475-58e8b1c197ca"
+    },
+    {
+      "claim_id": "f9fbea44-96e2-4f4a-95b7-acb006e86cd0",
+      "result_id": "de81e2bb-4f7e-4eda-9d8b-10e4077aa28c"
+    },
+    {
+      "claim_id": "9e753bae-ebe8-47b5-a5e8-afacaf4f5c5a",
+      "result_id": "de81e2bb-4f7e-4eda-9d8b-10e4077aa28c"
+    },
+    {
+      "claim_id": "524bbf0e-5b74-4062-9cf6-4e7793ae1e08",
+      "result_id": "de81e2bb-4f7e-4eda-9d8b-10e4077aa28c"
+    },
+    {
+      "claim_id": "e5ed8372-dffc-41b6-9095-159783637555",
+      "result_id": "de81e2bb-4f7e-4eda-9d8b-10e4077aa28c"
+    },
+    {
+      "claim_id": "871bb4d5-0809-4cdc-b198-dc9db7e6ad8d",
+      "result_id": "de81e2bb-4f7e-4eda-9d8b-10e4077aa28c"
+    },
+    {
+      "claim_id": "1cf77e47-a46e-4d10-b126-6940d395167f",
+      "result_id": "b8d0da2f-9cd7-48e7-86f6-e32fa9a28a1a"
+    },
+    {
+      "claim_id": "05393bd2-1a49-44d4-9898-c0bec321e8a8",
+      "result_id": "b8d0da2f-9cd7-48e7-86f6-e32fa9a28a1a"
+    },
+    {
+      "claim_id": "8c37bd39-5dff-4bfe-815d-ad2fdbd07fbe",
+      "result_id": "b8d0da2f-9cd7-48e7-86f6-e32fa9a28a1a"
+    },
+    {
+      "claim_id": "c092d635-851c-4f42-b513-b3079d495c4d",
+      "result_id": "b8d0da2f-9cd7-48e7-86f6-e32fa9a28a1a"
+    },
+    {
+      "claim_id": "62a65091-d6e8-4a70-b5b6-72f89b315e1c",
+      "result_id": "b8d0da2f-9cd7-48e7-86f6-e32fa9a28a1a"
+    },
+    {
+      "claim_id": "6d340a5f-5322-402e-8b43-c4739a066a75",
+      "result_id": "b8d0da2f-9cd7-48e7-86f6-e32fa9a28a1a"
+    },
+    {
+      "claim_id": "3a9c4b50-444e-43e9-9bf2-af3817bd2772",
+      "result_id": "09cc1688-e0a6-4772-a713-c1c48a342f7c"
+    },
+    {
+      "claim_id": "52950256-291a-434c-995c-93f60394a0bc",
+      "result_id": "09cc1688-e0a6-4772-a713-c1c48a342f7c"
+    },
+    {
+      "claim_id": "4436c275-601b-41dc-86fb-eb109237a4c6",
+      "result_id": "09cc1688-e0a6-4772-a713-c1c48a342f7c"
+    },
+    {
+      "claim_id": "d6c34be3-2895-49c0-8d12-83b6ac021341",
+      "result_id": "09cc1688-e0a6-4772-a713-c1c48a342f7c"
+    },
+    {
+      "claim_id": "57b892b5-5ba9-40de-b521-159540eabf6b",
+      "result_id": "09cc1688-e0a6-4772-a713-c1c48a342f7c"
+    },
+    {
+      "claim_id": "b4c94fc0-7ec0-4159-a0b4-d2a487cc1a10",
+      "result_id": "09cc1688-e0a6-4772-a713-c1c48a342f7c"
+    },
+    {
+      "claim_id": "169ae717-fc4d-46ff-9e39-b5e88019abd1",
+      "result_id": "2c7730e9-d6ab-43e2-a608-91b7be9d4dfc"
+    },
+    {
+      "claim_id": "5dc8bf98-0ef1-4b59-9070-ca0b66805589",
+      "result_id": "2c7730e9-d6ab-43e2-a608-91b7be9d4dfc"
+    },
+    {
+      "claim_id": "be15d29b-4a46-43ba-9080-1d03b16ad4e3",
+      "result_id": "2c7730e9-d6ab-43e2-a608-91b7be9d4dfc"
+    },
+    {
+      "claim_id": "9ac97c6b-659b-4db0-81f1-a01fefc75bdf",
+      "result_id": "2c7730e9-d6ab-43e2-a608-91b7be9d4dfc"
+    },
+    {
+      "claim_id": "49bce117-4088-4f5c-acc5-70a36a212ac0",
+      "result_id": "2c7730e9-d6ab-43e2-a608-91b7be9d4dfc"
+    },
+    {
+      "claim_id": "166599cf-661d-489e-8d40-f15c3adb0109",
+      "result_id": "2c7730e9-d6ab-43e2-a608-91b7be9d4dfc"
+    },
+    {
+      "claim_id": "ccc5fca1-4267-41d1-9be9-a77fe092cd4b",
+      "result_id": "2c7730e9-d6ab-43e2-a608-91b7be9d4dfc"
+    },
+    {
+      "claim_id": "6b7999af-c799-45bb-9161-711d787e2ad8",
+      "result_id": "2c7730e9-d6ab-43e2-a608-91b7be9d4dfc"
+    },
+    {
+      "claim_id": "7a13053a-0605-4e78-a37e-ca3583404ddf",
+      "result_id": "b057a134-9f7a-4186-ab3f-d809fae98033"
+    },
+    {
+      "claim_id": "f5036742-bf7f-439f-aac9-9e5f4ef1dad7",
+      "result_id": "b057a134-9f7a-4186-ab3f-d809fae98033"
+    },
+    {
+      "claim_id": "46930216-25d7-4cfa-b5fa-639059be1d8b",
+      "result_id": "0236ff86-b91f-43df-8910-8c7a21c289cd"
+    },
+    {
+      "claim_id": "b9155c01-b19b-4aad-ba25-89ddc817f576",
+      "result_id": "0236ff86-b91f-43df-8910-8c7a21c289cd"
+    },
+    {
+      "claim_id": "98272694-4a38-41ef-aaa8-6811b7e45dda",
+      "result_id": "0236ff86-b91f-43df-8910-8c7a21c289cd"
+    },
+    {
+      "claim_id": "21eeea85-b344-4ce3-8d7d-99da0d83fb88",
+      "result_id": "0236ff86-b91f-43df-8910-8c7a21c289cd"
+    },
+    {
+      "claim_id": "4f1e646b-077a-4df5-868b-2b3c5f5674aa",
+      "result_id": "0236ff86-b91f-43df-8910-8c7a21c289cd"
+    },
+    {
+      "claim_id": "3020af65-1e2e-413b-92b7-2190f539ddf1",
+      "result_id": "0236ff86-b91f-43df-8910-8c7a21c289cd"
+    },
+    {
+      "claim_id": "f4353447-3940-4e31-b95a-fb23128b39ae",
+      "result_id": "890a326e-776c-4d48-8168-b8a4adab5391"
+    },
+    {
+      "claim_id": "ed594746-b699-4b44-b1ee-1bfa76a304de",
+      "result_id": "890a326e-776c-4d48-8168-b8a4adab5391"
+    },
+    {
+      "claim_id": "fb60fe9e-8509-47f6-bfb5-7415d3056758",
+      "result_id": "890a326e-776c-4d48-8168-b8a4adab5391"
+    },
+    {
+      "claim_id": "128c03e1-0833-4bb9-87c3-7dc5347045ff",
+      "result_id": "890a326e-776c-4d48-8168-b8a4adab5391"
+    },
+    {
+      "claim_id": "e991cf88-a0b4-449c-a90b-265eaf044ed5",
+      "result_id": "4b98a1c0-27bf-4805-b62b-246dbe214a69"
+    },
+    {
+      "claim_id": "47699b58-88c1-4a32-9783-954f4eed6196",
+      "result_id": "4b98a1c0-27bf-4805-b62b-246dbe214a69"
+    },
+    {
+      "claim_id": "4470f3de-ea58-46ba-a86e-a1d1a52dbea9",
+      "result_id": "4b98a1c0-27bf-4805-b62b-246dbe214a69"
+    },
+    {
+      "claim_id": "21524bcc-74c0-4532-9c31-dadf4ed259a7",
+      "result_id": "4b98a1c0-27bf-4805-b62b-246dbe214a69"
+    },
+    {
+      "claim_id": "11ae7470-8b3d-4601-b02b-bc6104ec05c7",
+      "result_id": "4b98a1c0-27bf-4805-b62b-246dbe214a69"
+    },
+    {
+      "claim_id": "79eae4a6-26db-4f17-891a-ffc45b8f10b7",
+      "result_id": "4b98a1c0-27bf-4805-b62b-246dbe214a69"
+    },
+    {
+      "claim_id": "17fd47c2-acd1-4da3-88bb-7150d383f3da",
+      "result_id": "4b98a1c0-27bf-4805-b62b-246dbe214a69"
+    },
+    {
+      "claim_id": "342acab0-5555-4e4d-91e1-766fa282c4ed",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "2ad2da55-2934-4f0f-a369-67d68c0719e2",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "1cd920b2-2d6d-4a52-8840-78bfffb3a98e",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "e1ad608b-2a98-4471-9f27-8ca52bc7c2f5",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "9e2b4631-c5b0-436f-8c73-61afa9fb0b63",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "b7c01cbd-76df-474e-9a8c-5d8ed39c28a2",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "6f55e069-b13a-4c56-87be-efe975e7bbbb",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "fa9983b4-7721-4952-a7ee-62c1078b634d",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "e2c002fb-6921-45a5-a3db-8ac6d330f9b8",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "3cf0172f-c624-4a36-ae5e-b9afab81b774",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "e20f1b9c-57c3-48ef-a968-eb6a4e9fc2bb",
+      "result_id": "5328d8eb-f765-4b3c-b693-0ecdea5a6f8b"
+    },
+    {
+      "claim_id": "21ea072d-7d10-43ab-a172-47b1b5f0fe79",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "44494aa1-ab62-4655-9533-9c5e6c68f004",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "81d24997-8d01-4c98-acfd-1ba3f8efc4e1",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "36e24a53-87ba-4362-b2e7-b379066f0b95",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "917065be-1114-4d94-af4b-c572b4358071",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "92200271-4839-4b5c-87d8-f033ec3de1da",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "67448a51-c9ff-44be-9c9c-00f402bdc372",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "9ceff16d-0d83-458a-b87c-49370b870d38",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "967c4678-8d9f-4485-b5e6-b837173601b6",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "e3c25707-cc57-4a90-ba9e-6f3579790a52",
+      "result_id": "e7b5d21f-01fb-4bca-ab6a-3ad3333d0d92"
+    },
+    {
+      "claim_id": "be15d29b-4a46-43ba-9080-1d03b16ad4e3",
+      "result_id": "d8ccb861-c47c-47ac-b54a-3f336c8e18c2"
+    },
+    {
+      "claim_id": "e0555759-0717-4435-8286-f61f853c5410",
+      "result_id": "d8ccb861-c47c-47ac-b54a-3f336c8e18c2"
+    },
+    {
+      "claim_id": "e2c12d85-9fda-44a1-be12-fa41dd5338eb",
+      "result_id": "d8ccb861-c47c-47ac-b54a-3f336c8e18c2"
+    },
+    {
+      "claim_id": "2c2282e4-03e7-47f5-a135-4ec408445b77",
+      "result_id": "d8ccb861-c47c-47ac-b54a-3f336c8e18c2"
+    },
+    {
+      "claim_id": "ce7e06b5-c1df-4922-8ca0-44b357f0a49b",
+      "result_id": "d8ccb861-c47c-47ac-b54a-3f336c8e18c2"
+    },
+    {
+      "claim_id": "860d7309-2395-4e68-a1be-e8e425805fdc",
+      "result_id": "d8ccb861-c47c-47ac-b54a-3f336c8e18c2"
+    },
+    {
+      "claim_id": "8d2c049e-9f99-4047-8882-cbf2d8317b54",
+      "result_id": "d8ccb861-c47c-47ac-b54a-3f336c8e18c2"
+    },
+    {
+      "claim_id": "9ba5eb95-c8b3-4d48-b03b-c7a6d6f0617d",
+      "result_id": "9307c317-488e-4c3c-818e-fcb17a50a463"
+    },
+    {
+      "claim_id": "3cfadb7a-3486-49a4-8ba8-30601bf7f420",
+      "result_id": "9307c317-488e-4c3c-818e-fcb17a50a463"
+    },
+    {
+      "claim_id": "4ba5d385-0a9b-4f72-be61-5f83f5a9ff7e",
+      "result_id": "9307c317-488e-4c3c-818e-fcb17a50a463"
+    },
+    {
+      "claim_id": "5c7b54fd-3246-46a0-91cd-98e2ed99f73e",
+      "result_id": "9307c317-488e-4c3c-818e-fcb17a50a463"
+    },
+    {
+      "claim_id": "1f745428-bd61-43d0-b0c4-f1c4b4d80b3b",
+      "result_id": "9307c317-488e-4c3c-818e-fcb17a50a463"
+    },
+    {
+      "claim_id": "dd99685f-49d7-4d17-ad8b-a1f80e123259",
+      "result_id": "4aebb9f8-ad54-4e32-9523-8a57087c9696"
+    },
+    {
+      "claim_id": "f3681738-19f3-44fc-88c2-cc344701efec",
+      "result_id": "4aebb9f8-ad54-4e32-9523-8a57087c9696"
+    },
+    {
+      "claim_id": "9b06a0da-93f1-4d9e-b92f-5a3ff2d60d62",
+      "result_id": "4aebb9f8-ad54-4e32-9523-8a57087c9696"
+    },
+    {
+      "claim_id": "7827855e-561c-4078-b904-1b213139eb26",
+      "result_id": "4aebb9f8-ad54-4e32-9523-8a57087c9696"
+    },
+    {
+      "claim_id": "57d6fb6b-c300-4c45-b208-653f52aeb2e9",
+      "result_id": "4aebb9f8-ad54-4e32-9523-8a57087c9696"
+    },
+    {
+      "claim_id": "5216685d-6442-47bb-a7e1-822568061482",
+      "result_id": "4aebb9f8-ad54-4e32-9523-8a57087c9696"
+    },
+    {
+      "claim_id": "e78b6b02-ce05-4b1d-9d19-95d454fa9130",
+      "result_id": "4aebb9f8-ad54-4e32-9523-8a57087c9696"
+    },
+    {
+      "claim_id": "74d344e6-0b59-46dd-82ef-9080838664a8",
+      "result_id": "4aebb9f8-ad54-4e32-9523-8a57087c9696"
+    },
+    {
+      "claim_id": "ebf4882d-52b5-4906-8f1c-5f10a564c434",
+      "result_id": "4aebb9f8-ad54-4e32-9523-8a57087c9696"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study used single-cell RNA sequencing (scRNAseq) of CD45low/-CD235a- and CD45low/-CD235a-CD271+ bone marrow cells to characterize the human BM stromal compartment. The dataset comprised 25,067 cells forming 42 clusters, including nine stromal clusters that were only detectable after CD271+ cell enrichment. The enrichment strategy was necessary due to the low frequency (0.001-0.01%) of stromal stem/progenitor cells in BM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C25, and C80-C82 collectively describe the experimental design and dataset characteristics. The CD271+ enrichment strategy is well-justified by the low frequency of stromal cells (C80), supported by citation (Pittenger et al., 1999), and validated by the detection of nine stromal clusters only after enrichment (C25, C82). The dataset metrics (C21-C22) are clearly reported with appropriate quality control measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C42"
+    ],
+    "result": "Six transcriptionally distinct stromal cell populations were identified: multipotent stromal stem cells (MSSCs), highly adipocytic gene-expressing progenitors (HAGEPs), balanced progenitors, pre-osteoblasts, osteochondrogenic progenitors (OCs), and pre-fibroblasts. These populations were annotated based on expression of established and novel markers, with MSSCs showing high expression of both adipogenic and osteogenic markers, HAGEPs expressing adipogenic markers and stress-related transcription factors, and OCs showing prominent osteochondrogenic marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C27-C35 describe the identification and annotation of six stromal populations based on marker gene expression patterns shown in Figures 2 and supplementary data. The annotations are supported by expression of established markers (C27, citations to Churchman et al., 2012; Li et al., 2014) and validated by RNA velocity analysis (C29). The characterization is comprehensive with clear differential expression patterns for each population (C28-C35, C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "RNA velocity analysis using scVelo recapitulated stromal cell differentiation hierarchy, identifying MSSCs as the root population with two main developmental directions: one toward HAGEPs, OCs, and pre-osteoblasts, and another toward balanced progenitors and pre-fibroblasts. Latent time analysis confirmed MSSCs as the root population. Potential key driver genes were identified for cellular state transitions, including CSTA, B2M, CXCL12, COL1A2 for MSSC transitions; CEBPD, LEPR, CTSC, LMNA, KLF6, EGR1 for MSSC to HAGEP transition; NFKBIA, RBM3, TUBA1A, DDX24, ANXA1 for HAGEP to OC transition; and VCAN for MSSC to balanced progenitor transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7 and C36-C41 describe RNA velocity analysis results and identification of putative driver genes. While the velocity analysis appears technically sound (C36-C37, Figure 3), the identification of driver genes (C38-C41) is based on computational prediction using likelihood-based methods without experimental validation. The authors acknowledge this limitation (C111, C113), stating these predictions need validation in future experiments. The hierarchy is supported by velocity analysis but driver gene identification remains predictive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Surface marker expression differed between stromal groups, enabling prospective isolation. MSSCs (CD45low/-CD235a-CD71-CD271+NCAM1-CD52-CD81++) showed the highest CFU-F frequency and multi-lineage differentiation capacity. HAGEPs (CD81+) also showed significant colony-forming capacity and full differentiation potential. Balanced progenitors, pre-osteoblasts, and OCs had lower colony-forming capacities. Pre-fibroblasts showed the lowest CFU-F potential with reduced adipogenic capacity, while OCs demonstrated enhanced osteogenic/chondrogenic but reduced adipogenic differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 describe functional validation of the transcriptionally defined populations. Surface marker differences (C43-C45, Figure 4A) enable prospective isolation, and functional assays (C46-C51, Figure 4C-D) demonstrate differential colony-forming and differentiation capacities that correlate with transcriptional profiles. The functional data support the hierarchical organization with MSSCs showing highest stemness (C46), and differentiation capacities matching marker expression patterns (C50-C51). Statistical significance is reported (C73, p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C102"
+    ],
+    "result": "In situ localization analysis demonstrated distinct anatomical distribution of stromal populations. CD271+ cells were found in perivascular, endosteal, and stromal regions. Perivascular cells primarily expressed CD271 alone, bone-lining cells showed CD271+NCAM1+ expression (OCs), and CD271+CD81+ cells (MSSCs) were localized in stromal regions including peri-adipocytic and perivascular areas. SPP1-expressing OCs were located endosteally while CD271 single-positive cells including MSSCs were in perivascular and stromal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C52-C56, and C102 describe in situ localization using immunofluorescence (Figure 4E and supplements 2-16). The spatial distribution is well-documented with confocal microscopy validation showing CD271+NCAM1+ cells at bone surfaces (C54, correlating with murine data from Baccin et al., 2020) and CD271+CD81+ cells in peri-adipocytic regions (C55). CD45 co-staining confirms stromal identity (C56). The localization data support the concept of spatially distinct niches (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In silico cell-cell communication analysis using CellPhoneDB predicted that different stromal cell types regulate hematopoiesis through distinct mechanisms. Group A/C stromal cells (including MSSCs) interact with hematopoietic cells primarily through CXCL12-CXCR4, VCAM1, FN1, and MDK pathways, while group B cells (OCs) interact mainly through SPP1-mediated pathways. CXCL12 was highly expressed by group A/C cells and CXCL12-CXCR4 crosstalk was detected in almost all hematopoietic clusters except erythroid progenitors. SPP1-mediated interactions were predominant between OCs and hematopoietic cells, with SPP1 expression higher in OCs and SPP1+ cells exclusively colocalized endosteally with NCAM1+ OCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C57-C68, and C98-C101 describe predicted cell-cell interactions based on ligand-receptor expression analysis. While the computational analysis appears comprehensive (CellPhoneDB, Figure 5), the authors acknowledge significant limitations (C114): the approach infers interactions without considering spatial proximity or functional relevance. SPP1 expression in OCs is validated by FACS (C65) and in situ staining (C66), but most predicted interactions lack functional validation. The authors state a more comprehensive overview requires spatial and functional validation in future studies (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Bidirectional regulation between stromal and hematopoietic cells was predicted. Transferrin (TF) was exclusively expressed by stromal clusters with receptors TFRC and TFR2 highly expressed by erythroid progenitors. PDGFs (PDGFA, PDGFB, PDGFC) were highly expressed by megakaryocytes with receptors PDGFRA and PDGFRB on stromal cells. Hematopoietic cells were predicted to control stromal cells via TGFB1-EGFR, TGFB1-TGFBR1/2/3, and OSM-OSMR/LIFR axes. Inter- and intra-stromal signaling was demonstrated by reduced CFU-F frequencies under single-cell culture conditions (p<0.01), with FGF receptor-mediated, collagen-involving, CXCL12-, MDK-, GRN-, NRP1-, and BST2-mediated pathways identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 describe bidirectional and inter-stromal interactions. The expression patterns for TF (C69), PDGFs (C70), TGFB1 (C71), and OSM (C72) are documented in Figure 6 and supplements. Importantly, inter-stromal signaling is functionally validated by single-cell vs. bulk culture CFU-F assays (C73, Figure 5\u2014supplement 3A, p<0.01), providing experimental support beyond computational predictions. However, most specific pathway predictions (C74-C76) remain computationally inferred without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C106"
+    ],
+    "result": "The endothelial cluster showed broad interaction spectrum with all hematopoietic clusters, interacting mainly through HLA molecules, TNFRSF family members, and LGALS9-mediated interactions, in addition to endothelial-specific SELL-SELPLG and ICAM3-aLb2 pathways. Unlike stromal cells, CXCL12-mediated interactions were not identified as main signaling pathways between endothelial and hematopoietic cells, indicating different communication mechanisms between endothelial cells and stromal cells with hematopoiesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 and C106 describe predicted endothelial-hematopoietic interactions (Figure 7A). The analysis identifies different interaction patterns between endothelial and stromal cells with hematopoiesis (C79), which is an interesting observation. However, like the stromal-hematopoietic predictions, these are based solely on ligand-receptor expression without functional validation or spatial context (C114). The authors acknowledge this needs further investigation (C106).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Stromal cells generally showed hematopoiesis supporting potential, consistent with previously published in-vitro coculture data, which was confirmed in co-cultures with BM CD34+ cells and MSSC- or OC-derived stromal feeder cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 describes functional validation of hematopoiesis support by stromal cells. This is supported by co-culture experiments (Figure 5\u2014supplement 3E) and consistent with prior publications (Li et al., 2014; Li et al., 2020). The functional validation provides experimental support for the computational predictions of stromal-hematopoietic interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Most identified human stromal cell types (MSSCs, HAGEPs, OCs, pre-osteoblasts, pre-fibroblasts) have corresponding murine counterparts, while balanced progenitors have not been described in mice or humans. The study provides phenotypical definition for prospective isolation of molecularly defined stromal stem and progenitors from hematopoietically active adult bone marrow, complementing and extending reported phenotype definitions of MSCs. The phenotypic MSSCs showed expression of previously reported markers CD51 and CD146.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 place the findings in context of prior work. The correspondence with murine cell types (C83, citations to Baryawno et al., 2019; Tikhonova et al., 2019) validates the findings, while identification of balanced progenitors as novel (C84) is appropriately stated. The study's contribution to defining tri-lineage multipotent progenitors in adult human BM (C86-C87) is supported by the functional data (C46-C51). Expression of established markers (C89) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "scRNAseq identified VCAN as a potentially important stromal gene based on high expression in stromal clusters. However, VCAN is not an optimal marker to isolate viable stromal cells because it is an extracellular matrix protein requiring intracellular staining after fixation/permeabilization, and is also expressed by monocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 identify VCAN as a potentially important gene but appropriately acknowledge its limitations as a surface marker. The high expression in stromal clusters (C90) is data-driven, and the limitations (C91) are correctly stated based on VCAN's properties as an ECM protein and expression in monocytes (cluster 36). This demonstrates appropriate critical evaluation of marker utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Preliminary analysis indicated possible age- and gender-related stromal differences, as reported for murine cells. However, this finding needs to be confirmed by additional experimentation in forthcoming studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 describe preliminary observations of age/gender differences. While supported by citations to murine studies (Singh et al., 2016; Maryanovich et al., 2018; Aguilar-Navarro et al., 2020), the authors appropriately acknowledge this is preliminary and requires validation (C93). The dataset includes donors of different ages and genders (C21, Supplementary file 1), but no statistical analysis of these differences is presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Different stromal cells provide specialized niches for hematopoietic cells in different locations. The data confirm and extend previous reports of endosteal and perivascular niches in human BM, conceptually supporting a model where different hematopoietic cell types are differentially regulated by distinct niche milieus composed of specific cytokine-producing stromal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 synthesize the localization (C52-C56, C102) and interaction data (C57-C68, C98-C101) into a conceptual model. The model is supported by: (1) distinct spatial localization of stromal populations (C52-C56, Figure 4E), (2) differential interaction mechanisms (C98-C101), and (3) consistency with prior reports (C104, citations to Tormin et al., 2011; Pinho et al., 2013). While interaction predictions lack functional validation, the spatial data strongly support location-specific niche organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study has several acknowledged limitations: (1) BM aspiration samples likely underrepresent bone-lining/bone-attaching cells, ideally requiring fresh biopsy samples; (2) tri-lineage differentiation was evaluated using standard in-vitro assays that may not reflect bona fide stromal cell potentials, requiring in vivo validation using humanized BM ossicles; (3) predicted key genes and interactions need validation in future experiments; (4) CellPhoneDB analysis infers interactions without considering spatial proximity or functional relevance, requiring combination with spatial localization and functional assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C115 appropriately acknowledge study limitations. The authors recognize sampling limitations (C107-C108), in vitro assay limitations (C109-C110), need for validation of computational predictions (C113), and limitations of ligand-receptor analysis (C114-C115). This critical self-assessment is appropriate and demonstrates scientific rigor. The limitations are significant but do not invalidate the major findings, which are supported by multiple complementary approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The results provide the basis for better understanding of the cellular complexity of the human BM microenvironment and put new light on the concept that specialized niches exist for distinct types of hematopoietic stem and progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 summarize the study's significance. The comprehensive characterization of six stromal populations (C6, C27-C35), their spatial organization (C52-C56), functional properties (C46-C51), and predicted interactions (C57-C68) collectively provide substantial new insight into human BM stromal complexity. The integration of transcriptional, functional, and spatial data represents a significant advance, despite limitations in interaction predictions. The citation to Morrison and Scadden, 2014 (C117) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  }
+]

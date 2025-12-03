@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Artistoo is a JavaScript-based CPM framework that runs in web browsers without requiring software installation, plugins, or back-end servers, and supports interactive parameter exploration in real-time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16, C20-C28 collectively establish Artistoo's core technical implementation and deployment model. The claims are internally consistent and describe verifiable technical specifications (JavaScript/ECMAScript 6, browser-based execution, zero-install architecture, MIT license, GitHub availability). These are design specifications that can be directly verified from the codebase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C19",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Artistoo's JavaScript implementation achieves performance comparable to C++-based frameworks like Morpheus, with no major performance disadvantage and sufficient speed for real-time interactive simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C19, C59-C62 are supported by empirical performance comparison data shown in Figure 2C. The benchmarking methodology is described (C112-C125), comparing four different simulation types between Artistoo and Morpheus. The data show similar performance with Artistoo slightly faster in 3/4 cases, and the one slower case (cell division) still maintaining feasible real-time performance. Statistical reporting includes mean \u00b1 SD of five runs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Artistoo simulation speed scales linearly with grid size, decreases for very large systems, but remains feasible for real-time simulations across a reasonable range of grid sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by scalability data in Figure 2D and Figure 2\u2014figure supplement 1. The linear scaling is demonstrated empirically across multiple grid sizes (C130: 1-1000 cells per type). Figure 2D shows simulation speeds above 20 FPS threshold for various grid sizes. The methodology (C126-C130) appropriately isolates simulation speed from visualization overhead.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Artistoo's JavaScript implementation enables a dual-interface design that serves both model viewers (via zero-install HTML pages with parameter sliders) and model builders (via flexible library access at multiple complexity levels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 describe Artistoo's design philosophy and are supported by Figure 1, which illustrates the different interfaces for viewers, users, and developers. The tiered complexity model (configuration objects \u2192 method incorporation \u2192 custom plugins) is a design specification that addresses the builder/viewer challenge (C29-C34). This is a software architecture claim that is verifiable from the implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C55",
+      "C56",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Artistoo implements a wide range of CPM simulation capabilities through a modular, customizable architecture that allows users to simulate, visualize, and analyze diverse biological processes, with extensibility for custom modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50, C54-C56, C108-C110 describe Artistoo's capabilities and architecture. Figure 2A provides visual evidence of diverse biological processes that can be simulated. The modular architecture claim (C54-C56) is a design specification verifiable from the codebase. The availability of examples (C46) and documentation (C44, C51) are verifiable resources. The claims about customizability are consistent with the described architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Prototype conversion tools have been developed to convert models between Artistoo and Morpheus formats, with limitations acknowledged for models not yet fully portable between frameworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe the existence and functionality of conversion tools with appropriate caveats about limitations. The tools are stated to exist at specific URLs (https://artistoo.net/converter.html). The acknowledgment of limitations (C68) and fallback behavior (C69) demonstrates appropriate transparency. These are verifiable claims about tool availability and behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The authors have successfully used Artistoo in teaching contexts, finding it feasible for students to run and understand CPM models in short workshops even without programming experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 report anecdotal teaching experience without providing systematic evaluation data. No information is provided about sample size, learning outcomes assessment, student feedback, or comparison with other teaching methods. While the authors' experience is genuine, the claim about feasibility lacks rigorous pedagogical evaluation to be considered well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Interactive web-based Artistoo simulations with real-time parameter feedback can substantially speed up parameter selection, detect unpredicted behaviors, enable collaboration with experimental biologists, and improve model quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C90 report the authors' subjective experience with parameter tuning but lack quantitative evaluation. No data are provided comparing parameter tuning time with vs. without interactive visualization, no systematic assessment of artifact detection rates, and no controlled evaluation of collaboration effectiveness. These are plausible benefits but remain anecdotal observations rather than rigorously demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Artistoo is claimed to be the first CPM simulation framework supporting interactive browser-based simulations shareable via URL without requiring installed software or back-end servers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 asserts novelty 'to the best of our knowledge' but provides no systematic review of existing CPM frameworks' capabilities. While the authors cite other frameworks (C10-C13, C96-C98), they do not comprehensively evaluate whether any existing framework already offers browser-based, zero-install, interactive simulations. The novelty claim requires more rigorous comparative analysis to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Interactive Artistoo simulations shared via URL may improve accessibility, transparency, and critical evaluation of CPM research, and foster interdisciplinary exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 are explicitly speculative ('we envision', 'may greatly improve', 'would allow'). These represent hypothesized benefits rather than demonstrated outcomes. No user studies, adoption metrics, or impact assessments are provided to support these potential applications. While plausible, these remain untested predictions about future impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18"
+    ],
+    "result": "Background context on CPM models: CPMs are powerful tissue-scale simulation methods originally for cell sorting, now extended to diverse biological processes; existing mature frameworks (CompuCell3D, Morpheus, TST, CHASTE) use C++ and require installation; JavaScript was historically too slow but has improved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C15, C17-C18 provide background context supported by appropriate citations to established literature (Graner & Glazier 1992, review papers, framework publications). These are well-established facts in the CPM field and accurately characterize the state of existing frameworks and historical performance limitations of interpreted languages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Computational modeling research involves distinct user groups (model builders with programming skills vs. model viewers without), creating a design challenge where GUI-based tools favor viewers but limit builder flexibility, while code-based tools favor builders but exclude viewers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 articulate a well-recognized software design challenge in computational biology. This characterization is based on general knowledge of the field and represents a reasonable framing of the usability vs. flexibility tradeoff. The distinction between builders and viewers is a useful conceptual framework, though somewhat simplified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors have been developing Artistoo for over 5 years, use it for their own research (e.g., Wortel et al. 2020), and continue active development with community contributions welcomed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are verifiable statements about development history and usage. The 5-year development timeline and research use are supported by citation to Wortel et al. 2020. The statement about ongoing development and welcoming contributions is a statement of intent consistent with open-source practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Artistoo is positioned as complementary to existing frameworks rather than a replacement, with acknowledged limitations including lack of support for reaction-diffusion solvers, SBML signaling, and VTK/HDF5 output formats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 appropriately acknowledge Artistoo's limitations and position it as complementary to existing tools. This is a reasonable and transparent assessment of the framework's current scope. The specific missing features (C106-C107) are clearly stated, allowing users to make informed decisions about tool selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C85",
+      "C86"
+    ],
+    "result": "CPM simulations consist of modular components (grid, energy rules, processes, visualization); a key CPM strength is extensibility with custom terms, though finding appropriate parameter ranges can be challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C85-C86 accurately describe established characteristics of CPM models based on general knowledge of the framework. The modular structure (C52) and extensibility (C53) are well-known CPM features. The parameter tuning challenge (C86) is a recognized practical difficulty in CPM modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Context on teaching and open science challenges: software installation in classroom settings is time-consuming; open science has increased code sharing but understanding shared code remains challenging; computational models are particularly difficult to share due to software and coding requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C76-C77, C93-C95 describe well-recognized challenges in teaching and open science based on general knowledge. These are reasonable characterizations of practical barriers to software adoption in education and research dissemination, though no specific evidence is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Related work: CompuCell3D, Tellurium, and PhysiCell offer online access via NanoHub; these and other frameworks demonstrate interactive models using Jupyter notebooks; Shiny apps and 'complexity explorables' exemplify explorable online simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 accurately cite related work with appropriate references. These claims provide context for Artistoo's contributions by acknowledging similar efforts in online model sharing and interactive simulations. The citations support the existence of these related approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Methods for performance evaluation: simulations run in Node.js console mode; four benchmark simulations implemented (Game of Life, protrusion model, cell sorting, cell division) with specified parameters; scalability tests run without image output to isolate simulation speed from visualization overhead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C130 provide detailed methodological specifications for the performance benchmarking. The methods are clearly described with specific parameters for each simulation type. The rationale for excluding visualization in scalability tests (C126-C127) is appropriate. The use of Node.js (same engine as Chrome, C113) ensures browser-relevant performance measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C44",
+      "C51",
+      "C83",
+      "C84",
+      "C91",
+      "C92"
+    ],
+    "result": "Supporting resources and workflows: online documentation at artistoo.net helps users get started; reveal.js used for HTML slideshows with interactive demonstrations; QR codes enable mobile poster access; web prototypes can be ported to Node.js for command-line execution with local output storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C51, C83-C84, C91-C92 describe available resources and workflows. Documentation availability (C44, C51) is verifiable. The use of reveal.js (C83) and QR codes (C84) are stated practices. The Node.js portability (C91-C92) is a technical capability consistent with JavaScript's cross-platform nature.",
+    "result_type": "MINOR"
+  }
+]

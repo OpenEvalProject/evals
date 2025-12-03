@@ -1,0 +1,1921 @@
+{
+  "submission": {
+    "id": "1d39216e-3473-40f2-9eba-343630ffc4f4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:23:59.910517Z",
+    "updated_at": "2025-12-03T03:23:59.910517Z"
+  },
+  "content": [
+    {
+      "id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "submission_id": "1d39216e-3473-40f2-9eba-343630ffc4f4",
+      "content_type": "manuscript",
+      "content_text": "# An open-source device for measuring food intake and operant behavior in rodent home-cages\n\n## Authors\n\n- Bridget A Matikainen-Ankney<sup>1</sup>\n- Thomas Earnest<sup>1</sup>\n- Mohamed Ali<sup>2</sup>\n- Eric Casey<sup>1</sup> ([ORCID: 0000-0003-0041-6586](https://orcid.org/0000-0003-0041-6586))\n- Justin G Wang<sup>4</sup>\n- Amy K Sutton<sup>2</sup>\n- Alex A Legaria<sup>4</sup>\n- Kia M Barclay<sup>4</sup>\n- Laura B Murdaugh<sup>5</sup>\n- Makenzie R Norris<sup>4</sup>\n- Yu-Hsuan Chang<sup>4</sup>\n- Katrina P Nguyen<sup>2</sup>\n- Eric Lin<sup>1</sup>\n- Alex Reichenbach<sup>7</sup>\n- Rachel E Clarke<sup>7</sup>\n- Romana Stark<sup>7</sup>\n- Sineadh M Conway<sup>6</sup>\n- Filipe Carvalho<sup>9</sup>\n- Ream Al-Hasani<sup>6</sup> ([ORCID: 0000-0002-8781-6234](https://orcid.org/0000-0002-8781-6234))\n- Jordan G McCall<sup>6</sup> ([ORCID: 0000-0001-8295-0664](https://orcid.org/0000-0001-8295-0664))\n- Meaghan C Creed<sup>1</sup>\n- Victor Cazares<sup>10</sup>\n- Matthew W Buczynski<sup>5</sup>\n- Michael J Krashes<sup>2</sup> ([ORCID: 0000-0003-0966-3401](https://orcid.org/0000-0003-0966-3401))\n- Zane B Andrews<sup>7</sup> ([ORCID: 0000-0002-9097-7944](https://orcid.org/0000-0002-9097-7944))\n- Alexxai V Kravitz<sup>1</sup> ([ORCID: 0000-0001-5983-0218](https://orcid.org/0000-0001-5983-0218)) \u2020\n\n### Affiliations\n\n1. Department of Psychiatry, Washington University in St. Louis St. Louis United States\n2. National Institute of Diabetes and Digestive and Kidney Diseases Bethesda United States\n3. Department of Bioengineering, University of Maryland College Park United States\n4. Department of Neuroscience, Washington University in St. Louis St. Louis United States\n5. Department of Neuroscience, Virginia Polytechnic and State University Blacksburg United States\n6. Center for Clinical Pharmacology, University of Health Sciences and Pharmacy St. Louis United States\n7. Department of Physiology, Monash University Clayton Australia\n8. Department of Anesthesiology, Washington University in St. Louis St. Louis United States\n9. Open Ephys Production Site Lisbon Portugal\n10. Department of Psychology, Williams College Williamstown United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nFeeding is critical for survival, and disruption in the mechanisms that govern food intake underlies disorders such as obesity and anorexia nervosa. It is important to understand both food intake and food motivation to reveal mechanisms underlying feeding disorders. Operant behavioral testing can be used to measure the motivational component to feeding, but most food intake monitoring systems do not measure operant behavior. Here, we present a new solution for monitoring both food intake and motivation in rodent home-cages: the Feeding Experimentation Device version 3 (FED3). FED3 measures food intake and operant behavior in rodent home-cages, enabling longitudinal studies of feeding behavior with minimal experimenter intervention. It has a programmable output for synchronizing behavior with optogenetic stimulation or neural recordings. Finally, FED3 design files are open-source and freely available, allowing researchers to modify FED3 to suit their needs.\n\n## Introduction\n\nFeeding is critical for survival, and dysregulation of food intake underlies medical conditions such as obesity and anorexia nervosa. Quantifying food intake is necessary for understanding these disorders in animal models. However, it is challenging to accurately measure food intake in rodents due to the small volume of food\u00a0that they eat. Researchers have devised multiple methods for quantifying food intake in rodents, each with advantages and drawbacks (Ali and Kravitz, 2018). Manual weighing of a food container is a simple and widely used method for quantifying food intake in a rodent home-cage. Yet this is time consuming to complete, is subject to error and variability, and does not allow for fine temporal analysis of consumption patterns (Acosta-Rodr\u00edguez et al., 2017; Reinert et al., 2019). Automated tools have been developed for measuring food intake in home-cages with high temporal resolution, although most require modified caging, powdered foods, or connected computers which limit throughput (Ahloy-Dallaire et al., 2019; Farley et al., 2003; Moran, 2003; Yan et al., 2011). These include automated weighing (Hulsey and Martin, 1991; Meguid et al., 1990; Minematsu et al., 1991), pellet dispensers (Aponte et al., 2011; Gill et al., 1989; Oh et al., 2017), or video detection-based systems (Burnett et al., 2016; Jhuang et al., 2010; Salem et al., 2015).\n\nIn addition to measuring total food intake, understanding neural circuits involved in feeding requires exploring why animals seek and consume food. Has their motivation for a specific nutrient changed? Has their feeding gained a compulsive nature that is insensitive to satiety signals? These questions can be answered with operant tasks, where rodents receive food contingent on their actions (Curtis et al., 2019; Mourra et al., 2020; O'Connor et al., 2015; Skinner, 1938; Thorndike, 1898; Wald et al., 2020). Typically, operant behavior is tested in dedicated chambers for a few hours each day. Commercial systems for testing operant behaviors typically comprise a dedicated arena equipped with levers, food or liquid dispensers, tones or spotlights, and video cameras. Programmable software interfaces allow experimenters to control this equipment to train animals on behavioral tasks such as fixed-ratio or progressive ratio responding. Some chambers are also equipped with video cameras and tracking software, so the location of the animal can be used as a trigger to control task events (London et al., 2018). Training in dedicated operant chambers has limitations: tasks can take weeks for animals to learn, animals may be tested at different phases of their circadian cycle due to equipment availability, and food restriction can be necessary to get animals to seek food outside of their home-cage, which can confound feeding studies. To mitigate these issues, several researchers have begun to test operant behavior in rodent home-cages, resulting in both fewer interventions from the researcher and faster rates of learning (Balzani et al., 2018; Francis and Kanold, 2017; Lee et al., 2020).\n\nHere, we present a new solution for monitoring food intake and testing operant behavior in rodent home-cages: the Feeding Experimentation Device version 3 (FED3). Our goal was to develop a device for measuring food intake in rodent home-cages with high temporal resolution, while also measuring food motivation via operant behavior. FED3 is a stand-alone device that contains a pellet dispenser, two \u2018nose-poke\u2019 sensors for operant behavior, visual and auditory stimuli, and a screen for experimenter feedback. FED3 is compact and battery powered, fitting in most commercial vivarium home-cages without any connected computers or external wiring. FED3 also has a programmable output that can control other equipment, for example to trigger optogenetic stimulation after a nose-poke or pellet removal, or to synchronize feeding behavior with electrophysiological or fiber-photometry recordings, or with in vivo calcium imaging. Finally, FED3 is open\u00a0source and was designed to be customized and re-programmed to perform novel tasks to help researchers understand food intake and food motivation. To this end, we have written a user-friendly Arduino library to facilitate custom behavioral programming of FED3. Here, we describe the design and construction of FED3 and present several experiments that demonstrate its functionality. These include measuring circadian patterns of food intake over multiple days, performing meal pattern analysis, automated operant training, closed-economy motivational testing, and optogenetic self-stimulation. FED3 extends existing methods for quantifying food intake and operant behavior in rodents to help researchers achieve a deeper understanding of feeding and feeding disorders.\n\n## Results\n\n### Hardware and design of the FED3\n\nFED3 is controlled by a 48\u00a0mHz ATSAMD21G18 ARM Cortex M0 microprocessor (Adafruit Feather M0 Adalogger) and contains two nose-pokes, a pellet dispenser, a speaker for auditory stimuli, eight multi-color LEDs for visual stimuli, a screen for experimenter feedback, and a programmable analog output (Figure 1A,B). When mice interact with FED3, the timing of each poke and pellet removal are logged to an internal microSD card for later analysis and summary data is displayed on the screen for immediate feedback to the researcher (Figure 1B). FED3 is small (~10 cm\u00a0\u00d7 12 cm\u00a0\u00d7 9 cm), battery\u00a0powered, and completely self-contained, so it fits in most vivarium home-cages without modification or introducing wiring to the cage (Figure 1C). It is powered by a rechargeable battery that lasts\u00a0~1 week between charges (exact battery life depends on the behavioral program being run and number of pellets dispensed). FED3 also has magnetic mounts to facilitate wall-mounting on any plastic box to mimic a traditional operant setup (see Video 1). We provide example programs for running rodents on multiple common behavioral paradigms, including free feeding, time-restricted free-feeding, fixed-ratio 1\u00a0(FR1), and progressive ratio (PR) operant tasks, and have written a FED3 Arduino library to ease development of custom programs. FED3 also has an auxiliary I2C port for hardware customization and a programmable BNC output connection that allows synchronization with external equipment for aligning behavioral events with fiber-photometry recordings (London et al., 2018; Mazzone et al., 2020), electrophysiological recordings (London et al., 2018), or other equipment such as video tracking systems (Krynitsky et al., 2020; Li et al., 2019). This BNC output can report task events or control external hardware with delays of less than 200\u00a0\u00b5s, which compares favorably with computers that process information through Universal Serial Bus (USB), which can introduce delays of several milliseconds. Finally, we provide a graphical analysis package (FED3VIZ) written in Python that enables users to generate detailed plots from FED3 data (Figure 2F). FED3 is open-source and freely available online, including 3D design files, printed circuit board (PCB) files (Figure 1\u2014figure supplement 1A,B), build instructions (Figure 1D), and code (https://github.com/KravitzLabDevices/FED3 copy\u00a0archived\u00a0at swh:1:rev:ff8fc79d288a440d91566f4c6cd80011956f4be0).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig1-v2.jpg)\n\n**Figure 1.:** (A) Exploded view schematic and (B) photos of FED3 with main components highlighted. (C) Assembled FED in an Allentown NextGen home-cage, top view, and side view. (D) Back view (left) of assembled and populated FED3 PCB, and side view (right) of assembled FED3 electronics.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Block schematic, and (B) PCB layout for FED3.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of FED3 in free-feeding mode. (B) Pellets per hour across six consecutive days. Shaded areas indicate dark cycle. (C) Chronograms of pellets eaten in heatmap (top) and line plot. (D) Regression of the calculated weight of the pellets recorded by FED vs. the measured difference in weight of the FED between days. (E) Mice weight across time during free feeding. (F) Schematic of FED3VIZ workflow. Data is shown as means \u00b1 SEM in (B, C, E).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** A specially designed release chute is curved to prevent pellets from ricocheting at the end of the chute, and\u00a0to prevent jamming. 3D renderings with pellet chute highlighted in orange from front (A), top angled (B), top (C), and side (D) view.\n\n![Video 1.](https://cdn.elifesciences.org/articles/66173/elife-66173-video1.mp4.jpg)\n\n### Quantifying total food intake\n\nTen FED3 devices were set to the \u2018free-feeding\u2019 program, which dispenses a pellet and monitors its presence in the pellet well (Figure 2A). In this paradigm, each time the pellet is removed, FED3 logs the date and time to the storage card and dispenses another pellet. This allows for the reconstruction of detailed feeding records over multiple days. Assuming calorie content of the pellets is known, total caloric intake can also be tracked over time. Devices were placed with ten singly housed mice for six consecutive days with no additional food source. We observed the expected circadian rhythm in food intake (Figure 2B,C). To test accuracy, we confirmed that the daily change in weight of the FED3 device correlated with the number of pellets removed multiplied by the weight of each pellet (20 mg pellets, Figure 2D). The coefficient of determination (R2) for the regression was 0.97, indicating an error rate of\u00a0~3% between manual weighing and counting of pellets by FED. Finally, we confirmed that the mice obtained all of their necessary daily calories from FED3, evidenced by a stable body weight across these 6\u00a0days (Figure 2E). In other experiments, we have run FED3 for\u00a0>1 month without observing weight loss. FED3 can be used for multi-week experiments like this as it has a low rate of jamming. This is facilitated by a unique angled pellet hopper and dispensing path that has fewer places where pellets can jam than traditional horizontal pellet dispensers (Figure 2\u2014figure supplement 1), as well as \u2018jam clearing\u2019 movements in the code that vibrate and rotate the dispensing disk to dislodge stuck pellets when they are detected. These are improvements over the first generation of this device (Nguyen et al., 2016). As a point on rodent safety, although FED3 is resistant to jamming it still must be checked for function at least once per day when being used as the only food source.\n\nFED3 creates a large amount of data, particularly when run over multiple days. To facilitate analysis of FED3 data, we created FED3VIZ, an open-source Python-based analysis program (https://github.com/earnestt1234/FED3_Viz). FED3VIZ offers plots for visualizing different aspects of FED3 data, including pellet retrieval, poke accuracy, pellet retrieval time, delay between consecutive pellet earnings (inter pellet intervals), meal size, and progressive ratio breakpoint. These metrics can be plotted for single files or group averages. FED3VIZ\u2019s averaging methods provide options for aggregating data recorded on different days, while preserving time-of day or phase of the light\u2013dark cycle. Furthermore, circadian activity patterns can also be visualized with the FED3VIZ \u2018Chronogram\u2019 and \u2018Day/Night Plot\u2019 functions (see Figure 7), which segment data based on a user-defined light cycle. The processed data going into each plot can also be saved and used to create new visualizations or compute statistics in other programs, promoting reproducible, sharable analysis and visualization of FED3 data.\n\n### Meal analysis\n\nFED3 records the date and time that each pellet is removed, which can be used to quantify feeding patterns including the size and quantity of meals, eating rate within meals, and timing between meals. Different parameters have been used by different groups to define meals, often based on numerical cut-offs (Farley et al., 2003; Kanoski et al., 2013; Melhorn et al., 2010). To complement these approaches, we aimed to develop an unbiased approach for understanding meal patterns, based on the distribution of time intervals between each pellet consumed. For the 10\u00a0mice in the above experiment, we plotted the inter-pellet time interval histogram (Figure 3A) for both the dark and light cycles, based on an approach that was previously described in rats (Cottone et al., 2007). We observed a large peak at\u00a0<1 min between pellets, showing that the majority of pellets were consumed within 1 min of another pellet. We used this distribution to classify pellets eaten within the same minute as belonging to the same meal, and pellets with larger intervals between them belonging to different meals. This approach revealed that animals eat fewer meals during the light cycle (Figure 3B) but eat similar number of pellets within each meal and obtain a similar fraction of their pellets within meals in each cycle. Differences in meal patterning have been linked to obesity (Farley et al., 2003; Wald and Grill, 2019), so this analytical approach may assist in understanding obesity and other disorders of feeding.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig3-v2.jpg)\n\n**Figure 3.:** (A) Inter-pellet interval histograms for dark and light cycle feeding. (B) Meals per day, (C) pellets per meal, and (D) % of pellets within meals for dark and light cycle feeding. N\u00a0=\u00a010 mice, paired t-tests.\n\n### Circadian patterns of operant behavior\n\nA unique feature of FED3 is that it is small and wire-free, allowing it to fit inside of traditional vivarium home-cages. This facilitates quantification of circadian rhythms in both operant and feeding behavior (Figure 4A). To demonstrate operant capability, we quantified how nose-poking for pellets varied over the circadian cycle, by running mice on a FR1 task for six consecutive days. Mice learned to nose-poke on the active port for a single pellet. We tracked active (rewarded) and inactive (unrewarded) pokes. As expected, both active and inactive pokes were higher during the dark cycle (Figure 4B\u2013D). Surprisingly, however, poke efficiency (% of total pokes on the active port) was slightly higher during the light cycle (Figure 4E), suggesting that operant responding is more efficient during the light cycle.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of FED3 in FR1 mode. (B) Active (blue) and inactive (orange) pokes over 6 days. n\u00a0=\u00a010 mice. (C) Average pokes (active, blue; inactive, orange) over 24 hr cycle. (D) Average pokes during light and dark cycles. Significant interaction between day/night and average pokes (F(1,792)=85.225, p<0.0001); significant effect of day/night (F(1,792)=668.700, p<0.0001); significant effect of active or inactive pokes (F(1,792)=610.824, p<0.0001). Fitted linear model for two-way ANOVA, (F(3,792)=454.917, p<0.0001.) (E) Average poke efficiency (p=0.0001, student\u2019s t-test).\n\n### A multi-site study of learning rates with FED3\n\nMultiple research groups currently use FED3. We therefore asked how mouse operant learning varies across different laboratories. To do this, we obtained operant data from the first overnight FR1 session from seven laboratories, resulting in data from 122 mice (mix of males and females, Figure 5A). When comparing pellets earned in an overnight session across laboratories, we observed a significant effect of group, linked to significant differences in 4 of 21 post\u00a0hoc comparisons (Figure 5B). When viewed as a single distribution (Figure 5B inset), the distribution of pellets earned from all groups was consistent with a single Gaussian distribution (p>0.05, Shapiro-Wilk test for normality). This highlights how FED3 enables high-throughput studies of operant behavior, and the power of large sample sizes to achieve adequate sampling of a distribution of behavior (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig5-v2.jpg)\n\n**Figure 5.:** (A) Pellets earned over first 16 hr of exposure to FED3 at seven research sites. (B) Scatterplots and kernel density estimation plots showing pellets earned after 16 hr with FED3, effect of group (F(6,115)=6.4223, p<0.0001), significant post\u00a0hoc differences between groups B and D (p=0.001), B and G (p=0.001), C and D (p=0.030), and C and G (p=0.010). (C) Poke efficiency across the session.\u00a0Significant effect of time,\u00a0p=0.0007, F(3,386)=5.79. (D) Active\u00a0pokes across the session. Significant effect of time, p=0.0001, F(3, 393)=115.2. (E) Retrieval time across the session. Significant effect of time, p=0.0001, F(3,351)=14.02. (E) Linear models with Tukey post-tests were conducted in (C-E). (F) Poke efficiency across continuous 16 hr sessions (gray line, n\u00a0=\u00a0122 mice) and across multiple days with 1 hr sessions each day (teal line, n\u00a0=\u00a011 mice). Two-way ANOVA revealed significant effect of time (p<0.0001), no significant effect of group or interaction. F(7,500)=3.974.\n\nA unique capability of FED3 is that it has a sensor for detecting the presence of the pellet in the feeding well. This enables time-stamping of when each pellet was removed for constructing feeding records, as well as measuring the time between the pellet dispense and removal, which we termed \u2018retrieval time\u2019. Changes in retrieval time may reflect learning, as this measure progressively decreased as animals gained experience with FED3 (Figure 5E). Accordingly, active active count and poke efficiency (% of pokes on the active port) increased over time, demonstrating that retrieval time decreased on the same time scale that mice learned which poke resulted in a pellet (Figure 5C). To compare learning rates in overnight training to traditional daily operant sessions, we ran a new group of eleven mice for sixteen daily 1 hr FR1 sessions with FED3, returning them to the colony for the remainder of each day. Learning rates did not differ between mice exposed to 16 daily 1 hr sessions or one 16 hr overnight session (Figure 5F). This suggests that the acquisition of this FR1 task may depend most strongly on the cumulative time mice interact with FED3 and that overnight training can greatly speed up task acquisition by giving them many hours of experience in one night.\n\n### The effect of magazine training on acquisition of operant behavior\n\nBased on prior literature (Steinhauer et al., 1976), we predicted that the speed of acquisition of an FR1 task would be further increased by prior magazine training. To test this, we exposed 24 mice to magazine training using the free feeding FED3 paradigm for 1\u20133 days prior to FR1 training (Figure 6A). This paradigm dispenses a pellet into the feeding well of FED3 and replaces it whenever it is removed, providing an automatic method for magazine training animals. In this way, magazine training allows mice to learn the location of the food source and associate food with the sound of the pellet dispenser operating and the pellet being dispensed, before commencing with FR1 training. We compared the performance of the 24 magazine trained mice to 122 mice from Figure 5 (which had not been magazine trained) and found that magazine training resulted in significantly higher (~2) levels of pellet acquisition in the first night with the FR1 task (Figure 6B,C). Therefore, magazine training is recommended to speed up acquisition of nose-poking tasks.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic showing paradigm for magazine trained group (MAG) vs. no magazine training (noMAG). (B) Active pokes over time during first exposure to FED3 FR1 between noMAG and MAG groups. (C) Scatterplots and\u00a0kernel density estimation\u00a0plots showing distribution of active poke counts at 16 hr (p=0.0001). Student\u2019s t-test. N\u00a0=\u00a0146 mice.\n\n### Closed-economy food intake with FED3\n\nFED3 can also be used for closed-economy feeding studies, in which all food is earned by operant nose-poking (Figure 7).\u00a0Closed-economy operant tasks have been used to quantify the economic demand for food (Bauman, 1991; Chaney and Rowland, 2008), as well as changes in economic demand due to manipulation of the dopamine system (Beeler et al., 2010; Mourra et al., 2020). We tested seven mice on a repeating progressive ratio task (adapted from Mourra et al., 2020), in which the nose-poking requirement began on FR1 and increased each time a pellet was earned. When mice refrained from poking on either port for 30 min the ratio reset to FR1 (Figure 7A,B). Although pellets earned from this task were their only food source, mouse weights remained stable across days, demonstrating that mice earned their entire caloric need with the task (Figure 7C). Total pellets earned did not differ between light and dark cycles (Figure 7D). However, nose-poking rates were higher during the dark phase of their daily cycle (Figure 7E), meaning mice performed more pokes to earn each pellet in this phase (Figure 7F). This suggests that motivation for food pellets varies over the circadian cycle such that mice are willing to work harder during the dark cycle vs. the light cycle. When the data was visualized hourly across the circadian cycle, we further noted a\u00a0~3 hr window of enhanced nose-poking rates starting shortly after the onset of the dark cycle (Figure 7F). This time coincides with a circadian peak in extracellular dopamine levels in the striatum (Ferris et al., 2014), and a peak in activity levels in mice (Matikainen-Ankney et al., 2020). Therefore, this task may be used to assay changes in accumbal dopamine function across the circadian cycle.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig7-v2.jpg)\n\n**Figure 7.:** (A) Active pokes required per pellet in a 4 day closed-economy progressive ratio task with 30 min resets. (B) Inset illustrating increasing number of pokes (y-axis, and orange rasters) per pellet earned during dark cycle. (C) Mouse weights over time (n\u00a0=\u00a07 mice). (D\u2013F) Chronograms (top) and bar/scatter plots (bottom) showing daily average pellets (D), pokes (E), and pokes per pellet (F) over time, binned by 1 hr. Shaded region in chronograms indicates dark cycle. Significant increase in active pokes, p=0.0044 (E, bottom), and pokes per pellet, p=0.0007 (F, bottom) during dark cycle. No significant difference in pellets earned during dark cycle, p=0.8622 (D, bottom).\n\n### Optogenetic self-stimulation with FED3\n\nFED3 was also designed to synchronize with other experimental equipment through its programmable output port. To demonstrate this capability, we programmed FED3 to act as a function generator and control an LED for an intra-cranial self-stimulation task. The dorsal striatum contains two main classes\u00a0of output neurons, differentiated by their expression of the dopamine D1 or D2 receptors (Gerfen et al., 1990). Dorsal striatal neurons that express the D1 receptor are highly reinforcing when optogenetically stimulated (Kravitz et al., 2012). To demonstrate how FED3 can be used to perform an optogenetic self-stimulation experiment, we used Cre-dependent viral expression to target channelrhodopsin-2 (ChR2) to D1R-expressing neurons in the dorsal striatum (Figure 8A). FED3 was programmed to generate and trigger a 1 s train of 20 Hz pulses of 475 nm light upon each active nose-poke, and the session continued until they received 75 trains of\u00a0stimulation (Figure 8B). Three mice were run on this task, resulting in significantly greater active vs inactive pokes (Figure 8C,D), and demonstrating that FED3 can be used for optogenetic self-stimulation studies. The programmable output is attached to an on-board digital-to-analog converter chip, meaning that it can be programmed to output pulses of any voltage from 0 to 3\u00a0V, allowing FED3 to represent multiple behavioral events with one output line. The timing of the BNC output port is regulated by the SAMD21 microprocessor that has a documented pulsing precision of\u00a0<1\u00a0\u00b5s.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/66173/elife-66173-fig8-v2.jpg)\n\n**Figure 8.:** (A) Schematic showing Cre-dependent ChR2 injected into dorsal medial striatum with fiber optic implanted. (B) Schematic showing FED3 operant self-stim setup. (C) Mice poked significantly more on the active port (p=0.0002, Student\u2019s t-test, n\u00a0=\u00a03 mice). (D) Cumulative inactive and active pokes plotted over time for each mouse.\n\n## Discussion\n\nQuantification of food intake is necessary to understand animal models of feeding disorders, as well as other medical conditions. To quantify food intake in rodent home-cages, we previously published the FED version 1, an open-source, stand-alone feeding device that can fit in a rack-mounted home-cage (Nguyen et al., 2016). FED records a time\u00a0series of pellets removed, which can be used to reconstruct feeding records. FED has been used by multiple research groups to understand feeding (Brierley et al., 2020; Burnett et al., 2019; Chen et al., 2020; Li et al., 2019; London et al., 2018). Since its original publication, we have redesigned the FED twice and here present the third version of FED, which revamps our original design and adds the ability to measure operant behavior, as well as a unique \u2018angled\u2019 pellet dispenser mechanism that is resistant to jamming, which enables long term studies. We distributed the design for FED3 online, and it has been used to study how specific neural circuit manipulations alter food motivation (Mazzone et al., 2020; Sciolino et al., 2019; Vachez et al., 2021), how weight-loss alters food motivation (Matikainen-Ankney et al., 2020), and how food motivation is altered in a stress-susceptible mouse population (Rodriguez et al., 2020).\n\nFED3 is a stand-alone solution for home-cage operant training, enabling researchers to understand not just total food intake, but also motivation for and learning about food rewards. FED3 has several unique benefits over comparable systems including: (1) FED3 is low cost. The FED3 electronics cost ~$200 and the housing is 3D printed. Even if 3D printing is done professionally this is\u00a0>10\u00d7 cheaper than most commercial solutions for measuring food intake or testing operant behavior; (2) FED3 is self-contained and fits within traditional vivarium caging, allowing for measures of true \u2018home-cage\u2019 feeding without modifying the cage. Due to its small size, it can also be placed inside of other equipment where wires might be impractical, such as within an indirect calorimetry system; (3) FED3 has a programmable output that allows it to easily synchronize with other equipment. Due to wiring, connecting FED3 to external hardware likely requires FED3 to be used outside of the home-cage, or to modify the home-cage system. This has been done by multiple labs to synchronize the output of FED3 with fiber-photometry recordings (London et al., 2018; Mazzone et al., 2020), electrophysiological recordings (London et al., 2018), optogenetic stimulation (Vachez et al., 2021), and video tracking (Krynitsky et al., 2020; Li et al., 2019); and (4) FED3 is open\u00a0source and all design files and codes are freely available online. This enables users to modify the code and hardware to achieve new functionality.\n\nThe purpose of this manuscript is to demonstrate the utility of FED3 for feeding research. To this end, we demonstrate experiments that measured total food intake, operant responding, and optogenetic stimulation. We further highlight how the high temporal resolution enables meal pattern analysis across multiple days. Finally, we coordinated with six other research groups to compile a dataset of 122 mice across seven research sites, all running the same experimental FR1 program. We observed similar patterns of acquisition across all sites, demonstrating that FED3 can be used for multi-site research studies on feeding. Due to its low cost and open-source nature, we believe that multi-site studies with FED3 are more feasible than with other systems.\n\nWhile FED3 has many strengths, it also has limitations. One limitation is that FED3 uses internal microSD cards to store data. While microSD cards are convenient, they are not ideal for large numbers of devices, where removing multiple cards can be cumbersome. Wireless data logging is a potential solution to this problem, although there are challenges to implementing this in rodent cages. A second limitation is that animals can \u2018hoard\u2019 pellets from FED3, as animals can remove food without consuming it. In our experience, this seemed to be a rare trait that specific mice engaged in (<10% of mice hoard pellets). Unfortunately, FED3 has no way to determine whether a mouse actually consumes each pellet after removal so we recommend checking for pellet hoarding and accounting for this in experimental conclusions. A third limitation is that granular bedding can be kicked into the pellet well and interfere with pellet detection. To avoid this, we recommend using \u2018iso-pad\u2019 bedding, or bedding pellets that are large enough to avoid this possibility. A fourth limitation is that FED3 is not waterproof and would not be resistant to flooding, though the 3D printed housing is sufficient to protect electronics from typical wear associated with placement in a rodent cage. A final limitation of FED3 is that it has no way of identifying individual mice in group housed environments, so feeding records must be collected in singly housed mice. However, FED3 is open\u00a0source, so it can be modified and improved with innovations from our group and the feeding community, and future iterations of the device may include methods for identifying multiple mice using radio-frequency identification (RFID) tags. Being able to run studies on group housed mice would greatly increase throughput and allow for the study of interactions between social behavior and feeding. We published the FED3 design as open-source and look forward to community contributions and modifications to enable new functionality and overcome these limitations.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Mus musculus with name C57BL/6J from IMSR.</td>\n      <td>https://www.jax.org/strain/000664</td>\n      <td>RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Python 3.7 (Anaconda Distribution)</td>\n      <td>https://www.anaconda.com/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Spyder 4.1</td>\n      <td>https://github.com/spyder-ide/spyder/releases</td>\n      <td>RRID:SCR_017585,\u00a0version\u00a04.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Arduino IDE 1.8.1</td>\n      <td>https://www.arduino.cc/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FED3_VIZ</td>\n      <td>https://github.com/earnestt1234/FED3_Viz</td>\n      <td></td>\n      <td>Analysis package for FED3 data files</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TinkerCAD</td>\n      <td>https://www.tinkercad.com/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>FED3 \u2013 commercially assembled</td>\n      <td>https://open-ephys.org/fed3/fed3</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>FED3 \u2013 open-source</td>\n      <td>https://github.com/KravitzLabDevices/FED3</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>5TUM grain-based rodent enrichment pellets</td>\n      <td>https://www.testdiet.com/Diet-Enrichment-Products/Lab-Treat-Tablets-and-Pellets/index.html</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Data and code availability\n\nThe FED3 device is open-source, and design files and code are freely available online at: https://github.com/KravitzLabDevices/FED3. In addition, we have made all data and analysis code for the figures in this paper available at https://osf.io/hwxgv/.\n\n### Subjects\n\nOne hundred and fifty-nine C57Bl/6 mice were housed in a 12 hr light/dark cycle with ad libitum access to food and water except where described. Mice were provided laboratory chow diet (5001 Rodent Diet; Lab Supply, Fort Worth, TX). All procedures were approved by the Animal Care and Use Committee at Washington University in St Louis, the National Institutes of Health, Williams College, Virginia Tech, and Monash University.\n\n### Design and construction of FED3\n\nTutorial videos and other information on assembling FED3 are available at: https://github.com/KravitzLabDevices/FED3/wiki.\n\n#### 3D design\n\nThe 3D parts for FED3 were designed with TinkerCAD (Autodesk). We have printed FED3 with an FDM printer in PLA (Sindoh 3DWox 1), as well as with a commercial SLS process in Nylon 12 (Shapeways). 3D files may need to be tweaked to obtain good results on different printers, so we provide editable design files here: https://www.tinkercad.com/things/0QaiVw7KR3Y.\n\n#### Electronics\n\nElectronics design was completed using Autodesk Eagle version 9.3. FED3 is controlled by a commercial microcontroller (Adalogger Feather M0, Adafruit). This microcontroller contains an ATSAMD21G18 ARM M0 processor that runs at 48\u00a0MHz, 256 kB of FLASH memory, 32 kB of RAM memory, an on-board microSD card slot for writing data, and up to 20 digital inputs/output pins for controlling other hardware. The microcontroller also contains a battery charging circuit for charging the internal 4400mAhr LiPo battery in FED3, which provides\u00a0~1 week of run-time between charges. Exact battery life depends on the behavioral program and how often the mouse interacts with FED3. Additional hardware on FED3 includes a motor for controlling the pellet delivery hopper, eight multi-color LEDs for delivering visual stimuli, a small speaker for delivering audio stimuli, a screen for user feedback, and three infra-red beam-break sensors. Two of these sensors are used as \u2018nose-poke\u2019 sensors to determine when the mouse pokes, while the third is used to detect the presence and removal of each food pellet. Finally, FED3 contains a programmable output connected to a 10-bit digital-analog converter circuit, enabling full analog output of arbitrary voltages from 0 to 3.3\u00a0V. This can be used to synchronize FED3 with external equipment via digital pulses or analog signals. There are two variants of the electronics for FED3: An older design is referred to as the \u2018DIY FED3\u2019, which can be assembled by hand using commercially available components (https://hackaday.io/project/106885-feeding-experimentation-device-3-fed3), whereas the newer design contains more streamlined electronics but requires professional assembly. Both designs run the same code and have identical functionality.\n\n#### Firmware\n\nThe code for FED3 is written in the Arduino language and is fully open-source. The example code that we provide with FED3 contains several programs covering multiple common behavioral paradigms including free feeding, time-restricted free-feeding, FR1, and PR operant tasks, as well as an optogenetic self-stimulation mode that delivers trains of pulses for controlling a stimulation system. We also provide an Arduino library that simplifies control of FED3 hardware to simplify writing of custom programs.\n\n### Behavioral testing with FED3\n\nWe demonstrate multiple operational modes for FED3 to highlight a range of functionality and applications. The following programs are included with the standard FED3 code:\n\n#### Free-feeding\n\nIn the free-feeding mode (Figure 2), a 20 mg pellet is dispensed into the feeding well and monitored with a beam-break. When the pellet is removed, the time-stamp of removal, and the latency to retrieve the pellet are logged to the internal microSD card and a new pellet is dispensed. For the free-feeding data in this paper, 10 mice were singly housed and the FED3 device was placed in their cage for 6 days on a 12/12 on/off light cycle. FED3 devices were checked for functionality each day, but mice were otherwise undisturbed.\n\n#### Fixed-ratio 1\n\nIn FR1 mode, FED3 logs the time-stamps of each \u2018nose-poke\u2019 event to the internal storage. When the mouse activates the left nose-poke, the FED3 delivers a combined auditory tone (4 kHz for 0.3 s) and visual (all eight LEDs light in blue) stimulus and dispenses a pellet. While the pellet remains in the well both pokes remain inactive to prohibit multiple pellets piling up in the well. When the pellet is removed, the time-stamp of removal, and the latency to retrieve the pellet are logged. For the data in this paper, the same 10 mice that completed the ree-feeding experiment were transitioned to an FR1 program, and FR1 data was recorded for an additional 6 days.\n\n### Optogenetic stimulation\n\nViral infections of male and female Drd1-Cre mice were conducted under 0.5\u20132.5% anesthesia on a stereotaxic apparatus. Using a Nanoject injector, 500 nL of AAV2-DIO-hSyn-ChR2 was injected bilaterally (500 nL/hemisphere) in the dorsomedial striatum. Optical fibers were then implanted in the same region. After letting ChR2 express for 4 weeks, animals were pre-trained on an FR1 schedule for pellets overnight in their home-cage. Two days later, mice were placed in a box with a FED3 device connected to an LED driver. The active poke for this paradigm was on the opposite side to the active poke of the pre-training session. During the self-stimulation session, when the mouse poked on the active nose-poke, it received a 1 s train of 1 mW 475 nm light at 20 Hz. Sessions were run for 60 min in a 550 cm2 arena.\n\n### Data analysis\n\nCSV files generated by FED3 were processed and plotted with custom python scripts (Python, version 3.6.7, Python Software Foundation, Wilmington, DE). All data and scripts are available on Open Science Framework (https://osf.io/hwxgv/). Visualization was also completed using FED3VIZ GUI to generate plots. FED3VIZ was written in Python\u2019s standard library for developing GUIs (tkinter). FED3VIZ is a custom open-source graphical program for analyzing FED3 data. FED3VIZ code, version history, installation instructions, and user manual are available on GitHub (https://github.com/earnestt1234/FED3_Viz). FED3VIZ offers plotting and data output for visualizing different aspects of FED3 data, including pellet retrieval, poke accuracy, pellet retrieval time, delay between consecutive pellet earnings (inter-pellet intervals), meal size, and progressive ratio breakpoint. Based on inter-pellet interval histograms (Figure 3), we defined meals as pellets eaten within 1 min of each other. In addition, we defined a minimum size of 0.1 g (five pellets) to be counted as a meal.\n\n### Statistics\n\nBartlett\u2019s test for equal variances was performed; one- or two-way ANOVAs with Tukey post-tests were used to compare groups with equal variance (p>0.05) where appropriate. Linear mixed effects models were used to analyze groups with significantly difference variances (p<0.05). p-value<0.05 was considered significant. Statistical tests to compare means were run using statsmodels module in python (Seabold and Perktold, 2010). Data sets are presented as mean \u00b1 SEM. Numbers of animals per experiment is listed as n=number of animals. Linear regression was used to determine correlative relationships. T-tests or Mann\u2013Whitney U tests were used to compare the means of two groups for parametric or nonparametric data distributions, respectively.\n",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "16bc3d12-4aa9-4852-a6bb-f30ef2a3268d",
+      "submission_id": "1d39216e-3473-40f2-9eba-343630ffc4f4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Denise Cai, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66173.sa1](https://doi.org/10.7554/eLife.66173.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThank you for submitting your work on FED3, a new and improved open-source option for a home cage pellet dispensing device, to eLife. The reviewers agreed that this open-source tool would be of wide-interest to neuroscience laboratories, that the manuscript was well-written and clear, and that the cross-lab validation was informative. They also appreciated that this Tools and Resource manuscript documents all necessary open-source hardware, firmware, visualization code, and Arduino and Python libraries for user customization of experiments and analysis.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Feeding Experimentation Device version 3 (FED3): An open-source device for measuring food intake and operant behavior\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kate Wassum as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Daniel Aharoni (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1. Describe in more detail the current commercial and open-source methods there are for monitoring food intake and operant behavior in rodent home cages. How does FED3 compare to those designs?\n\n2. With the exception of panel 2D, little is shown to quantify jam-rate, which is one if the biggest issues with any pellet dispenser. Do the authors have any other data to this end? The authors mention in Figure 5D there is a retrieval time metric. Do you also have a time between pellet dispense onset and when the pellet dispenser detects that the pellet has arrived onto the pedestal?\n\n3. In relation to the point \"FED3 also has a programmable output that can control other equipment, for example to trigger optogenetic stimulation after a nose-poke or pellet removal, or to synchronize feeding behavior with electrophysiological or fiber photometry recordings.\" Do the requirements of this function impede one of the major strengths of this technology: large scale testing in laboratory vivariums? I would suspect tethers / wires in the home cage would be a major limitation to this feature for around the clock testing. Upon closer readings in the methods section, the mice were removed from the home cage for this part of the experiment. Perhaps the authors could make that clearer earlier on and separate describing this feature from the home-cage functionality of the device in its description.\n\n4. For combining with optogenetic stimulation in Figure 7, is the FED3 output a single pulse trigger that is driving a pre-programmed train driven by another high-fidelity stimulation device or is the voltage train of 20hz being driven by FED3 directly turning on the LED? On a related note, how is the precision of timestamp recording for the external device? How is time stamp fidelity maintained across the session? It would be helpful to better understand how your system was set up to relate the time stamps of the data being written to the SD card and how well-registered they were after the fact.\n\n5. Is FED3 water resistant? If a cage were to flood as sometimes happens with displaced water bottle tops, how well does the FED3 housing protect the electronics of the device and the animal?\n\n6. Clarification or corrections needed for analysis/methods/statistics:\n\n\u2022 Figure 3 shows an N of 10 but the manuscript text mentions you used 11 mice. This seems like a discrepancy in the paper.\n\n\u2022 In the multi-site study of learning rates with FED3 section, you say \"This highlights how FED3 enables high throughput studies of operant behavior and also demonstrates the potential for false positive effects when comparing between groups with small sample sizes (Figure 5B)\". I feel like your claim that this data shows the potential for false positive effects is unsupported as I don't think you show that the individual groups must be pulled from the same distribution.\n\n\u2022 For Figure 4E, please describe how the poke efficiency metric was calculated.\n\n\u2022 In Figure 5 c \u2013 f, it is unclear if the error bars are across mice or across groups.\n\n\u2022 In Figure 5 e and f, the vertical axis units are labeled as (%) but the vertical axis numbers look to be off by 100 times.\n\n\u2022 In Figure 7 c, I think this is a plot of the cumulative poke count and not a temporally binned poke count. It would be nice to clarify this in the text or vertical axis label.\n\n\u2022 Figure 7D shows data across 3 mice but, unlike most of your other figures, does not show the individual data points for each mouse. It would be nice to add those to the plot. It might be also worth considering showing the data from all 3 mice in figure 7C.\n",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "db59a94c-d56a-421b-b314-0bc99b4b9159",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C1",
+      "claim": "Feeding is critical for survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding is critical for survival, and disruption in the mechanisms that govern food intake underlies disorders such as obesity and anorexia nervosa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the fundamental importance of feeding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "40a75ab2-5667-4669-ad31-2ad3192548f7",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C2",
+      "claim": "Disruption in the mechanisms that govern food intake underlies disorders such as obesity and anorexia nervosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding is critical for survival, and disruption in the mechanisms that govern food intake underlies disorders such as obesity and anorexia nervosa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the relationship between feeding mechanisms and eating disorders.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "d325e504-8185-4573-a6ea-ef6d6a8f9dfe",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C3",
+      "claim": "FED3 measures food intake and operant behavior in rodent home-cages.",
+      "claim_type": "EXPLICIT",
+      "source": "FED3 measures food intake and operant behavior in rodent home-cages, enabling longitudinal studies of feeding behavior with minimal experimenter intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct assertion about the capabilities of the FED3 device described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "2bc4b2a7-2f29-4dd5-8649-511cb68734b6",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C4",
+      "claim": "FED3 enables longitudinal studies of feeding behavior with minimal experimenter intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "FED3 measures food intake and operant behavior in rodent home-cages, enabling longitudinal studies of feeding behavior with minimal experimenter intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the experimental capabilities enabled by FED3, supported by the design features described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "2725265b-4fee-4938-b754-6f9172bad9db",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C5",
+      "claim": "FED3 has a programmable output for synchronizing behavior with optogenetic stimulation or neural recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "It has a programmable output for synchronizing behavior with optogenetic stimulation or neural recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a hardware feature of FED3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "c058f2a8-fc7d-4c2d-87e6-4a88d46a9cf6",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C6",
+      "claim": "FED3 design files are open-source and freely available.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, FED3 design files are open-source and freely available, allowing researchers to modify FED3 to suit their needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the availability of the design files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "5cf7419f-0a63-4d41-af61-9e55dd8e8293",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C7",
+      "claim": "Manual weighing of a food container is a simple and widely used method for quantifying food intake in a rodent home-cage.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual weighing of a food container is a simple and widely used method for quantifying food intake in a rodent home-cage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common laboratory practices in rodent research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e9278785-2c29-45ab-a748-6581d455690a",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C8",
+      "claim": "Manual weighing is time consuming to complete, is subject to error and variability, and does not allow for fine temporal analysis of consumption patterns (Acosta-Rodr\u00edguez et al., 2017; Reinert et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "Yet this is time consuming to complete, is subject to error and variability, and does not allow for fine temporal analysis of consumption patterns (Acosta-Rodr\u00edguez et al., 2017; Reinert et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e937d59a-cc5d-4b19-8b60-986ffce37c1c",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C9",
+      "claim": "Automated tools have been developed for measuring food intake in home-cages with high temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated tools have been developed for measuring food intake in home-cages with high temporal resolution, although most require modified caging, powdered foods, or connected computers which limit throughput (Ahloy-Dallaire et al., 2019; Farley et al., 2003; Moran, 2003; Yan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "3211b42b-e418-4c8e-a33c-a88afc0bf2d1",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C10",
+      "claim": "Most automated tools for measuring food intake require modified caging, powdered foods, or connected computers which limit throughput (Ahloy-Dallaire et al., 2019; Farley et al., 2003; Moran, 2003; Yan et al., 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "Automated tools have been developed for measuring food intake in home-cages with high temporal resolution, although most require modified caging, powdered foods, or connected computers which limit throughput (Ahloy-Dallaire et al., 2019; Farley et al., 2003; Moran, 2003; Yan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "dd5f759c-edc4-4b38-80d4-60ecb66183c5",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C11",
+      "claim": "Operant tasks can answer questions about whether an animal's motivation for a specific nutrient has changed.",
+      "claim_type": "EXPLICIT",
+      "source": "Has their motivation for a specific nutrient changed? Has their feeding gained a compulsive nature that is insensitive to satiety signals? These questions can be answered with operant tasks, where rodents receive food contingent on their actions (Curtis et al., 2019; Mourra et al., 2020; O'Connor et al., 2015; Skinner, 1938; Thorndike, 1898; Wald et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research on operant tasks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "d1453d61-8d55-4fc0-9abb-aea2be5a385b",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C12",
+      "claim": "Training in dedicated operant chambers can take weeks for animals to learn.",
+      "claim_type": "EXPLICIT",
+      "source": "Training in dedicated operant chambers has limitations: tasks can take weeks for animals to learn, animals may be tested at different phases of their circadian cycle due to equipment availability, and food restriction can be necessary to get animals to seek food outside of their home-cage, which can confound feeding studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of traditional operant training methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "4145ea56-c95d-4957-a365-6c9946456fb6",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C13",
+      "claim": "Testing operant behavior in rodent home-cages results in both fewer interventions from the researcher and faster rates of learning (Balzani et al., 2018; Francis and Kanold, 2017; Lee et al., 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "To mitigate these issues, several researchers have begun to test operant behavior in rodent home-cages, resulting in both fewer interventions from the researcher and faster rates of learning (Balzani et al., 2018; Francis and Kanold, 2017; Lee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "d1d7da79-97f0-4487-bbf3-a24eca3d7e47",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C14",
+      "claim": "FED3 is controlled by a 48 mHz ATSAMD21G18 ARM Cortex M0 microprocessor (Adafruit Feather M0 Adalogger).",
+      "claim_type": "EXPLICIT",
+      "source": "FED3 is controlled by a 48 mHz ATSAMD21G18 ARM Cortex M0 microprocessor (Adafruit Feather M0 Adalogger) and contains two nose-pokes, a pellet dispenser, a speaker for auditory stimuli, eight multi-color LEDs for visual stimuli, a screen for experimenter feedback, and a programmable analog output (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the hardware specifications of FED3, with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "858847d7-f1c6-4c38-bc6c-650a919179ff",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C15",
+      "claim": "FED3 contains two nose-pokes, a pellet dispenser, a speaker for auditory stimuli, eight multi-color LEDs for visual stimuli, a screen for experimenter feedback, and a programmable analog output.",
+      "claim_type": "EXPLICIT",
+      "source": "FED3 is controlled by a 48 mHz ATSAMD21G18 ARM Cortex M0 microprocessor (Adafruit Feather M0 Adalogger) and contains two nose-pokes, a pellet dispenser, a speaker for auditory stimuli, eight multi-color LEDs for visual stimuli, a screen for experimenter feedback, and a programmable analog output (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the hardware components of FED3, with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "caa16ab2-ff04-4fb3-86b6-de0f20322b8c",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C16",
+      "claim": "FED3 is small (~10 cm \u00d7 12 cm \u00d7 9 cm), battery powered, and completely self-contained.",
+      "claim_type": "EXPLICIT",
+      "source": "FED3 is small (~10 cm \u00d7 12 cm \u00d7 9 cm), battery powered, and completely self-contained, so it fits in most vivarium home-cages without modification or introducing wiring to the cage (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the physical specifications of FED3, with reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e5539db3-95ae-4e2b-9610-12ab278c4cc7",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C17",
+      "claim": "FED3 fits in most vivarium home-cages without modification or introducing wiring to the cage.",
+      "claim_type": "EXPLICIT",
+      "source": "FED3 is small (~10 cm \u00d7 12 cm \u00d7 9 cm), battery powered, and completely self-contained, so it fits in most vivarium home-cages without modification or introducing wiring to the cage (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a claim about the practical application of FED3, inferred from its physical specifications and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "7a4c8179-ed12-4407-8e44-f960a490d47a",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C18",
+      "claim": "FED3 is powered by a rechargeable battery that lasts ~1 week between charges.",
+      "claim_type": "EXPLICIT",
+      "source": "It is powered by a rechargeable battery that lasts ~1 week between charges (exact battery life depends on the behavioral program being run and number of pellets dispensed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the battery life of FED3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "cc0dede8-404b-4e61-aada-358b12a62058",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C19",
+      "claim": "Exact battery life depends on the behavioral program being run and number of pellets dispensed.",
+      "claim_type": "EXPLICIT",
+      "source": "It is powered by a rechargeable battery that lasts ~1 week between charges (exact battery life depends on the behavioral program being run and number of pellets dispensed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about factors affecting battery life.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "97031b8e-d984-48a3-aef1-9e7362fad464",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C20",
+      "claim": "The BNC output can report task events or control external hardware with delays of less than 200 \u00b5s.",
+      "claim_type": "EXPLICIT",
+      "source": "This BNC output can report task events or control external hardware with delays of less than 200 \u00b5s, which compares favorably with computers that process information through Universal Serial Bus (USB), which can introduce delays of several milliseconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the timing precision of the BNC output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "ee2f8a19-188e-4d69-9f27-8dc033aaaf65",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C21",
+      "claim": "Computers that process information through Universal Serial Bus (USB) can introduce delays of several milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "This BNC output can report task events or control external hardware with delays of less than 200 \u00b5s, which compares favorably with computers that process information through Universal Serial Bus (USB), which can introduce delays of several milliseconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the timing limitations of USB-based systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "b4ef0684-9eab-4e6a-ac55-70a455bc17be",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C23",
+      "claim": "Ten FED3 devices were set to the 'free-feeding' program, which dispenses a pellet and monitors its presence in the pellet well.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten FED3 devices were set to the 'free-feeding' program, which dispenses a pellet and monitors its presence in the pellet well (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental setup, with reference to Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "887ca83b-96fb-4090-bc02-6207a1954596",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C24",
+      "claim": "Each time the pellet is removed, FED3 logs the date and time to the storage card and dispenses another pellet.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paradigm, each time the pellet is removed, FED3 logs the date and time to the storage card and dispenses another pellet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the operation of the free-feeding program.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "3d915a73-dc26-43fd-a28c-5cbbe8e00209",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C25",
+      "claim": "The expected circadian rhythm in food intake was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed the expected circadian rhythm in food intake (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "8e3b01cd-d0c9-4a96-827e-300135e0fb05",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C26",
+      "claim": "The daily change in weight of the FED3 device correlated with the number of pellets removed multiplied by the weight of each pellet (20 mg pellets).",
+      "claim_type": "EXPLICIT",
+      "source": "To test accuracy, we confirmed that the daily change in weight of the FED3 device correlated with the number of pellets removed multiplied by the weight of each pellet (20 mg pellets, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the validation of FED3 accuracy, with reference to Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "c005db75-da98-4aab-9724-be3bee868438",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C27",
+      "claim": "The coefficient of determination (R2) for the regression was 0.97, indicating an error rate of ~3% between manual weighing and counting of pellets by FED.",
+      "claim_type": "EXPLICIT",
+      "source": "The coefficient of determination (R2) for the regression was 0.97, indicating an error rate of ~3% between manual weighing and counting of pellets by FED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical analysis of FED3 accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "4f65d64f-b344-4dc6-aacd-419eb02dc20d",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C28",
+      "claim": "The mice obtained all of their necessary daily calories from FED3, evidenced by a stable body weight across 6 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we confirmed that the mice obtained all of their necessary daily calories from FED3, evidenced by a stable body weight across these 6 days (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "c2fe4ac5-77eb-4aaa-88fb-53e740dd64cc",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C29",
+      "claim": "FED3 can be used for multi-week experiments without observing weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "In other experiments, we have run FED3 for >1 month without observing weight loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the long-term use of FED3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "09ac5c9b-4063-44dd-88e1-e5949d3428ba",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C30",
+      "claim": "FED3 has a low rate of jamming.",
+      "claim_type": "EXPLICIT",
+      "source": "FED3 can be used for multi-week experiments like this as it has a low rate of jamming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the reliability of FED3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "3bfddcd5-d140-43ef-8be9-b99f29acb2f2",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C31",
+      "claim": "A unique angled pellet hopper and dispensing path has fewer places where pellets can jam than traditional horizontal pellet dispensers.",
+      "claim_type": "EXPLICIT",
+      "source": "This is facilitated by a unique angled pellet hopper and dispensing path that has fewer places where pellets can jam than traditional horizontal pellet dispensers (Figure 2\u2014figure supplement 1), as well as 'jam clearing' movements in the code that vibrate and rotate the dispensing disk to dislodge stuck pellets when they are detected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the design features that reduce jamming, with reference to Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "d5cc7285-47e4-4000-8481-f62ce27d9da7",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C32",
+      "claim": "FED3 must be checked for function at least once per day when being used as the only food source.",
+      "claim_type": "EXPLICIT",
+      "source": "As a point on rodent safety, although FED3 is resistant to jamming it still must be checked for function at least once per day when being used as the only food source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the safety requirements for using FED3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "bacecd97-b9fb-4c17-b696-7d39ed81badc",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C33",
+      "claim": "FED3VIZ is an open-source Python-based analysis program.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate analysis of FED3 data, we created FED3VIZ, an open-source Python-based analysis program (https://github.com/earnestt1234/FED3_Viz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the FED3VIZ software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "4129c820-436a-46de-bfd3-877e2cdc3b22",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C34",
+      "claim": "FED3VIZ offers plots for visualizing different aspects of FED3 data, including pellet retrieval, poke accuracy, pellet retrieval time, delay between consecutive pellet earnings (inter pellet intervals), meal size, and progressive ratio breakpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "FED3VIZ offers plots for visualizing different aspects of FED3 data, including pellet retrieval, poke accuracy, pellet retrieval time, delay between consecutive pellet earnings (inter pellet intervals), meal size, and progressive ratio breakpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the capabilities of FED3VIZ.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "47ec68a2-4ad2-483b-a686-f5dd71d063f8",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C35",
+      "claim": "FED3 records the date and time that each pellet is removed, which can be used to quantify feeding patterns including the size and quantity of meals, eating rate within meals, and timing between meals.",
+      "claim_type": "EXPLICIT",
+      "source": "FED3 records the date and time that each pellet is removed, which can be used to quantify feeding patterns including the size and quantity of meals, eating rate within meals, and timing between meals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data collection capabilities of FED3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "09239db6-0527-4394-b36f-cc14c2e57b22",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C36",
+      "claim": "The majority of pellets were consumed within 1 min of another pellet.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a large peak at <1 min between pellets, showing that the majority of pellets were consumed within 1 min of another pellet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental results from the inter-pellet interval analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "58a43356-3863-44a0-b784-a1eb00295391",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C37",
+      "claim": "Animals eat fewer meals during the light cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach revealed that animals eat fewer meals during the light cycle (Figure 3B) but eat similar number of pellets within each meal and obtain a similar fraction of their pellets within meals in each cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "f3dee567-465d-40c5-9b6d-35915cd3c0da",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C38",
+      "claim": "Animals eat similar number of pellets within each meal during light and dark cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach revealed that animals eat fewer meals during the light cycle (Figure 3B) but eat similar number of pellets within each meal and obtain a similar fraction of their pellets within meals in each cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "ccb96e3e-3452-46e8-9d2d-3fb61fc5a8d1",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C39",
+      "claim": "Differences in meal patterning have been linked to obesity (Farley et al., 2003; Wald and Grill, 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in meal patterning have been linked to obesity (Farley et al., 2003; Wald and Grill, 2019), so this analytical approach may assist in understanding obesity and other disorders of feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "b5726296-faed-4fa4-a1c8-d04f1bbcfd2a",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C40",
+      "claim": "Both active and inactive pokes were higher during the dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both active and inactive pokes were higher during the dark cycle (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figures 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "702e6aba-f449-43e7-9641-1aa5ca68452f",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C41",
+      "claim": "Poke efficiency (% of total pokes on the active port) was slightly higher during the light cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, poke efficiency (% of total pokes on the active port) was slightly higher during the light cycle (Figure 4E), suggesting that operant responding is more efficient during the light cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "1e2f1d91-a768-4b0f-aa94-00ab18e31b98",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C42",
+      "claim": "Operant responding is more efficient during the light cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, poke efficiency (% of total pokes on the active port) was slightly higher during the light cycle (Figure 4E), suggesting that operant responding is more efficient during the light cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the poke efficiency data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "733007d0-140d-4735-bbd2-d48493bed69c",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C43",
+      "claim": "Data from 122 mice (mix of males and females) from seven laboratories was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we obtained operant data from the first overnight FR1 session from seven laboratories, resulting in data from 122 mice (mix of males and females, Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the multi-site study sample size, with reference to Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "19fe2242-56a1-436e-9b0f-21cdb3e4dcb6",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C44",
+      "claim": "There was a significant effect of group on pellets earned in an overnight session across laboratories.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing pellets earned in an overnight session across laboratories, we observed a significant effect of group, linked to significant differences in 4 of 21 post hoc comparisons (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the statistical analysis results, with reference to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "b13966ff-f083-4a2d-b154-0b954df69d3f",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C45",
+      "claim": "The distribution of pellets earned from all groups was consistent with a single Gaussian distribution (p>0.05, Shapiro-Wilk test for normality).",
+      "claim_type": "EXPLICIT",
+      "source": "When viewed as a single distribution (Figure 5B inset), the distribution of pellets earned from all groups was consistent with a single Gaussian distribution (p>0.05, Shapiro-Wilk test for normality).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the statistical analysis results, with reference to Figure 5B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "b7324c6b-f8ef-4fd9-9c53-a39c80d23594",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C46",
+      "claim": "Retrieval time progressively decreased as animals gained experience with FED3.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in retrieval time may reflect learning, as this measure progressively decreased as animals gained experience with FED3 (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "f45073cf-ae03-455a-8774-cb3427524871",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C47",
+      "claim": "Active poke count and poke efficiency increased over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, active active count and poke efficiency (% of pokes on the active port) increased over time, demonstrating that retrieval time decreased on the same time scale that mice learned which poke resulted in a pellet (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "f3201739-34e2-44b9-97cc-67c274b41ce2",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C48",
+      "claim": "Learning rates did not differ between mice exposed to 16 daily 1 hr sessions or one 16 hr overnight session.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning rates did not differ between mice exposed to 16 daily 1 hr sessions or one 16 hr overnight session (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "89845b92-83ce-4d6b-8dca-dad57d0f4429",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C49",
+      "claim": "The acquisition of the FR1 task may depend most strongly on the cumulative time mice interact with FED3.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the acquisition of this FR1 task may depend most strongly on the cumulative time mice interact with FED3 and that overnight training can greatly speed up task acquisition by giving them many hours of experience in one night.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the learning rate comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "4b1d695d-af19-4346-b519-fd997becd493",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C50",
+      "claim": "Overnight training can greatly speed up task acquisition by giving mice many hours of experience in one night.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the acquisition of this FR1 task may depend most strongly on the cumulative time mice interact with FED3 and that overnight training can greatly speed up task acquisition by giving them many hours of experience in one night.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the learning rate comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "dc9fa8bc-3f1f-453e-a551-eff0f884b507",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C51",
+      "claim": "Magazine training resulted in significantly higher (~2\u00d7) levels of pellet acquisition in the first night with the FR1 task.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the performance of the 24 magazine trained mice to 122 mice from Figure 5 (which had not been magazine trained) and found that magazine training resulted in significantly higher (~2) levels of pellet acquisition in the first night with the FR1 task (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figures 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "16427d03-ba02-4cf1-9d8f-45823446183a",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C52",
+      "claim": "Magazine training is recommended to speed up acquisition of nose-poking tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, magazine training is recommended to speed up acquisition of nose-poking tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "9a9d2904-f17f-4e99-b2aa-7ebe00ca5893",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C53",
+      "claim": "Mouse weights remained stable across days in the closed-economy progressive ratio task.",
+      "claim_type": "EXPLICIT",
+      "source": "Although pellets earned from this task were their only food source, mouse weights remained stable across days, demonstrating that mice earned their entire caloric need with the task (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "9709c7a9-3bdd-47b3-8642-7f7f9ab951d5",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C54",
+      "claim": "Mice earned their entire caloric need with the closed-economy progressive ratio task.",
+      "claim_type": "EXPLICIT",
+      "source": "Although pellets earned from this task were their only food source, mouse weights remained stable across days, demonstrating that mice earned their entire caloric need with the task (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the stable body weight data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "5039b503-0483-48e3-b843-e3c4205d595f",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C55",
+      "claim": "Total pellets earned did not differ between light and dark cycles in the closed-economy progressive ratio task.",
+      "claim_type": "EXPLICIT",
+      "source": "Total pellets earned did not differ between light and dark cycles (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e00b0a71-b397-4377-acc8-88d9511eb4bd",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C56",
+      "claim": "Nose-poking rates were higher during the dark phase in the closed-economy progressive ratio task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nose-poking rates were higher during the dark phase of their daily cycle (Figure 7E), meaning mice performed more pokes to earn each pellet in this phase (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figures 7E and 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "24383fed-99a8-4413-abf3-a4204f400b33",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C57",
+      "claim": "Mice performed more pokes to earn each pellet during the dark phase in the closed-economy progressive ratio task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nose-poking rates were higher during the dark phase of their daily cycle (Figure 7E), meaning mice performed more pokes to earn each pellet in this phase (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figures 7E and 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "814fe19b-55ab-4c4c-8c5e-0c5d0fb74c21",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C58",
+      "claim": "Motivation for food pellets varies over the circadian cycle such that mice are willing to work harder during the dark cycle vs. the light cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that motivation for food pellets varies over the circadian cycle such that mice are willing to work harder during the dark cycle vs. the light cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the pokes per pellet data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "ba982ff6-9768-4b3d-ad94-ebaf6502973b",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C59",
+      "claim": "There is a ~3 hr window of enhanced nose-poking rates starting shortly after the onset of the dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "When the data was visualized hourly across the circadian cycle, we further noted a ~3 hr window of enhanced nose-poking rates starting shortly after the onset of the dark cycle (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "5f89de70-1e5f-436f-b566-411d7fd4a3df",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C60",
+      "claim": "The ~3 hr window of enhanced nose-poking coincides with a circadian peak in extracellular dopamine levels in the striatum (Ferris et al., 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "This time coincides with a circadian peak in extracellular dopamine levels in the striatum (Ferris et al., 2014), and a peak in activity levels in mice (Matikainen-Ankney et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "d850ad5d-ff7c-41fb-bcb4-0df519f9f246",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C61",
+      "claim": "The ~3 hr window of enhanced nose-poking coincides with a peak in activity levels in mice (Matikainen-Ankney et al., 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "This time coincides with a circadian peak in extracellular dopamine levels in the striatum (Ferris et al., 2014), and a peak in activity levels in mice (Matikainen-Ankney et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "98604697-17c6-49c4-a4b7-1b0d2a8a58a4",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C62",
+      "claim": "Dorsal striatal neurons that express the D1 receptor are highly reinforcing when optogenetically stimulated (Kravitz et al., 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "Dorsal striatal neurons that express the D1 receptor are highly reinforcing when optogenetically stimulated (Kravitz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "1af1a679-8313-4200-a220-51cf51b5500b",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C63",
+      "claim": "Three mice showed significantly greater active vs inactive pokes in the optogenetic self-stimulation experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Three mice were run on this task, resulting in significantly greater active vs inactive pokes (Figure 8C,D), and demonstrating that FED3 can be used for optogenetic self-stimulation studies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental results, with reference to Figures 8C and 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "6302d573-d591-43bf-987c-a75f0bd23dd6",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C64",
+      "claim": "FED3 can be used for optogenetic self-stimulation studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Three mice were run on this task, resulting in significantly greater active vs inactive pokes (Figure 8C,D), and demonstrating that FED3 can be used for optogenetic self-stimulation studies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic self-stimulation experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "eeb46452-ac2e-43b7-b153-42d6e0bcbe4c",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C65",
+      "claim": "The programmable output is attached to an on-board digital-to-analog converter chip that can output pulses of any voltage from 0 to 3 V.",
+      "claim_type": "EXPLICIT",
+      "source": "The programmable output is attached to an on-board digital-to-analog converter chip, meaning that it can be programmed to output pulses of any voltage from 0 to 3 V, allowing FED3 to represent multiple behavioral events with one output line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the hardware capabilities of FED3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "03cef2ef-7dad-4dc9-858b-3d8cff761bd4",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C66",
+      "claim": "The timing of the BNC output port is regulated by the SAMD21 microprocessor that has a documented pulsing precision of <1 \u00b5s.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of the BNC output port is regulated by the SAMD21 microprocessor that has a documented pulsing precision of <1 \u00b5s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the timing precision of the BNC output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "ffe34b8d-1c2f-45b9-a48d-199c0f3d2e01",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C67",
+      "claim": "FED has been used by multiple research groups to understand feeding (Brierley et al., 2020; Burnett et al., 2019; Chen et al., 2020; Li et al., 2019; London et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "FED has been used by multiple research groups to understand feeding (Brierley et al., 2020; Burnett et al., 2019; Chen et al., 2020; Li et al., 2019; London et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research using FED.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "224141c9-9394-4bdf-80e8-a1d8e7724a5c",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C68",
+      "claim": "FED3 has been used to study how specific neural circuit manipulations alter food motivation (Mazzone et al., 2020; Sciolino et al., 2019; Vachez et al., 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "We distributed the design for FED3 online, and it has been used to study how specific neural circuit manipulations alter food motivation (Mazzone et al., 2020; Sciolino et al., 2019; Vachez et al., 2021), how weight-loss alters food motivation (Matikainen-Ankney et al., 2020), and how food motivation is altered in a stress-susceptible mouse population (Rodriguez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research using FED3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "765c0bfd-8747-458d-801d-dca2bcfab4f8",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C69",
+      "claim": "FED3 has been used to study how weight-loss alters food motivation (Matikainen-Ankney et al., 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "We distributed the design for FED3 online, and it has been used to study how specific neural circuit manipulations alter food motivation (Mazzone et al., 2020; Sciolino et al., 2019; Vachez et al., 2021), how weight-loss alters food motivation (Matikainen-Ankney et al., 2020), and how food motivation is altered in a stress-susceptible mouse population (Rodriguez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research using FED3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "b76f0a66-e21e-4d33-bd7c-92979ad7f838",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C70",
+      "claim": "FED3 has been used to study how food motivation is altered in a stress-susceptible mouse population (Rodriguez et al., 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "We distributed the design for FED3 online, and it has been used to study how specific neural circuit manipulations alter food motivation (Mazzone et al., 2020; Sciolino et al., 2019; Vachez et al., 2021), how weight-loss alters food motivation (Matikainen-Ankney et al., 2020), and how food motivation is altered in a stress-susceptible mouse population (Rodriguez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research using FED3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e357aa1a-b802-4cb5-9a2b-992ba8d3bf33",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C71",
+      "claim": "The FED3 electronics cost ~$200.",
+      "claim_type": "EXPLICIT",
+      "source": "The FED3 electronics cost ~$200 and the housing is 3D printed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the cost of FED3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "fe05939e-4ea3-4fb6-8fad-89c694661e16",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C72",
+      "claim": "FED3 is >10\u00d7 cheaper than most commercial solutions for measuring food intake or testing operant behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if 3D printing is done professionally this is >10\u00d7 cheaper than most commercial solutions for measuring food intake or testing operant behavior",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of FED3 cost to commercial alternatives.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "0da7e796-3782-4291-a3f9-21cbb4ca7e06",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C73",
+      "claim": "FED3 has been used to synchronize with fiber-photometry recordings (London et al., 2018; Mazzone et al., 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "This has been done by multiple labs to synchronize the output of FED3 with fiber-photometry recordings (London et al., 2018; Mazzone et al., 2020), electrophysiological recordings (London et al., 2018), optogenetic stimulation (Vachez et al., 2021), and video tracking (Krynitsky et al., 2020; Li et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e35192e0-1e2e-4613-8a5b-fb86cda633eb",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C74",
+      "claim": "FED3 has been used to synchronize with electrophysiological recordings (London et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "This has been done by multiple labs to synchronize the output of FED3 with fiber-photometry recordings (London et al., 2018; Mazzone et al., 2020), electrophysiological recordings (London et al., 2018), optogenetic stimulation (Vachez et al., 2021), and video tracking (Krynitsky et al., 2020; Li et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "9ba648a0-3851-44be-89b3-0249853d622a",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C75",
+      "claim": "FED3 has been used to synchronize with optogenetic stimulation (Vachez et al., 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "This has been done by multiple labs to synchronize the output of FED3 with fiber-photometry recordings (London et al., 2018; Mazzone et al., 2020), electrophysiological recordings (London et al., 2018), optogenetic stimulation (Vachez et al., 2021), and video tracking (Krynitsky et al., 2020; Li et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "2e5fce44-f8a0-479c-aa5b-f1b8fe17cbb1",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C76",
+      "claim": "FED3 has been used to synchronize with video tracking (Krynitsky et al., 2020; Li et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "This has been done by multiple labs to synchronize the output of FED3 with fiber-photometry recordings (London et al., 2018; Mazzone et al., 2020), electrophysiological recordings (London et al., 2018), optogenetic stimulation (Vachez et al., 2021), and video tracking (Krynitsky et al., 2020; Li et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "63c3be64-10b3-46b6-a6b1-3c982b836154",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C77",
+      "claim": "Animals can 'hoard' pellets from FED3, as animals can remove food without consuming it.",
+      "claim_type": "EXPLICIT",
+      "source": "A second limitation is that animals can 'hoard' pellets from FED3, as animals can remove food without consuming it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of FED3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "3c520f59-cc88-49eb-87ba-38957fe1cd04",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C78",
+      "claim": "Less than 10% of mice hoard pellets.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experience, this seemed to be a rare trait that specific mice engaged in (<10% of mice hoard pellets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the frequency of pellet hoarding based on the authors' experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e0a21b15-2a0f-48f7-96e0-881e7be2daa4",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C79",
+      "claim": "FED3 has no way to determine whether a mouse actually consumes each pellet after removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, FED3 has no way to determine whether a mouse actually consumes each pellet after removal so we recommend checking for pellet hoarding and accounting for this in experimental conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of FED3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "045f638e-0bc7-4a91-946b-987d21837576",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C80",
+      "claim": "Granular bedding can be kicked into the pellet well and interfere with pellet detection.",
+      "claim_type": "EXPLICIT",
+      "source": "A third limitation is that granular bedding can be kicked into the pellet well and interfere with pellet detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of FED3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "a0a3df42-f8d4-48b1-938c-b3e0e4d7860d",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C81",
+      "claim": "It is recommended to use 'iso-pad' bedding, or bedding pellets that are large enough to avoid interference with pellet detection.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid this, we recommend using 'iso-pad' bedding, or bedding pellets that are large enough to avoid this possibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the bedding interference limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "d5c5bb43-7a19-47da-8191-e9d1f923126e",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C82",
+      "claim": "FED3 is not waterproof and would not be resistant to flooding.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth limitation is that FED3 is not waterproof and would not be resistant to flooding, though the 3D printed housing is sufficient to protect electronics from typical wear associated with placement in a rodent cage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of FED3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "0047611c-8324-431a-aa06-3146cec6f796",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C83",
+      "claim": "The 3D printed housing is sufficient to protect electronics from typical wear associated with placement in a rodent cage.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth limitation is that FED3 is not waterproof and would not be resistant to flooding, though the 3D printed housing is sufficient to protect electronics from typical wear associated with placement in a rodent cage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the protective capabilities of the FED3 housing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "4e499d48-9371-4c9a-98b0-3275ec15de86",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C84",
+      "claim": "FED3 has no way of identifying individual mice in group housed environments.",
+      "claim_type": "EXPLICIT",
+      "source": "A final limitation of FED3 is that it has no way of identifying individual mice in group housed environments, so feeding records must be collected in singly housed mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of FED3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "fe3379ef-43eb-4aff-bea4-f66a655816d0",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C85",
+      "claim": "Feeding records must be collected in singly housed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A final limitation of FED3 is that it has no way of identifying individual mice in group housed environments, so feeding records must be collected in singly housed mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a requirement for using FED3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "5e06a3e4-dd6c-408c-ba72-6cf2a3129a06",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C86",
+      "claim": "One hundred and fifty-nine C57Bl/6 mice were housed in a 12 hr light/dark cycle with ad libitum access to food and water except where described.",
+      "claim_type": "EXPLICIT",
+      "source": "One hundred and fifty-nine C57Bl/6 mice were housed in a 12 hr light/dark cycle with ad libitum access to food and water except where described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental subjects and housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "ac4e7450-4e49-4161-bbcd-ce3544295eff",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C87",
+      "claim": "All procedures were approved by the Animal Care and Use Committee at Washington University in St Louis, the National Institutes of Health, Williams College, Virginia Tech, and Monash University.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Animal Care and Use Committee at Washington University in St Louis, the National Institutes of Health, Williams College, Virginia Tech, and Monash University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about ethical approval for the research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "ca19157c-71a0-4d32-9ab9-d3746871489b",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C88",
+      "claim": "The 3D parts for FED3 were designed with TinkerCAD (Autodesk).",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D parts for FED3 were designed with TinkerCAD (Autodesk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the design software used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "90ec8404-458d-4c2f-8dee-996fb3b7533b",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C89",
+      "claim": "FED3 has been printed with an FDM printer in PLA (Sindoh 3DWox 1), as well as with a commercial SLS process in Nylon 12 (Shapeways).",
+      "claim_type": "EXPLICIT",
+      "source": "We have printed FED3 with an FDM printer in PLA (Sindoh 3DWox 1), as well as with a commercial SLS process in Nylon 12 (Shapeways).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the manufacturing methods used for FED3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "6465777a-d8c3-47af-9147-8f6beffe5189",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C90",
+      "claim": "Electronics design was completed using Autodesk Eagle version 9.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Electronics design was completed using Autodesk Eagle version 9.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the electronics design software used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "d0b43fd5-7c2e-49e1-b8c2-b5112a469f1c",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C91",
+      "claim": "The microcontroller contains an ATSAMD21G18 ARM M0 processor that runs at 48 MHz, 256 kB of FLASH memory, 32 kB of RAM memory, an on-board microSD card slot for writing data, and up to 20 digital inputs/output pins for controlling other hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "This microcontroller contains an ATSAMD21G18 ARM M0 processor that runs at 48 MHz, 256 kB of FLASH memory, 32 kB of RAM memory, an on-board microSD card slot for writing data, and up to 20 digital inputs/output pins for controlling other hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the technical specifications of the microcontroller.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "6a226778-29ce-49cd-b8f7-e67b4d09406f",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C92",
+      "claim": "The microcontroller contains a battery charging circuit for charging the internal 4400mAhr LiPo battery in FED3.",
+      "claim_type": "EXPLICIT",
+      "source": "The microcontroller also contains a battery charging circuit for charging the internal 4400mAhr LiPo battery in FED3, which provides ~1 week of run-time between charges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the battery charging capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e3b5bd7f-2ab3-4dc9-be63-dd328a4f78b6",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C93",
+      "claim": "The code for FED3 is written in the Arduino language and is fully open-source.",
+      "claim_type": "EXPLICIT",
+      "source": "The code for FED3 is written in the Arduino language and is fully open-source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the programming language and availability of the code.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "8dffc8f9-007d-47f8-8474-7bfe89b2998d",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C94",
+      "claim": "In FR1 mode, when the mouse activates the left nose-poke, the FED3 delivers a combined auditory tone (4 kHz for 0.3 s) and visual (all eight LEDs light in blue) stimulus and dispenses a pellet.",
+      "claim_type": "EXPLICIT",
+      "source": "In FR1 mode, FED3 logs the time-stamps of each 'nose-poke' event to the internal storage. When the mouse activates the left nose-poke, the FED3 delivers a combined auditory tone (4 kHz for 0.3 s) and visual (all eight LEDs light in blue) stimulus and dispenses a pellet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the operation of the FR1 program.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "0769007a-ff5e-4dce-8429-34ff15bce8fc",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C95",
+      "claim": "Viral infections of male and female Drd1-Cre mice were conducted under 0.5\u20132.5% anesthesia on a stereotaxic apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral infections of male and female Drd1-Cre mice were conducted under 0.5\u20132.5% anesthesia on a stereotaxic apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the surgical procedures used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "098b840d-cd31-49d9-a00e-2a3ebae62820",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C96",
+      "claim": "500 nL of AAV2-DIO-hSyn-ChR2 was injected bilaterally (500 nL/hemisphere) in the dorsomedial striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a Nanoject injector, 500 nL of AAV2-DIO-hSyn-ChR2 was injected bilaterally (500 nL/hemisphere) in the dorsomedial striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the viral injection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e100013e-8f01-41e6-b6b9-9e8712f7f2c9",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C97",
+      "claim": "ChR2 was allowed to express for 4 weeks before behavioral testing.",
+      "claim_type": "EXPLICIT",
+      "source": "After letting ChR2 express for 4 weeks, animals were pre-trained on an FR1 schedule for pellets overnight in their home-cage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental timeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "4040b22a-116c-4d27-91a1-f4409e442b2e",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C98",
+      "claim": "During the self-stimulation session, when the mouse poked on the active nose-poke, it received a 1 s train of 1 mW 475 nm light at 20 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "During the self-stimulation session, when the mouse poked on the active nose-poke, it received a 1 s train of 1 mW 475 nm light at 20 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the optogenetic stimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "bd1d2682-f3a1-43f1-afe4-be762db7d159",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C99",
+      "claim": "Self-stimulation sessions were run for 60 min in a 550 cm2 arena.",
+      "claim_type": "EXPLICIT",
+      "source": "Sessions were run for 60 min in a 550 cm2 arena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "630892ed-3d22-457c-9e9a-fa56f0ede305",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C100",
+      "claim": "CSV files generated by FED3 were processed and plotted with custom python scripts (Python, version 3.6.7, Python Software Foundation, Wilmington, DE).",
+      "claim_type": "EXPLICIT",
+      "source": "CSV files generated by FED3 were processed and plotted with custom python scripts (Python, version 3.6.7, Python Software Foundation, Wilmington, DE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "8985374c-5e56-4e61-9b71-eece490b5b4b",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C101",
+      "claim": "FED3VIZ was written in Python's standard library for developing GUIs (tkinter).",
+      "claim_type": "EXPLICIT",
+      "source": "FED3VIZ was written in Python's standard library for developing GUIs (tkinter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the programming of FED3VIZ.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "d6d402b0-3a5f-49af-9f04-6bc17b8464ba",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C102",
+      "claim": "Meals were defined as pellets eaten within 1 min of each other based on inter-pellet interval histograms.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on inter-pellet interval histograms (Figure 3), we defined meals as pellets eaten within 1 min of each other.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the meal definition used in the analysis, with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "ef9a9ce9-4de8-4348-a6eb-0ff570f212d4",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C103",
+      "claim": "A minimum size of 0.1 g (five pellets) was defined to be counted as a meal.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we defined a minimum size of 0.1 g (five pellets) to be counted as a meal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the meal size threshold used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "b1a09349-a726-4598-a3f8-7f61bb92aa16",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "claim_id": "C104",
+      "claim": "p-value<0.05 was considered significant.",
+      "claim_type": "EXPLICIT",
+      "source": "p-value<0.05 was considered significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical significance threshold used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "68d7adb6-d83b-4504-876e-fc988f25093e",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FED3 is a compact, battery-powered, open-source device for measuring food intake and operant behavior in rodent home-cages. It contains two nose-pokes, a pellet dispenser, audiovisual stimuli, a programmable output with <200 \u00b5s timing precision, and costs ~$200 in electronics, making it >10\u00d7 cheaper than commercial alternatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C20, C65-C66, C71-C72, and C88-C93 provide comprehensive technical specifications and design details that are well-documented with figures and methods. The hardware specifications, cost estimates, and open-source nature are explicitly stated with supporting evidence from the design and construction sections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FED3 accurately measures food intake in free-feeding mode with ~3% error rate (R\u00b2=0.97) compared to manual weighing, detects expected circadian rhythms, and maintains stable mouse body weight over 6+ days. The device has low jamming rates due to an angled pellet hopper design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C32 are well-supported by experimental data from 10 mice over 6 days (Figures 2B-E). The accuracy validation using regression analysis (R\u00b2=0.97) and stable body weights provide strong evidence. The low jamming claim is supported by design features and extended use data, though quantitative jamming rates are not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "58179648-6749-439a-9be5-a81da5c1a7ad",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FED3VIZ is an open-source Python-based analysis program that provides multiple visualization options for FED3 data including pellet retrieval, poke accuracy, retrieval time, inter-pellet intervals, meal size, and progressive ratio breakpoint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 and C100-C101 describe the FED3VIZ software with clear documentation of its capabilities and implementation. The software is demonstrated in Figure 2F and is available as open-source code, providing adequate support for these methodological claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "06680d78-4c71-4e7f-a44d-e15093fe133d",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FED3 enables meal pattern analysis by recording pellet removal timestamps. Using inter-pellet interval histograms, meals were defined as pellets consumed within 1 minute of each other (minimum 5 pellets). Analysis revealed mice eat fewer meals during the light cycle but similar pellets per meal across cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C102-C103 are supported by data in Figure 3 showing inter-pellet interval distributions and meal patterns. The meal definition is data-driven based on observed distributions, and the circadian differences in meal number (but not meal size) are statistically significant (p<0.0001, Figure 3B).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "e5ed7904-3fa9-49fb-8931-984e5e660602",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In FR1 operant testing, both active and inactive pokes were higher during the dark cycle, but poke efficiency (% active pokes) was slightly higher during the light cycle, suggesting more efficient operant responding during the light phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by data from 10 mice over 6 days (Figure 4B-E). Statistical analysis shows significant interaction effects (F(1,792)=85.225, p<0.0001) and the poke efficiency difference is significant (p=0.0001). However, the interpretation of 'efficiency' (C42) is inferential and could have alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "f20e0f95-6ec7-483c-b84a-a189d40eba5e",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multi-site study of 122 mice from seven laboratories showed variable pellet acquisition across sites but overall Gaussian distribution. Retrieval time, active poke count, and poke efficiency improved over time, with learning rates equivalent between 16 daily 1-hour sessions and one 16-hour overnight session, suggesting cumulative interaction time drives FR1 task acquisition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50 are supported by extensive multi-site data (Figure 5). Statistical tests confirm significant group effects (F(6,115)=6.4223, p<0.0001) and time effects on learning metrics. The comparison between training schedules (C48) shows no significant difference in learning rates, supporting the cumulative time hypothesis (C49-C50), though this remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "d61e09e7-a288-49c3-bd23-4273974188d3",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Magazine training (1-3 days of free-feeding exposure) resulted in significantly higher (~2\u00d7) pellet acquisition during the first FR1 session compared to non-magazine trained mice, leading to the recommendation that magazine training speeds up acquisition of nose-poking tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by comparison of 24 magazine-trained mice to 122 non-trained mice (Figure 6B-C). The difference is statistically significant (p=0.0001, Student's t-test) with a clear effect size (~2\u00d7). The recommendation (C52) is a reasonable inference from this data, though based on a single comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In closed-economy progressive ratio testing, mice maintained stable body weight while earning all calories, with equal pellets earned across light/dark cycles but higher nose-poking rates and pokes per pellet during the dark phase. A ~3-hour window of enhanced poking after dark onset coincides with reported peaks in striatal dopamine and mouse activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 are well-supported by data from 7 mice over 4 days (Figure 7). Stable weights (C53) support the inference that mice earned sufficient calories (C54). Statistical tests confirm significant differences in pokes (p=0.0044) and pokes per pellet (p=0.0007) between cycles. The correlation with dopamine/activity peaks (C60-C61) is supported by citations but represents cross-study comparison rather than direct measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "0a4a496b-d84c-4c58-96f7-308083a6a262",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FED3 can perform optogenetic self-stimulation experiments. Three Drd1-Cre mice with ChR2 expressed in dorsomedial striatum showed significantly greater active versus inactive pokes when active pokes triggered 1-second trains of 475nm light at 20Hz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C64 and C95-C99 describe the optogenetic experiment with appropriate methods. However, the sample size is very small (n=3 mice), no statistical test or p-value is reported for the 'significantly greater' claim (C63), and no control conditions (e.g., non-ChR2 expressing mice) are described. While the data trend supports the capability claim (C64), the evidence is insufficient for strong conclusions about the behavioral effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "5743dbbc-dd4c-4ae7-bafb-1cb247530ed0",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FED3 and its predecessor FED have been adopted by multiple research groups and used in published studies examining neural circuit manipulations, weight-loss effects on motivation, stress susceptibility, and synchronized with various recording modalities including fiber-photometry, electrophysiology, optogenetics, and video tracking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 and C73-C76 are supported by multiple citations to published work using FED/FED3. These represent independent validation of the device's utility across different laboratories and applications. The claims are appropriately attributed to prior published work rather than data presented in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "FED3 has several acknowledged limitations: animals can hoard pellets without consuming them (<10% of mice), granular bedding can interfere with pellet detection, the device is not waterproof, and it cannot identify individual mice in group-housed environments, requiring single housing for data collection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C85 transparently describe device limitations with appropriate caveats and recommendations. The hoarding frequency estimate (C78) is based on authors' experience rather than systematic quantification. These limitations are honestly reported and represent important considerations for experimental design, though they do not undermine the primary results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    },
+    {
+      "id": "861ef137-e788-4bc6-9607-ce0eaf87245c",
+      "content_id": "661a19f3-ad52-4bd8-8be8-44012b9cc1b8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Experiments used 159 C57Bl/6 mice housed in 12-hour light/dark cycles with ad libitum food and water. All procedures were approved by institutional animal care committees at five institutions. Statistical significance was set at p<0.05.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 and C104 describe standard methodological details that are appropriately documented. Ethical approval from multiple institutions is stated, and the statistical threshold is conventional. These represent necessary methodological information rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:23:59.910517Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d325e504-8185-4573-a6ea-ef6d6a8f9dfe",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "2bc4b2a7-2f29-4dd5-8649-511cb68734b6",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "2725265b-4fee-4938-b754-6f9172bad9db",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "c058f2a8-fc7d-4c2d-87e6-4a88d46a9cf6",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "d1d7da79-97f0-4487-bbf3-a24eca3d7e47",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "858847d7-f1c6-4c38-bc6c-650a919179ff",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "caa16ab2-ff04-4fb3-86b6-de0f20322b8c",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "e5539db3-95ae-4e2b-9610-12ab278c4cc7",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "7a4c8179-ed12-4407-8e44-f960a490d47a",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "cc0dede8-404b-4e61-aada-358b12a62058",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "97031b8e-d984-48a3-aef1-9e7362fad464",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "eeb46452-ac2e-43b7-b153-42d6e0bcbe4c",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "03cef2ef-7dad-4dc9-858b-3d8cff761bd4",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "e357aa1a-b802-4cb5-9a2b-992ba8d3bf33",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "fe05939e-4ea3-4fb6-8fad-89c694661e16",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "ca19157c-71a0-4d32-9ab9-d3746871489b",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "90ec8404-458d-4c2f-8dee-996fb3b7533b",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "6465777a-d8c3-47af-9147-8f6beffe5189",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "d0b43fd5-7c2e-49e1-b8c2-b5112a469f1c",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "6a226778-29ce-49cd-b8f7-e67b4d09406f",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "e3b5bd7f-2ab3-4dc9-be63-dd328a4f78b6",
+      "result_id": "68d7adb6-d83b-4504-876e-fc988f25093e"
+    },
+    {
+      "claim_id": "b4ef0684-9eab-4e6a-ac55-70a455bc17be",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "887ca83b-96fb-4090-bc02-6207a1954596",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "3d915a73-dc26-43fd-a28c-5cbbe8e00209",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "8e3b01cd-d0c9-4a96-827e-300135e0fb05",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "c005db75-da98-4aab-9724-be3bee868438",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "4f65d64f-b344-4dc6-aacd-419eb02dc20d",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "c2fe4ac5-77eb-4aaa-88fb-53e740dd64cc",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "09ac5c9b-4063-44dd-88e1-e5949d3428ba",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "3bfddcd5-d140-43ef-8be9-b99f29acb2f2",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "d5cc7285-47e4-4000-8481-f62ce27d9da7",
+      "result_id": "ce249a2f-05ea-40b7-b1b6-28e10ce81345"
+    },
+    {
+      "claim_id": "bacecd97-b9fb-4c17-b696-7d39ed81badc",
+      "result_id": "58179648-6749-439a-9be5-a81da5c1a7ad"
+    },
+    {
+      "claim_id": "4129c820-436a-46de-bfd3-877e2cdc3b22",
+      "result_id": "58179648-6749-439a-9be5-a81da5c1a7ad"
+    },
+    {
+      "claim_id": "630892ed-3d22-457c-9e9a-fa56f0ede305",
+      "result_id": "58179648-6749-439a-9be5-a81da5c1a7ad"
+    },
+    {
+      "claim_id": "8985374c-5e56-4e61-9b71-eece490b5b4b",
+      "result_id": "58179648-6749-439a-9be5-a81da5c1a7ad"
+    },
+    {
+      "claim_id": "47ec68a2-4ad2-483b-a686-f5dd71d063f8",
+      "result_id": "06680d78-4c71-4e7f-a44d-e15093fe133d"
+    },
+    {
+      "claim_id": "09239db6-0527-4394-b36f-cc14c2e57b22",
+      "result_id": "06680d78-4c71-4e7f-a44d-e15093fe133d"
+    },
+    {
+      "claim_id": "58a43356-3863-44a0-b784-a1eb00295391",
+      "result_id": "06680d78-4c71-4e7f-a44d-e15093fe133d"
+    },
+    {
+      "claim_id": "f3dee567-465d-40c5-9b6d-35915cd3c0da",
+      "result_id": "06680d78-4c71-4e7f-a44d-e15093fe133d"
+    },
+    {
+      "claim_id": "d6d402b0-3a5f-49af-9f04-6bc17b8464ba",
+      "result_id": "06680d78-4c71-4e7f-a44d-e15093fe133d"
+    },
+    {
+      "claim_id": "ef9a9ce9-4de8-4348-a6eb-0ff570f212d4",
+      "result_id": "06680d78-4c71-4e7f-a44d-e15093fe133d"
+    },
+    {
+      "claim_id": "b5726296-faed-4fa4-a1c8-d04f1bbcfd2a",
+      "result_id": "e5ed7904-3fa9-49fb-8931-984e5e660602"
+    },
+    {
+      "claim_id": "702e6aba-f449-43e7-9641-1aa5ca68452f",
+      "result_id": "e5ed7904-3fa9-49fb-8931-984e5e660602"
+    },
+    {
+      "claim_id": "1e2f1d91-a768-4b0f-aa94-00ab18e31b98",
+      "result_id": "e5ed7904-3fa9-49fb-8931-984e5e660602"
+    },
+    {
+      "claim_id": "733007d0-140d-4735-bbd2-d48493bed69c",
+      "result_id": "f20e0f95-6ec7-483c-b84a-a189d40eba5e"
+    },
+    {
+      "claim_id": "19fe2242-56a1-436e-9b0f-21cdb3e4dcb6",
+      "result_id": "f20e0f95-6ec7-483c-b84a-a189d40eba5e"
+    },
+    {
+      "claim_id": "b13966ff-f083-4a2d-b154-0b954df69d3f",
+      "result_id": "f20e0f95-6ec7-483c-b84a-a189d40eba5e"
+    },
+    {
+      "claim_id": "b7324c6b-f8ef-4fd9-9c53-a39c80d23594",
+      "result_id": "f20e0f95-6ec7-483c-b84a-a189d40eba5e"
+    },
+    {
+      "claim_id": "f45073cf-ae03-455a-8774-cb3427524871",
+      "result_id": "f20e0f95-6ec7-483c-b84a-a189d40eba5e"
+    },
+    {
+      "claim_id": "f3201739-34e2-44b9-97cc-67c274b41ce2",
+      "result_id": "f20e0f95-6ec7-483c-b84a-a189d40eba5e"
+    },
+    {
+      "claim_id": "89845b92-83ce-4d6b-8dca-dad57d0f4429",
+      "result_id": "f20e0f95-6ec7-483c-b84a-a189d40eba5e"
+    },
+    {
+      "claim_id": "4b1d695d-af19-4346-b519-fd997becd493",
+      "result_id": "f20e0f95-6ec7-483c-b84a-a189d40eba5e"
+    },
+    {
+      "claim_id": "dc9fa8bc-3f1f-453e-a551-eff0f884b507",
+      "result_id": "d61e09e7-a288-49c3-bd23-4273974188d3"
+    },
+    {
+      "claim_id": "16427d03-ba02-4cf1-9d8f-45823446183a",
+      "result_id": "d61e09e7-a288-49c3-bd23-4273974188d3"
+    },
+    {
+      "claim_id": "9a9d2904-f17f-4e99-b2aa-7ebe00ca5893",
+      "result_id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795"
+    },
+    {
+      "claim_id": "9709c7a9-3bdd-47b3-8642-7f7f9ab951d5",
+      "result_id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795"
+    },
+    {
+      "claim_id": "5039b503-0483-48e3-b843-e3c4205d595f",
+      "result_id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795"
+    },
+    {
+      "claim_id": "e00b0a71-b397-4377-acc8-88d9511eb4bd",
+      "result_id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795"
+    },
+    {
+      "claim_id": "24383fed-99a8-4413-abf3-a4204f400b33",
+      "result_id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795"
+    },
+    {
+      "claim_id": "814fe19b-55ab-4c4c-8c5e-0c5d0fb74c21",
+      "result_id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795"
+    },
+    {
+      "claim_id": "ba982ff6-9768-4b3d-ad94-ebaf6502973b",
+      "result_id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795"
+    },
+    {
+      "claim_id": "5f89de70-1e5f-436f-b566-411d7fd4a3df",
+      "result_id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795"
+    },
+    {
+      "claim_id": "d850ad5d-ff7c-41fb-bcb4-0df519f9f246",
+      "result_id": "09d9ef73-5d17-4e93-aca4-622ef6ab2795"
+    },
+    {
+      "claim_id": "98604697-17c6-49c4-a4b7-1b0d2a8a58a4",
+      "result_id": "0a4a496b-d84c-4c58-96f7-308083a6a262"
+    },
+    {
+      "claim_id": "1af1a679-8313-4200-a220-51cf51b5500b",
+      "result_id": "0a4a496b-d84c-4c58-96f7-308083a6a262"
+    },
+    {
+      "claim_id": "6302d573-d591-43bf-987c-a75f0bd23dd6",
+      "result_id": "0a4a496b-d84c-4c58-96f7-308083a6a262"
+    },
+    {
+      "claim_id": "0769007a-ff5e-4dce-8429-34ff15bce8fc",
+      "result_id": "0a4a496b-d84c-4c58-96f7-308083a6a262"
+    },
+    {
+      "claim_id": "098b840d-cd31-49d9-a00e-2a3ebae62820",
+      "result_id": "0a4a496b-d84c-4c58-96f7-308083a6a262"
+    },
+    {
+      "claim_id": "e100013e-8f01-41e6-b6b9-9e8712f7f2c9",
+      "result_id": "0a4a496b-d84c-4c58-96f7-308083a6a262"
+    },
+    {
+      "claim_id": "4040b22a-116c-4d27-91a1-f4409e442b2e",
+      "result_id": "0a4a496b-d84c-4c58-96f7-308083a6a262"
+    },
+    {
+      "claim_id": "bd1d2682-f3a1-43f1-afe4-be762db7d159",
+      "result_id": "0a4a496b-d84c-4c58-96f7-308083a6a262"
+    },
+    {
+      "claim_id": "ffe34b8d-1c2f-45b9-a48d-199c0f3d2e01",
+      "result_id": "5743dbbc-dd4c-4ae7-bafb-1cb247530ed0"
+    },
+    {
+      "claim_id": "224141c9-9394-4bdf-80e8-a1d8e7724a5c",
+      "result_id": "5743dbbc-dd4c-4ae7-bafb-1cb247530ed0"
+    },
+    {
+      "claim_id": "765c0bfd-8747-458d-801d-dca2bcfab4f8",
+      "result_id": "5743dbbc-dd4c-4ae7-bafb-1cb247530ed0"
+    },
+    {
+      "claim_id": "b76f0a66-e21e-4d33-bd7c-92979ad7f838",
+      "result_id": "5743dbbc-dd4c-4ae7-bafb-1cb247530ed0"
+    },
+    {
+      "claim_id": "0da7e796-3782-4291-a3f9-21cbb4ca7e06",
+      "result_id": "5743dbbc-dd4c-4ae7-bafb-1cb247530ed0"
+    },
+    {
+      "claim_id": "e35192e0-1e2e-4613-8a5b-fb86cda633eb",
+      "result_id": "5743dbbc-dd4c-4ae7-bafb-1cb247530ed0"
+    },
+    {
+      "claim_id": "9ba648a0-3851-44be-89b3-0249853d622a",
+      "result_id": "5743dbbc-dd4c-4ae7-bafb-1cb247530ed0"
+    },
+    {
+      "claim_id": "2e5fce44-f8a0-479c-aa5b-f1b8fe17cbb1",
+      "result_id": "5743dbbc-dd4c-4ae7-bafb-1cb247530ed0"
+    },
+    {
+      "claim_id": "63c3be64-10b3-46b6-a6b1-3c982b836154",
+      "result_id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e"
+    },
+    {
+      "claim_id": "3c520f59-cc88-49eb-87ba-38957fe1cd04",
+      "result_id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e"
+    },
+    {
+      "claim_id": "e0a21b15-2a0f-48f7-96e0-881e7be2daa4",
+      "result_id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e"
+    },
+    {
+      "claim_id": "045f638e-0bc7-4a91-946b-987d21837576",
+      "result_id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e"
+    },
+    {
+      "claim_id": "a0a3df42-f8d4-48b1-938c-b3e0e4d7860d",
+      "result_id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e"
+    },
+    {
+      "claim_id": "d5c5bb43-7a19-47da-8191-e9d1f923126e",
+      "result_id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e"
+    },
+    {
+      "claim_id": "0047611c-8324-431a-aa06-3146cec6f796",
+      "result_id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e"
+    },
+    {
+      "claim_id": "4e499d48-9371-4c9a-98b0-3275ec15de86",
+      "result_id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e"
+    },
+    {
+      "claim_id": "fe3379ef-43eb-4aff-bea4-f66a655816d0",
+      "result_id": "9adeb6e7-270f-40ac-8ebd-9ec27535139e"
+    },
+    {
+      "claim_id": "5e06a3e4-dd6c-408c-ba72-6cf2a3129a06",
+      "result_id": "861ef137-e788-4bc6-9607-ce0eaf87245c"
+    },
+    {
+      "claim_id": "ac4e7450-4e49-4161-bbcd-ce3544295eff",
+      "result_id": "861ef137-e788-4bc6-9607-ce0eaf87245c"
+    },
+    {
+      "claim_id": "b1a09349-a726-4598-a3f8-7f61bb92aa16",
+      "result_id": "861ef137-e788-4bc6-9607-ce0eaf87245c"
+    }
+  ],
+  "comparisons": []
+}

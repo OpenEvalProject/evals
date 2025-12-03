@@ -1,0 +1,404 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C34",
+      "C77",
+      "C78",
+      "C79",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "TargetOrtho2 is a computational tool that scans eight nematode genomes separated by 500 million years of evolution to identify phylogenetically conserved transcription factor binding sites. The tool is approximately 50 times faster than the previous version, with run times averaging 20 minutes per job, achieved by switching from sqlite3 to Pandas library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C34, C77-79, C104-106 collectively describe the TargetOrtho2 tool's specifications and performance. The genome coverage (C7, C8), computational improvements (C34, C104, C105), and technical implementation details (C77-79, C106) are clearly stated with specific metrics and are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "A Gaussian process classifier (GPC) trained on motif features from three validated terminal selectors (UNC-3, CHE-1, TTX-3::CEH-10) achieves median recall of 0.8 and median rank sums test Z score of 6.06 (p<1e-9). The most informative features are upstream and intronic motif match frequency, max log-odds scores, and conservation across eight nematode genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C80-83 describe the supervised learning approach with specific performance metrics from cross-validation (C9, C80), feature selection results (C81), and validation against genetic data (C82, C83). The quantitative metrics and validation approach are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "90% of differentially expressed BDU genes have UNC-86 motif matches showing significant enrichment (hypergeometric test p=1.54e-12), and UNC-86 is required for expression of 12 markers in the BDU neuron class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 provide computational prediction (C10) with statistical significance and prior genetic validation (C11) from cited literature. The convergence of computational and genetic evidence supports UNC-86 as a regulator of BDU identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ODR-7 is a terminal selector for AWA neurons, regulating expression of ins-1, pgp-2, and odr-10, and autoregulating its own expression. TargetOrtho2 identifies phylogenetically conserved ODR-7 binding sites with significant enrichment (p=1.04e-7) and ranking (p=2.04e-8) among AWA genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C49-52 combine new experimental validation (C12) with prior genetic data (C49, C50) and computational predictions (C51, C52). The experimental results directly validate the computational predictions, providing strong support for ODR-7 as a terminal selector.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C53"
+    ],
+    "result": "CFI-1 is required for expression of unc-17, cha-1, and cho-1 in PVC neurons, and previously was shown to regulate nmr-1 and glr-1 ionotropic glutamate receptors in PVC interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C53 provide new experimental data (C13) extending prior findings (C53). The experimental validation of predicted CFI-1 targets supports its role as a terminal selector in PVC neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "UNC-86 controls multiple identity features of URX neurons including cholinergic identity, oxygen sensing (gcy-32), and neuropeptide expression (flp-8, flp-19, gcy-33). Two UNC-86 binding motifs show differential coverage: the POU4F1-derived motif appears in over 80% of URX genes while the C. elegans-derived motif appears in 44%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C54-59 combine prior genetic data (C54-56) with new experimental validation (C14) and motif analysis (C57-59). The convergence of genetic, experimental, and computational evidence supports UNC-86 as a terminal selector for URX.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C60",
+      "C61",
+      "C117"
+    ],
+    "result": "Binding site mutations in the cho-1 reporter validate computational predictions: UNC-86 site mutation causes complete loss in URX, LIM-4 site deletion causes loss in SMB, and UNC-42 site deletion causes loss in SMD. These results demonstrate that in vitro derived DNA binding motifs predict biologically relevant TF binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-17, C60-61, C117 provide direct experimental validation of predicted binding sites through site-directed mutagenesis. The neuron-specific loss of expression upon binding site disruption provides strong evidence for direct regulation and validates the computational approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C29"
+    ],
+    "result": "117 of 118 neuron classes have putative terminal selector TFs based on coordinated regulatory motif signatures. Each neuron class shows enrichment for multiple distinct DNA binding motifs (up to 28), with 124 TFs contributing to coordinated regulatory signatures. Analysis of the Brain Atlas dataset predicts terminal selectors for all 118 neuron classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-20, C29 present the major genome-wide findings with specific quantitative results. The comprehensive coverage across nearly all neuron classes with consistent methodology supports the broad applicability of the terminal selector model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C108"
+    ],
+    "result": "Between 8% and 36% of terminal selector-dependent reporter genes have either no predicted binding site or a poorly ranked binding site. For example, of 23 ASE-expressed genes that lose expression in che-1 mutants, four have no predicted CHE-1 binding site and four are poorly ranked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, C108 acknowledge limitations of the binding site prediction approach with specific quantitative examples. This represents an honest assessment of the method's limitations and is consistent with indirect regulation or sub-threshold binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C46",
+      "C111",
+      "C112"
+    ],
+    "result": "98% of candidate terminal selector pairs show common target genes, suggesting combinatorial activity is the predominant mode of effector gene regulation. For 16 of 17 cases with prior genetic evidence, significant co-enrichment of predicted target genes was observed. 113 of 118 neuron classes have predicted terminal selector co-regulators with common targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-25, C27, C46, C111-112 present comprehensive cofactor analysis with validation against known genetic data. The high percentage of agreement (16/17 cases) between computational predictions and genetic data, combined with genome-wide analysis, strongly supports combinatorial regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C47",
+      "C48"
+    ],
+    "result": "CEH-8 and CEH-32 are required to specify RIA interneurons. CEH-14 and UNC-86 co-regulate PHC neurons, and CEH-14 and CFI-1 co-regulate PVC neurons, as validated by genetic analysis showing loss of markers in mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-48 provide specific examples of co-regulation validated by cited genetic studies. The computational predictions of co-enrichment are confirmed by independent genetic loss-of-function analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C101"
+    ],
+    "result": "Single cell and Brain Atlas datasets show high correlation despite independent origins (marker overlap 0-11%, average 4.5%). The proportion of genes with motifs per neuron class is highly correlated (Spearman=0.80, p=0), motif signature models are significantly correlated (Spearman=0.30, p=2.66e-38), and there is 83% agreement of specific terminal selectors (92% including panneuronal regulators).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-33, C101 demonstrate reproducibility across independent datasets with specific statistical measures. The high correlation despite minimal overlap between datasets provides strong validation of the computational approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The Brain Atlas dataset contains data for all 118 neuron classes with an average of 50 reporter genes per class (range 14-233). Taylor et al. identified 118 neuron class clusters from scRNA-seq of L4 animals, though VD and DD classes did not separate into distinct clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C86-88 describe the two primary datasets used in the study with specific quantitative details. The dataset descriptions are clear and acknowledge limitations (VD/DD clustering).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "136 neuronally expressed TFs with sufficiently unique DNA binding motifs were investigated, starting from 389 neuronal TFs. 214 TFs have available motifs from CISBP database, with an SR score cutoff of 0.807 used to exclude highly similar motifs. Four motifs were defined through combined in vitro and in vivo studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-93 clearly document the TF selection process with specific numbers and criteria. The methodological choices are justified and transparent about exclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Single cell RNA-seq data were normalized using SCTransform in Seurat 3.0, followed by differential expression analysis using findMarkers with Wilcoxon test (log-fold change threshold=0, adjusted p<0.05). Motif analysis used hypergeometric tests for enrichment and Wilcoxon rank sums tests, with Benjamini/Hochberg correction (alpha=0.05). Cofactor analysis was performed pairwise on all TFs expressed in each neuron class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-100 provide detailed methodology for data processing and statistical analysis. The methods are standard and appropriate, with clear specification of parameters and multiple testing correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Homeodomain-type TFs are prominent regulators of neuronal identity throughout the entire nervous system. Each neuron class expresses a unique combination of homeodomain TFs, and these homeodomain codes leave phylogenetically conserved cis-regulatory footprints in neuron type-specific gene batteries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-66 integrate current findings with prior work (Reilly et al., 2020). The binding site analysis provides molecular evidence supporting the homeodomain code hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C107",
+      "C110",
+      "C114"
+    ],
+    "result": "Coordinated control of terminal gene batteries by terminal selector TFs is the major mode by which neuronal identity specification is achieved in C. elegans. The analysis provides a blueprint for how individual components of an entire nervous system are genetically specified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C107, C110, C114 present the major conclusions of the study. These are well-supported by the comprehensive genome-wide analysis showing coordinated regulatory signatures in 117/118 neuron classes and validation through multiple independent approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The coordinated regulatory principle may be used broadly in other organisms. Examples of putative vertebrate terminal selectors include Pet1 in serotonergic neurons, Dlx factors in GABAergic interneurons, Lhx2 in olfactory neurons, Brn3a in habenula, Pitx3 in dopaminergic neurons, and Crx in photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-42 extrapolate from C. elegans findings to vertebrates. While C36 is speculative, C37-42 cite specific examples from literature. However, the evidence for broad conservation is limited and the vertebrate examples face challenges (C73-74) that make direct comparison difficult.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The analysis has limitations: not all C. elegans TFs have well-defined binding sites, 94 motifs (41%) were excluded due to similarity, and in vitro binding sites may differ in vivo. Despite these limitations, the analysis provides strong support for the terminal selector model and a rich resource for future experimentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-72 provide an honest assessment of study limitations while maintaining that the conclusions are well-supported. The limitations are clearly stated and do not undermine the major findings given the extensive validation performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C43",
+      "C44"
+    ],
+    "result": "The C. elegans nervous system is composed of 302 neurons falling into 118 anatomically defined and molecularly distinct neuron classes. Neuron type-specific gene batteries are defined by unique combinations of not uniquely expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-2, C43-44 provide established background information about C. elegans neurobiology, properly cited from literature. These foundational facts are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C45"
+    ],
+    "result": "Terminal selectors are continuously expressed throughout the life of neurons and are required for both initiation and maintenance of neuron type-specific gene batteries, as demonstrated by conditional gene removal experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-5, C45 describe key properties of terminal selectors based on prior literature. These are well-established concepts supported by multiple cited studies including conditional knockout experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C113"
+    ],
+    "result": "UNC-42 controls the identity of many neurons in which it is expressed, with gene batteries showing significant DNA binding motif enrichment and TargetOrtho2 rank order. The cooperative function of unc-42 and unc-3 in specifying command interneuron identity is validated in an accompanying manuscript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-63, C113 reference validation from an accompanying manuscript (Berghoff et al., 2021). While this represents external validation, it is from a coordinated publication and should be considered supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Many vertebrate TFs are utilized at multiple developmental steps including early progenitor specification, making simple mutant analysis insufficient to reveal terminal differentiation functions. Vertebrate HOX genes have early patterning functions but their roles during terminal differentiation remain unstudied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-76 discuss challenges in studying terminal selectors in vertebrates. These are reasonable statements about experimental limitations and knowledge gaps in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "HLH-4 regulates ADL identity, and HLH-4 target genes in ADL show significant enrichment and ranking by TargetOrtho2, further supporting the use of the GPC classifier trained on three terminal selectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-85 provide additional validation of the computational approach using an independent terminal selector not included in the training set. This strengthens confidence in the generalizability of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "ztf-11 is a TF implicated in neuronal transdifferentiation and is predicted to have a coordinated regulatory role in 73 neuron classes, driving the increase in agreement between datasets when panneuronal regulators are included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-103 identify ztf-11 as a broadly expressed regulator. The prediction is based on computational analysis and cited prior work on transdifferentiation, though the broad role across 73 neuron classes requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C109",
+      "C115",
+      "C116"
+    ],
+    "result": "Some gene battery members may be regulated by non-conventional binding or indirect regulation via intermediary factors. The phylogenetic footprinting approach is based on the rationale that phylogenetically conserved binding sites are more likely to be functionally relevant, which was validated in prior work showing AIY motif conservation predicts AIY expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C115-116 explain the rationale for the phylogenetic approach and acknowledge alternative regulatory mechanisms. The approach is validated by cited prior work (C116).",
+    "result_type": "MINOR"
+  }
+]

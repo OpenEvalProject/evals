@@ -1,0 +1,2149 @@
+{
+  "submission": {
+    "id": "a0b16a4e-89a4-4d8e-b91a-c008ba9431a3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:16:10.748044Z",
+    "updated_at": "2025-12-03T20:16:10.748044Z"
+  },
+  "content": [
+    {
+      "id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "submission_id": "a0b16a4e-89a4-4d8e-b91a-c008ba9431a3",
+      "content_type": "manuscript",
+      "content_text": "# Rapid geographical source attribution of Salmonella enterica serovar Enteritidis genomes using hierarchical machine learning\n\n## Authors\n\n- Sion C Bayliss<sup>1</sup> ([ORCID: 0000-0002-5997-2002](https://orcid.org/0000-0002-5997-2002)) \u2020\n- Rebecca K Locke<sup>2</sup>\n- Claire Jenkins<sup>4</sup>\n- Marie Anne Chattaway<sup>4</sup>\n- Timothy J Dallman<sup>5</sup>\n- Lauren A Cowley<sup>2</sup> ([ORCID: 0000-0003-0835-7971](https://orcid.org/0000-0003-0835-7971))\n\n### Affiliations\n\n1. Bristol Veterinary School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))\n2. Milner Centre for Evolution, Life Sciences Department, University of Bath Bath United Kingdom ([ROR:002h8g185](https://ror.org/002h8g185))\n3. Genomic Laboratory Hub (GLH), Addenbrooke\u2019s Hospital, Cambridge University Hospitals NHS Foundation Trust Cambridge United Kingdom ([ROR:04v54gj93](https://ror.org/04v54gj93))\n4. Gastrointestinal Reference Services, UK Health Security Agency London United Kingdom ([ROR:018h10037](https://ror.org/018h10037))\n5. Institute for Risk Assessment Sciences, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSalmonella enterica serovar Enteritidis is one of the most frequent causes of Salmonellosis globally and is commonly transmitted from animals to humans by the consumption of contaminated foodstuffs. In the UK and many other countries in the Global North, a significant proportion of cases are caused by the consumption of imported food products or contracted during foreign travel, therefore, making the rapid identification of the geographical source of new infections a requirement for robust public health outbreak investigations. Herein, we detail the development and application of a hierarchical machine learning model to rapidly identify and trace the geographical source of S. Enteritidis infections from whole genome sequencing data. 2313 S. Enteritidis genomes, collected by the UKHSA between 2014\u20132019, were used to train a \u2018local classifier per node\u2019 hierarchical classifier to attribute isolates to four continents, 11 sub-regions, and 38 countries (53 classes). The highest classification accuracy was achieved at the continental level followed by the sub-regional and country levels (macro F1: 0.954, 0.718, 0.661, respectively). A number of countries commonly visited by UK travelers were predicted with high accuracy (hF1: >0.9). Longitudinal analysis and validation with publicly accessible international samples indicated that predictions were robust to prospective external datasets. The hierarchical machine learning framework provided granular geographical source prediction directly from sequencing reads in <4 min per sample, facilitating rapid outbreak resolution and real-time genomic epidemiology. The results suggest additional application to a broader range of pathogens and other geographically structured problems, such as antimicrobial resistance prediction, is warranted.\n\n## Introduction\n\nDiarrhoeal diseases are the most common illnesses caused by contaminated food, with 550 million people falling ill each year, including 220 million children under the age of 5 years (WHO, 2022). High disease-burden foodborne pathogens represent a major public health concern, necessitating real-time epidemiological monitoring and follow-up. Outbreak investigations are often confounded by the complexity of the international food-trade networks which distribute zoonotic food-borne pathogens across the globe (Gould et al., 2017). Understanding the contributing factors, whether they be environmental, geographical, or zoonotic is critical for designing public health intervention strategies to combat and prevent food-borne pathogen outbreaks (Pires et al., 2009).\n\nIn many developed nations, Salmonella enterica serovar Enteritidis is the most common cause of the diarrhoeal disease (UKHSA, 2021) and represents a significant economic and healthcare burden (Daniel et al., 2020). In the UK, nationwide vaccination and monitoring programs have been responsible for a precipitous drop in detectable Salmonella from local animal products and a concurrent drop in human infection rates (Surveillance, Zoonoses, Epidemiology and Risk Food and Farming Group, 2007; Tam et al., 2012). However, recent studies have identified imported foodstuffs (Cowley et al., 2016; McLauchlin et al., 2019; Somorin et al., 2021) and foreign travel (PHE, 2017) as more pertinent Salmonella infection risks.\n\nWhole genome sequencing (WGS) has become a powerful tool for untangling complex networks of pathogen dissemination by providing high-resolution sub-typing for transmission tracing as well as detailed information on antimicrobial and virulence status (Allard et al., 2018). Since 2014, the UK Health Security Agency (UKHSA) has routinely applied WGS to all clinically identified cases of Salmonella in the UK alongside collecting detailed metadata, such as patients recent foreign travel (Ashton et al., 2016). This program has been instrumental in identifying various international outbreaks, such as the largest known salmonellosis outbreak in Europe where, between 2015 and 2018 S. Enteritidis-contaminated eggs resulted in 1209 reported cases across 16 countries (Dallman et al., 2016; Pijnacker et al., 2019). The approach taken by the UKHSA for inferring geographical source from genomics data involves phylogenetic population structure analysis, the examination of the genetic relatedness of isolates from various relevant source populations, alongside in-depth analysis of isolates from recent-reported travel cases and reconstruction of domestic or international food networks (Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019). Due to the resources involved, this type of investigation is often only undertaken in exceptional cases representing a threat to public health. A range of other methodologies exist for application to source attribution of genomics data (Mughini-Gras et al., 2018) including population genetics approaches such as STRUCTURE (Pritchard et al., 2000) and the asymmetric island model (Wilson et al., 2008); Bayesian methods, such as sourceR (Miller et al., 2017); and hybrid methodologies which can variably include additional information, such as exposure risk (Ravel et al., 2017). These methodologies require significant bioinformatic expertise and research time, are computationally expensive, and scale poorly with the increasingly vast collections of bacterial genomes available for analysis.\n\nIn order to promote rapid outbreak responses, novel methods are required to translate the increasing volumes of pathogen genomes generated by surveillance programs into immediate and actionable information for epidemiologists. S. Enteritidis represents a desirable initial target for such tools due to its large public health burden. WGS provides high-resolution information about pathogen strain relatedness and, by association, contains contextualized information on geographical or host origin. In the case of S. Enteritidis, which has a population structure observably stratified by geographical source (Feasey et al., 2016; Li et al., 2021), there is potential for genomics to provide key information for successful epidemiological follow-up, namely the likely country of origin of an infectious strain, and an opportunity to rapidly enact intervention strategies. Machine learning (ML) approaches have recently shown utility in predicting the original host of infectious S. enterica and Escherichia coli (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019), S. typhimurium (Munck et al., 2020), Campylobacter jejuni (Arning et al., 2021), and Listeria monocytogenes (Tanui et al., 2022), but has yet to be applied to the problem of geographical source attribution. Herein we present the first implementation of a hierarchical machine learning (hML) classifier for geographical source attribution of S. Enteritidis genomes. We applied this model to the UKHSA\u2019s large and uniquely detailed genomic database of clinical S. Enteritidis isolates collected between January 2014-April 2019. Using these data, we have generated a fully automated analysis pipeline with which to monitor imported cases of S. Enteritidis. The hML model was designed to provide a granular and multi-level prediction of the geographical origin of an S. Enteritidis genome in under 4 minutes directly from raw sequencing reads.\n\n## Results\n\n### The UKHSA genomic surveillance program consistently samples S. Enteritidis associated with international travel through time\n\nBroad and unbiased surveillance by the UKHSA of all clinically reported S. Enteritidis cases in the UK coupled with returning traveler data has provided a large genomic dataset representative of S. Enteritidis infections in the UK between 2014\u20132019 (Figure 1). This consisted of 10,223 isolates, of which 3,434 had matched recently reported travel data collected as a part of the UKHSA\u2019s \u2018enhanced surveillance\u2019 program.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig1-v2.jpg)\n\n**Figure 1.:** (A) Geographical distribution of 2,313 S. Enteritidis isolates by reported foreign travel. Variably sized points represent the number of samples per country. The map is colored by region (Africa: yellow, Americas: red, Asia: purple, Europe: blue). (B) Maximum likelihood phylogenetic tree of 2,313 S. Enteritidis isolates with bar colored by region of origin. (C) Kernel density plot indicating sampling density per region through time. No correction was made for the seasonal variation observed in international travel. (D) Comparison of the consistency of the sampling effort of the UKHSA to all publicly available S. Enteritidis isolates on NCBI for the same period. Isolates were resampled to control for variable sample number per year and compared to a uniform distribution using the Kolmogorov-Smirnov D statistic (NCBI = red, UKHSA = blue). Higher values indicate greater deviation from a uniform distribution. (E) Relative risk per country of acquiring S. Enteritidis infection when traveling. A risk score was generated by dividing the proportion of UKHSA clinical isolates per country by the proportion of all UK travelers traveling to that country as recorded by the Office of National Statistics (ONS). Only countries present in both datasets were used to calculate proportions.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig1-figsupp1-v2.jpg)\n\nRecent travel was reported to 122 countries across five continents. A source of potential bias, common to bacterial genomics analysis, is the over-representation of clonally related isolates due to their increased prevalence during outbreaks (Ebel et al., 2016; Feil and Spratt, 2003). A clone was defined as a single-linkage cluster of isolates with five or less single nucleotide polymorphisms (SNPs), a definition routinely-used by the UKHSA in genomic disease surveillance as part of the \u2018SNP Address\u2019 framework for describing clones (Chattaway et al., 2019; Dallman et al., 2018). In order to reduce the influence of highly related clonal outbreaks on the resulting ML model, a single, random representative isolate was selected for each clone per country. After quality-filtering, downsampling, and the removal of countries with a low-incidence of reported infections of UK tourists (<10 total isolates), 2,313 genomes from 38 countries from four continents were included in the final dataset for ML (Figure 1A).\n\nGrouping these countries by geographic region and subregion using the UN M49 Standard for Regional Codes provided a framework for a granular geographical analysis and an established hierarchy of countries/subregions/regions (Statistics Division of the United Nations Secretariat, 2020). Phylogenetic analysis indicated that the dataset displayed a strong phylogeographical signal, with large clusters of isolates from geographically related countries clustering together (Figure 1B). An interactive maximum likelihood phylogenetic tree is available in Microreact (Argim\u00f3n et al., 2016). S. Enteritidis infection rates in Europe and Asia were highly seasonal, with significantly increased rates of infection during the summer months (Figure 1C). This was less pronounced in travel to/from the Americas and Africa.\n\nAn analysis of the consistency of sampling effort over time identified that some notable countries in the dataset were composed of samples collected predominantly during a single year, such as Sri Lanka, Tunisia, and Dominica, and others were missing data from one or more years (Figure 1\u2014figure supplement 1). However, a comparison of the UKHSA collection to a dataset of location/date-matched genomes from the NCBI Pathogen Detection Database identified that the UKHSA dataset represented a significantly more consistent sampling effort which was less influenced by sporadic outbreaks (Figure 1D).\n\nThe countries with the highest number of travel-associated S. Enteritidis cases were Turkey (804), Spain (357), Egypt (343), Cuba (190), and the Dominican Republic (117) (Figure 1A). Controlling for the volume of UK travelers as recorded by the Office of National Statistics over a matched time period allowed for the identification of countries with disproportionate low- or high-risk of S. Enteritidis infection after traveling (Figure 1E; Office of National Statistics, 2020). Travelers to Turkey and Egypt were at a disproportionately higher risk of S. Enteritidis infection during this period. Conversely, travelers to France and Spain, two of the more popular travel destinations for UK travelers, were very low-risk. This highlights that the dataset was a product of the volume of UK-travel combined with a variable risk of infection per country. Consequently, there was a large degree of class imbalance (i.e. different number of isolates per country) in the dataset used for ML, in addition to low/absent sampling coverage of some parts of the globe. However, when considering larger geographical groupings (i.e. subregion/region) these imbalances were less pronounced or absent.\n\n### A novel hierarchical model provides real-time geographical source attribution prediction directly from sequencing reads in under 4 min\n\nTaking advantage of the hierarchical structure of geographical data, we designed a multi-level hML classifier following a \u2018Local Classifier per Node\u2019 framework (Silla and Freitas, 2011). This was made up of 16 individual multi-class classifiers, one per node (one root, four regional, 11 sub-regional). Multi-class classifiers allow for the classification of samples into three or more classes (i.e. Region = Europe, Africa, Americas, Asia), rather than making a series of binary classifiers per individual class (e.g. Africa/Not-Africa, Europe/Not-Europe, etc.). In total, 53 individual classes (four regions, 11 sub-regions, and 38 countries) were included in the model. Sample classification was performed using a top-down approach, where samples are first classified at the root node into \u2018regions\u2019 (e.g. Africa) then, if the predicted probability is greater than a minimum threshold value (0.5), samples are passed to the appropriate regional node to be classified into a nested subset of \u2018subregions\u2019 (e.g. Northern Africa) and finally passed to a subregional node where they are classified into a nested subset of \u2018countries\u2019 (e.g. Egypt) (Figure 2A). Using this scheme no samples could be attributed to a class that was not a predicted class of a previous classifier (i.e. Africa\u2192Southern Asia\u2192France is not possible, but Africa\u2192Northern Africa\u2192Egypt is). Sample classification was exclusive, disallowing multiple classifications on the same hierarchical level for a single sample.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig2-v2.jpg)\n\n**Figure 2.:** (A) Example schematic of a geographical hierarchy based upon the UN M49 Standard for regional codes. (B) Table of summary statistics for the ten top-performing co-optimized model and resampling methods from a cohort of 36 combinations, sorted by hF1 (high-low). Training time is reported in the final column in seconds. A black box indicates the top four models used for feature selection. (C) Grouped bar chart comparing macro F1 per hierarchical level for the ten top-performing model/resampled combinations. (D) Table of summary statistics for random forest feature selection applied to the four top-performing co-optimized model and resampling methods. Black boxes indicate the optimal number of features per combination. (E) Grouped bar chart comparing macro F1 per hierarchical level for the four top-performing co-optimied model and resampling methods after feature selection optimization. (F) Summary statistics for the final optimized Random Forest - Random Oversampler model (25,000 features selected). ML Model abbreviations: Random Forest (RF), XGBoost (XGB), Extra Trees (ET), K-Nearest Neighbours (KNN). Resampler abbreviations: No Resampling (NA), Random Undersampler (RUS), Random Oversampler (ROS), Balancing Mean (BM), Hierarchical Mean (HM).\n\nFor rapid and minimal sample processing and to provide end-to-end sample classification directly from the sequencer, the model was trained on filtered unitig patterns (presence-absence) generated from quality-controlled genomic short-read data files. Each local classifier per node was trained using only data pertinent to that node (e.g. a local subregion classifier was trained only on the data from its constituent countries). This end-to-end process, from FASTQ to sample prediction, is available on GitHub (https://github.com/SionBayliss/HierarchicalML, copy archived at Bayliss and Cowley, 2023).\n\nDue to the imbalanced nature of the real-world surveillance dataset, it was necessary to resample the data to generate less biased datasets for training. To this end, a range of classifier and resampler algorithms were compared before selecting the top-performing models (Figure 2B\u2013C). Models were assessed using a range of accuracy metrics, although the F1-score (or its hierarchical alternative, hF1) was preferentially used. The F1-score or F-score is the harmonic mean between the precision (the number of true positives divided by the number of true positives plus the number of false positives) and recalls (the number of true positives divided by the number of true positives plus the number of false negatives) and allows for a partial representation of both values in a single metric. The top four models subsequently underwent feature selection (Figure 2D\u2013E) followed by parameter optimization using the TPOT genetic algorithm (Figure 2F). The optimized hML model produced a more accurate classification of the test dataset than a \u2018flat\u2019 classifier applied to a similarly pre-processed dataset (macro F1: 0.61) (Supplementary file 1A). Based on these comparisons, the most desirable assessment metrics overall (i.e. high macro F1 at the country level, Figure 2E) were from feature selection by a Random Forest (RF) classifier (25,000 unitig patterns) before random oversampling to correct for class imbalance and final classification using an optimized RF model. Assuming <100 x read coverage, the entire pipeline takes ~3.5 min to classify novel samples using the pre-optimized model.\n\n### Granular predictions are provided at a regional, subregional, and individual country level\n\nClassification metrics were highest at the regional level (macro F1: 0.954), but less discriminatory at the sub-regional (macro F1: 0.718) and country levels (macro F1: 0.661) (Figure 3A). There was a moderate degree of variation in predictive accuracy between different geographical locations. Africa was the most consistent accurately classified region, with all country and subregional classes presenting a hF1 of >0.7. In The Americas, Latin American and Caribbean countries showed very high classification metrics (hF1: >0.8), whereas samples for the United States were consistently misclassified. All Asian classes were classified at moderate to high accuracy (hF1: 0.58\u20130.95). Europe was generally well classified (hF1: >0.66), but contained two classes, France and Italy, which were classified poorly (hF1: ~0.3). Further scrutiny of poorly performing classes showed a correlation between a lack of training data and lower prediction accuracy (Figure 3\u2014figure supplement 1). This did not fully explain the observed results as some countries with a similarly low number of samples to poorly predicted countries (e.g. Czech Republic, Pakistan) showed moderate classification accuracy. An analysis of genetic diversity within classes indicated that at least two of the most poorly classified countries, France and the United States, displayed both low numbers of samples and high genetic diversity (Figure 3B, Figure 3\u2014figure supplement 2). Samples from recent travel to France were particularly diverse, arising from multiple highly divergent clades of S. enteritidis. A range of countries that were commonly visited by UK travelers, such as Cuba, Egypt, Indonesia, Jamaica, Malta, Spain, Thailand, Tunisia, and Turkey, were well predicted (hF1: >0.9).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig3-v2.jpg)\n\n**Figure 3.:** (A) Diagrammatic representation of classification metrics of the hML classifier applied to the test dataset. Links between classes/nodes in the hierarchy are indicated by connecting lines. Boxes represent individual classes in the Machine learning (ML) model and are colored by their hierarchical F1 (hF1) scores. The top panel of each class box displays the class label, the bottom left panel indicates the total number of samples for that class before the train/test split (75%/25%) and the bottom right panel shows the class hF1 score calculated from the test dataset. Classes within individual \u2018regions\u2019 (continents) were contained in a colored background panel. (B) Bar plot of genomic diversity per country. Genomic diversity was estimated as the number of 25 single nucleotide polymorphism (SNP) single linkage clusters divided by the total number of samples per class. Panels (A) and bars (B) were colored according to region (Africa: yellow, Americas: red, Asia: purple, Europe: blue). (C) Maximum-likelihood phylogenetic tree of the UKHSA S. Enteritidis isolates from the training and test datasets. The real label and predicted label (each assigned a unique color) of each isolate alongside the p-value generated by the model is shown for each hierarchical class level - region, subregion and country. Colored tree tips represent the region class of each isolate. An interactive version of the tree and associated metadata are available in Microreact.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The three hierarchical levels (country/subregion/region) are represented by a separate plot panel. Each point is the hF1 score per class at that hierarchical level.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Genomic diversity was calculated by dividing the number of single linkage clusters at SNP5/SNP50 (single nucleotide polymorphism (SNP) Address) by the total number of samples per class. Points were colored according to the region (Africa: red, Americas: green, Asia: blue, Europe: purple).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Links between classes/nodes in the hierarchy are indicated by connecting lines. Boxes represent individual classes in the hML model and are colored by the % of isolates for that class that were correctly assigned to that class. The top panel of each class box displays the class label, the bottom left panel indicates the total number of samples for that class before the train/test split (75%/25%) and the bottom right panel shows the class % correctly assigned as calculated from the test dataset. Classes within individual \u2018regions\u2019 (continents) were contained in a colored background panel.\n\nThis model allows for a separate measure of predictive confidence (i.e. the probability value reported by the appropriate classifier) to be reported to the end-user for each hierarchical level. An example of how this uncertainty maybe visualized for the end-user is available in Figure 3C and mirrored in the interactive Microreact project. These figures include three columns containing the predicted class of each sample per hierarchical level and three matched columns with the probability of the prediction per class as reported by the appropriate classifier. This also allows for a user to visually inspect the variable level of predictive confidence for each bacterial lineage within its particular phylogenetic context. For ease of interpretation, an alternative to Figure 3 has been included in the supplementary information (Figure 3\u2014figure supplement 3) which displays the % of isolates of each class correctly assigned to that class instead of HF1.\n\nIn summary, these results suggest that the optimized model can attribute the geographical source of S. Enteritidis isolates with high confidence at a regional level whilst also providing more nuanced and granular predictions for a range of countries regularly visited by UK travelers with a very high degree of accuracy. The resulting measures of confidence in individual sample predictions can be easily communicated to end-user an a simple and easily interpretable manner.\n\n### Models demonstrate durability to future predictions with 2 years previous training data providing the sufficient signal for accurate subsequent year predictions\n\nBacterial population lineage composition is not expected to remain static through time, therefore, predictive models based on genomic data require periodic retraining. To understand the amount of data required for accurate prospective prediction, we compared the outcomes of four yearly window sizes (1, 2, 3, and 4 years) for the prediction of subsequent years (Figure 4A). Predictive accuracy and consistency of prediction of the subsequent year improved on increasing window size, with hF1 beginning to asymptote after 2 years. The largest improvement was observed between 1\u20132 years\u2019 worth of data. A minor decrease in predictive accuracy (micro F1: ~0.05 per year) was observed for each additional year into the future (Figure 4B). A regional breakdown of the hF1 score indicated that a one-year window varied in predictive accuracy per region per year (Figure 4C), but that a two-year window provided more consistent and accurate predictions (Figure 4D). These results indicate that should this model be instituted for ML-enhanced genomic surveillance, it would require retraining on the two previous years samples each year to provide an optimal trade-off between predictive accuracy and training time.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig4-v2.jpg)\n\n**Figure 4.:** (A) The hF1 scores of hML Random Forest (RF) models trained on a subset of samples from a 1\u20134 year moving window predicting the following year. (B) The micro F1 scores of hML RF models trained on a subset of samples from a 1\u20133 year moving window predicting 1\u20135 years into the future. (C) Regional hF1 scores of hML RF models trained on one-year sampling windows predicting the following year. (D) Regional hF1 scores of hierarchical models trained on two-year sample windows predicting the following year.\n\n### The optimized hML model provides accurate predictions in 4/5 validation datasets\n\nThe hML model was further validated by application to a series of external, independent datasets (Supplementary file 1D). The initial datasets were from two UK-based, well-characterized, and epidemiologically-traced imported food outbreaks. Sample redundancy between validation and training datasets was removed before comparison. First, a 2015 outbreak epidemiologically-traced to eggs imported from Spain (Inns et al., 2017) was 100% correctly attributed to a Spanish origin (Figure 5A). Second, a multi-country outbreak originating from Polish egg farms (Pijnacker et al., 2019), comprising of two distinct lineages each differing by five or fewer SNPs, was correctly attributed to a European origin (131/131 cases), but subsequently misattributed to a Southern Europe (131/131 cases), Spanish origin (103/130) (Figure 5B). This complex outbreak was a particularly difficult test case for the model, as it had been continuously causing cases in 16 European countries for several years (2015\u20132018). The outbreak cases were also phylogenetically distinct from those associated with travel to Poland in the UKHSA dataset (Figure 5B). It was possible to identify samples attributed to the outbreak in our training data, this included six samples that were present in the training dataset. These six samples were labeled as having been acquired from Portugal (3), Spain (1), Greece (1), and Turkey (1) based on recently reported travel information, despite having got their infection from Polish eggs. 5/6 of these were of a Southern European origin, and likely contributed to the misattribution of the samples from the Polish validation datasets to a Southern European origin.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig5-v2.jpg)\n\n**Figure 5.:** (A) 128 samples from an international outbreak that originated in Spain in 2015 (Inns et al., 2017). (B) 131 samples from a large-scale international outbreak that originated from Polish eggs between 2015\u20132018 (Pijnacker et al., 2019). (C) 35 samples from Poland were uploaded to the NCBI database between 2014\u20132019. (D) 25 samples from South Africa were uploaded to the NCBI database between 2014\u20132019 (Smith et al., 2020). (E) 48 samples from Singapore were uploaded to the NCBI database between 2014\u20132019 (Octavia et al., 2018). The number of samples assigned per class is indicated for classes relevant to the query dataset. Class boxes are colored by the proportion of correctly/incorrectly classified samples (correct: green, incorrect: red). (F) Maximum-likelihood phylogenetic tree of S. Enteritidis isolates from the training, test, and validation datasets. Validation dataset isolates are displayed as a colored bar alongside the p-value of the model predictions for associated region, subregion, and country class. Colored tree tips represent the training isolates from the four countries tested across the validation datasets.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84167/elife-84167-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Validation dataset isolates are displayed as a colored bar alongside the p-value of the model predictions for the associated region, subregion, and country class. Colored tree tips represent the training isolates from the four countries tested across the validation datasets. Supplementary file 1A. Summary statistics for a \u2018flat\u2019 Random Forest multi-class classifier. The classier was trained and tested using a 75\u201325% split using the same random seed as was used for the hierarchical machine learning (hML) classifier. The dataset was randomly oversampled to address the class imbalance. Country classes from the hML model were used as labels (i.e. region/subregion were excluded).\n\nThe model was further tested on datasets generated by other non-UK institutions. Three countries from three different regions were identified from the NCBI database as having acceptable sample numbers (>20), falling within the time-frame of the current model (2014\u20132019), and having been sampled from a country included in the current model hierarchy (South Africa, Singapore, and Poland). The Polish dataset, sampled from poultry, was attributed to a European origin with high accuracy (34/35, 97.1%), 19 of these were subsequently attributed to an East European origin (19/35, 54.3%) or which 18 were attributed to Poland (18/35, 51.4%) (Figure 5C). The remaining 15 samples were misclassified as having a Spanish origin (15/35, 42.9%). The South African dataset of clinical cases (Smith et al., 2020), was correctly attributed to a South African origin with 100% accuracy (25/25) (Figure 5D). The Singaporean dataset of human outbreaks (Octavia et al., 2018) was correctly attributed to South-East Asia (48/48) with 91.7% of samples being correctly attributed to a Singaporean origin (44/48) and 4 samples being attributed to Indonesia (2), Malaysia (1), and Thailand (1) (Figure 5E). An additional visualization of the validation datasets alongside the training and test datasets has been presented in Figure 5\u2014figure supplement 1.\n\nApplication of the hML model to independent validation datasets indicated that the model provided highly accurate and granular predictions for single-country outbreaks which occur over short time-frames. A large-scale, long-term, multi-country outbreak was poorly predicted by the model, likely due to a small number of outbreak isolates present in the training dataset being incorrectly labeled as having a Southern European origin. However, the application of the hML model to a range of other independent validation datasets provided highly accurate and granular predictions.\n\n## Discussion\n\nOutbreaks caused by foodborne pathogens, where rapid response times are essential for effective interventions, represent an epidemiological challenge for public health bodies as they arise from complex, interconnected global supply chains which include many potential sources of infection. Our optimized hML model generates accurate predictions of the geographical origin of S. Enteritidis genomes directly from raw read data in under 4 min per sample. The output of this pipeline is a predicted probability per hierarchical level (i.e. region, sub-region, and country levels) allowing for granular source attribution alongside an assessment of confidence in the prediction. The observed classification accuracy of the model was high, varying across both hierarchical levels and individual classes (Figures 2\u20133). Accuracy was highest at the regional level (macro F1: 0.954), which contained the largest number of samples for training and the lowest level of class imbalance, before dropping at the subregional (macro F1: 0.718) and country levels (macro F1: 0.661), both of which contained generally smaller and more variable numbers of samples, increasing class imbalance (Figure 3). It should be noted that these macro values, being an average of the F1 score across all classes, were strongly influenced by outliers representing a handful of classes with poor classification accuracy (e.g. United States, France, US, Italy). Classification accuracy was negatively associated with both low sample numbers and increasing within-class genetic diversity (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2), although this did not fully explain the variation in predictive accuracy observed in the model, suggesting other complex factors may be involved. Although variation in predictive accuracy was observed, a number of commonly visited countries were predicted with extremely high predictive accuracy (e.g. Cuba, Egypt, Indonesia, Jamaica, Malta, Spain, Thailand, Tunisia, and Turkey) which would be of high-utility for the UK epidemiologists tracing foodborne outbreaks.\n\nSelection and optimization of the ML classifier and resampler methods, as well as pre-classification feature selection, were performed in a stepwise manner to assess the impact of each step on the resulting model. Ensemble classifiers outperformed other classifiers (Figure 2, Supplementary file 1B). Interestingly, considering the large variation observed in some nodes of the hierarchy, the class imbalance was not found to have a large impact on the resulting model. Two of the top four best-performing classifier/resampler combinations included no resampling. These were both ensemble classifiers, suggesting that these were better able to account for the high dimensionality, high collinearity, and variable levels of class imbalance than other classifier models. The resampling itself was observed to differentially impact the various hierarchical levels (Figure 2). The model required a sample to be classified at a higher hierarchical level before being passed on to the next nested level (e.g. classified as European before being classes as West/East/South European) which biased model selection towards favoring classifiers which improved regional and subregional predictions. It should be noted that each classifier/resampler/feature selection step was applied uniformly across the hierarchy prior to parameter optimization, to allow for an assessment of individual steps on the resulting model. An attractive, although less informative, approach for future retraining would be to optimize all steps (classifier/resampler/feature selection) on a per-node basis using an AutoML method, such as the genetic algorithm used in the current work to optimize hyperparameters in the final hML RF model (Olson et al., 2016). Validation using external datasets indicated that the model robustly predicted the majority of novel samples, but was less effective for complex multi-country, multi-year outbreaks (Figure 5).\n\nWe acknowledge that this study has a number of important limitations. Whilst we have presented evidence that the hML model can robustly predict geographical sources for S. Enteritidis, the COVID-19 pandemic has resulted in a vast disruption to international travel over the past 2 years. The UKHSA is already seeing a return to pre-pandemic levels of imported infection and expect the pattern of the seasonality of imported S. Enteritidis infections to return. However, there may be unquantified impacts on the global food network which could result in a reduction in the prediction accuracy of the current model and would likely require retraining on post-pandemic data. Furthermore, the dataset, collected as part of the UKHSA\u2019s national genomic surveillance program, is a product of two factors; the countries to which UK residents commonly travel and the variable likelihood of S. Enteritidis infection whilst in these countries (Figure 1). Both factors influence the geographical distribution of sampling locations present in the dataset as well as the number of available samples per country. For example, of the 122 countries present in the initial dataset only 38 (31%) were present in sufficient quantities over the surveillance period to include in the model. The second factor influencing the composition of the dataset is the variable risk of infection posed by the countries present in the dataset. Some commonly visited countries posed only a minor risk of infection (e.g. France) whilst others posed a disproportionately high risk of infection on visiting (e.g. Turkey) (Figure 1E). The risk of infection per country is likely to be a product of the overall prevalence of S. Enteritidis as well as the local circulation of high-virulence or low-virulence strains, infections with which is more or less likely to result in referral to the clinical setting. Due to the complex nature of both the global food supply chain and pathogen transmission dynamics, it is likely that these factors will cause misattribution in some cases; for instance, UK-travelers might travel to country A and consume contaminated foodstuffs imported from country B which was absent from the training data, and the model would then \u2018correctly\u2019 assign future cases to country A. One might also imagine that country C, which is only rarely visited by UK-travelers, produces a contaminated foodstuff and exports it to country D, which is often visited by UK-travelers, causing the model to misattribute a sample from country C to D. In these cases, the model would provide useful information on the origin of infection but would not ultimately identify the true reservoir of the pathogen. Evidence of this form of misattribution has been presented in the Polish eggs outbreak dataset used for validation (Figure 5B). This outbreak represents a particularly difficult attribution problem as many of the contaminated eggs were distributed to 18 different EU countries during the sampling period used to train the model \u2013 allowing for the inclusion of a small number of erroneously labeled samples in the training data and resulting in inaccurate classification. This outbreak represents an important limitation of the current model and illustrates how multi-country outbreaks or long-established food network contamination pathways can confound accurate source attribution.\n\nOther potential forms of mislabeling in reported travel data include the incorrect reporting of multi-country trips or infection of travellers during return-trip layovers. The ONS records travel destination as the primary location visited, so no estimates of the proportion of samples attributable to multi-country trips could be made, although they will certainly represent a minority of the data. Recent surveys have estimated that layovers occur on only a small proportion of flights (~15%), although this could potentially have a larger impact on the data due to the bias in detecting cases that occur towards the end of a trip, which could result in a patient being admitted to UK-based clinical care setting, rather than one overseas (Department for Transport, 2018; Department of Transport, 2018). Another limitation of this work was its reliance on recently reported travel data, which was used as a proxy for the prevalence of infections arising from imported foodstuffs. Whilst there is evidence that this approach can capture highly-relevant disease strains present in foodstuffs imported to the UK (Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019), strain prevalence is likely to vary across national borders due to differences in national and domestic regulations and food-processed methods.\n\nWe have presented a conceptually simple hML model which is able to successfully predict the geographical source of infection for a wide range of popular destinations frequented by UK travelers. However, the basis of this work was a single dataset which, although exceptional in the breadth of sampling and metadata, compositionally reflects locations routinely visited by UK travelers. A number of destinations were present in the dataset for which there is little to no data present in public databases during a matching time period (e.g. Malta). This demonstrates the additional utility provided by the collection of recent travel information as part of a national surveillance program to generate consistent geographical coverage for disease-sampling over a much larger geographical area. Travel-associated samples have recently been used to improve our understanding of the geographical distribution of various S. Typhi lineages by being used as an informal substitute for sampling efforts from geographical regions lacking formal disease surveillance programs (Carey et al., 2022). One could imagine that coordination between public health bodies with complementary citizen travel preferences would allow for a small network of national genomic surveillance initiatives to provide global coverage of gastrointestinal diseases without the costly necessity of instituting comprehensive global surveillance initiatives. If this was coupled with a similar hML model to the one detailed here, then rapid and precise global predictions of the source of gastrointestinal disease outbreaks could be achieved.\n\nThe model presented herein is conceptually simple and does not incorporate temporal information, account for seasonal fluctuations in disease incidence, allow for multiple labels to be assigned to samples, or incorporate animal host/food source information, which may improve the prediction of multi-country outbreaks or provide additional information to further enhance epidemiological follow-up (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019). Furthermore, the UK was excluded as a potential geographical source in the model due to the extremely low prevalence of S. Enteritidis in domestic poultry flocks and a lack of clinical isolates linked to consumption of locally produced foodstuffs (European Food Safety Authority and European Centre for Disease Prevention and Control, 2017). Future studies could include samples collected via veterinary or food chain-based surveillance programs to provide finer-scale inference of causation or provide model coverage of low-prevalence geographical locations.\n\nThis study provides a framework for future hML applications in the area of pathogen genomics. Other geographically stratified problems which might benefit from a hierarchical approach include antimicrobial resistance in E. coli (Ingle et al., 2018), the transmission of Staphylococcus aureus in hospital networks (Donker et al., 2017), and application to other serovars of S. enterica (Lupolova et al., 2017; Munck et al., 2020). This work represents the first application of hML for the automation of genomics-based geographical source attribution. The rapidity of predictions from raw sequencing data should greatly enhance epidemiologists\u2019 ability to trace the source of gastrointestinal outbreaks by condensing complex genetic data into understandable and actionable outputs.\n\n## Methods\n\n### Genome collection and processing\n\nThe initial dataset consisted of 10,223 S. Enteritidis isolates collected and sequenced by UKHSA between 2014\u20132019 as a part of their routine disease monitoring program. Raw read data were downloaded from the Sequence Read Archive (Bioproject: PRJNA248792) (Supplementary file 1C). Reads were filtered using Trimmomatic 0.39, residual Illumina adapter sequences were removed, the first and last three base pairs in a read were trimmed, before a sliding window quality trimming of four bases with a quality threshold of 20 were applied, and reads of less than 36 bp (after trimming) were removed (ILLUMINACLIP:PE_All.fasta:2:30:10:2:keepBothReads SLIDINGWINDOW:4:20 LEADING:3 TRAILING:3 MINLEN:36) (Bolger et al., 2014). The coverage of the resulting file was estimated against the size of S. Enteritidis reference genome P12510 (Thomson et al., 2008) and downsampled to ~100 x coverage using in-house scripts. Musket 1.1 was applied for k-mer spectrum read correction using a k-mer size of 31 bp. Unitigs were generated directly from filtered reads using bcalm 2.2.3 with a k-mer size of 31 bp and a minimum k-mer abundance of six (estimated from data) (Chikhi et al., 2016).\n\nReads were mapped to S. Enteritidis reference genome P12510 and variants were called using SNIPPY 4.6 with a minimum coverage of 10x and a mapping quality of 60 (Seemann, 2021). A reduced alignment of variant sites was generated using snp-sites (Page et al., 2016) and passed to IQ-Tree for phylogenetic reconstruction using a GTR + I + G substitution model and ultra-fast bootstrapping (1000 bootstraps) (Nguyen et al., 2015). An interactive maximum likelihood phylogenetic tree is available in Microreact.\n\n### Isolate selection for Machine learning\n\nOf the initial 10,223 isolates, 3,434 had matched recent reported travel data, in the form of \u2018country\u2019 of recent travel (within 28 days of generating symptoms), provided by the clinical laboratories on submission of the isolate. These isolates were selected as potential candidates for ML model construction and testing. The 3,434 initial isolates were subsequently filtered to identify samples that had both consistent metadata and good sequence quality. The criteria for inclusion included: (a) clear and uncontradictory recent travel metadata, unrecognized or invalid regions (e.g. Yugoslavia) were removed; (b) reads that were not genetically distant from the majority of isolates in the collection as measured by MASH distance; (c) reads that had >28 x coverage of S. Enteritidis reference genome P12510; (d) samples that did not have a total unitig length greater than 5,250,000 bp; (e) k-mers created from the reads that did not have a singleton frequency of >0.5. A total of 220 samples were excluded due to these criteria.\n\nFurther dataset reduction was performed to remove genetically identical, or near-identical, isolates from the collection prior to processing for ML. SNP Address was used as a proxy for genetic relatedness and a single example of each SNP Address (SNP5) was randomly selected per country for further analysis. Samples were assigned to region and subregion based upon the UN M49 Standard for regional codes (https://unstats.un.org/unsd/methodology/m49/overview) [Accessed: 30 November 2021]. Recent travel information which represented historically distinct subregions or autonomous subregions of a larger country grouping (e.g. Hong Kong), was considered a part of the larger entity for the purpose of classification. Any country with less than ten representative samples after filtering was excluded from further analysis. The final sample collection after filtering contained 2,313 samples (Supplementary file 1C).\n\nThe relative risk of acquiring S. Enteritidis infection when traveling was estimated using the ratio of the proportion of UKHSA clinical isolates reported as having recently traveled to each country over the proportion of all UK travelers traveling to that country as recorded by the (Office of National Statistics, 2020). The data used for this comparison was the date (year) and location (country) matched before proportions were calculated.\n\nThe NCBI Pathogen Genome database was interrogated to identify S. Enteritidis isolates collected in countries present in the hML model over a matching time period [Accessed: 18 November 2021]. 2019 was excluded as UKHSA samples were only available for a relatively short duration of the year (January-April). Variation in the isolate number collected each year was controlled for by resampling with replacement (1,000 samples). The resulting yearly sampling data was compared to a uniform distribution using the Kolmogorov-Smirnov D statistic to quantify deviation from a consistent sampling scheme for both the UKHSA and NBCI reference datasets.\n\n### Unitig processing for ML\n\nA colored De Bruijn graph was constructed for the complete genome collection by passing the unitigs for individual samples to unitig caller v1.2.0 (Holley and Melsted, 2020). This identified 426,647 unique unitigs present in the 2,313 genome collection. The resulting De Brujin graph was then queried to establish the presence/absence of each unitig on a per-sample basis. Unitigs present/absent in only a single sample were removed. Unitigs that co-occurred in the same subset of samples (i.e. perfect correlation) were clustered into a single feature \u2018pattern\u2019 for input into feature selection and ML model-building algorithms. This reduced the input from 426,647 unitig features into 94,865 pattern features. The dataset was split into 75\u201325% train-test ratio stratified by the country for downstream applications.\n\n### Hierarchical classifier design\n\nA class-prediction top-down hierarchical classifier framework was developed to be compatible with any scikit-learn classifier which generates a per-sample predicted probability value. The framework followed a Local Classifier per Node (LCN) approach as detailed in Silla and Freitas, 2011, wherein a multi-class classifier was fitted at each node of the hierarchy to differentiate between the various child classes of that node. The geographical hierarchy used as the basis of the classifier was constructed using the three levels of geographical labels, region->subregion->country, assigned by UN M49 Standard for regional codes (Statistics Division of the United Nations Secretariat, 2020). At each node, samples were relabeled according to the current hierarchical level (e.g. Cuba and the United States would be labeled as Americas at the root/regional node) before being passed to the classifier. Only samples in classes relevant to the current hierarchical node classifier were included in the training data for each classifier (i.e. samples from countries that were not a part of the region/subregion being trained were excluded).\n\n### Hierarchical classification strategy\n\nThe hierarchical classifier framework allowed for the flexible assignment of samples to a single unambiguous class in the hierarchy (i.e. a single region/sub-region/country or unclassified). Samples were first classified at the root (regional) node. A classification was assigned if the predicted probabilities adhered to the threshold criteria, and the maximum probability value at that node exceeds a threshold value (0.5). Only then would the sample be passed to the next node in the hierarchy. This is not permissive of multiple, conflicting classifications.\n\nA range of hierarchical and non-hierarchical statistics was applied to aid model assessment. Standard non-hierarchical statistics were generated for each individual classifier/node (precision, recall, micro/macro/weighted F1) as well as their hierarchical analogs (hP, hR, hF1). These were calculated as described by Kiritchenko et al., 2005:\n\n$$\nhP=\\frac{\\sumi|P^i\u2229T^i|}{\\sumi|P^i|}hR=\\frac{\\sumi|P^i\u2229T^i|}{\\sumi|T^i|}hF=\\frac{2^{\u2217}hP^{\u2217}hR}{hP+hR}\n$$\n\nwhere $P^{i}$ is the set of predicted classes consisting of the most specific class (i.e. the lowest level of the hierarchy) predicted for test example i plus all parent classes and $T^{i}$ is the set of classes consisting of the most specific true class of test example i and all its ancestor classes. Summations were calculated over all test samples. Macro hF1 was calculated by taking the average F1 of all classes of interest.\n\n### Feature selection, resampling, model testing, and optimization\n\nDuring model selection, various combinations of classifier, resampler and feature selection models were applied to the test-train dataset to assess their suitability for model building. These were assessed based on a combination of non-hierarchical statistics including overall micro/macro F1 and micro/macro F1 per hierarchical level. The implemented classifier models included K-Nearest Neighbours, Support Vector, Random Forest, Gaussian Naive Bayes, XGBoost, Extra Trees. All classifier models were implemented using scikit-learn using a set seed value and default parameters with the exception of Random Forest, Extra Trees, and XGBoost classifiers which were run with n_estimators = 1000 and SVC which was run with probability = True.\n\nThe implemented resampling schemes included downsampling (smallest class), upsampling (largest class), resampling to the mean count of all classes, and hierarchically aware implementation for the previously described samplers. Hierarchically aware resampling was developed using in-house scripts to iteratively apply a resampler to each of the lowest levels of the hierarchy (country) before passing the resampled data to higher levels in the hierarchy for further resampling.\n\nAn all-vs-all comparison of classifier vs resampler models was used to identify the most suitable combinations for further optimization (Supplementary file 1B). In all cases, a fixed seed value was used for the comparison of models and resamplers. The top four combinations of classifier-resampler were selected for feature selection comparison. The implemented feature selection method was Random Forest using varying numbers of patterns as training data (Figure 2D).\n\nThe final classifier-resampler-selection combination was passed to a genetic algorithm framework (TPOT) to identify an approximation of optimal parameters from a wide range of possible combinations (sklearn.ensemble.RandomForestClassifier': 'n_estimators': [100, 500, 1000], 'criterion': ['gini', 'entropy'], 'max_features': np.array([0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1. ]), 'min_samples_split': range(2, 21), 'min_samples_leaf': range(1, 21), 'bootstrap': [True, False]) (Olson et al., 2016). The TPOT genetic algorithm used the macro F1 score per node as the optimization metric, was run for 100 generations with a population size of 50, and stratified threefold cross-validation of the input database and was stopped if no model improvement was found for 10 generations. A \u2018flat\u2019 model was also trained and tested in the same manner for comparison, whereby a multiclass Random Forest classifier was provided with a randomly oversampled dataset which only included \u2018country\u2019 class labels (i.e. region/subregion were ignored) (Supplementary file 1A).\n\n### Validation dataset collection and processing\n\nVarious public datasets were used as additional validation data including outbreaks described in previous publications (Inns et al., 2017; Octavia et al., 2018; Pijnacker et al., 2019; Smith et al., 2020) and samples identified from the NCBI Pathogen Genome database [Accessed: 18 November 2021]. In the case of samples taken from previous publications, accession numbers were identified from these manuscripts, and samples were downloaded and passed through the genome and unitig processing pipelines described above. Additionally, NCBI Pathogen Genome database metadata was downloaded [Accessed: 18 November 2021] and filtered to return only samples that had publicly accessible read files, and country metadata from the 38 countries and were collected between 2014\u20132018. Three representative countries were chosen to trial the model on (Poland, South Africa, and Singapore). Read data was downloaded and passed through the unitig processing pipeline as described above. The presence of unitigs generated from the UKHSA collection which formed the basis of the hML model was ascertained using unitig-counter (Jaillard et al., 2018, Lees et al., 2018). The unitig features were then converted into the patterns generated from the UKHSA collection as described above.\n",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "074b5488-c981-4376-851d-e19dbb7c339c",
+      "submission_id": "a0b16a4e-89a4-4d8e-b91a-c008ba9431a3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84167.sa0](https://doi.org/10.7554/eLife.84167.sa0)\n\nThis important study presents a machine learning-based classifier that can accurately determine the geographic origin of a Salmonella enterica sample from its whole-genome sequencing data in under five minutes leading to actionable public health insights. Applying the method to 2,313 whole genome sequences collected in the United Kingdom and several external validation datasets, the authors provide convincing evidence that Salmonella genomic data can be used to identify the likely geographic source of a food-borne outbreak and, in most cases, correctly identify the country of origin of an infection acquired overseas. The work presents an excellent case for the potential utility of routine genomics coupled with machine learning for public health microbiology and the methods are likely to be applicable to other pathogens besides Salmonella enterica.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84167.sa1](https://doi.org/10.7554/eLife.84167.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Rapid geographical source attribution of Salmonella enterica serovar Enteritidis genomes using hierarchical machine learning\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Neil Ferguson as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Nicole E Wheeler (Reviewer #2); Leonid Chindelevitch (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. It would be helpful expand on the comparison with existing methods giving more background on current state-of-the-art for geographic source attribution prior to this paper.\n\n2. The training dataset appears to be only based on infections acquired overseas. It would be helpful to discuss the limitations in using this data source to investigate infections due to imported contaminated food.\n\n3. More clearly communicating when a prediction is uncertain could be helpful in dealing with isolates from countries or food transport networks where it is hard to make a reliable determination. It would be helpful to consider this in the discussion.\n\n4. There is a need for a discussion of limits to the utility of the tool due to exclusion of UK Salmonella isolates.\n\n5. There is a need to improve the clarity of Figure 5, in particular increasing the resolution of the trees.\n\n6. The authors should elaborate on the plausibility of missing data on multi-country trips and their frequency based on available travel data.\n\n7. Any corrections made in the analysis for increased travel during the summer months should be stated.\n\n8. Consider expanding the discussion on the poor predictions in the outbreak due to Polish eggs.\n\nReviewer #1 (Recommendations for the authors):\n\n1. It would have been nice to see more background on state-of-the art for geographic source attribution prior to this paper. Currently there is just one sentence and two references (line 73-77).\n\n2. Should define \"SNP\" on first use (line 109) also please explain \"5-SNP cluster by SNP Address\".\n\n3. line 165: \"was made up of 15 \" or 16?\n\n4. For a general audience (including public health professionals) it would be helpful to spend more time explaining key terminology eg \"multi-class classifier\", 'F1 score\" etc. The work should be of wide interest, including to public health professionals, and explaining terminology would likely help increase impact of the paper.\n\n5. line 166-167 \"were predictable\" What does this mean?\n\n6. line 331 \"Variation in classification accuracy was negatively associated with both low sample number and increasing within-class genetic diversity\" is this the intended meaning or is what is meant \"classification accuracy was negatively associated with both low sample number and increasing within-class genetic diversity\" (i.e. is the association with classification accuracy or with variation in classification accuracy?).\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, this was an excellent paper to read. One thing I wish the authors had given more real estate to in the introduction is allowing the reader to understand how (if at all) the same determinations re: geographic origin are made today \u2013 how long does it take? Is there a big cost to an investigation? Are there regulatory or political hurdles?\n\nI struggled to interpret Figure 5, and it is quite important for understanding this algorithm's capabilities. The main issue is the resolution of the trees, plus their size makes it difficult to discern how much overlap there is between the public and UKHSA data. The Microreact view makes this easier to explore and could be leveraged to create clearer figures. What I want to see in this figure is how interspersed the outbreak isolates are with UKHSA ones, which requires a close view and high resolution, and how interspersed isolates from different countries are for these outbreaks. When looking at the Poland/Spain mix-up in panel B on Microreact, it becomes very clear why this has happened when you look at the country of travel associated with each sample and the dataset each sample comes from.\n\nUseful additional metadata columns on the Microreact tree would be the individual country of origin predictions and their associated probabilities \u2013 it would be helpful to see how confidence levels change across the tree and with more geographically interspersed clades.\n\nUsually, I find F1 to be the best measure of accuracy, but here the % accurate calls would also be interesting, as this has direct public health implications, and there is a relationship between the total number of infections originating in a country and the accuracy of classification.\n\nReviewer #3 (Recommendations for the authors):\n\nIn addition to the concerns outlined above, here are a few typos that should be corrected; a non-exhaustive list:\n\n\u2013 line 105: replace \"from\" by \"to\".\n\n\u2013 line 247: providing.\n\n\u2013 line 348: \"before BEING passed ON to\".\n\nAlso, just because a country has fewer than 10 samples in the collection does not mean it is \"low incidence\"; technically, this only means that it is \"low incidence in UK tourists\". Please clarify your statement accordingly.\n\nThe data and code are fully available, in compliance with eLife's policies.\n",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b718d1ed-3ee8-40eb-9212-4459962fb6af",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C1",
+      "claim": "Salmonella enterica serovar Enteritidis is one of the most frequent causes of Salmonellosis globally.",
+      "claim_type": "EXPLICIT",
+      "source": "Salmonella enterica serovar Enteritidis is one of the most frequent causes of Salmonellosis globally and is commonly transmitted from animals to humans by the consumption of contaminated foodstuffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about S. Enteritidis that draws from established scientific consensus about its role in causing salmonellosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "765b698f-b1b2-476d-8a38-af957f553059",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C2",
+      "claim": "S. Enteritidis is commonly transmitted from animals to humans by the consumption of contaminated foodstuffs.",
+      "claim_type": "EXPLICIT",
+      "source": "Salmonella enterica serovar Enteritidis is one of the most frequent causes of Salmonellosis globally and is commonly transmitted from animals to humans by the consumption of contaminated foodstuffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about the transmission route of S. Enteritidis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "bfe455a6-90d3-4a23-875b-c3d0e4b37259",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C3",
+      "claim": "In the UK and many other countries in the Global North, a significant proportion of S. Enteritidis cases are caused by the consumption of imported food products.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK and many other countries in the Global North, a significant proportion of cases are caused by the consumption of imported food products or contracted during foreign travel, therefore, making the rapid identification of the geographical source of new infections a requirement for robust public health outbreak investigations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies mentioned later in the manuscript (Cowley et al., 2016; McLauchlin et al., 2019; Somorin et al., 2021).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "8ee91ceb-56b0-4d72-81cc-c61aeca68170",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C4",
+      "claim": "In the UK and many other countries in the Global North, a significant proportion of S. Enteritidis cases are contracted during foreign travel.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK and many other countries in the Global North, a significant proportion of cases are caused by the consumption of imported food products or contracted during foreign travel, therefore, making the rapid identification of the geographical source of new infections a requirement for robust public health outbreak investigations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies mentioned later in the manuscript (PHE, 2017).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "ad1564fa-1001-4d90-a168-809a40489779",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C5",
+      "claim": "2313 S. Enteritidis genomes collected by the UKHSA between 2014\u20132019 were used to train a hierarchical classifier.",
+      "claim_type": "EXPLICIT",
+      "source": "2313 S. Enteritidis genomes, collected by the UKHSA between 2014\u20132019, were used to train a 'local classifier per node' hierarchical classifier to attribute isolates to four continents, 11 sub-regions, and 38 countries (53 classes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "8b6f59c5-079a-49db-8ae2-636a9c39ac85",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C6",
+      "claim": "The hierarchical classifier was trained to attribute isolates to four continents, 11 sub-regions, and 38 countries (53 classes).",
+      "claim_type": "EXPLICIT",
+      "source": "2313 S. Enteritidis genomes, collected by the UKHSA between 2014\u20132019, were used to train a 'local classifier per node' hierarchical classifier to attribute isolates to four continents, 11 sub-regions, and 38 countries (53 classes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the hierarchical classifier developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "e79605b3-6c9b-41f8-829c-aebd82ff7ba4",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C7",
+      "claim": "The highest classification accuracy was achieved at the continental level (macro F1: 0.954).",
+      "claim_type": "EXPLICIT",
+      "source": "The highest classification accuracy was achieved at the continental level followed by the sub-regional and country levels (macro F1: 0.954, 0.718, 0.661, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the model's performance metrics from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "e1cd1363-9f60-4565-bc03-ce657b1deb96",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C8",
+      "claim": "Classification accuracy at the sub-regional level was macro F1: 0.718.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest classification accuracy was achieved at the continental level followed by the sub-regional and country levels (macro F1: 0.954, 0.718, 0.661, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the model's performance metrics from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f34a2e22-df13-4767-bbe5-d384a2481c29",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C9",
+      "claim": "Classification accuracy at the country level was macro F1: 0.661.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest classification accuracy was achieved at the continental level followed by the sub-regional and country levels (macro F1: 0.954, 0.718, 0.661, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the model's performance metrics from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f1bc4055-5aff-4a35-ae8c-23c2b1c533de",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C10",
+      "claim": "A number of countries commonly visited by UK travelers were predicted with high accuracy (hF1: >0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "A number of countries commonly visited by UK travelers were predicted with high accuracy (hF1: >0.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the model's performance for specific countries, supported by data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "5947238e-47aa-46e6-91f4-8222329e45f1",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C11",
+      "claim": "The hierarchical machine learning framework provided granular geographical source prediction directly from sequencing reads in <4 min per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The hierarchical machine learning framework provided granular geographical source prediction directly from sequencing reads in <4 min per sample, facilitating rapid outbreak resolution and real-time genomic epidemiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the computational performance of the developed method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "82fad3bb-0e94-4c15-95ff-391a7afa3706",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C12",
+      "claim": "Diarrhoeal diseases are the most common illnesses caused by contaminated food, with 550 million people falling ill each year.",
+      "claim_type": "EXPLICIT",
+      "source": "Diarrhoeal diseases are the most common illnesses caused by contaminated food, with 550 million people falling ill each year, including 220 million children under the age of 5 years (WHO, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f51e6f8c-ffce-4891-8640-fcdfb1df75d7",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C13",
+      "claim": "220 million children under the age of 5 years fall ill from diarrhoeal diseases caused by contaminated food each year.",
+      "claim_type": "EXPLICIT",
+      "source": "Diarrhoeal diseases are the most common illnesses caused by contaminated food, with 550 million people falling ill each year, including 220 million children under the age of 5 years (WHO, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "4304726e-fb2f-4284-84d1-c90ec94caf18",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C14",
+      "claim": "Outbreak investigations are often confounded by the complexity of the international food-trade networks which distribute zoonotic food-borne pathogens across the globe.",
+      "claim_type": "EXPLICIT",
+      "source": "Outbreak investigations are often confounded by the complexity of the international food-trade networks which distribute zoonotic food-borne pathogens across the globe (Gould et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gould et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "c53eec04-0b64-4d8f-8299-af9415055b17",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C15",
+      "claim": "In many developed nations, Salmonella enterica serovar Enteritidis is the most common cause of diarrhoeal disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In many developed nations, Salmonella enterica serovar Enteritidis is the most common cause of the diarrhoeal disease (UKHSA, 2021) and represents a significant economic and healthcare burden (Daniel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to UKHSA, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "323e2af0-bef9-47ab-9f54-5e7cca6209f9",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C16",
+      "claim": "S. Enteritidis represents a significant economic and healthcare burden.",
+      "claim_type": "EXPLICIT",
+      "source": "In many developed nations, Salmonella enterica serovar Enteritidis is the most common cause of the diarrhoeal disease (UKHSA, 2021) and represents a significant economic and healthcare burden (Daniel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Daniel et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "c555b930-d018-43b5-bc16-4f5380109d3b",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C17",
+      "claim": "In the UK, nationwide vaccination and monitoring programs have been responsible for a precipitous drop in detectable Salmonella from local animal products.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK, nationwide vaccination and monitoring programs have been responsible for a precipitous drop in detectable Salmonella from local animal products and a concurrent drop in human infection rates (Surveillance, Zoonoses, Epidemiology and Risk Food and Farming Group, 2007; Tam et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Surveillance, Zoonoses, Epidemiology and Risk Food and Farming Group, 2007 and Tam et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "0e102a44-0cfa-4530-b707-378e35ed7810",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C18",
+      "claim": "In the UK, nationwide vaccination and monitoring programs have been responsible for a concurrent drop in human infection rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK, nationwide vaccination and monitoring programs have been responsible for a precipitous drop in detectable Salmonella from local animal products and a concurrent drop in human infection rates (Surveillance, Zoonoses, Epidemiology and Risk Food and Farming Group, 2007; Tam et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Surveillance, Zoonoses, Epidemiology and Risk Food and Farming Group, 2007 and Tam et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "4605769d-e817-430c-be4e-a726ab03c173",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C19",
+      "claim": "Recent studies have identified imported foodstuffs as more pertinent Salmonella infection risks in the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies have identified imported foodstuffs (Cowley et al., 2016; McLauchlin et al., 2019; Somorin et al., 2021) and foreign travel (PHE, 2017) as more pertinent Salmonella infection risks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cowley et al., 2016; McLauchlin et al., 2019; Somorin et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "4207ee08-7645-43f6-af47-44282dc87c08",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C20",
+      "claim": "Recent studies have identified foreign travel as more pertinent Salmonella infection risks in the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies have identified imported foodstuffs (Cowley et al., 2016; McLauchlin et al., 2019; Somorin et al., 2021) and foreign travel (PHE, 2017) as more pertinent Salmonella infection risks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to PHE, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "c998a35f-99b2-4324-8b0a-642a3dc349d2",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C21",
+      "claim": "Whole genome sequencing has become a powerful tool for untangling complex networks of pathogen dissemination by providing high-resolution sub-typing for transmission tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole genome sequencing (WGS) has become a powerful tool for untangling complex networks of pathogen dissemination by providing high-resolution sub-typing for transmission tracing as well as detailed information on antimicrobial and virulence status (Allard et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Allard et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "c78e5c79-a350-4518-931e-c48d00ae8adc",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C22",
+      "claim": "Whole genome sequencing provides detailed information on antimicrobial and virulence status.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole genome sequencing (WGS) has become a powerful tool for untangling complex networks of pathogen dissemination by providing high-resolution sub-typing for transmission tracing as well as detailed information on antimicrobial and virulence status (Allard et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Allard et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "5d45029f-efff-4ccf-a6a2-46b15235ea44",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C23",
+      "claim": "Since 2014, the UK Health Security Agency has routinely applied WGS to all clinically identified cases of Salmonella in the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "Since 2014, the UK Health Security Agency (UKHSA) has routinely applied WGS to all clinically identified cases of Salmonella in the UK alongside collecting detailed metadata, such as patients recent foreign travel (Ashton et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ashton et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "e71baada-4186-46e2-9080-690a12f4ac7e",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C24",
+      "claim": "The UKHSA collects detailed metadata such as patients' recent foreign travel alongside WGS data.",
+      "claim_type": "EXPLICIT",
+      "source": "Since 2014, the UK Health Security Agency (UKHSA) has routinely applied WGS to all clinically identified cases of Salmonella in the UK alongside collecting detailed metadata, such as patients recent foreign travel (Ashton et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ashton et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "b8413da1-88b2-424c-a4b0-1d1a43b3c4f6",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C25",
+      "claim": "Between 2015 and 2018, S. Enteritidis-contaminated eggs resulted in 1209 reported cases across 16 countries in the largest known salmonellosis outbreak in Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "This program has been instrumental in identifying various international outbreaks, such as the largest known salmonellosis outbreak in Europe where, between 2015 and 2018 S. Enteritidis-contaminated eggs resulted in 1209 reported cases across 16 countries (Dallman et al., 2016; Pijnacker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dallman et al., 2016 and Pijnacker et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "12d668a5-4645-4ca0-a000-1f9502ce0833",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C26",
+      "claim": "The UKHSA approach for inferring geographical source from genomics data involves phylogenetic population structure analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach taken by the UKHSA for inferring geographical source from genomics data involves phylogenetic population structure analysis, the examination of the genetic relatedness of isolates from various relevant source populations, alongside in-depth analysis of isolates from recent-reported travel cases and reconstruction of domestic or international food networks (Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "d2dc27f4-5b6a-4a5a-a393-3c1da2b59e7b",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C27",
+      "claim": "The UKHSA approach for inferring geographical source from genomics data involves examination of the genetic relatedness of isolates from various relevant source populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach taken by the UKHSA for inferring geographical source from genomics data involves phylogenetic population structure analysis, the examination of the genetic relatedness of isolates from various relevant source populations, alongside in-depth analysis of isolates from recent-reported travel cases and reconstruction of domestic or international food networks (Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "5044f281-1677-4364-9bba-ae52c1c2911e",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C28",
+      "claim": "The UKHSA approach for inferring geographical source from genomics data involves in-depth analysis of isolates from recent-reported travel cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach taken by the UKHSA for inferring geographical source from genomics data involves phylogenetic population structure analysis, the examination of the genetic relatedness of isolates from various relevant source populations, alongside in-depth analysis of isolates from recent-reported travel cases and reconstruction of domestic or international food networks (Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "5b70fb7e-52fa-4c2b-8d5e-4f10918cc0a9",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C29",
+      "claim": "The UKHSA approach for inferring geographical source from genomics data involves reconstruction of domestic or international food networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach taken by the UKHSA for inferring geographical source from genomics data involves phylogenetic population structure analysis, the examination of the genetic relatedness of isolates from various relevant source populations, alongside in-depth analysis of isolates from recent-reported travel cases and reconstruction of domestic or international food networks (Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "9875b255-c9b9-42ca-a245-3281c71e6f73",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C30",
+      "claim": "The UKHSA's type of investigation is often only undertaken in exceptional cases representing a threat to public health due to the resources involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the resources involved, this type of investigation is often only undertaken in exceptional cases representing a threat to public health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical limitations of current UKHSA investigation methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "be0878be-0694-4946-b19f-be3fb437767e",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C31",
+      "claim": "Machine learning approaches have shown utility in predicting the original host of infectious S. enterica and Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning (ML) approaches have recently shown utility in predicting the original host of infectious S. enterica and Escherichia coli (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019), S. typhimurium (Munck et al., 2020), Campylobacter jejuni (Arning et al., 2021), and Listeria monocytogenes (Tanui et al., 2022), but has yet to be applied to the problem of geographical source attribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "90526f0c-d3d7-4151-a068-1a6f204cdf3f",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C32",
+      "claim": "Machine learning approaches have shown utility in predicting the original host of S. typhimurium.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning (ML) approaches have recently shown utility in predicting the original host of infectious S. enterica and Escherichia coli (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019), S. typhimurium (Munck et al., 2020), Campylobacter jejuni (Arning et al., 2021), and Listeria monocytogenes (Tanui et al., 2022), but has yet to be applied to the problem of geographical source attribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Munck et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "3a2922dd-0dd6-4580-8999-ffc939b05e15",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C33",
+      "claim": "Machine learning approaches have shown utility in predicting the original host of Campylobacter jejuni.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning (ML) approaches have recently shown utility in predicting the original host of infectious S. enterica and Escherichia coli (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019), S. typhimurium (Munck et al., 2020), Campylobacter jejuni (Arning et al., 2021), and Listeria monocytogenes (Tanui et al., 2022), but has yet to be applied to the problem of geographical source attribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Arning et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "320da2ff-a46c-43c0-8d3f-52ee7520255f",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C34",
+      "claim": "Machine learning approaches have shown utility in predicting the original host of Listeria monocytogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning (ML) approaches have recently shown utility in predicting the original host of infectious S. enterica and Escherichia coli (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019), S. typhimurium (Munck et al., 2020), Campylobacter jejuni (Arning et al., 2021), and Listeria monocytogenes (Tanui et al., 2022), but has yet to be applied to the problem of geographical source attribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tanui et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "82d0a716-a3d6-414d-8dd6-329b12b993c8",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C35",
+      "claim": "Machine learning has not yet been applied to the problem of geographical source attribution for bacterial pathogens prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning (ML) approaches have recently shown utility in predicting the original host of infectious S. enterica and Escherichia coli (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019), S. typhimurium (Munck et al., 2020), Campylobacter jejuni (Arning et al., 2021), and Listeria monocytogenes (Tanui et al., 2022), but has yet to be applied to the problem of geographical source attribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the current work based on a review of the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "1891af16-600e-4ec7-a122-e62508d89632",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C36",
+      "claim": "S. Enteritidis has a population structure observably stratified by geographical source.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of S. Enteritidis, which has a population structure observably stratified by geographical source (Feasey et al., 2016; Li et al., 2021), there is potential for genomics to provide key information for successful epidemiological follow-up, namely the likely country of origin of an infectious strain, and an opportunity to rapidly enact intervention strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Feasey et al., 2016 and Li et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "33251c0f-3203-4fe4-a8be-17cbddc7010e",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C37",
+      "claim": "The initial UKHSA dataset consisted of 10,223 S. Enteritidis isolates collected between 2014-2019.",
+      "claim_type": "EXPLICIT",
+      "source": "This consisted of 10,223 isolates, of which 3,434 had matched recently reported travel data collected as a part of the UKHSA's 'enhanced surveillance' program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "bebd5e7a-2421-4077-bf86-c80955cb3c96",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C38",
+      "claim": "3,434 isolates from the UKHSA dataset had matched recently reported travel data.",
+      "claim_type": "EXPLICIT",
+      "source": "This consisted of 10,223 isolates, of which 3,434 had matched recently reported travel data collected as a part of the UKHSA's 'enhanced surveillance' program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "3fc6c3df-3e3a-40cf-85ed-eee44cc4ca81",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C39",
+      "claim": "Recent travel was reported to 122 countries across five continents in the UKHSA dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent travel was reported to 122 countries across five continents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the geographical distribution of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f6f3bc36-c5f3-4411-94d5-459e314ec5e2",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C40",
+      "claim": "A clone was defined as a single-linkage cluster of isolates with five or less single nucleotide polymorphisms (SNPs).",
+      "claim_type": "EXPLICIT",
+      "source": "A clone was defined as a single-linkage cluster of isolates with five or less single nucleotide polymorphisms (SNPs), a definition routinely-used by the UKHSA in genomic disease surveillance as part of the 'SNP Address' framework for describing clones (Chattaway et al., 2019; Dallman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition supported by citations to Chattaway et al., 2019 and Dallman et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "216375fc-2c36-4ac4-85e6-de4e7f75647b",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C41",
+      "claim": "After quality-filtering, downsampling, and removal of low-incidence countries, 2,313 genomes from 38 countries from four continents were included in the final dataset for ML.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality-filtering, downsampling, and the removal of countries with a low-incidence of reported infections of UK tourists (<10 total isolates), 2,313 genomes from 38 countries from four continents were included in the final dataset for ML (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the final dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "5a1a7033-79fe-4cf6-9236-4f3f845eaf4e",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C42",
+      "claim": "The dataset displayed a strong phylogeographical signal, with large clusters of isolates from geographically related countries clustering together.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis indicated that the dataset displayed a strong phylogeographical signal, with large clusters of isolates from geographically related countries clustering together (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phylogenetic analysis results shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "755c6347-faaa-4bce-a8f0-cc5043bbc254",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C43",
+      "claim": "S. Enteritidis infection rates in Europe and Asia were highly seasonal, with significantly increased rates of infection during the summer months.",
+      "claim_type": "EXPLICIT",
+      "source": "S. Enteritidis infection rates in Europe and Asia were highly seasonal, with significantly increased rates of infection during the summer months (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "7028130f-c8b4-4993-9c59-05b1c419b5b6",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C44",
+      "claim": "Seasonality in S. Enteritidis infection rates was less pronounced in travel to/from the Americas and Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "This was less pronounced in travel to/from the Americas and Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis, referring to Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "82521bd2-1254-489d-8692-43f8fc1b845f",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C45",
+      "claim": "The UKHSA dataset represented a significantly more consistent sampling effort than the NCBI Pathogen Detection Database for the same period.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a comparison of the UKHSA collection to a dataset of location/date-matched genomes from the NCBI Pathogen Detection Database identified that the UKHSA dataset represented a significantly more consistent sampling effort which was less influenced by sporadic outbreaks (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "ad45bedf-c527-4feb-8e02-dbf9052b6e3d",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C46",
+      "claim": "The countries with the highest number of travel-associated S. Enteritidis cases were Turkey (804), Spain (357), Egypt (343), Cuba (190), and the Dominican Republic (117).",
+      "claim_type": "EXPLICIT",
+      "source": "The countries with the highest number of travel-associated S. Enteritidis cases were Turkey (804), Spain (357), Egypt (343), Cuba (190), and the Dominican Republic (117) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of the data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "a65d04fc-9272-4132-a852-6b4e0161e446",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C47",
+      "claim": "Travelers to Turkey and Egypt were at a disproportionately higher risk of S. Enteritidis infection during the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "Travelers to Turkey and Egypt were at a disproportionately higher risk of S. Enteritidis infection during this period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of relative risk shown in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "b546821b-59bd-4db0-9d75-74bd2ad801cc",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C48",
+      "claim": "Travelers to France and Spain were at very low risk of S. Enteritidis infection despite these being popular travel destinations for UK travelers.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, travelers to France and Spain, two of the more popular travel destinations for UK travelers, were very low-risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of relative risk shown in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "2f442550-67e6-46d1-b261-960d1d66ccae",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C49",
+      "claim": "The hierarchical ML model was made up of 16 individual multi-class classifiers, one per node.",
+      "claim_type": "EXPLICIT",
+      "source": "This was made up of 16 individual multi-class classifiers, one per node (one root, four regional, 11 sub-regional).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the model architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "c272c79a-2cab-49a7-8fcd-013a254f16b3",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C50",
+      "claim": "The hierarchical model included one root classifier, four regional classifiers, and 11 sub-regional classifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "This was made up of 16 individual multi-class classifiers, one per node (one root, four regional, 11 sub-regional).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the model architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "2a29bd81-1610-4391-81ce-6eb870ecc8fe",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C51",
+      "claim": "Sample classification was performed using a top-down approach where samples are first classified at the root node into 'regions'.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample classification was performed using a top-down approach, where samples are first classified at the root node into 'regions' (e.g. Africa) then, if the predicted probability is greater than a minimum threshold value (0.5), samples are passed to the appropriate regional node to be classified into a nested subset of 'subregions' (e.g. Northern Africa) and finally passed to a subregional node where they are classified into a nested subset of 'countries' (e.g. Egypt) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct description of the classification methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "1837d9e3-4714-4a1e-b01b-f09e06b7f7ab",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C52",
+      "claim": "Samples are passed to the next hierarchical level only if the predicted probability is greater than a minimum threshold value of 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample classification was performed using a top-down approach, where samples are first classified at the root node into 'regions' (e.g. Africa) then, if the predicted probability is greater than a minimum threshold value (0.5), samples are passed to the appropriate regional node to be classified into a nested subset of 'subregions' (e.g. Northern Africa) and finally passed to a subregional node where they are classified into a nested subset of 'countries' (e.g. Egypt) (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the classification methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "574591eb-c648-4a4c-8fdf-7be40229d890",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C53",
+      "claim": "The model was trained on filtered unitig patterns (presence-absence) generated from quality-controlled genomic short-read data files.",
+      "claim_type": "EXPLICIT",
+      "source": "For rapid and minimal sample processing and to provide end-to-end sample classification directly from the sequencer, the model was trained on filtered unitig patterns (presence-absence) generated from quality-controlled genomic short-read data files.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the input data for the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "e7a21918-e281-4ee5-a785-2f27bd5df89a",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C54",
+      "claim": "The optimized hML model produced a more accurate classification of the test dataset than a 'flat' classifier applied to a similarly pre-processed dataset (macro F1: 0.61).",
+      "claim_type": "EXPLICIT",
+      "source": "The optimized hML model produced a more accurate classification of the test dataset than a 'flat' classifier applied to a similarly pre-processed dataset (macro F1: 0.61) (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison of model performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "45599381-f6a6-464c-a960-d9bafaaeaf2f",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C55",
+      "claim": "The entire pipeline takes ~3.5 min to classify novel samples using the pre-optimized model, assuming <100 x read coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming <100 x read coverage, the entire pipeline takes ~3.5 min to classify novel samples using the pre-optimized model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the computational performance of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "3e7b0296-1de4-4d13-8b5e-f5a9748e4e01",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C56",
+      "claim": "Africa was the most consistently accurately classified region, with all country and subregional classes presenting a hF1 of >0.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Africa was the most consistent accurately classified region, with all country and subregional classes presenting a hF1 of >0.7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model's performance for African classes, supported by data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "1b882f09-9b01-4abf-b938-2e369825415d",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C57",
+      "claim": "All Asian classes were classified at moderate to high accuracy (hF1: 0.58\u20130.95).",
+      "claim_type": "EXPLICIT",
+      "source": "All Asian classes were classified at moderate to high accuracy (hF1: 0.58\u20130.95).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model's performance for Asian classes, supported by data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "125fec8d-537c-4cbf-9f6c-de45e5e32d7e",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C58",
+      "claim": "Europe was generally well classified (hF1: >0.66), but contained two classes, France and Italy, which were classified poorly (hF1: ~0.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Europe was generally well classified (hF1: >0.66), but contained two classes, France and Italy, which were classified poorly (hF1: ~0.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model's performance for European classes, supported by data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "745a6f94-ce24-4280-972b-e3c01c23d19a",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C59",
+      "claim": "There was a correlation between a lack of training data and lower prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Further scrutiny of poorly performing classes showed a correlation between a lack of training data and lower prediction accuracy (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "456d1cc1-6166-4804-bb29-f275492bb774",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C60",
+      "claim": "At least two of the most poorly classified countries, France and the United States, displayed both low numbers of samples and high genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of genetic diversity within classes indicated that at least two of the most poorly classified countries, France and the United States, displayed both low numbers of samples and high genetic diversity (Figure 3B, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "8958475a-090d-47b4-8bac-0a99803e7787",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C61",
+      "claim": "Samples from recent travel to France were particularly diverse, arising from multiple highly divergent clades of S. enteritidis.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples from recent travel to France were particularly diverse, arising from multiple highly divergent clades of S. enteritidis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the phylogenetic and diversity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "0074f23f-a024-47c5-9423-03ca1452c2ae",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C62",
+      "claim": "Cuba, Egypt, Indonesia, Jamaica, Malta, Spain, Thailand, Tunisia, and Turkey were well predicted (hF1: >0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "A range of countries that were commonly visited by UK travelers, such as Cuba, Egypt, Indonesia, Jamaica, Malta, Spain, Thailand, Tunisia, and Turkey, were well predicted (hF1: >0.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model's performance for specific countries, supported by data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "27ce51a3-e295-4294-b5bc-730b433a82b4",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C63",
+      "claim": "Predictive accuracy and consistency of prediction of the subsequent year improved on increasing window size, with hF1 beginning to asymptote after 2 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictive accuracy and consistency of prediction of the subsequent year improved on increasing window size, with hF1 beginning to asymptote after 2 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by longitudinal analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f892fa28-da9d-4521-a1e6-e15e64eb2e7f",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C64",
+      "claim": "The largest improvement in predictive accuracy was observed between 1\u20132 years' worth of training data.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest improvement was observed between 1\u20132 years' worth of data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the longitudinal analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f74adf12-1408-4a29-af7c-f69d2385344c",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C65",
+      "claim": "A minor decrease in predictive accuracy (micro F1: ~0.05 per year) was observed for each additional year into the future.",
+      "claim_type": "EXPLICIT",
+      "source": "A minor decrease in predictive accuracy (micro F1: ~0.05 per year) was observed for each additional year into the future (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f295754e-ddf5-4802-a071-25f69090d7eb",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C66",
+      "claim": "A 2015 outbreak epidemiologically-traced to eggs imported from Spain was 100% correctly attributed to a Spanish origin by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a 2015 outbreak epidemiologically-traced to eggs imported from Spain (Inns et al., 2017) was 100% correctly attributed to a Spanish origin (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result supported by citation to Inns et al., 2017 and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "8d6ae6f0-312c-4b66-9cc4-c0731d601f55",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C67",
+      "claim": "A multi-country outbreak originating from Polish egg farms was correctly attributed to a European origin (131/131 cases).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a multi-country outbreak originating from Polish egg farms (Pijnacker et al., 2019), comprising of two distinct lineages each differing by five or fewer SNPs, was correctly attributed to a European origin (131/131 cases), but subsequently misattributed to a Southern Europe (131/131 cases), Spanish origin (103/130) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result supported by citation to Pijnacker et al., 2019 and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "6dc17207-d5b0-4aea-b68f-c9fbfbdfd728",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C68",
+      "claim": "The multi-country outbreak originating from Polish egg farms was misattributed to a Southern European origin (131/131 cases).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a multi-country outbreak originating from Polish egg farms (Pijnacker et al., 2019), comprising of two distinct lineages each differing by five or fewer SNPs, was correctly attributed to a European origin (131/131 cases), but subsequently misattributed to a Southern Europe (131/131 cases), Spanish origin (103/130) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result supported by citation to Pijnacker et al., 2019 and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "1eb0ee81-6218-47d0-9212-d6e443a4b0bf",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C69",
+      "claim": "The multi-country outbreak originating from Polish egg farms was misattributed to a Spanish origin (103/130 cases).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a multi-country outbreak originating from Polish egg farms (Pijnacker et al., 2019), comprising of two distinct lineages each differing by five or fewer SNPs, was correctly attributed to a European origin (131/131 cases), but subsequently misattributed to a Southern Europe (131/131 cases), Spanish origin (103/130) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result supported by citation to Pijnacker et al., 2019 and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "5c85fa18-33a7-461e-8f5d-e297e9956902",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C70",
+      "claim": "The Polish dataset sampled from poultry was attributed to a European origin with high accuracy (34/35, 97.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "The Polish dataset, sampled from poultry, was attributed to a European origin with high accuracy (34/35, 97.1%), 19 of these were subsequently attributed to an East European origin (19/35, 54.3%) or which 18 were attributed to Poland (18/35, 51.4%) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "ed6e1dd0-68bf-49ba-ae54-724d253e8ad0",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C71",
+      "claim": "18 samples from the Polish poultry dataset were attributed to Poland (18/35, 51.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "The Polish dataset, sampled from poultry, was attributed to a European origin with high accuracy (34/35, 97.1%), 19 of these were subsequently attributed to an East European origin (19/35, 54.3%) or which 18 were attributed to Poland (18/35, 51.4%) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "308bd9b1-ec4f-4b92-9a0b-b5b2bc2b6ba8",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C72",
+      "claim": "The South African dataset of clinical cases was correctly attributed to a South African origin with 100% accuracy (25/25).",
+      "claim_type": "EXPLICIT",
+      "source": "The South African dataset of clinical cases (Smith et al., 2020), was correctly attributed to a South African origin with 100% accuracy (25/25) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result supported by citation to Smith et al., 2020 and shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "2b6ab1a3-b548-4cc3-a038-73bd1fe60ed0",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C73",
+      "claim": "The Singaporean dataset of human outbreaks was correctly attributed to South-East Asia (48/48).",
+      "claim_type": "EXPLICIT",
+      "source": "The Singaporean dataset of human outbreaks (Octavia et al., 2018) was correctly attributed to South-East Asia (48/48) with 91.7% of samples being correctly attributed to a Singaporean origin (44/48) and 4 samples being attributed to Indonesia (2), Malaysia (1), and Thailand (1) (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result supported by citation to Octavia et al., 2018 and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "40f16185-1928-4e1e-828c-1edb8633fed8",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C74",
+      "claim": "91.7% of samples from the Singaporean dataset were correctly attributed to a Singaporean origin (44/48).",
+      "claim_type": "EXPLICIT",
+      "source": "The Singaporean dataset of human outbreaks (Octavia et al., 2018) was correctly attributed to South-East Asia (48/48) with 91.7% of samples being correctly attributed to a Singaporean origin (44/48) and 4 samples being attributed to Indonesia (2), Malaysia (1), and Thailand (1) (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result supported by citation to Octavia et al., 2018 and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "c93c1d78-a556-4dfd-8278-5f19b83cbbc2",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C75",
+      "claim": "The optimized hML model generates accurate predictions of the geographical origin of S. Enteritidis genomes directly from raw read data in under 4 min per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Our optimized hML model generates accurate predictions of the geographical origin of S. Enteritidis genomes directly from raw read data in under 4 min per sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the model's performance based on the results presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "6c512e21-9669-4237-af19-37d9b8ccd5ce",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C76",
+      "claim": "The output of the pipeline is a predicted probability per hierarchical level (i.e. region, sub-region, and country levels) allowing for granular source attribution alongside an assessment of confidence in the prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "The output of this pipeline is a predicted probability per hierarchical level (i.e. region, sub-region, and country levels) allowing for granular source attribution alongside an assessment of confidence in the prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model output based on the methodology and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "faa58a35-7a24-451b-a05c-a10bf0c65660",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C77",
+      "claim": "Classification accuracy was negatively associated with both low sample numbers and increasing within-class genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Classification accuracy was negatively associated with both low sample numbers and increasing within-class genetic diversity (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2), although this did not fully explain the variation in predictive accuracy observed in the model, suggesting other complex factors may be involved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis shown in Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "825fedc7-f53e-404d-952c-02851638bb56",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C78",
+      "claim": "Ensemble classifiers outperformed other classifiers in the model selection process.",
+      "claim_type": "EXPLICIT",
+      "source": "Ensemble classifiers outperformed other classifiers (Figure 2, Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the model selection results shown in Figure 2 and Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "a4c48500-8bc2-49f0-bd46-d7f802c78d78",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C79",
+      "claim": "Class imbalance was not found to have a large impact on the resulting model.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, considering the large variation observed in some nodes of the hierarchy, the class imbalance was not found to have a large impact on the resulting model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the model selection and optimization process.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f3631094-992c-403b-818a-338f4d24ff95",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C80",
+      "claim": "Two of the top four best-performing classifier/resampler combinations included no resampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the top four best-performing classifier/resampler combinations included no resampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the model selection results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "78c2895b-73ae-4727-9502-5a613b298385",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C81",
+      "claim": "The COVID-19 pandemic has resulted in a vast disruption to international travel over the past 2 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst we have presented evidence that the hML model can robustly predict geographical sources for S. Enteritidis, the COVID-19 pandemic has resulted in a vast disruption to international travel over the past 2 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a known real-world event and its impact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "494e163d-3021-48a7-844c-31ba74dfa811",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C82",
+      "claim": "The UKHSA is seeing a return to pre-pandemic levels of imported S. Enteritidis infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The UKHSA is already seeing a return to pre-pandemic levels of imported infection and expect the pattern of the seasonality of imported S. Enteritidis infections to return.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current observations by the UKHSA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "0804278e-6452-42e1-97f8-f509ca6667fd",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C83",
+      "claim": "Of the 122 countries present in the initial dataset, only 38 (31%) were present in sufficient quantities over the surveillance period to include in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, of the 122 countries present in the initial dataset only 38 (31%) were present in sufficient quantities over the surveillance period to include in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "60a20ebd-6dc6-4a7f-bc48-c1fae9c39bdb",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C84",
+      "claim": "The model would provide useful information on the origin of infection but would not ultimately identify the true reservoir of the pathogen in cases where contaminated foodstuffs are exported between countries.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, the model would provide useful information on the origin of infection but would not ultimately identify the true reservoir of the pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the limitations of the model in complex outbreak scenarios.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "639f1b7f-7c47-4615-a4bc-64201ed8a495",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C85",
+      "claim": "Evidence of misattribution due to contaminated food distribution has been presented in the Polish eggs outbreak dataset used for validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence of this form of misattribution has been presented in the Polish eggs outbreak dataset used for validation (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the validation results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "ae027d7a-95f2-46b5-9aa3-1feb71e4a634",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C86",
+      "claim": "The Polish eggs outbreak represents an important limitation of the current model.",
+      "claim_type": "EXPLICIT",
+      "source": "This outbreak represents an important limitation of the current model and illustrates how multi-country outbreaks or long-established food network contamination pathways can confound accurate source attribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the validation results and their implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "60df56ac-6083-432c-96cc-a18e461a282f",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C87",
+      "claim": "Multi-country outbreaks or long-established food network contamination pathways can confound accurate source attribution.",
+      "claim_type": "EXPLICIT",
+      "source": "This outbreak represents an important limitation of the current model and illustrates how multi-country outbreaks or long-established food network contamination pathways can confound accurate source attribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the validation results and their implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "17530fd2-50e2-48f0-9e22-f53dada8aaba",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C88",
+      "claim": "Recent surveys have estimated that layovers occur on only a small proportion of flights (~15%).",
+      "claim_type": "EXPLICIT",
+      "source": "Recent surveys have estimated that layovers occur on only a small proportion of flights (~15%), although this could potentially have a larger impact on the data due to the bias in detecting cases that occur towards the end of a trip, which could result in a patient being admitted to UK-based clinical care setting, rather than one overseas (Department for Transport, 2018; Department of Transport, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Department for Transport, 2018 and Department of Transport, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f3f0e33d-f552-417b-92ed-857a601f5a67",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C89",
+      "claim": "There is evidence that using recently reported travel data can capture highly-relevant disease strains present in foodstuffs imported to the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst there is evidence that this approach can capture highly-relevant disease strains present in foodstuffs imported to the UK (Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019), strain prevalence is likely to vary across national borders due to differences in national and domestic regulations and food-processed methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "02cd7fd4-fcf8-452b-a352-8bbeae2733a3",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C90",
+      "claim": "Strain prevalence is likely to vary across national borders due to differences in national and domestic regulations and food-processed methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst there is evidence that this approach can capture highly-relevant disease strains present in foodstuffs imported to the UK (Chan et al., 2023; Chattaway et al., 2023; Jenkins et al., 2019), strain prevalence is likely to vary across national borders due to differences in national and domestic regulations and food-processed methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about factors affecting strain prevalence.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "43405726-0a9c-4c11-827d-36c4d696aa37",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C91",
+      "claim": "The model presented does not incorporate temporal information.",
+      "claim_type": "EXPLICIT",
+      "source": "The model presented herein is conceptually simple and does not incorporate temporal information, account for seasonal fluctuations in disease incidence, allow for multiple labels to be assigned to samples, or incorporate animal host/food source information, which may improve the prediction of multi-country outbreaks or provide additional information to further enhance epidemiological follow-up (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model's limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "276462d1-3a93-486b-a52c-a9f358db8994",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C92",
+      "claim": "The model does not account for seasonal fluctuations in disease incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "The model presented herein is conceptually simple and does not incorporate temporal information, account for seasonal fluctuations in disease incidence, allow for multiple labels to be assigned to samples, or incorporate animal host/food source information, which may improve the prediction of multi-country outbreaks or provide additional information to further enhance epidemiological follow-up (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model's limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "9c024338-579e-42fa-b9fe-bf260370114a",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C93",
+      "claim": "The model does not allow for multiple labels to be assigned to samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The model presented herein is conceptually simple and does not incorporate temporal information, account for seasonal fluctuations in disease incidence, allow for multiple labels to be assigned to samples, or incorporate animal host/food source information, which may improve the prediction of multi-country outbreaks or provide additional information to further enhance epidemiological follow-up (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model's limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "ee7677fd-25fd-4374-913c-8994a292b539",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C94",
+      "claim": "The model does not incorporate animal host/food source information.",
+      "claim_type": "EXPLICIT",
+      "source": "The model presented herein is conceptually simple and does not incorporate temporal information, account for seasonal fluctuations in disease incidence, allow for multiple labels to be assigned to samples, or incorporate animal host/food source information, which may improve the prediction of multi-country outbreaks or provide additional information to further enhance epidemiological follow-up (Lupolova et al., 2017; Lupolova et al., 2019; Wheeler et al., 2018; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model's limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "b2e8fa16-2c76-4dc7-825c-737746023445",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C95",
+      "claim": "The UK was excluded as a potential geographical source in the model due to the extremely low prevalence of S. Enteritidis in domestic poultry flocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the UK was excluded as a potential geographical source in the model due to the extremely low prevalence of S. Enteritidis in domestic poultry flocks and a lack of clinical isolates linked to consumption of locally produced foodstuffs (European Food Safety Authority and European Centre for Disease Prevention and Control, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision supported by a citation to European Food Safety Authority and European Centre for Disease Prevention and Control, 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "8cea13d9-ea2f-4a44-bc70-24fe0e126c27",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C96",
+      "claim": "There is a lack of clinical isolates linked to consumption of locally produced foodstuffs in the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the UK was excluded as a potential geographical source in the model due to the extremely low prevalence of S. Enteritidis in domestic poultry flocks and a lack of clinical isolates linked to consumption of locally produced foodstuffs (European Food Safety Authority and European Centre for Disease Prevention and Control, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision supported by a citation to European Food Safety Authority and European Centre for Disease Prevention and Control, 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "7119ed7e-816f-40e0-80e8-a97ac955f7a6",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C97",
+      "claim": "This work represents the first application of hierarchical machine learning for the automation of genomics-based geographical source attribution.",
+      "claim_type": "EXPLICIT",
+      "source": "This work represents the first application of hML for the automation of genomics-based geographical source attribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work based on the literature review.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "19b6434e-671c-4f9f-b252-3f983ceaa67f",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C98",
+      "claim": "The rapidity of predictions from raw sequencing data should greatly enhance epidemiologists' ability to trace the source of gastrointestinal outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapidity of predictions from raw sequencing data should greatly enhance epidemiologists' ability to trace the source of gastrointestinal outbreaks by condensing complex genetic data into understandable and actionable outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential impact of the method.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "ceeb2373-1e58-4866-bb02-8a280f147054",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C99",
+      "claim": "The initial dataset consisted of 10,223 S. Enteritidis isolates collected and sequenced by UKHSA between 2014\u20132019.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial dataset consisted of 10,223 S. Enteritidis isolates collected and sequenced by UKHSA between 2014\u20132019 as a part of their routine disease monitoring program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "7af9f6af-e49e-4ed0-874c-2743af71c82c",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C100",
+      "claim": "Raw read data were downloaded from the Sequence Read Archive (Bioproject: PRJNA248792).",
+      "claim_type": "EXPLICIT",
+      "source": "Raw read data were downloaded from the Sequence Read Archive (Bioproject: PRJNA248792) (Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "4e7ecfdc-a0d5-4d4b-bcef-b43857034236",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C101",
+      "claim": "A total of 220 samples were excluded due to quality filtering criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 220 samples were excluded due to these criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "6a4c150f-3c47-4c71-b3a6-fb8299c4ece7",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C102",
+      "claim": "Samples were assigned to region and subregion based upon the UN M49 Standard for regional codes.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were assigned to region and subregion based upon the UN M49 Standard for regional codes (https://unstats.un.org/unsd/methodology/m49/overview) [Accessed: 30 November 2021].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the methodology for geographical classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "9cf4350c-cf11-4627-bdf6-0b9162dc1be7",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C103",
+      "claim": "Any country with less than ten representative samples after filtering was excluded from further analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Any country with less than ten representative samples after filtering was excluded from further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the inclusion criteria for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "90252544-b08c-4e22-af5b-90f00359b391",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C104",
+      "claim": "A colored De Bruijn graph was constructed for the complete genome collection by passing the unitigs for individual samples to unitig caller v1.2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "A colored De Bruijn graph was constructed for the complete genome collection by passing the unitigs for individual samples to unitig caller v1.2.0 (Holley and Melsted, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the methodology, supported by a citation to Holley and Melsted, 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "4d0b284a-6f19-47b6-a977-d2912d251a1e",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C105",
+      "claim": "426,647 unique unitigs were identified in the 2,313 genome collection.",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 426,647 unique unitigs present in the 2,313 genome collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the results of the unitig analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "b467e8cb-b7e6-493b-b2b8-113560d85355",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C106",
+      "claim": "Unitigs that co-occurred in the same subset of samples were clustered into a single feature 'pattern', reducing the input from 426,647 unitig features into 94,865 pattern features.",
+      "claim_type": "EXPLICIT",
+      "source": "Unitigs that co-occurred in the same subset of samples (i.e. perfect correlation) were clustered into a single feature 'pattern' for input into feature selection and ML model-building algorithms. This reduced the input from 426,647 unitig features into 94,865 pattern features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the feature engineering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "dab3d478-7b8f-4e0c-be8a-0f5890101697",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "claim_id": "C107",
+      "claim": "The dataset was split into 75\u201325% train-test ratio stratified by the country.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset was split into 75\u201325% train-test ratio stratified by the country for downstream applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data splitting methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The UKHSA genomic surveillance program collected 10,223 S. Enteritidis isolates between 2014-2019, of which 3,434 had travel metadata. After quality filtering, clone downsampling (\u22645 SNPs), and removal of low-incidence countries (<10 isolates), 2,313 genomes from 38 countries across four continents were retained for machine learning, displaying strong phylogeographical signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 and C99-C103 provide a clear and consistent description of the dataset collection, filtering, and composition. The phylogeographical signal is supported by Figure 1B. The methodological steps are well-documented and the final dataset composition is explicitly stated with appropriate quality control measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "4e0c81d4-4a90-4982-8fff-ccc9b2f7e956",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "S. Enteritidis infections showed strong seasonality in Europe and Asia (summer peaks), with Turkey and Egypt presenting disproportionately high infection risk for UK travelers, while France and Spain showed very low risk despite being popular destinations. The UKHSA dataset demonstrated more consistent sampling than NCBI data for the same period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 are supported by data presented in Figures 1C, 1D, and 1E. The seasonality patterns, relative risk calculations, and dataset comparisons are clearly documented with appropriate statistical methods (Kolmogorov-Smirnov test for sampling consistency).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "e37aa913-c993-467d-9d35-675042caa840",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A hierarchical machine learning classifier was developed with 16 multi-class classifiers (1 root, 4 regional, 11 sub-regional) to classify 2,313 S. Enteritidis genomes into 53 classes (4 continents, 11 sub-regions, 38 countries). The model uses a top-down approach with a 0.5 probability threshold and was trained on unitig presence-absence patterns from raw sequencing reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C49-C53 provide a clear and consistent description of the hierarchical model architecture and methodology. The model structure is well-documented and the approach is appropriately described with supporting figures (Figure 2A).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "e5bb7ef4-bfb8-48ed-b76f-b0f34bea741e",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The hierarchical model achieved macro F1 scores of 0.954 (continental), 0.718 (sub-regional), and 0.661 (country level), outperforming a flat classifier (macro F1: 0.61). Ensemble classifiers performed best, and class imbalance had minimal impact, with two of the top four models requiring no resampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 and C54 report clear performance metrics supported by Figure 2 and Supplementary file 1A. Claims C78-C80 about model selection are supported by comparative analysis. The hierarchical advantage over flat classification is demonstrated with appropriate metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "6cfc19cc-9b14-4e0e-b79c-d9c3d6b3e7af",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The complete pipeline processes samples from raw sequencing reads to geographical prediction in under 4 minutes per sample (approximately 3.5 minutes assuming <100x coverage).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C55, and C75 consistently report the computational performance of the method. The timing is explicitly stated and represents a key practical advantage of the approach for real-time surveillance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "53ca16a4-995e-4de8-beba-c58ed7abc0b3",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Classification accuracy varied by region: Africa showed consistently high accuracy (hF1 >0.7 for all classes), Asia showed moderate to high accuracy (hF1: 0.58-0.95), and Europe was generally well-classified (hF1 >0.66) except for France and Italy (hF1 ~0.3). Nine commonly visited countries achieved hF1 >0.9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C56-C58, C62 are directly supported by data in Figure 3A. The regional and country-level performance metrics are clearly presented with specific values. The variation in performance across geographical regions is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "74ead09d-eda0-4e0c-b9ac-31933966db1a",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Classification accuracy was negatively correlated with low sample numbers and high within-class genetic diversity. France and the United States showed both characteristics, with French samples arising from multiple divergent clades. However, these factors did not fully explain all variation in predictive accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 and C77 are supported by analyses in Figure 3B and supplementary figures. The correlation between sample size, diversity, and accuracy is demonstrated, though the authors appropriately note this doesn't explain all variation, suggesting additional complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "9a7b7aef-9a98-4ad3-9c71-17fac03fb474",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Longitudinal analysis showed that predictive accuracy improved with training window size, asymptoting after 2 years of data. The largest improvement occurred between 1-2 years of training data. Predictive accuracy decreased by approximately 0.05 micro F1 per year when predicting into the future.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by data in Figure 4A and 4B. The temporal stability analysis is well-designed and provides practical guidance for model retraining schedules. The quantitative decay rate is explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "9cd06717-d04c-4fde-8d27-3af604fb92ee",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "External validation showed high accuracy for single-country outbreaks: Spanish egg outbreak (100% correct), South African clinical cases (100% correct), and Singaporean outbreaks (100% correct regional attribution, 91.7% correct country attribution).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C72-C74 report validation results supported by Figure 5A, 5D, and 5E with appropriate citations. The high accuracy for geographically focused outbreaks demonstrates model robustness for this use case.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "32d7557c-4146-4265-bce1-26f559f61c2f",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Polish egg outbreak (2015-2018) was correctly attributed to Europe (131/131) but misattributed at finer scales to Southern Europe (131/131) and Spain (103/130). Polish poultry samples showed 97.1% European attribution but only 51.4% Poland attribution. This multi-country outbreak represents an important model limitation, demonstrating how contaminated food distribution networks can confound source attribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 and C85-C87 are supported by Figure 5B and 5C. The authors appropriately identify this as a limitation and provide a mechanistic explanation: mislabeled training samples from the outbreak were attributed to Southern European countries based on travel data, biasing the model. This represents honest reporting of model limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "57ab126f-d79a-41f2-ad86-64b94d421802",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Genomic features were extracted using a colored De Bruijn graph approach, identifying 426,647 unique unitigs that were clustered into 94,865 pattern features based on perfect co-occurrence. The dataset was split 75-25% train-test stratified by country.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 describe the feature engineering methodology with appropriate technical detail and citations. The dimensionality reduction from unitigs to patterns is clearly explained and the train-test split follows standard practices with appropriate stratification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "59fd1d72-ef19-400f-a463-193933345cdf",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model does not incorporate temporal information, seasonal fluctuations, multiple label assignment, or animal host/food source information, which could potentially improve predictions for multi-country outbreaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94 explicitly acknowledge model limitations with appropriate citations to methods that could address these gaps. This represents transparent reporting of scope limitations and suggests directions for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "b30dfb29-eae5-4451-84a8-1824b3e84a16",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Only 38 of 122 countries (31%) in the initial dataset had sufficient samples (\u226510) for model inclusion. The UK was excluded as a source due to extremely low S. Enteritidis prevalence in domestic poultry and lack of clinical isolates linked to local foodstuffs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C95-C96 describe dataset limitations with appropriate justification. The UK exclusion is supported by citation to European surveillance data. The sample size threshold is clearly stated and represents a reasonable inclusion criterion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "a4ec83ef-102c-46f5-8ef2-4d17ec8b9c3a",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model has inherent limitations in complex scenarios: it cannot identify true pathogen reservoirs when contaminated foodstuffs are exported between countries, though travel data can capture relevant strains in imported foods. Potential confounders include multi-country trips and layovers (~15% of flights), and strain prevalence likely varies across borders due to regulatory differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C88-C90 acknowledge important limitations with appropriate citations. The discussion of confounding factors is balanced and realistic. Claim C84 is appropriately labeled as speculation about model behavior in complex scenarios, supported by the Polish outbreak validation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "6dab0dee-1b76-4a88-a950-b2fd9aa512a6",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "This work represents the first application of hierarchical machine learning to geographical source attribution for bacterial pathogens, as machine learning had previously been applied only to host prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C97 assert novelty based on literature review (C31-C34 cite prior work on host prediction). The claim is appropriately scoped to geographical source attribution specifically, distinguishing it from prior host attribution work. The literature review appears comprehensive for this specific application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "S. Enteritidis is a major global cause of salmonellosis transmitted through contaminated food, causing 550 million illnesses annually including 220 million children. In the UK, imported foods and foreign travel are now the primary infection risks following successful domestic control programs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C12-C20 provide background context supported by appropriate citations to WHO, UKHSA, and peer-reviewed literature. These establish the public health significance and epidemiological context for the study. All claims are properly attributed to cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Whole genome sequencing provides high-resolution typing for outbreak investigation. The UKHSA has routinely sequenced all UK Salmonella cases since 2014 with travel metadata, enabling identification of major outbreaks. Traditional UKHSA source attribution involves phylogenetic analysis, genetic relatedness assessment, travel case analysis, and food network reconstruction, but is resource-intensive and limited to major threats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C30 describe current WGS surveillance practices and traditional attribution methods with appropriate citations. The description of UKHSA methods and their limitations provides important context for the need for automated approaches. The resource limitations are acknowledged as motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "5677ec92-838d-4c54-af9f-2a876fea568f",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Machine learning has successfully predicted bacterial host sources for multiple pathogens (S. enterica, E. coli, S. typhimurium, C. jejuni, L. monocytogenes). S. Enteritidis has a population structure stratified by geographical source, making it suitable for ML-based geographical attribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 and C36 establish the precedent for ML in microbial source attribution and the biological basis for geographical prediction. All claims are supported by appropriate citations. The phylogeographical structure of S. Enteritidis is well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "f95e7b4f-dfee-4d64-b0c5-e704011ee0d1",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The pipeline outputs predicted probabilities at each hierarchical level (region, sub-region, country), providing granular source attribution with confidence assessment. The rapidity of predictions should enhance epidemiologists' ability to trace outbreak sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is supported by the methodology and Figure 3C showing probability outputs. However, C98 is speculative about future impact on epidemiological practice. While the technical capability is demonstrated, the actual enhancement of epidemiological practice would require prospective implementation and evaluation, which has not been performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    },
+    {
+      "id": "2e2a1672-9aa2-41df-8a04-bd657c55a239",
+      "content_id": "baecc63b-8ba4-4b0f-a4e2-1bfa7bce1c68",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The COVID-19 pandemic disrupted international travel, but UKHSA is seeing a return to pre-pandemic infection levels and expects seasonal patterns to return.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 acknowledge a limitation regarding model applicability during/after COVID-19. C81 is well-established knowledge about pandemic travel disruption. C82 represents current UKHSA observations about infection patterns returning to baseline, which is reasonable given the timing of the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:10.748044Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "33251c0f-3203-4fe4-a8be-17cbddc7010e",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "bebd5e7a-2421-4077-bf86-c80955cb3c96",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "3fc6c3df-3e3a-40cf-85ed-eee44cc4ca81",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "f6f3bc36-c5f3-4411-94d5-459e314ec5e2",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "216375fc-2c36-4ac4-85e6-de4e7f75647b",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "5a1a7033-79fe-4cf6-9236-4f3f845eaf4e",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "ceeb2373-1e58-4866-bb02-8a280f147054",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "7af9f6af-e49e-4ed0-874c-2743af71c82c",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "4e7ecfdc-a0d5-4d4b-bcef-b43857034236",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "6a4c150f-3c47-4c71-b3a6-fb8299c4ece7",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "9cf4350c-cf11-4627-bdf6-0b9162dc1be7",
+      "result_id": "6a8f2374-7a00-4a1f-9518-81a9d2c1ee3a"
+    },
+    {
+      "claim_id": "755c6347-faaa-4bce-a8f0-cc5043bbc254",
+      "result_id": "4e0c81d4-4a90-4982-8fff-ccc9b2f7e956"
+    },
+    {
+      "claim_id": "7028130f-c8b4-4993-9c59-05b1c419b5b6",
+      "result_id": "4e0c81d4-4a90-4982-8fff-ccc9b2f7e956"
+    },
+    {
+      "claim_id": "82521bd2-1254-489d-8692-43f8fc1b845f",
+      "result_id": "4e0c81d4-4a90-4982-8fff-ccc9b2f7e956"
+    },
+    {
+      "claim_id": "ad45bedf-c527-4feb-8e02-dbf9052b6e3d",
+      "result_id": "4e0c81d4-4a90-4982-8fff-ccc9b2f7e956"
+    },
+    {
+      "claim_id": "a65d04fc-9272-4132-a852-6b4e0161e446",
+      "result_id": "4e0c81d4-4a90-4982-8fff-ccc9b2f7e956"
+    },
+    {
+      "claim_id": "b546821b-59bd-4db0-9d75-74bd2ad801cc",
+      "result_id": "4e0c81d4-4a90-4982-8fff-ccc9b2f7e956"
+    },
+    {
+      "claim_id": "ad1564fa-1001-4d90-a168-809a40489779",
+      "result_id": "e37aa913-c993-467d-9d35-675042caa840"
+    },
+    {
+      "claim_id": "8b6f59c5-079a-49db-8ae2-636a9c39ac85",
+      "result_id": "e37aa913-c993-467d-9d35-675042caa840"
+    },
+    {
+      "claim_id": "2f442550-67e6-46d1-b261-960d1d66ccae",
+      "result_id": "e37aa913-c993-467d-9d35-675042caa840"
+    },
+    {
+      "claim_id": "c272c79a-2cab-49a7-8fcd-013a254f16b3",
+      "result_id": "e37aa913-c993-467d-9d35-675042caa840"
+    },
+    {
+      "claim_id": "2a29bd81-1610-4391-81ce-6eb870ecc8fe",
+      "result_id": "e37aa913-c993-467d-9d35-675042caa840"
+    },
+    {
+      "claim_id": "1837d9e3-4714-4a1e-b01b-f09e06b7f7ab",
+      "result_id": "e37aa913-c993-467d-9d35-675042caa840"
+    },
+    {
+      "claim_id": "574591eb-c648-4a4c-8fdf-7be40229d890",
+      "result_id": "e37aa913-c993-467d-9d35-675042caa840"
+    },
+    {
+      "claim_id": "e79605b3-6c9b-41f8-829c-aebd82ff7ba4",
+      "result_id": "e5bb7ef4-bfb8-48ed-b76f-b0f34bea741e"
+    },
+    {
+      "claim_id": "e1cd1363-9f60-4565-bc03-ce657b1deb96",
+      "result_id": "e5bb7ef4-bfb8-48ed-b76f-b0f34bea741e"
+    },
+    {
+      "claim_id": "f34a2e22-df13-4767-bbe5-d384a2481c29",
+      "result_id": "e5bb7ef4-bfb8-48ed-b76f-b0f34bea741e"
+    },
+    {
+      "claim_id": "e7a21918-e281-4ee5-a785-2f27bd5df89a",
+      "result_id": "e5bb7ef4-bfb8-48ed-b76f-b0f34bea741e"
+    },
+    {
+      "claim_id": "825fedc7-f53e-404d-952c-02851638bb56",
+      "result_id": "e5bb7ef4-bfb8-48ed-b76f-b0f34bea741e"
+    },
+    {
+      "claim_id": "a4c48500-8bc2-49f0-bd46-d7f802c78d78",
+      "result_id": "e5bb7ef4-bfb8-48ed-b76f-b0f34bea741e"
+    },
+    {
+      "claim_id": "f3631094-992c-403b-818a-338f4d24ff95",
+      "result_id": "e5bb7ef4-bfb8-48ed-b76f-b0f34bea741e"
+    },
+    {
+      "claim_id": "5947238e-47aa-46e6-91f4-8222329e45f1",
+      "result_id": "6cfc19cc-9b14-4e0e-b79c-d9c3d6b3e7af"
+    },
+    {
+      "claim_id": "45599381-f6a6-464c-a960-d9bafaaeaf2f",
+      "result_id": "6cfc19cc-9b14-4e0e-b79c-d9c3d6b3e7af"
+    },
+    {
+      "claim_id": "c93c1d78-a556-4dfd-8278-5f19b83cbbc2",
+      "result_id": "6cfc19cc-9b14-4e0e-b79c-d9c3d6b3e7af"
+    },
+    {
+      "claim_id": "f1bc4055-5aff-4a35-ae8c-23c2b1c533de",
+      "result_id": "53ca16a4-995e-4de8-beba-c58ed7abc0b3"
+    },
+    {
+      "claim_id": "3e7b0296-1de4-4d13-8b5e-f5a9748e4e01",
+      "result_id": "53ca16a4-995e-4de8-beba-c58ed7abc0b3"
+    },
+    {
+      "claim_id": "1b882f09-9b01-4abf-b938-2e369825415d",
+      "result_id": "53ca16a4-995e-4de8-beba-c58ed7abc0b3"
+    },
+    {
+      "claim_id": "125fec8d-537c-4cbf-9f6c-de45e5e32d7e",
+      "result_id": "53ca16a4-995e-4de8-beba-c58ed7abc0b3"
+    },
+    {
+      "claim_id": "0074f23f-a024-47c5-9423-03ca1452c2ae",
+      "result_id": "53ca16a4-995e-4de8-beba-c58ed7abc0b3"
+    },
+    {
+      "claim_id": "745a6f94-ce24-4280-972b-e3c01c23d19a",
+      "result_id": "74ead09d-eda0-4e0c-b9ac-31933966db1a"
+    },
+    {
+      "claim_id": "456d1cc1-6166-4804-bb29-f275492bb774",
+      "result_id": "74ead09d-eda0-4e0c-b9ac-31933966db1a"
+    },
+    {
+      "claim_id": "8958475a-090d-47b4-8bac-0a99803e7787",
+      "result_id": "74ead09d-eda0-4e0c-b9ac-31933966db1a"
+    },
+    {
+      "claim_id": "faa58a35-7a24-451b-a05c-a10bf0c65660",
+      "result_id": "74ead09d-eda0-4e0c-b9ac-31933966db1a"
+    },
+    {
+      "claim_id": "27ce51a3-e295-4294-b5bc-730b433a82b4",
+      "result_id": "9a7b7aef-9a98-4ad3-9c71-17fac03fb474"
+    },
+    {
+      "claim_id": "f892fa28-da9d-4521-a1e6-e15e64eb2e7f",
+      "result_id": "9a7b7aef-9a98-4ad3-9c71-17fac03fb474"
+    },
+    {
+      "claim_id": "f74adf12-1408-4a29-af7c-f69d2385344c",
+      "result_id": "9a7b7aef-9a98-4ad3-9c71-17fac03fb474"
+    },
+    {
+      "claim_id": "f295754e-ddf5-4802-a071-25f69090d7eb",
+      "result_id": "9cd06717-d04c-4fde-8d27-3af604fb92ee"
+    },
+    {
+      "claim_id": "308bd9b1-ec4f-4b92-9a0b-b5b2bc2b6ba8",
+      "result_id": "9cd06717-d04c-4fde-8d27-3af604fb92ee"
+    },
+    {
+      "claim_id": "2b6ab1a3-b548-4cc3-a038-73bd1fe60ed0",
+      "result_id": "9cd06717-d04c-4fde-8d27-3af604fb92ee"
+    },
+    {
+      "claim_id": "40f16185-1928-4e1e-828c-1edb8633fed8",
+      "result_id": "9cd06717-d04c-4fde-8d27-3af604fb92ee"
+    },
+    {
+      "claim_id": "8d6ae6f0-312c-4b66-9cc4-c0731d601f55",
+      "result_id": "32d7557c-4146-4265-bce1-26f559f61c2f"
+    },
+    {
+      "claim_id": "6dc17207-d5b0-4aea-b68f-c9fbfbdfd728",
+      "result_id": "32d7557c-4146-4265-bce1-26f559f61c2f"
+    },
+    {
+      "claim_id": "1eb0ee81-6218-47d0-9212-d6e443a4b0bf",
+      "result_id": "32d7557c-4146-4265-bce1-26f559f61c2f"
+    },
+    {
+      "claim_id": "5c85fa18-33a7-461e-8f5d-e297e9956902",
+      "result_id": "32d7557c-4146-4265-bce1-26f559f61c2f"
+    },
+    {
+      "claim_id": "ed6e1dd0-68bf-49ba-ae54-724d253e8ad0",
+      "result_id": "32d7557c-4146-4265-bce1-26f559f61c2f"
+    },
+    {
+      "claim_id": "639f1b7f-7c47-4615-a4bc-64201ed8a495",
+      "result_id": "32d7557c-4146-4265-bce1-26f559f61c2f"
+    },
+    {
+      "claim_id": "ae027d7a-95f2-46b5-9aa3-1feb71e4a634",
+      "result_id": "32d7557c-4146-4265-bce1-26f559f61c2f"
+    },
+    {
+      "claim_id": "60df56ac-6083-432c-96cc-a18e461a282f",
+      "result_id": "32d7557c-4146-4265-bce1-26f559f61c2f"
+    },
+    {
+      "claim_id": "90252544-b08c-4e22-af5b-90f00359b391",
+      "result_id": "57ab126f-d79a-41f2-ad86-64b94d421802"
+    },
+    {
+      "claim_id": "4d0b284a-6f19-47b6-a977-d2912d251a1e",
+      "result_id": "57ab126f-d79a-41f2-ad86-64b94d421802"
+    },
+    {
+      "claim_id": "b467e8cb-b7e6-493b-b2b8-113560d85355",
+      "result_id": "57ab126f-d79a-41f2-ad86-64b94d421802"
+    },
+    {
+      "claim_id": "dab3d478-7b8f-4e0c-be8a-0f5890101697",
+      "result_id": "57ab126f-d79a-41f2-ad86-64b94d421802"
+    },
+    {
+      "claim_id": "43405726-0a9c-4c11-827d-36c4d696aa37",
+      "result_id": "59fd1d72-ef19-400f-a463-193933345cdf"
+    },
+    {
+      "claim_id": "276462d1-3a93-486b-a52c-a9f358db8994",
+      "result_id": "59fd1d72-ef19-400f-a463-193933345cdf"
+    },
+    {
+      "claim_id": "9c024338-579e-42fa-b9fe-bf260370114a",
+      "result_id": "59fd1d72-ef19-400f-a463-193933345cdf"
+    },
+    {
+      "claim_id": "ee7677fd-25fd-4374-913c-8994a292b539",
+      "result_id": "59fd1d72-ef19-400f-a463-193933345cdf"
+    },
+    {
+      "claim_id": "0804278e-6452-42e1-97f8-f509ca6667fd",
+      "result_id": "b30dfb29-eae5-4451-84a8-1824b3e84a16"
+    },
+    {
+      "claim_id": "b2e8fa16-2c76-4dc7-825c-737746023445",
+      "result_id": "b30dfb29-eae5-4451-84a8-1824b3e84a16"
+    },
+    {
+      "claim_id": "8cea13d9-ea2f-4a44-bc70-24fe0e126c27",
+      "result_id": "b30dfb29-eae5-4451-84a8-1824b3e84a16"
+    },
+    {
+      "claim_id": "60a20ebd-6dc6-4a7f-bc48-c1fae9c39bdb",
+      "result_id": "a4ec83ef-102c-46f5-8ef2-4d17ec8b9c3a"
+    },
+    {
+      "claim_id": "17530fd2-50e2-48f0-9e22-f53dada8aaba",
+      "result_id": "a4ec83ef-102c-46f5-8ef2-4d17ec8b9c3a"
+    },
+    {
+      "claim_id": "f3f0e33d-f552-417b-92ed-857a601f5a67",
+      "result_id": "a4ec83ef-102c-46f5-8ef2-4d17ec8b9c3a"
+    },
+    {
+      "claim_id": "02cd7fd4-fcf8-452b-a352-8bbeae2733a3",
+      "result_id": "a4ec83ef-102c-46f5-8ef2-4d17ec8b9c3a"
+    },
+    {
+      "claim_id": "82d0a716-a3d6-414d-8dd6-329b12b993c8",
+      "result_id": "6dab0dee-1b76-4a88-a950-b2fd9aa512a6"
+    },
+    {
+      "claim_id": "7119ed7e-816f-40e0-80e8-a97ac955f7a6",
+      "result_id": "6dab0dee-1b76-4a88-a950-b2fd9aa512a6"
+    },
+    {
+      "claim_id": "b718d1ed-3ee8-40eb-9212-4459962fb6af",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "765b698f-b1b2-476d-8a38-af957f553059",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "bfe455a6-90d3-4a23-875b-c3d0e4b37259",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "8ee91ceb-56b0-4d72-81cc-c61aeca68170",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "82fad3bb-0e94-4c15-95ff-391a7afa3706",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "f51e6f8c-ffce-4891-8640-fcdfb1df75d7",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "4304726e-fb2f-4284-84d1-c90ec94caf18",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "c53eec04-0b64-4d8f-8299-af9415055b17",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "323e2af0-bef9-47ab-9f54-5e7cca6209f9",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "c555b930-d018-43b5-bc16-4f5380109d3b",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "0e102a44-0cfa-4530-b707-378e35ed7810",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "4605769d-e817-430c-be4e-a726ab03c173",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "4207ee08-7645-43f6-af47-44282dc87c08",
+      "result_id": "042c6ff8-5830-428e-b0a6-3abcbf9ee25e"
+    },
+    {
+      "claim_id": "c998a35f-99b2-4324-8b0a-642a3dc349d2",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "c78e5c79-a350-4518-931e-c48d00ae8adc",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "5d45029f-efff-4ccf-a6a2-46b15235ea44",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "e71baada-4186-46e2-9080-690a12f4ac7e",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "b8413da1-88b2-424c-a4b0-1d1a43b3c4f6",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "12d668a5-4645-4ca0-a000-1f9502ce0833",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "d2dc27f4-5b6a-4a5a-a393-3c1da2b59e7b",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "5044f281-1677-4364-9bba-ae52c1c2911e",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "5b70fb7e-52fa-4c2b-8d5e-4f10918cc0a9",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "9875b255-c9b9-42ca-a245-3281c71e6f73",
+      "result_id": "dff02dd9-4933-46b7-8165-b325cc0c1bd8"
+    },
+    {
+      "claim_id": "be0878be-0694-4946-b19f-be3fb437767e",
+      "result_id": "5677ec92-838d-4c54-af9f-2a876fea568f"
+    },
+    {
+      "claim_id": "90526f0c-d3d7-4151-a068-1a6f204cdf3f",
+      "result_id": "5677ec92-838d-4c54-af9f-2a876fea568f"
+    },
+    {
+      "claim_id": "3a2922dd-0dd6-4580-8999-ffc939b05e15",
+      "result_id": "5677ec92-838d-4c54-af9f-2a876fea568f"
+    },
+    {
+      "claim_id": "320da2ff-a46c-43c0-8d3f-52ee7520255f",
+      "result_id": "5677ec92-838d-4c54-af9f-2a876fea568f"
+    },
+    {
+      "claim_id": "1891af16-600e-4ec7-a122-e62508d89632",
+      "result_id": "5677ec92-838d-4c54-af9f-2a876fea568f"
+    },
+    {
+      "claim_id": "6c512e21-9669-4237-af19-37d9b8ccd5ce",
+      "result_id": "f95e7b4f-dfee-4d64-b0c5-e704011ee0d1"
+    },
+    {
+      "claim_id": "19b6434e-671c-4f9f-b252-3f983ceaa67f",
+      "result_id": "f95e7b4f-dfee-4d64-b0c5-e704011ee0d1"
+    },
+    {
+      "claim_id": "78c2895b-73ae-4727-9502-5a613b298385",
+      "result_id": "2e2a1672-9aa2-41df-8a04-bd657c55a239"
+    },
+    {
+      "claim_id": "494e163d-3021-48a7-844c-31ba74dfa811",
+      "result_id": "2e2a1672-9aa2-41df-8a04-bd657c55a239"
+    }
+  ],
+  "comparisons": []
+}

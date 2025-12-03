@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Tuberculous meningitis (TBM) has high mortality (20-25% in HIV-negative, ~40% in HIV-positive individuals) linked to excessive inflammation. Adjunctive dexamethasone reduces mortality by ~30% and became standard of care following a Vietnam RCT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C13 establish the background on TBM mortality and corticosteroid treatment. These are well-supported by multiple citations to prior literature and represent established knowledge in the field. The mortality figures and treatment efficacy are consistently reported across studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work suggested heterogeneity in glucocorticoid responsiveness. Zebrafish studies identified LTA4H as a key regulator, and a functional human variant (rs17525495) was found where the TT genotype (increased expression) was associated with dexamethasone benefit in Vietnam, while CC patients were potentially harmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 describe prior findings from zebrafish models and the original Vietnam RCT analysis. These are well-documented with appropriate citations and establish the mechanistic rationale for the current study. The genotype-treatment interaction findings are from published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Two new studies in Vietnam and Indonesia tested whether TT mortality is less than CC+CT mortality, with all patients receiving glucocorticoids as standard of care. Vietnam confirmed this prediction, but Indonesia did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 accurately describe the design and primary findings of the two cohort studies being reanalyzed. These are supported by citations to the original publications and set up the motivation for the current Bayesian reanalysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C44",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The Indonesia cohort had more severe disease on presentation than Vietnam, with higher mortality (39.9% vs 18.8%), earlier deaths (median 8 vs 50 days), lower GCS, and a shift from Grade 1 (9% vs 37%) to Grade 2 (76% vs 47%), while Grade 3 proportions were similar (15% each).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C54 describe cohort characteristics from Table 1 and Figure 1. The data are clearly presented with Bayesian posterior probabilities indicating statistical significance. The descriptive statistics are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cox regression assumes constant hazard ratios and could miss important differences in TBM with its variable time-course. Bayesian analysis is better suited for subgroup analysis, detecting time-limited differences, and has less bias in post-hoc analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 provide methodological justification for using Bayesian methods. The limitations of Cox regression for this application are appropriately cited, and the advantages of Bayesian approaches are well-established in the statistical literature. The rationale is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In Vietnam, Bayesian analysis confirmed TT genotype survival advantage in the overall cohort (significant from day 39, max probability 0.98, 11% gap). Surprisingly, the effect was strongest in Grade 3 (significant from day 3, max probability 0.97, 30% gap), with Grade 3 patients driving the overall association despite being only 15.9% of the cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C73 present the main Vietnam findings from the Bayesian reanalysis shown in Figure 2A-D. The survival curves, hazard rates, and posterior probabilities are clearly presented. The finding that TT benefit is strongest in Grade 3 (contrary to prior hypothesis) is well-supported by the data and represents a key discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In Indonesia, TT survival was non-significantly higher overall (max probability 0.92), but significantly higher in Grade 2 (days 4-32, max probability 0.99, 9% gap). Grade 1 analysis was uninformative (only 1 TT patient), and the TT effect was absent in Grade 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C79 present the Indonesia findings from Figure 2E-H. The data show a significant TT effect in Grade 2 but not Grade 3, with appropriate acknowledgment of the uninformative Grade 1 analysis. The findings are clearly supported by the survival curves and hazard rate analyses presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Within each cohort, mortality risk increased significantly with grade severity (Grade 1 < Grade 2 < Grade 3), with the highest risk early but sustained long-term. Hazard rate ratios peaked early (Vietnam: Grade 3/2 = 13.9 on day 1; Indonesia: Grade 2/1 = 11.2 on day 1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C123 describe within-cohort grade comparisons from Figure 3. The survival curves and hazard rate analyses clearly demonstrate the expected relationship between disease severity and mortality. The quantitative findings are well-supported by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Grade-for-grade mortality was significantly higher in Indonesia than Vietnam for Grades 2 (18% gap) and 3 (24% gap), with substantially increased early hazard rates. This was not explained by more severe disease within grades by GCS; Indonesia Grade 3 patients actually had milder GCS scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C127 present between-cohort comparisons from Figure 4. The data clearly show higher mortality in Indonesia even after stratifying by grade, and the GCS analysis (Figure 1) rules out within-grade severity differences as an explanation. This is a critical finding for interpreting the LTA4H effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "LTA4H TT genotype confers survival benefit that begins early and continues long-term in both populations, but this benefit is nullified in the most severe cases with high early mortality. Indonesia Grade 2 mortality (38%) was virtually identical to Vietnam Grade 3 (37.9%), suggesting ~40% mortality represents the boundary where LTA4H TT benefit is lost, overridden by other mortality factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C89-C98 present the main conclusions integrating findings across both cohorts. The data support that TT benefit exists in both populations but is lost at extreme mortality levels. The ~40% mortality threshold is an inference from comparing Indonesia Grade 2 to Vietnam Grade 3, which is reasonable but somewhat speculative. The conclusion is well-supported overall.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The causes of excess Indonesia Grade 3 mortality cannot be definitively determined due to differences in patient populations, care protocols, and intensive care availability. Possible explanations include: (1) better ancillary care in Vietnam where all patients were in trials; (2) greater dysregulated inflammation in younger Indonesia patients through LTA4H-independent pathways less responsive to dexamethasone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C109 present speculative explanations for the Indonesia findings. While the authors appropriately acknowledge this as a limitation and offer plausible hypotheses, these remain untested. The speculation about respiratory support, age effects, and genetic variants is reasonable but lacks direct evidence. This represents appropriate scientific caution about causal interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C94"
+    ],
+    "result": "LTA4H genotyping together with disease severity assessment may target glucocorticoid therapy to patients most likely to benefit. This parallels fluoroquinolones in TBM, which benefit Grade 1-2 but not Grade 3 disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C94 present the clinical implications and comparison to fluoroquinolones. The suggestion for targeted therapy is a reasonable inference from the findings, appropriately framed as speculative ('may'). The fluoroquinolone parallel is cited and provides precedent for severity-dependent treatment effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The analysis included 439 Vietnam and 376 Indonesia HIV-negative patients (139 Indonesia patients excluded for missing data). Vietnam patients were from two Ho Chi Minh City hospitals, all received dexamethasone for 6-8 weeks. Analysis was limited to 9 months to match Vietnam's observation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 describe the study methods. The patient selection, exclusions, treatment protocols, and analytical decisions are clearly documented. The 9-month truncation for comparability is appropriate. These methodological details are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C130",
+      "C131",
+      "C132",
+      "C58"
+    ],
+    "result": "LTA4H genotype frequencies differed between cohorts (Indonesia had more CC, Vietnam had more CT), but within each cohort, genotype frequencies did not differ significantly by grade, confirming no confounding between genotype and disease severity at presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C128, C130-C132 present genotype distribution data from Table 2. The finding that genotype does not vary by grade within cohorts is important for ruling out confounding and is clearly supported by the data. The between-cohort differences in genotype frequency are also well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The ~2-fold increased overall mortality in Indonesia could be largely accounted for by the 1.6-fold increase in Grade 2 patients. Disease severity at presentation is a strong predictor of earlier death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 present an inference about the relationship between grade distribution and overall mortality. This is a reasonable calculation based on the data in Table 1, and the relationship between severity and mortality is well-established in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In Vietnam Grade 3, TT survival was significantly higher from day 3 with 30% gap, and non-TT hazard peaked at 16\u00d7 higher on day 3, remaining >1 throughout. In Indonesia Grade 2, TT survival was significant on days 4-32 with 9% gap, and non-TT hazard peaked at 5\u00d7 higher on day 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 provide detailed quantitative results from Figure 2D and 2G. These specific numerical findings (hazard rate ratios, timing, survival gaps) are directly supported by the figure data and represent the key evidence for TT benefit in severe disease.",
+    "result_type": "MAJOR"
+  }
+]

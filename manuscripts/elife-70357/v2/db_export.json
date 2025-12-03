@@ -1,0 +1,1553 @@
+{
+  "submission": {
+    "id": "fea7b23a-2b05-4bba-8364-153fe4c5e7ed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:25:32.266402Z",
+    "updated_at": "2025-12-03T08:25:32.266402Z"
+  },
+  "content": [
+    {
+      "id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "submission_id": "fea7b23a-2b05-4bba-8364-153fe4c5e7ed",
+      "content_type": "manuscript",
+      "content_text": "# Purified EDEM3 or EDEM1 alone produces determinant oligosaccharide structures from M8B in mammalian glycoprotein ERAD\n\n## Authors\n\n- Ginto George<sup>1</sup> ([ORCID: 0000-0003-4804-9594](https://orcid.org/0000-0003-4804-9594))\n- Satoshi Ninagawa<sup>1</sup> ([ORCID: 0000-0002-8005-4716](https://orcid.org/0000-0002-8005-4716))\n- Hirokazu Yagi<sup>2</sup> ([ORCID: 0000-0001-9296-0225](https://orcid.org/0000-0001-9296-0225))\n- Jun-ichi Furukawa<sup>3</sup> ([ORCID: 0000-0002-7284-2261](https://orcid.org/0000-0002-7284-2261))\n- Noritaka Hashii<sup>4</sup> ([ORCID: 0000-0003-1363-2050](https://orcid.org/0000-0003-1363-2050))\n- Akiko Ishii-Watabe<sup>4</sup>\n- Ying Deng<sup>1</sup> ([ORCID: 0000-0003-4657-9284](https://orcid.org/0000-0003-4657-9284))\n- Kazutoshi Matsushita<sup>1</sup> ([ORCID: 0000-0002-5666-9630](https://orcid.org/0000-0002-5666-9630))\n- Tokiro Ishikawa<sup>1</sup> ([ORCID: 0000-0003-1718-6764](https://orcid.org/0000-0003-1718-6764))\n- Yugoviandi P Mamahit<sup>5</sup> ([ORCID: 0000-0002-2974-7795](https://orcid.org/0000-0002-2974-7795))\n- Yuta Maki<sup>5</sup> ([ORCID: 0000-0002-5838-302X](https://orcid.org/0000-0002-5838-302X))\n- Yasuhiro Kajihara<sup>5</sup> ([ORCID: 0000-0002-6656-2394](https://orcid.org/0000-0002-6656-2394))\n- Koichi Kato<sup>2</sup> ([ORCID: 0000-0001-7187-9612](https://orcid.org/0000-0001-7187-9612))\n- Tetsuya Okada<sup>1</sup> ([ORCID: 0000-0002-2513-1301](https://orcid.org/0000-0002-2513-1301)) \u2020\n- Kazutoshi Mori<sup>1</sup> ([ORCID: 0000-0001-7378-4019](https://orcid.org/0000-0001-7378-4019)) \u2020\n\n### Affiliations\n\n1. Department of Biophysics, Graduate School of Science, Kyoto University Kyoto Japan\n2. Graduate School of Pharmaceutical Sciences, Nagoya City University Nagoya Japan\n3. Department of Advanced Clinical Glycobiology, Graduate School of Medicine, Hokkaido University Sapporo Japan\n4. Division of Biological Chemistry and Biologicals, National Institute of Health Sciences Kawasaki Japan\n5. Department of Chemistry, Graduate School of Science, Osaka University Toyonaka Japan\n6. Project Research Center for Fundamental Sciences, Graduate School of Science, Osaka University Toyonaka Japan\n7. Exploratory Research Center on Life and Living Systems (ExCELLS) and Institute for Molecular Science, National Institutes of Natural Sciences Okazaki Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nSequential mannose trimming of N-glycan, from M9 to M8B and then to oligosaccharides exposing the \u03b11,6-linked mannosyl residue (M7A, M6, and M5), facilitates endoplasmic reticulum-associated degradation of misfolded glycoproteins (gpERAD). We previously showed that EDEM2 stably disulfide-bonded to the thioredoxin domain-containing protein TXNDC11 is responsible for the first step (George et al., 2020). Here, we show that EDEM3 and EDEM1 are responsible for the second step. Incubation of pyridylamine-labeled M8B with purified EDEM3 alone produced M7 (M7A and M7C), M6, and M5. EDEM1 showed a similar tendency, although much lower amounts of M6 and M5 were produced. Thus, EDEM3 is a major \u03b11,2-mannosidase for the second step from M8B. Both EDEM3 and EDEM1 trimmed M8B from a glycoprotein efficiently. Our confirmation of the Golgi localization of MAN1B indicates that no other \u03b11,2-mannosidase is required for gpERAD. Accordingly, we have established the entire route of oligosaccharide processing and the enzymes responsible.\n\n## Introduction\n\nEukaryotic cells are equipped with a sophisticated system to handle proteins which are unfolded or misfolded in the endoplasmic reticulum (ER), where newly synthesized secretory and transmembrane proteins destined for the secretory pathway gain their own three-dimensional structure (Bukau et al., 2006). These functionally inappropriate proteins are somehow detected in the ER lumen and then transferred to the retrotranslocational channel embedded within the ER membrane, termed the retrotranslocon, followed by ubiquitin-dependent degradation by the proteasome in the cytoplasm. This series of processes is collectively referred to as ER-associated degradation (ERAD-L; L for lumen) (Ninagawa et al., 2021).\n\nExtensive analysis of the mechanism of glycoprotein ERAD-L (gpERAD) has revealed that particular structures of the carbohydrate moiety become a signal for degradation (Ninagawa et al., 2021). An oligosaccharide of 14 sugar units, consisting of 3 glucose, 9 mannose, and 2 N-acetylglucosamine molecules (Glc3Man9GlcNAc2, abbreviated as G3M9 hereafter), is transferred to an Asn residue in the consensus sequence (Asn-X-Ser/Thr; X: any amino acid except Pro) present in newly synthesized protein in yeast and mammalian cells. G3M9 is converted to M9 by the sequential actions of Gls1 and Gls2-Gtb1 in yeast and glucosidases I and II in mammalian cells. Productive folding of the protein moiety is facilitated during this period by the calnexin/calreticulin cycle in mammalian cells, which relies on G1M9-specific lectin-type chaperones (calnexin and calreticulin) associated with the oxidoreductase ERp57, and UDP-glucose:glycoprotein glucosyltransferases 1 and 2, which are capable of re-adding glucose to M9 if the protein moiety is not yet folded. It should be noted that the Cne1 (an orthologue of calnexin and calreticulin) cycle is not effective in yeast because a functional orthologue of UGGTs is not present in yeast (Saccharomyces cerevisiae). After completion of folding, the glycoprotein is transported to the next compartment in the secretory pathway, the Golgi apparatus. However, if the protein moiety is not folded within a certain threshold time, the glycoprotein undergoes gpERAD via the conversion of M9 to M8B and then to oligosaccharides exposing the \u03b11,6-linked mannosyl residue, namely M7A, M6, and M5. \u03b11,6-Linked mannosyl residue-specific lectins OS9 and XTP3B transfer the glycoprotein to the retrotranslocon for subsequent degradation in the cytoplasm in mammalian cells (Ninagawa et al., 2021).\n\nIn yeast, the \u03b11,2-mannosidases Mns1 and Htm1 carry out the first and second mannose trimming steps, respectively (Ninagawa et al., 2021). We have constructed knockout (KO) cells for \u03b11,2-mannosidase candidate genes, namely EDEM1, EDEM2, and EDEM3 (Htm1 orthologues), in human HCT116 diploid cells, and have shown that EDEM2 is required for the conversion of M9 to M8B and that EDEM3 (mainly) and EDEM1 (partly) are required for the conversion of M8B to oligosaccharides, which exposes the \u03b11,6-linked mannosyl residue (Ninagawa et al., 2014). Further, our recent biochemical analysis has clarified that although EDEM2 alone exhibits no mannosidase activity toward M9, as reported previously (Mast et al., 2005; Shenkman et al., 2018), EDEM2 stably disulfide-bonded to the thioredoxin domain-containing protein TXNDC11 catalyzes the first mannose trimming step from M9 to M8B in vitro (George et al., 2020).\n\nIntramolecular disulfide bond formation in the mannosidase homology domain (MHD) is considered essential for EDEM2 to exhibit \u03b11,2-mannosidase activity because mutation of either C65 or C408 inactivated EDEM2 in gpERAD (George et al., 2020). Here, we examined whether the disulfide bonding between C65 and C408 is indeed formed only in the presence of TXNDC11. We then examined whether disulfide bond formation in the MHD is essential for EDEM1 or EDEM3 to exhibit \u03b11,2-mannosidase activity, and whether TXNDC11 is disulfide-bonded to EDEM1 or EDEM3. Finally, we examined whether purified EDEM3 or purified EDEM1 can catalyze the second mannose trimming step from M8B to oligosaccharides exposing the \u03b11,6-linked mannosyl residue.\n\n## Results\n\n### Formation of essential disulfide bonding in EDEM2 in the presence of TXNDC11\n\nAs we reported previously, analysis by non-reducing SDS-PAGE followed by immunoblotting showed that introduction of 3xFlag-tagged EDEM2 into EDEM2-KO cells produced its monomer, and probably dimer and aggregated forms, whereas simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM2 into EDEM2-KO cells produced a high molecular weight complex of EDEM2 and TXNDC11, designated EDEM2\u00a7\u20133xFlag (Figure 1A). It should be noted that both TXNDC11 and the EDEM2-TXNDC11 complex are detected as a doublet band due to alternative translational initiation of TXNDC11 at M1 or M58 (George et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cell lysates were prepared from untransfected wild-type (WT) cells and EDEM2-knockout (KO) cells untransfected or transfected with (+) or without (-) plasmid to express EDEM2-3xFlag or TXNDC11-3xFlag, subjected to SDS-PAGE under non-reducing and reducing conditions, and analyzed by immunoblotting using anti-EDEM2 antibody. EDEM2\u00a7 denotes EDEM2 stably disulfide-bonded to TXNDC11. (B) Structures of the M58A and M1A mutants of human TXNDC11 containing the transmembrane domain (TMD), five Trx domains, and coiled coil domain are shown schematically. \u00b6 denotes potential N-glycosylation sites. (C) Eluates were obtained from EDEM2-KO cells overexpressing TAP-EDEM2 plus TXNDC11(M1A) and from TXNDC11-KO cells overexpressing TAP-EDEM2, subjected to SDS-PAGE under reducing conditions, and silver-stained. The positions of TXNDC11(M1A)\u20133xFlag and 6xMyc-EDEM2 are indicated. (D) (a) EDEM2 stably disulfide-bonded to TXNDC11 was purified at a larger scale and silver-stained after reducing SDS-PAGE. The eluate was analyzed sequentially by LC/MS, MS/MS, and MS/MS/MS as indicated. This experiment was conducted once. (b) Extracted ion chromatogram of the ion at m/z 778.40 (\u00b10.01) from EDEM2-TXNDC11 complex is shown. (c) MS spectrum of Peptide 1 observed in (b) is shown. The six peaks other than m/z 778.3999 are isotopic (13C-containing) ion peaks. (d) Electron-transfer/higher-energy collisional dissociation-tandem mass spectrometry (EThcD-MS/MS) spectrum of the ion at m/z 778.6505 \u00b1 1 (m/z 778.3999\u2013779.4015) derived from Peptide 1 (c) is shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic structures of TAP-EDEM2, TAP-mCD3-\u03b4-\u0394TM-HA, and ATF6\u03b1(C)-TAP2 used for purification are shown. (B) Procedures of purification are shown. (C) Eluates obtained from wild-type (WT) cells untransfected (-) or transfected with plasmid to express TAP-EDEM1, TAP-EDEM2 plus TXNDC11(M1A), TAP-EDEM3, or TAP-MAN1B1(\u0394105) were subjected to SDS-PAGE under reducing conditions, silver-stained, and then analyzed by immunoblotting using anti-Myc antibody. EDEM3C denotes cleaved EDEM3.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) HCD-MS/MS/MS spectra of the product ion at m/z 946.5 \u00b1 1 in EThcD-MS/MS spectrum revealed that the ion corresponds to D58ELRPLTC65 (P1). (B) HCD-MS/MS/MS spectra of the product ion at m/z 1084.8 \u00b1 1 in EThcD-MS/MS spectrum revealed that the ion corresponds to D395AVESIEKISKVEC408GFATIK414 (P2).\n\nTo determine disulfide bonding status in the MHD, we intended to purify noncomplexed EDEM2 and EDEM2-TXNDC11 complex separately and subject them to liquid chromatography (LC)/mass spectrometry (MS) analysis. For this purpose, TXNDC11-KO cells were transfected with plasmid to express tandem affinity purification (TAP)-tagged EDEM2 to purify noncomplexed EDEM2; this TAP consists of 2\u00d7 immunoglobulin G-binding domain of protein A, 2\u00d7 TEV protease recognition site, and 6xMyc (Figure 1\u2014figure supplement 1A). Also, EDEM2-KO cells were transfected with plasmid to express TAP-tagged EDEM2 plus plasmid to express TXNDC11(M1A). It should be noted that TXNDC11(M1A) was used to purify EDEM2-TXNDC11 complex; TXNDC11(M58A) is expressed only as a transmembrane protein, whereas TXNDC11(M1A) is expressed as both soluble and transmembrane proteins because its N-terminal hydrophobic region functions by chance as either a signal sequence or a transmembrane domain (TMD) (Figure 1B), allowing us to purify a soluble complex of EDEM2 and TXNDC11.\n\n6xMyc-tagged EDEM2 noncomplexed or complexed with TXNDC11(M1A) was purified as depicted in Figure 1\u2014figure supplement 1B, and silver-staining showed expected bands (Figure 1C). These proteins purified at a larger scale (Figure 1D (a) ) were digested with Asp-N and the resulting peptides were analyzed by LC/MS. The results of peptides derived from EDEM2-TXNDC11 complex showed that \u2018Peptide 1\u2019 was eluted at 77.38 min in LC (Figure 1D (b)) and produced an ion peak at m/z 778.3999, which contained only 12C as C, plus six other isotopic (13C-containing) ion peaks in MS (Figure 1D (c)). This \u2018Peptide 1\u2019 was not detected in peptides derived from noncomplexed EDEM2 (data not shown). Importantly, the measured accurate mass of the ion peak at m/z 778.3999 matched the calculated exact mass of the two peptides (P1: D58~C65 of EDEM2 and P2: D395~K414 of EDEM2) covalently connected by disulfide bonding between C65 and C408 of EDEM2 (Figure 1D (c)). Indeed, subsequent electron-transfer/higher-energy collisional dissociation (EThcD)-MS/MS analysis of Peptide 1 (m/z 778.6505 \u00b1 1) produced P1 at m/z 946.5 and P2 at m/z 1084.8 by preferential cleavage of disulfide bonds (Figure 1D (d)). Further, higher-energy collisional dissociation (HCD)-MS/MS/MS analysis of P1 (m/z 946.5 \u00b1 1) and P2 (m/z 1084.8 \u00b1 1), during which peptide bonds are cleaved, confirmed that P1 corresponded to D58ELRPLTC65, whereas P2 corresponded to D395AVESIEKISKVEC408GFATIK414 (Figure 1\u2014figure supplement 2). We concluded that TXNDC11 helps EDEM2 to form the disulfide bond between C65 and C408, which is essential for EDEM2 to exhibit \u03b11,2-mannosidase activity (George et al., 2020).\n\n### Characterization of EDEM1 and EDEM3\n\nC65 of human EDEM2 is conserved as C160 of human EDEM1 and C82 of human EDEM3, whereas C408 of human EDEM2 is conserved as C529 of human EDEM1 and C441 of human EDEM3 (Figure 2A). To determine their importance, we mutated all cysteine residues present in EDEM1 and EDEM3. To evaluate their functionality in gpERAD, we constructed EDEM1, 3-double KO (DKO) cells (two independent clones #1 and #2, Figure 2\u2014figure supplement 1A and S1B), which expressed neither EDEM1 mRNA nor EDEM3 mRNA (Figure 2B), and grew slightly more slowly than wild-type (WT) cells (Figure 2\u2014figure supplement 1C), as we previously described for the construction of EDEM1/2/3-triple KO (TKO) cells (Ninagawa et al., 2015). We used #1 as EDEM1, 3-DKO cells hereafter. M9 was accumulated in EDEM-TKO cells as we described previously (Ninagawa et al., 2015), whereas M8B was accumulated in EDEM1, 3-DKO cells (Figure 2\u2014figure supplement 1D), as we expected. Accordingly, degradation of human ATF6\u03b1, a transmembrane-type gpERAD substrate, and mCD3-\u03b4-\u0394TM-HA, a soluble gpERAD substrate, was markedly delayed in EDEM1, 3-DKO cells (Figure 2\u2014figure supplement 1E and 1F), similarly to the case of EDEM2-KO cells (Ninagawa et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig2-v2.jpg)\n\n**Figure 2.:** (A) Structures of human EDEM1, EDEM2, and EDEM3 are schematically shown with cysteine residues (C) highlighted together with their positions (black bars underneath C indicate conserved cysteine residues, whereas white bars over C indicate non-conserved cysteine residues). The purple and yellow boxes denote the signal sequence and mannosidase homology domain (MHD), respectively. Sequence comparison around the three cysteine residues (C65, C191, and C408 of EDEM2) is shown below (asterisk and colon indicate identical and similar amino acids, respectively). (B) RT-PCR to amplify cDNA corresponding to full-length open reading frame in EDEM1/2/3 mRNA in wild-type (WT) and EDEM1, 3-double knockout (DKO) cells (two independent clones #1 and #2) is shown. (C) Cell lysates were prepared from EDEM1, 3-DKO cells expressing WT or one of various cysteine mutants of 3\u00d7 Flag-tagged EDEM1 together with mCD3-\u03b4-\u0394TM-HA by transfection, and analyzed by immunoblotting using anti-HA and anti-EDEM1 antibodies. (D) Cell lysates were prepared from EDEM1, 3-DKO cells expressing WT or one of various cysteine mutants of 3\u00d7 Flag-tagged EDEM3 together with mCD3-\u03b4-\u0394TM-HA by transfection, and analyzed by immunoblotting using anti-HA and anti-Flag antibodies.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Strategy for TALEN-mediated gene disruption is shown. Cleavage of exon 1 encoding the signal sequence of human EDEM1 or EDEM3 with the designed TALEN facilitates subsequent homologous recombination with the respective targeting vector containing both positive and negative selection markers. (B) Results of genomic PCR to confirm homologous recombination in HCT116 cells of various genotypes are shown. Asterisks denote non-specific bands. (C) Doubling time of wild-type (WT) and EDEM1, 3-DKO cells (two independent clones #1 and #2) is shown. (D) Isomer composition of N-glycans prepared from total cellular glycoproteins of WT, WT treated with kifunensine (Kif, 10 \u03bcg/ml, 12 hr), EDEM1, 3-DKO, and EDEM-triple knockout (TKO) cells is shown. This experiment was conducted once. (E) Cycloheximide chase was conducted to determine the degradation rate of endogenous ATF6\u03b1 in WT, EDEM1, 3-DKO, and EDEM2-KO cells, and cells lysates were analyzed by immunoblotting using anti-ATF6\u03b1 antibody (n = 3). Quantified data are shown below. (F) Cycloheximide chase was conducted to determine the degradation rate of transfected mCD3-\u03b4-\u0394TM-HA in WT, EDEM1, 3-DKO, and EDEM2-KO cells, and cells lysates were analyzed by immunoblotting using anti-HA antibody (n = 3). Quantified data are shown below.\n\nWe employed a gpERAD substrate migration assay. mCD3-\u03b4-\u0394TM-HA, possessing three N-glycosylation sites, migrates slightly faster due to a mannose trimming-mediated decrease in its molecular weight if cotransfected \u03b11,2-mannosidase is active in gpERAD, and migration position is closely correlated with degradation rate (George et al., 2020). We describe this effect on migration as a downward shift hereafter. Results showed that the mutations C160A and C529A of EDEM1 as well as C82A and C441A of EDEM3 indeed inactivated EDEM1 and EDEM3, respectively, in gpERAD (Figure 2C and D). Thus, the conserved cysteine residues, at which intramolecular disulfide bonding was confirmed in EDEM2, turned out to be critical for EDEM1 and EDEM3 to exhibit \u03b11,2-mannosidase activities, as expected. Results also showed that the mutations C410A and C457A of EDEM1 inactivated the \u03b11,2-mannosidase activity of EDEM1 (Figure 2C), suggesting that C410 and C457 of EDEM1 might form a local disulfide bond to stabilize the MHD of EDEM1. In this connection, it was previously suggested that four of eight cysteine residues present in EDEM1 can act as free thiols and may be involved in thiol-dependent interaction with substrates, whereas the other four cysteine residues are in sufficient proximity to form two disulfide bonds (C160-C529 and C410-C457) (Lamriben et al., 2018). In contrast, cysteine residues outside of the MHD of EDEM1 and EDEM3 are not important for their \u03b11,2-mannosidase activity (Figure 2C and D), unlike C558 of EDEM2, which is stably disulfide-bonded to C692 of TXNDC11 (George et al., 2020).\n\n### Subcellular localization of MAN1B1\n\nOur previous genetic analysis revealed that the \u03b11,2-mannosidase MAN1B1 (a sole Mns1 orthologue) appears to play only a very minor role in gpERAD (Ninagawa et al., 2014), contrary to the original proposals (Avezov et al., 2008; Gonzalez et al., 1999; Hosokawa et al., 2003). To further evaluate the contribution of MAN1B1 to the mannose trimming step in gpERAD, we determined the subcellular localization of MAN1B1 fused to mCherry which was expressed by transfection in HCT116 cells or HeLa cells under the control of the CMV promoter or its truncated version, which we termed CMVshort promoter; the CMVshort promoter is significantly weaker than the CMV promoter in driving gene expression (Nadanaka et al., 2004).\n\nMAN1B1-mCherry driven by the CMV promoter or CMVshort promoter was not colocalized with mEGFP-KDEL, an ER marker, but was colocalized with mEGFP-Giantin, a Golgi marker, in HCT116 cells (Figure 3). Because signaling from Lamp1-mGFP, a marker of lysosome, was weak in HCT116 cells, we also checked their colocalization in HeLa cells. Again, MAN1B1-mCherry driven by the CMV promoter or CMVshort promoter was not colocalized with mEGFP-KDEL but rather with mEGFP-Giantin in HeLa cells (Figure 3\u2014figure supplement 1). Interestingly, some MAN1B1-mCherry highly expressed from the CMV promoter overlapped with Lamp1-mGFP (Figure 3\u2014figure supplement 1F), whereas MAN1B1-mCherry never overlapped with mEGFP-KDEL, even after higher expression (Figure 3\u2014figure supplement 1D). Thus, MAN1B1-mediated mannose trimming cannot participate in gpERAD, the events in the ER.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) HCT116 cells were transfected with plasmid to express MAN1B1-mCherry under the control of the CMVshort promoter together with plasmid to express mEGFP-KDEL (A) or mEGFP-Giantin (B), and analyzed by confocal microscopy (Airyscan). Scale bar: 10 \u03bcm. (C, D) HCT116 cells were transfected with plasmid to express MAN1B1-mCherry under the control of the CMV promoter together with plasmid to express mEGFP-KDEL (C) or mEGFP-Giantin (D), and analyzed by confocal microscopy (Airyscan). Sale bar: 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B, C) HeLa cells were transfected with plasmid to express MAN1B1-mCherry under the control of the CMVshort promoter together with plasmid to express mEGFP-KDEL (A), mEGFP-Giantin (B), or Lamp1-mGFP (C), and analyzed by confocal microscopy (Airyscan). Scale bar: 10 \u03bcm. (D, E, F) HeLa cells were transfected with plasmid to express MAN1B1-mCherry under the control of the CMV promoter together with plasmid to express mEGFP-KDEL (D), mEGFP-Giantin (E), or Lamp1-mGFP (F), and analyzed by confocal microscopy (Airyscan). Scale bar: 10 \u03bcm.\n\n### Purification of EDEM3 and EDEM1\n\nWe next examined whether TXNDC11 is disulfide-bonded to EDEM1 or EDEM3. Simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM1 into EDEM1-KO cells or simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM3 into EDEM3-KO cells did not change band patterns compared with single introduction of 3xFlag-tagged EDEM1 into EDEM1-KO cells or single introduction of 3xFlag-tagged EDEM3 into EDEM3-KO cells (Figure 4A (a, b)). When any of 3xFlag-tagged EDEM1, EDEM2, and EDEM3 was introduced into WT HCT116 cells, followed by immunoprecipitation with anti-Flag antibody and subsequent immunoblotting using anti-TXNDC11 antibody under reducing and non-reducing conditions, endogenous TXNDC11 was clearly co-immunoprecipitated from cells overexpressing 3xFlag-tagged EDEM2, indicating that EDEM2 is the main partner of TXNDC11 (Figure 4B). Accordingly, we intended to purify noncomplexed EDEM1 and EDEM3 from HCT116 cells overexpressing respective TAP-tagged protein.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig4-v2.jpg)\n\n**Figure 4.:** (A) (a) Cell lysates were prepared from untransfected wild-type (WT) cells and EDEM1-knockout (KO) cells untransfected or transfected with (+) or without (-) plasmid to express EDEM1-3xFlag or TXNDC11-3xFlag, subjected to SDS-PAGE under non-reducing and reducing conditions, and analyzed by immunoblotting using anti-EDEM1 antibody. (b) Cell lysates were prepared from untransfected WT cells and EDEM3-KO cells untransfected or transfected with (+) or without (-) plasmid to express EDEM3-3xFlag or TXNDC11-3xFlag, subjected to SDS-PAGE under non-reducing and reducing conditions, and analyzed by immunoblotting using anti-EDEM3 antibody. (B) Cell lysates were prepared from WT cells untransfected or transfected with plasmid to express EDEM1-3xFlag, EDEM2-3xFlag, or EDEM3-3xFlag, and subjected to immunoprecipitation using anti-Flag antibody. Aliquots of cell lysates (Input) and immunoprecipitates (IP[Flag]) were subjected to SDS-PAGE under reducing (a) and non-reducing (b) conditions, and analyzed by immunoblotting using anti-TXNDC11 and anti-Flag antibodies. TXNDC11\u00a7 denotes TXNDC11 stably disulfide-bonded to EDEM2. (C) (a) Structures of MAN1B1 and MAN1B1(\u0394105) are schematically shown. TMD denotes the transmembrane domain. (b) EDEM2-KO cells were transfected with plasmid to express mCD3-\u03b4-\u0394TM-HA together with or without plasmid to express MAN1B1-3xFlag, TAP-MAN1B1(\u0394105), or TAP-MAN1B1. Cell lysates were then prepared and analyzed by immunoblotting using anti-HA and anti-Myc antibodies. (D) (a) Location of potential TEV cleavage site in EDEM3 is shown. Its consensus sequence is E-X-X-Y-X-Q-G/S. (b) EDEM1, 3-DKO cells expressing TAP-EDEM3 or TAP-EDEM3(Q543N) by transfection were subjected to small-scale purification as in Figure 1\u2014figure supplement 1B. Eluates were analyzed by immunoblotting using anti-Myc antibody.\n\nWe employed MAN1B1 as a control of an extensive \u03b11,2-mannosidase, based on a report that it can produce M6 and M5 from M9 in vitro (Aikawa et al., 2012); we confirmed this observation (see Figure 5C). Because MAN1B1 is a transmembrane protein, we deleted its TMD-containing N-terminal 105 aa to obtain MAN1B1(\u0394105) for efficient purification (Figure 4C (a)). Both TAP-tagged MAN1B1 and MAN1B1(\u0394105) are active mannosidases, as their overexpression in EDEM2-KO cells caused a downward shift to the transfected mCD3-\u03b4-\u0394TM-HA band (Figure 4C (b)).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig5-v2.jpg)\n\n**Figure 5.:** (A) Wild-type (WT) cells were transfected with plasmid to express mCD3-\u03b4-\u0394TM-HA. EDEM2-knockout (KO) cells and EDEM1, 3-double knockout (DKO) cells were transfected with plasmid to express mCD3-\u03b4-\u0394TM-HA together with or without plasmid to express TAP-EDEM1, TAP-EDEM2, TAP-EDEM3(Q543N), or TAP-MAN1B1(\u0394105). Cell lysates were then prepared and analyzed by immunoblotting using anti-HA and anti-Myc antibodies. (B) Eluates obtained from WT cells untransfected (-) or transfected with plasmid to express TAP-EDEM1, TAP-EDEM2 plus TXNDC11(M1A), EDEM3(Q543N), or MAN1B1(\u0394105) were subjected to SDS-PAGE under reducing conditions, silver-stained, and then analyzed by immunoblotting using anti-Myc antibody. PA-M8B was incubated with samples in (B) for 24 hr as indicated and then analyzed by HPLC (amide column) for mannose contents. (D) The M7 peak (a), M6 peak (b), and M5 peak (c) obtained in (C) were analyzed by HPLC (ODS column) for isomer identification. (E) Route of oligosaccharide processing in the mammalian endoplasmic reticulum-associated degradation of misfolded glycoproteins (gpERAD) is shown.\n\nOur initial purification of 6xMyc-tagged EDEM1, EDEM3, and MAN1B1(\u0394105) from HCT116 cells overexpressing TAP-tagged EDEM1, EDEM3, and MAN1B1(\u0394105), respectively, followed by silver staining and immunoblotting, revealed that 6xMyc-tagged EDEM1 was purified as a single band, whereas 6xMyc-tagged EDEM3 was purified as two bands designated EDEM3 and EDEM3C (Figure 1\u2014figure supplement 1C, c for cleaved). Sequence search revealed one internal TEV protease recognition site in EDEM3 (Figure 4D (a)), and the mutation Q543N was sufficient to render EDEM3 resistant to digestion with TEV protease (Figure 4D (b)).\n\n### EDEM3 and EDEM1 produce oligosaccharides exposing the \u03b11,6-linked mannosyl residue from pyridylamine-labeled M8B\n\nAs M9 is accumulated in EDEM2-KO cells (Ninagawa et al., 2014) and M8B is accumulated in EDEM1, 3-DKO cells (Figure 2\u2014figure supplement 1D), transfected mCD3-\u03b4-\u0394TM-HA migrated slightly more slowly in EDEM2-KO cells than in WT cells (Figure 5A, compare lane 1 with lane 2) or marginally more slowly in EDEM1, 3-DKO cells than in WT cells (Figure 5A, compare lane 7 with lane 8). When transfected into EDEM2-KO cells, only TAP-tagged EDEM2 caused a downward shift to the transfected mCD3-\u03b4-\u0394TM-HA band among TAP-tagged EDEM1, EDEM2, and EDEM3(Q543N) (Figure 5A. lane 4), whereas TAP-tagged EDEM1 and EDEM3(Q543N) but not TAP-tagged EDEM2 did so when transfected into EDEM1, 3-DKO cells (Figure 5A, lanes 9 and 11), consistent with the results of our gene KO analysis, which showed that EDEM2 is required for the conversion of M9 to M8B and that EDEM3 and EDEM1 are required for the conversion of M8B to oligosaccharides exposing the \u03b11,6-linked mannosyl residue (Ninagawa et al., 2014).\n\n6xMyc-tagged EDEM1 and EDEM3(Q543N) were purified as a single band on silver staining and immunoblotting in addition to 6xMyc-tagged EDEM2-TXNDC11 complex (Figure 5B). After 24 hr incubation with purified 6xMyc-tagged EDEM3(Q543N), pyridylamine (PA)-labeled M8B was converted to M7, M6, and M5 (Figure 5C). M7 turned out to be M7A and M7C (Figure 5D (a)), indicating no preference of EDEM3 toward the mannose residue present in the A or C branch of M8B. Purified 6xMyc-tagged EDEM1 exhibited similar mannosidase activity toward M8B, albeit with much weaker activity than 6xMyc-tagged EDEM3(Q543N) (Figure 5C). In contrast, M8B was converted to M7 only slightly by purified EDEM2-TXNDC11 complex, and M6 and M5 were hardly detected even after 24 hr incubation (Figure 5C), indicating a strong preference of EDEM2-TXNDC11 complex toward M9 (George et al., 2020). Based on these results, we have established the route of oligosaccharide processing in mammalian gpERAD (Figure 5E).\n\n### EDEM3 and EDEM1 produce oligosaccharides exposing the \u03b11,6-linked mannosyl residue from M8B on a protein\n\nWe finally examined the mannosidase activity of purified EDEM1, EDEM2-TXNDC11 complex, and EDEM3 toward M8B on a purified gpERAD substrate, such as mCD3-\u03b4-\u0394TM-HA (Figure 6) and ATF6\u03b1(C) (Figure 7); ATF6\u03b1(C) represents the luminal region of the unfolded protein response transducer ATF6\u03b1, whose rapid degradation completely depends on EDEM-mediated mannose trimming (Horimoto et al., 2013; Ninagawa et al., 2014). 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA and ATF6\u03b1(C) tagged with 3xMyc were purified from EDEM1, 3-DKO cells overexpressing TAP-tagged mCD3-\u03b4-\u0394TM-HA and ATF6(C) tagged with TAP2 (see Figure 1\u2014figure supplement 1A), respectively, by transfection (Figure 6A (a) and 7A (a)). They were expected to possess N-glycans of M8B, which we confirmed by MS analysis (see top panel of Figure 6B (b) and Figure 7B (b)); it should be noted that each oligosaccharide was detected as two peaks consisting of [M + H]+, a proton adduct ion, and [M + Na]+, a sodium adduct ion. Indeed, they were completely sensitive to digestion with endoglycosidase H (Endo H) (Figure 6A (b) and 7 A (b)). Because 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA was detected as a doublet band by both anti-Myc and anti-HA antibodies (Figure 6A (b)), we consider that the upper and lower bands were produced by cleavage at the first and second TEV cleavage sites, respectively (see Figure 1\u2014figure supplement 1A), whereas the doublet band of ATF6\u03b1 (C) reflected partial degradation during purification.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig6-v2.jpg)\n\n**Figure 6.:** (A) (a) Eluate obtained from EDEM1, 3-double knockout (DKO) cells overexpressing TAP-mCD3-\u03b4-\u0394TM-HA was subjected to SDS-PAGE under reducing conditions, silver-stained, and then analyzed by immunoblotting using anti-HA antibody. (b) Eluate in (a) was untreated (-) or treated (+) with EndoH, subjected to SDS-PAGE under reducing conditions, and analyzed by immunoblotting using anti-HA, anti-Myc, and anti-GRP78 (which is identical to BiP) antibodies. (B) (a) Eluate in (A) was incubated with purified EDEM1, EDEM2-TXNDC11 complex, or EDEM3(Q543N) for the indicated time, and then analyzed by immunoblotting using anti-Myc antibody. (b) N-glycans prepared from samples in (a) after 24 hr incubation were analyzed by mass spectrometry (MS). This experiment was conducted once.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/70357/elife-70357-fig7-v2.jpg)\n\n**Figure 7.:** (A) (a) Eluate obtained from EDEM1, 3-double knockout (DKO) cells overexpressing ATF6\u03b1(C)-TAP2 was subjected to SDS-PAGE under reducing conditions, silver-stained, and analyzed by immunoblotting using anti-Myc antibody. (b) Eluate in (a) was untreated (-) or treated (+) with EndoH, subjected to SDS-PAGE under reducing conditions, and analyzed by immunoblotting using anti-Myc and anti-GRP78 (which is identical to BiP) antibodies. (B) (a) Eluate in (A) was incubated with purified EDEM1, EDEM2-TXNDC11 complex, or EDEM3(Q543N) for the indicated time, and then analyzed by immunoblotting using anti-Myc antibody. (b) N-glycans prepared from samples in (a) after 24 hr incubation were analyzed by mass spectrometry (MS). This experiment was conducted once.\n\nThe band of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA purified from transfected EDEM1, 3-DKO cells exhibited a downward shift after incubation with 6xMyc-tagged EDEM1 (Figure 6B (a), lane 4) and EDEM3(Q543N) (lane 10) but not with 6xMyc-tagged EDEM2-TXNDC11 complex (lane 7). MS analysis of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA samples after 24 hr incubation with 6xMyc-tagged EDEM1 and EDEM3(Q543N) revealed that M8B was converted to M5 almost completely, whereas a major peak was still M8B after 24 hr incubation with 6xMyc-tagged EDEM2-TXNDC11 complex (Figure 6B (b)). Quite similar results were obtained with ATF6\u03b1(C) tagged with 3xMyc, which was purified from overexpressed EDEM1, 3-DKO cells (Figure 7A and B), although somehow a greater amount of M5 was produced after 24 hr incubation of ATF6\u03b1(C) with 6xMyc-tagged EDEM2-TXNDC11 complex than was the case with mCD3-\u03b4-\u0394TM-HA (Figure 7B (b)). Note that the peak of 1742.412 (+NT column, Figure 6B (b)) and those of 2054.668 and 1892.627 (+EDEM1 column, Figure 7B (b)) were complex-type oligosaccharides derived from immunoglobulin G (silver-stained around a molecular weight marker of 52 kDa, Figure 6A (a) and 7A (a)) possessing only complex-type oligosaccharides, which was partially detached from IgG Sepharose beads. A band silver-stained around a molecular weight marker of 76 kDa (Figure 6A (a) and 7 A (a)) was identified to be BiP by MS analysis in our previous study (Sato et al., 2011), which possesses no N-glycan, as evidenced by its resistance to digestion with Endo H (Figure 6A (b) and 7A (b)). We concluded that EDEM3 and EDEM1 are more active on protein-bound M8B than on free M8B.\n\n## Discussion\n\nIdentification of the exact route of oligosaccharide processing from M9 to M8B and then to oligosaccharides exposing the \u03b11,6-mannosyl residue (M7A, M6, and M5), and of the enzymes involved in it is critical to understanding the molecular mechanism of the mammalian gpERAD. Our previous genetic and biochemical analyses have determined that EDEM2 stably disulfide-bonded to TXNDC11 is responsible for the first mannose trimming step from M9 (George et al., 2020; Ninagawa et al., 2014). Our biochemical analysis in the present paper together with our previous genetic analysis (Ninagawa et al., 2014) has determined that EDEM3 alone (mainly) or EDEM1 alone (partly) is responsible for the second mannose trimming step from M8B.\n\nOur current results with another \u03b11,2-mannosidase MAN1B1 (Figure 3 and Figure 3\u2014figure supplement 1) are well consistent with a previous report showing the Golgi localization of endogenous MAN1B1 by immunofluorescence (Pan et al., 2011). Unfortunately, however, we are unable to reconcile our results with findings (Benyair et al., 2015) claiming that MAN1B1 is localized in quality control vesicles to which ERAD substrates are transported and in which they interact with the enzyme. Nonetheless, it is not clear at all whether such vesicles contain molecules downstream of the exposure of \u03b11,6-linked mannosyl residue, such as OS9 and XTP3B, as well as the retrotranslocon for efficient degradation of substrates already destined for gpERAD via mannose trimming. The system becomes effective if all components of gpERAD exist in the same compartment, namely in the ER.\n\nImportantly, EDEM3 produced not only M7A but also M6 and M5 from M8B (Figure 5C). EDEM1 exhibited a similar tendency, albeit weakly; potential disulfide bonding between C410 and C457 (Lamriben et al., 2018) might stabilize the MHD of EDEM1 (Figure 2C) but might instead decrease the \u03b11,2-mannosidase activity of EDEM1. The resulting M5 has no \u03b11,2-linked mannosyl residue, which in turn means that no other \u03b11,2-mannosidase is necessary for the mammalian gpERAD. In addition, both EDEM3 and EDEM1 nearly equally produced M7A and M7C from M8B (Figure 5D (a)), which explains the presence of a small amount of M7C on glycoproteins in HCT116 cells (Ninagawa et al., 2014). M7C is likely converted to M6 and then to M5 by EDEM3 and EDEM1, because they have no preference for the mannose residue in the A branch or C branch of M8B. Furthermore, both EDEM3 and EDEM1 efficiently trimmed mannose from M8B on a glycoprotein, such as mCD3-\u03b4-\u0394TM-HA (Figure 6) and ATF6\u03b1(C) (Figure 7). Thus, the entire route of oligosaccharide processing and the enzymes responsible for it have been established for mammalian gpERAD for the first time (Figure 5E).\n\nIt was previously shown that the MHD of EDEM3 is transiently disulfide-bonded to the thioredoxin domain-containing protein ERp46, and that coexpression of EDEM3 and ERp46 enhances EDEM3 activity in gpERAD (Yu et al., 2018). Based on our current results, coexpression of EDEM3 and ERp46 is likely to facilitate the formation of disulfide bonding between C82 and C441 of human EDEM3 (C83 and C442 of mouse EDEM3) in the MHD, which is required for EDEM3 to exhibit \u03b11,2-mannosidase activity (Figure 2D). Once fully folded with correct disulfide bonding in the MHD, EDEM3 requires no partner protein to exhibit \u03b11,2-mannosidase activity in vitro, in contrast to EDEM2. One question which remains is why only EDEM2 requires TXNDC11 for formation of the disulfide bond in the MHD (Figure 1D), even though such disulfide bonding is also essential for the function of EDEM1 and EDEM3 (Figure 2C and D).\n\nA second remaining question concerns how the specificity of EDEM2 toward M9 is achieved; although the MHD of EDEM1, EDEM2, and EDEM3 is homologous, EDEM2 effectively converted PA-M9 to PA-M8B (little PA-M9 was present after 24 hr incubation with purified EDEM2-TXNDC11 complex) (George et al., 2020), whereas EDEM2 poorly converted M8B to M7 in both PA-bound M8B (Figure 5C) and protein-bound M8B (Figures 6 and 7), in contrast to EDEM3. We previously showed that the conformation of noncomplexed and complexed EDEM2 with TXNDC11 differs, using sensitivity to trypsin digestion (George et al., 2020). It is possible that the structure of the catalytic site of EDEM2 becomes significantly different to that of EDEM1 or EDEM3 following intramolecular disulfide bond formation in the MHD plus intermolecular disulfide bonding between EDEM2 and TXNDC11; this may explain not only the specificity of EDEM2 toward M9 but also the requirement for TXNDC11 as a stable partner of EDEM2. Structural determination is expected to answer these questions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Colorectal carcinoma</td>\n      <td>ATCC</td>\n      <td>HCT116</td>\n      <td>This cell line has been authenticated and tested negative for mycoplasma.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p3xFlag-CMV-14</td>\n      <td>Sigma-Aldrich</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmCherry-N1</td>\n      <td>TAKARA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSecTag2/Hygro</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEGFP-C1</td>\n      <td>CLONTECH</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TXNDC11(rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#: ab188329</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-EDEM1 (rabbit polyclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: E8406</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-EDEM2 (rabbit polyclonal)</td>\n      <td>Novusbio</td>\n      <td>Cat#: NBP2-37921</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-EDEM3 (mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: E0409</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GRP78 antibody (rabbit polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#: PA1-014A</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA (rabbit polyclonal)</td>\n      <td>Recenttec</td>\n      <td>Cat#: R4-TP1411100</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Flag (mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: F3165</td>\n      <td>WB (1:1000) IP (2.5 \u03bcl)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Myc-direct-HRP antibody</td>\n      <td>MBL</td>\n      <td>Cat#: M047-7</td>\n      <td>WB (1:1000)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Statistics\n\nStatistical analysis was conducted using Student\u2019s t-test, with probability expressed as *p < 0.05 and **p < 0.01.\n\n### Construction of plasmids\n\nRecombinant DNA techniques were performed according to standard procedures (Sambrook et al., 1989) and the integrity of all constructed plasmids was confirmed by extensive sequencing analyses. Site-directed mutagenesis was carried out using DpnI. A p3xFlag-CMV-14 expression vector (Sigma-Aldrich) was used to express proteins (EDEM1, EDEM2, EDEM3, MAN1B1, and TXNDC11) tagged with 3xFlag at the C-terminus. pCMV-SP-TAP-EDEM2 (George et al., 2020) was utilized to construct pCMV-SP-TAP-EDEM1, pCMV-SP-TAP-EDEM3, and pCMV-SP-TAP-MAN1B1. pcDNA3.1-SP-TAP-mCD3-\u03b4-\u0394TM-HA was constructed using pcDNA3.1-mCD3-\u03b4-\u0394TM-HA. ATF6\u03b1(C)-TAP2 containing 3xMyc, TEV protease recognition site, and 2\u00d7 immunoglobulin G-binding site of protein A was constructed previously (Sato et al., 2011). The ERAD-L substrate mCD3-\u03b4-\u0394TM-HA was the kind gift of Maurizio Molinari at the Institute for Research in Biomedicine, Switzerland.\n\nA pmCherry-N1 expression vector (TAKARA) was used to express MAN1B1 fused with mCherry at the C-terminus. To truncate the CMV promoter of pmCherry-N1, the vector was digested with AaII and then self-ligated to create pCMVshort-mCherry-N1. The full-length MAN1B1 with GGGGSGGGGS flexible linker was inserted into the BglII-SalI sites of the pmCherry-N1 or pCMVshort-mCherry-N1 vector using primers 5\u2019-GATAGATCTTGCGATGGCTGCCTGCGAGGGCAG-3\u2019 and 5\u2019-ACCGTCGACCCTGAGCCTCCGCCTCCTGAGCCTCCGCCTCCGGCAGGGGTCCAGATAGGC-3\u2019.\n\nTo create a construct to express mEGFP-KDEL, EGFP with a monomeric mutation A206K (Zacharias et al., 2002) fused with the ER retention signal KDEL was inserted into the HindIII-XhoI sites of the pSecTag2/Hygro vector (Thermo Fisher Scientific). To create a construct to express mEGFP-Giantin, the C-terminal fragment of Giantin responsible for its Golgi localization was subcloned from pmScarlet_Giantin_C1 (Bindels et al., 2017), which was obtained from Dorus Gadella (Addgene plasmid #85048), and inserted into the XhoI-BamHI sites of the pmEGFP-C1 vector, which was generated by introducing the A206K mutation in the EGFP coding sequence of the pEGFP-C1 vector (CLONTECH). The pLamp1-mGFP vector (Falc\u00f3n-P\u00e9rez et al., 2005), in which L221 of EGFP was replaced by lysine residue to avoid undesirable dimerization, was obtained from Esteban Dell\u2019Angelica (Addgene plasmid #34831).\n\n### Cell culture, transfection, and N-glycan profiling\n\nHCT116 cells (ATCC CCL-247) and HeLa cells were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (glucose 4.5 g/l) supplemented with 10% fetal bovine serum, 2 mM glutamine, and antibiotics (100 U/ml penicillin and 100 \u03bcg/ml streptomycin) at 37\u00b0C in a humidified 5% CO2/95% air atmosphere. Transfection was performed using polyethylenimine max (Polyscience) according to the manufacturer\u2019s instructions. Structural identification of N-glycans released from total cellular glycoproteins by hydrazinolysis was performed as described previously (Horimoto et al., 2013; Ninagawa et al., 2014). PA oligosaccharides were first fractionated by HPLC on a TSK-gel Amide-80 (amide-silica) column (Tosoh) and then on a Shim-pack HRC-octadecyl silica column (Shimadzu).\n\n### Live-cell imaging\n\nCells were plated on 35 mm multi-well glass bottom dishes (Matsunami Glass, D141400). Transfection was performed with X-tremeGENE 9 (Roche) according to the manufacturer\u2019s instructions; 16\u201320 hr after transfection, the growth medium was replaced with phenol red-free Dulbecco\u2019s modified Eagle\u2019s medium (glucose 4.5 g/l) supplemented with 10% fetal bovine serum and 2 mM glutamine. During image acquisition, cells were incubated on a Tokai Hit stage top incubator at 37\u00b0C in a humidified 5% CO2/95% air atmosphere. Images were acquired with an LSM880 confocal microscope with Airyscan (Carl Zeiss) equipped with a Plan-Apochromat 63\u00d7/1.4 Oil DIC M27 objective lens. Image acquisition was performed using ZEN software (black edition 2.3). Super-resolution images were obtained by subjecting raw images to the Airyscan processing program. Fiji software was used for image presentation.\n\n### Immunological techniques\n\nImmunoblotting analysis was carried out according to the standard procedure (Sambrook et al., 1989) as described previously (Ninagawa et al., 2011). Chemiluminescence obtained using Western Blotting Luminol Reagent (Santa Cruz Biotechnology) was detected using an LAS-3000mini LuminoImage analyzer (Fuji Film).\n\nImmunoprecipitation was performed using anti-Flag antibody and protein G-coupled Sepharose beads (GE Healthcare). Beads were washed with high salt buffer (50 mM Tris/Cl, pH 8.0, containing 1% NP-40 and 150 mM NaCl) twice, washed with PBS, and boiled in Laemmli\u2019s sample buffer.\n\n### Asp-N digestion and LC/MS\n\nSamples were dissolved in 40 \u03bcl PBS and treated with 0.2 \u03bcg of Asp-N (Endoproteinase Asp-N sequence grade, Roche) at 37\u00b0C for 16 hr. The peptides in the sample solution were separated by nano-flow LC using UltiMate 3000 RSLCnano LC system (Thermo Fisher Scientific). The analytical column was a reversed-phase column (PepMap RSLC, C18, Thermo Fisher Scientific; 3 \u03bcm, 0.075 mm \u00d7 150 mm). The mobile phases A and B were distilled water containing 0.1% formic acid and acetonitrile containing 0.1% formic acid, respectively. The flow rate was set to 300 nl/min, and the gradient condition was an isocratic flow at 2% B for 3 min and a linear gradient from 2% B to 40% B for 150 min. The eluted solution was automatically subjected to hybrid ion trap-Orbitrap MS (Orbitrap fusion Lumos mass spectrometer, Thermo Fisher Scientific). Data-dependent EThcD-tandem MS (EThcD-MS/MS) and data-dependent HCD-MS/MS/MS of product ions generated in the data-dependent EThcD-MS/MS were performed in the linear ion trap. The MS conditions were as follows: electrospray voltage, 2.0 kV in positive ion mode; capillary temperature, 250\u00b0C; full mass resolution, 120,000; full mass range, m/z 500\u20131500; isolation window width for data-dependent scan, 2; maximum injection time for data-dependent EThcD-MS/MS, 100 ms; and collision energy for data-dependent HCD-MS/MS/MS, 35%. To identify disulfide-linked peptide from EDEM2, EThcD-MS/MS data were subjected to database search analysis using the BioPharma Finder 3.0 software (Thermo Fisher Scientific), with peptide mass tolerance set to \u00b15 ppm. The amino sequencing of disulfide-linked peptides was also manually performed using HCD-MS/MS/MS spectra of disulfide-dissociated peptide ions generated by EThcD-MS/MS.\n\n### Genomic PCR\n\nHomologous recombination in HCT116 cells was confirmed by genomic PCR using a pair of primers 5\u2019-CTATGTGCCAGCTACCATGTG-3\u2019 and 5\u2019-TACTCCATGGAGGCCAAGCC-3\u2019 for hEDEM1, or 5\u2019-GAGTACAGAGAGAAAAAGGAC-3\u2019 and 5\u2019-GCCACTAGTCTCCATCGCGC-3\u2019 for hEDEM3.\n\n### RT-PCR\n\nTotal RNA prepared from cultured cells (\u223c3 \u00d7 106 cells) by the acid guanidinium/phenol/chloroform method using ISOGEN (Nippon Gene) was converted to cDNA using Moloney murine leukemia virus reverse transcription (Invitrogen) and random primers. The full-length open reading frame of EDEM1, EDEM2, or EDEM3 was amplified using PrimeSTAR HS DNA polymerase (Takara Bio) and a pair of primers described previously (Ninagawa et al., 2014).\n\n### Purification of EDEM1, EDEM3, and MAN1B1\n\nEDEM2-TXNDC11 complex was purified as described previously (George et al., 2020). WT HCT116 cells plated on 15 cm dishes were transfected with plasmid to express TAP-tagged EDEM1, EDEM3(Q543N), or MAN1B1(\u0394105). Forty-eight hours later, the cells were lysed in lysis buffer (50 mM MES, pH 7.5, containing 150 mM NaCl, 1% CHAPS, and EDTA-free protease inhibitor cocktail [Roche]), and centrifuged at 9500 g at 4\u00b0C for 30 min. The resulting supernatant was filtrated through a low protein binding syringe filter (Merck) and rotated at 4\u00b0C for 3 hr after the addition of IgG Sepharose beads (GE Healthcare). The beads were collected by centrifugation at 3000 rpm at 4\u00b0C for 1 min, washed twice briefly and then washed at 4\u00b0C overnight with wash buffer (50 mM MES, pH 7.5, containing 400 mM NaCl, 0.1% CHAPS, and EDTA-free protease inhibitor cocktail). The beads were then incubated with 200 U of AcTEV protease (Invitrogen) in TEV buffer (50 mM MES, pH 7.5, containing 150 mM NaCl) at 4\u00b0C for 24 hr, and then centrifuged briefly. The resulting supernatant was concentrated using an Amicon Filter (10 kDa cutoff, Millipore) by centrifugation at 4000 g at 4\u00b0C for 1 hr. During concentration, the buffer was changed to 50 mM MES, pH 7.5, containing 150 mM NaCl and 5 mM CaCl2, by three additions to the filter.\n\n### In vitro mannosidase assay\n\nPA-labeled free oligosaccharides were purchased from Takara Bio. Approximately 1.0 pmol of purified EDEM1, EDEM2-TXNDC11 complex, EDEM3(Q543N), or MAN1B1(\u0394105) was incubated with 150 pmol PA-M8B in a total volume of 45 \u03bcl of assay buffer (50 mM MES, pH 7.5, containing 150 mM NaCl, and 5 mM CaCl2) at 37\u00b0C for 24 hr. The reaction was stopped by boiling for 5 min. The samples were evaporated, dissolved in 20 \u03bcl of 70% (v/v) acetonitrile, and analyzed using a TSK-gel Amide-80 column (Tosoh) for mannose contents. Identification of N-glycan structures was based on their elution positions on the column and their molecular mass values compared with those of PA-glycans in the GALAXY database (http://www.glycoanalysis.info/galaxy2/ENG/index.jsp) (Takahashi and Kato, 2003). The peaks of M7, M6, and M5 were collected, evaporated, dissolved in 20 \u03bcl of water, and analyzed using a Shim-pack HRC-octadecyl silica column (Shimadzu) for isomer identification.\n\n### Purification of mCD3-\u0394-\u0394TM-HA and ATF6\u03b1(C)\n\nEDEM1, 3-DKO cells plated on 15 cm dishes were transfected with plasmid to express TAP-tagged mCD3-\u03b4-\u0394TM-HA or ATF6\u03b1(C) tagged with TAP2. 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA and ATF6\u03b1(C) tagged with 3xMyc were purified as described above for \u03b11,2-mannosidases.\n\n### N-glycan analysis by MALDI-TOF MS\n\nApproximately 800 ng of gpERAD substrate (6xMyc-mCD3-\u03b4-\u0394TM-HA or ATF6\u03b1(C)\u20133xMyc) reacted with 100\u2013150 ng (depending on molecular weight) of \u03b11,2-mannosidase at 37\u00b0C for 24 hr were treated with 500 units of PNGase (New England Biolabs) at 37\u00b0C overnight. The released N-glycans were captured and labeled with aminooxy-functionalized tryptophanyl arginine methyl ester (aoWR) by BlotGlyco beads (Sumitomo Bakelite) as described previously (Furukawa et al., 2008; Uematsu et al., 2005). Matrix-assisted laser desorption/ionization-time of flight mass spectrometry (MALDI-TOF MS) analyses of aoWR-labeled glycans were performed on Autoflex Speed (Bruker Daltonics) operated in positive-ion reflector mode. For MS acquisition, aoWR-labeled glycans in acetonitrile were mixed 1:1 with dihydrobenzoic acid (10 mg/ml in 50% acetonitrile) and spotted on the target plate.\n",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "63325de2-76e5-4868-ae8b-683f7ab0ce5b",
+      "submission_id": "fea7b23a-2b05-4bba-8364-153fe4c5e7ed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70357.sa0](https://doi.org/10.7554/eLife.70357.sa0)\n\nThis study demonstrates the details of mannose trimming in the ER by EDEM1 and EDEM3, filling an important gap in how mannose trimming creates an ERAD signal and shunts glycoproteins to the ERAD pathway.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Adam Linstedt, Carnegie Mellon University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70357.sa1](https://doi.org/10.7554/eLife.70357.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Purified EDEM3 or EDEM1 Alone Produces Determinant Oligosaccharide Structures from M8B in Mammalian Glycoprotein ERAD\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Vivek Malhotra as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Tadashi Suzuki (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nN-glycans act as sorting signals in the secretory pathway with mannose trimming marking proteins for turnover through the endoplasmic reticulum associated degradation (ERAD) pathway by exposing the alpha1,6-linked mannose residues on the C-antennary of the N-glycan. The ER possesses a number of mannosidase or mannosidase-like family members including EDEM1-3. Previous work by the authors identified EDEM2-TXNDC11 as catalyzing the initial trimming step from Man9 to Man8B (George et al., eLife 2020). Now they show that EDEM1 and EDEM3 further trim Man8B thereby creating the alpha1,6-linked mannose signal. Thus, the work fills an important gap in our understanding of the mannose trimming pathway that creates an ERAD signal for sorting of glycoproteins to the ERAD pathway.\n\nThe expert reviewers were, on the whole, convinced by the work. Nevertheless, there were two important issues that arose. The first two are summarized here and then the full comments by both reviewers can be found below. Please submit a revision along with a cover letter that explains how all these issues were addressed in the revised version.\n\n1. The first concerns the conclusion that EDEM1 and EDEM3 are THE mannosidases responsible for trimming from M8B to M5-7 in the ER. If the authors standby the conclusion that these enzymes are both sufficient (as shown here) and also required (in vivo) they should clearly explain the data supporting this in the text.\n\n2. In its current form the study is unclear about the selectivity of the enzymes towards their targets. Are they preferentially acting on partially folded/misfolded substrates? The authors should clarify this with additional data if necessary. An attempt should be made to broaden the Discussion a bit for the general reader to place the activity of these enzymes into the cellular process that selects proteins for ERAD.\n\nReviewer #1:\n\nThis study describes the processing of glycans by members of the EDEM family in preparation for ERAD. N-glycans acts as sorting signals in the secretory pathway. Mannose trimming marks proteins for turnover through the endoplasmic reticulum associated degradation (ERAD) pathway by exposing the alpha1,6-linked mannose residues on the C-antennary of the N-glycan. The ER possesses a number of mannosidase or mannosidase-like family members including EDEM1-3. The Mori lab has previously used knockout human cell lines to explore the order that the mannosidases act on the glycan (Ninagawa et al., JCB 2014). They also showed that EDEM2-TXNDC11 performs the initial trimming step from Man9 to Man8B (George et al., eLife 2020). The current study provides a continuation of this study that provides biochemical support that EDEM2 trimming is followed by EDEM1 and EDEM3 exposing the key alpha1,6-linked mannose ERAD signal (as well as performing further trimming). EDEM1 and EDEM3 are shown to possess a key large conserved intramolecular disulfide in their mannosidase homology domain, as they have seen previously for EDEM2 (George et al., eLife 2020). This intramolecular disulfide is required for their mannosidase activity. The most significant finding is the demonstration that purified EDEM1 and EDEM3 further trim Man8B (created by EDEM2-TXNDC11). This was shown both for isolated glycans (pyridylamine labeled M8B, Figure 4) and glycans linked to ERAD substrates (mCD3 (Figure 5); and ATF6alpha (Figure 6)). Overall, this study demonstrates the details of mannose trimming in the ER by EDEM1 and EDEM3, filling an important gap in how mannose trimming creates an ERAD signal and shunts glycoproteins to the ERAD pathway.\n\nThe major strength of the study is the identification of the mannosidase activities of EDEM1 and EDEM3. They show they these two ER mannosidases are responsibility for generating the ERAD signal, Man7C using glycomics and purified components. While this has been hypothesized, direct demonstration of the mannosidase activity with glycomics has been missing.\n\nFigure 2C involves the isolation of total cellular glycosidase (Pngase F?) liberated glycans (details on the experimental procedure are sparse). As EDEMs are expected to act specifically on non-native clients for ERAD targeting, wouldn't most glycans be expected to be inert to the presence of the EDEMs? Or do the EDEMs act on native substrates too? Would mannose trimming be accentuated by chemical folding disruptors? Or can glycans on ERAD substrates specifically be analyzed?\n\nThe EDEMs are expected to have some querying abilities to help mark non-native proteins rather than acting as promiscuous mannosidases, yet this is not discussed in the manuscript. Is it due to localization within ER subdomains or the selectivity of the mannosidases?\n\nWhy isn't there mannosidase trimming in WT Figure 4C? Shouldn't there be endogenous mannosidase activity in the WT cells?\n\nReviewer #2:\n\nThis manuscript provides a biochemical evidence intramolecular formation of S-S bond in EDEM2, which is possibly catalyzed by TXNDC11, a binding partner for EDEM2. Then they also characterize the activity of EDEM1 and EDEM3, and showed that both EDEM3 and EDEM1 is capable of processing oligosaccharides to expose alpha1,6-mannose, a key residue for recognition by OS-9 lectins.\n\nWhile it has been assumed that both EDEM1 and 3 have an alpha1,2-mannosidase activity, whether there are additional factor(s), such as oxidoreductase, required for its enzyme activity or not remain unclarified. This reviewer therefore likes their biochemical approaches to show that, at least for EDEM3, it looks like that the S-S bond formation with another protein is not likely to be involved in its enzymatic activity (Figure 3A(b)). They also clearly showed that EDEM1 or EDEM3 can exhibit alpha1,2-mannosidase activity in vitro, towards both PA-labeled glycans and N-glycans on ERAD model substrates.\n\nThe reviewer feels, however, that their conclusion that EDEM1 and EDEM3 is THE mannosidase responsible for trimming from M8B to M5-7 in the ER are not sufficiently supported. It is clear that their activities in vitro do not necessarily lead to this conclusion (as MAN1B1 can also clearly exert the similar activity in vitro (ex Figure 4C)). Their conclusion, the reviewer believes, is mainly coming from their previous observation that, MAN1B1-KO did not result in drastic change of N-glycan isomers of total cellular glycoproteins (similar analysis with Figure 2C of current study).\n\nWhile the reviewer acknowledges that the authors mentioned about that in the text (Page 4, lines 15-16), as the current form their logic on drawing conclusion of Figure 4E is not clear. The reviewer thus urges the authors to clearly spell out this point in the text (i.e. why they think Man1B1 is not involved in this process). Otherwise the readers who are not familiar with the authors' previous studies may not understand their logic.\n",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1c57c194-2dc0-40d4-af84-329c69f67449",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C1",
+      "claim": "EDEM2 stably disulfide-bonded to TXNDC11 is responsible for the first mannose trimming step from M9 to M8B in mammalian glycoprotein ERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that EDEM2 stably disulfide-bonded to the thioredoxin domain-containing protein TXNDC11 is responsible for the first step (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (George et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "5c0ca45a-94f8-4669-8015-fc5cffa733de",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C2",
+      "claim": "Incubation of pyridylamine-labeled M8B with purified EDEM3 alone produced M7 (M7A and M7C), M6, and M5.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of pyridylamine-labeled M8B with purified EDEM3 alone produced M7 (M7A and M7C), M6, and M5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C and 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "2ed5b96b-0462-4416-9b23-6a396525fa1d",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C3",
+      "claim": "EDEM1 showed a similar tendency to EDEM3 in producing M7, M6, and M5 from M8B, although much lower amounts of M6 and M5 were produced.",
+      "claim_type": "EXPLICIT",
+      "source": "EDEM1 showed a similar tendency, although much lower amounts of M6 and M5 were produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "69b48f7f-a476-432a-8ebb-8d9e88157368",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C4",
+      "claim": "EDEM3 is a major \u03b11,2-mannosidase for the second step from M8B in mammalian glycoprotein ERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, EDEM3 is a major \u03b11,2-mannosidase for the second step from M8B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing EDEM3 efficiently converts M8B to M7, M6, and M5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "0e669f8b-3e83-4dc2-b197-6c6bb51269b8",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C5",
+      "claim": "Both EDEM3 and EDEM1 trimmed M8B from a glycoprotein efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "Both EDEM3 and EDEM1 trimmed M8B from a glycoprotein efficiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 6 and 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "dd72d9a7-191f-4773-9d66-afd8a0d0d2e6",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C6",
+      "claim": "MAN1B1 is localized in the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our confirmation of the Golgi localization of MAN1B indicates that no other \u03b11,2-mannosidase is required for gpERAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 3 and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "9a93492e-bdbd-4be4-9f76-bd876f1863b0",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C7",
+      "claim": "No other \u03b11,2-mannosidase is required for mammalian glycoprotein ERAD besides EDEM2-TXNDC11, EDEM3, and EDEM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our confirmation of the Golgi localization of MAN1B indicates that no other \u03b11,2-mannosidase is required for gpERAD. Accordingly, we have established the entire route of oligosaccharide processing and the enzymes responsible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Golgi localization of MAN1B1 and the ability of EDEM proteins to produce all necessary oligosaccharide structures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "46b6e9ff-c3bb-4dd6-b47c-c58528765012",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C8",
+      "claim": "TXNDC11 helps EDEM2 to form the disulfide bond between C65 and C408.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that TXNDC11 helps EDEM2 to form the disulfide bond between C65 and C408, which is essential for EDEM2 to exhibit \u03b11,2-mannosidase activity (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by LC/MS/MS/MS data shown in Figure 1D demonstrating disulfide bonding between C65 and C408 only in EDEM2-TXNDC11 complex",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "4674da9d-ea86-4132-b013-5b92ba4409f8",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C9",
+      "claim": "The disulfide bond between C65 and C408 is essential for EDEM2 to exhibit \u03b11,2-mannosidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that TXNDC11 helps EDEM2 to form the disulfide bond between C65 and C408, which is essential for EDEM2 to exhibit \u03b11,2-mannosidase activity (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (George et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "baa1c996-8153-4d8c-946d-e27910e58004",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C10",
+      "claim": "C160 and C529 of EDEM1 are critical for EDEM1 to exhibit \u03b11,2-mannosidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that the mutations C160A and C529A of EDEM1 as well as C82A and C441A of EDEM3 indeed inactivated EDEM1 and EDEM3, respectively, in gpERAD (Figure 2C and D). Thus, the conserved cysteine residues, at which intramolecular disulfide bonding was confirmed in EDEM2, turned out to be critical for EDEM1 and EDEM3 to exhibit \u03b11,2-mannosidase activities, as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "60d5b2d9-ad86-423a-910c-20410e08ae43",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C11",
+      "claim": "C82 and C441 of EDEM3 are critical for EDEM3 to exhibit \u03b11,2-mannosidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that the mutations C160A and C529A of EDEM1 as well as C82A and C441A of EDEM3 indeed inactivated EDEM1 and EDEM3, respectively, in gpERAD (Figure 2C and D). Thus, the conserved cysteine residues, at which intramolecular disulfide bonding was confirmed in EDEM2, turned out to be critical for EDEM1 and EDEM3 to exhibit \u03b11,2-mannosidase activities, as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "cd3d5dac-1b7a-42ce-a5ca-54f38074abb8",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C12",
+      "claim": "C410 and C457 of EDEM1 are important for the \u03b11,2-mannosidase activity of EDEM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Results also showed that the mutations C410A and C457A of EDEM1 inactivated the \u03b11,2-mannosidase activity of EDEM1 (Figure 2C), suggesting that C410 and C457 of EDEM1 might form a local disulfide bond to stabilize the MHD of EDEM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "6dcb0254-6cce-42df-afbf-df36e3ca53d4",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C13",
+      "claim": "C410 and C457 of EDEM1 might form a local disulfide bond to stabilize the MHD of EDEM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Results also showed that the mutations C410A and C457A of EDEM1 inactivated the \u03b11,2-mannosidase activity of EDEM1 (Figure 2C), suggesting that C410 and C457 of EDEM1 might form a local disulfide bond to stabilize the MHD of EDEM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of mutagenesis data and previous structural predictions",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "38d18a43-a285-4351-9605-2a4f3e267119",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C14",
+      "claim": "Four of eight cysteine residues present in EDEM1 can act as free thiols, while the other four cysteine residues form two disulfide bonds (C160-C529 and C410-C457).",
+      "claim_type": "EXPLICIT",
+      "source": "In this connection, it was previously suggested that four of eight cysteine residues present in EDEM1 can act as free thiols and may be involved in thiol-dependent interaction with substrates, whereas the other four cysteine residues are in sufficient proximity to form two disulfide bonds (C160-C529 and C410-C457) (Lamriben et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Lamriben et al., 2018)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "9d036d20-6ddb-4d7f-aca3-11739783979b",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C15",
+      "claim": "Cysteine residues outside of the MHD of EDEM1 and EDEM3 are not important for their \u03b11,2-mannosidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cysteine residues outside of the MHD of EDEM1 and EDEM3 are not important for their \u03b11,2-mannosidase activity (Figure 2C and D), unlike C558 of EDEM2, which is stably disulfide-bonded to C692 of TXNDC11 (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2C and 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "1c99a47a-3414-44f7-862d-47d0d3c52b8a",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C16",
+      "claim": "C558 of EDEM2 is stably disulfide-bonded to C692 of TXNDC11.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cysteine residues outside of the MHD of EDEM1 and EDEM3 are not important for their \u03b11,2-mannosidase activity (Figure 2C and D), unlike C558 of EDEM2, which is stably disulfide-bonded to C692 of TXNDC11 (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (George et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "d9823f2e-37b5-4082-b27c-0fc00c1d920c",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C17",
+      "claim": "MAN1B1 is not colocalized with the ER marker mEGFP-KDEL in HCT116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MAN1B1-mCherry driven by the CMV promoter or CMVshort promoter was not colocalized with mEGFP-KDEL, an ER marker, but was colocalized with mEGFP-Giantin, a Golgi marker, in HCT116 cells (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "e7ee15f0-9516-4aeb-8738-0e8ea34c13f6",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C18",
+      "claim": "MAN1B1 is colocalized with the Golgi marker mEGFP-Giantin in HCT116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MAN1B1-mCherry driven by the CMV promoter or CMVshort promoter was not colocalized with mEGFP-KDEL, an ER marker, but was colocalized with mEGFP-Giantin, a Golgi marker, in HCT116 cells (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "a2c143c3-1eef-4ba4-b0ad-79ed68f2b396",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C19",
+      "claim": "MAN1B1 is not colocalized with the ER marker mEGFP-KDEL in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, MAN1B1-mCherry driven by the CMV promoter or CMVshort promoter was not colocalized with mEGFP-KDEL but rather with mEGFP-Giantin in HeLa cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "c16f5908-3d69-45b8-b51a-503e7d6dde4f",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C20",
+      "claim": "MAN1B1 is colocalized with the Golgi marker mEGFP-Giantin in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, MAN1B1-mCherry driven by the CMV promoter or CMVshort promoter was not colocalized with mEGFP-KDEL but rather with mEGFP-Giantin in HeLa cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "09373cd5-beb4-4710-b53c-c1f2e28d2921",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C21",
+      "claim": "Some MAN1B1-mCherry highly expressed from the CMV promoter overlapped with Lamp1-mGFP (lysosome marker) in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some MAN1B1-mCherry highly expressed from the CMV promoter overlapped with Lamp1-mGFP (Figure 3\u2014figure supplement 1F), whereas MAN1B1-mCherry never overlapped with mEGFP-KDEL, even after higher expression (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 3\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "73786a6b-c038-4ae6-a164-7a6142a3a520",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C22",
+      "claim": "MAN1B1-mCherry never overlapped with mEGFP-KDEL, even after higher expression in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some MAN1B1-mCherry highly expressed from the CMV promoter overlapped with Lamp1-mGFP (Figure 3\u2014figure supplement 1F), whereas MAN1B1-mCherry never overlapped with mEGFP-KDEL, even after higher expression (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 3\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "d5a757d7-158f-413c-91b3-3b8fc362733c",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C23",
+      "claim": "MAN1B1-mediated mannose trimming cannot participate in gpERAD, which occurs in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MAN1B1-mediated mannose trimming cannot participate in gpERAD, the events in the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from localization data showing MAN1B1 is in Golgi, not ER",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "4c7d99fb-50c6-4451-8005-658a284b6815",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C24",
+      "claim": "TXNDC11 is not disulfide-bonded to EDEM1.",
+      "claim_type": "IMPLICIT",
+      "source": "Simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM1 into EDEM1-KO cells or simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM3 into EDEM3-KO cells did not change band patterns compared with single introduction of 3xFlag-tagged EDEM1 into EDEM1-KO cells or single introduction of 3xFlag-tagged EDEM3 into EDEM3-KO cells (Figure 4A (a, b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from non-reducing SDS-PAGE data showing no complex formation between TXNDC11 and EDEM1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "0b6a3b61-7304-4aa0-8697-41d50e15f64a",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C25",
+      "claim": "TXNDC11 is not disulfide-bonded to EDEM3.",
+      "claim_type": "IMPLICIT",
+      "source": "Simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM1 into EDEM1-KO cells or simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM3 into EDEM3-KO cells did not change band patterns compared with single introduction of 3xFlag-tagged EDEM1 into EDEM1-KO cells or single introduction of 3xFlag-tagged EDEM3 into EDEM3-KO cells (Figure 4A (a, b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from non-reducing SDS-PAGE data showing no complex formation between TXNDC11 and EDEM3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "74988ff8-ce0d-4871-82fa-3a6d13cceddf",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C26",
+      "claim": "EDEM2 is the main partner of TXNDC11.",
+      "claim_type": "EXPLICIT",
+      "source": "When any of 3xFlag-tagged EDEM1, EDEM2, and EDEM3 was introduced into WT HCT116 cells, followed by immunoprecipitation with anti-Flag antibody and subsequent immunoblotting using anti-TXNDC11 antibody under reducing and non-reducing conditions, endogenous TXNDC11 was clearly co-immunoprecipitated from cells overexpressing 3xFlag-tagged EDEM2, indicating that EDEM2 is the main partner of TXNDC11 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "ee303335-2b9d-47ba-a9f4-50904c67f22c",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C27",
+      "claim": "M8B was accumulated in EDEM1,3-DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "M9 was accumulated in EDEM-TKO cells as we described previously (Ninagawa et al., 2015), whereas M8B was accumulated in EDEM1, 3-DKO cells (Figure 2\u2014figure supplement 1D), as we expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by N-glycan profiling data shown in Figure 2\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "714f7ef7-f3b6-4fd8-8ec4-c268a895b204",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C28",
+      "claim": "Degradation of human ATF6\u03b1 was markedly delayed in EDEM1,3-DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, degradation of human ATF6\u03b1, a transmembrane-type gpERAD substrate, and mCD3-\u03b4-\u0394TM-HA, a soluble gpERAD substrate, was markedly delayed in EDEM1, 3-DKO cells (Figure 2\u2014figure supplement 1E and 1F), similarly to the case of EDEM2-KO cells (Ninagawa et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cycloheximide chase data shown in Figure 2\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "cf8b1c0e-bc22-489e-b051-b78302505cd3",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C29",
+      "claim": "Degradation of mCD3-\u03b4-\u0394TM-HA was markedly delayed in EDEM1,3-DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, degradation of human ATF6\u03b1, a transmembrane-type gpERAD substrate, and mCD3-\u03b4-\u0394TM-HA, a soluble gpERAD substrate, was markedly delayed in EDEM1, 3-DKO cells (Figure 2\u2014figure supplement 1E and 1F), similarly to the case of EDEM2-KO cells (Ninagawa et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cycloheximide chase data shown in Figure 2\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "3189ab26-b1ec-491d-8371-433b8cc0683e",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C30",
+      "claim": "EDEM1,3-DKO cells grew slightly more slowly than wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate their functionality in gpERAD, we constructed EDEM1, 3-double KO (DKO) cells (two independent clones #1 and #2, Figure 2\u2014figure supplement 1A and S1B), which expressed neither EDEM1 mRNA nor EDEM3 mRNA (Figure 2B), and grew slightly more slowly than wild-type (WT) cells (Figure 2\u2014figure supplement 1C), as we previously described for the construction of EDEM1/2/3-triple KO (TKO) cells (Ninagawa et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by doubling time data shown in Figure 2\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "7f371493-050d-483d-b560-543547ed4e0d",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C31",
+      "claim": "EDEM3 produced M7A and M7C from M8B with no preference for the mannose residue in the A or C branch.",
+      "claim_type": "EXPLICIT",
+      "source": "M7 turned out to be M7A and M7C (Figure 5D (a)), indicating no preference of EDEM3 toward the mannose residue present in the A or C branch of M8B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HPLC isomer identification data shown in Figure 5D(a)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "07cf9374-e4f5-419a-8e22-29bd6462917a",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C32",
+      "claim": "M8B was converted to M7 only slightly by purified EDEM2-TXNDC11 complex, and M6 and M5 were hardly detected even after 24 hr incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, M8B was converted to M7 only slightly by purified EDEM2-TXNDC11 complex, and M6 and M5 were hardly detected even after 24 hr incubation (Figure 5C), indicating a strong preference of EDEM2-TXNDC11 complex toward M9 (George et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HPLC data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "dd8bef26-d6a4-47af-af87-a491cb98c6cd",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C33",
+      "claim": "EDEM2-TXNDC11 complex has a strong preference toward M9.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, M8B was converted to M7 only slightly by purified EDEM2-TXNDC11 complex, and M6 and M5 were hardly detected even after 24 hr incubation (Figure 5C), indicating a strong preference of EDEM2-TXNDC11 complex toward M9 (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from poor activity on M8B and citation to previous work showing activity on M9",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "f418e4a5-46d1-460a-86fc-fae4b088f038",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C34",
+      "claim": "The entire route of oligosaccharide processing in mammalian gpERAD has been established.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we have established the route of oligosaccharide processing in mammalian gpERAD (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from combined experimental data on EDEM activities",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "6491b8b9-1615-499f-9f2e-4cb8eeb9fc3b",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C35",
+      "claim": "The route of oligosaccharide processing in mammalian gpERAD proceeds from M9 to M8B via EDEM2-TXNDC11, then from M8B to M7A, M7C, M6, and M5 via EDEM3/EDEM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we have established the route of oligosaccharide processing in mammalian gpERAD (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by combined experimental data and schematic shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "4b174293-0638-45ac-a902-4c8f7b7e583d",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C36",
+      "claim": "6xMyc-tagged mCD3-\u03b4-\u0394TM-HA purified from EDEM1,3-DKO cells possesses N-glycans of M8B.",
+      "claim_type": "EXPLICIT",
+      "source": "6xMyc-tagged mCD3-\u03b4-\u0394TM-HA and ATF6\u03b1(C) tagged with 3xMyc were purified from EDEM1, 3-DKO cells overexpressing TAP-tagged mCD3-\u03b4-\u0394TM-HA and ATF6(C) tagged with TAP2 (see Figure 1\u2014figure supplement 1A), respectively, by transfection (Figure 6A (a) and 7A (a)). They were expected to possess N-glycans of M8B, which we confirmed by MS analysis (see top panel of Figure 6B (b) and Figure 7B (b)); it should be noted that each oligosaccharide was detected as two peaks consisting of [M + H]+, a proton adduct ion, and [M + Na]+, a sodium adduct ion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MS analysis shown in Figure 6B(b)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "b086f1fa-eaf9-4767-9cf3-79a07ac54337",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C37",
+      "claim": "ATF6\u03b1(C) tagged with 3xMyc purified from EDEM1,3-DKO cells possesses N-glycans of M8B.",
+      "claim_type": "EXPLICIT",
+      "source": "6xMyc-tagged mCD3-\u03b4-\u0394TM-HA and ATF6\u03b1(C) tagged with 3xMyc were purified from EDEM1, 3-DKO cells overexpressing TAP-tagged mCD3-\u03b4-\u0394TM-HA and ATF6(C) tagged with TAP2 (see Figure 1\u2014figure supplement 1A), respectively, by transfection (Figure 6A (a) and 7A (a)). They were expected to possess N-glycans of M8B, which we confirmed by MS analysis (see top panel of Figure 6B (b) and Figure 7B (b)); it should be noted that each oligosaccharide was detected as two peaks consisting of [M + H]+, a proton adduct ion, and [M + Na]+, a sodium adduct ion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MS analysis shown in Figure 7B(b)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "56e2ea4e-48de-4c0e-a7b4-ad06119588a4",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C38",
+      "claim": "6xMyc-tagged mCD3-\u03b4-\u0394TM-HA purified from EDEM1,3-DKO cells is completely sensitive to digestion with endoglycosidase H.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, they were completely sensitive to digestion with endoglycosidase H (Endo H) (Figure 6A (b) and 7 A (b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Endo H digestion data shown in Figure 6A(b)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "f21d9ebd-0ced-4aee-9cda-b68642a721b9",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C39",
+      "claim": "ATF6\u03b1(C) tagged with 3xMyc purified from EDEM1,3-DKO cells is completely sensitive to digestion with endoglycosidase H.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, they were completely sensitive to digestion with endoglycosidase H (Endo H) (Figure 6A (b) and 7 A (b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Endo H digestion data shown in Figure 7A(b)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "60dc14b4-670a-430f-9cf1-a1316cd224c3",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C40",
+      "claim": "6xMyc-tagged EDEM1 caused a downward shift to the band of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA purified from EDEM1,3-DKO cells after incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "The band of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA purified from transfected EDEM1, 3-DKO cells exhibited a downward shift after incubation with 6xMyc-tagged EDEM1 (Figure 6B (a), lane 4) and EDEM3(Q543N) (lane 10) but not with 6xMyc-tagged EDEM2-TXNDC11 complex (lane 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblotting data shown in Figure 6B(a)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "b21ea0ed-7c8f-431d-888e-98d93a501562",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C41",
+      "claim": "6xMyc-tagged EDEM3(Q543N) caused a downward shift to the band of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA purified from EDEM1,3-DKO cells after incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "The band of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA purified from transfected EDEM1, 3-DKO cells exhibited a downward shift after incubation with 6xMyc-tagged EDEM1 (Figure 6B (a), lane 4) and EDEM3(Q543N) (lane 10) but not with 6xMyc-tagged EDEM2-TXNDC11 complex (lane 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblotting data shown in Figure 6B(a)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "e402ca9e-bb60-4d34-b3ec-fe12fd4b6a56",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C42",
+      "claim": "6xMyc-tagged EDEM2-TXNDC11 complex did not cause a downward shift to the band of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA purified from EDEM1,3-DKO cells after incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "The band of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA purified from transfected EDEM1, 3-DKO cells exhibited a downward shift after incubation with 6xMyc-tagged EDEM1 (Figure 6B (a), lane 4) and EDEM3(Q543N) (lane 10) but not with 6xMyc-tagged EDEM2-TXNDC11 complex (lane 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblotting data shown in Figure 6B(a)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "a299158a-7112-4631-a022-fef6d129ce30",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C43",
+      "claim": "M8B on 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA was converted to M5 almost completely after 24 hr incubation with 6xMyc-tagged EDEM1.",
+      "claim_type": "EXPLICIT",
+      "source": "MS analysis of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA samples after 24 hr incubation with 6xMyc-tagged EDEM1 and EDEM3(Q543N) revealed that M8B was converted to M5 almost completely, whereas a major peak was still M8B after 24 hr incubation with 6xMyc-tagged EDEM2-TXNDC11 complex (Figure 6B (b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MS analysis shown in Figure 6B(b)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "2c46380b-974b-415d-a491-5d2805947c48",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C44",
+      "claim": "M8B on 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA was converted to M5 almost completely after 24 hr incubation with 6xMyc-tagged EDEM3(Q543N).",
+      "claim_type": "EXPLICIT",
+      "source": "MS analysis of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA samples after 24 hr incubation with 6xMyc-tagged EDEM1 and EDEM3(Q543N) revealed that M8B was converted to M5 almost completely, whereas a major peak was still M8B after 24 hr incubation with 6xMyc-tagged EDEM2-TXNDC11 complex (Figure 6B (b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MS analysis shown in Figure 6B(b)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "e023efe6-0202-482b-94b1-dbf3713fb445",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C45",
+      "claim": "A major peak was still M8B after 24 hr incubation of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA with 6xMyc-tagged EDEM2-TXNDC11 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "MS analysis of 6xMyc-tagged mCD3-\u03b4-\u0394TM-HA samples after 24 hr incubation with 6xMyc-tagged EDEM1 and EDEM3(Q543N) revealed that M8B was converted to M5 almost completely, whereas a major peak was still M8B after 24 hr incubation with 6xMyc-tagged EDEM2-TXNDC11 complex (Figure 6B (b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MS analysis shown in Figure 6B(b)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "92123003-00ff-481e-9152-b933fdedddb7",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C46",
+      "claim": "EDEM3 and EDEM1 are more active on protein-bound M8B than on free M8B.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that EDEM3 and EDEM1 are more active on protein-bound M8B than on free M8B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of activity on PA-M8B versus glycoprotein-bound M8B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "7e4423fa-cfc9-42b0-8f2c-30ef0b1d934d",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C47",
+      "claim": "Coexpression of EDEM3 and ERp46 is likely to facilitate the formation of disulfide bonding between C82 and C441 of human EDEM3.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that the MHD of EDEM3 is transiently disulfide-bonded to the thioredoxin domain-containing protein ERp46, and that coexpression of EDEM3 and ERp46 enhances EDEM3 activity in gpERAD (Yu et al., 2018). Based on our current results, coexpression of EDEM3 and ERp46 is likely to facilitate the formation of disulfide bonding between C82 and C441 of human EDEM3 (C83 and C442 of mouse EDEM3) in the MHD, which is required for EDEM3 to exhibit \u03b11,2-mannosidase activity (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from current mutagenesis data and previous work on ERp46 (Yu et al., 2018)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "22f758c6-0e55-48d8-a1bd-1d7f9f8c0a31",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C48",
+      "claim": "Once fully folded with correct disulfide bonding in the MHD, EDEM3 requires no partner protein to exhibit \u03b11,2-mannosidase activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Once fully folded with correct disulfide bonding in the MHD, EDEM3 requires no partner protein to exhibit \u03b11,2-mannosidase activity in vitro, in contrast to EDEM2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from successful purification and activity of EDEM3 alone",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "b1823061-acd5-44ba-8232-38dd266facb0",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C49",
+      "claim": "EDEM2 requires a partner protein (TXNDC11) to exhibit \u03b11,2-mannosidase activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Once fully folded with correct disulfide bonding in the MHD, EDEM3 requires no partner protein to exhibit \u03b11,2-mannosidase activity in vitro, in contrast to EDEM2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with EDEM3 and previous work",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "e3bdb3b0-d603-45ee-9988-698320f1d489",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C50",
+      "claim": "The conformation of noncomplexed and complexed EDEM2 with TXNDC11 differs.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the conformation of noncomplexed and complexed EDEM2 with TXNDC11 differs, using sensitivity to trypsin digestion (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (George et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "0e614d5f-c65d-4eff-96bf-d9d81439b468",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C51",
+      "claim": "The structure of the catalytic site of EDEM2 may become significantly different to that of EDEM1 or EDEM3 following intramolecular disulfide bond formation in the MHD plus intermolecular disulfide bonding between EDEM2 and TXNDC11.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the structure of the catalytic site of EDEM2 becomes significantly different to that of EDEM1 or EDEM3 following intramolecular disulfide bond formation in the MHD plus intermolecular disulfide bonding between EDEM2 and TXNDC11; this may explain not only the specificity of EDEM2 toward M9 but also the requirement for TXNDC11 as a stable partner of EDEM2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of structural differences",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "102ce030-8f74-4ec5-b076-6fdebbfceafa",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C52",
+      "claim": "Structural differences in EDEM2 may explain the specificity of EDEM2 toward M9 and the requirement for TXNDC11 as a stable partner.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the structure of the catalytic site of EDEM2 becomes significantly different to that of EDEM1 or EDEM3 following intramolecular disulfide bond formation in the MHD plus intermolecular disulfide bonding between EDEM2 and TXNDC11; this may explain not only the specificity of EDEM2 toward M9 but also the requirement for TXNDC11 as a stable partner of EDEM2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "15ef6ac2-8192-49d0-a127-cdec1f11dfe2",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C53",
+      "claim": "Sequential mannose trimming of N-glycan from M9 to M8B and then to oligosaccharides exposing the \u03b11,6-linked mannosyl residue facilitates ER-associated degradation of misfolded glycoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential mannose trimming of N-glycan, from M9 to M8B and then to oligosaccharides exposing the \u03b11,6-linked mannosyl residue (M7A, M6, and M5), facilitates endoplasmic reticulum-associated degradation of misfolded glycoproteins (gpERAD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "698d4653-f258-4723-aab9-07564b3f7c51",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C54",
+      "claim": "In yeast, the \u03b11,2-mannosidases Mns1 and Htm1 carry out the first and second mannose trimming steps, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the \u03b11,2-mannosidases Mns1 and Htm1 carry out the first and second mannose trimming steps, respectively (Ninagawa et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review (Ninagawa et al., 2021)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "f72d4ccd-b104-4586-8c28-ede297353534",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C55",
+      "claim": "EDEM2 is required for the conversion of M9 to M8B in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We have constructed knockout (KO) cells for \u03b11,2-mannosidase candidate genes, namely EDEM1, EDEM2, and EDEM3 (Htm1 orthologues), in human HCT116 diploid cells, and have shown that EDEM2 is required for the conversion of M9 to M8B and that EDEM3 (mainly) and EDEM1 (partly) are required for the conversion of M8B to oligosaccharides, which exposes the \u03b11,6-linked mannosyl residue (Ninagawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Ninagawa et al., 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "b52cb608-5656-448b-b2c2-88b4b474bc06",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C56",
+      "claim": "EDEM3 (mainly) and EDEM1 (partly) are required for the conversion of M8B to oligosaccharides exposing the \u03b11,6-linked mannosyl residue in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We have constructed knockout (KO) cells for \u03b11,2-mannosidase candidate genes, namely EDEM1, EDEM2, and EDEM3 (Htm1 orthologues), in human HCT116 diploid cells, and have shown that EDEM2 is required for the conversion of M9 to M8B and that EDEM3 (mainly) and EDEM1 (partly) are required for the conversion of M8B to oligosaccharides, which exposes the \u03b11,6-linked mannosyl residue (Ninagawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Ninagawa et al., 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "72cf8ff5-730b-440d-94b5-93c14b755e3b",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C57",
+      "claim": "EDEM2 alone exhibits no mannosidase activity toward M9.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our recent biochemical analysis has clarified that although EDEM2 alone exhibits no mannosidase activity toward M9, as reported previously (Mast et al., 2005; Shenkman et al., 2018), EDEM2 stably disulfide-bonded to the thioredoxin domain-containing protein TXNDC11 catalyzes the first mannose trimming step from M9 to M8B in vitro (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Mast et al., 2005; Shenkman et al., 2018)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "b944c9fa-40f4-4b89-9dc0-804531c3b8f2",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C58",
+      "claim": "EDEM2 stably disulfide-bonded to TXNDC11 catalyzes the first mannose trimming step from M9 to M8B in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our recent biochemical analysis has clarified that although EDEM2 alone exhibits no mannosidase activity toward M9, as reported previously (Mast et al., 2005; Shenkman et al., 2018), EDEM2 stably disulfide-bonded to the thioredoxin domain-containing protein TXNDC11 catalyzes the first mannose trimming step from M9 to M8B in vitro (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (George et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "bb749633-de90-4886-9852-7021ce8f52b6",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C59",
+      "claim": "Intramolecular disulfide bond formation in the mannosidase homology domain is considered essential for EDEM2 to exhibit \u03b11,2-mannosidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intramolecular disulfide bond formation in the mannosidase homology domain (MHD) is considered essential for EDEM2 to exhibit \u03b11,2-mannosidase activity because mutation of either C65 or C408 inactivated EDEM2 in gpERAD (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (George et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "0e1b3e21-838a-4d9d-9c71-80abbadc9479",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C60",
+      "claim": "Mutation of either C65 or C408 inactivated EDEM2 in gpERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Intramolecular disulfide bond formation in the mannosidase homology domain (MHD) is considered essential for EDEM2 to exhibit \u03b11,2-mannosidase activity because mutation of either C65 or C408 inactivated EDEM2 in gpERAD (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (George et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "f9d5db42-7ccb-4d1d-a0ba-e84cf6d0b53b",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C61",
+      "claim": "MAN1B1 can produce M6 and M5 from M9 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed MAN1B1 as a control of an extensive \u03b11,2-mannosidase, based on a report that it can produce M6 and M5 from M9 in vitro (Aikawa et al., 2012); we confirmed this observation (see Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to previous work (Aikawa et al., 2012) and confirmed by data in Figure 5C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "1ba1b2bf-ef4e-4cb9-a70d-6ed3d945112a",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C62",
+      "claim": "Both TAP-tagged MAN1B1 and MAN1B1(\u0394105) are active mannosidases.",
+      "claim_type": "EXPLICIT",
+      "source": "Both TAP-tagged MAN1B1 and MAN1B1(\u0394105) are active mannosidases, as their overexpression in EDEM2-KO cells caused a downward shift to the transfected mCD3-\u03b4-\u0394TM-HA band (Figure 4C (b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblotting data shown in Figure 4C(b)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "52fa17fd-1d97-4121-a607-8f3f7ceee962",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C63",
+      "claim": "M7C is present in small amounts on glycoproteins in HCT116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both EDEM3 and EDEM1 nearly equally produced M7A and M7C from M8B (Figure 5D (a)), which explains the presence of a small amount of M7C on glycoproteins in HCT116 cells (Ninagawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Ninagawa et al., 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "5a26ca12-27f0-4437-b497-6167f1936333",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C64",
+      "claim": "M7C is likely converted to M6 and then to M5 by EDEM3 and EDEM1.",
+      "claim_type": "EXPLICIT",
+      "source": "M7C is likely converted to M6 and then to M5 by EDEM3 and EDEM1, because they have no preference for the mannose residue in the A branch or C branch of M8B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lack of branch preference in M8B trimming",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "b61bd03d-aebd-4334-b51a-cbf98bb38a7f",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C65",
+      "claim": "The entire route of oligosaccharide processing and the enzymes responsible for it have been established for mammalian gpERAD for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the entire route of oligosaccharide processing and the enzymes responsible for it have been established for mammalian gpERAD for the first time (Figure 5E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from combined experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "335f2255-f111-4c28-b6c2-d8f8783417eb",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C66",
+      "claim": "The MHD of EDEM3 is transiently disulfide-bonded to the thioredoxin domain-containing protein ERp46.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that the MHD of EDEM3 is transiently disulfide-bonded to the thioredoxin domain-containing protein ERp46, and that coexpression of EDEM3 and ERp46 enhances EDEM3 activity in gpERAD (Yu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Yu et al., 2018)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "78f0d2fc-c7e3-4764-afd2-f4f68449ea5c",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C67",
+      "claim": "Coexpression of EDEM3 and ERp46 enhances EDEM3 activity in gpERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that the MHD of EDEM3 is transiently disulfide-bonded to the thioredoxin domain-containing protein ERp46, and that coexpression of EDEM3 and ERp46 enhances EDEM3 activity in gpERAD (Yu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Yu et al., 2018)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "28744f6f-b034-4df7-b300-64a2062fde1d",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C68",
+      "claim": "Disulfide bonding between C82 and C441 of human EDEM3 in the MHD is required for EDEM3 to exhibit \u03b11,2-mannosidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our current results, coexpression of EDEM3 and ERp46 is likely to facilitate the formation of disulfide bonding between C82 and C441 of human EDEM3 (C83 and C442 of mouse EDEM3) in the MHD, which is required for EDEM3 to exhibit \u03b11,2-mannosidase activity (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "c7952033-e560-419e-b2da-01e830184737",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C69",
+      "claim": "The \u03b11,2-mannosidase MAN1B1 appears to play only a very minor role in gpERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous genetic analysis revealed that the \u03b11,2-mannosidase MAN1B1 (a sole Mns1 orthologue) appears to play only a very minor role in gpERAD (Ninagawa et al., 2014), contrary to the original proposals (Avezov et al., 2008; Gonzalez et al., 1999; Hosokawa et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Ninagawa et al., 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "c492d883-8640-4c8f-87ff-9a4d1a375582",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C70",
+      "claim": "Endogenous MAN1B1 is localized in the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current results with another \u03b11,2-mannosidase MAN1B1 (Figure 3 and Figure 3\u2014figure supplement 1) are well consistent with a previous report showing the Golgi localization of endogenous MAN1B1 by immunofluorescence (Pan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Pan et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "fe1277de-3c27-4a57-b82a-0af6ecc7761e",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C71",
+      "claim": "Introduction of 3xFlag-tagged EDEM2 into EDEM2-KO cells produced its monomer, and probably dimer and aggregated forms.",
+      "claim_type": "EXPLICIT",
+      "source": "As we reported previously, analysis by non-reducing SDS-PAGE followed by immunoblotting showed that introduction of 3xFlag-tagged EDEM2 into EDEM2-KO cells produced its monomer, and probably dimer and aggregated forms, whereas simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM2 into EDEM2-KO cells produced a high molecular weight complex of EDEM2 and TXNDC11, designated EDEM2\u00a7\u20133xFlag (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by non-reducing SDS-PAGE data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "29c43abd-f02a-469d-9eff-c115ab05503a",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C72",
+      "claim": "Simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM2 into EDEM2-KO cells produced a high molecular weight complex of EDEM2 and TXNDC11.",
+      "claim_type": "EXPLICIT",
+      "source": "As we reported previously, analysis by non-reducing SDS-PAGE followed by immunoblotting showed that introduction of 3xFlag-tagged EDEM2 into EDEM2-KO cells produced its monomer, and probably dimer and aggregated forms, whereas simultaneous introduction of 3xFlag-tagged TXNDC11 and 3xFlag-tagged EDEM2 into EDEM2-KO cells produced a high molecular weight complex of EDEM2 and TXNDC11, designated EDEM2\u00a7\u20133xFlag (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by non-reducing SDS-PAGE data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "c9a196b6-9f79-4776-be12-dede4fc59b3e",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C73",
+      "claim": "Both TXNDC11 and the EDEM2-TXNDC11 complex are detected as a doublet band due to alternative translational initiation of TXNDC11 at M1 or M58.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that both TXNDC11 and the EDEM2-TXNDC11 complex are detected as a doublet band due to alternative translational initiation of TXNDC11 at M1 or M58 (George et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (George et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "3a149489-36c7-4339-aab2-06c689cdaba2",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C74",
+      "claim": "TXNDC11(M1A) is expressed as both soluble and transmembrane proteins because its N-terminal hydrophobic region functions by chance as either a signal sequence or a transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that TXNDC11(M1A) was used to purify EDEM2-TXNDC11 complex; TXNDC11(M58A) is expressed only as a transmembrane protein, whereas TXNDC11(M1A) is expressed as both soluble and transmembrane proteins because its N-terminal hydrophobic region functions by chance as either a signal sequence or a transmembrane domain (TMD) (Figure 1B), allowing us to purify a soluble complex of EDEM2 and TXNDC11.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from structural features shown in Figure 1B",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "2d6322d4-9040-45d5-81ce-ee7c0d00f586",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C75",
+      "claim": "TXNDC11(M58A) is expressed only as a transmembrane protein.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that TXNDC11(M1A) was used to purify EDEM2-TXNDC11 complex; TXNDC11(M58A) is expressed only as a transmembrane protein, whereas TXNDC11(M1A) is expressed as both soluble and transmembrane proteins because its N-terminal hydrophobic region functions by chance as either a signal sequence or a transmembrane domain (TMD) (Figure 1B), allowing us to purify a soluble complex of EDEM2 and TXNDC11.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from structural features shown in Figure 1B",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "67d4a2e5-b9c3-4867-8784-a850a6ff287a",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C76",
+      "claim": "C65 of human EDEM2 is conserved as C160 of human EDEM1 and C82 of human EDEM3.",
+      "claim_type": "EXPLICIT",
+      "source": "C65 of human EDEM2 is conserved as C160 of human EDEM1 and C82 of human EDEM3, whereas C408 of human EDEM2 is conserved as C529 of human EDEM1 and C441 of human EDEM3 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "81d63904-ea72-4c13-a090-122f41eac222",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C77",
+      "claim": "C408 of human EDEM2 is conserved as C529 of human EDEM1 and C441 of human EDEM3.",
+      "claim_type": "EXPLICIT",
+      "source": "C65 of human EDEM2 is conserved as C160 of human EDEM1 and C82 of human EDEM3, whereas C408 of human EDEM2 is conserved as C529 of human EDEM1 and C441 of human EDEM3 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "25c33316-6ff1-4489-9e54-2356454fdb3b",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C78",
+      "claim": "EDEM1,3-DKO cells expressed neither EDEM1 mRNA nor EDEM3 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate their functionality in gpERAD, we constructed EDEM1, 3-double KO (DKO) cells (two independent clones #1 and #2, Figure 2\u2014figure supplement 1A and S1B), which expressed neither EDEM1 mRNA nor EDEM3 mRNA (Figure 2B), and grew slightly more slowly than wild-type (WT) cells (Figure 2\u2014figure supplement 1C), as we previously described for the construction of EDEM1/2/3-triple KO (TKO) cells (Ninagawa et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "3f95cd2b-e094-4b6d-8dd5-083192db16c5",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "claim_id": "C79",
+      "claim": "M9 was accumulated in EDEM-TKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "M9 was accumulated in EDEM-TKO cells as we described previously (Ninagawa et al., 2015), whereas M8B was accumulated in EDEM1, 3-DKO cells (Figure 2\u2014figure supplement 1D), as we expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Ninagawa et al., 2015)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5dc9cc08-724d-4199-a025-50c99f5a149d",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TXNDC11 forms a stable disulfide-bonded complex with EDEM2, facilitating the formation of a critical intramolecular disulfide bond (C65-C408) in EDEM2's mannosidase homology domain. LC/MS/MS/MS analysis confirmed this disulfide bond is present only in the EDEM2-TXNDC11 complex and not in EDEM2 alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C71-C73 are well-supported by biochemical data. The LC/MS/MS/MS analysis (Figure 1D) provides direct molecular evidence for the C65-C408 disulfide bond in the EDEM2-TXNDC11 complex. Non-reducing SDS-PAGE (Figure 1A) demonstrates complex formation. The data converge to support TXNDC11's role in EDEM2 folding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "f750268c-41c0-4454-8394-b28340a763bc",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Conserved cysteine residues in the mannosidase homology domain are critical for EDEM1 and EDEM3 \u03b11,2-mannosidase activity. Mutations C160A/C529A in EDEM1 and C82A/C441A in EDEM3 abolished their activity in gpERAD, as demonstrated by substrate migration assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12, C76-C77 are supported by mutagenesis data (Figure 2C, 2D) showing loss of function upon cysteine mutation. The sequence alignment (Figure 2A) confirms conservation. The functional assay provides clear phenotypic evidence. However, direct biochemical evidence of disulfide bond formation in EDEM1/EDEM3 (analogous to C8 for EDEM2) is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "3aaec4e9-0861-4248-a822-4ac74571f694",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TXNDC11 does not form stable disulfide bonds with EDEM1 or EDEM3, but specifically partners with EDEM2. Co-immunoprecipitation experiments showed TXNDC11 only co-precipitated with EDEM2, not with EDEM1 or EDEM3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by non-reducing SDS-PAGE (Figure 4A) and co-immunoprecipitation data (Figure 4B). The absence of complex formation between TXNDC11 and EDEM1/EDEM3 contrasts with clear EDEM2-TXNDC11 complex formation. This specificity is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "8346c0ed-9078-4515-9d5b-f464a8aa42ea",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Purified EDEM3 efficiently converts pyridylamine-labeled M8B to M7 (both M7A and M7C isomers), M6, and M5 without branch preference. EDEM1 shows similar but weaker activity. In contrast, EDEM2-TXNDC11 complex shows minimal activity on M8B, demonstrating substrate specificity for M9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C31-C33 are well-supported by HPLC data (Figure 5C, 5D). The isomer analysis demonstrates lack of branch preference. The differential activity between EDEM3/EDEM1 versus EDEM2-TXNDC11 on M8B is clear. However, the experiment was conducted only once (noted in methods), which limits reproducibility assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "fa862c7d-a1c9-4321-b6ce-b272b4d8e5b1",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EDEM3 and EDEM1 efficiently trim M8B to M5 on glycoprotein substrates (mCD3-\u03b4-\u0394TM-HA), while EDEM2-TXNDC11 shows minimal activity. MS analysis confirmed near-complete conversion of M8B to M5 by EDEM3/EDEM1 after 24 hours, suggesting these enzymes are more active on protein-bound versus free oligosaccharides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 are supported by immunoblotting (Figure 6B(a)) and MS data (Figure 6B(b)). The glycoprotein substrate assay complements the free oligosaccharide data. However, the conclusion about higher activity on protein-bound substrates (C46) is inferred from comparison between experiments rather than direct side-by-side quantitative comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "e8362160-d71e-428a-869e-cc7bc91acc1a",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MAN1B1 localizes to the Golgi apparatus, not the ER, in both HCT116 and HeLa cells. Confocal microscopy showed colocalization with Golgi marker (mEGFP-Giantin) but not ER marker (mEGFP-KDEL), indicating MAN1B1 cannot participate in ER-localized gpERAD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C17-C23 are supported by confocal microscopy data (Figure 3, Figure 3\u2014figure supplement 1). The localization is consistent across cell lines and expression levels. The conclusion that MAN1B1 cannot participate in gpERAD (C23) logically follows from its Golgi localization. This confirms previous reports (C70) and resolves conflicting literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "22dda4ec-43ce-4bb4-a3d6-c9b19e22d899",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The complete oligosaccharide processing route in mammalian gpERAD has been established: M9 \u2192 M8B (via EDEM2-TXNDC11) \u2192 M7A/M7C, M6, M5 (via EDEM3/EDEM1). EDEM3 is the major \u03b11,2-mannosidase for the second step, with EDEM1 playing a minor role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C34-C35, C65 synthesize the major findings. The route is supported by converging evidence from knockout cells (C27-C29), in vitro enzyme assays (C2-C3, C40-C45), and localization studies (C6, C23). The claim of completeness is justified by demonstrating all necessary conversions and excluding other candidates (MAN1B1). This represents a significant advance in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "57cf44a4-718a-4484-88be-6d3885fc1f3d",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EDEM1,3-DKO cells accumulate M8B oligosaccharides and show delayed degradation of gpERAD substrates (ATF6\u03b1 and mCD3-\u03b4-\u0394TM-HA), confirming the functional importance of EDEM1 and EDEM3 in the second mannose trimming step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30, C78 are supported by N-glycan profiling (Figure 2\u2014figure supplement 1D), cycloheximide chase experiments (Figure 2\u2014figure supplement 1E, 1F), and RT-PCR validation (Figure 2B). The genetic evidence complements the biochemical data. Sample size (n=3) for degradation assays is adequate for statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "b0fe84c4-0e75-48bb-8fad-27b26ada0ced",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "C410 and C457 of EDEM1 may form a local disulfide bond to stabilize the MHD. This is suggested by mutagenesis showing these residues are important for activity, and previous structural predictions indicating proximity for disulfide bonding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C13-C14 are based on mutagenesis data (C12, Figure 2C) and citation to structural predictions (C14). However, direct biochemical evidence for C410-C457 disulfide bonding (analogous to the LC/MS/MS/MS data for EDEM2) is absent. The claim remains speculative without direct structural or mass spectrometry confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "4d929212-3fe8-4aaf-8dd8-056675827a4c",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ERp46 transiently interacts with EDEM3 and likely facilitates formation of the C82-C441 disulfide bond required for EDEM3 activity. Once properly folded, EDEM3 functions independently without a stable partner protein, unlike EDEM2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48, C66-C68 integrate current mutagenesis data (C11, C68) with previous work on ERp46 (C66-C67). The successful purification and activity of EDEM3 alone (C48) supports independence from partner proteins. However, the mechanism by which ERp46 facilitates disulfide formation (C47) is inferred rather than directly demonstrated in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "9ac55eac-19e8-470b-8fd7-f74ebb9d82aa",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cysteine residues outside the MHD of EDEM1 and EDEM3 are not important for their \u03b11,2-mannosidase activity, unlike C558 of EDEM2 which forms an intermolecular disulfide bond with TXNDC11.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are supported by mutagenesis data (Figure 2C, 2D) showing non-MHD cysteines are dispensable for EDEM1/EDEM3 activity. This contrasts with EDEM2's C558 requirement (C16, cited from previous work). The data clearly distinguish EDEM2's unique requirement for TXNDC11 from EDEM1/EDEM3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "8ed7d6b9-d9f1-4873-b2a4-95e95bfc9d54",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Glycoprotein substrates (mCD3-\u03b4-\u0394TM-HA and ATF6\u03b1(C)) purified from EDEM1,3-DKO cells possess M8B N-glycans and are sensitive to endoglycosidase H, confirming they are appropriate substrates for testing EDEM enzyme activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 are supported by MS analysis (Figure 6B(b), 7B(b)) and Endo H digestion (Figure 6A(b), 7A(b)). These characterization experiments validate the substrate preparation for subsequent enzyme assays. The data are clear and appropriate controls for the main experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "8acc473d-c9ac-4c0b-8da6-a68946e276ba",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MAN1B1 can produce M6 and M5 from M9 in vitro and both full-length and truncated (\u0394105) forms are enzymatically active, as confirmed by substrate migration assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by HPLC data (Figure 5C) confirming previous reports, and immunoblotting (Figure 4C(b)) showing activity of both MAN1B1 constructs. This validates MAN1B1 as a positive control for extensive \u03b11,2-mannosidase activity, though its Golgi localization excludes it from gpERAD.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "a2ce20a7-d7cf-4a97-a7f9-b1f202a4885f",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "M7C is present in small amounts on glycoproteins in HCT116 cells and is likely converted to M6 and M5 by EDEM3/EDEM1, based on their lack of branch preference in M8B trimming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 connect previous observations (C63, cited) with current mechanistic data (C31). The inference about M7C processing (C64) is logical given the demonstrated lack of branch preference. However, direct experimental tracking of M7C conversion would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "e9fb26cd-6fc7-4fdd-834c-fb1cba93042b",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The conformation of EDEM2 differs between noncomplexed and TXNDC11-complexed forms, potentially explaining EDEM2's substrate specificity for M9 and requirement for TXNDC11. Structural differences in the catalytic site may result from both intra- and intermolecular disulfide bonding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C52 cite previous conformational data (C50) but the mechanistic explanation (C51-C52) is speculative. While the hypothesis is reasonable given the biochemical data, direct structural evidence is lacking. The authors appropriately frame this as speculation and call for structural determination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    },
+    {
+      "id": "30270c52-3ee8-44a6-98de-2cd3c7dfa164",
+      "content_id": "3ff03ba3-bc24-48de-88e5-7e1a5f62b049",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "TXNDC11(M1A) is expressed as both soluble and transmembrane proteins due to its N-terminal hydrophobic region functioning as either a signal sequence or transmembrane domain, while TXNDC11(M58A) is expressed only as a transmembrane protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are inferred from structural features (Figure 1B) and the successful purification strategy. The dual localization of M1A variant enables purification of soluble EDEM2-TXNDC11 complex. While not directly demonstrated by localization experiments, the inference is reasonable and the approach is validated by successful purification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:25:32.266402Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "46b6e9ff-c3bb-4dd6-b47c-c58528765012",
+      "result_id": "5dc9cc08-724d-4199-a025-50c99f5a149d"
+    },
+    {
+      "claim_id": "fe1277de-3c27-4a57-b82a-0af6ecc7761e",
+      "result_id": "5dc9cc08-724d-4199-a025-50c99f5a149d"
+    },
+    {
+      "claim_id": "29c43abd-f02a-469d-9eff-c115ab05503a",
+      "result_id": "5dc9cc08-724d-4199-a025-50c99f5a149d"
+    },
+    {
+      "claim_id": "c9a196b6-9f79-4776-be12-dede4fc59b3e",
+      "result_id": "5dc9cc08-724d-4199-a025-50c99f5a149d"
+    },
+    {
+      "claim_id": "baa1c996-8153-4d8c-946d-e27910e58004",
+      "result_id": "f750268c-41c0-4454-8394-b28340a763bc"
+    },
+    {
+      "claim_id": "60d5b2d9-ad86-423a-910c-20410e08ae43",
+      "result_id": "f750268c-41c0-4454-8394-b28340a763bc"
+    },
+    {
+      "claim_id": "cd3d5dac-1b7a-42ce-a5ca-54f38074abb8",
+      "result_id": "f750268c-41c0-4454-8394-b28340a763bc"
+    },
+    {
+      "claim_id": "67d4a2e5-b9c3-4867-8784-a850a6ff287a",
+      "result_id": "f750268c-41c0-4454-8394-b28340a763bc"
+    },
+    {
+      "claim_id": "81d63904-ea72-4c13-a090-122f41eac222",
+      "result_id": "f750268c-41c0-4454-8394-b28340a763bc"
+    },
+    {
+      "claim_id": "4c7d99fb-50c6-4451-8005-658a284b6815",
+      "result_id": "3aaec4e9-0861-4248-a822-4ac74571f694"
+    },
+    {
+      "claim_id": "0b6a3b61-7304-4aa0-8697-41d50e15f64a",
+      "result_id": "3aaec4e9-0861-4248-a822-4ac74571f694"
+    },
+    {
+      "claim_id": "74988ff8-ce0d-4871-82fa-3a6d13cceddf",
+      "result_id": "3aaec4e9-0861-4248-a822-4ac74571f694"
+    },
+    {
+      "claim_id": "5c0ca45a-94f8-4669-8015-fc5cffa733de",
+      "result_id": "8346c0ed-9078-4515-9d5b-f464a8aa42ea"
+    },
+    {
+      "claim_id": "2ed5b96b-0462-4416-9b23-6a396525fa1d",
+      "result_id": "8346c0ed-9078-4515-9d5b-f464a8aa42ea"
+    },
+    {
+      "claim_id": "7f371493-050d-483d-b560-543547ed4e0d",
+      "result_id": "8346c0ed-9078-4515-9d5b-f464a8aa42ea"
+    },
+    {
+      "claim_id": "07cf9374-e4f5-419a-8e22-29bd6462917a",
+      "result_id": "8346c0ed-9078-4515-9d5b-f464a8aa42ea"
+    },
+    {
+      "claim_id": "dd8bef26-d6a4-47af-af87-a491cb98c6cd",
+      "result_id": "8346c0ed-9078-4515-9d5b-f464a8aa42ea"
+    },
+    {
+      "claim_id": "60dc14b4-670a-430f-9cf1-a1316cd224c3",
+      "result_id": "fa862c7d-a1c9-4321-b6ce-b272b4d8e5b1"
+    },
+    {
+      "claim_id": "b21ea0ed-7c8f-431d-888e-98d93a501562",
+      "result_id": "fa862c7d-a1c9-4321-b6ce-b272b4d8e5b1"
+    },
+    {
+      "claim_id": "e402ca9e-bb60-4d34-b3ec-fe12fd4b6a56",
+      "result_id": "fa862c7d-a1c9-4321-b6ce-b272b4d8e5b1"
+    },
+    {
+      "claim_id": "a299158a-7112-4631-a022-fef6d129ce30",
+      "result_id": "fa862c7d-a1c9-4321-b6ce-b272b4d8e5b1"
+    },
+    {
+      "claim_id": "2c46380b-974b-415d-a491-5d2805947c48",
+      "result_id": "fa862c7d-a1c9-4321-b6ce-b272b4d8e5b1"
+    },
+    {
+      "claim_id": "e023efe6-0202-482b-94b1-dbf3713fb445",
+      "result_id": "fa862c7d-a1c9-4321-b6ce-b272b4d8e5b1"
+    },
+    {
+      "claim_id": "92123003-00ff-481e-9152-b933fdedddb7",
+      "result_id": "fa862c7d-a1c9-4321-b6ce-b272b4d8e5b1"
+    },
+    {
+      "claim_id": "dd72d9a7-191f-4773-9d66-afd8a0d0d2e6",
+      "result_id": "e8362160-d71e-428a-869e-cc7bc91acc1a"
+    },
+    {
+      "claim_id": "d9823f2e-37b5-4082-b27c-0fc00c1d920c",
+      "result_id": "e8362160-d71e-428a-869e-cc7bc91acc1a"
+    },
+    {
+      "claim_id": "e7ee15f0-9516-4aeb-8738-0e8ea34c13f6",
+      "result_id": "e8362160-d71e-428a-869e-cc7bc91acc1a"
+    },
+    {
+      "claim_id": "a2c143c3-1eef-4ba4-b0ad-79ed68f2b396",
+      "result_id": "e8362160-d71e-428a-869e-cc7bc91acc1a"
+    },
+    {
+      "claim_id": "c16f5908-3d69-45b8-b51a-503e7d6dde4f",
+      "result_id": "e8362160-d71e-428a-869e-cc7bc91acc1a"
+    },
+    {
+      "claim_id": "09373cd5-beb4-4710-b53c-c1f2e28d2921",
+      "result_id": "e8362160-d71e-428a-869e-cc7bc91acc1a"
+    },
+    {
+      "claim_id": "73786a6b-c038-4ae6-a164-7a6142a3a520",
+      "result_id": "e8362160-d71e-428a-869e-cc7bc91acc1a"
+    },
+    {
+      "claim_id": "d5a757d7-158f-413c-91b3-3b8fc362733c",
+      "result_id": "e8362160-d71e-428a-869e-cc7bc91acc1a"
+    },
+    {
+      "claim_id": "69b48f7f-a476-432a-8ebb-8d9e88157368",
+      "result_id": "22dda4ec-43ce-4bb4-a3d6-c9b19e22d899"
+    },
+    {
+      "claim_id": "f418e4a5-46d1-460a-86fc-fae4b088f038",
+      "result_id": "22dda4ec-43ce-4bb4-a3d6-c9b19e22d899"
+    },
+    {
+      "claim_id": "6491b8b9-1615-499f-9f2e-4cb8eeb9fc3b",
+      "result_id": "22dda4ec-43ce-4bb4-a3d6-c9b19e22d899"
+    },
+    {
+      "claim_id": "b61bd03d-aebd-4334-b51a-cbf98bb38a7f",
+      "result_id": "22dda4ec-43ce-4bb4-a3d6-c9b19e22d899"
+    },
+    {
+      "claim_id": "ee303335-2b9d-47ba-a9f4-50904c67f22c",
+      "result_id": "57cf44a4-718a-4484-88be-6d3885fc1f3d"
+    },
+    {
+      "claim_id": "714f7ef7-f3b6-4fd8-8ec4-c268a895b204",
+      "result_id": "57cf44a4-718a-4484-88be-6d3885fc1f3d"
+    },
+    {
+      "claim_id": "cf8b1c0e-bc22-489e-b051-b78302505cd3",
+      "result_id": "57cf44a4-718a-4484-88be-6d3885fc1f3d"
+    },
+    {
+      "claim_id": "3189ab26-b1ec-491d-8371-433b8cc0683e",
+      "result_id": "57cf44a4-718a-4484-88be-6d3885fc1f3d"
+    },
+    {
+      "claim_id": "25c33316-6ff1-4489-9e54-2356454fdb3b",
+      "result_id": "57cf44a4-718a-4484-88be-6d3885fc1f3d"
+    },
+    {
+      "claim_id": "6dcb0254-6cce-42df-afbf-df36e3ca53d4",
+      "result_id": "b0fe84c4-0e75-48bb-8fad-27b26ada0ced"
+    },
+    {
+      "claim_id": "38d18a43-a285-4351-9605-2a4f3e267119",
+      "result_id": "b0fe84c4-0e75-48bb-8fad-27b26ada0ced"
+    },
+    {
+      "claim_id": "7e4423fa-cfc9-42b0-8f2c-30ef0b1d934d",
+      "result_id": "4d929212-3fe8-4aaf-8dd8-056675827a4c"
+    },
+    {
+      "claim_id": "22f758c6-0e55-48d8-a1bd-1d7f9f8c0a31",
+      "result_id": "4d929212-3fe8-4aaf-8dd8-056675827a4c"
+    },
+    {
+      "claim_id": "335f2255-f111-4c28-b6c2-d8f8783417eb",
+      "result_id": "4d929212-3fe8-4aaf-8dd8-056675827a4c"
+    },
+    {
+      "claim_id": "78f0d2fc-c7e3-4764-afd2-f4f68449ea5c",
+      "result_id": "4d929212-3fe8-4aaf-8dd8-056675827a4c"
+    },
+    {
+      "claim_id": "28744f6f-b034-4df7-b300-64a2062fde1d",
+      "result_id": "4d929212-3fe8-4aaf-8dd8-056675827a4c"
+    },
+    {
+      "claim_id": "9d036d20-6ddb-4d7f-aca3-11739783979b",
+      "result_id": "9ac55eac-19e8-470b-8fd7-f74ebb9d82aa"
+    },
+    {
+      "claim_id": "1c99a47a-3414-44f7-862d-47d0d3c52b8a",
+      "result_id": "9ac55eac-19e8-470b-8fd7-f74ebb9d82aa"
+    },
+    {
+      "claim_id": "4b174293-0638-45ac-a902-4c8f7b7e583d",
+      "result_id": "8ed7d6b9-d9f1-4873-b2a4-95e95bfc9d54"
+    },
+    {
+      "claim_id": "b086f1fa-eaf9-4767-9cf3-79a07ac54337",
+      "result_id": "8ed7d6b9-d9f1-4873-b2a4-95e95bfc9d54"
+    },
+    {
+      "claim_id": "56e2ea4e-48de-4c0e-a7b4-ad06119588a4",
+      "result_id": "8ed7d6b9-d9f1-4873-b2a4-95e95bfc9d54"
+    },
+    {
+      "claim_id": "f21d9ebd-0ced-4aee-9cda-b68642a721b9",
+      "result_id": "8ed7d6b9-d9f1-4873-b2a4-95e95bfc9d54"
+    },
+    {
+      "claim_id": "f9d5db42-7ccb-4d1d-a0ba-e84cf6d0b53b",
+      "result_id": "8acc473d-c9ac-4c0b-8da6-a68946e276ba"
+    },
+    {
+      "claim_id": "1ba1b2bf-ef4e-4cb9-a70d-6ed3d945112a",
+      "result_id": "8acc473d-c9ac-4c0b-8da6-a68946e276ba"
+    },
+    {
+      "claim_id": "52fa17fd-1d97-4121-a607-8f3f7ceee962",
+      "result_id": "a2ce20a7-d7cf-4a97-a7f9-b1f202a4885f"
+    },
+    {
+      "claim_id": "5a26ca12-27f0-4437-b497-6167f1936333",
+      "result_id": "a2ce20a7-d7cf-4a97-a7f9-b1f202a4885f"
+    },
+    {
+      "claim_id": "e3bdb3b0-d603-45ee-9988-698320f1d489",
+      "result_id": "e9fb26cd-6fc7-4fdd-834c-fb1cba93042b"
+    },
+    {
+      "claim_id": "0e614d5f-c65d-4eff-96bf-d9d81439b468",
+      "result_id": "e9fb26cd-6fc7-4fdd-834c-fb1cba93042b"
+    },
+    {
+      "claim_id": "102ce030-8f74-4ec5-b076-6fdebbfceafa",
+      "result_id": "e9fb26cd-6fc7-4fdd-834c-fb1cba93042b"
+    },
+    {
+      "claim_id": "3a149489-36c7-4339-aab2-06c689cdaba2",
+      "result_id": "30270c52-3ee8-44a6-98de-2cd3c7dfa164"
+    },
+    {
+      "claim_id": "2d6322d4-9040-45d5-81ce-ee7c0d00f586",
+      "result_id": "30270c52-3ee8-44a6-98de-2cd3c7dfa164"
+    }
+  ],
+  "comparisons": []
+}

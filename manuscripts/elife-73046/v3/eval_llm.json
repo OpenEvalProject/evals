@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C20",
+      "C22",
+      "C23"
+    ],
+    "result": "Plateau potentials translocate existing place fields by shifting the Vm ramp toward the plateau position. Evoked dendritic plateaus shifted pre-existing place fields toward the second induction site in most cases, with the new Vm ramp peaking near the plateau position (average distance = 19.5 \u00b1 4.7 cm; n = 26). Similar shifts were induced by spontaneous plateau potentials (n = 5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14, C20, C22, and C23 collectively demonstrate that plateau potentials can translocate existing place fields. The experimental data show consistent place field shifts toward plateau positions in both evoked (n=26) and spontaneous (n=5) conditions, with quantitative measurements of the shift distance. The findings are supported by intracellular recordings and spatial analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "BTSP is bidirectional, inducing both potentiation near the plateau and depression near the initial place field over a seconds-long timescale. Positive changes (6.73 \u00b1 0.73 mV) were greater than negative changes (3.89 \u00b1 0.32 mV, p = 0.0001). Depression occurred within \u00b12 to \u00b16 s from the plateau and was reduced when the time delay exceeded 4-5 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25, C26, C28, C29, C30, and C31 provide converging evidence for bidirectional BTSP with specific temporal dynamics. The quantitative measurements of potentiation and depression magnitudes are statistically significant, and the temporal window for depression is well-characterized. The data consistently show both positive and negative Vm changes with appropriate spatial and temporal relationships to plateau potentials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "BTSP reshapes place fields toward a common target shape that depends on initial Vm. \u0394Vm showed strong inverse correlation with initial Vm (m = -0.91), while final Vm showed weak correlation with initial Vm (m = 0.04). More depolarized positions showed more depression and less potentiation, driving Vm toward a target place field shape centered near the plateau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 demonstrate that BTSP drives place fields toward a target shape through variable changes that depend on initial conditions. The strong inverse correlation between \u0394Vm and initial Vm (m = -0.91) and weak correlation between final Vm and initial Vm (m = 0.04) provide quantitative support. The data show consistent reshaping across neurons despite variable initial conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C15"
+    ],
+    "result": "The direction of BTSP is independent of postsynaptic activation state and instead depends on initial synaptic weight. Voltage perturbation experiments showed that depolarizing silent cells (n=8) induced only potentiation, while hyperpolarizing place cells (n=5) did not prevent depression at the original place field, ruling out causal dependence on Vm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 and C15 provide strong experimental evidence from voltage perturbation experiments that BTSP direction is not determined by postsynaptic activation state. The experiments test specific predictions and show results inconsistent with Vm-dependence but consistent with weight-dependence. The logic is clear and the experimental design appropriately tests the competing hypotheses outlined in C3K.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "While BTSP direction is independent of postsynaptic activation state, the magnitude of plasticity shows minor dependence on voltage-dependent ion channels. Large non-physiological hyperpolarization (~-50 mV for ~3 s) was required to decrease potentiation, suggesting operational dependence on local synaptic depolarization rather than global neuronal activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 clarify that while BTSP direction is weight-dependent, magnitude shows some voltage-dependence through voltage-gated channels. The requirement for extreme hyperpolarization to affect plasticity (C52) supports the interpretation that local synaptic voltage, not global activation state, matters. This reconciles the apparent contradiction between voltage-independence of direction and known requirements for NMDA-Rs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C16",
+      "C5"
+    ],
+    "result": "A weight-dependent computational model with nine parameters quantitatively reproduces experimental BTSP data. The model predicts that weak inputs potentiate and strong inputs depress based on timing relative to plateau potentials and current synaptic weight. Model predictions matched experimental data across all cells (n=26) for both final Vm ramps and sensitivity to initial conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C16, and C5 describe a computational model that successfully captures BTSP dynamics. The model was fit to experimental data using simulated annealing and quantitatively matched observed Vm changes (C60, C61). The weight-dependent formulation provides a mechanistic explanation for the observed bidirectional plasticity. However, the model has nine free parameters, which raises questions about uniqueness and overfitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Alternative model variants with short timescale ET and IS (100 ms) failed to account for BTSP, supporting the requirement for intermediate signals with durations longer than voltage or calcium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by model comparison showing that short timescale variants fail to reproduce the depression component of BTSP (Figure 5E, Figure 6\u2014figure supplement 2). This provides evidence that seconds-long intermediate signals are necessary, though the specific molecular identity of these signals remains unspecified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C6"
+    ],
+    "result": "A network model implementing bidirectional BTSP recapitulates experimental observations of goal-directed spatial learning. The model showed increased place field representation near goal locations and predictive memory representations, demonstrating that plasticity regulated by population activity and long-range feedback can rapidly adapt spatial representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 and C6 describe network modeling results that extend the single-cell BTSP model to population dynamics. The model successfully reproduces experimental observations from prior work (Zaremba et al., 2017) and generates testable predictions about population-level learning. The modeling demonstrates functional capabilities of BTSP but does not provide new experimental validation at the network level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The spatial width of BTSP-induced place fields shows a strong linear relationship with running speed during plateau induction (slope on the order of seconds), indicating that the temporal window for plasticity determines which spatial positions undergo synaptic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by quantitative analysis showing linear relationship between \u0394Vm width and running speed (Figure 2C-D). This provides evidence that BTSP operates over a fixed temporal window that translates to variable spatial extent depending on behavior. The finding is consistent with the seconds-long timescale of BTSP and helps explain variability in spatial extent across neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "BTSP fundamentally differs from Hebbian plasticity by not depending on postsynaptic activation state and being inherently stable through weight-dependent bidirectionality. Unlike Hebbian models that depend on firing rate or depolarization, BTSP can create or remove correlations based on delayed outcomes without requiring additional homeostatic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C71, C72, and C74 synthesize the key conceptual differences between BTSP and Hebbian plasticity. The voltage perturbation experiments (Figure 4) provide direct evidence for independence from postsynaptic activation. The weight-dependent bidirectionality provides inherent stability without additional homeostatic mechanisms. These claims represent important theoretical implications well-supported by the experimental and modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Experimental methods involved intracellular recordings from CA1 pyramidal neurons in head-fixed mice running on a circular treadmill. Plateau potentials were evoked by brief current injections (700 pA, 300 ms) at specific locations. The procedure successfully induced plasticity in 100% of cells attempted (n=26 inductions in 24 neurons), with 8/24 having natural pre-existing place fields and 16/24 having experimentally induced initial fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 and C76-C80 describe the experimental methods and sample composition. The 100% success rate (C78) is notable and suggests robust methodology. The mixture of natural and induced initial place fields (C19) is appropriate for testing the generality of findings. Methods are clearly described and ethically approved (C76).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Increased Vm depolarization within place fields reflects strongly weighted synaptic inputs from prior plasticity. Somatic voltage manipulations are not expected to strictly control dendritic Vm due to cable attenuation, but do alter back-propagating action potentials and dendritic voltage-gated channel activation, as supported by biophysical modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide important context for interpreting the voltage perturbation experiments. The biophysical modeling (Figure 4\u2014figure supplement 1) supports the expected effects of somatic manipulations on dendritic voltage. This justifies the experimental approach while acknowledging its limitations, strengthening the interpretation that BTSP depends on local synaptic signals rather than global activation state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "BTSP is driven by input-specific processes rather than heterosynaptic plasticity, homeostatic plasticity, or changes in excitability. Changes in inhibitory synaptic weights are unlikely to play a significant role based on low spatial selectivity of inhibitory neurons, ability to induce BTSP with inhibition blocked, and lack of inhibitory input changes after BTSP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 rule out alternative mechanisms for the observed plasticity. The arguments are logical and supported by citations to prior work. However, these are largely inferences based on prior studies rather than direct experimental tests in the current work. The time and weight dependence of BTSP (C69) does support input-specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C75"
+    ],
+    "result": "BTSP's lack of dependence on postsynaptic activity could enable robustness to noise and network oscillations, and if plateau potentials are generated by mismatch between local output and long-range feedback, BTSP can implement objective-based learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73 and C75 are speculative interpretations about potential functional advantages and implementations of BTSP. While these are plausible implications of the findings, they are not directly tested in the current work. C73 is explicitly speculative ('could enable'), and C75 is conditional ('if plateau potentials are generated by...'). These represent interesting hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C21",
+      "C68"
+    ],
+    "result": "Background context on learning, synaptic plasticity, hippocampal place cells, and BTSP from prior literature. Place cells are modified by experience, modifications can occur rapidly, Hebbian plasticity depends on synchronous activity, and BTSP was previously shown to strengthen inputs without coincident postsynaptic spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C13, C21, and C68 provide background context from prior literature. These are well-supported by citations and represent established knowledge in the field. They appropriately frame the current study's contributions. C68 specifically validates the current findings against recent related work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "BTSP may induce synaptic depression at a slower rate than potentiation, though the functional significance is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C39 is a speculative interpretation of the observation that depression appears weaker than potentiation (C38). The authors explicitly state the functional significance is unclear and cite only one reference (Cone and Shouval, 2021) as potential support. This represents an interesting observation that requires further investigation rather than a well-established result.",
+    "result_type": "MINOR"
+  }
+]

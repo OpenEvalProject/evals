@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C35",
+      "C36",
+      "C37",
+      "C49"
+    ],
+    "result": "Participants navigated near-optimally in all arenas, with path lengths close to optimal (ratio 1.1\u00b10.1 for rewarded trials, 1.2\u00b10.1 for unrewarded trials), and performance was near-optimal from the beginning with no improvement over trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C35, C36, C37, and C49 collectively demonstrate near-optimal navigation performance across all arena complexities. The quantitative path length ratios (C35, C37), lack of learning effects (C36), and consistency across conditions provide strong converging evidence for efficient navigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C45",
+      "C48"
+    ],
+    "result": "Pre-movement planning duration increased with arena complexity and was strongly influenced by path length and number of turns, but not by bearing angle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C45, and C48 are supported by quantitative analyses showing increased pre-movement duration in complex arenas and linear mixed effects models identifying path length and turns as significant predictors. The data consistently demonstrate adaptive planning behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C30",
+      "C31",
+      "C55",
+      "C73",
+      "C74",
+      "C75",
+      "C122"
+    ],
+    "result": "Environmental complexity mediated a trade-off in gaze allocation between the reward location and task-relevant transitions, with participants looking more at the goal in simple arenas and more at task-relevant structure in complex arenas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20, C30, C31, C55, C73, C74, C75, and C122 provide converging evidence from multiple analyses (goal fixation, relevance metrics, ROC curves) demonstrating a systematic trade-off in gaze allocation that scales with arena complexity. The opposing trends in goal fixation (C74) and relevance (C73) with complexity strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C32",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C129"
+    ],
+    "result": "Participants exhibited rapid sequential eye movements (sweeps) along their future trajectories, with backward sweeps predominating during pre-movement and forward sweeps during movement, and sweep occurrence correlated with arena complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21, C32, C79, C80, C82, C83, and C129 are supported by sweep detection algorithms and quantitative analyses showing differential timing of forward vs backward sweeps and correlation with complexity (r=0.73, p=5e-12). The data provide strong evidence for sequential trajectory prospection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C33",
+      "C114",
+      "C115"
+    ],
+    "result": "Participants decomposed trajectories hierarchically by locking gaze on upcoming subgoals (turns) one at a time during navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C33, C114, and C115 are supported by subgoal analysis showing stereotyped gaze locking on upcoming turns. The step-like decrease in gaze distance to goal at each subgoal (C111) provides additional quantitative support for hierarchical trajectory decomposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Gaze relevance (defined by impact on value function) was significantly above chance during pre-movement and movement epochs, with highest relevance during pre-movement (AUC 0.77\u00b10.03), and relevant transitions corresponded to bottlenecks and obstacles along optimal paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by the relevance metric analysis with statistical validation against shuffled controls. The ROC analysis provides quantitative evidence (AUCs) that gaze was directed toward task-relevant transitions, particularly during pre-movement planning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Pre-movement duration was similar for rewarded and unrewarded trials, suggesting performance was limited by memory for goal location rather than planning ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 are supported by comparison of pre-movement durations between trial types. However, this inference (C47) assumes that planning demands would differ between rewarded and unrewarded trials if planning were the limiting factor, which may not hold if participants plan similarly regardless of eventual outcome.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C100",
+      "C101",
+      "C131"
+    ],
+    "result": "Backward sweeps during pre-movement may reflect depth-first tree search for path discovery, with more backward sweeps on trials with more turns and when moving away from the goal direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84, C85, C86, C100, C101 are supported by data showing backward sweeps predominate during pre-movement and correlate with task difficulty. However, C131's interpretation as depth-first tree search is speculative and not directly tested. Alternative explanations (e.g., peripheral vision processing, C136-C137) are not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Sweep velocities were compressed in time (>10\u00d7 faster than movement velocity, 21-26 m/s), reminiscent of hippocampal replay, with speeds increasing with path length and arena complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C94, C96, and C97 are supported by quantitative measurements of sweep speeds. The comparison to hippocampal replay (C95) is supported by citation but the mechanistic connection remains speculative. The temporal compression is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C141",
+      "C142"
+    ],
+    "result": "Participants deliberated between alternative trajectories, with time spent viewing alternatives increasing with number of options at the expense of goal fixation, especially when approaching turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92, C141-C142 are supported by analyses showing correlations between number of alternatives and gaze allocation (r=0.91, p=1e-6 for alternatives; r=-0.85, p=3e-5 for goal). The data demonstrate a trade-off between deliberation and goal monitoring.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Task-relevant eye movements were not exclusively sequential, as relevance remained above chance even when sweep periods were removed from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105 and C106 are supported by control analysis showing that non-sequential gaze also targeted relevant locations. This demonstrates that both sequential (sweeps) and non-sequential eye movements contribute to information gathering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C132"
+    ],
+    "result": "Sweep probability increased gradually during pre-movement after a brief pause following goal detection, and spiked at subgoals during movement, analogous to replay occurring during periods of relative immobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110, C132 are supported by temporal analyses of sweep probability aligned to trial events and subgoals. The analogy to replay during immobility (C132) is supported by citation but the mechanistic connection is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Participants spent more time looking at the goal during pre-movement (66\u00b110%) than movement (54\u00b16%), with goal fixation decreasing when turns remained in the path and with greater path lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C59, C60, and C61 are supported by quantitative analyses of goal fixation duration and linear mixed effects models. The data show systematic variation in goal fixation with task demands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Gaze spread was larger within trials during search than during pre-movement/movement, but this pattern reversed across trials, indicating that eye movements during planning and navigation were dictated by trial-specific task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by quantitative analyses of gaze variance within and across trials. The reversal pattern provides clear evidence that gaze during pre-movement and movement adapts to specific trial demands rather than following a stereotyped pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Participants achieved near-optimal performance from the first trials and pre-movement durations did not decrease across trials, indicating continuous active visual sampling based on immediate task demands rather than consolidation of a learned model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by analyses showing no improvement over trials and stable pre-movement durations. This suggests rapid visual learning on each trial rather than gradual model consolidation, though alternative explanations (e.g., ceiling effects) are not fully ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Sweeps comprised more saccades in difficult trials, had higher saccade rates than non-sweep periods, and were initiated after a latency that increased with task difficulty, suggesting brief processing precedes sweep initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C99, C102, C103, and C104 are supported by quantitative analyses of saccade characteristics and sweep latencies. The inference that latency reflects processing time (C103-C104) is reasonable but not directly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Backward sweeps targeted the most proximal subgoal during pre-movement, while during movement, gaze locked on upcoming subgoals and briefly examined alternatives before turns, possibly reflecting vicarious trial and error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 are supported by subgoal-aligned analyses. The interpretation as vicarious trial and error (C118) is speculative but supported by citation to relevant literature. The data clearly show differential gaze patterns for backward sweeps, forward sweeps, and alternative trajectory viewing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study used 13 participants (with 2 aware of study purpose) navigating in VR arenas with hidden triangular tessellation (150 states) across 5 complexity levels, with 8 additional participants excluded due to motion sickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe the experimental design and are directly stated in the methods. The exclusion of 8 participants due to motion sickness (C25) represents substantial attrition (~38% of recruited participants) which could introduce selection bias, though this is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Path length best predicted stopping error among trial-specific variables, and while participants spent most time in the movement epoch (60\u00b16%), there was considerable inter-participant variability in pre-movement duration (CV=0.31) that did not affect performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by linear mixed effects models and descriptive statistics. The finding that pre-movement variability did not affect performance (C42) is important for interpreting individual differences but may reflect ceiling effects in this task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Decreased goal fixation in complex arenas was not due to forgetting the goal location (as shown by control analysis using stopping location), but rather reflected a strategy to learn task-relevant transition structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by control analysis, but C58 is a speculative explanation. While plausible, alternative explanations (e.g., visual crowding, attentional capacity limits) are not systematically ruled out. The control analysis strengthens the interpretation but does not definitively establish the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The gaze trade-off between goal and structure allowed near-optimal paths in all arenas but increased the tendency to forget goal location in complex environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 are supported by the combination of near-optimal performance data and decreased reward rates in complex arenas. However, the causal link between the gaze trade-off and both outcomes is inferred rather than directly tested through experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The findings suggest a context-dependent mechanism for arbitrating between oculomotor controllers, potentially implemented by dorsolateral prefrontal cortex (contextual processing, memory-guided saccades) and anterior cingulate cortex (evaluating alternatives).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is an inference from the gaze trade-off data. Claims C125-C127 propose neural substrates based on prior literature but are entirely speculative in the context of this study. No neural data were collected, so these proposals cannot be evaluated and represent hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Eye movement sweeps may reflect hippocampal state representations (via projections to oculomotor controllers) or alternatively may result from peripheral vision processing, with bidirectional modulation between gaze and hippocampal activity suggesting sweeps could contribute to sequential neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C139 present competing speculative hypotheses about mechanisms underlying sweeps. While supported by citations to relevant literature (C137, C138), no neural data were collected to test these hypotheses. These represent important theoretical proposals but cannot be evaluated as supported or unsupported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C159"
+    ],
+    "result": "The spatiotemporal characteristics of gaze during navigation are significantly shaped by cognitive computations underlying sequential decision making, with the oculomotor system optimally scheduling resources to tackle diverse cognitive demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34, and C159 represent high-level interpretations of the collective findings. While the data demonstrate systematic relationships between gaze patterns and task demands, the claim of 'optimal' scheduling (C34) is not formally tested against normative models. The evidence supports that gaze is shaped by task demands but optimality is inferred rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "Deliberative processing between alternatives accounted for less than one-fifth of eye movement variability, with planning primarily involving searching for a viable trajectory rather than extensive deliberation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144 and C145 are supported by the decomposition of gaze showing ~20% of fixations to locations other than goal or chosen trajectory. This quantitative finding clarifies the relative importance of different gaze strategies during navigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Active inference framework unifies planning and information seeking, but predictions that gaze would be dominated by epistemic rather than pragmatic considerations in early trials were not supported, possibly because participants rapidly resolved uncertainty about arena structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C149 discuss theoretical frameworks. C147 accurately describes active inference theory (supported by citation), but C148 notes the current data do not support specific predictions from this framework. C149 offers a speculative explanation for the discrepancy. This represents an important negative result but the theoretical reconciliation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Mattar and Daw's theory that planning and structure learning are variants of memory propagation could parsimoniously explain gaze patterns, given parallels between eye movements and hippocampal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C152 accurately describe prior theoretical work (supported by citations). C153 proposes that this framework could explain the current findings but this is speculative. The authors note several untested assumptions required for this interpretation, making this an interesting theoretical proposal rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Hierarchical task decomposition has been established in other domains, but not empirically validated in navigation; the observation that participants gazed at upcoming turns supports that turns were viewed as subgoals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155 accurately characterize prior literature (supported by citations). C156 is an inference from the subgoal gaze data that is reasonable but not definitively proven. Alternative explanations (e.g., turns require visual guidance for motor control) are not fully ruled out, though the pattern is consistent with hierarchical planning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "By removing visual occlusions common in prior navigation paradigms, this study allowed participants to acquire environmental models without physical navigation, yielding new insights into visually-informed planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 accurately characterize the experimental design innovation relative to prior work (C119 supported by citations). The claim that this yielded new insights (C121) is supported by the novel findings about gaze trade-offs and sequential prospection that would not be observable with occluded environments.",
+    "result_type": "MINOR"
+  }
+]

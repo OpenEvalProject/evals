@@ -1,0 +1,2259 @@
+{
+  "submission": {
+    "id": "aab2ea9e-5010-4925-881e-0440706b6891",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:56:44.680774Z",
+    "updated_at": "2025-12-03T04:56:44.680774Z"
+  },
+  "content": [
+    {
+      "id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "submission_id": "aab2ea9e-5010-4925-881e-0440706b6891",
+      "content_type": "manuscript",
+      "content_text": "# Alcohol consumption in the general population is associated with structural changes in multiple organ systems\n\n## Authors\n\n- Evangelos Evangelou<sup>1</sup> ([ORCID: 0000-0002-5488-2999](https://orcid.org/0000-0002-5488-2999))\n- Hideaki Suzuki<sup>3</sup>\n- Wenjia Bai<sup>5</sup>\n- Raha Pazoki<sup>7</sup> ([ORCID: 0000-0002-5142-2348](https://orcid.org/0000-0002-5142-2348))\n- He Gao<sup>1</sup>\n- Paul M Matthews<sup>5</sup> ([ORCID: 0000-0002-1619-8328](https://orcid.org/0000-0002-1619-8328))\n- Paul Elliott<sup>1</sup> ([ORCID: 0000-0002-7511-5684](https://orcid.org/0000-0002-7511-5684)) \u2020\n\n### Affiliations\n\n1. Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London London United Kingdom\n2. Department of Hygiene and Epidemiology, University of Ioannina Medical School Ioannina Greece\n3. Department of Cardiovascular Medicine, Tohoku University Hospital Sendai Japan\n4. Tohoku Medical Megabank Organization, Tohoku University Sendai Japan\n5. Department of Brain Sciences, Imperial College London London United Kingdom\n6. Data Science Institute, Imperial College London London United Kingdom\n7. MRC Centre for Environment and Health, School of Public Health, Imperial College London London United Kingdom\n8. Division of Biomedical Sciences, Department of Life Sciences, College of Health, Medicine and Life Sciences, Brunel University London London United Kingdom\n9. UK Dementia Research Institute at Imperial College London London United Kingdom\n10. National Institute for Health Research Imperial College Biomedical Research Centre, Imperial College London London United Kingdom\n11. British Heart Foundation Centre for Research Excellence, Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Excessive alcohol consumption is associated with damage to various organs, but its multi-organ effects have not been characterised across the usual range of alcohol drinking in a large general population sample.Methods:We assessed global effect sizes of alcohol consumption on quantitative magnetic resonance imaging phenotypic measures of the brain, heart, aorta, and liver of UK Biobank participants who reported drinking alcohol.Results:We found a monotonic association of higher alcohol consumption with lower normalised brain volume across the range of alcohol intakes (\u20131.7 \u00d7 10\u22123 \u00b1 0.76 \u00d7 10\u22123 per doubling of alcohol consumption, p=3.0 \u00d7 10\u221214). Alcohol consumption was also associated directly with measures of left ventricular mass index and left ventricular and atrial volume indices. Liver fat increased by a mean of 0.15% per doubling of alcohol consumption.Conclusions:Our results imply that there is not a \u2018safe threshold\u2019 below which there are no toxic effects of alcohol. Current public health guidelines concerning alcohol consumption may need to be revisited.Funding:See acknowledgements.\n\n## Introduction\n\nAlcohol consumption causes damage to multiple organs and systems, and heavy drinking is associated with increased all-cause mortality\u00a0(Bell et al., 2017). According to the Global Burden of Diseases Study, alcohol use was the seventh leading risk factor for both deaths and disability-adjusted life years in 2016, accounting for 2.2% and 6.8% excess in age-standardized female and male deaths, respectively\u00a0(GBD 2016 Alcohol Collaborators, 2016). While previous evidence has suggested that low to moderate amounts of daily consumption may have beneficial effects on cardiovascular health\u00a0(Bell et al., 2017), a recent large-scale meta-analysis concluded that even moderate daily alcohol intake may have significant impact on disease risk\u00a0(Wood et al., 2018). Because of these uncertainties, there remains controversy about whether there is a \u2018safe level\u2019 of alcohol drinking for the general population\u00a0(Fern\u00e1ndez-Sol\u00e0, 2015; Mukamal and Rimm, 2008).\n\nThe liver is a primary target for the detrimental effects of alcohol, as it is the primary site of alcohol metabolism\u00a0(Cederbaum, 2012). With high levels of alcohol consumption, effects on other organs (including the brain and heart) have been described\u00a0(Obad et al., 2018). Excessive alcohol use during adolescence has been associated with reduced brain grey matter volumes\u00a0(Heikkinen et al., 2017), but evidence regarding structural brain changes at lower levels of alcohol intake is limited and conflicting\u00a0(Ding et al., 2004; Mukamal et al., 2001; McEvoy et al., 2018). Moderate to heavy alcohol consumption is implicated causally with pathologically reduced left ventricular ejection fraction\u00a0(van Oort et al., 2020), cardiomyopathy, heart failure, and sudden death. Analyses of cardiac structure based on echocardiography have suggested that smaller differences in left ventricular mass consistent with early pathology can also be attributed to lower levels of alcohol intake\u00a0(Voskoboinik et al., 2019; Gon\u00e7alves et al., 2015a; G\u00e9mes et al., 2018).\n\nHere, for the first time, we report associations across the range of population alcohol consumption with differences in morphology or function of multiple organs determined from quantitative measures of the brain, cardiac structure and function, and liver fat magnetic resonance imaging (MRI) scans. Our aim was to investigate effects of alcohol at intakes within the currently recommended limits for consumption by the general population. Discovery of evidence for potentially toxic effects of alcohol within these recommended limits would have important implications for public health and government policies regarding \u2018safe\u2019 levels of alcohol drinking.\n\n## Materials and methods\n\n### Study participants\n\nUK Biobank is a prospective, observational study of\u00a0~500,000 people across the United Kingdom, aged 40\u201369 years at recruitment (2007\u20132010)\u00a0(Sudlow et al., 2015; Bycroft et al., 2018). Here we used a subset of the UK Biobank data from participants whose brain, cardiac and/or aortic, and liver MRI images and image-derived phenotypes (IDPs) were available. Non-drinkers and those with self-reported brain, cardiac, and/or aortic diseases were excluded. IDPs of participants were included based on availability of measures after the\u00a0application of exclusion criteria (brain grey matter [N\u00a0=\u00a010,143], brain white matter [N\u00a0=\u00a09053], heart [N\u00a0=\u00a011,821], aortic [N\u00a0=\u00a012,376], and liver [N\u00a0=\u00a03649]) (Figure 1). Table 1 describes characteristics of the population included in the analyses. The study is reported following the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) guideline.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65325/elife-65325-fig1-v2.jpg)\n\n**Table 1.**\n Participant characteristics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Brain grey matter</th>\n      <th>Brain white matter</th>\n      <th>Heart</th>\n      <th>Aorta</th>\n      <th>Liver</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>N</td>\n      <td>10,143</td>\n      <td>9053</td>\n      <td>11,821</td>\n      <td>12,376</td>\n      <td>3649</td>\n    </tr>\n    <tr>\n      <td>Baseline characteristics</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Age (years) (mean\u00a0\u00b1\u00a0SD)</td>\n      <td>62.9\u00a0\u00b1\u00a07.4</td>\n      <td>62.9\u00a0\u00b1\u00a07.4</td>\n      <td>62.8\u00a0\u00b1\u00a07.4</td>\n      <td>63.0\u00a0\u00b1\u00a07.4</td>\n      <td>55.7\u00a0\u00b1\u00a07.5</td>\n    </tr>\n    <tr>\n      <td>Male (%)</td>\n      <td>49.8</td>\n      <td>49.4</td>\n      <td>49.9</td>\n      <td>50.2</td>\n      <td>50.5</td>\n    </tr>\n    <tr>\n      <td>Caucasian (%)</td>\n      <td>99.8</td>\n      <td>99.8</td>\n      <td>99.8</td>\n      <td>99.8</td>\n      <td>93.2</td>\n    </tr>\n    <tr>\n      <td>Educational attainment (%)</td>\n      <td>53.2</td>\n      <td>53.5</td>\n      <td>53.5</td>\n      <td>52.9</td>\n      <td>53.1</td>\n    </tr>\n    <tr>\n      <td>Body mass index (mean\u00a0\u00b1\u00a0SD)</td>\n      <td>26.7\u00a0\u00b1\u00a04.4</td>\n      <td>26.6\u00a0\u00b1\u00a04.3</td>\n      <td>26.5\u00a0\u00b1\u00a04.3</td>\n      <td>26.5\u00a0\u00b1\u00a04.2</td>\n      <td>26.5\u00a0\u00b1\u00a04.1</td>\n    </tr>\n    <tr>\n      <td>Hypertension (%)</td>\n      <td>39.6</td>\n      <td>39.3</td>\n      <td>39.0</td>\n      <td>39.1</td>\n      <td>46.5</td>\n    </tr>\n    <tr>\n      <td>Diabetes (%)</td>\n      <td>5.2</td>\n      <td>5.0</td>\n      <td>4.7</td>\n      <td>4.9</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td>Smoking history (%)</td>\n      <td>39.7</td>\n      <td>39.4</td>\n      <td>38.6</td>\n      <td>39.1</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>Alcohol consumption (g/d) (median\u2013IQR)</td>\n      <td>14.29 (6.46\u201326.78)</td>\n      <td>14.29 (6.26\u201326.79)</td>\n      <td>14.29 (6.70\u201326.79)</td>\n      <td>14.29 (6.69\u201326.79)</td>\n      <td>16.61 (8.93\u201328.86)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Baseline characteristics\n\nInformation on age, sex, ethnicity, college degree education, body mass index (BMI), hypertension, diabetes, and history of smoking and cardiac, brain, and/or aortic diseases were reported at the imaging assessment. We defined participants as hypertensive if they had systolic\u00a0blood pressure\u00a0\u2265\u00a0140\u00a0mmHg or diastolic blood pressure\u00a0\u2265\u00a090 mmHg or were receiving antihypertensive medication\u00a0(Suzuki et al., 2017). We recorded self-reported diabetes, smoking history, and college degree education.\n\n### Alcohol consumption\n\nWe calculated alcohol intake as grams of alcohol per day (g/d) among drinkers based on self-reported alcohol drinking from a touch-screen questionnaire described previously\u00a0(Evangelou et al., 2019). Briefly, the quantity of each type of drink was multiplied by its standard drink size and reference alcohol content. Drink-specific intake during the reported drinking period was summed and converted to g/d alcohol intake for each participant with completed responses to the quantitative drinking questions. The alcohol intake for participants with incomplete responses was imputed by bootstrap resampling from the completed responses, stratified by drinking frequency and sex. Alcohol intake was log2-transformed, as it has a skewed distribution. Using this transformation, a log2 change of 1 unit translates to a doubling of alcohol consumption, e.g., from 10 g/d to 20 g/d.\n\n### Brain MRI acquisition and pre-processing\n\nDetails of the image acquisition are available online\u00a0(Miller et al., 2016). Briefly, the T1-weighted (3D MPRAGE, 1\u00a0\u00d7\u00a01\u00a0\u00d7\u00a01 mm3 resolution, field of view\u00a0[FOV]/matrix\u00a0=\u00a0208\u00a0\u00d7\u00a0256\u00d7256, TR [repetition time]\u00a0=\u00a02000 ms, TI [inversion time]\u00a0=\u00a0880 ms) brain images used here were acquired using a Siemens Skyra 3T running VD13A SP4 (Siemens Healthcare, Erlangen, Germany) with a Siemens 32-channel RF receive head coil used for structural analyses. Before analyses, the images were registered in the standard Montreal Neurological Institute (MNI) space using DARTEL tools in SPM12 (https://www.fil.ion.ucl.ac.uk/spm/software/spm12/).\n\nAfter separate segmentation of grey and white matter and cerebrospinal fluid, each tissue mask was modulated with the Jacobian determinants derived from the spatial normalisation, multiplying each voxel by the relative change in volume to correct for volume changes in the non-linear normalisation\u00a0(Good et al., 2001). Brain and regional volumes were normalised to the corresponding total intracranial volumes, calculated from the sums of volumes of the grey and white matter and cerebrospinal fluid. For the multiple regression voxel-wise analysis, the normalised grey matter maps were smoothed by convolving an isotropic Gaussian kernel of 8 mm full width at half maximum, excluding voxels with a grey matter probability value\u00a0<\u00a00.2.\n\nBrain diffusion MRI images were acquired using a Stejskal-Tanner pulse sequence\u00a0(Elliott et al., 2018). Our analyses used the white matter microstructural IDPs for fractional anisotropy and orientation dispersion (the extent of directional complexity of diffusion)\u00a0(Zhang et al., 2012; Wood et al., 2018) for 27 probabilistically defined\u00a0(Suzuki et al., 2017) white matter tracts described and made available in the UK Biobank Data Showcase\u00a0(UK Biobank, 2021). The white matter microstructure measures were then expressed as mean z-scores (referenced to the mean values for the full study population) in our analyses.\n\n### Cardiac and aortic MRI acquisition and pre-processing\n\nDetails of the cardiac and aortic image acquisitions were reported previously\u00a0(Petersen et al., 2016). Briefly, the cardiac and aortic MRI were acquired using a clinical wide bore 1.5T scanner (MAGNETOM Aera, Syngo Platform VD13A, Siemens Healthcare, Erlangen, Germany) with 48 receiver channels, a 45 mT/m and 200 T/m/s gradient system, and an 18-channel anterior body surface coil used in combination with 12 elements of an integrated 32 element spine coil and electrocardiographic gating for synchronisation with the cardiac cycle. The acquired images were segmented to derive IDPs using a fully convolutional network (CNN)\u00a0(Bai et al., 2018; Wenjia Bai et al., 2018).\n\nThe ventricular CNN image segmentation provided measures that, with adjustments for body surface area, were used as IDPs for the left ventricular mass, left ventricular end-diastolic (LVEDVI) and left ventricular end-systolic volume (LVESVI), and right ventricular end-diastolic (RVEDVI) and right ventricular end-systolic volume (RVESVI) indices. Left and right ventricular ejection fraction IDPs were derived from integrations of the primary indices as (LVEDVI \u2013 LVESVI)/LVEDVI \u00d7 100 and (RVEDVI \u2013 RVESVI)/RVEDVI \u00d7 100, respectively. The atrial image segmentation provided left and right atrial volume indices after adjustment for body surface area. The aortic image segmentation provided maximal ascending (AAoAI) and descending (DAoAI) aortic area indices and minimal ascending (AAoAImin) and descending (DAoAImin) aortic area indices after adjustment for body surface area. Ascending and descending aortic distensibilities were derived as (AAoAI\u00a0\u2013\u00a0AAoAImin)/AAoAImin/(systolic \u2013 diastolic blood pressure) and (DAoAI\u00a0\u2013\u00a0DAoAImin)/AAoAImin/(systolic \u2013 diastolic blood pressure), respectively\u00a0(Petersen et al., 2016).\n\n### Liver fat MRI acquisition and pre-processing\n\nAbdominal images for assessments of liver fat were acquired using a Siemens 1.5T MAGNETOM Aera. Details of the MRI acquisition and pre-processing protocol are provided elsewhere\u00a0(Wilman et al., 2017). Briefly, a dual-echo Dixon Vibe protocol, which can be used to generate images distinguishing water and fat, from which liver fat could be determined, was performed (2.2\u00a0\u00d7\u00a01.2\u00a0\u00d7\u00a010\u00a0mm3 resolution, TR\u00a0=\u00a03.23 ms, TE\u00a0=\u00a01.44 ms). The liver MRI proton density fat fraction % derived is available to researchers through the UK Biobank Data Showcase\u00a0(UK Biobank, 2021).\n\n### Statistical analysis\n\nWe estimated the age-related differences in the brain normalised volume, cardiac, and liver fat IDPs by their regression onto age adjusted for sex, ethnicity, educational level, BMI, hypertension, diabetes, and smoking history. We then examined the magnitudes of differences in organ morphology or functional IDPs with alcohol consumption. Each IDP was regressed onto log2-transformed alcohol consumption adjusted for age, sex, ethnicity, educational level, BMI, hypertension, diabetes, and smoking history; raw coefficients are used for all measures except brain white matter diffusion measures, for which standardised coefficients are reported. Normality of the IDPs was tested using a Shapiro\u2013Wilks test. We used partial residual plots to assess any deviation from the fitted model. Additionally, a voxel-wise parametric analysis\u00a0(Fern\u00e1ndez-Sol\u00e0, 2015;\u00a0McEvoy et al., 2018), which used each voxel of the grey matter maps as dependent variable and log2-transformed alcohol consumption as independent variable adjusted for intracranial volume and the same covariates as above, was conducted for mapping grey matter regions associated with alcohol consumption. In secondary analysis of brain, cardiac, and liver phenotypes, an interaction term for age and log2 alcohol consumption was included in the regression models. To correct for multiple comparisons, the significance level was set to p<0.017 and p<4.5\u00a0\u00d7\u00a010\u22123 for brain and heart/aorta imaging IDPs, respectively, whereas for liver fat at p<0.05. For the voxel-wise analysis, a family-wise error-corrected threshold of p<0.05 was used for grey matter analysis. All statistical analyses were carried out using STATA 14.\n\n### Patient involvement\n\nThe performed analyses are based on existing data from a population-based cohort in the United\u00a0Kingdom (UK Biobank). No patients were explicitly engaged in designing the present research question or the outcome measures, nor were they involved in developing plans for recruitment, design, or implementation of the study. No patients were asked to advise on interpretation or writing up of results. Results from UK Biobank are routinely disseminated to study participants via the study website and social media outlets.\n\n## Results\n\n### Participant characteristics and imaging phenotypes\n\nBaseline characteristics of the participants included in this study and summary IDPs are shown in Tables 1 and 2. For the five subsets in our analysis, median alcohol intakes among these drinkers were similar:\u00a0~20.9 g/d (i.e., just over two 10 g drinking units, where 125 ml of 12.5% wine is 1.25 drinking units) for men and\u00a0~10.7 g/d for women with 25th and 75th\u00a0centiles\u00a0~10.3 g/d and 35.8 g/d for men and\u00a0~3.6 g/d and 17.9 g/d for women (Supplementary file 1).\n\n**Table 2.**\n Structural imaging phenotypes for brain (N\u00a0=\u00a010,143), heart (N\u00a0=\u00a011,821), and aorta (N\u00a0=\u00a012,376) in the UK Biobank.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Imaging-derived phenotypes</th>\n      <th>Mean\u00a0\u00b1\u00a0SD</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Brain</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Normalised brain volume</td>\n      <td>0.72\u00a0\u00b1\u00a00.045</td>\n    </tr>\n    <tr>\n      <td>Normalised grey matter volume</td>\n      <td>0.43\u00a0\u00b1\u00a00.034</td>\n    </tr>\n    <tr>\n      <td>Normalised white matter volume</td>\n      <td>0.29\u00a0\u00b1\u00a00.020</td>\n    </tr>\n    <tr>\n      <td>Heart</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Left ventricular mass index (g/m2)</td>\n      <td>46.2\u00a0\u00b1\u00a08.5</td>\n    </tr>\n    <tr>\n      <td>Left ventricular end-diastolic volume index (ml/m2)</td>\n      <td>80.0\u00a0\u00b1\u00a013.7</td>\n    </tr>\n    <tr>\n      <td>Left ventricular ejection fraction (%)</td>\n      <td>59.6\u00a0\u00b1\u00a05.9</td>\n    </tr>\n    <tr>\n      <td>Left atrial volume index (ml/m2)</td>\n      <td>38.8\u00a0\u00b1\u00a010.7</td>\n    </tr>\n    <tr>\n      <td>Right ventricular end-diastolic volume index (ml/m2)</td>\n      <td>84.5\u00a0\u00b1\u00a015.4</td>\n    </tr>\n    <tr>\n      <td>Right ventricular ejection fraction (%)</td>\n      <td>57.3\u00a0\u00b1\u00a06.0</td>\n    </tr>\n    <tr>\n      <td>Right atrial volume index (ml/m2)</td>\n      <td>46.1\u00a0\u00b1\u00a013.1</td>\n    </tr>\n    <tr>\n      <td>Aorta</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ascending aortic area index (mm2/m2)</td>\n      <td>455.3\u00a0\u00b1\u00a091.9</td>\n    </tr>\n    <tr>\n      <td>Ascending aortic distensibility (10\u22123mmHg\u22121)</td>\n      <td>1.98\u00a0\u00b1\u00a01.17</td>\n    </tr>\n    <tr>\n      <td>Descending aortic area index (mm2/m2)</td>\n      <td>254.1\u00a0\u00b1\u00a043.3</td>\n    </tr>\n    <tr>\n      <td>Descending aortic distensibility (10\u22123mmHg\u22121)</td>\n      <td>2.64\u00a0\u00b1\u00a01.25</td>\n    </tr>\n  </tbody>\n</table>\n\n_SD: standard deviation._\n\n### Associations of alcohol consumption with brain structure\n\nAge-related differences in normalised brain volumes (NBV) in the population, adjusted for alcohol consumption, were about 0.3% lower/year (mean\u00a0\u00b1\u00a0standard error: \u22123.0\u00a0\u00d7\u00a010\u22123 \u00b1 0.05 \u00d7 10\u22125/year, p<1.0\u00a0\u00d7\u00a010\u2212300), consistent with previous studies\u00a0(Enzinger et al., 2005). The contribution of alcohol to the observed brain volume differences was about 0.17% lower NBV per doubling of alcohol consumption (\u20131.7\u00a0\u00d7\u00a010\u22123 \u00b1 2.3 \u00d7 10\u22124, p=3.0\u00a0\u00d7\u00a010\u221214). Lower volumes per doubling of alcohol consumption of both total grey (\u20131.2\u00a0\u00d7\u00a010\u22123 \u00b1 1.7 \u00d7 10\u22124, p=1.9\u00a0\u00d7\u00a010\u221212) and white (\u20135.1\u00a0\u00d7\u00a010\u22124 \u00b1 1.2 \u00d7 10\u22124, p=2.1\u00a0\u00d7\u00a010\u22125) matter jointly account for the lower brain volumes associated with greater alcohol intake. Partial residual plots confirmed the observed relationship without any deviations from the fitted model (Figure 2a\u2013c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65325/elife-65325-fig2-v2.jpg)\n\n**Figure 2.:** Partial residual plots for (a) normalised brain volume, (b) total grey volume, (c) total white volume, (d) left ventricular mass index, (e) left ventricular end-diastolic volume index, (f) left ventricular ejection fraction, (g) right ventricular end-diastolic volume index, (h) right ventricular ejection fraction, (i)\u00a0left atrial volume index, (j) right atrial volume index, (k)\u00a0ascending aortic area index, (l) descending aortic area index, (m) ascending aortic distensibility, (n)\u00a0descending aborting distensibility, and (o)\u00a0liver fat.\n\nExploration of voxel-wise parametric associations of the log2-transformed g/d alcohol intake with brain grey matter showed greatest negative associations with regions in the cingulate and orbital frontal cortices, the bilateral insula, and thalami (Figure 3). There were no positive correlations between alcohol and grey matter volumes for any of the brain regions after family-wise error correction.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65325/elife-65325-fig3-v2.jpg)\n\n**Figure 3.:** Highlighted clusters define regions in which reductions of spatially\u00a0normalised grey matter volume are inversely correlated with log2-transformed alcohol consumption (g/d). The analysis suggests higher relative atrophy in the cingulate cortex (light blue arrowheads, A, B), thalamus (green arrowheads, A, C), orbital frontal cortex (red arrowheads, A, D), and insular cortex (dark blue arrowheads, C, D). Broken lines in (A) show levels for axial images in (B\u2013D). The voxel-wise parametric model was adjusted for age, sex, ethnicity, body mass index, college degree education, hypertension, diabetes, and smoking history. The results are displayed on the MRI template available in SPM12 at axial slices of 46.5 mm (B), 6 mm (C), and \u20137.5 mm (D) relative to the bregma. The calibration bar provides the colour range use to describe t-scores calculated using a family-wise error (FWE)-corrected threshold of p<0.05.\n\nFinally, given the associations of greater alcohol intake with lower white matter volumes, we explored alcohol-associated differences in fractional anisotropy, a measure of white matter microstructure, across 27 major white matter tract IDPs. The bilateral corticospinal tracts showed increased fractional anisotropy with greater alcohol intake (standardised coefficient, left, 0.013\u00a0\u00b1\u00a00.003 per doubling of alcohol consumption, p=1.0\u00a0\u00d7\u00a010\u22124; right, 0.011\u00a0\u00b1\u00a00.003, p=4.20\u00a0\u00d7\u00a010\u22124). This was associated with lower orientation dispersion (standardised coefficient, left, \u20130.013\u00a0\u00b1\u00a00.003, p=8.1\u00a0\u00d7\u00a010\u22124; right, \u20130.013\u00a0\u00b1\u00a00.003, p=1.4\u00a0\u00d7\u00a010\u22123), suggesting greater fibre coherence or a relatively reduced density of orthogonally crossing white matter tracts (Zhang et al., 2012; Mollink et al., 2017).\n\n### Associations of alcohol consumption with heart and aorta\n\nWe first tested for age-related differences in cardiac and aortic IDPs adjusted for alcohol consumption in the population. Left ventricular mass index and the left atrial and left and right ventricular end diastolic volume indices were lower with greater age. Right and left ventricular ejection fractions both were modestly greater with age. There was also a small relative increase in the right atrial volume index with age (Table 3).\n\n**Table 3.**\n Associations of age and alcohol consumption with cardiac (N\u00a0=\u00a011,821) and aortic (N\u00a0=\u00a012,376) imaging phenotypes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Aging/year, estimate*\u00a0\u00b1\u00a0SE</th>\n      <th>p-value</th>\n      <th>Alcohol, estimate*\u00a0\u00b1\u00a0SE</th>\n      <th>p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Heart</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Left ventricular mass index</td>\n      <td>\u22120.10\u00a0\u00b1\u00a00.01</td>\n      <td>1.3\u00a0\u00d7\u00a010\u221231</td>\n      <td>0.36\u00a0\u00b1\u00a00.04</td>\n      <td>8.5\u00a0\u00d7\u00a010\u221222</td>\n    </tr>\n    <tr>\n      <td>Left ventricular end-diastolic volume index</td>\n      <td>\u22120.33\u00a0\u00b1\u00a00.02</td>\n      <td>6.0\u00a0\u00d7\u00a010\u221290</td>\n      <td>0.61\u00a0\u00b1\u00a00.07</td>\n      <td>4.1\u00a0\u00d7\u00a010\u221217</td>\n    </tr>\n    <tr>\n      <td>Left ventricular ejection fraction (%)</td>\n      <td>0.04\u00a0\u00b1\u00a00.01</td>\n      <td>6.3\u00a0\u00d7\u00a010\u22127</td>\n      <td>0.05\u00a0\u00b1\u00a00.03</td>\n      <td>0.16</td>\n    </tr>\n    <tr>\n      <td>Left atrial volume index (ml/m2)</td>\n      <td>\u22120.12\u00a0\u00b1\u00a00.01</td>\n      <td>8.9\u00a0\u00d7\u00a010\u221217</td>\n      <td>0.43\u00a0\u00b1\u00a00.06</td>\n      <td>6.0\u00a0\u00d7\u00a010\u221212</td>\n    </tr>\n    <tr>\n      <td>Right ventricular end-diastolic volume index (ml/m2)</td>\n      <td>\u22120.33\u00a0\u00b1\u00a00.02</td>\n      <td>5.6\u00a0\u00d7\u00a010\u221280</td>\n      <td>0.57\u00a0\u00b1\u00a00.08</td>\n      <td>2.5\u00a0\u00d7\u00a010\u221213</td>\n    </tr>\n    <tr>\n      <td>Right ventricular ejection fraction (%)</td>\n      <td>0.04\u00a0\u00b1\u00a00.01</td>\n      <td>1.6\u00a0\u00d7\u00a010\u22128</td>\n      <td>0.05\u00a0\u00b1\u00a00.03</td>\n      <td>0.13</td>\n    </tr>\n    <tr>\n      <td>Right atrial volume index (ml/m2)</td>\n      <td>0.04\u00a0\u00b1\u00a00.02</td>\n      <td>6.9\u00a0\u00d7\u00a010\u22123</td>\n      <td>0.26\u00a0\u00b1\u00a00.07</td>\n      <td>3.0\u00a0\u00d7\u00a010\u22124</td>\n    </tr>\n    <tr>\n      <td>Aorta</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ascending aortic area index (mm2/m2)</td>\n      <td>2.75\u00a0\u00b1\u00a00.11</td>\n      <td>4.0\u00a0\u00d7\u00a010\u2212130</td>\n      <td>2.64\u00a0\u00b1\u00a00.50</td>\n      <td>1.5\u00a0\u00d7\u00a010\u22127</td>\n    </tr>\n    <tr>\n      <td>Ascending aortic distensibility (10\u22123mmHg\u22121)</td>\n      <td>\u22120.09\u00a0\u00b1\u00a00.001</td>\n      <td>&lt;1\u00a0\u00d7\u00a010\u2212300</td>\n      <td>\u22120.006\u00a0\u00b1\u00a00.005</td>\n      <td>0.22</td>\n    </tr>\n    <tr>\n      <td>Descending aortic area index (mm2/m2)</td>\n      <td>1.86\u00a0\u00b1\u00a00.05</td>\n      <td>2.0\u00a0\u00d7\u00a010\u2212291</td>\n      <td>1.34\u00a0\u00b1\u00a00.22</td>\n      <td>2.1\u00a0\u00d7\u00a010\u22129</td>\n    </tr>\n    <tr>\n      <td>Descending aortic distensibility (10\u22123mmHg\u22121)</td>\n      <td>\u22120.09\u00a0\u00b1\u00a00.001</td>\n      <td>&lt;1\u00a0\u00d7\u00a010\u2212300</td>\n      <td>\u20130.02\u00a0\u00b1\u00a00.005</td>\n      <td>7.5\u00a0\u00d7\u00a010\u22124</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Estimates\u00a0\u00b1\u00a0SE define coefficients for cardiac and aortic imaging phenotype changes per year age or per doubling of alcohol consumption (g/d) with their standard errors. The aging model was adjusted for sex, ethnicity, body mass index, and prevalence of college degree education, hypertension, diabetes, and smoking history. The alcohol consumption model was adjusted for age, sex, ethnicity, body mass index, and prevalence of college degree education, hypertension, diabetes, and smoking history. SE, standard error._\n\nLog2-transformed alcohol consumption was associated directly with measures of left ventricular and atrial mass and volume. The effects of alcohol on the cardiac IDPs were largely in opposite direction to those for age (Table 3).\n\nAscending and descending aortic area indices increased with age, while distensibility decreased; log2-transformed alcohol consumption associations for the aorta showed the same directions of effect as age (Table 3).\n\nThe associations with alcohol appeared linear-log with no deviation as indicated by the partial residual plots (Figure 2d\u2013n). We also explored interactions between age and log2 alcohol consumption, which were most evident for the left ventricular mass index and aortic distensibility IDPs (Supplementary file 2). There was no evidence for U-shaped associations, i.e., higher values at both the lower and higher ends of the alcohol intake distribution, for any of the aortic or cardiac IDPs.\n\n### Association of alcohol consumption with liver fat\n\nWe did not observe age-related differences in liver fat after adjusting for alcohol consumption and other relevant variables (0.015\u00a0\u00b1\u00a00.01, p=0.14). There was an increase of liver fat per doubling of alcohol consumption (0.15\u00a0\u00b1\u00a00.06, p=0.006), with no deviation from linear-log association observed (Figure 2o).\n\n## Discussion\n\nIn this large population-based study of the effects of alcohol consumption on different organs, we found that increasing alcohol intake was associated with reduced brain grey matter volume, increased left ventricular mass and volume and aortic area index, and\u00a0reduced descending aortic distensibility and increased liver fat. There was no evidence against a monotonic increase across the range of alcohol intakes, indicating potentially pathological effects of alcohol on the brain, heart, and aorta across the full range of alcohol intake in the population, without evidence for a threshold.\n\nCurrent guidelines for safe alcohol consumption vary between countries, mostly around one or two standard drinks/day. In the United\u00a0Kingdom, the Chief Medical Officers\u2019 guideline for both men and women suggests that avoiding more than 14 units/week (corresponding to 16\u00a0g/d alcohol) on a regular basis maintains health risks at a low level\u00a0(UK Chief Medical Officer's, 2016). In the United\u00a0States, the suggested threshold is \u22642 drinks/day (~28\u00a0g/d) for men and \u22641 drink/day (~14\u00a0g/d) for women\u00a0(United States Department of Health and Human Services, 2015). In a recent meta-analysis, excess mortality was observed above around 100\u00a0g alcohol intake per week (14.3 g/d), but with reduced incidence of myocardial infarction\u00a0(Wood et al., 2018). Our results suggest that alcohol consumption below this threshold and below the currently recommended guidelines worldwide is associated with pathological structural and functional changes in brain, heart, aorta, and liver.\n\nPrevious research on structural and functional changes in the brain has indicated that excessive alcohol use is associated with abnormal development of the brain grey matter in animals\u00a0(Cosa et al., 2017) and humans\u00a0(Heikkinen et al., 2017), but the studies were small and underpowered. Here we found evidence of inverse associations of brain volume with amounts of alcohol consumed in a general population sample of adults. The magnitude of the effects appears to be meaningful: doubling of alcohol consumption (e.g., from 10 to 20 g/d) was associated with over half the brain volume reduction attributed to a year of aging in the population. This suggests a possible relationship between alcohol consumption and increased susceptibility to age-related brain pathologies and disease, consistent with our recent report of a genetic correlation between alcohol consumption and neuropsychiatric disease (Evangelou et al., 2019).\n\nThe effects of alcohol consumption on the brain appeared to be relatively generalised with a reduction in both white and grey matter volumes with greater alcohol consumption. Alcohol intake has previously been reported to be associated with reduced grey matter volumes in specific areas of the brain including the hippocampus and the inferior-medial frontal and anterior cingulate cortices\u00a0(Topiwala et al., 2017). Our voxel wide-analysis also showed relatively greater associations of alcohol consumption with lower cingulate volumes and provides new evidence for similar directions of association within the orbital frontal cortex, the bilateral insula, and the thalami.\n\nStudies of the effect of alcohol consumption on brain white matter have been less conclusive to date\u00a0(Ding et al., 2004; Mukamal et al., 2001; McEvoy et al., 2018). This lack of consensus in the literature may in part reflect both study power and the potential complexity of changes in the macroscopic MRI measures of brain microstructure\u00a0(Ferizi et al., 2017). Our study, the largest to date, found that\u00a0the ratio of variance to effect was larger for white matter\u00a0than grey matter, highlighting the need for larger study sizes to estimate volume differences in white matter. We also found higher fractional anisotropy and decreased orientation dispersion (a measure of greater fibre coherence)\u00a0(Enzinger et al., 2005) in the corticospinal tracts with increasing alcohol consumption. As we have no reason to hypothesise adaptive plasticity with an increased density of descending motor neurons (one interpretation of increased fractional anisotropy)\u00a0(Mole et al., 2016), we interpret these observations as reflecting not differences in the structures of corticospinal tracts, but lower densities in major axonal tracts crossing them (e.g., the cingulum bundle and superior longitudinal fasciculus). This interpretation is broadly consistent with the lower grey matter volumes in associated cortical regions (e.g., the cingulate and anterior prefrontal cortices) reported here and previously with greater alcohol consumption (Topiwala et al., 2017). A similar \u2018paradoxical\u2019 difference in fractional anisotropy in the context of decreased density of crossing fibre tracts distinguishes people with mild cognitive impairment who progress most rapidly to Alzheimer\u2019s disease\u00a0(Douaud et al., 2011).\n\nWe provide evidence for cardiac remodelling including the association of alcohol consumption with larger ventricular masses, end-diastolic volumes, and left atrial volume indices. Our findings are consistent with previous echocardiographic studies that showed association between increasing alcohol intake and greater left ventricular mass\u00a0(Gon\u00e7alves et al., 2015a; G\u00e9mes et al., 2018; Manolio et al., 1991) (although a smaller recent MRI study, assessing effects of light-to-moderate alcohol consumption, reported similar left ventricular mass in drinkers compared to non-drinkers;\u00a0Voskoboinik et al., 2019). Left ventricular mass is a strong prognostic factor for incidence of cardiovascular disease and mortality\u00a0(Levy et al., 1990). Greater atrial indices with higher alcohol consumption have also been reported\u00a0(Gon\u00e7alves et al., 2015a); atrial enlargement can be considered a risk factor for several adverse cardiovascular outcomes\u00a0(Benjamin et al., 1995) and is associated with increased risk of heart failure\u00a0(Gottdiener et al., 2006). Alcohol consumption had same directions of effect as aging for the thoracic aortic measures (larger diameters and lower distensibilities). Such changes may also contribute to greater risks of cardiovascular disease and mortality\u00a0(Erbel and Eggebrecht, 2006; Redheuil et al., 2014).\n\nA number of studies have suggested a \u2018U\u2019-shaped association between alcohol drinking and cardiovascular outcomes, even after exclusion of ex-drinkers from the non-drinker category\u00a0(Marmot et al., 1981). Our diagnostic plots for the relationship between alcohol and cardiovascular measures did not provide evidence of deviation from a monotonic association and therefore did not support a \u2018U\u2019-shaped association for these measures. Rather, our results point to pathological effects of regular alcohol intake on the heart and major vessels occurring below current consumption guidelines.\n\nExcessive alcohol intake is a well-known risk factor for increased liver fat\u00a0(Bellentani et al., 1997), but the evidence regarding low-to-moderate alcohol consumption has been inconclusive. Several prospective studies have reported a lower prevalence or risk of fatty liver\u00a0(Moriya et al., 2015; Hashimoto et al., 2015; Yamada et al., 2010) for low-to-moderate compared to excessive alcohol consumption. However, a randomised trial showed that even moderate consumption of red wine for three months increases liver fat\u00a0(Kechagias et al., 2011; van Eekelen et al., 2019). Our results are consistent with this. The magnitude of the association with alcohol (0.15% per doubling of alcohol consumption) suggests that alcohol could explain a major proportion of the population variance in liver fat (mean liver fat density percentages in a larger UK Biobank sample ranged between a mean of 1.34\u20135.71%)\u00a0(Linge et al., 2019).\n\nOur results highlight the multi-organ effects of low and moderate levels of alcohol consumption in late middle-aged people. This may reflect direct toxicities. For example, the toxic effect of alcohol or its metabolites can cause myocardial damage that leads to increased rates of cardiomyopathies, heart failure, and mortality\u00a0(Wood et al., 2018; Gon\u00e7alves et al., 2015b). Deleterious effects of alcohol on cell function and survival and consequent organ injury may affect a number of biological processes, e.g., oxidative stress, inflammation, aberrant post-translational modifications of proteins, dysregulation in lipid metabolism, upregulation of catabolic processes and signal transduction pathways, and epigenetic changes involving DNA methylation impairments (Souza-Smith et al., 2016; Osna and Kharbanda, 2016). However, our observations may also reflect interactions between pathologies across organ systems. For example, alcohol is metabolised primarily in the liver, where it increases fatty acid synthesis\u00a0(Cederbaum, 2012) and leads to metabolic abnormalities that independently contribute to cardiovascular and brain pathologies\u00a0(Suzuki et al., 2019; Wilson et al., 2005; Cai et al., 2012).\n\nOur study has limitations. The observational design of UK Biobank has inherent limitations that preclude establishing causal relationships. Also, the participants are relative healthy compared to the general UK population and most are of European ancestry\u00a0(Fry et al., 2017). The extent to which results are generalisable to other populations or populations of various ethnic groups needs to be explored. We relied on self-reported alcohol intake information obtained on a single occasion at the baseline assessment. This is subject to misreporting and recall bias, especially among heavy drinkers who may under-report their intake\u00a0(Boniface et al., 2014; Greenfield and Kerr, 2008) and may have led to bias in the estimation of the effects of alcohol intake on the outcomes under study. Furthermore, the imaging data were also only available at one point in time. Future longitudinal analysis will enable effects of low or moderate alcohol intake on anatomical and structural changes of the various organs to be measured over time directly.\n\nIn summary, our findings provide new insights into the adverse effects of alcohol intake on the structures of brain, heart, and aorta and on liver fat deposition. Specifically, we show that these effects are monotonic (linear-log), increasing across the full range of reported alcohol intakes in this large population sample, with no apparent threshold. Our results therefore indicate that pathological changes in major organ systems may occur at even small amounts of daily alcohol intake. This has important implications for governmental and public health policies concerning \u2018safe\u2019 levels of alcohol drinking in the general population. Further research is needed, but we believe current guidelines on alcohol drinking may need to be revisited.\n\nDisclosures EE acknowledges consultancy fees from OpenDNA. PMM acknowledges consultancy fees from Roche, Adelphi Communications, Celgene, and Biogen. He has received honoraria or speakers\u2019 honoraria from Novartis, Biogen, Medscape, Adelphi Communications, and Roche and has received research or educational funds from Biogen, Novartis, GlaxoSmithKline, and Nodthera. PE is a member of the UK Biobank Strategic Oversight Committee (previously the UK Biobank Steering Committee).\n",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "4fb53301-e71d-4dd3-b956-711ffdb6e536",
+      "submission_id": "aab2ea9e-5010-4925-881e-0440706b6891",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward D Janus, University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65325.sa1](https://doi.org/10.7554/eLife.65325.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors assessed global effect sizes of alcohol consumption on quantitative MRI measures in the brain, heart, aorta and liver using a large sample of UK biobank data\n\nThe results suggest that for both genders alcohol consumption below current recommended thresholds in guidelines world wide is associated with pathological structural and functional changes in brain, heart , aorta and liver. The findings are of major interest to those conducting research into these tissues, those conducting research on alcohol consumption and health and to policy makers.\n\nDecision letter after peer review:\n\nCongratulations, we are pleased to inform you that your article, \"Alcohol consumption in the general population is associated with structural changes in multiple organ systems\", has been accepted for publication in eLife. Your manuscript has been reviewed by 3 reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor.\n\nSuggest modifying the sentences on lines 142 and 143 with addition of the word \"ventricular\" before left and right end-diastolic and end-systolic volumes. Also, add \"left ventricular\" end-systolic volume. Otherwise no need to modify text.\n\nReviewer #1:\n\nThe authors have studied a large sample of UK biobank data with a view to getting a feel on what is the safe alcohol intake with no harmful effect on human organs.\n\nOne of the major strength is the large sample size and meticulous measurement and quantification of organ involvement including brain, heart and aorta.\n\nOne of the weakness is the self reported alcohol intake which may not be necessarily true on many occasions.\n\nHowever the findings are useful and alarming as it seems to be that there is no safe alcohol limit without any organ involvement as the authors reported here.\n\nThis make sense given the toxic effects of alcohol in multiple biological systems in the human body.\n\nProspective studies with accurate alcohol measurements and further biological underpinning on how these organ involvement occur is worthy of exploring.\n\nThis study is very well done and findings are worthy of publishing as it is.\n\nReviewer #2:\n\nExcessive alcohol consumption has multiple well known adverse effects but multiorgan effects across much lower and usual ranges of consumption are less well defined and the current interpretation of the available data has been translated into safe thresholds for public health purposes.\n\nThe authors set out to assess global effect sizes of alcohol consumption on quantitative MRI measures in the brain, heart, aorta and liver. Their subjects are a subset of the half a million very well characterized participants in the UK Biobank study for whom brain, cardiac, aortic and liver MRI and image derived phenotypes were available. There were appropriate exclusions including non drinkers and those with established disease in these organs. The alcohol intake was self reported from a touch screen questionnaire and was converted into grams of alcohol per day. Alcohol intake was log transformed so that a change of 1 unit translates into a doubling of alcohol consumption.\n\nThe MRI methodology is described in detail. The age related changes are factored in and alcohol adds to further adverse changes There are adverse effects on all the tissues examined with doubling of alcohol intake with no lower safe limit There is reduced brain grey and white matter with greatest adverse effects in the cingulate and orbital frontal cortices, the bilateral insula and thalami; changes in left ventricular and atrial mass and volume, aortic changes and increased liver fat.\n\nThe results suggest that for both genders alcohol consumption below current recommended thresholds in guidelines world wide is associated with pathological structural and functional changes in brain, heart , aorta and liver.\n\nMajor strengths are the large size of the study, the well characterized subjects and the detailed MRIs coupled with a very clear presentation of the study and its implications.\n\nThere are no obvious weaknesses however limitations as well discussed by the authors are (1). that the study is cross sectional precluding establishment of a causal relationship which requires further longitudinal studies. (2). that the alcohol intake is self reported and heavy drinkers may under report intake. (3). that the population studied is mainly Caucasian.\n\nThe authors have achieved their aims and the results support their conclusions.\n\nThe findings are of major interest to those conducting research into these tissues, those conducting research on alcohol consumption and health and to policy makers. They provide ample scope for debate between those who will want to reduce the currently existing thresholds further and those who have the opposite view and will argue that this is preliminary data lacking causal effects.\n\nA very well executed and presented study of great interest. I don't see any need to modify the text.\n\nReviewer #3:\n\nSuggest modifying the sentences on lines 142 and 143 with addition of the word \"ventricular\" before left and right end-diastolic and end-systolic volumes. Also, add \"left ventricular\" end-systolic volume.\n",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "42965016-1208-4f56-aab4-bb2aae6548a1",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C1",
+      "claim": "Excessive alcohol consumption is associated with damage to various organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive alcohol consumption is associated with damage to various organs, but its multi-organ effects have not been characterised across the usual range of alcohol drinking in a large general population sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the background section of the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "5584d92d-1b8b-45df-bfee-d05642d464cf",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C2",
+      "claim": "Higher alcohol consumption is associated with lower normalised brain volume with an effect size of \u20131.7 \u00d7 10\u22123 \u00b1 0.76 \u00d7 10\u22123 per doubling of alcohol consumption (p=3.0 \u00d7 10\u221214).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a monotonic association of higher alcohol consumption with lower normalised brain volume across the range of alcohol intakes (\u20131.7 \u00d7 10\u22123 \u00b1 0.76 \u00d7 10\u22123 per doubling of alcohol consumption, p=3.0 \u00d7 10\u221214).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis with p-value provided from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "6391cc32-6117-408c-ab1a-d897a18d51f9",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C3",
+      "claim": "Alcohol consumption is associated directly with measures of left ventricular mass index.",
+      "claim_type": "EXPLICIT",
+      "source": "Alcohol consumption was also associated directly with measures of left ventricular mass index and left ventricular and atrial volume indices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of findings from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "455d623b-fecd-4140-9fb1-cbf538aba81c",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C4",
+      "claim": "Alcohol consumption is associated directly with left ventricular volume indices.",
+      "claim_type": "EXPLICIT",
+      "source": "Alcohol consumption was also associated directly with measures of left ventricular mass index and left ventricular and atrial volume indices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of findings from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "9961ff3b-b3a8-4fc6-95d0-abb10c56c3db",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C5",
+      "claim": "Alcohol consumption is associated directly with atrial volume indices.",
+      "claim_type": "EXPLICIT",
+      "source": "Alcohol consumption was also associated directly with measures of left ventricular mass index and left ventricular and atrial volume indices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of findings from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "ef78c479-9608-4d7c-8964-9cb14d6244af",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C6",
+      "claim": "Liver fat increased by a mean of 0.15% per doubling of alcohol consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver fat increased by a mean of 0.15% per doubling of alcohol consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "d5335f28-bf63-4de9-9f9f-57185115e6ff",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C7",
+      "claim": "There is not a 'safe threshold' below which there are no toxic effects of alcohol.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results imply that there is not a 'safe threshold' below which there are no toxic effects of alcohol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the monotonic associations observed in the study data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "7ef9219f-ac7e-42ef-b8e3-1dc633fb5dc9",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C8",
+      "claim": "Current public health guidelines concerning alcohol consumption may need to be revisited.",
+      "claim_type": "EXPLICIT",
+      "source": "Current public health guidelines concerning alcohol consumption may need to be revisited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative recommendation based on study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "bda4cd40-d3a9-4b37-8cc8-db4d3841d727",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C9",
+      "claim": "Alcohol use was the seventh leading risk factor for both deaths and disability-adjusted life years in 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the Global Burden of Diseases Study, alcohol use was the seventh leading risk factor for both deaths and disability-adjusted life years in 2016, accounting for 2.2% and 6.8% excess in age-standardized female and male deaths, respectively (GBD 2016 Alcohol Collaborators, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from the Global Burden of Diseases Study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "effe8c30-ab3f-4d83-a508-cce8b2724883",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C10",
+      "claim": "Alcohol use accounted for 2.2% excess in age-standardized female deaths in 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the Global Burden of Diseases Study, alcohol use was the seventh leading risk factor for both deaths and disability-adjusted life years in 2016, accounting for 2.2% and 6.8% excess in age-standardized female and male deaths, respectively (GBD 2016 Alcohol Collaborators, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from the Global Burden of Diseases Study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "c78b4606-8af5-4493-b322-7ac1e782b261",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C11",
+      "claim": "Alcohol use accounted for 6.8% excess in age-standardized male deaths in 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the Global Burden of Diseases Study, alcohol use was the seventh leading risk factor for both deaths and disability-adjusted life years in 2016, accounting for 2.2% and 6.8% excess in age-standardized female and male deaths, respectively (GBD 2016 Alcohol Collaborators, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from the Global Burden of Diseases Study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "69af975e-8969-4f7c-a1ac-7f775b831283",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C12",
+      "claim": "Heavy drinking is associated with increased all-cause mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Alcohol consumption causes damage to multiple organs and systems, and heavy drinking is associated with increased all-cause mortality (Bell et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bell et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "8411b5e6-68ef-4b7f-9c89-7020c214033a",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C13",
+      "claim": "Even moderate daily alcohol intake may have significant impact on disease risk.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous evidence has suggested that low to moderate amounts of daily consumption may have beneficial effects on cardiovascular health (Bell et al., 2017), a recent large-scale meta-analysis concluded that even moderate daily alcohol intake may have significant impact on disease risk (Wood et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Wood et al., 2018 meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "04bf9d6c-d50c-4eb5-aaf8-dfeaefbfe9bd",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C14",
+      "claim": "The liver is the primary site of alcohol metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The liver is a primary target for the detrimental effects of alcohol, as it is the primary site of alcohol metabolism (Cederbaum, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Cederbaum, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "31502f6e-d8ed-41b6-b840-06113d56a91b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C15",
+      "claim": "Excessive alcohol use during adolescence has been associated with reduced brain grey matter volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive alcohol use during adolescence has been associated with reduced brain grey matter volumes (Heikkinen et al., 2017), but evidence regarding structural brain changes at lower levels of alcohol intake is limited and conflicting (Ding et al., 2004; Mukamal et al., 2001; McEvoy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Heikkinen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "f720eba8-cfc1-43ea-afaa-9e00747f2e8b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C16",
+      "claim": "Evidence regarding structural brain changes at lower levels of alcohol intake is limited and conflicting.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive alcohol use during adolescence has been associated with reduced brain grey matter volumes (Heikkinen et al., 2017), but evidence regarding structural brain changes at lower levels of alcohol intake is limited and conflicting (Ding et al., 2004; Mukamal et al., 2001; McEvoy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple sources (Ding et al., 2004; Mukamal et al., 2001; McEvoy et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "d4930dc8-2a1f-45c8-8c8b-33a5abd9c4d7",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C17",
+      "claim": "Moderate to heavy alcohol consumption is implicated causally with pathologically reduced left ventricular ejection fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moderate to heavy alcohol consumption is implicated causally with pathologically reduced left ventricular ejection fraction (van Oort et al., 2020), cardiomyopathy, heart failure, and sudden death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from van Oort et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "6ac9cda2-ada1-4453-b39c-f1026921827a",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C18",
+      "claim": "Moderate to heavy alcohol consumption is implicated causally with cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moderate to heavy alcohol consumption is implicated causally with pathologically reduced left ventricular ejection fraction (van Oort et al., 2020), cardiomyopathy, heart failure, and sudden death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "af273dba-900f-4edc-a496-cf570926169b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C19",
+      "claim": "Moderate to heavy alcohol consumption is implicated causally with heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Moderate to heavy alcohol consumption is implicated causally with pathologically reduced left ventricular ejection fraction (van Oort et al., 2020), cardiomyopathy, heart failure, and sudden death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "d97671cf-0b86-4cfb-a31a-67054c03b870",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C20",
+      "claim": "Moderate to heavy alcohol consumption is implicated causally with sudden death.",
+      "claim_type": "EXPLICIT",
+      "source": "Moderate to heavy alcohol consumption is implicated causally with pathologically reduced left ventricular ejection fraction (van Oort et al., 2020), cardiomyopathy, heart failure, and sudden death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "d09e9c59-9a6d-48a6-9ce4-f657181a054b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C21",
+      "claim": "Smaller differences in left ventricular mass consistent with early pathology can be attributed to lower levels of alcohol intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of cardiac structure based on echocardiography have suggested that smaller differences in left ventricular mass consistent with early pathology can also be attributed to lower levels of alcohol intake (Voskoboinik et al., 2019; Gon\u00e7alves et al., 2015a; G\u00e9mes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple echocardiography studies (Voskoboinik et al., 2019; Gon\u00e7alves et al., 2015a; G\u00e9mes et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "8c47b52f-900a-44e0-842a-8875a17b6729",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C22",
+      "claim": "UK Biobank is a prospective, observational study of ~500,000 people across the United Kingdom, aged 40\u201369 years at recruitment (2007\u20132010).",
+      "claim_type": "EXPLICIT",
+      "source": "UK Biobank is a prospective, observational study of ~500,000 people across the United Kingdom, aged 40\u201369 years at recruitment (2007\u20132010) (Sudlow et al., 2015; Bycroft et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited description of UK Biobank from Sudlow et al., 2015; Bycroft et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "793508b4-fc71-47ad-b9b9-05d2c3e03b88",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C23",
+      "claim": "The study included 10,143 participants with brain grey matter imaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "IDPs of participants were included based on availability of measures after the application of exclusion criteria (brain grey matter [N = 10,143], brain white matter [N = 9053], heart [N = 11,821], aortic [N = 12,376], and liver [N = 3649]) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sample size reported from the study's data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "492000b2-e33c-4048-9e19-441e920e04d0",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C24",
+      "claim": "The study included 9,053 participants with brain white matter imaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "IDPs of participants were included based on availability of measures after the application of exclusion criteria (brain grey matter [N = 10,143], brain white matter [N = 9053], heart [N = 11,821], aortic [N = 12,376], and liver [N = 3649]) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sample size reported from the study's data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "1c90f63c-633e-4e0a-bb11-d163684eca20",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C25",
+      "claim": "The study included 11,821 participants with heart imaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "IDPs of participants were included based on availability of measures after the application of exclusion criteria (brain grey matter [N = 10,143], brain white matter [N = 9053], heart [N = 11,821], aortic [N = 12,376], and liver [N = 3649]) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sample size reported from the study's data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "6a20d877-bc8c-433f-a0ad-80fa5c252ee9",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C26",
+      "claim": "The study included 12,376 participants with aortic imaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "IDPs of participants were included based on availability of measures after the application of exclusion criteria (brain grey matter [N = 10,143], brain white matter [N = 9053], heart [N = 11,821], aortic [N = 12,376], and liver [N = 3649]) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sample size reported from the study's data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "8306ef8a-8781-4c26-9e29-7e209dc05def",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C27",
+      "claim": "The study included 3,649 participants with liver imaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "IDPs of participants were included based on availability of measures after the application of exclusion criteria (brain grey matter [N = 10,143], brain white matter [N = 9053], heart [N = 11,821], aortic [N = 12,376], and liver [N = 3649]) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sample size reported from the study's data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "eb4866cb-78f3-4498-8e9a-d7a196313ddc",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C28",
+      "claim": "Participants were defined as hypertensive if they had systolic blood pressure \u2265 140 mmHg or diastolic blood pressure \u2265 90 mmHg or were receiving antihypertensive medication.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined participants as hypertensive if they had systolic blood pressure \u2265 140 mmHg or diastolic blood pressure \u2265 90 mmHg or were receiving antihypertensive medication (Suzuki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition cited from Suzuki et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "f62dd32b-ed01-4adf-8d1e-fb2d9bc8fa9a",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C29",
+      "claim": "Alcohol intake was calculated as grams of alcohol per day (g/d) among drinkers based on self-reported alcohol drinking from a touch-screen questionnaire.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated alcohol intake as grams of alcohol per day (g/d) among drinkers based on self-reported alcohol drinking from a touch-screen questionnaire described previously (Evangelou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study's methodology, cited from Evangelou et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "c1fdb036-a0fa-4ad9-8f2b-3137d50f3285",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C30",
+      "claim": "Brain images were acquired using a Siemens Skyra 3T running VD13A SP4 with a Siemens 32-channel RF receive head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the T1-weighted (3D MPRAGE, 1 \u00d7 1 \u00d7 1 mm3 resolution, field of view [FOV]/matrix = 208 \u00d7 256\u00d7256, TR [repetition time] = 2000 ms, TI [inversion time] = 880 ms) brain images used here were acquired using a Siemens Skyra 3T running VD13A SP4 (Siemens Healthcare, Erlangen, Germany) with a Siemens 32-channel RF receive head coil used for structural analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Technical description of MRI acquisition methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "e04a445c-4252-4a5b-a890-91401e93c7d4",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C31",
+      "claim": "Brain and regional volumes were normalised to the corresponding total intracranial volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain and regional volumes were normalised to the corresponding total intracranial volumes, calculated from the sums of volumes of the grey and white matter and cerebrospinal fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "6733ab20-8e07-4758-9a00-15567005698f",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C32",
+      "claim": "Cardiac and aortic MRI were acquired using a clinical wide bore 1.5T scanner (MAGNETOM Aera, Syngo Platform VD13A, Siemens Healthcare).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the cardiac and aortic MRI were acquired using a clinical wide bore 1.5T scanner (MAGNETOM Aera, Syngo Platform VD13A, Siemens Healthcare, Erlangen, Germany) with 48 receiver channels, a 45 mT/m and 200 T/m/s gradient system, and an 18-channel anterior body surface coil used in combination with 12 elements of an integrated 32 element spine coil and electrocardiographic gating for synchronisation with the cardiac cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Technical description of MRI acquisition methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "28b34cf1-50f0-4157-84c9-c99a5c3c564b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C33",
+      "claim": "The acquired cardiac images were segmented to derive IDPs using a fully convolutional network (CNN).",
+      "claim_type": "EXPLICIT",
+      "source": "The acquired images were segmented to derive IDPs using a fully convolutional network (CNN) (Bai et al., 2018; Wenjia Bai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of image processing methodology, cited from Bai et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "0eee8181-678b-4c3d-9e47-25b6315902c6",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C34",
+      "claim": "Age-related differences in normalised brain volumes were about 0.3% lower per year (\u22123.0 \u00d7 10\u22123 \u00b1 0.05 \u00d7 10\u22125/year, p<1.0 \u00d7 10\u2212300).",
+      "claim_type": "EXPLICIT",
+      "source": "Age-related differences in normalised brain volumes (NBV) in the population, adjusted for alcohol consumption, were about 0.3% lower/year (mean \u00b1 standard error: \u22123.0 \u00d7 10\u22123 \u00b1 0.05 \u00d7 10\u22125/year, p<1.0 \u00d7 10\u2212300), consistent with previous studies (Enzinger et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding from the study's data analysis with citation to Enzinger et al., 2005 for consistency.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "e5165784-f3f5-45c5-9f4f-c67b8895ab7b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C35",
+      "claim": "The contribution of alcohol to observed brain volume differences was about 0.17% lower NBV per doubling of alcohol consumption (\u20131.7 \u00d7 10\u22123 \u00b1 2.3 \u00d7 10\u22124, p=3.0 \u00d7 10\u221214).",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of alcohol to the observed brain volume differences was about 0.17% lower NBV per doubling of alcohol consumption (\u20131.7 \u00d7 10\u22123 \u00b1 2.3 \u00d7 10\u22124, p=3.0 \u00d7 10\u221214).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "b69bc6f2-26ab-48da-bc75-ff99ac745fca",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C36",
+      "claim": "Lower volumes per doubling of alcohol consumption of total grey matter were \u20131.2 \u00d7 10\u22123 \u00b1 1.7 \u00d7 10\u22124 (p=1.9 \u00d7 10\u221212).",
+      "claim_type": "EXPLICIT",
+      "source": "Lower volumes per doubling of alcohol consumption of both total grey (\u20131.2 \u00d7 10\u22123 \u00b1 1.7 \u00d7 10\u22124, p=1.9 \u00d7 10\u221212) and white (\u20135.1 \u00d7 10\u22124 \u00b1 1.2 \u00d7 10\u22124, p=2.1 \u00d7 10\u22125) matter jointly account for the lower brain volumes associated with greater alcohol intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "c6a63e3c-9677-4a6c-9d63-ae04b8fbbd4d",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C37",
+      "claim": "Lower volumes per doubling of alcohol consumption of white matter were \u20135.1 \u00d7 10\u22124 \u00b1 1.2 \u00d7 10\u22124 (p=2.1 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Lower volumes per doubling of alcohol consumption of both total grey (\u20131.2 \u00d7 10\u22123 \u00b1 1.7 \u00d7 10\u22124, p=1.9 \u00d7 10\u221212) and white (\u20135.1 \u00d7 10\u22124 \u00b1 1.2 \u00d7 10\u22124, p=2.1 \u00d7 10\u22125) matter jointly account for the lower brain volumes associated with greater alcohol intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "26fcdec5-b4c4-4b21-a0c1-f0f9b8cceb08",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C38",
+      "claim": "Voxel-wise parametric associations of alcohol intake with brain grey matter showed greatest negative associations with regions in the cingulate and orbital frontal cortices, the bilateral insula, and thalami.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploration of voxel-wise parametric associations of the log2-transformed g/d alcohol intake with brain grey matter showed greatest negative associations with regions in the cingulate and orbital frontal cortices, the bilateral insula, and thalami (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from voxel-wise analysis with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "b09fddc0-8307-4aa2-8b8e-7f2f6c7ca12b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C39",
+      "claim": "There were no positive correlations between alcohol and grey matter volumes for any of the brain regions after family-wise error correction.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no positive correlations between alcohol and grey matter volumes for any of the brain regions after family-wise error correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding from the study's voxel-wise analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "3212ff9e-70fa-41bf-88be-a89df3e0132f",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C40",
+      "claim": "The bilateral corticospinal tracts showed increased fractional anisotropy with greater alcohol intake (standardised coefficient, left, 0.013 \u00b1 0.003 per doubling of alcohol consumption, p=1.0 \u00d7 10\u22124; right, 0.011 \u00b1 0.003, p=4.20 \u00d7 10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "The bilateral corticospinal tracts showed increased fractional anisotropy with greater alcohol intake (standardised coefficient, left, 0.013 \u00b1 0.003 per doubling of alcohol consumption, p=1.0 \u00d7 10\u22124; right, 0.011 \u00b1 0.003, p=4.20 \u00d7 10\u22124).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding from white matter microstructure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "45488ca1-41a2-48e6-be73-9f7aa5d09bd2",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C41",
+      "claim": "Increased fractional anisotropy in corticospinal tracts was associated with lower orientation dispersion (standardised coefficient, left, \u20130.013 \u00b1 0.003, p=8.1 \u00d7 10\u22124; right, \u20130.013 \u00b1 0.003, p=1.4 \u00d7 10\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "This was associated with lower orientation dispersion (standardised coefficient, left, \u20130.013 \u00b1 0.003, p=8.1 \u00d7 10\u22124; right, \u20130.013 \u00b1 0.003, p=1.4 \u00d7 10\u22123), suggesting greater fibre coherence or a relatively reduced density of orthogonally crossing white matter tracts (Zhang et al., 2012; Mollink et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding with interpretation cited from Zhang et al., 2012; Mollink et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "aa9788b9-bf2b-4fe3-bb05-dcea4cd10cc4",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C42",
+      "claim": "Lower orientation dispersion suggests greater fibre coherence or a relatively reduced density of orthogonally crossing white matter tracts.",
+      "claim_type": "EXPLICIT",
+      "source": "This was associated with lower orientation dispersion (standardised coefficient, left, \u20130.013 \u00b1 0.003, p=8.1 \u00d7 10\u22124; right, \u20130.013 \u00b1 0.003, p=1.4 \u00d7 10\u22123), suggesting greater fibre coherence or a relatively reduced density of orthogonally crossing white matter tracts (Zhang et al., 2012; Mollink et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings cited from Zhang et al., 2012; Mollink et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "98c3cd14-e4c2-45ce-8fc6-0e5e2f44d80c",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C43",
+      "claim": "Left ventricular mass index was lower with greater age.",
+      "claim_type": "EXPLICIT",
+      "source": "Left ventricular mass index and the left atrial and left and right ventricular end diastolic volume indices were lower with greater age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from age-related analysis of cardiac IDPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "54e2b18b-d740-4b44-a465-19b6961e6bb7",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C44",
+      "claim": "Left atrial volume index was lower with greater age.",
+      "claim_type": "EXPLICIT",
+      "source": "Left ventricular mass index and the left atrial and left and right ventricular end diastolic volume indices were lower with greater age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from age-related analysis of cardiac IDPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "d3658384-613b-4f33-a647-1fee75a75002",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C45",
+      "claim": "Left and right ventricular end diastolic volume indices were lower with greater age.",
+      "claim_type": "EXPLICIT",
+      "source": "Left ventricular mass index and the left atrial and left and right ventricular end diastolic volume indices were lower with greater age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from age-related analysis of cardiac IDPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "e71eb94c-9b93-48b1-910e-547297f1e1d7",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C46",
+      "claim": "Right and left ventricular ejection fractions both were modestly greater with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Right and left ventricular ejection fractions both were modestly greater with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from age-related analysis of cardiac IDPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "e7012972-c64e-428a-9f49-e3d695e49b71",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C47",
+      "claim": "There was a small relative increase in the right atrial volume index with age.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a small relative increase in the right atrial volume index with age (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from age-related analysis with reference to Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "04403f12-e9d2-435f-8e98-6bf0fe20cf5e",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C48",
+      "claim": "Log2-transformed alcohol consumption was associated directly with measures of left ventricular and atrial mass and volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Log2-transformed alcohol consumption was associated directly with measures of left ventricular and atrial mass and volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from alcohol consumption analysis of cardiac IDPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "e46af0ca-117b-4b3f-8f65-d2ed085460b4",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C49",
+      "claim": "The effects of alcohol on the cardiac IDPs were largely in opposite direction to those for age.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of alcohol on the cardiac IDPs were largely in opposite direction to those for age (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative observation from the study's data analysis with reference to Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "497bfd24-4533-473b-886b-521455629e46",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C50",
+      "claim": "Ascending and descending aortic area indices increased with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Ascending and descending aortic area indices increased with age, while distensibility decreased; log2-transformed alcohol consumption associations for the aorta showed the same directions of effect as age (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from age-related analysis with reference to Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "695d70b9-464c-4da5-a3f0-86221eefa4c3",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C51",
+      "claim": "Aortic distensibility decreased with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Ascending and descending aortic area indices increased with age, while distensibility decreased; log2-transformed alcohol consumption associations for the aorta showed the same directions of effect as age (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from age-related analysis with reference to Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "1dea5c14-e32a-46bd-a64b-d52b7887b5be",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C52",
+      "claim": "Log2-transformed alcohol consumption associations for the aorta showed the same directions of effect as age.",
+      "claim_type": "EXPLICIT",
+      "source": "Ascending and descending aortic area indices increased with age, while distensibility decreased; log2-transformed alcohol consumption associations for the aorta showed the same directions of effect as age (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative observation from the study's data analysis with reference to Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "4de2467e-e62e-45d4-980d-3f991b183a6f",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C53",
+      "claim": "The associations with alcohol appeared linear-log with no deviation as indicated by the partial residual plots.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations with alcohol appeared linear-log with no deviation as indicated by the partial residual plots (Figure 2d\u2013n).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from diagnostic plots in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "94614295-5dfc-47b1-a178-cd322963757e",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C54",
+      "claim": "There was no evidence for U-shaped associations for any of the aortic or cardiac IDPs.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence for U-shaped associations, i.e., higher values at both the lower and higher ends of the alcohol intake distribution, for any of the aortic or cardiac IDPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Negative finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "c73be6d5-4689-4548-820c-16399fd80ccc",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C55",
+      "claim": "No age-related differences in liver fat were observed after adjusting for alcohol consumption and other relevant variables (0.015 \u00b1 0.01, p=0.14).",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe age-related differences in liver fat after adjusting for alcohol consumption and other relevant variables (0.015 \u00b1 0.01, p=0.14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "2a70bf9a-2161-4781-941b-2ecea84aa05c",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C56",
+      "claim": "There was an increase of liver fat per doubling of alcohol consumption (0.15 \u00b1 0.06, p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "There was an increase of liver fat per doubling of alcohol consumption (0.15 \u00b1 0.06, p=0.006), with no deviation from linear-log association observed (Figure 2o).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from the study's data analysis with reference to Figure 2o.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "b6b0de6f-6e30-4694-bd84-91a455e3a773",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C57",
+      "claim": "Increasing alcohol intake was associated with reduced brain grey matter volume.",
+      "claim_type": "EXPLICIT",
+      "source": "In this large population-based study of the effects of alcohol consumption on different organs, we found that increasing alcohol intake was associated with reduced brain grey matter volume, increased left ventricular mass and volume and aortic area index, and reduced descending aortic distensibility and increased liver fat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "7ab7c273-95e8-45b0-b849-96cd80655525",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C58",
+      "claim": "Increasing alcohol intake was associated with increased left ventricular mass and volume.",
+      "claim_type": "EXPLICIT",
+      "source": "In this large population-based study of the effects of alcohol consumption on different organs, we found that increasing alcohol intake was associated with reduced brain grey matter volume, increased left ventricular mass and volume and aortic area index, and reduced descending aortic distensibility and increased liver fat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "31ee4d88-b3e9-4014-8e08-84e383063c8b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C59",
+      "claim": "Increasing alcohol intake was associated with increased aortic area index.",
+      "claim_type": "EXPLICIT",
+      "source": "In this large population-based study of the effects of alcohol consumption on different organs, we found that increasing alcohol intake was associated with reduced brain grey matter volume, increased left ventricular mass and volume and aortic area index, and reduced descending aortic distensibility and increased liver fat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "2f4de1c8-96f2-4c57-809c-438de9e47587",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C60",
+      "claim": "Increasing alcohol intake was associated with reduced descending aortic distensibility.",
+      "claim_type": "EXPLICIT",
+      "source": "In this large population-based study of the effects of alcohol consumption on different organs, we found that increasing alcohol intake was associated with reduced brain grey matter volume, increased left ventricular mass and volume and aortic area index, and reduced descending aortic distensibility and increased liver fat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "2c3a8379-4411-4ada-850d-e35866ff05a0",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C61",
+      "claim": "Increasing alcohol intake was associated with increased liver fat.",
+      "claim_type": "EXPLICIT",
+      "source": "In this large population-based study of the effects of alcohol consumption on different organs, we found that increasing alcohol intake was associated with reduced brain grey matter volume, increased left ventricular mass and volume and aortic area index, and reduced descending aortic distensibility and increased liver fat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "9c95b4ff-e303-4516-b43e-c684f3e4fd96",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C62",
+      "claim": "There was no evidence against a monotonic increase across the range of alcohol intakes.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence against a monotonic increase across the range of alcohol intakes, indicating potentially pathological effects of alcohol on the brain, heart, and aorta across the full range of alcohol intake in the population, without evidence for a threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "933e3354-ec06-4bb9-a158-290053437a4c",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C63",
+      "claim": "The findings indicate potentially pathological effects of alcohol on the brain, heart, and aorta across the full range of alcohol intake in the population, without evidence for a threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence against a monotonic increase across the range of alcohol intakes, indicating potentially pathological effects of alcohol on the brain, heart, and aorta across the full range of alcohol intake in the population, without evidence for a threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "51e820f8-8fb4-4dd2-be30-9055bcb65aff",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C64",
+      "claim": "In the United Kingdom, the Chief Medical Officers' guideline for both men and women suggests that avoiding more than 14 units/week (corresponding to 16 g/d alcohol) on a regular basis maintains health risks at a low level.",
+      "claim_type": "EXPLICIT",
+      "source": "In the United Kingdom, the Chief Medical Officers' guideline for both men and women suggests that avoiding more than 14 units/week (corresponding to 16 g/d alcohol) on a regular basis maintains health risks at a low level (UK Chief Medical Officer's, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from UK Chief Medical Officer's guidelines, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "97aa7a21-ca18-43da-94a9-1dbb2a29ea00",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C65",
+      "claim": "In the United States, the suggested threshold is \u22642 drinks/day (~28 g/d) for men and \u22641 drink/day (~14 g/d) for women.",
+      "claim_type": "EXPLICIT",
+      "source": "In the United States, the suggested threshold is \u22642 drinks/day (~28 g/d) for men and \u22641 drink/day (~14 g/d) for women (United States Department of Health and Human Services, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from United States Department of Health and Human Services, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "a65e2730-288c-49c9-98f5-2a9008a011bd",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C66",
+      "claim": "Excess mortality was observed above around 100 g alcohol intake per week (14.3 g/d).",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent meta-analysis, excess mortality was observed above around 100 g alcohol intake per week (14.3 g/d), but with reduced incidence of myocardial infarction (Wood et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Wood et al., 2018 meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "7b5c624a-2597-4483-aab7-9ac20bea7799",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C67",
+      "claim": "Reduced incidence of myocardial infarction was observed with moderate alcohol intake.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent meta-analysis, excess mortality was observed above around 100 g alcohol intake per week (14.3 g/d), but with reduced incidence of myocardial infarction (Wood et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Wood et al., 2018 meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "0b9b1239-1b5e-4fb0-b24f-afe7640d5ec3",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C68",
+      "claim": "Alcohol consumption below current recommended guidelines worldwide is associated with pathological structural and functional changes in brain, heart, aorta, and liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that alcohol consumption below this threshold and below the currently recommended guidelines worldwide is associated with pathological structural and functional changes in brain, heart, aorta, and liver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "123b2677-cce3-4548-a2b6-e678e4ce5657",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C69",
+      "claim": "Excessive alcohol use is associated with abnormal development of the brain grey matter in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research on structural and functional changes in the brain has indicated that excessive alcohol use is associated with abnormal development of the brain grey matter in animals (Cosa et al., 2017) and humans (Heikkinen et al., 2017), but the studies were small and underpowered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Cosa et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "11945f96-25ba-45fd-979d-19f6e1676afd",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C70",
+      "claim": "Excessive alcohol use is associated with abnormal development of the brain grey matter in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research on structural and functional changes in the brain has indicated that excessive alcohol use is associated with abnormal development of the brain grey matter in animals (Cosa et al., 2017) and humans (Heikkinen et al., 2017), but the studies were small and underpowered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Heikkinen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "3883c1b0-e08d-4d34-a200-8d42c4c41815",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C71",
+      "claim": "Previous studies on brain grey matter and alcohol were small and underpowered.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research on structural and functional changes in the brain has indicated that excessive alcohol use is associated with abnormal development of the brain grey matter in animals (Cosa et al., 2017) and humans (Heikkinen et al., 2017), but the studies were small and underpowered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Critical assessment of prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "8f9b90c5-bb32-4e9a-af72-37b00638532b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C72",
+      "claim": "Doubling of alcohol consumption (e.g., from 10 to 20 g/d) was associated with over half the brain volume reduction attributed to a year of aging in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the effects appears to be meaningful: doubling of alcohol consumption (e.g., from 10 to 20 g/d) was associated with over half the brain volume reduction attributed to a year of aging in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative interpretation of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "950c3e3a-2329-45f1-9898-b9ed15d91fa1",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C73",
+      "claim": "There is a possible relationship between alcohol consumption and increased susceptibility to age-related brain pathologies and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a possible relationship between alcohol consumption and increased susceptibility to age-related brain pathologies and disease, consistent with our recent report of a genetic correlation between alcohol consumption and neuropsychiatric disease (Evangelou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference with citation to Evangelou et al., 2019.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "f2b80f69-9b61-4f8b-8b25-9f6833b4c426",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C74",
+      "claim": "There is a genetic correlation between alcohol consumption and neuropsychiatric disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a possible relationship between alcohol consumption and increased susceptibility to age-related brain pathologies and disease, consistent with our recent report of a genetic correlation between alcohol consumption and neuropsychiatric disease (Evangelou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Evangelou et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "f1419fd8-5226-4a45-8da7-0890a2378497",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C75",
+      "claim": "The effects of alcohol consumption on the brain appeared to be relatively generalised with a reduction in both white and grey matter volumes with greater alcohol consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of alcohol consumption on the brain appeared to be relatively generalised with a reduction in both white and grey matter volumes with greater alcohol consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary interpretation of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "221614a9-a2bb-4020-b91b-ec878a90f893",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C76",
+      "claim": "Alcohol intake has previously been reported to be associated with reduced grey matter volumes in specific areas of the brain including the hippocampus and the inferior-medial frontal and anterior cingulate cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Alcohol intake has previously been reported to be associated with reduced grey matter volumes in specific areas of the brain including the hippocampus and the inferior-medial frontal and anterior cingulate cortices (Topiwala et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Topiwala et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "a5960c88-a6b9-4577-86a0-24e7899c5d89",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C77",
+      "claim": "The voxel wide-analysis showed relatively greater associations of alcohol consumption with lower cingulate volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our voxel wide-analysis also showed relatively greater associations of alcohol consumption with lower cingulate volumes and provides new evidence for similar directions of association within the orbital frontal cortex, the bilateral insula, and the thalami.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the study's voxel-wise analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "db6c4f8e-d5de-4503-9d85-45eda3fff0c5",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C78",
+      "claim": "The voxel wide-analysis provides new evidence for associations of alcohol consumption with lower volumes within the orbital frontal cortex, the bilateral insula, and the thalami.",
+      "claim_type": "EXPLICIT",
+      "source": "Our voxel wide-analysis also showed relatively greater associations of alcohol consumption with lower cingulate volumes and provides new evidence for similar directions of association within the orbital frontal cortex, the bilateral insula, and the thalami.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the study's voxel-wise analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "4244f768-f3b1-4a63-9d37-c902f52d6417",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C79",
+      "claim": "The lack of consensus in the literature on white matter effects may in part reflect both study power and the potential complexity of changes in the macroscopic MRI measures of brain microstructure.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of consensus in the literature may in part reflect both study power and the potential complexity of changes in the macroscopic MRI measures of brain microstructure (Ferizi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation with citation to Ferizi et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "9a25d406-aebe-4b98-8226-3b6301cc8230",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C80",
+      "claim": "The ratio of variance to effect was larger for white matter than grey matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study, the largest to date, found that the ratio of variance to effect was larger for white matter than grey matter, highlighting the need for larger study sizes to estimate volume differences in white matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "30edd10c-458c-4d89-8d2d-311a1027d582",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C81",
+      "claim": "Larger study sizes are needed to estimate volume differences in white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study, the largest to date, found that the ratio of variance to effect was larger for white matter than grey matter, highlighting the need for larger study sizes to estimate volume differences in white matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "35f98605-2f06-4c37-9c54-7ae0024b1358",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C82",
+      "claim": "The observed fractional anisotropy changes reflect lower densities in major axonal tracts crossing the corticospinal tracts rather than differences in the structures of corticospinal tracts themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have no reason to hypothesise adaptive plasticity with an increased density of descending motor neurons (one interpretation of increased fractional anisotropy) (Mole et al., 2016), we interpret these observations as reflecting not differences in the structures of corticospinal tracts, but lower densities in major axonal tracts crossing them (e.g., the cingulum bundle and superior longitudinal fasciculus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings with citation to Mole et al., 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "08fb394d-7959-4648-a530-fc0d7d889c83",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C83",
+      "claim": "The interpretation of fractional anisotropy changes is broadly consistent with the lower grey matter volumes in associated cortical regions (e.g., the cingulate and anterior prefrontal cortices) reported here and previously with greater alcohol consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is broadly consistent with the lower grey matter volumes in associated cortical regions (e.g., the cingulate and anterior prefrontal cortices) reported here and previously with greater alcohol consumption (Topiwala et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference connecting current findings with prior literature cited from Topiwala et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "447c7c00-e9b9-495f-882b-a74172f28473",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C84",
+      "claim": "A similar 'paradoxical' difference in fractional anisotropy in the context of decreased density of crossing fibre tracts distinguishes people with mild cognitive impairment who progress most rapidly to Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar 'paradoxical' difference in fractional anisotropy in the context of decreased density of crossing fibre tracts distinguishes people with mild cognitive impairment who progress most rapidly to Alzheimer's disease (Douaud et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Douaud et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "e6d1f0eb-1e82-475f-96ce-4ae2c21a8aba",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C85",
+      "claim": "The findings are consistent with previous echocardiographic studies that showed association between increasing alcohol intake and greater left ventricular mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with previous echocardiographic studies that showed association between increasing alcohol intake and greater left ventricular mass (Gon\u00e7alves et al., 2015a; G\u00e9mes et al., 2018; Manolio et al., 1991) (although a smaller recent MRI study, assessing effects of light-to-moderate alcohol consumption, reported similar left ventricular mass in drinkers compared to non-drinkers; Voskoboinik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with prior literature cited from multiple sources (Gon\u00e7alves et al., 2015a; G\u00e9mes et al., 2018; Manolio et al., 1991; Voskoboinik et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "43a283e3-beba-40f0-aac4-440de8a87e4b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C86",
+      "claim": "A smaller recent MRI study, assessing effects of light-to-moderate alcohol consumption, reported similar left ventricular mass in drinkers compared to non-drinkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with previous echocardiographic studies that showed association between increasing alcohol intake and greater left ventricular mass (Gon\u00e7alves et al., 2015a; G\u00e9mes et al., 2018; Manolio et al., 1991) (although a smaller recent MRI study, assessing effects of light-to-moderate alcohol consumption, reported similar left ventricular mass in drinkers compared to non-drinkers; Voskoboinik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Voskoboinik et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "cd1e87ea-bac6-4d2e-a26d-89b27da2bfb8",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C87",
+      "claim": "Left ventricular mass is a strong prognostic factor for incidence of cardiovascular disease and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Left ventricular mass is a strong prognostic factor for incidence of cardiovascular disease and mortality (Levy et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Levy et al., 1990.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "61918250-098d-4c5f-abef-eda66c639c55",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C88",
+      "claim": "Greater atrial indices with higher alcohol consumption have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater atrial indices with higher alcohol consumption have also been reported (Gon\u00e7alves et al., 2015a); atrial enlargement can be considered a risk factor for several adverse cardiovascular outcomes (Benjamin et al., 1995) and is associated with increased risk of heart failure (Gottdiener et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Gon\u00e7alves et al., 2015a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "5c8812ab-a81b-468c-8b65-70186e028926",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C89",
+      "claim": "Atrial enlargement can be considered a risk factor for several adverse cardiovascular outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater atrial indices with higher alcohol consumption have also been reported (Gon\u00e7alves et al., 2015a); atrial enlargement can be considered a risk factor for several adverse cardiovascular outcomes (Benjamin et al., 1995) and is associated with increased risk of heart failure (Gottdiener et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Benjamin et al., 1995.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "18f35769-2d0a-4941-9e01-4b283e5d67e6",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C90",
+      "claim": "Atrial enlargement is associated with increased risk of heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater atrial indices with higher alcohol consumption have also been reported (Gon\u00e7alves et al., 2015a); atrial enlargement can be considered a risk factor for several adverse cardiovascular outcomes (Benjamin et al., 1995) and is associated with increased risk of heart failure (Gottdiener et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Gottdiener et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "0eda18af-e97e-461d-b3f5-8c385e957f2c",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C91",
+      "claim": "Aortic changes may contribute to greater risks of cardiovascular disease and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes may also contribute to greater risks of cardiovascular disease and mortality (Erbel and Eggebrecht, 2006; Redheuil et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Erbel and Eggebrecht, 2006; Redheuil et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "79e048af-1e8d-468c-9c24-60277039bee0",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C92",
+      "claim": "A number of studies have suggested a 'U'-shaped association between alcohol drinking and cardiovascular outcomes, even after exclusion of ex-drinkers from the non-drinker category.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have suggested a 'U'-shaped association between alcohol drinking and cardiovascular outcomes, even after exclusion of ex-drinkers from the non-drinker category (Marmot et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Marmot et al., 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "d05662d8-9654-4384-bf67-a3844b30c776",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C93",
+      "claim": "The diagnostic plots for the relationship between alcohol and cardiovascular measures did not provide evidence of deviation from a monotonic association.",
+      "claim_type": "EXPLICIT",
+      "source": "Our diagnostic plots for the relationship between alcohol and cardiovascular measures did not provide evidence of deviation from a monotonic association and therefore did not support a 'U'-shaped association for these measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the study's diagnostic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "ae4c79db-6691-42bf-bec3-9668399fc22a",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C94",
+      "claim": "The results point to pathological effects of regular alcohol intake on the heart and major vessels occurring below current consumption guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, our results point to pathological effects of regular alcohol intake on the heart and major vessels occurring below current consumption guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "1aef5d20-bb65-44b8-898f-dac6a7db99cc",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C95",
+      "claim": "Excessive alcohol intake is a well-known risk factor for increased liver fat.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive alcohol intake is a well-known risk factor for increased liver fat (Bellentani et al., 1997), but the evidence regarding low-to-moderate alcohol consumption has been inconclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bellentani et al., 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "ba28fe1f-d7d2-4756-a8b5-32bcd3e2a37b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C96",
+      "claim": "The evidence regarding low-to-moderate alcohol consumption and liver fat has been inconclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive alcohol intake is a well-known risk factor for increased liver fat (Bellentani et al., 1997), but the evidence regarding low-to-moderate alcohol consumption has been inconclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "295a9c9f-b59c-45cf-958d-91dc4ec55e89",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C97",
+      "claim": "Several prospective studies have reported a lower prevalence or risk of fatty liver for low-to-moderate compared to excessive alcohol consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Several prospective studies have reported a lower prevalence or risk of fatty liver (Moriya et al., 2015; Hashimoto et al., 2015; Yamada et al., 2010) for low-to-moderate compared to excessive alcohol consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple sources (Moriya et al., 2015; Hashimoto et al., 2015; Yamada et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "d732faaf-e53f-49ed-8e50-65110d9a86fe",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C98",
+      "claim": "A randomised trial showed that even moderate consumption of red wine for three months increases liver fat.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a randomised trial showed that even moderate consumption of red wine for three months increases liver fat (Kechagias et al., 2011; van Eekelen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Kechagias et al., 2011; van Eekelen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "97fb74e9-85f5-4adc-abde-9ff97f74ba4b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C99",
+      "claim": "The results on liver fat are consistent with the randomised trial showing increased liver fat with moderate alcohol consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "af739627-0a67-42ca-9453-f2e5280b0ed4",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C100",
+      "claim": "Alcohol could explain a major proportion of the population variance in liver fat.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the association with alcohol (0.15% per doubling of alcohol consumption) suggests that alcohol could explain a major proportion of the population variance in liver fat (mean liver fat density percentages in a larger UK Biobank sample ranged between a mean of 1.34\u20135.71%) (Linge et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study's findings with citation to Linge et al., 2019 for population variance data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "68a571df-d757-4fcc-8a99-9043549b668b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C101",
+      "claim": "Mean liver fat density percentages in a larger UK Biobank sample ranged between a mean of 1.34\u20135.71%.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the association with alcohol (0.15% per doubling of alcohol consumption) suggests that alcohol could explain a major proportion of the population variance in liver fat (mean liver fat density percentages in a larger UK Biobank sample ranged between a mean of 1.34\u20135.71%) (Linge et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Linge et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "a5afa028-e009-4c32-9d7c-13fdc7da7f29",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C102",
+      "claim": "The results highlight the multi-organ effects of low and moderate levels of alcohol consumption in late middle-aged people.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results highlight the multi-organ effects of low and moderate levels of alcohol consumption in late middle-aged people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary interpretation of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "1144791c-e335-4f2d-befa-65594f8d9b86",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C103",
+      "claim": "The toxic effect of alcohol or its metabolites can cause myocardial damage that leads to increased rates of cardiomyopathies, heart failure, and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the toxic effect of alcohol or its metabolites can cause myocardial damage that leads to increased rates of cardiomyopathies, heart failure, and mortality (Wood et al., 2018; Gon\u00e7alves et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Wood et al., 2018; Gon\u00e7alves et al., 2015b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "148725e8-dbaf-4501-804b-37fade289ac7",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C104",
+      "claim": "Deleterious effects of alcohol on cell function and survival and consequent organ injury may affect oxidative stress, inflammation, aberrant post-translational modifications of proteins, dysregulation in lipid metabolism, upregulation of catabolic processes and signal transduction pathways, and epigenetic changes involving DNA methylation impairments.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleterious effects of alcohol on cell function and survival and consequent organ injury may affect a number of biological processes, e.g., oxidative stress, inflammation, aberrant post-translational modifications of proteins, dysregulation in lipid metabolism, upregulation of catabolic processes and signal transduction pathways, and epigenetic changes involving DNA methylation impairments (Souza-Smith et al., 2016; Osna and Kharbanda, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Souza-Smith et al., 2016; Osna and Kharbanda, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "4d157207-9e09-498f-a205-15a65e10dc78",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C105",
+      "claim": "Alcohol is metabolised primarily in the liver, where it increases fatty acid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, alcohol is metabolised primarily in the liver, where it increases fatty acid synthesis (Cederbaum, 2012) and leads to metabolic abnormalities that independently contribute to cardiovascular and brain pathologies (Suzuki et al., 2019; Wilson et al., 2005; Cai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Cederbaum, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "ef0a3094-02dc-4180-900e-90ad7136d4b9",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C106",
+      "claim": "Alcohol metabolism leads to metabolic abnormalities that independently contribute to cardiovascular and brain pathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, alcohol is metabolised primarily in the liver, where it increases fatty acid synthesis (Cederbaum, 2012) and leads to metabolic abnormalities that independently contribute to cardiovascular and brain pathologies (Suzuki et al., 2019; Wilson et al., 2005; Cai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Suzuki et al., 2019; Wilson et al., 2005; Cai et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "ffdb69e2-778c-4f8d-b8f8-bbafa6e34398",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C107",
+      "claim": "The observational design of UK Biobank has inherent limitations that preclude establishing causal relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "The observational design of UK Biobank has inherent limitations that preclude establishing causal relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of study limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "426ab585-3401-4045-b34e-e41b183710ee",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C108",
+      "claim": "UK Biobank participants are relatively healthy compared to the general UK population and most are of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the participants are relative healthy compared to the general UK population and most are of European ancestry (Fry et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Fry et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "859ce303-3d0d-45ae-be54-3b88dd7fccaf",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C109",
+      "claim": "The extent to which results are generalisable to other populations or populations of various ethnic groups needs to be explored.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent to which results are generalisable to other populations or populations of various ethnic groups needs to be explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of study limitations and need for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "e511a238-2813-410c-82cf-cdd7203c719f",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C110",
+      "claim": "The study relied on self-reported alcohol intake information obtained on a single occasion at the baseline assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "We relied on self-reported alcohol intake information obtained on a single occasion at the baseline assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study methodology and its limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "a0fc7c67-b016-4f09-8a69-3bf9d1ce2c6a",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C111",
+      "claim": "Self-reported alcohol intake is subject to misreporting and recall bias, especially among heavy drinkers who may under-report their intake.",
+      "claim_type": "EXPLICIT",
+      "source": "This is subject to misreporting and recall bias, especially among heavy drinkers who may under-report their intake (Boniface et al., 2014; Greenfield and Kerr, 2008) and may have led to bias in the estimation of the effects of alcohol intake on the outcomes under study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Boniface et al., 2014; Greenfield and Kerr, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "eaf20d1a-6bc9-4a53-bae5-7c6d68e0a2bd",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C112",
+      "claim": "The imaging data were only available at one point in time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the imaging data were also only available at one point in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of study limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "985ef9aa-8ac5-429f-9b23-cc64d1c77e06",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C113",
+      "claim": "Future longitudinal analysis will enable effects of low or moderate alcohol intake on anatomical and structural changes of the various organs to be measured over time directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Future longitudinal analysis will enable effects of low or moderate alcohol intake on anatomical and structural changes of the various organs to be measured over time directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "8453a909-f3a8-4eae-bf14-90842a4a4ed5",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C114",
+      "claim": "The findings indicate that pathological changes in major organ systems may occur at even small amounts of daily alcohol intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that these effects are monotonic (linear-log), increasing across the full range of reported alcohol intakes in this large population sample, with no apparent threshold. Our results therefore indicate that pathological changes in major organ systems may occur at even small amounts of daily alcohol intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "cf4b7704-e684-41f3-a4d7-6cf97317f7b1",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C115",
+      "claim": "The findings have important implications for governmental and public health policies concerning 'safe' levels of alcohol drinking in the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "This has important implications for governmental and public health policies concerning 'safe' levels of alcohol drinking in the general population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about policy implications based on study findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "56b905d5-d444-45a9-9f30-952e69acccd0",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C116",
+      "claim": "Current guidelines on alcohol drinking may need to be revisited.",
+      "claim_type": "EXPLICIT",
+      "source": "Further research is needed, but we believe current guidelines on alcohol drinking may need to be revisited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative recommendation based on study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "36651df0-9009-47de-ab26-9bebd6f6240d",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C117",
+      "claim": "Median alcohol intakes among drinkers were approximately 20.9 g/d for men and approximately 10.7 g/d for women.",
+      "claim_type": "EXPLICIT",
+      "source": "For the five subsets in our analysis, median alcohol intakes among these drinkers were similar: ~20.9 g/d (i.e., just over two 10 g drinking units, where 125 ml of 12.5% wine is 1.25 drinking units) for men and ~10.7 g/d for women with 25th and 75th centiles ~10.3 g/d and 35.8 g/d for men and ~3.6 g/d and 17.9 g/d for women (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "9f17377b-5192-4597-b86c-0ff751522dc0",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C118",
+      "claim": "The 25th and 75th centiles for alcohol intake were approximately 10.3 g/d and 35.8 g/d for men and approximately 3.6 g/d and 17.9 g/d for women.",
+      "claim_type": "EXPLICIT",
+      "source": "For the five subsets in our analysis, median alcohol intakes among these drinkers were similar: ~20.9 g/d (i.e., just over two 10 g drinking units, where 125 ml of 12.5% wine is 1.25 drinking units) for men and ~10.7 g/d for women with 25th and 75th centiles ~10.3 g/d and 35.8 g/d for men and ~3.6 g/d and 17.9 g/d for women (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "2055bdd4-d63c-4451-b54f-c7ea6fc69fa0",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "claim_id": "C119",
+      "claim": "Non-drinkers and those with self-reported brain, cardiac, and/or aortic diseases were excluded from the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-drinkers and those with self-reported brain, cardiac, and/or aortic diseases were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Alcohol consumption shows a monotonic, dose-dependent association with reduced brain volume across the full range of intake. Specifically, doubling alcohol consumption is associated with 0.17% lower normalized brain volume (p=3.0\u00d710\u207b\u00b9\u2074), with reductions in both grey matter (\u22121.2\u00d710\u207b\u00b3, p=1.9\u00d710\u207b\u00b9\u00b2) and white matter (\u22125.1\u00d710\u207b\u2074, p=2.1\u00d710\u207b\u2075). Voxel-wise analysis identified greatest associations in the cingulate, orbital frontal cortices, bilateral insula, and thalami, with no evidence of a safe threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C35-C37 provide statistically significant, highly powered associations (p<10\u207b\u00b9\u00b2) with appropriate adjustments for confounders. The monotonic relationship is confirmed by partial residual plots (C53) and voxel-wise analysis (C38-C39). Sample sizes (N=10,143 for grey matter, N=9,053 for white matter) are adequate. However, the cross-sectional design (C112) and reliance on self-reported alcohol intake (C110-C111) limit causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "8c799963-173a-4da3-8040-8a806cb0022b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "White matter microstructure analysis revealed increased fractional anisotropy in bilateral corticospinal tracts with higher alcohol intake (left: 0.013\u00b10.003, p=1.0\u00d710\u207b\u2074; right: 0.011\u00b10.003, p=4.2\u00d710\u207b\u2074), associated with lower orientation dispersion. The authors interpret this as reflecting reduced density of crossing fiber tracts rather than adaptive changes in corticospinal tracts themselves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the statistical associations are significant (C40-C41), the interpretation (C82) is speculative and relies on indirect reasoning. The authors acknowledge higher variance-to-effect ratios for white matter (C80), suggesting these findings may be less robust than grey matter results. The interpretation contradicts typical expectations for fractional anisotropy increases, and alternative explanations are not rigorously excluded. The consistency with grey matter findings (C83) provides some support but does not validate the mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "f0627707-b6da-42b0-ae6c-b460598e6a29",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Alcohol consumption is associated with increased left ventricular mass index (0.36\u00b10.04 per doubling, p=8.5\u00d710\u207b\u00b2\u00b2), increased left ventricular end-diastolic volume index (0.61\u00b10.07, p=4.1\u00d710\u207b\u00b9\u2077), and increased left and right atrial volume indices. These effects are in the opposite direction to age-related changes and show monotonic associations without evidence of U-shaped relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C48 are supported by highly significant statistical associations (p<10\u207b\u00b9\u2077) in a large sample (N=11,821). The monotonic relationship is confirmed by partial residual plots (C53) and absence of U-shaped associations (C54). The comparison with age effects (C43-C49) provides meaningful context. However, the observational design (C107) and cross-sectional nature (C112) preclude causal inference, and the clinical significance of these subclinical changes requires longitudinal validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "6346564d-855d-4166-b080-bf54a8368422",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Alcohol consumption is associated with increased aortic area indices (ascending: 2.64\u00b10.50 mm\u00b2/m\u00b2, p=1.5\u00d710\u207b\u2077; descending: 1.34\u00b10.22 mm\u00b2/m\u00b2, p=2.1\u00d710\u207b\u2079) and reduced descending aortic distensibility (\u22120.02\u00b10.005\u00d710\u207b\u00b3 mmHg\u207b\u00b9, p=7.5\u00d710\u207b\u2074), showing the same direction of effect as aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52, C59-C60 are supported by statistically significant associations in a large sample (N=12,376). The monotonic relationship is confirmed by partial residual plots (C53). The parallel with aging effects (C52) is concerning and well-documented. However, the effect size for descending aortic distensibility is modest, and the clinical significance of these changes at low-to-moderate intake levels is uncertain without longitudinal outcomes data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "05bce88f-e83b-429c-a716-a3220d551b9b",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Liver fat increased by 0.15\u00b10.06% per doubling of alcohol consumption (p=0.006), with no age-related differences observed after adjusting for alcohol. The magnitude suggests alcohol could explain a major proportion of population variance in liver fat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C56 provide a statistically significant association (p=0.006) with appropriate adjustments. The absence of age effects (C55) strengthens the specificity of the alcohol association. However, the sample size for liver imaging is substantially smaller (N=3,649) than other analyses, reducing power. The inference about population variance (C100) is reasonable given the effect size relative to population ranges (C101), but the cross-sectional design limits causal interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "dbe64e78-382a-470e-baaf-21fb9b872df6",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study concludes there is no safe threshold for alcohol consumption, with pathological effects observed across the full range of intake, including below current recommended guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the monotonic associations (C62) support the absence of a threshold effect, the claim of 'no safe threshold' (C7) is an overinterpretation. The study demonstrates structural changes but does not establish these are definitively 'pathological' or clinically meaningful at low intake levels. The cross-sectional design (C107, C112) cannot establish causality or temporal relationships. The term 'toxic effects' (C7) implies harm that is not directly demonstrated. Longitudinal data on clinical outcomes would be needed to support this strong conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "7df4c139-635c-417c-9195-3c82f2279aee",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors suggest that current public health guidelines on alcohol consumption may need to be revisited, as their findings show structural changes below recommended thresholds (UK: 16 g/d; US: 14-28 g/d).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This policy recommendation (C8, C116) is speculative and goes beyond what the data support. While the study demonstrates structural changes at intake levels below guidelines (C64-C65), it does not establish clinical harm or compare risks versus benefits. The observational design (C107) and lack of outcome data preclude definitive policy recommendations. The authors appropriately acknowledge this is speculative (C8: 'may need'), but the strength of the recommendation is not fully justified by the evidence presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "ff78325c-291a-46c0-b68d-78d49571985e",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study utilized UK Biobank imaging data from 10,143 (brain grey matter), 9,053 (brain white matter), 11,821 (heart), 12,376 (aorta), and 3,649 (liver) participants aged 40-69 years, with median alcohol intakes of ~20.9 g/d for men and ~10.7 g/d for women, excluding non-drinkers and those with relevant diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27, C117-C119 accurately describe the study population and sample sizes, which are well-documented in the manuscript and Figure 1. The exclusion criteria (C119) are appropriate for the research question. However, the authors acknowledge important limitations: the population is healthier than the general UK population and predominantly European ancestry (C108), limiting generalizability (C109).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "ac457700-562d-4763-9f70-08b2380c7673",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study employed standardized MRI acquisition protocols (Siemens 3T for brain, 1.5T for cardiac/aortic imaging) with established processing pipelines including CNN-based segmentation for cardiac images and normalization to intracranial volume for brain measures. Alcohol intake was calculated from self-reported questionnaire data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 describe well-established, validated methodologies with appropriate citations. The MRI protocols (C30, C32) and processing methods (C31, C33) are standard for UK Biobank. However, the reliance on self-reported alcohol intake (C29) is a significant limitation, as acknowledged by the authors (C110-C111), particularly regarding potential underreporting by heavy drinkers and recall bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "440b276f-79c3-45ae-98f3-07cf253bba94",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The magnitude of alcohol's effect on brain volume (doubling intake associated with over half the brain volume reduction of one year of aging) suggests a possible relationship with increased susceptibility to age-related brain pathologies, consistent with genetic correlations between alcohol consumption and neuropsychiatric disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The comparative magnitude calculation (C72) is a reasonable way to contextualize effect sizes, but the inference about susceptibility to pathologies (C73) is speculative. The genetic correlation cited (C74) provides some supporting evidence but does not establish a mechanistic link. The cross-sectional design cannot determine whether these structural changes lead to clinical outcomes. This interpretation goes beyond what the data directly support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "a328fba4-48cc-4fb2-bf90-a3651289c8e6",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge key limitations including the observational design precluding causal inference, a relatively healthy and predominantly European ancestry population limiting generalizability, reliance on single-occasion self-reported alcohol intake subject to misreporting, and cross-sectional imaging data. They note future longitudinal analysis is needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C113 appropriately and transparently acknowledge the study's major limitations. The observational design (C107) is a fundamental constraint on causal interpretation. Self-report bias (C111) is particularly concerning for alcohol studies. The cross-sectional nature (C112) prevents assessment of temporal relationships. The call for longitudinal data (C113) is appropriate. These limitations substantially qualify the strength of the conclusions, particularly regarding policy recommendations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on alcohol's known effects on multiple organs, citing established literature on mortality, cardiovascular effects, brain changes, liver damage, and biological mechanisms. The authors note prior studies on brain and cardiac effects were often small, underpowered, or showed conflicting results, particularly for low-to-moderate intake levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C21, C69-C71, C76, C84-C92, C95-C98, C103-C106 appropriately cite and summarize prior literature. The characterization of previous studies as small and underpowered (C71) justifies the current large-scale investigation. The background establishes the scientific context and knowledge gaps. However, these are primarily literature review claims rather than novel findings from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    },
+    {
+      "id": "b93e6c8a-fdb8-4f21-8c7f-2efcdd5677ae",
+      "content_id": "7a3add50-e6fa-48d8-94a0-e7ab1587b4d6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The voxel-wise analysis provides new evidence for alcohol associations with specific brain regions (orbital frontal cortex, bilateral insula, thalami) beyond previously reported areas. The study found no evidence for U-shaped cardiovascular associations, contradicting some prior literature. Results are consistent with a randomized trial showing increased liver fat with moderate wine consumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 describe novel findings from voxel-wise analysis extending prior work (C76). The absence of U-shaped associations (C93) contradicts some prior studies (C92) but is supported by diagnostic plots. The consistency with the randomized trial on liver fat (C98-C99) strengthens confidence in those findings. However, the interpretation that results 'point to pathological effects' (C94) goes beyond what the structural data alone can establish.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:56:44.680774Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5584d92d-1b8b-45df-bfee-d05642d464cf",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "0eee8181-678b-4c3d-9e47-25b6315902c6",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "e5165784-f3f5-45c5-9f4f-c67b8895ab7b",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "b69bc6f2-26ab-48da-bc75-ff99ac745fca",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "c6a63e3c-9677-4a6c-9d63-ae04b8fbbd4d",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "26fcdec5-b4c4-4b21-a0c1-f0f9b8cceb08",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "b09fddc0-8307-4aa2-8b8e-7f2f6c7ca12b",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "4de2467e-e62e-45d4-980d-3f991b183a6f",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "b6b0de6f-6e30-4694-bd84-91a455e3a773",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "9c95b4ff-e303-4516-b43e-c684f3e4fd96",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "f1419fd8-5226-4a45-8da7-0890a2378497",
+      "result_id": "47bcf33c-7ed3-4983-8899-ac9836eb9e31"
+    },
+    {
+      "claim_id": "3212ff9e-70fa-41bf-88be-a89df3e0132f",
+      "result_id": "8c799963-173a-4da3-8040-8a806cb0022b"
+    },
+    {
+      "claim_id": "45488ca1-41a2-48e6-be73-9f7aa5d09bd2",
+      "result_id": "8c799963-173a-4da3-8040-8a806cb0022b"
+    },
+    {
+      "claim_id": "aa9788b9-bf2b-4fe3-bb05-dcea4cd10cc4",
+      "result_id": "8c799963-173a-4da3-8040-8a806cb0022b"
+    },
+    {
+      "claim_id": "9a25d406-aebe-4b98-8226-3b6301cc8230",
+      "result_id": "8c799963-173a-4da3-8040-8a806cb0022b"
+    },
+    {
+      "claim_id": "30edd10c-458c-4d89-8d2d-311a1027d582",
+      "result_id": "8c799963-173a-4da3-8040-8a806cb0022b"
+    },
+    {
+      "claim_id": "35f98605-2f06-4c37-9c54-7ae0024b1358",
+      "result_id": "8c799963-173a-4da3-8040-8a806cb0022b"
+    },
+    {
+      "claim_id": "08fb394d-7959-4648-a530-fc0d7d889c83",
+      "result_id": "8c799963-173a-4da3-8040-8a806cb0022b"
+    },
+    {
+      "claim_id": "6391cc32-6117-408c-ab1a-d897a18d51f9",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "455d623b-fecd-4140-9fb1-cbf538aba81c",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "9961ff3b-b3a8-4fc6-95d0-abb10c56c3db",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "98c3cd14-e4c2-45ce-8fc6-0e5e2f44d80c",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "54e2b18b-d740-4b44-a465-19b6961e6bb7",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "d3658384-613b-4f33-a647-1fee75a75002",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "e71eb94c-9b93-48b1-910e-547297f1e1d7",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "e7012972-c64e-428a-9f49-e3d695e49b71",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "04403f12-e9d2-435f-8e98-6bf0fe20cf5e",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "e46af0ca-117b-4b3f-8f65-d2ed085460b4",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "4de2467e-e62e-45d4-980d-3f991b183a6f",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "94614295-5dfc-47b1-a178-cd322963757e",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "7ab7c273-95e8-45b0-b849-96cd80655525",
+      "result_id": "f0627707-b6da-42b0-ae6c-b460598e6a29"
+    },
+    {
+      "claim_id": "497bfd24-4533-473b-886b-521455629e46",
+      "result_id": "6346564d-855d-4166-b080-bf54a8368422"
+    },
+    {
+      "claim_id": "695d70b9-464c-4da5-a3f0-86221eefa4c3",
+      "result_id": "6346564d-855d-4166-b080-bf54a8368422"
+    },
+    {
+      "claim_id": "1dea5c14-e32a-46bd-a64b-d52b7887b5be",
+      "result_id": "6346564d-855d-4166-b080-bf54a8368422"
+    },
+    {
+      "claim_id": "4de2467e-e62e-45d4-980d-3f991b183a6f",
+      "result_id": "6346564d-855d-4166-b080-bf54a8368422"
+    },
+    {
+      "claim_id": "31ee4d88-b3e9-4014-8e08-84e383063c8b",
+      "result_id": "6346564d-855d-4166-b080-bf54a8368422"
+    },
+    {
+      "claim_id": "2f4de1c8-96f2-4c57-809c-438de9e47587",
+      "result_id": "6346564d-855d-4166-b080-bf54a8368422"
+    },
+    {
+      "claim_id": "ef78c479-9608-4d7c-8964-9cb14d6244af",
+      "result_id": "05bce88f-e83b-429c-a716-a3220d551b9b"
+    },
+    {
+      "claim_id": "c73be6d5-4689-4548-820c-16399fd80ccc",
+      "result_id": "05bce88f-e83b-429c-a716-a3220d551b9b"
+    },
+    {
+      "claim_id": "2a70bf9a-2161-4781-941b-2ecea84aa05c",
+      "result_id": "05bce88f-e83b-429c-a716-a3220d551b9b"
+    },
+    {
+      "claim_id": "2c3a8379-4411-4ada-850d-e35866ff05a0",
+      "result_id": "05bce88f-e83b-429c-a716-a3220d551b9b"
+    },
+    {
+      "claim_id": "af739627-0a67-42ca-9453-f2e5280b0ed4",
+      "result_id": "05bce88f-e83b-429c-a716-a3220d551b9b"
+    },
+    {
+      "claim_id": "d5335f28-bf63-4de9-9f9f-57185115e6ff",
+      "result_id": "dbe64e78-382a-470e-baaf-21fb9b872df6"
+    },
+    {
+      "claim_id": "933e3354-ec06-4bb9-a158-290053437a4c",
+      "result_id": "dbe64e78-382a-470e-baaf-21fb9b872df6"
+    },
+    {
+      "claim_id": "0b9b1239-1b5e-4fb0-b24f-afe7640d5ec3",
+      "result_id": "dbe64e78-382a-470e-baaf-21fb9b872df6"
+    },
+    {
+      "claim_id": "8453a909-f3a8-4eae-bf14-90842a4a4ed5",
+      "result_id": "dbe64e78-382a-470e-baaf-21fb9b872df6"
+    },
+    {
+      "claim_id": "7ef9219f-ac7e-42ef-b8e3-1dc633fb5dc9",
+      "result_id": "7df4c139-635c-417c-9195-3c82f2279aee"
+    },
+    {
+      "claim_id": "51e820f8-8fb4-4dd2-be30-9055bcb65aff",
+      "result_id": "7df4c139-635c-417c-9195-3c82f2279aee"
+    },
+    {
+      "claim_id": "97aa7a21-ca18-43da-94a9-1dbb2a29ea00",
+      "result_id": "7df4c139-635c-417c-9195-3c82f2279aee"
+    },
+    {
+      "claim_id": "a65e2730-288c-49c9-98f5-2a9008a011bd",
+      "result_id": "7df4c139-635c-417c-9195-3c82f2279aee"
+    },
+    {
+      "claim_id": "7b5c624a-2597-4483-aab7-9ac20bea7799",
+      "result_id": "7df4c139-635c-417c-9195-3c82f2279aee"
+    },
+    {
+      "claim_id": "cf4b7704-e684-41f3-a4d7-6cf97317f7b1",
+      "result_id": "7df4c139-635c-417c-9195-3c82f2279aee"
+    },
+    {
+      "claim_id": "56b905d5-d444-45a9-9f30-952e69acccd0",
+      "result_id": "7df4c139-635c-417c-9195-3c82f2279aee"
+    },
+    {
+      "claim_id": "8c47b52f-900a-44e0-842a-8875a17b6729",
+      "result_id": "ff78325c-291a-46c0-b68d-78d49571985e"
+    },
+    {
+      "claim_id": "793508b4-fc71-47ad-b9b9-05d2c3e03b88",
+      "result_id": "ff78325c-291a-46c0-b68d-78d49571985e"
+    },
+    {
+      "claim_id": "492000b2-e33c-4048-9e19-441e920e04d0",
+      "result_id": "ff78325c-291a-46c0-b68d-78d49571985e"
+    },
+    {
+      "claim_id": "1c90f63c-633e-4e0a-bb11-d163684eca20",
+      "result_id": "ff78325c-291a-46c0-b68d-78d49571985e"
+    },
+    {
+      "claim_id": "6a20d877-bc8c-433f-a0ad-80fa5c252ee9",
+      "result_id": "ff78325c-291a-46c0-b68d-78d49571985e"
+    },
+    {
+      "claim_id": "8306ef8a-8781-4c26-9e29-7e209dc05def",
+      "result_id": "ff78325c-291a-46c0-b68d-78d49571985e"
+    },
+    {
+      "claim_id": "36651df0-9009-47de-ab26-9bebd6f6240d",
+      "result_id": "ff78325c-291a-46c0-b68d-78d49571985e"
+    },
+    {
+      "claim_id": "9f17377b-5192-4597-b86c-0ff751522dc0",
+      "result_id": "ff78325c-291a-46c0-b68d-78d49571985e"
+    },
+    {
+      "claim_id": "2055bdd4-d63c-4451-b54f-c7ea6fc69fa0",
+      "result_id": "ff78325c-291a-46c0-b68d-78d49571985e"
+    },
+    {
+      "claim_id": "eb4866cb-78f3-4498-8e9a-d7a196313ddc",
+      "result_id": "ac457700-562d-4763-9f70-08b2380c7673"
+    },
+    {
+      "claim_id": "f62dd32b-ed01-4adf-8d1e-fb2d9bc8fa9a",
+      "result_id": "ac457700-562d-4763-9f70-08b2380c7673"
+    },
+    {
+      "claim_id": "c1fdb036-a0fa-4ad9-8f2b-3137d50f3285",
+      "result_id": "ac457700-562d-4763-9f70-08b2380c7673"
+    },
+    {
+      "claim_id": "e04a445c-4252-4a5b-a890-91401e93c7d4",
+      "result_id": "ac457700-562d-4763-9f70-08b2380c7673"
+    },
+    {
+      "claim_id": "6733ab20-8e07-4758-9a00-15567005698f",
+      "result_id": "ac457700-562d-4763-9f70-08b2380c7673"
+    },
+    {
+      "claim_id": "28b34cf1-50f0-4157-84c9-c99a5c3c564b",
+      "result_id": "ac457700-562d-4763-9f70-08b2380c7673"
+    },
+    {
+      "claim_id": "8f9b90c5-bb32-4e9a-af72-37b00638532b",
+      "result_id": "440b276f-79c3-45ae-98f3-07cf253bba94"
+    },
+    {
+      "claim_id": "950c3e3a-2329-45f1-9898-b9ed15d91fa1",
+      "result_id": "440b276f-79c3-45ae-98f3-07cf253bba94"
+    },
+    {
+      "claim_id": "f2b80f69-9b61-4f8b-8b25-9f6833b4c426",
+      "result_id": "440b276f-79c3-45ae-98f3-07cf253bba94"
+    },
+    {
+      "claim_id": "ffdb69e2-778c-4f8d-b8f8-bbafa6e34398",
+      "result_id": "a328fba4-48cc-4fb2-bf90-a3651289c8e6"
+    },
+    {
+      "claim_id": "426ab585-3401-4045-b34e-e41b183710ee",
+      "result_id": "a328fba4-48cc-4fb2-bf90-a3651289c8e6"
+    },
+    {
+      "claim_id": "859ce303-3d0d-45ae-be54-3b88dd7fccaf",
+      "result_id": "a328fba4-48cc-4fb2-bf90-a3651289c8e6"
+    },
+    {
+      "claim_id": "e511a238-2813-410c-82cf-cdd7203c719f",
+      "result_id": "a328fba4-48cc-4fb2-bf90-a3651289c8e6"
+    },
+    {
+      "claim_id": "a0fc7c67-b016-4f09-8a69-3bf9d1ce2c6a",
+      "result_id": "a328fba4-48cc-4fb2-bf90-a3651289c8e6"
+    },
+    {
+      "claim_id": "eaf20d1a-6bc9-4a53-bae5-7c6d68e0a2bd",
+      "result_id": "a328fba4-48cc-4fb2-bf90-a3651289c8e6"
+    },
+    {
+      "claim_id": "985ef9aa-8ac5-429f-9b23-cc64d1c77e06",
+      "result_id": "a328fba4-48cc-4fb2-bf90-a3651289c8e6"
+    },
+    {
+      "claim_id": "42965016-1208-4f56-aab4-bb2aae6548a1",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "bda4cd40-d3a9-4b37-8cc8-db4d3841d727",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "effe8c30-ab3f-4d83-a508-cce8b2724883",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "c78b4606-8af5-4493-b322-7ac1e782b261",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "69af975e-8969-4f7c-a1ac-7f775b831283",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "8411b5e6-68ef-4b7f-9c89-7020c214033a",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "04bf9d6c-d50c-4eb5-aaf8-dfeaefbfe9bd",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "31502f6e-d8ed-41b6-b840-06113d56a91b",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "f720eba8-cfc1-43ea-afaa-9e00747f2e8b",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "d4930dc8-2a1f-45c8-8c8b-33a5abd9c4d7",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "6ac9cda2-ada1-4453-b39c-f1026921827a",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "af273dba-900f-4edc-a496-cf570926169b",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "d97671cf-0b86-4cfb-a31a-67054c03b870",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "d09e9c59-9a6d-48a6-9ce4-f657181a054b",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "123b2677-cce3-4548-a2b6-e678e4ce5657",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "11945f96-25ba-45fd-979d-19f6e1676afd",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "3883c1b0-e08d-4d34-a200-8d42c4c41815",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "221614a9-a2bb-4020-b91b-ec878a90f893",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "447c7c00-e9b9-495f-882b-a74172f28473",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "e6d1f0eb-1e82-475f-96ce-4ae2c21a8aba",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "43a283e3-beba-40f0-aac4-440de8a87e4b",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "cd1e87ea-bac6-4d2e-a26d-89b27da2bfb8",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "61918250-098d-4c5f-abef-eda66c639c55",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "5c8812ab-a81b-468c-8b65-70186e028926",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "18f35769-2d0a-4941-9e01-4b283e5d67e6",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "0eda18af-e97e-461d-b3f5-8c385e957f2c",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "79e048af-1e8d-468c-9c24-60277039bee0",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "1aef5d20-bb65-44b8-898f-dac6a7db99cc",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "ba28fe1f-d7d2-4756-a8b5-32bcd3e2a37b",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "295a9c9f-b59c-45cf-958d-91dc4ec55e89",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "d732faaf-e53f-49ed-8e50-65110d9a86fe",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "1144791c-e335-4f2d-befa-65594f8d9b86",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "148725e8-dbaf-4501-804b-37fade289ac7",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "4d157207-9e09-498f-a205-15a65e10dc78",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "ef0a3094-02dc-4180-900e-90ad7136d4b9",
+      "result_id": "bc6a685b-9197-4e82-8d13-8f9bc6fd7a73"
+    },
+    {
+      "claim_id": "a5960c88-a6b9-4577-86a0-24e7899c5d89",
+      "result_id": "b93e6c8a-fdb8-4f21-8c7f-2efcdd5677ae"
+    },
+    {
+      "claim_id": "db6c4f8e-d5de-4503-9d85-45eda3fff0c5",
+      "result_id": "b93e6c8a-fdb8-4f21-8c7f-2efcdd5677ae"
+    },
+    {
+      "claim_id": "4244f768-f3b1-4a63-9d37-c902f52d6417",
+      "result_id": "b93e6c8a-fdb8-4f21-8c7f-2efcdd5677ae"
+    },
+    {
+      "claim_id": "d05662d8-9654-4384-bf67-a3844b30c776",
+      "result_id": "b93e6c8a-fdb8-4f21-8c7f-2efcdd5677ae"
+    },
+    {
+      "claim_id": "ae4c79db-6691-42bf-bec3-9668399fc22a",
+      "result_id": "b93e6c8a-fdb8-4f21-8c7f-2efcdd5677ae"
+    },
+    {
+      "claim_id": "97fb74e9-85f5-4adc-abde-9ff97f74ba4b",
+      "result_id": "b93e6c8a-fdb8-4f21-8c7f-2efcdd5677ae"
+    },
+    {
+      "claim_id": "a5afa028-e009-4c32-9d7c-13fdc7da7f29",
+      "result_id": "b93e6c8a-fdb8-4f21-8c7f-2efcdd5677ae"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2269 @@
+{
+  "submission": {
+    "id": "fbaa9826-7fc5-41db-88b4-73b5350b03e8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:41:24.356003Z",
+    "updated_at": "2025-12-03T09:41:24.356003Z"
+  },
+  "content": [
+    {
+      "id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "submission_id": "fbaa9826-7fc5-41db-88b4-73b5350b03e8",
+      "content_type": "manuscript",
+      "content_text": "# Phylogenomic and mitogenomic data can accelerate inventorying of tropical beetles during the current biodiversity crisis\n\n## Authors\n\n- Michal Motyka<sup>1</sup>\n- Dominik Kusy<sup>1</sup>\n- Matej Bocek<sup>1</sup> ([ORCID: 0000-0002-3398-6078](https://orcid.org/0000-0002-3398-6078))\n- Renata Bilkova<sup>1</sup>\n- Ladislav Bocak<sup>1</sup> ([ORCID: 0000-0001-6382-8006](https://orcid.org/0000-0001-6382-8006)) \u2020\n\n### Affiliations\n\n1. Czech Advanced Science and Technology Institute, Palack\u00fd University Olomouc Czech Republic ([ROR:04qxnmv42](https://ror.org/04qxnmv42))\n\n\u2020 Corresponding author\n\n## Abstract\n\nConservation efforts must be evidence-based, so rapid and economically feasible methods should be used to quantify diversity and distribution patterns. We have attempted to overcome current impediments to the gathering of biodiversity data by using integrative phylogenomic and three mtDNA fragment analyses. As a model, we sequenced the Metriorrhynchini beetle fauna, sampled from ~700 localities in three continents. The species-rich dataset included ~6500 terminals, ~ 1850 putative species delimited at 5% uncorrected pairwise threshold, possibly ~1000 of them unknown to science. Neither type of data could alone answer our questions on biodiversity and phylogeny. The phylogenomic backbone enabled the integrative delimitation of robustly defined natural genus-group units that will inform future research. Using constrained mtDNA analysis, we identified the spatial structure of species diversity, very high species-level endemism, and a biodiversity hotspot in New Guinea. We suggest that focused field research and subsequent laboratory and bioinformatic workflow steps would substantially accelerate the inventorying of any hyperdiverse tropical group with several thousand species. The outcome would be a scaffold for the incorporation of further data from environmental sequencing and ecological studies. The database of sequences could set a benchmark for the spatiotemporal evaluation of biodiversity, would support evidence-based conservation planning, and would provide a robust framework for systematic, biogeographic, and evolutionary studies.\n\n## Introduction\n\nThe number of known insects surpasses that of all other terrestrial groups (Mora et al., 2011), and we need much more detailed information to fully understand their diversity. Currently, the available biodiversity data are far from complete, and the majority of insect species remain undescribed (Novotny et al., 2006; Srivathsan et al., 2019). In addition, robust phylogenetic hypotheses are lacking for most lineages, and the genera and tribes are often artificial assemblages which are not relevant to evolutionary and biodiversity research. Therefore, we need to gather new information in order to advance our understanding of evolutionary and genetic relationships, and to build a phylogenetic scaffold for comprehensive taxonomic, biogeographic, and evolutionary studies that would be indispensable for biodiversity management.\n\nDescriptive, morphology-based insect systematics is not keeping pace with the rapid loss and degradation of natural habitats (Theng et al., 2020), and with the ongoing decline in insect abundance as a result of human activities and climate change (van Klink et al., 2020). The largest taxonomic journal, Zootaxa, published almost 30,000 studies describing >60,000 new species and these represent over a quarter of all new animal species reported in 2001\u20132020 (Zhang, 2021). Although these numbers are impressive, they also show how labor-intensive is taxonomic research if, in average, only two new species are reported in a publication. To accelerate the cataloguing of biodiversity, it is vital to gather new material suitable for molecular analyses and to combine available molecular methods with traditional approaches (Riedel et al., 2013; Srivathsan et al., 2019; Yeo et al., 2020; Sharkey et al., 2021). DNA data are indisputably a valuable source for modern biodiversity research, and they can address both shallow and deep relationships (Tautz et al., 2003; Hajibabaei et al., 2007). There are two principal sources of short-fragment data: voucher-based DNA sequences typically produced by systematists (Riedel et al., 2013; Yeo et al., 2020; Sharkey et al., 2021), and DNA sequences produced by an ecosystem-based sequencing that does not associate individual samples with Linnean names (And\u00fajar et al., 2015; Srivathsan et al., 2019). It is the responsibility of systematic biologists to assemble the natural system, that is, we need to reliably delimit genus- and tribe-level taxa, to make their ecological and distribution attributes informative. But the short fragments are often unsuitable for the building of deep phylogenies and large genomic datasets need to be used (McKenna et al., 2019; Baca et al., 2021). These include transcriptomes, whole genome sequences and anchored hybrid capture datasets. Using all information, a robust and stable natural classification will significantly facilitate detailed research into the spatial and temporal distribution of biodiversity (Morrison et al., 2009; Thomson et al., 2018). As an ultimate goal, we should attempt to construct a complete tree of life, or at least its backbone, which is invaluable in aiding the selection of groups for more detailed analyses (Chesters, 2017; McKenna et al., 2019). With a well-defined high-level classification, it is paramount to exploit all accessible data. We assume that voucher-based molecular phylogenies provide much-needed tools to researchers working on site-based biodiversity assessments (And\u00fajar et al., 2015; Srivathsan et al., 2019) and that, in turn, the data produced by environmental and ecosystem-focused sequencing contribute to building the tree-of-life (Arribas et al., 2016; Bocak et al., 2016).\n\nWe have used hyperdiverse tropical metriorrhynchine beetles (Coleoptera, Lycidae, Metriorrhynchini) as our model. This net-winged beetle tribe contains >1500 recognised species, mostly found in the Old-World tropics (Figure 1A), and their classification is complicated by the complex taxonomic history (Bocak et al., 2020; see Appendix introductory information). The phenetic plasticity of Metriorrhynchini is relatively high (Figure 1B\u2013D), but many distant species resemble each other due to convergent selection in Mullerian rings (Bocek et al., 2019; Motyka et al., 2020; Motyka et al., 2021). Therefore, unrelated taxa were often assumed to be closely related due to misleading morphological similarities. Although there are over 40 genera in the tribe, three-quarters of the species have been described in five ambiguously defined genera (Xylobanus, Cautires, Trichalus, Metriorrhynchus, and Cladophorus). Sometimes a single genus contains species from different subtribes (Bocak et al., 2020). In this respect, the Metriorrhynchini is a typical species-rich tropical insect group without well-founded classification and the paucity and inaccuracy of available data (Letsch et al., 2020). As a result, unlike vertebrates, these poorly known insect groups have not been considered for use in large-scale, integrative projects and data metanalyses (Myers et al., 2000; Holt et al., 2013) and have contributed little to our understanding of global biodiversity patterns.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71895/elife-71895-fig1-v3.jpg)\n\n**Figure 1.:** (A) Distribution of Metriorrhynchini with major sampled localities designated by red dots. The numbers of analyzed specimens from individual regions are shown for regions and subtribes. (B\u2013D) \u2013 General appearance of Metriorrhynchini.\n\nThe principal objective of this study is to demonstrate how biodiversity information for a hyperdiverse tropical group can be rapidly expanded via targeted field research and large-scale sequencing of transcriptomes, genomes, and short mtDNA fragments. Our investigation comprised four distinct steps. First, we assembled material from several hundred localities on three continents (Figure 1, Table 1). Second, as hyperdiverse groups are difficult to tackle and the current classification is unreliable, we attempted to compartmentalise diversity using phylogenomics. We then produced a tree, using all available data, to estimate species limits, intraspecific genetic variability, and species ranges. Finally, the tree was pruned and used to estimate shallow phylogenetic relationships, total and regional species diversity, and endemicity, and to define generic ranges and continental-scale range shifts. The applied methods of transcriptome and mtDNA analyses are widely used. The genomic datasets dominate among works focusing on deep relationships (transcriptomes and anchored hybrid capture; Misof et al., 2014; Kusy et al., 2019; McKenna et al., 2019; Baca et al., 2021). The mitochondrial markers have been used mainly to study the phylogeny of restricted clades (Toussaint et al., 2014; Sharkey et al., 2021). Until now, the genomic and mitochondrial data have seldom been combined to get simultaneously the phylogenetic backbone for the mid-rank classification (subtribes, groups of genera, generic limits) and the estimations of species diversity (e.g. Talavera et al., 2021). Our information and phylogenetic hypotheses can be a resource for higher level phylogenetics, population genetics, phylogeographic studies, and biodiversity estimation. At the same time, we want to show how limited our taxonomical knowledge is and how this lack is hindering biodiversity research and management (Thomson et al., 2018).\n\n**Table 1.**\n The numbers of sampled localities per region.Details in Appendix 1\u2014table 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Area</th>\n      <th>Localities</th>\n      <th>Area</th>\n      <th>Localities</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Australian region</td>\n      <td>298</td>\n      <td>Sino-Jap. region</td>\n      <td>79</td>\n    </tr>\n    <tr>\n      <td>Australia</td>\n      <td>118</td>\n      <td>China</td>\n      <td>51</td>\n    </tr>\n    <tr>\n      <td>New Guinea &amp; Solomons</td>\n      <td>179</td>\n      <td>Japan</td>\n      <td>28</td>\n    </tr>\n    <tr>\n      <td>New Zealand</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Wallacea</td>\n      <td>49</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Moluccas</td>\n      <td>15</td>\n      <td>Oriental region</td>\n      <td>206</td>\n    </tr>\n    <tr>\n      <td>Sulawesi</td>\n      <td>34</td>\n      <td>S.India &amp; Ceylon</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>E.India &amp; Burma</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Afrotropical Region</td>\n      <td>64</td>\n      <td>E.Indo-Burma</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>West Africa</td>\n      <td>1</td>\n      <td>Malay Peninsula</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>Guinean Gulf</td>\n      <td>11</td>\n      <td>Sumatra</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>Ethiopia</td>\n      <td>6</td>\n      <td>Java &amp; Bali</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>East Africa</td>\n      <td>10</td>\n      <td>Philippines</td>\n      <td>33</td>\n    </tr>\n    <tr>\n      <td>South Africa</td>\n      <td>25</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Madagascar</td>\n      <td>11</td>\n      <td>Total</td>\n      <td>696</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results\n\n### Sampling of the Metriorrhynchini range\n\nIn total, we monitored almost 800 localities, 696 of them with occurrences of the Metriorrhynchini (Tabs. 1, Appendix 1\u2014table 1). The distribution of sampling sites was partly biased due to the large extent of the Metriorrhynchini range, limited time and funds, different goals of various expeditions, and logistic problems (inaccessible regions, legal obstacles). The densest sampling is available from the Sundaland and New Guinea, while India and the Afrotropical region are under-sampled (Figure 1A).\n\n### Assembly of the phylogenomic tree\n\nThe phylogenomic dataset contained 35 Metriorrhynchini terminals (Appendix 1\u2014table 2), seven outgroups, and ~4200 orthologs (1.9\u20135.7 \u00d7 106 aligned positions; Supplementary file 1; Appendix 1\u2014table 3; Appendix 1\u2014table 4). The tree shown in Figure 2A was produced using maximum likelihood (ML) analyses, whereas the coalescent method produced the topology shown in Figure 2B; additional trees are shown in Appendix 1\u2014figures 1\u20138. For details on the data sets\u2019 characteristics see Appendix 1\u2014figures 9\u201312. Phylogenomic analyses resolved three subtribes (Metanoeina [Metriorrhynchina, Cautirina]), and five clades were regularly recovered within the Metriorrhynchina, that is, the hereby defined procautirines, leptotrichalines, trichalines, porrostomines, and cladophorines. Different settings (see Materials and methods) produced slightly different topologies and shifted the positions of the leptotrichalines and procautirines (Figure 3D). However, the monophyly of major subclades was not affected. The FcLM analysis favored a deeper position for the leptotrichaline clade (61.2%; Figure 2C, Appendix 1\u2014figure 13). The position of the remaining terminals was stable across all analyses. All phylogenomic analyses question the definitions of some species rich genera (Appendix 1\u2014figures 1\u20138) that are either polyphyletic (e.g. Cladophorus; 131 described species, most of them recovered in the Ditua subclade) or paraphyletic (Metriorrhynchus as a grade and Porrostoma in the terminal position; 194 species, see Figure 2A and B, Appendix 1\u2014figures 1\u20138).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71895/elife-71895-fig2-v3.jpg)\n\n**Figure 2.:** (A) Phylogenetic relationships of Metriorrhynchinae based on the ML analyses of the concatenated amino-acid sequence data of supermatrix F-1490-AA-Bacoca-decisive. Unmarked branches are supported by 100/100 UFB/alrt; red circles depict lower phylogenetic branch support. (B) Phylogenetic relationships of Metriorrhynchini recovered by the coalescent phylogenetic analysis with ASTRAL when analysing the full set of gene trees (4109 gene trees inferred at the nucleotide level). Pie charts on branches show ASTRAL quartet support (quartet-based frequencies of alternative quadripartition topologies around a given internode). Outgroups taxa are not shown. (C) Results of FcLM analyses for selected phylogenetic hypotheses applied at the amino-acid sequence level (supermatrix F). (D) Alternative phylogenetic relationships of Metriorrhynchinae based on the ML analyses of the concatenated amino-acid sequence data of supermatrix A-4109-AA. Numbers depict phylogenetic branch support values based on 5000 ultrafast bootstrap replicates.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71895/elife-71895-fig3-v3.jpg)\n\n**Figure 3.:** (A) Relationships of Metriorrhynchini recovered by the constrained analysis of the pruned dataset at 2% distance. (The full resolution tree is shown in Source data 2 along with a tree recovered from the analysis of a complete dataset of 6429 terminals in Source data 1), asterisk designates a grade of Metriorrhynchina-like taxa found in a position in conflict with their morphology; (B) A chart of Robinson-Foulds distances among topologies inferred by repeated runs of the constrained and unconstrained analyses; (C) A comparison of the results obtained by two runs of the constrained analysis; (D) A comparison of trees inferred with/without the phylogenomic backbone; (E) A comparison of results obtained by two runs of the unconstrained analysis. The red lines designate terminals with conflicting positions in compared trees.\n\n### Constrained mitogenomics\n\nThe mtDNA database contained >11,500 mtDNA fragments (5935 cox1, 2381 rrnL, and 3205 nad5) representing 6429 terminals (2930 aligned positions). Using these data, we inferred additional trees using the constrained positions of 35 terminals whose relationships were determined through phylogenomic analyses, and the free positions of the other ~6400 terminals (Source data 1). The units based on uncorrected pairwise distances represent molecular operational taxonomic units (mOTUs), considered to be putative species, or \u2018species\u2019 for short. Depending on the applied 2% and 5% thresholds, we identified 34\u201337 mOTUs in the Metanoeina clade and 369\u2013456 mOTUs in Cautirina. The major Metriorrhynchina clade (1376\u20131763 mOTUs) included procautirines, leptotrichalines, trichalines, porrostomines, and cladophorines. In addition, we identified several deeply rooted lineages, the kassemiines, and another five small clades (69\u201389 mOTUs in total; Source data 2), each of which comprised a limited number of species. As phylogenomic data for these terminals are still lacking, their positions were determined based only on mtDNA data and they are included in Metriorrhynchina, based on morphological traits (Table 2). The number of mOTUs does not include ~50 mOTUs for which cox1 was unavailable.\n\n**Table 2.**\n The numbers of described species and identified mOTUs (molecular operational taxonomic units) at 2% and 5% thresholds per region and the total number of OTUs identified for subtribes.Based on morphological identification, the OTUs of the kassemiine and other deeply rooted clades are included in Metriorrhynchina.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Region</th>\n      <th colspan=\"2\">Metriorrhynchina described/analyzed at 2%/5%</th>\n      <th>Cautirina described/ analyzed at 2%/5%</th>\n      <th>Metanoeina described/ analyzed at 2%/5%</th>\n      <th>Metriorrhynchini described/ analyzed at 2%/5%</th>\n      <th>RatioAnalyzed/described</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Australian region</td>\n      <td>639/1608/1239</td>\n      <td></td>\n      <td></td>\n      <td>639/1608/1239</td>\n      <td>2.52\u20131.93</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Australia</td>\n      <td>196/167/133</td>\n      <td></td>\n      <td></td>\n      <td>196/167/131</td>\n      <td>0.85\u20130.67</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>New Guinea</td>\n      <td>423/1434/1105</td>\n      <td></td>\n      <td></td>\n      <td>423/1434/1105</td>\n      <td>3.39\u20132.61</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Solomon Isl.</td>\n      <td>21/9/9</td>\n      <td></td>\n      <td></td>\n      <td>21/9/9</td>\n      <td>0.43</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Wallacea</td>\n      <td>162/174/162</td>\n      <td>14/10/9</td>\n      <td></td>\n      <td>176/184/171</td>\n      <td>1.05\u20130.97</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Philippines</td>\n      <td>51/18/18</td>\n      <td>45/12/12</td>\n      <td>8/3/3</td>\n      <td>104/33/33</td>\n      <td>0.32</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Continental Asia</td>\n      <td>43/52/42</td>\n      <td>331/330/257</td>\n      <td>30/34/31</td>\n      <td>404/416/330</td>\n      <td>1.03\u20130.82</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sundaland</td>\n      <td>36/44/39</td>\n      <td>201/184/146</td>\n      <td>24/19/17</td>\n      <td>261/247/202</td>\n      <td>0.95\u20130.77</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Indo-Burma</td>\n      <td>6/7/7</td>\n      <td>62/52/42</td>\n      <td>3/4/4</td>\n      <td>74/63/53</td>\n      <td>0.85\u20130.72</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>China, Japan</td>\n      <td>1/1/1</td>\n      <td>53/75/58</td>\n      <td>1/11/11</td>\n      <td>55/87/70</td>\n      <td>1.58\u20131.27</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>India</td>\n      <td></td>\n      <td>35/19/18</td>\n      <td>2/0/0</td>\n      <td>37/19/18</td>\n      <td>0.51\u20130.49</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Afrotropical region</td>\n      <td></td>\n      <td>231/104/94</td>\n      <td></td>\n      <td>231/104/94</td>\n      <td>0.46\u20130.41</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sub-Saharan Africa</td>\n      <td></td>\n      <td>178/74/65</td>\n      <td></td>\n      <td>178/74/65</td>\n      <td>0.42\u20130.37</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Madagascar</td>\n      <td></td>\n      <td>53/30/29</td>\n      <td></td>\n      <td>53/30/29</td>\n      <td>0.57</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total number of OTUs</td>\n      <td>895/1852/1445</td>\n      <td>641/456/369</td>\n      <td>38/37/34</td>\n      <td>1574/2345/1848</td>\n      <td>1.50\u20131.17</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Pruned mitogenomic tree with and without constraints\n\nThe dataset was subsequently pruned to a single terminal per mOTU based on 2% and 5% distance (see below) and was analyzed both with and without topological constraints (Figure 3A; Source data 2 and 3 show the pruned trees at 2% levels to capture the intraspecific genetic variability within the clusters of closely related mOTUs). Repeated runs with different starting seeds identified terminals with unstable positions (Figure 3A\u2013C). The major clades were generally stable, whereas small, deeply rooted clades were prone to \u2018wandering\u2019 around the tree, as were distinct singletons. The trees that resulted from each of the seed-specific 19 ML runs differed slightly; tree similarity was thus evaluated using the Robinson-Foulds index, with values ranging from 0.180 (most similar) to 0.147 (most distant; Appendix 1\u2014table 4).\n\n### Tree congruence\n\nThe degree of incongruence between selected topologies is shown in Figure 3C\u2013D. The unconstrained analysis of mitochondrial data yielded a topology with a high number of terminals that were recovered in positions incongruent with their morphology (Figure 3D and E, Source data 3). The same dataset, when analyzed using the constrained position of 35 terminals (based on their relative relationships inferred by prior phylogenomic analyses), produced a topology with a much lower proportion of terminals in dubious positions (Figure 3C, Source data 2). The composition of the constituent clades is based on the topology recovered by the constrained mtDNA analyses and the position of genera was validated by morphological comparisons of vouchers with the type species of earlier described genera (all redescribed by Bocak, 2002). The named genera assigned into individual subclades are shown individual clades are characterized in Appendix results.\n\n### Species diversity\n\nTo investigate the total and regional species diversity of the Metriorrhynchini, we analyzed a dataset comprising 5935 of the 6429 terminals for which the cox1 mtDNA fragment was available (Figure 3A; Supplementary file 1). For the Metriorrhynchini, we identified 1848 and 2345 mOTUs using the 5% and 2% thresholds, respectively (Appendix 1\u2014figure 14). We disregarded the presence of ~50 mOTUs (494 terminals) for which cox1 was missing. The number of mOTUs based on the cox1 analysis varied by thresholds and the number of delimited OTUs increased relatively slowly with decreasing threshold values from 1% to 10% (Appendix 1\u2014figure 14).\n\nUsing an earlier published literature review (Bocak et al., 2020), we updated species lists for the Cautirina (641 spp. described species), Metanoeina (38 spp.), and Metriorrhynchina by adding taxa described in 2020 and 2021. By analysing DNA data, we identified 34\u201337 putative spp. of Metanoeina, 369\u2013456 spp. of Cautirina, and 1445\u20131852 spp. of Metriorrhynchina, depending on the applied mtDNA uncorrected pairwise 5% and 2% mtDNA distance thresholds. The numbers of species per subregion, along with the estimated ratios between formally described and estimated species diversity, are shown in Table 2 for the 2% and 5% threshold (further information in Appendix 1\u2014figure 14). Using both thresholds, 2% and 5%, the numbers of putative species surpass the numbers of species reported in the literature.\n\nWe observed very high species turnover even if 5% threshold was applied for delimitation. Only four mOTUs have been recorded in two landmasses separated by a deep-sea (> 200 m). The faunas of Sulawesi and the islands across Wallace\u2019s and Weber\u2019s lines share two mOTUs, one mOTU was simultaneously identified in Laos and Luzon and one species in New Guinea and the Solomon islands. Similarly, only sixteen mOTUs were distributed across two landmasses separated by an inundated shelf (sea depth <100 m). Nine mOTUs were distributed in two or more islands of Southeast Asia and seven species were found in both New Guinea and Australia. The centres of species diversity of the Metriorrhynchini are New Guinea (1,105 putative spp. at 5% threshold) and the seasonally to perennially humid areas of the Sundaland (202 spp. at 5% threshold). The results suggest substantial modifications to the generic limits and ranges for numerous taxa that had been previously delimited (Appendix 1\u2014figure 15).\n\nHaving the extensive the mtDNA topologies, we looked for examples of the evolution of neoteny and mimetic polymorphism. The detailed inspection of trees identifies the closest available relative of a putative neotenic, Cautires apterus (Cautirina). This species is morphologically very distinct (Figure 4B and D). The dated subtree indicates the recent origin of morphological divergence (Figure 4A). The mtDNA analyses recover some species with pronounced sexual dimorphism, such as an unidentified genus and species of the procautirine clade (Figure 4F\u2013H). The origin of the polymorphism is putatively very recent (Figure 4F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71895/elife-71895-fig4-v3.jpg)\n\n**Figure 4.:** (A) Relationships of lineages with modified ontogeny, the dated tree; (B, D) General appearance and head of Cautires apterus, a putative neotenic species; (C, E) ditto of the close relative with both sexes winged. Mimetic sexual dimorphism identified during diversity survey. (F) The dated tree, red colored terminal labels designate the individuals shown in G and H; (G) Dorsal view of individuals in copula; (H) Ditto, lateral view. Except of collecting individuals in copula, DNA-based assessment of relationships is the only option as the species are sexually dimorphic and no morphological traits indicate their conspecifity.\n\n## Discussion\n\nIn the context of the present loss of biodiversity (Sodhi et al., 2004; Hallmann et al., 2017; Theng et al., 2020), large-scale genomic resources are urgently needed for biodiversity assessment and conservation (Hajibabaei et al., 2007; Krehenwinkel et al., 2019). Molecular data cannot replace morphology-based taxonomy (Figure 3C\u2013D; Thomson et al., 2018), but the analyses of our dataset complement and facilitate traditional biodiversity research in several directions. Our first step is to compartmentalize hyperdiverse Metriorrhynchini into manageable natural units (Figure 2). The densely sampled phylogeny identifies tribal and generic limits. It provides a useful foundation for detailed taxonomic research through the identification of weak areas in earlier classifications and points out the clades with undescribed diversity and non-monophyletic genera (e.g. several hundred species of Ditua and paraphyletic Metriorrhynchus; Figure 3, Appendix 1\u2014figure 15). Furthermore, the analyses of species-rich datasets identify the areas with high species diversity as one of the critical conservation value parameters (Table 2; Baselga, 2010; Srivathsan et al., 2019). Traditional taxonomic research costs time and money, and the number of newly described species is relatively low if we consider the enormous diversity of tropical insects (Novotny et al., 2006; Sangster and Luksenburg, 2015). Therefore, we use DNA-based units as a provisional descriptor of species diversity (Hebert et al., 2003; Monaghan et al., 2009), and subsequently as a source for integrative taxonomy (Source data 1\u20133; Srivathsan et al., 2019). The presented large-scale monitoring project provides information on relationships (Figures 2 and 3), genetic divergence (Source data 1\u20133), turnover (Table 2), the extent of generic and species ranges (Appendix 1\u2014figure 15, Source data 1\u20133), and on evolutionary phenomena that are usually studied using a few model organisms (Figure 4). Using phylogenomics and voucher-based sequencing, we show that taxonomic literature has provided insufficient and sometimes erroneous information, even after the formal consolidation of scattered descriptions (Bocak et al., 2020). We show that a taxon-focused continental scale project can effectively assemble comprehensive data for diversity of tropical insects.\n\n### Continent-wide taxon-specific monitoring of biodiversity: feasibility and impediments\n\nTissue and DNA archives have become critical in the assessment of biodiversity status (Hajibabaei et al., 2007; Blom, 2021). Although museomics is a potentially valuable source of data (Gauthier et al., 2020), in our case, museum collections are insufficient for filling data gaps due to the scarcity of material. For example, the Metriorrhynchini collection deposited in the Natural History Museum in London contains <3000 specimens, whereas there are ~6500 terminals in our dataset. At the beginning of our study, we faced critical absence of primary data. Therefore, we conducted intensive field research to obtain samples for a realistic assessment of the extant Metriorrhynchini diversity. We processed samples from our expeditions (most of which were focused on a range of topics over two decades between 2001 and 2019) and samples obtained through extensive collaboration with other researchers, both local and visiting, and with local naturalists whose contribution has increased with the growing number of citizen science projects (Jaskula et al., 2021; MacPhail and Colla, 2020). In such a way, we assembled a Metriorrhynchini tissue collection from almost 700 localities in three continents (Table 1, Figure 1). For several reasons our sampling is partly biased. We noted the serious loss of natural habitat in many regions. Previously described species were often collected in vicinity of seaports, but the lowland ecosystems are rapidly disappearing due to human exploitation. Therefore, type localities of many described species could not be sampled during recent expeditions and species known from museum collections are missing in our DNA dataset (Jiruskova et al., 2019). The habitat loss in South East Asia also affects other animal groups, and lowland primary forests are seriously endangered in the whole region (Sodhi et al., 2004; Theng et al., 2020). Further sampling bias is a consequence of the unsafe conditions and logistic problems in large areas of West Africa, Sahel, and the Congo Basin (Figure 1A), where net-winged beetles have not been systematically studied since the 1930s. Additional data gaps are caused by strict biodiversity research restrictions (Prathapan, 2018). Regardless of these limitations, we believe that the assembled dataset is a foundation for a robust classification framework and a soundly based assessment of biodiversity. Our results show the importance of field research for biodiversity studies and systematics (Basset and Lamarre, 2019).\n\n### Phylogenetic relationships: a scaffold for targeted research\n\nUnresolved taxonomy is a common reason for the exclusion of specific groups from biodiversity research projects and this omission has an effect on conservation policies (Guti\u00e9rrez and Helgen, 2013). The current phylogenomic and mitogenomic phylogenetic hypotheses (Figures 2 and 3; Source data 1\u20133) supersede the morphology-based topologies (Bocak, 2002). The phylogenomic analysis incorporates a large amount of information, and we favor this method over morphological traits and short DNA sequences, both of which contain uncertainties (McKenna et al., 2019). Phylogenomics has resolved subtribe relationships and their internal structures. The analyzed 35 transcriptomes and low-coverage genomes were sufficient to identify five major Metriorrhynchina clades with several hundred putative species each and also to identify the limits of genera, which can be tested using traditional taxonomic methods (Figures 2 and 3A; Source data 1\u20133).\n\nThe sampling strategy is critical for building a phylogenomic backbone. Our goal was to cover as many deep lineages as possible and simultaneously to limit the number of sequenced RNA samples to avoid high costs. Therefore, we sequenced RNAlater preserved tissues and conspecific vouchers prior to assigning tissue samples for transcriptomic analyses. In this way, two rounds of sequencing provided us with critical information based on evenly distributed anchor taxa. In the next step, we re-analyzed the short-fragment dataset (Supplementary file 1) using constrained positions for taxa whose relationships had already been recovered through phylogenomics (Figures 2 and 3). A stabilized phylogenomic backbone is critical for inferring a robust topology because the large-scale analyses of short mtDNA fragments are sensitive, even to the application of starting seeds, and they often produce topologies incongruent with morphological traits (Figure 3B and E; Sklenarova et al., 2014). Only several small lineages have remained unanchored by genomic data, owing to a lack of properly fixed samples (Source data 2 and 3). For example, four small clades are much more deeply rooted than their morphology suggests (Figure 3A, Source data 2) and additional data are needed to place them in a phylogenetic context. Despite some contentious relationships that need further investigation, 35 genomic samples, that is under 2% of species, sufficiently supported relationships among most terminal clades that approximately represent genera, groups of genera and subtribes. Talavera et al., 2021 have shown that only six nuclear markers for 5%\u201310% of terminals can similarly stabilize the phylogeny of a species rich model group. We assume, that the combination of genomic and short DNA data can be valuable for building of the species-level trees of life.\n\nWe identified a substantial conflict between phylogenomic analyses, morphology-based classifications (Bocak, 2002 and earlier studies cited therein), and the analyses of a few short DNA fragments (Sklenarova et al., 2014, Appendix introductory information). Our analyses confirm the monophyly of the recently described Cautirina and Metanoeina and redefined Metriorrhynchina except several unanchored lineages (Sklenarova et al., 2013; Sklenarova et al., 2014), but, for the first time, we can robustly recover subtribal relationships (Figure 2A and B). We reject most internal splits suggested by morphological and mtDNA analyses (Bocak, 2002; Sklenarova et al., 2013; Sklenarova et al., 2014 and earlier studies cited therein). The present delimitation of five monophyla within Metriorrhynchina resolves the backbone of the subtribe that was contentious due to high levels of homoplasy in Sanger and morphology-based datasets. Similarly, some generic concepts are questioned as they have been mostly based on highly homoplastic traits (Sklenarova et al., 2014; Kusy et al., 2019). The taxonomic studies must consider the morphology along with molecular hypotheses. As morphology is not described in this study, we do not discuss the limits of individual genera and report only short information on newly defined subclades (Appendix results).\n\nOur approach yielded a constrained phylogeny with 6429 terminals and almost 2000 mOTUs using 5% mtDNA distance threshold, and this provides the basis for the approximation of species diversity for constituent subclades and geographic regions (Figure 3; Source data 2 and 3). Concerning the extent of diversity, phylogenomic and mitochondrial data must be simultaneously analysed to provide a strong foundation for subsequent investigations (Figure 3C, Talavera et al., 2021). Phylogenomics cannot deal with thousands of species, and mitogenomic data are insufficient for the construction of robust deep relationships. The final steps are morphological validation of the proposed generic groups and genera (see Appendix results) and, in the future, formal descriptions of biodiversity using the Linnean classification. In such a way, the results of phylogenomic and mitogenomic inventory should be incorporated in the formal classification (Godfray and Knapp, 2004).\n\n### Species diversity: literature data and reality\n\nHere, we deal with a species rich tropical beetle tribe (> 1500 described species), and therefore we use the uncorrected pairwise distance thresholds for our diversity estimation (Table 2, Appendix 1\u2014figure 14). The application of any threshold is a compromise between estimation accuracy, speed, and sequencing costs, taking into account the feasibility of inventorying a hyperdiverse group within a limited time frame (Hebert et al., 2003; Dupuis et al., 2012; Eberle et al., 2020). Several taxonomical works on Metriorrhynchini have simultaneously analysed mtDNA fragments, nuclear genes, morphology, and ecology (e.g. Bocak and Yagi, 2010; Kalousova and Bocak, 2017; Bocek et al., 2019; Jiruskova et al., 2019), but their results cannot robustly defend an application of a distance threshold for the whole tribe. To avoid a possibility of diversity overestimation, we base further discussion on the 5% distance. We assume that such a threshold might be sufficiently cautious. Future taxonomic revisions are surely needed for the validation of here presented data on species diversity.\n\nWhen analysing the cox1 mtDNA fragment, we identified 1,848 mOTUs at 5% threshold and the numbers of delimited mOTUs indicate that, the substantial part of species diversity remains undescribed (Table 2, Appendix 1\u2014figure 14). Additionally, the slope representing the relationship between the number of mOTUs and distance thresholds was gradual (Appendix 1\u2014figure 14) due to a high number of genetically distant, indisputably distinct lineages in the dataset (Appendix 1\u2014figure 14).\n\nOur approach provides information about the diversity of the internal lineages. Metriorrhynchina is by far the most diverse group, within which the cladophorines comprise the largest clade (490 mOTUs, e.g, Ditua historically has included 2 spp., now ~250 spp.). The porrostomine clade is the next diverse group (373 mOTUs) and contains the speciose Porrostoma (126 mOTUs) and a paraphyletic series of lineages whose species have conventionally been placed in Metriorrhynchus. The differences between previously published data and our results are substantial and they question any reanalyses of literature data without prior verification (Bocak, 2002; Bocak et al., 2020 references therein; Source data 2 and 3).\n\nThe numbers of mOTUs must be interpreted in the context of the sampling activity in each region. We did not use standardized protocols due to the long-term character of our research, the incorporation of some samples provided by other researchers, and the necessity to apply appropriate collecting methods to maximize the number of recorded species in various ecosystems and under different weather conditions. We identified only 94 mOTUs from the Afrotropical region, mainly due to the limited number of collecting trips by authors (64 localities) and the inaccessibility of some areas. Despite intensive field research (33 localities), we collected from the Philippines less than one third of the species described (33 mOTUs). Our collection activities in the Philippines were hindered by substantial loss of natural habitats, and this is soon expected to be the case in other regions (Sodhi et al., 2004). The number of species known from the Sundaland (114 localities) was approximately equal to the number of sequenced mOTUs despite disproportionately intensive collecting effort by the authors. Even after numerous expeditions to the Sundaland, many regions remain unsampled. As metriorrhynchine species ranges are small (Jiruskova et al., 2019; Motyka et al., 2020), the number of species will probably increase in the future. The proportion of new species was regionally ~70% if DNA data and morphology were considered in detailed taxonomic studies (e.g. Jiruskova et al., 2019). While these regions house numerous unknown species, we found New Guinea to be exceptionally diverse, with almost three times the number of species reported in the literature (1,105 mOTUs at 5% threshold; 175 localities, Table 1 and Table 2). Despite the relatively large number of sampled localities, many areas of New Guinea remain unexplored and many places were only superficially sampled by colleagues and never visited by the authors (Figure 1A). Additional species were added to the dataset with each batch of sequenced samples from New Guinea and the area possibly houses much higher diversity than documented by the present study.\n\nWe observed a high turnover between regions, and few species had ranges which included landmasses separated by shallow seas (seven spp. Queensland / New Guinea, 9 spp. in Southeast Asia; Source data 1). Poorly dispersing lycids generally have very small ranges, except for the few genera that visit flowers and fly in open areas (Motyka et al., 2021). A similar small-scale turnover has recently been reported along altitudinal gradients (Bocek et al., 2019; Motyka et al., 2020; Motyka et al., 2021). A high turnover indicates a large proportion of hidden diversity, especially in tropical mountains (Merckx et al., 2015; Mastretta-Yanes et al., 2018). Mountain fauna is especially vulnerable to climate change and its inventorying is urgently needed.\n\nThe Metriorrhynchini has recently received considerable attention in taxonomic studies, and 302 species have been described by several authors over the past three decades, making a total of 1574 formally described species (Table 1, Kazantsev, 2010; Bocak et al., 2020; Appendix introductory information). Although the recent 24% increase in described diversity appears substantial, the distance-based analysis indicates the presence of almost 2000 mOTUs (Appendix 1\u2014figure 14). An additional ~50 putative species (494 terminals) were identified, but this identification was only based on divergent morphology because of the absence of cox1. We assume that our sampling represents only a subset of all known species (< 50%). It means that the dataset contains ~1000 undescribed species. At the current rate, formal morphological descriptions of an additional 1000 species would take decades or hundreds of years. This is a very long time in the context of the ongoing deforestation and fragmentation of natural habitats, and currently undocumented diversity might be lost long before it can be catalogued (Brooks et al., 2002; Sodhi et al., 2004; Ceballos et al., 2015; Theng et al., 2020). The rapid DNA-based inventory is an effective shortcut for obtaining basic information on the true diversity of tropical beetles and for setting a benchmark for future biodiversity re-evaluations.\n\nThe results reveal major biodiversity hotspots in New Guinea and the Sundaland. Tropical rainforests currently cover most of New Guinea, a tectonically young island that has not been considered a biodiversity hotspot for vertebrates (Myers et al., 2000; Hall, 2011; Toussaint et al., 2014). In the case of net-winged beetles, we show that the New Guinean fauna is phylogenetically diverse, spatially heterogeneous, and extremely rich as regards both the number of species and the endemic genera (Table 1). Additionally, the large clades of New Guinean species indicate that the diversification of major lineages preceded the uplift of the islands, and possibly started on the northern margin of the Australian craton and adjacent islands. Southeast Asia is a centre of phylogenetic diversity at the tribal level; its fauna contains all principal lineages and the highest diversity of Cautirina but is smaller than those of New Guinea. The Afrotropical and Palearctic regions represent only recently populated low-diversity outposts.\n\n### Impact of biodiversity inventorying on biogeographical and evolutionary research\n\nDetailed data on Metriorrhynchini diversity indicate low dispersal propensity and this makes Metriorrhynchini a promising model for biogeographic studies (Ikeda et al., 2012). Our densely sampled phylogeny did not find any long-distance dispersal events, in contrast to many studies of flying beetles (Balke et al., 2009; Jordal, 2015). Most recovered overseas dispersal events are limited to distances of less than 100 km and are commonly accompanied by speciation (Source data 2 and 3). The high proportion of erroneous placement of many taxa (Appendix 1\u2014figure 15; Bocak et al., 2020) renders the distribution data cited in previous literature unsuitable for phylogeographic investigations, and revision of the classification is important in order to understand the true distribution of individual taxa. The original and revised ranges of selected genera are compared in Appendix 1\u2014figure 15 as examples.\n\nIntensive biodiversity research has the potential to fill knowledge gaps concerning evolutionary phenomena that are mainly studied using a small number of model species, and the research can identify the unique attributes of other potential models. We document the contribution of a large-scale biodiversity inventory to evolutionary studies with two examples.\n\nNet-winged beetles include several lineages in which females have lost the ability to completely metamorphose (Bocak et al., 2008; Mcmahon and Hayward, 2016). If a putative neotenic species is discovered, a comprehensive reference database of the group may identify its closest relatives. We used our data to place the East African Cautires apterus in a phylogenetic context, and the results indicated that it may be the youngest neotenic taxon of all net-winged beetles (36.1 my, Figure 4).\n\nOur extensive DNA database of metriorrhynchine diversity may also play an important role in the study of the evolution of mimicry. Our inventory identified an extreme and previously unknown aposematic dimorphism in New Guinean metriorrhynchines (Figure 4; Figure 5). The placement of sexually dimorphic species in the phylogeny suggests that the shift to dimorphism was very recent (3.0 mya at the earliest) and began when both sexes were small-bodied. Mimetic sexual polymorphism is well understood in butterflies with non-mimetic males and mimetic females (Kunte, 2008), but the advergence of males and females to different aposematic models has only recently been reported in two subfamilies of net-winged beetles (Motyka et al., 2018; Motyka et al., 2020; Motyka et al., 2021). Divergent evolution in M\u00fcllerian systems appears to be more common in multi-pattern aposematic rings than was previously believed when morphology was the sole source of information.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71895/elife-71895-fig5-v3.jpg)\n\n### Conclusion\n\nPriority areas for global conservation have usually been identified based on richness, species endemism and vulnerability of vertebrates (Myers et al., 2000; Holt et al., 2013). We assume that different patterns of biodiversity distribution can be revealed if other animal groups are studied. Reliable information on additional groups can focus our conservation efforts on valuable regions (Morrison et al., 2009; Thomson et al., 2018). Our model, beetles, is the most speciose group of animals but is much less known than vertebrates. Therefore, new data must be generated, and our research workflow must use innovations to economically produce the large-scale phylogenetic hypothesis for a high number of species. We conducted a worldwide sampling in ~700 localities, analysed transcriptomes, genomes, and mitochondrial markers, and validated our results with morphology. We show that the constrained position of less than 2% terminals increases the stability of tree topology and the congruence of molecular hypotheses with morphological traits (Appendix results). By the simultaneous consideration of genomic and mitochondrial phylogenetic signal, we achieved substantial progress with respect to the development of a Metriorrhynchini tree of life (Chesters, 2017; Linard et al., 2016). The voucher-based DNA entries established a framework for classifying samples from other studies, such as environmental sequencing (Linard et al., 2016; And\u00fajar et al., 2015; Arribas et al., 2016) and for subsequent morphology-based studies. Despite limited time and funding, we identified almost 2000 mOTUs which indicate that there are at least twice more species than the number reported in the literature. This means that, at a conservative estimate, ~ 1000 species in the dataset were previously unknown to science. Furthermore, we identified New Guinea as a biodiversity hotspot, which is in clear contrast with studies identifying the biodiversity patterns of vertebrates. Our large-scale inventory shows that the literature records of tropical beetles cannot be used for biodiversity conservation and metanalyses without critical revision. We suggest that if focused field research is conducted even by a small research group and subsequent workflow steps are applied to any hyperdiverse tropical group, the results can set a benchmark for future evaluation of spatiotemporal changes in biodiversity.\n\n## Materials and methods\n\n### Field research\n\nThe analyzed individuals had been accumulated by numerous expeditions to various regions of the Metriorrhynchini range (Figure 1A, Appendix 1\u2014table 1). The distribution of sampling sites was partly biased, and no samples are available from West Africa, Congo Basin, Sahel, Sri Lanka, and the Lesser Sundas. About 10% of samples were provided by other researchers.\n\nTissues for transcriptomic analyses were fixed in the field. As field identification is generally unreliable, we preferred to collect pairs in copula, then the female was fixed using RNAlater, and the male kept separately in 96% ethanol for Sanger sequencing and the voucher collection. Alternatively, the morphologically similar individual from the same place was fixed in ethanol and the identity of an individual assigned for transcriptomic analysis was confirmed by sequencing cox1 mtDNA using tissue from the specimen preserved in RNAlater and putatively conspecific voucher (Figure 2). About 100 tissue samples were fixed and thirty-five of them were used for sequencing (Appendix 1\u2014table 2). Earlier published transcriptomes were added (McKenna et al., 2019; Kusy et al., 2019). Due to the inaccessibility of properly fixed tissue, the two critical samples were shotgun sequenced using isolated DNA.\n\nAlmost 7000 samples from 696 localities (Table 1) were included in the sequencing program to obtain short mtDNA fragments. In total, 6429 yielding at least a single fragment were included in the analysis (Supplementary file 1). The analyzed data set contained some previously published sequences (e.g. Sklenarova et al., 2013; Bocek and Bocak, 2019). Voucher specimens are deposited in the collection of the Laboratory of Biodiversity and Molecular Evolution, CATRIN-CRH, Olomouc.\n\n### Genomic and transcriptomic sequencing, data analysis\n\nLibraries for thirty transcriptomes were prepared by Novogene Co., Ltd. (Beijing, China) and sequenced on the HiSeq X-ten platform (Illumina Inc, San Diego, CA). The removal of low-quality reads and TruSeq adaptor sequences were performed using fastp v.0.20.0 (Chen et al., 2018) with the following parameters: -q 5 u 50 l 50 n 15. All paired-end transcriptomic reads were assembled using SOAPdenovo-Trans-31mer (Xie et al., 2014).\n\nAdditionally, the total DNA (~33 Gb each) of Metanoeus sp. (Voucher code G19002) and an unidentified sample Metriorrhynchina species (Voucher JB0085) was shotgun-sequenced on the same platform. Reads were filtered with fastp using the same settings as above and quality was visualized with FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc). The draft genomes were assembled using SPAdes v.3.13.1 (Bankevich et al., 2012), with k-mer sizes of 21, 33, 55, 77, and 99. Obtained contigs were used to train Augustus (Stanke and Waack, 2003) for species-specific gene models with BUSCO (Waterhouse et al., 2018). Predicted species-specific gene models were then used for ab initio gene predictions in Augustus and predicted protein-coding sequences were used for subsequent analyses. Outgroup taxa were reported in previous studies (Kusy et al., 2018, Kusy et al., 2019; McKenna et al., 2019).\n\nThe ortholog set was collated by searching the OrthoDB 9.1 (Zdobnov et al., 2017) for single copy orthologs in six beetle genomes (Appendix 1\u2014table 3). We used Orthograph v.0.6.3 (Petersen et al., 2017) with default settings to search in our assemblies for the presence of specified single copy orthologs. From the recovered 4193 orthologs, terminal stop codons were removed, and internal stop codons at the translational and nucleotide levels were masked. The amino acid sequences were aligned using MAFFT v.7.471 with the L-INS-i algorithm (Katoh and Standley, 2013). The alignments from each ortholog group were then checked for the presence of outliers. To identify random or ambiguous similarities within amino acid alignments, we used Aliscore v.2.076 with the maximum number of pairwise comparisons \u2013r 1027, option -e. and we masked them using Alicut v.2.3 (K\u00fcck et al., 2010). Alinuc.pl was then used to apply the Aliscore results to match amino acids to the nucleotide data. MARE v.0.1.2-rc was used to calculate the information content of each gene partition (Misof et al., 2013). Partitions with zero information content were removed at both levels. Finally, the remaining 4109 alignments were retained for subsequent multispecies coalescent analyses, and different concatenated datasets were generated for both amino acid and nucleotide levels using FasConCat-G v.1.4 (K\u00fcck and Longo, 2014; Appendix 1\u2014table 4 and Appendix methods). The degree of missing data and overall completeness scores (Ca) across all datasets were inspected using AliStat v.1.7 (Wong et al., 2020).\n\n### Compositional heterogeneity tests\n\nTo explore the effect of among species compositional heterogeneity and its possible bias to tree reconstruction, we inspected the data with BaCoCa v.1.105 (K\u00fcck and Struck, 2014) to identify the gene partitions that strongly deviate from compositional homogeneity using relative composition frequency variation value (RCFV). Following Vasilikopoulos et al., 2019, we considered compositional heterogeneity among species in a given partition to be high when RCFV \u22650.1. The heterogeneous partitions were excluded from the data to generate a more compositionally homogeneous dataset. We used Maximum Symmetry Test (Naser-Khdour et al., 2019) to identify the partitions that strongly deviate from compositional homogeneity at the nucleotide level (p-value cut off <0.05), and partitions below the threshold were excluded. The software SymTest v.2.0.49 (Ott, 2019) was used to calculate the overall deviation from stationarity, reversibility, and homogeneity (SRH) (Ababneh et al., 2006).\n\n### Phylogenomic maximum likelihood analyses\n\nFor all datasets, phylogenetic reconstruction was performed using the maximum likelihood (ML) criterion with IQ-TREE 2.1.2 (Minh et al., 2020). First, we analyzed all datasets using the original gene partition boundary. The model selection for each gene was performed with ModelFinder (Chernomor et al., 2016; Kalyaanamoorthy et al., 2017) implemented in IQ-TREE2 (-MFP option). GTR model was considered for nucleotide supermatrices. For the amino acid supermatrices, the substitution models LG, DCMUT, JTT, JTTDCMUT, DAYHOFF, WAG, and free rate models LG4X and LG4M were tested. All possible combinations of modeling rate heterogeneity among sites were allowed (options: -mrate E,I,G,I + G,R -gmedian -merit BIC). We used the edge-linked partitioned model for tree reconstructions (-spp option) allowing each gene to have its own rate. The optimized partition schemes and best-fitting models were inferred for some datasets using -m MFP+ MERGE and the considering same substitution models as above. The fast-relaxed clustering algorithm was used to speed up computation during partition-scheme optimization (Lanfear et al., 2017). Ultrafast bootstrap (Hoang et al., 2018) and SH-like approximate likelihood ratio test (SH-aLRT) were calculated in IQ-TREE2 (options -bb 5000 and -alrt 5000) to assess nodal supports for focal relationships.\n\n### Coalescent analyses and analyses of the confounding and alternative signal\n\nTo account for variation among gene trees owing to incomplete lineage sorting and to account for potential gene tree heterogeneity and discordance (Edwards, 2009), the data were also analyzed using the coalescent-based species-tree method. For every single gene partition, we calculated an ML gene tree in IQ-TREE2, with 5,000 ultrafast bootstrap replicates (-bb option) and using the same substitution models as predicted by ModelFinder in the above described partitioned analyses. For subsequent coalescent species tree estimation, the Accurate Species Tree Algorithm (ASTRAL-III v.5.7.3; Zhang et al., 2018) was used. To account for very poorly resolved branches on gene trees, branches with ultrafast bootstrap \u226410 were collapsed using newick utilities v.1.6 (Junier and Zdobnov, 2010) in every ASTRAL analysis. Local posterior probabilities (Sayyari and Mirarab, 2016) and quartet frequencies of the internal branches in every species tree were calculated using the parameter \u2018-t = 2\u2019. Pie charts representing quartet scores for the given topology and two alternatives were plotted to the resulting species trees in R using plot_Astral_trees (Bellot, 2021).\n\nAdditionally, we studied the effect of potentially confounding signals, like non-random distribution of data coverage and violations of SRH conditions, on our phylogenetic reconstructions with the Four-cluster likelihood mapping (FcLM) approach (Strimmer and Haeseler, 1997) implemented in IQ-TREE2. Based on the results of our tree reconstructions, we tested the hypotheses about the alternative placement of leptotrichaline and procautirine clades.\n\n### Mitochondrial DNA sequencing and data analysis\n\nTotal DNA was extracted from the metathorax with a Wizard SV96 kit (Promega Corp., Madison, WI). The yield was measured using a NanoDrop-1000 Spectrophotometer (Thermo Fisher Scientific Inc, Waltham, MA). The PCR settings and cycle sequencing conditions were the same as those used by Bocak et al., 2008. Three fragments of mitochondrial genome were sequenced: cox1+ tRNA Leu+ cox2 (~1100 bp), rrnL+ tRNA Leu+ nad1 (~800 bp), and ~1210 bp of nad5 and adjacent tRNA-Phe, tRNA-Glu, and tRNA-Ser mtDNA (the mtDNA fragments are further mentioned as rrnL, cox1, and nad5). The PCR products were purified using PCRu96 Plates (Merck Millipore Inc, Burlington, MA) and sequenced by an ABI 3130 (Applied Biosystems, Waltham, MA) sequencer using the BigDye Terminator Cycle Sequencing Kit 1.1 (Applied Biosystems, Waltham, MA). Sequences were edited using Sequencher v.4.9 software (Gene Codes Corp., Ann Arbor, MI). Altogether 6476 individuals were analyzed including some previously published (Sklenarova et al., 2013; Bocek and Bocak, 2019).\n\nThe cox1 gene fragment was used to OTUs delimitation (Blaxter et al., 2005) using CD-hit-est (Fu et al., 2012) and different thresholds (from similarity 0.99\u20130.90 by 0.05 steps). Therefore, we assembled two datasets: (A) the dataset containing all sequenced individuals and (B) all OTUs delineated by 0.98 similarity of the cox1 gene. The rrnL and tRNAs were aligned using MAFFT 7.2 with Q-INS-I algorithm (Katoh and Standley, 2013), protein-coding genes were eye-checked for stop codons and aligned using Trans-Align (Bininda-Emonds, 2005). All fragments were concatenated using FasConCat (K\u00fcck and Longo, 2014) and analyzed under maximum-likelihood criterium in IQ-TREE v.2.1.2 (Minh et al., 2020; Appendix 1\u2014table 5). To assess the branch supports values, we used SH-aLRT test with 1000 iterations. ModelFinder tool implemented in IQ-TREE was used to identify the best fit models using the Bayesian Information Criterion (Chernomor et al., 2016). The results of the TSA/WGS analyses were used to constrain basal topology among major clades of Metriorrhynchini in both analyses of datasets A and B. Further, we ran unconstrained analyses of the above-mentioned datasets with identical settings except -g option to compare results. We replicated constrained tree search nineteen-times and compared resulting trees using Robinson\u2013Foulds distances in R package phangorn (Schliep, 2011; Appendix 1\u2014table 2). Randomly chosen trees were then compared using cophylo script (phytools; Revell, 2012) with argument rotate = TRUE.\n",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "d180a58c-c7d1-4436-9ab9-55728555230e",
+      "submission_id": "fbaa9826-7fc5-41db-88b4-73b5350b03e8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Donoso, https://ror.org/01gb99w41 Escuela Polit\u00e9cnica Nacional Ecuador\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71895.sa0](https://doi.org/10.7554/eLife.71895.sa0)\n\nThis manuscript provides clear ideas regarding the usage of next-generation sequencing data, and of more traditional mtDNA markers, to rapidly increase biodiversity inventories. You demonstrate how biodiversity information analyses done in the Metriorrhynchini, a hyperdiverse tropical insect group, can be rapidly expanded via targeted field research and large-scale sequencing. The study sets a benchmark for the spatiotemporal evaluation of tropical biodiversity, supports evidence-based conservation planning, and provides a robust framework for systematic, biogeographic, and evolutionary studies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- David Donoso, https://ror.org/01gb99w41 Escuela Polit\u00e9cnica Nacional Ecuador\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71895.sa1](https://doi.org/10.7554/eLife.71895.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Phylogenomic and mitogenomic data can accelerate inventorying of tropical beetles during the current biodiversity crisis\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ming Bai (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers agree that the authors did a nice sampling and produce an interesting inventory, but that the authors need to be cautious in their claims (as noted in their results or this \"new\" methodology). One major concern is with the validity of the premise that this paper helps to accelerate, or provides a framework that accelerates tropical insect inventories. For example, it will be very important if the authors develop the 4-step procedure (Lines 90-97) they use to justify the importance of the work. What is unique (or new) in their methodology, that can accelerate inventory assembly? Despite Figure 5, which establish differences between their methods and basic Sanger sequencing, the reviewers are not yet convinced that this paper really moves the field forward. Alternatively, the authors can temper the acceleration biodiscovery framework, and provide a more robust background on how Illumina data may be essential for obtaining a backbone where to put the Sanger data, and how this is not frequently used yet.\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, I like the manuscript and I think it can be published after some modifications. The most important point is the claims about mOTUs/putative species. As a scientist, we should be cautious when interpreting our data and especially when selecting different parameters (like the threshold). Authors should not provide just their most optimistic (or most striking) estimates and should include different estimates and consider all of them over the manuscript (from abstract to conclusions).\n\nAlso, It is surprising the amount of text used for the phylogenomic analyses, it is a very appropriate methodological part but barely mentioned in the results. Authors should improve the result/discussion of this part, describing and comparing what they produce with other studies (if any).\n\nFinally, the use of \"person-months of focused field research\" should be considered to be removed, as it did not provide any results or comparison with other study groups (which won't be possible).\n\nReviewer #3 (Recommendations for the authors):\n\nConservation efforts must be evidence-based, so rapid and economically feasible methods should be used to quantify diversity and distribution patterns. The principal objective of this study is to demonstrate how biodiversity information for a hyperdiverse tropical group can be rapidly expanded via targeted field research and large-scale sequencing. The authors have attempted to overcome current impediments to the gathering of biodiversity data by using integrative phylogenomic and three mtDNA fragment analyses. As a model, they sequenced the Metriorrhynchini beetle fauna, sampled from ~700 localities in three continents. The species-rich dataset included ~6,500 terminals, >2,300 putative species, more than a half of them unknown to science. It is an amazing finding. Their information and phylogenetic hypotheses can be a resource for higher-level phylogenetics, population genetics, phylogeographic studies, and biodiversity estimation. At the same time, they want to show how limited the taxonomical knowledge is and how this lack is hindering biodiversity research and management. It is a nice and well-designed study with a very important meaning. I would be happy to recommend it to be accepted after the revision. However before it is formally accepted, there are several questions followed:\n\n1. The definition of species is very complex. The molecular species, e.g. OTU, is still different from morphological species using traditional taxonomic methods. Of course, it is very common to use molecular species to define and infer biodiversity in many studies. For this study, ideally, the authors can express their comments on the relationships between molecular species and morphological species. For example, Sharkey et al. (2021 Zookeys) published 403 new species only with molecular information.\n\n2. P8L199: The constituent clades should be point out based on which tree. Pruned mitogenomic tree with and without constraints or Constrained mitogenomics?\n\n3. P8L205-208: How many mOTUs if using thresholds of 2%? 2345 or 2356? It is inconsistent in this paragraph.\n\n4. P10L244: This table is not too clearly to explain shared regions. If illustrate the meanings of number before and after \"/\", it will be better.\n\n5. P14L369: What's the references?\n\n6. P16L448: This discovery should be shown in Results part.\n\n7. P18L528: What is the voucher number of Metanoeus sp.?\n\n8. P96 S18: The figure S18 is unclear. It should be replaced by clear one.\n",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cf60edee-07ba-448e-b6d7-0d988d4ad370",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C1",
+      "claim": "Conservation efforts must be evidence-based, so rapid and economically feasible methods should be used to quantify diversity and distribution patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Conservation efforts must be evidence-based, so rapid and economically feasible methods should be used to quantify diversity and distribution patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of principle about conservation methodology presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "3947386b-d815-42f8-9b41-1e2b39c3ea38",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C2",
+      "claim": "The species-rich dataset included ~6500 terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "The species-rich dataset included ~6500 terminals, ~ 1850 putative species delimited at 5% uncorrected pairwise threshold, possibly ~1000 of them unknown to science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of terminals in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "71f89690-d22a-4cb3-8589-a76cb6b5d8d8",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C3",
+      "claim": "The dataset included ~ 1850 putative species delimited at 5% uncorrected pairwise threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The species-rich dataset included ~6500 terminals, ~ 1850 putative species delimited at 5% uncorrected pairwise threshold, possibly ~1000 of them unknown to science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of putative species identified using a specific threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "873238fd-4b72-4e21-b5af-e90405e6f71d",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C4",
+      "claim": "Possibly ~1000 species in the dataset are unknown to science.",
+      "claim_type": "EXPLICIT",
+      "source": "The species-rich dataset included ~6500 terminals, ~ 1850 putative species delimited at 5% uncorrected pairwise threshold, possibly ~1000 of them unknown to science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Estimation based on comparison of delimited species with known described species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "8c755357-c47e-448f-853d-9a331eba1709",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C5",
+      "claim": "Neither phylogenomic nor mtDNA data alone could answer questions on biodiversity and phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither type of data could alone answer our questions on biodiversity and phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the necessity of combining data types for comprehensive analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "908fed8b-0517-4cd6-beef-86d1f3455846",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C6",
+      "claim": "The phylogenomic backbone enabled the integrative delimitation of robustly defined natural genus-group units.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenomic backbone enabled the integrative delimitation of robustly defined natural genus-group units that will inform future research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the outcome of phylogenomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "4908db91-89e4-4668-ae38-acca41f18049",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C7",
+      "claim": "Using constrained mtDNA analysis, the authors identified the spatial structure of species diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Using constrained mtDNA analysis, we identified the spatial structure of species diversity, very high species-level endemism, and a biodiversity hotspot in New Guinea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about findings from constrained mtDNA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "8a270350-e170-4e9c-9c8e-ba471a48d873",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C8",
+      "claim": "Very high species-level endemism was identified using constrained mtDNA analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using constrained mtDNA analysis, we identified the spatial structure of species diversity, very high species-level endemism, and a biodiversity hotspot in New Guinea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about findings from constrained mtDNA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "1b8dd9f0-2769-4314-8bd7-42fd3ecae484",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C9",
+      "claim": "New Guinea is a biodiversity hotspot for Metriorrhynchini.",
+      "claim_type": "EXPLICIT",
+      "source": "Using constrained mtDNA analysis, we identified the spatial structure of species diversity, very high species-level endemism, and a biodiversity hotspot in New Guinea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about findings from constrained mtDNA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "3e3abba7-38cc-46e5-9ddf-0ece25ea86ef",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C10",
+      "claim": "The number of known insects surpasses that of all other terrestrial groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of known insects surpasses that of all other terrestrial groups (Mora et al., 2011), and we need much more detailed information to fully understand their diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Mora et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "47f92879-1e54-4422-b34f-27a2af7bd576",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C11",
+      "claim": "The majority of insect species remain undescribed.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the available biodiversity data are far from complete, and the majority of insect species remain undescribed (Novotny et al., 2006; Srivathsan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Novotny et al., 2006 and Srivathsan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "9ee10cef-4543-4bb5-96a0-f2fd59801cd4",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C12",
+      "claim": "Robust phylogenetic hypotheses are lacking for most insect lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, robust phylogenetic hypotheses are lacking for most lineages, and the genera and tribes are often artificial assemblages which are not relevant to evolutionary and biodiversity research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the current state of phylogenetic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "d27984e8-6a88-4b7d-91bb-33d02dab7e94",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C13",
+      "claim": "Descriptive, morphology-based insect systematics is not keeping pace with the rapid loss and degradation of natural habitats.",
+      "claim_type": "EXPLICIT",
+      "source": "Descriptive, morphology-based insect systematics is not keeping pace with the rapid loss and degradation of natural habitats (Theng et al., 2020), and with the ongoing decline in insect abundance as a result of human activities and climate change (van Klink et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Theng et al., 2020 and van Klink et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "daa1248a-3810-431a-b8e1-6f35a96148f2",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C14",
+      "claim": "Zootaxa published almost 30,000 studies describing >60,000 new species in 2001\u20132020.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest taxonomic journal, Zootaxa, published almost 30,000 studies describing >60,000 new species and these represent over a quarter of all new animal species reported in 2001\u20132020 (Zhang, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Zhang, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "d5d3e81c-66ea-417a-9fc0-fbc55c0fbb18",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C15",
+      "claim": "Zootaxa publications represent over a quarter of all new animal species reported in 2001\u20132020.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest taxonomic journal, Zootaxa, published almost 30,000 studies describing >60,000 new species and these represent over a quarter of all new animal species reported in 2001\u20132020 (Zhang, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Zhang, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "3bd4f42e-d1c1-4c89-a62b-342c8205464b",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C16",
+      "claim": "On average, only two new species are reported in a taxonomic publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these numbers are impressive, they also show how labor-intensive is taxonomic research if, in average, only two new species are reported in a publication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation based on the numbers provided about Zootaxa publications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "29f4f317-d6c1-4951-a4b9-2b810ff4bd01",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C17",
+      "claim": "DNA data are indisputably a valuable source for modern biodiversity research.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA data are indisputably a valuable source for modern biodiversity research, and they can address both shallow and deep relationships (Tautz et al., 2003; Hajibabaei et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Tautz et al., 2003 and Hajibabaei et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "8ee282be-5ac2-4847-a23e-43aea2cce763",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C18",
+      "claim": "DNA data can address both shallow and deep relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA data are indisputably a valuable source for modern biodiversity research, and they can address both shallow and deep relationships (Tautz et al., 2003; Hajibabaei et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Tautz et al., 2003 and Hajibabaei et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "4b513b50-9efd-40e2-9024-09801c596790",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C19",
+      "claim": "Short fragments are often unsuitable for the building of deep phylogenies.",
+      "claim_type": "EXPLICIT",
+      "source": "But the short fragments are often unsuitable for the building of deep phylogenies and large genomic datasets need to be used (McKenna et al., 2019; Baca et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to McKenna et al., 2019 and Baca et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "e209c0b1-83ff-479a-a2fd-c879505b9b51",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C20",
+      "claim": "Large genomic datasets need to be used for building deep phylogenies.",
+      "claim_type": "EXPLICIT",
+      "source": "But the short fragments are often unsuitable for the building of deep phylogenies and large genomic datasets need to be used (McKenna et al., 2019; Baca et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to McKenna et al., 2019 and Baca et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "9ab0e3b3-eecf-4e9d-b23d-017171686478",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C21",
+      "claim": "Metriorrhynchini contains >1500 recognised species.",
+      "claim_type": "EXPLICIT",
+      "source": "This net-winged beetle tribe contains >1500 recognised species, mostly found in the Old-World tropics (Figure 1A), and their classification is complicated by the complex taxonomic history (Bocak et al., 2020; see Appendix introductory information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the number of recognized species in the tribe.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "76250b80-9461-4c68-8e6c-c3618581b1fb",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C22",
+      "claim": "Metriorrhynchini are mostly found in the Old-World tropics.",
+      "claim_type": "EXPLICIT",
+      "source": "This net-winged beetle tribe contains >1500 recognised species, mostly found in the Old-World tropics (Figure 1A), and their classification is complicated by the complex taxonomic history (Bocak et al., 2020; see Appendix introductory information).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about distribution supported by reference to Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "cc5fdf50-dca5-49c4-9af7-da528f463a7f",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C23",
+      "claim": "The classification of Metriorrhynchini is complicated by complex taxonomic history.",
+      "claim_type": "EXPLICIT",
+      "source": "This net-winged beetle tribe contains >1500 recognised species, mostly found in the Old-World tropics (Figure 1A), and their classification is complicated by the complex taxonomic history (Bocak et al., 2020; see Appendix introductory information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Bocak et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "061353e7-19d1-4c14-ac47-c7baf73df3b5",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C24",
+      "claim": "The phenetic plasticity of Metriorrhynchini is relatively high.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenetic plasticity of Metriorrhynchini is relatively high (Figure 1B\u2013D), but many distant species resemble each other due to convergent selection in Mullerian rings (Bocek et al., 2019; Motyka et al., 2020; Motyka et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement supported by reference to Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "6ad838ea-1efc-414c-881b-475a1032a0bd",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C25",
+      "claim": "Many distant Metriorrhynchini species resemble each other due to convergent selection in Mullerian rings.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenetic plasticity of Metriorrhynchini is relatively high (Figure 1B\u2013D), but many distant species resemble each other due to convergent selection in Mullerian rings (Bocek et al., 2019; Motyka et al., 2020; Motyka et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Bocek et al., 2019; Motyka et al., 2020; Motyka et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "a438b63d-3613-4834-ae41-f15bfb136e1a",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C26",
+      "claim": "There are over 40 genera in the Metriorrhynchini tribe.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are over 40 genera in the tribe, three-quarters of the species have been described in five ambiguously defined genera (Xylobanus, Cautires, Trichalus, Metriorrhynchus, and Cladophorus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the number of genera in the tribe.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "185fd740-1a4e-4e7f-b57c-922198bdb5fc",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C27",
+      "claim": "Three-quarters of Metriorrhynchini species have been described in five ambiguously defined genera.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are over 40 genera in the tribe, three-quarters of the species have been described in five ambiguously defined genera (Xylobanus, Cautires, Trichalus, Metriorrhynchus, and Cladophorus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the distribution of species across genera.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "ad9c045b-aca8-409a-b14d-fd06d6728ddb",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C28",
+      "claim": "Sometimes a single Metriorrhynchini genus contains species from different subtribes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sometimes a single genus contains species from different subtribes (Bocak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Bocak et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "9a23ceca-c025-46e5-8086-80daa239b854",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C29",
+      "claim": "The authors monitored almost 800 localities.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we monitored almost 800 localities, 696 of them with occurrences of the Metriorrhynchini (Tabs. 1, Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the number of localities monitored.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "780ae3de-dfbe-43a1-8209-1021d22740d8",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C30",
+      "claim": "696 localities had occurrences of Metriorrhynchini.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we monitored almost 800 localities, 696 of them with occurrences of the Metriorrhynchini (Tabs. 1, Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the number of localities with Metriorrhynchini.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "761b8a1c-7490-4741-b460-958cabfb10ae",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C31",
+      "claim": "The densest sampling is available from Sundaland and New Guinea.",
+      "claim_type": "EXPLICIT",
+      "source": "The densest sampling is available from the Sundaland and New Guinea, while India and the Afrotropical region are under-sampled (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about sampling density supported by reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "c970b915-759e-437b-86cb-e0bb38b8e905",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C32",
+      "claim": "India and the Afrotropical region are under-sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "The densest sampling is available from the Sundaland and New Guinea, while India and the Afrotropical region are under-sampled (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about sampling density supported by reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "b449396d-4cca-406d-b28b-b533b177d371",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C33",
+      "claim": "The phylogenomic dataset contained 35 Metriorrhynchini terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenomic dataset contained 35 Metriorrhynchini terminals (Appendix 1\u2014table 2), seven outgroups, and ~4200 orthologs (1.9\u20135.7 \u00d7 106 aligned positions; Supplementary file 1; Appendix 1\u2014table 3; Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the composition of the phylogenomic dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "48766f37-a7e8-4e61-beb8-6f24f5c21983",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C34",
+      "claim": "The phylogenomic dataset contained seven outgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenomic dataset contained 35 Metriorrhynchini terminals (Appendix 1\u2014table 2), seven outgroups, and ~4200 orthologs (1.9\u20135.7 \u00d7 106 aligned positions; Supplementary file 1; Appendix 1\u2014table 3; Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the composition of the phylogenomic dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "f15060e4-7148-42fb-b633-6d42dff02dad",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C35",
+      "claim": "The phylogenomic dataset contained ~4200 orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenomic dataset contained 35 Metriorrhynchini terminals (Appendix 1\u2014table 2), seven outgroups, and ~4200 orthologs (1.9\u20135.7 \u00d7 106 aligned positions; Supplementary file 1; Appendix 1\u2014table 3; Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the composition of the phylogenomic dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "d5316a79-3e61-426e-bf30-94b14c854aec",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C36",
+      "claim": "Phylogenomic analyses resolved three subtribes: Metanoeina, Metriorrhynchina, and Cautirina.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenomic analyses resolved three subtribes (Metanoeina [Metriorrhynchina, Cautirina]), and five clades were regularly recovered within the Metriorrhynchina, that is, the hereby defined procautirines, leptotrichalines, trichalines, porrostomines, and cladophorines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of phylogenomic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "3f2d24a9-7ee8-4e16-92f7-edc8807a39f8",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C37",
+      "claim": "Five clades were regularly recovered within Metriorrhynchina: procautirines, leptotrichalines, trichalines, porrostomines, and cladophorines.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenomic analyses resolved three subtribes (Metanoeina [Metriorrhynchina, Cautirina]), and five clades were regularly recovered within the Metriorrhynchina, that is, the hereby defined procautirines, leptotrichalines, trichalines, porrostomines, and cladophorines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of phylogenomic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "413d8264-3e0c-4738-a488-40dcf33d6335",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C38",
+      "claim": "All phylogenomic analyses question the definitions of some species rich genera.",
+      "claim_type": "EXPLICIT",
+      "source": "All phylogenomic analyses question the definitions of some species rich genera (Appendix 1\u2014figures 1\u20138) that are either polyphyletic (e.g. Cladophorus; 131 described species, most of them recovered in the Ditua subclade) or paraphyletic (Metriorrhynchus as a grade and Porrostoma in the terminal position; 194 species, see Figure 2A and B, Appendix 1\u2014figures 1\u20138).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of phylogenomic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "5b310cab-18be-4337-8d31-304bc9753754",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C39",
+      "claim": "Cladophorus is polyphyletic.",
+      "claim_type": "EXPLICIT",
+      "source": "All phylogenomic analyses question the definitions of some species rich genera (Appendix 1\u2014figures 1\u20138) that are either polyphyletic (e.g. Cladophorus; 131 described species, most of them recovered in the Ditua subclade) or paraphyletic (Metriorrhynchus as a grade and Porrostoma in the terminal position; 194 species, see Figure 2A and B, Appendix 1\u2014figures 1\u20138).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of phylogenomic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "194a7ee7-52b8-49a2-a611-1bc4ae80bcd5",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C40",
+      "claim": "Cladophorus has 131 described species.",
+      "claim_type": "EXPLICIT",
+      "source": "All phylogenomic analyses question the definitions of some species rich genera (Appendix 1\u2014figures 1\u20138) that are either polyphyletic (e.g. Cladophorus; 131 described species, most of them recovered in the Ditua subclade) or paraphyletic (Metriorrhynchus as a grade and Porrostoma in the terminal position; 194 species, see Figure 2A and B, Appendix 1\u2014figures 1\u20138).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the number of described species in Cladophorus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "733af257-5070-4d6e-aee6-0df214c45361",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C41",
+      "claim": "Most Cladophorus species were recovered in the Ditua subclade.",
+      "claim_type": "EXPLICIT",
+      "source": "All phylogenomic analyses question the definitions of some species rich genera (Appendix 1\u2014figures 1\u20138) that are either polyphyletic (e.g. Cladophorus; 131 described species, most of them recovered in the Ditua subclade) or paraphyletic (Metriorrhynchus as a grade and Porrostoma in the terminal position; 194 species, see Figure 2A and B, Appendix 1\u2014figures 1\u20138).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of phylogenomic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "5b53a133-f496-4832-9f7b-214729443d5a",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C42",
+      "claim": "Metriorrhynchus is paraphyletic.",
+      "claim_type": "EXPLICIT",
+      "source": "All phylogenomic analyses question the definitions of some species rich genera (Appendix 1\u2014figures 1\u20138) that are either polyphyletic (e.g. Cladophorus; 131 described species, most of them recovered in the Ditua subclade) or paraphyletic (Metriorrhynchus as a grade and Porrostoma in the terminal position; 194 species, see Figure 2A and B, Appendix 1\u2014figures 1\u20138).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of phylogenomic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "bc9300b2-0f73-4e13-bcc9-6471460fa68d",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C43",
+      "claim": "The mtDNA database contained >11,500 mtDNA fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "The mtDNA database contained >11,500 mtDNA fragments (5935 cox1, 2381 rrnL, and 3205 nad5) representing 6429 terminals (2930 aligned positions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the composition of the mtDNA database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "acd83101-b0ce-40db-a21d-4f56b2203e82",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C44",
+      "claim": "The mtDNA database represented 6429 terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "The mtDNA database contained >11,500 mtDNA fragments (5935 cox1, 2381 rrnL, and 3205 nad5) representing 6429 terminals (2930 aligned positions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the composition of the mtDNA database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "c7d717c4-9b73-4246-90b9-8c4ff73cb0ad",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C45",
+      "claim": "Using 2% and 5% thresholds, 34\u201337 mOTUs were identified in the Metanoeina clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the applied 2% and 5% thresholds, we identified 34\u201337 mOTUs in the Metanoeina clade and 369\u2013456 mOTUs in Cautirina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of mOTU delimitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "73c8fc5c-a242-4d72-ad03-5b7c843cfb4c",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C46",
+      "claim": "Using 2% and 5% thresholds, 369\u2013456 mOTUs were identified in Cautirina.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the applied 2% and 5% thresholds, we identified 34\u201337 mOTUs in the Metanoeina clade and 369\u2013456 mOTUs in Cautirina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of mOTU delimitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "fb0258ff-d6de-4b56-a1af-508863ac020a",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C47",
+      "claim": "The major Metriorrhynchina clade included 1376\u20131763 mOTUs.",
+      "claim_type": "EXPLICIT",
+      "source": "The major Metriorrhynchina clade (1376\u20131763 mOTUs) included procautirines, leptotrichalines, trichalines, porrostomines, and cladophorines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of mOTU delimitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "b2cc9b6d-9569-4d65-8ae0-35e26d02f57b",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C48",
+      "claim": "The kassemiines and five small clades comprised 69\u201389 mOTUs in total.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we identified several deeply rooted lineages, the kassemiines, and another five small clades (69\u201389 mOTUs in total; Source data 2), each of which comprised a limited number of species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of mOTU delimitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "d11087da-8fb7-4cde-97ea-3a403069e853",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C49",
+      "claim": "The number of mOTUs does not include ~50 mOTUs for which cox1 was unavailable.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of mOTUs does not include ~50 mOTUs for which cox1 was unavailable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of the mOTU count.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "40f6c2c9-7801-4912-ba1c-98b51ccb6e24",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C50",
+      "claim": "Repeated runs with different starting seeds identified terminals with unstable positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeated runs with different starting seeds identified terminals with unstable positions (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about the results of phylogenetic analyses with reference to Figure 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "dd6ec529-8efa-44c2-be05-fb6d826365d9",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C51",
+      "claim": "The major clades were generally stable in repeated runs.",
+      "claim_type": "EXPLICIT",
+      "source": "The major clades were generally stable, whereas small, deeply rooted clades were prone to 'wandering' around the tree, as were distinct singletons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the stability of phylogenetic results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "a1847ab1-1939-4986-8719-55729c96c1b5",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C52",
+      "claim": "Small, deeply rooted clades were prone to 'wandering' around the tree.",
+      "claim_type": "EXPLICIT",
+      "source": "The major clades were generally stable, whereas small, deeply rooted clades were prone to 'wandering' around the tree, as were distinct singletons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the stability of phylogenetic results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "2250fd61-fb9b-4b53-af6c-e38f84aa31c0",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C53",
+      "claim": "The unconstrained analysis of mitochondrial data yielded a topology with a high number of terminals that were recovered in positions incongruent with their morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "The unconstrained analysis of mitochondrial data yielded a topology with a high number of terminals that were recovered in positions incongruent with their morphology (Figure 3D and E, Source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about the results of unconstrained analysis with reference to Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "93336cc9-754d-4203-a134-d69df97353d1",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C54",
+      "claim": "The constrained analysis produced a topology with a much lower proportion of terminals in dubious positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The same dataset, when analyzed using the constrained position of 35 terminals (based on their relative relationships inferred by prior phylogenomic analyses), produced a topology with a much lower proportion of terminals in dubious positions (Figure 3C, Source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about the results of constrained analysis with reference to Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "0eda5610-3ae2-4122-8f14-c294ccc03612",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C55",
+      "claim": "For the Metriorrhynchini, 1848 and 2345 mOTUs were identified using the 5% and 2% thresholds, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Metriorrhynchini, we identified 1848 and 2345 mOTUs using the 5% and 2% thresholds, respectively (Appendix 1\u2014figure 14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of mOTU delimitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "30241049-2f06-40fe-bd35-9638f6c2d253",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C56",
+      "claim": "Using both 2% and 5% thresholds, the numbers of putative species surpass the numbers of species reported in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Using both thresholds, 2% and 5%, the numbers of putative species surpass the numbers of species reported in the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement comparing mOTU counts to described species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "bdf2c140-915c-470d-85e3-b555094abfdd",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C57",
+      "claim": "Only four mOTUs have been recorded in two landmasses separated by a deep-sea (> 200 m).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed very high species turnover even if 5% threshold was applied for delimitation. Only four mOTUs have been recorded in two landmasses separated by a deep-sea (> 200 m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about species turnover and distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "1064f40b-a398-45a7-846e-7ac17f3a259c",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C58",
+      "claim": "Only sixteen mOTUs were distributed across two landmasses separated by an inundated shelf (sea depth <100 m).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, only sixteen mOTUs were distributed across two landmasses separated by an inundated shelf (sea depth <100 m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about species turnover and distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "ca6c409d-601b-402d-b5a7-51159a7d72df",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C59",
+      "claim": "New Guinea is a centre of species diversity of the Metriorrhynchini with 1,105 putative species at 5% threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The centres of species diversity of the Metriorrhynchini are New Guinea (1,105 putative spp. at 5% threshold) and the seasonally to perennially humid areas of the Sundaland (202 spp. at 5% threshold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about species diversity centers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "e5cce840-f126-48b7-a814-63bdc77ed6a6",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C60",
+      "claim": "Sundaland is a centre of species diversity of the Metriorrhynchini with 202 species at 5% threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The centres of species diversity of the Metriorrhynchini are New Guinea (1,105 putative spp. at 5% threshold) and the seasonally to perennially humid areas of the Sundaland (202 spp. at 5% threshold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about species diversity centers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "e3500461-30e6-4ef2-9bb4-aaadb73ee799",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C61",
+      "claim": "The dated subtree indicates the recent origin of morphological divergence in Cautires apterus.",
+      "claim_type": "EXPLICIT",
+      "source": "The dated subtree indicates the recent origin of morphological divergence (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about dating results with reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "b75c8f5e-18f7-4419-bcfa-c38a248fd6b5",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C62",
+      "claim": "The origin of polymorphism in an unidentified procautirine genus is putatively very recent.",
+      "claim_type": "EXPLICIT",
+      "source": "The origin of the polymorphism is putatively very recent (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about dating results with reference to Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "5e0860dd-31fb-4757-bb73-f6dfc5d98b4c",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C63",
+      "claim": "Molecular data cannot replace morphology-based taxonomy.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular data cannot replace morphology-based taxonomy (Figure 3C\u2013D; Thomson et al., 2018), but the analyses of our dataset complement and facilitate traditional biodiversity research in several directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the relationship between molecular and morphological data, supported by citation to Thomson et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "61249f56-8f8d-43de-b94f-a86de13bd483",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C64",
+      "claim": "The densely sampled phylogeny identifies tribal and generic limits.",
+      "claim_type": "EXPLICIT",
+      "source": "The densely sampled phylogeny identifies tribal and generic limits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the utility of the phylogeny.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "b69b14e7-7e3a-4788-a227-a101c44ea88a",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C65",
+      "claim": "The phylogeny provides a useful foundation for detailed taxonomic research through the identification of weak areas in earlier classifications.",
+      "claim_type": "EXPLICIT",
+      "source": "It provides a useful foundation for detailed taxonomic research through the identification of weak areas in earlier classifications and points out the clades with undescribed diversity and non-monophyletic genera (e.g. several hundred species of Ditua and paraphyletic Metriorrhynchus; Figure 3, Appendix 1\u2014figure 15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the utility of the phylogeny.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "d929db79-b0da-4f59-8ad3-5c72a9f5601d",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C66",
+      "claim": "The analyses of species-rich datasets identify the areas with high species diversity as one of the critical conservation value parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the analyses of species-rich datasets identify the areas with high species diversity as one of the critical conservation value parameters (Table 2; Baselga, 2010; Srivathsan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the utility of the analyses, supported by citations to Baselga, 2010 and Srivathsan et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "300bc830-d5b2-4950-ab5e-6491bedc9266",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C67",
+      "claim": "Traditional taxonomic research costs time and money.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional taxonomic research costs time and money, and the number of newly described species is relatively low if we consider the enormous diversity of tropical insects (Novotny et al., 2006; Sangster and Luksenburg, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the limitations of traditional taxonomy, supported by citations to Novotny et al., 2006 and Sangster and Luksenburg, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "ceab3b6a-18fe-4ec7-a0b0-6ce9ac415a4a",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C68",
+      "claim": "The number of newly described species is relatively low considering the enormous diversity of tropical insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional taxonomic research costs time and money, and the number of newly described species is relatively low if we consider the enormous diversity of tropical insects (Novotny et al., 2006; Sangster and Luksenburg, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the limitations of traditional taxonomy, supported by citations to Novotny et al., 2006 and Sangster and Luksenburg, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "b27abd72-6cef-4578-b2a4-1e75cca435d5",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C69",
+      "claim": "A high turnover indicates a large proportion of hidden diversity, especially in tropical mountains.",
+      "claim_type": "EXPLICIT",
+      "source": "A high turnover indicates a large proportion of hidden diversity, especially in tropical mountains (Merckx et al., 2015; Mastretta-Yanes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Merckx et al., 2015 and Mastretta-Yanes et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "609cdb03-ccff-49a6-8c19-9af7e72fd4a7",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C70",
+      "claim": "Mountain fauna is especially vulnerable to climate change.",
+      "claim_type": "EXPLICIT",
+      "source": "Mountain fauna is especially vulnerable to climate change and its inventorying is urgently needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the vulnerability of mountain fauna.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "e408e371-6ca2-459f-b42b-88c4818e0d40",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C71",
+      "claim": "302 Metriorrhynchini species have been described over the past three decades.",
+      "claim_type": "EXPLICIT",
+      "source": "The Metriorrhynchini has recently received considerable attention in taxonomic studies, and 302 species have been described by several authors over the past three decades, making a total of 1574 formally described species (Table 1, Kazantsev, 2010; Bocak et al., 2020; Appendix introductory information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about recent taxonomic activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "74003476-1005-46a8-8110-54b92ddb3f3b",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C72",
+      "claim": "There are 1574 formally described Metriorrhynchini species in total.",
+      "claim_type": "EXPLICIT",
+      "source": "The Metriorrhynchini has recently received considerable attention in taxonomic studies, and 302 species have been described by several authors over the past three decades, making a total of 1574 formally described species (Table 1, Kazantsev, 2010; Bocak et al., 2020; Appendix introductory information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the total number of described species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "b3be7353-2ec0-4b7d-8b47-1b046b4f0a43",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C73",
+      "claim": "The distance-based analysis indicates the presence of almost 2000 mOTUs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the recent 24% increase in described diversity appears substantial, the distance-based analysis indicates the presence of almost 2000 mOTUs (Appendix 1\u2014figure 14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of distance-based analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "8a424c13-60b3-4ceb-9efe-eab2d977f1c3",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C74",
+      "claim": "An additional ~50 putative species (494 terminals) were identified based on divergent morphology because of the absence of cox1.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional ~50 putative species (494 terminals) were identified, but this identification was only based on divergent morphology because of the absence of cox1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about additional species identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "cc707b11-c454-4591-9183-42b8314c7c78",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C75",
+      "claim": "The sampling represents less than 50% of all known species.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that our sampling represents only a subset of all known species (< 50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Estimation based on comparison of sampled and described species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "51f87c39-60ac-4387-8a44-758841c02145",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C76",
+      "claim": "The dataset contains ~1000 undescribed species.",
+      "claim_type": "EXPLICIT",
+      "source": "It means that the dataset contains ~1000 undescribed species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Estimation based on comparison of mOTUs and described species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "5b7a8aa2-a550-47fb-b87a-d3e6e098d12a",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C77",
+      "claim": "At the current rate, formal morphological descriptions of an additional 1000 species would take decades or hundreds of years.",
+      "claim_type": "EXPLICIT",
+      "source": "At the current rate, formal morphological descriptions of an additional 1000 species would take decades or hundreds of years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Projection based on current rates of species description.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "f256d589-99cf-484e-a472-cd6428f89a74",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C78",
+      "claim": "Currently undocumented diversity might be lost long before it can be catalogued.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a very long time in the context of the ongoing deforestation and fragmentation of natural habitats, and currently undocumented diversity might be lost long before it can be catalogued (Brooks et al., 2002; Sodhi et al., 2004; Ceballos et al., 2015; Theng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Brooks et al., 2002; Sodhi et al., 2004; Ceballos et al., 2015; Theng et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "c8eb8b8a-8fbd-4483-8ae2-889aa426bd4e",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C79",
+      "claim": "The rapid DNA-based inventory is an effective shortcut for obtaining basic information on the true diversity of tropical beetles.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid DNA-based inventory is an effective shortcut for obtaining basic information on the true diversity of tropical beetles and for setting a benchmark for future biodiversity re-evaluations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the utility of DNA-based inventory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "241aee84-f903-4b36-ad87-955ec9478545",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C80",
+      "claim": "Tropical rainforests currently cover most of New Guinea.",
+      "claim_type": "EXPLICIT",
+      "source": "Tropical rainforests currently cover most of New Guinea, a tectonically young island that has not been considered a biodiversity hotspot for vertebrates (Myers et al., 2000; Hall, 2011; Toussaint et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the current state of New Guinea.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "ec8fcb6f-63f8-46bb-8958-7cd795ceaa66",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C81",
+      "claim": "New Guinea has not been considered a biodiversity hotspot for vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Tropical rainforests currently cover most of New Guinea, a tectonically young island that has not been considered a biodiversity hotspot for vertebrates (Myers et al., 2000; Hall, 2011; Toussaint et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Myers et al., 2000; Hall, 2011; Toussaint et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "489329fe-34ec-4ed1-aaa0-707bd0db0a63",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C82",
+      "claim": "The New Guinean net-winged beetle fauna is phylogenetically diverse, spatially heterogeneous, and extremely rich.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of net-winged beetles, we show that the New Guinean fauna is phylogenetically diverse, spatially heterogeneous, and extremely rich as regards both the number of species and the endemic genera (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the characteristics of the New Guinean fauna.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "d08b2ae7-4d8e-435f-8037-de6b0463c87b",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C83",
+      "claim": "The large clades of New Guinean species indicate that the diversification of major lineages preceded the uplift of the islands.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the large clades of New Guinean species indicate that the diversification of major lineages preceded the uplift of the islands, and possibly started on the northern margin of the Australian craton and adjacent islands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on phylogenetic patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "90409551-744c-41c4-b173-38a8a2fadd2a",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C84",
+      "claim": "Southeast Asia is a centre of phylogenetic diversity at the tribal level.",
+      "claim_type": "EXPLICIT",
+      "source": "Southeast Asia is a centre of phylogenetic diversity at the tribal level; its fauna contains all principal lineages and the highest diversity of Cautirina but is smaller than those of New Guinea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the characteristics of the Southeast Asian fauna.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "03853d0b-692f-4a9b-a131-c870ca791229",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C85",
+      "claim": "The Afrotropical and Palearctic regions represent only recently populated low-diversity outposts.",
+      "claim_type": "EXPLICIT",
+      "source": "The Afrotropical and Palearctic regions represent only recently populated low-diversity outposts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the characteristics of the Afrotropical and Palearctic faunas.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "e2562f00-85cf-4aef-908c-94b85f327ee0",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C86",
+      "claim": "Detailed data on Metriorrhynchini diversity indicate low dispersal propensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed data on Metriorrhynchini diversity indicate low dispersal propensity and this makes Metriorrhynchini a promising model for biogeographic studies (Ikeda et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about dispersal propensity supported by citation to Ikeda et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "1d96486c-cf9f-4397-b789-38a7c3c1185a",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C87",
+      "claim": "The densely sampled phylogeny did not find any long-distance dispersal events.",
+      "claim_type": "EXPLICIT",
+      "source": "Our densely sampled phylogeny did not find any long-distance dispersal events, in contrast to many studies of flying beetles (Balke et al., 2009; Jordal, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about dispersal patterns supported by citations to Balke et al., 2009 and Jordal, 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "88e9b3b0-c8d7-4cb8-8405-4594fb550b2c",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C88",
+      "claim": "Most recovered overseas dispersal events are limited to distances of less than 100 km and are commonly accompanied by speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recovered overseas dispersal events are limited to distances of less than 100 km and are commonly accompanied by speciation (Source data 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about dispersal patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "af008473-3c8c-4839-b728-dbe48a958f4f",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C89",
+      "claim": "The high proportion of erroneous placement of many taxa renders the distribution data cited in previous literature unsuitable for phylogeographic investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "The high proportion of erroneous placement of many taxa (Appendix 1\u2014figure 15; Bocak et al., 2020) renders the distribution data cited in previous literature unsuitable for phylogeographic investigations, and revision of the classification is important in order to understand the true distribution of individual taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the limitations of previous literature data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "80554cb4-1c26-4da7-9b6c-96cc38ba9d52",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C90",
+      "claim": "Net-winged beetles include several lineages in which females have lost the ability to completely metamorphose.",
+      "claim_type": "EXPLICIT",
+      "source": "Net-winged beetles include several lineages in which females have lost the ability to completely metamorphose (Bocak et al., 2008; Mcmahon and Hayward, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Bocak et al., 2008 and Mcmahon and Hayward, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "030a590b-f6f8-4875-a054-dc2017a80608",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C91",
+      "claim": "Cautires apterus may be the youngest neotenic taxon of all net-winged beetles (36.1 my).",
+      "claim_type": "EXPLICIT",
+      "source": "We used our data to place the East African Cautires apterus in a phylogenetic context, and the results indicated that it may be the youngest neotenic taxon of all net-winged beetles (36.1 my, Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about dating results with reference to Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "f4f7b2d7-ad05-4db2-b561-301fca4b43c2",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C92",
+      "claim": "The extensive DNA database identified an extreme and previously unknown aposematic dimorphism in New Guinean metriorrhynchines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our extensive DNA database of metriorrhynchine diversity may also play an important role in the study of the evolution of mimicry. Our inventory identified an extreme and previously unknown aposematic dimorphism in New Guinean metriorrhynchines (Figure 4; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about the discovery of dimorphism with reference to Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "80c2441d-0be1-41e9-86ce-e2d7cce630d8",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C93",
+      "claim": "The shift to dimorphism was very recent (3.0 mya at the earliest).",
+      "claim_type": "EXPLICIT",
+      "source": "The placement of sexually dimorphic species in the phylogeny suggests that the shift to dimorphism was very recent (3.0 mya at the earliest) and began when both sexes were small-bodied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about dating results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "6b2d579e-dbfd-4281-be1a-d3504c207797",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C94",
+      "claim": "Mimetic sexual polymorphism is well understood in butterflies with non-mimetic males and mimetic females.",
+      "claim_type": "EXPLICIT",
+      "source": "Mimetic sexual polymorphism is well understood in butterflies with non-mimetic males and mimetic females (Kunte, 2008), but the advergence of males and females to different aposematic models has only recently been reported in two subfamilies of net-winged beetles (Motyka et al., 2018; Motyka et al., 2020; Motyka et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Kunte, 2008; Motyka et al., 2018; Motyka et al., 2020; Motyka et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "ca8819d5-a24d-4c1a-9e15-5b5841e80d5c",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C95",
+      "claim": "The advergence of males and females to different aposematic models has only recently been reported in two subfamilies of net-winged beetles.",
+      "claim_type": "EXPLICIT",
+      "source": "Mimetic sexual polymorphism is well understood in butterflies with non-mimetic males and mimetic females (Kunte, 2008), but the advergence of males and females to different aposematic models has only recently been reported in two subfamilies of net-winged beetles (Motyka et al., 2018; Motyka et al., 2020; Motyka et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Motyka et al., 2018; Motyka et al., 2020; Motyka et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "43f00ce5-e8e1-4220-a50a-d67eb1f28979",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C96",
+      "claim": "Divergent evolution in M\u00fcllerian systems appears to be more common in multi-pattern aposematic rings than was previously believed.",
+      "claim_type": "EXPLICIT",
+      "source": "Divergent evolution in M\u00fcllerian systems appears to be more common in multi-pattern aposematic rings than was previously believed when morphology was the sole source of information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "0079bb0a-87a1-4442-b9c7-dc3c161b8003",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C97",
+      "claim": "Priority areas for global conservation have usually been identified based on richness, species endemism and vulnerability of vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Priority areas for global conservation have usually been identified based on richness, species endemism and vulnerability of vertebrates (Myers et al., 2000; Holt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Myers et al., 2000 and Holt et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "18d19d48-7b18-4578-b7a9-268da0760327",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C98",
+      "claim": "Different patterns of biodiversity distribution can be revealed if other animal groups are studied.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that different patterns of biodiversity distribution can be revealed if other animal groups are studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assumption based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "6764a497-aa6f-4c28-a76a-1c805137cffb",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C99",
+      "claim": "Beetles are the most speciose group of animals but are much less known than vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model, beetles, is the most speciose group of animals but is much less known than vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the relative knowledge of beetles compared to vertebrates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "aab1f1a2-59ba-467e-b138-a2a644cd6f6c",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C100",
+      "claim": "The constrained position of less than 2% terminals increases the stability of tree topology.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the constrained position of less than 2% terminals increases the stability of tree topology and the congruence of molecular hypotheses with morphological traits (Appendix results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of constrained analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "a26f7805-6bbb-498f-a584-c4ab6d1042cf",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C101",
+      "claim": "The constrained position of less than 2% terminals increases the congruence of molecular hypotheses with morphological traits.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the constrained position of less than 2% terminals increases the stability of tree topology and the congruence of molecular hypotheses with morphological traits (Appendix results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the results of constrained analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "c024b1bf-4c10-43a2-ae65-90ba0e706d85",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C102",
+      "claim": "The voucher-based DNA entries established a framework for classifying samples from other studies, such as environmental sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "The voucher-based DNA entries established a framework for classifying samples from other studies, such as environmental sequencing (Linard et al., 2016; And\u00fajar et al., 2015; Arribas et al., 2016) and for subsequent morphology-based studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the utility of voucher-based DNA entries, supported by citations to Linard et al., 2016; And\u00fajar et al., 2015; Arribas et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "e1b0a53a-f0d3-4465-ba98-2a696ede027e",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C103",
+      "claim": "The literature records of tropical beetles cannot be used for biodiversity conservation and metanalyses without critical revision.",
+      "claim_type": "EXPLICIT",
+      "source": "Our large-scale inventory shows that the literature records of tropical beetles cannot be used for biodiversity conservation and metanalyses without critical revision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the limitations of literature records.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "f5ebace6-2c37-4676-ac44-f5b2c804a8f1",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C104",
+      "claim": "Focused field research and subsequent workflow steps can set a benchmark for future evaluation of spatiotemporal changes in biodiversity.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that if focused field research is conducted even by a small research group and subsequent workflow steps are applied to any hyperdiverse tropical group, the results can set a benchmark for future evaluation of spatiotemporal changes in biodiversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Suggestion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "cd46b29f-7c22-480a-b61f-57b8467c0531",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C105",
+      "claim": "About 10% of samples were provided by other researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "About 10% of samples were provided by other researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the source of samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "1c5c01bd-4cdc-43d1-882b-9a63f586200f",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C106",
+      "claim": "Tissues for transcriptomic analyses were fixed in the field.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissues for transcriptomic analyses were fixed in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "2320d634-2621-4b84-ad7d-66008dbfb84d",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C107",
+      "claim": "About 100 tissue samples were fixed and thirty-five of them were used for sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "About 100 tissue samples were fixed and thirty-five of them were used for sequencing (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the number of samples used for sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "6c1f2d4b-1f04-4af5-a39c-e9ab73f91809",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C108",
+      "claim": "Almost 7000 samples from 696 localities were included in the sequencing program to obtain short mtDNA fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost 7000 samples from 696 localities (Table 1) were included in the sequencing program to obtain short mtDNA fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the number of samples sequenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "083a81cc-a0ac-4b84-b7b6-5d1433d9ff85",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C109",
+      "claim": "6429 samples yielding at least a single fragment were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 6429 yielding at least a single fragment were included in the analysis (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the number of samples included in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "5ec4b076-4a80-4720-8437-42e2acc8b93d",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C110",
+      "claim": "Libraries for thirty transcriptomes were prepared by Novogene Co., Ltd. and sequenced on the HiSeq X-ten platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Libraries for thirty transcriptomes were prepared by Novogene Co., Ltd. (Beijing, China) and sequenced on the HiSeq X-ten platform (Illumina Inc, San Diego, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "bc2ff720-50b9-41fe-977a-a10ca2b8dde0",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C111",
+      "claim": "The total DNA of Metanoeus sp. and an unidentified Metriorrhynchina species was shotgun-sequenced on the HiSeq X-ten platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the total DNA (~33 Gb each) of Metanoeus sp. (Voucher code G19002) and an unidentified sample Metriorrhynchina species (Voucher JB0085) was shotgun-sequenced on the same platform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "8a693853-3de3-4283-9d5d-55b3767f3204",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C112",
+      "claim": "The ortholog set was collated by searching the OrthoDB 9.1 for single copy orthologs in six beetle genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The ortholog set was collated by searching the OrthoDB 9.1 (Zdobnov et al., 2017) for single copy orthologs in six beetle genomes (Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for ortholog identification, supported by citation to Zdobnov et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "0a4510ef-6192-4edb-afac-957d19bbafe1",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C113",
+      "claim": "From the recovered 4193 orthologs, terminal stop codons were removed, and internal stop codons at the translational and nucleotide levels were masked.",
+      "claim_type": "EXPLICIT",
+      "source": "From the recovered 4193 orthologs, terminal stop codons were removed, and internal stop codons at the translational and nucleotide levels were masked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the data processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "eb3747f2-89ac-4ea0-8fa4-6b709f792cee",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C114",
+      "claim": "The amino acid sequences were aligned using MAFFT v.7.471 with the L-INS-i algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino acid sequences were aligned using MAFFT v.7.471 with the L-INS-i algorithm (Katoh and Standley, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for alignment, supported by citation to Katoh and Standley, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "ce57bfc7-fb07-4433-aaf3-ebd4a850b870",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C115",
+      "claim": "The remaining 4109 alignments were retained for subsequent multispecies coalescent analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the remaining 4109 alignments were retained for subsequent multispecies coalescent analyses, and different concatenated datasets were generated for both amino acid and nucleotide levels using FasConCat-G v.1.4 (K\u00fcck and Longo, 2014; Appendix 1\u2014table 4 and Appendix methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the data used for analysis, supported by citation to K\u00fcck and Longo, 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "2e15d3bc-dc96-4a43-a3ca-fcdd5f6f8692",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C116",
+      "claim": "Phylogenetic reconstruction was performed using the maximum likelihood (ML) criterion with IQ-TREE 2.1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "For all datasets, phylogenetic reconstruction was performed using the maximum likelihood (ML) criterion with IQ-TREE 2.1.2 (Minh et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for phylogenetic reconstruction, supported by citation to Minh et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "6de595fa-5f08-4560-be43-6fc0578a6fe7",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C117",
+      "claim": "The Accurate Species Tree Algorithm (ASTRAL-III v.5.7.3) was used for coalescent species tree estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "For subsequent coalescent species tree estimation, the Accurate Species Tree Algorithm (ASTRAL-III v.5.7.3; Zhang et al., 2018) was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for coalescent analysis, supported by citation to Zhang et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "e6cc5173-3beb-4127-9742-0964aa020c87",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C118",
+      "claim": "Three fragments of mitochondrial genome were sequenced: cox1+ tRNA Leu+ cox2, rrnL+ tRNA Leu+ nad1, and nad5 and adjacent tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Three fragments of mitochondrial genome were sequenced: cox1+ tRNA Leu+ cox2 (~1100 bp), rrnL+ tRNA Leu+ nad1 (~800 bp), and ~1210 bp of nad5 and adjacent tRNA-Phe, tRNA-Glu, and tRNA-Ser mtDNA (the mtDNA fragments are further mentioned as rrnL, cox1, and nad5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the mtDNA fragments sequenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "aaa220c2-5350-41c2-9356-54480659beea",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C119",
+      "claim": "Altogether 6476 individuals were analyzed including some previously published.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether 6476 individuals were analyzed including some previously published (Sklenarova et al., 2013; Bocek and Bocak, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the number of individuals analyzed, supported by citations to Sklenarova et al., 2013 and Bocek and Bocak, 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "8d2d0c91-d948-4c00-90ea-b9058e8ddf6f",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C120",
+      "claim": "The cox1 gene fragment was used for OTU delimitation using CD-hit-est and different thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "The cox1 gene fragment was used to OTUs delimitation (Blaxter et al., 2005) using CD-hit-est (Fu et al., 2012) and different thresholds (from similarity 0.99\u20130.90 by 0.05 steps).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for OTU delimitation, supported by citations to Blaxter et al., 2005 and Fu et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "f4730304-abbc-4d39-b4e6-ac1d04b68b92",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C121",
+      "claim": "The results of the TSA/WGS analyses were used to constrain basal topology among major clades of Metriorrhynchini.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the TSA/WGS analyses were used to constrain basal topology among major clades of Metriorrhynchini in both analyses of datasets A and B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for constrained analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "97cc9fa2-beff-4027-ba7b-89162ccfb997",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C122",
+      "claim": "Unconstrained analyses of the datasets were run with identical settings except -g option to compare results.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we ran unconstrained analyses of the above-mentioned datasets with identical settings except -g option to compare results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for unconstrained analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "ee106abc-686d-4f1d-a316-23903e00b794",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "claim_id": "C123",
+      "claim": "Constrained tree search was replicated nineteen-times and resulting trees were compared using Robinson\u2013Foulds distances.",
+      "claim_type": "EXPLICIT",
+      "source": "We replicated constrained tree search nineteen-times and compared resulting trees using Robinson\u2013Foulds distances in R package phangorn (Schliep, 2011; Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methods used for tree comparison, supported by citation to Schliep, 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "131e0652-bf5f-480c-9371-446b558f04b2",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study assembled a large-scale dataset of Metriorrhynchini beetles through extensive field sampling and molecular sequencing. The dataset included ~6500 terminals from almost 800 localities (696 with Metriorrhynchini occurrences), with densest sampling from Sundaland and New Guinea. The mtDNA database contained >11,500 fragments representing 6429 terminals, and distance-based analysis identified 1848-2345 mOTUs depending on threshold. The authors estimate ~1000 undescribed species in the dataset, representing less than 50% of all known species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sampling effort and dataset composition are well-documented with specific numbers (C2, C29, C30, C43, C44, C55, C73). The claim of ~1000 undescribed species (C4, C76) is supported by comparison between mOTU counts and described species numbers (C72), though this is an estimate based on assumptions about sampling completeness (C75). The geographic sampling bias is acknowledged (C31, C32), and methodological details are provided (C105-C109).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenomic analyses using 35 Metriorrhynchini terminals, seven outgroups, and ~4200 orthologs resolved three subtribes (Metanoeina, Metriorrhynchina, Cautirina) and five clades within Metriorrhynchina (procautirines, leptotrichalines, trichalines, porrostomines, cladophorines). The analyses revealed that some species-rich genera are polyphyletic (e.g., Cladophorus with 131 described species) or paraphyletic (e.g., Metriorrhynchus).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The phylogenomic dataset composition is clearly stated (C33-C35), and methods are well-documented (C110-C117). The resolution of three subtribes and five clades (C36, C37) is supported by multiple analytical approaches including ML and coalescent methods. The finding that current generic classifications are problematic (C38-C42) is supported by phylogenomic data, though the authors acknowledge some uncertainty in relationships between certain clades (Figure 2C-D).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using constrained mtDNA analysis with three mitochondrial fragments (cox1, rrnL, nad5), the study identified 34-37 mOTUs in Metanoeina, 369-456 in Cautirina, and 1376-1763 in Metriorrhynchina using 2% and 5% thresholds. The analysis included 6476 individuals and used phylogenomic constraints on 35 terminals to stabilize the topology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mOTU counts are clearly reported for each subtribe (C45-C48) with appropriate caveats about missing data (C49). The methodological approach is well-documented (C118-C123), including the use of constraints from phylogenomic analyses. The study appropriately tested both constrained and unconstrained analyses with multiple replicates to assess stability. The choice of 2% and 5% thresholds is pragmatic though somewhat arbitrary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "9f1ff095-2752-46f8-9454-2b2837f092e1",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Constrained phylogenetic analysis using positions of 35 terminals (<2% of total) from phylogenomic data significantly improved tree stability and congruence with morphology compared to unconstrained analysis. Major clades were stable across repeated runs, while small deeply rooted clades showed positional instability. Unconstrained mtDNA analysis produced many terminals in positions incongruent with morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between constrained and unconstrained analyses is well-documented (C53, C54) with quantitative assessment using Robinson-Foulds distances and multiple replicate runs (C50, C123). The claim that constraining <2% of terminals improves stability (C100, C101) is supported by the data, though the degree of improvement varies by clade (C51, C52). The finding highlights an important methodological advance for large-scale phylogenetic studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study identified very high species turnover with only 4 mOTUs shared between landmasses separated by deep sea and 16 between landmasses separated by shallow sea. New Guinea emerged as the primary biodiversity hotspot with 1,105 putative species at 5% threshold, followed by Sundaland with 202 species. The New Guinean fauna is phylogenetically diverse, spatially heterogeneous, and extremely rich, with diversification of major lineages likely preceding island uplift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The species turnover data (C57, C58) are specific and well-documented. The identification of New Guinea as a biodiversity hotspot (C59, C82) is strongly supported by the data, showing substantially higher diversity than previously described (Table 2). The biogeographic interpretations (C83-C85) are reasonable inferences from phylogenetic patterns, though they would benefit from formal dating analyses. The contrast with vertebrate-based hotspot designations (C81) is noteworthy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "83c85b6b-f722-45d9-bde6-b174e6cec5c8",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Despite 302 species being described in the past three decades (total 1574 described species), the study reveals that formal morphological description of the estimated ~1000 additional undescribed species would take decades to hundreds of years at current rates. The authors argue that rapid DNA-based inventory is an effective shortcut for obtaining biodiversity information and that literature records cannot be used without critical revision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between described species and estimated diversity (C71, C72, C73, C76) is well-supported by data. The projection about time required for formal descriptions (C77) is a reasonable extrapolation based on current rates (C16). The argument for DNA-based approaches (C79) is supported by the study's results, though the authors appropriately note that molecular data cannot replace morphology (C63). The critique of literature records (C103) is supported by findings of polyphyletic genera and misidentifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "9dcce31b-08ae-4a80-8e65-e1e3e1edacd8",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study found that Metriorrhynchini exhibit low dispersal propensity with no long-distance dispersal events detected. Most overseas dispersal events are limited to <100 km and commonly accompanied by speciation. Previous literature distribution data are unsuitable for phylogeographic investigations due to high proportions of erroneous taxonomic placements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The findings on dispersal patterns (C86-C88) are supported by the phylogenetic data and geographic distributions, though the absence of long-distance dispersal (C87) is a negative result that depends on sampling completeness. The critique of previous literature (C89) is well-supported by the phylogenetic findings of polyphyletic genera and misidentifications. These results have important implications for biogeographic studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "19e2d89d-c06b-4c6f-bfca-d6209ec607e4",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study identified Cautires apterus as potentially the youngest neotenic taxon of net-winged beetles (36.1 my) and discovered extreme, previously unknown aposematic dimorphism in New Guinean metriorrhynchines. The shift to dimorphism was very recent (\u22643.0 mya) and began when both sexes were small-bodied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the phylogenetic placement of C. apterus is supported by the data (C91), the dating to 36.1 my and claim of being the 'youngest' neotenic taxon requires comparison with other neotenic lineages that is not fully presented. The discovery of sexual dimorphism (C92) is well-documented with specimens and DNA data (Figure 4), and the recent origin (C93) is supported by phylogenetic placement, though formal dating analyses would strengthen this claim. These are interesting findings but require additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "c30e73e6-4dd1-43eb-a9ea-44bf761ca63a",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study demonstrates that neither phylogenomic nor mtDNA data alone could answer questions on biodiversity and phylogeny, but their integration enabled robust delimitation of natural genus-group units and identification of areas with high species diversity. The phylogenomic backbone provides a foundation for taxonomic research by identifying weaknesses in earlier classifications, while molecular data complement but cannot replace morphology-based taxonomy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The necessity of combining data types (C5) is well-demonstrated by the study design and results. The utility of the phylogenomic backbone (C6, C64, C65) is supported by the resolution of major clades and identification of non-monophyletic genera. The statement that molecular data cannot replace morphology (C63) is appropriately cautious and supported by the finding of morphologically incongruent placements in unconstrained analyses. The framework for future studies (C102) is a reasonable inference from the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    },
+    {
+      "id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31",
+      "content_id": "8edde259-b3b8-4249-836d-e82d9fc6591c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The introduction and discussion establish the context for the study by reviewing the state of insect biodiversity knowledge, limitations of traditional taxonomy, utility of DNA data, characteristics of the study system (Metriorrhynchini), and implications for conservation. These claims provide background knowledge and cite relevant literature to frame the research questions and interpret results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are primarily literature-based statements (C10-C20, C67-C70, C80-C81, C90, C94-C95, C97) that appropriately cite sources, or general knowledge statements about the study system (C21-C28) and research context (C1, C98-C99). They provide necessary background and context but are not primary results of this study. The claims are well-supported by citations and are consistent with the field's understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:41:24.356003Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3947386b-d815-42f8-9b41-1e2b39c3ea38",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "71f89690-d22a-4cb3-8589-a76cb6b5d8d8",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "873238fd-4b72-4e21-b5af-e90405e6f71d",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "9a23ceca-c025-46e5-8086-80daa239b854",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "780ae3de-dfbe-43a1-8209-1021d22740d8",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "761b8a1c-7490-4741-b460-958cabfb10ae",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "c970b915-759e-437b-86cb-e0bb38b8e905",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "bc9300b2-0f73-4e13-bcc9-6471460fa68d",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "acd83101-b0ce-40db-a21d-4f56b2203e82",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "0eda5610-3ae2-4122-8f14-c294ccc03612",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "b3be7353-2ec0-4b7d-8b47-1b046b4f0a43",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "8a424c13-60b3-4ceb-9efe-eab2d977f1c3",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "cc707b11-c454-4591-9183-42b8314c7c78",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "51f87c39-60ac-4387-8a44-758841c02145",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "cd46b29f-7c22-480a-b61f-57b8467c0531",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "1c5c01bd-4cdc-43d1-882b-9a63f586200f",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "2320d634-2621-4b84-ad7d-66008dbfb84d",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "6c1f2d4b-1f04-4af5-a39c-e9ab73f91809",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "083a81cc-a0ac-4b84-b7b6-5d1433d9ff85",
+      "result_id": "131e0652-bf5f-480c-9371-446b558f04b2"
+    },
+    {
+      "claim_id": "b449396d-4cca-406d-b28b-b533b177d371",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "48766f37-a7e8-4e61-beb8-6f24f5c21983",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "f15060e4-7148-42fb-b633-6d42dff02dad",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "d5316a79-3e61-426e-bf30-94b14c854aec",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "3f2d24a9-7ee8-4e16-92f7-edc8807a39f8",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "413d8264-3e0c-4738-a488-40dcf33d6335",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "5b310cab-18be-4337-8d31-304bc9753754",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "194a7ee7-52b8-49a2-a611-1bc4ae80bcd5",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "733af257-5070-4d6e-aee6-0df214c45361",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "5b53a133-f496-4832-9f7b-214729443d5a",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "5ec4b076-4a80-4720-8437-42e2acc8b93d",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "bc2ff720-50b9-41fe-977a-a10ca2b8dde0",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "8a693853-3de3-4283-9d5d-55b3767f3204",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "0a4510ef-6192-4edb-afac-957d19bbafe1",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "eb3747f2-89ac-4ea0-8fa4-6b709f792cee",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "ce57bfc7-fb07-4433-aaf3-ebd4a850b870",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "2e15d3bc-dc96-4a43-a3ca-fcdd5f6f8692",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "6de595fa-5f08-4560-be43-6fc0578a6fe7",
+      "result_id": "51ffac6a-b4d0-4643-9590-4a0c4428adb0"
+    },
+    {
+      "claim_id": "c7d717c4-9b73-4246-90b9-8c4ff73cb0ad",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "73c8fc5c-a242-4d72-ad03-5b7c843cfb4c",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "fb0258ff-d6de-4b56-a1af-508863ac020a",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "b2cc9b6d-9569-4d65-8ae0-35e26d02f57b",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "d11087da-8fb7-4cde-97ea-3a403069e853",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "e6cc5173-3beb-4127-9742-0964aa020c87",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "aaa220c2-5350-41c2-9356-54480659beea",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "8d2d0c91-d948-4c00-90ea-b9058e8ddf6f",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "f4730304-abbc-4d39-b4e6-ac1d04b68b92",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "97cc9fa2-beff-4027-ba7b-89162ccfb997",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "ee106abc-686d-4f1d-a316-23903e00b794",
+      "result_id": "8b63f5cc-51f3-4e5d-be26-768fdd31bcaa"
+    },
+    {
+      "claim_id": "40f6c2c9-7801-4912-ba1c-98b51ccb6e24",
+      "result_id": "9f1ff095-2752-46f8-9454-2b2837f092e1"
+    },
+    {
+      "claim_id": "dd6ec529-8efa-44c2-be05-fb6d826365d9",
+      "result_id": "9f1ff095-2752-46f8-9454-2b2837f092e1"
+    },
+    {
+      "claim_id": "a1847ab1-1939-4986-8719-55729c96c1b5",
+      "result_id": "9f1ff095-2752-46f8-9454-2b2837f092e1"
+    },
+    {
+      "claim_id": "2250fd61-fb9b-4b53-af6c-e38f84aa31c0",
+      "result_id": "9f1ff095-2752-46f8-9454-2b2837f092e1"
+    },
+    {
+      "claim_id": "93336cc9-754d-4203-a134-d69df97353d1",
+      "result_id": "9f1ff095-2752-46f8-9454-2b2837f092e1"
+    },
+    {
+      "claim_id": "aab1f1a2-59ba-467e-b138-a2a644cd6f6c",
+      "result_id": "9f1ff095-2752-46f8-9454-2b2837f092e1"
+    },
+    {
+      "claim_id": "a26f7805-6bbb-498f-a584-c4ab6d1042cf",
+      "result_id": "9f1ff095-2752-46f8-9454-2b2837f092e1"
+    },
+    {
+      "claim_id": "30241049-2f06-40fe-bd35-9638f6c2d253",
+      "result_id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59"
+    },
+    {
+      "claim_id": "bdf2c140-915c-470d-85e3-b555094abfdd",
+      "result_id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59"
+    },
+    {
+      "claim_id": "1064f40b-a398-45a7-846e-7ac17f3a259c",
+      "result_id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59"
+    },
+    {
+      "claim_id": "ca6c409d-601b-402d-b5a7-51159a7d72df",
+      "result_id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59"
+    },
+    {
+      "claim_id": "e5cce840-f126-48b7-a814-63bdc77ed6a6",
+      "result_id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59"
+    },
+    {
+      "claim_id": "489329fe-34ec-4ed1-aaa0-707bd0db0a63",
+      "result_id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59"
+    },
+    {
+      "claim_id": "d08b2ae7-4d8e-435f-8037-de6b0463c87b",
+      "result_id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59"
+    },
+    {
+      "claim_id": "90409551-744c-41c4-b173-38a8a2fadd2a",
+      "result_id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59"
+    },
+    {
+      "claim_id": "03853d0b-692f-4a9b-a131-c870ca791229",
+      "result_id": "2c9a95f2-b2e3-4e8c-841a-05f7d5b08e59"
+    },
+    {
+      "claim_id": "e408e371-6ca2-459f-b42b-88c4818e0d40",
+      "result_id": "83c85b6b-f722-45d9-bde6-b174e6cec5c8"
+    },
+    {
+      "claim_id": "74003476-1005-46a8-8110-54b92ddb3f3b",
+      "result_id": "83c85b6b-f722-45d9-bde6-b174e6cec5c8"
+    },
+    {
+      "claim_id": "5b7a8aa2-a550-47fb-b87a-d3e6e098d12a",
+      "result_id": "83c85b6b-f722-45d9-bde6-b174e6cec5c8"
+    },
+    {
+      "claim_id": "f256d589-99cf-484e-a472-cd6428f89a74",
+      "result_id": "83c85b6b-f722-45d9-bde6-b174e6cec5c8"
+    },
+    {
+      "claim_id": "c8eb8b8a-8fbd-4483-8ae2-889aa426bd4e",
+      "result_id": "83c85b6b-f722-45d9-bde6-b174e6cec5c8"
+    },
+    {
+      "claim_id": "e1b0a53a-f0d3-4465-ba98-2a696ede027e",
+      "result_id": "83c85b6b-f722-45d9-bde6-b174e6cec5c8"
+    },
+    {
+      "claim_id": "f5ebace6-2c37-4676-ac44-f5b2c804a8f1",
+      "result_id": "83c85b6b-f722-45d9-bde6-b174e6cec5c8"
+    },
+    {
+      "claim_id": "e2562f00-85cf-4aef-908c-94b85f327ee0",
+      "result_id": "9dcce31b-08ae-4a80-8e65-e1e3e1edacd8"
+    },
+    {
+      "claim_id": "1d96486c-cf9f-4397-b789-38a7c3c1185a",
+      "result_id": "9dcce31b-08ae-4a80-8e65-e1e3e1edacd8"
+    },
+    {
+      "claim_id": "88e9b3b0-c8d7-4cb8-8405-4594fb550b2c",
+      "result_id": "9dcce31b-08ae-4a80-8e65-e1e3e1edacd8"
+    },
+    {
+      "claim_id": "af008473-3c8c-4839-b728-dbe48a958f4f",
+      "result_id": "9dcce31b-08ae-4a80-8e65-e1e3e1edacd8"
+    },
+    {
+      "claim_id": "e3500461-30e6-4ef2-9bb4-aaadb73ee799",
+      "result_id": "19e2d89d-c06b-4c6f-bfca-d6209ec607e4"
+    },
+    {
+      "claim_id": "b75c8f5e-18f7-4419-bcfa-c38a248fd6b5",
+      "result_id": "19e2d89d-c06b-4c6f-bfca-d6209ec607e4"
+    },
+    {
+      "claim_id": "030a590b-f6f8-4875-a054-dc2017a80608",
+      "result_id": "19e2d89d-c06b-4c6f-bfca-d6209ec607e4"
+    },
+    {
+      "claim_id": "f4f7b2d7-ad05-4db2-b561-301fca4b43c2",
+      "result_id": "19e2d89d-c06b-4c6f-bfca-d6209ec607e4"
+    },
+    {
+      "claim_id": "80c2441d-0be1-41e9-86ce-e2d7cce630d8",
+      "result_id": "19e2d89d-c06b-4c6f-bfca-d6209ec607e4"
+    },
+    {
+      "claim_id": "8c755357-c47e-448f-853d-9a331eba1709",
+      "result_id": "c30e73e6-4dd1-43eb-a9ea-44bf761ca63a"
+    },
+    {
+      "claim_id": "908fed8b-0517-4cd6-beef-86d1f3455846",
+      "result_id": "c30e73e6-4dd1-43eb-a9ea-44bf761ca63a"
+    },
+    {
+      "claim_id": "5e0860dd-31fb-4757-bb73-f6dfc5d98b4c",
+      "result_id": "c30e73e6-4dd1-43eb-a9ea-44bf761ca63a"
+    },
+    {
+      "claim_id": "61249f56-8f8d-43de-b94f-a86de13bd483",
+      "result_id": "c30e73e6-4dd1-43eb-a9ea-44bf761ca63a"
+    },
+    {
+      "claim_id": "b69b14e7-7e3a-4788-a227-a101c44ea88a",
+      "result_id": "c30e73e6-4dd1-43eb-a9ea-44bf761ca63a"
+    },
+    {
+      "claim_id": "d929db79-b0da-4f59-8ad3-5c72a9f5601d",
+      "result_id": "c30e73e6-4dd1-43eb-a9ea-44bf761ca63a"
+    },
+    {
+      "claim_id": "c024b1bf-4c10-43a2-ae65-90ba0e706d85",
+      "result_id": "c30e73e6-4dd1-43eb-a9ea-44bf761ca63a"
+    },
+    {
+      "claim_id": "cf60edee-07ba-448e-b6d7-0d988d4ad370",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "3e3abba7-38cc-46e5-9ddf-0ece25ea86ef",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "47f92879-1e54-4422-b34f-27a2af7bd576",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "9ee10cef-4543-4bb5-96a0-f2fd59801cd4",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "d27984e8-6a88-4b7d-91bb-33d02dab7e94",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "daa1248a-3810-431a-b8e1-6f35a96148f2",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "d5d3e81c-66ea-417a-9fc0-fbc55c0fbb18",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "3bd4f42e-d1c1-4c89-a62b-342c8205464b",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "29f4f317-d6c1-4951-a4b9-2b810ff4bd01",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "8ee282be-5ac2-4847-a23e-43aea2cce763",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "4b513b50-9efd-40e2-9024-09801c596790",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "e209c0b1-83ff-479a-a2fd-c879505b9b51",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "9ab0e3b3-eecf-4e9d-b23d-017171686478",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "76250b80-9461-4c68-8e6c-c3618581b1fb",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "cc5fdf50-dca5-49c4-9af7-da528f463a7f",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "061353e7-19d1-4c14-ac47-c7baf73df3b5",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "6ad838ea-1efc-414c-881b-475a1032a0bd",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "a438b63d-3613-4834-ae41-f15bfb136e1a",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "185fd740-1a4e-4e7f-b57c-922198bdb5fc",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "ad9c045b-aca8-409a-b14d-fd06d6728ddb",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "300bc830-d5b2-4950-ab5e-6491bedc9266",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "ceab3b6a-18fe-4ec7-a0b0-6ce9ac415a4a",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "b27abd72-6cef-4578-b2a4-1e75cca435d5",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "609cdb03-ccff-49a6-8c19-9af7e72fd4a7",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "241aee84-f903-4b36-ad87-955ec9478545",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "ec8fcb6f-63f8-46bb-8958-7cd795ceaa66",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "80554cb4-1c26-4da7-9b6c-96cc38ba9d52",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "6b2d579e-dbfd-4281-be1a-d3504c207797",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "ca8819d5-a24d-4c1a-9e15-5b5841e80d5c",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "43f00ce5-e8e1-4220-a50a-d67eb1f28979",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "0079bb0a-87a1-4442-b9c7-dc3c161b8003",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "18d19d48-7b18-4578-b7a9-268da0760327",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    },
+    {
+      "claim_id": "6764a497-aa6f-4c28-a76a-1c805137cffb",
+      "result_id": "9943bcca-7dc0-47ae-9b7b-535d36ba1c31"
+    }
+  ],
+  "comparisons": []
+}

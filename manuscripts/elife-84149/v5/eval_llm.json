@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "CML is a blood cancer driven by the BCR-ABL1 tyrosine kinase resulting from the Philadelphia chromosome translocation. TKIs are effective treatments, but a cohort of patients do not respond even without BCR-ABL1 kinase domain mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C18-C21 establish well-documented background knowledge about CML etiology, the BCR-ABL1 fusion protein, and TKI treatment responses. These are supported by established literature and provide the scientific foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A nonlinear mathematical model of CML hematopoiesis incorporating feedback control and lineage branching was developed using Design Space Analysis (DSA), reducing ~60,000 potential models to four candidate model classes requiring negative regulation of stem cell self-renewal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C43-C47 describe the model development methodology. DSA is a validated approach for model selection, and the reduction from 59,049 models to four classes is mathematically demonstrated. The requirement for negative regulation of HSC self-renewal is a key finding from the automated analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "IL-6 produced by differentiated myeloid cells biases MPPs toward myeloid fate, and CCL3 produced by myeloid progenitors inhibits normal HSC proliferation and self-renewal, but CML HSC are relatively resistant to CCL3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 cite established experimental evidence from multiple studies about IL-6 and CCL3 functions in hematopoiesis. These are well-documented feedback mechanisms used to constrain the model architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Low-dose (50 cGy) irradiation selectively depletes HSCs, causing a twofold decrease in HSC compartment and threefold increase in HSC and MPP proliferation rates by day 1, with return to equilibrium by day 7, suggesting negative feedback from HSCs on their own division rate and negative feedforward on MPP division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 present experimental data from mouse irradiation studies with quantitative measurements (Figure 2B-C). The inference about feedback mechanisms (C57) is reasonable given the observed compensatory proliferation response. Statistical significance is indicated in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Anti-granulocyte antibody treatment resulted in ~20% decrease in mature BM myeloid cells, accompanied by increased MPP compartment and decreased HSC compartment, suggesting negative feedback from myeloid cells onto MPP self-renewal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 present experimental data from antibody depletion studies (Figure 2D-E). The quantitative measurements support the inference of negative feedback regulation from myeloid cells to MPPs. The experimental design appropriately tests the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Parameter estimation using grid-search identified 1,493 parameter sets from ~10^6 combinations that produce normal hematopoietic homeostasis, reduced to 563 sets with sufficient feedforward gain, representing variability across virtual patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 describe the parameter estimation methodology and results. The approach is computationally sound, though the interpretation that parameter sets represent individual patient variability (C63-C64) is a modeling assumption rather than validated against actual patient data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "DSA identified four design space regions with different dynamic behaviors (monotonic vs. oscillatory), with region iii equilibria corresponding most closely to physiological cell populations and robustly returning to steady state after perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 present model analysis results (Figure 3). The identification of different dynamic regimes is mathematically sound, and comparison with Manesso et al. 2013 provides validation. The model's return to steady state is consistent with experimental timescales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "The CML model assumes leukemic cells differ from normal cells only in decreased feedback strength for HSCL self-renewal, enabling competitive advantage. CML cells repopulate bone marrow at the expense of normal cells and eventually reach equilibrium of solely leukemic cells without treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72, C74 describe the CML model structure and predictions. The modeling assumption (C69) is biologically motivated by CCL3 resistance data. Model predictions (C71-C72) are mathematically consistent with the model structure. Sensitivity analysis (C74) supports the focus on HSCL parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CML stem cells show decreased self-renewal capacity compared to normal HSCs, as evidenced by decreased CML LTC-IC in vitro cultures, variable and inefficient engraftment in immunodeficient mice, and engraftment defects in BCR-ABL1 transgenic mice upon secondary transplantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 cite multiple experimental studies demonstrating reduced self-renewal capacity of CML stem cells. This evidence supports the modeling assumption that p0,max^L \u2264 p0,max. The interpretation (C78) is reasonable given the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The model successfully recapitulates transplant experiments where HSCL transplantation leads to CML with myeloid predominance, while MPPL transplantation results in transient lymphoid predominance due to lack of stable engraftment and differential cell lifespans. Model validation eliminated 85 parameter sets, leaving 478 eligible sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 describe model validation against Reynaud et al. 2011 transplant experiments. The model predictions (C86-C88, Figure 5C-D) match experimental observations. The mechanistic explanation for lymphoid predominance after MPPL transplant is biologically plausible. Parameter filtering is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The model captures variable TKI treatment responses consistent with CML patients, exhibiting biphasic BCR-ABL1 transcript decline in responders that matches clinical data, and primary resistance patterns in non-responders when treatment is initiated at different disease stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C90, C93-C97 demonstrate model validation against clinical TKI response data. The biphasic response (Figure 6D) matches DAISISON study data. The model reproduces both responder and non-responder phenotypes, with mechanistic explanations based on feedback dynamics. Comparison with clinical data from multiple studies supports the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Higher HSCL fraction at treatment initiation decreases TKI efficacy through feedback/feedforward regulation that reduces proliferation rates, making leukemic cells less susceptible to TKI-induced death. This prediction was confirmed experimentally in chimeric mice where high HSCL burden showed virtually no decrease in circulating leukemic cells with TKI therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C98-C104 present a major model prediction validated by new experimental data in chimeric mice (Figure 6E-H). The mechanistic explanation involving feedback regulation of proliferation rates is consistent with the model structure. The experimental validation strengthens the prediction, though the mouse model has limitations in fully recapitulating human disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "Under model assumptions, increased maximum self-renewal probability of normal HSCs (p0,max) is a key predictor of TKI resistance. Higher p0,max leads to acute increases in HSCL self-renewal during treatment due to feedback release, enabling leukemic dominance. Model outcomes resemble clinical data showing that HSCL burden alone does not predict response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C105-C108, C110, C112-C113 present a novel model prediction about p0,max as a resistance predictor. The model analysis (Figure 7A-C) is thorough, and the resemblance to Thielen et al. 2016 clinical data is striking. However, the prediction depends on the modeling assumption of similarities between normal and leukemic cells, and p0,max is difficult to measure clinically, limiting direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Clinical data show that CML patients with TET2 and ASXL1 mutations, which increase stem cell self-renewal, exhibit poor TKI response, supporting the model prediction that higher stem cell self-renewal correlates with worse treatment outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 provide clinical evidence supporting the model's predictions about self-renewal and TKI resistance. The cited studies (Kim et al. 2017, Marum et al. 2017) demonstrate the association between these mutations and poor outcomes. This provides indirect validation of the model's mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "A prognostic criterion based on relative changes in BCR-ABL1 transcripts from 3-6 months more accurately predicts long-term TKI response than current clinical criteria (EMR, halving time) applied to 0-3 month data, in both synthetic model data and a small patient cohort (n=7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121 present a novel prognostic criterion with promising results in model simulations (Figure 7E-F). However, validation in only 7 patients (Figure 7F-G) is insufficient to establish clinical utility. The authors acknowledge the small sample size. Larger prospective studies are needed to validate this approach before it can be considered supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The model predicts that combining TKI therapy with differentiation-promoting agents can significantly improve treatment outcomes, with optimal efficacy at \u0394=0.24. Differentiation therapy equalizes normal and leukemic stem cell self-renewal, enabling TKI-induced death of leukemic cells while allowing normal cell repopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C122-C127 present model predictions about combination therapy (Figure 8). The analysis is thorough, showing non-monotonic dose-response and mechanistic explanations. However, these are purely computational predictions without experimental validation. The predictions are internally consistent with the model but require experimental testing to be fully supported.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C60",
+      "C62"
+    ],
+    "result": "METTL18 is a \u03c4-N-methyltransferase that specifically methylates His245 of RPL3. SETD3 knockout reduced but did not eliminate \u03c4-N-methylhistidine, suggesting additional methyltransferases. SETD3-METTL18 double knockout further reduced \u03c4-N-methylhistidine. ProSeAM-SILAC identified RPL3 as the METTL18 substrate, and LC-MS/MS confirmed \u03c4-N-methylation at His245. METTL18 KO abolished this methylation, which was rescued by wild-type METTL18 but not by SAM-binding mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide converging evidence from multiple orthogonal approaches (MRM, ProSeAM-SILAC, LC-MS/MS, rescue experiments) that consistently demonstrate METTL18 catalyzes \u03c4-N-methylation of His245 in RPL3. The genetic, biochemical, and mass spectrometry data are internally consistent and include appropriate controls (KO, rescue, mutants).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C82"
+    ],
+    "result": "METTL18 methylates RPL3 within early pre-60S ribosomal intermediates rather than free RPL3. FLAG-tagged RPL3 from mammalian cells was efficiently methylated in vitro, but bacterially-expressed RPL3 was not. METTL18 co-fractionated with complexes smaller than mature 60S containing early biogenesis factor PES1 but not late factor NMD3, suggesting methylation occurs during early 60S assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 demonstrate through in vitro methylation assays and sucrose gradient fractionation that METTL18 recognizes RPL3 in the context of pre-60S complexes. The differential methylation of mammalian vs. bacterial RPL3 (C13, C15) and co-fractionation with early but not late biogenesis factors (C20, C21) provide consistent evidence for the timing of methylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C29",
+      "C30"
+    ],
+    "result": "METTL18 knockout does not significantly affect overall ribosome biogenesis or global translation. No changes in 60S/40S ratio, polysome formation, or nascent peptide synthesis (OP-puro labeling) were detected in METTL18 KO cells, unlike RPL17 knockdown which reduced 60S abundance and polysomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C29, C30 consistently show no gross defects in ribosome abundance or global translation using multiple assays (rRNA abundance, sucrose gradients, polysome profiling, OP-puro). The inclusion of RPL17 knockdown as a positive control (C23, C29) strengthens the conclusion that METTL18 loss does not impair bulk translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C63"
+    ],
+    "result": "Cryo-EM structural analysis reveals that \u03c4-N-methylated His245 is stoichiometrically present in wild-type ribosomes but absent in METTL18 KO ribosomes. Loss of methylation allows His245 to form a hydrogen bond with G1595 of 28S rRNA in helix 35, a region targeted by macrolide antibiotics in bacteria, suggesting altered translation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 present cryo-EM structural evidence at 2.72 \u00c5 resolution showing clear density for the methyl group in wild-type but not METTL18 KO ribosomes. The structural interpretation of hydrogen bonding changes (C27) is reasonable given the resolution, and the connection to helix 35 (C28) provides mechanistic context, though the functional implications remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C64"
+    ],
+    "result": "Ribosome profiling reveals that METTL18 KO cells exhibit increased translation elongation specifically at Tyr codons, with reduced ribosome occupancy at the A-site but not P or E sites. This effect is prominent in long footprints, rescued by METTL18 re-expression, and consistent across HEK293T and HAP1 cell lines. The reduced tRNATyrGUA abundance cannot explain the faster elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 provide comprehensive ribosome profiling evidence from multiple cell lines and conditions. The specificity for Tyr codons at the A-site (C31-C33), the footprint length analysis (C37-C38), rescue experiments (C38), and consistency across cell types (C40-C41) all support the conclusion. The tRNA abundance data (C34-C36) appropriately rules out a simple tRNA availability explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "In vitro translation assays using hybrid systems with purified ribosomes confirm that RPL3 methylation-deficient ribosomes from METTL18 KO cells exhibit faster elongation on Tyr codon repeats compared to ribosomes from na\u00efve cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide orthogonal validation of the ribosome profiling results using a reconstituted in vitro system. The hybrid translation approach with the Renilla-firefly luciferase reporter system (C42) directly demonstrates the intrinsic effect of RPL3 methylation on elongation rate, independent of cellular context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C65"
+    ],
+    "result": "RPL3 methylation-mediated slowdown of translation elongation at Tyr codons facilitates proper protein folding. METTL18 depletion induced aggregation of an aggregation-prone FlucDM reporter but not wild-type Fluc. FlucDM protein in METTL18 KO cells was of low quality and subjected to proteasomal degradation, as shown by recovery with MG132 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate a functional consequence of altered elongation using an established aggregation-prone reporter system. The specificity for FlucDM but not wild-type Fluc (C46) and the rescue by proteasome inhibition (C47) provide strong evidence that faster elongation compromises protein folding quality. However, C44 and C65 rely partly on established knowledge about elongation and folding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Proteomic analysis of cellular precipitates reveals that Tyr-rich proteins are significantly enriched in aggregates from METTL18 KO cells. This enrichment cannot be explained by increased protein synthesis and is associated with TANGO-predicted aggregation-prone regions around Tyr codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 use SILAC-MS to demonstrate specific accumulation of Tyr-rich proteins in precipitates from METTL18 KO cells (C49, p=0.0068). The analysis appropriately controls for synthesis rate (C50) and uses computational prediction (TANGO) to link aggregation propensity to Tyr codon positions (C53), providing mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "SILAC analysis with proteasome inhibitor MG132 reveals that a subset of proteins, enriched for Tyr-rich proteins, are more efficiently degraded in METTL18 KO cells. This indicates that Tyr translation modulated by RPL3-methylated ribosomes is associated with protein quality control and prevents unwanted aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 use proteasome inhibition to identify proteins that are synthesized but rapidly degraded in METTL18 KO cells. The enrichment of Tyr-rich proteins in this subset (C55) is consistent with the ribosome profiling and aggregation data, providing a comprehensive model linking methylation, elongation, folding, and degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C66",
+      "C67"
+    ],
+    "result": "The study establishes that METTL18-mediated \u03c4-N-methylation of His245 in RPL3 during early 60S biogenesis creates specialized ribosomes that slow elongation at Tyr codons, extending the duration for nascent peptide folding and ensuring proteostatic integrity. Without this modification, unfolded and aggregated proteins accumulate in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C61, C66-C67 represent the integrated conclusions of the study, synthesizing findings from substrate identification, structural analysis, ribosome profiling, and proteomics. The model is well-supported by the convergence of multiple experimental approaches, though some mechanistic details remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Structural analysis of published pre-60S intermediates suggests that His245 of RPL3 is accessible to METTL18 in early state B but becomes occluded in later state D, restricting methylation to a specific window during ribosome assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 provide structural rationalization for the timing of methylation based on published cryo-EM structures of pre-60S intermediates. The analysis of solvent accessibility at different assembly stages (C83-C84) logically supports the conclusion about timing restriction (C85), though His245 was not directly visible in the referenced structures due to flexibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92"
+    ],
+    "result": "A concurrent publication by Ma\u0142ecki et al. (2021) reached similar conclusions about the methylation site and type but reported different effects on translation elongation (GAA codon slowdown vs. Tyr codon speedup in this study). The authors suggest that RPL3 methylation effects on translation may be dynamic and context-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C92 acknowledge discrepancies with a concurrent publication. While both studies agree on the methylation site (C86), the translation effects differ substantially (C89-C90). The speculation about context-dependence (C92) is reasonable but unresolved. This highlights uncertainty about the generalizability of the translation elongation findings across different experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The molecular mechanism by which His245 methylation causes Tyr-specific elongation retardation remains unclear. Potential mechanisms include functional replacement of bacterial rRNA modifications or allosteric effects on the aminoacyl-tRNA accommodation corridor, but these are speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C99 acknowledge the limitations of the current study in explaining the mechanism. While the authors propose plausible hypotheses based on structural context (C97) and cite supporting computational work (C99), these remain speculative (C96, C98). The mechanistic gap is appropriately acknowledged (C94).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Unlike yeast Hpm1 deletion which decreased translation fidelity and induced stop codon readthrough, METTL18 KO in human cells did not show increased ribosome footprints in 3' UTRs that would indicate readthrough.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 compare the human METTL18 phenotype to yeast Hpm1 using ribosome profiling data. The absence of 3' UTR footprint accumulation (C101) provides clear negative evidence against readthrough in the human system, suggesting functional divergence from yeast despite conservation of the methylation activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The codon-specific effects of RPL3 methylation in humans suggest greater complexity in translation control compared to bacteria and yeast, where elongation is primarily determined by decoding rate. Ribosome modifications, including RPL3 histidine methylation, collectively define ribosome movement speed and protein quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 place the findings in broader context by comparing mammalian translation control to simpler organisms. The citations to prior work (C102-C103) support the comparative statements, and the synthesis (C104) is a reasonable conclusion based on the study's findings and existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The introduction establishes the context for histidine methylation research, noting that while protein methylation predominantly occurs on lysine and arginine, histidine methylation is increasingly recognized as widespread. METTL9 and SETD3 are the only known mammalian methyltransferases for \u03c0-N and \u03c4-N positions respectively, and the biological functions remain poorly understood. Ribosomes are hotspots for PTMs that can regulate translation in specific contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C81 provide background context supported by appropriate citations to establish the state of the field. These claims accurately represent prior knowledge about protein methylation, histidine methylation enzymes, and ribosome modifications, setting up the rationale for studying METTL18.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The modification-mediated ribosome slowdown represents a unique example of translational control, contrasting with tRNA modifications that generally facilitate smooth translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 makes a valid comparison to tRNA modifications supported by appropriate citations. The observation that ribosome protein methylation slows rather than accelerates translation is indeed distinctive and represents a conceptual advance in understanding how modifications regulate translation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The manuscript appropriately cites prior work establishing that SETD3 modifies actin, ProSeAM acts as a methylation donor, RPL17 knockdown impairs 60S biogenesis, and ribosome footprints have distinct length populations reflecting A-site tRNA occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 represent accurate citations to prior work that provide essential context and methodological foundation for the current study. These are appropriately referenced and correctly described.",
+    "result_type": "MINOR"
+  }
+]

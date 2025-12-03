@@ -1,0 +1,1978 @@
+{
+  "submission": {
+    "id": "4b839495-b997-4c9c-b7f5-58a3c638265d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:54:52.313576Z",
+    "updated_at": "2025-12-03T16:54:52.313576Z"
+  },
+  "content": [
+    {
+      "id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "submission_id": "4b839495-b997-4c9c-b7f5-58a3c638265d",
+      "content_type": "manuscript",
+      "content_text": "# A conserved function of Human DLC3 and Drosophila Cv-c in testis development\n\n## Authors\n\n- Sol Sotillos<sup>1</sup> ([ORCID: 0000-0003-4731-8107](https://orcid.org/0000-0003-4731-8107)) \u2020\n- Isabel von der Decken<sup>2</sup>\n- Ivan Domenech Mercad\u00e9<sup>2</sup> ([ORCID: 0000-0003-2115-8475](https://orcid.org/0000-0003-2115-8475))\n- Sriraksha Srinivasan<sup>3</sup>\n- Dmytro Sirokha<sup>4</sup>\n- Ludmila Livshits<sup>4</sup>\n- Stefano Vanni<sup>3</sup> ([ORCID: 0000-0003-2146-1140](https://orcid.org/0000-0003-2146-1140))\n- Serge Nef<sup>5</sup> ([ORCID: 0000-0001-5462-0676](https://orcid.org/0000-0001-5462-0676))\n- Anna Biason-Lauber<sup>2</sup> ([ORCID: 0000-0001-8966-2913](https://orcid.org/0000-0001-8966-2913)) \u2020\n- Daniel Rodr\u00edguez Guti\u00e9rrez<sup>2</sup> ([ORCID: 0000-0002-2979-0769](https://orcid.org/0000-0002-2979-0769))\n- James Castelli-Gair Hombr\u00eda<sup>1</sup> ([ORCID: 0000-0003-4183-5250](https://orcid.org/0000-0003-4183-5250))\n\n### Affiliations\n\n1. Centro Andaluz de Biolog\u00eda del Desarrollo Seville Spain ([ROR:01v5e3436](https://ror.org/01v5e3436))\n2. Department of Endocrinology, Metabolism and Cardiovascular research, University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))\n3. Department of Biology, University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))\n4. Institute of Molecular Biology and Genetics, National Academy of Sciences of Ukraine Kyiv Ukraine ([ROR:00je4t102](https://ror.org/00je4t102))\n5. Department of Genetic Medicine and Development, Faculty of Medicine, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe identification of genes affecting gonad development is essential to understand the mechanisms causing Variations/Differences in Sex Development (DSD). Recently, a DLC3 mutation was associated with male gonadal dysgenesis in 46,XY DSD patients. We have studied the requirement of Cv-c, the Drosophila ortholog of DLC3, in Drosophila gonad development, as well as the functional capacity of DLC3 human variants to rescue cv-c gonad defects. We show that Cv-c is required to maintain testis integrity during fly development. We find that Cv-c and human DLC3 can perform the same function in fly embryos, as flies carrying wild type but not patient DLC3 variations can rescue gonadal dysgenesis, suggesting functional conservation. We also demonstrate that the StART domain mediates Cv-c's function in the male gonad independently from the GAP domain's activity. This work demonstrates a role for DLC3/Cv-c in male gonadogenesis and highlights a novel StART domain mediated function required to organize the gonadal mesoderm and maintain its interaction with the germ cells during testis development.\n\n## Introduction\n\nHuman sex development relies on the correct differentiation and function of the gonads. This requires a delicate functional balance between genes, cells, and hormones. Mutations affecting the determination and differentiation of the gonads can lead to Differences of Sex Development (DSD, also called Variations of Sex Development, VSD) where the female (XX) or male (XY) sex karyotype does not match with gonadal and anatomical development (Cools et al., 2018). The primary cause of nearly 50% of DSD cases remains unknown (Barseghyan et al., 2018; Buonocore et al., 2019), suggesting the existence of further sex-developmental mechanisms still awaiting discovery.\n\nGonadogenesis can be subdivided into three stages: specification of precursor germ cells, directional migration towards the somatic gonadal precursors, and gonad compaction. In mammals, somatic cells, i.e. Sertoli cells in male and granulosa cells in females, play a central role in sex determination with the germ cells differentiating into sperms or oocytes depending on their somatic mesoderm environment. In humans, primordial germ cells (PGCs) are formed near the allantois during gastrulation around the fourth gestational week (GW) and migrate to the genital ridge where they form the anlage necessary for gonadal development (GW5\u20136). Somatic mesodermal cells are required for both PGCs migration and the formation of a proper gonad. Once PGCs reach their destination, the gonadal cells join them (around GW7\u20138 in males, GW10 in females) and provide a suitable environment for survival and self-renewal until gamete differentiation (Jemc, 2011). Thus, mutations in genes regulating somatic Sertoli and granulosa support cell function in humans are often associated with complete or partial gonadal dysgenesis in both sexes and sex reversal in males (Brunello and Rey, 2021; Knower et al., 2011; Zarkower and Murphy, 2021). Other mesodermal cells, the Leydig cells, also play an important role in the testis by being the primary source of testosterone and other androgens and maintaining secondary sexual characteristics.\n\nThe central elements of gonadogenesis are relatively well conserved among species. In Drosophila, PGCs are formed in the blastoderm and are carried passively into the gut where they enter the embryo after crossing the intestinal epithelium. PGCs migrate towards their final position where they coalesce forming a compact gonad. The dependency of PGCs on somatic gonadal cells during development is also well conserved. In mouse mutants without a genital ridge, the PGCs can migrate but remain immature (reviewed in Cooke and Moris, 2021). In the fly, somatic gonadal cells can coalesce into a gonad in the absence of PGCs, but the PGCs are unable to coalesce in the absence of somatic cells (Brookman et al., 1992). Similarly, subsets of somatic gonadal cells produce steroid hormones (testosterone in mammals Zirkin and Papadopoulos, 2018 and ecdysone in insects Tajouri et al., 2018), which have a global influence on the organism.\n\nAbnormal gonadogenesis in human 46,XY individuals leads to under-masculinization, resulting in incomplete sexual characteristics at birth. Patients with complete gonadal dysgenesis present female external genitalia and hypogonadotropic hypogonadism with lack of secondary sex characteristics (Rocha et al., 2011). In mammalian models, gonadal dysgenesis causes infertility, DSD, and sex reversal while in insect models it leads to sterility.\n\nRecently, the human X-linked DLC3 gene (also known as STARD8) has been implicated in a case of 46,XY gonadal dysgenesis in two patients carrying a variant in the StART domain (Ilaslan et al., 2018). The Deleted in Liver Cancer (DLC) proteins belong to the RhoGAP family of small GTPase regulators. In vertebrates, there are three members (DLC1, 2, and 3) whereas Drosophila has a single orthologue, crossveinless-c (cv-c) (Denholm et al., 2005). This family of proteins shares different domains: besides the Rho GTPase Activating Protein domain (GAP), they present a protein\u2013protein interacting Sterile Alpha Motif (SAM) at the N terminal end and a Steroidogenic Acute Regulatory protein (StAR)-related lipid transfer (StART) domain at the C terminal. StART domains have been shown in other proteins to be involved in lipid interaction, protein localization, and function (Braun and Olayioye, 2015; Clark, 2020).\n\nWe previously reported that DLC1 and DLC3 can functionally substitute for Cv-c in Drosophila (Sotillos et al., 2018) opening up the use of Drosophila as a system to analyse the requirement of DLC3/Cv-c proteins during male gonadogenesis. Here, using Drosophila, we demonstrate that the RhoGAP Cv-c and DLC3 proteins have a conserved role in male gonad formation mediated by the StART domain, confirming the suspected DLC3 involvement in human testicular organogenesis.\n\n## Methods\n\n### Patient analyses\n\nThe patient UKR05 carrying mutation R887C (Poltava region) was one from the cohort of 45 DSD patients from different regions of Ukraine. The patient was with complete gonadal dysgenesis, primary hypogonadism.\n\nBlood samples of patient and parents as well as clinical data were obtained after informed consent. Genomic DNA from the blood samples of the proband and his parents was isolated by using the QIAmp DNA Kit (Qiagen, Hilden, Germany).\n\nCytogenetic studies (GTG-banding, FISH\u2014probes CEP, LSI probes: Yp11.3\u2014SRY; Yp11.1-q11.1\u2014DYZ3; Yq12\u2014DYZ1; CEP\u2014DXZ1) of the patient showed a 46,XY karyotype with Y-specific sequences including SRY gene.\n\nWhole exome sequencing (WES) was performed, and relevant variants were later validated with Sanger sequencing.\n\nWe identified a hemizygous missense mutation NM_001142503.2 c.2659 C>T (p.Arg887Cys VarSome/p.Arg807Cys UniProt) (rs766188656) in STARD8 gene. This variant has Minor allele frequency (MAF) = 0.0000251 and was not previously implicated in the pathogenesis of any disease.\n\n### Molecular dynamics simulations\n\n#### Atomistic simulations to investigate conformational dynamics of the StART domain\n\nThe structure of the StART domain of human DLC3/STARD8 (Uniprot ID Q92502) was obtained from Alphafold (AF) (Jumper et al., 2021). A truncated structure of the domain comprising residues 838\u20131012 was used. The WT and S993N systems were set up using the CHARMM-GUI Solution Builder (Jo et al., 2008) with a cubic box of edge length of 7.3 nm. The systems were solvated with TIP3P water and ionized with 0.12 M of sodium and chloride ions. Three independent replicas of 100 ns each were simulated for each system using the GROMACS (Van Der Spoel et al., 2005) 2018.6 package and the CHARMM36m force field (Huang et al., 2017). Initial equilibration was carried out by performing energy minimization using the steepest descent algorithm, followed by a short NVT and NPT equilibration of 100 ps each with position restraints on the backbone atoms of the protein. Production runs were performed at 310 K using a velocity-rescale thermostat (Bussi et al., 2007), with separate temperature coupling for protein and solvent particles, and a coupling time constant of 0.1 ps. The first 10 ns of the production runs were not considered for analysis. The molecular dynamics (MD) integrator was used for the production runs, with a time step of 2 fs. The Parrinello\u2013Rahman barostat (Parrinello and Rahman, 1981) was used to maintain the pressure at 1 bar, with an isotropic pressure coupling scheme, a compressibility of 4.5 \u00d7 10\u22125 bar\u22121 and a coupling time constant of 2.0 ps. Electrostatic interactions were evaluated using Particle Mesh Ewald (PME) with a Fourier spacing of 0.16 \u2009nm, a cut-off of 1.2 nm, and an interpolation order of 4. Van der Waals (VDW) interactions were switched to zero over 10\u201312 \u00c5. Bonds involving hydrogen atoms were constrained using the LINCS algorithm. Periodic boundary conditions were used in all three dimensions.\n\nThe distance between the C\u03b1 atoms of the residues was computed every 100 ps and the distribution was obtained using Kernel Density Estimation (KDE). Figure 1D was rendered using Visual Molecular Dynamics (VMD) (Humphrey et al., 1996).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig1-v2.jpg)\n\n**Figure 1.:** (A, B) Family diagrams showing the segregation of two different DLC3 alleles (panel A is modified from Ilaslan et al., 2018). (C) Structure of DLC3 GAP and StART domains showing the localization of the p.R887C and the p.S993N mutations. The protein is shown in cartoon representation, with the GAP domain represented in orange and the StART domain in blue. (D) Structure of the StART domain of human DLC3/StARD8. The distance between the C\u03b1 atoms of residues S/N993 and L1079 (shown in licorice representation) was used to determine the open and closed transitions arising from the motion of the \u03a91 loop. (E) Distribution of the distance between the C\u03b1 atoms of S/N993 and L1079 in atomistic simulations of the WT and S993N systems.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) System setup containing the StART domain and a lipid bilayer. The protein is shown in cartoon representation, the lipid head-groups in grey and the tails in yellow. Water and ions beads are omitted for clarity. (B) Time-trace of minimum distance between the protein and the bilayer, for eight replicas. (C) Normalized interaction frequency for protein residues with bilayers. The shaded region in cyan represents the \u03a91 loop of the domain. (D) Structure of the StART domain model from AlphaFold, with the \u03a91 loop residues that exhibit the highest frequency of interaction highlighted in cyan.\n\n#### Coarse-grained simulations to investigate binding of the StART domain to lipid bilayers\n\nLipid bilayers with lateral dimensions of 20 \u00d7 20 nm and composition of 70% 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC), 30% 1,2-dioleoyl-sn-glycero-3-phospho-L-serine (DOPS) were built using the CHARMM-GUI Bilayer Builder for Martini (Qi et al., 2015). The bilayers were equilibrated according to the standard CHARMM-GUI six-step equilibration protocol. Water molecules and ions were removed from the system, and the protein of interest was placed away from the membrane, such that the initial minimum distance between any particle of the protein and any particle of the membrane was at least 3 nm. The orientation of the protein was such that its principal axes were aligned with the x, y, and z directions of the system, with the longer dimension of the protein along z. The setup was then solvated and ionized with 0.12 M of sodium and chloride ions to neutralize it as well as reproduce a physiological salt concentration.\n\nEight independent replicas of 3 \u00b5s each were simulated using the GROMACS (2018.x) (Van Der Spoel et al., 2005) package and the Martini 3 forcefield (Souza et al., 2021). Initial equilibration was carried out by performing energy minimization using the steepest descent algorithm, followed by a short MD run of 250 ps. Production runs were performed at 310 K with a velocity-rescale thermostat (Bussi et al., 2007), with separate temperature coupling for protein, bilayer, and solvent particles and a coupling time constant of 1.0 ps. The Parrinello\u2013Rahman barostat (Parrinello and Rahman, 1981) was used to maintain the pressure at 1 bar, with a semi-isotropic pressure coupling scheme and a coupling time constant of 12.0 ps. The MD integrator was used for the production runs, with a time step of 20 fs. The Coulombic terms were calculated using reaction field (Tironi et al., 1995) and a cut-off distance of 1.1 nm. A cut-off scheme was used for the VDW terms, with a cut-off distance of 1.1 nm and Verlet cut-off scheme for the potential shift (Verlet, 1967). The Verlet neighbour search algorithm (P\u00e1ll and Hess, 2013) was used to update the neighbour list every 20 steps with a buffer tolerance of 0.005 \u2009kJ mol\u22121 ps\u22121. Periodic boundary conditions were used in all three dimensions. The system setup and simulation parameters are in line with the recently proposed protocol for studying transient protein\u2013membrane interactions with the Martini force field (Srinivasan et al., 2021).\n\nMembrane-binding events were assessed using the time-trace of the minimum distance between the protein and the membrane, computed with the gmx mindist tool in GROMACS. Membrane-interacting residues were computed every 500 ps using an in-house script with the following protocol: a residue was considered to interact with the membrane if the distance between any bead of the residue and any lipid bead was lower than or equal to 0.5 nm. For each residue, we counted the instances of residue\u2013membrane interaction during the trajectory, summed this value over all the replicas, and computed a corresponding normalized value. Figure 1D and Figure 1\u2014figure supplement 1A, D were rendered using VMD (Humphrey et al., 1996).\n\n### Fly strains\n\nThe following lines: Mi{PT-GFSTF.0}cv-cMI00245-GFSTF.0, Sxl::GFP and Df(3R)Exel 6267 were obtained from the Bloomington Drosophila Stock Center. The Cv-c::GFP fusion protein results from the integration into cv-c of a gfp sequence flanked by acceptor/donor splicing sequences present in a transgene (Mi{MIC}t cv-c MI00245) inserted into the third intron of the endogenous gene (Venken et al., 2011). cv-cM62, cv-c C524, and cv-c7 were described in Denholm et al., 2005. UAS-cv-cWT, UAS-cv-cGAPmut, UAS-cv-c\u0394StART, and UAS-Myc-DLC3WT were described in Sotillos et al., 2018. nos-nod::GFP line is a gift from A. Gonz\u00e1lez Reyes. c587-Gal4 line is a gift from E. Matunis. six4-moe::GFP line is described in Sano et al., 2012 and Vasa::GFP line is a gift from P. Lasko. Perlecan::GFP was described in Morin et al., 2001. Rho172R was described in Strutt et al., 1997. twist-Gal4 was described in Greig and Akam, 1993.\n\nRescue experiments were performed crossing twi-Gal4/CyO wg-lacZ; cv-cC524/TM6B risk-lacZ females with UAS-X/CyO wg-lacZ; cv-cC524/TM6B risk-lacZ males or c587-Gal4; cv-cC524/TM6B risk-lacZ females with UAS-X/CyO wg-lacZ; cv-cC524/TM6B risk-lacZ males (where X corresponds to either cv-cWT; cv-cGAPmut; cv-c\u0394StART; Myc-DLC3WT or Myc-DLC3S993N).\n\nFlies were raised at 25\u00b0C.\n\n### Constructs\n\nTo generate UAS-Myc-DLC3S993N a XhoI DLC3WT fragment was subcloned into pBlueScript (DLC3-Xho-pBs). DLC3-Xho-pBs was used as a template to mutate Ser at position 993 to Asn of human DLC3 (CCDS48134.1) using Pfu Polymerase.\n\nThe following primers were used:\n\nAfter PCR reaction, DNA was incubated with DpnI during an hour at 37\u00b0C to digest the methylated template DNA and transformed. Clones were sequenced by standard methods.\n\nFrom the selected clone (DLC3S993N-Xho-pBs), a BglII fragment containing the mutation was substituted in the pUASt-Myc-DLC3WT to obtain pUASt-Myc-DLC3S993N.\n\nConstructs were injected by the Drosophila Consolider-Ingenio 2007 transformation platform (Spain).\n\nWe will share the flies or plasmids upon request to the corresponding authors.\n\n### Immunohistochemistry\n\nEmbryos were collected on apple juice agar plates that contained yeast paste. For immunostaining experiments, female flies were allowed to lay eggs overnight onto plates at 25\u00b0C. Embryos were dechorionated 2 min in commercial bleach diluted in water (1:1), washed and fixed for 20 min in a phosphate-buffered saline (PBS)-formaldehyde 4%/heptane mix. After removing the fixative, methanol was added and shaken vigorously for 1 min to remove the vitelline membrane. After allowing both phases separate, sinking embryos were recovered, washed in clean methanol and rehydrated in PBS-Tween 0.1% (PBT) and preadbsorbed during an hour in PBT\u20131% bovine serum albumin (BSA) at room temperature (RT). Primary antibodies were used at the described concentration, diluted in PBT\u20131% BSA and incubated overnight at 4\u00b0C. Primary antibodies were washed 2 \u00d7 5 min in PBT and preadbsorbed 1 hr in PBT\u20131% BSA at RT. Embryos were incubated with the secondary antibody diluted at 1:400 in PBT\u20131% BSA at RT during 4 hr. After incubation embryos were washed 4 \u00d7 15 min in PBT\u20131% BSA at RT followed by 2 rinses in PBS before mounting in Vetacshield.\n\nThe following primary antibodies from the Developmental Studies Hybridoma Bank (DSHB) were used: rat anti-Vasa 1:20 (DSHB, VASA), mouse anti-Nrt 1:100 (DSHB, BP106), mouse anti-\u03b2-catenin 1:50 (DSHB, N27A1), rat anti-DE-cad 1:50 (DSHB, DCAD2), mouse anti-Eya 1:100 (DSHB, Eya), guinea pig anti-Ems 1:5.000 (gift from U. Walldorf, Walldorf and Gehring, 1992), rabbit-anti-Sox100B 1:1.000 (gift from S. Russell, Nanda et al., 2009), guinea pig anti-Tj 1:1000 (Gunawan et al., 2013), rabbit anti-Perlecan 1:1.000 (gift from A. Gonz\u00e1lez-Reyes, D\u00edaz-Torres et al., 2021), mouse anti-\u03b2gal 1:1.000 (Promega, Z378A), rabbit anti-GFP 1:300 (Invitrogen, A11122), and chicken anti-GFP 1:500 (Abcam, ab13970).\n\nSecondary antibodies were coupled to Alexa488, Alexa555, or Alexa647 (Molecular Probes). Filamentous actin was stained with rhodamine-phalloidin (Molecular Probes, R415).\n\nFluorescent in situ hybridization was performed according to standard protocols adding a secondary fluorescent antibody (anti-goat Alexa555, Invitrogen A-21432); cv-c riboprobe was marked using DIG RNA Labelling Kit (Roche, 11 175 025 910). Images were taken on an SPE Leica confocal microscope and processed using FIJI and Adobe Photoshop programs.\n\n### In vivo gonad analysis\n\nIn the nos-nod::GFP construct a nanos enhancer drives expression in the germ cells of a microtubule-binding GFP protein due to its fusion to the Nod protein fragment. In P-Dsix4-eGFP::Moesin construct a six enhancer drives expression in the male-specific somatic cells of the Moesin actin-binding domain fused to GFP (gift from S. DiNardo, Sano et al., 2012).\n\nEmbryos were dechorionated in bleach and positioned dorsally on top of a coverslip thinly coated with heptane glue and covered with a drop of halocarbon oil. Embryos were imaged on an SP5 Leica confocal microscope, using a \u00d740 oil immersion objective. For each movie, 26\u201330 time points were collected. For each time point, between 20 and 40 Z sections were collected (spaced between 0.5 and 1 \u00b5m). Movies were assembled using IMARIS and Fiji ImageJ software.\n\n### Statistical analysis\n\nData were obtained from at least three biological replicas. Replica samples for each genotype were collected in parallel on different days. Stainings with anti-Vasa, anti-E-Cad, and anti-Ems were carried-out to distinguish the GCs, the gonad contour, and the testis, respectively. We captured confocal z-stacks (at 0.5-\u00b5m intervals) encompassing the entire width of testes (typically 40\u201345 slices). A testis was considered abnormal if one or more germ cells were partially or totally outside the gonad. Data were analysed by Microsoft Excel and GraphPad Prism. Statistical analyses were performed using Fisher test and standard error as described in Xu et al., 2010. Statistical significance was assumed by p < 0.05 (source data 1).\n\n## Results\n\n### The S993N mutation is located in a functionally important region of the DLC3-StART domain and can alter its conformational dynamics\n\nThe extremely rare (MAF = 0.00016 according to Gnomad) DLC3 mutation was previously observed in two related DSD patients where a Serine (S) amino acid (aa) was substituted by an Asparagine (N) at position 993. The mutation was present in the heterozygous carrier mother (Figure 1A) and in the two 46,XY dysgenic patients but not in their 46,XY healthy sibling (Ilaslan et al., 2018). However, despite this strong correlation, no direct evidence linking DLC3 to gonadal dysgenesis was provided.\n\nRecently, we have identified a third DSD patient carrying a DLC3 variant, who inherited the R887C extremely rare mutation (MAF = 0.00025) from the heterozygous mother (Figure 1B). The patient presented 46,XY gonadal dysgenesis, where the gonadectomies found on the right gonad connective tissue of the fallopian tube with thickened walls and partially obliterated lumen and, in some areas, fragments of ovarian tissue with sclerosed theca tissue and on the left gonad degenerative altered tissue of the testicle with areas of mucous and degeneration of tubules without signs of spermatogenesis. As this discovery reinforces the suspected involvement of DLC3 as a DSD factor, we decided to search for experimental evidence.\n\nAs a first approach we concentrated on the DLC3S993N variant, which localizes to the conserved StART domain, analysing in silico if the aa substitution modifies the protein structure. The AlphaFold (AF) model of DLC3 indicates that residue S993 is located in the \u03a91 loop of the StART domain (Figure 1C), a loop that has been shown to be functionally important for several StART domains (Gatta et al., 2018; Horenkamp et al., 2018; Iaea et al., 2015; Khelashvili et al., 2019; Naito et al., 2019). To analyse if the S993N mutation affects the conformational dynamics of DLC3, we performed atomistic simulations of wild-type DLC3 and of the mutant protein DLC3-S993N in water. We observed that the mutation causes a non-negligible effect on the conformation of the \u03a91 loop that is located at the entrance of the hydrophobic cavity of the StART domain (Figure 1D, E). The simulations of the wild-type DLC3-StART domain show a transition between a \u2018closed\u2019 state, where the distance between the C\u03b1 atoms of S993 and L1079 located on the opposite C-terminal helix is 8.2 \u00c5, and an \u2018open\u2019 state with an aperture of 11.8 \u00c5. In contrast, the DLC3-S993N-StART domain showed a single \u2018open\u2019 conformational state where the binding pocket has an aperture of 13.3 \u00c5.\n\nWe also performed MD simulations at the coarse-grain resolution level to predict membrane-interacting regions of the DLC3-StART domain (Figure 1\u2014figure supplement 1). The StART domain was initially positioned at least 3 nm away from a bilayer of composition DOPC:DOPS (70:30) (Figure 1\u2014figure supplement 1A), and eight independent replicas of the system were simulated for 3 \u00b5s each. We observed multiple binding and unbinding events between the protein and the bilayer in all replicas, as indicated by the minimum distance between them (Figure 1\u2014figure supplement 1B). When the frequency of interaction for each residue of the protein with the bilayer was determined (Figure 1\u2014figure supplement 1C), the N-terminus of the domain and the \u03a91 loop (Figure 1\u2014figure supplement 1D) show the highest frequency of interaction.\n\nThese results indicate an effect of the S993N mutation on the conformational dynamics of the DLC3-StART domain and suggest that alterations of this \u03a91 loop could impair the domain\u2019s membrane interaction.\n\n### Expression of the cv-c RhoGAP gene in the Drosophila gonads\n\nStructural analyses have shown that DLC3 and Cv-c are highly conserved (Figure 2A, B) and that, in Drosophila, DLC3 can functionally substitute for Cv-c (Sotillos et al., 2018). However, previous studies of Cv-c have concentrated in ectodermal derived tissues despite cv-c being broadly expressed in the mesoderm (Denholm et al., 2005; Sotillos et al., 2013; Sotillos et al., 2018). To find out if cv-c RNA is specifically transcribed in the gonadal mesoderm we performed fluorescent RNA in situ hybridization in embryos double stained with antibodies to detect gonad-specific antigens. We observed that cv-c is transcribed in the testis mesoderm cells including the somatic gonadal cells ensheathing the germ cells, the male-specific somatic gonad precursors (msSGPs) located at the posterior of the gonad and the pigment cell precursors surrounding the whole testis (Figure 2C, D). We confirmed Cv-c translation in these cells analysing the expression of a Cv-c::GFP fusion protein expressed under the endogenous cv-c regulatory elements (Figure 2F, H). This Cv-c::GFP fusion protein has been shown to have identical distribution to the RNA expression (Sotillos et al., 2018). We did not observe comparable levels of cv-c mRNA nor Cv-c::GFP protein in the female gonad mesoderm (Figure 2E, G, I) nor in the germ cells of any sex, indicating a male-specific regulation of cv-c expression in the testis mesoderm.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig2-v2.jpg)\n\n**Figure 2.:** (A) Linear representation of the DLC3-\u03b1, DLC3-\u03b2, and Cv-c proteins. The SAM domain is represented in yellow, the GAP domain in orange, and the StART domain in blue. (B) Alignment of the DLC3 (blue) and Cv-c (magenta) StART domains. (C) Schematic representation of the cell types in a Drosophila testis at st17. Germ cells, green; pigment cells, magenta; somatic gonadal cells, grey; male-specific somatic gonadal cells, pink. RNA in situ hybridization of male (D) and female (E) st17 embryos shows general transcription of cv-c in the mesoderm. The right panels in D\u2013I are close ups of the arrowed region in the central panels. (D) In the testis, comparable levels of mRNA puncta can be detected in the somatic mesoderm and in the gonadal mesoderm cells surrounding the male germ cells as are clearly observed in the male-specific somatic gonad precursors (msSGPs) marked by Eya (magenta, indicated by an arrowhead in grey panels and an arrow in the close up). (E) In the ovary, marginal levels of cv-c mRNA expression are observed in the gonadal mesodermal cells, creating a halo of decreased number of puncta surrounding the female germ cells contrasting with the cv-c expressing adjacent somatic mesodermal cells (arrow in close up). (F\u2013I) Cv-c::GFP protein expression in male and female embryos. (F, H) In the testis Cv-c::GFP is detected in the gonadal mesoderm surrounding the germ cells including the male msSGPs (Eya, magenta F) and the pigment cell precursors (Ems, magenta H). (G, I) In females, no substantial GFP signal is detected in the gonadal mesoderm surrounding the germ cells. Note in (F, H) that Cv-c::GFP signal in the gonad mesoderm cells allows tracing the testis contour, while in ovaries (G, I) this is not possible. Higher levels of Cv-c::GFP are present in the ectodermally derived trachea and hindgut. In close ups white arrows point to membranes close to the germ cells, yellow arrows to the membrane of gonad mesodermal cells. In males, Cv-c::GFP can be detected in the membranes between gonadal and somatic mesodermal cells (F, H) whilst in females GFP can only be detected outside the ovary in the membrane of the somatic mesoderm (G, I asterisks). Scale bar: 10 and 5 \u00b5m in close ups.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) cv-c::GFP stage 17 testis stained against GFP (green), Vasa (magenta), and Ems (grey) in a wild-type (A) or Df(1)os1A mutants. Cv-c expression and localization are unaffected by JAK/STAT lack of activation (right panels show Cv-c::GFP in grey). (C\u2013F) JAK/STAT testis activity in cv-cC524 mutants in heterozygosis (C, E) or homozygous (D, F) testis. Neither STAT localization (magenta), (C, D) nor 10XSTAT-GFP reporter expression (green), (E, F) are modified in cv-cC524 mutants. Panels (C, D) are stained with anti-STAT (magenta or grey in right panels), (C\u2013F) with anti-Ems (grey), (E, F) with anti-Vasa (magenta), and (C, F) with anti-GFP (green or grey in right panels). Scale bar: 10 \u00b5m.\n\nAs JAK/STAT signalling is required for GC and mesodermal cell development specifically during early male gonad formation (Sheng et al., 2009; Sinden et al., 2012) we wondered if cv-c expression in the testis mesodermal cells depends on JAK/STAT activity. To test possible interactions between Cv-c and JAK/STAT signalling we analysed if in Df(1)os1A mutant embryos, that lack all three Upd Drosophila JAK/STAT ligands thus rendering an inactive pathway (Hombr\u00eda et al., 2005), the expression of Cv-c::GFP is affected. Df(1)os1A/+; cv-c::GFP/+ females were crossed to cv-c::GFP/+ males allowing us to compare cv-c::GFP expression in Df(1)os1A male embryos with their control siblings (Figure 2\u2014figure supplement 1A, B). As previously described, in Df(1)os1A embryos the testis are smaller due to the lack of JAK/STAT activation, however we detect normal levels of Cv-c::GFP expression in the testis gonadal mesoderm.\n\nWe also analysed if Cv-c controls the activity of the JAK/STAT pathway (Figure 2\u2014figure supplement 1C\u2013F). Using an anti-STAT antibody (Flaherty et al., 2010) we first studied if STAT\u2019s nuclear accumulation is altered in cv-cC524 mutant embryos. Then, by using the 10XSTAT-GFP reporter which reveals the pathway\u2019s activation (Bach et al., 2007) we analysed if Cv-c controls JAK/STAT signalling. We did not find any difference between heterozygous and homozygous cv-cC524 testes in any case, indicating that the JAK/STAT and cv-c mutant phenotypes act independently of each other (Figure 2\u2014figure supplement 1C\u2013F).\n\n### Cv-c functional requirement during male gonadogenesis in Drosophila\n\nTo test the functional significance of Cv-c expression in the fly gonads we analysed embryos homozygous for the lethal nonsense cv-cM62 and cv-cC524 alleles where stop codons result in truncated proteins lacking the GAP and StART domains (Denholm et al., 2005). We did not detect any major morphological defects in female gonads, confirming cv-c is not required for embryonic ovary development (Figure 3B). In contrast, homozygous or hemizygous cv-c mutant male embryos have abnormal testes containing germ cells that are not surrounded by the gonadal mesoderm (Figure 3C and E arrowheads compare with A and D, respectively). This defect is unlikely to be due to the abnormal specification of the gonad mesoderm cells, as using mesodermal specific markers we can observe the presence of all cell types (Figure 3C, E, G). However, the gonad mesoderm cells are frequently displaced, with the pigment cells failing to completely surround the mutant testis (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) Gonads with germ cells labelled with nos-nod::GFP (green), pigment cells with anti-Ems (magenta), and male-specific somatic gonad precursor (msSGP) with anti-Eya (nuclear grey staining) and the AJs with anti-\u03b2-catenin (grey membranes). Right panels show Eya and \u03b2-catenin channel. (A) In the control testis, germ cells are ensheathed by thin mesoderm extensions produced by the interstitial cells detectable by \u03b2-catenin staining. Similar germ cell ensheathment is observed in cv-cC524 ovaries (B), while in cv-cC524 testis (C) some germ cells become extruded from the gonad and are not enveloped by \u03b2-catenin (arrowhead). (D\u2013G) Testes labelled with mesodermal specific markers to detect the pigment cells (Ems, magenta D\u2013G) or the msSGPs (Sox100B, green F, G) in heterozygous (D, F) or cv-cC524 homozygous mutant embryos (E, G). Grey channels in right panels correspond to \u03b2-catenin in (D-G), Ems in (D, E), or Sox100B in (F, G). All mesoderm cell types are specified in cv-c mutant testis despite morphological aberrations resulting in the pigment cell layer\u2019s discontinuity (compare D and F with E and G). (H\u2013J) Testes stained with anti-Vasa (green) to label the germ cells and phalloidin (grey and right panels) to show actin filaments in heterozygous (H) or homozygous cv-cC524 mutants (I). Germ cells in mutant testes present protrusions compatible with migratory movements (arrowheads). Z sections are shown below H, I panels. Scale bar: 10 \u00b5m. (J) Quantification of blebbing cells in wild-type or mutant cv-c background using Fisher test; ****p value <2.2e\u221216 (nos::GFP N = 575 and nos::GFP;cv-cC524 N = 744) (Figure 3\u2014source data 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) Embryos labelled with phalloidin (grey) to reveal the filamentous actin cytoskeleton and with nos-nod::GFP (green) to label the germ cells. (A) In heterozygous males and (B) homozygous cv-cC524 mutant females, germ cells form a continuous filamentous actin structure around the cortex. (C, D) In homozygous cv-cC524 mutant males, the actin filament is discontinuous at the position where blebs form (arrowheads). Scale bar: 10 \u00b5m.\n\nTo test if these defects are due to the abnormal migration of the germ cells or the mesoderm gonadal precursors during early gonad organogenesis [up to gonad coalescence at stage 15 (st15)] or to later defects on testis maintenance, we labelled the germ cells using nos-nod::GFP and the mesodermal cells with six-moe::GFP to investigate gonad formation in vivo. Using this setup, we could observe how the migrating germ cells and the somatic cells converge during normal development, coalescing at embryonic st15 to form a stable spherical gonad (Video 1). Analysis of cv-cC524 homozygous mutant embryos in the same conditions revealed that development is normal up to st15, with the testis compacting into a spherical gonad (Video 2). However, after this stage the germ cells become extruded from the testis (Videos 2 and 3). Analysis of fixed mutant testes shows that the extruded germ cells extend blebs that are more characteristic of the earlier migratory phase (Figure 3I, arrowheads and J; Figure 3\u2014source data 1; Jaglarz and Howard, 1995). These blebs are not observed in the ovaries of cv-c mutant females (Figure 3\u2014figure supplement 1B) nor in the wild-type testis after gonad compaction (Figure 3H, J).\n\n![Video 1.](https://cdn.elifesciences.org/articles/82343/elife-82343-video1.mp4.jpg)\n\n**Video 1.:** The germ cells are labelled with nos-nod::GFP and the male-specific somatic gonadal precursors with six-moe::GFP. Movie taken from st14 (prior to gonad coalescence) up to st16 (after coalescence).\n\n![Video 2.](https://cdn.elifesciences.org/articles/82343/elife-82343-video2.mp4.jpg)\n\n**Video 2.:** The germ cells are labelled with nos-nod::GFP and the male-specific somatic gonadal precursors with six-moe::GFP. Movie runs from st14 (prior to coalescence) to st16 (after coalescence) when germ cell extrusion becomes noticeable (arrow). Note that the early stages of testis development are normal until the germ cell extrusion begins at later stages.\n\n![Video 3.](https://cdn.elifesciences.org/articles/82343/elife-82343-video3.mp4.jpg)\n\n### Rescue of cv-c Drosophila testis defects with human DLC3\n\nWe have previously shown that DLC3 can rescue the mutant phenotypes caused by cv-c mutations in the Malpighian tubules, the kidney-like structures of the fly, indicating these homologous Drosophila and human proteins conserve similar functions (Sotillos et al., 2018). Therefore, given that cv-c is expressed and required in the male Drosophila gonad, and that DLC3 can functionally substitute for Cv-c in some tissues, we investigated if DLC3 is also capable of rescuing the mutant gonadal defects observed in cv-cC524 homozygous embryos (Figure 4A, D). Using the UAS/Gal4 system to express wild-type DLC3 protein with the pan mesodermal twi-Gal4 driver line in otherwise cv-cC524 mutant embryos, we efficiently rescued the testis defects (Figure 4A, B, E) pointing out to the conservation of DLC3/Cv-c function in gonadogenesis. In contrast, expression in the same conditions of the DLC3S993N StART protein present in human patients is not capable of efficiently rescuing the testis phenotype (Figure 4A, B, F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of Cv-c and DLC3 protein variants studied. Rescue of the dysgenic testis of cv-cC524 homozygous mutant males after expressing the specified (B) DLC3 or (C) Cv-c protein variants under UAS control with the pan mesodermal twi-Gal4 line. Phenotypic rescue is shown as percentage of testes where all germ cells are encapsulated inside the testis. Representative images of testes in (D) control homozygous cv-cC524 animals, or homozygous cv-cC524 animals expressing in the mesoderm either (E) UAS-DLC3WT, (F) UAS-DLC3S993N, (G) UAS-Cv-cWT, (H) UAS-Cv-cGAPmut, or (I) UAS-Cv-c\u0394StART. Arrows in D, F, I point to extruded germ cells that are not surrounded by \u03b2-catenin. Testes are stained with anti-Vasa to label the germ cells (green), anti-Ems to label the pigment cells (purple), and anti-Eya and anti-\u03b2-catenin to label the male-specific somatic gonad precursors (msSGPs) and the membranes ensheathing the germ cells, respectively (grey in lower panels). Scale bar: 10 \u00b5m. Fisher test, Cv-cWT p = 0.0017 (N = 34), Cv-cGAPmut p < 0.0001 (N = 56), DLC3WT p < 0.0001 (N = 28), Cv-c\u0394StART p = 0.3005 (N = 31), and DLC3S993N p = 0.3180 (N = 38) (ns, p > 0.05; **p < 0.001; ****p < 0.0001) (Figure 4\u2014source data 1).\n\n### Testis development in Drosophila requires the StART domain\n\nTo elucidate the molecular mechanisms mediating DLC3/Cv-c function in gonad development, we analysed the capacity of different Cv-c protein variants to rescue the testis defects of cv-cC524 homozygous embryos (Figure 4A).\n\nAs mentioned above, StART domain mutations in DLC3 are the suspected cause of gonadal dysgenesis in human patients. In agreement with this, we found that expression of a UAS-cv-c\u2206StART construct generating a Cv-c protein lacking the StART domain, does not significantly normalize the testis defects (Figure 4C, I). In comparison, the expression of the wild-type Cv-c protein rescued the abnormal phenotypes in more than 50% of the testes (Figure 4C, G). Surprisingly, expression of a Cv-c mutant protein substituting a highly conserved Arginine into Glutamine residue that has been shown to block the GAP domain activity in vitro and the protein function in vivo (Leonard et al., 1998; Sotillos et al., 2013; Sotillos et al., 2018) rescued the gonadal phenotypes to a better extent than the wild-type protein (Figure 4C, H). This may be due to the overexpression of a functional GAP protein resulting toxic, not allowing to appreciate the full rescue of the StART-mediated function, a phenomenon that has been described previously (Hendrick and Olayioye, 2019; Holeiter et al., 2012). This does not happen in Cv-cGAPmut nor in DLC3WT, which may have a less efficient GAP function in a Drosophila environment than Cv-c.\n\nMoreover, analysis of embryos homozygous for cv-c7, an allele which carries that exact GAP mutation in the endogenous gene (Denholm et al., 2005), showed normal testis (Figure 5A, B), suggesting that Cv-c function in the gonad is not mediated through its RhoGAP function, but requires the StART domain, deleted in cv-cC524 (Figure 5C, D) and cv-cM62 mutant alleles (Figure 5E, F). To test if these results are due to Cv-c function in the testis, we repeated the experiments using C587-Gal4, a line expressed specifically in the gonad mesoderm cells ensheathing the germ cells. Although with a lower penetrance, this line results in similar rescues indicating a specific requirement of Cv-c in the testis gonadal mesoderm (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013L) Testes of various genotypes stained with anti-Vasa (green), \u03b2-catenin (grey), and Ems (magenta). \u03b2-Catenin and Vasa channels are shown separately in right panels. (A, B) No extruded gem cells are observed in hemizygous cv-c7/Df(3R)Exel6267 embryos carrying a cv-c7 allele which inactivates the RhoGAP domain\u2019s function. (C, D) Hemizygous cv-cC524/Df(3R)Exel6267 or (E, F) cv-cM62/Df(3R)Exel6267 showing extruded germ cells. (G, H) Rho172R mutant embryos have smaller testes without extruded germ cells. (I, J) Homozygous cv-cM62 mutants present extruded germ cells. (K, L) Homozygous Rho172R cv-cM62 double mutant embryos present smaller testis with extruded germ cells. Arrows point to GCs outside the gonads. Note that \u03b2-catenin envelops all germ cells in (A, B) and (G, H) while in (C\u2013F) and (I\u2013L) some germ cells are not surrounded (arrows). Z sections are shown under all panels. Scale bar: 10 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative images of testes in (A) heterozygous cv-cC524 animals, (B) control c587-Gal4 cv-cC524 homozygous animals or (C) homozygous cv-cC524 animals expressing either UAS-DLC3WT or (D) UAS-DLC3S993N. Arrowheads in B and D point to extruded germ cells that are not surrounded by E-Cad. DLC3WT expression rescues the cv-cC524 testis defects whilst DLC3S993N does not. Germ cells are stained with anti-Vasa (green); E-Cad, to label the membranes ensheathing the germ cells (grey) and anti-Ems to label the pigment cells (magenta). Scale bar: 10 \u00b5m. (E) Percentage of abnormal testes (blue bars) versus phenotypically wild-type rescued testis (purple bars) in the different genotypes analysed. (A testis is considered abnormal when one or more germ cells are extruded from the gonad.) (F) Comparison of rescue capability of the same UAS lines when expressed with the twi-Gal4 pan-mesodermal (orange bars) or the c587-Gal4 somatic gonadal cell driver lines (blue bars) shown as percentage of abnormal testes (Figure 5\u2014figure supplement 1). Fisher test, Cv-cWT p = 0.0344 (N = 89), Cv-cGAPmut p < 0.0001 (N = 135), Cv-c\u0394StART p = 1 (N = 31), DLC3WT p = 0.0053 (N = 45), and DLC3S993N p = 0.5722 (N = 50) (ns; * p > 0.05; **p < 0.001; ****p < 0.0001).\n\nAlthough DLC3 and Cv-c are RhoGAP proteins that when mutant cause Rho1 over-activation, our experiments suggest that in the gonad these proteins do not require the GAP function. To confirm that the testis phenotype is not due to Rho1 over-activation we analysed if cv-cM62 gonad mutant phenotypes can be rescued by a Rho1 mutation. As previously described, in Rho1 homozygous mutants the gonad precursor germ cell migration is less efficient, giving rise to smaller male and female gonads (Kunwar et al., 2003). However, in Rho1 mutants, the cells reaching the gonads become ensheathed and coalesce to form stable testes as in the wild type (Figure 5G, H). In Rho1 cv-c double mutant embryos, we observe an additive effect of both mutations (Figure 5K, L), with smaller gonads due to the Rho1 early migratory defect and the testis germ cell extrusion typical of cv-c mutants (Figure 5I, J), indicating that the dysgenic gonad phenotype cannot be rescued by a reduction of Rho1 function.\n\nThese results show that the StART domain function is required for human and Drosophila testis formation strongly supporting that the dysgenic gonad defects observed in patients are caused by the DLC3-StART mutation and demonstrating that Cv-c has a GAP-independent function that requires the StART domain.\n\n### Cellular causes for testis dysgenesis\n\nWe next searched for the underlying cellular defects responsible for the observed testis dysgenesis in cv-c mutants. To explore if the germ cell extrusion is due to a failure of the somatic gonadal cells to ensheath the germ cells, we studied the expression of E-cadherin (E-cad), which localizes to the membrane of both germ cells and somatic mesodermal cells and is required for germ cell ensheathment and gonadal compaction (Jenkins et al., 2003). We observe that while, in the wild-type testes the germ cells inside the gonad are encircled by high levels of E-cad protein (Figure 6A, A\u2019), in cv-c mutants there are frequent gaps of E-cad distribution between adjacent germ cells inside the testes. In addition, we observe that extruded germ cells have almost no E-Cad on their membranes (Figure 6B, B\u2019, arrowheads). We observe analogous, abnormal \u03b2-catenin (Figure 3) localization inside the testes, indicating that the relationship between the germ cells and the surrounding somatic cells is not well established or poorly sustained (Figure 3C, E, G).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig6-v2.jpg)\n\n**Figure 6.:** (A, C, E) Wild-type and (B, D, F) cv-cC524 testes. Germ cells are labelled with nos-nod::GFP (green A\u2013F) and labelled in grey with anti-E-cad (A\u2013B) or anti-Nrt (C\u2013D) to highlight the ensheathing membranes (grey in right panels). (A, A\u2019) In the wild-type E-cad highlights contacts between the germ cells and the interstitial somatic gonadal cells surrounding each germ cell reflecting their correct ensheathment. (B, B\u2019) In cv-c mutant testes, several germ cells inside the testis and all the extruded ones (arrowheads) are not surrounded by E-cad labelling membranes indicating incorrect ensheathment. (C, C\u2019) Neurotactin in the wild-type testis reflects correct germ cell ensheathment. (D, D\u2019) In cv-cC524 mutants little Neurotactin expression is detected inside the testis. Nuclei of Tj-labelled somatic gonadal cells (magenta and grey in right panels) are detected between the GCs inside wild-type testes (E, E\u2019) but not in cv-cC524 mutant testes (F, F\u2019). (G, G\u2019) Heterozygous and (H, H\u2019) homozygous cv-cC524 testes labelling the extracellular matrix with Perlecan::GFP (Pcl, grey in right panels) and stained with anti-Vasa (green) and anti-Ems (magenta) to label the GCs and the pigment cells, respectively. (G, G\u2019) The wild-type testis is enclosed by a Perlecan containing extracellular matrix (white). In cv-cC524 mutant testis a discontinuous extracellular matrix is observed where the GCs are outside the gonad (H, H\u2019, yellow arrowheads). Z sections are shown under all panels. Scale bar: 10 \u00b5m. (I) Quantification of broken and continuous Perlecan Extracellular matrix (ECM) layer in cv-cC525 heterozygous or homozygous mutants using Fisher test; ****p value less than 0.0001 (cv-cC524/TM6B N = 54 and cv-cC524 N = 24) (Figure 6\u2014source data 1). (J) Interpretation of the testis degeneration in wild type and DLC3/Cv-c mutants. (1) The StART domain of DLC3/Cv-c has a Rho-independent function stabilizing cell interactions between germ cells and somatic support cells. Stable cell\u2013cell interaction among the cells of the gonadal niche allows them to settle down in the testis. (2) In DLC3S997N/Cv-c\u0394StART testis cell\u2013cell interactions become compromised, cells lose their cohesion and separate from the gonadal niche. (3) After losing communication with somatic cells, germ cells become extruded from the gonadal niche initiating an erratic migrating behaviour. (4) Progressive loss of germ cells leads to gonad degeneration.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82343/elife-82343-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Representative images of testes in (A) control twi-Gal4; cv-cC524 heterozygous animals or homozygous cv-cC524 animals expressing in the somatic mesoderm cells either (B) UAS-DLC3WT, (C) UAS-DLC3S993N, (D) UAS-Cv-cWT, (E) UAS-Cv-cGAPmut, or (F) UAS-Cv-c\u0394StART. Germ cells are stained with anti-Vasa (magenta), pigment cells with anti-Ems (grey) and the ECM surrounding the gonad with anti-Perlecan (green and grey in lower panels). Scale bar: 10 \u00b5m. Comparison of rescue capability of the same UAS lines when expressed with the twi-Gal4 pan-mesodermal (G) or the C587-Gal4 somatic gonadal cell (H) driver lines shown as percentage of broken ECM detected by abnormal Perlecan distribution. Fisher test, (G) UAS-DLC3WT p = 0.0001 (N = 39), UAS-DLC3S993N p = 0.1442 (N = 28), UAS-Cv-cWT p = 0.0001 (N = 74), UAS-Cv-cGAPmut p < 0.0001 (N = 42), and UAS-Cv-c\u0394StART p = 1 (N = 18). (F) UAS-DLC3WT p < 0.0001 (N = 32), UAS-DLC3S993N p = 0.5435 (N = 38), UAS-Cv-cWT p < 0.0001 (N = 35), UAS-Cv-cGAPmut p < 0.0001 (N = 44), and UAS-Cv-c\u0394StART p = 0.2385 (N = 22) (ns, p > 0.05; ****p < 0.0001) (Figure 6\u2014source data 1).\n\nIn addition to E-Cad, we also analysed Neurotactin (Nrt) expression that, in normal fly embryos, localizes to the cell extensions produced by the interstitial mesodermal cells that ensheath the germ cells (Figure 6C, C\u2019; Jenkins et al., 2003). In cv-c mutant testes we find that Neurotactin expression is almost absent around the germ cells inside the gonad (Figure 6D, D\u2019). Accordingly, interstitial somatic gonad mesodermal cells (labelled by the Traffic jam (Tj) antibody), which in the wild-type gonad can be detected distributed between GCs (Figure 6E, E\u2019), were frequently displaced to the periphery in cv-c mutant testes (Figure 6F, F\u2019).\n\nFinally, we studied the gonad integrity in cv-c mutants. Wild-type testes are surrounded by a Perlecan-rich extracellular matrix located between the pigment cells and the interstitial mesodermal cells that can be detected using a GFP insertion in the Perlecan gene (Figure 6G, G\u2019, I). In cv-cC524 mutants, the pigment cell layer and the ECM matrix are discontinuous with the extruded germ cells locating where the matrix gaps appeared (Figure 6H, H\u2019 arrowheads and I). These findings suggest that germ cell ensheathment by somatic cells cannot be maintained in the testis of cv-c mutant flies resulting in germ cell extrusion and gonadal rupture, a phenotype that is rescued by both Cv-c and DLC3 proteins containing a wild-type StART domain (Figure 6\u2014figure supplement 1). Taken together our results show that the DLC3/Cv-c protein family has a StART-dependent function required for male gonadogenesis in humans and Drosophila.\n\n## Discussion\n\nSex development is a central event in the life of metazoan animals. Sexual reproduction depends, particularly in mammals, on the determination of the gonads. What makes the gonads unique among all other organs is the fact that from one primordium two morphologically and functionally distinct organs, a testis and an ovary, arise. This phenomenon requires the fine tuning in space and time of all the genes, cells, and processes involved (Carr\u00e9 and Greenfield, 2016). Although new players are continuously discovered, many mechanisms underlying sexual determination and differentiation remain poorly understood, often due to the lack of a reliable experimental model. With this work, using Drosophila as a model, we confirmed the implication of DLC3 as a novel DSD gene required for testis determination through the action of its StART domain.\n\nDLC3 had been found to be mutated in two 46,XY DSD siblings presenting gonadal dysgenesis but no experimental evidence confirming causality had been provided (Ilaslan et al., 2018). In this study, we report a third DSD patient with a mutation in DLC supporting the involvement of this gene in gonad development. First described in human myeloid cells, DLC3 loss of expression was found in primary tumours from different tissues (Durkin et al., 2007). This multidomain protein forms part of a RhoGAP conserved family containing an N-terminus SAM domain followed by a serine-rich region, a catalytic GAP domain, and a StART domain (reviewed in Braun and Olayioye, 2015). There are also alternative isoforms lacking the SAM domain such as DLC3-\u03b2 (Durkin et al., 2007). Despite the recent advances identifying its structure and spatial subcellular location (Braun et al., 2015; Durkin et al., 2007; Hendrick et al., 2016; Holeiter et al., 2012), the specific function of the various protein domains is still not completely understood. At the adherens junctions (AJ) of epithelial cells, DLC3-GAP domain inhibitory effect on RhoA stabilizes E-cadherin-based cell\u2013cell contacts (Hendrick and Olayioye, 2019). DLC3 is also known to influence the dynamics of the AJ indirectly, regulating E-cadherin turnover at the recycling compartments (Braun et al., 2015).\n\nIn search for the molecular elements mediating DLC3/Cv-c testis function, we studied the involvement of the StART and GAP domains. In the fly, Cv-c is expressed in the testis mesodermal cells during development and cv-c mutations deleting the GAP and the StART domains disrupt testis development without affecting ovarian development. Expression of the DLC3 human protein in Drosophila mutants can substantially rescue the male gonadal defects while the expression of the mutant DLC3S993N form found in DSD patients does not, proving a conserved functionality among both species and the implication of DLC3 as a novel DSD gene.\n\nThe only enzymatically active domain previously recognized in DLC3/Cv-c was the GAP domain with the StART domain thought to play a regulatory role. Surprisingly, the expression of Cv-c without a GAP-functional domain in a cv-c mutant background is able to rescue the testis\u2019 developmental disruption with a similar efficiency than wild-type DLC3 transgenic flies. However, transgenes without the StART domain (Cv-c\u2206StART) or the human DLC3S993N allele carrying a mutation in the StART domain were unable to rescue the male gonad defects. These results demonstrate that the Cv-c StART domain has a GAP-independent function required for male gonad formation in Drosophila. StART domains have been shown to be lipid binding domains (Gatta et al., 2018; Horenkamp et al., 2018; Iaea et al., 2015; Khelashvili et al., 2019; Naito et al., 2019). The observation of a disrupted somatic-germ cell niche in the testis of cv-c mutant flies, made us wonder whether the StART domain\u2019s function in gonad development might be linked to lipid-regulated cell\u2013cell interactions.\n\nOur modelling analysis predicts that the S993N DLC3 mutation affects the \u03a91-loop structure of the StART domain. \u03a9-loops play multiple roles in protein function, often related to ligand binding, stability, and folding (Fetrow, 1995). This loop is conserved in the StART domains of several other STARD/DLC proteins and seems to be functionally important and modulate access to the ligand-binding cavity (Gatta et al., 2018; Gatta et al., 2015; Horenkamp et al., 2018; Naito et al., 2019). Our in silico analysis of the DLC3-StART domain predicts the \u03a91-loop displays the highest frequency of interaction with the membrane. In line with these, in silico simulation of the DLC3S993N mutant StART domain predicted the loss of one of the two conformational states of the protein, impairing its conformational dynamic with the loss of a closed state ligand-binding pocket in the StART domain. Within the loop, we find that residues S993, M994, A995, P996, and H997, have the highest frequency of interaction with the lipid bilayer. Interestingly, these five residues are conserved in the StART domains of StARD12 and StARD13, with the proline residue (P996 in DLC3) also conserved in StARD2, StARD7, StARD10, and StARD11 (Thorsell et al., 2011). These results suggest that the mutated S993N residue affects a critical structure of the protein domain and that alterations of this \u03a91-loop could impair the domain\u2019s membrane-binding activity independently from the GAP domain. In this context, single mutations in the \u03a91-loop surroundings, like the one carried by the patients, may have drastic effects on overall protein stability with consequences on the maintenance of the junctions between gonadal precursor cells.\n\nIn vertebrates and flies, gonad formation requires that germ cells migrate to the gonadal microenvironment, interact with the somatic cells, and cease the migrating behaviour. Germ cells migrate following an increasing gradient of chemo-attracting signals (Richardson and Lehmann, 2010). These signals trigger cell polarization in germ cells, reorganizing the membrane\u2019s cadherins. The protein rearrangement is followed by a reorganization of the cytoskeleton, creating a pulsation that flows front to back (Kardash et al., 2010; Kunwar et al., 2008; Kunwar et al., 2003). During this process there is a characteristic formation of \u2018blebs\u2019 or protrusions at the front of the migrating cell (Kardash et al., 2010). Germ cells migrate until they reach a point of maximum chemoattractant concentration. However, when subjected to ectopic signals, germ cells continue to show protrusions and migrating behaviour without a clear polarization (Kardash et al., 2010; Richardson and Lehmann, 2010). The PGCs\u2019 close association with the SGPs end the migratory phase, the last PGCs divisions are detected prior to compaction completion and the germ cells stop extending protrusions entering an \u2018inactive\u2019 phase (Jaglarz and Howard, 1995).\n\nWe show that in the absence of Cv-c function in the Drosophila testis, the mesodermal pigment cells do not form a continuous layer around the testis and the ECM surrounding the testis breaks. We also show that the interstitial gonadal cells fail to ensheath the germ cells and as a result of these defects the germ cells become extruded from the testis. These perturbations can be partially corrected by expression in the testis mesoderm of human DLC3 or Drosophila Cv-c that in both cases require a functional StART domain. Thus, our results suggest that Cv-c/DLC3 have a fundamental function on the mesodermal testis cells that has been conserved. These results indicate that, as in Drosophila, the primary cause for the gonadal dysgenesis in DLC3 human patients is due to the abnormal maintenance of the testis mesoderm cells, which include both Sertoli and Leydig cells.\n\nThe germ and somatic gonadal cells interact via the formation of AJs in sex-specific patterns (Fleming et al., 2012). The junction protein complex in male gonads is relatively well conserved among species, with its core constituted by head-to-head cadherin dimers established from opposing interacting cells (Piprek et al., 2020; Troyanovsky, 2012). As in Drosophila, human PGCs have to migrate from the allantois to the genital ridge where the gonad is formed and later they interact with the Sertoli mesodermal cells. This interaction is essential for the PGCs to differentiate and survive and requires, both in humans and Drosophila, an E-cad levels increase when the PGCs and SGPs meet (Fleming et al., 2012; Kunwar et al., 2008). This initial interaction is fragile and must be stabilized by incorporating \u03b2-catenin and other proteins to the complex (Fleming et al., 2012; Piprek et al., 2020). The complex serves finally as an anchor for the actin filaments of the cytoskeleton. Accordingly, the alteration of E-cadherin and \u03b2-catenin distribution observed in cv-c and DLC3 (humanized) fly mutant male gonads, together with the appearance of \u2018blebs\u2019, suggest that the settling-down switch has not been activated in the affected cells, and they remain in an erratic migrating behaviour until they eventually escape from the gonadal niche (summarized in Figure 6J).\n\nDuring the compaction stage, the Drosophila somatic cell\u2019s E-cad locates into thin membrane extensions that surround each germ cell, which also expresses E-cad (Jenkins et al., 2003). In our study, we observed that E-cadherin and \u03b2-catenin were abnormally distributed in cv-c mutants, suggesting alterations of the connectivity between PGCs and SGPs. Interestingly, this phenomenon was observed even under Rho1 reduction, reinforcing the idea of a role of Cv-c in a Rho1-independent mechanism that promotes the stabilization of AJ after gonad coalescence.\n\nThis Rho-independent mechanism requires StART domain\u2019s integrity. Although most of the previous efforts to explain the molecular function of DLC3-StART domain have failed (Alpy and Tomasetto, 2005), work by Sanchez-Solana et al., 2021 proved that the DLC1\u20133-StART domains bind phosphatidylserine (PS). They also postulated that, in DLC1, the lipid-binding works as a mediator of the interaction with several proteins independently from Rho-GAP domain activity (Sanchez-Solana et al., 2021). In eukaryotic membranes, PS is a well-known phospholipid involved in signalling pathways (Kay and Grinstein, 2013). In healthy cells, most PS locates on the inner layer of the plasma membrane. When the AJs are established, PS forms trans-bilayer-coupled nanoclusters with GPI-anchored proteins and glycosphingolipids from the outer layer. PS microdomains become anchoring points for proteins that promote signal transduction and the stabilization of the junction like Flotillins and PS-binding proteins (Yap et al., 2015). Taking these findings together, we hypothesize a role for the StART domain in the interaction of DLC3 with the temporal PS nanoclusters formed at the AJs, a phenomenon already demonstrated for DLC1 (Sanchez-Solana et al., 2021). Mutated DLC3-StART domain lacking the ability to respond to lipid binding with a conformational change, could be incapacitated to promote any further signalling.\n\nThe coincident requirement of DLC3/Cv-c for testis development and the conservation of the StART function suggest that in humans the DLC3-StART domain activity could also be required for the Sertoli cells/SGPs to trigger the germ cell settling behaviour and consolidate the male gonad development. It is still unknown why ovaries, where a similar somatic ensheathment of the germ cells occurs, do not require DLC3/Cv-c to maintain its stability. A possible explanation could be the sex-specific influence of AJ in overall patterning of the testis versus the ovary at the time of early gonadal sex differentiation (Fleming et al., 2012).\n\nIn conclusion, we demonstrate that mutations in DLC3/Cv-c are a novel cause of testicular dysgenesis in Drosophila and humans. Our results suggest that the dysgenesis is caused by the observed destabilization of cell\u2013cell connexions between testis mesodermal cells and between the germ cells and somatic support cells after gonad coalescence. DLC3/Cv-c action in the gonads sheds new lights on the mechanism by which the germ cells end their migrating behaviour and settle in the gonadal niche. Pending the analysis of DLC3/Cv-c in further species, our results indicate this function could be a conserved mechanism among species, since human DLC3 is able to rescue the cv-c testicular defects in Drosophila embryos. Our work points to DLC3/Cv-c as a novel gene required specifically in testis formation. Adding DLC3 to the list of genes involved in 46,XY complete dysgenesis opens up a new avenue to analyse the molecular and cellular mechanisms behind these disorders that could help in diagnosis and the development of future treatments. These results also underline the outstanding potential of Drosophila as a model to unveil the functional mechanism underlying human conditions like DSD without the ethical and logistical complexity of more conventional mammalian models.\n",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "61c0cca2-c10e-4f0f-aa1e-e21ab36fb376",
+      "submission_id": "4b839495-b997-4c9c-b7f5-58a3c638265d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Erika A Bach, https://ror.org/0190ak572 New York University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82343.sa0](https://doi.org/10.7554/eLife.82343.sa0)\n\nThis important study demonstrates a conserved function of somatic human DCL3/ Drosophila Cv-c in the development of the testis. The evidence supporting the claims of the authors is compelling as they combine the human genetics of a patient with gonadal dysgenesis with genetic rescues in Drosophila. This work will be of interest to developmental biologists and human geneticists. A major strength of the paper is proving that the presumptive lipid-interacting StART domain (but not the GAP domain) of DCL3/Cv-c is required for testis development, which opens a new area of investigation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Erika A Bach, https://ror.org/0190ak572 New York University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82343.sa1](https://doi.org/10.7554/eLife.82343.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "744af774-0404-4065-b622-2b23d5849c83",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C1",
+      "claim": "A DLC3 mutation was associated with male gonadal dysgenesis in 46,XY DSD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a DLC3 mutation was associated with male gonadal dysgenesis in 46,XY DSD patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Ilaslan et al., 2018) as stated in the abstract and introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "cb8efcc4-9b42-49f0-bf89-d61abb7c4b0d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C2",
+      "claim": "Cv-c is required to maintain testis integrity during fly development.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Cv-c is required to maintain testis integrity during fly development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing testis defects in cv-c mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "99682dbe-1342-4505-b9a2-d29d36cb7553",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C3",
+      "claim": "Cv-c and human DLC3 can perform the same function in fly embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Cv-c and human DLC3 can perform the same function in fly embryos, as flies carrying wild type but not patient DLC3 variations can rescue gonadal dysgenesis, suggesting functional conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by rescue experiments showing that wild-type DLC3 but not mutant DLC3 can rescue cv-c mutant phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "ae4207e8-10b5-4055-898a-31c8c8bc8693",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C4",
+      "claim": "Flies carrying wild type but not patient DLC3 variations can rescue gonadal dysgenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Cv-c and human DLC3 can perform the same function in fly embryos, as flies carrying wild type but not patient DLC3 variations can rescue gonadal dysgenesis, suggesting functional conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental rescue data comparing wild-type and mutant DLC3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "b6499a7a-bfe3-4dda-a048-7cd16fea40ee",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C5",
+      "claim": "The StART domain mediates Cv-c's function in the male gonad independently from the GAP domain's activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate that the StART domain mediates Cv-c's function in the male gonad independently from the GAP domain's activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that GAP-mutant Cv-c can rescue testis defects while StART-deleted Cv-c cannot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "15d4df65-d419-4629-a90c-3af654f89fa0",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C6",
+      "claim": "The primary cause of nearly 50% of DSD cases remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary cause of nearly 50% of DSD cases remains unknown (Barseghyan et al., 2018; Buonocore et al., 2019), suggesting the existence of further sex-developmental mechanisms still awaiting discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies on DSD.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "ec15cb7e-7b3c-483f-9bb0-6a074f3262f3",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C7",
+      "claim": "Primordial germ cells (PGCs) are formed near the allantois during gastrulation around the fourth gestational week in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, primordial germ cells (PGCs) are formed near the allantois during gastrulation around the fourth gestational week (GW) and migrate to the genital ridge where they form the anlage necessary for gonadal development (GW5\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of human developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "ed2e8c77-3a00-420c-ae1a-d9b79300eae5",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C8",
+      "claim": "Somatic mesodermal cells are required for both PGCs migration and the formation of a proper gonad.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic mesodermal cells are required for both PGCs migration and the formation of a proper gonad.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "4098e07a-7432-4d0a-a0b5-65f1943fbcdd",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C9",
+      "claim": "Mutations in genes regulating somatic Sertoli and granulosa support cell function in humans are often associated with complete or partial gonadal dysgenesis in both sexes and sex reversal in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mutations in genes regulating somatic Sertoli and granulosa support cell function in humans are often associated with complete or partial gonadal dysgenesis in both sexes and sex reversal in males (Brunello and Rey, 2021; Knower et al., 2011; Zarkower and Murphy, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "e383e7b6-7b17-4808-bc31-04351001ff38",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C10",
+      "claim": "In Drosophila, PGCs are formed in the blastoderm and are carried passively into the gut where they enter the embryo after crossing the intestinal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, PGCs are formed in the blastoderm and are carried passively into the gut where they enter the embryo after crossing the intestinal epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of Drosophila development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "153ca0f3-032c-46a6-9538-742b55b895b8",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C11",
+      "claim": "In mouse mutants without a genital ridge, the PGCs can migrate but remain immature.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse mutants without a genital ridge, the PGCs can migrate but remain immature (reviewed in Cooke and Moris, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "b7a8252a-e10c-49eb-ba55-fc6ef492ccb5",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C12",
+      "claim": "In the fly, somatic gonadal cells can coalesce into a gonad in the absence of PGCs, but the PGCs are unable to coalesce in the absence of somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the fly, somatic gonadal cells can coalesce into a gonad in the absence of PGCs, but the PGCs are unable to coalesce in the absence of somatic cells (Brookman et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "d7175d68-b726-4aac-b7e3-5a104c0cfec0",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C13",
+      "claim": "Subsets of somatic gonadal cells produce steroid hormones (testosterone in mammals and ecdysone in insects).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, subsets of somatic gonadal cells produce steroid hormones (testosterone in mammals Zirkin and Papadopoulos, 2018 and ecdysone in insects Tajouri et al., 2018), which have a global influence on the organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "6a6c6a3c-fda3-49ce-a87d-befcb6e7ff92",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C14",
+      "claim": "Abnormal gonadogenesis in human 46,XY individuals leads to under-masculinization, resulting in incomplete sexual characteristics at birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Abnormal gonadogenesis in human 46,XY individuals leads to under-masculinization, resulting in incomplete sexual characteristics at birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "eb496daa-abce-4f9a-b2b9-2d2c4a2fb434",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C15",
+      "claim": "Patients with complete gonadal dysgenesis present female external genitalia and hypogonadotropic hypogonadism with lack of secondary sex characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with complete gonadal dysgenesis present female external genitalia and hypogonadotropic hypogonadism with lack of secondary sex characteristics (Rocha et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior clinical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "ec9caa17-de3a-49b0-9f0a-9039e9bef880",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C16",
+      "claim": "In mammalian models, gonadal dysgenesis causes infertility, DSD, and sex reversal while in insect models it leads to sterility.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian models, gonadal dysgenesis causes infertility, DSD, and sex reversal while in insect models it leads to sterility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge from model organism studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "7dae91f5-ef5e-490a-b92c-fd0e7bd5721e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C17",
+      "claim": "The human X-linked DLC3 gene (also known as STARD8) has been implicated in a case of 46,XY gonadal dysgenesis in two patients carrying a variant in the StART domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the human X-linked DLC3 gene (also known as STARD8) has been implicated in a case of 46,XY gonadal dysgenesis in two patients carrying a variant in the StART domain (Ilaslan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "66c4f5ce-f01c-42fd-8ca9-43c1b4592e71",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C18",
+      "claim": "The Deleted in Liver Cancer (DLC) proteins belong to the RhoGAP family of small GTPase regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "The Deleted in Liver Cancer (DLC) proteins belong to the RhoGAP family of small GTPase regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of protein families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "bf04f31d-7b72-42e7-9f65-08a4e08b176d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C19",
+      "claim": "In vertebrates, there are three DLC members (DLC1, 2, and 3) whereas Drosophila has a single orthologue, crossveinless-c (cv-c).",
+      "claim_type": "EXPLICIT",
+      "source": "In vertebrates, there are three members (DLC1, 2, and 3) whereas Drosophila has a single orthologue, crossveinless-c (cv-c) (Denholm et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "540388a2-ca87-4703-be07-b27fd541fd5f",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C20",
+      "claim": "DLC family proteins share different domains: a Rho GTPase Activating Protein domain (GAP), a protein\u2013protein interacting Sterile Alpha Motif (SAM) at the N terminal end, and a Steroidogenic Acute Regulatory protein (StAR)-related lipid transfer (StART) domain at the C terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "This family of proteins shares different domains: besides the Rho GTPase Activating Protein domain (GAP), they present a protein\u2013protein interacting Sterile Alpha Motif (SAM) at the N terminal end and a Steroidogenic Acute Regulatory protein (StAR)-related lipid transfer (StART) domain at the C terminal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of protein structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "af2c49e5-30db-4ee1-83c3-9ef9b8f9cede",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C21",
+      "claim": "StART domains have been shown in other proteins to be involved in lipid interaction, protein localization, and function.",
+      "claim_type": "EXPLICIT",
+      "source": "StART domains have been shown in other proteins to be involved in lipid interaction, protein localization, and function (Braun and Olayioye, 2015; Clark, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "17d3c7af-a42a-4176-8bc9-22f6d69a1ff4",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C22",
+      "claim": "DLC1 and DLC3 can functionally substitute for Cv-c in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that DLC1 and DLC3 can functionally substitute for Cv-c in Drosophila (Sotillos et al., 2018) opening up the use of Drosophila as a system to analyse the requirement of DLC3/Cv-c proteins during male gonadogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "902170d9-4abd-4444-abce-681b88d0f5eb",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C23",
+      "claim": "The patient UKR05 carrying mutation R887C was one from the cohort of 45 DSD patients from different regions of Ukraine.",
+      "claim_type": "EXPLICIT",
+      "source": "The patient UKR05 carrying mutation R887C (Poltava region) was one from the cohort of 45 DSD patients from different regions of Ukraine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by patient data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "660507ee-764c-4a66-8de3-4757e0d40daa",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C24",
+      "claim": "The patient UKR05 was with complete gonadal dysgenesis, primary hypogonadism.",
+      "claim_type": "EXPLICIT",
+      "source": "The patient was with complete gonadal dysgenesis, primary hypogonadism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by clinical data from the patient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "e8a05525-e2f9-46cd-8db2-f5740837587d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C25",
+      "claim": "Cytogenetic studies of the patient showed a 46,XY karyotype with Y-specific sequences including SRY gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytogenetic studies (GTG-banding, FISH\u2014probes CEP, LSI probes: Yp11.3\u2014SRY; Yp11.1-q11.1\u2014DYZ3; Yq12\u2014DYZ1; CEP\u2014DXZ1) of the patient showed a 46,XY karyotype with Y-specific sequences including SRY gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cytogenetic data from the patient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "b23576af-ef0d-4870-a2fd-c26425f6ee0e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C26",
+      "claim": "A hemizygous missense mutation NM_001142503.2 c.2659 C>T (p.Arg887Cys VarSome/p.Arg807Cys UniProt) (rs766188656) in STARD8 gene was identified in the patient.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a hemizygous missense mutation NM_001142503.2 c.2659 C>T (p.Arg887Cys VarSome/p.Arg807Cys UniProt) (rs766188656) in STARD8 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by whole exome sequencing data from the patient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "1e8399c0-d050-489f-9903-a562584611cf",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C27",
+      "claim": "The variant rs766188656 has Minor allele frequency (MAF) = 0.0000251 and was not previously implicated in the pathogenesis of any disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This variant has Minor allele frequency (MAF) = 0.0000251 and was not previously implicated in the pathogenesis of any disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on database information about the variant.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "83f600d1-03a5-4de1-9dc2-99d8d92e79c6",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C28",
+      "claim": "The S993N mutation causes a non-negligible effect on the conformation of the \u03a91 loop that is located at the entrance of the hydrophobic cavity of the StART domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the mutation causes a non-negligible effect on the conformation of the \u03a91 loop that is located at the entrance of the hydrophobic cavity of the StART domain (Figure 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data presented in Figure 1D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "3857c515-fed7-4309-84e5-2ab5d2926876",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C29",
+      "claim": "The simulations of the wild-type DLC3-StART domain show a transition between a 'closed' state, where the distance between the C\u03b1 atoms of S993 and L1079 is 8.2 \u00c5, and an 'open' state with an aperture of 11.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations of the wild-type DLC3-StART domain show a transition between a 'closed' state, where the distance between the C\u03b1 atoms of S993 and L1079 located on the opposite C-terminal helix is 8.2 \u00c5, and an 'open' state with an aperture of 11.8 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "786a6223-9105-4ddb-b51d-fac967813432",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C30",
+      "claim": "The DLC3-S993N-StART domain showed a single 'open' conformational state where the binding pocket has an aperture of 13.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the DLC3-S993N-StART domain showed a single 'open' conformational state where the binding pocket has an aperture of 13.3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "e15c5441-5672-433b-a869-c92f56e62e54",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C31",
+      "claim": "Multiple binding and unbinding events between the DLC3-StART domain protein and the bilayer were observed in all replicas of coarse-grain simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed multiple binding and unbinding events between the protein and the bilayer in all replicas, as indicated by the minimum distance between them (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by coarse-grain simulation data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "384974b1-b56d-463e-b793-f7bf096d10c4",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C32",
+      "claim": "The N-terminus of the DLC3-StART domain and the \u03a91 loop show the highest frequency of interaction with the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "When the frequency of interaction for each residue of the protein with the bilayer was determined (Figure 1\u2014figure supplement 1C), the N-terminus of the domain and the \u03a91 loop (Figure 1\u2014figure supplement 1D) show the highest frequency of interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 1\u2014figure supplement 1C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "9336a669-5517-4281-9459-249b14b3d0b6",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C33",
+      "claim": "DLC3 and Cv-c are highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural analyses have shown that DLC3 and Cv-c are highly conserved (Figure 2A, B) and that, in Drosophila, DLC3 can functionally substitute for Cv-c (Sotillos et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in Figure 2A, B and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "9fa1f787-6d4b-4328-aae1-526f6c4209ba",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C34",
+      "claim": "cv-c is broadly expressed in the mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous studies of Cv-c have concentrated in ectodermal derived tissues despite cv-c being broadly expressed in the mesoderm (Denholm et al., 2005; Sotillos et al., 2013; Sotillos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "6ee5a9c2-9841-4fc8-8824-d6e2448338c7",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C35",
+      "claim": "cv-c is transcribed in the testis mesoderm cells including the somatic gonadal cells ensheathing the germ cells, the male-specific somatic gonad precursors (msSGPs) located at the posterior of the gonad and the pigment cell precursors surrounding the whole testis.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cv-c is transcribed in the testis mesoderm cells including the somatic gonadal cells ensheathing the germ cells, the male-specific somatic gonad precursors (msSGPs) located at the posterior of the gonad and the pigment cell precursors surrounding the whole testis (Figure 2C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA in situ hybridization data shown in Figure 2C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "fcac05a6-45b5-4038-9f56-acf69b5acd59",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C36",
+      "claim": "Comparable levels of cv-c mRNA nor Cv-c::GFP protein were not observed in the female gonad mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe comparable levels of cv-c mRNA nor Cv-c::GFP protein in the female gonad mesoderm (Figure 2E, G, I) nor in the germ cells of any sex, indicating a male-specific regulation of cv-c expression in the testis mesoderm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA in situ hybridization and protein expression data shown in Figure 2E, G, I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "ea33ea11-3ee9-4b28-ae1d-1141d6197cde",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C37",
+      "claim": "cv-c expression in the testis mesodermal cells does not depend on JAK/STAT activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Df(1)os1A/+; cv-c::GFP/+ females were crossed to cv-c::GFP/+ males allowing us to compare cv-c::GFP expression in Df(1)os1A male embryos with their control siblings (Figure 2\u2014figure supplement 1A, B). As previously described, in Df(1)os1A embryos the testis are smaller due to the lack of JAK/STAT activation, however we detect normal levels of Cv-c::GFP expression in the testis gonadal mesoderm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "695f1be8-96d2-45d8-81f0-1d13855b5b3c",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C38",
+      "claim": "Cv-c does not control the activity of the JAK/STAT pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find any difference between heterozygous and homozygous cv-cC524 testes in any case, indicating that the JAK/STAT and cv-c mutant phenotypes act independently of each other (Figure 2\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1C\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "0799e865-01b4-472c-861f-29fea0c7ce12",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C39",
+      "claim": "Homozygous or hemizygous cv-c mutant male embryos have abnormal testes containing germ cells that are not surrounded by the gonadal mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, homozygous or hemizygous cv-c mutant male embryos have abnormal testes containing germ cells that are not surrounded by the gonadal mesoderm (Figure 3C and E arrowheads compare with A and D, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "d16162c5-4447-4602-aefe-67f8233ea79d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C40",
+      "claim": "No major morphological defects were detected in female gonads of cv-c mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect any major morphological defects in female gonads, confirming cv-c is not required for embryonic ovary development (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "ab9d1e15-b640-424b-98d1-0ab732d7b5da",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C41",
+      "claim": "The gonad mesoderm cells are frequently displaced in cv-c mutants, with the pigment cells failing to completely surround the mutant testis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the gonad mesoderm cells are frequently displaced, with the pigment cells failing to completely surround the mutant testis (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "1bb2c8b9-bfb6-466a-8b16-c6442103c624",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C42",
+      "claim": "Development is normal up to st15 in cv-cC524 homozygous mutant embryos, with the testis compacting into a spherical gonad.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of cv-cC524 homozygous mutant embryos in the same conditions revealed that development is normal up to st15, with the testis compacting into a spherical gonad (Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live imaging data shown in Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "21ffbb4f-f2eb-4151-b197-3da51eb65443",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C43",
+      "claim": "After stage 15, the germ cells become extruded from the testis in cv-cC524 homozygous mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after this stage the germ cells become extruded from the testis (Videos 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live imaging data shown in Videos 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "86785451-142e-4543-98a5-e98b138d6c8b",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C44",
+      "claim": "The extruded germ cells in cv-c mutant testes extend blebs that are more characteristic of the earlier migratory phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of fixed mutant testes shows that the extruded germ cells extend blebs that are more characteristic of the earlier migratory phase (Figure 3I, arrowheads and J; Figure 3\u2014source data 1; Jaglarz and Howard, 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3I, J and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "7806d764-3d81-451a-8ae7-cfda4a5b3217",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C45",
+      "claim": "Expression of wild-type DLC3 protein with the pan mesodermal twi-Gal4 driver line in cv-cC524 mutant embryos efficiently rescued the testis defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the UAS/Gal4 system to express wild-type DLC3 protein with the pan mesodermal twi-Gal4 driver line in otherwise cv-cC524 mutant embryos, we efficiently rescued the testis defects (Figure 4A, B, E) pointing out to the conservation of DLC3/Cv-c function in gonadogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data shown in Figure 4A, B, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "60d58824-aa22-46b6-8484-c43ce24be310",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C46",
+      "claim": "Expression of the DLC3S993N StART protein present in human patients is not capable of efficiently rescuing the testis phenotype in cv-cC524 mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, expression in the same conditions of the DLC3S993N StART protein present in human patients is not capable of efficiently rescuing the testis phenotype (Figure 4A, B, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data shown in Figure 4A, B, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "7d3422d7-1008-4edd-b79f-5471640304cf",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C47",
+      "claim": "Expression of a UAS-cv-c\u2206StART construct generating a Cv-c protein lacking the StART domain does not significantly normalize the testis defects in cv-cC524 homozygous embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, we found that expression of a UAS-cv-c\u2206StART construct generating a Cv-c protein lacking the StART domain, does not significantly normalize the testis defects (Figure 4C, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data shown in Figure 4C, I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "4bb675ec-1176-4d26-8324-a7e23ff6541d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C48",
+      "claim": "Expression of the wild-type Cv-c protein rescued the abnormal phenotypes in more than 50% of the testes in cv-cC524 homozygous embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the expression of the wild-type Cv-c protein rescued the abnormal phenotypes in more than 50% of the testes (Figure 4C, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data shown in Figure 4C, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "a23b9030-0cae-4d67-9cf6-40f24ee27a6d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C49",
+      "claim": "Expression of a Cv-c mutant protein substituting a highly conserved Arginine into Glutamine residue that blocks the GAP domain activity rescued the gonadal phenotypes to a better extent than the wild-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, expression of a Cv-c mutant protein substituting a highly conserved Arginine into Glutamine residue that has been shown to block the GAP domain activity in vitro and the protein function in vivo (Leonard et al., 1998; Sotillos et al., 2013; Sotillos et al., 2018) rescued the gonadal phenotypes to a better extent than the wild-type protein (Figure 4C, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data shown in Figure 4C, H and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "85474b70-2c8d-402a-8e43-37897e3ba7b4",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C50",
+      "claim": "Embryos homozygous for cv-c7, an allele which carries the GAP mutation in the endogenous gene, showed normal testis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, analysis of embryos homozygous for cv-c7, an allele which carries that exact GAP mutation in the endogenous gene (Denholm et al., 2005), showed normal testis (Figure 5A, B), suggesting that Cv-c function in the gonad is not mediated through its RhoGAP function, but requires the StART domain, deleted in cv-cC524 (Figure 5C, D) and cv-cM62 mutant alleles (Figure 5E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 5A, B and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "aa119056-7697-4a65-b307-c2d56c393962",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C51",
+      "claim": "cv-cM62 gonad mutant phenotypes cannot be rescued by a Rho1 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Rho1 cv-c double mutant embryos, we observe an additive effect of both mutations (Figure 5K, L), with smaller gonads due to the Rho1 early migratory defect and the testis germ cell extrusion typical of cv-c mutants (Figure 5I, J), indicating that the dysgenic gonad phenotype cannot be rescued by a reduction of Rho1 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genetic interaction data shown in Figure 5I, J, K, L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "9157c4d8-6311-426f-ac63-d80e44739d4a",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C52",
+      "claim": "In cv-c mutants there are frequent gaps of E-cad distribution between adjacent germ cells inside the testes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that while, in the wild-type testes the germ cells inside the gonad are encircled by high levels of E-cad protein (Figure 6A, A'), in cv-c mutants there are frequent gaps of E-cad distribution between adjacent germ cells inside the testes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 6A, A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "ef3d7a09-e646-4cca-9d1f-8f221e23c5c7",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C53",
+      "claim": "Extruded germ cells in cv-c mutants have almost no E-Cad on their membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observe that extruded germ cells have almost no E-Cad on their membranes (Figure 6B, B', arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 6B, B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "0d4509ad-f13f-409a-94a3-f2d23107bd9d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C54",
+      "claim": "In cv-cC524 mutants, little Neurotactin expression is detected around the germ cells inside the testis.",
+      "claim_type": "EXPLICIT",
+      "source": "In cv-c mutant testes we find that Neurotactin expression is almost absent around the germ cells inside the gonad (Figure 6D, D').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 6D, D'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "acb05cea-0271-4590-977b-f22faaffa1b7",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C55",
+      "claim": "Interstitial somatic gonad mesodermal cells were frequently displaced to the periphery in cv-c mutant testes.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, interstitial somatic gonad mesodermal cells (labelled by the Traffic jam (Tj) antibody), which in the wild-type gonad can be detected distributed between GCs (Figure 6E, E'), were frequently displaced to the periphery in cv-c mutant testes (Figure 6F, F').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 6E, E', F, F'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "e008b977-f5d4-4f7d-bea7-d8751fb5a74b",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C56",
+      "claim": "In cv-cC524 mutants, the pigment cell layer and the ECM matrix are discontinuous with the extruded germ cells locating where the matrix gaps appeared.",
+      "claim_type": "EXPLICIT",
+      "source": "In cv-cC524 mutants, the pigment cell layer and the ECM matrix are discontinuous with the extruded germ cells locating where the matrix gaps appeared (Figure 6H, H' arrowheads and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 6H, H' and quantification in Figure 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "66e0f314-96df-458a-9786-7fa1a27d5c5e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C57",
+      "claim": "Germ cell ensheathment by somatic cells cannot be maintained in the testis of cv-c mutant flies resulting in germ cell extrusion and gonadal rupture.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that germ cell ensheathment by somatic cells cannot be maintained in the testis of cv-c mutant flies resulting in germ cell extrusion and gonadal rupture, a phenotype that is rescued by both Cv-c and DLC3 proteins containing a wild-type StART domain (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from multiple experimental observations and rescue data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "1e896dbb-006c-450b-a187-5e87aaaa1f4f",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C58",
+      "claim": "The DLC3/Cv-c protein family has a StART-dependent function required for male gonadogenesis in humans and Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together our results show that the DLC3/Cv-c protein family has a StART-dependent function required for male gonadogenesis in humans and Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the combined experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "96a9f5fc-7bb6-4210-bf8c-b0454820aef8",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C59",
+      "claim": "The S993N DLC3 mutation affects the \u03a91-loop structure of the StART domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modelling analysis predicts that the S993N DLC3 mutation affects the \u03a91-loop structure of the StART domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "6e7700b4-c8a1-4c9d-ae89-13247d9ca664",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C60",
+      "claim": "\u03a9-loops play multiple roles in protein function, often related to ligand binding, stability, and folding.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03a9-loops play multiple roles in protein function, often related to ligand binding, stability, and folding (Fetrow, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "88796bde-952e-44f0-8826-100edbb5a5a1",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C61",
+      "claim": "The \u03a91-loop is conserved in the StART domains of several other STARD/DLC proteins and seems to be functionally important and modulate access to the ligand-binding cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "This loop is conserved in the StART domains of several other STARD/DLC proteins and seems to be functionally important and modulate access to the ligand-binding cavity (Gatta et al., 2018; Gatta et al., 2015; Horenkamp et al., 2018; Naito et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "b0fff881-e3e6-4bf5-b828-c041aec1b9f7",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C62",
+      "claim": "In silico simulation of the DLC3S993N mutant StART domain predicted the loss of one of the two conformational states of the protein, impairing its conformational dynamic with the loss of a closed state ligand-binding pocket in the StART domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these, in silico simulation of the DLC3S993N mutant StART domain predicted the loss of one of the two conformational states of the protein, impairing its conformational dynamic with the loss of a closed state ligand-binding pocket in the StART domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "6592a19b-635c-470e-960f-7fabc2335744",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C63",
+      "claim": "Residues S993, M994, A995, P996, and H997 in the \u03a91-loop have the highest frequency of interaction with the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the loop, we find that residues S993, M994, A995, P996, and H997, have the highest frequency of interaction with the lipid bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by coarse-grain simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "07704e03-84be-4c0e-862b-1a94cdf646a4",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C64",
+      "claim": "The five residues S993, M994, A995, P996, and H997 are conserved in the StART domains of StARD12 and StARD13.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these five residues are conserved in the StART domains of StARD12 and StARD13, with the proline residue (P996 in DLC3) also conserved in StARD2, StARD7, StARD10, and StARD11 (Thorsell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence conservation analysis and citation to prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "09d36910-455d-4c09-bc37-037cb3cb778f",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C65",
+      "claim": "Alterations of the \u03a91-loop could impair the domain's membrane-binding activity independently from the GAP domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the mutated S993N residue affects a critical structure of the protein domain and that alterations of this \u03a91-loop could impair the domain's membrane-binding activity independently from the GAP domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "8fbddbb9-5210-4de8-9c91-86b333d29533",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C66",
+      "claim": "Single mutations in the \u03a91-loop surroundings may have drastic effects on overall protein stability with consequences on the maintenance of the junctions between gonadal precursor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, single mutations in the \u03a91-loop surroundings, like the one carried by the patients, may have drastic effects on overall protein stability with consequences on the maintenance of the junctions between gonadal precursor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation from the simulation and experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "476a3844-7b1b-4cea-8ba0-bc14652bd0af",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C67",
+      "claim": "Germ cells migrate following an increasing gradient of chemo-attracting signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Germ cells migrate following an increasing gradient of chemo-attracting signals (Richardson and Lehmann, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "08b31b2a-92f9-490f-878c-a03571176bc6",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C68",
+      "claim": "The PGCs' close association with the SGPs end the migratory phase, the last PGCs divisions are detected prior to compaction completion and the germ cells stop extending protrusions entering an 'inactive' phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The PGCs' close association with the SGPs end the migratory phase, the last PGCs divisions are detected prior to compaction completion and the germ cells stop extending protrusions entering an 'inactive' phase (Jaglarz and Howard, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "fc80aa1e-36f6-49f1-abae-a317c34c1ecb",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C69",
+      "claim": "In the absence of Cv-c function in the Drosophila testis, the mesodermal pigment cells do not form a continuous layer around the testis and the ECM surrounding the testis breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in the absence of Cv-c function in the Drosophila testis, the mesodermal pigment cells do not form a continuous layer around the testis and the ECM surrounding the testis breaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "2ac9e4cc-1a28-4416-a666-b8267569fe29",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C70",
+      "claim": "The interstitial gonadal cells fail to ensheath the germ cells in the absence of Cv-c function.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that the interstitial gonadal cells fail to ensheath the germ cells and as a result of these defects the germ cells become extruded from the testis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "c299d51c-e191-4dd4-93f6-727402e6ce0e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C71",
+      "claim": "The perturbations in cv-c mutant testes can be partially corrected by expression in the testis mesoderm of human DLC3 or Drosophila Cv-c that in both cases require a functional StART domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These perturbations can be partially corrected by expression in the testis mesoderm of human DLC3 or Drosophila Cv-c that in both cases require a functional StART domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by rescue experiment data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "cf690460-0294-455d-95e3-142cd3daab37",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C72",
+      "claim": "The primary cause for the gonadal dysgenesis in DLC3 human patients is due to the abnormal maintenance of the testis mesoderm cells, which include both Sertoli and Leydig cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that Cv-c/DLC3 have a fundamental function on the mesodermal testis cells that has been conserved. These results indicate that, as in Drosophila, the primary cause for the gonadal dysgenesis in DLC3 human patients is due to the abnormal maintenance of the testis mesoderm cells, which include both Sertoli and Leydig cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the Drosophila experimental results to the human condition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "64f7dbf6-a2e1-426b-a94a-86b42d836c98",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C73",
+      "claim": "The junction protein complex in male gonads is relatively well conserved among species, with its core constituted by head-to-head cadherin dimers established from opposing interacting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The junction protein complex in male gonads is relatively well conserved among species, with its core constituted by head-to-head cadherin dimers established from opposing interacting cells (Piprek et al., 2020; Troyanovsky, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "0db8d751-9f62-40c8-bbe2-ec3e453a700e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C74",
+      "claim": "Human PGCs have to migrate from the allantois to the genital ridge where the gonad is formed and later they interact with the Sertoli mesodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As in Drosophila, human PGCs have to migrate from the allantois to the genital ridge where the gonad is formed and later they interact with the Sertoli mesodermal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of human development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "8395c95a-b281-4494-94d9-c568d7c80b64",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C75",
+      "claim": "The interaction between PGCs and Sertoli cells is essential for the PGCs to differentiate and survive and requires an E-cad levels increase when the PGCs and SGPs meet, both in humans and Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction is essential for the PGCs to differentiate and survive and requires, both in humans and Drosophila, an E-cad levels increase when the PGCs and SGPs meet (Fleming et al., 2012; Kunwar et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "b06ce00c-1e5b-4d89-abfe-3aa74681a34a",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C76",
+      "claim": "The alteration of E-cadherin and \u03b2-catenin distribution observed in cv-c and DLC3 (humanized) fly mutant male gonads, together with the appearance of 'blebs', suggest that the settling-down switch has not been activated in the affected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the alteration of E-cadherin and \u03b2-catenin distribution observed in cv-c and DLC3 (humanized) fly mutant male gonads, together with the appearance of 'blebs', suggest that the settling-down switch has not been activated in the affected cells, and they remain in an erratic migrating behaviour until they eventually escape from the gonadal niche (summarized in Figure 6J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "537c5de8-34b0-4113-a98a-cf42f9076e28",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C77",
+      "claim": "During the compaction stage, the Drosophila somatic cell's E-cad locates into thin membrane extensions that surround each germ cell, which also expresses E-cad.",
+      "claim_type": "EXPLICIT",
+      "source": "During the compaction stage, the Drosophila somatic cell's E-cad locates into thin membrane extensions that surround each germ cell, which also expresses E-cad (Jenkins et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "e06a6c3a-819c-46f1-b09e-f56313871d65",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C78",
+      "claim": "E-cadherin and \u03b2-catenin were abnormally distributed in cv-c mutants, suggesting alterations of the connectivity between PGCs and SGPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we observed that E-cadherin and \u03b2-catenin were abnormally distributed in cv-c mutants, suggesting alterations of the connectivity between PGCs and SGPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "35fce548-de09-4635-93f1-dd8d12195e65",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C79",
+      "claim": "The abnormal E-cadherin and \u03b2-catenin distribution was observed even under Rho1 reduction, reinforcing the idea of a role of Cv-c in a Rho1-independent mechanism that promotes the stabilization of AJ after gonad coalescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this phenomenon was observed even under Rho1 reduction, reinforcing the idea of a role of Cv-c in a Rho1-independent mechanism that promotes the stabilization of AJ after gonad coalescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from genetic interaction experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "66a14a25-04c0-4140-bdd6-632944b6af74",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C80",
+      "claim": "The DLC1\u20133-StART domains bind phosphatidylserine (PS).",
+      "claim_type": "EXPLICIT",
+      "source": "Although most of the previous efforts to explain the molecular function of DLC3-StART domain have failed (Alpy and Tomasetto, 2005), work by Sanchez-Solana et al., 2021 proved that the DLC1\u20133-StART domains bind phosphatidylserine (PS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "4b15994d-17b3-4a24-9855-4d6066b4b044",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C81",
+      "claim": "In DLC1, the lipid-binding works as a mediator of the interaction with several proteins independently from Rho-GAP domain activity.",
+      "claim_type": "EXPLICIT",
+      "source": "They also postulated that, in DLC1, the lipid-binding works as a mediator of the interaction with several proteins independently from Rho-GAP domain activity (Sanchez-Solana et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "39525c2e-6b85-4364-8dcd-706171e7c03e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C82",
+      "claim": "In eukaryotic membranes, PS is a well-known phospholipid involved in signalling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotic membranes, PS is a well-known phospholipid involved in signalling pathways (Kay and Grinstein, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "9373935d-0e58-4024-8eb7-679e452a4bd2",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C83",
+      "claim": "When the AJs are established, PS forms trans-bilayer-coupled nanoclusters with GPI-anchored proteins and glycosphingolipids from the outer layer.",
+      "claim_type": "EXPLICIT",
+      "source": "When the AJs are established, PS forms trans-bilayer-coupled nanoclusters with GPI-anchored proteins and glycosphingolipids from the outer layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of membrane biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "5643761e-6cd5-4df9-9dcd-db16e27682e1",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C84",
+      "claim": "PS microdomains become anchoring points for proteins that promote signal transduction and the stabilization of the junction like Flotillins and PS-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "PS microdomains become anchoring points for proteins that promote signal transduction and the stabilization of the junction like Flotillins and PS-binding proteins (Yap et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "14efff0b-8079-4e2e-8c41-0170779b6aba",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C85",
+      "claim": "The StART domain interacts with temporal PS nanoclusters formed at the AJs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking these findings together, we hypothesize a role for the StART domain in the interaction of DLC3 with the temporal PS nanoclusters formed at the AJs, a phenomenon already demonstrated for DLC1 (Sanchez-Solana et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation and inference from prior research on DLC1.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "19d18709-fc71-4738-9c7a-a5c864128fcd",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C86",
+      "claim": "Mutated DLC3-StART domain lacking the ability to respond to lipid binding with a conformational change could be incapacitated to promote any further signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutated DLC3-StART domain lacking the ability to respond to lipid binding with a conformational change, could be incapacitated to promote any further signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation from the simulation and experimental results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "9eba1562-584b-4ae9-926d-230a04cd2f96",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C87",
+      "claim": "In humans the DLC3-StART domain activity could be required for the Sertoli cells/SGPs to trigger the germ cell settling behaviour and consolidate the male gonad development.",
+      "claim_type": "EXPLICIT",
+      "source": "The coincident requirement of DLC3/Cv-c for testis development and the conservation of the StART function suggest that in humans the DLC3-StART domain activity could also be required for the Sertoli cells/SGPs to trigger the germ cell settling behaviour and consolidate the male gonad development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation and inference from the Drosophila results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "9fea9d9c-1a30-4028-94e4-dc50e8c08e5e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C88",
+      "claim": "Mutations in DLC3/Cv-c are a novel cause of testicular dysgenesis in Drosophila and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we demonstrate that mutations in DLC3/Cv-c are a novel cause of testicular dysgenesis in Drosophila and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the combined experimental and clinical data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "3baa0072-50b5-489f-8076-181916b6676d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C89",
+      "claim": "The dysgenesis is caused by the observed destabilization of cell\u2013cell connexions between testis mesodermal cells and between the germ cells and somatic support cells after gonad coalescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the dysgenesis is caused by the observed destabilization of cell\u2013cell connexions between testis mesodermal cells and between the germ cells and somatic support cells after gonad coalescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "cd47d736-ee20-480f-adc4-4837119a4436",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C90",
+      "claim": "DLC3/Cv-c action in the gonads sheds new lights on the mechanism by which the germ cells end their migrating behaviour and settle in the gonadal niche.",
+      "claim_type": "EXPLICIT",
+      "source": "DLC3/Cv-c action in the gonads sheds new lights on the mechanism by which the germ cells end their migrating behaviour and settle in the gonadal niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "5b3dd295-ebde-4bc7-906a-878a0dab772e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C91",
+      "claim": "Human DLC3 is able to rescue the cv-c testicular defects in Drosophila embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Pending the analysis of DLC3/Cv-c in further species, our results indicate this function could be a conserved mechanism among species, since human DLC3 is able to rescue the cv-c testicular defects in Drosophila embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by rescue experiment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "29b9d84a-e8a8-4c36-8762-cb62ed19a149",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C92",
+      "claim": "DLC3/Cv-c is a novel gene required specifically in testis formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work points to DLC3/Cv-c as a novel gene required specifically in testis formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental results showing testis-specific defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "e32730d7-45b2-4add-88c3-f4176eeead34",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C93",
+      "claim": "Adding DLC3 to the list of genes involved in 46,XY complete dysgenesis opens up a new avenue to analyse the molecular and cellular mechanisms behind these disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding DLC3 to the list of genes involved in 46,XY complete dysgenesis opens up a new avenue to analyse the molecular and cellular mechanisms behind these disorders that could help in diagnosis and the development of future treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about future applications of the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "be958c08-b7c7-4a7a-ab9f-90aeff0b2c76",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C94",
+      "claim": "Drosophila has outstanding potential as a model to unveil the functional mechanism underlying human conditions like DSD.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also underline the outstanding potential of Drosophila as a model to unveil the functional mechanism underlying human conditions like DSD without the ethical and logistical complexity of more conventional mammalian models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the successful use of Drosophila in this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "95335447-d312-4ce6-a310-708988ba7893",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C95",
+      "claim": "The R887C mutation in DLC3 is extremely rare with MAF = 0.00025.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we have identified a third DSD patient carrying a DLC3 variant, who inherited the R887C extremely rare mutation (MAF = 0.00025) from the heterozygous mother (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on database information about the variant frequency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "2506864a-714b-486e-8e4d-3ed3d97e9e6d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C97",
+      "claim": "Residue S993 is located in the \u03a91 loop of the StART domain according to the AlphaFold model of DLC3.",
+      "claim_type": "EXPLICIT",
+      "source": "The AlphaFold (AF) model of DLC3 indicates that residue S993 is located in the \u03a91 loop of the StART domain (Figure 1C), a loop that has been shown to be functionally important for several StART domains (Gatta et al., 2018; Horenkamp et al., 2018; Iaea et al., 2015; Khelashvili et al., 2019; Naito et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural modeling data shown in Figure 1C and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "bfc46e35-2da5-44db-9ea8-4f4539d23683",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C98",
+      "claim": "JAK/STAT signalling is required for GC and mesodermal cell development specifically during early male gonad formation.",
+      "claim_type": "EXPLICIT",
+      "source": "As JAK/STAT signalling is required for GC and mesodermal cell development specifically during early male gonad formation (Sheng et al., 2009; Sinden et al., 2012) we wondered if cv-c expression in the testis mesodermal cells depends on JAK/STAT activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "9b7a1ef7-9501-4530-b770-5d98d4a035e4",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C99",
+      "claim": "In Df(1)os1A mutant embryos that lack all three Upd Drosophila JAK/STAT ligands, the testis are smaller due to the lack of JAK/STAT activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described, in Df(1)os1A embryos the testis are smaller due to the lack of JAK/STAT activation, however we detect normal levels of Cv-c::GFP expression in the testis gonadal mesoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "faf23010-c21f-4fed-b0e9-9ae4cf856c01",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C100",
+      "claim": "The cv-cM62 and cv-cC524 alleles are lethal nonsense alleles where stop codons result in truncated proteins lacking the GAP and StART domains.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the functional significance of Cv-c expression in the fly gonads we analysed embryos homozygous for the lethal nonsense cv-cM62 and cv-cC524 alleles where stop codons result in truncated proteins lacking the GAP and StART domains (Denholm et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research describing these alleles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "73d92bb6-f749-4009-99fc-188c96a8107d",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C101",
+      "claim": "The gonad mesoderm cells are not abnormally specified in cv-c mutants, as all cell types are present.",
+      "claim_type": "EXPLICIT",
+      "source": "This defect is unlikely to be due to the abnormal specification of the gonad mesoderm cells, as using mesodermal specific markers we can observe the presence of all cell types (Figure 3C, E, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3C, E, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "915aa433-e4b2-4085-9cd9-8f66232751c5",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C102",
+      "claim": "The S993N mutation is extremely rare with MAF = 0.00016 according to Gnomad.",
+      "claim_type": "EXPLICIT",
+      "source": "The extremely rare (MAF = 0.00016 according to Gnomad) DLC3 mutation was previously observed in two related DSD patients where a Serine (S) amino acid (aa) was substituted by an Asparagine (N) at position 993.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on database information about the variant frequency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "12b97f2a-80d9-42a8-bb37-1738b2b31f98",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "claim_id": "C103",
+      "claim": "The S993N mutation was present in the heterozygous carrier mother and in the two 46,XY dysgenic patients but not in their 46,XY healthy sibling.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation was present in the heterozygous carrier mother (Figure 1A) and in the two 46,XY dysgenic patients but not in their 46,XY healthy sibling (Ilaslan et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior research and family pedigree data shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d3119876-45b4-4977-bfa3-65ee40daf351",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A third DSD patient (UKR05) with complete gonadal dysgenesis and 46,XY karyotype was identified carrying a novel DLC3 mutation R887C (MAF=0.00025), inherited from a heterozygous mother.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 and C95 provide converging clinical, cytogenetic, and genetic evidence for a new DSD patient with a rare DLC3 mutation. The karyotype analysis, whole exome sequencing, and clinical phenotype are well-documented and consistent with prior DSD cases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "810476fd-4181-49e7-94fd-d1c443729c74",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations predict that the S993N mutation in the DLC3-StART domain affects the \u03a91-loop conformation, causing loss of the closed conformational state and impairing conformational dynamics of the ligand-binding pocket.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30, C59, and C62 are supported by atomistic MD simulation data showing quantitative differences in loop dynamics and pocket aperture between wild-type and mutant proteins. The simulations are methodologically sound with appropriate replicates and analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "d56cf9f0-5374-460b-8fcd-1ebb13e0d47a",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Coarse-grain simulations show that the DLC3-StART domain binds lipid bilayers, with the N-terminus and \u03a91-loop (particularly residues S993, M994, A995, P996, H997) exhibiting the highest frequency of membrane interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 and C63 are supported by coarse-grain MD simulation data with multiple replicas showing binding/unbinding events and residue-specific interaction frequencies. The methodology follows established protocols for membrane-protein interaction studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "f47a3597-bc2d-42e6-a9a0-f53800b89078",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "cv-c is specifically expressed in male testis mesoderm cells (somatic gonadal cells, msSGPs, and pigment cell precursors) but not in female gonad mesoderm or germ cells of either sex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by RNA in situ hybridization and Cv-c::GFP protein expression data (Figure 2C-I) showing clear sex-specific expression patterns. The male-specific expression is well-documented with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "1ace0a34-f202-484f-a7fa-3f9c44827c0e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "cv-c expression in testis mesoderm is independent of JAK/STAT signaling, and Cv-c does not control JAK/STAT pathway activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by genetic experiments using Df(1)os1A mutants and analysis of STAT localization and reporter expression in cv-c mutants (Figure 2\u2014figure supplement 1). The data clearly show independence of the two pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "394425bd-2cba-4cbb-9f2d-f7484afa14cb",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "cv-c mutant male embryos have abnormal testes with germ cells not surrounded by gonadal mesoderm and displaced pigment cells, while female gonads show no major defects. All mesodermal cell types are specified normally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C101 are supported by immunohistochemistry data (Figure 3) showing sex-specific phenotypes with appropriate cell-type markers. The presence of all cell types in mutants rules out specification defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "f86770c5-b83d-4dd4-83b3-618e0b43954b",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Live imaging reveals that cv-c mutant testis development is normal until stage 15, after which germ cells are extruded and exhibit migratory-phase blebs characteristic of earlier developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by live imaging data (Videos 2-3) and fixed tissue analysis (Figure 3I-J) with quantification showing significant differences in blebbing. The temporal analysis clearly identifies when defects arise.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "63f4eeb3-6e94-43f2-8231-984a9e56a402",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Wild-type human DLC3 rescues cv-c testis defects in Drosophila, but the patient DLC3S993N variant does not, demonstrating functional conservation and confirming the pathogenicity of the mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C3-C4, and C91 are supported by rescue experiments (Figure 4A-B, E-F) showing statistically significant differences between wild-type and mutant DLC3. This provides strong evidence for functional conservation and mutation pathogenicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "d2657f73-3dcc-42ef-bbf3-bd3b8109022e",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The StART domain is required for Cv-c function in testis development independently of GAP domain activity, as demonstrated by rescue experiments with domain-specific mutants and analysis of GAP-mutant alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 and C5 are supported by comprehensive rescue experiments (Figure 4C, G-I, Figure 5A-F) showing that StART deletion prevents rescue while GAP mutation does not. The cv-c7 allele analysis provides strong genetic evidence for GAP-independent function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "c6241470-4de2-4c29-8d5a-9b8c26737c28",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "cv-c gonad mutant phenotypes cannot be rescued by Rho1 mutation, showing additive effects in double mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by genetic interaction data (Figure 5I-L) showing that Rho1 mutation does not suppress cv-c phenotypes. This provides evidence that cv-c functions independently of Rho1 in gonad maintenance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "70c9f8fb-1f45-4af7-97a3-b5f08e9487cb",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "cv-c mutants show disrupted cell-cell interactions with gaps in E-cadherin distribution, loss of Neurotactin expression, displaced interstitial cells, and discontinuous ECM/pigment cell layer, leading to germ cell extrusion and gonadal rupture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 are supported by extensive immunohistochemistry data (Figure 6A-I) examining multiple markers of cell adhesion and tissue organization. The data consistently show breakdown of cellular architecture in mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "847184a9-8daa-4b59-a274-77352fbc7580",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DLC3/Cv-c has a conserved StART-dependent function required for male gonadogenesis in humans and Drosophila, representing a novel cause of testicular dysgenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C88, and C92 represent well-supported conclusions integrating the clinical data (new patient), computational predictions (MD simulations), functional conservation (rescue experiments), and mechanistic insights (domain dissection). The convergence of multiple lines of evidence strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "bd6b8af7-fa6f-4ab0-9dea-25f0dad2847a",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The five residues S993-H997 in the \u03a91-loop are conserved in StART domains of StARD12/13, and \u03a9-loops generally play important roles in ligand binding, stability, and folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C64 are supported by sequence conservation analysis and citations to prior structural studies. The conservation pattern strengthens the functional importance of the mutated region.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "d08d7214-bd3b-4845-927e-15ab1993e063",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Alterations of the \u03a91-loop could impair membrane-binding activity independently of GAP function, with potential drastic effects on protein stability and junction maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66 are inferences from simulation data but lack direct experimental validation of membrane binding or protein stability. While plausible based on the simulations and functional data, these specific mechanistic predictions require experimental confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "3af840b7-3a18-4765-b9de-e822ff60b2a9",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In cv-c mutants, pigment cells fail to form a continuous layer, ECM breaks, interstitial cells fail to ensheath germ cells, and these defects can be rescued by StART-domain-containing proteins, suggesting conserved function in testis mesoderm maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 integrate experimental observations from multiple figures with rescue data. The inference to human pathology (C72) is reasonable given the functional conservation demonstrated, though direct evidence in human tissue is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "eb0db403-9ef4-489f-aa3a-bd95140bfe1b",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Altered E-cadherin and \u03b2-catenin distribution in cv-c mutants, persisting even with Rho1 reduction, suggests failure to activate the settling-down switch, with germ cells maintaining erratic migratory behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C78-C79 are supported by immunohistochemistry data and genetic interaction experiments. The interpretation that cells fail to exit migratory behavior is well-supported by the bleb formation data and adhesion molecule distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "f54c7a2b-ee4e-47fd-bc59-b4e57684c234",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "DLC1-3 StART domains bind phosphatidylserine (PS), which forms nanoclusters at adherens junctions and serves as anchoring points for signaling proteins, with lipid-binding functioning independently of GAP activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 are supported by citations to prior research establishing PS binding by DLC proteins and the role of PS in junction formation. This provides important context for interpreting the StART domain function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "9a6d8e29-e605-4115-a8f8-7b6eae64f152",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The StART domain may interact with PS nanoclusters at adherens junctions, and mutations impairing conformational response to lipid binding could prevent signaling required for germ cell settling in both flies and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C87 are speculative hypotheses based on integrating simulation results with prior work on DLC1. While plausible and well-reasoned, these mechanistic proposals lack direct experimental validation and represent future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "0067288a-88d5-49eb-814a-64d63b70bb2b",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Testicular dysgenesis is caused by destabilization of cell-cell connections after gonad coalescence, providing new insights into mechanisms of germ cell settling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 represent reasonable inferences from the comprehensive cellular and molecular data presented. The temporal analysis and adhesion molecule studies support the conclusion about post-coalescence defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "dc13eb1b-1eab-4757-a988-dfbc7bf160f9",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Adding DLC3 to genes involved in 46,XY dysgenesis opens new avenues for understanding DSD mechanisms and demonstrates Drosophila's potential as a model for human developmental disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 are well-supported conclusions about the broader impact of the work. The successful use of Drosophila to validate human mutations and elucidate mechanisms demonstrates the model's utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    },
+    {
+      "id": "5c546f03-84af-4644-bfc0-9373a0781c81",
+      "content_id": "744ee9b5-547f-4e38-a487-eed1dff0e32a",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Prior work identified DLC3 mutations in DSD patients, and approximately 50% of DSD cases have unknown causes, motivating investigation of novel genetic factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6, C17, C102-C103 accurately represent prior work and provide appropriate context. The citations support the claims about previous DSD cases and the S993N mutation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:54:52.313576Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "902170d9-4abd-4444-abce-681b88d0f5eb",
+      "result_id": "d3119876-45b4-4977-bfa3-65ee40daf351"
+    },
+    {
+      "claim_id": "660507ee-764c-4a66-8de3-4757e0d40daa",
+      "result_id": "d3119876-45b4-4977-bfa3-65ee40daf351"
+    },
+    {
+      "claim_id": "e8a05525-e2f9-46cd-8db2-f5740837587d",
+      "result_id": "d3119876-45b4-4977-bfa3-65ee40daf351"
+    },
+    {
+      "claim_id": "b23576af-ef0d-4870-a2fd-c26425f6ee0e",
+      "result_id": "d3119876-45b4-4977-bfa3-65ee40daf351"
+    },
+    {
+      "claim_id": "1e8399c0-d050-489f-9903-a562584611cf",
+      "result_id": "d3119876-45b4-4977-bfa3-65ee40daf351"
+    },
+    {
+      "claim_id": "95335447-d312-4ce6-a310-708988ba7893",
+      "result_id": "d3119876-45b4-4977-bfa3-65ee40daf351"
+    },
+    {
+      "claim_id": "83f600d1-03a5-4de1-9dc2-99d8d92e79c6",
+      "result_id": "810476fd-4181-49e7-94fd-d1c443729c74"
+    },
+    {
+      "claim_id": "3857c515-fed7-4309-84e5-2ab5d2926876",
+      "result_id": "810476fd-4181-49e7-94fd-d1c443729c74"
+    },
+    {
+      "claim_id": "786a6223-9105-4ddb-b51d-fac967813432",
+      "result_id": "810476fd-4181-49e7-94fd-d1c443729c74"
+    },
+    {
+      "claim_id": "96a9f5fc-7bb6-4210-bf8c-b0454820aef8",
+      "result_id": "810476fd-4181-49e7-94fd-d1c443729c74"
+    },
+    {
+      "claim_id": "b0fff881-e3e6-4bf5-b828-c041aec1b9f7",
+      "result_id": "810476fd-4181-49e7-94fd-d1c443729c74"
+    },
+    {
+      "claim_id": "e15c5441-5672-433b-a869-c92f56e62e54",
+      "result_id": "d56cf9f0-5374-460b-8fcd-1ebb13e0d47a"
+    },
+    {
+      "claim_id": "384974b1-b56d-463e-b793-f7bf096d10c4",
+      "result_id": "d56cf9f0-5374-460b-8fcd-1ebb13e0d47a"
+    },
+    {
+      "claim_id": "6592a19b-635c-470e-960f-7fabc2335744",
+      "result_id": "d56cf9f0-5374-460b-8fcd-1ebb13e0d47a"
+    },
+    {
+      "claim_id": "6ee5a9c2-9841-4fc8-8824-d6e2448338c7",
+      "result_id": "f47a3597-bc2d-42e6-a9a0-f53800b89078"
+    },
+    {
+      "claim_id": "fcac05a6-45b5-4038-9f56-acf69b5acd59",
+      "result_id": "f47a3597-bc2d-42e6-a9a0-f53800b89078"
+    },
+    {
+      "claim_id": "9fa1f787-6d4b-4328-aae1-526f6c4209ba",
+      "result_id": "f47a3597-bc2d-42e6-a9a0-f53800b89078"
+    },
+    {
+      "claim_id": "ea33ea11-3ee9-4b28-ae1d-1141d6197cde",
+      "result_id": "1ace0a34-f202-484f-a7fa-3f9c44827c0e"
+    },
+    {
+      "claim_id": "695f1be8-96d2-45d8-81f0-1d13855b5b3c",
+      "result_id": "1ace0a34-f202-484f-a7fa-3f9c44827c0e"
+    },
+    {
+      "claim_id": "bfc46e35-2da5-44db-9ea8-4f4539d23683",
+      "result_id": "1ace0a34-f202-484f-a7fa-3f9c44827c0e"
+    },
+    {
+      "claim_id": "9b7a1ef7-9501-4530-b770-5d98d4a035e4",
+      "result_id": "1ace0a34-f202-484f-a7fa-3f9c44827c0e"
+    },
+    {
+      "claim_id": "0799e865-01b4-472c-861f-29fea0c7ce12",
+      "result_id": "394425bd-2cba-4cbb-9f2d-f7484afa14cb"
+    },
+    {
+      "claim_id": "d16162c5-4447-4602-aefe-67f8233ea79d",
+      "result_id": "394425bd-2cba-4cbb-9f2d-f7484afa14cb"
+    },
+    {
+      "claim_id": "ab9d1e15-b640-424b-98d1-0ab732d7b5da",
+      "result_id": "394425bd-2cba-4cbb-9f2d-f7484afa14cb"
+    },
+    {
+      "claim_id": "73d92bb6-f749-4009-99fc-188c96a8107d",
+      "result_id": "394425bd-2cba-4cbb-9f2d-f7484afa14cb"
+    },
+    {
+      "claim_id": "1bb2c8b9-bfb6-466a-8b16-c6442103c624",
+      "result_id": "f86770c5-b83d-4dd4-83b3-618e0b43954b"
+    },
+    {
+      "claim_id": "21ffbb4f-f2eb-4151-b197-3da51eb65443",
+      "result_id": "f86770c5-b83d-4dd4-83b3-618e0b43954b"
+    },
+    {
+      "claim_id": "86785451-142e-4543-98a5-e98b138d6c8b",
+      "result_id": "f86770c5-b83d-4dd4-83b3-618e0b43954b"
+    },
+    {
+      "claim_id": "7806d764-3d81-451a-8ae7-cfda4a5b3217",
+      "result_id": "63f4eeb3-6e94-43f2-8231-984a9e56a402"
+    },
+    {
+      "claim_id": "60d58824-aa22-46b6-8484-c43ce24be310",
+      "result_id": "63f4eeb3-6e94-43f2-8231-984a9e56a402"
+    },
+    {
+      "claim_id": "99682dbe-1342-4505-b9a2-d29d36cb7553",
+      "result_id": "63f4eeb3-6e94-43f2-8231-984a9e56a402"
+    },
+    {
+      "claim_id": "ae4207e8-10b5-4055-898a-31c8c8bc8693",
+      "result_id": "63f4eeb3-6e94-43f2-8231-984a9e56a402"
+    },
+    {
+      "claim_id": "5b3dd295-ebde-4bc7-906a-878a0dab772e",
+      "result_id": "63f4eeb3-6e94-43f2-8231-984a9e56a402"
+    },
+    {
+      "claim_id": "7d3422d7-1008-4edd-b79f-5471640304cf",
+      "result_id": "d2657f73-3dcc-42ef-bbf3-bd3b8109022e"
+    },
+    {
+      "claim_id": "4bb675ec-1176-4d26-8324-a7e23ff6541d",
+      "result_id": "d2657f73-3dcc-42ef-bbf3-bd3b8109022e"
+    },
+    {
+      "claim_id": "a23b9030-0cae-4d67-9cf6-40f24ee27a6d",
+      "result_id": "d2657f73-3dcc-42ef-bbf3-bd3b8109022e"
+    },
+    {
+      "claim_id": "85474b70-2c8d-402a-8e43-37897e3ba7b4",
+      "result_id": "d2657f73-3dcc-42ef-bbf3-bd3b8109022e"
+    },
+    {
+      "claim_id": "b6499a7a-bfe3-4dda-a048-7cd16fea40ee",
+      "result_id": "d2657f73-3dcc-42ef-bbf3-bd3b8109022e"
+    },
+    {
+      "claim_id": "aa119056-7697-4a65-b307-c2d56c393962",
+      "result_id": "c6241470-4de2-4c29-8d5a-9b8c26737c28"
+    },
+    {
+      "claim_id": "9157c4d8-6311-426f-ac63-d80e44739d4a",
+      "result_id": "70c9f8fb-1f45-4af7-97a3-b5f08e9487cb"
+    },
+    {
+      "claim_id": "ef3d7a09-e646-4cca-9d1f-8f221e23c5c7",
+      "result_id": "70c9f8fb-1f45-4af7-97a3-b5f08e9487cb"
+    },
+    {
+      "claim_id": "0d4509ad-f13f-409a-94a3-f2d23107bd9d",
+      "result_id": "70c9f8fb-1f45-4af7-97a3-b5f08e9487cb"
+    },
+    {
+      "claim_id": "acb05cea-0271-4590-977b-f22faaffa1b7",
+      "result_id": "70c9f8fb-1f45-4af7-97a3-b5f08e9487cb"
+    },
+    {
+      "claim_id": "e008b977-f5d4-4f7d-bea7-d8751fb5a74b",
+      "result_id": "70c9f8fb-1f45-4af7-97a3-b5f08e9487cb"
+    },
+    {
+      "claim_id": "66e0f314-96df-458a-9786-7fa1a27d5c5e",
+      "result_id": "70c9f8fb-1f45-4af7-97a3-b5f08e9487cb"
+    },
+    {
+      "claim_id": "1e896dbb-006c-450b-a187-5e87aaaa1f4f",
+      "result_id": "847184a9-8daa-4b59-a274-77352fbc7580"
+    },
+    {
+      "claim_id": "9fea9d9c-1a30-4028-94e4-dc50e8c08e5e",
+      "result_id": "847184a9-8daa-4b59-a274-77352fbc7580"
+    },
+    {
+      "claim_id": "29b9d84a-e8a8-4c36-8762-cb62ed19a149",
+      "result_id": "847184a9-8daa-4b59-a274-77352fbc7580"
+    },
+    {
+      "claim_id": "07704e03-84be-4c0e-862b-1a94cdf646a4",
+      "result_id": "bd6b8af7-fa6f-4ab0-9dea-25f0dad2847a"
+    },
+    {
+      "claim_id": "88796bde-952e-44f0-8826-100edbb5a5a1",
+      "result_id": "bd6b8af7-fa6f-4ab0-9dea-25f0dad2847a"
+    },
+    {
+      "claim_id": "6e7700b4-c8a1-4c9d-ae89-13247d9ca664",
+      "result_id": "bd6b8af7-fa6f-4ab0-9dea-25f0dad2847a"
+    },
+    {
+      "claim_id": "09d36910-455d-4c09-bc37-037cb3cb778f",
+      "result_id": "d08d7214-bd3b-4845-927e-15ab1993e063"
+    },
+    {
+      "claim_id": "8fbddbb9-5210-4de8-9c91-86b333d29533",
+      "result_id": "d08d7214-bd3b-4845-927e-15ab1993e063"
+    },
+    {
+      "claim_id": "fc80aa1e-36f6-49f1-abae-a317c34c1ecb",
+      "result_id": "3af840b7-3a18-4765-b9de-e822ff60b2a9"
+    },
+    {
+      "claim_id": "2ac9e4cc-1a28-4416-a666-b8267569fe29",
+      "result_id": "3af840b7-3a18-4765-b9de-e822ff60b2a9"
+    },
+    {
+      "claim_id": "c299d51c-e191-4dd4-93f6-727402e6ce0e",
+      "result_id": "3af840b7-3a18-4765-b9de-e822ff60b2a9"
+    },
+    {
+      "claim_id": "cf690460-0294-455d-95e3-142cd3daab37",
+      "result_id": "3af840b7-3a18-4765-b9de-e822ff60b2a9"
+    },
+    {
+      "claim_id": "b06ce00c-1e5b-4d89-abfe-3aa74681a34a",
+      "result_id": "eb0db403-9ef4-489f-aa3a-bd95140bfe1b"
+    },
+    {
+      "claim_id": "e06a6c3a-819c-46f1-b09e-f56313871d65",
+      "result_id": "eb0db403-9ef4-489f-aa3a-bd95140bfe1b"
+    },
+    {
+      "claim_id": "35fce548-de09-4635-93f1-dd8d12195e65",
+      "result_id": "eb0db403-9ef4-489f-aa3a-bd95140bfe1b"
+    },
+    {
+      "claim_id": "66a14a25-04c0-4140-bdd6-632944b6af74",
+      "result_id": "f54c7a2b-ee4e-47fd-bc59-b4e57684c234"
+    },
+    {
+      "claim_id": "4b15994d-17b3-4a24-9855-4d6066b4b044",
+      "result_id": "f54c7a2b-ee4e-47fd-bc59-b4e57684c234"
+    },
+    {
+      "claim_id": "39525c2e-6b85-4364-8dcd-706171e7c03e",
+      "result_id": "f54c7a2b-ee4e-47fd-bc59-b4e57684c234"
+    },
+    {
+      "claim_id": "9373935d-0e58-4024-8eb7-679e452a4bd2",
+      "result_id": "f54c7a2b-ee4e-47fd-bc59-b4e57684c234"
+    },
+    {
+      "claim_id": "5643761e-6cd5-4df9-9dcd-db16e27682e1",
+      "result_id": "f54c7a2b-ee4e-47fd-bc59-b4e57684c234"
+    },
+    {
+      "claim_id": "14efff0b-8079-4e2e-8c41-0170779b6aba",
+      "result_id": "9a6d8e29-e605-4115-a8f8-7b6eae64f152"
+    },
+    {
+      "claim_id": "19d18709-fc71-4738-9c7a-a5c864128fcd",
+      "result_id": "9a6d8e29-e605-4115-a8f8-7b6eae64f152"
+    },
+    {
+      "claim_id": "9eba1562-584b-4ae9-926d-230a04cd2f96",
+      "result_id": "9a6d8e29-e605-4115-a8f8-7b6eae64f152"
+    },
+    {
+      "claim_id": "3baa0072-50b5-489f-8076-181916b6676d",
+      "result_id": "0067288a-88d5-49eb-814a-64d63b70bb2b"
+    },
+    {
+      "claim_id": "cd47d736-ee20-480f-adc4-4837119a4436",
+      "result_id": "0067288a-88d5-49eb-814a-64d63b70bb2b"
+    },
+    {
+      "claim_id": "e32730d7-45b2-4add-88c3-f4176eeead34",
+      "result_id": "dc13eb1b-1eab-4757-a988-dfbc7bf160f9"
+    },
+    {
+      "claim_id": "be958c08-b7c7-4a7a-ab9f-90aeff0b2c76",
+      "result_id": "dc13eb1b-1eab-4757-a988-dfbc7bf160f9"
+    },
+    {
+      "claim_id": "744af774-0404-4065-b622-2b23d5849c83",
+      "result_id": "5c546f03-84af-4644-bfc0-9373a0781c81"
+    },
+    {
+      "claim_id": "15d4df65-d419-4629-a90c-3af654f89fa0",
+      "result_id": "5c546f03-84af-4644-bfc0-9373a0781c81"
+    },
+    {
+      "claim_id": "7dae91f5-ef5e-490a-b92c-fd0e7bd5721e",
+      "result_id": "5c546f03-84af-4644-bfc0-9373a0781c81"
+    },
+    {
+      "claim_id": "915aa433-e4b2-4085-9cd9-8f66232751c5",
+      "result_id": "5c546f03-84af-4644-bfc0-9373a0781c81"
+    },
+    {
+      "claim_id": "12b97f2a-80d9-42a8-bb37-1738b2b31f98",
+      "result_id": "5c546f03-84af-4644-bfc0-9373a0781c81"
+    }
+  ],
+  "comparisons": []
+}

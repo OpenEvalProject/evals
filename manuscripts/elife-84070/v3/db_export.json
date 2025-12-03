@@ -1,0 +1,893 @@
+{
+  "submission": {
+    "id": "c3e5ca64-f163-4953-bb4c-f7fa52c86733",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:24:24.502932Z",
+    "updated_at": "2025-12-03T20:24:24.502932Z"
+  },
+  "content": [
+    {
+      "id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "submission_id": "c3e5ca64-f163-4953-bb4c-f7fa52c86733",
+      "content_type": "manuscript",
+      "content_text": "# Immunopeptidomics reveals determinants of Mycobacterium tuberculosis antigen presentation on MHC class I\n\n## Authors\n\n- Owen Leddy<sup>1</sup> ([ORCID: 0000-0002-3437-1956](https://orcid.org/0000-0002-3437-1956))\n- Forest M White<sup>1</sup> ([ORCID: 0000-0002-1545-1651](https://orcid.org/0000-0002-1545-1651))\n- Bryan D Bryson<sup>1</sup> ([ORCID: 0000-0003-1716-6712](https://orcid.org/0000-0003-1716-6712)) \u2020\n\n### Affiliations\n\n1. Department of Biological Engineering, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n2. Ragon Institute of Massachusetts General Hospital, Harvard, and MIT Cambridge United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n3. Koch Institute for Integrative Cancer Research Cambridge United States\n4. Center for Precision Cancer Medicine Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCD8+ T cell recognition of Mycobacterium tuberculosis (Mtb)-specific peptides presented on major histocompatibility complex class I (MHC-I) contributes to immunity to tuberculosis (TB), but the principles that govern presentation of Mtb antigens on MHC-I are incompletely understood. In this study, mass spectrometry (MS) analysis of the MHC-I repertoire of Mtb-infected primary human macrophages reveals that substrates of Mtb\u2019s type VII secretion systems (T7SS) are overrepresented among Mtb-derived peptides presented on MHC-I. Quantitative, targeted MS shows that ESX-1 activity is required for presentation of Mtb peptides derived from both ESX-1 substrates and ESX-5 substrates on MHC-I, consistent with a model in which proteins secreted by multiple T7SSs access a cytosolic antigen processing pathway via ESX-1-mediated phagosome permeabilization. Chemical inhibition of proteasome activity, lysosomal acidification, or cysteine cathepsin activity did not block presentation of Mtb antigens on MHC-I, suggesting involvement of other proteolytic pathways or redundancy among multiple pathways. Our study identifies Mtb antigens presented on MHC-I that could serve as targets for TB vaccines, and reveals how the activity of multiple T7SSs interacts to contribute to presentation of Mtb antigens on MHC-I.\n\n## Introduction\n\nTuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb), is a leading cause of infectious disease mortality worldwide, causing approximately 10 million new cases of active TB disease and 1.5 million deaths per year (World Health Organization 2022, 2021). Currently, the only clinically licensed vaccine to prevent TB is Bacille Calmette-Guerin (BCG), which protects children against disseminated Mtb infection (Roy et al., 2014), but provides limited and highly variable protection against pulmonary TB in adults (Fine, 1995). More effective vaccines against TB are therefore needed, but identifying Mtb antigens capable of eliciting protective immunity remains challenging.\n\nMultiple convergent lines of evidence from experiments in mouse and non-human primate models of TB show that CD8+ T cells can contribute to immune control of Mtb infection (Chen et al., 2009; Flynn et al., 1992; Woodworth et al., 2008b), but the antigenic targets of protective CD8+ T cell immunity to Mtb infection have not been conclusively defined. In murine models, CD8+ T cells specific for some immunodominant Mtb antigens poorly recognize Mtb-infected macrophages (Yang et al., 2018), implying that infected macrophages may not present all Mtb antigens that elicit cytokine-producing CD8+ T cell responses (Kamath et al., 2004; Lewinsohn et al., 2017). These results suggest a need to directly identify which Mtb antigens are presented on MHC-I by infected phagocytes (Flynn et al., 2011).\n\nIt is currently unknown which Mtb proteins are able to enter MHC-I antigen processing pathways in macrophages infected with virulent Mtb. Whereas some bacterial species are lysed following phagocytosis and expose their internal cell contents to antigen processing pathways (Shen et al., 1998), a high proportion of virulent Mtb remains intact and viable in macrophages (Armstrong and Hart, 1975; Lee et al., 2008; Lewis et al., 2003), leading us to hypothesize that only a subset of Mtb proteins may be accessible for processing and presentation on MHC-I. Here, we use MS-based identification of peptides bound to MHC-I (immunopeptidomics) to directly identify Mtb-derived peptides presented on MHC-I in primary human macrophages infected with virulent Mtb H37Rv, revealing potential targets for CD8+ T cell-mediated immunity. Additionally, we use targeted MS to quantify changes in the presentation of Mtb peptides resulting from genetic perturbations to Mtb and chemical perturbations to the host cell, allowing us to probe host and bacterial determinants of antigen presentation on MHC-I in Mtb infection.\n\n## Results\n\nTo identify Mtb antigens presented on MHC-I, we infected primary human monocyte-derived macrophages with Mtb H37Rv, isolated MHC-I by immunoprecipitation 72 hours post-infection, purified the associated peptides, and identified peptides by liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS). We selected the 72 hour time point over shorter time points to allow sufficient time for antigen processing and presentation on MHC-I. Past experience suggested that choosing a longer time point would have resulted in a high rate of cell death. For an initial set of three analyses, we adapted a previously described protocol (Stopfer et al., 2020; Protocol 1 \u2013 see Methods) for use in a biosafety level 3 (BL3) setting. We developed a further optimized protocol (Protocol 2 \u2013 see Methods) that we used for 3 additional analyses (Figure 1A). The class I human leukocyte antigen (HLA) genotypes of the 6 donors analyzed were largely distinct from one another (Table 1), enabling us to identify peptides associated with a variety of HLA alleles.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic representation of two immunopeptidomics workflows used to profile the MHC-I repertoire of Mtb-infected primary human macrophages. IP: immunoprecipitation. MWCO: molecular weight cutoff. LC-MS/MS: liquid chromatography coupled to tandem mass spectrometry. (B) Absolute and relative number of Mtb-derived MHC-I peptides identified for each donor. Macrophages from donor B were pre-treated for 24 hr with 10 ng/mL IFN-\u03b3, and macrophages from donor C were treated with 0.5 \u00b5g/mL cycloheximide (CHX) for the final 6 hr of infection. (C) Sequences, source proteins, associated HLA alleles, and donors for each validated Mtb-derived MHC-I peptide. (D) Enrichment analysis of Mtb peptides presented on MHC-I and their source proteins, categorized by protein secretion pathway using SignalP 6.0 (Teufel et al., 2022) and a curated set of known or strongly suspected T7SS substrates. p-Values for enrichment analyses of proteins and peptides were determined using the binomial test and the hypergeometric test respectively (see Methods).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Length distribution of MHC-I peptides identified by MS for protocol 1 and protocol 2 (see Figure 1A and Methods), for all detected peptides and validated Mtb-derived peptides. (B) Predicted hydrophobicity index (computed using the ProtViz R package; https://rdrr.io/cran/protViz/man/ssrc.html) as a function of retention time for protocols 1 and 2. Green points indicate validated Mtb peptides. (C) Absolute Mtb protein abundance in axenic culture as a function of protein rank, as quantified by Schubert et al., 2015. Red points indicate source proteins of peptides detected in the MHC-I repertoire of Mtb-infected macrophages (see Figure 1c).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Heatmap of peptide binding score predicted by NetMHCpan 4.1, Gibbs clustering motif, and corresponding published binding motif for each HLA allele expressed by (A) donor B, (B) donor C, (C) donor D, (D) donor E, (E) donor F.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Heatmap of peptide binding score predicted by NetMHCpan 4.1 for Mtb-derived peptides for each HLA allele expressed by (A) donor B, (B) donor C, (C) donor D, (D) donor E, (E) donor F. Label colors correspond to the clusters defined by Gibbs clustering of the full set of identified peptides (see Figure 1\u2014figure supplement 2).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Schematic showing how MHC-I peptide samples were divided between DDA-based discovery analyses (75%) and SureQuant-based validation analyses (25%). MS/MS spectra from survey analyses of mixtures of SIL peptide standards alone were compared to the MS/MS spectra of the corresponding biological peptides. Chromatograms demonstrating co-elution of biological peptides with the corresponding SIL standards were obtained by SureQuant.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Representative MS/MS spectrum comparisons (left) and SureQuant product ion chromatograms for Mtb-infected and mock-infected macrophages (right column) for each peptide. For each peptide, the amino acid that is stable isotope labeled in the synthetic standard is indicated in red.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Representative MS/MS spectrum comparisons (left) and SureQuant product ion chromatograms for Mtb-infected and mock-infected macrophages (right column) for each peptide. For each peptide, the amino acid that is stable isotope labeled in the synthetic standard is indicated in red.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig1-figsupp7-v3.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Representative MS/MS spectrum comparisons (left) and SureQuant product ion chromatograms for Mtb-infected and mock-infected macrophages (right column) for each peptide. For each peptide, the amino acid that is stable isotope labeled in the synthetic standard is indicated in red.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig1-figsupp8-v3.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Representative MS/MS spectrum comparisons (left column) and SureQuant product ion chromatograms for Mtb-infected and mock-infected macrophages (right column) for each peptide. For each peptide, the amino acid that is stable isotope labeled in the synthetic standard is indicated in red.\n\n**Table 1.**\n Class I HLA alleles expressed by primary monocyte donors.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Donor</th>\n      <th>HLA-A allele 1</th>\n      <th>HLA-A allele 2</th>\n      <th>HLA-B allele 1</th>\n      <th>HLA-B allele 2</th>\n      <th>HLA-C allele 1</th>\n      <th>HLA-C allele 2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>02:01</td>\n      <td>24:02</td>\n      <td>07:02</td>\n      <td>27:07</td>\n      <td>07:02</td>\n      <td>15:02</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>01:01</td>\n      <td>02:01</td>\n      <td>44:03</td>\n      <td>57:01</td>\n      <td>06:02</td>\n      <td>16:01</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>23:01</td>\n      <td>26:01</td>\n      <td>35:01</td>\n      <td>50:01</td>\n      <td>04:01</td>\n      <td>06:02</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>11:01</td>\n      <td>24:02</td>\n      <td>39:06</td>\n      <td>51:01</td>\n      <td>07:02</td>\n      <td>15:02</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>01:01</td>\n      <td>26:01</td>\n      <td>35:01</td>\n      <td>38:01</td>\n      <td>04:01</td>\n      <td>12:03</td>\n    </tr>\n  </tbody>\n</table>\n\nWe identified thousands of peptides for each primary cell donor, with a length distribution typical of MHC-I peptides (Figure 1\u2014figure supplement 1A) and retention times that correlated well with hydrophobicity (Figure 1\u2014figure supplement 1B). Unsupervised clustering of identified peptides using GibbsCluster 2.0 (Andreatta et al., 2017) revealed groups corresponding to the known peptide sequence binding motifs of class I HLA alleles expressed by each donor (Figure 1\u2014figure supplement 2), confirming the specificity of our pulldowns. Mtb-derived MHC-I peptides detected in each pulldown were predicted to bind at least one class I HLA allele expressed by the donor (Figure 1\u2014figure supplement 3). Mtb peptides made up less than 0.1% of MHC-I peptides identified, and this proportion was not discernibly increased by pre-treating macrophages with IFN-\u03b3 or treating with cycloheximide to inhibit host protein synthesis (Figure 1B).\n\nPutative Mtb peptides that passed manual inspection of MS/MS spectra and extracted ion chromatograms (see Methods) were further validated using internal standard parallel reaction monitoring (IS-PRM, also known as SureQuant) (Gallien et al., 2015; Stopfer et al., 2021a; Figure 1\u2014figure supplement 4). Putative Mtb peptides that had MS/MS spectra that closely matched that of a synthetic stable isotope-labeled (SIL) standard, co-eluted with the SIL standard, and were not detected in mock-infected control samples by SureQuant were considered correctly identified, authentic Mtb peptides (Figure 1\u2014figure supplement 5). 77.85% of MASCOT identifications of putative Mtb peptides were rejected after manual data inspection, and of the remaining candidates a further 51.51% were rejected following analysis by SureQuant (Table 2), highlighting the need for rigorous validation using best practices (Fritsche et al., 2021) when identifying pathogen-derived peptides among an MHC repertoire dominated by host-derived peptides.\n\n**Table 2.**\n Putative Mtb-derived peptides that passed manual inspection of DDA MS data but failed SureQuant validation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Source protein</th>\n      <th>Peptide sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Rv0383c</td>\n      <td>AAPGRPVAPG</td>\n    </tr>\n    <tr>\n      <td>pyrD</td>\n      <td>GDRLALISV</td>\n    </tr>\n    <tr>\n      <td>Rv2303c</td>\n      <td>KHPNVYLEL</td>\n    </tr>\n    <tr>\n      <td>Rv0839</td>\n      <td>YTHGYHES</td>\n    </tr>\n    <tr>\n      <td>kgd</td>\n      <td>AERAAAAAP</td>\n    </tr>\n    <tr>\n      <td>Rv1375</td>\n      <td>EAAQSRITA</td>\n    </tr>\n    <tr>\n      <td>GabD1</td>\n      <td>AKVGASAAY</td>\n    </tr>\n    <tr>\n      <td>PE1</td>\n      <td>AAGNLRAAI</td>\n    </tr>\n    <tr>\n      <td>HlfX</td>\n      <td>IPYDRGDLV</td>\n    </tr>\n    <tr>\n      <td>Rv2807</td>\n      <td>AKWILEGIK</td>\n    </tr>\n    <tr>\n      <td>Rv3818</td>\n      <td>IAPELVRT</td>\n    </tr>\n    <tr>\n      <td>Rv1065</td>\n      <td>YTRIHGDEEL</td>\n    </tr>\n    <tr>\n      <td>Rv0293c</td>\n      <td>DELIAGLAY</td>\n    </tr>\n    <tr>\n      <td>Rv3779</td>\n      <td>VAIAVGPALT</td>\n    </tr>\n    <tr>\n      <td>PPE55</td>\n      <td>TVAPINLNP</td>\n    </tr>\n    <tr>\n      <td>Rv2263</td>\n      <td>QEIEEGIL</td>\n    </tr>\n    <tr>\n      <td>Rv0333</td>\n      <td>GEDPGIAR</td>\n    </tr>\n  </tbody>\n</table>\n\nOf the 16 Mtb-derived MHC-I peptides we identified, 13 (81.25%) derived from proteins secreted via type VII secretion systems (T7SS) (Figure 1C). The Mtb genome encodes five of these protein export machines (designated ESX-1, 2, 3, 4, and 5; Abdallah et al., 2007), and we identified MHC-I peptides derived from proteins known to be secreted by three of these systems [ESX-1 (Guinn et al., 2004; Millington et al., 2011; Stanley et al., 2003), ESX-3 (Siegrist et al., 2009; Tufariello et al., 2016), and ESX-5 (Abdallah et al., 2006; Daleke et al., 2012; Ekiert and Cox, 2014; Shah et al., 2015)]. For several T7SS substrates, we identified multiple peptides from the same protein, and/or identified the same peptide across multiple donors. These antigens included EsxA, PPE20, EspC, and PE35, as well as sequences conserved among the four nearly identical members of the EsxJ family of proteins (EsxJ, EsxK, EsxP, and EsxW \u2013 referred to here as EsxJKPW). T7SS substrates were significantly overrepresented in the MHC-I repertoire relative to the whole Mtb proteome, both at the peptide level (p<10\u201310; binomial test with Bonferroni correction) and at the protein level (p<10\u20137; hypergeometric test with Bonferroni correction; Figure 1D). Proteins without identifiable secretion signals were significantly underrepresented among Mtb-derived MHC-I peptides (p<10\u20138; binomial test with Bonferroni correction) and source proteins (p<10\u20136; hypergeometric test with Bonferroni correction). While some of the Mtb antigens we identified are highly abundant compared to the rest of the Mtb proteome (e.g. EsxB), the abundances of other T7SS substrates are near the mean (Figure 1\u2014figure supplement 1C; Schubert et al., 2015), suggesting that the overrepresentation of T7SS substrates is not solely due to greater abundance relative to the rest of the Mtb proteome. These results suggest that T7SS substrates may preferentially gain access to MHC-I antigen processing pathways.\n\nTo nominate possible mechanisms by which Mtb antigens might be processed and loaded onto MHC-I, we used confocal microscopy to examine the intracellular fate of Mtb in primary human macrophages. We hypothesized that Mtb antigens could either (1) be processed by endolysosomal proteases and loaded onto MHC-I in Mtb-containing compartments, or (2) gain access to cytosolic antigen processing pathways via permeabilization of the phagosome membrane (Grotzke et al., 2010; Grotzke et al., 2009; van der Wel et al., 2007; Figure 2A). In a subset of macrophages at both early and late timepoints, a subset of Mtb co-localized with Galectin-3, a marker of phagosomal membrane permeabilization (Chauhan et al., 2016; Watson et al., 2012; Figure 2B\u2013C; Figure 2\u2014figure supplement 1A). A subset of Mtb also co-localized with P62, an autophagy adaptor protein that recognizes cytosol-exposed bacteria (Watson et al., 2012; Zheng et al., 2009; Figure 2B\u2013C; Figure 2\u2014figure supplement 1B). Since bacteria become ubiquitinated upon exposure to the cytosol and recruitment of autophagy adaptor proteins to the Mtb phagosome has previously been associated with damage to the phagosomal membrane (Watson et al., 2012), these results suggest that Mtb gains access to the host cytosol in primary human macrophages, as has previously been shown in murine macrophages (Mittal et al., 2018) and in cell lines (Beckwith et al., 2020). A subset of Mtb-containing phagosomes co-localized with the late endosome and lysosome marker LAMP-1 (Figure 2B\u2013C; Figure 2\u2014figure supplement 1C), suggesting access to endolysosomal proteases, but Mtb-containing phagosomes did not co-localize with MHC-I itself (Figure 2B\u2013C; Figure 2\u2014figure supplement 1D), suggesting that Mtb antigens were unlikely to be loaded onto MHC-I in the Mtb-containing phagosome. These results suggested that access to the host cell cytosol represented a likely route for processing and presentation of Mtb antigens. An Mtb strain deficient in the activity of the ESX-1 secretion system (eccCa1:Tn) exhibited reduced co-localization with Galectin-3 and P62 (Figure 2D\u2013F). Our results are consistent with prior studies demonstrating that ESX-1 activity is required for Mtb to damage the phagosome membrane (Augenstreich et al., 2017; Simeone et al., 2012; Watson et al., 2012) and show that this phenomenon occurs in our primary human macrophage infection model.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig2-v3.jpg)\n\n**Figure 2.:** Primary human macrophages were infected with GFP-expressing wild-type Mtb, fixed at 24, 72, or 120 hr post-infection, stained by immunofluorescence (IF), and imaged by spinning-disk confocal microscopy. (A) Schematic showing markers associated with each of two possible pathways of Mtb antigen processing and presentation. (B) Representative images of Mtb-infected macrophages stained for Galectin-3, P62, MHC-I, or LAMP-1. Scale bar indicates 10 \u00b5m. White arrows indicate Mtb-containing phagosomes co-localizing with each marker. (C) Automated quantification (see Methods) of the proportion of co-localized Mtb-containing phagosomes for each marker for n=4 donors (* p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001; one-way ANOVA with Tukey\u2019s multiple comparisons test). (D) Representative images of macrophages infected with wild-type (H37Rv) or ESX-1-deficient (eccCa1:Tn) Mtb stained for Galectin-3 or P62. Scale bar indicates 10 \u00b5m. White arrows indicate Mtb-containing phagosomes co-localizing with each marker. (E\u2013F) Automated quantification of the relative proportion of GFP +objects co-localized with IF staining for Galectin-3 (E) or P62 (F) as a function of time post-infection for n=3 donors, normalized to wild-type (H37Rv) (* p<0.05, ** p<0.01, *** p<0.001; paired t-test). Error bars indicate standard deviation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative spinning disk confocal microscopy images comparing macrophages stained with primary antibody specific for galectin-3 (A), P62 (B), LAMP-1 (C), or MHC-I (D) to those stained with secondary antibody alone, 120 hr post-infection.\n\nOur microscopy results led us to hypothesize that ESX-1-mediated phagosomal membrane damage might be required for Mtb antigens to access MHC-I antigen processing pathways (Figure 3A). If this were the case, ESX-1 activity would be required for presentation not only of peptides derived from ESX-1 substrates (e.g. EsxA28-36 \u2013 sequence LLDEGKQSL), but also peptides derived from substrates of other T7SSs (e.g. EsxJKPW24-34 \u2013 sequence QTVEDEARRMW \u2013 which is derived from ESX-5 substrates that do not require ESX-1 for secretion; Champion et al., 2006). To test this hypothesis, we turned to quantitative targeted MS (SureQuant) to quantify changes in the presentation of EsxA28-36 and EsxJKPW24-34 across multiple experimental conditions (Figure 3B). We used primary macrophages from donors expressing HLA-A*02:01 and HLA-B*57:01 for these experiments to ensure presentation of the target peptides. Because the other Mtb epitopes detected in our untargeted MS experiments are not expected to bind these HLA alleles, we only targeted EsxA28-36 and EsxJKPW24-34. While this targeted approach is limited in the number of epitopes it can detect, it enables reliable and accurate quantification of peptides across experimental conditions with low sample input. Because methionine residues of peptides can oxidize during sample handling, we targeted both the oxidized and non-oxidized form of EsxJKPW24-34 where possible. In addition to the SIL synthetic trigger peptides required for SureQuant, we also spiked pre-formed heavy isotope labeled peptide-MHC complexes (hipMHCs) into the lysates prior to immunoprecipitation to provide an internal standard that can be used to normalize out technical variation, which improves the accuracy of label-free quantification (Stopfer et al., 2020).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic representation of the localization of EsxA and EsxJKPW in macrophages infected with wild-type Mtb H37Rv or the ESX-1-deficient eccCa1:Tn transposon mutant. (B) Schematic showing our workflow for targeted detection and quantification of Mtb-derived MHC-I peptides by SureQuant, using stable isotope labeled peptide-MHC complexes (hipMHCs) as internal standards. SIL: stable isotope labeled. (C) Relative quantification of EsxA28-36 and EsxJKPW24-34 by SureQuant in macrophages infected with no Mtb (mock), wild-type Mtb H37Rv, or eccCa1:Tn for n=3 donors (all HLA-A*02:01+, HLA-B*57:01+). As oxidation of methionine is common during sample handling, both the oxidized and non-oxidized form of EsxJKPW24-34 were quantified. (D) Luminescence as a function of time measured for macrophages infected with luciferase-expressing Mtb, in a wild-type H37Rv or eccCa1:Tn background, with or without the addition of 10 ng/mL IFN-\u03b2 in the culture media. Addition of 25 \u00b5g/mL rifampicin (RIF) to the culture media was used as a control showing reduced luminescence with bacterial death. Data points and error bars represent the mean and standard deviation of n=3 donors, each of which represents the mean of three technical replicates. (* p<0.05, one-way ANOVA with Dunnett\u2019s multiple comparisons test, relative to H37Rv as the reference condition). (E) CXCL10 concentration in the culture media 72 hr post-infection quantified by ELISA. Data points each represent the mean of three technical replicates for a given donor. (* p<0.05, ** p<0.01, one-way ANOVA with Tukey\u2019s multiple comparisons test on log-transformed concentrations.) (f) Relative quantification of EsxA28-36 and EsxJKPW24-34 by SureQuant in macrophages infected with no Mtb (mock), wild-type Mtb H37Rv, or eccCa1:Tn for n=3 donors (all HLA-A*02:01+, HLA-B*57:01+). (**** p<0.001, one-way ANOVA with Tukey\u2019s multiple comparisons test.). Error bars indicate standard deviation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Macrophages infected with GFP-expressing wild-type (H37Rv) or ESX-1-deficient (eccCa1:Tn) Mtb were surface stained for MHC-I 72 hr post-infection and analyzed by flow cytometry. (A) Representative contour plots of GFP fluorescence intensity vs. autofluorescence, showing gating for GFP +infected cells. (B) Proportion of GFP + cells for n=3 donors (** p<0.01, *** p<0.001; one-way ANOVA with Tukey\u2019s multiple comparisons test). (C) Representative histograms of surface MHC-I fluorescence intensity. (D) Mean MHC-I fluorescence intensity (MFI) for n=3 donors (p-values determined by one-way ANOVA with Tukey\u2019s multiple comparisons test). Error bars indicate standard deviation.\n\nTargeted MS analysis revealed that macrophages infected with ESX-1-deficient Mtb (eccCa1:Tn) did not present either EsxA28-36 or EsxJKPW24-34 on MHC-I (Figure 3c). We assessed alternative explanations for this difference in presentation of EsxA28-36 and EsxJKPW24-34 and observed no difference in Mtb outgrowth (Figure 3D), the proportion of cells infected (Figure 3\u2014figure supplement 1A\u2013B), or total MHC-I surface expression (Figure 3\u2014figure supplement 1C\u2013D) between macrophages infected with wild-type or ESX-1-deficient Mtb. These results show that ESX-1 activity is required for presentation of EsxA28-36 and EsxJKPW24-34 on MHC-I in macrophages.\n\nTo determine whether the absence of EsxA28-36 and EsxJKPW24-34 in the MHC-I repertoire of macrophages infected with ESX-1-deficient Mtb could be attributed to a loss of type I interferon signaling (Stanley et al., 2007), we added exogenous IFN-\u03b2 to macrophages infected with ESX-1-deficient Mtb and again quantified presentation of EsxA28-36 and EsxJKPW24-34 by SureQuant. Addition of exogenous IFN-\u03b2 restored a type I interferon response as measured by production of CXCL10 (Figure 3E), but did not rescue presentation of EsxA28-36 or EsxJKPW24-34 on MHC-I (Figure 3F). These results show that presentation of EsxA28-36 or EsxJKPW24-34 on MHC-I is dependent on ESX-1 activity but independent of downstream type I interferon signaling, consistent with a model in which ESX-1-mediated phagosomal damage enables Mtb antigens to access MHC-I antigen processing pathways.\n\nMany MHC-I peptides are proteolytically processed by the proteasome (Kloetzel, 2001), while others are processed by endosomal or lysosomal proteases (Grotzke et al., 2017; Shen et al., 2004). To determine whether these mechanisms contribute to presentation of Mtb peptides on MHC-I, we treated HLA-A*02:01+, HLA-B*57:01+ macrophages with inhibitors of proteasome activity (MG-132), cysteine cathepsin activity (E64d), and lysosomal acidification (bafilomycin; Figure 4A). We quantified presentation of EsxA28-36 and EsxJKPW24-34 on MHC-I along with five host-derived HLA-A*02:01-binding peptides identified in previous studies (Stopfer et al., 2021b) that could be reliably detected in the MHC-I repertoire of macrophages. We began drug treatment of the macrophages prior to infection with Mtb and limited the duration of infection to 24 hr so that the cells could be treated with drug for the full duration of the infection without excessive cytotoxicity (Figure 4B). Treatment with MG-132 inhibited proteasome activity, as measured by accumulation of proteins modified with K48-linked polyubiquitin (Figure 4\u2014figure supplement 1A\u2013B). Treatment with E64d inhibited cathepsin B activity, as measured by a fluorometric assay (Figure 4\u2014figure supplement 1C). Treatment with bafilomycin inhibited lysosomal acidification, as measured by lysotracker staining (Figure 4\u2014figure supplement 1D\u2013E). All three drugs exhibited minimal cytotoxicity in macrophages at the doses used in our immunopeptidomic experiments (Figure 4\u2014figure supplement 2), did not inhibit phagocytosis of Mtb or bacterial outgrowth (Figure 4\u2014figure supplement 3), and did not have a significant effect on surface MHC-I levels (Figure 4\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig4-v3.jpg)\n\n**Figure 4.:** (A) Schematic representation of proteolytic pathways inhibited by the proteasome inhibitor MG-132, the V-type ATPase inhibitor bafilomycin, and the cysteine cathepsin inhibitor E64d. (B) Schematic showing the timing of drug treatment and Mtb infection for targeted MS experiments. (C) Heatmap showing relative abundance of self and Mtb-derived MHC-I peptides determined by SureQuant in mock-infected macrophages or Mtb-infected macrophages treated with MG-132, bafilomycin, E64d, or DMSO-only control. Colors represent the mean fold change relative to the DMSO-treated, Mtb-infected condition for n=3 donors (all HLA-A*02:01+, HLA-B*57:01+). (D\u2013E) Relative abundance of EsxA28-36 (D) and EsxJKPW24-34 (E) determined by SureQuant in mock-infected macrophages or Mtb-infected macrophages treated with MG-132, bafilomycin, E64d, or DMSO-only control for n=3 donors (all HLA-A*02:01+, HLA-B*57:01+). Error bars indicate standard deviation.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Where applicable, red arrows indicate the dose of each drug used in MS experiments. (A\u2013B) Representative western blots for K48-linked polyubiquitinated protein in uninfected (A) or Mtb-infected (B) macrophages. \u03b2-actin is included as a loading control. (C) Quantification of K48-polyubiquitinated protein by densitometry of western blots for n=3 donors. Values are normalized to the abundance of \u03b2-actin, also quantified by densitometry of western blots. EC50 was determined by fitting a curve of the form 100% \u00d7 [MG-132]/([MG-132]+EC50). Data points and error bars represent the mean \u00b1 standard deviation. (D) Relative cathepsin B activity (as measured via hydrolysis of the fluorogenic cathepsin B substrate Z-RR-AMC; see Methods) as a function of E64d concentration in mock-infected and Mtb-infected macrophages. EC50 was determined by fitting a curve of the form 100% \u00d7 [1 - [E64d]/([E64d]+EC50)]. Data points and error bars represent the mean \u00b1 standard deviation. (E) Representative spinning disk confocal microscopy images of mock-infected or Mtb-infected macrophages treated with 10 nM bafilomycin for 24 hr and stained with lysotracker red. (F) Mean lysotracker-positive area per cell for n=3 donors. (* p<0.05, *** p<0.001; paired one-tailed T-test). Error bars indicate standard deviation.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Mock-infected or Mtb-infected macrophages were treated with each drug at the indicated concentrations, and the change in cell viability was measured by lactate dehydrogenase (LDH) release assay. Where applicable, red arrows indicate the dose of each drug used in MS experiments. Data points and error bars represent the mean \u00b1 standard deviation. (A) MG-132 (n=4 donors), (B) bafilomycin (10 nM; n=4 donors), (C) E64d (n=3 donors).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Macrophages were pre-treated with media containing drug or vehicle control for 1 hr and infected with Mtb in media containing drug or vehicle control, as in MS experiments. (A) Representative flow cytometry contour plots of GFP fluorescence vs. autofluorescence in macrophages infected with GFP-expressing Mtb, immediately after being allowed to phagocytose Mtb for 4 hr at an MOI of 2.5. (B) Quantification of the proportion of macrophages that took up Mtb (i.e. were GFP+) (p-values determined by one-way ANOVA with Dunnett\u2019s multiple comparisons test). (C) Luminescence as a function of time post-infection for macrophages infected with Mtb expressing a luciferase reporter. Rifampicin (RIF) is included as a control demonstrating inhibition of growth. Datapoints and error bars represent the mean \u00b1 standard deviation for n=3 donors, each representing the mean of three technical replicates. (D) Representative flow cytometry plot of MHC-I surface expression in macrophages infected with Mtb (or mock-infected) and treated with MG-132, E64d, bafilomycin, or DMSO alone for 24 hr. (E) Quantification of surface MHC-I mean fluorescence intensity (MFI) (p-values determined by one-way ANOVA with Dunnett\u2019s multiple comparisons test).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84070/elife-84070-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Macrophages were pre-treated with media containing drug or vehicle control for 1 hr and infected with Mtb in media containing drug or vehicle control, as in MS experiments. (A) Representative flow cytometry contour plots of HLA-DQ and HLA-DR surface staining in macrophages infected with Mtb (or mock-infected), 24 hr post-infection, treated with E64d, bafilomycin, or DMSO alone. (B\u2013C) Quantification of mean fluorescent intensity (MFI) of surface HLA-DR (B) and HLA-DQ (C) staining in Mtb-infected macrophages for n=3 donors (p-values determined by one-way ANOVA with Dunnett\u2019s multiple comparisons test).\n\nTreatment with MG-132 and E64d each respectively reduced presentation of a subset of self MHC-I peptides but did not reduce presentation of Mtb peptides (Figure 4C). Treatment with bafilomycin broadly increased presentation of target MHC-I peptides (Figure 4C). This increase was statistically significant for EsxA28-36 (Figure 4D; p<0.05, one-way ANOVA with Dunnett\u2019s multiple comparisons test), though not for EsxJKPW24-34 (Figure 4E). Cell surface levels of HLA-DR and HLA-DQ were not significantly affected by bafilomycin or E64d treatment (Figure 4\u2014figure supplement 4), suggesting that E64d and bafilomycin did not substantially stall MHC-II antigen presentation and their effects of on MHC-I presentation could not be explained as indirect effects of modulating antigen entry into the MHC-II antigen processing pathway. Our results suggest that processing of Mtb peptides for presentation on MHC-I relies on antigen processing proteases other than the proteasome, cysteine cathepsins, or other acidification-dependent lysosomal proteases, and/or that multiple redundant pathways contribute to processing of Mtb peptides for presentation on MHC-I.\n\n## Discussion\n\nOur analysis of the MHC-I repertoire of primary human macrophages infected with Mtb revealed that T7SS substrates are a prominent source of Mtb peptides presented on MHC-I. Our findings contrast with those of previous studies of the immunopeptidome of macrophage cell lines infected with BCG (Bettencourt et al., 2020) and the avirulent strain Mtb H37Ra (Flyer et al., 2002), in which the mycobacterial peptides identified included twin arginine translocation (Tat) pathway substates, Sec pathway secretion substrates, membrane-associated proteins, and cytosolic proteins, with no apparent enrichment for T7SS substrates. Given that we showed ESX-1 activity contributes to presentation of Mtb antigens in infection with virulent Mtb H37Rv, the fact that BCG and Mtb H37Ra are both deficient in ESX-1 activity (Frigui et al., 2008; Gordon et al., 1999; Guinn et al., 2004; Lewis et al., 2003; Pym et al., 2002) may in part explain this difference in the mycobacterial peptides presented on MHC-I. The absence of ESX-1 in BCG therefore could limit the ability of BCG to prime effective T cell responses against Mtb, not only because of the absence of antigens encoded in the ESX-1 locus but also because of altered or reduced presentation of other antigens (Pym et al., 2003).\n\nOur findings contrast with previous work arguing that ESX-1 activity is dispensable for presentation of Mtb antigens on MHC-I (Lewinsohn et al., 2006; Woodworth et al., 2008a). ESX-1 activity is not required for Mtb-infected human monocyte-derived dendritic cells to present an epitope derived from TB8.4 (a Sec pathway substrate) to cognate T cells (Lewinsohn et al., 2006). While ESX-1 activity is required for priming of CD8+ T cell responses specific for EsxB in vivo in mice, it is dispensable for priming of CD8+ T cell responses specific for antigens exported via other secretion systems (such as TB8.4 and EsxH) (Woodworth et al., 2008b). While these prior results suggest that the requirements for presentation of Mtb antigens on MHC-I may vary among Mtb antigens and/or vary among antigen presenting cell types, our results show that ESX-1 activity is essential for the presentation of certain Mtb antigens in infected human macrophages, beyond ESX-1 substrates alone. Whereas in axenic culture, secretion of ESX-5 substrates is independent of ESX-1 function (Champion et al., 2006; Shah and Briken, 2016), the fact that presentation of peptides derived from an ESX-5 substrate on MHC-I requires ESX-1 activity supports the hypothesis that the localization of secreted Mtb proteins within a host cell may depend on the activity of multiple T7SSs. This dependence on multiple T7SSs has previously been shown for other ESX-5 substrates such as CpnT (Izquierdo Lafuente et al., 2021), and a functional interdependence between ESX-1 and ESX-3 (which respectively damage the phagosome membrane and prevent host membrane repair) has previously been proposed (Mittal et al., 2018). Our results suggest that the interdependence of Mtb T7SSs in an intracellular context influences the availability of Mtb antigens for processing and presentation on MHC-I.\n\nPrior studies have shown that Mtb antigens must access the cytosol to be presented on MHC-I in human monocyte-derived dendritic cells (Grotzke et al., 2010; Grotzke et al., 2009; Lewinsohn et al., 2006), and our results are consistent with a model in which ESX-1-mediated phagosomal membrane damage enables Mtb antigens to access cytosolic antigen processing and presentation pathways. However, further evidence will be needed to establish whether phagosomal membrane damage alone is sufficient to enable presentation of Mtb antigens on MHC-I in the absence of other ESX-1 functions. Given that our quantitative MS experiments only targeted two Mtb-derived epitopes, further experiments will also be needed to determine whether these results extend to all Mtb T7SS substrates or all Mtb MHC-I antigens, or only a subset.\n\nIn this study, we used strain H37Rv for the sake of consistency with other prior studies on antigen presentation on MHC-I and phagosome membrane damage in Mtb-infection, but antigen presentation may vary among Mtb isolates. Mtb isolates have been shown to differ in their level of ESX-1 activity (Solans et al., 2014), as well as carrying mutations in Esx-family proteins and other T7SS substrates (Saelens et al., 2022; Uplekar et al., 2011). Further studies across multiple isolates may therefore reveal differences in antigen presentation that could be relevant for the design of broadly protective vaccines.\n\nWe showed that presentation of two Mtb-derived peptides on MHC-I was independent of the activity of proteases commonly associated with antigen processing (the proteasome and cysteine cathepsins), suggesting an alternate processing mechanism. Other proteases have previously been proposed to contribute to proteolytic processing of antigens for presentation on MHCs, including tripeptidyl peptidase II (Geier et al., 1999; Guil et al., 2006; L\u00e1zaro et al., 2015; York et al., 2006), nardilysin (Kessler et al., 2011), thimet oligopeptidase (Kessler et al., 2011), metalloproteinases (Lorente et al., 2012), and serine cathepsins such as Cathepsin G that are not inhibited by E64d (Burster et al., 2010). Some of these or other enzymes may be responsible for proteolytic processing of EsxA28-36 and EsxJKPW24-34, or may have a redundant role that can compensate for inhibition of conventional antigen processing pathways. Further work will be needed to determine which proteolytic pathways contribute to presentation of Mtb T7SS substrates on MHC-I.\n\nIn addition to T7SS substrates, we also identified peptides derived from a Sec pathway substrate (TB8.4), and from uncharacterized hypothetical proteins (Rv1211, Rv3196A). Rv1211 and Rv3196A have both previously been detected by MS in culture filtrates of Mtb (Bell et al., 2012), as has the Mycobacterium marinum ortholog of Rv3196A (MMAR_1367; Cronin et al., 2022), suggesting that either or both of these proteins could be secreted despite lacking readily identifiable secretion signals. TB8.4, Rv1211, and Rv3196A are all low-molecular-weight proteins, which we speculate could make it easier for them to translocate through pores in a permeabilized phagosomal membrane. Further investigation of the localization of these proteins may help us better understand how and to what extent small secreted Mtb proteins other than known T7SS substrates can contribute to the MHC-I repertoire.\n\nSome of the Mtb MHC-I peptides we identified derive from proteins known or suspected to be associated with the mycobacterial outer membrane (Abdallah et al., 2006; Sampson et al., 2001). These include PPE51 (Wang et al., 2020), PPE20 (Boradia et al., 2022), PPE60 (Su et al., 2018), EspC (Champion et al., 2009; Lou et al., 2017), and PE13 [the co-transcribed binding partner (Chen et al., 2017) of the putative outer membrane protein PPE18 (Nair et al., 2009)]. While some of these proteins can also be found in soluble form in culture filtrates (Tufariello et al., 2016), others may be stably associated with the mycobacterial outer membrane (Wang et al., 2020). The mechanism by which antigens associated with the outer membrane are processed and presented could differ from that of soluble secreted proteins.\n\nPrior work shows that at least some of the MHC-I antigens we identified as potential vaccine targets are immunogenic in humans. Lewinsohn et al., 2017 showed that in humans with prior exposure to Mtb, EsxA, EsxB, PPE51, and EsxJKPW are sources of immunodominant CD8+ T cell antigens, while other antigens identified in our study elicited intermediate responses (PE13, PE35, PPE60, PPE19), and one elicited no detectable response (PPE20). In a separate study, CD8+ T cells (as well as CD4+ T cells) recognized multiple epitopes derived from EspC (Millington et al., 2011). Individual peptides we identified by MS have also been previously shown to be recognized by human T cells, including EsxJ24-34 (Grotzke et al., 2010; Lewinsohn et al., 2013) and EsxA28-36 (Tully et al., 2005), providing a proof of concept that particular epitopes identified by MS can be immunogenic. Antigens like PPE20 that did not elicit measurable CD8+ T cell responses in the context of natural infection should not necessarily be ruled out as vaccine targets, as a lack of CD8+ T cell recognition in the setting of natural infection does not necessarily imply that these antigens could not be immunogenic. Bioinformatic studies have also shown that predicted class I HLA-binding motifs are statistically underrepresented in several Esx-family protein sequences, suggesting that these proteins may be under selective pressure to escape recognition by CD8+ T cells (Maman et al., 2011). This finding provides further support for the idea that T cell recognition of T7SS substrates presented on MHC-I is functionally relevant to protective immunity against Mtb infection.\n\nWe did not detect any peptides derived from several antigens previously shown to stimulate CD8+ T cell responses in Mtb infection, including responses restricted to HLA alleles represented in our DDA MS analyses [for example, EsxH and FbpB (Axelsson-Robertson et al., 2015)]. This could be due to any of several biological and/or technical reasons. Given that the Mtb-derived MHC-I peptides we detected were enriched for T7SS substrates but not for substrates of the Sec or Tat secretion pathways, it is possible that the subcellular localization of antigens secreted via these pathways is not optimal for efficient presentation on MHC-I in macrophages. In this case, other types of APCs that differ in their antigen processing and presentation capabilities could still present peptides from these antigens to prime the previously observed CD8+ T cell responses. The same could also be true of certain T7SS substrate antigens (such as EsxH) if T7SS substrates vary in their subcellular localization or if presentation of certain epitopes requires antigen processing pathways not active in macrophages. In future studies, isolating MHC peptides from multiple myeloid cell types may help determine whether heterogeneity in antigen presentation among cell types contributes to apparent discrepancies between the Mtb-specific CD8+ T cell repertoire and the macrophage pMHC repertoire. Some peptides may also have been missed because they were lost to adsorption during sample handling, because they were below the limit of detection due to low abundance or ionization efficiency, or because they co-eluted with other, more abundant peptides and were therefore not prioritized for acquisition in DDA analyses. In future work, pMHC internal standards added prior to immunoprecipitation may enable accurate estimates of the limit of MS detection for specific peptides, to determine whether technical factors led to a lack of detection. Our results do not rule out presentation of additional categories of antigens besides those we detected.\n\nOur results identify several Mtb proteins that are accessible for presentation on MHC-I in Mtb-infected human macrophages, suggesting that these could serve as targets for subunit vaccines designed to elicit CD8+ T cell-mediated protection against TB. By showing that T7SS substrates are overrepresented in the MHC-I repertoire of macrophages and revealing mechanistic determinants of Mtb antigen processing, our results have the potential to guide future screens to identify additional vaccine targets. Our findings advance the field\u2019s understanding of antigen presentation in TB and suggest novel potential targets for TB vaccine development.\n\n## Methods\n\n### Human cell isolation, differentiation, and culture\n\nDeidentified buffy coats were obtained from Massachusetts General Hospital. Samples are acquired and provided to research groups with no identifying information. HLA-A*02:01+, HLA-B*57:01+leukapheresis samples (leukopaks) were obtained from StemCell. PBMCs were isolated by density-based centrifugation using Ficoll (GE Healthcare). CD14 +monocytes were isolated from PBMCs using a CD14 positive-selection kit (Stemcell). Isolated monocytes were differentiated in R10 media [RPMI 1640 without phenol red (Gibco) supplemented with 10% heat-inactivated FBS (Gibco), 1% HEPES (Corning), 1% L-glutamine (Sigma)] supplemented with 25 ng/mL M-CSF (Biolegend, 572902). Monocytes were cultured on appropriate ultra-low-attachment plates or flasks (Corning) for 6 days.\n\nFor ELISA assays, Cathepsin B activity assays, and growth curves (see below), after 6 days macrophages were detached using a detachment buffer of calcium-free PBS and 2 mM ethylenediaminetetraacetic acid (EDTA), pelleted, and recounted. Macrophages were plated in tissue culture treated 96-well plates at a density of 50,000 cells per well in R10 media and allowed to re-adhere overnight prior to infection. For microscopy (see below) cells were similarly detached and were replated on 12-well chamber slides (Ibidi) at a density of 100,000 cells per well in R10 media and allowed to re-adhere overnight prior to infection. For all other experiments, macrophage differentiation media was replaced with fresh R10 overnight prior to infection, without re-plating the macrophages.\n\n### HLA genotyping\n\nGenomic DNA was extracted from 5x106 PBMCs using a Qiagen DNeasy kit. HLA typing was performed using a targeted next generation sequencing (NGS) method. Briefly, locus-specific primers were used to amplify a total of 26 polymorphic exons of HLA-A & B (exons 1\u20134), C (exons 1\u20135), E (exon 3), DPA1 (exon 2), DPB1 (exons 2\u20134), DQA1 (exon 1\u20133), DQB1 (exons 2 & 3), DRB1 (exons 2 & 3), and DRB3/4/5 (exon 2) genes with Fluidigm Access Array system (Fluidigm Corporation, South San Francisco, CA 94080 USA). The 26 Fluidigm PCR amplicons were harvested from Fluidigm Access Allay IFC and pooled. Quality and quantity were checked using a Caliper LabChip GX Touch HT Nucleic Acid Analyzer (PerkinElmer, Waltham, MA 02452 USA). The PCR product library was quantitated and subjected to sequencing on an Illumina MiSeq sequencer (Illumina, San Diego, CA 92122 USA). HLA alleles and genotypes were called using the Omixon HLA Explore (version 2.0.0) software (Omixon Biocomputing Ltd., Budapest, Hungary).\n\n### Mtb culture\n\nMycobacterium tuberculosis (Mtb) H37Rv was grown in Difco Middlebrook 7H9 media supplemented with 10% OADC, 0.2% glycerol, and 0.05% Tween-80 to mid-log phase. Strains expressing GFP were grown in media supplemented with 50 \u03bcg/mL hygromycin B (Sigma-Aldrich), and strains expressing luxABCDE were grown in media supplemented with 20 \u03bcg/mL Zeocin (Thermo).\n\n### Mtb infection of macrophages\n\nThe Mtb culture was pelleted by centrifugation, washed once with PBS, resuspended in R10 media and filtered through a 5 \u03bcm syringe filter to obtain a single-cell suspension. Macrophages were infected at the indicated multiplicity of infection (MOI) for 4 hr and then washed with PBS to remove extracellular Mtb. Infected macrophages were cultured in R10 media for the remainder of the experiment.\n\n### Drug treatment of macrophages\n\nWhere indicated, macrophages were pre-treated with R10 media containing 20 \u03bcM E64d (Cayman), 0.5 \u03bcM MG-132 (Cayman), or 10 nM bafilomycin (InvivoGen), or DMSO alone (or other concentration of drug where indicated). The culture media was supplemented with an equal concentration of drug during infection with Mtb, and after washing off extracellular Mtb. Where indicated, the culture media was supplemented with 10 ng/mL of IFN-\u03b2 after infection with Mtb.\n\n### hipMHC internal standard preparation\n\nUV-mediated peptide exchange and quantification of hipMHC complexes by ELISA were performed as previously described (Stopfer et al., 2020). Amidated peptides with sequences AL[+7]ADGVQKV-NH2, ALNEQIARL[+7]-NH2, and SLPEEIGHL[+7]-NH2 were used to make hipMHC standards.\n\n### MHC-I immunoprecipitation (IP)\n\nA total of 50 million macrophages per condition (data-dependent analysis) or 10 million macrophages per condition (quantitative SureQuant analysis) were cultured as described above in ultra-low-attachment T75 flasks (Corning). macrophages were infected at MOI 2.5 as described above, or mock-infected with media containing no Mtb. Where indicated for specific DDA MS experiments (donor B), the culture media was supplemented with 10 ng/mL of IFN-\u03b3 for 24 hr prior to infection with Mtb. Where indicated for specific DDA MS experiments (donor C), the culture media was supplemented with 0.5 \u00b5g/mL of cycloheximide for the final 6 hr of culture prior to MHC-I isolation. Seventy-two hr post-infection, cells were detached using PBS supplemented with 2 mM EDTA, washed with PBS, and lysed in 1 mL (DDA analysis) or 0.5 mL (SureQuant analysis) of MHC lysis buffer [20 mM Tris, 150 mM sodium chloride, pH 8.0, supplemented with 1% CHAPS, 1 x HALT protease and phosphatase inhibitor cocktail (Pierce), and 0.2 mM phenylmethylsulfonyl fluoride (Sigma-Aldrich)]. Lysate was sonicated using a Q500 ultrasonic bath sonicator (Qsonica) in five 30 s pulses at an amplitude of 60%, cleared by centrifugation at 16,000 x g, and sterile filtered twice using 0.2 \u03bcm filter cartridges (Pall NanoSep). For quantitative SureQuant analyses, the protein concentration of the lysates was normalized by BCA assay (Pierce), and 100 fmol of each hipMHC standard was added to each sample. Lysates were then added to protein A sepharose beads pre-conjugated to pan-MHC-I antibody (clone W6/32), prepared as previously described (Stopfer et al., 2020), and incubated rotating at 4 \u00b0C overnight (12\u201314 hours). Beads were then washed and peptide-MHC complexes eluted as previously described (Stopfer et al., 2020).\n\n### Purification of MHC-I-associated peptides\n\n#### Protocol 1\n\nMHC-I-associated peptides were purified using 10 kDa molecular weight cutoff filters (Pall NanoSep) as previously described (Stopfer et al., 2020), snap-frozen in liquid nitrogen, and lyophilized.\n\n#### Protocol 2\n\nC18 SpinTips (Pierce) were washed with 0.1% trifluoroacetic acid, activated with 90% acetonitrile supplemented with 0.1% formic acid, and washed with 0.1% formic acid. Eluate from MHC-I IPs was applied to the column by centrifugation. The column was washed with 0.1% formic acid, and peptides were eluted by applying elution solvent (30% acetonitrile supplemented with 0.1% formic acid) by centrifugation twice. Eluates were snap-frozen in liquid nitrogen and lyophilized. Lyophilized peptides were resuspended in solvent A2 (10 mM triethyl ammonium bicarbonate [TEAB], pH 8.0) and loaded onto a fractionation column (a 200 \u03bcm inner diameter fused silica capillary packed in-house with 10 cm of 10 \u03bcM C18 beads). Peptides were fractionated using an Agilent 1100 series liquid chromatograph using buffers A2 (10 mM TEAB, pH 8.0) and B2 (99% acetonitrile, 10 mM TEAB, pH 8.0). The fractionation column was washed with solvent A2, and peptides were separated using a gradient of 1\u20135% solvent B2 over 5 min, 5\u201340% over 60 min, 40\u201370% over 10 min, hold for 9 min, and 70%\u20131% over 1 min. Ninety-second fractions were collected, concatenated into 12 tubes, over 90 min in total. Fractions were flash-frozen in liquid nitrogen and lyophilized.\n\n### DDA MS analyses\n\nMHC-I peptide samples were resuspended in 0.1% formic acid. 25% of the sample was refrozen and reserved for later SureQuant validation analyses, while 75% of the sample was used for DDA analysis. For all MS analyses, samples were analyzed using an Orbitrap Exploris 480 mass spectrometer (Thermo Fisher Scientific) coupled with an UltiMate 3000 RSLC Nano LC system (Dionex), Nanospray Flex ion source (Thermo Fisher Scientific), and column oven heater (Sonation). The MHC peptide sample was loaded onto a fused silica capillary chromatography column with an integrated electrospray tip (~1 \u03bcm orifice) prepared and packed in-house with 10 cm of 1.9 \u03bcm C18 beads (ReproSil-Pur).\n\nStandard mass spectrometry parameters were as follows: spray voltage, 2.0 kV; no sheath or auxiliary gas flow; ion transfer tube temperature, 275 \u00b0C. The Orbitrap Exploris 480 mass spectrometer was operated in data dependent acquisition (DDA) mode. Peptides were eluted using a gradient of 6\u201325% buffer B (70% Acetonitrile, 0.1% formic acid) over 75 min, 25\u201345% over 5 min, 45\u2013100% over 5 min, hold for 1 min, and 100% to 3% over 2 min. Full scan mass spectra (350\u20131200 m/z, 60,000 resolution) were detected in the orbitrap analyzer after accumulation of 3x106 ions (normalized AGC target of 300%) or 25ms. For every full scan, MS/MS scans were collected during a 3 s cycle time. Ions were isolated (0.4 m/z isolation width) using the standard AGC target and automatic determination of maximum injection time, fragmented by HCD with 30% CE, and scanned at a resolution of 45,000. Charge states <2 and>4 were excluded, and precursors were excluded from selection for 30 s if fragmented n=2 times within a 20-s window.\n\n### DDA data search and manual inspection\n\nAll mass spectra were analyzed with Proteome Discoverer (PD, version 2.5) and searched using Mascot (version 2.4) against a custom database comprising the Uniprot human proteome (UP000005640) and the Uniprot Mycobacterium tuberculosis H37Rv proteome (UP000001584). No enzyme was used, and variable modifications included oxidized methionine for all analyses. Peptide-spectrum matches from all analyses were filtered with the following criteria: search engine rank = 1, isolation interference \u226430%, length between 8 and 16 amino acids, ions score \u226515, and percolator q-value <0.05. Identifications (IDs) of putative Mtb-derived peptides were rejected if any peptide-spectrum matches (PSMs) for the same peptide were found in the unfiltered DDA MS data for the corresponding mock-infected control. For each putative Mtb peptide identified, MS/MS spectra and extracted ion chromatograms (XIC) were manually inspected, and the ID was only accepted for further validation if it met the following criteria: (1) MS/MS spectra contained enough information to unambiguously assign a majority of the peptide sequence; (2) neutral losses were consistent with the chemical properties of the peptide; (3) manual de novo sequencing did not reveal an alternate peptide sequence that would explain a greater number of MS/MS spectrum peaks; (4) XIC showed a peak in MS intensity at the mass to charge ratio (m/z) of the peptide precursor ion at the retention time at which it was identified that did not appear in the corresponding mock-infected control. Peptides that met these criteria were further validated using SureQuant (see below).\n\nDDA MS data were searched a second time against a database comprising only known T7SS substrates of Mtb H37Rv (all Esx-family proteins, all PE/PPE proteins, and EspA, EspB, EspC, EspE, EspF, EspI, EspJ, and EspK). Because high sequence similarity among many T7SS substrates artificially raises percolator q-values computed using this limited database, these searches were filtered only on ions score \u226520 rather than on ions score \u226515 and percolator q-value <0.05. The only validated Mtb peptide identified via these additional searches that had not previously been identified (AEHGMPGVP, derived from PPE51) was omitted from enrichment analyses (see below) to avoid introducing bias.\n\n### Gibbs clustering\n\nHost peptides and putative Mtb peptides that passed the filters described above were clustered using GibbsCluster 2.0 (Andreatta et al., 2017), hosted at (https://services.healthtech.dtu.dk/service.php?GibbsCluster-2.0). Default parameters for MHC-I peptide clustering were used, with the modification that a maximum of 6 clusters was allowed. The number of clusters that gave the highest KL divergence score was considered optimal. Clusters were assigned to HLA alleles by comparing cluster motifs to the known sequence binding motifs obtained from the NetMHCpan 4.1 motif viewer (Reynisson et al., 2020) (https://services.healthtech.dtu.dk/service.php?NetMHCpan-4.1) for HLA alleles expressed by that donor.\n\n### HLA allele assignment\n\nFor each donor, the binding affinity of Mtb peptides identified in DDA MS data for each HLA allele expressed by that donor (as determined by HLA typing \u2013 see above) was predicted using NetMHCpan 4.1 (Reynisson et al., 2020). Peptides were assigned to the allele for which they had the highest predicted binding score.\n\n### Enrichment analyses\n\nTo determine whether Mtb-derived MHC-I peptides or their source proteins were enriched for proteins with specific secretion signals, we classified each protein in the reference Mtb H37Rv proteome (UP000001584) using SignalP 6.0 (Teufel et al., 2022), and added an additional class of known T7SS substrates (as defined above; see DDA data search). Under a \u2018neutral model\u2019 in which all possible Mtb peptides are equally likely to be presented, the probability of drawing a peptide from a given class of proteins can be approximated as the sum of the lengths of the amino acid sequences of proteins in that class, divided by the total number of amino acid residues in the Mtb proteome. Using this approximation, we used a binomial test to assess whether the number of Mtb-derived peptides from each class of proteins detected in the MHC-I was greater or less than would be predicted under the neutral model. We used a hypergeometric test to assess whether the number of source proteins from each class was greater or less than expected, relative to a neutral model in which each protein in the Mtb proteome is equally likely to contribute to the MHC-I repertoire.\n\n### SIL peptide synthesis\n\nSIL peptides were synthesized at the MIT Biopolymers and Proteomics Lab using standard Fmoc chemistry using an Intavis model MultiPep peptide synthesizer with HATU activation and 5 \u03bcmol chemistry cycles. Starting resin used was Fmoc-Amide Resin (Applied Biosystems). Cleavage from resin and simultaneous amino acid side chain deprotection was accomplished using: trifluoroacetic acid (81.5% v/v); phenol (5% v/v); water (5% v/v); thioanisole (5% v/v); 1,2-ethanedithiol (2.5% v/v); 1% triisopropylsilane for 4 hr. Standard Fmoc amino acids were procured from NovaBiochem and SIL Fmoc-Leu (13C6, 15N), Fmoc-Arg (13C6), Fmoc-Glu (13C5 15N) were obtained from Cambridge Isotope Laboratories. Peptides were quality controlled by MSy and reverse phase chromatography using a Bruker MicroFlex MALDI-TOF and Agilent model 1100 HPLC system with a Vydac C18 column (300 \u00c5, 5 \u03bcm, 2.1\u00d7150 mm2) at 300 \u03bcL/min monitoring at 210 and 280 nm with a trifluoroacetic acid/H2O/MeCN mobile phase survey gradient.\n\n### Synthetic standard survey MS analyses\n\nDDA MS analysis of the SIL peptide mixture was performed as described above (see DDA MS analyses) with the following modifications: Peptides were eluted using a gradient of 6\u201335% buffer B over 30 min, 35\u201345% over 2 min, 45\u2013100% over 3 min, and 100% to 2% over 1 min. No dynamic exclusion was used.\n\nA second set of survey analyses was performed on the mixture of SIL peptides with background matrix using the full SureQuant acquisition method (see below). SIL peptides were spiked into a mixture of MHC-I peptides purified as described above from THP-1 cells differentiated into macrophages via 24 hr of treatment with 150 nM phorbol myristate acetate (PMA), which provided a representative background matrix. Because SIL amino acids are not 100% pure, SIL peptide concentrations were adjusted and survey analyses were repeated until the SIL peptide could be reliably detected while minimizing background signal detected at the mass of the biological peptide.\n\n### SureQuant MS analyses\n\n#### Validation analyses\n\nStandard MS parameters and MS1 scan parameters were as described above (see DDA MS analyses). The custom SureQuant acquisition template available in Thermo Orbitrap Exploris Series 2.0 was used to build four methods for validation analyses. One method targeted peptides detected in DDA analyses of the MHC-I repertoire of macrophages from donors A, B, and C. The other three methods targeted peptides detected in DDA analyses of the MHC-I repertoire of macrophages from donors D, E, and F, respectively. For each method, after the optimal charge state and most intense product ions were determined via a survey analysis of the synthetic SIL peptide standards (see above), one method branch was created for each m/z offset between the SIL peptide and biological peptide as previously described (Stopfer et al., 2020). A threshold of n=3 out the top 6 product ions was used for pseudo-spectral matching, with a mass accuracy tolerance of 10 ppm.\n\n#### Quantitative analyses\n\nQuantitative SureQuant analyses were performed similarly, with an additional method branch added to target hipMHC peptides using an inclusion list. As none of the targets of these analyses has an m/z<380, an MS1 scan range of m/z 380\u20131500 was used to exclude some common background ions. Targeted MS data were analyzed using Skyline Daily Build 22.1.9.208. For each target peptide, the intensities of the three most intense product ions were integrated over the time during which the peptide was scanned. These intensities were normalized by the integrated intensities of the corresponding product ions from the corresponding SIL standard over the same time interval, and these ratios were averaged. Finally, these averaged ratios were normalized by the average ratio of the integrated intensities of the hipMHC standard peptides and normalized to the DMSO-treated, Mtb-infected condition to obtain the final relative abundance of each target. 100 fmol of SIL EsxA28-36 and 1 pmol of SIL EsxJKPW24-34 were spiked into each sample per analysis, as well as (where indicated) 250 fmol of SIL standard for each of the target self peptides.\n\n### Immunofluorescence microscopy\n\n100,000 macrophages per well plated on chamber slides (Ibidi) were infected with GFP-expressing Mtb at MOI 1 or mock-infected with media containing no Mtb. At the indicated time point post-infection, macrophages were washed with PBS and fixed with 4% paraformaldehyde (PFA) in PBS for 1 hr. After the full time course was collected, all slides were blocked with 5% normal goat serum in PBS supplemented with 0.3% v/v Triton X-100 for 1 hr at room temperature and stained overnight at 4 \u00b0C with primary antibody (LAMP1 \u2013 Cell Signaling Technologies [CST] D2D11; P62 \u2013 CST D10E10; MHC-I \u2013 CST D8P1H; Galectin-3 \u2013 Thermo A3A12) diluted in antibody dilution buffer (PBS with 1% w/v bovine serum albumin and 0.3% v/v triton X-100). Wells were washed three times with PBS for 5 min each and stained with Alexa fluor 647 (AF647)-conjugated goat anti-rabbit or anti-mouse secondary antibody (Thermo) diluted to a final concentration of 1 \u03bcg/mL in antibody dilution buffer at room temperature for 2 hr. Wells were washed three times with PBS for 5 min each and stained with DAPI at a final concentration of 300 nM in PBS for 15 min at room temperature. Wells were washed three times with PBS for 5 min each, well dividers were removed, and slide covers were mounted on slides using Prolong Diamond anti-fade mounting media (Thermo). Slides were imaged using a TissueFAXS Confocal slide scanner system (TissueGnostics). 100 fields of view were acquired per condition using a \u00d740 objective lens.\n\n#### Segmentation of Mtb-containing phagosomes\n\nImage segmentation was performed using opencv-python 4.5.4.60. A two-dimensional Gaussian blur with a standard deviation of five pixels was applied to de-noise GFP fluorescence images. A binary mask was generated from the blurred GFP image using a fluorescence intensity threshold that was empirically selected for each biological replicate. GFP +phagosomes were further segmented using the watershed algorithm.\n\n#### Colocalization analysis\n\nA correlation image was generated by computing the Pearson correlation coefficient between the GFP fluorescent intensity and AF647 fluorescent intensity in a 41x41 pixel sliding window with a step size of 1. This correlation value was averaged over each Mtb-containing phagosome, and phagosomes with a mean value of greater than or equal to 0.6 were considered co-localized. For statistical analyses of log-transformed rates of co-localization, zeros were replaced with the limit of detection for a given sample (100% x [1 /N] where N is the number of Mtb-containing phagosomes detected).\n\n### Mtb growth curves\n\nA total of 50,000 macrophages per well were infected in technical triplicate in opaque white 96-well plates with luxABCDE-expressing Mtb at MOI 2.5 (or mock-infected with media not containing Mtb). Where indicated, macrophages were treated with drug as described above, or media was supplemented with 10 ng/mL IFN-\u03b2 (BioLegend) or 25 \u03bcg/mL rifampicin (RIF) after infection. Luminescence was measured at the indicated time points using a Spark 10 M plate reader (Tecan).\n\n### Phagocytosis assay\n\n1x106 macrophages were differentiated as described above on six-well ultra low-attachment plates and infected with GFP-expressing Mtb at an MOI of 2.5 (or mock-infected with media containing no Mtb). After the 4 hr infection, macrophages were detached using PBS supplemented with 2 mM EDTA, washed with PBS, stained with Live/Dead Fixable Near-IR dye (Thermo) for 10 min, washed with FACS buffer (PBS supplemented with 2% FBS and 2 mM EDTA) and PBS, fixed with PBS containing 4% PFA for one hour, and washed and resuspended in FACS buffer for analysis on an LSRFortessa flow cytometer (BD).\n\n### MHC-I and MHC-II flow cytometry\n\nA total of 1x106 macrophages were differentiated as described above on six-well ultra low-attachment plates and infected with GFP-expressing Mtb at an MOI of 2.5 (or mock-infected with media containing no Mtb). Seventy-two hr post-infection, macrophages were detached using PBS supplemented with 2 mM EDTA, blocked with Human TruStain FcX Fc receptor blocking solution (BioLegend) for 10 min, stained with phycoerythrin (PE)-conjugated anti-HLA-A,B,C antibody (BioLegend, clone W6/32) or PE-conjugated anti-HLA-DQ antibody (BioLegend, clone HLA-DQ1) and PerCP-Cy5.5-conjugated anti-HLA-DR antibody (BioLegend, clone L243) for 20 min, stained with Live/Dead Fixable Near-IR dye (Thermo) for 10 min, washed with FACS buffer and PBS, fixed with PBS containing 4% PFA for 1 hr, and washed and resuspended in FACS buffer for analysis on an LSR Fortessa flow cytometer (BD).\n\n### ELISA\n\nA total of 50,000 macrophages per well were infected in technical triplicate in a 96-well plate format with Mtb at MOI 2.5 (or mock-infected with media not containing Mtb). Seventy-two hr post-infection, culture media was collected and sterile filtered twice by centrifugation using 96-well 0.2 \u03bcm filter plates (Corning). The concentration of CXCL10 in the media was determined using a Human CXCL10 ELISA MAX kit (BioLegend 439904).\n\n### LDH release assay\n\nA total of 50,000 macrophages per well were infected in technical triplicate in a 96-well plate format with Mtb at MOI 2.5 (or mock-infected with media not containing Mtb) and treated with the indicated concentrations of drug or vehicle control. Twenty-four hr post-infection, culture media was collected and sterile filtered twice by centrifugation using 96-well 0.2 \u03bcm filter plates (Corning). Percent cytotoxicity was determined using a CyQuant LDH Cytotoxicity Assay kit (Thermo C20300).\n\n### Western blots\n\nOn six-well ultra low-attachment plates, 1x106 macrophages were differentiated as described above . Where indicated, macrophages were infected with Mtb at an MOI of 2.5. Macrophages were treated for 24 hr with the indicated concentration of MG-132 or DMSO control, and were then detached using PBS supplemented with 2 mM EDTA, washed with PBS, pelleted, and lysed in 100 \u03bcL RIPA buffer. Lysates were cleared by centrifugation at 16,000 x g for 5 min. For cells infected with Mtb, lysates were filtered twice using 96-well 0.2 \u03bcm filter plates (Corning). NuPAGE LDS Sample Buffer (Thermo) and NuPAGE Sample Reducing Agent (Thermo) were added to a final concentration of 1 x, and 20 \u03bcL of lysate per well was separated by SDS-PAGE. Protein was transferred to a PVDF membrane using an iBlot2 dry transfer system (Thermo). Membranes were blocked for 1 hr at room temperature with blocking buffer (Licor) and incubated overnight at 4 \u00b0C with anti-K48-linked poly-ubiquitin antibody (Cell Signaling Technologies) and anti-\u03b2-actin antibody (Santa Cruz Biotechnologies), each diluted 1:1000 in antibody diluent (Licor). Blots were washed three times for 5 min each with tris-buffered saline with 0.1% tween-20 (TBS-T) and incubated for 1 hr at room temperature with IRDye 800CW goat anti-rabbit secondary antibody (Licor) and IRDye 680CW goat anti-mouse secondary antibody (Licor), each diluted 1:10,000 in antibody diluent (Licor). Blots were washed three times for five minutes each with TBS-T and imaged using an Odyssey DLx imaging system (Licor).\n\n### Cathepsin B activity assays\n\nCathepsin B activity was measured using an assay protocol adapted from prior literature (Creasy et al., 2007; Hulkower et al., 2000). 50,000 macrophages per well were infected in technical triplicate in a 96-well plate format with Mtb at MOI 2.5 (or mock-infected with media not containing Mtb) and treated with the indicated concentrations of E64d or vehicle control. Twenty-four hr post-infection, macrophages were washed with PBS and lysed by adding 100 \u03bcL assay buffer (87.7 mM KH2PO4,12.3 mM NaHPO4, 4 mM EDTA, pH 5.5) supplemented with 2.6 mM dithiothreitol and 0.1% v/v Triton X-100, mixing thoroughly, and incubating at 37 \u00b0C for 15 min. Forty \u03bcL of lysate was transferred to a separate 96-well plate, and the fluorogenic cathepsin B substrate Z-RR-AMC (Sigma-Aldrich) diluted in assay buffer was added to a final concentration of 2 mM. Plates were immediately transferred to a Spectramax iD3 plate reader (Molecular Devices) pre-warmed to 37 \u00b0C. Fluorescence at an absorbance wavelength of 370 nm and emission wavelength of 460 nm was measured in kinetic read mode at intervals of 2 min for a total duration of 20 min. The linear (enzyme-limited) regime of the fluorescence curve was determined to last approximately 10 min, so cathepsin B activity was quantified by using linear regression to determine the initial rate of fluorescence increase over the first 10 min of the assay.\n\n### Lysotracker microscopy\n\nA total of 100,000 macrophages per well plated on chamber slides (Ibidi) were infected with GFP-expressing Mtb at MOI 2.5 (or mock-infected with media containing no Mtb) and treated with bafilomycin or vehicle control as described above. Twenty-four hr post-infection, macrophages were washed with Hank\u2019s Balanced Salt Solution (HBSS), then incubated for 5 min at 37 \u00b0C in pre-warmed HBSS containing 1 \u03bcM Lysotracker Red (Thermo). Cells were washed twice with HBSS and fixed with PBS containing 4% PFA for 1 hr, then stained with DAPI and mounted as described above (see immunofluorescence microscopy). Slides were imaged using a TissueFAXS Confocal slide scanner system (TissueGnostics). Using a \u00d740 objective lens, 100 fields of view were acquired per condition.\n\n### Automated counting of nuclei\n\nImage segmentation was performed using opencv-python 4.5.4.60. A two-dimensional Gaussian blur with a standard deviation of five pixels was applied to de-noise DAPI fluorescence images. A binary mask was generated from the smoothed DAPI image using a fluorescence intensity threshold that was determined automatically using Otsu\u2019s thresholding method, as implemented in opencv-python. To disambiguate adjacent or overlapping nuclei, nuclei were further segmented using the watershed algorithm.\n\n### Calculation of Lysotracker+ area per cell\n\nA two-dimensional Gaussian blur with a standard deviation of five pixels was applied to de-noise Lysotracker Red fluorescence images. A binary mask was generated from the Lysotracker Red image using a fixed intensity threshold for all samples. The total Lysotracker +area was computed from the binary mask and divided by the number of nuclei counted in the image (see above).\n\n### Curve fitting and statistical analyses\n\nUnless otherwise indicated, all nonlinear curve fitting and all statistical tests were performed in GraphPad Prism 9.\n",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "a79d5c24-5ff5-4720-918f-7c86f530f5e6",
+      "submission_id": "c3e5ca64-f163-4953-bb4c-f7fa52c86733",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, https://ror.org/03rp50x72 University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84070.sa0](https://doi.org/10.7554/eLife.84070.sa0)\n\nThis landmark study uses compelling approaches such as quantitative and screening mass spectrometry to identify peptides from tuberculosis bacteria that are presented by macrophages infected with this pathogen. The authors provide convincing evidence that the presentation of these antigens depends on a specialist bacterial secretion system. The study will be of interest to infectious disease specialists and of particular value for future vaccine development.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, https://ror.org/03rp50x72 University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84070.sa1](https://doi.org/10.7554/eLife.84070.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Immunopeptidomics reveals determinants of Mycobacterium tuberculosis antigen presentation on MHC class I\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Bavesh Kana as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Could the authors speculate why certain antigens (e.g. Rv0288, Rv1886c) that were previously found to be HLA*A2 restricted and elicit abundant Class-I restricted CD8 T cell responses in humans (Axelsson-Robertson, Int J Inf Dis, 2015), were not found to be presented by infected macrophages in this study? It would be useful to cite and discuss this point.\n\n2. Although the authors used macrophages from donors expressing HLA-B*57:01 and HLA-A*02:01, other HLA alleles are expressed on these macrophages. Furthermore, other Mtb peptides were also likely to be presented (such as the PE-PPE proteins, those associated with the mycobacterial outer membrane, or sec substrate TB8.4 mentioned in lines 318-320). Were other peptides found in these quantitative MS experiments? How did their repertoire compare to those found in the initial experiments (even though the focus was on quantifying the 2 peptides mentioned)? If data are available, they would strengthen the results, if not, this should be discussed.\n\nRelated: Were peptides other than the 2 that were quantified affected by the Esx1 deletion mutant? (ie non-ESX proteins)\n\n3. Bafilomycin and E64D appear to increase the relative abundance of both the Mtb peptides and other self-peptides. Does the use of these agents also correlate with a shift in MHC-I vs. MHC-II expression on the cell surface? Perhaps related to the mass effect if the Class-II pathway is stalled due to impaired phagolysosomal fusion.\n\n4. If the peptides presented on MHC-I are not affected by proteasome or cathepsin B inhibition, it would be helpful if the authors could discuss why that is the case and which processes are likely responsible for antigen processing in this case (in addition to what is written in lines 252-255).\n\n5. There are a few limitations of this study that should be addressed in the discussion. First, please address in the text why H37Rv was chosen- this is a virulent lab strain but perhaps not the best choice, as it is known to be less virulent than other strains like Erdman, CDC1551 or the Beijing strains. Adding something about this choice and why it might be a limitation of the study would be worth the author's time. Second, the suggestion that ESX-1 is required for the presentation of the antigens from other ESX systems is based on the quantification of two peptides (one from ESX-1 and one from Esx3/5). This may be a limitation of the current study. If it is not, please discuss.\n\nOther points that should be addressed:\n\n1. The authors should mention the rationale/significance of infecting the macrophages for 72h (rather than 24-48h) in the first set of immunopeptidomics experiments. Mtb infection >48h has been associated with the downregulation of MHC-II in infected cells.\n\n2. Hypotheses 1 and 2 are presented in the opposite order in the text (lines 133-134) as in Figure 2a.\n\n3. Citation for the statement in line 292\n\n4. It would be helpful if the rationale for (and the difference between) the Esx5 peptides QTVEDEARRMW vs. QTVEDEARRM(ox)W were mentioned in the Results section in addition to the legend for Figure 3. I had to search to understand why only 2 peptides were mentioned in the text, but data for 3 peptides were shown in the figure.\n\n5. MG-132 increased the expression of extracellular and endosomal peptides, but reduced Mtb and nuclear/cytosolic proteins, which is internally consistent and strengthens the authors' conclusions that the inhibitor worked, but did not affect the expression of the two Mtb peptides quantified.\n\n6. It is unclear why the authors think that Rv1211 and Rv3196A are candidates for proteins that facilitate protein transport across the phagosomal membrane. This seems to be speculation and completely unsupported. (lines 312)\n\n7. There are a few typos in the figure legends (sometimes panels are bolded, and sometimes they are not), and sometimes the order of the figure doesn't align with the figure legends.\n\n8. The manuscript is lacking many of the key citations required to put this work into context. To strengthen this study, the authors should review, cite and discuss their work in the context of the following citations, to provide a clear understanding of what this study adds, and how this study moves the field forward.\n\nSome of the references for the Type VII systems need to be altered. None of the references are the first report of the secretion systems. For ESX-1 please cite PMID: 14557536, for Esx-5 please cite PMID: 17076665, and for ESX-3 please cite PMID: 19846780. (lines 92-96)\n\nThe references for cytoplasmic access need revision. Lines 140-121; Please cite PMID: 17604718, for cytoplasmic access; PMID: 22319448, as well as Watson 2012 for ESX-1 dependency.\n\nThe authors need to consider the following references regarding ESX-1 and MHC presentation: PMID: 22022257, which suggests that access to the cytoplasm is required for MHC type 1 presentation in M. tuberculosis; PMID: 18591224, which shows that ESX-1 function is required for priming CD8 T cells, and presenting EsxB peptides, also found here. PMID: 19360129, defining the pathway used by MHC during M. tb infection for phagosomal antigens, PMID: 22901810, showed ESX-1 dependent localization of p62; It is already known that MTb localizes with markers of phagosomal membrane damage in an ESX-1 dependent manner.\n\nThe authors should consider these references demonstrating that BCG lacks ESX-1 activity (lines 288-290) References demonstrating BCG is attenuated because it lacks ESX-1: PMID: 10320585, BCG is missing RD1, PMID: 12410828 RD1 contributes to BCG attenuation, PMID: 12508154 deletion of RD1 from TB leads to attenuation, PMID: 12692540 restoring ESAT-6 secretion to BCG.\n\nThe authors should review these references (lines 300-302) first suggesting the model that the ESX-1 function precedes that of the other ESX systems (2-5). PMID: 33653883 first suggested that ESX-1 functions to lyse the phagosome, and that ESX-1 activity is followed by the activity of the other ESX secretion systems (see the final model in this paper). ESX-3 was first shown to function downstream of ESX-1 in this paper (PMID: 30482832).\n\nThe original papers reporting these proteins are secreted/ localized should be cited. PMID: 19682254 EspC was first reported as an ESX substrate here. For the list of proteins in 318-320. Please address the rest.\n\nIn lines 308-315, did the authors check if other papers that have defined the ESX-1 secretome have seen these proteins? Check PMID: 35671426 for the M. marinum orthologs.\n\nReviewer #1 (Recommendations for the authors):\n\nThe inclusion of T-cell activation experiments to validate the immunogenicity of some of the peptides would enhance the manuscript.\n\nReviewer #2 (Recommendations for the authors):\n\nThis is a very nice study. Overall, it is clever and well-presented and adds to the knowledge in the field. The approaches are rigorous, and the identification of mycobacterial peptides in the background of the host peptides is impressive. The conclusions are supported by the data presented. The figures and description of the methods are clear and transparent and will allow the field to reproduce this work. The authors could improve this manuscript by considering the points below. A major issue with the manuscript is that the references need to be reconsidered and improved. The study needs to be put into a clear context of the MHC, and ESX fields. We hope that this list of suggested references below will provide the authors with a means to do so.\n\nThe manuscript is lacking many of the key citations required to put this work into context. To strengthen this study, the authors should review, cite and discuss their work in the context of the following citations, to provide a clear understanding of what this study adds, and how this study moves the field forward.\n\nSome of the references for the Type VII systems need to be altered. None of the references are the first report of the secretion systems. For ESX-1 please cite PMID: 14557536, for Esx-5 please cite PMID: 17076665, and for ESX-3 please cite PMID: 19846780. (lines 92-96)\n\nThe references for cytoplasmic access need revision. Lines 140-121; Please cite PMID: 17604718, for cytoplasmic access; PMID: 22319448, as well as Watson 2012 for ESX-1 dependency.\n\nThe authors need to consider the following references regarding ESX-1 and MHC presentation: PMID: 22022257, which suggests that access to the cytoplasm is required for MHC type 1 presentation in M. tuberculosis; PMID: 18591224, which shows that ESX-1 function is required for priming CD8 T cells, and presenting EsxB peptides, also found here. PMID: 19360129, defining the pathway used by MHC during M. tb infection for phagosomal antigens, PMID: 22901810, showed ESX-1 dependent localization of p62; It is already known that MTb localizes with markers of phagosomal membrane damage in an ESX-1 dependent manner.\n\nThe authors should consider these references demonstrating that BCG lacks ESX-1 activity (lines 288-290) References demonstrating BCG is attenuated because it lacks ESX-1: PMID: 10320585, BCG is missing RD1, PMID: 12410828 RD1 contributes to BCG attenuation, PMID: 12508154 deletion of RD1 from TB leads to attenuation, PMID: 12692540 restoring ESAT-6 secretion to BCG.\n\nThe authors should review these references (lines 300-302) first suggesting the model that the ESX-1 function precedes that of the other ESX systems (2-5). PMID: 33653883 first suggested that ESX-1 functions to lyse the phagosome, and that ESX-1 activity is followed by the activity of the other ESX secretion systems (see the final model in this paper). ESX-3 was first shown to function downstream of ESX-1 in this paper (PMID: 30482832)\n\nThe original papers reporting these proteins are secreted/ localized should be cited. PMID: 19682254 EspC was first reported as an ESX substrate here. For the list of proteins in 318-320. Please address the rest.\n\nIn lines 308-315, did the authors check if other papers that have defined the ESX-1 secretome have seen these proteins? Check PMID: 35671426 for the M. marinum orthologs.\n\nIt is unclear why the authors think that Rv1211 and Rv3196A are candidates for proteins that facilitate protein transport across the phagosomal membrane. This seems to be speculation and completely unsupported. (lines 312)\n\nThere are a few limitations of this study that should be addressed in the discussion. First, please address in the text why H37Rv was chosen- this is a virulent lab strain but perhaps not the best choice, as it is known to be less virulent than other strains like Erdman, CDC1551 or the Beijing strains. This is not an issue for this reviewer but I suspect adding something about this choice and why it might be a limitation of the study would be worth the author's time. Second, the suggestion that ESX-1 is required for the presentation of the antigens from other ESX systems is based on the quantification of two peptides (one from ESX-1 and one from Esx3/5). This may be a limitation of the current study. If it is not, please discuss this in the discussion.\n\nThere are a few typos in the figure legends (sometimes panels are bolded, and sometimes they are not), and sometimes the order of the figure doesn't align with the figure legends.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 Could the authors speculate why certain antigens (e.g. Rv0288, Rv1886c) that were previously found to be HLA*A2 restricted and elicit abundant Class-I restricted CD8 T cell responses in humans (Axelsson-Robertson, Int J Inf Dis, 2015), were not found to be presented by infected macrophages in this study? It would be useful to cite and discuss this point.\n\n\u2013 Although the authors used macrophages from donors expressing HLA-B*57:01 and HLA-A*02:01, other HLA alleles are expressed on these macrophages. Furthermore, other Mtb peptides were also likely to be presented (such as the PE-PPE proteins, those associated with the mycobacterial outer membrane, or sec substrate TB8.4 mentioned in lines 318-320). Were other peptides found in these quantitative MS experiments? How did their repertoire compare to those found in the initial experiments (even though the focus was on quantifying the 2 peptides mentioned)? If data are available they would strengthen the results, but at least could be discussed.\n\nRelated: Were peptides other than the 2 that were quantified affected by the Esx1 deletion mutant? (ie non-ESX proteins)\n\n\u2013 Bafilomycin and E64D appear to increase the relative abundance of both the Mtb peptides and other self-peptides. Does the use of these agents also correlate with a shift in MHC-I vs. MHC-II expression on the cell surface? Perhaps related to the mass effect if the Class-II pathway is stalled due to impaired phagolysosomal fusion.\n\n\u2013 If the peptides presented on MHC-I are not affected by proteasome or cathepsin B inhibition, it would be helpful if the authors could discuss in the Discussion why that is the case and which processes are likely responsible for antigen processing in this case (in addition to what is written in lines 252-255).\n",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a53dd592-d321-4227-8f38-350bc3d2d85d",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C1",
+      "claim": "Tuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb), is a leading cause of infectious disease mortality worldwide, causing approximately 10 million new cases of active TB disease and 1.5 million deaths per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb), is a leading cause of infectious disease mortality worldwide, causing approximately 10 million new cases of active TB disease and 1.5 million deaths per year (World Health Organization 2022, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to World Health Organization reports from 2021 and 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "f10b815e-cec4-481a-beec-728edaafacf0",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C2",
+      "claim": "BCG protects children against disseminated Mtb infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the only clinically licensed vaccine to prevent TB is Bacille Calmette-Guerin (BCG), which protects children against disseminated Mtb infection (Roy et al., 2014), but provides limited and highly variable protection against pulmonary TB in adults (Fine, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Roy et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "73ac9881-ab96-4825-95ae-e601404b788a",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C3",
+      "claim": "BCG provides limited and highly variable protection against pulmonary TB in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the only clinically licensed vaccine to prevent TB is Bacille Calmette-Guerin (BCG), which protects children against disseminated Mtb infection (Roy et al., 2014), but provides limited and highly variable protection against pulmonary TB in adults (Fine, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fine, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "e92da31e-aafa-40ae-a63c-0fcd8a399fbe",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C4",
+      "claim": "CD8+ T cells can contribute to immune control of Mtb infection in mouse and non-human primate models of TB.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple convergent lines of evidence from experiments in mouse and non-human primate models of TB show that CD8+ T cells can contribute to immune control of Mtb infection (Chen et al., 2009; Flynn et al., 1992; Woodworth et al., 2008b), but the antigenic targets of protective CD8+ T cell immunity to Mtb infection have not been conclusively defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2009; Flynn et al., 1992; Woodworth et al., 2008b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "2bab07a6-4c54-4fab-bacf-e07eb0c0c1db",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C5",
+      "claim": "CD8+ T cells specific for some immunodominant Mtb antigens poorly recognize Mtb-infected macrophages in murine models.",
+      "claim_type": "EXPLICIT",
+      "source": "In murine models, CD8+ T cells specific for some immunodominant Mtb antigens poorly recognize Mtb-infected macrophages (Yang et al., 2018), implying that infected macrophages may not present all Mtb antigens that elicit cytokine-producing CD8+ T cell responses (Kamath et al., 2004; Lewinsohn et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "dd048ee9-5240-45dc-b19a-b595b6698e6b",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C6",
+      "claim": "A high proportion of virulent Mtb remains intact and viable in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas some bacterial species are lysed following phagocytosis and expose their internal cell contents to antigen processing pathways (Shen et al., 1998), a high proportion of virulent Mtb remains intact and viable in macrophages (Armstrong and Hart, 1975; Lee et al., 2008; Lewis et al., 2003), leading us to hypothesize that only a subset of Mtb proteins may be accessible for processing and presentation on MHC-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Armstrong and Hart, 1975; Lee et al., 2008; Lewis et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "09294520-330c-48b5-9b5a-d25779fe36ef",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C7",
+      "claim": "Primary human monocyte-derived macrophages were infected with Mtb H37Rv and MHC-I was isolated by immunoprecipitation 72 hours post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify Mtb antigens presented on MHC-I, we infected primary human monocyte-derived macrophages with Mtb H37Rv, isolated MHC-I by immunoprecipitation 72 hours post-infection, purified the associated peptides, and identified peptides by liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental procedure performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "2eb29515-8a8a-40f9-8eaa-7e82695c1b60",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C8",
+      "claim": "Thousands of peptides were identified for each primary cell donor, with a length distribution typical of MHC-I peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified thousands of peptides for each primary cell donor, with a length distribution typical of MHC-I peptides (Figure 1\u2014figure supplement 1A) and retention times that correlated well with hydrophobicity (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "4e4e8100-ae56-442f-a81a-e1cf32f7a335",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C9",
+      "claim": "Unsupervised clustering of identified peptides revealed groups corresponding to the known peptide sequence binding motifs of class I HLA alleles expressed by each donor.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised clustering of identified peptides using GibbsCluster 2.0 (Andreatta et al., 2017) revealed groups corresponding to the known peptide sequence binding motifs of class I HLA alleles expressed by each donor (Figure 1\u2014figure supplement 2), confirming the specificity of our pulldowns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "d40d174b-8405-4f1c-b30a-96fc97d5711d",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C10",
+      "claim": "Mtb peptides made up less than 0.1% of MHC-I peptides identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtb peptides made up less than 0.1% of MHC-I peptides identified, and this proportion was not discernibly increased by pre-treating macrophages with IFN-\u03b3 or treating with cycloheximide to inhibit host protein synthesis (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "1467d28d-68f3-4841-84f4-b417346c3416",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C11",
+      "claim": "77.85% of MASCOT identifications of putative Mtb peptides were rejected after manual data inspection.",
+      "claim_type": "EXPLICIT",
+      "source": "77.85% of MASCOT identifications of putative Mtb peptides were rejected after manual data inspection, and of the remaining candidates a further 51.51% were rejected following analysis by SureQuant (Table 2), highlighting the need for rigorous validation using best practices (Fritsche et al., 2021) when identifying pathogen-derived peptides among an MHC repertoire dominated by host-derived peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "4a79eccf-5aa5-4c48-8a53-6862cf4deec0",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C12",
+      "claim": "Of the 16 Mtb-derived MHC-I peptides identified, 13 (81.25%) derived from proteins secreted via type VII secretion systems (T7SS).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 16 Mtb-derived MHC-I peptides we identified, 13 (81.25%) derived from proteins secreted via type VII secretion systems (T7SS) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "460c2524-be3b-41b0-a573-8783fcb3e5ed",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C13",
+      "claim": "T7SS substrates were significantly overrepresented in the MHC-I repertoire relative to the whole Mtb proteome at the peptide level (p<10\u201310).",
+      "claim_type": "EXPLICIT",
+      "source": "T7SS substrates were significantly overrepresented in the MHC-I repertoire relative to the whole Mtb proteome, both at the peptide level (p<10\u201310; binomial test with Bonferroni correction) and at the protein level (p<10\u20137; hypergeometric test with Bonferroni correction; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "d746ecc3-e12c-4ffa-b8c1-66d916c49dc6",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C14",
+      "claim": "T7SS substrates were significantly overrepresented in the MHC-I repertoire relative to the whole Mtb proteome at the protein level (p<10\u20137).",
+      "claim_type": "EXPLICIT",
+      "source": "T7SS substrates were significantly overrepresented in the MHC-I repertoire relative to the whole Mtb proteome, both at the peptide level (p<10\u201310; binomial test with Bonferroni correction) and at the protein level (p<10\u20137; hypergeometric test with Bonferroni correction; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "1dd55fbf-55f5-49fb-ab5d-a777ead3680a",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C15",
+      "claim": "Proteins without identifiable secretion signals were significantly underrepresented among Mtb-derived MHC-I peptides (p<10\u20138).",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins without identifiable secretion signals were significantly underrepresented among Mtb-derived MHC-I peptides (p<10\u20138; binomial test with Bonferroni correction) and source proteins (p<10\u20136; hypergeometric test with Bonferroni correction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "6d3782ba-2839-4d9d-94cd-9dabf2d98c55",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C16",
+      "claim": "In a subset of macrophages at both early and late timepoints, a subset of Mtb co-localized with Galectin-3, a marker of phagosomal membrane permeabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In a subset of macrophages at both early and late timepoints, a subset of Mtb co-localized with Galectin-3, a marker of phagosomal membrane permeabilization (Chauhan et al., 2016; Watson et al., 2012; Figure 2B\u2013C; Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B\u2013C and Figure 2\u2014figure supplement 1A, with citations to Chauhan et al., 2016 and Watson et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "f2359355-7dca-400b-8d86-f95b01ecbe00",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C17",
+      "claim": "A subset of Mtb co-localized with P62, an autophagy adaptor protein that recognizes cytosol-exposed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of Mtb also co-localized with P62, an autophagy adaptor protein that recognizes cytosol-exposed bacteria (Watson et al., 2012; Zheng et al., 2009; Figure 2B\u2013C; Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B\u2013C and Figure 2\u2014figure supplement 1B, with citations to Watson et al., 2012 and Zheng et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "6b998a42-c045-4bbb-bf07-43a944198c58",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C18",
+      "claim": "Mtb-containing phagosomes did not co-localize with MHC-I itself.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of Mtb-containing phagosomes co-localized with the late endosome and lysosome marker LAMP-1 (Figure 2B\u2013C; Figure 2\u2014figure supplement 1C), suggesting access to endolysosomal proteases, but Mtb-containing phagosomes did not co-localize with MHC-I itself (Figure 2B\u2013C; Figure 2\u2014figure supplement 1D), suggesting that Mtb antigens were unlikely to be loaded onto MHC-I in the Mtb-containing phagosome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B\u2013C and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "97741ec9-b12f-4c60-929c-365479abae00",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C19",
+      "claim": "An Mtb strain deficient in the activity of the ESX-1 secretion system (eccCa1:Tn) exhibited reduced co-localization with Galectin-3 and P62.",
+      "claim_type": "EXPLICIT",
+      "source": "An Mtb strain deficient in the activity of the ESX-1 secretion system (eccCa1:Tn) exhibited reduced co-localization with Galectin-3 and P62 (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "85747780-d57b-4dea-a747-f6e5cb17fed9",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C20",
+      "claim": "ESX-1 activity is required for Mtb to damage the phagosome membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with prior studies demonstrating that ESX-1 activity is required for Mtb to damage the phagosome membrane (Augenstreich et al., 2017; Simeone et al., 2012; Watson et al., 2012) and show that this phenomenon occurs in our primary human macrophage infection model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Augenstreich et al., 2017; Simeone et al., 2012; Watson et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "7bd5d977-752c-402e-9fad-c6802cf21907",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C21",
+      "claim": "Macrophages infected with ESX-1-deficient Mtb (eccCa1:Tn) did not present either EsxA28-36 or EsxJKPW24-34 on MHC-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted MS analysis revealed that macrophages infected with ESX-1-deficient Mtb (eccCa1:Tn) did not present either EsxA28-36 or EsxJKPW24-34 on MHC-I (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "f9962b3b-be74-401b-b5c2-7a667c45e827",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C22",
+      "claim": "There was no difference in Mtb outgrowth between macrophages infected with wild-type or ESX-1-deficient Mtb.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed alternative explanations for this difference in presentation of EsxA28-36 and EsxJKPW24-34 and observed no difference in Mtb outgrowth (Figure 3D), the proportion of cells infected (Figure 3\u2014figure supplement 1A\u2013B), or total MHC-I surface expression (Figure 3\u2014figure supplement 1C\u2013D) between macrophages infected with wild-type or ESX-1-deficient Mtb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "42592f76-3cea-4622-8626-0bd395a03250",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C23",
+      "claim": "Addition of exogenous IFN-\u03b2 restored a type I interferon response as measured by production of CXCL10.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of exogenous IFN-\u03b2 restored a type I interferon response as measured by production of CXCL10 (Figure 3E), but did not rescue presentation of EsxA28-36 or EsxJKPW24-34 on MHC-I (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "e66f4e81-e9e4-44cf-a34b-cb89c55af35b",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C24",
+      "claim": "Addition of exogenous IFN-\u03b2 did not rescue presentation of EsxA28-36 or EsxJKPW24-34 on MHC-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of exogenous IFN-\u03b2 restored a type I interferon response as measured by production of CXCL10 (Figure 3E), but did not rescue presentation of EsxA28-36 or EsxJKPW24-34 on MHC-I (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "661a7e9a-d170-467a-a13f-ae736e28f3f4",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C25",
+      "claim": "Presentation of EsxA28-36 or EsxJKPW24-34 on MHC-I is dependent on ESX-1 activity but independent of downstream type I interferon signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that presentation of EsxA28-36 or EsxJKPW24-34 on MHC-I is dependent on ESX-1 activity but independent of downstream type I interferon signaling, consistent with a model in which ESX-1-mediated phagosomal damage enables Mtb antigens to access MHC-I antigen processing pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental results showing ESX-1 dependence and IFN-\u03b2 independence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "33ac9e0f-4d32-4ab0-af43-fd9e26f1e4e9",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C26",
+      "claim": "Treatment with MG-132 inhibited proteasome activity, as measured by accumulation of proteins modified with K48-linked polyubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with MG-132 inhibited proteasome activity, as measured by accumulation of proteins modified with K48-linked polyubiquitin (Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "43063b4e-a6b3-4b1f-8e8c-b95eedee0c4f",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C27",
+      "claim": "Treatment with E64d inhibited cathepsin B activity, as measured by a fluorometric assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with E64d inhibited cathepsin B activity, as measured by a fluorometric assay (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "7386a89d-d15a-4efe-bb4c-d550e54b6d77",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C28",
+      "claim": "Treatment with bafilomycin inhibited lysosomal acidification, as measured by lysotracker staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with bafilomycin inhibited lysosomal acidification, as measured by lysotracker staining (Figure 4\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "c5a05608-4dfd-465b-9ca3-083006192e12",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C29",
+      "claim": "Treatment with MG-132 and E64d each respectively reduced presentation of a subset of self MHC-I peptides but did not reduce presentation of Mtb peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with MG-132 and E64d each respectively reduced presentation of a subset of self MHC-I peptides but did not reduce presentation of Mtb peptides (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "fa8b1d97-033b-406b-bc29-6a03d0fb6b35",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C30",
+      "claim": "Treatment with bafilomycin broadly increased presentation of target MHC-I peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with bafilomycin broadly increased presentation of target MHC-I peptides (Figure 4C). This increase was statistically significant for EsxA28-36 (Figure 4D; p<0.05, one-way ANOVA with Dunnett's multiple comparisons test), though not for EsxJKPW24-34 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "0132c2a6-a047-4b46-b533-3281277cd805",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C31",
+      "claim": "The increase in presentation with bafilomycin treatment was statistically significant for EsxA28-36 (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with bafilomycin broadly increased presentation of target MHC-I peptides (Figure 4C). This increase was statistically significant for EsxA28-36 (Figure 4D; p<0.05, one-way ANOVA with Dunnett's multiple comparisons test), though not for EsxJKPW24-34 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "65f7827a-2037-47b0-a350-255a475b49c5",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C32",
+      "claim": "BCG and Mtb H37Ra are both deficient in ESX-1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that we showed ESX-1 activity contributes to presentation of Mtb antigens in infection with virulent Mtb H37Rv, the fact that BCG and Mtb H37Ra are both deficient in ESX-1 activity (Frigui et al., 2008; Gordon et al., 1999; Guinn et al., 2004; Lewis et al., 2003; Pym et al., 2002) may in part explain this difference in the mycobacterial peptides presented on MHC-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Frigui et al., 2008; Gordon et al., 1999; Guinn et al., 2004; Lewis et al., 2003; Pym et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "e90ded74-00b6-44b5-8aad-cee80a914131",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C33",
+      "claim": "ESX-1 activity is not required for Mtb-infected human monocyte-derived dendritic cells to present an epitope derived from TB8.4 to cognate T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ESX-1 activity is not required for Mtb-infected human monocyte-derived dendritic cells to present an epitope derived from TB8.4 (a Sec pathway substrate) to cognate T cells (Lewinsohn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lewinsohn et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "15518c8f-7aad-4fb2-a71d-6b9c27043754",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C34",
+      "claim": "ESX-1 activity is required for priming of CD8+ T cell responses specific for EsxB in vivo in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While ESX-1 activity is required for priming of CD8+ T cell responses specific for EsxB in vivo in mice, it is dispensable for priming of CD8+ T cell responses specific for antigens exported via other secretion systems (such as TB8.4 and EsxH) (Woodworth et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Woodworth et al., 2008b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "33ae5b2b-6664-49ec-952f-d2c7a7d37e55",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C35",
+      "claim": "ESX-1 activity is dispensable for priming of CD8+ T cell responses specific for antigens exported via other secretion systems (such as TB8.4 and EsxH) in vivo in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While ESX-1 activity is required for priming of CD8+ T cell responses specific for EsxB in vivo in mice, it is dispensable for priming of CD8+ T cell responses specific for antigens exported via other secretion systems (such as TB8.4 and EsxH) (Woodworth et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Woodworth et al., 2008b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "94a06bb5-3bbd-41de-88c8-c9bc539651a3",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C36",
+      "claim": "In axenic culture, secretion of ESX-5 substrates is independent of ESX-1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas in axenic culture, secretion of ESX-5 substrates is independent of ESX-1 function (Champion et al., 2006; Shah and Briken, 2016), the fact that presentation of peptides derived from an ESX-5 substrate on MHC-I requires ESX-1 activity supports the hypothesis that the localization of secreted Mtb proteins within a host cell may depend on the activity of multiple T7SSs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Champion et al., 2006 and Shah and Briken, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "7a7ac871-c98c-44c8-8b2a-5e9f6169a8bd",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C37",
+      "claim": "Presentation of peptides derived from an ESX-5 substrate on MHC-I requires ESX-1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas in axenic culture, secretion of ESX-5 substrates is independent of ESX-1 function (Champion et al., 2006; Shah and Briken, 2016), the fact that presentation of peptides derived from an ESX-5 substrate on MHC-I requires ESX-1 activity supports the hypothesis that the localization of secreted Mtb proteins within a host cell may depend on the activity of multiple T7SSs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental results showing ESX-1 dependence for ESX-5 substrate presentation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "3fd3d350-d5a4-460a-ba48-c7afb96242c2",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C38",
+      "claim": "Mtb antigens must access the cytosol to be presented on MHC-I in human monocyte-derived dendritic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have shown that Mtb antigens must access the cytosol to be presented on MHC-I in human monocyte-derived dendritic cells (Grotzke et al., 2010; Grotzke et al., 2009; Lewinsohn et al., 2006), and our results are consistent with a model in which ESX-1-mediated phagosomal membrane damage enables Mtb antigens to access cytosolic antigen processing and presentation pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Grotzke et al., 2010; Grotzke et al., 2009; Lewinsohn et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "29bf7497-caf2-4fa4-b38d-e5a385b06ea9",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C39",
+      "claim": "In humans with prior exposure to Mtb, EsxA, EsxB, PPE51, and EsxJKPW are sources of immunodominant CD8+ T cell antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work shows that at least some of the MHC-I antigens we identified as potential vaccine targets are immunogenic in humans. Lewinsohn et al., 2017 showed that in humans with prior exposure to Mtb, EsxA, EsxB, PPE51, and EsxJKPW are sources of immunodominant CD8+ T cell antigens, while other antigens identified in our study elicited intermediate responses (PE13, PE35, PPE60, PPE19), and one elicited no detectable response (PPE20).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lewinsohn et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "134fac53-784d-48e8-a324-c02102ea5bc7",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C40",
+      "claim": "CD8+ T cells and CD4+ T cells recognized multiple epitopes derived from EspC.",
+      "claim_type": "EXPLICIT",
+      "source": "In a separate study, CD8+ T cells (as well as CD4+ T cells) recognized multiple epitopes derived from EspC (Millington et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Millington et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "9dc52f18-8e9a-4e16-a8d2-c5a517db4975",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C41",
+      "claim": "EsxJ24-34 has been previously shown to be recognized by human T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual peptides we identified by MS have also been previously shown to be recognized by human T cells, including EsxJ24-34 (Grotzke et al., 2010; Lewinsohn et al., 2013) and EsxA28-36 (Tully et al., 2005), providing a proof of concept that particular epitopes identified by MS can be immunogenic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Grotzke et al., 2010 and Lewinsohn et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "313e2db7-ff71-4620-ad7d-d9c6924e914c",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C42",
+      "claim": "EsxA28-36 has been previously shown to be recognized by human T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual peptides we identified by MS have also been previously shown to be recognized by human T cells, including EsxJ24-34 (Grotzke et al., 2010; Lewinsohn et al., 2013) and EsxA28-36 (Tully et al., 2005), providing a proof of concept that particular epitopes identified by MS can be immunogenic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tully et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "ecbe087c-4b77-4212-8941-ebaae74120fc",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "claim_id": "C43",
+      "claim": "Predicted class I HLA-binding motifs are statistically underrepresented in several Esx-family protein sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Bioinformatic studies have also shown that predicted class I HLA-binding motifs are statistically underrepresented in several Esx-family protein sequences, suggesting that these proteins may be under selective pressure to escape recognition by CD8+ T cells (Maman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Maman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6dac7fd0-af50-4cfb-8562-b131445f466c",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mass spectrometry-based immunopeptidomics identified 16 Mtb-derived MHC-I peptides from primary human macrophages infected with Mtb H37Rv. Of these, 13 (81.25%) derived from type VII secretion system (T7SS) substrates, which were significantly overrepresented relative to the whole Mtb proteome at both peptide (p<10\u207b\u00b9\u2070) and protein (p<10\u207b\u2077) levels. Proteins without identifiable secretion signals were significantly underrepresented (p<10\u207b\u2078).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C15 describe a rigorous immunopeptidomics workflow with appropriate validation (77.85% of initial identifications rejected after manual inspection, 51.51% of remaining rejected by SureQuant). The statistical enrichment analysis is properly conducted with appropriate corrections (Bonferroni), and the overrepresentation of T7SS substrates is highly significant. The quality control measures (peptide length distribution, hydrophobicity correlation, HLA motif clustering) support the technical validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "84215fa8-f7b4-444f-b4db-c7323d8eb623",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Confocal microscopy revealed that Mtb co-localized with markers of phagosomal membrane permeabilization (Galectin-3 and P62) but not with MHC-I itself in primary human macrophages. An ESX-1-deficient Mtb strain (eccCa1:Tn) showed reduced co-localization with Galectin-3 and P62, consistent with prior studies showing ESX-1 is required for phagosome membrane damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 are supported by quantitative microscopy data across multiple donors (n=4 for C16-C18, n=3 for C19) with appropriate statistical testing. The findings are consistent with cited prior work and include proper controls (secondary antibody alone). The automated quantification method is described, reducing potential bias. The lack of MHC-I co-localization with Mtb-containing phagosomes supports the cytosolic processing hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "8382ac3f-4a14-49d2-b22b-46ee0d3fbf3a",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ESX-1 activity is required for presentation of both EsxA28-36 and EsxJKPW24-34 peptides on MHC-I, as demonstrated by targeted MS showing absence of these peptides in macrophages infected with ESX-1-deficient Mtb. This requirement is independent of type I interferon signaling, as exogenous IFN-\u03b2 restored CXCL10 production but did not rescue peptide presentation. Notably, presentation of peptides from ESX-5 substrates (EsxJKPW) also requires ESX-1 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 and C37 are well-supported by quantitative targeted MS data (n=3 donors, all HLA-A*02:01+, HLA-B*57:01+) with appropriate controls ruling out alternative explanations (no differences in bacterial growth, infection rates, or MHC-I surface expression). The IFN-\u03b2 rescue experiment provides strong evidence for ESX-1-dependent, interferon-independent mechanism. The finding that ESX-5 substrate presentation requires ESX-1 is particularly significant and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "b24e7d3e-8d06-4982-8d0d-601bc94cb210",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chemical inhibition studies showed that proteasome inhibition (MG-132), cathepsin inhibition (E64d), and lysosomal acidification inhibition (bafilomycin) did not reduce presentation of Mtb peptides EsxA28-36 and EsxJKPW24-34, though each inhibitor reduced presentation of some self peptides. Bafilomycin treatment increased presentation of EsxA28-36 (p<0.05), though not significantly for EsxJKPW24-34.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 are supported by targeted MS data with proper validation of inhibitor activity (western blots for MG-132, fluorometric assay for E64d, lysotracker staining for bafilomycin). Controls confirmed minimal cytotoxicity, no effect on phagocytosis or bacterial growth, and no significant effect on MHC-I surface levels. The statistical analysis for bafilomycin effect on EsxA28-36 is appropriate (one-way ANOVA with Dunnett's test). The negative results suggest alternative or redundant processing pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "4a15af40-20cd-4e50-a99d-960751525d62",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Background claims establishing TB disease burden and BCG vaccine limitations are cited from WHO reports and prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are standard background information appropriately cited to authoritative sources (WHO reports, peer-reviewed literature). These establish the rationale for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "793dd468-5ba2-4aec-a48e-f2ed71dfa0b1",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prior literature establishes that CD8+ T cells contribute to Mtb control in animal models, that some immunodominant antigens are poorly recognized on infected macrophages, and that virulent Mtb remains intact in macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 accurately cite prior work to establish the scientific rationale. These are literature-based claims that provide context but are not experimental findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "2f9b3e3d-af02-496a-a13e-55330a2bacd0",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Discussion claims cite prior literature showing BCG and H37Ra are ESX-1 deficient, that ESX-1 requirements vary by antigen and cell type, that ESX-5 secretion is ESX-1-independent in culture, and that cytosolic access is required for MHC-I presentation in dendritic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 and C38 appropriately cite prior literature to contextualize the current findings. These are accurate representations of published work used to interpret the study's results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    },
+    {
+      "id": "e8db6cdf-3c80-4e00-8324-f5dc10326952",
+      "content_id": "dd591aa5-ae00-4588-880d-87eeefaa4ce2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior studies demonstrate that several identified antigens (EsxA, EsxB, PPE51, EsxJKPW, EspC) are immunogenic in humans, and that specific peptides (EsxJ24-34, EsxA28-36) are recognized by human T cells. Bioinformatic studies show HLA-binding motifs are underrepresented in Esx-family proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 accurately cite prior immunogenicity studies to validate the potential vaccine relevance of identified antigens. These literature-based claims support the translational significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:24:24.502932Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "09294520-330c-48b5-9b5a-d25779fe36ef",
+      "result_id": "6dac7fd0-af50-4cfb-8562-b131445f466c"
+    },
+    {
+      "claim_id": "2eb29515-8a8a-40f9-8eaa-7e82695c1b60",
+      "result_id": "6dac7fd0-af50-4cfb-8562-b131445f466c"
+    },
+    {
+      "claim_id": "4e4e8100-ae56-442f-a81a-e1cf32f7a335",
+      "result_id": "6dac7fd0-af50-4cfb-8562-b131445f466c"
+    },
+    {
+      "claim_id": "d40d174b-8405-4f1c-b30a-96fc97d5711d",
+      "result_id": "6dac7fd0-af50-4cfb-8562-b131445f466c"
+    },
+    {
+      "claim_id": "1467d28d-68f3-4841-84f4-b417346c3416",
+      "result_id": "6dac7fd0-af50-4cfb-8562-b131445f466c"
+    },
+    {
+      "claim_id": "4a79eccf-5aa5-4c48-8a53-6862cf4deec0",
+      "result_id": "6dac7fd0-af50-4cfb-8562-b131445f466c"
+    },
+    {
+      "claim_id": "460c2524-be3b-41b0-a573-8783fcb3e5ed",
+      "result_id": "6dac7fd0-af50-4cfb-8562-b131445f466c"
+    },
+    {
+      "claim_id": "d746ecc3-e12c-4ffa-b8c1-66d916c49dc6",
+      "result_id": "6dac7fd0-af50-4cfb-8562-b131445f466c"
+    },
+    {
+      "claim_id": "1dd55fbf-55f5-49fb-ab5d-a777ead3680a",
+      "result_id": "6dac7fd0-af50-4cfb-8562-b131445f466c"
+    },
+    {
+      "claim_id": "6d3782ba-2839-4d9d-94cd-9dabf2d98c55",
+      "result_id": "84215fa8-f7b4-444f-b4db-c7323d8eb623"
+    },
+    {
+      "claim_id": "f2359355-7dca-400b-8d86-f95b01ecbe00",
+      "result_id": "84215fa8-f7b4-444f-b4db-c7323d8eb623"
+    },
+    {
+      "claim_id": "6b998a42-c045-4bbb-bf07-43a944198c58",
+      "result_id": "84215fa8-f7b4-444f-b4db-c7323d8eb623"
+    },
+    {
+      "claim_id": "97741ec9-b12f-4c60-929c-365479abae00",
+      "result_id": "84215fa8-f7b4-444f-b4db-c7323d8eb623"
+    },
+    {
+      "claim_id": "85747780-d57b-4dea-a747-f6e5cb17fed9",
+      "result_id": "84215fa8-f7b4-444f-b4db-c7323d8eb623"
+    },
+    {
+      "claim_id": "7bd5d977-752c-402e-9fad-c6802cf21907",
+      "result_id": "8382ac3f-4a14-49d2-b22b-46ee0d3fbf3a"
+    },
+    {
+      "claim_id": "f9962b3b-be74-401b-b5c2-7a667c45e827",
+      "result_id": "8382ac3f-4a14-49d2-b22b-46ee0d3fbf3a"
+    },
+    {
+      "claim_id": "42592f76-3cea-4622-8626-0bd395a03250",
+      "result_id": "8382ac3f-4a14-49d2-b22b-46ee0d3fbf3a"
+    },
+    {
+      "claim_id": "e66f4e81-e9e4-44cf-a34b-cb89c55af35b",
+      "result_id": "8382ac3f-4a14-49d2-b22b-46ee0d3fbf3a"
+    },
+    {
+      "claim_id": "661a7e9a-d170-467a-a13f-ae736e28f3f4",
+      "result_id": "8382ac3f-4a14-49d2-b22b-46ee0d3fbf3a"
+    },
+    {
+      "claim_id": "7a7ac871-c98c-44c8-8b2a-5e9f6169a8bd",
+      "result_id": "8382ac3f-4a14-49d2-b22b-46ee0d3fbf3a"
+    },
+    {
+      "claim_id": "33ac9e0f-4d32-4ab0-af43-fd9e26f1e4e9",
+      "result_id": "b24e7d3e-8d06-4982-8d0d-601bc94cb210"
+    },
+    {
+      "claim_id": "43063b4e-a6b3-4b1f-8e8c-b95eedee0c4f",
+      "result_id": "b24e7d3e-8d06-4982-8d0d-601bc94cb210"
+    },
+    {
+      "claim_id": "7386a89d-d15a-4efe-bb4c-d550e54b6d77",
+      "result_id": "b24e7d3e-8d06-4982-8d0d-601bc94cb210"
+    },
+    {
+      "claim_id": "c5a05608-4dfd-465b-9ca3-083006192e12",
+      "result_id": "b24e7d3e-8d06-4982-8d0d-601bc94cb210"
+    },
+    {
+      "claim_id": "fa8b1d97-033b-406b-bc29-6a03d0fb6b35",
+      "result_id": "b24e7d3e-8d06-4982-8d0d-601bc94cb210"
+    },
+    {
+      "claim_id": "0132c2a6-a047-4b46-b533-3281277cd805",
+      "result_id": "b24e7d3e-8d06-4982-8d0d-601bc94cb210"
+    },
+    {
+      "claim_id": "a53dd592-d321-4227-8f38-350bc3d2d85d",
+      "result_id": "4a15af40-20cd-4e50-a99d-960751525d62"
+    },
+    {
+      "claim_id": "f10b815e-cec4-481a-beec-728edaafacf0",
+      "result_id": "4a15af40-20cd-4e50-a99d-960751525d62"
+    },
+    {
+      "claim_id": "73ac9881-ab96-4825-95ae-e601404b788a",
+      "result_id": "4a15af40-20cd-4e50-a99d-960751525d62"
+    },
+    {
+      "claim_id": "e92da31e-aafa-40ae-a63c-0fcd8a399fbe",
+      "result_id": "793dd468-5ba2-4aec-a48e-f2ed71dfa0b1"
+    },
+    {
+      "claim_id": "2bab07a6-4c54-4fab-bacf-e07eb0c0c1db",
+      "result_id": "793dd468-5ba2-4aec-a48e-f2ed71dfa0b1"
+    },
+    {
+      "claim_id": "dd048ee9-5240-45dc-b19a-b595b6698e6b",
+      "result_id": "793dd468-5ba2-4aec-a48e-f2ed71dfa0b1"
+    },
+    {
+      "claim_id": "65f7827a-2037-47b0-a350-255a475b49c5",
+      "result_id": "2f9b3e3d-af02-496a-a13e-55330a2bacd0"
+    },
+    {
+      "claim_id": "e90ded74-00b6-44b5-8aad-cee80a914131",
+      "result_id": "2f9b3e3d-af02-496a-a13e-55330a2bacd0"
+    },
+    {
+      "claim_id": "15518c8f-7aad-4fb2-a71d-6b9c27043754",
+      "result_id": "2f9b3e3d-af02-496a-a13e-55330a2bacd0"
+    },
+    {
+      "claim_id": "33ae5b2b-6664-49ec-952f-d2c7a7d37e55",
+      "result_id": "2f9b3e3d-af02-496a-a13e-55330a2bacd0"
+    },
+    {
+      "claim_id": "94a06bb5-3bbd-41de-88c8-c9bc539651a3",
+      "result_id": "2f9b3e3d-af02-496a-a13e-55330a2bacd0"
+    },
+    {
+      "claim_id": "3fd3d350-d5a4-460a-ba48-c7afb96242c2",
+      "result_id": "2f9b3e3d-af02-496a-a13e-55330a2bacd0"
+    },
+    {
+      "claim_id": "29bf7497-caf2-4fa4-b38d-e5a385b06ea9",
+      "result_id": "e8db6cdf-3c80-4e00-8324-f5dc10326952"
+    },
+    {
+      "claim_id": "134fac53-784d-48e8-a324-c02102ea5bc7",
+      "result_id": "e8db6cdf-3c80-4e00-8324-f5dc10326952"
+    },
+    {
+      "claim_id": "9dc52f18-8e9a-4e16-a8d2-c5a517db4975",
+      "result_id": "e8db6cdf-3c80-4e00-8324-f5dc10326952"
+    },
+    {
+      "claim_id": "313e2db7-ff71-4620-ad7d-d9c6924e914c",
+      "result_id": "e8db6cdf-3c80-4e00-8324-f5dc10326952"
+    },
+    {
+      "claim_id": "ecbe087c-4b77-4212-8941-ebaae74120fc",
+      "result_id": "e8db6cdf-3c80-4e00-8324-f5dc10326952"
+    }
+  ],
+  "comparisons": []
+}

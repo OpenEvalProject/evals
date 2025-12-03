@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C72",
+      "C90"
+    ],
+    "result": "Most (~75%) Purkinje cells in the anterior vermis dynamically encode an intermediate representation of self-motion between head and body motion, with considerable heterogeneity in their response dynamics to both vestibular and neck proprioceptive stimulation. These bimodal neurons respond to both sensory modalities, while a minority (~25%) of unimodal neurons respond only to vestibular stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C37, and C72 consistently report that ~75% of Purkinje cells are bimodal and encode intermediate representations. Claims C3, C30, C39, C40, and C90 document the heterogeneity in response dynamics with experimental data from Figures 1 and 2. The quantitative findings (C36, C37, C38) are based on least-squares regression analysis with appropriate statistical methods. The characterization of bimodal (C24) versus unimodal (C25, C38) neurons is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Bimodal Purkinje cells display vestibular tuning as a function of head-on-body position, with narrower tuning widths and stronger tuning compared to unimodal neurons, though this tuning is weaker than that observed in downstream rostral fastigial nucleus neurons. This modulation of vestibular information by postural signals becomes more marked in the progression from cerebellar cortex to deep cerebellar nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54, and C81 report the head-position-dependent tuning supported by experimental data in Figure 6. Quantitative comparisons (C56, C59, C60) show statistically significant differences between bimodal and unimodal neurons (p < 0.001) and between Purkinje cells and rFN neurons. Claim C55 confirms unimodal neurons lack this tuning. The progression of tuning strength (C82, C83) is supported by comparisons with prior rFN data (Brooks and Cullen, 2009). Claim C84 notes the nonlinear interactions are specific to bimodal cells, consistent with the gain-field model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The linear combination of a Purkinje cell's vestibular and neck proprioceptive sensitivities measured in isolation well predicts its response during combined stimulation. Bimodal neurons show antagonistic vestibular and proprioceptive sensitivities in the preferred direction (67%), resulting in reduced sensitivity during combined stimulation, while unimodal neurons maintain constant sensitivity across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C48, C49, and C50 report strong statistical support for the linear summation model (R\u00b2 = 0.77 for sensitivity, R\u00b2 = 0.75 for phase, p < 0.001, slopes not different from 1). Claims C43, C77, and C78 document the antagonistic relationship and variability in response signs. Claims C45, C46, and C47 provide statistical comparisons showing unimodal cells maintain constant sensitivity (p > 0.22) while bimodal cells show reduced sensitivity (p < 0.027) during combined stimulation. The linear summation model is validated across the population as shown in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C27",
+      "C28",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C98",
+      "C102"
+    ],
+    "result": "A simple linear combination model combining responses of approximately 40-50 Purkinje cells can explain the more homogeneous responses of target neurons in the rostral fastigial nucleus across all self-motion conditions. This population size matches anatomical estimates of Purkinje cell to deep cerebellar nucleus neuron projection ratios, supporting a sequential transformation from head-centered to body-centered reference frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C27, C65, and C66 report the population modeling results showing ~40-50 Purkinje cells are required, with confidence intervals overlapping with rFN neuron responses (Figure 7C). Claim C69 shows this estimate is robust to inclusion of simulated mossy fiber inputs (~50 vs 40). Claims C67 and C68 demonstrate the model does not preferentially weight specific Purkinje cell types. Critically, claims C70 and C98 note this estimate matches independent anatomical data (Person and Raman, 2012; Palkovits et al., 1977), providing strong convergent evidence. Claim C102 confirms the linear summation approach is sufficient despite potential nonlinear effects (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C62",
+      "C63",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C97"
+    ],
+    "result": "Individual Purkinje cells generally encode intermediate representations of self-motion rather than unambiguous head or body motion (only 26% head-encoding, 2% body-encoding), contrasting strikingly with their target neurons in the rostral fastigial nucleus where the majority encode either head (34%) or body (26%) motion unambiguously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C62 report the quantitative distribution of encoding types in Purkinje cells based on coding index analysis (Figure 5). Claim C52 provides the contrasting distribution for rFN neurons from prior work (Brooks and Cullen, 2009). Claims C73-C76 characterize the two types of rFN neurons from prior studies, establishing the comparison baseline. Claims C80 and C97 explicitly state the contrast between Purkinje cells and rFN neurons. The coding index methodology is described in the methods and appears appropriate for quantifying the degree of head versus body encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C29",
+      "C34",
+      "C35",
+      "C112",
+      "C113"
+    ],
+    "result": "All 73 Purkinje cells recorded were responsive to vestibular stimulation and insensitive to eye movements, located in lobules II-V of the anterior vermis approximately 0-2 mm from the midline. Vestibular sensitivities of bimodal and unimodal Purkinje cells were comparable (p = 0.17), with preferred directions being either ipsilateral (Type I, n=32) or contralateral (Type II, n=41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C112 describe the basic characterization of the neuronal population. Claim C113 provides histological confirmation of recording locations. Claims C34 and C35 describe the classification scheme into Type I and II based on preferred direction. Claim C42 provides statistical comparison showing no difference in vestibular sensitivity between bimodal and unimodal cells (p = 0.17). These are straightforward descriptive findings supported by the experimental methods and data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The heterogeneity in Purkinje cell response dynamics contrasts with the more stereotyped responses of vestibular-only neurons in the rostral fastigial nucleus and vestibular nuclei. This heterogeneity is consistent with theoretical models (Marr, Albus) proposing that divergent mossy fiber projections onto granule cells expand neural dimensionality, with >100,000 granule cells projecting to each Purkinje cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 provides the comparison with rFN and vestibular nucleus neurons from prior studies (multiple citations). Claims C91-C92 note the contrast in response dynamics between inputs and Purkinje cells. Claims C93-C96 cite the theoretical framework (Marr, 1969; Albus, 1971) and recent anatomical/physiological evidence (Chabrol et al., 2015; Knogler et al., 2017; Lanore et al., 2021; Fujishima et al., 2018) supporting the dimensionality expansion hypothesis. This provides a theoretical context for interpreting the observed heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The findings in alert rhesus monkeys contrast with prior studies in anesthetized decerebrate cats (Pompeiano, Manzoni, and colleagues) that suggested complete transformation to body-centered reference frame at the Purkinje cell level. There are significant species differences in vestibular-proprioceptive integration, with rhesus monkeys showing integration primarily in deep cerebellar nuclei rather than vestibular nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C86 explicitly compare the current findings with prior cat studies (Denoth et al., 1979; Manzoni et al., 1998, 2004), noting the contrast. Claim C87 acknowledges species differences supported by a review (Cullen, 2019). Claims C88 and C89 document specific differences between species in vestibular nuclei processing, with appropriate citations. The authors appropriately note potential explanations including anesthesia/decerebration effects and genuine species differences. This is a valid discussion of how the findings relate to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study focused on passive sensory responses of Purkinje cells, and the modeling was based on averaged responses. Prior studies during voluntary movements (saccades, wrist control) similarly found Purkinje cells more heterogeneous than deep cerebellar nucleus neurons, with comparable population sizes (~40-50 cells) required to explain target neuron responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C103 appropriately describe the scope and limitations of the study. Claims C105 and C106 cite relevant prior work (Thier et al., 2000; Tomatsu et al., 2016; Tanaka et al., 2019) showing similar findings in different contexts. Claim C101 acknowledges potential nonlinear effects from synchrony (Person and Raman, 2012; Sarnaik and Raman, 2018; Wu and Raman, 2017) but notes the linear model was sufficient. Claim C107 offers speculation about functional significance supported by a review citation (Sohn et al., 2021). These claims appropriately contextualize the findings and acknowledge limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C71"
+    ],
+    "result": "The anterior vermis of the cerebellum plays a key role in transforming vestibular information from a head-centered to body-centered reference frame for postural control and self-motion perception. This transformation requires integration of vestibular and neck proprioceptive signals, with prior evidence from clinical studies, lesion studies, and neuronal recordings in cats supporting this role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the background and motivation for the study, citing extensive prior work including clinical studies (C8, C11), anatomical studies (C13, C14, C19), lesion studies (C16, C20), and prior neurophysiology (C21). The claims are well-supported by appropriate citations and represent established knowledge in the field. Claim C22 identifies the gap in knowledge that the current study addresses. This background is necessary context but not a novel finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "All experimental protocols were approved by Johns Hopkins University Animal Care and Use Committee and conducted in two male rhesus macaque monkeys in compliance with NIH guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110 and C111 provide standard ethical compliance and subject information. These are straightforward methodological details that are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The findings reveal a striking transformation from heterogeneous response dynamics of cerebellar Purkinje cells to more stereotyped response dynamics of neurons in the deep cerebellar nucleus, providing new insights into neural computations ensuring accurate postural control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108 and C109 are summary statements of the study's main findings and significance. These are supported by the collective evidence from the experimental results (claims in other groups). These represent appropriate concluding statements rather than independent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Only a small portion (~10%) of Purkinje cells were insensitive to vestibular stimulation but responded to neck proprioceptive stimulation, consistent with prior studies in anesthetized cats (12%, Manzoni et al., 1998).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 reports a quantitative finding about a small subset of neurons that were tested but excluded from the main analysis. The finding is consistent with prior work in cats (Manzoni et al., 1998), providing cross-species validation. This is a minor methodological detail about the screening process.",
+    "result_type": "MINOR"
+  }
+]

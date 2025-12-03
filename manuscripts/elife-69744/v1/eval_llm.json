@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99"
+    ],
+    "result": "S.Tm recipients re-seeding from tissue reservoirs into the gut lumen can acquire plasmids through conjugation with donors, forming transconjugants. This process depends on TTSS-2 but not TTSS-1, and re-seeding is followed by clonal expansion in the gut lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C92-C97, and C99 collectively demonstrate that S.Tm re-seeds from tissue reservoirs, undergoes clonal expansion, and acquires plasmids in the gut lumen. The experimental data (Figure 1B-C, supplementary figures) show transconjugant formation in 8/13 mice, with PCR confirmation (C94) and genetic dependency on TTSS-2 (C95-C96) but not TTSS-1 (C97). Control experiments (C98) confirm donors do not promote re-seeding itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C55",
+      "C131",
+      "C136"
+    ],
+    "result": "Transconjugants formed in the gut lumen can re-invade host tissues, establishing new plasmid reservoirs that act as a record of horizontal gene transfer events. This demonstrates that tissue reservoirs can diversify their plasmid content over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C55, C131, and C136 are supported by experimental data showing transconjugants detected in tissue reservoirs, primarily the mesenteric lymph nodes (Figure 1C, E). The proof-of-concept demonstration (C136) is validated by multiple experiments with both S.Tm and E. coli donors, showing plasmid diversity expansion in tissue reservoirs (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C106",
+      "C113"
+    ],
+    "result": "Recipient migration from tissue reservoirs into the gut lumen is the rate-limiting step for plasmid transfer dynamics. Mathematical modeling fitted to experimental data identifies migration rate (\u03bc = 1.78 CFU/g feces per day) as more limiting than conjugation rate (\u03b3 = 3.16 \u00d7 10\u207b\u00b9\u00b9 events per CFU/g feces per day).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C106, and C113 are supported by population dynamics analysis using mathematical modeling (Figure 2C, Supplementary Information). The ABC fitting approach with six summary statistics (Figure 2\u2014figure supplement 3) identifies recipient migration as rate-limiting. However, the model makes several simplifying assumptions about carrying capacity and conjugation rates that may not fully capture in vivo complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C119",
+      "C120",
+      "C125"
+    ],
+    "result": "ESBL plasmid-encoded beta-lactamases enable donor bacteria to degrade ampicillin in the gut lumen, protecting susceptible S.Tm recipients during antibiotic treatment. This allows recipient survival, plasmid acquisition, and subsequent tissue re-invasion even under beta-lactam therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C119-C120, and C125 are supported by experimental data (Figure 4) showing that E. coli pESBL donors enable S.Tm recipient blooms during ampicillin treatment, with >99% transconjugant formation. Mass spectrometry confirms fecal ampicillin concentrations drop below MIC in the presence of ESBL-producing donors (Figure 4D). The mechanism is validated by controls with non-ESBL donors where recipients cannot survive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C28",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Two types of tissue reservoirs with complementary features promote plasmid spread: large reservoirs from chronic infections facilitate frequent re-seeding and transfer, while smaller persister reservoirs ensure plasmid maintenance during antibiotic therapy. Both mechanisms enable long-term plasmid carriage within hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C28, C131-C135 are supported by experimental comparisons between persistent infection models (Figure 1) and antibiotic persistence models (Figure 1\u2014figure supplement 5). The data show both reservoir types can promote plasmid spread, though with different kinetics. The chronic infection reservoirs show more frequent re-seeding while persister reservoirs survive antibiotic treatment, providing complementary mechanisms for plasmid maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The intraperitoneal infection model allows study of plasmid transfer in both antibiotic persistence and persistent infection contexts by bypassing gut colonization and mimicking systemic tissue reservoirs. However, this model eliminates priority effects from the inoculation route and likely overestimates invasion events from the gut lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C85-C91 describe the experimental design and its limitations. The authors transparently acknowledge the model's caveats (C88-C90), particularly that it eliminates priority effects and may overestimate gut luminal invasion. Despite these limitations, the model provides a sensitive system to test the principle of tissue re-invasion expanding plasmid reservoirs (C91), which is the stated goal of this proof-of-concept study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Tissue reservoirs could enable horizontal gene transfer between bacterial strains that never co-exist within the same host, dramatically expanding the timescale of gene exchange. This mechanism may explain observations of the same plasmid in different enterobacterial strains over time within patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C105 are largely speculative (C100, C101, C102, C105) based on the experimental results and cited clinical observations (C103, C104). While the experimental data support the possibility of this mechanism, the claims about temporal expansion of horizontal gene transfer (C102) and strain succession (C101) require additional longitudinal studies in natural infection settings to be definitively supported. The cited clinical observations are consistent with but do not prove this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The gall bladder is not the primary route of re-seeding in the i.p. infection model. Instead, high S.Tm densities in small intestinal GALT tissues suggest that trafficking of S.Tm-bearing immune cells may contribute to gut luminal re-seeding, supported by the independence of re-seeding from TTSS-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C111 present observations about re-seeding routes but remain speculative. While the data show low gall bladder colonization (C107) and high S.I. GALT densities (C110, Figure 1\u2014figure supplement 6), the mechanistic link to immune cell trafficking is not directly demonstrated. The TTSS-1 independence (C111) is consistent with but does not prove host-mediated trafficking. The authors appropriately note that further work is needed for confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Colonization resistance from a healthy microbiota is critical for limiting plasmid transfer by restricting gut luminal carrying capacity. Modeling and experimental data show transconjugant formation requires carrying capacity of 10\u2077-10\u2078 CFU/g feces. Gut perturbations that reduce colonization resistance promote plasmid transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 are supported by mathematical modeling (Figure 2D) showing carrying capacity dependence and experimental validation (Figure 2\u2014figure supplement 4A-B) demonstrating correlation between donor density and transconjugant formation. The role of colonization resistance is well-established by cited literature (C116-C117), and the authors' data extend this to plasmid transfer dynamics. The conclusion about microbiota importance (C118) is well-supported by both modeling and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C40",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Priority effects may limit reservoir formation in host tissues, particularly in the i.p. infection model where sites normally occupied by orally-invading S.Tm are less colonized. This likely leads to overestimation of invasion events from the gut luminal side in this experimental system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C40, C88-C90 acknowledge priority effects as a limitation. The speculation about priority effects limiting reservoir formation (C12) is supported by cited literature (C40) and the authors' transparent discussion of model limitations (C88-C90). The observation that both types of transconjugants were not found in the same mLN in Figure 3D provides indirect support for priority effects limiting subsequent invasions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study demonstrates three key findings: expansion of plasmid diversity in gut tissue reservoirs, a role for chronically infecting S.Tm subpopulations in plasmid spread, and the effect of gut luminal antibiotic degradation by beta-lactamase expressing donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 summarize the main findings, which are supported by the experimental data throughout the manuscript. Plasmid diversity expansion is shown in Figures 2-3, the role of chronic infection is demonstrated in Figure 1 (compared to persister models in supplementary figures), and antibiotic degradation effects are shown in Figure 4. These represent the core contributions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Beyond beta-lactamases, other mechanisms including efflux pumps and outer membrane vesicles could potentially promote plasmid spread by transiently protecting susceptible recipients. However, the extent to which non-secreted resistance mechanisms can deplete local antibiotic concentrations in vivo remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C130 are largely speculative, citing in vitro studies (C128, C129, C130) but lacking direct in vivo validation. While the cited literature supports these mechanisms in principle, the authors appropriately note that further work is needed to determine their contribution to plasmid spread in vivo. The speculation about antibiotic treatment amplifying re-seeding cycles (C126) is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137"
+    ],
+    "result": "Tissue reservoirs could potentially store other mobile genetic elements beyond plasmids, such as bacteriophages carrying accessory genes, or record mutational events occurring in the gut lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C137 is purely speculative, extending the demonstrated plasmid storage mechanism to other genetic elements without experimental support. While the speculation is reasonable given the demonstrated mechanism for plasmids, it requires experimental validation. This represents a potential future direction rather than a supported finding.",
+    "result_type": "MINOR"
+  }
+]

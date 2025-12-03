@@ -1,0 +1,497 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Lung cancer is the leading cause of cancer-related death with low 5-year survival rates. NSCLC comprises approximately 85% of lung cancers, with lung adenocarcinomas representing almost 40% of NSCLC cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by citations to established epidemiological literature (Sidney et al., 2019; Howlader et al., 2014; Zappa and Mousa, 2016). These are standard background claims about lung cancer epidemiology that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Current immunotherapy approaches for lung cancer include checkpoint inhibitors (PD-1/PD-L1 blockade) as first-line treatment, which have shown remarkable responses in some NSCLC patients without driver mutations, but only 34% of patients remain alive and progression-free after 1 year with combination therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are supported by appropriate citations (Socinski et al., 2018; Huang et al., 2017; Gandhi et al., 2018) describing current standard of care and its limitations. The 34% progression-free survival statistic (C8) is stated as fact without citation, which is a minor weakness, but the overall characterization of immunotherapy efficacy is consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Patients with EGFR or ALK abnormalities do not qualify for PD-1/PD-L1 treatments due to low response rates, and cancer can progress even with tyrosine kinase inhibitors. Poor efficacy may be due to decreased tumor-infiltrating lymphocytes and increased regulatory T cells and immunosuppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by multiple citations (Liu et al., 2020; Xia et al., 2019; Yoneshima et al., 2018; Sidney et al., 2019; Yu et al., 2018; Sugiyama et al., 2020; Velez and Burns, 2019; Streicher et al., 2017; Lin et al., 2019). These claims establish the clinical rationale for developing alternative therapeutic approaches for these patient populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "In the tumor microenvironment, altered metabolism leads to ATP degradation through CD39 and CD73 to produce adenosine, which accumulates and impedes immune function. CD73 is a negative prognostic factor in NSCLC and is highly overexpressed in EGFR-mutated lung adenocarcinoma with less CD4+ T cell infiltration, potentially explaining poor immunotherapy responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 are well-supported by appropriate citations establishing the biological rationale for targeting CD73 (Annibaldi and Widmann, 2010; Wang and Matosevic, 2018; Poth et al., 2013; Leone and Emens, 2018; Antonioli et al., 2016; Chambers et al., 2018; Inoue et al., 2017; Velez and Burns, 2019; Streicher et al., 2017). The inference in C19 is reasonable given the established relationship between CD73 and immunosuppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CAR T-cell therapy has been successful only in hematologic malignancies and can cause cytokine storm and GvHD. CAR NK-cells may offer advantages with minimal side effects and potential for allogeneic 'off-the-shelf' therapy. Using NK-specific signaling domains may enhance NK cell cytotoxicity in the tumor microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by citations (Yilmaz et al., 2020; Siegler et al., 2018; Lupo and Matosevic, 2019) and represent established knowledge about CAR T-cell limitations and CAR NK-cell potential. The inference in C25 about NK-specific domains is reasonable but remains to be experimentally validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CD73 is abundantly expressed in NSCLC, particularly lung adenocarcinoma, where it serves as a prognostic marker associated with poorer overall survival. CD73 is also expressed in SCLC, with no sex-based differences in expression in either NSCLC or SCLC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by TCGA data analysis shown in Figure 1A-B and supplementary figures, along with citation to Inoue et al., 2017. The bioinformatics analysis appears appropriate, though the manuscript does not provide detailed statistical methods for the TCGA analysis. The sex-stratified analysis (C29) is a useful control showing no confounding by sex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "CD73 catalyzes the accumulation of extracellular adenosine from AMP at levels higher than normal tissue, which stimulates A2A adenosine receptors on NK cells to inhibit their proliferative and cytolytic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 represent established mechanistic knowledge about CD73 and adenosine signaling. These are well-accepted facts in the field that provide the biological rationale for the therapeutic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "CD73 expression is high and localized on tumor cells in lung adenocarcinoma KP PDX models. GSEA analysis of TCGA data indicates that adenosine interferes with NK cell activation, migration, and cytotoxic activities in lung adenocarcinoma, with NK cell cytotoxicity inhibition showing the most significant negative correlation with CD73+ lung adenocarcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by IHC data (Figure 1C) and GSEA analysis (Figure 1D and supplements 1-4). The IHC demonstrates CD73 localization in relevant models. The GSEA analysis appropriately uses multiple gene set databases (KEGG, GO, Immunological Signatures) and shows consistent negative enrichment of NK cell-related pathways in CD73-high tumors. Source data tables (S1, S2) are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The CD73.CAR construct consists of a CD73 scFv (derived from MEDI9447) and transmembrane and intracellular domains of FC\u03b3RIIIa (CD16). The CD73 scFv recognizes CD73 to block its enzymatic activity and reduce extracellular adenosine accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe the CAR construct design shown in Figure 1E and detailed in Methods. The construct is well-characterized with appropriate use of a clinically-validated CD73-targeting scFv (MEDI9447) and NK-specific signaling domains (CD16). The design rationale is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Electroporation at 300V, 4ms, 5 pulses with 5-second intervals resulted in the highest gene expression achieved (average 25% of NK cells expressing CD73-CAR) with no decrease in cell viability under optimal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by optimization data in Figure 2A-B and supplementary Figure S6. Multiple electroporation conditions were systematically tested. However, 25% transfection efficiency is relatively modest, and the authors appropriately pursued lentiviral transduction as an alternative. The viability data (C39) is important for demonstrating feasibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Lentiviral transduction using spinoculation with protamine sulfate (10 \u00b5g/mL) and IL-12 (1.5 ng/mL) yielded close to 100% purity after sorting, with no donor-specific viability loss, slightly higher cell growth compared to non-transduced cells, and no alteration in CD56+ NK cell proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by data in Figure 2C-E and supplementary Figure S7. The lentiviral approach clearly outperforms electroporation, achieving near-complete purity after sorting. The lack of toxicity (C42) and maintenance of NK cell phenotype (C44) are important for clinical translation. Growth data (C43) shows slight enhancement, which is favorable. Multiple transduction conditions were tested systematically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "CD73.CAR NK cells engineered via either mRNA or lentivirus exhibited significantly higher killing of A549 cells compared to control NK cells at various effector:target ratios. Lower killing of CD73 knockout A549 cells was observed, demonstrating specificity. Lentiviral transduction induced higher increases in degranulation and cytokine production compared to electroporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C49 are supported by cytotoxicity data in Figure 3A-B. The use of CD73 knockout cells (C46, Figure S8) is an excellent control demonstrating that enhanced killing is CD73-dependent. The comparison between mRNA and lentiviral approaches (C49) is appropriate. However, the manuscript notes donor-dependent variability and different optimal E:T ratios, which limits direct comparisons. Statistical significance is shown but sample sizes per donor are not clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Co-culture with A549 cells stimulated CD73.CAR-NK cells to induce increased degranulation (CD107a expression) and cytokine secretion (IFN-\u03b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by functional data in Figure 3C-D. CD107a and IFN-\u03b3 are appropriate markers of NK cell activation. The data show enhanced function in CAR-NK cells, though the magnitude of enhancement varies between electroporation and lentiviral transduction methods. Statistical significance is indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Hypoxia negatively affects NK cell ability to kill tumor targets and enhances CD73 activity via HIF-1\u03b1, leading to increased adenosine production. However, the anti-CD73 CAR outperformed non-engineered NK cells against A549 cells under chemically-induced hypoxia, especially at higher effector:target ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by hypoxia experiments in Figure 4A-B. The use of cobalt chloride to induce chemical hypoxia is a standard approach. The data demonstrate that CD73.CAR-NK cells can overcome hypoxia-induced NK cell dysfunction, which is clinically relevant since tumors are hypoxic. Citation to Chambers and Matosevic, 2019 supports the HIF-1\u03b1 mechanism (C51). Statistical significance is shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The anti-CD73 antibody performed similarly to engineered CAR-NK cells in vitro except at higher ratios where CAR-NK cells outperformed the antibody, possibly due to decreased antibody potency with higher NK cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is supported by comparison data in Figure 4C, but C54 is speculative reasoning without experimental validation. The proposed mechanism for antibody underperformance at high E:T ratios is plausible but not tested. Additional experiments (e.g., dose-response curves for antibody) would be needed to confirm this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CD73.mRNACAR-NK cells did not preferentially kill normal HUVEC cells, and primary NK cells generally had very low killing against healthy endothelial cells, suggesting CD73 recognition may not be the only mechanism involved in target cell ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by HUVEC killing data in Figure 4D-E. The lack of off-target killing of CD73+ normal cells is important for safety. The inference in C57 is reasonable\u2014the data suggest additional tumor-specific signals are required for NK cell activation beyond CD73 recognition alone. However, HUVEC cells may not fully represent all normal CD73+ tissues, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "CD73.CAR-NK cells decreased adenosine production below baseline levels of A549 cells cultured alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by adenosine measurement data in Figure 4F. This demonstrates functional blockade of CD73 enzymatic activity by the CAR construct. However, the manuscript notes that CD73 enzymatic activity is typically lower in vitro than in vivo, which may limit the magnitude of this effect in culture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In vivo, CD73.CAR-NK cells had a more potent antitumor response than control PBS or non-engineered NK cells, resulting in reduced tumor growth and tumor growth arrest almost 50 days after implantation. Mice treated with CD73.CAR-NK cells survived longer with no significant body weight decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by in vivo data in Figure 5B-D. The xenograft model using luciferase-tagged A549 cells in NRG mice is appropriate. Tumor growth curves show clear separation between CD73.CAR-NK and controls with statistical significance (****p<0.0001). Survival analysis (Figure 5C) shows improved outcomes. Body weight monitoring (C62) demonstrates lack of overt toxicity. Sample size (n=6-7/group initially, n=16 for some analyses) appears adequate. Linear regression was used for tumor growth and Kaplan-Meier for survival, which are appropriate statistical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "More NK cells infiltrated tumors treated with CD73.CAR-engineered variants, and significantly higher levels of granzyme B were detected in these tumors, suggesting infiltrating NK cells were more cytotoxically active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by IHC data in Figure 5F-G. NKp46 staining demonstrates increased NK cell infiltration, and granzyme B staining shows enhanced cytotoxic activity in the tumor microenvironment. The inference about cytotoxic activity (C64) is reasonable based on granzyme B as a marker. Quantification is provided with statistical significance (***p<0.001, ****p<0.0001). Multiple fields were analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "There were no significant differences in activating (DNAM-1, NKp30, NKG2D) or inhibitory (LAG-3, PD-1) receptor expression on engineered versus non-engineered primary NK cells in circulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by phenotyping data in Figure 5H. This is an important finding suggesting that the CAR does not globally alter NK cell receptor expression profiles in circulation. However, this analysis was performed on circulating NK cells, not tumor-infiltrating NK cells, which may have different phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Adenosine accumulation in the lung cancer tumor microenvironment is an immunosuppressive mechanism that promotes tumor growth while preventing immune cell function. CD73 is therefore a targetable receptor with prognostic value. The role of adenosinergic signaling in NK cell immunosuppression is well-established, with adenosine impairing NK cell metabolic, cytotoxic, and antitumor functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 represent established knowledge supported by appropriate citations (Chambers and Matosevic, 2019; Chambers et al., 2018; Wang and Matosevic, 2018; Allard et al., 2017). These claims provide the biological rationale and context for the study in the Discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Utilizing FC\u03b3RIIIa (CD16) taps into NK cells' native ADCC abilities. CD73 is highly expressed in lung adenocarcinoma with increased expression in mutated EGFR+ patients. Lung adenocarcinoma has high levels of adenosine accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by appropriate citations (Yeap et al., 2016; Velez and Burns, 2019; Streicher et al., 2017; Blay et al., 1997; Ohta et al., 2006). These claims justify the design choices and target selection in the Discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Current therapeutic interventions targeting CD73 favor antibody blockade, alone or in combination with A2A/A2B receptor targeting. Small molecule inhibitors risk competing with extracellular AMP. Studies show CARs can mediate stronger NK cell responses than antibody Fc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by appropriate citations (Chambers and Matosevic, 2019; Perrot et al., 2019; Geoghegan et al., 2016; Bowman et al., 2019; Boissel et al., 2013). These claims establish the rationale for using a CAR approach rather than antibodies or small molecules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "NK cells engineered with anti-CD73 CAR effectively killed CD73+ A549 cells with either mRNA or lentiviral transduction, showing both transient and stable expression produce anti-tumor effects. However, effects are limited in vitro because CD73 enzymatic activity is substantially lower in vitro than in vivo. CD73.CAR NK cells remained healthy with rapid proliferation and viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 summarize key findings supported by the experimental data. The acknowledgment of in vitro limitations (C81) is important and honest. The health and proliferation of engineered cells (C82) is supported by viability and growth data in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Cytotoxicity was lower for CD73-antibody treatment compared to CD73.CAR-NK cells, especially at higher effector:target ratios. Antibodies do not home to disease sites as efficiently as CAR-engineered cells and have weaker responses in large tumor burdens. NK cell engagement via antibody therapy relies on ADCC through CD16, which is often impaired in solid tumors. Antibody biodistribution to solid tumors is a small fraction of administered dose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by experimental comparison data (C83, Figure 4C) and citations about antibody limitations (C86: Caruana et al., 2014; Goldenberg, 1988). Claims C84-C85 represent established knowledge about antibody therapy limitations in solid tumors. These claims justify the CAR approach over antibody therapy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Redirecting anti-CD73 NK cells strengthened degranulation and cytokine release (CD107a, IFN\u03b3). Direct CD73 engagement within a CAR construct mobilizes NK cell cytotoxicity and promotes site-specific killing. Prior evidence shows CD73 blockade results in tumor inhibition from NK cell recruitment and increased IFN-\u03b3 and perforin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by functional data (C87, Figure 3C-D) and appropriate citations (Cohnen et al., 2013; Antonioli et al., 2016; Geoghegan et al., 2016; Wang et al., 2018; Young et al., 2016; H\u00e4usler et al., 2014). The inference about site-specific killing (C88) is reasonable based on CAR specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Under hypoxia, cancer cells express HIF-1\u03b1 increasing adenosine accumulation, while NK cells have impaired killing and lowered expression of NKG2D, perforin, and granzyme B. CD73.CAR NK cells rescued hypoxia's detrimental effects by blocking adenosine. Targeting HIF-1\u03b1 directly in NK cells could impair tumor killing and infiltration, so targeting adenosine accumulation directly is preferable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by hypoxia data (C93, Figure 4A-B) and citations (Solocinski et al., 2020; Krzywinska et al., 2017). The reasoning about why targeting adenosine is preferable to targeting HIF-1\u03b1 (C95-C96) is logical and supported by cited evidence. This represents an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "CD73 expression on non-tumor tissues supports physiological processes to prevent overactive immunity. No broad adverse safety effects have been reported in clinical studies with systemically administered anti-CD73 antibodies, including the MEDI9447 trial. However, eliminating Fc engagement eliminates ADCC induction, restricting NK cell activation and treatment efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 are supported by appropriate citations (Korda\u00df et al., 2018; Harvey et al., 2020; Siu et al., 2018; Geoghegan et al., 2016; Overman et al., 2018). These claims address safety concerns and justify the CAR approach that maintains Fc signaling (via CD16) while targeting CD73.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "NK cells did not have observable off-target effects against endothelial cells. Even with high CD73, NK cells do not target normal healthy tissues, avoiding off-target activation against non-malignant cells. Concerns about targeting non-tumor tissues can be alleviated by local administration such as intratumoral injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by HUVEC killing data (Figure 4D). The inference about avoiding off-target effects (C102) is reasonable but limited by using only HUVEC cells as a model. Claim C103 about local administration is supported by citations (Dubinett et al., 2010; Lee et al., 2017) and represents a reasonable strategy, though not tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Engineered NK cells with anti-CD73 construct stunted tumor growth and promoted increased NK cell infiltration into lung tumors in vivo. CD73 as a tumor-associated antigen is a viable target mediating potent CAR-NK cell anti-tumor effects against CD73+ lung adenocarcinoma xenografts in terms of tumor metabolism and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 summarize the major in vivo findings supported by data in Figure 5. The tumor growth, survival, infiltration, and granzyme B data collectively support these conclusions. This represents the primary finding of the study demonstrating proof-of-concept for CD73-targeted CAR-NK therapy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Clinical data shows adoptive transfer of cytokine-induced killer cells is well-tolerated in NSCLC patients. Multiple NK cell injections with IL-15 support expansion and persistence. Three doses of engineered NK cells suppressed tumor growth without toxicity (consistent body weights), and NK cells persisted with maintained cytotoxic potential after treatment ended.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by citations (Zhang et al., 2015; Wang et al., 2014; Liu et al., 2018; Sahm et al., 2012; Hoyos et al., 2010) and experimental data (Figure 5B-D). The treatment regimen is justified by prior clinical experience. The lack of toxicity (C109) and evidence of persistence (C110) are important for clinical translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "At treatment end, NK cells were found in circulation, with engineered CD73.CAR-NK cells infiltrating tumors more than non-engineered NK cells. Granzyme B expression in the tumor microenvironment was much higher for engineered NK cells. Not all circulating cells may reach the tumor site via tail vein injection, but increased granzyme B shows NK cells maintained cytotoxic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by IHC and flow cytometry data (Figure 5F-H). The acknowledgment that tail vein injection may not deliver all cells to tumors (C114) is honest and supported by citations (Ma et al., 2019; Wang and Matosevic, 2020). The inference about maintained cytotoxic potential (C115) is reasonable based on granzyme B expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The authors cannot rule out whether the cytotoxic effect depends on activation signaling through CD16 domains or results from improved target cell conjugation enhancing natural cytotoxicity, as they did not directly test the activation signaling function of the CD73.CAR construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is an honest acknowledgment of a study limitation. The authors appropriately recognize they have not definitively determined the mechanism of enhanced cytotoxicity. This is an important caveat that should be addressed in future work, but does not invalidate the primary findings that the CAR construct enhances NK cell anti-tumor activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "NK cells have advantages over FDA-approved T-cell therapies due to innate, non-CAR-specific killing ability. Directing NK cells against CD73 can potentially eliminate CD73+ suppressor cells like Tregs. CD73 expression on tumor-infiltrating NK cells is low, but CD73+ NK cells show hyper-functional phenotype with IL-10 production. Targeting CD73+ cells may eliminate both tumor cells and supporting cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 are supported by experimental data (C117, killing by non-engineered NK cells) and citations (C118: Chambers and Matosevic, 2019; Schuler et al., 2014; C119: Chambers et al., 2022; C120: Neo et al., 2020). Claims C118 and C121 are somewhat speculative about potential effects on other cell populations, but are reasonable hypotheses supported by the literature.",
+    "result_type": "MINOR"
+  }
+]

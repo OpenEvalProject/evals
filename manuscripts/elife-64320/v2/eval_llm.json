@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "TADs are genomic domains with higher intra-domain than inter-domain 3D proximity, detectable by multiple techniques, and represent a statistical property emerging from dynamic conformational states rather than static structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C9, and C10 establish well-supported background knowledge about TADs based on extensive prior literature. These are established findings in the field with multiple independent experimental validations cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "TAD border deletion at the Ubx/abd-A locus causes only 1-2.5-fold increase in E-P contact frequency but results in 5-fold increase in gene expression, demonstrating hypersensitive transcriptional response to small structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C17-C21 present quantitative analysis of published ORCA data (Mateo et al., 2019) showing the disconnect between modest contact frequency changes and large transcriptional effects. The analysis includes both population-level and single-cell data, ruling out technical artifacts. The quantification is clearly presented in Figure 1 with appropriate statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "TAD boundaries correlate with gene expression patterns and their disruption by cis-mutation causes disease-associated expression changes, yet global TAD disruption by cohesin depletion causes minimal transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 accurately summarize prior experimental findings from multiple cited studies. This establishes the paradox motivating the authors' modeling work. The claims are well-supported by the cited literature, though the authors are reporting others' findings rather than generating new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Enhancers act on promoters in cis requiring physical proximity, yet recent single-cell and live-cell measurements show little correlation between E-P proximity and transcription activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C53-C55 accurately describe another key paradox from recent literature. The claims are well-supported by multiple cited experimental studies using different methodologies (fixed-cell and live-cell imaging). This establishes a second major motivation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Existing models fail to explain the hypersensitive response of gene expression to small changes in contact frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by the authors' analysis of existing literature and the quantitative disconnect demonstrated in claims C3-C4 and C17-C21. This motivates the need for new theoretical frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "A two-state enhancer model exhibits only sublinear responses to TF concentration, while a three-state model with two binding sites can be hypersensitive when koff2/kon2 < koff1/kon1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 present mathematical analysis of simple enhancer models shown in Figure 2. The derivations follow standard chemical master equation approaches and the conditions for hypersensitivity are correctly identified. The mathematical reasoning is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The enhancer cooperativity model is rejected because observed contact frequency changes upon TAD boundary perturbation are insufficient to explain transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by comparison of the cooperativity model predictions with the experimental data presented in Figure 1. The authors correctly identify that the magnitude of cooperative contact changes is too small to account for the observed transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Futile cycle models based on either GTF condensates or PTM accumulation at promoters can achieve hypersensitive transcriptional responses to small changes in E-P contact frequency, with hypersensitivity requiring cluster/tag size greater than 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25-C28 present the core theoretical contribution. The models are mathematically well-defined (Figures 3B-C, 3H-I), simulations demonstrate hypersensitivity (Figures 3D, 3J), and parameter sweeps identify conditions for hypersensitivity (Figure 3E-G). The models are grounded in known biochemical mechanisms with experimental support cited (C27). The mathematical framework is rigorous and the simulations are reproducible with provided code.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C43",
+      "C44"
+    ],
+    "result": "Promoters with different intrinsic properties (condensate dissolution or tag removal rates) can respond differently to the same E-P contact change, creating apparent E-P specificity through different tipping points rather than biochemical lock-and-key mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C43-C44 demonstrate an important prediction of the futile cycle models through simulations (Figure 4). The models show how promoter-intrinsic parameters can create differential responses to identical structural perturbations, offering a mechanistic explanation for observed E-P specificity without requiring specific biochemical recognition. The logic is sound and simulations support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Futile cycle models exhibit hysteresis, with qualitatively different transcriptional sensitivities at short versus long time scales, showing weak changes at early time points despite sufficient perturbation to eventually drive state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 demonstrate hysteresis in both model versions through simulations (Figures 5C-G). The time-dependent behavior is clearly shown with appropriate parameter choices. The mathematical basis for hysteresis in futile cycle systems is well-established, and the simulations correctly demonstrate this property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The futile cycle models show weak correlation between E-P contact and transcription at the single-cell level (odds ratios 1.0-1.3), matching experimental observations, with correlation becoming detectable only with large sample sizes (~20,000 cells), demonstrating that contact-dependent regulation need not produce strong single-cell correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C56-C58 address the third paradox through simulations (Figure 6). The models correctly predict weak odds ratios matching experimental data (C34, Figure 6D), show no detectable temporal correlation with moderate sample sizes (C36, Figure 6F-G), and reveal weak but significant correlations with large samples (C37, Figure 6H-I). The mechanistic explanation (C57) follows logically from the model structure. This provides a compelling resolution to the apparent contradiction between contact-dependent regulation and lack of single-cell correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The futile cycle model provides unified explanations for four key observations: weak TAD boundaries having major regulatory effects, gene insensitivity to some structural changes, differential effects of global versus local disruption, and lack of single-cell E-P distance-transcription correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 synthesize the implications of the modeling results for resolving the paradoxes established earlier. Each explanation follows logically from the demonstrated properties of the futile cycle models (hypersensitivity, differential tipping points, hysteresis, and weak single-cell correlation). The claims represent valid interpretations of the modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Recent experimental studies show nonlinear/hypersensitive transcriptional responses to E-P distance variation, consistent with futile cycle model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 cite recent experimental studies that support the model predictions. The cited work (Yokoshi et al., 2020; Despang et al., 2019; Zuin et al., 2021) provides independent experimental validation of hypersensitive responses to E-P contact frequency changes. The authors accurately represent these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The timing difference between cohesin degron experiments (hours) and genetic deletion experiments (days/generations) may explain their different transcriptional outcomes, with longer intervals showing greater changes consistent with hysteresis predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C51 propose an explanation for the differential effects of global versus local TAD disruption based on hysteresis and timing. While the model demonstrates hysteresis (C31-C33) and the timing difference is factually correct, the explanation remains somewhat speculative. The authors acknowledge this is their interpretation and note complications from different cellular backgrounds. Additional experimental validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "GTF condensates (Med1, PolII, Brd4) show stability exceeding imaging time in reported studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 accurately reports findings from cited experimental studies on condensate stability. This provides some support for the timescales assumed in the condensate model version, though the authors appropriately note that condensate existence and detection remain controversial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Futile cycles of repressive condensates or tags could also account for hypersensitivity at some promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is a logical extension of the model framework. The mathematical structure would support repressive mechanisms with transcription inversely proportional to tag/condensate levels. This is appropriately presented as a plausible alternative rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Through accumulation of tags or GTFs in condensates, promoters integrate their history of regulatory element interactions and respond nonlinearly to structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 synthesizes the key conceptual insight from the modeling work. This interpretation follows directly from the demonstrated properties of the futile cycle models and represents the central mechanistic proposal of the paper.",
+    "result_type": "MAJOR"
+  }
+]

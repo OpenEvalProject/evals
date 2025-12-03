@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study generated scRNA-seq data from embryoid bodies (EBs) differentiated from three human iPSC lines (18511, 18858, 19160) across three replicates in a batch-controlled design. After 21 days of differentiation and quality control, 42,488 high-quality cells were retained with a median of 16,712 UMI counts and 4,274 genes per cell, which were integrated using Harmony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 describe the experimental design and data quality metrics. The batch-controlled design with three individuals and three replicates is clearly stated (C21-C23), and specific quality metrics are provided with reference to figures (C27-C29). The use of Harmony for integration is documented with appropriate citation (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "EBs contain cells expressing markers for all three germ layers (endoderm: SOX17/FOXA2, mesoderm: HAND1, ectoderm: PAX6) as well as pluripotency markers (POU5F1, MYC, NANOG), with cells expressing each germ layer marker occupying distinct groups in UMAP space across all replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by marker gene expression data and UMAP visualization (Figure 1A-D). The presence of all three germ layers across all replicates is documented with figure references (C37, Figure 1E and G), providing strong evidence for successful multi-lineage differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Using Louvain clustering at multiple resolutions (0.1, 0.5, 0.8, 1), the study identified cell clusters with distinct transcriptional profiles. At resolution 0.1, seven clusters were identified representing pluripotent cells, early ectoderm, mesoderm, neural crest, endoderm, neurons, and endothelial cells based on differential expression of known marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe the clustering approach with appropriate methodological citations (C38) and demonstrate that cluster numbers vary with resolution (C40). The identification of seven major cell types at resolution 0.1 is supported by differential expression analysis and marker genes (C41, Figure 1E, Table 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Integration with reference datasets of primary fetal tissues, hESCs, and hESC-derived EBs revealed that EB cells overlap with 66 of 77 primary fetal cell types. EB cells show similarity to reference hESCs and hESC-derived EBs, and overlap with diverse fetal cell types including neural crest-derived cells, neuronal subtypes, and rare cell types like hepatic cells and thymic epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 describe reference integration with appropriate citations (C43) and provide specific quantitative results (C50: 66/77 cell types). The overlap with diverse cell types is supported by figure references (C46-C49, Figures 2B-C), demonstrating that EBs recapitulate a broad range of developmental cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The most common annotation was hESC (80% of EB cells), which the authors interpret as representing not only pluripotent cells but also immature differentiating cells whose profiles more closely match hESCs than differentiated fetal cell types, suggesting EBs capture transient developmental cell types difficult to study in primary samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C53 present data (80% hESC annotation) but the interpretation is speculative (C52-C53 are marked as INFERENCE). While the reasoning is plausible, the claim that these cells represent transient developmental stages rather than simply undifferentiated cells requires additional validation such as trajectory analysis or temporal marker expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Individual 18858 showed markedly lower differentiation efficiency with 89% of cells assigned to the pluripotent cluster, though cells from all germ layers were present. Analysis of five additional iPSC lines showed efficient differentiation similar to lines 18511 and 19160, suggesting poor differentiation efficiency is rare in the YRI iPSC panel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C54-C57 are supported by quantitative data (89% pluripotent cells) and figure references (C31, C55: Figure 1G). The conclusion about rarity of poor differentiation (C57) is reasonably inferred from the additional five lines showing efficient differentiation (C56, Figure 1H), though the sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C58",
+      "C59"
+    ],
+    "result": "Five additional randomly chosen iPSC lines (18856, 18912, 19140, 19159, 19210) were differentiated in single replicates, yielding an average of 5,243 cells per individual. These lines represented 66/77 fetal cell types with 82% annotated as hESC, confirming the robustness of cell type diversity across individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C58-C59 describe the validation experiment with specific metrics. The data support the conclusion that EBs from different individuals generate diverse cell types (C58), though the overlap is not identical to the original three lines. The consistency in hESC annotation (82% vs 80%) supports reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Topic modeling at multiple resolutions (k=6, 10, 15, 25, 30) revealed both cell-type-specific topics (e.g., topic 1 loaded on endoderm cells expressing hepatocyte markers FN1 and AFP) and shared topics (e.g., topic 6 loaded across all clusters expressing ribosomal and housekeeping genes). Topic modeling captured gradients of differentiation within cell type clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 describe topic modeling results with appropriate figure references (C61-C62: Figures 4A-E, Table 2; C64: Figure 4 supplements 1-3). The interpretation that topics capture both cell-type-specific and shared processes (C65) is supported by the gene expression patterns. The gradient interpretation (C63) is reasonable given the continuous nature of topic loadings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Hierarchical clustering based on cell type composition shows that samples cluster primarily by individual rather than replicate, with this pattern robust across clustering resolutions. Topic-based clustering also shows individual-specific patterns but with greater replicate variation. Individual 18858 consistently clusters separately due to low differentiation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by hierarchical clustering analyses with figure references (C66-C67: Figure 5 supplement 1; C68: Figure 5 supplement 2). The finding that individual effects dominate over replicate effects in cell type composition is clearly demonstrated, though topic-based analysis reveals more replicate variation (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Variance partitioning of gene expression shows that cell type explains the largest proportion of variation (~60% at resolution 0.1 for pseudobulk), while individual and replicate each explain ~5% of variance in pseudobulk data. At single-cell resolution, residuals explain 93% of variation, with replicate explaining more variation than individual.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 present variance partitioning results with appropriate citations (C71: Hoffman and Schadt, 2016) and figure references (C71: Figure 5B; C74: Figure 5C). The authors appropriately note that cell type variance may be inflated due to clustering methodology (C72). The high residual variance at single-cell level (C75) is expected and properly contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The relative contribution of individual versus replicate to gene expression variation differs across cell type clusters. At resolution 0.1, individual contributes more in clusters 0, 1, 4, and 5, while replicate contributes more in clusters 2, 3, and 6, which notably contain few cells from individual 18858.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 describe cluster-specific variance patterns. The observation that clusters with more replicate variation have few cells from 18858 (C77) is documented with reference to supplementary data. This suggests the variance structure is influenced by cell type representation across individuals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Power analysis indicates that an experiment with 58 individuals, 3,000 cells per individual, across three replicates (174,000 cells total) would provide 93% power to detect eQTLs with standardized effect size of 0.6, assuming simple linear regression and conservative Bonferroni correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 presents a power calculation with clearly stated assumptions (linear regression, Bonferroni correction, FWER=0.05). The methods section describes the approach for estimating variance from downsampled data and fitting an exponential decay model. The calculation appears methodologically sound for the stated assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Trajectory inference using PAGA identified developmental trajectories recapitulating known developmental paths. Trajectories toward endoderm and mesoderm proceed through a primitive streak marker-expressing cluster (MIXL1), with hepatocytes branching from endoderm, endothelial cells from mesoderm, and neurons from early ectoderm clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe trajectory analysis with appropriate citations (C79: Wolf et al., 2019) and figure references (C80-C83: Figure 7, Figure 7 supplements 1-2). The identification of primitive streak marker MIXL1 at the branch point (C80) and lineage-specific branching patterns (C81, C83) align with known developmental biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Split-GPM analysis identified gene modules with distinct dynamic expression patterns along differentiation trajectories to neurons, hepatocytes, and endothelial cells. Gene modules show biologically meaningful enrichments including bile acid/fatty acid metabolism in hepatocyte trajectory, epithelial-mesenchymal transition in endothelial trajectory, and cell cycle genes at early pseudo-time values across all trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 describe dynamic gene expression analysis with figure references (C85: Figure 7 supplements 3-5). The gene set enrichments are biologically plausible and supported by citations (C87: Evseenko et al., 2010; C88: Buttitta and Edgar, 2007). The findings align with expected developmental processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Split-GPM clustering of samples based on dynamic gene expression shows that replicates of individuals 18511 and 19160 cluster together in neuronal and endothelial lineages, while 18858 replicates cluster separately. In the hepatocyte lineage, stronger replicate-specific differences were observed, with replicate 3 of 18511 rarely clustering with other replicates of that individual.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe consistency of dynamic expression patterns with figure references (C89: Figure 7D and F; C91: Figure 7E). The finding of replicate-specific effects in the hepatocyte lineage (C91-C92) indicates that technical or biological variation affects dynamic expression patterns differently across lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors conclude that EBs are a suitable model for both terminal and developmental cell types based on expression of known cell-type-specific markers, clustering with over 60 diverse primary fetal cell types including rare types, and identification of gene modules with dynamic expression patterns matching developmental biology expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 summarize the main findings. While C96 is an inference, it is reasonably supported by the convergent evidence from marker expression (C93), reference integration (C94), and dynamic gene modules (C95). However, the claim of being a \"suitable model\" could benefit from functional validation beyond transcriptional similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Analysis of 28 middle-dynamic eQTLs from Strober et al. (2019) identified during iPSC-to-cardiomyocyte differentiation revealed that these eQTLs were novel (not found in GTEx), most (25/28) were exclusive to intermediate differentiation stages, and one eQTL (rs6700162) is associated with cell type proportions in heart tissue and shows trans-eQTL effects in coronary artery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 describe reanalysis of published data (C97-C100 cite Strober et al., 2019) and new analysis using GTEx data (C101-C102). The identification of associations between a dynamic eQTL and cell type proportions (C101) provides evidence that transient developmental eQTLs may have lasting effects, though the p-values reported (p<0.0009, p<0.003, p=1\u00d710\u207b\u2075) should be interpreted cautiously given multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The iPSC lines used were previously characterized and validated, reprogrammed from HapMap-genotyped lymphoblastoid cell lines, tested negative for mycoplasma, and include five female lines (18511, 18858, 18912, 19140, 19159) and three male lines (19160, 18856, 19210).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 describe sample provenance and quality control with appropriate citations (C103: Banovich et al., 2018; C104: Belmont et al., 2003). These are standard quality control measures and the documentation is adequate. The sex distribution is noted but not analyzed as a variable in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors establish the scientific context that most human gene expression studies have focused on adult tissues, while understanding trait-associated variants requires studying relevant cell types and developmental stages. Despite extensive eQTL mapping by GTEx, most disease-associated variants are not classified as eQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C10 establish the scientific rationale with appropriate citations (C6: Albert and Kruglyak, 2015; C7: Umans et al., 2020; C9: GTEx Consortium, 2020; C10: Yao et al., 2020; Aguet et al., 2017). These are well-established observations in the field that motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors argue that developmental mutations may be particularly relevant to complex traits, that dynamic regulatory effects may explain unexplained phenotypic associations, and that while iPSC-derived cells have identified disease-associated dynamic eQTLs, iPSC differentiation protocols are limited in the number of cell types and are resource-intensive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C11 are speculative (marked as SPECULATION) but represent reasonable hypotheses. Claim C12 is supported by citations (Strober et al., 2019; Cuomo et al., 2020). Claims C13-C14 about iPSC limitations are general knowledge statements that provide rationale for the EB approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors propose EBs as a model system, describing them as organoids containing multiple cell types in dynamic states that can be characterized by scRNA-seq. While EBs have been used to verify pluripotency for decades, their complexity previously precluded genomic studies, and prior scRNA-seq studies of EBs used only single individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C15-C18 are definitional/knowledge statements about EBs. Claim C5 is an inference about EB capabilities. Claims C19-C20 are supported by citations (Han et al., 2018; Guo et al., 2019) establishing the gap in knowledge that this study addresses. The rationale for using EBs is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "EBs differentiate quickly with cell types representing all three germ layers present after 8 days, as established by prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by citation to Han et al., 2018. This establishes the timeline for EB differentiation and justifies the 21-day culture period used in this study.",
+    "result_type": "MINOR"
+  }
+]

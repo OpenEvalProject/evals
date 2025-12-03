@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Single-nucleus RNA sequencing of PVT tissue identified 16 clusters from 20,503 nuclei, which were classified into 7 major cell types including neurons. PVT neurons (5,737 nuclei, 58.3% of all neurons) were identified based on marker expression, along with neurons from adjacent regions (MD, IMD, BSTpr, Hb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C30 are well-supported by the clustering analysis, marker gene expression data (Figure 1), and validation with Allen Brain Atlas ISH data. The methods describe appropriate quality control, batch correction using Harmony, and standard clustering approaches. The identification of cell types using canonical markers is consistent with established practices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Five molecularly distinct PVT neuronal subtypes (PVT1-5) were identified through clustering analysis. PVT1, PVT2, and PVT5 formed one major branch, while PVT3 and PVT4 formed another. Only PVT1 expressed Drd2, refining the previous binary classification of PVT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by the clustering data (Figure 2a), phylogenetic analysis (Figure 2b), and differential gene expression analysis (Figure 2\u2014figure supplement 1). The identification of five subtypes rather than two represents a refinement of previous work and is well-documented with appropriate statistical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C48"
+    ],
+    "result": "Multiplex fluorescent in situ hybridization revealed that PVT subtypes are organized along multiple spatial gradients: antero-posterior, medio-lateral, and dorso-ventral. PVT1/Esr1 and PVT2/Col12a1 are posterior-biased, PVT3/Npffr1 and PVT4/Hcrtr1 are anterior-biased with medio-lateral segregation, and PVT5/Drd3 is distributed pan-PVT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20, C35-C37, C40-C43, C48 are strongly supported by the multiplex ISH data (Figure 3) with quantitative analysis showing statistically significant differences in spatial distribution (p<0.0001 for anterior vs. posterior comparisons). The spatial mapping validates the sequencing results and demonstrates novel organizational features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C82"
+    ],
+    "result": "A second set of markers (Drd2, Pde3a, Insrr, Npsr1) showed similar spatial distribution to the initial markers but with only 30% or less overlap at the single-cell level, indicating high gene expression diversity within PVT subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C82 are supported by the multiplex ISH validation data (Figure 3\u2014figure supplements 2 and 3). The observation of limited overlap between markers from the same cluster is well-documented, though the functional implications remain speculative (C47). The data quality and quantification methods appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Hierarchical clustering based on spatial ISH data suggested PVT3 and PVT4 are more closely related to PVT5 than to PVT1 and PVT2, differing from the sequencing-based phylogenetic tree due to differences in distance matrix calculation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 acknowledge a discrepancy between spatial and sequencing-based clustering and provide a reasonable methodological explanation. The authors appropriately note that spatial data uses one marker per cluster while sequencing uses all genes, providing complementary information. This transparent reporting of methodological differences is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The five PVT subtypes show differential expression of neuromodulatory receptors and ion channels. Examples include Npffr1 in PVT3AL, Ldlr in PVT1, differential dopamine receptor expression (Drd1 in PVT3AL, Drd3 in PVT5pan, Drd2 in PVT1P), and subtype-specific expression of T-type calcium channels and potassium channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57, C59-C61 are supported by the gene expression data shown in Figure 4. The differential expression patterns are clearly documented and provide molecular insights into potential functional differences. The data presentation is appropriate with both percent expression and average expression levels shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Analysis of calcium-binding protein expression revealed that Calb2 is expressed in PVT1P and PVT5pan, all PVT subtypes lack Pvalb, and Calb1 is only found in PVT2edge and PVT5pan. This pattern challenges the traditional core/matrix dichotomy for thalamic classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by the gene expression data (Figure 4d) and are consistent with the PVT's classification as a higher-order thalamic nucleus. The interpretation regarding the core/matrix dichotomy (C66) is appropriately supported by citations to previous work and represents a valid inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C75"
+    ],
+    "result": "RPCA-based integration with the ThalamoSeq atlas revealed that PVT subtypes differentially innervate cortical areas. PVT1P and PVT2edge overlap with PFC-projectors (with Col12a1 as a conserved marker for PVT2edge), while PVT4AM shows unexpected overlap with auditory and visual cortical projectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21, C67-C71, C75 are supported by the integration analysis (Figure 5) and conserved marker analysis. The finding of PVT4AM overlap with auditory/visual projectors is noted as unexpected but is validated by Allen Brain Atlas connectivity data (Figure 5\u2014figure supplement 4). The integration methodology using RPCA is appropriate and well-described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Retrograde tracing from prelimbic cortex (PL) confirmed that PL-projecting neurons reside in the ventral edge of the pPVT and partially co-localize with Col12a1-expressing cells, consistent with the integration analysis and Mouse Connectome Project data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by the retrograde tracing experiment (Figure 5\u2014figure supplement 2) and Mouse Connectome Project data (Figure 5\u2014figure supplement 3). This provides independent validation of the computational integration results. However, the sample size is small (N=2) for the retrograde tracing experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C98",
+      "C99"
+    ],
+    "result": "Anterior-biased thalamic regions including aPVT send projections to auditory and visual cortical areas such as the temporal association cortex, as revealed by Allen Brain Atlas connectivity data and supported by the integration analysis showing PVT4AM overlap with auditory/visual projectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C98-C99 are supported by Allen Brain Atlas connectivity data (Figure 5\u2014figure supplement 4) and the integration analysis (Figure 5). The convergence of computational integration results with anatomical tracing data strengthens these findings. However, the functional significance remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C22"
+    ],
+    "result": "The dataset contains largely non-overlapping transcriptomic profiles compared to the ThalamoSeq dataset and includes complementary, previously unexplored mouse thalamic single-nuclei transcriptomes from MD and IMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22 are supported by the integration analysis (Figure 5\u2014figure supplement 1) showing minimal overlap between datasets. The identification of MD and IMD neurons is supported by marker gene expression and Allen Brain Atlas validation (Figure 1\u2014figure supplement 2). This represents a valuable resource for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "PVT subtypes are organized in a combination of topographical gradients (medio-lateral, antero-posterior, dorso-ventral), which has not been reported in another midline thalamic area. The four spatially-biased subtypes split into two branches: posterior-biased (PVT1P, PVT2edge) and anterior-biased (PVT3AL, PVT4AM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by the spatial mapping data (Figure 3) and phylogenetic analysis (Figure 2b). The novelty claim (C78) is appropriately qualified with 'to our knowledge.' The speculation about conservation across thalamic regions (C79) is reasonable but remains to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C86"
+    ],
+    "result": "Differential expression of voltage-gated potassium channels and neuromodulator receptors may underlie variability in membrane properties and neuromodulator effects across PVT subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62, C86 are speculative interpretations based on gene expression data and previous literature. While the differential expression is well-documented, the functional implications require electrophysiological validation. The claims are appropriately presented as possibilities ('may underlie,' 'likely to be diverse') but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C96",
+      "C97",
+      "C100"
+    ],
+    "result": "The authors propose that PVT2edge may be preferentially involved in cortical processing-dependent behaviors, PVT1P may be recruited by tasks involving subcortical or cortical networks depending on location, and PVT4AM may modulate emotional responses through interactions with limbic cortical areas beyond PFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92, C96-C97, C100 are speculative proposals based on anatomical connectivity and gene expression data. While the anatomical evidence is solid, the functional claims require behavioral and physiological validation. The authors appropriately present these as proposals and possibilities, but they remain hypotheses to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C103"
+    ],
+    "result": "This study provides the first comprehensive molecular and spatial profiling of cell types across the entirety of the PVT, which should serve as a basis for resolving previously conflicting observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C103 are supported by the comprehensive nature of the dataset and appropriate citations to previous work. The claim of being 'first comprehensive' is justified given the scope of the snRNA-seq and spatial mapping. The potential impact on resolving conflicting observations is a reasonable expectation based on the identification of five spatially segregated subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study used tissue punches from four P90 C57BL/6J mice, nuclei isolation using mechanical-detergent lysis, sequencing on Illumina NovaSeq 6000, Harmony algorithm for batch correction, and a threshold of seven mRNA transcripts for positive cell calling in ISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 describe the methodological approaches used in the study. These are well-documented in the Methods section with appropriate citations. The sample size (N=4 biological replicates for sequencing, N=3 for ISH) is reasonable for this type of study. The threshold of 7 transcripts for ISH is clearly stated but lacks justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The introduction establishes that PVT regulates diverse cognitive and behavioral processes, shows functional heterogeneity that has yielded conflicting results, and that molecular identity can delineate functionally distinct cell types, motivating the need for systematic transcriptional profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C19 provide background context supported by extensive citations to previous literature. These claims appropriately frame the knowledge gap (C2, C16) and rationale (C19) for the study. The citations appear appropriate and the summary of prior work is accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C58",
+      "C76",
+      "C77",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C93",
+      "C94",
+      "C95",
+      "C102"
+    ],
+    "result": "The discussion contextualizes findings within prior work on thalamic organization, neuromodulation, connectivity, and translational relevance to human PVT, supported by extensive citations to previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C58, C76-C77, C83-C85, C87-C89, C93-C95, C102 provide appropriate context from previous literature to interpret the current findings. The citations appear accurate and relevant. The discussion of translational relevance (C87-C88) is appropriately cautious and supported by citations.",
+    "result_type": "MINOR"
+  }
+]

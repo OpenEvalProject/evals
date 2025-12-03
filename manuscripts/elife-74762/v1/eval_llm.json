@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "A prior computational model (Phillips et al., 2019) proposed that INaP and ICAN are key biophysical factors generating inspiratory rhythm and burst pattern, respectively, in the preB\u00f6tC respiratory oscillator in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C1 accurately describes the hypothesis from the cited prior work (Phillips et al., 2019). This is a statement about what was proposed in a previous study and is appropriately supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "INaP and ICAN blockade have opposite effects on the relationship between network excitability and preB\u00f6tC rhythmic activity. Partial INaP blockade shifts the frequency tuning curve downward and reduces amplitude, while ICAN blockade shifts the frequency tuning curve upward at elevated excitability but does not affect baseline frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8-C10, C14-C15, C22-C23, C27-C31, and C45-C47 collectively demonstrate opposite effects of INaP and ICAN blockade on frequency-excitability relationships through both model predictions and experimental validation. The experimental data (Figures 4, 7, 8) with appropriate statistical tests (p<0.01) strongly support these opposing effects, confirming model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C48",
+      "C49",
+      "C50",
+      "C65",
+      "C78"
+    ],
+    "result": "INaP is essential for preB\u00f6tC rhythmogenesis in vitro. Complete pharmacological blockade of INaP with TTX or riluzole eliminates rhythmic activity that cannot be restored by optogenetic stimulation, and no alternative rhythmogenic mechanisms emerge at various levels of excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C21, C24-C26, C48-C50, C65, and C78 provide converging evidence from pharmacological characterization (voltage-clamp), network recordings, power spectrum analyses, and optogenetic rescue experiments. Complete INaP blockade (20 nM TTX or 20 \u00b5M riluzole) eliminated rhythm in all cases (n=18/18 TTX, n=11/11 riluzole), with flat power spectra confirming absence of rhythmic activity despite photostimulation up to 5 mW. This strongly supports the essential role of INaP in rhythm generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ICAN is essential for generating the amplitude of rhythmic output but not rhythm generation. TRPM4 blockade significantly reduces burst amplitude (43\u00b14% reduction) with minimal effect on baseline frequency, but shifts the frequency tuning curve upward at elevated excitability levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27-C31, and C51-C54 demonstrate through pharmacological blockade with 9-phenanthrol (50 \u00b5M, n=8) that ICAN/TRPM4 is critical for amplitude but not baseline rhythm generation. The experimental data show significant amplitude reduction (p<0.01) with no significant frequency change at baseline (p=0.461), consistent with model predictions and prior studies (Picardo et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A VgluT2-tdTomato-ChR2-EYFP triple transgenic mouse line was generated and validated for optogenetic manipulation of preB\u00f6tC glutamatergic neurons. ChR2-EYFP is expressed in VgluT2-positive neurons, and photostimulation causes laser-power-dependent membrane depolarization with fast kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C38-C40 describe the generation and validation of the transgenic mouse line with appropriate methods (two-photon microscopy, whole-cell recordings, n=12 neurons from 4 preparations). The laser-power-dependent depolarization is well-characterized (4.73\u00b10.24 mV at 0.5 mW to 11.6\u00b10.35 mV at 5 mW) with significant differences confirmed by ANOVA (p<0.01). Control experiments (C43) confirm specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Bilateral photostimulation of preB\u00f6tC glutamatergic neurons causes rapid, reversible, laser-power-dependent increases in inspiratory burst frequency and decreases in burst amplitude. XII motor output mirrors preB\u00f6tC population activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C41-C43 demonstrate dose-dependent effects of photostimulation (n=31 preparations) with appropriate statistics (Wilcoxon tests, p<0.01). Frequency increases ranged from 85\u00b17% at 0.25 mW to 326\u00b16% at 2 mW, while amplitude decreased from 8\u00b12% to 44\u00b14%. Control experiments without ChR2 (n=6) showed no effects (p=0.545 and 0.761), confirming specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C80"
+    ],
+    "result": "A biophysical ChR2 channel model was parameterized to match experimental data on laser-power-dependent neuronal depolarization. Model simulations incorporating pharmacological manipulations of INaP and ICAN show qualitative agreement with experimental results for major features of preB\u00f6tC network behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 and C80 demonstrate that the computational model, extended with a four-state Markov ChR2 channel model, closely matches experimental data (Figure 8A). The model correctly predicts the directional effects of TTX, riluzole, and ICAN blockade on frequency and amplitude tuning curves, with appropriate incorporation of known pharmacological mechanisms from the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "INaP contributes to burst amplitude generation to a smaller degree than ICAN, through subthreshold activation and voltage-dependent amplification of synaptic drive. Riluzole affects amplitude more than TTX due to off-target effects on excitatory synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 and C66-C69 are supported by experimental data showing differential amplitude effects of riluzole vs TTX (Figures 4, 8), consistent with known pharmacological actions of riluzole on synaptic transmission (MacIver et al., 1996; Bellingham, 2011). Model simulations incorporating 20-25% synaptic conductance reduction match experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C57",
+      "C79"
+    ],
+    "result": "The model proposes that a subset of excitatory neurons with INaP-dependent rhythmogenic properties forms a rhythmogenic kernel, and ICAN activation in a recruited subpopulation amplifies synaptic drive from this kernel to generate population activity amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C7, C57, and C79 describe conceptual predictions from the model that are indirectly supported by the overall agreement between model and experimental data. However, direct experimental evidence for distinct neuronal subpopulations with these specific properties is not provided. C79 explicitly states this prediction requires experimental testing (e.g., dynamic multicellular Ca2+ imaging).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The current study addresses conflicting prior results on the role of INaP in preB\u00f6tC rhythm generation. The results contradict the hypothesis of Pace et al., 2007 that INaP blockade affects rhythm by reducing excitability rather than affecting essential rhythmogenic mechanisms, demonstrating that optogenetic stimulation cannot restore rhythm after complete INaP blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 provide appropriate context from prior literature and directly test the hypothesis from Pace et al., 2007. The experimental results (C65) showing inability to restore rhythm after complete INaP blockade despite photostimulation (n=18/18 TTX, n=11/11 riluzole) provide strong evidence against the alternative hypothesis and support the essential role of INaP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Non-uniform drug penetration in thick slices due to passive diffusion, combined with spatial organization of rhythmogenic neurons near the center of the preB\u00f6tC network, may explain conflicting results in prior studies using thick slices where INaP blockade primarily affected amplitude rather than frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C74 present reasonable mechanistic explanations for discrepancies in the literature, supported by general biophysical principles (drug diffusion) and prior observations (C72: Baertsch et al., 2019). However, these remain inferences and predictions rather than directly tested hypotheses in the current study. The explanation is plausible but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In more intact brainstem preparations, INaP blockers do not disrupt rhythm generation due to more complex synaptic interactions including inhibitory circuits. Modeling predicts network states where inspiratory rhythm may be highly dependent on INaP in more intact systems, requiring further experimental testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 appropriately cite prior experimental (Smith et al., 2007; Rubin et al., 2009b) and modeling studies (Rubin and Smith, 2019; Phillips and Rubin, 2019) showing different roles of INaP in more intact preparations. C77 appropriately identifies this as a prediction requiring experimental validation. The claims accurately represent the state of knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The preB\u00f6tC contains essential rhythmogenic neuronal circuits for mammalian breathing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C5 represents well-established knowledge in the field, appropriately supported by citations to multiple authoritative reviews (Richter and Smith, 2014; Del Negro et al., 2018; Ramirez and Baertsch, 2018). This provides necessary background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "INaP attenuation by TTX and riluzole was not significantly different between endogenous burster and non-endogenous burster inspiratory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C44 reports statistical comparisons (Kolmogorov-Smirnov tests) showing no significant differences in INaP blockade between neuronal subtypes at all concentrations tested (p>0.4 in all cases). This is a straightforward negative result appropriately analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The agreement between model predictions and experimental results advances understanding of neuronal and circuit biophysical mechanisms generating rhythm and amplitude of inspiratory activity in the preB\u00f6tC in vitro and demonstrates the predictive power of the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C81 is a summary conclusion supported by the overall agreement between model simulations and experimental data demonstrated throughout the Results section, particularly in the comprehensive comparisons shown in Figure 8. The claim appropriately reflects the scope and significance of the findings.",
+    "result_type": "MAJOR"
+  }
+]

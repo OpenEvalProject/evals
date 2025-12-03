@@ -1,0 +1,1554 @@
+{
+  "submission": {
+    "id": "293f10ce-1d73-4315-b710-88e4ad0a9e22",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:59:32.131480Z",
+    "updated_at": "2025-12-03T02:59:32.131480Z"
+  },
+  "content": [
+    {
+      "id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "submission_id": "293f10ce-1d73-4315-b710-88e4ad0a9e22",
+      "content_type": "manuscript",
+      "content_text": "# Extracellular matrix in multicellular aggregates acts as a pressure sensor controlling cell proliferation and motility\n\n## Authors\n\n- Monika E Dolega<sup>1</sup>\n- Sylvain Monnier<sup>2</sup>\n- Benjamin Brunel<sup>1</sup> ([ORCID: 0000-0003-2858-5074](https://orcid.org/0000-0003-2858-5074))\n- Jean-Fran\u00e7ois Joanny<sup>3</sup>\n- Pierre Recho<sup>1</sup> \u2020\n- Giovanni Cappello<sup>1</sup> ([ORCID: 0000-0002-5012-367X](https://orcid.org/0000-0002-5012-367X)) \u2020\n\n### Affiliations\n\n1. Universit\u00e9 Grenoble Alpes, Laboratoire Interdisciplinaire de Physique, CNRS Grenoble France\n2. Universit\u00e9 de Lyon, Universit\u00e9 Claude Bernard Lyon 1, CNRS, Institut Lumi\u00e8re Mati\u00e8re VILLEURBANNE France\n3. Coll\u00e8ge de France, PSL Research University Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nImposed deformations play an important role in morphogenesis and tissue homeostasis, both in normal and pathological conditions. To perceive mechanical perturbations of different types and magnitudes, tissues need appropriate detectors, with a compliance that matches the perturbation amplitude. By comparing results of selective osmotic compressions of CT26 mouse cells within multicellular aggregates and global aggregate compressions, we show that global compressions have a strong impact on the aggregates growth and internal cell motility, while selective compressions of same magnitude have almost no effect. Both compressions alter the volume of individual cells in the same way over a shor-timescale, but, by draining the water out of the extracellular matrix, the global one imposes a residual compressive mechanical stress on the cells over a long-timescale, while the selective one does not. We conclude that the extracellular matrix is as a sensor that mechanically regulates cell proliferation and migration in a 3D environment.\n\n## Introduction\n\nAside from biochemical signaling, cellular function and fate also depend on the mechanical state of the surrounding extracellular matrix (ECM) (Humphrey et al., 2014). The ECM is a non-cellular component of tissues providing a scaffold for cellular adhesion and triggering numerous mechanotransduction pathways, involved in morphogenesis and homeostasis (Vogel, 2018). An increasing number of studies in vivo and in vitro shows that changing the mechanical properties of the ECM by re-implanting tissues or changing the stiffness of the adherent substrate is sufficient to reverse aging (Segel et al., 2019), accelerate developmental processes (Barriga et al., 2018) or modulate tumor malignancy (Paszek et al., 2005; Tanner et al., 2012).\n\nThe importance of the mechanical context in cancer has been highlighted for a long time by experiments altering the composition and stiffness of the ECM (Levental et al., 2009). It has also been shown that the tumor growth is modulated by the mechanical compression caused by the tumor itself, as it expands in a confined environment (Fernandez-Sanchez et al., 2010; Nia et al., 2017). Such patho-physiological growth under pressure has also been studied in vitro. When multicellular aggregates are confined by soft gels (Helmlinger et al., 1997; Alessandri et al., 2013; Taubenberger et al., 2019) or submitted to a gentle osmotic compression (Montel et al., 2011; Dolega et al., 2017), their growth is substantially reduced. It has been demonstrated that the cell cytoskeleton is involved in the response to compression and can trigger the growth impediment through a cell-cycle inhibition (Taubenberger et al., 2019; Delarue et al., 2014). In addition, the cellular volume has been recently proposed to be a key parameter in the mechanosensitive pathway (Delarue et al., 2014; Han et al., 2020). Nevertheless, it is not known how such mild global compression is transduced to the individual cells of the aggregate to alter their proliferation.\n\nHere, we posit that cells mainly respond to the mechanical stress transmitted by the ECM, when the aggregate is under compression. This hypothesis is motivated by two evidences. First, an aggregate is a composite material made of cells, extracellular matrix and interstitial fluid. The presence of hydrated extracellular matrix is evidenced by the abundance of fibronectin in the interstitial space (Figure 1a and Appendix 8). As the ECM is 100- to 1000-fold more compressible than the cells, it absorbs most of the deformation, but still transmits the mechanical stress to the cells. Second, whereas an osmotic pressure of a few kPa strongly reduces the cell proliferation within multicellular aggregates, an identical pressure has no effect on individual cells cultured on a Petri dish, in the absence of ECM (Montel et al., 2011). In addition, the use of drugs affecting the cytoskeleton organization has a negligible effect on the effective compressibility of multicellular aggregates (Appendix 12). This indicates that the volume loss under compression is mainly due to ECM dehydration (Dolega et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63258/elife-63258-fig1-v2.jpg)\n\n**Figure 1.:** (a) Immunofluorescent staining of fibronectin in the interstitial space of a multicellular spheroid made of CT26 cells (b) Schematic view of a cell (gray) embedded in extracellular matrix (filaments), permeated by interstitial fluid (light pink). (c) Big osmolytes (green) do not penetrate through the ECM and induce a global compression. Being much more compressible than the cells, the extracellular matrix absorbs most of the deformation and exert a positive stress on the cell. (d) Small osmolytes (blue) enter the ECM without exerting any osmotic pressure on it. Conversely, they compress the cell which, in turn, exerts a tension on the ECM.\n\nTo test the hypothesis that cells respond to the ECM deformation, we introduce an experimental method that uncouples the cell volume change from the mechanical stress transmitted to the cells through the ECM. We apply this method for both multicellular aggregates and individual cells embedded in a gelified ECM. In parallel, we present a theoretical framework to estimate both the displacement and the stress at the ECM/cell interface in response to an osmotic compression, and verify experimentally its qualitative prediction. At a longer timescale, we probe the effect of the ECM compression on the cellular response. In particular, we demonstrate that, even in the absence of cell deformation, the ECM alone regulates cell proliferation and motility.\n\n## Results\n\n### Selective-compression method\n\nWe developed a simple method to either selectively compress cells embedded in ECM or the whole aggregate composed of ECM and cells. This method is based on the use of osmolytes of different sizes. When big enough, the osmolytes do not infiltrate the ECM and thus compress the whole aggregate by dehydrating the ECM, which in turn mechanically compresses the cells (Monnier et al., 2016). When smaller than the exclusion size of the ECM, the osmolytes percolate through the ECM meshwork and compress the cells which can then pull on the ECM (see schematic in Figure 1b\u2013d and Appendix 7). We already proved (Montel et al., 2012) that a gentle osmotic pressure $\u03a0_{d}$ exerted using large dextran molecules considerably reduces the proliferation of cells inside multicellular spheroids. The effect was visible starting from $\u03a0_{d}=500 Pa$ and saturated at $\u03a0_{d}\u22435\u2062kPa$. Unless explicitly stated, the experiments described in this article were performed at $\u03a0_{d}\u22435\u2062kPa$, a value that minimizes the pressure, but exacerbates the biological effects.\n\nWe validated our approach by compressing ECM, cells and multicellular spheroids (MCS) using osmolytes with gyration radii $R_{g}$ respectively larger and smaller that the ECM pore sizes (Figure 2). As osmolytes, we used dextran molecules ranging from 10 to 2000 kDa. As a proxy of ECM, we used Matrigel (MG), a commercially available matrix secreted by cancer cells (Kleinman and Martin, 2005). To visualize the effect of the compression on the ECM, we prepared microbeads composed of matrigel, with a diameter of 100 \u03bcm (Figure 2a ). As shown in Figure 2a (top panel), fluorescent dextran molecules with a gyration radius below 5 nm (MW\u00a0<70 kDa, hereafter called 'Small\u2019; Granath, 1958) equally color the MG beads and the surrounding solution (left). Conversely, dextran molecules larger than 15 nm (MW\u00a0>500 kDa, Big\u2019) do not penetrate inside the MG beads, which appear darker than the surroundings (right). By following the evolution of the bead diameter subjected to $\u03a0_{d}=5\u2062kPa$ (measurements taken before the compression and 45 min after the compression), we observed that small dextran molecules compress the matrigel beads by 2.5 \u00b1 0.7% of their initial volume (Figure 2a, middle and bottom panels). Conversely, the same pressure caused by big dextran molecules occasions a much larger compression of 63 \u00b1 5% (Figure 2b). The relatively minor compression occasioned by small dextran can be explained by thermodynamic theories involving chemical interaction between the matrix and the permeating polymer (Brochard, 1981; Bastide et al., 1981), an aspect that we neglect in this article.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63258/elife-63258-fig2-v2.jpg)\n\n**Figure 2.:** (a) Fluorescently labeled dextran molecules only permeate the beads (top-left panel) if their gyration radius is smaller than 5 nm. Otherwise (top-right panel) they are larger than the exclusion size of the matrigel network and are excluded from the bead. Compression of MG beads, occasioned by dextran molecules of two different sizes (Small: 70 kDa; Big: 500 kDa). Phase contrast images taken before and after the addition of pressure. (b) Beads lose 63 \u00b1 5% of their initial volume when compressed using big dextran, and 2.5 \u00b1 0.7% with small Dextran. N\u00a0=\u00a010. (c) Compression of individual cells using dextran of different sizes, with $\u03a0_{d}=$ 15 kPa. At $\u03a0_{d}=$ 5 kPa the compressibility of individual cells is not measurable. Cell compressibility is thus negligible in comparison to that of Matrigel. (d) MCS compression under $\u03a0_{d}=$ 5 kPa, exerted using small (blue) and big (green) dextran molecules. In control experiments (0 kPa), the culture medium is replaced by fresh medium without dextran. (box : \u00b1SEOM; error bars: \u00b1 SD\u00a0\u2022 : single realizations).\n\nAnalogous experiments were performed using individual CT26 cells (murine colon carcinoma cells) and multicellular spheroids made with the same cell line. As the volume loss of individual cells is not measurable at $\u03a0_{d}=5$ kPa (Monnier et al., 2016), individual CT26 cells are submitted to $\u03a0_{d}=15$ kPa. At this pressure, we measured a relative compression $\u0394\u2062V_{c}/V_{c}=3.8\\pm0.8%$ (Figure 2c) , where $V_{c}$ is the cell volume and $\u0394\u2062V_{c}$ the volume loss upon the application of $\u03a0_{d}$. This compression indicates that CT26 cells have an effective osmotic modulus $K_{c}=$ 400\u00a0\u00b1\u00a0100 kPa. In contrast to single cells, MCS are much more compressible, as they lose up to 15% of their volume under an omostic pressure with big dextran of $\u03a0_{d}=5$ kPa (Figure 2d; See also Dolega et al., 2021 for a detailed mechanical analysis). Furthermore, these measurements indicate that MCS have a typical effective osmotic modulus of $K_{s}\u2243$ 30 kPa, 15-folds smaller than that of individual cells (Dolega et al., 2021). In contrast, small dextran molecules have no measurable effect on the volume of MCS, for moderate osmotic pressures (up to $\u03a0_{d}=10$ kPa). However, larger pressures with these small osmolytes can lead to a cell compression within the MCS associated with a swelling of the interstitial space as we show in Section 'Selective compression of ECM in multicellular spheroids'.\n\nThese results confirm the ability of our method to discriminate between the effects occasioned by the compression of the whole MCS, and those due to the compression of the cells alone within the aggregate.\n\n### Theory: the effect of a selective compression applied to a cell nested in extracellular matrix\n\nFor simplicity, we consider the case of a single cell nested in a large -compared to the cell size- ball of ECM and subjected to the osmotic pressure $\u03a0_{d}$ obtained by supplementing the culture medium with either small or big dextran. We assume that the small dextran can freely permeate in the ECM meshwork while the big one is excluded. Our aim is to compute the displacement of the cell boundary as well as the stress applied on the cell upon application of $\u03a0_{d}$ in both conditions. Our model, detailed in Appendix 6.5, essentially couples a classical active pump-and-leak model (Hoppensteadt and Peskin, 2012) for the cell volume regulation through ion pumping and the constitutive behaviour of the ECM, which is assumed to be poro-elastic at a short timescale where remodeling is negligible. The cell cortex mechanics plays a negligible role in setting the cell volume since it involves stresses that are small compared to the osmotic forces. For simplicity, we neglect the mechano-sensitive nature of ion channels.\n\nWe show in Appendix A.5 that, for realistic estimates of the model parameters, the application of $\u03a0_{d}$ with both small or big dextran leads to the same cell volume loss which does not involve the mechanical properties of the ECM but only the cell volume regulation system:\n\n$$\n\\frac{\u0394\u2062V_{c}}{V_{c}}=\\frac{\u03a0_{d}}{(1-\\beta)\u2062\u03a0_{e}},\n$$\n\nwhere $\u03a0_{e}$ is the osmotic pressure of ions in the culture medium and $\\beta\u22430.1$ is a non-dimensional parameter representing the active pumping of ions (see Appendix A.4). The relation (Equation 1) shows that the reduction of the cell volume under compression is mainly resisted by the active osmotic equilibration of ions through the cell membrane. For relatively low pressures ($\u03a0_{d}\u226a\u03a0_{e}\u2243500$ kPa), the relative change of volume $\u0394\u2062V_{c}/V_{c}$ is negligible. More quantitatively, formula (Equation 1) provides the estimate of the osmotic modulus of a cell $K_{c}=(1-\\beta)\u2062\u03a0_{e}\u2243450$ kPa which is in agreement with the value measured for CT26 cells.\n\nHowever, the mechanical stress applied by the ECM to the cell is qualitatively and quantitatively different in the two situations. For big dextran, this stress is compressive as the dominating effect of the dextran is to compress the ECM which in turn compresses the cells. Within some realistic approximations the amount of this compressive stress (the traction force applied by the matrix on the cell) can be approximated as the applied osmotic pressure:\n\n$$\nT_{big}=-\u03a0_{d}<0.\n$$\n\nIn sharp contrast with the previous situation, for small dextran, the stress applied by the ECM on the cell is tensile. In fact, the dominating effect is that small dextran compresses the cells but not the ECM. Thus, cell compression is balanced by a tensile force in the ECM. This tension is given by\n\n$$\nT_{small}=\\frac{G\u2062\u03a0_{d}}{3\u2062(1-\\beta)\u2062\u03a0_{e}}>0,\n$$\n\nwhere $G$ is the ECM shear modulus. Formulas (Equations 1, 2 and 3) hold in the ideal case, where osmolytes do not interact with the matrix and the axisymmetric system has stress free boundaries at infinity (the ECM ball radius is much larger than the cell radius).\n\nIn practice, for a moderate osmotic shock $\u03a0_{d}\u22435$ kPa, the dextran concentration is much smaller than the characteristic ion concentration of the external medium (few hundreds millimolars) and the tension can be considered negligible: $T_{small}\u224320\u2062Pa\u226a|T_{big}|\u22435\u2062kPa$ because the ECM is soft. Therefore, in this condition, the presence of ECM makes the cell mechanically sensitive to a moderate osmotic compression using big dextran molecules, but not when using small dextran molecules. In both cases the cell volume is affected in the same negligible way, but the mechanical stress applied by small dextran on the cell is negligible compared to that exerted by big dextran.\n\nIf the osmotic pressure is further increased, the compression with small or big dextran can induce a measurable effect on the cell volume. However, the mechanical stress applied by the ECM to the cell remains fundamentally different in both situations: tensile for the small dextran and compressive for the big one.\n\n### Selective compression of ECM in multicellular spheroids\n\nTo test our theoretical predictions that the interstitial space is compressed under dextran pressure, we injected individual MCS (4\u20135 days old) into a 2D confiner microsystem and let them relax for few hours (Figure 3a). The MCS were thus immobilized and partially flattened inside the 2D confiner. In order to follow the evolution of the interstitial space under an osmotic compression, the culture medium was supplemented with a fluorescent tracer. The interstitial fluorescence was measured using two-photon microscopy (Figure 3b). The images of the confined multicellular aggregates were normalized to the fluorescence of the external medium and segmented with a thresholding procedure, and the signal exceeding the threshold value was integrated over the whole aggregate to quantify the total fluorescence of the interstitial space (Figure 3c). Due to optical limitations, we emphasized the effect by increasing the applied osmotic pressure to $\u03a0_{d}=$ 40 kPa for small dextran and to $\u03a0_{d}=$ 15 kPa for the big ones.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63258/elife-63258-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic of the 2D confiner micro-device. The tissue is confined between the glass coverslip and the PDMS and does not move during medium exchange. (b) Two-photon images of the tissue before and after (20 min) osmotic shocks for dextran chains of 6 kDa (small) and 2MDa (big), for a given mass concentration of 100 g/L. Images were taken in the equatorial plane of the tissue, meaning 35 \u03bcm above the glass slide. Scale Bar: 50 \u03bcm (c) Mean fluorescence of the intercellular space averaged over the whole aggregate shown in panel b. (d) volume loss of spheroids submitted to $\u03a0_{d}^{S\u2062m\u2062a\u2062l\u2062l}$ = 40 kPa (small dextran) and $\u03a0_{d}^{B\u2062i\u2062g}$ = 15 kPa (big dextran).\n\nIn accordance with our theoretical predictions, we obtained two opposite behaviors, depending on the dextran size. Small dextran molecules induced a \u223c35 \u00b1 10% increase in the fluorescence intensity in the interstitial space (Figure 2c) while the total volume of the aggregate was reduced by \u223c10% (Figure 2d). Simultaneously, the cell volume decreased (Appendix 9), thus stretching the ECM into occupying more interstitial space. In contrast, for big dextran we measured a loss of half the fluorescence, meaning that a large amount of interstitial liquid had left the intercellular space of the aggregate. The extracellular matrix was thus compressed as predicted by Equation (2) and the overall MCS volume of the whole aggregate was reduced by \u223c17% (Figure 2d). We argued in Dolega et al., 2021 that the total volume reduction of the aggregate obtained with big dextran could be due mostly to the compressibility of the ECM, while the cells are quasi-incompressible. The volume reduction of the aggregate induced by a 15 kPa pressure did not differ much from the one obtained with a $\u03a0_{d}=5$ kPa compression, as the ECM was already fully squeezed at 5 kPa.\n\nThese results are consistent with our theoretical prediction that big and small dextran have an opposite effect on the matrix. The first puts the ECM under compression, while the latter puts the ECM under tension. Remarkably, in both cases, the cells within the aggregate undergo almost the same deformation.\n\n### ECM compression controls cell proliferation and motility\n\nTo understand the role of the ECM on the cell fate at longer timescale, we assessed the proliferation and the motility of cells within MCS cultured in the presence of small and big dextran. Figure 4a represents the equatorial cryosections of spheroids in the three mechanical states ($\u03a0_{d}$ = 0 kPa, $\u03a0_{d}$ = 5 kPa small dextran, and $\u03a0_{d}$ = 5 kPa big dextran). Proliferating cells were immuno-stained for Ki-67, a nuclear antigen present during the cell cycle, but absent in G0 phase (Gerdes et al., 1984). Whereas cells in control MCS ($\u03a0_{d}=0$ Pa) present a rather uniform proliferation pattern, a global compression of MCS (big Dextran) stops cell division in the core and alters the overall MCS growth, as previously reported (Helmlinger et al., 1997; Alessandri et al., 2013; Montel et al., 2011). The density of Ki67-positive cells is reported in panel Figure 4b, as a function of the distance from the spheroid center and for the three conditions represented in panel Figure 4a. Remarkably, under pressure the density of Ki67-positive cells uniformly decreases across the MCS. Consequently, the ratio between the proliferating cells in the periphery of the MCS and those in its core increases under pressure: 2 without pressure, 2.5 under 5 kPa exerted by small dextran and 5 when the same pressure is exerted by big dextran. To quantify the change of cell division rate, we monitored the volumetric growth of the spheroid for three conditions (control, small and big dextran) and for several days (Figure 4c\u2013d). In all cases, the spheroids initially grew exponentially (continuous lines). However, the MCS growth rate (time to double its volume) almost doubled under the big dextran compression, increasing from 36\u00a0\u00b1\u00a01 hr for the control and small dextran conditions (gray circles and blue squares, respectively) to 68\u00a0\u00b1\u00a04 hr for the compression with big dextran (green triangles).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63258/elife-63258-fig4-v2.jpg)\n\n**Figure 4.:** (a) Proliferating cells inside MCS revealed by immunostaining of KI67 with no pressure, under global compression of $\u03a0_{d}=5$ kPa (big dextran) and under selective compression of the cells by the same amount (small dextran). Scale bar: 100 $\\mu\u2062m$ (b) Density of Ki67-positive cells with respect to the distance from the center of the aggregate. Three conditions: No pressure (9 MCS), $\u03a0_{d}=5$ kPa with small dextran (26 MCS) and $\u03a0_{d}=5$ kPa with big dextran (19 MCS). Error bars = standard error of the mean. (c) Time evolution of the spheroid sizes (Full images are 700 \u00d7 700 \u03bcm) and (d) quantification of the volume increase, in the three reference conditions. (e) Cell migration speed within MCS also significantly depends on ECM compression. N\u00a0=\u00a05 independent experiments per condition. Error bars represent \u00b1 SEM. Experiments were repeated at least on three independent samples. (f) Division time of CT26 cells in 2D (Petri dish), respectively with no pressure (11.4\u00a0\u00b1\u00a00.5 hr), with $\u03a0_{d}=5$ kPa/small dextran (11.0\u00a0\u00b1\u00a00.3 hr) and with $\u03a0_{d}=5$ kPa/big dextran (10.9\u00a0\u00b1\u00a00.4 hr). (g) Mean velocity of individual cells on a Petri dish, before (N\u00a0=\u00a09) and after compression (N\u00a0=\u00a07).\n\nBecause experiments with MCS are typically performed in solution, where a metastatic behavior is not possible, we evaluated the cell motility within the aggregate, using the Dynamic Light Scattering technique introduced by Brunel et al., 2020 (see details in Appendix 11). The mean migration velocity of cells was reduced by 50% at $\u03a0_{d}$ = 5 kPa with big dextran, as compared to the unstressed case (Figure 4e). Strikingly, both proliferation and motility remained almost unaltered when the MCS were exposed to an equivalent pressure ($\u03a0_{d}=5$ kPa) applied by small dextran to selectively compress the cells while leaving the native ECM unstrained (small Dextran, blue).\n\nTo verify that neither proliferation nor motility are directly modified by the direct action of dextran in contact with the cells, we measured the proliferation and the velocity of individual cells plated in a Petri dish. Measurements were performed at low density to permit cell proliferation and migration. The results (Figure 4f-g) show that both proliferation and motility remained similar, before and after the addition of dextran at a final pressure $\u03a0_{d}\u2243$ 5 kPa.\n\nSince the interstitial space is dehydrated under osmotic compression, cells may get in contact with each other, occasioning contact inhibition of proliferation and locomotion. However, it is also possible that cells sense and react to the stress in the ECM. To discriminate between these two hypotheses, we embeded individual cells in a MG matrix, before compressing the whole system with an osmotic pressure $\u03a0_{d}=5$ kPa using either small or big dextran. After a few days, we observed two clearly different phenotypes. Cells grown without pressure or in the presence of small dextran were sparse in the MG (Figure 5a, left panel). Conversely, cells cultured with big dextran proliferated locally (Figure 5a, right panel). Therefore, MG compression appears to inhibit cell motility and to promote the formation of mini-spheroids, which suggests that ECM compression has a direct effect on the cell-ECM biophysical signaling. The different cell morphology is particularly clear in the organization of the actin cytoskeleton. Cytoplasmic actin labeling revealed the presence of numerous protrusions, associated with high cell anisotropy, in cells cultured in a relaxed MG matrix (Figure 5b, left and middle panels), whereas cells appeared smooth and formed round structures, when the MG was compressed (Figure 5b, right panel). Of note, cells at the MG surface often extended outside the MG. Those cells not fully embedded in MG were excluded from our analysis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63258/elife-63258-fig5-v2.jpg)\n\n**Figure 5.:** (a) Hoechst-labeled cell nuclei superimposed to phase image. Images are taken after 2 days of proliferation in MG, either with small (left panel) or big (right panel) dextran molecules. Maximal projection from epifluorescence stacks. (b) Cell morphology and anisotropy revealed by labeling of cytoplasmic actin. Maximal projection of 50 \u03bc m confocal Z-stack. In relaxed MG, the cells appear more elongated and with long protrusions. (c) Cell motility in MG under different compression states. Starting points of trajectories are translated to the origin, to highlight the typical distance over which cells move in the three compressive states. (d) Quantification of in-plane velocity extracted from mean square displacements, under different compression conditions. With no pressure or with small dextran (5 kPa), the average velocities are respectively 5.8\u00a0\u00b1\u00a00.8 $\\mu\u2062m$/ hr and 5.2\u00a0\u00b1\u00a00.5 $\\mu\u2062m$/ hr. Under 5 kPa exerted by big dextran, the cells are immobile (v\u00a0=\u00a00.5\u00a0\u00b1\u00a00.4 $\\mu\u2062m$), where the error is due to tracking uncertainties. (e) Temporal evolution of nuclear fluorescence intergrated over the whole sample. No pressure (\u03bf), 5 kPa with small dextran ($\u25a1$) and 5 kPa with big dextran ($\u25b3$). (f) Cell proliferation rate in the three conditions. n\u00a0=\u00a015, from eight independent experiments. (g) Cell proliferation rate at different initial matrigel concentration, with no pressure. Boxes represent the mean values \u00b1 SEM, error bars correspond to the standard deviation, small markers are individual experiments and large markers the median.\n\nThese different morphologies also correlates with different motilities. Cells embedded in a compressed MG were nearly immobile, while they migrated through relaxed MG with a velocity comparable to that measured on flat surfaces. The results are summarized in Figure 5c, where we report $\u224340$ trajectories per condition. To highlight differences and similarities between the three compression conditions, the starting points of all trajectories are translated to the origin and, although isotropic, they are divided in three quadrants. Quantification is reported in Figure 5d. From this experiment we conclude that whereas no appreciable differences are observable between control and the small dextran condition, the cell motility dramatically drops under MG compression with big dextran.\n\nTo quantify the effect of ECM compression on proliferation, we prepared several samples with the same number of hoechst-stained cells embedded in the MG and measured the overall fluorescence over time. Figure 5e shows the typical time evolution of the Hoechst signal for the three conditions: proliferation rate drops considerably when the MG is compressed (Big Dextran, $\u25b3$), compared to the case without pressure (\u03bf), but also compared to the case where the pressure is selectively exerted on the cells with no MG compression (Small Dextran, $\u25a1$). Figure 5f quantifies the mean growth rate, measured on at least 15 samples for each condition, collected on eight independent experiments (different days and cell passages). Under pressure, the matrigel get dehydrated and compacted, which may directly influence cell proliferation. On the one hand a denser matrigel is less compressible and, thus, less favorable to cell proliferation (Baker et al., 2015). On the other hand, matrigel compression concentrates matrix-bound growth factors, which may promote cell division. To determine which effect dominates, we measured the proliferation rate at different initial MG concentrations, between 2 g/l and 8 g/l (experiments reported in panels a-f were performed with MG at 4.5 g/l). Our experiments show that within this range, the matrigel density has little to no effect on cell proliferation (see Figure 5g). These experiments confirmed that it is the compressive stress transmitted to the cells by the surrounding ECM, rather than a direct osmotic pressure on the cells, that strongly impacts cell motility and proliferation.\n\n## Discussion\u00a0and\u00a0conclusion\n\nLarge osmotic and mechanical pressures (of the order of 100 kPa) can cause a decrease in cell volume and consequently a deformation of the cell nucleus (Zhou et al., 2009; Kim et al., 2015) which may ultimately feedback on the cell proliferation. It has been recently proposed that the volume of the cell or its nucleus can be key to crucial processes such as proliferation, invasion, and differentiation Guo et al., 2017; Han et al., 2020. However the weak osmotic pressures (of the order of 1 kPa) that we apply have no measurable effect on the cell volume. In addition, it is well-known from a biological standpoint that such small volume perturbations are buffered by active regulatory processes in the cell (Hoffmann et al., 2009; Cadart et al., 2019). Yet, both cell proliferation and motility decrease in MCS submitted to weak osmotic compression. Our results show that, for such weak compressions, the cell volume is unchanged while the ECM located in between the cells is directly impacted. This mechano-sensitive role of the ECM could explain the reported evidences that osmotic pressures applied by big dextran and mechanical pressures similarly affect the growth of MCS. (Helmlinger et al., 1997; Alessandri et al., 2013; Montel et al., 2011). Indeed, in this case the osmotic pressure induces a mechanical one applied on the cells through the ECM drainage. Thanks to its bulk modulus $K_{E\u2062C\u2062M}\u2243$ 1 kPa, the ECM behaves as a pressure sensor for the cell in the kPa range. Of note, stress relaxation in the ECM could occur through cleavage and remodeling of its components and such active processes should be quantified in the future.\n\nSeveral mechanisms may explain how the dehydration of the extracellular matrix can result in an inhibition of proliferation and motility. First, the reduction of the interstitial space promotes interactions between neighbouring cells, which may activate contact inhibition signals of both proliferation and locomotion (Roycroft and Mayor, 2016). Second, the ECM porosity and tortuosity change within a compressed MCS, such that its effective permeability to oxygen, nutrients, growth factors and cytokines is reduced and might activate inhibition signals without cell-cell contact. However, both options are incompatible with the results we obtained with single cells embedded in MG (Figure 5). During the first 2\u20133 days after seeding, cells are either isolated or grouped in aggregates of two to four cells with limited cell-cell contacts. Additionally, a key factor limiting the diffusion of oxygen and nutrients in MCS is the tortuosity of the interstitial space (Bl\u00e4\u00dfle et al., 2018). This constraint is simply absent in experiments with single cells embedded in MG, suggesting that the cell proliferation inhibition is most probably not related to hypoxia and starvation.\n\nThe present work therefore points at a direct mechanosensitive response of cells to the ECM deformation. The microscopic structure of the ECM is modified under compression (e.g. density increase and reduction of porosity), with consequences on the ECM rheology. Compression of the ECM is clearly accompanied by an increase in its bulk modulus and, due to its fibrillar structure, to a non-trivial and non-linear evolution of its stiffness (Sopher et al., 2018; Kurniawan et al., 2016). For example, the rheological properties of synthetic ECM have been shown to affect growth of aggregates and single cells through the regulation of streched-activated channels (Nam et al., 2019). As integrin-dependent signals and focal adhesion assembly are regulated by the stress and strain between the cell and the ECM, the osmotic compression may steer the fate of cells in terms of morphology, migration, and differentiation (Pelham and Wang, 1997; Choquet et al., 1997; Sunyer et al., 2016; Isenberg et al., 2009; Butcher et al., 2009; Engler et al., 2006; Staunton et al., 2019; Panzetta et al., 2019). This aspect is also relevant from an oncological point of view. Indeed the ECM is strongly modified in tumour tissues and the solid stress within tumors can reach several kPa, which is in accordance with the pressure applied here (Nia et al., 2017). For example, in tumors, there is a decrease in the ratio collagen/hyaluronan (Voutouri et al., 2016). The latter, more hydrophilic than the first one, tends to swell and stiffen the ECM. Whether a corrupted matrix is a contributing cause or the consequence of the neoplasia remains an open question, but the correlation between matrix mechanics and uncontrolled proliferation is more and more widely accepted (Bissell et al., 2002; Leli\u00e8vre and Bissell, 2006; Broders-Bondon et al., 2018).\n\nIn future experiments it will be crucial to identify whether the ECM compression and the associated changes in stiffness play a dominant role, or if \u2013 as we suggest \u2013 the mechanical stress applied on the cell through the ECM is the key ingredient directly triggering the cell biological adaptation in term of proliferation and motility.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell Line (mouse)</td>\n      <td>CT26</td>\n      <td>ATCC CRL-2638</td>\n      <td>RRID:CVCL_7256</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>Matrigel/MG</td>\n      <td>Corning; 354234</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Small Dextran</td>\n      <td>Sigma Aldrich; D9260</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Big Dextran</td>\n      <td>Sigma-Aldrich; D5376</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Fibronectin (Monoclonal mouse)</td>\n      <td>Sigma Aldrich; F7387</td>\n      <td>RRID:AB_476988</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ki-67 (Polyclonal rabbit)</td>\n      <td>Sigma Aldrich; AB9260</td>\n      <td>RRID:AB_2142366</td>\n      <td>(1:200)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture, MCSs formation, and growth under mechanical stress\n\nCT26 (mouse colon adenocarcinoma cells, ATCC CRL-2638); American Type Culture Collection were cultured under 37\u00b0C, 5% CO2 in DMEM supplemented with 10% calf serum and 1% antibiotic/antimycotic (culture medium). Cells are texted every month for mycoplasma. None of the experiments was made using cells with mycoplasma. Spheroid were prepared on agarose cushion in 96 well plates at the concentration of 500 cell/well and centrifuged initially for 5 min at 800 rpm to accelerate aggregation. After 2 days, Dextran (molecular mass 1, 10, 40, 70, 100, 200, 500, and 2000 kDa; Sigma-Aldrich, St. Louis, MO) was added to the culture medium to exert mechanical stress, as previously described (Monnier et al., 2016). To follow spheroid growth over the time, phase contrast images were taken daily. Spheroid were kept under constant pressure over observation period. Images were analysed manually using Imagej. Each experiment was repeated three times, with 32 individual spheroids per condition.\n\n### Measurement of MCSs volume\n\nThe area of the MCS equatorial section was measured before and after addition of dextran, then converted to volume assuming that the MCS is spherical. To induce compression, half of the culture medium was removed and replaced with fresh medium containing dextran 2X (two-fold the target concentration). The error affecting this measurement mainly comes from the fact that spheroids rotate during buffer exchange. As they are not perfectly spherical, the area of the equatorial section may change by up to few percent. To homogenize the experiments, control spheroids (no pressure) were also measured before and after buffer exchange. In the latter case, 50% of the culture medium was simply aspirated and replaced by fresh medium not supplemented with dextran.\n\n### Fabrication of Matrigel beads\n\nMatrigel beads (Matrigel Corning, Ref: 354234) were prepared using vortex method (Dolega et al., 2017). Oil phase of HFE-7500/PFPE-PEG (1.5% w/v) was cooled down to 4\u00b0C. For 400 \u03bcL of oil, 100 \u03bcL of Matrigel were added. Solution was vortexed at full speed for 20 s and subsequently kept at 37\u00b0C for 20 min for polymerization. Beads were eventually transferred to PBS phase by washing out the surfactant phase.\n\n### Fluorescence eXclusion method (single-cell volume measurements)\n\nCell volume was obtained using Fluorescence Exclusion microscopy (Cadart et al., 2017; Zlotek-Zlotkiewicz et al., 2015). Briefly, cells were incubated in PDMS chips, with medium supplemented with a fluorescent dye that does not enter the cells. Cells thus excluded fluorescence, and one extracted cellular volume by integrating the fluorescence intensity over the whole cell . Chips for volume measurements of single cells were made by pouring a mixture (1:10) of PMDS elastomer and curing agent (Sylgard 184) onto a brass master and cured at 80 \u00b0C for at least of 2 hr. Inlet and outlets were punched with a 3 mm biopsy puncher. Chips were prepared few days before, bounded with oxygen plasma for 30 s, warmed up at 80\u00b0C for 3 min then incubated with Poly-l-lysine (sigma) for 30 min to 1 hr, washed with PBS, then washed with dH2O, dried and stored sealed with a paraffin film. The chambers were washed with PBS before cell injection. Imaging started within 10 min after cell injection in order to prevent adhesion and thus cells response to the shear stress generated by the medium exchange. Acquisition was performed at 37\u00b0C in CO2 independent medium (Life Technologies) supplemented with 1 g/L FITC dextran (10 kDa, from Sigma Aldrich) on an epifluorescence microscope (Leica DMi8) with a 10x objective (NA. 0.3 from LEICA). Master molds were fabricated on a brass substrate with a micromilling machine (MiniMill/3; Minitech) using a 100-\u03bcm-diameter milling cutter (Minitech). Height profiles and surface roughness were measured with a vertical scanning interferometric profilometer (Brucker). 3D mold design and tool paths were generated using Autodesk Inventor Professional software (Autodesk). Molds for spheroid confinement were made with classical soft lithography techniques.\n\n### Tissue compression experiments\n\nSpheroids were harvested 4 or 5 days after cell seeding and injected in the 2D confiner microsystem (Figure 3a) using a MFCS pressure controller (Fluigent). Spheroid were partially flattened between two parallel surfaces, perpendicular to the optical axis of the microscope, and rested for two to 5 hr to relax in the microsystem at 37\u00b0C in CO2 independent medium. Before acquisition, medium supplemented with 2 g/L FITC-dextran (10 kDa from Sigma Aldrich) was injected to label the intercellular space. Medium exchange was performed manually using large inlets (<1 mm) during two-photon acquisition. Acquisitions were performed at 37\u00b0C on a Nikon C1 two-photon microscope coupled with a femtosecond laser at 780 nm with a 40x water-immersion (NA. 1.10) objective (Nikon). The 2D confiner chip was made by pouring PDMS elastomere and curing agent (1:10) into the mold and cured for at least 2 hr. The chips were bounded to glass coverslips with 30 s oxygen plasma, immediately after bounding. A solution of PLL-g-PEG (Surface Solutions) at 1 g/l was injected and incubated for 30 min in humid atmosphere to prevent cell surface adhesion during the experiment. The chips were washed with $d\u2062H_{2}\u2062O$ and dried and sealed with a paraffin film. Fluorescence of the Intercellular space (ICS) was measured using MatLab software. As control and dextran solutions have different levels of fluorescence, the fluorescence in the ICS was normalized by the one outside the ICS in order to compensate these variations. Then, first the tissue (cells and ICS) was segmented with a thresholding procedure. The threshold was determined in order to obtained accurate segmentation of the ICS before application of the osmotic stress. The surface of the ICS was computed as the ratio of pixels in the ICS to the number of pixels of the tissue. For each spheroid, 50 planes - 13 \u00b5m above and below the equatorial plane - were taken into account to compute the change of the ICS surface.\n\n### Cell culture in Matrigel\n\nExperiments have been conceived to start the culture from individual cells embedded in Matrigel. At day 1, the cells were resuspended, then dispersed in a solution containing matrigel at the final concentration of 4.5 g/l. The cells were diluted to 10,000\u201350,000 cells/ml, a concentration at which the average distance between neighboring cells is about 250\u2013400 \u03bcm. We therefore consider them as isolated entities. The MG/cell ensemble was gelified in 200 \u03bcl wells, at 37\u00b0C, for 30 min. To avoid cell sedimentation, we gently flipped the sample over, every two minutes. The samples were then redeposited in the incubator under three pressure conditions: no pressure and 5 kPa exerted by small and 5 kPa exerted big dextran.\n\n### Cells migration in Matrigel\n\nTo quantify cell migration in Matrigel, individual cells were observed by phase contrast microscopy. Z-stacks were collected every 20 min and for several days, with slices spaced by 50 \u03bcm. Then the full stack was projected to one single layer (maximum intensity projection). Cells were tracked manually in the 2D plane, using the ImageJ MTrackJ plugin (https://imagescience.org/meijering/software/mtrackj/).\n\n### Cryosectioning and immunostaining\n\nSpheroids were fixed with 5% formalin (Sigma Aldrich, HT501128) in PBS for 30 min and washed once with PBS. For cryopreservation spheroids were exposed to sucrose at 10% (w/v) for 1 hr, 20% (w/v) for 1 hr and 30% (w/v) overnight at 4\u00b0C. Subsequently spheroids were transferred to a plastic reservoir and covered with Tisse TEK OCT (Sakura) in an isopropanol/dry ice bath. Solidified samples were brought to the cryotome (Leica CM3000) and sectioned into 15 \u03bcm slices. Cut layers were deposited onto poly-L-lysine coated glass slides (Sigma) and the region of interest was delineated with DAKO pen. Samples were stored at \u221220\u00b0C prior immunolabelling. For fibronectin and Ki67 staining samples were permeabilized with Triton X 0.5% in TBS (Sigma T8787) for 15 min at RT. Nonspecific sites were blocked with 3% BSA (Bovine serum Albumin) for 1 hr. Then, samples were incubated with first antibody (Fibronectin, Sigma F7387, 1/200 and Ki67; Millipore ab9260, 1/500) overnight at 4\u00b0C. Subsequently samples were thoroughly washed with TBS three times, for 15 min each. A second fluorescent antibody (goat anti-mouse Cy3, Invitrogen; 1/1000) was incubated for 40 min along with phalloidin (1/500, Alexa Fluor 488, Thermo Fisher Scientific). After extensive washing with TBS (four washes of 15 min) glass cover slides were mounted on the glass slides with a Progold mounting medium overnight (Life Technologies P36965) and stored at 4\u00b0C before imaging.\n\n### Statistical analysis\n\nStudent\u2019s t-test (unpaired, two tailed, equal variances) was used to calculate statistical significance as appropriate by using the ttest2() function of Matlab (MathWorks). Statistical significance is given by *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.\n",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "359672c5-7e84-4764-b4e5-54be59401393",
+      "submission_id": "293f10ce-1d73-4315-b710-88e4ad0a9e22",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chase P Broedersz, Arnold Sommerfeld Center for Theoretical Physics, LMU Munich Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63258.sa1](https://doi.org/10.7554/eLife.63258.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper provides an elegant approach using crowding agents to study how distinct types of external mechanical perturbations influence the behavior of multicellular aggregates. The central finding is that cell proliferation and motility are significantly affected by solid stresses mediated by the extracellular matrix, whereas osmotic stresses of a similar magnitude have little effect. This finding highlights a mechano-sensory function of the extracellular matrix to regulate cell behavior in 3D environments.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Extra-cellular Matrix in cell aggregates is a proxy to mechanically control cell proliferation and motility\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nDolega et al. investigate how proliferation and motility of cells inside multicellular aggregates are affected by different types of compression such as an osmotic pressure or a solid stress mediated by an extracellular matrix. They develop a selective compression method using crowding agents like dextran of different sizes: by using dextran that is small enough to penetrate the matrix, they impose an osmotic stress on the cells, while larger non-penetrating dextran instead results in a solid stress exerted by the matrix. The central find of this work is that cell proliferation and motility are significantly affects by solid stresses mediated by the extracellular matrix, whereas osmotic stresses of a similar magnitude have little effect.\n\nEssential revisions:\n\nThe reviewers indicate that this is an interesting study and express enthusiasm about the ideas proposed in this study. However, several concerns are raised about the experimental evidence to support the main claims. Among other things, reviewer #2 points out that a better characterization of the ECM and the compressive deformations that are induced by the selective compression method is needed, as well as the induced compression of the cells. reviewer #3, raises similar issues, and suggest approaches to determine the stresses induced by the various types of dextran. While reviewer #1 seems quite positive overall, they also make the point that the precise mechanical role of the ECM in the observed behavior is not pinned down, and suggest that experiments that would clarify this would be a great addition. Together, the reports indicate the main claims of the manuscript would need to be more strongly supported by showing experimentally that the ECM is really produced by the cells and that there is ECM between the cells in the multicellular spheroids. In addition, the reviewers point out that direct evidence for induced stresses or deformations in the ECM is currently lacking. Finally, several comments from all reviewers raise issues about the statistical characterization of the data and possibly missing controls.\n\nReviewer #1:\n\nThis is an excellent study, which clearly demonstrates that the osmotic compression of the extracellular matrix (ECM) with large osmolytes reduces the growth rate of cells and their migration speed. In contrast, the same concentration of small osmolytes, which can infiltrate inside the ECM, results in a small tension of the ECM, while the growth rate of cells and their migration speed remain unaffected.\n\nAs the authors mention in the last paragraph of the Discussion, it remains unclear whether the observed behavior is due to the transmitted stress from the compressed ECM to the cells or due to the increased density of the compressed ECM. The authors mention that this could be resolved in the future by performing additional control experiments by varying the ECM density without any imposed osmotic pressure. Can the authors comment on how easy or hard it is to control the ECM density either in the matrigel or in the multicellular spheroids? If such experiments are straightforward, they would be a great addition to this paper.\n\nReviewer #2:\n\nThe manuscript provides an interesting work studying the effect of ECM transmitted compression on cancer cell proliferation and mobility. The main claim is that the ECM signals if cells are under global or local compression, thus resulting in different cell behavior. Although I really like the ideas proposed, I fear that the current data does not sufficiently support the claims. Overall the interpretation of the experimental data is largely exceeding what was actually shown. A simple example is that the authors constantly talk about ECM between cells in the MCS, however they never demonstrate that this ECM is indeed there. Unfortunately, there are a number of similar problems that largely reduce the quality of the work, making it currently unsuitable for publication in eLife.\n\n1) My biggest concern is that the main claim of the work is not supported by direct measurements. It is claimed that the reduction in proliferation and motility is because of the compression transmitted by the ECM. However, the ECM and its deformation is not measured in the MCS experiments. It is simply assumed that it is there, and that it has the same properties as a individually polymerized Matrigel (MG). It is well established that the ECM organization by cells is different from repolymerized gels. The authors argue with previous studies, however, as this is the main point of the paper it is important to directly demonstrate the presence and the effect of the force transmission of the ECM in situ.\n\nA possible experiment would be to prevent the ECM from forming in the spheroids, or to degrade it previous to the experiment. Alternatively the authors could try to use an inert hydrogel.\n\nThe very simple alternative to the ECM transmitted forces is that the cell directly push on each other, hence the ECM becomes irrelevant, as discussed by the authors. The authors try to convince the reader by the experiments of single cells in MG (Figure 5). However a simple explanation could be that due to pressure the density of the MG is beyond the point that motility is possible, hence the cells start clustering, and a local decrease of nutrients may explain the reduced proliferation.\n\nUnfortunately, the data presented does not sufficiently demonstrate the claims.\n\n2) It is quite irritating to be confronted with different pressures, and subsequent comparisons. Why not show the effect of 0,5,10 and 15 kPa pressure in all plots? Also the authors should provide statistical tests in all presented plots.\n\n3) Simple controls are missing. What is the speed and proliferation of these cells in a 2D surface without dextran, and with the different dextran types and concentrations (to exclude effects of Dextran itself)?\n\n4) The argument that commercially ECM is the same as cancer cells generate is not sufficiently backed regarding the importance of this point for the paper. You have to check if this is the case for the used cells, and if this is also happening in the spheroids.\n\n5) A main claim at the end of the subsection \u201cSelective-compression method\u201d is that the single cell compression can be used as proxy for the individual cell compression in the spheroids. I fear given the importance of this point for the main message it is necessary to measure the compression of the individual cells in the spheroid. This should be possible looking at the data presented in Figure 3 (i.e. using cell profiler).\n\n6) I am puzzled by the strong signal of KI67 in MCS without pressure. This suggests that almost all cells in the outer region are dividing, but the division time is 36 h. Since the mitosis needs about 1h, only 3% of the cells should be in mitosis. Here the thresholding is quite important and can lead to a wrong impression. Typically there should be no expression of KI67 during the time in between division (hence in more than 30h).\n\n7) I think an important check for the overall hypothesis can be done with the cell confiner. Polymerizing single cells in Matrigel without the dextran, and then confining it with the instrument should give the same phenotype as the big dextran. I suggest to do this experiment.\n\nReviewer #3:\n\nIn this manuscript, Dolega and colleagues examine the impact of osmotic pressure versus solid stress (or \"global compression\" as the authors describe) on proliferation and motility in cell aggregates cultured in 3D gels. They develop a clever method of using dextrans that are small, so they can penetrate the gel, or are large, so that they are excluded from the gel, to exert increased osmotic pressure or solid stress, respectively. They find that solid stress impacts cell proliferation and migration within clusters, whereas increased osmotic pressure has a limited impact.\n\nThe question of how solid stress impacts cells is an important question, which is particularly relevant to the context of tumor growth. Approaches to test the impact of uniform solid stress on cells are limited. It is often assumed that modulating osmotic pressure can simulate solid stress. However, the authors show here that this assumption is incorrect. Thus, the approach the authors develop to modulating solid stress, and the finding that solid stress has a different impact than increased osmotic pressure, is important and a nice advance for the field, which is in principle suitable for eLife. This approach could serve as a powerful tool for the community. However, the method and biological results need to be better characterized in order for this manuscript to be suitable for publication in eLife. Additional no mechanistic insights are provided; some mechanistic insight would make the manuscript more impactful.\n\n1) Characterization of method: How do the authors determine the solid stress for the large dextran used? Is it just assumed that whatever osmotic pressure is applied will translate to that amount of solid stress? While this might be the case, these gels are complex, some direct experimental measurement of this would build more confidence (e.g. by using a rheometer to measure negative normal stress of the gels or polyacrlymide hydrogel \"reporter\" beads). In addition, showing how solid stress varies as a function of big dextran density, and demonstrating the applicability of this idea in another common 3D culture gel system (e.g. collagen, PEG, agarose, or alginate) would facilitate the broader adoption and use of this technique.\n\n2) Some of the experiments need more detail and statistical analysis:\n\nFigure 2B, C and D \u2013 statistical analysis are needed.\n\nFigure 4A: pattern and/or levels of proliferation should be quantified. Single representative images are not sufficient: quantitative data supported by statistically significant differences are required to make conclusions.\n\nFigure 4B: are differences statistically significant? Statistical analyses should be included. Also, representative time series of images could be included.\n\nFigure 4C: timelapse studies should be conducted, and timelapse images included, to better display the motion that is described.\n\nFigure 5: statistical analysis should be included for D and F.\n\nFigures 4 and 5: multiple levels of solid stress would be ideal to show the trend.\n\nFigure 5: do cells extend beyond the periphery of the Matrigel beads?\n\n3) Mechanistic insights \u2013 there are really no mechanistic insights provided as to how increased solid stress might lead to some of the behaviors observed. This is unusual for eLife papers. Even a screen of implicated small molecule inhibitors (e.g. actin, myosin, Rho,.\u2026) could be valuable in generating some general idea into mechanism.\n",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9c5523a9-9363-45e8-b6a4-9116a704959f",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C1",
+      "claim": "Fibronectin is abundant in the interstitial space of multicellular spheroids made of CT26 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of hydrated extracellular matrix is evidenced by the abundance of fibronectin in the interstitial space (Figure 1a and Appendix 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescent staining shown in Figure 1a and referenced in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "1cc36332-65ef-457f-a51f-a19774674fce",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C2",
+      "claim": "The extracellular matrix is 100- to 1000-fold more compressible than cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As the ECM is 100- to 1000-fold more compressible than the cells, it absorbs most of the deformation, but still transmits the mechanical stress to the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property in the manuscript and is used to support the hypothesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "97960962-5460-409d-bb8c-9da3b12c9604",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C3",
+      "claim": "An osmotic pressure of a few kPa strongly reduces cell proliferation within multicellular aggregates but has no effect on individual cells cultured on a Petri dish in the absence of ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, whereas an osmotic pressure of a few kPa strongly reduces the cell proliferation within multicellular aggregates, an identical pressure has no effect on individual cells cultured on a Petri dish, in the absence of ECM (Montel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work by Montel et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "b292d1a8-42ec-496e-834a-df2b2746e480",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C4",
+      "claim": "Drugs affecting cytoskeleton organization have a negligible effect on the effective compressibility of multicellular aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the use of drugs affecting the cytoskeleton organization has a negligible effect on the effective compressibility of multicellular aggregates (Appendix 12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data referenced in Appendix 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "5c41ced1-9dcb-4c1a-a3df-a056d674501b",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C5",
+      "claim": "Volume loss under compression in multicellular aggregates is mainly due to ECM dehydration.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the volume loss under compression is mainly due to ECM dehydration (Dolega et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dolega et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "77f8d864-a72b-4656-850e-d99905375c69",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C6",
+      "claim": "Big osmolytes do not penetrate through the ECM and induce a global compression.",
+      "claim_type": "EXPLICIT",
+      "source": "When big enough, the osmolytes do not infiltrate the ECM and thus compress the whole aggregate by dehydrating the ECM, which in turn mechanically compresses the cells (Monnier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Monnier et al., 2016 and is part of the experimental method description.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "027d0239-c266-4afc-afe6-ca64931a9104",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C7",
+      "claim": "Small osmolytes percolate through the ECM meshwork and compress the cells which can then pull on the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "When smaller than the exclusion size of the ECM, the osmolytes percolate through the ECM meshwork and compress the cells which can then pull on the ECM (see schematic in Figure 1b\u2013d and Appendix 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the schematic in Figure 1b-d and Appendix 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "06d4d30c-bbb6-454e-b952-ca4ea5955146",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C8",
+      "claim": "Fluorescent dextran molecules with a gyration radius below 5 nm equally color matrigel beads and the surrounding solution.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2a (top panel), fluorescent dextran molecules with a gyration radius below 5 nm (MW <70 kDa, hereafter called 'Small'; Granath, 1958) equally color the MG beads and the surrounding solution (left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the image in Figure 2a and a citation to Granath, 1958.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "0b955c1a-db41-4a5a-9fb1-8974b78c36ec",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C9",
+      "claim": "Dextran molecules larger than 15 nm do not penetrate inside matrigel beads.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, dextran molecules larger than 15 nm (MW >500 kDa, Big') do not penetrate inside the MG beads, which appear darker than the surroundings (right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the image in Figure 2a showing darker beads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "027ad4aa-a2d0-4b57-9f19-114ef77068be",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C11",
+      "claim": "Big dextran molecules compress matrigel beads by 63 \u00b1 5% at \u03a0d=5 kPa.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the same pressure caused by big dextran molecules occasions a much larger compression of 63 \u00b1 5% (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "9049d4c7-55de-46ba-90e0-6e3009ecc1cd",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C13",
+      "claim": "Multicellular spheroids have a typical effective osmotic modulus of Ks\u2243 30 kPa, 15-folds smaller than that of individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these measurements indicate that MCS have a typical effective osmotic modulus of Ks\u2243 30 kPa, 15-folds smaller than that of individual cells (Dolega et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements and a citation to Dolega et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "405b7bad-b51e-4942-8f4d-852cfddf71a9",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C14",
+      "claim": "Small dextran molecules have no measurable effect on the volume of multicellular spheroids for moderate osmotic pressures up to \u03a0d=10 kPa.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, small dextran molecules have no measurable effect on the volume of MCS, for moderate osmotic pressures (up to \u03a0d=10 kPa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations of MCS volume.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "1a6a5a78-2955-469f-a342-099afa9dbde5",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C15",
+      "claim": "The application of \u03a0d with both small or big dextran leads to the same cell volume loss which does not involve the mechanical properties of the ECM but only the cell volume regulation system.",
+      "claim_type": "EXPLICIT",
+      "source": "We show in Appendix A.5 that, for realistic estimates of the model parameters, the application of \u03a0d with both small or big dextran leads to the same cell volume loss which does not involve the mechanical properties of the ECM but only the cell volume regulation system",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is derived from theoretical modeling presented in Appendix A.5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "351cc2a0-8a58-4e2a-b4ae-a665e34bbeba",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C20",
+      "claim": "Small dextran molecules induced a \u223c35 \u00b1 10% increase in the fluorescence intensity in the interstitial space at \u03a0d = 40 kPa.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with our theoretical predictions, we obtained two opposite behaviors, depending on the dextran size. Small dextran molecules induced a \u223c35 \u00b1 10% increase in the fluorescence intensity in the interstitial space (Figure 2c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence measurements shown in Figure 2c (which is actually Figure 3c based on the figure caption).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "f1d85d90-80fa-4be6-b9a0-0a14c5241b02",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C21",
+      "claim": "Big dextran caused a loss of half the fluorescence in the interstitial space, indicating that a large amount of interstitial liquid had left the intercellular space of the aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for big dextran we measured a loss of half the fluorescence, meaning that a large amount of interstitial liquid had left the intercellular space of the aggregate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by fluorescence measurements and their interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "1cc0a39d-e7bc-4291-9e11-64fcae732129",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C22",
+      "claim": "Cells in control multicellular spheroids (\u03a0d=0 Pa) present a rather uniform proliferation pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas cells in control MCS (\u03a0d=0 Pa) present a rather uniform proliferation pattern, a global compression of MCS (big Dextran) stops cell division in the core and alters the overall MCS growth, as previously reported (Helmlinger et al., 1997; Alessandri et al., 2013; Montel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunostaining data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "57dbe691-45ee-4dde-8aa5-9195e79fe380",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C23",
+      "claim": "Global compression of multicellular spheroids with big dextran stops cell division in the core and alters the overall MCS growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas cells in control MCS (\u03a0d=0 Pa) present a rather uniform proliferation pattern, a global compression of MCS (big Dextran) stops cell division in the core and alters the overall MCS growth, as previously reported (Helmlinger et al., 1997; Alessandri et al., 2013; Montel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunostaining data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "4503a146-9c50-41ab-b2be-479884dd0897",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C24",
+      "claim": "Under pressure, the density of Ki67-positive cells uniformly decreases across the multicellular spheroid.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, under pressure the density of Ki67-positive cells uniformly decreases across the MCS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Ki67 immunostaining data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "3df661b1-3602-46fc-b3c2-b7f17027e1b1",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C25",
+      "claim": "The ratio between proliferating cells in the periphery and those in the core of multicellular spheroids is 2 without pressure, 2.5 under 5 kPa exerted by small dextran, and 5 when the same pressure is exerted by big dextran.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the ratio between the proliferating cells in the periphery of the MCS and those in its core increases under pressure: 2 without pressure, 2.5 under 5 kPa exerted by small dextran and 5 when the same pressure is exerted by big dextran.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is derived from analysis of Ki67 staining data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "65945458-2a02-453f-afc8-882fdca9b5d4",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C26",
+      "claim": "The multicellular spheroid growth rate (time to double its volume) almost doubled under big dextran compression, increasing from 36 \u00b1 1 hr for control and small dextran conditions to 68 \u00b1 4 hr for compression with big dextran.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the MCS growth rate (time to double its volume) almost doubled under the big dextran compression, increasing from 36 \u00b1 1 hr for the control and small dextran conditions (gray circles and blue squares, respectively) to 68 \u00b1 4 hr for the compression with big dextran (green triangles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by volumetric growth measurements shown in Figure 4c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "456e3334-7329-4f5a-8a5d-2f32966c8645",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C27",
+      "claim": "Cell migration speed within multicellular spheroids was reduced by 50% at \u03a0d = 5 kPa with big dextran compared to the unstressed case.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean migration velocity of cells was reduced by 50% at \u03a0d = 5 kPa with big dextran, as compared to the unstressed case (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Dynamic Light Scattering measurements shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "31ad800d-cb53-40bd-95a8-6821a7576bef",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C28",
+      "claim": "Both proliferation and motility remained almost unaltered when multicellular spheroids were exposed to \u03a0d=5 kPa applied by small dextran.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, both proliferation and motility remained almost unaltered when the MCS were exposed to an equivalent pressure (\u03a0d=5 kPa) applied by small dextran to selectively compress the cells while leaving the native ECM unstrained (small Dextran, blue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by proliferation and motility measurements shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "4f43bb8d-38a3-4c37-a692-64923fd7be9a",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C29",
+      "claim": "Both proliferation and motility of individual cells plated in a Petri dish remained similar before and after the addition of dextran at \u03a0d\u2243 5 kPa.",
+      "claim_type": "EXPLICIT",
+      "source": "The results (Figure 4f-g) show that both proliferation and motility remained similar, before and after the addition of dextran at a final pressure \u03a0d\u2243 5 kPa.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements shown in Figure 4f-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "4b399c14-4da7-4dd5-8945-91c8bf0accfe",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C30",
+      "claim": "Cells grown without pressure or in the presence of small dextran were sparse in matrigel.",
+      "claim_type": "EXPLICIT",
+      "source": "After a few days, we observed two clearly different phenotypes. Cells grown without pressure or in the presence of small dextran were sparse in the MG (Figure 5a, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by images shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "980b7801-e08b-43c7-a7e6-de42c3bc922c",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C31",
+      "claim": "Cells cultured with big dextran proliferated locally in matrigel.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, cells cultured with big dextran proliferated locally (Figure 5a, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by images shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "cc4ca371-58fa-4e69-bf2b-f85a2b74939f",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C32",
+      "claim": "Matrigel compression appears to inhibit cell motility and to promote the formation of mini-spheroids.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, MG compression appears to inhibit cell motility and to promote the formation of mini-spheroids, which suggests that ECM compression has a direct effect on the cell-ECM biophysical signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from observations of cell behavior in compressed matrigel.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "f1614a60-a7c7-45a7-9f12-37bbeb93f149",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C33",
+      "claim": "Cells cultured in relaxed matrigel matrix show numerous protrusions and high cell anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic actin labeling revealed the presence of numerous protrusions, associated with high cell anisotropy, in cells cultured in a relaxed MG matrix (Figure 5b, left and middle panels)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by actin labeling shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "ee7ac7ae-2106-4fa4-8b5a-40c03c23e148",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C34",
+      "claim": "Cells in compressed matrigel appeared smooth and formed round structures.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas cells appeared smooth and formed round structures, when the MG was compressed (Figure 5b, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by actin labeling shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "6379bbce-be8d-491c-8621-c351019e1f3f",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C35",
+      "claim": "Cells embedded in compressed matrigel were nearly immobile.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells embedded in a compressed MG were nearly immobile, while they migrated through relaxed MG with a velocity comparable to that measured on flat surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell tracking data shown in Figure 5c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "dbcc67a2-6625-4043-82f6-d0c388f2863d",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C36",
+      "claim": "Cells migrated through relaxed matrigel with a velocity comparable to that measured on flat surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells embedded in a compressed MG were nearly immobile, while they migrated through relaxed MG with a velocity comparable to that measured on flat surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell tracking data shown in Figure 5c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "e6bd381b-f7fe-4d5b-8b57-b78eac93fd0e",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C40",
+      "claim": "Cell proliferation rate drops considerably when matrigel is compressed with big dextran compared to the case without pressure and compared to the case where pressure is selectively exerted on cells with small dextran.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5e shows the typical time evolution of the Hoechst signal for the three conditions: proliferation rate drops considerably when the MG is compressed (Big Dextran, \u25b3), compared to the case without pressure (\u03bf), but also compared to the case where the pressure is selectively exerted on the cells with no MG compression (Small Dextran, \u25a1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence measurements shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "20df3bfa-90b2-4a35-93f2-3bd9a048af1c",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C41",
+      "claim": "Within the range of 2 g/l to 8 g/l, matrigel density has little to no effect on cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments show that within this range, the matrigel density has little to no effect on cell proliferation (see Figure 5g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by proliferation measurements at different matrigel concentrations shown in Figure 5g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "c936fbf1-1e52-4ee1-aded-b354a56f970c",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C42",
+      "claim": "It is the compressive stress transmitted to the cells by the surrounding ECM, rather than a direct osmotic pressure on the cells, that strongly impacts cell motility and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments confirmed that it is the compressive stress transmitted to the cells by the surrounding ECM, rather than a direct osmotic pressure on the cells, that strongly impacts cell motility and proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of experiments with small and big dextran.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "490feb2b-4e82-41f1-aca3-7c7dd97c7931",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C43",
+      "claim": "Large osmotic and mechanical pressures (of the order of 100 kPa) can cause a decrease in cell volume and consequently a deformation of the cell nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Large osmotic and mechanical pressures (of the order of 100 kPa) can cause a decrease in cell volume and consequently a deformation of the cell nucleus (Zhou et al., 2009; Kim et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Zhou et al., 2009 and Kim et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "6f4f8749-ec35-4778-9bc7-55ad22430da4",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C44",
+      "claim": "The volume of the cell or its nucleus can be key to crucial processes such as proliferation, invasion, and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been recently proposed that the volume of the cell or its nucleus can be key to crucial processes such as proliferation, invasion, and differentiation Guo et al., 2017; Han et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Guo et al., 2017 and Han et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "36770635-9507-4736-b105-a0a2783494fe",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C45",
+      "claim": "Weak osmotic pressures (of the order of 1 kPa) have no measurable effect on cell volume.",
+      "claim_type": "EXPLICIT",
+      "source": "However the weak osmotic pressures (of the order of 1 kPa) that we apply have no measurable effect on the cell volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "b196608e-087c-4ce9-9692-157f99b7b457",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C46",
+      "claim": "Small volume perturbations are buffered by active regulatory processes in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is well-known from a biological standpoint that such small volume perturbations are buffered by active regulatory processes in the cell (Hoffmann et al., 2009; Cadart et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hoffmann et al., 2009 and Cadart et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "05da5792-9e74-44f3-bbeb-a3caddde706a",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C47",
+      "claim": "Both cell proliferation and motility decrease in multicellular spheroids submitted to weak osmotic compression.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, both cell proliferation and motility decrease in MCS submitted to weak osmotic compression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "719d3ca2-2105-4be8-89cc-199b1286873d",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C48",
+      "claim": "For weak compressions, the cell volume is unchanged while the ECM located in between the cells is directly impacted.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that, for such weak compressions, the cell volume is unchanged while the ECM located in between the cells is directly impacted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the combined results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "e2bb0deb-23e6-40f5-a2f7-1ccf3c523928",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C49",
+      "claim": "The mechano-sensitive role of the ECM could explain the reported evidences that osmotic pressures applied by big dextran and mechanical pressures similarly affect the growth of multicellular spheroids.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechano-sensitive role of the ECM could explain the reported evidences that osmotic pressures applied by big dextran and mechanical pressures similarly affect the growth of MCS. (Helmlinger et al., 1997; Alessandri et al., 2013; Montel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the study's results and supported by citations to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "e0f727cb-a129-4fdb-afe9-b23f38e7bd0a",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C51",
+      "claim": "The reduction of the interstitial space promotes interactions between neighbouring cells, which may activate contact inhibition signals of both proliferation and locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the reduction of the interstitial space promotes interactions between neighbouring cells, which may activate contact inhibition signals of both proliferation and locomotion (Roycroft and Mayor, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative mechanism supported by a citation to Roycroft and Mayor, 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "77ff94c8-4e9d-416e-885d-d914df58fdb6",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C52",
+      "claim": "The ECM porosity and tortuosity change within a compressed multicellular spheroid, such that its effective permeability to oxygen, nutrients, growth factors and cytokines is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the ECM porosity and tortuosity change within a compressed MCS, such that its effective permeability to oxygen, nutrients, growth factors and cytokines is reduced and might activate inhibition signals without cell-cell contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative mechanism based on physical reasoning.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "de7b0758-7317-4a33-bfe8-7958dfe8ef94",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C53",
+      "claim": "A key factor limiting the diffusion of oxygen and nutrients in multicellular spheroids is the tortuosity of the interstitial space.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a key factor limiting the diffusion of oxygen and nutrients in MCS is the tortuosity of the interstitial space (Bl\u00e4\u00dfle et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bl\u00e4\u00dfle et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "cc5ef0bd-0c1e-41f1-a563-55a3556a4365",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C54",
+      "claim": "The cell proliferation inhibition is most probably not related to hypoxia and starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "This constraint is simply absent in experiments with single cells embedded in MG, suggesting that the cell proliferation inhibition is most probably not related to hypoxia and starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the absence of tortuosity effects in single cell experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "5f069981-14c6-4d84-b03a-29f395d79dd8",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C55",
+      "claim": "The microscopic structure of the ECM is modified under compression (e.g. density increase and reduction of porosity), with consequences on the ECM rheology.",
+      "claim_type": "EXPLICIT",
+      "source": "The microscopic structure of the ECM is modified under compression (e.g. density increase and reduction of porosity), with consequences on the ECM rheology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge of ECM behavior under compression.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "2cdd9b5c-2050-48cc-a7c1-85693d79bceb",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C56",
+      "claim": "Compression of the ECM is accompanied by an increase in its bulk modulus and a non-trivial and non-linear evolution of its stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Compression of the ECM is clearly accompanied by an increase in its bulk modulus and, due to its fibrillar structure, to a non-trivial and non-linear evolution of its stiffness (Sopher et al., 2018; Kurniawan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sopher et al., 2018 and Kurniawan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "120956f5-153d-4f38-903c-561242f57e65",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C57",
+      "claim": "The rheological properties of synthetic ECM have been shown to affect growth of aggregates and single cells through the regulation of stretched-activated channels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the rheological properties of synthetic ECM have been shown to affect growth of aggregates and single cells through the regulation of streched-activated channels (Nam et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nam et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "2df16c86-019c-4dab-9d63-38051a9b8ce9",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C58",
+      "claim": "Integrin-dependent signals and focal adhesion assembly are regulated by the stress and strain between the cell and the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "As integrin-dependent signals and focal adhesion assembly are regulated by the stress and strain between the cell and the ECM, the osmotic compression may steer the fate of cells in terms of morphology, migration, and differentiation (Pelham and Wang, 1997; Choquet et al., 1997; Sunyer et al., 2016; Isenberg et al., 2009; Butcher et al., 2009; Engler et al., 2006; Staunton et al., 2019; Panzetta et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "31810463-8346-4284-a8fa-239ca385562c",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C59",
+      "claim": "The ECM is strongly modified in tumour tissues and the solid stress within tumors can reach several kPa.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed the ECM is strongly modified in tumour tissues and the solid stress within tumors can reach several kPa, which is in accordance with the pressure applied here (Nia et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nia et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "b54ba6ba-8acd-42c6-879a-d0f5cfb5c142",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C60",
+      "claim": "In tumors, there is a decrease in the ratio collagen/hyaluronan.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in tumors, there is a decrease in the ratio collagen/hyaluronan (Voutouri et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Voutouri et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "d82861ac-5789-4ab3-8a38-916cca1d0ff0",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C61",
+      "claim": "Hyaluronan, more hydrophilic than collagen, tends to swell and stiffen the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter, more hydrophilic than the first one, tends to swell and stiffen the ECM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on known properties of hyaluronan.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "a5b41c02-c086-4b4c-85f9-f8bd375d3c2b",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C62",
+      "claim": "The correlation between matrix mechanics and uncontrolled proliferation is more and more widely accepted.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether a corrupted matrix is a contributing cause or the consequence of the neoplasia remains an open question, but the correlation between matrix mechanics and uncontrolled proliferation is more and more widely accepted (Bissell et al., 2002; Leli\u00e8vre and Bissell, 2006; Broders-Bondon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bissell et al., 2002, Leli\u00e8vre and Bissell, 2006, and Broders-Bondon et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "afa25447-8cc4-4c4d-8b50-4802f6a11417",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C63",
+      "claim": "Global compressions have a strong impact on the aggregates growth and internal cell motility, while selective compressions of same magnitude have almost no effect.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing results of selective osmotic compressions of CT26 mouse cells within multicellular aggregates and global aggregate compressions, we show that global compressions have a strong impact on the aggregates growth and internal cell motility, while selective compressions of same magnitude have almost no effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is the main finding of the study, supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "19338ed9-88ac-4cea-bf92-4dc560528871",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C64",
+      "claim": "Both global and selective compressions alter the volume of individual cells in the same way over a short-timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "Both compressions alter the volume of individual cells in the same way over a shor-timescale, but, by draining the water out of the extracellular matrix, the global one imposes a residual compressive mechanical stress on the cells over a long-timescale, while the selective one does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a key finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "3c393f89-a2be-42ab-90f3-f99c50e7c463",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C65",
+      "claim": "By draining the water out of the extracellular matrix, global compression imposes a residual compressive mechanical stress on the cells over a long-timescale, while selective compression does not.",
+      "claim_type": "EXPLICIT",
+      "source": "Both compressions alter the volume of individual cells in the same way over a shor-timescale, but, by draining the water out of the extracellular matrix, the global one imposes a residual compressive mechanical stress on the cells over a long-timescale, while the selective one does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a key finding of the study, supported by experimental data and theoretical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "06164eff-48ae-4623-b655-23ce23ead667",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C66",
+      "claim": "The extracellular matrix acts as a sensor that mechanically regulates cell proliferation and migration in a 3D environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the extracellular matrix is as a sensor that mechanically regulates cell proliferation and migration in a 3D environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, inferred from all experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "3e50e2e6-aea5-4d4b-8b7b-24fd7a2a4cf0",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C67",
+      "claim": "Imposed deformations play an important role in morphogenesis and tissue homeostasis, both in normal and pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Imposed deformations play an important role in morphogenesis and tissue homeostasis, both in normal and pathological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "e8f6585c-041f-4242-9f37-5edb235ab0c6",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C68",
+      "claim": "The ECM is a non-cellular component of tissues providing a scaffold for cellular adhesion and triggering numerous mechanotransduction pathways, involved in morphogenesis and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ECM is a non-cellular component of tissues providing a scaffold for cellular adhesion and triggering numerous mechanotransduction pathways, involved in morphogenesis and homeostasis (Vogel, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Vogel, 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "564041d5-4be1-481c-8b38-fc8f1d3d89f3",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C69",
+      "claim": "Changing the mechanical properties of the ECM by re-implanting tissues or changing the stiffness of the adherent substrate is sufficient to reverse aging.",
+      "claim_type": "EXPLICIT",
+      "source": "An increasing number of studies in vivo and in vitro shows that changing the mechanical properties of the ECM by re-implanting tissues or changing the stiffness of the adherent substrate is sufficient to reverse aging (Segel et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Segel et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "62967d7c-9775-4b52-b884-ebe0ac4f8658",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C70",
+      "claim": "Changing the mechanical properties of the ECM can accelerate developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "An increasing number of studies in vivo and in vitro shows that changing the mechanical properties of the ECM by re-implanting tissues or changing the stiffness of the adherent substrate is sufficient to reverse aging (Segel et al., 2019), accelerate developmental processes (Barriga et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Barriga et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "7c416666-8fec-43af-a51e-b37a72a01a48",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C71",
+      "claim": "Changing the mechanical properties of the ECM can modulate tumor malignancy.",
+      "claim_type": "EXPLICIT",
+      "source": "An increasing number of studies in vivo and in vitro shows that changing the mechanical properties of the ECM by re-implanting tissues or changing the stiffness of the adherent substrate is sufficient to reverse aging (Segel et al., 2019), accelerate developmental processes (Barriga et al., 2018) or modulate tumor malignancy (Paszek et al., 2005; Tanner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Paszek et al., 2005 and Tanner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "74a1e3e6-06d5-427b-afef-64ec1f7cd5f8",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C72",
+      "claim": "The importance of the mechanical context in cancer has been highlighted by experiments altering the composition and stiffness of the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the mechanical context in cancer has been highlighted for a long time by experiments altering the composition and stiffness of the ECM (Levental et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Levental et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "2529e51f-3183-4d01-af2b-e45b2dbae7bb",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C73",
+      "claim": "Tumor growth is modulated by the mechanical compression caused by the tumor itself, as it expands in a confined environment.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that the tumor growth is modulated by the mechanical compression caused by the tumor itself, as it expands in a confined environment (Fernandez-Sanchez et al., 2010; Nia et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fernandez-Sanchez et al., 2010 and Nia et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "9d168305-3872-49e5-a637-d6e3c43dc303",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C74",
+      "claim": "When multicellular aggregates are confined by soft gels, their growth is substantially reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "When multicellular aggregates are confined by soft gels (Helmlinger et al., 1997; Alessandri et al., 2013; Taubenberger et al., 2019) or submitted to a gentle osmotic compression (Montel et al., 2011; Dolega et al., 2017), their growth is substantially reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "08ead703-5b02-4372-ad93-c59a14337f7f",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C75",
+      "claim": "When multicellular aggregates are submitted to a gentle osmotic compression, their growth is substantially reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "When multicellular aggregates are confined by soft gels (Helmlinger et al., 1997; Alessandri et al., 2013; Taubenberger et al., 2019) or submitted to a gentle osmotic compression (Montel et al., 2011; Dolega et al., 2017), their growth is substantially reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Montel et al., 2011 and Dolega et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "9e0fc1de-8148-405d-8659-d0bfbe7b5fa6",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C76",
+      "claim": "The cell cytoskeleton is involved in the response to compression and can trigger the growth impediment through a cell-cycle inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that the cell cytoskeleton is involved in the response to compression and can trigger the growth impediment through a cell-cycle inhibition (Taubenberger et al., 2019; Delarue et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Taubenberger et al., 2019 and Delarue et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "6ca42b7a-7097-43d0-8470-adbe36cf1da9",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C77",
+      "claim": "The cellular volume has been recently proposed to be a key parameter in the mechanosensitive pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the cellular volume has been recently proposed to be a key parameter in the mechanosensitive pathway (Delarue et al., 2014; Han et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Delarue et al., 2014 and Han et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "9252bcd5-06be-4ce3-9186-e070e159568d",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C78",
+      "claim": "An aggregate is a composite material made of cells, extracellular matrix and interstitial fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "First, an aggregate is a composite material made of cells, extracellular matrix and interstitial fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about aggregate composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "7f2eeb83-921c-48a0-a0db-c28e9a44a125",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C79",
+      "claim": "CT26 cells are murine colon carcinoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous experiments were performed using individual CT26 cells (murine colon carcinoma cells) and multicellular spheroids made with the same cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the cell line used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "3829fdc8-4ebd-47b3-b4a8-b880f2c69b7a",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C80",
+      "claim": "The division time of CT26 cells in 2D (Petri dish) with no pressure is 11.4 \u00b1 0.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Division time of CT26 cells in 2D (Petri dish), respectively with no pressure (11.4 \u00b1 0.5 hr), with \u03a0d=5 kPa/small dextran (11.0 \u00b1 0.3 hr) and with \u03a0d=5 kPa/big dextran (10.9 \u00b1 0.4 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "627fe87a-5f7e-4240-a557-5484eaae078b",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C81",
+      "claim": "The division time of CT26 cells in 2D with \u03a0d=5 kPa/small dextran is 11.0 \u00b1 0.3 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Division time of CT26 cells in 2D (Petri dish), respectively with no pressure (11.4 \u00b1 0.5 hr), with \u03a0d=5 kPa/small dextran (11.0 \u00b1 0.3 hr) and with \u03a0d=5 kPa/big dextran (10.9 \u00b1 0.4 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "6be5a27e-1592-4a79-83fe-191990505ff2",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "claim_id": "C82",
+      "claim": "The division time of CT26 cells in 2D with \u03a0d=5 kPa/big dextran is 10.9 \u00b1 0.4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Division time of CT26 cells in 2D (Petri dish), respectively with no pressure (11.4 \u00b1 0.5 hr), with \u03a0d=5 kPa/small dextran (11.0 \u00b1 0.3 hr) and with \u03a0d=5 kPa/big dextran (10.9 \u00b1 0.4 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "551cc5c0-a600-46fa-b045-efedb12ce194",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that dextran molecules of different sizes differentially penetrate matrigel based on their gyration radius. Small dextran (<5 nm, <70 kDa) permeates the ECM meshwork and compresses cells, while big dextran (>15 nm, >500 kDa) is excluded from the ECM and compresses the entire aggregate by dehydrating the ECM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 are well-supported by fluorescence imaging data (Figure 2a) showing differential penetration of dextran molecules into matrigel beads based on size, with appropriate citation to Granath, 1958 for molecular weight-size relationships. The visual evidence clearly demonstrates the size-dependent exclusion principle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "586977e7-e0bb-4ff9-a745-659c81a7b492",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors show that matrigel beads compress by 63\u00b15% under 5 kPa pressure from big dextran, while multicellular spheroids have an effective osmotic modulus of ~30 kPa (15-fold smaller than individual cells) and show no measurable volume change with small dextran at moderate pressures (up to 10 kPa).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C13, and C14 are supported by quantitative measurements shown in Figure 2b-d with appropriate error bars and statistical analysis. The differential compressibility between matrigel, individual cells, and MCS is clearly demonstrated with proper controls and replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "316e18b7-34f6-4bf5-a2a4-7f5c566a9b70",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Theoretical modeling predicts that both small and big dextran lead to the same cell volume loss, which depends only on the cell volume regulation system and not on ECM mechanical properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is supported by theoretical derivations in Appendix A.5, with the model providing Equation 1 that shows cell volume change depends on osmotic pressure and ion pumping parameters but not ECM mechanics. The theoretical framework is internally consistent with the experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "dd35d873-6f02-4f8b-8f89-52f58177f6bd",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Small dextran at 40 kPa induces a ~35\u00b110% increase in interstitial fluorescence (indicating ECM swelling), while big dextran causes a 50% loss of interstitial fluorescence (indicating ECM dehydration and compression).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by two-photon fluorescence microscopy measurements (Figure 3c) with appropriate normalization procedures and quantification methods described in Materials and Methods. The opposite effects of small vs. big dextran on interstitial space are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "f1f3401b-62b5-4fc1-a205-48428cb173f6",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Global compression with big dextran stops cell division in the MCS core and alters overall growth, with Ki67-positive cell density uniformly decreasing under pressure. The periphery-to-core ratio of proliferating cells increases from 2 (no pressure) to 2.5 (small dextran) to 5 (big dextran).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are supported by Ki67 immunostaining data (Figure 4a-b) with spatial analysis across the spheroid radius. The quantification shows clear differences between conditions with appropriate sample sizes (9-26 MCS per condition) and statistical analysis, consistent with prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "04e11b96-54f7-4f22-9230-317b58fdee5a",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MCS growth rate (doubling time) almost doubled under big dextran compression, increasing from 36\u00b11 hr (control and small dextran) to 68\u00b14 hr (big dextran).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by longitudinal volumetric measurements (Figure 4c-d) tracking spheroid growth over multiple days with clear exponential fitting and appropriate error quantification. The differential effect of big vs. small dextran on growth rate is statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "15037703-f821-477f-a871-2f368691f276",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cell migration speed within MCS was reduced by 50% at 5 kPa with big dextran compared to unstressed conditions, while both proliferation and motility remained almost unaltered with small dextran at the same pressure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by Dynamic Light Scattering measurements (Figure 4e) with N=5 independent experiments and appropriate statistical analysis. The selective effect of ECM compression (big dextran) vs. cell compression alone (small dextran) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "9cbde2e5-4403-405c-a564-b5fc428c274b",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Individual cells plated on Petri dishes show no change in proliferation or motility when exposed to 5 kPa dextran pressure, with division times remaining ~11 hr regardless of dextran size or presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C80-C82 are supported by measurements on 2D cultured cells (Figure 4f-g) demonstrating that dextran at 5 kPa has no direct effect on isolated cells in the absence of ECM. This control experiment is critical for establishing that ECM is required for the mechanosensitive response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "06d9b654-0867-4a8b-8596-e5e0a00cdc35",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cells embedded in matrigel show different phenotypes depending on compression state: cells in relaxed or small dextran-treated MG are sparse with numerous protrusions and high anisotropy, while cells in compressed MG (big dextran) proliferate locally, appear smooth, and form round mini-spheroids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by imaging data (Figure 5a-b) showing clear morphological differences in cell shape and distribution. Actin labeling provides direct evidence of cytoskeletal organization changes. The inference that MG compression inhibits motility and promotes mini-spheroid formation is reasonable given the visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "d4c75d3e-59e9-4302-968c-b4fa35978b19",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cells embedded in compressed matrigel are nearly immobile, while cells in relaxed matrigel migrate with velocities comparable to those on flat surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by cell tracking data (Figure 5c-d) showing ~40 trajectories per condition with clear quantification of migration speeds. The dramatic difference in motility between compressed and relaxed MG conditions is visually and quantitatively evident.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "871298a3-6709-4518-b303-35249942d260",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cell proliferation rate drops considerably when matrigel is compressed with big dextran compared to no pressure or small dextran conditions. Matrigel density (2-8 g/l) has little to no effect on cell proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by Hoechst fluorescence measurements over time (Figure 5e, 5g) with N=15 samples from 8 independent experiments. The control experiment varying MG concentration (Figure 5g) effectively rules out that increased matrix density per se is responsible for reduced proliferation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "ad387a87-9fb8-4bea-9b33-ecd32e0de021",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The main conclusion is that compressive stress transmitted to cells by the surrounding ECM, rather than direct osmotic pressure on cells, strongly impacts cell motility and proliferation. Global compressions affect aggregate growth and motility, while selective cell compressions of the same magnitude have minimal effect. The ECM acts as a mechanical sensor regulating cell behavior in 3D environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C63-C66 represent the central thesis supported by the comprehensive experimental evidence from all prior results. The selective compression method successfully decouples cell volume changes from ECM mechanical stress, and the differential biological responses (proliferation, motility, morphology) clearly demonstrate ECM's mechanosensory role. The conclusion is well-justified by converging evidence from multiple experimental systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "a79ec770-13ee-4b62-9ce1-a10cf2cd9447",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Fibronectin is abundant in the interstitial space of CT26 MCS, the ECM is 100-1000-fold more compressible than cells, drugs affecting cytoskeleton have negligible effects on MCS compressibility, and volume loss under compression is mainly due to ECM dehydration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C4, C5 establish the foundational properties of the MCS system. C1 is supported by immunofluorescence (Figure 1a, Appendix 8), C2 is stated as known property, C4 is supported by data in Appendix 12, and C5 is supported by citation to Dolega et al., 2021. These claims provide necessary context for the main experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "e486bc64-b0eb-499d-9d3b-52b721dafbac",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Osmotic pressure of a few kPa strongly reduces cell proliferation within multicellular aggregates but has no effect on individual cells cultured on Petri dishes in the absence of ECM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is supported by citation to prior work (Montel et al., 2011) and is consistent with the current study's findings (C29). This establishes the key motivation for investigating ECM's role in mechanosensing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "7dc2e0fd-294f-4866-a22e-7f3dfb918f50",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Weak osmotic pressures (~1 kPa) have no measurable effect on cell volume due to active regulatory processes, yet both proliferation and motility decrease in MCS under weak compression. For such weak compressions, cell volume is unchanged while the ECM is directly impacted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 synthesize key observations from the study with appropriate citations (Hoffmann et al., 2009; Cadart et al., 2019). The claims are consistent with the experimental data showing differential effects of small vs. big dextran and establish the pressure range where ECM mechanics dominate over cell volume effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "ada1253e-b5d2-4af3-b78f-cf1008c73bf1",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Large pressures (~100 kPa) can cause cell volume decrease and nuclear deformation, and cell/nuclear volume can be key to proliferation, invasion, and differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 cite relevant prior work (Zhou et al., 2009; Kim et al., 2015; Guo et al., 2017; Han et al., 2020) to establish context for why the current study focuses on weak pressures where volume effects are negligible. These are appropriately cited background claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "4b459789-b493-4b81-ba78-6c25dfbc7ef4",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The mechano-sensitive role of ECM could explain why osmotic and mechanical pressures similarly affect MCS growth. Potential mechanisms include contact inhibition from reduced interstitial space, reduced ECM permeability affecting nutrient/oxygen diffusion, though proliferation inhibition is probably not related to hypoxia/starvation based on single-cell experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49, C51-C54 present speculative mechanisms for how ECM compression affects cell behavior. While C49 and C53 are supported by citations, C51-C52 are explicitly speculative ('may activate'). C54's inference that hypoxia/starvation are not responsible is reasonable but not definitively proven. These represent plausible hypotheses requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "e7d1458e-a33d-471a-91ba-79b70e2be510",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "ECM microscopic structure is modified under compression (density increase, reduced porosity) affecting rheology. Compression increases ECM bulk modulus and causes non-linear stiffness changes. ECM rheological properties affect cell growth through stretch-activated channels, and integrin-dependent signals are regulated by cell-ECM stress/strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 synthesize relevant prior work (Sopher et al., 2018; Kurniawan et al., 2016; Nam et al., 2019; multiple others) to provide mechanistic context for the observed biological responses. These are appropriately cited background claims that frame potential molecular mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "67ce988b-6147-4535-9e4f-5e4e7b2ef326",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "ECM is strongly modified in tumors with solid stress reaching several kPa. In tumors, the collagen/hyaluronan ratio decreases, and hyaluronan (more hydrophilic than collagen) tends to swell and stiffen ECM. The correlation between matrix mechanics and uncontrolled proliferation is increasingly accepted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 cite relevant oncology literature (Nia et al., 2017; Voutouri et al., 2016; Bissell et al., 2002; Leli\u00e8vre and Bissell, 2006; Broders-Bondon et al., 2018) to establish the pathophysiological relevance of the findings. These appropriately contextualize the work's implications for cancer biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    },
+    {
+      "id": "29142214-e6c6-4954-a1d6-b18db532f31e",
+      "content_id": "9aa9972d-25a1-433d-abcb-c60d729dc210",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background claims establishing that imposed deformations affect morphogenesis and homeostasis, ECM provides scaffolding and triggers mechanotransduction, changing ECM mechanics can reverse aging/accelerate development/modulate tumor malignancy, mechanical context is important in cancer, tumor growth is modulated by self-generated compression, and MCS growth is reduced under confinement or osmotic compression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C79 are introductory/background statements supported by appropriate citations to establish the scientific context and motivation for the study. These are standard literature review claims that accurately represent prior work in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:59:32.131480Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "77f8d864-a72b-4656-850e-d99905375c69",
+      "result_id": "551cc5c0-a600-46fa-b045-efedb12ce194"
+    },
+    {
+      "claim_id": "027d0239-c266-4afc-afe6-ca64931a9104",
+      "result_id": "551cc5c0-a600-46fa-b045-efedb12ce194"
+    },
+    {
+      "claim_id": "06d4d30c-bbb6-454e-b952-ca4ea5955146",
+      "result_id": "551cc5c0-a600-46fa-b045-efedb12ce194"
+    },
+    {
+      "claim_id": "0b955c1a-db41-4a5a-9fb1-8974b78c36ec",
+      "result_id": "551cc5c0-a600-46fa-b045-efedb12ce194"
+    },
+    {
+      "claim_id": "027ad4aa-a2d0-4b57-9f19-114ef77068be",
+      "result_id": "586977e7-e0bb-4ff9-a745-659c81a7b492"
+    },
+    {
+      "claim_id": "9049d4c7-55de-46ba-90e0-6e3009ecc1cd",
+      "result_id": "586977e7-e0bb-4ff9-a745-659c81a7b492"
+    },
+    {
+      "claim_id": "405b7bad-b51e-4942-8f4d-852cfddf71a9",
+      "result_id": "586977e7-e0bb-4ff9-a745-659c81a7b492"
+    },
+    {
+      "claim_id": "1a6a5a78-2955-469f-a342-099afa9dbde5",
+      "result_id": "316e18b7-34f6-4bf5-a2a4-7f5c566a9b70"
+    },
+    {
+      "claim_id": "351cc2a0-8a58-4e2a-b4ae-a665e34bbeba",
+      "result_id": "dd35d873-6f02-4f8b-8f89-52f58177f6bd"
+    },
+    {
+      "claim_id": "f1d85d90-80fa-4be6-b9a0-0a14c5241b02",
+      "result_id": "dd35d873-6f02-4f8b-8f89-52f58177f6bd"
+    },
+    {
+      "claim_id": "1cc0a39d-e7bc-4291-9e11-64fcae732129",
+      "result_id": "f1f3401b-62b5-4fc1-a205-48428cb173f6"
+    },
+    {
+      "claim_id": "57dbe691-45ee-4dde-8aa5-9195e79fe380",
+      "result_id": "f1f3401b-62b5-4fc1-a205-48428cb173f6"
+    },
+    {
+      "claim_id": "4503a146-9c50-41ab-b2be-479884dd0897",
+      "result_id": "f1f3401b-62b5-4fc1-a205-48428cb173f6"
+    },
+    {
+      "claim_id": "3df661b1-3602-46fc-b3c2-b7f17027e1b1",
+      "result_id": "f1f3401b-62b5-4fc1-a205-48428cb173f6"
+    },
+    {
+      "claim_id": "65945458-2a02-453f-afc8-882fdca9b5d4",
+      "result_id": "04e11b96-54f7-4f22-9230-317b58fdee5a"
+    },
+    {
+      "claim_id": "456e3334-7329-4f5a-8a5d-2f32966c8645",
+      "result_id": "15037703-f821-477f-a871-2f368691f276"
+    },
+    {
+      "claim_id": "31ad800d-cb53-40bd-95a8-6821a7576bef",
+      "result_id": "15037703-f821-477f-a871-2f368691f276"
+    },
+    {
+      "claim_id": "4f43bb8d-38a3-4c37-a692-64923fd7be9a",
+      "result_id": "9cbde2e5-4403-405c-a564-b5fc428c274b"
+    },
+    {
+      "claim_id": "3829fdc8-4ebd-47b3-b4a8-b880f2c69b7a",
+      "result_id": "9cbde2e5-4403-405c-a564-b5fc428c274b"
+    },
+    {
+      "claim_id": "627fe87a-5f7e-4240-a557-5484eaae078b",
+      "result_id": "9cbde2e5-4403-405c-a564-b5fc428c274b"
+    },
+    {
+      "claim_id": "6be5a27e-1592-4a79-83fe-191990505ff2",
+      "result_id": "9cbde2e5-4403-405c-a564-b5fc428c274b"
+    },
+    {
+      "claim_id": "4b399c14-4da7-4dd5-8945-91c8bf0accfe",
+      "result_id": "06d9b654-0867-4a8b-8596-e5e0a00cdc35"
+    },
+    {
+      "claim_id": "980b7801-e08b-43c7-a7e6-de42c3bc922c",
+      "result_id": "06d9b654-0867-4a8b-8596-e5e0a00cdc35"
+    },
+    {
+      "claim_id": "cc4ca371-58fa-4e69-bf2b-f85a2b74939f",
+      "result_id": "06d9b654-0867-4a8b-8596-e5e0a00cdc35"
+    },
+    {
+      "claim_id": "f1614a60-a7c7-45a7-9f12-37bbeb93f149",
+      "result_id": "06d9b654-0867-4a8b-8596-e5e0a00cdc35"
+    },
+    {
+      "claim_id": "ee7ac7ae-2106-4fa4-8b5a-40c03c23e148",
+      "result_id": "06d9b654-0867-4a8b-8596-e5e0a00cdc35"
+    },
+    {
+      "claim_id": "6379bbce-be8d-491c-8621-c351019e1f3f",
+      "result_id": "d4c75d3e-59e9-4302-968c-b4fa35978b19"
+    },
+    {
+      "claim_id": "dbcc67a2-6625-4043-82f6-d0c388f2863d",
+      "result_id": "d4c75d3e-59e9-4302-968c-b4fa35978b19"
+    },
+    {
+      "claim_id": "e6bd381b-f7fe-4d5b-8b57-b78eac93fd0e",
+      "result_id": "871298a3-6709-4518-b303-35249942d260"
+    },
+    {
+      "claim_id": "20df3bfa-90b2-4a35-93f2-3bd9a048af1c",
+      "result_id": "871298a3-6709-4518-b303-35249942d260"
+    },
+    {
+      "claim_id": "c936fbf1-1e52-4ee1-aded-b354a56f970c",
+      "result_id": "ad387a87-9fb8-4bea-9b33-ecd32e0de021"
+    },
+    {
+      "claim_id": "afa25447-8cc4-4c4d-8b50-4802f6a11417",
+      "result_id": "ad387a87-9fb8-4bea-9b33-ecd32e0de021"
+    },
+    {
+      "claim_id": "19338ed9-88ac-4cea-bf92-4dc560528871",
+      "result_id": "ad387a87-9fb8-4bea-9b33-ecd32e0de021"
+    },
+    {
+      "claim_id": "3c393f89-a2be-42ab-90f3-f99c50e7c463",
+      "result_id": "ad387a87-9fb8-4bea-9b33-ecd32e0de021"
+    },
+    {
+      "claim_id": "06164eff-48ae-4623-b655-23ce23ead667",
+      "result_id": "ad387a87-9fb8-4bea-9b33-ecd32e0de021"
+    },
+    {
+      "claim_id": "9c5523a9-9363-45e8-b6a4-9116a704959f",
+      "result_id": "a79ec770-13ee-4b62-9ce1-a10cf2cd9447"
+    },
+    {
+      "claim_id": "1cc36332-65ef-457f-a51f-a19774674fce",
+      "result_id": "a79ec770-13ee-4b62-9ce1-a10cf2cd9447"
+    },
+    {
+      "claim_id": "b292d1a8-42ec-496e-834a-df2b2746e480",
+      "result_id": "a79ec770-13ee-4b62-9ce1-a10cf2cd9447"
+    },
+    {
+      "claim_id": "5c41ced1-9dcb-4c1a-a3df-a056d674501b",
+      "result_id": "a79ec770-13ee-4b62-9ce1-a10cf2cd9447"
+    },
+    {
+      "claim_id": "97960962-5460-409d-bb8c-9da3b12c9604",
+      "result_id": "e486bc64-b0eb-499d-9d3b-52b721dafbac"
+    },
+    {
+      "claim_id": "36770635-9507-4736-b105-a0a2783494fe",
+      "result_id": "7dc2e0fd-294f-4866-a22e-7f3dfb918f50"
+    },
+    {
+      "claim_id": "b196608e-087c-4ce9-9692-157f99b7b457",
+      "result_id": "7dc2e0fd-294f-4866-a22e-7f3dfb918f50"
+    },
+    {
+      "claim_id": "05da5792-9e74-44f3-bbeb-a3caddde706a",
+      "result_id": "7dc2e0fd-294f-4866-a22e-7f3dfb918f50"
+    },
+    {
+      "claim_id": "719d3ca2-2105-4be8-89cc-199b1286873d",
+      "result_id": "7dc2e0fd-294f-4866-a22e-7f3dfb918f50"
+    },
+    {
+      "claim_id": "490feb2b-4e82-41f1-aca3-7c7dd97c7931",
+      "result_id": "ada1253e-b5d2-4af3-b78f-cf1008c73bf1"
+    },
+    {
+      "claim_id": "6f4f8749-ec35-4778-9bc7-55ad22430da4",
+      "result_id": "ada1253e-b5d2-4af3-b78f-cf1008c73bf1"
+    },
+    {
+      "claim_id": "e2bb0deb-23e6-40f5-a2f7-1ccf3c523928",
+      "result_id": "4b459789-b493-4b81-ba78-6c25dfbc7ef4"
+    },
+    {
+      "claim_id": "e0f727cb-a129-4fdb-afe9-b23f38e7bd0a",
+      "result_id": "4b459789-b493-4b81-ba78-6c25dfbc7ef4"
+    },
+    {
+      "claim_id": "77ff94c8-4e9d-416e-885d-d914df58fdb6",
+      "result_id": "4b459789-b493-4b81-ba78-6c25dfbc7ef4"
+    },
+    {
+      "claim_id": "de7b0758-7317-4a33-bfe8-7958dfe8ef94",
+      "result_id": "4b459789-b493-4b81-ba78-6c25dfbc7ef4"
+    },
+    {
+      "claim_id": "cc5ef0bd-0c1e-41f1-a563-55a3556a4365",
+      "result_id": "4b459789-b493-4b81-ba78-6c25dfbc7ef4"
+    },
+    {
+      "claim_id": "5f069981-14c6-4d84-b03a-29f395d79dd8",
+      "result_id": "e7d1458e-a33d-471a-91ba-79b70e2be510"
+    },
+    {
+      "claim_id": "2cdd9b5c-2050-48cc-a7c1-85693d79bceb",
+      "result_id": "e7d1458e-a33d-471a-91ba-79b70e2be510"
+    },
+    {
+      "claim_id": "120956f5-153d-4f38-903c-561242f57e65",
+      "result_id": "e7d1458e-a33d-471a-91ba-79b70e2be510"
+    },
+    {
+      "claim_id": "2df16c86-019c-4dab-9d63-38051a9b8ce9",
+      "result_id": "e7d1458e-a33d-471a-91ba-79b70e2be510"
+    },
+    {
+      "claim_id": "31810463-8346-4284-a8fa-239ca385562c",
+      "result_id": "67ce988b-6147-4535-9e4f-5e4e7b2ef326"
+    },
+    {
+      "claim_id": "b54ba6ba-8acd-42c6-879a-d0f5cfb5c142",
+      "result_id": "67ce988b-6147-4535-9e4f-5e4e7b2ef326"
+    },
+    {
+      "claim_id": "d82861ac-5789-4ab3-8a38-916cca1d0ff0",
+      "result_id": "67ce988b-6147-4535-9e4f-5e4e7b2ef326"
+    },
+    {
+      "claim_id": "a5b41c02-c086-4b4c-85f9-f8bd375d3c2b",
+      "result_id": "67ce988b-6147-4535-9e4f-5e4e7b2ef326"
+    },
+    {
+      "claim_id": "3e50e2e6-aea5-4d4b-8b7b-24fd7a2a4cf0",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "e8f6585c-041f-4242-9f37-5edb235ab0c6",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "564041d5-4be1-481c-8b38-fc8f1d3d89f3",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "62967d7c-9775-4b52-b884-ebe0ac4f8658",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "7c416666-8fec-43af-a51e-b37a72a01a48",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "74a1e3e6-06d5-427b-afef-64ec1f7cd5f8",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "2529e51f-3183-4d01-af2b-e45b2dbae7bb",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "9d168305-3872-49e5-a637-d6e3c43dc303",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "08ead703-5b02-4372-ad93-c59a14337f7f",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "9e0fc1de-8148-405d-8659-d0bfbe7b5fa6",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "6ca42b7a-7097-43d0-8470-adbe36cf1da9",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "9252bcd5-06be-4ce3-9186-e070e159568d",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    },
+    {
+      "claim_id": "7f2eeb83-921c-48a0-a0db-c28e9a44a125",
+      "result_id": "29142214-e6c6-4954-a1d6-b18db532f31e"
+    }
+  ],
+  "comparisons": []
+}

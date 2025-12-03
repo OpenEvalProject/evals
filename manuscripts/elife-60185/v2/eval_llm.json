@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The ABCD stop-signal task violates context independence because go stimulus duration differs substantially between go trials (mean 569 ms) and stop trials (mean 228 ms), leading to impaired go processing on stop trials. This is evidenced by lower choice accuracy on stop-failure trials (79%) compared to go trials (90%), with accuracy degrading further at shorter SSDs. This violation is unprecedented in the stop-signal literature and invalidates existing computational models that assume context independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C28 provide converging empirical evidence (RT differences, accuracy differences) and theoretical support (psychophysical laws, model assumptions) demonstrating that the ABCD task design violates context independence. The data clearly show differential go processing between trial types (C20-C23), supported by established psychophysical principles (C16-C19) and comparison with other datasets (C24). The conclusion that existing models cannot capture this data (C25-C26) follows logically from the violation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Three preliminary computational models (slowed go processing, guessing, confusion) were developed to capture context dependence violations in ABCD data. Simulations show these models produce SSRT estimation errors of 22-75 ms compared to the independent race model. Individual differences in SSRT are increasingly contaminated as true between-subject variability decreases, with rank correlations dropping from 0.93 (SD=85ms) to 0.54 (SD=0ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C31 and C48-C53 present simulation results, but the authors explicitly acknowledge these are 'preliminary' models requiring 'substantial additional work, including parameter fitting and recovery, model recovery, and model comparison.' The simulations demonstrate potential contamination but do not validate which model (if any) correctly captures the ABCD violations. Without model validation, the magnitude of contamination remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Nine percent of stop trials had 0 ms SSD (no go stimulus presented), with unexpectedly low stop success rate (60.1%). Additionally, 2.7% of subjects experienced a coding error where responses propagated incorrectly across trials after fast responses (<50 ms), causing SSD to remain stuck at 0 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 report straightforward descriptive statistics from the ABCD data showing the prevalence of 0 ms SSD trials and the coding error. The low stop success rate at 0 ms SSD (C33) is appropriately characterized as 'surprisingly low' given that subjects receive no go stimulus to initiate a response. These are direct observations from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Stop signal duration varies with SSD: 300 ms for SSD \u2264700 ms, but 1000-SSD for longer SSDs. However, SSDs >700 ms are rare (1.1% of trials), limiting the impact of this design issue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe the task design and prevalence of affected trials. The variable stop signal duration violates stop context independence in principle, but C37 demonstrates this affects very few trials. The authors appropriately characterize this as a more minor issue given its rarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C46"
+    ],
+    "result": "The ABCD task uses non-uniform conditional trial probabilities, with stop trials never repeating (P=0) and rarely occurring after one intervening go trial (P=1.8%). However, post-stop-signal slowing remained consistent across task quartiles (20-40 ms), suggesting subjects did not learn or exploit this contingency in the baseline session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 document the non-uniform transition probabilities from the data, while C40 shows empirical evidence that subjects did not appear to learn this contingency (no reduction in post-stop slowing over time). The authors appropriately conclude this may not affect baseline data but could become problematic in longitudinal sessions. C46 provides context for typical stop probabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Trial accuracy is incorrectly coded in the ABCD dataset: 6.9% of trials marked as incorrect go trials are actually correct, 2.8% of correct go trials are actually incorrect, and 0.4% of correct stops include overt responses and should be incorrect stops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 report specific percentages of miscategorized trials computed directly from the ABCD data. The authors identify specific causes (button flips, response overwriting, timing issues) and note that most errors can be corrected by recategorization, though the incorrect stop categorization (C43) cannot be fully corrected as it affected the SSD tracking algorithm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C57"
+    ],
+    "result": "SSD starts at 50 ms in the ABCD task, resulting in high stop success rates for approximately the first 10-15 stop trials. Removing trials with SSD <200 ms would eliminate 51.5% of stop trials, leaving fewer than 30 stop trials per subject on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C57 report factual information about the task design and data composition. The low starting SSD is suboptimal for efficiently sampling the inhibition function, but the data loss from removing short SSDs would be substantial (C57). These are straightforward descriptive findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The ABCD study uses an unusually low stop probability (0.167) compared to typical values (0.25-0.33), reducing statistical power without apparent benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 compare the ABCD stop probability to consensus guidelines (Verbruggen et al., 2019). This is a straightforward design choice that reduces power but does not appear to contaminate the data. The authors appropriately characterize this as suboptimal but not fundamentally problematic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The eight design issues collectively compromise the utility of ABCD stopping data for understanding response inhibition. The authors recommend researchers not use the ABCD dataset to estimate SSRTs unless the community demonstrates that Design Issue 1 does not distort conclusions, and suggest using neuroimaging data with caution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 represent the authors' overall conclusions based on the cumulative evidence from all identified issues. The recommendation is appropriately cautious given the demonstrated violations of context independence (the most fundamental issue) and the lack of validated models to account for these violations. The conditional nature of the recommendation (C55) is scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The ABCD study is a large-scale ($590 million) longitudinal neuroimaging study of 11,878 youth including three fMRI tasks. The authors analyzed stop-signal task data from 8,464 participants at baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide factual background about the ABCD study supported by citations (C1, C4) and straightforward descriptions of study composition (C2-C3) and analysis sample (C5). These are standard introductory claims establishing context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The stop-signal task measures response inhibition using the independent race model framework, where go and stop processes race independently. The ABCD task uses 5/6 go trials and 1/6 stop trials, with go stimuli removed after 1000 ms or response, and replaced by stop signals after SSD on stop trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 describe established knowledge about the stop-signal task (C6-C7, supported by citations) and factual descriptions of the ABCD task design (C8-C10). These are accurate characterizations of the paradigm and task structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The design issues extend to the IMAGEN study which used similar task features. A rebuttal manuscript was submitted by ABCD task designers but did not dispute the presence of the identified issues. The authors corrected a code error identified by the rebuttal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C60 provide factual information about related work (C47), the publication history (C58), and the authors' response to criticism (C59-C60). These are straightforward statements about the scientific discourse surrounding the manuscript.",
+    "result_type": "MINOR"
+  }
+]

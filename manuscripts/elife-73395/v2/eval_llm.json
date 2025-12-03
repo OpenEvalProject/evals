@@ -1,0 +1,143 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C32"
+    ],
+    "result": "Thermodynamic models based on equilibrium statistical mechanics have emerged as a widespread framework for understanding transcriptional regulation, with demonstrated success in bacterial systems and increasing application to eukaryotic systems like Drosophila embryos. Synthetic minimal enhancers provide an attractive alternative to endogenous enhancers for testing these models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C21, and C32 are well-supported by extensive citations to prior work establishing thermodynamic models as a framework for transcriptional regulation in both bacterial and eukaryotic systems. The claims accurately represent the state of the field and provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C25"
+    ],
+    "result": "The authors successfully measured input transcription factor concentrations using established eGFP-Bicoid and newly generated LlamaTag-Runt fly lines. The LlamaTag-Runt allele rescues development to adulthood and shows expected sex-dependent expression patterns in nc13 due to X chromosome location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C25 describe well-validated experimental approaches with appropriate citations and controls. The LlamaTag-Runt rescue experiment (C25) provides critical validation that the tagged protein is functional. The sex-dependent expression pattern (C8) is consistent with known biology of X-linked genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C24",
+      "C26",
+      "C34"
+    ],
+    "result": "The MS2 system enables measurement of transcription initiation rates in living embryos, with fluorescence intensity proportional to actively transcribing RNAP molecules. The initial rate of RNAP loading correlates strongly with accumulated mRNA levels (r=0.90), while the transcription time window is not significantly regulated by Runt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C24, C26, and C34 are supported by appropriate citations to prior work validating the MS2 system and by experimental data shown in figures. The strong correlation between RNAP loading rate and accumulated mRNA (C26) provides important validation of the approach. The lack of regulation of transcription time window (C24) is supported by Figure 3\u2014figure supplement 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C27",
+      "C28"
+    ],
+    "result": "Unrepressed transcription rates varied significantly across synthetic enhancer constructs in the absence of Runt protein, with variability stemming from differences in RNAP-promoter interactions rather than Bicoid binding. Bicoid-dependent parameters remain constant while RNAP-dependent parameters vary across constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C27 are supported by experimental data in Figure 4A and MCMC inference results in Figure 4D-E showing coefficient of variation differences between Bicoid and RNAP parameters. Claim C28 is appropriately labeled as speculative. The finding challenges previous assumptions but is well-documented with quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C33"
+    ],
+    "result": "The hunchback P2 minimal enhancer with strong Bicoid-Bicoid cooperativity provides an ideal scaffold for quantitatively dissecting Runt repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C33 are supported by citations to prior work characterizing the hunchback P2 enhancer and its properties. The assumption of strong Bicoid-Bicoid cooperativity (C4) is justified by prior studies and enables model simplification. The suitability of this enhancer as a scaffold (C33) is demonstrated by the successful experimental results throughout the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C20",
+      "C30",
+      "C31"
+    ],
+    "result": "A thermodynamic model where two Runt molecules act independently cannot predict repression by two Runt binding sites. Both Runt-Runt cooperativity and Runt-Runt-RNAP higher-order cooperativity are necessary to quantitatively describe repression, with higher-order cooperativity being the main interaction required. The magnitude and sign of higher-order cooperativity is sensitive to the placement and orientation of binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C20, C30, C31 are strongly supported by systematic comparison of model predictions with experimental data shown in Figure 6. The independent repression model fails for [011] and [110] constructs (C15), while models incorporating both types of cooperativity succeed (C16). The position-dependent effects (C30, C31) are demonstrated by different cooperativity values for different constructs. MCMC inference and AIC analysis provide quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Parameter-free predictions using parameters inferred from one- and two-Runt binding site constructs could not recapitulate experimental data for three-Runt binding sites. Incorporating a Runt-Runt-Runt-RNAP higher-order cooperativity parameter enables the model to recapitulate the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are supported by comparison of model predictions with experimental data in Figure 7A-B. The failure of the parameter-free prediction (C18) and success after adding higher-order cooperativity (C19) demonstrate the necessity of increasingly complex interactions as more repressor binding sites are added. MCMC fits provide quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "The interaction energies for Runt-related cooperativity parameters are of a magnitude comparable to protein-protein interaction energies previously measured in bacterial systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by comparison of inferred interaction energies in Table 1 with cited bacterial studies. The energies range from approximately -2 to +4 kBT, which is consistent with typical protein-protein interaction energies. This provides biological plausibility to the inferred parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Higher-order cooperativity had been demonstrated in archaea and bacteria before being shown in eukaryotes, with the need to invoke this cooperativity in eukaryotes only becoming apparent in the last few years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 are supported by appropriate citations to studies in archaea, bacteria, and recent eukaryotic work. The temporal progression from prokaryotic to eukaryotic systems is accurately represented. This provides important historical context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The work establishes a framework for systematically and quantitatively studying repression in the early fly embryo, with synthetic enhancers based on hunchback P2 constituting an ideal scaffold for studying other repressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are appropriate summary statements supported by the successful demonstration of the approach throughout the manuscript. The systematic variation of Runt binding sites, quantitative measurements, and thermodynamic modeling provide a clear framework that could be applied to other repressors.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2319 @@
+{
+  "submission": {
+    "id": "e930e9de-253d-44c6-a7f5-6095bea18c47",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:04:31.453419Z",
+    "updated_at": "2025-12-03T07:04:31.453419Z"
+  },
+  "content": [
+    {
+      "id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "submission_id": "e930e9de-253d-44c6-a7f5-6095bea18c47",
+      "content_type": "manuscript",
+      "content_text": "# NHR-8 and P-glycoproteins uncouple xenobiotic resistance from longevity in chemosensory C. elegans mutants\n\n## Authors\n\n- Gabriel A Guerrero<sup>1</sup>\n- Maxime J Derisbourg<sup>1</sup> ([ORCID: 0000-0002-9293-1413](https://orcid.org/0000-0002-9293-1413)) \u2020\n- Felix AMC Mayr<sup>1</sup>\n- Laura E Wester<sup>1</sup>\n- Marco Giorda<sup>1</sup>\n- J Eike Dinort<sup>1</sup>\n- Mat\u00edas D Hartman<sup>1</sup>\n- Klara Schilling<sup>1</sup>\n- Mar\u00eda Jos\u00e9 Alonso-De Gennaro<sup>1</sup>\n- Ryan J Lu<sup>2</sup>\n- B\u00e9r\u00e9nice A Benayoun<sup>2</sup> ([ORCID: 0000-0002-7401-4777](https://orcid.org/0000-0002-7401-4777))\n- Martin S Denzel<sup>1</sup> ([ORCID: 0000-0002-5691-3349](https://orcid.org/0000-0002-5691-3349)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Biology of Ageing Cologne Germany\n2. Leonard Davis School of Gerontology, University of Southern California, Los Angeles Los Angeles United States\n3. CECAD - Cluster of Excellence University of Cologne Cologne Germany\n4. Center for Molecular Medicine Cologne (CMMC), University of Cologne Cologne Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nLongevity is often associated with stress resistance, but whether they are causally linked is incompletely understood. Here we investigate chemosensory-defective Caenorhabditis elegans mutants that are long-lived and stress resistant. We find that mutants in the intraflagellar transport protein gene osm-3 were significantly protected from tunicamycin-induced ER stress. While osm-3 lifespan extension is dependent on the key longevity factor DAF-16/FOXO, tunicamycin resistance was not. osm-3 mutants are protected from bacterial pathogens, which is pmk-1 p38 MAP kinase dependent, while TM resistance was pmk-1 independent. Expression of P-glycoprotein (PGP) xenobiotic detoxification genes was elevated in osm-3 mutants and their knockdown or inhibition with verapamil suppressed tunicamycin resistance. The nuclear hormone receptor nhr-8 was necessary to regulate a subset of PGPs. We thus identify a cell-nonautonomous regulation of xenobiotic detoxification and show that separate pathways are engaged to mediate longevity, pathogen resistance, and xenobiotic detoxification in osm-3 mutants.\n\n## Introduction\n\nChemosensation is a genetically tractable phenotype in various organisms. In Caenorhabditis elegans, many mutants with defective chemosensation have been identified. Sensory phenotypes are complex in nature, and many of the classical chemosensory mutants were originally characterized by their behavioral phenotypes. Odr mutants, for example, have an abnormal odorant response, while Osm (osmotic avoidance abnormal) mutants do not avoid high-salt environments (Bargmann, 2006). Mutations in components of neuronal G-protein coupled receptor (GPCR) signaling, such as tax-4 and odr-1, cause atypical chemosensory behavior (Bargmann, 2006). These mutants are not only characterized by a failure to adequately respond to their environment, but show additional phenotypes linked to various life traits including pathogen resistance, increased lifespan, and drug detoxification (Gaglia et al., 2012; Apfeld and Kenyon, 1999; Dent et al., 2000). Many chemosensory mutants are long-lived, and this phenotype depends on the DAF-16/FOXO transcription factor that is regulated by the insulin signaling pathway (Apfeld and Kenyon, 1999).\n\nBeyond mutations in GPCRs, variants in genes involved in the development of amphid sensory neurons can lead to chemosensory defects. One example are mutations in intraflagellar transport (IFT) proteins that prevent full cilia development of amphid sensory neurons (Inglis et al., 2007). Alterations in the IFT genes osm-3 and daf-10 disrupt the development of neuronal dendrites that project toward the tip of the nose, where they are exposed to the outer environment (Inglis et al., 2007). Thus, IFT mutants are usually characterized by defects in the chemical perception of their environment. Furthermore, developmental defects in lumen formation of the amphid head channel in daf-6 mutants prevent the direct contact of amphid sensory neurons with the outside (Perens and Shaham, 2005), resulting in chemosensory defects.\n\nIn wild-type (WT) worms, amphid and phasmid sensory neurons can be visualized using the lipophilic dye DiI (1,1'-dioctadecyl-3,3,3',3'-tetramethylindocarbocyanine perchlorate), which fluorescently stains them bright red. The dye is passively taken up by sensory neurons when they are fully developed and in contact with the environment. Dye filling defective (Dyf) C. elegans are defined by an inability to take up DiI into their sensory neurons (Inglis et al., 2007). The Dyf phenotype arises in daf-6 animals and also in many IFT mutants. Interestingly, Dyf mutants have unique stress resistance phenotypes that act via different signaling pathways. One such Dyf mutant, daf-10(m79), has a unique resistance to pathogenic bacteria that was proposed to be downstream of sensory input (Gaglia et al., 2012). Furthermore, pairs of amphid head neurons, such as ASH and ASJ that often become disrupted in Dyf mutants, help coordinate the innate immune response to bacterial stress after infection (Meisel et al., 2014). Longevity is often associated with activation of physiological stress response pathways and has been shown to be regulated by the insulin signaling pathway in Dyf C. elegans (Apfeld and Kenyon, 1999).\n\nConserved mechanisms of longevity and stress resistance have additionally been linked to hyposmia in higher model organisms. In Drosophila melanogaster, loss of the putative chemoreceptor Or83b has been shown to significantly increase lifespan (Libert et al., 2007). Moreover, mice with ablated olfactory sensory neurons have a unique metabolic signature that protects them from deleterious effects of a high-fat diet (Riera et al., 2017).\n\nWhile the olfactory machinery is seemingly more complex in higher organisms, C. elegans have unique phenotypes associated with the loss or alteration of their sensory neurons. First, unbiased screens for drug resistance have independently identified the Dyf phenotype as a common feature in drug-resistant C. elegans (Fujii et al., 2004; M\u00e9nez et al., 2016; Collins et al., 2008). Selection for resistance to the anthelmintic drug ivermectin was shown to enrich for Dyf mutants in several forward genetic screens (M\u00e9nez et al., 2016; Page, 2018; Dent et al., 2000). Follow-up work identified P-glycoproteins (PGPs), a class of ATP binding cassette (ABC) transporters, as the drivers behind ivermectin resistance in Dyf mutants (Ardelli and Prichard, 2013). Second, some chemosensory mutations, such as in daf-10, lead to resistance to pathogenic bacteria (Gaglia et al., 2012).\n\nHere, we characterize a long-lived Dyf mutant, osm-3, that was previously identified in a forward genetic screen for resistance to the potent ER stressor tunicamycin (TM). From this screen, we reported the role of the hexosamine biosynthetic pathway in TM resistance and longevity (Denzel et al., 2014). Our aim was to uncover the mechanism by which Dyf mutants are resistant to TM. We found that the TM resistance of osm-3 mutants is independent from its longevity and pathogen resistance phenotypes. Furthermore, we showed that PGPs mediate TM resistance in Dyf animals, and we found that the nuclear hormone receptor nhr-8 mediates osm-3 drug resistance. The \u2018Green Theory\u2019 of aging proposes that the accumulation of toxic endo- and xenobiotic debris contributes to physiological decline with age (Afschar et al., 2016; Gems and McElwee, 2005). Our work highlights drug resistance as a unique characteristic of Dyf mutants and functionally uncouples it from known stress response pathways that have been implicated in stress resistance and longevity of chemosensory mutants.\n\n## Results\n\n### Dye filling defective C. elegans mutants are resistant to TM\n\nTunicamycin (TM) is commonly used to induce endoplasmic reticulum (ER) stress by inhibiting the addition of N-glycans to nascent polypeptides (Parodi, 2000; Heifetz et al., 1979). In C. elegans, where the ER machinery is conserved, treatment with TM is toxic and induces the ER unfolded protein response. In fact, on plates containing TM at concentrations above 4 \u00b5g/mL, newly hatched larvae die at early developmental stages (Shen et al., 2001). Previously, we had carried out an ethyl methane-sulfonate mutagenesis screen to identify long-lived mutants using TM resistance in C. elegans as a proxy phenotype for longevity (Denzel et al., 2014). The largest cohort of classifiable mutants presented the Dyf phenotype (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53174/elife-53174-fig1-v2.jpg)\n\n**Figure 1.:** (A) Fluorescence and differential interference contract confocal microscopy images of WT and osm-3(dh441)IV C. elegans after DiI treatment (scale bar 40 \u00b5m). (B) Depiction of the osm-3(dh441) locus. osm-3(dh441)IV has a C to T mutation at position 3796925 of exon 8. (C) Developmental tunicamycin (TM) resistance assay using the indicated concentrations with WT and osm-3(dh441)IV animals. Data are mean \u00b1 SD (n = 3 independent experiments with >15 scored animals each). (D) Demographic lifespan analysis of WT and osm-3(dh441)IV animals. WT mean lifespan = 24 days, osm-3(dh441)IV mean lifespan = 29 days, p<0.0001. See Supplementary file 1 for statistical analysis. (E) Table of dye filling phenotype and TM resistance. In the dye filling column,+ is positive for DiI filling as in (A) and \u2212 is Dyf. In the TM resistant column, + is resistant and \u2212 is not resistant to 10 \u00b5g/mL TM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53174/elife-53174-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013J) Developmental TM resistance assay with WT, che-2(e1033)X, che-11(e1810)V, daf-10(e1387)V, dyf-1(mn335)I, osm-1(p808)X, osm-5(p813)X, osm-6(p811)V, odr-1(n1936)X, odr-3(n2150)V, and tax-4(p678)III animals. Data are mean \u00b1 SD (n = 1 for J; n = 2 for B, C, E, G, H and I; n = 3 for A, D, and F independent experiments with >15 scored animals each).\n\nAmong the Dyf mutants from the TM resistance screen, we found new alleles of genes previously linked to ciliary development. The mutant allele we selected for our investigation, osm-3(dh441)IV (this allele will be referred to hereafter as osm-3), carries a premature stop in the eighth exon, which prevents normal cilia development causing the Dyf phenotype (Figure 1A,B). osm-3 is a member of the kinesin family involved in axonal development and transport, and mutants are known to show a Dyf phenotype (Inglis et al., 2007). While WT worms fail to develop on TM at concentrations above 4 \u00b5g/mL, osm-3 mutants fully develop at concentrations at least up to 10 \u00b5g/mL TM (Figure 1C; Figure 1\u2014source data 1). Loss of osm-3, as well as other Dyf mutations, promote longevity in C. elegans (Apfeld and Kenyon, 1999). Demographic lifespan analysis of osm-3 indeed confirmed extended lifespan in our point mutant (Figure 1D and Supplementary file 1). osm-3 mutants, and Dyf mutants in general, have never been described as TM resistant especially at concentrations as high as 10 \u00b5g/mL.\n\nTo further explore whether the Dyf phenotype is linked to TM resistance, we tested other Dyf mutants that were previously described as long-lived (Apfeld and Kenyon, 1999). To our surprise, all long-lived Dyf mutants that we tested proved to be significantly TM resistant at the WT lethal dose of 10 \u00b5g/mL TM (Figure 1E, Figure 1\u2014figure supplement 1A\u2013G, Figure 1\u2014figure supplement 1\u2014source data 1\u20137). In contrast, the long-lived chemosensory odr-1(n1936)X, odr-3(n2150)V, and tax-4(p678)III mutants that do not display a Dyf phenotype were only slightly TM resistant (Figure 1E, Figure 1\u2014figure supplement 1H\u2013J, Figure 1\u2014figure supplement 1\u2014source data 8\u201310). Our data thus suggest that, among the larger class of chemosensory defective mutants, lifespan extension is uncoupled from TM resistance.\n\n### Tunicamycin-Induced ER stress response is blunted in Osm-3 mutants\n\nTM treatment activates the ER unfolded protein response (UPRER); we thus characterized the overall transcriptional response of osm-3 mutants upon TM treatment. We performed transcriptomic analyses of osm-3 and WT worms after 6 hr of TM treatment. Notably, the gene ontology (GO) terms related to ER stress and ER protein folding showed significant upregulation in WT animals, but not in osm-3 mutants (Figure 2A). RT-qPCR analysis of UPR target genes further confirmed that there was no UPRER induction in TM-treated osm-3 mutants compared to the WT (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 1\u2014source data 1). A hallmark of UPRER activation in C. elegans is the upregulation of the molecular chaperone HSP-4/BiP (Shen et al., 2001). Upon TM treatment of osm-3 mutants carrying an hsp-4::GFP reporter construct, there was no significant increase in the GFP signal compared to the untreated control, while in the WT, the GFP levels were significantly increased (Figure 2B,C, Figure 2\u2014source data 1). This observation corroborates the results from the transcriptome analysis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53174/elife-53174-fig2-v2.jpg)\n\n**Figure 2.:** (A) DAVID gene ontology (GO) terms that are enriched in TM-treated WT compared to TM-treated osm-3(dh441)IV worms. Red = upregulated and blue = downregulated. The fold enrichment is plotted as x axis. The numbers of genes is indicated next to the bar for each term. (B) Green fluorescent images of WT and osm-3(dh441)IV animals in the hsp-4::GFP reporter background after 6 hr of 10 \u00b5g/mL TM treatment. Worms are outlined in the images (scale bar 100 \u00b5m). (C) Biosorter analysis of osm-3(dh441)IV vs. WT animals in the hsp-4::GFP background after 6 hr of control or TM treatment. Fold change represents GFP intensity normalized to WT treated with vehicle. Data are mean + SEM, n = 4, ***p<0.0001 by two-way ANOVA. (D) Green fluorescent images of WT and osm-3(dh441)IV animals in the hsp-4::GFP background after development on control or sel-1 RNAi. Worms are outlined in the images (scale bar 100 \u00b5m). (E) Biosorter analysis of osm-3(dh441)IV vs. WT animals in the hsp-4::GFP background raised on control or sel-1 RNAi. Fold change represents GFP intensity normalized to WT treated with vehicle. Data are mean + SEM, n = 3, **p<0.005 ***p<0.0001 by two-way ANOVA. (F) Quantitative PCR measuring relative hsp-4 and spliced and unspliced xbp-1 mRNA levels in WT and osm-3(dh441)IV animals after 2 hr of 10 mM DTT treatment. Relative mRNA expression is mRNA expression levels normalized to WT treated with vehicle. Data are mean + SEM, n = 3, *p<0.05, **p<0.001, ***p<0.0001 by two-way ANOVA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53174/elife-53174-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Fold change represents mRNA expression levels of the targeted genes normalized to WT treated with vehicle. Data are mean + SEM, n = 2.\n\nOne potential explanation for a suppressed UPRER response in osm-3 mutants might be a general defect in the stress signaling pathway. To address this possibility, we sought to activate the UPR by alternate means. The ER membrane protein SEL-1/HRD3 is a cofactor of the HRD1 ubiquitin ligase complex involved in ER-associated degradation (ERAD) (Hampton et al., 1996). Using sel-1 RNAi to inhibit ERAD, we observed a robust activation of the hsp-4::GFP reporter, suggesting a functional UPRER response upon ER stress in osm-3 mutants (Figure 2D,E, Figure 2\u2014source data 2). We further used DTT treatment to induce ER stress and found normal levels of hsp-4::GFP induction and xbp-1 splicing (Figure 2F, Figure 2\u2014source data 3) in osm-3 mutants. Together, these observations rule out that the reduced response to TM observed in osm-3 mutants was due to a defect in UPR signaling.\n\n### TM resistance in Osm-3 mutants is independent from Daf-16 or the PMK-1/p38 MAPK pathway\n\nThe lifespan extension observed in chemosensory-defective C. elegans as well as in Drosophila has been shown to be at least partially insulin signaling dependent (Apfeld and Kenyon, 1999; Libert et al., 2007). Therefore, we performed a demographic lifespan analysis to determine the role of the insulin signaling pathway in the lifespan extension of osm-3 mutants. Indeed, the osm-3 lifespan extension was fully daf-16 dependent, as the lifespan of the osm-3; daf-16 double mutants was identical to the daf-16 lifespan (Figure 3A, Supplementary file 1). In stark difference to osm-3 survival, the osm-3; daf-16 double mutant remained resistant to TM while daf-16 single mutants do not develop at 10 \u00b5g/mL TM (Figure 3B, Figure 3\u2014source data 1). A previous study by Henis-Korenblit et al., 2010 had shown elevated hsp-4::GFP levels during daf-16 knockdown in a daf-2 mutant. We therefore asked whether the knockdown of daf-16 would sensitize osm-3 mutants to TM. Interestingly, knockdown of daf-16 by RNAi did not elevate the hsp-4::GFP response of osm-3 mutants after TM treatment (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 1\u2014source data 1). Given the links between the insulin signaling pathway and ER stress signaling (Henis-Korenblit et al., 2010; Kyriakakis et al., 2017; Matai et al., 2019; Labbadia and Morimoto, 2014), we were surprised to find that daf-2 mutants failed to develop on 10 \u00b5g/mL TM, while osm-3 mutants were fully developed (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 1\u2014source data 2). Together, this evidence suggests that the osm-3 lifespan extension and TM drug resistance are uncoupled and act via independent pathways.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53174/elife-53174-fig3-v2.jpg)\n\n**Figure 3.:** (A) Demographic lifespan analysis of WT, osm-3(dhh441)IV, daf-16(mu86)I and osm-3(dh441)IV; daf-16(mu86)I animals. WT mean lifespan = 22 days, osm-3(dh441)IV mean lifespan = 25 days p<0.005 compared to WT, daf-16(mu86)I mean lifespan = 16 days p<0.0001 compared to WT, osm-3(dh441)IV; daf-16(mu86)I mean lifespan = 16 days p<0.0001 compared to WT. See Supplementary file 1 for statistical analysis. (B) Developmental resistance assay using 10 \u00b5g/mL TM with WT, osm-3(dh441) IV, daf-16(mu86)I, and osm-3(dh441)IV; daf-16(mu86)I animals. No viable WT or daf-16(mu86) animals were observed in the TM condition. Data are mean \u00b1 SD (n = 3 independent experiments with >15 scored animals each). (C) Pseudomonas aeruginosa PA14 survival assay with WT, osm-3(dh441) IV, pmk-1(km25)IV, and osm-3(dh441)IV; pmk-1(km25)IV animals. WT mean survival = 44 hr, osm-3(dh441)IV mean survival = 58 hr p<0.001 compared to WT, pmk-1(km25)IV mean survival = 31 hr p<0.001 compared to WT, osm-3(dh441)IV; pmk-1(km25)IV mean survival = 34 hr p<0.001 compared to WT and p=0.06 compared to pmk-1(km25)IV. See Supplementary file 1 for statistical analysis. (D) Developmental resistance assay using 10 \u00b5g/mL TM with WT, osm-3(dh441)IV, pmk-1(km25)IV, and osm-3(dh441)IV; pmk-1(km25)IV animals. No viable WT or pmk-1(km-25) animals were observed in the TM condition. Data are mean \u00b1 SD (n = 3 independent experiments with >15 scored animals each).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53174/elife-53174-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Biosorter analysis of osm-3(dh441)IV vs. WT animals in the hsp-4::GFP background raised on control or daf-16 RNAi. Data are mean + SEM, n = 4, ***p<0.0001 by two-way ANOVA. (B) Developmental resistance assay using 10 \u00b5g/mL TM with WT, osm-3(dh441)IV and daf-2(e1370)III animals. No viable animals were observed in TM-treated WT. Data are mean + SEM, n = 3.\n\nIn C. elegans, Pseudomonas aeruginosa PA14 is a pathogen that is frequently used to study innate immunity. The PMK-1 p38 mitogen-activated protein kinase (MAPK) pathway as well as UPRER targets have been implicated in the innate immune response of C. elegans during PA14 infection (Richardson et al., 2010; Haskins et al., 2008). Given the role of ER homeostasis in innate immunity and the TM resistance of osm-3 mutants, we speculated that they would be more robust on PA14 than WT. Indeed, osm-3 mutants were resistant to PA14, and this increased pathogen resistance was lost upon pmk-1 knockdown (Figure 3C). With this in mind, we tested whether pmk-1 mutation could suppress the osm-3 TM resistance. The osm-3; pmk-1 double mutant was fully resistant to TM, while the pmk-1 single mutant was sensitive (Figure 3D, Figure 3\u2014source data 2), demonstrating that TM resistance and pmk-1 mediated pathogen resistance are uncoupled in osm-3 mutants. Taken together, insulin signaling and the MAPK pathway, two major stress response pathways in C. elegans that have links to ER protein quality control, are not required for TM resistance in osm-3 mutants.\n\n### NHR-8 and PGPs regulate xenobiotic detoxification and TM resistance in osm-3 mutants\n\nGiven the absence of ER stress in TM-treated osm-3 mutants along with the genetic separation of TM resistance from insulin or MAPK signaling, we hypothesized that TM might be cleared from worm tissues through xenobiotic detoxification. PGPs are a conserved family of ATP binding cassette (ABC) transporters that locate to the cell membrane (Sangster, 1994) and they are involved in toxin clearance. C. elegans have 15 pgp genes. Using quantitative PCR, we found a significant upregulation of pgp-3, pgp-5, pgp-11, and pgp-13 in osm-3 mutants (Figure 4A). The nuclear hormone receptor NHR-8 has been linked to xenobiotic detoxification and pgp regulation in C. elegans (M\u00e9nez et al., 2019; Lindblom et al., 2001). Indeed, we found that the upregulation of pgp-3, pgp-5, pgp-11 and pgp-13, in osm-3 mutants, was suppressed in the osm-3; nhr-8 double mutant (Figure 4A, Figure 4\u2014source data 1). PGP upregulation suggested a role for PGPs in the TM resistance of osm-3 mutants. Therefore, we tested if RNAi-mediated PGP knockdown in osm-3 mutants would suppress TM resistance. We focused on the upregulated pgp-5, pgp-11 and pgp-13, and on pgp-8 and pgp-12. Interestingly, knockdown of pgp-5, pgp-11, and pgp-12 partially reduced the TM resistance of the osm-3 mutants (Figure 4B, Figure 4\u2014source data 2). Next, we used verapamil to inhibit PGPs. Verapamil has been used to specifically inhibit PGP activity, re-sensitizing worms to the anthelmintic compound ivermectin (M\u00e9nez et al., 2016). Indeed, 1 nM verapamil significantly suppressed development of osm-3 C. elegans in the presence of TM, showing no effect on controls without TM (Figure 4C, Figure 4\u2014source data 3). The partial effects of pgp knockdown (Figure 4B) and verapamil treatment (Figure 4C) suggest that xenobiotic detoxification is achieved by multiple PGPs, which are likely to be transcriptionally orchestrated by nhr-8. This led us to ask whether osm-3 TM resistance was dependent on NHR-8. Strikingly, the developmental TM assay revealed that the resistance of osm-3 mutants was largely suppressed in the osm-3; nhr-8(hd117)IV double mutant (Figure 4D. Figure 4\u2014source data 4), suggesting that NHR-8 is necessary for osm-3 TM resistance. As suggested by a role of PGPs in ivermectin resistance, we found that osm-3 mutants fully developed to adults in the presence of 6 \u00b5g/mL ivermectin that is lethal to WT animals (Figure 4E, Figure 4\u2014source data 5). Ivermectin resistance of osm-3 mutants was suppressed by loss of NHR-8. Dyf C. elegans mutants have been independently identified in drug resistance screens (Fujii et al., 2004; M\u00e9nez et al., 2016; Dent et al., 2000). Consistent with these findings, we observed that osm-3 mutants were resistant to 200 nM paraquat, as they fully develop at a concentration that is toxic to WT C. elegans (Figure 4F, Figure 4\u2014source data 6). Consistent with a role in xenobiotic detoxification, NHR-8 was required for the paraquat resistance of the osm-3 mutants (Figure 4F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53174/elife-53174-fig4-v2.jpg)\n\n**Figure 4.:** (A) Quantitative PCR measuring relative PGP mRNA expression in WT, osm-3(dh441)IV, nhr-8(hd117)IV, and osm-3(dh441)IV; nhr-8(hd117)IV animals. Relative mRNA expression is mRNA expression levels normalized to WT. There was no TM treatment. Data are mean + SEM, n = 3, *p<0.05, **p<0.001, ***p<0.0001 by two-way ANOVA. (B) Developmental TM resistance assay using 10 \u00b5g/mL TM and the indicated RNAi treatments with osm-3(dh441)IV mutants. Data are mean + SD, n = 3, **p<0.05, ***p<0.001 by two-way ANOVA. (C) Developmental TM resistance assay using the PGP inhibitor verapamil (VPL) using 10 \u00b5g/mL TM supplemented with vehicle or 1 nM VPL. Data are mean + SD, n = 3, ***p<0.001 by two-way ANOVA. (D) Developmental TM resistance assay on 10 \u00b5g/mL TM and control with WT, osm-3(dh441)IV, nhr-8(hd117)IV, and osm-3(dh441)IV; nhr-8(hd117)IV animals. Data are mean + SD, n = 3, *p<0.05, ***p<0.0001 by t-test. (E) Developmental ivermectin resistance assay of WT, osm-3(dh441)IV, nhr-8(hd117)IV, and osm-3(dh441)IV; nhr-8(hd117)IV animals using 6 ng/mL ivermectin and vehicle control. Data are mean + SD, n = 3, ***p<0.001 by two-way ANOVA. (F) Developmental paraquat resistance assay of WT, osm-3(dh441)IV, nhr-8(hd117)IV, and osm-3(dh441)IV; nhr-8(hd117)IV animals using 0.2 mM paraquat and vehicle control. Data are mean + SD, n = 3, ***p<0.001 by two-way ANOVA. (G) Demographic lifespan analysis on vehicle and verapamil-treated WT and osm-3(dh441)IV worms. Vehicle treated.WT mean lifespan = 19 days; osm-3(dh441)IV mean lifespan = 24 days p<0.0001 compared to WT vehicle. verapamil treated.WT mean lifespan = 19 days; osm-3(dh441)IV mean lifespan = 22 days, p<0.005 compared to WT Vehicle. (H) Demographic lifespan analysis of WT, osm-3(dh441)IV, nhr-8(hd117)IV, and osm-3(dh441)IV;nhr-8(hd117)IV animals. WT mean lifespan = 22 days, osm-3(dh441)IV mean lifespan = 24 days p<0.0001 compared to WT, nhr-8(hd117)IV mean lifespan = 14 p<0.0001 compared to WT, osm-3(dh441)IV; nhr-8(hd117)IV mean lifespan = 19 days p<0.0001 compared to WT.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53174/elife-53174-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Heat shock assay at 35\u00b0C in WT and osm-3(dh441)IV animals on day 1 of adulthood. See Supplementary file 1 for statistical analysis. (B) Hydrogen peroxide survival assay using 1 \u00b5M H2O2 on day 1 of adulthood in WT and osm-3(dh441)IV animals. See Supplementary file 1 for statistical analysis. (C) WT development on 0\u20131 \u00b5M Verapamil. No significant difference in development. Data are mean \u00b1 SD (n = 3 independent experiments with >9 scored animals each).\n\nWe next reasoned that resistance of osm-3 mutants should be limited to chemical stressors that can be eliminated by xenobiotic detoxification. We thus tested heat stress and hydrogen peroxide (H2O2) induced oxidative stress. Paraquat and hydrogen peroxide are both oxidative stressors, but paraquat acts indirectly via the mitochondria (Castello et al., 2007), while hydrogen peroxide is a primary cause for oxidative damage. When challenged with heat or hydrogen peroxide, osm-3 mutants showed no difference to WT animals, suggesting that osm-3 mutants are not resistant to these non-xenobiotic stressors (Figure 4\u2014figure supplement 1A, B, Figure 4\u2014figure supplement 1\u2014source data 1 and Figure 4\u2014figure supplement 1\u2014source data 2).\n\nGiven the involvement of PGP-dependent xenobiotic detoxification in TM resistance of osm-3 mutants, we wondered about its role in the longevity of osm-3 mutants. Notably, verapamil did not shorten osm-3 lifespan (Figure 4G). Moreover, verapamil did not affect WT lifespan (Figure 4G and Supplementary file 1) and had no visible effect on WT development (Figure 4\u2014figure supplement 1C, Figure 4\u2014figure supplement 1\u2014source data 3). Finally, we tested a possible role of NHR-8 in osm-3 longevity. While nhr-8 mutation shortens lifespan, the osm-3 mutation extended both WT and nhr-8 survival to a similar degree (Figure 4H). Together, these data support the conclusion that the xenobiotic stress resistance and longevity phenotypes of osm-3 mutants are mediated by independent pathways.\n\n### Sterol signals modulate TM resistance\n\nWe aimed to further understand the systemic signals that control xenobiotic detoxification of TM. The NHR-8 ligand remains unknown, but is likely a sterol molecule derived from cholesterol metabolism (Magner et al., 2013). We thus tested the role of cholesterol in TM resistance and found that omitting cholesterol from the culture plates for one generation leads to TM hypersensitivity in both WT and osm-3 animals (Figure 5A, Figure 5\u2014source data 1). To specifically assess a role of cholesterol-derived signals in TM resistance, we used the hsp-4::GFP reporter and found that high cholesterol significantly reduced TM-induced ER stress (Figure 5B, Figure 5\u2014source data 2). Developmental cholesterol dose\u2013response assays in the presence of TM confirmed that WT TM resistance is cholesterol dependent. In nhr-8 and osm-3; nhr-8 double mutants, however, cholesterol treatment failed to protect from TM toxicity (Figure 5C, Figure 5\u2014source data 3). This demonstrates a key role of NHR-8 in mediating TM resistance downstream of sterol signals.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53174/elife-53174-fig5-v2.jpg)\n\n**Figure 5.:** (A) Developmental dose\u2013response TM resistance assay using the indicated TM concentrations with WT animals and osm-3(dh441)IV mutants raised on 0 or 5 \u00b5g/mL cholesterol. Data are mean \u00b1 SD (n = 5 independent experiments with >15 scored animals each). (B) Biosorter analysis of WT animals with the hsp-4::GFP reporter raised on 0 or 50 \u00b5g/mL cholesterol after 6 hr of vehicle or 5 \u00b5g/mL TM treatment. Data are mean + SEM, n = 3, *p<0.05, ***p<0.0001 by two-way ANOVA. (C) Cholesterol dose\u2013response developmental assay with WT, osm-3(dh441)IV, nhr-8(hd117)IV, and osm-3(dh441)IV; nhr-8(hd117)IV animals on vehicle or 5 \u00b5g/mL TM. Data are mean \u00b1 SD (n = 3 independent experiments with >15 scored animals each).\n\n## Discussion\n\nIn this study, we found that osm-3 mutants as well as other long-lived Dyf mutants are resistant to the ER toxin TM. Instead of an activated stress signaling status that might explain the TM resistance, osm-3 Dyf mutants show no UPRER induction upon TM treatment. Consistent with previous findings (Apfeld and Kenyon, 1999), the lifespan extension of osm-3 was daf-16 dependent. Despite the established link between the insulin signaling pathway and stress resistance, the TM resistance in osm-3 mutants was not insulin signaling dependent. Furthermore, osm-3 mutants were pathogen resistant, and this resistance was fully dependent on the PMK-1/p38 MAPK pathway. We were surprised that neither of the two pathways weakened the TM resistance phenotype. Dyf C. elegans drug resistance is not specific to TM, as we also observed resistance to paraquat and ivermectin. While paraquat and ivermectin resistance have been previously reported in Dyf mutants (Dent et al., 2000; Fujii et al., 2004; M\u00e9nez et al., 2016), no studies have demonstrated similar resistance mechanisms in Dyf C. elegans mutants to TM. Our findings link drug resistance to increased PGP expression in Dyf worms, suggesting a causal role of xenobiotic detoxification in the drug resistance phenotype. Importantly, we found that the regulation of a subset of PGPs is mediated by the nuclear hormone receptor NHR-8. Genetic or pharmacological PGP inhibition, as well as loss of nhr-8 significantly resensitized osm-3 mutants to TM, ivermectin, and paraquat. Potential NHR-8 ligands are derived from cholesterol (Magner et al., 2013), and we observed that WT development on lower TM concentrations was strongly cholesterol and NHR-8 dependent.\n\nGiven that improved protein homeostasis is one of the cellular hallmarks of longevity (L\u00f3pez-Ot\u00edn et al., 2013), we presumed that selection for TM resistance would serve as a proxy phenotype for longevity given that TM specifically targets ER protein folding. More specifically, we expected that high fidelity ER protein quality control would be the driver of longevity in these mutants. Previous findings describing increased hexosamine biosynthetic pathway flux (Denzel et al., 2014) or constitutive XBP-1 activation Taylor and Dillin, 2013 have linked protein homeostasis to longevity and stress resistance (Denzel and Antebi, 2015); therefore, the connection between TM resistance and longevity seemed apparent. Given that Dyf mutants are resistant to pathogenic bacteria through enhanced ER homeostasis, we speculated that TM resistance might serve as a proxy phenotype for pathogen resistance. Contrary to that, we found that TM resistance is a consequence of xenobiotic detoxification via PGPs, and NHR-8 regulated control of PGPs was not involved in the longevity of osm-3 mutants. pmk-1, and daf-16 were required for pathogen resistance and longevity, respectively, but not for the drug resistance of osm-3 mutants. Together, these findings demonstrate that the three phenotypes of osm-3 mutants (i.e. xenobiotic resistance, longevity, and protection from pathogens) are independent and controlled by separable genetic pathways. Our observations thus support a model in which the chemosensation defect activates a number of parallel pathways that are responsible for the distinct phenotypes of osm-3 mutants.\n\nAdding another dimension to the cell-nonautonomous regulation of innate immunity (Aballay, 2013), we propose that the nervous system regulates systemic xenobiotic detoxification in C. elegans, likely through a sterol ligand. Our data suggest that mutants with defective amphid neurons have increased PGP expression. Several PGPs have been shown to be expressed in non-neuronal tissue (Lincke et al., 1993; Sheps et al., 2004). Moreover, we found that PGP expression is regulated by nhr-8, which has also been shown to be expressed in the intestine of C. elegans (Magner et al., 2013). Combining this previous information with our finding that Dyf mutants are resistant to several uniquely toxic drugs, we conclude that neuronal signaling controls drug resistance through nuclear hormone signaling. Based on our results, we cannot make conclusions about the sterol metabolism involved in the production of a putative NHR-8 ligand and we cannot make direct conclusions about PGP regulation by sterols. Given our observation that supplementation with cholesterol is itself sufficient for TM resistance in WT worms, it is now important to investigate the link between neuronal states and the specific cholesterol-derived signal that drives these drug resistance phenotypes.\n\nPGPs are likely regulated in C. elegans to help them combat toxins found in their natural habitat. Toxic metabolites are undoubtedly common in the soil where C. elegans are found. The drugs used in our study, ivermectin (a derivative of avermectin) (Burg et al., 1979) and TM, were first discovered as antibiotics that are produced by soil bacteria (Takatsuki et al., 1971). Because C. elegans have no adaptive immune response, having PGPs as part of their innate immune system allows them to clear toxic molecules they may encounter in the wild. While Dyf mutants likely do not occur in the wild, our data nonetheless demonstrate a link between environmental sensing and drug resistance.\n\nIn humans, PGPs have been implicated in drug resistant malignancies (Lehne, 2000). Using C. elegans as a tool to study the cross talk between tissues, one might be able to better understand how extracellular signaling drives ABC transporter expression in chemotherapy-resistant cancer. Further studies in cell culture might also characterize TM, as well as other toxic metabolites, as substrates for C. elegans PGPs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background(E. coli)</td>\n      <td>HT115 [L4440::sel-1]</td>\n      <td>Source Bioscience</td>\n      <td>CELE_F45D3.5</td>\n      <td>Ahringer RNAi library</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(E. coli)</td>\n      <td>HT115 [L4440::daf-16]</td>\n      <td>Source Bioscience</td>\n      <td>CELE_R13H8.1</td>\n      <td>Ahringer RNAi library</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(E. coli)</td>\n      <td>HT115 [L4440::pgp-5]</td>\n      <td>Source Bioscience</td>\n      <td>CELE_C05A9.1</td>\n      <td>Ahringer RNAi library</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(E. coli)</td>\n      <td>HT115 [L4440::pgp-8]</td>\n      <td>Source Bioscience</td>\n      <td>CELE_T21E8.3</td>\n      <td>Ahringer RNAi library</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(E. coli)</td>\n      <td>HT115 [L4440::pgp11]</td>\n      <td>Source Bioscience</td>\n      <td>CELE_DH11.3</td>\n      <td>Ahringer RNAi library</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(E. coli)</td>\n      <td>HT115 [L4440::pgp-12]</td>\n      <td>Source Bioscience</td>\n      <td>CELE_F22E10.1</td>\n      <td>Ahringer RNAi library</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(E. coli)</td>\n      <td>HT115 [L4440::pgp-13]</td>\n      <td>Source Bioscience</td>\n      <td>CELE_F22E10.2</td>\n      <td>Ahringer RNAi library</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>osm-3(dh441)IV</td>\n      <td>Other</td>\n      <td>AA1962</td>\n      <td>available from A. Antebi or M.S. Denzel</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>daf-16(mu86)I</td>\n      <td>CGC</td>\n      <td>CF1038</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>pmk-1(km25)IV</td>\n      <td>CGC</td>\n      <td>KU25</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>osm-3(dh441)IV; nhr-8(hd117)IV</td>\n      <td>This paper</td>\n      <td>MSD420</td>\n      <td>available from M.S. Denzel</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>osm-3(dh441)IV; daf-16(mu86)I</td>\n      <td>This paper</td>\n      <td>MSD422</td>\n      <td>available from M.S. Denzel</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>osm-3(dh441)IV; pmk-1(km25)IV</td>\n      <td>This paper</td>\n      <td>MSD423</td>\n      <td>available from M.S. Denzel</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>odr-1(n1936)X</td>\n      <td>CGC</td>\n      <td>CX2065</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>odr-3(n2150)V</td>\n      <td>CGC</td>\n      <td>CX2205</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>osm-6(p811)V</td>\n      <td>CGC</td>\n      <td>PR811</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>tax-4(p678)III</td>\n      <td>CGC</td>\n      <td>PR678</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>nhr-8(hd117)IV</td>\n      <td>other</td>\n      <td>AA968</td>\n      <td>available from A. Antebi or M.S. Denzel</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>N2; dhEx451(nhr-8::gfp; coel::RFP)</td>\n      <td>CGC</td>\n      <td>AA1027</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>osm-3(dh441)IV; zcIs4 [hsp-4::GFP]V</td>\n      <td>other</td>\n      <td>AA2774</td>\n      <td>available from A. Antebi or M.S. Denzel</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>zcIs4[hsp-4::GFP]V</td>\n      <td>CGC</td>\n      <td>SJ4005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>che-11(e1810)V</td>\n      <td>CGC</td>\n      <td>CB3330</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>daf-10(e1387)IV</td>\n      <td>CGC</td>\n      <td>CB1387</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>osm-1(p808)X</td>\n      <td>CGC</td>\n      <td>PR808</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>dyf-1(mn335)I</td>\n      <td>CGC</td>\n      <td>SP1205</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>che-2(e1033)X</td>\n      <td>CGC</td>\n      <td>CB1033</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(C. elegans)</td>\n      <td>osm-5(p813)X</td>\n      <td>CGC</td>\n      <td>PR813</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Direct-zol RNA Microprep</td>\n      <td>Zymo Research</td>\n      <td>R2060</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SMARTer Stranded RNA-Seq HT Kit</td>\n      <td>Takara</td>\n      <td>634,838</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Ribo-zero Gold kit</td>\n      <td>Illumina</td>\n      <td>MRZG12324</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tunicamycin</td>\n      <td>Calbiochem</td>\n      <td>CAS 11089-65-9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dithiothreitol</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS 3483-12-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methyl viologen dichloride hydrate</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS 75365-73-0</td>\n      <td>Paraquat</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ivermectin</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS 70288-86-7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Verapamil hydrochloride</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS 152-11-4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cholesterol</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS 57-88-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1,1\u2032-Dioctadecyl-3,3,3\u2032,3\u2032-tetramethylindocarbocyanine perchlorate</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS 41085-99-8</td>\n      <td>DiI</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R statistical software</td>\n      <td>cran.r-project.org</td>\n      <td>DESeq2 1.16.1</td>\n      <td>PMID.25516281</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Reference Genome</td>\n      <td>ENSEMBL</td>\n      <td>WBCel235</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Worm maintenance\n\nC. elegans nematodes were cultured using standard husbandry methods at 20 \u00b0C on nematode growth media (NGM) agar plates seeded with E. coli strain OP50 unless otherwise stated (Brenner, 1974).\n\n### Dye filling assay in C. elegans\n\nThe dye filling assay was performed on a synchronized population of day one adults. Forty to 60 adult worms were placed in M9 containing 10 \u00b5g/mL DiI. They were left at room temperature for 2 hr in the staining medium, then transferred to NGM plates seeded with E. coli OP50. The worms were then allowed to crawl on the food for 1 hr to allow for the dye to be cleared from the gut. The worms were scored for dye filling using a Leica SPX-8 confocal microscope or a Leica fluorescent stereo-microscope. Images were taken using the confocal microscope.\n\n### Drug resistance assays\n\nNGM plates containing either TM, paraquat, or ivermectin were used in developmental assays to test for resistance. To this end, we performed a 4 hr egg lay on NGM plates at room temperature, then transferred the eggs to control and drug containing plates, and recorded the number of eggs per plate. After incubation for 4 days at 20\u00b0C, plates were scored by counting the total number of L4 larvae or adults on each plate. Paraquat plates were prepared by adding 1 M methyl viologen dichloride (paraquat) directly onto seeded NGM plates for a final concentration of 200 \u00b5M and allowed to dry immediately before use. Ivermectin plates were prepared by adding ivermectin directly to the NGM medium at a final concentration of 6 \u03bcg/mL before pouring the plates. Modified NGM plates containing no cholesterol were made by using standard NGM without the addition of cholesterol. NGM agar plates containing 5, 25, or 50 \u00b5g/mL Cholesterol were used for development when specifically stated. These modified NGM plates were then supplemented with drugs as described above. All of the drug development assays were performed using E. coli OP50 or E. coli HT115 bacteria. For the TM RNAi experiments (Figure 4B), animals were cultured for one generation on pgp-5, pgp-8, pgp-11, pgp-12, or pgp-13 RNAi supplemented with DMSO. The offspring was placed on RNAi plates supplemented with 10 \u00b5g/mL TM.\n\n### ER stress quantification\n\nSynchronized day one adults were transferred to control and TM containing NGM plates seeded with OP50. After 6 hr of stress induction, hsp-4::GFP levels were measured by large particle flow cytometry in both the WT and osm-3(dh441)IV background using the Union Biometrica Biosorter and imaged using a Leica fluorescent stereo-microscope. For RNAi experiments, animals were raised on control and daf-16 or sel-1 RNAi. Synchronized day one adults were transferred to vehicle or TM containing plates seeded with control or experimental RNAi. After 6 hr of stress, GFP levels were measured using the Biosorter. GFP values were normalized to time of flight. At least 100 animals were analyzed per condition. For RNA isolation, day one adults were treated with 10 mM DTT in S Basal buffer containing E. coli OP50 for 2 hr and then snap frozen.\n\n### Quantitative PCR\n\nFor ER stress induction day one adults were washed from their plates and transferred to either control or TM containing plates, where they were incubated for 6 hr. The animals were then washed off using M9 and snap frozen in trizol. Unstressed synchronized animals were collected at day 1 of adult hood for RNA extraction. RNA was prepared using Zymo Research Direct-zol RNA Microprep kit. SYBR green was used to perform quantitative PCR (RT-qPCR). See Supplementary file 2 for list of qPCR primers used in this study. Primer efficiency was tested and was always above 90% and below 110%.\n\n### Lifespan analysis\n\nAdult lifespan analysis was performed at 20\u00b0C on mutant and WT C. elegans. The animals were synchronized in a 4-hr egg lay. Animals were scored as dead or alive every second day until the end of the experiment. Animals were transferred every day for the first 7 days. Statistical analysis on the Kaplan\u2013Meier survival curves was performed using Microsoft Excel. See Supplementary file 1 for lifespan statistics. Each survival experiment was performed at least twice.\n\n### Hydrogen peroxide survival assay\n\nOne molar hydrogen peroxide (H2O2) was added to unseeded NGM plates to a final concentration of 1 \u00b5M and allowed to dry for several minutes. Synchronized day one adults were then transferred onto the plates and incubated at 25\u00b0C. The animals were then scored every 2 hr for survival. Twenty to 50 animals were used in each experimental condition.\n\n### Pathogenic bacteria survival assay\n\nThe P. aeruginosa strain PA14 was grown in LB media and seeded onto high peptone NGM plates and incubated for 12 hr at 37 \u00b0C immediately before the start of the experiment. Day one animals were first transferred to unseeded NGM plates to crawl around the plate and remove any excess E. coli OP50 off of their bodies. They were then transferred to the PA14 containing plates and incubated at 25\u00b0C. The animals were scored every 12 hr until all animals were dead. At least 75 animals were used in each experimental condition.\n\n### Heat stress survival assay\n\nDay one synchronized C. elegans were transferred to fresh NGM plates seeded with E. coli OP50. These plates were transferred to a 35\u00b0C incubator, where they were evenly distributed throughout the incubator to ensure even heat exposure. The plates were scored for live worms every 2 hr until all of the worms were dead. Twenty to 50 animals were used in each experimental condition.\n\n### Sample collection and RNA purification for sequencing\n\nFor RNA sequencing, we used day one adults that were hatched within 1 hr. To achieve this synchronization, we washed all adults and larvae of plates with M9 and allowed the eggs on hatch for 1 hr. The freshly hatched L1 larvae were then washed off and transferred to fresh plates seeded with OP50 and incubated at 20\u00b0C until they developed to adults. At day 1 of adulthood, animals were washed from their plates and transferred to either control or TM containing plates, where they were incubated for 6 hr. The animals were then washed off using M9 and snap frozen in trizol. All biological replicates were collected and prepared using a snaking collection method to reduce batch effects. Total RNA was purified using Zymo Research Direct-zol RNA Microprep kit.\n\n### RNA-Seq library preparation\n\nRNA quality was assessed using Agilent\u2019s Bioanalyzer platform, and samples with RIN >9 were used for library construction. 2.5 \u00b5g of total RNA was subjected to ribosomal RNA (rRNA) depletion using the Illumina\u2019s Ribo-zero Gold kit (Illumina), according to the manufacturer\u2019s protocol. Strand specific RNA-seq libraries were then constructed using the SMARTer Stranded RNA-Seq HT Kit (Clontech #634839), according to the manufacturer\u2019s protocol. Based on rRNA-depleted input amount, 15 cycles of amplification were performed to generate RNA-seq libraries. Paired-end 150 bp reads were sent for sequencing on the Illumina HiSeq-Xten platform at the Novogene Corporation (USA). The resulting data was then analyzed with a standardized RNA-seq data analysis pipeline (described below).\n\nRNA-seq analysis pipeline cDNA sequences of worm genes were obtained through ENSEMBL Biomart for the WBCel235 build of the C. elegans genome (Ensemble release v94; accessed 2018-12-03). Trimmed reads were mapped to this reference using kallisto 0.43.0\u20131 and the \u2013fr-stranded option (Bray et al., 2016). All subsequent analyses were performed in the R statistical software (https://cran.r-project.org/). Read counts were imported into R and summarized at the gene level. Differential gene expression was estimated using the \u2018DESeq2\u2019 R package (DESeq2 1.16.1). DAVID analysis (version 6.8) was performed to identify significantly enriched GO terms.\n\n### Developmental verapamil resistance assay and lifespan analysis\n\nPlates containing 10 \u00b5g/mL TM were supplemented with 1 nM verapamil by adding verapamil solved in DMSO onto the plates. Plates were allowed to dry for 6 hr before eggs were transferred to them to determine developmental resistance to TM. Plates were then scored after 4 days to determine the relative number of L4 larvae or adults. Lifespan assays were performed as above; however, the animals were transferred to fresh verapamil containing plates every second day for the whole lifespan assay. Twenty to 50 animals were used in each experimental condition.\n",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "60b01df0-3f29-4942-96b3-23e6e58d5f67",
+      "submission_id": "e930e9de-253d-44c6-a7f5-6095bea18c47",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- El\u00e7in \u00dcnal, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53174.sa1](https://doi.org/10.7554/eLife.53174.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this manuscript, Guerrero et al. characterize the interrelatedness of three different phenotypes -lifespan extension, resistance to the ER stress-inducing drug tunicamycin (TM) and enhanced immunity- in a chemosensory defective mutant, osm-3(dh441). Using this mutant, the authors made the discovery that TM resistance can be entirely uncoupled from increased longevity and bacterial pathogen resistance, which depend on DAF-16/FOXO transcription factor and PMK-1/ p38 MAP kinase, respectively. Instead, the authors found that a subset of P-glycoproteins (PGPs) are moderately upregulated in the osm-3 mutants, leading them to hypothesize that PGPs serve as an efflux pump for TM, thereby conferring endoplasmic reticulum (ER) stress resistance. Consistently, the authors found that the ER unfolded protein response (UPR) is dampened in the osm-3 mutants upon treatment with TM, even though the osm-3 mutants are competent for UPR induction by other means. In addition, knockdown of select pgps and treatment with the drug verapamil, a known inhibitor of PGPs, reduces TM resistance in osm-3 mutants, without an effect on longevity, supporting separate pathways for xenobiotic resistance and longevity. Finally, the authors provide evidence that a subset of the PGPs are regulated by the nuclear hormone receptor NHR-8 and mutations in this receptor render osm-3 mutants sensitive to TM and other xenobiotics. Overall this study provides useful insights into a phenomenon that has long been observed: the multiple stress-resistance phenotypes and extended longevity of worms with neuronal defects. In demonstrating that these different phenotypes are separable, the authors make it clear that independent pathways function to mediate xenobiotic resistance, innate immunity and longevity in a chemosensory mutant.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"NHR-8 regulated P-glycoproteins uncouple xenobiotic stress resistance from longevity in chemosensory C. elegans mutants\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, including El\u00e7in \u00dcnal as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Vivek Malhotra as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Guerrero et al. characterize the interrelatedness of three different phenotypes -lifespan extension, resistance to the ER stress-inducing drug tunicamycin (Tm) and enhanced immunity in a chemosensory defective mutant, osm-3(dh441). Using this mutant, the authors made the discovery that Tm resistance can be entirely uncoupled from increased longevity and bacterial pathogen resistance, which depend on the DAF-16/FOXO transcription factor and PMK-1/ p38 MAP kinase, respectively. Instead, the authors found that a subset of P-glycoproteins (PGPs) are moderately upregulated in the osm-3 mutants, leading them to hypothesize that PGPs serve as an efflux pump for Tm, thereby conferring ER stress resistance. This hypothesis is consistent with the observation that the Tm-induced activation of the ER unfolded protein response (UPR) is not apparent in the osm-3 mutants. In addition, treatment with the drug verapamil abolishes the ER stress resistance in osm-3 mutants, supporting the involvement of PGPs. Finally, the authors provide evidence that PGP expression is mediated by a nuclear hormone receptor called NHR-8 and mutations in this receptor render osm-3 mutants sensitive to Tm, while overexpression of nhr-8 alone is sufficient to confer resistance. Therefore, the ER stress resistance in osm-3 mutants seems to rely upon a general signature of xenobiotic resistance, rather than intracellular stress response mechanisms such as UPR.\n\nOverall this is a well-executed study that provides useful insights into a phenomenon that has long been observed: the multiple stress-resistance phenotypes and extended longevity of worms with neuronal defects. In demonstrating that these different phenotypes are separable, the authors make it clear that multiple downstream pathways act in parallel to mediate multi-stress resistance and longevity in a chemosensory mutant. However, the evidence supporting the importance of PGPs and their regulator NHR-8 for Tm resistance is somewhat lacking. The following experiments should be considered in order to fully support the key conclusion of this manuscript:\n\nEssential revisions:\n\n1) PGP involvement in Tm resistance: The importance of PGPs rests upon the observation that treatment with verapamil reduces animals' resistance to Tm. However, the specificity of verapamil is not demonstrated in the paper. This drug has been shown to block calcium channels, which may affect diverse processes. More generally, the degree of PGP overexpression in osm-3 is pretty mild: is it reasonable to conclude that degree of overexpression is sufficient to produce the observed Tm resistance? Another concern is the inconsistency between the RNA-seq and RT-qPCR data for pgp expression. For example, by RNA-seq, pgp-2, pgp-9 and pgp-14 are reported to have significant difference in expression (Figure 4A and 4B) in osm-3 (other PGPs not being discussed), but by RT-qPCR these three transporters exhibit a pretty mild upregulation in osm-3 and their expression is not reduced in nhr-8 osm-3 double mutants (Figure 5A). Can the authors provide an explanation for these discrepancies?\n\nSpecifically, the authors need to provide additional data to support the hypothesis that PGP upregulation is the basis of Tm resistance in osm-3 mutants. The authors can test whether genetic perturbations of different PGPs affect Tm sensitivity in osm-3 (dh441). Alternatively, they can construct verapamil resistant PGP mutants to demonstrate the specificity of the drug. If redundancy turns out to be a problem, the authors can try overexpressing pgps to suppress verapamil sensitivity. Even though redundancy could be a potential issues, silencing of a single PGP has been shown to be sufficient to sensitize animals to ivermectin (Menez et al., 2019). Additionally, Kurz et al. 2007 observed clear effects for pgp-5 mutants. Finally, verapamil resistant PGP variants have been reported in murine homologs (Loo and Clarke, 2001).\n\n2) NHR-8 involvement in PFP upregulation and Tm resistance: Experiments with nhr-8 mutants should be better controlled to verify specific involvement in the tested phenotypes. Disruption of nhr-8, which the authors show is impairing pgp gene expression, is also important for C. elegans cholesterol metabolism, and could affect many additional genes; with regard to the impaired development of nhr-8 mutants (Figure 5B), alone or in combination with osm-3. It was shown that nhr-8 disruption increased dauer frequency (especially in combination with mild stress), which is likely to have contributed to the failure to develop on Tm (Magner et al. 2013). Therefore, it's important that the authors test whether ectopic expression of pgps rescues the Tm sensitivity of the nhr-8 and nhr-8 osm-3 double mutants.\n\n3) UPR response in osm-3 (dh441): The authors emphasize that the lack of UPR induction they observe upon Tm treatment is due to a drug detoxification mechanism. However, they don't demonstrate this by confirming that the UPR can still be induced in these animals when activated by non-drug means eg. genetic activation of the UPR by expression of misfolded proteins, or by expression of spliced XBP-1. This is needed to confirm that drug detoxification is in operation here, rather than another mechanism, such as a reduction in the rate of translation, or a mechanism that increases ER homeostasis independent of the UPR. In addition, is this effect specific to Tm among the drugs that induce UPR activation, or is it a general effect? For example, does treatment with thapsigargin or another UPR-activating drug induce the UPR in osm-3 animals?\n\nSimilarly, Lines 243-245: \"Instead of an activated stress signaling status that might explain the TM resistance, osm-3 Dyf mutants show no ER UPR induction upon TM treatment.\"\n\nThe implications of this point might be worth additional discussion / speculation. Do the data suggest that UPR overactivation could be a mechanism of TM toxicity, and that osm-3 mutants prevent that overactivation? Or do the authors favor the view that osm-3 mutants detoxify TM in such a way that ER UPR never needs to get activated in the first place?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"NHR-8 regulated P-glycoproteins uncouple xenobiotic stress resistance from longevity in chemosensory C. elegans mutants\" for further consideration by eLife. Your revised article has been evaluated by Vivek Malhotra (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but some issues remain that need to be addressed before acceptance, as outlined below:\n\n1. The demonstration that pgp-8 KD was sufficient to increase hsp-4 expression in osm-3 mutants (Figure 5E, which is not cited in the main text, and not referred in the abstract) provides some support for the proposition that NHR-8 induction of pgp genes is responsible for TM resistance in osm-3 mutants. However, this is shown with higher TM concentration, sufficient to induce hsp-4 up-regulation even in control-treated osm-3 mutants, so that sensitization was a matter of scale rather than from nothing to something, which would have been more conclusive. Stronger support would have been provided by experiments examining the ability of pgp-8 RNAi to abolish developmental resistance to TM in osm-3 mutants (and to Ivermectin and paraquat to test the generality of detoxification mechanisms). Furthermore, additional experiments examining the effects of pgp-8 RNAi on worms over-expressing NHR-8 are important to establish that OSM-3, NHR-8 and PGP-8 function as one pathway.\n\n2. Cholesterol experiments are rather indirect and therefore need to be interpreted carefully. The authors need to provide greater clarity in the interpretation of these data and what can or can't be concluded from them.\n",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "89ed08b2-86b5-4387-868b-b95c61dae2d6",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C1",
+      "claim": "osm-3 mutants were significantly protected from tunicamycin-induced ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that mutants in the intraflagellar transport protein gene osm-3 were significantly protected from tunicamycin-induced ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "8cf5286b-1d15-43ed-8276-be857147448b",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C2",
+      "claim": "osm-3 lifespan extension is dependent on DAF-16/FOXO.",
+      "claim_type": "EXPLICIT",
+      "source": "While osm-3 lifespan extension is dependent on the key longevity factor DAF-16/FOXO, tunicamycin resistance was not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by demographic lifespan analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "90c8403b-9364-4dbd-82e3-740bb674cbba",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C3",
+      "claim": "osm-3 tunicamycin resistance is independent of DAF-16/FOXO.",
+      "claim_type": "EXPLICIT",
+      "source": "While osm-3 lifespan extension is dependent on the key longevity factor DAF-16/FOXO, tunicamycin resistance was not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by developmental resistance assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "695cc590-0e7d-44bc-9c3e-0c0ae63a5e1b",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C4",
+      "claim": "osm-3 mutants are protected from bacterial pathogens in a pmk-1 p38 MAP kinase dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "osm-3 mutants are protected from bacterial pathogens, which is pmk-1 p38 MAP kinase dependent, while TM resistance was pmk-1 independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by P. aeruginosa PA14 survival assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "104612e2-0a69-42a9-a188-fc8781bd59ba",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C5",
+      "claim": "osm-3 tunicamycin resistance is pmk-1 independent.",
+      "claim_type": "EXPLICIT",
+      "source": "osm-3 mutants are protected from bacterial pathogens, which is pmk-1 p38 MAP kinase dependent, while TM resistance was pmk-1 independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by developmental resistance assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "c239fde9-a81b-4888-9ece-3f2d9a5793cc",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C6",
+      "claim": "P-glycoprotein (PGP) xenobiotic detoxification gene expression was elevated in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of P-glycoprotein (PGP) xenobiotic detoxification genes was elevated in osm-3 mutants and their knockdown or inhibition with verapamil suppressed tunicamycin resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by quantitative PCR data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "833a7fc8-07fa-4644-95a0-9695454dd888",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C7",
+      "claim": "Knockdown of PGPs suppressed tunicamycin resistance in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of P-glycoprotein (PGP) xenobiotic detoxification genes was elevated in osm-3 mutants and their knockdown or inhibition with verapamil suppressed tunicamycin resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by developmental TM resistance assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "eaceed21-ab5a-4f1e-a6e3-f105e77121b0",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C8",
+      "claim": "Inhibition of PGPs with verapamil suppressed tunicamycin resistance in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of P-glycoprotein (PGP) xenobiotic detoxification genes was elevated in osm-3 mutants and their knockdown or inhibition with verapamil suppressed tunicamycin resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by developmental TM resistance assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "4f5a57a5-68c8-499e-9547-a1d987167505",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C9",
+      "claim": "The nuclear hormone receptor nhr-8 is necessary to regulate a subset of PGPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear hormone receptor nhr-8 was necessary to regulate a subset of PGPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by quantitative PCR data showing that upregulation of pgp-3, pgp-5, pgp-11 and pgp-13 in osm-3 mutants was suppressed in the osm-3; nhr-8 double mutant (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "c36eb510-33de-4881-9770-1147e91f8dd3",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C10",
+      "claim": "Separate pathways mediate longevity, pathogen resistance, and xenobiotic detoxification in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus identify a cell-nonautonomous regulation of xenobiotic detoxification and show that separate pathways are engaged to mediate longevity, pathogen resistance, and xenobiotic detoxification in osm-3 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by genetic epistasis experiments showing that daf-16 is required for longevity but not TM resistance, pmk-1 is required for pathogen resistance but not TM resistance, and nhr-8 is required for TM resistance but not longevity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "fd7ffddb-1f5a-46c4-a1bf-ba001302644e",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C11",
+      "claim": "Many chemosensory mutants in C. elegans are long-lived.",
+      "claim_type": "EXPLICIT",
+      "source": "Many chemosensory mutants are long-lived, and this phenotype depends on the DAF-16/FOXO transcription factor that is regulated by the insulin signaling pathway (Apfeld and Kenyon, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "e645d4e6-2122-450c-9f2b-1dcf95b3bce9",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C12",
+      "claim": "Longevity of chemosensory mutants depends on the DAF-16/FOXO transcription factor regulated by the insulin signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Many chemosensory mutants are long-lived, and this phenotype depends on the DAF-16/FOXO transcription factor that is regulated by the insulin signaling pathway (Apfeld and Kenyon, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "795f845d-f5d9-4006-b6ba-b73d3c74b996",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C13",
+      "claim": "Mutations in intraflagellar transport (IFT) proteins prevent full cilia development of amphid sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "One example are mutations in intraflagellar transport (IFT) proteins that prevent full cilia development of amphid sensory neurons (Inglis et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "491d29f1-37b0-448e-8cc4-d6c29789fb92",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C14",
+      "claim": "Alterations in the IFT genes osm-3 and daf-10 disrupt the development of neuronal dendrites that project toward the tip of the nose.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations in the IFT genes osm-3 and daf-10 disrupt the development of neuronal dendrites that project toward the tip of the nose, where they are exposed to the outer environment (Inglis et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "ed98a26c-a13d-4e40-8ad3-b1a7c1570120",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C15",
+      "claim": "Dye filling defective (Dyf) C. elegans are defined by an inability to take up DiI into their sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Dye filling defective (Dyf) C. elegans are defined by an inability to take up DiI into their sensory neurons (Inglis et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "a12c8a76-a635-47f5-ab3f-20fc3fe187bc",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C16",
+      "claim": "daf-10(m79) has a unique resistance to pathogenic bacteria that was proposed to be downstream of sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "One such Dyf mutant, daf-10(m79), has a unique resistance to pathogenic bacteria that was proposed to be downstream of sensory input (Gaglia et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "3af734f6-f391-46eb-a4f1-498d257550b8",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C17",
+      "claim": "Pairs of amphid head neurons, such as ASH and ASJ, help coordinate the innate immune response to bacterial stress after infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, pairs of amphid head neurons, such as ASH and ASJ that often become disrupted in Dyf mutants, help coordinate the innate immune response to bacterial stress after infection (Meisel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "ba22c7e8-44d2-4b0c-ae1f-8752c9a085e9",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C18",
+      "claim": "Longevity is often associated with activation of physiological stress response pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Longevity is often associated with activation of physiological stress response pathways and has been shown to be regulated by the insulin signaling pathway in Dyf C. elegans (Apfeld and Kenyon, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "1957a0e8-0669-4b10-bf44-143115380484",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C19",
+      "claim": "Loss of the putative chemoreceptor Or83b significantly increases lifespan in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster, loss of the putative chemoreceptor Or83b has been shown to significantly increase lifespan (Libert et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "698fa403-9e1c-4dc5-b999-15b2fca189a5",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C20",
+      "claim": "Mice with ablated olfactory sensory neurons have a unique metabolic signature that protects them from deleterious effects of a high-fat diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mice with ablated olfactory sensory neurons have a unique metabolic signature that protects them from deleterious effects of a high-fat diet (Riera et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "df3483f6-8400-4684-b2bb-77fb1d81fdc0",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C21",
+      "claim": "Unbiased screens for drug resistance have independently identified the Dyf phenotype as a common feature in drug-resistant C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "First, unbiased screens for drug resistance have independently identified the Dyf phenotype as a common feature in drug-resistant C. elegans (Fujii et al., 2004; M\u00e9nez et al., 2016; Collins et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "f863a584-ff13-42d6-a9fd-0eecbc5762a5",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C22",
+      "claim": "Selection for resistance to the anthelmintic drug ivermectin enriches for Dyf mutants in forward genetic screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection for resistance to the anthelmintic drug ivermectin was shown to enrich for Dyf mutants in several forward genetic screens (M\u00e9nez et al., 2016; Page, 2018; Dent et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "0529f6f0-af31-4b15-8c1e-8b78e2f6f5af",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C23",
+      "claim": "P-glycoproteins (PGPs) are the drivers behind ivermectin resistance in Dyf mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Follow-up work identified P-glycoproteins (PGPs), a class of ATP binding cassette (ABC) transporters, as the drivers behind ivermectin resistance in Dyf mutants (Ardelli and Prichard, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "38a1fe0e-fee8-48cf-9b07-c3880e2a2d26",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C24",
+      "claim": "Some chemosensory mutations, such as in daf-10, lead to resistance to pathogenic bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, some chemosensory mutations, such as in daf-10, lead to resistance to pathogenic bacteria (Gaglia et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "8fb8355e-3090-42a1-8a67-796d6591850c",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C25",
+      "claim": "osm-3 is a long-lived Dyf mutant that was previously identified in a forward genetic screen for resistance to tunicamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we characterize a long-lived Dyf mutant, osm-3, that was previously identified in a forward genetic screen for resistance to the potent ER stressor tunicamycin (TM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by reference to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "47570b78-0e91-4ccf-85d3-4657e9cb6e28",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C26",
+      "claim": "The hexosamine biosynthetic pathway plays a role in TM resistance and longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "From this screen, we reported the role of the hexosamine biosynthetic pathway in TM resistance and longevity (Denzel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "911fdd7c-9147-4e63-b4de-4df2e8cb87d3",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C27",
+      "claim": "The largest cohort of classifiable mutants from a TM resistance screen presented the Dyf phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest cohort of classifiable mutants presented the Dyf phenotype (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by reference to Figure 1A showing DiI staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "7c6036c8-b350-4358-a2f7-9cbd82bab31f",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C28",
+      "claim": "osm-3(dh441)IV has a C to T mutation at position 3796925 of exon 8.",
+      "claim_type": "EXPLICIT",
+      "source": "osm-3(dh441)IV has a C to T mutation at position 3796925 of exon 8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 1B caption and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "a071a43d-61db-4f9c-b6e8-a9709ff5ac51",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C29",
+      "claim": "osm-3(dh441)IV carries a premature stop in the eighth exon.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant allele we selected for our investigation, osm-3(dh441)IV (this allele will be referred to hereafter as osm-3), carries a premature stop in the eighth exon, which prevents normal cilia development causing the Dyf phenotype (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1B showing the mutation location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "87972876-a4c1-4d47-bdc8-4053e8b2df2a",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C30",
+      "claim": "osm-3 mutants fully develop at tunicamycin concentrations at least up to 10 \u00b5g/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "While WT worms fail to develop on TM at concentrations above 4 \u00b5g/mL, osm-3 mutants fully develop at concentrations at least up to 10 \u00b5g/mL TM (Figure 1C; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental TM resistance assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "7a4c3a98-3971-4ef8-9e35-1802e0e473b1",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C31",
+      "claim": "WT worms fail to develop on TM at concentrations above 4 \u00b5g/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "While WT worms fail to develop on TM at concentrations above 4 \u00b5g/mL, osm-3 mutants fully develop at concentrations at least up to 10 \u00b5g/mL TM (Figure 1C; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental TM resistance assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "db683010-93fd-49d0-b5c7-386f34257510",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C32",
+      "claim": "osm-3 mutants have extended lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Demographic lifespan analysis of osm-3 indeed confirmed extended lifespan in our point mutant (Figure 1D and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by demographic lifespan analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "52e6992f-6cbb-4530-8211-b1055eb6ca16",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C33",
+      "claim": "All long-lived Dyf mutants tested were significantly TM resistant at 10 \u00b5g/mL TM.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, all long-lived Dyf mutants that we tested proved to be significantly TM resistant at the WT lethal dose of 10 \u00b5g/mL TM (Figure 1E, Figure 1\u2014figure supplement 1A\u2013G, Figure 1\u2014figure supplement 1\u2014source data 1\u20137).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental TM resistance assay data shown in Figure 1E and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "8a2c1b82-d66a-411a-a281-398a05f59825",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C34",
+      "claim": "Long-lived chemosensory odr-1(n1936)X, odr-3(n2150)V, and tax-4(p678)III mutants that do not display a Dyf phenotype were only slightly TM resistant.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the long-lived chemosensory odr-1(n1936)X, odr-3(n2150)V, and tax-4(p678)III mutants that do not display a Dyf phenotype were only slightly TM resistant (Figure 1E, Figure 1\u2014figure supplement 1H\u2013J, Figure 1\u2014figure supplement 1\u2014source data 8\u201310).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental TM resistance assay data shown in Figure 1E and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "ee9ab441-e144-4c6e-874a-d5e76bbe24c4",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C35",
+      "claim": "Among chemosensory defective mutants, lifespan extension is uncoupled from TM resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data thus suggest that, among the larger class of chemosensory defective mutants, lifespan extension is uncoupled from TM resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that some long-lived chemosensory mutants without the Dyf phenotype are not TM resistant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "f0197ce3-5160-46a5-8b6a-394c762171b5",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C36",
+      "claim": "TM treatment activates the ER unfolded protein response (UPRER).",
+      "claim_type": "EXPLICIT",
+      "source": "TM treatment activates the ER unfolded protein response (UPRER); we thus characterized the overall transcriptional response of osm-3 mutants upon TM treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and is established knowledge about TM's mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "f38d72e7-64ba-449e-ab99-bc5f4e349bc3",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C37",
+      "claim": "Gene ontology (GO) terms related to ER stress and ER protein folding showed significant upregulation in WT animals after TM treatment, but not in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the gene ontology (GO) terms related to ER stress and ER protein folding showed significant upregulation in WT animals, but not in osm-3 mutants (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by transcriptomic analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "595a785f-cba8-4c72-b10e-ebca68bba883",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C38",
+      "claim": "RT-qPCR analysis confirmed that there was no UPRER induction in TM-treated osm-3 mutants compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis of UPR target genes further confirmed that there was no UPRER induction in TM-treated osm-3 mutants compared to the WT (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by RT-qPCR data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "5ac33bd0-949f-4d0e-9e2c-ad92f175ffc2",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C39",
+      "claim": "A hallmark of UPRER activation in C. elegans is the upregulation of the molecular chaperone HSP-4/BiP.",
+      "claim_type": "EXPLICIT",
+      "source": "A hallmark of UPRER activation in C. elegans is the upregulation of the molecular chaperone HSP-4/BiP (Shen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "1b8a384f-df9b-43dd-b1cf-4f3e139907c8",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C40",
+      "claim": "Upon TM treatment of osm-3 mutants carrying an hsp-4::GFP reporter construct, there was no significant increase in the GFP signal compared to the untreated control.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon TM treatment of osm-3 mutants carrying an hsp-4::GFP reporter construct, there was no significant increase in the GFP signal compared to the untreated control, while in the WT, the GFP levels were significantly increased (Figure 2B,C, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Biosorter analysis and fluorescence microscopy shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "3f642d39-f319-4f21-9853-4504a1393b05",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C41",
+      "claim": "In WT worms, TM treatment significantly increased hsp-4::GFP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon TM treatment of osm-3 mutants carrying an hsp-4::GFP reporter construct, there was no significant increase in the GFP signal compared to the untreated control, while in the WT, the GFP levels were significantly increased (Figure 2B,C, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Biosorter analysis and fluorescence microscopy shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "8d15d3e3-946c-4106-bf8c-9d1597bca2ac",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C42",
+      "claim": "The ER membrane protein SEL-1/HRD3 is a cofactor of the HRD1 ubiquitin ligase complex involved in ER-associated degradation (ERAD).",
+      "claim_type": "EXPLICIT",
+      "source": "The ER membrane protein SEL-1/HRD3 is a cofactor of the HRD1 ubiquitin ligase complex involved in ER-associated degradation (ERAD) (Hampton et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "d0cfd4d4-56e4-4b70-a074-285ace234fba",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C43",
+      "claim": "Using sel-1 RNAi to inhibit ERAD resulted in robust activation of the hsp-4::GFP reporter in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Using sel-1 RNAi to inhibit ERAD, we observed a robust activation of the hsp-4::GFP reporter, suggesting a functional UPRER response upon ER stress in osm-3 mutants (Figure 2D,E, Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Biosorter analysis and fluorescence microscopy shown in Figure 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "13c6d7de-3477-4ce4-9cff-12519875921a",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C44",
+      "claim": "osm-3 mutants have a functional UPRER response upon ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Using sel-1 RNAi to inhibit ERAD, we observed a robust activation of the hsp-4::GFP reporter, suggesting a functional UPRER response upon ER stress in osm-3 mutants (Figure 2D,E, Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that sel-1 RNAi induces hsp-4::GFP in osm-3 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "c1fdeb0b-c35b-4b8a-9d82-314fea109dc4",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C45",
+      "claim": "DTT treatment induced normal levels of hsp-4::GFP induction and xbp-1 splicing in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We further used DTT treatment to induce ER stress and found normal levels of hsp-4::GFP induction and xbp-1 splicing (Figure 2F, Figure 2\u2014source data 3) in osm-3 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by quantitative PCR data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "cbbd3c38-277c-4eb0-86df-5a68385ad142",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C46",
+      "claim": "The reduced response to TM observed in osm-3 mutants is not due to a defect in UPR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations rule out that the reduced response to TM observed in osm-3 mutants was due to a defect in UPR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that osm-3 mutants can mount a UPR response to sel-1 RNAi and DTT treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "48297734-0253-4efd-ac81-eac88ef1af17",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C47",
+      "claim": "The lifespan extension observed in chemosensory-defective C. elegans is at least partially insulin signaling dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifespan extension observed in chemosensory-defective C. elegans as well as in Drosophila has been shown to be at least partially insulin signaling dependent (Apfeld and Kenyon, 1999; Libert et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "a2c2584a-5eae-4560-a6ad-adc80e646163",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C48",
+      "claim": "The osm-3 lifespan extension is fully daf-16 dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the osm-3 lifespan extension was fully daf-16 dependent, as the lifespan of the osm-3; daf-16 double mutants was identical to the daf-16 lifespan (Figure 3A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by demographic lifespan analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "37f8a3ce-69cc-4eae-b06a-24efc8963563",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C49",
+      "claim": "The osm-3; daf-16 double mutant remained resistant to TM while daf-16 single mutants do not develop at 10 \u00b5g/mL TM.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark difference to osm-3 survival, the osm-3; daf-16 double mutant remained resistant to TM while daf-16 single mutants do not develop at 10 \u00b5g/mL TM (Figure 3B, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental resistance assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "ed9f2d8f-a49c-4eeb-b94d-7c064ac9c026",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C50",
+      "claim": "Knockdown of daf-16 by RNAi did not elevate the hsp-4::GFP response of osm-3 mutants after TM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knockdown of daf-16 by RNAi did not elevate the hsp-4::GFP response of osm-3 mutants after TM treatment (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Biosorter analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "4c19ebb5-5d05-435d-affa-4fa0bd7141dd",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C51",
+      "claim": "daf-2 mutants failed to develop on 10 \u00b5g/mL TM, while osm-3 mutants were fully developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the links between the insulin signaling pathway and ER stress signaling (Henis-Korenblit et al., 2010; Kyriakakis et al., 2017; Matai et al., 2019; Labbadia and Morimoto, 2014), we were surprised to find that daf-2 mutants failed to develop on 10 \u00b5g/mL TM, while osm-3 mutants were fully developed (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 1\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental resistance assay data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "240e0d52-0cc2-4c71-8681-ce512c5e6179",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C52",
+      "claim": "The osm-3 lifespan extension and TM drug resistance are uncoupled and act via independent pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this evidence suggests that the osm-3 lifespan extension and TM drug resistance are uncoupled and act via independent pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that daf-16 is required for longevity but not TM resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "2fed8d21-c56d-4105-88b9-55c0a42feb7b",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C53",
+      "claim": "The PMK-1 p38 mitogen-activated protein kinase (MAPK) pathway has been implicated in the innate immune response of C. elegans during PA14 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The PMK-1 p38 mitogen-activated protein kinase (MAPK) pathway as well as UPRER targets have been implicated in the innate immune response of C. elegans during PA14 infection (Richardson et al., 2010; Haskins et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "66ecd9d1-7790-4552-97db-a0d1051f6769",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C54",
+      "claim": "osm-3 mutants were resistant to PA14.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, osm-3 mutants were resistant to PA14, and this increased pathogen resistance was lost upon pmk-1 knockdown (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by P. aeruginosa PA14 survival assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "e576ab46-2db1-454d-8c07-680c6004f029",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C55",
+      "claim": "The increased pathogen resistance of osm-3 mutants was lost upon pmk-1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, osm-3 mutants were resistant to PA14, and this increased pathogen resistance was lost upon pmk-1 knockdown (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by P. aeruginosa PA14 survival assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "5ba6c4e2-dcba-4adf-8c08-02a49e80fb8e",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C56",
+      "claim": "The osm-3; pmk-1 double mutant was fully resistant to TM, while the pmk-1 single mutant was sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "The osm-3; pmk-1 double mutant was fully resistant to TM, while the pmk-1 single mutant was sensitive (Figure 3D, Figure 3\u2014source data 2), demonstrating that TM resistance and pmk-1 mediated pathogen resistance are uncoupled in osm-3 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental resistance assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "6a6f2754-4459-4e62-99a6-1b4052930669",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C57",
+      "claim": "TM resistance and pmk-1 mediated pathogen resistance are uncoupled in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The osm-3; pmk-1 double mutant was fully resistant to TM, while the pmk-1 single mutant was sensitive (Figure 3D, Figure 3\u2014source data 2), demonstrating that TM resistance and pmk-1 mediated pathogen resistance are uncoupled in osm-3 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that pmk-1 mutation does not suppress osm-3 TM resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "4365aa81-2264-4f8c-abd9-2fd3c6807e66",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C58",
+      "claim": "Insulin signaling and the MAPK pathway are not required for TM resistance in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, insulin signaling and the MAPK pathway, two major stress response pathways in C. elegans that have links to ER protein quality control, are not required for TM resistance in osm-3 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the genetic epistasis experiments showing that daf-16 and pmk-1 mutations do not suppress osm-3 TM resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "71e033f8-e557-49c2-95b6-4f1a808bf260",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C59",
+      "claim": "PGPs are a conserved family of ATP binding cassette (ABC) transporters that locate to the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "PGPs are a conserved family of ATP binding cassette (ABC) transporters that locate to the cell membrane (Sangster, 1994) and they are involved in toxin clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "d3f6cc98-1f7b-4139-b4fd-db1febae3196",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C60",
+      "claim": "C. elegans have 15 pgp genes.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans have 15 pgp genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and is established knowledge about C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "c6685902-2e5a-48f2-bceb-5dd4797586b1",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C61",
+      "claim": "There is significant upregulation of pgp-3, pgp-5, pgp-11, and pgp-13 in osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Using quantitative PCR, we found a significant upregulation of pgp-3, pgp-5, pgp-11, and pgp-13 in osm-3 mutants (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by quantitative PCR data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "8a931ab9-a23b-4183-964a-60e656123831",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C62",
+      "claim": "The nuclear hormone receptor NHR-8 has been linked to xenobiotic detoxification and pgp regulation in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear hormone receptor NHR-8 has been linked to xenobiotic detoxification and pgp regulation in C. elegans (M\u00e9nez et al., 2019; Lindblom et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "5bb68720-49ba-4c73-ad93-ea6c0d5c8f3e",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C63",
+      "claim": "The upregulation of pgp-3, pgp-5, pgp-11 and pgp-13 in osm-3 mutants was suppressed in the osm-3; nhr-8 double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the upregulation of pgp-3, pgp-5, pgp-11 and pgp-13, in osm-3 mutants, was suppressed in the osm-3; nhr-8 double mutant (Figure 4A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by quantitative PCR data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "c404435e-80c1-42c2-ba2a-bc817e46a0b0",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C64",
+      "claim": "Knockdown of pgp-5, pgp-11, and pgp-12 partially reduced the TM resistance of the osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knockdown of pgp-5, pgp-11, and pgp-12 partially reduced the TM resistance of the osm-3 mutants (Figure 4B, Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental TM resistance assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "be03aa5d-8dea-4147-861b-399def174343",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C65",
+      "claim": "Verapamil has been used to specifically inhibit PGP activity, re-sensitizing worms to the anthelmintic compound ivermectin.",
+      "claim_type": "EXPLICIT",
+      "source": "Verapamil has been used to specifically inhibit PGP activity, re-sensitizing worms to the anthelmintic compound ivermectin (M\u00e9nez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "fd8ab68c-7530-42f8-a981-d20c7ff959e7",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C66",
+      "claim": "1 nM verapamil significantly suppressed development of osm-3 C. elegans in the presence of TM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 1 nM verapamil significantly suppressed development of osm-3 C. elegans in the presence of TM, showing no effect on controls without TM (Figure 4C, Figure 4\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental TM resistance assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "4956743b-930b-4c55-9e19-5519c50c7743",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C67",
+      "claim": "Verapamil showed no effect on osm-3 development on controls without TM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 1 nM verapamil significantly suppressed development of osm-3 C. elegans in the presence of TM, showing no effect on controls without TM (Figure 4C, Figure 4\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental TM resistance assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "e3679078-d1b9-4040-a18f-a0667dfa7279",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C68",
+      "claim": "Xenobiotic detoxification is achieved by multiple PGPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The partial effects of pgp knockdown (Figure 4B) and verapamil treatment (Figure 4C) suggest that xenobiotic detoxification is achieved by multiple PGPs, which are likely to be transcriptionally orchestrated by nhr-8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the partial effects of individual PGP knockdowns and verapamil treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "da4977d1-86f4-4323-ab36-4d06e0206c89",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C69",
+      "claim": "Multiple PGPs are likely to be transcriptionally orchestrated by nhr-8.",
+      "claim_type": "EXPLICIT",
+      "source": "The partial effects of pgp knockdown (Figure 4B) and verapamil treatment (Figure 4C) suggest that xenobiotic detoxification is achieved by multiple PGPs, which are likely to be transcriptionally orchestrated by nhr-8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that nhr-8 regulates multiple PGPs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "03c3228d-9e0d-4818-a1b3-201b7fbd96cd",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C70",
+      "claim": "The resistance of osm-3 mutants to TM was largely suppressed in the osm-3; nhr-8(hd117)IV double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the developmental TM assay revealed that the resistance of osm-3 mutants was largely suppressed in the osm-3; nhr-8(hd117)IV double mutant (Figure 4D. Figure 4\u2014source data 4), suggesting that NHR-8 is necessary for osm-3 TM resistance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental TM resistance assay data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "0ba8c16b-5bda-48c0-bd7b-f2ff4eca8267",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C71",
+      "claim": "NHR-8 is necessary for osm-3 TM resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the developmental TM assay revealed that the resistance of osm-3 mutants was largely suppressed in the osm-3; nhr-8(hd117)IV double mutant (Figure 4D. Figure 4\u2014source data 4), suggesting that NHR-8 is necessary for osm-3 TM resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that nhr-8 mutation suppresses osm-3 TM resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "89c19a03-be06-400c-b001-826e998f5696",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C72",
+      "claim": "osm-3 mutants fully developed to adults in the presence of 6 \u00b5g/mL ivermectin that is lethal to WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by a role of PGPs in ivermectin resistance, we found that osm-3 mutants fully developed to adults in the presence of 6 \u00b5g/mL ivermectin that is lethal to WT animals (Figure 4E, Figure 4\u2014source data 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental ivermectin resistance assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "32f0c7b6-0f64-4d2c-92df-394bd6326ebf",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C73",
+      "claim": "Ivermectin resistance of osm-3 mutants was suppressed by loss of NHR-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Ivermectin resistance of osm-3 mutants was suppressed by loss of NHR-8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental ivermectin resistance assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "01204491-fdb8-48a2-a986-a6f901dd57c1",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C74",
+      "claim": "Dyf C. elegans mutants have been independently identified in drug resistance screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Dyf C. elegans mutants have been independently identified in drug resistance screens (Fujii et al., 2004; M\u00e9nez et al., 2016; Dent et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "7a6a8347-1f90-477e-bbf3-2df408e53371",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C75",
+      "claim": "osm-3 mutants were resistant to 200 nM paraquat, as they fully develop at a concentration that is toxic to WT C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, we observed that osm-3 mutants were resistant to 200 nM paraquat, as they fully develop at a concentration that is toxic to WT C. elegans (Figure 4F, Figure 4\u2014source data 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental paraquat resistance assay data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "6d50f39e-b83d-493b-859e-9327e4562949",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C76",
+      "claim": "NHR-8 was required for the paraquat resistance of the osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role in xenobiotic detoxification, NHR-8 was required for the paraquat resistance of the osm-3 mutants (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental paraquat resistance assay data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "aaba2ea6-0329-43ec-b332-057d29b4924c",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C77",
+      "claim": "Several PGPs have been shown to be expressed in non-neuronal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Several PGPs have been shown to be expressed in non-neuronal tissue (Lincke et al., 1993; Sheps et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "93af7c6d-4102-4f9d-86c7-7b274bb4c2ec",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C78",
+      "claim": "nhr-8 has been shown to be expressed in the intestine of C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that PGP expression is regulated by nhr-8, which has also been shown to be expressed in the intestine of C. elegans (Magner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "28f48a49-5cd9-4661-8b52-bd20c3469bd8",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C79",
+      "claim": "Neuronal signaling controls drug resistance through nuclear hormone signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining this previous information with our finding that Dyf mutants are resistant to several uniquely toxic drugs, we conclude that neuronal signaling controls drug resistance through nuclear hormone signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and inferred from the observation that Dyf mutants (with neuronal defects) have increased PGP expression regulated by nhr-8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "f772da7f-e7ab-4974-a0d9-23c4ec301278",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C80",
+      "claim": "The NHR-8 ligand is likely a sterol molecule derived from cholesterol metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The NHR-8 ligand remains unknown, but is likely a sterol molecule derived from cholesterol metabolism (Magner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "bb20395e-dbd4-4d92-9de5-c386973f1622",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C81",
+      "claim": "Omitting cholesterol from the culture plates for one generation leads to TM hypersensitivity in both WT and osm-3 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus tested the role of cholesterol in TM resistance and found that omitting cholesterol from the culture plates for one generation leads to TM hypersensitivity in both WT and osm-3 animals (Figure 5A, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental dose-response TM resistance assay data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "5b1c71b0-9f81-4018-a9a1-2b15681061c6",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C82",
+      "claim": "High cholesterol significantly reduced TM-induced ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "To specifically assess a role of cholesterol-derived signals in TM resistance, we used the hsp-4::GFP reporter and found that high cholesterol significantly reduced TM-induced ER stress (Figure 5B, Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Biosorter analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "c033ecd4-0c17-4db4-a319-d6d608a942e4",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C83",
+      "claim": "WT TM resistance is cholesterol dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental cholesterol dose\u2013response assays in the presence of TM confirmed that WT TM resistance is cholesterol dependent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by cholesterol dose-response developmental assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "f93af6b2-8119-4b5d-a546-957cfdeef094",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C84",
+      "claim": "In nhr-8 and osm-3; nhr-8 double mutants, cholesterol treatment failed to protect from TM toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "In nhr-8 and osm-3; nhr-8 double mutants, however, cholesterol treatment failed to protect from TM toxicity (Figure 5C, Figure 5\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by cholesterol dose-response developmental assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "d7227151-510b-43cc-b9d5-e176b27c9a23",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C85",
+      "claim": "NHR-8 plays a key role in mediating TM resistance downstream of sterol signals.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates a key role of NHR-8 in mediating TM resistance downstream of sterol signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that cholesterol-mediated TM protection requires nhr-8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "cfa77d33-8953-4449-b8be-a90f237ae808",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C86",
+      "claim": "Verapamil did not shorten osm-3 lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, verapamil did not shorten osm-3 lifespan (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by demographic lifespan analysis shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "3ccc1759-8e8c-423f-a958-b6a91f299b41",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C87",
+      "claim": "Verapamil did not affect WT lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, verapamil did not affect WT lifespan (Figure 4G and Supplementary file 1) and had no visible effect on WT development (Figure 4\u2014figure supplement 1C, Figure 4\u2014figure supplement 1\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by demographic lifespan analysis shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "ab8ebef8-d271-4299-b2ad-61092b237ae9",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C88",
+      "claim": "Verapamil had no visible effect on WT development.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, verapamil did not affect WT lifespan (Figure 4G and Supplementary file 1) and had no visible effect on WT development (Figure 4\u2014figure supplement 1C, Figure 4\u2014figure supplement 1\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by developmental assay data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "5f8d72d9-7f0c-43a2-8f3c-ccc2be3635dd",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C89",
+      "claim": "nhr-8 mutation shortens lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "While nhr-8 mutation shortens lifespan, the osm-3 mutation extended both WT and nhr-8 survival to a similar degree (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by demographic lifespan analysis shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "f63c1836-2fff-4970-b53d-860b03b4dee9",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C90",
+      "claim": "The osm-3 mutation extended both WT and nhr-8 survival to a similar degree.",
+      "claim_type": "EXPLICIT",
+      "source": "While nhr-8 mutation shortens lifespan, the osm-3 mutation extended both WT and nhr-8 survival to a similar degree (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by demographic lifespan analysis shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "004fc0a4-6ff6-4581-b58c-1d373196c073",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C91",
+      "claim": "The xenobiotic stress resistance and longevity phenotypes of osm-3 mutants are mediated by independent pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support the conclusion that the xenobiotic stress resistance and longevity phenotypes of osm-3 mutants are mediated by independent pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that verapamil and nhr-8 mutation do not affect osm-3 longevity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "c1bea253-63d8-4078-a6d4-a83cd8296469",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C92",
+      "claim": "osm-3 mutants showed no difference to WT animals when challenged with heat stress.",
+      "claim_type": "EXPLICIT",
+      "source": "When challenged with heat or hydrogen peroxide, osm-3 mutants showed no difference to WT animals, suggesting that osm-3 mutants are not resistant to these non-xenobiotic stressors (Figure 4\u2014figure supplement 1A, B, Figure 4\u2014figure supplement 1\u2014source data 1 and Figure 4\u2014figure supplement 1\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by heat shock assay data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "0fdbef72-ab63-4583-98e4-447600075271",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C93",
+      "claim": "osm-3 mutants showed no difference to WT animals when challenged with hydrogen peroxide induced oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "When challenged with heat or hydrogen peroxide, osm-3 mutants showed no difference to WT animals, suggesting that osm-3 mutants are not resistant to these non-xenobiotic stressors (Figure 4\u2014figure supplement 1A, B, Figure 4\u2014figure supplement 1\u2014source data 1 and Figure 4\u2014figure supplement 1\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by hydrogen peroxide survival assay data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "b1947847-2c22-4775-b7cf-23924112ef23",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C94",
+      "claim": "osm-3 mutants are not resistant to non-xenobiotic stressors.",
+      "claim_type": "EXPLICIT",
+      "source": "When challenged with heat or hydrogen peroxide, osm-3 mutants showed no difference to WT animals, suggesting that osm-3 mutants are not resistant to these non-xenobiotic stressors (Figure 4\u2014figure supplement 1A, B, Figure 4\u2014figure supplement 1\u2014source data 1 and Figure 4\u2014figure supplement 1\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the observation that osm-3 mutants are not resistant to heat or hydrogen peroxide.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "dee6e283-9621-408b-9ab2-8cacc167d819",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C95",
+      "claim": "Tunicamycin (TM) is commonly used to induce endoplasmic reticulum (ER) stress by inhibiting the addition of N-glycans to nascent polypeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Tunicamycin (TM) is commonly used to induce endoplasmic reticulum (ER) stress by inhibiting the addition of N-glycans to nascent polypeptides (Parodi, 2000; Heifetz et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "9e6247e0-d931-411a-94e1-4f71f7a57b5e",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C96",
+      "claim": "In C. elegans, treatment with TM is toxic and induces the ER unfolded protein response.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, where the ER machinery is conserved, treatment with TM is toxic and induces the ER unfolded protein response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and is established knowledge about TM's effects in C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "7ae35ba8-2950-43f3-b0eb-7c2d3c31d4c8",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C97",
+      "claim": "On plates containing TM at concentrations above 4 \u00b5g/mL, newly hatched C. elegans larvae die at early developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, on plates containing TM at concentrations above 4 \u00b5g/mL, newly hatched larvae die at early developmental stages (Shen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "9a8a878e-e7f7-4d9f-a25f-ed4f52ff77f6",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C98",
+      "claim": "An ethyl methane-sulfonate mutagenesis screen was carried out to identify long-lived mutants using TM resistance in C. elegans as a proxy phenotype for longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we had carried out an ethyl methane-sulfonate mutagenesis screen to identify long-lived mutants using TM resistance in C. elegans as a proxy phenotype for longevity (Denzel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "1ddeca0c-fa20-4964-b023-5e10713cb22b",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C99",
+      "claim": "osm-3 is a member of the kinesin family involved in axonal development and transport.",
+      "claim_type": "EXPLICIT",
+      "source": "osm-3 is a member of the kinesin family involved in axonal development and transport, and mutants are known to show a Dyf phenotype (Inglis et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "5a0ffe9f-6942-4a3d-9cb1-1100412c0639",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C100",
+      "claim": "Loss of osm-3 promotes longevity in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of osm-3, as well as other Dyf mutations, promote longevity in C. elegans (Apfeld and Kenyon, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "2a5f23f2-2c35-40d9-adf5-b91e52c6713f",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C101",
+      "claim": "osm-3 mutants have never been described as TM resistant especially at concentrations as high as 10 \u00b5g/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "osm-3 mutants, and Dyf mutants in general, have never been described as TM resistant especially at concentrations as high as 10 \u00b5g/mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and is based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "4c4bd722-5f5f-4de2-8a41-225c7ea19775",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C102",
+      "claim": "The three phenotypes of osm-3 mutants (xenobiotic resistance, longevity, and protection from pathogens) are independent and controlled by separable genetic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings demonstrate that the three phenotypes of osm-3 mutants (i.e. xenobiotic resistance, longevity, and protection from pathogens) are independent and controlled by separable genetic pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and inferred from the genetic epistasis experiments showing that different pathways control each phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "292ea6f6-13c9-47f9-9a17-302c293d6730",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C103",
+      "claim": "The chemosensation defect activates a number of parallel pathways that are responsible for the distinct phenotypes of osm-3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations thus support a model in which the chemosensation defect activates a number of parallel pathways that are responsible for the distinct phenotypes of osm-3 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and inferred from the observation that different pathways control different phenotypes in osm-3 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "a7934a79-205e-4085-b4c9-cd93342913ab",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C104",
+      "claim": "The nervous system regulates systemic xenobiotic detoxification in C. elegans, likely through a sterol ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding another dimension to the cell-nonautonomous regulation of innate immunity (Aballay, 2013), we propose that the nervous system regulates systemic xenobiotic detoxification in C. elegans, likely through a sterol ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and inferred from the observation that neuronal defects in Dyf mutants lead to increased PGP expression regulated by nhr-8, which likely responds to sterol signals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "71bb42df-49fd-40fc-8535-d789232bd8a6",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C105",
+      "claim": "Mutants with defective amphid neurons have increased PGP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that mutants with defective amphid neurons have increased PGP expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by quantitative PCR data showing increased PGP expression in osm-3 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "c9b41902-e8e7-441e-90c0-7416a32bcffe",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C106",
+      "claim": "PGPs are likely regulated in C. elegans to help them combat toxins found in their natural habitat.",
+      "claim_type": "EXPLICIT",
+      "source": "PGPs are likely regulated in C. elegans to help them combat toxins found in their natural habitat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and is a speculation about the biological function of PGPs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "1463bc4d-02a8-4b19-9d11-42f341e29669",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C107",
+      "claim": "Toxic metabolites are undoubtedly common in the soil where C. elegans are found.",
+      "claim_type": "EXPLICIT",
+      "source": "Toxic metabolites are undoubtedly common in the soil where C. elegans are found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and is based on general knowledge about soil environments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "31c3906c-ace4-4281-a900-7c032e5a3593",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C108",
+      "claim": "Ivermectin is a derivative of avermectin.",
+      "claim_type": "EXPLICIT",
+      "source": "The drugs used in our study, ivermectin (a derivative of avermectin) (Burg et al., 1979) and TM, were first discovered as antibiotics that are produced by soil bacteria (Takatsuki et al., 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "886be500-3324-4f96-a4d5-1978240e4add",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C109",
+      "claim": "Ivermectin and TM were first discovered as antibiotics that are produced by soil bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The drugs used in our study, ivermectin (a derivative of avermectin) (Burg et al., 1979) and TM, were first discovered as antibiotics that are produced by soil bacteria (Takatsuki et al., 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "46093579-58f8-46ff-b4cd-5faab3f07d24",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C110",
+      "claim": "C. elegans have no adaptive immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Because C. elegans have no adaptive immune response, having PGPs as part of their innate immune system allows them to clear toxic molecules they may encounter in the wild.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and is established knowledge about C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "53fa8594-da85-4665-a536-ebb23cbc4e9f",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C111",
+      "claim": "Having PGPs as part of their innate immune system allows C. elegans to clear toxic molecules they may encounter in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "Because C. elegans have no adaptive immune response, having PGPs as part of their innate immune system allows them to clear toxic molecules they may encounter in the wild.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and is an inference about the biological function of PGPs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "acf2c950-06d4-4d48-8ccf-def5b1cf32d4",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C112",
+      "claim": "Dyf mutants likely do not occur in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "While Dyf mutants likely do not occur in the wild, our data nonetheless demonstrate a link between environmental sensing and drug resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and is a speculation based on the nature of the mutations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "d21824a6-f591-43e1-89b6-00c2a5fd8719",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C113",
+      "claim": "There is a link between environmental sensing and drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "While Dyf mutants likely do not occur in the wild, our data nonetheless demonstrate a link between environmental sensing and drug resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and inferred from the observation that sensory defects lead to increased drug resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "a57dabbc-5703-4364-87ff-76ef1360e770",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C114",
+      "claim": "PGPs have been implicated in drug resistant malignancies in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, PGPs have been implicated in drug resistant malignancies (Lehne, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "24f5f0d5-3d54-4873-b1cc-4b187f23ccae",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C115",
+      "claim": "C. elegans can be used as a tool to study the cross talk between tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Using C. elegans as a tool to study the cross talk between tissues, one might be able to better understand how extracellular signaling drives ABC transporter expression in chemotherapy-resistant cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and is a speculation about potential applications of the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "0613210f-95fd-4c9e-a18f-f6547f58c3e0",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C116",
+      "claim": "WT mean lifespan is 24 days and osm-3(dh441)IV mean lifespan is 29 days (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "WT mean lifespan = 24 days, osm-3(dh441)IV mean lifespan = 29 days, p<0.0001.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 1D caption and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "62a74837-948e-4a5f-959c-a8b860b9c736",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "claim_id": "C117",
+      "claim": "WT mean survival on PA14 is 44 hr and osm-3(dh441)IV mean survival is 58 hr (p<0.001 compared to WT).",
+      "claim_type": "EXPLICIT",
+      "source": "WT mean survival = 44 hr, osm-3(dh441)IV mean survival = 58 hr p<0.001 compared to WT, pmk-1(km25)IV mean survival = 31 hr p<0.001 compared to WT, osm-3(dh441)IV; pmk-1(km25)IV mean survival = 34 hr p<0.001 compared to WT and p=0.06 compared to pmk-1(km25)IV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 3C caption and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cd947a90-4c48-438f-8801-08a6dd741fa5",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "osm-3 mutants are significantly resistant to tunicamycin (TM), developing normally at concentrations (10 \u00b5g/mL) that are lethal to wild-type worms (which fail to develop above 4 \u00b5g/mL). The osm-3(dh441)IV allele carries a premature stop codon in exon 8, causing a dye-filling defective (Dyf) phenotype, and was identified from a TM resistance screen where Dyf mutants were the largest cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C30, C31 are directly supported by developmental TM resistance assays shown in Figure 1C with appropriate controls and replicates (n=3). The genetic characterization (C27-C29) is supported by sequencing data (Figure 1B) and DiI staining (Figure 1A). The dose-response relationship is clearly established with WT failing above 4 \u00b5g/mL while osm-3 develops at 10 \u00b5g/mL.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "270b5ba0-1c36-4298-a026-ff8a49fbea9e",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All tested long-lived Dyf mutants (che-2, che-11, daf-10, dyf-1, osm-1, osm-5, osm-6) are significantly TM resistant at 10 \u00b5g/mL, while long-lived chemosensory mutants without the Dyf phenotype (odr-1, odr-3, tax-4) show only slight TM resistance. This suggests that among chemosensory mutants, lifespan extension is uncoupled from TM resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by developmental TM resistance assays across multiple mutants (Figure 1E and Figure 1\u2014figure supplement 1A-J). The data clearly distinguish Dyf mutants (strong TM resistance) from non-Dyf chemosensory mutants (weak resistance). However, the inference in C35 that lifespan is 'uncoupled' from TM resistance is somewhat overstated\u2014the data show correlation within Dyf mutants but not across all chemosensory mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "25bacdce-82fb-457b-a982-0671683b72d2",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "osm-3 mutants have extended lifespan compared to wild-type, with mean lifespan of 29 days versus 24 days for WT (p<0.0001), consistent with previous reports that loss of osm-3 promotes longevity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is directly supported by demographic lifespan analysis (Figure 1D) with statistical significance clearly reported. The result is consistent with prior literature (C100). Sample sizes and statistical methods are described in methods and Supplementary file 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "48652f0b-d152-46ed-8e38-8dab9c8caf9f",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "osm-3 mutants show no ER unfolded protein response (UPR^ER) induction upon TM treatment, as evidenced by lack of upregulation of ER stress-related gene ontology terms, no induction of UPR target genes by RT-qPCR, and no increase in hsp-4::GFP reporter expression, while WT animals show robust UPR^ER activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by multiple complementary approaches: transcriptomic analysis (Figure 2A), RT-qPCR (Figure 2\u2014figure supplement 1), and hsp-4::GFP reporter assays (Figure 2B,C) with n=4 replicates and appropriate statistical analysis. The convergence of evidence from different methodologies strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "49196610-7278-4fc7-ae8a-929c460603d7",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "osm-3 mutants retain a functional UPR^ER response, as demonstrated by robust hsp-4::GFP activation upon sel-1 RNAi (ERAD inhibition) and normal UPR induction with DTT treatment. This rules out that the reduced TM response is due to defective UPR signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are well-supported by sel-1 RNAi experiments (Figure 2D,E) and DTT treatment (Figure 2F) showing that osm-3 mutants can mount UPR responses to alternative ER stressors. This is critical control data that eliminates a major alternative explanation. The inference in C46 is justified by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "df8bd25d-2444-46be-a6ba-f1ffa41588ae",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "osm-3 lifespan extension is fully dependent on DAF-16/FOXO (osm-3; daf-16 double mutants have lifespan identical to daf-16 alone), but TM resistance is DAF-16 independent (osm-3; daf-16 double mutants remain TM resistant). Additionally, daf-2 mutants are not TM resistant despite being long-lived, demonstrating that longevity and TM resistance are uncoupled and act via independent pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C48-C49 are strongly supported by genetic epistasis experiments with appropriate double mutants (Figure 3A,B). The lifespan data (Figure 3A) and developmental TM assays (Figure 3B) clearly show the differential requirement for daf-16. The daf-2 data (C51) provides additional supporting evidence. The inference of pathway independence (C52) is well-justified by the genetic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "bc2d8a8a-4cb5-4b47-85d8-9f2ab3ef8ffa",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "osm-3 mutants are resistant to P. aeruginosa PA14 (mean survival 58 hr vs 44 hr for WT, p<0.001), and this pathogen resistance requires pmk-1 p38 MAPK. However, TM resistance is pmk-1 independent (osm-3; pmk-1 double mutants remain TM resistant), demonstrating that pathogen resistance and TM resistance are uncoupled. Neither insulin signaling nor MAPK pathways are required for TM resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C54-C58 are supported by PA14 survival assays (Figure 3C) and TM developmental assays (Figure 3D) with appropriate genetic controls. The statistical analysis is provided (C117). The genetic epistasis clearly demonstrates pathway independence. The inference in C58 is well-justified by the combined daf-16 and pmk-1 epistasis data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "dd2cc473-0dac-4322-8757-29baa4b210a4",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "P-glycoprotein (PGP) genes pgp-3, pgp-5, pgp-11, and pgp-13 are significantly upregulated in osm-3 mutants, and this upregulation is suppressed in osm-3; nhr-8 double mutants, indicating that the nuclear hormone receptor NHR-8 is necessary to regulate this subset of PGPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C61, C9, C63 are directly supported by quantitative PCR data (Figure 4A) with n=3 replicates and appropriate statistical analysis. The nhr-8 epistasis experiment clearly demonstrates transcriptional regulation of specific PGPs by NHR-8.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "2a5dd78f-91c1-47e0-a7d1-3b2fc5601a9d",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RNAi knockdown of pgp-5, pgp-11, and pgp-12 partially reduces TM resistance in osm-3 mutants, and pharmacological inhibition with 1 nM verapamil significantly suppresses osm-3 development in the presence of TM (with no effect on controls without TM). The partial effects suggest that xenobiotic detoxification is achieved by multiple PGPs, likely transcriptionally orchestrated by nhr-8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C64, C66-C69 are supported by RNAi experiments (Figure 4B) and verapamil treatment (Figure 4C) with n=3 replicates. The partial suppression by individual PGP knockdowns and verapamil is consistent with redundancy among multiple PGPs. The inference about nhr-8 orchestration (C69) is reasonable given the transcriptional data, though direct mechanistic evidence is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "a728b0e1-45ed-4336-813e-2a03c1bef171",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TM resistance of osm-3 mutants is largely suppressed in osm-3; nhr-8 double mutants, demonstrating that NHR-8 is necessary for osm-3 TM resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 are strongly supported by developmental TM assays with the osm-3; nhr-8 double mutant (Figure 4D) showing near-complete suppression of TM resistance. This is a key genetic epistasis result establishing NHR-8 requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "f1f68ddd-8d2a-4a48-b04f-936bc66aacce",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "osm-3 mutants are resistant to ivermectin (6 \u00b5g/mL) and paraquat (200 nM), both lethal to WT animals, and both resistances are suppressed by loss of NHR-8, consistent with NHR-8-mediated xenobiotic detoxification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73, C75-C76 are supported by developmental resistance assays for ivermectin (Figure 4E) and paraquat (Figure 4F) with appropriate genetic controls. The nhr-8 dependence for both drugs supports a general xenobiotic detoxification mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "d5da579d-2098-4265-8494-c15800fa5e68",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Verapamil treatment does not shorten osm-3 lifespan or affect WT lifespan or development. While nhr-8 mutation shortens lifespan, osm-3 mutation extends both WT and nhr-8 survival to similar degrees. This demonstrates that xenobiotic stress resistance and longevity phenotypes are mediated by independent pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 are supported by lifespan analyses (Figure 4G,H) and developmental assays (Figure 4\u2014figure supplement 1C). The lack of effect of verapamil on longevity and the additive effects of osm-3 and nhr-8 mutations on lifespan clearly support pathway independence. The inference in C91 is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "dd12bf8f-5727-4c90-b82c-645dac3c46a3",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "osm-3 mutants show no resistance to heat stress or hydrogen peroxide-induced oxidative stress, suggesting specificity for xenobiotic stressors rather than general stress resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 are supported by heat shock assays (Figure 4\u2014figure supplement 1A) and H2O2 survival assays (Figure 4\u2014figure supplement 1B). These negative controls are important for establishing specificity of the xenobiotic resistance phenotype. However, the distinction between paraquat (to which osm-3 is resistant) and H2O2 (to which it is not) could be better explained mechanistically.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "d9734fb7-5261-463d-b05d-4018b9655a3b",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cholesterol depletion causes TM hypersensitivity in both WT and osm-3 animals, and high cholesterol reduces TM-induced ER stress. WT TM resistance is cholesterol-dependent, but in nhr-8 and osm-3; nhr-8 mutants, cholesterol treatment fails to protect from TM toxicity, demonstrating that NHR-8 plays a key role in mediating TM resistance downstream of sterol signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 are supported by cholesterol manipulation experiments including dose-response assays (Figure 5A,C) and hsp-4::GFP reporter assays (Figure 5B) with n=3 replicates. The nhr-8 epistasis with cholesterol treatment (C84) is particularly strong evidence for NHR-8 acting downstream of sterol signals. The inference in C85 is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "d70acc63-9044-44ba-ba5b-29483b92f22c",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Three distinct phenotypes of osm-3 mutants (xenobiotic resistance, longevity, and pathogen resistance) are independent and controlled by separable genetic pathways, supporting a model where the chemosensation defect activates parallel pathways responsible for distinct phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C102-C103 represent the major integrative conclusion of the paper. This is well-supported by the combined genetic epistasis data showing: (1) daf-16 required for longevity but not TM resistance, (2) pmk-1 required for pathogen resistance but not TM resistance, (3) nhr-8 required for TM resistance but not longevity. The model of parallel pathways (C103) is a reasonable inference from the genetic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "68c2b122-6cbe-4aac-b91b-100c154ec6cc",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Neuronal signaling controls drug resistance through nuclear hormone signaling, with the nervous system regulating systemic xenobiotic detoxification in C. elegans, likely through a sterol ligand. Mutants with defective amphid neurons have increased PGP expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79, C104-C105 represent mechanistic inferences about cell-nonautonomous regulation. While C105 is directly supported by PGP expression data in osm-3 mutants, the claims about neuronal control (C79) and sterol ligand involvement (C104) are reasonable inferences but lack direct mechanistic evidence. The tissue-specific expression data for PGPs and nhr-8 comes from citations rather than experiments in this study. The sterol ligand hypothesis is plausible given the cholesterol data but remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "80a83d06-6172-45e1-af98-687e27b5baef",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about chemosensory mutants, Dyf phenotype, longevity, pathogen resistance, and drug resistance in C. elegans and other organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C24 are background/context claims supported by appropriate citations to prior literature. These establish the foundation for the current study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "a34f5aec-842f-47cd-baab-1aad2a349636",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "osm-3 was identified in a forward genetic screen for TM resistance, where Dyf mutants were the largest cohort. The hexosamine biosynthetic pathway was previously reported to play a role in TM resistance and longevity from this screen. osm-3 mutants have not been previously described as TM resistant at high concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27, C98, C101 provide study context and are supported by citations to prior work (C26, C98) and the current data (C27). The novelty claim (C101) is reasonable based on literature knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "f3d9506b-5119-4818-9d74-cd6b2f001c70",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claims about TM mechanism, UPR signaling, PGPs, NHR-8, cholesterol metabolism, and C. elegans biology, supported by citations or established knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C39, C42, C47, C53, C59-C60, C62, C65, C77-C78, C80, C95-C97, C99, C107-C110 are background/mechanistic context supported by appropriate citations or established knowledge. These are not novel findings but provide necessary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    },
+    {
+      "id": "a54f6145-773b-4185-85ad-588d20da486f",
+      "content_id": "be402403-b556-42c7-9d40-1a7029fa193a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Speculative claims about biological function of PGPs in natural habitat, evolutionary context, and potential translational applications to cancer drug resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C106, C111-C115 are speculative discussion points about biological function and translational relevance. While reasonable, these are not directly tested hypotheses. C114 is supported by citation, but C106, C111-C113, C115 are speculations that extend beyond the experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:04:31.453419Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "89ed08b2-86b5-4387-868b-b95c61dae2d6",
+      "result_id": "cd947a90-4c48-438f-8801-08a6dd741fa5"
+    },
+    {
+      "claim_id": "87972876-a4c1-4d47-bdc8-4053e8b2df2a",
+      "result_id": "cd947a90-4c48-438f-8801-08a6dd741fa5"
+    },
+    {
+      "claim_id": "7a4c3a98-3971-4ef8-9e35-1802e0e473b1",
+      "result_id": "cd947a90-4c48-438f-8801-08a6dd741fa5"
+    },
+    {
+      "claim_id": "911fdd7c-9147-4e63-b4de-4df2e8cb87d3",
+      "result_id": "cd947a90-4c48-438f-8801-08a6dd741fa5"
+    },
+    {
+      "claim_id": "7c6036c8-b350-4358-a2f7-9cbd82bab31f",
+      "result_id": "cd947a90-4c48-438f-8801-08a6dd741fa5"
+    },
+    {
+      "claim_id": "a071a43d-61db-4f9c-b6e8-a9709ff5ac51",
+      "result_id": "cd947a90-4c48-438f-8801-08a6dd741fa5"
+    },
+    {
+      "claim_id": "52e6992f-6cbb-4530-8211-b1055eb6ca16",
+      "result_id": "270b5ba0-1c36-4298-a026-ff8a49fbea9e"
+    },
+    {
+      "claim_id": "8a2c1b82-d66a-411a-a281-398a05f59825",
+      "result_id": "270b5ba0-1c36-4298-a026-ff8a49fbea9e"
+    },
+    {
+      "claim_id": "ee9ab441-e144-4c6e-874a-d5e76bbe24c4",
+      "result_id": "270b5ba0-1c36-4298-a026-ff8a49fbea9e"
+    },
+    {
+      "claim_id": "db683010-93fd-49d0-b5c7-386f34257510",
+      "result_id": "25bacdce-82fb-457b-a982-0671683b72d2"
+    },
+    {
+      "claim_id": "5a0ffe9f-6942-4a3d-9cb1-1100412c0639",
+      "result_id": "25bacdce-82fb-457b-a982-0671683b72d2"
+    },
+    {
+      "claim_id": "0613210f-95fd-4c9e-a18f-f6547f58c3e0",
+      "result_id": "25bacdce-82fb-457b-a982-0671683b72d2"
+    },
+    {
+      "claim_id": "f38d72e7-64ba-449e-ab99-bc5f4e349bc3",
+      "result_id": "48652f0b-d152-46ed-8e38-8dab9c8caf9f"
+    },
+    {
+      "claim_id": "595a785f-cba8-4c72-b10e-ebca68bba883",
+      "result_id": "48652f0b-d152-46ed-8e38-8dab9c8caf9f"
+    },
+    {
+      "claim_id": "1b8a384f-df9b-43dd-b1cf-4f3e139907c8",
+      "result_id": "48652f0b-d152-46ed-8e38-8dab9c8caf9f"
+    },
+    {
+      "claim_id": "3f642d39-f319-4f21-9853-4504a1393b05",
+      "result_id": "48652f0b-d152-46ed-8e38-8dab9c8caf9f"
+    },
+    {
+      "claim_id": "d0cfd4d4-56e4-4b70-a074-285ace234fba",
+      "result_id": "49196610-7278-4fc7-ae8a-929c460603d7"
+    },
+    {
+      "claim_id": "13c6d7de-3477-4ce4-9cff-12519875921a",
+      "result_id": "49196610-7278-4fc7-ae8a-929c460603d7"
+    },
+    {
+      "claim_id": "c1fdeb0b-c35b-4b8a-9d82-314fea109dc4",
+      "result_id": "49196610-7278-4fc7-ae8a-929c460603d7"
+    },
+    {
+      "claim_id": "cbbd3c38-277c-4eb0-86df-5a68385ad142",
+      "result_id": "49196610-7278-4fc7-ae8a-929c460603d7"
+    },
+    {
+      "claim_id": "8cf5286b-1d15-43ed-8276-be857147448b",
+      "result_id": "df8bd25d-2444-46be-a6ba-f1ffa41588ae"
+    },
+    {
+      "claim_id": "a2c2584a-5eae-4560-a6ad-adc80e646163",
+      "result_id": "df8bd25d-2444-46be-a6ba-f1ffa41588ae"
+    },
+    {
+      "claim_id": "90c8403b-9364-4dbd-82e3-740bb674cbba",
+      "result_id": "df8bd25d-2444-46be-a6ba-f1ffa41588ae"
+    },
+    {
+      "claim_id": "37f8a3ce-69cc-4eae-b06a-24efc8963563",
+      "result_id": "df8bd25d-2444-46be-a6ba-f1ffa41588ae"
+    },
+    {
+      "claim_id": "ed9f2d8f-a49c-4eeb-b94d-7c064ac9c026",
+      "result_id": "df8bd25d-2444-46be-a6ba-f1ffa41588ae"
+    },
+    {
+      "claim_id": "4c19ebb5-5d05-435d-affa-4fa0bd7141dd",
+      "result_id": "df8bd25d-2444-46be-a6ba-f1ffa41588ae"
+    },
+    {
+      "claim_id": "240e0d52-0cc2-4c71-8681-ce512c5e6179",
+      "result_id": "df8bd25d-2444-46be-a6ba-f1ffa41588ae"
+    },
+    {
+      "claim_id": "695cc590-0e7d-44bc-9c3e-0c0ae63a5e1b",
+      "result_id": "bc2d8a8a-4cb5-4b47-85d8-9f2ab3ef8ffa"
+    },
+    {
+      "claim_id": "66ecd9d1-7790-4552-97db-a0d1051f6769",
+      "result_id": "bc2d8a8a-4cb5-4b47-85d8-9f2ab3ef8ffa"
+    },
+    {
+      "claim_id": "e576ab46-2db1-454d-8c07-680c6004f029",
+      "result_id": "bc2d8a8a-4cb5-4b47-85d8-9f2ab3ef8ffa"
+    },
+    {
+      "claim_id": "104612e2-0a69-42a9-a188-fc8781bd59ba",
+      "result_id": "bc2d8a8a-4cb5-4b47-85d8-9f2ab3ef8ffa"
+    },
+    {
+      "claim_id": "5ba6c4e2-dcba-4adf-8c08-02a49e80fb8e",
+      "result_id": "bc2d8a8a-4cb5-4b47-85d8-9f2ab3ef8ffa"
+    },
+    {
+      "claim_id": "6a6f2754-4459-4e62-99a6-1b4052930669",
+      "result_id": "bc2d8a8a-4cb5-4b47-85d8-9f2ab3ef8ffa"
+    },
+    {
+      "claim_id": "4365aa81-2264-4f8c-abd9-2fd3c6807e66",
+      "result_id": "bc2d8a8a-4cb5-4b47-85d8-9f2ab3ef8ffa"
+    },
+    {
+      "claim_id": "62a74837-948e-4a5f-959c-a8b860b9c736",
+      "result_id": "bc2d8a8a-4cb5-4b47-85d8-9f2ab3ef8ffa"
+    },
+    {
+      "claim_id": "c239fde9-a81b-4888-9ece-3f2d9a5793cc",
+      "result_id": "dd2cc473-0dac-4322-8757-29baa4b210a4"
+    },
+    {
+      "claim_id": "c6685902-2e5a-48f2-bceb-5dd4797586b1",
+      "result_id": "dd2cc473-0dac-4322-8757-29baa4b210a4"
+    },
+    {
+      "claim_id": "4f5a57a5-68c8-499e-9547-a1d987167505",
+      "result_id": "dd2cc473-0dac-4322-8757-29baa4b210a4"
+    },
+    {
+      "claim_id": "5bb68720-49ba-4c73-ad93-ea6c0d5c8f3e",
+      "result_id": "dd2cc473-0dac-4322-8757-29baa4b210a4"
+    },
+    {
+      "claim_id": "833a7fc8-07fa-4644-95a0-9695454dd888",
+      "result_id": "2a5dd78f-91c1-47e0-a7d1-3b2fc5601a9d"
+    },
+    {
+      "claim_id": "c404435e-80c1-42c2-ba2a-bc817e46a0b0",
+      "result_id": "2a5dd78f-91c1-47e0-a7d1-3b2fc5601a9d"
+    },
+    {
+      "claim_id": "eaceed21-ab5a-4f1e-a6e3-f105e77121b0",
+      "result_id": "2a5dd78f-91c1-47e0-a7d1-3b2fc5601a9d"
+    },
+    {
+      "claim_id": "fd8ab68c-7530-42f8-a981-d20c7ff959e7",
+      "result_id": "2a5dd78f-91c1-47e0-a7d1-3b2fc5601a9d"
+    },
+    {
+      "claim_id": "4956743b-930b-4c55-9e19-5519c50c7743",
+      "result_id": "2a5dd78f-91c1-47e0-a7d1-3b2fc5601a9d"
+    },
+    {
+      "claim_id": "e3679078-d1b9-4040-a18f-a0667dfa7279",
+      "result_id": "2a5dd78f-91c1-47e0-a7d1-3b2fc5601a9d"
+    },
+    {
+      "claim_id": "da4977d1-86f4-4323-ab36-4d06e0206c89",
+      "result_id": "2a5dd78f-91c1-47e0-a7d1-3b2fc5601a9d"
+    },
+    {
+      "claim_id": "03c3228d-9e0d-4818-a1b3-201b7fbd96cd",
+      "result_id": "a728b0e1-45ed-4336-813e-2a03c1bef171"
+    },
+    {
+      "claim_id": "0ba8c16b-5bda-48c0-bd7b-f2ff4eca8267",
+      "result_id": "a728b0e1-45ed-4336-813e-2a03c1bef171"
+    },
+    {
+      "claim_id": "89c19a03-be06-400c-b001-826e998f5696",
+      "result_id": "f1f68ddd-8d2a-4a48-b04f-936bc66aacce"
+    },
+    {
+      "claim_id": "32f0c7b6-0f64-4d2c-92df-394bd6326ebf",
+      "result_id": "f1f68ddd-8d2a-4a48-b04f-936bc66aacce"
+    },
+    {
+      "claim_id": "7a6a8347-1f90-477e-bbf3-2df408e53371",
+      "result_id": "f1f68ddd-8d2a-4a48-b04f-936bc66aacce"
+    },
+    {
+      "claim_id": "6d50f39e-b83d-493b-859e-9327e4562949",
+      "result_id": "f1f68ddd-8d2a-4a48-b04f-936bc66aacce"
+    },
+    {
+      "claim_id": "cfa77d33-8953-4449-b8be-a90f237ae808",
+      "result_id": "d5da579d-2098-4265-8494-c15800fa5e68"
+    },
+    {
+      "claim_id": "3ccc1759-8e8c-423f-a958-b6a91f299b41",
+      "result_id": "d5da579d-2098-4265-8494-c15800fa5e68"
+    },
+    {
+      "claim_id": "ab8ebef8-d271-4299-b2ad-61092b237ae9",
+      "result_id": "d5da579d-2098-4265-8494-c15800fa5e68"
+    },
+    {
+      "claim_id": "5f8d72d9-7f0c-43a2-8f3c-ccc2be3635dd",
+      "result_id": "d5da579d-2098-4265-8494-c15800fa5e68"
+    },
+    {
+      "claim_id": "f63c1836-2fff-4970-b53d-860b03b4dee9",
+      "result_id": "d5da579d-2098-4265-8494-c15800fa5e68"
+    },
+    {
+      "claim_id": "004fc0a4-6ff6-4581-b58c-1d373196c073",
+      "result_id": "d5da579d-2098-4265-8494-c15800fa5e68"
+    },
+    {
+      "claim_id": "c1bea253-63d8-4078-a6d4-a83cd8296469",
+      "result_id": "dd12bf8f-5727-4c90-b82c-645dac3c46a3"
+    },
+    {
+      "claim_id": "0fdbef72-ab63-4583-98e4-447600075271",
+      "result_id": "dd12bf8f-5727-4c90-b82c-645dac3c46a3"
+    },
+    {
+      "claim_id": "b1947847-2c22-4775-b7cf-23924112ef23",
+      "result_id": "dd12bf8f-5727-4c90-b82c-645dac3c46a3"
+    },
+    {
+      "claim_id": "bb20395e-dbd4-4d92-9de5-c386973f1622",
+      "result_id": "d9734fb7-5261-463d-b05d-4018b9655a3b"
+    },
+    {
+      "claim_id": "5b1c71b0-9f81-4018-a9a1-2b15681061c6",
+      "result_id": "d9734fb7-5261-463d-b05d-4018b9655a3b"
+    },
+    {
+      "claim_id": "c033ecd4-0c17-4db4-a319-d6d608a942e4",
+      "result_id": "d9734fb7-5261-463d-b05d-4018b9655a3b"
+    },
+    {
+      "claim_id": "f93af6b2-8119-4b5d-a546-957cfdeef094",
+      "result_id": "d9734fb7-5261-463d-b05d-4018b9655a3b"
+    },
+    {
+      "claim_id": "d7227151-510b-43cc-b9d5-e176b27c9a23",
+      "result_id": "d9734fb7-5261-463d-b05d-4018b9655a3b"
+    },
+    {
+      "claim_id": "c36eb510-33de-4881-9770-1147e91f8dd3",
+      "result_id": "d70acc63-9044-44ba-ba5b-29483b92f22c"
+    },
+    {
+      "claim_id": "4c4bd722-5f5f-4de2-8a41-225c7ea19775",
+      "result_id": "d70acc63-9044-44ba-ba5b-29483b92f22c"
+    },
+    {
+      "claim_id": "292ea6f6-13c9-47f9-9a17-302c293d6730",
+      "result_id": "d70acc63-9044-44ba-ba5b-29483b92f22c"
+    },
+    {
+      "claim_id": "28f48a49-5cd9-4661-8b52-bd20c3469bd8",
+      "result_id": "68c2b122-6cbe-4aac-b91b-100c154ec6cc"
+    },
+    {
+      "claim_id": "a7934a79-205e-4085-b4c9-cd93342913ab",
+      "result_id": "68c2b122-6cbe-4aac-b91b-100c154ec6cc"
+    },
+    {
+      "claim_id": "71bb42df-49fd-40fc-8535-d789232bd8a6",
+      "result_id": "68c2b122-6cbe-4aac-b91b-100c154ec6cc"
+    },
+    {
+      "claim_id": "fd7ffddb-1f5a-46c4-a1bf-ba001302644e",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "e645d4e6-2122-450c-9f2b-1dcf95b3bce9",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "795f845d-f5d9-4006-b6ba-b73d3c74b996",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "491d29f1-37b0-448e-8cc4-d6c29789fb92",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "ed98a26c-a13d-4e40-8ad3-b1a7c1570120",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "a12c8a76-a635-47f5-ab3f-20fc3fe187bc",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "3af734f6-f391-46eb-a4f1-498d257550b8",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "ba22c7e8-44d2-4b0c-ae1f-8752c9a085e9",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "1957a0e8-0669-4b10-bf44-143115380484",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "698fa403-9e1c-4dc5-b999-15b2fca189a5",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "df3483f6-8400-4684-b2bb-77fb1d81fdc0",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "f863a584-ff13-42d6-a9fd-0eecbc5762a5",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "0529f6f0-af31-4b15-8c1e-8b78e2f6f5af",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "38a1fe0e-fee8-48cf-9b07-c3880e2a2d26",
+      "result_id": "80a83d06-6172-45e1-af98-687e27b5baef"
+    },
+    {
+      "claim_id": "8fb8355e-3090-42a1-8a67-796d6591850c",
+      "result_id": "a34f5aec-842f-47cd-baab-1aad2a349636"
+    },
+    {
+      "claim_id": "47570b78-0e91-4ccf-85d3-4657e9cb6e28",
+      "result_id": "a34f5aec-842f-47cd-baab-1aad2a349636"
+    },
+    {
+      "claim_id": "911fdd7c-9147-4e63-b4de-4df2e8cb87d3",
+      "result_id": "a34f5aec-842f-47cd-baab-1aad2a349636"
+    },
+    {
+      "claim_id": "9a8a878e-e7f7-4d9f-a25f-ed4f52ff77f6",
+      "result_id": "a34f5aec-842f-47cd-baab-1aad2a349636"
+    },
+    {
+      "claim_id": "2a5f23f2-2c35-40d9-adf5-b91e52c6713f",
+      "result_id": "a34f5aec-842f-47cd-baab-1aad2a349636"
+    },
+    {
+      "claim_id": "f0197ce3-5160-46a5-8b6a-394c762171b5",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "5ac33bd0-949f-4d0e-9e2c-ad92f175ffc2",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "8d15d3e3-946c-4106-bf8c-9d1597bca2ac",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "48297734-0253-4efd-ac81-eac88ef1af17",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "2fed8d21-c56d-4105-88b9-55c0a42feb7b",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "71e033f8-e557-49c2-95b6-4f1a808bf260",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "d3f6cc98-1f7b-4139-b4fd-db1febae3196",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "8a931ab9-a23b-4183-964a-60e656123831",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "be03aa5d-8dea-4147-861b-399def174343",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "aaba2ea6-0329-43ec-b332-057d29b4924c",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "93af7c6d-4102-4f9d-86c7-7b274bb4c2ec",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "f772da7f-e7ab-4974-a0d9-23c4ec301278",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "dee6e283-9621-408b-9ab2-8cacc167d819",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "9e6247e0-d931-411a-94e1-4f71f7a57b5e",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "7ae35ba8-2950-43f3-b0eb-7c2d3c31d4c8",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "1ddeca0c-fa20-4964-b023-5e10713cb22b",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "1463bc4d-02a8-4b19-9d11-42f341e29669",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "31c3906c-ace4-4281-a900-7c032e5a3593",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "886be500-3324-4f96-a4d5-1978240e4add",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "46093579-58f8-46ff-b4cd-5faab3f07d24",
+      "result_id": "f3d9506b-5119-4818-9d74-cd6b2f001c70"
+    },
+    {
+      "claim_id": "c9b41902-e8e7-441e-90c0-7416a32bcffe",
+      "result_id": "a54f6145-773b-4185-85ad-588d20da486f"
+    },
+    {
+      "claim_id": "53fa8594-da85-4665-a536-ebb23cbc4e9f",
+      "result_id": "a54f6145-773b-4185-85ad-588d20da486f"
+    },
+    {
+      "claim_id": "acf2c950-06d4-4d48-8ccf-def5b1cf32d4",
+      "result_id": "a54f6145-773b-4185-85ad-588d20da486f"
+    },
+    {
+      "claim_id": "d21824a6-f591-43e1-89b6-00c2a5fd8719",
+      "result_id": "a54f6145-773b-4185-85ad-588d20da486f"
+    },
+    {
+      "claim_id": "a57dabbc-5703-4364-87ff-76ef1360e770",
+      "result_id": "a54f6145-773b-4185-85ad-588d20da486f"
+    },
+    {
+      "claim_id": "24f5f0d5-3d54-4873-b1cc-4b187f23ccae",
+      "result_id": "a54f6145-773b-4185-85ad-588d20da486f"
+    }
+  ],
+  "comparisons": []
+}

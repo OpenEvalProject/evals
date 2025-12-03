@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The manuscript establishes background knowledge contrasting long-range material transport in multicellular organisms with short-range, diffusion-limited transport in bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 represent well-established scientific knowledge about material transport in multicellular organisms versus bacteria. These are appropriately cited background statements that set up the novelty of the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30",
+      "C32"
+    ],
+    "result": "P. aeruginosa colonies develop large-scale, centimeter-long open channels (bacterial canals) that are 5-10 \u03bcm in height and tens to hundreds of \u03bcm in width, supporting high-speed fluid flows up to hundreds of \u03bcm/s. These channels form networks across colonies and are distinct from previously reported closed channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C26, C29-C30, and C32 are well-supported by direct microscopy observations, measurements, and figures showing the canal structures. The characterization includes dimensions, flow speeds, network topology, and comparison with prior work. The experimental evidence is robust and reproducible across multiple strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Canal development requires rhamnolipids but not agar degradation, and fluid flows in canals are driven by rhamnolipid-mediated surface tension gradients. This is demonstrated through genetic knockout experiments, rescue with exogenous rhamnolipids, and confocal microscopy showing no agar degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are strongly supported by multiple complementary experiments: the rhamnolipid-deficient mutant fails to form canals (C34-C35), exogenous rhamnolipids restore canal formation (C36), and confocal microscopy rules out agar degradation (C37). The conclusion that rhamnolipid-mediated surface tension drives canal flows (C38-C39) is well-justified by this evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The driving force of canal flows is comparable to a surface tension gradient of ~10\u00b3 mN\u00b7m\u207b\u00b2, as demonstrated by counteracting the flows with an external surfactant source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by a direct experimental manipulation where Tween 20 application caused canal retraction. The inference about the magnitude of driving force (C41) is reasonable based on the known surface tension of Tween 20 and the observed effect, though it represents an order-of-magnitude estimate rather than a precise measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Rhamnolipid synthesis, measured by fluorescence reporter, is azimuthally symmetric in early colonies and increases monotonically until canal emergence, generating a radial surface tension gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by fluorescence reporter data (Figure 2C-D). The measurement of promoter activity (C42) is direct experimental data, while the inference about radial surface tension gradient (C43) is reasonable given the continuous synthesis pattern. However, the study does not directly measure surface tension distribution in situ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Canals emerge via shear-induced banding, as evidenced by distinct flow regimes under uniform shear stress and unstable flow courses that gradually stabilize into fixed canals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by PIV analysis showing distinct shear rate regimes (C44) and time-lapse imaging of canal development (C45). The interpretation as shear-induced banding (C46-C47) is justified by comparison with complex fluid behavior and supported by citations. Additional microfluidic experiments (C72-C74) provide further support for this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Peak flow speeds in canals reach ~200 \u03bcm/s (with transients up to 450 \u03bcm/s), higher than other reported bacterial transport mechanisms. High-speed flow persists over ~20 mm from canal tips toward colony centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by cell tracking measurements using fluorescent tracers. The methodology accounts for the ultrafast speeds by using long-exposure trajectories. The comparison with prior work (C49) is appropriately cited. The spatial flow profile (C50) is measured across multiple locations, though with acknowledged temporal resolution limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Mathematical modeling coupled with finite-element simulation estimates Marangoni stress at ~1000 mN\u00b7m\u207b\u00b2 and predicts spatiotemporal dynamics of surface tension gradients that qualitatively agree with experimental flow profiles. The model predicts high-speed flows persist for 20-30 hours at specific locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 are supported by computational modeling that integrates biosurfactant kinetics, transport, and interfacial mechanics. The model predictions (C54-C57) show qualitative agreement with experimental data (C55-C56), though quantitative validation is limited. The model provides mechanistic insight but relies on several parameters that may not be independently validated. The temporal predictions (C57-C58) are model outputs without direct experimental verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Fluorescently labeled outer membrane vesicles (OMVs) with mean size ~150 nm are transported along canals over centimeter distances at peak speeds >200 \u03bcm/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by direct experimental tracking of fluorescently labeled OMVs. The OMV size distribution was characterized by particle sizing, and transport was visualized by fluorescence microscopy. This demonstrates functional cargo transport capability of the canal system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Canal flows help eradicate competing S. aureus colonies, with <2% cell mass remaining after 60 min when irrigated by canals versus ~40% for non-irrigated colonies. This is likely due to enhanced delivery of antimicrobial substances in OMVs and rhamnolipid micelles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are strongly supported by quantitative co-culture experiments with appropriate controls. The mechanistic explanation (C63-C64) is speculative but reasonable given prior knowledge about P. aeruginosa antimicrobial compounds. The study does not directly test whether blocking OMV or micelle transport abolishes the competitive advantage, which would strengthen the mechanistic claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C65",
+      "C66"
+    ],
+    "result": "Wildtype P. aeruginosa colonies display rapid streams that are unstable and do not develop into persistent canals, presumably because flagellar motility disrupts flow courses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C65 are supported by direct observations. The explanation involving flagellar motility (C23, C66) is speculative but reasonable given that non-motile mutants form stable canals. However, the mechanism by which flagellar motility prevents canal stabilization is not directly tested (e.g., through controlled motility inhibition experiments).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C33"
+    ],
+    "result": "Under reduced surface water conditions, piliated P. aeruginosa colonies display branching morphology with single canals running through each branch, emerging robustly at ~8 hr (30\u00b0C) or ~15 hr (room temperature).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C33 are supported by experimental observations. The branching morphology is attributed to fingering instability (C31) with appropriate citations, though this remains somewhat speculative. The timing of canal emergence (C33) is a reproducible experimental observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Microfluidic experiments show that mixtures of bacterial cells and rhamnolipids exhibit asymmetric flow profiles indicating shear banding, while pure cell suspensions or rhamnolipid-microsphere mixtures show Newtonian-like profiles. This suggests cell-rhamnolipid interaction is required for shear banding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by controlled microfluidic experiments with appropriate controls. The experiments demonstrate that both cells and rhamnolipids are necessary for shear banding behavior. However, the microfluidic conditions may not fully replicate the complex environment within colonies, and the mechanism of cell-rhamnolipid interaction remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Canals develop robustly over agar concentrations of 0.5-1.0% wt/vol but not above 1.0%, presumably due to insufficient water extraction at higher agar concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by systematic variation of agar concentration. The explanation for the upper limit (C77) is speculative but reasonable by analogy to swarming motility requirements. Direct measurement of water availability or surface film thickness would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Directed material transport within colonies does not necessarily coincide with colony expansion, with transport speeds (~200 \u03bcm/s) differing by orders of magnitude from expansion speeds (~2 mm/hr or ~0.5 \u03bcm/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C85-C87 are supported by experimental observations and comparison with cited literature. The distinction between transport and expansion is important for understanding canal function. The measurements of expansion speed (C86) and the observation that artificial surface tension gradients promote expansion (C87) are direct experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Type IV pilus motility does not contribute to cell movement in canals; cells follow fluid motion as passive tracers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by logical inference based on known properties of type IV pilus motility (requires surface attachment, produces speeds of only a few \u03bcm/s) compared to observed transport speeds (hundreds of \u03bcm/s). The use of piliated strains as tracers is appropriate given this reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on material transport mechanisms in multicellular organisms and bacteria, including prior examples of long-range flows in bacterial systems and the role of biosurfactants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C20 represent appropriately cited background knowledge from prior literature. These establish the context for the novelty of the current findings. The citations appear appropriate and the characterization of prior work is accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C81",
+      "C82"
+    ],
+    "result": "Canal formation may not occur in CF patient airways where P. aeruginosa downregulates flagellar motility, and canal-like structures in S. marcescens are limited to sessile colony centers. Prior imaging of P. aeruginosa in CF sputum did not reveal canals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C81-C82 appropriately cite prior work and make reasonable inferences about the conditions under which canals may or may not form in natural settings. These represent honest assessment of the limitations and context-dependence of the findings. However, these remain speculative without direct testing in relevant environments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "P. aeruginosa is found in CF lung infections where it may compete with S. aureus. P. aeruginosa produces various anti-staphylococcal compounds, but hydrophobic compounds diffuse poorly while hydrophilic compounds rapidly dissipate in aqueous environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 represent appropriately cited background knowledge (C90-C92) and reasonable inferences about diffusion properties (C93-C94). These support the rationale for why canal transport of encapsulated antimicrobials would be advantageous. The diffusion arguments are based on established physical principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Canal flows proceed toward colony edges and stop at channel tips, and are sensitive to humidity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by direct experimental observations. These represent important characterization of canal flow properties, though they are relatively straightforward observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Background on Marangoni stress in bacterial colonies, the analogy to human-made canals, and OMV properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C79-C80 represent appropriately cited background knowledge. Claim C78 is an analogy drawn by the authors to aid conceptual understanding. These are minor contextual points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study's main conclusions: canals support high-speed transport of cells and OMVs, help eradicate competitors, are driven by biosurfactant-mediated interfacial tension, and demonstrate mechanochemical coupling for coordinating large-scale transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 represent the main conclusions of the study, which are well-supported by the collective experimental and modeling evidence detailed in other result groups. These synthesize the major findings into broader conclusions about the biological significance and mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Surface tension near colony centers reaches steady-state levels, presumably due to saturated rhamnolipid concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is an inference from flow speed measurements showing diminished speeds near colony centers. The explanation is reasonable but remains speculative without direct measurement of rhamnolipid concentrations or surface tension in situ. The inference is consistent with the modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Proposed mechanism: canal flows increase flux of antimicrobial substances in OMVs and rhamnolipid micelles, enhancing competitive inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is explicitly speculative (\"we suggest\") and supported by citations to prior work on antimicrobial compounds. While reasonable, this mechanism is not directly tested. Experiments blocking OMV production or measuring antimicrobial compound delivery would be needed to validate this hypothesis. The claim appropriately acknowledges its speculative nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C66",
+      "C83"
+    ],
+    "result": "Proposed mechanism: flagellar motility disrupts canal formation by weakening cell-cell adhesion and disrupting high-shear flow regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66 and C83 are explicitly speculative explanations for why wildtype colonies don't form stable canals. While consistent with observations, the specific mechanism (weakening cell-cell adhesion) is not directly tested. Experiments measuring adhesion forces or using controlled motility inhibition would strengthen this claim.",
+    "result_type": "MINOR"
+  }
+]

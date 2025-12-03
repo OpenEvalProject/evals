@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C47",
+      "C48",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors tested 29 type II-C Cas9 orthologs closely related to Nme1Cas9 for activity in human cells using a GFP-activation assay. 25 out of 29 orthologs showed activity, with GFP-positive cell percentages ranging from ~0.01% to 0.18%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C47-C68 collectively describe a systematic screening approach using a well-designed GFP-activation assay. The methodology is clearly described (C62-C66), protein expression was confirmed (C61), and quantitative results were obtained by flow cytometry (C67-C68). The experimental design includes appropriate controls and the results are reproducible across the ortholog panel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The 25 active Nme1Cas9 orthologs recognize diverse PAMs with variable length (5-11 bp) and nucleotide preferences, including purine-rich, pyrimidine-rich, and mixed purine/pyrimidine PAMs. PAM specificity at position 5 correlates with specific amino acid residues: aspartate (D) confers C preference, while histidine (H) or asparagine (N) confer R (A/G) preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C69-C78 describe comprehensive PAM characterization using deep sequencing and WebLogo analysis. The correlation between amino acid residues and PAM preferences (C73-C74) is supported by structural modeling (C79-C82). The diversity of type II-C PAMs (C127-C129) is well-documented with specific examples and is more extensive than type II-A and V-A orthologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Structural analysis reveals that residues Q981, H1024, T1027, and N1029 in the Nme1Cas9 PI domain are crucial for PAM recognition. Computational modeling explains PAM specificity shifts based on hydrogen bonding patterns between specific amino acids and nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 cite established structural data, while C79-C82 describe computational modeling that rationalizes observed PAM preferences. The structural explanations for histidine-guanine and aspartate-cytosine interactions (C81-C82) are biochemically sound and consistent with the experimental PAM data. However, these are computational models rather than experimentally determined structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C131"
+    ],
+    "result": "Nsp2Cas9, which recognizes a simple N4CC PAM and showed the highest activity (0.18% GFP-positive cells) in the screening assay, demonstrates comparable editing efficiency to Nme2Cas9 at 19 endogenous targets in HEK293T cells and functions across multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 describe systematic characterization of Nsp2Cas9 including crRNA optimization (C85-C87), comparative activity testing (C88), and validation across multiple cell lines (C89). The data show comparable activity to the established Nme2Cas9 (C88) with appropriate statistical analysis (Figure 3D, p=0.7486). Western blot confirms comparable protein expression levels (C88, Figure 3B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Mutations at residues S597 and W600 in Nsp2Cas9 (corresponding to S593 and W596 in Nme1Cas9) did not improve editing activity, unlike the reported enhancement for Nme1Cas9 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 describe a rational engineering attempt based on prior literature (C91-C92) that yielded negative results (C93). The experimental design is appropriate with a GFP-activation assay, though the result differs from the in vitro findings for Nme1Cas9. This highlights that in vitro activity improvements may not translate to cellular contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "NarCas9 recognizes a simple N4C PAM and can generate indels in HEK293T and HeLa cells, but with low efficiency. SmuCas9 also recognizes N4C PAM but showed minimal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe characterization of two additional orthologs with N4C PAM specificity. The data show that NarCas9 has detectable but low activity (C95), while SmuCas9 is essentially inactive (C97). This establishes that PAM recognition alone is insufficient for efficient editing, motivating the chimeric nuclease approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C132"
+    ],
+    "result": "A chimeric Cas9 nuclease (Nsp2-SmuCas9) was generated by replacing the Nsp2Cas9 PI domain with the SmuCas9 PI domain. This chimera recognizes a simple N4C PAM and displays higher activity than NarCas9 at 12 endogenous targets, representing the most relaxed PAM preference for compact Cas9s to date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C98-C103 describe successful generation of a functional chimeric nuclease. The N4C PAM is confirmed by deep sequencing (C101), and activity is demonstrated at multiple endogenous sites (C102) with statistical superiority over NarCas9 (C103, p=0.0148). The claim of 'most relaxed PAM' (C8) is reasonable given N4C requires only a single specific nucleotide at position 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Additional chimeric nucleases were tested (Nsp2-NarCas9, Nme2-SmuCas9, Nme2-NarCas9), but only Nme2-SmuCas9 showed activity, albeit low. Structural modeling suggests that steric clashes between specific residues and DNA explain the failure of some chimeras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C113 describe systematic testing of additional chimeras with structural rationalization of failures. The experimental data clearly show that most chimeras are inactive (C105), and Nme2-SmuCas9 has low activity (C107-C108). Structural modeling (C109-C113) provides plausible explanations for failures based on steric clashes, though these are computational predictions rather than experimental validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Activity comparison across Cas9 variants shows SpCas9-WT is most active, while Nsp2Cas9, SpCas9-NG, and SpCas9-RY display similar activity. Nsp2-SmuCas9 shows lower activity than other variants tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 describe comparative activity testing with appropriate controls including widely-used SpCas9 variants. Western blot confirms comparable expression (Figure 5B), and statistical analysis shows significant differences (Figure 5D). The comparison provides context for the practical utility of the new nucleases relative to established tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Specificity analysis using a GFP-activation assay with mismatched sgRNAs shows Nsp2Cas9 displays moderate off-target effects with some sgRNAs, while Nme2Cas9 is highly specific. GUIDE-seq analysis detected only one off-target site for Nsp2Cas9 on the GRIN2B target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 describe comprehensive specificity analysis using two complementary methods: a mismatch tolerance assay (C117-C118) and genome-wide GUIDE-seq (C119-C120). The data show Nsp2Cas9 has moderate off-target activity compared to the highly specific Nme2Cas9, with minimal genome-wide off-targets detected. The GUIDE-seq data provide strong evidence for acceptable specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Nsp2-SmuCas9 shows minimal off-target effects with mismatched sgRNAs in the GFP-activation assay, with only one off-target site detected by GUIDE-seq on the EMX1 target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 describe specificity characterization of the chimeric nuclease using the same methods as for Nsp2Cas9. The data show high specificity with minimal mismatch tolerance (C121) and only one genome-wide off-target (C122), suggesting the chimeric nuclease maintains good specificity despite lower overall activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C123",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The characterized Cas9 nucleases (Nsp2Cas9 and Nsp2-SmuCas9) significantly enhance the ability to perform allele-specific genome editing, particularly for therapeutic applications targeting autosomal dominant diseases caused by single-nucleotide mutations that create novel PAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C123 state that these nucleases enhance allele-specific editing capability, while C133-C137 discuss potential therapeutic applications. However, no experimental data demonstrating actual allele-specific editing or discrimination between wild-type and mutant alleles is presented. The claims about therapeutic potential (C134-C137) are speculative and based on cited literature rather than data in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Direct repeats and tracrRNAs were identified for 26 Cas9 orthologs, showing conservation at the 5' end. Single guide RNA scaffolds were designed by fusing truncated direct repeats with tracrRNAs, and computational prediction shows conserved stem-loop structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 describe bioinformatic identification of CRISPR components and sgRNA design. The sequence conservation (C55) and structural predictions (C57-C59) are supported by the figures. However, the use of a single Nme1Cas9 sgRNA scaffold for all orthologs (C66) suggests that individual sgRNA optimization was not performed, which may have limited the observed activities of some orthologs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C124",
+      "C125",
+      "C126",
+      "C130"
+    ],
+    "result": "The introduction and discussion provide comprehensive background on CRISPR/Cas9 systems, PAM diversity across Cas9 types, and the rationale for investigating type II-C orthologs, which account for nearly half of type II Cas9s but whose PAM diversity remains largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C46 and C124-C130 provide well-cited background information establishing the context and rationale for the study. The citations are appropriate and the knowledge claims are consistent with the CRISPR literature. The identification of a knowledge gap regarding type II-C PAM diversity (C28-C29) effectively motivates the study.",
+    "result_type": "MINOR"
+  }
+]

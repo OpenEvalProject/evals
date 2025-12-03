@@ -1,0 +1,1478 @@
+{
+  "submission": {
+    "id": "e8a4ba28-9860-44e8-be91-73afe991f7bf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:58:38.142271Z",
+    "updated_at": "2025-12-03T08:58:38.142271Z"
+  },
+  "content": [
+    {
+      "id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "submission_id": "e8a4ba28-9860-44e8-be91-73afe991f7bf",
+      "content_type": "manuscript",
+      "content_text": "# Human B cell lineages associated with germinal centers following influenza vaccination are measurably evolving\n\n## Authors\n\n- Kenneth B Hoehn<sup>1</sup> ([ORCID: 0000-0003-0411-4307](https://orcid.org/0000-0003-0411-4307))\n- Jackson S Turner<sup>2</sup>\n- Frederick I Miller<sup>3</sup>\n- Ruoyi Jiang<sup>4</sup>\n- Oliver G Pybus<sup>5</sup>\n- Ali H Ellebedy<sup>2</sup>\n- Steven H Kleinstein<sup>1</sup> ([ORCID: 0000-0003-4957-1544](https://orcid.org/0000-0003-4957-1544)) \u2020\n\n### Affiliations\n\n1. Department of Pathology, Yale School of Medicine New Haven United States\n2. Department of Pathology and Immunology, Washington University School of Medicine St Louis United States\n3. Worcester Polytechnic Institute Worcester United States\n4. Department of Immunobiology, Yale School of Medicine New Haven United States\n5. Department of Zoology, University of Oxford Oxford United Kingdom\n6. The Andrew M. and Jane M. Bursky Center for Human Immunology and Immunotherapy Programs, Washington University School of Medicine St Louis United States\n7. Interdepartmental Program in Computational Biology & Bioinformatics, Yale University New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe poor efficacy of seasonal influenza virus vaccines is often attributed to pre-existing immunity interfering with the persistence and maturation of vaccine-induced B cell responses. We previously showed that a subset of vaccine-induced B cell lineages are recruited into germinal centers (GCs) following vaccination, suggesting that affinity maturation of these lineages against vaccine antigens can occur. However, it remains to be determined whether seasonal influenza vaccination stimulates additional evolution of vaccine-specific lineages, and previous work has found no significant increase in somatic hypermutation among influenza-binding lineages sampled from the blood following seasonal vaccination in humans. Here, we investigate this issue using a phylogenetic test of measurable immunoglobulin sequence evolution. We first validate this test through simulations and survey measurable evolution across multiple conditions. We find significant heterogeneity in measurable B cell evolution across conditions, with enrichment in primary response conditions such as HIV infection and early childhood development. We then show that measurable evolution following influenza vaccination is highly compartmentalized: while lineages in the blood are rarely measurably evolving following influenza vaccination, lineages containing GC B cells are frequently measurably evolving. Many of these lineages appear to derive from memory B cells. We conclude from these findings that seasonal influenza virus vaccination can stimulate additional evolution of responding B cell lineages, and imply that the poor efficacy of seasonal influenza vaccination is not due to a complete inhibition of vaccine-specific B cell evolution.\n\n## Introduction\n\nMeasurably evolving populations are systems that undergo evolution rapidly enough for significant genetic differences to be detected in longitudinally sampled timepoints (Drummond et al., 2003). While this concept is frequently applied to viruses such as HIV (Rambaut et al., 2004) and SARS-CoV-2 (e.g., du Plessis et al., 2021), B cells experience similarly rapid evolution during affinity maturation. B cell affinity maturation is critical for developing high-affinity antibodies in response to infection and vaccination (Shlomchik and Weisel, 2012; Victora and Nussenzweig, 2012). During affinity maturation, somatic hypermutation (SHM) introduces mutations into the B cell receptor (BCR) loci at a rate orders of magnitude higher than the background rate of somatic mutations (McKean et al., 1984; Murphy et al., 2008). These modified BCRs are selected based on their binding affinity, and the process repeats cyclically within germinal centers (GCs Teng and Papavasiliou, 2007; Victora and Nussenzweig, 2012). Infection or vaccination can also stimulate pre-existing memory B cells that rapidly differentiate into antibody secreting plasmablasts or possibly re-enter GCs to undergo additional affinity maturation (Ellebedy, 2018; Mesin et al., 2020). A lack of vaccine-specific affinity maturation is thought to underlie the poor efficacy of seasonal influenza virus vaccination (Arevalo et al., 2020; Ellebedy, 2018). While recent work has shown that antigen-specific B cell lineages can be recruited into GCs following influenza vaccination (Turner et al., 2020), other work has been unable to detect significant increases in SHM frequency among circulating influenza-binding antibody lineages following vaccination (Ellebedy et al., 2016).\n\nWhether seasonal influenza vaccination stimulates an increase in SHM frequency can be answered by determining whether influenza-binding B cell lineages found in GCs are measurably evolving following vaccination. This is distinct from simply quantifying SHM frequency. While influenza vaccination stimulates memory B cell lineages with high SHM frequency (Laserson et al., 2014; Wrammert et al., 2008), these lineages are only measurably evolving if their level of SHM detectably increases during the sampling interval surrounding vaccination. In this study, we show how a phylogenetic test of measurable evolution can be a powerful tool to detect increasing SHM frequency in longitudinally sampled BCR sequence datasets (Duch\u00eane et al., 2015; Murray et al., 2016). We validate this approach through simulations and a survey of measurable evolution in B cell repertoires across a wide range of infections and vaccinations. We document significant heterogeneity among conditions, with some like HIV infection and primary hepatitis B vaccination enriched for measurably evolving lineages in the blood. We further show that while most circulating lineages following influenza virus vaccination are not measurably evolving, a subset of memory B cell lineages re-enter GCs and increase in SHM frequency.\n\n## Results\n\n### Detecting measurable evolution in longitudinally sampled BCR repertoires\n\nWe develop a framework to test for measurable evolution in B cells based on longitudinally sampled sequence data from the BCR variable region. After preprocessing the sequencing data, we first identify clonal lineages \u2013 B cells that descend from a common V(D)J rearrangement \u2013 using clustering based on nucleotide sequence similarity, which we have previously shown detects clonal relationships with high confidence (Gupta et al., 2017; Zhou and Kleinstein, 2019). The pattern of shared SHM among BCR sequences within a lineage is then used to build a B cell lineage tree, which represents a lineage\u2019s history of SHM. Branch lengths within these trees represent SHM per site. The divergence of each tip is the sum of branch lengths leading back to the lineage\u2019s most recent common ancestor. In evolving lineages, sequences sampled at later timepoints are expected to have higher divergence than those from earlier timepoints (Figure 1A). To estimate the rate of evolution over time, we calculate the slope of the regression line between timepoint (weeks) and divergence (SHM/site) for each tip (Figure 1B, E; Rambaut et al., 2016). Because tips are not independent, standard linear regression p values are improper. We instead quantify significance using a modified phylogenetic date randomization test (Duch\u00eane et al., 2015; Murray et al., 2016). This tests whether the Pearson\u2019s correlation between divergence and time is significantly greater than that observed in the same tree with timepoints randomized among tips (Figure 1C, F). To account for population structure and sequencing error, we permute timepoints among single-timepoint monophyletic clusters of tips rather than individual tips (Figure 1\u2014figure supplements 1 and 2; Duch\u00eane et al., 2015; Murray et al., 2016). Further, it is possible that the combined effects of PCR and sequencing error will generate tree structures with multiple spurious tips radiating from a single node. This could increase the error rate of the date randomization test. Because trees are strictly binary, this would produce clusters of zero-length branches (soft polytomies) that could increase the error rate. To limit potential effects of this source of error, we resolve polytomies into the fewest number of single-timepoint monophyletic clades possible (Figure 1\u2014figure supplements 1 and 2). We refer to lineages with a date randomization test p < 0.05 as \u2018measurably evolving\u2019. To limit our analyses to lineages with adequate statistical power, we include only lineages with \u226515 total sequences sampled over at least 3 weeks, and have a minimum possible p value <0.05 based on the number of distinct permutations. Because we use a p value cutoff of 0.05, we expect a false positive rate of approximately 5% if no measurable evolution is occurring. We therefore refer to datasets with >5% measurably evolving lineages as \u2018enriched\u2019 for measurable evolution. This test is implemented within the Immcantation.org framework in the R package dowser (Hoehn et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig1-v3.jpg)\n\n**Figure 1.:** (A) Example B cell lineage tree from Liao et al., 2013 showing increasing divergence with sample time. Branch lengths show somatic hypermutation (SHM)/site according to scale bar in (D). (B) Rate of SHM accumulation over time estimated using a regression of divergence vs time in tree (A). (C) Significance of the relationship between divergence and time estimated using a date randomization test comparing the Pearson\u2019s correlation (r) between divergence and time in tree (A). (D\u2013F) Same plots as (A\u2013C) but on a tree that is not measurably evolving. (G) Simulation-based power analysis shows the permutation test has high power over an interval of at least 10\u201330 GC cycles (generations). Lineages were sampled once at generation 10, and a second time after the specified number of additional generations have elapsed. Percentage of lineages with p < 0.05 are listed above, rounded to three significant digits. The dotted line corresponds to p = 0.05. (H) Simulation-based analysis reproducing the sampling of Laserson et al., 2014 shows the test has high power even at slow (24 hr) GC cycle times.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Example tree showing little evidence of ongoing somatic hypermutation (SHM). This tree contains two large polytomies consisting of multiple short branches radiating out from a central node. These features can possibly result from sequencing error or PCR error in bulk B cell receptor (BCR) data, where errors create spurious, unique sequences one mutation away from a single real sequence. Permuting these tips uniformly among each other leads to these spurious tips being treated as independent data points, and can lead to high false positive rates if not corrected. While visual inspection of this tree shows little evidence of increase in SHM over time, it has a date randomization test p < 0.05 unless its polytomies are resolved. In the panels above, each tip is a sequence labeled with its cluster assignment. (A) Tips are permuted individually, meaning each tip is a separate cluster. This leads to 6.6 \u00d7 105 distinct permutations of time labels along the tree, and a p < 0.05. (B) Tips belonging to single-timepoint monophyletic clades are grouped into clusters, equivalent to Murray et al., 2016. Timepoints are permuted among these clusters, which reduces the number of possible permutations. This also reduces the significance of the relationship between divergence and time. However, because the polytomies are randomly resolved into bifurcations with zero-length branches, each polytomy has multiple clusters with the same timepoint. For instance, clusters 1, 15, 10, 12, and 2 could be grouped in the same cluster but are kept distinct. (C) Bifurcations using zero-length branches within the polytomies are rearranged to give the fewest possible number of monophyletic single-timepoint clusters. Resolving polytomies effectively treats same-timepoint sequences within polytomies as the same data point, appropriately showing this tree does not have sufficient evidence of measurable evolution.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The date randomization test can be performed using either uniform permutations, in which the timepoint of each tip is permuted separately, or clustered permutations, in which timepoints are permuted among single-timepoint monophyletic clusters. It can also be performed using clusters after polytomies have been resolved into the smallest possible number of single-timepoint clades. Using a two-tailed test, we determine whether a lineage is positively measurably evolving (correlation between divergence and time > 0, p < 0.025) or negatively measurably evolving (correlation < 0, p < 0.025). Measurable negative evolution indicates decreasing divergence over time, which is biologically implausible and likely represents false positives. This could be due to population structure at different timepoints. See Murray et al., 2016. In the panels above, we repeated the analyses in Table 1 using two-tailed tests with each permutation strategy. The x axis shows the percent of positively measurably evolving lineages for each study, while the y axis shows the percent of negatively measurably evolving lineages, which are interpreted as false positives. The dashed line shows 2.5%, the maximum expected percent of negatively evolving lineages. Only clustered permutations with resolved polytomies \u2013 used in all other analyses in this manuscript \u2013 fully controlled this error metric.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** For upper panels (affinity maturation) each lineage was simulated for 10 GC cycles before 50 cells were sampled, if available. Affinity maturation continued for the specified number of additional GC cycles (x axis) before a second sampling of 50 cells. This process was repeated for 100 repetitions for the specified number of GC cycles, and given the specified strength of selection. Selection = 0 corresponds to neutral evolution, while selection = 1 corresponds to strong selection for matching to a single target sequence. Default parameters from bcr-phylo (Davidsen and Matsen, 2018; Ralph and Matsen, 2020) were used otherwise. The y axis shows the \u2212log10(p value) for the date randomization test, with dots above the horizontal dashed line representing measurably evolving lineages (p < 0.05). The percentage of measurably evolving lineages for each set of simulations is shown above the dashed line, rounded to three significant digits. Only simulated lineages with a minimum possible p < 0.05 were tested in simulations. Because all lineages were undergoing affinity maturation in the upper panels, this corresponds to the true positive rate. Lower panels (randomized times) show results from the same simulated data but with sampling times randomized among sequences. Because these simulations are effectively not evolving over time, the numbers above show the false positive rate in the lower panels.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Simulations were performed to replicate the sampling strategy of Laserson et al., 2014, in which an individual was sampled at six timepoints between 1 and 28 days following influenza vaccination. We excluded prevaccination samples as well as the sample taken 1 hr after vaccination because it was too early for any GC cycles to occur in simulations. For each simulation, we selected a lineage C from subject hu420143. To calculate the number of GC cycles to simulate, we divided the sample times (hours postvaccination) of lineage C by the specified GC cycle time (x axis). We then simulated affinity maturation as in Figure 1\u2014figure supplement 3 , and sampled the same number of cells as were present in C at the corresponding time. We repeated this process for each lineage in subject hu420143 with at least 15 sequences sampled over 3 weeks and a minimum possible p value <0.05. The percentage of measurably evolving lineages for each set of simulations is shown above the dashed line, rounded to three significant digits. Only simulated lineages with a minimum possible p < 0.05 were tested in simulations. Because all lineages in the upper panels (affinity maturation) were undergoing affinity maturation, this corresponds to the true positive rate. Lower panels (randomized times) show results from the same simulated data but with sampling times randomized among sequences. Because these simulations are effectively not evolving over time, the numbers above show the false positive rate in the lower panels.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig1-figsupp5-v3.jpg)\n\nTo determine the necessary sampling interval to detect B cell evolution, we benchmarked the date randomization test using affinity maturation simulations performed with the package bcr-phylo (Davidsen and Matsen, 2018; Ralph and Matsen, 2020). This simulates alternating GC cycles of B cell proliferation, SHM, and selection based on amino acid similarity to a target sequence. Within these simulations, each lineage was first sampled after 10 simulated GC cycles, and then sampled a second time after a variable number of additional cycles. Using this framework in which all lineages are evolving, the date randomization test detected measurable evolution in 47% of lineages after 10 additional GC cycles, and 77% after 15 additional cycles (Figure 1G). Given a GC cycle time of 6\u201324 hr, 15 cycles corresponds to 4\u201315 days, within the timeframe of many longitudinal B cell repertoire studies (Ellebedy et al., 2016; Laserson et al., 2014). Interestingly, the date randomization test had higher power to detect measurable evolution in simulations of neutral evolution than those that included selection (Figure 1\u2014figure supplements 3\u20134). This is likely because selection can reduce the rate of divergence within lineages compared to neutral evolution (Figure 1\u2014figure supplement 5). To quantify the false positive rate, we repeated these calculations on the same simulations but with randomized sample time associations. Here, the date randomization test found measurable evolution in <4% in each case, indicating a low false positive rate (Figure 1\u2014figure supplements 3\u20134). These analyses demonstrate that the date randomization test has sufficient sensitivity and specificity to detect ongoing B cell evolution from longitudinally sampled BCR data.\n\n### Primary immune responses are enriched for measurably evolving lineages\n\nTo further validate our approach, we tested for measurable evolution in cases of known or suspected affinity maturation in humans. We hypothesized that primary immune responses would be enriched for measurably evolving lineages. To test this, we used publicly available data primarily from the Observed Antibody Space (OAS) database (Kovaltsuk et al., 2018) to survey measurable evolution in BCR datasets from 99 human subjects in 21 studies spanning 10 conditions including HIV infection, Ebola virus infection, and healthy controls (Table 1). We observed considerable heterogeneity in measurable evolution among conditions. Confirming our hypothesis, we observed an enrichment of measurably evolving lineages (>5% of tested lineages) in primary immune responses including HIV infection, meningococcus vaccination, primary but not secondary hepatitis B vaccination, and early childhood development (Table 1, Figure 2A, and Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig2-v3.jpg)\n\n**Figure 2.:** (A) Percentage of lineages that are measurably evolving within each study (Table 1, Figure 1C). The dotted line indicates 5%, the percent expected under the null hypothesis that there is no measurable evolution occurring in a given dataset. Orange triangles indicate HIV datasets truncated to only include data within the first 60-week sampling interval. Note that three HIV studies were not truncated because they contained <2 sample timepoints within the first 60 weeks of sampling (Huang et al., 2016; Schanz et al., 2014; Wu et al., 2015). (B) Mean initial germline divergence (sum of branch lengths) from germline to sequences from each adjusted measurably evolving lineage\u2019s first timepoint. Note that \u2018Early/Late\u2019 HIV in (B) separates studies by time since initial infection, while \u2018HIV, first 60 weeks\u2019 in (A) includes only samples taken over the first 60 weeks of sampling. Each point is a measurably evolving lineage with a Benjamini\u2013Hochberg adjusted p value <0.1. Wilcoxon tests were used to compare divergence levels among datasets.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig2-figsupp1-v3.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Hepatitis B booster vaccine data were obtained from Galson et al., 2015b and consisted of nine previously vaccinated subjects sampled four times between 0 and 28 days after a single vaccination. Hepatitis naive data were obtained from Galson et al., 2016. These subjects were all vaccine naive, were given three vaccinations, and sampled at seven timepoints. Five subjects received \u2018standard\u2019 vaccinations at days 0, 28, and 168, and were sampled at days 0, 7, 28, 35, 168, 175, and 208. Four subjects received \u2018accelerated\u2019 vaccinations at days 0, 28, and 56, and were sampled at days 0, 7, 28, 35, 56, 63, and 96. p values were calculated using a Wilcoxon test.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Data from Turner et al., 2020 include both blood and lymph node sequences. P value was calculated using a Wilcoxon test.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Mean initial germline divergence (sum of branch lengths) from germline to sequences from each adjusted measurably evolving lineage\u2019s first timepoint. Each point is a measurably evolving lineage with a p value < 0.05. (B) Similar to A, but only lineages with an false discovery rate (FDR)-adjusted p value <0.05 were included. This cutoff is more strict than that in Figure 2B. Wilcoxon tests were used to compare divergence levels among datasets. Only datasets from Figure 2B were included.\n\n**Table 1.**\n Summary of datasets.N shows number of subjects with at least one powered lineage. Mean range shows mean total sampling interval across subjects. Powered lineages shows the number of lineages that: (1) contained at least 15 sequences, (2) were sampled over at least 3 weeks, and (3) had a minimum possible p value <0.05. The rightmost column shows the percentage of these lineages with p < 0.05, rounded to two significant digits. Studies with at least 5% positive lineages are shown in bold. Turner et al., 2020 in this table and Figure 2 included only blood samples. Data from studies marked with an asterisk (*) were obtained from Observed Antibody Space (Kovaltsuk et al., 2018).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Study</th>\n      <th>Condition</th>\n      <th>N</th>\n      <th>Mean range (weeks)</th>\n      <th>Mean sample count</th>\n      <th>Multi-timepoint lineages</th>\n      <th>Powered lineages</th>\n      <th>% lineages p &lt; 0.05</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Levin et al., 2016*</td>\n      <td>Allergy + SIT</td>\n      <td>9</td>\n      <td>52</td>\n      <td>2.7</td>\n      <td>42</td>\n      <td>31</td>\n      <td>6.5</td>\n    </tr>\n    <tr>\n      <td>Davis et al., 2019*</td>\n      <td>Ebola virus</td>\n      <td>4</td>\n      <td>36</td>\n      <td>3.6</td>\n      <td>1,549</td>\n      <td>877</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Wang et al., 2014</td>\n      <td>Healthy adults</td>\n      <td>7</td>\n      <td>52</td>\n      <td>2</td>\n      <td>18</td>\n      <td>10</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Nielsen et al., 2019</td>\n      <td>Healthy children</td>\n      <td>20</td>\n      <td>69</td>\n      <td>2.7</td>\n      <td>262</td>\n      <td>71</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>Galson et al., 2015b*</td>\n      <td>Hep. B vaccine (boost)</td>\n      <td>9</td>\n      <td>4</td>\n      <td>4.8</td>\n      <td>4,923</td>\n      <td>3,422</td>\n      <td>2.9</td>\n    </tr>\n    <tr>\n      <td>Galson et al., 2016*</td>\n      <td>Hep. B vaccine (primary)</td>\n      <td>9</td>\n      <td>23</td>\n      <td>6.9</td>\n      <td>4,426</td>\n      <td>2,529</td>\n      <td>7.2</td>\n    </tr>\n    <tr>\n      <td>Doria-Rose et al., 2014*</td>\n      <td rowspan=\"8\">HIV</td>\n      <td>1</td>\n      <td>190</td>\n      <td>8</td>\n      <td>65</td>\n      <td>48</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>Huang et al., 2016*</td>\n      <td>1</td>\n      <td>120</td>\n      <td>12</td>\n      <td>388</td>\n      <td>221</td>\n      <td>5.9</td>\n    </tr>\n    <tr>\n      <td>Johnson et al., 2018*</td>\n      <td>1</td>\n      <td>170</td>\n      <td>5</td>\n      <td>561</td>\n      <td>330</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>Landais et al., 2017*</td>\n      <td>1</td>\n      <td>160</td>\n      <td>7</td>\n      <td>1,084</td>\n      <td>743</td>\n      <td>48</td>\n    </tr>\n    <tr>\n      <td>Liao et al., 2013*</td>\n      <td>1</td>\n      <td>140</td>\n      <td>5</td>\n      <td>205</td>\n      <td>151</td>\n      <td>53</td>\n    </tr>\n    <tr>\n      <td>Schanz et al., 2014*</td>\n      <td>1</td>\n      <td>120</td>\n      <td>3</td>\n      <td>147</td>\n      <td>54</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Setliff et al., 2018*</td>\n      <td>6</td>\n      <td>170</td>\n      <td>3</td>\n      <td>787</td>\n      <td>173</td>\n      <td>9.8</td>\n    </tr>\n    <tr>\n      <td>Wu et al., 2011, Wu et al., 2015*</td>\n      <td>1</td>\n      <td>730</td>\n      <td>7</td>\n      <td>393</td>\n      <td>305</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>Ellebedy et al., 2016*</td>\n      <td rowspan=\"3\">Influenza vaccine</td>\n      <td>8</td>\n      <td>13</td>\n      <td>5</td>\n      <td>1966</td>\n      <td>1,479</td>\n      <td>5.2</td>\n    </tr>\n    <tr>\n      <td>Laserson et al., 2014*</td>\n      <td>3</td>\n      <td>4</td>\n      <td>9</td>\n      <td>1,182</td>\n      <td>639</td>\n      <td>4.9</td>\n    </tr>\n    <tr>\n      <td>Turner et al., 2020</td>\n      <td>1</td>\n      <td>8.6</td>\n      <td>5</td>\n      <td>168</td>\n      <td>104</td>\n      <td>2.9</td>\n    </tr>\n    <tr>\n      <td>Galson et al., 2015a*</td>\n      <td>Meningococcus vaccine</td>\n      <td>7</td>\n      <td>4</td>\n      <td>3</td>\n      <td>483</td>\n      <td>80</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Jiang et al., 2020a</td>\n      <td rowspan=\"2\">Myasthenia gravis</td>\n      <td>3</td>\n      <td>260</td>\n      <td>3.6</td>\n      <td>110</td>\n      <td>62</td>\n      <td>3.2</td>\n    </tr>\n    <tr>\n      <td>Jiang et al., 2020b</td>\n      <td>1</td>\n      <td>52</td>\n      <td>2</td>\n      <td>46</td>\n      <td>33</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Tsioris et al., 2015</td>\n      <td>West Nile virus</td>\n      <td>6</td>\n      <td>5.2</td>\n      <td>2</td>\n      <td>151</td>\n      <td>65</td>\n      <td>1.5</td>\n    </tr>\n  </tbody>\n</table>\n\nChronic HIV infection stimulates ongoing affinity maturation as B cells evolve to contain viral escape mutants (Liao et al., 2013; Wendel et al., 2020). Consistent with this arms race, HIV infection was more enriched for measurably evolving lineages than other conditions surveyed, with each study having between 5.9% and 53% of lineages measurably evolving (Figure 2A). Lineages from subjects with broadly neutralizing anti-HIV lineages sampled over multiple years (Doria-Rose et al., 2014; Landais et al., 2017; Liao et al., 2013; Wu et al., 2015) were particularly enriched (26\u201353% measurably evolving). Importantly, the HIV studies included were sampled over longer time periods than studies of other conditions (mean = 225 vs 45 weeks, Table 1). To determine whether these results were simply due to longer sampling intervals, we repeated our analysis of subjects with HIV using only samples within the first 60 weeks of the study. These truncated datasets were still highly enriched for measurably evolving lineages (6.9\u201364%) compared to other non-HIV datasets with similar sampling intervals (0\u20137.2%, Figure 2A). This indicates that the observed high frequency of measurably evolving lineages is not simply due to long sampling intervals.\n\nOther primary immune responses were also enriched for measurably evolving lineages (Table 1, Figure 2A). B cell lineages from healthy children sampled during the first 3 years of life were enriched for measurable evolution (14%), possibly reflecting continual exposure to novel antigens (Nielsen et al., 2019). We also observed an enrichment of measurably evolving lineages following primary meningococcus vaccination (10%; Galson et al., 2015a) and primary but not secondary hepatitis B vaccination (7.2% vs 2.9%, respectively; Galson et al., 2016; Galson et al., 2015b). Primary hepatitis B vaccinees were sampled over a longer time period than secondary vaccines, so this difference may also be due to different sampling intervals (Figure 2\u2014figure supplement 2). Further, allergen-specific immunotherapy, which stimulates tolerance of allergy-causing antigens through exposure, was also enriched for measurable evolution (6.5%; Levin et al., 2016). Interestingly, Ebola virus infection showed a borderline (5%) percentage of measurably evolving lineages (Table 1) despite likely being a primary infection. Overall, however, these results confirm that the date randomization test can detect ongoing SHM in empirical datasets where it is expected to be occurring.\n\nWe next investigated whether measurable evolution was associated with antigen-binding lineages. While antigen-binding information was not available for most B cell lineages surveyed, some studies included experimentally validated monoclonal antibody sequences (mAbs). Lineages containing these sequences thus contain B cells that bind to the antigen under study. Experimentally validated mAbs were included from six studies: four in HIV (Doria-Rose et al., 2014; Landais et al., 2017; Liao et al., 2013; Wu et al., 2015), one in Ebola virus infection (Davis et al., 2019), and one in influenza vaccine response (Turner et al., 2020). We found that across these studies measurably evolving lineages were more likely to contain mAbs than nonmeasurably evolving lineages (p = 0.031, Wilcoxon test, Figure 2\u2014figure supplement 3). This is consistent with the hypothesis that measurably evolving lineages are actively responding to antigens relevant to the condition being studied.\n\n### Measurably evolving lineages are rare in peripheral blood following influenza vaccination\n\nSeasonal influenza vaccination is believed to trigger a memory B cell response in adults. If memory B cells rarely re-enter GCs to undergo additional affinity maturation (Mesin et al., 2020), and there is little evolution of naive B cell lineages, we expect little measurable evolution in the blood following vaccination. To test this, we applied the date randomization test to three longitudinally sampled adult influenza vaccine datasets. The first comprised three adults sampled seven times between 1 hr and 28 days postvaccination (Gupta et al., 2017; Laserson et al., 2014); the second contained eight adults sampled five times between 0 and 90 days postvaccination (Ellebedy et al., 2016) the third used blood samples from a single individual sampled five times between 0 and 60 days postvaccination (Turner et al., 2020). Across subjects in each study, between only 2.9% and 5.2% of lineages were measurably evolving (Table 1). These values are approximately as expected under the null hypothesis of no measurable evolution, and histograms of p values from these datasets are roughly uniform, suggesting the measurably evolving lineages identified are mostly false positives from multiple testing (Figure 2\u2014figure supplement 1). Distributions of p values for all datasets are also available in Figure 2\u2014figure supplement 1. To verify the 4- to 13-week sampling range of these studies was sufficient to detect measurable evolution, we performed simulation analyses replicating the sampling strategy of the influenza dataset with the shortest sampling range (Figure 1\u2014figure supplement 4; Laserson et al., 2014). These simulations show this timescale was sufficiently long to detect ongoing affinity maturation with high sensitivity (>90%, Figure 1H). Overall, these results indicate B cell lineages present in blood infrequently undergo additional evolution within 13 weeks following influenza vaccination, consistent with a primarily GC-independent memory B cell response and/or rarity of antigen-specific lineages in the peripheral blood (Wrammert et al., 2008).\n\n### Measurably evolving lineages following influenza vaccination include memory B cell origin\n\nWhile measurably evolving lineages do not occur at high frequency in the blood following influenza vaccination, we checked if any could be identified after adjustment for multiple testing. To adjust for multiple hypothesis tests, we pooled lineages across all studies and adjusted their p values using the Benjamini\u2013Hochberg procedure (Benjamini and Hochberg, 1995). We identified 15 lineages in influenza datasets, and 354 lineages in other conditions, with adjusted date randomization p values < 0.1. We investigated if these \u2018adjusted\u2019 measurably evolving lineages were derived from naive or pre-existing memory B cells. Because memory B cell lineages have already undergone affinity maturation, they are expected to have higher initial SHM levels compared to naive B cell lineages. To test this, we compared germline sequence divergence in adjusted measurably evolving lineages from influenza vaccination to other conditions. Consistent with memory B cell reactivation, lineages from influenza vaccination had significantly higher initial divergence (median = 8.6%) than those from primary responses such as early HIV infection (median = 5%, p = 0.0012) and primary hepatitis B vaccination (median = 2.8%, p = 0.0019) (Figure 2B). Further, these influenza lineages had initial divergence levels similar to lineages from subjects with HIV first sampled >5 years after infection (Huang et al., 2016; Wu et al., 2015), and hepatitis B booster vaccination subjects (Figure 2B; Galson et al., 2015b). Ebola virus infection, meningococcus vaccination, and early childhood development had median initial divergence levels of 0.4%, 6.6%, and 2.0%, respectively, but contained less than three adjusted measurably evolving lineages each. To understand the effect of multiple hypothesis correction on these results, we repeated the comparisons in Figure 2B using all measurably evolving lineages (unadjusted p < 0.05) from the same datasets. Considering this larger set of lineages, initial divergence of lineages from influenza vaccination studies was significantly higher than those in all other conditions except late HIV infection (Figure 2\u2014figure supplement 4). The same pattern from Figure 2B was also found when repeating these comparisons with a more strict cutoff (adjusted p < 0.05, Figure 2\u2014figure supplement 4). Overall, these results are consistent with measurably evolving lineages from influenza vaccination arising mainly from pre-existing memory B cells.\n\n### Measurably evolving lineages show signs of purifying selection\n\nWe next investigated the type and degree of selection operating on measurably evolving B cell lineages. One way to detect natural selection in DNA sequences is to estimate the ratio of nonsynonymous (amino acid replacement) to synonymous (silent) mutation rates. This ratio is often called \u03c9 (Nielsen and Yang, 1998). Neutral evolution, where amino acid replacements are not selected for or against, should result in \u03c9 = 1. Purifying selection, where amino acid replacements are disfavored, should result in \u03c9 < 1. Diversifying selection, where amino acid replacements are favored, should result in \u03c9 > 1. In B cell lineages, \u03c9 is often estimated separately for complementarity-determining regions (CDRs) involved in antigen binding, and framework regions (FWRs), which are more structural. Further, it is important to estimate \u03c9 or similar metrics using models that account for intrinsic hot- and cold-spot biases of SHM (Hoehn et al., 2017; Uduman et al., 2011; Yaari et al., 2012). To understand what kind of selection operated on measurably evolving lineages, we estimated separate \u03c9 values for CDR and FWR regions (\u03c9CDR and \u03c9FWR) of the adjusted measurably evolving lineages (Figure 2B) using the HLP19 model in IgPhyML (Hoehn et al., 2019). Model parameters were shared among lineages within the same subject, and only subjects with at least two adjusted measurably evolving lineage were included to reduce noise. Across all conditions surveyed, we found evidence of purifying selection operating on adjusted measurably evolving lineages (mean \u03c9CDR = 0.58, mean \u03c9FWR = 0.48, Table 2). We estimated the significance of these results using a phylogenetic likelihood ratio test (Huelsenbeck and Rannala, 1997). We found that \u03c9CDR was significantly <1 in 10/13 subjects (significantly >1 in none) and \u03c9FWR was significantly <1 in 13/13 subjects (Table 2). This signal of purifying selection was particularly strong in both early and late HIV. Influenza vaccination showed higher \u03c9 values, comparable to primary hepatitis B vaccination.\n\n**Table 2.**\n Analysis of selection on adjusted measurably evolving lineages.Repertoire-wide estimates of \u03c9 for CDRs (\u03c9CDR) and FWRs (\u03c9FWR) for adjusted measurably evolving lineages within different subjects are shown. L indicates the maximum log-likelihood obtained when both \u03c9CDR and \u03c9FWR were estimated by maximum likelihood. LCDR=1 indicates the maximum log-likelihood obtained when \u03c9FWR was estimated by maximum likelihood but \u03c9CDR was fixed at 1. LFWR=1 indicates the maximum log-likelihood obtained when \u03c9CDR was estimated by maximum likelihood but \u03c9FWR was fixed at 1. The likelihood ratio statistic (LRS) was calculated as either 2\u00d7(L \u2212 LCDR=1) for CDRs or 2\u00d7(L \u2212 LFWR=1) for FWRs, and p values were calculated using a likelihood ratio test with one degree of freedom (see Methods). L values were rounded to two decimal places, LRS values are reported to three significant digits. Significant p values are in bold. p values below the numerical limit for double values are reported as <2E\u221216.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Study</th>\n      <th>Subject</th>\n      <th>N</th>\n      <th>Region</th>\n      <th>\u03c9</th>\n      <th>L</th>\n      <th>LCDR=1</th>\n      <th>LFWR=1</th>\n      <th>LRS</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">Influenza vaccine</td>\n      <td rowspan=\"4\">Ellebedy et al., 2016</td>\n      <td rowspan=\"2\">Donor-4</td>\n      <td rowspan=\"2\">4</td>\n      <td>CDR</td>\n      <td>0.624</td>\n      <td>\u22125753.04</td>\n      <td>\u22125759.65</td>\n      <td></td>\n      <td>13.2</td>\n      <td>2.80E\u221204</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.503</td>\n      <td>\u22125753.04</td>\n      <td></td>\n      <td>\u22125783.9</td>\n      <td>61.7</td>\n      <td>4.00E\u221215</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Donor-5</td>\n      <td rowspan=\"2\">5</td>\n      <td>CDR</td>\n      <td>0.979</td>\n      <td>\u22125074.01</td>\n      <td>\u22125074.02</td>\n      <td></td>\n      <td>0.0212</td>\n      <td>8.84E\u221201</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.584</td>\n      <td>\u22125074.01</td>\n      <td></td>\n      <td>\u22125090.55</td>\n      <td>33.1</td>\n      <td>8.75E\u221209</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Laserson et al., 2014</td>\n      <td rowspan=\"2\">FV</td>\n      <td rowspan=\"2\">4</td>\n      <td>CDR</td>\n      <td>0.583</td>\n      <td>\u22129162.11</td>\n      <td>\u22129173.39</td>\n      <td></td>\n      <td>22.6</td>\n      <td>1.99E\u221206</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.508</td>\n      <td>\u22129162.11</td>\n      <td></td>\n      <td>\u22129217.38</td>\n      <td>111</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td rowspan=\"10\">Early HIV</td>\n      <td rowspan=\"2\">Doria-Rose et al., 2014</td>\n      <td rowspan=\"2\">CAP256</td>\n      <td rowspan=\"2\">9</td>\n      <td>CDR</td>\n      <td>0.424</td>\n      <td>\u221218,976.96</td>\n      <td>\u221219,045.96</td>\n      <td></td>\n      <td>138</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.451</td>\n      <td>\u221218,976.96</td>\n      <td></td>\n      <td>\u221219,151.29</td>\n      <td>349</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Johnson et al., 2018</td>\n      <td rowspan=\"2\">CAP256</td>\n      <td rowspan=\"2\">26</td>\n      <td>CDR</td>\n      <td>0.423</td>\n      <td>\u221246,720.28</td>\n      <td>\u221246,858.67</td>\n      <td></td>\n      <td>277</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.408</td>\n      <td>\u221246,720.28</td>\n      <td></td>\n      <td>\u221247,243.96</td>\n      <td>1,050</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Landais et al., 2017</td>\n      <td rowspan=\"2\">PC064</td>\n      <td rowspan=\"2\">188</td>\n      <td>CDR</td>\n      <td>0.39</td>\n      <td>\u2212416,489.06</td>\n      <td>\u2212418,035.9</td>\n      <td></td>\n      <td>3,090</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.386</td>\n      <td>\u2212416,489.06</td>\n      <td></td>\n      <td>\u2212422,043.68</td>\n      <td>11,100</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Liao et al., 2013</td>\n      <td rowspan=\"2\">CH505</td>\n      <td rowspan=\"2\">51</td>\n      <td>CDR</td>\n      <td>0.527</td>\n      <td>\u2212102,131.66</td>\n      <td>\u2212102,307.3</td>\n      <td></td>\n      <td>351</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.417</td>\n      <td>\u2212102,131.66</td>\n      <td></td>\n      <td>\u2212103,240.86</td>\n      <td>2,220</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Schanz et al., 2014</td>\n      <td rowspan=\"2\">ZA159</td>\n      <td rowspan=\"2\">2</td>\n      <td>CDR</td>\n      <td>0.657</td>\n      <td>\u22125573.47</td>\n      <td>\u22125577.12</td>\n      <td></td>\n      <td>7.29</td>\n      <td>6.93E\u221203</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.466</td>\n      <td>\u22125573.47</td>\n      <td></td>\n      <td>\u22125617.91</td>\n      <td>88.9</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Late HIV</td>\n      <td rowspan=\"2\">Huang et al., 2016</td>\n      <td rowspan=\"2\">Donor-Z258</td>\n      <td rowspan=\"2\">2</td>\n      <td>CDR</td>\n      <td>0.345</td>\n      <td>\u22123162.12</td>\n      <td>\u22123172.87</td>\n      <td></td>\n      <td>21.5</td>\n      <td>3.54E\u221206</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.401</td>\n      <td>\u22123162.12</td>\n      <td></td>\n      <td>\u22123196.5</td>\n      <td>68.7</td>\n      <td>1.11E\u221216</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Wu et al., 2015</td>\n      <td rowspan=\"2\">Donor-45</td>\n      <td rowspan=\"2\">32</td>\n      <td>CDR</td>\n      <td>0.451</td>\n      <td>\u221263,527.81</td>\n      <td>\u221263,687</td>\n      <td></td>\n      <td>318</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.378</td>\n      <td>\u221263,527.81</td>\n      <td></td>\n      <td>\u221264,444.73</td>\n      <td>1,830</td>\n      <td>&lt;2E\u221216</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Hep B. vaccine, primary</td>\n      <td rowspan=\"6\">Galson et al., 2016</td>\n      <td rowspan=\"2\">Subject-2277</td>\n      <td rowspan=\"2\">6</td>\n      <td>CDR</td>\n      <td>0.885</td>\n      <td>\u22125498.77</td>\n      <td>\u22125499.15</td>\n      <td></td>\n      <td>0.766</td>\n      <td>3.81E\u221201</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.668</td>\n      <td>\u22125498.77</td>\n      <td></td>\n      <td>\u22125508.36</td>\n      <td>19.2</td>\n      <td>1.18E\u221205</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Subject-2752</td>\n      <td rowspan=\"2\">2</td>\n      <td>CDR</td>\n      <td>0.533</td>\n      <td>\u22121112.1</td>\n      <td>\u22121113.82</td>\n      <td></td>\n      <td>3.44</td>\n      <td>6.36E\u221202</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.461</td>\n      <td>\u22121112.1</td>\n      <td></td>\n      <td>\u22121120.06</td>\n      <td>15.9</td>\n      <td>6.68E\u221205</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Subject-2954</td>\n      <td rowspan=\"2\">9</td>\n      <td>CDR</td>\n      <td>0.711</td>\n      <td>\u22126023.13</td>\n      <td>\u22126026.4</td>\n      <td></td>\n      <td>6.56</td>\n      <td>1.04E\u221202</td>\n    </tr>\n    <tr>\n      <td>FWR</td>\n      <td>0.545</td>\n      <td>\u22126023.13</td>\n      <td></td>\n      <td>\u22126048.08</td>\n      <td>49.9</td>\n      <td>1.62E\u221212</td>\n    </tr>\n  </tbody>\n</table>\n\n### Influenza-binding lineages associated with GCs are measurably evolving\n\nWhile we found little measurable evolution in the blood following seasonal influenza vaccination, influenza vaccination has been shown to stimulate both naive and memory B cells to enter GCs (Turner et al., 2020). This raises the possibility that additional affinity maturation could be occurring in GCs, but its products are not enriched in the blood. Data from Turner et al., 2020 provided both blood samples and fine-needle aspirations of lymph nodes (including GCs) from the same subject. By combining these samples, we identified 53 powered B cell lineages containing at least one GC B cell following influenza vaccination, and 100 powered lineages that contained none. We refer to lineages containing one or more GC B cells as \u2018GC-associated\u2019. To determine whether GC-associated lineages were undergoing additional SHM, we tested whether they were enriched for measurable evolution. We found that 7.5% of lineages containing sequences from GC B cells were measurably evolving, compared to only 3.0% of lineages with no identified GC sequences. This signal of measurable evolution increased with the fraction of GC sequences. For instance, while 10% of lineages containing \u226510% GC sequences were measurably evolving, 38% (3/8) of those with \u226525% GC sequences were measurably evolving (Figure 3A). Lineages with higher proportions of GC sequences also had a higher correlation between divergence and time (linear regression slope = 1.1, p = 8.9 \u00d7 10\u221213, Figure 3\u2014figure supplement 1). We further estimated the significance of this positive relationship by bootstrapping our data using 10,000 resampling repetitions with replacement. We found that in all 10,000 resampling repetitions, the slope of the linear regression between GC sequence proportion and the correlation between divergence and time was positive, with 95% of repetitions having a slope between 0.81 and 1.3 (Figure 3\u2014figure supplement 1). Measurably evolving lineages in this dataset did not contain significantly more sequences than other lineages, indicating these results were not significantly confounded by lineage size (Figure 3\u2014figure supplement 2). Finally, the measurably evolving lineages with the highest proportion of GC sequences contained mAbs that bound to vaccine antigens (Figure 3B, C). These lineages show signs of origin from memory B cells, such as clonal relatedness to blood plasmablasts sampled 5 days postvaccination, and high mean germline divergence at their first sampled timepoint (6.3%, 7.2%, Figure 3B, C, respectively). To test whether GC-associated lineages accumulated new amino acid replacement mutations rather than just silent mutations, we repeated the date randomization test but calculated the divergence of each tip as the number of amino acid differences between that tip\u2019s sequence and the unmutated germline ancestor. This amino acid-based correlation analysis also showed a strong positive relationship between the proportion of lineages that were measurably evolving and the percentage of sequences derived from GC B cells (Figure 3A). This indicates that these GC-associated lineages accumulated new amino acid mutations as well as nucleotide mutations over the study interval. Overall, these analyses demonstrate that influenza-binding, GC-associated B cell lineages undergo additional, measurable evolution following vaccination.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig3-v3.jpg)\n\n**Figure 3.:** (A) Percent of lineages that are measurably evolving given a minimum percentage of GC sequences. The minimum (inclusive) percent of GC sequences within a clone is shown on the x axis. The origin shows the percentage of measurably evolving lineages across all lineages. The left-most point shows lineages without any GC sequences. The total number of lineages in each category are listed above each point. The dashed line shows 5%, the expected false positive rate under the null hypothesis. Results are shown for clustered date randomization tests using divergence values calculated either as the sum of nucleotide-based phylogenetic branch lengths (nucleotide), and the amino acid Hamming distance of each sequence to the germline (amino acid). (B, C) Lineage trees showing measurably evolving lineages with the highest proportion of GC sequences. Tips are labeled by cell type if available. ABC, activated B cell; GC, germinal center; PB, plasmablast; RMB, resting memory B; and unlabeled tips are from bulk PBMC sequencing. mAb = influenza-binding monoclonal antibody sequence (2018/2019 quadrivalent inactivated influenza virus vaccine). Branch lengths represent somatic hypermutation (SHM)/site, as shown by the shared scale bar.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Proportion of GC sequences within a lineage is positively related to the correlation between divergence and time. Lineages with p < 0.05 are shown as triangles. Points are colored by correlation between divergence and time. (B) Bootstrap analysis of the linear regression slope between the proportion of GC B cells and the correlation between divergence and sample time. Distribution shows bootstrap replicates, solid red line shows observed slope estimate, dashed red lines show 2.5% and 97.5% quantiles.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** See Table 1 for details on each study. P values are computed using a Wilcoxon test. Turner et al., 2020* included all samples (blood and lymph node) while Turner et al., 2020 included only blood samples.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70873/elife-70873-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** In contrast to Figure 3A, only lineages containing influenza-binding monoclonal antibody sequences (mAbs) were included in this analysis.\n\nA possible alternative explanation for measurable evolution following influenza vaccination is that SHM is not occurring over the sampled time interval, but that highly mutated B cells were preferentially recalled due to their higher binding affinity. Preferential recall of highly mutated B cells would likely result in a positive correlation between divergence and sample time. While difficult to directly test, we believe this explanation is unlikely to be the sole source of measurable evolution in our data. First, blood samples taken 5 days postvaccination represent the breadth of the pool of memory B cells. If measurable evolution was simply due to expansion of mutated memory B cells, we would expect divergence of later-sampled B cells to be within the range of day 5 plasmablasts. Instead, many later-sampled GC sequences are clearly more diverged than earlier-sampled sequences within the measurably evolving, influenza-binding lineages we observed (Figure 3B, C). Second, if measurable evolution were due simply to preferential expansion of more mutated B cells, we would expect to observe measurable evolution within influenza-binding lineages in both the blood and GC. This is not tested in Figure 3A because that analysis includes all lineages, not just those that bind to influenza. To adjust for this, we repeated the analysis in Figure 3A while only including lineages that contained influenza-binding mAbs. Even among influenza-binding lineages, we still observed an association between GC cells and measurable evolution. While 1/10 of influenza-binding lineages found only in the blood were measurably evolving, 2/5 lineages with >25% GC sequences were measurably evolving (Figure 3\u2014figure supplement 3). Overall, while we cannot rule out preferential expansion of highly mutated memory B cells, these results are more easily interpretable as the result of ongoing SHM in GCs.\n\n## Discussion\n\nThe extent to which seasonal influenza vaccination stimulates affinity maturation against vaccine antigens is unclear, and poor efficacy of seasonal influenza virus vaccination is often attributed to stimulation of pre-existing memory B cells interfering with novel responses to vaccine antigens (Ellebedy, 2018). While a prior study has shown that influenza-binding B cell lineages are found in GCs following seasonal influenza vaccination (Turner et al., 2020), other work has suggested that circulating influenza-binding B cell lineages do not accumulate additional SHM following vaccination (Ellebedy et al., 2016). To determine whether seasonal influenza vaccination stimulates additional evolution in B cell lineages, we developed and validated a framework to detect measurable evolution using longitudinally sampled BCR sequencing data. This phylogenetic test can be a powerful tool to detect ongoing B cell evolution using longitudinally sampled BCR datasets across a wide array of immunological conditions, including influenza virus vaccine responses. Our results confirm prior findings that there is little evidence of B cell evolution among lineages sampled in the peripheral blood following seasonal influenza vaccination (Ellebedy et al., 2016). However, we also show that seasonal influenza vaccination is capable of stimulating measurable evolution in influenza-binding, GC-associated B cell lineages.\n\nTo place our analyses of the influenza vaccination response in a broader context, we surveyed measurable evolution across a broad range of infections and vaccinations. Prior work has shown that chronic HIV infection induces long-term affinity maturation of broadly neutralizing antibody lineages in response to viral escape mutants (Liao et al., 2013; Vieira et al., 2018; Wu et al., 2015). Our results show that HIV infection is associated with an exceptionally strong signature of B cell evolution over time. This signature is not limited to single lineages. Rather, a substantial fraction of longitudinally sampled B cell lineages within the repertoires of subjects with HIV are measurably evolving, consistent with clonal competition among B cell lineages during HIV infection (Nourmohammad et al., 2019). Early childhood development during the first 3 years of life (Nielsen et al., 2019) showed the second-highest enrichment of measurably evolving lineages among surveyed conditions. This possibly reflects continual exposure to novel antigens during childhood. Further, primary vaccinations (meningococcus, primary hepatitis B)(Galson et al., 2016; Galson et al., 2015a) showed stronger signatures of measurable evolution than secondary vaccinations (adult seasonal influenza, hepatitis B booster) (Ellebedy et al., 2016; Galson et al., 2015b; Laserson et al., 2014; Turner et al., 2020). Overall, our results are consistent with the hypothesis that GC responses are stronger in response to novel antigens.\n\nIn addition to detecting measurable evolution, we also characterized selection operating on measurably evolving B cell lineages. We found that measurably evolving lineages showed evidence of purifying selection (\u03c9CDR < 1) (Table 2). Though perhaps counterintuitive, a strong signal of purifying selection is a straightforward prediction of evolution toward an adaptive peak (Hoehn et al., 2019). Similar evidence of purifying selection during affinity maturation has been observed in other studies including influenza vaccination, HIV infection, and healthy controls (Cizmeci et al., 2021; Hoehn et al., 2019; Sheng et al., 2016; Yaari et al., 2015). Importantly, \u03c9 estimates are an average across all codons within CDRs or FWRs. It is possible that positive selection operated on a small number of codon sites, but that this signal was outweighed by the larger number of sites under purifying selection. Codon-specific models may be useful in future analyses to identify these sites under positive selection (e.g., Yang et al., 2000). When interpreting these results, it is also important to note that parameters were estimated using all mutations represented by each lineage tree, including those that potentially occurred before the first sampled timepoint. In all, these results are consistent with typical forces of selection having operated on measurably evolving lineages.\n\nThere are several limitations to this study. Data from different studies were sampled according to different schedules and time intervals. Because the power to detect measurable evolution should increase over time (Figure 1G), this could confound comparisons among datasets. We note however that multiple influenza and HIV datasets were surveyed, and enrichment of measurable evolution within these conditions was not strongly related to the sampling range (Figure 2A). This suggests immunological condition, rather than sample range, was the primary determinant of observed differences. By including monoclonal antibody (mAb) sequences with experimentally validated binding in several datasets, we were able to show that measurably evolving lineages are more likely than nonmeasurably evolving lineages to contain mAb sequences. This is consistent with the idea that measurably evolving lineages are actively responding to antigen. These results should be interpreted cautiously, however. With the exception of Turner et al., 2020 only a small number mAb sequences were found in the lineages analyzed (mean = 3.6 per study). Further, lineages containing GC sequences were preferentially selected for mAb generation in Turner et al., 2020, which may artificially increase the likelihood that measurably evolving lineages contain mAbs. While intriguing and biologically plausible, conclusively determining whether measurable evolution predicts antigen binding is beyond the scope of this study. Another limitation is that maximum parsimony was used to estimate lineage tree topologies and branch lengths. While more sophisticated methods are available for inferring B cell lineage trees (e.g., Hoehn et al., 2019), maximum parsimony often has competitive performance for topology estimation (Davidsen and Matsen, 2018) and is faster than more complex maximum likelihood models designed for B cell lineages. Computational efficiency was particularly important as our analyses required constructing more than 20,000 lineages trees spanning approximately 1,100,000 BCR sequences. Finally, our analysis of GC-associated B cell lineages was limited to data sampled from a single subject. Thus, while the results here demonstrate that influenza vaccination is capable of inducing measurable evolution, it remains unclear whether this is a general feature of influenza vaccination.\n\nOur analyses of measurable evolution involved a series of hypothesis tests, and the definition for \u2018enrichment\u2019 of measurable evolution (>5% of lineages) was chosen based on the expected false positive rate under the null hypothesis. This enrichment measure was chosen to compare the relative frequency of measurably evolving lineages among datasets. A lack of enrichment does not indicate a complete lack of measurably evolving lineages. Conversely, slight enrichment of measurably evolving lineages (~5%) should not be interpreted as proof of ongoing affinity maturation in a set of lineages. The analysis in Figure 2A was not intended to test the null hypothesis that no lineages are measurably evolving in a particular dataset. Because multiple studies were surveyed (Table 1), it is possible our results contain false positives. Indeed, while some conditions such as HIV have a strong signal of measurable evolution across multiple studies, others such as naive hepatitis B vaccination and allergen-specific immunotherapy are just above the significance threshold (\u22647.2% lineages with p < 0.05) and are each represented by a single study (Figure 2A, Table 1). These latter datasets should be interpreted cautiously and with the understanding that the vast majority of their lineages were not measurably evolving. To limit the influence of false positives, a multiple testing correction (false discovery rate < 0.1) was performed in analyses investigating the properties of measurably evolving lineages (Figure 2B, Table 2). We note, however, that repeating our analyses of initial germline divergence using all measurably evolving lineages (unadjusted p < 0.05) or a more strict p value cutoff (adjusted p < 0.05) yielded similar results (Figure 2\u2014figure supplement 4), indicating our results are robust to the thresholds used. Finally, we validated the specificity of the date randomization test in empirical data (Figure 1\u2014figure supplement 2). While a significant decrease in divergence over time is biologically unlikely, false positives due to multiple testing or sequencing error should produce a similar number of lineages with a significant correlation in either direction. We quantified correlation in either direction using a two-tailed version of the clustered, resolved date randomization test with a critical value of 0.025 (see Methods). Under a null hypothesis of no ongoing evolution, 2.5% of lineages were expected to have a significant negative correlation between divergence and time (all false positives). However, we found such \u2018negatively evolving\u2019 lineages at a mean frequency of only 1.2% (median = 1.3%, range = 0\u20132.8%) across all datasets when using clustered permutations and resolved polytomies (Figure 1\u2014figure supplement 2). This indicates the date randomization test we used is conservative, and that our chosen thresholds are likely more strict than necessary.\n\nBeyond multiple testing, there are some biological scenarios that could plausibly give rise to a signal of measurable evolution without additional SHM occurring during the sampling interval. For instance, it is possible that all SHM within a lineage occurred before the first sampled timepoint in a study, but that more mutated, higher-affinity BCRs were preferentially stimulated and sampled in later timepoints. Such a scenario would likely result in a positive correlation between divergence and sample time. However, our results are easier to explain if measurable B cell evolution results at least in part from ongoing SHM. For instance, our analysis of measurably evolving lineages following influenza vaccination showed (1) many later-sampled GC B cells had higher divergence than any sampled day 5 plasmablast sequence in the same lineage and (2) continued association between GC cells (rather than the blood) and measurable evolution even among influenza-binding lineages. Nonetheless, it is still theoretically possible that more mutated B cells were not sampled at early timepoints, and were preferentially expanded in GCs compared to the peripheral blood. Thus, while our interpretation is that measurable B cell evolution most likely represents an ongoing SHM process, we cannot conclusively rule out biased selection of more mutated sequences that were generated before the sampling interval.\n\nAffinity maturation is a rapid evolutionary process. It is perhaps surprising that, while we identified conditions enriched for measurably evolving lineages, most lineages in circulation were not measurably evolving (Table 1). One explanation is that our analyses did not use sufficiently long sampling intervals to detect affinity maturation, though we believe this is unlikely. Studies in mice have estimated that SHM occurs at ~10\u22123 SHM/bp/division (Kleinstein et al., 2003; McKean et al., 1984), and that GC B cells cycle every 6\u201312 hr (Allen et al., 2007; Hauser et al., 2007; Victora and Nussenzweig, 2012). Simulations using conservative assumptions (strong selection, 24-hr cell cycle) and replicating the sample structure of our shortest-term influenza dataset (4 weeks), showed high power with >90% true positive rate (Figure 1H). Further, we found an enrichment of blood-derived measurably evolving lineages after only 4 weeks in one study (Galson et al., 2015a), and after 8 weeks corresponding to a known context of affinity maturation (GC entry, Figure 3). Overall, these results show that the sample times of our surveyed datasets should be sufficient to detect ongoing B cell evolution if it were occurring. However, it is possible that lineages may not remain in GCs continuously, which would slow the rate of evolution compared to our simulations. A more plausible explanation for the lack of measurable evolution is that most lineages in the blood are either nonspecific to the condition being studied, or derive from a GC-independent response (Mesin et al., 2020; Takemori et al., 2014; Taylor et al., 2012). It is also possible that lineages relevant to the condition being studied are inefficiently stimulated.\n\nWe find that seasonal influenza virus vaccination in young adults induces a GC reaction where maturation of vaccine-specific B cell lineages occurs, including those likely recruited from the pre-existing memory B cell compartment. These results imply that poor efficacy of seasonal influenza vaccination does not result from a complete lack of vaccine-induced B cell evolution. While we showed that B cells in these evolving lineages increased in amino acid replacement mutation frequency, it remains possible that this evolution is less able to select affinity-increasing mutations (Hoehn et al., 2019), that the overall number of evolving lineages is reduced, or that the products of this vaccine-induced evolution are not efficiently translated into memory and long-lived plasma cells. These latter two explanations are consistent with the results of our survey of longitudinally sampled peripheral blood datasets, which found an enrichment of measurably evolving lineages in some primary immune response conditions, but not influenza vaccination. Future studies will be needed to fully test these hypotheses about the causes of poor efficacy of seasonal influenza vaccination.\n\n## Materials and methods\n\n### Study design\n\nThe goal of this study was to determine whether B cell lineages found in GCs following influenza vaccination evolved over a given sample interval. This necessitated describing and validating a test for measurable evolution from longitudinally sampled BCR sequencing data. Simulation-based power analyses determined that this date randomization test has sufficient sensitivity to detect evolving B cell populations over a sampling interval of approximately 2 weeks. To determine whether the date randomization test also worked on known examples of affinity maturation, all longitudinally sampled datasets hosted on OAS (as of 6/2020) were downloaded and tested. To cover as wide a variety of conditions as possible, these datasets were supplemented with processed, publicly available datasets from other prior studies. To ensure datasets were appropriately powered, datasets were only included if they contained at least 10 B cell lineages with at least 15 sequences sampled over 3 weeks and a minimum possible date randomization test p value <0.05. BCR data from blood and fine-needle aspirations following influenza vaccination were obtained from Turner et al., 2020.\n\n### BCR sequence datasets and preprocessing\n\nAll longitudinally sampled BCR repertoire datasets were publicly available and obtained both from primary publications and through the OAS database (antibodymap.org, accessed 6/2020; Kovaltsuk et al., 2018). Both assembled nucleotide sequences and deduplicated amino acid sequences were obtained from OAS. To reduce the effect of sequencing error in OAS datasets, only nucleotide sequences corresponding to an amino acid sequence with a multiplicity of at least two were included. Datasets obtained from OAS are labeled in Table 1. Raw sequence data obtained from Nielsen et al., 2019 were preprocessed with pRESTO v0.5.13 (Vander Heiden et al., 2014). Quality control was performed by first removing all sequences with a Phred quality score <20, length <300 bp, or any missing (\u2018N\u2019) nucleotides. The 3\u2032 and 5\u2032 ends of each read were matched to forward and constant region primers with a maximum error rate of 0.1. The region adjacent to the constant region primer was exactly matched to subisotype-specific internal constant region sequences. Only sequences with the same isotype predicted by their constant region primer and internal constant region sequence were retained. Identical reads within the same isotype were collapsed and sequences observed only once were discarded. All other datasets used processed BCR sequence data provided by the authors of their respective publications. Data from Wang et al., 2014 were processed in Hoehn et al., 2019. Data from Jiang et al., 2020b used only blood samples.\n\n### BCR sequence processing, genotyping, and clonal clustering\n\nDatasets were processed using the Immcantation framework (immcantation.org). V(D)J gene assignment on data obtained from Nielsen et al., 2019 was performed using IgBLAST v1.13 (Ye et al., 2013) against the IMGT human germline reference database (Giudicelli et al., 2005) (IMGT/GENE-DB v3.1.24; retrieved August 3, 2019). V(D)J gene assignments and clonal cluster assignments were already available in all other non-OAS datasets and were retained. Nonproductively rearranged sequences were excluded. Using Change-O v1.0.0 (Gupta et al., 2015), the V and J genes of unmutated germline ancestors for each sequence were constructed with D segment and N/P regions masked by \u2018N\u2019 nucleotides. Sequence chimeras were filtered by removing any sequence with more than six mutations in any 10 nucleotide window. Individual immunoglobulin genotypes were computationally inferred using TIgGER v1.0.0 and used to finalize V(D)J annotations (Gadala-Maria et al., 2015). To infer clonal clusters, sequences were first partitioned based on common V and J gene annotations, and junction region length. Within these groups, sequences differing from one another by a specified Hamming distance threshold within the junction region were clustered into clones using single linkage hierarchical clustering (Gupta et al., 2017). The Hamming distance threshold was determined by finding the local minimum of a bimodal distance to nearest sequence neighbor plot using SHazaM v1.0.2.999 (Yaari et al., 2013). In cases where automated threshold detection failed, usually because the distance to nearest neighbor distribution was not bimodal, the threshold was set to 0.1 and verified by manual inspection to ensure that a threshold of 0.1 was near a local minimum. Finally, the V and J genes of unmutated germline ancestors for each clone were constructed. Within these unmutated ancestral sequences, D segments and N/P regions were masked using ambiguous \u2018N\u2019 nucleotides.\n\n### Testing for measurable evolution\n\nTesting for measurable evolution begins with building B cell lineage trees. Within each B cell clone, identical sequences or those differing only by ambiguous nucleotides were collapsed unless they were sampled at different timepoints. To reduce computational complexity, lineages were randomly down-sampled to at most 500 sequences each. B cell lineage tree topologies and branch lengths were estimated using maximum parsimony using the pratchet function of the R package phangorn v2.5.5 (Schliep, 2011). R packages dowser v0.0.3 (Hoehn et al., 2020), alakazam v1.0.2.999 (Gupta et al., 2015), and ape v5.4-1 (Paradis et al., 2004) were used for phylogenetic analysis. Trees were visualized using ggtree v2.4.2 (Yu et al., 2016), and other figures were generated using ggplot2 v3.3.5 (Wickham, 2016) and ggpubr v0.4.0 (Kassambara, 2020). R v3.6.1 (R Development Core Team, 2017) was used for analysis of measurable evolution except for data from Davis et al., 2019. Due to technical upgrades, figure generation and selection analysis were performed using R v4.0.3, as well as ape v5.5, phangorn v2.7.1, shazam v1.1.0, alakazam v1.1.0, and dowser v0.1.0. Data from Davis et al., 2019 were also analyzed using these updated packages.\n\nTo test for measurable evolution over time, we use a modified version of the previously described phylogenetic date randomization test (Duch\u00eane et al., 2015; Murray et al., 2016) implemented in dowser v0.0.3 (Hoehn et al., 2020). Briefly, for a given tree the divergence of each tip was calculated as the sum of branch lengths leading to the tree\u2019s most recent common ancestor (MRCA). Only branches directly between a tip and the tree\u2019s most recent common ancestor were used to calculate divergence. We next calculated the Pearson\u2019s correlation between the divergence and sampling time of each tip. Measurably evolving lineages should show a positive correlation between divergence and time (Figure 1A). Divergence from the lineage\u2019s predicted unmutated ancestral sequence rather than the MRCA could also be used. Because all sequences relate to the unmutated ancestral sequence through the MRCA node, this would add a constant additional divergence to all sequences, resulting in the same correlation as when the MRCA is used. We next identified monophyletic clades containing only sequences from a single timepoint (here referred to as \u2018clusters\u2019). We then randomly permuted sampling times among clusters, such that all sequences within each cluster had the same, randomly chosen timepoint. We next measured the correlation between divergence and time in this randomized tree, and repeated the process 100,000 times. We then estimated the p value that the observed correlation between divergence and time was no greater than expected from random distribution of times among clusters. This p value was calculated as the proportion of permutation replicates that had an equal or higher correlation than in the observed tree. We used a pseudocount of one for this calculation. The minimum possible p value for a lineage was calculated as one divided by possible number of distinct cluster permutations.\n\nWe modified the date randomization test to account for the high degree of topological uncertainty of many B cell lineage trees. More specifically, B cell lineage trees often contain large clusters of zero-length branches (soft polytomies) that represent high uncertainty in branching order (e.g., Figure 1\u2014figure supplement 1). In bulk BCR data, these polytomies may be due to PCR error or sequencing error. If polytomies are resolved randomly into bifurcations, this can produce more single-timepoint monophyletic clades than necessary and lead to a high false positive rate of the date randomization test (Figure 1\u2014figure supplements 1 and 2). To ensure this source of uncertainty did not increase the false positive rate of our analyses, we resolved bifurcations within each polytomy such that sequences from the same timepoint were grouped into the fewest possible number of single-timepoint monophyletic clades before performing permutations. While we do not have direct evidence that polytomies in B cell lineages trees are produced from PCR error, the fact that resolving them reduces the rate of lineages with a significant negative correlation between divergence and time (a biologically implausible result, Figure 1\u2014figure supplement 2) suggests they are at least in part due to technical artifacts.\n\nThe clustered date randomization approach is more conservative than tests that permute tips uniformly (e.g., Unterman et al., 2020), but has been shown to be less biased if different subpopulations are sampled at each timepoint (Murray et al., 2016). To explore the effect of this modeling choice, we repeated the analyses in Table 1 using two-tailed clustered and uniform date randomization tests (Figure 1\u2014figure supplement 2). Two-tailed tests can identify lineages with a significant positive or negative correlation between divergence and time. This is useful because a significant negative correlation between divergence and time is biologically implausible and represents a likely false positive result. Due to multiple testing under an alpha value of 0.025, we expect no more than 2.5% of lineages to have a significant negative correlation from these two-tailed tests. We found the uniform permutation test had a high rate of negatively evolving lineages (mean = 8.3%), indicating a high false positive rate. By contrast, the clustered permutation test without resolved polytomies had a mean rate of only 2.2% negatively evolving lineages, approximately as expected given an alpha value of 0.025. Resolving polytomies and then performing the clustered permutation test improved performance even more, with a mean rate of 1.2% negatively evolving lineages and no dataset having more than 2.8% of lineages negatively evolving. This analysis shows the uniform date randomization test is prone to false positives in empirical B cell data, while the clustered date randomization test with resolved polytomies corrects this issue. All other tests performed in this study used a one-tailed, clustered date randomization test with resolved polytomies and an alpha value of 0.05.\n\nTo identify and characterize measurably evolving lineages while adjusting for multiple testing, all lineages tested were pooled together and p values were adjusted using the Benjamini\u2013Hochberg procedure (Benjamini and Hochberg, 1995) implemented in the function p.adjust (R Development Core Team, 2017). Lineages with adjusted p values <0.1 were referred to as adjusted measurably evolving lineages (Figure 2B). To determine whether lineages were measurably increasing in amino acid divergence (Figure 3A), we repeated the clustered date randomization test for each tree. However, instead of calculating divergence as the sum of phylogenetic branch lengths leading from each tip to the most recent common ancestor of the lineage, we calculated divergence as the number of nonambiguous amino acid differences between each tip and the lineage\u2019s clonal germline. The clustered permutation test then proceeded as before, using the same cluster assignments as in the nucleotide-based test. This tested whether sequences at later timepoints had more amino acid substitutions compared to the germline than sequences at earlier timepoints.\n\nIt is possible that the results reported are affected by the size (number of sequences) of lineages in each dataset. A large number of lineages without adequate power could result in a spurious lack of measurable evolution. To ensure the lineages included in each study were adequately powered, we included only lineages with at least 15 sequences, that were sampled over at least 3 weeks, and had a minimum possible p value <0.05 based on the number of distinct permutations of timepoints among clusters. If measurable evolution were still strongly confounded by lineage size even after these filtering steps, we would expect measurably evolving lineages to be larger on average than nonmeasurably evolving lineages. By contrast, measurably evolving lineages were significantly larger than nonmeasurably evolving lineages in only 5/21 datasets surveyed (Figure 3\u2014figure supplement 2), indicating our results are not strongly confounded by lineage size.\n\n### Inclusion of experimentally validated mAbs\n\nTo identify B cell lineages that likely bind to the antigen under study, we included experimentally validated monoclonal antibody (mAb) heavy chain sequences provided from multiple studies. This included multiple anti-HIV mAbs: 11 from Liao et al., 2013, 12 from Doria-Rose et al., 2014, 7 from Johnson et al., 2018, 42 from Landais et al., 2017, 31 from Wu et al., 2015, and 4 from Huang et al., 2016. Doria-Rose et al., 2014 and Wu et al., 2015 also provided 680 and 1033 bulk BCR sequences, respectively, identified as clonally related to the provided anti-HIV broadly neutralizing mAbs. These sequences were also included in processing and clonal clustering but were not labeled as experimentally validated mAbs. Davis et al., 2019 provided 885 mAb heavy chain sequences, some of which were tested for binding against Ebola virus proteins. All of these sequences were included in processing and clonal clustering, but only 368 validated by ELISA to bind to Ebola virus were labeled as EBV-binding mAbs. All of the above sequences were processed in the same manner as bulk sequences from OAS, except they were not filtered as potential PCR chimeras. Clonal lineages containing experimentally validated mAbs were labeled as antigen-binding; however, because sample timepoints were not always apparent, mAb sequences themselves were removed before lineage tree inference for the abovementioned studies. Processed data from Turner et al., 2020 also included 196 anti-influenza mAbs. These sequences were retained during tree inference because they were explicitly labeled by timepoint and usually cloned from previously identified sequences within the data. Of all mAbs included, only the 58 clonally clustered within powered lineages (at least 15 sequences sampled over 3 weeks, and minimum p value <0.05) were included in tests of mAb enrichment (Figure 2\u2014figure supplement 3).\n\n### Simulation-based power analysis\n\nWe used simulations to determine whether the clustered date randomization test was sufficiently powered to detect ongoing B cell evolution. These analyses used the bcr-phylo package accessed 9/21/2020 (Davidsen and Matsen, 2018; Ralph and Matsen, 2020), which simulates clonal lineages of B cells undergoing affinity maturation against a target sequence. For all simulations, a random naive heavy chain sequence was chosen from those provided in bcr-phylo and the rate of SHM was set to the default of \u03bb = 0.356, which corresponds to an SHM rate of ~0.001 SHM/site/division (Teng and Papavasiliou, 2007). Mutations were introduced according to the S5F model (Yaari et al., 2013). Selection strength was chosen to be either 0 (neutral) or 1 (entirely affinity driven). A single target sequence was chosen for affinity maturation. All other parameters were set to their default.\n\nWe performed two sets of simulations. In the first, we simulated single B cell lineages from which 50 cells were sampled at generation 10, and 50 more cells were sampled after a specified number of additional generations (Figure 1G, Figure 1\u2014figure supplement 3). In the second type of simulation, we replicated the sampling strategy of Laserson et al., 2014. Briefly, for each clone in subject hu420143 from Laserson et al., 2014, we simulated one lineage with the same number of cells (if enough cells had been generated) sampled after the number of generations corresponding to 1, 3, 7, 14, 21, and 28 days (Figure 1\u2014figure supplement 4). The number of generations corresponding to each sample day was calculated using a strict generation time of either 12 or 24 hr, which are conservative given previous GC cycle estimates of 6\u201312 hr (Allen et al., 2007; Hauser et al., 2007; Victora and Nussenzweig, 2012). These simulations used a selection strength of 1, which gave more conservative results in previous simulations (Figure 1\u2014figure supplement 3).\n\nTo account for possible issues with clonal clustering, we did not preserve clonal identities among simulated sequences in either simulation type. Instead, we pooled sequences from all simulation repetitions under a particular parameter set and used the same clonal clustering method used for empirical data analyses to group them into clonal clusters. We did not repeat the genotyping or chimera filtering steps done on empirical data analyses as genotyped individuals and sequence chimeras were not part of the simulations. We performed the clustered date randomization test with resolved polytomies on each lineage with a minimum possible p value <0.05. Because all sequences were simulated under affinity maturation, the proportion of lineages with p < 0.05 indicated the true positive rate of the test. To determine the false positive rate, we randomized sample times among tips within each tree and repeated the date randomization test (Figure 1\u2014figure supplements 3 and 4). Here, the proportion with p < 0.05 indicated the false positive rate.\n\n### Analysis of selection\n\nTo understand the force of selection operating on B cell lineages, we first separated all adjusted measurably evolving lineages into their respective subjects within each study. We then excluded all subjects with only one measurably evolving lineage. While all sequences included were labeled as productive by IgBlast, three contained premature stop codons in their IMGT-aligned sequences, likely due to insertions that were removed during alignment. These sequences were removed. For computational efficiency, all lineages were down-sampled to a maximum size of 100 sequences. Due to uncertainty in germline D-region assignment, only V-gene (IMGT positions 1\u2013312) nucleotides were included for analyses of selection, similar to Hoehn et al., 2017. We then estimated lineage tree topologies, branch lengths, and subject-wide substitution model parameters under the GY94 model (Hoehn et al., 2019; Nielsen and Yang, 1998). Using fixed tree topologies estimated from the GY94 model, we then estimated branch lengths, subject-wide \u03c9 values for CDR and FWR partitions (\u03c9CDR and \u03c9FWR), and all six canonical SHM hot- and cold-spot motif parameters under the HLP19 model in IgPhyML v1.1.3 (Hoehn et al., 2019) for all adjusted measurably evolving lineages. Significance of \u03c9 estimates was determined using two phylogenetic likelihood ratio tests, similar to Hoehn et al., 2017. To determine the significance of \u03c9CDR estimates, we compared the maximum log-likelihood obtained when both \u03c9CDR and \u03c9FWR were estimated by maximum likelihood (L) to that obtained when \u03c9FWR was estimated by maximum likelihood but \u03c9CDR was fixed at 1 (LCDR=1). The likelihood ratio statistic (LRS) for this test was calculated as 2\u00d7(L \u2013 LCDR=1). Because these models differ by one freely estimated parameter, the LRS will be approximately chi-squared distributed with one degree of freedom under the null hypothesis that \u03c9CDR = 1, which allows for p value calculation (Huelsenbeck and Rannala, 1997). To determine significance of \u03c9FWR estimates, the process is the same except LRS = 2\u00d7(L \u2013 LFWR=1), where LFWR=1 is the maximum log-likelihood obtained when \u03c9CDR was estimated by maximum likelihood but \u03c9FWR was fixed at 1 (LFWR=1). All of the above statistics are reported in Table 2.\n\n### Data and material availability\n\nAll data are publically available from prior publications. Script to reproduce all analyses performed are available at https://bitbucket.org/kleinstein/projects.git (Kleinstein Lab, 2021; copy archived at swh:1:rev:1ca83cda5d1baac880c71c314b0adc359314f6fa).\n",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "b681d12f-5fec-4c24-9b7f-3b56aa04c498",
+      "submission_id": "e8a4ba28-9860-44e8-be91-73afe991f7bf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70873.sa0](https://doi.org/10.7554/eLife.70873.sa0)\n\nThe manuscript by Hoehn et al., introduces a novel approach to measure evolution in B cell responses, and apply it to a wide variety of data sets. The work provides significant new insight into which stimuli induce effective immune responses, and which has the potential to improve vaccine design. This will be of interest to those interested in B cell responses, especially in the case of vaccinations that induce poor immune responses.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70873.sa1](https://doi.org/10.7554/eLife.70873.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Human B cell lineages associated with germinal centers following influenza vaccination are measurably evolving\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The authors should try to either show (with simulations) that the data rejects the following scenario or they should include it as an equally likely possibility:\n\n\"Suppose that B cell clones expanded and diversified through somatic hypermutation prior to the study period (that is, prior to the secondary vaccination event which is the focus of the study). It seems that preferential expansion of highly mutated subclones during the study period could bias detected sequences towards more divergent sequences, even without ongoing somatic mutation during the study period. Preferential expansion of divergent sequences would give rise to higher average divergence as the study period goes on, giving the appearance of accumulation of additional mutations, but in fact these mutations had occurred prior to the study period and are simply more readily detected in the sparsely sampled repertoire sequencing data after their expansion. Far from being simply a pathological counter-example, this scenario seems biologically plausible, given that B cells harboring more divergent, affinity-matured sequences should generally have higher affinity antibodies that allow them to better compete for limited antigen and thus provide stronger division stimulus. This model predicts that some highly divergent sequences exist at early timepoints and would occasionally be detected.\"\n\n2. Do you see any evidence for positive (or negative) selection during somatic evolution? Do you see any significant statistical difference between non-synonymous and synonymous SHMs?\n\n3. Please expand the discussion on multiple testing adjustments in the section \"Measurably evolving lineages following influenza vaccination show signs of memory B cell origin\". Notably, the reported percentages of measurably evolving lineages in several scenarios (7.2% for primary hepatitis B vaccination; 6.5% for allergen-specific immunotherapy; 5.9% for HIV infection) are near the false positive rate of the test (5% of lineages measurably evolving). The authors have performed this test on datasets from ~21 studies, raising a concern that multiple hypothesis testing could give rise to false positives in some of the datasets. These results are interpreted as evidence of measurable evolution, even though they could seemingly be explained by the false discovery rate combined with multiple hypothesis testing. The authors should clarify how these results can be interpreted in light of the false positive rate of their test and multiple hypothesis testing, and must consider whether more conservative conclusions are warranted in these scenarios.\n\n4. Did non-measurably evolving lineages also contain monoclonal antibodies that bound to vaccine antigens? Is there enrichment of vaccine-binding monoclonal antibodies within measurably evolving lineages?\n\n5. Please modify the abstract in how the following two scenarios are presented: \"some lineages enter GCs and thus likely undergo SHM\", and \"the average SHM over all lineages doesn't increase more than some threshold\". These two scenarios are not contradictory and could both be true.\n\n6. Figure 3A is very visually striking, despite the small sample sizes. Could you explain why this figure show a much stronger correlation than Figure S7.\n\n7. p23 l22: why is the divergence from mrca (rather than naive ancestor) the one that we want for these tests?\n\n8. p24 l15: do you have direct evidence for how much of the polytomy prevalence is from PCR/sequencing error?\n\n9. The distribution of p-values should be plotted for all datasets as in Figure S6. It would be instructive to look at them and compare the full distribution given the two choices of significance threshold at 1% and 5%.\n\nReviewer #1 (Recommendations for the authors):\n\nI have a number of questions about how or why different steps were undertaken, but none of them seem likely to significantly affect the basic conclusions.\n\n\u2013 Abstract: I don't think the two findings are contradictory. To my understanding, the first says \"some lineages enter GCs and thus likely undergo SHM\", whereas the second says \"the average SHM over all lineages doesn't increase more than some threshold\". Since I think the first doesn't measure what \"some\" is, and since flu is usually given to non-naive individuals whose responses vary greatly depending on exposure history, and since the threshold could be too small to detect some SHM that occurs, both of these results seem compatible with what I would imagine is most researchers' prior: some lineages undergo SHM in some circumstances. The (in my view quite large) contribution of the current paper is in illuminating what both of the \"some\"s in the previous sentence mean. I think setting it up as a conflict between two prior results that (unless I'm misunderstanding) aren't actually in conflict just confuses the reader. As it says at p11 l21: \"consistent with a primarily GC-independent memory B cell response and/or rarity of antigen-specific lineages in the peripheral blood\". I prefer the framing in the first sentence of Discussion: \"The extent to which seasonal influenza vaccination stimulates affinity maturation\u2026\"\n\n\u2013 p2 l10: saying that you \"demonstrate measurable evolution\" in some cases seems like you care only about false negatives, but not false positives. I prefer the way this is framed at end of intro, as a \"survey\" with \"significant heterogeneity\" that conforms to expectations in both directions.\n\n\u2013 p3 l10: \"at a rate orders of magnitude\".\n\n\u2013 p3 l14: \"and, rarely, re-enter\".\n\n\u2013 p3 l21: same comment as abstract: not convinced they're in conflict.\n\n\u2013 p6 l10: \"and a second time after the\".\n\n\u2013 Figure 2A:\n\n\u2013 two categories of HIV here (empty/first 60 weeks) should match those in B (early/late).\n\n\u2013 why is hep B not broken into naive/boost here? I assume T=0 is prime, T~1.4 is boost?\n\n\u2013 suggest \"healthy children\" rather than \"healthy\" so reader can guess whether they expect enrichment for ME.\n\n\u2013 Figure 2B: having ~half the y axis devoted to p values and \"late hiv\" makes it hard to compare everything else. I think main message is e.g. flu is like hep boost, but not hep naive, which i can only really tell by parsing the tiny p values at the top.\n\n\u2013 p11 l21: my understanding is that equating \"GC-independent\" with \"no SHM\" isn't correct, e.g. this https://pubmed.ncbi.nlm.nih.gov/33326765/ takes as settled that some shm takes place outside the GC. Also, I could be wrong but it would make more sense to me to say something like \"only a small fraction of existing flu lineages are restimulated\" (which as you say earlier is relatively rare) as the first alternative.\n\n\u2013 p14 l1 I would think that \"occur at low frequency in the blood\" might be better than \"are not enriched in the blood\", since the latter (to me) sounds like the bottleneck is only on exiting GCs, rather than the other (previous) steps.\n\n\u2013 Figure 3A is very striking/convincing (although I guess given the small sample sizes almost worrisome it's so straight?). But could you explain why just by eye it seems so much more striking (stronger correlation) than Figure S7? I realize \"min GC %\" and \"proportion GC B cells\" are different, as are \"-log P\" and \"% ME\", and one is a scatter plot with low transparency and lots of dots are on top of each other, but 3A looks like almost a perfect relationship, whereas S7 it's hard to even see a linear relationship.\n\n\u2013 p17 l19: this paragraph is great, it's really convincing to me.\n\n\u2013 p19 l21: couldn't there also be a lot of lineages that are condition-specific and GC-derived, but not re-stimulated by the current stimulus? I don't know a number for the frequency with which re-stimulation causes an antigen-specific lineage to re-enter GCs, but I wouldn't expect it to be very close to 1.\n\n\u2013 p21 l1: \"to cover as wide a variety of conditions as possible\".\n\n\u2013 p21 l15: does \"redundancy\" mean number of observed sequences? Or does it have something to do with the number of nucleotide changes you could make without affecting the AA seq? (I presume the former, i just haven't heard it used in this way). Could use \"multiplicity\" or \"observations\" if they would be equivalent.\n\n\u2013 p23 l2: what does \"manual inspection\" consist of? i.e. how do you know by eye that 0.1 is correct for non-bimodal distributions?\n\n\u2013 p23 l3: What does \"masking\" consist of? Does this mean that you're not inferring the D/insert portions of the naive ancestral sequence?\n\n\u2013 p23 l22: why is the divergence from mrca (rather than naive ancestor) the one that we want for these tests? Maybe the trunk bit would maybe just cancel out? But then at p26 l6 it looks like for the AA version you do compare to naive/germline seq? From intro to Duchene 2015, it seems they used root (not mrca)?\n\n\u2013 p24 l15: do you have direct evidence for how much of the polytomy prevalence is from PCR/sequencing error? For instance do you get fewer polytomies in data with barcodes/UMIs?\n\n\u2013 Figure S3: why is it so much easier to detect measurable evolution when we're looking at neutral evolution, i.e. what causes the long downward tails of points in the top right plot (selection strength 1) vs the left plot (neutral)?\n\n\u2013 Figure S5: why does it look like there's only a lower bound/quantile (no upper box) for red (Boost, Standard)?\n\n\u2013 I would find it very interesting if you could expand on the alternative explanations in the last paragraph of the Discussion. Partly because \"does not result from a complete lack of vaccine-induced B cell evolution\" seems like a very low bar/unlikely null hypothesis (i don't think many people thought there was zero).\n\n\u2013 It might be worth discussing why you don't (I think) attempt to measure selection (it's fine that you didn't). You do an amino acid-based analysis, which is related to this (but doesn't discuss selection strength), and do simulations with both neutral and strong selection, but I'm curious why you focused only on detecting SHM/evolution, and not on whether it was neutral or not.\n\n- It would also be nice to discuss why using parsimony (very heuristic, not very accurate) was preferred over more sophisticated methods.\n\nReviewer #2 (Recommendations for the authors):\n\nCongratulations on the paper! I enjoyed reading the preprint, and I only have a few comments and suggestions that I list below.\n\n1. For more clarity, the distribution of p-values should be plotted for all datasets as in Figure S6. It would be instructive to look at them and compare the full distribution given the two choices of significance threshold at 1% and 5%. To this end, I think it would make sense to plot the cumulative function.\n\n2. I think the section \"Measurably evolving lineages following influenza vaccination show signs of memory B cell origin\" could use a more extensive explanation of the multiple testing adjustment. The p-values distributions would also be important here to distinguish the standard randomization test p-values with the BH adjusted p-values. Detecting lineages using the second definition of the p-value should also be tested with synthetic datasets.\n\n3. The initial germline divergence is quantified using the sum of branch lengths for each lineage. I suppose this depends strongly on the lineage size (and that one on the experimental protocol). Is there a way to control for this? (For instance, would it make sense to look at these distributions for subsampled lineages of equal size?)\n\n4. In the discussion you refer to the rates of somatic hypermutation and the length of the GC cycles as given by the literature you cite. For completeness (perhaps as a supplementary figure), could you report the values of the slope fitted in the SHM number vs sample time plot for measurably evolving lineages (as in Figure 1B)? I would be curious to see how these numbers compare with independent estimations from the data and whether their distribution changes significantly between cohorts you've studied.\n\n5. Re discussion on page 11: Even if memory B cells do not re-enter GC, one could imagine detecting the ongoing evolution of naive cells \u2013 this possibility should be discussed. Later the results suggest the evolving lineages come mainly from memory cells (page 12) but a priori both scenarios could be true.\n\n6. Figure 1G misses the y axis label and the x axis label is somewhat confusing without reference to the main text. The fractions in boxes should be written with the \"%\" sign (also in other figures).\n\n7. In Figure 2A the point corresponding to the early-childhood dataset should be distinguishable from other healthy data (I guess it's the \"significant\" green point).\n\nThe caption of Figure 2B should use the term \"initial germline divergence\" again, as in the y axis label to avoid confusion.\n\n8. Page 5 line 3: before using \"SHM/site\" first, it would be better to say what it means in words.\n\nPage 5 line 4: In evolving lineages, sequences sampled at later time points are (\u2026).\n",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0cad9c45-dfb9-4fb0-b106-13ce3a7efd69",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C1",
+      "claim": "Measurably evolving populations are systems that undergo evolution rapidly enough for significant genetic differences to be detected in longitudinally sampled timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurably evolving populations are systems that undergo evolution rapidly enough for significant genetic differences to be detected in longitudinally sampled timepoints (Drummond et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Drummond et al., 2003, which establishes this as a concept from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "250a72e1-b89e-4c88-b731-c9596582bb71",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C2",
+      "claim": "B cells experience similarly rapid evolution during affinity maturation as viruses such as HIV and SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "While this concept is frequently applied to viruses such as HIV (Rambaut et al., 2004) and SARS-CoV-2 (e.g., du Plessis et al., 2021), B cells experience similarly rapid evolution during affinity maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies on viral evolution (Rambaut et al., 2004; du Plessis et al., 2021) and draws on established knowledge about B cell affinity maturation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "fe590d44-36c5-456f-afdf-a68c0aa7d3b6",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C3",
+      "claim": "B cell affinity maturation is critical for developing high-affinity antibodies in response to infection and vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "B cell affinity maturation is critical for developing high-affinity antibodies in response to infection and vaccination (Shlomchik and Weisel, 2012; Victora and Nussenzweig, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Shlomchik and Weisel, 2012 and Victora and Nussenzweig, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "055a6b60-9684-418c-8342-f69500e6d9b7",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C4",
+      "claim": "Somatic hypermutation introduces mutations into the B cell receptor loci at a rate orders of magnitude higher than the background rate of somatic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "During affinity maturation, somatic hypermutation (SHM) introduces mutations into the B cell receptor (BCR) loci at a rate orders of magnitude higher than the background rate of somatic mutations (McKean et al., 1984; Murphy et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to McKean et al., 1984 and Murphy et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "69c2bee3-7aff-4127-b8bd-9c737ca9fb27",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C5",
+      "claim": "Modified BCRs are selected based on their binding affinity during affinity maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "These modified BCRs are selected based on their binding affinity, and the process repeats cyclically within germinal centers (GCs Teng and Papavasiliou, 2007; Victora and Nussenzweig, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Teng and Papavasiliou, 2007 and Victora and Nussenzweig, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "3e3c92e2-f8c8-442b-b993-c80b8fd3fd67",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C6",
+      "claim": "Infection or vaccination can stimulate pre-existing memory B cells that rapidly differentiate into antibody secreting plasmablasts or possibly re-enter GCs to undergo additional affinity maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection or vaccination can also stimulate pre-existing memory B cells that rapidly differentiate into antibody secreting plasmablasts or possibly re-enter GCs to undergo additional affinity maturation (Ellebedy, 2018; Mesin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ellebedy, 2018 and Mesin et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "cd07c3fd-a38a-40d7-87f2-192235f94454",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C7",
+      "claim": "A lack of vaccine-specific affinity maturation is thought to underlie the poor efficacy of seasonal influenza virus vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "A lack of vaccine-specific affinity maturation is thought to underlie the poor efficacy of seasonal influenza virus vaccination (Arevalo et al., 2020; Ellebedy, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Arevalo et al., 2020 and Ellebedy, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "e36585d7-245c-439d-baeb-839d92a4f2b3",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C8",
+      "claim": "Antigen-specific B cell lineages can be recruited into GCs following influenza vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "While recent work has shown that antigen-specific B cell lineages can be recruited into GCs following influenza vaccination (Turner et al., 2020), other work has been unable to detect significant increases in SHM frequency among circulating influenza-binding antibody lineages following vaccination (Ellebedy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Turner et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "e5db93fc-9463-4ed3-8d04-86a859697230",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C9",
+      "claim": "Other work has been unable to detect significant increases in SHM frequency among circulating influenza-binding antibody lineages following vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "While recent work has shown that antigen-specific B cell lineages can be recruited into GCs following influenza vaccination (Turner et al., 2020), other work has been unable to detect significant increases in SHM frequency among circulating influenza-binding antibody lineages following vaccination (Ellebedy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ellebedy et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "e145e1e1-eb1d-4801-8f65-adafdcf64407",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C10",
+      "claim": "The date randomization test detected measurable evolution in 47% of lineages after 10 additional GC cycles in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this framework in which all lineages are evolving, the date randomization test detected measurable evolution in 47% of lineages after 10 additional GC cycles, and 77% after 15 additional cycles (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data presented in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "b7ea6693-a2fb-4fd1-945e-20bb19a5e1a7",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C11",
+      "claim": "The date randomization test detected measurable evolution in 77% of lineages after 15 additional GC cycles in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this framework in which all lineages are evolving, the date randomization test detected measurable evolution in 47% of lineages after 10 additional GC cycles, and 77% after 15 additional cycles (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data presented in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "7dced946-da29-4144-b0d9-512fc25aba99",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C12",
+      "claim": "A GC cycle time of 6\u201324 hr means 15 cycles corresponds to 4\u201315 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a GC cycle time of 6\u201324 hr, 15 cycles corresponds to 4\u201315 days, within the timeframe of many longitudinal B cell repertoire studies (Ellebedy et al., 2016; Laserson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a mathematical calculation from known GC cycle times and is supported by citations to studies with relevant timeframes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "7fd7cf47-8e49-431a-95fa-48c5c23a2f0a",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C13",
+      "claim": "The date randomization test had higher power to detect measurable evolution in simulations of neutral evolution than those that included selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the date randomization test had higher power to detect measurable evolution in simulations of neutral evolution than those that included selection (Figure 1\u2014figure supplements 3\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data presented in Figure 1\u2014figure supplements 3\u20134.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "2b5bef45-2bf8-414b-8f25-3d7ed377e958",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C14",
+      "claim": "Selection can reduce the rate of divergence within lineages compared to neutral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because selection can reduce the rate of divergence within lineages compared to neutral evolution (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "bdf318a6-f94f-4911-b23c-e9d882b66bb4",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C15",
+      "claim": "The date randomization test found measurable evolution in <4% of simulations with randomized sample time associations.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the false positive rate, we repeated these calculations on the same simulations but with randomized sample time associations. Here, the date randomization test found measurable evolution in <4% in each case, indicating a low false positive rate (Figure 1\u2014figure supplements 3\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data presented in Figure 1\u2014figure supplements 3\u20134.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "7b155af7-ea97-45ea-9cfa-83a2b8cc7898",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C16",
+      "claim": "Primary immune responses are enriched for measurably evolving lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming our hypothesis, we observed an enrichment of measurably evolving lineages (>5% of tested lineages) in primary immune responses including HIV infection, meningococcus vaccination, primary but not secondary hepatitis B vaccination, and early childhood development (Table 1, Figure 2A, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1, Figure 2A, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "4e61522f-a93b-4180-9829-92ff5c5c6625",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C17",
+      "claim": "HIV infection is enriched for measurably evolving lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming our hypothesis, we observed an enrichment of measurably evolving lineages (>5% of tested lineages) in primary immune responses including HIV infection, meningococcus vaccination, primary but not secondary hepatitis B vaccination, and early childhood development (Table 1, Figure 2A, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1, Figure 2A, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "d884dff7-8ca9-4f62-bc02-04fd80d72b00",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C18",
+      "claim": "Meningococcus vaccination is enriched for measurably evolving lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming our hypothesis, we observed an enrichment of measurably evolving lineages (>5% of tested lineages) in primary immune responses including HIV infection, meningococcus vaccination, primary but not secondary hepatitis B vaccination, and early childhood development (Table 1, Figure 2A, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1, Figure 2A, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "2f67bee7-d80c-4acf-a730-fb69efa6c3bb",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C19",
+      "claim": "Primary hepatitis B vaccination is enriched for measurably evolving lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming our hypothesis, we observed an enrichment of measurably evolving lineages (>5% of tested lineages) in primary immune responses including HIV infection, meningococcus vaccination, primary but not secondary hepatitis B vaccination, and early childhood development (Table 1, Figure 2A, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1, Figure 2A, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "910506f5-fe50-4f89-8ed5-c5fb2d82d62c",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C20",
+      "claim": "Secondary hepatitis B vaccination is not enriched for measurably evolving lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming our hypothesis, we observed an enrichment of measurably evolving lineages (>5% of tested lineages) in primary immune responses including HIV infection, meningococcus vaccination, primary but not secondary hepatitis B vaccination, and early childhood development (Table 1, Figure 2A, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1, Figure 2A, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "ab81b8fd-1326-4377-8959-1097986d3452",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C21",
+      "claim": "Early childhood development is enriched for measurably evolving lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming our hypothesis, we observed an enrichment of measurably evolving lineages (>5% of tested lineages) in primary immune responses including HIV infection, meningococcus vaccination, primary but not secondary hepatitis B vaccination, and early childhood development (Table 1, Figure 2A, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1, Figure 2A, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "8269ecd8-8a32-418c-9d6d-0530ccd93b6b",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C22",
+      "claim": "HIV infection was more enriched for measurably evolving lineages than other conditions surveyed, with each study having between 5.9% and 53% of lineages measurably evolving.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this arms race, HIV infection was more enriched for measurably evolving lineages than other conditions surveyed, with each study having between 5.9% and 53% of lineages measurably evolving (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "d54c1dc9-bc99-478f-bbc4-85cc17b74472",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C23",
+      "claim": "Lineages from subjects with broadly neutralizing anti-HIV lineages sampled over multiple years were particularly enriched (26\u201353% measurably evolving).",
+      "claim_type": "EXPLICIT",
+      "source": "Lineages from subjects with broadly neutralizing anti-HIV lineages sampled over multiple years (Doria-Rose et al., 2014; Landais et al., 2017; Liao et al., 2013; Wu et al., 2015) were particularly enriched (26\u201353% measurably evolving).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from multiple cited studies (Doria-Rose et al., 2014; Landais et al., 2017; Liao et al., 2013; Wu et al., 2015).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "3a55b932-86cf-4f16-bdef-b8eb77aba103",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C24",
+      "claim": "HIV studies included were sampled over longer time periods than studies of other conditions (mean = 225 vs 45 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the HIV studies included were sampled over longer time periods than studies of other conditions (mean = 225 vs 45 weeks, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "16b00a2c-a805-48ca-b4cd-a8a369320d11",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C25",
+      "claim": "Truncated HIV datasets (first 60 weeks) were still highly enriched for measurably evolving lineages (6.9\u201364%) compared to other non-HIV datasets with similar sampling intervals (0\u20137.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "These truncated datasets were still highly enriched for measurably evolving lineages (6.9\u201364%) compared to other non-HIV datasets with similar sampling intervals (0\u20137.2%, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "2921e0c5-bb0a-47c5-a0d5-e3b2db149531",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C26",
+      "claim": "B cell lineages from healthy children sampled during the first 3 years of life were enriched for measurable evolution (14%).",
+      "claim_type": "EXPLICIT",
+      "source": "B cell lineages from healthy children sampled during the first 3 years of life were enriched for measurable evolution (14%), possibly reflecting continual exposure to novel antigens (Nielsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Nielsen et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "7805bbbd-6eff-4c86-aaeb-7947a7552f69",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C27",
+      "claim": "An enrichment of measurably evolving lineages was observed following primary meningococcus vaccination (10%).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed an enrichment of measurably evolving lineages following primary meningococcus vaccination (10%; Galson et al., 2015a) and primary but not secondary hepatitis B vaccination (7.2% vs 2.9%, respectively; Galson et al., 2016; Galson et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Galson et al., 2015a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "bd8141eb-44e7-409a-a351-9f044e9ed1aa",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C28",
+      "claim": "An enrichment of measurably evolving lineages was observed following primary hepatitis B vaccination (7.2%) but not secondary hepatitis B vaccination (2.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed an enrichment of measurably evolving lineages following primary meningococcus vaccination (10%; Galson et al., 2015a) and primary but not secondary hepatitis B vaccination (7.2% vs 2.9%, respectively; Galson et al., 2016; Galson et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Galson et al., 2016 and Galson et al., 2015b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "c4442f9d-9566-4387-90a2-eba2188793ba",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C29",
+      "claim": "Allergen-specific immunotherapy was enriched for measurable evolution (6.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, allergen-specific immunotherapy, which stimulates tolerance of allergy-causing antigens through exposure, was also enriched for measurable evolution (6.5%; Levin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Levin et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "6e59440d-e37d-4329-b632-bbd6fb9a6fe2",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C30",
+      "claim": "Ebola virus infection showed a borderline (5%) percentage of measurably evolving lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Ebola virus infection showed a borderline (5%) percentage of measurably evolving lineages (Table 1) despite likely being a primary infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "c2795829-fc68-4665-becb-9d51625444a2",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C31",
+      "claim": "Measurably evolving lineages were more likely to contain mAbs than nonmeasurably evolving lineages (p = 0.031).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that across these studies measurably evolving lineages were more likely to contain mAbs than nonmeasurably evolving lineages (p = 0.031, Wilcoxon test, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon test) of data presented in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "8c4352fd-75bc-491f-af22-b2b411b02c30",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C32",
+      "claim": "Between 2.9% and 5.2% of lineages were measurably evolving across three adult influenza vaccine datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Across subjects in each study, between only 2.9% and 5.2% of lineages were measurably evolving (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "59c7cab9-5157-402b-aae6-794f329746ce",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C33",
+      "claim": "The 4- to 13-week sampling range of influenza studies was sufficiently long to detect ongoing affinity maturation with high sensitivity (>90%).",
+      "claim_type": "EXPLICIT",
+      "source": "To verify the 4- to 13-week sampling range of these studies was sufficient to detect measurable evolution, we performed simulation analyses replicating the sampling strategy of the influenza dataset with the shortest sampling range (Figure 1\u2014figure supplement 4; Laserson et al., 2014). These simulations show this timescale was sufficiently long to detect ongoing affinity maturation with high sensitivity (>90%, Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data presented in Figure 1\u2014figure supplement 4 and Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "ccd3d533-d869-4319-8178-0b220ccec0b7",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C34",
+      "claim": "15 lineages in influenza datasets had adjusted date randomization p values < 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 15 lineages in influenza datasets, and 354 lineages in other conditions, with adjusted date randomization p values < 0.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis using the Benjamini-Hochberg procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "7aba0b37-cf9e-4c37-9dbb-986615a0d1b6",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C35",
+      "claim": "354 lineages in other conditions had adjusted date randomization p values < 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 15 lineages in influenza datasets, and 354 lineages in other conditions, with adjusted date randomization p values < 0.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis using the Benjamini-Hochberg procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "9705a206-9216-4bbb-a921-bb471fa47cac",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C36",
+      "claim": "Lineages from influenza vaccination had significantly higher initial divergence (median = 8.6%) than those from early HIV infection (median = 5%, p = 0.0012).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with memory B cell reactivation, lineages from influenza vaccination had significantly higher initial divergence (median = 8.6%) than those from primary responses such as early HIV infection (median = 5%, p = 0.0012) and primary hepatitis B vaccination (median = 2.8%, p = 0.0019) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "81490177-bc93-48ea-ad0a-7066f831691a",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C37",
+      "claim": "Lineages from influenza vaccination had significantly higher initial divergence (median = 8.6%) than those from primary hepatitis B vaccination (median = 2.8%, p = 0.0019).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with memory B cell reactivation, lineages from influenza vaccination had significantly higher initial divergence (median = 8.6%) than those from primary responses such as early HIV infection (median = 5%, p = 0.0012) and primary hepatitis B vaccination (median = 2.8%, p = 0.0019) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "47a0084b-482d-4aa2-952f-aaf688bbbe94",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C38",
+      "claim": "Measurably evolving lineages showed evidence of purifying selection (mean \u03c9CDR = 0.58, mean \u03c9FWR = 0.48).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all conditions surveyed, we found evidence of purifying selection operating on adjusted measurably evolving lineages (mean \u03c9CDR = 0.58, mean \u03c9FWR = 0.48, Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "1342759a-b0e6-43ad-9023-fc208f9e0b26",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C39",
+      "claim": "\u03c9CDR was significantly <1 in 10/13 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03c9CDR was significantly <1 in 10/13 subjects (significantly >1 in none) and \u03c9FWR was significantly <1 in 13/13 subjects (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (phylogenetic likelihood ratio test) of data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "e97903e4-49b1-4e49-88f2-05ecf10fe32f",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C40",
+      "claim": "\u03c9FWR was significantly <1 in 13/13 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03c9CDR was significantly <1 in 10/13 subjects (significantly >1 in none) and \u03c9FWR was significantly <1 in 13/13 subjects (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (phylogenetic likelihood ratio test) of data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "fdf8df28-6200-4c91-aacc-5e2e81eb9768",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C41",
+      "claim": "7.5% of lineages containing sequences from GC B cells were measurably evolving, compared to only 3.0% of lineages with no identified GC sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 7.5% of lineages containing sequences from GC B cells were measurably evolving, compared to only 3.0% of lineages with no identified GC sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis of GC-associated lineages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "9fe8be3a-d0e3-4b89-a6f0-6e2f9b6d38be",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C42",
+      "claim": "10% of lineages containing \u226510% GC sequences were measurably evolving.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while 10% of lineages containing \u226510% GC sequences were measurably evolving, 38% (3/8) of those with \u226525% GC sequences were measurably evolving (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "efbab96e-7c15-46dd-9121-494cdb89fe2a",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C43",
+      "claim": "38% (3/8) of lineages with \u226525% GC sequences were measurably evolving.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while 10% of lineages containing \u226510% GC sequences were measurably evolving, 38% (3/8) of those with \u226525% GC sequences were measurably evolving (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "7f1cb3a0-b2c9-46d9-953d-08db09a3dc81",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C44",
+      "claim": "Lineages with higher proportions of GC sequences had a higher correlation between divergence and time (linear regression slope = 1.1, p = 8.9 \u00d7 10\u221213).",
+      "claim_type": "EXPLICIT",
+      "source": "Lineages with higher proportions of GC sequences also had a higher correlation between divergence and time (linear regression slope = 1.1, p = 8.9 \u00d7 10\u221213, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (linear regression) of data presented in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "8ba32533-4902-41e9-9477-09e9ff620780",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C45",
+      "claim": "In all 10,000 bootstrap resampling repetitions, the slope of the linear regression between GC sequence proportion and the correlation between divergence and time was positive.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in all 10,000 resampling repetitions, the slope of the linear regression between GC sequence proportion and the correlation between divergence and time was positive, with 95% of repetitions having a slope between 0.81 and 1.3 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bootstrap analysis presented in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "a504918e-213d-4dfb-a65c-d6dce243dac8",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C46",
+      "claim": "Measurably evolving lineages with the highest proportion of GC sequences contained mAbs that bound to vaccine antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the measurably evolving lineages with the highest proportion of GC sequences contained mAbs that bound to vaccine antigens (Figure 3B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "7d89c639-ca11-4277-b367-6f461dbf5984",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C47",
+      "claim": "Measurably evolving lineages with the highest proportion of GC sequences show signs of origin from memory B cells, such as clonal relatedness to blood plasmablasts sampled 5 days postvaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "These lineages show signs of origin from memory B cells, such as clonal relatedness to blood plasmablasts sampled 5 days postvaccination, and high mean germline divergence at their first sampled timepoint (6.3%, 7.2%, Figure 3B, C, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "7445ff2a-4793-40fb-baf7-1ff490de0177",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C48",
+      "claim": "Measurably evolving lineages with the highest proportion of GC sequences had high mean germline divergence at their first sampled timepoint (6.3%, 7.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "These lineages show signs of origin from memory B cells, such as clonal relatedness to blood plasmablasts sampled 5 days postvaccination, and high mean germline divergence at their first sampled timepoint (6.3%, 7.2%, Figure 3B, C, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "f4470a5f-7d08-4a62-9ee3-85b671dec2e6",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C49",
+      "claim": "Chronic HIV infection stimulates ongoing affinity maturation as B cells evolve to contain viral escape mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic HIV infection stimulates ongoing affinity maturation as B cells evolve to contain viral escape mutants (Liao et al., 2013; Wendel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Liao et al., 2013 and Wendel et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "55975b7f-5b9c-4868-8ee3-94fc2181a83c",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C50",
+      "claim": "A substantial fraction of longitudinally sampled B cell lineages within the repertoires of subjects with HIV are measurably evolving.",
+      "claim_type": "EXPLICIT",
+      "source": "This signature is not limited to single lineages. Rather, a substantial fraction of longitudinally sampled B cell lineages within the repertoires of subjects with HIV are measurably evolving, consistent with clonal competition among B cell lineages during HIV infection (Nourmohammad et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis and a citation to Nourmohammad et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "46f93ce6-b55d-46f1-8c66-ffb85322d9a1",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C51",
+      "claim": "Early childhood development during the first 3 years of life showed the second-highest enrichment of measurably evolving lineages among surveyed conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Early childhood development during the first 3 years of life (Nielsen et al., 2019) showed the second-highest enrichment of measurably evolving lineages among surveyed conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis and a citation to Nielsen et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "82c24de0-9f58-4b9c-8217-6e89bf8e1b9c",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C52",
+      "claim": "Primary vaccinations (meningococcus, primary hepatitis B) showed stronger signatures of measurable evolution than secondary vaccinations (adult seasonal influenza, hepatitis B booster).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, primary vaccinations (meningococcus, primary hepatitis B)(Galson et al., 2016; Galson et al., 2015a) showed stronger signatures of measurable evolution than secondary vaccinations (adult seasonal influenza, hepatitis B booster) (Ellebedy et al., 2016; Galson et al., 2015b; Laserson et al., 2014; Turner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis and citations to multiple studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "ccd15f72-54b1-421f-8e85-b49eb7937d78",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C53",
+      "claim": "A strong signal of purifying selection is a straightforward prediction of evolution toward an adaptive peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Though perhaps counterintuitive, a strong signal of purifying selection is a straightforward prediction of evolution toward an adaptive peak (Hoehn et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hoehn et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "3a1e42ec-758c-4b57-baaa-cc7430a4d5e4",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C54",
+      "claim": "Similar evidence of purifying selection during affinity maturation has been observed in other studies including influenza vaccination, HIV infection, and healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar evidence of purifying selection during affinity maturation has been observed in other studies including influenza vaccination, HIV infection, and healthy controls (Cizmeci et al., 2021; Hoehn et al., 2019; Sheng et al., 2016; Yaari et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cizmeci et al., 2021; Hoehn et al., 2019; Sheng et al., 2016; and Yaari et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "03c76beb-4784-4f59-bc03-52e375aac5ce",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C55",
+      "claim": "Seasonal influenza virus vaccination in young adults induces a GC reaction where maturation of vaccine-specific B cell lineages occurs, including those likely recruited from the pre-existing memory B cell compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that seasonal influenza virus vaccination in young adults induces a GC reaction where maturation of vaccine-specific B cell lineages occurs, including those likely recruited from the pre-existing memory B cell compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "c4a46075-470d-4b50-9520-ced0cc00d40a",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C56",
+      "claim": "Poor efficacy of seasonal influenza vaccination does not result from a complete lack of vaccine-induced B cell evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply that poor efficacy of seasonal influenza vaccination does not result from a complete lack of vaccine-induced B cell evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "fbc37ae9-8a8d-4c65-ba89-98c1e5963820",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C57",
+      "claim": "SHM occurs at ~10\u22123 SHM/bp/division in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in mice have estimated that SHM occurs at ~10\u22123 SHM/bp/division (Kleinstein et al., 2003; McKean et al., 1984), and that GC B cells cycle every 6\u201312 hr (Allen et al., 2007; Hauser et al., 2007; Victora and Nussenzweig, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kleinstein et al., 2003 and McKean et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "ff7dcdba-2665-407c-8b5c-bbb50a1e853f",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C58",
+      "claim": "GC B cells cycle every 6\u201312 hr in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in mice have estimated that SHM occurs at ~10\u22123 SHM/bp/division (Kleinstein et al., 2003; McKean et al., 1984), and that GC B cells cycle every 6\u201312 hr (Allen et al., 2007; Hauser et al., 2007; Victora and Nussenzweig, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Allen et al., 2007; Hauser et al., 2007; and Victora and Nussenzweig, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "dc30962e-bae9-401a-9331-aabdc0f8faa1",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C59",
+      "claim": "The date randomization test is implemented within the Immcantation.org framework in the R package dowser.",
+      "claim_type": "EXPLICIT",
+      "source": "This test is implemented within the Immcantation.org framework in the R package dowser (Hoehn et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hoehn et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "56deda68-c458-4850-a69f-190271270777",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C60",
+      "claim": "Influenza vaccination stimulates memory B cell lineages with high SHM frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "While influenza vaccination stimulates memory B cell lineages with high SHM frequency (Laserson et al., 2014; Wrammert et al., 2008), these lineages are only measurably evolving if their level of SHM detectably increases during the sampling interval surrounding vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Laserson et al., 2014 and Wrammert et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "9275d06c-247f-4d4e-98c5-91686937552e",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C61",
+      "claim": "While most circulating lineages following influenza virus vaccination are not measurably evolving, a subset of memory B cell lineages re-enter GCs and increase in SHM frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that while most circulating lineages following influenza virus vaccination are not measurably evolving, a subset of memory B cell lineages re-enter GCs and increase in SHM frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "570044eb-f805-480e-ba93-95502e57219b",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C62",
+      "claim": "Clustering based on nucleotide sequence similarity detects clonal relationships with high confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "After preprocessing the sequencing data, we first identify clonal lineages \u2013 B cells that descend from a common V(D)J rearrangement \u2013 using clustering based on nucleotide sequence similarity, which we have previously shown detects clonal relationships with high confidence (Gupta et al., 2017; Zhou and Kleinstein, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gupta et al., 2017 and Zhou and Kleinstein, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "616e9987-77f1-47ab-a8b5-be1bdc21970d",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C63",
+      "claim": "In evolving lineages, sequences sampled at later timepoints are expected to have higher divergence than those from earlier timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "In evolving lineages, sequences sampled at later timepoints are expected to have higher divergence than those from earlier timepoints (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge about evolution and is illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "537f66f1-3bda-46d7-869b-6bf8d9fafde4",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C64",
+      "claim": "Datasets with >5% measurably evolving lineages are referred to as 'enriched' for measurable evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore refer to datasets with >5% measurably evolving lineages as 'enriched' for measurable evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an explicit definition provided by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "4f6c2f0e-a745-4953-8b8f-7c0c1bbef9b2",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C65",
+      "claim": "1/10 of influenza-binding lineages found only in the blood were measurably evolving.",
+      "claim_type": "EXPLICIT",
+      "source": "While 1/10 of influenza-binding lineages found only in the blood were measurably evolving, 2/5 lineages with >25% GC sequences were measurably evolving (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "4154dc40-dc95-495a-9b65-64a1bb93c8cc",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C66",
+      "claim": "2/5 influenza-binding lineages with >25% GC sequences were measurably evolving.",
+      "claim_type": "EXPLICIT",
+      "source": "While 1/10 of influenza-binding lineages found only in the blood were measurably evolving, 2/5 lineages with >25% GC sequences were measurably evolving (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "f829e2c2-6810-462a-9e6c-fef8ec050f6b",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C67",
+      "claim": "Many later-sampled GC sequences are more diverged than earlier-sampled sequences within the measurably evolving, influenza-binding lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, many later-sampled GC sequences are clearly more diverged than earlier-sampled sequences within the measurably evolving, influenza-binding lineages we observed (Figure 3B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "a294e8a7-96a4-43ef-bd1f-2125ed86b7f4",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C68",
+      "claim": "The uniform permutation test had a high rate of negatively evolving lineages (mean = 8.3%), indicating a high false positive rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the uniform permutation test had a high rate of negatively evolving lineages (mean = 8.3%), indicating a high false positive rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "2d4e19b9-c844-488a-924b-b39fc5df7c91",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C69",
+      "claim": "The clustered permutation test without resolved polytomies had a mean rate of only 2.2% negatively evolving lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the clustered permutation test without resolved polytomies had a mean rate of only 2.2% negatively evolving lineages, approximately as expected given an alpha value of 0.025.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "dd528ad3-ede9-415f-8b5c-737c6f13da93",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "claim_id": "C70",
+      "claim": "Resolving polytomies and then performing the clustered permutation test resulted in a mean rate of 1.2% negatively evolving lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Resolving polytomies and then performing the clustered permutation test improved performance even more, with a mean rate of 1.2% negatively evolving lineages and no dataset having more than 2.8% of lineages negatively evolving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "961de6a4-ecf3-4704-993b-932717b7d838",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes foundational concepts about B cell affinity maturation, including that B cells undergo rapid evolution during affinity maturation through somatic hypermutation (SHM) at rates orders of magnitude higher than background, with selection based on binding affinity occurring cyclically in germinal centers (GCs). Memory B cells can be stimulated to re-enter GCs for additional maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are all supported by citations to established literature and represent well-accepted biological knowledge about B cell biology and affinity maturation. These claims provide necessary background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "86322f17-1aaa-4cb9-83aa-369afa39aa88",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work suggests that poor efficacy of seasonal influenza vaccination may be due to lack of vaccine-specific affinity maturation, though evidence is mixed: some studies show B cell lineages can be recruited into GCs following vaccination while others find no significant increases in SHM frequency among circulating influenza-binding lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 accurately represent the state of prior literature with appropriate citations (Arevalo et al., 2020; Ellebedy, 2018; Turner et al., 2020; Ellebedy et al., 2016). These claims establish the scientific controversy that motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "069f233a-7bb6-4e47-b79c-ac7ded2da5e8",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Simulation-based validation demonstrates that the date randomization test has sufficient sensitivity (47% detection after 10 GC cycles, 77% after 15 cycles) and specificity (<4% false positive rate) to detect B cell evolution over timeframes of 4-15 days, which corresponds to typical longitudinal study intervals. The test had higher power under neutral evolution than with selection, likely because selection reduces divergence rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 are supported by simulation data presented in Figures 1G and supplementary figures. The simulations appropriately test the method's performance under different conditions. The mathematical calculation in C12 is correct. However, the simulations make assumptions about GC cycle times and mutation rates that may not fully capture biological complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Survey of measurable evolution across 21 studies and 10 conditions reveals significant heterogeneity, with enrichment (>5% of lineages measurably evolving) in primary immune responses including HIV infection (5.9-53%), early childhood development (14%), primary meningococcus vaccination (10%), and primary but not secondary hepatitis B vaccination (7.2% vs 2.9%). HIV infection showed the highest enrichment, which persisted even when datasets were truncated to 60 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C30 are supported by data in Table 1 and Figure 2A. The 5% threshold for 'enrichment' is justified based on the expected false positive rate. The comparison between primary and secondary responses is compelling, though the difference in hepatitis B vaccination may be confounded by different sampling intervals (acknowledged by authors). Statistical comparisons are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "91a9d9ad-2329-47cc-9261-e47f36f58d57",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Across studies with experimentally validated monoclonal antibodies (mAbs), measurably evolving lineages were significantly more likely to contain mAbs than non-measurably evolving lineages (p=0.031, Wilcoxon test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C31 reports a statistically significant result, the authors themselves note important limitations: only a small number of mAb sequences were available (mean=3.6 per study), and lineages with GC sequences were preferentially selected for mAb generation in Turner et al., 2020, which could artificially inflate the association. The authors appropriately caution that these results should be interpreted cautiously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "ac3f5f4b-d484-4953-af86-59060d5eef9f",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Analysis of three adult influenza vaccine datasets found that only 2.9-5.2% of lineages in peripheral blood were measurably evolving, which is at or below the expected false positive rate. Simulation analyses confirmed that the 4-13 week sampling range was sufficient to detect ongoing affinity maturation with >90% sensitivity. After multiple testing correction (FDR<0.1), only 15 lineages from influenza datasets were identified as measurably evolving.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by data in Table 1 and simulation results in Figures 1H and supplementary figures. The lack of enrichment in influenza vaccination is a key negative result that contrasts with primary immune responses. The simulation validation (C33) strengthens the interpretation that the lack of measurable evolution is not due to insufficient sampling duration. The multiple testing correction is appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "3c901bde-8c07-4e11-a0e9-bbbe44cefe11",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Measurably evolving lineages from influenza vaccination had significantly higher initial germline divergence (median=8.6%) compared to primary responses such as early HIV infection (median=5%, p=0.0012) and primary hepatitis B vaccination (median=2.8%, p=0.0019), consistent with memory B cell origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by statistical analysis (Wilcoxon test) of data in Figure 2B. The higher initial divergence in influenza vaccination lineages compared to primary responses provides evidence for memory B cell origin. The statistical tests are appropriate and p-values are significant. The authors also show this pattern holds with different p-value cutoffs (Figure 2\u2014figure supplement 4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "9d23e896-60f0-49e2-9440-8328dc1082db",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of selection on measurably evolving lineages revealed evidence of purifying selection, with mean \u03c9CDR=0.58 and mean \u03c9FWR=0.48 across all conditions. \u03c9CDR was significantly <1 in 10/13 subjects and \u03c9FWR was significantly <1 in 13/13 subjects (phylogenetic likelihood ratio test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by data in Table 2 using appropriate phylogenetic methods (IgPhyML with HLP19 model) and statistical tests (likelihood ratio test). The finding of purifying selection is consistent with evolution toward an adaptive peak and is supported by prior literature (C53, C54). The authors appropriately note that \u03c9 estimates are averages and that positive selection at specific sites may be masked.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "64f7ceec-72c1-4f39-9290-d2e61217c645",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analysis of GC-associated lineages from Turner et al., 2020 showed that 7.5% of lineages containing GC B cell sequences were measurably evolving compared to 3.0% without GC sequences. The enrichment increased with GC sequence proportion: 10% for lineages with \u226510% GC sequences and 38% (3/8) for those with \u226525% GC sequences. Linear regression showed a significant positive relationship between GC sequence proportion and correlation between divergence and time (slope=1.1, p=8.9\u00d710\u207b\u00b9\u00b3), confirmed by bootstrap analysis (10,000 repetitions, all positive slopes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are supported by data in Figure 3A and supplementary figures. The dose-response relationship between GC sequence proportion and measurable evolution is compelling. The linear regression analysis is appropriate and the bootstrap validation strengthens confidence in the result. However, this analysis is limited to a single subject, which the authors acknowledge as a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "18069d28-2d36-4935-b1fc-765ffdb80b7d",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The measurably evolving lineages with the highest proportion of GC sequences contained mAbs that bound to vaccine antigens and showed signs of memory B cell origin, including clonal relatedness to day 5 plasmablasts and high initial germline divergence (6.3%, 7.2%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by data in Figures 3B and 3C. The combination of vaccine antigen binding, early plasmablast relatedness, and high initial divergence provides converging evidence for memory B cell origin of these measurably evolving lineages. However, this is based on only two lineages with the highest GC proportions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "62f9f4e4-9f0c-4210-98fb-bb90b9ba0fc3",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The discussion synthesizes findings showing that chronic HIV infection stimulates ongoing affinity maturation with a substantial fraction of lineages measurably evolving, early childhood development shows the second-highest enrichment, and primary vaccinations show stronger signatures than secondary vaccinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by the data presented earlier in the manuscript and appropriate citations. These claims synthesize the main findings from the survey of conditions. The interpretation is consistent with the data, though the authors appropriately note that differences in sampling intervals may contribute to some observed differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "6e71c523-0219-4c1a-a2e3-da69f73a271a",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observation of purifying selection in measurably evolving lineages is consistent with theoretical predictions of evolution toward an adaptive peak and has been observed in other studies of affinity maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by appropriate citations (Hoehn et al., 2019; Cizmeci et al., 2021; Sheng et al., 2016; Yaari et al., 2015). These claims provide important context for interpreting the selection analysis results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "e8e3d155-8d50-4107-9930-025420492a33",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study concludes that seasonal influenza vaccination in young adults induces a GC reaction where maturation of vaccine-specific B cell lineages occurs, including those from memory B cells, and that poor vaccine efficacy does not result from complete lack of vaccine-induced B cell evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 represent the main conclusions of the study and are supported by the data showing measurable evolution in GC-associated lineages (C41-C48) despite lack of enrichment in peripheral blood (C32). However, the conclusion is based on data from a single subject for the GC analysis, which limits generalizability. The authors appropriately frame this as showing that influenza vaccination is 'capable of' inducing measurable evolution rather than claiming it always does.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "2843bd22-4aaf-47ac-9f84-a900f7994005",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Studies in mice have estimated that SHM occurs at ~10\u207b\u00b3 SHM/bp/division and GC B cells cycle every 6-12 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by appropriate citations to mouse studies. These parameters are used to inform the simulation analyses and power calculations. However, it should be noted that these are mouse-derived estimates that may not perfectly translate to humans.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "d15618e6-2b72-45f0-8e5b-5aa4951d605d",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript describes methodological details including implementation of the date randomization test in the dowser R package, the distinction between high SHM frequency and measurable evolution, clonal clustering methods, and definitions used in the analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 describe methodological details and definitions that are appropriately documented. C62 is supported by citations to prior validation work. C63 represents basic evolutionary theory. C64 is an explicit definition. These claims support the reproducibility and interpretability of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "034506e6-63e0-42d5-87e2-01a4148d7f5b",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Among influenza-binding lineages specifically, 1/10 found only in blood were measurably evolving compared to 2/5 with >25% GC sequences. Visual inspection of measurably evolving influenza-binding lineages shows many later-sampled GC sequences are more diverged than earlier-sampled sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by data in Figure 3\u2014figure supplement 3 and Figures 3B-C. This analysis addresses the alternative explanation that measurable evolution could result solely from preferential expansion of pre-existing highly mutated memory B cells. The observation that later GC sequences exceed the divergence of day 5 plasmablasts argues against this alternative explanation, though the authors appropriately note they cannot completely rule it out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    },
+    {
+      "id": "8dea4282-d8f2-4e0c-8d20-9158d963c4f3",
+      "content_id": "bbf068a0-2b92-40a0-a79b-d04efe478525",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Comparison of different permutation strategies showed that the uniform permutation test had a high false positive rate (mean=8.3% negatively evolving lineages), while the clustered permutation test without resolved polytomies had 2.2%, and with resolved polytomies had only 1.2% negatively evolving lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are supported by data in Figure 1\u2014figure supplement 2. This analysis validates the methodological choice to use clustered permutations with resolved polytomies. The use of 'negatively evolving' lineages (biologically implausible) as a measure of false positive rate is clever and appropriate. This validation strengthens confidence in the main results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:38.142271Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0cad9c45-dfb9-4fb0-b106-13ce3a7efd69",
+      "result_id": "961de6a4-ecf3-4704-993b-932717b7d838"
+    },
+    {
+      "claim_id": "250a72e1-b89e-4c88-b731-c9596582bb71",
+      "result_id": "961de6a4-ecf3-4704-993b-932717b7d838"
+    },
+    {
+      "claim_id": "fe590d44-36c5-456f-afdf-a68c0aa7d3b6",
+      "result_id": "961de6a4-ecf3-4704-993b-932717b7d838"
+    },
+    {
+      "claim_id": "055a6b60-9684-418c-8342-f69500e6d9b7",
+      "result_id": "961de6a4-ecf3-4704-993b-932717b7d838"
+    },
+    {
+      "claim_id": "69c2bee3-7aff-4127-b8bd-9c737ca9fb27",
+      "result_id": "961de6a4-ecf3-4704-993b-932717b7d838"
+    },
+    {
+      "claim_id": "3e3c92e2-f8c8-442b-b993-c80b8fd3fd67",
+      "result_id": "961de6a4-ecf3-4704-993b-932717b7d838"
+    },
+    {
+      "claim_id": "cd07c3fd-a38a-40d7-87f2-192235f94454",
+      "result_id": "86322f17-1aaa-4cb9-83aa-369afa39aa88"
+    },
+    {
+      "claim_id": "e36585d7-245c-439d-baeb-839d92a4f2b3",
+      "result_id": "86322f17-1aaa-4cb9-83aa-369afa39aa88"
+    },
+    {
+      "claim_id": "e5db93fc-9463-4ed3-8d04-86a859697230",
+      "result_id": "86322f17-1aaa-4cb9-83aa-369afa39aa88"
+    },
+    {
+      "claim_id": "e145e1e1-eb1d-4801-8f65-adafdcf64407",
+      "result_id": "069f233a-7bb6-4e47-b79c-ac7ded2da5e8"
+    },
+    {
+      "claim_id": "b7ea6693-a2fb-4fd1-945e-20bb19a5e1a7",
+      "result_id": "069f233a-7bb6-4e47-b79c-ac7ded2da5e8"
+    },
+    {
+      "claim_id": "7dced946-da29-4144-b0d9-512fc25aba99",
+      "result_id": "069f233a-7bb6-4e47-b79c-ac7ded2da5e8"
+    },
+    {
+      "claim_id": "7fd7cf47-8e49-431a-95fa-48c5c23a2f0a",
+      "result_id": "069f233a-7bb6-4e47-b79c-ac7ded2da5e8"
+    },
+    {
+      "claim_id": "2b5bef45-2bf8-414b-8f25-3d7ed377e958",
+      "result_id": "069f233a-7bb6-4e47-b79c-ac7ded2da5e8"
+    },
+    {
+      "claim_id": "bdf318a6-f94f-4911-b23c-e9d882b66bb4",
+      "result_id": "069f233a-7bb6-4e47-b79c-ac7ded2da5e8"
+    },
+    {
+      "claim_id": "7b155af7-ea97-45ea-9cfa-83a2b8cc7898",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "4e61522f-a93b-4180-9829-92ff5c5c6625",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "d884dff7-8ca9-4f62-bc02-04fd80d72b00",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "2f67bee7-d80c-4acf-a730-fb69efa6c3bb",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "910506f5-fe50-4f89-8ed5-c5fb2d82d62c",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "ab81b8fd-1326-4377-8959-1097986d3452",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "8269ecd8-8a32-418c-9d6d-0530ccd93b6b",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "d54c1dc9-bc99-478f-bbc4-85cc17b74472",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "3a55b932-86cf-4f16-bdef-b8eb77aba103",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "16b00a2c-a805-48ca-b4cd-a8a369320d11",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "2921e0c5-bb0a-47c5-a0d5-e3b2db149531",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "7805bbbd-6eff-4c86-aaeb-7947a7552f69",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "bd8141eb-44e7-409a-a351-9f044e9ed1aa",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "c4442f9d-9566-4387-90a2-eba2188793ba",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "6e59440d-e37d-4329-b632-bbd6fb9a6fe2",
+      "result_id": "e9b105c4-1f9b-4b11-9810-9af396fd6e07"
+    },
+    {
+      "claim_id": "c2795829-fc68-4665-becb-9d51625444a2",
+      "result_id": "91a9d9ad-2329-47cc-9261-e47f36f58d57"
+    },
+    {
+      "claim_id": "8c4352fd-75bc-491f-af22-b2b411b02c30",
+      "result_id": "ac3f5f4b-d484-4953-af86-59060d5eef9f"
+    },
+    {
+      "claim_id": "59c7cab9-5157-402b-aae6-794f329746ce",
+      "result_id": "ac3f5f4b-d484-4953-af86-59060d5eef9f"
+    },
+    {
+      "claim_id": "ccd3d533-d869-4319-8178-0b220ccec0b7",
+      "result_id": "ac3f5f4b-d484-4953-af86-59060d5eef9f"
+    },
+    {
+      "claim_id": "7aba0b37-cf9e-4c37-9dbb-986615a0d1b6",
+      "result_id": "ac3f5f4b-d484-4953-af86-59060d5eef9f"
+    },
+    {
+      "claim_id": "9705a206-9216-4bbb-a921-bb471fa47cac",
+      "result_id": "3c901bde-8c07-4e11-a0e9-bbbe44cefe11"
+    },
+    {
+      "claim_id": "81490177-bc93-48ea-ad0a-7066f831691a",
+      "result_id": "3c901bde-8c07-4e11-a0e9-bbbe44cefe11"
+    },
+    {
+      "claim_id": "47a0084b-482d-4aa2-952f-aaf688bbbe94",
+      "result_id": "9d23e896-60f0-49e2-9440-8328dc1082db"
+    },
+    {
+      "claim_id": "1342759a-b0e6-43ad-9023-fc208f9e0b26",
+      "result_id": "9d23e896-60f0-49e2-9440-8328dc1082db"
+    },
+    {
+      "claim_id": "e97903e4-49b1-4e49-88f2-05ecf10fe32f",
+      "result_id": "9d23e896-60f0-49e2-9440-8328dc1082db"
+    },
+    {
+      "claim_id": "fdf8df28-6200-4c91-aacc-5e2e81eb9768",
+      "result_id": "64f7ceec-72c1-4f39-9290-d2e61217c645"
+    },
+    {
+      "claim_id": "9fe8be3a-d0e3-4b89-a6f0-6e2f9b6d38be",
+      "result_id": "64f7ceec-72c1-4f39-9290-d2e61217c645"
+    },
+    {
+      "claim_id": "efbab96e-7c15-46dd-9121-494cdb89fe2a",
+      "result_id": "64f7ceec-72c1-4f39-9290-d2e61217c645"
+    },
+    {
+      "claim_id": "7f1cb3a0-b2c9-46d9-953d-08db09a3dc81",
+      "result_id": "64f7ceec-72c1-4f39-9290-d2e61217c645"
+    },
+    {
+      "claim_id": "8ba32533-4902-41e9-9477-09e9ff620780",
+      "result_id": "64f7ceec-72c1-4f39-9290-d2e61217c645"
+    },
+    {
+      "claim_id": "a504918e-213d-4dfb-a65c-d6dce243dac8",
+      "result_id": "18069d28-2d36-4935-b1fc-765ffdb80b7d"
+    },
+    {
+      "claim_id": "7d89c639-ca11-4277-b367-6f461dbf5984",
+      "result_id": "18069d28-2d36-4935-b1fc-765ffdb80b7d"
+    },
+    {
+      "claim_id": "7445ff2a-4793-40fb-baf7-1ff490de0177",
+      "result_id": "18069d28-2d36-4935-b1fc-765ffdb80b7d"
+    },
+    {
+      "claim_id": "f4470a5f-7d08-4a62-9ee3-85b671dec2e6",
+      "result_id": "62f9f4e4-9f0c-4210-98fb-bb90b9ba0fc3"
+    },
+    {
+      "claim_id": "55975b7f-5b9c-4868-8ee3-94fc2181a83c",
+      "result_id": "62f9f4e4-9f0c-4210-98fb-bb90b9ba0fc3"
+    },
+    {
+      "claim_id": "46f93ce6-b55d-46f1-8c66-ffb85322d9a1",
+      "result_id": "62f9f4e4-9f0c-4210-98fb-bb90b9ba0fc3"
+    },
+    {
+      "claim_id": "82c24de0-9f58-4b9c-8217-6e89bf8e1b9c",
+      "result_id": "62f9f4e4-9f0c-4210-98fb-bb90b9ba0fc3"
+    },
+    {
+      "claim_id": "ccd15f72-54b1-421f-8e85-b49eb7937d78",
+      "result_id": "6e71c523-0219-4c1a-a2e3-da69f73a271a"
+    },
+    {
+      "claim_id": "3a1e42ec-758c-4b57-baaa-cc7430a4d5e4",
+      "result_id": "6e71c523-0219-4c1a-a2e3-da69f73a271a"
+    },
+    {
+      "claim_id": "03c76beb-4784-4f59-bc03-52e375aac5ce",
+      "result_id": "e8e3d155-8d50-4107-9930-025420492a33"
+    },
+    {
+      "claim_id": "c4a46075-470d-4b50-9520-ced0cc00d40a",
+      "result_id": "e8e3d155-8d50-4107-9930-025420492a33"
+    },
+    {
+      "claim_id": "fbc37ae9-8a8d-4c65-ba89-98c1e5963820",
+      "result_id": "2843bd22-4aaf-47ac-9f84-a900f7994005"
+    },
+    {
+      "claim_id": "ff7dcdba-2665-407c-8b5c-bbb50a1e853f",
+      "result_id": "2843bd22-4aaf-47ac-9f84-a900f7994005"
+    },
+    {
+      "claim_id": "dc30962e-bae9-401a-9331-aabdc0f8faa1",
+      "result_id": "d15618e6-2b72-45f0-8e5b-5aa4951d605d"
+    },
+    {
+      "claim_id": "56deda68-c458-4850-a69f-190271270777",
+      "result_id": "d15618e6-2b72-45f0-8e5b-5aa4951d605d"
+    },
+    {
+      "claim_id": "9275d06c-247f-4d4e-98c5-91686937552e",
+      "result_id": "d15618e6-2b72-45f0-8e5b-5aa4951d605d"
+    },
+    {
+      "claim_id": "570044eb-f805-480e-ba93-95502e57219b",
+      "result_id": "d15618e6-2b72-45f0-8e5b-5aa4951d605d"
+    },
+    {
+      "claim_id": "616e9987-77f1-47ab-a8b5-be1bdc21970d",
+      "result_id": "d15618e6-2b72-45f0-8e5b-5aa4951d605d"
+    },
+    {
+      "claim_id": "537f66f1-3bda-46d7-869b-6bf8d9fafde4",
+      "result_id": "d15618e6-2b72-45f0-8e5b-5aa4951d605d"
+    },
+    {
+      "claim_id": "4f6c2f0e-a745-4953-8b8f-7c0c1bbef9b2",
+      "result_id": "034506e6-63e0-42d5-87e2-01a4148d7f5b"
+    },
+    {
+      "claim_id": "4154dc40-dc95-495a-9b65-64a1bb93c8cc",
+      "result_id": "034506e6-63e0-42d5-87e2-01a4148d7f5b"
+    },
+    {
+      "claim_id": "f829e2c2-6810-462a-9e6c-fef8ec050f6b",
+      "result_id": "034506e6-63e0-42d5-87e2-01a4148d7f5b"
+    },
+    {
+      "claim_id": "a294e8a7-96a4-43ef-bd1f-2125ed86b7f4",
+      "result_id": "8dea4282-d8f2-4e0c-8d20-9158d963c4f3"
+    },
+    {
+      "claim_id": "2d4e19b9-c844-488a-924b-b39fc5df7c91",
+      "result_id": "8dea4282-d8f2-4e0c-8d20-9158d963c4f3"
+    },
+    {
+      "claim_id": "dd528ad3-ede9-415f-8b5c-737c6f13da93",
+      "result_id": "8dea4282-d8f2-4e0c-8d20-9158d963c4f3"
+    }
+  ],
+  "comparisons": []
+}

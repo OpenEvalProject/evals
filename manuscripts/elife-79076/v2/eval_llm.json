@@ -1,0 +1,487 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors conducted single-cell RNA sequencing on ventral prostates from 6-month-old wild-type and Ptenfl/fl mice, resulting in 24,079 cells across five samples. The Ptenfl/fl model involves deletion of Pten exon 5 in basal and luminal epithelial cells, leading to uniform prostate cancer development. PTEN negatively regulates the PI3K-AKT-mTOR pathway, which is deregulated in nearly all advanced prostate cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 describe the experimental design, mouse model, and data processing. The methodology is clearly described with appropriate sample sizes (n=3 WT, n=2 Ptenfl/fl), quality control procedures, and cell type identification using established computational methods (SingleR). The Ptenfl/fl model is well-established and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The rtTA-eGFP transgene was detected in 14.5% of Ptenfl/fl epithelial cells, which is higher than the expected ~5% for an average transcript, suggesting widespread Cre-mediated recombination and Pten loss in the epithelial compartment. Recombination was not observed in WT mice or non-epithelial cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide evidence for widespread recombination in the model. The calculation comparing observed (14.5%) to expected (~5%) transgene expression is reasonable given the detection parameters (~1200 genes/cell detected from ~24,000 total). The negative controls (WT mice, non-epithelial cells) strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors identified canonical basal and luminal cells, as well as two distinct Krt4+ clusters in WT mice. One cluster expressed urethral markers (Aqp3, Ly6d) and was designated as urethral, while the other likely represents prostatic luminal progenitor cells. In Ptenfl/fl mice, a large cluster of intermediate cells was identified, characterized by Krt4/Tacstd2/Ppp1r1b expression but lacking Psca. Urethral cells clustered separately and expressed lower levels of prostate markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 describe cell type identification based on established marker expression patterns with appropriate citations. The distinction between urethral and prostatic Krt4+ cells is supported by differential marker expression (Aqp3/Ly6d vs. Ppp1r1b/Clu) and clustering analysis. The nomenclature decisions are justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "There was a dramatic increase in intermediate cell proportion in Ptenfl/fl mice compared to WT luminal progenitors. GSEA revealed enrichment of oncogenic pathways (AKT, mTOR), Wnt signaling, metabolic processes, and epithelial cell migration and proliferation in Ptenfl/fl epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by quantitative cell abundance data and GSEA analysis. The enrichment of AKT/mTOR pathways is expected given Pten loss and serves as a positive control. The statistical significance of cell abundance changes is demonstrated (Figure 1C), and pathway enrichment meets FDR <0.05 threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors hypothesized that intermediate cell expansion could result from increased proliferation of luminal progenitors or transdifferentiation of other cell types. However, while basal cells showed significantly increased CCP scores in Ptenfl/fl mice, intermediate cells showed no significant change compared to luminal progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 present a hypothesis and proliferation data. The CCP score analysis is appropriate for assessing proliferation. The lack of increased proliferation in intermediate cells despite their expansion suggests alternative mechanisms (transdifferentiation), which is explored in subsequent analyses. The statistical testing appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cell cycle analysis revealed a striking split in the Ptenfl/fl basal compartment: 18.6% were hyper-proliferative (99.7% in G2/M or S phase), while the remaining cells were hypo-proliferative (52.2% in G2/M or S, lower than WT's 68.5%). The hyper-proliferative cluster accounted for the increased basal CCP score. Transgene expression differences (<1.5-fold) between hypo- and hyper-proliferative basal cells do not account for the >2-fold difference in cycling cells, indicating Pten loss promotes a dual basal cell phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 present detailed cell cycle analysis with quantitative measurements. The dual phenotype conclusion is well-supported by the data showing distinct proliferative states. The comparison of transgene expression to proliferation differences strengthens the argument that the effect is not simply due to differential recombination efficiency. Chi-square testing is appropriate for comparing proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The hypo-proliferative basal cluster was enriched for migration, development, and differentiation signatures. Multiple trajectory analyses (Monocle3, RNA velocity, Palantir) confirmed a direct path from hypo-proliferative basal cells to intermediate luminal cells. Gene expression analysis along trajectories showed that cell fate decision genes (Pdgfb, Trp63, Shh) decrease while differentiation genes (Notch1) increase along the basal-to-intermediate path. The authors conclude that hypo-proliferative basal cells transdifferentiate into intermediate luminal cells, while hyper-proliferative basal cells may replenish the basal compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C95 present converging evidence from multiple computational approaches (GSEA, pseudotime, RNA velocity) supporting basal-to-intermediate transdifferentiation. The use of multiple independent methods strengthens the conclusion. However, the claim about hyper-proliferative cells replenishing the basal compartment (C95) is more speculative and would benefit from lineage tracing validation, which the authors acknowledge (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors found overlap in luminal marker expression between luminal cells and adjacent intermediate cells in Ptenfl/fl mice, suggesting luminal cells may phenotype switch to an intermediate state while retaining some identity markers. Combined with evidence for basal transdifferentiation and potential luminal progenitor expansion, the findings support multiple cells of origin for intermediate cells. The authors acknowledge that lineage tracing studies will be necessary to fully disentangle cellular origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 present evidence for multiple cellular origins of intermediate cells, supported by marker expression overlap and cited literature. The conclusion is appropriately cautious, acknowledging the limitations of scRNA-seq for definitively establishing lineage relationships. The call for lineage tracing experiments (C101) demonstrates appropriate scientific rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "GSEA showed enrichment of immune-related pathways in Ptenfl/fl epithelial cells. T cells, macrophages, neutrophils, and dendritic cells were significantly expanded in Ptenfl/fl mice, while B cells were not. The authors characterized immune cell subtypes: neutrophils as MDSCs, three macrophage states (TAMs, M2, and AR-dependent tissue-resident macrophages/TRMs), and three T cell subtypes (CD8+, gamma-delta, NKT). CD8+ and gamma-delta T cells expressed exhaustion markers (Pdcd1, Ctla4), suggesting dampened cytotoxic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C112 describe immune cell characterization using established markers and appropriate statistical testing (negative binomial regression). The classification of immune subtypes is based on published biomarkers with citations. The inference about dampened cytotoxicity (C111) is reasonable given exhaustion marker expression but remains indirect without functional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Ligand-receptor analysis revealed key interactions between epithelial cells and M2/TAM macrophages (e.g., Cd74 receptor targeting), with ligands more highly expressed in Ptenfl/fl epithelial cells. Increased Ccl2/7/11-Ccr2 interactions between fibroblasts and M2/TAMs suggest fibroblasts play an active role in macrophage recruitment. Ccl2/7/11 are upregulated in Ptenfl/fl fibroblasts, and Ccr2 is highly expressed in M2/TAMs but not TRMs, potentially explaining lower TRM abundance in Ptenfl/fl mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 present ligand-receptor interaction analysis using CellphoneDB with appropriate p-value thresholds (p<0.05). The inference about fibroblast-mediated macrophage recruitment is supported by coordinated ligand-receptor expression patterns. The speculation about TRM polarization (C120) is appropriately labeled as an alternative hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The top epithelial-MDSC interactions were characterized by receptors in epithelial cells and ligands in MDSCs, suggesting epithelial cells are unlikely to recruit MDSCs. Instead, increased Ccr1 expression in MDSCs and Ccl6/7/8/9 expression in M2 macrophages (known Ccr1 ligands) suggest M2 macrophages recruit MDSCs. Ccl6/7/8/9 are not expressed in TRMs or TAMs, highlighting M2-MDSC signaling specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 present a logical inference from ligand-receptor directionality and expression patterns. The conclusion that M2 macrophages recruit MDSCs is supported by coordinated expression of Ccr1 and its ligands, with appropriate citation for the ligand-receptor relationship (C125). The specificity observation (C127) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Both epithelial cells and macrophages interact with CD8+ T cells through attractive (Cxcr6-Cxcl16) and pro-exhaustion (Pdcd1-Fam3c) interactions, as well as Cd86-Ctla4/Cd28 interactions. TAMs showed particularly robust Cxcl16 and Cd86 expression, suggesting they may specifically modulate T-cell abundance and function. The authors conclude that pro-tumorigenic macrophages are recruited by epithelial and fibroblast signaling, then assist in remodeling the immune environment, with M2 macrophages mainly responsible for MDSC recruitment and TAMs for CD8+ T cell recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C138 present a comprehensive model of immune cell interactions supported by ligand-receptor analysis and expression patterns. The synergistic signaling model (C132) is a reasonable inference from the data. The specific roles assigned to M2 vs. TAM macrophages (C137-C138) are supported by differential ligand expression patterns. However, functional validation would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Castration of Ptenfl/fl mice caused intermediate luminal cells to expand while differentiated luminal cells disappeared entirely. AR activity scoring showed WT luminal progenitors had high AR activity, but Ptenfl/fl intermediate cells exhibited very low AR activity in both intact and castrated conditions, while differentiated luminal cells retained high AR activity. The authors conclude that Pten loss decreases intermediate cells' reliance on AR signaling and induces their expansion upon castration, likely through lineage plasticity rather than cell death. Proliferation did not change significantly between intact and castrate conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C147 present castration response data with appropriate AR activity scoring using a validated 20-gene signature. The cell abundance changes are quantitatively demonstrated with statistical significance (***p<0.001). The inference about lineage plasticity (C146) is supported by cited literature (C145) and the observation that differentiated cells can phenotype switch. The lack of proliferation changes (C147) rules out proliferation as the mechanism for intermediate cell expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Re-clustering of intermediate cells from intact and castrated Ptenfl/fl mice revealed six distinct clusters. Intact intermediate cells (62.8%) congregated in cluster 3, which showed high expression of AR-dependent genes (Sbp, Defb50, Spink1), while castrated cells were distributed across four clusters (0, 1, 2, 4). Cluster 1 expressed basal markers (Krt5, Krt15), supporting basal transdifferentiation, while clusters 1 and 4 showed upregulation of ribosomal genes and enrichment of translation pathways. Castrated basal cells also showed increased ribosomal protein expression. The authors conclude that castration promotes increased heterogeneity and potentially diversifies cell-type-specific translation dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C161 present detailed subclustering analysis with appropriate DEG analysis and GSEA (FDR <0.05). The identification of distinct intermediate cell states is supported by marker expression and pathway enrichment. The inference about multiple cellular origins (C154-C155) is consistent with earlier trajectory analyses. The conclusion about translation dependence (C161) is appropriately cautious ('potentially').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "AR activity scoring across intermediate clusters revealed a gradient, with cluster 3 having the highest score. Proliferation and translation scores were inversely correlated with AR signaling, with clusters 1 and 4 showing high proliferation/translation and low AR activity. Intact Ptenfl/fl prostates contained mostly AR-high intermediate cells, while castration substantially increased AR-medium and -low cells. AR activity correlated with cell of origin: basal-marker clusters (1, 4) had low AR activity, while luminal-marker cluster 3 had AR activity comparable to differentiated luminal cells. The authors suggest castration may select for lower AR-expressing cells with high proliferation while conserving some 'intact-like' regions, but acknowledge lineage-tracing experiments are needed to establish the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C173 present composite score analysis showing inverse correlations between AR activity and proliferation/translation. The quantitative data support the gradient model. The correlation between AR activity and cell of origin markers (C169-C171) is an interesting observation. The authors appropriately present alternative hypotheses (C167-C168, C172) and acknowledge the need for lineage tracing (C173) to definitively establish mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Analysis of WT castrate mice showed non-basal cells aggregated separately from both WT intact luminal cells and Ptenfl/fl intermediate cells, but were closest to WT luminal progenitor cells. Similar to Ptenfl/fl intermediate cells, lower AR activity was associated with increased translation signature in WT castrate cells. However, unlike Ptenfl/fl intermediate cells, WT castrate cells showed decreased proliferation. The authors conclude that castration plays an important role in translational heterogeneity, but the proliferation change is likely related to Pten loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C179 present a critical control experiment comparing WT and Ptenfl/fl castrate responses. The analysis appropriately distinguishes effects of castration alone from those requiring Pten loss. The conclusion that translation changes are castration-dependent while proliferation changes require Pten loss is well-supported by the comparative data. This strengthens the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Using a human ADT resistance gene signature, the authors found that castrated intermediate cells showed the most enrichment compared to intact intermediate cells. The top five enriched genes (ATP1B1, BST2, CP, IGFBP3, PTTG1) were downregulated in intact cluster 3 and upregulated in human ADT-resistant tumors. Patients with high expression of any of these five genes experienced significantly shorter disease-free survival in both TCGA (n=490) and MSKCC (n=140) cohorts, with the same trend in PTEN-loss patients. The authors conclude that the castrate intermediate cell state correlates with poor patient outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C186 present translational validation using human clinical data. The enrichment analysis appropriately uses a validated human ADT resistance signature. The survival analysis is properly conducted with Kaplan-Meier curves and statistical testing (p<0.001). The validation in PTEN-loss patients (C185) strengthens the relevance to the mouse model. The 80th percentile threshold for defining 'high' expression is reasonable but somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Integration of single-cell data from primary (n=11) and metastatic (n=6) human prostate cancers showed that primary and metastatic cells clustered separately. The 5-gene signature was enriched only in metastatic patients, with the signature-enriched cluster composed of cells from five out of six metastatic samples. The authors conclude that the 5-gene signature is enriched in human metastatic prostate cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C190 present validation in human metastatic disease using integrated scRNA-seq data. The separation of primary and metastatic cells and specific enrichment of the signature in metastatic samples supports the clinical relevance. However, the sample size is relatively small (n=6 metastatic), and one metastatic sample did not contribute to the signature cluster, which could indicate heterogeneity or technical factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "In an orthogonal mouse model (PR vs. PRN), where PRN mice show significantly stronger castration resistance without physical castration, the 5-gene signature showed strong enrichment in PRN compared to PR mice. The authors conclude that the signature is not driven by castration alone and that a gene signature from a specific murine cell type closely correlates with human CRPC and worse patient outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C193 present critical validation in an independent model system that was not physically castrated, ruling out castration as the sole driver of the signature. This strengthens the conclusion that the signature reflects intrinsic castration resistance mechanisms. Claims C194-C195 appropriately summarize the translational relevance across multiple validation approaches (human survival, metastatic disease, orthogonal model).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "Castration of Ptenfl/fl mice caused significant decline in all three macrophage subtypes and CD8+ T cells. While epithelial-to-macrophage signaling remained intact, the Ccl2/7/11-Ccr2 signaling axis from fibroblasts to M2/TAMs was entirely ablated, with dramatic decreases in both receptor (Ccr2 in macrophages) and ligands (Ccl2/7/11 in fibroblasts). TRMs had high AR activity in intact mice that decreased upon castration. The authors conclude that castration interrupts fibroblast-mediated M2/TAM recruitment and depletes the androgen-dependent TRM reservoir, leading to decreased macrophage abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C208 present comprehensive analysis of castration effects on immune populations with appropriate statistical testing (*p<0.05, **p<0.01, ***p<0.001). The mechanistic explanation linking androgen signaling to macrophage recruitment is supported by coordinated changes in ligand-receptor expression and AR activity in TRMs. The cited literature (C203-C204) supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "After castration, epithelial-CD8+ interactions remained mostly intact, but Cd86-Cd28/Ctla4 signaling from M2/TAMs was disrupted, with greatly reduced Cd86 expression in M2s and TAMs. Receptor expression decreased in CD8+ T cells, including suppressive markers Ctla4 and Pdcd1. The authors suggest that macrophage depletion causes decreased CD8+ T cell recruitment and suppression, possibly leading to more cytotoxic but less abundant CD8+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C213 present ligand-receptor and expression data supporting decreased macrophage-T cell interactions after castration. The inference about decreased recruitment and suppression is reasonable given the data. However, the speculation about increased cytotoxicity (C214) is not directly supported by functional data and is appropriately presented as speculative ('possibly').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "TNF signaling, previously implicated as pro-tumorigenic in AR-low prostate cancer, showed striking enrichment in castrated mice, with pro-tumorigenic myeloid cells (M2, TAMs, MDSCs) expressing TNF and interacting with receptors in epithelial cells and fibroblasts. Analysis of human TCGA data (n=493) revealed a significant inverse correlation between TNF and AR activity (r=-0.33, p=8.6e14), which held true in PTEN-loss patients (n=94). The authors conclude that castration provokes large-scale signaling changes resulting in decreased macrophage/CD8+ T cell populations and increased TNF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C220 present TNF signaling analysis with appropriate human validation. The inverse correlation between TNF and AR activity in human patients (C218) with strong statistical significance validates the mouse findings. The validation in PTEN-loss patients (C219) strengthens the relevance. The summary conclusion (C220) appropriately integrates the immune findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "Deregulated mRNA translation has been implicated in aggressive AR-low prostate cancer in Ptenfl/fl mice, but which cell types require increased translation for androgen-independent growth remains unclear. Given the correlation between proliferation and translation in basal and intermediate cells, the authors hypothesized that both cell types require increased translation. They used the Ptenfl/fl;4ebp1M model, where doxycycline induces expression of a mutant eIF4EBP1 that cannot be inactivated by mTOR and robustly inhibits translation initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C221-C226 establish the rationale and describe the genetic tool for testing translation dependence. The 4ebp1M model is well-established and appropriately cited. The hypothesis (C223) is reasonable given the observed correlation between proliferation and translation. The description of eIF4EBP1 function is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231"
+    ],
+    "result": "A striking ~10-fold depletion of the rtTA-eGFP transgene was observed in Ptenfl/fl;4ebp1M basal and intermediate cells compared to Ptenfl/fl. The authors hypothesized this indicates translation inhibition is lethal or confers competitive disadvantage to AR-low epithelial cells. Filtering for transgene-positive cells revealed many more DEGs in basal cells (465 vs. 56 in non-filtered analysis), but no significant change in intermediate cells, possibly due to high phenotypic diversity and very low proportion (<1%) of transgene-positive intermediate cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C227-C231 present the key observation of transgene depletion and appropriate analytical approach of filtering for transgene-positive cells. The ~10-fold depletion is a striking effect. The explanation for lack of DEGs in intermediate cells (C231) is reasonable given the very low proportion of transgene-positive cells (<1%), which would limit statistical power. However, this also limits conclusions about intermediate cell translation dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236"
+    ],
+    "result": "Pathway analysis of transgene-positive basal cell DEGs showed enrichment of translation, cell cycle arrest, and apoptosis pathways, with downregulation of mitochondrial function and mTORC1 signaling. The proportion of hyperproliferative basal cells decreased drastically in Ptenfl/fl;4ebp1M mice. The authors conclude that remaining transgene-positive basal cells may be undergoing cell cycle arrest and apoptosis, and that highly proliferative basal cells are more dependent on high translation than less proliferative basal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C232-C236 present pathway analysis with appropriate FDR thresholds and quantitative data on hyperproliferative cell depletion (Table 2). The inference about cell cycle arrest and apoptosis (C234) is supported by pathway enrichment. The conclusion about differential translation dependence (C236) is a reasonable inference from the preferential depletion of hyperproliferative cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C237",
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243"
+    ],
+    "result": "In Ptenfl/fl;4ebp1M mice, TNF signaling between myeloid and epithelial cells greatly decreased, as did epithelial-fibroblast and inter-epithelial EGFR signaling. EGFR activity is associated with worse cancer prognosis, and EGFR inhibition has been proposed as a therapeutic approach. The authors conclude that both basal and intermediate cancer cell types require increased translation initiation to maintain castration resistance, that aberrant mRNA translation is required for tumor heterogeneity, and that translation inhibition of distinct epithelial populations can impact the tumor microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C237-C243 present ligand-receptor analysis showing decreased pro-tumorigenic signaling in the 4ebp1M model. The conclusions about translation requirements (C241-C242) are supported by the depletion of transgene-positive cells in both basal and intermediate compartments. However, the conclusion about intermediate cells is weaker due to the very low proportion of transgene-positive intermediate cells (<1%) and lack of robust DEG analysis in this compartment.",
+    "result_type": "MAJOR"
+  }
+]

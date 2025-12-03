@@ -1,0 +1,176 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes the biological context and knowledge gap: temporal synchrony is essential for neural processing, but the mechanisms by which oligodendrocytes achieve and maintain synchronization through myelin plasticity are not understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish well-accepted neuroscience principles (C1, C3) and identify clear knowledge gaps (C2, C4) that motivate the study. These are appropriately supported by citations and general knowledge, providing valid scientific context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27"
+    ],
+    "result": "The OMP model is motivated by the morphological differences between oligodendrocytes and Schwann cells, hypothesizing that oligodendrocytes' ability to myelinate multiple axons enables them to integrate signals and optimize synchrony in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C21 describe established anatomical facts, but C22-C24 and C27 are explicitly stated as hypotheses and postulates. While the morphological observations are sound, the functional interpretation linking morphology to synchronization is speculative and forms the basis for model development rather than demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The OMP model efficiently synchronizes correlated and time-locked signals when oligodendrocyte response times are 10-40 ms and firing rates are low (~10 Hz), while leaving independent signals unaffected, suggesting oligodendrocytes actively modulate conduction delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are directly supported by extensive simulation data shown in Figures 2-4. The model demonstrates selective synchronization across a wide parameter space. C5 and C8 are valid inferences from the modeling results, though they represent computational predictions rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C31"
+    ],
+    "result": "Mathematical analysis shows that for Poisson spiking with fixed delays, the model consistently myelinates lagging axons more than leading ones, and simulations show single exponential approach to synchrony for correlated spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C28 is derived from Equation 4 with clear mathematical reasoning. C31 is supported by model fitting results shown in Figure 3A. Both claims are well-supported by the theoretical framework and simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C41"
+    ],
+    "result": "Model instabilities observed with single oligodendrocytes and fixed delays disappear when using longer oligodendrocyte chains, and synchronization becomes progressively harder with increased firing rate and number of axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are directly supported by simulation results shown in Figures 3B-D and supplementary figures. The systematic exploration of parameter space demonstrates these trends consistently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C50"
+    ],
+    "result": "The OMP model selectively synchronizes correlated spike groups while leaving independent signals unaffected, conforming to known anatomical organization where neighboring axons share functional properties, though efficiency is slightly reduced when mixed signals are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C43 and C50 are directly demonstrated in Figure 4A-C simulation results. C44 appropriately contextualizes these findings with established neuroscience knowledge. C45 provides relevant developmental biology support via citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "The model makes several testable predictions: proximal-to-distal myelination gradients, re-myelination patterns after lesions, process removal from uncorrelated axons, and optimal synchronization at lower firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly stated as predictions and postulates (C49, C51) or inferences (C48, C52) from the model. While logically derived from model behavior, they remain untested hypotheses requiring experimental validation. The predictions are reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "The OMP-1 model demonstrates that passive oligodendrocyte responses are sufficient for synchronization without requiring astrocytes, and that Poisson spiking is more reliable than regular spiking for myelin plasticity, supporting the concept that neural noise promotes healthy brain function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C54-C55 are valid inferences from the modeling work showing the model functions without astrocyte involvement. C57 is supported by the mathematical analysis showing Poisson spiking consistently favors lagging axons (Equation 4, Figure 1\u2014figure supplement 3C). C58 is a broader interpretation that is reasonably supported by the model behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript reviews established knowledge about temporal precision requirements in neural processing, conduction velocity variability, myelin plasticity's role in learning, and limitations of current understanding regarding activity-dependent myelination mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately summarize established neuroscience knowledge (C9-C12, C17) and cite relevant literature supporting myelin plasticity's role in learning (C13-C15). Claims C16, C18 identify legitimate knowledge gaps. All are well-supported by citations or general knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The manuscript reviews experimental evidence for oligodendrocyte-axon signaling mechanisms, including calcium transients triggered by glutamate release, local myelin synthesis, activity-dependent regulation of myelin sheath elongation, and various receptor-mediated signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims in this group are appropriately attributed to prior experimental work with specific citations (Wake et al., Krasnow et al., Hines et al., and others). The review accurately represents findings from the cited literature regarding oligodendrocyte signaling mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Myelination typically proceeds from cell body to axon terminal after axons reach their targets, with the optic nerve showing reverse-direction myelination from retina toward optic chiasm despite oligodendrocyte progenitor migration from the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C46 states established developmental biology knowledge. C47 is supported by citation to Ishibashi et al., 2009. Both claims provide relevant biological context for interpreting model predictions.",
+    "result_type": "MINOR"
+  }
+]

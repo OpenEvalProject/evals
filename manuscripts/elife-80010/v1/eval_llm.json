@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The molting cycle is decelerated in nhr-23 knockdowns, accelerated in let-7(\u2212) mutants, and timed similarly in let-7(\u2212) nhr-23(\u2212) double mutants compared to wild-type animals. Quantitative measurements show wake-to-wake intervals of 13 \u00b1 1.1 h for nhr-23(RNAi) L4 larvae versus 10.3 \u00b1 0.4 h for controls, 7.9 \u00b1 0.6 h for let-7(n2853) mutants, and 10.6 \u00b1 0.8 h for double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C17-C20 are well-supported by longitudinal behavioral studies presented in Figure 2. The quantitative measurements with statistical significance (p \u2264 0.0001) demonstrate clear genetic epistasis, with the double mutant phenotype resembling wild-type. This mutual suppression strongly supports the model that NHR-23 and let-7 act in the same genetic pathway to regulate molting cycle timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "NHR-23 binds ROREs in the let-7 promoter and activates transcription. ChIP-qPCR shows 4-fold enrichment at L3 and 21-fold at L4 in nhr-23::3xflag samples. NHR-23 also occupies promoters of let-7 family members (mir-48, mir-241, mir-84). Knockdown of nhr-23 reduces pri-let-7 levels by 1.5-fold at L3 and 3-fold at L4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C21-C23 are strongly supported by ChIP-qPCR data (Figure 3B, C, Figure 3\u2014figure supplement 1) and RT-qPCR data (Figure 3D-G). The enrichment values are statistically significant with appropriate controls (col-19 negative control). The combination of binding data and functional transcriptional effects provides compelling evidence for direct transcriptional activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Scrambling ROREs in the let-7 promoter reduces NHR-23 binding from 25-fold to ~5-fold enrichment, decreases pri-let-7 levels by 1.7-2.4-fold, increases seam cell numbers, and accelerates the L4-to-adult molt in multiple independent alleles of let-7(scRORE1,2) and let-7(scRORE1,3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are well-supported by ChIP-qPCR (Figure 4B), RT-qPCR (Figure 4C, D), seam cell counting (Figure 4E), and behavioral studies (Figure 4F). The use of multiple independent alleles strengthens the conclusions. The phenotypes are consistent with reduced let-7 function, supporting the functional importance of NHR-23-mediated transcriptional activation through ROREs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C28",
+      "C29"
+    ],
+    "result": "let-7 dampens nhr-23 expression via a let-7 complementary site (LCS) in the nhr-23 3\u2032 UTR. Bicistronic reporter assays show the nhr-23 3\u2032 UTR reporter signal is ~6-fold lower than the unc-54 control, and deletion of the LCS increases the tdTomato/GFP ratio by 2-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C28-C29 are supported by bicistronic reporter assays (Figure 5). The experimental design appropriately controls for trans-splicing efficiency using the ratiometric GFP signal. The 2-fold derepression upon LCS deletion demonstrates functional importance. However, the magnitude of effect is modest, suggesting additional regulatory mechanisms may be involved (as acknowledged by the authors in C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "nhr-23 expression peaks early in each larval stage and dampens by ~1.5-fold between stages in wild-type animals. In nhr-23(\u0394LCS) and let-7(n2853) mutants, amplitude, peak value, and rising slope are consistently higher across L3 and L4 stages, and an extra pulse of nhr-23 expression is detected after the fourth molt. let-7-mediated repression is at least partially responsible for dampening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C103-C105 are supported by RT-qPCR time course data (Figure 6A, Figure 6\u2014figure supplement 1) and MetaCycle analysis (Supplementary file 3). The dampening phenomenon is clearly demonstrated with quantitative metrics. The extra pulse in mutants (C33) provides evidence for the cycle-counting model. The data convincingly show that let-7 contributes to dampening, though other factors may also be involved (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Derepression of nhr-23 by LCS deletion or high gene dosage leads to accelerated molting cycles and supernumerary molts in adults. The wake-to-wake interval is shortened by 1.5 h in nhr-23(\u0394LCS) L3s and by 0.9 h in wgIs43[nhr-23++] L3-to-L4 transition. 97% of nhr-23(\u0394LCS) and 91% of wgIs43[nhr-23++] adults undergo supernumerary molts versus 0% of wild-type adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C34-C38 are strongly supported by longitudinal behavioral studies (Figure 6B, C, Figure 7). The supernumerary molt phenotype is dramatic and highly penetrant with strong statistical significance (p < 0.0001, chi-square test). This provides compelling evidence that the NHR-23/let-7 feedback loop controls both the pace and number of molts, supporting the cycle-counting model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "NHR-23 and let-7 coregulate clock-controlled genes (CCGs) including fbn-1, mlt-10, and lin-42. Bioinformatic analysis classifies 57% of 67 CCGs as shared targets of both NHR-23 and let-7s, 24% as NHR-23-only targets, 10% as let-7-only targets, and 13% as targets of neither. RT-qPCR shows altered expression of fbn-1 and mlt-10 in nhr-23 knockdowns and let-7/nhr-23(\u0394LCS) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C39-C46 are supported by RT-qPCR data (Figure 8A-D) and bioinformatic analysis (Figure 8E, Supplementary file 4). The classification criteria are clearly defined (ChIP-seq peaks, RORE presence, expression changes, ALG-1 binding, LCS presence). The RT-qPCR data for fbn-1 and mlt-10 validate the bioinformatic predictions. However, the bioinformatic analysis relies on computational predictions and published datasets, which may have limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "NHR-23 binds and activates lin-42 promoters (5-fold enrichment for lin-42a, 7-fold for lin-42b) and its own promoter. Knockdown of nhr-23 reduces lin-42 levels by 2.6-fold at L4, while let-7(n2853) and nhr-23(\u0394LCS) mutants show 1.5-fold higher lin-42 expression at L3. Reporter assays show NHR-23 activates its own expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C52 are supported by ChIP-qPCR (Figure 9A), RT-qPCR (Figure 9B, C), and reporter assays (Figure 9E, F). The data demonstrate that NHR-23 and let-7 regulate lin-42, a core clock component, and that NHR-23 autoregulates. This supports the model of interconnected feedback loops forming a molecular-genetic oscillator. The reporter assay design appropriately tests autoregulation by using dsRNAs that target endogenous nhr-23 but not the reporter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C66"
+    ],
+    "result": "ROREs and LCSs from mammalian ROR and let-7 genes function in C. elegans, suggesting conservation. One to five ROREs were identified upstream of mammalian let-7 homologs. A M. musculus let-7 promoter drives GFP expression in C. elegans that is reduced 2-fold by nhr-23(RNAi). One to three LCSs were found in 10 mammalian ROR 3\u2032 UTRs. Deletion of LCSs from H. sapiens ROR\u03b2 3\u2032 UTR increases reporter signal 30-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C53-C58, C66 are supported by bioinformatic analysis (Figure 10A, D, Supplementary file 2) and functional assays in C. elegans (Figure 10B, C, E-H). The functional conservation is demonstrated by mammalian regulatory elements working in worms. However, the conservation claim (C14, C58) is based on heterologous assays in C. elegans rather than direct evidence in mammals. True conservation would require demonstrating the feedback loop functions in mammalian systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C100"
+    ],
+    "result": "The feedback loop between NHR-23 and let-7 functions as a cycle counter, and the balance between NHR-23 and let-7 activity controls the finite number of molts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15 and C100 are proposed models based on the dampening of nhr-23 expression and supernumerary molts in nhr-23(gf) mutants. While the data on dampening (C31, C105) and supernumerary molts (C36-C38) are solid, the cycle-counting mechanism is inferred rather than directly demonstrated. Alternative explanations (e.g., threshold-based mechanisms) are not fully excluded. Additional experiments manipulating the number of cycles would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The molecular interactions between NHR-23 and let-7 hold true for other let-7 family microRNAs (mir-48, mir-84, mir-241).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by ChIP-qPCR (Figure 3\u2014figure supplement 1C, D) and RT-qPCR data (Figure 3\u2014figure supplement 2C, D) showing NHR-23 occupies promoters of mir-48, mir-241, and mir-84, and that nhr-23 knockdown reduces their expression. This extends the regulatory mechanism beyond let-7 to its paralogs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The intensity of GFP from the nhr-23::gfp::unc-54 reporter in hyp7 of nhr-23(RNAi) animals was ~2-fold lower than mock-treated animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by fluorescence microscopy data (Figure 9F). This result supports NHR-23 autoregulation (C52). The experimental design appropriately uses a reporter where the RNAi targets endogenous nhr-23 but not the transgene, allowing assessment of transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background knowledge claims about C. elegans molting cycle, heterochronic pathway, and prior work on NHR-23, let-7, and lin-42.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C16, C59-C64, C78-C92 are statements of established knowledge or citations of prior work. These are appropriately cited and provide necessary context for the study. They are not novel findings but are accurately represented based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C117"
+    ],
+    "result": "NHR-23 and the let-7s establish a transcriptional\u2013post-transcriptional feedback loop that governs the pace and extinction of the molting cycle and integrates the molting cycle timer with the heterochronic pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C117 are summary claims integrating the major findings. They are well-supported by the collective evidence showing: (1) NHR-23 activates let-7 transcription (C7, C21-C23), (2) let-7 represses nhr-23 (C8, C28-C29), (3) this affects molting cycle timing (C4-C6), and (4) disruption causes supernumerary molts (C36-C38). These claims appropriately synthesize the major results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C115"
+    ],
+    "result": "The findings may apply to developmental and tissue-specific circadian clocks in humans and help elucidate pathologies including birth defects, cancers, sleep disorders, and metabolic syndromes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68, C115 are speculative statements about potential implications. While the conservation data (C13-C14, C66) provides some support, these claims extend beyond the experimental evidence. The functional conservation is demonstrated only in heterologous C. elegans assays, not in mammalian systems. The connection to human pathologies is highly speculative and would require extensive additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C118"
+    ],
+    "result": "Background knowledge and discussion claims about genetic oscillators, circadian clocks, microRNA regulation, nematode development, and proposed mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77, C93-C99, C101-C102, C106-C114, C116, C118 are either citations of established knowledge or discussion/speculation based on the findings. These appropriately contextualize the work within the broader field and propose mechanisms, but are not primary experimental findings. They are accurately represented based on cited literature or are clearly identified as speculation.",
+    "result_type": "MINOR"
+  }
+]

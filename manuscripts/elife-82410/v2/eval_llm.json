@@ -1,0 +1,443 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study collected eye movement, scene video, and body movement data from 11 participants (3 from Austin, 8 from Berkeley) walking over various terrains using mobile eye tracking and motion capture systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C136-C139 provide comprehensive methodological details about data collection equipment, sampling rates, participant demographics, and ethical approvals. The methods are clearly described with appropriate institutional oversight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C19",
+      "C14"
+    ],
+    "result": "During locomotion, subjects exhibit a stereotyped gaze pattern: saccades to locations ahead followed by gaze stabilization (200-300ms) where the eye counter-rotates to maintain fixation while the body moves forward, with excellent stabilization (median slip 0.83 deg, mode 0.26 deg).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are well-supported by data in Figures 1, 10, and citations to prior work. The quantitative measurements of gaze stabilization quality (C30) and the characterization of the saccade-fixate pattern are backed by empirical observations and appropriate analysis methods (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C11",
+      "C130"
+    ],
+    "result": "Gaze angle varies systematically with terrain complexity: subjects look closer to the body (~45 deg) in rocky terrain versus far distances on pavement, though the saccade-and-stabilize pattern is conserved across terrains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are strongly supported by data in Figure 2 showing clear terrain-dependent gaze distributions. The finding is consistent with prior work (C11, citation to Matthis et al., 2018) and demonstrates task-dependent gaze deployment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C50",
+      "C51"
+    ],
+    "result": "Stabilizing eye movements during fixations are primarily downward (compensating for forward body motion), with lateral components from body sway (\u00b112 deg) and off-path fixations (\u00b130 deg).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C50-C51 are supported by data in Figure 3 showing the distribution of eye movement directions and speeds during stabilization. The quantitative measurements of body sway and lateral gaze deviations provide specific values backed by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C144",
+      "C145"
+    ],
+    "result": "3D terrain reconstruction using photogrammetry (Meshroom) achieved high accuracy, with median distance of ~3 cm (0.5 deg visual angle) between corresponding foothold locations across different reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C144-C145 describe the photogrammetry method and its validation. The accuracy assessment using corresponding foothold locations across multiple reconstructions provides empirical validation of the 3D reconstruction quality, which is essential for the retinal motion calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C57",
+      "C58",
+      "C59",
+      "C81"
+    ],
+    "result": "Average retinal motion speeds show strong upper-lower visual field asymmetry: lower field peaks at ~28.8 deg/s (45 deg eccentricity) while upper field peaks at ~13.6 deg/s, with low velocities at the fovea and speeds <20-30 deg/s in central 90 deg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C57-C59 are directly supported by data in Figure 4. The specific quantitative values for peak speeds in different visual field regions are clearly shown in the figures. The asymmetry finding (C81) is a major empirical result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C60",
+      "C61",
+      "C133"
+    ],
+    "result": "Retinal motion directions exhibit radially expansive patterns but with strong vertical bias: directions are compressed near the horizontal meridian with preponderance of vertical directions, resulting from fixation on the ground plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C60-C61 are supported by data in Figure 4c-d showing the flow field patterns and direction histograms. The vertical bias and compression near horizontal meridian are clearly visible in the visualizations. Claim C133 correctly attributes this to ground plane fixation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C82",
+      "C85",
+      "C95",
+      "C118"
+    ],
+    "result": "Vertical gaze angle strongly modulates retinal motion patterns: looking toward horizon (60-90 deg) produces greater upper-lower asymmetry, while looking closer to ground (17-45 deg) reduces asymmetry and increases radial symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C82 are well-supported by data in Figure 5 showing systematic changes in speed distributions with gaze angle. Claims C85 and C95 correctly explain the mechanism through changes in depth statistics. The finding demonstrates how behavior modulates sensory input.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C62",
+      "C117",
+      "C134"
+    ],
+    "result": "Horizontal gaze angle primarily affects motion direction patterns: leftward gaze introduces counterclockwise rotation while rightward gaze introduces clockwise rotation, modulating the vertical direction bias into global rotational patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C62 are supported by data in Figure 6 showing how lateral gaze shifts the flow field patterns. Claims C117 and C134 correctly describe the rotational components introduced by horizontal eye position. The effect is clearly demonstrated in the visualizations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C96",
+      "C132"
+    ],
+    "result": "Terrain structure (rocky vs. flat) has modest effects on retinal motion: rocky terrain slightly attenuates upper-lower speed asymmetry through motion parallax, but has little effect on direction distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by data in Figure 7 comparing flat and rocky terrain with matched gaze angles. The finding that terrain effects are modest compared to gaze angle effects (C96, C132) is clearly demonstrated, though the mechanism through motion parallax averaging (C56) is more inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Low foveal velocities result from gaze stabilization during locomotion, creating flow patterns reminiscent of Gibson's optic flow but generated through active stabilization rather than gaze-heading coincidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by the data and provide important conceptual framing. The distinction from Gibson's original formulation (C69-C70) is well-articulated and supported by citation to Matthis et al., 2021. The mechanism through counter-rotation (C72) is empirically demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Gaze stabilization gain during natural locomotion is near unity (~1.0), contradicting Calow and Lappe's assumption of 0.5 gain; VOR is likely the primary mechanism given its low latency and increased gain during locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by the current data (C30, C78) and citations to prior work. The comparison with Calow and Lappe's methodology (C75, C77) is appropriate, and the inference about VOR involvement (C76) is reasonable given cited evidence about spinal modulation during locomotion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The current findings agree with Calow and Lappe that upper-lower asymmetries are driven by depth statistics, but demonstrate that task-linked gaze lowering during natural locomotion dramatically changes these statistics, explaining differences in magnitude from prior simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 provide appropriate comparison with prior work. The agreement on mechanism (C84) combined with explanation of differences through gaze behavior (C87-C88) is well-reasoned and supported by the data showing gaze-dependent changes in asymmetry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A band of low speeds in the horizontal direction centered on the fovea was found, differing from Calow and Lappe's findings; this difference stems from task-linked fixations on the ground that affect ground plane rotation around the fixation axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 identify a novel finding and provide mechanistic explanation. The difference from prior work (C90) is noted, and the explanation through task-linked ground fixations (C91-C93) is supported by the data in Figures 1 and 4. The geometric reasoning is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C135",
+      "C2",
+      "C12",
+      "C37"
+    ],
+    "result": "Behavioral goals and their interaction with body movements and terrain must be considered for complete description of retinal motion statistics; motion input indirectly stems from behavioral goals through task-dependent gaze deployment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C135, and related claims (C2, C12, C37) represent a major conceptual conclusion of the study. This is well-supported by the demonstrated effects of terrain on gaze (Figure 2) and gaze on motion patterns (Figures 5-7), showing the causal chain from task to sensory input.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The variations in motion speed and direction across the visual field have implications for neural motion processing; prior computational work on efficient coding did not address gaze location and gait factors that significantly impact retinal motion patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C102 are speculative about neural implications (C98, C102) and make accurate statements about prior computational work (C99-C101). However, the connection between the measured statistics and neural properties remains to be empirically tested. The speculation is reasonable but not yet validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The extent to which known properties of MT neurons are consistent with observed retinal motion statistics is unclear; while some features (centrifugal bias, lower field over-representation) align with predictions, speed-eccentricity relationships are more variable than expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 provide balanced assessment of consistency with neurophysiology. The citations to relevant studies (C104, C106-C108) are appropriate, and the acknowledgment of inconsistencies (C107, C109) is honest. This represents appropriate caution about neural implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "MSTd's role in optic flow processing is well-studied but consensus on self-motion perception is lacking; neurons respond vigorously to stimuli inconsistent with self-motion (zero velocity displaced from fovea), which would not be expected if experience shapes cell properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 accurately summarize the state of knowledge about MSTd with appropriate citations. The observation about responses to unnatural stimuli (C113-C116) raises an important question about the efficient coding hypothesis, though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Eye position effects on visual neuron responses are well-documented; eye direction tuning could potentially be used to compute expected flow patterns for detecting deviations, similar to mismatch neurons observed in mouse V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is well-supported by citations, but claims C120-C123 are speculative about potential mechanisms. The analogy to mouse V1 mismatch neurons (C122) is interesting but the extension to postural stability monitoring (C123) remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Emerging neurophysiological paradigms with freely moving animals will enable study of retinal optic flow without simulated locomotion, but comparative approaches are needed as each species has distinct movement patterns, eye strategies, and ground-plane relationships that impact flow patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 make reasonable statements about future research directions. The caution about species differences (C126-C127) is well-founded given the study's demonstration of how behavior shapes sensory input. This represents appropriate forward-looking discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C17",
+      "C18",
+      "C20"
+    ],
+    "result": "Retinal motion patterns during natural locomotion stem from eye counter-rotation during gaze stabilization as the body moves through the gait cycle; the ground plane creates an increasing speed gradient from upper to lower visual field that is likely ubiquitous in natural self-motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 and C17-C18, C20 summarize the main findings. These are well-supported by the comprehensive data presented throughout the manuscript. The conclusion about ubiquity (C129) is reasonable given the fundamental geometry involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study's scope is limited to locomotion with a ground plane and does not cover smooth pursuit, optokinetic nystagmus, or carpentered environments; however, the findings should cover a substantial domain of experienced motion and generalize across normal walking speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 appropriately acknowledge scope limitations while arguing for generalizability. The reasoning about coverage (C65) is sound given the fundamental factors identified. The scaling argument (C66) is based on geometric principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Saccades during locomotion are generally <150 deg/s with predominant upward/downward directions; they contribute high speeds (outside the stabilization domain) to retinal motion but are less useful for locomotor guidance due to suppression and blur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 and C148-C154 describe saccade properties and their effects. The data in Figures 12-13 support the quantitative characterizations. The reasoning about reduced utility during saccades (C141-C143) is supported by citations and established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior to this study, there were no empirical in situ measurements of how eye and body movements interact with real 3D environments to shape retinal motion statistics; previous camera-based studies and simulations had limitations in mimicking head movements and task-linked gaze behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10, C15-C16 establish the novelty and advantages of the current approach. The characterization of prior work limitations is accurate and supported by appropriate citations. This justifies the methodological approach taken.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C13",
+      "C73",
+      "C74"
+    ],
+    "result": "Simple expansive optic flow (gaze centered on heading) is rarely met in natural behavior; actual retinal motion depends on 3D structure and eye motion through space, making head-relative flow a poor signal for locomotor direction control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C13 are supported by the empirical observations of gaze behavior. Claims C73-C74 about functional implications are supported by citation to Matthis et al., 2021, though the alternative function (balance control) remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The pervasive presence of self-motion makes it likely that motion processing systems are shaped by these patterns at evolutionary and developmental timescales, similar to how binocular viewing geometry informs understanding of cortical encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9 are speculative about evolutionary/developmental implications. While the analogy to binocular vision work (C9, citing Bonnen et al., 2020) is appropriate, the claim about shaping of motion systems (C8) remains a hypothesis requiring additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Low velocities in the central visual field support the assumption of a motion prior centered on zero, as proposed by Weiss et al., 2002 to account for motion illusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 makes an appropriate connection between the empirical findings and a theoretical proposal from psychophysics. The low foveal velocities demonstrated in the data provide empirical support for the zero-centered prior assumption.",
+    "result_type": "MINOR"
+  }
+]

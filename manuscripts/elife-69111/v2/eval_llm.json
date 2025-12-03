@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19"
+    ],
+    "result": "The manuscript addresses a gap in understanding interneuron function in primate cortex. While interneurons are believed to realize critical gating functions in cortical circuits (C1), it has been difficult to ascertain the content of gated information for well-characterized interneurons in primate cortex (C2). Most existing knowledge about cell-specific circuit functions in primate prefrontal cortex is indirectly inferred from studies that distinguish only one group of putative interneurons based on narrow action potential spike width (C19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and motivation for the study. C1 and C2 are knowledge claims about the current state of the field, while C19 characterizes the limitations of existing primate research. Together they provide a well-supported rationale for the study's approach to characterizing interneuron subtypes in primate prefrontal cortex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study recorded 329 single neurons in LPFC and 397 neurons in ACC during reversal learning performance. Action potential waveform analysis distinguished neurons with broad and narrow spikes, with 21% of LPFC neurons and 17% of ACC neurons classified as narrow spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 report basic experimental data collection and classification results. The neuron counts are directly reported from recordings (C27, C28), waveform analysis is shown in Figure 1E (C29), and the proportions of narrow vs. broad spiking neurons are quantified (C30, C31). These are straightforward data reports that are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Spike-triggered multiunit activity (MUA) analysis revealed that B-type cells showed symmetric pre- to post-spike MUA modulation indicative of excitatory participation, while N-type cells showed a faster drop in MUA after spiking, indicating inhibitory influence. This distinction was statistically significant (p=0.001) and evident in both ACC and LPFC, suggesting narrow spiking cells contain mostly inhibitory interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 present a key methodological result establishing the inhibitory nature of narrow spiking neurons. The spike-triggered MUA analysis is shown in Figure 1F-H with appropriate statistical tests (Wilcoxon test, p=0.001 for C34; p<0.001 in ACC and p=0.03 in LPFC for C35). The inference that narrow spiking cells are inhibitory interneurons (C36) is well-supported by the MUA suppression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "K-means clustering analysis identified eight electrophysiological types (e-types), with narrow spiking neurons falling into three subtypes: N1 (13%, high firing rate, highly regular), N2 (20%, Poisson variability, narrowest waveforms), and N3 (67%, intermediate narrow waveforms, regular firing with LV 0.84). Neurons within an e-type showed similar characteristics across ACC and LPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 describe the clustering analysis results shown in Figure 4. The clustering methodology is detailed in Materials and Methods, validation is shown in Figure 4\u2014figure supplements 1-2, and the characteristics of each e-type are quantified with specific metrics (firing rate, LV, CV). The cross-area consistency (C56) is supported by statistical comparisons showing no significant differences in N3 e-type characteristics between ACC and LPFC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In LPFC, N-type neurons showed transient firing increases to the color attention cue (significant within 25-275 ms post-cue, p<0.05), while B-type neurons did not. N-type cells in LPFC also showed significant encoding of rewarded color (18% of cells) and reward location (22% of cells) after cue onset. In contrast, ACC N- and B-type neurons did not show on-responses to the color cue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe area-specific responses to task cues. The data are shown in Figure 2 with appropriate statistical tests (randomization statistics, p<0.05). The proportion of neurons encoding color and location information is quantified with specific time windows and statistical thresholds. The contrast between LPFC and ACC responses is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In LPFC, 27% of N-type cells significantly correlated their firing with choice probability p(choice) during the post-color onset period, showing positive correlations (Pearson r=0.068, p=0.011) that remained significant for 0.7s following color onset. Significantly fewer N-type cells in ACC showed such correlations (6% vs 27%, p=0.019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present a key functional finding linking N-type neuron activity to choice probability in LPFC. The proportions are tested against chance (binomial test, p<0.001), the correlation strength is quantified with appropriate statistics (Wilcoxon rank test, p=0.011), and the time course is shown in Figure 2E. The ACC-LPFC comparison uses appropriate statistical tests (X2-test, p=0.019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Both N- and B-type cells increased firing after reward onset in LPFC and ACC, but these responses were not significantly different between cell types. However, time-resolved analysis revealed a significant positive firing \u00d7 RPE correlation in ACC N-type neurons (0.2-0.6s after reward, p<0.05) that was absent in LPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe reward-related responses. The basic reward responses (C47-C48) are shown in Figure 3A-B with appropriate statistics. The proportion of neurons with RPE correlations (C49) is quantified in Figure 3C-D. The key finding of time-resolved RPE correlations in ACC N-type neurons (C50) is shown in Figure 3E-F with randomization tests. The data support the area-specific functional specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Among all e-types, only the N3 e-type showed a spike-triggered MUA modulation ratio significantly different from zero (p<0.05, FDR-corrected), and this ratio differed significantly from B4 (p=0.02) and B5 (p=0.03) e-types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 refine the inhibitory characterization to the specific N3 e-type. The data are shown in Figure 4D with appropriate multiple comparison corrections (FDR). This finding is important as it identifies which specific narrow spiking subtype shows the clearest inhibitory signature, though the effect sizes and biological significance could be better contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The N3 e-type in LPFC was the only e-type showing significant correlation of firing rate with choice probability during the cue period (r=0.08, p=0.04, Tukey-Kramer corrected). N3 neurons significantly increased firing to the color cue regardless of timing, and a linear classifier could label N3 neurons based on p(choice) values with 31% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 identify the N3 e-type as specifically encoding choice probability in LPFC. The correlation analysis (C59) uses appropriate statistics (Kruskal-Wallis test, Tukey-Kramer correction), the firing responses (C60) are shown in Figure 5\u2014figure supplement 1, and the classifier accuracy (C61) is shown in Figure 5\u2014figure supplement 3A. The 31% accuracy is modest but significantly above chance for multiclass classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In ACC, the N3 e-type was the only narrow spiking subclass with significant firing rate correlation with reward prediction errors (RPE) (r=0.09, p=0.01, Tukey-Kramer corrected). The B4 class showed negative RPE correlations (r=-0.08, p=0.01). A linear classifier could label N3 neurons from RPE values with 34% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 identify the N3 e-type as specifically encoding RPE in ACC. The statistical tests are appropriate (Kruskal-Wallis, Tukey-Kramer correction), shown in Figure 5C-D. The classifier accuracy (C64) is shown in Figure 5\u2014figure supplement 3B. The finding that the same e-type (N3) shows area-specific functional specialization is a key result, though the correlation strengths are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Spike-triggered LFP analysis revealed that N3 e-type neurons showed oscillatory sidelobes in the 10-30 Hz range. Analysis of spike-LFP synchrony peaks showed high prevalence of 15-30 Hz beta synchrony in broad spiking neurons and 35-45 Hz gamma synchronization in narrow spiking cells (but not broad spiking cells) in both ACC and LPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe the oscillatory signatures of different neuron types. The spike-triggered LFP averages (C65) are shown in Figure 6A, and the synchrony peak distributions (C66-C67) are shown in Figure 6C. The methods for identifying significant synchrony peaks are detailed in Materials and Methods. This establishes the foundation for the subsequent task-related synchrony analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "In LPFC, N3 e-type neurons showed a sharp increase in 35-45 Hz gamma band synchrony after color cue presentation when choice probabilities were low (p<0.05, randomization test). When choice probabilities were high, N3 e-type neurons and broad spiking neurons showed significant increases in 20-35 Hz beta-band synchronization, with N3 neurons synchronizing significantly stronger to beta than broad spiking neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 describe the key finding of state-dependent oscillatory synchronization in LPFC. The time-frequency analysis is shown in Figure 7A-F with appropriate statistical tests (randomization test, multiple comparison corrected). The switch from gamma to beta synchronization as a function of choice probability is a novel and well-supported finding. Control analyses subtracting evoked LFPs (Figure 7\u2014figure supplement 4) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In ACC, N3 e-type neurons synchronized in a 35-42 Hz gamma band following reward onset when RPEs were high, while low RPE trials triggered increased spike-LFP synchronization at 6-14 Hz theta/alpha frequency. The N3 e-type showed significantly stronger gamma synchronization in high RPE trials compared to other e-types (p=0.04, Tukey-Kramer corrected). Results were unchanged when controlling for evoked potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 describe the key finding of state-dependent oscillatory synchronization in ACC. The time-frequency analysis is shown in Figure 8 with appropriate statistical tests. The switch from gamma to theta synchronization as a function of RPE parallels the LPFC findings but with different frequency bands. The control analysis (C74, Figure 7\u2014figure supplement 4) rules out confounds from evoked potentials. This is a major finding showing area-specific oscillatory signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Computational modeling shows that E-I networks can synchronize at beta or gamma frequencies depending on total drive. The model predicts gamma synchronization when stimuli have similar values (low p(choice)) and beta synchronization when one stimulus dominates (high p(choice)). Empirically, N3 e-type neurons in LPFC synchronized at gamma when p(choice) was low and at beta otherwise, while in ACC they synchronized at gamma when RPE was large and at theta otherwise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 link the empirical findings to computational models. C75 cites prior theoretical work on E-I network synchronization. C76-C77 describe model predictions that are detailed in Appendix 1 and Figure 9\u2014figure supplement 1. C78-C79 summarize the empirical findings that match the model predictions. The modeling provides a mechanistic framework for interpreting the data, though the authors appropriately note these are proof-of-concept models requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors propose that N3 e-type neurons are mostly PV+ cells based on their narrow spikes, regular firing, and gamma synchrony, which resemble PV+ cells in rodents. The N3 e-type was distinguished from other narrow spiking neurons by lower firing rate and intermediate-narrow action potential shape. The authors infer that N3 neurons would not be CR+ or CB+ cells as these do not overlap with PV+ expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C84 are speculative inferences about the molecular identity of N3 neurons. While the comparison to rodent PV+ cells (C80-C81) is reasonable given the electrophysiological similarities, direct molecular confirmation is lacking. The distinction from other narrow spiking types (C83) is data-supported, but the inference about CR+/CB+ expression (C84) relies on cited literature about expression patterns. Without direct immunohistochemical or genetic confirmation, the PV+ identity remains a well-reasoned hypothesis rather than a demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors speculate that N3 e-type neurons, if PV+, would impose gamma rhythmic inhibition on pyramidal cells near their soma for output gain control. They propose the circuit function in LPFC is gating competing excitatory inputs, while in ACC the N3 neurons activate when there is a mismatch between reward and chosen value, serving as a biomarker that predictions need updating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C88 are speculative interpretations of circuit function. While the proposed mechanisms are consistent with the data and supported by citations to relevant literature, they remain hypotheses. The authors appropriately use speculative language ('speculate,' 'may be'). The circuit models in Figure 9 and Appendix 1 provide theoretical support, but direct causal evidence (e.g., from optogenetic manipulation) is lacking. These are reasonable interpretations that require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The findings provide strong empirical evidence that narrow spiking interneurons are the main carriers of gamma rhythmic activity in nonhuman primate prefrontal cortex during cue and outcome processing. The gamma activity of N3 e-type neurons indexes a key function of LPFC and ACC, supporting recent causal evidence from rodent optogenetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are well-supported conclusions from the data. The spike-LFP synchrony analyses (Figures 6-8) clearly demonstrate that narrow spiking neurons, particularly the N3 e-type, show prominent gamma synchronization during task-relevant periods, while broad spiking neurons do not. The functional specificity (choice probability in LPFC, RPE in ACC) supports the interpretation that this gamma activity indexes key area-specific functions. The citation to rodent optogenetics (C90) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript reviews prior literature on interneuron dysfunction in psychiatric disorders and interneuron function in rodent prefrontal cortex. Fast spiking interneurons are abnormal in schizophrenia and linked to working memory/attention deficits. Non-fast spiking interneurons are linked to reduced GABAergic tone in depression. In rodents, different interneuron subtypes (PV+, SOM+, CCK+) fulfill separable roles at different processing stages during goal-directed tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 are literature review claims that establish context for the study. Each claim is supported by appropriate citations to prior work. These claims accurately represent the cited literature and establish the motivation for studying interneuron subtypes in primates. However, the accuracy of these claims depends on the cited sources being correctly represented, which cannot be fully verified without checking each reference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior studies in primates have shown that narrow spiking putative interneurons show stronger encoding of various cognitive variables compared to broad spiking neurons, including categorical information, stimulus onset responses, and reward prediction errors. Studies comparing protein expression with spike width show that >95% of PV+ and ~87% of SOM+ interneurons show narrow spikes, while ~20% of VIP interneurons also show narrow spikes. At least three different firing patterns exist in narrow spiking neurons during attention tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 review prior primate literature establishing that narrow spiking neurons are functionally distinct and that spike width is an imperfect marker of interneuron subtype. Each claim is supported by appropriate citations. These claims accurately characterize the state of knowledge and the challenges in identifying interneuron subtypes in primates, providing important context for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Prior pharmacological studies show that blocking inhibition with GABA antagonists abolishes spatial tuning during working memory tasks and reduces set shifting flexibility, while enhancing GABAa levels impairs working memory and set shifting. This evidence indicates that altered prefrontal cortex inhibition is linked to inability to adjust attentional strategies given unexpected outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 review prior pharmacological literature supporting the functional importance of inhibition in prefrontal cortex. The claims are supported by appropriate citations and the inference (C93) is reasonable given the cited evidence. This provides important context for interpreting the functional significance of the interneuron findings in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study's main findings are that subclasses of narrow spiking neurons have a suppressive effect on local circuits indicating they are inhibitory interneurons, and one interneuron subclass showed prominent firing rate modulations and 35-45 Hz gamma synchronous spiking during periods of uncertainty in both LPFC and ACC. In LPFC, this subclass activated when uncertainty of attention cues was resolved, while in ACC it fired when outcomes were uncertain and prediction errors were high. Computational modeling suggests this could reflect soft winner-take-all gating of uncertain information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 summarize the main findings of the manuscript. C3 is supported by the spike-triggered MUA analysis (Figure 1). C4-C6 are supported by the firing rate and synchrony analyses (Figures 2-3, 7-8). C7 is supported by the computational modeling (Figure 9, Appendix 1). These claims accurately represent the key empirical findings and their interpretation. The evidence is strong and the conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  }
+]

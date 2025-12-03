@@ -1,0 +1,1662 @@
+{
+  "submission": {
+    "id": "5aa8e85a-0080-46e8-aa20-6a9429da5423",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:53:51.441099Z",
+    "updated_at": "2025-12-03T08:53:51.441099Z"
+  },
+  "content": [
+    {
+      "id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "submission_id": "5aa8e85a-0080-46e8-aa20-6a9429da5423",
+      "content_type": "manuscript",
+      "content_text": "# Neural control of growth and size in the axolotl limb regenerate\n\n## Authors\n\n- Kaylee M Wells<sup>1</sup>\n- Kristina Kelley<sup>1</sup>\n- Mary Baumel<sup>1</sup> ([ORCID: 0000-0002-8551-4785](https://orcid.org/0000-0002-8551-4785))\n- Warren A Vieira<sup>1</sup>\n- Catherine D McCusker<sup>1</sup> ([ORCID: 0000-0003-0127-433X](https://orcid.org/0000-0003-0127-433X)) \u2020\n\n### Affiliations\n\n1. Biology Department, University of Massachusetts, Boston Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mechanisms that regulate growth and size of the regenerating limb in tetrapods such as the Mexican axolotl are unknown. Upon the completion of the developmental stages of regeneration, when the regenerative organ known as the blastema completes patterning and differentiation, the limb regenerate is proportionally small in size. It then undergoes a phase of regeneration that we have called the \u2018tiny-limb\u2019 stage, which is defined by rapid growth until the regenerate reaches the proportionally appropriate size. In the current study we have characterized this growth and have found that signaling from the limb nerves is required for its maintenance. Using the regenerative assay known as the accessory limb model (ALM), we have found that growth and size of the limb positively correlates with nerve abundance. We have additionally developed a new regenerative assay called the neural modified-ALM (NM-ALM), which decouples the source of the nerves from the regenerating host environment. Using the NM-ALM we discovered that non-neural extrinsic factors from differently sized host animals do not play a prominent role in determining the size of the regenerating limb. We have also discovered that the regulation of limb size is not autonomously regulated by the limb nerves. Together, these observations show that the limb nerves provide essential cues to regulate ontogenetic allometric growth and the final size of the regenerating limb.\n\n## Introduction\n\nIt is estimated that over 2.1 million Americans are living with limb loss or limb difference, which has profound effects on the function, health, and quality of life in these patients (Ziegler-Graham et al., 2008). The long-term goal of regenerative medicine is to replace or repair damaged limbs by inducing endogenous regenerative responses in humans. Studies in tetrapods capable of regenerating complete and functional limb structures, such as the Mexican axolotl (Ambystoma mexicanum), have been invaluable in terms of understanding the basic underlying biology of limb regeneration and the mechanisms that control this process (McCusker et al., 2015). Much research in the axolotl system has focused on the essential aspects of the initial stages of regeneration; how the regeneration permissive environment is established, how mature limb cells become regeneration competent, and how the unique pattern of the regenerated limb structures is generated. However, to date, very little is known about the later stages of regeneration that are required for the regenerating structure to mature into a fully functional limb.\n\nOne key occurrence at the later stages of limb regeneration is the growth of the limb regenerate to the size that is proportionally appropriate to the rest of the animal. When the limb is amputated, a transient regenerative organ known as the blastema develops at the site of injury and contains limb progenitor cells that will grow and eventually pattern and differentiate into the missing limb structure. After these developmental (blastema) stages of regeneration, the limb is small in size relative to the animal\u2019s body and undergoes a period of rapid ontogenetic allometric growth until the size of the regenerate is proportional to the rest of the animal. Ontogenetic allometric growth refers to the rate of growth of a structure (i.e. the limbs) relative to the rest of the animal. Little is known about how this growth is regulated to impact the overall scaling of the regenerated limb. Moreover, axolotl are an indeterminately growing species, and continue to grow in size throughout their life cycle. Thus, the size of the limb at the time of amputation is different from that once the limb has completed regeneration (Riquelme\u2010Guzm\u00e1n et al., 2021). This simple observation indicates that rather than having a \u2018set-point\u2019 of size, growth must be dynamically regulated throughout the process of limb regeneration in the axolotl.\n\nMost of what is known about the factors that impact tetrapod limb size has been discovered by mutant analyses on determinately growing species, such as humans, mice, and chicken, which cease growing after they reach adulthood due to the closure of the epiphyseal growth plates. These studies reveal that mutations to genes that play roles in patterning, long bone growth, or overall cell physiology in the developing limb tissues can have large impacts on the final size of the limb. For example, the developing bat forelimb bud has increased expression of HoxD transcription factors compared to hindlimb bud and is required for the extreme positive allometric growth that occurs in this tissue as it grows into a wing (Booker et al., 2016). At the later stages of tetrapod limb formation, allometric growth is primarily driven through the elongation of the long bones through the regulation of growth plate activity. As a result, alterations in expression of genes that impact paracrine signals which regulate the growth plates, such as fibroblast growth factor (FGF), bone morphogenetic protein (BMP), and Indian hedgehog (IHH), can all positively and negatively regulate the final size of the limb (Iwata et al., 2001; Iwata et al., 2000; Lee et al., 2017; Segev et al., 2000; Eswarakumar and Schlessinger, 2007; Toydemir et al., 2006; Tseng et al., 2010; Wen et al., 2016; Duprez et al., 1996; Aizawa et al., 2012; Barna et al., 2000; Bhattacharyya et al., 2015; Evers et al., 1996; Karst et al., 1986; Kl\u00fcppel et al., 2005; Lallemand et al., 2005; Zhang et al., 2020; Caparr\u00f3s-Mart\u00edn et al., 2013; Joeng and Long, 2009; Kim et al., 2017; Long et al., 2001; Mo et al., 1997; Razzaque et al., 2005; Ruiz-Perez et al., 2007; Sohaskey et al., 2008; St-Jacques et al., 1999; Yoshida et al., 2015; Zhang et al., 2015; Bren-Mattison et al., 2011; Minina et al., 2002). Thus, ontogenetic allometric growth in the developing limb bud can be impacted by intrinsic or extrinsic factors at both the developmental and maturation stages of limb formation.\n\nGiven the similarities between the developing limb bud and the regenerating limb blastema, these mechanisms are likely to hold true during limb regeneration. Supporting this notion, studies using pharmacological inhibitors for FGF, BMP, or TGF\u03b2 signaling on the developing axolotl limb blastema all result in smaller limbs compared to controls by negatively impacting patterning, differentiation, or overall blastema physiology (L\u00e9vesque et al., 2007; Purushothaman et al., 2019; Vincent et al., 2020). Conversely, treatment of the axolotl blastemas with exogenous retinoic acid (RA), which negatively regulates HoxA13 (a marker of distal limb) (Gardiner et al., 1995) during blastema patterning, results in the elongation of skeletal elements in the regenerated limb (Maden, 1983; Niazi et al., 1985). However, how these and other signals that regulate limb growth are so tightly coordinated during regeneration such that the size of the completed limb is proportional to the animal is not known. Identifying the source of this coordination is the focus of the current study.\n\nMultiple pieces of evidence point to the possible involvement of neural signaling in the regulation of allometric growth in limbs. In amphibians, neural signaling is an essential component of the developmental stages of limb regeneration in both the induction and maintenance of the blastema (Singer, 1978). Nerve signaling is essential for proliferation in the blastema, and loss of innervation at early stages of regeneration results in complete regenerative failure (Singer, 1978). Multiple protein-based nerve-dependent factors have been identified to play key roles in the maintenance of the limb blastema including anterior gradient (AG), BMPs, FGFs, and neuregulin-1 (Kumar et al., 2007; Makanae et al., 2014; Farkas et al., 2016). At the late-bud blastema stage, when the pattern of the regenerated limb has been established, the loss of nerve signaling results in the formation of complete, yet miniaturized, limb regenerates (Mullen et al., 1996). Last, permanently miniaturized limbs, generated by the repeated removal of the limb bud, have a significant decrease in the abundance of innervation (Bryant et al., 2017). Thus, the loss of neural signaling during the developmental stages of limb formation in the axolotl correlates with negative ontogenetic allometric growth and smaller limb size.\n\nNerve abundance, or altered nerve signaling, also correlates with growth and limb size in humans. Damage to the limb nerves during the birth of a human infant results in impaired limb growth and size, which can be alleviated by surgical repair of the nerves (Bain et al., 2012). Additionally, the presence of neurofibromas or hamartomas in human arms or hands, which increases the abundance of neural signals, results in the formation of proportionally large digits (Frykman and Wood, 1978; Razzaghi and Anastakis, 2005; Tsuge and Ikuta, 1973). These observations support the idea that neural signaling plays a role in the regulation of growth in the tetrapod limbs. In the current study, we directly test this possibility in the regenerating axolotl limb.\n\nHere, we characterize the growth in the regenerating limb and reveal that its growth is biphasic. By removing nerve signaling from regenerating limbs at different stages, we show that neural signaling is required for multiple cellular behaviors that contribute to growth, and that this requirement changes during the different phases of growth. Using the accessory limb model (ALM) assay, our data shows that nerve abundance positively correlates with the rate of growth and the ultimate size of the limb regenerates. To evaluate the potential role of non-neural signals in the regulation of growth, we have developed a new assay that we call the NM-ALM, which decouples the nerve source from the host animal. Using this assay, we found that non-neural extrinsic factors do not play a direct instructive role in the regulation of scaling in the regenerating limb tissue. We have additionally used the NM-ALM to evaluate whether neurons work autonomously to regulate growth in the regenerate and have discovered that they require a connection with their native environment to coordinate this process. These observations will be foundational to future work on the identification of the molecular mechanisms that regulate ontogenetic allomeric growth of the regenerating axolotl limb.\n\n## Results\n\n### The axolotl limb undergoes at least three stages of growth during regeneration\n\nBecause there was so little known about how allometric growth occurs in the regenerating limb, we started by characterizing the growth of the regenerate until it had completed regeneration. We measured limb and body length to calculate both limb \u2018proportionality\u2019 (ratio of limb length to body length) (Figure 1\u2014figure supplement 1) and the growth rate in 10 cm sized animals over a period of 140 days, which is when the regenerated limb was no longer significantly different in size relative to the uninjured limbs on the same sized animal, and the growth rate of these limbs was also equivalent. Because axolotls are indeterminate growers, both their limb and body lengths continue to increase in size during the course of regeneration, thus the ratio of limb length to body length was used to normalize for the changes in animal size as time proceeded.\n\nWe observed that the regenerating limb underwent at least three phases of growth before it reached the size of the unamputated limb, which occur during the blastema and the post-developmental stage of regeneration (Figure 1A and B). The growth during the blastema stage starts immediately following amputation all the way through the digit stage of blastema development. Previous studies have shown that the expression of growth factors and signaling molecules associated with blastema development are lost by the digit staged regenerate, thus indicating the end of the blastema stage, and initiation of post-developmental regenerative processes (day 38) (Gerber et al., 2018; Nacu et al., 2016; Satoh et al., 2008). The digit staged regenerate is significantly smaller than the unamputated limb on size-matched animals (Figure 1A and B). This small regenerate undergoes rapid ontogenetic allometric growth until it has reached the proportionally appropriate size, at which point the regenerate grows isometrically with the rest of the animal. We have named this post-blastema staged regenerate the \u2018tiny limb\u2019. We observed that the allometric growth is biphasic in the tiny limb. The initial phase of growth is rapid, similar to the speed of growth during the blastema stage at 0.04 cm/day (Figure 1B and Figure S2A). Approximately 4 weeks later (in 10 cm sized animals), the rate of growth of the tiny limb slows significantly to 0.02 cm/day over the following 9 weeks and gradually decreases over time, until both the size and the growth rate of the regenerated limb are not significantly different than the unamputated limb on size-matched animals (Figure 1B and Figure 1\u2014figure supplement 2A). Based on this difference in the rate of allometric growth, we have separated the tiny limb stage of development into two phases of growth: the early tiny limb (ETL) stage and the late tiny limb (LTL) stage.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig1-v2.jpg)\n\n**Figure 1.:** (A) Time course of growth in amputated (top panel) and the contralateral non-amputated (lower panel) limbs on a 10 cm animal over 146 days. (B) The ratio of limb to body length in regenerating and unamputated limbs was measured over time (10 cm animals; n = 10). We have separated the growth of the limb regenerate into three stages: the blastema stage (dark gray), the early tiny limb stage (medium gray), and the late tiny limb stage (light gray). Error bars = standard deviation. t-Test was used to evaluate significance between the regenerating and uninjured limb size at each time point. All data points not marked with N.S. had p-values less than 0.005. (C) Histogram showing the average amount of time in days that the regenerating limb is in each growth stage for animals of different sizes (4, 10, and 20 cm in length).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Body length is measured from snout to tail tip. Limb length is measured by measuring from the limb/trunk junction to the elbow (A) and then from the elbow to the tip of the longest digit (B). All measurements are recorded in centimeter (cm).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Limb growth rates over the first 7 days of each growth phase were quantified using limb length measurements on unamputated limbs, early tiny limbs, late tiny limbs, and fully regenerated limbs of 4 cm (n = 20), 10 cm (n = 10), and 20 cm animals (n = 10). The body length represents their size at the time of amputation. Error bars = SEM. p-Values calculated by ANOVA and the Tukey post hoc test. * = p < 0.05 ** = p < 0.005. (B) Body length measurements of 4 cm (n = 20), 10 cm (n = 10), and 20 cm animals (n = 10) over time. Error bars = standard deviation. The body length represents their size at the time of amputation.\n\nBoth the growth rate and the amount of time spent in each of the three stages (blastema, ETL, and LTL) are dependent on the size of the animal at the time of limb amputation. Comparison between 4, 10, and 20 cm animals (snout to tail tip) showed that as body length increases, the growth rate decreases (Figure 1\u2014figure supplement 2), and the amount of time spent in the ETL and LTL phase increases (Figure 1C). In fact, when comparing animals twofold different in size, the amount of time in the ETL phase increases by 30\u201340% (Figure 1C) and growth rate falls by 30\u201340% (Figure 1\u2014figure supplement 2). This difference in growth rate (measured in terms of regenerate elongation) may be due to the difference in the amount of tissue that needs to be regenerated, since larger animals have more tissue to regenerate than the smaller animals. Additionally, smaller animals grow more rapidly than larger animals, which also might contribute to these differences (Figure 1\u2014figure supplement 2B).\n\n### Growth of the tiny limb is mediated by increased cell number and cell size\n\nWe next wanted to determine what cellular mechanisms were contributing to growth in the tiny limb. Multiple processes can contribute to tissue growth including increased cell number via regulation of cell proliferation and cell death, increased cell size, and increased extracellular matrix (ECM) deposition (Conlon and Raff, 1999; Leevers et al., 1996; Penzo-M\u00e9ndez and Stanger, 2015; Stanger, 2008; Stocker and Hafen, 2000). Thus, we quantified each of these processes during the different growth phases of regeneration, relative to uninjured limbs, to determine which could be contributing to growth of the tiny limb. Additionally, we speculated that the contribution of these cell processes could vary in the different tissue types in the regenerating limb. Rather than quantifying the above-described processes globally, we analyzed the epidermis, soft tissue (including all tissues except for skeleton and epidermis), and skeletal tissue (bone and cartilage) separately.\n\nRegenerating limbs at the different stages of growth were sectioned transversely mid-zeugopod, and cell proliferation and cell death were each analyzed by either EdU incorporation or TUNEL staining, respectively. We observed significantly more cell proliferation and significantly less cell death in all tissues analyzed in the ETL and LTL staged regenerates compared to the unamputated and fully regenerated limbs (Figure 2A and B). Interestingly, the fold increase or decrease in cell proliferation or death, respectively, differed depending on the tissue type. The largest increase in cell proliferation was observed in the epidermis (3.7-fold increase, Figure 2A), while soft tissue and skeletal tissue had slightly more modest increases (3.2- and 2.4-fold increases respectively, Figure 2A). The largest decrease in cell death was seen in the skeletal tissue (20.8-fold decrease, Figure 2B), while the soft tissues and epidermis exhibited more moderate decreases of 3.0- and 3.3-fold, respectively (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig2-v2.jpg)\n\n**Figure 2.:** Transverse sections through the zeugopod of limbs at different stages of regeneration were analyzed for cell proliferation (A), cell death (B), cell size (C), and extracellular matrix (ECM) size (D). (A and B) Cell proliferation and death were analyzed in the epidermis, soft tissue, and skeletal elements. (A) Cell proliferation was analyzed by EdU labeling (n = 5). (B) Cell death was analyzed using TUNEL labeling (n = 4). (C and D) Cell and ECM size measurements were quantified in the epidermis, muscle, and skeletal elements. (C) Cell size was quantified using fluorescently tagged wheat germ agglutinin (plasma membrane) for epidermal and muscular analysis and Alcian blue staining (collagen) for skeletal analysis (n = 4). (D) ECM area was calculated by [(tissue area \u2013 cellular area)/tissue area] (n = 4). Error bars = SEM. p-Values calculated by ANOVA and the Tukey post hoc test. * = p < 0.05 ** = p < 0.005.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cell size and ECM area were quantified using 7 \u03bcm cross sections through the zeugopod. Skeletal tissue was analyzed using the histology stain of hematoxylin, eosin, and Alcian blue. The epidermis and muscle (represented) were analyzed using fluorescent stains of wheat germ agglutinin (WGA \u2013 magenta) and DAPI (blue). (A) Average cell size was quantified by measuring the area of nucleated cells. (B) Normalized ECM area was quantified by finding the sum of all the cellular area in a tissue. The sum was then subtracted from the total tissue area (red arrow indicating tissue boarder) and divided by the total tissue area to provide the normalized ECM area.\n\nCell size and ECM area were analyzed using a combination of fluorescent and histological stains on sectioned limbs. Wheat germ agglutinin (WGA) was used to label the plasma membrane of the epidermal and muscle cells, and Alcian blue stained the ECM of the skeletal tissue (Figure 2\u2014figure supplement 1) (more detail in Materials and methods). To standardize our quantification of the average cell size, we measured only the area of cells where the nucleus was observable (Figure 2\u2014figure supplement 1A). We observed that cell size was significantly smaller in the regenerating tissue than the uninjured tissue and increased as regeneration progressed (Figure 2C). This was most profound in the muscle (4.5-fold smaller) and least in the epidermis (1.4-fold smaller, Figure 2C). The ECM area was calculated indirectly by subtracting the total cellular area from the tissue area and dividing by the tissue area (Figure 2\u2014figure supplement 1B) (more detail in Materials and methods). However, we did not observe any significant differences in the extracellular compartment of limbs, indicating that ECM deposition does not play a significant role in growth of the tiny limb (Figure 2D).\n\nWe also observed stage-specific differences in the above-described growth characteristics. In almost all tissues, the largest differences were observed between the ETL stage and the unamputated limb, while the differences between the LTL and the unamputated limb were more modest. Apart from cell size in the muscle tissue, there were no significant differences in the growth characteristics when the unamputated and fully regenerated limb were compared.\n\nTogether, this data indicates that a combination of increased cell proliferation, decreased cell death, and increased cell size contributes to the allometric growth of the tiny limb staged regenerate. While all tissue types showed the same trends in all the cell processes that we analyzed, our data suggests that different cell processes contribute more or less to growth in different tissue types. Future studies will be required to resolve these tissue-specific contributions to growth in more detail. Last, the tissue-specific contributions to growth also depend on the stage of growth of the regenerate and correlate with the overall growth rate of the regenerate at these stages.\n\n### Growth of the tiny limb is dependent on limb nerves\n\nOne interesting observation from the above-described characterization is that the abundance of cell proliferation, cell death, and cell size all show similar trends regardless of the tissue type assessed during each stage of growth in the regenerate. This suggests that there could be a singular signal that coordinates these processes such that the highest growth-promoting signal is occurring during the ETL stage when growth is most abundant and decreases as the growth rate slows during the LTL stage. Thus, we next sought to determine the source of the signal that regulates cell proliferation, death, and size during regeneration.\n\nPrevious studies indicate that nerve signaling is required for growth in developing and regenerating limbs. The role and mechanism of neurotropic regulation during the early (blastema) stages of regeneration has been widely studied (Farkas et al., 2016; Farkas and Monaghan, 2017; Kumar et al., 2010; Makanae et al., 2014; Singer, 1978; Singer, 1952; Singer, 1946; Singer and Inoue, 1964). It has been well established that nerve signaling is required for, and is a key driver of, blastemal cell proliferation (Brockes, 1984; Brockes and Kintner, 1986; Lehrberg and Gardiner, 2015). Furthermore, generation of permanently miniaturized limbs through repeated removal of limb buds results in \u2018mini limbs\u2019 that are hypo-innervated compared to controls (Bryant et al., 2017). We therefore hypothesized that nerves could play a role in driving growth during the tiny limb stages of regeneration.\n\nTo test this idea, we first characterized the abundance of nerves during these post-developmental stages of regeneration. We collected ETL and LTL staged regenerates, as well as unamputated and fully regenerated limbs for comparison, and sectioned them transversally through the zeugopod. The sections were stained with an anti-acetylated tubulin antibody (Figure 3A), and we measured the abundance of innervation relative to the limb area (Figure 3B). This quantification revealed significantly higher levels of relative innervation during the ETL and LTL stages compared to unamputated and fully regenerated limbs (Figure 3B). Interestingly, the absolute abundance (not normalized to tissue area) of innervation is lowest at the ETL stage and increases during the later stages of regeneration . Thus, the decrease in relative innervation during the transition from the ETL to LTL stages is likely due to the substantial increase in limb area of the later staged regenerate. The relative abundance of innervation also correlates well with the growth rate in these tissues. We speculated that nerves could provide growth-promoting signals during regeneration, which decreases (or is diluted) as the limb grows in size and the relative abundance of innervation decreases, slowing the growth of the regenerate as it reaches its final size.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig3-v2.jpg)\n\n**Figure 3.:** (A) Fluorescent images were obtained of transverse sections of uninjured, early, and late tiny limb stages, and fully regenerated limbs (DAPI = blue, phalloidin (for actin filaments) = red, acetylated tubulin (for nerves) = green; scale bars are 1000 \u00b5m). (B) Nerve area relative to total limb area was quantified from the sections represented in A (n = 5). Error bars = SEM. p-Values calculated by ANOVA and the Tukey post hoc test. * = p < 0.05 ** = p < 0.005.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Total nerve area was quantified from transvers limb sections of unamputated limbs, early tiny limbs, late tiny limbs, and fully regenerated limbs (n = 5). Error bars = SEM. p-Values calculated by ANOVA and the Tukey post hoc test. * = p < 0.05 ** = p < 0.005.\n\nTo determine whether nerve signaling plays a functional role regulating ontogenetic allometric growth, we next tested whether nerve signaling is required to maintain growth in the tiny limb staged regenerate. Limbs were amputated and permitted to regenerate to the ETL stage, at which point nerve signaling was severed via denervation at the brachial plexus (Figure 4A). To test for a possible dose-response or signaling threshold effect, we severed either one, two, or all three of the nerve bundles at the plexus. Mock denervation surgeries were performed as controls. The limbs were measured prior to denervation and 4 days post denervation, when they were collected for analysis. The growth rate, abundance of cell proliferation, abundance of cell death, and cell size were all analyzed (Figure 4B\u2013E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig4-v2.jpg)\n\n**Figure 4.:** (A) Dorsal root ganglia (DRGs) 3, 4, and 5 (green dots) are located lateral to the spinal column and their nerve bundles (green lines) feed into the forelimbs. Limbs were amputated and permitted to regenerate to the early tiny limb stage, at which point, either a mock, partial (1/3 = DRG 5 or 2/3 = DRGs 4 and 5), or full denervation (represented) was performed by severing (blue line) and removing sections of the nerve bundles. Limbs were collected 4 days post denervation, and growth rate (B), cell proliferation (C), cell death (D), and cell size (E) were analyzed for limbs with mock denervations (n = 6), 1/3 denervations (n = 5), 2/3 denervations (n = 5), and full denervations (n = 6). The color of the bars in panels C\u2013E refers to the color of the bars in panel B. Error bars = SEM. p-Values calculated by ANOVA and the Tukey post hoc test. * = p < 0.05 ** = p < 0.005.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Amputated limbs were permitted to regenerate to the late tiny limb stage, at which point they underwent either a mock denervation (dark gray, n = 5) or a full denervation (white, n = 5). The limbs were collected and analyzed 4 days post denervation for growth rate (A), cell proliferation (B), cell death (C), and cell size (D) as previously described. Error bars = SEM. p-Values calculated by paired t-test. ** = p < 0.005 *** = p < 0.0005.\n\nWe observed that nerve signaling is required for growth of the tiny limb. Fully denervated ETLs had a 9-fold slower growth rate than ETLs with the nerve intact (Figure 4B). Likewise, cell proliferation was negatively impacted by denervation in all tissue types analyzed (1.7-, 4.9-, and 4.8-fold decreases in the epidermis, soft tissue, and skeleton, respectively; Figure 4C). Cell death levels in all tissues were significantly increased following full denervation (21.6-, 1.6-, and 25.7-fold increases in epidermis, soft tissue, and skeleton, respectively; Figure 4D). Lastly, cell size appears to only be significantly affected in the muscle, where there is a near 2-fold decrease in average cell size in the denervated ETLs (Figure 4E). It is possible that this change in muscle could be due to atrophy as a result of decreased muscle activity in the denervated limb. When LTLs were fully denervated, only the growth rate and abundance of cell proliferation were significantly decreased (Figure 4\u2014figure supplement 1). Thus, the impact of neural signaling is different depending on whether the regenerating limb is in the early or late phase of growth.\n\nThe partial denervations revealed either a dose-response or threshold response depending on the tissue and growth characteristic quantified. A dose response is reflected by a linear relationship between abundance of signal and the phenotype. A threshold response indicates a specific abundance of a factor is required for a phenotype, for example, a specific amount of nerves per limb volume is required for growth. We observed that cell proliferation in the soft tissue and skeleton decreased significantly, to full denervation levels, with partial denervations indicating that there is a high threshold of nerve abundance required for maintaining cell proliferation in these tissues (Figure 4C). Conversely, cell death in the epidermis had a strong dose response, with significant incremental increases with increased denervation (Figure 4D). These results indicate that each tissue responds differently to nerve abundance to maintain growth. This differential contribution of the different limb tissues could also explain why the overall growth rate of the regenerate is significantly impacted only when a full denervation is performed (Figure 4B).\n\n### Nerve abundance correlates with growth rate and overall size of the regenerated limb\n\nHaving established that nerves are required for growth during the late stages of limb regeneration, we next wanted to determine whether we could positively and negatively manipulate the size of the regenerate by altering the abundance of nerves the regenerating tissue is exposed to. To test this, we performed a grafting experiment between differently sized axolotl (Figure 5A). The size of the nerve bundles originating from the spinal column increases as the animal grows, and quantification of the cross-sectional area of these bundles stained immunofluorescently in situ reveals that the size is almost 2-fold larger in 14 cm long animals compared to 7 cm animals (Figure 5\u2014figure supplement 1). Thus, blastema grafts onto the limbs of large hosts will be exposed to larger nerve bundles than grafts on small host animals.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig5-v2.jpg)\n\n**Figure 5.:** (A) Blastemas with approximately 2 mm of stump tissue from large and small GFP+ donor animals were grafted onto a regenerative permissive environment, a wound site with a deviated limb nerve bundle, on large or small host animals. (B) Limb length and body length were measured on the GFP+ donor animals. (C) The regenerating grafted tissues were measured at 0 and 130 days post graft (DPG). Blastemas from large donors (dark gray) were grafted onto large (n = 7) and small (n = 9) host animals, and blastemas from small donors (light gray) were grafted onto large (n = 9) and small (n = 10) host animals. (D) The regenerating large (n = 10) and small (n = 20) animal donor limbs were measured at 15- and 145 days post amputation. Error bars = SEM. p-Values calculated by ANOVA and the Tukey post hoc test. * = p < 0.05 ** = p < 0.005.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Three spinal dorsal root ganglia (DRGs) (3, 4, and 5, light green) extend through the spinal skeletal muscle (red) and enter the limb. The right panel shows that the sectioning plane for B and C is located at the point where the limb-bound axon bundles emerge from the skeletal muscle. (B\u2013C) Representative immunofluorescent images of sections where the limb axon bundles (anti-acetylated tubulin antibodies \u2013 green) are emerging from the skeletal muscle (rhodamine phalloidin \u2013 red) and co-stained with DAPI (blue) in both small (n = 4, B) and large (n = 3, C) animals. Scale bars = 500 \u03bcm. White triangles indicate limb-bound axon bundles from DRGs 3, 4, and 5 (from left to right). (D) Body length, snout to tail tip was measured on small (n = 4) and large (n = 3) animals, and the average length is represented in the graph. (E) The cross-sectional area of the nerve bundles was quantified in millimeters squared, and the averages of the sum of the three axon bundles are represented in E. The large animals (n = 3) have a significantly larger cross-sectional area than the small animals (n = 4). Error bars = SEM. p-Values calculated by t-tests. * = p < 0.05 *** = p < 0.0005.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) The ectopic limbs on the large and small host animals, generated from large and small blastema donor animals via traditional ALM surgery, were measured over time from 0 to 130 days post grafting. (B) The ectopic limbs on the large and small host animals, generated from large and small dorsal root ganglia (DRG) donor animals via NM-ALM surgery, were measured over time from 0 to 135 days post grafting. Error bars = SEM. p-Values calculated by ANOVA and the Tukey post hoc test. ** = p < 0.005. Statistical comparisons were made between the limbs on the differently sized host animals.\n\nTo generate large and small animals we housed age-matched GFP+ (donors) and GFP- (hosts) axolotl at either 19\u00b0C or 4\u00b0C. Housing half the animals at 4\u00b0C stunted their growth while the 19\u00b0C animals grew at a faster rate. After approximately 2 months, the 19\u00b0C animals were 2-fold larger in body length and limb length than the 4\u00b0C animals (Figure 5B). After the large and small siblings were both incubated at 19\u00b0C for 14 days, both forelimbs on small (~6 cm) and large (~12 cm) GFP+ axolotl were amputated and permitted to regenerate to the mid-bud blastema stage (Figure 5A and B). The blastemas and approximately 2 mm of stump tissue were grafted onto regenerative permissive environments on small (~6 cm) and large (~12 cm) GFP-host animals (Figure 5A). It has previously been found that cells from approximately 500 \u03bcm of stump tissue migrate and contribute to the regenerate (Currie et al., 2016). Therefore, stump tissue was included with the blastemas to prevent the contribution of cells from the host environment to the regenerate.\n\nA regeneration permissive environment on the large animal hosts was generated by deviating the branchial nerve bundle to an anterior located wound site on the limb, using the standard accessory limb model (ALM) surgery (Figure 5A; Endo et al., 2004; McCusker and Gardiner, 2013). Because the limb circumference of the small host animals was too small to receive the grafted blastema tissue from the large donors, we deviated the branchial nerve to a wound site on the flank of the host, where a larger skin wound could be made to fit the larger graft size (Figure 5A). The length of the ectopic limbs was measured bi- or tri-weekly. They were considered fully regenerated when the rate of growth of the ectopic limb was no longer significantly different from the uninjured limbs on the host animals. The donor animal limbs that were amputated to harvest the blastema grafts were also continually measured during regeneration as an additional control to measure the final sizes of the regenerated limbs if left on their native environment.\n\nWe hypothesized that if nerve abundance can regulate size of the limb regenerate, we would observe that the lengths of the grafted regenerates will correspond to the size of the host environment rather than the donor. Thus, blastemas from the small donors will produce large ectopic limbs when grafted to large hosts, and blastemas from large donors will produce small ectopic limbs when grafted to small hosts. Alternately, if nerve abundance does not influence regenerate size, then we would expect to see the blastemas from small donors on large hosts produce ectopic limbs smaller than the control grafts from large animals, and vice versa.\n\nWe observed that ALM environments with different nerve abundances altered both the growth rate and overall size of the regenerated limb structure. The blastemas (15 days post amputation) from small donors were initially 2-fold smaller than those from large donors when they were grafted onto the small and large hosts (Figure 5C, left panels, 0 day post graft [DPG]). Interestingly, we observed that the grafted tissues were the same size by 18 DPG within each host type and remained that way until regeneration was completed (Figure 5\u2014figure supplement 2A). In comparison, the regenerated limbs that remained on the donor animals remained significantly different in size (Figure 5D). Although there was no significant difference in the size of regenerates that formed within an individual host type regardless of the origin of the blastema, we did observe significant differences when we compared regenerate sizes between the large and small hosts. By approximately 38 DPG, there was a significant difference in size between the ectopic limbs on the large and small host animals, and this continued until 130 DPG, when the growth rate of the grafted limbs matched that of the host limbs (Figure 5C, right panels; Figure 5\u2014figure supplement 2A). This difference in size was due to a more rapid increase in the growth rate of the blastemas grafted to the large host animals (Figure 5\u2014figure supplement 2). We hypothesize that the host environment on the large animals reaches a critical threshold of nerves to support growth at an earlier time and/or accumulates more nerve-dependent factors that promote growth in the regenerating tissues.\n\nTogether these data indicate that the growth rate and sizing of the limb regenerate positively correlates with nerve abundance in the host environment. However, it does not rule out other potential influences from the host environments that may also contribute to growth. Thus, we next designed an assay that decouples nerve abundance from the size of the host to test whether non-neural signals contribute to the sizing of the limb regenerate.\n\n### Non-neural extrinsic signals in different sized hosts do not impact growth rate or size of the regenerated Limb\n\nTo evaluate the potential role of non-neural sources of growth regulation that may be present in the differently sized host animals, we developed a new regenerative assay called the NM-ALM that decouples the source of the nerves from the host environment (Figure 6B). In the NM-ALM, the forelimb-specific dorsal root ganglia (DRGs) from GFP+ donor animals are harvested and grafted into lateral limb wounds on host animals (one DRG per wound). The GFP+ DRGs are grafted below the mature skin next to the wound site, and the axon bundles are pulled into the middle of the wound site in a similar manner as the traditional ALM surgery. Mid-bud blastema staged regenerates from age-matched donors are then grafted onto the wound site (Figure 6B). We measured the length of the ectopic limbs in the NM-ALM weekly or bi-weekly, and their growth rates (cm/day) were compared to the unamputated limbs on the donors. The grafted limbs were considered to have completed limb regeneration when their growth rates were not significantly different from the growth rates of the unamputated limbs on the control animals. We observed that the implanted DRG supported the continued development of the blastema into a completely patterned and differentiated limb (Figure 6B\u2019). Thus, the implanted DRGs are able to provide the appropriate signals to support the regenerative process.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig6-v2.jpg)\n\n**Figure 6.:** (A) The traditional ALM (as used in Figure 5) requires a blastema donor and a host animal with a nerve bundle deviated to the wound site. (B) The NM-ALM requires a GFP+ dorsal root ganglia (DRG) donor, blastema donor, and host limb with a wound site. (B\u2019) The DRG\u2019s GFP+ axons regenerate and innervate the ectopic limb.\n\nTo test whether non-neural extrinsic signals from the host environment provide cues that regulate the growth of the regenerating limb, we performed the NM-ALM on differently sized host animals (Figure 7A). If non-neural extrinsic signals play a role in regulating allometric growth of the regenerate, then we expected to observe that the regenerates that grew in the NM-ALMs on the large (14 cm) hosts would be larger in size than the ones that grew on the small (7 cm) hosts (Figure 7B). Alternately, if the limb nerves play the central regulatory role, we would not expect to see differences in the size of the regenerates on the different sized hosts. After 135 DPG, we observed that there continued to be no significant difference in growth rates and the length of the grafted regenerates on the different sized host animals (Figure 5\u2014figure supplement 2B and Figure 7C). This trend was observed in NM-ALMs that were performed with DRGs that were harvested from both large and small animals (Figure 5\u2014figure supplement 2B). In contrast, the control uninjured limbs on the small and large animals remained significantly different in size (Figure 7D). Because the size of the limb regenerate was not impacted by the host environment when the abundance of nerves was held constant, we conclude that non-neural extrinsic factors do not play a direct role in regulating allometric growth of the regenerating limb structure.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig7-v2.jpg)\n\n**Figure 7.:** (A) Dorsal root ganglia (DRGs) from GFP+ donor animals (~14 cm) were grafted into wound sites on large (~14 cm, n = 12) and small (~7 cm, n = 19) host animals followed by mid-bud blastemas from (~7 cm) donor animals. (B) If non-neural extrinsic factors play an instructive role in size regulation, then the large host animals would produce a larger ectopic limb than those on the small host animal. If non-neural factors do not play an instructive role, then the ectopic limbs will be the same size, regardless of host size. (C) The ectopic limb lengths were the same size at 0 day post graft (DPG) and remained the same throughout regeneration (135 DPG). (D) The unamputated limbs on the control animals remained different sizes throughout the course of the experiment (n = 10). Error bars = SEM. p-Values calculated by t-tests. *** = p < 0.0005.\n\n### Regulation of ontogenetic allometric growth is not autonomous to limb nerves\n\nTo test whether growth of the regenerate is autonomously regulated by the nerves, we leveraged our newly developed NM-ALM using DRGs that were harvested from different sized GFP+ donors (14 cm versus 7 cm) (Figure 8A). Our expectation was that if neural regulation occurs autonomously (at the DRG level), then the growth rate and overall size of the regenerated limb that grew on the DRG from the large donor would be larger than that which grew on the one from the small donor (Figure 8B). Conversely, if the DRGs require a connection with their native environment to regulate regenerate size, then we expected to see no difference in the regenerate growth rate and size regardless of the donor source of the DRG (large or small) (Figure 8B). Because we had previously observed a dose response in limb growth in partially denervated regenerating limbs (Figure 4), we hypothesized that allometric growth was regulated by nerve abundance alone. We quantified the abundance of innervation from the GFP+ DRGs in the ectopic limbs that grew from the NM-ALMs and found significantly more GFP+ neurons in the limbs with the large versus small DRG implants (Figure 8D). However, our data showed that there was no statistical difference in growth rates and the ectopic limb length between the regenerates from NM-ALMs with the DRGs from small or large animals (Figure 5\u2014figure supplement 2B and Figure 8C). This trend was observed on the NM-ALMs on both the large and small hosts (Figure 5\u2014figure supplement 2B). Thus, we concluded that nerve abundance alone does not regulate the final size of the regenerate and that factors from the DRGs\u2019 endogenous environment are required for the neural regulation of ontogenetic allometric growth during the tiny limb stage of regeneration. It is possible that without these upstream signals in NM-ALM, the DRGs from large and small donor animals generate the same amount of growth-promoting factors. Alternately, because the DRGs only contain sensory neurons, it is possible that motor neurons are required to control growth. Future studies will focus on the cells and signals that play a role in this upstream regulation.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/68584/elife-68584-fig8-v2.jpg)\n\n**Figure 8.:** (A) Dorsal root ganglia (DRGs) from large (~14 cm, n = 12) and small (~7 cm, n = 16) GFP+ animals were grafted into wound sites on host animals (~14 cm) followed by mid-bud blastemas from (~7 cm) donor animals. (B) If the ability to regulate size is autonomous to the DRGs, the DRGs from large animals will produce larger ectopic limbs than those from small animals. If size regulation is not autonomous, there will be no difference in ectopic limb size between grafts supplied by large or small animal DRGs. (C) The ectopic limb lengths were the same size at 0 day post graft (DPG) and remained the same throughout regeneration (135 DPG). Error bars = SEM. p-Values calculated by t-tests. (D) GFP+ innervation abundance was quantified in transverse sections of the ectopic limbs, showing significantly more nerve area (mm2) in the NM-ALMs grafted with DRGs from large donors compared to small donors (n = 5). Error bars = SEM. p-value = 0.0079, calculated by Mann-Whitney test.\n\n## Discussion\n\nOne of the last essential steps of regeneration required to generate a fully functional limb is the growth of the regenerate to a size that is proportionally appropriate to the animal. However, little data had previously been collected on the post-blastema stages of regeneration and how allometric growth is regulated. This study constitutes the first thorough investigation of how the regenerating limb grows to the proportionally appropriate size. We have discovered that there are three distinct phases of growth prior to the limb completing regeneration: the blastema phase, the ETL phase, and the LTL phase (Figure 1). During the tiny limb phases of growth, the regenerate grows through increased cell proliferation, survival, and cell size (Figure 2), and limb nerves are required to maintain this growth (Figures 4 and 5). Our data indicates that limb nerves play a central role in the regulation of allometric growth (Figures 5 and 7), and that this regulation is not autonomous to the neurons but is somehow dependent on factors from the native neural environment (Figure 8).\n\n### Regulation of growth and size in developing versus regenerating amphibian limbs\n\nPrevious studies on developing amphibian limbs suggest that both intrinsic and extrinsic factors determine size during embryogenesis. One example is from the classic cross-grafting study performed by Ross Harrison using limb buds between two differently sized salamander species (Harrison, 1924). In this experiment, limb buds from Ambystoma tigrinum (adult body length of 27 cm) were grafted to Ambystoma punctatum (adult body length of 16 cm, now known as Ambystoma maculatum) hosts and vice versa (Harrison, 1924). It was observed that the grafted limb buds grew to sizes that failed to correspond with limbs from either donor or host. Rather, the limb buds from A. punctatum grew to a size that was smaller than both the host and donor limbs when grafted to A. tigrinum, while the A. tigrinum limb buds grew larger than the host and donor limbs when grafted to A. punctatum. Because the overall size of the grafted limb was influenced by both the host environment and the source of the graft, it was concluded that the growth of the limbs was regulated by both the intrinsic growth capacity of the limb bud cells and an extrinsic growth-promoting factor that is present in different abundances in the embryos of different host species (Harrison, 1924). It was later shown by Twitty and Schwind that when the host animals were fed to capacity, the growth rates of the grafted limb buds mimicked the donor animal\u2019s growth rate, but final size of the limb was more closely matched to the host (Twitty and Schwind, 1931). This observation suggests that the rate of allometric growth appears to be intrinsically regulated, while the duration of this growth is impacted more by extrinsic factors.\n\nWhile our study also shows that extrinsic signals play a central role in the scaling of the regenerate, it is unknown whether the same nerve-dependent mechanisms are at play during limb bud development in the axolotl. During embryonic limb development, the apical ectodermal ridge (AER) signaling center is required for the production of paracrine factors such as FGFs and BMPs, which maintain an undifferentiated state and drive proliferation in the limb bud mesenchyme (Purushothaman et al., 2019; Ovchinnikov et al., 2006). The AER is established in an aneurogenic environment in multiple amphibian species including Xenopus laevis, Rana pipiens, and A. punctatum/maculatum (Keenan and Beck, 2016; Kumar et al., 2011; Nieuwkoop and Faber, 1958; Taylor, 1943; Yntema, 1959), while regenerating amphibian limbs require signaling from the nerve to establish the analogous structure, the apical epithelial cap (AEC) (Singer, 1978; Singer and Inoue, 1964). However, axolotl develop limb buds as larvae, not as embryos, and it is not clear whether the axolotl limb bud is innervated or not. Therefore, it is possible that the regulation of growth is dependent on nerve signaling in both embryonic and regenerating limbs.\n\nIt should be noted that the current study does not evaluate the influence of intrinsic factors that regulate the size of the regenerating limb. Because our study was performed on sibling A. mexicanum, there were minimal genetic differences between donor and host animals. Performing a similar cross grafting experiment, as was performed by Harrison, 1924, between species of different sizes in the context of regeneration would yield valuable insight in this regard.\n\n### Mechanism of neurotrophic regulation of size during limb regeneration\n\nObservations from multiple tetrapod species indicate that neural regulation of limb growth and size is a conserved mechanism. As we have explained previously, damage to the limb nerves in humans co-relates to decreased limb size, while overabundance of nerve signaling corresponds to limb or digit enlargement (Bain et al., 2012; Cerrato et al., 2013; Labow et al., 2016; Tsuge and Ikuta, 1973). The current study shows that the limb nerves also influence limb size in regenerating amphibians as well. This poses the amphibian limb regenerate as an exciting new model to study the general mechanisms underlying neural regulation of limb allometry.\n\nStudies in developing embryos show that the alteration of factors that regulate patterning, elongation of the long bones, and cell physiology in the developing limb can all influence the final size of the limb. Interestingly, altering the expression of intrinsic factors, such as Hox transcription factors or paracrine factors such as FGFs, during the patterning or maturation stages of limb development, respectively, can both positively and negatively impact limb size (Booker et al., 2016; Cho et al., 2008; Fromental-Ramain et al., 1996; H\u00e9rault et al., 1996). In contrast, the alteration of factors that are required for the maintenance of cell physiology, such as DNA damage repair gene Trp63, only negatively impact limb size (Vernersson Lindahl et al., 2013). We interpret these observations to indicate that genes that regulate patterning or long bone growth are \u2018instructive\u2019 regarding the overall size of the limb, whereas genes that impact cell physiology play a more permissive role in this process. Whether and how the limb nerves regulate one or more of these different influencers of allometry during regeneration is an important outstanding question. However, it is interesting that the role of neural signaling appears to differ depending on the phase of growth. Limb denervation at the ETL phase negatively impacted proliferation, cell survival, and cell size, while the same manipulation at the LTL stage only impacted cell proliferation. It is unclear at this time whether the change in neural requirement is due to alterations in the generation of growth-promoting signals from the nerve, the responsiveness of the regenerating tissue to these signals, or both.\n\nWhile the molecular mechanism by which nerves regulate scaling has not been determined, the role of the limb nerves during the early stages of limb regeneration has been extensively studied and might be drawn upon to provide insight into their role in size regulation. Innervation of the wound epithelium during the early stages of limb regeneration is essential to establish the AEC. The AEC then produces growth factors essential to induce and maintain the cells in a dedifferentiated state and drive blastema cell proliferation (McCusker et al., 2015). Satoh et al., 2016 demonstrated that FGF8 and BMP7 are directly produced by the nerves in the DRGs and migrate to the wound epithelium. Furthermore, regenerative failure caused by the denervation of the regenerating limb can be rescued by cocktails of growth factor proteins including FGFs and BMPs (Makanae et al., 2014; Satoh et al., 2016; Vieira et al., 2019), neuregulin-1 (Farkas et al., 2016), or AG (Kumar et al., 2007). Although the AEC is no longer present during the post-blastema stages of growth that we have focused on in the current study, nerves could both generate and induce the expression of similar growth-promoting factors in the late staged regenerating tissues. Alternately, or in conjunction with, the limb nerves may also regulate limb growth through their modulation of bioelectric signals which has been shown to regulate fin size in zebrafish (Perathoner et al., 2014; Daane et al., 2018). Regardless, the nature of the nerve-derived signals, and the downstream tissue and molecular targets of these signals, will be an essential focus of future research.\n\n### Potential role of other extrinsic factors in determining size of the limb regenerate\n\nThe cessation of limb growth in determinately growing tetrapods, such as humans, is brought about by hormone-based changes which leads to alterations of chondrocyte behavior in the growth plate and completion of the terminal phase of differentiation in this tissue (reviewed in A\u011f\u0131rdil, 2020). In contrast, axolotl are an indeterminately growing species that maintain active growth plates in the long bones throughout life. Thus, the transition of positive to isometric ontogenetic allometric growth in the regenerated limb must occur without the closure of the axolotl growth plates and suggests an alternate mechanism of regulation. Our studies using the NM-ALM indicate that non-neural extrinsic factors, which would include systemic factors such as hormones, do not directly promote growth in the regenerating limb tissue, which further supports this idea (Figure 7). However, it is possible that systemic factors are permissive to regenerative growth. In determinately growing species, these factors play important roles in regulating the growth of long bones in preadult limbs (Williams, 1981; Boersma and Wit, 1997; Penzo-M\u00e9ndez and Stanger, 2015).\n\nOur observation that neurons, when separated from their typical environment within the vertebrae, are unable to support the positive allometric growth of the regenerate may indicate that additional signals that are extrinsic to the regenerating limb tissue are required for the neural regulation of scaling (Figure 8 ad Figure 5\u2014figure supplement 2). It is possible that either the vertebrae provide a permissive environment which allows the nerves to provide the appropriate cues to the regenerate, or there is some upstream signal that requires a direct connection of the limb nerves to the CNS to regulate growth. Alternately, because the NM-ALM assays that we performed only contain sensory neurons, it is possible that motor neurons can autonomously instruct growth in the regenerate. It will be important to resolve this issue in future studies.\n\n### Conclusion\n\nThis study provides foundational knowledge on how proportion becomes reestablished in the regenerating limb in a continually growing system. Our data indicates that nerve signaling plays a central role in coordinating ontogenetic allometric growth, and future studies will focus on identifying the molecular mechanism(s) underlying this regulation. Furthermore, our data suggests that there is an upstream factor (or factors) required for the neural regulation of growth, potentially deriving from the endogenous environment of the limb nerves or the CNS. Lastly, as previously stated, our studies have not ruled out the likely intrinsic factors involved in size regulation. In total, there are still many unknowns, both up- and downstream of nerve signaling, that must be resolved to fully understand how allometric growth is regulated during axolotl limb regeneration. Furthermore, as regenerative medicine seeks to tap back into the developmental mechanism in order to regrow a fully functional limb, it will be important to study size regulation in multiple species to identify the shared mechanisms regulating this process.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Ambystoma mexicanum)</td>\n      <td>White-strain 518</td>\n      <td>Ambystoma Genetic Stock Center at the University of Kentucky</td>\n      <td>RRID: AGSC_101J</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ambystoma mexicanum)</td>\n      <td>GFP-strain</td>\n      <td>Ambystoma Genetic Stock Center at the University of Kentucky</td>\n      <td>RRID: AGSC_110J</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ambystoma mexicanum)</td>\n      <td>RFP-strain</td>\n      <td>Ambystoma Genetic Stock Center at the University of Kentucky</td>\n      <td>RRID: AGSC_112J</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MS-222</td>\n      <td>Sigma-Aldrich</td>\n      <td>E10521-50G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Formaldehyde</td>\n      <td>RICCA Chemical Company</td>\n      <td>R3190000-1A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI</td>\n      <td>Sigma-Aldrich</td>\n      <td>D9542-5MG</td>\n      <td>(1:1000) dilution</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ethylenediaminetetraacetic acid (EDTA)</td>\n      <td>VWR</td>\n      <td>VWRV0105-500G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>In Situ Cell Death Detection Kit, Fluorescein</td>\n      <td>Roche</td>\n      <td>11684795910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT Plus EdU Proliferation Kit</td>\n      <td>Roche</td>\n      <td>C10337</td>\n      <td>100 ng EdU/Animal</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ZenPro software</td>\n      <td>Zeiss</td>\n      <td>410138-1104-260</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI ImageJ</td>\n      <td>Open Source</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Tissue-Tek OCT Compound</td>\n      <td>Sakura</td>\n      <td>4583</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Permount Mounting Medium</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>SP15-100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>VECTASHIELD612 Antifade Mounting Medium</td>\n      <td>Vector Laboratories</td>\n      <td>H-1000\u201310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Wheat-Germ Agglutinin</td>\n      <td>Thermo FisherScientific</td>\n      <td>W32466</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Rhodamine phalloidin</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>R415</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Hematoxylin Solution, Harris Modified</td>\n      <td>Sigma-Aldrich</td>\n      <td>HHS16-500ml</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Eosin Y</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>E511-100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Alcian Blue</td>\n      <td>Sigma-Aldrich</td>\n      <td>A-5268</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Mouse Monoclonal) Anti-Acetylated Tubulin antibody</td>\n      <td>Sigma-Aldrich</td>\n      <td>T7451-200UL</td>\n      <td>(1:200) dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Goat polyclonal) Anti-Mouse IgG Alexa Fluor 488</td>\n      <td>Abcam</td>\n      <td>ab150173</td>\n      <td>(1:200) dilution</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal husbandry and surgeries\n\nEthical approval for this study was obtained from the Institutional Animal Care and Use Committee at the University of Massachusetts Boston (Protocol # IACUC2015004) and all experimental undertakings were conducted in accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. Axolotls (A. mexicanum) were spawned either at the University of Massachusetts Boston or at the Ambystoma Genetic Stock Center at the University of Kentucky. Experiments were performed on white-strain (RRID: AGSC_101J), GFP-strain (RRID: AGSC_110J), and RFP-strain (RRID: AGSC_112J) Mexican axolotls (A. mexicanum). Animal sizes are measured snout to tail tip and described in the text for each experiment. They were housed in 40% Holtfreters on a 14/10 hr light/dark cycle and fed ad libitum. Animals were fed every day or three times a week depending on the size of the animal. Animals were anesthetized in 0.1% MS222 prior to surgery or imaging. Live images were obtained using a Zeiss Discovery V8 Stereomicroscope with an Axiocam 503 color camera and Zen software (Zeiss, Oberkochen, Germany).\n\nTo generate large and small animals, larval animals were either housed at 19\u00b0C or 4\u00b0C, which slows their growth rate. Animals were grown at these temperatures until their body lengths were approximately 2-fold different, at which point the smaller animals were moved to 19\u00b0C for 2 weeks prior to any surgical manipulation.\n\n### Animal measurements\n\nWhen measuring limb length and body length to determine limb proportionality and growth during regeneration, limbs were measured from the trunk/limb interception to the elbow and from the elbow to the longest digit tip (Figure 1\u2014figure supplement 1). Body length was measured from snout to tail tip. All measurements were taken in centimeter (cm; Figure 1\u2014figure supplement 1). Measurements were recorded prior to experimentation and weekly following surgical manipulation. After 5 weeks measurements were bi-weekly, and after 10 weeks they were taken tri-weekly.\n\n### Limb amputations and staging of tiny limbs\n\nForelimb amputations are done mid-stylopod (mid-humerus). If the bone protruded from the amputation plane after contraction of the skin and muscle, it was trimmed back to make a flat amputation plane. Limb regeneration stages were determined through an observation of patterning and growth rates. Limbs were considered in the \u2018ETL\u2019 stage when they reached the mid-digit stage of patterning (Iten and Bryant, 1973). Prior to this, they are considered in the \u2018blastema\u2019 stage of limb regeneration. The transition from \u2018ETL\u2019 to \u2018LTL\u2019 is determined by a statistically significant decrease in limb length growth rate (cm/day). The regenerating limb is fully regenerated when the growth rate is no longer statistically significant from the unamputated control limbs.\n\n### Limb denervation surgeries\n\nDenervation of limbs was done by making a posterior incision on the flank, at the base of the arm, and severing and removing a piece of the three nerve bundles that come from spinal nerves 3, 4, and 5, proximal to the brachial plexus. A 2\u20133 mm piece of the nerve bundle was cut out in an effort to delay the regeneration of the nerves into the regenerates. Partial denervations were also performed by severing 1, 2, or all three of the limb nerve bundles.\n\ndenervations were performed by severing spinal nerve 5. 2/3 denervations were performed by severing spinal nerves 4 and 5. Full denervations were performed by severing all three nerves. Mock denervations were also performed by creating the same incision on the posterior side of the limb and dissecting the nerve bundles as in a typical denervation but leaving the nerve bundles intact. Because limb denervation last approximately 7 days before nerves begin to re-innervate the limb, experimental limbs were analyzed 4 days post denervation.\n\n### ALM/blastema grafting\n\nLimbs on large (average 12 cm snout to tail tip) and small (average 6 cm snout to tail tip) GFP+ donor axolotls were amputated mid-stylopod and allowed to regenerate until mid-bud stage. At that stage, they were amputated along with approximately 2 mm stump tissue, and grafted onto a regenerative permissive environment on large (12 cm snout to tail tip) RFP+ host axolotls or small (6 cm snout to tail tip) white host axolotls. Stump tissue was included in the graft to ensure the ectopic limb is composed primarily of donor animal cells, since stump cells contribute to the regenerate (Currie et al., 2016). The regenerative permissive environment on the large hosts was created by removing an anterior patch of full thickness skin from the stylopod and deviating a limb nerve bundle to the wound site (Endo et al., 2004; McCusker and Gardiner, 2013). The blastemas on the large donor animals were substantially larger than the limbs of the small host animals, making it impossible to perform this test on the small limbs. Thus, a regenerative permissive environment on the small host axolotl was generated by removing a patch of full thickness skin from flank of the animal posterior to the forelimb. The limb nerve bundle is dissected from the limb and deviated to the flank wound site on the small animal. After the blastemas are grafted on to the host wound sites, hosts are kept on ice and misted frequently for 1 hr, permitting attachment of the graft.\n\n### Neural-modified ALM\n\nWe developed the NM-ALM assay to determine if non-neural extrinsic factors were contributing to size regulation. In the NM-ALM the nerve source and host environment are decoupled by grafting a limb DRG from a donor animal in lieu of the deviated nerve bundle from the host animal into the wound site, as in the standard ALM surgery. Anterior wounds are created on white-strain host animals. Limb DRGs were carefully extracted postmortem from GFP+ donor animals and implanted below the proximal skin surrounding the wound site (Figure 6A). The limb axon bundle is positioned in the middle of the wound site (Figure 6A). Mid-bud staged blastemas, along with approximately 2 mm of stump tissue, were amputated from white-strain donor animals and immediately grafted onto the DRG nerve bundle and wound site on the host animals. Animals were kept on ice and moist for 2 hr following grafting to ensure attachment of the graft.\n\nIn the NM-ALM experiment reported here, we used large (average 14 cm snout to tail tip) and small (average 7 cm snout to tail tip) GFP+ and white-strain siblings, generated by crossing heterozygous GFP parents, as blastema donors, DRG donors, and NM-ALM hosts. DRGs from both large and small GFP+ donor animals were dissected postmortem and grafted into anterior limb wound sites on large and small white host animals (Figure 6C). Mid-bud staged blastemas from small white-strain donors were then grafted onto the NM-ALM.\n\n### Tissue histology and immunofluorescence\n\nTissues were fixed overnight at 4\u00b0C in 4% formaldehyde (RICCA Chemical Company, Arlington, TX), decalcified in 10% EDTA (VWR, Radnor, PA) for 5\u201314 days depending on tissue size, rehydrated in 30% sucrose for 2 days, and embedded in Tissue-Tek OCT Compound (Sakura, Torrance, CA). The OCT blocks were then flash-frozen in liquid nitrogen and stored at \u201320\u00b0C. They were cryo-sectioned on a Leica CM 1950 (Leica Biosystems, Buffalo Grove, IL) through the mid-zeugopod at 7 \u03bcm thickness. Following staining, histological stained slides were mounted using Permount Mounting Medium (Thermo Fisher Scientific, Waltham, MA). VECTASHIELD Antifade Mounting Medium (Vector Laboratories, Burlingame, CA) was used to mount coverslips on the fluorescently stained slides. Sections were imaged on the Zeiss Observer.Z1 at 20\u00d7 magnification. Tile scans were taken of the entire tissue section and then stitched together using the ZenPro software (Zeiss).\n\n### Quantification of cell proliferation and cell death\n\nFor analysis of cell proliferation in the limbs, 100 ng of EdU (Roche, Basel, Switzerland) was injected into the intraperitoneal space on the flank of the animal. The limbs were then collected exactly 4 hr after injection and prepared for staining. Harvested tissues were process for cryo-sectioning as described above. The Roche Click-It EdU kit was used, following manufacturer\u2019s protocol, and co-stained with DAPI (1:1000 dilution \u2013 Sigma-Aldrich, St Louis, MO). The Roche In Situ cell death detection kit (Fluorescein) was used to analyze apoptosis cell death using the manufacturer\u2019s protocol. TUNEL-stained sections were also co-stained with DAPI to obtain percent cell death. Using the Open Source FIJI software, the number of either proliferating (EdU+) or dying (TUNEL+) cells and DAPI+ cells was counted and used to calculate the labeling indices for each. In each section, the tissues were visually separated based on morphology into three basic categories: epidermal, skeletal (bone or cartilage), and soft tissue (all other tissue), and the labeling indices were generated for each separately. Three technical (three sections per limb) and at least three biological replicates were performed for each sample.\n\n### Quantification of cell size and ECM size\n\nThe quantification of average cell size and extracellular area were performed separately on the entire epidermal, muscle, and skeletal tissues in each tissue section. The epidermal and muscle tissues were identified based on morphology in WGA (Thermo Fisher Scientific), Rhodamine phalloidin (Thermo Fisher Scientific), and DAPI (1:1000 dilution \u2013 Sigma-Aldrich) stained sections. Skeletal tissues (bone or cartilage) were identified in sections stained with Harris Hematoxylin (Sigma-Aldrich), Eosin Y (Thermo Fisher Scientific), and Alcian Blue (Sigma-Aldrich). To measure the average cell size of epidermis and muscle in the fluorescent images, the area within WGA plasma membrane-stained cells, where the nucleus was observed (DAPI signal), was quantified using the FIJI software and averaged (Figure 2\u2014figure supplement 1). While muscle cells are elongated syncytial cells, our measurements only quantified a cross-sectional area. For the skeletal elements, the average cell area was quantified by measuring the area of Alcian blue negative areas in the element that contained a nucleus (Figure 2\u2014figure supplement 1).\n\nTo analyze ECM size for the epidermis and muscle, the area of all WGA internal cell spaces (with and without DAPI) were quantified. For skeletal tissue, the area of the Alcian blue negative cell spaces were quantified. The sum of these areas was calculated to obtain the \u2018total cellular area\u2019. The area of the complete tissue \u2018total tissue area\u2019 was then quantified (Figure 2\u2014figure supplement 1B). Since the tissue sizes can vary, percent ECM was determined through the following equation:\n\n$$\nPercentECMDeposition=\\frac{TotalTissueArea\u2212TotalCellularArea}{TotalTissueArea}\\times100\n$$\n\n### Neural staining\n\nThe quantitative analysis of nerve abundance was performed on regenerating limb and flank sections using the Mouse Monoclonal Anti-Acetylated Tubulin antibody (1:200 dilution \u2013 Sigma-Aldrich), followed by the Goat-Anti-Mouse IgG Alexa Fluor 488 (1:200 dilution \u2013 Abcam, Cambridge, MA) secondary antibody. They were co-stained with Rhodamine phalloidin and DAPI as a general tissue stain, and to provide positional context for the location of the axon bundles. Limb nerve abundance was quantified by determining the percentage of limb area that is positive for Anti-Acetylated Tubulin staining. To determine limb-bound axon bundle size, the sum of the area of axon bundles from DRGs 3, 4, and 5 were quantified as they emerged from the skeletal muscle surrounding the spine (Figure 5\u2014figure supplement 1).\n",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "cc150c87-e240-4e57-a404-d342eeeeef48",
+      "submission_id": "5aa8e85a-0080-46e8-aa20-6a9429da5423",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68584.sa0](https://doi.org/10.7554/eLife.68584.sa0)\n\nIt has long been known that nerves regulate the early formation of the blastema during limb regeneration through the promotion of cell proliferation. The manuscript provides an interesting new role for nerves during salamander limb regeneration by showing that nerves also determine how much tissue to regenerate. They demonstrate that increased nerve abundance makes bigger limbs while a decrease in nerve abundance generates smaller limbs. Size regulation of organs is a broadly interesting and clinically important problem, which is why this manuscript should be of interest to a large general audience.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68584.sa1](https://doi.org/10.7554/eLife.68584.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Neurotrophic control of size regulation during axolotl limb regeneration\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by K VijayRaghavan as the Senior and Reviewing Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Matthew Harris (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAs the authors will see from the reviews below, there are important changes that address conveying the results better, and also in the Introduction and in the Discussion. These can be readily and speedily addressed.\n\nReviewer #1 (Recommendations for the authors):\n\nAn overview of the limb regeneration stages would be helpful in the introduction. I recall that there are several classifications that exist in the literature with some stating 2 phases, 3 phases, or even 4 phases? I wrote this before getting to the results so I know it is discussed, but as a reader, I thought it missing in the introduction.\n\nLine 57-59 \u2013 Could you clarify why Harrison and Twitty concluded intrinsic and extrinsic mechanisms? I thought the conclusion based upon balancer graft between species and tiger/maculatum grafts (?) concluded an intrinsic mechanism.\n\nThe introduction seems to be missing an explanation for how nerves communicate with the limb. For example, it would be interesting to the reader to know that it is not the type of nerve that impacts (early) growth and that it is a protein rather than a neurotransmitter. It is not known, though that the mechanism described here uses the same mechanisms, but I feel it would provide more context in the introduction.\n\nLine 69-71 \u2013 I didn't know that neurofibromas increase digit size\u2026interesting.\n\nFigure 1B \u2013 I don't see the error bars in figure 1B.\n\nOne of the most interesting points for future studies is to determine if motor or sensory nerves have differential impacts on size regulation of the limb regenerate. Is the lack of growth because motor nerves are not innervating muscles, which then degenerate and lead to a lack of growth? Or is it that the impact is general and growth is inhibited by the loss of nerve axon secretions? Yet, the experiments in Figure 6 suggest that sensory nerves are all that are needed for regeneration.\n\nLine 166 \u2013 The sentence references Supplemental Figure 2, but I think it should be Supp Figure 3.\n\nFigure 4. One consideration that may be worth mentioning is that the amount of necrosis is unknown after denervation. The authors looked at apoptosis using TUNEL, but it is possible that a significant amount of necrosis also occurs.\n\nLine 266: The housing of animals at different temperatures is interesting and impressive that a 2 fold difference in size was accomplished.\n\nFigure 6: Do nerves from the host animal invade the accessory limb in the NM-ALM model? This is important for considering if the interactions of motor nerves play any role in the regulation of growth control. I am not suggesting to run the experiment, but it may be worth discussing.\n\nLine 351: What are the extrinsic signals that may be regulating growth size. I suggest taking the term (and likely) out here and just bring it up in the discussion.\n\nFigure 8: There is an alternative conclusion that should be considered here. Even though the DRG is smaller, is it possible that it makes an equivalent amount of mitogenic factors as larger DRGs? Or is it possible that the smaller DRG has more growth potential so can make more abundant close contacts with cells than the larger DRGs? I think a sentence or two explaining alternative conclusions can be included.\n\nLine 393: There is an extra \"the\" in the line.\n\nLine 406: There is now strong evidence in the axolotl developing limb that the epithelium does not express FGFs. I think a caveat should be included mentioning the work from Purushothaman et al., 2019 that shows FGF expression is mesenchymal during axolotl limb development.\n\nReviewer #2 (Recommendations for the authors):\n\nExperimental tissue-level approaches as defined in this work, while lacking in molecular detail, often have a broader lasting impact in the field than the latter: AER and ZPA extirpation and transplant studies are still being investigated to understand the organizational potential of these tissues even after the discovery of FGF and SHH mediated signaling. This study has the potential to be a landmark paper providing the foundations in which other molecular studies will follow. However, the paper needs some critical refinement in the precision of definition and defining the biological mechanisms of the process under study (catch up growth? Size-determination?). Even for a reader who appreciates these questions and is familiar with the current understanding of regulation of proportion, I had a hard time distilling the key message of the paper and the implications of the findings. The limitation lies not within the experiments or in their immediate analysis, rather integration of the model and experimental findings into a cohesive whole. I think my major criticisms can be accommodated by textual changes and distilling the overall message. I have broken up comments into general areas that I feel would benefit attention in review.\n\nDescription of the problem and biological process:\n\nOne of the major difficulties I had was understanding the importance of the tiny limb and what biological process the authors were in fact studying. In part this is due to an introduction that was not focused on the broad topic of how rate of growth, or its cessation, is modulated to accommodate for proportionality of size. It is unclear if the authors are also arguing the determination of size itself as a set point of size, or if the mechanisms is simply modulation or rate, or both. Secondly, it should be made clear very early why their delineation of multiple phases of growth is an important and novel perspective; as such how it now can help elucidate the mechanisms underlying this regulation.\n\nNerve activity and relative size:\n\nThere are several areas that need to be addressed concerning description and discussion of nerve activity and size. One is strictly terminology of \"nerve abundance\" or \"innervation\" when in fact it is not really known what the innervation extent is within the limb \u2013 just the size of the host nerve. Thus the correlative finding is to relative contribution, or extent, of nerves provided to the regenerate \u2013 or within the regenerate as detailed in Figure 3. In Figure 3. it will be important to show absolute levels of nerve abundance (or normalized to body length), as well as the change, looks predominantly to be due to the addition of non-neural tissue leading change in of cross-sectional volume of the regenerate -- reduction of total mass of the early tiny limb compared to more mature limb will increase the fraction of nerve density but the absolute innervation is constant. Is then growth regulation titering out of nerve-derived signals? This seems to be the argument, but is phrased as relative levels of nerve innervation or abundance \u2013 or even hyper-innervated, which seems to imply more nerves are entering or anastomosing in the limb in these stages. This has not been shown. If that is the specific statement the authors want to use, it begs the question if one raises innervation (added DRG graphs or extra nerve re-routing to a regenerative stump e.g. branchial plexus being diverted to the limb), can this extend growth of a regenerate through modulation of growth rate at the tiny limb phase??\n\nOne more critical area is the description of nerve instructional information arising from nerve 'abundance' from Figure 5. This figure was hard for me to understand \u2013 in part due to titles of Panel 5c and 5d it was not clear what the difference between Graft Tissue Size and Donor Size is. But, beyond that the inference is that the larger animals have larger nerves at the stump (innervation abundance of the title) thereby being causative of the change. However, the findings are that host size determine size of the graft. The dependency of the nerve in this instruction is inferred by the requirement of the nerve for regenerative growth \u2013 but as the NM_ALM model with different sized axonal bundles shows (Figure 8), it is not instructional (at least when neural explants are used). It would be good if the authors could refine their language on abundance and innervation to be more precise on what is being measured in the experiment.\n\nIf the argument is really the amount of innervation, couldn't several DRGs be placed in a single wound site to assess this directly? Can a larger limb regenerate over the contralateral limb? There might be other reason this experiment is not feasible, but raises some interesting support for the authors argument. Note L84 \"Our data shows // that changes in the nerve abundance are sufficient to manipulate (positively or negatively) the ultimate size of the limb regenerate.\" I don't know if the authors have shown positive regulation formally.\n\nNote: p475 The authors mention humans with 'decreased limb size, while an overabundance of innervation corresponds to limb or digit enlargement' is the case in some cases of macrodactyly However, in cases of macrodactyly or overgrowth can also be caused by harmatomas (e.g. NF1) leading to altered nerve activity not innervation amount per se. Note, this is consistent with the growth factor production argument of the authors that follows in the text.\n\nPatterns of Growth rate:\n\nNear the end of the paper, the authors present growth rate data over time for the regenerate of short limb and long limb groups. Figure S7 is really quite informative in demonstrating a shift in the rate of growth seen in Small hosts over that in Large hosts; the general rate of growth of regenerates from smaller hosts is initiated later -- this seems to be the crux of the difference. The result is that the limb never catches up to the size of limbs with small hosts but grows at generally the same rate. Could the authors integrate their findings with this latent initiation and nerve activity of the stump? Levels of nerve growth factors have been shown to be sufficient to replace nerve dependence \u2013 could it be that during early regeneration large hosts have higher neurotropic growth factor levels and this triggers a threshold-dependent growth program; small hosts would require longer time to reach this threshold and initiate development.\n\nSuggestions\n\nFigure 4. Could examples of histology reflecting the differences in the bar plotz of Cell proliferation/Cell death/ and size be shown as small insets. This will also clarify what it is that is being measured and what staining might look like. I saw some of the metrics in the Supplementary files but seeing the histology or cell death signals would help in understanding your data in the figure proper.\n\nGeneral editorial comments.\n\nMight consider deleting NS in graphs where the statistical significance failed to pass p<0.05 threshold. It will make the graphs easier to read.\n\nOverall, the paper is quite a unique contribution to the field and would be fitting for the eLife audience. However, the impact of this manuscript is dependent on refining the argument such that it is clear what specifically is being shown and it direct significance in trying to understand the regulation of proportion.\n",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f3e029a6-f978-4a9e-8ae3-4e3cf36d2c53",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C1",
+      "claim": "Over 2.1 million Americans are living with limb loss or limb difference.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that over 2.1 million Americans are living with limb loss or limb difference, which has profound effects on the function, health, and quality of life in these patients (Ziegler-Graham et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ziegler-Graham et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "cc12f74d-edea-47c9-b7c7-73820c0b9b48",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C2",
+      "claim": "Limb loss or limb difference has profound effects on the function, health, and quality of life in patients.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that over 2.1 million Americans are living with limb loss or limb difference, which has profound effects on the function, health, and quality of life in these patients (Ziegler-Graham et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ziegler-Graham et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "76d1ee04-ae4c-47c2-a3e5-3e147da5c67b",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C3",
+      "claim": "Studies in tetrapods capable of regenerating complete and functional limb structures, such as the Mexican axolotl, have been invaluable in terms of understanding the basic underlying biology of limb regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in tetrapods capable of regenerating complete and functional limb structures, such as the Mexican axolotl (Ambystoma mexicanum), have been invaluable in terms of understanding the basic underlying biology of limb regeneration and the mechanisms that control this process (McCusker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McCusker et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "c021ce39-4677-4828-8cfd-924a647c03bc",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C4",
+      "claim": "Very little is known about the later stages of regeneration that are required for the regenerating structure to mature into a fully functional limb.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to date, very little is known about the later stages of regeneration that are required for the regenerating structure to mature into a fully functional limb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "b1f8a4e9-f21c-41fd-8168-1fa5e11ce801",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C5",
+      "claim": "After the developmental (blastema) stages of regeneration, the limb is small in size relative to the animal's body and undergoes a period of rapid ontogenetic allometric growth until the size of the regenerate is proportional to the rest of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "After these developmental (blastema) stages of regeneration, the limb is small in size relative to the animal's body and undergoes a period of rapid ontogenetic allometric growth until the size of the regenerate is proportional to the rest of the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive observation about the regeneration process",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "b0c7b023-da09-4adb-9199-a9edad7e0747",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C6",
+      "claim": "Ontogenetic allometric growth refers to the rate of growth of a structure (i.e. the limbs) relative to the rest of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Ontogenetic allometric growth refers to the rate of growth of a structure (i.e. the limbs) relative to the rest of the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a scientific term",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "d24c75a3-ef94-4810-9c32-3a6be9164cb1",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C7",
+      "claim": "Axolotl are an indeterminately growing species and continue to grow in size throughout their life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, axolotl are an indeterminately growing species, and continue to grow in size throughout their life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about axolotl biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "71ee93f5-d954-4277-aad7-cf2e9da3871f",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C8",
+      "claim": "The size of the limb at the time of amputation is different from that once the limb has completed regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the size of the limb at the time of amputation is different from that once the limb has completed regeneration (Riquelme\u2010Guzm\u00e1n et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Riquelme\u2010Guzm\u00e1n et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "58842caf-4802-4bf4-8a67-46fb14ab81f4",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C9",
+      "claim": "Rather than having a 'set-point' of size, growth must be dynamically regulated throughout the process of limb regeneration in the axolotl.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple observation indicates that rather than having a 'set-point' of size, growth must be dynamically regulated throughout the process of limb regeneration in the axolotl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that limb size differs at amputation and completion of regeneration",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "5eb282c5-5980-4f85-8cb9-d92669e235ce",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C10",
+      "claim": "The developing bat forelimb bud has increased expression of HoxD transcription factors compared to hindlimb bud and is required for the extreme positive allometric growth that occurs in this tissue as it grows into a wing.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the developing bat forelimb bud has increased expression of HoxD transcription factors compared to hindlimb bud and is required for the extreme positive allometric growth that occurs in this tissue as it grows into a wing (Booker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Booker et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "59f3e04f-65c6-4cde-98d0-3dc256349fd8",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C11",
+      "claim": "At the later stages of tetrapod limb formation, allometric growth is primarily driven through the elongation of the long bones through the regulation of growth plate activity.",
+      "claim_type": "EXPLICIT",
+      "source": "At the later stages of tetrapod limb formation, allometric growth is primarily driven through the elongation of the long bones through the regulation of growth plate activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limb development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "d393ceeb-49a7-47f9-a915-b26ae7c7879f",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C12",
+      "claim": "Treatment of the axolotl blastemas with exogenous retinoic acid (RA), which negatively regulates HoxA13 during blastema patterning, results in the elongation of skeletal elements in the regenerated limb.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, treatment of the axolotl blastemas with exogenous retinoic acid (RA), which negatively regulates HoxA13 (a marker of distal limb) (Gardiner et al., 1995) during blastema patterning, results in the elongation of skeletal elements in the regenerated limb (Maden, 1983; Niazi et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gardiner et al., 1995; Maden, 1983; Niazi et al., 1985",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "356dd481-8238-4a65-8f70-5768cefa5f80",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C13",
+      "claim": "In amphibians, neural signaling is an essential component of the developmental stages of limb regeneration in both the induction and maintenance of the blastema.",
+      "claim_type": "EXPLICIT",
+      "source": "In amphibians, neural signaling is an essential component of the developmental stages of limb regeneration in both the induction and maintenance of the blastema (Singer, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Singer, 1978",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "45de07dd-0e7d-4785-a11f-d8de6fd9966f",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C14",
+      "claim": "Nerve signaling is essential for proliferation in the blastema, and loss of innervation at early stages of regeneration results in complete regenerative failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Nerve signaling is essential for proliferation in the blastema, and loss of innervation at early stages of regeneration results in complete regenerative failure (Singer, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Singer, 1978",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "d24557bd-7529-45db-88e8-7c38fc7ffc65",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C15",
+      "claim": "Multiple protein-based nerve-dependent factors have been identified to play key roles in the maintenance of the limb blastema including anterior gradient (AG), BMPs, FGFs, and neuregulin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple protein-based nerve-dependent factors have been identified to play key roles in the maintenance of the limb blastema including anterior gradient (AG), BMPs, FGFs, and neuregulin-1 (Kumar et al., 2007; Makanae et al., 2014; Farkas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kumar et al., 2007; Makanae et al., 2014; Farkas et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "dce77e10-f049-4add-9bd1-d96fce57ae83",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C16",
+      "claim": "At the late-bud blastema stage, when the pattern of the regenerated limb has been established, the loss of nerve signaling results in the formation of complete, yet miniaturized, limb regenerates.",
+      "claim_type": "EXPLICIT",
+      "source": "At the late-bud blastema stage, when the pattern of the regenerated limb has been established, the loss of nerve signaling results in the formation of complete, yet miniaturized, limb regenerates (Mullen et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mullen et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "10e5f521-51a6-44e7-8473-47fe04fd04d8",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C17",
+      "claim": "Permanently miniaturized limbs, generated by the repeated removal of the limb bud, have a significant decrease in the abundance of innervation.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, permanently miniaturized limbs, generated by the repeated removal of the limb bud, have a significant decrease in the abundance of innervation (Bryant et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bryant et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "4341df3f-5046-4185-986e-d4a8471abd9b",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C18",
+      "claim": "Damage to the limb nerves during the birth of a human infant results in impaired limb growth and size, which can be alleviated by surgical repair of the nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "Damage to the limb nerves during the birth of a human infant results in impaired limb growth and size, which can be alleviated by surgical repair of the nerves (Bain et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bain et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "134cfab7-52f4-4b38-8728-98b58cf0b2d2",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C19",
+      "claim": "The presence of neurofibromas or hamartomas in human arms or hands, which increases the abundance of neural signals, results in the formation of proportionally large digits.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the presence of neurofibromas or hamartomas in human arms or hands, which increases the abundance of neural signals, results in the formation of proportionally large digits (Frykman and Wood, 1978; Razzaghi and Anastakis, 2005; Tsuge and Ikuta, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Frykman and Wood, 1978; Razzaghi and Anastakis, 2005; Tsuge and Ikuta, 1973",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "e9189797-a037-4dc7-89a2-5623a725a0eb",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C20",
+      "claim": "The regenerating limb undergoes at least three phases of growth before it reaches the size of the unamputated limb.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the regenerating limb underwent at least three phases of growth before it reached the size of the unamputated limb, which occur during the blastema and the post-developmental stage of regeneration (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "b6a173aa-d090-4b10-a760-7a73f1d503a9",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C21",
+      "claim": "The expression of growth factors and signaling molecules associated with blastema development are lost by the digit staged regenerate, thus indicating the end of the blastema stage, and initiation of post-developmental regenerative processes (day 38).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the expression of growth factors and signaling molecules associated with blastema development are lost by the digit staged regenerate, thus indicating the end of the blastema stage, and initiation of post-developmental regenerative processes (day 38) (Gerber et al., 2018; Nacu et al., 2016; Satoh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gerber et al., 2018; Nacu et al., 2016; Satoh et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "457c386e-18b1-4862-9ec8-f077e80fff93",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C22",
+      "claim": "The digit staged regenerate is significantly smaller than the unamputated limb on size-matched animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The digit staged regenerate is significantly smaller than the unamputated limb on size-matched animals (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "e4af0ae8-8fca-4a25-8a35-a934d9057c3b",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C23",
+      "claim": "The initial phase of growth in the tiny limb is rapid, similar to the speed of growth during the blastema stage at 0.04 cm/day.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial phase of growth is rapid, similar to the speed of growth during the blastema stage at 0.04 cm/day (Figure 1B and Figure S2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1B and Figure S2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "24b1ada9-dcd0-40bd-ba16-e6b0ad5b6004",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C24",
+      "claim": "Approximately 4 weeks after the early tiny limb stage (in 10 cm sized animals), the rate of growth of the tiny limb slows significantly to 0.02 cm/day over the following 9 weeks and gradually decreases over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 4 weeks later (in 10 cm sized animals), the rate of growth of the tiny limb slows significantly to 0.02 cm/day over the following 9 weeks and gradually decreases over time, until both the size and the growth rate of the regenerated limb are not significantly different than the unamputated limb on size-matched animals (Figure 1B and Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1B and Figure 1\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "7a923a92-b5dc-4d7e-9f28-e32977cff5cb",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C25",
+      "claim": "Both the growth rate and the amount of time spent in each of the three stages (blastema, ETL, and LTL) are dependent on the size of the animal at the time of limb amputation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the growth rate and the amount of time spent in each of the three stages (blastema, ETL, and LTL) are dependent on the size of the animal at the time of limb amputation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "716e91c4-29a4-4f01-8980-80a6fc90fed3",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C26",
+      "claim": "As body length increases, the growth rate decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison between 4, 10, and 20 cm animals (snout to tail tip) showed that as body length increases, the growth rate decreases (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "a39a4499-93b1-40f6-9b46-6cd821def94d",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C27",
+      "claim": "When comparing animals twofold different in size, the amount of time in the ETL phase increases by 30\u201340%.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when comparing animals twofold different in size, the amount of time in the ETL phase increases by 30\u201340% (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "e662e01f-85f6-4ef7-9e50-e45107005d25",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C28",
+      "claim": "When comparing animals twofold different in size, growth rate falls by 30\u201340%.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when comparing animals twofold different in size, the amount of time in the ETL phase increases by 30\u201340% (Figure 1C) and growth rate falls by 30\u201340% (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "1bf74bc7-1d3e-464b-830b-6335e269da78",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C29",
+      "claim": "Cell proliferation is significantly higher in all tissues analyzed in the ETL and LTL staged regenerates compared to the unamputated and fully regenerated limbs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significantly more cell proliferation and significantly less cell death in all tissues analyzed in the ETL and LTL staged regenerates compared to the unamputated and fully regenerated limbs (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "aca9da20-2dcf-493a-b416-543f92ac4927",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C30",
+      "claim": "Cell death is significantly lower in all tissues analyzed in the ETL and LTL staged regenerates compared to the unamputated and fully regenerated limbs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significantly more cell proliferation and significantly less cell death in all tissues analyzed in the ETL and LTL staged regenerates compared to the unamputated and fully regenerated limbs (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "617b6824-892a-4257-8eb6-ce8c227b3933",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C31",
+      "claim": "The largest increase in cell proliferation was observed in the epidermis (3.7-fold increase).",
+      "claim_type": "EXPLICIT",
+      "source": "The largest increase in cell proliferation was observed in the epidermis (3.7-fold increase, Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "42166fbb-52a8-4f77-97fb-cdcf05062f6d",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C32",
+      "claim": "Soft tissue and skeletal tissue had slightly more modest increases in cell proliferation (3.2- and 2.4-fold increases respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "while soft tissue and skeletal tissue had slightly more modest increases (3.2- and 2.4-fold increases respectively, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "38ce5611-fa79-4d7f-a4b0-a6fa89990ba5",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C33",
+      "claim": "The largest decrease in cell death was seen in the skeletal tissue (20.8-fold decrease).",
+      "claim_type": "EXPLICIT",
+      "source": "The largest decrease in cell death was seen in the skeletal tissue (20.8-fold decrease, Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "f96daf28-bd4a-4cbd-9055-75c9b5b8d53c",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C34",
+      "claim": "The soft tissues and epidermis exhibited more moderate decreases in cell death of 3.0- and 3.3-fold, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "while the soft tissues and epidermis exhibited more moderate decreases of 3.0- and 3.3-fold, respectively (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "1af46ccd-cf4d-4fc8-b3ec-d1c6b7ab15c2",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C35",
+      "claim": "Cell size was significantly smaller in the regenerating tissue than the uninjured tissue and increased as regeneration progressed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cell size was significantly smaller in the regenerating tissue than the uninjured tissue and increased as regeneration progressed (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "8bc7d69c-c73f-422c-9d98-a6a48dc4b13f",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C36",
+      "claim": "Cell size difference was most profound in the muscle (4.5-fold smaller) and least in the epidermis (1.4-fold smaller).",
+      "claim_type": "EXPLICIT",
+      "source": "This was most profound in the muscle (4.5-fold smaller) and least in the epidermis (1.4-fold smaller, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "2ac76207-1bf1-47ab-adf0-b8ac1866bd45",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C37",
+      "claim": "There were no significant differences in the extracellular compartment of limbs, indicating that ECM deposition does not play a significant role in growth of the tiny limb.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any significant differences in the extracellular compartment of limbs, indicating that ECM deposition does not play a significant role in growth of the tiny limb (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "1ce6e52f-c053-46ad-8699-fae4b64a1115",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C38",
+      "claim": "A combination of increased cell proliferation, decreased cell death, and increased cell size contributes to the allometric growth of the tiny limb staged regenerate.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this data indicates that a combination of increased cell proliferation, decreased cell death, and increased cell size contributes to the allometric growth of the tiny limb staged regenerate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data in Figure 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "e5fd44ca-9fc9-42df-a00f-fc69615eae43",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C39",
+      "claim": "There is significantly higher levels of relative innervation during the ETL and LTL stages compared to unamputated and fully regenerated limbs.",
+      "claim_type": "EXPLICIT",
+      "source": "This quantification revealed significantly higher levels of relative innervation during the ETL and LTL stages compared to unamputated and fully regenerated limbs (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "5e658e46-ad87-4054-95cb-407cb4751290",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C40",
+      "claim": "The absolute abundance (not normalized to tissue area) of innervation is lowest at the ETL stage and increases during the later stages of regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the absolute abundance (not normalized to tissue area) of innervation is lowest at the ETL stage and increases during the later stages of regeneration .",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "422f595f-c565-41c1-ac89-cfacc512d9f8",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C41",
+      "claim": "The decrease in relative innervation during the transition from the ETL to LTL stages is likely due to the substantial increase in limb area of the later staged regenerate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the decrease in relative innervation during the transition from the ETL to LTL stages is likely due to the substantial increase in limb area of the later staged regenerate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that absolute nerve abundance increases while relative abundance decreases",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "7a600454-843a-4191-a803-e4677d27d8c7",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C42",
+      "claim": "Nerve signaling is required for growth of the tiny limb.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that nerve signaling is required for growth of the tiny limb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of experimental observations from denervation experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "9d1812f3-6142-4fc7-ae34-bd35cee6aecb",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C43",
+      "claim": "Fully denervated ETLs had a 9-fold slower growth rate than ETLs with the nerve intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Fully denervated ETLs had a 9-fold slower growth rate than ETLs with the nerve intact (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "0ee435b0-26cd-4b6f-bc2a-db720d133359",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C44",
+      "claim": "Cell proliferation was negatively impacted by denervation in all tissue types analyzed (1.7-, 4.9-, and 4.8-fold decreases in the epidermis, soft tissue, and skeleton, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, cell proliferation was negatively impacted by denervation in all tissue types analyzed (1.7-, 4.9-, and 4.8-fold decreases in the epidermis, soft tissue, and skeleton, respectively; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "86ec3b43-efcf-46d8-b951-ca8d37e2ce60",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C45",
+      "claim": "Cell death levels in all tissues were significantly increased following full denervation (21.6-, 1.6-, and 25.7-fold increases in epidermis, soft tissue, and skeleton, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Cell death levels in all tissues were significantly increased following full denervation (21.6-, 1.6-, and 25.7-fold increases in epidermis, soft tissue, and skeleton, respectively; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "d6c017f9-0717-4c28-b156-f3174961ffde",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C46",
+      "claim": "Cell size appears to only be significantly affected in the muscle, where there is a near 2-fold decrease in average cell size in the denervated ETLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, cell size appears to only be significantly affected in the muscle, where there is a near 2-fold decrease in average cell size in the denervated ETLs (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "faf5c8a5-a963-42bf-9e62-3ce02b28532a",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C47",
+      "claim": "When LTLs were fully denervated, only the growth rate and abundance of cell proliferation were significantly decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "When LTLs were fully denervated, only the growth rate and abundance of cell proliferation were significantly decreased (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "699e552e-8575-46ae-819c-27b85f937fc1",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C48",
+      "claim": "The impact of neural signaling is different depending on whether the regenerating limb is in the early or late phase of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the impact of neural signaling is different depending on whether the regenerating limb is in the early or late phase of growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from comparing denervation effects at ETL and LTL stages",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "d75f1e40-9c0e-4b1d-8f3b-b3cb314838fa",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C49",
+      "claim": "Cell proliferation in the soft tissue and skeleton decreased significantly, to full denervation levels, with partial denervations indicating that there is a high threshold of nerve abundance required for maintaining cell proliferation in these tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cell proliferation in the soft tissue and skeleton decreased significantly, to full denervation levels, with partial denervations indicating that there is a high threshold of nerve abundance required for maintaining cell proliferation in these tissues (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 4C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "d1fcf39f-98c1-44c9-8d68-4c247eae8036",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C50",
+      "claim": "Cell death in the epidermis had a strong dose response, with significant incremental increases with increased denervation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, cell death in the epidermis had a strong dose response, with significant incremental increases with increased denervation (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "4850c3f3-0db9-490c-ae37-2ea7d46cd04f",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C51",
+      "claim": "The size of the nerve bundles originating from the spinal column increases as the animal grows, and is almost 2-fold larger in 14 cm long animals compared to 7 cm animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of the nerve bundles originating from the spinal column increases as the animal grows, and quantification of the cross-sectional area of these bundles stained immunofluorescently in situ reveals that the size is almost 2-fold larger in 14 cm long animals compared to 7 cm animals (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "91cfee7f-bfb3-41e0-a678-2a8f5cc0cfc2",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C52",
+      "claim": "ALM environments with different nerve abundances altered both the growth rate and overall size of the regenerated limb structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that ALM environments with different nerve abundances altered both the growth rate and overall size of the regenerated limb structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of experimental observations from ALM grafting experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "cddee44a-e36f-4924-a7ea-28145ddab769",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C53",
+      "claim": "The blastemas from small donors were initially 2-fold smaller than those from large donors when they were grafted onto the small and large hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The blastemas (15 days post amputation) from small donors were initially 2-fold smaller than those from large donors when they were grafted onto the small and large hosts (Figure 5C, left panels, 0 day post graft [DPG]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "fba690b2-0895-4931-b28b-7641066aca8a",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C54",
+      "claim": "The grafted tissues were the same size by 18 DPG within each host type and remained that way until regeneration was completed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the grafted tissues were the same size by 18 DPG within each host type and remained that way until regeneration was completed (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 5\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "efb2cacf-fcc1-42fe-8d42-39e9f6298bd1",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C55",
+      "claim": "The regenerated limbs that remained on the donor animals remained significantly different in size.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the regenerated limbs that remained on the donor animals remained significantly different in size (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "a2af78e8-5c07-45a9-b1e4-71135ac5d4e7",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C56",
+      "claim": "By approximately 38 DPG, there was a significant difference in size between the ectopic limbs on the large and small host animals, and this continued until 130 DPG.",
+      "claim_type": "EXPLICIT",
+      "source": "By approximately 38 DPG, there was a significant difference in size between the ectopic limbs on the large and small host animals, and this continued until 130 DPG, when the growth rate of the grafted limbs matched that of the host limbs (Figure 5C, right panels; Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 5C and Figure 5\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "0ac99311-7780-40b4-8283-fec685c741cd",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C57",
+      "claim": "The growth rate and sizing of the limb regenerate positively correlates with nerve abundance in the host environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data indicate that the growth rate and sizing of the limb regenerate positively correlates with nerve abundance in the host environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the ALM grafting experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "c9b68481-64d2-4bff-a1df-1c01e53c80cc",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C58",
+      "claim": "The implanted DRG supported the continued development of the blastema into a completely patterned and differentiated limb.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the implanted DRG supported the continued development of the blastema into a completely patterned and differentiated limb (Figure 6B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 6B'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "413c4d64-5493-42f4-9e2e-3314a5f1ffe7",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C59",
+      "claim": "The implanted DRGs are able to provide the appropriate signals to support the regenerative process.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the implanted DRGs are able to provide the appropriate signals to support the regenerative process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that implanted DRGs support complete limb regeneration",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "0a368028-4bab-4669-ba20-893bb670dce9",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C60",
+      "claim": "There continued to be no significant difference in growth rates and the length of the grafted regenerates on the different sized host animals after 135 DPG in the NM-ALM.",
+      "claim_type": "EXPLICIT",
+      "source": "After 135 DPG, we observed that there continued to be no significant difference in growth rates and the length of the grafted regenerates on the different sized host animals (Figure 5\u2014figure supplement 2B and Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 5\u2014figure supplement 2B and Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "6e4ff05e-a84d-42c9-ac50-1d119550ac5c",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C61",
+      "claim": "Non-neural extrinsic factors do not play a direct role in regulating allometric growth of the regenerating limb structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the size of the limb regenerate was not impacted by the host environment when the abundance of nerves was held constant, we conclude that non-neural extrinsic factors do not play a direct role in regulating allometric growth of the regenerating limb structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the NM-ALM experiments where host size did not affect regenerate size",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "88029b5a-fd96-4bd1-8135-fdc77bbdb864",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C62",
+      "claim": "There was significantly more GFP+ neurons in the limbs with the large versus small DRG implants.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the abundance of innervation from the GFP+ DRGs in the ectopic limbs that grew from the NM-ALMs and found significantly more GFP+ neurons in the limbs with the large versus small DRG implants (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 8D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "b3d54ab2-a3c7-42b9-8713-7c0029bd07be",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C63",
+      "claim": "There was no statistical difference in growth rates and the ectopic limb length between the regenerates from NM-ALMs with the DRGs from small or large animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data showed that there was no statistical difference in growth rates and the ectopic limb length between the regenerates from NM-ALMs with the DRGs from small or large animals (Figure 5\u2014figure supplement 2B and Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 5\u2014figure supplement 2B and Figure 8C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "e676dd03-77fa-402e-a44c-0e33df699c82",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C64",
+      "claim": "Nerve abundance alone does not regulate the final size of the regenerate and factors from the DRGs' endogenous environment are required for the neural regulation of ontogenetic allometric growth during the tiny limb stage of regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that nerve abundance alone does not regulate the final size of the regenerate and that factors from the DRGs' endogenous environment are required for the neural regulation of ontogenetic allometric growth during the tiny limb stage of regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the NM-ALM experiments where DRG size did not affect regenerate size despite different nerve abundances",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "0adcba33-fa6a-4c9e-8076-30b2b5834d20",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C65",
+      "claim": "The limb nerves provide essential cues to regulate ontogenetic allometric growth and the final size of the regenerating limb.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations show that the limb nerves provide essential cues to regulate ontogenetic allometric growth and the final size of the regenerating limb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from all the experimental observations in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "8679b80b-8711-4af1-92c8-721795f6bf30",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C66",
+      "claim": "The regulation of limb size is not autonomously regulated by the limb nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also discovered that the regulation of limb size is not autonomously regulated by the limb nerves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the NM-ALM experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "b0b23cec-777f-4e6f-b667-bc271f624efb",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C67",
+      "claim": "Signaling from the limb nerves is required for maintenance of growth during the tiny-limb stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study we have characterized this growth and have found that signaling from the limb nerves is required for its maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of experimental findings from denervation experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "b2caa582-dfb8-4b9f-b17e-6b0518c46b5b",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C68",
+      "claim": "Growth and size of the limb positively correlates with nerve abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the regenerative assay known as the accessory limb model (ALM), we have found that growth and size of the limb positively correlates with nerve abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of experimental findings from ALM experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "2dc6fead-06b4-4a58-980d-54678868e6eb",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C69",
+      "claim": "Non-neural extrinsic factors from differently sized host animals do not play a prominent role in determining the size of the regenerating limb.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the NM-ALM we discovered that non-neural extrinsic factors from differently sized host animals do not play a prominent role in determining the size of the regenerating limb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of experimental findings from NM-ALM experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "7a81427f-657d-4701-b46d-77e7c5d3fe8f",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C70",
+      "claim": "In amphibians, the apical ectodermal ridge (AER) signaling center is required for the production of paracrine factors such as FGFs and BMPs, which maintain an undifferentiated state and drive proliferation in the limb bud mesenchyme.",
+      "claim_type": "EXPLICIT",
+      "source": "During embryonic limb development, the apical ectodermal ridge (AER) signaling center is required for the production of paracrine factors such as FGFs and BMPs, which maintain an undifferentiated state and drive proliferation in the limb bud mesenchyme (Purushothaman et al., 2019; Ovchinnikov et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Purushothaman et al., 2019; Ovchinnikov et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "be4507ec-6982-4947-a0a3-69368d708015",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C71",
+      "claim": "The AER is established in an aneurogenic environment in multiple amphibian species including Xenopus laevis, Rana pipiens, and A. punctatum/maculatum.",
+      "claim_type": "EXPLICIT",
+      "source": "The AER is established in an aneurogenic environment in multiple amphibian species including Xenopus laevis, Rana pipiens, and A. punctatum/maculatum (Keenan and Beck, 2016; Kumar et al., 2011; Nieuwkoop and Faber, 1958; Taylor, 1943; Yntema, 1959)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Keenan and Beck, 2016; Kumar et al., 2011; Nieuwkoop and Faber, 1958; Taylor, 1943; Yntema, 1959",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "eb2e60d5-51d0-495d-a2cc-4c807ea19470",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C72",
+      "claim": "Regenerating amphibian limbs require signaling from the nerve to establish the analogous structure, the apical epithelial cap (AEC).",
+      "claim_type": "EXPLICIT",
+      "source": "while regenerating amphibian limbs require signaling from the nerve to establish the analogous structure, the apical epithelial cap (AEC) (Singer, 1978; Singer and Inoue, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Singer, 1978; Singer and Inoue, 1964",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "6e1e6b56-403b-4ea9-9d9b-17d290cdc270",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C73",
+      "claim": "Innervation of the wound epithelium during the early stages of limb regeneration is essential to establish the AEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Innervation of the wound epithelium during the early stages of limb regeneration is essential to establish the AEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limb regeneration",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "91f0a314-cc0c-4286-84b0-333807000a50",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C74",
+      "claim": "The AEC produces growth factors essential to induce and maintain the cells in a dedifferentiated state and drive blastema cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "The AEC then produces growth factors essential to induce and maintain the cells in a dedifferentiated state and drive blastema cell proliferation (McCusker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McCusker et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "8790eb85-f4a6-4a55-be0b-e3068c4d5242",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C75",
+      "claim": "FGF8 and BMP7 are directly produced by the nerves in the DRGs and migrate to the wound epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Satoh et al., 2016 demonstrated that FGF8 and BMP7 are directly produced by the nerves in the DRGs and migrate to the wound epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Satoh et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "03058b12-a2cd-4d40-91f2-759a7d2cf651",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C76",
+      "claim": "Regenerative failure caused by the denervation of the regenerating limb can be rescued by cocktails of growth factor proteins including FGFs and BMPs, neuregulin-1, or AG.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, regenerative failure caused by the denervation of the regenerating limb can be rescued by cocktails of growth factor proteins including FGFs and BMPs (Makanae et al., 2014; Satoh et al., 2016; Vieira et al., 2019), neuregulin-1 (Farkas et al., 2016), or AG (Kumar et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Makanae et al., 2014; Satoh et al., 2016; Vieira et al., 2019; Farkas et al., 2016; Kumar et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "b1361712-02ad-4dd2-92ed-90a2b676a254",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C77",
+      "claim": "The cessation of limb growth in determinately growing tetrapods, such as humans, is brought about by hormone-based changes which leads to alterations of chondrocyte behavior in the growth plate and completion of the terminal phase of differentiation in this tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The cessation of limb growth in determinately growing tetrapods, such as humans, is brought about by hormone-based changes which leads to alterations of chondrocyte behavior in the growth plate and completion of the terminal phase of differentiation in this tissue (reviewed in A\u011f\u0131rdil, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to A\u011f\u0131rdil, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "a4ac8162-77d2-444d-8192-2dcd64b83254",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C78",
+      "claim": "Axolotl are an indeterminately growing species that maintain active growth plates in the long bones throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, axolotl are an indeterminately growing species that maintain active growth plates in the long bones throughout life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about axolotl biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "34ce62bc-d410-4951-9d8c-940f42a43264",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C79",
+      "claim": "The transition of positive to isometric ontogenetic allometric growth in the regenerated limb must occur without the closure of the axolotl growth plates and suggests an alternate mechanism of regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the transition of positive to isometric ontogenetic allometric growth in the regenerated limb must occur without the closure of the axolotl growth plates and suggests an alternate mechanism of regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that axolotl maintain active growth plates",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "193d5cca-f229-4537-8572-88677aaabed0",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "claim_id": "C80",
+      "claim": "This study provides foundational knowledge on how proportion becomes reestablished in the regenerating limb in a continually growing system.",
+      "claim_type": "EXPLICIT",
+      "source": "This study provides foundational knowledge on how proportion becomes reestablished in the regenerating limb in a continually growing system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the contribution of the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The regenerating axolotl limb undergoes three distinct phases of growth: blastema, early tiny limb (ETL), and late tiny limb (LTL). Growth rates and phase durations are size-dependent, with larger animals showing slower growth rates and longer phase durations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C28 provide converging experimental evidence from longitudinal measurements (Figure 1) showing three growth phases with distinct kinetics. The data demonstrate size-dependent effects on growth rate and phase duration with appropriate statistical comparisons. The characterization is well-supported by quantitative measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "5911f2f0-6a8e-480f-8af0-b161323a2b85",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Growth of the tiny limb is mediated by increased cell proliferation (up to 3.7-fold), decreased cell death (up to 20.8-fold), and increased cell size (up to 4.5-fold), with tissue-specific differences. ECM deposition does not contribute significantly to growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C38 present comprehensive cellular analysis (Figure 2) with appropriate quantification methods for proliferation (EdU), death (TUNEL), cell size, and ECM. The data show statistically significant differences across regeneration stages with tissue-specific patterns. The conclusion that ECM does not contribute is well-supported by negative findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "ae284745-7275-4c82-b387-6da6840c0638",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Relative innervation is significantly elevated during ETL and LTL stages compared to unamputated limbs. Absolute nerve abundance increases during regeneration, but relative abundance decreases from ETL to LTL due to tissue expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 provide quantitative innervation data (Figure 3) showing both relative and absolute measurements. The interpretation that decreased relative innervation reflects tissue expansion rather than nerve loss is logical and supported by the absolute measurements. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "84078d3e-2019-404f-be85-2ff669048074",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Nerve signaling is required for growth of the tiny limb, with denervation causing 9-fold slower growth, decreased proliferation, increased cell death, and reduced cell size in muscle. The impact differs between ETL and LTL stages, with LTL showing effects only on growth rate and proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 present denervation experiments (Figure 4) with appropriate controls and multiple cellular readouts. The stage-specific differences are well-documented. However, the 4-day timepoint may be insufficient to fully assess long-term effects, and nerve regeneration could confound interpretation. Despite this limitation, the immediate effects are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "2e494f43-8528-4900-ad7c-246200e25a6b",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Partial denervation experiments reveal tissue-specific responses: soft tissue and skeletal proliferation show threshold responses, while epidermal cell death shows dose-dependent responses to nerve abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 describe partial denervation results (Figure 4C-D) distinguishing threshold from dose-response effects. The data support these interpretations, though the limited number of denervation levels (1/3, 2/3, full) constrains the resolution of dose-response relationships.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "b9d07c38-fd7a-4d69-8a86-88d5ba9b68c8",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Using ALM grafting between differently sized animals, nerve abundance in the host environment positively correlates with regenerate growth rate and final size. Blastemas from different sized donors converge to similar sizes within each host type by 18 DPG, but differ significantly between large and small hosts by 38 DPG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 present ALM experiments (Figure 5) with appropriate controls. The convergence of differently sized grafts within host types and divergence between host types supports the nerve abundance hypothesis. However, the experimental design has limitations: small host ALMs were performed on the flank rather than limb, potentially introducing confounding anatomical differences. Despite this, the overall pattern strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "60aa13c1-914d-487f-9914-c1fad24cea73",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Implanted DRGs in the NM-ALM support complete limb regeneration with proper patterning and differentiation, demonstrating that isolated DRGs can provide necessary regenerative signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 establish the validity of the NM-ALM assay (Figure 6B'). The observation that DRGs alone support complete regeneration is important for interpreting subsequent experiments. The claim is supported by visual evidence of complete limb formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "4e6802d9-5e97-451e-9d52-8d14ba2665ec",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using the NM-ALM to decouple nerve source from host environment, regenerates on differently sized hosts show no difference in growth rate or final size when nerve abundance is held constant, indicating non-neural extrinsic factors do not directly regulate limb size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 present NM-ALM experiments (Figure 7) that elegantly test the role of non-neural factors. The lack of size differences between hosts when DRG source is constant strongly supports the conclusion. This is a well-designed experiment that addresses a specific hypothesis. Statistical comparisons are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "ea505be0-781f-44cc-a5c4-4e0c33721106",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In NM-ALM experiments with DRGs from differently sized donors, large DRGs provide significantly more innervation than small DRGs, yet regenerate size does not differ. This indicates nerve abundance alone does not determine size and that factors from the DRG's endogenous environment are required for size regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 present a critical test of autonomous neural regulation (Figure 8). The dissociation between nerve abundance (different) and regenerate size (same) is compelling evidence against autonomous regulation. However, the interpretation that 'endogenous environment factors' are required is somewhat speculative - alternative explanations (e.g., motor neuron requirement, threshold effects) are mentioned but not fully tested. The core observation is solid, but mechanistic interpretation requires further work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "982a0067-f3e1-47b2-9040-032220b79761",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Summary conclusion: Limb nerves provide essential cues to regulate ontogenetic allometric growth and final size of regenerating limbs, but this regulation is not autonomous to the nerves. Non-neural extrinsic factors do not play a prominent direct role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 synthesize the major findings. These conclusions are well-supported by the collective experimental evidence from denervation (C42-C48), ALM (C52-C57), and NM-ALM (C60-C64) experiments. The conclusions appropriately reflect the data while acknowledging limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "e0b55e65-58aa-4d28-9e6e-3e367147a2af",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background context establishing the clinical significance of limb loss, the value of axolotl regeneration research, and the knowledge gap regarding late-stage regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide appropriate background context supported by citations. These establish motivation for the study but do not constitute novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "50b39c37-e5b1-4fe0-a44d-5885d7880f5e",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on ontogenetic allometric growth in axolotl limb regeneration, including the definition of the term and the observation that growth must be dynamically regulated due to indeterminate growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 provide necessary background and definitions. The inference about dynamic regulation (C9) is logical given axolotl biology. These are appropriate framing claims supported by prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "ee4af793-75ed-43b6-8a84-00a669cd69d8",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on factors regulating limb size in other systems, including HoxD in bat wings, growth plate regulation in tetrapods, and retinoic acid effects in axolotl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 cite relevant prior work on size regulation. These provide appropriate context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "342f8c65-a47e-4754-962b-bbbddade8706",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on neural regulation during early limb regeneration, including nerve requirement for blastema formation and the observation that late-stage denervation produces miniaturized limbs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 summarize prior work on neural regulation of regeneration. These establish the rationale for investigating neural control of growth but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "5c2ea266-fa79-4351-8c3b-6ba7349fca91",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on neural effects on limb size in humans, including nerve damage causing reduced growth and nerve excess causing enlarged digits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 cite human clinical observations supporting the general relevance of neural size regulation. These provide translational context but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "dbced39f-4bed-4c8b-b27f-f71e9348a49a",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion of differences between embryonic limb development (AER in aneurogenic environment) and regeneration (AEC requiring nerve signals), with background on nerve-derived growth factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76 provide discussion context comparing development and regeneration. These are appropriately cited background claims that frame the interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "1cd5700d-e599-4738-a363-d1daa5cbdc20",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Discussion of growth cessation mechanisms in determinate versus indeterminate growers, noting that axolotl must use alternative mechanisms since growth plates remain active.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 discuss mechanistic implications of axolotl biology. The inference about alternative mechanisms (C79) is logical but speculative. These are appropriate discussion points.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    },
+    {
+      "id": "f7cbcf4b-2a93-4de3-952e-296fac74df5c",
+      "content_id": "e0a8395b-c4f4-4ff1-84cc-dba959bdcce2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Summary statement that the study provides foundational knowledge on proportion reestablishment in regenerating limbs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is a reasonable summary statement supported by the collective findings. This is an appropriate concluding claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:53:51.441099Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e9189797-a037-4dc7-89a2-5623a725a0eb",
+      "result_id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59"
+    },
+    {
+      "claim_id": "b6a173aa-d090-4b10-a760-7a73f1d503a9",
+      "result_id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59"
+    },
+    {
+      "claim_id": "457c386e-18b1-4862-9ec8-f077e80fff93",
+      "result_id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59"
+    },
+    {
+      "claim_id": "e4af0ae8-8fca-4a25-8a35-a934d9057c3b",
+      "result_id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59"
+    },
+    {
+      "claim_id": "24b1ada9-dcd0-40bd-ba16-e6b0ad5b6004",
+      "result_id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59"
+    },
+    {
+      "claim_id": "7a923a92-b5dc-4d7e-9f28-e32977cff5cb",
+      "result_id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59"
+    },
+    {
+      "claim_id": "716e91c4-29a4-4f01-8980-80a6fc90fed3",
+      "result_id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59"
+    },
+    {
+      "claim_id": "a39a4499-93b1-40f6-9b46-6cd821def94d",
+      "result_id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59"
+    },
+    {
+      "claim_id": "e662e01f-85f6-4ef7-9e50-e45107005d25",
+      "result_id": "f79dda55-3b38-4a27-bfc6-0be9ac71ef59"
+    },
+    {
+      "claim_id": "1bf74bc7-1d3e-464b-830b-6335e269da78",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "aca9da20-2dcf-493a-b416-543f92ac4927",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "617b6824-892a-4257-8eb6-ce8c227b3933",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "42166fbb-52a8-4f77-97fb-cdcf05062f6d",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "38ce5611-fa79-4d7f-a4b0-a6fa89990ba5",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "f96daf28-bd4a-4cbd-9055-75c9b5b8d53c",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "1af46ccd-cf4d-4fc8-b3ec-d1c6b7ab15c2",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "8bc7d69c-c73f-422c-9d98-a6a48dc4b13f",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "2ac76207-1bf1-47ab-adf0-b8ac1866bd45",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "1ce6e52f-c053-46ad-8699-fae4b64a1115",
+      "result_id": "5911f2f0-6a8e-480f-8af0-b161323a2b85"
+    },
+    {
+      "claim_id": "e5fd44ca-9fc9-42df-a00f-fc69615eae43",
+      "result_id": "ae284745-7275-4c82-b387-6da6840c0638"
+    },
+    {
+      "claim_id": "5e658e46-ad87-4054-95cb-407cb4751290",
+      "result_id": "ae284745-7275-4c82-b387-6da6840c0638"
+    },
+    {
+      "claim_id": "422f595f-c565-41c1-ac89-cfacc512d9f8",
+      "result_id": "ae284745-7275-4c82-b387-6da6840c0638"
+    },
+    {
+      "claim_id": "7a600454-843a-4191-a803-e4677d27d8c7",
+      "result_id": "84078d3e-2019-404f-be85-2ff669048074"
+    },
+    {
+      "claim_id": "9d1812f3-6142-4fc7-ae34-bd35cee6aecb",
+      "result_id": "84078d3e-2019-404f-be85-2ff669048074"
+    },
+    {
+      "claim_id": "0ee435b0-26cd-4b6f-bc2a-db720d133359",
+      "result_id": "84078d3e-2019-404f-be85-2ff669048074"
+    },
+    {
+      "claim_id": "86ec3b43-efcf-46d8-b951-ca8d37e2ce60",
+      "result_id": "84078d3e-2019-404f-be85-2ff669048074"
+    },
+    {
+      "claim_id": "d6c017f9-0717-4c28-b156-f3174961ffde",
+      "result_id": "84078d3e-2019-404f-be85-2ff669048074"
+    },
+    {
+      "claim_id": "faf5c8a5-a963-42bf-9e62-3ce02b28532a",
+      "result_id": "84078d3e-2019-404f-be85-2ff669048074"
+    },
+    {
+      "claim_id": "699e552e-8575-46ae-819c-27b85f937fc1",
+      "result_id": "84078d3e-2019-404f-be85-2ff669048074"
+    },
+    {
+      "claim_id": "d75f1e40-9c0e-4b1d-8f3b-b3cb314838fa",
+      "result_id": "2e494f43-8528-4900-ad7c-246200e25a6b"
+    },
+    {
+      "claim_id": "d1fcf39f-98c1-44c9-8d68-4c247eae8036",
+      "result_id": "2e494f43-8528-4900-ad7c-246200e25a6b"
+    },
+    {
+      "claim_id": "4850c3f3-0db9-490c-ae37-2ea7d46cd04f",
+      "result_id": "b9d07c38-fd7a-4d69-8a86-88d5ba9b68c8"
+    },
+    {
+      "claim_id": "91cfee7f-bfb3-41e0-a678-2a8f5cc0cfc2",
+      "result_id": "b9d07c38-fd7a-4d69-8a86-88d5ba9b68c8"
+    },
+    {
+      "claim_id": "cddee44a-e36f-4924-a7ea-28145ddab769",
+      "result_id": "b9d07c38-fd7a-4d69-8a86-88d5ba9b68c8"
+    },
+    {
+      "claim_id": "fba690b2-0895-4931-b28b-7641066aca8a",
+      "result_id": "b9d07c38-fd7a-4d69-8a86-88d5ba9b68c8"
+    },
+    {
+      "claim_id": "efb2cacf-fcc1-42fe-8d42-39e9f6298bd1",
+      "result_id": "b9d07c38-fd7a-4d69-8a86-88d5ba9b68c8"
+    },
+    {
+      "claim_id": "a2af78e8-5c07-45a9-b1e4-71135ac5d4e7",
+      "result_id": "b9d07c38-fd7a-4d69-8a86-88d5ba9b68c8"
+    },
+    {
+      "claim_id": "0ac99311-7780-40b4-8283-fec685c741cd",
+      "result_id": "b9d07c38-fd7a-4d69-8a86-88d5ba9b68c8"
+    },
+    {
+      "claim_id": "c9b68481-64d2-4bff-a1df-1c01e53c80cc",
+      "result_id": "60aa13c1-914d-487f-9914-c1fad24cea73"
+    },
+    {
+      "claim_id": "413c4d64-5493-42f4-9e2e-3314a5f1ffe7",
+      "result_id": "60aa13c1-914d-487f-9914-c1fad24cea73"
+    },
+    {
+      "claim_id": "0a368028-4bab-4669-ba20-893bb670dce9",
+      "result_id": "4e6802d9-5e97-451e-9d52-8d14ba2665ec"
+    },
+    {
+      "claim_id": "6e4ff05e-a84d-42c9-ac50-1d119550ac5c",
+      "result_id": "4e6802d9-5e97-451e-9d52-8d14ba2665ec"
+    },
+    {
+      "claim_id": "88029b5a-fd96-4bd1-8135-fdc77bbdb864",
+      "result_id": "ea505be0-781f-44cc-a5c4-4e0c33721106"
+    },
+    {
+      "claim_id": "b3d54ab2-a3c7-42b9-8713-7c0029bd07be",
+      "result_id": "ea505be0-781f-44cc-a5c4-4e0c33721106"
+    },
+    {
+      "claim_id": "e676dd03-77fa-402e-a44c-0e33df699c82",
+      "result_id": "ea505be0-781f-44cc-a5c4-4e0c33721106"
+    },
+    {
+      "claim_id": "0adcba33-fa6a-4c9e-8076-30b2b5834d20",
+      "result_id": "982a0067-f3e1-47b2-9040-032220b79761"
+    },
+    {
+      "claim_id": "8679b80b-8711-4af1-92c8-721795f6bf30",
+      "result_id": "982a0067-f3e1-47b2-9040-032220b79761"
+    },
+    {
+      "claim_id": "b0b23cec-777f-4e6f-b667-bc271f624efb",
+      "result_id": "982a0067-f3e1-47b2-9040-032220b79761"
+    },
+    {
+      "claim_id": "b2caa582-dfb8-4b9f-b17e-6b0518c46b5b",
+      "result_id": "982a0067-f3e1-47b2-9040-032220b79761"
+    },
+    {
+      "claim_id": "2dc6fead-06b4-4a58-980d-54678868e6eb",
+      "result_id": "982a0067-f3e1-47b2-9040-032220b79761"
+    },
+    {
+      "claim_id": "f3e029a6-f978-4a9e-8ae3-4e3cf36d2c53",
+      "result_id": "e0b55e65-58aa-4d28-9e6e-3e367147a2af"
+    },
+    {
+      "claim_id": "cc12f74d-edea-47c9-b7c7-73820c0b9b48",
+      "result_id": "e0b55e65-58aa-4d28-9e6e-3e367147a2af"
+    },
+    {
+      "claim_id": "76d1ee04-ae4c-47c2-a3e5-3e147da5c67b",
+      "result_id": "e0b55e65-58aa-4d28-9e6e-3e367147a2af"
+    },
+    {
+      "claim_id": "c021ce39-4677-4828-8cfd-924a647c03bc",
+      "result_id": "e0b55e65-58aa-4d28-9e6e-3e367147a2af"
+    },
+    {
+      "claim_id": "b1f8a4e9-f21c-41fd-8168-1fa5e11ce801",
+      "result_id": "50b39c37-e5b1-4fe0-a44d-5885d7880f5e"
+    },
+    {
+      "claim_id": "b0c7b023-da09-4adb-9199-a9edad7e0747",
+      "result_id": "50b39c37-e5b1-4fe0-a44d-5885d7880f5e"
+    },
+    {
+      "claim_id": "d24c75a3-ef94-4810-9c32-3a6be9164cb1",
+      "result_id": "50b39c37-e5b1-4fe0-a44d-5885d7880f5e"
+    },
+    {
+      "claim_id": "71ee93f5-d954-4277-aad7-cf2e9da3871f",
+      "result_id": "50b39c37-e5b1-4fe0-a44d-5885d7880f5e"
+    },
+    {
+      "claim_id": "58842caf-4802-4bf4-8a67-46fb14ab81f4",
+      "result_id": "50b39c37-e5b1-4fe0-a44d-5885d7880f5e"
+    },
+    {
+      "claim_id": "5eb282c5-5980-4f85-8cb9-d92669e235ce",
+      "result_id": "ee4af793-75ed-43b6-8a84-00a669cd69d8"
+    },
+    {
+      "claim_id": "59f3e04f-65c6-4cde-98d0-3dc256349fd8",
+      "result_id": "ee4af793-75ed-43b6-8a84-00a669cd69d8"
+    },
+    {
+      "claim_id": "d393ceeb-49a7-47f9-a915-b26ae7c7879f",
+      "result_id": "ee4af793-75ed-43b6-8a84-00a669cd69d8"
+    },
+    {
+      "claim_id": "356dd481-8238-4a65-8f70-5768cefa5f80",
+      "result_id": "342f8c65-a47e-4754-962b-bbbddade8706"
+    },
+    {
+      "claim_id": "45de07dd-0e7d-4785-a11f-d8de6fd9966f",
+      "result_id": "342f8c65-a47e-4754-962b-bbbddade8706"
+    },
+    {
+      "claim_id": "d24557bd-7529-45db-88e8-7c38fc7ffc65",
+      "result_id": "342f8c65-a47e-4754-962b-bbbddade8706"
+    },
+    {
+      "claim_id": "dce77e10-f049-4add-9bd1-d96fce57ae83",
+      "result_id": "342f8c65-a47e-4754-962b-bbbddade8706"
+    },
+    {
+      "claim_id": "10e5f521-51a6-44e7-8473-47fe04fd04d8",
+      "result_id": "342f8c65-a47e-4754-962b-bbbddade8706"
+    },
+    {
+      "claim_id": "4341df3f-5046-4185-986e-d4a8471abd9b",
+      "result_id": "5c2ea266-fa79-4351-8c3b-6ba7349fca91"
+    },
+    {
+      "claim_id": "134cfab7-52f4-4b38-8728-98b58cf0b2d2",
+      "result_id": "5c2ea266-fa79-4351-8c3b-6ba7349fca91"
+    },
+    {
+      "claim_id": "7a81427f-657d-4701-b46d-77e7c5d3fe8f",
+      "result_id": "dbced39f-4bed-4c8b-b27f-f71e9348a49a"
+    },
+    {
+      "claim_id": "be4507ec-6982-4947-a0a3-69368d708015",
+      "result_id": "dbced39f-4bed-4c8b-b27f-f71e9348a49a"
+    },
+    {
+      "claim_id": "eb2e60d5-51d0-495d-a2cc-4c807ea19470",
+      "result_id": "dbced39f-4bed-4c8b-b27f-f71e9348a49a"
+    },
+    {
+      "claim_id": "6e1e6b56-403b-4ea9-9d9b-17d290cdc270",
+      "result_id": "dbced39f-4bed-4c8b-b27f-f71e9348a49a"
+    },
+    {
+      "claim_id": "91f0a314-cc0c-4286-84b0-333807000a50",
+      "result_id": "dbced39f-4bed-4c8b-b27f-f71e9348a49a"
+    },
+    {
+      "claim_id": "8790eb85-f4a6-4a55-be0b-e3068c4d5242",
+      "result_id": "dbced39f-4bed-4c8b-b27f-f71e9348a49a"
+    },
+    {
+      "claim_id": "03058b12-a2cd-4d40-91f2-759a7d2cf651",
+      "result_id": "dbced39f-4bed-4c8b-b27f-f71e9348a49a"
+    },
+    {
+      "claim_id": "b1361712-02ad-4dd2-92ed-90a2b676a254",
+      "result_id": "1cd5700d-e599-4738-a363-d1daa5cbdc20"
+    },
+    {
+      "claim_id": "a4ac8162-77d2-444d-8192-2dcd64b83254",
+      "result_id": "1cd5700d-e599-4738-a363-d1daa5cbdc20"
+    },
+    {
+      "claim_id": "34ce62bc-d410-4951-9d8c-940f42a43264",
+      "result_id": "1cd5700d-e599-4738-a363-d1daa5cbdc20"
+    },
+    {
+      "claim_id": "193d5cca-f229-4537-8572-88677aaabed0",
+      "result_id": "f7cbcf4b-2a93-4de3-952e-296fac74df5c"
+    }
+  ],
+  "comparisons": []
+}

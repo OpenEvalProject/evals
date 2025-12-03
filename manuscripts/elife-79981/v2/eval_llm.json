@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Lab-adapted variants of both Cog and CL31 phages acquired mutations in genes encoding putative tail proteins, suggesting adaptation to the MB001 lab strain. For CL31, mutations in clg55 were associated with altered plaque morphology (turbid vs. clear), with multiple independent isolates showing mutations in this gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are well-supported by whole-genome sequencing data and Sanger sequencing of multiple independent isolates. The observation that multiple independent CPCL31 variants all had mutations in clg55 (C28) provides strong evidence for selection at this locus during adaptation to MB001.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "CPCL31 (clear plaque variant) binds more efficiently to MB001 than WTCL31, suggesting that mutations in the tail protein Clg55 enhance phage-receptor engagement. Structural predictions indicate Clg55 has remote homology to C1q-like domains involved in ligand recognition, making it a candidate receptor binding protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by adsorption assay data (Figure 1D) showing improved binding of CPCL31. The structural predictions (C31) and inference about Clg55 as a receptor binding protein (C32) are reasonable given the data, though the receptor binding function remains to be directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Transposon sequencing of a high-density Cglu library challenged with Cog, WTCL31, or CPCL31 identified distinct sets of genes required for efficient infection by each phage. The approach showed high reproducibility (r=0.877) and revealed little overlap between Cog and CL31 requirements, but substantial overlap between the two CL31 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C39 describe the Tn-Seq experimental approach and key findings. The data are well-supported by Figure 2 and the reported correlation coefficient. The experimental design is sound, with appropriate controls and biological replicates. The conclusion that different phages require distinct host factors is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Tn-Seq identified genes involved in arabinogalactan (AG) modification as highly enriched following Cog challenge, including ppgS, cgp_0658, cgp_0391, and cgp_0393, which are homologous to Mtb genes involved in galactosamine (GalN) decoration of AG. A novel gene, cgp_0396, was also identified and predicted to function in AG modification based on its GT2 glycosyltransferase domain and phenotypic clustering with known AG modification genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C53 are well-supported by Tn-Seq data (Figures 2, 3A), sequence homology to characterized Mtb genes, and phenotypic profiling data (Figure 3C). The inference that cgp_0396 functions in AG modification (C53) is reasonable given the multiple lines of evidence, though direct biochemical characterization would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Deletion of AG modification genes (ppgS, cgp_0658, or cgp_0396) completely abolished Cog plaque formation even at high phage concentrations, while CL31 plaquing was unaffected. This demonstrates that AG modification is specifically required for Cog infection and implicates cgp_0396 in the AG modification process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are strongly supported by the plaque assays shown in Figure 3D. The complete loss of Cog plaquing on AG modification mutants, combined with normal CL31 plaquing, provides clear evidence for the phage-specific requirement. This validates the Tn-Seq findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ProtX is a required receptor for Cog infection. Loss of protX inhibited Cog plaque formation and abolished phage adsorption to cells. Rare plaques observed on \u0394protX strains suggest phage mutants can use alternative receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C70 are well-supported by Tn-Seq data (Figures 2, 4A), plaque assays (Figure 4B), and adsorption assays (Figure 4C). The inability of Cog to adsorb to \u0394protX cells provides strong evidence that ProtX is the primary receptor. The observation of rare escape mutants (C70) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Cog requires the PorA porin for efficient infection, with PorH contributing in the context of PorAH hetero-oligomers. Deletion of porA or porAH severely reduced Cog plaquing, while porH deletion alone had no effect. PorB and PorC were not required, indicating specificity for PorA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C81 are well-supported by plaque assays (Figure 4E) and prior biochemical characterization of PorAH complexes. The genetic dissection clearly demonstrates PorA specificity and suggests PorH contributes through hetero-oligomerization. The inference about polar effects (C77) is reasonable given the operon structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "CL31 phage does not require specific porins (ProtX, PorA, PorH, PorB, or PorC) for infection, distinguishing it from Cog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by plaque assays (Figures 4B, 4E) showing normal CL31 plaquing on all porin deletion mutants. This clearly demonstrates a fundamental difference in receptor requirements between the two phages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PorAH and AG modifications are not required for Cog adsorption but are necessary for post-attachment steps, likely genome injection. Mutants lacking these factors showed normal phage adsorption but significantly reduced infectious center formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are well-supported by adsorption assays (Figure 4F) and infectious center assays (Figure 4G). The dissociation of adsorption from infection is clearly demonstrated and suggests a role in DNA injection, though this mechanism remains to be directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "CL31 infection requires mycolic acid synthesis genes (fadD2, pks, otsA) more stringently than Cog. Tn-Seq showed high enrichment of insertions in these genes following CL31 challenge despite their severe growth defects, while Cog showed lesser enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C100 are well-supported by Tn-Seq data (Figures 2, 5B) and established knowledge about mycolic acid biosynthesis. The differential enrichment between CL31 and Cog challenges clearly demonstrates different dependencies on mycolic acids. The background claims about the pathway (C90-C94) are well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Deletion of otsA (required for trehalose synthesis) greatly diminished CL31 plaque formation but had less effect on Cog, confirming the more stringent requirement of CL31 for mycolic acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are supported by plaque assays (Figure 5C). The use of otsA deletion rather than pks deletion is appropriate given the less severe growth phenotype, allowing clearer interpretation of phage-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The O-mycoloylation activity of Cmt1 is required for efficient infection by both CL31 and Cog phages. WTCL31 showed reduced infection of \u0394cmt1 mutants, while CPCL31 was less dependent but still required Cmt1 for optimal infectivity. A catalytic mutant of Cmt1 could not complement the infection defect, demonstrating that enzymatic activity rather than the protein itself is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C114 are well-supported by Tn-Seq data (Figures 2, 6A), plaque assays (Figure 6B), and complementation experiments. The use of a catalytic mutant (C113) provides strong evidence that O-mycoloylation activity is required. The differential dependence of WTCL31 vs. CPCL31 is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Inactivation of Cmt1 reduced WTCL31 adsorption and slowed CPCL31 adsorption rate, correlating with plaque turbidity. This supports the hypothesis that Clg55 mutations enhance receptor affinity and establishes a correlation between adsorption rate and plaque morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 are supported by adsorption assays (Figures 6C, 6D). The correlation between adsorption kinetics and plaque morphology is clearly demonstrated. However, the inference about receptor affinity (C120) remains indirect, as the specific receptor for CL31 has not been identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Both CL31 and Cog require O-mycoloylated protein(s) for efficient infection. Cog specifically requires ProtX and PorA, while CL31 utilizes unidentified O-mycoloylated factor(s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 synthesize findings from multiple experiments. The requirement for O-mycoloylated proteins is well-supported by the Cmt1 data. The specific requirements for Cog (C122) are clearly demonstrated, while the CL31 receptor(s) remain to be identified (C123), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Spontaneous WTCL31-resistant mutants were isolated and sequenced, revealing mutations predominantly in mycolic acid synthesis genes. A novel gene, cgp_0475 (ahfA), was identified with phage-resistant alleles including a five-codon duplication, and was also a strong hit in Tn-Seq for both CL31 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are supported by whole-genome sequencing of resistant isolates and Tn-Seq data (Figure 2). The convergence of two independent approaches (spontaneous resistance and Tn-Seq) on ahfA provides strong evidence for its importance in CL31 infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "AhfA (cgp_0475) contains a DUF2505 domain within the SRPBCC superfamily, which includes lipid transfer proteins. Structural predictions suggest a helix-grip fold with a hydrophobic ligand binding pocket. Homologs exist in Mtb and Msmeg, with Msmeg having a tandem duplication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 are supported by sequence analysis and structural predictions. The domain architecture and predicted structure are consistent with a role in lipid binding/transfer. The comparative genomics (C130) is clearly shown in Figure 7\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "AhfA is required for CL31 infection and has a major fitness cost when inactivated. \u0394ahfA mutants showed severe growth defects and were unable to support CL31 plaque formation due to reduced phage adsorption. The phenotype was complemented by ectopic ahfA expression and was not due to polar effects on the adjacent murB2 gene. Cog could still infect \u0394ahfA mutants, though at reduced efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C141 are well-supported by Tn-Seq data (Figure 7A), plaque assays (Figure 7B), adsorption assays (Figure 7C), growth phenotypes (Figure 7D), and complementation experiments. The genetic controls are appropriate and the differential effect on CL31 vs. Cog is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Fluorescent trehalose analog (6-TMR-Tre) labeling showed dramatically reduced mycolic acid incorporation in \u0394ahfA mutants compared to wild-type, though not as complete as \u0394pks mutants. \u0394ahfA cells retained low but detectable signal at septa and showed altered morphology (shorter, rounder). The defect was complemented by ahfA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C150 are well-supported by fluorescence microscopy (Figure 8A) and quantitative fluorimetry (Figure 8B). The observation that \u0394ahfA retains some mycolic acid synthesis (unlike \u0394pks) is important and clearly demonstrated. The complementation validates the genetic specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Thin-layer chromatography analysis confirmed that \u0394ahfA mutants show dramatic reduction in TMM and TDM lipids comparable to \u0394pks mutants, which could be restored by complementation. This establishes AhfA as a previously unidentified component of the mycolic acid synthesis pathway in Cglu and potentially other Corynebacteriales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 are strongly supported by TLC analysis (Figure 8C) and complementation data. The convergence of multiple independent assays (6-TMR-Tre labeling, fluorimetry, TLC) all showing severe defects in mycolic acid synthesis provides robust evidence for AhfA's role in this pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163"
+    ],
+    "result": "The authors propose that AhfA may function in TMM transport, potentially as a carrier protein shuttling lipids from synthetic enzymes to the CmpL1/CmpL4 transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C163 is a reasonable hypothesis based on the structural predictions (lipid-binding domain), cytoplasmic localization, and phenotype similarity to transporter mutants. However, this remains speculative without direct biochemical evidence of lipid binding or transport activity. The proposal is appropriately presented as a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "AhfA is conserved in Msmeg and Mtb but has not been found essential in these organisms, possibly due to redundancy with other SRPBCC family proteins. The strong requirement for AhfA in Cglu suggests it and/or its relatives play important roles in mycomembrane biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C167 are supported by sequence conservation data and prior essentiality studies. The inference about redundancy (C166) is reasonable given the presence of multiple SRPBCC family members in Mtb/Msmeg. The conclusion about importance for mycomembrane biogenesis (C167) is well-justified by the dramatic phenotypes observed.",
+    "result_type": "MINOR"
+  }
+]

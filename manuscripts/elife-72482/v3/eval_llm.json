@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C19",
+      "C22"
+    ],
+    "result": "HIV-1 contains overlapping genes, including a structured overlap between Rev NES and Env LLP-2 where nine LLP-2 residues (767-776) overlap with the Rev NES (residues 75-83) in a +1 reading frame.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8, C19, and C22 establish the genomic organization and identify the specific overlapping region between Rev and Env. These claims are well-supported by citations to prior work and are illustrated in Figure 1A, providing clear structural context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "The Rev NES is a quasi-helical structure that binds Crm1 using hydrophobic residues and prolines, while Env LLP-2 forms amphipathic helices with conserved charged residues that embed in viral membranes and support the Env trimer structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C21 describe the structural and functional properties of Rev NES and Env LLP-2, supported by multiple citations to prior structural and functional studies. The claims are consistent with established knowledge and provide necessary background for understanding the overlap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Conservation analysis reveals that sites contributing to functional surfaces in both proteins show higher conservation, while chemically conservative substitutions (I/L/V) at Crm1-binding residues increase codon flexibility in the overlapping region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 present entropy analysis of patient sequences showing differential conservation patterns. The use of reduced amino acid alphabets (C27) appropriately accounts for chemically conservative substitutions. The analysis is well-documented in Figure 2 and provides quantitative support for functional segregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Deep mutational scanning of non-overlapped viruses reveals that LLP-2 strongly selects for negative charge at D773 and against helix-breaking prolines, while Rev NES selects for large hydrophobic residues (ILV) at Crm1-binding positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 and C82-C84 describe the deep mutational scanning methodology and results. The experimental design using rev-in-nef viruses (C82) appropriately decouples the overlap. The fitness landscapes in Figure 3 provide clear quantitative data supporting the amino acid preferences. The methodology is sound with biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Functional assays confirm that mutation of Rev NES Crm1-binding residues (L75, P76, L78, L81, L83) abolishes Rev function, while mutation of the non-binding face has minimal impact. In Env, D773A shows the most severe defect (15% activity) and R770 is also important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 present reporter assay data validating the deep mutational scanning results. The Rev assays (Figure 4A) show clear loss of function for known Crm1-binding residues with appropriate controls (Western blots). The Env assays (Figure 4B) identify D773 and R770 as critical residues with biological triplicates and proper normalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Conservative substitution D773E retains ~50% activity while D773A and D773N are severely defective. D773A viruses can replicate poorly despite low reporter activity, and the weakly active D773N allele is found in ~2.6% of patient isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 examine D773 substitutions in detail using both reporter assays and viral replication (Figure 5A). The data show appropriate correlation between reporter activity and replication fitness. The observation of D773N in patient sequences (C42) provides evolutionary validation, though the mechanism of compensation remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Double mutants R1D\u2192AA (R770A/D773A) and R2D\u2192AA (R772A/D773A) show decreased replication, with R770 being particularly important. The triple mutant RRD\u2192AAA is highly defective, and Western blots indicate decreased Env stability for R1D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 systematically test combinations of charged residues (Figure 5B). The data demonstrate epistatic effects and identify R770 as particularly critical when combined with D773. Western blot analysis (C46) provides mechanistic insight into the R1D defect. The experiments include appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "H769K shows no functional defect, but substituting both arginines with lysine (RR\u2192KK) causes severe replication defects despite maintaining positive charge. Deep mutational scanning reveals selection against lysine at R770 and R772 positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 test charge substitutions (Figure 5C) and reveal that arginine cannot be functionally replaced by lysine at these positions. The deep mutational scanning data (C48) supports this observation. Citation to prior work (C50) showing arginine enrichment in the cytoplasmic tail provides evolutionary context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Replacing LLP-2 residues 767-776 with flexible glycine/serine linkers (10GS) abolishes function, while replacement with alanines (10A) is also defective but can be partially rescued by reintroducing charged residues, particularly D773.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 test the structural requirements of LLP-2 (Figure 6). The 10GS experiment (C52) demonstrates the necessity of helical structure, while the 10A experiments (C53-C54) show that a helical scaffold alone is insufficient but can support function when key charged residues are restored. The experimental design is logical and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C80"
+    ],
+    "result": "Functional segregation occurs in the Rev-Env overlap, with critical residues positioned on one face of each helix such that the non-binding face of Rev NES encodes the charged surface of LLP-2, and vice versa. This arrangement exploits wobble base degeneracy to minimize constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59, C67-C70, and C80 present the central finding of functional segregation. The integration of conservation analysis, deep mutational scanning, and functional assays provides strong converging evidence. Figure 7 clearly illustrates the spatial arrangement. The mechanistic explanation invoking wobble base flexibility (C69) is well-reasoned and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C72"
+    ],
+    "result": "Comparative analysis of primate lentiviruses shows that hydrophobic Crm1-binding residues in the NES are highly conserved across HIV-1, HIV-2, and SIVs, while LLP-2 sequences vary more, falling into three distinct groupings with different charge conservation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 and C72 present phylogenetic analysis (Figure 8) showing conservation patterns across lentiviruses. The sequence logo analysis is appropriate and reveals that the specific functional segregation observed in HIV-1 M is not universal. This provides important evolutionary context, though the functional implications of the different patterns remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The functional segregation in HIV-1 Env LLP-2/Rev NES is enabled by the atypical proline-rich NES and partially redundant function of LLP-2 positive charges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 synthesizes the findings to explain the mechanism of segregation. The claim is supported by the collective experimental data showing that the proline-rich NES creates a non-canonical helical structure and that multiple charged residues in LLP-2 contribute to function with some redundancy (as shown in the double mutant experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C81"
+    ],
+    "result": "The experiments reveal that Env D773 is under strong selective pressure, though its precise molecular function remains unknown, along with other critical functional residues in LLP-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C81 acknowledge that while strong selection for D773 is demonstrated through multiple approaches (conservation, DMS, functional assays), the molecular mechanism remains unclear. This is an honest assessment of the limitations of the current work and appropriately identifies areas for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Prior work showed that in HIV-1 tat and rev genes, functional residues do not overlap because functional motifs in one protein are encoded in regions overlapping with disordered linkers in the other, an arrangement possible because most overlapped proteins are predicted to be disordered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 accurately describe prior work on the tat-rev overlap (Fernandes et al., 2016) and general properties of overlapping genes (Rancurel et al., 2009). These claims provide appropriate context for the current study's focus on structured overlaps. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C23"
+    ],
+    "result": "Overlapping reading frames are functionally important in viruses, as demonstrated by immune epitopes in SARS-CoV-2 and the negative impact of mutations in HIV-1 LLP-2 and Rev NES on viral replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C23 establish the biological importance of overlapping genes through citations to SARS-CoV-2 studies and prior HIV-1 mutational work. These claims provide motivation for the study and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The size of the Env cytoplasmic tail varies among retroviruses, and loss of the tail is commonly observed when SIV is propagated in human cells, suggesting host and viral determinants influence this region's function and variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe evolutionary plasticity of the Env cytoplasmic tail based on cited literature. These observations provide context for understanding why different lentiviruses show different conservation patterns in the LLP-2 region. The claims are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "LLP-2 is transiently surface-exposed during infection and can modulate Env antigenic properties. Targeting LLP-2 with immunotherapies may force escape mutations that break Rev-Env segregation, and deep mutational scanning can map escape pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 are supported by citations describing LLP-2 exposure and function. However, claims C76-C79 are largely speculative regarding therapeutic applications. While the logic is sound and supported by citations to DMS studies in other systems (C77) and immune targeting studies (C79), no experimental validation of this therapeutic strategy is provided in the current work.",
+    "result_type": "MINOR"
+  }
+]

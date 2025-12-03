@@ -1,0 +1,466 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors demonstrate a cliff-like threshold in protein expression determined by rare codon usage in Drosophila. Reporters with up to 50% rare codons produce detectable protein (\u226550% of control), while those with >50% rare codons produce <0.3% of control protein. This threshold occurs within a narrow 10% window (50-60% rare codons) and corresponds to CAI values of 0.61-0.57, near the lower limit of endogenously expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C32 collectively demonstrate a reproducible cliff-like decline in protein expression. The data include fluorescence imaging (C15, C17, C18, C24, C29), western blots (C16, C17, C19, C23, C25, C30), and three independent 60% rare codon reporters showing consistent results (C24-C25). The threshold is validated by comparison to endogenous gene CAI distribution (C28, C31-C32), with 13/13 reporters below this threshold failing to produce appreciable protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors identify tissue-specific expression of rare codon-enriched reporters within the critical 50-60% rare codon window. GFP54C3' and mGFP100Dv1 reporters show robust expression specifically in the testis and brain, but not in most other tissues including the ovary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 are supported by fluorescence imaging showing tissue-specific expression patterns (C33, C35, C37-C40) and control experiments ruling out sequence motif artifacts (C36). The tissue specificity is reproducible across multiple reporter designs with similar CAI values, demonstrating that the phenomenon is driven by codon usage rather than specific sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors demonstrate cell-type-specific rare codon tolerance within the testis. Male germ cells and somatic hub cells robustly express rare codon-enriched reporters, while somatic cyst cells do not, despite the ubiquitin promoter being active in all cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C52 are supported by immunofluorescence with cell-type-specific markers (C46-C48) and western blot quantification (C42-C43). The control reporter GFP0D is expressed in all cell types including cyst cells (C44, C49-C50), confirming that promoter activity is not the limiting factor. This demonstrates sub-tissue-level resolution of rare codon tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors show that tissue-specific protein expression from rare codon-enriched reporters reflects both mRNA abundance and translation efficiency differences. The testis accumulates mGFP100Dv1 mRNA at levels equal to GFP0D, while other tissues show reduced mRNA levels. The brain efficiently translates mGFP100Dv1 mRNA despite lower abundance, while the ovary accumulates mRNA but shows impaired translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 are supported by qRT-PCR data (C56-C61) showing tissue-specific mRNA levels and comparison with protein data (C62-C63) revealing tissue-specific translation efficiency. The testis shows both high mRNA stability and efficient translation, while the brain shows efficient translation despite lower mRNA, and the ovary shows mRNA accumulation but poor translation. This demonstrates multiple regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C110",
+      "C133"
+    ],
+    "result": "The authors develop tissue-apparent CAI (taCAI) and demonstrate that the Drosophila testis is enriched for endogenously expressed genes with abundant rare codons relative to other tissues. This enrichment is consistent with the experimental reporter data showing high testis expression of rare codon-enriched reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C110, C133 are supported by taCAI analysis of tissue-specific gene sets from FlyAtlas2 RNAseq data. The computational finding that the testis is enriched for rare codon-enriched genes is consistent with the experimental observation that the testis robustly expresses rare codon-enriched reporters. The methodology for defining tissue-specific gene sets and calculating taCAI is described in the Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors demonstrate conserved enrichment of rare codon-enriched genes in the human testis using taCAI analysis of Human Protein Atlas data and proteomic data, suggesting a conserved role for rare codons in testis biology across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by taCAI analysis of 37 human tissues (C71) and independent proteomic data analysis (C72). The testis emerges as the top-ranked tissue in both analyses. The authors appropriately adjusted for the larger number of human tissues analyzed and used more stringent tissue-specificity criteria. The convergence of transcriptomic and proteomic evidence strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors analyze evolutionarily young genes arising from retrotransposition and find that child genes tend to have lower CAI than parent genes, with roughly half showing testis-specific expression. This suggests rare codons may restrict young gene expression to the testis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by analysis of 96 parent-child gene pairs from published data (Zhang et al., 2010). The heatmap (Figure 5A) shows child genes consistently have lower CAI than parents (C79), and 44/96 pairs show testis-specific expression of the child gene (C80). However, C81 is speculative ('may restrict') and represents an inference rather than direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors characterize RpL10Aa as an evolutionarily young, testis-specific gene with high rare codon content (CAI 0.66, rarest 8% of genes) that arose ~10 million years ago in the melanogaster subgroup. The parent gene RpL10Ab has high common codon usage (CAI 0.82) and ubiquitous expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are supported by phylogenetic analysis (C82), CAI calculations (C83, C86), and expression data from FlyAtlas2 (C84-C85, C87). The dramatic difference in codon usage and expression pattern between parent and child genes over a short evolutionary period is well-documented. However, C88 is speculative regarding positive selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors show that ectopically expressed RpL10Aa transgenes are detected in multiple tissues (testis, ovary, gut, brain) when driven by a strong ubiquitin promoter, and that codon optimization increases protein levels 2-fold in both testis and ovary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by western blot data (Figure 5\u2014figure supplement 1, Figure 5E, Figure 5\u2014figure supplement 2). The detection of ectopic RpL10Aa in multiple tissues (C89) demonstrates that rare codons alone are insufficient for tissue restriction under strong promoter control (C90). The 2-fold increase with codon optimization (C91-C92) is quantified from replicate western blots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors demonstrate that codon optimization of RpL10Aa specifically disrupts female fertility, with RpL10Aa Com females producing only 6 viable offspring compared to 452 for RpL10Aa Endo females. Male fertility is unaffected. The fertility defect is associated with pyknotic nuclei in stage 8-10 ovarioles, indicating disrupted oogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 are supported by fertility assay data (C97-C98, Figure 5F) showing dramatic female-specific infertility, lethality observations (C95-C96), and ovary imaging (C99, Figure 5G-I). The sex-specific effect is consistent with the testis-specific expression of endogenous RpL10Aa. However, the mechanism remains unclear\u2014the authors note it could be protein-mediated (dominant negative) or mRNA-mediated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors show that the testis has a higher ratio of endogenous to codon-optimized RpL10Aa mRNA compared to the ovary, reflecting the high endogenous RpL10Aa expression in testis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by qRT-PCR data (Figure 5J) comparing endogenous and codon-optimized RpL10Aa mRNA levels in testis and ovary. The interpretation (C104) that this reflects high endogenous RpL10Aa in testis is reasonable given the RNAseq data (Figure 5C). However, the experimental design uses primers that detect both transgenic and endogenous RpL10Aa Endo, which is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The authors show that mRNA abundance correlates with protein abundance across GFP reporters, suggesting rare codons impact both RNA and protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by comparison of qRT-PCR (Figure 1S) and western blot data (Figure 1R). The consistent trend between mRNA and protein abundance suggests rare codons affect both transcription/mRNA stability and translation. However, the correlation is qualitative rather than quantitative, and the authors note this is a combined effect of multiple mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The authors find no obvious differences in mRNA processing between tissues for the mGFP100Dv1 reporter, suggesting mRNA processing does not substantially contribute to tissue-specific differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by RT-PCR data (Figure 3\u2014figure supplement 4C,D) examining alternative splicing of four possible mRNA isoforms. The lack of tissue-specific differences in splicing patterns rules out differential mRNA processing as a major contributor to tissue-specific expression. However, the analysis is limited to the specific reporter construct and promoter used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The authors find no correlation between mRNA or protein length and CAI in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by analysis shown in Figure 1\u2014figure supplement 2. The scatterplot (panel A) shows R\u00b2=0.004 (p<0.0001) for transcript length vs CAI, indicating essentially no correlation despite statistical significance. The violin plots (panel B) show similar CAI distributions across different protein size ranges. This contrasts with a previous study by Duret and Mouchiroud, 1999.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The authors report a strong correlation (R\u00b2=0.82, p<0.0001) between CAI and reporter GFP abundance in whole Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by statistical analysis of the correlation between CAI and protein abundance across all reporters. The high R\u00b2 value indicates that CAI is a strong predictor of protein expression at the whole-organism level. However, the manuscript does not show the actual correlation plot, and the analysis appears to be based on the data in Figure 1R.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that the testis and brain may have distinct mechanisms for rare codon tolerance. The testis translates rare and common codon reporters with equal efficiency, while the brain appears to translate rare codon reporters more efficiently than common codon reporters, suggesting specialized translational machinery or tRNA pools in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C131 are partially supported but involve significant speculation. The taCAI analysis (C126) shows testis but not brain enrichment for rare codon genes, and prior work (C127) shows reduced rare codon impact on mRNA stability in CNS. The translation efficiency comparison (C128-C129) is based on the ratio of protein to mRNA levels, but this is calculated from non-paired samples (protein and mRNA from different experiments). The mechanistic interpretations (C130-C131) are speculative and lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "The authors note that while the accessory gland did not robustly express rare codon-enriched reporters, taCAI analysis suggests this tissue is also enriched for rare codon-enriched mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is supported by the taCAI analysis (Figure 4A) showing accessory gland enrichment for rare codons, despite the lack of robust reporter expression. This discrepancy between endogenous gene enrichment and reporter expression suggests additional regulatory mechanisms beyond codon usage may be important in the accessory gland. The authors appropriately note this in the Discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors provide background on codon usage bias, citing established literature showing that synonymous codons are used at varying frequencies, common codons generally lead to more stable and efficiently translated mRNAs, rare codons can cause ribosomal stalling and degradation, and codon bias impacts various biological processes including circadian clocks, development, and tissue-specific expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 are all supported by appropriate citations to established literature. These claims provide necessary background context for the study. The citations appear accurate and relevant, though the authors note that evidence for tissue-specific codon usage differences in humans is conflicting (C12 uses 'potentially').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The authors describe their experimental design using a standardized vector backbone with ubiquitin promoter and site-specific integration at the attP40 locus to control for chromatin environment effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 describe the experimental design and are supported by citations to previous work (Sawyer et al., 2020; Markstein et al., 2008). This standardized approach is appropriate for isolating the effects of codon usage from other variables. The authors also validate that tissue specificity persists at a different integration site (attP2, Figure 3\u2014figure supplement 3).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors review mechanisms by which rare codons can affect gene expression, including decreased transcription, reduced mRNA stability through multiple characterized pathways, and translational repression independent of mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by appropriate citations to recent literature on rare codon mechanisms. These claims provide context for interpreting the mRNA and protein data. The citations appear current and relevant to the discussion of tissue-specific differences in rare codon impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C78",
+      "C81",
+      "C88",
+      "C106",
+      "C111",
+      "C112",
+      "C115",
+      "C142",
+      "C146",
+      "C155"
+    ],
+    "result": "The authors propose that rare codons may play a role in restricting expression of evolutionarily young genes to the testis, providing an alternative or complementary mechanism to the chromatin-based 'out-of-testis' hypothesis. They suggest this may be widely applicable across sexually reproducing species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C78, C81, C88, C106, C111, C112, C115, C142, C146, C155 are largely speculative inferences based on the experimental data. While the data show: (1) testis tolerance for rare codons, (2) enrichment of rare codons in young genes, (3) testis-specific expression of young genes, and (4) fertility defects with codon optimization of RpL10Aa, the causal link between rare codons and restriction of young genes to testis is not directly demonstrated. The authors appropriately use qualifying language ('may', 'could', 'suggest', 'partially support') throughout. Additional experiments would be needed to test whether rare codons are sufficient to restrict gene expression to testis or whether they are positively selected in young genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C77",
+      "C141",
+      "C143",
+      "C144",
+      "C145",
+      "C148",
+      "C153",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors provide background on the 'out-of-testis' hypothesis, male-biased gene codon usage patterns across species, and relevant aspects of oogenesis and RpL10Ab function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C77, C141, C143-C145, C148, C153, C156-C157 are supported by appropriate citations to relevant literature. These claims provide necessary context for interpreting the results in an evolutionary and developmental framework. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The authors note that previous bioinformatic studies on tissue-specific codon usage have yielded conflicting results in humans and weak effects in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 are supported by citations to relevant studies (Plotkin et al., 2004; S\u00e9mon et al., 2006; Payne et al., 2019). The authors use this to contextualize their reporter-based approach as providing clearer evidence for tissue-specific effects. This is appropriate scientific practice in acknowledging prior work and explaining how the current study advances the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors discuss the implications of their findings, proposing that the cliff-like limit may reflect a tipping point in transcription/mRNA decay competition, and that tissue-specific rare codon tolerance plays a role analogous to chromatin regulation at the level of translation and mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121 are supported by the experimental data, but C120 and C123 involve mechanistic speculation. The cliff-like limit (C119) is well-documented experimentally. The tipping point hypothesis (C120) is plausible and supported by citations, but not directly tested. The analogy to chromatin regulation (C122-C123) is conceptually interesting but speculative. These are reasonable interpretations but would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "The authors note that tRNA levels have been measured at the organismal level in Drosophila but not at the tissue level, and suggest that mechanisms underlying rare codon tolerance may differ between tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by citations (C124) and represent reasonable speculation based on the data (C125). The lack of tissue-specific tRNA measurements is an important gap in the field that the authors appropriately acknowledge. The suggestion of distinct mechanisms is supported by the different patterns observed in testis vs brain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C154"
+    ],
+    "result": "The authors discuss possible mechanisms for the female fertility defect, including disruption of the mid-oogenesis apoptotic checkpoint, somatic origin due to promoter strength differences, dominant negative effects on RpL10Ab, or mRNA-mediated effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C152, C154 are speculative mechanistic interpretations. The observation of pyknotic nuclei at mid-oogenesis (C99) is consistent with checkpoint activation (C149), and the promoter strength data (C150) suggests possible somatic involvement (C151). The dominant negative hypothesis (C152) is plausible given 64% protein identity with RpL10Ab, which is required for female fertility (C153). However, none of these mechanisms are directly tested. The authors appropriately present these as speculative alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C114",
+      "C121",
+      "C136",
+      "C147"
+    ],
+    "result": "The authors conclude that their work reveals tissue-specific differences in codon usage impact, with the testis and brain showing high rare codon tolerance, and that codon usage is an under-appreciated aspect of tissue-specific gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C107-C109, C114, C121, C136, C147 represent summary conclusions that are well-supported by the collective experimental data. The tissue-specific differences are demonstrated through multiple approaches (reporters, taCAI analysis, cell-type-specific imaging), and the conclusions are appropriately qualified. These represent fair summaries of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors provide background on diverse biological consequences of codon bias, including effects on protein secretion in yeast, virus/host interactions, and tissue-level processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by appropriate citations to relevant literature. These claims provide context for the biological importance of codon bias beyond the specific focus of this study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  }
+]

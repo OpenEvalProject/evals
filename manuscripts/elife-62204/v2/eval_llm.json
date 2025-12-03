@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "During vegetative growth in B. subtilis, cryo-FIB-ET reveals two series of electron-dense puncta at the division site: a membrane-proximal series (~6.5 nm from membrane) and a membrane-distal series (~14 nm from membrane). These correspond to filamentous structures (~3.5 nm diameter) forming bundles that span the cell circumference. Using an FtsZ-linkerQ-rich mutant, the authors identify the membrane-distal filaments as FtsZ and the membrane-proximal filaments as FtsA, with the Z-ring being mostly continuous in the imaged sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C33 provide converging evidence from cryo-ET imaging, measurements, and genetic manipulation (FtsZ-linkerQ-rich) that establish the identity and spatial organization of FtsA and FtsZ filaments during vegetative growth. The experimental design using the linker mutant is sound, and the measurements are consistent across multiple tomograms (9 out of 16 showing continuous Z-rings). The assignment of FtsA identity is based on process of elimination and comparison to E. coli data, which is reasonable though somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44"
+    ],
+    "result": "During sporulation, FtsAZ filaments localize only on the mother cell side of the invaginating septum, contrasting with their uniform distribution during vegetative growth. The invaginating sporulation septum is thinner (~25 \u00b1 2.5 nm) than the vegetative septum (~50 \u00b1 3 nm) already during constriction, and unlike vegetative septa which thicken to ~80 nm upon closure, sporulation septa remain thin (~23 nm) and do not thicken upon closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 are well-supported by cryo-ET imaging data showing asymmetric FtsAZ localization and direct measurements of septal thickness at different stages. The comparison between vegetative and sporulation septa is systematic, and the observation that sporulation septa do not thicken upon closure is supported by both current measurements and previous work (C40). The proposed explanation for vegetative septum thickening (PG hydrolysis during cell separation, C42) is reasonable speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C58"
+    ],
+    "result": "FtsZ bundles span approximately twice the length in vegetative cells (~51 \u00b1 2.9 nm) compared to sporulating cells (~27 \u00b1 3.6 nm), indicating twice as many FtsZ filaments participate in vegetative division. The authors propose that this difference in FtsZ filament number likely causes the sporulation septum to be thinner by mediating circumferential motion of fewer PG synthases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C58 are supported by direct measurements from cryo-ET data and are logically connected to the observed septal thickness differences. The mechanistic link to PG synthase recruitment is supported by citations to previous work showing FtsZ treadmilling drives PG synthase motion (C14, C47). However, the causal relationship between FtsZ filament number and septal thickness, while plausible, is somewhat inferential and would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C59",
+      "C84"
+    ],
+    "result": "SpoIIE regulates both the asymmetric localization of FtsAZ filaments and septal thickness during sporulation. In spoIIE null mutants, the divisome architecture resembles vegetative cells with FtsAZ filaments present uniformly along the septum, and the invaginating sporulation septum is thicker (~42 \u00b1 4 nm) than wild-type sporulation septa. Analysis of domain deletion mutants shows that both the transmembrane (region I) and FtsZ-binding (region II) domains are essential for this regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C59, and C84 are well-supported by systematic cryo-ET analysis of spoIIE mutants and domain deletion strains. The phenotypic reversion to vegetative-like divisome architecture in spoIIE mutants provides strong evidence for SpoIIE's regulatory role. The analysis of three different domain deletion mutants (\u0394regI, \u0394regII, malF-spoIIE) strengthens the conclusion about which domains are essential. The slight residual difference in thickness (C51) appropriately acknowledges limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C78"
+    ],
+    "result": "The authors propose that SpoIIE, which localizes to the forespore side of the septum, may disrupt FtsA-FtsZ interactions on the forespore side, causing disassociation of residual FtsA filaments so that cytokinesis proceeds exclusively from the mother cell side. Time-lapse microscopy shows some FtsAZ signal in the forespore just after polar septation that gradually diminishes during engulfment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 are mechanistic hypotheses proposed to explain the asymmetric FtsAZ localization but lack direct experimental validation. The time-lapse microscopy data (C78) supports the presence of some FtsAZ in the forespore initially, but the proposed mechanism of SpoIIE-mediated disruption of FtsA-FtsZ interactions remains speculative. The fluorescence microscopy observations (Figure 9A-C) showing faint FtsA signals are suggestive but not conclusive due to resolution limitations acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Unlike Gram-negative bacteria (E. coli, C. crescentus) where only a single FtsZ ring is visible by cryo-ET, B. subtilis shows two distinct rings corresponding to FtsA and FtsZ during both vegetative growth and sporulation, despite having the same 5:1 FtsZ:FtsA ratio as E. coli. The A-ring appears more patchy compared to the mostly continuous Z-ring. B. subtilis also shows decreased lateral spacing between FtsZ filaments (~5.5 nm vs. 6.5-8 nm) and shorter distances of both rings from the membrane compared to E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by direct comparison of the current cryo-ET data with published data from Gram-negative bacteria. The observation of two rings in B. subtilis versus one in E. coli/C. crescentus is well-documented. The proposed explanation (C65-C66) that B. subtilis requires more FtsA filaments due to thicker septal PG is reasonable speculation supported by the thickness measurements, though it remains somewhat inferential without direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "In some cryo-ET datasets, densities connect the membrane-proximal and membrane-distal bundles in a ladder-like arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is directly supported by cryo-ET images shown in Figure 4. However, this observation is noted to occur in only 'a few data sets,' suggesting it may not be a universal feature. The authors appropriately acknowledge uncertainty about which factors produce these arrangements, proposing candidates like SepF, ZapA, or EzrA for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The Z-ring appears mostly continuous during vegetative growth in cryo-ET images, similar to previous cryo-ET studies in E. coli and C. crescentus, but contrasting with super-resolution microscopy studies showing patchy Z-rings. The authors note that cryo-ET has better spatial resolution than super-resolution microscopy and enables visualization in a near-native state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by the current data (9 out of 16 tomograms showing continuous Z-rings) and appropriate citations to previous work. The authors appropriately acknowledge limitations due to FIB milling and missing wedge issues that prevent assessment of continuity throughout the entire cellular volume. The comparison between techniques (cryo-ET vs. super-resolution microscopy) is fair and acknowledges the different strengths of each approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose that a thinner sporulation septum could be beneficial in two ways: (1) facilitating interaction between protein complex subunits in the forespore and mother cell for channels like SpoIIQ-SpoIIIAH and SpoIIIE, and (2) facilitating the engulfment process driven by coordinated PG synthesis and degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 are speculative proposals about the functional benefits of thinner sporulation septa, supported by citations to previous work on protein complexes and engulfment. While these are reasonable hypotheses consistent with known biology, they lack direct experimental validation in this study. These represent plausible interpretations of the structural observations but would require additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C79"
+    ],
+    "result": "The authors propose several potential benefits of asymmetric FtsAZ distribution: allowing sufficient FtsAZ complexes to remain in the mother cell for a backup division site at the opposite pole (which is later dissolved by SpoIIDMP or MciZ), preventing aberrant division in the small forespore, and potentially involving forespore proteins that degrade residual FtsAZ polymers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 and C79 are speculative proposals about the functional significance of asymmetric FtsAZ localization. While these hypotheses are biologically plausible and supported by citations to previous work on backup division sites and Min/nucleoid occlusion systems, they lack direct experimental validation in this study. The proposal about FtsAZ degradation proteins (C79) is particularly speculative, based only on the observation of diminishing signal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C17",
+      "C43"
+    ],
+    "result": "B. subtilis exhibits two modes of division: vegetative growth with medial septum formation producing equal daughter cells, and sporulation with polar septum formation producing a smaller forespore and larger mother cell. The vegetative septum is ~80 nm thick while the sporulation septum is ~25 nm thick upon closure. During sporulation, the mother cell and forespore do not separate after septation, and SpoIIE is absent in vegetative cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C15, C17, and C43 represent established background knowledge about B. subtilis division modes, supported by appropriate citations to previous literature. These claims provide essential context for the study and are well-established in the field. The thickness measurements (C15) are supported by citations to previous work (Illing and Errington, 1991; Tocheva et al., 2013).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The authors note that spoIIE sporulation septa are still slightly thinner (~10 nm) than vegetative septa, suggesting there may be other unidentified factors in addition to SpoIIE that regulate sporulation septum thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is an appropriate acknowledgment of a residual difference in the data that cannot be fully explained by SpoIIE alone. This represents good scientific practice in acknowledging limitations and suggesting directions for future work. The observation is supported by the measurements presented in Figure 8O.",
+    "result_type": "MINOR"
+  }
+]

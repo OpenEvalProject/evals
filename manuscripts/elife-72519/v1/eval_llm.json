@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C140",
+      "C150",
+      "C151",
+      "C154",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The study employed a systematic experimental design across five experiments (N=1000 total) using paired-associate learning with counterbalanced conditions (No \u0394, \u0394Target, \u0394Cue, \u0394Both, Control). Semantic relatedness was manipulated using two stimulus sets: a narrower set based on associative strength (AS, 0.03-0.96) and a wider set based on GloVe cosine similarity (-0.14 to 0.95), crossed with two test delays (5 min and 48 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is thoroughly documented with appropriate counterbalancing, large sample sizes, and systematic manipulation of key variables. The within-subject design with counterbalancing across every five subjects controls for item-specific effects. The use of two different stimulus sets and delays allows for generalization of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C43",
+      "C44",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C82"
+    ],
+    "result": "In the \u0394Target condition, semantic relatedness between targets produced retroactive facilitation that increased linearly with relatedness across most experiments. In the wider stimulus set with 5-min delay, retroactive interference occurred at very low relatedness but transitioned to facilitation with increasing relatedness. At 48-hr delay, low relatedness showed no effect while high relatedness produced significant facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide strong statistical evidence (all p<0.05 except ceiling effect) with regression analyses showing linear relationships. The interaction between relatedness level and delay is well-documented across experiments. The y-intercept analyses in C50-C51 appropriately distinguish between interference at low relatedness and facilitation at high relatedness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54"
+    ],
+    "result": "Memory dependence between base and secondary pair targets increased with target relatedness (p<0.01) in all experiments except the narrower stimulus set 5-min experiment that showed ceiling performance. This indicates that semantic relatedness promotes interdependence where memories are remembered or forgotten together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dependence measure (proportion of pairs both correct or both incorrect across subjects) is clearly defined and appropriately analyzed. Statistical significance is demonstrated in three of four experiments, with the exception explained by ceiling effects. The convergence of strengthening and interdependence effects supports the main theoretical claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C94"
+    ],
+    "result": "Intrusions of secondary pair targets into base pair recall did not increase with target relatedness in any experiment (all p>0.08), and significantly decreased in the wider stimulus set 5-min experiment (p<0.001). This suggests that temporal order information was preserved rather than confused.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The intrusion analysis directly tests an alternative hypothesis (source confusion) and finds evidence against it. The significant decrease in one experiment and null effects in others consistently argue against a confusion-based mechanism. This strengthens the interpretation that relatedness creates interdependence while preserving temporal context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In the \u0394Cue condition, cue relatedness showed no significant relationship with base pair memorability in any experiment (all p>0.28), though marginally significant effects appeared in two experiments (p=0.085 and p=0.056). Memory dependence showed inconsistent relationships with cue relatedness across experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The null and weak effects are consistently reported across experiments with appropriate statistical tests. The inconsistency in dependence effects (significant in 2 of 4 experiments) is acknowledged. This pattern contrasts clearly with the robust \u0394Target effects, suggesting different mechanisms may operate for cue versus target relatedness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In the \u0394Both condition, significant retroactive facilitation and memory dependence occurred only at high bivariate levels of both cue and target relatedness in the narrower stimulus set 48-hr delay experiment (p=0.001). Partial correlation analyses revealed dissociable effects: target relatedness predicted memorability (r=0.39, p=0.009) while cue relatedness predicted dependence (r=0.31, p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cluster-based permutation testing approach is appropriate for the bivariate surface analysis. The specificity to one experiment (narrower set, 48-hr delay) is clearly documented. The partial correlation analyses in C62-C65 provide additional insight into dissociable mechanisms, though the sample size for these correlations (n=45 pairs) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C113"
+    ],
+    "result": "In the study-only experiment (yoked exposure without retrieval practice), modest retroactive benefits emerged in the \u0394Target condition (target relatedness correlation p=0.02), but memory interdependencies did not increase with relatedness in any condition (all p>0.24). This contrasts with retrieval-to-criterion experiments where both benefits and interdependencies were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The yoking procedure appropriately controls for exposure duration. The dissociation between memorability effects (present) and dependence effects (absent) in study-only learning is clearly demonstrated. However, C175-C176 acknowledge limitations of the yoking procedure regarding individual differences, which could affect interpretation. The conclusion that retrieval promotes interdependence is reasonable but somewhat tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C83"
+    ],
+    "result": "In the wider stimulus set 5-min delay experiment, classical retroactive interference was replicated in the \u0394Target condition (No \u0394>\u0394Cue=control=\u0394Both>\u0394Target), but this interference was specific to conditions of low average relatedness and short delay. The \u0394Both condition did not differ from control, suggesting these pairs were treated as novel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The replication of classical RI effects validates the experimental paradigm. The statistical pattern is clearly documented with appropriate post-hoc tests. The interpretation that \u0394Both pairs are treated as novel when relatedness is low is reasonable given the null effect, though alternative explanations (e.g., floor effects) are not fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Semantic relatedness accelerated secondary pair learning: higher cue relatedness produced faster learning in every experiment (all p<0.005), and higher target relatedness produced faster learning in all but one experiment. Additive cue+target relatedness effects were significant only in the narrower stimulus set experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The learning efficiency analyses (trials to criterion) provide converging evidence that relatedness scaffolds new learning. The consistency across experiments for cue effects and near-consistency for target effects is compelling. The specificity of additive effects to the narrower stimulus set aligns with the interpretation that low overall relatedness in the wider set leads to treating pairs as novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Partial correlations between relatedness and memorability controlling for secondary pair learning efficiency remained significant in all main analyses, indicating that retroactive facilitation effects did not depend on differential exposure during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control analysis addresses an important alternative explanation. The persistence of effects after controlling for learning efficiency strengthens the interpretation that relatedness effects operate through memory mechanisms rather than simply through differential exposure. The statistical approach is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C81",
+      "C84",
+      "C93",
+      "C95",
+      "C97",
+      "C98",
+      "C109",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors propose that semantic relatedness retroactively strengthens old associations while scaffolding new ones into well-fortified memory traces through a recursive reminders mechanism. According to this account, strong pre-existing associations increase the likelihood of spontaneously recollecting base pairs during secondary pair learning, creating interdependent memory traces while preserving temporal order information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the central theoretical interpretation, but it relies heavily on inference rather than direct measurement. The pattern of results (strengthening + interdependence + preserved temporal order) is consistent with recursive reminders, but the mechanism is not directly observed. Claims C135 acknowledges this limitation: the study did not manipulate instructions or collect in-the-moment reports of reminding. Alternative mechanisms cannot be fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Prior research on recursive reminders theory establishes that: (1) explicit or spontaneous reminders of past events during new learning can reduce interference or produce facilitation, (2) subjects must notice changes and recollect changed material for benefits to arise, and (3) reminders create interdependence between memories while preserving temporal context information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior literature with appropriate citations. The characterization of recursive reminders theory provides necessary context for interpreting the current results. However, this is a literature review rather than a novel finding from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors speculate on mechanisms underlying different conditions: weaker associations may lead to noticing but not recollecting changes; recursive reminders may slow forgetting rates; the \u0394Cue condition mechanism is unclear and may involve increased target availability rather than reminding; and changing both cues and targets may prevent recollection of pre-existing links.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative interpretations (C96 uses 'speculate', C101 states 'less clear', C102 'could suggest'). While plausible, these mechanisms are not directly tested. The acknowledgment of uncertainty about \u0394Cue mechanisms (C101, C105) is appropriate given the weak and inconsistent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors propose a neurobiological framework wherein pre-existing semantic relationships exist in neocortex while novel episodic associations are bound by hippocampus. High relatedness facilitates hippocampal reactivation of base pairs during secondary learning via cortical links, creating inter-hippocampal associations. This framework is supported by prior neuroimaging and animal studies showing reactivation during new learning predicts memory integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This neurobiological framework is speculative (C121 is explicitly labeled as speculation in evidence_type). While it draws on legitimate prior neuroscience research (C114-C120), the current study includes no neural measurements. The framework is plausible and consistent with prior work, but represents a theoretical proposal rather than an empirically supported result from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The results partially support Osgood's 1949 proposal: retroactive benefits increasing along the target identity line support the predicted RI-to-RF transition, and high bivariate relatedness in \u0394Both produces facilitation as visually suggested by Osgood's surface. However, the weak cue relatedness effects do not support predictions, the full RI-to-RF crossover was only found across experiments rather than within experiments, and multiple surfaces exist depending on overall relatedness and delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This evaluation of Osgood's proposal is appropriately nuanced, acknowledging both support and discrepancies. The claim that there is 'no one surface' (C130) is well-supported by the different patterns across experiments. The assessment fairly represents both confirmatory and disconfirmatory evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors acknowledge two key limitations: (1) the study did not dissociate semantic representations (distributional models) from associative relations (association strength), and (2) the study did not directly manipulate instructions or collect in-the-moment responses about recursive reminding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are legitimate limitations appropriately acknowledged by the authors. The first limitation is important because semantic and associative relations can have different cognitive effects (C134 cites Thompson-Schill et al., 1998). The second limitation is critical for the recursive reminders interpretation, as the mechanism is inferred rather than directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Osgood's theoretical framework proposed three continuous dimensions along which relatedness influences memory: (1) along the \u0394Target line, RI should shift to RF as target relatedness increases from unrelated to identical; (2) along a line from identical to unrelated cues with unrelated targets, RI should disappear; (3) along the \u0394Cue line with identical targets, memory should improve from no change to maximum RF. These predictions form a three-dimensional surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately describes Osgood's historical theoretical proposal with appropriate citation. This provides essential context for the study's motivation and interpretation. However, this is background information rather than a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior research established that: \u0394Target learning typically causes RI due to response competition, but RI decreases when targets are semantically related; \u0394Cue learning produces little RI and can produce RF when cues are related; \u0394Both learning typically produces neither RI nor RF; and RI has been observed with modest relatedness at short delays, but longer-term memory with high bivariate relatedness has not been investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately summarizes prior literature with appropriate citations and identifies the gap (C26) that motivates the current study. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The high relatedness \u0394Target and \u0394Both conditions resemble 'closed-loop' learning configurations (A-B, B-C, A-C) from prior research, except that pre-existing semantic relationships close the loop rather than requiring de novo learning. This demonstrates interplay between semantic and episodic memory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a reasonable conceptual analogy to prior closed-loop research. The key insight is that pre-existing semantic relationships can serve a similar function to learned associations in creating interdependence. The interpretation about semantic-episodic interplay is well-supported by the pattern of results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1877 @@
+{
+  "submission": {
+    "id": "642f3106-8e06-4dd3-9f8a-f7002101e2e9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:57:48.294754Z",
+    "updated_at": "2025-12-03T16:57:48.294754Z"
+  },
+  "content": [
+    {
+      "id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "submission_id": "642f3106-8e06-4dd3-9f8a-f7002101e2e9",
+      "content_type": "manuscript",
+      "content_text": "# Sonic hedgehog-dependent recruitment of GABAergic interneurons into the developing visual thalamus\n\n## Authors\n\n- Rachana Deven Somaiya<sup>1</sup> ([ORCID: 0000-0002-1190-1192](https://orcid.org/0000-0002-1190-1192))\n- Katelyn Stebbins<sup>1</sup>\n- Ellen C Gingrich<sup>4</sup>\n- Hehuang Xie<sup>6</sup>\n- John N Campbell<sup>10</sup>\n- A Denise R Garcia<sup>4</sup> ([ORCID: 0000-0001-5809-3543](https://orcid.org/0000-0001-5809-3543))\n- Michael A Fox<sup>1</sup> ([ORCID: 0000-0002-1649-7782](https://orcid.org/0000-0002-1649-7782)) \u2020\n\n### Affiliations\n\n1. Center for Neurobiology Research, Fralin Biomedical Research Institute at Virginia Tech Carilion Roanoke United States ([ROR:02smfhw86](https://ror.org/02smfhw86))\n2. Graduate Program in Translational Biology, Medicine, and Health, Virginia Tech Blacksburg United States ([ROR:02smfhw86](https://ror.org/02smfhw86))\n3. Virginia Tech Carilion School of Medicine Roanoke United States ([ROR:02smfhw86](https://ror.org/02smfhw86))\n4. Department of Biology, Drexel University Philadelphia United States ([ROR:04bdffz58](https://ror.org/04bdffz58))\n5. Department of Neurobiology and Anatomy, Drexel University College of Medicine Philadelphia United States ([ROR:04bdffz58](https://ror.org/04bdffz58))\n6. Fralin Life Sciences Institute at Virginia Tech Blacksburg United States ([ROR:02smfhw86](https://ror.org/02smfhw86))\n7. School of Neuroscience, College of Science, Virginia Tech Blacksburg United States ([ROR:02smfhw86](https://ror.org/02smfhw86))\n8. Genetics, Bioinformatics and Computational Biology Program, Virginia Tech Blacksburg United States ([ROR:02smfhw86](https://ror.org/02smfhw86))\n9. Department of Biomedical Sciences and Pathobiology, Virginia\u2013Maryland College of Veterinary Medicine Blacksburg United States ([ROR:010prmy50](https://ror.org/010prmy50))\n10. Department of Biology, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n11. Neuroscience Graduate Program, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n12. Department of Biological Sciences, College of Science, Virginia Tech Blacksburg United States ([ROR:02smfhw86](https://ror.org/02smfhw86))\n13. Department of Pediatrics, Virginia Tech Carilion School of Medicine Roanoke United States ([ROR:02smfhw86](https://ror.org/02smfhw86))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAxons of retinal ganglion cells (RGCs) play critical roles in the development of inhibitory circuits in visual thalamus. We previously reported that RGC axons signal astrocytes to induce the expression of fibroblast growth factor 15 (FGF15), a motogen required for GABAergic interneuron migration into visual thalamus. However, how retinal axons induce thalamic astrocytes to generate Fgf15 and influence interneuron migration remains unknown. Here, we demonstrate that impairing RGC activity had little impact on interneuron recruitment into mouse visual thalamus. Instead, our data show that retinal-derived sonic hedgehog (SHH) is essential for interneuron recruitment. Specifically, we show that thalamus-projecting RGCs express SHH and thalamic astrocytes generate downstream components of SHH signaling. Deletion of RGC-derived SHH leads to a significant decrease in Fgf15 expression, as well as in the percentage of interneurons recruited into visual thalamus. Overall, our findings identify a morphogen-dependent neuron\u2013astrocyte signaling mechanism essential for the migration of thalamic interneurons.\n\n## Introduction\n\nThe retina receives light-derived signals from our visual environment and transmits those signals to several dozen regions of the brain via axons of retinal ganglion cells (RGCs). In rodents, one of the brain regions densely innervated by RGC axons is the visual thalamus, which includes several retinorecipient nuclei, such as the dorsal lateral geniculate nucleus (dLGN), intergeniculate leaflet (IGL), and ventral lateral geniculate nucleus (vLGN). Despite being adjacent, these nuclei have diverse roles in visual processing, with the dLGN being important for image-forming visual functions, and the vLGN and IGL contributing more to non-image-forming visual functions (such as visuomotor functions, circadian photoentrainment, and mood regulation) (Fratzl et al., 2021; Guido, 2018; Huang et al., 2019; Monavarfeshani et al., 2017; Salay and Huberman, 2021). Not surprisingly based on these diverse functions, the principal neurons and their connectivity differ greatly between dLGN and vLGN/IGL (Krahe et al., 2011; Sabbagh et al., 2018; Sabbagh et al., 2021). In fact, while the most abundant neurons in dLGN are glutamatergic thalamocortical relay cells, most neurons in vLGN are GABAergic and appear to represent a heterogeneous group of cell types with distinct morphologies, projections, and functions (Ciftcioglu et al., 2020; Crombie and Busse, 2021; Harrington, 1997; Yuge et al., 2011).\n\nDespite these differences, there are some similarities in the cell types of dLGN and vLGN, including the presence and distribution of local interneurons (Arcelli et al., 1997; Evangelio et al., 2018; Jaubert-Miazza et al., 2005). In fact, a shared mechanism appears to exist that contributes to the recruitment and integration of these GABAergic neurons into both dLGN and vLGN (Golding et al., 2014; Su et al., 2020). Specifically, the recruitment of migrating interneurons into the perinatal dLGN and vLGN requires the innervation of these regions by RGC axons. Our previous work identified a mechanism underlying this process (Su et al., 2020). We reported that the expression of migratory cue fibroblast growth factor 15 (FGF15) by thalamic astrocytes is dependent on retinal inputs and the loss of this FGF leads to a reduction in the number of GABAergic interneurons in visual thalamus. The decreasd number of GABAergic interneurons in the absence of FGF15 is not due to an increase in programmed cell death. Instead, these cells are misrouted into regions adjacent to the dorsal thalamus, specifically affecting their recruitment into dLGN and vLGN. However, it remains unclear how exactly retinal axons instruct astrocytes to generate FGF15 and to facilitate interneuron recruitment into visual thalamus.\n\nHere, we sought to determine the role of retinal activity and axon-derived factors in the FGF15-dependent interneuron migration into the developing visual thalamus. Our data show that impairing the activity of RGCs by genetically expressing tetanus toxin (TeNT) disrupts eye-specific segregation in dLGN and causes visual deficits in mice; however, it had little impact on interneuron recruitment into visual thalamus. Instead, we discovered that retinal-derived sonic hedgehog (SHH) is necessary for interneuron recruitment. Not only do RGCs express SHH in the perinatal retina, but also astrocytes in the developing visual thalamus express several downstream molecules involved in the canonical SHH signaling pathway, such as Ptch1, Smo, and Gli1. Conditional deletion of SHH from RGCs led to decrease in Fgf15 expression and deficits in interneuron migration into visual thalamus. Our findings demonstrate a novel activity-independent and SHH-dependent molecular mechanism for RGC axons to orchestrate thalamic interneuron migration.\n\n## Results\n\n### SHH, but not retinal activity, is critical for interneuron recruitment into visual thalamus\n\nUsing Atoh7\u2212/\u2212 (also called Math5\u2212/\u2212) mutant mice, which lack RGC inputs to visual thalamus (Figure 1A), we previously reported a significant reduction in the number of interneurons in visual thalamus (Su et al., 2020). Here, we demonstrate this loss using in situ hybridization (ISH) for Gad1 mRNA, which encodes for glutamic acid decarboxylase 67 (GAD67), an enzyme required for the production of GABA. This confirmed significant reduction in Gad1+ neurons in both dLGN and vLGN (Figure 1A\u2013C). It is important to highlight that the reduction in Gad1+ cells in Atoh7\u2212/\u2212 vLGN is less striking than in dLGN, since most Gad1+ cells in vLGN are principal projection cells and not local interneurons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of loss of retinal inputs and interneurons in visual thalamus of Atoh7\u2212/\u2212 mice. (B) In situ hybridization (ISH) shows a reduction in Gad1+ cells in dorsal lateral geniculate nucleus (dLGN) and ventral lateral geniculate nucleus (vLGN) of >P150 Atoh7\u2212/\u2212 mice compared with controls. (C) Quantification of percentage of Gad1+ cells in dLGN and vLGN of >P150 controls and Atoh7\u2212/\u2212 mice. Each data point represents one biological replicate and bars depict means \u00b1 standard error of the mean (SEM). Asterisks (*) indicate p < 0.05 by Student\u2019s t-test (n = 3 mice for each group). (D) Schematic representation of Calb2Cre-inducible expression of tetanus toxin (TeNT) in retinal ganglion cells (RGCs). Rosa26floxstop-TeNT mice with the construct containing a loxP-flanked neomycin (Neo) cassette and TeNT coding sequence under Rosa26 locus, were crossed with Calb2Cre mice that harbor a Cre recombinase and internal ribosome entry site (IRES) in the Calb2 locus. (E) ISH for Gad1 in dLGN and vLGN of P120 control and Rosa26floxstop-TeNT;Calb2Cre mice. (F) Quantification revealed no significant difference in Gad1+ cells in visual thalamus of control and Rosa26floxstop-TeNT;Calb2Cre mice. Each data point represents one biological replicate and bars depict means \u00b1 SEM. ns indicates no significant differences by Student\u2019s t-test (n = 3 mice for each group). (G) Schematic representation of strategy to delete SHH from neural cells in the developing brain. This was achieved by crossing Shhfl/fl mice, which have two loxP sites flanking exon 2 of the Shh gene, with NesCre transgenic mice that contain a Cre recombinase and human growth hormone polyadenylation signal (hGH pA) under the control of Nestin promoter and enhancer. (H) ISH revealed a dramatic reduction in Gad1+ cells in dLGN and vLGN of P18 Shhfl/flNesCre mice compared with controls. (I) Quantification of percentage of Gad1+ cells in dLGN and vLGN of P18 control and Shhfl/flNesCre mice. Each data point represents one biological replicate and bars depict means \u00b1 SEM. Asterisks represent significant differences (***p < 0.001; *p < 0.05) by Student\u2019s t-test (n = 3 mice for each group). Scale bars in C, E, H: 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) In situ hybridization (ISH) revealed a dramatic reduction in Fgf15 expression in dorsal lateral geniculate nucleus (dLGN) and ventral lateral geniculate nucleus (vLGN) of P2 Atoh7\u2212/\u2212 mutants compared with controls. (B) ISH revealed a dramatic reduction in Fgf15 expression in dLGN and vLGN of P3 Shhfl/flNesCre mutants compared with controls. (C) Quantification for density of Fgf15+ cells in dLGN and vLGN of P3 control and Shhfl/flNesCre mutant mice. Each data point represents one biological replicate and bars depict means \u00b1 standard error of the mean (SEM). Asterisks (*) indicate *p < 0.05 by Student\u2019s t-test. Scale bars in A, B: 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Expression of tdT in the GCL of P0 Rosastop-tdT;Calb2Cre mouse retina. (B) Schematic representation of the behavioral response to a looming visual stimulus. (C) Adult Rosa26floxstop-TeNT;Calb2Cre (age-matched and littermate mutants to controls) and Atoh7\u2212/\u2212 mutants (not age-matched and not littermate mutants to controls) had reduced reaction times to a looming visual stimulus compared with controls. Each data point represents one biological replicate and bars depict means \u00b1 standard error of the mean (SEM). Asterisks represent significant differences (***p < 0.001; *p < 0.05) by Student\u2019s t-test. (D) Cholera Toxin Subunit B (CTB)-labeled eye-specific retinal projections to dorsal lateral geniculate nucleus (dLGN) in P16 control and P24 Rosa26floxstop-TeNT;Calb2Cre mutant mice. (E) Quantification of the percentage of dLGN area covered by contraRGCs projections, ipsiRGCs projections, or overlapping eye-specific projections in controls and Rosa26floxstop-TeNT;Calb2Cre mutants. Each data point represents one biological replicate and bars depict means \u00b1 SEM. Asterisks (*) indicate *p < 0.05 by Student\u2019s t-test (n = 7 mice for control group and n = 8 mice for mutant group). Scale bars in A: 50 \u03bcm and D: 200 \u03bcm.\n\nAlthough the expression of FGF15 in visual thalamus is dependent on retinal inputs (Su et al., 2020, Figure 1\u2014figure supplement 1A), it remains unclear whether this is due to neuronal activity or developmentally regulated factors released by RGC axons. Here, we set out to distinguish between these possibilities. First, we tested whether retinal activity was necessary for the interneuron recruitment into visual thalamus. To impair neuronal activity from RGCs, we took advantage of a transgenic Cre-inducible system to express TeNT in RGCs (Rosa26floxstop-TeNT). TeNT is a protease that cleaves the vesicular SNARE Synaptobrevin2/VAMP2 (Syb2), which is required for the exocytosis of neurotransmitters (Link et al., 1992; Schoch et al., 2001). We crossed mice carrying the Rosa26floxstop-TeNT allele with Calb2Cre mice, in which most, if not all, RGCs express Cre recombinase (Kerr et al., 2019; Sando et al., 2017; Zhang et al., 2008) and widespread expression of Cre occurs in the GCL of the retina as early as P0 (Figure 1D and Figure 1\u2014figure supplement 2A). Our selection of Calb2Cre over Slc17a6Cre (also called vesicular glutamate transporter 2, Vglut2Cre), another widely used transgenic line to target RGCs (Wang et al., 2020), was based on the relatively low expression of Calb2 mRNA in dLGN (Ahmadlou et al., 2018) as compared to Slc17a6 (Land et al., 2004).\n\nStudies that have employed Rosa26floxstop-TeNT to block neural activity have confirmed the suppression of neurotransmitter release by observing a loss of Syb2 in Cre-expressing cells (Sando et al., 2017). However, retinal inputs account for only 5\u201310% of the total synapses onto a dLGN relay cell (Bickford et al., 2010; Van Horn et al., 2000; Sherman and Guillery, 2002), making it difficult to detect significant changes in just a small fraction of the synapses in visual thalamus. Therefore, we sought other approaches to confirm impaired retinogeniculate (RG) neuronal activity in Rosa26floxstop-TeNT;Calb2Cre. RGC activity during perinatal development is critical for eye-specific segregation of retinal axons (Huberman et al., 2003; Penn et al., 1998; Pfeiffenberger et al., 2005), therefore, we assessed eye-specific RGC projections in Rosa26floxstop-TeNT;Calb2Cre mice. Retinal terminals were labeled by intraocular injection of different fluorescently conjugated Cholera Toxin Subunit B (CTB) into each eye at P12\u2013P20. In Rosa26floxstop-TeNT;Calb2Cre mice, we observed a significant increase in the area occupied by inputs from both eyes, a hallmark of impaired activity-dependent RG refinement (Figure 1\u2014figure supplement 2D, E). Blocking retinal activity in these mice should also significantly impact visual behaviors, therefore, we also tested responses to a \u2018looming stimulus\u2019 (Koehler et al., 2019). When presented with dark looming stimuli, control mice displayed an escape response, running to a shelter within the arena. In contrast, Rosa26floxstop-TeNT;Calb2Cre mutants had impaired escape responses, indicating deficits in their ability to identify visual stimuli, although it is important to note that these responses were not as impaired as observed in Atoh7\u2212/\u2212 mutants (Figure 1\u2014figure supplement 2B, C). Together, these sets of both results suggest that there is a significant impairment in glutamate release by retinal axons in Rosa26floxstop-TeNT;Calb2Cre mice, confirming that this mutant line can be used to study the role of retinal activity in the developing brain.\n\nUsing riboprobes against Gad1, we performed ISH to detect changes in percentage of interneurons in the visual thalamus of Rosa26floxstop-TeNT;Calb2Cre mice. Surprisingly, in dLGN and vLGN, we did not observe a significant difference in the percentage of Gad1-expressing cells between the controls and mutants, revealing that decreasing retinal activity, or at least glutamate release by RGCs, had little impact on the recruitment of interneurons into visual thalamus (Figure 1E, F).\n\nSince retinal activity did not appear critical for interneuron recruitment into visual thalamus, we next investigated whether RGCs released factors beyond neurotransmitters, which could influence migration of thalamic interneurons. SHH signaling widely regulates FGF15 expression in the embryonic brain (Ishibashi and McMahon, 2002; Martinez-Ferre et al., 2016; Saitsu et al., 2005) and RGCs have been reported to generate and secrete SHH (Dakubo et al., 2008; Peng et al., 2018; Traiffort et al., 2001; Wallace and Raff, 1999), suggesting that SHH might regulate FGF15 expression and interneuron migration into visual thalamus. To test whether this was the case, we utilized a conditional allele of Shhfl/fl and crossed it with NesCre, in which there is early expression of Cre in neuronal and glial progenitors (Tronche et al., 1999; Figure 1G). As previously reported, Shhfl/flNesCre mutants survive gestation, however, die by P18 (Machold et al., 2003; Xu et al., 2005). In dLGN and vLGN of these mutants, we observed a significant and dramatic decrease in the percentage of Gad1-expressing neurons (Figure 1H, I). Furthermore, loss of SHH signaling in Shhfl/flNesCre mice resulted in a reduction in Fgf15 expression, similar to what was observed in mice lacking retinal inputs (Figure 1\u2014figure supplement 1B, C). Thus, SHH signaling appears critical for both thalamic Fgf15 expression and the recruitment of interneurons into dLGN and vLGN.\n\n### Astrocytic expression of SHH signaling components\n\nActivation of the SHH pathway is initiated when extracellular SHH binds to its canonical receptor, Patched-1 (PTCH1), present on target cells. This binding leads to the release of PTCH1-mediated inhibition of the membrane-spanning receptor, Smoothened (SMO), thereby allowing it to activate glioma-associated oncogene (GLI) transcription factors. Since our previous studies revealed that FGF15 is specifically generated by thalamic astrocytes during perinatal development (Su et al., 2020), we asked whether these astrocytes express components of the SHH signaling.\n\nUsing previously generated RNAseq datasets, we first assessed the expression profiles of several SHH signaling genes in the developing mouse dLGN and vLGN (Monavarfeshani et al., 2018). Analysis of these data showed that three canonical SHH signaling components, Ptch1, Smo, and Gli1, are expressed in visual thalamus at P3 (Figure 2A), when Fgf15 expression is high in this region (Su et al., 2020). To determine whether astrocytes express these components in visual thalamus, we undertook several approaches. First, we utilized Rosa26tdT;Gli1CreER mice whereby tamoxifen administration leads to Cre-mediated recombination of the tdT fluorescent protein in Gli1-expressing cells (Hill et al., 2019). Thalamic slices from P7 Rosa26tdT;Gli1CreER showed the presence of Gli1-tdT + cells in both dLGN and vLGN (Figure 2B). Immunostaining for S100\u00df, a commonly used marker for astrocytes, revealed S100\u00df expression in Gli1-tdT+ cells, suggesting that these astrocytes generate Gli1 (Figure 2C, D). However, we recently reported that S100\u00df immunohistochemistry (IHC) also labels a small population of microglia in visual thalamus (Somaiya et al., 2021), therefore, we confirmed that tdT+ cells were astrocytes by ISH for Gja1, the gene encoding Connexin 43. In fact, we observed that Gja1 mRNA was present in all Gli1-tdT+ cells, suggesting expression of this transcription factor was specific to astrocytes in visual thalamus (Figure 2E, F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig2-v1.jpg)\n\n**Figure 2.:** (A) Raw transcript reads of mRNAs for downstream SHH signaling components in P3 dorsal lateral geniculate nucleus (dLGN) and ventral lateral geniculate nucleus (vLGN) by RNAseq. Each data point represents a different biological replicate and bars depict means \u00b1 standard error of the mean (SEM). (B) Presence of Gli1-tdT+ cells in dLGN and vLGN of P7 Rosa26tdT;Gli1CreER mice. (C) IHC for S100\u00df in P7 Rosa26tdT;Gli1CreER mice revealed S100\u00df expression in Gli1-tdT+ cells in visual thalamus. (E) Quantification of percentage of Gli1-tdT+ cells that express S100\u00df in P7 visual thalamus. Each data point represents one biological replicate and bars depict means \u00b1 SEM (n = 3 mice for each region). (D) In situ hybridization (ISH) for Gja1 in P7 Rosa26tdT;Gli1CreER mice revealed expression of Gja1 mRNA by Gli1-tdT+ cells in visual thalamus. (F) Quantification shows 100% of Gli1-tdT+ cells express the astrocytic marker Gja1 in P7 visual thalamus. Each data point represents one biological replicate and bars depict means \u00b1 SEM (n = 3 mice for each region). (G) RNAscope-based ISH detected Ptch1 mRNA in dLGN and vLGN of P3 Aldh1l1-GFP mice. This revealed expression of Ptch1 mRNA in the cell bodies as well as in the processes of Aldh1l1-GFP+astrocytes. (H) Quantification of percentage of Aldh1l1-GFP+astrocytes that express Ptch1 mRNA in P3 visual thalamus. Each data point represents one biological replicate and bars depict means \u00b1 SEM (n = 3 mice for each region). (I) RNAscope-based ISH detected Smo mRNA in dLGN and vLGN of P3 Aldh1l1-GFP mice. This revealed expression of Smo mRNA in the cell bodies as well as in the processes of Aldh1l1-GFP+ astrocytes.(J) Quantification of percentage of Aldh1l1-GFP+astrocytes that express Smo mRNA in P3 visual thalamus. Each data point represents one biological replicate and bars depict means \u00b1 SEM (n = 3 mice for each region). Scale bars in B: 200 \u03bcm and in C, E, G, I: 10 \u03bcm.\n\nWe next examined the expression of Ptch1 and Smo in thalamic astrocytes. For this, we performed ISH in Aldh1l1-GFP mice in which most thalamic astrocytes are labeled with GFP (Somaiya et al., 2021). ISH with riboprobes against Ptch1 and Smo revealed that a high percentage of Aldh1l1-GFP+astrocytes express these genes in P3 dLGN and vLGN (Figure 2G\u2013J). Together, these data demonstrate that astrocytes in perinatal visual thalamus have the cellular machinery to respond to SHH.\n\n### SHH is generated by RGCs in the developing perinatal retina\n\nSeveral studies have shown that RGCs generate and release SHH (Dakubo et al., 2008; Peng et al., 2018; Su et al., 2020; Traiffort et al., 2001; Wallace and Raff, 1999), therefore, we next asked whether they also express SHH at times corresponding to FGF15 expression in the visual thalamus. At P3, not only is Shh mRNA expression restricted to the GCL of the retina, but it is expressed by CALB2+ RGCs (Figure 3A, B). Since at least 40 transcriptionally distinct types of RGCs exist in the mouse retina (Tran et al., 2019), we sought to identify whether all RGCs generate Shh mRNA (which looked to be the case based on ISH, Figure 3A) or whether specific RGC subtypes generate this morphogen in the perinatal retina. Rheaume et al. recently performed a comprehensive transcriptomic analysis of all mouse RGC subtypes at P5, therefore, we reanalyzed their publicly available single-cell RNAseq dataset to answer this question (Rheaume et al., 2018). Two important observations were made through this analysis: (1) all RGC subtypes express high levels of Calb2, confirming the reliability of targeting this molecule to study RGCs (Kerr et al., 2019); (2) at least 39 out of 41 RGC subtypes express Shh mRNA (Figure 3C). These results suggested that RGCs in the developing postnatal retina express SHH, which can potentially influence the role of thalamic astrocytes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig3-v1.jpg)\n\n**Figure 3.:** (A) RNAscope-based in situ hybridization (ISH) revealed dense Shh mRNA in the GCL of P3 retina (inner nuclear layer, INL; inner plexiform layer, IPL; ganglion cell layer, GCL). (B) RNAscope-based ISH revealed Shh mRNA in CALB2+ cells in the GCL of P3 retina. (C) Single-cell RNAseq data (from Rheaume et al., 2018) analyzed to show Calb2 and Shh mRNA expression by different subtypes of RGCs in P5 mouse retina. (D) Single-cell RNAseq data (from Shekhar et al., 2022) analysis for developmental expression of Calb2 by RGCs. (E) Real-time quantitative reverse transcription polymerase chain reaction (qRT-PCR) showed a reduction in Shh mRNA in retina of P3 Shhfl/fl;Calb2Cre mice compared to controls. Each data point represents one biological replicate and bars depict means \u00b1 standard error of the mean (SEM). Asterisks (*) indicate p < 0.05 by Student\u2019s t-test (n = 3 mice for each group). Scale bars in A: 100 \u03bcm and in B: 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Bright-field immunohistochemistry for \u03b2Gal in dorsal lateral geniculate nucleus (dLGN) and ventral lateral geniculate nucleus (vLGN) of P3 Gli1nlacZ/+ mice. Scale bar in A: 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) IHC for CALB2 shows sparse expression in P3 tectal and thalamic progenitor zones of thalamic GABAergic interneurons. Scale bar in A: 100 \u03bcm.\n\n### RGC-derived SHH is required for FGF15 expression and interneuron recruitment into visual thalamus\n\nPrevious studies have shown that RGC-derived SHH protein travels all the way to the optic nerve (Wallace and Raff, 1999) and can even be detected in retinorecipient brain areas (Traiffort et al., 2001). To report active SHH signaling in developing visual thalamus, we tested for the presence of Gli1. Loss of SHH has been observed to abrogate Gli1 expression, suggesting that it can be used as a proxy for SHH protein (Garcia et al., 2010). Here, staining for \u03b2Gal in P3 Gli1nlacZ/+ mice demonstrated that when thalamic Fgf15 expression is high and interneuron migration occurs, there is indeed active SHH signaling in dLGN and vLGN (Figure 3\u2014figure supplement 1).\n\nTo assess the role of SHH signaling in the developing visual thalamus, we first sought approaches to delete Ptch1 or Smo from astrocytes. However, we could not find an appropriate transgenic line that would achieve sufficient Cre recombination to delete these genes exclusively in astrocytes during early development. For instance, Gfap-cre shows only sparse Cre expression in visual thalamus before eye opening (Somaiya et al., 2021). Aldh1l1Cre displays Cre expression not only in astrocytes but also in some oligodendrocytes during early development (Tien et al., 2012) and Aldh1l1Cre/ERT2 could potentially cause significant challenges to the process of natural birth due to tamoxifen administration to pregnant mice (Lizen et al., 2015). Therefore, to circumvent these issues, we instead assessed the role of SHH signaling in the developing visual thalamus by crossing conditional allele Shhfl/fl with Calb2Cre mice. Multiple reasons led us to choose Calb2Cre mice to target RGC-derived SHH: (1) Shh and Calb2 are coexpressed in RGC subtypes (Figure 3C); (2) RGCs show no to very low expression of Calb2 before E16 (Shekhar et al., 2022), suggesting that Shhfl/fl;Calb2Cre mutant mice will retain other known Shh functions (Wang et al., 2005) in early embryonic retina (Figure 3D); (3) our previous studies have demonstrated significant reduction in gene expression specifically in RGCs using the Calb2Cre driver line (Kerr et al., 2019); (4) we previously reported that CALB2+ cells are largely absent from the neonatal and postnatal dLGN and are only sparsely distributed in vLGN at these ages (Su et al., 2011). Here, we add to these points by showing only a limited number of CALB2+ cells are present in the thalamic and tectal progenitor zones that are thought to give rise to these sets of migrating interneurons (Golding et al., 2014; Jager et al., 2016; Figure 3\u2014figure supplement 2). Therefore, using Calb2Cre mice potentially minimizes bias caused by deletion of SHH from these regions as seen in Shhfl/flNesCre mutants.\n\nShhfl/fl;Calb2Cre mutant mice are viable, fertile, and indistinguishable from littermate controls. qRT-PCR analysis confirmed a significant decrease in Shh mRNA in the retina of these mutants (Figure 3E). Intraocular CTB injections showed that RGC axons from both eyes in Shhfl/fl;Calb2Cre mice are capable of innervating dLGN and form normal appearing eye-specific projections in this region (Figure 4). The appropriate targeting of retinal axons into visual thalamus of Shhfl/fl;Calb2Cre mice suggests that any deficits we observe in these mutants is likely not a secondary consequence of dysinnervation in these mutants (such as the absence of any other axon-derived molecules).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig4-v1.jpg)\n\n**Figure 4.:** (A) Cholera Toxin Subunit B (CTB)-labeled eye-specific retinal projections to dorsal lateral geniculate nucleus (dLGN) in P25 control and P25 Shhfl/fl;Calb2Cre mutant mice. (B) Quantification for the percentage of dLGN area covered by contraRGCs projections, ipsiRGCs projections, or overlapping eye-specific projections in controls and Shhfl/fl;Calb2Cre mutants. Each data point represents one biological replicate and bars depict means \u00b1 standard error of the mean (SEM). ns indicates no significant differences by Student\u2019s t-test (n = 3 mice for each group). Scale bar in A: 100 \u03bcm.\n\nBased on this reduction in RGC-derived SHH, we investigated if RGC-derived SHH is necessary for astrocytic expression of FGF15 in the developing visual thalamus. ISH analysis demonstrated a significant reduction of Fgf15+ cells in the dLGN and vLGN of P3 Shhfl/fl;Calb2Cre mutants (Figure 5A, B). These results resembled the reduced number of Fgf15+ cells in both the Atoh7\u2212/\u2212 visual thalamus and Shhfl/flNesCre visual thalamus. Next, to determine if the changes in Fgf15 expression are the result of a decrease in astrocyte numbers, we used an astrocyte-specific mRNA we previously found to be expressed by all astrocytes in the developing visual thalamus \u2013 fibroblast growth factor receptor 3 (Fgfr3) mRNA (Somaiya et al., 2021). It is important to point out for clarity that FGFR3 is not a major receptor for FGF15 (Ornitz and Itoh, 2015). ISH analysis showed no significant difference in the distribution of Fgfr3-expressing cells between the controls and mutants (Figure 5C and D), suggesting that loss of RGC-derived SHH does not the impact number of astrocytes in developing dLGN and vLGN. These results demonstrate that SHH signaling from RGCs is not only necessary for astrocytic expression of Fgf15 in visual thalamus but that RGCs are the primary source of SHH to drive Fgf15 expression in thalamic astrocytes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig5-v1.jpg)\n\n**Figure 5.:** (A) In situ hybridization (ISH) revealed reduced Fgf15 expression in dorsal lateral geniculate nucleus (dLGN) and ventral lateral geniculate nucleus (vLGN) of P3 Shhfl/fl;Calb2Cre mutants compared to controls. (B) Quantification for density of Fgf15+ cells in dLGN and vLGN of P3 control and Shhfl/fl;Calb2Cre mutant mice. Each data point represents one biological replicate and bars depict means \u00b1 standard error of the mean (SEM). Asterisks (*) indicate *p < 0.05 by Student\u2019s t-test (n = 3 mice for each group). (C) ISH revealed no change in Fgfr3+ astrocytes in dLGN and vLGN of P7 Shhfl/fl;Calb2Cre mutants compared to controls. (D) Quantification for density of Fgfr3+ cells in dLGN and vLGN of P7 control and Shhfl/fl;Calb2Cre mutant mice. Each data point represents one biological replicate and bars depict means \u00b1 SEM. ns indicates no significant differences by Student\u2019s t-test (n = 3 mice for each group). Scale bars in A, C: 100 \u03bcm.\n\nGiven the importance of FGF15 from our studies, we subsequently examined the effect of loss of RGC-derived SHH on thalamic interneurons. We first assessed changes in interneuron recruitment after the first week of postnatal development, at the time when these cells have fully migrated into dLGN and vLGN (Su et al., 2020). Our ISH data revealed that there was significant reduction in the percentage of Gad1-expressing cells in dLGN and vLGN of Shhfl/fl;Calb2Cre mice at P7 (Figure 6A and B). It is possible, however, that the absence of RGC-derived SHH does not completely halt thalamic interneuron recruitment, but rather delays this migration process. Thus, we also investigated changes in the number of interneurons in adult Shhfl/fl;Calb2Cre mice. Indeed, our data revealed a persistent, significant decrease in the percentage of Gad1-expressing cells in dLGN and vLGN of adult mutants (Figure 6C and D), similar to what we have previously reported to occur in the visual thalamus of Fgf15\u2212/\u2212 mutants (Su et al., 2020). Overall, our findings highlight the dependence of astrocytic Fgf15 expression and recruitment of GABAergic interneurons into visual thalamus on the SHH signaling from retina.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79833/elife-79833-fig6-v1.jpg)\n\n**Figure 6.:** (A) In situ hybridization (ISH) revealed a reduction in Gad1+ cells in dorsal lateral geniculate nucleus (dLGN) and ventral lateral geniculate nucleus (vLGN) of P7 Shhfl/fl;Calb2Cre mutants compared with controls. (B) Quantification of percentage of Gad1+ cells in dLGN and vLGN of P7 Shhfl/fl;Calb2Cre and control mice. Each data point represents one biological replicate and bars depict means \u00b1 standard error of the mean (SEM). Asterisks (*) indicate *p < 0.05 by Student\u2019s t-test (n = 3 mice for each group). (C) ISH revealed a reduction in Gad1+ cells in dLGN and vLGN of >P90 Shhfl/fl;Calb2Cre mutants compared with controls. (D) Quantification of percentage of Gad1+ cells in dLGN and vLGN of adult Shhfl/fl;Calb2Cre and control mice. Each data point represents one biological replicate and bars depict means \u00b1 SEM. Asterisks (*) indicate *p < 0.05 by Student\u2019s t-test (n = 4 mice for control dLGN group, n = 3 mice for mutant dLGN group, n = 6 mice for control vLGN group, and n = 5 mice for mutant vLGN group). Scale bars in A, C: 100 \u03bcm.\n\n## Discussion\n\nThe development of sensory neuronal circuits in many brain structures is coordinated by the arrival of sensory inputs, neuronal activity, and sensory experience (Brunjes, 1994; Katz and Shatz, 1996; Nithianantharajah and Hannan, 2006; Sanes and Lichtman, 2001). Here, we focused on the visual system where a growing body of evidence highlights critical roles for RGC axons and retinal activity in orchestrating thalamic development (Brooks et al., 2013; Charalambakis et al., 2019; Golding et al., 2014; Grant et al., 2016; He et al., 2019; Sabbagh et al., 2018; Seabrook et al., 2013). As one example, we previously reported that the retinal inputs signal through thalamic astrocytes to facilitate the recruitment of interneurons into dLGN and vLGN (Su et al., 2020). Specifically, thalamic astrocytes generate the motogen FGF15, which in contrast to other FGFs has reduced heparin-binding affinity (Ornitz and Itoh, 2015) making it an ideal guidance cue for long-distance migration of interneurons (Golding et al., 2014; Jager et al., 2016; Jager et al., 2021). In this study, we uncovered the molecular mechanism by which RGC axons signal to thalamic astrocytes to influence FGF15 expression. We show that this process is independent of RGC activity, but reliant upon SHH derived from the retina. The results highlight a SHH-dependent axo-glial\u2013neuronal signaling mechanism important for thalamic development.\n\n### SHH as an intermediary between RGCs and thalamic astrocytes for interneuron migration\n\nSHH signaling has well established roles in regulating morphogenesis, cell differentiation, and cell proliferation (Garcia et al., 2018; Ishibashi and McMahon, 2002; Komada et al., 2008a; Marigo et al., 1996). In the embryonic retina, local expression of SHH is critical for promoting and maintaining the proliferation of retinal precursor cells (Jensen and Wallace, 1997; Wang et al., 2005). However, here we observed that Shh expression is largely confined to RGCs at perinatal ages. RGC-derived SHH protein has been shown to be anterogradely transported along axons, where it maintains the proliferative capacity of astrocytes in the optic nerve (Dakubo et al., 2008; Wallace and Raff, 1999) and acts as cue to guide eye-specific axon segregation at the optic chiasm (Peng et al., 2018). Radiolabeling experiments have reported the presence of retina-derived SHH as far as the superior colliculus (Traiffort et al., 2001), a midbrain retinorecipient region, suggesting previously unexplored roles for RGC-derived SHH likely exist beyond the optic nerve and chiasm.\n\nIn the current study, we discovered that retinal-derived SHH plays important roles in the recruitment of interneurons into visual thalamus, a major RGC target site in the brain. These results are in line with several recent studies with showing that neuron-derived SHH directly acts on astrocytes residing in the target regions of their axonal projections (Garcia et al., 2010; Hill et al., 2019). We show that astrocytes in visual thalamus generate several downstream components of SHH signaling and that RGC-derived SHH is critical for astrocytic Fgf15 expression in visual thalamus. While FGF15 expression has been shown to be dependent on local SHH signaling in the embryonic brain (Ishibashi and McMahon, 2002; Kim et al., 2018; Komada et al., 2008b; Saitsu et al., 2005; Yabut et al., 2019), this is the first study to provide evidence for long-distance SHH signaling to regulate the expression of astrocyte-derived FGF15.\n\nThe loss of astrocyte-derived FGF15 in Shhfl/fl;Calb2Cre mutants results in a significant loss of Gad1+ interneurons in both dLGN and vLGN. However, it does not result in an absence of these GABAergic neurons. In other brain regions, the loss of SHH signaling has been observed to dramatically affect specific subtypes of GABAergic neurons, such as interneurons that express parvalbumin (Pvalb) or Somatostatin (Sst) (Ihrie et al., 2011; Xu et al., 2005), which may explain the partial loss of Gad1+ cells in the visual thalamus of Shhfl/fl;Calb2Cre mutants. In dLGN, transcriptional, morphological, and functional studies have been unable to parse interneurons into more than one or two subtypes (Charalambakis et al., 2019; Leist et al., 2016), making it difficult to study the specificity for loss of Gad1+ cells in this retinorecipient brain region. In contrast, vLGN contains numerous transcriptionally distinct GABAergic cell types (including both local interneurons and projection neurons), some of which exhibit regional preferences, unique morphologies, and distinct connectivity (Fratzl et al., 2021; Sabbagh et al., 2021; Salay and Huberman, 2021). Thus, RGC-derived SHH may affect specific subtypes of GABAergic cells in vLGN. Unfortunately, we currently lack transcriptional or neurochemical markers to specifically label interneurons in vLGN (vs. GABAergic projection neurons) making this challenging to address at this time.\n\nIt is also noteworthy that we observed more dramatic decrease in Gad1+ cells in Shhfl/fl;NesCre mutants, particularly in the vLGN, compared to the reduction observed in either Shhfl/fl;Calb2Cre or Atoh7\u2212/\u2212 mice. We interpret this to indicate multiple roles and sources of SHH contribute to thalamic development. In Shhfl/fl;NesCre mutants, SHH loss occurs much earlier in development and in progenitor zones (Lendahl et al., 1990; Zimmerman et al., 1994), likely impacting the generation of GABAergic progenitors that will eventually migrate into visual thalamus. Indeed, Shh null mice show defects in ventral patterning and a noticeable decrease in the size of their brain (Chiang et al., 1996; Machold et al., 2003; Rallu et al., 2002), indicating key roles for this morphogen in many aspects of early brain development. In Shhfl/fl;Calb2Cre mice, SHH is not deleted from many cells in these progenitor zones, suggesting to us that these results differentiate between progenitor zone-derived SHH functions and RGC-derived SHH functions. An alternative possibility, however, is that SHH is also generated by cells within visual thalamus, which could also potentially influence interneuron migration process. While we detect no to very low expression of Shh in neonatal visual thalamus with microarray and sequencing techniques, this could reflect technical limitation in these approaches or analysis at the wrong ages (Monavarfeshani et al., 2018; Su et al., 2011).\n\n### SHH signaling in RGC subtypes\n\nEven though most RGC subtypes produce SHH, one fascinating question is whether there are any functional differences between those that express high versus low levels of this molecule. Clusters 16, 19, and 32 were notable for showing high SHH expression (Figure 3C). The transcription factor Pou6f2 reported to specify these RGC types (Rheaume et al., 2018) is expressed in a novel class of On\u2013Off direction selective RGCs (DSGCs) (Li et al., 2020). Conversely, RGC clusters 30 and 40 that are defined by transcription factor Satb2 (Rheaume et al., 2018) showed very low or no expression of SHH (Figure 3C). Satb2 is a selective marker for On\u2013Off DSGCs encoding either posterior or anterior motion (Dhande et al., 2019). Why do DSGCs subtypes exhibit varying degrees of SHH expression? One possibility is that each DSGC subtypes contributes differently to interneuron development, some of which are independent of SHH. Indeed, retinal inputs are not only important for interneuron migration but also their absence leads to arrested arbor branching and dystrophic arbor field growth of these GABAergic cells (Charalambakis et al., 2019). Studies examining interneuron development under specific RGC subtype manipulation may provide further insight into these differences.\n\n### SHH signaling in astrocytes\n\nWhile SHH signaling is well characterized for its dynamic roles in neural precursor cells and oligodendrocytes (Belgacem et al., 2016), much less is known about its function in astrocyte development, particularly in the context of the developing visual system. In the optic nerve, SHH has been reported to be necessary for maintenance of astrocyte proliferation (Dakubo et al., 2008; Wallace and Raff, 1999). Our work demonstrates that this signaling pathway is also critical for the expression of Fgf15 by thalamic astrocytes. However, only a small fraction of astrocytes express Fgf15 in visual thalamus (Su et al., 2020), raising the questions of whether only some thalamic astrocytes generate the machinery to respond to SHH or whether retina-derived SHH itself can alter the identity of thalamic astrocytes to generate heterogeneity in these cells. In support of the latter possibility, neuron-derived SHH is integral for maintaining the identity of Bergmann glial cells, a specialized astrocyte type in the cerebellum (Farmer et al., 2016). However, it is important to note that we found that a much greater proportion of astrocytes in visual thalamus generate SHH signaling components, Ptch1 and Smo, compared to those that generate Fgf15. One possibility is that all thalamic astrocytes can generate SHH-induced Fgf15, but they do it asynchronously. The widespread expression of SHH signaling components in thalamic astrocytes also suggests that this pathway could be important in ways beyond interneuron migration. Outside of the thalamus, SHH appears to be important for a variety of astrocytic functions, including modulation of neuronal activity (Hill et al., 2019), regulation of energy metabolism (Tirou et al., 2021), and neuroprotection (Ugbode et al., 2017). These studies highlight the need to further explore the roles for SHH signaling in thalamic circuits.\n\n### Neuronal activity from RGCs and thalamic interneuron migration\n\nMany developmental aspects underlying orderly connections in the mammalian visual system are dependent on retinal activity even before eye opening (D\u2019Souza and Lang, 2020; Huberman et al., 2008). In the case of thalamic interneurons, the role of retinal activity in their migration, differentiation, or incorporation into thalamic circuits was unresolved prior to these studies. Application of tetrodotoxin in neonatal organotypic thalamic slices led to the suggestion that activity was necessary for directing the spatial incorporation of these interneurons into dLGN circuits (Golding et al., 2014). In the present study, we investigated whether in vivo RGC activity contributes to the initial recruitment of GABAergic interneurons into dLGN and vLGN. Our results revealed that decreasing retinal activity had little effect on the percentage of interneurons recruited into dLGN and vLGN. Although this genetic approach to inhibit neuronal activity has been shown to be effective in the developing hippocampus (Sando et al., 2017), it is possible that we may not have completely blocked the release of neurotransmitters from RGCs in Rosa26floxstop-TeNT;Calb2Cre mutants (because of incomplete expression of TeNT by all RGCs, developmentally regulated expression of TeNT or other confounding issues) and that the remaining activity was sufficient to directly influence the interneuron migration process. In fact, it is possible that retinal activity may even induce RGCs to release SHH. Although such roles of neuronal stimulation on SHH release have not been reported in visual thalamus, activity in hippocampal neurons has been shown to cause the release of SHH in a SNAREs- and Ca2+-dependent manner (Su et al., 2017). We argue that is not the case based on the early and broad expression of Cre in the driver line applied here \u2013 ensuring all subtypes of RGCs will express TeNT at birth. Moreover, the impaired refinement of eye-specific RGC projections in Rosa26floxstop-TeNT;Calb2Cre mice similar to impairments induced by manipulation and blocking of retinal activity early in perinatal development (Huberman et al., 2003; Pfeiffenberger et al., 2005) suggests that activity is functionally reduced in these mutants. Overall, this suggests that retinal inputs have both activity-dependent and activity-independent roles in orchestrating the development of visual thalamus. The techniques typically used to study how retinal inputs impact the thalamic development, surgical or genetic removal of RGC axons from thalamus have failed to distinguish between these independent roles previously.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP (rabbit polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#A-11122; RRID:AB_221569</td>\n      <td>1:250</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-S100 (rabbit polyclonal)</td>\n      <td>Dako</td>\n      <td>Cat# Z0311; RRID:AB_10013383</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Calretinin (rabbit polyclonal)</td>\n      <td>Swant</td>\n      <td>Cat#7697; RRID: AB_2619710</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-RFP (rabbit polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#600-401-379-RTU; RRID:AB_2209751</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Digoxigenin-POD (sheep polyclonal)</td>\n      <td>Millipore Sigma</td>\n      <td>Cat#11207733910; RRID:AB_514500</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Fluorescein-POD (sheep polyclonal)</td>\n      <td>Millipore Sigma</td>\n      <td>Cat#11426346910; RRID:AB_840257</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Mus musculus)</td>\n      <td>Rosa26tdT;Gli1CreER brains</td>\n      <td>A.D.R. Garcia, Drexel University</td>\n      <td>JAX #007913, #007914; RRID: IMSR_JAX:007913, IMSR_JAX:007914</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Fluorescein RNA Labeling Mix</td>\n      <td>Roche</td>\n      <td>Cat#11685619910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>DIG RNA Labeling Mix</td>\n      <td>Roche</td>\n      <td>Cat#11277073910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SuperScript II Reverse Transcriptase</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#18064022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Cholera Toxin Subunit B (CTB, Recombinant), Alexa Fluor 488 Conjugate</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>CAT#C22841</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Tamoxifen</td>\n      <td>Sigma</td>\n      <td>CAT#T5648-1G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CTB (Recombinant), Alexa Fluor 555 Conjugate</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>CAT#C34776</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>SuperScript II Reverse Transcriptase First Strand cDNA Synthesis kit</td>\n      <td>Invitrogen</td>\n      <td>Cat#18064014</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>pGEM-T Easy Vector Systems</td>\n      <td>Promega</td>\n      <td>Cat#A1360</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>MAXIscript in vitro Transcription Kit</td>\n      <td>Ambion</td>\n      <td>Cat#AM1312</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Tyramide Signal Amplification system</td>\n      <td>PerkinElmer</td>\n      <td>Cat#NEL753001KT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>iTaq Universal SYBR Green Supermix</td>\n      <td>Bio-Rad</td>\n      <td>Cat#1725124</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Bio-Rad Total RNA Extraction from Fibrous and Fatty Tissue kit</td>\n      <td>Bio-Rad</td>\n      <td>Cat#7326870</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAscope Multiplex Fluorescent Reagent Kit V2</td>\n      <td>Advanced Cell Diagnostics (ACD)</td>\n      <td>Cat#323100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RNAseq datasets for the developing mouse dLGN and vLGN</td>\n      <td>DOI: https://doi.org/10.7554/eLife.33498.006</td>\n      <td></td>\n      <td>Monavarfeshani et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Single-cell RNAseq dataset for RGC subtypes</td>\n      <td>DOI: https://doi.org/10.1038/s41467-018-05134-3</td>\n      <td>Accession # GSE115404</td>\n      <td>Rheaume et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Single-cell RNAseq dataset for RGCs at various ages</td>\n      <td>DOI: https://doi.org/10.7554/eLife.73809</td>\n      <td>Accession # GSE185671</td>\n      <td>Shekhar et al., 2022</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>C57BL/6J mice</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX#000664; RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Calb2Cre</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX#010774; RRID:IMSR_JAX:010774</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Shhfl/fl</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX#004293; RRID:IMSR_JAX:004293</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>NesCre</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX#003771; RRID:IMSR_JAX:003771</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Aldh1l1-GFP</td>\n      <td>S. Robel, Virginia Tech</td>\n      <td>Stock#011015-UCD; RRID: MMRRC_011015-UCD</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Rosa26floxstop-TeNT</td>\n      <td>A. Maximov, The Scripps Research Institute</td>\n      <td>MGI:3839913</td>\n      <td>Zhang et al., 2008</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Rosa26tdT(Ai14)</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX#007914; RRID: IMSR_JAX:007914</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Gli1CreER</td>\n      <td>Ahn and Joyner, 2005</td>\n      <td>JAX#007913; RRID: IMSR_JAX:007913</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Rosa26tdT</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX#007909; RRID:IMSR_JAX:007909</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Atoh7\u2212/\u2212</td>\n      <td>S.W. Wang, University of Texas MD Anderson Cancer Center</td>\n      <td>Stock# 042298-UCD; RRID:MMRRC_042298-UCD</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Gli1nlacZ/+</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX#008211; RRID:IMSR_JAX:008211</td>\n      <td>Bai et al., 2002</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Gad1 cloning primerF: TGTGCCCAAACTGGTCCT; R: TGGCCGATGATTCTGGTT</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Gja1 cloning primerF: CGTGAAGGGAAGAAGCGA; R: GCCTGCAAACTGCCAAGT</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Shh qPCR primerF: ACGTAGCCGAGAAGACCCTA; R: ACTTGTCTTTGCACCTCTGAGT</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Gapdh qPCR primerF: CGTCCCGTAGACAAAATGGT; R: TTGATGGCAACAATCTCCAC</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>18s qPCR primerF: GGACCAGAGCGAAAGCATTTG; R: GCCAGTCGGCATCGTTTATG</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cre genotyping primerF: CGTACTGACGGTGGGAGAAT; R: TGCATGATCTCCGGTATTGA</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Shhfl/fl genotyping primerF: CAGAGAGCATTGTGGAATGG; R: CAGACCCTTCTGCTCATGG</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>tdT genotyping primerF: ACCTGGTGGAGTTCAAGACCATCT; R: TTGATGACGGCCATGTTGTTGTCC</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>GFP genotyping primerF: AAGTTCATCTGCACCACCG; R: TCCTTGAAGAAGATGGTGCG</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TeNT genotyping primerFA: AAAGTCGCTCTGAGTTGTTAT; RA: GGAGCGGGAGAAATGGATATG; SA: CATCAAGGAAACCCTGGACTACTG</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Atoh7\u2212/\u2212 genotyping primer (to see the wild-type band)F: ATGGCGCTCAGCTACATCAT; R: GGGTCTACCTGGAGCCTAGC</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Neo genotyping primer (to see the mutant Atoh7 band)F: GCCGGCCACAGTCGATGAATC; R: CATTGAACAAGATGGATTGCA</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Mouse Fgf15 cDNA</td>\n      <td>Horizon (Dharmacon)</td>\n      <td>Cat#MMM1013-202768318, Clone ID: 5066286</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>RNA scope probe-Mm-Smo</td>\n      <td>ACD</td>\n      <td>Cat#318411</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>RNA scope probe-Mm-Ptch1-C2</td>\n      <td>ACD</td>\n      <td>Cat#402811-C2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>RNA scope probe-Mm-Shh-C3</td>\n      <td>ACD</td>\n      <td>Cat#314361-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>RNA scope 3-plex positive control probe-mm</td>\n      <td>ACD</td>\n      <td>Cat#320881</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>RNA scope 3-plex negative control probe-mm</td>\n      <td>ACD</td>\n      <td>Cat#320871</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>Version 8.0; RRID: SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop</td>\n      <td>Adobe Inc</td>\n      <td>Version: 21.1.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ZEN black edition</td>\n      <td>Carl Zeiss</td>\n      <td>Version: 14.0.12.201</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji ImageJ</td>\n      <td>NIH</td>\n      <td>Version: 1.52p</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RStudio</td>\n      <td>RStudio, Inc</td>\n      <td>Version: 1.2.5042</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fgf15 riboprobe</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Information in \u2018Riboprobe production\u2019</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Gad1 riboprobe</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Information in \u2018Riboprobe production\u2019</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Gja1 riboprobe</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Information in \u2018Riboprobe production\u2019</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nC57BL/6J, Calb2Cre, Shhfl/fl, NesCre, and Rosa26tdT mice were obtained from The Jackson Laboratory. Atoh7\u2212/\u2212 mice were obtained from S.W. Wang (University of Texas MD Anderson Cancer Center, Houston, TX). Aldh1l1-GFP mice were provided by S. Robel (Virginia Tech, Roanoke, VA). Rosa26floxstop-TeNT mice were obtained from A. Maximov (The Scripps Research Institute, La Jolla, CA), after receiving approval from M. Goulding (The Salk Institute for Biological Studies, La Jolla, CA). Tissue from Gli1nlacZ/+ mice was obtained from A.D.R. Garcia (Drexel University, Philadelphia, PA). We were unable to breed Rosa26floxstop-TeNT;Calb2Cre with homozygous TeNT, possibly due to embryonic death. Thus, for any activity-related experiment presented in Figure 1 and Figure 1\u2014figure supplement 2, mice heterozygous for the TeNT allele were considered as mutant mice. The key resources table includes sequences for the genotyping primers. Gli1CreER mice (Ahn and Joyner, 2005) were crossed with Ai14 reporter mice (JAX #007914) to generate Rosa26tdT;Gli1CreER mice.\n\n### Preparation of tissue and IHC\n\nAs previously described, tribromoethanol (Avertin) was intraperitoneally injected into mice at a concentration of 12.5 \u03bcg/ml. The animals were trans-cardially perfused with phosphate-buffered saline (PBS) and 4% paraformaldehyde (PFA, pH 7.4) (Su et al., 2010). Brains were kept overnight at 4\u00b0C in 4% PFA, and then transferred to 30% sucrose in PBS for at least 48 hr. The fixed brains were embedded in Tissue Freezing Medium (Electron Microscopy Sciences) and 16 \u03bcm thick sections were cryosectioned on a Leica CM1850 cryostat. Following air-drying for 30 min, slides were incubated in IHC blocking buffer (2.5% bovine serum albumin, 5% normal goat serum, 0.1% Triton-X in PBS) for 30 min. Primary antibodies were diluted in blocking buffer and incubated on the sections at 4\u00b0C for >18 hr (information on the antibodies is available in the key resources table). Following washing with PBS, fluorophore-conjugated secondary antibodies (Invitrogen) were incubated on tissue sections for 1 hr at room temperature. The sections were stained with 4\u2032,6-diamidino-2-phenylindole (DAPI) after several washes in PBS and mounted with Vectashield (Vector Laboratories). Bright-field \u03b2Gal staining was performed as previously described staining (Garcia et al., 2010).\n\n### Riboprobe production\n\nRiboprobes were generated as described previously (Monavarfeshani et al., 2018; Su et al., 2010). Plasmids carrying Fgf15 were purchased from GE Dharmacon. Gad1 1 kb cDNA (corresponding to nucleotides 1099\u20132081) and Gja1 1.1 kb cDNA (corresponding to nucleotides 714\u20131854) were generated using SuperScript II Reverse Transcriptase First Strand cDNA Synthesis kit and the manufacturer\u2019s protocol. The information for the sequence of cloning primers is in the key resources table. cDNA was then cloned into the pGEM-T Easy vector. We generated sense and antisense riboprobes against Fgf15, Gad1, and Gja1 from linearized plasmids using DIG- or FL-labeled uridylyltransferase and MAXIscript in vitro Transcription Kit. Riboprobes were hydrolyzed into 500 bp fragments by adding 6 \u03bcl of Na2CO3 (1 M), 4 \u03bcl of NaHCO3 (1 M), and 80 \u03bcl of water at 60\u00b0C. Following precipitation with ethanol, the riboprobes were dissolved in RNAase-free water.\n\n### Tamoxifen administration\n\nTamoxifen was dissolved in corn oil at 5 mg/ml. Tamoxifen was administered by intragastric injection to Rosa26tdT;Gli1CreER pups at P0.\n\n### In situ hybridization (ISH) with in-house generated riboprobes\n\nWe performed ISH using the generated riboprobes on PFA-fixed, cryosectioned 16 \u03bcm tissue as described previously (Monavarfeshani et al., 2018). The sections were fixed in 4% PFA for 10 min, washed with PBS, and incubated with proteinase K (1 \u03bcg/ml in 50 mM Tris pH 7.5, 5 mM ethylenediaminetetraacetic acid (EDTA)) solution for 10 min. After being washed with PBS, sections were incubated for 5 min in 4% PFA, washed with PBS, and then incubated for 10 min in acetylation solution (0.25% acetic anhydride, 20 mM hydrochloric acid, and 1.33% triethanolamine). In order to permeabilize them, sections were incubated for 30 min in 1% Triton in PBS. For blocking endogenous peroxidase, sections were incubated in 0.3% hydrogen peroxide in PBS for 30 min, then rinsed in PBS. We equilibrated the sections in hybridization solution (50 ml of prehyb solution, 1.6 ml of 5 mg/ml, and 25 mg Roche yeast RNA) for 1 hr, and then incubated them in heat-denatured diluted riboprobes (10 min at 80\u00b0C) overnight at 65\u00b0C. On the next day, slides were rinsed with 0.2\u00d7 saline-sodium citrate solution followed by Tris-buffered saline (TBS). Following 1-hr incubation in blocking buffer (10% lamb serum, 0.2% Roche blocking reagent in TBS), the slides were incubated overnight at 4\u00b0C in horseradish peroxidase(HRP)-conjugated anti-DIG or anti-FL antibodies. On day 3, riboprobes were identified using a Tyramide Signal Amplification (TSA) system.\n\n### ISH with commercially generated RNAscope riboprobes\n\nThe probes used were RNA scope probe-Mm-Smo, RNA scope probe-Mm-Ptch1-C2, RNA scope probe-Mm-Shh-C3, RNA scope 3-plex positive control probe-mm, and RNA scope 3-plex negative control probe-mm. PFA-fixed, cryosectioned 16 \u03bcm tissue were processed for RNA Scope Multiplex using the manufacturer\u2019s protocol. Briefly, sections were dehydrated by ethanol treatment and then pretreated with target retrieval reagent and protease III. Following the hybridization of probes, we amplified signals on sections using the TSA system.\n\n### Intraocular injection of CTB\n\nWe anesthetized mice with isoflurane or hypothermia for intraocular injections, as described previously (Jaubert-Miazza et al., 2005). A fine glass pipette attached to a picospritzer was used to inject 1\u20132 \u03bcl of CTB, 1 mg/ml, intravitreally into the eye. After 2\u20133 days, mice were perfused, and their PFA-fixed brains were sectioned (100 \u03bcm) using a Vibratome (HM650v, Thermo Fisher Scientific) and mounted with Vectashield.\n\n### Imaging\n\nA Zeiss LSM700 confocal microscope was used for image acquisition. Each representative image in the figure is a maximum intensity projection. Colocalization was confirmed using single-plane images.\n\n### qRT-PCR\n\nRNA was isolated from non-pooled P3 control and Shhfl/fl;Calb2Cre mutant retina using the Bio-Rad Total RNA Extraction from Fibrous and Fatty Tissue kit and manufacturer\u2019s protocol. Using this RNA, cDNAs were generared with SuperScript II Reverse Transcriptase. qPCR was performed using iTaq Universal SYBR Green Supermix on a CFX Connect Real-Time system (Bio-Rad). Cyling conditions for 500 or 1000 ng of cDNA are as follows: 95\u00b0C for 30 s and 42 cycles of amplification (95\u00b0C for 10 s, 60\u00b0C for 30 s) followed by a melting curve analysis. Each individual run included separate 18S rRNA or glyceraldehyde-3-phosphate dehydrogenase (gapdh) control reactions. Using the 2\u2212\u0394\u0394CT method, we determined the relative quantities of RNA (Schmittgen and Livak, 2008). The primer list can be found in the key resources table.\n\n### Looming visual stimulus assay\n\nThe looming visual stimulus assay was performed as described previously (Su et al., 2021). Mice were presented with an overhead looming stimulus in a white rectangular arena (47 \u00d7 37 \u00d7 30 cm). To maintain uniform environmental conditions, the arena was illuminated evenly from above and enclosed in a light-proof, sound-isolating room. One of the corners had an opaque shelter, whose entrance faced the center of the arena. On the stand next to the arena, a camera was mounted to capture mouse behavior. The mice were only tested once each to prevent habituation to the stimulus. Ten minutes prior to the recording of the test, the animals were free to explore the arena and the shelter. Looming stimulus began when the animal moved around the center of the arena. Ten seconds of video was recorded prior to, during, and after the stimulus onset. We manually scored the animal\u2019s behavior during 10 s of looming stimulus. The reaction time was defined as a period of one or more seconds in which the animal either freezes, runs, or hides in the shelter after the stimulus began.\n\n### Quantification and statistical analysis\n\nA minimum of three biological replicates per genotype and age and a minimum of three dLGN/vLGN sections per animal were used for all quantification, based on observed variability and prior experience (Sabbagh et al., 2018; Sabbagh et al., 2021; Su et al., 2020). We did not exclude any data or animals from our analyses. No sex-specific differences were observed. Statistical analyses (Student\u2019s t-test) were performed using GraphPad Prism (version 8.0). p < 0.05 values were considered to be significantly different. The figure legends provide p values for all experiments. Data are plotted as mean \u00b1 standard error of the mean.\n\n### Percentage of Gad1+, Gja1+, and Gli1-tdT+ cells\n\nImages were obtained using \u00d710 magnification. We quantified Gad1+, Gja1+ (by ISH), and Gli1-tdT+ (by Rosa26tdT;Gli1CreER reporter mice) cells and divided by DAPI+ cells counted in that tissue section. \u2018Count Tool\u2019 function in Adobe Photoshop (version: 21.1.2) was utilized for counting purposes.\n\n### Density of Fgf15+ cells\n\nImages were obtained using \u00d710 magnification. We quantified Fgf15+ (by ISH) cells and normalized them to the area of dLGN or vLGN. Areas were measured by outlining the boundaries of dLGN or vLGN using ZEN 2.3 SP1 FP1 (black) edition (version: 14.0.12.201, Carl Zeiss).\n\n### CTB analysis\n\nImages were obtained using \u00d710 magnification and Fiji ImageJ (version: 1.52p, NIH) was used for analyses. Using \u2018Split Channels\u2019, CTB 488 and CTB 555 signal were separated. For each channel, contrast was enhanced (\u2018Enhance Contrast\u2019, 0.3%), background was subtracted (\u2018Subtract Background\u2019, 1000 pixels and \u2018Math\u2019, \u2018Subtract\u2019), and channels were binarized (\u2018Make Binary\u2019). The dLGN boundary was drawn manually by utilizing the \u2018Freehand selections\u2019 tool. Using this boundary and \u2018Area fraction\u2019 on each binarized channel, percentage of dLGN covered by ipsiRGCs or contraRGCs was determined. To obtain the overlap channel, we used \u2018AND\u2019 function in \u2018Image Calculator\u2019. On this channel, the dLGN boundary was drawn and \u2018Area fraction\u2019 gave the percentage of dLGN area covered by the overlap of ipsi and contraRGCs projections.\n\n### RNAscope analysis\n\nImages were acquired at \u00d720 magnification. We used ACD\u2019s scoring criteria for this analysis (https://acdbio.com/dataanalysisguide). A cell was classified as positive for Ptch1 or Smo (by RNAscope) if it contained at least 10 dots. This was divided by Aldh1l1-GFP+ cells (by Aldh1l1-GFP transgenic line) to obtain percentage of astrocytes that express Ptch1 or Smo in dLGN and vLGN. \u2018Count Tool\u2019 function in Adobe Photoshop was utilized for counting purposes.\n\n### Calb2 and Shh expression in RGC clusters\n\nSingle-cell data from Rheaume et al., 2018 were downloaded from NCBI GEO (accession #: GSE115404). Shh (Ensembl ID = ENSMUSG00000002633) and Calb2 (Ensemble ID = ENSMUSG00000003657) expression values were used to generate \u2018ggplot2\u2019 on RStudio (version: 1.2.5042, RStudio, Inc).\n",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "0226b1e8-8e72-4e58-b99c-9319e078c0c8",
+      "submission_id": "642f3106-8e06-4dd3-9f8a-f7002101e2e9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David D Ginty, https://ror.org/03vek6s52 Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79833.sa0](https://doi.org/10.7554/eLife.79833.sa0)\n\nThis study address an interesting mechanistic question with important implications for fundamental neural development. The authors' findings support a model in which retinal ganglion cell axons secrete Shh in the visual thalamus to induce FGF15 expression by astrocytes, which in turn attracts migrating Gad1-expressing cells (interneurons) into the vLGN and dLGN during mouse development. Interestingly, neuronal activity is not required for this process. These findings will be appreciated by a wide range of developmental neuroscientists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- David D Ginty, https://ror.org/03vek6s52 Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79833.sa1](https://doi.org/10.7554/eLife.79833.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Sonic hedgehog-dependent recruitment of GABAergic interneurons into the developing visual thalamus\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by David Ginty as the Reviewing Editor and Marianne Bronner as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andrew M Garrett (Reviewer #1); David Feldheim (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The authors did not show RGC axons targeting to the LGN in SHH mutants (Nes-Cre or Calb2-Cre). Peng et al. (2018) reported that SHH produced by RGCs contributes to axon guidance at the optic chiasm. If axons do not target correctly in these mutants, one cannot rule out the contribution of other axon-derived molecules. Ocular CTb injections in Calb2-Cre SHH F/F mice showing axons in the LGN would go a long way towards alleviating this concern, even if e.g., eye-specific segregation was not entirely normal due to guidance defects at the optic chiasm. The Reviewers and Reviewing Editor agree that this is an important experiment that needs to be done prior to publication.\n\n2) One important consideration is Calb2-Cre expression in the developing thalamus, and the specificity of Calb2-Cre line with respect to RGCs and neurons in the thalamus needs to be experimentally confirmed. Is Calb2-Cre RGC selective or does it remove Shh from regions that contain either stem cells or interneurons before they reach the dLGN and/or thalamic sources of Shh? From the discussion \"In Shhfl/fl;Calb2Cre mice, SHH is not lost from these progenitor zones, allowing us to differentiate between progenitor zone-derived SHH functions and RGC-derived SHH functions.\" This is an important statement and the authors should include this in their analysis of the Calb2-Cre, Tdt reporter in Supp. Figure 1.\n\nOne way to ask whether it is loss of Shh from RGCs that results in the phenotype is to rescue the phenotype by expressing Shh in RGCs of the mutant. An AAV injection would enable Shh to be expressed by P8, which should be enough time to rescue. While the reviewers agree that this experiment would not be a requirement for publication, it is a recommendation that the authors may want to consider.\n\n3) The authors provide evidence that they have blocked neural activity, as determined indirectly using eye-specific segregation as readout. However mice still have a diminished but not absent looming response (suggesting that they are not blind). In the absence of any direct measurement of retinal/visual activity, the authors need to be careful in their interpretation of their results. For example in the discussion \" Our results revealed that retinal activity had little effect on the percentage of interneurons recruited into dLGN and vLGN\" This should be reworded to: Our results revealed that decreasing the level of retinal activity had little effect on the percentage of interneurons recruited into dLGN and vLGN.\n\n4) The case for RGC-derived SHH would be strengthened by demonstrating that it makes it all the way down the axon and into the thalamus. This could be accomplished by immunostaining for SHH in WT vs. Math5 KO LGN. This experiment may not be feasible in the time for resubmission, but this issue should be discussed.\n",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c290b68c-cf29-447a-9a33-4fcc03cc9fdc",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C1",
+      "claim": "Atoh7\u2212/\u2212 mutant mice lack RGC inputs to visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "Using Atoh7\u2212/\u2212 (also called Math5\u2212/\u2212) mutant mice, which lack RGC inputs to visual thalamus (Figure 1A), we previously reported a significant reduction in the number of interneurons in visual thalamus (Su et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and confirmed by the schematic in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "838de030-5bcc-4445-b62c-df8354291229",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C2",
+      "claim": "There is a significant reduction in Gad1+ neurons in both dLGN and vLGN of Atoh7\u2212/\u2212 mice",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate this loss using in situ hybridization (ISH) for Gad1 mRNA, which encodes for glutamic acid decarboxylase 67 (GAD67), an enzyme required for the production of GABA. This confirmed significant reduction in Gad1+ neurons in both dLGN and vLGN (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ISH data shown in Figure 1B-C with quantification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "8e45fefe-ca97-49d8-b6e2-fd69a6282f4a",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C3",
+      "claim": "The reduction in Gad1+ cells in Atoh7\u2212/\u2212 vLGN is less striking than in dLGN because most Gad1+ cells in vLGN are principal projection cells and not local interneurons",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to highlight that the reduction in Gad1+ cells in Atoh7\u2212/\u2212 vLGN is less striking than in dLGN, since most Gad1+ cells in vLGN are principal projection cells and not local interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on knowledge of cell types in vLGN",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "e2205d83-cf18-47fc-a0c7-536727e7404f",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C4",
+      "claim": "Calb2Cre mice show widespread expression of Cre in the GCL of the retina as early as P0",
+      "claim_type": "EXPLICIT",
+      "source": "We crossed mice carrying the Rosa26floxstop-TeNT allele with Calb2Cre mice, in which most, if not all, RGCs express Cre recombinase (Kerr et al., 2019; Sando et al., 2017; Zhang et al., 2008) and widespread expression of Cre occurs in the GCL of the retina as early as P0 (Figure 1D and Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and confirmed by imaging data in Figure 1\u2014figure supplement 2A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "8b90db70-a732-4161-855c-733afa0dab17",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C5",
+      "claim": "Rosa26floxstop-TeNT;Calb2Cre mice show a significant increase in the area occupied by inputs from both eyes in dLGN",
+      "claim_type": "EXPLICIT",
+      "source": "In Rosa26floxstop-TeNT;Calb2Cre mice, we observed a significant increase in the area occupied by inputs from both eyes, a hallmark of impaired activity-dependent RG refinement (Figure 1\u2014figure supplement 2D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CTB labeling experiments shown in Figure 1\u2014figure supplement 2D, E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "49bdc597-9879-4126-ac83-2284a0c3f6d3",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C6",
+      "claim": "Rosa26floxstop-TeNT;Calb2Cre mutants had impaired escape responses to looming stimuli",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Rosa26floxstop-TeNT;Calb2Cre mutants had impaired escape responses, indicating deficits in their ability to identify visual stimuli, although it is important to note that these responses were not as impaired as observed in Atoh7\u2212/\u2212 mutants (Figure 1\u2014figure supplement 2B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral testing shown in Figure 1\u2014figure supplement 2B, C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "5617abf8-61c5-4635-8d2c-7f93d8459cc1",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C7",
+      "claim": "Impairing retinal activity had little impact on interneuron recruitment into visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in dLGN and vLGN, we did not observe a significant difference in the percentage of Gad1-expressing cells between the controls and mutants, revealing that decreasing retinal activity, or at least glutamate release by RGCs, had little impact on the recruitment of interneurons into visual thalamus (Figure 1E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ISH for Gad1 in Rosa26floxstop-TeNT;Calb2Cre mice shown in Figure 1E, F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "5a4d9a1a-b8dc-4467-9667-ee9acb272a70",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C8",
+      "claim": "RGCs generate and secrete SHH",
+      "claim_type": "EXPLICIT",
+      "source": "SHH signaling widely regulates FGF15 expression in the embryonic brain (Ishibashi and McMahon, 2002; Martinez-Ferre et al., 2016; Saitsu et al., 2005) and RGCs have been reported to generate and secrete SHH (Dakubo et al., 2008; Peng et al., 2018; Traiffort et al., 2001; Wallace and Raff, 1999), suggesting that SHH might regulate FGF15 expression and interneuron migration into visual thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "be6cbf53-0521-429c-a19d-b12362100188",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C9",
+      "claim": "Shhfl/flNesCre mutants survive gestation but die by P18",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, Shhfl/flNesCre mutants survive gestation, however, die by P18 (Machold et al., 2003; Xu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "fe468fea-c773-493f-a6a5-27024d59ba2d",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C10",
+      "claim": "There is a significant and dramatic decrease in the percentage of Gad1-expressing neurons in dLGN and vLGN of Shhfl/flNesCre mutants",
+      "claim_type": "EXPLICIT",
+      "source": "In dLGN and vLGN of these mutants, we observed a significant and dramatic decrease in the percentage of Gad1-expressing neurons (Figure 1H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ISH data shown in Figure 1H, I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "303dbe17-7dc8-438b-b63f-424dd105c659",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C11",
+      "claim": "Loss of SHH signaling in Shhfl/flNesCre mice results in a reduction in Fgf15 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, loss of SHH signaling in Shhfl/flNesCre mice resulted in a reduction in Fgf15 expression, similar to what was observed in mice lacking retinal inputs (Figure 1\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ISH data shown in Figure 1\u2014figure supplement 1B, C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "c22b0b76-b0c1-4c6d-8001-eed46bfe845a",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C12",
+      "claim": "SHH signaling is critical for both thalamic Fgf15 expression and the recruitment of interneurons into dLGN and vLGN",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SHH signaling appears critical for both thalamic Fgf15 expression and the recruitment of interneurons into dLGN and vLGN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data from Shhfl/flNesCre mutants showing reduced Fgf15 and Gad1+ cells",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "3e06e3fc-1d62-49cb-b562-0ee14a7b2a11",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C13",
+      "claim": "Ptch1, Smo, and Gli1 are expressed in visual thalamus at P3",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of these data showed that three canonical SHH signaling components, Ptch1, Smo, and Gli1, are expressed in visual thalamus at P3 (Figure 2A), when Fgf15 expression is high in this region (Su et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RNAseq data analysis shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "885e588e-309b-4955-a8a1-fc83067493c8",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C14",
+      "claim": "Gli1-tdT+ cells in visual thalamus express S100\u03b2",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining for S100\u00df, a commonly used marker for astrocytes, revealed S100\u00df expression in Gli1-tdT+ cells, suggesting that these astrocytes generate Gli1 (Figure 2C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunostaining shown in Figure 2C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "33ba0b0f-d081-4a3f-b921-899d4be9a37d",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C15",
+      "claim": "All Gli1-tdT+ cells express Gja1 mRNA in visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we observed that Gja1 mRNA was present in all Gli1-tdT+ cells, suggesting expression of this transcription factor was specific to astrocytes in visual thalamus (Figure 2E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ISH data shown in Figure 2E, F with quantification showing 100% colocalization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "a044ab18-9334-40fe-a1e0-70fc331ee374",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C16",
+      "claim": "A high percentage of Aldh1l1-GFP+ astrocytes express Ptch1 and Smo in P3 dLGN and vLGN",
+      "claim_type": "EXPLICIT",
+      "source": "ISH with riboprobes against Ptch1 and Smo revealed that a high percentage of Aldh1l1-GFP+astrocytes express these genes in P3 dLGN and vLGN (Figure 2G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RNAscope ISH data shown in Figure 2G\u2013J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "ce226dc0-13ba-480d-be0e-40608400bd7d",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C17",
+      "claim": "Astrocytes in perinatal visual thalamus have the cellular machinery to respond to SHH",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate that astrocytes in perinatal visual thalamus have the cellular machinery to respond to SHH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the expression of Ptch1, Smo, and Gli1 in thalamic astrocytes",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "85d6518b-c43d-46c1-ac14-aa3f956fbdc3",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C18",
+      "claim": "Shh mRNA expression is restricted to the GCL of the retina at P3",
+      "claim_type": "EXPLICIT",
+      "source": "At P3, not only is Shh mRNA expression restricted to the GCL of the retina, but it is expressed by CALB2+ RGCs (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RNAscope ISH shown in Figure 3A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "595e6d30-df31-4a01-ab08-753b9cd08ad2",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C19",
+      "claim": "At least 39 out of 41 RGC subtypes express Shh mRNA at P5",
+      "claim_type": "EXPLICIT",
+      "source": "Two important observations were made through this analysis: (1) all RGC subtypes express high levels of Calb2, confirming the reliability of targeting this molecule to study RGCs (Kerr et al., 2019); (2) at least 39 out of 41 RGC subtypes express Shh mRNA (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by reanalysis of single-cell RNAseq data from Rheaume et al., 2018, shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "4c7f15c3-7d86-4be8-804b-bdfceb78ffdf",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C20",
+      "claim": "RGCs in the developing postnatal retina express SHH",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that RGCs in the developing postnatal retina express SHH, which can potentially influence the role of thalamic astrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ISH and single-cell RNAseq data showing Shh expression in RGCs",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "176154d3-7078-4e03-825c-f9f6d678aae2",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C21",
+      "claim": "There is active SHH signaling in dLGN and vLGN at P3",
+      "claim_type": "EXPLICIT",
+      "source": "Here, staining for \u03b2Gal in P3 Gli1nlacZ/+ mice demonstrated that when thalamic Fgf15 expression is high and interneuron migration occurs, there is indeed active SHH signaling in dLGN and vLGN (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by \u03b2Gal staining in Gli1nlacZ/+ mice shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "dd58a847-244c-411e-be26-5854f2f55724",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C22",
+      "claim": "Shhfl/fl;Calb2Cre mutant mice are viable, fertile, and indistinguishable from littermate controls",
+      "claim_type": "EXPLICIT",
+      "source": "Shhfl/fl;Calb2Cre mutant mice are viable, fertile, and indistinguishable from littermate controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation of the mutant mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "f8969df9-0e3f-47ac-bd94-9d83dc457764",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C23",
+      "claim": "There is a significant decrease in Shh mRNA in the retina of Shhfl/fl;Calb2Cre mutants",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analysis confirmed a significant decrease in Shh mRNA in the retina of these mutants (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by qRT-PCR data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "45f1e431-f713-485d-af89-eb217e8a3e0a",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C24",
+      "claim": "RGC axons from both eyes in Shhfl/fl;Calb2Cre mice are capable of innervating dLGN and form normal appearing eye-specific projections",
+      "claim_type": "EXPLICIT",
+      "source": "Intraocular CTB injections showed that RGC axons from both eyes in Shhfl/fl;Calb2Cre mice are capable of innervating dLGN and form normal appearing eye-specific projections in this region (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CTB labeling experiments shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "43a8299a-e012-4e9e-8805-b8768be6226f",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C25",
+      "claim": "There is a significant reduction of Fgf15+ cells in the dLGN and vLGN of P3 Shhfl/fl;Calb2Cre mutants",
+      "claim_type": "EXPLICIT",
+      "source": "ISH analysis demonstrated a significant reduction of Fgf15+ cells in the dLGN and vLGN of P3 Shhfl/fl;Calb2Cre mutants (Figure 5A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ISH data shown in Figure 5A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "1e2dc6e5-7f02-4170-9aa1-5f787285aff7",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C26",
+      "claim": "Loss of RGC-derived SHH does not impact the number of astrocytes in developing dLGN and vLGN",
+      "claim_type": "EXPLICIT",
+      "source": "ISH analysis showed no significant difference in the distribution of Fgfr3-expressing cells between the controls and mutants (Figure 5C and D), suggesting that loss of RGC-derived SHH does not the impact number of astrocytes in developing dLGN and vLGN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ISH for Fgfr3 shown in Figure 5C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "7157b5e1-0f69-465a-94d0-b005c3aa8efe",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C27",
+      "claim": "SHH signaling from RGCs is necessary for astrocytic expression of Fgf15 in visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that SHH signaling from RGCs is not only necessary for astrocytic expression of Fgf15 in visual thalamus but that RGCs are the primary source of SHH to drive Fgf15 expression in thalamic astrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing reduced Fgf15 in Shhfl/fl;Calb2Cre mutants",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "ad959c86-1e5b-4f3e-97bc-e9421ba6fa71",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C28",
+      "claim": "There is a significant reduction in the percentage of Gad1-expressing cells in dLGN and vLGN of Shhfl/fl;Calb2Cre mice at P7",
+      "claim_type": "EXPLICIT",
+      "source": "Our ISH data revealed that there was significant reduction in the percentage of Gad1-expressing cells in dLGN and vLGN of Shhfl/fl;Calb2Cre mice at P7 (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ISH data shown in Figure 6A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "d2c6f035-6fbe-4142-9e25-fe9367c94ec9",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C29",
+      "claim": "There is a persistent, significant decrease in the percentage of Gad1-expressing cells in dLGN and vLGN of adult Shhfl/fl;Calb2Cre mutants",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our data revealed a persistent, significant decrease in the percentage of Gad1-expressing cells in dLGN and vLGN of adult mutants (Figure 6C and D), similar to what we have previously reported to occur in the visual thalamus of Fgf15\u2212/\u2212 mutants (Su et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ISH data shown in Figure 6C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "00bd65bf-0958-4341-93de-4b8635148486",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C30",
+      "claim": "RGC axons play critical roles in the development of inhibitory circuits in visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "Axons of retinal ganglion cells (RGCs) play critical roles in the development of inhibitory circuits in visual thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the overall findings of the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "f33b82f1-c6c4-472e-96c2-bcf0301ed776",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C31",
+      "claim": "RGC axons signal astrocytes to induce the expression of FGF15",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that RGC axons signal astrocytes to induce the expression of fibroblast growth factor 15 (FGF15), a motogen required for GABAergic interneuron migration into visual thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work (Su et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "7ca10303-e2ef-41fe-a365-e8195ae7ebd2",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C32",
+      "claim": "Thalamus-projecting RGCs express SHH",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that thalamus-projecting RGCs express SHH and thalamic astrocytes generate downstream components of SHH signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the ISH and RNAseq data in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "53ca3a1f-4092-4d3b-a8a7-c1e849ac57cc",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C33",
+      "claim": "Deletion of RGC-derived SHH leads to a significant decrease in Fgf15 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of RGC-derived SHH leads to a significant decrease in Fgf15 expression, as well as in the percentage of interneurons recruited into visual thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the data from Shhfl/fl;Calb2Cre mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "5beae093-3581-43a0-860f-2c04dcb0cd28",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C34",
+      "claim": "Retinal-derived sonic hedgehog (SHH) is essential for interneuron recruitment into visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our data show that retinal-derived sonic hedgehog (SHH) is essential for interneuron recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the data from Shhfl/fl;Calb2Cre mutants",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "96302428-3104-4791-9643-fa4ebd36ef67",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C35",
+      "claim": "The dLGN is important for image-forming visual functions",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being adjacent, these nuclei have diverse roles in visual processing, with the dLGN being important for image-forming visual functions, and the vLGN and IGL contributing more to non-image-forming visual functions (such as visuomotor functions, circadian photoentrainment, and mood regulation) (Fratzl et al., 2021; Guido, 2018; Huang et al., 2019; Monavarfeshani et al., 2017; Salay and Huberman, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "434ee252-95ca-4172-983e-dc04020888d7",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C36",
+      "claim": "The vLGN and IGL contribute to non-image-forming visual functions",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being adjacent, these nuclei have diverse roles in visual processing, with the dLGN being important for image-forming visual functions, and the vLGN and IGL contributing more to non-image-forming visual functions (such as visuomotor functions, circadian photoentrainment, and mood regulation) (Fratzl et al., 2021; Guido, 2018; Huang et al., 2019; Monavarfeshani et al., 2017; Salay and Huberman, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "da5810f5-d447-4556-90f2-1e41d3f6928f",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C37",
+      "claim": "The most abundant neurons in dLGN are glutamatergic thalamocortical relay cells",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, while the most abundant neurons in dLGN are glutamatergic thalamocortical relay cells, most neurons in vLGN are GABAergic and appear to represent a heterogeneous group of cell types with distinct morphologies, projections, and functions (Ciftcioglu et al., 2020; Crombie and Busse, 2021; Harrington, 1997; Yuge et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "bffc1fff-0b91-48be-ad5a-7ccc3bc66251",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C38",
+      "claim": "Most neurons in vLGN are GABAergic",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, while the most abundant neurons in dLGN are glutamatergic thalamocortical relay cells, most neurons in vLGN are GABAergic and appear to represent a heterogeneous group of cell types with distinct morphologies, projections, and functions (Ciftcioglu et al., 2020; Crombie and Busse, 2021; Harrington, 1997; Yuge et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "8d4250fa-54af-4454-bc3a-5bf6f9b2ca16",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C39",
+      "claim": "A shared mechanism contributes to the recruitment and integration of GABAergic neurons into both dLGN and vLGN",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a shared mechanism appears to exist that contributes to the recruitment and integration of these GABAergic neurons into both dLGN and vLGN (Golding et al., 2014; Su et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "9057f6e4-7bf3-45cb-a4b8-76ddf6d4ecd8",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C40",
+      "claim": "The recruitment of migrating interneurons into the perinatal dLGN and vLGN requires the innervation of these regions by RGC axons",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the recruitment of migrating interneurons into the perinatal dLGN and vLGN requires the innervation of these regions by RGC axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited in the manuscript",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "7a9e1693-99b7-4174-b8a6-8e56452e0a35",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C41",
+      "claim": "The expression of FGF15 by thalamic astrocytes is dependent on retinal inputs",
+      "claim_type": "EXPLICIT",
+      "source": "We reported that the expression of migratory cue fibroblast growth factor 15 (FGF15) by thalamic astrocytes is dependent on retinal inputs and the loss of this FGF leads to a reduction in the number of GABAergic interneurons in visual thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work (Su et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "f40480a7-df6b-4bb6-a6b1-c9990ccfd2fb",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C42",
+      "claim": "The loss of FGF15 leads to a reduction in the number of GABAergic interneurons in visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "We reported that the expression of migratory cue fibroblast growth factor 15 (FGF15) by thalamic astrocytes is dependent on retinal inputs and the loss of this FGF leads to a reduction in the number of GABAergic interneurons in visual thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work (Su et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "83d1264f-b971-48c0-9343-81a081c1487b",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C43",
+      "claim": "The decreased number of GABAergic interneurons in the absence of FGF15 is not due to an increase in programmed cell death",
+      "claim_type": "EXPLICIT",
+      "source": "The decreasd number of GABAergic interneurons in the absence of FGF15 is not due to an increase in programmed cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous findings",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "45cd8229-b822-47b0-9ee0-bac1d419252c",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C44",
+      "claim": "In the absence of FGF15, GABAergic interneurons are misrouted into regions adjacent to the dorsal thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, these cells are misrouted into regions adjacent to the dorsal thalamus, specifically affecting their recruitment into dLGN and vLGN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous findings",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "c8d14398-1e9f-45b0-b645-064d4bfcc335",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C45",
+      "claim": "TeNT is a protease that cleaves Synaptobrevin2/VAMP2",
+      "claim_type": "EXPLICIT",
+      "source": "TeNT is a protease that cleaves the vesicular SNARE Synaptobrevin2/VAMP2 (Syb2), which is required for the exocytosis of neurotransmitters (Link et al., 1992; Schoch et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "1eb10dfb-8ff6-4d2f-99b0-a72abf26f49e",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C46",
+      "claim": "Synaptobrevin2/VAMP2 is required for the exocytosis of neurotransmitters",
+      "claim_type": "EXPLICIT",
+      "source": "TeNT is a protease that cleaves the vesicular SNARE Synaptobrevin2/VAMP2 (Syb2), which is required for the exocytosis of neurotransmitters (Link et al., 1992; Schoch et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "bca1418e-f295-4ef4-ba43-363921f68690",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C47",
+      "claim": "Retinal inputs account for only 5\u201310% of the total synapses onto a dLGN relay cell",
+      "claim_type": "EXPLICIT",
+      "source": "However, retinal inputs account for only 5\u201310% of the total synapses onto a dLGN relay cell (Bickford et al., 2010; Van Horn et al., 2000; Sherman and Guillery, 2002), making it difficult to detect significant changes in just a small fraction of the synapses in visual thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "10cb8cf9-bfd9-43b7-a812-c53eab767664",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C48",
+      "claim": "RGC activity during perinatal development is critical for eye-specific segregation of retinal axons",
+      "claim_type": "EXPLICIT",
+      "source": "RGC activity during perinatal development is critical for eye-specific segregation of retinal axons (Huberman et al., 2003; Penn et al., 1998; Pfeiffenberger et al., 2005), therefore, we assessed eye-specific RGC projections in Rosa26floxstop-TeNT;Calb2Cre mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "f84053d1-ba65-4a2b-9cce-f232930e5709",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C49",
+      "claim": "SHH signaling regulates morphogenesis, cell differentiation, and cell proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "SHH signaling has well established roles in regulating morphogenesis, cell differentiation, and cell proliferation (Garcia et al., 2018; Ishibashi and McMahon, 2002; Komada et al., 2008a; Marigo et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "315a4c6d-2bac-41d2-93cf-9ca7e3166779",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C50",
+      "claim": "In the embryonic retina, local expression of SHH is critical for promoting and maintaining the proliferation of retinal precursor cells",
+      "claim_type": "EXPLICIT",
+      "source": "In the embryonic retina, local expression of SHH is critical for promoting and maintaining the proliferation of retinal precursor cells (Jensen and Wallace, 1997; Wang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "b0618d5f-2ed4-4d23-b129-423b02a30d8c",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C51",
+      "claim": "RGC-derived SHH protein is anterogradely transported along axons",
+      "claim_type": "EXPLICIT",
+      "source": "RGC-derived SHH protein has been shown to be anterogradely transported along axons, where it maintains the proliferative capacity of astrocytes in the optic nerve (Dakubo et al., 2008; Wallace and Raff, 1999) and acts as cue to guide eye-specific axon segregation at the optic chiasm (Peng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "4562a7bf-2702-4efa-a8f2-a4c189829f9f",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C52",
+      "claim": "RGC-derived SHH maintains the proliferative capacity of astrocytes in the optic nerve",
+      "claim_type": "EXPLICIT",
+      "source": "RGC-derived SHH protein has been shown to be anterogradely transported along axons, where it maintains the proliferative capacity of astrocytes in the optic nerve (Dakubo et al., 2008; Wallace and Raff, 1999) and acts as cue to guide eye-specific axon segregation at the optic chiasm (Peng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "75d7cb69-109b-46df-b5a7-aa14d0757445",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C53",
+      "claim": "RGC-derived SHH acts as a cue to guide eye-specific axon segregation at the optic chiasm",
+      "claim_type": "EXPLICIT",
+      "source": "RGC-derived SHH protein has been shown to be anterogradely transported along axons, where it maintains the proliferative capacity of astrocytes in the optic nerve (Dakubo et al., 2008; Wallace and Raff, 1999) and acts as cue to guide eye-specific axon segregation at the optic chiasm (Peng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "3a2c6363-74f2-4034-aa3d-dc3a8ee32fce",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C54",
+      "claim": "Retina-derived SHH has been detected as far as the superior colliculus",
+      "claim_type": "EXPLICIT",
+      "source": "Radiolabeling experiments have reported the presence of retina-derived SHH as far as the superior colliculus (Traiffort et al., 2001), a midbrain retinorecipient region, suggesting previously unexplored roles for RGC-derived SHH likely exist beyond the optic nerve and chiasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "68032f65-70ef-4e09-82f4-23518028b3a9",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C55",
+      "claim": "Neuron-derived SHH directly acts on astrocytes residing in the target regions of their axonal projections",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with several recent studies with showing that neuron-derived SHH directly acts on astrocytes residing in the target regions of their axonal projections (Garcia et al., 2010; Hill et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "314afea4-25d4-4159-8aa7-bf48bf9be8a1",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C56",
+      "claim": "FGF15 expression is dependent on local SHH signaling in the embryonic brain",
+      "claim_type": "EXPLICIT",
+      "source": "While FGF15 expression has been shown to be dependent on local SHH signaling in the embryonic brain (Ishibashi and McMahon, 2002; Kim et al., 2018; Komada et al., 2008b; Saitsu et al., 2005; Yabut et al., 2019), this is the first study to provide evidence for long-distance SHH signaling to regulate the expression of astrocyte-derived FGF15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "1ad203c1-2c08-4bae-ae4d-31495ba56c02",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C57",
+      "claim": "This is the first study to provide evidence for long-distance SHH signaling to regulate the expression of astrocyte-derived FGF15",
+      "claim_type": "EXPLICIT",
+      "source": "While FGF15 expression has been shown to be dependent on local SHH signaling in the embryonic brain (Ishibashi and McMahon, 2002; Kim et al., 2018; Komada et al., 2008b; Saitsu et al., 2005; Yabut et al., 2019), this is the first study to provide evidence for long-distance SHH signaling to regulate the expression of astrocyte-derived FGF15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "27a435e5-788f-43aa-a9e7-1715a0dc1aa1",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C58",
+      "claim": "The loss of SHH signaling dramatically affects specific subtypes of GABAergic neurons in other brain regions",
+      "claim_type": "EXPLICIT",
+      "source": "In other brain regions, the loss of SHH signaling has been observed to dramatically affect specific subtypes of GABAergic neurons, such as interneurons that express parvalbumin (Pvalb) or Somatostatin (Sst) (Ihrie et al., 2011; Xu et al., 2005), which may explain the partial loss of Gad1+ cells in the visual thalamus of Shhfl/fl;Calb2Cre mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "846823f8-35d8-4c17-8f2e-e81f3331d04a",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C59",
+      "claim": "Transcriptional, morphological, and functional studies have been unable to parse dLGN interneurons into more than one or two subtypes",
+      "claim_type": "EXPLICIT",
+      "source": "In dLGN, transcriptional, morphological, and functional studies have been unable to parse interneurons into more than one or two subtypes (Charalambakis et al., 2019; Leist et al., 2016), making it difficult to study the specificity for loss of Gad1+ cells in this retinorecipient brain region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "294c6158-f526-497c-9c4b-4338c7206221",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C60",
+      "claim": "vLGN contains numerous transcriptionally distinct GABAergic cell types",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, vLGN contains numerous transcriptionally distinct GABAergic cell types (including both local interneurons and projection neurons), some of which exhibit regional preferences, unique morphologies, and distinct connectivity (Fratzl et al., 2021; Sabbagh et al., 2021; Salay and Huberman, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "577ec2f9-c5f0-4516-ad96-948f94fbde4f",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C61",
+      "claim": "A more dramatic decrease in Gad1+ cells was observed in Shhfl/fl;NesCre mutants compared to Shhfl/fl;Calb2Cre or Atoh7\u2212/\u2212 mice",
+      "claim_type": "EXPLICIT",
+      "source": "It is also noteworthy that we observed more dramatic decrease in Gad1+ cells in Shhfl/fl;NesCre mutants, particularly in the vLGN, compared to the reduction observed in either Shhfl/fl;Calb2Cre or Atoh7\u2212/\u2212 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of data from different mutant lines",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "d9d20ccf-d151-461f-9f15-adf850ba1190",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C62",
+      "claim": "In Shhfl/fl;NesCre mutants, SHH loss occurs much earlier in development and in progenitor zones",
+      "claim_type": "EXPLICIT",
+      "source": "In Shhfl/fl;NesCre mutants, SHH loss occurs much earlier in development and in progenitor zones (Lendahl et al., 1990; Zimmerman et al., 1994), likely impacting the generation of GABAergic progenitors that will eventually migrate into visual thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the timing and location of Cre expression in NesCre mice",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "0f6eb30e-8909-421b-9f01-3d00b8502f92",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C63",
+      "claim": "Shh null mice show defects in ventral patterning and a noticeable decrease in the size of their brain",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Shh null mice show defects in ventral patterning and a noticeable decrease in the size of their brain (Chiang et al., 1996; Machold et al., 2003; Rallu et al., 2002), indicating key roles for this morphogen in many aspects of early brain development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "9761363f-4e42-45fd-a398-cf9043bb8d1f",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C64",
+      "claim": "SHH is necessary for maintenance of astrocyte proliferation in the optic nerve",
+      "claim_type": "EXPLICIT",
+      "source": "In the optic nerve, SHH has been reported to be necessary for maintenance of astrocyte proliferation (Dakubo et al., 2008; Wallace and Raff, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "aee79ad3-fb98-4893-bc9f-2d2afef27dbe",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C65",
+      "claim": "Only a small fraction of astrocytes express Fgf15 in visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "However, only a small fraction of astrocytes express Fgf15 in visual thalamus (Su et al., 2020), raising the questions of whether only some thalamic astrocytes generate the machinery to respond to SHH or whether retina-derived SHH itself can alter the identity of thalamic astrocytes to generate heterogeneity in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "c9a2b6cd-c2b3-45be-baf0-2ec985e59041",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C66",
+      "claim": "Neuron-derived SHH is integral for maintaining the identity of Bergmann glial cells",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the latter possibility, neuron-derived SHH is integral for maintaining the identity of Bergmann glial cells, a specialized astrocyte type in the cerebellum (Farmer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "d100df42-6a03-44fe-8095-86c5a9f3f2a8",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C67",
+      "claim": "A much greater proportion of astrocytes in visual thalamus generate SHH signaling components Ptch1 and Smo compared to those that generate Fgf15",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that we found that a much greater proportion of astrocytes in visual thalamus generate SHH signaling components, Ptch1 and Smo, compared to those that generate Fgf15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "01cf0e2a-4c40-4fa8-915d-3ccc060b9bf2",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C68",
+      "claim": "SHH appears to be important for a variety of astrocytic functions including modulation of neuronal activity, regulation of energy metabolism, and neuroprotection",
+      "claim_type": "EXPLICIT",
+      "source": "Outside of the thalamus, SHH appears to be important for a variety of astrocytic functions, including modulation of neuronal activity (Hill et al., 2019), regulation of energy metabolism (Tirou et al., 2021), and neuroprotection (Ugbode et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "ae9ed3ef-319b-4995-802d-8cac51287483",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C69",
+      "claim": "Many developmental aspects underlying orderly connections in the mammalian visual system are dependent on retinal activity even before eye opening",
+      "claim_type": "EXPLICIT",
+      "source": "Many developmental aspects underlying orderly connections in the mammalian visual system are dependent on retinal activity even before eye opening (D'Souza and Lang, 2020; Huberman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "d2d1c920-6fd2-4227-879f-6937be467037",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C70",
+      "claim": "Application of tetrodotoxin in neonatal organotypic thalamic slices led to the suggestion that activity was necessary for directing the spatial incorporation of interneurons into dLGN circuits",
+      "claim_type": "EXPLICIT",
+      "source": "Application of tetrodotoxin in neonatal organotypic thalamic slices led to the suggestion that activity was necessary for directing the spatial incorporation of these interneurons into dLGN circuits (Golding et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "4b99170a-1e07-429d-8e40-0b8f635f47c8",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C71",
+      "claim": "Activity in hippocampal neurons causes the release of SHH in a SNAREs- and Ca2+-dependent manner",
+      "claim_type": "EXPLICIT",
+      "source": "Although such roles of neuronal stimulation on SHH release have not been reported in visual thalamus, activity in hippocampal neurons has been shown to cause the release of SHH in a SNAREs- and Ca2+-dependent manner (Su et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "44ca78f8-88f6-4c20-8b2e-68e875d03fc9",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C72",
+      "claim": "Retinal inputs have both activity-dependent and activity-independent roles in orchestrating the development of visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this suggests that retinal inputs have both activity-dependent and activity-independent roles in orchestrating the development of visual thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings that activity blockade does not affect interneuron recruitment but SHH deletion does",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "54610b13-0e29-4a75-9235-6a7ef6d9cfb3",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C73",
+      "claim": "FGF15 has reduced heparin-binding affinity compared to other FGFs",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, thalamic astrocytes generate the motogen FGF15, which in contrast to other FGFs has reduced heparin-binding affinity (Ornitz and Itoh, 2015) making it an ideal guidance cue for long-distance migration of interneurons (Golding et al., 2014; Jager et al., 2016; Jager et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "f5c53213-44fb-404f-9a8e-b1a6ff0d7288",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C74",
+      "claim": "FGFR3 is not a major receptor for FGF15",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to point out for clarity that FGFR3 is not a major receptor for FGF15 (Ornitz and Itoh, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "718c3da2-89ca-4e9f-9bf9-1589c3207501",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C75",
+      "claim": "RGCs are the primary source of SHH to drive Fgf15 expression in thalamic astrocytes",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that SHH signaling from RGCs is not only necessary for astrocytic expression of Fgf15 in visual thalamus but that RGCs are the primary source of SHH to drive Fgf15 expression in thalamic astrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data from Shhfl/fl;Calb2Cre mutants showing reduced Fgf15",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "41a66de7-f0fb-481c-b944-4b3ef15ea951",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C76",
+      "claim": "The findings identify a morphogen-dependent neuron\u2013astrocyte signaling mechanism essential for the migration of thalamic interneurons",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings identify a morphogen-dependent neuron\u2013astrocyte signaling mechanism essential for the migration of thalamic interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "a1f3cc58-664e-447d-874a-1d8c2be816f9",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C77",
+      "claim": "S100\u03b2 immunohistochemistry labels a small population of microglia in visual thalamus",
+      "claim_type": "EXPLICIT",
+      "source": "However, we recently reported that S100\u00df immunohistochemistry (IHC) also labels a small population of microglia in visual thalamus (Somaiya et al., 2021), therefore, we confirmed that tdT+ cells were astrocytes by ISH for Gja1, the gene encoding Connexin 43.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "df763506-c3f8-464f-b501-6bf87fa5cb7f",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C78",
+      "claim": "At least 40 transcriptionally distinct types of RGCs exist in the mouse retina",
+      "claim_type": "EXPLICIT",
+      "source": "Since at least 40 transcriptionally distinct types of RGCs exist in the mouse retina (Tran et al., 2019), we sought to identify whether all RGCs generate Shh mRNA (which looked to be the case based on ISH, Figure 3A) or whether specific RGC subtypes generate this morphogen in the perinatal retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "36d6e687-a991-4829-a231-086ffb35473c",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C79",
+      "claim": "All RGC subtypes express high levels of Calb2",
+      "claim_type": "EXPLICIT",
+      "source": "Two important observations were made through this analysis: (1) all RGC subtypes express high levels of Calb2, confirming the reliability of targeting this molecule to study RGCs (Kerr et al., 2019); (2) at least 39 out of 41 RGC subtypes express Shh mRNA (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by reanalysis of single-cell RNAseq data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "56189543-bd71-43b4-a0ac-8b70fef877e3",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C80",
+      "claim": "RGCs show no to very low expression of Calb2 before E16",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple reasons led us to choose Calb2Cre mice to target RGC-derived SHH: (1) Shh and Calb2 are coexpressed in RGC subtypes (Figure 3C); (2) RGCs show no to very low expression of Calb2 before E16 (Shekhar et al., 2022), suggesting that Shhfl/fl;Calb2Cre mutant mice will retain other known Shh functions (Wang et al., 2005) in early embryonic retina (Figure 3D);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and data shown in Figure 3D",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "1fa4d121-504b-4199-b13f-c72b21a7dff5",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C81",
+      "claim": "CALB2+ cells are largely absent from the neonatal and postnatal dLGN",
+      "claim_type": "EXPLICIT",
+      "source": "we previously reported that CALB2+ cells are largely absent from the neonatal and postnatal dLGN and are only sparsely distributed in vLGN at these ages (Su et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "ff89fbfd-e52c-46e5-80d8-59bf414b2255",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C82",
+      "claim": "Only a limited number of CALB2+ cells are present in the thalamic and tectal progenitor zones",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we add to these points by showing only a limited number of CALB2+ cells are present in the thalamic and tectal progenitor zones that are thought to give rise to these sets of migrating interneurons (Golding et al., 2014; Jager et al., 2016; Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by IHC data shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "e5790da8-4280-4802-af39-3f92d96f34f6",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C83",
+      "claim": "The absence of retinal inputs leads to arrested arbor branching and dystrophic arbor field growth of GABAergic interneurons",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, retinal inputs are not only important for interneuron migration but also their absence leads to arrested arbor branching and dystrophic arbor field growth of these GABAergic cells (Charalambakis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "d6d5e14a-21bc-4fef-adb8-646c9aceb700",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C84",
+      "claim": "Gad1 mRNA encodes for glutamic acid decarboxylase 67 (GAD67)",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate this loss using in situ hybridization (ISH) for Gad1 mRNA, which encodes for glutamic acid decarboxylase 67 (GAD67), an enzyme required for the production of GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "eacba753-a31c-40d6-b06d-fc3ed870f4c8",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C85",
+      "claim": "GAD67 is an enzyme required for the production of GABA",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate this loss using in situ hybridization (ISH) for Gad1 mRNA, which encodes for glutamic acid decarboxylase 67 (GAD67), an enzyme required for the production of GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "b4efbebe-e06a-412c-aa15-83937ae40494",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C86",
+      "claim": "Activation of the SHH pathway is initiated when extracellular SHH binds to PTCH1",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the SHH pathway is initiated when extracellular SHH binds to its canonical receptor, Patched-1 (PTCH1), present on target cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about SHH signaling",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "2bd0cf26-ff50-42db-ba85-a5f84254e3da",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C87",
+      "claim": "SHH binding to PTCH1 leads to the release of PTCH1-mediated inhibition of SMO",
+      "claim_type": "EXPLICIT",
+      "source": "This binding leads to the release of PTCH1-mediated inhibition of the membrane-spanning receptor, Smoothened (SMO), thereby allowing it to activate glioma-associated oncogene (GLI) transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about SHH signaling",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "51ffd2d1-968e-4bb4-8dd3-48b353f89062",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C88",
+      "claim": "SMO activates GLI transcription factors when released from PTCH1 inhibition",
+      "claim_type": "EXPLICIT",
+      "source": "This binding leads to the release of PTCH1-mediated inhibition of the membrane-spanning receptor, Smoothened (SMO), thereby allowing it to activate glioma-associated oncogene (GLI) transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about SHH signaling",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "6334a282-07c3-4991-ab8d-b33b4e5b9714",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C89",
+      "claim": "FGF15 is specifically generated by thalamic astrocytes during perinatal development",
+      "claim_type": "EXPLICIT",
+      "source": "Since our previous studies revealed that FGF15 is specifically generated by thalamic astrocytes during perinatal development (Su et al., 2020), we asked whether these astrocytes express components of the SHH signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "c1061dd9-0ff8-4777-9331-1e11c969fdbc",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C90",
+      "claim": "Loss of SHH can abrogate Gli1 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of SHH has been observed to abrogate Gli1 expression, suggesting that it can be used as a proxy for SHH protein (Garcia et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "4a61e732-eccb-4f71-bee9-8073a8ffc9a5",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "claim_id": "C91",
+      "claim": "Gja1 encodes Connexin 43",
+      "claim_type": "EXPLICIT",
+      "source": "However, we recently reported that S100\u00df immunohistochemistry (IHC) also labels a small population of microglia in visual thalamus (Somaiya et al., 2021), therefore, we confirmed that tdT+ cells were astrocytes by ISH for Gja1, the gene encoding Connexin 43.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "568a34fa-79e7-4d83-90d2-86ac7e24005a",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Atoh7\u2212/\u2212 mutant mice, which lack RGC inputs to visual thalamus, show a significant reduction in Gad1+ neurons in both dLGN and vLGN, with the reduction being less striking in vLGN because most Gad1+ cells there are principal projection cells rather than local interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are well-supported by ISH data (Figure 1A-C) showing reduced Gad1+ cells in Atoh7\u2212/\u2212 mice, with appropriate quantification and statistical analysis. The interpretation regarding vLGN cell types (C3) is consistent with established knowledge about vLGN composition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "669f6b1d-b90d-4a60-88c4-9ccd195e47fe",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rosa26floxstop-TeNT;Calb2Cre mice show impaired retinal activity as evidenced by disrupted eye-specific segregation and behavioral deficits, but surprisingly show no significant reduction in interneuron recruitment into visual thalamus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 are supported by multiple lines of evidence: Cre expression data (C4), CTB labeling showing impaired eye-specific segregation (C5), behavioral deficits (C6), and ISH showing no change in Gad1+ cells (C7). The convergence of these results provides strong evidence that activity is impaired but interneuron recruitment is unaffected.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "1ac60b3f-8de4-477e-bde1-b5f1232950d2",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SHH signaling is critical for both thalamic Fgf15 expression and interneuron recruitment into visual thalamus, as demonstrated by Shhfl/flNesCre mutants showing dramatic reductions in both Gad1+ neurons and Fgf15 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 are supported by ISH data showing reduced Gad1+ cells (C10) and Fgf15 expression (C11) in Shhfl/flNesCre mutants. However, the NesCre driver deletes SHH broadly in neural progenitors, making it difficult to definitively attribute effects specifically to RGC-derived SHH versus other sources.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "19bfee15-7734-4670-a3ee-9dc6e8ea92d5",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Astrocytes in perinatal visual thalamus express the cellular machinery to respond to SHH, including Ptch1, Smo, and Gli1, as demonstrated by RNAseq, reporter mice, and ISH analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 are well-supported by multiple complementary approaches: RNAseq data (C13), Gli1 reporter mice with S100\u03b2 and Gja1 colocalization (C14-C15), and RNAscope ISH showing Ptch1 and Smo in Aldh1l1-GFP+ astrocytes (C16). The 100% colocalization of Gli1-tdT+ cells with Gja1 (C15) strongly supports astrocyte-specific expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "b35f3e57-c550-4a40-af1b-a60434d400ed",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RGCs in the developing postnatal retina express SHH, with Shh mRNA restricted to the GCL and expressed by CALB2+ RGCs, and at least 39 out of 41 RGC subtypes expressing Shh at P5. Active SHH signaling is present in dLGN and vLGN at P3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 are supported by RNAscope ISH (C18), single-cell RNAseq reanalysis (C19), and \u03b2Gal staining in Gli1nlacZ/+ mice (C21). The convergence of in situ and single-cell data provides strong evidence for widespread Shh expression in RGCs during the relevant developmental period.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "69bb4f5e-5a07-497e-9e1a-fc0dbf492a13",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RGC-derived SHH is necessary for astrocytic Fgf15 expression in visual thalamus. Shhfl/fl;Calb2Cre mutants show reduced Shh mRNA in retina and reduced Fgf15+ cells in thalamus, without affecting astrocyte numbers or RGC axon targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 are well-supported by qRT-PCR (C23), CTB labeling (C24), and ISH for Fgf15 and Fgfr3 (C25-C26). The normal RGC axon targeting (C24) is crucial for ruling out secondary effects. However, the claim that RGCs are the 'primary source' (C27) is an inference that could be strengthened by additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "f398f5a8-a390-4a07-a67f-96a352b18160",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Deletion of RGC-derived SHH leads to a persistent reduction in GABAergic interneurons in visual thalamus, with significant decreases in Gad1+ cells observed at both P7 and in adult Shhfl/fl;Calb2Cre mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by ISH data at P7 and adult stages (Figures 6A-D) with appropriate quantification and statistics. The persistence of the phenotype into adulthood strengthens the conclusion that this is not merely a developmental delay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "57600b93-2019-4dec-b1a3-fd6141cf4ff6",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study identifies a morphogen-dependent neuron-astrocyte signaling mechanism where RGC-derived SHH signals to thalamic astrocytes to induce FGF15 expression, which is essential for GABAergic interneuron recruitment into visual thalamus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 and C76 represent the main conclusions of the study, supported by the collective evidence from multiple mutant lines and experimental approaches. The mechanistic pathway (RGC SHH \u2192 astrocyte FGF15 \u2192 interneuron recruitment) is well-supported by the data, though some steps remain correlative rather than directly causal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "a90b01bc-3476-44a4-b584-08834d66ac8a",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Shhfl/fl;NesCre mutants show a more dramatic decrease in Gad1+ cells compared to Shhfl/fl;Calb2Cre or Atoh7\u2212/\u2212 mice, likely because SHH loss occurs earlier in development and in progenitor zones, affecting GABAergic progenitor generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by comparison of data across mutant lines and knowledge of Cre expression patterns. The interpretation (C62) is reasonable given the timing and location of NesCre expression, though it remains somewhat speculative without direct evidence of progenitor effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "66541777-bb85-4a99-a3a7-376db1763529",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The rationale for using Calb2Cre to target RGC-derived SHH is supported by evidence that all RGC subtypes express high levels of Calb2, RGCs show minimal Calb2 expression before E16, and CALB2+ cells are largely absent from thalamic progenitor zones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 are supported by single-cell RNAseq reanalysis (C79), developmental expression data (C80), and IHC (C82). This provides strong justification for the genetic strategy, though the possibility of some off-target effects in non-RGC cells cannot be completely excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on visual thalamus structure, function, and prior findings on FGF15-dependent interneuron migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C44 represent established knowledge from prior literature and the authors' previous work, appropriately cited. These provide necessary context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "3b744c83-43f0-4fe8-b495-55a3559d41dd",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on TeNT mechanism and retinal activity's role in visual system development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 represent established knowledge appropriately cited from prior literature, providing context for the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "90ab5238-93e8-409f-85e9-157724ff17b3",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information on SHH signaling roles in development and prior evidence for RGC-derived SHH functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C56 represent established knowledge from prior literature, appropriately cited. These provide important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "bbd4d662-27cd-446a-9d73-c5cdf14fcabe",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "This is the first study to provide evidence for long-distance SHH signaling to regulate astrocyte-derived FGF15 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 represents a novelty claim that appears justified based on the cited literature showing only local SHH regulation of FGF15 in embryonic brain. The demonstration of long-distance signaling from RGCs to thalamic astrocytes is indeed novel.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "1c6e4115-c354-4862-bb42-e88c2431f840",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion of potential subtype-specific effects of SHH loss on GABAergic neurons and the challenges in studying interneuron subtypes in dLGN versus vLGN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 represent reasonable speculation based on cited literature about SHH effects in other brain regions and known differences between dLGN and vLGN. The authors appropriately acknowledge limitations in addressing subtype specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "74b2a7b3-5cd3-4b4f-93d4-c944a93b2794",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion of SHH's roles in astrocyte biology and the observation that more astrocytes express SHH signaling components than express Fgf15.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 combine cited literature with observations from the current study. The discrepancy between widespread Ptch1/Smo expression and limited Fgf15 expression (C67) is an interesting observation that raises questions about astrocyte heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "ccd642f4-5538-439f-9866-1adf3e13659c",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Discussion of activity-dependent versus activity-independent roles of retinal inputs in thalamic development, concluding that retinal inputs have both types of roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 integrate prior literature with the current findings. The conclusion (C72) is well-supported by the differential effects of activity blockade (no effect on interneurons) versus SHH deletion (reduced interneurons).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "c3530600-562c-4479-9bf7-b01ef1c73ae8",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background information on FGF15 properties, SHH signaling mechanisms, and molecular markers used in the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C91 represent established scientific knowledge appropriately cited or stated, providing necessary background for interpreting the experimental approaches and results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "43f0b67c-7703-45bc-8872-723232663de5",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Methodological notes on marker specificity and prior findings on retinal inputs' effects on interneuron morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 represent methodological considerations and cited prior findings that provide context for the experimental design and interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    },
+    {
+      "id": "00f5ed05-ef7c-47d7-95d5-d24e43ab24f4",
+      "content_id": "c8221d2f-bd57-4614-b655-f0fa48fae54e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "RGCs are the primary source of SHH to drive Fgf15 expression in thalamic astrocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 is an inference based on the Shhfl/fl;Calb2Cre data showing reduced Fgf15. While the data support that RGC-derived SHH is necessary, the claim that RGCs are the 'primary source' is not definitively proven. Other sources of SHH in the thalamus could contribute, and the Calb2Cre approach, while well-justified, may not achieve complete deletion in all RGCs or may have some off-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:57:48.294754Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c290b68c-cf29-447a-9a33-4fcc03cc9fdc",
+      "result_id": "568a34fa-79e7-4d83-90d2-86ac7e24005a"
+    },
+    {
+      "claim_id": "838de030-5bcc-4445-b62c-df8354291229",
+      "result_id": "568a34fa-79e7-4d83-90d2-86ac7e24005a"
+    },
+    {
+      "claim_id": "8e45fefe-ca97-49d8-b6e2-fd69a6282f4a",
+      "result_id": "568a34fa-79e7-4d83-90d2-86ac7e24005a"
+    },
+    {
+      "claim_id": "e2205d83-cf18-47fc-a0c7-536727e7404f",
+      "result_id": "669f6b1d-b90d-4a60-88c4-9ccd195e47fe"
+    },
+    {
+      "claim_id": "8b90db70-a732-4161-855c-733afa0dab17",
+      "result_id": "669f6b1d-b90d-4a60-88c4-9ccd195e47fe"
+    },
+    {
+      "claim_id": "49bdc597-9879-4126-ac83-2284a0c3f6d3",
+      "result_id": "669f6b1d-b90d-4a60-88c4-9ccd195e47fe"
+    },
+    {
+      "claim_id": "5617abf8-61c5-4635-8d2c-7f93d8459cc1",
+      "result_id": "669f6b1d-b90d-4a60-88c4-9ccd195e47fe"
+    },
+    {
+      "claim_id": "5a4d9a1a-b8dc-4467-9667-ee9acb272a70",
+      "result_id": "1ac60b3f-8de4-477e-bde1-b5f1232950d2"
+    },
+    {
+      "claim_id": "be6cbf53-0521-429c-a19d-b12362100188",
+      "result_id": "1ac60b3f-8de4-477e-bde1-b5f1232950d2"
+    },
+    {
+      "claim_id": "fe468fea-c773-493f-a6a5-27024d59ba2d",
+      "result_id": "1ac60b3f-8de4-477e-bde1-b5f1232950d2"
+    },
+    {
+      "claim_id": "303dbe17-7dc8-438b-b63f-424dd105c659",
+      "result_id": "1ac60b3f-8de4-477e-bde1-b5f1232950d2"
+    },
+    {
+      "claim_id": "c22b0b76-b0c1-4c6d-8001-eed46bfe845a",
+      "result_id": "1ac60b3f-8de4-477e-bde1-b5f1232950d2"
+    },
+    {
+      "claim_id": "3e06e3fc-1d62-49cb-b562-0ee14a7b2a11",
+      "result_id": "19bfee15-7734-4670-a3ee-9dc6e8ea92d5"
+    },
+    {
+      "claim_id": "885e588e-309b-4955-a8a1-fc83067493c8",
+      "result_id": "19bfee15-7734-4670-a3ee-9dc6e8ea92d5"
+    },
+    {
+      "claim_id": "33ba0b0f-d081-4a3f-b921-899d4be9a37d",
+      "result_id": "19bfee15-7734-4670-a3ee-9dc6e8ea92d5"
+    },
+    {
+      "claim_id": "a044ab18-9334-40fe-a1e0-70fc331ee374",
+      "result_id": "19bfee15-7734-4670-a3ee-9dc6e8ea92d5"
+    },
+    {
+      "claim_id": "ce226dc0-13ba-480d-be0e-40608400bd7d",
+      "result_id": "19bfee15-7734-4670-a3ee-9dc6e8ea92d5"
+    },
+    {
+      "claim_id": "85d6518b-c43d-46c1-ac14-aa3f956fbdc3",
+      "result_id": "b35f3e57-c550-4a40-af1b-a60434d400ed"
+    },
+    {
+      "claim_id": "595e6d30-df31-4a01-ab08-753b9cd08ad2",
+      "result_id": "b35f3e57-c550-4a40-af1b-a60434d400ed"
+    },
+    {
+      "claim_id": "4c7f15c3-7d86-4be8-804b-bdfceb78ffdf",
+      "result_id": "b35f3e57-c550-4a40-af1b-a60434d400ed"
+    },
+    {
+      "claim_id": "176154d3-7078-4e03-825c-f9f6d678aae2",
+      "result_id": "b35f3e57-c550-4a40-af1b-a60434d400ed"
+    },
+    {
+      "claim_id": "dd58a847-244c-411e-be26-5854f2f55724",
+      "result_id": "69bb4f5e-5a07-497e-9e1a-fc0dbf492a13"
+    },
+    {
+      "claim_id": "f8969df9-0e3f-47ac-bd94-9d83dc457764",
+      "result_id": "69bb4f5e-5a07-497e-9e1a-fc0dbf492a13"
+    },
+    {
+      "claim_id": "45f1e431-f713-485d-af89-eb217e8a3e0a",
+      "result_id": "69bb4f5e-5a07-497e-9e1a-fc0dbf492a13"
+    },
+    {
+      "claim_id": "43a8299a-e012-4e9e-8805-b8768be6226f",
+      "result_id": "69bb4f5e-5a07-497e-9e1a-fc0dbf492a13"
+    },
+    {
+      "claim_id": "1e2dc6e5-7f02-4170-9aa1-5f787285aff7",
+      "result_id": "69bb4f5e-5a07-497e-9e1a-fc0dbf492a13"
+    },
+    {
+      "claim_id": "7157b5e1-0f69-465a-94d0-b005c3aa8efe",
+      "result_id": "69bb4f5e-5a07-497e-9e1a-fc0dbf492a13"
+    },
+    {
+      "claim_id": "ad959c86-1e5b-4f3e-97bc-e9421ba6fa71",
+      "result_id": "f398f5a8-a390-4a07-a67f-96a352b18160"
+    },
+    {
+      "claim_id": "d2c6f035-6fbe-4142-9e25-fe9367c94ec9",
+      "result_id": "f398f5a8-a390-4a07-a67f-96a352b18160"
+    },
+    {
+      "claim_id": "00bd65bf-0958-4341-93de-4b8635148486",
+      "result_id": "57600b93-2019-4dec-b1a3-fd6141cf4ff6"
+    },
+    {
+      "claim_id": "f33b82f1-c6c4-472e-96c2-bcf0301ed776",
+      "result_id": "57600b93-2019-4dec-b1a3-fd6141cf4ff6"
+    },
+    {
+      "claim_id": "7ca10303-e2ef-41fe-a365-e8195ae7ebd2",
+      "result_id": "57600b93-2019-4dec-b1a3-fd6141cf4ff6"
+    },
+    {
+      "claim_id": "53ca3a1f-4092-4d3b-a8a7-c1e849ac57cc",
+      "result_id": "57600b93-2019-4dec-b1a3-fd6141cf4ff6"
+    },
+    {
+      "claim_id": "5beae093-3581-43a0-860f-2c04dcb0cd28",
+      "result_id": "57600b93-2019-4dec-b1a3-fd6141cf4ff6"
+    },
+    {
+      "claim_id": "41a66de7-f0fb-481c-b944-4b3ef15ea951",
+      "result_id": "57600b93-2019-4dec-b1a3-fd6141cf4ff6"
+    },
+    {
+      "claim_id": "577ec2f9-c5f0-4516-ad96-948f94fbde4f",
+      "result_id": "a90b01bc-3476-44a4-b584-08834d66ac8a"
+    },
+    {
+      "claim_id": "d9d20ccf-d151-461f-9f15-adf850ba1190",
+      "result_id": "a90b01bc-3476-44a4-b584-08834d66ac8a"
+    },
+    {
+      "claim_id": "0f6eb30e-8909-421b-9f01-3d00b8502f92",
+      "result_id": "a90b01bc-3476-44a4-b584-08834d66ac8a"
+    },
+    {
+      "claim_id": "36d6e687-a991-4829-a231-086ffb35473c",
+      "result_id": "66541777-bb85-4a99-a3a7-376db1763529"
+    },
+    {
+      "claim_id": "56189543-bd71-43b4-a0ac-8b70fef877e3",
+      "result_id": "66541777-bb85-4a99-a3a7-376db1763529"
+    },
+    {
+      "claim_id": "1fa4d121-504b-4199-b13f-c72b21a7dff5",
+      "result_id": "66541777-bb85-4a99-a3a7-376db1763529"
+    },
+    {
+      "claim_id": "ff89fbfd-e52c-46e5-80d8-59bf414b2255",
+      "result_id": "66541777-bb85-4a99-a3a7-376db1763529"
+    },
+    {
+      "claim_id": "96302428-3104-4791-9643-fa4ebd36ef67",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "434ee252-95ca-4172-983e-dc04020888d7",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "da5810f5-d447-4556-90f2-1e41d3f6928f",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "bffc1fff-0b91-48be-ad5a-7ccc3bc66251",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "8d4250fa-54af-4454-bc3a-5bf6f9b2ca16",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "9057f6e4-7bf3-45cb-a4b8-76ddf6d4ecd8",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "7a9e1693-99b7-4174-b8a6-8e56452e0a35",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "f40480a7-df6b-4bb6-a6b1-c9990ccfd2fb",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "83d1264f-b971-48c0-9343-81a081c1487b",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "45cd8229-b822-47b0-9ee0-bac1d419252c",
+      "result_id": "fcef6a58-bd32-4b1e-a096-532c0363e3e0"
+    },
+    {
+      "claim_id": "c8d14398-1e9f-45b0-b645-064d4bfcc335",
+      "result_id": "3b744c83-43f0-4fe8-b495-55a3559d41dd"
+    },
+    {
+      "claim_id": "1eb10dfb-8ff6-4d2f-99b0-a72abf26f49e",
+      "result_id": "3b744c83-43f0-4fe8-b495-55a3559d41dd"
+    },
+    {
+      "claim_id": "bca1418e-f295-4ef4-ba43-363921f68690",
+      "result_id": "3b744c83-43f0-4fe8-b495-55a3559d41dd"
+    },
+    {
+      "claim_id": "10cb8cf9-bfd9-43b7-a812-c53eab767664",
+      "result_id": "3b744c83-43f0-4fe8-b495-55a3559d41dd"
+    },
+    {
+      "claim_id": "f84053d1-ba65-4a2b-9cce-f232930e5709",
+      "result_id": "90ab5238-93e8-409f-85e9-157724ff17b3"
+    },
+    {
+      "claim_id": "315a4c6d-2bac-41d2-93cf-9ca7e3166779",
+      "result_id": "90ab5238-93e8-409f-85e9-157724ff17b3"
+    },
+    {
+      "claim_id": "b0618d5f-2ed4-4d23-b129-423b02a30d8c",
+      "result_id": "90ab5238-93e8-409f-85e9-157724ff17b3"
+    },
+    {
+      "claim_id": "4562a7bf-2702-4efa-a8f2-a4c189829f9f",
+      "result_id": "90ab5238-93e8-409f-85e9-157724ff17b3"
+    },
+    {
+      "claim_id": "75d7cb69-109b-46df-b5a7-aa14d0757445",
+      "result_id": "90ab5238-93e8-409f-85e9-157724ff17b3"
+    },
+    {
+      "claim_id": "3a2c6363-74f2-4034-aa3d-dc3a8ee32fce",
+      "result_id": "90ab5238-93e8-409f-85e9-157724ff17b3"
+    },
+    {
+      "claim_id": "68032f65-70ef-4e09-82f4-23518028b3a9",
+      "result_id": "90ab5238-93e8-409f-85e9-157724ff17b3"
+    },
+    {
+      "claim_id": "314afea4-25d4-4159-8aa7-bf48bf9be8a1",
+      "result_id": "90ab5238-93e8-409f-85e9-157724ff17b3"
+    },
+    {
+      "claim_id": "1ad203c1-2c08-4bae-ae4d-31495ba56c02",
+      "result_id": "bbd4d662-27cd-446a-9d73-c5cdf14fcabe"
+    },
+    {
+      "claim_id": "27a435e5-788f-43aa-a9e7-1715a0dc1aa1",
+      "result_id": "1c6e4115-c354-4862-bb42-e88c2431f840"
+    },
+    {
+      "claim_id": "846823f8-35d8-4c17-8f2e-e81f3331d04a",
+      "result_id": "1c6e4115-c354-4862-bb42-e88c2431f840"
+    },
+    {
+      "claim_id": "294c6158-f526-497c-9c4b-4338c7206221",
+      "result_id": "1c6e4115-c354-4862-bb42-e88c2431f840"
+    },
+    {
+      "claim_id": "9761363f-4e42-45fd-a398-cf9043bb8d1f",
+      "result_id": "74b2a7b3-5cd3-4b4f-93d4-c944a93b2794"
+    },
+    {
+      "claim_id": "aee79ad3-fb98-4893-bc9f-2d2afef27dbe",
+      "result_id": "74b2a7b3-5cd3-4b4f-93d4-c944a93b2794"
+    },
+    {
+      "claim_id": "c9a2b6cd-c2b3-45be-baf0-2ec985e59041",
+      "result_id": "74b2a7b3-5cd3-4b4f-93d4-c944a93b2794"
+    },
+    {
+      "claim_id": "d100df42-6a03-44fe-8095-86c5a9f3f2a8",
+      "result_id": "74b2a7b3-5cd3-4b4f-93d4-c944a93b2794"
+    },
+    {
+      "claim_id": "01cf0e2a-4c40-4fa8-915d-3ccc060b9bf2",
+      "result_id": "74b2a7b3-5cd3-4b4f-93d4-c944a93b2794"
+    },
+    {
+      "claim_id": "ae9ed3ef-319b-4995-802d-8cac51287483",
+      "result_id": "ccd642f4-5538-439f-9866-1adf3e13659c"
+    },
+    {
+      "claim_id": "d2d1c920-6fd2-4227-879f-6937be467037",
+      "result_id": "ccd642f4-5538-439f-9866-1adf3e13659c"
+    },
+    {
+      "claim_id": "4b99170a-1e07-429d-8e40-0b8f635f47c8",
+      "result_id": "ccd642f4-5538-439f-9866-1adf3e13659c"
+    },
+    {
+      "claim_id": "44ca78f8-88f6-4c20-8b2e-68e875d03fc9",
+      "result_id": "ccd642f4-5538-439f-9866-1adf3e13659c"
+    },
+    {
+      "claim_id": "54610b13-0e29-4a75-9235-6a7ef6d9cfb3",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "f5c53213-44fb-404f-9a8e-b1a6ff0d7288",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "d6d5e14a-21bc-4fef-adb8-646c9aceb700",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "eacba753-a31c-40d6-b06d-fc3ed870f4c8",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "b4efbebe-e06a-412c-aa15-83937ae40494",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "2bd0cf26-ff50-42db-ba85-a5f84254e3da",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "51ffd2d1-968e-4bb4-8dd3-48b353f89062",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "6334a282-07c3-4991-ab8d-b33b4e5b9714",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "c1061dd9-0ff8-4777-9331-1e11c969fdbc",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "4a61e732-eccb-4f71-bee9-8073a8ffc9a5",
+      "result_id": "c3530600-562c-4479-9bf7-b01ef1c73ae8"
+    },
+    {
+      "claim_id": "a1f3cc58-664e-447d-874a-1d8c2be816f9",
+      "result_id": "43f0b67c-7703-45bc-8872-723232663de5"
+    },
+    {
+      "claim_id": "df763506-c3f8-464f-b501-6bf87fa5cb7f",
+      "result_id": "43f0b67c-7703-45bc-8872-723232663de5"
+    },
+    {
+      "claim_id": "e5790da8-4280-4802-af39-3f92d96f34f6",
+      "result_id": "43f0b67c-7703-45bc-8872-723232663de5"
+    },
+    {
+      "claim_id": "718c3da2-89ca-4e9f-9bf9-1589c3207501",
+      "result_id": "00f5ed05-ef7c-47d7-95d5-d24e43ab24f4"
+    }
+  ],
+  "comparisons": []
+}

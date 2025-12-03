@@ -1,0 +1,1759 @@
+{
+  "submission": {
+    "id": "5f3d9208-5499-4b5e-8a65-baf4065a0ca7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:21:17.138393Z",
+    "updated_at": "2025-12-03T09:21:17.138393Z"
+  },
+  "content": [
+    {
+      "id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "submission_id": "5f3d9208-5499-4b5e-8a65-baf4065a0ca7",
+      "content_type": "manuscript",
+      "content_text": "# Simultaneous recording of multiple cellular signaling events by frequency- and spectrally-tuned multiplexing of fluorescent probes\n\n## Authors\n\n- Michelina Kierzek<sup>1</sup>\n- Parker E Deal<sup>3</sup>\n- Evan W Miller<sup>3</sup> ([ORCID: 0000-0002-6556-7679](https://orcid.org/0000-0002-6556-7679))\n- Shatanik Mukherjee<sup>6</sup> ([ORCID: 0000-0002-7359-9339](https://orcid.org/0000-0002-7359-9339))\n- Dagmar Wachten<sup>7</sup> ([ORCID: 0000-0003-4800-6332](https://orcid.org/0000-0003-4800-6332))\n- Arnd Baumann<sup>8</sup>\n- U Benjamin Kaupp<sup>9</sup>\n- Timo Str\u00fcnker<sup>1</sup> ([ORCID: 0000-0003-0812-1547](https://orcid.org/0000-0003-0812-1547)) \u2020\n- Christoph Brenker<sup>1</sup> ([ORCID: 0000-0002-4230-2571](https://orcid.org/0000-0002-4230-2571)) \u2020\n\n### Affiliations\n\n1. Centre of Reproductive Medicine and Andrology, University of M\u00fcnster M\u00fcnster Germany\n2. CiM-IMPRS Graduate School, University of M\u00fcnster M\u00fcnster Germany\n3. Department of Chemistry, University of California, Berkeley Berkeley United States\n4. Department of Molecular & Cell Biology, University of California, Berkeley Berkeley United States\n5. Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States\n6. Molecular Sensory Systems, Center of Advanced European Studies and Research Bonn Germany\n7. Institute of Innate Immunity, Department of Biophysical Imaging, Medical Faculty, University of Bonn Bonn Germany\n8. Institute of Biological Information Processing (IBI-1), Research Center J\u00fclich J\u00fclich Germany\n9. Life & Medical Sciences Institute (LIMES), University of Bonn Bonn Germany\n10. Cells in Motion Interfaculty Centre, University of M\u00fcnster M\u00fcnster Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nFluorescent probes that change their spectral properties upon binding to small biomolecules, ions, or changes in the membrane potential (Vm) are invaluable tools to study cellular signaling pathways. Here, we introduce a novel technique for simultaneous recording of multiple probes at millisecond time resolution: frequency- and spectrally-tuned multiplexing (FASTM). Different from present multiplexing approaches, FASTM uses phase-sensitive signal detection, which renders various combinations of common probes for Vm and ions accessible for multiplexing. Using kinetic stopped-flow fluorimetry, we show that FASTM allows simultaneous recording of rapid changes in Ca2+, pH, Na+, and Vm with high sensitivity and minimal crosstalk. FASTM is also suited for multiplexing using single-cell microscopy and genetically encoded FRET biosensors. Moreover, FASTM is compatible with optochemical tools to study signaling using light. Finally, we show that the exceptional time resolution of FASTM also allows resolving rapid chemical reactions. Altogether, FASTM opens new opportunities for interrogating cellular signaling.\n\n## Introduction\n\nCells respond to external stimuli by changes in membrane potential (Vm), ions, messenger molecules, or protein modification (e.g., phosphorylation or dephosphorylation). These signaling events can be monitored in real time using fluorescent probes (Tsien, 1989; Rothman et al., 2005; Mehta and Zhang, 2011; Depry et al., 2013; Ni et al., 2018). To delineate the network of cellular responses, it would be ideal to use different probes under identical conditions in the same sample (dubbed multiplexing) (Keyes et al., 2021). Such measurements can not only reveal the precise sequence of signaling events, for example, whether they are upstream or downstream of each other, but also whether events are mechanistically coupled like ion transport across membranes via exchangers or symporters (Welch et al., 2011; Depry et al., 2013). When recorded in separate experiments on different samples, inter-experimental and cell-to-cell variations may obscure temporal and mechanistic relationships of events. Moreover, by design, probes bind their target molecules, which might perturb the dynamics and sequence of cellular responses (Lew et al., 1985; Haugh, 2012; Delvendahl et al., 2015). Such probe-related perturbations can be inferred from multiplexing experiments.\n\nSignaling events, such as ligand-receptor binding and changes in Vm and ions, often occur on millisecond or even sub-millisecond timescales. Multiplexing of such rapid events requires kinetic techniques that allow both precisely timed stimulation of cells and simultaneous recording from different probes on a millisecond timescale. Discrimination of simultaneously excited probes relies on the spectral separation of their emissions using optical filtering (Figure 1A). However, the spectral space for simultaneous recording of probes is limited (Neher and Neher, 2004) because crosstalk arising from overlapping emission spectra compromises their discrimination. Therefore, although many spectrally distinct probes for Vm and various ions and biomolecules have been developed (Depry et al., 2013; Yuan et al., 2013; Yin et al., 2015; Kulkarni and Miller, 2017; Mehta et al., 2018), simultaneous recording with millisecond time resolution has been restricted to two probes, for example, for two ion species or one ion species and Vm (e.g., Vogt et al., 2011; Jaafari et al., 2015; Deal et al., 2016). For multiplexing of more than two probes, quasi-simultaneous recording has been used: probes are excited and detected sequentially by switching between different excitation wavelengths (Figure 1B; Canepari et al., 2007; Canepari et al., 2008; Lee et al., 2012; Sulis Sato et al., 2017; Miyazaki et al., 2018; Ait Ouares et al., 2019; Nguyen et al., 2019). Although quasi-simultaneous multiplexing overcomes fluorescence crosstalk, it limits the temporal resolution and, thereby, the application range for studying rapid signaling events occurring on a millisecond timescale (van Meer et al., 2019). Hitherto, a multiplexing strategy combining millisecond temporal resolution with high flexibility regarding the number and combinations of probes has been lacking.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig1-v2.jpg)\n\n**Figure 1.:** (A) Spectrally separable emission spectra (dashed) of probes allow their simultaneous recording using optical filtering. (B) Spectrally separable excitation spectra (outlined) allow quasi-simultaneous recording of probes using excitation-switching. (C) Frequency-tagging and phase-sensitive detection of fluorescence combined with optical filtering using frequency- and spectrally-tuned multiplexing (FASTM) allow simultaneous recording of probes based on separable excitation and/or emission spectra. (D) Schematic of the chemosensory signaling pathway and (E) illustration of the time course of the signaling events in sea urchin sperm (reviewed in Str\u00fcnker et al., 2015). Resact, the chemoattractant peptide released by the egg, triggers the synthesis of cGMP by activating a receptor guanylyl cyclase (GC). The rise in cGMP elicits a pulse-like Vm hyperpolarization mediated by a cyclic nucleotide-gated K+ channel (CNGK). The hyperpolarization activates a voltage-gated Na+/H+ exchanger (sNHE) and a hyperpolarization\u2010activated and cyclic nucleotide\u2010gated (HCN) channel. The Na+/H+ exchange increases [Na+]i and pHi. In turn, the increase in pHi primes pHi-controlled CatSper Ca2+ channels to open during the recovery from hyperpolarization driven by HCN channels. The resulting Ca2+ influx drives chemotactic steering towards the egg. (F) Schematic of the stopped-flow setup: one syringe is filled with a suspension of probe-loaded sperm, and a second syringe is filled with a solution of resact. The syringe pistons move synchronously to rapidly mix sperm with resact in a micromixer and subsequently push this mixture into an observation cuvette, where spectroscopic measurements are performed (see Hamzeh et al., 2019).\n\nHere, we introduce an approach that leverages phase-sensitive signal detection, which is commonly used to recover small signals buried in large noise (Meade, 1983), but also facilitates signal multiplexing (Aslund and Carlsson, 1993; Carlsson et al., 1994; Lewis et al., 2005; Hwang et al., 2015; Garbacik et al., 2018; G\u00f3mez-Garc\u00eda et al., 2018; Tovar et al., 2019). We dubbed this method frequency- and spectrally-tuned multiplexing (FASTM). In brief, like conventional multiplexing, FASTM also involves the simultaneous excitation of different probes; however, the excitation light is modulated at distinct frequencies. The frequency-tagging of fluorescence combined with optical filtering allows discriminating probes based on their excitation and/or emission spectra (Figure 1C). We tested the time resolution and applicability of FASTM on signaling pathways of sperm and in single cultured cells. FASTM enabled multiplexing of at least three rapid signaling events at millisecond time resolution using various combinations of common non-ratiometric and ratiometric probes for ions and Vm as well as FRET-based biosensors. Moreover, FASTM can be combined with kinetic rapid-mixing techniques and flash-induced release of caged messengers, for example, cGMP, to instantaneously activate signaling pathways. Finally, FASTM is also suited to resolve rapid chemical reactions. These unique features of FASTM expand the scope of time-resolved multiplexing of cellular signaling.\n\n## Results\n\n### Multiplexing of rapid ionic and electrical signaling events using FASTM\n\nChemosensory signaling in the flagellum of sea urchin sperm involves rapid changes in cellular messengers, ions, and Vm (Figure 1D and E) (reviewed in: Darszon et al., 2008; Str\u00fcnker et al., 2015; Wachten et al., 2017; Darszon et al., 2020); therefore, sperm are an ideal model to develop and test novel strategies for multiplexing. In brief, a chemoattractant peptide, resact, activates a receptor guanylyl cyclase. The ensuing rise of cGMP elicits a brief transient hyperpolarization, followed by an increase of the intracellular pH (pHi) and Na+ concentration ([Na+]i) that, ultimately, trigger a Ca2+ influx and rise of the intracellular Ca2+ concentration ([Ca2+]i) (Figure 1E). The sequence of signaling events has been delineated by sequentially recording changes in either [Ca2+]i, pHi, [Na+]i, or Vm on different sperm samples using stopped-flow fluorimetry (Figure 1F; Hamzeh et al., 2019).\n\nWe set out to record the resact-induced [Ca2+]i, pHi, and Vm signals in the same sperm sample by multiplexing of the respective fluorescent probes Fura-2, BCECF, and RhoVR (Deal et al., 2016). The well-separated excitation spectra (Figure 2A) render these three probes accessible for quasi-simultaneous recording. The [Ca2+]i, pHi, and Vm signals occur, however, on a millisecond timescale, which requires their simultaneous recording; yet, due to the overlapping emission spectra (Figure 2A), simultaneous recording of these three probes using optical filtering alone seems intractable. Therefore, we chose to multiplex Fura-2, BCECF, and RhoVR based on simultaneous excitation by three LEDs each modulated at a distinct frequency in the kHz range (Figure 2B, Table 1); thereby, the emission of each probe is tagged with a unique frequency signature for discrimination. The fluorescence was collected on opposite sides of the cuvette by two photomultipliers (PMTs) equipped with appropriate optical filters: one PMT detected the emission of Fura-2 and BCECF and the other that of RhoVR (Figure 2B, Table 2). Lock-in amplifiers demodulated and amplified the PMT signals in a phase-sensitive fashion to discriminate, in real time, the probes based on their modulation frequencies. We refer to this approach as FASTM.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig2-v2.jpg)\n\n**Figure 2.:** (A) Superposition of excitation (outlined) and emission (filled) spectra of fluorescent probes for Ca2+ (Fura-2), pH (BCECF), and Vm (RhoVR). Bandpass filters used for excitation (filled) and emission (outlined) are shown above the spectra. Inset: excitation and emission spectra depicted individually with respective filters (black bars). (B) Schematic of FASTM: each probe is excited by an LED modulated at a different frequency. The modulated emission is optically filtered and collected by two photomultipliers (PMTs). The PMT signals are demodulated by lock-in amplifiers in a phase-sensitive fashion to recover in real time [Ca2+]i, pHi, and Vm signals.\n\nWe tested whether FASTM permits simultaneous recording of the three probes. First, using sperm that had been loaded with one probe only, we compared crosstalk between all three recording \u2018channels,\u2019 with (Figure 3, colored traces, FASTM) and without (Figure 3, gray traces, optical filtering) modulating the LEDs at different frequencies. In BCECF-loaded sperm, relying on optical filtering alone, the basal fluorescence intensity (Fo) recorded in the BCECF channel and the Fura-2 channel (Figure 3A, gray) and the relative increase (\u2206F/Fo), reflecting the pHi response (Figure 3B, gray), were similar. Of note, in Figure 3A, the gray (optical filtering) and blue traces (FASTM) in the BCECF channel are superimposed. Unsurprisingly, the BCECF fluorescence detected in the BCECF and the Fura-2 channel was similar, considering that both were collected by the same detector and optical filter (Figure 2B, Table 2). Basal BCECF fluorescence and the resact-induced relative increase were also detected in the RhoVR channel (Figure 3A and B), demonstrating that optical filtering is not sufficient to isolate the RhoVR channel from BCECF\u2019s broad emission spectrum. To quantify the crosstalk between channels, we plotted the first two seconds of the fluorescence signal recorded in the BCECF channel against that recorded in the Fura-2 or the RhoVR channel (Figure 3C, optical filtering). The slope of a linear fit to these plots is a measure of the crosstalk: if the time course of the fluorescence perfectly correlates between channels, the slope and crosstalk is 1 and 100%, respectively. Vice versa, if the time course of the fluorescence is independent among channels, the slope/crosstalk is zero. For optical filtering alone, we determined a crosstalk between the BCECF and the Fura-2 and RhoVR channels of 100 and 31%, respectively (Figure 3J). Modulating the LEDs at different frequencies using FASTM did not affect the fluorescence signal in the BCECF channel (Figure 3A and B, blue trace). However, FASTM lowered the basal fluorescence and almost abolished its relative increase in both the Fura-2 (Figure 3A and B; cyan) and the RhoVR channel (Figure 3A and B, orange); with FASTM, the crosstalk between the BCECF and the Fura-2 or the RhoVR channel was only 9 and 1%, respectively (Figure 3C and J).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig3-v2.jpg)\n\n**Figure 3.:** Time course of the fluorescence signals recorded from BCECF- (A\u2013C), Fura-2- (D\u2013F), or RhoVR-loaded sperm (G\u2013I) after mixing with resact (50 pM). Fluorescence was recorded in the BCECF, Fura-2, and RhoVR channels using optical filtering alone (gray traces) or FASTM (colored traces). (A, D, G) Fluorescence signals in arbitrary fluorescence units (AFU); to ease the comparison, signals in (A), (D), and (G) were normalized (set to 1) to the baseline fluorescence (F0) in the BCECF, the Fura-2, and the RhoVR channel, respectively, recorded immediately after mixing with resact. (B, E, H) Resact-evoked change in fluorescence (\u0394F) with respect to the baseline fluorescence (F0), that is, \u0394F/F0 (%); #signals smoothed with a sliding average of 80 ms. (C, F, I) First 2 s of the fluorescence signal recorded in the BCECF channel plotted against that recorded in the Fura-2 or the RhoVR channel using either optical filtering (top panel) or FASTM (bottom panel). Gray line: linear fit of the plots to quantify the crosstalk between the channels (see explanation in the text). (J) Percent crosstalk between the channels according to the analysis shown in (C), (F), and (I).\n\nNext, we loaded sperm with Fura-2 alone and monitored the resact-induced [Ca2+]i response. With optical filtering alone, the basal fluorescence and its relative decrease, reflecting the [Ca2+]i response, were similar in all channels (Figure 3D and E; gray traces); the crosstalk between the Fura-2 and the BCECF or RhoVR channels was 98 and 79%, respectively (Figure 3F and J). Of note, Fura-2 fluorescence decreased with increasing [Ca2+]i because the probe was excited at 380 nm. FASTM did not affect the Fura-2 channel (Figure 3D and E; cyan), but lowered the basal fluorescence intensity and abolished its relative decrease in the BCECF channel (Figure 3D and E; blue) and the RhoVR channel (Figure 3D and E; orange); the crosstalk between the channels was \u22641% (Figure 3F and J). Finally, we monitored the resact-induced Vm response in RhoVR-loaded sperm. Due to the probe\u2019s red-shifted spectrum, crosstalk between channels was negligible; basal RhoVR fluorescence and its resact-induced decrease, reflecting the Vm response, were only detected in the RhoVR channel, both with and without FASTM (Figure 3G\u2013J).\n\nWe next loaded sperm with all three probes and simultaneously recorded resact-induced [Ca2+]i, pHi, and Vm signals (Figure 4A and B). Using optical filtering alone, the simultaneously recorded signals markedly differed from the respective signals recorded in sperm loaded with one probe only (compare Figure 4A and Figure 3B, E,H ); the pHi and [Ca2+]i signals represent a composite of the Fura-2-reported Ca2+ response (transient fluorescence decrease) and the BCECF-reported pHi response (sustained fluorescence increase), whereas the Vm signal featured a lower amplitude and slower kinetics (Figure 4A). Thus, the crosstalk among channels greatly misrepresented the true time course and size of signaling events.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig4-v2.jpg)\n\n**Figure 4.:** Relative changes in fluorescence \u2206F/F0 evoked by 50 pM resact. The respective control signal evoked by mixing with artificial sea water (ASW) was subtracted, setting the control-signal level to \u0394F/F0 (%) = 0 (dotted line). Signals were recorded using optical filtering alone (A) or frequency- and spectrally-tuned multiplexing (FASTM) (B). (C) Simultaneous FASTM recording of resact-evoked signals from pooled sperm loaded separately with either BCECF, Fura-2, or RhoVR.\n\nBy contrast, using FASTM, we simultaneously recorded genuine resact-induced [Ca2+]i, pHi, and Vm signals in the respective channels (Figure 4B). The kinetics, waveforms, and amplitudes of the multiplexed signals were similar to those recorded with FASTM (compare Figure 4B with Figure 3B, E and H) or without FASTM (see previous studies, e.g., Hamzeh et al., 2019) in sperm loaded with one probe only. We further explored whether triple-loading per se affects the response waveforms. To this end, we pooled sperm suspensions that were separately loaded with either Fura-2, BCECF, or RhoVR. The overall time course of the [Ca2+]i, pHi, and Vm signals recorded simultaneously via FASTM from these pooled single-loaded sperm was similar to those recorded from triple-loaded sperm (Figure 4C). Competition of probes with downstream targets for signaling molecules might perturb response dynamics (Lew et al., 1985; Haugh, 2012; Delvendahl et al., 2015); in triple-loaded cells, this potential caveat might be enhanced. Therefore, using FASTM, we further examined in greater detail whether specific features of the signals were altered in single- vs. triple-loaded sperm. We compared resact-induced [Ca2+]i, pHi, and Vm signals in sperm loaded with one probe (single-loaded) to those in sperm loaded with three probes (triple-loaded); of note, for the ease of illustration, Fura-2 fluorescence was multiplied by \u20131 to depict an increase of [Ca2+]i as an increasing signal. Under both conditions, the respective signals were similar (Figure 5A and B). We took this comparison one step further and compared the resting membrane potential (Vrest) and threshold voltage (Vthr) at which [Ca2+]i and pHi commence to rise after stimulation with different resact concentrations; Vrest and Vthr are characteristic features of the signaling pathway (Figure 5C\u2013E; Seifert et al., 2015). In single- and triple-loaded sperm, both Vrest (Figure 5C) and Vthr (Figure 5D and E) were similar. Thus, signaling is neither perturbed by Ca2+- and H+-binding to Fura-2 and BCECF, respectively, nor by partition of RhoVR into the membrane, at least under the experimental regimes used here.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig5-v2.jpg)\n\n**Figure 5.:** Resact-evoked Vm, pHi, and [Ca2+]i signals recorded individually from different sperm samples loaded with one probe only (A) or recorded simultaneously from triple-loaded sperm (B); to facilitate direct comparison, Fura-2 fluorescence was multiplied by \u20131 to depict an increase of [Ca2+]i as an increasing signal. (C) Comparison of Vrest of sperm loaded with RhoVR (single-loaded) or RhoVR, BCECF, and Fura-2 (triple-loaded). (D) Calibrated resact-induced (50 pM) Vm response and accompanying pHi and [Ca2+]i signals. The artificial sea water (ASW) control was subtracted, and the dotted black line indicates \u0394F/F0 = 0 and Vrest. The Vm at the onset of the pHi and [Ca2+]i signals was deduced from the signal latencies. (E) Vm at the onset of pHi and [Ca2+]i signals in single- versus triple-loaded sperm. With increasing resact concentrations, the rise in pHi and [Ca2+]i commenced at increasingly negative Vm (Seifert et al., 2015).\n\nWe conclude that Fura-2, BCECF, and RhoVR are not suitable for simultaneous recording based on optical filtering alone, whereas FASTM permits this probe combination for multiplexing of rapid [Ca2+]i, pHi, and Vm responses with millisecond time resolution.\n\nTo illustrate the versatility of FASTM, we tested different triple combinations of Vm, Ca2+, pH, and Na+ probes, whose overlapping emission spectra prevent simultaneous recording using optical filtering alone (Figure 6A\u2013C, Figure 6\u2014figure supplement 1). By contrast, FASTM allowed for crosstalk-free multiplexing of resact-induced Vm-[Ca2+]i-pHi (Figure 6D), Vm-[Ca2+]i-[Na+]i (Figure 6E), or Vm-pHi-[Na+]i (Figure 6F) responses.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig6-v2.jpg)\n\n**Figure 6.:** Superposition of excitation (outlined) and emission (filled) spectra of (A) Fura-2, VF2.1.Cl, and pHrodo; (B) Fura-2, RhoVR, and ANG-2; (C) BeRST, pHrodo, and ANG-2. Bandpass filters used for excitation (filled) and emission (outlined) are depicted above the spectra. Inset: individual excitation and emission spectra with respective filters (black bars). (D\u2013F) Signals (\u2206F/F0) evoked by 500 pM resact corrected for the artificial sea water (ASW) control and normalized to their respective peak values (set to 1) for easier illustration.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Calibrated resact-evoked (500 pM) Vm response in sea urchin sperm reported by VF2.1.Cl (A), RhoVR (B), and BeRST (C) upon excitation at the principal peak (gray) versus excitation at the secondary peak (blue). Inset: excitation and emission spectra of probes in sea urchin sperm. Bandpass filters used for excitation (filled) and emission (outlined) are depicted above.\n\nFinally, the shift of the excitation spectra of Fura probes and BCECF upon Ca2+ and H+ binding, respectively, can be harnessed to quantify [Ca2+]i or pHi in absolute terms using ratiometric recording (O\u2019Connor and Silver, 2013). This relies on obtaining the ratio of the probe\u2019s emission recorded at two different excitation wavelengths, which, in previous studies, required switching between excitation wavelengths. We investigated whether FASTM allows for simultaneous ratiometric recording of Fura-FF and BCECF. Moreover, we used human instead of sea urchin sperm, thus, testing FASTM in different cells. In human sperm, the CatSper Ca2+ channel is activated at alkaline pHi and also by the female steroid hormone progesterone (Lishko et al., 2011; Str\u00fcnker et al., 2011). We mixed Fura-FF- and BCECF-loaded human sperm in the stopped-flow device with NH4Cl or progesterone. Fura-FF and BCECF were simultaneously excited each at two different wavelengths (340/370 nm and 445/485 nm, respectively) with frequency-modulated light; the emission was collected at 530 nm by one detector (Figure 7A and B, Table 3). NH4Cl evoked an instantaneous, rapid and more gradual increase in the emission ratios of BCECF and Fura-2, respectively, reflecting the NH4Cl-induced pHi increase and concomitant pHi-induced Ca2+ influx via CatSper, respectively (Figure 7D). By contrast, progesterone evoked an instantaneous increase of the Fura-FF ratio, reflecting progesterone-induced Ca2+ influx, whereas the BCECF ratio was largely unaffected (Figure 7D). These results demonstrate that FASTM ensures minimal crosstalk between the Fura-FF and the BCECF channels (Figure 7C, Figure 7\u2014figure supplement 1). Taken together, FASTM allows for simultaneous recording of rapid signaling events with millisecond temporal resolution using various combinations of non-ratiometric and ratiometric probes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig7-v2.jpg)\n\n**Figure 7.:** (A) Superimposed excitation (outlined) and emission (filled) spectra of Fura-FF and BCECF. Inset: individual spectra with respective filters (black bars). (B) Schematic of frequency- and spectrally-tuned multiplexing (FASTM) configuration for simultaneous ratiometric dual-excitation recording of Fura-FF and BCECF in human sperm. (C) Crosstalk among channels based on the analysis shown in Figure 7\u2014figure supplement 1. #Under these particular conditions, the approach to quantify crosstalk yielded an erroneously inflated value (for details, see Figure 7\u2014figure supplement 1). (D) Left panels: ratiometric [Ca2+]i and pHi signals (\u0394R/R0) in human sperm evoked by NH4Cl (10 mM) or progesterone (100 nM) corrected for the buffer control. Right panel: fluorescence signals in the individual Fura-FF and BCECF channels underlying the ratio.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Human sperm loaded with BCECF or Fura-FF were mixed with either NH4Cl or progesterone, respectively. The first 5 s (BCECF-loaded sperm) and 20 s (Fura-FF-loaded sperm) of the fluorescence signals recorded in the different channels were plotted against each other and crosstalk was evaluated by linear fitting of the data. The steepness of the linear fit (gray line) is a measure of the crosstalk between channels. Of note, Fura-FF fluorescence upon excitation at the isosbestic point at 340 nm does not change with [Ca2+]i. Fura-FF is also excited by 445 nm, and the emission changes with [Ca2+]i. Consequently, the linear fit of the plot of fluorescence signals at 445 vs. 340 nm excitation indicates severe crosstalk among channels. The absolute fluorescence values are, however, an order of magnitude lower compared to that recorded in BCECF-loaded sperm and do, thus, not affect simultaneous recording of Fura-FF and BCECF.\n\n### Combination of FASTM with flash photolysis of caged compounds\n\nOptogenetics and optochemistry employ light-triggered tools (e.g., enzymes, ion channels, caged compounds, photoswitches) to investigate cellular signaling pathways (Ellis-Davies, 2007; Szyma\u0144ski et al., 2013, Ankenbruck et al., 2018). In general, combining such tools with fluorescent probes requires shielding the detectors from the trigger such as the strong UV flash used for uncaging. Optical filtering alone is usually not sufficient to prevent recording artifacts created by the UV flash (e.g., see Str\u00fcnker et al., 2006; Kilic et al., 2009; Servin-Vences et al., 2012). We used sea urchin sperm to explore whether FASTM can ameliorate flash artifacts. Sperm were loaded with Fluo-4, pHrodo, BeRST, and BECMCM-caged cGMP to simultaneously record [Ca2+]i, pHi, and Vm responses evoked by the intracellular photorelease of cGMP that bypasses receptor GC activation (Hamzeh et al., 2019; Figure 8A and B). Indeed, due to the phase-sensitive signal detection, the flash artifact was suppressed by the lock-in amplifiers (Hamzeh et al., 2019) and FASTM allowed for undisturbed simultaneous recording of cGMP-evoked [Ca2+]i, pHi, and Vm signals (Figure 8C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig8-v2.jpg)\n\n**Figure 8.:** (A) Superimposed absorbance spectrum of BECMCM-cGMP and excitation (outlined) and emission (filled) spectra of Fluo-4, pHrodo, and BeRST. Bandpass filters used for excitation (filled) and emission (outlined) are depicted above the spectra. Inset: individual spectra and respective filters (black bars). (B) Schematic of frequency- and spectrally-tuned multiplexing (FASTM) configuration for uncaging experiments. (C) Vm, pHi, and [Ca2+]i signals evoked by uncaging intracellular cGMP with a 50 ms UV-flash (gray bar).\n\n### Multiplexing of fast chemical reactions using FASTM\n\nWe next explored whether FASTM also allows multiplexing of fast chemical reactions in solution. Using the stopped-flow device, we simultaneously monitored the kinetics of Ca2+ dissociation from Fura-2 (dual-excitation recording), Fluo-4, and Calbryte 630 (Figure 9A\u2013C, Figure 9\u2014figure supplement 1). A solution containing Ca2+-bound Fura-2, Fluo-4, and Calbryte 630 was mixed with an excess of the Ca2+ chelator BAPTA that competes with the probes for binding of Ca2+. Dissociation of Ca2+ was reflected by a decrease of Fluo-4 and Calbryte 630 fluorescence; Fura-2 fluorescence decreased and increased at 370 nm and 340 nm excitation, respectively (Figure 9D). Exponential fitting of the traces yielded the dissociation rate constants (koff) (Figure 9E). The koff of Fura-2 (340ex: 115 \u00b1 2; 370ex: 122 \u00b1 3; ratio: 84 \u00b1 2 s\u20131) was similar to that reported before (Jackson et al., 1987; Kao and Tsien, 1988), whereas that of Fluo-4 (354 \u00b1 3 s\u20131) and Calbryte 630 (178 \u00b1 2 s\u20131) (n = 4) had not yet been determined to the best of our knowledge. These experiments demonstrate the utility of FASTM for multiplexing of rapid chemical reactions.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig9-v2.jpg)\n\n**Figure 9.:** (A) Superimposed excitation (outlined) and emission (filled) spectra of Fura-2, Fluo-4, and Calbryte 630. Inset: individual spectra depicted with respective filters (black bars). (B) Schematic of the frequency- and spectrally-tuned multiplexing (FASTM) configuration for simultaneous recording of Ca2+ dissociation from Fura-2, Fluo-4, and Calbryte 630. (C) Crosstalk between channels according to Figure 9\u2014figure supplement 1. (D) Changes in Fura-2, Fluo-4, and Calbryte 630 fluorescence and 370 nm/340 nm emission ratio of Fura-2 upon mixing of the Ca2+-bound probes with the Ca2+ chelator BAPTA. (E) Koff values determined by exponential fitting of the individual fluorescence traces and the ratio of Fura-2 (370/340 nm): Fura-2, 340ex: 115 \u00b1 2 s\u20131; Fura-2, 370ex: 122 \u00b1 3 s\u20131; Fura-2 ratio: 84 \u00b1 2 s\u20131; Fluo-4: 354 \u00b1 3 s\u20131; Calbryte 630: 178 \u00b1 2 s\u20131 (n = 4).\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** The first 18 ms of the fluorescence signals recorded in the different channels were plotted against each other, and crosstalk was evaluated by a linear fit to the data. The steepness of the linear fit (gray line) is a measure of the crosstalk between channels.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig9-figsupp2-v2.jpg)\n\n**Figure 9\u2014figure supplement 2.:** (A) Kinetics of Ca2+ dissociation from Fura-2 recorded upon excitation at 340 nm. The kinetics were recorded with frequency- and spectrally-tuned multiplexing (FASTM) using either different lock-in amplifier time constants (100 \u00b5s and 1 ms) or without modulation of the excitation light and using a conventional amplifier (no lock-in). (B) S/N ratio determined by dividing the mean signal amplitude by the standard deviation of 200 data points. The gray line indicates the S/N ratio in recordings performed without modulation of the excitation light.\n\n### Single-cell FASTM fluorescence microscopy\n\nFinally, we tested FASTM for single-cell fluorescence microscopy (Figure 10). A Gs-coupled octopamine receptor (DmOCT\u03b21R) (Balfanz et al., 2005), a FRET-based cAMP biosensor (Mukherjee et al., 2016), and a Ca2+-permeable cyclic nucleotide-gated channel (CNGA2-TM) (Wachten et al., 2006; Schr\u00f6der-Lang et al., 2007) were expressed in HEK293 cells (Figure 10A). Changes in octopamine-induced cAMP synthesis and cAMP-induced Ca2+ influx were simultaneously recorded using the cAMP biosensor and the Ca2+ probe Calbryte 630, respectively (Figure 10B). The FRET donor (cerulean) and Calbryte 630 were excited by light modulated at different frequencies (Figure 10C). Because the emission from the FRET donor and acceptor (citrine) was encoded with the same frequency, signal discrimination was achieved by optically filtering the cerulean and citrine fluorescence and collecting with separate detectors. Calbryte 630 and citrine fluorescence was collected by the same detector and discriminated by the modulation frequencies. Octopamine increased and decreased the donor and acceptor fluorescence of the FRET sensor, respectively, indicating a rise of intracellular cAMP (Figure 10D). Subsequently, Calbryte 630 fluorescence increased, indicating cAMP-induced Ca2+ influx (Figure 10D). These results demonstrate that FASTM can also be employed for multiplexing in single cells using fluorescence microscopy and protein-based FRET sensors.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig10-v2.jpg)\n\n**Figure 10.:** (A) Octopamine-signaling pathway in HEK cells coexpressing the DmOCT\u03b21 receptor, CNGA2-TM channel, and a FRET-based cAMP biosensor. (B) Superimposed excitation (outlined) and emission (filled) spectra of the FRET donor-acceptor pair cerulean-citrine, and the Ca2+-probe Calbryte 630. Bandpass filters used for excitation (filled) and emission (outlined) are depicted above the spectra. Inset: individual spectra and filters (black bars). (C) Schematic of the FASTM configuration for single-cell microscopy. (D) Changes in fluorescence (\u0394F/F0 (%)) of the FRET donor and acceptor as well as Calbryte 630 evoked by octopamine (20 \u00b5M). Inset: image of the field of view with a single cell enclosed by an aperture.\n\nCuriously, [Ca2+]i did not rise until the FRET signal reached saturation (Figure 10D), indicating that the cAMP sensor competes with the channel for cAMP. The vastly different K1/2 values \u2013 about 70 nM (FRET sensor) vs. 10 \u00b5M (CNGA2-TM channel) \u2013 argue that the FRET sensors get served first, which might affect cAMP dynamics and thus CNGA2-TM activation. We tested this presumption and measured the latency of the [Ca2+]i signal in cells lacking or expressing different variants of the cAMP sensor. The latency was similar in cells lacking the cAMP sensor (14 \u00b1 5 s; n = 24) or expressing a sensor mutant (Mukherjee et al., 2016) that does not bind cAMP (mlCNBD-FRET-R307Q, 16 \u00b1 5 s; n = 14) (Figure 11A and B). By contrast, the latency increased considerably and coincided with the saturation of the cAMP signal in cells expressing either the high-affinity cAMP sensor (44 \u00b1 28 s, n = 22; mlCNBD-FRET) or a variant with lower cAMP affinity (~1 \u00b5M) (29 \u00b1 7 s, n = 15; mlCNBD-FRET-M329C) (Figure 11A-C; Figure 11\u2014figure supplement 1). These findings support the notion that cAMP \u2018buffering\u2019 by the cAMP sensor delayed activation of the downstream effector CNGA2-TM. This application of FASTM in single cells illustrates how probe-related perturbations of signaling pathways can be unveiled by multiplexing experiments.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig11-v2.jpg)\n\n**Figure 11.:** (A) Octopamine-induced (20 \u00b5M) [Ca2+]i signals and changes in the FRET ratio (donor/acceptor), that is, cAMP signals, in the absence or presence of a non-binding (R307Q), lower (M329C), or higher-affinity (wildtype) FRET-based cAMP biosensor. Data points corresponding to the representative traces are labeled with a red asterisk in (B) and (C). (B) Onset of the octopamine-induced cAMP and [Ca2+]i signals. (C) Comparison of the time to saturation of the cAMP signal and the onset of the [Ca2+]i signal. The gray line depicts the theoretical perfect correlation.\n\n![Figure 11\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63129/elife-63129-fig11-figsupp1-v2.jpg)\n\n**Figure 11\u2014figure supplement 1.:** Increase of 8\u2010NBD\u2010cAMP fluorescence (emission at 550 nm) upon binding to mlCNBD-M329C (1 \u03bcM). 8\u2010NBD\u2010cAMP fluorescence in the absence of mlCNBD-M329C was subtracted. The solid line represents a nonlinear least\u2010squares fit to \u0394F = RL \u00b7 x, with the receptor-ligand complex RL and the normalization factor x, that relates the concentration of bound 8-NBD-cNMP to the change in fluorescence (\u0394F) (Cukkemane et al., 2007). The KD value was 0.12 \u00b5M.\n\n## Discussion\n\nWe show that phase-sensitive signal detection using FASTM readily overcomes the fluorescence crosstalk that has limited true simultaneous recording of probes. The technical implementation of FASTM is straightforward: most LED-based light sources can be modulated in the kHz range, and conventional PMT-based fluorescence-detection setups can readily be upgraded with a lock-in amplifier featuring several demodulation channels. FASTM could be further advanced using additional LEDs, modulation frequencies, and detectors as well as optimized optical filtering. This will allow simultaneous recording of even more than three probes and four fluorescence \u2018channels\u2019 (e.g., for dual-excitation recording of Fura-FF and BCECF) as used here. Importantly, the temporal resolution of FASTM is largely independent of the number of probes and only limited by the time constant of the lock-in amplifier(s) and/or detector(s), allowing multiplexing with a time resolution of a few microseconds. For comparison, using state-of-the-art filter wheels and galvanometer-based devices, quasi-simultaneous recording of four \u2018channels\u2019 can be performed with a time resolution of only >150 ms and >20 ms, respectively, which would be insufficient to fully resolve such rapid signaling events and chemical reactions that we studied here. Furthermore, phase-sensitive signal detection increases the signal-to-noise (S/N) ratio (e.g., Meade, 1983; Figure 9\u2014figure supplement 2); thus, using FASTM, reasonable S/N ratios can be reached with lower light intensity and density of fluorophores, which minimizes bleaching and sample consumption. Therefore, we envisage that FASTM will be widely adopted for simultaneous recording of rapid signals in aqueous solutions, single cells, and cell populations.\n\nIn combination with stopped-flow techniques and optochemical tools, the exceptional time resolution of FASTM might not only allow simultaneous recording of rapid chemical reactions, but also ligand-binding kinetics and the ensuing conformational changes of a protein (e.g., Cukkemane et al., 2007; Peuker et al., 2013). Cognate ligands labeled with solvatochromic fluorophores that change their fluorescence upon binding could be rapidly mixed with proteins. Ligand binding and the protein\u2019s conformational change could be simultaneously recorded by means of fluorescence or absorbance from endogenous tryptophan residues, incorporated non-natural amino acids, extrinsic fluorescent labels, or combinations thereof (Cheng et al., 2020).\n\nProtein conformations and protein-protein interactions in macromolecular complexes are often investigated by time-resolved FRET (trFRET) (Miyawaki and Niino, 2015). Time-resolved readout of several FRET pairs is challenging as it requires two spectrally separated fluorophores for each FRET pair (Depry et al., 2013). Crosstalk arising from overlapping emission spectra compromises discrimination of FRET pairs; therefore, multiplexed trFRET measurements are susceptible to artifacts. The simultaneous recording of ratiometric probes using FASTM provides ample opportunities for future trFRET measurements with millisecond temporal resolution.\n\nFinally, we show the applicability of FASTM for simultaneous recording of probes in single cells. However, the FASTM approach lacked spatial information. Subcellular imaging with FASTM could be achieved using PMT arrays. Alternatively, fluorescence could be recorded from several regions of interest (ROIs), whereby each ROI is illuminated with light modulated at a distinct frequency using acousto-optic-modulated laser excitation (Wu et al., 2006) or rapid switching of a digital micromirror device (DMD) (Chang et al., 2016; Wang et al., 2016). This approach would allow recording fluorescence signals from different ROIs with one PMT. Fast modulation of the excitation laser combined with a fast lock-in amplifier renders even confocal microscopes compatible with FASTM (Carlsson et al., 1994; Wu et al., 2006).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (HEK293)</td>\n      <td>flp-In-293</td>\n      <td>Invitrogen</td>\n      <td>#R750-07</td>\n      <td>RRID:CVCL_U421</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Drosophila melanogaster)</td>\n      <td>DmOCT\u03b21R</td>\n      <td>Balfanz et al., 2005</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Bos taurus)</td>\n      <td>CNGA2-TM</td>\n      <td>Schr\u00f6der-Lang et al., 2007</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pc3.1-ml CNBD-FRET</td>\n      <td>Mukherjee et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pc3.1-mlCNBD-FRET-R307Q</td>\n      <td>Mukherjee et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pc3.1-mlCNBD-FRET-M329C</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Figure 11\u2014figure supplement 1 and materials and methods part of this MS.</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Pluronic F-127</td>\n      <td>Sigma-Aldrich</td>\n      <td>P2443</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fluo-4 AM</td>\n      <td>Thermo Fisher</td>\n      <td>F14202</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>BCECF AM</td>\n      <td>Thermo Fisher</td>\n      <td>B1150</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fura-2 AM</td>\n      <td>Thermo Fisher</td>\n      <td>F1201</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>pHrodo Red AM</td>\n      <td>Thermo Fisher</td>\n      <td>P35372</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>ANG-2 AM</td>\n      <td>MobiTec</td>\n      <td>3502</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Calbryte 630 AM</td>\n      <td>AAT Bioquest</td>\n      <td>20720</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fura-FF, AM</td>\n      <td>AAT Bioquest</td>\n      <td>21027</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>VF2.1.Cl</td>\n      <td>Miller et al., 2012</td>\n      <td>Sold by Thermo Fisher as FluoVolt</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>BeRST</td>\n      <td>Huang et al., 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RhoVR</td>\n      <td>Deal et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Calbryte 630, potassium salt</td>\n      <td>AAT Bioquest</td>\n      <td>20727</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fluo-4, pentapotassium salt</td>\n      <td>Thermo Fisher</td>\n      <td>F14200</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fura-2, pentapotassium salt</td>\n      <td>Thermo Fisher</td>\n      <td>F1200</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Handling of sperm from Arbacia punctulata\n\nThe protocol for sperm collection and the composition of artificial sea water (ASW) was described previously (Hamzeh et al., 2019). In short, spawning was induced by injection of 500 \u00b5l of 0.5 M KCl into the body cavity, and the spawn (dry sperm) was collected with a Pasteur pipette and stored on ice.\n\n### Measurement of changes in [Ca2+]i, pHi, [Na+]i, and Vm\n\nChanges in [Ca2+]i, pHi, [Na+]i, and Vm in sea urchin sperm were measured in a rapid-mixing device (SFM-4000, FC-15 cuvette, BioLogic) in the stopped-flow mode. Dry sperm were loaded with fluorescent probe(s) according to Table 1. Probes were added individually or sequentially to dry sperm diluted 1:6 (v/v) in ASW supplemented with 0.05% Pluronic F-127 (Sigma-Aldrich). After incubation at 18\u00b0C in the dark, the probe-loaded sperm suspension was diluted 1:20 (v/v) with ASW and allowed to equilibrate for 5 min prior to measurement. In the stopped-flow, the probe-loaded sperm suspension was mixed 1:1 (v/v) with ASW or ASW supplemented with resact at a flow rate of 1, 2, or 4 ml/s, resulting in a dead time of 36.6, 18.3, or 9.1 ms, respectively. The lead time on the hard-stop valve was 2 ms. The concentration of resact is given as the final concentration after mixing. BECMCM-cGMP was synthesized by Andreas Rennhack (Research Centre casear); the VoltageFluor (VF) probes, VF2.1.Cl, BeRST, and RhoVR, were synthesized in the lab of Evan Miller at UC Berkeley, according to published protocols (Miller et al., 2012; Huang et al., 2015; Deal et al., 2016). VF probes are based on photo-induced electron transfer and exhibit a principal absorbance peak and a secondary peak at ~400 nm. In multiplexed configurations, either peak was effectively employed to excite the VF probe and monitor Vm (Figure 6\u2014figure supplement 1).\n\n**Table 1.**\n Loading protocols for fluorescent probes in A. punctulata sperm and FASTM modulation frequencies.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td></td>\n      <td colspan=\"3\">Fura-2, BCECF, RhoVR</td>\n      <td colspan=\"3\">ANG-2, pHrodo, BeRST</td>\n    </tr>\n    <tr>\n      <td>Loading order</td>\n      <td>First</td>\n      <td>Second</td>\n      <td>Third</td>\n      <td>First</td>\n      <td>Second</td>\n      <td>Third</td>\n    </tr>\n    <tr>\n      <td>Name</td>\n      <td>Fura-2 AM</td>\n      <td>RhoVR</td>\n      <td>BCECF AM</td>\n      <td>ANG-2 AM</td>\n      <td>pHrodo Red AM</td>\n      <td>BeRST</td>\n    </tr>\n    <tr>\n      <td>Probe type</td>\n      <td>Ca2+</td>\n      <td>Vm</td>\n      <td>pH</td>\n      <td>Na+</td>\n      <td>pH</td>\n      <td>Vm</td>\n    </tr>\n    <tr>\n      <td>Concentration (\u00b5M)</td>\n      <td>10</td>\n      <td>5</td>\n      <td>5</td>\n      <td>10</td>\n      <td>10</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Incubation (min)</td>\n      <td>90</td>\n      <td>10</td>\n      <td>5</td>\n      <td>90</td>\n      <td>25</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>FASTM modulation frequency (kHz)</td>\n      <td>30.4</td>\n      <td>37.3</td>\n      <td>50</td>\n      <td>37</td>\n      <td>50</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"3\">Fura-2, ANG-2, RhoVR</td>\n      <td colspan=\"3\">Fura-2, pHrodo, VF2.1.Cl</td>\n    </tr>\n    <tr>\n      <td>Loading order</td>\n      <td>First</td>\n      <td>Second</td>\n      <td>Third</td>\n      <td>First</td>\n      <td>Second</td>\n      <td>Third</td>\n    </tr>\n    <tr>\n      <td>Name</td>\n      <td>Fura-2 AM</td>\n      <td>ANG-2 AM</td>\n      <td>RhoVR</td>\n      <td>Fura-2 AM</td>\n      <td>pHrodo Red AM</td>\n      <td>VF2.1.Cl</td>\n    </tr>\n    <tr>\n      <td>Probe type</td>\n      <td>Ca2+</td>\n      <td>Na+</td>\n      <td>Vm</td>\n      <td>Ca2+</td>\n      <td>pH</td>\n      <td>Vm</td>\n    </tr>\n    <tr>\n      <td>Concentration (\u00b5M)</td>\n      <td>10</td>\n      <td>10</td>\n      <td>5</td>\n      <td>10</td>\n      <td>10</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Incubation (min)</td>\n      <td colspan=\"2\">90 (added together)</td>\n      <td>5</td>\n      <td>50</td>\n      <td>35</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>FASTM modulation frequency (kHz)</td>\n      <td>50</td>\n      <td>23</td>\n      <td>37</td>\n      <td>50.3</td>\n      <td>25.3</td>\n      <td>17.1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"6\">Fluo-4, phrodo, BeRST, BECMCM-cGMP</td>\n    </tr>\n    <tr>\n      <td>Loading order</td>\n      <td colspan=\"2\">First</td>\n      <td colspan=\"2\">Second</td>\n      <td>Third</td>\n      <td>Fourth</td>\n    </tr>\n    <tr>\n      <td>Name</td>\n      <td colspan=\"2\">BECMCM-cGMP</td>\n      <td colspan=\"2\">Fluo-4 AM</td>\n      <td>pHrodo Red AM</td>\n      <td>BeRST</td>\n    </tr>\n    <tr>\n      <td>Probe type</td>\n      <td colspan=\"2\">Caged cGMP</td>\n      <td colspan=\"2\">Ca2</td>\n      <td>pH</td>\n      <td>Vm</td>\n    </tr>\n    <tr>\n      <td>Concentration (\u00b5M)</td>\n      <td colspan=\"2\">10</td>\n      <td colspan=\"2\">10</td>\n      <td>10</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Incubation (min)</td>\n      <td colspan=\"2\">15</td>\n      <td colspan=\"2\">10</td>\n      <td>35</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>FASTM modulation frequency (kHz)</td>\n      <td colspan=\"2\">None</td>\n      <td colspan=\"2\">37.3</td>\n      <td>30.1</td>\n      <td>50.3</td>\n    </tr>\n  </tbody>\n</table>\n\nFluorescence was excited by an array of LEDs (Thorlabs) fitted with dichroics (Table 2). Lock-in amplifiers (MFLI, Zurich Instruments, and SR844 RF, Stanford Research Systems) supplied signals to modulate the LEDs, which were operated by a custom-made LED driver. Modulation frequencies were between 10 and 50 kHz (Table 1). The modulated output of the LEDs was combined with appropriate dichroics (Table 2) into a liquid light guide (series 380, \u00d8 3 mm \u00d7 1000 mm, Lumatec) and delivered to the cuvette (FC-15, BioLogic).\n\n**Table 2.**\n Optical configurations for recording signals from A. punctulata sperm.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Probe combination</th>\n      <th>Fluorescent probe</th>\n      <th>LED (Thorlabs)</th>\n      <th>Excitation filter (Semrock)</th>\n      <th>Dichroics</th>\n      <th>Emission filter(Semrock)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Fura-2, BCECF, RhoVR</td>\n      <td>Fura-2</td>\n      <td>M375L4</td>\n      <td>379/34</td>\n      <td rowspan=\"3\">470 LPXR (Chroma)HC BS 409 (Semrock)</td>\n      <td rowspan=\"2\">524/24</td>\n    </tr>\n    <tr>\n      <td>BCECF</td>\n      <td>M490L4</td>\n      <td>485/20</td>\n    </tr>\n    <tr>\n      <td>RhoVR</td>\n      <td>M455L4</td>\n      <td>438/24</td>\n      <td>607/36</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">ANG-2, pHrodo, BeRST</td>\n      <td>ANG-2</td>\n      <td>M490L4</td>\n      <td>485/20</td>\n      <td rowspan=\"3\">525 LPXR (Chroma)470 LPXR (Chroma)</td>\n      <td>542/20</td>\n    </tr>\n    <tr>\n      <td>pHrodo</td>\n      <td>M565L3</td>\n      <td>575/19</td>\n      <td rowspan=\"2\">593LP</td>\n    </tr>\n    <tr>\n      <td>BeRST</td>\n      <td>M455L4</td>\n      <td>438/24</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Fura-2, ANG-2, RhoVR</td>\n      <td>Fura-2</td>\n      <td>M340L4</td>\n      <td>340/22</td>\n      <td rowspan=\"3\">470 LPXR (Chroma)HC BS 409 (Semrock)</td>\n      <td rowspan=\"2\">542/20</td>\n    </tr>\n    <tr>\n      <td>ANG-2</td>\n      <td>M505L3</td>\n      <td>513/17</td>\n    </tr>\n    <tr>\n      <td>RhoVR</td>\n      <td>M455L4</td>\n      <td>438/24</td>\n      <td>607/36</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Fura-2, pHrodo, VF2.1.Cl</td>\n      <td>Fura-2</td>\n      <td>M340L4</td>\n      <td>340/22</td>\n      <td rowspan=\"3\">470 LPXR (Chroma)HC BS 409 (Semrock)</td>\n      <td rowspan=\"2\">542/20</td>\n    </tr>\n    <tr>\n      <td>VF2.1.Cl</td>\n      <td>M455L4</td>\n      <td>438/24</td>\n    </tr>\n    <tr>\n      <td>pHrodo</td>\n      <td>M565L3</td>\n      <td>575/19</td>\n      <td>593LP</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">BECMCM-cGMP, Fluo-4, pHrodo, BeRST</td>\n      <td>BECMCM-cGMP</td>\n      <td>M340L4</td>\n      <td>340/22</td>\n      <td rowspan=\"4\">525 LPXR (Chroma)470 LPXR (Chroma)HC BS 409 (Semrock)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fluo-4</td>\n      <td>M490L4</td>\n      <td>494/20</td>\n      <td>542/20</td>\n    </tr>\n    <tr>\n      <td>pHrodo</td>\n      <td>M565L3</td>\n      <td>575/19</td>\n      <td rowspan=\"2\">593LP</td>\n    </tr>\n    <tr>\n      <td>BeRST</td>\n      <td>M455L4</td>\n      <td>438/24</td>\n    </tr>\n  </tbody>\n</table>\n\nThe emission was collected at right angles to the cuvette and spectrally filtered with bandpass filters (Table 2) onto two PMT modules (H10723-20; Hamamatsu Photonics). Signals from the PMTs were directed to lock-in amplifiers, where they were amplified and frequency filtered with a third-order (18 dB/octave) lowpass filter and a time constant of 1 ms. Data acquisition was performed with a data acquisition pad (PCI-6221; National Instruments) and Bio-Kine software (BioLogic) with a sampling rate of 1 or 2 ms. Of note, to investigate signals recorded upon optical filtering alone (Figure 3), all LEDs were modulated with the same frequency.\n\n### Analysis of stopped-flow recordings from A. punctulata sperm\n\nData were analyzed using GraphPad Prism 9 (Prism, La Jolla, USA). Each signal represents the average of at least three recordings. Signals are depicted as the percent change in fluorescence with respect to the mean of the first 5\u201310 data points prior to signal onset (\u0394F/F0 (%)); mixing artifacts occurring at the stop of the flow were cropped, prolonging the actual dead time of recordings. The baseline \u0394F/F0 obtained upon mixing with ASW alone was subtracted wherever indicated. In some figures, signals were normalized to their maximal values. The calibration procedure to convert the fluorescence changes of a Vm probe into Vm values (mV) has been previously described (Str\u00fcnker et al., 2006; Seifert et al., 2015; Hamzeh et al., 2019). In brief, sperm were mixed with 2 nM resact at varying extracellular K+ concentrations ([K+]o). With increasing [K+]o, the peak amplitude of the resact-evoked hyperpolarization decreased and, eventually, Vm depolarized. A plot of the peak amplitude (\u0394F/F0) versus the K+-Nernst potential for a given [K+]o was fitted with a linear fit. The slope of the fitted line yielded the Vm sensitivity (%\u0394F/F0 per mV) of the Vm probe and the x-intercept yielded Vrest, that is, the K+ Nernst potential at which resact did not change Vm. Nernst potentials were calculated assuming an intracellular K+ concentration of 423 mM (Str\u00fcnker et al., 2006). In simultaneous recordings of [Ca2+]i, pHi, and Vm, the Vm onset of the [Ca2+]i and pHi signals was deduced from their respective latencies.\n\nTo determine a probe\u2019s crosstalk into orthogonal channels, the fluorescence values recorded in the different channels were plotted against each other for the particular time window indicated in the figure legend and fitted with a linear equation. The slope of the fit was multiplied by 100 to quantify, as a percentage, the extent of crosstalk.\n\n### Caged compounds and flash photolysis\n\nThe protocol for loading sperm with BECMCM-cGMP is provided in Table 1. For uncaging, sperm were mixed with ASW and allowed to equilibrate in the cuvette for 5\u201310 s, after which a 50 ms pulse of UV light from a LED (M340L4; Thorlabs) was delivered using a custom-made triggering device.\n\n### Simultaneous ratiometric recording of [Ca2+]i and pHi signals in human sperm\n\nSamples of human semen were obtained from volunteers with their prior written consent, under approval of the institutional ethical committees of the medical association Westfalen-Lippe and the medical faculty of the Universtity of M\u00fcnster (4INie). Human sperm were purified by \u2018swim-up\u2019 into human tubular fluid (HTF) as described previously (Str\u00fcnker et al., 2011). Fura-FF AM (10 \u00b5M) was added to a sperm suspension (107 sperm/ml) supplemented with 0.05% Pluronic F-127 and incubated for 90 min at 37\u00b0C. The probe-loaded sperm were pelleted by centrifugation (700 \u00d7 g, 5 min at 37\u00b0C), resuspended in HTF, and incubated for 60 min at 37\u00b0C to allow de-esterification of intracellular probe. BCECF AM (2 \u00b5M) was added to the Fura-FF-loaded sperm and incubated for 5 min; after which, sperm were pelleted (700 \u00d7 g, 5 min at 37\u00b0C) and resuspended in HTF. The sperm density was adjusted to 6 \u00d7 107 sperm/ml.\n\nThe sperm suspension was rapidly mixed (1:1) with HTF, HTF containing 200 nM progesterone, or HTF containing 60 mM NH4Cl in a microvolume stopped-flow (\u00b5SFM, BioLogic) at a flow rate of 1 ml/s, resulting in a dead time of 1.9 ms. The optical configuration is summarized in Table 3. Signals to modulate the LEDs were provided by a lock-in amplifier (MFLI, Zurich Instruments) and a waveform generator (Agilent, 33220A), which was synchronized to the 10 MHz clock of the lock-in amplifier. Signals were amplified and frequency filtered by the lock-in amplifier using a third-order (18 dB/octave) lowpass filter and a time constant of 1 ms. Data acquisition was performed as described for sea urchin sperm, but with a sampling rate of 5 ms.\n\n**Table 3.**\n Optical configuration for simultaneous ratiometric recording of [Ca2+]i and pHi signals in human sperm.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Fluorescent probe</th>\n      <th>LED (Thorlabs)</th>\n      <th>FASTM modulation frequency (kHz)</th>\n      <th>Excitation filter (Semrock)</th>\n      <th>Dichroics</th>\n      <th>Emission filter(Semrock)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Fura-FF</td>\n      <td>M340L4</td>\n      <td>87.3</td>\n      <td>340/22</td>\n      <td rowspan=\"4\">HC BS 365 (Semrock)HC BS 409 (Semrock)470 LPXR (Chroma)</td>\n      <td rowspan=\"4\">524/24</td>\n    </tr>\n    <tr>\n      <td>M375L4</td>\n      <td>73.51</td>\n      <td>370/10</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">BCECF</td>\n      <td>M455L4</td>\n      <td>61.7</td>\n      <td>445/20</td>\n    </tr>\n    <tr>\n      <td>M490L4</td>\n      <td>103.7</td>\n      <td>485/20</td>\n    </tr>\n  </tbody>\n</table>\n\n_FASTM, frequency- and spectrally-tuned multiplexing._\n\nEach signal represents the average of at least three recordings. Dual-excitation ratiometric [Ca2+]i signals reported by Fura-FF were determined by dividing the fluorescence signal recorded upon excitation at 340 nm over that at 370 nm (340/370). Ratiometric pHi signals reported by BCECF were determined by dividing the signal recorded upon excitation at 485 nm over that at 445 nm (485/445). Signals are depicted as the percentage change in the ratio with respect to the mean of the first 3\u201310 data points after mixing (\u0394R/R0 (%)). The baseline \u0394R/R0 obtained upon mixing with HTF alone was subtracted. Signals were also depicted individually for each signal channel as fluorescence changes (\u0394F/F0 (%)) and were calculated as described above for sea urchin sperm.\n\n### Determination of Koff for fluorescent Ca2+ probes and of signal-to-noise ratios\n\nCalbryte 630 (1 \u00b5M), Fluo-4 (1 \u00b5M), and Fura-2 (20 \u00b5M) dissolved in buffer containing 100 mM KCl, 20 mM HEPES, and 400 \u00b5M CaCl2 (pH 7.5) were rapidly mixed (1:1) with buffer containing 10 mM BAPTA (Sigma-Aldrich), 100 mM KCl, and 20 mM HEPES, (pH 7.5) in the \u00b5SFM at a flow rate of 1.3 ml/s, resulting in a dead time of 1.5 ms. The ensuing changes in probe fluorescence, reflecting the unbinding of Ca2+, were monitored with the optical configuration summarized in Table 4.\n\n**Table 4.**\n Optical configuration for koff determination.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Fluorescent probe</th>\n      <th>LED (Thorlabs)</th>\n      <th>FASTM modulation frequency (kHz)</th>\n      <th>Excitation filter (Semrock)</th>\n      <th>Dichroics</th>\n      <th>Emission filter(Semrock)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Fura-2</td>\n      <td>M340L4</td>\n      <td>87.31</td>\n      <td>340/22</td>\n      <td rowspan=\"4\">HC BS 365 (Semrock)HC BS 409 (Semrock)525 LPXR (Chroma)</td>\n      <td rowspan=\"3\">524/24</td>\n    </tr>\n    <tr>\n      <td>M375L4</td>\n      <td>103.7</td>\n      <td>370/10</td>\n    </tr>\n    <tr>\n      <td>Fluo-4</td>\n      <td>M490L4</td>\n      <td>59.51</td>\n      <td>485/20</td>\n    </tr>\n    <tr>\n      <td>Calbryte 630</td>\n      <td>M565L3</td>\n      <td>47.1</td>\n      <td>586/20</td>\n      <td>647/57</td>\n    </tr>\n  </tbody>\n</table>\n\n_FASTM, frequency- and spectrally-tuned multiplexing._\n\nSignals were amplified and frequency filtered with a third-order (18 dB/octave) lowpass filter and a time constant of 100 \u00b5s and were recorded as described for sea urchin sperm, but with a sampling rate of 100 \u00b5s. Each signal represents the average of at least five recordings. Signals are depicted as the relative change in fluorescence (\u0394F/F0) with respect to the baseline signal (F0) recorded in 400 \u00b5M CaCl2, that is, in the absence of BAPTA (F0). To determine the koff, signal curves were fitted with a monoexponential decay with no fit constraints in GraphPad Prism 9 (Prism). The fluorescence crosstalk between channels was determined as described for recordings from sea urchin sperm.\n\nFor evaluation of the S/N ratio, Fura-2 (20 \u00b5M) in 100 mM KCl, 20 mM HEPES, and 400 \u00b5M CaCl2 (pH 7.5) was mixed with buffer containing 10 mM BAPTA, 100 mM KCl, and 20 mM HEPES (pH 7.5). Fluorescence was excited by light from a single LED (M375L4, fitted with a 370/10 filter) that delivered either continuous or modulated (103.7 kHz) light to the observation cuvette. To detect Fura-2 fluorescence excited by modulated illumination, the recording configuration was the same as described above, except that the time constant of the lock-in amplifier was varied between 100 \u00b5s and 2 ms with a matching sample rate. To detect fluorescence excited by continuous illumination, the signal was amplified and filtered through a conventional voltage amplifier (DLPVA-100-B-S: Femto Messtechnik) and subsequently routed to the data acquisition pad (PCI-6221; National Instruments) and Bio-Kine software (BioLogic). The S/N ratio was calculated by dividing the mean signal intensity by the standard deviation over 200 data points.\n\n### Recording of fluorescence spectra\n\nFluorescence spectra were recorded from 50 \u00b5l of either a probe-containing solution or a probe-loaded sperm suspension in 384-well plates (Greiner) with a fluorescent plate reader (CLARIOStar, BMG) in spectral scanning mode using bottom optics.\n\nFor sea urchin sperm, dry sperm was diluted 1:6 (v/v) in ASW and loaded with a fluorescent probe according to Table 1. The probe-loaded sperm suspension was further diluted 1:10 (v/v) with ASW for spectral acquisition.\n\nFor human sperm, loading with either Fura-FF AM or BCECF AM was performed as described above. The probe-loaded sperm suspension (107 sperm/ml) was centrifuged (700 \u00d7 g for 5 min at 37\u00b0C) and resuspended in different buffers to a concentration of 2 \u00d7 107 sperm/ml. Fura-FF-loaded sperm were resuspended in HTF supplemented with 10 \u00b5M ionomycin (Biomol) or Ca2+-free HTF supplemented with 5 mM EGTA (Sigma-Aldrich). BCECF-loaded sperm were resuspended in HTF adjusted to either pH 6.5 or pH 8.5.\n\nFor spectral acquisition of probes in solution, either Fura-2, Fluo-4, or Calbryte 630 was diluted to 1 \u00b5M in a buffer containing 100 mM KCl, 20 mM HEPES (pH 7.5), and either 400 \u00b5M CaCl2 or 5 mM EGTA.\n\n### Single-cell recordings of intracellular cAMP and [Ca2+]i\n\nHEK293 cells (flp-In-293) stably transfected with expression constructs encoding the biogenic amine receptor DmOCT\u03b21R from Drosophila melanogaster (Balfanz et al., 2005) and the bovine CNGA2-TM channel (Wachten et al., 2006; Schr\u00f6der-Lang et al., 2007) were cultured in DMEM plus GlutaMAX (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum (Biochrom) and 1\u00d7 penicillin/streptomycin (Thermo Fisher Scientific) with selective pressure provided by G418 (800 \u00b5g/ml) (Thermo Scientific) and hygromycin (100 \u00b5g/ml) (Thermo Fisher Scientific) for constitutive expression of DmOCTB1R, respectively. Authentication was performed by functional tests as shown in Figure 10. Cell lines were negatively tested for mycoplasma contamination. The cells were seeded onto 5 mm glass coverslips (#1; Thermo Fisher Scientific) that were coated with poly-L-lysine (Sigma-Aldrich). To yield cells expressing a FRET-based cAMP biosensor, DmOCT\u03b21 receptors, and CNGA2 channels, cells at 50\u201360% confluency were transfected using Lipofectamine 2000 (Invitrogen) according to the manufacturer\u2019s protocol with either pc3.1-mlCNBD-FRET (high cAMP affinity), pc3.1-mlCNBD-FRET-R307Q (non-binding) (Mukherjee et al., 2016), or pc3.1-mlCNBD-FRET-M329C (low cAMP affinity). Using pc3.1-mlCNBD-FRET as a template, we performed QuikExchange (Agilent) to introduce the M329C mutation. All vectors are based on the pcDNA3.1(+) vector and contain a neomycin-resistant cassette for selection in mammalian cells. To load the cells with Calbryte 630 AM, cells adhered to cover slips were washed once with ES (in mM): 120 NaCl, 5 KCl, 2 CaCl2, 10 HEPES, and 10 glucose, adjusted to pH 7.5 with NaOH and then incubated in ES supplemented with 10 \u00b5M Calbryte 630 AM, 0.05% Pluronic, and 3 mM Probenecid (Sigma-Aldrich) for 10 min at 37\u00b0C. Cells were washed once with ES to remove unloaded probe. Coverslips were transferred to a custom-built headstage chamber that was fit with a custom-built gravity flow-perfusion system and imaged with an inverted microscope (IX73; Olympus). The excitation module consisted of a blue LED (M455L4; Thorlabs) fitted with a 438/24 nm filter (Semrock) and a green LED (M565L3; Thorlabs) fitted with a 565/24 nm filter (Semrock). The blue and green LEDs were modulated at 36.1 and 49.5 kHz, respectively, by lock-in amplifiers (MFLI, Zurich Instruments, or SR844 RF, Stanford Research Systems). The modulated output of these LEDs was combined on a dichroic (470 LPXR; Chroma), passed through a neutral density filter (NDUV20A; Thorlabs) and a CFP-YFP-mCherry filter cube (AHF Analysetechnik), and focused onto the sample with a \u00d760 water immersion objective (UPlanSApo, numerical aperture [NA] 1.2; Olympus). The modulated fluorescence signals were directed through the CFP-YFP-mCherry filter cube and split by a dichroic (525 LPXR; Chroma) onto two PMTs. One PMT was fitted with a 475/28 nm bandpass filter (Semrock) to collect fluorescence from the FRET donor (cerulean). The other PMT was fitted with a 578/105 nm bandpass filter (Semrock) to collect fluorescence from the FRET acceptor (citrine) and the Ca2+ probe (Calbryte 630). Signals were routed to lock-in amplifiers, where they were amplified and frequency filtered with a third--order (18 dB/octave) lowpass filter and a time constant of 10 ms. Data were acquired at 200 Hz with an analog-to-digital converter (Axon Digidata 1550A; Molecular Devices) and pCLAMP software (Molecular Devices). Selection of single cells was performed with brightfield illumination using a halogen light source (TH4-200; Olympus) and a condenser (IX2-MLWPO, NA 0.5; Olympus). An aluminum mirror (Chroma) was temporarily installed in the optical path to divert transmitted light to a camera (IDS Imaging). Cells expressing the FRET-based cAMP sensor were selected based on fluorescence. If necessary, an aperture was adjusted to encircle the cell of interest to isolate its fluorescence from surrounding cells. After selection, the mirror was removed, directing the fluorescence to the PMTs. To measure cAMP and [Ca2+]i signals, cells were perfused with ES for 20 s, then perfusion was switched to ES containing 20 \u00b5M octopamine. The FRET ratio, that is, cAMP signal, was calculated by dividing the signal recorded in the donor (cerulean) channel by the signal recorded in the acceptor (citrine) channel. The FRET ratio is shown as the percent change in the FRET ratio with respect to the mean value of the first 1 s of recording (\u0394R/R0 (%)). The [Ca2+]i signals are shown as the percent change in fluorescence with respect to the mean of the first 1 s of recording (\u0394F/F0). The latencies of the FRET and [Ca2+]i signals were deduced from the signal time course.\n",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "12cab4ca-6496-41d9-81cb-89535c6204ed",
+      "submission_id": "5f3d9208-5499-4b5e-8a65-baf4065a0ca7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard S Lewis, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63129.sa0](https://doi.org/10.7554/eLife.63129.sa0)\n\nThe number and temporal resolution of fluorescent probes that can be used simultaneously to interrogate cell signaling pathways are currently limited by overlap of their excitation and emission spectra. This study introduces a new technique to overcome these limitations and enable simultaneous recording of multiple probes at millisecond time resolution. The technique will facilitate studies of the temporal and causal relationships among many signaling pathways that can be targeted with fluorescent probes.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Richard S Lewis, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63129.sa1](https://doi.org/10.7554/eLife.63129.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Simultaneous recording of multiple signaling events by frequency-and spectrally-tuned multiplexing of fluorescent probes\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is member of our Board of Reviewing Editors, and the evaluation has been overseen by Kenton Swartz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nSimultaneous recording of multiple signals in living cells is a powerful approach for determining relationships among events in biological signal transduction. A current limitation results from emission spectral overlap of fluorescence-based probes, which limits the number of signals that can be monitored and the temporal resolution of the recordings. This paper introduces a technique, FASTM, which uses phase-sensitive signal detection to overcome these limitations. Examples include simultaneous recordings of Ca2+, Na+, pH and Vm (in combinations of three) with millisecond resolution, and Ca2+ and cAMP using a FRET-based cAMP biosensor in single cells. These applications demonstrate the potential of FASTM to simultaneously record and distinguish multiple biological signals at high temporal resolution, using probes with distinct excitation spectra but overlapping emission spectra.\n\nEssential revisions:\n\nThe reviewers agreed that the experimental work was carried out well and adequately described, and that the FASTM technique may offer a useful tool for multi-probe measurements. However, the criterion for acceptance as a Tools and Resources papers in eLife is that the new technique should enable experiments leading to new biological insights or mechanisms. In this regard, a weakness of the paper is that the critical advantages of FASTM over existing approaches are not convincingly or explicitly demonstrated. This issue must be addressed along with others described below.\n\n1. FASTM is an effective way of separately measuring the overlapping emissions from probes that have separable excitation spectra. However, rapidly switchable excitation filter wheels or galvanometer-based devices also solve this problem and are widely used. Please describe specific experimental applications where FASTM provides advantages over current approaches. Be specific about how the characteristics of FASTM will enable measurements that cannot be made with existing methods, and why this is important. This is needed to demonstrate that FASTM will enable new kinds of measurements not possible with current methods.\n\n2. One important question is how signal demodulation affects the signal-to-noise ratio and temporal resolution as compared with the standard excitation switching technique. A quantitative comparison of S/N ratio with and without FASTM could be made for cell suspensions and also in single cells (where the effects may be more dramatic).\n\n3. To bolster the innovative aspect and new applications for this technique, please show an example of ratiometric Ca2+ or pH measurements (e.g., fura-2).\n\n4. (l. 124-126) RhoVR can be monitored separately by its red- shifted excitation/emission (Figure 3). The question is whether FASTM confers any advantage here. One possible advantage of FASTM could be to reduce photobleaching, because more of the emission band could be collected even though it overlaps with emissions of other probes. An example of this should be shown.\n\n5. The required conditions for application of FASTM should be more clearly stated, and much earlier in the paper (before the Discussion). For example, the excitation spectra of two probes with overlapping emissions need to differ but need not be entirely distinct, as long as one of the probes can be uniquely excited (e.g., see Figure 6A, Vm and Ca2+). It may be useful to use a diagram to illustrate the various spectral situations for which FASTM would be advantageous.\n\n6. Figure 9 is confusing. The examples in A show that Ca2+ signal latency increases with the type of cAMP sensor, yet the FRET cAMP signal doesn't appear to be much affected. The sensor indicates free cAMP, which appears similar with WT sensor or M329C sensor, yet the Ca2+ signal latency is very different. Why? Also, how is a FRET peak measured in these responses when the FRET appears to simply rise to a plateau? The results here don't appear to support the conclusions.\n\n7. Please comment on why the depolarizing signal that results from uncaging cGMP is significantly larger than when stimulating with resact.\n\n8. (l. 266-273, l. 296): Much of the significance of the FASTM technique rests on claims for additional probes and combinations that could be used. Some examples of other combinations should be supplied, perhaps with >3 probes that could be distinguished by FASTM. Fluorescence and absorbance probes? Multiple FRET probes? A table may be an effective way to display these examples.\n\n9. l. 61-64 states that multiplexing of signaling events has been limited to simultaneous recording of two ion species or one ion and Vm. This is not strictly true \u2013 there are several papers in the sperm field where cytometry and imaging cytometry allow simultaneous measurements of three or more dyes, and several methods already exist for disentangling multiple signals using phase differences and modulation (see references below).\n\nLoew LM. Voltage-sensitive dyes: measurement of membrane potentials induced by DC and AC electric fields. Bioelectromagnetics. 1992;Suppl 1:179-89.\n\nCarlsson K et al., Simultaneous confocal recording of multiple fluorescent labels with improved channel separation. J Microsc. 1994 176:287-99.\n\nRonzitti E, et al., Frequency dependent detection in a STED microscope using modulated excitation light. Opt Express. 2013 21:210-9.\n\nBerndt KW, et al., A 4-GHz frequency-domain fluorometer with internal microchannel plate photomultiplier cross- correlation. Anal Biochem. 1991 192:131-7.\n\nWei-LaPierre L, et al., Respective contribution of mitochondrial superoxide and pH to mitochondria-targeted circularly permuted yellow fluorescent protein (mt-cpYFP) flash activity. J Biol Chem. 2013 288:10567-77.\n\nWu F, et al., Frequency division multiplexed multichannel high-speed fluorescence confocal microscope. Biophys J. 2006 91:2290-6.\n\nSchreiber U. Detection of rapid induction kinetics with a new type of high- frequency modulated chlorophyll fluorometer. Photosynth Res. 1986 9:261-72.\n\nKalaji HM, et al., Experimental in vivo measurements of light emission in plants: a perspective dedicated to David Walker. Photosynth Res. 2012 114:69-96.\n",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a08cbd15-678e-434a-93a4-9b36ffb3b3f2",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C1",
+      "claim": "Fluorescent probes that change their spectral properties upon binding to small biomolecules, ions, or changes in membrane potential (Vm) are invaluable tools to study cellular signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent probes that change their spectral properties upon binding to small biomolecules, ions, or changes in the membrane potential (Vm) are invaluable tools to study cellular signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the utility of fluorescent probes, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "cac12f59-4a97-4709-9c67-685196d990d8",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C2",
+      "claim": "FASTM uses phase-sensitive signal detection to enable multiplexing of various combinations of common probes for Vm and ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from present multiplexing approaches, FASTM uses phase-sensitive signal detection, which renders various combinations of common probes for Vm and ions accessible for multiplexing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical approach of FASTM as presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "c1f84499-6c3a-4bba-92a0-1c9776ab0b75",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C3",
+      "claim": "FASTM allows simultaneous recording of rapid changes in Ca2+, pH, Na+, and Vm with high sensitivity and minimal crosstalk using kinetic stopped-flow fluorimetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Using kinetic stopped-flow fluorimetry, we show that FASTM allows simultaneous recording of rapid changes in Ca2+, pH, Na+, and Vm with high sensitivity and minimal crosstalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript using stopped-flow fluorimetry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "2959197c-dd8d-4ad4-9999-428adff6dca8",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C4",
+      "claim": "FASTM is suited for multiplexing using single-cell microscopy and genetically encoded FRET biosensors.",
+      "claim_type": "EXPLICIT",
+      "source": "FASTM is also suited for multiplexing using single-cell microscopy and genetically encoded FRET biosensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from single-cell microscopy experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "62e26551-fe9c-420a-a888-e71a2dd381a2",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C5",
+      "claim": "FASTM is compatible with optochemical tools to study signaling using light.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, FASTM is compatible with optochemical tools to study signaling using light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments using caged compounds and flash photolysis in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "f281c283-f1c5-4732-b7fa-ddd677636a55",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C6",
+      "claim": "The exceptional time resolution of FASTM allows resolving rapid chemical reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that the exceptional time resolution of FASTM also allows resolving rapid chemical reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on Ca2+ dissociation kinetics from fluorescent probes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "88abd360-3146-497a-a78d-6551beedcb86",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C7",
+      "claim": "Multiplexing of signaling events can reveal the precise sequence of events and whether they are mechanistically coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "Such measurements can not only reveal the precise sequence of signaling events, for example, whether they are upstream or downstream of each other, but also whether events are mechanistically coupled like ion transport across membranes via exchangers or symporters (Welch et al., 2011; Depry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "74032e65-db0c-4060-b2ca-08d857c1ec7b",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C8",
+      "claim": "Inter-experimental and cell-to-cell variations may obscure temporal and mechanistic relationships of events when recorded in separate experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "When recorded in separate experiments on different samples, inter-experimental and cell-to-cell variations may obscure temporal and mechanistic relationships of events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on known experimental variability.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "bd99fcfa-7fef-4705-8a61-83393798c6ee",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C9",
+      "claim": "Probes bind their target molecules, which might perturb the dynamics and sequence of cellular responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, by design, probes bind their target molecules, which might perturb the dynamics and sequence of cellular responses (Lew et al., 1985; Haugh, 2012; Delvendahl et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies demonstrating probe-related perturbations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "e62ded51-79f1-45b4-bb47-60685b9adfcb",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C10",
+      "claim": "Probe-related perturbations can be inferred from multiplexing experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Such probe-related perturbations can be inferred from multiplexing experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments comparing single- versus triple-loaded sperm in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "deba9401-bc2c-42e6-b50b-5775e8f3cfc1",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C11",
+      "claim": "Signaling events such as ligand-receptor binding and changes in Vm and ions often occur on millisecond or sub-millisecond timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling events, such as ligand-receptor binding and changes in Vm and ions, often occur on millisecond or even sub-millisecond timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in cellular signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "9d0dce05-90d5-483d-a21b-a6f93ae4b44a",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C12",
+      "claim": "Discrimination of simultaneously excited probes relies on spectral separation of their emissions using optical filtering.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrimination of simultaneously excited probes relies on the spectral separation of their emissions using optical filtering (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a standard approach in fluorescence microscopy, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "b6d58e0b-c714-4bc4-925e-a7f2851e0251",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C13",
+      "claim": "Crosstalk arising from overlapping emission spectra compromises discrimination of probes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the spectral space for simultaneous recording of probes is limited (Neher and Neher, 2004) because crosstalk arising from overlapping emission spectra compromises their discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents a known limitation in fluorescence multiplexing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "ba51475c-a769-42f8-ad3f-f5cfc4e85128",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C14",
+      "claim": "Simultaneous recording with millisecond time resolution has been restricted to two probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, although many spectrally distinct probes for Vm and various ions and biomolecules have been developed (Depry et al., 2013; Yuan et al., 2013; Yin et al., 2015; Kulkarni and Miller, 2017; Mehta et al., 2018), simultaneous recording with millisecond time resolution has been restricted to two probes, for example, for two ion species or one ion species and Vm (e.g., Vogt et al., 2011; Jaafari et al., 2015; Deal et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "3ebe5b32-39a4-4431-8703-349a8a36be3d",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C15",
+      "claim": "Quasi-simultaneous recording involves sequential excitation and detection of probes by switching between different excitation wavelengths.",
+      "claim_type": "EXPLICIT",
+      "source": "For multiplexing of more than two probes, quasi-simultaneous recording has been used: probes are excited and detected sequentially by switching between different excitation wavelengths (Figure 1B; Canepari et al., 2007; Canepari et al., 2008; Lee et al., 2012; Sulis Sato et al., 2017; Miyazaki et al., 2018; Ait Ouares et al., 2019; Nguyen et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "d266aeb3-5971-4d4c-b7db-bb725cbc4b12",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C16",
+      "claim": "Quasi-simultaneous multiplexing overcomes fluorescence crosstalk but limits temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although quasi-simultaneous multiplexing overcomes fluorescence crosstalk, it limits the temporal resolution and, thereby, the application range for studying rapid signaling events occurring on a millisecond timescale (van Meer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents a known limitation of the technique.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "6c132ebe-ba98-495e-bc73-9b24be51fd60",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C17",
+      "claim": "A multiplexing strategy combining millisecond temporal resolution with high flexibility regarding the number and combinations of probes has been lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Hitherto, a multiplexing strategy combining millisecond temporal resolution with high flexibility regarding the number and combinations of probes has been lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the gap in the field that the manuscript addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "6d970a97-3979-420d-9ae6-590fdeda02ec",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C18",
+      "claim": "Resact triggers the synthesis of cGMP by activating a receptor guanylyl cyclase in sea urchin sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Resact, the chemoattractant peptide released by the egg, triggers the synthesis of cGMP by activating a receptor guanylyl cyclase (GC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the established signaling pathway in sea urchin sperm, illustrated in Figure 1D and E, and supported by a review citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "ecaa253b-6f21-49bf-baa2-d258d940e3d5",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C19",
+      "claim": "The rise in cGMP elicits a pulse-like Vm hyperpolarization mediated by a cyclic nucleotide-gated K+ channel (CNGK) in sea urchin sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The rise in cGMP elicits a pulse-like Vm hyperpolarization mediated by a cyclic nucleotide-gated K+ channel (CNGK).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the established signaling pathway, illustrated in Figure 1D and E.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "cd5dfcbb-9fca-48a3-a530-5b9e2b4bf519",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C20",
+      "claim": "The hyperpolarization activates a voltage-gated Na+/H+ exchanger (sNHE) and a hyperpolarization-activated and cyclic nucleotide-gated (HCN) channel in sea urchin sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The hyperpolarization activates a voltage-gated Na+/H+ exchanger (sNHE) and a hyperpolarization\u2010activated and cyclic nucleotide\u2010gated (HCN) channel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the established signaling pathway, illustrated in Figure 1D and E.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "98562302-a784-4561-bbd8-c05ac7ee5706",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C21",
+      "claim": "The Na+/H+ exchange increases [Na+]i and pHi in sea urchin sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The Na+/H+ exchange increases [Na+]i and pHi.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the established signaling pathway, illustrated in Figure 1D and E.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "b3fcdda0-38d2-45c1-b9ad-bf82c64495ac",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C22",
+      "claim": "The increase in pHi primes pHi-controlled CatSper Ca2+ channels to open during recovery from hyperpolarization in sea urchin sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, the increase in pHi primes pHi-controlled CatSper Ca2+ channels to open during the recovery from hyperpolarization driven by HCN channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the established signaling pathway, illustrated in Figure 1D and E.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "25fafb6e-3707-42f2-9519-31719d68b4eb",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C23",
+      "claim": "The Ca2+ influx drives chemotactic steering towards the egg in sea urchin sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting Ca2+ influx drives chemotactic steering towards the egg.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the established signaling pathway, illustrated in Figure 1D and E.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "d17021c6-c07d-4c96-bc12-4b6fa77819ac",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C24",
+      "claim": "The sequence of signaling events in sea urchin sperm has been delineated by sequentially recording changes in either [Ca2+]i, pHi, [Na+]i, or Vm on different sperm samples using stopped-flow fluorimetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence of signaling events has been delineated by sequentially recording changes in either [Ca2+]i, pHi, [Na+]i, or Vm on different sperm samples using stopped-flow fluorimetry (Figure 1F; Hamzeh et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "b79ad77f-a746-47c1-b33b-f34138b4eb8e",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C25",
+      "claim": "The well-separated excitation spectra of Fura-2, BCECF, and RhoVR render these three probes accessible for quasi-simultaneous recording.",
+      "claim_type": "EXPLICIT",
+      "source": "The well-separated excitation spectra (Figure 2A) render these three probes accessible for quasi-simultaneous recording.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the spectral properties shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "01542f8c-5672-4c20-a610-2a1980547632",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C26",
+      "claim": "The [Ca2+]i, pHi, and Vm signals occur on a millisecond timescale, which requires their simultaneous recording.",
+      "claim_type": "EXPLICIT",
+      "source": "The [Ca2+]i, pHi, and Vm signals occur, however, on a millisecond timescale, which requires their simultaneous recording",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known kinetics of these signaling events.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "4e7e57b8-33ff-4f30-9d67-64870bb8aa5c",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C27",
+      "claim": "Due to overlapping emission spectra, simultaneous recording of Fura-2, BCECF, and RhoVR using optical filtering alone seems intractable.",
+      "claim_type": "EXPLICIT",
+      "source": "yet, due to the overlapping emission spectra (Figure 2A), simultaneous recording of these three probes using optical filtering alone seems intractable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the spectral properties shown in Figure 2A and represents a logical inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "d01bd1be-f0b9-4679-b79d-1d621d149c48",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C28",
+      "claim": "FASTM involves simultaneous excitation of different probes by LEDs modulated at distinct frequencies in the kHz range.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we chose to multiplex Fura-2, BCECF, and RhoVR based on simultaneous excitation by three LEDs each modulated at a distinct frequency in the kHz range (Figure 2B, Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the technical implementation of FASTM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "0ff069e7-b65d-4042-881b-091a5b02e914",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C29",
+      "claim": "The emission of each probe is tagged with a unique frequency signature for discrimination in FASTM.",
+      "claim_type": "EXPLICIT",
+      "source": "thereby, the emission of each probe is tagged with a unique frequency signature for discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the principle of frequency-tagging in FASTM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "00e3819d-7ddd-41cb-a0b4-913381a7c589",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C30",
+      "claim": "Lock-in amplifiers demodulate and amplify the PMT signals in a phase-sensitive fashion to discriminate probes based on their modulation frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Lock-in amplifiers demodulated and amplified the PMT signals in a phase-sensitive fashion to discriminate, in real time, the probes based on their modulation frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the signal processing approach in FASTM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "2afac8ae-1771-4b62-8792-7eab60e72930",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C31",
+      "claim": "Using optical filtering alone, the basal fluorescence intensity and relative increase recorded in the BCECF channel and the Fura-2 channel from BCECF-loaded sperm were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "In BCECF-loaded sperm, relying on optical filtering alone, the basal fluorescence intensity (Fo) recorded in the BCECF channel and the Fura-2 channel (Figure 3A, gray) and the relative increase (\u2206F/Fo), reflecting the pHi response (Figure 3B, gray), were similar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "7dca2525-c124-4a55-b6bd-0d7bcf50b7db",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C32",
+      "claim": "Basal BCECF fluorescence and the resact-induced relative increase were detected in the RhoVR channel, demonstrating that optical filtering is not sufficient to isolate the RhoVR channel from BCECF's broad emission spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Basal BCECF fluorescence and the resact-induced relative increase were also detected in the RhoVR channel (Figure 3A and B), demonstrating that optical filtering is not sufficient to isolate the RhoVR channel from BCECF's broad emission spectrum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "6b384580-9047-4244-9cef-2ee3dca4d0ac",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C33",
+      "claim": "For optical filtering alone, the crosstalk between the BCECF and the Fura-2 and RhoVR channels was 100% and 31%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For optical filtering alone, we determined a crosstalk between the BCECF and the Fura-2 and RhoVR channels of 100 and 31%, respectively (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from experimental data shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "09e34792-b494-47ba-8b45-a6be1afe3166",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C34",
+      "claim": "With FASTM, the crosstalk between the BCECF and the Fura-2 or the RhoVR channel was only 9% and 1%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "with FASTM, the crosstalk between the BCECF and the Fura-2 or the RhoVR channel was only 9 and 1%, respectively (Figure 3C and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from experimental data shown in Figure 3C and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "b112eda0-9585-44f6-9cf5-e21583187e64",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C35",
+      "claim": "With optical filtering alone, the crosstalk between the Fura-2 and the BCECF or RhoVR channels was 98% and 79%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "the crosstalk between the Fura-2 and the BCECF or RhoVR channels was 98 and 79%, respectively (Figure 3F and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from experimental data shown in Figure 3F and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "8b843029-dd16-496b-8384-c9217afc92d8",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C36",
+      "claim": "With FASTM, the crosstalk between the Fura-2 and the BCECF or RhoVR channels was \u22641%.",
+      "claim_type": "EXPLICIT",
+      "source": "the crosstalk between the channels was \u22641% (Figure 3F and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from experimental data shown in Figure 3F and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "32fff4b8-ddab-4851-8963-8eef39752fa1",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C37",
+      "claim": "Due to the probe's red-shifted spectrum, crosstalk between channels for RhoVR was negligible with or without FASTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the probe's red-shifted spectrum, crosstalk between channels was negligible; basal RhoVR fluorescence and its resact-induced decrease, reflecting the Vm response, were only detected in the RhoVR channel, both with and without FASTM (Figure 3G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 3G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "070c5bb7-b69a-497a-bac5-ec2ec5143139",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C38",
+      "claim": "Using optical filtering alone, the simultaneously recorded signals from triple-loaded sperm markedly differed from the respective signals recorded in sperm loaded with one probe only.",
+      "claim_type": "EXPLICIT",
+      "source": "Using optical filtering alone, the simultaneously recorded signals markedly differed from the respective signals recorded in sperm loaded with one probe only (compare Figure 4A and Figure 3B, E,H )",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing experimental data in Figure 4A with Figure 3B, E, and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "35a7acca-4309-4c7b-b877-24fe6da89b33",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C39",
+      "claim": "The crosstalk among channels using optical filtering alone greatly misrepresented the true time course and size of signaling events.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the crosstalk among channels greatly misrepresented the true time course and size of signaling events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of signals with and without FASTM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "95c394a6-9328-4176-b2b3-5a09a54afc55",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C40",
+      "claim": "Using FASTM, genuine resact-induced [Ca2+]i, pHi, and Vm signals were simultaneously recorded in the respective channels.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, using FASTM, we simultaneously recorded genuine resact-induced [Ca2+]i, pHi, and Vm signals in the respective channels (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "ae20321f-cbd8-400b-8bf4-0c01eebf2341",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C41",
+      "claim": "The kinetics, waveforms, and amplitudes of the multiplexed signals using FASTM were similar to those recorded in sperm loaded with one probe only.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinetics, waveforms, and amplitudes of the multiplexed signals were similar to those recorded with FASTM (compare Figure 4B with Figure 3B, E and H) or without FASTM (see previous studies, e.g., Hamzeh et al., 2019) in sperm loaded with one probe only.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing experimental data and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "9ec3ad4f-85fd-456b-a530-b3c588fb1dd7",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C42",
+      "claim": "The overall time course of the [Ca2+]i, pHi, and Vm signals recorded simultaneously via FASTM from pooled single-loaded sperm was similar to those recorded from triple-loaded sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall time course of the [Ca2+]i, pHi, and Vm signals recorded simultaneously via FASTM from these pooled single-loaded sperm was similar to those recorded from triple-loaded sperm (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "89800d21-5536-47bd-b90b-065553171c74",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C43",
+      "claim": "In single- and triple-loaded sperm, both Vrest and Vthr were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "In single- and triple-loaded sperm, both Vrest (Figure 5C) and Vthr (Figure 5D and E) were similar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 5C, D, and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "4e9295ed-ffb8-4248-8b42-605fc59306c1",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C44",
+      "claim": "Signaling is neither perturbed by Ca2+- and H+-binding to Fura-2 and BCECF, respectively, nor by partition of RhoVR into the membrane, at least under the experimental regimes used.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, signaling is neither perturbed by Ca2+- and H+-binding to Fura-2 and BCECF, respectively, nor by partition of RhoVR into the membrane, at least under the experimental regimes used here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of signals in single- versus triple-loaded sperm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "e7788812-b6c2-4905-92b6-f99457f0e961",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C45",
+      "claim": "FASTM permits crosstalk-free multiplexing of resact-induced Vm-[Ca2+]i-pHi responses.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, FASTM allowed for crosstalk-free multiplexing of resact-induced Vm-[Ca2+]i-pHi (Figure 6D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "e978a0ae-cc73-402a-9bc6-4ff33331a950",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C48",
+      "claim": "FASTM allows for simultaneous ratiometric recording of Fura-FF and BCECF.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated whether FASTM allows for simultaneous ratiometric recording of Fura-FF and BCECF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data on human sperm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "9f2d2e9b-9ba3-4dab-8d55-fc59d2825dda",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C49",
+      "claim": "In human sperm, the CatSper Ca2+ channel is activated at alkaline pHi and also by the female steroid hormone progesterone.",
+      "claim_type": "EXPLICIT",
+      "source": "In human sperm, the CatSper Ca2+ channel is activated at alkaline pHi and also by the female steroid hormone progesterone (Lishko et al., 2011; Str\u00fcnker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "f227d5dc-1d94-4279-a37b-3170028a25eb",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C50",
+      "claim": "NH4Cl evoked an instantaneous, rapid and more gradual increase in the emission ratios of BCECF and Fura-2, respectively, reflecting the NH4Cl-induced pHi increase and concomitant pHi-induced Ca2+ influx via CatSper.",
+      "claim_type": "EXPLICIT",
+      "source": "NH4Cl evoked an instantaneous, rapid and more gradual increase in the emission ratios of BCECF and Fura-2, respectively, reflecting the NH4Cl-induced pHi increase and concomitant pHi-induced Ca2+ influx via CatSper, respectively (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "5695ddcf-382d-48f8-ad7c-d9ccc2dbb2b3",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C51",
+      "claim": "Progesterone evoked an instantaneous increase of the Fura-FF ratio, reflecting progesterone-induced Ca2+ influx, whereas the BCECF ratio was largely unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, progesterone evoked an instantaneous increase of the Fura-FF ratio, reflecting progesterone-induced Ca2+ influx, whereas the BCECF ratio was largely unaffected (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "6bda50e1-9305-44c7-a1ed-ddc87d8e1291",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C52",
+      "claim": "FASTM ensures minimal crosstalk between the Fura-FF and the BCECF channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that FASTM ensures minimal crosstalk between the Fura-FF and the BCECF channels (Figure 7C, Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 7C and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "3f91d573-cdc0-48ca-aa8b-1d69f424851d",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C53",
+      "claim": "FASTM allows for simultaneous recording of rapid signaling events with millisecond temporal resolution using various combinations of non-ratiometric and ratiometric probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, FASTM allows for simultaneous recording of rapid signaling events with millisecond temporal resolution using various combinations of non-ratiometric and ratiometric probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "8e30c8aa-e07a-464c-aeaa-2ed79723e629",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C54",
+      "claim": "Optical filtering alone is usually not sufficient to prevent recording artifacts created by the UV flash used for uncaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical filtering alone is usually not sufficient to prevent recording artifacts created by the UV flash (e.g., see Str\u00fcnker et al., 2006; Kilic et al., 2009; Servin-Vences et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "5a5e1ec5-4266-4ac0-adbc-d09528e79da0",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C55",
+      "claim": "Due to phase-sensitive signal detection, the flash artifact was suppressed by the lock-in amplifiers in FASTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, due to the phase-sensitive signal detection, the flash artifact was suppressed by the lock-in amplifiers (Hamzeh et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "b065bf47-7615-4146-8e17-1c000961d25a",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C56",
+      "claim": "FASTM allowed for undisturbed simultaneous recording of cGMP-evoked [Ca2+]i, pHi, and Vm signals.",
+      "claim_type": "EXPLICIT",
+      "source": "and FASTM allowed for undisturbed simultaneous recording of cGMP-evoked [Ca2+]i, pHi, and Vm signals (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "0f335b54-dfb6-431e-98d5-c6c195ef2a50",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C57",
+      "claim": "FASTM allows multiplexing of fast chemical reactions in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "We next explored whether FASTM also allows multiplexing of fast chemical reactions in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments on Ca2+ dissociation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "78524cb1-9f79-4a82-984b-ea0813f1b588",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C58",
+      "claim": "The koff of Fura-2 determined by FASTM was similar to that reported before.",
+      "claim_type": "EXPLICIT",
+      "source": "The koff of Fura-2 (340ex: 115 \u00b1 2; 370ex: 122 \u00b1 3; ratio: 84 \u00b1 2 s\u20131) was similar to that reported before (Jackson et al., 1987; Kao and Tsien, 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data and supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "09eb563b-70c5-4c23-bf7c-100f21237e42",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C59",
+      "claim": "The koff of Fluo-4 was 354 \u00b1 3 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas that of Fluo-4 (354 \u00b1 3 s\u20131)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "8dc1c485-3c80-43b4-86a9-3b2504c8ae3d",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C60",
+      "claim": "The koff of Calbryte 630 was 178 \u00b1 2 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "and Calbryte 630 (178 \u00b1 2 s\u20131) (n = 4) had not yet been determined to the best of our knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "2ef5dc6c-41f4-45cb-8171-6376f9a06907",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C61",
+      "claim": "FASTM demonstrates utility for multiplexing of rapid chemical reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate the utility of FASTM for multiplexing of rapid chemical reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data on Ca2+ dissociation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "7e8703a8-b063-4c11-adc0-9f43b3cd17f3",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C62",
+      "claim": "Octopamine increased and decreased the donor and acceptor fluorescence of the FRET sensor, respectively, indicating a rise of intracellular cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Octopamine increased and decreased the donor and acceptor fluorescence of the FRET sensor, respectively, indicating a rise of intracellular cAMP (Figure 10D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 10D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "c3f873d9-f55a-455e-a4de-81a4d5778fc2",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C63",
+      "claim": "Calbryte 630 fluorescence increased after octopamine stimulation, indicating cAMP-induced Ca2+ influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, Calbryte 630 fluorescence increased, indicating cAMP-induced Ca2+ influx (Figure 10D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 10D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "8b984fac-8f6e-40b8-a2b5-ce4d9bdb1bb8",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C64",
+      "claim": "FASTM can be employed for multiplexing in single cells using fluorescence microscopy and protein-based FRET sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that FASTM can also be employed for multiplexing in single cells using fluorescence microscopy and protein-based FRET sensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the single-cell microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "22678f79-33a3-47d2-9731-7e8db6b303b8",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C65",
+      "claim": "[Ca2+]i did not rise until the FRET signal reached saturation, indicating that the cAMP sensor competes with the channel for cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, [Ca2+]i did not rise until the FRET signal reached saturation (Figure 10D), indicating that the cAMP sensor competes with the channel for cAMP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data shown in Figure 10D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "f4f4d31b-0ea6-4f0c-a91b-92ee0f8e49b4",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C66",
+      "claim": "The vastly different K1/2 values of the cAMP sensor (~70 nM) and CNGA2-TM channel (~10 \u00b5M) argue that the FRET sensors get served first, which might affect cAMP dynamics and CNGA2-TM activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The vastly different K1/2 values \u2013 about 70 nM (FRET sensor) vs. 10 \u00b5M (CNGA2-TM channel) \u2013 argue that the FRET sensors get served first, which might affect cAMP dynamics and thus CNGA2-TM activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known binding affinities.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "72896cc5-51f1-4b4e-93fb-ba0bb0236b2c",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C67",
+      "claim": "The latency of the [Ca2+]i signal was similar in cells lacking the cAMP sensor (14 \u00b1 5 s; n = 24) or expressing a sensor mutant that does not bind cAMP (mlCNBD-FRET-R307Q, 16 \u00b1 5 s; n = 14).",
+      "claim_type": "EXPLICIT",
+      "source": "The latency was similar in cells lacking the cAMP sensor (14 \u00b1 5 s; n = 24) or expressing a sensor mutant (Mukherjee et al., 2016) that does not bind cAMP (mlCNBD-FRET-R307Q, 16 \u00b1 5 s; n = 14) (Figure 11A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 11A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "c1bcc4f4-cbf4-4f6b-9cf1-fb46a1579004",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C68",
+      "claim": "The latency of the [Ca2+]i signal increased considerably and coincided with the saturation of the cAMP signal in cells expressing either the high-affinity cAMP sensor (44 \u00b1 28 s, n = 22) or a variant with lower cAMP affinity (~1 \u00b5M) (29 \u00b1 7 s, n = 15).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the latency increased considerably and coincided with the saturation of the cAMP signal in cells expressing either the high-affinity cAMP sensor (44 \u00b1 28 s, n = 22; mlCNBD-FRET) or a variant with lower cAMP affinity (~1 \u00b5M) (29 \u00b1 7 s, n = 15; mlCNBD-FRET-M329C) (Figure 11A-C; Figure 11\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 11A-C and Figure 11\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "23f72a74-0b22-4d90-981a-ecf9834f9645",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C69",
+      "claim": "cAMP 'buffering' by the cAMP sensor delayed activation of the downstream effector CNGA2-TM.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support the notion that cAMP 'buffering' by the cAMP sensor delayed activation of the downstream effector CNGA2-TM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data comparing different cAMP sensor variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "31d67d49-dffa-44bd-b684-b2aadb1d4f0c",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C70",
+      "claim": "Probe-related perturbations of signaling pathways can be unveiled by multiplexing experiments using FASTM.",
+      "claim_type": "EXPLICIT",
+      "source": "This application of FASTM in single cells illustrates how probe-related perturbations of signaling pathways can be unveiled by multiplexing experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experiments showing cAMP sensor buffering effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "04351334-5fbb-4300-9dda-7e8a56384fa9",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C71",
+      "claim": "Phase-sensitive signal detection using FASTM readily overcomes the fluorescence crosstalk that has limited true simultaneous recording of probes.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that phase-sensitive signal detection using FASTM readily overcomes the fluorescence crosstalk that has limited true simultaneous recording of probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "5872d7fa-50b5-4ecf-a395-3e6bfd8ce440",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C72",
+      "claim": "The technical implementation of FASTM is straightforward: most LED-based light sources can be modulated in the kHz range, and conventional PMT-based fluorescence-detection setups can readily be upgraded with a lock-in amplifier.",
+      "claim_type": "EXPLICIT",
+      "source": "The technical implementation of FASTM is straightforward: most LED-based light sources can be modulated in the kHz range, and conventional PMT-based fluorescence-detection setups can readily be upgraded with a lock-in amplifier featuring several demodulation channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the practical implementation of FASTM based on the methods used.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "8efcd703-8b91-4f32-919d-33f4df51aaa2",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C73",
+      "claim": "The temporal resolution of FASTM is largely independent of the number of probes and only limited by the time constant of the lock-in amplifier(s) and/or detector(s), allowing multiplexing with a time resolution of a few microseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the temporal resolution of FASTM is largely independent of the number of probes and only limited by the time constant of the lock-in amplifier(s) and/or detector(s), allowing multiplexing with a time resolution of a few microseconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the technical characteristics of the method and demonstrated by the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "12b486af-5451-4b45-8aba-cebf737f7be6",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C74",
+      "claim": "Using state-of-the-art filter wheels and galvanometer-based devices, quasi-simultaneous recording of four 'channels' can be performed with a time resolution of only >150 ms and >20 ms, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, using state-of-the-art filter wheels and galvanometer-based devices, quasi-simultaneous recording of four 'channels' can be performed with a time resolution of only >150 ms and >20 ms, respectively, which would be insufficient to fully resolve such rapid signaling events and chemical reactions that we studied here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on known technical limitations of alternative methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "38a964ee-f0a6-4c4f-9390-002229ee888a",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C75",
+      "claim": "Phase-sensitive signal detection increases the signal-to-noise (S/N) ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, phase-sensitive signal detection increases the signal-to-noise (S/N) ratio (e.g., Meade, 1983; Figure 9\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and demonstrated by data in Figure 9\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "aa821716-3991-4efd-8b6e-ccee60f07358",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C76",
+      "claim": "Using FASTM, reasonable S/N ratios can be reached with lower light intensity and density of fluorophores, which minimizes bleaching and sample consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, using FASTM, reasonable S/N ratios can be reached with lower light intensity and density of fluorophores, which minimizes bleaching and sample consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the improved S/N ratio with phase-sensitive detection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "115e363d-510f-4568-8bea-f420043601a8",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C77",
+      "claim": "FASTM will be widely adopted for simultaneous recording of rapid signals in aqueous solutions, single cells, and cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we envisage that FASTM will be widely adopted for simultaneous recording of rapid signals in aqueous solutions, single cells, and cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future adoption of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "4a2b1fa1-6b48-4c35-ba71-caaaddae2f51",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C78",
+      "claim": "The exceptional time resolution of FASTM might allow simultaneous recording of rapid chemical reactions, ligand-binding kinetics, and ensuing conformational changes of a protein in combination with stopped-flow techniques and optochemical tools.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with stopped-flow techniques and optochemical tools, the exceptional time resolution of FASTM might not only allow simultaneous recording of rapid chemical reactions, but also ligand-binding kinetics and the ensuing conformational changes of a protein (e.g., Cukkemane et al., 2007; Peuker et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "ea6998e0-d1c6-477c-b5d3-a678cdac8ceb",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C79",
+      "claim": "Time-resolved readout of several FRET pairs is challenging as it requires two spectrally separated fluorophores for each FRET pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-resolved readout of several FRET pairs is challenging as it requires two spectrally separated fluorophores for each FRET pair (Depry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents a known challenge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "cee3e532-4da4-4dc8-b9f1-3e3e0faeb730",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C80",
+      "claim": "Crosstalk arising from overlapping emission spectra compromises discrimination of FRET pairs; therefore, multiplexed trFRET measurements are susceptible to artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosstalk arising from overlapping emission spectra compromises discrimination of FRET pairs; therefore, multiplexed trFRET measurements are susceptible to artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about FRET measurements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "3c0cef1e-a594-4463-92fd-65fe88e6faf2",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C81",
+      "claim": "The simultaneous recording of ratiometric probes using FASTM provides ample opportunities for future trFRET measurements with millisecond temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The simultaneous recording of ratiometric probes using FASTM provides ample opportunities for future trFRET measurements with millisecond temporal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications based on the demonstrated capabilities of FASTM.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "31b6480a-475d-43b6-8039-963efb9d6014",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C82",
+      "claim": "The FASTM approach for single-cell recording lacked spatial information.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show the applicability of FASTM for simultaneous recording of probes in single cells. However, the FASTM approach lacked spatial information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors based on their experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "636cc393-3ad4-415b-a0b5-0582c00fd364",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C83",
+      "claim": "Subcellular imaging with FASTM could be achieved using PMT arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcellular imaging with FASTM could be achieved using PMT arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future implementations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "6e3aa7eb-d6d2-4c3e-a5a3-702ce312538d",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C84",
+      "claim": "Fluorescence could be recorded from several regions of interest (ROIs) using acousto-optic-modulated laser excitation or rapid switching of a digital micromirror device (DMD), whereby each ROI is illuminated with light modulated at a distinct frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, fluorescence could be recorded from several regions of interest (ROIs), whereby each ROI is illuminated with light modulated at a distinct frequency using acousto-optic-modulated laser excitation (Wu et al., 2006) or rapid switching of a digital micromirror device (DMD) (Chang et al., 2016; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future implementations, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "6b2f6038-5a8c-48db-bdc3-bf28fcf15ae8",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "claim_id": "C85",
+      "claim": "Fast modulation of the excitation laser combined with a fast lock-in amplifier renders even confocal microscopes compatible with FASTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast modulation of the excitation laser combined with a fast lock-in amplifier renders even confocal microscopes compatible with FASTM (Carlsson et al., 1994; Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future implementations, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b9f0ddf3-3878-4e99-8b33-594c6f71cf44",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FASTM uses phase-sensitive signal detection by modulating LEDs at distinct frequencies in the kHz range, tagging each probe's emission with a unique frequency signature, and using lock-in amplifiers to demodulate and discriminate probes in real time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C28, C29, and C30 collectively describe the technical implementation of FASTM. The experimental data in Figures 2 and 3 demonstrate that this approach successfully enables multiplexing with minimal crosstalk, supporting the technical principle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FASTM enables simultaneous recording of rapid changes in Ca2+, pH, and Vm with high sensitivity and minimal crosstalk compared to optical filtering alone, which shows 31-100% crosstalk versus \u22649% with FASTM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 provide quantitative crosstalk measurements from single-probe loaded sperm (Figure 3), while C40, C41, and C45 demonstrate successful multiplexing in triple-loaded sperm (Figure 4). The data clearly show FASTM dramatically reduces crosstalk compared to optical filtering alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "4467a2e1-902f-4dfb-bb2b-9be7815e3a2c",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Signaling in triple-loaded sperm is not perturbed by the presence of multiple probes, as demonstrated by similar signal kinetics, resting membrane potential (Vrest), and threshold voltage (Vthr) compared to single-loaded sperm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by experimental comparisons shown in Figures 4C and 5. The data demonstrate that probe loading does not significantly alter the signaling pathway under the experimental conditions used, validating the multiplexing approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "2c0d7f30-8e3f-47f1-9374-31107a075754",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FASTM allows simultaneous ratiometric recording of Fura-FF and BCECF in human sperm with minimal crosstalk, distinguishing between NH4Cl-induced pHi and Ca2+ changes versus progesterone-induced Ca2+ influx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are supported by experimental data in Figure 7, demonstrating that FASTM can perform dual-excitation ratiometric measurements on two probes simultaneously. The differential responses to NH4Cl versus progesterone (C50-C51) validate the specificity of the measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "1b37ee23-d65c-4770-923f-8d431f67e045",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FASTM suppresses UV flash artifacts through phase-sensitive signal detection, enabling undisturbed simultaneous recording of cGMP-evoked Ca2+, pH, and Vm signals when combined with flash photolysis of caged compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by experimental data in Figure 8C and citations to previous work. The phase-sensitive detection inherent to FASTM effectively filters out the UV flash artifact, demonstrating compatibility with optochemical tools.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "c34f3048-676e-4a39-922a-b5e6f6eb54b9",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FASTM enables multiplexing of rapid chemical reactions, as demonstrated by simultaneous measurement of Ca2+ dissociation kinetics from three probes (Fura-2, Fluo-4, Calbryte 630) with koff values of 84-122, 354, and 178 s\u207b\u00b9, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 are supported by experimental data in Figure 9. The koff value for Fura-2 matches previously reported values (C58), validating the approach. The novel koff values for Fluo-4 and Calbryte 630 (C59-C60) demonstrate the utility of FASTM for chemical kinetics studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "28b3a54c-5433-45a2-8eb4-8c98927055c4",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FASTM can be employed for multiplexing in single cells using fluorescence microscopy and protein-based FRET sensors, as demonstrated by simultaneous recording of octopamine-induced cAMP synthesis and Ca2+ influx in HEK293 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C62-C64 are supported by experimental data in Figure 10. The successful simultaneous recording of FRET-based cAMP signals and Calbryte 630 Ca2+ signals demonstrates FASTM's applicability to single-cell microscopy with genetically encoded sensors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "b0056fc8-abe7-42f4-b949-8a86eb47fd75",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FASTM multiplexing experiments revealed that cAMP sensors buffer intracellular cAMP and delay activation of downstream effectors, with the latency of Ca2+ signals increasing from ~15s without sensor to ~44s with high-affinity sensor, coinciding with sensor saturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 are supported by experimental data in Figure 11 comparing cells with different cAMP sensor variants. The correlation between sensor saturation and Ca2+ signal onset (C68) and the similar latencies in cells lacking sensor or expressing non-binding mutant (C67) provide strong evidence for the buffering effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "95504044-e97c-425c-bc40-b34811b338c7",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FASTM provides exceptional temporal resolution (microseconds to milliseconds) that is largely independent of the number of probes, limited only by lock-in amplifier and detector time constants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C73 are supported by experimental demonstrations throughout the manuscript, including millisecond-resolution recordings of signaling events and microsecond-resolution recordings of chemical reactions (Figure 9). The technical characteristics of the method support the independence from probe number.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "6d4b83a4-3698-48d3-995b-f30083c6a1ec",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FASTM readily overcomes fluorescence crosstalk limitations and is straightforward to implement, requiring only LED modulation in the kHz range and lock-in amplifiers added to conventional PMT-based setups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 are supported by the comprehensive experimental validation throughout the manuscript and the detailed methods section describing the implementation. The dramatic reduction in crosstalk demonstrated across multiple probe combinations validates C71.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "a231f0b7-59cd-438a-98d5-6d574bf2fbaf",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Phase-sensitive signal detection in FASTM increases signal-to-noise ratio, allowing reasonable S/N with lower light intensity and fluorophore density, thereby minimizing bleaching and sample consumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by data in Figure 9\u2014figure supplement 2 and citation to previous work. The improved S/N ratio is a well-established property of lock-in amplification, and the inference about reduced bleaching and sample consumption (C76) is logical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "e282b872-9cc3-4497-9fc6-2b97bfb3bd10",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "FASTM permits crosstalk-free multiplexing of various probe combinations for Vm, Ca2+, pH, and Na+ signals, demonstrating versatility across different fluorescent probes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C45 are supported by experimental data in Figures 6 and 8, showing successful multiplexing of multiple different probe combinations (Vm-Ca2+-pH, Vm-Ca2+-Na+, Vm-pH-Na+) with minimal crosstalk.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "95f621c8-2886-4510-b2c0-5ae961d3cbc0",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The resact-induced signaling pathway in sea urchin sperm involves sequential activation of cGMP synthesis, Vm hyperpolarization, Na+/H+ exchange, pHi increase, and Ca2+ influx, as previously established and used here as a model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24 describe the established signaling pathway in sea urchin sperm, supported by citations and illustrated in Figure 1D-E. This represents prior knowledge used to validate the FASTM approach, not a novel finding of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "b7713014-fc00-4c92-8a46-3cd068560c8e",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The FASTM approach for single-cell recording lacked spatial information in the current implementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is an acknowledged limitation stated by the authors. The single-cell experiments used an aperture to isolate individual cells but did not provide subcellular spatial resolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "62ad1c4e-1714-4f2f-af8b-41149d6eec0b",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FASTM has potential for future applications including widespread adoption for rapid signal recording, ligand-binding kinetics studies, time-resolved FRET measurements, and subcellular imaging with appropriate modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C78 and C81-C85 are speculative statements about future applications and adoption. While the demonstrated capabilities support these possibilities, they represent predictions rather than established results. The citations to relevant techniques (C78, C84, C85) provide some support for feasibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "7bd91048-1ee6-4333-a68e-291b6ce3d357",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Multiplexing of fluorescent probes is valuable for studying cellular signaling but has been limited by spectral crosstalk and temporal resolution constraints, with previous approaches restricted to two probes for millisecond-resolution or requiring quasi-simultaneous recording for more probes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C17 establish the background and motivation for FASTM, describing established knowledge about fluorescent probes, multiplexing challenges, and limitations of existing approaches. These are well-supported by citations and represent accurate characterization of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "95f5c810-ccc3-4248-a41a-6ff7a21de9b0",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Fura-2, BCECF, and RhoVR have well-separated excitation spectra suitable for quasi-simultaneous recording, but their overlapping emission spectra make simultaneous recording using optical filtering alone intractable for millisecond-timescale signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are supported by spectral data in Figure 2A and represent the specific technical challenge that FASTM addresses. The spectral properties are directly measured, and the inference about intractability (C27) is validated by the crosstalk measurements in Figure 3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "6dc822e0-3479-4c70-b203-20eb96db69b8",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Using optical filtering alone, simultaneously recorded signals from triple-loaded sperm markedly differed from single-probe recordings, with crosstalk greatly misrepresenting the true time course and size of signaling events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by experimental data comparing Figure 4A with Figure 3B, E, and H. This demonstrates the problem that FASTM solves and validates the need for the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "c8bc67c5-3387-4569-b37d-b14829eb9308",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In human sperm, the CatSper Ca2+ channel is activated at alkaline pHi and by progesterone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by citations to previous work and represents established knowledge about human sperm physiology used to design the experiments, not a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "32c00a21-80b6-4854-a4aa-ed82817a4dbd",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "State-of-the-art filter wheels and galvanometer-based devices for quasi-simultaneous recording have temporal resolution limitations of >150 ms and >20 ms, respectively, insufficient for the rapid events studied here.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 represents a comparison to alternative methods based on known technical specifications. This provides context for FASTM's advantages but is not a primary experimental result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    },
+    {
+      "id": "8ab424e0-7742-4eca-b4b0-489c8eb40c1c",
+      "content_id": "ed7d1fab-e51c-4d8c-9f43-4d7ffa902d90",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Time-resolved FRET measurements of multiple FRET pairs are challenging due to spectral requirements and crosstalk susceptibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 describe established challenges in FRET multiplexing, supported by citation and general knowledge. This provides context for potential FASTM applications but is not a primary result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:21:17.138393Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cac12f59-4a97-4709-9c67-685196d990d8",
+      "result_id": "b9f0ddf3-3878-4e99-8b33-594c6f71cf44"
+    },
+    {
+      "claim_id": "d01bd1be-f0b9-4679-b79d-1d621d149c48",
+      "result_id": "b9f0ddf3-3878-4e99-8b33-594c6f71cf44"
+    },
+    {
+      "claim_id": "0ff069e7-b65d-4042-881b-091a5b02e914",
+      "result_id": "b9f0ddf3-3878-4e99-8b33-594c6f71cf44"
+    },
+    {
+      "claim_id": "00e3819d-7ddd-41cb-a0b4-913381a7c589",
+      "result_id": "b9f0ddf3-3878-4e99-8b33-594c6f71cf44"
+    },
+    {
+      "claim_id": "c1f84499-6c3a-4bba-92a0-1c9776ab0b75",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "2afac8ae-1771-4b62-8792-7eab60e72930",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "7dca2525-c124-4a55-b6bd-0d7bcf50b7db",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "6b384580-9047-4244-9cef-2ee3dca4d0ac",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "09e34792-b494-47ba-8b45-a6be1afe3166",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "b112eda0-9585-44f6-9cf5-e21583187e64",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "8b843029-dd16-496b-8384-c9217afc92d8",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "32fff4b8-ddab-4851-8963-8eef39752fa1",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "95c394a6-9328-4176-b2b3-5a09a54afc55",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "ae20321f-cbd8-400b-8bf4-0c01eebf2341",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "e7788812-b6c2-4905-92b6-f99457f0e961",
+      "result_id": "40a5c95c-52fc-4ab9-b100-cfb720fa7bd4"
+    },
+    {
+      "claim_id": "9ec3ad4f-85fd-456b-a530-b3c588fb1dd7",
+      "result_id": "4467a2e1-902f-4dfb-bb2b-9be7815e3a2c"
+    },
+    {
+      "claim_id": "89800d21-5536-47bd-b90b-065553171c74",
+      "result_id": "4467a2e1-902f-4dfb-bb2b-9be7815e3a2c"
+    },
+    {
+      "claim_id": "4e9295ed-ffb8-4248-8b42-605fc59306c1",
+      "result_id": "4467a2e1-902f-4dfb-bb2b-9be7815e3a2c"
+    },
+    {
+      "claim_id": "e978a0ae-cc73-402a-9bc6-4ff33331a950",
+      "result_id": "2c0d7f30-8e3f-47f1-9374-31107a075754"
+    },
+    {
+      "claim_id": "f227d5dc-1d94-4279-a37b-3170028a25eb",
+      "result_id": "2c0d7f30-8e3f-47f1-9374-31107a075754"
+    },
+    {
+      "claim_id": "5695ddcf-382d-48f8-ad7c-d9ccc2dbb2b3",
+      "result_id": "2c0d7f30-8e3f-47f1-9374-31107a075754"
+    },
+    {
+      "claim_id": "6bda50e1-9305-44c7-a1ed-ddc87d8e1291",
+      "result_id": "2c0d7f30-8e3f-47f1-9374-31107a075754"
+    },
+    {
+      "claim_id": "3f91d573-cdc0-48ca-aa8b-1d69f424851d",
+      "result_id": "2c0d7f30-8e3f-47f1-9374-31107a075754"
+    },
+    {
+      "claim_id": "8e30c8aa-e07a-464c-aeaa-2ed79723e629",
+      "result_id": "1b37ee23-d65c-4770-923f-8d431f67e045"
+    },
+    {
+      "claim_id": "5a5e1ec5-4266-4ac0-adbc-d09528e79da0",
+      "result_id": "1b37ee23-d65c-4770-923f-8d431f67e045"
+    },
+    {
+      "claim_id": "b065bf47-7615-4146-8e17-1c000961d25a",
+      "result_id": "1b37ee23-d65c-4770-923f-8d431f67e045"
+    },
+    {
+      "claim_id": "0f335b54-dfb6-431e-98d5-c6c195ef2a50",
+      "result_id": "c34f3048-676e-4a39-922a-b5e6f6eb54b9"
+    },
+    {
+      "claim_id": "78524cb1-9f79-4a82-984b-ea0813f1b588",
+      "result_id": "c34f3048-676e-4a39-922a-b5e6f6eb54b9"
+    },
+    {
+      "claim_id": "09eb563b-70c5-4c23-bf7c-100f21237e42",
+      "result_id": "c34f3048-676e-4a39-922a-b5e6f6eb54b9"
+    },
+    {
+      "claim_id": "8dc1c485-3c80-43b4-86a9-3b2504c8ae3d",
+      "result_id": "c34f3048-676e-4a39-922a-b5e6f6eb54b9"
+    },
+    {
+      "claim_id": "2ef5dc6c-41f4-45cb-8171-6376f9a06907",
+      "result_id": "c34f3048-676e-4a39-922a-b5e6f6eb54b9"
+    },
+    {
+      "claim_id": "2959197c-dd8d-4ad4-9999-428adff6dca8",
+      "result_id": "28b3a54c-5433-45a2-8eb4-8c98927055c4"
+    },
+    {
+      "claim_id": "7e8703a8-b063-4c11-adc0-9f43b3cd17f3",
+      "result_id": "28b3a54c-5433-45a2-8eb4-8c98927055c4"
+    },
+    {
+      "claim_id": "c3f873d9-f55a-455e-a4de-81a4d5778fc2",
+      "result_id": "28b3a54c-5433-45a2-8eb4-8c98927055c4"
+    },
+    {
+      "claim_id": "8b984fac-8f6e-40b8-a2b5-ce4d9bdb1bb8",
+      "result_id": "28b3a54c-5433-45a2-8eb4-8c98927055c4"
+    },
+    {
+      "claim_id": "22678f79-33a3-47d2-9731-7e8db6b303b8",
+      "result_id": "b0056fc8-abe7-42f4-b949-8a86eb47fd75"
+    },
+    {
+      "claim_id": "f4f4d31b-0ea6-4f0c-a91b-92ee0f8e49b4",
+      "result_id": "b0056fc8-abe7-42f4-b949-8a86eb47fd75"
+    },
+    {
+      "claim_id": "72896cc5-51f1-4b4e-93fb-ba0bb0236b2c",
+      "result_id": "b0056fc8-abe7-42f4-b949-8a86eb47fd75"
+    },
+    {
+      "claim_id": "c1bcc4f4-cbf4-4f6b-9cf1-fb46a1579004",
+      "result_id": "b0056fc8-abe7-42f4-b949-8a86eb47fd75"
+    },
+    {
+      "claim_id": "23f72a74-0b22-4d90-981a-ecf9834f9645",
+      "result_id": "b0056fc8-abe7-42f4-b949-8a86eb47fd75"
+    },
+    {
+      "claim_id": "31d67d49-dffa-44bd-b684-b2aadb1d4f0c",
+      "result_id": "b0056fc8-abe7-42f4-b949-8a86eb47fd75"
+    },
+    {
+      "claim_id": "f281c283-f1c5-4732-b7fa-ddd677636a55",
+      "result_id": "95504044-e97c-425c-bc40-b34811b338c7"
+    },
+    {
+      "claim_id": "8efcd703-8b91-4f32-919d-33f4df51aaa2",
+      "result_id": "95504044-e97c-425c-bc40-b34811b338c7"
+    },
+    {
+      "claim_id": "04351334-5fbb-4300-9dda-7e8a56384fa9",
+      "result_id": "6d4b83a4-3698-48d3-995b-f30083c6a1ec"
+    },
+    {
+      "claim_id": "5872d7fa-50b5-4ecf-a395-3e6bfd8ce440",
+      "result_id": "6d4b83a4-3698-48d3-995b-f30083c6a1ec"
+    },
+    {
+      "claim_id": "38a964ee-f0a6-4c4f-9390-002229ee888a",
+      "result_id": "a231f0b7-59cd-438a-98d5-6d574bf2fbaf"
+    },
+    {
+      "claim_id": "aa821716-3991-4efd-8b6e-ccee60f07358",
+      "result_id": "a231f0b7-59cd-438a-98d5-6d574bf2fbaf"
+    },
+    {
+      "claim_id": "62e26551-fe9c-420a-a888-e71a2dd381a2",
+      "result_id": "e282b872-9cc3-4497-9fc6-2b97bfb3bd10"
+    },
+    {
+      "claim_id": "e7788812-b6c2-4905-92b6-f99457f0e961",
+      "result_id": "e282b872-9cc3-4497-9fc6-2b97bfb3bd10"
+    },
+    {
+      "claim_id": "6d970a97-3979-420d-9ae6-590fdeda02ec",
+      "result_id": "95f621c8-2886-4510-b2c0-5ae961d3cbc0"
+    },
+    {
+      "claim_id": "ecaa253b-6f21-49bf-baa2-d258d940e3d5",
+      "result_id": "95f621c8-2886-4510-b2c0-5ae961d3cbc0"
+    },
+    {
+      "claim_id": "cd5dfcbb-9fca-48a3-a530-5b9e2b4bf519",
+      "result_id": "95f621c8-2886-4510-b2c0-5ae961d3cbc0"
+    },
+    {
+      "claim_id": "98562302-a784-4561-bbd8-c05ac7ee5706",
+      "result_id": "95f621c8-2886-4510-b2c0-5ae961d3cbc0"
+    },
+    {
+      "claim_id": "b3fcdda0-38d2-45c1-b9ad-bf82c64495ac",
+      "result_id": "95f621c8-2886-4510-b2c0-5ae961d3cbc0"
+    },
+    {
+      "claim_id": "25fafb6e-3707-42f2-9519-31719d68b4eb",
+      "result_id": "95f621c8-2886-4510-b2c0-5ae961d3cbc0"
+    },
+    {
+      "claim_id": "d17021c6-c07d-4c96-bc12-4b6fa77819ac",
+      "result_id": "95f621c8-2886-4510-b2c0-5ae961d3cbc0"
+    },
+    {
+      "claim_id": "31b6480a-475d-43b6-8039-963efb9d6014",
+      "result_id": "b7713014-fc00-4c92-8a46-3cd068560c8e"
+    },
+    {
+      "claim_id": "115e363d-510f-4568-8bea-f420043601a8",
+      "result_id": "62ad1c4e-1714-4f2f-af8b-41149d6eec0b"
+    },
+    {
+      "claim_id": "4a2b1fa1-6b48-4c35-ba71-caaaddae2f51",
+      "result_id": "62ad1c4e-1714-4f2f-af8b-41149d6eec0b"
+    },
+    {
+      "claim_id": "3c0cef1e-a594-4463-92fd-65fe88e6faf2",
+      "result_id": "62ad1c4e-1714-4f2f-af8b-41149d6eec0b"
+    },
+    {
+      "claim_id": "636cc393-3ad4-415b-a0b5-0582c00fd364",
+      "result_id": "62ad1c4e-1714-4f2f-af8b-41149d6eec0b"
+    },
+    {
+      "claim_id": "6e3aa7eb-d6d2-4c3e-a5a3-702ce312538d",
+      "result_id": "62ad1c4e-1714-4f2f-af8b-41149d6eec0b"
+    },
+    {
+      "claim_id": "6b2f6038-5a8c-48db-bdc3-bf28fcf15ae8",
+      "result_id": "62ad1c4e-1714-4f2f-af8b-41149d6eec0b"
+    },
+    {
+      "claim_id": "a08cbd15-678e-434a-93a4-9b36ffb3b3f2",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "88abd360-3146-497a-a78d-6551beedcb86",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "74032e65-db0c-4060-b2ca-08d857c1ec7b",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "bd99fcfa-7fef-4705-8a61-83393798c6ee",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "e62ded51-79f1-45b4-bb47-60685b9adfcb",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "deba9401-bc2c-42e6-b50b-5775e8f3cfc1",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "9d0dce05-90d5-483d-a21b-a6f93ae4b44a",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "b6d58e0b-c714-4bc4-925e-a7f2851e0251",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "ba51475c-a769-42f8-ad3f-f5cfc4e85128",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "3ebe5b32-39a4-4431-8703-349a8a36be3d",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "d266aeb3-5971-4d4c-b7db-bb725cbc4b12",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "6c132ebe-ba98-495e-bc73-9b24be51fd60",
+      "result_id": "7bd91048-1ee6-4333-a68e-291b6ce3d357"
+    },
+    {
+      "claim_id": "b79ad77f-a746-47c1-b33b-f34138b4eb8e",
+      "result_id": "95f5c810-ccc3-4248-a41a-6ff7a21de9b0"
+    },
+    {
+      "claim_id": "01542f8c-5672-4c20-a610-2a1980547632",
+      "result_id": "95f5c810-ccc3-4248-a41a-6ff7a21de9b0"
+    },
+    {
+      "claim_id": "4e7e57b8-33ff-4f30-9d67-64870bb8aa5c",
+      "result_id": "95f5c810-ccc3-4248-a41a-6ff7a21de9b0"
+    },
+    {
+      "claim_id": "070c5bb7-b69a-497a-bac5-ec2ec5143139",
+      "result_id": "6dc822e0-3479-4c70-b203-20eb96db69b8"
+    },
+    {
+      "claim_id": "35a7acca-4309-4c7b-b877-24fe6da89b33",
+      "result_id": "6dc822e0-3479-4c70-b203-20eb96db69b8"
+    },
+    {
+      "claim_id": "9f2d2e9b-9ba3-4dab-8d55-fc59d2825dda",
+      "result_id": "c8bc67c5-3387-4569-b37d-b14829eb9308"
+    },
+    {
+      "claim_id": "12b486af-5451-4b45-8aba-cebf737f7be6",
+      "result_id": "32c00a21-80b6-4854-a4aa-ed82817a4dbd"
+    },
+    {
+      "claim_id": "ea6998e0-d1c6-477c-b5d3-a678cdac8ceb",
+      "result_id": "8ab424e0-7742-4eca-b4b0-489c8eb40c1c"
+    },
+    {
+      "claim_id": "cee3e532-4da4-4dc8-b9f1-3e3e0faeb730",
+      "result_id": "8ab424e0-7742-4eca-b4b0-489c8eb40c1c"
+    }
+  ],
+  "comparisons": []
+}

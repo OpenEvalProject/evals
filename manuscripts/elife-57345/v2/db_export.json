@@ -1,0 +1,1025 @@
+{
+  "submission": {
+    "id": "219659c5-7494-451f-b111-8ebc86a4d02b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:12:00.529957Z",
+    "updated_at": "2025-12-03T02:12:00.529957Z"
+  },
+  "content": [
+    {
+      "id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "submission_id": "219659c5-7494-451f-b111-8ebc86a4d02b",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic effects of genetic variation on gene expression revealed following hypoxic stress in cardiomyocytes\n\n## Authors\n\n- Michelle C Ward<sup>1</sup> ([ORCID: 0000-0003-1485-320X](https://orcid.org/0000-0003-1485-320X)) \u2020\n- Nicholas E Banovich<sup>3</sup> ([ORCID: 0000-0003-2604-3247](https://orcid.org/0000-0003-2604-3247))\n- Abhishek Sarkar<sup>3</sup> ([ORCID: 0000-0002-4636-9255](https://orcid.org/0000-0002-4636-9255))\n- Matthew Stephens<sup>3</sup>\n- Yoav Gilad<sup>1</sup> ([ORCID: 0000-0001-8284-8926](https://orcid.org/0000-0001-8284-8926)) \u2020\n\n### Affiliations\n\n1. Department of Medicine, University of Chicago Chicago United States\n2. Department of Biochemistry and Molecular Biology, University of Texas Medical Branch Galveston United States\n3. Department of Human Genetics, University of Chicago Chicago United States\n4. Integrated Cancer Genomics Division, Translational Genomics Research Institute Phoenix United States\n5. Department of Statistics, University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOne life-threatening outcome of cardiovascular disease is myocardial infarction, where cardiomyocytes are deprived of oxygen. To study inter-individual differences in response to hypoxia, we established an in vitro model of induced pluripotent stem cell-derived cardiomyocytes from 15 individuals. We measured gene expression levels, chromatin accessibility, and methylation levels in four culturing conditions that correspond to normoxia, hypoxia, and short- or long-term re-oxygenation. We characterized thousands of gene regulatory changes as the cells transition between conditions. Using available genotypes, we identified 1,573 genes with a cis expression quantitative locus (eQTL) in at least one condition, as well as 367 dynamic eQTLs, which are classified as eQTLs in at least one, but not in all conditions. A subset of genes with dynamic eQTLs is associated with complex traits and disease. Our data demonstrate how dynamic genetic effects on gene expression, which are likely relevant for disease, can be uncovered under stress.\n\n## Introduction\n\nCardiovascular disease (CVD), which ultimately damages heart muscle, is a leading cause of death worldwide (WHO, 2018). CVD encompasses a range of pathologies including myocardial infarction (MI), where ischemia or a lack of oxygen delivery to energy-demanding cardiomyocytes results in cellular stress, irreparable damage, and cell death. Genome-wide association studies (GWAS) have identified hundreds of loci associated with coronary artery disease (Nikpay et al., 2015), MI, and heart failure (Shah et al., 2020), indicating the potential contribution of specific genetic variants to disease risk. Most disease-associated loci do not localize within coding regions of the genome, often making inference about the molecular mechanisms of disease challenging. That said, because most GWAS loci fall within non-coding regions, these variants are thought to have a role in regulating gene expression. One of the main goals of the Genotype-Tissue Expression (GTEx) project has been to bridge the gap between genotype and organismal level phenotypes by identifying associations between genetic variants and intermediate molecular level phenotypes such as gene expression levels (GTEx Consortium et al., 2017). The GTEx project has identified tens of thousands of expression quantitative trait loci (eQTLs); namely, variants that are associated with changes in gene expression levels, across dozens of tissues including ventricular and atrial samples from the heart. However, the eQTLs reported by GTEx explain a modest proportion of GWAS loci, and while increasing the diversity of tissues and sample sizes will enable further insight, orthogonal approaches also need to be considered.\n\nIt is becoming increasingly evident that many genetic variants that are not associated with gene expression levels at steady state, may be found to impact dynamic programs of gene expression in specific contexts. This includes specific developmental stages (Cuomo et al., 2020; Strober et al., 2019), or specific exposure to an environmental stimulus such as endoplasmic reticulum stress (Dombroski et al., 2010), hormone treatment (Maranville et al., 2011), radiation-induced cell death (Smirnov et al., 2012), vitamin D exposure (Kariuki et al., 2016), drug-induced cardiotoxicity (Knowles et al., 2018), and response to infection (Alasoo et al., 2018; Barreiro et al., 2012; \u00c7al\u0131\u015fkan et al., 2015; Kim-Hellmuth et al., 2017; Manry et al., 2017; N\u00e9d\u00e9lec et al., 2016). The studies of context-specific dynamic eQTLs highlight the need to determine the effects of genetic variants in the relevant environment. Therefore, if we are to fully understand the effects of genetic variation on disease, we must assay disease-relevant cell types and disease-relevant perturbations. Most of the aforementioned studies were performed in whole blood or immune cells, which means that there are many cell types and disease-relevant states that have yet to be explored.\n\nWith advances in pluripotent stem cell technology, we can now generate otherwise largely inaccessible human cell types through directed differentiation of induced pluripotent stem cells (iPSCs) reprogrammed from easily accessible tissues such as fibroblasts or B-cells. One of the advantages of iPSC-derived cell types as a model system is that the environment can be controlled, and thus we can specifically test for genetic effects on molecular phenotypes in response to controlled perturbation. This is particularly useful for studies of complex diseases such as CVD, which result from a combination of both genetic and environmental factors.\n\nThe heart is a complex tissue consisting of multiple cell types, yet the bulk of the volume of the heart is comprised of cardiomyocytes (Donovan et al., 2019; Pinto et al., 2016), which are particularly susceptible to oxygen deprivation given their high metabolic activity. iPSC-derived cardiomyocytes (iPSC-CMs) have been shown to be a useful model for studying genetic effects on various cardiovascular traits and diseases, as well for studying gene regulation (Banovich et al., 2018; Benaglio et al., 2019; Brodehl et al., 2019; Burridge et al., 2016; de la Roche et al., 2019; Ma et al., 2018; McDermott-Roe et al., 2019; Panopoulos et al., 2017; Pavlovic et al., 2018; Ward and Gilad, 2019).\n\nIn humans, coronary artery disease can lead to MI (Dzau et al., 2006) which results in ischemia and a lack of oxygen delivery to energy-demanding cardiomyocytes. Given the inability of cardiomyocytes to regenerate, this cellular stress ultimately leads to tissue damage. Advances in treatment for MI, such as surgery to restore blood flow and oxygen to occluded arteries, have improved clinical outcomes. However, a rapid increase in oxygen levels post-MI can generate reactive oxygen species leading to ischemia-reperfusion (I/R) injury (Giordano, 2005). Both MI and I/R injury can thus ultimately influence the amount of damage in the heart. iPSC-CMs allow us to mimic the I/R injury process in vitro by manipulating the oxygen levels that cardiomyocytes are exposed to in vivo.\n\nWe thus designed a study aimed at developing an understanding of the genetic determinants of the response to a universal cellular stress, oxygen deprivation, in a disease-relevant cell type, mimicking a disease-relevant process. To do so, we established an in vitro model of oxygen deprivation (hypoxia) and re-oxygenation in a panel of iPSC-CMs from 15 genotyped individuals (Banovich et al., 2018). We collected data for three molecular level phenotypes: gene expression, chromatin accessibility, and DNA methylation to understand both the genetic and regulatory responses to this cellular stress. This framework allowed us to identify eQTLs that are not evident at steady state, and assess their association with complex traits and disease.\n\n## Results\n\nWe differentiated iPSC-CMs from iPSCs of 15 Yoruba individuals that were part of the HapMap project (Banovich et al., 2018). To obtain a measure of variance associated with the differentiation process, and to more effectively account for batch effects, we replicated the iPSC-CM differentiation from three individuals three times, yielding 21 differentiation experiments in total. The proportion of iPSC-CMs in each cell culture was enriched by metabolic purification (see Materials\u00a0and\u00a0methods). On Day 20, cardiomyocyte differentiation cultures from each individual were split into sub-cultures for each of the four subsequent oxygen conditions and for assessment of cardiomyocyte purity (Figure 1\u2014figure supplement 1). iPSC-CMs were matured by electrical pulsing and maintenance in cell culture for 30 days. On Day 30 (+/-\u00a01 day), the median cardiomyocyte purity from one representative sub-culture across individuals was 81% (40\u201397% range), determined by flow cytometry as the proportion of cells that were positive for the cardiac-specific marker, TNNT2 (Figure 1\u2014figure supplement 2; Supplementary file 1; see Materials\u00a0and\u00a0methods).\n\nWe studied the response of the iPSC-CMs to hypoxia and re-oxygenation (Figure 1A). To do so, we first cultured the iPSC-CMs at oxygen levels that are close to physiological oxygen levels (10% oxygen - Condition A) for 7 days. We then subjected the iPSC-CMs to 6 hours of hypoxia (1% oxygen - Condition B), followed by re-oxygenation for 6 hours (10% oxygen - Condition C), or 24 hours (10% oxygen - Condition D) as previously described (Ward and Gilad, 2019). Oxygen levels were reproducibly controlled in cell culture (Figure 1B, Supplementary file 1). In order to determine whether the cardiomyocytes were affected by the changes in oxygen levels, we measured the enzymatic activity of released lactate dehydrogenase throughout the experiment, as a proxy for cytotoxicity. We also measured released BNP, a clinical marker of heart failure (Maeda et al., 1998). As expected, both cytotoxicity (p=0.01, Figure 1\u2014figure supplement 3A\u2013B) and BNP (p=5\u00d710\u22126, Figure 1\u2014figure supplement 3C) levels increased following hypoxia and long-term re-oxygenation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental design of the study. Cardiomyocytes differentiated from iPSCs (iPSC-CMs) from 15 Yoruba individuals were cultured in normoxic conditions (10% oxygen - condition A, brown) and subjected to 6 hr of hypoxia (1% oxygen - condition B, blue) followed by 6 and 24 hr of re-oxygenation (10% oxygen - conditions C [coral] and D [red]). Immunocytochemistry of a representative cardiomyocyte culture where green: TNNT2; blue: nuclei. (B) Peri-cellular oxygen levels of each condition. Each data point represents one individual undergoing the oxygen stress experiment. (C) Molecular phenotypes collected from each individual in each condition.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The experimental setup for two representative individuals. iPSCs were differentiated into cardiomyocytes in four cell culture dishes per individual. On differentiation Day 20 the cultures from each individual were pooled and re-plated into five six-well plates \u2013 one plate for each experimental condition and one plate for analysis of cardiomyocyte purity. Flow cytometry was performed on Day 30 +/-\u00a01 day and the hypoxia experiment on Day 31\u201332 +/-\u00a01 day to sync up cultures from different individuals. Cells were used for RNA and DNA extraction and nuclei preparation, while cell culture media was used to measure BNP levels and LDH activity.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative images from flow cytometry experiments for iPSC-derived cardiomyocytes that are labeled with cardiac troponin T (TNNT2) antibody and viability stain, and negative controls cells that are only labeled with viability stain, or are not labeled with either viability stain or TNNT2 antibody. (B) Proportion of cells that are positive for expression of TNNT2 across all samples (All) and segregated by individuals which have three replicate samples (18511, 18855, 18852).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Lactate dehydrogenase activity assays performed on cell culture media. (B) Lactate dehydrogenase activity assays excluding the outlier individual. (C) BNP ELISA assays performed on cell culture media. One representative individual for individuals with replicate data is plotted. Asterisk denotes a significant difference between conditions (p*<0.05, p***<0.0005).\n\nWith this system established, we sought to understand the contribution of the global gene regulatory response to the molecular and cellular response to hypoxia and re-oxygenation. To do so, we collected global gene expression data (using RNA-seq; n\u00a0=\u00a015 individuals), chromatin accessibility data (using ATAC-seq; n\u00a0=\u00a014), and DNA methylation data (using the EPIC arrays; n\u00a0=\u00a013; Figure 1C) in each condition. With these data we studied both the gene regulatory response to oxygen perturbation, as well as the interaction of the response with the underlying genotype of the assayed individuals.\n\n### Gene expression changes in response to hypoxia and re-oxygenation\n\nWe first sought to identify those genes important for regulating the response by analyzing the gene expression (RNA-seq) data. We processed samples in batches as described in Supplementary file 1 and mapped and filtered sequencing reads to prevent allelic mapping biases (Figure 2\u2014figure supplement 1; Supplementary file 1; see Materials\u00a0and\u00a0methods; van de Geijn et al., 2015). We observed that one sample (18852A) was a clear outlier when comparing read counts for 18,226 autosomal genes across all samples, and thus excluded it from further analysis (Figure 2\u2014figure supplement 2). We filtered out genes with low expression levels (see Materials\u00a0and\u00a0methods) to yield a final set with data from 12,347 expressed genes (see Materials\u00a0and\u00a0methods). We performed a number of correlation-based analyses using the data from the technical replicates (Figure 2\u2014figure supplement 3), and confirmed that the quality of the data is high and that, in line with our flow cytometry data, our iPSC-CMs express a range of cardiomyocyte marker genes across conditions including MYH7 and TNNT2 (Figure 2\u2014figure supplement 4).\n\nWe took advantage of the fact that we have replicate experiments from three individuals to correct the data for unwanted variation (see Materials\u00a0and\u00a0methods; Risso et al., 2014). Following this procedure, our samples clustered both by oxygen level and individual (Figure 2\u2014figure supplement 5). To identify genes that respond to hypoxia and re-oxygenation, we first tested for differential expression between pairs of conditions using a linear model with a fixed effect for \u2018condition\u2019, a random effect for \u2018individual\u2019, and four unwanted factors of variation, learned from the data, as covariates. At an FDR of 10%, we identified thousands of genes that are differentially expressed between conditions (A vs. B\u00a0=\u00a04,983, B vs. C\u00a0=\u00a06,311; B vs. D\u00a0=\u00a06,792; A vs. D\u00a0=\u00a02,835; Figure 2 and Figure 2\u2014figure supplement 6A). In order to identify a single set of genes which respond to hypoxia across conditions, we used Cormotif (Wei et al., 2015) to jointly model pairs of tests. This approach led to the classification of 2,113 genes (17% of all expressed genes) as responding to hypoxia, which we term \u2018response genes\u2019 (Figure 2, Figure 2\u2014figure supplement 6B\u2013C), and 9,949 genes that do not change their expression level throughout the experiment which we term \u2018non-response genes\u2019. Response genes are enriched for genes previously identified to respond to hypoxia in a Caucasian population of individuals (Chi-squared test; p<2.2\u00d710\u221216; Ward and Gilad, 2019), and are highly enriched for gene ontologies in transcription-related processes (see\u00a0Materials\u00a0and methods, modified Fisher\u2019s exact test; p=1\u00d710\u221219).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig2-v2.jpg)\n\n**Figure 2.:** (A) Volcano plots representing genes that are differentially expressed (DE) between pairs of conditions (orange dots). (B) Bayesian information criterion (BIC) at increasing numbers of Cormotif correlation motifs following joint modeling of pairs of tests. Genes with a posterior probability of being differentially expressed p>0.5 across all tests are defined as \u2018response genes\u2019 and those with p<0.5 as \u2018non-response genes\u2019. Inset shows the proportion of all expressed genes that are classified as response genes (green), and non-response genes (magenta). (C) Expression levels of JUN, a response gene, during the course of the experiment. (D) Expression levels of ACTN1, a non-response gene.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) RIN score for all samples within each condition. (B) The total number of sequenced reads (Total), the number of reads that map to the human genome (Mapped), and the number of reads that pass the WASP re-mapping step (Unbiased) are shown for each sample within each of the four conditions (A: brown, B: blue, C: coral, D: red).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Spearman correlation of RNA-seq read counts between all pairs of samples.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Spearman correlation between all samples, samples within the same condition, samples from the same individual, and samples from the same condition and individual.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Log2cpm expression levels for a panel of genes known to be expressed in cardiomyocytes in each condition.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Spearman correlation of RUVs-normalized log2cpm expression levels between all pairs of samples. X-axis: oxygen level: normoxia at 10% oxygen (condition A: brown), 1% oxygen for 6 hr (condition B: blue), re-oxygenation to 10% oxygen for 6 hr (condition C: coral), re-oxygenation to 10% oxygen for 24 hr (condition D: red). Y-axis: individual. All samples from the same individual are represented by the same color.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A) Examples of genes that are differentially expressed between each pair of conditions. (B) Akaike information criterion (AIC) at increasing numbers of Cormotif correlation motifs. (C) The two correlation motifs identified by Cormotif. Color represents the posterior probability of genes being differentially expressed between pairs of conditions. The number of genes associated with each motif is plotted on the right. Genes with a p>0.5 across all tests are defined as \u2018response genes\u2019 and those with p<0.5 as \u2018non-response genes\u2019.\n\n### Dynamic eQTLs are revealed following hypoxia\n\nHaving established that oxygen stress initiates a transcriptional response affecting thousands of genes, we sought to identify eQTLs, either before or after oxygen stress. Using the combined haplotype test (CHT), an approach that leverages allele-specific information in small sample sizes (see\u00a0Materials\u00a0and methods; van de Geijn et al., 2015), we identified 1,886 SNPs which associate with gene expression (eSNPs) in at least one condition resulting in 1,573 genes with eQTLs (eGenes) in at least one condition (q-value\u00a0<0.1; A: 613; B: 564; C: 564 and D: 464; Figure 3A\u2013B; Supplementary file 2). Given that cardiomyocytes were split from a single differentiation culture for each condition, we do not expect cell composition to bias the identification of eQTLs in each condition. Indeed, the distribution of eQTL effect sizes is similar across conditions (Figure 3\u2014figure supplement 1A), and the eQTL effect size values are correlated across conditions (Figure 3\u2014figure supplement 1B). In addition, we included the same number of individuals in each condition, RNA extraction batches included all conditions from a given individual, RIN scores are similar across conditions, and the number of sequencing reads are similar across conditions (Supplementary file 1). Together, these results suggest that our overall power to detect eQTLs is similar across conditions. We refer to the 613 eGenes identified in condition A as \u2018baseline eGenes\u2019.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig3-v2.jpg)\n\n**Figure 3.:** (A) QQ plot illustrating an enrichment of associations between genetic variants and gene expression levels in each condition. Numbers represent the number of eGenes in each condition. (B) Union of eQTLs identified in each condition. Each row represents a SNP that is an eQTL in at least one condition. Color represents the strength of the association p-value. (C) Heatmap illustrating the 367 SNPs that are classified as dynamic eQTLs including 330 induced eQTLs and 37 suppressed eQTLs. (D) An example of a shared eQTL, HEPB2. (E) Examples of each of the two dynamic eQTL categories. Top panel: genes that become an eQTL following hypoxia \u2013 induced eQTLs e.g. ZNF845. Bottom panel: genes that are an eQTL in normoxic condition A but not following hypoxia \u2013 suppressed eQTLs e.g. RFC2. (F) The proportion of all genes, baseline eGenes (all those identified in condition A), and induced eGenes that are also response genes, and transcription factor genes curated by Lambert et al. Asterisk denotes a statistically significant difference between gene categories (*p<0.05).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Distribution of eQTL effect sizes for all SNP-gene pairs in each condition. (B) Pearson correlation of effect sizes between each condition pair.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Distribution of permutation-adjusted p-values in each condition for all tested SNP-gene pairs that are not significantly associated (q\u00a0>\u00a00.1). KS D statistic for A\u00a0=\u00a00.05, p<2.2\u00d710\u221216; KS D B\u00a0=\u00a00.05 p<2.2\u00d710\u221216; KS D C\u00a0=\u00a00.05, p<2.2\u00d710\u221216; KS D D\u00a0=\u00a00.05, p<2.2\u00d710\u221216. (B) Distribution of permutation-adjusted p-values for all non-significant SNP-gene associations (q\u00a0<\u00a00.1 in at least one condition, and q\u00a0>\u00a00.1 in at least one condition) where all p-values greater than 0.05 are plotted. Inset: distribution of all p-values including those\u00a0<0.05. KS main plot D\u00a0=\u00a00.35, p<2.2\u00d710\u221216; KS inset D\u00a0=\u00a00.57, p<2.2\u00d710\u221216. Dynamic eQTLs were identified using a p-value based threshold of 0.15.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Gene expression measurements for six induced eQTLs stratified by genotype.\n\nOur goal was to identify dynamic eQTLs, which are either revealed or suppressed as the cells transition between conditions. Due to the small sample size of our study, we have incomplete power to detect eQTLs in any condition; thus, a naive comparison of eQTLs classified as \u2018significant\u2019 across conditions will result in an over-estimation of the number of dynamic eQTLs. Indeed, the p-values of genes whose expression levels are not significantly associated with a SNP in any condition deviate from the expected uniform distribution (Kolmogorov\u2013Smirnov test; p<2.2\u00d710\u221216; Figure 3\u2014figure supplement 2A). To address this challenge, we first considered eQTLs identified using a q-value\u00a0<0.1 in at least one condition, and visualized the p-value distributions of the corresponding eQTL associations in all other conditions. These p-value distributions are expected to be uniform if we had complete power to detect eQTLs in any condition (because in that theoretical case, even a naive comparison of eQTLs classified as \u2018significant\u2019 across conditions will result in the identification of true condition-specific eQTLs). Due to incomplete power, this is clearly not the case (KS test; p<2.2\u00d710\u221216; Figure 3\u2014figure supplement 2B); however, this distribution allowed us to choose a lenient secondary p-value-based cutoff, where values deviate from the uniform distribution, to classify dynamic QTLs (p=0.15; Figure 3\u2014figure supplement 2B).\n\nWe specifically focused on two dynamic scenarios. First, we defined suppressed eQTLs, as eQTLs that are identified in condition A at a q-value\u00a0<0.1 but not in any of the other conditions, with a p-value greater than 0.15 (37 instances; Figure 3C). Second, we defined induced eQTLs as eQTLs identified in conditions B, C, or D at a q-value\u00a0<0.1, but not in A, with a p-value greater than 0.15 (330 instances; Figure 3C). This set of 367 dynamic eQTLs corresponds to 328 unique dynamic eGenes (see Materials\u00a0and\u00a0methods) and includes ZNF845 and RFC2 (Figure 3E) as well as PPARGC1, C8orf82 and CELF1 (Figure 3\u2014figure supplement 3). While our choice of the particular statistical cutoffs is somewhat arbitrary, we can evaluate the false discovery rate associated with our chosen cutoff. Based on the p-value distributions of the corresponding eQTL associations in all other conditions, we estimate that our approach to classify dynamic eQTLs is associated with a false discovery rate of 48%. The relatively high FDR associated with our choice of statistical cutoffs does not indicate that these loci are not eQTLs; rather it means that if we had a larger sample size, roughly half of our dynamic eQTLs should have been classified as eQTLs in more conditions, potentially in all of them. As expected, using a more stringent p-value cutoff of 0.9, we find fewer dynamic eQTLs (19) and a lower false discovery rate of 7%.\n\nWe next wanted to determine whether the dynamic eQTLs we identified in iPSC-CMs are also eQTLs in primary heart tissue. To do so, we compared our 367 dynamic eSNPs and eSNPs regulating the same gene in all four conditions (\u2018shared eQTLs\u2019, n\u00a0=\u00a020) to eQTLs identified in left ventricle heart tissue and 49 tissues assayed from hundreds of individuals in the GTEx study (GTEx Consortium et al., 2017). Thirty-two of 326 dynamic eSNP-eGene pairs tested in GTEx are eQTLs in heart tissue (9.8%), and 140 are eQTLs in at least one other assayed tissue (42.9%) demonstrating that many of these genes have context-dependent inter-individual variation in expression. Six of 19 shared eSNP-eGene pairs tested in GTEx are eQTLs in heart tissue (31.6%), and six are an eQTL in at least one other tissue (31.6%). Shared eSNPs are therefore more likely to be eSNPs in heart tissue than dynamic eSNPs (Chi-squared test; p=0.01). To further investigate eQTL concordance, we compared the eQTL effect size of our dynamic and shared eQTLs to the eQTL effect size in heart tissue determined by the GTEx consortium. Shared eQTLs overlapping heart tissue eQTLs (n\u00a0=\u00a06) have a higher concordance of effect than dynamic eQTLs overlapping heart tissue eQTLs (n\u00a0=\u00a032; Spearman correlation\u00a0=\u00a00.73 vs. 0.12) suggesting that our perturbation study has revealed novel eQTL effects.\n\n### Dynamic eGenes are enriched for response genes and transcription factors\n\nTo determine whether induced eGenes coincide with expression changes of the same genes following hypoxia, we integrated the results of our eQTL and differential expression analyses. For this analysis, we compared eGenes identified in condition A, baseline eGenes, with the set of induced eGenes. In line with our previous findings, baseline eGenes, as well as left ventricle (LV) and atrial appendage (AA) eGenes found in primary heart tissue (GTEx), are depleted for response genes (Chi-squared test; p<0.02, Ward and Gilad, 2019). However, we found a significant enrichment in response genes amongst induced eGenes (57 of 277 genes; Chi-squared test; p=0.01, Figure 3F) when compared to baseline eGenes, suggesting that induced eQTLs often impact the regulation of genes that respond to hypoxic stress.\n\nGiven that thousands of genes are differentially expressed in response to hypoxia, and many of these genes correspond to transcription-related processes, we next investigated the role of 1,639 genes annotated as transcription factors in humans, which may drive the transcriptome changes we observe (Lambert et al., 2018). We found a significant enrichment of genes annotated as transcription factors amongst the genes responding to oxygen stress compared to non-response genes (327 of 1,639 annotated human TFs, chi-squared test; p<2\u00d710\u221216; Figure 3F). Given that stress affects transcription factor gene expression, we asked whether induced eGenes are also enriched for transcription factor genes. Indeed, genes annotated as transcription factors are enriched in induced eGenes compared to baseline eGenes (32 TFs; p=0.004), including MITF and PPARA, both of which are TFs that have been previously implicated in hypoxic response (Feige et al., 2011; Narravula and Colgan, 2001). TFs amongst induced eGenes are more likely to be response genes than non-response genes (p=0.02); however, there is no difference in the proportion of response genes amongst baseline eGenes annotated as TFs and induced eGenes annotated as TFs (38% vs. 39%). The enrichment we observe in TFs amongst our induced eGenes suggests that latent genetic variation can have multiple downstream effects on gene expression including gene targets of TF genes. This could provide a mechanism for the appearance of induced eGenes that are neither response genes nor TF genes.\n\n### Chromatin accessibility changes following hypoxia and re-oxygenation\n\nWe next asked whether the hundreds of transcription factor expression changes following hypoxic stress are accompanied by global chromatin accessibility changes. To examine this, we performed ATAC-seq experiments in all four conditions to identify regions of open chromatin (we were only able to collect these data from 14 of the 15 individuals; Figure 1\u2014figure supplement 1, see Materials\u00a0and\u00a0methods). We filtered the ATAC-seq reads to include only those reads that map unambiguously to the nuclear genome (see Materials\u00a0and\u00a0methods, Figure 4\u2014figure supplement 1). We identified a set of open chromatin regions in each sample, and merged samples across individuals within each condition. Genomic regions identified as accessible in each condition were then merged to yield a set of 128,672 open chromatin regions across conditions (with a median length of 312 bp). Regions with low read counts were filtered out, resulting in a final set of 110,128 regions. Analysis of various metrics revealed the data to be of good quality (Figure 4\u2014figure supplements 2\u20133).\n\nWe sought to identify chromatin regions that are differentially accessible across pairs of conditions. Using a sensitive adaptive shrinkage-based approach with a False Sign Rate of 10% (Stephens, 2017), we could not detect changes in accessibility between baseline and hypoxia across 110,128 regions; however, we identified 831 differentially accessible regions (DARs) between hypoxia and short-term re-oxygenation (BC-DARs; 429 regions with increased accessibility and 402 with decreased accessibility), and 71 DARs between hypoxia and long-term re-oxygenation (BD-DARs; Figure 4A). Despite the fact that we do not identify any DARs between normoxia and hypoxia, there is a strong anti-correlation in the effect size between the normoxia (A) and hypoxia (B) conditions, and the hypoxia (B) and re-oxygenation (C) conditions across regions (Spearman correlation = \u22120.62; sign test p=4.6\u00d710\u221214; Figure 4B) suggesting minor changes in accessibility in response to hypoxia that do not meet our significance threshold. Conversely, there is a strong correlation in effect sizes between hypoxia and short-term re-oxygenation (BC-DARs), and hypoxia and long-term re-oxygenation (BD-DARs; Spearman correlation = 0.74; Figure 4C), and 59 of the 71 BD-DARs are amongst the 831 BC-DARs (83%), suggesting that most regions have returned to baseline levels of accessibility by the first re-oxygenation condition. This includes a region within the intron of the FOXO1 gene, a master regulator of the oxidative stress response (Figure 4D). We therefore considered the 831 BC-DARs, henceforth DARs, in further analysis. These DARs represent 0.8% of the total number of accessible regions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig4-v2.jpg)\n\n**Figure 4.:** (A) Estimated effect size (Beta) following adaptive shrinkage (ash) between each pair of conditions, and the numbers of chromatin regions that are differentially accessible (DARs) between pairs of conditions. (B) Estimated Beta for each region when comparing A vs. B and B vs. C. (C) Estimated Beta for each region when comparing B vs. C, and B vs. D. (D) Chromatin accessibility levels at a chromatin region within a FOXO1 intron. (E) Expression levels of the hypoxia-responsive gene ADM following hypoxia, and chromatin accessibility levels at a DAR, overlapping an induced HIF1\u03b1-bound region, within 500 bp of the ADM gene.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The total number of sequenced reads (Total), the number of reads that map to the human genome (Mapped), the number of reads that map to the nuclear genome (Nuclear), and the number of reads that pass the WASP re-mapping and quality filtering step (Filtered) are shown for each sample within each of the four conditions (A: brown, B: blue, C: coral, D: red). (B) The proportion of reads in each mapping category for each sample.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The final number of ATAC-seq reads that have passed all mapping and filtering steps segregated by condition. (B) The number of open chromatin regions (peaks) in each sample segregated by condition. (C) The fraction of reads in peaks in all samples segregated by condition. (D) The distribution of fragment sizes of ATAC-seq libraries from the four conditions from a representative individual (19128). (E) The enrichment of sequencing reads around the TSS. The ATAC-seq footprint around CTCF motifs. Motifs are segregated by motif strength (top and bottom 20% of sites).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Spearman correlation of ATAC-seq read counts between samples when considering all chromatin regions. (B) Spearman correlation of ATAC-seq read counts between samples when restricting to chromatin regions at the TSS. Colors on the x-axis refer to each of the four conditions (A: brown, B: blue, C: coral, D: red) and colors on the y-axis refer to each of the 14 individuals.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) QQ plot showing an enrichment of low p-values for the association between genotype and level of chromatin accessibility in each of the four conditions. (B) Heatmap representing the six dynamic caQTLs. Each row represents a SNP, and the color represents the significance of the association between genotype and chromatin accessibility. (C) Examples of two dynamic caQTLs including a region within the promoter of the DCPS gene, and a region\u00a0~100 kb away from the C1orf99 gene. The two genotype classes represented at these loci are included.\n\n### Linking chromatin accessibility changes with gene expression changes\n\nWe next sought to integrate our gene expression data with our chromatin accessibility data. We found that when considering a 50 kb window around the TSS of expressed genes, DARs are enriched near response genes compared to non-response genes (Chi-squared test; p=0.03). Of 2,113 response genes, 113\u00a0have a DAR within 50 kb of the TSS. This set includes an accessible region, overlapping a HIF1\u03b1 site, within 500 bp of the 3\u2019 end of the classic hypoxia response gene, ADM (Figure 4E).\n\nWe asked whether the changes in chromatin accessibility coincide with the appearance of dynamic eQTLs. We found that DARs are no more likely to be near dynamic eGenes than shared or baseline eGenes. In line with previous estimates of the proportion of eQTLs in open chromatin regions, 24 baseline eQTL SNPs (613 total SNPs) and 19 dynamic eQTL SNPs (367 total SNPs) overlap with accessible chromatin regions (GTEx Consortium et al., 2017). One dynamic eQTL SNP overlaps a DAR, near the actin filament binding protein gene, FGD4. This gene was also shown to be differentially expressed between children with congenital heart defects where the defect leads to a chronic hypoxic state (cyanotic disease), and children with a similar defect but where oxygen levels are not affected (acyanotic disease; Ghorbel et al., 2010).\n\nGenetic variants within transcription factor binding sites can influence chromatin accessibility at these regions, leading to effects on gene expression. To directly test whether there are genetic effects on chromatin accessibility, independent of gene expression, we sought to identify chromatin accessibility QTLs (caQTLs) that\u00a0is genetic variants located within the 128,672 accessible regions, which coincide with different levels of accessibility based on genotype. We identified few caQTLs per condition (q-value\u00a0<0.1; A: 10, B: 1, C: 7, D: 6; Figure 4\u2014figure supplement 4A). Six of these caQTLs are classified as dynamic caQTLs that\u00a0is induced or suppressed in response to hypoxia using the same definitions as used for the dynamic eQTLs, and include regions at the TSS of the mRNA decapping enzyme gene DCPS, and a region within 100 kb of the C1orf99 gene (Figure 4\u2014figure supplement 4B\u2013C).\n\n### Genomic features associated with differentially accessible regions (DARs)\n\nWe next wanted to determine what distinguishes DARs from constitutively accessible regions (CARs). To do so, we investigated three classes of genomic features: (1) promoter- and enhancer-associated marks, (2) transcription factor binding locations, and (3) underlying DNA sequence features. We found that DARs are more likely to overlap TSS than constitutively accessible regions (43% overlap vs. 11% overlap; chi-squared test, p<2\u00d710\u221216; Figure 5A) suggesting that DARs may be involved in the gene regulatory response. Indeed, DARs are more likely to coincide with active histone marks in left ventricle heart tissue than constitutively accessible regions (H3K4me3: 57% overlap DARs vs. 24% overlap constitutively accessible regions; chi-squared test; p<2.2\u00d710\u221216; H3K4me1: 86% overlap DARs vs. 52% overlap constitutively accessible regions; p<2.2\u00d710\u221216; Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig5-v2.jpg)\n\n**Figure 5.:** (A) The proportion of differentially accessible regions (DARs) and constitutively accessible regions (CARs) that overlap with annotated TSS. (B) The proportion of DARs and CARs that overlap with the locations of histone marks determined by ChIP-seq in human heart tissue (ENCODE Project Consortium, 2012). (C) The proportion of DARs and CARs that overlap with HIF1\u03b1 and HIF2\u03b1 binding locations determined by ChIP-seq in a breast cancer cell line (Sch\u00f6del et al., 2011). (D) The most significant motif identified to be differentially enriched in DARs compared to all ARs that is putatively recognized by ZNF770, E2F3 and E2F4. We classify E2F4 as a response gene and therefore determined the proportion of DARs and CARs that overlap with E2F4 ChIP-seq binding locations identified in a human LCL line (Lee et al., 2011). (E) The proportion of DARs and CARs that overlap four major transposable element (TE) classes \u2013 LTR, LINE, SINE, DNA. The proportion of DARs and CARs that overlap with CpG islands (CGIs) that is proximal to the TSS (+/-\u00a02 kb from the TSS), and distal to the TSS. Asterisk denotes a statistically significant difference between DARs and CARs (*p<0.05, **p<0.005, ***p<0.0005).\n\nTo determine whether sequence-specific hypoxia-responsive transcription factors associate with differentially accessible chromatin, we integrated DARs with published chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq) data for the well-studied hypoxia-inducible factors HIF1\u03b1 and HIF2\u03b1 (Sch\u00f6del et al., 2011). A total of 234 of the 356 HIF1\u03b1 ChIP-seq binding sites (66%), and 150 of the 301 HIF2\u03b1 binding sites (50%) overlap with our set of 110,128 accessible chromatin regions. We found that these HIF1\u03b1 and HIF2\u03b1 binding sites are more likely to overlap the 831 differentially accessible regions than the 109,275 constitutively accessible regions (Fisher test; p=0.03; Figure 5C).\n\nWe next took an unbiased approach to identify transcription factor binding motifs that are enriched in DARs compared to all accessible regions using MEME-ChIP software (see\u00a0Materials\u00a0and methods). We found two motifs to be enriched in DARs compared to all regions (Figure 5D). Motif 1 (p=2\u00d710\u22122) is recognized by HTF4 and TFE2, both of which are non-response genes in our system. Motif 2 (p=6.2\u00d710\u221242) is posited to be recognized by ZN770, E2F3, and E2F4. Both ZN770 and E2F4 are response genes in our system. DARs arise between the hypoxia and re-oxygenation conditions, and E2F4 expression increases following re-oxygenation, suggesting that it may be involved in the response. To test this hypothesis, we obtained a published ChIP-seq data set for E2F4 (Lee et al., 2011), and overlapped the 16,245 E2F4-bound regions with DARs and constitutively accessible regions. E2F4-bound regions are significantly enriched in DARs compared to constitutively accessible regions (Chi-squared test; p<2.2\u00d710\u221216; Figure 5D). E2F4 is important for survival following ischemia in neurons, and has been suggested to be an anti-apoptotic factor in cardiomyocytes (Dingar et al., 2012; Iyirhiaro et al., 2014).\n\nTo identify additional sequence features that associate with DARs, we asked whether transposable elements (TE), a potential source of regulatory sequence subjected to chromatin-level regulation, are enriched in these sites (Du et al., 2016; He et al., 2019). We found that while three of the main TE classes, LINEs, LTRs, and DNA elements are similarly enriched in DARs compared to constitutively accessible regions; SINEs are specifically enriched in DARs (p=6.5\u00d710\u22126; Figure 5E). There is an enrichment of both Alu and MIR SINE family members in DARs (p=3\u00d710\u22125 and p=0.006). AluS elements, and the AluSq and AluSp sub-families, are particularly enriched within the Alu family (p=0.007 and p=0.02 respectively). A different cellular stress, heat shock, has previously been shown to remodel chromatin accessibility at Alu elements in cervical cancer cells (Kim et al., 2001).\n\nAs Alu and MIR TE sequences are notably CpG dense (Medstrand et al., 2002), we next asked about the enrichment of CpG-dense CpG islands (CGIs) in our differentially accessible regions. We found that CpG islands are enriched in DARs compared to constitutively accessible regions, whether these regions fall within 1 kb of TSS, which are typically enriched for CGIs, or not (p<2.2\u00d710\u221216; Figure 5F).\n\n### DNA methylation state at stress-responsive genes and chromatin regions\n\nGenes with CGI promoters are thought to allow flexibility in TSS choice compared to genes without CGI promoters (Carninci et al., 2006), and to allow for the rapid induction of gene expression in response to stimuli (Ramirez-Carrozzi et al., 2009). We therefore asked whether this promoter feature is enriched in the stress response genes. Indeed, we find that response genes are more likely to have CGI promoters than non-response genes (Chi-squared test; p=0.002).\n\nGiven the enrichment of CpG islands in gene promoters and chromatin regions that are responsive to stress, we asked whether this feature corresponded to differences in CpG DNA methylation levels in these same regions. We measured global DNA methylation levels at 766,658 CpG sites in all conditions from 13 of our individuals (no data was collected from two of the 15 individuals), together with 23 replicate samples from three individuals (see Materials\u00a0and\u00a0methods; Supplementary file 1). We found the expected bimodal distribution of DNA methylation Beta-values across CpGs (Beta-values represent the ratio of intensities between the methylated and unmethylated alleles; Figure 6\u2014figure supplement 1A). Additional analyses indicated the data to be of good quality (Figure 6\u2014figure supplements 1\u20132).\n\nTo determine whether steady-state DNA methylation levels mark genes or regions that will change their expression level in response to stress, we investigated baseline DNA methylation levels in the promoters of genes classified as response genes and non-response genes, as well as accessible regions\u00a0and\u00a0DARs. To do so, we assessed the DNA methylation level at CpGs within 200 bp upstream of the TSS in the baseline condition (condition A). The majority of the assayed CpGs were hypomethylated with a median Beta-value of less than 0.2 across genes and regions (Figure 6A). While there is no difference in median DNA methylation levels between response and non-response genes, we found that the median DNA methylation level is lower in DARs compared to all accessible regions (p<2.2\u00d710\u221216). These data suggest that responsive chromatin regions may have specific epigenetic profiles which poise them for rapid response to stress.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig6-v2.jpg)\n\n**Figure 6.:** (A) Mean DNA methylation levels (Beta-values) in the baseline condition\u00a0(A)\u00a0at CpGs within 200 bp upstream of the TSS of non-response genes (NR-G) and response genes (RG), and within all accessible regions (ARs) and differentially accessible regions (DARs; *p<0.05, ***p<0.0005). (B) Volcano plots representing the differential DNA methylation analysis across 766,658 CpGs. There are no differentially methylated (DM) CpGs across any pair of conditions. (C) Numbers of differentially methylated CpGs, when restricting the test set to include only CpGs within CpG islands, across pairs of conditions. (D) Gene expression and DNA methylation levels at a differentially methylated CpG within an intron of the EGR2 response gene.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The distribution of Beta-values across samples. (B) The Beta-value for each CpG within a CpG island (CGI), CGI north and south shores, and CGI north and south shelves.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Spearman correlation of quantile-normalized Beta-values for 766,858 CpGs between all sample pairs. X-axis represents oxygen level, and y-axis represents individual.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Distribution of p-values across each pair of contrasts following differential DNA methylation analysis across 766,658 CpGs.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A) Variance in normalized gene expression counts attributed to individual (one of 15 different individuals), condition (A,B,C,D), replicate (all conditions from three individuals replicated three times) and residual variance. (B) Variance in normalized read counts in accessible regions across 14 individuals (no replicate samples were collected). (C) Variance in normalized DNA methylation Beta-values across all CpGs in 13 individuals.\n\n### DNA methylation levels are largely stable following hypoxia and re-oxygenation\n\nGiven that DNA methylation levels can associate with gene expression levels, we asked whether any CpGs are differentially methylated during the course of the oxygen perturbation experiment, which induces thousands of gene expression changes. When considering all 766,658 CpGs we did not find any differentially methylated CpGs across any pair of conditions (10% FDR; Figure 6B), and all p-values are estimated to be true null p-values (pi0\u00a0=\u00a01 when estimated by q-value across all pairs of conditions; Figure 6\u2014figure supplement 3). We were also unable to detect any differentially methylated CpGs when considering two estimates of DNA methylation levels: Beta-values or M-values (log2 ratio of intensities of methylated versus unmethylated alleles).\n\nTo increase the likelihood of identifying differentially methylated CpGs, we reduced the number of statistical tests for identifying differentially methylated CpGs by restricting our test set of CpGs to those within annotated regions of interest. Because of the CpG island enrichment in our response gene promoters, we first selected CpGs present within CpG islands (143,587 of the 766,658 measured CpGs). Again, we found no differentially methylated CpGs between baseline (A) and hypoxia (B), and hypoxia (B) and the short-term re-oxygenation condition (C). However, we identified four differentially methylated CpGs (DMCpGs) between the baseline (A) and long-term re-oxygenation condition (D; Figure 6C). This set includes a CpG in the intron of the EGR2 response gene, which shows increased DNA methylation levels over time (Figure 6D). Methylation at CpG islands within the intron of EGR2 has been shown to confer enhancer activity in cancer cells (Unoki and Nakamura, 2003). If we only select CpGs located within the promoters of the 2,113 response genes, we find one DMCpG within the promoter of the FTSJ2 gene, a rRNA methyltransferase, that is differentially methylated between the hypoxia (B) and long-term re-oxygenation (D) conditions. Selecting CpGs located only within the 831 DARs reveals two DMCpGs between baseline (A) and hypoxia (B), and one DMCpG between baseline (A) and long-term re-oxygenation (D). We therefore were only able to identify a handful of differentially methylated CpGs during our experimental timecourse which elicited thousands of gene expression changes.\n\nTo further investigate the apparent differences in response to hypoxia across our three molecular phenotypes, we calculated the proportion of variance explained by \u2018individual\u2019, \u2018condition\u2019 and \u2018replicate\u2019. We observed a lower proportion of variance explained by \u2018condition\u2019 in the DNA methylation data (0.8%) and chromatin accessibility data (3%) compared to the gene expression data (6%, t-test, p<2.2\u00d710\u221216), and a corresponding increase in the residual variance (Figure 6\u2014figure supplement 4). For the DNA methylation data in particular, there is a similar proportion of variance explained by individual (44% for gene expression, 40% for DNA methylation, and 28% for chromatin accessibility) and approximately an order of magnitude less variance explained by condition. These results suggest that noise alone cannot explain the relatively small number of chromatin accessibility and DNA methylation changes.\n\n### Dynamic eQTLs associate with traits and disease\n\nFinally, we wanted to determine whether any of the dynamic eQTL SNPs or genes that we identified might also be associated with complex traits or disease. To maximize the number of potentially phenotypically-relevant genomic loci, we performed three independent analyses. We first took an unbiased, SNP-based approach by searching within a catalog of genetic variants associated with a variety of traits assayed in thousands of GWAS for overlap with our dynamic eSNPs (Buniello et al., 2019). By intersecting these two data sets, we found one induced dynamic eSNP (rs8053350) that is also associated with a measured phenotype in GWAS \u2013 varicose veins (Supplementary file 1; Figure 7\u2014figure supplement 1A-B).\n\nGiven that our eQTL data are from the Yoruba population from West Africa and that most GWAS studies are performed in European populations, which have an inherently different LD structure, we may not expect to see strong overlap at the level of individual variants. We therefore next took an orthogonal gene-based approach, using the same GWAS catalog, to specifically investigate the genes implicated in three phenotypes associated with cardiovascular function or response to oxygen deprivation: MI, heart failure, and stroke (see Materials\u00a0and\u00a0methods). If the expression of these CVD genes is found to vary across individuals following hypoxia, it suggests that they may be important for mediating disease risk. Indeed, we found that six of our dynamic eGenes are implicated in these three disease states by GWAS gene mapping approaches (Supplementary file 1). This list includes the DNA damage and apoptosis factor ZC3HC1, which is implicated in MI and stroke (Figure 7\u2014figure supplement 1C\u2013D). Importantly, ZC3HC1 is not an eGene in LV or AA, but the SNP-gene pair is an eQTL in other tissues.\n\nLastly, we performed an in-depth SNP-based analysis using full summary statistics for coronary artery disease (CAD) and MI from the CARDIoGRAMplusC4D Consortium (Stitziel et al., 2016; Nikpay et al., 2015; Webb et al., 2017). We tested whether the lead eSNP from our set of dynamic eQTLs is also associated with CAD or MI and identified two loci (Supplementary file 1). This set includes the eSNP (rs12588981) for the dynamic eQTL EIF2B2 which is nominally associated with CAD (GWAS association p=4.7\u00d710\u22125) and is in high and statistically significant LD with the lead GWAS variant (GWAS association p=9.9\u00d710\u22128) at this locus (rs3832966; R2\u00a0=\u00a00.96, p<0.001; Figure 7; Figure 7\u2014figure supplement 2). Given that we have incomplete power to detect dynamic eQTLs, we also used the same GWAS dataset to investigate whether any of the significant eQTL SNPs in any condition are associated with CAD or MI. We determined that eSNP (rs8105092), which regulates CARM1 in the hypoxic condition (condition B), is nominally associated with MI (GWAS association p=1.79\u00d710\u22125) and in moderate, yet significant LD, with the lead GWAS variant (GWAS association p=2.8\u00d710\u22129) at this locus (rs4804142; R2\u00a0=\u00a00.32, p<0.001; Figure 7\u2014figure supplement 3), and is not an eGene in LV or AA. A handful of the eQTLs that we highlight here were tested for association with gene expression by the GTEx consortium, yet are not eQTLs in heart tissue. These results suggest that perturbation studies in relevant cell types can give insight into the molecular basis for the genetic association with complex traits and disease, which might not be gleaned from the study of post-mortem tissues.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig7-v2.jpg)\n\n**Figure 7.:** (A) EIF2B2 is a dynamic eGene. (B) Expression levels of EIF2B2 during the course of the experiment following aggregation of all individuals. (C) Locus zoom plots in each condition illustrating the tested SNPs in the CARDIoGRAMplusC4D GWAS study (light blue), and the SNPs tested in our eQTL analyses in each condition (A: brown, B: blue, C: coral, D: red). All tested SNPs within a 1 Mb region around the dynamic eQTL SNP on chromosome 14 are shown.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Example of a GWAS-implicated SNP that is also a dynamic eQTL SNP. RNF166 is a dynamic eGene and the associated SNP is implicated in the presence of varicose veins. RNF166 expression levels are stratified by genotype in each condition. (B) Expression levels of RNF166 during the course of the experiment following aggregation of all individuals. (C) Example of a stroke and myocardial infarction (MI) GWAS-implicated gene that is also a dynamic eGene (ZC3HC1). (D) Expression levels of ZC3HC1 during the course of the experiment following aggregation of all individuals.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** All tested SNPs within 5 kb of the EIF2B2 eSNP (rs12588981; green) are displayed along the x-axis of the LD matrix and all GWAS variants tested for association with CAD within 5 kb of the lead GWAS variant (rs3832966; purple) are displayed on the y-axis. Each square below the diagonal represents the R2 measure of LD (with darker red representing a higher value) and squares above the diagonal representing D' (darker blue representing a higher value). Genes within the locus are displayed in the lower panel.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) CARM1 is an eGene in hypoxic condition B. (B) Expression levels of CARM1 during the course of the experiment following aggregation of all individuals. (C) Locus zoom plots in each condition illustrating the tested SNPs in the CARDIoGRAMplusC4D GWAS study (light blue), and the SNPs tested in our eQTLs analyses in each condition (A: brown, B: blue, C: coral, D: red). All tested SNPs within a 1 Mb region around the dynamic eQTL SNP on chromosome 19 are shown. (D) All tested SNPs within 5 kb of the lead MI GWAS variant (rs4804142; purple) are displayed on the x-axis of the LD matrix and all tested SNPs within 5 kb of the CARM1 eSNP (rs8105092; green) are displayed on the y-axis. Each square below the diagonal represents the R2 measure of LD (with darker red representing a higher value) and squares above the diagonal representing D' (darker blue representing a higher value). The locus falls within an intron of the CARM1 gene.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57345/elife-57345-fig7-figsupp4-v2.jpg)\n\n**Figure 7\u2014figure supplement 4.:** As a function of standardized effect size: the power of this study to detect an eQTL in one condition after Bonferroni correction at level 0.05 (green), the phenotypic variance explained assuming a single causal variant (h2; purple), and the false positive rate (FPR; orange) to call a dynamic eQTL assuming the true effect size is equal in all four conditions. The green dotted lines denote the effect size this study has 80% power to detect in one condition. The purple dotted lines denote the effect size corresponding to the median cis-heritability of gene expression (h2\u00a0=\u00a00.16; Gusev et al., 2016; Wheeler et al., 2016). The orange dotted lines denote the effect size for which the power to detect a QTL in one condition is equal to the FPR to call a dynamic eQTL.\n\n## Discussion\n\nStudying gene expression across individuals in response to stress can reveal latent effects of genetic variation, which may contribute to higher-order phenotypes and disease. In order to understand the effects of genetic variation in a disease-relevant cell type and a disease-relevant process, we differentiated cardiomyocytes from a panel of genotyped individuals, and subjected them to hypoxia and re-oxygenation. We found hundreds of eQTLs that are revealed or suppressed following hypoxic stress (dynamic eQTLs), several of which have been associated with phenotypes measured in GWAS.\n\n### Steady-state and dynamic eQTLs may help understand CVD\n\nAttempts have been made to identify genetic variants that associate with gene expression levels and CVD phenotypes in easily accessible biological samples such as blood. However, less than half of CVD/MI GWAS loci are associated with an eQTL in whole blood when thousands of individuals are tested (Joehanes et al., 2017). To determine the effects of genetic variation on gene expression specifically in the heart, more targeted studies have taken advantage of left ventricle tissue (GTEx Consortium et al., 2017; Koopmann et al., 2014), left atrium tissue (Lin et al., 2014; Sigurdsson et al., 2017), and right atrial appendage tissue (GTEx Consortium et al., 2017) obtained during cardiac surgeries or post-mortem. Using fewer than a hundred individuals, a handful of identified eQTL SNPs correspond to SNPs associated with cardiac traits, thus linking specific genes to organismal-level phenotypes. A compelling example is the association between MYOZ1 expression and atrial fibrillation (Lin et al., 2014; Sigurdsson et al., 2017). Across tissues, the GTEx consortium reported that\u00a0~\u00a050% of eQTLs are also associated with variation in other measured complex traits (GTEx Consortium et al., 2017), and Heinig et al. have shown that 20% of left ventricle eQTLs relate to heart-associated loci (Heinig et al., 2017). However, these variants, identified in healthy individuals, are unlikely to represent all genetic variants that have consequences on disease. Indeed, Heinig et al. identified 100 dilated cardiomyopathy\u2013specific eQTLs (not seen in healthy individuals) in a case-control study of 97 individuals with dilated cardiomyopathy and 108 healthy donors (Heinig et al., 2017). Similarly, by collecting samples pre- and post-surgically-induced ischemia, Stone et al. identified genetic associations that are only detected under stress (Stone et al., 2019). Although these studies provide a set of gene targets for further investigation, there are many loci that remain unexplained.\n\nThe heart is a complex tissue consisting of multiple cell types. The effects of some genetic variants in specific cell types might well be masked when considering heterogeneous tissue samples. As we are now able to direct iPSCs toward a cardiac fate, we can test for genetic effects on specific cell types such as cardiomyocytes (Panopoulos et al., 2017). As one would expect, iPSC-CMs are better suited to study cardiovascular traits than the immortalized B-cells or iPSCs from which they are derived (Banovich et al., 2018). However, given the high degree of eQTL sharing across diverse tissues (GTEx), identifying eQTLs in the disease-relevant terminal cell type at steady state may not give substantial insight into disease biology. A significant advantage of using iPSC-CMs is that these cells provide a system to interrogate gene expression dynamics.\n\nCellular stressors that perturb gene expression levels and the cell state can unmask additional layers of regulatory variation (Alasoo et al., 2018; Barreiro et al., 2012; \u00c7al\u0131\u015fkan et al., 2015; Kim-Hellmuth et al., 2017; Knowles et al., 2018; Manry et al., 2017; N\u00e9d\u00e9lec et al., 2016). Intermediate developmental cell states can similarly provide insight into GWAS loci where eQTL analysis in terminal cell types cannot (Strober et al., 2019). Further evidence for the notion that steady state eQTLs may have limited applicability to disease states comes from our previous work, where we used a comparative evolutionary approach to investigate the response to stress. We showed that genes that respond to oxygen stress in iPSC-CMs from both humans and chimpanzees, and are therefore likely relevant for disease, are depleted for eQTLs identified in heart tissue compared to genes that do not respond in either species (Ward and Gilad, 2019).\n\nIn the current study, by subjecting iPSC-CMs from a panel of individuals to perturbation (oxygen deprivation), we were able to identify a handful of potentially interesting trait-relevant loci. Using a broad GWAS catalog, we found one of our dynamic eQTL SNPs (rs8053350) to be associated with varicose veins, and the level of RNF166 expression (Fukaya et al., 2018). This SNP falls within an intron of the PIEZO1 gene. Varicose veins are associated with a risk for developing deep vein thrombosis and other vascular diseases (Chang et al., 2018). When we performed an analogous analysis focused on genes previously associated with three relevant traits \u2013 MI, heart failure and stroke, we identified a novel heart eGene, ZC3HC1, encoding the NIPA protein, which is implicated in MI, coronary artery disease, and ischemic stroke (IBC 50K CAD Consortium, 2011; Nikpay et al., 2015; Schunkert et al., 2011). This dynamic eQTL SNP is also associated with bronchodilator responsiveness in chronic obstructive pulmonary disease (Hardin et al., 2016). Using full summary statistics from a CAD and MI GWAS (Stitziel et al., 2016; Nikpay et al., 2015), we found minimal overlap between significant GWAS loci and significant or dynamic eSNPs. This may be due in part to differences in genetic ancestry and LD structure between the predominant GWAS population (of European descent) and our eQTL study population (Yoruba). Nevertheless, we highlight two interesting loci EIF2B2 and CARM1. While the EIF2B2 locus does not reach genome-wide significance in the GWAS analysis, integration with our dynamic eQTL data highlights this region as being potentially relevant to the disease. Indeed, EIF2B2, a GTP exchange protein, has been predicted to be a gene target in CAD using summary data-based Mendelian randomization (Pavlides et al., 2016). CARM1, also known as PRMT4, has previously been implicated in myocardial infarction and apoptosis in mice (Wang et al., 2019).\n\n### Mechanisms behind response genes and dynamic eQTLs\n\nChanges in gene expression can associate with other molecular-level phenotypes. The response to hypoxia is mediated by the HIF1\u03b1 transcription factor (Samanta and Semenza, 2017), but given that there are hundreds of HIF1\u03b1 binding locations and thousands of differentially expressed genes, regulation by this factor alone cannot directly explain all the transcriptional changes. We explored two additional molecular phenotypes in the context of oxygen deprivation \u2013 the locations and level of accessibility of open chromatin regions, and DNA methylation levels. We did not find either to contribute substantially to the gene expression response we observed. There are minimal changes in accessibility following hypoxia, which is in contrast to observations of studies that considered stimulation of immune cell types (Alasoo et al., 2018; Calderon et al., 2019; Pacis et al., 2015). This could reflect cell type specificity in response to stress, or the specificity of the cellular response to different stressors. Indeed, despite large gene expression changes in response to various stimulants in endothelial cells, there are a relatively small number of differentially accessible regions (Findley et al., 2019). We speculate that the transcriptional response to oxygen stress could result in the induction of transcription factors, which bind already accessible regions of open chromatin, and that cells are primed for a quick response to this universal cellular stress. Indeed, it has been shown that chromatin contacts exist between HIF1\u03b1 binding sites and hypoxia-inducible genes in the normoxic state (Platt et al., 2016). Conversely, it has been suggested that hypoxia results in the induction of HIF1\u03b1, and significant changes in histone methylation (Batie et al., 2019). As we did not measure histone marks in our system, these changes may occur in the absence of chromatin accessibility changes, but we also cannot rule out the possibility that the choice of a single timepoint following 6 hr of hypoxia, or insufficient statistical power in our sample size, contributed to the minimal differences in accessibility that we observed.\n\nUsing an approach designed to measure small effect sizes between conditions, we did identify a set of 831 DARs between hypoxia and short-term re-oxygenation that are enriched for marks of active chromatin, CpG islands, and TEs. These regions do not appear to explain many of the gene expression differences we observed. Hypoxia and oxidative damage are likely to also affect the genome in ways that do not directly impact gene expression. Indeed, the distribution of oxidative DNA damage sites varies across the genome following stress such that TEs and active chromatin regions are enriched for DNA damage, while promoters are depleted (Poetsch et al., 2018). We found enrichment for TEs, specifically Alu SINE elements, in DARs. Interestingly, TEs, and DNA transposons in particular, are also enriched in regions that become accessible in macrophages in response to bacterial infection; suggesting sequence-specific effects of TEs in response to different cellular stressors (Bogdan et al., 2020). Alu elements have previously been found to associate with the response to stress in other contexts. Serum starvation induces binding of TFIIIC, which recruits RNA polymerase III, to Alu elements (Ferrari et al., 2020), and heat shock increases chromatin accessibility around Alu elements (Kim et al., 2001).\n\nThere are several studies, which suggest that DNA methylation levels are dynamic and change in response to stressors such as hypoxia. We did not find any notable differences in DNA methylation levels pre- and post-hypoxia and re-oxygenation, which suggests that like chromatin accessibility, DNA methylation levels do not make large contributions to changes in gene expression levels or the appearance of dynamic eQTLs in our system. Many of the DNA methylation changes that have been described in response to hypoxia occur in chronic and intermittent hypoxia, and not acute hypoxia as investigated in our study (Hartley et al., 2013; Robinson et al., 2012; Watson et al., 2014). DNA methylation levels are also altered in response to other stressors such as bacterial infection (Pacis et al., 2015); however, the importance of timing is highlighted by the fact that, in this system, gene expression responses precede DNA methylation changes (Pacis et al., 2019). It is also important to note that our study considers baseline oxygen levels to be 10% oxygen, which is closer to physiological oxygen levels (5\u201313%) than atmospheric oxygen levels (21%; Brahimi-Horn and Pouyss\u00e9gur, 2007; Carreau et al., 2011; Jagannathan et al., 2016). Most studies define normoxia as 21% oxygen saturation, and while this likely leads to larger effect size differences in known hypoxia response genes following hypoxia, these comparisons may not give meaningful insight into the in vivo state.\n\nOne can speculate about different mechanisms that might lead to the appearance or disappearance of dynamic eQTLs. In the context of the immune response, it has been shown that the same response variants affect both gene expression and chromatin accessibility (Alasoo et al., 2018). This is in line with the general notion that changing cellular environments results in differences in chromatin accessibility at transcription factor binding sites, which leads to gene expression changes. We found that this does not appear to be a major mechanism in our system as there are minimal changes in accessibility following hypoxia. We observed that there is an enrichment of response genes amongst dynamic eQTLs suggesting that the change in environment results in a change in expression levels that is dependent on the associated genotype. We also find enrichment for TFs amongst response genes and dynamic eQTLs, suggesting that dynamic eQTLs can appear through secondary trans effects.\n\n### Potential limitations of our model\n\nTo understand the effects of genetic variation on human heart tissue, and how this variation might contribute to the MI and I/R injury etiologies of CVD, we carefully perturbed oxygen levels that cardiomyocytes in culture are exposed to. This in vitro approach is by design a model system, and therefore will likely not fully recapitulate the in vivo state. However, we previously found that out of 2,549 genes that respond to hypoxia in iPSC-CMs from humans and chimpanzees, only 16% are differentially expressed between iPSC-CMs and heart tissue (Pavlovic et al., 2018; Ward and Gilad, 2019). This suggests that our in vitro system is applicable to heart tissue. There is still a possibility that the dynamic eQTLs that we identify in our in vitro system are not physiologically relevant.\n\nOur study comprised a small number of individuals (15), far fewer than what is typical for identifying eQTLs. Our work is therefore a first step toward understanding the effects of genetic variation on gene expression in response to stress. Nevertheless, with a small number of individuals we were able to identify a couple of hundred dynamic eQTLs that are revealed or suppressed under stress, suggesting that this paradigm is worth exploring further in larger cohorts. Under the simplifying assumption of a single causal variant, we determined that we have\u00a0~6% power to detect an effect which explains\u00a0~38% of the heritability, and an equal false positive rate to call it a dynamic eQTL (see Materials\u00a0and\u00a0methods; Figure 7\u2014figure supplement 4). The median eQTL heritability over all genes is 0.16, as previously reported by Gusev et al., 2016; Wheeler et al., 2016, which illustrates the relative power of this study compared to the GTEx and Depression Genes and Networks studies (Battle et al., 2014) for eQTL mapping. This suggests that the impact of stress on genotype-dependent effects on gene expression will be even greater in studies which have higher power to detect smaller effects of genotype. For perspective, early eQTL studies were similarly powered to our study, using 70 individuals; yet these studies still led to important insights opening an avenue of research focused on assaying the consequences of genetic variation by RNA-seq (Pickrell et al., 2010).\n\nIn summary, there have been few studies assessing the effects of genetic variation in response to CVD-relevant perturbations in cardiomyocytes. Here, we profiled the response to oxygen deprivation in cardiomyocytes from a panel of genotyped individuals. We find that eQTLs can appear and disappear in response to oxygen deprivation, and that some of these eQTLs have effects on relevant complex traits and disease.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>18499 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>18505 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>18511 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>18520 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>18852 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>18855 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>18858 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>18870 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>18912 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Male)</td>\n      <td>19098 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Male)</td>\n      <td>19101 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>19108 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>19116 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>19128 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n    <tr>\n      <td>Cell line (H.\u00a0sapiens, Female)</td>\n      <td>19160 iPSC</td>\n      <td>10.1101/gr.224436.117</td>\n      <td></td>\n      <td>Derived from HapMap Yoruba LCL</td>\n    </tr>\n  </tbody>\n</table>\n\n### Samples\n\nWe randomly selected individuals from the Yoruba YRI HapMap population. iPSCs were reprogrammed from lymphoblastoid cell lines from these individuals (Banovich et al., 2018). We used fifteen biological replicates (individuals), and three technical replicates (independent cardiomyocyte differentiation and oxygen stress experiments) from three individuals. This number of individuals has been shown to be sufficient to be able to identify eQTLs in small sample sizes (van de Geijn et al., 2015). Experiments were designed and performed such that technical variables (such as sample processing batch) were not confounded with the variable of interest (condition). All cell lines tested negative for mycoplasma contamination.\n\n### Cardiomyocyte differentiation from iPSCs\n\niPSCs were maintained in a feeder-independent state in Essential 8 Medium (A1517001, ThermoFisher Scientific, Waltham, MA, USA) with Penicillin/Streptomycin (30002, Corning, NY, USA) on Matrigel hESC-qualified Matrix (354277, Corning, Bedford, MA, USA) at a 1:100 dilution. Cells were passaged at\u00a0~70% confluence every 3\u20134 days with dissociation reagent (0.5 mM EDTA, 300 mm NaCl in PBS), and seeded with ROCK inhibitor Y-27632 (ab12019, Abcam, Cambridge, MA, USA).\n\nCardiomyocyte differentiations were performed largely as previously described (Ward and Gilad, 2019), except the duration and concentration of the Wnt agonist and antagonist differed for this panel of individuals, which included only human samples. Briefly, on Day 0, iPSC lines at 70\u2013100% confluence in 100 mm plates were treated with 12 \u03bcM GSK3 inhibitor CHIR99021 trihydrochloride (4953, Tocris Bioscience, Bristol, UK) in 12 ml Cardiomyocyte Differentiation Media [500 mL RPMI1640 (15\u2013040 CM ThermoFisher Scientific), 10 mL B-27 Minus Insulin (A1895601, ThermoFisher Scientific), 5 mL Glutamax (35050\u2013061, ThermoFisher Scientific), and (5 mL Penicillin/Streptomycin)], and a 1:100 dilution of Matrigel. 24 hr later, on Day 1, the media was replaced with Cardiomyocyte Differentiation Media. 48 hr later, on Day 3, 2 \u03bcM of the Wnt inhibitor Wnt-C59 (5148, Tocris Bioscience), diluted in Cardiomyocyte Differentiation Media, was added to the cultures. Cardiomyocyte Differentiation Media was replaced on Days 5,\u00a07,\u00a010, and 12. Cardiomyocytes were purified by metabolic purification by the addition of glucose-free, lactate-containing media (Purification Media) [500 mL RPMI without glucose (11879, ThermoFisher Scientific), 106.5 mg L-Ascorbic acid 2-phosphate sesquimagenesium salt (sc228390, Santa Cruz Biotechnology, Santa Cruz, CA, USA), 3.33 ml 75 mg/ml Human Recombinant Albumin (A0237, Sigma-Aldrich, St Louis, MO, USA), 2.5 mL 1 M lactate in 1 M HEPES (L(+)Lactic acid sodium (L7022, Sigma-Aldrich)), and 5 ml Penicillin/Streptomycin] on Days 14, 16, and 18. A total of 1.5 million cardiomyocytes were re-plated per well of a six-well plate on Day 20 in Cardiomyocyte Maintenance Media (500 mL DMEM without glucose [A14430-01, ThermoFisher Scientific], 50 mL FBS [S1200-500, Genemate], 990 mg Galactose [G5388, Sigma-Aldrich], 5 mL 100 mM sodium pyruvate [11360\u2013070, ThermoFisher Scientific], 2.5 mL 1 M HEPES [SH3023701, ThermoFisher Scientific], 5 mL Glutamax [35050\u2013061, ThermoFisher Scientific], 5 mL Penicillin/Streptomycin). iPSC-CMs were matured in culture for a further 10 days with Cardiomyocyte Maintenance Media replaced on Days 23, 25, 27, 28, and 30.\n\nOn Day 25, iPSC-CMs were transferred to a 10% oxygen environment (representative of in vivo levels) in an oxygen-controlled incubator (HERAcell 150i CO2 incubator, ThermoFisher Scientific). From Day 27 onwards, iPSC-CMs were pulsed at a voltage of 6.6 V/cm, frequency of 1 Hz, and pulse frequency of 2 ms using an IonOptix C-Dish and C-Pace EP Culture Pacer to further mature the cells and synchronize beating.\n\n### Flow cytometry\n\nPurity of the cardiomyocyte cultures was assessed ~Day 30 as previously described (Ward and Gilad, 2019). Briefly, cells were stained with Zombie Violet Fixable Viability Kit (423113, BioLegend), and PE Mouse Anti-Cardiac Troponin T antibody (564767, clone 13\u201311, BD Biosciences, San Jose, CA, USA), and analyzed on a BD LSRFortessa Cell Analyzer together with negative control samples of iPSCs, and iPSC-CMs that are incubated without the troponin antibody, or without either the troponin antibody or viability stain.\n\n### Hypoxia experiment\n\nOn Day 31/32, iPSC-CMs were subjected to the hypoxia experiment. At time\u00a0=\u00a00, condition A samples remained at 10% O2 (normoxia), while samples for conditions B, C and D were transferred to an incubator set at 1% O2 (hypoxia). After 6 hr, conditions A and B were harvested, while plates C and D were returned to normoxic oxygen conditions. Plate C was harvested 6 hr following the hypoxic treatment, and Plate D was harvested 24 hr following the hypoxic treatment. Oxygen levels, experienced by the cells in culture, were measured in cultures from each experimental batch using an oxygen-sensitive sensor (SP-PSt3-NAU-D5-YOP, PreSens Precision Sensing GmbH, Regensburg, Germany), optical fiber (NWDV29, Coy, Grass Lake, MI, USA), and oxygen meter (Fibox 3 Transmitter NWDV16, Coy).\n\n### Material collection\n\n#### Cell culture media for ELISA and cytotoxicity assays\n\nAliquots of cell culture media from each experiment were centrifuged at 10,000 rpm for 10 min at 4\u00b0C to remove cellular debris. The supernatant was stored at \u221280\u00b0C until further use.\n\n#### Nuclei for ATAC-seq\n\nCardiomyocytes from each well of a six-well plate were washed twice with cold PBS on ice before collection by manual scraping in 1.5 ml PBS. A total of 200 \u03bcl of cells were pelleted by centrifugation at 500 g for 5 min. Cell pellets were re-suspended in 50 \u03bcl cold ATAC-seq lysis buffer (10 mM Tris-HCl pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% Igepal CA630, dH2O). Nuclei were pelleted by centrifugation at 500 g for 5 min at 4\u00b0C. Nuclei were re-suspended in 50 \u03bcl transposition mix (25 \u03bcl 2xTD buffer, 2.5 \u03bcl Tn5 transposase, 22.5 \u03bcl nuclease-free dH2O) from the Nextera DNA sample kit (FC-121\u20131031, Illumina). The transposition reaction was performed at 37\u00b0C for 30 min. Transposed DNA was purified with Qiagen MinElute Kit (28004, Qiagen, MD, USA), re-suspended in 12 \u03bcl elution buffer, and stored at \u221220\u00b0C.\n\n#### Cell pellets for RNA-seq and DNA methylation arrays\n\nCells from each well of a six-well plate were washed twice with cold PBS on ice before collection by manual scraping in 1.5 ml PBS. Cells were pelleted by centrifugation at 7,000 rpm for 8 min at 4\u00b0C, flash-frozen and stored at \u221280\u00b0C.\n\n### RNA/DNA extraction\n\nRNA and DNA were extracted from the same frozen cell pellets using the ZR-Duet DNA/RNA MiniPrep kit (D7001, Zymo, CA, USA) according to the manufacturer\u2019s instructions. All four conditions from three or four individuals were extracted in the same batch. RNA samples had a median RIN score of 8.5 with similar median scores across conditions (A\u00a0=\u00a09.4, B\u00a0=\u00a08.7, C\u00a0=\u00a09.1, D\u00a0=\u00a09.2) (Supplementary file 1, Figure 2\u2014figure supplement 1). All samples had RIN scores greater than eight except for two samples: 18852A RIN\u00a0=\u00a06, 18852D RIN = not determined. 18852A is an outlier sample in Figure 2\u2014figure supplement 2. Given that both of these samples come from an individual for which we have replicate samples, these particular samples were not selected for the differential expression analysis and eQTL analysis that are only able to handle one biological replicate.\n\n### RNA-seq library preparation\n\nWe prepared RNA-seq libraries from 15 individuals, and three replicates from three individuals (18852, 18855, 18511). A toal of 500 ng of RNA were used to prepare sequencing libraries using the Illumina TruSeq RNA Sample Preparation Kit v2 (RS-122\u20132001 and \u22122002, Illumina). Libraries were pooled into five master mixes containing 12 or 16 samples. Each pool was sequenced 50 bp, single-end on the HiSeq2500 or HiSeq4000 according to the manufacturer\u2019s instructions.\n\n### DNA methylation array\n\nWe measured DNA methylation in 13 of the 15 individuals we collected gene expression data for (we do not have data from any condition for individuals 18870 and 19116; Supplementary file 1). As we did for the RNA-seq data, we collected three replicates for three individuals; except for individual 18852 which only had two replicates. Nine chips (eight samples per chip) with 60\u20131000 ng DNA were bisulfite-converted and processed on an Illumina Infinium MethylationEPIC array at the University of Chicago Functional Genomics facility.\n\n### ATAC-seq\n\nWe performed ATAC-seq in 14 of the 15 individuals we had gene expression data for (we do not have data from any condition for individual 18858; Supplementary file 1). One sample was collected for each individual and condition. ATAC-seq libraries were prepared using the Illumina Nextera DNA sample kit. Libraries were amplified for 10\u201316 cycles depending on the amplification rate of each library. Each library was amplified in a PCR reaction containing 10 \u03bcl DNA, 10 \u03bcl dH2O, 15 \u03bcl NMP (PCR master mix), 5 \u03bcl PPC (PCR primer cocktail), 5 \u03bcl index N5,\u00a0and\u00a05 \u03bcl index N7. PCR conditions were set at 72\u00b0C for 5 min, 98\u00b0C for 30 s, 98\u00b0C for 10 s, 63\u00b0C for 30 s, 72\u00b0C for 1 min, repeat steps 3\u20135 4x and hold at 4\u00b0C. The number of cycles per library was determined using a qPCR side reaction as described in Buenrostro et al., 2013. Libraries were purified using Agencourt AMPure XP beads (A63880, Beckman Coulter, IN, USA), and bioanalyzed to determine library quality. Twelve or 16 samples were pooled together to generate four master mixes. Each master mix was sequenced 50 bp paired-end on the HiSeq4000 according to the manufacturer\u2019s instructions.\n\n### Lactate dehydrogenase activity assay\n\nLactate dehydrogenase activity (LDH) was measured in 5 \u03bcl cell culture media using the Lactate Dehydrogenase Activity Assay Kit (MAK066, MilliporeSigma, MO, USA) according to the manufacturer\u2019s instructions. Each sample was assayed in triplicate. LDH activity was measured as the difference in absorbance prior to the addition of the substrate, and 10 min after the initiation of the enzymatic reaction, calculated relative to a standard curve. Measurements are standardized relative to A, and reported as A (A-A), B (B-A), C (C-B) and D (D-B).\n\n### BNP ELISA\n\nA total of 125 \u03bcl of cell culture media was assayed to quantify the level of secreted BNP using the Brain Natriuretic Peptide EIA kit (RAB0386, MilliporeSigma). Each sample was assayed in duplicate on two 96-well plates. BNP levels were quantified relative to a standard curve using 4- and 5-parameter logistic models using the R package drc. Measurements are standardized relative to A, and reported as A (A-A), B (B-A), C (C-B), and D (D-B).\n\n### RNA-seq analysis\n\nReads were aligned to hg19 using subread align (Liao et al., 2013). The mapped reads were then reprocessed to reduce reference bias for downstream analyses using the WASP pipeline (van de Geijn et al., 2015). Briefly, reads overlapping polymorphisms segregating in our population were remapped to the genome using the true read, and a version of the read with the alternative allele. Only reads that mapped uniquely to the same locations with both possible alleles were kept. The median number of reads across conditions was similar (A: 34,353,716; B: 33,493,298; C: 33,883,532; D: 38,147,083). The number of filtered reads mapping to genes was quantified using featureCounts within subread (Liao et al., 2014). We obtained measurements for 19,081 genes. Sample 18852A was an outlier when considering read count correlations between pairs of samples, and was therefore removed prior to subsequent analyses.\n\n#### Differential expression analysis\n\nWe selected autosomal genes for downstream analysis (18,226). Log2-transformed counts per million were calculated (Robinson et al., 2010), and genes with a mean log2cpm\u00a0<\u00a00 were excluded. We used the fact that we have replicate data from three individuals to remove unwanted variation in our data. We used the RUVs function in the RUVSeq package in R (Risso et al., 2014) to identify such factors. By manual inspection, our data segregated by individual or condition after correction with four factors. For the differential expression analysis, we excluded sample replicate one to avoid the outlier sample and randomly selected replicate two, instead of replicate three, for individuals with replicate samples. We used the RUV factors as covariates in our differential expression analysis using the TMM-voom-limma pipeline (Law et al., 2014; Robinson et al., 2010; Smyth, 2004). We used fixed effects for each condition (A, B, C, D), the RUVs factors as covariates, and a random effect for individual, which was implemented using duplicateCorrelation. Genes with a Benjamini and Hochberg FDR\u00a0<\u00a00.1 are classified as differentially expressed (Benjamini and Hochberg, 1995).\n\n#### Gene expression trajectory analysis\n\nTo identify response genes, we used the Cormotif package in R (Wei et al., 2015) to jointly model pairs of tests. We used TMM-normalized log2cpm values as input and considered the following pairs of tests: A vs B, B vs. C, and B vs. D to determine which genes are changing their expression during the course of the experiment. The best fit was determined to correspond to two correlation motifs or clusters using BIC and AIC. We classified genes as response genes if the probability of differential expression between conditions was\u00a0>0.5 in all pairs of tests.\n\n#### eQTL identification\n\nTo map eQTLs, we analyzed the same samples considered in the differential expression analysis. Given the sample size in this study, we utilized the combined haplotype test (CHT) to identify eQTLs (van de Geijn et al., 2015). This test models both allelic imbalance and total read depth at a region to identify QTLs. We require 50 total counts and 10 allele-specific counts for each gene, and tested variants 25 kb upstream and 25 kb downstream of the TSS, resulting in 1,040,874 shared tests (A: 1,215,476; B: 1,211,099, C: 1,224,612, D: 1,201,078). As previously reported, we found that null p-values for the CHT were not calibrated in our data. To calibrate the p-values, we estimated the null distribution of the CHT by permuting the data 100 times and fitting a Beta distribution to the permuted p-values for each SNP-gene pair (previously proposed by Delaneau et al., 2017; Ongen et al., 2016). We then computed an adjusted p-value for each SNP-gene pair by taking the CDF of the fitted Beta distribution, evaluated at the reported CHT p-value.\n\nTo call significant eQTLs, we estimated q-values for the set of adjusted p-values for each phenotype, and took tests with q\u00a0<\u00a00.1. The number of eGenes in each condition was determined by taking the most significant SNP-gene association in each condition (i.e. the top SNP). We defined dynamic eQTLs as either: (1) significant only in A (q<0.1 in A and permutation-adjusted p>0.15 in B and C and D; suppressed eQTL); (2) significant in at least one of B, C, or D (q\u00a0<\u00a00.1) and not nominally significant in A (adjusted p>0.15; induced eQTL).\n\n#### Power analysis\n\nFor QTL mapping, we assume a linear model\n\n$$\ny_{i}=x_{i}\\beta+\u03f5_{i}\u03f5_{i}\u223c\ud835\udca9(0,\\sigma^{2})\n$$\n\nwhere $y_{i}$ denotes the phenotype of individual $i$ and $x_{i}$ denotes the genotype of individual $i$ at a single SNP of interest. We estimate an effect size $\\beta^$\n\n$$\n\\beta^\u223c\ud835\udca9(\\beta,\\frac{\\sigma^{2}}{n})\n$$\n\nwhere $n$ is the sample size. Let $\\lambda=\\beta/\\sigma$ be the standardized effect size. Then,\n\n$$\n\\lambda^\u223c\ud835\udca9(\\lambda,\\frac{1}{n})\n$$\n\nand\n\n$$\nPower(\\lambda,\\alpha,n)=\u03a6\u03a6^{-1}(\\alpha/2)+\\lambda\\sqrt{n}\n$$\n\nwhere $\\alpha$ denotes the significance level and $\u03a6$ denotes the standard Gaussian CDF. To simplify the analysis, we consider $\\alpha=0.05/20000=2.5\\times10^{-6}$ (i.e. Bonferroni correction; this is equivalent to controlling the FDR when all tests are null, and is conservative otherwise). Assume there is a single causal variant. Then, the phenotypic variance explained is:\n\n$$\nh^{2}=\\frac{\\lambda^{2}}{\\lambda^{2}+1}\n$$\n\nWe defined a dynamic eQTL as either significant only in A, or significant (after Bonferroni correction, in this analysis) in one of B, C, or D and not significant in A. To estimate the false-positive rate of dynamic eQTL calling, we asked what was the probability of a SNP passing this definition, assuming the standardized effect size $\\lambda$ was identical in all four conditions. We then computed phenotypic variance explained, power to detect an eQTL, and false-positive rate to call a dynamic eQTL for every choice of standardized effect size $\\lambda$.\n\n### Overlapping response genes and eGenes with existing gene sets\n\n#### Gene ontology analysis\n\nGene set enrichment analysis was performed on response genes, and a background set of all expressed genes using the DAVID genomic annotation tool (Huang et al., 2009a; Huang et al., 2009b). GO Terms related to Biological Processes were selected, and those with a Benjamini-Hochberg controlled FDR\u00a0<\u00a00.05 were designated as significantly enriched. Each of the five significantly enriched processes relates to transcription (\u2018DNA-templated transcription\u2019, \u2018DNA-templated regulation of transcription\u2019, \u2018DNA-templated negative regulation of transcription\u2019, \u2018negative regulation of transcription from RNA polymerase II promoter\u2019, \u2018positive regulation of transcription from RNA polymerase II promoter\u2019). The most significantly enriched GO terms related to Molecular Functions include \u2018transcription factor activity, sequence-specific DNA binding\u2019, \u2018nucleic acid binding\u2019 and \u2018DNA binding\u2019.\n\n#### Transcription factors\n\nA list of 1,637 annotated human TFs was obtained from Lambert et al., 2018, and intersected with our gene sets.\n\n#### GTEx eQTLs\n\nThree hundred and sixty-seven dynamic eSNPs were interrogated for overlap with eQTL data from left ventricle heart tissue and 49 other tissues assayed in GTEx v8 (http://www.gtexportal.org). A total of 326 dynamic eSNPs were tested in GTEx. We determined whether each dynamic eSNP was identified as a significant eQTL in left ventricle heart tissue or any other tissue. To define shared eSNPs we identified the 61 eGenes present in all four conditions. We then identified the most significant eSNP for that gene in condition A and determined whether this SNP was significantly associated with the expression of that gene in conditions B, C, and D. This yielded 20 shared eSNPs, 19 of which were tested by the GTEx consortium. We compared our dynamic eQTL and shared eQTL effect sizes to the effect size in GTEx left ventricle heart tissue. In this analysis, for the dynamic eQTLs we selected the condition with the largest effect size, and for the shared eQTLs we used the effect size in condition A to compare to the GTEx effect size.\n\n### ATAC-seq analysis\n\nPaired-end sequencing reads were aligned to hg19 using bowtie2 with default settings (Langmead and Salzberg, 2012). Reads were filtered using Picard Tools (https://broadinstitute.github.io/picard/) to remove duplicate reads, and reads mapping to the mitochondrial genome. Reads were then remapped using the WASP pipeline as described above. We retained a similar median number of reads across conditions (A: 28,998,060; B: 33,662,261; C: 30,161,640; D: 34,534,416). Across conditions, there is no significant difference in the number of mapped reads, number of regions identified, or fraction of reads mapped to open chromatin regions (Figure 4\u2014figure supplement 2A\u2013C). All libraries, across conditions, show the expected fragment size distribution, enrichment of reads at transcription start sites (TSS), and footprints at well-defined CTCF motifs (Figure 4\u2014figure supplement 2D\u2013F). Correlation analysis of read counts between pairs of samples revealed clustering by individual and condition (Figure 4\u2014figure supplement 3). As expected, the correlation of read counts between samples at the 10,633 regions overlapping the TSS is higher than the correlation across all regions (median rho\u00a0=\u00a00.83 vs. 0.56). Pairs of samples from the same condition are marginally more correlated in their accessibility profiles than pairs of samples across all conditions (median rho\u00a0=\u00a00.84 vs. 0.83 at the TSS).\n\n#### Identification of accessible chromatin regions\n\nTo generate a unified list of regions with accessible chromatin across conditions and samples, we first used MACS2 (Zhang et al., 2008) to identify peaks within each sample independently. Next, we used BEDtools (Quinlan and Hall, 2010) with the multiIntersectBed function to identify overlapping peaks within each condition separately. Within each condition, we retained peaks with support from more than three individuals and used the mergeBed function to create a condition-specific consensus. We then combined and merged the bed files across the four conditions to make a final consensus file containing all the filtered accessible regions. The number of reads mapping to accessible chromatin regions was quantified using featureCounts within subread (Liao et al., 2014).\n\n#### Identification of differentially accessible regions (DARs)\n\nThe 128,673 open chromatin regions associated with count data were filtered to include only those regions on the autosomes, and those which had mean log2cpm values\u00a0>\u00a00 for each region. First, to identify differentially accessible regions we used the same limma framework described above for the RNA-seq data. To test for differences between conditions, a linear model with a fixed effect for condition was used together with a random effect for individual. We did not identify any significantly differentially accessible regions with a Benjamini and Hochberg FDR\u00a0<\u00a00.1. To identify regions with small effect size differences between conditions, we used an adaptive shrinkage method implemented in the ashr package in R (Stephens, 2017). We used the regression estimates (regression coefficients, posterior standard errors, and posterior degrees of freedom) generated by limma to calculate a posterior mean (shrunken regression coefficients), FDR, and False Sign Rate (FSR, probability that the sign of the effect size is wrong). We considered regions to be differentially accessible at FSR\u00a0<0.1. We denote regions that are not differentially accessible as constitutively accessible regions.\n\n### Overlap of DARs with genomic features\n\n#### TSS\n\nTranscription start sites were obtained from the UCSC Table Browser (http://genome.ucsc.edu/cgi-bin/hgTables) using \u2018txStart\u2019 from Ensembl genes (Karolchik et al., 2004). TSS were defined based on the TSS of the 5\u2019 most transcript on the sense strand and 3\u2019 most transcript on the anti-sense strand. TSS regions, and subsequent genomic features, were intersected with DARs and constitutively accessible regions requiring a 1 bp overlap using bedtools intersect (Quinlan and Hall, 2010).\n\n#### Histone marks\n\nWe obtained histone mark data (.bed files) for human heart tissue from the ENCODE consortium (ENCODE Project Consortium, 2012; Davis et al., 2018) ENCODE portal, (https://www.encodeproject.org). We selected H3K4me3 (Experiment ENCSR181ATL), H3K4me1 (Experiment ENCSR449FRQ), H3K36me3 (Experiment ENCSR799KLF), H3K27me3 (Experiment: ENCSR613PPL), and H3K9me3 (Experiment ENCSR803MVC) ChIP-seq data from heart left ventricle tissue from a 51-year-old female individual (Biosample ENCBS684IAD).\n\n#### Transcription factor binding locations\n\nWe obtained ChIP-seq data for the hypoxia-responsive factors HIF1\u03b1 and HIF2\u03b1 assayed in the MCF-7 breast cancer cell line (Sch\u00f6del et al., 2011), and E2F4 in the GM06990 lymphoblastoid cell line (Lee et al., 2011). Genome co-ordinates of the 356 HIF1\u03b1-, 301 HIF2\u03b1- and 16,245 E2F4-bound regions were converted from hg18 to hg19 using the liftOver tool in the Galaxy platform (http://galaxyproject.org/; Afgan et al., 2018).\n\n#### Motif enrichment analysis in DARs\n\nWe obtained sequences for all accessible regions and differentially accessible regions using the Galaxy platform (Afgan et al., 2018). We used the MEME-ChIP tool within The MEME Suite (Bailey et al., 2009; Machanick and Bailey, 2011) in Differential Enrichment mode to identify motifs differentially enriched in DARs compared to all accessible regions using a hypergeometric distribution.\n\n#### TEs\n\nWe obtained repeat annotations from the RepeatMasker track (Jurka, 2000; Smith et al., 2010) from the UCSC Table browser (Karolchik et al., 2004). We intersected the Repeatmasker track with our accessible regions and reported those elements where 50% of their length overlaps a DAR or constitutively accessible region. We stratified TEs by TE class: LINE, SINE, DNA, and LTR, and then by TE family and type within the SINE class.\n\n#### CpG islands\n\nWe obtained CpG island annotations from the UCSC Table Browser, and overlapped these regions with DARs and constitutively accessible regions.\n\n### caQTL identification\n\nThe caQTLs were identified in the same manner as described for the eQTLs. However, in the caQTL analyses, we limited tested SNPs to those falling within the 128,672 accessible regions, as opposed to testing variants within 25 kb of the region as we did for eQTLs. Dynamic caQTLs were identified as for dynamic eQTLs.\n\n### DNA methylation analysis\n\nTo allow for accurate quantification of DNA methylation levels we removed probes overlapping SNPs with a minor allele frequency of\u00a0>0.1, and only retained probes with a detection p-value of\u00a0>0.75 across samples. Beta-values (ratio of methylated probe intensity and overall probe intensity, and bounded between 0\u00a0and\u00a01) were quantile normalized using lumiN, and, when appropriate, converted to M-values (log2 ratio of intensities of methylated probe versus unmethylated probe) using lumi (Du et al., 2008).\n\nThe methylation level of CpGs coincides with the expected distribution based on their annotated genomic location that\u00a0is low levels of DNA methylation in CpG islands, and higher levels in CpG island shores, and CpG island shelves respectively (Figure 6\u2014figure supplement 1). Correlation analysis across all pairs of samples, including replicate samples, reveals clustering primarily by individual rather than condition (Figure 6\u2014figure supplement 2).\n\nTo measure the DNA methylation level at gene set promoters, we selected CpGs 200 bp upstream of the TSS (TSS200 defined on the array). We considered all CpGs when overlapping with DARs.\n\n#### Identification of differentially methylated CpGs (DMCpGs)\n\nDifferentially methylated CpGs were identified using the same limma framework as described for the RNA-seq data. Analysis was run using both Beta-values and M-values.\n\n### Variance partition of three molecular phenotypes\n\nTo identify the proportion of variance explained by individual, condition and replicate in the gene expression, chromatin accessibility, and DNA methylation data, we used a linear mixed model with a random effect for all of the variables. The variance was normalized to sum to one and the proportion of variance attributed to each variable was calculated at each locus. We used a t-test to compare the mean proportion of variance explained by the same variable between data types.\n\n### Integration with GWAS-implicated variants\u00a0and\u00a0genes\n\nWe intersected the Reference SNP cluster ID of our dynamic QTLs with the 158,654 SNPs in the NHGRI-EBI GWAS Catalog available from the UCSC Table Browser (Buniello et al., 2019) in August 2019.\n\nWe also considered the \u2018mapped genes\u2019 results from GWAS from thee relevant traits: myocardial infarction (EFO_0000612, 89 genes), heart failure (EFO_0003144, 164 genes) and stroke (EFO_0000712, 255 genes), downloaded from the NHGRI-EBI GWAS Catalog in August 2019. Gene lists were intersected with our response eGenes.\n\nFull GWAS summary statistics for CAD and MI were obtained from the CARDIoGRAMplusC4D Consortium (Stitziel et al., 2016; Nikpay et al., 2015). We tested if the lead eSNP of the dynamic eQTLs, and all significant eQTLs in each condition is associated with CAD or MI. We created locus zoom plots in each condition by plotting the -log10 p-values of the GWAS and eQTL SNPs in a 1 Mb window around eSNPs. We calculated LD from the YRI population using the LDlink program (Machiela and Chanock, 2015). We used the LDmatrix function to generate the LD matrix plots choosing all tested SNPs 5 kb upstream and downstream from the eSNP or lead GWAS variant. To generate the R2 value and p value of the LD between the eSNP and GWAS variant we used the LDpair function.\n\n### Data access\n\nAll RNA-seq, ATAC-seq and DNA methylation data have been deposited in the Gene Expression Omnibus (https://www.ncbi.nlm.nih.gov/geo/) under accession number GSE144426.\n",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "e8140791-ec24-4fbd-8c62-f908b826dedf",
+      "submission_id": "219659c5-7494-451f-b111-8ebc86a4d02b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Stegle, European Molecular Biology Laboratory, European Bioinformatics Institute United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57345.sa1](https://doi.org/10.7554/eLife.57345.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript describes an in vitro system to study inter-individual variation of transcriptional and epigenetic responses to hypoxia using iPSC derived cardiomyocytes. Changes in gene expression are found without changes in chromatin accessibility or methylation, providing insight into key questions about the necessity of epigenetic changes for changes in gene expression. It also identifies regions of the genome responsible for context dependent-changes in gene expression.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dynamic effects of genetic variation on gene expression revealed following hypoxic stress in cardiomyocytes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission.\n\nBoth reviewers agree that this manuscript is in principle appropriate for publication in eLife without any further experimentation; however, they both also raise a number of concerns about the data analysis and presentation that would need to be addressed satisfactorily before we can consider this work further. Although the typical practice for eLife is to provide authors with a single consolidated review, I felt it would be more beneficial in this case to provide the two reviews as is. They are generally consistent and both explain why they recommend the changes they do in detail.\n\nReviewer #2:\n\n1) The authors present the range of cardiomyocyte purity. However, I think it would be helpful for this data to be presented in a table. Further, how do the purities correlate between the individual at different time points collected? Could some of the eQTLs identified really be a result of the variation in purity of the differentiations? Investigation and results regarding this possibility would be helpful if included in the manuscript.\n\n2) The inferences made in this paper about the identification of dynamic eQTLs (and their absence) for a given loci rests on the assumption that the power to detect an eQTL is the same in every cell-type by condition. This is addressed in subsection \u201cDynamic eQTLs are revealed following hypoxia\u201d, where it is clearly show (and acknowledged) that this is not the case. To avoid this problem the authors chose a lenient secondary cut-off at the point where p-values deviate from uniformity. Firstly, it would be helpful to formally test for deviation of uniformity here (rather than appearance on a graph). More importantly, utilising the same p-value threshold when the distribution of p-values is different will lead to variation in the false positive / false negative rates between conditions. This would lead to bias in the identification of dynamic eQTLs, as variation in eQTL detection is a function of the FP/FN rates. Can this be addressed, and it clearly demonstrated that the comparison between conditions is based on the same ability to detect a true eQTL?\n\n3) In subsection \u201cDynamic eQTLs are revealed following hypoxia\u201d, the authors state that the genes that were not eQTLs in any condition were uniform. However, the figures suggest significant skewing to more significant p-values. Please test for the uniform distribution with a chi-squared test. The authors suggest that they would expect the eQTLs identified in one condition to be uniform in another condition. This relies a the huge assumption that the largest contributing factor to significant eQTLs in each condition is the condition itself, not the cell type and that there will not be a significant number of eQTLs that are consistent across all conditions. However, the authors have provided no evidence to support this claim or this assumption. Please provide the requisite evidence to support these claims and assumptions.\n\n4) Related to this, in paragraph three, it is indicated that based on the FDR calculations, half of the dynamic eQTLs that they identified are not truly dynamic. However, given this is the main conclusion of the paper, it really would be beneficial if some additional work could be done to ascertain the true from false dynamic eQTLs. Particularly if this work is going to be used for any translational research. One option would be to create a null distribution of the effect sizes for genes in each condition and test for enrichment of the \"dynamic eQTLs\" across the different conditions to test demonstrate whether they are actually identifying truly dynamic eQTLs. Further, I think different FDR cutoffs would have been more appropriate for identifying truly dynamic eQTLs since that is the main focus of the manuscript.\n\n5) The analysis of the GTEx and GWAS overlap is unclear and would benefit from some more careful explanations. Reading this section, I had the following concerns:\n\ni) How were the 14 tissue types randomly selected? And why not include all GTEx tissue types?\n\nii) How was overlap between dynamic eQTL and GTEx eQTL determined? Many eGenes are regulated by different eQTL \u2013 was the overlap based ona. Rank test of p-values between datasets for example? That would help provide confidence it is a true shared effect rather than unlinked eQTL.\n\niii) Are the allelic effects in the same direction?\n\niv) Why perform two stage comparison between eQTL and GWAS variants from all traits, then cardiac traits? Was multiple testing corrected for?\n\nv) How do you rule out whether the overlap is just by chance, pleiotropy, linkage, or a causal relationship? These different scenarios have significant impact on the conclusions that are drawn. As it currently stands, it is implied that the overlap is a shared causal relationship.\n\n6) One of the premises of this work is the statement made at the end of paragraph one of the Introduction, where the authors conclude that because the majority GTEx eQTLs are shared across tissues, they probably do not contribute to disease in tissue-specific manners. However, this statement makes two significant assumptions that are not addressed. 1) They assume that the downstream effects and signalling are the same regardless of cell type given they have the same eQTL. However, because different genes and pathways are activated in different tissues, this assumption may not hold true across all tissues. 2) They ignore the ascertainment bias associated with large additive cis-eQTL (which are more likely to overlap between tissues). The mean proportion of expression h2 that can be found to overlap between tissues is 0.02 (2%) in GTEX. The assumption that the remaining 98% are shared between tissues isn't supported by evidence from trans-eQTL mapping or single cell eQTL analyses. In my opinion, clarifying this statement in the Introduction as justification for the work would be beneficial.\n\n7) I found that manuscript in general to be difficult to read and easily interpret the analysis conducted, and conclusions based on specific results. I would suggest a careful eye on editing a review would be very helpful. But here are a few points that I noted specifically\n\ni) The notation used for supplementary figures and tables presented as \"Figure X \u2013 Supplement Y\". It would help to refer to the supplementary figures as \"Supplementary Figure X\" instead.\n\nii) Subsection \u201cDynamic eGenes are enriched for response genes and transcription factors\u201d \u2013 it is not always entirely clear whether the authors are referring to transcription factor genes or transcription factors regulating the genes. You could include the word \"gene\" following \"transcription factor\" throughout the paragraph.\n\niii) Defining clearly what response genes and why they are important.\n\niv) Subsection \u201cPotential limitations of our model\u201d states that the power analysis indicates a 6% power to detect 38% heritability. Firstly, I assume, but it is not clear, that the test is against H0: h2=0? I understand the maths behind this, but that seems a really odd way of explaining power. Why not give a power curve?\n\nv) How are the genomic features tested for enrichment of DARs?\n\nvi) Subsection \u201cGenomic features associated with differentially accessible regions (DARs)\u201d paragraph two and Discussion paragraph four are confusing and unclear. It is hard to understand what the has been done.\n\nvii) Throughout the manuscript, it is difficult to identify which timepoint were used for each assay. Please clarify this when introducing a new assay. Altering Figure 1 to make this clear graphically would help as well.\n\n8) Some of the RIN numbers in RIN table are very low (i.e. 0 for 18852 in condition D). It's not clear if these samples were included in the analyses, but if they were some justification is needed. I worry about impact on the analysis, as essentially it would induce bias in those samples.\n\n9) The section \"DNA methylation levels are largely stable following hypoxia and re-oxygenation\" is confusing and difficult to read. It is first stated that no DMCpGs were identified and then later stated that they were identified.\n\n10) In subsection \u201cChromatin accessibility changes following hypoxia and re-oxygenation\u201d, it is stated that ATAC-seq reads were selected that did not show allelic mapping biases. However, later testing for differential accessible regions. This filtering step would remove the ability to effectively identify differentially accessible regions with this step. Could you please either explain the reasoning for removing allelic mapping biases at this step, and/or explain why it would not impact differential accessibility analyses downstream.\n\n11) It is concluded that the data indicate that the \"underlying DNA sequence features can affect their epigenetic profile\". However, I do not think that the results demonstrate this. They only demonstrate differential methylation in differentially accessible regions which are themselves not associated with genetic variants. I would suggest altering this sentence by removing \"that the underlying DNA sequence features of these regions can affect their epigenetic profile\"\n\nReviewer #3:\n\nThe authors established an in vitro system to study inter-individual variation of transcriptional and epigenetic responses to hypoxia using iPSC derived cardiomyocytes. Despite the modest sample size, they discovered more than a thousand eQTLs in total, of which 367 are dynamic eQTLs modulating the transcriptional response to hypoxia with implications for disease susceptibility.\n\nAlthough the analyses demonstrated in the manuscript are solid and the results are reliable, authors failed to present their results effectively. I would recommend the authors to rewrite the paper to increase the accuracy and readability in general (as I suggested below).\n\nIn addition, I have one particular concern regarding the following important (but vague) claim presented in this paper, that is the transcriptional response to hypoxia is not mediated through epigenetic changes. Although the authors repeated the claim multiple times throughout the paper, it is hugely confounded by the power to detect epigenetic variations between conditions/individuals (i.e., DARs, caQTLs and DMCpGs). If the authors would keep the claim, they need to address the power issue appropriately.\n\nHere are my specific comments:\n\n1) Figure 1A should explain the overview of the experiment in more detail. There are three replicates for the three of 15 donors (mentioned in the main text) which are hidden in the panel. It is also nice to combine panel A and D in one panel to illustrate the whole experiment. According to the main text, one donor was dropped in ATAC-seq and two donors were dropped in methylation data which should also be shown in the panel.\n\n2) It would be nice to summarise the 4 x 21 RNA-seq samples in the main figure. The authors used a linear mixed model for differential expression (DE) analysis. I'm wondering if the model can be used to perform a variance components analysis to decompose the total variance (for each gene) into \u201ccondition\u201d, \u201cindividual\u201d, \u201creplication\u201d, and residual variances (where the condition and replication are also treated as random effects). The estimated variance parameters across all genes are then summarised by a boxplot or similar where the residual variance is standardised as 1.0. The authors could repeat the analysis for ATAC-seq and methylation data to compare the difference of explained variances between molecular phenotypes. The analysis will provide clear interpretation on why detectable DARs, caQTLs and DMCpGs are so few. The similar analysis was performed e.g., in (Kilpinen et al., 2017).\n\n3) Figure 2H is not so informative. Instead, the authors could extend the heatmap in Figure 2F to show how much of eGenes are classified into baseline eGenes, dynamic eGenes and shared eGenes by showing all genes with eQTLs at least in one condition. The authors could also add additional columns next to the heatmap showing which eGenes are response genes and/or transcription factors to support the enrichment analysis in the section \u201cDynamic eGenes are enriched for response genes and\u2026\u201d.\n\n4) The DE analysis result is frequently used in the manuscript, but there is no summary data shown in the main text (e.g., volcano plots, DE genes shared/not shared with different conditions, etc.). It would be ideal to have an independent figure for DE analysis. Currently, Figure 2A-C are the result of DE analysis which are inconsistent with the figure title (i.e., \u201cHundreds of dynamic eQTLs are revealed\u2026\u201d).\n\n5) How many dynamic eGenes are overlapping with the baseline eGenes? The Chi-square test performed in the section \u201cDynamic eGenes are enriched for response genes and transcription factors\u201d seems inappropriate because the authors double-count the same genes in baseline eGenes as the background distribution. They need to subtract dynamic eGenes from the baseline eGenes to perform a proper Chi-square test.\n\n6) The authors performed the enrichment analysis of transcription factors (TFs) in dynamic eGenes which could be confounded by response genes, because dynamic eGenes are likely to be response genes. In addition, even if dynamic eGenes are enriched with TFs, what is the biological interpretation? Why do regulatory variants affect TF dynamic eGenes more than non-TF dynamic eGenes?\n\n7) It is often the case that the main figures are used to show anecdotal examples of biological statements raised in the main text and important data/results are hidden in the supplementary figures. The main figures must be used to support the author's claims in general (without cherry-picking an example gene). For example, the authors stated \u201cmost DARs have returned to baseline levels of accessibility by the first re-oxygenation condition.\u201d with just numbers of DARs and the FOXO1 example which do not strongly support the claim. The authors should perform and highlight global analyses to support each claim from different angles. In fact, the claim was partly supported by the supplementary figure 3 (supplement 4A-C). Therefore, the authors first consider rearranging the figures to better support each claim made in the main text. Then, they can clarify which analysis is needed to make a strong statement.\n\n8) The statement \u201cThese results suggests that gene expression changes\u2026\u201d was supported only by a limited number of DARs and not totally addressed yet. Recently, the \u201cgene activity score\u201d was proposed in the single-cell ATAC-seq analysis to overcome the sparseness of chromatin data (Granja et al., 2020). I'm wondering if it improves the power to detect DARs in the paper. This quantification also allows the authors to easily colocalise DARs with eGenes/response genes to prove (or disprove) the statement.\n\n9) It is very surprising that CHT found only tens of caQTLs, while it mapped more than a thousand eQTLs. The authors should comment on that. If the authors use only variants overlapping with the accessibility region, does the power to detect caQTL increase? It seems 25Kb cis-region is too broad.\n\n10) The statement \u201cChanges in DNA methylation are therefore\u2026\u201d is hugely confounded by the power to detect DMCpGs with the higher noise rate in DNA methylation arrays. It is not conclusive with the modest sample size.\n\n11) The authors should perform a colocalisation analysis (Giambartolomei et al., 2014) if GWAS summary statistics are available. If not, the authors are still able to calculate linkage disequilibrium (LD) between the GWAS lead variant and eQTL lead variant from CHT to make sure the GWAS locus and the eQTL are reasonably colocalised. The authors should show locuszoom plots in conjunction with boxplots in Figure 6 to demonstrate both the magnitude of statistical significance of eQTLs and LD (r2 index) with GWAS lead variants.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Dynamic effects of genetic variation on gene expression revealed following hypoxic stress in cardiomyocytes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nAs stated by the reviewers in response to the first submission, the paper presents a timely, interesting and relevant advance. The initial comments raised have been largely addressed, however both reviewers continue raise concerns regarding the eQTL and GWAS overlap / colocalization analysis. We agree that these concerns are fundamental and should be addressed.\n\nFirst, concerning the overlap with GTEX (R2), it seems entirely doable to perform this analysis on the level of individual variants, which also permit assessing consistency of effect directions, etc.\n\nSecond, both reviewers comment on the GWAS overlap/colocalization analysis. While we acknowledge that the resolution to definitely identify colocalization events will be limited, the authors should extend their analysis and/or town down the conclusions. The approach proposed by reviewer 3 seems sensible and viable, at least for a selected set of loci.\n\nFor reference, we have also included the complete reviewer reports.\n\nReviewer #2:\n\nThe authors have addressed most of the comments raised, although there are a couple of points that I feel would be beneficial to investigate further.\n\n1) GTEX overlap \u2013 in the original review, a suggestion of testing for concordance of allelic effect direction be shown for the replication of the eQTL identified in this work and GTEX tissues. It is unclear what \u201canalysis at the level of the gene\u201d exactly means, but given that many genes are controlled by independent eQTL (loci) in difference tissues/cell types, overlapping an observation of eGenes doesn't allow conclusions of shared eQTL to be determined. Testing for the concordance of allelic effects for eSNPs identified from your analysis with GTEX eSNP results would provide much stronger evidence to support this conclusion.\n\n2) GWAS overlap \u2013 \"We next chose to analyze the data using a less stringent gene-based approach using GWAS traits of interest. The second analysis allows for the identification of potentially interesting regions where the causal SNP may be different in the eQTL and GWAS data\" I am not sure what this means biologically and what conclusions can be drawn from this. What does it mean if there is no overlap in the SNPs between a eQTL and GWAS loci but that they are both in the same gene region? Is there an enrichment over what would be expected by chance? the statements \"We did not mean to imply that the overlap is a shared causal relationship. We have changed the language to reflect this. Our goal is to illustrate that the dynamic eQTLs we identified may play a role in higher-level phenotypes.\" These sentences seems in opposition to one another.\n\nReviewer #3:\n\nThe authors have now addressed most of my questions and concerns. Yet, the result of GWAS colocalisation is still in question. I have previously suggested to perform a proper colocalisation analysis using COLOC package or to report the linkage disequilibrium index (r2 value) between GWAS index variant and eQTL lead variant. Unfortunately the authors just provided only P-values for associations which does not support the GWAS locus and eQTL are colocalised. The authors have to expand the cis-window (up to 1Mb) for a handful number of genes overlapping with GWAS loci to perform a proper colocalisation analsysis. It is crucial to provide the posterior probability of colocalisation for such a small number of GWAS overlapping genes.\n",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "96a13403-0a4d-4cb3-a43c-3ea3a776075f",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C1",
+      "claim": "Cardiovascular disease (CVD) is a leading cause of death worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiovascular disease (CVD), which ultimately damages heart muscle, is a leading cause of death worldwide (WHO, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "3ce5c7be-33b7-48a8-a576-26b6b5d1c6d2",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C2",
+      "claim": "Myocardial infarction results in ischemia or lack of oxygen delivery to cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "CVD encompasses a range of pathologies including myocardial infarction (MI), where ischemia or a lack of oxygen delivery to energy-demanding cardiomyocytes results in cellular stress, irreparable damage, and cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about myocardial infarction pathophysiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "ecf6bbb7-730a-437a-8ecd-20f31e762af4",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C3",
+      "claim": "GWAS have identified hundreds of loci associated with coronary artery disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWAS) have identified hundreds of loci associated with coronary artery disease (Nikpay et al., 2015), MI, and heart failure (Shah et al., 2020), indicating the potential contribution of specific genetic variants to disease risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nikpay et al., 2015 and Shah et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "45dadd0f-0eb4-4b96-a41f-b07f76fc1a99",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C4",
+      "claim": "Most disease-associated loci do not localize within coding regions of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Most disease-associated loci do not localize within coding regions of the genome, often making inference about the molecular mechanisms of disease challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from GWAS studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "a872b4fd-69c4-4888-8e6b-a9897721e8b4",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C5",
+      "claim": "Disease-associated variants are thought to have a role in regulating gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, because most GWAS loci fall within non-coding regions, these variants are thought to have a role in regulating gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the non-coding location of GWAS variants",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "aa9108c3-7767-43ab-aa2c-62188ab595c1",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C6",
+      "claim": "The GTEx project has identified tens of thousands of expression quantitative trait loci (eQTLs) across dozens of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The GTEx project has identified tens of thousands of expression quantitative trait loci (eQTLs); namely, variants that are associated with changes in gene expression levels, across dozens of tissues including ventricular and atrial samples from the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to GTEx Consortium et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "16b6e813-4bd9-45ae-837e-7eca539bea7e",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C7",
+      "claim": "eQTLs reported by GTEx explain a modest proportion of GWAS loci.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the eQTLs reported by GTEx explain a modest proportion of GWAS loci, and while increasing the diversity of tissues and sample sizes will enable further insight, orthogonal approaches also need to be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from GTEx results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "d43fe0fc-29e8-49fd-a775-0136d4b8b9b6",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C8",
+      "claim": "Many genetic variants not associated with gene expression at steady state may impact dynamic programs of gene expression in specific contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "It is becoming increasingly evident that many genetic variants that are not associated with gene expression levels at steady state, may be found to impact dynamic programs of gene expression in specific contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies showing context-specific eQTLs",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "219717f1-5368-4920-9336-b918a97a1c6f",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C9",
+      "claim": "Context-specific eQTLs have been identified in specific developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes specific developmental stages (Cuomo et al., 2020; Strober et al., 2019), or specific exposure to an environmental stimulus such as endoplasmic reticulum stress (Dombroski et al., 2010), hormone treatment (Maranville et al., 2011), radiation-induced cell death (Smirnov et al., 2012), vitamin D exposure (Kariuki et al., 2016), drug-induced cardiotoxicity (Knowles et al., 2018), and response to infection (Alasoo et al., 2018; Barreiro et al., 2012; \u00c7al\u0131\u015fkan et al., 2015; Kim-Hellmuth et al., 2017; Manry et al., 2017; N\u00e9d\u00e9lec et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "775ae9c6-d7c2-4426-b139-e4909f3b8c0d",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C10",
+      "claim": "iPSC-derived cardiomyocytes have been shown to be a useful model for studying genetic effects on cardiovascular traits and diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "iPSC-derived cardiomyocytes (iPSC-CMs) have been shown to be a useful model for studying genetic effects on various cardiovascular traits and diseases, as well for studying gene regulation (Banovich et al., 2018; Benaglio et al., 2019; Brodehl et al., 2019; Burridge et al., 2016; de la Roche et al., 2019; Ma et al., 2018; McDermott-Roe et al., 2019; Panopoulos et al., 2017; Pavlovic et al., 2018; Ward and Gilad, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies using iPSC-CMs",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "110caf43-bacd-4881-9c97-0574b7be2d52",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C11",
+      "claim": "Coronary artery disease can lead to myocardial infarction which results in ischemia.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, coronary artery disease can lead to MI (Dzau et al., 2006) which results in ischemia and a lack of oxygen delivery to energy-demanding cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dzau et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "d58218c9-ddee-4a33-b5b8-39be904ccf4e",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C12",
+      "claim": "Cardiomyocytes are unable to regenerate.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the inability of cardiomyocytes to regenerate, this cellular stress ultimately leads to tissue damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about cardiomyocyte biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "065693cc-15ef-4ee2-9f34-0353d923c053",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C13",
+      "claim": "A rapid increase in oxygen levels post-MI can generate reactive oxygen species leading to ischemia-reperfusion injury.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a rapid increase in oxygen levels post-MI can generate reactive oxygen species leading to ischemia-reperfusion (I/R) injury (Giordano, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Giordano, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "eed1e84e-5f36-4379-8f16-1bbf05c5c340",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C14",
+      "claim": "The study differentiated iPSC-CMs from iPSCs of 15 Yoruba individuals that were part of the HapMap project.",
+      "claim_type": "EXPLICIT",
+      "source": "We differentiated iPSC-CMs from iPSCs of 15 Yoruba individuals that were part of the HapMap project (Banovich et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "b5e93a71-0197-4927-94f0-aa755cdab5ea",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C15",
+      "claim": "The differentiation process was replicated three times from three individuals, yielding 21 differentiation experiments in total.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain a measure of variance associated with the differentiation process, and to more effectively account for batch effects, we replicated the iPSC-CM differentiation from three individuals three times, yielding 21 differentiation experiments in total.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "295425e4-56d6-4f2e-b573-60441dd60ace",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C16",
+      "claim": "The median cardiomyocyte purity on Day 30 was 81% (40\u201397% range).",
+      "claim_type": "EXPLICIT",
+      "source": "On Day 30 (+/- 1 day), the median cardiomyocyte purity from one representative sub-culture across individuals was 81% (40\u201397% range), determined by flow cytometry as the proportion of cells that were positive for the cardiac-specific marker, TNNT2 (Figure 1\u2014figure supplement 2; Supplementary file 1; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from flow cytometry measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "8fdd762a-b510-496c-810b-85b319439504",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C17",
+      "claim": "iPSC-CMs were first cultured at 10% oxygen for 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we first cultured the iPSC-CMs at oxygen levels that are close to physiological oxygen levels (10% oxygen - Condition A) for 7 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "6dd18eae-b1f5-4133-accc-1eabef41bdf7",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C18",
+      "claim": "iPSC-CMs were subjected to 6 hours of hypoxia at 1% oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "We then subjected the iPSC-CMs to 6 hours of hypoxia (1% oxygen - Condition B), followed by re-oxygenation for 6 hours (10% oxygen - Condition C), or 24 hours (10% oxygen - Condition D) as previously described (Ward and Gilad, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "4a65060f-4ad9-462d-b26e-acd0f2a81e52",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C19",
+      "claim": "Oxygen levels were reproducibly controlled in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxygen levels were reproducibly controlled in cell culture (Figure 1B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data showing oxygen measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "da8d9402-e9ae-4811-aa4a-1901005d1079",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C20",
+      "claim": "Cytotoxicity levels increased following hypoxia and long-term re-oxygenation (p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both cytotoxicity (p=0.01, Figure 1\u2014figure supplement 3A\u2013B) and BNP (p=5\u00d710\u22126, Figure 1\u2014figure supplement 3C) levels increased following hypoxia and long-term re-oxygenation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from LDH activity assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "90005bc4-5887-4457-b9b0-c03c4dcbd55e",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C21",
+      "claim": "BNP levels increased following hypoxia and long-term re-oxygenation (p=5\u00d710\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both cytotoxicity (p=0.01, Figure 1\u2014figure supplement 3A\u2013B) and BNP (p=5\u00d710\u22126, Figure 1\u2014figure supplement 3C) levels increased following hypoxia and long-term re-oxygenation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from BNP ELISA assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "6afe7c70-bfb6-49e7-ab8d-7fbb7b55efa9",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C22",
+      "claim": "One sample (18852A) was excluded from analysis as a clear outlier.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that one sample (18852A) was a clear outlier when comparing read counts for 18,226 autosomal genes across all samples, and thus excluded it from further analysis (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quality control analysis of RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "db2869bb-1051-4f90-8cf8-848cecfb6ff7",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C23",
+      "claim": "12,347 expressed genes were analyzed after filtering.",
+      "claim_type": "EXPLICIT",
+      "source": "We filtered out genes with low expression levels (see Materials and methods) to yield a final set with data from 12,347 expressed genes (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "f5e581c1-b12e-49d4-8857-83368e23498e",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C24",
+      "claim": "Thousands of genes are differentially expressed between conditions at an FDR of 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "At an FDR of 10%, we identified thousands of genes that are differentially expressed between conditions (A vs. B = 4,983, B vs. C = 6,311; B vs. D = 6,792; A vs. D = 2,835; Figure 2 and Figure 2\u2014figure supplement 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of differential expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "98025893-7aa6-4b74-987d-a1d11fbe964d",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C25",
+      "claim": "2,113 genes (17% of all expressed genes) were classified as responding to hypoxia.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach led to the classification of 2,113 genes (17% of all expressed genes) as responding to hypoxia, which we term 'response genes' (Figure 2, Figure 2\u2014figure supplement 6B\u2013C), and 9,949 genes that do not change their expression level throughout the experiment which we term 'non-response genes'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis using Cormotif",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "9ba8c220-4158-4d7d-a401-b31d59b5df1f",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C26",
+      "claim": "Response genes are enriched for genes previously identified to respond to hypoxia in a Caucasian population (p<2.2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "Response genes are enriched for genes previously identified to respond to hypoxia in a Caucasian population of individuals (Chi-squared test; p<2.2\u00d710\u221216; Ward and Gilad, 2019), and are highly enriched for gene ontologies in transcription-related processes (see Materials and methods, modified Fisher's exact test; p=1\u00d710\u221219).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison with previous study",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "9919166b-58af-4672-8f26-d184a23c400c",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C27",
+      "claim": "Response genes are highly enriched for gene ontologies in transcription-related processes (p=1\u00d710\u221219).",
+      "claim_type": "EXPLICIT",
+      "source": "Response genes are enriched for genes previously identified to respond to hypoxia in a Caucasian population of individuals (Chi-squared test; p<2.2\u00d710\u221216; Ward and Gilad, 2019), and are highly enriched for gene ontologies in transcription-related processes (see Materials and methods, modified Fisher's exact test; p=1\u00d710\u221219).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "a170c82d-eb66-4bd4-b5c6-fca212c736a2",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C28",
+      "claim": "1,573 genes with eQTLs (eGenes) were identified in at least one condition (q-value <0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the combined haplotype test (CHT), an approach that leverages allele-specific information in small sample sizes (see Materials and methods; van de Geijn et al., 2015), we identified 1,886 SNPs which associate with gene expression (eSNPs) in at least one condition resulting in 1,573 genes with eQTLs (eGenes) in at least one condition (q-value <0.1; A: 613; B: 564; C: 564 and D: 464; Figure 3A\u2013B; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "eQTL mapping analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "f37cc8ce-1a1a-4127-a714-8b3cdf282b80",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C29",
+      "claim": "367 dynamic eQTLs were identified, classified as eQTLs in at least one, but not in all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This set of 367 dynamic eQTLs corresponds to 328 unique dynamic eGenes (see Materials and methods) and includes ZNF845 and RFC2 (Figure 3E) as well as PPARGC1, C8orf82 and CELF1 (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical classification of dynamic eQTLs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "ad281585-8a52-4404-ac1c-a9c89850d34b",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C30",
+      "claim": "The approach to classify dynamic eQTLs is associated with a false discovery rate of 48%.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the p-value distributions of the corresponding eQTL associations in all other conditions, we estimate that our approach to classify dynamic eQTLs is associated with a false discovery rate of 48%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical estimation of FDR",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "ace586d0-5035-4199-aa7a-050b1a901ee7",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C31",
+      "claim": "32 of 326 dynamic eSNP-eGene pairs tested in GTEx are eQTLs in heart tissue (9.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-two of 326 dynamic eSNP-eGene pairs tested in GTEx are eQTLs in heart tissue (9.8%), and 140 are eQTLs in at least one other assayed tissue (42.9%) demonstrating that many of these genes have context-dependent inter-individual variation in expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with GTEx data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "7c5425e7-e262-4045-9e4e-97818d13a416",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C32",
+      "claim": "Shared eSNPs are more likely to be eSNPs in heart tissue than dynamic eSNPs (p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Shared eSNPs are therefore more likely to be eSNPs in heart tissue than dynamic eSNPs (Chi-squared test; p=0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of shared vs dynamic eSNPs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "43d98af5-8fe9-4c48-9dbd-95bab5faabea",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C33",
+      "claim": "Induced eGenes are significantly enriched for response genes (p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found a significant enrichment in response genes amongst induced eGenes (57 of 277 genes; Chi-squared test; p=0.01, Figure 3F) when compared to baseline eGenes, suggesting that induced eQTLs often impact the regulation of genes that respond to hypoxic stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "c530906e-142f-4ec8-a8b5-b77e3bd4d144",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C34",
+      "claim": "327 of 1,639 annotated human transcription factors are response genes (p<2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant enrichment of genes annotated as transcription factors amongst the genes responding to oxygen stress compared to non-response genes (327 of 1,639 annotated human TFs, chi-squared test; p<2\u00d710\u221216; Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "d75f530d-4e1f-4505-8ec2-f412d2a54aa9",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C35",
+      "claim": "Genes annotated as transcription factors are enriched in induced eGenes compared to baseline eGenes (p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, genes annotated as transcription factors are enriched in induced eGenes compared to baseline eGenes (32 TFs; p=0.004), including MITF and PPARA, both of which are TFs that have been previously implicated in hypoxic response (Feige et al., 2011; Narravula and Colgan, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical enrichment analysis",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "a439f6ce-91c0-47ce-a977-2127436cb914",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C36",
+      "claim": "831 differentially accessible regions (DARs) were identified between hypoxia and short-term re-oxygenation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a sensitive adaptive shrinkage-based approach with a False Sign Rate of 10% (Stephens, 2017), we could not detect changes in accessibility between baseline and hypoxia across 110,128 regions; however, we identified 831 differentially accessible regions (DARs) between hypoxia and short-term re-oxygenation (BC-DARs; 429 regions with increased accessibility and 402 with decreased accessibility), and 71 DARs between hypoxia and long-term re-oxygenation (BD-DARs; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of chromatin accessibility",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "787670ef-c232-46c5-9a62-065ea74e2b59",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C37",
+      "claim": "There is a strong anti-correlation in effect size between normoxia-hypoxia and hypoxia-re-oxygenation conditions (Spearman correlation = \u22120.62; p=4.6\u00d710\u221214).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that we do not identify any DARs between normoxia and hypoxia, there is a strong anti-correlation in the effect size between the normoxia (A) and hypoxia (B) conditions, and the hypoxia (B) and re-oxygenation (C) conditions across regions (Spearman correlation = \u22120.62; sign test p=4.6\u00d710\u221214; Figure 4B) suggesting minor changes in accessibility in response to hypoxia that do not meet our significance threshold.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "fc9a41d6-2f70-40c0-bbd4-bd9652d88779",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C38",
+      "claim": "DARs are more likely to overlap TSS than constitutively accessible regions (43% vs. 11%; p<2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DARs are more likely to overlap TSS than constitutively accessible regions (43% overlap vs. 11% overlap; chi-squared test, p<2\u00d710\u221216; Figure 5A) suggesting that DARs may be involved in the gene regulatory response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of genomic feature overlap",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "264b89c8-0611-4c7b-bf14-04334eef515b",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C39",
+      "claim": "DARs are more likely to coincide with active histone marks in left ventricle heart tissue than constitutively accessible regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, DARs are more likely to coincide with active histone marks in left ventricle heart tissue than constitutively accessible regions (H3K4me3: 57% overlap DARs vs. 24% overlap constitutively accessible regions; chi-squared test; p<2.2\u00d710\u221216; H3K4me1: 86% overlap DARs vs. 52% overlap constitutively accessible regions; p<2.2\u00d710\u221216; Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison with ENCODE histone mark data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "92d782d7-ce29-408d-95d1-fa997538cd0f",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C40",
+      "claim": "HIF1\u03b1 and HIF2\u03b1 binding sites are more likely to overlap DARs than constitutively accessible regions (p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these HIF1\u03b1 and HIF2\u03b1 binding sites are more likely to overlap the 831 differentially accessible regions than the 109,275 constitutively accessible regions (Fisher test; p=0.03; Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison with ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "4320b424-3c12-42df-b63d-af36a729511a",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C41",
+      "claim": "E2F4-bound regions are significantly enriched in DARs compared to constitutively accessible regions (p<2.2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "E2F4-bound regions are significantly enriched in DARs compared to constitutively accessible regions (Chi-squared test; p<2.2\u00d710\u221216; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison with E2F4 ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "7f8395ee-0b6a-460c-8d19-0c2ae1d9d8fe",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C42",
+      "claim": "SINEs are specifically enriched in DARs (p=6.5\u00d710\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while three of the main TE classes, LINEs, LTRs, and DNA elements are similarly enriched in DARs compared to constitutively accessible regions; SINEs are specifically enriched in DARs (p=6.5\u00d710\u22126; Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical enrichment analysis of transposable elements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "1c1f46f7-3065-4d3e-a3e0-f8825de3c5f0",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C43",
+      "claim": "CpG islands are enriched in DARs compared to constitutively accessible regions (p<2.2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CpG islands are enriched in DARs compared to constitutively accessible regions, whether these regions fall within 1 kb of TSS, which are typically enriched for CGIs, or not (p<2.2\u00d710\u221216; Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "ddb20c53-d1a5-4763-8448-02b31738926e",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C44",
+      "claim": "Response genes are more likely to have CGI promoters than non-response genes (p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that response genes are more likely to have CGI promoters than non-response genes (Chi-squared test; p=0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of promoter features",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "95365d4b-ee68-4cca-b9a1-409228f584f3",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C45",
+      "claim": "The median DNA methylation level is lower in DARs compared to all accessible regions (p<2.2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "While there is no difference in median DNA methylation levels between response and non-response genes, we found that the median DNA methylation level is lower in DARs compared to all accessible regions (p<2.2\u00d710\u221216).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of DNA methylation levels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "edb4a936-98f8-4b2c-8a02-059757000d21",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C46",
+      "claim": "No differentially methylated CpGs were found across any pair of conditions when considering all 766,658 CpGs.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering all 766,658 CpGs we did not find any differentially methylated CpGs across any pair of conditions (10% FDR; Figure 6B), and all p-values are estimated to be true null p-values (pi0 = 1 when estimated by q-value across all pairs of conditions; Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of DNA methylation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "53655943-9dba-4b6a-bea3-a40dbf143d57",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C47",
+      "claim": "Four differentially methylated CpGs were identified between baseline and long-term re-oxygenation when restricting to CpGs within CpG islands.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we identified four differentially methylated CpGs (DMCpGs) between the baseline (A) and long-term re-oxygenation condition (D; Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of DNA methylation in CpG islands",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "9be54a03-397b-4ce9-a378-6c32b4ee8220",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C48",
+      "claim": "A lower proportion of variance is explained by 'condition' in DNA methylation data (0.8%) compared to gene expression data (6%).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a lower proportion of variance explained by 'condition' in the DNA methylation data (0.8%) and chromatin accessibility data (3%) compared to the gene expression data (6%, t-test, p<2.2\u00d710\u221216), and a corresponding increase in the residual variance (Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Variance partition analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "bc4e56c5-fbba-4a95-9721-d28d4e792921",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C49",
+      "claim": "One induced dynamic eSNP (rs8053350) is associated with varicose veins.",
+      "claim_type": "EXPLICIT",
+      "source": "By intersecting these two data sets, we found one induced dynamic eSNP (rs8053350) that is also associated with a measured phenotype in GWAS \u2013 varicose veins (Supplementary file 1; Figure 7\u2014figure supplement 1A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Integration with GWAS catalog data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "cf42fd81-171a-4058-b1aa-a6683e461b01",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C50",
+      "claim": "Six dynamic eGenes are implicated in MI, heart failure, and stroke by GWAS gene mapping approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that six of our dynamic eGenes are implicated in these three disease states by GWAS gene mapping approaches (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Integration with GWAS data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "f5c83e79-cc03-4030-9af3-ef6af8ed0750",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C51",
+      "claim": "The eSNP (rs12588981) for the dynamic eQTL EIF2B2 is nominally associated with CAD (p=4.7\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "This set includes the eSNP (rs12588981) for the dynamic eQTL EIF2B2 which is nominally associated with CAD (GWAS association p=4.7\u00d710\u22125) and is in high and statistically significant LD with the lead GWAS variant (GWAS association p=9.9\u00d710\u22128) at this locus (rs3832966; R2 = 0.96, p<0.001; Figure 7; Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Integration with CARDIoGRAMplusC4D GWAS data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "1999db3e-a138-4f90-909d-c907bd64b20e",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C52",
+      "claim": "The eSNP (rs8105092) which regulates CARM1 in the hypoxic condition is nominally associated with MI (p=1.79\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that eSNP (rs8105092), which regulates CARM1 in the hypoxic condition (condition B), is nominally associated with MI (GWAS association p=1.79\u00d710\u22125) and in moderate, yet significant LD, with the lead GWAS variant (GWAS association p=2.8\u00d710\u22129) at this locus (rs4804142; R2 = 0.32, p<0.001; Figure 7\u2014figure supplement 3), and is not an eGene in LV or AA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Integration with CARDIoGRAMplusC4D GWAS data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "bf49d1c1-04ae-4658-bb15-44e7804d076c",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "claim_id": "C53",
+      "claim": "Perturbation studies in relevant cell types can give insight into the molecular basis for genetic association with complex traits and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that perturbation studies in relevant cell types can give insight into the molecular basis for the genetic association with complex traits and disease, which might not be gleaned from the study of post-mortem tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the integration of eQTL and GWAS data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "792fdf87-c0da-41ff-aa45-9db8d9a7d651",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established an in vitro model of hypoxia and re-oxygenation in iPSC-derived cardiomyocytes from 15 Yoruba individuals. iPSC-CMs were cultured at 10% oxygen (normoxia), subjected to 6 hours of 1% oxygen (hypoxia), followed by re-oxygenation for 6 or 24 hours. Oxygen levels were reproducibly controlled, and cytotoxicity and BNP levels increased following hypoxia and long-term re-oxygenation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 provide a comprehensive description of the experimental model with appropriate controls and validation. The cardiomyocyte purity (median 81%) was assessed by flow cytometry (C16), oxygen levels were reproducibly controlled (C19), and cellular stress was validated through cytotoxicity (p=0.01, C20) and BNP measurements (p=5\u00d710\u207b\u2076, C21). The experimental design is well-documented with technical replicates from three individuals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "63113378-d78f-4cf0-acbd-00c1f7df14c5",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors identified thousands of differentially expressed genes in response to hypoxia and re-oxygenation. Using Cormotif analysis, 2,113 genes (17% of expressed genes) were classified as 'response genes' that change expression during the oxygen stress experiment. These response genes are enriched for genes previously identified in hypoxia response studies and for transcription-related gene ontology terms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 describe a rigorous differential expression analysis with appropriate quality control (outlier removal, C22), filtering (C23), and statistical methods (FDR 10%, C24). The classification of response genes using Cormotif (C25) is validated by enrichment for previously identified hypoxia-responsive genes (p<2.2\u00d710\u207b\u00b9\u2076, C26) and transcription-related processes (p=1\u00d710\u207b\u00b9\u2079, C27). The statistical approaches and validation against prior work support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "1d916a79-4e8b-438c-b12b-a12b08e0ce48",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors identified 1,573 eGenes in at least one condition and 367 dynamic eQTLs that are classified as eQTLs in at least one but not all conditions. The approach to classify dynamic eQTLs is estimated to have a false discovery rate of 48%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the eQTL mapping using the Combined Haplotype Test is appropriate for small sample sizes (C28), the classification of dynamic eQTLs (C29) relies on somewhat arbitrary statistical cutoffs (q<0.1 in one condition, p>0.15 in others). The authors acknowledge a high FDR of 48% (C30), which means roughly half of the identified dynamic eQTLs may actually be eQTLs in multiple conditions if sample size were larger. This high FDR creates substantial uncertainty about which specific loci are truly dynamic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "c649915f-bcee-4768-bae7-6cea01967d44",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dynamic eSNPs show limited overlap with GTEx heart tissue eQTLs compared to shared eSNPs. Only 9.8% of dynamic eSNP-eGene pairs are eQTLs in GTEx heart tissue, while shared eSNPs are significantly more likely to be heart tissue eQTLs (p=0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 provide a clear comparison between dynamic and shared eQTLs using GTEx data. The statistical test (Chi-squared, p=0.01, C32) appropriately demonstrates that shared eSNPs are more likely to be detected in primary heart tissue than dynamic eSNPs. This supports the interpretation that the perturbation study reveals novel context-specific regulatory effects not captured in steady-state tissue samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "d5376ae0-3815-4f0a-82a8-9af761e5fee7",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Induced eGenes are enriched for response genes (p=0.01) and transcription factors. Transcription factors are significantly enriched among response genes (p<2\u00d710\u207b\u00b9\u2076) and among induced eGenes compared to baseline eGenes (p=0.004).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 demonstrate statistically significant enrichments with appropriate tests (Chi-squared tests with significant p-values). The enrichment of transcription factors among response genes (C34) and induced eGenes (C35) is biologically coherent and supported by specific examples (MITF, PPARA) with literature citations. The integration of differential expression and eQTL data provides mechanistic insight into dynamic gene regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "a483f5d0-9e3c-4a2c-8550-e43295bba0f0",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors identified 831 differentially accessible chromatin regions (DARs) between hypoxia and short-term re-oxygenation. DARs are enriched for transcription start sites, active histone marks, HIF1\u03b1/HIF2\u03b1 binding sites, E2F4 binding sites, SINE elements, and CpG islands compared to constitutively accessible regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C43 describe comprehensive chromatin accessibility analysis with appropriate statistical methods (adaptive shrinkage, FSR<10%, C36). The enrichment analyses use appropriate statistical tests (Chi-squared, Fisher tests) with highly significant p-values. The integration with external datasets (ENCODE histone marks C39, HIF ChIP-seq C40, E2F4 ChIP-seq C41) provides orthogonal validation. However, the lack of DARs between normoxia and hypoxia (C36) is notable and suggests either insufficient power or that chromatin changes occur primarily during re-oxygenation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "5bcd2891-318b-486e-abd5-cfa7b801fa2c",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Response genes are more likely to have CpG island promoters than non-response genes (p=0.002), and DARs have lower median DNA methylation levels than all accessible regions (p<2.2\u00d710\u207b\u00b9\u2076).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 provide statistically significant associations between genomic features and regulatory responses. The enrichment of CGI promoters in response genes (C44) and lower methylation in DARs (C45) are supported by appropriate statistical tests. These findings are biologically coherent with the hypothesis that CGI promoters allow rapid transcriptional responses to stimuli.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "95f4a9b4-c1ba-4111-af13-a8e1c15b6172",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DNA methylation levels are largely stable during hypoxia and re-oxygenation. No differentially methylated CpGs were found across all 766,658 CpGs tested, though four DMCpGs were identified when restricting analysis to CpG islands. Variance explained by condition is much lower for DNA methylation (0.8%) than gene expression (6%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 demonstrate minimal DNA methylation changes with appropriate statistical analysis (FDR 10%, C46). The variance partition analysis (C48) provides quantitative support for the conclusion that DNA methylation is less responsive to oxygen stress than gene expression. The identification of only four DMCpGs in CpG islands (C47) after restricting the test set suggests that DNA methylation changes are rare and require focused analysis. The lack of changes is a valid negative result supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    },
+    {
+      "id": "a8f70af8-42c5-4d34-b013-f415e7a4c6c1",
+      "content_id": "cb744cb9-f616-4d29-9811-7509778f996a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Several dynamic eQTLs and eGenes are associated with cardiovascular disease traits and phenotypes. One dynamic eSNP is associated with varicose veins, six dynamic eGenes are implicated in MI/heart failure/stroke, and two loci (EIF2B2 and CARM1) show nominal associations with CAD or MI in GWAS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C52 identify potential disease-relevant loci, but the evidence is limited. The associations are mostly nominal (not genome-wide significant, C51-C52), and the study population (Yoruba) differs from most GWAS populations (European), limiting direct SNP-level comparisons. The LD relationships (R\u00b2=0.96 for EIF2B2, R\u00b2=0.32 for CARM1) vary in strength. While the integration with GWAS is valuable, the high FDR for dynamic eQTL classification (48%, C30) and the nominal significance of GWAS associations create uncertainty about which specific loci are truly disease-relevant. Claim C53 is an inference that requires validation in additional studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:12:00.529957Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eed1e84e-5f36-4379-8f16-1bbf05c5c340",
+      "result_id": "792fdf87-c0da-41ff-aa45-9db8d9a7d651"
+    },
+    {
+      "claim_id": "b5e93a71-0197-4927-94f0-aa755cdab5ea",
+      "result_id": "792fdf87-c0da-41ff-aa45-9db8d9a7d651"
+    },
+    {
+      "claim_id": "295425e4-56d6-4f2e-b573-60441dd60ace",
+      "result_id": "792fdf87-c0da-41ff-aa45-9db8d9a7d651"
+    },
+    {
+      "claim_id": "8fdd762a-b510-496c-810b-85b319439504",
+      "result_id": "792fdf87-c0da-41ff-aa45-9db8d9a7d651"
+    },
+    {
+      "claim_id": "6dd18eae-b1f5-4133-accc-1eabef41bdf7",
+      "result_id": "792fdf87-c0da-41ff-aa45-9db8d9a7d651"
+    },
+    {
+      "claim_id": "4a65060f-4ad9-462d-b26e-acd0f2a81e52",
+      "result_id": "792fdf87-c0da-41ff-aa45-9db8d9a7d651"
+    },
+    {
+      "claim_id": "da8d9402-e9ae-4811-aa4a-1901005d1079",
+      "result_id": "792fdf87-c0da-41ff-aa45-9db8d9a7d651"
+    },
+    {
+      "claim_id": "90005bc4-5887-4457-b9b0-c03c4dcbd55e",
+      "result_id": "792fdf87-c0da-41ff-aa45-9db8d9a7d651"
+    },
+    {
+      "claim_id": "6afe7c70-bfb6-49e7-ab8d-7fbb7b55efa9",
+      "result_id": "63113378-d78f-4cf0-acbd-00c1f7df14c5"
+    },
+    {
+      "claim_id": "db2869bb-1051-4f90-8cf8-848cecfb6ff7",
+      "result_id": "63113378-d78f-4cf0-acbd-00c1f7df14c5"
+    },
+    {
+      "claim_id": "f5e581c1-b12e-49d4-8857-83368e23498e",
+      "result_id": "63113378-d78f-4cf0-acbd-00c1f7df14c5"
+    },
+    {
+      "claim_id": "98025893-7aa6-4b74-987d-a1d11fbe964d",
+      "result_id": "63113378-d78f-4cf0-acbd-00c1f7df14c5"
+    },
+    {
+      "claim_id": "9ba8c220-4158-4d7d-a401-b31d59b5df1f",
+      "result_id": "63113378-d78f-4cf0-acbd-00c1f7df14c5"
+    },
+    {
+      "claim_id": "9919166b-58af-4672-8f26-d184a23c400c",
+      "result_id": "63113378-d78f-4cf0-acbd-00c1f7df14c5"
+    },
+    {
+      "claim_id": "a170c82d-eb66-4bd4-b5c6-fca212c736a2",
+      "result_id": "1d916a79-4e8b-438c-b12b-a12b08e0ce48"
+    },
+    {
+      "claim_id": "f37cc8ce-1a1a-4127-a714-8b3cdf282b80",
+      "result_id": "1d916a79-4e8b-438c-b12b-a12b08e0ce48"
+    },
+    {
+      "claim_id": "ad281585-8a52-4404-ac1c-a9c89850d34b",
+      "result_id": "1d916a79-4e8b-438c-b12b-a12b08e0ce48"
+    },
+    {
+      "claim_id": "ace586d0-5035-4199-aa7a-050b1a901ee7",
+      "result_id": "c649915f-bcee-4768-bae7-6cea01967d44"
+    },
+    {
+      "claim_id": "7c5425e7-e262-4045-9e4e-97818d13a416",
+      "result_id": "c649915f-bcee-4768-bae7-6cea01967d44"
+    },
+    {
+      "claim_id": "43d98af5-8fe9-4c48-9dbd-95bab5faabea",
+      "result_id": "d5376ae0-3815-4f0a-82a8-9af761e5fee7"
+    },
+    {
+      "claim_id": "c530906e-142f-4ec8-a8b5-b77e3bd4d144",
+      "result_id": "d5376ae0-3815-4f0a-82a8-9af761e5fee7"
+    },
+    {
+      "claim_id": "d75f530d-4e1f-4505-8ec2-f412d2a54aa9",
+      "result_id": "d5376ae0-3815-4f0a-82a8-9af761e5fee7"
+    },
+    {
+      "claim_id": "a439f6ce-91c0-47ce-a977-2127436cb914",
+      "result_id": "a483f5d0-9e3c-4a2c-8550-e43295bba0f0"
+    },
+    {
+      "claim_id": "787670ef-c232-46c5-9a62-065ea74e2b59",
+      "result_id": "a483f5d0-9e3c-4a2c-8550-e43295bba0f0"
+    },
+    {
+      "claim_id": "fc9a41d6-2f70-40c0-bbd4-bd9652d88779",
+      "result_id": "a483f5d0-9e3c-4a2c-8550-e43295bba0f0"
+    },
+    {
+      "claim_id": "264b89c8-0611-4c7b-bf14-04334eef515b",
+      "result_id": "a483f5d0-9e3c-4a2c-8550-e43295bba0f0"
+    },
+    {
+      "claim_id": "92d782d7-ce29-408d-95d1-fa997538cd0f",
+      "result_id": "a483f5d0-9e3c-4a2c-8550-e43295bba0f0"
+    },
+    {
+      "claim_id": "4320b424-3c12-42df-b63d-af36a729511a",
+      "result_id": "a483f5d0-9e3c-4a2c-8550-e43295bba0f0"
+    },
+    {
+      "claim_id": "7f8395ee-0b6a-460c-8d19-0c2ae1d9d8fe",
+      "result_id": "a483f5d0-9e3c-4a2c-8550-e43295bba0f0"
+    },
+    {
+      "claim_id": "1c1f46f7-3065-4d3e-a3e0-f8825de3c5f0",
+      "result_id": "a483f5d0-9e3c-4a2c-8550-e43295bba0f0"
+    },
+    {
+      "claim_id": "ddb20c53-d1a5-4763-8448-02b31738926e",
+      "result_id": "5bcd2891-318b-486e-abd5-cfa7b801fa2c"
+    },
+    {
+      "claim_id": "95365d4b-ee68-4cca-b9a1-409228f584f3",
+      "result_id": "5bcd2891-318b-486e-abd5-cfa7b801fa2c"
+    },
+    {
+      "claim_id": "edb4a936-98f8-4b2c-8a02-059757000d21",
+      "result_id": "95f4a9b4-c1ba-4111-af13-a8e1c15b6172"
+    },
+    {
+      "claim_id": "53655943-9dba-4b6a-bea3-a40dbf143d57",
+      "result_id": "95f4a9b4-c1ba-4111-af13-a8e1c15b6172"
+    },
+    {
+      "claim_id": "9be54a03-397b-4ce9-a378-6c32b4ee8220",
+      "result_id": "95f4a9b4-c1ba-4111-af13-a8e1c15b6172"
+    },
+    {
+      "claim_id": "bc4e56c5-fbba-4a95-9721-d28d4e792921",
+      "result_id": "a8f70af8-42c5-4d34-b013-f415e7a4c6c1"
+    },
+    {
+      "claim_id": "cf42fd81-171a-4058-b1aa-a6683e461b01",
+      "result_id": "a8f70af8-42c5-4d34-b013-f415e7a4c6c1"
+    },
+    {
+      "claim_id": "f5c83e79-cc03-4030-9af3-ef6af8ed0750",
+      "result_id": "a8f70af8-42c5-4d34-b013-f415e7a4c6c1"
+    },
+    {
+      "claim_id": "1999db3e-a138-4f90-909d-c907bd64b20e",
+      "result_id": "a8f70af8-42c5-4d34-b013-f415e7a4c6c1"
+    },
+    {
+      "claim_id": "bf49d1c1-04ae-4658-bb15-44e7804d076c",
+      "result_id": "a8f70af8-42c5-4d34-b013-f415e7a4c6c1"
+    }
+  ],
+  "comparisons": []
+}

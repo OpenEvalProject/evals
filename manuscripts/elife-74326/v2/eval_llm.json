@@ -1,0 +1,442 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Two nanobody-NanoTag pairs were characterized: NbVHH05 (111 aa) recognizes VHH05-tag (14 aa, QADQEAKELARQIS) with Kd ~0.15 nM, and Nb127D01 (115 aa) recognizes 127D01-tag (10 aa, SFEDFWKGED) with Kd <50 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the basic properties of the two nanobody systems. The VHH05 system is well-documented with published binding affinity (C2), while the 127D01 tag was reduced from the CXCR2 extracellular domain to a minimal 10 aa sequence (C4) with measured Kd <50 nM (C5), though data not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "BLAST searches showed no fully homologous sequences to either NanoTag in the Drosophila proteome, reducing the risk of cross-reactivity with endogenous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 describes a bioinformatics analysis to assess potential off-target binding. This is a standard validation step for establishing specificity of the tagging system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "NanoTagged proteins localize correctly in S2R+ cells, and nanobody-GFP fusions co-localize with NanoTagged proteins regardless of tag position (N-terminal, internal, or C-terminal), demonstrating that both systems function as chromobodies for live imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 demonstrate chromobody functionality through systematic co-localization experiments with different subcellular compartments and tag positions. The data show consistent co-localization patterns, though C10 notes aggregates in some Nb127D01-GFP transfected cells, which is addressed later (C109-C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Direct immunofluorescence using chemically conjugated fluorophore-nanobodies (NbVHH05-CF555 and Nb127D01-CF647) successfully detected NanoTagged proteins in S2R+ cells without affecting nanobody reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 establish direct immunofluorescence capability. The conjugation was confirmed by SDS-PAGE (C17), and successful immunostaining (C18) supports the inference that reactivity was maintained (C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Sortase-mediated labeling provides an alternative site-specific method for fluorophore conjugation that proceeds near-quantitatively, avoids unwanted side reactions, and enables quantitative comparisons due to single substituent per nanobody.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 describe Sortase labeling as an alternative to chemical conjugation. The method is well-established (C22 cites Cheloha et al., 2019), and the advantages described (C23-C25) are supported by the cited literature and demonstrated by successful immunostaining (C20).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Indirect immunofluorescence works with nanobodies tagged with ALFA, HA, or hIgG, detected using appropriate secondary reagents, with complete overlap between GFP signal and secondary antibody signal in transfected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 demonstrate indirect immunofluorescence with multiple detection strategies. The complete overlap of signals (C32) validates the approach, and the variety of tags tested (ALFA, HA, hIgG) demonstrates versatility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Both nanobodies are recognized by anti-alpaca IgG antibodies despite originating from different camelids (alpaca for NbVHH05, llama for Nb127D01), enabling use of commercially available secondary antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 establish cross-reactivity of anti-alpaca antibodies with both nanobodies. The complete overlap of signals (C35) supports the conclusion that commercial anti-llama antibodies are compatible (C36).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Indirect immunofluorescence using sortase-labeled NbVHH05-biotin produced similar results to other labeling methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 confirms that sortase labeling is compatible with indirect immunofluorescence, extending the utility of this labeling method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The two NanoTag-nanobody pairs operate orthogonally without cross-reactivity, and can be multiplexed for co-detection of double-tagged proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 demonstrate orthogonality through negative controls (no co-localization in mismatched pairs, C38) and positive results with double-tagged REPTOR (complete overlap of both signals, C39), supporting multiplexing capability (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Both nanobodies detect NanoTagged proteins on immunoblots under denaturing conditions, recognizing tags at N-terminal, internal, and C-terminal positions, with non-specific bands at high concentrations resolved by dilution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 establish immunoblotting capability. Recognition of linear epitopes (C41) is expected for small peptide tags, detection is demonstrated (C42, C45), and the optimization to reduce non-specific binding (C43-C44) shows appropriate troubleshooting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Increasing the number of NanoTags (1x, 2x, 3x) improves detection sensitivity on immunoblots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 demonstrate a dose-response relationship between tag number and detection sensitivity. The experimental design includes FLAG as loading control, supporting the conclusion that multiple tags enhance sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C52"
+    ],
+    "result": "Multiplexed immunoblotting is achieved using combinations of hIgG-tagged and ALFA-tagged nanobodies, or biotin-labeled and hIgG-tagged nanobodies, with no cross-reactivity between the two systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C52 demonstrate multiplexed immunoblotting with different tag combinations. The lack of cross-reactivity (C52) is essential for multiplexing and is experimentally confirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "NanoTag-based immunopurification is effective using either ALFA-resin coated with ALFA-tagged nanobodies or Protein A beads coated with hIgG-tagged nanobodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate successful immunopurification with two different approaches, and C53 concludes effectiveness. The experimental evidence supports this application of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "NanoTag traps (nanobodies with ER retention signals) can re-localize secreted NanoTagged proteins to the ER, as demonstrated by intracellular GFP accumulation and increased signal on immunoblots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 demonstrate protein re-localization using ER-targeted nanobodies. The shift from secretion (C54) to intracellular accumulation (C55-C56) with increased protein levels (C57) provides converging evidence for the NanoTag trap concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Membrane-targeted NanoTag traps can re-localize cytoplasmic NanoTagged proteins to the cell membrane, potentially facilitating functional analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 demonstrate membrane re-localization, extending the NanoTag trap concept. However, C60 is speculative about applications, so the functional utility remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Cytoplasmic expression vectors produce nanobodies detectable in cell lysates, while secretory expression vectors result in nanobodies predominantly in culture media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 validate the expression constructs for in vivo use, showing expected localization patterns for cytoplasmic vs. secreted versions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Ubiquitous expression of nanobodies throughout fly development is not toxic, with no detectable developmental defects or abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 establish that the nanobodies do not have off-target effects in vivo. The bioinformatics prediction (C63) is confirmed experimentally (C64), though data are not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Nanobodies are expressed at detectable levels in fat body cells when driven by tissue-specific Gal4, with secreted versions confirmed to be secreted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 demonstrate tissue-specific expression and proper localization of nanobodies in vivo, validating the transgenic constructs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Co-expression of NanoTagged REPTOR and nanobody-GFP in enterocytes visualizes REPTOR translocation from cytoplasm to nucleus upon rapamycin treatment, demonstrating in vivo chromobody functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 demonstrate in vivo chromobody imaging. The shift in nanobody-GFP localization (C68-C70) matches known REPTOR behavior (C67), with appropriate controls (C71), supporting the conclusion that chromobodies can track protein localization in vivo (C72-C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Multiple NanoTagged proteins (secreted and cytoplasmic) can be detected in cultured cells and in vivo in adult midguts, demonstrating broad applicability of both NanoTag systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 demonstrate detection of diverse proteins in different contexts, supporting the general utility of the system. The variety of proteins tested strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Endogenous tagging is preferable to overexpression for physiological studies, and small epitope tags may be preferable to GFP to minimize structural impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide rationale for endogenous tagging. These are established principles in the field (C78-C79 cite literature), making the motivation for the CRISPR approach clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "CRISPR-mediated knock-in of NanoTags into endogenous H2Av shows nuclear localization as expected, demonstrating that the method can tag endogenous genes for localization studies at physiological expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 describe the CRISPR knock-in approach and validate it with H2Av. The expected nuclear localization (C87) confirms proper tagging, and the scarless approach (C82-C83) with marker removal (C86) is well-documented. The conclusion (C88) is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "CRISPR knock-in of 3x127D01 into endogenous Dilp2 enables detection of the small peptide with high sensitivity, shows expression patterns similar to anti-Dilp2 antibody, maintains Dilp2 function (normal trehalose levels), and detects changes after starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 demonstrate successful endogenous tagging of a small secreted peptide. The functional validation (C93-C94) is critical and well-executed, comparing to published phenotype (C92). Detection of starvation-induced changes (C95) shows the system can detect physiological regulation. This is strong evidence for the utility of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The NanoTag system has advantages over conventional antibodies (single ORF encoding) and anti-GFP nanobodies (smaller tags, recognition of unfolded proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 and C101 compare the NanoTag system to alternatives. The advantages stated are logical based on the properties demonstrated (C98-C99 are established knowledge), and C101 cites a known limitation of anti-GFP nanobodies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Short NanoTags can be introduced using scarless CRISPR KI, and alternative methods like ssDNA-based CRISPR KI or prime editing could be explored for inserting these small sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 summarizes the demonstrated approach, while C103-C105 discuss alternative methods with appropriate citations. This is forward-looking discussion rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The NanoTag/nanobody system enables in vivo co-expression for protein re-localization and potentially other manipulations like degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 summarize demonstrated capabilities (re-localization), while C108 discusses potential applications with appropriate citation. The re-localization is well-demonstrated, but other applications remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Aggregates observed in some transfected cells likely reflect high expression levels rather than inherent problems with the system, as no aggregates or developmental defects were seen in transgenic flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 address a potential concern (C10) about aggregates. The interpretation (C111) is reasonable given the absence of problems in vivo (C109-C110), suggesting the issue is context-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The NanoTag system has multiple potential applications including spatial mapping of scRNAseq-identified cell clusters, ChIP, immunopurification, and protein degradation, with double tagging enabling simultaneous manipulation and detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C117 discuss potential applications. While some are demonstrated (immunopurification), others are speculative (C114-C115). The double tagging advantage (C116-C117) is logical but not experimentally demonstrated. These are reasonable extrapolations but require validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Bioinformatics analysis suggests the NanoTag system could be applicable to many other organisms, with 127D01-tag showing no significant homology in mouse and many other research organisms, while VHH05-tag has 100% identity to mouse Ube6e.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 present bioinformatics analysis of potential cross-species applicability. The analysis is straightforward and the conclusions (C122) are supported by the sequence comparisons (C119-C121). However, experimental validation in other organisms would strengthen these claims.",
+    "result_type": "MINOR"
+  }
+]

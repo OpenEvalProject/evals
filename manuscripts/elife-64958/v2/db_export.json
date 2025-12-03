@@ -1,0 +1,1572 @@
+{
+  "submission": {
+    "id": "d1aa07f2-663c-4897-94b8-9e0295c2bebf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:39:29.030815Z",
+    "updated_at": "2025-12-03T01:39:29.030815Z"
+  },
+  "content": [
+    {
+      "id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "submission_id": "d1aa07f2-663c-4897-94b8-9e0295c2bebf",
+      "content_type": "manuscript",
+      "content_text": "# Cytokine ranking via mutual information algorithm correlates cytokine profiles with presenting disease severity in patients infected with SARS-CoV-2\n\n## Authors\n\n- Kelsey E Huntington<sup>1</sup> ([ORCID: 0000-0002-5810-8220](https://orcid.org/0000-0002-5810-8220))\n- Anna D Louie<sup>1</sup> ([ORCID: 0000-0001-8394-6106](https://orcid.org/0000-0001-8394-6106))\n- Chun Geun Lee<sup>3</sup>\n- Jack A Elias<sup>3</sup>\n- Eric A Ross<sup>9</sup>\n- Wafik S El-Deiry<sup>1</sup> ([ORCID: 0000-0002-9577-8266](https://orcid.org/0000-0002-9577-8266)) \u2020\n\n### Affiliations\n\n1. Brown Experimentalists Against COVID-19 (BEACON) Group, Brown University Providence United States\n2. Laboratory of Translational Oncology and Experimental Cancer Therapeutics, Warren Alpert Medical School, Brown University Providence United States\n3. The Joint Program in Cancer Biology, Brown University and Lifespan Health System Providence United States\n4. Cancer Center at Brown University, Warren Alpert Medical School, Brown University Providence United States\n5. Department of Pathology and Laboratory Medicine, Warren Alpert Medical School, Brown University Providence United States\n6. Pathobiology Graduate Program, Warren Alpert Medical School, Brown University Providence United States\n7. Department of Molecular Microbiology and Immunology, Brown University Providence United States\n8. Department of Surgery, Lifespan Health System and Warren Alpert Medical School, Brown University Providence United States\n9. Biostatistics and Bioinformatics Facility, Fox Chase Cancer Center, Temple University Health System Philadelphia United States\n10. Hematology-Oncology Division, Department of Medicine, Lifespan Health System and Warren Alpert Medical School, Brown University Providence United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough the range of immune responses to severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is variable, cytokine storm is observed in a subset of symptomatic individuals. To further understand the disease pathogenesis and, consequently, to develop an additional tool for clinicians to evaluate patients for presumptive intervention, we sought to compare plasma cytokine levels between a range of donor and patient samples grouped by a COVID-19 Severity Score (CSS) based on the need for hospitalization and oxygen requirement. Here we utilize a mutual information algorithm that classifies the information gain for CSS prediction provided by cytokine expression levels and clinical variables. Using this methodology, we found that a small number of clinical and cytokine expression variables are predictive of presenting COVID-19 disease severity, raising questions about the mechanism by which COVID-19 creates severe illness. The variables that were the most predictive of CSS included clinical variables such as age and abnormal chest x-ray as well as cytokines such as macrophage colony-stimulating factor, interferon-inducible protein 10, and interleukin-1 receptor antagonist. Our results suggest that SARS-CoV-2 infection causes a plethora of changes in cytokine profiles and that particularly in severely ill patients, these changes are consistent with the presence of macrophage activation syndrome and could furthermore be used as a biomarker to predict disease severity.\n\n## Introduction\n\nIn December 2019, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), the origin of coronavirus disease 2019 (COVID-19), emerged in Wuhan, China (Zhu et al., 2020). Although many COVID-19 patients remain asymptomatic, there exists a subset of patients who present with severe illness. Early treatment with dexamethasone appears to improve outcomes in these patients. However, it is not always initially clear which patients would benefit from this therapy (The RECOVERY Collaborative Group, 2020). Moreover, COVID-19 infection can be accompanied by a severe inflammatory response characterized by the release of pro-inflammatory cytokines, an event known as cytokine storm (CS) (Tang et al., 2020; Ragab et al., 2020). Thus far, this COVID-19-associated CS\u00a0has predominantly been characterized by the presence of IL-1\u03b2, IL-2, IL-17, IL-8, TNF, CCL2, and most notably IL-6 (Tang et al., 2020; Merad and Martin, 2020; McGonagle et al., 2020; Wan et al., 2020; Otsuka and Seino, 2020). Severe cases of CS can be life\u00a0threatening, and early diagnosis as well as treatment of this condition can lead to improved outcome. We hypothesize that cytokine profiles combined with clinical information can predict disease severity, potentially giving clinicians an additional tool when evaluating patients for preemptive intervention.\n\n## Results\n\nAnalysis was performed for 36 PCR-confirmed COVID-19 (+) and 36 (\u2212) human plasma\u00a0samples\u00a0(Figure 1\u2014source data 1). The COVID-19 Severity Score (CSS) was developed to categorize patients based on their status upon presentation to the emergency department. CSS is graded as follows: 0\u00a0= COVID\u00a0(\u2212), no symptoms, healthy control (n\u00a0=\u00a024); 1\u00a0= COVID\u00a0(\u2212), symptoms (n\u00a0=\u00a012); 2\u00a0= COVID\u00a0(+), discharged from emergency room (n\u00a0=\u00a015); 3\u00a0= COVID\u00a0(+), admitted, but who did not require supplemental oxygen (n\u00a0=\u00a07); 4\u00a0= COVID\u00a0(+), admitted and required any amount of supplemental oxygen or positive pressure ventilation (n\u00a0=\u00a08);\u00a0and 5\u00a0= COVID\u00a0(+), admitted to ICU/step-down (n\u00a0=\u00a06) (Figure 1). CSS was used as the outcome variable for a mutual information minimum-redundancy maximum-relevance algorithm (Kratzer and Furrer, 2018; Figure 1), with the goal of selecting a subset of variables most predictive of CSS. The algorithm confirmed the predictive value of clinical variables such as age and chest x-ray abnormality and also ranked the information gain provided by each of 15 cytokines tested. Several cytokines were able to add unique predictive value to the mutual information model in addition to what was provided by clinical factors such as age or patient comorbidities. This algorithm also deprioritized factors when their predictive value was redundant with the most predictive variables. Macrophage colony-stimulating factor\u00a0(M-CSF) was ranked second after age as it was the factor that added the most predictive power to the algorithm with minimal redundancy with age. It ranked ahead of abnormalities on chest x-ray because while both were relevant in predicting COVID severity, part of the predictiveness of chest x-ray abnormality was also explained by age differences (Figure 2). The top four cytokines combined with age were predictive of the most severe CSS (4\u20135) and had a receiver operating characteristic (Figure 2), with an area under the curve of 0.86. Multiple cytokines, including M-CSF (p<0.01), interferon-inducible protein 10\u00a0(IP-10) (p<0.01),\u00a0interleukin 18\u00a0(IL-18) (p<0.01), and interleukin-1\u00a0receptor\u00a0antagonist\u00a0(IL-1RA) (p<0.01), were more relevant in predicting CSS\u00a0than more frequently characterized cytokines in the context of COVID-19 such as IL-6 (p<0.01). These cytokines showed a statistically significant difference in their profiles when segregated by CSS (Figure 3), yet the mutual information algorithm prioritized them differently than would be expected based on univariate analyses. This indicates that the mutual information algorithm is prioritizing cytokines whose predictive value for COVID-19 severity cannot be fully explained by other clinical variables such as age or medical comorbidities.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64958/elife-64958-fig1-v2.jpg)\n\n**Figure 1.:** (A) Comprehensive matrix of relevancy to CSS of all variables assessed by mutual information algorithm, relevancy scores computed for not-yet selected variables are shown in each column, and variables are ordered to place maximum local scores on the diagonal, yielding a list in decreasing order from the upper left of variable relevancy. Warmer colors indicate higher relevancy, while cooler colors indicate higher redundancy. (B) COVID Severity Score Table with breakdown of categories as well as sample size per category.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64958/elife-64958-fig2-v2.jpg)\n\n**Figure 2.:** (A) The y-axis is CSS, and the x-axis is age in years with points colored by chest x-ray status. (B) The y-axis is M-CSF concentration in pg/mL, and the x-axis is age in years, with points colored based on CSS. See individual legends below graphs. (C) Receiver operating characteristic (ROC) curve predicting CSS 4\u20135 using age, M-CSF, IP-10, IL-18, and IL-1RA, and ROC curve predicting CSS 4\u20135 using only age.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64958/elife-64958-fig3-v2.jpg)\n\n**Figure 3.:** Cytokines ordered by row from upper left corner based on mutual information relevancy matrix (upper left being most relevant and lower right being least relevant). The x-axis is CSS, and the y-axis is analyte concentration in pg/mL. One-way ANOVA F values and p values are listed on each plot. Source code 1. R code with sections to apply the varrank package to the source data, create a receiver operating characteristic curve, and calculate analysis of variance for each cytokine.\n\n## Discussion\n\nWe found that a small number of clinical variables when combined with cytokine expression are predictive of presenting COVID-19 disease severity. Cytokines singled out for relevance by the mutual information algorithm shared a connection to macrophage activation syndrome (MAS), raising questions about the mechanism by which SARS-CoV-2 creates severe illness in a subset of patients. First, we examined the significant contribution of IP-10 to CSS. IP-10 is secreted by monocytes, fibroblasts, and endothelial cells in response to interferon gamma\u00a0(IFN-\u03b3), which is secreted by T cells (mainly, Th1), macrophages, mucosal epithelial cells, and natural\u00a0killer\u00a0(NK) cells (Liu et al., 2011). This release of IFN-\u03b3 induces several cell types to produce IP-10, which consequently recruits more Th1 cells, contributing to a positive feedback loop. IP-10 is also chemoattractant to CXCR3-postitive cells such as macrophages, dendritic cells, NK cells, and T cells. It has been proposed that macrophages recruited by IP-10, in the presence of persistent IFN-\u03b3 production, can lead to MAS (Merad and Martin, 2020; McGonagle et al., 2020; Otsuka and Seino, 2020). MAS is characterized as a state of systemic hyperinflammation often accompanied by CS, which, without intervention, can lead to severe tissue damage and, in extreme cases, death (Otsuka and Seino, 2020).\n\nMoreover, the cytokine most relevant in predicting CSS was M-CSF, which is secreted by eukaryotic cells in response to viral infection and stimulates hematopoietic stem cells to differentiate into macrophages. Currently, there are three separate immune stages that describe the progression of COVID-19. The first stage is characterized by a potent induction of interferons that marks the early activation of the immune system that is important in the viral response, and the second stage is characterized by a delayed interferon response (Merad and Martin, 2020). These stages may prime the body for a third stage comprised of detrimental hyperinflammation characterized by CS and MAS (Merad and Martin, 2020). This excessive macrophage activation could explain the increase in IL1-RA that we observed, a cytokine abundantly produced by macrophages.\n\nSteroids have shown a survival benefit for COVID-19, likely by suppressing such detrimental hyperinflammation (The RECOVERY Collaborative Group, 2020). Our analysis identified a pattern of cytokine alterations on presentation associated with COVID-19 severity. The ability to identify a cytokine pattern less redundant with known clinical factors such as age and chest x-ray could help better identify patients in need of immunomodulatory treatment without the confounders of current models where the measured cytokines correlate as much with age as with severity (Pierce et al., 2020). Further studies should be conducted to clarify the mechanistic role that these cytokines and macrophages play in the various stages of COVID-19 and correlate them with other hematologic parameters that were not collected in this database. The results of these future studies could identify more targeted immunomodulatory strategies beyond steroid administration such as treatment with MEK inhibitors (Zhou et al., 2020), as well as the ideal timing of these interventions to maximize therapeutic efficacy. Future studies could also address the size limitations of this study, which was not powered to explore race- or ethnicity-related differences in COVID-19 severity. Finally, we present the application of this mutual information algorithm as a way to evaluate the dataset as a whole and elucidate the most important cytokines in predicting the\u00a0presenting severity of COVID-19. COVID-19 severity is influenced by many clinical factors, such as age, and this algorithm is able to identify cytokines that contribute information not present in the tested clinical variables. Identifying the most important variables for severe presentation of COVID-19 within a more complete cytokine profile may help determine global immune mechanisms of disease severity.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological samples (Human)</td>\n      <td>Human plasma</td>\n      <td>Lifespan Brown COVID-19 Biobank</td>\n      <td>See data table</td>\n      <td>48 unique patients</td>\n    </tr>\n    <tr>\n      <td>Biological samples (Human)</td>\n      <td>Human plasma</td>\n      <td>Lee BioSolutions</td>\n      <td>991\u201358-PS</td>\n      <td>24 unique patients</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MILLIPLEX MAP Human Immunology Multiplex Assay</td>\n      <td>Millipore Sigma</td>\n      <td>15-Plex # HCYTA-60K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>R Project for Statistical Computing</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Luminex 100/200 System assay platform</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>https://www.luminexcorp.com/luminex-100200</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Biobank samples\n\nCOVID-19 (+) and (\u2212) human plasma samples were received from the Lifespan Brown COVID-19 Biobank from Brown University at Rhode Island Hospital (Providence, RI). All biobank samples were collected on patients\u2019 arrival in the Emergency Department at Rhode Island Hospital. All patient samples were deidentified but included the available clinical information as described in Results. It is unknown if any patients were blood relatives. The IRB study protocol \u2018Pilot Study Evaluating Cytokine Profiles in COVID-19 Patient Samples\u2019 did not meet the definition of human subjects research by either the Brown University or the Rhode Island Hospital IRBs. All samples were thawed and centrifuged at 14,000 rpm for 10 min following the manufacturer protocol included with the Luminex kit to remove cellular debris immediately before the assay was run.\n\n### Donor samples\n\nNormal, healthy, COVID-19 (\u2212) samples were commercially available from Lee BioSolutions (991\u201358-PS-1, Lee BioSolutions, Maryland Heights, MO). All samples were thawed and centrifuged at 14,000 rpm for 10 min following the manufacturer protocol included with the Luminex kit to remove cellular debris immediately before the assay was run.\n\n### Cytokine and chemokine measurements\n\nA MilliPlex MILLIPLEX MAP Human Cytokine/Chemokine/Growth Factor Panel A \u2013\u00a0Immunology Multiplex Assay (HCYTA-60K-13, Millipore Sigma, Burlington, MA) was run on a Luminex 200 Instrument (LX200-XPON-RUO, Luminex Corporation, Austin, TX) according to the manufacturer\u2019s instructions. Plasma levels of granulocyte colony-stimulating factor (G-CSF), IFN-\u03b3, interleukin one alpha (IL-1\u03b1), interleukin-1 receptor antagonist (IL-1RA), IL-2, IL-6, IL-7, IL-12, IP-10, monocyte chemoattractant protein-1 (MCP-1), M-CSF, macrophage inflammatory protein-1 alpha (MIP-1\u03b1), and tumor necrosis factor alpha (TNF-\u03b1) were measured. Data pre-processing: values below limit of detection were re-coded as half the limit of detection. A single extreme outlier value in IFN-y levels was removed after confirming outlier status via Hampel and Grubbs outlier testing (both p<0.01).\n\n### Clinical variables\n\nAvailable deidentified clinical variables were collected from patients and from chart review during their time in the emergency department. Clinical variables were categorized to create combined variables such as the number of chronic conditions or the number of presenting symptoms. The full breakdown of clinical variable categorization can be found in Figure 2\u2014source data 1.\n\n### Data analysis\n\nData analysis and visualization were generated using R (R Development Core Team, 2020). The varrank package (Kratzer and Furrer, 2020) was used to apply a minimum-redundancy maximum-relevance mutual information algorithm. The algorithm classifies the amount of information each cytokine and clinical variable can provide about the outcome variable, CSS. Each cytokine variable was discretized into two clusters \u2013\u00a0either high or low analyte concentration in pg/mL \u2013\u00a0using k-means clustering to minimize within-variable entropy and, thus, over-fitting. This algorithm partitions each data point into the cluster (high or low analyte concentration) with the nearest mean. Clinical variables and cytokine levels were used to predict CSS. The first variable was selected for local optimum relevance by a greedy algorithm. All subsequent variables were ordered to maximize relevancy and minimize redundancy. The ordering was robust to leave-one-out cross-validation. For each cytokine, one-way\u00a0ANOVA with Tukey\u2019s honest significant difference test and \u0160id\u00e1k correction for multiple comparisons was used to compare plasma cytokine levels among CSS groups.\n",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "06e63fba-efc0-4bda-b895-078050418c83",
+      "submission_id": "d1aa07f2-663c-4897-94b8-9e0295c2bebf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jameel Iqbal, James J. Peters Veterans Affairs Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64958.sa1](https://doi.org/10.7554/eLife.64958.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIt's now known that SARS-CoV-2 infection can cause numerous changes in cytokines, and it has been hypothesized that in critically ill patients these changes are correlated with the severity of disease. This paper is of interest to the overall COVID-19 community in that presents an analysis of cytokines that identifies Macrophage Activation Syndrome as a correlate with disease severity.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cytokine ranking via mutual information algorithm correlates cytokine profiles with disease severity in COVID-19\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe premise behind this manuscript is important and timely both for scientists focused on better understanding the variable immune response against the severe acute respiratory syndrome-coronavirus-2 (SARS-CoV-2) in different individuals and for physicians intent on improving the outcomes for their SARS-CoV-2 infected patients. The paper correlates the COVID-19 Severity Score (CSS) with a cytokine array along with demographic factors and a chest x-ray to see which components are predictive of severe COVID-19. The analysis is well presented and the experiments are straight forward in nature. Overall, the data are collected, controlled, and analyzed properly, and support the conclusions of the manuscript within the current context. If replicated in follow-on studies of independent patients, the findings may ultimately help to inform the development of improved diagnostics and therapeutics.\n\nEssential revisions:\n\nOverall the comments from the reviewers were positive, and suggest that the manuscript can be further strengthened by the revisions that are mostly explanatory in nature as indicated below.\n\n1) Please include data on common lab parameters if available. For example, if there is data on CRP or fibrinogen, that would be interesting to add. Likewise, since the absolute monocyte count and the relative percentage of monocytes in the total white blood cell count are standard clinical assays obtained routinely in all SARS-CoV-2 infected patients presenting to hospital EDs for evaluating the possibility of progression in the less severely affected subset of subjects as well as in the subset of more severely affected subjects at presentation, can you discuss what you found when these two immunologically-relevant cellular parameters were included in the analysis you performed. If you did not analyze them, can you explain why not? Either way, a sentence or two should be included at this point in the Discussion section that these routinely measured cellular hematologic parameters would be a logical biomarker to explore in light of your main findings and conclusions, which include M-CSF as one of the four cytokines you identified that increase predictiveness.\n\n2) Please state when the patient-derived blood samples were obtained. This is critical information and should be described here. Based on your use of \"presenting\" in the title and other places in the text, we are quite sure that the patient samples were collected on their arrival in the Emergency Dept of the Rhode Island Hospital, which would also have to be the case if the samples from all of the subjects (other than the normal subjects whose samples were purchased) were supposed to have been drawn at the same clinically-relevant point-in-time, i.e. as some of SARS-CoV-2 infected patients were asymptomatic and not admitted to the hospital, etc. Please also mention whether all of the patients were unrelated or if any were related, as this would then require accounting for the non-independence of the data generated from them, although this is mainly important for genetic association studies.\n\n3) Please describe the centrifugation parameters employed including the g-force and length of time of the spin and mention what was the exact sample that was obtained. Was it, for example, citrated plasma samples used for coagulation studies? If so, why were the tubes needing to be spun again as whole blood samples centrifuged to remove aliquots of citrated plasma are spun at high speed two times to ensure platelet poor plasma which would also ensure cellular debris would have been removed.\n\n4) The text of the manuscript, both in the Materials and methods section and elsewhere, creates the impression you performed a multiplex assay to measure the levels of the 15 cytokines listed in each study subject's plasma sample. But here, in the Materials and methods section, you mention (for the first time) that it is each subject's \"production of\" cytokines in the culture supernatant\" which was used for the multiplex measurement. Please provide details as to: (i) what blood cell type or types (e.g., PBMCs) were used; (ii) how you isolated the blood cell(s); (iii) how you cultured them, i.e. in which medium and under what atmosphere they were cultured, and for how long, etc.; and (iv) how the conditioned medium was collected, processed and assayed.\n\n5) Please explain briefly if and how in these statistical analyses you accounted for the issue of multiple testing (i.e., for the multiple cytokine measures).\n\n6) It is important to include information on the well-known race- and ethnicity-based disparities in case fatality rates (CFRs) in African Americans and Mexican Americans. Please also include it as one of your \"clinical variables\" in your analysis. If you did incorporate it in your analysis, please add text to discuss it. If you did not, please discuss why not?\n\n7) Figure 3 is cited in the text of the manuscript proper before Figure 2 is cited. Switch the numbering please.\n\n8) In the legend for Figure 3B the labels for the y-axis (\"years\") and x-axis (\"M-CSF concentration in pg/mL\") are reversed to what is in the actual figure. Please correct this discrepancy.\n\n9) It would be helpful to also show in Figure 3C the ROC curve(s) for predicting CSS 4-5 using age alone, and possibly, age together with only M-CSF levels.\n\n10) Please correct the stylistic points and/or typos which we have highlighted yellow and/or struck through in the marked up word version of your manuscript.\n",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b4cde15d-8d15-4d00-adfc-b4e192c40323",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C1",
+      "claim": "Analysis was performed for 36 PCR-confirmed COVID-19 (+) and 36 (\u2212) human plasma samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis was performed for 36 PCR-confirmed COVID-19 (+) and 36 (\u2212) human plasma samples (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the sample size used in the study, supported by reference to source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "58bc6015-f43a-4633-835d-ba7de95d0f38",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C2",
+      "claim": "The COVID-19 Severity Score (CSS) was developed to categorize patients based on their status upon presentation to the emergency department.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 Severity Score (CSS) was developed to categorize patients based on their status upon presentation to the emergency department.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for creating the CSS classification system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "ceefb5ae-30f9-4ddf-bc9b-96fe241c3dcf",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C3",
+      "claim": "CSS 0 includes COVID (\u2212), no symptoms, healthy control patients (n = 24).",
+      "claim_type": "EXPLICIT",
+      "source": "CSS is graded as follows: 0 = COVID (\u2212), no symptoms, healthy control (n = 24)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "b803969d-4a50-48a1-9494-bf9ac2389085",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C4",
+      "claim": "CSS 1 includes COVID (\u2212) patients with symptoms (n = 12).",
+      "claim_type": "EXPLICIT",
+      "source": "1 = COVID (\u2212), symptoms (n = 12)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "e7e00237-900f-4fe9-b887-50d61df62578",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C5",
+      "claim": "CSS 2 includes COVID (+) patients discharged from emergency room (n = 15).",
+      "claim_type": "EXPLICIT",
+      "source": "2 = COVID (+), discharged from emergency room (n = 15)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "9fe9448b-5e4c-420c-a3ad-e6796091fe03",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C6",
+      "claim": "CSS 3 includes COVID (+) patients admitted but who did not require supplemental oxygen (n = 7).",
+      "claim_type": "EXPLICIT",
+      "source": "3 = COVID (+), admitted, but who did not require supplemental oxygen (n = 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "c5ea021f-874e-498c-a3f2-9501850a9f08",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C7",
+      "claim": "CSS 4 includes COVID (+) patients admitted and required any amount of supplemental oxygen or positive pressure ventilation (n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "4 = COVID (+), admitted and required any amount of supplemental oxygen or positive pressure ventilation (n = 8)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "d5a8fd40-955e-4431-b3da-8dfeb00dd058",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C8",
+      "claim": "CSS 5 includes COVID (+) patients admitted to ICU/step-down (n = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "5 = COVID (+), admitted to ICU/step-down (n = 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "23a64a92-d7c1-44c4-9a23-34468a004ce7",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C9",
+      "claim": "A mutual information minimum-redundancy maximum-relevance algorithm was used to select variables most predictive of CSS.",
+      "claim_type": "EXPLICIT",
+      "source": "CSS was used as the outcome variable for a mutual information minimum-redundancy maximum-relevance algorithm (Kratzer and Furrer, 2018; Figure 1), with the goal of selecting a subset of variables most predictive of CSS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used, supported by citation to the algorithm source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "916c2047-0007-4927-9a42-a30bb14ceb3f",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C10",
+      "claim": "The mutual information algorithm confirmed the predictive value of clinical variables such as age and chest x-ray abnormality.",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm confirmed the predictive value of clinical variables such as age and chest x-ray abnormality and also ranked the information gain provided by each of 15 cytokines tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the algorithm's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "626d0151-ae39-4b2b-8fe0-98ef13ff0a04",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C11",
+      "claim": "Several cytokines were able to add unique predictive value to the mutual information model in addition to what was provided by clinical factors such as age or patient comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "Several cytokines were able to add unique predictive value to the mutual information model in addition to what was provided by clinical factors such as age or patient comorbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the findings from the mutual information analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "4f4fe418-c651-4538-96a6-307dc1273427",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C12",
+      "claim": "Macrophage colony-stimulating factor (M-CSF) was ranked second after age as the factor that added the most predictive power to the algorithm with minimal redundancy with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophage colony-stimulating factor (M-CSF) was ranked second after age as it was the factor that added the most predictive power to the algorithm with minimal redundancy with age.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "2984f101-3767-419b-8429-085533fc93af",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C13",
+      "claim": "M-CSF ranked ahead of abnormalities on chest x-ray because while both were relevant in predicting COVID severity, part of the predictiveness of chest x-ray abnormality was also explained by age differences.",
+      "claim_type": "EXPLICIT",
+      "source": "It ranked ahead of abnormalities on chest x-ray because while both were relevant in predicting COVID severity, part of the predictiveness of chest x-ray abnormality was also explained by age differences (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explains the ranking logic based on the mutual information algorithm results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "95178944-b6a4-4e1d-9d31-caa723bffa28",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C14",
+      "claim": "The top four cytokines combined with age were predictive of the most severe CSS (4\u20135) and had a receiver operating characteristic with an area under the curve of 0.86.",
+      "claim_type": "EXPLICIT",
+      "source": "The top four cytokines combined with age were predictive of the most severe CSS (4\u20135) and had a receiver operating characteristic (Figure 2), with an area under the curve of 0.86.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the predictive performance, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "2b9e6c15-8fc4-4b70-8cc6-deecf9cf7d37",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C15",
+      "claim": "M-CSF showed a statistically significant difference (p<0.01) in profiles when segregated by CSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple cytokines, including M-CSF (p<0.01), interferon-inducible protein 10 (IP-10) (p<0.01), interleukin 18 (IL-18) (p<0.01), and interleukin-1 receptor antagonist (IL-1RA) (p<0.01), were more relevant in predicting CSS than more frequently characterized cytokines in the context of COVID-19 such as IL-6 (p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3 with ANOVA results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "6c156e3f-a85c-4735-a7cc-32a4380aa86e",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C16",
+      "claim": "IP-10 showed a statistically significant difference (p<0.01) in profiles when segregated by CSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple cytokines, including M-CSF (p<0.01), interferon-inducible protein 10 (IP-10) (p<0.01), interleukin 18 (IL-18) (p<0.01), and interleukin-1 receptor antagonist (IL-1RA) (p<0.01), were more relevant in predicting CSS than more frequently characterized cytokines in the context of COVID-19 such as IL-6 (p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3 with ANOVA results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "b63e97a5-5521-4737-9058-212577e3187a",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C17",
+      "claim": "IL-18 showed a statistically significant difference (p<0.01) in profiles when segregated by CSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple cytokines, including M-CSF (p<0.01), interferon-inducible protein 10 (IP-10) (p<0.01), interleukin 18 (IL-18) (p<0.01), and interleukin-1 receptor antagonist (IL-1RA) (p<0.01), were more relevant in predicting CSS than more frequently characterized cytokines in the context of COVID-19 such as IL-6 (p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3 with ANOVA results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "564754a5-9f69-4272-b6b0-cc03cc8b2db0",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C18",
+      "claim": "IL-1RA showed a statistically significant difference (p<0.01) in profiles when segregated by CSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple cytokines, including M-CSF (p<0.01), interferon-inducible protein 10 (IP-10) (p<0.01), interleukin 18 (IL-18) (p<0.01), and interleukin-1 receptor antagonist (IL-1RA) (p<0.01), were more relevant in predicting CSS than more frequently characterized cytokines in the context of COVID-19 such as IL-6 (p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3 with ANOVA results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "b4283e62-408f-4507-b210-43096e3d3dcf",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C19",
+      "claim": "M-CSF, IP-10, IL-18, and IL-1RA were more relevant in predicting CSS than IL-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple cytokines, including M-CSF (p<0.01), interferon-inducible protein 10 (IP-10) (p<0.01), interleukin 18 (IL-18) (p<0.01), and interleukin-1 receptor antagonist (IL-1RA) (p<0.01), were more relevant in predicting CSS than more frequently characterized cytokines in the context of COVID-19 such as IL-6 (p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison of cytokine relevance based on the mutual information algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "01e953a4-8625-42ca-b1cc-eee46887b4c3",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C20",
+      "claim": "The mutual information algorithm prioritized cytokines whose predictive value for COVID-19 severity cannot be fully explained by other clinical variables such as age or medical comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the mutual information algorithm is prioritizing cytokines whose predictive value for COVID-19 severity cannot be fully explained by other clinical variables such as age or medical comorbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of how the algorithm functions based on the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "47ee316d-4923-4519-a8ff-1c312c089a8e",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C21",
+      "claim": "SARS-CoV-2 emerged in Wuhan, China in December 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "In December 2019, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), the origin of coronavirus disease 2019 (COVID-19), emerged in Wuhan, China (Zhu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "3d242624-bea4-4902-b465-0a16716b6809",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C22",
+      "claim": "Many COVID-19 patients remain asymptomatic.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many COVID-19 patients remain asymptomatic, there exists a subset of patients who present with severe illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "c0dc42ca-10c1-4f37-b818-8d11c52bbe34",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C23",
+      "claim": "A subset of COVID-19 patients present with severe illness.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many COVID-19 patients remain asymptomatic, there exists a subset of patients who present with severe illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "2a3db3b8-aa88-4b76-9c02-73180a516bdb",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C24",
+      "claim": "Early treatment with dexamethasone appears to improve outcomes in severely ill COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Early treatment with dexamethasone appears to improve outcomes in these patients. However, it is not always initially clear which patients would benefit from this therapy (The RECOVERY Collaborative Group, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the RECOVERY trial.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "ede0b8b8-eea8-4fe2-a89b-59b7feac66ea",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C25",
+      "claim": "It is not always initially clear which COVID-19 patients would benefit from dexamethasone therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is not always initially clear which patients would benefit from this therapy (The RECOVERY Collaborative Group, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents a clinical challenge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "91182b00-fd98-429a-9013-8f64149fdfe5",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C26",
+      "claim": "COVID-19 infection can be accompanied by a severe inflammatory response characterized by the release of pro-inflammatory cytokines, known as cytokine storm.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, COVID-19 infection can be accompanied by a severe inflammatory response characterized by the release of pro-inflammatory cytokines, an event known as cytokine storm (CS) (Tang et al., 2020; Ragab et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "7cfd7df0-ddf4-4eb0-9af3-f9b00a0fa54c",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C27",
+      "claim": "COVID-19-associated cytokine storm has predominantly been characterized by the presence of IL-1\u03b2, IL-2, IL-17, IL-8, TNF, CCL2, and most notably IL-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, this COVID-19-associated CS has predominantly been characterized by the presence of IL-1\u03b2, IL-2, IL-17, IL-8, TNF, CCL2, and most notably IL-6 (Tang et al., 2020; Merad and Martin, 2020; McGonagle et al., 2020; Wan et al., 2020; Otsuka and Seino, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "c82547ea-9731-4792-a3fb-f28a49780657",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C28",
+      "claim": "Severe cases of cytokine storm can be life threatening.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe cases of CS can be life threatening, and early diagnosis as well as treatment of this condition can lead to improved outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established medical knowledge about cytokine storm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "096bff12-54c3-4605-89d8-2817fc93465d",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C29",
+      "claim": "Early diagnosis and treatment of cytokine storm can lead to improved outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe cases of CS can be life threatening, and early diagnosis as well as treatment of this condition can lead to improved outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "7716f0de-c0f4-47a2-b2a8-8151e3639249",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C30",
+      "claim": "Cytokine profiles combined with clinical information can predict disease severity in COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that cytokine profiles combined with clinical information can predict disease severity, potentially giving clinicians an additional tool when evaluating patients for preemptive intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main hypothesis of the study, which is then tested with data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "9f5bcef0-91e0-4aa8-9d16-5e1c1089432b",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C31",
+      "claim": "IP-10 is secreted by monocytes, fibroblasts, and endothelial cells in response to interferon gamma (IFN-\u03b3).",
+      "claim_type": "EXPLICIT",
+      "source": "IP-10 is secreted by monocytes, fibroblasts, and endothelial cells in response to interferon gamma (IFN-\u03b3), which is secreted by T cells (mainly, Th1), macrophages, mucosal epithelial cells, and natural killer (NK) cells (Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "8d5cc591-d3f5-49df-b2f9-131e931d69be",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C32",
+      "claim": "IFN-\u03b3 is secreted by T cells (mainly, Th1), macrophages, mucosal epithelial cells, and natural killer (NK) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "IP-10 is secreted by monocytes, fibroblasts, and endothelial cells in response to interferon gamma (IFN-\u03b3), which is secreted by T cells (mainly, Th1), macrophages, mucosal epithelial cells, and natural killer (NK) cells (Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "72e63b0d-03a1-4c1a-8b7f-a4d17c3fe27b",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C33",
+      "claim": "The release of IFN-\u03b3 induces several cell types to produce IP-10, which consequently recruits more Th1 cells, contributing to a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "This release of IFN-\u03b3 induces several cell types to produce IP-10, which consequently recruits more Th1 cells, contributing to a positive feedback loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established immunological knowledge and inference from cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "169fb224-0d57-43e6-9262-623c50550fe8",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C34",
+      "claim": "IP-10 is chemoattractant to CXCR3-positive cells such as macrophages, dendritic cells, NK cells, and T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "IP-10 is also chemoattractant to CXCR3-postitive cells such as macrophages, dendritic cells, NK cells, and T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established immunological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "b25e3dea-4085-4bf9-bd4f-778f42c01d6a",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C35",
+      "claim": "Macrophages recruited by IP-10, in the presence of persistent IFN-\u03b3 production, can lead to macrophage activation syndrome (MAS).",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that macrophages recruited by IP-10, in the presence of persistent IFN-\u03b3 production, can lead to MAS (Merad and Martin, 2020; McGonagle et al., 2020; Otsuka and Seino, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "ab77dc30-1dad-4e20-af26-ee72a377a6e1",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C36",
+      "claim": "MAS is characterized as a state of systemic hyperinflammation often accompanied by cytokine storm.",
+      "claim_type": "EXPLICIT",
+      "source": "MAS is characterized as a state of systemic hyperinflammation often accompanied by CS, which, without intervention, can lead to severe tissue damage and, in extreme cases, death (Otsuka and Seino, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "2f0511f9-5d79-4c6c-9580-1dc1f2413fac",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C37",
+      "claim": "MAS without intervention can lead to severe tissue damage and, in extreme cases, death.",
+      "claim_type": "EXPLICIT",
+      "source": "MAS is characterized as a state of systemic hyperinflammation often accompanied by CS, which, without intervention, can lead to severe tissue damage and, in extreme cases, death (Otsuka and Seino, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "02b3ef40-b75e-4e4b-9ff4-29626d7e1c42",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C38",
+      "claim": "M-CSF is secreted by eukaryotic cells in response to viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the cytokine most relevant in predicting CSS was M-CSF, which is secreted by eukaryotic cells in response to viral infection and stimulates hematopoietic stem cells to differentiate into macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about M-CSF function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "0694c8bd-36f4-4e15-9e97-6962c1361b8e",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C39",
+      "claim": "M-CSF stimulates hematopoietic stem cells to differentiate into macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the cytokine most relevant in predicting CSS was M-CSF, which is secreted by eukaryotic cells in response to viral infection and stimulates hematopoietic stem cells to differentiate into macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about M-CSF function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "8d06d908-125f-4ff1-a4c2-6cc9442cc157",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C40",
+      "claim": "There are three separate immune stages that describe the progression of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, there are three separate immune stages that describe the progression of COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation in the following sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "798901ca-ef69-4a91-9104-ff18f4f3cfaf",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C41",
+      "claim": "The first stage of COVID-19 is characterized by a potent induction of interferons that marks the early activation of the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The first stage is characterized by a potent induction of interferons that marks the early activation of the immune system that is important in the viral response, and the second stage is characterized by a delayed interferon response (Merad and Martin, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "65042fe9-d6d4-4f6b-9ce9-d28108b46f86",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C42",
+      "claim": "The second stage of COVID-19 is characterized by a delayed interferon response.",
+      "claim_type": "EXPLICIT",
+      "source": "The first stage is characterized by a potent induction of interferons that marks the early activation of the immune system that is important in the viral response, and the second stage is characterized by a delayed interferon response (Merad and Martin, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "08ade83c-b946-4e1d-87b9-7213e6de618a",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C43",
+      "claim": "The third stage of COVID-19 may be comprised of detrimental hyperinflammation characterized by cytokine storm and MAS.",
+      "claim_type": "EXPLICIT",
+      "source": "These stages may prime the body for a third stage comprised of detrimental hyperinflammation characterized by CS and MAS (Merad and Martin, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature and uses speculative language ('may').",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "bc3a6a60-7ace-40b9-9a8c-a7da94f6e18b",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C44",
+      "claim": "Excessive macrophage activation could explain the increase in IL1-RA observed in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "This excessive macrophage activation could explain the increase in IL1-RA that we observed, a cytokine abundantly produced by macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data and known biology of IL-1RA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "56169780-9699-4397-8340-7723133fa043",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C45",
+      "claim": "IL-1RA is a cytokine abundantly produced by macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This excessive macrophage activation could explain the increase in IL1-RA that we observed, a cytokine abundantly produced by macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about IL-1RA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "1a2877cf-838c-4216-ab67-94493040c1c8",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C46",
+      "claim": "Steroids have shown a survival benefit for COVID-19, likely by suppressing detrimental hyperinflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Steroids have shown a survival benefit for COVID-19, likely by suppressing such detrimental hyperinflammation (The RECOVERY Collaborative Group, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the RECOVERY trial.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "9b477f1e-3a16-4d9f-993c-68a1c226efc8",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C47",
+      "claim": "The study identified a pattern of cytokine alterations on presentation associated with COVID-19 severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis identified a pattern of cytokine alterations on presentation associated with COVID-19 severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "96a75c35-a1e6-4417-882c-5b9d9ddeffcf",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C48",
+      "claim": "The ability to identify a cytokine pattern less redundant with known clinical factors such as age and chest x-ray could help better identify patients in need of immunomodulatory treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to identify a cytokine pattern less redundant with known clinical factors such as age and chest x-ray could help better identify patients in need of immunomodulatory treatment without the confounders of current models where the measured cytokines correlate as much with age as with severity (Pierce et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential clinical applications, supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "c7a76a68-cb40-4012-b4a2-5f3f4385ce32",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C49",
+      "claim": "In current models, measured cytokines correlate as much with age as with COVID-19 severity.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to identify a cytokine pattern less redundant with known clinical factors such as age and chest x-ray could help better identify patients in need of immunomodulatory treatment without the confounders of current models where the measured cytokines correlate as much with age as with severity (Pierce et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "61ccbc1d-f437-4f88-9ce7-a81a7983a686",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C50",
+      "claim": "Future studies could identify more targeted immunomodulatory strategies beyond steroid administration such as treatment with MEK inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of these future studies could identify more targeted immunomodulatory strategies beyond steroid administration such as treatment with MEK inhibitors (Zhou et al., 2020), as well as the ideal timing of these interventions to maximize therapeutic efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions, supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "e3390bb0-3837-4a62-a0e0-241b11393e7a",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C51",
+      "claim": "The study was not powered to explore race- or ethnicity-related differences in COVID-19 severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Future studies could also address the size limitations of this study, which was not powered to explore race- or ethnicity-related differences in COVID-19 severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study's limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "1e8fcd41-d0d5-4cec-8252-04d45599ed2f",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C52",
+      "claim": "The mutual information algorithm is able to identify cytokines that contribute information not present in the tested clinical variables.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID-19 severity is influenced by many clinical factors, such as age, and this algorithm is able to identify cytokines that contribute information not present in the tested clinical variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the algorithm's capability based on the study results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "40930cd7-d2a4-4421-8ac3-1ddc38f5581c",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C53",
+      "claim": "COVID-19 (+) and (\u2212) human plasma samples were received from the Lifespan Brown COVID-19 Biobank from Brown University at Rhode Island Hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID-19 (+) and (\u2212) human plasma samples were received from the Lifespan Brown COVID-19 Biobank from Brown University at Rhode Island Hospital (Providence, RI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the samples used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "03343e00-94e8-41fa-9650-52d1b12aca98",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C54",
+      "claim": "All biobank samples were collected on patients' arrival in the Emergency Department at Rhode Island Hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "All biobank samples were collected on patients' arrival in the Emergency Department at Rhode Island Hospital.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the timing of sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "1f90d9a4-10b2-4b24-8931-504b006923df",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C55",
+      "claim": "All patient samples were deidentified but included available clinical information.",
+      "claim_type": "EXPLICIT",
+      "source": "All patient samples were deidentified but included the available clinical information as described in Results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nature of the patient data used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "46213e59-4f4d-4561-ac6a-42ffa775bc6a",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C56",
+      "claim": "It is unknown if any patients were blood relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unknown if any patients were blood relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "a11c9036-501a-42e6-ae21-d615adb3d0d3",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C57",
+      "claim": "The IRB study protocol did not meet the definition of human subjects research by either the Brown University or the Rhode Island Hospital IRBs.",
+      "claim_type": "EXPLICIT",
+      "source": "The IRB study protocol 'Pilot Study Evaluating Cytokine Profiles in COVID-19 Patient Samples' did not meet the definition of human subjects research by either the Brown University or the Rhode Island Hospital IRBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the ethical review status of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "9ac38453-1368-4736-b2e1-641389bbc260",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C58",
+      "claim": "Normal, healthy, COVID-19 (\u2212) samples were commercially available from Lee BioSolutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Normal, healthy, COVID-19 (\u2212) samples were commercially available from Lee BioSolutions (991\u201358-PS-1, Lee BioSolutions, Maryland Heights, MO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of control samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "ca13591e-cdad-4b89-814b-9145a73969cd",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C59",
+      "claim": "A MilliPlex MILLIPLEX MAP Human Cytokine/Chemokine/Growth Factor Panel A was run on a Luminex 200 Instrument according to the manufacturer's instructions.",
+      "claim_type": "EXPLICIT",
+      "source": "A MilliPlex MILLIPLEX MAP Human Cytokine/Chemokine/Growth Factor Panel A \u2013 Immunology Multiplex Assay (HCYTA-60K-13, Millipore Sigma, Burlington, MA) was run on a Luminex 200 Instrument (LX200-XPON-RUO, Luminex Corporation, Austin, TX) according to the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "75737db7-b851-48d2-a22c-cdaf16559bae",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C60",
+      "claim": "Plasma levels of G-CSF, IFN-\u03b3, IL-1\u03b1, IL-1RA, IL-2, IL-6, IL-7, IL-12, IP-10, MCP-1, M-CSF, MIP-1\u03b1, and TNF-\u03b1 were measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma levels of granulocyte colony-stimulating factor (G-CSF), IFN-\u03b3, interleukin one alpha (IL-1\u03b1), interleukin-1 receptor antagonist (IL-1RA), IL-2, IL-6, IL-7, IL-12, IP-10, monocyte chemoattractant protein-1 (MCP-1), M-CSF, macrophage inflammatory protein-1 alpha (MIP-1\u03b1), and tumor necrosis factor alpha (TNF-\u03b1) were measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This lists the cytokines measured in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "43bdfce0-58a5-4f9b-9a53-87f2b2fa795c",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C61",
+      "claim": "Values below limit of detection were re-coded as half the limit of detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Data pre-processing: values below limit of detection were re-coded as half the limit of detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data processing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "dd2f7282-d837-444e-9fa9-276f88729b2a",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C62",
+      "claim": "A single extreme outlier value in IFN-y levels was removed after confirming outlier status via Hampel and Grubbs outlier testing (both p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "A single extreme outlier value in IFN-y levels was removed after confirming outlier status via Hampel and Grubbs outlier testing (both p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data processing step with statistical justification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "d844b449-6ad7-42bf-b522-3aa0fdcd0ce7",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C63",
+      "claim": "Data analysis and visualization were generated using R.",
+      "claim_type": "EXPLICIT",
+      "source": "Data analysis and visualization were generated using R (R Development Core Team, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software used for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "ec4a5530-4bde-453e-8b3f-a5c6307231ad",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C64",
+      "claim": "The varrank package was used to apply a minimum-redundancy maximum-relevance mutual information algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The varrank package (Kratzer and Furrer, 2020) was used to apply a minimum-redundancy maximum-relevance mutual information algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific R package used for the analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "f96c10fe-ea81-4e9e-a6c0-113366d7fdb6",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C65",
+      "claim": "Each cytokine variable was discretized into two clusters \u2013 either high or low analyte concentration in pg/mL \u2013 using k-means clustering to minimize within-variable entropy and over-fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cytokine variable was discretized into two clusters \u2013 either high or low analyte concentration in pg/mL \u2013 using k-means clustering to minimize within-variable entropy and, thus, over-fitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "ee41a118-3d49-4cd9-ac28-8829644e65ef",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C66",
+      "claim": "K-means clustering partitions each data point into the cluster (high or low analyte concentration) with the nearest mean.",
+      "claim_type": "EXPLICIT",
+      "source": "This algorithm partitions each data point into the cluster (high or low analyte concentration) with the nearest mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the k-means clustering algorithm works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "aacba19b-8ca7-476d-aed5-6906edacc612",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C67",
+      "claim": "The first variable was selected for local optimum relevance by a greedy algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The first variable was selected for local optimum relevance by a greedy algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the mutual information algorithm operates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "52ba32d5-b49d-4517-b864-c537086a894a",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C68",
+      "claim": "All subsequent variables were ordered to maximize relevancy and minimize redundancy.",
+      "claim_type": "EXPLICIT",
+      "source": "All subsequent variables were ordered to maximize relevancy and minimize redundancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the mutual information algorithm operates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "2d79ba1a-9ec3-48be-a8b1-647ffbf245b0",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C69",
+      "claim": "The ordering was robust to leave-one-out cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ordering was robust to leave-one-out cross-validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a validation step for the algorithm results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "7717bf88-8f93-4fa1-b2c1-b14ae72b7150",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C70",
+      "claim": "One-way ANOVA with Tukey's honest significant difference test and \u0160id\u00e1k correction for multiple comparisons was used to compare plasma cytokine levels among CSS groups.",
+      "claim_type": "EXPLICIT",
+      "source": "For each cytokine, one-way ANOVA with Tukey's honest significant difference test and \u0160id\u00e1k correction for multiple comparisons was used to compare plasma cytokine levels among CSS groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "ea14772f-c311-4230-9d78-c353800386fb",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C71",
+      "claim": "Cytokines singled out for relevance by the mutual information algorithm shared a connection to macrophage activation syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytokines singled out for relevance by the mutual information algorithm shared a connection to macrophage activation syndrome (MAS), raising questions about the mechanism by which SARS-CoV-2 creates severe illness in a subset of patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results based on biological knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "a89efabb-12a7-4c8b-a654-ad85e6685670",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C72",
+      "claim": "SARS-CoV-2 infection causes a plethora of changes in cytokine profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that SARS-CoV-2 infection causes a plethora of changes in cytokine profiles and that particularly in severely ill patients, these changes are consistent with the presence of macrophage activation syndrome and could furthermore be used as a biomarker to predict disease severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "2ea8b7e0-6956-4bd1-9841-c2151c58a5b0",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C73",
+      "claim": "In severely ill COVID-19 patients, cytokine profile changes are consistent with the presence of macrophage activation syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that SARS-CoV-2 infection causes a plethora of changes in cytokine profiles and that particularly in severely ill patients, these changes are consistent with the presence of macrophage activation syndrome and could furthermore be used as a biomarker to predict disease severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study data and biological interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "2e2cf533-75e0-4bff-a137-ca33149f4c9d",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C74",
+      "claim": "Cytokine profile changes could be used as a biomarker to predict COVID-19 disease severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that SARS-CoV-2 infection causes a plethora of changes in cytokine profiles and that particularly in severely ill patients, these changes are consistent with the presence of macrophage activation syndrome and could furthermore be used as a biomarker to predict disease severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion about potential clinical applications based on the study results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "2f194c05-1bbc-4fed-8618-e90a37fec338",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C75",
+      "claim": "The variables that were the most predictive of CSS included clinical variables such as age and abnormal chest x-ray as well as cytokines such as M-CSF, IP-10, and IL-1RA.",
+      "claim_type": "EXPLICIT",
+      "source": "The variables that were the most predictive of CSS included clinical variables such as age and abnormal chest x-ray as well as cytokines such as macrophage colony-stimulating factor, interferon-inducible protein 10, and interleukin-1 receptor antagonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the mutual information algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "b7dc7e48-8900-48e9-8ea2-f2fd0f2951c7",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C76",
+      "claim": "A small number of clinical and cytokine expression variables are predictive of presenting COVID-19 disease severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this methodology, we found that a small number of clinical and cytokine expression variables are predictive of presenting COVID-19 disease severity, raising questions about the mechanism by which COVID-19 creates severe illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "52d41e86-a6fa-4549-a52d-73bac30472e8",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C77",
+      "claim": "Cytokine storm is observed in a subset of symptomatic COVID-19 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the range of immune responses to severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is variable, cytokine storm is observed in a subset of symptomatic individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "254cac40-ce29-43ef-981a-034f6a5c39d3",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "claim_id": "C78",
+      "claim": "The range of immune responses to SARS-CoV-2 is variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the range of immune responses to severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is variable, cytokine storm is observed in a subset of symptomatic individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "92f3e721-f837-46ff-b224-8de0fa83ef48",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 72 plasma samples (36 COVID-19 positive, 36 negative) and developed a COVID-19 Severity Score (CSS) with six categories (0-5) based on patient status at emergency department presentation, ranging from healthy controls to ICU admission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide clear documentation of sample size, CSS development methodology, and category definitions with corresponding sample sizes. The classification system is explicitly defined and supported by Figure 1B, providing adequate methodological transparency for this cohort characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A mutual information minimum-redundancy maximum-relevance algorithm was applied to identify variables most predictive of CSS. The algorithm confirmed age and chest x-ray abnormality as predictive clinical variables, and identified M-CSF as the second-most predictive factor after age with minimal redundancy, ranking ahead of chest x-ray abnormality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13, C20, C52, C64-C69 collectively describe the analytical approach and key findings. The methodology is well-documented with appropriate citations (Kratzer and Furrer, 2018), includes validation via leave-one-out cross-validation (C69), and the results are visualized in Figure 1A. The algorithm's ability to identify non-redundant predictive variables is a strength of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "67cd14ee-061c-46d7-84ed-f54107cc8716",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The top four cytokines (M-CSF, IP-10, IL-18, IL-1RA) combined with age achieved an AUC of 0.86 for predicting the most severe CSS (4-5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 reports a specific predictive performance metric with AUC=0.86, supported by Figure 2C showing the ROC curve. This represents reasonable predictive accuracy, though the small sample size (n=14 for CSS 4-5) limits generalizability. Confidence intervals are not reported, which would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "5bc83567-e19b-4796-bc4c-a3d78729b9d0",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "M-CSF, IP-10, IL-18, and IL-1RA showed statistically significant differences (all p<0.01) across CSS groups and were more relevant predictors than IL-6, as determined by one-way ANOVA with Tukey's HSD and \u0160id\u00e1k correction for multiple comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 and C70 report statistical significance with appropriate multiple testing correction (\u0160id\u00e1k). Figure 3 provides visual support showing violin plots with ANOVA F-values and p-values. The statistical approach is sound, though the small sample sizes in some CSS categories (n=6-8 for CSS 4-5) may limit statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The cytokines identified by the mutual information algorithm (particularly IP-10, M-CSF, IL-1RA) share connections to macrophage activation syndrome (MAS), and in severely ill COVID-19 patients, cytokine profile changes are consistent with MAS presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C37 and C71, C73 provide mechanistic interpretation linking identified cytokines to MAS. While the biological connections are supported by citations (Liu et al., 2011; Merad and Martin, 2020; McGonagle et al., 2020; Otsuka and Seino, 2020), the study does not directly measure or confirm MAS diagnosis in patients. The interpretation is plausible but remains inferential without direct MAS assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "9d0a4faf-e960-43ab-aab8-c02a7468bf23",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "M-CSF, which is secreted in response to viral infection and stimulates macrophage differentiation, was the most relevant cytokine predictor. Excessive macrophage activation could explain the observed increase in IL-1RA, a cytokine abundantly produced by macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C44-C45 connect M-CSF biology to the observed findings. The biological knowledge about M-CSF function is well-established (C38-C39), and the interpretation linking macrophage activation to IL-1RA elevation (C44-C45) is reasonable given that IL-1RA is indeed produced by macrophages. The inference is logical though not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "c9ee197e-95ae-4584-a297-72d853b12803",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "COVID-19 progression involves three immune stages: early interferon induction, delayed interferon response, and potentially detrimental hyperinflammation characterized by cytokine storm and MAS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 describe a three-stage model of COVID-19 immune progression supported by citation to Merad and Martin, 2020. This represents established prior knowledge used to contextualize the study findings. The speculative language in C43 ('may') appropriately reflects uncertainty about the third stage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "d634c4e0-bc75-4624-9b2c-74748bcc6952",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study identified a pattern of cytokine alterations associated with COVID-19 severity, with age, abnormal chest x-ray, M-CSF, IP-10, and IL-1RA being the most predictive variables. A small number of clinical and cytokine variables are predictive of presenting disease severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C72, C75, C76 summarize the main findings. These are well-supported by the data presented in Figures 1-3 and the statistical analyses described. The conclusion that a small number of variables can predict severity is justified by the mutual information algorithm results and ROC analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "fed29099-fc76-4f2d-b7a6-15dbbea30a55",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cytokine profiles combined with clinical information can predict disease severity and could potentially serve as biomarkers to identify patients needing immunomodulatory treatment, addressing the limitation that current models show cytokines correlating as much with age as with severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30, C48, C49, C74 propose clinical applications. While C30 is the study hypothesis that was tested, C48 and C74 are speculative about clinical utility. The study demonstrates predictive value (AUC=0.86) but lacks prospective validation, clinical outcome data, or demonstration that the biomarker panel improves upon existing clinical decision-making. C49 is supported by citation (Pierce et al., 2020).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "e4baece6-d930-4bc7-af3e-49996224c057",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study has limitations including insufficient power to explore race/ethnicity-related differences and unknown relatedness among patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51 and C56 explicitly acknowledge study limitations. These are straightforward statements about what the study could not address, appropriately documented by the authors. The small sample size (n=72) indeed limits subgroup analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "36fe55fd-1309-4ba1-ae0e-26aeccbec669",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Samples were obtained from the Lifespan Brown COVID-19 Biobank (48 patients) and Lee BioSolutions (24 healthy controls), collected at emergency department arrival, with deidentified clinical information. The study did not meet the definition of human subjects research per IRB review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55, C57-C58 describe sample sources and ethical considerations. These are clearly documented methodological details. The IRB determination (C57) is appropriately reported, though the use of commercial controls (C58) introduces potential batch effects not discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "780075a7-bc2d-45a3-ad72-4d025b2077c2",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cytokine measurements were performed using a MilliPlex multiplex assay on a Luminex 200 instrument measuring 15 cytokines. Data preprocessing included recoding values below detection limit and removing one IFN-\u03b3 outlier confirmed by Hampel and Grubbs tests (both p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 describe experimental and data processing methods. The methodology is standard and well-documented. The outlier removal (C62) is appropriately justified with statistical tests. However, the manuscript does not report whether technical replicates were performed or provide information about assay validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "7f543556-3a0e-4611-9317-3239c0cbcbcb",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background context: SARS-CoV-2 emerged in December 2019; COVID-19 presentation varies from asymptomatic to severe; cytokine storm characterized by IL-1\u03b2, IL-2, IL-17, IL-8, TNF, CCL2, and IL-6 can be life-threatening; dexamethasone improves outcomes but patient selection is challenging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C29, C46, C77-C78 provide background knowledge supported by appropriate citations (Zhu et al., 2020; The RECOVERY Collaborative Group, 2020; Tang et al., 2020; Ragab et al., 2020; Merad and Martin, 2020; McGonagle et al., 2020; Wan et al., 2020; Otsuka and Seino, 2020). These establish the clinical and scientific context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    },
+    {
+      "id": "ac7e4daa-6093-46aa-b3cf-dec61c10888e",
+      "content_id": "930f346c-8fed-41b1-89c7-4b7c357188f3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Future studies could identify more targeted immunomodulatory strategies beyond steroids, such as MEK inhibitors, and determine optimal intervention timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is a speculative statement about future research directions, appropriately framed as such and supported by citation (Zhou et al., 2020). This represents reasonable scientific speculation based on the study findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:29.030815Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b4cde15d-8d15-4d00-adfc-b4e192c40323",
+      "result_id": "92f3e721-f837-46ff-b224-8de0fa83ef48"
+    },
+    {
+      "claim_id": "58bc6015-f43a-4633-835d-ba7de95d0f38",
+      "result_id": "92f3e721-f837-46ff-b224-8de0fa83ef48"
+    },
+    {
+      "claim_id": "ceefb5ae-30f9-4ddf-bc9b-96fe241c3dcf",
+      "result_id": "92f3e721-f837-46ff-b224-8de0fa83ef48"
+    },
+    {
+      "claim_id": "b803969d-4a50-48a1-9494-bf9ac2389085",
+      "result_id": "92f3e721-f837-46ff-b224-8de0fa83ef48"
+    },
+    {
+      "claim_id": "e7e00237-900f-4fe9-b887-50d61df62578",
+      "result_id": "92f3e721-f837-46ff-b224-8de0fa83ef48"
+    },
+    {
+      "claim_id": "9fe9448b-5e4c-420c-a3ad-e6796091fe03",
+      "result_id": "92f3e721-f837-46ff-b224-8de0fa83ef48"
+    },
+    {
+      "claim_id": "c5ea021f-874e-498c-a3f2-9501850a9f08",
+      "result_id": "92f3e721-f837-46ff-b224-8de0fa83ef48"
+    },
+    {
+      "claim_id": "d5a8fd40-955e-4431-b3da-8dfeb00dd058",
+      "result_id": "92f3e721-f837-46ff-b224-8de0fa83ef48"
+    },
+    {
+      "claim_id": "23a64a92-d7c1-44c4-9a23-34468a004ce7",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "916c2047-0007-4927-9a42-a30bb14ceb3f",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "626d0151-ae39-4b2b-8fe0-98ef13ff0a04",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "4f4fe418-c651-4538-96a6-307dc1273427",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "2984f101-3767-419b-8429-085533fc93af",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "01e953a4-8625-42ca-b1cc-eee46887b4c3",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "1e8fcd41-d0d5-4cec-8252-04d45599ed2f",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "ec4a5530-4bde-453e-8b3f-a5c6307231ad",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "f96c10fe-ea81-4e9e-a6c0-113366d7fdb6",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "ee41a118-3d49-4cd9-ac28-8829644e65ef",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "aacba19b-8ca7-476d-aed5-6906edacc612",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "52ba32d5-b49d-4517-b864-c537086a894a",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "2d79ba1a-9ec3-48be-a8b1-647ffbf245b0",
+      "result_id": "8bf745e1-e22c-4b3f-aee8-c846dd917c95"
+    },
+    {
+      "claim_id": "95178944-b6a4-4e1d-9d31-caa723bffa28",
+      "result_id": "67cd14ee-061c-46d7-84ed-f54107cc8716"
+    },
+    {
+      "claim_id": "2b9e6c15-8fc4-4b70-8cc6-deecf9cf7d37",
+      "result_id": "5bc83567-e19b-4796-bc4c-a3d78729b9d0"
+    },
+    {
+      "claim_id": "6c156e3f-a85c-4735-a7cc-32a4380aa86e",
+      "result_id": "5bc83567-e19b-4796-bc4c-a3d78729b9d0"
+    },
+    {
+      "claim_id": "b63e97a5-5521-4737-9058-212577e3187a",
+      "result_id": "5bc83567-e19b-4796-bc4c-a3d78729b9d0"
+    },
+    {
+      "claim_id": "564754a5-9f69-4272-b6b0-cc03cc8b2db0",
+      "result_id": "5bc83567-e19b-4796-bc4c-a3d78729b9d0"
+    },
+    {
+      "claim_id": "b4283e62-408f-4507-b210-43096e3d3dcf",
+      "result_id": "5bc83567-e19b-4796-bc4c-a3d78729b9d0"
+    },
+    {
+      "claim_id": "7717bf88-8f93-4fa1-b2c1-b14ae72b7150",
+      "result_id": "5bc83567-e19b-4796-bc4c-a3d78729b9d0"
+    },
+    {
+      "claim_id": "9f5bcef0-91e0-4aa8-9d16-5e1c1089432b",
+      "result_id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823"
+    },
+    {
+      "claim_id": "8d5cc591-d3f5-49df-b2f9-131e931d69be",
+      "result_id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823"
+    },
+    {
+      "claim_id": "72e63b0d-03a1-4c1a-8b7f-a4d17c3fe27b",
+      "result_id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823"
+    },
+    {
+      "claim_id": "169fb224-0d57-43e6-9262-623c50550fe8",
+      "result_id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823"
+    },
+    {
+      "claim_id": "b25e3dea-4085-4bf9-bd4f-778f42c01d6a",
+      "result_id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823"
+    },
+    {
+      "claim_id": "ab77dc30-1dad-4e20-af26-ee72a377a6e1",
+      "result_id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823"
+    },
+    {
+      "claim_id": "2f0511f9-5d79-4c6c-9580-1dc1f2413fac",
+      "result_id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823"
+    },
+    {
+      "claim_id": "ea14772f-c311-4230-9d78-c353800386fb",
+      "result_id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823"
+    },
+    {
+      "claim_id": "2ea8b7e0-6956-4bd1-9841-c2151c58a5b0",
+      "result_id": "bdb7aab3-0f4e-4c67-a084-8e39de0ed823"
+    },
+    {
+      "claim_id": "02b3ef40-b75e-4e4b-9ff4-29626d7e1c42",
+      "result_id": "9d0a4faf-e960-43ab-aab8-c02a7468bf23"
+    },
+    {
+      "claim_id": "0694c8bd-36f4-4e15-9e97-6962c1361b8e",
+      "result_id": "9d0a4faf-e960-43ab-aab8-c02a7468bf23"
+    },
+    {
+      "claim_id": "bc3a6a60-7ace-40b9-9a8c-a7da94f6e18b",
+      "result_id": "9d0a4faf-e960-43ab-aab8-c02a7468bf23"
+    },
+    {
+      "claim_id": "56169780-9699-4397-8340-7723133fa043",
+      "result_id": "9d0a4faf-e960-43ab-aab8-c02a7468bf23"
+    },
+    {
+      "claim_id": "8d06d908-125f-4ff1-a4c2-6cc9442cc157",
+      "result_id": "c9ee197e-95ae-4584-a297-72d853b12803"
+    },
+    {
+      "claim_id": "798901ca-ef69-4a91-9104-ff18f4f3cfaf",
+      "result_id": "c9ee197e-95ae-4584-a297-72d853b12803"
+    },
+    {
+      "claim_id": "65042fe9-d6d4-4f6b-9ce9-d28108b46f86",
+      "result_id": "c9ee197e-95ae-4584-a297-72d853b12803"
+    },
+    {
+      "claim_id": "08ade83c-b946-4e1d-87b9-7213e6de618a",
+      "result_id": "c9ee197e-95ae-4584-a297-72d853b12803"
+    },
+    {
+      "claim_id": "9b477f1e-3a16-4d9f-993c-68a1c226efc8",
+      "result_id": "d634c4e0-bc75-4624-9b2c-74748bcc6952"
+    },
+    {
+      "claim_id": "a89efabb-12a7-4c8b-a654-ad85e6685670",
+      "result_id": "d634c4e0-bc75-4624-9b2c-74748bcc6952"
+    },
+    {
+      "claim_id": "2f194c05-1bbc-4fed-8618-e90a37fec338",
+      "result_id": "d634c4e0-bc75-4624-9b2c-74748bcc6952"
+    },
+    {
+      "claim_id": "b7dc7e48-8900-48e9-8ea2-f2fd0f2951c7",
+      "result_id": "d634c4e0-bc75-4624-9b2c-74748bcc6952"
+    },
+    {
+      "claim_id": "7716f0de-c0f4-47a2-b2a8-8151e3639249",
+      "result_id": "fed29099-fc76-4f2d-b7a6-15dbbea30a55"
+    },
+    {
+      "claim_id": "96a75c35-a1e6-4417-882c-5b9d9ddeffcf",
+      "result_id": "fed29099-fc76-4f2d-b7a6-15dbbea30a55"
+    },
+    {
+      "claim_id": "c7a76a68-cb40-4012-b4a2-5f3f4385ce32",
+      "result_id": "fed29099-fc76-4f2d-b7a6-15dbbea30a55"
+    },
+    {
+      "claim_id": "2e2cf533-75e0-4bff-a137-ca33149f4c9d",
+      "result_id": "fed29099-fc76-4f2d-b7a6-15dbbea30a55"
+    },
+    {
+      "claim_id": "e3390bb0-3837-4a62-a0e0-241b11393e7a",
+      "result_id": "e4baece6-d930-4bc7-af3e-49996224c057"
+    },
+    {
+      "claim_id": "46213e59-4f4d-4561-ac6a-42ffa775bc6a",
+      "result_id": "e4baece6-d930-4bc7-af3e-49996224c057"
+    },
+    {
+      "claim_id": "40930cd7-d2a4-4421-8ac3-1ddc38f5581c",
+      "result_id": "36fe55fd-1309-4ba1-ae0e-26aeccbec669"
+    },
+    {
+      "claim_id": "03343e00-94e8-41fa-9650-52d1b12aca98",
+      "result_id": "36fe55fd-1309-4ba1-ae0e-26aeccbec669"
+    },
+    {
+      "claim_id": "1f90d9a4-10b2-4b24-8931-504b006923df",
+      "result_id": "36fe55fd-1309-4ba1-ae0e-26aeccbec669"
+    },
+    {
+      "claim_id": "a11c9036-501a-42e6-ae21-d615adb3d0d3",
+      "result_id": "36fe55fd-1309-4ba1-ae0e-26aeccbec669"
+    },
+    {
+      "claim_id": "9ac38453-1368-4736-b2e1-641389bbc260",
+      "result_id": "36fe55fd-1309-4ba1-ae0e-26aeccbec669"
+    },
+    {
+      "claim_id": "ca13591e-cdad-4b89-814b-9145a73969cd",
+      "result_id": "780075a7-bc2d-45a3-ad72-4d025b2077c2"
+    },
+    {
+      "claim_id": "75737db7-b851-48d2-a22c-cdaf16559bae",
+      "result_id": "780075a7-bc2d-45a3-ad72-4d025b2077c2"
+    },
+    {
+      "claim_id": "43bdfce0-58a5-4f9b-9a53-87f2b2fa795c",
+      "result_id": "780075a7-bc2d-45a3-ad72-4d025b2077c2"
+    },
+    {
+      "claim_id": "dd2f7282-d837-444e-9fa9-276f88729b2a",
+      "result_id": "780075a7-bc2d-45a3-ad72-4d025b2077c2"
+    },
+    {
+      "claim_id": "d844b449-6ad7-42bf-b522-3aa0fdcd0ce7",
+      "result_id": "780075a7-bc2d-45a3-ad72-4d025b2077c2"
+    },
+    {
+      "claim_id": "47ee316d-4923-4519-a8ff-1c312c089a8e",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "3d242624-bea4-4902-b465-0a16716b6809",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "c0dc42ca-10c1-4f37-b818-8d11c52bbe34",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "2a3db3b8-aa88-4b76-9c02-73180a516bdb",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "ede0b8b8-eea8-4fe2-a89b-59b7feac66ea",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "91182b00-fd98-429a-9013-8f64149fdfe5",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "7cfd7df0-ddf4-4eb0-9af3-f9b00a0fa54c",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "c82547ea-9731-4792-a3fb-f28a49780657",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "096bff12-54c3-4605-89d8-2817fc93465d",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "1a2877cf-838c-4216-ab67-94493040c1c8",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "52d41e86-a6fa-4549-a52d-73bac30472e8",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "254cac40-ce29-43ef-981a-034f6a5c39d3",
+      "result_id": "7f543556-3a0e-4611-9317-3239c0cbcbcb"
+    },
+    {
+      "claim_id": "61ccbc1d-f437-4f88-9ce7-a81a7983a686",
+      "result_id": "ac7e4daa-6093-46aa-b3cf-dec61c10888e"
+    }
+  ],
+  "comparisons": []
+}

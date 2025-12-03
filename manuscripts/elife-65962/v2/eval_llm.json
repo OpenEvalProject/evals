@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Co-culture of spike-expressing and ACE2-expressing cells leads to formation of synapse-like contacts that precede fusion pore formation and multinucleation. These synapses are characterized by near-instantaneous spike clustering at ACE2-containing membrane protrusions, are long-lived (minutes), and fusion events typically occur within 60 minutes at high cell density. Fusion pore dilation often follows retraction of spike clusters, suggesting mechanical forces play a role. Over time, syncytia undergo vacuolization and eventually disintegrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C22 collectively describe the temporal and spatial dynamics of spike-ACE2 mediated cell-cell fusion using live cell microscopy. The data from Figure 1 and associated videos provide direct visual evidence for synapse formation, fusion kinetics, and syncytia progression. The observations are internally consistent and well-documented with time-lapse imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Syncytia observed in cell culture models resemble those found in lungs of COVID-19 patients. SARS-CoV-2 spike is more potent at inducing syncytia than SARS-CoV-1 spike or other fusogens. Histological examination revealed multinucleated syncytia in 18 of 24 COVID-19 decedents (75%), which were of lung epithelial origin (TTF-1 positive) but generally negative for viral nucleocapsid protein. Only 1 of 9 control decedents with diffuse alveolar damage from other causes showed syncytia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C28 are supported by comparative cell culture data (Figure 2A-C) and systematic histological examination of patient samples (Figure 2D-H). The statistical comparison between COVID-19 patients and controls is clear (75% vs 11.1%), and the epithelial origin is confirmed by immunohistochemistry. However, the lack of nucleocapsid staining (C28) introduces some uncertainty about the mechanism of syncytia formation in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A high-throughput heterokaryon assay was developed and optimized with Z'-factor of 0.85, with fusion detectable by 1 hour and optimal signal by 4-5 hours. Targeted compound screening revealed that nelfinavir uniquely blocked fusion among protease inhibitors, no single endocytic route was essential, and several compounds affecting membrane lipid composition (MBCD, lovastatin, genistein, nystatin) inhibited fusion. Apilimod and actin polymerization inhibitors also blocked fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 describe assay development and targeted compound screening results supported by Figure 3 and supplementary data. The Z'-factor of 0.85 indicates a robust assay. The dose-response curves for various compounds are clearly presented with appropriate controls and replicates (n=4). The findings are internally consistent and methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "An unbiased drug repurposing screen of ~6000 compounds identified 167 inhibitory hits (2.8%). The vast majority of top-80 compounds replicated in dose-response validation. Hit compounds were more lipophilic and featured more ring systems than non-hits, but EC50 values did not correlate with lipophilicity. Two scaffold classes were highly enriched: dichlorophenethyl-imidazoles (azole antifungals) and tetrahydropyran-containing macrocyclic lactones (ivermectin-like and rapamycin-like compounds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36-C40 describe the high-throughput screen and cheminformatics analysis supported by Figure 4 and Supplementary file 1. The hit rate (2.8%), validation rate, and statistical analyses of physicochemical properties are clearly documented. The scaffold enrichment analysis is rigorous with appropriate p-values. The lack of correlation between EC50 and lipophilicity (C39) strengthens the argument against promiscuous binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Spike's transmembrane and cytoplasmic domains are essential for fusion. Replacement of the TM domain with unrelated single-pass TMs (B7, ITGA1) blocked fusion despite normal localization and ACE2 binding. Serial truncations of the cytoplasmic domain revealed that removal beyond residue 1245 progressively decreased fusion, with complete loss at 1239. Fusion correlated with cysteine content of the CTD. SARS-CoV-2 spike has the highest cysteine content of all viral proteins in a 20-residue sliding window, and mutagenesis of all cysteines to alanine severely diminished fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by systematic mutagenesis studies (Figure 5A-L) and bioinformatics analysis (Figure 5G, Supplementary file 2). The experimental design is rigorous with appropriate controls for expression and localization. The correlation between cysteine content and fusion (C45) is demonstrated, and the bioinformatics analysis identifying SARS-CoV-2 spike as having the highest cysteine content among viral proteins is comprehensive. Statistical comparisons show significant differences (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Bioinformatics analysis identified only 15 'spike-like' human transmembrane proteins with high membrane-proximal cysteine and aromatic content. The top four are all critical for forming specific types of adhesion junctions: ILDR1, ILDR2, and LSR for tricellular tight junctions, and IGSF5 for kidney/intestine tight junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by systematic bioinformatics analysis of human transmembrane proteins (Figure 5H, Supplementary file 3, Figure 5\u2014figure supplement 1D). The analysis methodology is clearly described and the functional annotation of top hits is supported by literature citations. This represents a novel and interesting observation connecting viral and cellular junction proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "FRAP experiments showed that spike with native TM/CTD has significantly reduced membrane mobility compared to ACE2 and B7 TM controls. Despite this, spike does not partition strongly into the cholesterol-rich ordered phase (Lo) of GPMVs, and the raft-disrupting drug myriocin did not inhibit fusion. However, spike accumulates in immobile deposits that co-localize with cholesterol markers (SCARB1 and fluorescent cholesterol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by FRAP data (Figure 6A-C), GPMV partitioning experiments (Figure 6D), drug treatment data (Figure 6F-G), and co-localization studies (Figure 6E, Figure 6\u2014figure supplement 1A-C). The findings are somewhat paradoxical (reduced mobility and cholesterol association without raft partitioning), but the data are clearly presented with appropriate replicates. The authors acknowledge the surprising nature of the GPMV results given prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Drugs that disrupt cholesterol synthesis or reduce plasma membrane cholesterol (zaragozic acid, 25-hydroxycholesterol, MBCD) inhibited fusion in a dose-dependent manner. MBCD-conjugated cholesterol greatly enhanced fusion, unlike MBCD-conjugated linoleic or oleic acid. A subset of compounds including allylamine antifungals (naftifine, terbinafine) and anesthetics (ropivacaine, bupivacaine, propofol) enhanced fusion in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by dose-response data in the heterokaryon assay (Figure 6H-J, Figure 6\u2014figure supplement 1D-F). The experiments include appropriate controls (different MBCD-conjugated lipids) and show clear dose-dependent effects. The identification of fusion enhancers is particularly interesting and well-controlled. All experiments have n=4 biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The role of cholesterol extends to viral infection. In pseudovirus entry assays, apilimod inhibited but did not completely block entry, 25-hydroxycholesterol had no effect, but MBCD blocked entry. Critically, with replication-competent SARS-CoV-2, pre-treatment of cells with millimolar MBCD had no effect on infection, while pre-treatment of virus with low micromolar MBCD completely blocked infection. This demonstrates that viral membrane cholesterol, not host cell cholesterol, is critical for infectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C58-C63 are supported by pseudovirus entry assays (Figure 7B-D) and SARS-CoV-2 infection experiments (Figure 7E-G). The experimental design elegantly distinguishes between viral and host cell cholesterol requirements by treating virus vs. cells separately. The RT-qPCR and immunofluorescence data are consistent and show statistically significant differences (p<0.05, p<0.01). The conclusion (C63) is well-supported by the differential effects of MBCD treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims establishing that COVID-19 caused over a million deaths, spike glycoproteins give the viral envelope its crown-like appearance, ACE2 is the essential human receptor, and spike-ACE2 association underlies virus-cell adhesion preceding conformational changes that unleash fusion machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are well-established facts from prior literature, appropriately cited (Zhu et al., 2020a; Duan et al., 2020; Mittal et al., 2020; Hoffmann et al., 2020a-b; Ke et al., 2020; Lan et al., 2020; Shang et al., 2020; Wrapp et al., 2020; Yan et al., 2020). These provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims about viral membrane biology: viral proteins may prefer specific membrane lipid domains, certain viruses require receptor-lipid association for endocytosis, enveloped viruses cause syncytia formation, cell-cell fusion plays roles in viral pathogenicity, and SARS-CoV-2 syncytia have been identified similar to SARS-CoV-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are appropriately cited background information from established literature (Cattin-Ortol\u00e1 et al., 2020; Li et al., 2007; Liao et al., 2006; Lu et al., 2008a; McBride et al., 2007; Thorp and Gallagher, 2004; Levental et al., 2020; Pelkmans, 2005; Ciechonska and Duncan, 2014; Compton and Schwartz, 2017; Duelli and Lazebnik, 2007; Frankel et al., 1996; Johnson et al., 2007; Maudgal and Missotten, 1978; Li et al., 2003; Buchrieser et al., 2020; Hoffmann et al., 2020a; Ou et al., 2020; Papa et al., 2020; Xia et al., 2020; Zang et al., 2020b). These provide important context for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The findings potentially provide a molecular basis for positive outcomes in COVID-19 patients taking statins and suggest new therapeutic strategies targeting viral membranes. Retrospective analyses showed significant mortality reductions for patients on statins, which may be explained by cholesterol's critical role in virus assembly. This could also account for why COVID-19 risk factors (menopause, obesity, age) correlate with differential sterol processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 represent speculative connections between the experimental findings and clinical observations. While C103 is supported by citations to clinical studies (Daniels et al., 2020; Zhang et al., 2020), the mechanistic links proposed in C101, C102, and C104 are inferential and not directly tested in this study. The experimental data support a role for cholesterol in viral infectivity, but the connection to statin efficacy in patients and risk factor correlations remains hypothetical and would require additional clinical and mechanistic studies to validate.",
+    "result_type": "MINOR"
+  }
+]

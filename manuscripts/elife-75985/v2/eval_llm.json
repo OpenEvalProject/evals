@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C29",
+      "C30",
+      "C31",
+      "C34",
+      "C59",
+      "C69",
+      "C70",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "CODOP was developed and validated using six cohorts encompassing 29,223 COVID-19 patients from more than 150 hospitals across Spain, the USA, and Latin America during 2020-22. The training cohort consisted of 15,902 patients from 109 Spanish hospitals during the first wave (Feb-July 2020), with multiple test cohorts representing different pandemic waves, variants, and geographic locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C17, C29-C31, C34, C59, C69-C70, and C95-C97 collectively describe the comprehensive data collection strategy with clear documentation of cohort sizes, geographic distribution, temporal coverage, and eligibility criteria. The multi-cohort design with geographically diverse populations provides strong evidence for the study's scope and generalizability testing framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "CODOP was developed using modified stable iterative variable selection (SIVS) and linear regression with lasso regularization, employing 10-fold cross-validation on the training cohort. The final model uses 12 clinical parameters (11 blood biochemical parameters plus Age), with elevated values of age, neutrophils, CRP, creatinine, LDH, sodium, potassium, glucose, and D-dimer, and reduced values of platelets, eosinophils, and monocytes positively correlated with in-hospital death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 describe the model development methodology and feature selection results with appropriate citations and references to supplementary data. The use of established machine learning techniques (SIVS, lasso) with cross-validation represents sound methodological practice, and the identified biomarkers align with known COVID-19 pathophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "CODOP demonstrated superior discriminative ability for predicting in-hospital mortality (AUROC: 0.889, 95% CI 0.885-0.894) with 84% sensitivity and 78% specificity in the training cohort, outperforming benchmarked predictors (COPE, Zhang et al., and Age alone). CODOP also showed better calibration across all risk groups with lower RMSE compared to other predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C28 present comprehensive performance metrics with confidence intervals and comparative benchmarking. The AUROC values, sensitivity/specificity metrics, and calibration analyses (supported by Figure 2A-B) provide strong evidence for CODOP's superior performance. The calibration analysis identifying specific weaknesses in comparator models adds rigor to the evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C38"
+    ],
+    "result": "CODOP's performance metrics were preserved across multiple test cohorts including Test 1 and Test 2 (Spanish hospitals, different pandemic waves), External Test 3 (New York), and CODOP outperformed benchmarked predictors in all test cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C38 demonstrate temporal and geographic generalizability through testing on independent cohorts from different time periods and locations. The preservation of performance metrics across diverse settings (supported by Figure 2\u2014figure supplement 2) provides strong evidence for model robustness and generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C39"
+    ],
+    "result": "CODOP maintains its predictive ability independently of virus variant (Delta, Omicron) and vaccination status. Performance was preserved when Delta and Omicron VOCs were dominant, with similar discriminative ability for patients infected by either variant, and vaccination status had little influence on prediction accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35-C36, and C39 address a critical question about model stability across evolving pandemic conditions. The analysis of Test 4 cohort (2,508 patients, April 2021-Feb 2022) with different variants and vaccination statuses, supported by Figure 2\u2014figure supplement 3, provides strong evidence that CODOP's performance is robust to these important confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C40",
+      "C72"
+    ],
+    "result": "The lack of correlation between death percentage and CODOP's predictive ability across test cohorts rules out artifacts from time-slicing. The stability across different VOCs, vaccination statuses, and clinical interventions suggests CODOP captures key biomarkers involved in physiological deterioration and that the underlying inflammatory process is similar across hospitalized patients regardless of vaccination or variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C40, and C72 present important mechanistic inferences about why CODOP performs consistently. While C40 and C72 involve inference, they are reasonably supported by the empirical stability data (C37) and align with biological understanding of COVID-19 pathophysiology. The correlation analysis (C37) provides evidence against time-slicing artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CODOP predicted patient outcomes nine days in advance with average sensitivity >90% (at fixed 75% specificity) and AUROC values >90%. CODOP maintained stable sensitivity along the nine-day horizon, significantly outperforming other benchmarked predictors (p < 0.01, paired two-sided T-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 demonstrate CODOP's early warning capability with specific performance metrics and statistical significance testing. The horizon analysis (Figure 3A) provides clear visual and quantitative evidence for prediction stability over time, with appropriate statistical testing showing superiority over comparators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "CODOP enables continuous risk stratification during hospitalization, with patients having higher risk scores being more likely to die over time. This makes CODOP an early and dynamic warning tool for monitoring COVID-19 patient clinical status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe CODOP's dynamic risk stratification capability supported by survival analysis (Figure 3B). The Kaplan-Meier analysis showing clear separation between risk groups provides strong evidence for continuous monitoring utility. Claim C46 is a reasonable inference from the survival analysis results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Two CODOP subtypes were developed for different triage scenarios: CODOP-Ovt (maximizing sensitivity >95%, specificity 60-70%) for overtriage scenarios, and CODOP-Unt (maximizing specificity >95%, sensitivity 40-50%) for undertriage scenarios. Both subtypes' metrics fall within recommended triage levels (5-10% undertriage, 25-50% overtriage), with similar overall performance across test cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 describe the development and validation of two clinically-oriented model variants with clear performance trade-offs. The metrics are well-documented (Figure 4\u2014figure supplement 1), and comparison to established triage guidelines (C51, van Rein et al., 2019) provides clinical context. The confusion matrix analysis (C54) supports consistent performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A web-based CODOP application was developed, tested across devices/browsers, and validated with 42 hospitals from three Latin American countries (5,108 patients). CODOP-Ovt achieved 78-100% sensitivity and 48-67% specificity, while CODOP-Unt achieved 89-97% specificity and 19-50% sensitivity. The application computes predictions in <2 seconds for up to 2,000 patients and complies with GDPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C62 describe the translation of CODOP into a practical clinical tool with extensive external validation. The multinational Latin American validation (Figure 4A-B) provides strong evidence for real-world applicability. Performance metrics align with the intended use cases for each subtype, and technical specifications (speed, compliance) support clinical feasibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CODOP satisfies TRIPOD reporting principles, follows MINIMAR guidelines for medical AI reporting, and has been successfully assessed for risk of bias and applicability using PROBAST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 document adherence to established reporting and quality assessment frameworks with appropriate citations. While the actual checklists are in supplementary materials, the explicit statement of compliance with these recognized standards (TRIPOD, MINIMAR, PROBAST) supports methodological rigor and transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors hypothesize that CODOP's superior performance is due to using biochemical parameters representing main biological pathways in SARS-CoV-2 pathogenesis. The model captures immune dysregulation (neutrophils, eosinophils, monocytes), inflammatory response (CRP, LDH), thromboembolic complications (D-dimer, platelets), and organ failure (creatinine), which align with known COVID-19 pathophysiology including cytokine storm and type-I interferon downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 present a mechanistic hypothesis (C73) supported by established COVID-19 pathophysiology (C74-C77, with appropriate citations) and the study's own data (C76, C78-C79). While C73, C78, and C79 involve inference/speculation, they are well-grounded in both the empirical results and cited literature, providing a biologically plausible explanation for CODOP's performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "While individual biomarkers like CRP are useful for mortality prediction, CODOP's 12-parameter model outperforms CRP as a univariate predictor. Other biomarkers (IL-6, suPAR) are too expensive for widespread use in resource-limited settings. The advantage of CODOP's multi-parameter approach is its ability to represent multiple pathophysiological alterations beyond immune dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide context for CODOP's multi-parameter approach through comparison with single biomarkers. C80-C82 are supported by citations and univariate analysis data, while C83 presents a reasonable inference about why multi-parameter models may be superior. The cost consideration (C82) is particularly relevant for the stated goal of utility in resource-limited countries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "An alternative model including six comorbidities along with the 12 biochemical parameters was tested, but adding comorbidities did not improve CODOP's discriminative ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 describe a negative result from testing comorbidity inclusion. This is supported by analysis in Supplementary file 1 and represents appropriate model refinement testing. The finding that comorbidities don't improve performance is scientifically valuable and supports the final model's parsimony.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "CODOP excels in conceptual reproducibility due to geographically spread cohorts, but has inherent limitations including variability from diverse data sources, COVID-19's heterogeneity (>60 subtypes), not accounting for level of care received, and reduced effectiveness for predicting ICU admission or mechanical ventilation needs. CODOP is intended to inform monitoring needs rather than dictate specific clinical decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 provide a balanced assessment of CODOP's strengths and limitations. C86 is supported by citation and the study's multi-cohort design. C87-C89 acknowledge important limitations with appropriate citations. C90 clarifies intended use, and C91 presents data on reduced performance for other outcomes. This honest limitation discussion strengthens the overall evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors speculate that CODOP could be useful for reducing sample size calculations in clinical trials by stratifying patient severity, for analyzing observational studies, and that future participation from underrepresented regions (Africa, Asia) will improve reproducibility and enable subgroup-specific predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C94 are explicitly speculative about potential future applications and improvements. While these are reasonable hypotheses based on CODOP's demonstrated stratification ability, they represent untested possibilities rather than demonstrated results. No data are provided to support these specific applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript provides background context on the COVID-19 pandemic, including that variants carry higher hospitalization risk, vaccine-alone strategies are insufficient, numerous prediction models have been developed but independent evaluations have dismissed their clinical utility due to common pitfalls (small sample size, unmeasurable variables, lack of external validation), and COVID-19 has >60 disease subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11, C66-C68 provide literature context and motivation for the study. These are supported by appropriate citations to WHO data, peer-reviewed studies, and systematic reviews. While these are background claims rather than study results, they accurately represent the state of knowledge and provide justification for CODOP's development.",
+    "result_type": "MINOR"
+  }
+]

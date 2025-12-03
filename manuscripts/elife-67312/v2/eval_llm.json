@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "YAP and TAZ are essential for cellular transformation in the ER-Src breast cell model. Knockout or knockdown of YAP or TAZ reduces growth under low attachment conditions and inhibits colony formation in soft agar, but has no effect on proliferation under standard high attachment conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide converging evidence from both CRISPR knockout (C29-C31) and siRNA knockdown (C32) experiments showing consistent phenotypes. The specificity for transformation-associated phenotypes (low attachment, soft agar) versus normal proliferation (high attachment) strengthens the conclusion (C33). Multiple independent experimental approaches support the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C112"
+    ],
+    "result": "YAP and TAZ are important for STAT3 and AP-1 transcriptional activity during transformation. Depletion of YAP/TAZ decreases STAT3 phosphorylation, reduces IL-6 expression, and inhibits AP-1-mediated transcriptional activation without affecting STAT3 protein or mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 demonstrate that YAP/TAZ depletion affects STAT3 activation (phosphorylation) and AP-1 activity through multiple assays (Western blot, qPCR, ELISA, luciferase). The observation that nuclear YAP/TAZ levels are unchanged (C40) rules out altered localization as the mechanism. The data support a functional role in transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C2",
+      "C3"
+    ],
+    "result": "YAP and TAZ directly interact with JUNB and STAT3 through protein-protein interactions. Co-immunoprecipitation experiments demonstrate interactions in nuclear fractions of cells and with recombinant proteins, with enhanced interactions in transformed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide multiple lines of evidence for direct interactions: co-IP in cellular fractions (C41-C42) and with E. coli-expressed recombinant proteins (C43), which definitively demonstrates direct binding. The recombinant protein experiments are particularly strong as they exclude indirect interactions through other cellular proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "The WW1 domain of YAP and the WW domain of TAZ are critical for interactions with JUNB and STAT3 and are required for transformation. These domains are dispensable for TEAD interactions, and TEAD interactions alone are insufficient for transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 map interaction domains through deletion analysis, showing WW1/WW domains are required for JUNB/STAT3 but not TEAD binding. Claims C51-C52 demonstrate functional consequences in transformation assays. The logic connecting domain requirements to function is sound, though C55 involves inference about sufficiency that could benefit from additional rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C113"
+    ],
+    "result": "YAP and TAZ have highly similar genomic binding profiles with a Pearson correlation of ~0.7, but approximately 2% of sites (~575 sites) are specific for either YAP or TAZ, confirmed by ChIP-seq in knockout cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 describe the overall similarity and specific differences in YAP/TAZ binding. The use of knockout validation (C59) is a strength that confirms the specificity of the paralog-specific sites and rules out antibody cross-reactivity or other technical artifacts. The correlation coefficient provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C87",
+      "C88",
+      "C10",
+      "C114"
+    ],
+    "result": "YAP- and TAZ-specific binding sites differ from shared sites in genomic location, overlap with other transcription factors, and associated sequence motifs. TAZ-specific sites are enriched for ETS motifs and depleted for AP-1 motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C87-C88 characterize multiple distinguishing features of paralog-specific sites through genomic analysis. The enrichment of ETS motifs at TAZ-specific sites (C87) suggests a distinct recruitment mechanism. Multiple independent features converge to support functional distinction of these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C115"
+    ],
+    "result": "YAP, TAZ, JUNB, STAT3, and TEAD co-localize at virtually all YAP/TAZ target sites with median peak summit distances of 25-44 bp, indicating these proteins occupy the same genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C64-C66 use ChIP-seq peak summit analysis to demonstrate co-localization. The small distances between peak summits (25-44 bp) are comparable to biological replicate distances and strongly suggest co-occupancy. This is a rigorous computational approach for inferring co-localization from independent ChIP-seq experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Sequential ChIP experiments demonstrate co-occupancy of YAP/TAZ with JUNB and STAT3 at specific genomic loci including the IL-6 enhancer and on transfected plasmids containing AP-1 motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 provide direct experimental evidence for co-occupancy through sequential ChIP, which is technically challenging but provides strong evidence. The plasmid experiment (C69) is particularly valuable as it demonstrates recruitment can occur on a defined template with AP-1 motifs, providing a controlled test of the recruitment model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C116"
+    ],
+    "result": "YAP/TAZ binding sites contain TEAD motifs (~30%), AP-1 motifs (comparable frequency), and STAT3 motifs (13%), all centered around YAP/TAZ peak summits. NF-\u03baB motifs are not enriched, serving as a negative control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 characterize motif content at YAP/TAZ sites. The centering of motifs around peak summits (C74) is critical evidence for direct recruitment. The negative control with NF-\u03baB (C75) strengthens the specificity of the findings. The comparable frequency of AP-1 and TEAD motifs challenges the TEAD-centric model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C7",
+      "C117"
+    ],
+    "result": "Different classes of YAP/TAZ target sites exist based on recruiting motifs. Many sites contain only individual AP-1, TEAD, or STAT3 motifs. Composite AP-1/TEAD motifs occur more frequently than expected by chance but represent only 9% of sites, suggesting they are not required for recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C76-C79 demonstrate the existence of distinct site classes through motif analysis. The observation that composite motifs are not required (C79) challenges previous models. However, the inference about recruitment mechanisms (C7) involves interpretation beyond the direct data. The motif analysis is rigorous but functional validation of individual site classes would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The JUNB:TEAD crosslinking ratio correlates with AP-1 motif quality and inversely with TEAD motif quality, suggesting YAP/TAZ is recruited by different forms of an AP-1/STAT3/TEAD complex depending on the recruiting motif, with primary recruitment mediated by any one of these three proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 provide quantitative evidence for differential crosslinking that supports the model of different complex forms. The correlation analysis is rigorous. However, claims C109-C111 involve significant inference about complex composition and recruitment mechanisms that go beyond the direct data. Alternative explanations (e.g., different binding kinetics, chromatin context) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C118"
+    ],
+    "result": "CEBP motifs are unexpectedly enriched at YAP/TAZ target sites (20% of sites), occur close to peak summits, and co-occur with TEAD motifs at more than 5-fold the expected rate, suggesting CEBP proteins may recruit YAP/TAZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 identify CEBP as a novel potential recruiter through multiple lines of motif analysis. The enrichment, centering, and co-occurrence data are consistent with a recruitment role. However, this remains correlative without direct functional validation (e.g., CEBP knockdown effects on YAP/TAZ binding). The finding is intriguing but requires follow-up experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "18% of YAP/TAZ binding sites lack AP-1, STAT3, TEAD, or CEBP motifs, suggesting other DNA-binding proteins can recruit these co-activators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is a straightforward observation from motif analysis. The conclusion about other recruiters is a reasonable inference, though the identity of these recruiters remains unknown. This highlights the complexity of YAP/TAZ recruitment mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C119"
+    ],
+    "result": "In MDA-MB-231 triple-negative breast cancer cells, YAP, TAZ, STAT3, JUNB, and TEAD show similar binding profiles and motif associations as in ER-Src cells, with TAZ-specific sites enriched for ETS motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 demonstrate reproducibility of key findings in an independent cell line. This strengthens the generalizability of the results beyond the ER-Src model. The consistency of TAZ-specific site characteristics (C92) across cell lines is particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Cell-type-specific differences exist in YAP/TAZ recruitment: CEBP motif enrichment is observed in ER-Src but not MDA-MB-231 cells, while RUNX motifs are enriched in MDA-MB-231 but not ER-Src cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 identify cell-type-specific recruitment mechanisms through comparative motif analysis. This demonstrates context-dependent regulation of YAP/TAZ, which has important biological implications. The analysis is straightforward and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C120"
+    ],
+    "result": "Different classes of YAP/TAZ target sites (defined by recruiting motifs) are associated with largely non-overlapping genes with distinct functions. AP-1 motif sites are enriched for morphogenesis and cell migration genes, while TEAD motif sites are enriched for actin cytoskeletal organization genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C95-C98 connect motif classes to gene functions through overlap analysis and GO enrichment. The distinct functional categories support the biological relevance of the different site classes. However, the analysis is correlative and does not demonstrate that these functional differences are caused by the different recruitment mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C121"
+    ],
+    "result": "RNA-seq analysis identifies 1000-4000 differentially expressed genes upon depletion of YAP, TAZ, JUNB, STAT3, or TEAD, with significant overlap between factors. Binding of these factors is significantly enriched at promoters of differentially expressed genes compared to control genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 connect binding to transcriptional effects. The enrichment of factor binding at differentially expressed genes (C102, p<0.01) provides statistical support for direct regulation. However, the manuscript notes that binding and transcriptional effects are discordant at many genes, which is common but limits the strength of the connection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C122"
+    ],
+    "result": "High expression of genes with YAP/TAZ sites containing AP-1 motifs (p=0.023) or TEAD motifs (p=0.059) is associated with poor survival in triple-negative breast cancer patients. Genes with both AP-1 and TEAD motifs show even stronger association (p=0.002). No association is observed for other breast cancer subtypes or for all YAP/TAZ target genes combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 demonstrate clinical relevance through Kaplan-Meier survival analysis. The specificity for TNBC (C106) and the stronger effect of composite motif sites (C104) are notable. However, the analysis is correlative and does not establish causation. The gene signature approach has limitations including potential confounding by other factors and the arbitrary GSS threshold of 0.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The Hippo pathway is active in ER-Src cells prior to transformation and is not altered during the transformation process, as YAP and TAZ nuclear protein levels remain unchanged upon tamoxifen treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is an inference from C40 (unchanged nuclear YAP/TAZ levels). While the inference is reasonable, it is indirect. Hippo pathway activity is typically assessed by YAP/TAZ phosphorylation status, not just nuclear levels. Additional markers of Hippo pathway activity would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Wild-type YAP, TAZ, and their WW deletion derivatives have no significant effect on cell proliferation under conditions of high attachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by experimental data showing no effect on high attachment proliferation. This serves as an important control demonstrating specificity for transformation-associated phenotypes.",
+    "result_type": "MINOR"
+  }
+]

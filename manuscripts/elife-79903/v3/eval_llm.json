@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "PFA fixation enhances the appearance of LLPS for FET family protein IDRs (FUS, EWS, TAF15), increasing puncta number, surface roughness, and punctate percentage. This enhancement occurs across multiple PFA concentrations (1-8%) and even with PFA/GA combination, completing within ~100 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 provide converging experimental evidence from live-to-fixed cell imaging comparisons, quantitative image analysis with statistical testing (Wilcoxon signed-rank test, p<0.05), time-course measurements, and concentration-dependence studies. The data consistently demonstrate fixation-induced enhancement of LLPS appearance across multiple experimental conditions and protein constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Different fluorescent tags on TAF15(IDR) produce divergent fixation effects: DsRed2-TAF15(IDR) shows enhanced LLPS with emergence of thousands of smaller puncta, while Halo-TAF15(IDR) shows diminished LLPS with puncta becoming smaller, dimmer, or disappearing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by direct imaging comparisons and quantitative analysis (Figure 2). The bifurcating behavior is clearly documented, though the manuscript acknowledges uncertainty about the mechanistic role of tag dimerization potential. The observations are robust despite incomplete mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Not all phase-separating proteins show fixation artifacts: EGFP-FUS(FL), TAF15(IDR)-Halo-FTH1, and endogenous EWS::FLI1-Halo show no significant changes in LLPS appearance after PFA fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by live-to-fixed imaging comparisons with quantitative analysis showing no significant differences (Figure 3, Wilcoxon signed-rank test). This demonstrates that fixation artifacts are protein-specific rather than universal, strengthening the overall conclusions by establishing boundary conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Addition of 25 mM glycine to live cells reverses the fixation effect on DsRed2-TAF15(IDR), changing from enhanced LLPS appearance (without glycine) to diminished appearance with 'donut-shaped' puncta (with glycine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by experimental data comparing fixation with and without glycine addition (Figure 4). The dramatic reversal of fixation effects demonstrates that fixation kinetics play a critical role. However, the mechanism by which glycine increases starting punctate percentage in live cells remains unexplained and somewhat complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C34"
+    ],
+    "result": "A four-state kinetic model predicts that fixation artifacts depend on three factors: (1) differential fixation rates in vs. out of puncta (k3:k4\u22601:1), (2) protein-protein interaction dynamics relative to fixation rates, and (3) starting punctate percentage. Equal fixation rates (k3=k4) preserve live-cell equilibrium, while k3>k4 enhances and k3<k4 diminishes apparent LLPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 and C34 present predictions from kinetic modeling simulations (Figure 5). The model is mathematically sound and logically consistent. The predictions are qualitatively supported by experimental observations (glycine effects, protein-specific differences). However, the model makes simplifying assumptions (e.g., average rates, no spatial heterogeneity) and lacks direct experimental validation of specific rate constants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Single-particle tracking measurements show TAF15(IDR)-FTH1 has significantly longer residence time (64.15\u00b111.65 s) than TAF15(IDR) (10.23\u00b11.10 s) at puncta, consistent with the model prediction that faster fixation relative to binding dynamics minimizes artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by SPT experiments with appropriate statistical analysis (Figure 6, Wilcoxon rank-sum test, p<0.05). The residence time measurements include photobleaching correction using H2B controls. The data provide experimental validation of a key model prediction, though only two proteins were tested and direct fixation rate measurements are absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Fixation can change the appearance of phase separation in living cells, potentially leading to misinterpretation of LLPS functional relevance in cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is the main conclusion supported by multiple experimental results (C9-C21). Claim C33 is a reasonable inference about implications, though it remains speculative regarding actual misinterpretations in the literature. The caveat about fixation-based LLPS detection is well-justified by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The kinetic model predicts fixation artifacts occur whenever a protein exists in multiple states with different fixation rates, with artifacts most severe when fixation is slower than state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 generalizes the model predictions beyond LLPS. This is a logical extension of the four-state model framework and is consistent with the simulation results. The generalization is reasonable but remains theoretical without experimental validation in non-LLPS contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C37"
+    ],
+    "result": "The four-state model's implications extend beyond LLPS to other biomolecular structures, and IDRs in puncta may cross-link faster than structured domains due to better solvent-exposed reactive residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 proposes broad applicability with supporting citations, but lacks direct experimental validation in the current study. Claim C37 is explicitly labeled as a hypothesis to explain k3>k4 observations. Both claims are plausible but speculative, requiring additional experimental work for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Live-imaging techniques like SPT and fluorescence correlation spectroscopy can serve as alternative approaches for diagnosing LLPS without fixation artifacts, as diffusion dynamics are affected by LLPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by multiple citations documenting the relationship between LLPS and diffusion dynamics. The suggestion is reasonable given the demonstrated fixation artifacts. However, this represents a recommendation for future work rather than a result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C50"
+    ],
+    "result": "PFA is a commonly used fixative that cross-links biomolecules in proximity and has been used to preserve live-cell conditions in many scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C50 represent established background knowledge about PFA fixation. These are well-supported by general knowledge in the field and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C51"
+    ],
+    "result": "Previous studies have shown that PFA fixation fails to preserve fast-dissociating transcription factor-DNA interactions and can artificially deplete transiently bound TFs from mitotic chromosomes, demonstrating that fixation cannot provide instantaneous snapshots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C51 accurately represent prior work (Schmiedeberg et al. 2009, Teves et al. 2016) and provide important context for the current study. The citations are appropriate and the interpretation is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C45"
+    ],
+    "result": "PFA reactivity and reaction rates vary by orders of magnitude depending on protein amino acid sequences, tertiary structures, and biomolecule substrates, with fixation timescales ranging from seconds to hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52, and C45 are supported by multiple appropriate citations. This background information establishes the variable nature of fixation kinetics that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "LLPS is driven by multivalent IDR-mediated interactions, and detection of spherical puncta with fusion/fission and FRAP dynamics in live cells, or puncta in fixed-cell immunofluorescence, are commonly used as evidence for LLPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 accurately describe current practices and understanding in the LLPS field, supported by appropriate citations. These establish the context and motivation for examining fixation effects on LLPS appearance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "FET family protein IDRs undergo putative LLPS upon overexpression, forming discrete spherical puncta that show fusion and fission behaviors consistent with LLPS droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by appropriate citations and experimental observations in the current study. This establishes the experimental system used for investigating fixation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Full-length FUS has greater LLPS propensity than its IDR alone, and EWS::FLI1 is an oncogenic transcription factor that forms local high-concentration hubs at GGAA microsatellites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by appropriate citations and provide context for protein choices in the study. The information is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46",
+      "C47"
+    ],
+    "result": "Glycine quenches formaldehyde cross-linking; LLPS systems have different protein compositions in dilute vs. concentrated phases; LLPS-driving interactions are dynamic (seconds to tens of seconds residence times); and optimal TF IDR interactions are required for transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, C46, and C47 represent established knowledge supported by appropriate citations. These provide important biochemical and biological context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Cell lines were properly authenticated and quality-controlled: U2OS validated by whole-genome sequencing, A673 knock-in authenticated by STR profiling (100% match), and both tested negative for mycoplasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 document appropriate cell line authentication and quality control procedures. These methodological details support reproducibility and data validity.",
+    "result_type": "MINOR"
+  }
+]

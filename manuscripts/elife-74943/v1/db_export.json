@@ -1,0 +1,2105 @@
+{
+  "submission": {
+    "id": "0426ee24-2a53-49dd-af22-5a5de55c1d0d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:13:19.121759Z",
+    "updated_at": "2025-12-03T13:13:19.121759Z"
+  },
+  "content": [
+    {
+      "id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "submission_id": "0426ee24-2a53-49dd-af22-5a5de55c1d0d",
+      "content_type": "manuscript",
+      "content_text": "# Perception of an object\u2019s global shape is best described by a model of skeletal structure in human infants\n\n## Authors\n\n- Vladislav Ayzenberg<sup>1</sup> ([ORCID: 0000-0003-2739-3935](https://orcid.org/0000-0003-2739-3935)) \u2020\n- Stella Lourenco<sup>2</sup> ([ORCID: 0000-0003-3070-7122](https://orcid.org/0000-0003-3070-7122))\n\n### Affiliations\n\n1. Neuroscience Institute, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))\n2. Department of Psychology, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCategorization of everyday objects requires that humans form representations of shape that are tolerant to variations among exemplars. Yet, how such invariant shape representations develop remains poorly understood. By comparing human infants (6\u201312 months; N=82) to computational models of vision using comparable procedures, we shed light on the origins and mechanisms underlying object perception. Following habituation to a never-before-seen object, infants classified other novel objects across variations in their component parts. Comparisons to several computational models of vision, including models of high-level and low-level vision, revealed that infants\u2019 performance was best described by a model of shape based on the skeletal structure. Interestingly, infants outperformed a range of artificial neural network models, selected for their massive object experience and biological plausibility, under the same conditions. Altogether, these findings suggest that robust representations of shape can be formed with little language or object experience by relying on the perceptually invariant skeletal structure.\n\n## Introduction\n\nThe appearance of objects within a single category can vary greatly. For instance, despite the shared category of dog, the exemplars (i.e. different dogs) may have different snouts, tails, and/or torsos. Despite this variability, humans readily categorize never-before-seen dog breeds as members of the same basic-level category. How do we do this? Although there is widespread agreement that shape information is crucial for object categorization (Biederman, 1995; Mervis and Rosch, 1981), it remains unclear how humans come to form global representations of shape that are tolerant to variations among exemplars.\n\nIt has been suggested that global shape information becomes crucial for object categorization in early childhood because linguistic experience, particularly the learning of object labels (e.g. \u2018dog\u2019), draws children\u2019s attention to global shape as a diagnostic cue\u2014inducing a so-called \u2018shape bias\u2019 (Landau et al., 1998; Smith et al., 1996; Smith et al., 2002). Indeed, labels may bootstrap object recognition abilities more generally, such that even prelinguistic children are better at individuating and categorizing objects when verbal labels are provided (Ferry et al., 2010; Xu et al., 2005). The advantage of labeled object experience is particularly evident in supervised artificial neural networks (ANNs), which have begun to match the object recognition abilities and neural representations of human adults (Krizhevsky et al., 2017; Rajalingham et al., 2018; Schrimpf et al., 2018). These models learn the diagnostic properties of objects following training with millions of labeled naturalistic images. With appropriate experience, these models may even develop a shape bias that supports object categorization, at least when generalizing across variations in color or texture (Ritter et al., 2017; Tartaglini et al., 2022). Thus, global representations of shape may develop with labeled object experience that highlights the diagnostic properties of objects.\n\nAn alternative possibility, however, is that rather than labeled experience, humans develop global shape representations by relying on (non-linguistic) invariant perceptual properties inherent to the object (Biederman, 1987; Feldman, 1997; Rakison and Butterworth, 1998; Sloutsky, 2003). One such property is known as the shape skeleton\u2014a quantitative model that describes an object\u2019s global shape via a series of internal symmetry axes (Blum, 1967; Feldman and Singh, 2006). These axes define the topological arrangement of object parts, making models of skeletal structure tolerant to local variations in shape typical of basic-level exemplars (Ayzenberg et al., 2019a; Wilder et al., 2011). From this perspective, extensive experience with objects and linguistic labels may not be necessary to form global shape representations, and, instead, one might rely on the shape skeleton (Feldman, 1997). However, the contributions of labeled experience and the shape skeleton are difficult to examine because, by adulthood, humans have had massive amounts of labeled object experience, making the source of their shape representations ambiguous. Here we tested whether human infants (who have little linguistic or object experience) represent global object shape according to a shape skeleton.\n\nObject representations in infancy have most often been tested using visual attention procedures. In these experiments, infants are typically habituated to stimuli that share a common visual dimension (e.g. shape), but vary according to other dimensions (e.g. color). Infants are then tested with objects that are either familiar (e.g. similar in shape to the habituated object) or novel (i.e. different in shape to the habituated object). If infants learn the relevant dimension during the habituation phase, then their looking times are longer for the novel object compared to the familiar one. Habituation paradigms provide an informative window into infants\u2019 object representations because they reveal what properties infants learned during the habituation phase and subsequently generalized to the test phase. Using this approach, researchers have shown that newborns can already discriminate between simple 2D shapes (Slater et al., 1983) and display shape constancy, such that they recognize a shape from a novel orientation (Slater and Morison, 1985). By 6 months of age, infants\u2019 shape representations are also robust to variations among category exemplars, such that they can categorize objects using only the stimulus\u2019 shape silhouette (Quinn et al., 1993; Quinn et al., 2001a), as well as extend category membership to objects with varying local contours, but the same global shape (Quinn et al., 2002; Quinn et al., 2001b; Turati et al., 2003). However, the mechanisms underlying global shape representation remain unclear. Indeed, because infants in these studies were habituated to multiple (often familiar) objects, it is unclear whether shape representations in these studies were learned from the statistics of the habituation period (Oakes and Spalding, 1997; Younger, 1990) or, rather, are an invariant perceptual property infants extract from objects more generally.\n\nIn the current study, we used a habituation paradigm to examine how 6\u201312 months old infants represent the global shape of objects. In particular, we tested whether infants classified never-before-seen objects by comparing the similarity between their shape skeletons. Importantly, we habituated infants to only a single object so as to measure their pre-existing shape representations, rather than ones they may have learned over the course of habituation. We chose to test 6\u201312-month-olds because the visual experience at this age is dominated by just a few common objects (~10 objects; Clerkin et al., 2017) and they have relatively little linguistic understanding (~7 words; Bergelson and Swingley, 2012). Moreover, we elucidate the mechanisms that support object perception in infancy by comparing infants to a range of computational models. Of particular interest was a flux-based medial axis algorithm that computes a shape skeleton from images (Rezanejad and Siddiqi, 2013). If infants represent objects using the shape skeleton, then their classification judgments should best match that of a Skeletal model.\n\nIn addition, we included four ANNs, known for their success on object recognition tasks but which do not represent the shape skeleton. These ANNs included two ResNet models, one trained on ImageNet (ResNet-IN), a convolutional ANN frequently used in object recognition tasks, and a variation of ResNet trained on Stylized-ImageNet (ResNet-SIN), an image set that leads models to develop a shape bias, at least in relation to color and textures cues (Geirhos et al., 2018). Two other ANNs were CorNet-S, a top-performing model of object recognition behavior and neural processing in primates, as measured by the brain-score benchmark (Schrimpf et al., 2018), and ResNext-SAY, a model trained with an unsupervised learning algorithm on first-person videos from infants (Orhan et al., 2020). All of these ANNs were included because they exhibit varying degrees of biological plausibility in terms of neural organization or visual experience (Russakovsky et al., 2015; Schrimpf et al., 2018). If infant performance is best matched by ANNs, then this would suggest that global shape representations might be learned as a diagnostic cue following extensive object experience. Importantly, because none of these models represent the shape skeleton, they make for an excellent contrast to the Skeletal model. Finally, we also included a model of pixel similarity, and FlowNet, a model of optic flow (Ilg et al., 2017) in order to assess the extent to which shape representations may be supported by lower-level visual properties like image similarity (Kiat et al., 2022; Xie et al., 2021) or motion trajectory (Kellman, 1984; Kellman and Short, 1987; Wood and Wood, 2018). Altogether, these comparisons provided a novel approach to understanding object perception in human infants.\n\nBecause the strength of any object classification task depends on the degree of dissimilarity between training (i.e. habituation) and test objects, infants were tested with objects that mimicked the variability of basic-level category exemplars (Figure 1). Within-category objects comprised objects with the same skeletons, but visually distinct component parts. Variation in the component parts was generated by manipulating the objects\u2019 surface forms, thereby changing both the image-level features and the non-accidental properties (NAPs; Biederman, 1987), without altering the skeleton. Between-category objects comprised different skeletons and surface forms. If infants are capable of classifying objects vis-\u00e0-vis a shape skeleton, then they should look longer at objects with different skeletons compared to those with the same skeleton, even though both objects differ from the habituated object in surface form. Importantly, we tested whether within-category and between-category objects were equally discriminable by infants to ensure that any differences in looking time were not related to infants\u2019 ability to differentiate surface forms. Moreover, if infants rely on objects\u2019 shape skeletons to determine similarity, then their classification performance should be best matched by the Skeletal model, rather than ANNs, or other models of vision. Thus, the current study provides critical insight regarding the nature of shape representations at an age when experience with labeled objects is minimal, and, crucially, provides a novel benchmark by which to evaluate the biological plausibility of computational models of vision.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74943/elife-74943-fig1-v1.jpg)\n\n**Figure 1.:** Objects were presented as rotating videos during habituation and test phases.\n\n## Results\n\nInfants\u2019 looking times were analyzed using two-sided paired sample t-tests (\u03b1=0.05) and standard measures of effect size (Cohen\u2019s d). Furthermore, to ensure that sample size decisions did not unduly influence the results, we also conducted non-parametric (Binomial tests) and Bayesian analyses. A Bayes factor (BF10) was computed for each analysis using a standard Cauchy prior (d=0.707). A BF10 greater than 1 is evidence that two distributions are different from one another, whereas a BF10 less than 1 is evidence that two distributions are similar to one another (Rouder et al., 2009).\n\n### How do infants represent shape?\n\nA comparison of the two types of test trials in Experiment 1 (Figure 2A) revealed that, across the test phase, infants looked longer at the object with the different skeleton compared to the one with the matching skeleton (t[33]=3.04, p=0.005, d=0.52, 95% CI [0.16, 0.88], BF10=8.42; Figure 2B), with the majority of infants showing this effect (25/34 infants, p=0.009). In addition, a comparison between the end of habituation (mean of last 4 trials) and looking times across the test phase revealed that dishabituation only occurred for the object with the different skeleton (t[33]=3.36, p=0.002, d=0.58, 95% CI [0.21, 0.94], BF10=17.47; 25/34 infants, p=0.009), not the object with the matching skeleton (t[33]=1.00, p=0.325, d=0.17, 95% CI [\u20130.16, 0.51], BF10=0.29; Figure 2B). Thus, infants treated objects with matching skeletons as more similar to one another than objects with different skeletons.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74943/elife-74943-fig2-v1.jpg)\n\n**Figure 2.:** (A, D) Illustration of the experimental procedure administered to infants and the computational models in (A) Experiment 1 and (D) Experiment 2. Infants and models were habituated to one object and then tested with objects that consisted of either the same or different shape skeleton. Both types of test objects (counterbalanced order) differed in their surface forms from the habituation object. (B, E) Mean looking times for (B) Experiment 1 and (E) Experiment 2. For the habituation phase, results are shown for the first four and last four trials. For the test phase, results are shown for the two types of test objects (i.e. same and different skeletons; 3 test trials each). Error bars represent SE. (C, F) Classification performance for infants and models for (C) Experiment 1 and (F) Experiment 2. Error bars represent bootstrapped confidence intervals, and the dashed line represents chance performance.\n\nHowever, one might ask whether infants were simply unable to differentiate between surface forms, leading to greater looking at the object with a different skeleton. To test this possibility, we compared infants\u2019 looking times on the first test trial following habituation to the last trial during habituation. Because the first test trial immediately follows habituation, this comparison allows for a direct measure of perceptual discriminability between habituation and test objects when the memory demands are minimal and in the absence of carry-over effects between test objects. This analysis revealed that infants were indeed capable of discriminating objects on the basis of surface form alone. That is, infants dishabituated to the object with the same skeleton but different surface form, t(15) = 3.76, p=0.002, d=0.94, 95% CI [0.34, 1.52], BF10=22.23, with the majority of infants showing this effect (14/16, p=0.004). Moreover, and crucially, infants' looking times on the first test trial did not differ for either test object (8.31 s vs. 9.18 s; t[32]=0.50, p=0.624, d=.17, 95% CI [\u20130.51, 0.84], BF10=0.36). These findings demonstrate that not only could infants differentiate between surface forms, but also, that the two types of test objects were matched for discriminability relative to the habituation object. These findings argue against a pure discrimination account and, instead, support the interpretation that infants classified objects on the basis of skeletal similarity.\n\nBut did infants actually rely on the object\u2019s shape skeleton to judge similarity or some other visual representation? To explore this possibility, we compared infants\u2019 classification behavior to a flux-based Skeletal model, a range of ANNs (ResNet-IN, ResNet-SIN, and CorNet-S, ResNext-Say), and models of image similarity (Pixel) and motion (FlowNet). If infants relied on the shape skeleton to classify objects, then their performance would be best matched by the Skeletal model, rather than the others.\n\nModels were tested with the same stimuli presented to infants using a procedure comparable to the habituation paradigm. More specifically, because habituation/dishabituation can be conceived as a measure of alignment between the stimulus and the infant\u2019s internal representation (Mareschal et al., 2000; Westermann and Mareschal, 2004), we tested models by feeding their outputs into an autoencoder and measuring the error signal across habituation and test phases (see Methods). Like habituation paradigms, the error signal of an autoencoder reflects the degree of alignment between the internal representation of the model and the input stimulus (for review, see Yermolayeva and Rakison, 2014). Unlike conventional classifiers, which often require multiple labeled contrasting examples (e.g. Support Vector Machines), autoencoders allow for measuring a model\u2019s performance following exposure to just one exemplar, as with infants in the current study. Moreover, like infant learning during habituation, the learned representation of an autoencoder reflects the entire habituation video, rather than the representation of individual frames. Most importantly, unlike other techniques, autoencoders can be tested using the same habituation and test criteria as infants (see Methods). For comparison, performance for both infants and models was converted into a classification score (see Methods) and significance was assessed using bootstrapped confidence intervals (5000 iterations).\n\nThese analyses revealed that all models performed above chance (0.50; see Figure 2C). However, and importantly, infant performance was best matched to the Skeletal model. Both infants and the Skeletal model performed significantly better than all other models, except FlowNet. That infants outperformed the ANNs suggests that extensive object experience may not be necessary to develop robust shape representations. Likewise, that infants outperformed the Pixel model suggests that infant performance is not explained by the low-level visual similarity between objects. However, the success of FlowNet does suggest that motion information may contribute to representations of shape. Nevertheless, FlowNet\u2019s performance did not differ from that of any ANN or the Pixel model, leaving its exact role in object classification unclear. Altogether, these results suggest that infants\u2019 performance is most closely aligned with the Skeletal model and, thus, that infants classified objects, at least in part, by relying on the similarity between objects\u2019 shape skeletons.\n\n### Can infant performance be explained by another representation of global shape?\n\nAn alternative explanation for the findings from the first experiment is that, rather than the shape skeleton, infants classified objects using another representation of global shape\u2014namely, the coarse spatial relations among object parts (Biederman and Gerhardstein, 1993; Hummel and Stankiewicz, 1996). Whereas a Skeletal model provides a continuous, quantitative description of part relations, a model based on coarse spatial relations describes part relations in qualitative terms (e.g. two parts below a third vs. two parts on either side of a third). In Experiment 1, test objects with different skeletons also consisted of part relations that could be considered qualitatively different from that of the habituated object, making it unclear whether infants relied on coarse spatial relations instead of the shape skeletons.\n\nTo address this possibility, in Experiment 2, coarse spatial relations were held constant between habituation and test phases (i.e. two parts on either side of a third; Figures 1 and 2D). Thus, if infants relied on coarse spatial relations for object classification, then they would fail to dishabituate to the test object that differed in the shape skeleton (but not coarse spatial relations). However, we found that infants continued to look longer at the object with the different skeleton compared to the one with the matching skeleton (t[47]=2.60, p=0.012, d=0.38, 95% CI [0.08, 0.67], BF10=3.18; Figure 2E), with the majority of infants showing this effect (33/48 infants, p=0.013). Moreover, infants only dishabituated during the test phase to the object with the different skeleton (t[47]=3.63, p<0.001, d=0.52, 95% CI [0.22, 0.82], BF10=39.77; 36/48 infants, p<0.001), not the one with the matching skeleton (t[47]=1.42, p=0.163, d=0.16, 95% CI [\u20130.08, 0.49], BF10=0.40), as in Experiment 1. The results from this experiment rule out the possibility that infants classified objects on the basis of their coarse spatial relations, rather than their shape skeletons.\n\nImportantly, as in the previous experiment, we also compared infants\u2019 looking times on the first test trial to the last trial during habituation to ensure that infants could distinguish surface forms and that the two test objects were equally discriminable. We found that infants dishabituated to the object with the same shape skeleton but different surface form, t(22)=3.51, p=0.002, d=0.73, 95% CI [0.26, 1.19], BF10=19.71, with the majority of infants showing this effect (17/23, p=0.035), suggesting that discrimination was possible on the basis of surface form alone. Moreover, infants' looking times on the first test trial did not differ for the two types of test objects (6.87 s vs. 10.83 s; t[45]=1.47, p=0.149, d=0.43, 95% CI [\u20130.15, 1.00], BF10=0.69), confirming comparable discriminability. Thus, as in Experiment 1, these findings suggest that although infants were capable of discriminating both types of test objects, they nevertheless treated objects with the same skeletons as more similar to one another.\n\nTo ensure that the effects in Experiment 2 were not unduly influenced by the larger sample size, we computed bootstrapped CIs on a smaller sample. For each bootstrap procedure (10,000 iterations), we calculated Cohen\u2019s d on data that were resampled (without replacement) to match the sample size of Experiment 1 (n=34). We found that infants dishabituated to the test object with a different skeleton, 95% CI [0.22, 0.87], but not the same skeleton, 95%CI [\u20130.13, 0.61]. Infants also looked longer at the test object with a different skeleton than the test object with the same skeleton, 95% CI [0.20, 0.61], confirming the robustness of these effects regardless of sample size. Finally, analyses of the first test trial confirmed that infants discriminated between surface forms when objects had the same skeletons, 95% CI [0.22, 0.81,] and that looking times did not significantly differ between the two types of test trials, 95% CI [\u20130.15, 0.49].\n\nTo examine whether infants\u2019 performance was best described by a Skeletal model we, again, compared infants to a model that represents the shape skeleton, as well as to models that do not. These analyses revealed that the Skeletal, Pixel, and FlowNet models all performed above chance (Figure 2F), but infant performance was most closely matched to the Skeletal model. None of the ANNs performed above chance. As in Experiment 1, both infants and the Skeletal model significantly outperformed the ANNs and the Pixel model, but not FlowNet. These findings again suggest that infants\u2019 judgments reflect the use of skeletal structure and that there may be a role for motion information in this ability.\n\n### Model classification using local shape properties\n\nGiven the competitive performance of ANNs on other object recognition tasks, and their match to adult performance in other studies (Schrimpf et al., 2018), one might wonder why ANNs performed so poorly on our task. One possibility is that ANNs rely on local shape properties (e.g. surface form), which were irrelevant to our task (Baker et al., 2018; Baker et al., 2020). To test this possibility, we examined whether ANNs were capable of classifying objects using local shape properties, namely, the surface forms of the objects. For comparison, we also tested the other models\u2019 performance on this task (Skeleton, Pixel, and FlowNet).\n\nUsing a comparable procedure to the previous experiments, all models were tested with objects in which the surface forms either matched or differed from the habituated object; both test objects differed in their shape skeletons (Figure 3A). For objects from Experiment 1 (Figure 1), the analyses revealed that ResNet-IN, CorNet-S, and ResNext-SAY performed above chance (Ms = 0.62\u20130.66, 95% CIs [0.53\u20130.59, 0.70\u20130.76]; Figure 3B). By contrast, none of the other models (Skeleton, ResNet-SIN, Pixel, FlowNet) performed differently from chance (Ms = 0.52\u20130.61, 95% CIs [0.40\u20130.48, 0.60\u20130.72]; Figure 3B) when classifying objects by surface form (i.e. across shape skeletons). For objects from Experiment 2 (Figure 1), all models performed above chance (Ms = 0.67\u20130.74, 95% CIs [0.51\u20130.67, 0.72\u20130.80]), except Skeletal and Pixel models (Ms = 0.54\u20130.59, 95% CIs [0.40\u20130.41, 0.68\u20130.73]; Figure 3C). Altogether, these findings demonstrate that most ANNs are capable of classifying objects using local shape properties. These findings are consistent with other research showing sensitivity to local shape properties in ANNs (Baker et al., 2018).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74943/elife-74943-fig3-v1.jpg)\n\n**Figure 3.:** (A) Illustration of the experimental procedure administered to models. (B\u2013C) Classification performance of models on stimuli from (B) Experiment 1 and (C) Experiment 2. Error bars represent bootstrapped confidence intervals and dashed lines represent chance performance.\n\n### General discussion\n\nAlthough it is well known that shape is crucial for object categorization, much speculation remains about how representations of global shape are formed in development. Here, we demonstrate that infants represent global shape by extracting a skeletal structure. With only one exemplar as a reference, infants classified objects by their shape skeletons across variations in local properties that altered component parts of the objects, including when coarse spatial relations could not be used as a diagnostic cue. Moreover, a Skeletal model provided the closest match to infants\u2019 performance, further suggesting that infants relied on the shape skeleton to determine object similarity. Based on these findings, we would argue that the formation of robust shape representations in humans is largely rooted in sensitivity to the shape skeleton, an invariant representation of global shape.\n\n### The role of other visual properties in object perception\n\nIt is important to acknowledge that our results also suggest that object classification can be accomplished on the basis of image-level similarity. In particular, when generalizing across the surface form, a Pixel model performed above chance. Does this mean that infants\u2019 performance can be explained by low-level image similarity between habituation and test objects rather than the shape skeleton? We would suggest not. First, we found that infants discriminated both test objects from the habituation object equally, which argues against the possibility that infants\u2019 performance was strictly based on differences in image-level similarity. Second, both infants and the Skeletal model outperformed the Pixel model in both experiments, further arguing against an account based on image-level similarity alone. Nevertheless, we would not argue that image similarity plays no role in object perception, particularly in infants. Indeed, recent studies comparing the visual representations of infants and computational models reveal that low-level visual similarity explains more variance in infants\u2019 behavioral and neural responses than the upper layers of ANNs (Kiat et al., 2022; Xie et al., 2021). Moreover, recent studies suggest that object categorization in infancy may be supported by the representations of the early visual cortex (V1-V3), rather than the higher-level ventral cortex, as in adults (Spriet et al., 2022).\n\nLike image-level representations, shape skeletons, themselves might be an emergent property of early visual regions. Specifically, several studies have suggested that skeletal representations may emerge in area V3 as a consequence of between-layer recurrent interactions among border-ownership cells in area V2 and grouping cells in area V3 (Ardila et al., 2012; Craft et al., 2007). Interestingly, representations of skeletal structures in V3 are invariant across changes in component parts, which lends support to their role in categorization (Ayzenberg et al., 2022; Lescroart and Biederman, 2013). Other research on the anatomical and functional organization of V3 in primates shows evidence of functional maturity shortly after birth (Arcaro and Livingstone, 2017; Ellis et al., 2020; Wiesel and Hubel, 1974), further raising the possibility that skeletal structure is represented in this area with little object experience or any language.\n\nIn the present study, we also found that FlowNet, a model of optic flow, appeared comparable to infants and the Skeletal model at classifying objects when they differed in surface form. This finding highlights the role of motion in the formation of invariant object representations (Lee et al., 2021; Ostrovsky et al., 2009). It is known that infants are better at recognizing objects from novel viewpoints when they are first familiarized with moving objects rather than static images (Kellman, 1984; Kellman and Shipley, 1991; Kellman and Short, 1987). Moreover, controlled-rearing studies with chicks have found that viewpoint-invariant object recognition occurs only if the chicks are raised in environments in which objects exhibit smooth, continuous motion (Wood and Wood, 2018). Indeed, several studies suggest that motion information may initially bootstrap infants\u2019 ability to extract 3D shape structure (Kellman and Arterberry, 2006; Ostrovsky et al., 2009; Wood and Wood, 2018). Thus, motion information may work in concert with shape skeletons to support object perception in infancy. Yet, it is important to note that classifying objects on our task was also possible without relying on motion cues (Quinn et al., 2001a; Quinn et al., 2001b). Indeed, the Skeletal model, which does not incorporate any motion information, was more closely aligned to the performance of human infants than was FlowNet.\n\nIn contrast to infants and the other models, ANNs were not capable of classifying objects across variations in surface form. However, they were capable of classifying objects by their surface form (across variation in shape skeleton), ruling out alternative explanations for their poor performance in the first task based on idiosyncrasies of the stimuli or testing procedures. Moreover, this finding suggests that, regardless of the specific architecture or training type, conventional ANNs rely on qualitatively different mechanisms than do humans to represent objects. This class of models may be especially sensitive to local object properties, making them susceptible to spurious changes in the objects\u2019 contours (Baker et al., 2018; Baker et al., 2020). By contrast, representations of skeletal structure in humans are particularly robust to perturbations (Ayzenberg et al., 2019a; Feldman and Singh, 2006) and, thus, may be especially well-suited to basic-level categorization. Although conventional ANNs (e.g. ResNet-SIN) can generalize across variations in color and texture (Geirhos et al., 2018; Tartaglini et al., 2022), fundamental changes to ANNs\u2019 architectures and/or training may be needed before they can achieve human-like categorization on the basis of global shape.\n\nDespite our claim that infants relied on skeletal similarity to classify objects, we would not suggest that it is the only information represented by humans. Indeed, by adulthood, humans also use visual properties such as texture (Jagadeesh and Gardner, 2022; Long et al., 2018) and local contours (Davitt et al., 2014), as well as inferential processes such as abstract rules (Ons and Wagemans, 2012; Rouder and Ratcliff, 2016) and the object\u2019s generative history (Fleming and Schmidt, 2019; Spr\u00f6te et al., 2016) to reason about objects. Properties such as texture and local features may even override shape skeletons in certain contexts, such as when identifying objects in the periphery (Gant et al., 2021) or during subordinate-level categorization (Davitt et al., 2014; Tarr and B\u00fclthoff, 1998). We suggest that the shape skeleton may be uniquely suited to the basic level of categorization, wherein objects have similar global shapes but vary in their component parts (Biederman, 1995; Rosch et al., 1976). However, more research will be needed to understand the extent to which children may also make use of other properties when categorizing objects.\n\n### Implications for one-shot categorization\n\nA key aspect of our design was that infants were habituated to a single, novel object. We did this to better understand the pre-existing visual representations infants rely on for object perception, rather than the ones they may learn over the course of habituation. Using this approach, we found that infants reliably classified objects on the basis of the shape skeleton. Might this result also suggest that infants are capable of one-shot categorization using the shape skeleton? One-shot categorization is the process of learning novel categories following exposure to just one exemplar (Lake and Piantadosi, 2019Lake et al., 2011; Morgenstern et al., 2019; Shepard, 1987). We cannot answer this question definitively, given that visual attention paradigms make it difficult to distinguish between category learning per se and judgments of visual similarity. However, it is intriguing to consider whether the shape skeleton may support rapid object learning at an age when linguistic and object experience is minimal.\n\nHow well do our results align with the one-shot categorization literature from older children and adults? On the one hand, our results are consistent with studies showing that one-shot categorization of objects by older children and adults involves identifying invariant visual properties of the objects, namely shape (Biederman and Bar, 1999; Feldman, 1997; Landau et al., 1988). Moreover, research using simple visual objects (e.g. handwritten characters) suggests that a skeleton-like compositional structure is central to one-shot categorization (Lake et al., 2011; Lake et al., 2015). On the other hand, our results would suggest that such categorization is possible at a much earlier age than has previously been suggested. Indeed, the extant research with both children (Landau et al., 1998; Smith et al., 2002; Xu and Kushnir, 2013) and adults (Coutanche and Thompson-Schill, 2014; Rule and Riesenhuber, 2020) has been taken as evidence that such categorization abilities are accomplished by leveraging extensive category and linguistic knowledge. Thus, our results are consistent with the hypothesis that one-shot category learning may be possible early in development by relying on a perceptually invariant skeletal structure.\n\nHowever, we would not suggest that object experience is irrelevant in infancy. As mentioned previously, experience with moving objects may play a role in supporting the extraction of a 3D shape structure. Moreover, although infants\u2019 visual experience is dominated by a small number of objects, this experience includes a large volume of viewpoints for each object (Clerkin et al., 2017). Interestingly, infants\u2019 chosen views of objects are biased toward planar orientations (James et al., 2014; Slone et al., 2019), which may serve to highlight the shape skeleton, though it is unclear whether such a bias is a consequence or a cause of skeletal extraction. Moreover, certain visual experiences, such as low visual acuity at birth, may be particularly important for highlighting global shape information (Cassia et al., 2002; Ostrovsky et al., 2009). Indeed, ANNs trained with a blurry-to-clear visual regimen showed improved performance for categories where global information is important, such as faces (Jang and Tong, 2021; Vogelsang et al., 2018).\n\nAltogether, our work suggests that infants form robust global representations of shape by extracting the object\u2019s shape skeleton. With limited language and object experience, infants generalized across variations in local shape properties to classify objects\u2014a feat not matched by conventional ANNs. Nevertheless, by comparing infants\u2019 performance to existing computational models of vision, the present study provides unique insight into humans\u2019 representations of shape and their capacity for categorization, and may serve to inform future computational models of human vision.\n\n## Materials and methods\n\n### Participants\n\nA total of 92 full-term infants participated in this study. Ten infants were excluded (Experiment 1: 5 for fussiness and 1 because of equipment failure; Experiment 2: 3 for fussiness and 1 because of equipment failure). The final sample included 34 infants in Experiment 1 (M=9.53 months, range = 6.47\u201312.20 months; 18 females) and 48 infants in Experiment 2 (M=9.12 months, range = 6.17\u201312.00 months; 20 females). Each infant was tested only once. All families gave informed consent according to a protocol approved by the Emory University Institutional Review Board (IRB) under the project \u2018Spatial Origins\u2019 (Study Number IRB0003452).\n\nThe sample size for Experiment 1 was determined using a priori power analysis with a hypothesized medium effect size (d=0.50; 1 - \u03b2>.8). For Experiment 2, we hypothesized that objects with the same coarse spatial relations would be more difficult to discriminate because the shape skeletons were more similar to one another (compared to Experiment 1), leading to an attenuated effect. Accordingly, to retain adequate power, we tested 14 more infants than in Experiment 1, the exact number of which was determined according to a fully counterbalanced design. Importantly, we nevertheless find the same results in Experiment 2 when the sample size is subsampled (n=34) to match that of Experiment 1.\n\n### Stimuli\n\nFor Experiment 1, six videos of 3D novel objects were rendered from the stimulus set created by Ayzenberg and Lourenco, 2019b; Figure 1. The objects were comprised of three distinct skeletons selected (from a set of 30) on the basis of their skeletal similarity. The skeletal similarity was calculated in 3D, object-centered, space as the mean Euclidean distance between each point on one skeleton and the closest point on the second skeleton following maximal alignment. A k-means cluster analysis (k=3) was used to select three distinct skeletons, one from each cluster (Figure 1). We ensured that the three skeletons were matched for discriminability by analyzing participants\u2019 discrimination judgments using data from Ayzenberg and Lourenco, 2019b. Adult participants (n=42) were shown images of two objects (side-by-side) with either the same or different skeletons (same surface form). Participants were instructed to decide whether the two images showed the same or different objects. A repeated-measures ANOVA, with skeleton pair as the within-subject factor, revealed that the three skeletons used in Experiment 1 did not significantly differ in their discriminability, F(2, 64)=0.11, p=0.898.\n\nFor Experiment 2, we selected one object from Experiment 1 whose skeleton could be altered without changing the coarse spatial relations. We altered the object\u2019s skeleton by moving one segment 50% down the length of the central segment (Figure 1).\n\nEach object was also rendered with two different surface forms, which changed the component parts and image-level properties of the object without altering its skeleton (Figure 1). The selection of these surface forms was based on adult participants\u2019 data from the study of Ayzenberg and Lourenco, 2019b. In a match-to-sample task, participants (n=39) were shown one object (sample) placed centrally above two choice objects. One of the choice objects matched the sample\u2019s skeleton, but not the surface form, and the other choice object matched the sample\u2019s surface form, but not the skeleton. Participants were instructed to decide which of the two choice objects was most likely to be from the same category as the sample object. Participants performed worst at categorizing objects by their skeleton when surface form 1 was paired with surface form 2, M=0.58, compared to the other surface forms (Ms = 0.61\u20130.78). Thus, by choosing the surface forms that presented adult participants with the greatest conflict, we provided infants with an especially strong test of generalization on the basis of the skeletal structure.\n\nIn a separate set of analyses, we tested whether the surface forms were comprised of qualitatively different component parts by having participants rate each surface form on the degree to which it exhibited a specific non-accidental property (NAP). During a training phase, adult participants (n=34) were taught four NAPs (drawn from Amir et al., 2012). They then rated the degree to which each surface form exhibited a particular NAP. The four NAPs were: (1) taper, defined as whether the thickness of an object part was reduced towards the end; (2) positive curvature, defined as whether an object part bulged outwards; (3) negative curvature, defined as the degree to which an object part caved inwards; and (4) convergence to vertex, defined as whether an object part ended in a point. Prior to the statistical analyses, we ensured that all participants in the sample exhibited reliable performance (\u03b1s\u2009>0.7). A repeated-measures ANOVA, with NAP as the within-subject factor and surface form as the between-subject factor, revealed a significant main effect of surface form, F(1, 66)=64.00, p<0.001, such that surface forms corresponded to different NAPs. Thus, because objects between habituation and test phases consisted of different NAPs, it could not be used as a diagnostic cue for categorizing the different test objects.\n\nWe also tested whether objects with different surface forms, but the same skeleton, had significantly different image-level properties, in order to ensure that both objects presented to infants during the test phase differed from the habituation object in these properties. Each object video was converted into a sequence of images (30 frames/s; 300 frames total), which were analyzed with the Gabor-jet model (Margalit et al., 2016). This model overlays a 12\u2009\u00d7\u200912 grid of Gabor filters (5 scales\u2009\u00d7\u20098 orientations) on each image. The image is convolved with each filter, and the magnitude and phase of the filtered image is stored as a feature vector. Paired t-tests were used to compare the feature vectors from each frame of one video to the corresponding frames of the second video. To provide an estimate of the image-level difference across the entire video, the resulting p-values from each t-test were then averaged across frames. This analysis revealed that objects with different surface forms (but same skeleton) had significantly different image-level properties (p=0.002), whereas objects with different skeletons (but same surface forms) did not (p=0.090). In other words, the surface forms used in the present study were actually more variable than the shape skeletons with respect to image-level properties.\n\nFinally, we ensured that surface forms were matched in discriminability to the selected skeletons. Adult participants (n=41) conducted a surface form discrimination task, wherein they were shown images of two objects (side-by-side) which consisted of either the same or different surface forms (same skeleton). Participants were instructed to decide whether the two images showed the same or different objects. Participants discriminated between surface forms 1 and 2 significantly better than would be predicted by chance, M=0.86, t(40) = 8.95, p<.001, and importantly, discrimination accuracy between surface forms did not differ from discrimination accuracy between skeletons, t(80) = 0.02, p=.981.\n\n### Procedure for testing infants\n\nEach infant sat on their caregiver\u2019s lap approximately 60 cm from a 22-inch computer monitor (1920\u00d71080 px). Caregivers were instructed to keep their eyes closed and to refrain from interacting with the infant during the study session. The experiment was controlled by a custom program written in Visual Basic (Microsoft) and gaze data were recorded with an EyeLink 1000 plus eye tracker recording at 500 Hz (SR-Research). Prior to the start of the experiment, the eye tracker was calibrated for each infant using a 5-point calibration routine. Looking times were coded as any fixation falling within the screen for at least 500 ms. Any trial failing to meet this criterion was not analyzed (2.03% of trials in Experiment 1; 2.04% of trials in Experiment 2).\n\nThe experiment consisted of a habituation phase, in which infants were presented with one object, followed by a test phase where classification was tested using objects with matching and different skeletons. Both test objects differed from the habituated object in their surface form (see Figure 2A and D). Each trial began with an attention-getting stimulus, which remained onscreen until infants fixated on it for 2 s. On each trial, infants were then shown a video of a single object rotating back-and-forth across 60\u00b0 (12\u00b0 per second). Each video remained on screen for 60 s or until infants looked away for 2 s. Videos were used instead of static images to maintain infants\u2019 attention.\n\nEach infant was habituated to an object with one of three possible skeletons in Experiment 1 and with one of two possible skeletons in Experiment 2 (see Figure 1), with half of the infants habituated to each surface form in each experiment. Infants met the habituation criterion when the average looking time in the preceding four trials was less than 50% of the average looking time in the first four trials. Test trials were presented after infants had habituated or following 24 habituation trials, whichever came first. All infants were presented with a total of six test trials, alternating between objects with the same or different skeletons (3 test trials of each type). The type of first test trial (same or different skeleton) was counterbalanced across infants.\n\n### Model descriptions\n\nFor our Skeletal model, we used a flux-based medial axis algorithm (Dimitrov et al., 2003; Rezanejad and Siddiqi, 2013) which computes a \u2018pruned\u2019 skeletal structure tolerant to local contour variations (Feldman and Singh, 2006). A pruned Skeletal model was selected for its biological plausibility in describing human shape judgments (Ayzenberg et al., 2019a; Feldman et al., 2013; Wilder et al., 2011; Wilder et al., 2019).\n\nThe four ANNs tested in the present study were: ResNet-IN, ResNet-SIN, CorNet-S, and ResNext-SAY. ResNet-IN and ResNet-SIN are 50-layer residual networks (He et al., 2016) chosen for their strong performance on object recognition tasks. ResNet-IN was trained on ImageNet (Russakovsky et al., 2015), a dataset consisting of high-quality naturalistic photographs, whereas ResNet-SIN was trained on Stylized-ImageNet, a variation on the conventional ImageNet dataset that decorrelates color and texture information from object images using style transfer techniques (Geirhos et al., 2018; Huang and Belongie, 2017). The third model, CorNet-S, is a 5-layer recurrent network explicitly designed to mimic the organization and functional profile of the primate ventral stream (Kubilius et al., 2019). It was chosen because it is a biologically plausible model of primate object recognition behavior and neural processing, as measured by the brain-score benchmark (Schrimpf et al., 2018). Finally, ResNext-SAY uses an updated version of the ResNet architecture and was designed to approximate the visual processing abilities of an infant (Orhan et al., 2020). It was trained using a self-supervised temporal classification method on the SAYCam dataset (Sullivan et al., 2020), a large, longitudinal dataset recorded from three infants\u2019 first-person perspectives.\n\nTo test whether infant-looking behaviors could be accounted for by low-level image properties, we also tested a model of pixel similarity and FlowNet, a model of motion flow (Dosovitskiy et al., 2015; Ilg et al., 2017). For the Pixel model, the raw image frame was passed into the evaluation pipeline and classification was based on this information alone. FlowNet estimates the motion energy between adjacent video frames and is able to successfully use motion information to segment objects from the background as well as support action recognition in videos. Here we used an iteration of FlowNet known as FlowNet2-S, which was pre-trained on the MPI-Sintel and \u2018flying chairs\u2019 datasets (Butler et al., 2012; Mayer et al., 2016).\n\n### Model analyses\n\nModels were evaluated on the same stimulus sets presented to infants and tested using methods similar to the habituation/dishabituation procedure. One way to conceive of this procedure is as a measure of alignment between the stimulus and the infant\u2019s internal representation of the stimulus. Infants will continue looking at a display for as long as they perceive a mismatch, or \u2018error\u2019, between the stimulus and their representation. To approximate this process, we converted each model into an autoencoder, which was \u2018habituated\u2019 and tested using the same criteria as infants (Mareschal et al., 2000; Westermann and Mareschal, 2004). An autoencoder is an unsupervised learning model that attempts to recreate the input stimulus using a lower-dimensional set of features than the input. Like infants, the error signal from the output layer of an autoencoder remains high when there is a mismatch between the input stimulus and the internal representation. Each model was converted into an autoencoder by passing the outputs of the model to a single transposed convolutional decoding layer. For ANNs, outputs were extracted from the penultimate layer of the model, \u2018AvgPool\u2019 (with ReLu) for each frame of the video. For the Skeletal model, each frame of the video was first binarized and the skeleton extracted. The resulting skeletal image was blurred using a 3-pixel Gaussian kernel and passed into the decoder. For FlowNet, image representations of the flow fields were generated for each pair of adjacent frames before being passed into the decoder. No image preprocessing was conducted for the Pixel model. To match the output dimensions of each ANN, each image from the Skeletal, FlowNet, or Pixel model was passed through a single convolutional feature extraction layer with Max and Average pooling, before being sent to the decoding layer.\n\nDuring the habituation phase, models were shown repeated presentations (epochs) of an object. Habituation was accomplished by training the models on each video using the Adam optimizer and a mean squared error loss function. For the ANNs, the weights of the decoding layer were updated during habituation. The weights of the pretrained models were frozen. For the Skeletal, FlowNet, and Pixel models, the weights of both the output and decoding layers were updated to support efficient feature extraction. The Skeletal, FlowNet, or Pixel model backbone was not altered. Models were said to have habituated once the average error signal in the last four epochs was below 50% of the average error in the first four epochs. The Skeletal model and ANNs met the habituation criteria within 8 epochs. Pixel and FlowNet models met the habituation criteria within 22 and 43 trials, respectively. The Skeletal, ANN, and Pixel models showed good reconstruction of the habituated objects (see Figure 4). Reconstructions using FlowNet were not possible because multiple frames were used as input. At test, models were presented with objects that had the same/different skeletons or the same/different surface forms as the habituated object, and the error signal was recorded. See Figures 5 and 6 for the error signal between all object pairs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74943/elife-74943-fig4-v1.jpg)\n\n**Figure 4.:** FlowNet reconstructions are not possible because it requires multiple frames as input. For the Skeletal model, the inset displays the original input image. Each reconstruction was created by feeding a random frame from the habituation object video to each model immediately following its habituation to said video.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74943/elife-74943-fig5-v1.jpg)\n\n**Figure 5.:** Dissimilarity for each object pair was calculated as the error from an autoencoder following habituation to one object and testing on a second object. Internal values of each cell in the matrix indicate the error between habituation and test objects. Error-values are normalized to the end of habituation. Dissimilarity matrices are asymmetrical because the error value changes depending on which object the model was habituated to. The object adjacent to each row is the habituation object, and the object adjacent to each column is the test object.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/74943/elife-74943-fig6-v1.jpg)\n\n**Figure 6.:** Dissimilarity for each object pair was calculated as the error from an autoencoder following habituation to one object, and testing on a second object. Internal values of each cell in the matrix indicate the error between habituation and test objects. Error-values are normalized to the end of habituation. Dissimilarity matrices are asymmetrical because the error value changes depending on which object the model was habituated to. The object adjacent to each row is the habituation object, and the object adjacent to each column is the test object.\n\n### Classification score\n\nFor comparison, the performance levels of infants and computational models were converted to a classification score. Organisms\u2019 responses (i.e. looking time/error signal) in the test phase were first normalized to the end of the habituation phase (last 4 trials/epochs) by taking the difference between the two. The response to the novel object was then converted into a proportion by dividing it by the combined response to the novel and familiar test object. For both the models and infants, a classification score of 0.50 reflects chance performance.\n",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "371007e0-226b-4471-abf2-8867ef5682d7",
+      "submission_id": "0426ee24-2a53-49dd-af22-5a5de55c1d0d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marius V Peelen, https://ror.org/016xsfp80 Radboud University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74943.sa0](https://doi.org/10.7554/eLife.74943.sa0)\n\nThis well-conducted study uses relatively large sample sizes, comprehensive statistical testing, and state-of-the-art modeling to provide novel evidence that human infants generalize shape from single examples on the basis of the \"shape skeleton\", a structural description of the part structure of the shape. It will be of interest to researchers working on object shape processing and on the development of visual perception.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marius V Peelen, https://ror.org/016xsfp80 Radboud University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74943.sa1](https://doi.org/10.7554/eLife.74943.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"The shape skeleton supports one-shot categorization in human infants: Behavioral and computational evidence\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nSpecifically, the reviewers thought that results may be alternatively explained by motion similarity and/or low-level visual similarity between habituation and test stimuli, as explained in more detail below.\n\nReviewer #1:\n\nThis is a very lucidly written article on a fascinating and important topic: how humans are able to learn novel visual categories based on few or even just one single example. This ability can be contrasted with conventional machine learning models which typically require massive data sets with thousands of training examples to learn the ability to categorize novel examples accurately. How humans generalize so well from such sparse training data remains poorly understood and working out how we achieve this is important not only for the psychological sciences, but also has implications for artificial intelligence and machine learning too.\n\nThe authors start with a strong premise, which is also likely to be true: a crucial aspect of human one-shot visual learning likely involves the perceptual processes that segment observed shapes into parts and represent them as a hierarchy of limbs, in a representation known in the field as 'shape skeletons'. There is a long history of evidence suggesting the human visual system analyses shape in this way, and such representations naturally lend themselves to abstractions and generalizations that are robust against significant variations in appearance, such as the surface structure and even pose of objects. While this is an excellent starting point for investigating one-shot learning, the idea that such representations might play a role in human visual categorization more generally is rather well accepted in the field, and thus perhaps not so original on its own. The potential novelty and importance of the contribution therefore rests on demonstrating that such representations are central to one-shot learning in particular.\n\nUnfortunately, due to their choice of stimuli, I believe that the experiments the authors perform do not yet provide compelling evidence that the infants' looking times are driven by skeletal representations, or indeed whether one-shot learning is necessarily playing a role in their habituation.\n\nThe problem is that the different Surface Forms of each Skeleton are more similar to one another than those of the other Skeletons, in terms of the raw pixel similarity. I took screenshots of the stimuli from the MS and compared them in MATLAB. For 7 out of 10 possible comparisons, the corresponding Surface Forms from the same 'category' are closer in raw pixel terms than to any of the rivals. This leads me to believe that the pattern of results is based on the raw physical (and thus perceptual) similarity between the habituation and test stimuli, rather than based on one-shot generalization per se, or on skeletal representations of the shapes in particular. In my opinion, the fact that sophisticated artificial neural network models don't predict this is not in itself strong evidence against my suggested explanation of the findings.\n\nIn future studies, this issue could be addressed by using stimuli for which this confound is not a problem. This could be achieved, for example, by using additional transformations of the objects, such as rotations, that preserve part structure but radically alter the projected image of the objects. This way skeletal structure could be decoupled from straightforward image similarity, and a stronger case for generalization beyond the 'one-shot' training exemplar would be provided.\n\nReviewer #2:\n\nThis is an important paper. The issue of \"one-shot\" learning---how people can learn categories and concepts from a single example or set of examples---lies at the heart of the current controversies over \"deep learning\" models. These models are ubiquitous these days and are often promoted as descriptive models of human learning, but they inherently require many trials to learn. But human learners can often learn from single trials, presenting a fundamental challenge to the entire deep learning paradigm. This has been pointed out in broad terms before, but to really advance this debate, a study needs to establish that humans can indeed learn from single examples, simultaneously demonstrate that appropriate deep learning models cannot, and explain something about exactly what why---all of which this paper accomplishes with impressive rigor.\n\nIn that context, the paper specifically studies shape category learning by human infants, a particularly interesting case, and establishes a specific pattern: that infants generalize shape categories based on the \"shape skeleton,\" a structural description of the part structure of the shape. That is, infants exposed to a single shape with a particular shape skeleton tend to be \"unsurprised\" by other shapes with the same skeleton, but more surprised by shapes with different skeletons, indicating that the single example was enough to establish in their minds an apparent shape category.\n\nThis generalization is in a sense unsurprising, because the shape skeleton is supposed to define characteristic \"invariants\" within shape categories, but it is nevertheless novel. Although the tendency for infants to generalize lexical categories based on shape is well established, the precise nature of one-shot shape generalizations has not previously been studied. For researchers in shape this is a very important result, and for anybody interested in how humans learn categories I think is is both fundamental and thought-provoking.\n\nI found the methodology and statistical analysis in the paper comprehensive and rigorous, and the writing clear, so and have only relatively minor comments on the manuscript, which follow. I don't see page numbers, so give quotations to indicate the relevant location.\n\n\u2013 \"a phenomenon known as 'one-shot categorization'\" \u2013 The issue of one-shot category learning, and the computational question of what makes it possible for human learners to instantly generalize from some examples but not others, has been studied somewhat more extensively than this very brief introduction lets on. I would point to for example Feldman (1997, J. Math Psych) which explicitly takes it up and argues for a mechanism related to the current paper (namely, that one-shot categorization is possible when the one example implies a highly specific structural model).\n\n\u2013 \"However, one might ask whether these findings are truly indicative of categorization, or simply better discrimination of objects with the different skeletons.\" I'm not sure these are really different explanations. Learners are better at discriminating objects that appear to be from different categories (categorical perception, etc.).\n\n\u2013 \"infants' looking times on the first test trial did not differ for within- and between-category test objects\" \u2013 This claim is followed by a non-significant NHST test, which does not allow an affirmative conclusion of no difference here, and a Bayes Factor, which does. The NHST test really doesn't add anything. I personally think these tests could be omitted throughout the paper in favor of the more informative BFs \u2013 but particularly when null results are discussed.\n\n\u2013 members from different -> members of different.\n\n\u2013 \"we tested models by feeding their outputs into an autoencoder and measuring the error signal across habituation and test phases (see Methods).\" I didn't quite get this. To evaluate similarity within the network models, can't one use a Euclidean norm or a cosine? Please clarify.\n\n\u2013 \"but did not differ from one another\" \u2013 Meaning what? Low BF? If so, please give BF.\n\n\u2013 \"it has remained unknown whether one-shot categorization is possible within the first year of human life.\" Has this really never been established, even for simple categories? Anecdotally, infants seem to do one-shot learning all the time.\n\n\u2013 \"Moreover, V2 and V3 are evolutionarily preserved in primate and non-primate animals\" I think the entire discussion of neural analogs here is misleading. I am not a bird expert but I didn't think birds have homologous visual cortical areas to primates. But that doesn't matter, because functional organization is analogous when computational problems are analogous. In other words, birds don't generalize the same way we do because they have V2 areas like us, but because they are solving problems like us.\n\n\u2013 \"set was comprised of two\u2026\" -> \"set comprised two\u2026\" Use of \"comprised of\" to mean \"composed of\" is colloquial. The US comprises states, not the other way around.\n\nReviewer #3:\n\nThis study relates habituation in infants to categorization in neural networks, showing that infants learn (as evidenced by looking times) shape skeletons across surface form, while neural networks that lack an explicit skeletal representation do not show this generalization. A key aspect of the study is that infants are only exposed to one exemplar, suggesting that infants learn shape skeletons using \"one-shot categorization\". The study is well-conducted, using relatively large sample sizes, comprehensive statistical testing, and careful modelling. The manuscript is well-written and easy to follow. However, results may be alternatively explained by motion similarity and/or low-level visual similarity between habituation and test stimuli.\n\n\u2013 The shapes are shown as videos during both habituation and test phases. While I understand that this was preferred for drawing the infants' attention, it complicates the interpretation of the results. First, it becomes hard to disentangle the learning of the shape skeleton from the learning of the motion trajectory. Second, the comparison with neural networks becomes more difficult as these neural networks are not sensitive to motion.\n\n\u2013 Because surface form differed for both test objects, the same-skeleton object will be visually more similar to the habituated object than the different-skeleton object. Therefore, it cannot be ruled out that results reflect habituation to lower-level stimulus properties rather than shape skeleton. This is also suggested by recent fMRI results using these stimuli (Ayzenberg et al., Neuropsychologia 2022), showing that the skeletal model correlates with activity patterns throughout the visual system, including V1 (though the cross-surface form results are only shown for V3 and LO, as far as I could tell).\n\nI would recommend the authors to include a discussion of the possible contributions of motion and non-skeletal visual properties to the habituation results.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for choosing to send your work entitled \"The shape skeleton supports one-shot categorization in human infants: Behavioral and computational evidence\" for consideration at eLife. Your letter of appeal has been considered by a Senior Editor and a Reviewing Editor, and we are prepared to consider a revised submission with no guarantees of acceptance.\n\nIn addition to the comments of the previous reviews, during the consultation of the appeal, the following questions came up:\n\n1. What new insight do we gain from the infant study above and beyond what we already know from adults?\n\n2. Why do you think that (dis)habitation is evidence of learning per se, rather than comparisons of perceptual similarity between items?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The shape skeleton supports one-shot categorization in human infants\" for further consideration by eLife. Your revised article has been evaluated by Floris de Lange (Senior Editor) and a Reviewing Editor, in consultation with reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe reviewers were not convinced that the experiments convincingly demonstrate \u201cone-shot\u201d categorization. This concern can be addressed by adjusting the headline claim throughout (title, abstract, intro, results and discussion would need some modifications). A suggested alternative title could be: \"The shape skeleton supports shape similarity judgments in human infants\".\n\nThe design involves making a judgment about which objects appear to be more similar. This requires comparing the distances between presented items (in some feature space describing the stimuli). Making such a comparison doesn't involve learning anything on the basis of the experience. It doesn't involve generalization and there is no sense in which it is a 'one-shot' task, except that a given trial presents only a few items. But this is true of practically ANY experiment involving comparing a small number of items.\n\nHere is an analogy: suppose the infants were shown three different (i.e., easily discriminable) patches of gray shades: two patches are relatively light shades of gray and one is a significantly darker shade. A habituation experiment like the one the authors performed would reveal that the infants see the two light grays as more similar than the darker one. But in what sense is this 'one shot categorization'? The infants wouldn't have learned a new category. There is no meaningful generalization. The experiment simply reflects the fact that similar grays look more similar than more different ones.\n\nThe same is true in the authors' experiments. The experiments demonstrate that objects with more similar skeletons appear more similar to infants. This is not a trivial result, and is worthy of publication in its own right (although similar findings have already been shown in adults). However not under the title of 'one-shot categorization'. Instead, it should be pitched (correctly) as the shape skeleton contributing substantially to judgments of shape similarity.\n\nTo reiterate: I think the authors have performed an elegant study with some interesting findings. I think their interpretation can certainly be discussed in the MS. However, the headline claim about one-shot categorization should be toned down. Otherwise, the term would 'one-shot' would not mean anything anymore.\n",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8e16050-13db-475c-9eb7-a6268467f008",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C1",
+      "claim": "Categorization of everyday objects requires that humans form representations of shape that are tolerant to variations among exemplars.",
+      "claim_type": "EXPLICIT",
+      "source": "Categorization of everyday objects requires that humans form representations of shape that are tolerant to variations among exemplars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about object categorization that draws from established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "3c38e33a-c89d-4a59-b7db-cfc669f51e2c",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C2",
+      "claim": "How invariant shape representations develop remains poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, how such invariant shape representations develop remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of knowledge in the field and identifies a gap in understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "db1a7152-e6cb-468f-a196-68c2d14239ca",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C3",
+      "claim": "Human infants (6\u201312 months; N=82) classified novel objects across variations in their component parts following habituation to a never-before-seen object.",
+      "claim_type": "EXPLICIT",
+      "source": "Following habituation to a never-before-seen object, infants classified other novel objects across variations in their component parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "f64ad5dc-9623-4046-8f7e-0d9d9787a50c",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C4",
+      "claim": "Infants' performance was best described by a model of shape based on the skeletal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons to several computational models of vision, including models of high-level and low-level vision, revealed that infants' performance was best described by a model of shape based on the skeletal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing infant performance to computational models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "9183234a-47fa-4522-970c-a1b54aa1ac80",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C5",
+      "claim": "Infants outperformed a range of artificial neural network models under the same conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, infants outperformed a range of artificial neural network models, selected for their massive object experience and biological plausibility, under the same conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the comparative analysis between infants and ANNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "70e1b906-8b1f-4b3d-bc11-027657a98bfe",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C6",
+      "claim": "Robust representations of shape can be formed with little language or object experience by relying on the perceptually invariant skeletal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these findings suggest that robust representations of shape can be formed with little language or object experience by relying on the perceptually invariant skeletal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings about infant performance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "607df1a9-4e34-4488-a52c-3fc5785dedbb",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C7",
+      "claim": "Shape information is crucial for object categorization.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is widespread agreement that shape information is crucial for object categorization (Biederman, 1995; Mervis and Rosch, 1981), it remains unclear how humans come to form global representations of shape that are tolerant to variations among exemplars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "1c0d0e46-b505-41a9-8c3d-b3f559c678f2",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C8",
+      "claim": "Linguistic experience, particularly the learning of object labels, draws children's attention to global shape as a diagnostic cue, inducing a 'shape bias'.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that global shape information becomes crucial for object categorization in early childhood because linguistic experience, particularly the learning of object labels (e.g. 'dog'), draws children's attention to global shape as a diagnostic cue\u2014inducing a so-called 'shape bias' (Landau et al., 1998; Smith et al., 1996; Smith et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "40c68d25-53df-4320-a7f3-4872c3ef496a",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C9",
+      "claim": "Labels may bootstrap object recognition abilities in prelinguistic children.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, labels may bootstrap object recognition abilities more generally, such that even prelinguistic children are better at individuating and categorizing objects when verbal labels are provided (Ferry et al., 2010; Xu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "04492fdc-d856-4b7a-b7c3-39c0771414e5",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C10",
+      "claim": "Supervised artificial neural networks have begun to match the object recognition abilities and neural representations of human adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several studies suggest that motion information may initially bootstrap infants' ability to extract 3D shape structure (Kellman and Arterberry, 2006; Ostrovsky et al., 2009; Wood and Wood, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "6ac3aa5e-a9cd-43d9-be8d-c0c305bdc230",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C11",
+      "claim": "ANNs may develop a shape bias that supports object categorization when generalizing across variations in color or texture with appropriate experience.",
+      "claim_type": "EXPLICIT",
+      "source": "With appropriate experience, these models may even develop a shape bias that supports object categorization, at least when generalizing across variations in color or texture (Ritter et al., 2017; Tartaglini et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "a13ba5aa-d05a-43f9-a5be-e158ca66025f",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C12",
+      "claim": "The shape skeleton is a quantitative model that describes an object's global shape via a series of internal symmetry axes.",
+      "claim_type": "EXPLICIT",
+      "source": "One such property is known as the shape skeleton\u2014a quantitative model that describes an object's global shape via a series of internal symmetry axes (Blum, 1967; Feldman and Singh, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim defines the shape skeleton and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "c77b1a59-15ed-451a-b0fa-209b2e139bc9",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C13",
+      "claim": "Models of skeletal structure are tolerant to local variations in shape typical of basic-level exemplars.",
+      "claim_type": "EXPLICIT",
+      "source": "These axes define the topological arrangement of object parts, making models of skeletal structure tolerant to local variations in shape typical of basic-level exemplars (Ayzenberg et al., 2019a; Wilder et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "b85d49ed-e89c-4887-8826-57adcedd50e8",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C14",
+      "claim": "Newborns can discriminate between simple 2D shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, researchers have shown that newborns can already discriminate between simple 2D shapes (Slater et al., 1983) and display shape constancy, such that they recognize a shape from a novel orientation (Slater and Morison, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "65d2b02e-17ad-4756-8ce4-a95f2b4a7d30",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C15",
+      "claim": "By 6 months of age, infants can categorize objects using only the stimulus' shape silhouette.",
+      "claim_type": "EXPLICIT",
+      "source": "By 6 months of age, infants' shape representations are also robust to variations among category exemplars, such that they can categorize objects using only the stimulus' shape silhouette (Quinn et al., 1993; Quinn et al., 2001a), as well as extend category membership to objects with varying local contours, but the same global shape (Quinn et al., 2002; Quinn et al., 2001b; Turati et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "9df17fd6-8f23-41d4-b38b-356e3d0b7c2f",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C16",
+      "claim": "Visual experience at 6-12 months of age is dominated by just a few common objects (~10 objects).",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to test 6\u201312-month-olds because the visual experience at this age is dominated by just a few common objects (~10 objects; Clerkin et al., 2017) and they have relatively little linguistic understanding (~7 words; Bergelson and Swingley, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "8a8fcc55-f734-4a42-8e76-2bfb3252d786",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C17",
+      "claim": "6-12 month old infants have relatively little linguistic understanding (~7 words).",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to test 6\u201312-month-olds because the visual experience at this age is dominated by just a few common objects (~10 objects; Clerkin et al., 2017) and they have relatively little linguistic understanding (~7 words; Bergelson and Swingley, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "5de3c0fc-6b37-42b3-8ba8-24f322ba6f1d",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C18",
+      "claim": "In Experiment 1, infants looked longer at the object with the different skeleton compared to the one with the matching skeleton (t[33]=3.04, p=0.005, d=0.52, 95% CI [0.16, 0.88], BF10=8.42).",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the two types of test trials in Experiment 1 (Figure 2A) revealed that, across the test phase, infants looked longer at the object with the different skeleton compared to the one with the matching skeleton (t[33]=3.04, p=0.005, d=0.52, 95% CI [0.16, 0.88], BF10=8.42; Figure 2B), with the majority of infants showing this effect (25/34 infants, p=0.009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "896c5619-a1bc-4df4-aa5a-163007c1abc9",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C19",
+      "claim": "The majority of infants in Experiment 1 showed longer looking times at objects with different skeletons (25/34 infants, p=0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the two types of test trials in Experiment 1 (Figure 2A) revealed that, across the test phase, infants looked longer at the object with the different skeleton compared to the one with the matching skeleton (t[33]=3.04, p=0.005, d=0.52, 95% CI [0.16, 0.88], BF10=8.42; Figure 2B), with the majority of infants showing this effect (25/34 infants, p=0.009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "2dc60931-a914-40a8-9504-ad29b96f2d42",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C20",
+      "claim": "In Experiment 1, dishabituation only occurred for the object with the different skeleton (t[33]=3.36, p=0.002, d=0.58, 95% CI [0.21, 0.94], BF10=17.47).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a comparison between the end of habituation (mean of last 4 trials) and looking times across the test phase revealed that dishabituation only occurred for the object with the different skeleton (t[33]=3.36, p=0.002, d=0.58, 95% CI [0.21, 0.94], BF10=17.47; 25/34 infants, p=0.009), not the object with the matching skeleton (t[33]=1.00, p=0.325, d=0.17, 95% CI [\u20130.16, 0.51], BF10=0.29; Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "27b3e040-2bcd-4641-88e9-56f2eb2caa0d",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C21",
+      "claim": "In Experiment 1, dishabituation did not occur for the object with the matching skeleton (t[33]=1.00, p=0.325, d=0.17, 95% CI [\u20130.16, 0.51], BF10=0.29).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a comparison between the end of habituation (mean of last 4 trials) and looking times across the test phase revealed that dishabituation only occurred for the object with the different skeleton (t[33]=3.36, p=0.002, d=0.58, 95% CI [0.21, 0.94], BF10=17.47; 25/34 infants, p=0.009), not the object with the matching skeleton (t[33]=1.00, p=0.325, d=0.17, 95% CI [\u20130.16, 0.51], BF10=0.29; Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "2690b46e-f61b-4dc6-a25a-55193978f53d",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C22",
+      "claim": "Infants treated objects with matching skeletons as more similar to one another than objects with different skeletons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, infants treated objects with matching skeletons as more similar to one another than objects with different skeletons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on looking times.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "cc90b0c6-d2ba-4fc9-b2a0-f9770a05942c",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C23",
+      "claim": "Infants were capable of discriminating objects on the basis of surface form alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that infants were indeed capable of discriminating objects on the basis of surface form alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of first test trial looking times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "e9b3610e-8873-4ee8-b1ca-ff043ee5f162",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C24",
+      "claim": "Infants dishabituated to the object with the same skeleton but different surface form (t(15) = 3.76, p=0.002, d=0.94, 95% CI [0.34, 1.52], BF10=22.23).",
+      "claim_type": "EXPLICIT",
+      "source": "That is, infants dishabituated to the object with the same skeleton but different surface form, t(15) = 3.76, p=0.002, d=0.94, 95% CI [0.34, 1.52], BF10=22.23, with the majority of infants showing this effect (14/16, p=0.004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "c23658f7-7ff9-4c2b-9eba-c236246b0977",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C25",
+      "claim": "Infants' looking times on the first test trial did not differ for either test object (8.31 s vs. 9.18 s; t[32]=0.50, p=0.624, d=.17, 95% CI [\u20130.51, 0.84], BF10=0.36).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, and crucially, infants' looking times on the first test trial did not differ for either test object (8.31 s vs. 9.18 s; t[32]=0.50, p=0.624, d=.17, 95% CI [\u20130.51, 0.84], BF10=0.36).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "343e33fd-a3ce-4999-91ea-c45468833bfe",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C26",
+      "claim": "The two types of test objects were matched for discriminability relative to the habituation object.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that not only could infants differentiate between surface forms, but also, that the two types of test objects were matched for discriminability relative to the habituation object.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on looking times.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "295856ce-5af4-4cf1-b0ae-a733604fab3e",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C27",
+      "claim": "All computational models tested performed above chance in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed that all models performed above chance (0.50; see Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model analysis, with reference to Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "92c8cc08-509c-40df-9cdf-b350425f55df",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C28",
+      "claim": "Infant performance was best matched to the Skeletal model in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, and importantly, infant performance was best matched to the Skeletal model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing infant performance to computational models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "bed9e33f-58ed-40bb-86c3-b97e6c4d6319",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C29",
+      "claim": "Both infants and the Skeletal model performed significantly better than all other models except FlowNet in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both infants and the Skeletal model performed significantly better than all other models, except FlowNet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "140b5a73-3a22-45f0-a219-522697666e50",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C30",
+      "claim": "FlowNet's performance did not differ from that of any ANN or the Pixel model in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the success of FlowNet does suggest that motion information may contribute to representations of shape. Nevertheless, FlowNet's performance did not differ from that of any ANN or the Pixel model, leaving its exact role in object classification unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "fa9f889a-37c2-4c2b-b2f3-62b97d25320f",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C31",
+      "claim": "In Experiment 2, infants looked longer at the object with the different skeleton compared to the one with the matching skeleton (t[47]=2.60, p=0.012, d=0.38, 95% CI [0.08, 0.67], BF10=3.18).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that infants continued to look longer at the object with the different skeleton compared to the one with the matching skeleton (t[47]=2.60, p=0.012, d=0.38, 95% CI [0.08, 0.67], BF10=3.18; Figure 2E), with the majority of infants showing this effect (33/48 infants, p=0.013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "580eb79f-7f86-4b27-8023-0e5a1c754d10",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C32",
+      "claim": "The majority of infants in Experiment 2 showed longer looking times at objects with different skeletons (33/48 infants, p=0.013).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that infants continued to look longer at the object with the different skeleton compared to the one with the matching skeleton (t[47]=2.60, p=0.012, d=0.38, 95% CI [0.08, 0.67], BF10=3.18; Figure 2E), with the majority of infants showing this effect (33/48 infants, p=0.013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "b1482f26-8863-4b60-be84-9b9a5b9a846d",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C33",
+      "claim": "In Experiment 2, infants only dishabituated during the test phase to the object with the different skeleton (t[47]=3.63, p<0.001, d=0.52, 95% CI [0.22, 0.82], BF10=39.77; 36/48 infants, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, infants only dishabituated during the test phase to the object with the different skeleton (t[47]=3.63, p<0.001, d=0.52, 95% CI [0.22, 0.82], BF10=39.77; 36/48 infants, p<0.001), not the one with the matching skeleton (t[47]=1.42, p=0.163, d=0.16, 95% CI [\u20130.08, 0.49], BF10=0.40), as in Experiment 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "8a4bf580-b609-4d68-ae57-ec39055eca89",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C34",
+      "claim": "In Experiment 2, infants did not dishabituate to the object with the matching skeleton (t[47]=1.42, p=0.163, d=0.16, 95% CI [\u20130.08, 0.49], BF10=0.40).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, infants only dishabituated during the test phase to the object with the different skeleton (t[47]=3.63, p<0.001, d=0.52, 95% CI [0.22, 0.82], BF10=39.77; 36/48 infants, p<0.001), not the one with the matching skeleton (t[47]=1.42, p=0.163, d=0.16, 95% CI [\u20130.08, 0.49], BF10=0.40), as in Experiment 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "134eef2c-e43b-4e46-9510-e47737ed4b31",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C35",
+      "claim": "The results from Experiment 2 rule out the possibility that infants classified objects on the basis of their coarse spatial relations, rather than their shape skeletons.",
+      "claim_type": "EXPLICIT",
+      "source": "The results from this experiment rule out the possibility that infants classified objects on the basis of their coarse spatial relations, rather than their shape skeletons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings of Experiment 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "15ff23e3-47a8-427b-b7aa-1430ac9f6dc5",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C36",
+      "claim": "In Experiment 2, infants dishabituated to the object with the same shape skeleton but different surface form (t(22)=3.51, p=0.002, d=0.73, 95% CI [0.26, 1.19], BF10=19.71).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that infants dishabituated to the object with the same shape skeleton but different surface form, t(22)=3.51, p=0.002, d=0.73, 95% CI [0.26, 1.19], BF10=19.71, with the majority of infants showing this effect (17/23, p=0.035), suggesting that discrimination was possible on the basis of surface form alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "4adde82a-a27d-4262-aba0-cb9764a8a606",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C37",
+      "claim": "In Experiment 2, infants' looking times on the first test trial did not differ for the two types of test objects (6.87 s vs. 10.83 s; t[45]=1.47, p=0.149, d=0.43, 95% CI [\u20130.15, 1.00], BF10=0.69).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, infants' looking times on the first test trial did not differ for the two types of test objects (6.87 s vs. 10.83 s; t[45]=1.47, p=0.149, d=0.43, 95% CI [\u20130.15, 1.00], BF10=0.69), confirming comparable discriminability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "5e6a120d-f35a-446f-98d9-edec368280a0",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C38",
+      "claim": "In Experiment 2, the Skeletal, Pixel, and FlowNet models all performed above chance.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed that the Skeletal, Pixel, and FlowNet models all performed above chance (Figure 2F), but infant performance was most closely matched to the Skeletal model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model analysis, with reference to Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "76360bf9-5c25-4326-b42e-e77ff56ed367",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C39",
+      "claim": "In Experiment 2, none of the ANNs performed above chance.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the ANNs performed above chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "8863ee95-c09d-4b28-a811-d3f0103cf110",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C40",
+      "claim": "In Experiment 2, infant performance was most closely matched to the Skeletal model.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed that the Skeletal, Pixel, and FlowNet models all performed above chance (Figure 2F), but infant performance was most closely matched to the Skeletal model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing infant performance to computational models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "6730fe74-1903-440f-bcb4-7c9ef44ebb61",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C41",
+      "claim": "In Experiment 2, both infants and the Skeletal model significantly outperformed the ANNs and the Pixel model, but not FlowNet.",
+      "claim_type": "EXPLICIT",
+      "source": "As in Experiment 1, both infants and the Skeletal model significantly outperformed the ANNs and the Pixel model, but not FlowNet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "7818a611-ff01-47f1-8c49-aa66533665f7",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C42",
+      "claim": "ResNet-IN, CorNet-S, and ResNext-SAY performed above chance (Ms = 0.62\u20130.66, 95% CIs [0.53\u20130.59, 0.70\u20130.76]) when classifying objects by surface form using stimuli from Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a comparable procedure to the previous experiments, all models were tested with objects in which the surface forms either matched or differed from the habituated object; both test objects differed in their shape skeletons (Figure 3A). For objects from Experiment 1 (Figure 1), the analyses revealed that ResNet-IN, CorNet-S, and ResNext-SAY performed above chance (Ms = 0.62\u20130.66, 95% CIs [0.53\u20130.59, 0.70\u20130.76]; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model analysis on surface form classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "4b47f64d-d09a-4dc7-956f-cee5d7642f5d",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C43",
+      "claim": "Skeletal, ResNet-SIN, Pixel, and FlowNet models did not perform differently from chance (Ms = 0.52\u20130.61, 95% CIs [0.40\u20130.48, 0.60\u20130.72]) when classifying objects by surface form using stimuli from Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, none of the other models (Skeleton, ResNet-SIN, Pixel, FlowNet) performed differently from chance (Ms = 0.52\u20130.61, 95% CIs [0.40\u20130.48, 0.60\u20130.72]; Figure 3B) when classifying objects by surface form (i.e. across shape skeletons).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model analysis on surface form classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "2b9c82a6-57cb-4549-8f94-62017dcee710",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C44",
+      "claim": "All models except Skeletal and Pixel models performed above chance (Ms = 0.67\u20130.74, 95% CIs [0.51\u20130.67, 0.72\u20130.80]) when classifying objects by surface form using stimuli from Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "For objects from Experiment 2 (Figure 1), all models performed above chance (Ms = 0.67\u20130.74, 95% CIs [0.51\u20130.67, 0.72\u20130.80]), except Skeletal and Pixel models (Ms = 0.54\u20130.59, 95% CIs [0.40\u20130.41, 0.68\u20130.73]; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model analysis on surface form classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "a621b1aa-04e4-4c70-bf6a-b71851d5a677",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C45",
+      "claim": "Most ANNs are capable of classifying objects using local shape properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these findings demonstrate that most ANNs are capable of classifying objects using local shape properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the computational model analysis on surface form classification.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "fad4e7d4-e17d-4b1c-b1e6-1a97b69e9a08",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C46",
+      "claim": "ANNs show sensitivity to local shape properties.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with other research showing sensitivity to local shape properties in ANNs (Baker et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research and is consistent with the current findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "568b9a87-4545-4278-9fc4-6862ca7ed2c4",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C47",
+      "claim": "Infants represent global shape by extracting a skeletal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that infants represent global shape by extracting a skeletal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "05d77df0-a55b-459a-8842-16984360c208",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C48",
+      "claim": "With only one exemplar as a reference, infants classified objects by their shape skeletons across variations in local properties.",
+      "claim_type": "EXPLICIT",
+      "source": "With only one exemplar as a reference, infants classified objects by their shape skeletons across variations in local properties that altered component parts of the objects, including when coarse spatial relations could not be used as a diagnostic cue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "ee6a6078-0527-45fb-adfb-e42a87bcaea9",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C49",
+      "claim": "A Skeletal model provided the closest match to infants' performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a Skeletal model provided the closest match to infants' performance, further suggesting that infants relied on the shape skeleton to determine object similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing infant performance to computational models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "284746b7-31d8-47c3-9c30-4cd1a7e227c6",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C50",
+      "claim": "The formation of robust shape representations in humans is largely rooted in sensitivity to the shape skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we would argue that the formation of robust shape representations in humans is largely rooted in sensitivity to the shape skeleton, an invariant representation of global shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "ab62193b-38f4-4001-92c7-d0ccad663951",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C51",
+      "claim": "When generalizing across the surface form, a Pixel model performed above chance.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, when generalizing across the surface form, a Pixel model performed above chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "bc85eaec-21f4-43bb-8301-118801aa2422",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C52",
+      "claim": "Both infants and the Skeletal model outperformed the Pixel model in both experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, both infants and the Skeletal model outperformed the Pixel model in both experiments, further arguing against an account based on image-level similarity alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "6415d196-f922-47d0-9066-e6cd85b4e76c",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C53",
+      "claim": "Low-level visual similarity explains more variance in infants' behavioral and neural responses than the upper layers of ANNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies comparing the visual representations of infants and computational models reveal that low-level visual similarity explains more variance in infants' behavioral and neural responses than the upper layers of ANNs (Kiat et al., 2022; Xie et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "1b7caa15-81ca-4af1-a57b-20247599314c",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C54",
+      "claim": "Object categorization in infancy may be supported by the representations of the early visual cortex (V1-V3), rather than the higher-level ventral cortex, as in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent studies suggest that object categorization in infancy may be supported by the representations of the early visual cortex (V1-V3), rather than the higher-level ventral cortex, as in adults (Spriet et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "45ad853a-4945-4cd1-95c0-739b2d4680a3",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C55",
+      "claim": "Skeletal representations may emerge in area V3 as a consequence of between-layer recurrent interactions among border-ownership cells in area V2 and grouping cells in area V3.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, several studies have suggested that skeletal representations may emerge in area V3 as a consequence of between-layer recurrent interactions among border-ownership cells in area V2 and grouping cells in area V3 (Ardila et al., 2012; Craft et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "047b505a-cfde-4af1-a95b-755090b95e25",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C56",
+      "claim": "Representations of skeletal structures in V3 are invariant across changes in component parts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, representations of skeletal structures in V3 are invariant across changes in component parts, which lends support to their role in categorization (Ayzenberg et al., 2022; Lescroart and Biederman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "d963fe96-2625-4e7d-8e04-3e5f1c98029d",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C57",
+      "claim": "V3 in primates shows evidence of functional maturity shortly after birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Other research on the anatomical and functional organization of V3 in primates shows evidence of functional maturity shortly after birth (Arcaro and Livingstone, 2017; Ellis et al., 2020; Wiesel and Hubel, 1974), further raising the possibility that skeletal structure is represented in this area with little object experience or any language.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "3bb97d2f-f973-404a-abf8-c8170dc51633",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C58",
+      "claim": "FlowNet appeared comparable to infants and the Skeletal model at classifying objects when they differed in surface form.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we also found that FlowNet, a model of optic flow, appeared comparable to infants and the Skeletal model at classifying objects when they differed in surface form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "140b00b6-f0f3-4355-bd8d-a20d1d68d7a4",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C59",
+      "claim": "Infants are better at recognizing objects from novel viewpoints when they are first familiarized with moving objects rather than static images.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that infants are better at recognizing objects from novel viewpoints when they are first familiarized with moving objects rather than static images (Kellman, 1984; Kellman and Shipley, 1991; Kellman and Short, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "b063b3d0-2cc4-4cf8-be2e-1841e7e613dc",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C60",
+      "claim": "Viewpoint-invariant object recognition in chicks occurs only if the chicks are raised in environments in which objects exhibit smooth, continuous motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, controlled-rearing studies with chicks have found that viewpoint-invariant object recognition occurs only if the chicks are raised in environments in which objects exhibit smooth, continuous motion (Wood and Wood, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "c723c26b-6a10-4d26-a76b-4bcbe55d1543",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C61",
+      "claim": "Motion information may initially bootstrap infants' ability to extract 3D shape structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several studies suggest that motion information may initially bootstrap infants' ability to extract 3D shape structure (Kellman and Arterberry, 2006; Ostrovsky et al., 2009; Wood and Wood, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "5c913aca-743f-43cd-bad7-47baf143efd5",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C62",
+      "claim": "The Skeletal model was more closely aligned to the performance of human infants than was FlowNet.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Skeletal model, which does not incorporate any motion information, was more closely aligned to the performance of human infants than was FlowNet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "272445a4-1d4e-47ef-b678-db7fa94802db",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C63",
+      "claim": "ANNs were not capable of classifying objects across variations in surface form.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to infants and the other models, ANNs were not capable of classifying objects across variations in surface form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "08a1cbe6-b7b9-4529-9ea1-7ba12c1bb649",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C64",
+      "claim": "ANNs were capable of classifying objects by their surface form (across variation in shape skeleton).",
+      "claim_type": "EXPLICIT",
+      "source": "However, they were capable of classifying objects by their surface form (across variation in shape skeleton), ruling out alternative explanations for their poor performance in the first task based on idiosyncrasies of the stimuli or testing procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "1d1cf2eb-4703-4632-a86e-60a173e0a57a",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C65",
+      "claim": "Conventional ANNs rely on qualitatively different mechanisms than do humans to represent objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this finding suggests that, regardless of the specific architecture or training type, conventional ANNs rely on qualitatively different mechanisms than do humans to represent objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the computational model analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "ea103a58-0d22-4d5a-991f-1b7f7e9bfc72",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C66",
+      "claim": "ANNs may be especially sensitive to local object properties, making them susceptible to spurious changes in the objects' contours.",
+      "claim_type": "EXPLICIT",
+      "source": "This class of models may be especially sensitive to local object properties, making them susceptible to spurious changes in the objects' contours (Baker et al., 2018; Baker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and is consistent with the current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "6921a8b0-67b2-4ed5-b5a8-a16551164f4c",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C67",
+      "claim": "Representations of skeletal structure in humans are particularly robust to perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, representations of skeletal structure in humans are particularly robust to perturbations (Ayzenberg et al., 2019a; Feldman and Singh, 2006) and, thus, may be especially well-suited to basic-level categorization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "f134ad91-19a1-4457-a8fd-fa74ce5af296",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C68",
+      "claim": "Conventional ANNs can generalize across variations in color and texture.",
+      "claim_type": "EXPLICIT",
+      "source": "Although conventional ANNs (e.g. ResNet-SIN) can generalize across variations in color and texture (Geirhos et al., 2018; Tartaglini et al., 2022), fundamental changes to ANNs' architectures and/or training may be needed before they can achieve human-like categorization on the basis of global shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "3e8ae9b6-a6f5-44d2-9e66-5f17038c3711",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C69",
+      "claim": "By adulthood, humans also use visual properties such as texture and local contours, as well as inferential processes such as abstract rules and the object's generative history to reason about objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by adulthood, humans also use visual properties such as texture (Jagadeesh and Gardner, 2022; Long et al., 2018) and local contours (Davitt et al., 2014), as well as inferential processes such as abstract rules (Ons and Wagemans, 2012; Rouder and Ratcliff, 2016) and the object's generative history (Fleming and Schmidt, 2019; Spr\u00f6te et al., 2016) to reason about objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "e5ece6d8-b199-4ba4-b1a7-b0d3a841c953",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C70",
+      "claim": "Properties such as texture and local features may override shape skeletons in certain contexts, such as when identifying objects in the periphery or during subordinate-level categorization.",
+      "claim_type": "EXPLICIT",
+      "source": "Properties such as texture and local features may even override shape skeletons in certain contexts, such as when identifying objects in the periphery (Gant et al., 2021) or during subordinate-level categorization (Davitt et al., 2014; Tarr and B\u00fclthoff, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "0bb0c5a8-f947-4f96-a12f-39044cfb48e3",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C71",
+      "claim": "The shape skeleton may be uniquely suited to the basic level of categorization, wherein objects have similar global shapes but vary in their component parts.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the shape skeleton may be uniquely suited to the basic level of categorization, wherein objects have similar global shapes but vary in their component parts (Biederman, 1995; Rosch et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by citations to prior research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "6f11cb94-d7df-48a3-a0d1-0e0fd05847fc",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C72",
+      "claim": "Infants were habituated to a single, novel object to better understand the pre-existing visual representations infants rely on for object perception.",
+      "claim_type": "EXPLICIT",
+      "source": "A key aspect of our design was that infants were habituated to a single, novel object. We did this to better understand the pre-existing visual representations infants rely on for object perception, rather than the ones they may learn over the course of habituation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach and its rationale.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "eb3d649d-3163-4787-aee6-2f2aec806118",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C73",
+      "claim": "Infants reliably classified objects on the basis of the shape skeleton using a single exemplar.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we found that infants reliably classified objects on the basis of the shape skeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "99b80cf3-26d2-426a-8bc9-a239a6f35a3f",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C74",
+      "claim": "One-shot categorization of objects by older children and adults involves identifying invariant visual properties of the objects, namely shape.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, our results are consistent with studies showing that one-shot categorization of objects by older children and adults involves identifying invariant visual properties of the objects, namely shape (Biederman and Bar, 1999; Feldman, 1997; Landau et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "f2e3cdad-082a-4ef4-8dac-4b411d7c7e98",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C75",
+      "claim": "A skeleton-like compositional structure is central to one-shot categorization using simple visual objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, research using simple visual objects (e.g. handwritten characters) suggests that a skeleton-like compositional structure is central to one-shot categorization (Lake et al., 2011; Lake et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "aaa9672a-6aac-4590-8b25-87b7d85a1601",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C76",
+      "claim": "One-shot category learning may be possible early in development by relying on a perceptually invariant skeletal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results are consistent with the hypothesis that one-shot category learning may be possible early in development by relying on a perceptually invariant skeletal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "f7b91c85-d7e0-4603-ba29-4c282259030d",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C77",
+      "claim": "Experience with moving objects may play a role in supporting the extraction of a 3D shape structure.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned previously, experience with moving objects may play a role in supporting the extraction of a 3D shape structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on prior discussion and research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "d2720531-cb44-4c38-8211-3ab378e8aadd",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C78",
+      "claim": "Infants' visual experience includes a large volume of viewpoints for each object.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although infants' visual experience is dominated by a small number of objects, this experience includes a large volume of viewpoints for each object (Clerkin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "3a8b2d9d-0b14-47fb-abd8-c2192fbe26aa",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C79",
+      "claim": "Infants' chosen views of objects are biased toward planar orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, infants' chosen views of objects are biased toward planar orientations (James et al., 2014; Slone et al., 2019), which may serve to highlight the shape skeleton, though it is unclear whether such a bias is a consequence or a cause of skeletal extraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "0638bba3-78c6-4d81-bd62-54680c8378b0",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C80",
+      "claim": "Certain visual experiences, such as low visual acuity at birth, may be particularly important for highlighting global shape information.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, certain visual experiences, such as low visual acuity at birth, may be particularly important for highlighting global shape information (Cassia et al., 2002; Ostrovsky et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "e23bb2c1-b46d-4cdb-9db1-c513001614b8",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C81",
+      "claim": "ANNs trained with a blurry-to-clear visual regimen showed improved performance for categories where global information is important, such as faces.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ANNs trained with a blurry-to-clear visual regimen showed improved performance for categories where global information is important, such as faces (Jang and Tong, 2021; Vogelsang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "59cddf5c-19ed-4c4b-b716-e15a0a5e6e13",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C82",
+      "claim": "Infants form robust global representations of shape by extracting the object's shape skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our work suggests that infants form robust global representations of shape by extracting the object's shape skeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "7a4d43de-9167-4722-8400-b96f83740b15",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C83",
+      "claim": "With limited language and object experience, infants generalized across variations in local shape properties to classify objects\u2014a feat not matched by conventional ANNs.",
+      "claim_type": "EXPLICIT",
+      "source": "With limited language and object experience, infants generalized across variations in local shape properties to classify objects\u2014a feat not matched by conventional ANNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "65daf777-764d-4a94-8c3e-cc372d091900",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C84",
+      "claim": "A total of 92 full-term infants participated in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 92 full-term infants participated in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "0d7ff82d-642f-4c23-8e63-524f6973f08e",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C85",
+      "claim": "Ten infants were excluded from the study (Experiment 1: 5 for fussiness and 1 because of equipment failure; Experiment 2: 3 for fussiness and 1 because of equipment failure).",
+      "claim_type": "EXPLICIT",
+      "source": "Ten infants were excluded (Experiment 1: 5 for fussiness and 1 because of equipment failure; Experiment 2: 3 for fussiness and 1 because of equipment failure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "6b24ddc7-c588-4084-8c1d-ca8180e5351e",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C86",
+      "claim": "The final sample included 34 infants in Experiment 1 (M=9.53 months, range = 6.47\u201312.20 months; 18 females).",
+      "claim_type": "EXPLICIT",
+      "source": "The final sample included 34 infants in Experiment 1 (M=9.53 months, range = 6.47\u201312.20 months; 18 females) and 48 infants in Experiment 2 (M=9.12 months, range = 6.17\u201312.00 months; 20 females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "bc27ae51-a53d-45d2-9e20-cc3eee31811a",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C87",
+      "claim": "The final sample included 48 infants in Experiment 2 (M=9.12 months, range = 6.17\u201312.00 months; 20 females).",
+      "claim_type": "EXPLICIT",
+      "source": "The final sample included 34 infants in Experiment 1 (M=9.53 months, range = 6.47\u201312.20 months; 18 females) and 48 infants in Experiment 2 (M=9.12 months, range = 6.17\u201312.00 months; 20 females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "c76bc140-607a-4e0d-b3c5-19800917d6e3",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C88",
+      "claim": "The study was approved by the Emory University Institutional Review Board under the project 'Spatial Origins' (Study Number IRB0003452).",
+      "claim_type": "EXPLICIT",
+      "source": "All families gave informed consent according to a protocol approved by the Emory University Institutional Review Board (IRB) under the project 'Spatial Origins' (Study Number IRB0003452).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "5ea7efa5-6609-4fc1-83da-ef28bb64f697",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C89",
+      "claim": "Six videos of 3D novel objects were rendered from the stimulus set created by Ayzenberg and Lourenco, 2019b for Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "For Experiment 1, six videos of 3D novel objects were rendered from the stimulus set created by Ayzenberg and Lourenco, 2019b; Figure 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "b07567fb-f891-4fe0-8569-67755a7c3816",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C90",
+      "claim": "The objects were comprised of three distinct skeletons selected on the basis of their skeletal similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The objects were comprised of three distinct skeletons selected (from a set of 30) on the basis of their skeletal similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about stimulus selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "459e0c68-8a7e-4ba1-bd63-a3db85947ba8",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C91",
+      "claim": "The three skeletons used in Experiment 1 did not significantly differ in their discriminability (F(2, 64)=0.11, p=0.898).",
+      "claim_type": "EXPLICIT",
+      "source": "A repeated-measures ANOVA, with skeleton pair as the within-subject factor, revealed that the three skeletons used in Experiment 1 did not significantly differ in their discriminability, F(2, 64)=0.11, p=0.898.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a validation analysis of the stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "8db017ec-545c-4a12-8057-80086d649523",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C92",
+      "claim": "Objects with different surface forms (but same skeleton) had significantly different image-level properties (p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that objects with different surface forms (but same skeleton) had significantly different image-level properties (p=0.002), whereas objects with different skeletons (but same surface forms) did not (p=0.090).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a validation analysis of the stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "6799f148-1369-458b-98ee-97589077b48a",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C93",
+      "claim": "Objects with different skeletons (but same surface forms) did not have significantly different image-level properties (p=0.090).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that objects with different surface forms (but same skeleton) had significantly different image-level properties (p=0.002), whereas objects with different skeletons (but same surface forms) did not (p=0.090).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a validation analysis of the stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "e951f4c5-230d-4c94-b0c7-d22d8897a031",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C94",
+      "claim": "Participants discriminated between surface forms 1 and 2 significantly better than would be predicted by chance (M=0.86, t(40) = 8.95, p<.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Participants discriminated between surface forms 1 and 2 significantly better than would be predicted by chance, M=0.86, t(40) = 8.95, p<.001, and importantly, discrimination accuracy between surface forms did not differ from discrimination accuracy between skeletons, t(80) = 0.02, p=.981.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a validation analysis of the stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "dd1448d4-6b13-4b34-a673-76c2486a2a14",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C95",
+      "claim": "Discrimination accuracy between surface forms did not differ from discrimination accuracy between skeletons (t(80) = 0.02, p=.981).",
+      "claim_type": "EXPLICIT",
+      "source": "Participants discriminated between surface forms 1 and 2 significantly better than would be predicted by chance, M=0.86, t(40) = 8.95, p<.001, and importantly, discrimination accuracy between surface forms did not differ from discrimination accuracy between skeletons, t(80) = 0.02, p=.981.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a validation analysis of the stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "da094cec-a221-427c-9555-caf0cd6f28b9",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C96",
+      "claim": "For the Skeletal model, a flux-based medial axis algorithm was used.",
+      "claim_type": "EXPLICIT",
+      "source": "For our Skeletal model, we used a flux-based medial axis algorithm (Dimitrov et al., 2003; Rezanejad and Siddiqi, 2013) which computes a 'pruned' skeletal structure tolerant to local contour variations (Feldman and Singh, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "ca702b65-556d-4d93-8563-5dcaa378e46e",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C97",
+      "claim": "A pruned Skeletal model was selected for its biological plausibility in describing human shape judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "A pruned Skeletal model was selected for its biological plausibility in describing human shape judgments (Ayzenberg et al., 2019a; Feldman et al., 2013; Wilder et al., 2011; Wilder et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "6269cf99-8ad0-4c6b-b402-eddf45feb54a",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C98",
+      "claim": "ResNet-IN was trained on ImageNet, a dataset consisting of high-quality naturalistic photographs.",
+      "claim_type": "EXPLICIT",
+      "source": "ResNet-IN was trained on ImageNet (Russakovsky et al., 2015), a dataset consisting of high-quality naturalistic photographs, whereas ResNet-SIN was trained on Stylized-ImageNet, a variation on the conventional ImageNet dataset that decorrelates color and texture information from object images using style transfer techniques (Geirhos et al., 2018; Huang and Belongie, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the computational model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "cb506ed1-b309-4d44-aa44-e1053344d958",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C99",
+      "claim": "ResNet-SIN was trained on Stylized-ImageNet, a variation on the conventional ImageNet dataset that decorrelates color and texture information from object images using style transfer techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "ResNet-IN was trained on ImageNet (Russakovsky et al., 2015), a dataset consisting of high-quality naturalistic photographs, whereas ResNet-SIN was trained on Stylized-ImageNet, a variation on the conventional ImageNet dataset that decorrelates color and texture information from object images using style transfer techniques (Geirhos et al., 2018; Huang and Belongie, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the computational model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "009affb2-e3d9-4af9-b3be-fc4535d91faa",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C100",
+      "claim": "CorNet-S is a biologically plausible model of primate object recognition behavior and neural processing, as measured by the brain-score benchmark.",
+      "claim_type": "EXPLICIT",
+      "source": "It was chosen because it is a biologically plausible model of primate object recognition behavior and neural processing, as measured by the brain-score benchmark (Schrimpf et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the computational model supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "41235a1c-9c9e-43ad-92d8-88bf5023a283",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C101",
+      "claim": "ResNext-SAY was trained using a self-supervised temporal classification method on the SAYCam dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, ResNext-SAY uses an updated version of the ResNet architecture and was designed to approximate the visual processing abilities of an infant (Orhan et al., 2020). It was trained using a self-supervised temporal classification method on the SAYCam dataset (Sullivan et al., 2020), a large, longitudinal dataset recorded from three infants' first-person perspectives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the computational model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "dae2631c-7489-40e0-9bd2-3fb8cfd91cae",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C102",
+      "claim": "FlowNet2-S was pre-trained on the MPI-Sintel and 'flying chairs' datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we used an iteration of FlowNet known as FlowNet2-S, which was pre-trained on the MPI-Sintel and 'flying chairs' datasets (Butler et al., 2012; Mayer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the computational model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "757b5f05-9926-4458-8f8a-2891b1ea59da",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C103",
+      "claim": "Models were converted into autoencoders to approximate the habituation/dishabituation procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "To approximate this process, we converted each model into an autoencoder, which was 'habituated' and tested using the same criteria as infants (Mareschal et al., 2000; Westermann and Mareschal, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the model testing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "f1726090-19f4-4d33-9b0b-b7ea2341702e",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C104",
+      "claim": "The Skeletal model and ANNs met the habituation criteria within 8 epochs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Skeletal model and ANNs met the habituation criteria within 8 epochs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the model testing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "43629069-fe20-4190-9940-39c0bc0775c5",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "claim_id": "C105",
+      "claim": "Pixel and FlowNet models met the habituation criteria within 22 and 43 trials, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Pixel and FlowNet models met the habituation criteria within 22 and 43 trials, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the model testing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9794045b-d8fb-405f-9eef-f4c0e8688340",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In Experiment 1, infants (N=34) classified novel objects based on skeletal structure after habituation to a single novel object. Infants looked significantly longer at objects with different skeletons compared to matching skeletons (t[33]=3.04, p=0.005, d=0.52), and dishabituated only to objects with different skeletons. Importantly, infants could discriminate both test objects equally well based on surface form alone, ruling out a pure discrimination account.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C26 provide converging statistical evidence that infants classified objects by skeletal similarity in Experiment 1. The dishabituation pattern (C20-C21), equal discriminability of test objects (C25-C26), and majority effect (C19) collectively support that infants used skeletal structure rather than surface features or simple discrimination. The experimental design and statistical analyses are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "9fd86aa4-0af9-484c-a4c2-04d03f1dc70e",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In Experiment 2, infants (N=48) continued to classify objects by skeletal structure even when coarse spatial relations were held constant between habituation and test phases. Infants looked longer at objects with different skeletons (t[47]=2.60, p=0.012, d=0.38) and only dishabituated to these objects, ruling out the alternative explanation that infants relied on coarse spatial relations rather than skeletal structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 demonstrate that Experiment 2 successfully ruled out the coarse spatial relations alternative explanation. The pattern of results replicates Experiment 1 under more stringent conditions where spatial relations were controlled. Statistical evidence is robust (C31, C33-C34), and discriminability controls were maintained (C36-C37). This strengthens the skeletal structure interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "6c860ef2-0629-4efe-b48b-aff676845f6e",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Computational modeling revealed that infant performance in both experiments was best matched by a Skeletal model compared to ANNs, Pixel, and FlowNet models. In Experiment 1, all models performed above chance, but infants and the Skeletal model significantly outperformed all other models except FlowNet. In Experiment 2, only Skeletal, Pixel, and FlowNet performed above chance, with no ANNs performing above chance, yet infant performance remained most closely aligned with the Skeletal model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C41 provide systematic model comparison evidence across both experiments. The consistent finding that the Skeletal model best matches infant performance (C28, C40, C49) is supported by statistical comparisons. The failure of ANNs in Experiment 2 (C39) and the ambiguous role of FlowNet (C30, C41) are appropriately acknowledged. The autoencoder methodology for model testing is reasonable though unconventional.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "a3c77aef-10b8-4aa4-ab4c-866bf0f81134",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Infants outperformed conventional ANNs (ResNet-IN, ResNet-SIN, CorNet-S, ResNext-SAY) at classifying objects across variations in surface form, despite these models having massive object experience and biological plausibility. ANNs failed to classify objects by skeletal structure but succeeded at classifying by surface form, suggesting qualitatively different mechanisms than humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C63-C65, and C83 are well-supported by the model comparison data from both experiments. The dissociation between ANN performance on skeletal vs. surface form classification (C63-C64) provides strong evidence for different mechanisms. However, the claim of 'outperformance' should be interpreted cautiously given the specific task design that favored skeletal representations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "3357183b-fb3b-42a7-a6cb-70f4899e08eb",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "When tested on classifying objects by surface form (across skeletal variations), most ANNs (ResNet-IN, CorNet-S, ResNext-SAY) performed above chance for Experiment 1 stimuli, and all ANNs except Skeletal and Pixel models performed above chance for Experiment 2 stimuli. This demonstrates that ANNs are capable of classifying objects using local shape properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 provide clear evidence that ANNs can classify by surface form when this is the relevant dimension. The statistical evidence (confidence intervals) supports above-chance performance for most ANNs. This control analysis effectively rules out the possibility that ANNs simply failed due to stimulus idiosyncrasies, strengthening the interpretation that ANNs rely on different mechanisms than infants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "a57ec82f-84bb-410a-8fa9-51f9855b464b",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that robust representations of shape can be formed with little language or object experience by relying on the perceptually invariant skeletal structure. Infants represent global shape by extracting skeletal structure and can classify objects using only one exemplar as reference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47-C48, C50, C73, and C82 represent the main conclusions drawn from the experimental findings. These are well-supported by the convergent evidence from both experiments and model comparisons. However, the claim about 'little experience' (C6) should be qualified\u2014infants at 6-12 months have substantial visual experience even if object variety is limited (C16-C17).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "3e434ada-6f4c-4785-9baa-84f442bf542e",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A Pixel model performed above chance when generalizing across surface form, but both infants and the Skeletal model outperformed the Pixel model in both experiments. FlowNet appeared comparable to infants and the Skeletal model, though the Skeletal model was more closely aligned to infant performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C58, C62 address the role of low-level image similarity and motion. The evidence shows that while pixel-level similarity contributes, it cannot fully explain infant performance (C52). The ambiguous role of FlowNet (C58) is appropriately acknowledged, and the authors correctly note that skeletal representations remain the best match (C62).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "cc56b106-ee85-4f3e-8fea-1ba62b9654fe",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study included 92 full-term infants, with 10 excluded for fussiness or equipment failure, resulting in final samples of 34 infants in Experiment 1 and 48 in Experiment 2. The study received IRB approval from Emory University.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 provide standard methodological details about participants. Sample sizes are appropriate for the reported effect sizes, exclusion criteria are reasonable, and ethical approval is documented. These are straightforward descriptive claims supported by the methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "cc25534b-7164-410f-a772-17186090b52d",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Stimuli for Experiment 1 consisted of six videos of 3D novel objects with three distinct skeletons selected for skeletal similarity. Validation analyses confirmed that the three skeletons did not differ in discriminability (F(2,64)=0.11, p=0.898), objects with different surface forms had significantly different image-level properties (p=0.002), and surface forms were matched in discriminability to skeletons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C95 describe stimulus validation procedures. The statistical evidence supports that stimuli were appropriately controlled for discriminability and image-level properties. The validation with adult participants (C91, C94-C95) provides important evidence that the experimental manipulations were effective and that test objects were matched for difficulty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "d03b34b8-2cef-4253-9e88-4dbea812e834",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Skeletal model used a flux-based medial axis algorithm selected for biological plausibility. Four ANNs were tested: ResNet-IN (trained on ImageNet), ResNet-SIN (trained on Stylized-ImageNet), CorNet-S (biologically plausible primate model), and ResNext-SAY (trained on infant first-person videos). Models were converted to autoencoders and habituated using the same criteria as infants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C105 describe the computational modeling methodology. The model selection is well-justified with appropriate citations (C97, C100). The autoencoder approach (C103) is creative though unconventional for comparing to infant habituation. The different habituation rates across models (C104-C105) are documented but raise questions about whether models were truly comparable to infants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "a88e1f22-e4b4-4a70-ba67-5f27606c92bf",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors tested 6-12 month-old infants because visual experience at this age is dominated by ~10 common objects and infants have limited linguistic understanding (~7 words). Infants were habituated to a single novel object to measure pre-existing visual representations rather than learned ones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 and C72 justify the age range and methodological approach. The citations support the characterization of limited object variety and linguistic knowledge at this age. The single-exemplar habituation design (C72) is appropriate for testing pre-existing representations, though the distinction between 'pre-existing' and 'learned' may be less clear than implied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "977e9dc2-91f8-4c8a-bb2d-4d145102cca9",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Recent studies suggest that low-level visual similarity explains more variance in infant responses than upper ANN layers, and that infant object categorization may be supported by early visual cortex (V1-V3). Skeletal representations may emerge in V3 through recurrent interactions, are invariant across component part changes, and V3 shows functional maturity shortly after birth in primates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 cite prior research to provide neural plausibility for the skeletal structure account. The citations appropriately support each claim. However, these are speculative connections between the current behavioral findings and neural mechanisms\u2014the current study provides no direct neural evidence. The discussion appropriately frames these as possibilities rather than demonstrated facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "4192ab64-e708-4fe8-9d1f-fe2a1d02a68f",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior research shows that motion information supports infant object recognition and viewpoint invariance. Infants' visual experience includes many viewpoints per object, with biased planar orientations that may highlight skeletal structure. Low visual acuity at birth may also highlight global shape information, as shown in ANNs trained with blurry-to-clear regimens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 and C77-C81 cite relevant prior work on the role of motion and visual experience in shape perception. These citations are appropriate and accurately represented. However, these are speculative connections to the current findings (C77 is explicitly speculative). The discussion appropriately acknowledges uncertainty about causal relationships (e.g., C79).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "b78604e8-6e62-4391-83cb-eab7d99bfd09",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ANNs may be especially sensitive to local object properties, making them susceptible to spurious contour changes, while skeletal structure representations in humans are robust to perturbations. Although ANNs can generalize across color and texture variations, fundamental architectural changes may be needed for human-like global shape categorization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 interpret the ANN failures in light of prior research. The citations support the characterization of ANN sensitivity to local properties (C66) and human robustness (C67). The conclusion about needed architectural changes (C68) is reasonable given the results, though somewhat speculative about what specific changes would be required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "765e6c23-df10-43a7-92e4-95b1f7eaf73d",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors suggest their results are consistent with prior work showing that one-shot categorization in older children and adults involves identifying invariant shape properties, and that skeleton-like compositional structure is central to one-shot categorization. They hypothesize that one-shot category learning may be possible early in development by relying on skeletal structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C76 connect the current findings to one-shot learning literature. While the citations are appropriate (C74-C75), the connection is speculative (C76 is explicitly labeled as speculation). The current study used habituation/dishabituation, which differs from explicit categorization tasks. The authors appropriately acknowledge they cannot definitively answer whether infants show one-shot categorization, making this interpretation uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "ce29d3c3-704a-4ed1-9f61-5f25c7a6bb07",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "By adulthood, humans use multiple visual properties (texture, local contours) and inferential processes (abstract rules, generative history) for object reasoning. These properties may override skeletal structure in certain contexts like peripheral vision or subordinate-level categorization. The authors suggest skeletal structure may be uniquely suited to basic-level categorization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 appropriately contextualize the findings within adult object perception. The citations support that adults use multiple cues (C69-C70). The suggestion about basic-level categorization (C71) is speculative but reasonable given the cited literature. The authors appropriately acknowledge limitations of their skeletal structure account.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "38978e2f-7049-4e63-921d-b60808bd446a",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript establishes that object categorization requires shape representations tolerant to exemplar variations, that shape information is crucial for categorization, but that how invariant shape representations develop remains poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7 establish the background and motivation for the study. These are well-established facts in the field supported by appropriate citations (C7). The identification of the knowledge gap (C2) appropriately motivates the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "9a68ae03-3563-413a-b09d-95e3a3591b14",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior research suggests that linguistic experience and object labels may induce a 'shape bias' in children, bootstrap object recognition in prelinguistic children, and that ANNs with appropriate training can develop shape biases for generalizing across color/texture variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 accurately represent prior theoretical accounts and empirical findings about the role of language and experience in shape perception. The citations appropriately support each claim. These establish the alternative hypothesis that the current study tests against.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    },
+    {
+      "id": "e9793749-63ac-41a1-b27a-4ec3b63b3058",
+      "content_id": "eb5bcde5-9b8b-4127-94e1-c4ac4bf39a41",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The shape skeleton is defined as a quantitative model describing global shape via internal symmetry axes, which is tolerant to local shape variations. Prior research shows newborns can discriminate 2D shapes, and by 6 months infants can categorize objects using shape silhouettes and extend categories across local contour variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 define the skeletal structure concept and review relevant infant perception literature. The definition (C12) is supported by appropriate citations. The review of infant shape perception abilities (C14-C15) accurately represents prior findings and establishes what was known before the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:13:19.121759Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "db1a7152-e6cb-468f-a196-68c2d14239ca",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "5de3c0fc-6b37-42b3-8ba8-24f322ba6f1d",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "896c5619-a1bc-4df4-aa5a-163007c1abc9",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "2dc60931-a914-40a8-9504-ad29b96f2d42",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "27b3e040-2bcd-4641-88e9-56f2eb2caa0d",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "2690b46e-f61b-4dc6-a25a-55193978f53d",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "cc90b0c6-d2ba-4fc9-b2a0-f9770a05942c",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "e9b3610e-8873-4ee8-b1ca-ff043ee5f162",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "c23658f7-7ff9-4c2b-9eba-c236246b0977",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "343e33fd-a3ce-4999-91ea-c45468833bfe",
+      "result_id": "9794045b-d8fb-405f-9eef-f4c0e8688340"
+    },
+    {
+      "claim_id": "fa9f889a-37c2-4c2b-b2f3-62b97d25320f",
+      "result_id": "9fd86aa4-0af9-484c-a4c2-04d03f1dc70e"
+    },
+    {
+      "claim_id": "580eb79f-7f86-4b27-8023-0e5a1c754d10",
+      "result_id": "9fd86aa4-0af9-484c-a4c2-04d03f1dc70e"
+    },
+    {
+      "claim_id": "b1482f26-8863-4b60-be84-9b9a5b9a846d",
+      "result_id": "9fd86aa4-0af9-484c-a4c2-04d03f1dc70e"
+    },
+    {
+      "claim_id": "8a4bf580-b609-4d68-ae57-ec39055eca89",
+      "result_id": "9fd86aa4-0af9-484c-a4c2-04d03f1dc70e"
+    },
+    {
+      "claim_id": "134eef2c-e43b-4e46-9510-e47737ed4b31",
+      "result_id": "9fd86aa4-0af9-484c-a4c2-04d03f1dc70e"
+    },
+    {
+      "claim_id": "15ff23e3-47a8-427b-b7aa-1430ac9f6dc5",
+      "result_id": "9fd86aa4-0af9-484c-a4c2-04d03f1dc70e"
+    },
+    {
+      "claim_id": "4adde82a-a27d-4262-aba0-cb9764a8a606",
+      "result_id": "9fd86aa4-0af9-484c-a4c2-04d03f1dc70e"
+    },
+    {
+      "claim_id": "f64ad5dc-9623-4046-8f7e-0d9d9787a50c",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "295856ce-5af4-4cf1-b0ae-a733604fab3e",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "92c8cc08-509c-40df-9cdf-b350425f55df",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "bed9e33f-58ed-40bb-86c3-b97e6c4d6319",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "140b5a73-3a22-45f0-a219-522697666e50",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "5e6a120d-f35a-446f-98d9-edec368280a0",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "76360bf9-5c25-4326-b42e-e77ff56ed367",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "8863ee95-c09d-4b28-a811-d3f0103cf110",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "6730fe74-1903-440f-bcb4-7c9ef44ebb61",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "ee6a6078-0527-45fb-adfb-e42a87bcaea9",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "5c913aca-743f-43cd-bad7-47baf143efd5",
+      "result_id": "6c860ef2-0629-4efe-b48b-aff676845f6e"
+    },
+    {
+      "claim_id": "9183234a-47fa-4522-970c-a1b54aa1ac80",
+      "result_id": "a3c77aef-10b8-4aa4-ab4c-866bf0f81134"
+    },
+    {
+      "claim_id": "272445a4-1d4e-47ef-b678-db7fa94802db",
+      "result_id": "a3c77aef-10b8-4aa4-ab4c-866bf0f81134"
+    },
+    {
+      "claim_id": "08a1cbe6-b7b9-4529-9ea1-7ba12c1bb649",
+      "result_id": "a3c77aef-10b8-4aa4-ab4c-866bf0f81134"
+    },
+    {
+      "claim_id": "1d1cf2eb-4703-4632-a86e-60a173e0a57a",
+      "result_id": "a3c77aef-10b8-4aa4-ab4c-866bf0f81134"
+    },
+    {
+      "claim_id": "7a4d43de-9167-4722-8400-b96f83740b15",
+      "result_id": "a3c77aef-10b8-4aa4-ab4c-866bf0f81134"
+    },
+    {
+      "claim_id": "7818a611-ff01-47f1-8c49-aa66533665f7",
+      "result_id": "3357183b-fb3b-42a7-a6cb-70f4899e08eb"
+    },
+    {
+      "claim_id": "4b47f64d-d09a-4dc7-956f-cee5d7642f5d",
+      "result_id": "3357183b-fb3b-42a7-a6cb-70f4899e08eb"
+    },
+    {
+      "claim_id": "2b9c82a6-57cb-4549-8f94-62017dcee710",
+      "result_id": "3357183b-fb3b-42a7-a6cb-70f4899e08eb"
+    },
+    {
+      "claim_id": "a621b1aa-04e4-4c70-bf6a-b71851d5a677",
+      "result_id": "3357183b-fb3b-42a7-a6cb-70f4899e08eb"
+    },
+    {
+      "claim_id": "fad4e7d4-e17d-4b1c-b1e6-1a97b69e9a08",
+      "result_id": "3357183b-fb3b-42a7-a6cb-70f4899e08eb"
+    },
+    {
+      "claim_id": "70e1b906-8b1f-4b3d-bc11-027657a98bfe",
+      "result_id": "a57ec82f-84bb-410a-8fa9-51f9855b464b"
+    },
+    {
+      "claim_id": "568b9a87-4545-4278-9fc4-6862ca7ed2c4",
+      "result_id": "a57ec82f-84bb-410a-8fa9-51f9855b464b"
+    },
+    {
+      "claim_id": "05d77df0-a55b-459a-8842-16984360c208",
+      "result_id": "a57ec82f-84bb-410a-8fa9-51f9855b464b"
+    },
+    {
+      "claim_id": "284746b7-31d8-47c3-9c30-4cd1a7e227c6",
+      "result_id": "a57ec82f-84bb-410a-8fa9-51f9855b464b"
+    },
+    {
+      "claim_id": "eb3d649d-3163-4787-aee6-2f2aec806118",
+      "result_id": "a57ec82f-84bb-410a-8fa9-51f9855b464b"
+    },
+    {
+      "claim_id": "59cddf5c-19ed-4c4b-b716-e15a0a5e6e13",
+      "result_id": "a57ec82f-84bb-410a-8fa9-51f9855b464b"
+    },
+    {
+      "claim_id": "ab62193b-38f4-4001-92c7-d0ccad663951",
+      "result_id": "3e434ada-6f4c-4785-9baa-84f442bf542e"
+    },
+    {
+      "claim_id": "bc85eaec-21f4-43bb-8301-118801aa2422",
+      "result_id": "3e434ada-6f4c-4785-9baa-84f442bf542e"
+    },
+    {
+      "claim_id": "3bb97d2f-f973-404a-abf8-c8170dc51633",
+      "result_id": "3e434ada-6f4c-4785-9baa-84f442bf542e"
+    },
+    {
+      "claim_id": "5c913aca-743f-43cd-bad7-47baf143efd5",
+      "result_id": "3e434ada-6f4c-4785-9baa-84f442bf542e"
+    },
+    {
+      "claim_id": "65daf777-764d-4a94-8c3e-cc372d091900",
+      "result_id": "cc56b106-ee85-4f3e-8fea-1ba62b9654fe"
+    },
+    {
+      "claim_id": "0d7ff82d-642f-4c23-8e63-524f6973f08e",
+      "result_id": "cc56b106-ee85-4f3e-8fea-1ba62b9654fe"
+    },
+    {
+      "claim_id": "6b24ddc7-c588-4084-8c1d-ca8180e5351e",
+      "result_id": "cc56b106-ee85-4f3e-8fea-1ba62b9654fe"
+    },
+    {
+      "claim_id": "bc27ae51-a53d-45d2-9e20-cc3eee31811a",
+      "result_id": "cc56b106-ee85-4f3e-8fea-1ba62b9654fe"
+    },
+    {
+      "claim_id": "c76bc140-607a-4e0d-b3c5-19800917d6e3",
+      "result_id": "cc56b106-ee85-4f3e-8fea-1ba62b9654fe"
+    },
+    {
+      "claim_id": "5ea7efa5-6609-4fc1-83da-ef28bb64f697",
+      "result_id": "cc25534b-7164-410f-a772-17186090b52d"
+    },
+    {
+      "claim_id": "b07567fb-f891-4fe0-8569-67755a7c3816",
+      "result_id": "cc25534b-7164-410f-a772-17186090b52d"
+    },
+    {
+      "claim_id": "459e0c68-8a7e-4ba1-bd63-a3db85947ba8",
+      "result_id": "cc25534b-7164-410f-a772-17186090b52d"
+    },
+    {
+      "claim_id": "8db017ec-545c-4a12-8057-80086d649523",
+      "result_id": "cc25534b-7164-410f-a772-17186090b52d"
+    },
+    {
+      "claim_id": "6799f148-1369-458b-98ee-97589077b48a",
+      "result_id": "cc25534b-7164-410f-a772-17186090b52d"
+    },
+    {
+      "claim_id": "e951f4c5-230d-4c94-b0c7-d22d8897a031",
+      "result_id": "cc25534b-7164-410f-a772-17186090b52d"
+    },
+    {
+      "claim_id": "dd1448d4-6b13-4b34-a673-76c2486a2a14",
+      "result_id": "cc25534b-7164-410f-a772-17186090b52d"
+    },
+    {
+      "claim_id": "da094cec-a221-427c-9555-caf0cd6f28b9",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "ca702b65-556d-4d93-8563-5dcaa378e46e",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "6269cf99-8ad0-4c6b-b402-eddf45feb54a",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "cb506ed1-b309-4d44-aa44-e1053344d958",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "009affb2-e3d9-4af9-b3be-fc4535d91faa",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "41235a1c-9c9e-43ad-92d8-88bf5023a283",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "dae2631c-7489-40e0-9bd2-3fb8cfd91cae",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "757b5f05-9926-4458-8f8a-2891b1ea59da",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "f1726090-19f4-4d33-9b0b-b7ea2341702e",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "43629069-fe20-4190-9940-39c0bc0775c5",
+      "result_id": "d03b34b8-2cef-4253-9e88-4dbea812e834"
+    },
+    {
+      "claim_id": "9df17fd6-8f23-41d4-b38b-356e3d0b7c2f",
+      "result_id": "a88e1f22-e4b4-4a70-ba67-5f27606c92bf"
+    },
+    {
+      "claim_id": "8a8fcc55-f734-4a42-8e76-2bfb3252d786",
+      "result_id": "a88e1f22-e4b4-4a70-ba67-5f27606c92bf"
+    },
+    {
+      "claim_id": "6f11cb94-d7df-48a3-a0d1-0e0fd05847fc",
+      "result_id": "a88e1f22-e4b4-4a70-ba67-5f27606c92bf"
+    },
+    {
+      "claim_id": "6415d196-f922-47d0-9066-e6cd85b4e76c",
+      "result_id": "977e9dc2-91f8-4c8a-bb2d-4d145102cca9"
+    },
+    {
+      "claim_id": "1b7caa15-81ca-4af1-a57b-20247599314c",
+      "result_id": "977e9dc2-91f8-4c8a-bb2d-4d145102cca9"
+    },
+    {
+      "claim_id": "45ad853a-4945-4cd1-95c0-739b2d4680a3",
+      "result_id": "977e9dc2-91f8-4c8a-bb2d-4d145102cca9"
+    },
+    {
+      "claim_id": "047b505a-cfde-4af1-a95b-755090b95e25",
+      "result_id": "977e9dc2-91f8-4c8a-bb2d-4d145102cca9"
+    },
+    {
+      "claim_id": "d963fe96-2625-4e7d-8e04-3e5f1c98029d",
+      "result_id": "977e9dc2-91f8-4c8a-bb2d-4d145102cca9"
+    },
+    {
+      "claim_id": "140b00b6-f0f3-4355-bd8d-a20d1d68d7a4",
+      "result_id": "4192ab64-e708-4fe8-9d1f-fe2a1d02a68f"
+    },
+    {
+      "claim_id": "b063b3d0-2cc4-4cf8-be2e-1841e7e613dc",
+      "result_id": "4192ab64-e708-4fe8-9d1f-fe2a1d02a68f"
+    },
+    {
+      "claim_id": "c723c26b-6a10-4d26-a76b-4bcbe55d1543",
+      "result_id": "4192ab64-e708-4fe8-9d1f-fe2a1d02a68f"
+    },
+    {
+      "claim_id": "f7b91c85-d7e0-4603-ba29-4c282259030d",
+      "result_id": "4192ab64-e708-4fe8-9d1f-fe2a1d02a68f"
+    },
+    {
+      "claim_id": "d2720531-cb44-4c38-8211-3ab378e8aadd",
+      "result_id": "4192ab64-e708-4fe8-9d1f-fe2a1d02a68f"
+    },
+    {
+      "claim_id": "3a8b2d9d-0b14-47fb-abd8-c2192fbe26aa",
+      "result_id": "4192ab64-e708-4fe8-9d1f-fe2a1d02a68f"
+    },
+    {
+      "claim_id": "0638bba3-78c6-4d81-bd62-54680c8378b0",
+      "result_id": "4192ab64-e708-4fe8-9d1f-fe2a1d02a68f"
+    },
+    {
+      "claim_id": "e23bb2c1-b46d-4cdb-9db1-c513001614b8",
+      "result_id": "4192ab64-e708-4fe8-9d1f-fe2a1d02a68f"
+    },
+    {
+      "claim_id": "ea103a58-0d22-4d5a-991f-1b7f7e9bfc72",
+      "result_id": "b78604e8-6e62-4391-83cb-eab7d99bfd09"
+    },
+    {
+      "claim_id": "6921a8b0-67b2-4ed5-b5a8-a16551164f4c",
+      "result_id": "b78604e8-6e62-4391-83cb-eab7d99bfd09"
+    },
+    {
+      "claim_id": "f134ad91-19a1-4457-a8fd-fa74ce5af296",
+      "result_id": "b78604e8-6e62-4391-83cb-eab7d99bfd09"
+    },
+    {
+      "claim_id": "99b80cf3-26d2-426a-8bc9-a239a6f35a3f",
+      "result_id": "765e6c23-df10-43a7-92e4-95b1f7eaf73d"
+    },
+    {
+      "claim_id": "f2e3cdad-082a-4ef4-8dac-4b411d7c7e98",
+      "result_id": "765e6c23-df10-43a7-92e4-95b1f7eaf73d"
+    },
+    {
+      "claim_id": "aaa9672a-6aac-4590-8b25-87b7d85a1601",
+      "result_id": "765e6c23-df10-43a7-92e4-95b1f7eaf73d"
+    },
+    {
+      "claim_id": "3e8ae9b6-a6f5-44d2-9e66-5f17038c3711",
+      "result_id": "ce29d3c3-704a-4ed1-9f61-5f25c7a6bb07"
+    },
+    {
+      "claim_id": "e5ece6d8-b199-4ba4-b1a7-b0d3a841c953",
+      "result_id": "ce29d3c3-704a-4ed1-9f61-5f25c7a6bb07"
+    },
+    {
+      "claim_id": "0bb0c5a8-f947-4f96-a12f-39044cfb48e3",
+      "result_id": "ce29d3c3-704a-4ed1-9f61-5f25c7a6bb07"
+    },
+    {
+      "claim_id": "c8e16050-13db-475c-9eb7-a6268467f008",
+      "result_id": "38978e2f-7049-4e63-921d-b60808bd446a"
+    },
+    {
+      "claim_id": "3c38e33a-c89d-4a59-b7db-cfc669f51e2c",
+      "result_id": "38978e2f-7049-4e63-921d-b60808bd446a"
+    },
+    {
+      "claim_id": "607df1a9-4e34-4488-a52c-3fc5785dedbb",
+      "result_id": "38978e2f-7049-4e63-921d-b60808bd446a"
+    },
+    {
+      "claim_id": "1c0d0e46-b505-41a9-8c3d-b3f559c678f2",
+      "result_id": "9a68ae03-3563-413a-b09d-95e3a3591b14"
+    },
+    {
+      "claim_id": "40c68d25-53df-4320-a7f3-4872c3ef496a",
+      "result_id": "9a68ae03-3563-413a-b09d-95e3a3591b14"
+    },
+    {
+      "claim_id": "04492fdc-d856-4b7a-b7c3-39c0771414e5",
+      "result_id": "9a68ae03-3563-413a-b09d-95e3a3591b14"
+    },
+    {
+      "claim_id": "6ac3aa5e-a9cd-43d9-be8d-c0c305bdc230",
+      "result_id": "9a68ae03-3563-413a-b09d-95e3a3591b14"
+    },
+    {
+      "claim_id": "a13ba5aa-d05a-43f9-a5be-e158ca66025f",
+      "result_id": "e9793749-63ac-41a1-b27a-4ec3b63b3058"
+    },
+    {
+      "claim_id": "c77b1a59-15ed-451a-b0fa-209b2e139bc9",
+      "result_id": "e9793749-63ac-41a1-b27a-4ec3b63b3058"
+    },
+    {
+      "claim_id": "b85d49ed-e89c-4887-8826-57adcedd50e8",
+      "result_id": "e9793749-63ac-41a1-b27a-4ec3b63b3058"
+    },
+    {
+      "claim_id": "65d2b02e-17ad-4756-8ce4-a95f2b4a7d30",
+      "result_id": "e9793749-63ac-41a1-b27a-4ec3b63b3058"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors performed simultaneous two-photon calcium imaging and cell-attached electrophysiology recordings in V1 L2/3 excitatory pyramidal neurons from anesthetized transgenic mice expressing GCaMP6s or GCaMP6f. High spatial and temporal resolution imaging was used (19.3\u201327.3 \u00d7 19.3\u201321.5 \u00b5m field of view at 141.3\u2013158.3 fps), yielding a final dataset of 48 neurons from four transgenic mouse lines after quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C65-C80 provide comprehensive methodological details about the experimental design, including mouse lines, imaging parameters, electrophysiology procedures, and quality control criteria. The methods are well-documented with specific parameters, and the final dataset size (48 neurons from 213 initial recordings) is clearly stated with justification for exclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The optimal neuropil subtraction parameter (r) for GCaMP6f neurons was approximately normally distributed with mean \u00b1 SEM of 0.82 \u00b1 0.07, and the value of r had a modest effect on event detection in GCaMP6f neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by the analysis shown in Figure 2, which demonstrates the distribution of optimal r values and their effect on ROC curves. The conclusion that r has a modest effect is based on empirical data showing that ROC curves changed with r for GCaMP6f but less so for GCaMP6s neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Peak \u0394F/F increased approximately linearly with 1\u20135 APs, and both peak \u0394F/F and decay time constant were greater with GCaMP6s than GCaMP6f. Peak \u0394F/F values were comparable to or slightly greater than previous studies, possibly due to greater neuropil subtraction (r = 0.8 vs. 0.7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by Figure 3C showing the quantitative relationships between AP number and fluorescence properties. The comparison to previous studies (Chen et al., 2013) is appropriate, though the explanation for differences (C11) is speculative but reasonable given the methodological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Photon shot noise was the dominant noise source (variance-to-mean slope of 1.04 \u00b1 0.01, consistent with Poisson process), but trial-to-trial variability in 1 AP-evoked fluorescence amplitude was substantial and exceeded photon shot noise in most neurons, likely due to differences in AP-evoked calcium concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are well-supported by quantitative analysis showing Poisson-like noise characteristics and trial-to-trial variability exceeding shot noise (Figure 3\u2014figure supplement 1). Claim C15 is speculative but represents a reasonable interpretation assuming sufficient GCaMP expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Under high spatial and temporal resolution imaging conditions, 1 AP detection probability ranged widely (0.07\u20131 for GCaMP6s, 0.11\u20130.95 for GCaMP6f) with mean probabilities of 0.70 \u00b1 0.06 (Emx1-s), 0.80 \u00b1 0.03 (tetO-s), 0.40 \u00b1 0.08 (Cux2-f), and 0.60 \u00b1 0.08 (Emx1-f) at 1% false positive probability. These detection rates were lower than previously reported for virally expressed GCaMP6, possibly due to widespread transgenic expression increasing neuropil signal or weaker expression in TIGRE1.0 lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide quantitative detection probabilities supported by Figure 4A-C and are based on ground truth-optimized detection. Claims C21-C23 offer reasonable speculations for differences from prior work, citing appropriate references. The comparison to viral expression (Chen et al., 2013) and newer TIGRE2.0 lines (Daigle et al., 2018) provides useful context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "When images were downsampled to simulate population imaging conditions (412 \u00d7 412 \u00b5m field of view at 30.3 Hz), event detection probabilities decreased substantially. For downsampled images, 1 AP detection probabilities ranged from 0.16 \u00b1 0.04 to 0.43 \u00b1 0.07, and 2 AP detection probabilities ranged from 0.24 \u00b1 0.04 to 0.89 \u00b1 0.06 across mouse lines. Even with ground truth-optimized detection, spatial and temporal downsampling severely impaired event detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are well-supported by Figures 4D-F and 5, which show the effect of downsampling on detection performance. The downsampling procedure was designed to match Allen Brain Observatory conditions (C25-C26), providing a realistic simulation of population imaging. The quantitative detection probabilities (C28) are clearly stated with error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Three high-performing spike inference algorithms (NND, Exact L0, MLspike) were compared on both high-resolution and downsampled images. All three algorithms approximately recapitulated AP numbers but with imperfect inference. Pearson correlation coefficients were ~0.4 at 33 ms bins, increasing to ~0.7 at 500 ms bins. Mean performance metrics were similar across algorithms, mouse lines, and imaging conditions, though individual neuron performance varied greatly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by Figure 6 and Figure 6\u2014figure supplement 1. The comparison of three established algorithms (C32-C33) is appropriate, and the performance metrics (C35-C37) are consistent with published results (Berens et al., 2018). The finding that downsampling had little effect on these blind inference algorithms is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Using blind spike inference algorithms at 1% false positive probability, detection probability was commonly <0.1 for 1 AP events, increasing approximately linearly to ~0.8 for 5 AP events. Since 1 AP events were most common, only a minority of events could be detected with low false positive probability. The modest difference between high-resolution and downsampled images indicates that decreased SNR from population imaging had little effect on event detection with these algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by Figure 7A-C. The finding that blind inference performs poorly for 1 AP events (C38-C39) is a key result. Claim C40's interpretation that SNR differences had little effect is supported by the data but somewhat counterintuitive\u2014it suggests that blind inference is already limited even under optimal conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Algorithm-specific optimizations revealed that NND performance improved considerably with upsampling from 30 Hz to 150 Hz, MLspike required autocalibration for optimal performance (contrasting with deconvolution-based algorithms), and Exact L0 required neither upsampling nor per-neuron optimization. MLspike showed less performance loss with downsampling and is recommended for population imaging. Substantial room for improvement exists since all three algorithms fell far short of ground truth-optimized detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by Figure 7\u2014figure supplements 1-3. The algorithm-specific findings (C41-C44) provide practical guidance, and the comparison to ground truth-optimized detection (C47) highlights the gap between current methods and theoretical limits. The recommendation for MLspike (C46) is reasonable based on the data, though the differences between algorithms are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Population imaging conditions decreased event detection probability with ground truth-optimized detection, but with blind spike inference, many events went undetected even under near-ideal conditions, and detection was not substantially worse under population imaging conditions. Most 1 AP, 2 AP, and sometimes higher AP events go undetected in typical GCaMP6 imaging experiments despite the indicators being bright and sensitive enough to detect most 1 AP events when detection is optimized using ground truth information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 synthesize the main findings from Figures 4, 6, and 7. The key insight that blind inference is the primary limitation rather than SNR (C49-C50) is well-supported. Claim C51 effectively summarizes the central conclusion: GCaMP6 indicators are capable of detecting single APs, but practical limitations in spike inference prevent this in typical experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors contribute a ground truth dataset of 48 V1 L2/3 excitatory neurons (available at https://portal.brain-map.org/explore/circuits/oephys) to address the challenge of accurate spike inference and the scarcity of calibration datasets. This work facilitates interpretation of calcium imaging studies using transgenic mouse lines, such as the Allen Brain Observatory Visual Coding dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe the broader context and contribution of the work. The dataset contribution (C55) is concrete and valuable. Claims C52-C54 accurately characterize the field's challenges, citing appropriate references (Berens et al., 2018). Claim C56's assertion about facilitating interpretation is reasonable given the dataset's characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors conclude that while most APs can be detected under near-optimal conditions (as established by previous studies), undetected APs are common in population imaging due to both reduced SNR and, more importantly, the lack of ground truth information for optimizing detection. High SNR alone does not guarantee effective detection; optimization using known AP times is crucial. Parameter tuning without ground truth (e.g., MLspike autocalibration) improves detection but not to the level of ground truth-optimized methods. Since electrophysiology for every neuron is rarely feasible, detection rates in most experiments are severely limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 synthesize the discussion and main conclusions. These claims are well-supported by the experimental results (Figures 4-7) and appropriately cite prior work (C57-C58). The key insight about the importance of ground truth optimization (C60-C62) is a major contribution. Claim C63's practical conclusion about feasibility is reasonable, and C64 summarizes the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Spiking patterns of neurons from GCaMP6s and GCaMP6f lines commonly differed, suggesting that one or more transgenes affected cell or circuit activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is supported by Figure 1\u2014figure supplement 1C showing differences in AP distributions across lines. However, this observation raises concerns about potential confounds in the dataset. The authors excluded mice with overt seizures (C70) but acknowledge that transgene expression may affect neural activity. This could complicate interpretation of differences between GCaMP6s and GCaMP6f performance, as they may reflect both indicator properties and altered neural activity patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Fluorescence movies were downsampled by a factor of 4 in space and 5 in time to match the Allen Brain Observatory sampling parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 describes the downsampling procedure used to simulate population imaging conditions. This is a methodological detail that is clearly stated and appropriate for comparing to the Allen Brain Observatory dataset. The specific downsampling factors are provided with justification.",
+    "result_type": "MINOR"
+  }
+]
